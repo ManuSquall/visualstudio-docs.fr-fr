@@ -12,13 +12,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ed3c06edf22ed44e5006d9d5bb2c90af473a6c7d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151532"
 ---
-# <a name="idiasymbolgetisoptimizedaway"></a>IDiaSymbol::get_isOptimizedAway
+# <a name="idiasymbolget_isoptimizedaway"></a>IDiaSymbol::get_isOptimizedAway
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Spécifie si la variable est optimisée.  
@@ -32,10 +32,10 @@ HRESULT get_isOptimizedAway(
   
 #### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- [out] Un pointeur vers un `BOOL` qui spécifie si la variable est optimisée.  
+ à Pointeur vers un `BOOL` qui spécifie si la variable est optimisée.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

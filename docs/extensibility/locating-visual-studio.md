@@ -10,36 +10,36 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a7187fbcc3e3aca990846176676a47f5d17aaf00
-ms.sourcegitcommit: 62f42113ae4dae1ddfff1c4e02445acc09913445
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "64878142"
 ---
-# <a name="locate-visual-studio"></a>Localisez Visual Studio
+# <a name="locate-visual-studio"></a>Localiser Visual Studio
 
-À partir de Visual Studio 2017, vous pouvez installer plusieurs instances de la même version ou de la même édition. Cela est utile lorsque vous souhaitez afficher un aperçu des nouvelles fonctionnalités sur votre ordinateur de développement principal tout en conservant votre installation précédente. En raison de ces modifications, il n’existe aucune valeur de variable ou de Registre unique environnement que vous pouvez utiliser pour localiser une instance. Au lieu de cela, vous pouvez utiliser un [API de requête COM](https://msdn.microsoft.com/library/microsoft.visualstudio.setup.configuration.aspx) pour rechercher des instances en fonction de critères pertinents pour votre extension.
+À compter de Visual Studio 2017, vous pouvez installer plusieurs instances de la même version ou même édition. Cela est utile lorsque vous souhaitez afficher un aperçu de nouvelles fonctionnalités sur votre ordinateur de développement principal tout en conservant votre installation précédente. En raison de ces modifications, il n’existe pas de variable d’environnement ou de valeur de Registre unique que vous pouvez utiliser pour localiser une instance. Au lieu de cela, vous pouvez utiliser une [API de requête com](https://msdn.microsoft.com/library/microsoft.visualstudio.setup.configuration.aspx) pour rechercher des instances en fonction de critères relatifs à votre extension.
 
-Il s’agit d’une API rapide, en lecture seule avec les packages NuGet disponibles pour le code natif et managé.
+Il s’agit d’une API rapide en lecture seule avec des packages NuGet disponibles pour du code natif et managé.
 
 | Code | Package |
 | ---- | --- |
 | Natif | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Native |
-| Managé | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop |
+| Géré | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop |
 
-Vous pouvez localiser une seule instance avec un chemin d’accès ou le processus en cours ou énumérer toutes les instances. Consultez [nos exemples](https://github.com/Microsoft/vs-setup-samples) pour obtenir des exemples complets de la localisation de Visual Studio.
+Vous pouvez rechercher une seule instance en fonction d’un chemin d’accès ou du processus en cours, ou d’énumérer toutes les instances. Consultez [nos exemples](https://github.com/Microsoft/vs-setup-samples) pour obtenir des exemples complets sur la façon de localiser Visual Studio.
 
 ## <a name="tools"></a>Outils
 
-Pour trouver Visual Studio et autres outils dans les environnements de génération, les scripts PowerShell, les programmes d’installation et les scénarios plus, il existe de nombreux outils open source vous pouvez utiliser directement ou redistribuer, ainsi que vos propres scripts.
+Pour trouver Visual Studio et d’autres outils dans des environnements de génération, des scripts PowerShell, des programmes d’installation et d’autres scénarios, il existe un certain nombre d’outils open source que vous pouvez utiliser directement ou redistribuer avec vos propres scripts.
 
 | Projet | Description |
 | ------- | ----------- |
-| [vswhere](https://github.com/Microsoft/vswhere) | Seul fichier exécutable natif pour localiser les instances répondent aux critères tels que la mise en production ou en version préliminaire, quel produit est installé, et les charges de travail sont installés. Prend également en charge recherche Visual Studio 2010 et versions ultérieures, bien que moins d’informations sont retournées que pour Visual Studio 2017 et versions ultérieures. Consultez le [wiki](https://github.com/Microsoft/vswhere/wiki) pour obtenir des exemples. |
-| [Applets de commande VSSetup](https://github.com/Microsoft/vssetup.powershell) | Applets de commande PowerShell prises en charge 2.0 et versions ultérieures qui retournent des informations enrichies en tant qu’objets que vous pouvez utiliser pour rechercher des instances basées sur les mêmes critères que _vswhere_ et pour découvrir les propriétés davantage sur les instances. Consultez le [wiki](https://github.com/Microsoft/vssetup.powershell/wiki) pour obtenir des exemples. |
-| [VSIXBootstrapper](https://github.com/Microsoft/vsixbootstrapper) | Localise automatiquement _VSIXInstaller_ et transmet via la ligne de commande pour installer un **.vsix* fichier. Cette fonctionnalité peut être utile dans les programmes d’installation qui n’ont pas de prise en charge directe pour l’API de requête. Consultez le [wiki](https://github.com/Microsoft/vsixbootstrapper/wiki) pour obtenir des exemples. |
+| [vswhere](https://github.com/Microsoft/vswhere) | Exécutable natif à fichier unique pour localiser des instances de critères tels que la mise en production ou la version préliminaire, le produit installé et les charges de travail installées. Prend également en charge la recherche de Visual Studio 2010 et versions ultérieures, bien que moins d’informations soient retournées pour Visual Studio 2017 et versions ultérieures. Pour obtenir des exemples, consultez le [wiki](https://github.com/Microsoft/vswhere/wiki) . |
+| [Applets de commande VSSetup](https://github.com/Microsoft/vssetup.powershell) | Les applets de commande PowerShell prenait en charge 2,0 et versions ultérieures, qui retournent des informations enrichies sous forme d’objets que vous pouvez utiliser pour rechercher des instances basées sur les mêmes critères que _vswhere_ et pour découvrir encore plus de propriétés sur les instances. Pour obtenir des exemples, consultez le [wiki](https://github.com/Microsoft/vssetup.powershell/wiki) . |
+| [VSIXBootstrapper](https://github.com/Microsoft/vsixbootstrapper) | Localise automatiquement _VSIXInstaller_ et passe la ligne de commande à pour installer un fichier **. vsix* . Cette fonctionnalité peut être utile dans les programmes d’installation qui n’ont pas de prise en charge directe des API de requête. Pour obtenir des exemples, consultez le [wiki](https://github.com/Microsoft/vsixbootstrapper/wiki) . |
 
 ## <a name="see-also"></a>Voir aussi
 
 * [Modifications apportées au programme d’installation de Visual Studio 2017](https://devblogs.microsoft.com/setup/changes-to-visual-studio-15-setup/)
-* [Lancez Visual Studio à l’aide de DTE](launch-visual-studio-dte.md)
+* [Lancer Visual Studio à l’aide de DTE](launch-visual-studio-dte.md)

@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ca69acebc9710bc18cba39ea9998bf90d2bf5767
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151646"
 ---
 # <a name="idiasessionfindlinesbyva"></a>IDiaSession::findLinesByVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Récupère les informations de numéro de ligne pour les lignes contenues dans une plage d’adresses virtuel spécifié (VA).  
+Récupère les informations de numéro de ligne pour les lignes contenues dans une plage d’adresses virtuelles (VA) spécifiée.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -37,16 +37,16 @@ HRESULT findLinesByVA ( 
   
 #### <a name="parameters"></a>Paramètres  
  `va`  
- [in] Spécifie l’adresse utiliser que  
+ dans Spécifie l’adresse en tant que VA.  
   
  `length`  
- [in] Spécifie le nombre d’octets de la plage d’adresses pour couvrir cette requête.  
+ dans Spécifie le nombre d’octets de la plage d’adresses à couvrir avec cette requête.  
   
  `ppResult`  
- [out] Retourne un [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) objet qui contient une liste de tous les nombres qui couvrent la plage d’adresses spécifiée.  
+ à Retourne un objet [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) qui contient une liste de tous les numéros de ligne qui couvrent la plage d’adresses spécifiée.  
   
 ## <a name="example"></a>Exemple  
- Cet exemple montre une fonction qui obtient tous les numéros de ligne contenues dans une fonction à l’aide de l’adresse de fonction virtuel et la longueur.  
+ Cet exemple montre une fonction qui obtient tous les numéros de ligne contenus dans une fonction à l’aide de l’adresse virtuelle et de la longueur de la fonction.  
   
 ```cpp#  
 IDiaEnumLineNumbers *GetLineNumbersByVA(IDiaSymbol *pFunc, IDiaSession *pSession)  

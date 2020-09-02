@@ -10,14 +10,14 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 07ec6d636ec087386fdc9462ae09db55400957a9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778412"
 ---
 # <a name="pf"></a>PF
-*L’option VSPerfCmd.exe* **PF** définit l’événement de profilage qui est échantillonné pour les défauts de page, et il modifie optionnellement le nombre de défauts de page dans un intervalle d’échantillonnage de la valeur par défaut de 10.
+L’option *VSPerfCmd.exe* **PF** définit l’événement de profilage qui est échantillonné sur les défauts de page et, éventuellement, modifie le nombre de défauts de page dans un intervalle d’échantillonnage à partir de la valeur par défaut de 10.
 
 > [!NOTE]
 > Vous ne pouvez pas utiliser **PF** sur les systèmes 64 bits.
@@ -40,22 +40,22 @@ VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /PF[:Events] [Options]
 ## <a name="required-options"></a>Options obligatoires
  Vous pouvez spécifier **PF** seulement sur une ligne de commande qui contient une des options suivantes.
 
- **Lancement :** `AppName` Démarre le profileur et l’application spécifiée par AppName.
+ **Lancer :** `AppName` Démarre le profileur et l’application spécifiée par AppName.
 
- **Attachez :** `PID` Attache le profileur au processus spécifié par AppName.
+ **Attacher :** `PID` Attache le profileur au processus spécifié par AppName.
 
 ## <a name="invalid-options"></a>Options non valides
  Vous ne pouvez pas spécifier les options suivantes sur la même ligne de commande que **PF**.
 
- **Timer**[**:**`Cycles`] définit l’événement d’échantillonnage aux `Cycles`cycles d’horloge du processeur et définit l’intervalle d’échantillonnage à . L’intervalle de Timer par défaut est 10,000,000.
+ **Timer**[**:** `Cycles` ] définit l’événement d’échantillonnage sur les cycles d’horloge du processeur et définit éventuellement l’intervalle d’échantillonnage sur `Cycles` . L’intervalle de Timer par défaut est 10,000,000.
 
- **Sys**[**:**`Events`] définit l’événement d’échantillonnage aux appels de l’application profilée au noyau du `Events`système d’exploitation (syscalls) et définit en option l’intervalle d’échantillonnage à . L'intervalle Sys par défaut est 10.
+ **Sys**[**:** `Events` ] définit l’événement d’échantillonnage sur les appels de l’application profilée au noyau du système d’exploitation (syscalls) et définit éventuellement l’intervalle d’échantillonnage sur `Events` . L'intervalle Sys par défaut est 10.
 
- **Compteur:** `Name``,Reload`[`,FriendlyName`[ ] Définit l’événement d’échantillonnage `Name` au compteur de `Reload`performance de processeur spécifié par et définit l’intervalle d’échantillonnage à .
+ **Compteur :** `Name` [ `,Reload` [ `,FriendlyName` ]] Définit l’événement d’échantillonnage sur le compteur de performance de l’UC spécifié par `Name` et définit l’intervalle d’échantillonnage sur `Reload` .
 
- **GC**[**:**{**Allocation**&#124;**Lifetime**}] Collecte les données de mémoire .NET. Par défaut **(Allocation**), les données sont collectées à chaque événement d’allocation de mémoire. Lorsque le **paramètre à vie** est spécifié, les données sont également recueillies lors de chaque événement de collecte des ordures.
+ **GC**[**:**{**Allocation**&#124;**Lifetime**}] Collecte les données de mémoire .NET. Par défaut (**allocation**), les données sont collectées à chaque événement d’allocation de mémoire. Quand le paramètre **Lifetime** est spécifié, les données sont également collectées à chaque événement garbage collection.
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
  Cet exemple montre comment définir l’événement d’échantillonnage du profilage sur les défauts de page, et comment définir l’intervalle d’échantillonnage sur 20 défauts de page.
 
 ```cmd
@@ -64,7 +64,7 @@ VSPerfCmd.exe /Launch:TestApp.exe /PF:20
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Vsperfcmd](../profiling/vsperfcmd.md)
+- [VSPerfCmd](../profiling/vsperfcmd.md)
 - [Profiler des applications autonomes](../profiling/command-line-profiling-of-stand-alone-applications.md)
-- [Profil ASP.NET applications Web](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [Profiler des applications Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [Profiler des services](../profiling/command-line-profiling-of-services.md)

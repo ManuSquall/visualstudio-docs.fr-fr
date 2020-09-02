@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9c1fabdb202d51b85eb2983360bdfd02757f7649
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65699361"
 ---
-# <a name="cvcfllang"></a>CV_CFL_LANG
+# <a name="cv_cfl_lang"></a>CV_CFL_LANG
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Spécifie le langage de code source de l’application ou d’un module lié.  
+Spécifie la langue du code source de l’application ou du module lié.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -51,61 +51,61 @@ typedef enum CV_CFL_LANG { 
   
 ## <a name="elements"></a>Éléments  
  CV_CFL_C  
- Langue de l’application est C.  
+ La langue de l’application est C.  
   
  CV_CFL_CXX  
- Langue de l’application est en C++.  
+ Le langage de l’application est C++.  
   
  CV_CFL_FORTRAN  
- Langue de l’application est FORTRAN.  
+ La langue de l’application est FORTRAN.  
   
  CV_CFL_MASM  
- Langue de l’application est Microsoft Macro Assembler.  
+ La langue de l’application est Microsoft Macro Assembler.  
   
  CV_CFL_PASCAL  
- Langue de l’application est Pascal.  
+ La langue de l’application est Pascal.  
   
  CV_CFL_BASIC  
- Langue de l’application est BASIC.  
+ La langue de l’application est de base.  
   
  CV_CFL_COBOL  
- Langue de l’application est COBOL.  
+ La langue de l’application est COBOL.  
   
  CV_CFL_LINK  
- Application est un module généré par l’éditeur de liens.  
+ L’application est un module généré par l’éditeur de liens.  
   
  CV_CFL_CVTRES  
- Application est un module de ressources converti avec l’outil CVTRES.  
+ L’application est un module de ressources converti à l’aide de l’outil CVTRES.  
   
  CV_CFL_CVTPGD  
- Application est un module de PGO optimisé généré avec CVTPGD outil.  
+ L’application est un module PGO optimisé généré avec l’outil CVTPGD.  
   
  CV_CFL_CSHARP  
- Langue de l’application est c#.  
+ Le langage de l’application est C#.  
   
  CV_CFL_VB  
- Langue de l’application est Visual Basic.  
+ La langue de l’application est Visual Basic.  
   
  CV_CFL_ILASM  
- Langue de l’application est un assembly de langage intermédiaire (autrement dit, les assembly de Common Language Runtime (CLR)).  
+ Le langage de l’application est un assembly de langage intermédiaire (c’est-à-dire un assembly CLR (Common Language Runtime)).  
   
  CV_CFL_JAVA  
- Langue de l’application est Java.  
+ La langue de l’application est Java.  
   
  CV_CFL_JSCRIPT  
- Langue de l’application est Jscript.  
+ Le langage de l’application est JScript.  
   
  CV_CFL_MSIL  
- Langue de l’application est un inconnu langage MSIL (Microsoft Intermediate), éventuellement un résultat de l’utilisation de la [/LTCG (Link-time Code Generation)](https://msdn.microsoft.com/library/788c6f52-fdb8-40c2-90af-4026ea2cf2e2) basculer.  
+ Le langage de l’application est un langage MSIL (Microsoft Intermediate Language) inconnu, éventuellement dû à l’utilisation du commutateur [/LTCG (génération de code durant l’édition de liens)](https://msdn.microsoft.com/library/788c6f52-fdb8-40c2-90af-4026ea2cf2e2) .  
   
  CV_CFL_HLSL  
- Langue de l’application est High Level Shader Language.  
+ La langue de l’application est le langage de nuanceur de haut niveau.  
   
 ## <a name="remarks"></a>Notes  
- Les valeurs dans cette énumération sont retournées par un appel à la [IDiaSymbol::get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md) (méthode).  
+ Les valeurs de cette énumération sont retournées par un appel à la méthode [IDiaSymbol :: get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md) .  
   
 ## <a name="requirements"></a>Configuration requise  
- En-tête : cvconst.h  
+ En-tête : cvconst. h  
   
 ## <a name="see-also"></a>Voir aussi  
  [Énumérations et structures](../../debugger/debug-interface-access/enumerations-and-structures.md)   

@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: aa90262081a693227b4594a4e5b7fe22c8fb1627
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778659"
 ---
 # <a name="instruction-pointers-ips-view---net-memory-sampling-data"></a>Pointeurs d’instruction, vue - données d’échantillonnage de la mémoire .NET
@@ -25,12 +25,12 @@ La vue Pointeurs d’instruction pour les données de profilage de l’allocatio
 
 |Colonne|Description|
 |------------|-----------------|
-|**ID du processus**|ID du processus (PID) de l'exécution du profilage.|
+|**ID de processus**|ID du processus (PID) de l'exécution du profilage.|
 |**Nom du processus**|Nom du processus.|
 |**Nom du module**|Nom du module qui contient l’instruction.|
 |**Chemin du module**|Chemin du module qui contient l’instruction.|
-|**Fichier source**|Fichier source qui contient l’instruction.|
-|**Nom de fonction**|Nom de la fonction.|
+|**Source File**|Fichier source qui contient l’instruction.|
+|**Nom de la fonction**|Nom de la fonction.|
 |**Numéro de ligne de fonction**|Numéro de ligne du début de cette fonction dans le fichier source.|
 |**Adresse de la fonction**|Adresse de départ de la fonction.|
 |**Début ligne source**|Numéro de la ligne de début dans le fichier source au niveau duquel l’allocation a eu lieu.|
@@ -44,4 +44,4 @@ La vue Pointeurs d’instruction pour les données de profilage de l’allocatio
 |**% d’octets exclusifs**|Pourcentage de tous les octets de mémoire alloués lors de l’exécution du profilage qui ont été alloués par l’instruction.|
 
 ## <a name="see-also"></a>Voir aussi
-- [Pointeurs d’instruction (IP), vue](../profiling/instruction-pointers-ips-view-sampling-data.md)
+- [Pointeurs d'instruction (IP), vue](../profiling/instruction-pointers-ips-view-sampling-data.md)

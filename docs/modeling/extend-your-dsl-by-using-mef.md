@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 04d14b3b17953ef30620d9f616bb471b186e9c9f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547639"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Extension de votre DSL à l'aide de MEF
@@ -26,7 +26,7 @@ Pour plus d’informations sur MEF, consultez [Managed Extensibility Framework (
 
 1. Créez un dossier nommé **MefExtension** dans le projet **DslPackage** . Ajoutez-y les fichiers suivants :
 
-     Nom du fichier :`CommandExtensionVSCT.tt`
+     Nom du fichier : `CommandExtensionVSCT.tt`
 
     > [!IMPORTANT]
     > Définissez le GUID dans ce fichier pour qu’il soit identique au GUID CommandSetId défini dans DslPackage\GeneratedCode\Constants.tt
@@ -42,21 +42,21 @@ Pour plus d’informations sur MEF, consultez [Managed Extensibility Framework (
     <#@ include file="DslPackage\CommandExtensionVSCT.tt" #>
     ```
 
-    Nom du fichier :`CommandExtensionRegistrar.tt`
+    Nom du fichier : `CommandExtensionRegistrar.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="DslPackage\CommandExtensionRegistrar.tt" #>
     ```
 
-    Nom du fichier :`ValidationExtensionEnablement.tt`
+    Nom du fichier : `ValidationExtensionEnablement.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="DslPackage\ValidationExtensionEnablement.tt" #>
     ```
 
-    Nom du fichier :`ValidationExtensionRegistrar.tt`
+    Nom du fichier : `ValidationExtensionRegistrar.tt`
 
     Si vous ajoutez ce fichier, vous devez activer la validation dans votre DSL en utilisant au moins l’un des commutateurs dans **EditorValidation** dans l’Explorateur DSL.
 
@@ -65,7 +65,7 @@ Pour plus d’informations sur MEF, consultez [Managed Extensibility Framework (
     <#@ include file="DslPackage\ValidationExtensionRegistrar.tt" #>
     ```
 
-    Nom du fichier :`PackageExtensionEnablement.tt`
+    Nom du fichier : `PackageExtensionEnablement.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
@@ -74,21 +74,21 @@ Pour plus d’informations sur MEF, consultez [Managed Extensibility Framework (
 
 2. Créez un dossier nommé **MefExtension** dans le projet **DSL** . Ajoutez-y les fichiers suivants :
 
-     Nom du fichier :`DesignerExtensionMetaDataAttribute.tt`
+     Nom du fichier : `DesignerExtensionMetaDataAttribute.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="Dsl\DesignerExtensionMetadataAttribute.tt" #>
     ```
 
-    Nom du fichier :`GestureExtensionEnablement.tt`
+    Nom du fichier : `GestureExtensionEnablement.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
     <#@ include file="Dsl\GestureExtensionEnablement.tt" #>
     ```
 
-    Nom du fichier :`GestureExtensionController.tt`
+    Nom du fichier : `GestureExtensionController.tt`
 
     ```
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
@@ -177,7 +177,7 @@ Vous pouvez écrire des extensions dans le projet de code de l’assembly d’un
 
 Pour écrire une commande de menu, définissez une classe qui implémente <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> et préfixe la classe avec l’attribut défini dans votre DSL, nommé *YourDsl* `CommandExtension` . Vous pouvez écrire plusieurs classes de commandes de menu.
 
-`QueryStatus()`est appelé chaque fois que l’utilisateur clique avec le bouton droit sur le diagramme. Il doit inspecter la sélection actuelle et définir `command.Enabled` pour indiquer quand la commande est applicable.
+`QueryStatus()` est appelé chaque fois que l’utilisateur clique avec le bouton droit sur le diagramme. Il doit inspecter la sélection actuelle et définir `command.Enabled` pour indiquer quand la commande est applicable.
 
 ```csharp
 using System.ComponentModel.Composition;

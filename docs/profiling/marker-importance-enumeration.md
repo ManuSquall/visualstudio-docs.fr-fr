@@ -13,16 +13,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d67a1806034d55147379626b6eb4f868532e4d77
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85330738"
 ---
 # <a name="marker_importance-enumeration"></a>marker_importance, énumération
 Représente le niveau d’importance d’un marqueur du visualiseur concurrentiel.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Syntaxe
 
 ```cpp
 enum marker_importance;
@@ -39,7 +39,7 @@ enum marker_importance;
 |`low_importance`|Spécifie que le marqueur a une importance basse.|
 |`normal_importance`|Spécifie que le marqueur a une importance normale.|
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  **En-tête :** *cvmarkersobj.h*
 
  **Espace de noms** : Concurrency::diagnostic

@@ -17,10 +17,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 54d5de2395c0ce95bc0c20c3ae7810b2762122fa
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85329952"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
@@ -52,7 +52,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 |-------------|-----------------|
 |**U**|La sortie du rapport et la sortie de la console redirigée sont écrites au format Unicode. Doit être la première option spécifiée.|
 |**Summary:**[*types*]|Crée un ou plusieurs types de rapports.<br /><br /> -   `All` : tous les types de rapport sont générés.<br />-   `CallerCallee` : relations parent/enfant entre les fonctions.<br />-   `Function` : fonctions appelées.<br />-   `CallTree` : hiérarchie des fonctions appelées.<br />-   `Counter` : toutes les marques ainsi que les valeurs des compteurs de performances Windows.<br />-   `Ip` : instructions profilées.<br />-   `Life` : durée de vie des objets alloués (disponible lorsque les données d’allocation ont été collectées).<br />-   `Line` : données de profil de la ligne du code source.<br />-   `Header` : le rapport contient des informations d’en-tête de fichier.<br />-   `Mark` : toutes les marques.<br />-   `Module` : modules profilés.<br />-   `Process` : processus profilés.<br />-   `Thread` : threads profilés.<br />-   `Type` : types alloués.<br />-   `Contention` : contentions de ressource.<br />-   `RuleWarnings` : problèmes de règles de performance.<br />-   `ETW` : tous les événements de suivi d’événements pour Windows (ETW) collectés dans l’exécution du profilage. Le fichier de données .etl doit être à son emplacement d’origine ou dans le répertoire qui contient le fichier .vsp ou .vsps.|
-|**Langage**|Rapport de sortie au format XML.|
+|**Xml**|Rapport de sortie au format XML.|
 |**CallTrace**|Crée une liste d’entrées et de sorties de fonction, d’événements ETW et de marques.|
 |**ClearPackedSymbols**|Supprime les symboles précédemment incorporés d’un fichier de données du profileur. Exécutez cette commande avant d’exécuter PackSymbols une deuxième fois.|
 |**SymbolPath :**`path`|Spécifie un ou plusieurs chemins de recherche ou serveurs de symboles qui contiennent les symboles pour le fichier de données du profileur.|
@@ -84,7 +84,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 
 |Options|Description|
 |-------------|-----------------|
-|**Différenci**  `vspfile1 vspfile2`|Compare deux fichiers de rapports (.*vsp* ou .*vsps*). Les options de résumé sont ignorées à l’aide de l’option diff.|
+|**Diff**  `vspfile1 vspfile2`|Compare deux fichiers de rapports (.*vsp* ou .*vsps*). Les options de résumé sont ignorées à l’aide de l’option diff.|
 |**Diff:**[*value*]|Au-dessous de cette valeur de seuil, la différence entre deux valeurs est ignorée. De même, les nouvelles données avec des valeurs en dessous de ce seuil ne sont pas affichées.|
 |**DiffTable :**[*TableName*]|Utilise cette table spécifique pour comparer des fichiers. La valeur par défaut est la table des fonctions.|
 |**DiffColumn :**[*ColumnName*]|Utilise cette colonne spécifique pour comparer des valeurs. La valeur par défaut est la colonne de pourcentage d’échantillons exclusifs.|

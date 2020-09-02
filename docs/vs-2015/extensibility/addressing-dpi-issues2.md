@@ -1,5 +1,5 @@
 ---
-title: Adressage « Incidents2 » PPP | Microsoft Docs
+title: Adressage DPI Issues2 | Microsoft Docs
 ms.date: 11/15/2016
 ms.topic: conceptual
 ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
@@ -7,51 +7,51 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9b8bc5963ba9263d72800cc473cfa56324884ace
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65699270"
 ---
 # <a name="addressing-dpi-issues"></a>Résolution des problèmes DPI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Un nombre croissant de périphériques fournies dans les écrans « haute résolution ». Ces écrans ont généralement plus de 200 pixels par pouce (PPP). Travailler avec une application sur ces ordinateurs nécessitera contenu mis à l’échelle pour répondre aux besoins de l’affichage du contenu à une distance de l’affichage normal pour l’appareil. À compter de 2014, la cible principale pour les écrans à haute densité est mobile computing appareils (tablettes, ordinateurs portables coque et téléphones).  
+Un nombre grandissant d’appareils sont fournis avec des écrans « haute résolution ». Ces écrans ont généralement plus de 200 pixels par pouce (PPP). L’utilisation d’une application sur ces ordinateurs nécessite que le contenu soit mis à l’échelle pour répondre aux besoins de l’affichage du contenu à une distance d’affichage normale pour l’appareil. À partir de 2014, la cible principale pour les affichages à haute densité est celle des appareils informatiques mobiles (tablettes, ordinateurs portables à ouverture latérale et téléphones).  
   
- Windows 8.1 et versions ultérieures contient plusieurs fonctionnalités pour activer ces ordinateurs travailler avec les environnements où l’ordinateur est attaché à la fois à haute densité et densité standard affiche en même temps et les affiche.  
+ Windows 8.1 et versions ultérieures contiennent plusieurs fonctionnalités permettant à ces machines de fonctionner avec des écrans et des environnements où l’ordinateur est attaché à des affichages à haute densité et à densité standard en même temps.  
   
-- Windows peut vous permettre au contenu de mise à l’échelle à l’appareil à l’aide de la « faire texte et autres éléments supérieure ou inférieure » paramètre (disponible depuis Windows XP).  
+- Windows peut vous permettre de mettre à l’échelle le contenu sur l’appareil à l’aide du paramètre « rendre le texte et d’autres éléments plus grands ou plus petits » (disponible depuis Windows XP).  
   
-- Windows 8.1 et versions ultérieures est automatiquement adapter le contenu pour la plupart des applications être cohérent lorsque déplacées entre affiche de différentes densités de pixel. Lorsque l’écran principal est à haute densité (200 % mise à l’échelle) et l’affichage secondaire est densité standard (100 %), Windows sera automatiquement mise à l’échelle le contenu de la fenêtre application vers le bas sur l’affichage secondaire (1 pixel affichée pour chaque 4 pixels rendus par le application).  
+- Windows 8.1 et versions ultérieures met automatiquement à l’échelle le contenu pour que la plupart des applications soient cohérentes lorsqu’elles sont déplacées entre des affichages de densités de pixels différentes. Lorsque l’affichage principal est haute densité (200% de mise à l’échelle) et que l’affichage secondaire est une densité standard (100%), Windows met automatiquement à l’échelle le contenu de la fenêtre d’application sur l’affichage secondaire (1 pixel affiché pour chaque 4 pixels rendu par l’application).  
   
-- Windows ne pourra pas le droit de mise à l’échelle pour la densité en pixels et à distance pour l’affichage (Windows 7 et versions ultérieures, configurables par l’OEM) d’affichage.  
+- Par défaut, Windows passera à la mise à l’échelle appropriée pour la densité de pixels et la distance d’affichage pour l’affichage (Windows 7 et versions ultérieures, configurable par l’OEM).  
   
-- Windows peut adapter automatiquement le contenu de 250 % sur de nouveaux périphériques qui dépassent les 280 PPP (à compter de Windows 8.1 s.14).  
+- Windows peut automatiquement mettre à l’échelle le contenu jusqu’à 250% sur les nouveaux appareils qui dépassent 280 PPP (à partir de Windows 8.1 S14).  
   
-  Windows a un moyen de traiter avec montée en charge l’interface utilisateur pour tirer parti des nombres de pixel accrue. Une application adhère à ce système en déclarant elle-même « système reconnaissant les résolutions. » Les applications qui ne le faites pas sont mis à l’échelle par le système. Cela peut entraîner une expérience utilisateur « approximative » où l’application entière est uniformément étiré par pixel. Exemple :  
+  Windows dispose d’un moyen de faire face à la mise à l’échelle de l’interface utilisateur pour tirer parti de l’augmentation du nombre de pixels. Une application choisit dans ce système en déclarant elle-même « prise en charge de la résolution du système ». Les applications qui ne le font pas sont mises à l’échelle par le système. Cela peut se traduire par une expérience utilisateur « floue » dans laquelle l’application entière est étirée uniformément par pixel. Par exemple :  
   
-  ![PPP émet floue](../extensibility/media/dpi-issues-fuzzy.png "PPP émet floue")  
+  ![Problèmes de PPP - Flou](../extensibility/media/dpi-issues-fuzzy.png "Problèmes de PPP - Flou")  
   
-  Visual Studio adhère à en cours de mise à l’échelle-reconnaissant les résolutions et par conséquent n’est pas « virtualisé. »  
+  Visual Studio opte pour la prise en charge de la mise à l’échelle DPI et n’est donc pas « virtualisé ».  
   
-  Tirer parti de plusieurs technologies d’interface utilisateur, qui présentent les différentes manières de traiter les facteurs définies par le système de mise à l’échelle Windows (et Visual Studio). Exemple :  
+  Windows (et Visual Studio) tirent parti de plusieurs technologies d’interface utilisateur, qui présentent des méthodes différentes pour traiter les facteurs de mise à l’échelle définis par le système. Par exemple :  
   
-- WPF mesure les contrôles d’une manière indépendante du périphérique (unités, et non en pixels). WPF UI s’ajuste automatiquement pour la résolution actuelle.  
+- WPF mesure les contrôles de façon indépendante du périphérique (unités, et non pixels). L’interface utilisateur de WPF est automatiquement mise à l’échelle pour la résolution actuelle.  
   
-- Toutes les tailles de texte, quel que soit l’infrastructure d’interface utilisateur sont exprimées en points et par conséquent, sont traitées par le système en tant qu’indépendant des PPP. Texte dans Win32, WinForms et WPF déjà montée correctement lorsqu’elle est dessinée sur le périphérique d’affichage.  
+- Toutes les tailles de texte, quelle que soit l’infrastructure de l’interface utilisateur, sont exprimées en points, et sont donc traitées par le système comme étant indépendantes des DPI. Le texte dans Win32, WinForms et WPF est déjà mis à l’échelle correctement lorsqu’il est dessiné sur le périphérique d’affichage.  
   
-- Fenêtres et boîtes de dialogue Win32/WinForms disposent de moyens permettant la disposition est redimensionné avec texte – par exemple, via la grille, les flux et les panneaux de disposition de table. Ces outils permettent en évitant les emplacements de pixel codées en dur qui ne sont pas à l’échelle lorsque les tailles de police sont augmentées.  
+- Les boîtes de dialogue Win32/WinForms et Windows ont des moyens d’activer la disposition qui est redimensionnée avec du texte, par exemple par le biais des panneaux de disposition de grille, de fluide et de tableau. Celles-ci permettent d’éviter les emplacements de pixels codés en dur qui ne sont pas mis à l’échelle lorsque les tailles de police sont augmentées.  
   
-- Icônes fournies par le système ou des ressources en fonction des métriques du système (par exemple, SM_CXICON et SM_CXSMICON) sont déjà mis à l’échelle.  
+- Les icônes fournies par le système ou les ressources basées sur les métriques du système (par exemple, SM_CXICON et SM_CXSMICON) sont déjà mises à l’échelle.  
   
-## <a name="older-win32-gdi-gdi-and-winforms-based-ui"></a>Win32 plus anciens (GDI, GDI +) et l’interface utilisateur basée sur WinForms  
- Bien que WPF est déjà en reconnaissant les résolutions élevées, une grande partie de notre code basé sur Win32/GDI initialement écrite avec prise en charge DPI à l’esprit. Windows a fourni les API de mise à l’échelle PPP. Résout les problèmes de Win32 doit les utiliser régulièrement sur le produit. Visual Studio a fourni une assistance de bibliothèque de classes afin d’éviter les dupliquent des fonctionnalités et de garantir la cohérence générale du produit.  
+## <a name="older-win32-gdi-gdi-and-winforms-based-ui"></a>Interface utilisateur Win32 (GDI, GDI+) et WinForms plus ancienne  
+ Bien que WPF prenne déjà en charge la résolution PPP, une grande partie de notre code Win32/GDI n’était pas à l’origine écrit avec la prise en compte de la résolution PPP. Windows a fourni des API de mise à l’échelle DPI. Les correctifs pour les problèmes Win32 doivent les utiliser de manière cohérente dans le produit. Visual Studio a fourni une bibliothèque de classes d’assistance pour éviter la duplication des fonctionnalités et garantir la cohérence au sein du produit.  
   
 ## <a name="high-resolution-images"></a>Images haute résolution  
- Cette section s’applique principalement aux développeurs de l’extension de Visual Studio 2013. Pour Visual Studio 2015, utilisez le service d’images qui est intégré à Visual Studio. Vous pouvez également trouver que vous devez cible/prise en charge de nombreuses versions de Visual Studio et par conséquent, l’utilisation du service d’images en 2015 n’est pas une option dans la mesure où il n’existe pas dans les versions précédentes. Cette section concerne également vous puis.  
+ Cette section s’adresse principalement aux développeurs qui étendent Visual Studio 2013. Pour Visual Studio 2015, utilisez le service d’images qui est intégré à Visual Studio. Vous constaterez peut-être également que vous devez prendre en charge/cibler de nombreuses versions de Visual Studio. par conséquent, l’utilisation du service d’images dans 2015 n’est pas une option, car elle n’existe pas dans les versions précédentes. Cette section est également pour vous.  
   
-## <a name="scaling-up-images-that-are-too-small"></a>Mise à l’échelle des images qui sont trop petits.  
- Les images qui sont trop petits peuvent être « mis à l’échelle » et rendus sur GDI et WPF à l’aide de certaines méthodes courantes. Les classes d’assistance PPP managées sont disponibles pour les intégrateurs de systèmes internes et externes Visual Studio à l’adresse mise à l’échelle des icônes, bitmaps, imagestrips et imagelists. Basées sur Win32 de natif C / C ++ helpers sont disponibles pour la mise à l’échelle HICON, HBITMAP, HIMAGELIST et VsUI::GdiplusImage. Mise à l’échelle d’une image bitmap généralement nécessite uniquement une modification d’une ligne après l’ajout d’une référence à la bibliothèque d’assistance. Exemple :  
+## <a name="scaling-up-images-that-are-too-small"></a>Mise à l’échelle des images trop petites  
+ Les images trop petites peuvent être « mises à l’échelle » et affichées sur GDI et WPF à l’aide de méthodes courantes. Les classes d’assistance DPI managées sont disponibles pour les intégrateurs Visual Studio internes et externes pour traiter les icônes de mise à l’échelle, les bitmaps, imagestrips et imagelists. Les applications auxiliaires Win32 natives C/C + + sont disponibles pour la mise à l’échelle de HICON, HBITMAP, HIMAGELIST et VsUI :: GdiplusImage. En général, la mise à l’échelle d’une image bitmap nécessite uniquement une modification d’une seule ligne après l’inclusion d’une référence à la bibliothèque d’assistance. Par exemple :  
   
 ```cpp  
 (Unmanaged)  VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);  
@@ -61,51 +61,51 @@ Un nombre croissant de périphériques fournies dans les écrans « haute réso
 (WinForms) DpiHelper.LogicalToDeviceUnits(ref image);  
 ```  
   
- Mise à l’échelle un objet imagelist varie selon qu’imagelist est terminé au moment du chargement, ou est ajouté au moment de l’exécution. Si elle est terminée au moment du chargement, appelez LogicalToDeviceUnits() avec imagelist comme vous le feriez pour une image bitmap. Lorsque le code a besoin charger une bitmap individuel avant de composer imagelist, veillez à mettre à l’échelle la taille de l’image d’imagelist :  
+ La mise à l’échelle d’un ImageList varie selon que le ImageList est terminé au moment du chargement ou qu’il est ajouté au moment de l’exécution. S’il est terminé au moment du chargement, appelez LogicalToDeviceUnits () avec l’ImageList comme vous le feriez pour une image bitmap. Lorsque le code doit charger une image bitmap individuelle avant de composer ImageList, veillez à mettre à l’échelle la taille de l’image du ImageList :  
   
 ```csharp  
 imagelist.ImageSize = DpiHelper.LogicalToDeviceUnits(imagelist.ImageSize);  
 ```  
   
- En code natif, les dimensions peuvent être mis à l’échelle lors de la création imagelist comme suit :  
+ En code natif, les dimensions peuvent être mises à l’échelle lors de la création du ImageList comme suit :  
   
 ```cpp  
 ImageList_Create(VsUI::DpiHelper::LogicalToDeviceUnitsX(16),VsUI::DpiHelper::LogicalToDeviceUnitsY(16), ILC_COLOR32|ILC_MASK, nCount, 1);  
 ```  
   
- Fonctions de la bibliothèque autorisent la spécification de l’algorithme de redimensionnement. Lorsque mise à l’échelle d’images à placer dans imagelists, veillez à spécifier la couleur d’arrière-plan qui est utilisée pour la transparence ou mode NearestNeighbor présente à l’échelle (ce qui entraîne des distorsions à 125 % et 150 %).  
+ Les fonctions de la bibliothèque autorisent la spécification de l’algorithme de redimensionnement. Lors de la mise à l’échelle des images à placer dans imagelists, veillez à spécifier la couleur d’arrière-plan utilisée pour la transparence ou utilisez la mise à l’échelle NearestNeighbor (ce qui entraîne des distorsions à 125% et 150%).  
   
- Consultez le <xref:Microsoft.VisualStudio.PlatformUI.DpiHelper> documentation sur MSDN.  
+ Consultez la <xref:Microsoft.VisualStudio.PlatformUI.DpiHelper> documentation sur MSDN.  
   
- Le tableau suivant présente des exemples de comment images doivent être à l’échelle PPP correspondante facteurs d’échelle. Les images en vert indiquent nos meilleures pratiques à compter de Visual Studio 2013 (100 à 200 % mise à l’échelle PPP) :  
+ Le tableau suivant présente des exemples de mise à l’échelle des images aux facteurs de mise à l’échelle DPI correspondants. Les images en vert indiquent nos meilleures pratiques en matière de Visual Studio 2013 (mise à l’échelle de 100%-200% ppp) :  
   
- ![Problèmes de PPP mise à l’échelle](../extensibility/media/dpi-issues-scaling.png "les problèmes de PPP mise à l’échelle")  
+ ![Problèmes de PPP lors de la mise à l’échelle](../extensibility/media/dpi-issues-scaling.png "Problèmes de PPP lors de la mise à l’échelle")  
   
-## <a name="layout-issues"></a>Problèmes de mise en page  
- Problèmes courants de mise en page peuvent être évités principalement en conservant des points dans l’interface utilisateur à l’échelle et par rapport à l’autre plutôt qu’en utilisant les emplacements absolus (plus précisément, exprimées en pixels). Exemple :  
+## <a name="layout-issues"></a>Problèmes de disposition  
+ Les problèmes de disposition courants peuvent être évités principalement en conservant les points de l’interface utilisateur mis à l’échelle et les uns par rapport aux autres plutôt qu’en utilisant des emplacements absolus (en l’occurrence, en pixels). Par exemple :  
   
-- Les positions de disposition/texte amené à ajuster au compte pour la mise à l’échelle des images.  
+- Les positions de disposition/texte doivent être ajustées pour tenir compte des images mises à l’échelle.  
   
-- Colonnes dans les grilles doivent avoir des largeurs ajustées pour le texte mis à l’échelle.  
+- Les colonnes des grilles doivent avoir des largeurs ajustées pour le texte mis à l’échelle.  
   
-- Tailles codées en dur ou espace entre les éléments devez également être mis à l’échelle. Les tailles sont basés uniquement sur les dimensions de texte sont en général bien, étant donné que les polices sont automatiquement mis à l’échelle.  
+- Les tailles codées en dur ou l’espace entre les éléments devront également être mis à l’échelle. Les tailles basées uniquement sur les dimensions de texte sont généralement correctes, car les polices sont automatiquement mises à l’échelle.  
   
-  Fonctions d’assistance sont disponibles dans le <xref:Microsoft.VisualStudio.PlatformUI.DpiHelper> classe permettant d’autoriser la mise à l’échelle sur l’axe des X et Y :  
+  Les fonctions d’assistance sont disponibles dans la <xref:Microsoft.VisualStudio.PlatformUI.DpiHelper> classe pour permettre la mise à l’échelle sur l’axe X et Y :  
   
-- LogicalToDeviceUnitsX/LogicalToDeviceUnitsY (fonctions permettent la mise à l’échelle sur X / axe des Y)  
+- LogicalToDeviceUnitsX/LogicalToDeviceUnitsY (fonctions permettant la mise à l’échelle sur l’axe X/Y)  
   
-- int space = DpiHelper.LogicalToDeviceUnitsX (10);  
+- int Space = DpiHelper. LogicalToDeviceUnitsX (10);  
   
-- int height = VsUI::DpiHelper::LogicalToDeviceUnitsY(5);  
+- int Height = VsUI ::D piHelper :: LogicalToDeviceUnitsY (5);  
   
-  Il existe des surcharges de LogicalToDeviceUnits pour permettre la mise à l’échelle des objets tels que Rect, Point et Size.  
+  Il existe des surcharges LogicalToDeviceUnits pour permettre la mise à l’échelle d’objets tels que Rect, point et Size.  
   
-## <a name="using-the-dpihelper-libraryclass-to-scale-images-and-layout"></a>À l’aide de la bibliothèque/classe DPIHelper à l’échelle des images et la disposition  
- La bibliothèque d’assistance de Visual Studio PPP est disponible dans les formulaires natifs et managés et peut être utilisée par d’autres applications en dehors de l’interpréteur de commandes de Visual Studio.  
+## <a name="using-the-dpihelper-libraryclass-to-scale-images-and-layout"></a>Utilisation de la classe/bibliothèque DPIHelper pour mettre à l’échelle des images et de la disposition  
+ La bibliothèque d’assistance PPP de Visual Studio est disponible sous forme native et managée et peut être utilisée en dehors du shell Visual Studio par d’autres applications.  
   
- Pour utiliser la bibliothèque, accédez à la [exemples d’extensibilité de Visual Studio VSSDK](https://github.com/Microsoft/VSSDK-Extensibility-Samples) et clonez l’exemple de haute-DPI_Images_Icons  
+ Pour utiliser la bibliothèque, accédez aux [exemples d’extensibilité de Visual Studio VSSDK](https://github.com/Microsoft/VSSDK-Extensibility-Samples) et clonez l’exemple High-DPI_Images_Icons  
   
- Dans les fichiers sources, inclure VsUIDpiHelper.h et appeler les fonctions statiques de classe de VsUI::DpiHelper :  
+ Dans les fichiers sources, incluez VsUIDpiHelper. h et appelez les fonctions statiques de la classe VsUI ::D piHelper :  
   
 ```cpp  
 #include "VsUIDpiHelper.h"  
@@ -116,19 +116,19 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
 ```  
   
 > [!NOTE]
-> N’utilisez pas les fonctions d’assistance dans des variables statiques au niveau du module ou de niveau classe. La bibliothèque utilise également des variables statiques pour la synchronisation de thread et que vous pouvez rencontrer des problèmes d’initialisation de la commande. Convertir ces variables statiques aux variables de membre non statiques, soit les encapsuler dans une fonction (afin qu’ils être construites lors du premier accès).  
+> N’utilisez pas les fonctions d’assistance dans les variables statiques au niveau du module ou au niveau de la classe. La bibliothèque utilise également des variables statiques pour la synchronisation des threads et vous pouvez rencontrer des problèmes d’initialisation de l’ordre. Convertissez ces valeurs statiques en variables membres non statiques, ou encapsulez-les dans une fonction (afin qu’elles soient construites au premier accès).  
   
- Pour accéder aux fonctions d’assistance de PPP à partir de code managé qui s’exécute à l’intérieur de l’environnement Visual Studio :  
+ Pour accéder aux fonctions d’assistance PPP à partir du code managé qui s’exécute dans l’environnement Visual Studio :  
   
-- Le projet de consommation doit faire référence à la dernière version de l’interpréteur de commandes MPF. Exemple :  
+- Le projet de consommation doit référencer la dernière version de Shell MPF. Par exemple :  
   
     ```csharp  
     <Reference Include="Microsoft.VisualStudio.Shell.14.0.dll" />  
     ```  
   
-- Vérifiez que le projet dispose des références à **System.Windows.Forms**, **PresentationCore**, et **PresentationUI**.  
+- Vérifiez que le projet a des références à **System. Windows. Forms**, **PresentationCore**et **presentationui**.  
   
-- Dans le code, utilisez le **Microsoft.VisualStudio.PlatformUI** espace de noms et l’appel de fonctions statiques de classe de DpiHelper. Pour les types pris en charge (points, tailles, rectangles et ainsi de suite), sont fournies à l’échelle de fonctions d’extension qui retournent de nouveaux objets. Exemple :  
+- Dans le code, utilisez l’espace de noms **Microsoft. VisualStudio. PlatformUI** et appelez les fonctions statiques de la classe DpiHelper. Pour les types pris en charge (points, tailles, rectangles, etc.), des fonctions d’extension sont fournies et retournent de nouveaux objets mis à l’échelle. Par exemple :  
   
     ```csharp  
     using Microsoft.VisualStudio.PlatformUI;  
@@ -138,20 +138,20 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
   
     ```  
   
-## <a name="dealing-with-wpf-image-fuzziness-in-zoomable-ui"></a>Affaire à tolérance d’image WPF dans l’interface utilisateur zoomable  
- Dans WPF, les bitmaps sont redimensionnées automatiquement par WPF pour le niveau de zoom actuel PPP à l’aide d’un algorithme de haute qualité bicubique (valeur par défaut), qui fonctionne bien pour les images ou des captures d’écran de grande taille, mais ne convient pas pour les icônes d’élément de menu, car elle introduit une tolérance perçue .  
+## <a name="dealing-with-wpf-image-fuzziness-in-zoomable-ui"></a>Gestion de la tolérance d’image WPF dans l’interface utilisateur avec zoom  
+ Dans WPF, les bitmaps sont redimensionnées automatiquement par WPF pour le niveau de zoom PPP actuel à l’aide d’un algorithme bicubique de haute qualité (par défaut), ce qui fonctionne bien pour les images ou les captures d’écran volumineuses, mais il n’est pas approprié pour les icônes d’élément de menu car il présente une tolérance perçue.  
   
  Recommandations :  
   
-- Pour le logo image et les bannières illustration, la valeur par défaut <xref:System.Windows.Media.BitmapScalingMode> mode de redimensionnement peut être utilisé.  
+- Pour les images de logos et de bannières, le <xref:System.Windows.Media.BitmapScalingMode> mode de redimensionnement par défaut peut être utilisé.  
   
-- Pour les éléments de menu et les images de l’iconographie, la <xref:System.Windows.Media.BitmapScalingMode> doit être utilisée quand elle n’entraîne pas autres artefacts de distorsion éliminer la tolérance (à 200 et 300 %).  
+- Pour les éléments de menu et les images iconographie, <xref:System.Windows.Media.BitmapScalingMode> doit être utilisé lorsqu’il n’entraîne pas d’autres artefacts de distorsion afin d’éliminer la tolérance (à 200% et 300%).  
   
-- • Pour zoom grand ne niveaux pas des multiples de 100 % (par exemple, 250 % ou % de 350), mise à l’échelle des images iconographie avec bicubique résultats dans l’interface utilisateur floue, filigrane. Un meilleur résultat est obtenu par la première mise à l’échelle l’image avec le mode NearestNeighbor présente au multiple plus grand de 100 % (par exemple, 200 % ou 300 %) et mise à l’échelle avec bicubique à partir de là. Consultez des cas spéciaux : prescaling des images WPF pour grandes PPP niveaux pour plus d’informations.  
+- • Pour les grands niveaux de zoom qui ne sont pas des multiples de 100% (par exemple, 250% ou 350%), la mise à l’échelle d’images iconographie avec des résultats bicubiques a une interface utilisateur floue et délavée. Un meilleur résultat est obtenu en mettant d’abord à l’échelle l’image avec NearestNeighbor sur le plus grand multiple de 100% (par exemple, 200% ou 300%). et la mise à l’échelle avec bicubique à partir de là. Pour plus d’informations, consultez cas spéciaux : prédimensionnement d’images WPF pour des niveaux de résolution élevée.  
   
-  La classe DpiHelper dans l’espace de noms Microsoft.VisualStudio.PlatformUI fournit un membre <xref:System.Windows.Media.BitmapScalingMode> qui peut être utilisé pour la liaison. Il permettra de l’interpréteur de commandes de Visual Studio contrôler l’image bitmap mise à l’échelle en mode sur le produit de manière uniforme, selon le facteur d’échelle PPP.  
+  La classe DpiHelper de l’espace de noms Microsoft. VisualStudio. PlatformUI fournit un membre <xref:System.Windows.Media.BitmapScalingMode> qui peut être utilisé pour la liaison. Cela permet au shell Visual Studio de contrôler le mode de mise à l’échelle des bitmaps sur le produit uniformément, en fonction du facteur d’échelle PPP.  
   
-  Pour l’utiliser dans XAML, ajoutez :  
+  Pour l’utiliser en XAML, ajoutez :  
   
 ```xaml  
 xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.14.0"  
@@ -160,22 +160,22 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
   
 ```  
   
- Le shell Visual Studio définit déjà cette propriété sur les boîtes de dialogue et fenêtres de niveau supérieur. WPF l’interface utilisateur en cours d’exécution dans Visual Studio est déjà hériter. Si le paramètre ne se propage pas à vos éléments de l’interface utilisateur particuliers, elle peut être définie sur l’élément racine de l’interface utilisateur XAML/WPF. Endroits où cela se produit incluent les fenêtres contextuelles, sur les éléments dont les parents de Win32, et les fenêtres du concepteur qui s’exécutent hors processus, tels que Blend.  
+ Le shell Visual Studio définit déjà cette propriété dans les fenêtres et les boîtes de dialogue de niveau supérieur. L’interface utilisateur WPF s’exécutant dans Visual Studio l’hérite déjà. Si le paramètre ne se propage pas à vos éléments d’interface utilisateur spécifiques, il peut être défini sur l’élément racine de l’interface utilisateur XAML/WPF. Les emplacements où cela se produit incluent les fenêtres contextuelles, les éléments avec parents Win32 et les fenêtres de concepteur qui s’exécutent hors processus, telles que Blend.  
   
- Une interface utilisateur peut mettre à l’échelle indépendamment le niveau de zoom de PPP système-set, telles que l’éditeur de texte Visual Studio et les concepteurs WPF (WPF de bureau et Windows Store). Dans ce cas, DpiHelper.BitmapScalingMode ne doit pas être utilisé. Pour résoudre ce problème dans l’éditeur, l’équipe IDE créé une propriété personnalisée intitulée RenderOptions.BitmapScalingMode. Définir cette valeur de propriété téléconsultations ou mode NearestNeighbor présente selon le niveau de zoom combiné du système et de votre interface utilisateur.  
+ Certaines interfaces utilisateur peuvent être mises à l’échelle indépendamment du niveau de zoom DPI défini par le système, par exemple l’éditeur de texte Visual Studio et les concepteurs WPF (bureau WPF et Windows Store). Dans ce cas, DpiHelper. BitmapScalingMode ne doit pas être utilisé. Pour résoudre ce problème dans l’éditeur, l’équipe de l’IDE a créé une propriété personnalisée intitulée RenderOptions. BitmapScalingMode. Définissez cette valeur de propriété sur HighQuality ou NearestNeighbor en fonction du niveau de zoom combiné du système et de votre interface utilisateur.  
   
-## <a name="special-case-prescaling-wpf-images-for-large-dpi-levels"></a>Cas particulier : prescaling d’images WPF pour les niveaux de PPP volumineux  
- Pour les niveaux de zoom très volumineux qui ne sont pas des multiples de 100 % (par exemple, 250 %, 350 % et ainsi de suite), mise à l’échelle des images d’iconographie avec résultats bicubique dans l’interface utilisateur floue, filigrane. L’impression de ces images en même temps que le texte est presque similaire à celui d’une illusion optique. Les images apparaissent à être plus proches à le œil plus clairs et par rapport au texte. Le résultat de mise à l’échelle au niveau de cette taille agrandie peut être amélioré par la première mise à l’échelle l’image avec le mode NearestNeighbor présente au multiple plus grand de 100 % (par exemple, 200 % ou 300 %) et mise à l’échelle avec bicubique le reste (50 pour cent supplémentaires).  
+## <a name="special-case-prescaling-wpf-images-for-large-dpi-levels"></a>Cas particulier : prédimensionnement d’images WPF pour les grands niveaux DPI  
+ Pour les très grands niveaux de zoom qui ne sont pas des multiples de 100% (par exemple, 250%, 350%, etc.), la mise à l’échelle d’images iconographie avec des résultats bicubiques a une interface utilisateur floue et délavée. L’impression de ces images en même temps que du texte clair est quasiment identique à celle d’une illusion optique. Les images semblent être plus proches de l’œil et être désactivées par rapport au texte. Le résultat de la mise à l’échelle à cette taille agrandie peut être amélioré en mettant d’abord à l’échelle l’image avec NearestNeighbor sur le plus grand multiple de 100% (par exemple, 200% ou 300%). et la mise à l’échelle avec bicubique jusqu’au reste (50%) supplémentaires.  
   
- Voici un exemple des différences de résultats, où la première image est mise à l’échelle avec l’algorithme de mise à l’échelle double améliorée -> 100 %, 200 % -> 250 %, et la deuxième identité simplement avec bicubique 100 % -> 250 %.  
+ Voici un exemple des différences de résultats, où la première image est mise à l’échelle à l’aide de l’algorithme de double mise à l’échelle 100%->200%->250%, et la seconde uniquement avec les 100s bicubiques%->250%.  
   
- ![PPP émet l’exemple de mise à l’échelle Double](../extensibility/media/dpi-issues-double-scaling-example.png "PPP émet Double exemple de mise à l’échelle")  
+ ![Exemple de résolution des problèmes PPP double mise à l’échelle](../extensibility/media/dpi-issues-double-scaling-example.png "Exemple de résolution des problèmes PPP double mise à l’échelle")  
   
- Pour activer l’interface utilisateur à utiliser cette mise à l’échelle double, le balisage XAML pour l’affichage de chaque élément d’Image devront être modifiées. Les exemples suivants montrent comment utiliser la double mise à l’échelle dans WPF dans Visual Studio à l’aide de la bibliothèque de DpiHelper et Shell.12/14.  
+ Pour permettre à l’interface utilisateur d’utiliser cette double mise à l’échelle, le balisage XAML pour l’affichage de chaque élément image doit être modifié. Les exemples suivants montrent comment utiliser la double mise à l’échelle dans WPF dans Visual Studio à l’aide de la bibliothèque DpiHelper et de Shell. 12/14.  
   
- Étape 1 : Prescale l’image à 200 %, 300 % et ainsi de suite à l’aide du mode NearestNeighbor présente.  
+ Étape 1 : prémettez l’image à l’échelle 200%, 300%, et ainsi de suite à l’aide de NearestNeighbor.  
   
- Prescale l’image à l’aide d’un convertisseur de soit appliqué sur une liaison, ou avec une extension de balisage XAML. Exemple :  
+ Mettre à l’échelle l’image à l’aide d’un convertisseur appliqué sur une liaison, ou avec une extension de balisage XAML. Par exemple :  
   
 ```xaml  
 <vsui:DpiPrescaleImageSourceConverter x:Key="DpiPrescaleImageSourceConverter" />  
@@ -186,7 +186,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
   
 ```  
   
- Si l’image doit également être à thème (plus, si ce n’est pas tout, des cas), le balisage peut utiliser un autre convertisseur qui effectue tout d’abord les thèmes de l’image et puis préalablement mise à l’échelle. Le balisage peut utiliser <xref:Microsoft.VisualStudio.PlatformUI.DpiPrescaleThemedImageConverter> ou <xref:Microsoft.VisualStudio.PlatformUI.DpiPrescaleThemedImageSourceConverter>, en fonction de la sortie de la conversion souhaitée.  
+ Si l’image doit également être à thème (la plupart du temps, si ce n’est pas le cas), le balisage peut utiliser un convertisseur différent qui effectue tout d’abord les thèmes de l’image, puis la pré-mise à l’échelle. Le balisage peut utiliser <xref:Microsoft.VisualStudio.PlatformUI.DpiPrescaleThemedImageConverter> ou <xref:Microsoft.VisualStudio.PlatformUI.DpiPrescaleThemedImageSourceConverter> , selon la sortie de conversion souhaitée.  
   
 ```xaml  
 <vsui:DpiPrescaleThemedImageSourceConverter x:Key="DpiPrescaleThemedImageSourceConverter" />  
@@ -203,17 +203,17 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
 </Image>  
 ```  
   
- Étape 2 : Vérifiez que la taille finale est correcte pour la résolution actuelle.  
+ Étape 2 : Vérifiez que la taille finale est correcte pour la résolution actuelle.  
   
- Étant donné que WPF étendra l’interface utilisateur pour la résolution actuelle à l’aide de la propriété BitmapScalingMode sur UIElement, un contrôle d’Image à l’aide d’une image prescaled comme sa source ressemblera à deux ou trois fois plus volumineux qu’il ne devrait. Voici plusieurs façons de compteur cet effet :  
+ Étant donné que WPF met à l’échelle l’interface utilisateur pour la résolution actuelle à l’aide de la propriété BitmapScalingMode définie sur l’UIElement, un contrôle d’image utilisant une image Prémis à l’échelle comme source est à deux ou trois fois plus grand qu’il ne le devrait. Voici quelques méthodes pour contrer cet effet :  
   
-- Si vous connaissez la dimension de l’image d’origine à 100 %, vous pouvez spécifier la taille exacte du contrôle Image. Ces tailles reflètent que la taille de l’interface utilisateur avant la mise à l’échelle est appliquée.  
+- Si vous connaissez la dimension de l’image d’origine à 100%, vous pouvez spécifier la taille exacte du contrôle image. Ces tailles reflètent la taille de l’interface utilisateur avant l’application de la mise à l’échelle.  
   
     ```xaml  
     <Image Source="{Binding Path=SelectedImage, Converter={StaticResource DpiPrescaleImageSourceConverter}}" Width="16" Height="16" />  
     ```  
   
-- Si la taille de l’image d’origine n’est pas connue, une propriété LayoutTransform peut servir à l’échelle vers le bas de l’objet Image finale. Exemple :  
+- Si la taille de l’image d’origine n’est pas connue, un LayoutTransform peut être utilisé pour réduire l’objet image final. Par exemple :  
   
     ```xaml  
     <Image Source="{Binding Path=SelectedImage, Converter={StaticResource DpiPrescaleImageSourceConverter}}" >  
@@ -225,10 +225,10 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
     </Image>  
     ```  
   
-## <a name="enabling-hdpi-support-to-the-weboc"></a>L’activation de la prise en charge HDPI pour le WebOC  
- Par défaut, les contrôles WebOC (par exemple, le contrôle WebBrowser dans WPF, ou l’interface IWebBrowser2) n’activent pas prise en charge et détection de HDPI. Le résultat sera un contrôle incorporé avec l’affichage du contenu qui est trop petit pour un affichage haute résolution. La section suivante décrit comment activer la prise en charge de la haute résolution dans une instance de WebOC web spécifique.  
+## <a name="enabling-hdpi-support-to-the-weboc"></a>Activation de la prise en charge de HDPI sur le WebOC  
+ Par défaut, les contrôles WebOC (tels que le contrôle WebBrowser dans WPF, ou l’interface IWebBrowser2) n’activent pas la détection et la prise en charge de HDPI. Le résultat est un contrôle incorporé dont le contenu d’affichage est trop petit sur un affichage haute résolution. La rubrique suivante décrit comment activer la prise en charge de la haute résolution dans une instance Web WebOC spécifique.  
   
- Implémenter l’interface IDocHostUIHandler (consultez l’article MSDN sur le [IDocHostUIHandler](https://msdn.microsoft.com/library/aa753260.aspx) interface) :  
+ Implémentez l’interface IDocHostUIHandler (consultez l’article MSDN sur l’interface [IDocHostUIHandler](https://msdn.microsoft.com/library/aa753260.aspx) ) :  
   
 ```idl  
 [ComImport, InterfaceType(ComInterfaceType.InterfaceIsIUnknown),  
@@ -307,7 +307,7 @@ public interface IDocHostUIHandler
     }   
 ```  
   
- Si vous le souhaitez, implémentez l’interface ICustomDoc (consultez l’article MSDN sur le [ICustomDoc](https://msdn.microsoft.com/library/aa753272.aspx) interface) :  
+ Vous pouvez également implémenter l’interface ICustomDoc (consultez l’article MSDN sur l’interface [ICustomDoc](https://msdn.microsoft.com/library/aa753272.aspx) ) :  
   
 ```idl  
 [InterfaceType(ComInterfaceType.InterfaceIsIUnknown),  
@@ -318,7 +318,7 @@ public interface ICustomDoc
 }   
 ```  
   
- Associer la classe qui implémente IDocHostUIHandler avec les documents du WebOC. Si vous avez implémenté l’interface ICustomDoc ci-dessus, dès que la propriété de document du WebOC n’est valide, les convertir en un ICustomDoc et appelez la méthode SetUIHandler, en passant de la classe qui implémente IDocHostUIHandler.  
+ Associez la classe qui implémente IDocHostUIHandler au document WebOC. Si vous avez implémenté l’interface ICustomDoc ci-dessus, dès que la propriété de document de WebOC est valide, effectuez un cast de celle-ci en ICustomDoc et appelez la méthode SetUIHandler, en passant la classe qui implémente IDocHostUIHandler.  
   
 ```csharp  
 // "this" references that class that owns the WebOC control and in this case also implements the IDocHostUIHandler interface  
@@ -327,7 +327,7 @@ customDoc.SetUIHandler(this);
   
 ```  
   
- Si vous n’avez pas implémenté l’interface ICustomDoc, puis dès que la propriété de document du WebOC n’est valide, vous devez les convertir en un objet IOleObject et appelez la méthode SetClientSite, en passant dans la classe qui implémente IDocHostUIHandler. Définir l’indicateur DOCHOSTUIFLAG_DPI_AWARE sur la DOCHOSTUIINFO passée à l’appel de méthode GetHostInfo :  
+ Si vous n’avez pas implémenté l’interface ICustomDoc, dès que la propriété de document WebOC est valide, vous devez la convertir en un IOleObject, puis appeler la méthode SetClientSite, en passant la classe qui implémente IDocHostUIHandler. Définissez l’indicateur DOCHOSTUIFLAG_DPI_AWARE sur le DOCHOSTUIINFO passé à l’appel de la méthode GetHostInfo :  
   
 ```csharp  
 public int GetHostInfo(DOCHOSTUIINFO info)  
@@ -340,13 +340,13 @@ public int GetHostInfo(DOCHOSTUIINFO info)
 }  
 ```  
   
- Il doit s’agir de tout ce que vous devez obtenir votre contrôle WebOC pour prendre en charge HPDI.  
+ C’est tout ce dont vous avez besoin pour que votre contrôle WebOC prenne en charge HPDI.  
   
 ## <a name="tips"></a>Conseils  
   
 1. Si la propriété de document sur le contrôle WebOC change, vous devrez peut-être réassocier le document à la classe IDocHostUIHandler.  
   
-2. Si la méthode ci-dessus ne fonctionne pas, il est un problème connu avec le WebOC ne collecte ne pas les modifications à l’indicateur de PPP. Le moyen le plus fiable de corriger cela consiste à activer/désactiver le zoom optique WebOC, deux appels de sens avec deux valeurs différentes pour le pourcentage de zoom. En outre, si cette solution de contournement est nécessaire, il peut être nécessaire effectuer cette opération sur chaque appel navigate.  
+2. Si la version ci-dessus ne fonctionne pas, il existe un problème connu avec le WebOC qui ne sélectionne pas la modification de l’indicateur PPP. La méthode la plus fiable pour résoudre ce cas consiste à basculer le zoom optique du WebOC, ce qui signifie que deux appels avec deux valeurs différentes pour le pourcentage de zoom. En outre, si cette solution de contournement est requise, il peut être nécessaire de l’exécuter à chaque appel de navigation.  
   
     ```csharp  
     // browser2 is a SHDocVw.IWebBrowser2 in this case  

@@ -14,10 +14,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9dd6c297e00a305fbd1b13cf0fe0bd4a4f151f6b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192879"
 ---
 # <a name="item-metadata-in-target-batching"></a>Métadonnées d'éléments dans le traitement par lots de cibles
@@ -69,7 +69,7 @@ ms.locfileid: "68192879"
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour Effectuer des générations incrémentielles](../msbuild/how-to-build-incrementally.md)   
- [Traitement par lot MSBuild](../msbuild/msbuild-batching.md)   
+ [Comment : générer de façon incrémentielle](../msbuild/how-to-build-incrementally.md)   
+ [Traitement par lot](../msbuild/msbuild-batching.md)   
  [Target, élément (MSBuild)](../msbuild/target-element-msbuild.md)   
- [Métadonnées d’éléments dans le traitement par lots de tâches](../msbuild/item-metadata-in-task-batching.md)
+ [Métadonnées d’élément dans le traitement par lot des tâches](../msbuild/item-metadata-in-task-batching.md)

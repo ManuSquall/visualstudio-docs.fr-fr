@@ -1,5 +1,5 @@
 ---
-title: CreateNewFolder Element (Visual Studio Templates) Microsoft Docs
+title: Élément CreateNewFolder (modèles Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,16 +14,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 860f4df3e69a568a3e391da4d7437d9a5fd83f15
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739668"
 ---
-# <a name="createnewfolder-element-visual-studio-templates"></a>Créer l’élémentNewFolder (modèles Visual Studio)
+# <a name="createnewfolder-element-visual-studio-templates"></a>Élément CreateNewFolder (modèles Visual Studio)
 Détermine s'il convient de vérifier que le répertoire cible où le projet doit être créé n'existe pas. Si le répertoire existe, un nouveau répertoire peut être créé pour le projet. Ce paramètre est généralement remplacé par l'indicateur de registre `NewProjectRequiresNewFolder(VsTemplate)` (`HKEY_LOCAL_MACHINE/SOFTWARE(/Wow6432Node)/Microsoft/VisualStudio/<version number>/Projects/<project GUID>`) que tous les types de projets courants utilisent pour déterminer s'il convient de créer un nouveau projet dans un nouveau répertoire.
 
- \<VSTemplate> \<TemplateData> \<CreateNewFolder>
+ \<VSTemplate> \<TemplateData>
+ \<CreateNewFolder>
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -90,5 +91,5 @@ Détermine s'il convient de vérifier que le répertoire cible où le projet doi
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Référence de schéma de modèle de studio visuel](../extensibility/visual-studio-template-schema-reference.md)
-- [Création de modèles de projets et d’objets](../ide/creating-project-and-item-templates.md)
+- [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)

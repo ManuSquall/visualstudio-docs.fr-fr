@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: cbb68855832e84150b81c8a8a6fde47bf9433edc
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547704"
 ---
 # <a name="ca2135-level-2-assemblies-should-not-contain-linkdemands"></a>CA2135 : Les assemblys de niveau 2 ne doivent pas contenir de LinkDemands
@@ -28,7 +28,7 @@ ms.locfileid: "85547704"
 |Category|Microsoft.Security|
 |Modification avec rupture|Rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Une classe ou un membre de classe utilise un <xref:System.Security.Permissions.SecurityAction> dans une application qui utilise la sécurité de niveau 2.
 
 ## <a name="rule-description"></a>Description de la règle

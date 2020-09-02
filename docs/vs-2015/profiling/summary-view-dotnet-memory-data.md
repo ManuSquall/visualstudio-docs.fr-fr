@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 61fe6d3982828d1e2a8ae4aeaba3d89b1b75f4f9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193317"
 ---
 # <a name="summary-view---net-memory-data"></a>Vue Résumé - Données de la mémoire .NET
@@ -51,5 +51,5 @@ La vue Résumé affiche des informations sur les fonctions et les types .NET qui
 |**% d’instances**|Pourcentage du nombre total d’objets .NET créés dans l’exécution du profilage et qui étaient des instances de ce type.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Vue Résumé](../profiling/summary-view-sampling-data.md)   
- [Mode Résumé](../profiling/summary-view-instrumentation-data.md)
+ [Mode Résumé](../profiling/summary-view-sampling-data.md)   
+ [Vue Résumé](../profiling/summary-view-instrumentation-data.md)

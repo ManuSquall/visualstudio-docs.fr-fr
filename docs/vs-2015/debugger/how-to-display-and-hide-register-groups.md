@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Afficher et masquer les groupes de registres | Microsoft Docs'
+title: 'Comment : afficher et masquer des groupes de registres | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,13 +24,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 61ae0a5a690e1413bfccd66ee0e9db7f6d812c15
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65702250"
 ---
-# <a name="how-to-display-and-hide-register-groups"></a>Procédure : Afficher et masquer les groupes de registres
+# <a name="how-to-display-and-hide-register-groups"></a>Comment : afficher et masquer les groupes de registres
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La fenêtre **Registres** est disponible uniquement si le débogage au niveau des adresses est activé dans la boîte de dialogue **Options**, nœud **Débogage**, catégorie **Général**.  
@@ -38,7 +38,7 @@ La fenêtre **Registres** est disponible uniquement si le débogage au niveau de
  Pour des raisons de clarté, la fenêtre **Registres** classe les registres par groupes. Si vous cliquez avec le bouton droit sur la fenêtre **Registres**, un menu contextuel contenant ces groupes s’affiche. Vous pouvez afficher ou masquer les groupes selon vos besoins en suivant la procédure ci-dessous.  
   
 > [!NOTE]
-> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Les boîtes de dialogue et les commandes de menu affichées peuvent différer de celles décrites dans l'Aide selon les paramètres actifs ou le mode d'édition. Pour modifier vos paramètres, choisissez **Paramètres d'importation et d'exportation** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-display-or-hide-register-groups"></a>Pour afficher ou masquer des groupes de registres  
   
@@ -49,4 +49,4 @@ La fenêtre **Registres** est disponible uniquement si le débogage au niveau de
      Les groupes de registres qui ne sont pas pris en charge par le matériel sur lequel vous effectuez le débogage sont désactivés dans le menu contextuel et ne peuvent pas être sélectionnés.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour utiliser la fenêtre Registres](../debugger/how-to-use-the-registers-window.md)
+ [Comment : utiliser la fenêtre Registres](../debugger/how-to-use-the-registers-window.md)

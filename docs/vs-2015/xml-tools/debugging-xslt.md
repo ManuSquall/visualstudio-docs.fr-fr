@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 25f90577cecbd3bd681d0c7f3e18355fede9faa5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671002"
 ---
 # <a name="debug-xslt"></a>Débogage XSLT
@@ -37,7 +37,7 @@ Vous pouvez utiliser le débogueur Visual Studio pour déboguer XSLT. Le débogu
 
  [Profileur XSLT](../xml-tools/xslt-profiler.md) Décrit comment accéder au profileur XSLT.
 
-## <a name="related-sections"></a>Rubriques connexes
+## <a name="related-sections"></a>Sections connexes
  [Modification de feuilles de style XSLT](../xml-tools/editing-xslt-style-sheets.md) Décrit l’utilisation de l’éditeur XML pour modifier des feuilles de style.
 
  [Considérations relatives à la sécurité lors de l’utilisation de données XML](../xml-tools/security-considerations-when-working-with-xml-data.md) Décrit les problèmes de sécurité que vous devez connaître lors de l’utilisation de l’éditeur XML ou du débogueur XSLT.

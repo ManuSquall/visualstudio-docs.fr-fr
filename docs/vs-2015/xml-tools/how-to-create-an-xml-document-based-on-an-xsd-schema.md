@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e9e48c48d6711a1eb21157122d13790e22688855
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670944"
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Procédure : créer un document XML basé sur un schéma XSD
@@ -33,11 +33,11 @@ La fonctionnalité **générer un exemple XML** génère un exemple de fichier X
 
 - Contraintes d'identité `xs:key`, `xs:keyref` et `xs:unique`.
 
-- Facettes `xs:pattern`.
+- `xs:pattern` facettes.
 
 - Énumérations du type `xs:QName`.
 
-- Types `xs:ENTITY`, `xs:ENTITIES` et `xs:NOTATION`.
+- `xs:ENTITY``xs:ENTITIES`types, et `xs:NOTATION` .
 
   Notez également que le contenu `xs:base64Binary` n'est généré que si des énumérations figurent dans le schéma du type correspondant.
 
@@ -45,7 +45,7 @@ La fonctionnalité **générer un exemple XML** génère un exemple de fichier X
 
 1. Suivez les étapes décrites dans [Comment : créer et modifier un fichier de schéma XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
-2. Dans l' [Explorateur de schémas XML](../xml-tools/xml-schema-explorer.md), cliquez avec le bouton droit sur l’élément global `PurchaseOrder`. Sélectionnez **générer un exemple de code XML**.
+2. Dans l' [Explorateur de schémas XML](../xml-tools/xml-schema-explorer.md), cliquez avec le bouton droit sur l' `PurchaseOrder` élément global. Sélectionnez **générer un exemple de code XML**.
 
      Lorsque vous sélectionnez cette option, le fichier PurchaseOrder.xml avec l'exemple de contenu XML suivant est généré et ouvert dans l'Éditeur XML :
 

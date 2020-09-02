@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f53b51f9e78e2cb5d327abd3a79ebf2faa3a9204
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778568"
 ---
 # <a name="markprofile"></a>MarkProfile
@@ -45,7 +45,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
 |MARK_TEXTTOOLONG|La chaîne dépasse le maximum de 256 caractères. La chaîne de commentaire est tronquée, et la marque et le commentaire sont enregistrés.|
 |MARK_OK|MARK_OK est retourné pour indiquer la réussite.|
 
-## <a name="remarks"></a>Notes 
+## <a name="remarks"></a>Notes
  La valeur de la marque est insérée dans le fichier .*vsp* chaque fois que le code s’exécute si le thread contenant la fonction MarkProfile est profilé. Vous pouvez appeler MarkProfile plusieurs fois.
 
  Les marques de profil sont globales dans l’étendue. Par exemple, une marque de profil insérée dans un thread peut être utilisée pour marquer le début ou la fin d’un segment de données dans n’importe quel thread du fichier .*vsp*.
@@ -63,7 +63,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
 
  Bibliothèque d’importation : *VSPerf.lib*
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
  Le code suivant illustre la fonction MarkProfile.
 
 ```cpp
@@ -99,4 +99,4 @@ void ExerciseMarkProfile()
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Visual Studio profiler API référence (native)](../profiling/visual-studio-profiler-api-reference-native.md)
+- [Informations de référence sur l’API du profileur Visual Studio (natif)](../profiling/visual-studio-profiler-api-reference-native.md)

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 686f98aaaade035f1632139d255ccff8b37eddf3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850064"
 ---
 # <a name="set-up-remote-workspaces"></a>Configurer des espaces de travail distants
@@ -26,7 +26,7 @@ Cet article explique comment configurer un serveur distant avec SSL et un servic
 
 ## <a name="install-an-ssl-certificate"></a>Installer un certificat SSL
 
-RTVS nécessite que toutes les communications avec un serveur distant s’effectuent sur HTTP, ce qui implique un certificat SSL sur le serveur. Vous pouvez utiliser un certificat signé par une autorité de certification approuvée (recommandée) ou un certificat auto-signé. (Un certificat autosigné amène RTVS à émettre des avertissements lorsqu’il est connecté.) Avec l’un ou l’autre, vous devez alors l’installer sur l’ordinateur et permettre l’accès à sa clé privée.
+RTVS nécessite que toutes les communications avec un serveur distant s’effectuent sur HTTP, ce qui implique un certificat SSL sur le serveur. Vous pouvez utiliser un certificat signé par une autorité de certification approuvée (recommandée) ou un certificat auto-signé. (Un certificat auto-signé oblige RTVS à émettre des avertissements lors de la connexion.) Dans l’un ou l’autre, vous devez l’installer sur l’ordinateur et autoriser l’accès à sa clé privée.
 
 ### <a name="obtain-a-trusted-certificate"></a>Obtenir un certificat approuvé
 
@@ -76,7 +76,7 @@ Pour installer le certificat sur l’ordinateur distant, exécutez *certlm.msc* 
 Une fois le certificat importé, accordez des autorisations au compte `NETWORK SERVICE` pour lire la clé privée, comme indiqué dans les instructions suivantes. `NETWORK_SERVICE` est le compte utilisé pour exécuter le répartiteur R Services, qui est le service qui met fin aux connexions SSL entrantes sur le serveur.
 
 1. Exécutez *certlm.msc* (le gestionnaire de certificats) à partir d’une invite de commandes administrateur.
-1. Élargissez les**certificats** **personnels** > , cliquez à droite sur votre certificat et sélectionnez **Toutes les tâches** > **gérer les clés privées**.
+1. Développez **Personal**  >  **certificats**personnels, cliquez avec le bouton droit sur votre certificat, puis sélectionnez **toutes les tâches**  >  **gérer les clés privées**.
 1. Cliquez avec le bouton droit sur le certificat et sélectionnez la commande **Gérer les clés privées** sous **Toutes les tâches**.
 1. Dans la boîte de dialogue qui s’affiche, sélectionnez **Ajouter** et entrez `NETWORK SERVICE` comme nom de compte :
 
@@ -199,11 +199,11 @@ Une fois que R Services est en cours d’exécution sur l’ordinateur distant,
 
 ## <a name="troubleshooting"></a>Dépannage
 
-**Q. L’ordinateur serveur R ne répond pas, que dois-je faire?**
+**Question. L’ordinateur R Server ne répond pas, que dois-je faire ?**
 
 Essayez d’envoyer un test ping à l’ordinateur distant à partir de la ligne de commande : `ping remote-machine-name`. Si le test ping échoue, vérifiez que l’ordinateur est en cours d’exécution.
 
-**Q. La fenêtre interactive R indique que l’ordinateur distant est allumé, mais pourquoi le service ne fonctionne-t-il pas?**
+**Question. La fenêtre interactive R indique que l’ordinateur distant est allumé, mais pourquoi le service n’est-il pas en cours d’exécution ?**
 
 Il existe trois raisons possibles :
 
@@ -213,21 +213,21 @@ Il existe trois raisons possibles :
 
 Redémarrez l’ordinateur après avoir apporté l’une des modifications ci-dessus. Vérifiez que `RHostBrokerService` et `RUserProfileService` sont en cours d’exécution par le biais du Gestionnaire des tâches (onglet Services) ou *services.msc*.
 
-**Q. Pourquoi la fenêtre interactive R dit-elle « Accès 401 refusé » lors de la connexion au serveur R ?**
+**Question. Pourquoi la fenêtre interactive R indique « 401 accès refusé » lors de la connexion au serveur R ?**
 
 Il existe deux raisons possibles :
 
 - Il est très probable que le compte `NETWORK SERVICE` n’ait pas accès à la clé privée du certificat SSL. Suivez les instructions précédentes pour accorder au compte `NETWORK SERVICE` l’accès à la clé privée.
 - Vérifiez que le service `seclogon` est en cours d’exécution. Utilisez *services.msc* pour configurer `seclogon` pour qu’il démarre automatiquement.
 
-**Q. Pourquoi la fenêtre interactive R dit-elle « 404 Pas trouvé » tout en se connectant au serveur R ?**
+**Question. Pourquoi la fenêtre interactive R indique-t-elle « 404 introuvable » lors de la connexion au serveur R ?**
 
 Cette erreur est probablement due à l’absence de bibliothèques redistribuables Visual C++. Consultez la fenêtre interactive R pour voir s’il existe un message concernant une bibliothèque (DLL) manquante. Ensuite, vérifiez que le package redistribuable VS 2015 est installé, ainsi que R.
 
-**Q. Je ne peux pas accéder à Internet/ressource à partir de la fenêtre interactive R, que dois-je faire?**
+**Question. Je ne peux pas accéder à Internet/Resource à partir de la fenêtre interactive R, que dois-je faire ?**
 
 Vérifiez que les règles de pare-feu pour `Microsoft.R.Host.Broker` et `Microsoft.R.Host` autorisent l’accès sortant sur le port 5444. Redémarrez l’ordinateur après avoir appliqué les modifications.
 
-**Q. J’ai essayé toutes ces solutions, et cela ne fonctionne toujours pas. Quoi encore?**
+**Question. J’ai essayé toutes ces solutions et cela ne fonctionne toujours pas. Quoi encore?**
 
-Regardez dans les fichiers journaux dans *C: 'Windows’ServiceProfiles’NetworkService’AppData’Local’Temp*. Ce dossier contient des fichiers journaux distincts pour chaque cas du R Broker Service qui a été exécuté. Un autre fichier journal est créé chaque fois que le service redémarre. Examinez le fichier journal le plus récent pour obtenir des indices sur ce qui pourrait ne pas fonctionner.
+Examinez les fichiers journaux dans *C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp*. Ce dossier contient des fichiers journaux distincts pour chaque instance du service R Broker qui a été exécuté. Un autre fichier journal est créé chaque fois que le service redémarre. Examinez le fichier journal le plus récent pour obtenir des indices sur ce qui pourrait ne pas fonctionner.

@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: da32f0bfce9edf652e19df6b68bc51ed92624d80
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65699006"
 ---
 # <a name="getwinfxpath-task"></a>GetWinFXPath, tâche
@@ -35,11 +35,11 @@ La tâche <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> retourne le réperto
   
 |Paramètre|Description|  
 |---------------|-----------------|  
-|`WinFXPath`|Paramètre de sortie **String** facultatif.<br /><br /> Spécifie le chemin réel du runtime [!INCLUDE[TLA2#tla_winfx](../includes/tla2sharptla-winfx-md.md)].|  
-|`WinFXNativePath`|Paramètre **String** obligatoire.<br /><br /> Spécifie le chemin du runtime [!INCLUDE[TLA2#tla_titlewinfx](../includes/tla2sharptla-titlewinfx-md.md)] natif.|  
-|`WinFXWowPath`|Paramètre **String** obligatoire.<br /><br /> Spécifie le chemin des assemblys [!INCLUDE[TLA#tla_winfx](../includes/tlasharptla-winfx-md.md)] dans le module **Windows on Windows** 32 bits sur les systèmes 64 bits.|  
+|`WinFXPath`|Paramètre de sortie de **chaîne** facultatif.<br /><br /> Spécifie le chemin réel du runtime [!INCLUDE[TLA2#tla_winfx](../includes/tla2sharptla-winfx-md.md)].|  
+|`WinFXNativePath`|Paramètre de **chaîne** obligatoire.<br /><br /> Spécifie le chemin du runtime [!INCLUDE[TLA2#tla_titlewinfx](../includes/tla2sharptla-titlewinfx-md.md)] natif.|  
+|`WinFXWowPath`|Paramètre de **chaîne** obligatoire.<br /><br /> Spécifie le chemin des assemblys [!INCLUDE[TLA#tla_winfx](../includes/tlasharptla-winfx-md.md)] dans le module **Windows on Windows** 32 bits sur les systèmes 64 bits.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Si la tâche <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> s’exécute sur un processeur 64 bits, le paramètre **WinFXPath** a comme valeur le chemin stocké dans le paramètre **WinFXWowPath** ; sinon, le paramètre **WinFXPath** a comme valeur le chemin stocké dans le paramètre **WinFXNativePath**.  
   
 ## <a name="example"></a>Exemple  
@@ -61,7 +61,7 @@ La tâche <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> retourne le réperto
   
 ## <a name="see-also"></a>Voir aussi  
  [Informations de référence sur MSBuild WPF](../msbuild/wpf-msbuild-reference.md)   
- [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/wpf-msbuild-task-reference.md)   
+ [Référence de tâche](../msbuild/wpf-msbuild-task-reference.md)   
  [Référence MSBuild](../msbuild/msbuild-reference.md)   
- [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)   
+ [Référence de tâche](../msbuild/msbuild-task-reference.md)   
  [Génération d’une application WPF (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)
