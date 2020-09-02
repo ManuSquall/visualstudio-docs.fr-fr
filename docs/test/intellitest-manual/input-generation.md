@@ -10,11 +10,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: e5a3248d3f081bcab08c08110d305f0aa6235817
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79302622"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315198"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>Génération d’entrées à l’aide de l’exécution symbolique dynamique
 
@@ -34,10 +34,10 @@ Les étapes de la boucle sont :
 
 Le [solveur de contrainte](#constraint-solver) d’IntelliTest peut gérer les valeurs de tous les types pouvant apparaître dans les programmes .NET :
 
-* [Integers](#integers-and-floats) et [Flotteurs](#integers-and-floats)
+* [Entiers](#integers-and-floats) et [Floats](#integers-and-floats)
 * [Objets](#objects)
-* [Structs](#structs)
-* [Arrays](#arrays-and-strings) et [cordes](#arrays-and-strings)
+* [Structures](#structs)
+* [Tableaux](#arrays-and-strings) et [chaînes](#arrays-and-strings)
 
 IntelliTest filtre les entrées qui ne respectent pas les hypothèses indiquées.
 
@@ -113,7 +113,7 @@ Les objets fictifs paramétrables ont deux modes d’exécution différents :
 
 Utilisez [PexChoose](static-helper-classes.md#pexchoose) pour obtenir les valeurs des objets fictifs paramétrables.
 
-## <a name="structs"></a>Structs
+## <a name="structs"></a>Structures
 
 Le raisonnement d’IntelliTest concernant les valeurs **struct** est similaire à la façon dont il traite les [objets](#objects).
 
@@ -133,6 +133,6 @@ La classe statique [PexChoose](static-helper-classes.md#pexchoose) peut être ut
 
 Postez vos idées et demandes de fonctionnalités sur la [Communauté des développeurs](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
 
-## <a name="further-reading"></a>Lectures supplémentaires
+## <a name="further-reading"></a>Articles complémentaires
 
-* [Comment cela fonctionne-t-il ?](https://devblogs.microsoft.com/devops/smart-unit-tests-a-mental-model/)
+* [Fonctionnement](https://devblogs.microsoft.com/devops/smart-unit-tests-a-mental-model/)

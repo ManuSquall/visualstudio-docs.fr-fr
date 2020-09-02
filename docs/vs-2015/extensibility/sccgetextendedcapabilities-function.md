@@ -1,5 +1,5 @@
 ---
-title: Fonction SccGetExtendedCapabilities | Microsoft Docs
+title: SccGetExtendedCapabilities fonction) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f02591eac6a3f69ae5513aa9dc0abed381cd1c8a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200096"
 ---
 # <a name="sccgetextendedcapabilities-function"></a>Fonction SccGetExtendedCapabilities
@@ -36,26 +36,26 @@ SCCRTN SccGetExtendedCapabilities(
   
 #### <a name="parameters"></a>Paramètres  
  pContext  
- [in] Le pointeur de contexte de plug-in de contrôle de code source.  
+ dans Pointeur de contexte du plug-in de contrôle de code source.  
   
  lSccExCaps  
- [in] Un indicateur qui spécifie une fonctionnalité étendue pour laquelle effectuer un test (voir le tableau de Code de fonctionnalité étendue dans [indicateurs de capacité](../extensibility/capability-flags.md) pour les indicateurs possibles).  
+ dans Indicateur spécifiant une fonctionnalité étendue pour laquelle effectuer un test (consultez la table des codes de capacité étendus dans les [indicateurs de capacité](../extensibility/capability-flags.md) pour les indicateurs possibles).  
   
  pbSupported  
- [out] Retourne zéro (`TRUE`) si la fonctionnalité spécifiée est prise en charge ; sinon, retourne la valeur zéro (`FALSE`).  
+ à Retourne une valeur différente de zéro ( `TRUE` ) si la fonction spécifiée est prise en charge ; sinon, retourne zéro ( `FALSE` ).  
   
-## <a name="return-value"></a>Valeur de retour  
- L’implémentation de plug-in de contrôle de source de cette fonction est censée retourner l’une des valeurs suivantes :  
+## <a name="return-value"></a>Valeur renvoyée  
+ L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :  
   
 |Valeur|Description|  
 |-----------|-----------------|  
-|SCC_OK|Opération de fonctionnalité de récupération s’est terminée correctement.|  
-|SCC_E_UNKNOWNERROR<br /><br /> SCC_E_NONSPECIFICERROR|Erreur inconnue ou non spécifiée s’est produite.|  
+|SCC_OK|L’opération d’extraction de la capacité s’est terminée avec succès.|  
+|SCC_E_UNKNOWNERROR<br /><br /> SCC_E_NONSPECIFICERROR|Une erreur inconnue ou non spécifiée s’est produite.|  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode est appelée à la demande ; Autrement dit, quand une fonctionnalité doit être testée, cette méthode est appelée pour déterminer si la prise en charge de fonctionnalité. Seul l’indicateur à la fois est spécifié.  
+ Cette méthode est appelée à la demande ; autrement dit, lorsqu’une fonctionnalité doit être testée, cette méthode est appelée pour déterminer si cette fonctionnalité est prise en charge. Un seul indicateur à la fois est spécifié.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Fonctions d’API de plug-in de contrôle de source](../extensibility/source-control-plug-in-api-functions.md)   
+ [Fonctions de l’API du plug-in de contrôle de code source](../extensibility/source-control-plug-in-api-functions.md)   
  [Codes d’erreur](../extensibility/error-codes.md)   
  [Indicateurs de capacité](../extensibility/capability-flags.md)

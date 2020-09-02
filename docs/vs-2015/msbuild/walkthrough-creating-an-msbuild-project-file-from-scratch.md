@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eb49e6c51c1e51d002683099797d940cb2d24556
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65682359"
 ---
 # <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Procédure pas à pas : création d'un fichier projet MSBuild en partant de zéro
@@ -222,7 +222,7 @@ Les langages de programmation qui ciblent .NET Framework utilisent des fichiers 
   
     Ceci demande au compilateur Visual C# de produire un assembly dont le nom est donné par la propriété `AssemblyName` et de le placer dans le dossier dont le nom est donné par la propriété `OutputPath`.  
   
-5. Enregistrez les modifications apportées.  
+5. Enregistrez vos modifications.  
   
    Votre fichier projet doit maintenant ressembler au code suivant :  
   
@@ -477,9 +477,9 @@ Les langages de programmation qui ciblent .NET Framework utilisent des fichiers 
 </Project>  
 ```  
   
-## <a name="whats-next"></a>Quelle est la suite ?  
+## <a name="whats-next"></a>Et maintenant ?  
  Visual Studio peut faire automatiquement la plus grande partie du travail qui est montré dans cette procédure pas à pas. Pour découvrir comment utiliser Visual Studio pour créer, modifier, générer et tester des fichiers projet MSBuild, consultez la [Procédure pas à pas : utilisation de MSBuild](../msbuild/walkthrough-using-msbuild.md).  
   
 ## <a name="see-also"></a>Voir aussi  
-[MSBuild Overview (Vue d’ensemble de MSBuild)](msbuild.md)  
- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)
+[Vue d’ensemble de MSBuild](msbuild.md)  
+ [Référence MSBuild](../msbuild/msbuild-reference.md)

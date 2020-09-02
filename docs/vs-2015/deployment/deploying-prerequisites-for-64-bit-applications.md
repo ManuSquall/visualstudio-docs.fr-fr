@@ -1,5 +1,5 @@
 ---
-title: Déploiement des prérequis pour les Applications 64 bits | Microsoft Docs
+title: Déploiement des composants requis pour les applications 64 bits | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 92f30e8e059475c907da184aa59a8e4b7a2cf19f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65675562"
 ---
 # <a name="deploying-prerequisites-for-64-bit-applications"></a>Composants requis pour le déploiement d'applications 64 bits
@@ -46,5 +46,5 @@ Le déploiement ClickOnce prend en charge l'installation des applications sur le
   
 ## <a name="see-also"></a>Voir aussi  
  [Déploiement d’applications, de services et de composants](../deployment/deploying-applications-services-and-components.md)   
- [Guide pratique pour Installer les composants requis avec une Application ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
- [Applications 64 bits](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)
+ [Comment : installer les composants requis avec une application ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
+ [Applications 64 bits](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)

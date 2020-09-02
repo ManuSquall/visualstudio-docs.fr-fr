@@ -17,10 +17,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: e56350c2fd0583d3fef4e77e559a4df1fd894663
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348104"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>Déboguer du code JavaScript à l’aide de la console dans Visual Studio
@@ -46,7 +46,7 @@ La fenêtre de la console JavaScript permet les actions suivantes :
 
 À l’aide de la fenêtre de la console JavaScript, vous pouvez interagir avec votre application sans interrompre et redémarrer le débogueur. Pour plus d’informations, consultez [actualiser une application (JavaScript)](../debugger/refresh-an-app-javascript.md). Pour plus d’informations sur d’autres fonctionnalités de débogage JavaScript, telles que l’utilisation de l’Explorateur DOM et la définition de points d’arrêt, consultez [démarrage rapide : déboguer des applications HTML et CSS](../debugger/quickstart-debug-html-and-css.md) et [Déboguer des applications dans Visual Studio](debugging-windows-store-and-windows-universal-apps.md).
 
-## <a name="debug-by-using-the-javascript-console-window"></a><a name="InteractiveConsole"></a>Déboguer à l’aide de la fenêtre de la console JavaScript
+## <a name="debug-by-using-the-javascript-console-window"></a><a name="InteractiveConsole"></a> Déboguer à l’aide de la fenêtre de la console JavaScript
 La procédure suivante crée une application `FlipView` et montre comment déboguer interactivement une erreur de codage JavaScript.
 
 > [!NOTE]

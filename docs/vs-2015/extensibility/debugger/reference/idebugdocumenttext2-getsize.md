@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText2::GetSize | Microsoft Docs
+title: 'IDebugDocumentText2 :: obtient | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1f6d438db999e2e0b2aa85c45c0b38333238755e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200209"
 ---
 # <a name="idebugdocumenttext2getsize"></a>IDebugDocumentText2::GetSize
@@ -42,16 +42,16 @@ int GetSize( 
   
 #### <a name="parameters"></a>Paramètres  
  `pcNumLines`  
- [out] Retourne le nombre de lignes de texte.  
+ à Retourne le nombre de lignes de texte.  
   
  `pcNumChars`  
- [out] Retourne le nombre de caractères du texte.  
+ à Retourne le nombre de caractères du texte.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="remarks"></a>Notes  
- [C++ uniquement] Si une valeur particulière n’est pas souhaitée, passez une valeur NULL pour le paramètre.  
+ [C++ uniquement] Si une valeur particulière n’est pas souhaitée, transmettez une valeur NULL pour le paramètre.  
   
  [C# uniquement] Les deux paramètres doivent être spécifiés.  
   

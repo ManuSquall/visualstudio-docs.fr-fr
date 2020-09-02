@@ -1,5 +1,5 @@
 ---
-title: Fonction SccCreateSubProject | Microsoft Docs
+title: SccCreateSubProject fonction) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c2f28d8bb9ebc440db69085324becb6a96c19afe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200193"
 ---
 # <a name="scccreatesubproject-function"></a>Fonction SccCreateSubProject
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Cette fonction crée un sous-projet portant le nom spécifié sous un projet parent existant spécifié par le `lpParentProjPath` argument.  
+Cette fonction crée un sous-projet portant le nom donné sous un projet parent existant spécifié par l' `lpParentProjPath` argument.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -40,60 +40,60 @@ SCCRTN SccCreateSubProject(
   
 #### <a name="parameters"></a>Paramètres  
  pContext  
- [in] Le pointeur de contexte de plug-in de contrôle de code source.  
+ dans Pointeur de contexte du plug-in de contrôle de code source.  
   
  hWnd  
- [in] Handle vers la fenêtre de l’IDE que le plug-in de contrôle de code source peut utiliser en tant que parent pour les boîtes de dialogue qu’il fournit.  
+ dans Handle de la fenêtre IDE que le plug-in de contrôle de code source peut utiliser comme parent pour toutes les boîtes de dialogue qu’il fournit.  
   
  lpUser  
- [in, out] Le nom d’utilisateur (jusqu'à SCC_USER_SIZE, y compris le terminateur NULL).  
+ [in, out] Nom d’utilisateur (jusqu’à SCC_USER_SIZE, y compris la marque de fin NULL).  
   
  lpParentProjPath  
- [in] Chaîne identifiant le chemin d’accès du projet parent (jusqu'à SCC_PRJPATH_SIZE, y compris le terminateur NULL).  
+ dans Chaîne identifiant le chemin d’accès du projet parent (jusqu’à SCC_PRJPATH_SIZE, y compris la marque de fin NULL).  
   
  lpSubProjName  
- [in] Le nom suggéré sous-projet (jusqu'à SCC_PRJPATH_SIZE, y compris le terminateur NULL).  
+ dans Nom de sous-projet suggéré (jusqu’à SCC_PRJPATH_SIZE, y compris la marque de fin NULL).  
   
  lpAuxProjPath  
- [in, out] Auxiliaire chaîne identifiant le projet (jusqu'à SCC_PRJPATH_SIZE, y compris le terminateur NULL).  
+ [in, out] Chaîne auxiliaire identifiant le projet (jusqu’à SCC_PRJPATH_SIZE, y compris la marque de fin NULL).  
   
  lpSubProjPath  
- [in, out] Chaîne de sortie qui identifie le chemin d’accès pour le sous-projet (jusqu'à SCC_PRJPATH_SIZE, y compris le terminateur NULL).  
+ [in, out] Chaîne de sortie identifiant le chemin d’accès du sous-projet (jusqu’à SCC_PRJPATH_SIZE, y compris la marque de fin NULL).  
   
-## <a name="return-value"></a>Valeur de retour  
- L’implémentation de plug-in de contrôle de source de cette fonction est censée retourner l’une des valeurs suivantes :  
+## <a name="return-value"></a>Valeur renvoyée  
+ L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :  
   
-|`Value`|Description|  
+|Valeur|Description|  
 |-----------|-----------------|  
-|SCC_OK|Sous-projet a été créé avec succès.|  
-|SCC_E_INITIALIZEFAILED|Projet parent n’a pas pu être initialisé.|  
-|SCC_E_INVALIDUSER|L’utilisateur n’a pas pu se connecter le système de contrôle source.|  
-|SCC_E_COULDNOTCREATEPROJECT|Impossible de créer le sous-projet.|  
+|SCC_OK|Le sous-projet a été créé avec succès.|  
+|SCC_E_INITIALIZEFAILED|Impossible d’initialiser le projet parent.|  
+|SCC_E_INVALIDUSER|L’utilisateur n’a pas pu se connecter au système de contrôle de code source.|  
+|SCC_E_COULDNOTCREATEPROJECT|Impossible de créer un sous-projet.|  
 |SCC_E_PROJSYNTAXERR|Syntaxe de projet non valide.|  
-|SCC_E_UNKNOWNPROJECT|Le projet parent est inconnu pour le plug-in de contrôle de code source.|  
-|SCC_E_INVALIDFILEPATH|Chemin d’accès de fichier non valide ou inutilisable.|  
+|SCC_E_UNKNOWNPROJECT|Le projet parent est inconnu du plug-in de contrôle de code source.|  
+|SCC_E_INVALIDFILEPATH|Chemin de fichier non valide ou inutilisable.|  
 |SCC_E_NOTAUTHORIZED|L’utilisateur n’est pas autorisé à effectuer cette opération.|  
-|SCC_E_ACCESSFAILURE|Impossible d’accéder au système de contrôle source, probablement en raison de problèmes réseau ou de contention. Une nouvelle tentative est recommandée.|  
-|SCC_E_CONNECTIONFAILURE|Il a été un problème de connexion de plug-in de contrôle de code source.|  
-|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Erreur non spécifique.|  
+|SCC_E_ACCESSFAILURE|Un problème est survenu lors de l’accès au système de contrôle de code source, probablement en raison de problèmes de réseau ou de contention. Une nouvelle tentative est recommandée.|  
+|SCC_E_CONNECTIONFAILURE|Un problème est survenu lors de la connexion du plug-in de contrôle de code source.|  
+|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Échec non spécifique.|  
   
 ## <a name="remarks"></a>Notes  
- Si un sous-projet portant le nom existe déjà, la fonction peut modifier le nom par défaut pour créer un unique, par exemple en ajoutant « _\<nombre > » à ce dernier. L’appelant doit être prêt à accepter les modifications de `lpUser`, `lpSubProjPath`, et `lpAuxProjPath`. Le `lpSubProjPath` et`lpAuxProjPath` arguments sont ensuite utilisées dans un appel à la [SccOpenProject](../extensibility/sccopenproject-function.md). Ils ne doivent pas être modifiés par l’appelant lors du retour. Ces chaînes constituent un moyen pour le plug-in pour le suivi des informations dont il a besoin à associer à un projet de contrôle de code source. L’appelant IDE n’affiche pas ces deux paramètres au moment du retour, car le plug-in peut utiliser une chaîne mise en forme qui peut ne pas convenir pour l’affichage. La fonction retourne un code de réussite ou l’échec et, en cas de réussite, remplit la variable `lpSubProjPath` avec le chemin d’accès de projet complet vers le nouveau projet.  
+ Si un sous-projet portant le même nom existe déjà, la fonction peut modifier le nom par défaut pour en créer un unique, par exemple en lui ajoutant « _ \<number> ». L’appelant doit être prêt à accepter les modifications apportées à `lpUser` , `lpSubProjPath` et `lpAuxProjPath` . Les `lpSubProjPath` `lpAuxProjPath` arguments et sont ensuite utilisés dans un appel à [SccOpenProject](../extensibility/sccopenproject-function.md). Elles ne doivent pas être modifiées par l’appelant lors du retour. Ces chaînes permettent au plug-in de contrôle de code source de suivre les informations qu’il doit associer à un projet. L’IDE de l’appelant n’affichera pas ces deux paramètres lors du retour, car le plug-in peut utiliser une chaîne mise en forme qui peut ne pas convenir à l’affichage. La fonction retourne un code de réussite ou d’échec et, en cas de réussite, remplit la variable `lpSubProjPath` avec le chemin d’accès complet du projet au nouveau projet.  
   
- Cette fonction est similaire à la [SccGetProjPath](../extensibility/sccgetprojpath-function.md), à ceci près qu’il crée en mode silencieux un projet au lieu d’inviter l’utilisateur à sélectionner un. Lorsque le `SccCreateSubProject` fonction est appelée, `lpParentProjName` et `lpAuxProjPath` ne sera pas vide et correspond à un projet valid. Ces chaînes sont généralement reçus par l’IDE à partir d’un appel précédent à la `SccGetProjPath` fonction ou le [SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md).  
+ Cette fonction est similaire à [SccGetProjPath](../extensibility/sccgetprojpath-function.md), à ceci près qu’elle crée un projet en mode silencieux plutôt que d’inviter l’utilisateur à en sélectionner une. Lorsque la `SccCreateSubProject` fonction est appelée, `lpParentProjName` et ne sont `lpAuxProjPath` pas vides et correspondent à un projet valide. Ces chaînes sont généralement reçues par l’IDE à partir d’un appel précédent à la `SccGetProjPath` fonction ou à [SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md).  
   
- Le `lpUser` argument est le nom d’utilisateur. L’IDE passe dans le même nom d’utilisateur qui il a précédemment reçu à partir de `SccGetProjPath`, et le plug-in de contrôle de code source doit utiliser le nom par défaut. Si l’utilisateur possède déjà une connexion ouverte avec le plug-in, le plug-in doit essayer d’éliminer les invites pour vous assurer que la fonction fonctionne en mode silencieux. Toutefois, si la connexion échoue, le plug-in doit inviter l’utilisateur pour un compte de connexion et, lorsqu’il reçoit une connexion valide, passez le nom de nouveau `lpUser`. Étant donné que le plug-in peut modifier cette chaîne, l’IDE sera toujours allouer une mémoire tampon de taille (SCC_USER_LEN + 1 ou SCC_USER_SIZE, qui inclut l’espace pour le terminateur null). Si la chaîne est modifiée, la nouvelle chaîne doit être un nom de connexion valide (au moins comme étant valide en tant que l’ancienne chaîne).  
+ L' `lpUser` argument est le nom d’utilisateur. L’IDE passe le même nom d’utilisateur qu’à partir duquel il a reçu précédemment `SccGetProjPath` , et le plug-in de contrôle de code source doit utiliser le nom comme valeur par défaut. Si l’utilisateur dispose déjà d’une connexion ouverte avec le plug-in, le plug-in doit essayer d’éliminer les invites pour s’assurer que la fonction fonctionne en mode silencieux. Toutefois, si la connexion échoue, le plug-in doit inviter l’utilisateur à entrer une connexion et, lorsqu’il reçoit un compte de connexion valide, repasser le nom en retour `lpUser` . Étant donné que le plug-in peut modifier cette chaîne, l’IDE allouera toujours une mémoire tampon de taille (SCC_USER_LEN + 1 ou SCC_USER_SIZE, qui comprend de l’espace pour la marque de fin null). Si la chaîne est modifiée, la nouvelle chaîne doit être un nom de connexion valide (au moins aussi valide que l’ancienne chaîne).  
   
 ## <a name="technical-notes-for-scccreatesubproject-and-sccgetparentprojectpath"></a>Notes techniques pour SccCreateSubProject et SccGetParentProjectPath  
- Ajout de solutions et projets au contrôle de code source a été simplifié dans Visual Studio pour réduire le nombre de fois où qu'un utilisateur est invité à sélectionner les emplacements dans le système de contrôle source. Ces modifications sont activées par Visual Studio si un plug-in de contrôle de code source prend en charge des nouvelles fonctions, `SccCreateSubProject` et `SccGetParentProjectPath`. Toutefois, l’entrée de Registre suivante peut être utilisée pour désactiver ces modifications et revenir au comportement précédent de Visual Studio (Source contrôle plug-in API Version 1.1) :  
+ L’ajout de solutions et de projets au contrôle de code source a été simplifié dans Visual Studio afin de réduire le nombre de fois où un utilisateur est invité à sélectionner des emplacements dans le système de contrôle de code source. Ces modifications sont activées par Visual Studio si un plug-in de contrôle de code source prend en charge les nouvelles fonctions, `SccCreateSubProject` et `SccGetParentProjectPath` . Toutefois, l’entrée de Registre suivante peut être utilisée pour désactiver ces modifications et rétablir le comportement précédent de Visual Studio (API de plug-in de contrôle de code source version 1,1) :  
   
- [HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] « DoNotCreateSolutionRootFolderInSourceControl » = DWORD : 00000001  
+ [HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\8.0\SourceControl] "DoNotCreateSolutionRootFolderInSourceControl" = dword : 00000001  
   
- Si cette entrée de Registre n’existe pas ou a la valeur DWORD : 00000000, Visual Studio tente d’utiliser les nouvelles fonctions, `SccCreateSubProject` et `SccGetParentProjectPath`.  
+ Si cette entrée de Registre n’existe pas ou est définie sur DWORD : 00000000, Visual Studio tente d’utiliser les nouvelles fonctions, `SccCreateSubProject` et `SccGetParentProjectPath` .  
   
- Si l’entrée de Registre est définie sur DWORD : 00000001, Visual Studio n’essaie pas d’utiliser ces nouvelles fonctions et les opérations d’ajout au contrôle de code source fonctionnent comme ils le faisaient dans les versions antérieures de Visual Studio.  
+ Si l’entrée de Registre est définie sur DWORD : 00000001, Visual Studio n’essaie pas d’utiliser ces nouvelles fonctions et les opérations d’ajout au contrôle de code source fonctionnent comme dans les versions antérieures de Visual Studio.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Fonctions d’API de plug-in de contrôle de source](../extensibility/source-control-plug-in-api-functions.md)   
+ [Fonctions de l’API du plug-in de contrôle de code source](../extensibility/source-control-plug-in-api-functions.md)   
  [SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md)   
  [SccGetProjPath](../extensibility/sccgetprojpath-function.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Modifier la langue de publication pour une Application ClickOnce | Microsoft Docs'
+title: 'Comment : modifier la langue de publication pour une application ClickOnce | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -18,34 +18,34 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 26e4074b731dad44cd9eed40f1c1cc755d786562
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65683791"
 ---
-# <a name="how-to-change-the-publish-language-for-a-clickonce-application"></a>Procédure : Changer la langue de publication d’une application ClickOnce
+# <a name="how-to-change-the-publish-language-for-a-clickonce-application"></a>Comment : modifier la langue de publication pour une application ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Lorsque vous publiez un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application, l’interface utilisateur affichée pendant l’installation par défaut de la langue et la culture de votre ordinateur de développement. Si vous publiez une application localisée, vous devez spécifier une langue et une culture correspondant à la version localisée. Cela est déterminé par le `Publish language` propriété pour votre projet.  
+Lors de la publication d’une [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application, l’interface utilisateur affichée lors de l’installation est définie par défaut sur la langue et la culture de votre ordinateur de développement. Si vous publiez une application localisée, vous devrez spécifier une langue et une culture correspondant à la version localisée. Cela est déterminé par la `Publish language` propriété de votre projet.  
   
- Le `Publish language` propriété peut être définie le **Options de publication** boîte de dialogue, accessible à partir de la **publier** page de la **Concepteur de projet**.  
+ La `Publish language` propriété peut être définie dans la boîte de dialogue **options de publication** , accessible à partir de la page **publier** du **Concepteur de projets**.  
   
 > [!NOTE]
-> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Les boîtes de dialogue et les commandes de menu affichées peuvent différer de celles décrites dans l'Aide selon les paramètres actifs ou le mode d'édition. Pour modifier vos paramètres, choisissez **Paramètres d'importation et d'exportation** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-change-the-publish-language"></a>Pour modifier la langue de publication  
   
 1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.  
   
-2. Cliquez sur l’onglet **Publier**.  
+2. Cliquez sur l'onglet **Publier**.  
   
-3. Cliquez sur le **Options** bouton pour ouvrir la **Options de publication** boîte de dialogue.  
+3. Cliquez sur le bouton **options** pour ouvrir la boîte de dialogue **options de publication** .  
   
 4. Cliquez sur **Description**.  
   
-5. Dans le **Options de publication** boîte de dialogue zone, sélectionnez une langue et culture à partir de la **langue de publication** liste déroulante, puis cliquez sur **OK**.  
+5. Dans la boîte de dialogue **options de publication** , sélectionnez une langue et une culture dans la liste déroulante **langue de publication** , puis cliquez sur **OK**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Publication d’applications ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Guide pratique pour publier une application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+ [Comment : publier une application ClickOnce à l'aide de l'Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

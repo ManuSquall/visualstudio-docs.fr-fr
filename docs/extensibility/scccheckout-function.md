@@ -1,5 +1,5 @@
 ---
-title: Fonction SccCheckout (fr) Microsoft Docs
+title: SccCheckout fonction) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6ed809e33a80bf2903c88550e97b28b1e0178bcd
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701107"
 ---
-# <a name="scccheckout-function"></a>Fonction SccCheckout
-Compte tenu d’une liste de noms de fichiers entièrement qualifiés, cette fonction les vérifie à la commande locale. Le commentaire s’applique à tous les fichiers en cours de vérification. L’argument du `null` commentaire peut être une chaîne.
+# <a name="scccheckout-function"></a>SccCheckout fonction)
+À partir d’une liste de noms de fichiers complets, cette fonction les extrait sur le lecteur local. Le commentaire s’applique à tous les fichiers en cours d’extraction. L’argument de commentaire peut être une `null` chaîne.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -37,49 +37,49 @@ SCCRTN SccCheckout (
 ```
 
 ### <a name="parameters"></a>Paramètres
- pvContexte
+ pvContext
 
-[dans] La structure de contexte de plug-in de contrôle de source.
+dans Structure de contexte du plug-in de contrôle de code source.
 
  hWnd
 
-[dans] Une poignée à la fenêtre IDE que le plug-in de contrôle source peut utiliser comme parent pour toutes les boîtes de dialogue qu’il fournit.
+dans Handle de la fenêtre IDE que le plug-in de contrôle de code source peut utiliser comme parent pour toutes les boîtes de dialogue qu’il fournit.
 
- nFiles
+ Nfichiers
 
-[dans] Nombre de fichiers sélectionnés pour être vérifiés.
+dans Nombre de fichiers sélectionnés à extraire.
 
  lpFileNames
 
-[dans] Array de noms de chemin local entièrement qualifiés de fichiers à vérifier.
+dans Tableau de noms de chemins d’accès locaux complets des fichiers à extraire.
 
  lpComment
 
-[dans] Commentaire à appliquer à chacun des fichiers sélectionnés en cours de vérification.
+dans Commentaire à appliquer à chacun des fichiers sélectionnés en cours d’extraction.
 
  fOptions
 
-[dans] Drapeaux de commandement (voir [Bitflags utilisés par des commandes spécifiques](../extensibility/bitflags-used-by-specific-commands.md)).
+dans Indicateurs de commande (consultez [indicateurs utilisés par des commandes spécifiques](../extensibility/bitflags-used-by-specific-commands.md)).
 
  pvOptions
 
-[dans] Options spécifiques au plug-in de contrôle des sources.
+dans Options spécifiques au plug-in de contrôle de code source.
 
 ## <a name="return-value"></a>Valeur retournée
- La mise en œuvre plug-in de cette fonction de contrôle source devrait renvoyer l’une des valeurs suivantes :
+ L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
 |Valeur|Description|
 |-----------|-----------------|
-|SCC_OK|Le départ a été un succès.|
-|SCC_E_FILENOTCONTROLLED|Le fichier sélectionné n’est pas sous contrôle de code source.|
-|SCC_E_ACCESSFAILURE|Il y avait un problème d’accès au système de contrôle à la source, probablement en raison de problèmes de réseau ou de contention. Une nouvelle tentative est recommandée.|
+|SCC_OK|L’extraction a réussi.|
+|SCC_E_FILENOTCONTROLLED|Le fichier sélectionné n’est pas sous le contrôle de code source.|
+|SCC_E_ACCESSFAILURE|Un problème est survenu lors de l’accès au système de contrôle de code source, probablement en raison de problèmes de réseau ou de contention. Une nouvelle tentative est recommandée.|
 |SCC_E_NOTAUTHORIZED|L’utilisateur n’est pas autorisé à effectuer cette opération.|
-|SCC_E_NONSPECIFICERROR|Défaillance non spécifique. Le fichier n’a pas été vérifié.|
-|SCC_E_ALREADYCHECKEDOUT|L’utilisateur a déjà le fichier vérifié.|
-|SCC_E_FILEISLOCKED|Le fichier est verrouillé, interdisant la création de nouvelles versions.|
-|SCC_E_FILEOUTEXCLUSIVE|Un autre utilisateur a fait une caisse exclusive sur ce fichier.|
-|SCC_I_OPERATIONCANCELED|L’opération a été annulée avant l’achèvement.|
+|SCC_E_NONSPECIFICERROR|Échec non spécifique. Le fichier n’a pas été extrait.|
+|SCC_E_ALREADYCHECKEDOUT|Le fichier est déjà extrait par l’utilisateur.|
+|SCC_E_FILEISLOCKED|Le fichier est verrouillé, ce qui interdit la création de nouvelles versions.|
+|SCC_E_FILEOUTEXCLUSIVE|Un autre utilisateur a effectué une extraction en mode exclusif sur ce fichier.|
+|SCC_I_OPERATIONCANCELED|L’opération a été annulée avant la fin.|
 
 ## <a name="see-also"></a>Voir aussi
-- [Fonctions d’API plug-in de contrôle des sources](../extensibility/source-control-plug-in-api-functions.md)
-- [Bitflags utilisés par des commandes spécifiques](../extensibility/bitflags-used-by-specific-commands.md)
+- [Fonctions de l’API du plug-in de contrôle de code source](../extensibility/source-control-plug-in-api-functions.md)
+- [Indicateurs utilisé par des commandes spécifiques](../extensibility/bitflags-used-by-specific-commands.md)

@@ -11,16 +11,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 62b84bd77038c7a17b65f764bd303d6a6372a52c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154165"
 ---
 # <a name="idebugcodecontext3"></a>IDebugCodeContext3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Étend la [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) interface pour permettre l’extraction des interfaces de module et de processus.  
+Étend l’interface [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) pour permettre la récupération d’interfaces de module et de processus.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -28,23 +28,23 @@ ms.locfileid: "68154165"
 IDebugCodeContext3 : IDebugCodeContext2  
 ```  
   
-## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs  
- Implémenté par les moteurs de débogage et consommé par le [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] déboguer le package.  
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
+ Implémenté par les moteurs de débogage et consommé par le [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] package de débogage.  
   
 ## <a name="methods"></a>Méthodes  
- Outre les méthodes sur le `IDebugCodeContext2` interface, cette interface implémente les méthodes suivantes :  
+ Outre les méthodes sur l' `IDebugCodeContext2` interface, cette interface implémente les méthodes suivantes :  
   
 |Méthode|Description|  
 |------------|-----------------|  
 |[GetModule](../../../extensibility/debugger/reference/idebugcodecontext3-getmodule.md)|Récupère une référence à l’interface du module de débogage.|  
-|[GetProcess](../../../extensibility/debugger/reference/idebugcodecontext3-getprocess.md)|Récupère une référence à l’interface du processus de débogage.|  
+|[GetProcess,](../../../extensibility/debugger/reference/idebugcodecontext3-getprocess.md)|Récupère une référence à l’interface du processus de débogage.|  
   
 ## <a name="remarks"></a>Notes  
- Il s’agit d’une interface facultative qui n’a généralement pas être implémentée.  
+ Il s’agit d’une interface facultative qui n’a généralement pas besoin d’être implémentée.  
   
 ## <a name="requirements"></a>Configuration requise  
- En-tête : Msdbg.h  
+ En-tête : msdbg. h  
   
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft. VisualStudio. Debugger. Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll

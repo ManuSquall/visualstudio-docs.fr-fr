@@ -1,5 +1,5 @@
 ---
-title: 'Erreur : Impossible d’accéder à l’interface de débogage SQL Server | Microsoft Docs'
+title: 'Erreur : impossible d’accéder à l’interface de débogage SQL Server | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,13 +18,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 323e67458d934d27800cac710f79857a98d6c6c5
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65682660"
 ---
-# <a name="error-unable-to-access-the-sql-server-debugging-interface"></a>Erreur : Impossible d’accéder à l’interface de débogage SQL Server
+# <a name="error-unable-to-access-the-sql-server-debugging-interface"></a>Erreur : Impossible d'accéder à l'interface de débogage SQL Server
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ce message se produit lorsque vous essayez de lancer le débogage SQL sur un ordinateur où le débogage SQL n'est pas activé.  

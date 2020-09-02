@@ -1,5 +1,5 @@
 ---
-title: Format Specifiers in c# | Microsoft Docs
+title: Spécificateurs de format en C# | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -28,10 +28,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6085ba95d3880417e517530069734052741113e2
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65682480"
 ---
 # <a name="format-specifiers-in-c"></a>Spécificateurs de format en C\#
@@ -42,7 +42,7 @@ Vous pouvez modifier le format dans lequel une valeur est affichée dans la fen�
 
 Pour utiliser un spécificateur de format, tapez l’expression suivie par une virgule. Après la virgule, ajoutez le spécificateur approprié.
 
-## <a name="using-format-specifiers"></a>Utilisation de spécificateurs de format
+## <a name="using-format-specifiers"></a>Utilisation des spécificateurs de format
 
 Si vous avez le code suivant :
 
@@ -64,14 +64,14 @@ Le tableau suivant montre les spécificateurs de format C# reconnus par le débo
 
 |Spécificateur|Format|Valeur d’espion d’origine|Affiche|
 |---------------|------------|--------------------------|--------------|
-|ac|Force l’évaluation d’une expression. Cela peut être utile lorsque l’évaluation implicite d’appels de propriétés et de fonction implicite est désactivée. Consultez [Side Effects and Expressions](https://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e).|Message « L’évaluation de fonction implicite est désactivée par l’utilisateur »|\<valeur>|
+|clim|Force l’évaluation d’une expression. Cela peut être utile lorsque l’évaluation implicite d’appels de propriétés et de fonction implicite est désactivée. Consultez [Side Effects and Expressions](https://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e).|Message « L’évaluation de fonction implicite est désactivée par l’utilisateur »|\<value>|
 |d|entier décimal|0x0065|101|
-|dynamic|Affiche l’objet spécifié à l’aide d’un affichage dynamique|Affiche tous les membres de l’objet, y compris l’affichage dynamique|Affiche uniquement l’affichage dynamique|
+|dynamique|Affiche l’objet spécifié à l’aide d’un affichage dynamique|Affiche tous les membres de l’objet, y compris l’affichage dynamique|Affiche uniquement l’affichage dynamique|
 |h|entier hexadécimal|61541|0x0000F065|
 |nq|chaîne sans guillemets|"Ma chaîne"|Ma chaîne|
 |hidden|Affiche tous les membres publics et non publics|Affiche les membres publics|Affiche tous les membres|
-|raw|Affiche l’élément tel qu’il apparaît dans le nœud élément brut. Valide uniquement sur les objets proxy.|Dictionnaire\<T >|Affichage brut de Dictionary\<T >|
-|résultats|Utilisé avec une variable d’un type qui implémente IEnumerable ou IEnumerable\<T >, habituellement le résultat d’une expression de requête. Affiche uniquement les membres contenant les résultats de requête.|Affiche tous les membres.|Affiche les membres qui répondent aux conditions de la requête.|
+|raw|Affiche l’élément tel qu’il apparaît dans le nœud élément brut. Valide uniquement sur les objets proxy.|Dictionnaire\<T>|Affichage brut du dictionnaire\<T>|
+|results|Utilisé avec une variable d’un type qui implémente IEnumerable ou IEnumerable \<T> , habituellement le résultat d’une expression de requête. Affiche uniquement les membres contenant les résultats de requête.|Affiche tous les membres.|Affiche les membres qui répondent aux conditions de la requête.|
 
 ## <a name="see-also"></a>Voir aussi
 
