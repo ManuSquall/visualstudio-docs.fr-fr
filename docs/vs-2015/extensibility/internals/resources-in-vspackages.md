@@ -1,5 +1,5 @@
 ---
-title: Ressources dans VSPackages | Microsoft Docs
+title: Ressources dans les VSPackages | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,41 +13,41 @@ caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 90674d17cdc3fb8956fd6eedeb3acb27226620cb
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65696087"
 ---
 # <a name="resources-in-vspackages"></a>Ressources dans VSPackages
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous pouvez incorporer des ressources localisées dans native interface utilisateur les DLL satellites, les DLL satellites managées, ou dans un VSPackage managé lui-même.  
+Vous pouvez incorporer des ressources localisées dans des dll d’interface utilisateur satellite natives, des dll satellites managées ou dans un VSPackage géré lui-même.  
   
- Certaines ressources ne peut pas être incorporés dans les VSPackages. Les types managés suivants peuvent être incorporés :  
+ Certaines ressources ne peuvent pas être incorporées dans les VSPackages. Les types managés suivants peuvent être incorporés :  
   
 - Chaînes  
   
 - Clés de chargement de package (qui sont également des chaînes)  
   
-- Icônes de fenêtre outil  
+- Icônes de la fenêtre outil  
   
-- Fichiers de sortie de Table de commande (directeur) compilés  
+- Fichiers de sortie de la table de commandes compilés (directeur technique)  
   
 - Bitmaps de directeur technique  
   
-- Aide en ligne de commande  
+- Aide sur la ligne de commande  
   
 - À propos des données de boîte de dialogue  
   
-  Ressources dans un package managé sont sélectionnées par l’ID de ressource. Une exception est le fichier de directeur technique, qui doit être nommé CTMENU. Le fichier de directeur technique doit apparaître dans la table de ressources comme un `byte[]`. Tous les autres éléments de ressource sont identifiés par type.  
+  Les ressources d’un package géré sont sélectionnées par l’ID de ressource. Le fichier de directeur technique, qui doit être nommé CTMENU, est une exception. Le fichier de directeur technique doit apparaître dans la table de ressources sous la forme d’un `byte[]` . Tous les autres éléments de ressource sont identifiés par type.  
   
-  Vous pouvez utiliser la <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> attribut pour indiquer au [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] que les ressources managées sont disponibles.  
+  Vous pouvez utiliser l' <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> attribut pour indiquer à [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] que les ressources managées sont disponibles.  
   
   [!code-csharp[VSSDKResources#1](../../snippets/csharp/VS_Snippets_VSSDK/vssdkresources/cs/vssdkresourcespackage.cs#1)]
   [!code-vb[VSSDKResources#1](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdkresources/vb/vssdkresourcespackage.vb#1)]  
   
-  Paramètre <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> de cette manière indique que [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] doit ignorer la DLL satellites non géré lorsqu’il recherche des ressources, par exemple, à l’aide de <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A>. Si [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] rencontre deux ou plusieurs ressources qui ont le même ID de ressource, il utilise la première ressource qu’il trouve.  
+  <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>Cela indique que [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] doit ignorer les dll satellites non managées lors de la recherche de ressources, par exemple, à l’aide de <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A> . Si [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] rencontre au moins deux ressources qui ont le même ID de ressource, elle utilise la première ressource qu’elle trouve.  
   
 ## <a name="example"></a>Exemple  
  L’exemple suivant est une représentation managée d’une icône de fenêtre outil.  
@@ -66,7 +66,7 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 </data>  
 ```  
   
- L’exemple suivant montre comment incorporer le tableau d’octets de directeur technique, qui doit être nommé CTMENU.  
+ L’exemple suivant montre comment incorporer le tableau d’octets de la directeur de la configuration, qui doit être nommé CTMENU.  
   
 ```  
 <data name="CTMENU"  
@@ -82,13 +82,13 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 </data>  
 ```  
   
-## <a name="implementation-notes"></a>Remarques d’implémentation  
- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] chargement des retards de VSPackages autant que possible. Des conséquences de l’incorporation d’un fichier de directeur technique dans un VSPackage est que [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] doit charger tous les packages de ce type dans la mémoire pendant l’installation, c'est-à-dire lorsqu’il génère une table de commandes fusionnée. Ressources peuvent être extraites d’un VSPackage en examinant les métadonnées sans exécuter le code dans le VSPackage. Le VSPackage n’est pas initialisé à ce stade, la perte de performances est minime.  
+## <a name="implementation-notes"></a>Notes d’implémentation  
+ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] retarde le chargement des VSPackages chaque fois que cela est possible. La conséquence de l’incorporation d’un fichier de directeur technique dans un VSPackage est que [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] doit charger tous ces VSPackages en mémoire pendant l’installation, ce qui est le cas lorsqu’il crée une table de commandes fusionnée. Les ressources peuvent être extraites d’un VSPackage en examinant les métadonnées sans exécuter de code dans le VSPackage. Le VSPackage n’est pas initialisé pour l’instant, la perte de performances est donc minime.  
   
- Lorsque [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] demandes une ressource à partir d’un VSPackage après l’installation, ce package étant susceptible d’être déjà chargé et initialisé, la perte de performances est minime.  
+ Lorsque [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] demande une ressource à partir d’un VSPackage après l’installation, ce package est susceptible d’être déjà chargé et initialisé, de sorte que la perte de performances est minime.  
   
 ## <a name="see-also"></a>Voir aussi  
  [VSPackages gérés](../../misc/managed-vspackages.md)   
- [Gestion de VSPackages](../../extensibility/managing-vspackages.md)   
- [Ressources localisées dans les applications MFC : DLL satellites](https://msdn.microsoft.com/library/3a1100ae-a9c8-47b5-adbd-cbedef5992ef)   
+ [Gestion des VSPackages](../../extensibility/managing-vspackages.md)   
+ [Ressources localisées dans les applications MFC : dll satellites](https://msdn.microsoft.com/library/3a1100ae-a9c8-47b5-adbd-cbedef5992ef)   
  [VSPackages gérés](../../misc/managed-vspackages.md)

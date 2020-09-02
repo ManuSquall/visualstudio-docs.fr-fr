@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 644676393a606dfd7fbf6aa400a625dce2db3697
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656893"
 ---
 # <a name="creating-legacy-workflow-projects"></a>Création de projets de workflows hérités
@@ -37,9 +37,9 @@ Cette section décrit comment créer des projets de workflow à l'aide du [!INCL
 
  [Guide pratique pour créer des applications console de flux de travail séquentiels (hérité)](../workflow-designer/how-to-create-sequential-workflow-console-applications-legacy.md)
 
- [Guide pratique pour créer une bibliothèque de flux de travail séquentiels (hérité)](../workflow-designer/how-to-create-a-sequential-workflow-library-legacy.md)
+ [Procédure : créer une bibliothèque de workflows séquentiels (héritée)](../workflow-designer/how-to-create-a-sequential-workflow-library-legacy.md)
 
- [Guide pratique pour créer une bibliothèque d’activité de flux de travail (hérité)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md)
+ [Procédure : créer une bibliothèque d'activités de workflow (héritée)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md)
 
  [Guide pratique pour créer des applications console de flux de travail de machine à états (hérité)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)
 
@@ -47,9 +47,9 @@ Cette section décrit comment créer des projets de workflow à l'aide du [!INCL
 
  [Guide pratique pour créer un projet de flux de travail vide (hérité)](../workflow-designer/how-to-create-an-empty-workflow-project-legacy.md)
 
- [Guide pratique pour configurer des propriétés de projet de flux de travail (hérité)](../workflow-designer/how-to-configure-workflow-project-properties-legacy.md)
+ [Procédure : configurer des propriétés de projet de workflow (héritée)](../workflow-designer/how-to-configure-workflow-project-properties-legacy.md)
 
- [Guide pratique pour ajouter un nouvel élément à un projet de flux de travail (hérité)](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project-legacy.md)
+ [Procédure : ajouter un nouvel élément à un projet de workflow (héritée)](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project-legacy.md)
 
 ## <a name="see-also"></a>Voir aussi
  [Vues de workflow séquentielles (héritées)](../workflow-designer/sequential-workflow-views-legacy.md) des [fenêtres de flux de travail Visual Studio (hérité)](../workflow-designer/visual-studio-workflow-windows-legacy.md)

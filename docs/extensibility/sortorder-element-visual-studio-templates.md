@@ -1,5 +1,5 @@
 ---
-title: SortOrder Element (Visual Studio Templates) Microsoft Docs
+title: SortOrder, élément (modèles Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,16 +15,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 935d00335a21d3e129e79ce351e554ea93787447
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80699959"
 ---
 # <a name="sortorder-element-visual-studio-templates"></a>SortOrder, élément (modèles Visual Studio)
-Spécifie une valeur qui est utilisée pour arranger le modèle, entre autres modèles dans la même catégorie, comme il apparaît dans le **nouveau projet** ou ajouter la boîte de dialogue **Nouvel Élément.**
+Spécifie une valeur qui est utilisée pour réorganiser le modèle, parmi d’autres modèles de la même catégorie, tel qu’il apparaît dans la boîte de dialogue **nouveau projet** ou **Ajouter un nouvel élément** .
 
- \<VSTemplate> \<TemplateData> \<SortOrder>
+ \<VSTemplate> \<TemplateData>
+ \<SortOrder>
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -50,17 +51,17 @@ Spécifie une valeur qui est utilisée pour arranger le modèle, entre autres mo
 ## <a name="text-value"></a>Valeur texte
  Une valeur texte est requise.
 
- Un `integer` qui représente la valeur de commande de tri.
+ `integer`Qui représente la valeur d’ordre de tri.
 
 ## <a name="remarks"></a>Notes
- `SortOrder` est un élément facultatif. La valeur par défaut est de 100, et toutes les valeurs doivent être multiples de 10.
+ `SortOrder` est un élément facultatif. La valeur par défaut est 100, et toutes les valeurs doivent être des multiples de 10.
 
- L’élément `SortOrder` est ignoré pour les modèles créés par l’utilisateur. Tous les modèles créés par l’utilisateur sont triés par ordre alphabétique.
+ L' `SortOrder` élément est ignoré pour les modèles créés par l’utilisateur. Tous les modèles créés par l’utilisateur sont triés par ordre alphabétique.
 
- Les modèles qui ont des valeurs d’ordre de tri faible apparaissent dans le **nouveau projet** ou la boîte de dialogue de nouvel **élément d’addition** avant les modèles qui ont des valeurs élevées de commande de tri.
+ Les modèles qui ont des valeurs d’ordre de tri faible s’affichent dans la boîte de dialogue **nouveau projet** ou **nouvel élément Ajouter** avant les modèles qui ont des valeurs d’ordre de tri élevées.
 
 ## <a name="example"></a>Exemple
- L’exemple suivant illustre les métadonnées d’un modèle de classe standard. [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]
+ L’exemple suivant illustre les métadonnées pour un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] modèle de classe standard.
 
 ```
 <VSTemplate Type="Item" Version="3.0.0"
@@ -79,7 +80,7 @@ Spécifie une valeur qui est utilisée pour arranger le modèle, entre autres mo
 </VSTemplate>
 ```
 
- Dans cet exemple, l’élément `SortOrder` est relativement élevé. Il est probable [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] que d’autres `SortOrder` modèles `290` d’éléments auront une valeur inférieure à celle et apparaîtront avant ce modèle dans la boîte de dialogue **Du nouvel élément.**
+ Dans cet exemple, l' `SortOrder` élément est relativement élevé. Il est probable que [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] d’autres modèles d’élément auront une `SortOrder` valeur inférieure à `290` et apparaîtront avant ce modèle dans la boîte de dialogue **nouvel élément** .
 
 ## <a name="see-also"></a>Voir aussi
 - [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

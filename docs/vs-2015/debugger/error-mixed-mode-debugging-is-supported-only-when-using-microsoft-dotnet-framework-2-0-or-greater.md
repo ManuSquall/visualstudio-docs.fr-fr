@@ -1,5 +1,5 @@
 ---
-title: 'Erreur : Débogage en mode mixte est pris en charge seulement quand vous utilisez Microsoft .NET Framework 2.0 ou supérieur | Microsoft Docs'
+title: 'Erreur : le débogage en mode mixte est pris en charge uniquement lors de l’utilisation de Microsoft .NET Framework 2,0 ou version ultérieure | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,13 +17,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0bf0557db3fd4ecc58e81d2b88e8c700c2f3bae0
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697404"
 ---
-# <a name="error-mixed-mode-debugging-is-supported-only-when-using-microsoft-net-framework-20-or-greater"></a>Erreur : Le débogage en mode mixte est pris en charge seulement quand vous utilisez Microsoft .NET Framework 2.0 ou ultérieur
+# <a name="error-mixed-mode-debugging-is-supported-only-when-using-microsoft-net-framework-20-or-greater"></a>Erreur : Le débogage en mode mixte est uniquement pris en charge lorsque vous utilisez Microsoft .NET Framework 2.0 ou version ultérieure
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pour déboguer du code natif et managé mixte, vous devez disposer de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] version 2.0, 3.0, 3.5 ou 4. Le débogage en mode mixte avec les versions précédentes du [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] n’est pas pris en charge.  

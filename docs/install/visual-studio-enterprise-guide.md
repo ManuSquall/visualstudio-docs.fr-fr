@@ -17,16 +17,16 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 02ce09aebae0d6e5225ba1cdfa7484aa887135fd
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88247641"
 ---
 # <a name="visual-studio-enterprise-guide"></a>Guide Visual Studio Enterprise
 Si vous envisagez de gagner du temps lors de l’exécution de votre entreprise sur Visual Studio, commencez ici. Ce guide d’entreprise comprend des conseils qui peuvent vous aider à installer et à mettre à jour Visual Studio dans des scénarios d’entreprise courants, à être débloqués si vous rencontrez des problèmes et à signaler un problème si vous avez besoin d’une aide supplémentaire. 
 
-## <a name="get-started"></a>Commencer 
+## <a name="get-started"></a>Bien démarrer 
 Découvrez comment déployer Visual Studio dans votre entreprise dans des environnements en réseau et hors connexion. 
 
 - **Découvrez les options de déploiement d’entreprise dans les environnements en réseau**. Le [Guide de l’Administrateur Visual Studio](visual-studio-administrator-guide.md) fournit des conseils basés sur des scénarios pour les administrateurs système. 

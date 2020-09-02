@@ -25,10 +25,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 569254c9df668c7755116f37a819fe65a3ecaa59
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670460"
 ---
 # <a name="install-and-manage-local-content"></a>Installer et gérer un contenu local
@@ -36,7 +36,7 @@ ms.locfileid: "72670460"
 
 Microsoft Help Viewer vous permet d’ajouter, de supprimer, de mettre à jour et de déplacer le contenu d’aide installé sur votre ordinateur pour répondre à vos besoins de développement de logiciels.
 
- Pour gérer le contenu sur votre ordinateur local, vous devez vous connecter avec un compte qui dispose des autorisations d'administration. Par ailleurs, vous ne pourrez peut-être pas gérer le contenu local si vous travaillez dans un environnement d'entreprise, car il est possible que les administrateurs système prennent ces décisions pour votre organisation. Pour plus d’informations, consultez le [Guide de l’administrateur de la visionneuse d’aide](../ide/help-viewer-administrator-guide.md).
+ Pour gérer le contenu sur votre ordinateur local, vous devez vous connecter avec un compte qui dispose des autorisations d'administration. Par ailleurs, vous ne pourrez peut-être pas gérer le contenu local si vous travaillez dans un environnement d'entreprise, car il est possible que les administrateurs système prennent ces décisions pour votre organisation. Pour plus d’informations, consultez le Guide de l’administrateur de la [visionneuse d’aide](../ide/help-viewer-administrator-guide.md).
 
 ## <a name="changing-the-content-installation-source"></a>Modification de la source d'installation du contenu
  Par défaut, la visionneuse d'aide installe le contenu à partir d'un service en ligne Microsoft. En règle générale, vous ne devez pas modifier votre source de contenu, sauf si vous travaillez dans un environnement d'entreprise et qu'un administrateur système a déjà installé du contenu dans un autre emplacement.
@@ -46,13 +46,13 @@ Microsoft Help Viewer vous permet d’ajouter, de supprimer, de mettre à jour e
 1. Sous l’onglet **Gérer le contenu**, sélectionnez la case d’option **Disque**.
 
     > [!NOTE]
-    > L’option **Disque** n’est pas disponible si votre administrateur ne vous a pas autorisé à modifier la source d’installation du contenu. Pour plus d’informations, consultez le [Guide de l’administrateur de la visionneuse d’aide](../ide/help-viewer-administrator-guide.md).
+    > L’option **Disque** n’est pas disponible si votre administrateur ne vous a pas autorisé à modifier la source d’installation du contenu. Pour plus d’informations, consultez le Guide de l’administrateur de la [visionneuse d’aide](../ide/help-viewer-administrator-guide.md).
 
 2. Effectuez l’une des opérations suivantes :
 
-    - Entrez le chemin d’accès d’un fichier .msha ou l’URL d’un point de terminaison de service.
+    - Entrez le chemin d’un fichier .msha ou l’URL d’un point de terminaison de service.
 
-    - Choisissez le bouton de navigation ( **…** ) pour accéder à un fichier .msha.
+    - Cliquez sur le bouton Parcourir (**...**) pour accéder à un fichier. MSHA.
 
     - Dans la liste, choisissez la dernière entrée utilisée.
 

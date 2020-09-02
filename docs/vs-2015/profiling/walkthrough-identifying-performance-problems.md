@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6bc4135b9b861a460295c67c576405edd5c63211
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65695014"
 ---
 # <a name="walkthrough-identifying-performance-problems"></a>Procédure pas à pas : Identification des problèmes de performances
@@ -42,7 +42,7 @@ Cette procédure pas à pas montre comment profiler une application pour identif
   
 - Compréhension intermédiaire de C#.  
   
-- Une copie de l’[exemple PeopleTrax](../profiling/peopletrax-sample-profiling-tools.md).  
+- Copie de l' [exemple PeopleTrax](../profiling/peopletrax-sample-profiling-tools.md).  
   
   Pour utiliser les informations fournies par le profilage, il est préférable de disposer des informations de symboles de débogage.  
   
@@ -128,7 +128,7 @@ Cette procédure pas à pas montre comment profiler une application pour identif
   
      Le **Bloc-notes** démarre et affiche un nouveau fichier qui contient une liste de personnes issue de l’application PeopleTrax. Le temps d’attente vous permet d’identifier plus facilement la procédure d’exportation des données pour le filtrage.  
   
-6. Fermez le **Bloc-notes**, puis l’application **PeopleTrax**.  
+6. Fermez **le bloc-notes**, puis fermez l’application **PeopleTrax** .  
   
      [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] génère un rapport de session de performance (*.vsp).  
   
@@ -160,5 +160,5 @@ Cette procédure pas à pas montre comment profiler une application pour identif
   
 ## <a name="see-also"></a>Voir aussi  
  [Vues d’ensemble](../profiling/overviews-performance-tools.md)   
- [Bien démarrer](../profiling/getting-started-with-performance-tools.md)   
- [/Z7, /Zi, /ZI (Format des informations de débogage)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8)
+ [Prise en main](../profiling/getting-started-with-performance-tools.md)   
+ [/Z7,/Zi,/ZI (format des informations de débogage)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8)

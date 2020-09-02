@@ -22,10 +22,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 7ebda5933f73e2511932f8968104327a56ee7606
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77277873"
 ---
 # <a name="annotating-function-behavior"></a>Annotation du comportement d’une fonction
@@ -38,13 +38,13 @@ En plus d’annoter des [paramètres de fonction et des valeurs de retour](../co
   
 |Annotation|Description|  
 |----------------|-----------------|  
-|`_Called_from_function_class_(name)`|Non destinée à une utilisation autonome ; il s’agit plutôt d’un prédicat à utiliser avec l’annotation `_When_`. Pour plus d’informations, consultez [spécification du moment et de l’endroit où une annotation s’applique](../code-quality/specifying-when-and-where-an-annotation-applies.md).<br /><br /> Le paramètre `name` est une chaîne arbitraire qui apparaît également dans une annotation `_Function_class_` dans la déclaration de certaines fonctions.  `_Called_from_function_class_` retourne une valeur différente de zéro si la fonction en cours d’analyse est annotée à l’aide d' `_Function_class_` ayant la même valeur de `name`; Sinon, elle retourne zéro.|  
+|`_Called_from_function_class_(name)`|Non destinée à une utilisation autonome ; il s’agit plutôt d’un prédicat à utiliser avec l’annotation `_When_`. Pour plus d’informations, consultez [spécification du moment et de l’endroit où une annotation s’applique](../code-quality/specifying-when-and-where-an-annotation-applies.md).<br /><br /> Le `name` paramètre est une chaîne arbitraire qui apparaît également dans une `_Function_class_` annotation dans la déclaration de certaines fonctions.  `_Called_from_function_class_` retourne une valeur différente de zéro si la fonction en cours d’analyse est annotée à l’aide `_Function_class_` de qui a la même valeur de `name` ; sinon, elle retourne zéro.|  
 |`_Check_return_`|Annote une valeur de retour et indique que l’appelant doit l’inspecter. Le vérificateur signale une erreur si la fonction est appelée dans un contexte void.|  
 |`_Function_class_(name)`|Le paramètre `name` est une chaîne arbitraire indiquée par l'utilisateur.  Il existe dans un espace de noms distinct des autres espaces de noms. Une fonction, un pointeur de fonction ou, plus utilement, un type de pointeur de fonction peut être désigné comme appartenant à une ou plusieurs classes de fonction.|  
 |`_Raises_SEH_exception_`|Annote une fonction qui déclenche toujours une exception SEH, soumise aux conditions `_When_` et `_On_failure_`. Pour plus d’informations, consultez [spécification du moment et de l’endroit où une annotation s’applique](../code-quality/specifying-when-and-where-an-annotation-applies.md).|  
 |`_Maybe_raises_SEH_exception_`|Annote une fonction qui peut éventuellement déclencher une exception SEH, soumise aux conditions `_When_` et `_On_failure_`.|  
-|`_Must_inspect_result_`|Annote toute valeur de sortie, y compris la valeur de retour, les paramètres et les champs globaux.  L'analyseur signale une erreur si la valeur de l'objet annoté n'est pas ensuite inspectée. L'inspection indique si elle est utilisée dans une expression conditionnelle, est affectée à un paramètre de sortie ou un paramètre global ou est passée comme paramètre.  Pour les valeurs de retour, `_Must_inspect_result_` implique `_Check_return_`.|  
-|`_Use_decl_annotations_`|Peut être utilisé sur une définition de fonction (également appelée corps de fonction) à la place de la liste d’annotations dans l’en-tête.  Lorsque `_Use_decl_annotations_` est utilisé, les annotations qui apparaissent sur un en-tête dans la portée pour la même fonction sont utilisées comme si elles sont également présentes dans la définition qui a l’annotation `_Use_decl_annotations_`.|  
+|`_Must_inspect_result_`|Annote toute valeur de sortie, y compris la valeur de retour, les paramètres et les champs globaux.  L'analyseur signale une erreur si la valeur de l'objet annoté n'est pas ensuite inspectée. L'inspection indique si elle est utilisée dans une expression conditionnelle, est affectée à un paramètre de sortie ou un paramètre global ou est passée comme paramètre.  Pour les valeurs de retour, `_Must_inspect_result_` implique `_Check_return_` .|  
+|`_Use_decl_annotations_`|Peut être utilisé sur une définition de fonction (également appelée corps de fonction) à la place de la liste d’annotations dans l’en-tête.  Lorsque `_Use_decl_annotations_` est utilisé, les annotations qui apparaissent sur un en-tête dans la portée pour la même fonction sont utilisées comme si elles étaient également présentes dans la définition qui a l' `_Use_decl_annotations_` annotation.|  
   
 ## <a name="successfailure-annotations"></a>Annotations de réussite/échec  
  Une fonction peut échouer, et lorsque cela arrive, ses résultats peuvent être incomplets ou différer du résultat attendu.  Les annotations de la liste suivante fournissent des méthodes pour exprimer le comportement d'échec.  Pour utiliser ces annotations, vous devez leur permettre de déterminer la réussite ; une annotation `_Success_` est donc requise.  Notez que `NTSTATUS` et `HRESULT` intègrent déjà une annotation `_Success_`. Toutefois, si vous spécifiez votre propre annotation `_Success_` sur `NTSTATUS` ou `HRESULT`, celle-ci remplace l'annotation intégrée.  
@@ -57,11 +57,11 @@ En plus d’annoter des [paramètres de fonction et des valeurs de retour](../co
 |`_Success_(expr)`|`expr` est une expression qui retourne une valeur rvalue. Lorsque l'annotation `_Success_` est présente dans une déclaration ou une définition de fonction, chaque annotation (`anno`) sur la fonction et dans la condition préalable se comporte comme si elle était codée en tant que `_When_(expr, anno)`. L'annotation `_Success_` peut uniquement être utilisée sur une fonction, et non sur ses paramètres ou son type de retour. Il peut y avoir au plus une annotation `_Success_` sur une fonction, et elle ne peut pas être dans `_When_`, `_At_` ou `_Group_`. Pour plus d’informations, consultez [spécification du moment et de l’endroit où une annotation s’applique](../code-quality/specifying-when-and-where-an-annotation-applies.md).|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Utilisation d’annotations SAL pour réduireC++ les erreurs C/code](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
- [Compréhension](../code-quality/understanding-sal.md) des  SAL  
+ [Utilisation d’annotations SAL pour réduire les défauts du code C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
+ [Comprendre SAL](../code-quality/understanding-sal.md)   
  [Annotation des paramètres de fonction et des valeurs de retour](../code-quality/annotating-function-parameters-and-return-values.md)   
- [Annoter des structs et des Classes](../code-quality/annotating-structs-and-classes.md)   
- [Annoter le comportement de verrouillage](../code-quality/annotating-locking-behavior.md)   
+ [Annoter des structs et des classes](../code-quality/annotating-structs-and-classes.md)   
+ [Annotation du comportement de verrouillage](../code-quality/annotating-locking-behavior.md)   
  [Spécification du moment et de l’endroit où une annotation s’applique](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [Fonctions intrinsèques](../code-quality/intrinsic-functions.md)   
  [Bonnes pratiques et exemples](../code-quality/best-practices-and-examples-sal.md)

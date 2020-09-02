@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fe49c928ca3de318410eba56afeae6f4329efed3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670659"
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>Comment : substituer des paramètres dans un modèle
@@ -29,7 +29,7 @@ Vous pouvez remplacer les paramètres d'un modèle, tels que les noms de classes
 
 #### <a name="to-use-a-parameter-to-replace-namespace-name-with-the-project-name"></a>Pour remplacer le nom de l'espace de noms par le nom du projet à l'aide d'un paramètre
 
-1. Ajoutez le paramètre dans l'un ou plusieurs des fichiers de code du modèle. Exemple :
+1. Ajoutez le paramètre dans l'un ou plusieurs des fichiers de code du modèle. Par exemple :
 
     ```
     namespace $safeprojectname$
@@ -40,7 +40,7 @@ Vous pouvez remplacer les paramètres d'un modèle, tels que les noms de classes
 
 2. Dans le fichier .vstemplate du modèle, localisez l'élément `ProjectItem` qui inclut ce fichier.
 
-3. Définissez l'attribut `ReplaceParameters` à la valeur `true` pour l'élément `ProjectItem`. Exemple :
+3. Définissez l'attribut `ReplaceParameters` à la valeur `true` pour l'élément `ProjectItem`. Par exemple :
 
     ```
     <ProjectItem ReplaceParameters="true">Class1.cs</ProjectItem>

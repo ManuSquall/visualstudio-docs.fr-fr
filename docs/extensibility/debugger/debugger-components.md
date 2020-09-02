@@ -1,5 +1,5 @@
 ---
-title: Composants Debugger (fr) Microsoft Docs
+title: Composants du débogueur | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,54 +13,54 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 03c400fd03c5ee0f2629e9f436b65f53f8f2ac8b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739008"
 ---
-# <a name="debugger-components"></a>Composants Debugger
-Le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] débbugger est implémenté comme un VSPackage et gère l’ensemble de la session de débog. La session de débogé comprend les éléments suivants :
+# <a name="debugger-components"></a>Composants du débogueur
+Le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] débogueur est implémenté en tant que VSPackage et gère l’intégralité de la session de débogage. La session de débogage comprend les éléments suivants :
 
-- **Forfait Debug:** Le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] débbugger fournit la même interface utilisateur, peu importe ce qui est débogé.
+- **Package de débogage :** Le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] débogueur fournit la même interface utilisateur, quel que soit le débogage.
 
-- **Responsable de débogé de session (SDM) :** Fournit une interface programmatique [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] cohérente au Debugger pour la gestion d’une variété de moteurs de déboges. Il est [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]mis en œuvre par .
+- **Gestionnaire de débogage de session (SDM) :** Fournit une interface de programmation cohérente au [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] débogueur pour la gestion d’un grand nombre de moteurs de débogage. Elle est implémentée par [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
-- **Gestionnaire de débogé de processus (PDM) :** Gère, pour tous [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]les instances en cours d’exécution de , une liste de tous les programmes qui peuvent être ou sont débogés. Il est [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]mis en œuvre par .
+- **Gestionnaire de débogage de processus (PDM) :** Gère, pour toutes les instances en cours d’exécution [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , une liste de tous les programmes qui peuvent être ou sont en cours de débogage. Elle est implémentée par [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
-- **Moteur Debug (DE):** Est responsable de la surveillance d’un programme en cours de déboguer, de communiquer l’état du programme en cours d’exécution au SDM et au PDM, et d’interagir avec l’évaluateur d’expression et le fournisseur de symboles afin de fournir une analyse en temps réel de l’état de la mémoire et des variables d’un programme. Il est [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] mis en œuvre par (pour les langues qu’il prend en charge) et par des fournisseurs tiers qui veulent prendre en charge leur propre temps d’exécution.
+- **Moteur de débogage (de) :** Est responsable de la surveillance d’un programme en cours de débogage, de la communication de l’état du programme en cours d’exécution au SDM et à PDM, et de l’interaction avec l’évaluateur d’expression et le fournisseur de symboles pour fournir une analyse en temps réel de l’état de la mémoire et des variables d’un programme. Il est implémenté par [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (pour les langages qu’il prend en charge) et des fournisseurs tiers qui souhaitent prendre en charge leur propre temps d’exécution.
 
-- **Évaluateur d’expression (EE) :** Fournit un soutien pour évaluer dynamiquement les variables et expressions fournies par l’utilisateur lorsqu’un programme a été arrêté à un moment donné. Il est [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] mis en œuvre par (pour les langues qu’il prend en charge) et par des fournisseurs tiers qui veulent prendre en charge leur propre langue.
+- **Évaluateur d’expression (EE) :** Prend en charge l’évaluation dynamique des variables et des expressions fournies par l’utilisateur lorsqu’un programme a été arrêté à un point particulier. Il est implémenté par [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (pour les langages qu’il prend en charge) et des fournisseurs tiers qui souhaitent prendre en charge leurs propres langues.
 
-- **Fournisseur de symboles (SP) :** Aussi appelé gestionnaire de symbole, cartographie les symboles de débogage d’un programme à une instance en cours d’exécution du programme afin que des informations significatives peuvent être fournies (comme le débogage au niveau du code source et l’évaluation de l’expression). Il est [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] mis en œuvre par (pour les symboles Common Language Runtime [CLR] et le format de fichier symbole Program DataBase [PDB]) et par des fournisseurs tiers qui ont leur propre méthode exclusive de stockage de l’information de débogage.
+- **Fournisseur de symboles (SP) :** Également appelé gestionnaire de symboles, mappe les symboles de débogage d’un programme à une instance en cours d’exécution du programme afin que des informations explicites puissent être fournies (telles que le débogage au niveau du code source et l’évaluation de l’expression). Elle est implémentée par [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (pour les symboles CLR (Common Language Runtime) et le format de fichier de symboles de la base de données du programme [PDB] et par les fournisseurs tiers qui possèdent leur propre méthode propriétaire de stockage des informations de débogage.
 
-  Le diagramme suivant montre la relation entre ces éléments du débbugger Visual Studio.
+  Le diagramme suivant montre la relation entre ces éléments du débogueur Visual Studio.
 
   ![Vue d'ensemble du débogage de composants](../../extensibility/debugger/media/dbugcompovrview.gif "DBugCompOvrview")
 
 ## <a name="in-this-section"></a>Contenu de cette section
- [Paquet Debug](../../extensibility/debugger/debug-package.md) Discute de l’emballage de débog, qui s’exécute dans la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] coquille et gère toute l’interface utilisateur.
+ [Package de débogage](../../extensibility/debugger/debug-package.md) Décrit le package de débogage, qui s’exécute dans l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interpréteur de commandes et gère l’ensemble de l’interface utilisateur.
 
- [Gestionnaire de débogé de processus](../../extensibility/debugger/process-debug-manager.md) Fournit un aperçu des caractéristiques du PDM, qui est le gestionnaire des processus qui peuvent être déboisés.
+ [Gestionnaire de débogage de processus](../../extensibility/debugger/process-debug-manager.md) Fournit une vue d’ensemble des fonctionnalités de PDM, qui est le gestionnaire des processus qui peuvent être débogués.
 
- [Gestionnaire de débogé de session](../../extensibility/debugger/session-debug-manager.md) Définit le SDM, qui fournit une vue unifiée de la session de débog à l’IDE. Le SDM gère le DE.
+ [Gestionnaire de débogage de session](../../extensibility/debugger/session-debug-manager.md) Définit le SDM, qui fournit une vue unifiée de la session de débogage à l’IDE. Le SDM gère le DE.
 
- [Moteur Debug](../../extensibility/debugger/debug-engine.md) Documente les services de débogage que le DE fournit.
+ [Moteur de débogage](../../extensibility/debugger/debug-engine.md) Documente les services DE débogage fournis par le.
 
- [Modes opérationnels](../../extensibility/debugger/operational-modes.md) Fournit un aperçu des trois modes dans lesquels l’IDE peut fonctionner : mode de conception, mode d’exécution et mode de rupture. Les mécanismes de transition sont également discutés.
+ [Modes de fonctionnement](../../extensibility/debugger/operational-modes.md) Fournit une vue d’ensemble des trois modes dans lesquels l’IDE peut fonctionner : mode Design, mode exécution et mode arrêt. Les mécanismes de transition sont également abordés.
 
- [Évaluateur d’expression](../../extensibility/debugger/expression-evaluator.md) Explique le but de l’EE au moment de la course.
+ [Évaluateur d’expression](../../extensibility/debugger/expression-evaluator.md) Explique l’objectif du EE au moment de l’exécution.
 
- [Fournisseur de symboles](../../extensibility/debugger/symbol-provider.md) Discute comment, lors de la mise en œuvre, le fournisseur de symboles évalue les variables et les expressions.
+ [Fournisseur de symboles](../../extensibility/debugger/symbol-provider.md) Explique comment, lors de l’implémentation, le fournisseur de symboles évalue les variables et les expressions.
 
- [Type visualisateur et visualiseur personnalisé](../../extensibility/debugger/type-visualizer-and-custom-viewer.md) Discute de ce qu’est un visualiseur de type et le visualiseur personnalisé et quel rôle l’évaluateur d’expression joue dans le soutien des deux.
+ [Visualiseur de type et visionneuse personnalisée](../../extensibility/debugger/type-visualizer-and-custom-viewer.md) Décrit ce qu’est un visualiseur de type et une visionneuse personnalisée et le rôle joué par l’évaluateur d’expression dans pour prendre en charge les deux.
 
 ## <a name="related-sections"></a>Sections connexes
- [Concepts Debugger](../../extensibility/debugger/debugger-concepts.md) Décrit les principaux concepts architecturaux débogage.
+ [Concepts du débogueur](../../extensibility/debugger/debugger-concepts.md) Décrit les principaux concepts architecturaux du débogage.
 
- [Contextes Debugger](../../extensibility/debugger/debugger-contexts.md) Explique comment le DE fonctionne simultanément dans les contextes d’évaluation du code, de la documentation et de l’expression. Décrit, pour chacun des trois contextes, l’emplacement, le poste ou l’évaluation qui lui est pertinent.
+ [Contextes du débogueur](../../extensibility/debugger/debugger-contexts.md) Explique comment le fonctionne simultanément dans le code, la documentation et les contextes d’évaluation des expressions. Décrit, pour chacun des trois contextes, l’emplacement, la position ou l’évaluation qui s’y rapporte.
 
- [Tâches de débogé](../../extensibility/debugger/debugging-tasks.md) Contient des liens vers diverses tâches de débogage, telles que le lancement d’un programme et l’évaluation des expressions.
+ [Tâches de débogage](../../extensibility/debugger/debugging-tasks.md) Contient des liens vers différentes tâches de débogage, telles que le lancement d’un programme et l’évaluation d’expressions.
 
 ## <a name="see-also"></a>Voir aussi
-- [Bien démarrer](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)
+- [Prise en main](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)

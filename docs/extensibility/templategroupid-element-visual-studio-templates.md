@@ -1,5 +1,5 @@
 ---
-title: Élément TemplateGroupID (Modèles de studio visuel) Microsoft Docs
+title: TemplateGroupID, élément (modèles Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,16 +15,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: affc324418e3745f85fb0b91a0ef7abda0ab28b0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80699076"
 ---
 # <a name="templategroupid-element-visual-studio-templates"></a>TemplateGroupID, élément (modèles Visual Studio)
-Spécifie le genre de projet dans lequel les modèles d'élément doivent s'afficher. Cet élément est significatif lorsque [ShowByDefault (Visual Studio Templates)](../extensibility/showbydefault-visual-studio-templates.md) est configuré à `false`. Lorsque [ShowByDefault (Visual Studio Templates)](../extensibility/showbydefault-visual-studio-templates.md) est configuré, `true`un modèle d’article est disponible dans tous les types de projets.
+Spécifie le genre de projet dans lequel les modèles d'élément doivent s'afficher. Cet élément est significatif quand [ShowByDefault (modèles Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) a la valeur `false` . Quand [ShowByDefault (modèles Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) a la valeur `true` , un modèle d’élément est disponible dans tous les types de projets.
 
- \<VSTemplate> \<TemplateData> \<TemplateGroupID>
+ \<VSTemplate> \<TemplateData>
+ \<TemplateGroupID>
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -55,7 +56,7 @@ Spécifie le genre de projet dans lequel les modèles d'élément doivent s'affi
 ## <a name="remarks"></a>Notes
  `TemplateGroupID` est un élément.
 
- La valeur `TemplateGroupID` de l’élément est utilisée avec l’enregistrement du système de\\projet*\<(numéro *de version\\HKEY_LOCAL_MACHINE-SOFTWARE-Microsoft-VisualStudio>'Projets ' pour filtrer les modèles qui apparaissent dans la boîte de dialogue **Add New Item.**
+ La valeur de l' `TemplateGroupID` élément est utilisée avec l’inscription du système de projet (HKEY_LOCAL_MACHINE \Software\microsoft\visualstudio \\ *\<version number>* \projets \\ ) pour filtrer les modèles qui s’affichent dans la boîte de dialogue **Ajouter un nouvel élément** .
 
 |Valeur Visual C++|Signification|
 |------------------------|-------------|

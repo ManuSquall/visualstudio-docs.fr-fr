@@ -10,19 +10,19 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: aeb404c479edec5dec89f28e80584d435f5c370a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670645"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Comment : supprimer des avertissements du compilateur
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous pouvez « nettoyer » un journal de génération en spécifiant un ou plusieurs types d’avertissements du compilateur que vous ne souhaitez pas inclure. Par exemple, vous pouvez utiliser cette technique pour passer en revue uniquement certaines des informations générées automatiquement quand vous affectez la valeur Diagnostic, Détaillé ou Normal au niveau de détail du journal de génération. Pour plus d’informations sur le niveau de détail, consultez [Guide pratique pour afficher, enregistrer et configurer des fichiers journaux de génération](../ide/how-to-view-save-and-configure-build-log-files.md).
+Vous pouvez « nettoyer » un journal de génération en spécifiant un ou plusieurs types d’avertissements du compilateur que vous ne souhaitez pas inclure. Par exemple, vous pouvez utiliser cette technique pour passer en revue uniquement certaines des informations générées automatiquement quand vous affectez la valeur Diagnostic, Détaillé ou Normal au niveau de détail du journal de génération. Pour plus d’informations sur le niveau de détail, consultez [Comment : afficher, enregistrer et configurer des fichiers journaux de génération](../ide/how-to-view-save-and-configure-build-log-files.md).
 
-### <a name="to-suppress-specific-warnings-for-visual-c-or-f"></a>Pour supprimer des avertissements spécifiques pour C# Visual ou F \#
+### <a name="to-suppress-specific-warnings-for-visual-c-or-f"></a>Pour supprimer des avertissements spécifiques pour Visual C# ou F\#
 
 1. Dans l’**Explorateur de solutions**, choisissez le projet dans lequel vous souhaitez supprimer les avertissements.
 
@@ -38,7 +38,7 @@ Vous pouvez « nettoyer » un journal de génération en spécifiant un ou plu
 
 2. Dans la barre de menus, sélectionnez **Afficher**, **Pages de propriétés**.
 
-3. Choisissez la catégorie **Propriétés de configuration**, la catégorie **C/C++** , puis la page **Avancé**.
+3. Choisissez la catégorie **Propriétés de configuration**, la catégorie **C/C++**, puis la page **Avancé**.
 
 4. Effectuez l’une des opérations suivantes :
 
@@ -50,7 +50,7 @@ Vous pouvez « nettoyer » un journal de génération en spécifiant un ou plu
 
 ## <a name="suppressing-warnings-for-visual-basic"></a>Suppression des avertissements pour Visual Basic
 
-Vous pouvez masquer des avertissements spécifiques du compilateur pour Visual Basic en modifiant le fichier .vbproj du projet. Vous pouvez également utiliser la [Page Compiler, Concepteur de projets](../ide/reference/compile-page-project-designer-visual-basic.md) pour supprimer les avertissements par catégorie. Pour plus d’informations, consultez [Configuration d’avertissements en Visual Basic](../ide/configuring-warnings-in-visual-basic.md).
+Vous pouvez masquer des avertissements spécifiques du compilateur pour Visual Basic en modifiant le fichier .vbproj du projet. Vous pouvez également utiliser la [Page Compiler, Concepteur de projets](../ide/reference/compile-page-project-designer-visual-basic.md) pour supprimer les avertissements par catégorie. Pour plus d’informations, consultez [Configuration des avertissements dans Visual Basic](../ide/configuring-warnings-in-visual-basic.md).
 
 #### <a name="to-suppress-specific-warnings-for-visual-basic"></a>Pour supprimer des avertissements spécifiques pour Visual Basic
 
@@ -58,7 +58,7 @@ Vous pouvez masquer des avertissements spécifiques du compilateur pour Visual B
 
 2. Dans la barre de menus, choisissez **Projet**, **Décharger le projet**.
 
-3. Dans l’**Explorateur de solutions**, ouvrez le menu contextuel du projet et choisissez **Modifier**_nom_projet_ **.vbproj**.
+3. Dans l’**Explorateur de solutions**, ouvrez le menu contextuel du projet et choisissez **Modifier**_nom_projet_**.vbproj**.
 
     Le fichier projet s’ouvre dans l’éditeur de code.
 

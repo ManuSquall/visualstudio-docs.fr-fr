@@ -74,10 +74,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 22307c44e4f82056887fadf6e8fde9e1449a19a5
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88247934"
 ---
 # <a name="crt-debug-heap-details"></a>Détails du tas de débogage CRT
@@ -178,7 +178,7 @@ L'accès à de nombreuses fonctionnalités du tas de débogage doit s'effectuer 
 
 L’indicateur **_crtDbgFlag** contient les champs de bits suivants :
 
-|Champ de bits|Valeur par défaut<br /><br /> value|Description|
+|Champ de bits|Default<br /><br /> value|Description|
 |---------------|-----------------------|-----------------|
 |**_CRTDBG_ALLOC_MEM_DF**|Activé|Active l'allocation de débogage. Quand ce bit est désactivé, les allocations restent enchaînées, mais leur type de bloc est **_IGNORE_BLOCK**.|
 |**_CRTDBG_DELAY_FREE_MEM_DF**|Désactivé|Interdit la libération réelle de la mémoire, comme pour la simulation de conditions de mémoire insuffisante. Quand ce bit est activé, les blocs libérés sont conservés dans la liste liée du tas de débogage, mais sont marqués en tant que **_FREE_BLOCK** et remplis avec une valeur d’octet spéciale.|

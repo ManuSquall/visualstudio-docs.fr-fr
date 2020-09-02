@@ -12,16 +12,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5f11ed48d9dcf961228957cf15db3815c00d14d7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204219"
 ---
 # <a name="guidsymbol-element"></a>Élément GuidSymbol
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Le `GuidSymbol` élément contient le GUID de la paire GUID : ID qui représente un menu, un groupe ou une commande. L’ID provient d’un `IDSymbol` élément dans le `GuidSymbol` élément. Le `GuidSymbol` élément a un `name` attribut qui fournit un nom convivial pour le GUID, qui est contenu dans le `value` attribut.  
+L' `GuidSymbol` élément contient le GUID de la paire GUID : ID qui représente un menu, un groupe ou une commande. L’ID provient d’un `IDSymbol` élément dans l' `GuidSymbol` élément. L' `GuidSymbol` élément a un `name` attribut qui fournit un nom convivial pour le GUID, qui est contenu dans l' `value` attribut.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -39,8 +39,8 @@ Le `GuidSymbol` élément contient le GUID de la paire GUID : ID qui représent
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|Nom|Requis. Nom du symbole GUID.|  
-|value|Requis. GUID du symbole GUID.|  
+|name|Obligatoire. Nom du symbole GUID.|  
+|value|Obligatoire. GUID du symbole GUID.|  
   
 ### <a name="child-elements"></a>Éléments enfants  
   
@@ -52,10 +52,10 @@ Le `GuidSymbol` élément contient le GUID de la paire GUID : ID qui représent
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[Élément Symbols](../extensibility/symbols-element.md)|Groupes `GuidSymbol` éléments dans un fichier .vsct.|  
+|[Élément Symbols](../extensibility/symbols-element.md)|Regroupe les `GuidSymbol` éléments dans un fichier. vsct.|  
   
 ## <a name="remarks"></a>Notes  
- En règle générale, un fichier .vsct contient trois `GuidSymbol` éléments dans son `Symbols` section, une pour le package lui-même, un pour le jeu de commandes (la collection de menus, les groupes et les commandes que le package met à disposition) et une pour les bitmaps qui fournissent icônes pour les boutons et autres composants visuels. Chaque `IDSymbol` élément dans une donnée `GuidSymbol` élément doit avoir une valeur unique `value`. Toutefois, `IDSymbol` les éléments qui ont des valeurs identiques peuvent exister dans un package, à condition qu’ils disposent des parents différents.  
+ En règle générale, un fichier. vsct contient trois `GuidSymbol` éléments dans sa `Symbols` section, l’un pour le package lui-même, l’autre pour le jeu de commandes (la collection de menus, les groupes et les commandes que le package rend disponibles) et l’autre pour les bitmaps qui fournissent des icônes pour les boutons et autres composants visuels. Chaque `IDSymbol` élément d’un `GuidSymbol` élément donné doit avoir un unique `value` . Toutefois, les `IDSymbol` éléments qui ont des valeurs identiques peuvent exister dans un package, à condition qu’ils aient des parents différents.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Fichiers Visual Studio Command Table (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
