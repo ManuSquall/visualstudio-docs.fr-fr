@@ -1,6 +1,6 @@
 ---
 title: Analyse du code pour les avertissements liés au code managé | Microsoft Docs
-ms.date: 11/15/2016
+ms.date: 08/31/2020
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -13,17 +13,17 @@ helpviewer_keywords:
 - code analysis,managed code
 ms.assetid: 3c2741ff-0d3a-42e6-acd5-d42310bd03c4
 caps.latest.revision: 22
-author: jillre
-ms.author: jillfra
+author: mikadumont
+ms.author: midumont
 manager: wpickett
-ms.openlocfilehash: 5294840e4669f28f4e8a04978274ad130d1397ee
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: e689d137e071096d096e117ef3b79df405a060ed
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85535731"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89285747"
 ---
-# <a name="code-analysis-for-managed-code-warnings"></a>Analyse du code pour les avertissements liés au code managé
+# <a name="net-code-analysis-rules"></a>Règles d’analyse du code .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 L’outil Analyse du code managé fournit des avertissements qui indiquent des violations de règle dans les bibliothèques de code managé. Les avertissements sont organisés en domaines de règles, tels que la conception, la localisation, les performances et la sécurité. Chaque avertissement indique une violation d’une règle d’analyse du code managé. Cette section fournit des explications et des exemples détaillés de chaque avertissement d’analyse du code managé.
@@ -36,7 +36,7 @@ L’outil Analyse du code managé fournit des avertissements qui indiquent des v
 |CheckId|Identificateur unique de la règle. CheckId et Category sont utilisés pour la suppression à la source d’un avertissement.|
 |Category|Catégorie de l’avertissement.|
 |Modification avec rupture|Indique si la correction d’une violation de la règle constitue une modification avec rupture. Une modification avec rupture signifie qu’un assembly qui présente une dépendance à la cible ayant provoqué la violation ne se recompile pas avec la nouvelle version corrigée ou peut échouer au moment de l’exécution en raison de la modification. Quand plusieurs corrections sont possibles et qu’au moins l’une d’elles est une modification avec rupture et qu’une autre ne l’est pas, les caractéristiques « Avec rupture » et « Sans rupture » sont toutes deux spécifiées.|
-|Cause|Code managé spécifique qui contraint la règle à générer un avertissement.|
+|Cause :|Code managé spécifique qui contraint la règle à générer un avertissement.|
 |Description|Décrit les problèmes sous-jacents à l’avertissement.|
 |Comment corriger les violations|Explique comment modifier le code source pour satisfaire la règle et l’empêcher de générer un avertissement.|
 |Quand supprimer les avertissements|Décrit les circonstances dans lesquelles il est possible de supprimer un avertissement de la règle en toute sécurité.|

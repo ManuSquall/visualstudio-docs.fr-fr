@@ -1,6 +1,6 @@
 ---
 title: Analyse du code pour les avertissements liés au code managé
-ms.date: 11/04/2016
+ms.date: 08/31/2020
 ms.topic: reference
 f1_keywords:
 - vc.project.vcfxcoptool.enablefxcop
@@ -10,19 +10,19 @@ helpviewer_keywords:
 - managed code analysis warnings
 - code analysis,managed code
 ms.assetid: 3c2741ff-0d3a-42e6-acd5-d42310bd03c4
-author: mikejo5000
-ms.author: mikejo
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 383f488fcc9ebe614257b035732162100b9c7fd2
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: a72512eef8490f18f1179ae149b9a39c2ddaad4e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85521054"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "89285708"
 ---
-# <a name="code-analysis-for-managed-code-warnings"></a>Analyse du code pour les avertissements liés au code managé
+# <a name="net-code-analysis-rules"></a>Règles d’analyse du code .NET
 L’outil Analyse du code managé fournit des avertissements qui indiquent des violations de règle dans les bibliothèques de code managé. Les avertissements sont organisés en domaines de règles, tels que la conception, la localisation, les performances et la sécurité. Chaque avertissement indique une violation d’une règle d’analyse du code managé. Cette section fournit des explications et des exemples détaillés de chaque avertissement d’analyse du code managé.
 
  Le tableau suivant indique le type d’informations fourni pour chaque avertissement.
@@ -33,7 +33,7 @@ L’outil Analyse du code managé fournit des avertissements qui indiquent des v
 |CheckId|Identificateur unique de la règle. CheckId et Category sont utilisés pour la suppression à la source d’un avertissement.|
 |Category|Catégorie de l’avertissement.|
 |Modification avec rupture|Indique si la correction d’une violation de la règle constitue une modification avec rupture. Une modification avec rupture signifie qu’un assembly qui présente une dépendance à la cible ayant provoqué la violation ne se recompile pas avec la nouvelle version corrigée ou peut échouer au moment de l’exécution en raison de la modification. Lorsque plusieurs correctifs sont disponibles et qu’au moins un correctif est une modification avec rupture et qu’un correctif n’est pas, les deux options « interruption » et « sans rupture » sont spécifiées.|
-|Cause|Code managé spécifique qui contraint la règle à générer un avertissement.|
+|Cause :|Code managé spécifique qui contraint la règle à générer un avertissement.|
 |Description|Décrit les problèmes sous-jacents à l’avertissement.|
 |Comment corriger les violations|Explique comment modifier le code source pour satisfaire la règle et l’empêcher de générer un avertissement.|
 |Quand supprimer les avertissements|Décrit les circonstances dans lesquelles il est possible de supprimer un avertissement de la règle en toute sécurité.|
