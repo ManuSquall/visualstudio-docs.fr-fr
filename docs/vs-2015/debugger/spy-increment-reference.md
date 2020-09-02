@@ -1,5 +1,5 @@
 ---
-title: Référence Spy ++ | Microsoft Docs
+title: Informations de référence sur Spy + + | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,48 +13,48 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c3402eefb480efe2ec1d82b9f689f94235c2934a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148123"
 ---
 # <a name="spy-reference"></a>Référence Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Consultez les sections ci-dessous pour obtenir une description de chaque Spy ++ menu et boîte de dialogue :  
+Consultez les sections listées ci-dessous pour obtenir une description de chaque menu et boîte de dialogue Spy + + :  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Commandes de menu](../debugger/menu-commands.md)  
- Décrit les commandes disponibles dans chaque menu Spy ++.  
+ Décrit les commandes disponibles dans chaque menu Spy + +.  
   
  [Police, boîte de dialogue](../debugger/font-dialog-box-microsoft-spy-increment-help.md)  
- Utilisé pour configurer la police de caractère utilisée dans une fenêtre Vues Spy ++.  
+ Utilisé pour configurer la police de caractères utilisée dans une fenêtre Vues Spy + +.  
   
  [Outils de recherche pour les vues Spy++](../debugger/search-tools-for-spy-increment-views.md)  
- Boîtes de dialogue utilisées pour rechercher un nœud spécifique dans une fenêtre Vues Spy ++.  
+ Boîtes de dialogue utilisées pour rechercher un nœud spécifique dans une fenêtre Vues Spy + +.  
   
- [Boîte de dialogue Propriétés de la fenêtre](../debugger/window-properties-dialog-box.md)  
- Permet d’afficher les propriétés d’une fenêtre sélectionné dans la vue de Windows.  
+ [boîte de dialogue Propriétés de la fenêtre](../debugger/window-properties-dialog-box.md)  
+ Permet d’afficher les propriétés d’une fenêtre sélectionnée en mode fenêtres.  
   
  [Options des messages, boîte de dialogue](../debugger/message-options-dialog-box.md)  
- Permet de sélectionner les messages sont répertoriés dans la vue Messages.  
+ Permet de sélectionner les messages qui sont répertoriés dans la vue messages.  
   
- [Propriétés du message, boîte de dialogue](../debugger/message-properties-dialog-box.md)  
- Permet d’afficher les propriétés d’un message sélectionné dans la vue Messages.  
+ [Boîte de dialogue Propriétés du message](../debugger/message-properties-dialog-box.md)  
+ Permet d’afficher les propriétés d’un message sélectionné dans la vue messages.  
   
- [Propriétés du processus, boîte de dialogue](../debugger/process-properties-dialog-box.md)  
+ [Boîte de dialogue Propriétés du processus](../debugger/process-properties-dialog-box.md)  
  Permet d’afficher les propriétés d’un processus sélectionné dans la vue processus.  
   
  [Propriétés du thread, boîte de dialogue](../debugger/thread-properties-dialog-box.md)  
- Permet d’afficher les propriétés d’un thread sélectionné dans la vue Threads.  
+ Permet d’afficher les propriétés d’un thread sélectionné dans la vue threads.  
   
  [Autres boîtes de dialogue](../debugger/other-dialog-boxes.md)  
- Permet d’afficher des informations sur le programme Spy ++.  
+ Utilisé pour afficher des informations sur le programme Spy + +.  
   
-## <a name="related-sections"></a>Rubriques connexes  
- [Utilisation de Spy++](../debugger/using-spy-increment.md)  
- Présente l’outil Spy ++ et explique comment il peut être utilisé.  
+## <a name="related-sections"></a>Sections connexes  
+ [Utiliser Spy++](../debugger/using-spy-increment.md)  
+ Présente l’outil Spy + + et explique comment l’utiliser.  
   
  [Vues Spy++](../debugger/spy-increment-views.md)  
- Explique les arborescences Spy ++ de windows, les messages, les processus et les threads.
+ Explique les vues de l’arborescence Spy + + des fenêtres, des messages, des processus et des threads.

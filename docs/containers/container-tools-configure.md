@@ -7,10 +7,10 @@ ms.topic: how-to
 ms.date: 03/20/2019
 ms.technology: vs-azure
 ms.openlocfilehash: d2b3e2821e7697ad53b10a7148c22140aa1a07af
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283214"
 ---
 # <a name="how-to-configure-visual-studio-container-tools"></a>Comment configurer les outils de conteneur Visual Studio
@@ -61,9 +61,9 @@ Le tableau suivant décrit les paramètres de projet et de **docker compose** **
 
 | Nom | Paramètre par défaut | S'applique à | Description |
 | -----|:---------------:|:----------:| ----------- |
-| Extraire les images de l’ancrage requis sur le projet ouvert | True | Projet unique, Docker Compose | Pour améliorer les performances lors du chargement des projets, Visual Studio démarre une opération d’extraction Docker en arrière-plan de sorte que lorsque vous êtes prêt à exécuter votre code, l’image est déjà téléchargée ou en cours de téléchargement. Si vous êtes en train de charger des projets et de parcourir le code, vous pouvez définir sur **false** pour éviter de télécharger des images conteneur dont vous n’avez pas besoin. |
-| Exécuter les conteneurs sur le projet ouvert | True | Projet unique, Docker Compose | Là encore, pour des performances accrues, Visual Studio crée un conteneur à l’avance afin qu’il soit prêt pour le moment où vous générez et exécutez votre conteneur. Si vous souhaitez contrôler le moment de la création de votre conteneur, affectez la valeur **false**. |
-| Arrêter les conteneurs à la fermeture du projet | True | Projet et Docker Compose uniques | Affectez la valeur **false** si vous souhaitez que les conteneurs de votre solution continuent à s’exécuter après la fermeture de la solution ou la fermeture de Visual Studio. |
+| Extraire les images de l’ancrage requis sur le projet ouvert | Vrai | Projet unique, Docker Compose | Pour améliorer les performances lors du chargement des projets, Visual Studio démarre une opération d’extraction Docker en arrière-plan de sorte que lorsque vous êtes prêt à exécuter votre code, l’image est déjà téléchargée ou en cours de téléchargement. Si vous êtes en train de charger des projets et de parcourir le code, vous pouvez définir sur **false** pour éviter de télécharger des images conteneur dont vous n’avez pas besoin. |
+| Exécuter les conteneurs sur le projet ouvert | Vrai | Projet unique, Docker Compose | Là encore, pour des performances accrues, Visual Studio crée un conteneur à l’avance afin qu’il soit prêt pour le moment où vous générez et exécutez votre conteneur. Si vous souhaitez contrôler le moment de la création de votre conteneur, affectez la valeur **false**. |
+| Arrêter les conteneurs à la fermeture du projet | Vrai | Projet et Docker Compose uniques | Affectez la valeur **false** si vous souhaitez que les conteneurs de votre solution continuent à s’exécuter après la fermeture de la solution ou la fermeture de Visual Studio. |
 
 ::: moniker-end
 > [!WARNING]

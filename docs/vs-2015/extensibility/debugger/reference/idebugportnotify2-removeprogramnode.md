@@ -1,5 +1,5 @@
 ---
-title: IDebugPortNotify2::RemoveProgramNode | Microsoft Docs
+title: 'IDebugPortNotify2 :: RemoveProgramNode | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cc4ac539fdf0a5b27f8e9eb94e7644fa44070b3c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188415"
 ---
 # <a name="idebugportnotify2removeprogramnode"></a>IDebugPortNotify2::RemoveProgramNode
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Annule l’inscription d’un programme qui peut être débogué à partir du port qu'il s’exécute.  
+Annule l’inscription d’un programme pouvant être débogué à partir du port sur lequel il s’exécute.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -40,13 +40,13 @@ int RemoveProgramNode( 
   
 #### <a name="parameters"></a>Paramètres  
  `pProgramNode`  
- [in] Un [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objecy qui représente le programme doit être annulée.  
+ dans [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objecy qui représente le programme dont l’inscription doit être annulée.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode supprime un nœud de programme qui a été ajouté par un appel à la [AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) (méthode).  
+ Cette méthode supprime un nœud de programme qui a été ajouté avec un appel à la méthode [AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) .  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)   

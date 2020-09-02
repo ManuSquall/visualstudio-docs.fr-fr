@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 03cacd8de574de92002b44b237cd84c22e761eaf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645573"
 ---
 # <a name="help-viewer-administrator-guide"></a>Guide de l'administrateur Help Viewer
@@ -27,7 +27,7 @@ La visionneuse d’aide vous permet de gérer les installations locales d’aide
 
  La syntaxe de base est la suivante :
 
- \<*chemin d’accès à*> \HlpCtntmgr.exe/Operation \<*argument*>/CatalogName \<*nom*>/locale \<*paramètres régionaux*>/SOURCEURI \< *. MSHA chemin d’accès ou URL* 0
+ \<*path to*>\HlpCtntmgr.exe/Operation \<*argument*> /CatalogName \<*name*> /locale \<*locale*> /SourceUri \<*.msha path or URL*>
 
  Pour plus d’informations sur la syntaxe de ligne de commande HlpCtntMgr.exe, consultez [Arguments de ligne de commande pour Help Content Manager](../ide/command-line-arguments-for-the-help-content-manager.md).
 
@@ -36,11 +36,11 @@ La visionneuse d’aide vous permet de gérer les installations locales d’aide
 ## <a name="deploying-local-help-content-from-the-internet"></a>Déploiement de contenu d’aide locale à partir d’Internet
  Vous pouvez utiliser le service de module de ressources MSDN pour déployer le contenu d’aide locale d’Internet aux ordinateurs clients. Utilisez la syntaxe suivante :
 
- \\<*chemin vers*>\v2.2\HlpCtntmgr.exe /operation \<*nom*> /catalogname \<*nomcatalogue*> /locale \<*paramètres régionaux*>
+ \\<*chemin d’accès au* # C0\v2.2\HlpCtntmgr.exe/Operation \<*name*> /CatalogName \<*catalog name*> /locale \<*locale*>
 
  Pour plus d’informations sur la syntaxe de ligne de commande HlpCtntMgr.exe, consultez [Arguments de ligne de commande pour Help Content Manager](../ide/command-line-arguments-for-the-help-content-manager.md).
 
- Configuration requise :
+ Conditions requises :
 
 - Les ordinateurs clients doivent avoir accès à Internet.
 
@@ -71,7 +71,7 @@ La visionneuse d’aide vous permet de gérer les installations locales d’aide
 ## <a name="deploying-pre-installed-local-help-content-on-client-computers"></a>Déploiement du contenu d’aide locale préinstallé sur les ordinateurs clients
  Vous pouvez installer un ensemble de contenu à partir d’une source en ligne sur un ordinateur, puis copier cet ensemble de contenu installé sur d’autres ordinateurs.
 
- Configuration requise :
+ Conditions requises :
 
 - L’ordinateur sur lequel vous installez l’ensemble du contenu doit avoir accès à Internet.
 
@@ -127,9 +127,9 @@ La visionneuse d’aide vous permet de gérer les installations locales d’aide
 
 4. Tapez la commande suivante :
 
-     Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 \<*nomdossier*>\ /y /e /k /o
+     Xcopy%SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 \<*foldername*> \/y/e/k/o
 
-     Exemple : `Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 c:\VS12Help\ /y /e /k /o`.
+     Par exemple : `Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 c:\VS12Help\ /y /e /k /o`
 
 ### <a name="deploying-the-content"></a>Déploiement du contenu
 
@@ -141,7 +141,7 @@ La visionneuse d’aide vous permet de gérer les installations locales d’aide
 
 2. Créez un fichier .bat pour contenir le script de déploiement du contenu d’aide. Comme le client est susceptible de ne pas pouvoir lire les fichiers en cours de suppression dans le cadre de l’émission, vous devez désactiver le client avant d’émettre des mises à jour.
 
-     Exemple :
+     Par exemple :
 
     ```
     REM - copy pre-ripped content to ProgramData

@@ -22,15 +22,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bb0e1feee1f7e1d271dd436a1879731354cbd8bb
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "78865334"
 ---
 # <a name="cl-task"></a>CL (tâche)
 
-Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produit des fichiers exécutables (*.exe),* des fichiers de bibliothèque de liaison dynamique *(.dll)* ou des fichiers module de code *(.netmodule).* Pour plus d’informations, consultez [les options Compiler](/cpp/build/reference/compiler-options) et [utilisez MSBuild à partir de la ligne de commande](/cpp/build/msbuild-visual-cpp) et utilisez [l’toolset Microsoft CMD de la ligne de commande](/cpp/build/building-on-the-command-line).
+Encapsule l’outil compilateur Microsoft C++, *cl.exe*. Le compilateur produit des fichiers exécutables (*. exe*), des fichiers de bibliothèque de liens dynamiques (*. dll*) ou des fichiers de module de code (*. netmodule*). Pour plus d’informations, consultez [Options du compilateur](/cpp/build/reference/compiler-options) et [Utiliser MSBuild à partir de la ligne de commande](/cpp/build/msbuild-visual-cpp) et [Utilisez l’ensemble d’outils Microsoft C++ à partir de la ligne de commande](/cpp/build/building-on-the-command-line).
 
 ## <a name="parameters"></a>Paramètres
 
@@ -42,15 +42,15 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Ajoute un répertoire à la liste des répertoires dans lesquels sont recherchés les fichiers include.
 
-   Pour plus d’informations, voir [/I (Additional include directories)](/cpp/build/reference/i-additional-include-directories).
+   Pour plus d’informations, consultez [/i (autres répertoires Include)](/cpp/build/reference/i-additional-include-directories).
 
-- **Options supplémentaires**
+- **AdditionalOptions**
 
    Paramètre de chaîne facultatif.
 
-   Liste des options de ligne de commande. Par exemple, « /\<option1> /\<option2> /\<option#> ». Utilisez ce paramètre pour spécifier des options de ligne de commande qui ne sont pas représentées par un autre paramètre de tâche.
+   Liste des options de ligne de commande. Par exemple, « / \<option1>  / \<option2>  / \<option#> ». Utilisez ce paramètre pour spécifier des options de ligne de commande qui ne sont pas représentées par un autre paramètre de tâche.
 
-   Pour plus d’informations, voir [options Compiler](/cpp/build/reference/compiler-options).
+   Pour plus d’informations, consultez [Options du compilateur](/cpp/build/reference/compiler-options).
 
 - **AdditionalUsingDirectories**
 
@@ -58,7 +58,7 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Spécifie un répertoire dans lequel le compilateur doit faire une recherche en vue de résoudre les références de fichiers transmises à la directive **#using**.
 
-   Pour plus d’informations, voir [/AI (Specify métadonnées)](/cpp/build/reference/ai-specify-metadata-directories).
+   Pour plus d’informations, consultez [/ai (spécifier les répertoires de métadonnées)](/cpp/build/reference/ai-specify-metadata-directories).
 
 - **AlwaysAppend**
 
@@ -70,7 +70,7 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Crée un fichier listing qui contient le code de l’assembly.
 
-   Pour plus d’informations, voir l’option **/Fa** en [/FA, /Fa (Fichier d’inscription)](/cpp/build/reference/fa-fa-listing-file).
+   Pour plus d’informations, consultez l’option **/Fa** dans [/FA,/FA (fichier listing)](/cpp/build/reference/fa-fa-listing-file).
 
 - **AssemblerOutput**
 
@@ -80,17 +80,17 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.
 
-  - **Aucun>** - *\<*
+  - **Nolist** - *\<none>*
 
-  - **AssemblyCode** - **/FA**
+  - **AssemblyCode**  -  **/FA**
 
-  - **AssemblyAndMachineCode** - **/FAc**
+  - **AssemblyAndMachineCode**  -  **/FAC**
 
-  - **AssemblyAndSourceCode** - **/FAs**
+  - **AssemblyAndSourceCode**  -  **/FAS**
 
-  - **Tous** - **/FAcs**
+  - **Tout**  -  **/FACS**
 
-    Pour plus d’informations, voir le **/FA**, **/FAc**, **/FAs**, et **/FAcs** options en [/FA, /Fa (Fichier d’inscription)](/cpp/build/reference/fa-fa-listing-file).
+    Pour plus d’informations, consultez les options **/Fa**, **/FAC**, **/FAS**et **/FACS** dans [/FA,/FA (fichier listing)](/cpp/build/reference/fa-fa-listing-file).
 
 - **BasicRuntimeChecks**
 
@@ -100,15 +100,15 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.
 
-  - **Default** -                          *Défaut\<aucun>*
+  - **Valeurs** -                          *\<none>*
 
-  - **StackFrameRuntimeCheck** - **/RTC**
+  - **StackFrameRuntimeCheck**  -  **/RTCs**
 
-  - **UninitializedLocalUsageCheck** - **/RTCu**
+  - **UninitializedLocalUsageCheck**  -  **/RTCu**
 
-  - **EnableFastChecks** -                          **/RTC1**
+  - **EnableFastChecks**  -                           **/RTC1**
 
-    Pour plus d’informations, voir [/RTC (Vérifications d’erreur en temps de fonctionnement)](/cpp/build/reference/rtc-run-time-error-checks).
+    Pour plus d’informations, consultez [/RTC (vérifications des erreurs au moment de l’exécution)](/cpp/build/reference/rtc-run-time-error-checks).
 
 - **BrowseInformation**
 
@@ -116,7 +116,7 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Si `true`, crée un fichier d’informations de consultation.
 
-   Pour plus d’informations, voir l’option **/FR** [en/FR, /Fr (Créer .sbr fichier)](/cpp/build/reference/fr-fr-create-dot-sbr-file).
+   Pour plus d’informations, consultez l’option **/fr** dans [/fr,/fr (créer un fichier. SBR)](/cpp/build/reference/fr-fr-create-dot-sbr-file).
 
 - **BrowseInformationFile**
 
@@ -124,7 +124,7 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Spécifie un nom pour le fichier d’informations de consultation.
 
-   Pour plus d’informations, voir le **paramètre BrowseInformation** dans ce tableau, et aussi voir [/FR, /Fr (Créer .sbr fichier)](/cpp/build/reference/fr-fr-create-dot-sbr-file).
+   Pour plus d’informations, consultez le paramètre **BrowseInformation** dans ce tableau et consultez [/fr,/fr (créer un fichier. SBR)](/cpp/build/reference/fr-fr-create-dot-sbr-file).
 
 - **BufferSecurityCheck**
 
@@ -148,13 +148,13 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.
 
-  - **Cdecl** - **/Gd**
+  - **Cdecl**  -  **/Gd**
 
-  - **FastCall** -                          **/Gr**
+  - **FastCall**  -                           **/GR**
 
-  - **StdCall** -                          **/Gz**
+  - **StdCall**  -                           **/Gz**
 
-    Pour plus d’informations, voir [/Gd, /Gr, /Gv, /Gz (Convention d’appel)](/cpp/build/reference/gd-gr-gv-gz-calling-convention).
+    Pour plus d’informations, consultez [/GD,/GR,/GV,/gz (Convention d’appel)](/cpp/build/reference/gd-gr-gv-gz-calling-convention).
 
 - **CompileAs**
 
@@ -164,13 +164,13 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.
 
-  - **Default** - *Défaut\<aucun>*
+  - **Valeurs** - *\<none>*
 
-  - **ComppilileAsC** - **/TC**
+  - **CompileAsC**  -  **/TC**
 
-  - **ComppilileAsCpp** - **/TP**
+  - **CompileAsCpp**  -  **/TP**
 
-    Pour plus d’informations, voir [/Tc, /Tp, /TC, /TP (Spécifier le type de fichier source)](/cpp/build/reference/tc-tp-tc-tp-specify-source-file-type).
+    Pour plus d’informations, consultez [/TC,/TP,/TC,/TP (spécifier le type de fichier source)](/cpp/build/reference/tc-tp-tc-tp-specify-source-file-type).
 
 - **CompileAsManaged**
 
@@ -180,15 +180,15 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.
 
-  - **faux** - *aucun>\<*
+  - **fausses** - *\<none>*
 
-  - **vrai** - **/clr**
+  - **true**  -  **/CLR**
 
-  - **Pure** - **/clr:pure**
+  - **Pur**  -  **/clr : pure**
 
-  - **Coffre-fort** - **/clr:safe**
+  - **Sécurité**  -  **/clr : safe**
 
-  - **OldSyntax** - **/clr:oldSyntax**
+  - **OldSyntax**  -  **/clr : oldSyntax**
 
     Pour plus d’informations, consultez [/clr (Compilation pour le Common Language Runtime)](/cpp/build/reference/clr-common-language-runtime-compilation).
 
@@ -198,23 +198,23 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Si `true`, indique au compilateur de préparer une image pour la *création d’images corrigeables en mémoire*. Ce paramètre vérifie que la première instruction de chaque fonction utilise deux octets, comme cela est requis pour la création d’images corrigeables en mémoire.
 
-   Pour plus d’informations, voir [/hotpatch (Créer l’image hotpatchable)](/cpp/build/reference/hotpatch-create-hotpatchable-image).
+   Pour plus d’informations, consultez [/hotpatch (créer une image corrigeable en mémoire)](/cpp/build/reference/hotpatch-create-hotpatchable-image).
 
 - **DebugInformationFormat**
 
    Paramètre de chaîne facultatif.
 
-   Sélectionne le type d’informations de débogage créées pour votre programme et si ces informations sont conservées dans des fichiers objet *(.obj)* ou dans une base de données de programme (PDB).
+   Sélectionne le type d’informations de débogage créées pour votre programme et indique si ces informations sont conservées dans des fichiers objets (*. obj*) ou dans une base de données de programme (PDB).
 
    Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.
 
-  - **OldStyle** - **/Z7**
+  - **Ancien style**  -  **/Z7**
 
-  - **ProgramDatabase** - **/Zi**
+  - **ProgramDatabase**  -  **/Zi**
 
-  - **EditAndContinue** - **/ZI**
+  - **EditAndContinue**  -  **/Zi**
 
-    Pour plus d’informations, voir [/Z7, /Zi, /ZI (Format d’information Debug)](/cpp/build/reference/z7-zi-zi-debug-information-format).
+    Pour plus d’informations, consultez [/Z7,/Zi,/ZI (format des informations de débogage)](/cpp/build/reference/z7-zi-zi-debug-information-format).
 
 - **DisableLanguageExtensions**
 
@@ -222,7 +222,7 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Si **true**, indique au compilateur d’émettre une erreur pour les constructions de langage qui ne sont compatibles ni avec ANSI C ni avec ANSI C++.
 
-   Pour plus d’informations, voir l’option **/Za** dans [/Za, /Ze (Extensions de langue de désactivation)](/cpp/build/reference/za-ze-disable-language-extensions).
+   Pour plus d’informations, consultez l’option **/za** dans [/za,/Ze (désactiver les extensions de langage)](/cpp/build/reference/za-ze-disable-language-extensions).
 
 - **DisableSpecificWarnings**
 
@@ -230,7 +230,7 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Désactive les numéros d’avertissement spécifiés dans une liste séparée par des points-virgules.
 
-   Pour plus d’informations, voir l’option `/wd` en [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (niveau d’avertissement)](/cpp/build/reference/compiler-option-warning-level).
+   Pour plus d’informations, consultez l' `/wd` option dans [/W,/W0,/W1,/W2,/W3,/W4,/W1,/W2,/W3,/W4,/Wall,/WD,/we,/WO,/WV,/WX (niveau d’avertissement)](/cpp/build/reference/compiler-option-warning-level).
 
 - **EnableEnhancedInstructionSet**
 
@@ -240,9 +240,9 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.
 
-  - **StreamingSIMDExtensions** - **/arch:SSE**
+  - **StreamingSIMDExtensions**  -  **/arch : SSE**
 
-  - **StreamingSIMDExtensions2** - **/arch:SSE2**
+  - **StreamingSIMDExtensions2**  -  **/arch : SSE2**
 
     Pour plus d’informations, consultez l’article [/arch (x86)](/cpp/build/reference/arch-x86).
 
@@ -252,7 +252,7 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Si `true`, prend en charge la sécurité des fibres pour les données allouées en utilisant un stockage local des threads de type statique, autrement dit les données allouées en utilisant `__declspec(thread)`.
 
-   Pour plus d’informations, voir [/GT (Support fibre-safe thread-local stockage)](/cpp/build/reference/gt-support-fiber-safe-thread-local-storage).
+   Pour plus d’informations, consultez [/gt (prendre en charge le stockage local des threads avec fibres sécurisées)](/cpp/build/reference/gt-support-fiber-safe-thread-local-storage).
 
 - **EnablePREfast**
 
@@ -260,9 +260,9 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Si `true`, active l’analyse du code.
 
-   Pour plus d’informations, voir [/analyser (analyse du code)](/cpp/build/reference/analyze-code-analysis).
+   Pour plus d’informations, consultez [/Analyze (analyse du code)](/cpp/build/reference/analyze-code-analysis).
 
-- **ErreurReporting**
+- **Errorreporting (**
 
    Paramètre de chaîne facultatif.
 
@@ -270,15 +270,15 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.
 
-  - **Aucun** - **/erreurReport:aucun**
+  - **Aucun**  -  **/errorreport : aucun**
 
-  - **Prompt** - **/erreurReport:prompt**
+  - **Invite**  -  **/errorreport : invite**
 
-  - **File d’attente** - **/erreurReport:file d’attente**
+  - **File d’attente**  -  **/errorreport : queue**
 
-  - **Envoyer** - **/errorReport:envoyer**
+  - **Envoyer**  -  **/errorreport : envoyer**
 
-    Pour plus d’informations, voir [/erreurReport (Rapport erreurs de compilateur interne)](/cpp/build/reference/errorreport-report-internal-compiler-errors).
+    Pour plus d’informations, consultez [/errorreport (signaler les erreurs internes du compilateur)](/cpp/build/reference/errorreport-report-internal-compiler-errors).
 
 - **ExceptionHandling**
 
@@ -288,15 +288,15 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.
 
-  - **faux** - *aucun>\<*
+  - **fausses** - *\<none>*
 
-  - **Async** - **/EHa**
+  - **Asynchrone**  -  **/EHa**
 
-  - **Synchronisez** - **/EHsc**
+  - **Synchronisation**  -  **/EHsc**
 
-  - **SyncCThrow** - **/EHs**
+  - **SyncCThrow**  -  **/EHS**
 
-    Pour plus d’informations, voir [/EH (modèle de manutention d’exception)](/cpp/build/reference/eh-exception-handling-model).
+    Pour plus d’informations, consultez [/Eh (modèle de gestion des exceptions)](/cpp/build/reference/eh-exception-handling-model).
 
 - **ExpandAttributedSource**
 
@@ -304,7 +304,7 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Si `true`, crée un fichier listing dont les attributs développés sont injectés dans le fichier source.
 
-   Pour plus d’informations, voir [/Fx (Merge code injecté)](/cpp/build/reference/fx-merge-injected-code).
+   Pour plus d’informations, consultez [/FX (fusionner le code injecté)](/cpp/build/reference/fx-merge-injected-code).
 
 - **FavorSizeOrSpeed**
 
@@ -314,13 +314,13 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.
 
-  - **Ni** - *aucun>\<*
+  - **SP5** - *\<none>*
 
-  - **Taille** - **/Os**
+  - **Taille**  -  **/OS**
 
-  - **Vitesse** - **/Ot**
+  - **Vitesse**  -  **/OT**
 
-    Pour plus d’informations, voir [/Os, /Ot (Favor petit code, favoriser le code rapide)](/cpp/build/reference/os-ot-favor-small-code-favor-fast-code).
+    Pour plus d’informations, consultez [/OS,/OT (favoriser la taille du code, favoriser la rapidité du code)](/cpp/build/reference/os-ot-favor-small-code-favor-fast-code).
 
 - **FloatingPointExceptions**
 
@@ -328,7 +328,7 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Si `true`, active le modèle de virgule flottante fiable. Des exceptions sont levées dès leur déclenchement.
 
-   Pour plus d’informations, voir le /**fp: sauf** option en [/fp (Spécifier le comportement à point flottant)](/cpp/build/reference/fp-specify-floating-point-behavior).
+   Pour plus d’informations, consultez l’option/**FP : except** dans [/FP (spécifier le comportement de virgule flottante)](/cpp/build/reference/fp-specify-floating-point-behavior).
 
 - **FloatingPointModel**
 
@@ -338,13 +338,13 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.
 
-  - **Précis** - **/fp:précis**
+  - **Précis**  -  **/FP : precise**
 
-  - **Strict** - **/fp:strict**
+  - **Strict**  -  **/FP : strict**
 
-  - **Rapide** - **/fp:rapide**
+  - **Rapide**  -  **/FP : Fast**
 
-    Pour plus d’informations, voir [/fp (Spécifier le comportement à point flottant)](/cpp/build/reference/fp-specify-floating-point-behavior).
+    Pour plus d’informations, consultez [/FP (spécifier le comportement de virgule flottante)](/cpp/build/reference/fp-specify-floating-point-behavior).
 
 - **ForceConformanceInForLoopScope**
 
@@ -352,7 +352,7 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Si `true`, implémente un comportement C++ standard dans les boucles [for](/cpp/cpp/for-statement-cpp) utilisant les extensions Microsoft ([/Ze](/cpp/build/reference/za-ze-disable-language-extensions)).
 
-   Pour plus d’informations, voir [/Zc:forScope (Force conformance in for loop scope)](/cpp/build/reference/zc-forscope-force-conformance-in-for-loop-scope).
+   Pour plus d’informations, consultez [/Zc : forScope (conformité forcée dans la portée de la boucle for)](/cpp/build/reference/zc-forscope-force-conformance-in-for-loop-scope).
 
 - **ForcedIncludeFiles**
 
@@ -360,15 +360,15 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Entraîne le traitement d’un ou de plusieurs fichiers d’en-tête spécifiés par le préprocesseur.
 
-   Pour plus d’informations, voir [/FI (Nom forcé inclure fichier)](/cpp/build/reference/fi-name-forced-include-file).
+   Pour plus d’informations, consultez [/fi (nom du fichier include forcé)](/cpp/build/reference/fi-name-forced-include-file).
 
 - **ForcedUsingFiles**
 
-   Paramètre **de chaîne en** option.
+   Paramètre **String []** facultatif.
 
    Entraîne le traitement d’un ou de plusieurs fichiers **#using** spécifiés par le préprocesseur.
 
-   Pour plus d’informations, voir [/FU (Nom forcé #using fichier)](/cpp/build/reference/fu-name-forced-hash-using-file).
+   Pour plus d’informations, consultez [/Fu (nommer le fichier #using forcé)](/cpp/build/reference/fu-name-forced-hash-using-file).
 
 - **FunctionLevelLinking**
 
@@ -376,15 +376,15 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Si `true`, permet au compilateur d’empaqueter des fonctions individuelles sous la forme de fonctions empaquetées (COMDATs).
 
-   Pour plus d’informations, voir [/Gy (Activer le lien au niveau de la fonction)](/cpp/build/reference/gy-enable-function-level-linking).
+   Pour plus d’informations, consultez [/Gy (activer la liaison au niveau des fonctions)](/cpp/build/reference/gy-enable-function-level-linking).
 
 - **GenerateXMLDocumentationFiles**
 
    Paramètre `Boolean` facultatif.
 
-   Si, `true`provoque le compilateur de traiter les commentaires de documentation dans les fichiers de code source et de créer un fichier *.xdc* pour chaque fichier de code source qui a des commentaires de documentation.
+   Si `true` , force le compilateur à traiter les commentaires de documentation dans les fichiers de code source et à créer un fichier *. XDC* pour chaque fichier de code source qui contient des commentaires de documentation.
 
-   Pour plus d’informations, voir [/doc (commentaires de documentation des processus) (C/C)](/cpp/build/reference/doc-process-documentation-comments-c-cpp). Consultez également le paramètre **XMLDocumentationFileName** dans ce tableau.
+   Pour plus d’informations, consultez [/doc (traiter les commentaires de documentation) (C/C++)](/cpp/build/reference/doc-process-documentation-comments-c-cpp). Consultez également le paramètre **XMLDocumentationFileName** dans ce tableau.
 
 - **IgnoreStandardIncludePath**
 
@@ -392,25 +392,25 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Si `true`, empêche le compilateur de rechercher des fichiers include dans les répertoires spécifiés dans les variables d’environnement PATH et INCLUDE.
 
-   Pour plus d’informations, voir [/X (Ignorer la norme inclure les chemins)](/cpp/build/reference/x-ignore-standard-include-paths).
+   Pour plus d’informations, consultez [/x (ignorer les chemins d’accès Include standard)](/cpp/build/reference/x-ignore-standard-include-paths).
 
 - **InlineFunctionExpansion**
 
-   Paramètre **de chaîne** facultatif.
+   Paramètre de **chaîne** facultatif.
 
    Spécifie le niveau d’expansion des fonctions inline pour la génération.
 
    Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.
 
-  - **Default** - *Défaut\<aucun>*
+  - **Valeurs** - *\<none>*
 
-  - **Désactivé** - **/Ob0**
+  - **Désactivé**  -  **/Ob0**
 
-  - **SeulementExplicitInline** - **/Ob1**
+  - **OnlyExplicitInline**  -  **/Ob1**
 
-  - **AnySuitable** - **/Ob2**
+  - **AnySuitable**  -  **/OB2**
 
-    Pour plus d’informations, voir [/Ob (Extension de la fonction Inline)](/cpp/build/reference/ob-inline-function-expansion).
+    Pour plus d’informations, consultez [/ob (expansion des fonctions inline)](/cpp/build/reference/ob-inline-function-expansion).
 
 - **IntrinsicFunctions**
 
@@ -418,7 +418,7 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Si `true`, remplace certains appels de fonction par une forme intrinsèque ou par d’autres formes spéciales de la fonction qui contribuent à une exécution plus rapide de votre application.
 
-   Pour plus d’informations, voir [/Oi (Générer des fonctions intrinsèques)](/cpp/build/reference/oi-generate-intrinsic-functions).
+   Pour plus d’informations, consultez [/Oi (générer des fonctions intrinsèques)](/cpp/build/reference/oi-generate-intrinsic-functions).
 
 - **MinimalRebuild**
 
@@ -426,7 +426,7 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Si `true`, permet une régénération minimale, qui détermine si les fichiers sources C++ qui incluent des définitions de classe C++ modifiées (stockées dans des fichiers d’en-tête [.h]) doivent être recompilés.
 
-   Pour plus d’informations, voir [/Gm (Activer la reconstruction minimale)](/cpp/build/reference/gm-enable-minimal-rebuild).
+   Pour plus d’informations, consultez [/GM (activer la régénération minimale)](/cpp/build/reference/gm-enable-minimal-rebuild).
 
 - **MultiProcessorCompilation**
 
@@ -434,11 +434,11 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Si `true`, utilise plusieurs processeurs pour procéder à la compilation. Ce paramètre crée un processus pour chaque processeur effectif de votre ordinateur.
 
-   Pour plus d’informations, voir [/MP (Construire avec plusieurs processus)](/cpp/build/reference/mp-build-with-multiple-processes). Consultez également le paramètre **ProcessorNumber** dans ce tableau.
+   Pour plus d’informations, consultez [/MP (générer avec plusieurs processus)](/cpp/build/reference/mp-build-with-multiple-processes). Consultez également le paramètre **ProcessorNumber** dans ce tableau.
 
 - **ObjectFileName**
 
-   Paramètre **de chaîne** facultatif.
+   Paramètre de **chaîne** facultatif.
 
    Spécifie un nom de fichier objet (.obj) ou un répertoire à utiliser à la place de la valeur par défaut.
 
@@ -446,7 +446,7 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
 - **ObjectFiles**
 
-   Paramètre **de chaîne en** option.
+   Paramètre **String []** facultatif.
 
    Liste des fichiers objets.
 
@@ -454,9 +454,9 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Paramètre `Boolean` facultatif.
 
-   Si `true`, omet le nom par défaut de la bibliothèque C run-time du fichier objet *(.obj).* Par défaut, le compilateur met le nom de la bibliothèque dans le fichier *.obj* pour diriger le lien vers la bibliothèque correcte.
+   Si `true` , omet le nom par défaut de la bibliothèque Runtime C à partir du fichier objet (*. obj*). Par défaut, le compilateur place le nom de la bibliothèque dans le fichier *. obj* pour diriger l’éditeur de liens vers la bibliothèque correcte.
 
-   Pour plus d’informations, voir [/Zl (Omit nom de bibliothèque par défaut)](/cpp/build/reference/zl-omit-default-library-name).
+   Pour plus d’informations, consultez [/zl (omettre le nom de la bibliothèque par défaut)](/cpp/build/reference/zl-omit-default-library-name).
 
 - **OmitFramePointers**
 
@@ -464,7 +464,7 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Si `true`, empêche la création des pointeurs de frame sur la pile des appels.
 
-   Pour plus d’informations, voir [/Oy (Omission Frame-pointer)](/cpp/build/reference/oy-frame-pointer-omission).
+   Pour plus d’informations, consultez [/Oy (omission du pointeur de frame)](/cpp/build/reference/oy-frame-pointer-omission).
 
 - **OpenMPSupport**
 
@@ -472,57 +472,57 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Si `true`, le compilateur traite les clauses et directives OpenMP.
 
-   Pour plus d’informations, voir [/openmp (Activer le support OpenMP 2.0)](/cpp/build/reference/openmp-enable-openmp-2-0-support).
+   Pour plus d’informations, consultez [/openmp (activer la prise en charge d’openmp 2,0)](/cpp/build/reference/openmp-enable-openmp-2-0-support).
 
 - **Optimisation**
 
-   Paramètre **de chaîne** facultatif.
+   Paramètre de **chaîne** facultatif.
 
    Spécifie différentes optimisations de code en termes de vitesse et de taille.
 
    Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.
 
-  - **Désactivé** - **/Od**
+  - **Désactivé**  -  **/OD**
 
-  - **MinSpace** - **/O1**
+  - **MinSpace**  -  **/O1**
 
-  - **MaxSpeed** - **/O2**
+  - **Maxspeed**  -  **/O2**
 
-  - **Plein** - **/Ox**
+  - **Plein**  -  **/Ox**
 
     Pour plus d’informations, consultez [/O, options (Optimiser le code)](/cpp/build/reference/o-options-optimize-code).
 
 - **PrecompiledHeader**
 
-   Paramètre **de chaîne** facultatif.
+   Paramètre de **chaîne** facultatif.
 
-   Créez ou utilisez un fichier en tête précalculé *(.pch)* pendant la construction.
+   Créez ou utilisez un fichier d’en-tête précompilé (*. pch*) au cours de la génération.
 
    Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.
 
-  - **NotUing** - *\<aucun>*
+  - **NotUsing** - *\<none>*
 
-  - **Créer** - **/Yc**
+  - **Créer**  -  **/Yc**
 
-  - **Utiliser** - **/Yu**
+  - **Utilisez**  -  **/Yu**
 
-    Pour plus d’informations, voir [/Yc (Créer un fichier d’en-tête précompilé)](/cpp/build/reference/yc-create-precompiled-header-file) et [/Yu (Utilisez le fichier d’en-tête précompilé)](/cpp/build/reference/yu-use-precompiled-header-file). Consultez également les paramètres **PrecompiledHeaderFile** et **PrecompiledHeaderOutputFile** dans ce tableau.
+    Pour plus d’informations, consultez [/Yc (créer un fichier d’en-tête précompilé)](/cpp/build/reference/yc-create-precompiled-header-file) et [/Yu (utiliser un fichier d’en-tête précompilé)](/cpp/build/reference/yu-use-precompiled-header-file). Consultez également les paramètres **PrecompiledHeaderFile** et **PrecompiledHeaderOutputFile** dans ce tableau.
 
 - **PrecompiledHeaderFile**
 
-   Paramètre **de chaîne** facultatif.
+   Paramètre de **chaîne** facultatif.
 
    Spécifie un nom de fichier d’en-tête précompilé à créer ou utiliser.
 
-   Pour plus d’informations, voir [/Yc (Créer un fichier d’en-tête précompilé)](/cpp/build/reference/yc-create-precompiled-header-file) et [/Yu (Utilisez le fichier d’en-tête précompilé)](/cpp/build/reference/yu-use-precompiled-header-file).
+   Pour plus d’informations, consultez [/Yc (créer un fichier d’en-tête précompilé)](/cpp/build/reference/yc-create-precompiled-header-file) et [/Yu (utiliser un fichier d’en-tête précompilé)](/cpp/build/reference/yu-use-precompiled-header-file).
 
 - **PrecompiledHeaderOutputFile**
 
-   Paramètre **de chaîne** facultatif.
+   Paramètre de **chaîne** facultatif.
 
    Spécifie un nom de chemin d’accès pour un en-tête précompilé au lieu d’utiliser le nom du chemin d’accès par défaut.
 
-   Pour plus d’informations, voir [/Fp (Nom .pch fichier)](/cpp/build/reference/fp-name-dot-pch-file).
+   Pour plus d’informations, consultez [/FP (nom de fichier. pch)](/cpp/build/reference/fp-name-dot-pch-file).
 
 - **PreprocessKeepComments**
 
@@ -530,7 +530,7 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Si `true`, conserve les commentaires pendant le prétraitement.
 
-   Pour plus d’informations, voir [/C (Préserver les commentaires pendant le prétraitement)](/cpp/build/reference/c-preserve-comments-during-preprocessing).
+   Pour plus d’informations, consultez [/c (conserver les commentaires pendant le prétraitement)](/cpp/build/reference/c-preserve-comments-during-preprocessing).
 
 - **PreprocessorDefinitions**
 
@@ -538,7 +538,7 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Définit un symbole de prétraitement pour votre fichier source.
 
-   Pour plus d’informations, voir [/D (définitions préprocesseurs)](/cpp/build/reference/d-preprocessor-definitions).
+   Pour plus d’informations, consultez [/d (définitions de préprocesseur)](/cpp/build/reference/d-preprocessor-definitions).
 
 - **PreprocessOutput**
 
@@ -552,7 +552,7 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Spécifie le nom du fichier de sortie dans lequel le paramètre **PreprocessToFile** écrit la sortie prétraitée.
 
-   Pour plus d’informations, voir [/Fi (Nom de fichier de sortie de préprocessus)](/cpp/build/reference/fi-preprocess-output-file-name).
+   Pour plus d’informations, consultez [/fi (prétraiter le nom du fichier de sortie)](/cpp/build/reference/fi-preprocess-output-file-name).
 
 - **PreprocessSuppressLineNumbers**
 
@@ -560,7 +560,7 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Si `true`, prétraite les fichiers sources C et C++ et copie les fichiers prétraités sur le périphérique de sortie standard.
 
-   Pour plus d’informations, voir [/EP (Preprocess to stdout sans directives #line)](/cpp/build/reference/ep-preprocess-to-stdout-without-hash-line-directives).
+   Pour plus d’informations, consultez [/EP (Prétraiter dans stdout sans directives #line)](/cpp/build/reference/ep-preprocess-to-stdout-without-hash-line-directives).
 
 - **PreprocessToFile**
 
@@ -568,7 +568,7 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Si `true`, prétraite les fichiers sources C et C++ et copie la sortie prétraitée dans un fichier.
 
-   Pour plus d’informations, voir [/P (Préprocesser à un fichier)](/cpp/build/reference/p-preprocess-to-a-file).
+   Pour plus d’informations, consultez [/p (Prétraiter dans un fichier)](/cpp/build/reference/p-preprocess-to-a-file).
 
 - **ProcessorNumber**
 
@@ -582,7 +582,7 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Spécifie un nom pour le fichier de base de données du programme (PDB).
 
-   Pour plus d’informations, voir [/Fd (Nom de fichier de base de données du programme)](/cpp/build/reference/fd-program-database-file-name).
+   Pour plus d’informations, consultez [/FD (nom de fichier de la base de données du programme)](/cpp/build/reference/fd-program-database-file-name).
 
 - **RuntimeLibrary**
 
@@ -592,15 +592,15 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.
 
-  - **MultiThreaded** - **/MT**
+  - **Multithread**  -  **/MT**
 
-  - **MultiThreadedDebug** - **/MTd**
+  - **MultiThreadedDebug**  -  **/MTD**
 
-  - **MultiThreadedDLL** - **/MD**
+  - **MultiThreadedDLL**  -  **/MD**
 
-  - **MultiThreadedDebugDLL** - **/MDd**
+  - **MultiThreadedDebugDLL**  -  **/MDD**
 
-    Pour plus d’informations, voir [/MD, /MT, /LD (Utilisez la bibliothèque de temps d’exécution)](/cpp/build/reference/md-mt-ld-use-run-time-library).
+    Pour plus d’informations, consultez [/MD,/MT,/LD (utiliser la bibliothèque Runtime)](/cpp/build/reference/md-mt-ld-use-run-time-library).
 
 - **RuntimeTypeInfo**
 
@@ -608,7 +608,7 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Si `true`, ajoute le code pour vérifier les types d’objet C++ à l’exécution (informations de type au moment de l’exécution).
 
-   Pour plus d’informations, voir [/GR (Activez les informations de type temps d’exécution)](/cpp/build/reference/gr-enable-run-time-type-information).
+   Pour plus d’informations, consultez [/gr (activer les informations de type au moment de l’exécution)](/cpp/build/reference/gr-enable-run-time-type-information).
 
 - **ShowIncludes**
 
@@ -616,7 +616,7 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Si `true`, le compilateur sort la liste des fichiers include.
 
-   Pour plus d’informations, voir [/showIncludes (Liste inclure les fichiers)](/cpp/build/reference/showincludes-list-include-files).
+   Pour plus d’informations, consultez [/showIncludes (liste des fichiers Include)](/cpp/build/reference/showincludes-list-include-files).
 
 - **SmallerTypeCheck**
 
@@ -624,9 +624,9 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Si `true`, signale une erreur d’exécution si une valeur est affectée à un type de données inférieur et provoque une perte de données.
 
-   Pour plus d’informations, voir l’option **/RTCc** dans [/RTC (Vérifications d’erreur à durée de course)](/cpp/build/reference/rtc-run-time-error-checks).
+   Pour plus d’informations, consultez l’option **/RTCc** dans [/RTC (vérifications des erreurs au moment de l’exécution)](/cpp/build/reference/rtc-run-time-error-checks).
 
-- **récentes**
+- **Sources**
 
    Paramètre `ITaskItem[]` requis.
 
@@ -638,7 +638,7 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Si `true`, permet au compilateur de créer une copie de chaînes identiques dans l’image du programme.
 
-   Pour plus d’informations, voir [/GF (Éliminer les chaînes en double)](/cpp/build/reference/gf-eliminate-duplicate-strings).
+   Pour plus d’informations, consultez [/GF (éliminer les chaînes dupliquées)](/cpp/build/reference/gf-eliminate-duplicate-strings).
 
 - **StructMemberAlignment**
 
@@ -648,19 +648,19 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.
 
-  - **Défaut** - **/Zp1**
+  - **Par défaut**  -  **/Zp1**
 
-  - **1Byte** - **/Zp1**
+  - **1Byte**  -  **/Zp1**
 
-  - **2Bytes** - **/Zp2**
+  - **2Bytes**  -  **/ZP2**
 
-  - **4Bytes** - **/Zp4**
+  - **4Bytes**  -  **/Zp4**
 
-  - **8Bytes** - **/Zp8**
+  - **8Bytes**  -  **/Zp8**
 
-  - **16Bytes** - **/Zp16**
+  - **16Bytes**  -  **/Zp16**
 
-    Pour plus d’informations, voir [/Zp (alignement des membres Struct)](/cpp/build/reference/zp-struct-member-alignment).
+    Pour plus d’informations, consultez [/Zp (alignement des membres de la structure)](/cpp/build/reference/zp-struct-member-alignment).
 
 - **SuppressStartupBanner**
 
@@ -668,7 +668,7 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Si la valeur est `true`, empêche l'affichage du message de copyright et de numéro de version quand la tâche démarre.
 
-   Pour plus d’informations, voir [/nologo (Supprimer la bannière startup) (C/C)](/cpp/build/reference/nologo-suppress-startup-banner-c-cpp).
+   Pour plus d’informations, consultez [/nologo (supprimer la bannière de démarrage) (C/C++)](/cpp/build/reference/nologo-suppress-startup-banner-c-cpp).
 
 - **TrackerLogDirectory**
 
@@ -680,11 +680,11 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
 - **TreatSpecificWarningsAsErrors**
 
-   Paramètre **de chaîne en** option.
+   Paramètre **String []** facultatif.
 
    Traite la liste spécifiée des avertissements du compilateur comme des erreurs.
 
-   Pour plus d’informations, voir **l’option /nous** `n` en [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (niveau d’avertissement)](/cpp/build/reference/compiler-option-warning-level).
+   Pour plus d’informations, consultez l’option **/We** `n` dans [/W,/W0,/W1,/W2,/W3,/W4,/W1,/W2,/W3,/W4,/Wall,/WD,/we,/WO,/WV,/WX (niveau d’avertissement)](/cpp/build/reference/compiler-option-warning-level).
 
 - **TreatWarningAsError**
 
@@ -692,7 +692,7 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Si `true`, considère tous les avertissements du compilateur comme des erreurs.
 
-   Pour plus d’informations, voir **/WX** option en [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (niveau d’avertissement)](/cpp/build/reference/compiler-option-warning-level).
+   Pour plus d’informations, consultez l’option **/WX** dans [/w,/W0,/W1,/W2,/W3,/W4,/W1,/W2,/W3,/W4,/Wall,/WD,/we,/WO,/WV,/WX (niveau d’avertissement)](/cpp/build/reference/compiler-option-warning-level).
 
 - **TreatWChar_tAsBuiltInType**
 
@@ -700,7 +700,7 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Si `true`, considère le type `wchar_t` comme un type natif.
 
-   Pour plus d’informations, voir [/Zc:wchar_t (wchar_t est de type natif)](/cpp/build/reference/zc-wchar-t-wchar-t-is-native-type).
+   Pour plus d’informations, consultez [/Zc : wchar_t (wchar_t est un type natif)](/cpp/build/reference/zc-wchar-t-wchar-t-is-native-type).
 
 - **UndefineAllPreprocessorDefinitions**
 
@@ -708,7 +708,7 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Si `true`, annule la définition des symboles propres à Microsoft que le compilateur définit.
 
-   Pour plus d’informations, voir l’option **/u** en [/U, /u (symboles indéfinis)](/cpp/build/reference/u-u-undefine-symbols).
+   Pour plus d’informations, consultez l’option **/u** dans [/u,/u (annuler la définition des symboles)](/cpp/build/reference/u-u-undefine-symbols).
 
 - **UndefinePreprocessorDefinitions**
 
@@ -716,7 +716,7 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Indique une liste d’un ou de plusieurs symboles de préprocesseur dont la définition va être annulée.
 
-   Pour plus d’informations, voir **/U** option en [/U, /u (Symboles indéfinis)](/cpp/build/reference/u-u-undefine-symbols).
+   Pour plus d’informations, consultez l’option **/u** dans [/u,/u (annuler la définition des symboles)](/cpp/build/reference/u-u-undefine-symbols).
 
 - **UseFullPaths**
 
@@ -724,7 +724,7 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Si `true`, affiche le chemin d’accès complet des fichiers de code source transmis au compilateur dans les diagnostics.
 
-   Pour plus d’informations, voir [/FC (Voie complète du fichier de code source dans les diagnostics)](/cpp/build/reference/fc-full-path-of-source-code-file-in-diagnostics).
+   Pour plus d’informations, consultez [/FC (chemin d’accès complet du fichier de code source dans les Diagnostics)](/cpp/build/reference/fc-full-path-of-source-code-file-in-diagnostics).
 
 - **UseUnicodeForAssemblerListing**
 
@@ -732,7 +732,7 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Si `true`, entraîne la création du fichier de sortie au format UTF-8.
 
-   Pour plus d’informations, voir l’option **/FAu** en [/FA, /Fa (Fichier d’inscription)](/cpp/build/reference/fa-fa-listing-file).
+   Pour plus d’informations, consultez l’option **/FAu** dans [/FA,/FA (fichier listing)](/cpp/build/reference/fa-fa-listing-file).
 
 - **WarningLevel**
 
@@ -742,19 +742,19 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.
 
-  - **TurnOffAllWarnings** - **/W0**
+  - **TurnOffAllWarnings**  -  **/W0**
 
-  - **Niveau1** - **/W1**
+  - **Niveau1**  -  **/W1**
 
-  - **Niveau2** - **/W2**
+  - **D’isolement2**  -  **/W2**
 
-  - **Niveau3** - **/W3**
+  - **Niveau3**  -  **/W3**
 
-  - **Niveau4** - **/W4**
+  - **Level4**  -  **/W4**
 
-  - **EnableAllWarnings** - **/Wall**
+  - **Activer**  -  **/Wall**
 
-    Pour plus d’informations, voir **l’option /W**_n_ en [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (niveau d’avertissement)](/cpp/build/reference/compiler-option-warning-level).
+    Pour plus d’informations, consultez l’option **/w**_n_ dans [/w,/W0,/W1,/W2,/W3,/W4,/W1,/W2,/W3,/W4,/Wall,/WD,/we,/WO,/WV,/WX (niveau d’avertissement)](/cpp/build/reference/compiler-option-warning-level).
 
 - **WholeProgramOptimization**
 
@@ -762,7 +762,7 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Si `true`, active l’optimisation de l’ensemble du programme.
 
-   Pour plus d’informations, voir [/GL (optimisation du programme complet)](/cpp/build/reference/gl-whole-program-optimization).
+   Pour plus d’informations, consultez [/GL (optimisation de l’ensemble du programme)](/cpp/build/reference/gl-whole-program-optimization).
 
 - **XMLDocumentationFileName**
 
@@ -770,7 +770,7 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Spécifie le nom des fichiers de documentation XML générés. Ce paramètre peut être un nom de fichier ou de répertoire.
 
-   Pour plus d’informations, voir l’argument `name` dans [/doc (Commentaires de documentation de processus) (C/C)](/cpp/build/reference/doc-process-documentation-comments-c-cpp). Consultez également le paramètre **GenerateXMLDocumentationFiles** dans ce tableau.
+   Pour plus d’informations, consultez l' `name` argument dans [/doc (traiter les commentaires de documentation) (C/C++)](/cpp/build/reference/doc-process-documentation-comments-c-cpp). Consultez également le paramètre **GenerateXMLDocumentationFiles** dans ce tableau.
 
 - **MinimalRebuildFromTracking**
 
@@ -784,7 +784,7 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Spécifie un tableau des éléments qui représentent les *journaux de suivi des fichiers lus*.
 
-   Un journal de suivi de fichier de lecture (*.tlog*) contient les noms des fichiers d’entrée qui sont lus par une tâche, et est utilisé par le système de construction de projet pour soutenir les constructions incrémentielles. Pour plus d’informations, consultez les paramètres **TrackerLogDirectory** et **TrackFileAccess** dans ce tableau.
+   Un journal de suivi des fichiers lus (*. TLog*) contient les noms des fichiers d’entrée qui sont lus par une tâche et est utilisé par le système de génération de projet pour prendre en charge les builds incrémentielles. Pour plus d’informations, consultez les paramètres **TrackerLogDirectory** et **TrackFileAccess** dans ce tableau.
 
 - **TLogWriteFiles**
 
@@ -792,7 +792,7 @@ Enveloppe l’outil de compilation Microsoft CMD, *cl.exe*. Le compilateur produ
 
    Spécifie un tableau des éléments qui représentent les *journaux de suivi des fichiers écrits*.
 
-   Un journal de suivi de fichier de rédaction (*.tlog*) contient les noms des fichiers de sortie qui sont écrits par une tâche, et est utilisé par le système de construction de projet pour soutenir les constructions incrémentielles. Pour plus d’informations, consultez les paramètres **TrackerLogDirectory** et **TrackFileAccess** dans ce tableau.
+   Un journal de suivi des fichiers d’écriture (*. TLog*) contient les noms des fichiers de sortie écrits par une tâche, et est utilisé par le système de génération de projet pour prendre en charge les builds incrémentielles. Pour plus d’informations, consultez les paramètres **TrackerLogDirectory** et **TrackFileAccess** dans ce tableau.
 
 - **TrackFileAccess**
 

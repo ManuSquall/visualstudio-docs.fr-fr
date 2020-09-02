@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7c7f50a3117daeee0ec1727adbcdcc5ca710be36
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62960105"
 ---
 # <a name="zoom-control-utilization-view"></a>Contrôle Zoom (vue Utilisation)
@@ -25,4 +25,4 @@ Le contrôle de zoom vous permet de faire un zoom avant sur le graphique d’uti
  Vous pouvez faire glisser le pointeur de la souris dans le graphique d’utilisation du processeur ou le graphique d’activité GPU pour créer une zone en surbrillance. Quand vous relâchez le bouton de la souris, l’affichage effectue un zoom avant sur la plage sélectionnée.
 
 ## <a name="see-also"></a>Voir aussi
-- [Vue d’utilisation](../profiling/utilization-view.md)
+- [Vue utilisation](../profiling/utilization-view.md)

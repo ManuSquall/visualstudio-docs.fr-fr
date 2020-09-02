@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f02dcc5f38bf8eb4acc702c5d8a1ee466a6a4a71
-ms.sourcegitcommit: 9179c33a78c2ac690ce908d7c73eef50b6e367f0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87390260"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Guide pratique pour ajouter ou supprimer des références à l’aide du Gestionnaire de références
@@ -40,7 +40,7 @@ La boîte de dialogue Gestionnaire de références affiche différentes catégor
 
 - **Com** répertorie tous les composants COM pouvant être référencés
 
-- **Projet**
+- **Projets**
 
 - **Projets partagés**
 
@@ -208,7 +208,7 @@ Lors d’une référence de fichier à un WinMD, la disposition attendue est que
 
 Les **assemblys**, **com**, **Windows**et **Parcourir** prennent tous en charge un onglet **récent** , qui énumère la liste des composants récemment ajoutés aux projets.
 
-## <a name="search"></a>Rechercher
+## <a name="search"></a>Recherche
 
 La barre de recherche de la boîte de dialogue Gestionnaire de références fonctionne sur l’onglet actif. Par exemple, si un utilisateur tape « System » dans la barre de recherche alors que l’onglet **Solution** est actif, la recherche ne renvoie aucun résultat à moins que la solution soit composée d’un nom de projet contenant « System ».
 

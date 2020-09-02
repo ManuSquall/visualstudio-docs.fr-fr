@@ -1,5 +1,5 @@
 ---
-title: SupportsMasterPage, élément (modèles Visual Studio) | Microsoft Docs
+title: Élément SupportsMasterPage (modèles Visual Studio) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,19 +14,19 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 051bde61132d286c3941a12c2e970aa2019fc0b7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160479"
 ---
 # <a name="supportsmasterpage-element-visual-studio-templates"></a>SupportsMasterPage, élément (modèles Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Spécifie si l’ou non le **sélectionner la Page maître** case à cocher est activée sur le **ajouter un nouvel élément** boîte de dialogue.  
+Spécifie si la case à cocher **Sélectionner la page maître** est activée ou non dans la boîte de dialogue **Ajouter un nouvel élément** .  
   
  \<VSTemplate>  
- \<TemplateData >  
+ \<TemplateData>  
  \<SupportsMasterPage>  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -48,20 +48,20 @@ Spécifie si l’ou non le **sélectionner la Page maître** case à cocher est 
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Spécifie les données qui définit la catégorie du modèle et comment il s’affiche dans le **nouveau projet** ou **un nouvel élément** boîte de dialogue.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Spécifie les données qui classent le modèle et définit son affichage dans la boîte de dialogue **nouveau projet** ou **nouvel élément** .|  
   
 ## <a name="text-value"></a>Valeur texte  
  Une valeur texte est requise.  
   
- Le texte doit être `true` ou `false`indiquant ou non la **sélectionner la Page maître** case à cocher est activée sur le **ajouter un nouvel élément** boîte de dialogue.  
+ Le texte doit être `true` ou `false` , indiquant si la case à cocher **Sélectionner la page maître** est activée ou non dans la boîte de dialogue **Ajouter un nouvel élément** .  
   
 ## <a name="remarks"></a>Notes  
  `SupportsMasterPage` est un élément facultatif. La valeur par défaut est `false`.  
   
- Le `SupportsMasterPage` élément est uniquement disponible pour les modèles d’élément Web.  
+ L' `SupportsMasterPage` élément est uniquement disponible pour les modèles d’élément Web.  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant illustre les métadonnées d’un projet Web qui inclut la prise en charge pour une page maître.  
+ L’exemple suivant illustre les métadonnées pour un projet Web qui prend en charge une page maître.  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Project"  

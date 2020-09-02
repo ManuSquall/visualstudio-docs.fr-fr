@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8d9c0f634ce95814ba746325e8efd67228653775
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "63008727"
 ---
 # <a name="work-with-calendar-items"></a>Utiliser des éléments de calendrier
@@ -30,15 +30,15 @@ ms.locfileid: "63008727"
 
 |Tâche|Procédure|
 |----------|---------------|
-|Créer un rendez-vous et ajouter des destinataires.|[Guide pratique pour Créer des rendez-vous par programmation](../vsto/how-to-programmatically-create-appointments.md)|
-|Supprimer une instance d’un rendez-vous périodique.|[Guide pratique pour Supprimer des rendez-vous par programmation](../vsto/how-to-programmatically-delete-appointments.md)|
-|Créer un dossier Calendrier et ajouter un élément de rendez-vous.|[Guide pratique pour Créer un calendrier personnalisé par programmation](../vsto/how-to-programmatically-create-a-custom-calendar.md)|
-|Créer une demande de réunion et l’envoyer.|[Guide pratique pour Créer par programmation une demande de réunion](../vsto/how-to-programmatically-create-a-meeting-request.md)|
+|Créer un rendez-vous et ajouter des destinataires.|[Comment : créer des rendez-vous par programmation](../vsto/how-to-programmatically-create-appointments.md)|
+|Supprimer une instance d’un rendez-vous périodique.|[Comment : supprimer des rendez-vous par programmation](../vsto/how-to-programmatically-delete-appointments.md)|
+|Créer un dossier Calendrier et ajouter un élément de rendez-vous.|[Comment : créer un calendrier personnalisé par programmation](../vsto/how-to-programmatically-create-a-custom-calendar.md)|
+|Créer une demande de réunion et l’envoyer.|[Comment : créer une demande de réunion par programmation](../vsto/how-to-programmatically-create-a-meeting-request.md)|
 
- Pour plus d’informations sur les tâches et le modèle objet Outlook, consultez [vue d’ensemble du modèle d’objet Outlook](../vsto/outlook-object-model-overview.md).
+ Pour plus d’informations sur les tâches Outlook et le modèle objet Outlook, consultez [vue d’ensemble du modèle objet Outlook](../vsto/outlook-object-model-overview.md).
 
 ## <a name="see-also"></a>Voir aussi
 - [Utiliser des éléments de contact](../vsto/working-with-contact-items.md)
-- [Travailler avec des dossiers](../vsto/working-with-folders.md)
-- [Travailler avec des éléments de messagerie](../vsto/working-with-mail-items.md)
+- [Utiliser des dossiers](../vsto/working-with-folders.md)
+- [Utiliser des éléments de messagerie](../vsto/working-with-mail-items.md)
 - [Solutions Outlook](../vsto/outlook-solutions.md)

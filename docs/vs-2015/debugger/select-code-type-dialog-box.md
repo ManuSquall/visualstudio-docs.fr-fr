@@ -1,5 +1,5 @@
 ---
-title: Sélectionnez le Type de Code, boîte de dialogue | Microsoft Docs
+title: Sélectionner le type de code, boîte de dialogue | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -26,10 +26,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 21e678df1fa3dc9ca237e9a8cb4e377fb27b0aaf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148141"
 ---
 # <a name="select-code-type-dialog-box"></a>Sélectionner le type de code, boîte de dialogue
@@ -45,4 +45,4 @@ Pour ouvrir cette boîte de dialogue, ouvrez la boîte de dialogue **Attacher au
   
 ## <a name="see-also"></a>Voir aussi  
  [Sécurité du débogueur](../debugger/debugger-security.md)   
- [S’attacher à des processus en cours d’exécution](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
+ [Joindre aux processus en cours d’exécution](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)

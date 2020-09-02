@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 21e6478bb0f02383066a2c63dad1bdaf980a0b5b
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985670"
 ---
 # <a name="outlook-solutions"></a>Outlook (solutions)
@@ -40,7 +40,7 @@ ms.locfileid: "72985670"
 ## <a name="outlook-vsto-add-in-programming-model"></a>Modèle de programmation de complément VSTO Outlook
  Lorsque vous créez un projet de complément VSTO Outlook, Visual Studio génère une classe, appelée `ThisAddIn`, qui est le fondement de votre solution. Cette classe fournit un point de départ pour l'écriture de votre code, et expose également le modèle objet d'Outlook à votre complément.
 
- Pour plus d’informations sur la classe `ThisAddIn` et d’autres fonctionnalités que vous pouvez utiliser dans un complément VSTO, consultez [compléments VSTO de programme](../vsto/programming-vsto-add-ins.md).
+ Pour plus d’informations sur la `ThisAddIn` classe et les autres fonctionnalités que vous pouvez utiliser dans un complément VSTO, consultez [compléments VSTO du programme](../vsto/programming-vsto-add-ins.md).
 
 ## <a name="automate-outlook-by-using-the-outlook-object-model"></a>Automatiser Outlook à l’aide du modèle objet Outlook
  Le modèle objet Outlook expose de nombreux types que vous pouvez utiliser pour automatiser Outlook. Ces types permettent d'écrire le code pour accomplir les tâches courantes :
@@ -55,7 +55,7 @@ ms.locfileid: "72985670"
 
 ## <a name="customize-the-user-interface-of-an-outlook-application"></a>Personnaliser l’interface utilisateur d’une application Outlook
 
-|Tâche|Pour plus d'informations|
+|Tâche|Informations supplémentaires|
 |----------|--------------------------|
 |Ajouter des onglets personnalisés au ruban d'un inspecteur Outlook.|[Vue d’ensemble du ruban](../vsto/ribbon-overview.md)|
 |Ajouter des groupes personnalisés à un onglet intégré d'un inspecteur Outlook.|[Comment : personnaliser un onglet intégré](../vsto/how-to-customize-a-built-in-tab.md)|

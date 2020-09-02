@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: af49535233a809006f6109449ae524611b1adc45
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645596"
 ---
 # <a name="globalizing-applications"></a>Globalisation d'applications
@@ -28,11 +28,11 @@ La globalisation est le processus de conception et de développement d’un prod
 ## <a name="in-this-section"></a>Dans cette section
  [Classes spécifiques à la culture pour les Windows Forms globales et les Web Forms](../ide/culture-specific-classes-for-global-windows-forms-and-web-forms.md) Décrit les classes qui mettent en forme des dates, des heures, des nombres, des devises et d’autres informations en fonction du paramètre de culture.
 
-## <a name="related-sections"></a>Rubriques connexes
+## <a name="related-sections"></a>Sections connexes
  [Globalisation des Windows Forms](https://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5) Fournit des liens vers des pages d’aide relatives à la globalisation des Windows Forms.
 
  [Globalisation et localisation](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d) Fournit des liens vers des pages d’aide relatives à la globalisation des pages Web Forms.
 
- [Présentation des applications internationales basées sur le .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md) Décrit les concepts essentiels relatifs au développement de logiciels pour un marché international à l’aide C#d’Visual Basic ou d’un visuel.
+ [Présentation des applications internationales basées sur le .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md) Décrit les concepts essentiels relatifs au développement de logiciels pour un marché international à l’aide de Visual Basic ou de Visual C#.
 
  [Bonnes pratiques pour développer des applications internationales](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c) fournit des informations sur la programmation pour un public international, telles que les problèmes de conception et la terminologie.

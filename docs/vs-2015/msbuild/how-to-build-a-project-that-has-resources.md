@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fb77db891e824f5f2900ef191049e65cb2c89a98
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65686514"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>Comment : générer un projet qui dispose de ressources
@@ -27,7 +27,7 @@ ms.locfileid: "65686514"
 Si vous générez les versions localisées d’un projet, tous les éléments de l’interface utilisateur doivent être séparés dans des fichiers de ressources correspondant aux différentes langues. Si le projet utilise uniquement des chaînes, les fichiers de ressources peuvent utiliser des fichiers texte. Vous pouvez également utiliser des fichiers .resx comme fichiers de ressources.  
   
 ## <a name="compiling-resources-with-msbuild"></a>Compilation des ressources avec MSBuild  
- La bibliothèque de tâches courantes qui est fournie avec [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] inclut une tâche `GenerateResource` que vous pouvez utiliser pour compiler les ressources dans des fichiers .resx ou texte. Cette tâche inclut le paramètre `Sources` pour spécifier les fichiers de ressources à compiler et le paramètre `OutputResources` pour spécifier les noms des fichiers de ressources de sortie. Pour plus d’informations sur la tâche `GenerateResource`, consultez l’article [GenerateResource Task (Tâche GenerateResource)](../msbuild/generateresource-task.md).  
+ La bibliothèque de tâches courantes qui est fournie avec [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] inclut une tâche `GenerateResource` que vous pouvez utiliser pour compiler les ressources dans des fichiers .resx ou texte. Cette tâche inclut le paramètre `Sources` pour spécifier les fichiers de ressources à compiler et le paramètre `OutputResources` pour spécifier les noms des fichiers de ressources de sortie. Pour plus d’informations sur la `GenerateResource` tâche, consultez [GenerateResource, tâche](../msbuild/generateresource-task.md).  
   
 #### <a name="to-compile-resources-with-msbuild"></a>Pour compiler des ressources avec MSBuild  
   
@@ -81,6 +81,6 @@ Si vous générez les versions localisées d’un projet, tous les éléments de
   
 ## <a name="see-also"></a>Voir aussi  
 [MSBuild](msbuild.md)  
- [GenerateResource Task (Tâche GenerateResource)](../msbuild/generateresource-task.md)   
- [Tâche Csc](../msbuild/csc-task.md)   
- [Resgen.exe (Resource File Generator)](https://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4)
+ [GenerateResource, tâche](../msbuild/generateresource-task.md)   
+ [CSC, tâche](../msbuild/csc-task.md)   
+ [Resgen.exe (générateur de fichiers de ressources)](https://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4)

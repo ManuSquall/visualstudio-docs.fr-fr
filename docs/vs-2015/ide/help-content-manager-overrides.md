@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 70c0044a0436dcf27a3b087b3f11a5f759824735
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645560"
 ---
 # <a name="help-content-manager-overrides"></a>Changements dans Help Content Manager
@@ -33,4 +33,4 @@ Vous pouvez modifier le Registre pour changer le comportement par défaut de la 
 |Désactiver l’installation du contenu au premier démarrage de la fonctionnalité Visual Studio.|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node (sur un ordinateur 64 bits)\Microsoft\VisualStudio\14.0\Help|DisableFirstRunHelpSelection--Définir sur 1 pour désactiver les fonctionnalités d’aide configurées au premier démarrage de Visual Studio.|
 
 ## <a name="see-also"></a>Voir aussi
- [Guide de l’administrateur Help Viewer](../ide/help-viewer-administrator-guide.md)
+ [Guide de l'administrateur Help Viewer](../ide/help-viewer-administrator-guide.md)

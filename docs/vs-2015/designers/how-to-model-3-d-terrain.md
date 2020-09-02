@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ab202ed97ce2056313eb661d51d7150bb9689829
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664410"
 ---
 # <a name="how-to-model-3-d-terrain"></a>Procédure : modéliser un terrain 3D
@@ -38,7 +38,7 @@ Ce document montre comment utiliser l’éditeur de modèle pour créer un modè
 
  Lorsque vous avez terminé, le modèle doit se présenter comme suit :
 
- ![scène&#45;3D qui montre un modèle de terrain](../designers/media/digit-terrain-model.png "Chiffre-terrain-modèle")
+ ![3&#45;scène D montrant un modèle de terrain](../designers/media/digit-terrain-model.png "Chiffre-terrain-modèle")
 
  Avant de commencer, assurez-vous que la fenêtre **Propriétés** et la **Boîte à outils** sont affichées.
 
@@ -49,7 +49,7 @@ Ce document montre comment utiliser l’éditeur de modèle pour créer un modè
 2. Ajoutez un plan à la scène. Dans la **Boîte à outils**, sous **Formes**, sélectionnez **Plan** et déplacez-le vers l’aire de conception.
 
    > [!TIP]
-   > Pour faciliter l’utilisation de l’objet plan, vous pouvez l’encadrer dans l’aire de conception. En mode **Sélection**, sélectionnez l’objet plan, puis dans la barre d’outils de l’éditeur de modèle, choisissez le bouton **Frame Object (Encadrer l’objet)** .
+   > Pour faciliter l’utilisation de l’objet plan, vous pouvez l’encadrer dans l’aire de conception. En mode **Sélection**, sélectionnez l’objet plan, puis dans la barre d’outils de l’éditeur de modèle, choisissez le bouton **Frame Object (Encadrer l’objet)**.
 
 3. Passez en mode de sélection de la face. Dans la barre d’outils de l’éditeur de modèle, choisissez **Sélectionner la face**.
 
@@ -66,7 +66,7 @@ Ce document montre comment utiliser l’éditeur de modèle pour créer un modè
 
    Le modèle de terrain est terminé. Voici à nouveau le modèle final, avec l’ombrage Phong appliqué :
 
-   ![scène&#45;3D qui montre un modèle de terrain](../designers/media/digit-terrain-model.png "Chiffre-terrain-modèle")
+   ![3&#45;scène D montrant un modèle de terrain](../designers/media/digit-terrain-model.png "Chiffre-terrain-modèle")
 
    Vous pouvez utiliser ce modèle de terrain pour montrer l’effet du nuanceur de dégradé décrit dans l’article [Comment : créer un nuanceur de géométrie dégradé](../designers/how-to-create-a-geometry-based-gradient-shader.md).
 

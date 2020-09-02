@@ -11,10 +11,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 7076e8f5718e44cc382eb0768e6456dbd6ee5664
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "78169363"
 ---
 # <a name="template-parameters"></a>Paramètres de modèle
@@ -58,10 +58,10 @@ Le tableau suivant liste les paramètres de modèle réservés qui peuvent être
 |registeredorganization|Valeur de clé de Registre provenant de HKLM\Software\Microsoft\Windows NT\CurrentVersion\RegisteredOrganization.|
 |rootnamespace|Espace de noms racine du projet actuel. Ce paramètre s’applique uniquement aux modèles d’élément.|
 |safeitemname|Identique à `itemname`, mais avec tous les caractères et espaces potentiellement dangereux remplacés par des caractères de trait de soulignement.|
-|safeitemrootname|Identique à `safeitemname`.|
+|safeitemrootname|Comme pour `safeitemname`.|
 |safeprojectname|Nom fourni par l’utilisateur quand le projet a été créé, dont tous les caractères et espaces potentiellement dangereux ont été supprimés.|
 |time|Date et heure actuelles au format JJ/MM/AAAA 00:00:00.|
-|nom desolution spécifié|Nom du fichier solution. Quand l’option "créer le répertoire de la solution" est cochée, `specifiedsolutionname` porte le nom de la solution. Quand l’option "créer le répertoire de solution" n’est pas cochée, `specifiedsolutionname` est vide.|
+|specifiedsolutionname|Nom du fichier solution. Quand l’option "créer le répertoire de la solution" est cochée, `specifiedsolutionname` porte le nom de la solution. Quand l’option "créer le répertoire de solution" n’est pas cochée, `specifiedsolutionname` est vide.|
 |userdomain|Domaine de l’utilisateur actuel.|
 |username|Nom de l’utilisateur actuel.|
 |webnamespace|Nom du site web actuel. Ce paramètre est utilisé dans le modèle de formulaire web pour garantir des noms de classes uniques. Si le site web se trouve dans le répertoire racine du serveur web, ce paramètre de modèle correspond à ce répertoire racine.|
@@ -119,7 +119,7 @@ Dans le fichier *.vstemplate* du modèle de projet, ajoutez l’attribut `Replac
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Comment : Remplacer les paramètres dans un modèle](how-to-substitute-parameters-in-a-template.md)
+- [Comment : substituer des paramètres dans un modèle](how-to-substitute-parameters-in-a-template.md)
 - [Personnaliser des modèles](../ide/customizing-project-and-item-templates.md)
-- [Comment : Créer des modèles de projet](../ide/how-to-create-project-templates.md)
+- [Comment : créer des modèles de projet](../ide/how-to-create-project-templates.md)
 - [Informations de référence sur les schémas de modèles](../extensibility/visual-studio-template-schema-reference.md)

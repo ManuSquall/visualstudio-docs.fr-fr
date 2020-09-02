@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 001b394d86e56b172bb1a50c335bd8ba5bcacb15
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645626"
 ---
 # <a name="getting-started-with-c-in-visual-studio"></a>Bien démarrer avec C++ dans Visual Studio
@@ -31,41 +31,41 @@ En suivant cette procédure pas à pas, vous allez vous familiariser avec la plu
 
  [Déboguer et tester l’application](../ide/getting-started-with-cpp-in-visual-studio.md#BKMK_DebugTest)
 
- [Générer une version release de l’application](../ide/getting-started-with-cpp-in-visual-studio.md#BKMK_BuildRelease)
+ [Générer une version Release de l’application](../ide/getting-started-with-cpp-in-visual-studio.md#BKMK_BuildRelease)
 
-## <a name="BKMK_Configure"></a> Se connecter à Visual Studio
+## <a name="sign-in-to-visual-studio"></a><a name="BKMK_Configure"></a> Se connecter à Visual Studio
  Lorsque vous démarrez Visual Studio pour la première fois, vous avez la possibilité de vous connecter à l’aide d’un compte Microsoft tel que Live ou Outlook. La connexion permet que vos paramètres soient synchronisés sur tous vos appareils. Pour plus d’informations, consultez [Signing in to Visual Studio](../ide/signing-in-to-visual-studio.md)
 
  Figure 1 : IDE de Visual Studio
 
- ![IDE avec paramètres Visual C&#43;&#43; appliqués](../ide/media/c-ide-defaultenvironmentlayout.png "|::ref1::|")
+ ![IDE avec paramètres Visual C&#43;&#43; appliqués](../ide/media/c-ide-defaultenvironmentlayout.png "IDE_DefaultEnvironmentLayout c++")
 
  Après avoir ouvert Visual Studio, vous pouvez voir les trois composants de base de l’IDE : les fenêtres Outil, les menus et les barres d’outils, ainsi que l’espace de la fenêtre principale. Les fenêtres Outil sont ancrées sur les côtés gauche et droit de la fenêtre d’application. **Lancement rapide**, la barre de menus et la barre d’outils standard se trouvent en haut. La **Page de démarrage**est située au centre de la fenêtre d’application. Lorsque vous ouvrez une solution ou un projet, les éditeurs et les concepteurs apparaissent dans cet espace. Lorsque vous développez une application, vous passez la majeure partie de votre temps dans cette zone centrale.
 
-## <a name="BKMK_CreateApp"></a> Créer une application simple
+## <a name="create-a-simple-application"></a><a name="BKMK_CreateApp"></a> Créer une application simple
  Lorsque vous créez une application dans Visual Studio, vous créez d’abord un projet et une solution. Dans cet exemple, vous allez créer une application console Windows.
 
 #### <a name="to-create-a-console-app"></a>Pour créer une application console
 
-1. Dans la barre de menus, sélectionnez **Fichier**, **Nouveau**, **Projet**.
+1. Dans le menu principal, sélectionnez **Fichier**, **Nouveau**, **Projet**.
 
-    ![Dans la barre de menus, choisissez Fichier, Nouveau, Projet](../ide/media/exploreide-filenewproject.png "|::ref2::|")
+    ![Dans la barre de menus, choisissez Fichier, nouveau, projet](../ide/media/exploreide-filenewproject.png "ExploreIDE-FileNewProject")
 
-2. Dans la catégorie **Visual C++** , choisissez le modèle **Application console Win32**, puis nommez le projet `GreetingsConsoleApp`.
+2. Dans la catégorie **Visual C++**, choisissez le modèle **Application console Win32**, puis nommez le projet `GreetingsConsoleApp`.
 
-    ![Modèle d’application console Win32](../ide/media/c-ide-newprojectdlg.png "|::ref3::|")
+    ![Modèle d’application console Win32](../ide/media/c-ide-newprojectdlg.png "IDE_NewProjectDlg c++")
 
 3. Lorsque l’Assistant Application Win32 s’affiche, sélectionnez le bouton **Terminer** .
 
-    ![Assistant d’application console Win32](../ide/media/c-ide-win32consoleappwizard.png "|::ref4::|")
+    ![Assistant d’application console Win32](../ide/media/c-ide-win32consoleappwizard.png "IDE_Win32ConsoleAppWizard c++")
 
    La solution et le projet GreetingsConsoleApp, avec les fichiers de base d’une application console Win32, sont créés et chargés automatiquement dans l’ **Explorateur de solutions**. Le fichier GreetingsConsoleApp.cpp s’ouvre dans l’éditeur de code. Les éléments suivants apparaissent dans l’ **Explorateur de solutions**:
 
    Figure 4 : Éléments du projet
 
-   ![Fichiers pour la solution dans l’Explorateur de solutions](../ide/media/c-ide-solutioncontents.png "|::ref5::|")
+   ![Fichiers pour la solution dans Solution Explorer](../ide/media/c-ide-solutioncontents.png "IDE_SolutionContents c++")
 
-## <a name="BKMK_AddCode"></a> Ajouter du code à l’application
+## <a name="add-code-to-the-application"></a><a name="BKMK_AddCode"></a> Ajouter du code à l’application
  Ensuite, vous ajouterez le code pour afficher le mot « Hello » dans la fenêtre de console.
 
 #### <a name="to-display-hello-in-the-console-window"></a>Pour afficher « Hello » dans la fenêtre de console
@@ -78,11 +78,11 @@ En suivant cette procédure pas à pas, vous allez vous familiariser avec la plu
 
      Une ligne ondulée rouge s’affiche sous `cout`. Un message d’erreur apparaît si vous pointez dessus.
 
-     ![Texte d’erreur pour cout](../ide/media/c-ide-couterror.png "|::ref6::|")
+     ![Texte d’erreur pour cout](../ide/media/c-ide-couterror.png "IDE_CoutError c++")
 
      Le message d’erreur s’affiche également dans la fenêtre **Liste d’erreurs** . Vous pouvez afficher la fenêtre en choisissant dans la barre de menus **Affichage**, **Liste d’erreurs**.
 
-     [cout](https://msdn.microsoft.com/library/d87db6c3-e4e1-4d09-9ec5-458f55018257) est inclus dans le fichier d’en-tête \<iostream\>.
+     [cout](https://msdn.microsoft.com/library/d87db6c3-e4e1-4d09-9ec5-458f55018257) est inclus dans le \<iostream\> fichier d’en-tête.
 
 2. Pour inclure l’en-tête iostream, entrez le code suivant après `#include "stdafx.h"`:
 
@@ -95,18 +95,18 @@ En suivant cette procédure pas à pas, vous allez vous familiariser avec la plu
 
      La ligne ondulée rouge sous `cout` disparaît lorsque vous corrigez l’erreur.
 
-3. Enregistrez les modifications dans le fichier.
+3. Enregistrez les modifications du fichier.
 
-     ![Code qui corrige les erreurs cout](../ide/media/c-ide-coutfix.png "|::ref7::|")
+     ![Code qui corrige les erreurs cout](../ide/media/c-ide-coutfix.png "IDE_CoutFix c++")
 
-## <a name="BKMK_DebugTest"></a> Déboguer et tester l’application
+## <a name="debug-and-test-the-application"></a><a name="BKMK_DebugTest"></a> Déboguer et tester l’application
  Vous pouvez déboguer GreetingsConsoleApp pour voir si le mot « Hello » s’affiche dans la fenêtre de console.
 
 #### <a name="to-debug-the-application"></a>Pour déboguer l’application
 
 - Démarrez le débogueur.
 
-     ![Commande Démarrer le débogage du menu Débogage](../ide/media/exploreide-startdebugging.png "|::ref8::|")
+     ![Commande Démarrer le débogage du menu Débogage](../ide/media/exploreide-startdebugging.png "ExploreIDE-StartDebugging")
 
      Le débogueur démarre et exécute le code. La fenêtre de console (une fenêtre distincte qui ressemble à une invite de commandes) s’affiche pendant quelques secondes, mais se clôt rapidement lorsque le débogueur s’arrête en cours d’exécution. Pour afficher le texte, vous devez définir un point d’arrêt afin d’interrompre l’exécution du programme.
 
@@ -114,7 +114,7 @@ En suivant cette procédure pas à pas, vous allez vous familiariser avec la plu
 
 1. Ajoutez un point d’arrêt à partir de la barre de menus dans la ligne `return 0;`. Vous pouvez également cliquer dans la marge de gauche pour définir un point d’arrêt.
 
-    ![Commande Basculer le point d’arrêt du menu Débogage](../ide/media/exploreide-togglebreakpoint.png "|::ref9::|")
+    ![Commande Basculer le point d'arrêt du menu Débogage](../ide/media/exploreide-togglebreakpoint.png "ExploreIDE-ToggleBreakpoint (")
 
     Un cercle rouge apparaît à côté de la ligne de code dans la bordure gauche de la fenêtre de l’éditeur.
 
@@ -122,28 +122,28 @@ En suivant cette procédure pas à pas, vous allez vous familiariser avec la plu
 
     Le débogueur démarre et une fenêtre de console apparaît avec le mot **Hello**.
 
-    ![Texte Hello dans la fenêtre d’invite de commandes Windows](../ide/media/c-ide-hellocommandwindow.png "|::ref10::|")
+    ![Texte Hello dans la fenêtre d’invite de commandes Windows](../ide/media/c-ide-hellocommandwindow.png "IDE_HelloCommandWindow c++")
 
 3. Appuyez sur Maj+F5 pour arrêter le débogage.
 
    Pour plus d’informations, consultez [Projets console](../debugger/debugging-preparation-console-projects.md).
 
-## <a name="BKMK_BuildRelease"></a> Générer une version Release de l’application
+## <a name="build-a-release-version-of-the-app"></a><a name="BKMK_BuildRelease"></a> Générer une version Release de l’application
  Maintenant que vous avez vérifié que tout fonctionne, vous pouvez préparer une version Release de l'application.
 
 #### <a name="to-clean-the-solution-files-and-build-a-release-version"></a>Pour nettoyer les fichiers solution et générer une version Release
 
 1. Dans la barre de menus, supprimez les fichiers intermédiaires et les fichiers de sortie créés pendant les générations précédentes.
 
-    ![Commande Nettoyer la solution du menu Générer](../ide/media/exploreide-cleansolution.png "|::ref11::|")
+    ![Commande Nettoyer la solution du menu Générer](../ide/media/exploreide-cleansolution.png "ExploreIDE-CleanSolution")
 
 2. Changez la configuration de build pour GreetingsConsoleApp de **Debug** en **Release**.
 
-    ![Générer une version Release de l’application](../ide/media/c-ide-changingbuildtorelease.png "|::ref12::|")
+    ![Générer une version Release de l’application](../ide/media/c-ide-changingbuildtorelease.png "IDE_ChangingBuildtoRelease c++")
 
 3. Générez la solution.
 
-    ![Commande Générer la solution du menu Générer](../ide/media/exploreide-buildsolution.png "|::ref13::|")
+    ![Commande Générer la solution du menu Générer](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
 
    Félicitations ! Vous avez terminé cette procédure. Pour explorer d’autres exemples, consultez [Visual Studio Samples](../ide/visual-studio-samples.md).
 

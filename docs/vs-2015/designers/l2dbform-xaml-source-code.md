@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fc0ec53c35f87751efe78359f582e5f4297143c9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664279"
 ---
 # <a name="l2dbformxaml-source-code"></a>Code source L2DBForm.xaml
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Cette rubrique contient et décrit le fichier source XAML pour l’[exemple de liaison de données WPF à l’aide de LINQ to XML](../designers/wpf-data-binding-using-linq-to-xml-example.md), L2DBForm.xaml.
+Cette rubrique contient et décrit le fichier source XAML pour [Exemple de liaison de données WPF à l’aide de LINQ to XML](../designers/wpf-data-binding-using-linq-to-xml-example.md), L2DBForm.xaml.
 
 ## <a name="overall-ui-structure"></a>Structure globale d'interface utilisateur
  Comme c'est généralement le cas pour un projet WPF, ce fichier contient un élément parent, un élément XML <xref:System.Windows.Window> associé à la classe dérivée `L2XDBFrom` dans l'espace de noms `LinqToXmlDataBinding` .
@@ -238,8 +238,8 @@ Text="{Binding Path=Attribute[id].Value}"...Text="{Binding Path=Value}"
 
 ```
 
-### <a name="comments"></a>Comments
- Pour obtenir le code source C# pour les gestionnaires d’événements associés aux éléments d’interface utilisateur WPF, consultez [L2DBForm.xaml.cs Source Code](../designers/l2dbform-xaml-cs-source-code.md).
+### <a name="comments"></a>Commentaires
+ Pour obtenir le code source C# pour les gestionnaires d’événements associés aux éléments d’interface utilisateur WPF, consultez [code source de L2DBForm.Xaml.cs](../designers/l2dbform-xaml-cs-source-code.md).
 
 ## <a name="see-also"></a>Voir aussi
  [Procédure pas à pas : exemple](../designers/walkthrough-linqtoxmldatabinding-example.md) de [code source L2DBForm.Xaml.cs](../designers/l2dbform-xaml-cs-source-code.md)

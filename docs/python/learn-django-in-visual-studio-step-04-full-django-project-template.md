@@ -12,10 +12,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: c778d830b20797962306700a5af938eb3a3bb142
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62961680"
 ---
 # <a name="step-4-use-the-full-django-web-project-template"></a>Étape 4 : Utiliser le modèle de projet web Django complet
@@ -35,19 +35,19 @@ Le modèle fournit également l’authentification de base, traitée à l’éta
 
 ## <a name="step-4-1-create-a-project-from-the-template"></a>Étape 4-1 : créer un projet à partir du modèle
 
-1. Dans Visual Studio, accédez à **Explorateur de solutions**, cliquez avec le bouton droit sur la solution **LearningDjango** créée précédemment dans ce tutoriel, puis sélectionnez **Ajouter** > **Nouveau projet**. (Alternativement, si vous voulez utiliser une nouvelle solution, sélectionnez **Fichier** > **Nouveau** > **Projet** à la place.)
+1. Dans Visual Studio, accédez à **Explorateur de solutions**, cliquez avec le bouton droit sur la solution **LearningDjango** créée précédemment dans ce tutoriel, puis sélectionnez **Ajouter** > **Nouveau projet**. (Sinon, si vous souhaitez utiliser une nouvelle solution, sélectionnez **fichier**  >  **Nouveau**  >  **Projet** à la place.)
 
 1. Dans la boîte de dialogue Nouveau projet, recherchez et sélectionnez le modèle **Projet Web Django**, appelez le projet « DjangoWeb » et sélectionnez **OK**.
 
 1. Comme le modèle inclut à nouveau un fichier *requirements.txt*, Visual Studio vous demande où installer ces dépendances. Choisissez l’option, **Installer dans un environnement virtuel** et dans la boîte de dialogue **Ajouter un environnement virtuel**, sélectionnez **Créer** pour accepter les valeurs par défaut.
 
-1. Une fois que Visual Studio a terminé la configuration de l’environnement virtuel, suivez les instructions du fichier *readme.html* qui s’affiche pour créer un superutilisateur Django (c’est-à-dire un administrateur). Il suffit de cliquer sur le projet Visual Studio et de sélectionner la commande **Python** > **Django Créer Superuser,** puis suivez les invites. Veillez à enregistrer votre nom d’utilisateur et mot de passe lorsque vous l’utilisez en exerçant les fonctionnalités d’authentification de l’application.
+1. Une fois que Visual Studio a terminé la configuration de l’environnement virtuel, suivez les instructions du fichier *readme.html* qui s’affiche pour créer un superutilisateur Django (c’est-à-dire un administrateur). Il vous suffit de cliquer avec le bouton droit sur le projet Visual Studio et de sélectionner la commande **python**  >  **Django créer un superutilisateur** , puis de suivre les invites. Veillez à enregistrer votre nom d’utilisateur et mot de passe lorsque vous l’utilisez en exerçant les fonctionnalités d’authentification de l’application.
 
 1. Définissez le projet **DjangoWeb** selon la valeur par défaut pour la solution Visual Studio en cliquant avec le bouton droit sur ce projet dans **Explorateur de solutions** et en sélectionnant **Définir en tant que projet de start-up**. Le projet de start-up, affiché en gras est ce qui est exécuté lorsque vous démarrez le débogueur.
 
     ![Explorateur de solutions affichant le projet DjangoWeb en tant que projet de start-up](media/django/step04-second-project-in-solution-set-as-startup-project.png)
 
-1. Sélectionnez **Debug** > **Start Debugging** (**F5**) ou utilisez le bouton **Serveur Web** sur la barre d’outils pour faire fonctionner le serveur :
+1. Sélectionnez **Déboguer**  >  **Démarrer le débogage** (**F5**) ou utilisez le bouton **serveur Web** dans la barre d’outils pour exécuter le serveur :
 
     ![Exécuter le bouton de la barre d’outils du serveur Web dans Visual Studio](media/django/run-web-server-toolbar-button.png)
 
@@ -73,7 +73,7 @@ Au niveau le plus large, le modèle « Projet Web de Django » crée la struct
   - *requirements.txt*, qui contient une dépendance sur Django 1.x.
   - *readme.html*, un fichier qui s’affiche dans Visual Studio après avoir créé le projet. Comme indiqué dans la section précédente, suivez les instructions suivantes pour créer un compte de superutilisateur (administrateur) pour l’application.
 - Le dossier *app* contient tous les fichiers d’application, y compris les affichages, modèles, tests, formulaires et fichiers statiques (voir l’étape 4-2). En règle générale, vous renommez ce dossier pour utiliser un nom d’application plus significatif.
-- Le dossier *DjangoWeb* (projet Django) contient les fichiers typiques du projet Django : * \_ \_\_\_init .py*, *settings.py*, *urls.py*, et *wsgi.py*. À l’aide du modèle de projet, *settings.py* est déjà configuré pour l’application et le fichier de base de données, et *urls.py* est déjà configuré avec des routes pour toutes les pages d’application, y compris le formulaire de connexion.
+- Le dossier *DjangoWeb* (projet Django) contient les fichiers de projet Django typiques : * \_ \_ init \_ \_ . py*, *Settings.py*, *URLs.py*et *WSGI.py*. À l’aide du modèle de projet, *settings.py* est déjà configuré pour l’application et le fichier de base de données, et *urls.py* est déjà configuré avec des routes pour toutes les pages d’application, y compris le formulaire de connexion.
 
 ### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>Question : est-il possible de partager un environnement virtuel entre des projets Visual Studio ?
 

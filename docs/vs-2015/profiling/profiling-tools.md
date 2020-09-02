@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bcb230532da4a0b84ea0102d86534c28afe35558
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65686248"
 ---
 # <a name="profiling-tools"></a>outils de profilage
@@ -25,7 +25,7 @@ Les outils de profilage et de diagnostic vous aident à diagnostiquer l’utilis
   
  Vous trouverez au bas de l’article un résumé des outils disponibles pour le type de votre projet (par exemple, application de bureau, UWP, ASP.NET).  
   
- Vous pouvez accéder aux outils de profilage en sélectionnant **Déboguer / Windows / Afficher les outils de diagnostic** pour utiliser les outils durant votre session de débogage, ou en sélectionnant **Déboguer / Profileur de performances...** pour effectuer une analyse de performances ciblée.  Pour plus d’informations sur les différentes approches, consultez [Running Profiling Tools With or Without the Debugger](../profiling/running-profiling-tools-with-or-without-the-debugger.md) .  
+ Vous pouvez accéder aux outils de profilage en sélectionnant **Déboguer / Windows / Afficher les outils de diagnostic** pour utiliser les outils durant votre session de débogage, ou en sélectionnant **Déboguer / Profileur de performances...** pour effectuer une analyse de performances ciblée.  Pour plus d’informations sur les différentes approches, consultez [Exécution des outils de profilage avec ou sans le débogueur](../profiling/running-profiling-tools-with-or-without-the-debugger.md) .  
   
  ![DebugDiagnosticsToolsMenu](../profiling/media/debugdiagnosticstoolsmenu.png "DebugDiagnosticsToolsMenu")  
   
@@ -36,17 +36,17 @@ Les outils de profilage et de diagnostic vous aident à diagnostiquer l’utilis
 ## <a name="memory-usage"></a>Utilisation de la mémoire  
  ![DiagMemorySmall](../profiling/media/diagmemorysmall.png "DiagMemorySmall")  
   
- Identifiez les fuites de mémoire et les utilisations inefficaces de la mémoire pendant le débogage à l’aide de l’outil **Utilisation de la mémoire** . L’outil vous permet de prendre des captures instantanées du tas de mémoire managé et natif. Vous pouvez utiliser cet outil avec les applications de bureau, les applications universelles Windows et les applications ASP.NET. L’outil **Utilisation de la mémoire** peut être exécuté à partir de la fenêtre **Outils de diagnostic** pendant le débogage (**Déboguer / Windows / Afficher les outils de diagnostic**) ou en dehors du débogueur (**Déboguer / Profileur de performances...**). Pour plus d’informations, consultez [Utilisation de la mémoire](../profiling/memory-usage.md) et [Utilisation de la mémoire sans débogage](https://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0) .  
+ Recherchez les fuites de mémoire et la mémoire inefficace pendant le débogage avec l’outil utilisation de la **mémoire** . L’outil vous permet de prendre des captures instantanées du tas de mémoire managé et natif. Vous pouvez utiliser cet outil avec les applications de bureau, les applications universelles Windows et les applications ASP.NET. L’outil **utilisation** de la mémoire peut être exécuté à partir de la fenêtre **outils de diagnostic** pendant le débogage (déboguer **/Windows/afficher outils de diagnostic**) ou en dehors du débogueur (**Déboguer/profileur de performances...**). Pour plus d’informations, consultez  [utilisation](../profiling/memory-usage.md) de la mémoire et utilisation de la [mémoire sans débogage](https://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0) .  
   
 ## <a name="cpu-usage"></a>Utilisation de l'UC  
  ![DiagCPUSmall](../profiling/media/diagcpusmall.png "DiagCPUSmall")  
   
- L'outil **Utilisation du processeur** vous montre où le processeur consacre son temps à exécuter le code C++, C#/VB et JavaScript.  Vous pouvez utiliser cet outil avec les applications de bureau et les applications universelles Windows, mais aussi avec les applications Azure App Services. L’outil **Utilisation de l’UC** peut être exécuté à partir de la fenêtre **Outils de diagnostic** pendant le débogage (**Déboguer / Windows / Afficher les outils de diagnostic**) ou en dehors du débogueur (**Déboguer / Profileur de performances...**). Pour plus d’informations sur les différentes approches, consultez [Utilisation de l'UC](../profiling/cpu-usage.md) .  
+ L'outil **Utilisation du processeur** vous montre où le processeur consacre son temps à exécuter le code C++, C#/VB et JavaScript.  Vous pouvez utiliser cet outil avec les applications de bureau et les applications universelles Windows, mais aussi avec les applications Azure App Services. L’outil **utilisation** de l’UC peut être exécuté à partir de la fenêtre **outils de diagnostic** pendant le débogage (déboguer **/Windows/afficher outils de diagnostic**) ou en dehors du débogueur (**Déboguer/profileur de performances...**). Pour plus d’informations, consultez [utilisation de l’UC](../profiling/cpu-usage.md) .  
   
 ## <a name="performance-explorer"></a>Explorateur de performances  
  ![PerfTools](../profiling/media/perftools.png "PerfTools")  
   
- L’ **Explorateur de performances** (**Déboguer / Profileur / Explorateur de performances**) vous permet d’utiliser différents outils, dont **Échantillonnage de l’UC**,  **Instrumentation**, **Allocation de mémoire .NET**et **Conflit de ressources**. Vous pouvez utiliser les outils Explorateur de performances avec les applications de bureau et les applications ASP.NET, mais pas avec les applications universelles Windows. Pour plus d'informations, consultez [Explorateur de performances](../profiling/performance-explorer.md).  
+ L’ **Explorateur de performances** (**Déboguer / Profileur / Explorateur de performances**) vous permet d’utiliser différents outils, dont **Échantillonnage de l’UC**,  **Instrumentation**, **Allocation de mémoire .NET**et **Conflit de ressources**. Vous pouvez utiliser les outils Explorateur de performances avec les applications de bureau et les applications ASP.NET, mais pas avec les applications universelles Windows. Pour plus d’informations, consultez [Explorateur de performances](../profiling/performance-explorer.md).  
   
 ## <a name="gpu-usage"></a>Utilisation du GPU  
  ![DiagGPUUsage](../profiling/media/diaggpuusage.png "DiagGPUUsage")  
@@ -56,7 +56,7 @@ Les outils de profilage et de diagnostic vous aident à diagnostiquer l’utilis
 ## <a name="application-timeline"></a>Chronologie de l'application  
  ![DiagAppTimeline](../profiling/media/diagapptimeline.png "DiagAppTimeline")  
   
- L’outil [Chronologie de l’application](../profiling/application-timeline.md) vous aide à améliorer les performances des applications XAML en offrant une vue détaillée de leur consommation de ressources. Vous pouvez utiliser **Chronologie de l’application** avec les applications de bureau et les applications universelles Windows, mais pas avec les applications ASP.NET. L’outil **Chronologie de l’application** peut être exécuté à partir de la fenêtre **Outils de diagnostic** (**Déboguer / Profileur de performances...**).  
+ L’outil [Application Timeline](../profiling/application-timeline.md) vous aide à améliorer les performances des applications XAML en offrant une vue détaillée de leur consommation de ressources. Vous pouvez utiliser **Chronologie de l’application** avec les applications de bureau et les applications universelles Windows, mais pas avec les applications ASP.NET. L’outil **Chronologie de l’application** peut être exécuté à partir de la fenêtre **Outils de diagnostic** (**Déboguer / Profileur de performances...**).  
   
 ## <a name="perftips"></a>Conseils sur les performances  
  ![DiagPerfTips](../profiling/media/diagperftips.png "DiagPerfTips")  
@@ -64,12 +64,12 @@ Les outils de profilage et de diagnostic vous aident à diagnostiquer l’utilis
  Quand le débogueur arrête l'exécution à un point d'arrêt ou lors de l'exécution pas à pas, le temps qui s'écoule entre l'arrêt et le point d'arrêt précédent apparaît sous la forme d'un conseil dans la fenêtre de l'éditeur. Ces [PerfTips](../profiling/perftips.md) vous permettent de surveiller et d’analyser les performances de votre application pendant le débogage. Vous pouvez afficher les **Conseils sur les performances** dans les applications de bureau, les applications universelles Windows et les applications ASP.NET.  
   
 ## <a name="javascript-memory"></a>Mémoire JavaScript  
- ![DiagJSMemory](../profiling/media/diagjsmemory.png "DiagJSMemory")  
+ ![Diagnostics](../profiling/media/diagjsmemory.png "Diagnostics")  
   
  L’outil [JavaScript Memory](../profiling/javascript-memory.md) vous permet de mesurer, d’évaluer et de cibler les problèmes liés aux performances dans votre code en recueillant des informations de minutage à l’entrée et à la sortie de chaque fonction de votre application. Vous pouvez utiliser cet outil avec les applications HTML universelles Windows. L’outil **Minutage de fonction JavaScript** peut être exécuté à partir de la fenêtre **Outils de diagnostic** (**Déboguer / Profileur de performances...**).  
   
 ## <a name="html-ui-responsiveness"></a>Réactivité de l'interface utilisateur HTML  
- ![DiagHTMLResp](../profiling/media/diaghtmlresp.png "DiagHTMLResp")  
+ ![Réactivité](../profiling/media/diaghtmlresp.png "Réactivité")  
   
  L’outil [Réactivité de l’interface utilisateur HTML](../profiling/html-ui-responsiveness.md) vous aide à isoler les problèmes de performances dans vos applications, comme le manque de réactivité, les lenteurs de chargement et les mises à jour visuelles qui sont moins fréquentes que prévu. Vous pouvez utiliser cet outil avec les applications HTML universelles Windows. L’outil **Réactivité de l’interface utilisateur HTML** peut être exécuté à partir de la fenêtre **Outils de diagnostic** (**Déboguer / Profileur de performances...**).  
   
@@ -84,16 +84,16 @@ Les outils de profilage et de diagnostic vous aident à diagnostiquer l’utilis
 ## <a name="which-tool-should-i-use"></a>Quel outil utiliser ?  
  Voici un tableau qui recense les différents outils proposés par Visual Studio, ainsi que les différents types de projet avec lesquels vous pouvez les utiliser :  
   
-|Outil d’analyse des performances|Bureau Windows|Universel Windows/Store|ASP.NET|  
+|Outil d’analyse des performances|Ordinateurs Windows|Universel Windows/Store|ASP.NET|  
 |----------------------|---------------------|------------------------------|-------------|  
-|[Utilisation de la mémoire](../profiling/memory-usage.md)|oui|oui|Non|  
-|[Utilisation de l'UC](../profiling/cpu-usage.md)|oui|oui|Azure App Service uniquement|  
-|[Utilisation du GPU](../debugger/gpu-usage.md)|oui|oui|non|  
-|[Chronologie de l'application](../profiling/application-timeline.md)|oui|oui|Non|  
-|[Conseils sur les performances](../profiling/perftips.md)|oui|oui pour XAML, non pour HTML|Non|  
-|[Explorateur de performances](../profiling/performance-explorer.md)|oui|Non|oui|  
+|[Utilisation de la mémoire](../profiling/memory-usage.md)|Oui|Oui|Non|  
+|[Utilisation du processeur](../profiling/cpu-usage.md)|Oui|Oui|Azure App Service uniquement|  
+|[Utilisation du GPU](../debugger/gpu-usage.md)|Oui|Oui|Non|  
+|[Chronologie de l'application](../profiling/application-timeline.md)|Oui|Oui|Non|  
+|[Conseils sur les performances](../profiling/perftips.md)|Oui|oui pour XAML, non pour HTML|Non|  
+|[Explorateur de performances](../profiling/performance-explorer.md)|Oui|Non|Oui|  
 |[IntelliTrace](../debugger/intellitrace.md)|.NET Enterprise uniquement|.NET Enterprise uniquement|.NET Enterprise uniquement|  
-|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|Non|oui pour HTML, non pour XAML|Non|  
+|[Réactivité de l’interface utilisateur HTML](../profiling/html-ui-responsiveness.md)|Non|oui pour HTML, non pour XAML|Non|  
 |[Mémoire JavaScript](../profiling/javascript-memory.md)|Non|oui pour HTML, non pour XAML|Non|  
   
 ## <a name="see-also"></a>Voir aussi  

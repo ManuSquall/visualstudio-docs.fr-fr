@@ -1,5 +1,5 @@
 ---
-title: À propos des Extensions de nom de fichier | Microsoft Docs
+title: À propos des extensions de nom de fichier | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,20 +12,20 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 866a30279ca2c79f4a490a040f76bc3a86c6a6e1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148033"
 ---
 # <a name="about-file-name-extensions"></a>À propos des extensions de nom de fichier
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Lorsque vous inscrivez une extension de fichier d’un VSPackage, associez-la à une version de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Cela est important si, et plusieurs versions de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] est installé sur un ordinateur.  
+Lorsque vous inscrivez une extension de fichier d’un VSPackage, vous l’associez à une version de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Cela est important si plusieurs versions de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sont installées sur un ordinateur.  
   
- Extensions de fichier pour les VSPackages sont enregistrées sous la clé HKEY_CLASSES_ROOT avec une valeur par défaut qui pointe vers l’associée identificateur programmatique (ProgID).  
+ Les extensions de fichier pour les VSPackages sont inscrites sous HKEY_CLASSES_ROOT clé avec une valeur par défaut qui pointe vers l’identificateur programmatique (ProgID) associé.  
   
- Voici un exemple des informations d’inscription pour l’extension de fichier .vcproj :  
+ Voici un exemple d’informations d’inscription pour l’extension de fichier. vcproj :  
   
 ```  
 HKEY_CLASSES_ROOT\  
@@ -33,10 +33,10 @@ HKEY_CLASSES_ROOT\
       (default)=" VisualStudio.vcproj.8.0"   
 ```  
   
- Fichiers associés [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] doit avoir un ProgID avec contrôle de version, tel que `VisualStudio.vcproj.8.0`, pour permettre des installations côte à côte du produit pour gérer les associations d’extension de fichier entre les versions de produit. Un ProgID spécifique à la version vous permet également d’utiliser des verbes standards, telles qu’Ouvrir, modifier et ainsi de suite, sans vous préoccuper de remplacer ni être remplacé par d’autres applications ou les versions de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+ Les fichiers associés à [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] doivent avoir un ProgID avec version, tel que `VisualStudio.vcproj.8.0` , pour permettre l’installation côte à côte du produit afin de conserver les associations d’extension de fichier entre les versions du produit. Un ProgID spécifique à la version vous permet également d’utiliser des verbes standard, tels que Open, Edit, etc., sans qu’il soit important de remplacer ou d’être remplacé par d’autres applications ou versions de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
- Dans certains cas, le ProgID associé à une extension de fichier ne doit pas être modifié. Par exemple, le ProgID pour l’extension de fichier .htm (progid = htmlfile) est codé dans plusieurs emplacements dans le système d’exploitation en dur, et est largement connue et utilisée en association avec des fichiers .htm et .html.  
+ Dans certains cas, l’identificateur de programme (ProgID) associé à une extension de fichier ne doit pas être modifié. Par exemple, le ProgID de l’extension de fichier. htm (ProgID = htmlfile) est codé en dur dans un certain nombre d’emplacements dans le système d’exploitation et est largement connu et utilisé en association avec les fichiers. htm et. html.  
   
 ## <a name="see-also"></a>Voir aussi  
- [L’inscription des Extensions de nom de fichier pour les déploiements côte à côte](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)   
+ [Inscription des extensions de nom de fichier pour les déploiements côte à côte](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)   
  [Spécification des gestionnaires de fichiers pour les extensions de nom de fichier](../extensibility/specifying-file-handlers-for-file-name-extensions.md)

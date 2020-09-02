@@ -17,14 +17,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 05ffd1cf32f8c7ea93e63232f7026c6c926f9308
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382170"
 ---
 # <a name="how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors"></a>Guide pratique pour définir l’emplacement d’un fichier journal personnalisé pour les erreurs de déploiement ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]conserve les fichiers journaux d’activation pour tous les déploiements. Ces journaux documentent les erreurs relatives à l’installation et à l’initialisation d’un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement. Par défaut, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] crée un fichier journal pour chaque activation de déploiement. Il stocke ces fichiers journaux dans le dossier Temporary Internet Files. Le fichier journal d’un déploiement est présenté à l’utilisateur lorsqu’un échec d’activation se produit et que l’utilisateur clique sur **Détails** dans la boîte de dialogue d’erreur qui s’affiche.
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] conserve les fichiers journaux d’activation pour tous les déploiements. Ces journaux documentent les erreurs relatives à l’installation et à l’initialisation d’un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement. Par défaut, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] crée un fichier journal pour chaque activation de déploiement. Il stocke ces fichiers journaux dans le dossier Temporary Internet Files. Le fichier journal d’un déploiement est présenté à l’utilisateur lorsqu’un échec d’activation se produit et que l’utilisateur clique sur **Détails** dans la boîte de dialogue d’erreur qui s’affiche.
 
  Vous pouvez modifier ce comportement pour un client spécifique à l’aide de l’éditeur du Registre (**regedit.exe**) pour définir un chemin d’accès au fichier journal personnalisé. Dans ce cas, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] journalise les réussites et échecs d’activation pour tous les déploiements dans un seul fichier.
 

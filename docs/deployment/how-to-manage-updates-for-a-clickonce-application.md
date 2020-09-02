@@ -20,14 +20,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 534171d9145d0a21fee7f8831e9a6355e6079cbd
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382352"
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>Guide pratique pour gérer les mises à jour pour une application ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]les applications peuvent rechercher des mises à jour automatiquement ou par programme. En tant que développeur, vous disposez d’une grande flexibilité pour spécifier quand et comment les vérifications de mise à jour sont effectuées, si les mises à jour sont obligatoires et si l’application doit rechercher les mises à jour.
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] les applications peuvent rechercher des mises à jour automatiquement ou par programme. En tant que développeur, vous disposez d’une grande flexibilité pour spécifier quand et comment les vérifications de mise à jour sont effectuées, si les mises à jour sont obligatoires et si l’application doit rechercher les mises à jour.
 
  Vous pouvez configurer l’application pour qu’elle recherche automatiquement les mises à jour avant le démarrage de l’application, ou à des intervalles définis après le démarrage de l’application. En outre, vous pouvez spécifier une version minimale requise ; autrement dit, une mise à jour est installée si la version de l’utilisateur est antérieure à la version requise.
 

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e95f760712f46632120540091b9f8f408aad9da4
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903430"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>Créer un système de projet de base, partie 1
@@ -520,7 +520,7 @@ Templates
 
 - *SimpleProject.Resources.SimpleProjectNode.bmp*
 
-  Pendant la construction de l’instance, la `ProjectNode` classe de base charge *Resources.imagelis.bmp*, dans lesquelles sont incorporées des bitmaps 16 x 16 couramment utilisées à partir de *Resources\imagelis.bmp*. Cette liste de bitmaps est mise à la disposition de `SimpleProjectNode` sous `ImageHandler.ImageList` . `SimpleProjectNode`Ajoute la bitmap de nœud de projet à la liste. Le décalage de la bitmap du nœud de projet dans la liste d’images est mis en cache pour une utilisation ultérieure comme valeur de la `ImageIndex` propriété publique. Visual Studio utilise cette propriété pour déterminer l’image bitmap à afficher en tant qu’icône de nœud de projet.
+  Pendant la construction de l’instance, la `ProjectNode` classe de base charge *Resources.imagelis.bmp*, dans lesquelles sont incorporées des bitmaps 16 x 16 couramment utilisées à partir de *Resources\imagelis.bmp*. Cette liste de bitmaps est mise à la disposition de `SimpleProjectNode` sous `ImageHandler.ImageList` . `SimpleProjectNode` Ajoute la bitmap de nœud de projet à la liste. Le décalage de la bitmap du nœud de projet dans la liste d’images est mis en cache pour une utilisation ultérieure comme valeur de la `ImageIndex` propriété publique. Visual Studio utilise cette propriété pour déterminer l’image bitmap à afficher en tant qu’icône de nœud de projet.
 
 ## <a name="test-the-custom-project-node-icon"></a>Icône de test du nœud de projet personnalisé
  Testez votre fabrique de projet pour voir si elle crée une hiérarchie de projet qui a votre icône de nœud de projet personnalisé.
@@ -601,9 +601,9 @@ Templates
 
 3. Examinez les valeurs des `nameSpace` `className` paramètres et.
 
-   - `nameSpace`reçoit la valeur de l' \<RootNamespace> élément dans le fichier de modèle de projet *\Templates\Projects\SimpleProject\SimpleProject.MyProj* . Dans ce cas, la valeur est `MyRootNamespace`.
+   - `nameSpace` reçoit la valeur de l' \<RootNamespace> élément dans le fichier de modèle de projet *\Templates\Projects\SimpleProject\SimpleProject.MyProj* . Dans ce cas, la valeur est `MyRootNamespace`.
 
-   - `className`reçoit la valeur du nom de fichier source de la classe, sans l’extension de nom de fichier. Dans ce cas, le premier fichier à copier dans le dossier de destination est *AssemblyInfo.cs*; par conséquent, la valeur de className est `AssemblyInfo` .
+   - `className` reçoit la valeur du nom de fichier source de la classe, sans l’extension de nom de fichier. Dans ce cas, le premier fichier à copier dans le dossier de destination est *AssemblyInfo.cs*; par conséquent, la valeur de className est `AssemblyInfo` .
 
 4. Supprimez le point d’arrêt et appuyez sur **F5** pour continuer l’exécution.
 
@@ -636,4 +636,4 @@ Templates
 
     ![Commande de projet simple](../extensibility/media/simpleprojcommand.png "SimpleProjCommand")
 
-   Félicitations ! Vous avez implémenté un système de projet managé de base.
+   Félicitations ! Vous avez implémenté un système de projet managé de base.

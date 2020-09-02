@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a80488408f680530ed3c9b4094b2997e97484ce3
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544441"
 ---
 # <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>Procédure pas à pas : liaison de contrôles de contenu à des parties XML personnalisées
@@ -61,7 +61,7 @@ ms.locfileid: "85544441"
 
 1. Créez un projet de document Word portant le nom **EmployeeControls**. Créez un document pour la solution. Pour plus d’informations, consultez [Comment : créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]ouvre le nouveau document Word dans le concepteur et ajoute le projet **EmployeeControls** à **Explorateur de solutions**.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ouvre le nouveau document Word dans le concepteur et ajoute le projet **EmployeeControls** à **Explorateur de solutions**.
 
 ## <a name="add-content-controls-to-the-document"></a>Ajouter des contrôles de contenu au document
  Créez une table qui contient trois types différents de contrôles de contenu, où l'utilisateur peut afficher ou modifier les informations sur un employé.
@@ -148,7 +148,7 @@ ms.locfileid: "85544441"
 
      Le Concepteur de schémas s'ouvre.
 
-4. Dans **Explorateur de solutions**, ouvrez le menu contextuel pour **Employees. xsd**, puis choisissez **afficher le code**.
+4. Dans **Explorateur de solutions**, ouvrez le menu contextuel pour  **Employees. xsd**, puis choisissez  **afficher le code**.
 
 5. Remplacez le contenu du fichier **Employees. xsd** par le schéma suivant.
 
@@ -225,7 +225,7 @@ ms.locfileid: "85544441"
 
 ### <a name="to-add-a-custom-xml-part-to-the-document"></a>Pour ajouter une partie XML personnalisée au document
 
-1. Dans **Explorateur de solutions**, ouvrez le menu contextuel pour **ThisDocument.cs** ou **ThisDocument. vb**, puis choisissez **afficher le code**.
+1. Dans **Explorateur de solutions**, ouvrez le menu contextuel pour  **ThisDocument.cs** ou **ThisDocument. vb**, puis choisissez **afficher le code**.
 
 2. Ajoutez les déclarations suivantes à la classe `ThisDocument`. Le code déclare plusieurs objets que vous utiliserez pour ajouter une partie XML personnalisée au document.
 

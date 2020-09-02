@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0a79caca18c7813605ff851eea6bda642e6300a0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645615"
 ---
 # <a name="hierarchical-organization-of-resources-for-localization"></a>Organisation hiérarchique des ressources pour la localisation
@@ -50,4 +50,4 @@ Dans Visual Studio, les ressources localisées (les données comme des chaînes 
   ![Graphique NeutralSpecificResources](../ide/media/vbneutralspecificresources.gif "vbNeutralSpecificResources")
 
 ## <a name="see-also"></a>Voir aussi
- [Langues des ressources neutres pour la sécurité de la localisation](../ide/neutral-resources-languages-for-localization.md) [et assemblys satellites localisés](../ide/security-and-localized-satellite-assemblies.md) [localisation d’applications](../ide/localizing-applications.md) [globalisation et localisation d’applications](../ide/globalizing-and-localizing-applications.md) [Comment : définir la culture et la culture d’interface utilisateur pour Windows Forms Globalisation](https://msdn.microsoft.com/694e049f-0b91-474a-9789-d35124f248f0) [Comment : définir la culture et la culture d’interface utilisateur pour la globalisation des pages Web ASP.net](https://msdn.microsoft.com/library/76091f86-f967-4687-a40f-de87bd8cc9a0)
+ [Langues des ressources neutres pour la sécurité de la localisation](../ide/neutral-resources-languages-for-localization.md) [et assemblys satellites localisés](../ide/security-and-localized-satellite-assemblies.md) [localisation](../ide/localizing-applications.md) d’applications [globalisation et localisation d’applications](../ide/globalizing-and-localizing-applications.md) [Comment : définir la culture et la culture d’interface utilisateur pour](https://msdn.microsoft.com/694e049f-0b91-474a-9789-d35124f248f0) la globalisation Windows Forms [Comment : définir la culture et la culture d’interface utilisateur pour la globalisation des pages Web ASP.net](https://msdn.microsoft.com/library/76091f86-f967-4687-a40f-de87bd8cc9a0)

@@ -8,15 +8,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2a28bedd01e3a4f6a7a87b025ac9a9a6184da9b2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591864"
 ---
 # <a name="t4-import-directive"></a>Directive d'importation T4
 
-Dans les blocs de code d’un modèle de texte T4 Visual Studio, la directive `import` vous permet de faire référence à des éléments d’un autre espace de noms sans fournir un nom complet. Cela équivaut à `using` en C# ou à `imports` en [!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)].
+Dans les blocs de code d’un modèle de texte T4 Visual Studio, la `import` directive vous permet de faire référence à des éléments d’un autre espace de noms sans fournir de nom complet. Cela équivaut à `using` en C# ou à `imports` en [!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)].
 
 Pour obtenir une vue d’ensemble générale de l’écriture de modèles de texte T4, consultez [écriture d’un modèle de texte T4](../modeling/writing-a-t4-text-template.md).
 

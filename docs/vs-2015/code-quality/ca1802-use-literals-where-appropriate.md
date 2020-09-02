@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: dc8019c97d3c561000f1c6a8d083bee6253face3
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544402"
 ---
 # <a name="ca1802-use-literals-where-appropriate"></a>CA1802 : Utilisez des littéraux quand cela est approprié
@@ -32,7 +32,7 @@ ms.locfileid: "85544402"
 |Category|Microsoft. performance|
 |Modification avec rupture|Sans rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Un champ est déclaré `static` et `readonly` ( `Shared` et `ReadOnly` dans [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ), et est initialisé avec une valeur qui peut être calculée au moment de la compilation.
 
 ## <a name="rule-description"></a>Description de la règle
