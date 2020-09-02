@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8fc2af704ab587480913c51cdbc593e6cc0f483a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663464"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>Comment : ajouter des activités à la boîte à outils
@@ -25,7 +25,7 @@ Les activités peuvent être ajoutées à la **boîte à outils** dans votre sol
 
 2. Ajoutez une logique personnalisée à votre activité.
 
-3. Générez le projet. Si la génération a réussi, une nouvelle catégorie de la **boîte à outils** nommée « \<*nom du projet*> » avec l’activité personnalisée incluse dans cette catégorie s’affiche.
+3. Créez le projet. Si la génération a réussi, une nouvelle catégorie de la **boîte à outils** nommée « \<*project name*> » avec l’activité personnalisée incluse dans cette catégorie s’affiche.
 
     > [!NOTE]
     > Si la boîte à outils est réinitialisée, des activités personnalisées sont supprimées, même si la solution est générée à nouveau. Pour remplir de nouveau la boîte à outils avec des activités personnalisées, redémarrez [!INCLUDE[vs2010](../includes/vs2010-md.md)] après que la boîte à outils a été réinitialisée.
@@ -40,13 +40,13 @@ Les activités peuvent être ajoutées à la **boîte à outils** dans votre sol
 
 1. Ouvrez une solution qui contient au moins un projet de workflow, ainsi qu'un projet de bibliothèque d'activités personnalisées ou un autre projet de workflow qui définit une activité personnalisée.
 
-2. Générez les deux projets. Si les builds sont réussies, une nouvelle catégorie de la **boîte à outils** nommée « \<*nom du projet*> » avec l’activité personnalisée incluse dans cette catégorie s’affiche.
+2. Générez les deux projets. Si les builds ont réussi, une nouvelle catégorie de la **boîte à outils** nommée « \<*project name*> » avec l’activité personnalisée incluse dans cette catégorie s’affiche.
 
 ### <a name="to-add-an-activity-to-the-toolbox-from-an-assembly"></a>Pour ajouter une activité à la boîte à outils à partir d'un assembly
 
 1. Ouvrez une solution de workflow.
 
-2. Dans le menu **Outils** , sélectionnez **choisir des éléments de boîte à outils...** .
+2. Dans le menu **Outils** , sélectionnez **choisir des éléments de boîte à outils...**.
 
 3. Dans la boîte de dialogue **choisir des éléments de boîte à outils** , sélectionnez l’onglet **composants System. Activities** , puis cliquez sur **Parcourir...** pour accéder à l’assembly qui contient l’activité personnalisée que vous souhaitez ajouter.
 

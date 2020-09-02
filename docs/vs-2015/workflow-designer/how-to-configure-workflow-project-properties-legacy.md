@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 850e9314e4cccfa09903638dab91eaca7334cee5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663430"
 ---
 # <a name="how-to-configure-workflow-project-properties-legacy"></a>Procédure : configurer des propriétés de projet de workflow (héritée)
@@ -29,11 +29,11 @@ Procédez comme suit pour afficher ou modifier des propriétés associées aux p
 
 1. Si **Explorateur de solutions** fenêtre n’est pas visible, sélectionnez **Explorateur de solutions** dans le menu **affichage** .
 
-2. Dans l’**Explorateur de solutions**, sélectionnez un projet.
+2. Dans **Explorateur de solutions**, sélectionnez un projet.
 
 3. Si la fenêtre **Propriétés** n’est pas visible, sélectionnez **fenêtre Propriétés** dans le menu **affichage** .
 
 4. Dans la fenêtre **Propriétés** du projet, affichez et modifiez les propriétés que vous souhaitez modifier.
 
 ## <a name="see-also"></a>Voir aussi
- [Création de projets de flux de travail hérités](../workflow-designer/creating-legacy-workflow-projects.md)
+ [Création de projets de workflows hérités](../workflow-designer/creating-legacy-workflow-projects.md)

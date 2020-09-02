@@ -13,10 +13,10 @@ author: steved0x
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d775c79cc7abdf6a66b1174ae625ca468f0764fc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663449"
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Procédure : ajouter des commentaires à un workflow dans le Concepteur de flux de travail
@@ -45,7 +45,7 @@ Pour faciliter la création de workflows de plus grande taille et plus complexes
 
 3. L'élément affiche une icône d'annotation. Lorsque vous placez le pointeur sur l'icône d'annotation, le texte de l'annotation s'affiche.
 
-     ![Activité de séquence présentant l’annotation](../workflow-designer/media/annotation.png "Annotation")
+     ![Activité Sequence avec annotation](../workflow-designer/media/annotation.png "Annotation")
 
 ### <a name="displaying-an-annotation-in-an-activitys-designer"></a>Afficher une annotation dans le concepteur d'une activité
 
@@ -53,11 +53,11 @@ Pour faciliter la création de workflows de plus grande taille et plus complexes
 
 2. L'annotation est affichée dans le concepteur de l'activité. Dans la capture d'écran ci-dessous, l'annotation « Démarrage de l'activité dans le workflow » s'affiche dans le concepteur de l'activité.
 
-     ![Annotation affichée dans le concepteur d’activités](../workflow-designer/media/annotationindesigner.png "AnnotationInDesigner")
+     ![Annotation affichée dans le concepteur d'activités](../workflow-designer/media/annotationindesigner.png "AnnotationInDesigner")
 
 3. Pour afficher l’annotation en dehors du concepteur de l’activité, pointez sur la zone d’annotation dans le concepteur de l’activité, puis cliquez sur l’icône de **désépingler**
 
-     ![Annotation affichée en dehors de la conception d’une activité](../workflow-designer/media/annotationoutsidedesigner.png "AnnotationOutsideDesigner")
+     ![Annotation affichée en dehors d'un concepteur d'activités](../workflow-designer/media/annotationoutsidedesigner.png "AnnotationOutsideDesigner")
 
 ### <a name="showing-or-hiding-all-annotations"></a>Affichage ou masquage de toutes les annotations
 

@@ -30,10 +30,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 19eed30074215b64301d7227e93ba6bf5b438d78
-ms.sourcegitcommit: 2f64b3b231900018fceafb72b5a1c65140213a18
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84183777"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Spécifier des fichiers de symboles (. pdb) et sources dans le débogueur Visual Studio (C#, C++, Visual Basic, F #)
@@ -81,7 +81,7 @@ Le débogueur recherche également les fichiers de symboles aux emplacements sui
 
    - Tout dossier de cache de symboles local.
 
-   - Serveurs de symboles réseau, Internet ou locaux spécifiés et emplacements, tels que les serveurs de symboles Microsoft, s’ils sont sélectionnés. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]peut télécharger des fichiers de symboles de débogage à partir des serveurs de symboles qui implémentent le `symsrv` protocole. [Visual Studio Team Foundation Server](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols) et les [outils de débogage pour Windows](/windows-hardware/drivers/debugger/index) sont deux outils qui peuvent utiliser des serveurs de symboles.
+   - Serveurs de symboles réseau, Internet ou locaux spécifiés et emplacements, tels que les serveurs de symboles Microsoft, s’ils sont sélectionnés. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] peut télécharger des fichiers de symboles de débogage à partir des serveurs de symboles qui implémentent le `symsrv` protocole. [Visual Studio Team Foundation Server](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols) et les [outils de débogage pour Windows](/windows-hardware/drivers/debugger/index) sont deux outils qui peuvent utiliser des serveurs de symboles.
 
      Les serveurs de symboles que vous pouvez utiliser sont les suivants :
 
@@ -159,14 +159,14 @@ Vous pouvez sélectionner des options de symbole supplémentaires dans **Outils*
   <a name="BKMK_Use_symbol_servers_to_find_symbol_files_not_on_your_local_machine"></a>
 - **Activer la prise en charge du serveur source**
 
-  Utilise le serveur source pour déboguer une application quand il n’y a pas de code source sur l’ordinateur local, ou si le fichier *. pdb* ne correspond pas au code source. Le serveur source prend les demandes de fichiers et retourne les fichiers réels du contrôle de code source. Le serveur source s’exécute à l’aide d’une DLL nommée *SRCSRV. dll* pour lire le fichier *. pdb* de l’application. Le fichier *. pdb* contient des pointeurs vers le référentiel de code source, ainsi que des commandes utilisées pour extraire le code source du référentiel.
+  Utilise le serveur source pour déboguer une application quand il n’y a pas de code source sur l’ordinateur local, ou si le fichier *. pdb* ne correspond pas au code source. Le serveur source prend les demandes de fichiers et retourne les fichiers réels du contrôle de code source. Le serveur source s’exécute à l’aide d’une DLL nommée *srcsrv.dll* pour lire le fichier *. pdb* de l’application. Le fichier *. pdb* contient des pointeurs vers le référentiel de code source, ainsi que des commandes utilisées pour extraire le code source du référentiel.
 
-  Vous pouvez limiter les commandes que *SRCSRV. dll* peut exécuter à partir du fichier *. pdb* de l’application en répertoriant les commandes autorisées dans un fichier nommé *SRCSRV. ini*. Placez le fichier *SRCSRV. ini* dans le même dossier que *SRCSRV. dll* et *devenv. exe*.
+  Vous pouvez limiter les commandes que *srcsrv.dll* pouvez exécuter à partir du fichier *. pdb* de l’application en répertoriant les commandes autorisées dans un fichier nommé *srcsrv.ini*. Placez le fichier *srcsrv.ini* dans le même dossier que *srcsrv.dll* et *devenv.exe*.
 
   >[!IMPORTANT]
-  >Les commandes arbitraires peuvent être incorporées dans le fichier *. pdb* d’une application. par conséquent, veillez à placer uniquement les commandes que vous souhaitez exécuter dans un fichier *SRCSRV. ini* . Toute tentative d’exécution d’une commande ne se trouvant pas dans le fichier *srcsvr.ini* provoque l’apparition d’une boîte de dialogue de confirmation. Pour plus d'informations, consultez [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md).
+  >Les commandes arbitraires peuvent être incorporées dans le fichier *. pdb* d’une application. par conséquent, veillez à placer uniquement les commandes que vous souhaitez exécuter dans un fichier *srcsrv.ini* . Toute tentative d’exécution d’une commande ne se trouvant pas dans le fichier *srcsvr.ini* provoque l’apparition d’une boîte de dialogue de confirmation. Pour plus d'informations, consultez [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md).
   >
-  >Aucune validation n’est effectuée sur les paramètres de commande, soyez donc prudent avec les commandes de confiance. Par exemple, si vous avez répertorié *cmd. exe* dans votre fichier *SRCSRV. ini*, un utilisateur malveillant peut spécifier des paramètres sur *cmd. exe* qui le rendrait dangereux.
+  >Aucune validation n’est effectuée sur les paramètres de commande, soyez donc prudent avec les commandes de confiance. Par exemple, si vous avez répertorié *cmd.exe* dans votre *srcsrv.ini*, un utilisateur malveillant peut spécifier des paramètres sur *cmd.exe* qui le rendrait dangereux.
 
   Sélectionnez cet élément et les éléments enfants de votre choix. **Autoriser le serveur source pour les assemblys de confiance partielle (managé uniquement)** et **toujours exécuter des commandes de serveur source non fiables sans demander de confirmation** peut augmenter les risques de sécurité.
 
@@ -182,21 +182,21 @@ Générez avec **/Debug** pour créer un fichier *. pdb* . Vous pouvez générer
 
 ### <a name="cc-options"></a>Options C/C++
 
-- Fichiers *VC \< x>. pdb* et * \< Project>. pdb*
+- Fichiers *VC \<x> . pdb* et * \<project> . pdb*
 
-  Un fichier *. pdb* pour C/C++ est créé lorsque vous générez avec [/Zi ou/Zi](/cpp/build/reference/z7-zi-zi-debug-information-format). Dans [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] , l’option [/FD](/cpp/build/reference/fd-program-database-file-name) permet de nommer le fichier *. pdb* créé par le compilateur. Lorsque vous créez un projet dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] à l’aide de l’IDE, l’option **/FD** est définie pour créer un fichier *. pdb* nommé * \< Project>. pdb*.
+  Un fichier *. pdb* pour C/C++ est créé lorsque vous générez avec [/Zi ou/Zi](/cpp/build/reference/z7-zi-zi-debug-information-format). Dans [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] , l’option [/FD](/cpp/build/reference/fd-program-database-file-name) permet de nommer le fichier *. pdb* créé par le compilateur. Lorsque vous créez un projet dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] à l’aide de l’IDE, l’option **/FD** est définie pour créer un fichier *. pdb* nommé * \<project> . pdb*.
 
   Si vous générez votre application C/C++ à l’aide d’un Makefile et que vous spécifiez **/Zi** ou **/Zi** sans utiliser **/FD**, le compilateur crée deux fichiers *. pdb* :
 
-  - *VC \< x>. pdb*, où * \< x>* représente la version du compilateur Microsoft C++, par exemple *VC11. pdb*
+  - *VC \<x> . pdb*, où *\<x>* représente la version du compilateur Microsoft C++, par exemple *VC11. pdb*
 
-    Le fichier *VC \< x>. pdb* stocke toutes les informations de débogage pour les fichiers objets individuels et réside dans le même répertoire que le Makefile du projet. À chaque fois qu’il crée un fichier objet, le compilateur C/C++ fusionne les informations de débogage dans *VC \< x>. pdb*. Par conséquent, même si chaque fichier source contient des fichiers d’en-tête courants tels que * \< Windows. h>*, les typedefs de ces en-têtes ne sont stockés qu’une seule fois, et non dans chaque fichier objet. Les informations insérées incluent les informations de type, mais pas les informations de symbole, comme les définitions de fonctions.
+    Le fichier *VC \<x> . pdb* stocke toutes les informations de débogage pour les fichiers objets individuels et réside dans le même répertoire que le Makefile du projet. À chaque fois qu’il crée un fichier objet, le compilateur C/C++ fusionne les informations de débogage dans *VC \<x> . pdb*. Par conséquent, même si chaque fichier source contient des fichiers d’en-tête communs tels que *\<windows.h>* , les typedefs de ces en-têtes ne sont stockés qu’une seule fois, et non dans chaque fichier objet. Les informations insérées incluent les informations de type, mais pas les informations de symbole, comme les définitions de fonctions.
 
-  - *\<Project>. pdb*
+  - *\<project>. pdb*
 
-    Le fichier * \<>. pdb du projet* stocke toutes les informations de débogage du fichier *. exe* du projet et réside dans le sous-répertoire *\Debug.* Le fichier * \<>. pdb du projet* contient des informations de débogage complètes, y compris les prototypes de fonction, pas seulement les informations de type trouvées dans *VC \< x>. pdb*.
+    Le fichier * \<project> . pdb* stocke toutes les informations de débogage du fichier *. exe* du projet et réside dans le sous-répertoire *\Debug.* Le fichier * \<project> . pdb* contient des informations de débogage complètes, y compris les prototypes de fonction, pas seulement les informations de type trouvées dans *VC \<x> . pdb*.
 
-  Les fichiers *VC \< x>. pdb* et * \< Project>. pdb* autorisent les mises à jour incrémentielles. L’éditeur de liens incorpore également le chemin d’accès aux fichiers *. pdb* dans le fichier. *exe* ou *. dll* qu’il crée.
+  Les fichiers *VC \<x> . pdb* et * \<project> . pdb* autorisent les mises à jour incrémentielles. L’éditeur de liens incorpore également le chemin d’accès aux fichiers *. pdb* dans le fichier. *exe* ou *. dll* qu’il crée.
 
 - <a name="use-dumpbin-exports"></a>Tables d’exportation de DLL
 
@@ -206,7 +206,7 @@ Générez avec **/Debug** pour créer un fichier *. pdb* . Vous pouvez générer
 
 ### <a name="web-applications"></a>Applications web
 
-Définissez le fichier *Web. config* de votre application ASP.net en mode débogage. En mode débogage, ASP.NET génère des symboles pour les fichiers générés dynamiquement et le débogueur peut être attaché à l'application ASP.NET. Visual Studio définit cette valeur automatiquement lorsque vous commencez à déboguer, si vous avez créé votre projet à partir du modèle de projets Web.
+Définissez le fichier *web.config* de votre application ASP.net en mode débogage. En mode débogage, ASP.NET génère des symboles pour les fichiers générés dynamiquement et le débogueur peut être attaché à l'application ASP.NET. Visual Studio définit cette valeur automatiquement lorsque vous commencez à déboguer, si vous avez créé votre projet à partir du modèle de projets Web.
 
 ## <a name="manage-symbols-while-debugging"></a>Gérer les symboles pendant le débogage
 
@@ -245,7 +245,7 @@ Dans ce cas, le débogueur affiche les pages **aucun symbole chargé** ou **aucu
 **Pour utiliser la page de document aucun symbole n’a été chargé pour rechercher et charger les symboles manquants :**
 
 - Pour modifier le chemin de recherche, sélectionnez un chemin d’accès non sélectionné ou sélectionnez **nouveau chemin d'** accès ou **nouveau chemin d’accès VSTS** , puis entrez ou sélectionnez un nouveau chemin d’accès. Sélectionnez **charger** pour rechercher à nouveau les chemins d’accès et charger le fichier de symboles s’il est trouvé.
-- Pour remplacer toutes les options de symbole et réessayer les chemins de recherche, sélectionnez **Parcourir et recherchez \< exécutable-Name>**. Le fichier de symboles est chargé s’il est trouvé, ou l' **Explorateur de fichiers** s’ouvre pour vous permettre de sélectionner manuellement le fichier de symboles.
+- Pour remplacer toutes les options de symbole et réessayer les chemins de recherche, sélectionnez **Parcourir et rechercher \<executable-name> **. Le fichier de symboles est chargé s’il est trouvé, ou l' **Explorateur de fichiers** s’ouvre pour vous permettre de sélectionner manuellement le fichier de symboles.
 - Pour ouvrir la page **options**de  >  **débogage**  >  **Symbols** des options, sélectionnez **modifier les paramètres des symboles**.
 - Pour afficher le code machine dans une nouvelle fenêtre une fois, sélectionnez **afficher le code machine**ou sélectionnez **boîte de dialogue Options** pour définir l’option permettant d’afficher toujours le code machine lorsque les fichiers sources ou de symboles sont introuvables.
 - Pour afficher les emplacements recherchés et le résultat, développez **informations sur le chargement des symboles**.

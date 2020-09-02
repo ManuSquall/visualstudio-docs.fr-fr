@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4aad87832a5bdae0d28d461d4cc289551eee7fee
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88249977"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application"></a>Procédure pas à pas : Déployer manuellement une application ClickOnce
@@ -149,7 +149,7 @@ Si vous ne pouvez pas utiliser Visual Studio pour déployer votre [!INCLUDE[ndpt
 
 13. Si vous avez un certificat stocké en tant que fichier sur votre système de fichiers, utilisez l’option **signer avec le fichier de certificat** , puis sélectionnez le certificat dans le système de fichiers à l’aide du bouton de sélection (**...**). Tapez ensuite votre mot de passe de certificat.
 
-     - ou -
+     -ou-
 
      Si votre certificat est conservé dans un magasin de certificats accessible à partir de votre ordinateur, sélectionnez l’option **signer avec le certificat stocké** , puis sélectionnez le certificat dans la liste fournie.
 
@@ -177,7 +177,7 @@ Si vous ne pouvez pas utiliser Visual Studio pour déployer votre [!INCLUDE[ndpt
 
 25. Si vous avez un certificat stocké en tant que fichier sur votre système de fichiers, utilisez l’option **signer avec le fichier de certificat** , puis sélectionnez le certificat dans le système de fichiers à l’aide du bouton de sélection (**...**). Tapez ensuite votre mot de passe de certificat.
 
-     - ou -
+     -ou-
 
      Si votre certificat est conservé dans un magasin de certificats accessible à partir de votre ordinateur, sélectionnez l’option **signer avec le certificat stocké** , puis sélectionnez le certificat dans la liste fournie.
 

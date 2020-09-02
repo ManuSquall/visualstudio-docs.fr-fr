@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5126b3dc45d33471080ae154e06f4a327e21fef7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663439"
 ---
 # <a name="how-to-change-the-debug-stepping-option-legacy"></a>Procédure : modifier l'option de débogage pas à pas (héritée)
@@ -37,7 +37,7 @@ Cette rubrique décrit comment modifier l'option de débogage pas à pas pour le
 
 2. Ouvrez un projet de workflow hérité existant ou créez un nouveau projet qui fait appel à des activités simultanées et qui cible le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
-3. Dans le menu **Workflow** de la [!INCLUDE[wfd2](../includes/wfd2-md.md)] héritée, pointez sur **Déboguer**, puis pointez sur **options pas à pas**.
+3. Dans le menu **Workflow** de l’ancien [!INCLUDE[wfd2](../includes/wfd2-md.md)] , pointez sur **Déboguer**, puis pointez sur **options pas à pas**.
 
 4. Sélectionnez une **instance** ou une **branche**.
 

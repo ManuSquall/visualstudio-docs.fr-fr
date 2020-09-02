@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a216e053a08662da5da04206c780fb4455e9ec09
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663495"
 ---
 # <a name="start-command"></a>Démarrer, commande
@@ -35,10 +35,10 @@ Debug.Start [address]
 ## <a name="arguments"></a>Arguments
  `address` Facultatif. Adresse à laquelle le programme suspend son exécution, semblable à un point d’arrêt dans le code source. Cet argument est valide uniquement en mode débogage.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Quand elle est exécutée, la commande **Start** effectue une opération RunToCursor vers l’adresse spécifiée.
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
  Cet exemple démarre le débogueur et ignore toute exception qui peut se produire.
 
 ```
