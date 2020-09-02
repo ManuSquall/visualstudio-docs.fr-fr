@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: aa0b73b6608f0dfd5daa4b770b7d780e64704c99
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544428"
 ---
 # <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724 : Les noms de types ne doivent pas être identiques aux espaces de noms
@@ -32,7 +32,7 @@ ms.locfileid: "85544428"
 |Category|Microsoft. Naming|
 |Modification avec rupture|Rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Un nom de type correspond à un nom [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] d’espace de noms dans une comparaison qui ne respecte pas la casse.
 
 ## <a name="rule-description"></a>Description de la règle
