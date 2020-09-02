@@ -10,13 +10,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 83dc76e3e92a05f936d94c8cd0f6a2b9b69e4cc1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192820"
 ---
-# <a name="start"></a>Start
+# <a name="start"></a>Démarrer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 L’option **Start** est une option de VSPerfCmd.exe qui initialise le profileur avec la méthode de profilage spécifiée.  
@@ -42,7 +42,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 ## <a name="required-options"></a>Options obligatoires  
  L’option **Output** doit être spécifiée quand **Start** est spécifié sur la ligne de commande.  
   
- **Output:** `filename`  
+ **Sortie :**`filename`  
  Spécifie le nom du fichier de sortie.  
   
 ## <a name="exclusive-options"></a>Options exclusives  
@@ -51,7 +51,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
  **CrossSession**&#124;**CS**  
  Active le profilage interprocessus. Les noms **CrossSession** et **CS** de l’option sont tous deux pris en charge.  
   
- **User:** [`domain\`]`username`  
+ **Utilisateur :**[ `domain\` ]`username`  
  Permet l’accès du client au moniteur à partir du compte spécifié.  
   
  **WinCounter:** `Path` [**Automark**:`n`]  
@@ -60,13 +60,13 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 ## <a name="invalid-options"></a>Options non valides  
  Les options suivantes ne peuvent pas être utilisées avec l’option **Start** sur une ligne de commande.  
   
- **Status**  
+ **Statut**  
  **Status** s’applique aux processus profilés. Il répertorie les processus et les threads, ainsi que l’état de leur profil actuel (Activé/Désactivé). Par exemple, si un processus est arrêté, **Status** ne l’indique pas dans le rapport. **Status** indique que le processus est profilé ou non.  
   
- **Shutdown**[ **:** `Timeout`]  
+ **Shutdown**[**:** `Timeout` ]  
  Désactive le profileur.  
   
-## <a name="example"></a>Exemples  
+## <a name="example"></a>Exemple  
  L’exemple suivant montre l’utilisation de l’option **Start** de VSPerfCmd.exe pour initialiser le profileur.  
   
 ```  
@@ -75,7 +75,7 @@ VSPerfCmd.exe /Launch:TestApp.exe
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [VSPerfCmd](../profiling/vsperfcmd.md)   
+ [Option](../profiling/vsperfcmd.md)   
  [Profilage d’applications autonomes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilage d’applications web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Profilage de services](../profiling/command-line-profiling-of-services.md)
+ [Profilage d’applications Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Profilage des services](../profiling/command-line-profiling-of-services.md)

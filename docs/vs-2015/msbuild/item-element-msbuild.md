@@ -18,10 +18,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cc3d606bb890b5f95089bfc7b1e83b2d34cd56ba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192604"
 ---
 # <a name="item-element-msbuild"></a>Item, élément (MSBuild)
@@ -64,7 +64,7 @@ Contient un élément défini par l'utilisateur et ses métadonnées. Chaque él
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[ItemMetadata](../msbuild/itemmetadata-element-msbuild.md)|Clé de métadonnées d'élément définie par l'utilisateur, qui contient la valeur des métadonnées de l'élément. Un élément peut ne contenir aucun élément `ItemMetadata` ou en contenir plusieurs.|  
+|[ItemMetadata,](../msbuild/itemmetadata-element-msbuild.md)|Clé de métadonnées d'élément définie par l'utilisateur, qui contient la valeur des métadonnées de l'élément. Un élément peut ne contenir aucun élément `ItemMetadata` ou en contenir plusieurs.|  
   
 ### <a name="parent-elements"></a>Éléments parents  
   
@@ -72,14 +72,14 @@ Contient un élément défini par l'utilisateur et ses métadonnées. Chaque él
 |-------------|-----------------|  
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Élément grouping pour d’autres éléments.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Les éléments `Item` définissent les entrées du système de génération et sont regroupés en collections d'éléments, selon leur nom de collection défini par l'utilisateur. Ces collections d’éléments peuvent être utilisées comme paramètres des [tâches](../msbuild/msbuild-tasks.md), lesquelles utilisent les éléments d’une collection pour exécuter les étapes du processus de génération. Pour plus d’informations, consultez l’article [Éléments MSBuild](../msbuild/msbuild-items.md).  
   
- La notation `@(`*monType*`)` permet de développer une collection d’éléments de type *monType* en une liste de chaînes séparées par des points-virgules, et de la transmettre à un paramètre. Si le paramètre est de type `string`, la valeur du paramètre correspond à la liste des éléments séparés par des points-virgules. Si le paramètre est un tableau de chaînes (`string[]`), chaque élément est inséré dans le tableau selon l'emplacement des points-virgules. Si le paramètre de tâche est de type <xref:Microsoft.Build.Framework.ITaskItem>`[]`, la valeur correspond au contenu de la collection d'éléments et à toutes les métadonnées associées. Pour délimiter chaque élément à l’aide d’un caractère autre que le point-virgule, utilisez la syntaxe `@(`*monType*`, '`*séparateur*`')`.  
+ L’utilisation de la notation `@(` *MyType* `)` permet de développer une collection d’éléments de type *MyType* en une liste de chaînes délimitées par des points-virgules, et de la passer à un paramètre. Si le paramètre est de type `string`, la valeur du paramètre correspond à la liste des éléments séparés par des points-virgules. Si le paramètre est un tableau de chaînes (`string[]`), chaque élément est inséré dans le tableau selon l'emplacement des points-virgules. Si le paramètre de tâche est de type <xref:Microsoft.Build.Framework.ITaskItem>`[]`, la valeur correspond au contenu de la collection d'éléments et à toutes les métadonnées associées. Pour délimiter chaque élément à l’aide d’un caractère autre qu’un point-virgule, utilisez le séparateur de syntaxe `@(` *MyType* `, '` *separator* `')` .  
   
  Le moteur [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] peut évaluer les caractères génériques tels que `*` et `?`, ainsi que les caractères génériques récursifs comme `/**/*.cs`. Pour plus d’informations, consultez l’article [Éléments MSBuild](../msbuild/msbuild-items.md).  
   
-## <a name="example"></a>Exemples  
+## <a name="example"></a>Exemple  
  L'exemple de code suivant montre comment déclarer deux éléments de type `CSFile`. Le second élément déclaré contient les métadonnées dans lesquelles `MyMetadata` a la valeur `HelloWorld`.  
   
 ```  
@@ -92,6 +92,6 @@ Contient un élément défini par l'utilisateur et ses métadonnées. Chaque él
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Éléments](../msbuild/msbuild-items.md)   
+ [Contenus](../msbuild/msbuild-items.md)   
  [Propriétés MSBuild](msbuild-properties1.md)   
- [Référence du schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)
+ [Référence de schéma de fichier de projet](../msbuild/msbuild-project-file-schema-reference.md)

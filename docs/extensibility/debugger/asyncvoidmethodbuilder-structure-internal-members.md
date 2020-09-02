@@ -1,5 +1,5 @@
 ---
-title: Structure AsyncVoidMethodBuilder - Membres internes Microsoft Docs
+title: Structure AsyncVoidMethodBuilder-membres internes | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,20 +12,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 866a53fae7bb2cc5325112b84d992da6f95af246
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739298"
 ---
-# <a name="asyncvoidmethodbuilder-structure---internal-members"></a>Structure AsyncVoidMethodBuilder - membres internes
-Ce sujet décrit les membres <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder> internes de la classe. Pour plus d’informations générales <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder> sur cette classe, consultez le sujet de référence.
+# <a name="asyncvoidmethodbuilder-structure---internal-members"></a>Structure AsyncVoidMethodBuilder-membres internes
+Cette rubrique décrit les membres internes de la <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder> classe. Pour obtenir des informations générales sur cette classe, consultez la <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder> rubrique de référence.
 
- **Espace nom:**<xref:System.Runtime.CompilerServices?displayProperty=fullName>
+ **Espace de noms :** <xref:System.Runtime.CompilerServices?displayProperty=fullName>
 
- **Assemblée:** mscorlib (en mscorlib.dll)
+ **Assembly :** mscorlib (en mscorlib.dll)
 
- Parce que vous ne pouvez pas accéder à ces membres internes à partir du cadre .NET, la syntaxe suivante est fournie dans common Intermediate Language (CIL).
+ Étant donné que vous ne pouvez pas accéder à ces membres internes à partir du .NET Framework, la syntaxe suivante est fournie en Common Intermediate Language (CIL).
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -39,9 +39,9 @@ Ce sujet décrit les membres <xref:System.Runtime.CompilerServices.AsyncVoidMeth
 
 |Nom|Description|
 |----------|-----------------|
-|[ObjectIdForDebugger propriété](../../extensibility/debugger/asyncvoidmethodbuilder-objectidfordebugger-property.md)|Obtient un objet qui peut être utilisé pour identifier uniquement ce constructeur au débbugger.|
-|[champ m_objectIdForDebugger](../../extensibility/debugger/asyncvoidmethodbuilder-m-objectidfordebugger-field.md)|Représente l’objet paresseusement initialisé utilisé par le débbugeur pour identifier de façon unique ce constructeur.|
+|[Propriété ObjectIdForDebugger](../../extensibility/debugger/asyncvoidmethodbuilder-objectidfordebugger-property.md)|Obtient un objet qui peut être utilisé pour identifier de manière unique ce générateur auprès du débogueur.|
+|[champ m_objectIdForDebugger](../../extensibility/debugger/asyncvoidmethodbuilder-m-objectidfordebugger-field.md)|Représente l’objet initialisé tardivement utilisé par le débogueur pour identifier ce générateur de manière unique.|
 
 ## <a name="see-also"></a>Voir aussi
 - <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>
-- [Internals d’extension parallèle pour le cadre .NET](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+- [Éléments internes de l’extension parallèle pour le .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

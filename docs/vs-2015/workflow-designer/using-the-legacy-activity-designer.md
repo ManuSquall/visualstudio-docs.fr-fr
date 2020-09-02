@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cd8d18d95fabd858354c625d2c9b32459efc7193
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75846152"
 ---
 # <a name="using-the-legacy-activity-designer"></a>Utilisation du concepteur d'activités hérité
@@ -46,9 +46,9 @@ Cette rubrique décrit comment utiliser le concepteur d'activités dans le [!INC
 ## <a name="configuring-an-activity"></a>Configuration d'une activité
  Lorsque le concepteur d'activités est actif, vous pouvez utiliser l'explorateur de propriétés pour configurer les propriétés répertoriées dans le tableau suivant.
 
-|Les|Comments|
+|Propriété|Commentaires|
 |--------------|--------------|
-|**Name**|Nom de l'activité.|
+|**Name**|Nom de l’activité.|
 |**Classe de base**|Classe de base dont dérive l'activité. La classe de base par défaut est [SequenceActivity](https://msdn2.microsoft.com/library/system.workflow.activities.sequenceactivity.aspx). Dans la fenêtre **Propriétés** , cliquez sur les points de suspension de la **classe de base** **[...]** pour sélectionner une autre classe de base dans la [boîte de dialogue Rechercher et sélectionner un type .net (hérité)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md).|
 |**Description**|Description de l'activité définie par l'utilisateur.|
 |**Activé**|Affectez la valeur **true** par défaut pour activer l’exécution et la validation de l’activité. Affectez la valeur **false** pour désactiver l’exécution et la validation de l’activité. Pour plus d’informations sur l’exécution et la validation d’activités, consultez [développement d’activités de flux de travail](https://msdn2.microsoft.com/library/ms734413.aspx).|

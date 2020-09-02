@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramHost2::GetHostId | Microsoft Docs
+title: 'IDebugProgramHost2 :: GetHostId | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4e7421ceed436f90612889ba7b80a21ee3079c2c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68165147"
 ---
 # <a name="idebugprogramhost2gethostid"></a>IDebugProgramHost2::GetHostId
@@ -40,10 +40,10 @@ int GetHostId( 
   
 #### <a name="parameters"></a>Paramètres  
  `pdwId`  
- [in, out] Un [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) structure est remplie avec les informations d’identificateur de processus.  
+ [in, out] Structure [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) qui est renseignée avec les informations relatives à l’identificateur de processus.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugProgramHost2](../../../extensibility/debugger/reference/idebugprogramhost2.md)   

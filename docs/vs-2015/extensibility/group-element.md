@@ -12,16 +12,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 35c332682b609f6620f96cc8eb8499cca921d399
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204276"
 ---
 # <a name="group-element"></a>Élément Group
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Définit un groupe de commande VSPackage.  
+Définit un groupe de commandes VSPackage.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -38,16 +38,16 @@ Définit un groupe de commande VSPackage.
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|GUID|Requis. GUID de l’identificateur de commande/ID GUID.|  
-|id|Requis. ID de l’identificateur de commande/ID GUID.|  
-|priority|facultatif. Une valeur numérique qui spécifie la priorité.|  
+|guid|Obligatoire. GUID de l’identificateur de la commande GUID/ID.|  
+|id|Obligatoire. ID de l’identificateur de la commande GUID/ID.|  
+|priority|facultatif. Valeur numérique qui spécifie la priorité.|  
 |Condition|facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Éléments enfants  
   
 |Élément|Description|  
 |-------------|-----------------|  
-|Parent|facultatif. L’élément parent du bouton.|  
+|Parent|facultatif. Élément parent du bouton.|  
 |Annotation|Commentaire facultatif.|  
   
 ### <a name="parent-elements"></a>Éléments parents  
@@ -56,7 +56,7 @@ Définit un groupe de commande VSPackage.
 |-------------|-----------------|  
 |[Élément Groups](../extensibility/groups-element.md)|Contient des entrées qui définissent les groupes de commandes d’un VSPackage.|  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a> Exemple  
   
 ```  
 <Group guid="cmdSetGuidWidgetCommands" id="groupIDFileEdit">  

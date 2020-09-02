@@ -11,27 +11,27 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c5594d54c188c2f561dd66229e808e48068ba41a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192652"
 ---
 # <a name="initialization-sequence-of-project-subtypes"></a>Séquence d’initialisation des sous-types de projets
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-L’environnement construit un projet en appelant l’implémentation de fabrique de projet de base de <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>. La construction d’un sous-type de projet démarre lorsque l’environnement détermine que la liste GUID de type de projet pour l’extension d’un fichier de projet n’est pas vide. L’extension de fichier de projet et le GUID du projet spécifient si le projet est un [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] ou [!INCLUDE[csprcs](../../includes/csprcs-md.md)] type de projet. Par exemple, l’extension .vbproj et {F184B08F-C81C-45F6-A57F-5ABD9991F28F} identifier un [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] projet.  
+L’environnement construit un projet en appelant l’implémentation de la fabrique de projet de base de <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> . La construction d’un sous-type de projet démarre lorsque l’environnement détermine que la liste de GUID de type de projet pour l’extension d’un fichier projet n’est pas vide. L’extension de fichier projet et le GUID du projet spécifient si le projet est un [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] [!INCLUDE[csprcs](../../includes/csprcs-md.md)] type de projet ou. Par exemple, l’extension. vbproj et {F184B08F-C81C-45F6-A57F-5ABD9991F28F} identifient un [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] projet.  
   
-## <a name="environments-initialization-of-project-subtypes"></a>Initialisation de l’environnement de sous-types de projet  
- La procédure suivante décrit en détail la séquence d’initialisation pour un système de projet agrégé par plusieurs sous-types de projet.  
+## <a name="environments-initialization-of-project-subtypes"></a>Initialisation de l’environnement des sous-types de projet  
+ La procédure suivante détaille la séquence d’initialisation pour un système de projet agrégé par plusieurs sous-types de projet.  
   
-1. L’environnement appelle le projet de base <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>, et pendant que le projet analyse son fichier de projet qu’il découvre que la liste de GUID de type de projet d’agrégation n’est pas `null`. Le projet interrompt la création directe de son projet.  
+1. L’environnement appelle le du projet de base <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> et, tandis que le projet analyse son fichier projet, il découvre que la liste des GUID de type de projet d’agrégation n’est pas `null` . Le projet interrompt la création directe de son projet.  
   
-2. Les appels de projet `QueryService` sur <xref:Microsoft.VisualStudio.Shell.Interop.SVsCreateAggregateProject> service afin de créer un sous-type de projet à l’aide de la mise en oeuvre de l’environnement de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A> (méthode). Dans cette méthode, l’environnement, les appels de fonction récursive à vos implémentations de <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A>, `M:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject(System.Object)` et <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.InitializeForOuter%2A> GUID, en commençant par le sous-type de projet plus externe du type de méthodes pendant qu’il est de parcourir la liste de projet.  
+2. Le projet appelle `QueryService` sur le <xref:Microsoft.VisualStudio.Shell.Interop.SVsCreateAggregateProject> service pour créer un sous-type de projet à l’aide de l’implémentation de l’environnement de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A> méthode. Dans cette méthode, l’environnement effectue des appels de fonctions récursives à vos implémentations de <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A> `M:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject(System.Object)` et des <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.InitializeForOuter%2A> méthodes pendant qu’il parcourt la liste des GUID de type de projet, en commençant par le sous-type de projet le plus à l’extérieur.  
   
-    Les sections suivantes décrivent les étapes d’initialisation.  
+    Les étapes d’initialisation sont détaillées ci-dessous.  
   
-   1. Implémentation de l’environnement de le <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A> les appels de méthode ' HrCreateInnerProj'' ' méthode avec la déclaration de fonction suivante :  
+   1. L’implémentation de l’environnement de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A> méthode appelle la méthode’HrCreateInnerProj' ' 'avec la déclaration de fonction suivante :  
   
        ```  
        HRESULT HrCreateInnerProj  
@@ -48,19 +48,19 @@ L’environnement construit un projet en appelant l’implémentation de fabriqu
        )  
        ```  
   
-        Lorsque cette fonction est appelée pour la première fois, autrement dit, pour le sous-type de projet externe, les paramètres `pOuter` et `pOwner` sont passés comme `null` et la fonction définit le sous-type de projet extérieur `IUnknown` à `pOuter`.  
+        Lorsque cette fonction est appelée pour la première fois, autrement dit, pour le sous-type de projet le plus à l’extérieur, les paramètres `pOuter` et `pOwner` sont passés en tant que `null` et la fonction définit le sous-type de projet le plus à l’extérieur `IUnknown` sur `pOuter` .  
   
-   2. Ensuite, l’environnement appelle `HrCreateInnerProj` fonction avec le deuxième type de projet GUID dans la liste. Ce GUID correspond à la deuxième sous-type de projet interne pas à pas détaillé vers le projet de base dans la séquence d’agrégation.  
+   2. Ensuite, l’environnement appelle la `HrCreateInnerProj` fonction avec le deuxième GUID du type de projet dans la liste. Ce GUID correspond au deuxième sous-type de projet interne pas à pas détaillé dans le projet de base dans la séquence d’agrégation.  
   
-   3. Le `pOuter` pointent désormais vers le `IUnknown` du sous-type de projet extérieur, et `HrCreateInnerProj` appelle votre implémentation de <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A> suivie d’un appel à votre implémentation de <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject%2A>. Dans <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A> méthode que vous passez dans le contrôle `IUnknown` du sous-type de projet extérieur, `pOuter`. Le projet détenu (sous-type de projet interne) doit créer son objet de projet d’agrégation ici. Dans le <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject%2A> implémentation de méthode que vous passez un pointeur vers le `IUnknown` du projet interne qui est en cours d’agrégation. Ces deux méthodes créent l’objet d’agrégation et vos implémentations doivent suivre les règles d’agrégation COM pour vous assurer qu’un sous-type de projet ne finit pas maintenir un décompte de références à elle-même.  
+   3. Le `pOuter` se pointe maintenant sur le `IUnknown` du sous-type de projet le plus à l’extérieur et `HrCreateInnerProj` appelle votre implémentation de <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A> suivie d’un appel à votre implémentation de <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject%2A> . Dans <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A> la méthode, vous transmettez le contrôle du sous- `IUnknown` type de projet le plus à l’extérieur, `pOuter` . Le projet détenu (sous-type de projet interne) doit créer son objet de projet d’agrégation ici. Dans l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject%2A> implémentation de méthode, vous transmettez un pointeur vers le `IUnknown` du projet interne qui est agrégé. Ces deux méthodes créent l’objet d’agrégation, et vos implémentations doivent suivre les règles d’agrégation COM pour s’assurer qu’un sous-type de projet ne finit pas de contenir un décompte de références à lui-même.  
   
-   4. `HrCreateInnerProj` appelle votre implémentation de <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A>. Dans cette méthode, le sous-type de projet effectue son travail d’initialisation. Vous pouvez, par exemple, inscrire des événements de solution dans <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.InitializeForOuter%2A>.  
+   4. `HrCreateInnerProj` appelle votre implémentation de <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A> . Dans cette méthode, le sous-type de projet effectue son travail d’initialisation. Vous pouvez, par exemple, inscrire des événements de solution dans <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.InitializeForOuter%2A> .  
   
-   5. `HrCreateInnerProj` est appelée de manière récursive jusqu'à ce que le dernier GUID (le projet de base) dans la liste est atteint. Pour chacun de ces appels, les étapes, c et d, sont répétés. `pOuter` pointe vers le sous-type de projet extérieur `IUnknown` pour chaque niveau d’agrégation.  
+   5. `HrCreateInnerProj` est appelé de manière récursive jusqu’à ce que le dernier GUID (le projet de base) dans la liste soit atteint. Pour chacun de ces appels, les étapes, c à d, sont répétées. `pOuter` pointe vers le sous-type de projet le plus à l’extérieur `IUnknown` pour chaque niveau d’agrégation.  
   
-   L’exemple suivant décrit en détail le processus de programmation dans une représentation approximative de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A> de la méthode est implémentée par l’environnement. Le code est juste un exemple ; Il n’est pas destinée à être compilé et toutes les vérifications des erreurs a été supprimé par souci de clarté.  
+   L’exemple suivant décrit en détail le processus de programmation dans une représentation approximative de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A> méthode telle qu’elle est implémentée par l’environnement. Le code n’est qu’un exemple. elle n’est pas destinée à être compilée et toutes les vérifications d’erreurs ont été supprimées pour plus de clarté.  
   
-## <a name="example"></a>Exemples  
+## <a name="example"></a>Exemple  
   
 ### <a name="code"></a>Code  
   

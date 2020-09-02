@@ -13,10 +13,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 8eede58ab2e17d417f50cbdfe517bcfba99a6b6f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68165452"
 ---
 # <a name="install-multiple-language-versions-of-visual-studio"></a>Installer des versions multilingues de Visual Studio
@@ -26,7 +26,7 @@ Pour consulter la documentation à jour sur Visual Studio, voir [Installer des m
 
 En installant un ou plusieurs modules linguistiques, vous pourrez exécuter Visual Studio 2015 dans d’autres langues sur le même ordinateur. Vous devez obtenir un module linguistique différent pour chaque langue que vous souhaitez installer.
 
-## <a name="important-considerations"></a>Points importants à prendre en considération
+## <a name="important-considerations"></a>Éléments importants à prendre en considération
 
 - Quand vous installez un module linguistique, les fichiers de ressources pour les fonctionnalités installées sont automatiquement installés pour chaque version linguistique.
 

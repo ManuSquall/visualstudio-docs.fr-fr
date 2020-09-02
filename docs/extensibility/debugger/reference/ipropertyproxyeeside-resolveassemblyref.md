@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEESide::ResolveAssemblyRef Microsoft Docs
+title: 'IPropertyProxyEESide :: ResolveAssemblyRef | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c54945b0c89fb9608fab6aa70dcc63a7c6ae42df
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714889"
 ---
 # <a name="ipropertyproxyeesideresolveassemblyref"></a>IPropertyProxyEESide::ResolveAssemblyRef
-Détermine l’emplacement de la référence d’assemblage géré spécifiée.
+Détermine l’emplacement de la référence d’assembly managée spécifiée.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -49,25 +49,25 @@ int ResolveAssemblyRef(
 
 ## <a name="parameters"></a>Paramètres
 `assemName`\
-[dans] Nom de l’assemblée à résoudre.
+dans Nom de l’assembly à résoudre.
 
 `assemBytes`\
-[out] Renvoie un objet [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) contenant les octets d’assemblage associés à la référence.
+à Retourne un objet [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) contenant les octets d’assembly associés à la référence.
 
 `assemPdb`\
-[out] Renvoie `IEEDataStorage` un objet contenant les données du magasin de symboles associés à cette référence.
+à Retourne un `IEEDataStorage` objet contenant les données de magasin de symboles associées à cette référence.
 
 `assemLocation`\
-[out] Retourne l’emplacement du chemin de cette référence.
+à Retourne l’emplacement du chemin d’accès de cette référence.
 
 `alr`\
-[out] Renvoie une valeur du recensement [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) indiquant l’emplacement de l’assemblage de cette référence.
+à Retourne une valeur de l’énumération [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) indiquant l’emplacement de l’assembly de cette référence.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- Cette méthode n’est généralement pas mise en œuvre par un évaluateur d’expression personnalisé.
+ Cette méthode n’est généralement pas implémentée par un évaluateur d’expression personnalisé.
 
 ## <a name="see-also"></a>Voir aussi
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)

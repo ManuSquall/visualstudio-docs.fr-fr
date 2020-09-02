@@ -1,5 +1,5 @@
 ---
-title: Mise en route avec le modèle de projet VSIX | Microsoft Docs
+title: Prise en main avec le modèle de projet VSIX | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,78 +11,78 @@ caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cc3f461c9e7dbdea1fd8481594292a0a247d2173
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204296"
 ---
 # <a name="getting-started-with-the-vsix-project-template"></a>Bien démarrer avec le modèle de projet VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous pouvez utiliser le modèle de projet VSIX pour créer une extension ou un package existant d’extension pour le déploiement. Le modèle de projet VSIX a des versions de Visual Basic et Visual c# et est installé dans le cadre du SDK Visual Studio.  
+Vous pouvez utiliser le modèle de projet VSIX pour créer une extension ou pour empaqueter une extension existante en vue d’un déploiement. Le modèle de projet VSIX a à la fois des versions Visual Basic et Visual C#, et est installé dans le cadre du kit de développement logiciel (SDK) Visual Studio.  
   
- Le modèle de projet VSIX se compose uniquement d’un fichier source.extension.vsixmanifest, qui contient des informations sur l’extension et les ressources qu’il est fourni.  
+ Le modèle de projet VSIX se compose juste d’un fichier. extension. vsixmanifest source, qui contient des informations sur l’extension et les ressources qu’elle envoie.  
   
- Pour rechercher le modèle de projet VSIX, vous devez installer le SDK Visual Studio. Pour plus d’informations, consultez [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
+ Pour rechercher le modèle de projet VSIX, vous devez installer le kit de développement logiciel (SDK) Visual Studio. Pour plus d’informations, consultez [Kit de développement logiciel (SDK) Visual Studio](../extensibility/visual-studio-sdk.md).  
   
 ## <a name="deploying-a-custom-project-template-using-the-vsix-project-template"></a>Déploiement d’un modèle de projet personnalisé à l’aide du modèle de projet VSIX  
- Les étapes suivantes montrent comment utiliser le projet VSIX pour empaqueter un modèle de projet que vous pouvez partager avec d’autres développeurs ou les charger dans la galerie Visual Studio.  
+ Les étapes suivantes montrent comment utiliser le projet VSIX pour empaqueter un modèle de projet que vous pouvez partager avec d’autres développeurs ou télécharger dans la Galerie Visual Studio.  
   
-1. Créer un modèle de projet.  
+1. Créez un modèle de projet.  
   
     1. Ouvrez le projet à partir duquel créer un modèle. Ce projet peut être de n’importe quel type de projet.  
   
     2. Dans le menu **Fichier**, cliquez sur **Exporter le modèle**. Effectuez les étapes de l’Assistant.  
   
-         Un fichier .zip est créé dans %USERPROFILE%\My Documents\Visual Studio  *\<version >* \My Exported Templates\\.  
+         Un fichier. zip est créé dans%USERPROFILE%\My Documents\Visual Studio \Mes Exported *\<version>* Templates \\ .  
   
 2. Créez un projet VSIX vide.  
   
-     Dans le menu **Fichier** , cliquez sur **Nouveau** , puis sur **Projet**. Sélectionnez **Visual Basic** ou **Visual C#** . Sous le nœud sélectionné, sélectionnez **extensibilité**, puis sélectionnez **projet VSIX**.  
+     Dans le menu **Fichier**, cliquez sur **Nouveau**, puis cliquez sur **Projet**. Sélectionnez **Visual Basic** ou **Visual C#**. Sous le nœud sélectionné, sélectionnez **extensibilité**, puis **projet VSIX**.  
   
-3. Ajoutez le fichier .zip au projet. Définissez ses **Copy to Output Directory** propriété `Copy Always`.  
+3. Ajoutez le fichier. zip au projet. Affectez à la propriété **copier dans le répertoire de sortie** la valeur `Copy Always` .  
   
-4. Dans le **l’Explorateur de solutions**, double-cliquez sur le `source.extension.vsixmanifest` fichier pour l’ouvrir dans le **Concepteur de manifeste VSIX**, puis apportez les modifications suivantes :  
+4. Dans le **Explorateur de solutions**, double-cliquez sur le `source.extension.vsixmanifest` fichier pour l’ouvrir dans le **Concepteur de manifeste VSIX**, puis apportez les modifications suivantes :  
   
-    - Définir le **Product Name** champ **mon modèle de projet**.  
+    - Définissez le champ **nom du produit** sur **mon modèle de projet**.  
   
-    - Définir le **Id_produit** champ **MyProjectTemplate - 1**.  
+    - Définissez le champ **Product ID** sur **MyProjectTemplate-1**.  
   
-    - Définir le **auteur** champ **Fabrikam**.  
+    - Définissez le champ **auteur** sur **Fabrikam**.  
   
-    - Définir le **Description** champ **mon modèle de projet**.  
+    - Définissez le champ **Description** sur **mon modèle de projet**.  
   
-    - Dans le **actifs** , ajoutez un **Microsoft.VisualStudio.ProjectTemplate** de type et définissez son chemin d’accès au nom du fichier .zip.  
+    - Dans la section **ressources** , ajoutez un type **Microsoft. VisualStudio. ProjectTemplate** et définissez son chemin d’accès sur le nom du fichier. zip.  
   
-5. Enregistrez et fermez le fichier source.extension.vsixmanifest.  
+5. Enregistrez et fermez le fichier source. extension. vsixmanifest.  
   
-6. Générez le projet.  
+6. Créez le projet.  
   
-7. Dans le répertoire de sortie, double-cliquez sur le fichier .vsix.  
+7. Dans le répertoire de sortie, double-cliquez sur le fichier. vsix.  
   
-8. Un **programme d’installation VSIX** message s’affiche. Suivez les instructions pour installer l’extension.  
+8. Une boîte de message du **programme d’installation VSIX** s’affiche. Suivez les instructions pour installer l’extension.  
   
-9. Fermez Visual Studio, puis le rouvrez.  
+9. Fermez Visual Studio, puis rouvrez-le.  
   
-10. Sélectionnez **Extensions et mises à jour** (sur le **outils** menu) et sélectionnez le **modèles** catégorie. L’une des extensions disponibles doit être **mon modèle de projet**.  
+10. Sélectionnez **extensions et mises à jour** (dans le menu **Outils** ) et sélectionnez la catégorie **modèles** . L’une des extensions disponibles doit être **mon modèle de projet**.  
   
-11. Le nouveau modèle de projet apparaît dans le **nouveau projet** boîte de dialogue dans la même place que le modèle de projet d’origine. Par exemple, si vous avez créé un modèle nommé **VB Console** à partir d’une application de console Visual Basic, **VB Console** s’affiche dans le même volet comme Visual Basic **Application Console**modèle.  
+11. Le nouveau modèle de projet s’affiche dans la boîte de dialogue **nouveau projet** au même emplacement que le modèle de projet d’origine. Par exemple, si vous avez créé un modèle nommé **console VB** à partir d’une application console Visual Basic, la **console VB** apparaît dans le même volet que le modèle **application console** Visual Basic.  
   
 #### <a name="to-specify-the-location-of-the-template-in-the-new-project-dialog-box"></a>Pour spécifier l’emplacement du modèle dans la boîte de dialogue Nouveau projet  
   
-1. Dossiers de modèles se trouvent dans le *le chemin d’accès de Visual Studio Installation*\Common7\IDE\ProjectTemplates et *le chemin d’accès de Visual Studio Installation*\Common7\IDE\ItemTemplates répertoires. Les noms des sections de niveau supérieur dans la boîte de dialogue Nouveau projet ne correspondent pas exactement les noms des dossiers du modèle. Où ces éléments diffèrent, utilisez le nom du dossier de modèle.  
+1. Les dossiers de modèles se trouvent dans le *chemin d’installation de Visual Studio*\Common7\IDE\ProjectTemplates et dans les répertoires \Common7\IDE\ItemTemplates du *chemin d’installation de Visual Studio*. Les noms des sections de niveau supérieur dans la boîte de dialogue Nouveau projet ne correspondent pas exactement aux noms des dossiers de modèles. À l’endroit où ils diffèrent, utilisez le nom du dossier de modèles.  
   
-     Changez l’extension de fichier .vsix en .zip, puis ouvrez le fichier.  
+     Remplacez l’extension de fichier. vsix par. zip, puis ouvrez le fichier.  
   
-2. Créez un dossier portant le même nom que la section de la boîte de dialogue Nouveau projet, dans que le modèle doit apparaître.  
+2. Créez un nouveau dossier portant le même nom que la section de la boîte de dialogue Nouveau projet. le modèle doit apparaître dans.  
   
-3. Si le modèle apparaît dans une sous-section, créez un sous-dossier du même nom.  
+3. Si le modèle doit apparaître dans une sous-section, créez un sous-dossier du même nom.  
   
-4. Déplacer le fichier .zip du modèle dans le nouveau dossier.  
+4. Déplacez le fichier Template. zip dans le nouveau dossier.  
   
-5. Modifier l’extension .zip pour .vsix.  
+5. Remplacez l’extension. zip par. vsix.  
   
 6. Ouvrez le manifeste VSIX.  
   
-7. Dans le manifeste VSIX, mettez à jour le **Asset** chemin d’accès du modèle afin qu’il pointe vers la racine de l’arborescence de répertoires qui contient le fichier de modèle. Par exemple, si le modèle est dans \CSharp\Windows, la référence doit pointer vers \CSharp.
+7. Dans le manifeste VSIX, mettez à jour le chemin d’accès de l' **élément** multimédia du modèle afin qu’il pointe vers la racine de l’arborescence de répertoires qui contient le fichier de modèle. Par exemple, si le modèle se trouve dans \CSharp\Windows, la référence doit pointer vers \CSharp.

@@ -1,5 +1,5 @@
 ---
-title: Élément groupes | Microsoft Docs
+title: Groups, élément | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,10 +12,10 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e9199ea7a74f92fec5d26c1b2a3e178224780f9c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204259"
 ---
 # <a name="groups-element"></a>Élément Groups
@@ -45,16 +45,16 @@ Contient des entrées qui définissent les groupes de commandes d’un VSPackage
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[Élément Group](../extensibility/group-element.md)|Représente un groupe de commandes unique.|  
+|[Group, élément](../extensibility/group-element.md)|Représente un groupe de commandes unique.|  
 |[Élément Groups](../extensibility/groups-element.md)|Contient des entrées qui définissent les groupes de commandes d’un VSPackage.|  
   
 ### <a name="parent-elements"></a>Éléments parents  
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[Élément Commands](../extensibility/commands-element.md)|Représente la collection de commandes sur la barre d’outils de VSPackage.|  
+|[Élément Commands](../extensibility/commands-element.md)|Représente la collection de commandes dans la barre d’outils VSPackage.|  
   
-## <a name="example"></a>Exemples  
+## <a name="example"></a> Exemple  
   
 ```  
 <Groups>  
@@ -65,5 +65,5 @@ Contient des entrées qui définissent les groupes de commandes d’un VSPackage
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Comment VSPackages ajoute des éléments d’Interface utilisateur](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [Comment les VSPackages ajoutent des éléments d’interface utilisateur](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Commandes, menus et barres d’outils](../extensibility/internals/commands-menus-and-toolbars.md)

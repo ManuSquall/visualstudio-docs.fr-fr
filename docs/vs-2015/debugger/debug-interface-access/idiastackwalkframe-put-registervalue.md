@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b090e85005ffcab6498adb6f85885cd86c9813fd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150194"
 ---
-# <a name="idiastackwalkframeputregistervalue"></a>IDiaStackWalkFrame::put_registerValue
+# <a name="idiastackwalkframeput_registervalue"></a>IDiaStackWalkFrame::put_registerValue
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Définit la valeur d’un Registre.  
+Définit la valeur d’un registre.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -36,13 +36,13 @@ HRESULT put_registerValue ( 
   
 #### <a name="parameters"></a>Paramètres  
  `index`  
- [in] Une valeur comprise entre le [CV_HREG_e (énumération)](../../debugger/debug-interface-access/cv-hreg-e.md) énumération spécifiant le Registre pour écrire dans.  
+ dans Valeur de l’énumération d' [énumération CV_HREG_e](../../debugger/debug-interface-access/cv-hreg-e.md) spécifiant le registre dans lequel écrire.  
   
  `NewVal`  
- [in] La nouvelle valeur de Registre.  
+ dans Nouvelle valeur de registre.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)   

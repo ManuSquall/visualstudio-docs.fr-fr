@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8c066e183d60a1f7d967cafa1114d6241b28caa4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68165498"
 ---
 # <a name="idiasessionfindlinesbyrva"></a>IDiaSession::findLinesByRVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Récupère les lignes dans un compiland spécifiée qui contiennent une adresse virtuelle relative (RVA) spécifiée.  
+Récupère les lignes d’un compiland spécifié qui contiennent une adresse virtuelle relative (RVA) spécifiée.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -37,19 +37,19 @@ HRESULT findLinesByRVA ( 
   
 #### <a name="parameters"></a>Paramètres  
  `rva`  
- [in] Spécifie l’adresse comme une RVA.  
+ dans Spécifie l’adresse en tant qu’adresse RVA.  
   
  `length`  
- [in] Spécifie le nombre d’octets de la plage d’adresses pour couvrir cette requête.  
+ dans Spécifie le nombre d’octets de la plage d’adresses à couvrir avec cette requête.  
   
  `ppResult`  
- [out] Retourne un [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) objet qui contient une liste de tous les nombres qui couvrent la plage d’adresses spécifiée.  
+ à Retourne un objet [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) qui contient une liste de tous les numéros de ligne qui couvrent la plage d’adresses spécifiée.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="example"></a>Exemple  
- Cet exemple montre une fonction qui obtient tous les numéros de ligne contenues dans la fonction spécifiée à l’aide d’adresse virtuelle relative de la fonction et la longueur.  
+ Cet exemple montre une fonction qui obtient tous les numéros de ligne contenus dans la fonction spécifiée à l’aide de la longueur et de l’adresse virtuelle relative de la fonction.  
   
 ```cpp#  
 IDiaEnumLineNumbers* GetLineNumbersByRVA(IDiaSymbol *pFunc, IDiaSession *pSession)  
