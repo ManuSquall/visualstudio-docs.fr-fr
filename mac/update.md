@@ -7,10 +7,10 @@ ms.date: 09/18/2019
 ms.technology: vs-ide-install
 ms.assetid: DB8DC9FE-FF21-4061-8A96-3F9FC08A4F8F
 ms.openlocfilehash: ccfcf04816727800501dada64e73d6ce35876674
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74984553"
 ---
 # <a name="update-visual-studio-for-mac"></a>Mettre à jour Visual Studio pour Mac
@@ -26,7 +26,7 @@ Visual Studio pour Mac fournit deux canaux pour obtenir les dernières versions�
 
 Vous pouvez utiliser la boîte de dialogue **Visual Studio Updater** pour rechercher les nouvelles mises à jour, changer de canal, et télécharger et installer les mises à jour.
 
-Pour ouvrir le **Visual Studio Updater**, consultez **Visual Studio > Vérifiez les mises à jour**:
+Pour ouvrir le programme de mise à jour de **Visual Studio**, accédez à **Visual Studio > Rechercher des mises à jour**:
 
 ![Option Rechercher les mises à jour](media/update-image1.png)
 
@@ -44,7 +44,7 @@ Pour changer de canal, sélectionnez-le dans la liste déroulante de canaux et a
 
 Le changement de canal démarre automatiquement le processus de téléchargement des nouvelles mises à jour.
 
-Si vous avez sélectionné l’option **Rechercher automatiquement**, la boîte de dialogue du programme de mise à jour s’affiche quand Visual Studio pour Mac est ouvert, pour vous informer que de nouvelles mises à jour sont disponibles. Les nouveaux téléchargements commenceront à télécharger automatiquement sur votre machine lorsque cette boîte apparaîtra.
+Si vous avez sélectionné l’option **Rechercher automatiquement**, la boîte de dialogue du programme de mise à jour s’affiche quand Visual Studio pour Mac est ouvert, pour vous informer que de nouvelles mises à jour sont disponibles. Les nouveaux téléchargements commenceront à être téléchargés automatiquement sur votre ordinateur lorsque cette boîte de s’affiche.
 
 Pour démarrer l’installation des mises à jour, sélectionnez le bouton **Redémarrer et installer les mises à jour** :
 

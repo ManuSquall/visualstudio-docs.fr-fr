@@ -21,17 +21,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d1be1d4fa9f1b088547bb21dfb64254209783d7e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75565706"
 ---
 # <a name="properties-window"></a>Fenêtre Propriétés
 
 Utilisez cette fenêtre pour afficher et modifier les événements et propriétés au moment du design des objets sélectionnés qui sont situés dans les éditeurs et les concepteurs. Vous pouvez également utiliser la fenêtre **Propriétés** pour afficher et modifier les propriétés des fichiers, des projets et des solutions. Vous trouverez la fenêtre **Propriétés** dans le menu **Affichage**. Vous pouvez également l’ouvrir en appuyant sur **F4** ou en tapant **Propriétés** dans la zone de recherche.
 
-La fenêtre **Properties** affiche différents types de champs d’édition, en fonction des besoins d’une propriété particulière. Ces champs d’édition sont notamment des zones d’édition, des listes déroulantes et des liens vers des boîtes de dialogue d’éditeur personnalisé. Les propriétés affichées en gris sont en lecture seule.
+La fenêtre **Propriétés** affiche différents types de champs d’édition, en fonction des besoins d’une propriété particulière. Ces champs d’édition sont notamment des zones d’édition, des listes déroulantes et des liens vers des boîtes de dialogue d’éditeur personnalisé. Les propriétés affichées en gris sont en lecture seule.
 
 ## <a name="uielement-list"></a>Liste des éléments de l'interface utilisateur
 

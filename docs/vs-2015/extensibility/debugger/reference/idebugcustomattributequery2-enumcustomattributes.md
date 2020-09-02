@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttributeQuery2::EnumCustomAttributes | Microsoft Docs
+title: 'IDebugCustomAttributeQuery2 :: EnumCustomAttributes (| Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b09285b2fbab65321d0949be7fbd9c7a03c54ed3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62568406"
 ---
 # <a name="idebugcustomattributequery2enumcustomattributes"></a>IDebugCustomAttributeQuery2::EnumCustomAttributes
@@ -40,10 +40,10 @@ int EnumCustomAttributes(
   
 #### <a name="parameters"></a>Paramètres  
  `ppEnum`  
- [out] Retourne un [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md) représentant la liste des attributs personnalisés de l’objet ; sinon, retourne une valeur null si aucun attribut personnalisé.  
+ à Retourne un objet [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md) représentant la liste des attributs personnalisés ; Sinon, retourne une valeur null s’il n’y a pas d’attributs personnalisés.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne S_OK ou S_FALSE s’il en existe aucun attribut personnalisé sur ce champ. Sinon, retourne un code d’erreur ;  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne S_OK ou S_FALSE s’il n’y a pas d’attributs personnalisés dans ce champ. Sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
  Un champ peut avoir plusieurs attributs personnalisés.  

@@ -1,5 +1,5 @@
 ---
-title: Classe, onglet de boîte de dialogue Propriétés de fenêtre | Microsoft Docs
+title: Onglet classe de la boîte de dialogue Propriétés de la fenêtre | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,27 +11,27 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0917c9a038b42e6302ec1f1782f095ca397a92ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62565011"
 ---
 # <a name="class-tab-window-properties-dialog-box"></a>Onglet Classe de la boîte de dialogue Propriétés de la fenêtre
-Utilisez le **classe** onglet pour afficher des informations sur la classe de la fenêtre sélectionnée. Pour afficher le [boîte de dialogue Propriétés de fenêtre](../debugger/window-properties-dialog-box.md), déplacer le focus vers le [Windows vue](../debugger/windows-view.md) fenêtre. Sélectionnez n’importe quel nœud de fenêtre dans l’arborescence, puis choisissez **propriétés** à partir de la **vue** menu.
+Utilisez l’onglet **classe** pour afficher des informations sur la classe de la fenêtre sélectionnée. Pour afficher la [boîte de dialogue Propriétés](../debugger/window-properties-dialog-box.md)de la fenêtre, déplacez le focus vers la fenêtre [vue Windows](../debugger/windows-view.md) . Sélectionnez un nœud de fenêtre dans l’arborescence, puis choisissez **Propriétés** dans le menu **affichage** .
 
- Les paramètres suivants sont disponibles sur le **classe** onglet :
+ Les paramètres suivants sont disponibles sous l’onglet **classe** :
 
 |Entrée|Description|
 |-----------|-----------------|
-|**Nom de classe**|Nom (ou nombre ordinal) de cette classe de fenêtre.|
-|**Styles de la classe**|Une combinaison des codes de style de classe.|
+|**Nom de la classe**|Nom (ou numéro ordinal) de cette classe de fenêtre.|
+|**Styles de la classe**|Combinaison de codes de style de classe.|
 |**Octets de la classe**|Données spécifiques à l’application associées à cette classe de fenêtre.|
-|**Classe Atom**|Atome de la classe retournée par la **RegisterClass** appeler.|
-|**Handle d’instance**|Le handle d’instance du module qui inscrit la classe. Handles d’instance ne sont pas uniques.|
+|**Classe Atom**|Atom pour la classe retournée par l’appel **registerClass** .|
+|**Handle d’instance**|Handle d’instance du module qui a inscrit la classe. Les handles d’instance ne sont pas uniques.|
 |**Octets de la fenêtre**|Nombre d’octets supplémentaires associés à chaque fenêtre de cette classe. La signification de ces octets est déterminée par l’application. Développez la zone de liste pour afficher les valeurs d’octets au format DWORD.|
-|**Proc. de la fenêtre**|L’adresse actuelle de la **WndProc** (fonction) pour windows de cette classe. Cela diffère de **fenêtre Proc** sur le **général** onglet si la fenêtre est une sous-classe.|
-|**Nom de menu**|Le nom du menu principal qui est associé à windows de cette classe (« none », s’il n’existe aucun menu).|
-|**Handle de l’icône**|Le handle de l’icône associée à windows de cette classe (« none », s’il n’existe aucune icône).|
-|**Handle du curseur**|Le handle du curseur associé à windows de cette classe (« none », s’il n’existe aucun curseur).|
-|**Pinceau d’arrière-plan**|Le handle pour le pinceau d’arrière-plan qui est associé à windows de cette classe, ou une des couleurs COLOR_ * pour peindre l’arrière-plan de fenêtre (« none », s’il n’existe aucun pinceau).|
+|**Proc. de la fenêtre**|Adresse actuelle de la fonction **WndProc** pour les fenêtres de cette classe. Cela diffère de la **procédure de fenêtre** sous l’onglet **général** si la fenêtre est sous-classée.|
+|**Nom de menu**|Nom du menu principal associé aux fenêtres de cette classe (« None » s’il n’y a aucun menu).|
+|**Handle de l’icône**|Handle de l’icône associée aux fenêtres de cette classe ("none" s’il n’y a pas d’icône).|
+|**Handle du curseur**|Handle du curseur associé aux fenêtres de cette classe ("none" s’il n’y a aucun curseur).|
+|**Pinceau d’arrière-plan**|Handle pour le pinceau d’arrière-plan associé aux fenêtres de cette classe, ou l’une des couleurs prédéfinies COLOR_ * pour peindre l’arrière-plan de la fenêtre (« aucun » s’il n’y a aucun pinceau).|

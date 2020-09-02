@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f7f7efb0acf6611346abe67a7a94e5c221919665
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646978"
 ---
 # <a name="step-7-add-multiplication-and-division-problems"></a>Étape 7 : ajouter des problèmes de multiplication et de division
@@ -53,6 +53,6 @@ Dans la septième partie de ce didacticiel, vous allez ajouter des problèmes de
 
 ### <a name="to-continue-or-review"></a>Pour continuer ou examiner
 
-- Pour passer à l’étape suivante du didacticiel, consultez [Étape 8 : Personnaliser le questionnaire](../ide/step-8-customize-the-quiz.md).
+- Pour passer à l’étape suivante du didacticiel, consultez [étape 8 : personnaliser le quiz](../ide/step-8-customize-the-quiz.md).
 
-- Pour revenir à l’étape précédente du didacticiel, consultez [Étape 6 : ajouter un problème de soustraction](../ide/step-6-add-a-subtraction-problem.md).
+- Pour revenir à l’étape précédente du didacticiel, consultez [étape 6 : ajouter un problème de soustraction](../ide/step-6-add-a-subtraction-problem.md).

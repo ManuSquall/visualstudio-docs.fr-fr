@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointRequest2::GetRequestInfo | Microsoft Docs
+title: 'IDebugBreakpointRequest2 :: GetRequestInfo | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 998312e9f6dcf16e5afedb22cec870acdcd0efa1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158809"
 ---
 # <a name="idebugbreakpointrequest2getrequestinfo"></a>IDebugBreakpointRequest2::GetRequestInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Obtient les informations de demande de point d’arrêt qui décrit cette demande de point d’arrêt.  
+Obtient les informations de demande de point d’arrêt qui décrivent cette demande de point d’arrêt.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -42,16 +42,16 @@ int GetRequestInfo( 
   
 #### <a name="parameters"></a>Paramètres  
  `dwFields`  
- [in] Une combinaison d’indicateurs de la [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) énumération qui détermine les champs dans le `pBPRequestInfo` paramètre doivent être remplis.  
+ dans Combinaison d’indicateurs de l’énumération [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) qui détermine les champs du `pBPRequestInfo` paramètre à remplir.  
   
  `pBPRequestInfo`  
- [out] Spécifie le [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) structure à remplir avec la description de la demande de point d’arrêt.  
+ à Spécifie la structure [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) à remplir avec la description de la demande de point d’arrêt.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant montre comment implémenter cette méthode pour une simple `CDebugBreakpointRequest` objet qui expose le [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) interface.  
+ L’exemple suivant montre comment implémenter cette méthode pour un `CDebugBreakpointRequest` objet simple qui expose l’interface [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) .  
   
 ```  
 HRESULT CDebugBreakpointRequest::GetRequestInfo(  

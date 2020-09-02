@@ -38,10 +38,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 025ba2eb95514efc740d1f8f7b3bf674d6bf237a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645635"
 ---
 # <a name="finding-and-replacing-text"></a>Finding and Replacing Text
@@ -59,9 +59,9 @@ Vous pouvez rechercher et remplacer du texte dans l’éditeur de code Visual St
 ## <a name="find-and-replace-control"></a>Contrôle Rechercher et remplacer
  Le contrôle **Rechercher et remplacer** s’affiche dans le coin supérieur droit de la fenêtre de l’éditeur de code. Le contrôle **Rechercher et remplacer** met immédiatement en surbrillance chaque occurrence de la chaîne de recherche donnée dans le document actif. Vous pouvez passer d’une occurrence à une autre en choisissant le bouton **Suivant** ou **Précédent** sur le contrôle de recherche.
 
- Vous pouvez accéder aux options de remplacement en choisissant le bouton en regard de la zone de texte **Rechercher**. Pour effectuer un remplacement à la fois, choisissez le bouton **Suivant** en regard de la zone de texte **Remplacer**. Pour remplacer toutes les occurrences en une seule fois, choisissez le bouton **Remplacer tout**.
+ Vous pouvez accéder aux options de remplacement en choisissant le bouton en regard de la zone de texte **Rechercher**. Pour effectuer un remplacement à la fois, choisissez le bouton **Suivant** en regard de la zone de texte **Remplacer**. Pour remplacer toutes les correspondances, cliquez sur le bouton **remplacer tout** .
 
- Pour modifier la couleur de surbrillance des correspondances, choisissez le menu **Outils**, sélectionnez **Options**, puis choisissez **Environnement** et sélectionnez **Polices et couleurs**. Dans la liste **Afficher les paramètres de**, sélectionnez **Éditeur de texte**, puis, dans la liste **Éléments d’affichage**, sélectionnez **Rechercher un surlignage (extension)** .
+ Pour modifier la couleur de surbrillance des correspondances, choisissez le menu **Outils**, sélectionnez **Options**, puis choisissez **Environnement** et sélectionnez **Polices et couleurs**. Dans la liste **Afficher les paramètres de**, sélectionnez **Éditeur de texte**, puis, dans la liste **Éléments d’affichage**, sélectionnez **Rechercher un surlignage (extension)**.
 
 ### <a name="searching-tool-windows"></a>Recherche dans les fenêtres d’outils
  Vous pouvez utiliser le contrôle **Rechercher** dans les fenêtres de code ou de texte, telles que les fenêtres **Sortie** et les fenêtres **Résultats de la recherche**, en choisissant **Rechercher et remplacer** dans le menu **Edition** ou (Ctrl+F).
@@ -74,7 +74,7 @@ Vous pouvez rechercher et remplacer du texte dans l’éditeur de code Visual St
  Lorsque vous choisissez **Rechercher tout**, une fenêtre **Résultats de la recherche** s’ouvre et répertorie les résultats de la recherche. Si vous sélectionnez un résultat dans la liste, le fichier associé est affiché et la correspondance est mise en surbrillance. Si le fichier n’est pas encore ouvert pour modification, il est ouvert dans un onglet d’aperçu dans la partie droite de la zone de configuration des onglets. Vous pouvez utiliser le contrôle **Rechercher** pour effectuer des recherches dans la liste **Résultats de la recherche**.
 
 ### <a name="creating-custom-search-folder-sets"></a>Création de jeux de dossiers de recherche personnalisés
- Vous pouvez définir une étendue de recherche en choisissant le bouton **Choisir des dossiers de recherche** (il ressemble à **...** ) en regard de la zone **Regarder dans**. Dans la boîte de dialogue **Choisir des dossiers de recherche**, vous pouvez spécifier un jeu de dossiers dans lequel effectuer la recherche et vous pouvez enregistrer la spécification afin de pouvoir la réutiliser ultérieurement. Vous pouvez spécifier des dossiers sur un ordinateur distant uniquement si vous avez mappé son lecteur à l’ordinateur local.
+ Vous pouvez définir une étendue de recherche en choisissant le bouton **Choisir des dossiers de recherche** (il ressemble à **...**) en regard de la zone **Regarder dans**. Dans la boîte de dialogue **Choisir des dossiers de recherche**, vous pouvez spécifier un jeu de dossiers dans lequel effectuer la recherche et vous pouvez enregistrer la spécification afin de pouvoir la réutiliser ultérieurement. Vous pouvez spécifier des dossiers sur un ordinateur distant uniquement si vous avez mappé son lecteur à l’ordinateur local.
 
 ### <a name="creating-custom-component-sets"></a>Création d’ensembles de composants personnalisés
  Vous pouvez définir des jeux de composants comme étendue de recherche en choisissant le bouton **Modifier un jeu de composants personnalisés** en regard de la zone **Regarder dans**. Vous pouvez spécifier des composants .NET ou COM installés, des projets Visual Studio inclus dans votre solution ou toute bibliothèque d’assemblys ou de types (.dll, .tlb, .olb, .exe ou .ocx). Pour rechercher des références, cochez la case **Regarder dans les références**.

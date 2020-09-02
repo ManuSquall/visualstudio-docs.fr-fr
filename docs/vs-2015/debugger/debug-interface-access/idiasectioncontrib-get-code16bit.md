@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1aceb4956b7ce2517087511676ebeff2b061b673
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62576986"
 ---
-# <a name="idiasectioncontribgetcode16bit"></a>IDiaSectionContrib::get_code16bit
+# <a name="idiasectioncontribget_code16bit"></a>IDiaSectionContrib::get_code16bit
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Récupère un indicateur qui indique si la section contient le code 16 bits.  
+Récupère un indicateur qui signale si la section contient du code 16 bits.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -35,13 +35,13 @@ HRESULT get_code16bit(
   
 #### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- [out] Retourne `TRUE` si le code dans la section est de 16 bits ; sinon, retourne `FALSE`.  
+ à Retourne `TRUE` si le code dans la section est 16 bits ; sinon, retourne `FALSE` .  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode indique uniquement si le code est de 16 bits. Si le code n’est pas 16 bits, il peut être autre chose, tel que le code 32 bits ou 64 bits.  
+ Cette méthode indique uniquement si le code est 16 bits. Si le code n’est pas 16 bits, il peut s’agir d’autres éléments, tels que le code 32 bits ou 64 bits.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

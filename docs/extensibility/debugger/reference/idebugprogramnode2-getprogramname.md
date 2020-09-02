@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::GetProgramName (fr) Microsoft Docs
+title: 'IDebugProgramNode2 :: GetProgramName | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 9af930716725a62fff5ea3d1635b506b06b26086
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721998"
 ---
 # <a name="idebugprogramnode2getprogramname"></a>IDebugProgramNode2::GetProgramName
@@ -41,16 +41,16 @@ int GetProgramName (
 
 ## <a name="parameters"></a>Paramètres
 `pbstrProgramName`\
-[out] Retourne le nom du programme.
+à Retourne le nom du programme.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
-Le nom d’un programme n’est pas la même chose que le chemin vers le programme, bien que le nom du programme puisse faire partie d’une telle voie.
+Le nom d’un programme n’est pas identique au chemin d’accès au programme, même si le nom du programme peut faire partie d’un tel chemin d’accès.
 
 ## <a name="example"></a>Exemple
-L’exemple suivant montre comment implémenter cette méthode pour un objet simple `CProgram` qui implémente [l’interface IDebugProgramNode2.](../../../extensibility/debugger/reference/idebugprogramnode2.md) La `MakeBstr` fonction alloue une copie de la chaîne spécifiée comme un BSTR.
+L’exemple suivant montre comment implémenter cette méthode pour un `CProgram` objet simple qui implémente l’interface [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) . La `MakeBstr` fonction alloue une copie de la chaîne spécifiée en tant que BSTR.
 
 ```cpp
 HRESULT CProgram::GetProgramName(BSTR* pbstrProgramName) {

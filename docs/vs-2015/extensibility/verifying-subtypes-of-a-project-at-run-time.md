@@ -1,5 +1,5 @@
 ---
-title: Vérification des sous-types d’un projet en cours d’exécution | Microsoft Docs
+title: Vérification des sous-types d’un projet au moment de l’exécution | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,20 +12,20 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1e3940097ac53255b7bdd2c12c9ccc64605016e1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62584903"
 ---
 # <a name="verifying-subtypes-of-a-project-at-run-time"></a>Vérification des sous-types d’un projet au moment de l’exécution
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Un VSPackage qui dépend d’un sous-type de projet personnalisé doit inclure une logique à rechercher qui sous-type afin qu’elle peut échouer normalement si le sous-type n’est pas présent. La procédure suivante montre comment vérifier la présence d’un sous-type spécifié.  
+Un VSPackage qui dépend d’un sous-type de projet personnalisé doit inclure une logique pour rechercher ce sous-type afin qu’il puisse échouer correctement si le sous-type n’est pas présent. La procédure suivante montre comment vérifier la présence d’un sous-type spécifié.  
   
 ### <a name="to-verify-the-presence-of-a-subtype"></a>Pour vérifier la présence d’un sous-type  
   
-1. Obtenir la hiérarchie de projet à partir des objets en tant que projet et solution un <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> objet en ajoutant le code suivant à votre VSPackage.  
+1. Obtenez la hiérarchie de projet à partir des objets projet et solution en tant qu' <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> objet en ajoutant le code suivant à votre VSPackage.  
   
     ```  
     EnvDTE.DTE dte;  
@@ -42,7 +42,7 @@ Un VSPackage qui dépend d’un sous-type de projet personnalisé doit inclure u
   
     ```  
   
-2. Effectuer un cast de la hiérarchie pour le <xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected> interface.  
+2. Effectuez un cast de la hiérarchie en <xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected> interface.  
   
     ```  
     IVsAggregatableProjectCorrected AP;  
@@ -50,14 +50,14 @@ Un VSPackage qui dépend d’un sous-type de projet personnalisé doit inclure u
   
     ```  
   
-3. Obtenir la liste des GUID de type de projet en appelant le <xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected.GetAggregateProjectTypeGuids%2A>.  
+3. Obtient la liste des GUID de type de projet en appelant <xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected.GetAggregateProjectTypeGuids%2A> .  
   
     ```  
     string projTypeGuids = AP.GetAggregateProjectTypeGuids().ToUpper();  
   
     ```  
   
-4. Vérifiez la liste pour le GUID du sous-type spécifié.  
+4. Vérifiez la liste du GUID du sous-type spécifié.  
   
     ```  
     // Replace the string "MyGUID" with the GUID of the subtype.  

@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Configuration et utilisation d’un ensemble de règles personnalisé | Microsoft Docs'
+title: 'Procédure pas à pas : configuration et utilisation d’un ensemble de règles personnalisé | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -13,13 +13,13 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 8239afd1cf4e8c0a5e702f2b0e4ed64408cada09
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645737"
 ---
-# <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Procédure pas à pas : Configuration et utilisation d’un ensemble de règles personnalisé
+# <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Procédure pas à pas : configuration et utilisation d’un ensemble de règles personnalisé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette procédure pas à pas montre comment utiliser les outils d’analyse du code qui ont été configurés pour utiliser un *ensemble de règles* personnalisé sur une bibliothèque de classes. Vous pouvez sélectionner un ensemble de règles qui se réfère au type de projet que vous avez spécifié pour votre solution, ou vous pouvez sélectionner d’autres ensembles de règles pour satisfaire à un besoin spécifique, par exemple l’analyse de code hérité pour les problèmes qui peuvent être résolus de manière sans rupture. Dans les deux cas, les ensembles de règles peuvent également être personnalisés pour affiner les exigences de votre projet.
@@ -47,11 +47,11 @@ Cette procédure pas à pas montre comment utiliser les outils d’analyse du co
 
 #### <a name="create-a-class-library"></a>Créer une bibliothèque de classes
 
-1. Dans le menu **Fichier** , cliquez sur **Nouveau** , puis sur **Projet**.
+1. Dans le menu **Fichier**, cliquez sur **Nouveau**, puis cliquez sur **Projet**.
 
-2. Dans la boîte de dialogue **nouveau projet** , sous **types de projets**, cliquez sur **visuel C#** .
+2. Dans la boîte de dialogue **nouveau projet** , sous **types de projets**, cliquez sur **Visual C#**.
 
-3. Sous **visuel C#** , sélectionnez **bibliothèque de classes**.
+3. Sous **Visual C#**, sélectionnez **bibliothèque de classes**.
 
 4. Dans la zone de texte **nom** , tapez **RuleSetSample** , puis cliquez sur **OK**.
 
@@ -70,9 +70,9 @@ Cette procédure pas à pas montre comment utiliser les outils d’analyse du co
     Dans le menu fichier, cliquez sur **enregistrer les éléments sélectionnés** pour mettre à jour le fichier projet avec les informations relatives à l’ensemble de règles que vous avez sélectionné et à ses paramètres.
 
    > [!TIP]
-   > Dans une situation réelle, une bonne pratique pour déterminer les problèmes que vous souhaitez cibler avec l’analyse du code consiste à démarrer avec l’ensemble de règles de **règles minimales recommandées** et à corriger les problèmes souhaités, puis à ajouter de façon incrémentielle d’autres règles ou ensembles de règles à Recherchez et corrigez les problèmes supplémentaires.
+   > Dans une situation réelle, une bonne pratique pour déterminer les problèmes que vous souhaitez cibler avec l’analyse du code consiste à démarrer avec l’ensemble de règles de **règles minimales recommandées** et à corriger les problèmes souhaités, puis à ajouter de façon incrémentielle d’autres règles ou ensembles de règles pour rechercher et corriger les problèmes supplémentaires.
 
-   Ensuite, vous allez ajouter du code à la bibliothèque de classes qui sera utilisée pour démontrer les violations de la règle d’analyse du code ca1704s « les identificateurs doivent être correctement orthographiés ». Pour plus d’informations, consultez [CA1704 : Les identificateurs doivent être orthographiés correctement ](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
+   Ensuite, vous allez ajouter du code à la bibliothèque de classes qui sera utilisée pour démontrer les violations de la règle d’analyse du code ca1704s « les identificateurs doivent être correctement orthographiés ». Pour plus d’informations, consultez [CA1704 : les identificateurs doivent être orthographiés correctement](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
 
 #### <a name="add-your-own-code"></a>Ajouter votre propre code
 
@@ -128,7 +128,7 @@ Cette procédure pas à pas montre comment utiliser les outils d’analyse du co
 
     Il est maintenant judicieux de faire des essais avec les différents boutons de la barre d’outils et les options de filtrage pour vous familiariser avec eux. Par exemple, vous pouvez utiliser la liste déroulante **regrouper par** pour faciliter la localisation d’une règle spécifique ou d’une catégorie de règles. Autre exemple : vous pouvez utiliser le bouton **Masquer les règles désactivées** dans la barre d’outils pages d’ensemble de règles pour masquer ou afficher toutes les règles dont la colonne **action** est définie sur **aucune**. Cela peut être utile si vous souhaitez rechercher les règles que vous avez désactivées pour vérifier que vous souhaitez toujours les désactiver.
 
-5. Dans le menu Affichage, cliquez sur Fenêtre Propriétés. Tapez **mon ensemble de règles personnalisé** dans la zone nom de la fenêtre outil des propriétés. Cela modifie le nom complet du nouvel ensemble de règles dans l’IDE [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].
+5. Dans le menu Affichage, cliquez sur Fenêtre Propriétés. Tapez **mon ensemble de règles personnalisé** dans la zone nom de la fenêtre outil des propriétés. Cela modifie le nom complet du nouvel ensemble de règles dans l' [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] IDE.
 
 6. Dans le menu **fichier** , cliquez sur **enregistrer Microsoft All Rules. RuleSet** pour enregistrer votre ensemble de règles personnalisé. Accédez au dossier racine de votre projet. Dans **la** zone de texte nom de fichier, tapez **MyCustomRuleSet**. L’ensemble de règles personnalisé peut maintenant être sélectionné pour être utilisé avec votre projet.
 
@@ -140,7 +140,7 @@ Cette procédure pas à pas montre comment utiliser les outils d’analyse du co
 
 2. Dans l’onglet **Propriétés** , cliquez sur **analyse du code**.
 
-    Dans la liste déroulante **exécuter cet ensemble de règles** , cliquez sur **\<Browse.. >** . Accédez au dossier racine de votre projet de code, puis sélectionnez **MyCustomRuleSet. RuleSet**. Il s’agit du nouvel ensemble de règles que vous avez créé dans la procédure précédente.
+    Dans la liste déroulante **exécuter cet ensemble de règles** , cliquez sur **\<Browse..>** . Accédez au dossier racine de votre projet de code, puis sélectionnez **MyCustomRuleSet. RuleSet**. Il s’agit du nouvel ensemble de règles que vous avez créé dans la procédure précédente.
 
 3. Dans le menu **fichier** , cliquez sur **Enregistrer** pour enregistrer la configuration de votre projet. L’ensemble de règles personnalisé peut maintenant être utilisé avec votre projet.
 
@@ -153,4 +153,4 @@ Cette procédure pas à pas montre comment utiliser les outils d’analyse du co
 2. Dans la fenêtre Liste d’erreurs, Notez que lorsque vous cliquez sur **avertissements**, vous ne voyez plus les violations d’avertissement ca1704s pour la règle « les identificateurs doivent être correctement orthographiés ».
 
 ## <a name="see-also"></a>Voir aussi
- [Guide pratique : Configurer l’analyse du code pour un projet de code managé ](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md) référence de l' [ensemble de règles d’analyse du code](../code-quality/code-analysis-rule-set-reference.md)
+ [Comment : configurer l’analyse du code pour une référence d’ensemble de règles d’analyse du code de projet de code managé](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md) [Code analysis rule set reference](../code-quality/code-analysis-rule-set-reference.md)

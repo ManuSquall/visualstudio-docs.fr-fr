@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Exclure ou inclure les fonctions courtes de l’instrumentation | Microsoft Docs'
+title: Guide pratique pour exclure ou inclure les fonctions courtes de l’instrumentation | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c8bb49e650f2395bac8a3b5eb1d0f52e2e168731
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68146110"
 ---
-# <a name="how-to-exclude-or-include-short-functions-from-instrumentation"></a>Procédure : Exclure ou inclure les fonctions abrégées de l’instrumentation
+# <a name="how-to-exclude-or-include-short-functions-from-instrumentation"></a>Guide pratique pour exclure ou inclure les fonctions courtes de l’instrumentation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Par défaut, les outils de profilage excluent les *petites fonctions* de l’instrumentation. Les petites fonctions sont des fonctions courtes qui n’effectuent pas d’appels de fonction. L’exclusion de ces petites fonctions permet de réduire la surcharge d’instrumentation, et donc d’accélérer la vitesse d’instrumentation. L’exclusion des petites fonctions a également pour effet de réduire la taille du fichier de données de profilage de performances (.vsp) et de raccourcir le temps nécessaire à l’analyse. Si les petites fonctions sont exclues, le temps qui leur est consacré sera soustrait du temps exclusif et inclusif de leurs fonctions parents. Les petites fonctions peuvent être exclues ou incluses dans l’instrumentation, comme le décrit la procédure suivante.  
@@ -33,9 +33,9 @@ Par défaut, les outils de profilage excluent les *petites fonctions* de l’ins
   
 2. Dans les **Pages de propriétés**, cliquez sur les propriétés **Instrumentation**.  
   
-3. Pour exclure les fonctions courtes de l’instrumentation, sélectionnez **Exclure les petites fonctions de l’instrumentation**. Il s’agit du paramètre par défaut.  
+3. Pour exclure les fonctions courtes de l’instrumentation, sélectionnez **Exclure les petites fonctions de l’instrumentation**. Il s'agit du paramètre par défaut.  
   
-     ou  
+     - ou -  
   
      Pour inclure les fonctions courtes dans l’instrumentation, décochez la case **Exclure les petites fonctions de l’instrumentation**.  
   
@@ -43,4 +43,4 @@ Par défaut, les outils de profilage excluent les *petites fonctions* de l’ins
   
 ## <a name="see-also"></a>Voir aussi  
  [Contrôle de la collecte de données](../profiling/controlling-data-collection.md)   
- [Propriétés d’une session de performance](../profiling/performance-session-properties.md)
+ [Propriétés de la session de performance](../profiling/performance-session-properties.md)

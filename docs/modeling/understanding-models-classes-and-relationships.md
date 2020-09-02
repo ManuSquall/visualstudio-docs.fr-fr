@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c2e8891307520ee841fbed1591565624f2016939
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75565901"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Présentation des modèles, des classes et des relations
@@ -22,7 +22,7 @@ Un langage spécifique à un domaine (DSL) est défini par son fichier de défin
  Cette rubrique décrit les fonctionnalités centrales de la définition DSL.
 
 ## <a name="the-dsl-definition"></a>Définition DSL
- Lorsque vous ouvrez `Dsl\DslDefinition.dsl`, votre fenêtre Visual Studio ressemble à l’image suivante.
+ Lorsque vous ouvrez `Dsl\DslDefinition.dsl` , votre fenêtre Visual Studio ressemble à l’image suivante.
 
  ![concepteur dsl](../modeling/media/dsl_designer.png)
 
@@ -128,9 +128,9 @@ Un langage spécifique à un domaine (DSL) est défini par son fichier de défin
  Lorsque vous créez une relation dans une définition DSL, les noms de propriété et de relation reçoivent des valeurs par défaut. Toutefois, vous pouvez les modifier.
 
 ## <a name="multiplicities"></a>Multiplicités
- Les multiplicités spécifient le nombre d’éléments qui peuvent avoir le même rôle dans une relation de domaine. Dans l’exemple, le paramètre de multiplicité zéro-à-plusieurs (0..\*) sur le rôle de **catalogue** spécifie qu’une instance de la classe de domaine de l' **éditeur** peut avoir autant de liens de relation **PublisherCatalog** que vous le souhaitez.
+ Les multiplicités spécifient le nombre d’éléments qui peuvent avoir le même rôle dans une relation de domaine. Dans l’exemple, le paramètre de multiplicité zéro-à-plusieurs (0... \* ) sur le rôle de **catalogue** spécifie qu’une instance de la classe de domaine de l' **éditeur** peut avoir autant de liens de relation **PublisherCatalog** que vous le souhaitez.
 
- Configurez la multiplicité d’un rôle en tapant sur le diagramme ou en modifiant la propriété `Multiplicity` dans la fenêtre **Propriétés** . Le tableau suivant décrit les paramètres de cette propriété.
+ Configurez la multiplicité d’un rôle en tapant sur le diagramme ou en modifiant la `Multiplicity` propriété dans la fenêtre **Propriétés** . Le tableau suivant décrit les paramètres de cette propriété.
 
 |Type de multiplicité|Description|
 |-|-|

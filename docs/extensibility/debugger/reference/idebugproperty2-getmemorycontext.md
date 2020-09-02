@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::GetMemoryContext Microsoft Docs
+title: 'IDebugProperty2 :: GetMemoryContext | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 8fa610af3ae00d30462c1a3a0c825e5a85722cdc
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721462"
 ---
 # <a name="idebugproperty2getmemorycontext"></a>IDebugProperty2::GetMemoryContext
-Obtient le contexte de mémoire de la valeur de la propriété.
+Obtient le contexte de la mémoire de la valeur de la propriété.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,10 +41,10 @@ int GetMemoryContext(
 
 ## <a name="parameters"></a>Paramètres
 `ppMemory`\
-[out] Retourne [l’objet IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) qui représente la mémoire associée à cette propriété.
+à Retourne l’objet [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) qui représente la mémoire associée à cette propriété.
 
-## <a name="return-value"></a>Valeur de retour
- En cas `S_OK`de succès, les retours; retourne autrement le code d’erreur. Retourne `S_GETMEMORYCONTEXT_NO_MEMORY_CONTEXT` s’il n’y a pas de contexte de mémoire à récupérer.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` ; sinon, retourne le code d’erreur. Retourne `S_GETMEMORYCONTEXT_NO_MEMORY_CONTEXT` s’il n’y a aucun contexte de mémoire à récupérer.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bf5eda8205dbe0629d0b2801473de83c2f91257e
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75404278"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>Afficher les valeurs de données dans les DataTips dans l’éditeur de code
@@ -35,7 +35,7 @@ Les DataTips s’affichent uniquement en mode arrêt et uniquement sur les varia
 
 ### <a name="display-a-datatip"></a>Afficher un DataTip
 
-1. Définissez un point d’arrêt dans votre code et démarrez le débogage en appuyant sur **F5** ou en sélectionnant **déboguer** > **Démarrer le débogage**.
+1. Définissez un point d’arrêt dans votre code et démarrez le débogage en appuyant sur **F5** ou **en sélectionnant déboguer**  >  **Démarrer le débogage**.
 
 1. Lorsqu’elle est suspendue au point d’arrêt, placez le curseur sur une variable de l’étendue actuelle. Un DataTip apparaît, affichant le nom et la valeur actuelle de la variable.
 
@@ -75,14 +75,14 @@ Pour fermer tous les DataTips, dans le menu **Déboguer** , sélectionnez **Effa
 
 ### <a name="close-all-datatips-for-a-specific-file"></a>Fermer tous les DataTips pour un fichier spécifique
 
-Pour fermer tous les DataTips d’un fichier spécifique, dans le menu **Déboguer** , sélectionnez **Effacer tous les DataTips épinglés à \<nom de fichier >** .
+Pour fermer tous les DataTips d’un fichier spécifique, dans le menu **Déboguer** , sélectionnez **Effacer tous \<Filename> les DataTips épinglés à **.
 
 ## <a name="expand-and-edit-information"></a>Développer et modifier des informations
 Vous pouvez utiliser les DataTips pour développer un tableau, une structure ou un objet afin d’en afficher les membres. Vous pouvez également modifier la valeur d'une variable depuis un DataTip.
 
 ### <a name="expand-a-variable"></a>Développer une variable
 
-Pour développer un objet dans un DataTip et afficher ses éléments, pointez sur les flèches de développement avant les noms d’éléments pour afficher les éléments sous forme d’arborescence. Pour un DataTip épinglé, sélectionnez le **+** avant le nom de la variable, puis développez l’arborescence.
+Pour développer un objet dans un DataTip et afficher ses éléments, pointez sur les flèches de développement avant les noms d’éléments pour afficher les éléments sous forme d’arborescence. Pour un DataTip épinglé, sélectionnez **+** avant le nom de la variable, puis développez l’arborescence.
 
 ![Développer un DataTip](../debugger/media/dbg-tour-data-tips.png "Développer un DataTip")
 
@@ -125,15 +125,15 @@ La variable s’affiche dans la fenêtre **Espion** . Si votre édition de Visua
 
 Vous pouvez exporter des DataTips vers un fichier XML, que vous pouvez partager ou modifier à l’aide d’un éditeur de texte. Vous pouvez également importer un fichier XML DataTip que vous avez reçu ou modifié.
 
-**Pour exporter des DataTips :**
+**Pour exporter les DataTips :**
 
-1. Sélectionnez **Déboguer** > **Exporter les DataTips**.
+1. Sélectionnez **Déboguer**  >  **Exporter les DataTips**.
 
 1. Dans la boîte de dialogue **Exporter les DataTips** , accédez à l’emplacement d’enregistrement du fichier XML, tapez un nom pour le fichier, puis sélectionnez **Enregistrer**.
 
 **Pour importer des DataTips :**
 
-1. Sélectionnez **Déboguer** > **Importer les DataTips**.
+1. Sélectionnez **Déboguer**  >  **Importer les DataTips**.
 
 1. Dans la boîte de dialogue **Importer les DataTips** , sélectionnez le fichier XML DataTips que vous souhaitez ouvrir, puis sélectionnez **ouvrir**.
 

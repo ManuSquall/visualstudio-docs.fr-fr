@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 980c49aafba55e29714d786e492f7bb37a8ca621
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646746"
 ---
 # <a name="visual-c-typedefs-in-class-designer"></a>Typedefs de Visual C++ dans le Concepteur de classes
@@ -174,7 +174,7 @@ class A {
 
  `A`
 
- Class
+ Classe
 
  -> MyB
 
@@ -201,4 +201,4 @@ class A {
  -> MyIntVect
 
 ## <a name="see-also"></a>Voir aussi
- Utilisation du spécificateur typedef de [Visual C++ code (Concepteur de classes)](../ide/working-with-visual-cpp-code-class-designer.md) [(NOTINBUILD)](https://msdn.microsoft.com/cc96cf26-ba93-4179-951e-695d1f5fdcf1)
+ [Utilisation d’Visual C++ spécificateur de code (Concepteur de classes)](../ide/working-with-visual-cpp-code-class-designer.md) [(NOTINBUILD) typedef](https://msdn.microsoft.com/cc96cf26-ba93-4179-951e-695d1f5fdcf1)

@@ -6,10 +6,10 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
 ms.openlocfilehash: 187805767e9f67851975dccf8513c708c4233ccc
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74985215"
 ---
 # <a name="source-editor"></a>Éditeur de code source
@@ -50,7 +50,7 @@ Cet élément de menu peut également être utilisé pour activer ou désactiver
 
 Il peut être nécessaire d’afficher les caractères invisibles dans le code source. C’est un moyen visuel de vérifier que vous respectez les standards de codage et que vous n’utilisez pas de l’espace inutilement. C’est également utile lors de l’écriture de code F#, dont l’évaluation dépend de l’indentation précise des lignes.
 
-Définissez les options pour afficher les espaces en accédant à **Visual Studio > Préférences > Éditeur de texte > Marqueurs et règles**. La sélection de cette option permet de définir _lorsque_ des caractères invisibles seront affichés : Jamais, sur la sélection ou toujours :
+Définissez les options pour afficher les espaces en accédant à **Visual Studio > Préférences > Éditeur de texte > Marqueurs et règles**. La sélection de cette option permet de définir le _moment où_les   caractères invisibles sont affichés : jamais, à la sélection ou toujours :
 
 ![Options d’affichage des caractères invisibles](media/source-editor-image3.png)
 

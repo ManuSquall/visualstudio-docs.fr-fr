@@ -10,10 +10,10 @@ author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.openlocfilehash: 2e883970b4b265b1864d53ef6e1f347160e5aeb9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62550910"
 ---
 # <a name="getting-started-with-ptvs-editing-code"></a>Prise en main des outils Python pour Visual Studio : édition du code
@@ -34,7 +34,7 @@ from math import sin
   
  Lors du codage, si vous utilisez un identificateur qui n'est pas lié, mais qui se trouve dans vos bibliothèques, les outils Python pour Visual Studio offrent une correction rapide contextuelle pour ajouter l'instruction d'importation dont vous avez besoin.  Par exemple, si vous avez tapé `cos`, **import from match** vous est proposé.  
   
- Vous pouvez utiliser un extrait de code pour générer du code.  Dans le menu Edition, cliquez sur IntelliSense, puis sur Insérer un extrait.  Choisissez maintenant Python, puis def.  Appelez la fonction `make_dot_string` et ajoutez un paramètre `x`.  Vous pouvez maintenant ajouter des assertions dans le fichier pour le développement axé sur des tests : vous voyez que les outils Python pour Visual Studio peuvent déjà proposer la nouvelle fonction dans les listes de saisie semi-automatique.  
+ Vous pouvez utiliser un extrait de code pour générer du code.  Dans le menu Edition, cliquez sur IntelliSense, puis sur Insérer un extrait.  Maintenant, choisissez Python, puis def.  Appelez la fonction `make_dot_string` et ajoutez un paramètre `x` .  Vous pouvez maintenant ajouter des assertions dans le fichier pour le développement axé sur des tests : vous voyez que les outils Python pour Visual Studio peuvent déjà proposer la nouvelle fonction dans les listes de saisie semi-automatique.  
   
 ```python  
 assert make_dot_string(90) == '          o'  
@@ -67,5 +67,5 @@ def main ():
  Vous pouvez obtenir des instructions en regardant cette très courte [vidéo youtube](https://www.youtube.com/watch?v=uZGZNEyyeKs&index=3&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Documentation du wiki](https://github.com/Microsoft/PTVS/wiki/Editor-Features)   
+ [Documentation wiki](https://github.com/Microsoft/PTVS/wiki/Editor-Features)   
  [Vidéos sur le démarrage et l’exploration de PTVS](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)

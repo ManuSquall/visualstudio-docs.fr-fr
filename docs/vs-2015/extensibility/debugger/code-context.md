@@ -11,18 +11,18 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d59a4c79cb21386fa6f6e7031404aeb0b435b3b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197372"
 ---
 # <a name="code-context"></a>Contexte de code
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Dans [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] débogage, un **contexte de code**:  
+Dans [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] le cadre du débogage, un **contexte de code**:  
   
-- Fournit une abstraction d’une position dans le code comme connu du moteur de débogage (dé). Pour la plupart des architectures d’exécution dès aujourd'hui, un contexte de code peut être considéré comme une adresse dans le flux d’instructions d’un programme. Pour les langues non traditionnel, où code ne peut pas être représenté par des instructions, un contexte de code peut être représenté par d’autres moyens.  
+- Fournit une abstraction d’une position dans le code telle que connue du moteur de débogage (DE). Pour la plupart des architectures Runtime actuelles, un contexte de code peut être considéré comme une adresse dans le flux d’instructions d’un programme. Pour les langages non traditionnels, où le code ne peut pas être représenté par des instructions, un contexte de code peut être représenté par d’autres moyens.  
   
 - Décrit la position actuelle dans le flux d’exécution du programme en cours de débogage.  
   
@@ -30,7 +30,7 @@ Dans [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] débogage, un **contexte de
   
 - A un contexte de document associé.  
   
-- Est implémentée par un [IDebugCodeContext2](../../extensibility/debugger/reference/idebugcodecontext2.md) interface.  
+- Est implémenté par une interface [IDebugCodeContext2](../../extensibility/debugger/reference/idebugcodecontext2.md) .  
   
 ## <a name="see-also"></a>Voir aussi  
  [Contexte de document](../../extensibility/debugger/document-context.md)   

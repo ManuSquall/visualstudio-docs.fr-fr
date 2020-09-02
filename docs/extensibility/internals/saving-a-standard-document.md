@@ -1,5 +1,5 @@
 ---
-title: Enregistrement d’un document standard (en anglais) Microsoft Docs
+title: Enregistrement d’un document standard | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,48 +13,48 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e8d50a9e62e69f925564717020a51f88620f5f3b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80705549"
 ---
 # <a name="saving-a-standard-document"></a>Enregistrement d’un document standard
-L’environnement gère les commandes Save, Save As et Save All. Lorsqu’un utilisateur sélectionne **Enregistrer,** **enregistrer comme**, ou **enregistrer tous** dans le menu **Fichier** ou ferme la solution, résultant en un **Save All**, le processus suivant se produit.
+L’environnement gère les commandes Save, Save As et Save all. Lorsqu’un utilisateur sélectionne **Enregistrer**, **Enregistrer sous**ou **enregistrer tout** à partir du menu **fichier** ou ferme la solution, ce qui entraîne un **enregistrement tout**, le processus suivant se produit.
 
- ![Rédacteur standard](../../extensibility/internals/media/public.gif "Public") Enregistrer, enregistrer as et enregistrer toute la manipulation de commande pour un éditeur standard
+ ![Éditeur standard](../../extensibility/internals/media/public.gif "Public") Enregistrer, enregistrer sous et enregistrer toute la gestion des commandes pour un éditeur standard
 
- Ce processus est détaillé dans les étapes suivantes :
+ Ce processus est détaillé dans les étapes suivantes :
 
-1. Lorsque les commandes **Enregistrer** et enregistrer au fur <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> et à **mesure** sont sélectionnées, l’environnement utilise le service pour déterminer la fenêtre de document active et donc quels éléments doivent être enregistrés. Une fois que la fenêtre de document active est connue, l’environnement trouve le pointeur de hiérarchie et l’identifiant d’élément (itemID) pour le document dans la table de document en cours d’exécution. Pour plus d’informations, voir [Tableau des documents d’exécution](../../extensibility/internals/running-document-table.md).
+1. Lorsque les commandes **Enregistrer** et **Enregistrer sous** sont sélectionnées, l’environnement utilise le <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> service pour déterminer la fenêtre de document active et, par conséquent, les éléments à enregistrer. Une fois que la fenêtre de document active est connue, l’environnement recherche le pointeur de hiérarchie et l’identificateur d’élément (itemID) du document dans la table de document en cours d’exécution. Pour plus d’informations, consultez exécution de la [table des documents](../../extensibility/internals/running-document-table.md).
 
-    Lorsque la commande **Save All** est sélectionnée, l’environnement utilise les informations contenues dans le tableau de document en cours d’exécution pour compiler la liste de tous les éléments à enregistrer.
+    Lorsque la commande **enregistrer tout** est sélectionnée, l’environnement utilise les informations contenues dans la table de document en cours d’exécution pour compiler la liste de tous les éléments à enregistrer.
 
-2. Lorsque la solution <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> reçoit un appel, elle s’isère à travers l’ensemble <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> d’éléments sélectionnés (c’est-à-dire les sélections multiples exposées par le service).
+2. Lorsque la solution reçoit un <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> appel, elle itère au sein de l’ensemble d’éléments sélectionnés (autrement dit, les sélections multiples exposées par le <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> service).
 
-3. Sur chaque élément de la sélection, la solution <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IsItemDirty%2A> utilise le pointeur de hiérarchie pour appeler la méthode pour déterminer si la commande de menu **Enregistrer** doit être activée. Si un ou plusieurs articles sont sales, la commande **Save** est activée. Si la hiérarchie utilise un éditeur standard, alors la hiérarchie délègue <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.IsDocDataDirty%2A> le statut sale à l’éditeur en appelant la méthode.
+3. Sur chaque élément de la sélection, la solution utilise le pointeur de hiérarchie pour appeler la <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IsItemDirty%2A> méthode afin de déterminer si la commande de menu **Enregistrer** doit être activée. Si un ou plusieurs éléments sont modifiés, la commande **Enregistrer** est activée. Si la hiérarchie utilise un éditeur standard, la hiérarchie délègue l’interrogation de l’état de modification à l’éditeur en appelant la <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.IsDocDataDirty%2A> méthode.
 
-4. Sur chaque élément sélectionné qui est sale, la <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A> solution utilise le pointeur de hiérarchie pour appeler la méthode sur les hiérarchies appropriées.
+4. Sur chaque élément sélectionné qui est modifié, la solution utilise le pointeur de hiérarchie pour appeler la <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A> méthode sur les hiérarchies appropriées.
 
-    Il est courant pour la hiérarchie d’utiliser un éditeur standard pour modifier le document. Dans ce cas, l’objet de données <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> de document pour cet éditeur doit prendre en charge l’interface. Lors de <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A> la réception de l’appel de méthode, le <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.SaveDocData%2A> projet doit informer l’éditeur que le document est enregistré en appelant la méthode sur l’objet de données de document. L’éditeur peut permettre à l’environnement de gérer `Query Service` la <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> boîte de dialogue **Save As,** en appelant à l’interface. Cela renvoie un <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> pointeur à l’interface. L’éditeur doit <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SaveDocDataToFile%2A> alors appeler la méthode, en <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> passant un `pPersistFile` pointeur à la mise en œuvre de l’éditeur au moyen du paramètre. L’environnement effectue ensuite l’opération Save et fournit la boîte de dialogue **Save As** pour l’éditeur. L’environnement rappelle ensuite à <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>l’éditeur avec .
+    Il est courant pour la hiérarchie d’utiliser un éditeur standard pour modifier le document. Dans ce cas, l’objet de données de document pour cet éditeur doit prendre en charge l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> interface. Lors de la réception de l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A> appel de méthode, le projet doit informer l’éditeur que le document est enregistré en appelant la <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.SaveDocData%2A> méthode sur l’objet de données de document. L’éditeur peut autoriser l’environnement à gérer la boîte de dialogue **Enregistrer sous** en appelant `Query Service` pour l' <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> interface. Cela retourne un pointeur vers l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> interface. L’éditeur doit ensuite appeler la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SaveDocDataToFile%2A> méthode, en passant un pointeur vers l’implémentation de l’éditeur au <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> moyen du `pPersistFile` paramètre. L’environnement effectue ensuite l’opération d’enregistrement et fournit la boîte de dialogue **Enregistrer sous** de l’éditeur. L’environnement appelle ensuite à nouveau l’éditeur avec <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> .
 
-5. Si l’utilisateur tente d’enregistrer un document sans titre (c’est-à-dire un document précédemment nonavé), alors une commande Save As est effectivement effectuée.
+5. Si l’utilisateur tente d’enregistrer un document sans titre (autrement dit, un document précédemment non enregistré), une commande Enregistrer sous est exécutée.
 
-6. Pour la commande Save As, l’environnement affiche la boîte de dialogue Save As, incitant l’utilisateur à obtenir un nom de fichier.
+6. Pour la commande Enregistrer sous, l’environnement affiche la boîte de dialogue Enregistrer sous, qui invite l’utilisateur à entrer un nom de fichier.
 
-    Si le nom du fichier a changé, alors la hiérarchie est responsable de <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.SetProperty%2A>la mise à jour des informations mises en cache du cadre du document en appelant (VSFPROPID_MkDocument).
+    Si le nom du fichier a été modifié, la hiérarchie est chargée de mettre à jour les informations mises en cache du frame de document en appelant <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.SetProperty%2A> (VSFPROPID_MkDocument).
 
-   Si la commande **Save As** déplace l’emplacement du document, et que la hiérarchie est sensible à l’emplacement du document, la hiérarchie est chargée de céder la propriété de la fenêtre de document ouverte à une autre hiérarchie. Par exemple, cela se produit si le projet suit si le fichier est un fichier interne ou externe (Fichier divers) par rapport au projet. Utilisez la procédure suivante pour changer la propriété d’un fichier au projet Divers Files.
+   Si la commande **Enregistrer sous** déplace l’emplacement du document et que la hiérarchie est sensible à l’emplacement du document, la hiérarchie est chargée de transmettre la propriété de la fenêtre de document ouverte à une autre hiérarchie. Par exemple, cela se produit si le projet suit si le fichier est un fichier interne ou externe (fichier divers) par rapport au projet. Utilisez la procédure suivante pour modifier la propriété d’un fichier dans le projet fichiers divers.
 
 ## <a name="changing-file-ownership"></a>Modification de la propriété du fichier
 
-#### <a name="to-change-file-ownership-to-the-miscellaneous-files-project"></a>Pour changer la propriété du fichier au projet Divers Files
+#### <a name="to-change-file-ownership-to-the-miscellaneous-files-project"></a>Pour modifier la propriété du fichier pour le projet fichiers divers
 
-1. Service de requête <xref:Microsoft.VisualStudio.Shell.Interop.SVsExternalFilesManager> pour l’interface.
+1. Service de requête pour l' <xref:Microsoft.VisualStudio.Shell.Interop.SVsExternalFilesManager> interface.
 
-     Un pointeur à <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2> est retourné.
+     Un pointeur vers <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2> est retourné.
 
-2. Appelez <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A> la`pszMkDocumentNew` `punkWindowFrame`méthode ( , ) pour transférer le document à la nouvelle hiérarchie. La hiérarchie exécutant le Save As command appelle cette méthode.
+2. Appelez la <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A> `pszMkDocumentNew` méthode (, `punkWindowFrame` ) pour transférer le document vers la nouvelle hiérarchie. La hiérarchie effectuant la commande Enregistrer sous appelle cette méthode.
 
 ## <a name="see-also"></a>Voir aussi
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>

@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dfcee55882ee90af6ed13072a7e557a9c1763ae8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185990"
 ---
 # <a name="call-tree-view---net-memory-instrumentation-data"></a>Vue Arborescence des appels - Données d’instrumentation de la mémoire .NET
@@ -33,7 +33,7 @@ La vue Arborescence des appels des données de profilage pour l’allocation de 
   
  En définissant le nœud racine, vous supprimez toutes les autres entrées de l'affichage, à l'exception de la sous-arborescence du nœud sélectionné. Vous pouvez réinitialiser le nœud racine au nœud examiné à l’origine : cliquez avec le bouton droit dans la fenêtre Vue Arborescence des appels, puis sélectionnez **Réinitialiser la racine**.  
   
-## <a name="general"></a>Généralités  
+## <a name="general"></a>Général  
   
 |Colonne|Description|  
 |------------|-----------------|  
@@ -41,15 +41,15 @@ La vue Arborescence des appels des données de profilage pour l’allocation de 
 |**Adresse de la fonction**|Adresse de la fonction.|  
 |**Numéro de ligne de fonction**|Numéro de ligne du début de cette fonction dans le fichier source.|  
 |**Nombre d’appels**|Nombre total d’appels émis vers cette fonction.|  
-|**Fichier source**|Fichier source contenant la définition pour cette fonction.|  
+|**Source File**|Fichier source contenant la définition pour cette fonction.|  
 |**Nom du module**|Nom du module qui contient la fonction.|  
-|**Chemin de module**|Chemin d’accès du module qui contient la fonction.|  
-|**ID du processus**|ID du processus (PID) de l'exécution du profilage.|  
+|**Chemin du module**|Chemin d’accès du module qui contient la fonction.|  
+|**ID de processus**|ID du processus (PID) de l'exécution du profilage.|  
 |**Nom du processus**|Nom assigné au processus.|  
 |**Traitement de sondes du temps exclusif**|Surcharge de temps pour cette fonction qui est provoquée par l'instrumentation. Le traitement de sondes a été soustrait de tous les temps exclusifs.|  
 |**Traitement des sondes temps inclus**|Surcharge de temps pour cette fonction et ses fonctions enfants qui est provoquée par l'instrumentation. Le traitement de sondes a été soustrait de tous les temps inclusifs.|  
-|**Type**|Contexte de la fonction :<br /><br /> -   **0** : fonction active<br />-   **1** : fonction qui appelle la fonction active<br />-   **2** : fonction qui est appelée par la fonction active<br /><br /> Uniquement dans les rapports en ligne de commande [VSPerfReport](../profiling/vsperfreport.md).|  
-|**Nom de fonction racine**|Nom de la fonction active. Uniquement dans les rapports en ligne de commande [VSPerfReport](../profiling/vsperfreport.md).|  
+|**Type**|Contexte de la fonction :<br /><br /> -   **0** -la fonction active<br />-   **1** -fonction qui appelle la fonction active<br />-   **2** -fonction appelée par la fonction active<br /><br /> Uniquement dans les rapports en ligne de commande [VSPerfReport](../profiling/vsperfreport.md).|  
+|**Nom de fonction racine**|Nom de la fonction actuelle. Uniquement dans les rapports en ligne de commande [VSPerfReport](../profiling/vsperfreport.md).|  
   
 ## <a name="net-memory-values"></a>Valeurs de mémoire .NET  
  Les valeurs de mémoire .NET inclusives d’une fonction indiquent le nombre (allocations) et la taille (octets) des objets créés par la fonction et les fonctions qui ont été appelées par celle-ci.  

@@ -11,10 +11,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: ec050cf8f365bfae2290593a0c7f215dcb2f39cc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185997"
 ---
 # <a name="how-to-automatically-apply-product-keys-when-deploying-visual-studio"></a>Comment : appliquer automatiquement les clés de produit lors du déploiement de Visual Studio
@@ -32,7 +32,7 @@ Vous pouvez appliquer votre clé de produit par programmation dans le cadre du s
  `vs_enterprise.exe [any other setup parameters] /ProductKey AAAAABBBBBCCCCCDDDDDDEEEEEE`
 
 ## <a name="apply-the-license-after-installation"></a>Appliquer la licence après l’installation
- Vous pouvez activer une version installée de Visual Studio avec une clé de produit à l'aide de l'utilitaire storePID.exe sur les ordinateurs cibles en mode silencieux. StorePID.exe est un programme utilitaire qui s’installe avec Visual Studio à l’adresse **\<lecteur>:\\\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\StorePID.exe**.
+ Vous pouvez activer une version installée de Visual Studio avec une clé de produit à l'aide de l'utilitaire storePID.exe sur les ordinateurs cibles en mode silencieux. StorePID.exe est un programme utilitaire qui s’installe avec Visual Studio à l’emplacement ** \<drive> suivant : \\ \Program Files (x86) \Microsoft Visual Studio 14.0\Common7\IDE\StorePID.exe**.
 
  Exécutez storePID.exe avec des privilèges élevés à l'aide d'un agent System Center ou d'une invite de commandes avec élévation de privilèges. Tapez ensuite la clé de produit (en incluant les tirets) et le code de produit Microsoft (MPC). Faites attention à bien inclure les tirets de la clé de produit !
 

@@ -9,10 +9,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 031caa0f1bccb2c3f57dbbc89b4dd7d311928b77
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75567552"
 ---
 # <a name="customize-project-and-item-templates"></a>Personnaliser des modèles de projet et d’élément
@@ -25,7 +25,7 @@ Par exemple, il est possible de réaliser les tâches suivantes :
 
 - Modifiez et exportez un modèle existant sous la forme d’un modèle utilisateur.
 
-   Pour plus d’informations, voir [Comment : Mettre à jour les modèles existants](../ide/how-to-update-existing-templates.md).
+   Pour plus d’informations, consultez [Comment : mettre à jour des modèles existants](../ide/how-to-update-existing-templates.md).
 
 - Passez des paramètres personnalisés dans un modèle pour remplacer les valeurs existantes.
 
@@ -37,9 +37,9 @@ Par exemple, il est possible de réaliser les tâches suivantes :
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Création de modèles de projets et d’objets](../ide/creating-project-and-item-templates.md)
-- [Comment : Modèles de dépannage](../ide/how-to-troubleshoot-templates.md)
-- [Comment : Créer des modèles de projet](../ide/how-to-create-project-templates.md)
-- [Comment : Créer des modèles d’objets](../ide/how-to-create-item-templates.md)
-- [Référence de schéma de modèle de studio visuel](../extensibility/visual-studio-template-schema-reference.md)
+- [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)
+- [Comment : dépanner des modèles](../ide/how-to-troubleshoot-templates.md)
+- [Comment : créer des modèles de projet](../ide/how-to-create-project-templates.md)
+- [Comment : créer des modèles d’élément](../ide/how-to-create-item-templates.md)
+- [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>

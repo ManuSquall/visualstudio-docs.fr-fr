@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5bf13c7624d6c9d8e64b79f653eb83a0c5f3b3f0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75565875"
 ---
 # <a name="shell-command"></a>Shell, commande
@@ -56,7 +56,7 @@ facultatif. Spécifie le répertoire de travail à définir quand le programme e
 
 facultatif. Spécifie que la sortie pour l’exécutable doit s’afficher dans la fenêtre **Sortie**.
 
-## <a name="remarks"></a>Notes 
+## <a name="remarks"></a>Notes
 Les commutateurs /dir /o /c doivent être spécifiés immédiatement après `Tools.Shell`. Toute syntaxe spécifiée après le nom de l’exécutable est transmise en tant qu’argument de la ligne de commande.
 
 L’alias prédéfini `Shell` peut être utilisé à la place de `Tools.Shell`.
@@ -77,7 +77,7 @@ Chaque groupe de trois guillemets (""") est interprété par le processeur `Shel
 > [!CAUTION]
 > Si vous ne mettez pas la chaîne de chemin entre guillemets ("""), Windows utilisera uniquement la partie de la chaîne jusqu’au premier espace. Par exemple, si la chaîne de chemin ci-dessus n’a pas été correctement mise entre guillemets, Windows recherche un fichier nommé « Program » situé dans le répertoire racine C:\. Si un fichier exécutable C:\Program.exe est effectivement disponible, même installé de manière illicite, Windows essaie d’exécuter ce programme à la place du programme « C:\Program Files\SomeFile.exe » voulu.
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 La commande suivante utilise xcopy.exe pour copier le fichier `MyText.txt` dans le dossier `Text`. La sortie de xcopy.exe s’affiche à la fois dans la fenêtre **Commande** et dans la fenêtre **Sortie**.
 
 ```cmd
@@ -86,8 +86,8 @@ La commande suivante utilise xcopy.exe pour copier le fichier `MyText.txt` dans 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Commandes de studio visuel](../../ide/reference/visual-studio-commands.md)
-- [Commande, fenêtre](../../ide/reference/command-window.md)
-- [Fenêtre Sortie](../../ide/reference/output-window.md)
-- [Boîte de recherche/commande](../../ide/find-command-box.md)
-- [Alias de commande de studio visuel](../../ide/reference/visual-studio-command-aliases.md)
+- [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)
+- [Fenêtre commande](../../ide/reference/command-window.md)
+- [Sortie, fenêtre](../../ide/reference/output-window.md)
+- [Zone Rechercher/commande](../../ide/find-command-box.md)
+- [Alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

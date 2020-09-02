@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::GetState - France Microsoft Docs
+title: 'IDebugBoundBreakpoint2 :: GetState | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 30e36880fda8b94eefcbe8b3110685b2114476a3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735476"
 ---
 # <a name="idebugboundbreakpoint2getstate"></a>IDebugBoundBreakpoint2::GetState
-Obtient l’état de ce point de rupture lié.
+Obtient l’état de ce point d’arrêt lié.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -42,13 +42,13 @@ int GetState( 
 
 ## <a name="parameters"></a>Paramètres
 `pState`\
-[out] Retourne une valeur du [recensement BP_STATE](../../../extensibility/debugger/reference/bp-state.md) qui décrit l’état du point d’arrêt.
+à Retourne une valeur de l’énumération [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) qui décrit l’état du point d’arrêt.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="example"></a>Exemple
-L’exemple suivant montre comment implémenter cette méthode pour un objet simple `CBoundBreakpoint` qui expose [l’interface IDebugBoundBreakpoint2.](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
+L’exemple suivant montre comment implémenter cette méthode pour un `CBoundBreakpoint` objet simple qui expose l’interface [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) .
 
 ```
 HRESULT CBoundBreakpoint::GetState(BP_STATE* pState)

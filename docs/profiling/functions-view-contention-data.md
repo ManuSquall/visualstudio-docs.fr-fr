@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 5874ffc7b4d304d1eaacd78032d657fe6ff31d94
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74780050"
 ---
 # <a name="functions-view---contention-data"></a>Fonctions, vue - données de conflit
@@ -30,7 +30,7 @@ La vue de rapport Fonctions des données de conflit répertorie les fonctions da
 |**Conflits exclusifs**|Nombre de fois où l’exécution de code du corps de la fonction a été bloquée. Les conflits dans les fonctions qui ont été appelées par la fonction ne sont pas incluses.|
 |**% de conflits exclusifs**|Pourcentage de tous les conflits dans l’exécution de profilage qui étaient des conflits exclusifs de cette fonction.|
 |**Adresse de la fonction**|Adresse de la fonction.|
-|**Nom de fonction**|Nom complet de la fonction.|
+|**Nom de la fonction**|Nom complet de la fonction.|
 |**Temps bloqué inclusif**|Durée pendant laquelle l’exécution de cette fonction ou d’une des fonctions appelées par cette fonction a été bloquée.|
 |**% de temps bloqué inclusif**|Pourcentage de tout le temps bloqué dans l’exécution du profilage, qui était du temps bloqué inclusif de cette fonction ou de ce module.|
 |**Conflits inclusifs**|Nombre de fois où l’exécution de cette fonction ou d’une des fonctions appelées par cette fonction a été bloquée.|
@@ -38,14 +38,14 @@ La vue de rapport Fonctions des données de conflit répertorie les fonctions da
 |**Numéro de ligne de fonction**|Numéro de ligne du début de cette fonction dans le fichier source.|
 |**Nom du module**|Nom du module qui contient la fonction.|
 |**Chemin du module**|Chemin d’accès du module qui contient la fonction.|
-|**ID du processus**|ID du processus (PID) dans lequel la fonction s’exécutait.|
+|**ID de processus**|ID du processus (PID) dans lequel la fonction s’exécutait.|
 |**Nom du processus**|Nom du processus.|
-|**Fichier source**|Fichier source contenant la définition pour cette fonction.|
+|**Source File**|Fichier source contenant la définition pour cette fonction.|
 
 ## <a name="see-also"></a>Voir aussi
 - [Guide pratique pour personnaliser les colonnes de la vue de rapport](../profiling/how-to-customize-report-view-columns.md)
 - [Vue Fonctions](../profiling/functions-view.md)
-- [Fonctions Vue - instrumentation](../profiling/functions-view-dotnet-memory-instrumentation-data.md)
-- [Vue des fonctions - échantillonnage](../profiling/functions-view-dotnet-memory-sampling-data.md)
+- [Vue fonctions-Instrumentation](../profiling/functions-view-dotnet-memory-instrumentation-data.md)
+- [Vue fonctions-échantillonnage](../profiling/functions-view-dotnet-memory-sampling-data.md)
 - [Vue Fonctions](../profiling/functions-view-instrumentation-data.md)
 - [Vue Fonctions](../profiling/functions-view-sampling-data.md)

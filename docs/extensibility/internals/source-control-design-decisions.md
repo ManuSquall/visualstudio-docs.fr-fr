@@ -1,5 +1,5 @@
 ---
-title: Décisions de conception de contrôle des sources (en anglais) Microsoft Docs
+title: Décisions relatives à la conception du contrôle de code source | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,28 +11,28 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9c36bb2b50a72a52aeaeb7712f4ed711845b5e6d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80705255"
 ---
 # <a name="source-control-design-decisions"></a>Décisions de conception du contrôle de code source
-Les décisions de conception suivantes doivent être prises en considération pour les projets lors de la mise en œuvre du contrôle des sources.
+Les décisions de conception suivantes doivent être prises en compte pour les projets lors de l’implémentation du contrôle de code source.
 
-## <a name="will-information-be-shared-or-private"></a>L’information sera-t-elle partagée ou privée?
- La décision de conception la plus importante que vous pouvez prendre est ce que l’information est sharable et ce qui est privé. Par exemple, la liste des fichiers pour le projet est partagée, mais dans cette liste de fichiers, certains utilisateurs peuvent vouloir avoir des fichiers privés. Les paramètres de compilateur sont partagés, mais le projet de démarrage est généralement privé. Les paramètres sont soit purement partagés, partagés avec un remplacement, soit purement privés. Par conception, les articles privés, tels que les fichiers d’options utilisateur Solution (.suo), ne sont pas enregistrés [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]dans . Assurez-vous de stocker des informations privées dans des fichiers privés tels que le fichier .suo, ou un fichier privé spécifique que vous créez, par exemple, un fichier .csproj.user pour Visual C ou un fichier .vbproj.user pour Visual Basic.
+## <a name="will-information-be-shared-or-private"></a>Les informations seront-elles partagées ou privées ?
+ La décision la plus importante en matière de conception consiste à savoir quelles informations peuvent être partagées et ce qui est privé. Par exemple, la liste des fichiers du projet est partagée, mais dans cette liste de fichiers, certains utilisateurs peuvent souhaiter avoir des fichiers privés. Les paramètres du compilateur sont partagés, mais le projet de démarrage est généralement privé. Les paramètres sont soit entièrement partagés, partagés avec un remplacement, soit purement privés. Par défaut, les éléments privés, tels que les fichiers d’options utilisateur de solution (. suo), ne sont pas archivés [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] . Veillez à stocker les informations privées dans des fichiers privés tels que le fichier. suo ou un fichier privé spécifique que vous créez, par exemple, un fichier. csproj. User pour Visual C# ou un fichier. vbproj. User pour Visual Basic.
 
- Cette décision n’est pas exhaustive et peut être prise point par point.
+ Cette décision n’est pas exhaustive et peut être faite sur une base élément par élément.
 
-## <a name="will-the-project-include-special-files"></a>Le projet comprendra-t-il des dossiers spéciaux?
- Une autre décision importante de conception est de savoir si votre structure de projet utilise des fichiers spéciaux. Les fichiers spéciaux sont des fichiers cachés qui sous-tendent les fichiers qui sont visibles dans Solution Explorer et dans les cases de dialogue d’enregistrement et de check-out. Si vous utilisez des fichiers spéciaux, suivez ces lignes directrices :
+## <a name="will-the-project-include-special-files"></a>Le projet inclura-t-il des fichiers spéciaux ?
+ Une autre décision de conception importante est que la structure de votre projet utilise des fichiers spéciaux. Les fichiers spéciaux sont des fichiers cachés qui sous-tendent les fichiers qui sont visibles dans Explorateur de solutions et dans les boîtes de dialogue d’archivage et d’extraction. Si vous utilisez des fichiers spéciaux, suivez ces instructions :
 
-1. N’associez pas les fichiers spéciaux au nœud racine du projet, c’est-à-dire au dossier du projet lui-même. Votre dossier de projet doit être un seul fichier.
+1. N’associez pas de fichiers spéciaux au nœud racine du projet, c’est-à-dire au fichier projet lui-même. Votre fichier projet doit être un fichier unique.
 
-2. Lorsque des fichiers spéciaux sont ajoutés, supprimés <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2> ou renommés dans un projet, les événements appropriés doivent être déclenchés avec l’ensemble de drapeau qui indique que les fichiers sont des fichiers spéciaux. Ces événements sont appelés par l’environnement en <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> réponse au projet appelant les méthodes appropriées.
+2. Quand des fichiers spéciaux sont ajoutés, supprimés ou renommés dans un projet, les <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2> événements appropriés doivent être déclenchés avec l’indicateur défini qui indique que les fichiers sont des fichiers spéciaux. Ces événements sont appelés par l’environnement en réponse au projet appelant les méthodes appropriées <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> .
 
-3. Lorsque votre projet <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> ou votre éditeur demande un fichier, les fichiers spéciaux associés à ce fichier ne sont pas automatiquement vérifiés. Passez les fichiers spéciaux avec le fichier parent. L’environnement détectera la relation entre tous les fichiers qui sont transmis et cachera de manière appropriée les fichiers spéciaux dans l’interface utilisateur de départ.
+3. Lorsque votre projet ou éditeur appelle <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> un fichier, les fichiers spéciaux associés à ce fichier ne sont pas extraits automatiquement. Transmettez les fichiers spéciaux en même temps que le fichier parent. L’environnement détecte la relation entre tous les fichiers qui sont transmis et masque de manière appropriée les fichiers spéciaux dans l’interface utilisateur de l’extraction.
 
 ## <a name="see-also"></a>Voir aussi
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>

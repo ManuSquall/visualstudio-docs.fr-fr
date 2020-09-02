@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramPublisher2::SetDebuggerPresent | Microsoft Docs
+title: 'IDebugProgramPublisher2 :: SetDebuggerPresent | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 571da5e7baa720dc2e26fc629e2887cd0e3bdfa9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68146291"
 ---
 # <a name="idebugprogrampublisher2setdebuggerpresent"></a>IDebugProgramPublisher2::SetDebuggerPresent
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Indique le serveur de publication du programme qu’un débogueur est présent et en cours d’exécution.  
+Indique à l’éditeur du programme qu’un débogueur est présent et en cours d’exécution.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -40,13 +40,13 @@ int SetDebuggerPresent(
   
 #### <a name="parameters"></a>Paramètres  
  `fDebuggerPresent`  
- [in] Valeur différente de zéro (`TRUE`) si un débogueur est présent, zéro (`FALSE`) si elle n’est pas.  
+ dans Différent de zéro ( `TRUE` ) si un débogueur est présent, zéro ( `FALSE` ) si ce n’est pas le cas.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="remarks"></a>Notes  
- La présence ou l’absence d’un débogueur est reflétée dans les données retournées à partir de la [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) méthode : la valeur retournée il est définie ou désactivée par un appel antérieur à la `SetDebuggerPresent` (méthode).  
+ La présence ou l’absence d’un débogueur est reflétée dans les données retournées par la méthode [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) : la valeur retournée est définie ou supprimée par un appel antérieur à la `SetDebuggerPresent` méthode.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)   

@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c1d7cb8ccf56ba3caf039f82618cce8df8b6e1dc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197548"
 ---
-# <a name="idiaframedatagetaddressoffset"></a>IDiaFrameData::get_addressOffset
+# <a name="idiaframedataget_addressoffset"></a>IDiaFrameData::get_addressOffset
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Récupère la partie décalage de l’adresse de code pour le frame.  
+Récupère la partie d’offset de l’adresse de code pour le frame.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -35,10 +35,10 @@ HRESULT get_addressOffset ( 
   
 #### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- [out] Retourne la partie décalage de l’adresse de code pour le frame.  
+ à Retourne la partie d’offset de l’adresse de code du frame.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

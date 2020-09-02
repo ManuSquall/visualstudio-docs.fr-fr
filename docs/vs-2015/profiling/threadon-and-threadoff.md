@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 77868ea7082c1b9118b70062f19195d94b4ca20a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145558"
 ---
 # <a name="threadon-and-threadoff"></a>ThreadOn et ThreadOff
@@ -31,7 +31,7 @@ Les sous-commandes **ThreadOff** et **ThreadOn** de VSPerfCmd.exe sont disponibl
   
 - **ThreadOn** affecte immédiatement la valeur 1 au nombre de Start/Stop du thread et reprend ainsi le profilage.  
   
-  Pour plus d’informations, consultez [API des outils de profilage](../profiling/profiling-tools-apis.md).  
+  Pour plus d’informations, consultez [outils de profilage des API](../profiling/profiling-tools-apis.md).  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -47,16 +47,16 @@ VSPerfCmd.exe /{ThreadOff|ThreadOn}:TID [Options]
 ## <a name="valid-options"></a>Options valides  
  Vous pouvez spécifier **ThreadOn** et **ThreadOff** sur des lignes de commande qui contiennent également les sous-commandes suivantes.  
   
- **Start:** `Method`  
+ **Démarrer :**`Method`  
  Initialise la session de profilage en ligne de commande et définit la méthode de profilage spécifiée.  
   
  **GlobalOff**&#124;**GlobalOn**  
  Arrête ou démarre le profilage de tous les processus d’une session de profilage en ligne de commande.  
   
- {**ProcessOff**&#124;**ProcessOn**}  **:** `TID`  
+ {**ProcessOff**&#124;**ProcessOn**} **:**`TID`  
  Arrête ou démarre le profilage du processus spécifié.  
   
-## <a name="example"></a>Exemples  
+## <a name="example"></a>Exemple  
  Dans cet exemple, la sous-commande **ThreadOff** est utilisée pour arrêter la collecte de données de profilage et collecter seulement les données de démarrage de l’application.  
   
 ```  
@@ -72,7 +72,7 @@ VSPerfCmd /Shutdown
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [VSPerfCmd](../profiling/vsperfcmd.md)   
+ [Option](../profiling/vsperfcmd.md)   
  [Profilage d’applications autonomes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilage d’applications web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Profilage de services](../profiling/command-line-profiling-of-services.md)
+ [Profilage d’applications Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Profilage des services](../profiling/command-line-profiling-of-services.md)

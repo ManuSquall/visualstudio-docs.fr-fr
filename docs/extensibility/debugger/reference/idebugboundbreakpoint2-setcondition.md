@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::SetCondition (fr) Microsoft Docs
+title: 'IDebugBoundBreakpoint2 :: SetCondition | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f23fbe1b353378ca521fa802bdeae25fd12476df
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735464"
 ---
 # <a name="idebugboundbreakpoint2setcondition"></a>IDebugBoundBreakpoint2::SetCondition
-Définit ou modifie la condition associée à ce point de rupture lié.
+Définit ou modifie la condition associée à ce point d’arrêt lié.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -42,13 +42,13 @@ int SetCondition( 
 
 ## <a name="parameters"></a>Paramètres
 `bpCondition`\
-[dans] Une valeur de [l’énumération BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) qui décrit la condition.
+dans Valeur de l’énumération [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) qui décrit la condition.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Retourne `E_BP_DELETED` si l’état de l’objet `BPS_DELETED` de rupture lié est réglé (une partie du [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) énumération).
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Retourne `E_BP_DELETED` si l’état de l’objet de point d’arrêt lié est défini sur `BPS_DELETED` (partie de l’énumération [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) ).
 
 ## <a name="remarks"></a>Notes
- Toute condition qui était auparavant associée à ce point d’arrêt est perdue.
+ Toute condition précédemment associée à ce point d’arrêt est perdue.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)

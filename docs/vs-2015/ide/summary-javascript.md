@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f283c2c1825c4b8b02fb5b044ce113231a919317
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646847"
 ---
 # <a name="ltsummarygt-javascript"></a>&lt;summary&gt; (JavaScript)
@@ -32,14 +32,14 @@ Spécifie la description d'une fonction ou d'une méthode.
 ```
 
 #### <a name="parameters"></a>Paramètres
- `locid` Facultatif. Identificateur des informations de localisation concernant la fonction ou la méthode. L’identificateur est soit un ID de membre soit il correspond à la valeur d’attribut `name` dans un lot de messages défini par des métadonnées OpenAjax. Le type d’identificateur varie selon le format spécifié dans l’élément [\<loc>](../ide/loc-javascript.md).
+ `locid` Facultatif. Identificateur des informations de localisation concernant la fonction ou la méthode. L’identificateur est soit un ID de membre soit il correspond à la valeur d’attribut `name` dans un lot de messages défini par des métadonnées OpenAjax. Le type d’identificateur dépend du format spécifié dans l' [\<loc>](../ide/loc-javascript.md) élément.
 
  `description` Facultatif. Description de la fonction ou de la méthode.
 
-## <a name="remarks"></a>Remarques
- Les éléments utilisés pour annoter les fonctions, notamment [\<summary>](../ide/summary-javascript.md), [\<param>](../ide/param-javascript.md) et [\<return>](../ide/returns-javascript.md), doivent être placés dans le corps de la fonction avant les instructions.
+## <a name="remarks"></a>Notes
+ Les éléments utilisés pour annoter des fonctions, notamment [\<summary>](../ide/summary-javascript.md) , [\<param>](../ide/param-javascript.md) , et [\<returns>](../ide/returns-javascript.md) , doivent être placés dans le corps de la fonction avant toute instruction.
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
  Le code suivant montre comment utiliser l’élément `<summary>`.
 
 ```javascript
@@ -56,4 +56,4 @@ function areaFunction(radiusParam)
 ```
 
 ## <a name="see-also"></a>Voir aussi
- [Commentaires sur la documentation XML](../ide/xml-documentation-comments-javascript.md)
+ [Commentaires de documentation XML](../ide/xml-documentation-comments-javascript.md)

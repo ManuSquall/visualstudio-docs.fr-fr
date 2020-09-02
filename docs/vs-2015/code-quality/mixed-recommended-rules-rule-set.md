@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: ffff52722fe27f2761307dcb2acd874d3849fdbd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72647021"
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>Ensemble de règles des règles recommandées mixtes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Les règles Microsoft Mixed Recommended se concentrent sur les problèmes les plus C++ courants et critiques dans vos projets qui prennent en charge le Common Language Runtime, y compris les failles de sécurité potentielles, les blocages d’application et d’autres erreurs de conception et logique importantes. Vous devez inclure cet ensemble de règles dans n’importe quel ensemble de règles personnalisé C++ que vous créez pour vos projets qui prennent en charge le Common Language Runtime. Cet ensemble de règles est conçu pour être configuré avec l’édition Visual Studio Professional et versions ultérieures.
+Les règles Microsoft Mixed Recommended se concentrent sur les problèmes les plus courants et critiques dans vos projets C++ qui prennent en charge le Common Language Runtime, y compris les failles de sécurité potentielles, les blocages d’application et d’autres erreurs de conception et logique importantes. Vous devez inclure cet ensemble de règles dans n’importe quel ensemble de règles personnalisé que vous créez pour vos projets C++ qui prennent en charge le Common Language Runtime. Cet ensemble de règles est conçu pour être configuré avec l’édition Visual Studio Professional et versions ultérieures.
 
 |                                                              Règle                                                              |                                                             Description                                                             |
 |--------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
@@ -144,7 +144,7 @@ Les règles Microsoft Mixed Recommended se concentrent sur les problèmes les pl
 |                                               [C6705](../code-quality/c6705.md)                                                |                Le nombre d’arguments attendu pour l’annotation ne correspond pas au nombre réel d’arguments pour l’annotation                 |
 |                                               [C6706](../code-quality/c6706.md)                                                |                                             Erreur d'annotation inattendue pour l'annotation                                              |
 |                                               [C6995](../code-quality/c6995.md)                                                |                                                     Échec de l’enregistrement du fichier journal XML                                                     |
-|                                              [C26100](../code-quality/c26100.md)                                               |                                                           Condition de concurrence critique                                                            |
+|                                              [C26100](../code-quality/c26100.md)                                               |                                                           Condition de concurrence                                                            |
 |                                              [C26101](../code-quality/c26101.md)                                               |                                            Échec de l’utilisation de l’opération verrouillée                                            |
 |                                              [C26110](../code-quality/c26110.md)                                               |                                                     Appelant qui ne détient pas de verrou                                                     |
 |                                              [C26111](../code-quality/c26111.md)                                               |                                                   Échec de libération du verrou par l’appelant                                                    |
@@ -156,7 +156,7 @@ Les règles Microsoft Mixed Recommended se concentrent sur les problèmes les pl
 |                                              [C28020](../code-quality/c28020.md)                                               |                                               L’expression n’est pas vraie pour cet appel                                               |
 |                                              [C28021](../code-quality/c28021.md)                                               |                                           Le paramètre annoté doit être un pointeur                                           |
 |                                              [C28022](../code-quality/c28022.md)                                               |            La ou les classes de fonction sur cette fonction ne correspondent pas à la ou les classes de fonction sur le typedef utilisé pour la définir.            |
-|                                              [C28023](../code-quality/c28023.md)                                               |         La fonction assignée ou passée doit avoir une annotation \_Function_class \_ pour au moins une des classes         |
+|                                              [C28023](../code-quality/c28023.md)                                               |         La fonction affectée ou passée doit avoir une \_ annotation Function_class \_ pour au moins une des classes         |
 |                                              [C28024](../code-quality/c28024.md)                                               | Le pointeur de fonction assigné à est annoté avec la classe de fonction, qui n’est pas contenue dans la liste des classes de fonction. |
 |                                              [C28039](../code-quality/c28039.md)                                               |                                     Le type du paramètre réel doit correspondre exactement au type                                      |
 |                                              [C28112](../code-quality/c28112.md)                                               |            Une variable qui est accessible via une fonction Interlocked doit toujours être accessible via une fonction verrouillée.            |

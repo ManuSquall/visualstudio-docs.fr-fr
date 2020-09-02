@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::Detach | Microsoft Docs
+title: IDebugProgram2 ::D Etach | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 922c3d4df6332fc5b9bc5b264c4d46b3f1b91805
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62549322"
 ---
 # <a name="idebugprogram2detach"></a>IDebugProgram2::Detach
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Détache un moteur de débogage à partir du programme.  
+Détache un moteur de débogage du programme.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -37,10 +37,10 @@ int Detach();
 ```  
   
 ## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="remarks"></a>Notes  
- Un programme détaché continue à s’exécuter, mais il ne fait plus partie de la session de débogage. Aucun événement de débogage de programme plus n’est envoyés une fois que le moteur de débogage est détaché.  
+ Un programme détaché continue de s’exécuter, mais il ne fait plus partie de la session de débogage. Aucun autre événement de débogage de programme n’est envoyé une fois que le moteur de débogage est détaché.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

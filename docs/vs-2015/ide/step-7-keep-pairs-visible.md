@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d7981ca81839cc8d0959cf5ae75c6d9a001d39a9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646950"
 ---
 # <a name="step-7-keep-pairs-visible"></a>Étape 7 : garder les paires visibles
@@ -28,7 +28,7 @@ Le jeu fonctionne correctement tant que le joueur se contente de choisir des pai
      [!code-csharp[VbExpressTutorial4Step7#9](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step7/cs/form1.cs#9)]
      [!code-vb[VbExpressTutorial4Step7#9](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step7/vb/form1.vb#9)]
 
-     La première ligne de l'instruction `if` que vous venez d'ajouter vérifie si l'icône du premier contrôle Label choisi par le joueur est la même que l'icône du deuxième contrôle Label. Si les icônes sont identiques, le programme exécute les trois instructions entre les accolades en C# ou les trois instructions dans l'instruction `if` en Visual Basic. Les deux premières instructions réinitialisent les variables de référence `firstClicked` et `secondClicked` pour arrêter le suivi des différents contrôles Label. (Vous pouvez identifier ces deux instructions dans le gestionnaire d’événements Tick du minuteur.) La troisième instruction est une instruction `return`, qui indique au programme d’ignorer le reste des instructions dans la méthode sans les exécuter.
+     La première ligne de l'instruction `if` que vous venez d'ajouter vérifie si l'icône du premier contrôle Label choisi par le joueur est la même que l'icône du deuxième contrôle Label. Si les icônes sont identiques, le programme exécute les trois instructions entre les accolades en C# ou les trois instructions dans l'instruction `if` en Visual Basic. Les deux premières instructions réinitialisent les variables de référence `firstClicked` et `secondClicked` pour arrêter le suivi des différents contrôles Label. (Vous pouvez identifier ces deux instructions dans le gestionnaire d’événements Tick du minuteur.) La troisième instruction est une `return` instruction, qui indique au programme d’ignorer le reste des instructions dans la méthode sans les exécuter.
 
      Si vous programmez en Visual C#, vous aurez éventuellement remarqué qu'une partie du code utilise un seul signe égal (`=`), alors que d'autres instructions en utilisent deux (`==`). Examinez pourquoi `=` est utilisé dans certains cas et `==` dans d'autres.
 

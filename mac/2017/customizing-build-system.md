@@ -6,15 +6,15 @@ ms.author: dominicn
 ms.date: 04/14/2017
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
 ms.openlocfilehash: 97416ef126ee77f9955d8fa486d7bb7e2ceb725e
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74983452"
 ---
 # <a name="customizing-the-build-system"></a>Personnalisation du système de génération
 
-MSBuild est un moteur de génération, développé par Microsoft, qui permet de générer principalement des applications .NET. Le cadre Mono a également sa propre mise en œuvre de Microsoft Build Engine, appelé **xbuild**. Toutefois, xbuild a été supprimé pour privilégier l’utilisation de MSBuild sur tous les systèmes d’exploitation.
+MSBuild est un moteur de génération, développé par Microsoft, qui permet de générer principalement des applications .NET. L’infrastructure mono a également sa propre implémentation du moteur de génération de Microsoft, appelée **xbuild**. Toutefois, xbuild a été supprimé pour privilégier l’utilisation de MSBuild sur tous les systèmes d’exploitation.
 
 **MSBuild** est principalement utilisé comme système de génération des projets dans Visual Studio pour Mac.
 
@@ -103,5 +103,5 @@ Par exemple, l’extrait de code ci-dessous crée les écrans de lancement d’i
 
 Les ressources suivantes peuvent être utilisées pour obtenir plus d’informations sur MSBuild :
 
-* [Aperçu MSBuild](/visualstudio/msbuild/msbuild)
+* [Vue d’ensemble de MSBuild](/visualstudio/msbuild/msbuild)
 * [Concepts MSBuild](/visualstudio/msbuild/msbuild-concepts)

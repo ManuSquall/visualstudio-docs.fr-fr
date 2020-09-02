@@ -1,5 +1,5 @@
 ---
-title: Écriture de fonctions de raccordement de débogage | Microsoft Docs
+title: Écriture d’une fonction de raccordement de débogage | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,10 +24,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0554c1494bec757d1baecd78cdc302608e5b6b3e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62573038"
 ---
 # <a name="debug-hook-function-writing"></a>Écriture de fonctions de raccordement de débogage
@@ -39,7 +39,7 @@ Cette section décrit plusieurs fonctions de raccordement de débogage personnal
  [Fonctions de raccordement de bloc client](../debugger/client-block-hook-functions.md)  
  Fournit des conseils et un prototype pour l'écriture de fonctions qui valident ou reportent le contenu des données stockées dans les blocs _CLIENT_BLOCK.  
   
- [Fonctions de raccordement d’allocation](../debugger/allocation-hook-functions.md)  
+ [Fonctions de raccordement d'allocation](../debugger/allocation-hook-functions.md)  
  Définit une fonction de raccordement d'allocation, étudie ses différentes utilisations, souligne les restrictions et fournit un prototype.  
   
  [Raccordements d’allocation et allocations de la mémoire CRT](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md)  
@@ -48,6 +48,6 @@ Cette section décrit plusieurs fonctions de raccordement de débogage personnal
  [Fonctions de raccordement de rapport](../debugger/report-hook-functions.md)  
  Décrit `_CrtSetReportHook`, que vous pouvez utiliser pour filtrer les rapports de façon à vous concentrer sur des types d'allocations spécifiques. Cette rubrique fournit également un prototype.  
   
-## <a name="related-sections"></a>Rubriques connexes  
+## <a name="related-sections"></a>Sections connexes  
  [Techniques de débogage CRT](../debugger/crt-debugging-techniques.md)  
  Renvoie à des techniques de débogage pour la bibliothèque Runtime C, parmi lesquelles l'utilisation de la bibliothèque de débogage CRT, les macros pour la création de rapports, les différences entre `malloc` et `_malloc_dbg`, l'écriture de fonctions de raccordement de débogage et le tas de débogage CRT.

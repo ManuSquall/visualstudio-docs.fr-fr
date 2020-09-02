@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::GetBreakpointResolution (fr) Microsoft Docs
+title: 'IDebugBoundBreakpoint2 :: GetBreakpointResolution | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,10 +17,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ab88009eb1c1bbbd59bbad2dfcbf62567db3941f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735576"
 ---
 # <a name="idebugboundbreakpoint2getbreakpointresolution"></a>IDebugBoundBreakpoint2::GetBreakpointResolution
@@ -42,20 +42,20 @@ int GetBreakpointResolution( 
 
 ## <a name="parameters"></a>Paramètres
 `ppBPResolution`\
-[out] Retourne l’interface [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) qui représente l’une des suivantes :
+à Retourne l’interface [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) qui représente l’un des éléments suivants :
 
-- L’objet de résolution de point de rupture qui décrit l’emplacement dans le code où un point de rupture de code a été lié.
+- Objet de résolution de point d’arrêt qui décrit l’emplacement dans le code où un point d’arrêt de code a été lié.
 
-- L’emplacement des données où un point de rupture de données a été lié.
+- Emplacement des données auquel un point d’arrêt de données est lié.
 
-## <a name="return-value"></a>Valeur de retour
-En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Retourne `E_BP_DELETED` si l’état de l’objet `BPS_DELETED` de rupture lié est réglé (une partie du [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) énumération).
+## <a name="return-value"></a>Valeur renvoyée
+En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Retourne `E_BP_DELETED` si l’état de l’objet de point d’arrêt lié est défini sur `BPS_DELETED` (partie de l’énumération [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) ).
 
 ## <a name="remarks"></a>Notes
-Appelez la méthode [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) pour déterminer si la résolution du point de rupture est pour le code ou les données.
+Appelez la méthode [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) pour déterminer si la résolution du point d’arrêt est pour le code ou les données.
 
 ## <a name="example"></a>Exemple
-L’exemple suivant montre comment implémenter cette méthode pour un objet simple `CBoundBreakpoint` qui expose [l’interface IDebugBoundBreakpoint2.](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
+L’exemple suivant montre comment implémenter cette méthode pour un `CBoundBreakpoint` objet simple qui expose l’interface [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) .
 
 ```
 HRESULT CBoundBreakpoint::GetBreakpointResolution(

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e2481693961dd03815381e9f71ee67cb73464bdf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646937"
 ---
 # <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>Étape 8 : ajouter une méthode pour vérifier si le joueur a gagné
@@ -41,6 +41,6 @@ Vous avez créé un jeu divertissant, mais il a besoin d'un élément supplémen
 
 ### <a name="to-continue-or-review"></a>Pour continuer ou examiner
 
-- Pour passer à l’étape suivante du didacticiel, consultez [Étape 9 : tester d’autres fonctionnalités](../ide/step-9-try-other-features.md).
+- Pour passer à l’étape suivante du didacticiel, consultez [étape 9 : essayer d’autres fonctionnalités](../ide/step-9-try-other-features.md).
 
-- Pour revenir à l’étape précédente du didacticiel, consultez [Étape 7 : garder les paires visibles](../ide/step-7-keep-pairs-visible.md).
+- Pour revenir à l’étape précédente du didacticiel, consultez [étape 7 : garder les paires visibles](../ide/step-7-keep-pairs-visible.md).

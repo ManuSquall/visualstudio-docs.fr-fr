@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4f4ca1def334241999445e3f11cf142aa426d962
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75566772"
 ---
 # <a name="settings-page-project-designer"></a>Paramètres, page du Concepteur de projet
@@ -29,7 +29,7 @@ Pour accéder à la page **Paramètres**, sélectionnez un nœud de projet dans 
 
 La barre d’en-tête en haut de la page **Paramètres** contient plusieurs contrôles :
 
-**Synchroniser**
+**Non**
 
 **Synchroniser** restaure les paramètres de portée utilisateur utilisés par l’application au moment de l’exécution ou pendant le débogage à leurs valeurs par défaut telles que définies au moment du design. Pour restaurer les données, supprimez du disque (et non des données de projet) les fichiers propres à l’application générés au moment de l’exécution.
 
@@ -65,7 +65,7 @@ Pour plus d’informations sur les classes d’assistance de paramètres, consul
 
 La **grille de paramètres** sert à configurer les paramètres de l’application. Cette grille contient les colonnes suivantes :
 
-**Nom   **
+**Name**
 
 Entrez le nom du paramètre d’application dans ce champ.
 
@@ -73,7 +73,7 @@ Entrez le nom du paramètre d’application dans ce champ.
 
 Utilisez la liste déroulante pour sélectionner un type pour le paramètre. Les types les plus fréquemment utilisés apparaissent dans la liste déroulante, par exemple **Chaîne**, **(Chaîne de connexion)** et **System.Drawing.Font**. Vous pouvez choisir un autre type en sélectionnant **Parcourir** à la fin de la liste, puis en sélectionnant dans la boîte de dialogue **Sélectionner un type**. Une fois que vous avez choisi un type, il est ajouté aux types communs dans la liste déroulante (pour la solution actuelle uniquement).
 
-**Scope**
+**Portée**
 
 Sélectionnez **Application** ou **Utilisateur**.
 

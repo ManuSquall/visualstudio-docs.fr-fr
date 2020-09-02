@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: c4d65388db0ef90f807ec85b8c9216d717c2b571
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62809555"
 ---
 # <a name="remote-r-service-for-linux"></a>Service R à distance pour Linux
@@ -22,9 +22,9 @@ Service R à distance pour Linux est actuellement fourni en tant que rtvs-daemon
 
 Une fois que vous avez configuré l’ordinateur distant, les étapes suivantes connectent les outils R pour Visual Studio (RTVS) à ce service :
 
-1. Sélectionnez des**espaces de travail** **Windows R** >  **Tools** > pour ouvrir la fenêtre **Des espaces de travail.**
-1. Sélectionnez **Ajouter la connexion**.
-1. Donnez un nom à la connexion et indiquez son URL, par exemple `https://localhost:5444` (sous-système Windows pour Linux) ou `https://public-ip:5444` (conteneur Azure). Sélectionnez **Enregistrer** lorsque vous avez terminé.
+1. Sélectionnez **Outils R**  >  **Windows**  >  **espaces de travail** pour ouvrir la fenêtre **espaces de travail** .
+1. Sélectionnez **Ajouter une connexion**.
+1. Donnez un nom à la connexion et indiquez son URL, par exemple `https://localhost:5444` (sous-système Windows pour Linux) ou `https://public-ip:5444` (conteneur Azure). Quand vous avez terminé, sélectionnez **Enregistrer**.
 1. Sélectionnez l’icône de connexion ou double-cliquez sur l’élément de connexion.
 1. Fournissez des informations d’identification de connexion. Le nom d’utilisateur doit avoir pour préfixe `<<unix>>\` comme dans `<<unix>>\ruser1` (comme exigé pour toutes les connexions aux ordinateurs distants Linux).
 1. Si vous utilisez un certificat auto-signé, vous pouvez voir un avertissement. Le message fournit des instructions pour corriger l’avertissement.

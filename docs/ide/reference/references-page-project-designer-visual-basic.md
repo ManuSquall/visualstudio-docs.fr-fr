@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b80427999ad841c493e61cd704b64435f81c3914
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75565602"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Page Références, Concepteur de projets (Visual Basic)
@@ -44,7 +44,7 @@ Cliquez sur ce bouton pour accéder à la boîte de dialogue **Chemins des réf�
 > 3. Dossiers qui affichent des fichiers dans la boîte de dialogue **Ajouter une référence**.
 > 4. Dossier obj du projet. (Quand vous ajoutez une référence COM à votre projet, un ou plusieurs assemblys peuvent être ajoutés au dossier obj du projet.)
 
- **Références**
+ **Informations de référence**
 
 Cette liste affiche toutes les références dans le projet, utilisées ou non.
 
@@ -56,7 +56,7 @@ Choisissez **Référence ** pour ajouter une référence à votre projet à l’
 
 Choisissez **Référence web** pour ajouter une référence web à votre projet à l’aide de la boîte de dialogue **Ajouter une référence web**.
 
- **Supprimer**
+ **Remove**
 
 Sélectionnez une ou plusieurs références dans la liste **Références**, puis cliquez sur ce bouton pour les supprimer.
 
@@ -68,7 +68,7 @@ Sélectionnez une référence web dans la liste **Références** et cliquez sur 
 
 Vous pouvez taper votre propre espace de noms dans cette zone et cliquer sur **Ajouter une importation utilisateur** pour l’ajouter à la liste d’espaces de noms.
 
-Vous pouvez créer des alias pour les espaces de noms importés par l’utilisateur. Pour ce faire, entrez le pseudonyme et l’espace nom dans le format *alias*=*namespace*. C’est utile si vous utilisez des espaces de noms longs, par exemple `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`.
+Vous pouvez créer des alias pour les espaces de noms importés par l’utilisateur. Pour ce faire, entrez l’alias et l’espace de noms dans *alias*l' = *espace de noms*alias de format. C’est utile si vous utilisez des espaces de noms longs, par exemple `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`.
 
  **Ajouter une importation utilisateur**
 
@@ -92,4 +92,4 @@ Sélectionnez un espace de noms défini par l’utilisateur dans la liste d’es
 
 - [Gestion des références dans un projet](../../ide/managing-references-in-a-project.md)
 - [Guide pratique pour ajouter ou supprimer des espaces de noms importés (Visual Basic)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)
-- [Imports (instruction) (espace de noms XML)](/dotnet/visual-basic/language-reference/statements/imports-statement-xml-namespace)
+- [Imports, instruction (espace de noms XML)](/dotnet/visual-basic/language-reference/statements/imports-statement-xml-namespace)

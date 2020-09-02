@@ -12,16 +12,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fc9c09c5f92c4193d3d3f58c819f4bc0fc9aaebf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646768"
 ---
 # <a name="visual-c-structures-in-class-designer"></a>Structures de Visual C++ dans le Concepteur de classes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Le Concepteur de classes prend en charge les structures C++ qui sont déclarées avec le mot clé `struct`. Voici un exemple :
+Le Concepteur de classes prend en charge les structures C++ qui sont déclarées avec le mot clé `struct`. Vous trouverez ci-dessous un exemple :
 
 ```
 struct MyStructure
@@ -38,7 +38,7 @@ struct MyStructure
 
 |Élément de code|Vue Concepteur de classes|
 |------------------|-------------------------|
-|`struct StructureName {};`|**StructureName**<br /><br /> Struct|
+|`struct StructureName {};`|**StructureName**<br /><br /> Structure|
 
 ## <a name="see-also"></a>Voir aussi
- [Utilisation des classes C++ de Visual Code (Concepteur de classes)](../ide/working-with-visual-cpp-code-class-designer.md) [et](https://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873) [struct](https://msdn.microsoft.com/library/3c6ba273-e248-4ff1-8c69-d2abcf1263c6) struct
+ [Utilisation de classes de Visual C++ code (Concepteur de classes)](../ide/working-with-visual-cpp-code-class-designer.md) [et](https://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873) [struct](https://msdn.microsoft.com/library/3c6ba273-e248-4ff1-8c69-d2abcf1263c6) structs

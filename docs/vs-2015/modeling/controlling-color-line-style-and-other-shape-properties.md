@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d5d296f5ab3f5c584558b373b57c175fb2bacef4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667853"
 ---
 # <a name="controlling-color-line-style-and-other-shape-properties"></a>Contrôle de la couleur, du style de ligne et d'autres propriétés des formes
@@ -29,7 +29,7 @@ Certaines propriétés de forme, telles que la couleur, peuvent être « expos�
  La forme a maintenant une propriété de domaine que vous pouvez définir dans le code de programme ou en tant qu’utilisateur.
 
 ## <a name="dynamically-updating-an-exposed-property"></a>Mise à jour dynamique d’une propriété exposée
- En général, vous souhaitez rendre la propriété exposée dépendante d’une autre propriété. Par exemple, vous souhaiterez peut-être qu’une forme s’active en rouge chaque fois qu’une propriété de domaine particulière est inférieure à zéro. Pour créer cette dépendance, créez une [règle](../modeling/rules-propagate-changes-within-the-model.md). Exemple :
+ En général, vous souhaitez rendre la propriété exposée dépendante d’une autre propriété. Par exemple, vous souhaiterez peut-être qu’une forme s’active en rouge chaque fois qu’une propriété de domaine particulière est inférieure à zéro. Pour créer cette dépendance, créez une [règle](../modeling/rules-propagate-changes-within-the-model.md). Par exemple :
 
 ```csharp
 using System;
