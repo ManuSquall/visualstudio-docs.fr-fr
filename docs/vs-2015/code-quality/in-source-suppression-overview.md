@@ -13,23 +13,23 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 63d405b0e62735c0c1e3d7bb716ea2db29bc19fe
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651571"
 ---
 # <a name="in-source-suppression-overview"></a>Vue d’ensemble de la suppression à la source
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La suppression dans la source est la possibilité de supprimer ou d’ignorer les violations de l’analyse du code dans le code managé en ajoutant l’attribut **SuppressMessage** aux segments de code qui provoquent les violations. L’attribut **SuppressMessage** est un attribut conditionnel qui est inclus dans les métadonnées il de votre assembly de code managé uniquement si le symbole de compilation CODE_ANALYSIS est défini au moment de la compilation.
+La suppression dans la source est la possibilité de supprimer ou d’ignorer les violations de l’analyse du code dans le code managé en ajoutant l’attribut **SuppressMessage** aux segments de code qui provoquent les violations. L’attribut **SuppressMessage** est un attribut conditionnel qui est inclus dans les métadonnées il de votre assembly de code managé uniquement si le CODE_ANALYSIS symbole de compilation est défini au moment de la compilation.
 
- Dans C++le fichier d’en-tête/CLI, utilisez les macros CA_SUPPRESS_MESSAGE ou CA_GLOBAL_SUPPRESS_MESSAGE pour ajouter l’attribut.
+ Dans C++/CLI, utilisez les macros CA_SUPPRESS_MESSAGE ou CA_GLOBAL_SUPPRESS_MESSAGE dans le fichier d’en-tête, pour ajouter l’attribut.
 
  Vous ne devez pas utiliser de suppressions dans la source sur les versions release pour empêcher l’expédition accidentelle des métadonnées de suppression dans la source. En raison du coût de traitement de la suppression en source, les performances de votre application peuvent également être dégradées en incluant les métadonnées de suppression dans la source.
 
 > [!NOTE]
-> Vous n’avez pas à coder manuellement ces attributs. Pour plus d’informations, consultez [Comment : supprimer des avertissements à l’aide de l’élément de menu](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md). L’élément de menu n’est pas C++ disponible pour le code.
+> Vous n’avez pas à coder manuellement ces attributs. Pour plus d’informations, consultez [Comment : supprimer des avertissements à l’aide de l’élément de menu](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md). L’élément de menu n’est pas disponible pour le code C++.
 
 ## <a name="suppressmessage-attribute"></a>SuppressMessage (attribut)
  Quand vous cliquez avec le bouton droit sur un avertissement d’analyse du code dans le **liste d’erreurs** puis que vous cliquez sur **supprimer le ou les messages**, un attribut **SuppressMessage** est ajouté dans votre code ou dans le fichier de suppression globale du projet.
@@ -70,7 +70,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
   - Ressource
 
-  - Tapez
+  - Type
 
   - Membre
 
@@ -79,11 +79,11 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 ## <a name="suppressmessage-usage"></a>Utilisation de SuppressMessage
  Les avertissements d’analyse du code sont supprimés au niveau auquel une instance de l’attribut **SuppressMessage** est appliquée. L’objectif est de coupler étroitement les informations de suppression au code où la violation se produit.
 
- La forme générale de suppression inclut la catégorie de règle et un identificateur de règle qui contient une représentation facultative explicite du nom de la règle. Par exemple :
+ La forme générale de suppression inclut la catégorie de règle et un identificateur de règle qui contient une représentation facultative explicite du nom de la règle. Par exemple,
 
  `[SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]`
 
- S’il existe des raisons de performances strictes pour réduire les métadonnées de suppression dans la source, le nom de la règle lui-même peut être omis. La catégorie de règle et son ID de règle constituent ensemble un identificateur de règle suffisamment unique. Par exemple :
+ S’il existe des raisons de performances strictes pour réduire les métadonnées de suppression dans la source, le nom de la règle lui-même peut être omis. La catégorie de règle et son ID de règle constituent ensemble un identificateur de règle suffisamment unique. Par exemple,
 
  `[SuppressMessage("Microsoft.Design", "CA1039")]`
 

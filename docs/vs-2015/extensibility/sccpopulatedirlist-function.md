@@ -1,5 +1,5 @@
 ---
-title: Fonction SccPopulateDirList | Microsoft Docs
+title: SccPopulateDirList fonction) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6078f0fd90855c432b333fd5967367460d0a364e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200021"
 ---
 # <a name="sccpopulatedirlist-function"></a>Fonction SccPopulateDirList
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Cette fonction détermine les répertoires et (éventuellement) les fichiers sont stockés dans le contrôle de code source, une liste de répertoires à examiner.  
+Cette fonction détermine quels répertoires et (éventuellement) les fichiers sont stockés dans le contrôle de code source, à partir d’une liste de répertoires à examiner.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -39,36 +39,36 @@ SCCRTN SccPopulateDirList(
   
 #### <a name="parameters"></a>Paramètres  
  pContext  
- [in] Le pointeur de contexte de plug-in de contrôle de code source.  
+ dans Pointeur de contexte du plug-in de contrôle de code source.  
   
  nDirs  
- [in] Nombre de chemins d’accès de répertoire dans le `lpDirPaths` tableau.  
+ dans Nombre de chemins d’accès aux répertoires dans le `lpDirPaths` tableau.  
   
  lpDirPaths  
- [in] Tableau de chemins de répertoires à examiner.  
+ dans Tableau de chemins d’accès aux répertoires à examiner.  
   
  pfnPopulate  
- [in] Fonction de rappel à appeler pour chaque chemin d’accès de répertoire et (éventuellement) nom de fichier dans `lpDirPaths` (consultez [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md) pour plus d’informations).  
+ dans Fonction de rappel à appeler pour chaque chemin d’accès de répertoire et (éventuellement) nom de fichier dans `lpDirPaths` (consultez [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md) pour plus d’informations).  
   
  pvCallerData  
- [in] Valeur qui doit être transmises sans modification à la fonction de rappel.  
+ dans Valeur qui doit être passée sans modification à la fonction de rappel.  
   
  fOptions  
- [in] Une combinaison de valeurs qui contrôlent la façon dont les répertoires sont traités (consultez la section « Indicateurs PopulateDirList » de [indicateurs de bits utilisés par les commandes spécifiques](../extensibility/bitflags-used-by-specific-commands.md) pour les valeurs possibles).  
+ dans Combinaison de valeurs qui contrôlent le mode de traitement des répertoires (consultez la section « indicateurs PopulateDirList » de [indicateurs utilisés par des commandes spécifiques](../extensibility/bitflags-used-by-specific-commands.md) pour les valeurs possibles).  
   
-## <a name="return-value"></a>Valeur de retour  
- L’implémentation de plug-in de contrôle de source de cette fonction est censée retourner l’une des valeurs suivantes :  
+## <a name="return-value"></a>Valeur renvoyée  
+ L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :  
   
-|`Value`|Description|  
+|Valeur|Description|  
 |-----------|-----------------|  
-|SCC_OK|L’opération terminée.|  
-|SCC_E_UNKNOWNERROR|Une erreur s'est produite.|  
+|SCC_OK|L’opération s’est terminée correctement.|  
+|SCC_E_UNKNOWNERROR|Une erreur est survenue.|  
   
 ## <a name="remarks"></a>Notes  
- Uniquement les répertoires et (éventuellement) les noms de fichiers qui sont réellement dans le référentiel de contrôle source sont passés à la fonction de rappel.  
+ Seuls les répertoires et (éventuellement) les noms de fichiers qui se trouvent dans le référentiel de contrôle de code source sont passés à la fonction de rappel.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Fonctions d’API de plug-in de contrôle de source](../extensibility/source-control-plug-in-api-functions.md)   
- [Indicateurs de bits utilisés par des commandes spécifiques](../extensibility/bitflags-used-by-specific-commands.md)   
+ [Fonctions de l’API du plug-in de contrôle de code source](../extensibility/source-control-plug-in-api-functions.md)   
+ [Indicateurs utilisé par des commandes spécifiques](../extensibility/bitflags-used-by-specific-commands.md)   
  [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md)   
  [Codes d’erreur](../extensibility/error-codes.md)

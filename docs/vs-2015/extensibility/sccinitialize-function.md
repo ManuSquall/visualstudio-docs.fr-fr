@@ -1,5 +1,5 @@
 ---
-title: Fonction SccInitialize | Microsoft Docs
+title: SccInitialize fonction) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ce52b65d028f82d75d4890b0b1298b4d13b7eafa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200037"
 ---
 # <a name="sccinitialize-function"></a>Fonction SccInitialize
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Cette fonction initialise le plug-in de contrôle de code source et fournit des fonctionnalités et limites pour l’environnement de développement intégré (IDE).  
+Cette fonction initialise le plug-in de contrôle de code source et fournit des fonctionnalités et des limites à l’environnement de développement intégré (IDE).  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -41,52 +41,52 @@ SCCRTN SccInitialize (
   
 #### <a name="parameters"></a>Paramètres  
  `ppvContext`  
- [in] Le plug-in de contrôle de code source peut placer un pointeur vers sa structure de contexte ici.  
+ dans Le plug-in de contrôle de code source peut placer un pointeur vers sa structure de contexte ici.  
   
  `hWnd`  
- [in] Handle vers la fenêtre de l’IDE que le plug-in de contrôle de code source peut utiliser en tant que parent pour les boîtes de dialogue qu’il fournit.  
+ dans Handle de la fenêtre IDE que le plug-in de contrôle de code source peut utiliser comme parent pour toutes les boîtes de dialogue qu’il fournit.  
   
  `lpCallerName`  
- [in] Le nom du programme appelant le contrôle de source de plug-in.  
+ dans Nom du programme appelant le plug-in de contrôle de code source.  
   
  `lpSccName`  
- [in, out] La mémoire tampon dans lequel le plug-in de contrôle de code source place son propre nom (ne pouvant excéder `SCC_NAME_LEN`).  
+ [in, out] Mémoire tampon dans laquelle le plug-in de contrôle de code source place son propre nom (à ne pas dépasser `SCC_NAME_LEN` ).  
   
  `lpSccCaps`  
- [out] Retourne des indicateurs de capacité du plug-in du contrôle de code source.  
+ à Retourne les indicateurs de capacité du plug-in de contrôle de code source.  
   
  `lpAuxPathLabel`  
- [in, out] La mémoire tampon où le plug-in de contrôle de code source place une chaîne qui décrit le `lpAuxProjPath` paramètre retourné par la [SccOpenProject](../extensibility/sccopenproject-function.md) et [SccGetProjPath](../extensibility/sccgetprojpath-function.md) (ne pouvant excéder `SCC_AUXLABEL_LEN`).  
+ [in, out] Mémoire tampon dans laquelle le plug-in de contrôle de code source place une chaîne qui décrit le `lpAuxProjPath` paramètre retourné par [SccOpenProject](../extensibility/sccopenproject-function.md) et [SccGetProjPath](../extensibility/sccgetprojpath-function.md) (à ne pas dépasser `SCC_AUXLABEL_LEN` ).  
   
  `pnCheckoutCommentLen`  
- [out] Retourne la longueur maximale autorisée pour un commentaire d’extraction.  
+ à Retourne la longueur maximale autorisée pour un commentaire d’extraction.  
   
  `pnCommentLen`  
- [out] Retourne la longueur maximale autorisée pour les autres commentaires.  
+ à Retourne la longueur maximale autorisée pour les autres commentaires.  
   
-## <a name="return-value"></a>Valeur de retour  
- L’implémentation de plug-in de contrôle de source de cette fonction est censée retourner l’une des valeurs suivantes :  
+## <a name="return-value"></a>Valeur renvoyée  
+ L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :  
   
 |Valeur|Description|  
 |-----------|-----------------|  
-|SCC_OK|Initialisation du contrôle de code source a réussi.|  
-|SCC_E_INITIALIZEFAILED|Système n’a pas pu être initialisé.|  
+|SCC_OK|Initialisation du contrôle de code source réussie.|  
+|SCC_E_INITIALIZEFAILED|Le système n’a pas pu être initialisé.|  
 |SCC_E_NOTAUTHORIZED|L’utilisateur n’est pas autorisé à effectuer l’opération spécifiée.|  
-|SCC_E_NONSPECFICERROR|Échec non spécifique ; système de contrôle de code source n’a pas été initialisé.|  
+|SCC_E_NONSPECFICERROR|Échec non spécifique ; le système de contrôle de code source n’a pas été initialisé.|  
   
 ## <a name="remarks"></a>Notes  
- L’IDE appelle cette fonction lors du premier chargement du plug-in de contrôle de code source. Il permet à l’IDE transmettre certaines informations, telles que le nom de l’appelant, le plug-in. L’IDE récupère également certaines informations telles que la longueur maximale autorisée pour les commentaires et les fonctionnalités du plug-in.  
+ L’IDE appelle cette fonction lorsqu’il charge pour la première fois le plug-in de contrôle de code source. Il permet à l’IDE de transmettre certaines informations, telles que le nom de l’appelant, au plug-in. L’IDE récupère également certaines informations, telles que la longueur maximale autorisée pour les commentaires et les fonctionnalités du plug-in.  
   
- Le `ppvContext` pointe vers un `NULL` pointeur. Le plug-in de contrôle de code source peut allouer une structure pour son propre usage et stocker un pointeur vers cette structure dans `ppvContext`. L’IDE passera ce pointeur à chaque autre fonction VSSCI API, ce qui permet le plug-in pour disposer des informations de contexte sans avoir recours à un stockage global et pour prendre en charge plusieurs instances du plug-in. Cette structure doit être libérée lorsque la [SccUninitialize](../extensibility/sccuninitialize-function.md) est appelée.  
+ `ppvContext`Pointe vers un `NULL` pointeur. Le plug-in de contrôle de code source peut allouer une structure pour sa propre utilisation et stocker un pointeur vers cette structure dans `ppvContext` . L’IDE transmet ce pointeur à toute autre fonction API VSSCI, ce qui permet au plug-in d’accéder à des informations de contexte sans avoir recours au stockage global et à prendre en charge plusieurs instances du plug-in. Cette structure doit être désallouée lors de l’appel de [SccUninitialize](../extensibility/sccuninitialize-function.md) .  
   
- Le `lpCallerName` et `lpSccName` paramètres permettent à l’IDE et le plug-in de contrôle de code source échanger des noms. Ces noms peuvent être utilisés tout simplement pour faire la distinction entre plusieurs instances, ou elles peuvent en fait apparaître dans les menus ou les boîtes de dialogue.  
+ Les `lpCallerName` `lpSccName` paramètres et permettent à l’IDE et au plug-in de contrôle de code source d’échanger des noms. Ces noms peuvent être utilisés simplement pour faire la distinction entre plusieurs instances, ou ils peuvent s’afficher dans des menus ou des boîtes de dialogue.  
   
- Le `lpAuxPathLabel` paramètre est une chaîne utilisée comme un commentaire pour identifier le chemin d’accès de projet auxiliaire qui est stocké dans le fichier solution et passé au contrôle de source de plug-in dans un appel à la [SccOpenProject](../extensibility/sccopenproject-function.md). [!INCLUDE[vsvss](../includes/vsvss-md.md)] utilise la chaîne « projet SourceSafe : » ; autres plug-ins de contrôle de code source doit éviter d’utiliser cette chaîne particulière.  
+ Le `lpAuxPathLabel` paramètre est une chaîne utilisée comme commentaire pour identifier le chemin d’accès du projet auxiliaire qui est stocké dans le fichier solution et passé au plug-in de contrôle de code source dans un appel à [SccOpenProject](../extensibility/sccopenproject-function.md). [!INCLUDE[vsvss](../includes/vsvss-md.md)] utilise la chaîne "SourceSafe Project :"; d’autres plug-ins de contrôle de code source doivent s’abstenir d’utiliser cette chaîne particulière.  
   
- Le `lpSccCaps` paramètre donne le contrôle de source de plug-in pour stocker des indicateurs de bits indiquant les capacités du plug-in. (Pour obtenir une liste complète des bits indicateurs de fonctionnalité, consultez [indicateurs de capacité](../extensibility/capability-flags.md)). Par exemple, si les plans de plug-in pour écrire les résultats dans une fonction de rappel fournie par l’appelant, le plug-in définit la fonctionnalité de bit SCC_CAP_TEXTOUT. Cela serait signaler l’IDE pour créer une fenêtre pour les résultats de contrôle de version.  
+ Le `lpSccCaps` paramètre indique au plug-in de contrôle de code source un emplacement de stockage des indicateurs indiquant les fonctionnalités du plug-in. (Pour obtenir la liste complète des indicateurs de fonctionnalités, consultez [indicateurs de capacité](../extensibility/capability-flags.md)). Par exemple, si le plug-in prévoit d’écrire des résultats dans une fonction de rappel fournie par l’appelant, le plug-in définit le bit de fonctionnalité SCC_CAP_TEXTOUT. Cela signale à l’IDE de créer une fenêtre pour les résultats de contrôle de version.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Fonctions d’API de plug-in de contrôle de source](../extensibility/source-control-plug-in-api-functions.md)   
+ [Fonctions de l’API du plug-in de contrôle de code source](../extensibility/source-control-plug-in-api-functions.md)   
  [SccUninitialize](../extensibility/sccuninitialize-function.md)   
  [SccOpenProject](../extensibility/sccopenproject-function.md)   
  [Indicateurs de capacité](../extensibility/capability-flags.md)

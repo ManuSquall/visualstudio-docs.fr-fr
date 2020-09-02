@@ -10,10 +10,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 5c46506e81e5334efea9060e957269e92e9d49cc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65531907"
 ---
 # <a name="use-expression-body-or-block-body-for-lambda-expressions"></a>Utiliser un corps d’expression ou un corps de bloc pour les expressions lambda
@@ -22,16 +22,16 @@ Cette refactorisation s’applique à :
 
 - C#
 
-**Quoi :** Permet de refactorer une expression lambda pour utiliser un corps d’expression ou un corps de bloc.
+**Ce qui suit :** Vous permet de refactoriser une expression lambda pour utiliser un corps d’expression ou un corps de bloc.
 
-**Quand :** Vous préférez que les expressions lambda utilisent un corps d’expression ou un corps en bloc.
+Dans les **cas suivants :** Vous préférez utiliser un corps d’expression ou un corps de bloc pour les expressions lambda.
 
-**Pourquoi:** Les expressions Lambda peuvent être réfactorées pour améliorer la lisibilité selon vos préférences de l’utilisateur.
+**Pourquoi :** Les expressions lambda peuvent être refactorisations pour améliorer la lisibilité en fonction de vos préférences utilisateur.
 
 ## <a name="lambda-expression-body-or-block-body-refactoring"></a>Corps d’expression ou corps de bloc pour les expressions lambda (refactorisation)
 
 1. Placez votre curseur à droite d’un opérateur lambda.
-2. Appuyez **sur Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
+2. Appuyez sur **CTRL** + **.** pour afficher le menu **Actions rapides et refactorisations**.
 
   ![Utiliser un corps d’expression/de bloc pour les expressions lambda](media/block-body-lambda.png)
 

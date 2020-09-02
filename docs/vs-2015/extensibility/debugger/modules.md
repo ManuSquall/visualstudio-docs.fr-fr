@@ -12,22 +12,22 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7a2b2f04e1088b9b06cb05015a6b0b4da5d60927
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153751"
 ---
 # <a name="modules"></a>Modules
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-En termes d’architecture du débogueur, une **module**:  
+En termes d’architecture du débogueur, un **module**:  
   
-- Est un conteneur physique de code, comme un fichier exécutable ou une DLL.  
+- Est un conteneur physique de code, tel qu’un fichier exécutable ou une DLL.  
   
-- Peut recharger ses symboles et décrire lui-même. Descriptions de module sont affichées dans la fenêtre Modules de l’IDE.  
+- Peut recharger ses symboles et se décrire lui-même. Les descriptions de module s’affichent dans la fenêtre modules de l’IDE.  
   
-- Est représenté par un [IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md) interface, créée par un moteur de débogage pour décrire le module.  
+- Est représenté par une interface [IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md) , créée par un moteur de débogage pour décrire le module.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Concepts du débogueur](../../extensibility/debugger/debugger-concepts.md)   

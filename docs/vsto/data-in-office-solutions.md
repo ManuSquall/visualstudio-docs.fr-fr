@@ -15,16 +15,16 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a5f0b85acfd45996dd00208aae820b24265be9f5
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73189685"
 ---
 # <a name="data-in-office-solutions"></a>Données dans les solutions Office
   De nombreuses solutions Office permettent aux utilisateurs de récupérer ou modifier des données. Quand vous créez des solutions Office à l’aide de Visual Studio, vous pouvez utiliser les données de plusieurs façons différentes.
 
-## <a name="in-this-section"></a>Dans cette section
+## <a name="in-this-section"></a>Contenu de cette section
 - [Lier des données à des contrôles dans les solutions Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 
  Explique comment lier des données aux contrôles dans les solutions Office.
@@ -45,12 +45,12 @@ ms.locfileid: "73189685"
 
  Explique comment importer des fichiers de base de données dans vos projets, et quand mettre en cache les données pour une utilisation hors connexion.
 
-## <a name="related-sections"></a>Rubriques connexes
+## <a name="related-sections"></a>Sections connexes
 - [Accéder aux données dans Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
 
  Répertorie les rubriques qui expliquent comment utiliser des données dans Visual Studio.
 
-- [Enregistrer des données](../data-tools/save-data-back-to-the-database.md)
+- [Enregistrer les données](../data-tools/save-data-back-to-the-database.md)
 
  Fournit des liens vers des rubriques sur l’utilisation des jeux de données, notamment la modification de données dans un jeu de données et l’écriture des changements apportés dans la source de données.
 

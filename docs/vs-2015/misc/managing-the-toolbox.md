@@ -1,5 +1,5 @@
 ---
-title: La gestion de la boîte à outils | Microsoft Docs
+title: Gestion de la boîte à outils | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -11,16 +11,16 @@ ms.assetid: 3b052047-f6db-46dd-b3bf-da1c348ee410
 caps.latest.revision: 33
 manager: jillfra
 ms.openlocfilehash: 5eeb5d06b0e689391f450fec8744fa58a41f4508
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65681539"
 ---
 # <a name="managing-the-toolbox"></a>Managing the Toolbox
 Le [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] permet à un VSPackage, tel qu’un éditeur ou un concepteur, de gérer l’appartenance et l’apparence de la **boîte à outils**.  
   
- De plus, la **boîte à outils** peut être gérée de manière automatisée. Pour plus d’informations sur la gestion d’une boîte à outils grâce à l’automatisation, consultez [Comment : Contrôler la boîte à outils](https://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599).  
+ De plus, la **boîte à outils** peut être gérée de manière automatisée. Pour plus d’informations sur la gestion d’une boîte à outils grâce à l’automatisation, consultez [How to: Control the Toolbox](https://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599).  
   
 ## <a name="automatic-toolbox-tab-selection"></a>Sélection automatique d’onglets dans la boîte à outils  
  Vous pouvez activer automatiquement un onglet ou une catégorie de la **boîte à outils** en fonction de l’éditeur ou du concepteur actuellement actif. Par exemple, si un concepteur de formulaires est activé, vous pouvez souhaiter sélectionner l’onglet **Tous les Windows Forms** .  
@@ -36,7 +36,7 @@ Le [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] permet à un VSPackage, tel qu
   
 |Interface|Description|  
 |---------------|-----------------|  
-|<xref:System.Drawing.Design.IToolboxService>|Permet aux applications de gérer, ajouter et supprimer <xref:System.Drawing.Design.ToolboxItem> objets à partir de la **boîte à outils**. Permet également la configuration de l’apparence et des catégories de la **boîte à outils** .|  
+|<xref:System.Drawing.Design.IToolboxService>|Permet aux applications de gérer, d’ajouter et <xref:System.Drawing.Design.ToolboxItem> de supprimer des objets de la **boîte à outils**. Permet également la configuration de l’apparence et des catégories de la **boîte à outils** .|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2>|Permet de gérer, ajouter et supprimer des contrôles ActiveX de la **boîte à outils** , ainsi que de configurer l’apparence et les catégories de la **boîte à outils** .|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3>|Étend les fonctionnalités de <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> en fournissant une prise en charge complète pour la persistance et la localisation.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox4>||  
@@ -47,11 +47,11 @@ Le [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] permet à un VSPackage, tel qu
   
 - <xref:System.Drawing.Design.IToolboxService> est disponible uniquement pour les VSPackages MPF (Managed Package Framework).  
   
-- Contrôles ne peuvent pas être ajoutés directement à la **boîte à outils** à l’aide de <xref:System.Drawing.Design.IToolboxService>.  
+- Les contrôles ne peuvent pas être ajoutés directement à la **boîte à outils** à l’aide de <xref:System.Drawing.Design.IToolboxService> .  
   
 - Un VSPackage doit utiliser <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> pour ajouter des contrôles ou héberger le contrôle dans un contrôle wrapper dérivé de <xref:System.Windows.Forms.AxHost>.  
   
-   Visual Studio fournit l’outil `Aximp.exe` pour l’automatisation de l’encapsulation des contrôles ActiveX dans un contrôle dérivé de <xref:System.Windows.Forms.AxHost>. Pour plus d’informations, consultez [Aximp.exe (importateur de contrôles ActiveX Windows Forms)](https://msdn.microsoft.com/library/482c0d83-7144-4497-b626-87d2351b78d0).  
+   Visual Studio fournit l’outil `Aximp.exe` pour l’automatisation de l’encapsulation des contrôles ActiveX dans un contrôle dérivé de <xref:System.Windows.Forms.AxHost>. Pour plus d’informations, consultez [Aximp.exe (Windows Forms ActiveX Control importateur)](https://msdn.microsoft.com/library/482c0d83-7144-4497-b626-87d2351b78d0).  
   
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox>, <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> et <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3> sont des interfaces COM disponibles via les assemblys PIA.  
   

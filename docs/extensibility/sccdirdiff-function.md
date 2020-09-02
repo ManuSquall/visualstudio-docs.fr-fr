@@ -1,5 +1,5 @@
 ---
-title: Fonction SccDirDiff (fr) Microsoft Docs
+title: SccDirDiff fonction) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1bb592a1174a91480ed76ef818733c288c5273c0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701015"
 ---
-# <a name="sccdirdiff-function"></a>Fonction SccDirDiff
-Cette fonction affiche les différences entre l’annuaire local actuel sur le disque client et le projet correspondant sous contrôle source.
+# <a name="sccdirdiff-function"></a>SccDirDiff fonction)
+Cette fonction affiche les différences entre le répertoire local actuel sur le disque client et le projet correspondant sous contrôle de code source.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -37,53 +37,53 @@ SCCRTN SccDirDiff(
 ### <a name="parameters"></a>Paramètres
  pContext
 
-[dans] La structure de contexte de plug-in de contrôle de source.
+dans Structure de contexte du plug-in de contrôle de code source.
 
  hWnd
 
-[dans] Une poignée à la fenêtre IDE que le plug-in de contrôle source peut utiliser comme parent pour toutes les boîtes de dialogue qu’il fournit.
+dans Handle de la fenêtre IDE que le plug-in de contrôle de code source peut utiliser comme parent pour toutes les boîtes de dialogue qu’il fournit.
 
  lpDirName
 
-[dans] Chemin entièrement qualifié vers l’annuaire local pour lequel montrer une différence visuelle.
+dans Chemin d’accès complet au répertoire local pour lequel une différence visuelle est affichée.
 
  dwFlags
 
-[dans] Drapeaux de commandement (voir Section Remarques).
+dans Indicateurs de commande (consultez la section Notes).
 
  pvOptions
 
-[dans] Options spécifiques au plug-in de contrôle des sources.
+dans Options spécifiques au plug-in de contrôle de code source.
 
 ## <a name="return-value"></a>Valeur retournée
- La mise en œuvre plug-in de cette fonction de contrôle source devrait renvoyer l’une des valeurs suivantes :
+ L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
 |Valeur|Description|
 |-----------|-----------------|
-|SCC_OK|L’annuaire sur disque est le même que le projet dans le contrôle du code source.|
-|SCC_I_FILESDIFFER|L’annuaire sur disque est différent du projet dans le contrôle du code source.|
+|SCC_OK|Le répertoire sur le disque est le même que le projet dans le contrôle de code source.|
+|SCC_I_FILESDIFFER|Le répertoire sur le disque est différent du projet dans le contrôle de code source.|
 |SCC_I_RELOADFILE|Un fichier ou un projet doit être rechargé.|
-|SCC_E_FILENOTCONTROLLED|L’annuaire n’est pas sous contrôle de code source.|
+|SCC_E_FILENOTCONTROLLED|Le répertoire n’est pas sous le contrôle de code source.|
 |SCC_E_NOTAUTHORIZED|L’utilisateur n’est pas autorisé à effectuer cette opération.|
-|SCC_E_ACCESSFAILURE|Il y avait un problème d’accès au système de contrôle à la source, probablement en raison de problèmes de réseau ou de contention. Une nouvelle tentative est recommandée.|
-|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Défaillance non spécifique.|
-|SCC_E_FILENOTEXIST|Le répertoire local n’a pas pu être trouvé.|
+|SCC_E_ACCESSFAILURE|Un problème est survenu lors de l’accès au système de contrôle de code source, probablement en raison de problèmes de réseau ou de contention. Une nouvelle tentative est recommandée.|
+|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Échec non spécifique.|
+|SCC_E_FILENOTEXIST|Le répertoire local est introuvable.|
 
 ## <a name="remarks"></a>Notes
- Cette fonction est utilisée pour instruire le plug-in de contrôle source pour afficher à l’utilisateur une liste de modifications à un répertoire spécifié. Le plug-in ouvre sa propre fenêtre, dans un format de son choix, pour afficher les différences entre l’annuaire de l’utilisateur sur disque et le projet correspondant sous contrôle de version.
+ Cette fonction est utilisée pour indiquer au plug-in de contrôle de code source qu’il doit afficher à l’utilisateur une liste des modifications apportées à un répertoire spécifié. Le plug-in ouvre sa propre fenêtre, dans un format de son choix, pour afficher les différences entre l’annuaire de l’utilisateur sur le disque et le projet correspondant sous contrôle de version.
 
- Si un plug-in prend en charge la comparaison des répertoires, il doit soutenir la comparaison des répertoires sur une base de nom de fichier, même si les options de «quick-diff» ne sont pas prises en charge.
+ Si un plug-in prend en charge la comparaison des répertoires, il doit prendre en charge la comparaison des répertoires sur la base du nom de fichier, même si les options de différence rapide ne sont pas prises en charge.
 
 |`dwFlags`|Interprétation|
 |---------------|--------------------|
-|SCC_DIFF_IGNORECASE|Comparaison insensible aux cas (peut être utilisée pour le diff rapide ou visuelle).|
-|SCC_DIFF_IGNORESPACE|Ignore l’espace blanc (peut être utilisé pour le rapide-diff ou visuel).|
-|SCC_DIFF_QD_CONTENTS|Si pris en charge par le plug-in de contrôle source, compare silencieusement l’annuaire, byte byte by byte.|
-|SCC_DIFF_QD_CHECKSUM|Si pris en charge par plug-in, compare silencieusement l’annuaire via un checksum, ou, si elle n’est pas pris en charge, retombe à SCC_DIFF_QD_CONTENTS.|
-|SCC_DIFF_QD_TIME|Si pris en charge par plug-in, compare silencieusement l’annuaire via son horaire, ou, si elle n’est pas pris en charge, retombe sur SCC_DIFF_QD_CHECKSUM ou SCC_DIFF_QD_CONTENTS.|
+|SCC_DIFF_IGNORECASE|Comparaison ne respectant pas la casse (peut être utilisé pour une comparaison rapide ou un visuel).|
+|SCC_DIFF_IGNORESPACE|Ignore les espaces blancs (peut être utilisé pour une comparaison rapide ou un visuel).|
+|SCC_DIFF_QD_CONTENTS|S’il est pris en charge par le plug-in de contrôle de code source, compare silencieusement le répertoire, octet par octet.|
+|SCC_DIFF_QD_CHECKSUM|S’il est pris en charge par le plug-in, compare silencieusement le répertoire par le biais d’une somme de contrôle, ou, s’il n’est pas pris en charge, revient à SCC_DIFF_QD_CONTENTS.|
+|SCC_DIFF_QD_TIME|S’il est pris en charge par le plug-in, compare silencieusement le répertoire à l’aide de son horodateur, ou, s’il n’est pas pris en charge, revient sur SCC_DIFF_QD_CHECKSUM ou SCC_DIFF_QD_CONTENTS.|
 
 > [!NOTE]
-> Cette fonction utilise les mêmes drapeaux de commande que le [SccDiff](../extensibility/sccdiff-function.md). Cependant, un plug-in de contrôle source peut choisir de ne pas soutenir l’opération « quick-diff » pour les répertoires.
+> Cette fonction utilise les mêmes indicateurs de commande que le [SccDiff](../extensibility/sccdiff-function.md). Toutefois, un plug-in de contrôle de code source peut choisir de ne pas prendre en charge l’opération « comparaison rapide » pour les répertoires.
 
 ## <a name="see-also"></a>Voir aussi
-- [Fonctions d’API plug-in de contrôle des sources](../extensibility/source-control-plug-in-api-functions.md)
+- [Fonctions de l’API du plug-in de contrôle de code source](../extensibility/source-control-plug-in-api-functions.md)

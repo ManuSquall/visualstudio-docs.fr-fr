@@ -12,16 +12,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b7842bd2e0a6cebc5980781bae1fc89c1401fc08
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184400"
 ---
 # <a name="combos-element"></a>Élément Combos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Groupes [élément de liste déroulante](../extensibility/combo-element.md) éléments.  
+Groupe les éléments de l' [élément de liste déroulante](../extensibility/combo-element.md) .  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -45,16 +45,16 @@ Groupes [élément de liste déroulante](../extensibility/combo-element.md) él�
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[Élément Combos](../extensibility/combos-element.md)|Regroupe les éléments de liste déroulante.|  
+|[Élément Combos](../extensibility/combos-element.md)|Regroupe les éléments de liste.|  
 |[Élément Combo](../extensibility/combo-element.md)|Définit les commandes qui s’affichent dans une zone de liste déroulante.|  
   
 ### <a name="parent-elements"></a>Éléments parents  
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[Élément Commands](../extensibility/commands-element.md)|Représente la collection de commandes sur la barre d’outils de VSPackage.|  
+|[Élément Commands](../extensibility/commands-element.md)|Représente la collection de commandes dans la barre d’outils VSPackage.|  
   
-## <a name="example"></a>Exemples  
+## <a name="example"></a> Exemple  
   
 ```  
 <Combos>  
@@ -79,5 +79,5 @@ Groupes [élément de liste déroulante](../extensibility/combo-element.md) él�
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Comment VSPackages ajoute des éléments d’Interface utilisateur](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [Comment les VSPackages ajoutent des éléments d’interface utilisateur](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Commandes, menus et barres d’outils](../extensibility/internals/commands-menus-and-toolbars.md)

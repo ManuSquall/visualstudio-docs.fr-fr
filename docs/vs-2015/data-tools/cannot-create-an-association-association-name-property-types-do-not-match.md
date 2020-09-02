@@ -1,5 +1,5 @@
 ---
-title: Impossible de créer une association &lt;association nom &gt; les types de propriété ne correspondent pas | Microsoft Docs
+title: Impossible de créer un &lt; nom d’association d’association &gt; -les types de propriété ne correspondent pas | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1c93221710f8adc2421f902f27fdb96d957c9cd2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651150"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>Impossible de créer une association &lt;nom de l’association&gt;. Les types de propriétés ne correspondent pas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Impossible de créer une association \<nom de l’association>. Les types de propriétés ne correspondent pas. Les propriétés n’ont pas de types correspondants : \<noms des propriétés>.
+Impossible de créer un Association \<association name> -les types de propriété ne correspondent pas. Les propriétés n’ont pas de types correspondants : \<property names> .
 
  Les associations sont définies par les **Propriétés d’association** sélectionnées dans la boîte de dialogue **Éditeur d’associations**. Les propriétés de part et d'autre de l'association doivent avoir le même type de données.
 

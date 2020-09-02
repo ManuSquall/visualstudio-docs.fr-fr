@@ -44,7 +44,7 @@ Le tableau ci-dessous contient une liste des alias de commandes Visual Studio pr
 |Basculer le point d'arrêt|bp|Debug.ToggleBreakPoint|
 |Fenêtre Pile des appels|CallStack|Debug.CallStack|
 |Effacer les signets|ClearBook|Edit.ClearBookmarks|
-|Fermer|Fermer|File.Close|
+|fermez|fermez|File.Close|
 |Fermer tous les documents|CloseAll|Window.CloseAllDocuments|
 |Effacer tout|sécurité au niveau des colonnes|Edit.ClearAll|
 |Mode Commande|cmd|View.CommandWindow|

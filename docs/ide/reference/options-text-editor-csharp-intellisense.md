@@ -17,15 +17,15 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 87a167a75f3b06522da77d562b0137df89757975
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75596214"
 ---
 # <a name="options-text-editor-c-intellisense"></a>Options, Éditeur de texte, C#, IntelliSense
 
-Utilisez la page d’options **IntelliSense** pour modifier les paramètres qui affectent le comportement d’IntelliSense pour C#. Pour accéder à cette page d’options, choisissez **Tools** > **Options,** puis choisissez **l’éditeur** > de texte C**IntelliSense****C#** > .
+Utilisez la page d’options **IntelliSense** pour modifier les paramètres qui affectent le comportement d’IntelliSense pour C#. Pour accéder à cette page d’options, choisissez **Outils**  >  **options**, puis **éditeur de texte**  >  **C#**  >  **IntelliSense**.
 
 La page d’options **IntelliSense** contient les options suivantes :
 
@@ -33,7 +33,7 @@ La page d’options **IntelliSense** contient les options suivantes :
 
 - Afficher la liste de saisie semi-automatique après la saisie d’un caractère*
 
-   Quand cette option est sélectionnée et que vous commencez à taper, IntelliSense affiche automatiquement la liste de saisie semi-automatique. Lorsque cette option n’est pas sélectionnée, l’achèvement d’IntelliSense est toujours disponible sur le menu **IntelliSense** ou en appuyant sur **Ctrl**+**Space**.
+   Quand cette option est sélectionnée et que vous commencez à taper, IntelliSense affiche automatiquement la liste de saisie semi-automatique. Lorsque cette option n’est pas sélectionnée, la saisie semi-automatique IntelliSense est toujours disponible dans le menu **IntelliSense** ou en appuyant sur **CTRL** + **Space**.
 
 - Afficher la liste de saisie semi-automatique après la suppression d’un caractère
 
@@ -53,7 +53,7 @@ La page d’options **IntelliSense** contient les options suivantes :
 
 - Inclure les extraits de code quand ?-Tab est typé après un identificateur
 
-   Lorsque cette option est sélectionnée, IntelliSense ajoute des alias pour les extraits de code C à la liste d’achèvement quand **?** + **L’onglet** est pressé après un identifiant
+   Lorsque cette option est sélectionnée, IntelliSense ajoute des alias pour les extraits de code C# à la liste de saisie semi-automatique quand **?** + L' **onglet** est appuyé après un identificateur
 
 ## <a name="enter-key-behavior"></a>Comportement de la touche Entrée
 
@@ -65,13 +65,13 @@ La page d’options **IntelliSense** contient les options suivantes :
 
    Spécifie que si vous tapez tous les caractères d’une entrée dans la liste de saisie semi-automatique et que vous appuyez ensuite sur **Entrée**, une ligne est automatiquement créée et le curseur se déplace vers la nouvelle ligne.
 
-   Par exemple, si `else` vous tapez puis appuyez sur **Enter**, ce qui suit apparaît dans l’éditeur:
+   Par exemple, si vous tapez `else` et appuyez sur **entrée**, les éléments suivants s’affichent dans l’éditeur :
 
    `else`
 
    `|` (emplacement du curseur)
 
-   Toutefois, si vous `el` tapez seulement et appuyez sur **Enter**, ce qui suit apparaît dans l’éditeur:
+   Toutefois, si vous tapez uniquement `el` et que vous appuyez sur **entrée**, les éléments suivants s’affichent dans l’éditeur :
 
    `else|` (emplacement du curseur)
 
@@ -85,5 +85,5 @@ Effectue la complétion automatique du nom d’objet pour les membres que vous a
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Général, Environnement, Options Dialog Box](../../ide/reference/general-environment-options-dialog-box.md)
-- [Using IntelliSense](../../ide/using-intellisense.md)
+- [Général, environnement, boîte de dialogue Options](../../ide/reference/general-environment-options-dialog-box.md)
+- [Utilisation d’IntelliSense](../../ide/using-intellisense.md)

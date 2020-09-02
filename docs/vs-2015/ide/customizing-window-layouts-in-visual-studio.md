@@ -25,10 +25,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 509ec978815ae57e548188941a8de24c5f36d77e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665839"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>Personnalisation des dispositions de fenêtres dans Visual Studio
@@ -77,7 +77,7 @@ Dans Visual Studio, vous pouvez personnaliser la position, la taille et le compo
   Pour réorganiser les fenêtres Outil et les fenêtres de document, vous pouvez les faire glisser, utiliser les commandes du menu **Fenêtre** ou encore cliquer avec le bouton droit sur la barre de titre de la fenêtre à réorganiser.
 
 > [!NOTE]
-> Il est possible que pour certains des éléments de l'interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L’édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Paramètres Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Il est possible que pour certains des éléments de l'interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L'édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ### <a name="docking-windows"></a>Ancrage des fenêtres
  Quand vous cliquez sur la barre de titre d'une fenêtre outil ou sur l'onglet de la fenêtre de document et que vous le faites glisser, un repère en forme de losange apparaît. Au cours de l'opération de glissement, quand le curseur de la souris se trouve sur l'une des flèches dans le losange, une zone grisée apparaît pour vous montrer où la fenêtre sera ancrée si vous relâchez le bouton de la souris à ce moment-là.
@@ -94,11 +94,11 @@ Dans Visual Studio, vous pouvez personnaliser la position, la taille et le compo
 
  Repère en forme de losange pour les fenêtres Outil
 
- ![Fenêtre outil losanges](../ide/media/vs10guidediamond.png "VS10GuideDiamond")
+ ![Repères en forme de losange de la fenêtre d'outils](../ide/media/vs10guidediamond.png "VS10GuideDiamond")
 
  L'illustration suivante montre l'ancrage de l'Explorateur de solutions dans un nouvel emplacement indiqué par la zone ombrée bleue :
 
- ![Ancrage Explorateur de solutions à une nouvelle position](../ide/media/vs2015-dock-diamond.png "VS2015_Dock_diamond")
+ ![Ancrage de l'Explorateur de solutions dans une nouvelle position](../ide/media/vs2015-dock-diamond.png "VS2015_Dock_diamond")
 
 ### <a name="closing-and-auto-hiding-tool-windows"></a>Fermeture et masquage automatique des fenêtres Outil
  Vous pouvez fermer une fenêtre Outil en cliquant sur le X dans le coin supérieur droit de la barre de titre. Pour rouvrir la fenêtre, utilisez le raccourci clavier correspondant ou la commande de menu. Les fenêtres Outil prennent en charge une fonctionnalité nommée Masquer automatiquement qui permet de faire disparaître une fenêtre quand vous utilisez une autre fenêtre. Quand une fenêtre est automatiquement masquée, son nom s'affiche sous un onglet au bord de l'IDE. Pour réutiliser la fenêtre, pointez sur l'onglet pour que la fenêtre soit de nouveau visible.
@@ -157,7 +157,7 @@ Dans Visual Studio, vous pouvez personnaliser la position, la taille et le compo
 
 1. Pour basculer entre les dispositions, utilisez les raccourcis clavier ou, dans le menu principal, choisissez **Fenêtre > Appliquer la disposition de fenêtre**.
 
-     ![Menu appliquer la disposition de fenêtre](../ide/media/vs2015-applywindowlayout.png "VS2015_ApplyWindowLayout")
+     ![Menu Appliquer la disposition de fenêtre](../ide/media/vs2015-applywindowlayout.png "VS2015_ApplyWindowLayout")
 
      Une fois la disposition de l'interface utilisateur appliquée, notez qu'elle est préservée à la fois dans les modes d'édition et débogage.
 

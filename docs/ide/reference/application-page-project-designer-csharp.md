@@ -14,17 +14,17 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: ef9a38fc13d0d9c9f6b912f4cb2b83971d105c29
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595824"
 ---
 # <a name="application-page-project-designer-c"></a>Page Application, Concepteur de projet (C#)
 
 Utilisez la page **Application** du **Concepteur de projet** pour spécifier les paramètres d’application et les propriétés du projet.
 
-Pour accéder à la page **Application**, choisissez un nœud de projet (pas le nœud **Solution**) dans l’**Explorateur de solutions**. Choisissez ensuite **Project** > **Properties** sur la barre de menu. Quand le **Concepteur de projet** s’affiche, cliquez sur l’onglet **Application**.
+Pour accéder à la page **Application**, choisissez un nœud de projet (pas le nœud **Solution**) dans l’**Explorateur de solutions**. Choisissez ensuite **Project**  >  **Propriétés** du projet dans la barre de menus. Quand le **Concepteur de projet** s’affiche, cliquez sur l’onglet **Application**.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -40,7 +40,7 @@ Vous pouvez également effectuer cette modification à partir de la ligne de com
 
 Pour accéder à cette propriété par programmation, consultez <xref:VSLangProj.ProjectProperties.AssemblyName%2A>.
 
-**Espace nom par défaut**
+**Espace de noms par défaut**
 
 Spécifie l’espace de noms de base pour les fichiers ajoutés au projet.
 
@@ -48,7 +48,7 @@ Consultez la rubrique [espace de noms](/dotnet/csharp/language-reference/keyword
 
 Pour accéder à cette propriété par programmation, consultez <xref:VSLangProj.ProjectProperties.RootNamespace%2A>.
 
-**Cadre cible**
+**Framework cible**
 
 Spécifie la version de .NET ciblée par l’application. Cette option peut avoir des valeurs différentes selon les versions de .NET installées sur votre ordinateur.
 
@@ -81,9 +81,9 @@ Pour plus d’informations sur la redirection, consultez [Redirection des versio
 
 **Objet de démarrage**
 
-Définit le point d’entrée à appeler quand l’application se charge. Cet objet est généralement défini sur le formulaire principal de votre application ou sur la procédure `Main` qui s’exécute quand l’application démarre. Parce que les bibliothèques de classe n’ont pas de point d’entrée, leur seule option pour cette propriété est **(Non fixé)**.
+Définit le point d’entrée à appeler quand l’application se charge. Cet objet est généralement défini sur le formulaire principal de votre application ou sur la procédure `Main` qui s’exécute quand l’application démarre. Étant donné que les bibliothèques de classes n’ont pas de point d’entrée, leur seule option pour cette propriété est **(non défini)**.
 
-Par défaut, dans un projet d’application WPF, cette option est **(Non défini)**. L’autre option est \[nom_projet].App. Dans un projet WPF, vous devez définir l’URI de démarrage pour charger une ressource d’interface utilisateur quand l’application démarre. Pour ce faire, ouvrez le fichier *Application.xaml* dans votre projet et définissez la `StartupUri` propriété sur un fichier *.xaml* dans votre projet, comme *Window1.xaml*. Pour obtenir la liste des éléments racines valides, consultez <xref:System.Windows.Application.StartupUri%2A>. Vous devez également définir une méthode `public static void Main()` dans une classe du projet. Cette classe s’affiche dans la liste **Objet de démarrage** comme *nom_projet.nom_classe*. Vous pouvez ensuite sélectionner la classe comme objet de démarrage.
+Par défaut, dans un projet d’application WPF, cette option est **(Non défini)**. L’autre option est \[nom_projet].App. Dans un projet WPF, vous devez définir l’URI de démarrage pour charger une ressource d’interface utilisateur quand l’application démarre. Pour ce faire, ouvrez le fichier *application. Xaml* dans votre projet et définissez la `StartupUri` propriété sur un fichier *. Xaml* dans votre projet, tel que *Window1. Xaml*. Pour obtenir la liste des éléments racines valides, consultez <xref:System.Windows.Application.StartupUri%2A>. Vous devez également définir une méthode `public static void Main()` dans une classe du projet. Cette classe s’affiche dans la liste **Objet de démarrage** comme *nom_projet.nom_classe*. Vous pouvez ensuite sélectionner la classe comme objet de démarrage.
 
 Pour plus d’informations, consultez [/main (Options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/main-compiler-option). Pour accéder à cette propriété par programmation, consultez <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
 
@@ -99,15 +99,15 @@ Les options de **Ressources** vous permettent de configurer les paramètres des 
 
 Par défaut, cette case d’option est sélectionnée et les options **Icône** et **Manifeste** sont activées. Cela vous permet de sélectionner votre propre icône ou différentes options de génération du manifeste. Laissez cette case d’option sélectionnée, sauf si vous fournissez un fichier de ressources pour le projet.
 
-**Icône**
+**Située**
 
-Définit le fichier *.ico* que vous souhaitez utiliser comme icône de votre programme. Cliquez sur le bouton **Parcourir** pour accéder à un graphique existant ou tapez le nom du fichier souhaité. Pour plus d’informations, consultez [/win32icon (Options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option).
+Définit le fichier *. ico* que vous souhaitez utiliser comme icône de votre programme. Cliquez sur le bouton **Parcourir** pour accéder à un graphique existant ou tapez le nom du fichier souhaité. Pour plus d’informations, consultez [/win32icon (Options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option).
 
 Pour accéder à cette propriété par programmation, consultez <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.
 
 Pour plus d’informations sur la création d’une icône, consultez [Éditeur d’images pour les icônes](/cpp/windows/image-editor-for-icons).
 
-**Manifest**
+**Manifeste**
 
 Sélectionne une option de génération de manifeste quand l’application s’exécute sur Windows Vista sous contrôle de compte d’utilisateur (UAC). Cette option peut avoir les valeurs suivantes :
 

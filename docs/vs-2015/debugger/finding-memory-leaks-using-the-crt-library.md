@@ -31,10 +31,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 831cae8d83bc26e05b80d6948a3168a6e6a387c4
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65682420"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>Recherche de fuites de mémoire à l'aide de la bibliothèque CRT
@@ -121,7 +121,7 @@ Object dump complete.
   
   Il existe deux autres types de blocs de mémoire qui n'apparaissent jamais dans les rapports de fuite de mémoire. D'abord, le *bloc libre* , qui correspond à un bloc de mémoire libéré. Il n'a donc pas fait l'objet d'une fuite, par définition. Ensuite, le *bloc ignore* , qui correspond à de la mémoire explicitement marquée comme étant à exclure du rapport des fuites de mémoire.  
   
-  Ces techniques fonctionnent pour la mémoire allouée à l'aide de la fonction CRT standard `malloc` . Si votre programme alloue de la mémoire à l’aide de C++ `new` opérateur, cependant, vous pouvez uniquement voir le fichier et numéro de ligne où l’implémentation de global `operator new` appels `_malloc_dbg` dans le rapport des fuites de mémoire. Étant donné que ce comportement n’est pas très utile, vous pouvez le modifier pour signaler la ligne qui a effectué l’allocation à l’aide d’une macro qui ressemble à ceci : 
+  Ces techniques fonctionnent pour la mémoire allouée à l'aide de la fonction CRT standard `malloc` . Toutefois, si votre programme alloue de la mémoire à l’aide de l' `new` opérateur C++, vous ne verrez peut-être que le fichier et le numéro de ligne où l’implémentation des appels globaux se trouve `operator new` `_malloc_dbg` dans le rapport des fuites de mémoire. Étant donné que ce comportement n’est pas très utile, vous pouvez le modifier pour signaler la ligne qui a effectué l’allocation à l’aide d’une macro qui ressemble à ceci : 
  
 ```cpp  
 #ifdef _DEBUG
@@ -133,7 +133,7 @@ Object dump complete.
 #endif
 ```  
   
-Maintenant que vous pouvez remplacer le `new` opérateur à l’aide de la `DBG_NEW` macro dans votre code. Dans les versions debug, cet exemple utilise une surcharge de global `operator new` qui accepte des paramètres supplémentaires pour le type de bloc, le fichier et le numéro de ligne. Cette surcharge de `new` appelle `_malloc_dbg` pour enregistrer les informations supplémentaires. Lorsque vous utilisez `DBG_NEW`, la fuite de mémoire signale le nom de fichier et numéro de ligne où les objets ayant fuit ont été alloués. Dans les versions commerciales, il utilise la valeur par défaut `new`. (Nous ne recommandons pas créer de préprocesseur ou macro nommée `new`, ou n’importe quel autre mot clé du langage.) Voici un exemple de la technique :  
+Vous pouvez maintenant remplacer l' `new` opérateur à l’aide `DBG_NEW` de la macro dans votre code. Dans les versions Debug, cette opération utilise une surcharge de global `operator new` qui accepte des paramètres supplémentaires pour le type de bloc, le fichier et le numéro de ligne. Cette surcharge des `new` appels `_malloc_dbg` pour enregistrer les informations supplémentaires. Lorsque vous utilisez `DBG_NEW` , les rapports de fuite de mémoire affichent le nom de fichier et le numéro de ligne où les objets ayant fait l’objet d’une fuite ont été alloués. Dans les versions commerciales, elle utilise la valeur par défaut `new` . (Nous vous déconseillons de créer une macro de préprocesseur nommée `new` ou tout autre mot clé de langage). Voici un exemple de la technique :  
   
 ```cpp  
 // debug_new.cpp
@@ -163,7 +163,7 @@ void main() {
 }
 ```  
   
-Lorsque vous exécutez ce code dans le débogueur dans Visual Studio, l’appel à `_CrtDumpMemoryLeaks` génère un rapport dans le **sortie** fenêtre ressemble à ceci :  
+Quand vous exécutez ce code dans le débogueur dans Visual Studio, l’appel à `_CrtDumpMemoryLeaks` génère un rapport dans la fenêtre **sortie** qui ressemble à ceci :  
   
 ```Output  
 Detected memory leaks!
@@ -174,7 +174,7 @@ c:\users\username\documents\projects\debug_new\debug_new.cpp(20) : {75}
 Object dump complete.
 ```  
   
-Cela vous indique que l’allocation d’une fuite a été à la ligne 20 du debug_new.cpp.  
+Cela vous indique que l’allocation avec fuite était à la ligne 20 de debug_new. cpp.  
   
 ## <a name="setting-breakpoints-on-a-memory-allocation-number"></a>Définition de points d'arrêt sur un numéro d'allocation de mémoire  
  Le numéro d'allocation de mémoire vous indique lorsqu'un bloc de mémoire perdue a été alloué. Un bloc dont le numéro d'allocation de mémoire est égal à 18 correspond au 18e bloc de mémoire alloué pendant l'exécution de l'application. Le rapport CRT compte toutes les allocations de blocs de mémoire pendant l'exécution. Cela comprend les allocations effectuées par la bibliothèque CRT et d'autres bibliothèques telles que MFC. Par conséquent, un bloc dont le numéro d'allocation de mémoire est égal à 18 peut ne pas être le 18e bloc de mémoire alloué par votre code. En général, ce ne sera pas le cas.  
@@ -187,11 +187,11 @@ Cela vous indique que l’allocation d’une fuite a été à la ligne 20 du deb
   
 2. Lorsque l'application s'arrête au point d'arrêt, ouvrez la fenêtre **Espion** .  
   
-3. Dans le **espion** fenêtre, tapez `_crtBreakAlloc` dans le **nom** colonne.  
+3. Dans la fenêtre **Espion** , tapez `_crtBreakAlloc` dans la colonne **nom** .  
   
     Si vous utilisez la version DLL multithread de la bibliothèque CRT (l'option /MD), incluez l'opérateur de contexte : `{,,ucrtbased.dll}_crtBreakAlloc`  
   
-4. Appuyez sur **RETOUR**.  
+4. Appuyez sur **retour**.  
   
     Le débogueur évalue l'expression et place le résultat dans la colonne **Valeur** . Cette valeur sera égale à –1 si vous n'avez défini aucun point d'arrêt sur les allocations de mémoire.  
   
@@ -201,7 +201,7 @@ Cela vous indique que l’allocation d’une fuite a été à la ligne 20 du deb
   
    La définition d’un point d’arrêt sur variable peut aussi s’avérer utile. Pour plus d’informations, consultez [Using Breakpoints](../debugger/using-breakpoints.md).  
   
-   Vous pouvez aussi définir des points d’arrêt d’allocation de mémoire dans le code. Il existe deux façons d'effectuer cette opération :  
+   Vous pouvez aussi définir des points d’arrêt d’allocation de mémoire dans le code. Il existe deux façons d'effectuer cette opération :  
   
 ```  
 _crtBreakAlloc = 18;  

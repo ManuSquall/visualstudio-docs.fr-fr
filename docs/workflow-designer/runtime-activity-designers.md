@@ -9,17 +9,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 366a590daefa2fae33b3e76959444ad7fc9d2504
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86875486"
 ---
 # <a name="runtime-activity-designers"></a>Concepteurs d'activités d'exécution
 Les concepteurs d'activités d'exécution permettent de rendre persistantes des activités de workflow et de les arrêter. Les rubriques contenues dans cette section fournissent des conseils sur l’utilisation des concepteurs d’activités Concepteur de flux de travail.
 
 ## <a name="related-sections"></a>Sections connexes
- [Workflow de contrôle](../workflow-designer/control-flow-activity-designers.md)
+ [Flux de contrôle](../workflow-designer/control-flow-activity-designers.md)
 
  [Organigramme](../workflow-designer/flowchart-activity-designers.md)
 

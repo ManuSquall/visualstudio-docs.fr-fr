@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Activer le démarrage automatique pour les Installations de CD | Microsoft Docs'
+title: 'Procédure : activer le démarrage automatique pour les installations à partir d’un CD | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -18,35 +18,35 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c4bd14060517793d28e24818a051df63efb8f0e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153784"
 ---
-# <a name="how-to-enable-autostart-for-cd-installations"></a>Procédure : Activer le démarrage automatique pour les installations depuis un CD-ROM
+# <a name="how-to-enable-autostart-for-cd-installations"></a>Comment : activer le démarrage automatique pour les installations depuis un CD-ROM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Lorsque vous déployez un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application au moyen de supports amovibles tels que des CD-ROM ou DVD-ROM, vous pouvez activer `AutoStart` afin que le [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application est lancée automatiquement lorsque le média est inséré.  
+Lors du déploiement d’une [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application au moyen d’un support amovible tel qu’un CD-ROM ou un DVD-ROM, vous pouvez activer `AutoStart` afin que l' [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application soit lancée automatiquement lorsque le média est inséré.  
   
- `AutoStart` peut être activé sur le **publier** page de la **Concepteur de projet**.  
+ `AutoStart` peut être activé sur la page **publier** du **Concepteur de projets**.  
   
 ### <a name="to-enable-autostart"></a>Pour activer le démarrage automatique  
   
-1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.  
+1. Quand un projet est sélectionné dans **Explorateur de solutions**, dans le menu **projet** , cliquez sur **Propriétés**.  
   
-2. Cliquez sur l’onglet **Publier**.  
+2. Cliquez sur l'onglet **Publier**.  
   
-3. Cliquez sur le bouton **Options**.  
+3. Cliquez sur le bouton **Options** .  
   
-     Le **Options de publication** boîte de dialogue s’affiche.  
+     La boîte de dialogue **options de publication** s’affiche.  
   
-4. Cliquez sur **déploiement**.  
+4. Cliquez sur **Déploiement**.  
   
-5. Sélectionnez le **installations pour CD-ROM, démarrer automatiquement l’installation lorsque le CD est inséré** case à cocher.  
+5. Activez la case à cocher **pour les installations de CD, démarrer automatiquement le programme d’installation lorsque le CD est inséré** .  
   
-     Un fichier Autorun.inf sera copié à l’emplacement de publication lorsque l’application est publiée.  
+     Un fichier autorun. inf sera copié à l’emplacement de publication lors de la publication de l’application.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Publication d’applications ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Guide pratique : publier une application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+ [Comment : publier une application ClickOnce à l'aide de l'Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 43b6115c45f9583b90711ef030834da662106f08
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65704352"
 ---
 # <a name="concurrency-visualizer-markers"></a>Marqueurs du visualiseur concurrentiel
@@ -44,15 +44,15 @@ Dans le visualiseur concurrentiel, les marqueurs sont des icônes qui représent
 ## <a name="known-sources-of-markers"></a>Sources connues de marqueurs  
  Tous les fournisseurs ETW peuvent générer des marqueurs, tant qu’ils respectent certaines contraintes. Vous pouvez configurer le visualiseur concurrentiel pour qu’il écoute d’autres sources d’événements de marqueurs. Par défaut, le visualiseur écoute les sources d’événements suivantes :  
   
-- [Kit SDK du visualiseur concurrentiel](../profiling/concurrency-visualizer-sdk.md)  
+- [Kit de développement logiciel (SDK) du visualiseur concurrentiel](../profiling/concurrency-visualizer-sdk.md)  
   
-- [La bibliothèque parallèle de tâches](https://msdn.microsoft.com/library/b8f99f43-9104-45fd-9bff-385a20488a23)  
+- [Bibliothèque parallèle de tâches](https://msdn.microsoft.com/library/b8f99f43-9104-45fd-9bff-385a20488a23)  
   
-- [Le flux de données](https://msdn.microsoft.com/library/643575d0-d26d-4c35-8de7-a9c403e97dd6)  
+- [DataFlow](https://msdn.microsoft.com/library/643575d0-d26d-4c35-8de7-a9c403e97dd6)  
   
 - [Parallel LINQ (PLINQ)](https://msdn.microsoft.com/library/3d4d0cd3-bde4-490b-99e7-f4e41be96455)  
   
-- [Le runtime d’accès concurrentiel](https://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)  
+- [Concurrency Runtime](https://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)  
   
 - [Les marqueurs Scenario](https://msdn.microsoft.com/e3b55bc2-b451-4214-ae00-0c7f5a5baec8)  
   
@@ -64,7 +64,7 @@ Dans le visualiseur concurrentiel, les marqueurs sont des icônes qui représent
  Le visualiseur concurrentiel peut également afficher des événements EventSource.  Pour plus d’informations, consultez [Visualisation des événements EventSource en tant que marqueurs](../profiling/visualizing-eventsource-events-as-markers.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Marqueurs indicateurs](../profiling/flag-markers.md)   
+ [Marqueurs d’indicateur](../profiling/flag-markers.md)   
  [Marqueurs de messages](../profiling/message-markers.md)   
- [Marqueurs d’intervalles](../profiling/span-markers.md)   
+ [Marqueurs span](../profiling/span-markers.md)   
  [Visualisation des événements EventSource en tant que marqueurs](../profiling/visualizing-eventsource-events-as-markers.md)

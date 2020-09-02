@@ -15,10 +15,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 2d91406b65950515afb3659c0d5918841465b2fc
-ms.sourcegitcommit: 363f3e6e30dd54366ade0d08920755da5951535c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86869566"
 ---
 # <a name="change-a-method-signature-refactoring"></a>Changer une signature de méthode (refactorisation)
@@ -65,7 +65,7 @@ Cette refactorisation s’applique à :
    | ------ | ---
    | **Haut/bas** | Déplacer le paramètre sélectionné vers le haut ou le bas de la liste
    | **Ajouter** | Ajouter un nouveau paramètre à la liste
-   | **Supprimer** | Supprimer le paramètre sélectionné de la liste
+   | **Remove** | Supprimer le paramètre sélectionné de la liste
    | **Restauration** | Restaurer le paramètre barré sélectionné dans la liste
 
    > [!TIP]

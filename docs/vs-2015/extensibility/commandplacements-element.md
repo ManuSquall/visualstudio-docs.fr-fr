@@ -14,18 +14,18 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dbe65cc38bd14d859507d795ce32657f53ca8b44
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184308"
 ---
 # <a name="commandplacements-element"></a>Élément CommandPlacements
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-L’élément CommandPlacements regroupe les éléments CommandPlacement et autres regroupements CommandPlacements.  
+L’élément CommandPlacements groupe les éléments Commandplacement ayant et d’autres regroupements CommandPlacements.  
   
- L’élément CommandPlacements est facultatif. Si aucun commandes, les groupes ou les menus ne doivent être inclus dans un emplacement secondaire, il est inutile d’inclure cette section dans votre fichier .vsct.  
+ L’élément CommandPlacements est facultatif. Si aucune commande, aucun groupe ou aucun menu ne doit être inclus dans un emplacement secondaire, vous n’avez pas besoin d’inclure cette section dans votre fichier. vsct.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -49,8 +49,8 @@ L’élément CommandPlacements regroupe les éléments CommandPlacement et autr
   
 |Élément|Description|  
 |-------------|-----------------|  
-|CommandPlacements|Regroupe les éléments CommandPlacement et autres regroupements CommandPlacements.|  
-|[Élément CommandPlacement](../extensibility/commandplacement-element.md)|Active les boutons, des groupes et des menus être inclus dans plus d’un groupe ou un menu.|  
+|CommandPlacements|Regroupe les éléments Commandplacement ayant et d’autres regroupements CommandPlacements.|  
+|[Élément CommandPlacement](../extensibility/commandplacement-element.md)|Permet l’inclusion de boutons, de groupes et de menus dans plusieurs groupes ou menus.|  
   
 ### <a name="parent-elements"></a>Éléments parents  
   
@@ -58,7 +58,7 @@ L’élément CommandPlacements regroupe les éléments CommandPlacement et autr
 |-------------|-----------------|  
 |[Élément CommandTable](../extensibility/commandtable-element.md)|Définit tous les éléments qui représentent des commandes.|  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a> Exemple  
   
 ```  
 <CommandPlacements>  
@@ -70,5 +70,5 @@ L’élément CommandPlacements regroupe les éléments CommandPlacement et autr
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Élément CommandPlacement](../extensibility/commandplacement-element.md)   
+ [Élément Commandplacement ayant](../extensibility/commandplacement-element.md)   
  [Fichiers Visual Studio Command Table (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

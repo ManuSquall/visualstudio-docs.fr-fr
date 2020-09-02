@@ -19,10 +19,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 000c3c4e2996869e96fd0d6097b5bab8576936a7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651737"
 ---
 # <a name="advanced-security-settings-dialog-box"></a>Paramètres de sécurité avancés, boîte de dialogue
@@ -30,9 +30,9 @@ ms.locfileid: "72651737"
 
 Cette boîte de dialogue vous permet de spécifier les paramètres de sécurité concernant le débogage dans la zone.
 
- Pour accéder à cette boîte de dialogue, sélectionnez un nœud de projet dans l’**Explorateur de solutions**, puis cliquez sur **Propriétés** dans le menu **Projet**. Quand le **Concepteur de projets** apparaît, cliquez sur l’onglet **Sécurité**. Dans la page **Sécurité**, sélectionnez **Activer les paramètres de sécurité ClickOnce**, cliquez sur **Il s’agit d’une application de confiance partielle**, puis sur **Avancé**.
+ Pour accéder à cette boîte de dialogue, sélectionnez un nœud de projet dans l’**Explorateur de solutions**, puis cliquez sur **Propriétés** dans le menu **Projet**. Lorsque le **Concepteur de projets** apparaît, cliquez sur l’onglet **sécurité** . Sur la page **sécurité** , sélectionnez **activer les paramètres de sécurité ClickOnce**, cliquez sur **il s’agit d’une application de confiance partielle**, puis sur **avancé**.
 
-## <a name="uielement-list"></a>Liste des éléments d’interface
+## <a name="uielement-list"></a>Liste des éléments de l'interface utilisateur
  **Déboguer cette application à l’aide du jeu d’autorisations sélectionné** Si vous cochez cette case, le jeu d’autorisations sélectionné dans la page **Sécurité** est utilisé pendant le débogage. Cette option est activée par défaut.
 
  Pour que le débogage dans une zone de sécurité fonctionne, cette option ainsi que l’option **Activer le processus d’hébergement Visual Studio** (disponible dans la page **Déboguer** du **Concepteur de projets**) doivent être activées.
@@ -44,4 +44,4 @@ Cette boîte de dialogue vous permet de spécifier les paramètres de sécurité
  **Déboguer cette application comme si elle était téléchargée de l’URL suivante** Si vous devez permettre à l’application d’accéder au site web ou au partage serveur qui correspond à **l’URL d’installation** que vous avez spécifiée dans la page **Publier**, tapez cette URL ici. Cette option est disponible uniquement quand l’option **Autoriser l’application à accéder à son site d’origine** est sélectionnée.
 
 ## <a name="see-also"></a>Voir aussi
- [Page Sécurité, Concepteur de projet](../../ide/reference/security-page-project-designer.md)
+ [Page Sécurité, Concepteur de projets](../../ide/reference/security-page-project-designer.md)

@@ -8,15 +8,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 34b834957dfe18e3fc03a86130a95071dda0badf
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75596578"
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>Génération de code à partir d'un langage spécifique à un domaine
 
-Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] offre un moyen puissant de générer du code, des documents, des fichiers de configuration et d’autres artefacts à partir des données représentées dans les modèles. À l’aide de [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], vous pouvez créer un ensemble de classes qui représentent vos données, et vous pouvez écrire vos modèles de texte dans des classes dont les noms et les propriétés reflètent ces données.
+Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] offre un moyen puissant de générer du code, des documents, des fichiers de configuration et d’autres artefacts à partir des données représentées dans les modèles. À l’aide de [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] , vous pouvez créer un ensemble de classes qui représentent vos données, et vous pouvez écrire vos modèles de texte dans des classes dont les noms et les propriétés reflètent ces données.
 
 Par exemple, Fabrikam possède un fichier XML contenant les noms des clients et les adresses de messagerie. Leurs développeurs créent un modèle dans lequel Customer est une classe, avec les propriétés Name et email. Elles écrivent plusieurs modèles de texte pour traiter les données, y compris ce fragment qui produit une table de tous les clients dans le cadre d’une page HTML :
 
@@ -28,11 +28,11 @@ Par exemple, Fabrikam possède un fichier XML contenant les noms des clients et 
 <# } #>  </table>
 ```
 
-Lorsque la base de données du client est traitée, le fichier XML est lu dans le magasin de modèles. Un *processeur de directive*, créé à l’aide de [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], rend la classe Customer disponible pour le code dans le modèle de texte. De nombreux modèles de texte peuvent être exécutés sur le même magasin.
+Lorsque la base de données du client est traitée, le fichier XML est lu dans le magasin de modèles. Un *processeur de directive*, créé à l’aide de [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] , rend la classe Customer disponible pour le code dans le modèle de texte. De nombreux modèles de texte peuvent être exécutés sur le même magasin.
 
-Les modèles de texte sont essentiels pour [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]. Ils sont utilisés pour générer le code source des éléments du modèle de domaine, ainsi que pour le VSPackage et les contrôles utilisés pour intégrer les outils à Visual Studio.
+Les modèles de texte sont essentiels à [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] . Ils sont utilisés pour générer le code source des éléments du modèle de domaine, ainsi que pour le VSPackage et les contrôles utilisés pour intégrer les outils à Visual Studio.
 
-Cette section décrit quelques-unes des façons de créer, de modifier et de déboguer des modèles de texte utilisés dans [!INCLUDE[dsl](../modeling/includes/dsl_md.md)].
+Cette section décrit quelques-unes des façons de créer, de modifier et de déboguer des modèles de texte utilisés dans [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] .
 
 ## <a name="in-this-section"></a>Dans cette section
 
@@ -48,12 +48,12 @@ Décrit comment connecter un hôte personnalisé à un processeur de directive g
 [Commande DslTextTransform](../modeling/the-dsltexttransform-command.md)\
 Décrit le fichier de commandes qui exécute l’exécutable TextTransform sur la ligne de commande pour les modèles de texte qui font référence à des langages spécifiques à un domaine.
 
-## <a name="reference"></a>Reference
+## <a name="reference"></a>Informations de référence
 
 [Écriture d’un modèle de texte T4](../modeling/writing-a-t4-text-template.md)\
 Fournit la syntaxe des directives de modèle de texte et des blocs de contrôle.
 
-## <a name="related-sections"></a>Rubriques connexes
+## <a name="related-sections"></a>Sections connexes
 
 [Génération de code au moment du design à l’aide de modèles de texte T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)\
 Explique le processus de transformation du modèle de texte.

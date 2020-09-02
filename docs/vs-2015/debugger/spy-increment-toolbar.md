@@ -1,5 +1,5 @@
 ---
-title: Barre d’outils Spy ++ | Microsoft Docs
+title: Barre d’outils Spy + + | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,39 +12,39 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a96a5765c98bf8e7d1c600fbd47478a88fa7175d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153896"
 ---
 # <a name="spy-toolbar"></a>Barre d'outils Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La barre d’outils apparaît sous la barre de menus dans Spy ++. Pour afficher ou masquer la barre d’outils, sur le **vue** menu, cliquez sur **barre d’outils**.  
+La barre d’outils s’affiche sous la barre de menus dans Spy + +. Pour afficher ou masquer la barre d’outils, dans le menu **affichage** , cliquez sur **barre d’outils**.  
   
- Les contrôles suivants sont disponibles sur la barre d’outils.  
+ Les contrôles suivants sont disponibles dans la barre d’outils.  
   
 ## <a name="uielement-list"></a>Liste des éléments de l'interface utilisateur  
   
 |Bouton|Résultat|  
 |------------|------------|  
-|![Spy&#43; &#43; Windows bouton](../debugger/media/icon-spy-windows.gif "Icon_Spy ++ _Windows")|Affiche une arborescence des fenêtres et des contrôles dans le système. Pour plus d’informations, consultez [Windows vue](../debugger/windows-view.md).|  
-|![Spy&#43; &#43; traite bouton](../debugger/media/icon-spy-processes.gif "Icon_Spy ++ _Processes")|Affiche une arborescence des processus dans le système. Pour plus d’informations, consultez [vue processus](../debugger/processes-view.md).|  
-|![Spy&#43; &#43; Threads bouton](../debugger/media/icon-spy-threads.gif "Icon_Spy ++ _Threads")|Affiche une arborescence des threads dans le système. Pour plus d’informations, consultez [vue Threads](../debugger/threads-view.md).|  
-|![Spy&#43; &#43; Messages bouton](../debugger/media/icon-spy-messages.gif "Icon_Spy ++ _Messages")|Crée une fenêtre pour afficher les messages de fenêtre et ouvre le **Options des messages** afin que vous puissiez sélectionner la fenêtre dont les messages seront affiche et sélectionner d’autres options de boîte de dialogue. Pour plus d’informations, consultez [vue Messages](../debugger/messages-view.md).|  
-|![Spy&#43; &#43; bouton Démarrer le journal](../debugger/media/icon-spy-startlog.gif "Icon_Spy ++ _StartLog")|Démarre la journalisation des messages et affiche le flux de message. Ce contrôle est disponible uniquement quand un **Messages** fenêtre est la fenêtre active. Pour plus d’informations, consultez [Guide pratique pour Démarrer et arrêter l’affichage du journal des messages](../debugger/how-to-start-and-stop-the-message-log-display.md).|  
-|![Spy&#43; &#43; journal bouton Arrêter](../debugger/media/icon-spy-stoplog.gif "Icon_Spy ++ _StopLog")|Journalisation et l’affichage du flux de messages des messages s’arrête. Ce contrôle est disponible uniquement quand un **Messages** fenêtre est la fenêtre active. Pour plus d’informations, consultez [Guide pratique pour Démarrer et arrêter l’affichage du journal des messages](../debugger/how-to-start-and-stop-the-message-log-display.md).|  
-|![Spy&#43; &#43; Options bouton journaux](../debugger/media/icon-spy-logoptions.gif "Icon_Spy ++ _LogOptions")|Affiche le [Options des messages](../debugger/message-options-dialog-box.md) boîte de dialogue. Utilisez cette boîte de dialogue pour sélectionner windows et de types pour l’affichage de messages. Ce contrôle est disponible uniquement quand un **Messages** fenêtre est la fenêtre active.|  
-|![Spy&#43; &#43; journal bouton Effacer](../debugger/media/spy-clearlog.gif "Spy ++ _ClearLog")|Efface le contenu de l’actif **Messages** fenêtre. Ce contrôle est disponible uniquement quand un **Messages** fenêtre est la fenêtre active.|  
-|![Spy&#43; &#43; trouver le bouton de la fenêtre](../debugger/media/icon-spy-findwindow.gif "Icon_Spy ++ _FindWindow")|Ouvre le [rechercher une fenêtre](../debugger/find-window-dialog-box.md) boîte de dialogue qui vous permet de définir des critères de recherche de fenêtre et afficher les propriétés ou les messages. Pour plus d’informations, consultez [Guide pratique pour Utiliser l’outil de recherche](../debugger/how-to-use-the-finder-tool.md).|  
-|![Spy&#43; &#43; rechercher le premier bouton de fenêtre](../debugger/media/icon-spy-window.gif "Icon_Spy ++ _Window")|Recherche dans la vue actuelle pour une correspondance de la fenêtre, le processus, le thread ou le message.|  
-|![Spy&#43; &#43; bouton de fenêtre suivant](../debugger/media/icon-spy-nextwindow.gif "Icon_Spy ++ _NextWindow")|Recherche dans la vue actuelle pour la fenêtre correspondante suivante, le processus, le thread ou le message. Ce contrôle (et la commande de menu associés) sont disponibles uniquement s’il existe un résultat de recherche valide qui n’est pas unique. Par exemple, lorsque vous utilisez un handle de fenêtre comme critère de recherche dans l’arborescence de la fenêtre, il génère des résultats uniques, car il n’est qu’une seule fenêtre dans l’arborescence de la fenêtre qui a ce handle ; Dans ce cas, **suivant** n’est pas disponible.|  
-|![Spy&#43; &#43; trouver le bouton précédent de la fenêtre](../debugger/media/icon-spy-prevwindow.gif "Icon_Spy ++ _PrevWindow")|Recherche dans la vue actuelle pour la fenêtre correspondante précédente, le processus, le thread ou le message. Ce contrôle (et la commande de menu associés) sont disponibles uniquement s’il existe un résultat de recherche valide qui n’est pas unique. Par exemple, lorsque vous utilisez un handle de fenêtre comme critère de recherche dans l’arborescence de la fenêtre, il génère des résultats uniques, car il n’est qu’une seule fenêtre dans l’arborescence de la fenêtre qui a ce handle ; Dans ce cas, **précédent** n’est pas disponible.|  
-|![Spy&#43; &#43; bouton Explorateur des propriétés](../debugger/media/icon-spy-propexp.gif "Icon_Spy ++ _PropExp")|Affiche les propriétés de la fenêtre qui est sélectionné dans la vue de Windows.|  
-|![Spy&#43; &#43; bouton Actualiser](../debugger/media/icon-spy-refresh.gif "Icon_Spy ++ _actualiser")|Actualise les vues système.|  
+|![Bouton fenêtres Spy&#43;&#43; ](../debugger/media/icon-spy-windows.gif "_Windows Icon_Spy + +")|Affiche une arborescence des fenêtres et des contrôles du système. Pour plus d’informations, consultez [vue Windows](../debugger/windows-view.md).|  
+|![Bouton processus de&#43;&#43; Spy](../debugger/media/icon-spy-processes.gif "_Processes Icon_Spy + +")|Affiche une arborescence des processus dans le système. Pour plus d’informations, consultez [vue processus](../debugger/processes-view.md).|  
+|![Bouton de threads Spy&#43;&#43; ](../debugger/media/icon-spy-threads.gif "_Threads Icon_Spy + +")|Affiche une arborescence des threads dans le système. Pour plus d’informations, consultez [vue threads](../debugger/threads-view.md).|  
+|![Bouton messages d'&#43;&#43; Spy](../debugger/media/icon-spy-messages.gif "_Messages Icon_Spy + +")|Crée une fenêtre pour afficher des messages de fenêtre et ouvre la boîte de dialogue **Options des messages** pour vous permettre de sélectionner la fenêtre dont les messages seront affichés et de sélectionner également d’autres options. Pour plus d’informations, consultez [vue messages](../debugger/messages-view.md).|  
+|![Bouton de démarrage du journal Spy&#43;&#43; ](../debugger/media/icon-spy-startlog.gif "_StartLog Icon_Spy + +")|Démarre l’enregistrement des messages et affiche le flux de message. Ce contrôle est disponible uniquement lorsqu’une fenêtre **messages** est la fenêtre active. Pour plus d’informations, consultez [procédure : Démarrer et arrêter l’affichage du journal des messages](../debugger/how-to-start-and-stop-the-message-log-display.md).|  
+|![Bouton d’arrêt du journal d'&#43;&#43; Spy](../debugger/media/icon-spy-stoplog.gif "_StopLog Icon_Spy + +")|Arrête l’enregistrement des messages et l’affichage du flux de messages. Ce contrôle est disponible uniquement lorsqu’une fenêtre **messages** est la fenêtre active. Pour plus d’informations, consultez [procédure : Démarrer et arrêter l’affichage du journal des messages](../debugger/how-to-start-and-stop-the-message-log-display.md).|  
+|![Bouton Options du journal Spy&#43;&#43; ](../debugger/media/icon-spy-logoptions.gif "_LogOptions Icon_Spy + +")|Affiche la boîte de dialogue [Options des messages](../debugger/message-options-dialog-box.md) . Utilisez cette boîte de dialogue pour sélectionner des fenêtres et des types de messages à afficher. Ce contrôle est disponible uniquement lorsqu’une fenêtre **messages** est la fenêtre active.|  
+|![Bouton Effacer le journal de&#43;&#43; Spy](../debugger/media/spy-clearlog.gif "_ClearLog Spy + +")|Efface le contenu de la fenêtre **messages** actifs. Ce contrôle est disponible uniquement lorsqu’une fenêtre **messages** est la fenêtre active.|  
+|![Bouton de la fenêtre Rechercher le&#43;&#43; Spy](../debugger/media/icon-spy-findwindow.gif "_FindWindow Icon_Spy + +")|Ouvre la boîte de dialogue [Rechercher une fenêtre](../debugger/find-window-dialog-box.md) , qui vous permet de définir des critères de recherche de fenêtre et d’afficher des propriétés ou des messages. Pour plus d’informations, consultez [Comment : utiliser l’outil Finder](../debugger/how-to-use-the-finder-tool.md).|  
+|![Bouton espion&#43;&#43; Rechercher la première fenêtre](../debugger/media/icon-spy-window.gif "_Window Icon_Spy + +")|Recherche la vue actuelle d’une fenêtre, d’un processus, d’un thread ou d’un message correspondant.|  
+|![Espion&#43;&#43; bouton Rechercher la fenêtre suivante](../debugger/media/icon-spy-nextwindow.gif "_NextWindow Icon_Spy + +")|Recherche la fenêtre, le processus, le thread ou le message suivant. Ce contrôle (et la commande de menu associée) est disponible uniquement lorsqu’il existe un résultat de recherche valide qui n’est pas unique. Par exemple, lorsque vous utilisez un handle de fenêtre comme critère de recherche dans l’arborescence de la fenêtre, il produit des résultats uniques, car il n’existe qu’une seule fenêtre dans l’arborescence de la fenêtre qui contient ce handle ; dans cette instance, l' **étape suivante** n’est pas disponible.|  
+|![Espion&#43;&#43; bouton Rechercher la fenêtre précédente](../debugger/media/icon-spy-prevwindow.gif "_PrevWindow Icon_Spy + +")|Recherche la vue actuelle de la fenêtre, du processus, du thread ou du message précédent. Ce contrôle (et la commande de menu associée) est disponible uniquement lorsqu’il existe un résultat de recherche valide qui n’est pas unique. Par exemple, lorsque vous utilisez un handle de fenêtre comme critère de recherche dans l’arborescence de la fenêtre, il produit des résultats uniques, car il n’existe qu’une seule fenêtre dans l’arborescence de la fenêtre qui contient ce handle ; dans ce cas, la **recherche précédente** n’est pas disponible.|  
+|![Bouton de l’Explorateur de propriétés de&#43;&#43; Spy](../debugger/media/icon-spy-propexp.gif "_PropExp Icon_Spy + +")|Affiche les propriétés de la fenêtre sélectionnée dans la vue fenêtres.|  
+|![Bouton actualiser l'&#43;&#43; Spy](../debugger/media/icon-spy-refresh.gif "_Refresh Icon_Spy + +")|Actualise les vues système.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Utilisation de Spy++](../debugger/using-spy-increment.md)   
- [Vues Spy++](../debugger/spy-increment-views.md)   
- [Informations de référence sur Spy++](../debugger/spy-increment-reference.md)
+ [Utilisation de Spy + +](../debugger/using-spy-increment.md)   
+ [Vues Spy + +](../debugger/spy-increment-views.md)   
+ [Référence Spy++](../debugger/spy-increment-reference.md)

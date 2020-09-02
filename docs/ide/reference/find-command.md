@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 288fb294ab712713d6be116f46ca159ea40a6e67
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595642"
 ---
 # <a name="find-command"></a>Rechercher, commande
@@ -70,7 +70,7 @@ facultatif. Utilise des caractères spéciaux prédéfinis dans l’argument `fi
 /word ou /w\
 facultatif. Recherche uniquement les mots entiers.
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 Cet exemple recherche le mot « somestring » en respectant la casse dans la section de code sélectionnée.
 
 ```cmd
@@ -79,7 +79,7 @@ Cet exemple recherche le mot « somestring » en respectant la casse dans la sec
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Commande, fenêtre](../../ide/reference/command-window.md)
-- [Boîte de recherche/commande](../../ide/find-command-box.md)
-- [Commandes de studio visuel](../../ide/reference/visual-studio-commands.md)
-- [Alias de commande de studio visuel](../../ide/reference/visual-studio-command-aliases.md)
+- [Fenêtre commande](../../ide/reference/command-window.md)
+- [Zone Rechercher/commande](../../ide/find-command-box.md)
+- [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)
+- [Alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

@@ -1,5 +1,5 @@
 ---
-title: Fonction SccRemove | Microsoft Docs
+title: SccRemove fonction) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 62974f585fe164c7ccf7ea21a19d22939d806d73
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199974"
 ---
 # <a name="sccremove-function"></a>Fonction SccRemove
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Cette fonction supprime les fichiers du système de contrôle source.  
+Cette fonction supprime les fichiers du système de contrôle de code source.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -40,42 +40,42 @@ SCCRTN SccRemove(
   
 #### <a name="parameters"></a>Paramètres  
  pvContext  
- [in] La structure de contexte de plug-in de contrôle de source.  
+ dans Structure de contexte du plug-in de contrôle de code source.  
   
  hWnd  
- [in] Handle vers la fenêtre de l’IDE que le plug-in de contrôle de code source peut utiliser en tant que parent pour les boîtes de dialogue qu’il fournit.  
+ dans Handle de la fenêtre IDE que le plug-in de contrôle de code source peut utiliser comme parent pour toutes les boîtes de dialogue qu’il fournit.  
   
- nFiles  
- [in] Nombre de fichiers spécifiés dans le `lpFileNames` tableau.  
+ Nfichiers  
+ dans Nombre de fichiers spécifiés dans le `lpFileNames` tableau.  
   
  lpFileNames  
- [in] Tableau des noms de chemin d’accès local complet des fichiers à supprimer.  
+ dans Tableau de noms de chemins d’accès locaux complets des fichiers à supprimer.  
   
  lpComment  
- [in] Le commentaire à appliquer à chaque fichier en cours de suppression.  
+ dans Commentaire à appliquer à chaque fichier supprimé.  
   
  fOptions  
- [in] Indicateurs de commande (inutilisés).  
+ dans Indicateurs de commande (inutilisé).  
   
  pvOptions  
- [in] Options spécifiques au plug-in de contrôle source.  
+ dans Options spécifiques au plug-in de contrôle de code source.  
   
-## <a name="return-value"></a>Valeur de retour  
- L’implémentation de plug-in de contrôle de source de cette fonction est censée retourner l’une des valeurs suivantes :  
+## <a name="return-value"></a>Valeur renvoyée  
+ L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :  
   
-|`Value`|Description|  
+|Valeur|Description|  
 |-----------|-----------------|  
 |SCC_OK|La suppression a réussi.|  
 |SCC_E_FILENOTCONTROLLED|Le fichier sélectionné n’est pas sous contrôle de code source.|  
 |SCC_E_OPNOTSUPPORTED|Le système de contrôle de code source ne prend pas en charge cette opération.|  
-|SCC_E_ISCHECKEDOUT|Impossible de supprimer un fichier, car un utilisateur n’est extrait.|  
-|SCC_E_ACCESSFAILURE|Impossible d’accéder au système de contrôle source, probablement en raison de problèmes réseau ou de contention.|  
+|SCC_E_ISCHECKEDOUT|Impossible de supprimer un fichier parce qu’il est actuellement extrait par un utilisateur.|  
+|SCC_E_ACCESSFAILURE|Un problème est survenu lors de l’accès au système de contrôle de code source, probablement en raison de problèmes de réseau ou de contention.|  
 |SCC_E_NOTAUTHORIZED|L’utilisateur n’est pas autorisé à effectuer cette opération.|  
-|SCC_E_NONSPECIFICERROR|Échec non spécifique ; fichier n’a pas été supprimé.|  
+|SCC_E_NONSPECIFICERROR|Échec non spécifique ; le fichier n’a pas été supprimé.|  
 |SCC_I_OPERATIONCANCELED|L’opération a été annulée avant la fin.|  
   
 ## <a name="remarks"></a>Notes  
- Cette fonction supprime les fichiers du système de contrôle source, mais ne les supprime pas de disque dur local de l’utilisateur.  
+ Cette fonction supprime les fichiers du système de contrôle de code source, mais ne les supprime pas du disque dur local de l’utilisateur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Fonctions d’API du plug-in de contrôle de code source](../extensibility/source-control-plug-in-api-functions.md)

@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cf6016b2c12fd5ebe7cfb76c14c776508d99d2db
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651480"
 ---
 # <a name="ltlocgt-javascript"></a>&lt;loc&gt; (JavaScript)
@@ -32,19 +32,19 @@ Spécifie l’emplacement et le type du fichier side-car qui fournit des informa
 ```
 
 #### <a name="parameters"></a>Paramètres
- `filename` Facultatif. Nom racine du fichier side-car qui contient les informations de localisation pour la culture neutre. Lorsque Visual Studio recherche des informations de localisation, il tente de trouver une version spécifique à la culture de ce fichier. Par exemple, si `filename` est jQuery. xml, Visual Studio recherche le dossier propre à la culture (par exemple, JA) au même emplacement que le fichier. js qui contient l’élément `<loc>`. S’il localise le dossier propre à la culture, il vérifie s’il existe un fichier jQuery. Xml. S’il ne parvient pas à localiser le fichier approprié, il utilise à la place des règles d’emplacement de ressources managées. La valeur par défaut de `filename` est le nom du fichier actif, mais avec une extension. xml au lieu de. js.
+ `filename` Facultatif. Nom racine du fichier side-car qui contient les informations de localisation pour la culture neutre. Lorsque Visual Studio recherche des informations de localisation, il tente de trouver une version spécifique à la culture de ce fichier. Par exemple, si `filename` est jquery.xml, Visual Studio recherche le dossier correct propre à la culture (par exemple, ja) au même emplacement que le fichier. js qui contient l' `<loc>` élément. S’il localise le dossier propre à la culture, il vérifie s’il existe un fichier de jquery.xml. S’il ne parvient pas à localiser le fichier approprié, il utilise à la place des règles d’emplacement de ressources managées. La valeur par défaut de `filename` est le nom du fichier actif, mais avec une extension. xml au lieu de. js.
 
  `format` Facultatif. Type de fichier side-car utilisé pour la localisation. Utilisez `messagebundle` pour spécifier l’utilisation des groupes de messages définis par les métadonnées Ajax ouvertes. `messagebundle` est le format recommandé. Toutefois, ce format n’est pas pris en charge dans les fichiers Microsoft Ajax ou. winmd. Utilisez `vsdoc` pour spécifier le format de localisation .NET Framework standard utilisé par Microsoft Ajax et Windows Runtime. Cet attribut est facultatif. `vsdoc` est le format par défaut.
 
-## <a name="remarks"></a>Remarques
- L’élément `<loc>` doit apparaître en haut du fichier dans la même section que l’élément `<reference>`. Les règles d’utilisation de l’élément `<loc>` sont identiques à celles de l’élément `<reference>`. Pour plus d’informations, consultez la section « directives de références » dans [JavaScript IntelliSense](../ide/javascript-intellisense.md).
+## <a name="remarks"></a>Notes
+ L' `<loc>` élément doit apparaître en haut du fichier dans la même section que l' `<reference>` élément. Les règles d’utilisation de l' `<loc>` élément sont les mêmes que celles de l' `<reference>` élément. Pour plus d’informations, consultez la section « directives de références » dans [JavaScript IntelliSense](../ide/javascript-intellisense.md).
 
- Visual Studio traite un seul élément `<loc>` pour chaque fichier. js. Si plusieurs éléments `<loc>` sont présents, un seul élément `<loc>` est utilisé. Comportement pour déterminer quel élément de `<loc>` utiliser n’est pas défini.
+ Visual Studio traite un `<loc>` élément unique pour chaque fichier. js. Si plusieurs `<loc>` éléments sont présents, un seul `<loc>` élément est utilisé. Le comportement pour déterminer l' `<loc>` élément à utiliser n’est pas défini.
 
- Lorsque vous utilisez le format de groupement de messages, utilisez l’attribut `locid` dans les commentaires de documentation XML pour spécifier la valeur d’attribut `name`.
+ Lorsque vous utilisez le format de groupement de messages, utilisez l' `locid` attribut dans les commentaires de documentation XML pour spécifier la valeur de l' `name` attribut.
 
-## <a name="example"></a>Exemples
- L’exemple suivant montre comment utiliser l’élément `<loc>` avec le format messagebundle. Ajoutez le code XML suivant à un fichier nommé messageFilename. xml et placez le fichier dans le dossier propre à la culture, comme indiqué dans la description du paramètre `filename`.
+## <a name="example"></a>Exemple
+ L’exemple suivant montre comment utiliser l' `<loc>` élément avec le format messagebundle. Ajoutez le code XML suivant à un fichier nommé messageFilename.xml et placez le fichier dans le dossier propre à la culture, comme indiqué dans la description du `filename` paramètre.
 
 ```
 <?xml version="1.0" encoding="utf-8" ?>
@@ -56,7 +56,7 @@ Spécifie l’emplacement et le type du fichier side-car qui fournit des informa
 
 ```
 
- Pour l’exemple messagebundle, ajoutez le code suivant à un fichier JavaScript dans votre projet. L’élément `<loc>` doit apparaître en tant que première ligne dans le fichier JavaScript. Les descriptions de ce code seront remplacées par des descriptions localisées, si elles sont disponibles.
+ Pour l’exemple messagebundle, ajoutez le code suivant à un fichier JavaScript dans votre projet. L' `<loc>` élément doit apparaître en tant que première ligne dans le fichier JavaScript. Les descriptions de ce code seront remplacées par des descriptions localisées, si elles sont disponibles.
 
 ```javascript
 /// <loc filename="messageFilename.xml" format="messagebundle"/>
@@ -70,7 +70,7 @@ function doSomething(a,b)
 
 ```
 
- L’exemple suivant utilise le format VSDoc. Ajoutez le code XML suivant à un fichier nommé scriptFilename. xml et placez le fichier dans le dossier propre à la culture.
+ L’exemple suivant utilise le format VSDoc. Ajoutez le code XML suivant à un fichier nommé scriptFilename.xml et placez le fichier dans le dossier propre à la culture.
 
 ```
 <?xml version="1.0" encoding="utf-8" ?>
@@ -102,4 +102,4 @@ function illuminate(a)
 ```
 
 ## <a name="see-also"></a>Voir aussi
- [Commentaires sur la documentation XML](../ide/xml-documentation-comments-javascript.md)
+ [Commentaires de documentation XML](../ide/xml-documentation-comments-javascript.md)

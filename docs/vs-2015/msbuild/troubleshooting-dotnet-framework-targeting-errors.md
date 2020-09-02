@@ -19,10 +19,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ae55e34f929acca6c708dfc39477f3bd6546f53f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65703789"
 ---
 # <a name="troubleshooting-net-framework-targeting-errors"></a>Dépannage des erreurs de ciblage du .NET Framework
@@ -36,7 +36,7 @@ Cette rubrique décrit les erreurs MSBuild qui peuvent se produire en raison de 
 ## <a name="you-have-re-targeted-a-project-to-a-different-version-of-the-net-framework"></a>Vous avez reciblé un projet vers une autre version du .NET Framework  
  Si vous modifiez la version cible du [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] pour votre application, Visual Studio met à jour certaines références, mais vous devrez peut-être en modifier d’autres manuellement. Par exemple, si vous modifiez une application pour qu’elle cible le [!INCLUDE[net_v35SP1_long](../includes/net-v35sp1-long-md.md)] et que cette application dispose de ressources ou de paramètres qui s’appuient sur le profil client du [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)], l’une des erreurs mentionnées précédemment peut-se produire.  
   
- Pour contourner les paramètres de l’application, ouvrez l’**Explorateur de solutions**, choisissez **Afficher tous les fichiers**, puis modifiez le fichier app.config dans l’éditeur XML de Visual Studio. Modifiez la version dans les paramètres pour la faire correspondre à celle du .NET Framework. Par exemple, vous pouvez remplacer le paramètre de version 4.0.0.0 par 2.0.0.0. De même, pour une application avec des ressources supplémentaires, ouvrez l’**Explorateur de solutions**, choisissez le bouton **Afficher tous les fichiers**, développez **Mon projet** (Visual Basic) ou **Propriétés** (C#), puis modifiez le fichier Resources.resx dans l’éditeur XML de Visual Studio. Remplacez le paramètre de version 4.0.0.0 par 2.0.0.0.  
+ Pour contourner les paramètres d’application, ouvrez **l’Explorateur de solutions**, choisissez **Afficher tous les fichiers**, puis modifiez le fichier app.config dans l’éditeur XML de Visual Studio. Modifiez la version dans les paramètres pour la faire correspondre à celle du .NET Framework. Par exemple, vous pouvez remplacer le paramètre de version 4.0.0.0 par 2.0.0.0. De même, pour une application comportant des ressources supplémentaires, ouvrez **l’Explorateur de solutions**, choisissez le bouton **Afficher tous les fichiers**, développez **Mon projet** (Visual Basic) ou **Propriétés** (C#), puis modifiez le fichier Resources.resx dans l’éditeur XML de Visual Studio. Remplacez le paramètre de version 4.0.0.0 par 2.0.0.0.  
   
  Si votre application dispose de ressources telles que des icônes, des images ou des paramètres tels que des chaînes de connexion de données, vous pouvez également résoudre l’erreur en supprimant tous les éléments de la page **Paramètres** du **Concepteur de projets** et en rajoutant ensuite les paramètres exigés.  
   
@@ -57,7 +57,7 @@ Cette rubrique décrit les erreurs MSBuild qui peuvent se produire en raison de 
 > Après la fermeture et la ré-ouverture votre projet, vous devez également le régénérer pour vérifier que toutes les références sont correctement résolues.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour Cibler une Version du .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md)   
- [.NET Framework Client Profile](https://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1)   
- [Ciblage d’une version spécifique du .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)   
- [Multiciblage](../msbuild/msbuild-multitargeting-overview.md)
+ [Comment : cibler une version du .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md)   
+ [Profil client .NET Framework](https://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1)   
+ [Ciblage d’une version de .NET Framework spécifique](../ide/targeting-a-specific-dotnet-framework-version.md)   
+ [MULTICIBLAGE](../msbuild/msbuild-multitargeting-overview.md)

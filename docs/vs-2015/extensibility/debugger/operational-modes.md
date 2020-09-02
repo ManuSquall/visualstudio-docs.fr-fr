@@ -1,5 +1,5 @@
 ---
-title: Les Modes de fonctionnement | Microsoft Docs
+title: Modes opérationnels | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,16 +11,16 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c4009ab6268140117c8fd1294adcc52ac347b799
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153722"
 ---
 # <a name="operational-modes"></a>Modes de fonctionnement
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Il existe trois modes dans lesquels l’IDE peut fonctionner, comme suit :  
+L’IDE peut fonctionner dans trois modes, comme suit :  
   
 - [Mode Création](#vsconoperationalmodesanchor1)  
   
@@ -28,33 +28,33 @@ Il existe trois modes dans lesquels l’IDE peut fonctionner, comme suit :
   
 - [Mode arrêt](#vsconoperationalmodesanchor3)  
   
-  Comment votre moteur de débogage personnalisé (dé) effectue la transition entre ces modes est une décision d’implémentation que vous devez être familiarisé avec les mécanismes de transition. Le DE peut ou ne peut pas implémenter directement ces modes. Ces modes sont vraiment package modes de débogage qui changent en fonction de l’action de l’utilisateur ou des événements à partir de l’Allemagne. Par exemple, la transition du mode d’exécution en mode arrêt est déclenchée par un événement d’arrêt à partir de l’Allemagne. La transition à partir de l’arrêt de l’exécuter en mode ou mode pas à pas est déclenchée par l’utilisateur qui effectue des opérations telles que l’étape ou Execute. Pour plus d’informations sur les transitions DE, consultez [contrôle d’exécution](../../extensibility/debugger/control-of-execution.md).  
+  La façon dont vos transitions DE moteur DE débogage personnalisées entre ces modes est une décision d’implémentation vous oblige à vous familiariser avec les mécanismes de transition. Le DE peut ou ne peut pas implémenter directement ces modes. Ces modes sont en fait des modes de package de débogage qui basculent en fonction des actions de l’utilisateur ou des événements du. Par exemple, le passage du mode exécution au mode arrêt est provoqué par un événement d’arrêt à partir de la. La transition de break en mode exécution ou en mode étape est provoquée par l’utilisateur effectuant des opérations telles que STEP ou Execute. Pour plus d’informations sur les transitions, consultez [contrôle de l’exécution](../../extensibility/debugger/control-of-execution.md).  
   
-## <a name="vsconoperationalmodesanchor1"></a> Mode Création  
- Le mode Design est l’état nonrunning de débogage de Visual Studio, au cours de laquelle vous pouvez définir des fonctionnalités dans votre application de débogage.  
+## <a name="design-mode"></a><a name="vsconoperationalmodesanchor1"></a> Mode création  
+ Le mode Design est l’état non exécuté du débogage Visual Studio, ce qui vous permet de définir des fonctionnalités de débogage dans votre application.  
   
- Uniquement le débogage quelques fonctionnalités sont utilisées en mode design. Un développeur peut choisir de définir des points d’arrêt ou de créer des expressions espion. Le dé n’est jamais chargé ou appelée alors que l’IDE est en mode design. Interaction avec le dé a lieu au cours des modes d’exécution et d’arrêt uniquement.  
+ Seules quelques fonctionnalités de débogage sont utilisées en mode création. Un développeur peut choisir de définir des points d’arrêt ou de créer des expressions Watch. Le DE n’est jamais chargé ou appelé lorsque l’IDE est en mode Design. L’interaction avec le DE a lieu uniquement en mode exécution et en mode arrêt.  
   
-## <a name="vsconoperationalmodesanchor2"></a> Mode d’exécution  
- Mode d’exécution se produit lorsqu’un programme s’exécute dans une session de débogage dans l’IDE. L’application s’exécute jusqu'à l’arrêt, jusqu'à ce qu’un point d’arrêt est atteint, ou jusqu'à ce qu’une exception est levée. Lorsque l’application s’exécute à l’arrêt, les transitions DE en mode design. Lorsqu’un point d’arrêt est atteint, ou une exception est levée, le DE passe en mode arrêt.  
+## <a name="run-mode"></a><a name="vsconoperationalmodesanchor2"></a> Mode d’exécution  
+ Le mode d’exécution se produit lorsqu’un programme s’exécute dans une session de débogage dans l’IDE. L’application s’exécute jusqu’à la fin, jusqu’à ce qu’un point d’arrêt soit atteint ou jusqu’à ce qu’une exception soit levée. Lorsque l’application s’exécute jusqu’à l’arrêt, le DE passe en mode création. Lorsqu’un point d’arrêt est atteint ou qu’une exception est levée, la valeur DE passe en mode arrêt.  
   
-## <a name="vsconoperationalmodesanchor3"></a> Mode arrêt  
- Mode arrêt se produit lorsque l’exécution du programme de débogage est suspendue. Mode arrêt offre au développeur un instantané de l’application au moment de l’arrêt et permet au développeur d’analyser l’état de l’application et de modifier la façon dont l’application s’exécutera. Le développeur peut afficher et modifier le code, examiner ou modifier des données, redémarrez l’application, fin d’exécution ou poursuivre l’exécution à partir du même point.  
+## <a name="break-mode"></a><a name="vsconoperationalmodesanchor3"></a> Mode arrêt  
+ Le mode arrêt se produit lorsque l’exécution du programme de débogage est suspendue. Le mode arrêt offre au développeur un instantané de l’application au moment de l’arrêt et permet au développeur d’analyser l’état de l’application et de modifier le mode d’exécution de l’application. Le développeur peut afficher et modifier le code, examiner ou modifier des données, redémarrer l’application, terminer l’exécution ou poursuivre l’exécution à partir du même point.  
   
- Mode arrêt est entré lors de l’Allemagne envoie un événement d’arrêt synchrones. Événements synchrones en cours d’arrêt, également appelés événements de l’arrêt, notifient le Gestionnaire de session de débogage (SDM) et l’IDE de l’application en cours de débogage a arrêté l’exécution de code. Le [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) et [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) interfaces sont des exemples d’événements d’arrêt.  
+ Le mode arrêt est entré lorsque le DE envoie un événement d’arrêt synchrone. Les événements d’arrêt synchrones, également appelés événements d’arrêt, notifient le gestionnaire de débogage de session (SDM) et l’IDE que l’application en cours de débogage a cessé d’exécuter le code. Les interfaces [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) et [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) sont des exemples d’arrêt d’événements.  
   
- Événements d’arrêt sont maintenues par un appel à une des méthodes suivantes, le débogueur à partir du mode arrêt à exécuter ou à l’étape de mode de transition :  
+ Les événements d’arrêt sont poursuivis par un appel à l’une des méthodes suivantes, qui font passer le débogueur du mode arrêt au mode exécution ou en mode pas à pas :  
   
 - [Execute](../../extensibility/debugger/reference/idebugprocess3-execute.md)  
   
-- [Step](../../extensibility/debugger/reference/idebugprocess3-step.md)  
+- [Étape](../../extensibility/debugger/reference/idebugprocess3-step.md)  
   
-- [Continue](../../extensibility/debugger/reference/idebugprocess3-continue.md)  
+- [Continuer](../../extensibility/debugger/reference/idebugprocess3-continue.md)  
   
-### <a name="vsconoperationalmodesanchor4"></a> Mode pas à pas  
- Mode de l’étape se produit lorsque le programme les étapes à la ligne suivante de code, ou dans, au-dessus ou en dehors d’une fonction. Une étape est exécutée en appelant la méthode [étape](../../extensibility/debugger/reference/idebugprocess3-step.md). Cette méthode nécessite `DWORD`s qui spécifient le [STEPUNIT](../../extensibility/debugger/reference/stepunit.md) et [STEPKIND](../../extensibility/debugger/reference/stepkind.md) énumérations en tant que paramètres d’entrée.  
+### <a name="step-mode"></a><a name="vsconoperationalmodesanchor4"></a> Mode pas à pas  
+ Le mode pas à pas se produit lorsque le programme passe à la ligne de code suivante, ou à, au-dessus ou à l’extérieur d’une fonction. Une étape est exécutée en appelant l' [étape](../../extensibility/debugger/reference/idebugprocess3-step.md)de méthode. Cette méthode nécessite `DWORD` des s qui spécifient les énumérations [STEPUNIT](../../extensibility/debugger/reference/stepunit.md) et [STEPKIND](../../extensibility/debugger/reference/stepkind.md) en tant que paramètres d’entrée.  
   
- Lorsque le programme avec succès les étapes à la ligne suivante de code ou dans une fonction, ou elle s’exécute jusqu’au curseur ou à un point d’arrêt défini, l’Allemagne passe automatiquement en mode arrêt.  
+ Quand le programme parvient à passer à la ligne de code suivante ou à une fonction, ou qu’il s’exécute sur le curseur ou sur un point d’arrêt défini, le DE passe automatiquement en mode arrêt.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Contrôle de l’exécution](../../extensibility/debugger/control-of-execution.md)

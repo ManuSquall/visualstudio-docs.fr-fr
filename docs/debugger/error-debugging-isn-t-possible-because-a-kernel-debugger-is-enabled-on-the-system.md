@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5c94d605459720722b0e1360ab3a56539667d51e
-ms.sourcegitcommit: de98ed7edc81383e47b87ae6e61143fbbbe7bc56
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88706631"
 ---
 # <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Erreur : le débogage n’est pas&#39;possible, car un débogueur du noyau est activé sur le système
@@ -70,7 +70,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
     bcdedit /debug off
     ```
 
-2. Redémarrez l'ordinateur.
+2. Redémarrez l’ordinateur.
 
 #### <a name="to-disable-kernel-debugging-for-all-sessions-other-windows-operating-systems"></a>Pour désactiver le débogage du noyau pour toutes les sessions (systèmes d'exploitation autres que Windows)
 
@@ -88,7 +88,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
     /baudrate
     ```
 
-3. Redémarrez l'ordinateur.
+3. Redémarrez l’ordinateur.
 
 #### <a name="to-debug-with-the-kernel-debugger"></a>Pour déboguer avec le débogueur du noyau
 

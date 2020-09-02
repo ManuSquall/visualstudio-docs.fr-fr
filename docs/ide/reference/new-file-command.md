@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5fe8a99ee59a347fdcb7cff601b75139760630f7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595954"
 ---
 # <a name="new-file-command"></a>Nouveau fichier, commande
@@ -59,7 +59,7 @@ Par exemple, pour ouvrir un fichier dans l’éditeur de code source, entrez les
 /e:"Source Code (text) Editor"
 ```
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 Cet exemple crée une page web « test1.htm » et l’ouvre dans l’éditeur de code source.
 
 ```cmd
@@ -68,8 +68,8 @@ Cet exemple crée une page web « test1.htm » et l’ouvre dans l’éditeur de
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Commandes de studio visuel](../../ide/reference/visual-studio-commands.md)
-- [Commande, fenêtre](../../ide/reference/command-window.md)
-- [Fenêtre Exécution](../../ide/reference/immediate-window.md)
-- [Boîte de recherche/commande](../../ide/find-command-box.md)
-- [Alias de commande de studio visuel](../../ide/reference/visual-studio-command-aliases.md)
+- [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)
+- [Fenêtre commande](../../ide/reference/command-window.md)
+- [Fenêtre exécution](../../ide/reference/immediate-window.md)
+- [Zone Rechercher/commande](../../ide/find-command-box.md)
+- [Alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
