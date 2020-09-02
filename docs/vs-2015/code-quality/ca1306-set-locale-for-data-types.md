@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: edd1d6a7623f96f03403883ee2585d245414bb3b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539020"
 ---
 # <a name="ca1306-set-locale-for-data-types"></a>CA1306 : Définir les paramètres régionaux pour les types de données
@@ -32,7 +32,7 @@ ms.locfileid: "85539020"
 |Category|Microsoft. Globalization|
 |Modification avec rupture|Sans rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Une méthode ou un constructeur a créé une ou plusieurs <xref:System.Data.DataTable?displayProperty=fullName> <xref:System.Data.DataSet?displayProperty=fullName> instances ou et n’a pas défini explicitement la propriété locale ( <xref:System.Data.DataTable.Locale%2A?displayProperty=fullName> ou <xref:System.Data.DataSet.Locale%2A?displayProperty=fullName> ).
 
 ## <a name="rule-description"></a>Description de la règle

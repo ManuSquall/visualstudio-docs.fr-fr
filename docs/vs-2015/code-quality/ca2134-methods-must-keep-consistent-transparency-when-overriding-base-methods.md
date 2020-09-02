@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: fe9a84280b0124eed6bb0cfffae9c1ec2942bddf
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547717"
 ---
 # <a name="ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods"></a>CA2134 : La transparence des méthodes doit rester cohérente lors de la substitution de méthodes de base
@@ -28,7 +28,7 @@ ms.locfileid: "85547717"
 |Category|Microsoft.Security|
 |Modification avec rupture|Rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Cette règle se déclenche lorsqu’une méthode marquée avec le <xref:System.Security.SecurityCriticalAttribute> substitue une méthode qui est transparente ou marquée avec <xref:System.Security.SecuritySafeCriticalAttribute> . La règle se déclenche également lorsqu’une méthode qui est transparente ou marquée avec le <xref:System.Security.SecuritySafeCriticalAttribute> substitue une méthode marquée avec un <xref:System.Security.SecurityCriticalAttribute> .
 
  La règle est appliquée lors de la substitution d’une méthode virtuelle ou de l’implémentation d’une interface.

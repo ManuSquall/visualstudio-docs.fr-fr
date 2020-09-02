@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 6df882d50d0c1d052191246605af856743ffdf3d
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88249188"
 ---
 # <a name="how-to-configure-live-code-analysis-scope-for-managed-code"></a>Comment : configurer l’étendue de l’analyse du code en temps réel pour le code managé

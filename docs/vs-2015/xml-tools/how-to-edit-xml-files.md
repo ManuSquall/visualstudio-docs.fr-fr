@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c099839cda87819ec0ec7932c2b2e6aa7698fa52
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670883"
 ---
 # <a name="how-to-edit-xml-files"></a>Procédure : modifier des fichiers XML
@@ -40,7 +40,7 @@ L'éditeur XML est le nouvel éditeur pour les fichiers XML. Il peut être utili
 
 ### <a name="to-add-an-existing-xml-file-to-a-project"></a>Pour ajouter un fichier XML existant à un projet
 
-1. Dans le menu **projet** , sélectionnez **Ajouter un élément existant**.
+1. Dans le menu **Projet**, sélectionnez **Ajouter un élément existant**.
 
      La boîte de dialogue **Ajouter un élément existant** s’affiche.
 
@@ -48,9 +48,9 @@ L'éditeur XML est le nouvel éditeur pour les fichiers XML. Il peut être utili
 
 ### <a name="to-create-a-new-xml-or-xslt-file"></a>Pour créer un nouveau fichier XML ou XSLT
 
-1. Dans le menu **fichier** , sélectionnez **nouveau**.
+1. Dans le menu **Fichier**, cliquez sur **Nouveau**.
 
-     La boîte **de dialogue nouveau fichier** s’affiche.
+     La boîte de dialogue **Nouveau fichier** s'affiche.
 
 2. Sélectionnez **fichier XML** pour créer un nouveau fichier XML. ou sélectionnez **fichier XSLT** pour créer une nouvelle feuille de style XSLT.
 
@@ -58,9 +58,9 @@ L'éditeur XML est le nouvel éditeur pour les fichiers XML. Il peut être utili
 
 ### <a name="to-create-a-project-for-xml-files"></a>Pour créer un projet pour des fichiers XML
 
-1. Dans le menu **fichier** , sélectionnez **nouveau**, puis **projet**.
+1. Dans le menu **Fichier**, sélectionnez **Nouveau**, puis **Projet**.
 
-     La boîte de dialogue **Nouveau projet** s’affiche.
+     La boîte de dialogue **Nouveau projet** apparaît.
 
 2. Sélectionnez le langage de code de votre choix, sélectionnez **projet vide**, puis cliquez sur **OK**.
 

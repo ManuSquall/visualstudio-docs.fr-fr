@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 62c8259f5fe62a9b865e6ff5490dd15f85162e29
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151830"
 ---
-# <a name="idiasectioncontribgetwrite"></a>IDiaSectionContrib::get_write
+# <a name="idiasectioncontribget_write"></a>IDiaSectionContrib::get_write
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Récupère un indicateur qui indique si la section peut être modifiée.  
+Récupère un indicateur qui signale si la section peut être modifiée.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -35,10 +35,10 @@ HRESULT get_write ( 
   
 #### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- [out] Retourne `TRUE` si la section peut être écrites ; sinon, retourne `FALSE`.  
+ à Retourne `TRUE` si la section peut être écrite dans ; sinon, retourne `FALSE` .  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

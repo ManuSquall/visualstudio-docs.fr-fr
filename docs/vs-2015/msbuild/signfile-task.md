@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 08db6a5d22cacc348a9ef36fd9e9857d5b55642a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65703737"
 ---
 # <a name="signfile-task"></a>SignFile, tâche
@@ -46,7 +46,7 @@ Signe le fichier spécifié à l'aide du certificat spécifié.
 |`TimestampUrl`|Paramètre `String` facultatif.<br /><br /> Spécifie l'URL d'un serveur d'horodatage.|  
 |`TargetFrameworkVersion`|Version du .NET Framework utilisée pour la cible.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Task, classe de base](../msbuild/task-base-class.md).  
   
 ## <a name="example"></a>Exemple  
@@ -70,7 +70,7 @@ Signe le fichier spécifié à l'aide du certificat spécifié.
 ```  
   
 > [!NOTE]
-> L'empreinte de certificat correspond au hachage SHA-1 du certificat. Pour plus d’informations, consultez [Obtenir le hachage SHA-1 d’un certificat d’autorité de certification racine de confiance](https://msdn.microsoft.com/dd641990-9a88-4228-a245-017797131a87).  
+> L'empreinte de certificat correspond au hachage SHA-1 du certificat. Pour plus d’informations, consultez [obtenir le hachage SHA-1 d’un certificat d’autorité de certification racine approuvée](https://msdn.microsoft.com/dd641990-9a88-4228-a245-017797131a87).  
   
 ## <a name="example"></a>Exemple  
  L'exemple suivant utilise la tâche `Exec` pour signer les fichiers spécifiés dans la collection d'éléments `FilesToSign` avec le certificat spécifié par la propriété `Certificate`. Vous pouvez l'utiliser pour signer les fichiers Windows Installer pendant le processus de génération.  
@@ -94,5 +94,5 @@ Signe le fichier spécifié à l'aide du certificat spécifié.
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)   
+ [Référence de tâche](../msbuild/msbuild-task-reference.md)   
  [Tâches](../msbuild/msbuild-tasks.md)

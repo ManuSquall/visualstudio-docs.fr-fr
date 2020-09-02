@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a4de23d462136ad417859d7064fef6b4ace7e59c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153253"
 ---
-# <a name="bpstate"></a>BP_STATE
+# <a name="bp_state"></a>BP_STATE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Spécifie l’existence d’un point d’arrêt lié ainsi que si elle est activée.  
+Spécifie l’existence d’un point d’arrêt lié et spécifie également s’il est activé.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -59,14 +59,14 @@ public enum enum_BP_STATE { 
  Spécifie que le point d’arrêt est activé.  
   
 ## <a name="remarks"></a>Notes  
- Retourné par la [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md) (méthode).  
+ Retourné par la méthode [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md) .  
   
 ## <a name="requirements"></a>Configuration requise  
- En-tête : msdbg.h  
+ En-tête : msdbg. h  
   
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft. VisualStudio. Debugger. Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::GetReference | Microsoft Docs
+title: 'IDebugProperty2 :: GetReference | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 73f6bb556c3f18c8327985ac7c46b77a3a6d2c01
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193473"
 ---
 # <a name="idebugproperty2getreference"></a>IDebugProperty2::GetReference
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Retourne une référence à la valeur de propriété.  
+Retourne une référence à la valeur de la propriété.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -40,10 +40,10 @@ int GetReference(
   
 #### <a name="parameters"></a>Paramètres  
  `ppRererence`  
- [out] Retourne un [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objet représentant une référence à la valeur de propriété.  
+ à Retourne un objet [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) représentant une référence à la valeur de la propriété.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur, généralement `E_NOTIMPL` ou `E_GETREFERENCE_NO_REFERENCE`.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` ; sinon, retourne un code d’erreur, en général `E_NOTIMPL` ou `E_GETREFERENCE_NO_REFERENCE` .  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   

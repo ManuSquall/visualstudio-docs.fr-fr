@@ -19,10 +19,10 @@ ms.workload:
 - multiple
 monikerRange: vs-2017
 ms.openlocfilehash: f7cc538fed6011dd3d972df7763a221c3deee985
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86386847"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Nouveautés de Visual Studio 2017
@@ -391,4 +391,4 @@ Parfois, un message ne suffit pas pour transmettre l’impact complet du problè
 * [Nouveautés de C#](/dotnet/csharp/whats-new)
 * [Nouveautés de Team Foundation Server](/azure/devops/server/whats-new)
 * [Nouveautés de Visual Studio pour Mac](https://visualstudio.microsoft.com/vs/visual-studio-mac/)
-* [Nouveautés de Visual Studio 2019](whats-new-visual-studio-2019.md)
+* [Nouveautés de Visual Studio 2019](whats-new-visual-studio-2019.md)

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: d874d69f36fc8520a7cfbe3e946116c2d85ed88f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539059"
 ---
 # <a name="ca1304-specify-cultureinfo"></a>CA1304 : Spécifier CultureInfo
@@ -32,7 +32,7 @@ ms.locfileid: "85539059"
 |Category|Microsoft. Globalization|
 |Modification avec rupture|Sans rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Une méthode ou un constructeur appelle un membre qui a une surcharge qui accepte un <xref:System.Globalization.CultureInfo?displayProperty=fullName> paramètre, et la méthode ou le constructeur n’appelle pas la surcharge qui prend le <xref:System.Globalization.CultureInfo> paramètre. Cette règle ignore les appels aux méthodes suivantes :
 
 - <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>
@@ -61,7 +61,7 @@ ms.locfileid: "85539059"
  Il est possible de supprimer sans risque un avertissement de cette règle lorsqu’il est certain que le fournisseur de format/culture par défaut est le bon choix, et où la maintenabilité du code n’est pas une priorité de développement importante.
 
 ## <a name="example"></a>Exemple
- Dans l’exemple suivant, `BadMethod` provoque deux violations de cette règle. `GoodMethod`corrige la première violation en passant la culture dite indifférente à System. String. Compare, et corrige la deuxième violation en passant la culture actuelle à <xref:System.String.ToLower%2A> , car `string3` est affiché à l’utilisateur.
+ Dans l’exemple suivant, `BadMethod` provoque deux violations de cette règle. `GoodMethod` corrige la première violation en passant la culture dite indifférente à System. String. Compare, et corrige la deuxième violation en passant la culture actuelle à <xref:System.String.ToLower%2A> , car `string3` est affiché à l’utilisateur.
 
  [!code-csharp[FxCop.Globalization.CultureInfo#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Globalization.CultureInfo/cs/FxCop.Globalization.CultureInfo.cs#1)]
 

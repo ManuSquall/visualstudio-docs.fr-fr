@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluationCompleteEvent2::GetExpression Microsoft Docs
+title: 'IDebugExpressionEvaluationCompleteEvent2 :: GetExpression | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 0c6ed79edadf9191604291a4c6f0f07b0aa1f0dd
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729586"
 ---
 # <a name="idebugexpressionevaluationcompleteevent2getexpression"></a>IDebugExpressionEvaluationCompleteEvent2::GetExpression
-Obtient l’expression originale.
+Obtient l’expression d’origine.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,13 +41,13 @@ int GetExpression( 
 
 ## <a name="parameters"></a>Paramètres
 `ppExpr`\
-[out] Retourne un objet [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) qui représente l’expression qui a été analysée.
+à Retourne un objet [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) qui représente l’expression analysée.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- Cette méthode renvoie l’objet qui a été créé dans un appel à la méthode [ParseText.](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)
+ Cette méthode retourne l’objet qui a été créé dans un appel à la méthode [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) .
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)

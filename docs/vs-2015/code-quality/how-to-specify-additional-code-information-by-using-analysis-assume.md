@@ -14,20 +14,20 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: f2f18c9284ec96de7a7b8663aff485962d194282
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77277975"
 ---
 # <a name="how-to-specify-additional-code-information-by-using-__analysis_assume"></a>Comment : spécifier des informations de code supplémentaire en utilisant __analysis_assume
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous pouvez fournir des indications sur l’outil d’analyse du code pourC++ C/code qui aide le processus d’analyse et réduire les avertissements. Pour fournir des informations supplémentaires, utilisez la fonction suivante :  
+Vous pouvez fournir des indications à l’outil d’analyse du code pour le code C/C++ qui aide le processus d’analyse et à réduire les avertissements. Pour fournir des informations supplémentaires, utilisez la fonction suivante :  
   
  `__analysis_assume(`  `expr`  `)`  
   
- `expr`-toute expression supposée avoir la valeur true.  
+ `expr` -toute expression supposée avoir la valeur true.  
   
  L’outil d’analyse du code suppose que la condition représentée par l’expression est vraie au point où la fonction apparaît et reste true jusqu’à ce que l’expression soit modifiée, par exemple, en l’assignant à une variable.  
   

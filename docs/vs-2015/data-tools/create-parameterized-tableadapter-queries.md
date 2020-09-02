@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 560587e70365a485c3391a0623b959f88d417698
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671068"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Créer des requêtes TableAdapter paramétrées
@@ -34,13 +34,13 @@ Vous créez des requêtes TableAdapter paramétrées dans le Concepteur de DataS
 > Lors de la construction d’une requête paramétrable, utilisez la notation de paramètre spécifique à la base de données avec laquelle vous codez. Par exemple, les sources de données Access et OleDb utilisent le point d'interrogation « ? » pour désigner des paramètres, la clause WHERE sera donc de type : `WHERE City = ?`.
 
 > [!NOTE]
-> Les boîtes de dialogue et les commandes de menu affichées peuvent différer de celles décrites dans l’aide, en fonction de vos paramètres actifs ou de l’édition que vous utilisez. Pour modifier vos paramètres, accédez au menu **Outils** et sélectionnez **paramètres d’importation et d’exportation**. Pour plus d’informations, consultez [Paramètres Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Les boîtes de dialogue et les commandes de menu affichées peuvent différer de celles décrites dans l’aide, en fonction de vos paramètres actifs ou de l’édition que vous utilisez. Pour modifier vos paramètres, accédez au menu **Outils** et sélectionnez **paramètres d’importation et d’exportation**. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="create-a-parameterized-tableadapter-query"></a>Créer une requête TableAdapter paramétrée
 
 - Créez un TableAdapter, en ajoutant une clause WHERE avec les paramètres souhaités à l'instruction SQL. Pour plus d’informations, consultez [créer et configurer des TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
-     ou
+     - ou -
 
 - Ajoutez une requête à un TableAdapter existant, en ajoutant une clause WHERE avec les paramètres souhaités à l'instruction SQL.
 
@@ -65,7 +65,7 @@ Vous créez des requêtes TableAdapter paramétrées dans le Concepteur de DataS
 
 4. Tapez un nom dans la zone **Nom de la nouvelle requête** si vous créez une requête.
 
-    ou
+    - ou -
 
     Sélectionnez une requête dans la zone **Nom de la requête existante**.
 
@@ -75,7 +75,7 @@ Vous créez des requêtes TableAdapter paramétrées dans le Concepteur de DataS
 
     Un contrôle pour entrer le paramètre et un bouton **Charger** sont ajoutés au formulaire dans un contrôle <xref:System.Windows.Forms.ToolStrip>.
 
-   Les paramètres TableAdapter peuvent recevoir des valeurs NULL lorsque vous souhaitez rechercher des enregistrements qui n’ont pas de valeur actuelle. Par exemple, considérez la requête suivante qui a un paramètre `ShippedDate` dans sa clause `WHERE` :
+   Les paramètres TableAdapter peuvent recevoir des valeurs NULL lorsque vous souhaitez rechercher des enregistrements qui n’ont pas de valeur actuelle. Par exemple, considérez la requête suivante qui a un `ShippedDate` paramètre dans sa `WHERE` clause :
 
    ```sql
    SELECT CustomerID, OrderDate, ShippedDate
@@ -93,9 +93,9 @@ S’il s’agissait d’une requête sur un TableAdapter, vous pouvez interroger
 
 1. Dans le **Concepteur de DataSet**, sélectionnez la requête TableAdapter qui doit accepter des valeurs de paramètre null.
 
-2. Dans la fenêtre **Propriétés** , sélectionnez **paramètres**. Appuyez ensuite sur le bouton des points de suspension ( **...** ) pour ouvrir l' **éditeur de collections Parameters**.
+2. Dans la fenêtre **Propriétés** , sélectionnez **paramètres**. Appuyez ensuite sur le bouton des points de suspension (**...**) pour ouvrir l' **éditeur de collections Parameters**.
 
-3. Sélectionnez le paramètre qui autorise les valeurs NULL et affectez à la propriété **AllowDBNull** la valeur `true`.
+3. Sélectionnez le paramètre qui autorise les valeurs NULL et affectez à la propriété **AllowDBNull** la valeur `true` .
 
 ## <a name="see-also"></a>Voir aussi
 

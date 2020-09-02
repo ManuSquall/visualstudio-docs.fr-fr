@@ -13,16 +13,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6becf886d361e203dca313a7aa1dfdf166aa4614
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153173"
 ---
-# <a name="builttype"></a>BUILT_TYPE
+# <a name="built_type"></a>BUILT_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Cette structure spécifie des informations sur un type de champ extraites à partir des métadonnées.  
+Cette structure spécifie des informations sur un type de champ issu de métadonnées.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -44,26 +44,26 @@ public struct BUILT_TYPE {
   
 #### <a name="parameters"></a>Paramètres  
  ulAppDomainID  
- ID de l’application d'où provenance le symbole. Cela est utilisé pour identifier de manière unique une instance de l’application.  
+ ID de l’application à partir de laquelle le symbole a été obtenu. Cela permet d’identifier de manière unique une instance de l’application.  
   
  guidModule  
- Le GUID du module qui contient ce champ.  
+ GUID du module qui contient ce champ.  
   
  pUnderlyingField  
- Un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objet identifiant le champ sous-jacent associé à ce champ généré.  
+ Objet [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) identifiant le champ sous-jacent associé à ce champ généré.  
   
 ## <a name="remarks"></a>Notes  
- Cette structure apparaît dans le cadre de l’union dans le [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) structure lorsque le `dwKind` champ la `TYPE_INFO` structure est définie sur `TYPE_KIND_BUILT` (une valeur comprise entre le [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) énumération).  
+ Cette structure apparaît dans le cadre de l’Union dans la structure [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) lorsque le `dwKind` champ de la `TYPE_INFO` structure a la valeur `TYPE_KIND_BUILT` (une valeur de l’énumération [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) ).  
   
 ## <a name="requirements"></a>Configuration requise  
- En-tête : sh.h  
+ En-tête : SH. h  
   
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft. VisualStudio. Debugger. Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
- [Structures et Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Structures et unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)   
  [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

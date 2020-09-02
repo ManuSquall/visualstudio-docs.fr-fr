@@ -34,10 +34,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 705b1a5992d1a3e7931c316c713d46e7e8c7f72e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657767"
 ---
 # <a name="documents-environment-options-dialog-box"></a>Documents, Environnement, boîte de dialogue Options
@@ -46,7 +46,7 @@ ms.locfileid: "72657767"
 Utilisez cette page de la boîte de dialogue **Options** pour contrôler l’affichage des documents dans l’environnement de développement intégré (IDE) et pour gérer les modifications externes apportées aux documents et aux fichiers. Vous pouvez accéder à cette boîte de dialogue en cliquant sur **Options** dans le menu **Outils**, puis en sélectionnant **Documents** dans le nœud **Environnement**. Si **Documents** ne figure pas dans la liste, sélectionnez **Afficher tous les paramètres** dans la boîte de dialogue **Options**.
 
 > [!NOTE]
-> Les options disponibles dans les boîtes de dialogue, ainsi que les noms et emplacements des commandes de menu que vous voyez, peuvent différer de ce qui est décrit dans l'aide selon vos paramètres actifs ou votre édition. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Les options disponibles dans les boîtes de dialogue, ainsi que les noms et emplacements des commandes de menu que vous voyez, peuvent différer de ce qui est décrit dans l'aide selon vos paramètres actifs ou votre édition. Pour modifier vos paramètres, choisissez **Paramètres d'importation et d'exportation** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
  **Réutiliser la fenêtre du document actif, si elle a été enregistrée** Lorsque cette option est sélectionnée, votre document actif est fermé s’il a été enregistré et un nouveau document est ouvert dans la même fenêtre. Si votre document actif n’a pas été enregistré, il reste ouvert et le nouveau document est ouvert dans une fenêtre distincte. Lorsque cette option est désactivée, les nouveaux documents s’ouvrent toujours dans des fenêtres distinctes.
 
@@ -69,7 +69,7 @@ Utilisez cette page de la boîte de dialogue **Options** pour contrôler l’aff
 > [!NOTE]
 > Sélectionnez cette option pour activer la commande **Afficher dans le navigateur** dans le menu **Fichier** pour les documents web non inclus dans l’application web active.
 
- **\<** *n* **> éléments enregistrés dans le projet Fichiers divers** Spécifie le nombre de fichiers à rendre persistants dans le dossier **MiscellaneousFiles** de l’**Explorateur de solutions**. Ces fichiers sont répertoriés même s’ils ne sont plus ouverts dans un éditeur. Vous pouvez spécifier n’importe quel nombre entier compris entre 0 et 256. Le nombre par défaut est 0.
+ les ** \<** *n* **> éléments enregistrés dans le projet fichiers divers** spécifient le nombre de fichiers à rendre persistants dans le dossier **MiscellaneousFiles** de **Explorateur de solutions**. Ces fichiers sont répertoriés même s’ils ne sont plus ouverts dans un éditeur. Vous pouvez spécifier n’importe quel nombre entier compris entre 0 et 256. Le nombre par défaut est 0.
 
  Par exemple, si vous définissez cette option sur 5 et avez ouvert 10 fichiers divers, lorsque vous fermez les 10 fichiers, les 5 premiers restent affichés dans le dossier **Fichiers divers**.
 

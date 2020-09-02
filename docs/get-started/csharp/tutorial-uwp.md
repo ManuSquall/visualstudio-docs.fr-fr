@@ -15,10 +15,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: aec4b72e8393e241039e8c005d05275ab61111bb
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88249250"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Didacticiel : créer votre première plateforme Windows universelle application dans Visual Studio avec XAML et C&#35;
@@ -79,7 +79,7 @@ Créez tout d’abord un projet de plateforme Windows universelle. Le type de pr
    > S’il s’agit de la première fois que vous avez utilisé Visual Studio pour créer une application UWP, une boîte de dialogue **Paramètres** peut s’afficher. Choisissez **Mode développeur**, puis **Oui**.<br><br>
    > ![Activer le mode développeur dans la boîte de dialogue Paramètres du projet UWP](media/enable-developer-mode.png)<br><br>Visual Studio installe un autre package en mode développeur pour vous. Une fois l’installation du package terminée, fermez la boîte de dialogue **Paramètres**.
 
-## <a name="create-the-application"></a>Créer l’application
+## <a name="create-the-application"></a>Création de l'application
 
 Il est temps de commencer à développer. Vous allez ajouter un contrôle bouton, ajouter une action au bouton, puis démarrer l’application « Hello World » pour voir à quoi elle ressemble.
 

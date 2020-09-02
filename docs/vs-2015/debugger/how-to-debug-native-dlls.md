@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Déboguer des DLL natives | Microsoft Docs'
+title: 'Comment : déboguer des DLL natives | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,17 +24,17 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 16a533b27e619526edab71374d922e68baf0a4b0
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65702677"
 ---
-# <a name="how-to-debug-native-dlls"></a>Procédure : Déboguer des DLL natives
+# <a name="how-to-debug-native-dlls"></a>Comment : déboguer des DLL natives
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 > [!NOTE]
-> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez Importation et exportation de paramètres dans le menu Outils. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Les boîtes de dialogue et les commandes de menu affichées peuvent différer de celles décrites dans l'Aide selon les paramètres actifs ou le mode d'édition. Pour modifier vos paramètres, choisissez Importation et exportation de paramètres dans le menu Outils. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Lorsque vous déboguez une DLL, vous pouvez commencer le débogage à partir :  
   
@@ -50,17 +50,17 @@ ms.locfileid: "65702677"
   
 ### <a name="to-specify-an-executable-for-the-debug-session"></a>Pour spécifier un exécutable pour la session de débogage  
   
-1. Dans **l’Explorateur de solutions**, sélectionnez le projet qui crée la DLL.  
+1. Dans **Explorateur de solutions**, sélectionnez le projet qui crée la dll.  
   
-2. À partir de la **vue** menu, choisissez**Pages de propriétés**.  
+2. Dans le menu **affichage** , cliquez sur**pages de propriétés**.  
   
-3. Dans le **Pages de propriétés** boîte de dialogue, ouvrez le **propriétés de Configuration** dossier et sélectionnez le **débogage** catégorie.  
+3. Dans la boîte de dialogue **pages de propriétés** , ouvrez le dossier **Propriétés de configuration** et sélectionnez la catégorie **débogage** .  
   
-4. Dans le **commande** , spécifiez le nom de chemin d’accès pour le conteneur. Par exemple, C:\Program Files\MyApplication\MYAPP.EXE.  
+4. Dans la zone **commande** , spécifiez le nom du chemin d’accès du conteneur. Par exemple, C:\Program Files\MyApplication\MYAPP.EXE.  
   
-5. Dans le **Arguments de commande** , spécifiez les arguments nécessaires pour le fichier exécutable.  
+5. Dans la zone arguments de la **commande** , spécifiez les arguments nécessaires pour l’exécutable.  
   
-   Si vous ne spécifiez pas l’exécutable dans le _projet_**Pages de propriétés** boîte de dialogue, le [exécutable pour la boîte de dialogue de Session de débogage](../debugger/executable-for-debugging-session-dialog-box.md) s’affiche lorsque vous démarrez le débogage.  
+   Si vous ne spécifiez pas le fichier exécutable dans la boîte de dialogue**pages de propriétés** du _projet_, la [boîte de dialogue exécutable pour la session de débogage](../debugger/executable-for-debugging-session-dialog-box.md) s’affiche lorsque vous démarrez le débogage.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Sécurité du débogueur](../debugger/debugger-security.md)   

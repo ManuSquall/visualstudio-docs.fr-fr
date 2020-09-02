@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 18da0471b1ac62f0e61b303c60b46c15cdc2e428
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539007"
 ---
 # <a name="ca1302-do-not-hardcode-locale-specific-strings"></a>CA1302 : Ne pas coder en dur les chaînes spécifiques aux paramètres régionaux
@@ -32,7 +32,7 @@ ms.locfileid: "85539007"
 |Category|Microsoft. Globalization|
 |Modification avec rupture|Sans rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Une méthode utilise un littéral de chaîne qui représente une partie du chemin d’accès de certains dossiers système.
 
 ## <a name="rule-description"></a>Description de la règle

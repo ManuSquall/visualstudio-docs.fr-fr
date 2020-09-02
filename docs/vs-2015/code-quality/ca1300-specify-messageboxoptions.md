@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: af0017a7ee6918a80a93ca90c7cf3de78885d61f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539189"
 ---
 # <a name="ca1300-specify-messageboxoptions"></a>CA1300 : Spécifier MessageBoxOptions
@@ -32,7 +32,7 @@ ms.locfileid: "85539189"
 |Category|Microsoft. Globalization|
 |Modification avec rupture|Sans rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Une méthode appelle une surcharge de la <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> méthode qui ne prend pas d' <xref:System.Windows.Forms.MessageBoxOptions?displayProperty=fullName> argument.
 
 ## <a name="rule-description"></a>Description de la règle

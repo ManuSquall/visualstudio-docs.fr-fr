@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 20fc0bf766baf2fcdee32c654d10dbd4813da698
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65703676"
 ---
-# <a name="idiasymbolgetishotpatchable"></a>IDiaSymbol::get_isHotpatchable
+# <a name="idiasymbolget_ishotpatchable"></a>IDiaSymbol::get_isHotpatchable
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Récupère un indicateur qui spécifie si le module a été compilé avec le [/hotpatch (créer une Image corrigeable en mémoire)](https://msdn.microsoft.com/library/aad539b6-c053-4c78-8682-853d98327798) commutateur de compilateur.  
+Récupère un indicateur qui spécifie si le module a été compilé avec le commutateur de compilateur [/hotpatch (créer une image corrigeable en mémoire)](https://msdn.microsoft.com/library/aad539b6-c053-4c78-8682-853d98327798) .  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -35,23 +35,23 @@ HRESULT get_isHotpatchable(
   
 #### <a name="parameters"></a>Paramètres  
  `pFlag`  
- [out] Retourne `TRUE` si le module est corrigeable en chaud-mémoire ; sinon, retourne `FALSE`.  
+ à Retourne `TRUE` si le module peut être corrigé à chaud ; sinon, retourne `FALSE` .  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou code d’erreur.  
   
 > [!NOTE]
-> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
+> Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
 ## <a name="remarks"></a>Notes  
- Cette propriété est disponible à partir de la `SymTagCompilandDetails` type de symbole (consultez [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)).  
+ Cette propriété est disponible à partir du `SymTagCompilandDetails` type de symbole (consultez [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)).  
   
 ## <a name="requirements"></a>Configuration requise  
   
-|Prérequis|Description|  
+|Condition requise|Description|  
 |-----------------|-----------------|  
 |En-tête :|dia2.h|  
-|Version :|DIA SDK 8.0|  
+|Version :|DIA SDK v 8.0|  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

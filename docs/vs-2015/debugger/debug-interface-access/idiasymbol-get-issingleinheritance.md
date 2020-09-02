@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 70b99b852175febe448e7b821070261d6abda4b9
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151451"
 ---
-# <a name="idiasymbolgetissingleinheritance"></a>IDiaSymbol::get_isSingleInheritance
+# <a name="idiasymbolget_issingleinheritance"></a>IDiaSymbol::get_isSingleInheritance
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Spécifie si le `this` pointeur pointe vers un membre de données avec l’héritage unique.  
+Spécifie si le `this` pointeur pointe vers un membre de données avec un héritage unique.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -32,10 +32,10 @@ HRESULT get_isSingleInheritance(
   
 #### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- [out] Un pointeur vers un `BOOL` qui spécifie si le `this` pointeur pointe vers un membre de données avec l’héritage unique.  
+ à Pointeur vers un `BOOL` qui spécifie si le `this` pointeur pointe vers un membre de données avec héritage unique.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

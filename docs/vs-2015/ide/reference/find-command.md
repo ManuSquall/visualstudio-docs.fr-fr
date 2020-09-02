@@ -15,16 +15,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6ce0e4a3aaca752cbdeda0a83e469977306c3404
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657679"
 ---
 # <a name="find-command"></a>Rechercher, commande
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recherche des fichiers en utilisant un sous-ensemble des options disponibles sous l’onglet **Rechercher dans les fichiers**  de la fenêtre **Rechercher et remplacer**.
+Recherche des fichiers en utilisant un sous-ensemble des options disponibles sous l’onglet **Rechercher dans les fichiers ** de la fenêtre **Rechercher et remplacer**.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -61,7 +61,7 @@ Edit.Find findwhat [/case] [/doc | /proc | /open | /sel]
 
  /word ou /w (facultatif). Recherche uniquement les mots entiers.
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
  Cet exemple recherche le mot « somestring » en respectant la casse dans la section de code sélectionnée.
 
 ```

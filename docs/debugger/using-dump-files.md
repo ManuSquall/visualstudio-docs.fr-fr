@@ -23,15 +23,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: db6d4e8bc5b2f09194e03bbadc8f49b773d24f1e
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86386951"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>Fichiers dump dans le débogueur Visual Studio
 
-<a name="BKMK_What_is_a_dump_file_"></a>Un *fichier dump* est un instantané qui montre le processus en cours d’exécution et les modules qui ont été chargés pour une application à un moment donné. Un vidage avec des informations de tas comprend également un instantané de la mémoire de l’application à ce stade.
+<a name="BKMK_What_is_a_dump_file_"></a> Un *fichier dump* est un instantané qui montre le processus en cours d’exécution et les modules qui ont été chargés pour une application à un moment donné. Un vidage avec des informations de tas comprend également un instantané de la mémoire de l’application à ce stade.
 
 L’ouverture d’un fichier dump avec un tas dans Visual Studio est semblable à l’arrêt à un point d’arrêt dans une session de débogage. Bien que vous ne puissiez pas continuer l’exécution, vous pouvez examiner les piles, les threads et les valeurs des variables de l’application au moment de l’image mémoire.
 
@@ -90,7 +90,7 @@ Lorsque le [débogage juste-à-temps](../debugger/just-in-time-debugging-in-visu
    - Pour définir les emplacements de chargement des symboles, sélectionnez **définir les chemins d’accès aux symboles**.
    - Pour démarrer le débogage, sélectionnez **Déboguer avec managé uniquement**, **Déboguer avec natif uniquement**, **Déboguer avec mixte**ou **Déboguer avec la mémoire managée**.
 
-## <a name="find-exe-pdb-and-source-files"></a><a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a>Rechercher les fichiers. exe,. pdb et source
+## <a name="find-exe-pdb-and-source-files"></a><a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> Rechercher les fichiers. exe,. pdb et source
 
 Pour utiliser les fonctionnalités de débogage complètes sur un fichier dump, Visual Studio a besoin des éléments suivants :
 

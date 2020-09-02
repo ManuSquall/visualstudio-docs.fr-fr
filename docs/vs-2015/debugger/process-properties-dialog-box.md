@@ -13,38 +13,38 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 56e446f217f752b45b2d8d98bf1f147c04dab748
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193271"
 ---
 # <a name="process-properties-dialog-box"></a>Boîte de dialogue Propriétés du processus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Utilisez cette boîte de dialogue pour en savoir plus sur un processus spécifique. Pour afficher cette boîte de dialogue, déplacez le focus à un [vue processus](../debugger/processes-view.md) fenêtre. Sélectionnez n’importe quel nœud de processus dans l’arborescence, puis choisissez **propriétés** à partir de la **vue** menu.  
+Utilisez cette boîte de dialogue pour en savoir plus sur un processus spécifique. Pour afficher cette boîte de dialogue, déplacez le focus vers une fenêtre [vue processus](../debugger/processes-view.md) . Sélectionnez un nœud de processus dans l’arborescence, puis choisissez **Propriétés** dans le menu **affichage** .  
   
- Sur les systèmes d’exploitation Windows 98 et Windows 95, seule une version modifiée de la **général** onglet s’affiche.  
+ Sur les systèmes d’exploitation Windows 98 et Windows 95, seule une version modifiée de l’onglet **général** s’affiche.  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Onglet Général de la boîte de dialogue Propriétés du processus](../debugger/general-tab-thread-properties-dialog-box.md)  
  Utilisez cette boîte de dialogue pour en savoir plus sur le processus sélectionné.  
   
  [Onglet Mémoire de la boîte de dialogue Propriétés du processus](../debugger/memory-tab-process-properties-dialog-box.md)  
- Utilisez cet onglet pour montrer comment un processus utilise la mémoire.  
+ Utilisez cet onglet pour afficher la façon dont un processus utilise la mémoire.  
   
- [Onglet Fichier d’échange de la boîte de dialogue Propriétés du processus](../debugger/page-file-tab-process-properties-dialog-box.md)  
- Utilisez cet onglet pour examiner le fichier de pagination d’un processus.  
+ [Onglet Fichier d'échange de la boîte de dialogue Propriétés du processus](../debugger/page-file-tab-process-properties-dialog-box.md)  
+ Utilisez cet onglet pour examiner le fichier d’échange d’un processus.  
   
  [Onglet Espace de la boîte de dialogue Propriétés du processus](../debugger/space-tab-process-properties-dialog-box.md)  
  Utilisez cet onglet pour examiner l’espace d’adressage d’un processus.  
   
-## <a name="related-sections"></a>Rubriques connexes  
- [Recherche d’un processus, boîte de dialogue](../debugger/process-search-dialog-box.md)  
- Utilisé pour rechercher le nœud d’un processus spécifique dans la vue de processus.  
+## <a name="related-sections"></a>Sections connexes  
+ [Boîte de dialogue Recherche d'un processus](../debugger/process-search-dialog-box.md)  
+ Utilisé pour rechercher le nœud d’un processus spécifique dans la vue processus.  
   
- [Informations de référence sur Spy++](../debugger/spy-increment-reference.md)  
- Inclut des sections décrivant chaque Spy ++ menu et boîte de dialogue.  
+ [Référence Spy++](../debugger/spy-increment-reference.md)  
+ Comprend des sections décrivant chaque menu et boîte de dialogue Spy + +.  
   
  [Recherche d’un processus dans la vue processus](../debugger/how-to-search-for-a-process-in-processes-view.md)  
  Explique comment rechercher un processus spécifique dans la vue processus.  
@@ -53,7 +53,7 @@ Utilisez cette boîte de dialogue pour en savoir plus sur un processus spécifiq
  Affiche une arborescence des processus actifs.  
   
  [Vues Spy++](../debugger/spy-increment-views.md)  
- Explique les arborescences Spy ++ de windows, les messages, les processus et les threads.  
+ Explique les vues de l’arborescence Spy + + des fenêtres, des messages, des processus et des threads.  
   
- [Utilisation de Spy++](../debugger/using-spy-increment.md)  
- Présente l’outil Spy ++ et explique comment il peut être utilisé.
+ [Utiliser Spy++](../debugger/using-spy-increment.md)  
+ Présente l’outil Spy + + et explique comment l’utiliser.

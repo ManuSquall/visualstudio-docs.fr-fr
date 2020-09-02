@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 5da2e2bf26bb1894987caa8b748181d952bd7c18
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547834"
 ---
 # <a name="ca1502-avoid-excessive-complexity"></a>CA1502 : Éviter l'excès de complexité
@@ -32,7 +32,7 @@ ms.locfileid: "85547834"
 |Category|Microsoft. maintenabilité|
 |Modification avec rupture|Sans rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Une méthode a une complexité cyclomatic excessive.
 
 ## <a name="rule-description"></a>Description de la règle
@@ -57,7 +57,7 @@ ms.locfileid: "85547834"
 
 - Nombre de branches (telles que `if` , `while` et `do` )
 
-- Nombre d' `case` instructions dans un`switch`
+- Nombre d' `case` instructions dans un `switch`
 
   Les exemples suivants illustrent des méthodes qui ont des complexités cyclomatic variables.
 

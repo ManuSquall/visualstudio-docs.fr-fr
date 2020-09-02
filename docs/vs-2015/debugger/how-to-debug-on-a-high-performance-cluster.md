@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Déboguer sur un Cluster hautement performant | Microsoft Docs'
+title: 'Procédure : déboguer sur un cluster à hautes performances | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,20 +18,20 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f4487b168c3d405b2449bcfb9515e60f0ea67ed1
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65702690"
 ---
-# <a name="how-to-debug-on-a-high-performance-cluster"></a>Procédure : déboguer sur un cluster à hautes performances
+# <a name="how-to-debug-on-a-high-performance-cluster"></a>Comment : déboguer sur un cluster hautement performant
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Le débogage d'un programme multitraitement sur un cluster hautement performant est identique au débogage d'un programme ordinaire sur un ordinateur distant. Il y a toutefois d'autres éléments à prendre en compte. Pour les besoins généraux de configuration à distance, consultez [le débogage à distance](../debugger/remote-debugging.md).  
+Le débogage d'un programme multitraitement sur un cluster hautement performant est identique au débogage d'un programme ordinaire sur un ordinateur distant. Il y a toutefois d'autres éléments à prendre en compte. Pour connaître la configuration générale requise pour l’installation à distance, consultez [débogage à distance](../debugger/remote-debugging.md).  
   
  Lorsque vous déboguez sur un cluster hautement performant, vous pouvez utiliser toutes les fenêtres de débogage et les techniques [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] disponibles pour le débogage distant. Cependant, puisque vous déboguez à distance, la fenêtre de console externe n'est pas disponible.  
   
- Les fenêtres **Threads** et **Processus** sont particulièrement utiles pour déboguer des applications parallèles. Pour obtenir des conseils sur l’utilisation de ces fenêtres, consultez [Comment : Utiliser la fenêtre processus](https://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7) et [Comment : Utiliser la fenêtre Threads](../debugger/how-to-use-the-threads-window.md).  
+ Les fenêtres **Threads** et **Processus** sont particulièrement utiles pour déboguer des applications parallèles. Pour obtenir des conseils sur l’utilisation de ces fenêtres, consultez [Comment : utiliser la fenêtre processus](https://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7) et [Comment : utiliser la fenêtre threads](../debugger/how-to-use-the-threads-window.md).  
   
  Les procédures suivantes présentent quelques techniques particulièrement utiles pour le débogage sur un cluster hautement performant.  
   
@@ -67,7 +67,7 @@ Le débogage d'un programme multitraitement sur un cluster hautement performant 
   
      `ProcessName =`  *nom_de_votre_processeur*  
   
-     - ou -  
+     Ou  
   
      `ProcessID =` *ID_de_votre_processeur*  
   
@@ -85,7 +85,7 @@ Le débogage d'un programme multitraitement sur un cluster hautement performant 
   
      `ThreadName =` *nom_de_votre_thread*  
   
-     - ou -  
+     Ou  
   
      `ThreadID =` *ID_de_votre_thread*  
   
@@ -101,9 +101,9 @@ Le débogage d'un programme multitraitement sur un cluster hautement performant 
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Déboguer les applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Débogage distant](../debugger/remote-debugging.md)   
- [Guide pratique pour Utiliser la fenêtre processus](https://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)   
- [Guide pratique pour Utiliser la fenêtre Threads](../debugger/how-to-use-the-threads-window.md)   
+ [Déboguer des applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+ [Débogage à distance](../debugger/remote-debugging.md)   
+ [Comment : utiliser la fenêtre processus](https://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)   
+ [Comment : utiliser la fenêtre threads](../debugger/how-to-use-the-threads-window.md)   
  [Threads et processus](https://msdn.microsoft.com/73d87480-9af3-4d1b-baf5-397d5d876ae6)   
- [Utilisation des points d’arrêt](../debugger/using-breakpoints.md)
+ [Utilisation des points d'arrêt](../debugger/using-breakpoints.md)

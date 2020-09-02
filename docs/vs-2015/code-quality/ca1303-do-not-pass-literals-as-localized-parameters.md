@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: f3ad1f56215d002c03d346b38ce6155e8df7412b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539111"
 ---
 # <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303 : Ne pas passer de littéraux en paramètres localisés
@@ -33,7 +33,7 @@ ms.locfileid: "85539111"
 |Category|Microsoft. Globalization|
 |Modification avec rupture|Sans rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Une méthode passe un littéral de chaîne en tant que paramètre à un constructeur ou une méthode dans la [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] bibliothèque de classes et cette chaîne doit être localisable.
 
  Cet avertissement est déclenché quand une chaîne littérale est passée en tant que valeur à un paramètre ou une propriété et qu’un ou plusieurs des cas suivants sont vrais :

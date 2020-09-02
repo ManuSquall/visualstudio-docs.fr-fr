@@ -21,10 +21,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5fd8175911def7fb1b63dc63d967c404d649e9e4
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65703695"
 ---
 # <a name="uidmanager-task"></a>UidManager, tâche
@@ -36,9 +36,9 @@ La tâche <xref:Microsoft.Build.Tasks.Windows.UidManager> vérifie, met à jour 
   
 |Paramètre|Description|  
 |---------------|-----------------|  
-|`IntermediateDirectory`|Paramètre **String** facultatif.<br /><br /> Spécifie le répertoire utilisé pour sauvegarder les fichiers [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] sources spécifiés par le paramètre **MarkupFiles**.|  
-|`MarkupFiles`|Paramètre **ITaskItem[]** obligatoire.<br /><br /> Spécifie les fichiers [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] sources à inclure pour la vérification, la mise à jour ou la suppression des UID.|  
-|`Task`|Paramètre **String** obligatoire.<br /><br /> Spécifie la tâche de gestion des UID à exécuter. Les options valides sont **Check**, **Update** et **Remove**.|  
+|`IntermediateDirectory`|Paramètre de **chaîne** facultatif.<br /><br /> Spécifie le répertoire utilisé pour sauvegarder les fichiers [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] sources spécifiés par le paramètre **MarkupFiles**.|  
+|`MarkupFiles`|Paramètre **ITaskItem []** obligatoire.<br /><br /> Spécifie les fichiers [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] sources à inclure pour la vérification, la mise à jour ou la suppression des UID.|  
+|`Task`|Paramètre de **chaîne** obligatoire.<br /><br /> Spécifie la tâche de gestion des UID à exécuter. Les options valides sont **Check**, **Update** et **Remove**.|  
   
 ## <a name="example"></a>Exemple  
  L’exemple suivant utilise la tâche <xref:Microsoft.Build.Tasks.Windows.UidManager> pour vérifier si les fichiers [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] sources spécifiés contiennent des éléments [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] avec des UID appropriés.  
@@ -59,8 +59,8 @@ La tâche <xref:Microsoft.Build.Tasks.Windows.UidManager> vérifie, met à jour 
   
 ## <a name="see-also"></a>Voir aussi  
  [Informations de référence sur MSBuild WPF](../msbuild/wpf-msbuild-reference.md)   
- [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/wpf-msbuild-task-reference.md)   
+ [Référence de tâche](../msbuild/wpf-msbuild-task-reference.md)   
  [Référence MSBuild](../msbuild/msbuild-reference.md)   
- [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)   
+ [Référence de tâche](../msbuild/msbuild-task-reference.md)   
  [Génération d’une application WPF (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
- [Guide pratique pour Localiser une Application](https://msdn.microsoft.com/library/5001227e-9326-48a4-9dcd-ba1b89ee6653)
+ [Guide pratique pour localiser une application](https://msdn.microsoft.com/library/5001227e-9326-48a4-9dcd-ba1b89ee6653)

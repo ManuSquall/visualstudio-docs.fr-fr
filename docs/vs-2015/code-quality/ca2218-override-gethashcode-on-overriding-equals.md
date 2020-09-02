@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 8083edf04aa799c8031fbcd1b53a2e17104dd4a6
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538799"
 ---
 # <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218 : Remplacez GetHashCode au moment de remplacer Equals
@@ -32,11 +32,11 @@ ms.locfileid: "85538799"
 |Category|Microsoft. usage|
 |Modification avec rupture|Sans rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Un type public substitue <xref:System.Object.Equals%2A?displayProperty=fullName> mais ne remplace pas <xref:System.Object.GetHashCode%2A?displayProperty=fullName> .
 
 ## <a name="rule-description"></a>Description de la règle
- <xref:System.Object.GetHashCode%2A>retourne une valeur, basée sur l’instance actuelle, qui convient aux algorithmes de hachage et aux structures de données telles qu’une table de hachage. Deux objets du même type et sont égaux doivent retourner le même code de hachage pour s’assurer que les instances des types suivants fonctionnent correctement :
+ <xref:System.Object.GetHashCode%2A> retourne une valeur, basée sur l’instance actuelle, qui convient aux algorithmes de hachage et aux structures de données telles qu’une table de hachage. Deux objets du même type et sont égaux doivent retourner le même code de hachage pour s’assurer que les instances des types suivants fonctionnent correctement :
 
 - <xref:System.Collections.Hashtable?displayProperty=fullName>
 
@@ -54,7 +54,7 @@ ms.locfileid: "85538799"
 
 - <xref:System.Collections.Specialized.OrderedDictionary?displayProperty=fullName>
 
-- Types qui implémentent<xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>
+- Types qui implémentent <xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, fournissez une implémentation de <xref:System.Object.GetHashCode%2A> . Pour une paire d’objets du même type, vous devez vous assurer que l’implémentation retourne la même valeur si votre implémentation de <xref:System.Object.Equals%2A> retourne `true` pour la paire.

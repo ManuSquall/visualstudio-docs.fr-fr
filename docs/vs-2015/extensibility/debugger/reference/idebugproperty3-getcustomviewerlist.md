@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::GetCustomViewerList | Microsoft Docs
+title: 'IDebugProperty3 :: GetCustomViewerList | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d709c9897aa80bdf18f06ae52147198323fcfef7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193399"
 ---
 # <a name="idebugproperty3getcustomviewerlist"></a>IDebugProperty3::GetCustomViewerList
@@ -46,27 +46,27 @@ int GetCustomViewerList(
   
 #### <a name="parameters"></a>Paramètres  
  `celtSkip`  
- [in] Le nombre de visionneuses à ignorer.  
+ dans Nombre de visionneuses à ignorer.  
   
  `celtRequested`  
- [in] Le nombre des visionneuses pour récupérer (spécifie également la taille de la `rgViewers` tableau).  
+ dans Nombre de visionneuses à récupérer (spécifie également la taille du `rgViewers` tableau).  
   
  `rgViewers`  
- [in, out] Tableau de [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) structures doit être renseigné.  
+ [in, out] Tableau de structures de [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) à remplir.  
   
  `pceltFetched`  
- [out] Le nombre réel de visionneuses retourné.  
+ à Nombre réel de visionneuses retournées.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="remarks"></a>Notes  
- Pour prendre en charge les visualiseurs de type, cette méthode transfère l’appel à la [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) (méthode). Si l’évaluateur d’expression prend également en charge les visionneuses personnalisées pour ce type de propriété, cette méthode peut ajouter des visionneuses personnalisées appropriées à la liste.  
+ Pour prendre en charge les visualiseurs de type, cette méthode transfère l’appel à la méthode [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) . Si l’évaluateur d’expression prend également en charge les visionneuses personnalisées pour le type de cette propriété, cette méthode peut ajouter les visionneuses personnalisées appropriées à la liste.  
   
- Consultez [visualiseur de Type et visionneuse personnalisée](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) pour plus d’informations sur les différences entre les visualiseurs de type et les visionneuses personnalisées.  
+ Pour plus d’informations sur les différences entre les visualiseurs de type et les visionneuses personnalisées, consultez [visualiseur de type et visionneuse personnalisée](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) .  
   
-## <a name="example"></a>Exemples  
- L’exemple suivant montre comment implémenter cette méthode pour un **CProperty** objet qui expose le [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interface.  
+## <a name="example"></a>Exemple  
+ L’exemple suivant montre comment implémenter cette méthode pour un objet **CProperty** qui expose l’interface [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) .  
   
 ```cpp#  
 STDMETHODIMP CProperty::GetCustomViewerList(ULONG celtSkip, ULONG celtRequested, DEBUG_CUSTOM_VIEWER* prgViewers, ULONG* pceltFetched)  

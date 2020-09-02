@@ -1,5 +1,5 @@
 ---
-title: Modifier et continuer, boîte de dialogue | Microsoft Docs
+title: Modifier & continuer, boîte de dialogue | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -21,19 +21,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 77fd48cd8e64be296231ff847b31d940d3d5831c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65704141"
 ---
 # <a name="edit-and-continue-dialog-box"></a>Boîte de dialogue Modifier & Continuer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Natif uniquement) cette boîte de dialogue s’affiche lorsque vous avez modifié le code pendant le débogage et **Modifier & Continuer** reconnaît pouvoir appliquer les modifications du code. Pour plus d’informations, consultez [Modifier et Continuer](../debugger/edit-and-continue.md).  
+Natif uniquement) cette boîte de dialogue apparaît lorsque vous avez modifié le code pendant le débogage et que **modifier & continuer** reconnaît qu’il peut appliquer les modifications du code. Pour plus d’informations, consultez [Modifier et Continuer](../debugger/edit-and-continue.md).  
   
  **Ne plus afficher cette boîte de dialogue**  
- Si vous activez cette case à cocher, **Modifier & Continuer** appliquera à l’avenir les modifications de code sans vous en demander l’autorisation. Vous pouvez réactiver cet avertissement à partir de la boîte de dialogue **Options** : dans le dossier **Débogage**, cliquez sur la page **Modifier & Continuer**, puis activez les cases à cocher **Appelé par les commandes de débogage** et **Me demander d’abord**.  
+ Si vous activez cette case à cocher, **modifier & continuer** appliquera les modifications du code sans demander d’autorisation à l’avenir. Vous pouvez réactiver cet avertissement à partir de la boîte de dialogue **Options** : dans le dossier **Débogage**, cliquez sur la page **Modifier & Continuer**, puis activez les cases à cocher **Appelé par les commandes de débogage** et **Me demander d’abord**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Sécurité du débogueur](../debugger/debugger-security.md)   

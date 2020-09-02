@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: e4cc53b623003fce3c47b7230650ae5a92e3c335
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671152"
 ---
 # <a name="all-rules-rule-set"></a>Ensemble de règles de toutes les règles
@@ -21,6 +21,6 @@ ms.locfileid: "72671152"
 
 L’ensemble de règles de toutes les règles contient toutes les règles pour le code natif et le code managé. L’ensemble de règles comprend toutes les règles qui sont décrites dans les rubriques suivantes :
 
-1. [Avertissements liés à l’analyse de code C/C++](../code-quality/code-analysis-for-c-cpp-warnings.md)
+1. [Analyse du code pour les avertissements C/C++](../code-quality/code-analysis-for-c-cpp-warnings.md)
 
 2. [Analyse du code pour les avertissements liés au code managé](../code-quality/code-analysis-for-managed-code-warnings.md)

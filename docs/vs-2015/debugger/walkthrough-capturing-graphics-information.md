@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Capture d’informations graphiques | Microsoft Docs'
+title: 'Procédure pas à pas : capture d’informations graphiques | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9ebd0453347084d1662c6bc7837fc1e96f498fbd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151472"
 ---
 # <a name="walkthrough-capturing-graphics-information"></a>Procédure pas à pas : Capture d'informations graphiques
@@ -48,9 +48,9 @@ Cette procédure pas à pas montre comment utiliser Graphics Diagnostics dans [!
   
 #### <a name="to-capture-graphics-information"></a>Pour capturer des informations graphiques  
   
-- Dans la barre d’outils Graphics Diagnostics, choisissez le bouton **Capturer** . ![Icône de bouton de capture de Graphics](../debugger/media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics")  
+- Dans la barre d’outils Graphics Diagnostics, choisissez le bouton **Capturer** . ![Icône du bouton de capture de graphiques](../debugger/media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics")  
   
-   ou  
+   - ou -  
   
    Quand l’application a le focus, appuyez sur **Impr. écran**.  
   
@@ -62,4 +62,4 @@ Cette procédure pas à pas montre comment utiliser Graphics Diagnostics dans [!
 - Découvrez comment analyser les informations graphiques capturées à l’aide des outils Graphics Diagnostics. Consultez [vue d’ensemble](../debugger/overview-of-visual-studio-graphics-diagnostics.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Capturing Graphics Information](../debugger/capturing-graphics-information.md)
+ [Capture d'informations graphiques](../debugger/capturing-graphics-information.md)

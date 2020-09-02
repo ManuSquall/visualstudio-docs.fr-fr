@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 21e5213e1940726c5863f0f5cfc306ae0c16e9eb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152037"
 ---
-# <a name="idialinenumbergetlinenumberend"></a>IDiaLineNumber::get_lineNumberEnd
+# <a name="idialinenumberget_linenumberend"></a>IDiaLineNumber::get_lineNumberEnd
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Récupère le numéro de ligne source basé sur un où se termine l’instruction ou une expression.  
+Récupère le numéro de ligne source de base 1 où l’instruction ou l’expression se termine.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -35,10 +35,10 @@ HRESULT get_lineNumberEnd ( 
   
 #### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- [out] Retourne le numéro de ligne où se termine l’instruction ou une expression. Si la valeur est zéro, les informations de fin ne sont pas présentes.  
+ à Retourne le numéro de ligne où l’instruction ou l’expression se termine. Si la valeur est égale à zéro, les informations de fin ne sont pas présentes.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Débogage d’un formulaire Web | Microsoft Docs'
+title: 'Procédure pas à pas : débogage d’un formulaire Web | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,10 +24,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e46169728c10d696f8dd99eb6459b9fcf081cb45
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65704931"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>Procédure pas à pas : Débogage d’un formulaire web
@@ -36,9 +36,9 @@ ms.locfileid: "65704931"
 Les étapes de cette procédure pas à pas vous expliquent comment déboguer une application Web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], également connue sous le nom de Web Form. Elle vous explique également comment démarrer et arrêter l’exécution, définir des points d’arrêt et examiner des variables dans la fenêtre **Espion**.  
   
 > [!NOTE]
-> Pour exécuter cette procédure pas à pas, vous devez avoir des privilèges d'administrateur de l'ordinateur serveur. Par défaut, le processus [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], aspnet_wp.exe ou w3wp.exe, s'exécute comme un processus [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Pour déboguer [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], vous devez avoir des privilèges d'administrateur sur l'ordinateur où [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] s'exécute. Pour plus d'informations, voir [System Requirements](../debugger/aspnet-debugging-system-requirements.md).  
+> Pour exécuter cette procédure pas à pas, vous devez avoir des privilèges d'administrateur de l'ordinateur serveur. Par défaut, le processus [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], aspnet_wp.exe ou w3wp.exe, s'exécute comme un processus [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Pour déboguer [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], vous devez avoir des privilèges d'administrateur sur l'ordinateur où [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] s'exécute. Pour plus d’informations, consultez [Configuration système requise](../debugger/aspnet-debugging-system-requirements.md).  
   
- Selon vos paramètres actifs ou votre édition, les boîtes de dialogue et les commandes de menu affichées peuvent différer de celles qui sont décrites dans l'aide. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+ Selon vos paramètres actifs ou votre édition, les boîtes de dialogue et les commandes de menu affichées peuvent différer de celles qui sont décrites dans l'aide. Pour modifier vos paramètres, choisissez **Paramètres d'importation et d'exportation** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-create-the-web-form"></a>Pour créer le Web Form  
   
@@ -50,7 +50,7 @@ Les étapes de cette procédure pas à pas vous expliquent comment déboguer une
   
 3. Dans le volet **Modèles**, cliquez sur **Site web ASP.NET**.  
   
-4. Sur le **emplacement** ligne, cliquez sur **HTTP** dans la liste et dans la zone de texte, tapez **http://localhost/WebSite**.  
+4. Sur la ligne **emplacement** , cliquez sur **http** dans la liste, puis dans la zone de texte, tapez **http://localhost/WebSite** .  
   
 5. Dans la liste **Langage**, cliquez sur **Visual C#** ou sur **Visual Basic**.  
   
@@ -62,7 +62,7 @@ Les étapes de cette procédure pas à pas vous expliquent comment déboguer une
   
 8. Cliquez sur l’onglet **Boîte à outils** dans la marge gauche ou sélectionnez-le dans le menu **Affichage**.  
   
-     La **Boîte à outils** s'ouvre.  
+     La **boîte à outils** s’ouvre.  
   
 9. Dans la **Boîte à outils**, cliquez sur le contrôle **Bouton** et ajoutez-le à l’aire de conception principale, Default.aspx.  
   
@@ -70,7 +70,7 @@ Les étapes de cette procédure pas à pas vous expliquent comment déboguer une
   
 11. Double-cliquez sur le contrôle Button que vous avez déposé.  
   
-     Vous accédez alors à la page de codes : Default.aspx.cs pour C# ou Default.aspx.vb pour [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]. Le curseur doit se trouver dans la fonction `Button1_Click`.  
+     Cette opération vous permet d'atteindre la page de codes : Default.aspx.cs pour C# ou Default.aspx.vb pour [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]. Le curseur doit se trouver dans la fonction `Button1_Click`.  
   
 12. Dans la fonction `Button1_Click`, ajoutez le code suivant :  
   
@@ -82,7 +82,7 @@ Les étapes de cette procédure pas à pas vous expliquent comment déboguer une
     TextBox1.Text = "Button was clicked!";  
     ```  
   
-13. Dans le menu **Générer** , cliquez sur **Générer la solution**.  
+13. Dans le menu **Générer**, cliquez sur **Générer la solution**.  
   
      Le projet doit être généré sans erreur.  
   
@@ -102,7 +102,7 @@ Les étapes de cette procédure pas à pas vous expliquent comment déboguer une
   
      Un point rouge s'affiche et le texte de la ligne est surligné en rouge. Le point rouge représente un point d'arrêt. Lorsque vous exécutez l'application dans le débogueur, le débogueur interrompt l'exécution à l'emplacement du code où se trouve ce point d'arrêt. Vous pouvez afficher l'état de votre application et la déboguer. Pour plus d’informations, consultez [Points d’arrêt](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583).  
   
-2. Dans le menu **Déboguer**, cliquez sur **Démarrer le débogage**.  
+2. Dans le menu **Déboguer** , cliquez sur **Démarrer le débogage**.  
   
 3. La boîte de dialogue **Débogage non activé** s’affiche. Sélectionnez l’option **Modifier le fichier Web.config pour activer le débogage**, puis cliquez sur **OK**.  
   
@@ -140,7 +140,7 @@ Les étapes de cette procédure pas à pas vous expliquent comment déboguer une
   
      Cela supprime le point d'arrêt.  
   
-11. Dans le menu **Déboguer**, cliquez sur **Arrêter le débogage**.  
+11. Dans le menu **Déboguer** , cliquez sur **Arrêter le débogage**.  
   
 ### <a name="to-attach-to-the-web-form-for-debugging"></a>Pour attacher au Web Form pour le débogage  
   
@@ -156,11 +156,11 @@ Les étapes de cette procédure pas à pas vous expliquent comment déboguer une
     textBox1.Text = "Button was clicked!";  
     ```  
   
-3. Dans le menu **Déboguer**, cliquez sur **Démarrer sans débogage**.  
+3. Dans le menu **Déboguer**, cliquez sur **Exécuter sans débogage**.  
   
      Le Web Form commence à s'exécuter sous Internet Explorer, mais le débogueur n'est pas attaché.  
   
-4. Attachez-le au processus [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Pour plus d’informations, consultez [débogage des Applications Web déployées](../debugger/debugging-deployed-web-applications.md).  
+4. Attachez-le au processus [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Pour plus d’informations, consultez [débogage d’applications Web déployées](../debugger/debugging-deployed-web-applications.md).  
   
 5. Dans Internet Explorer, cliquez sur le bouton sur votre formulaire.  
   

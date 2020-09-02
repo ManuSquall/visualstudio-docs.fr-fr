@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3e1669affa89c91ca3ae1958c22ff3ec4d56bb8c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670955"
 ---
 # <a name="editing-xslt-style-sheets"></a>Modification de feuilles de style XSLT
@@ -24,7 +24,7 @@ L'Éditeur XML permet également de modifier des feuilles de style XSLT. Vous po
 ## <a name="xslt-features"></a>Fonctionnalités XSLT
  Le tableau suivant décrit les fonctions spécifiques à la manipulation des feuilles de style XSLT.
 
- **Coloration** de la syntaxe Les mots clés XSLT, tels que `template`, `match`, etc., s’affichent dans la couleur de mot clé XSLT spécifiée par les paramètres des **polices et des couleurs** .
+ **Coloration** de la syntaxe Les mots clés XSLT, tels que `template` , `match` , etc., s’affichent dans la couleur de mot clé XSLT spécifiée par les paramètres des **polices et des couleurs** .
 
  **Traits de soulignement ondulés** L’éditeur XML utilise le fichier XSLT. xsd installé pour valider les feuilles de style XSLT. Les erreurs de validation sont indiquées par des soulignements ondulés bleus. L'éditeur XML compile également la feuille de style en arrière-plan et signale les erreurs ou avertissements du compilateur à l'aide de soulignements ondulés appropriés.
 

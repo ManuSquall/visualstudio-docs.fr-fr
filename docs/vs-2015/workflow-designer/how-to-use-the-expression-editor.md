@@ -12,16 +12,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 54099bc5c0f249cdb3697715d153a94a596ac344
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75849230"
 ---
 # <a name="how-to-use-the-expression-editor"></a>Procédure : utiliser l'éditeur d'expressions
 L'éditeur d'expressions est un contrôle de [!INCLUDE[wfd1](../includes/wfd1-md.md)] utilisé dans de nombreuses activités de flux de travail pour entrer et évaluer des expressions. Il fournit une expérience d’édition IDE complète, comprenant, entre autres fonctionnalités, IntelliSense, la colorisation, ParamInfo et les tildes d’erreur. Le compilateur valide l'expression après sa saisie. Si l'expression n'est pas valide, une icône d'erreur s'affiche. L’éditeur peut également être ouvert en tant que boîte de dialogue **éditeur d’expressions** .
 
- Les expressions sont des valeurs littérales ou du code [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] liés à des arguments ou des propriétés. Elles contiennent des éléments de valeur (par exemple, des variables, des constantes, des littéraux ou des propriétés) combinés avec des opérations afin de produire une nouvelle valeur. Les expressions sont écrites à l'aide de la syntaxe VB.NET même si l'application se trouve dans un programme utilisant C#. Cela signifie que la mise en majuscules n’a pas d’importance. la comparaison est effectuée à l’aide d’un signe égal (« = ») au lieu de (« = = »), les opérateurs booléens sont les mots « and » et « or&#124;&#124;» au lieu des symboles « & & » et «», et **rien** n’est utilisé à la place de **null**. Pour plus d’informations sur les expressions et les opérateurs dans [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] et pour obtenir des exemples, consultez [opérateurs et expressions dans Visual Basic](https://msdn.microsoft.com/library/a1w3te48(VS.100).aspx).
+ Les expressions sont des valeurs littérales ou du code [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] liés à des arguments ou des propriétés. Elles contiennent des éléments de valeur (par exemple, des variables, des constantes, des littéraux ou des propriétés) combinés avec des opérations afin de produire une nouvelle valeur. Les expressions sont écrites à l'aide de la syntaxe VB.NET même si l'application se trouve dans un programme utilisant C#. Cela signifie que la mise en majuscules n’a pas d’importance. la comparaison est effectuée à l’aide d’un signe égal (« = ») au lieu de (« = = »), les opérateurs booléens sont les mots « and » et « or » au lieu des symboles « && » et « &#124;&#124; », et **rien** n’est utilisé à la place de **null**. Pour plus d’informations sur les expressions et les opérateurs dans [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] et pour certains exemples, consultez [opérateurs et expressions dans Visual Basic](https://msdn.microsoft.com/library/a1w3te48(VS.100).aspx).
 
  L' **éditeur d’expressions** se comporte comme suit :
 
@@ -45,7 +45,7 @@ L'éditeur d'expressions est un contrôle de [!INCLUDE[wfd1](../includes/wfd1-md
 
 3. Cliquez sur l'éditeur d'expressions à gauche dans le concepteur d'activités pour l'activité <xref:System.Activities.Statements.Assign>.
 
-     Les chaînes en filigrane gris **\<pour >** et **\<entrer une expression VB >** sont les chaînes de texte par défaut pour les éditeurs d’expressions dans l’activité <xref:System.Activities.Statements.Assign>.
+     Les chaînes en filigrane gris **\<To>** et **\<Enter a VB Expression>** sont les chaînes de texte par défaut pour les éditeurs d’expressions dans l' <xref:System.Activities.Statements.Assign> activité.
 
 4. Entrez votre expression. Si vous entrez une chaîne, n'oubliez pas de l'entourer de guillemets. Si vous choisissez de lier l’argument Expression à une variable, n’utilisez pas de guillemets.
 

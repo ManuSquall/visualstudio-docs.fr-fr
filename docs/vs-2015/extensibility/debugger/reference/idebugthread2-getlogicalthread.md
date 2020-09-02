@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::GetLogicalThread | Microsoft Docs
+title: 'IDebugThread2 :: GetLogicalThread | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f430ea7ba69ca55bc76543d853396e22b193cf02
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153054"
 ---
 # <a name="idebugthread2getlogicalthread"></a>IDebugThread2::GetLogicalThread
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Moteurs de débogage n’implémentent pas cette méthode.  
+Les moteurs de débogage n’implémentent pas cette méthode.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -42,13 +42,13 @@ int GetLogicalThread( 
   
 #### <a name="parameters"></a>Paramètres  
  `pStackFrame`  
- [in] Un [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) objet qui représente le frame de pile.  
+ dans Objet [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) qui représente le frame de pile.  
   
  `ppLogicalThread`  
- [out] Retourne un `IDebugLogicalThread2` interface qui représente le thread logique associé. Une implémentation du moteur de débogage doit lui affecter la valeur null.  
+ à Retourne une `IDebugLogicalThread2` interface qui représente le thread logique associé. Une implémentation du moteur de débogage doit définir cette valeur sur une valeur null.  
   
-## <a name="return-value"></a>Valeur de retour  
- Déboguer des implémentations de moteur retournent toujours `E_NOTIMPL`.  
+## <a name="return-value"></a>Valeur renvoyée  
+ Les implémentations du moteur de débogage retournent toujours `E_NOTIMPL` .  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

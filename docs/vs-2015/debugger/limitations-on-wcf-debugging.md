@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3faa57a0a2ca413898364c2d4ad1891df85f1ce8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68176796"
 ---
 # <a name="limitations-on-wcf-debugging"></a>Limitations du débogage WCF
@@ -77,11 +77,11 @@ Il existe trois façons de commencer à déboguer un service WCF :
     ```  
   
 ## <a name="self-hosting"></a>Auto-hébergement  
- Un *service auto-hébergé* est un service WCF qui ne s’exécute pas à l’intérieur d’IIS, de l’hôte de service WCF ni du serveur de développement [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Pour plus d’informations sur le débogage d’un service auto-hébergé, consultez [Comment : Déboguer un Service WCF auto-hébergé](../debugger/how-to-debug-a-self-hosted-wcf-service.md).  
+ Un *service auto-hébergé* est un service WCF qui ne s’exécute pas à l’intérieur d’IIS, de l’hôte de service WCF ou du serveur de développement [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Pour plus d’informations sur le débogage d’un service auto-hébergé, consultez [Comment : déboguer un service WCF auto-hébergé](../debugger/how-to-debug-a-self-hosted-wcf-service.md).  
   
 ## <a name="self-hosting"></a>Auto-hébergement  
- Pour permettre le débogage des applications [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 3.0 ou 3.5, [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 3.0 ou 3.5 doit être installé avant que [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] soit installé. Si [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] est installé avant [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 3.0 ou 3.5, une erreur se produit quand vous essayez de déboguer une application [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 3.0 ou 3.5. Le message d'erreur est « Impossible d'effectuer automatiquement un pas à pas détaillé sur le serveur ». Pour résoudre ce problème, utilisez le Windows **le panneau de configuration**, **programmes et fonctionnalités** pour réparer votre [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] installation.  
+ Pour permettre le débogage des applications [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 3.0 ou 3.5, [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 3.0 ou 3.5 doit être installé avant que [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] soit installé. Si [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] est installé avant [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 3.0 ou 3.5, une erreur se produit quand vous essayez de déboguer une application [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 3.0 ou 3.5. Le message d'erreur est « Impossible d'effectuer automatiquement un pas à pas détaillé sur le serveur ». Pour résoudre ce problème, utilisez le **panneau de configuration**Windows, **programmes et fonctionnalités** pour réparer votre [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] installation.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Débogage de services WCF](../debugger/debugging-wcf-services.md)   
- [Guide pratique pour déboguer un service WCF auto-hébergé](../debugger/how-to-debug-a-self-hosted-wcf-service.md)
+ [Débogage des services WCF](../debugger/debugging-wcf-services.md)   
+ [Comment : déboguer un service WCF auto-hébergé](../debugger/how-to-debug-a-self-hosted-wcf-service.md)

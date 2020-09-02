@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 712d0de957ff7f780567c927fb1b18b100f8f6ca
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65703529"
 ---
 # <a name="generateresource-task"></a>GenerateResource, tâche
@@ -47,11 +47,11 @@ Convertit les fichiers .txt et .resx (format de ressources XML) en fichiers .res
 |`PublicClass`|Paramètre `Boolean` facultatif.<br /><br /> Si la valeur est `true`, crée une classe de ressource fortement typée en tant que classe publique.|  
 |`References`|Paramètre `String[]` facultatif.<br /><br /> Références à partir desquelles charger les types dans les fichiers .resx. Les éléments de données de fichiers .resx peuvent avoir un type .NET. Lors de la lecture du fichier .resx, il doit être résolu. En règle générale, on utilise pour cela des règles de chargement de type standard. Si vous fournissez des assemblys dans `References`, ils sont prioritaires.<br /><br /> Ce paramètre n’est pas obligatoire pour les ressources fortement typées.|  
 |`SdkToolsPath`|Paramètre `String` facultatif.<br /><br /> Spécifie le chemin des outils du SDK, comme resgen.exe.|  
-|`Sources`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` obligatoire.<br /><br /> Spécifie les éléments à convertir. Les éléments passés à ce paramètre doivent avoir l’une des extensions de fichier suivantes :<br /><br /> -   `.txt` : spécifie l’extension d’un fichier texte à convertir. Les fichiers texte ne peuvent comporter que des ressources de chaîne.<br />-   `.resx` : spécifie l’extension d’un fichier de ressources XML à convertir.<br />-   `.restext` : Spécifie le même format que .txt. Cette autre extension est utile si vous voulez distinguer clairement les fichiers sources qui contiennent des ressources d’autres fichiers sources dans votre processus de génération.<br />-   `.resources` : spécifie l’extension d’un fichier de ressources à convertir.|  
+|`Sources`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` obligatoire.<br /><br /> Spécifie les éléments à convertir. Les éléments passés à ce paramètre doivent avoir l’une des extensions de fichier suivantes :<br /><br /> -   `.txt` : spécifie l’extension d’un fichier texte à convertir. Les fichiers texte ne peuvent comporter que des ressources de chaîne.<br />-   `.resx` : spécifie l’extension d’un fichier de ressources XML à convertir.<br />-   `.restext` : spécifie le même format que .txt. Cette autre extension est utile si vous voulez distinguer clairement les fichiers sources qui contiennent des ressources d’autres fichiers sources dans votre processus de génération.<br />-   `.resources` : spécifie l’extension d’un fichier de ressources à convertir.|  
 |`StateFile`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem> facultatif.<br /><br /> Spécifie le chemin d’un fichier cache facultatif qui sert à accélérer la vérification des dépendances des liens dans les fichiers d’entrée .resx.|  
 |`StronglyTypedClassName`|Paramètre `String` facultatif.<br /><br /> Spécifie le nom de classe pour la classe de ressources fortement typée. Si vous ne spécifiez pas ce paramètre, le nom de base du fichier de ressources est utilisé.|  
-|`StronglyTypedFilename`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem> facultatif.<br /><br /> Spécifie le nom du fichier source. Si vous ne spécifiez pas ce paramètre, le nom de la classe est utilisé comme nom de base, avec une extension qui dépend du langage. Par exemple : `MyClass.cs`.|  
-|`StronglyTypedLanguage`|Paramètre `String` facultatif.<br /><br /> Spécifie le langage à utiliser lors de la génération de la source de classe pour la ressource fortement typée. Ce paramètre doit correspondre exactement à l’un des langages utilisés par CodeDomProvider. Par exemple : `VB` ou `C#`.<br /><br /> En transmettant une valeur à ce paramètre, vous demandez à la tâche de générer des ressources fortement typées.|  
+|`StronglyTypedFilename`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem> facultatif.<br /><br /> Spécifie le nom du fichier source. Si vous ne spécifiez pas ce paramètre, le nom de la classe est utilisé comme nom de base, avec une extension qui dépend du langage. Par exemple : `MyClass.cs`.|  
+|`StronglyTypedLanguage`|Paramètre `String` facultatif.<br /><br /> Spécifie le langage à utiliser lors de la génération de la source de classe pour la ressource fortement typée. Ce paramètre doit correspondre exactement à l’un des langages utilisés par CodeDomProvider. Par exemple, `VB` ou `C#`.<br /><br /> En transmettant une valeur à ce paramètre, vous demandez à la tâche de générer des ressources fortement typées.|  
 |`StronglyTypedManifestPrefix`|Paramètre `String` facultatif.<br /><br /> Spécifie le préfixe de manifeste ou d’espace de noms de ressources à utiliser dans la source de classe générée pour la ressource fortement typée.|  
 |`StronglyTypedNamespace`|Paramètre `String` facultatif.<br /><br /> Spécifie l’espace de noms à utiliser pour la source de classe générée pour la ressource fortement typée. Si vous ne spécifiez pas ce paramètre, toutes les ressources fortement typées sont dans l’espace de noms global.|  
 |`TLogReadFiles`|Paramètre en lecture seule <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Obtient un tableau des éléments qui représentent les journaux de suivi de lecture.|  
@@ -83,7 +83,7 @@ Convertit les fichiers .txt et .resx (format de ressources XML) en fichiers .res
 </GenerateResource>  
 ```  
   
- La tâche `GenerateResource` utilise les métadonnées \<LogicalName> d’un élément \<EmbeddedResource> pour nommer la ressource incorporée dans un assembly.  
+ La `GenerateResource` tâche utilise les \<LogicalName> métadonnées d’un \<EmbeddedResource> élément pour nommer la ressource incorporée dans un assembly.  
   
  En supposant que l’assembly se nomme myAssembly, le code suivant génère une ressource incorporée nommée someQualifier.someResource.resources :  
   
@@ -91,8 +91,8 @@ Convertit les fichiers .txt et .resx (format de ressources XML) en fichiers .res
 <ItemGroup>   <EmbeddedResource Include="myResource.resx">       <LogicalName>someQualifier.someResource.resources</LogicalName>   </EmbeddedResource></ItemGroup>  
 ```  
   
- Sans les métadonnées \<LogicalName>, la ressource se nommerait myAssembly.myResource.resources.  Cet exemple s’applique uniquement au processus de génération Visual Basic et Visual C#.  
+ Sans les \<LogicalName> métadonnées, la ressource serait nommée myAssembly. MyResource. resources.  Cet exemple s’applique uniquement au processus de génération Visual Basic et Visual C#.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Tâches](../msbuild/msbuild-tasks.md)   
- [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)
+ [Décrites](../msbuild/msbuild-tasks.md)   
+ [Référence de tâche](../msbuild/msbuild-task-reference.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Trouver quelle DLL votre programme a causé l’arrêt | Microsoft Docs'
+title: 'Comment : Rechercher la DLL dans laquelle votre programme s’est bloqué dans | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -27,17 +27,17 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 44ebe042ff6e2507530e4be410e768550e922b44
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65703626"
 ---
-# <a name="how-to-find-which-dll-your-program-crashed-in"></a>Procédure : Trouver quelle DLL votre programme a causé l’arrêt
+# <a name="how-to-find-which-dll-your-program-crashed-in"></a>Comment : savoir quelle DLL a causé l'arrêt de votre programme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 REMARQUE]
-> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez Importation et exportation de paramètres dans le menu Outils. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Les boîtes de dialogue et les commandes de menu affichées peuvent différer de celles décrites dans l'Aide selon les paramètres actifs ou le mode d'édition. Pour modifier vos paramètres, choisissez Importation et exportation de paramètres dans le menu Outils. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Si votre application tombe en panne pendant un appel à une DLL système ou au code de quelqu'un d'autre, vous devez rechercher la DLL active au moment de l'incident. Si une panne survient dans une DLL en dehors de votre programme, vous pouvez identifier l’emplacement en utilisant la fenêtre **Modules**.  
   
@@ -56,5 +56,5 @@ REMARQUE]
 6. Les colonnes **Nom** et **Chemin d’accès** vous indiquent le nom et le chemin de la DLL.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour Déboguer des DLL natives](../debugger/how-to-debug-native-dlls.md)   
- [Guide pratique pour utiliser la fenêtre Modules](../debugger/how-to-use-the-modules-window.md)
+ [Comment : déboguer des DLL natives](../debugger/how-to-debug-native-dlls.md)   
+ [Comment : utiliser la fenêtre Modules](../debugger/how-to-use-the-modules-window.md)
