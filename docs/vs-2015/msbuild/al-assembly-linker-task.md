@@ -20,16 +20,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 85fb11429822d49d1a86697d9480f3a8ab0759de
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65684691"
 ---
 # <a name="al-assembly-linker-task"></a>AL (Assembly Linker), tâche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La tâche AL encapsule AL.exe, un outil distribué avec le [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. L’outil Assembly Linker sert à créer un assembly avec un manifeste à partir d’un ou plusieurs fichiers qui sont soit des modules, soit des fichiers de ressources. Les compilateurs et les environnements de développement pouvant déjà fournir ces fonctionnalités, il n’est généralement pas nécessaire d’utiliser cette tâche directement. Assembly Linker est très utile aux développeurs ayant besoin de créer un assembly unique à partir de plusieurs fichiers de composant, tels que ceux qui peuvent être générés par le développement en plusieurs langages. Cette tâche ne combine pas les modules dans un fichier d’assembly unique. Les modules individuels doivent toujours être distribués et disponibles pour que l’assembly résultant se charge correctement. Pour plus d’informations sur AL.exe, consultez [Al.exe (Assembly Linker)](https://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01).  
+La tâche AL encapsule AL.exe, un outil distribué avec le [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. L’outil Assembly Linker sert à créer un assembly avec un manifeste à partir d’un ou plusieurs fichiers qui sont soit des modules, soit des fichiers de ressources. Les compilateurs et les environnements de développement pouvant déjà fournir ces fonctionnalités, il n’est généralement pas nécessaire d’utiliser cette tâche directement. Assembly Linker est très utile aux développeurs ayant besoin de créer un assembly unique à partir de plusieurs fichiers de composant, tels que ceux qui peuvent être générés par le développement en plusieurs langages. Cette tâche ne combine pas les modules dans un fichier d’assembly unique. Les modules individuels doivent toujours être distribués et disponibles pour que l’assembly résultant se charge correctement. Pour plus d’informations sur la AL.exe, consultez [Al.exe (Assembly Linker)](https://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01).  
   
 ## <a name="parameters"></a>Paramètres  
  Le tableau ci-dessous décrit les paramètres de la tâche `AL` .  
@@ -55,13 +55,13 @@ La tâche AL encapsule AL.exe, un outil distribué avec le [!INCLUDE[winsdklong]
 |`LinkResources`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Lie les fichiers de ressources spécifiés à un assembly. La ressource est intégrée à l’assembly, mais le fichier n’est pas copié. Les éléments passés dans ce paramètre peuvent avoir des métadonnées facultatives associées appelées `LogicalName`, `Target` et `Access`. Les métadonnées `LogicalName` sont utilisées pour spécifier l’identificateur interne de la ressource. Les métadonnées `Target` peuvent spécifier le chemin et le nom de fichier où la tâche copie le fichier, avant de compiler ce nouveau fichier dans l’assembly. Vous pouvez affecter la valeur `private` aux métadonnées `Access` pour rendre la ressource invisible à d’autres assemblys. Pour plus d’informations, consultez la documentation relative à l’option `/link[resource]` dans [Al.exe (Assembly Linker)](https://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01).|  
 |`MainEntryPoint`|Paramètre `String` facultatif.<br /><br /> Spécifie le nom complet (*class.method*) de la méthode à utiliser comme point d’entrée lors de la conversion d’un module en fichier exécutable. Ce paramètre correspond à l’option `/main` dans [Al.exe (Assembly Linker)](https://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01).|  
 |`OutputAssembly`|Paramètre de sortie <xref:Microsoft.Build.Framework.ITaskItem> obligatoire.<br /><br /> Spécifie le nom du fichier généré par cette tâche. Ce paramètre correspond à l’option `/out` dans [Al.exe (Assembly Linker)](https://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01).|  
-|`Platform`|Paramètre `String` facultatif.<br /><br /> Limite la plateforme sur laquelle ce code peut s’exécuter. Doit correspondre à l’une des valeurs suivantes : `x86`, `Itanium`, `x64` ou `anycpu`. La valeur par défaut est `anycpu`. Ce paramètre correspond à l’option `/platform` dans [Al.exe (Assembly Linker)](https://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01).|  
+|`Platform`|Paramètre `String` facultatif.<br /><br /> Limite la plateforme sur laquelle ce code peut s’exécuter. Doit correspondre à l’une des valeurs suivantes : `x86`, `Itanium`, `x64` ou `anycpu`. Par défaut, il s’agit de `anycpu`. Ce paramètre correspond à l’option `/platform` dans [Al.exe (Assembly Linker)](https://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01).|  
 |`ProductName`|Paramètre `String` facultatif.<br /><br /> Spécifie une chaîne pour le champ `Product` de l'assembly. Pour plus d’informations, consultez la documentation relative à l’option `/prod[uct]` dans [Al.exe (Assembly Linker)](https://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01).|  
 |`ProductVersion`|Paramètre `String` facultatif.<br /><br /> Spécifie une chaîne pour le champ `ProductVersion` de l'assembly. Pour plus d’informations, consultez la documentation relative à l’option `/productv[ersion]` dans [Al.exe (Assembly Linker)](https://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01).|  
 |`ResponseFiles`|Paramètre `String[]` facultatif.<br /><br /> Spécifie les fichiers réponse qui contiennent des options supplémentaires à passer à Assembly Linker.|  
 |`SdkToolsPath`|Paramètre `String` facultatif.<br /><br /> Spécifie le chemin des outils du SDK, comme resgen.exe.|  
 |`SourceModules`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Un ou plusieurs modules à compiler dans un assembly. Les modules seront répertoriés dans le manifeste de l’assembly résultant, et devront toujours être distribués et disponibles pour que l’assembly se charge. Les éléments passés dans ce paramètre peuvent avoir des métadonnées supplémentaires appelées `Target`, qui spécifient le chemin et le nom de fichier où la tâche copie le fichier, avant de compiler ce nouveau fichier dans l’assembly. Pour plus d’informations, consultez la documentation relative [Al.exe (Assembly Linker)](https://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01). Ce paramètre correspond à la liste des modules passés dans Al.exe sans commutateur spécifique.|  
-|`TargetType`|Paramètre `String` facultatif.<br /><br /> Spécifie le format du fichier de sortie : `library` (bibliothèque de codes), `exe` (application console) ou `win` (application Windows). La valeur par défaut est `library`. Ce paramètre correspond à l’option `/t[arget]` dans [Al.exe (Assembly Linker)](https://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01).|  
+|`TargetType`|Paramètre `String` facultatif.<br /><br /> Spécifie le format du fichier de sortie : `library` (bibliothèque de codes), `exe` (application console) ou `win` (application Windows). Par défaut, il s’agit de `library`. Ce paramètre correspond à l’option `/t[arget]` dans [Al.exe (Assembly Linker)](https://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01).|  
 |`TemplateFile`|Paramètre `String` facultatif.<br /><br /> Spécifie l’assembly à partir duquel hériter de toutes les métadonnées d’assembly, à l’exception du champ Culture. L’assembly spécifié doit avoir un nom fort.<br /><br /> Un assembly créé avec le paramètre `TemplateFile` est un assembly satellite. Ce paramètre correspond à l’option `/template` dans [Al.exe (Assembly Linker)](https://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01).|  
 |`Timeout`|Paramètre `Int32` facultatif.<br /><br /> Spécifie le délai, en millisecondes, après lequel l’exécutable de la tâche est arrêté. La valeur par défaut est `Int.MaxValue`, ce qui indique qu’il n’existe aucun délai d’expiration.|  
 |`Title`|Paramètre `String` facultatif.<br /><br /> Spécifie une chaîne pour le champ `Title` de l'assembly. Pour plus d’informations, consultez la documentation relative à l’option `/title` dans [Al.exe (Assembly Linker)](https://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01).|  
@@ -71,8 +71,8 @@ La tâche AL encapsule AL.exe, un outil distribué avec le [!INCLUDE[winsdklong]
 |`Win32Icon`|Paramètre `String` facultatif.<br /><br /> Insère un fichier .ico dans l'assembly. Le fichier .ico donne au fichier de sortie l'aspect souhaité dans l'Explorateur de fichiers. Ce paramètre correspond à l’option `/win32icon` dans [Al.exe (Assembly Linker)](https://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01).|  
 |`Win32Resource`|Paramètre `String` facultatif.<br /><br /> Insère une ressource Win32 (fichier .res) dans le fichier de sortie. Pour plus d’informations, consultez la documentation relative à l’option `/win32res` dans [Al.exe (Assembly Linker)](https://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01).|  
   
-## <a name="remarks"></a>Remarques  
- En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.ToolTask>. Pour obtenir la liste de ces paramètres supplémentaires et de leurs descriptions, consultez l’article [ToolTaskExtension Base Class (Classe de base ToolTaskExtension)](../msbuild/tooltaskextension-base-class.md).  
+## <a name="remarks"></a>Notes  
+ En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.ToolTaskExtension> , qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.ToolTask> . Pour obtenir la liste de ces paramètres supplémentaires et de leurs descriptions, consultez l’article [ToolTaskExtension Base Class (Classe de base ToolTaskExtension)](../msbuild/tooltaskextension-base-class.md).  
   
 ## <a name="example"></a>Exemple  
  L’exemple suivant crée un assembly avec les options spécifiées.  
@@ -95,5 +95,5 @@ La tâche AL encapsule AL.exe, un outil distribué avec le [!INCLUDE[winsdklong]
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)   
+ [Référence de tâche](../msbuild/msbuild-task-reference.md)   
  [Tâches](../msbuild/msbuild-tasks.md)

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9d02d4cfede6ed3499d09ff58e4454c1ef9cbe0d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651002"
 ---
 # <a name="symbol-path-command"></a>Chemin d’accès aux symboles, commande
@@ -36,17 +36,17 @@ Debug.SymbolPath pathname1;pathname2;... pathnameN
 ## <a name="arguments"></a>Arguments
  `pathname` Facultatif. Liste de chemins délimités par des points-virgules dans laquelle le débogueur doit rechercher des symboles.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Si aucun `pathname` n’est spécifié, la commande répertorie les chemins des symboles actuels.
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
  Cet exemple ajoute deux chemins à la liste des répertoires de symboles.
 
 ```
 Debug.SymbolPath C:\Symbol Path 1;C:\Symbol Path 2
 ```
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
  Cet exemple affiche une liste de chemins des symboles actuels délimités par des points-virgules.
 
 ```

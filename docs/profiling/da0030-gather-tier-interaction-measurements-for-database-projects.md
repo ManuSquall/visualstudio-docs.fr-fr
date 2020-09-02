@@ -14,10 +14,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 47ac30d4a1df36e72b8b12fa9aefb1b36aed6204
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544597"
 ---
 # <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030 : collecter les mesures d’interaction de couche pour les projets de base de données
@@ -30,7 +30,7 @@ ms.locfileid: "85544597"
 |Message|La collecte des mesures d’interaction pour les applications multicouches vous aidera à comprendre les modèles d’utilisation de la base de données et les retards d’accès aux données de clé. Profilez de nouveau l’application en activant l’option Profilage d’interaction de couche.|
 |Type de règle|Information|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Les appels aux méthodes <xref:System.Data> représentent une part importante des données de profilage et vous n’avez pas collecté de données d’interaction de couche lors de l’exécution du profilage. Effectuez un nouveau profilage et ajoutez des données d’interaction de couche.
 
 ## <a name="rule-description"></a>Description de la règle

@@ -1,5 +1,5 @@
 ---
-title: IDebugActivateDocumentEvent2::GetDocumentContext | Microsoft Docs
+title: 'IDebugActivateDocumentEvent2 :: GetDocumentContext | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 855ff83786a02632304ed397ab8d2844c186bded
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160121"
 ---
 # <a name="idebugactivatedocumentevent2getdocumentcontext"></a>IDebugActivateDocumentEvent2::GetDocumentContext
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Obtient le contexte de document qui décrit la position dans le document qui doit être effectuée par le package de débogage active.  
+Obtient le contexte de document qui décrit la position dans le document qui doit être rendue active par le package de débogage.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -41,13 +41,13 @@ int GetDocumentContext ( 
   
 #### <a name="parameters"></a>Paramètres  
  `ppDocContext`  
- [out] Retourne un [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) objet qui représente une position dans un document de fichier source.  
+ à Retourne un objet [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) qui représente une position dans un document de fichier source.  
   
 ## <a name="remarks"></a>Notes  
- Cette position peut être utilisée pour indiquer le point d’insertion, par exemple.  
+ Cette position peut être utilisée pour afficher le signe insertion, par exemple.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)   

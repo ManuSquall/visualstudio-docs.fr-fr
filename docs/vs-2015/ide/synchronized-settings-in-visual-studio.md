@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6459b6f65fd1e29fbadb01f6aa2fc51520b726b8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646828"
 ---
 # <a name="synchronized-settings-in-visual-studio"></a>Paramètres synchronisés dans Visual Studio
@@ -40,11 +40,11 @@ Lorsque vous utilisez le même compte de personnalisation pour vous connecter à
 
   - Tous les paramètres de la page d’options **Environnement**, **Démarrage**
 
-  - Tous les paramètres des pages d’options de l’**éditeur de texte**
+  - Tous les paramètres des pages d’options de l' **éditeur de texte**
 
 - Tous les paramètres sur les pages d'options du concepteur XAML
 
-- Alias de commande définis par l'utilisateur. Pour plus d’informations sur la façon de définir des alias de commande, consultez [Alias de commandes Visual Studio](../ide/reference/visual-studio-command-aliases.md).
+- Alias de commande définis par l'utilisateur. Pour plus d’informations sur la définition des alias de commande, consultez [alias de commandes Visual Studio](../ide/reference/visual-studio-command-aliases.md).
 
 - Dispositions des fenêtres définies par l’utilisateur dans la page **Fenêtre &#124; Gérer les dispositions de fenêtres**
 
@@ -58,4 +58,4 @@ Lorsque vous utilisez le même compte de personnalisation pour vous connecter à
 > Les paramètres ne sont pas synchronisés entre Visual Studio 2013 et Visual Studio 2015. La première fois que vous ouvrez Visual Studio 2015, vos paramètres de Visual Studio 2013 sont migrés, mais ils ne peuvent pas être migrés à nouveau vers Visual Studio 2013.
 
 ## <a name="see-also"></a>Voir aussi
- [Personnalisation de l’IDE](../ide/personalizing-the-visual-studio-ide.md)
+ [Personnalisation de l’environnement IDE](../ide/personalizing-the-visual-studio-ide.md)

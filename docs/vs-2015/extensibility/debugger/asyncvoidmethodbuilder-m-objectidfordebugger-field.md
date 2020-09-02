@@ -1,5 +1,5 @@
 ---
-title: Champ AsyncVoidMethodBuilder.m_objectIdForDebugger | Microsoft Docs
+title: AsyncVoidMethodBuilder. m_objectIdForDebugger le champ | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,22 +11,22 @@ caps.latest.revision: 4
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2981ff74e5fe7b7501227b847996d422a2966f55
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148005"
 ---
-# <a name="asyncvoidmethodbuildermobjectidfordebugger-field"></a>Champ AsyncVoidMethodBuilder.m_objectIdForDebugger
+# <a name="asyncvoidmethodbuilderm_objectidfordebugger-field"></a>Champ AsyncVoidMethodBuilder.m_objectIdForDebugger
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Représente l’objet initialisée tardivement utilisé par le débogueur pour identifier de manière unique ce générateur.  
+Représente l’objet initialisé tardivement utilisé par le débogueur pour identifier ce générateur de manière unique.  
   
- **Espace de noms :** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
+ **Espace de noms :** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
   
- **Assembly :** mscorlib (dans mscorlib.dll)  
+ **Assembly :** mscorlib (en mscorlib.dll)  
   
- Étant donné que vous ne pouvez pas accéder à ce membre interne du .NET Framework, la syntaxe suivante est fournie en commun Intermediate Language (CIL).  
+ Étant donné que vous ne pouvez pas accéder à ce membre interne à partir de la .NET Framework, la syntaxe suivante est fournie en Common Intermediate Language (CIL).  
   
 ## <a name="syntax"></a>Syntaxe  
   

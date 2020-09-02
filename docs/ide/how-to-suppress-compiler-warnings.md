@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 53db72495b64236441b9ce517c0eb25dc09a207c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283955"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Guide pratique pour supprimer des avertissements du compilateur
@@ -87,7 +87,7 @@ Cet exemple montre comment modifier le fichier *.vbproj* pour supprimer des aver
     ```
 
    > [!NOTE]
-   > Les projets .NET Core ne contiennent pas de groupes de propriétés de configuration de build par défaut. Pour supprimer des avertissements d’un projet .NET Core, ajoutez manuellement la section de configuration de build au fichier. Par exemple :
+   > Les projets .NET Core ne contiennent pas de groupes de propriétés de configuration de build par défaut. Pour supprimer des avertissements d’un projet .NET Core, ajoutez manuellement la section de configuration de build au fichier. Par exemple :
    >
    > ```xml
    > <Project Sdk="Microsoft.NET.Sdk">
@@ -134,4 +134,4 @@ Dans certains cas, il se peut que vous souhaitiez supprimer des avertissements d
 
 - [Procédure pas à pas : Générer une application](../ide/walkthrough-building-an-application.md)
 - [Comment : afficher, enregistrer et configurer des fichiers journaux de génération](../ide/how-to-view-save-and-configure-build-log-files.md)
-- [Compilation et génération](../ide/compiling-and-building-in-visual-studio.md)
+- [Compiler et générer](../ide/compiling-and-building-in-visual-studio.md)

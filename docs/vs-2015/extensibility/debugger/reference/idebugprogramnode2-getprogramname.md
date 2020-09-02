@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::GetProgramName | Microsoft Docs
+title: 'IDebugProgramNode2 :: GetProgramName | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0c46cb55140159bff12d297adbc5c0346ffe0409
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148548"
 ---
 # <a name="idebugprogramnode2getprogramname"></a>IDebugProgramNode2::GetProgramName
@@ -40,16 +40,16 @@ int GetProgramName ( 
   
 #### <a name="parameters"></a>Paramètres  
  `pbstrProgramName`  
- [out] Retourne le nom du programme.  
+ à Retourne le nom du programme.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="remarks"></a>Notes  
- Le nom d’un programme n’est pas la même chose que le chemin d’accès au programme, bien que le nom du programme peut faire partie d’un chemin d’accès.  
+ Le nom d’un programme n’est pas identique au chemin d’accès au programme, même si le nom du programme peut faire partie d’un tel chemin d’accès.  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant montre comment implémenter cette méthode pour une simple `CProgram` objet qui implémente le [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) interface. Le `MakeBstr` fonction alloue une copie de la chaîne spécifiée en tant que BSTR.  
+ L’exemple suivant montre comment implémenter cette méthode pour un `CProgram` objet simple qui implémente l’interface [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) . La `MakeBstr` fonction alloue une copie de la chaîne spécifiée en tant que BSTR.  
   
 ```cpp#  
 HRESULT CProgram::GetProgramName(BSTR* pbstrProgramName) {    

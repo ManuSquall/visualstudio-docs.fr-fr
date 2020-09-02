@@ -1,5 +1,5 @@
 ---
-title: IDebugPortEx2::CanTerminateProcess | Microsoft Docs
+title: 'IDebugPortEx2 :: CanTerminateProcess | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ae67aaee2eca8ff94f1c1620c5fb6797eb37dda9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188512"
 ---
 # <a name="idebugportex2canterminateprocess"></a>IDebugPortEx2::CanTerminateProcess
@@ -40,10 +40,10 @@ HRESULT CanTerminateProcess( 
   
 #### <a name="parameters"></a>Paramètres  
  `pPortProcess`  
- [in] Un [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) objet représentant la fin du processus.  
+ dans Objet [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) qui représente le processus à arrêter.  
   
-## <a name="return-value"></a>Valeur de retour  
- Retourne `S_OK` si le processus peut être arrêté ; sinon, retourne `S_FALSE`.  
+## <a name="return-value"></a>Valeur renvoyée  
+ Retourne `S_OK` si le processus peut être arrêté ; sinon, retourne `S_FALSE` .  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)   

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 774279dd05bd14c34df7f1d450f00599812d6a5b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544506"
 ---
 # <a name="ca1027-mark-enums-with-flagsattribute"></a>CA1027 : Marquer les enums avec FlagsAttribute
@@ -32,7 +32,7 @@ ms.locfileid: "85544506"
 |Category|Microsoft. Design|
 |Modification avec rupture|Sans rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Les valeurs d’une énumération publique sont des puissances de deux ou sont des combinaisons d’autres valeurs qui sont définies dans l’énumération, et l' <xref:System.FlagsAttribute?displayProperty=fullName> attribut n’est pas présent. Pour réduire les faux positifs, cette règle ne signale pas de violation pour les énumérations qui ont des valeurs contiguës.
 
 ## <a name="rule-description"></a>Description de la règle

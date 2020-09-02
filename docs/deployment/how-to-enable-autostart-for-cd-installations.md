@@ -17,16 +17,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6ff96cdfe412e5016c04daa2b22922b0ec47a3a3
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382443"
 ---
 # <a name="how-to-enable-autostart-for-cd-installations"></a>Guide pratique pour activer le démarrage automatique pour les installations de CD
 Lors du déploiement d’une [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application au moyen d’un support amovible tel qu’un CD-ROM ou un DVD-ROM, vous pouvez activer `AutoStart` afin que l' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application soit lancée automatiquement lorsque le média est inséré.
 
- `AutoStart`peut être activé sur la page **publier** du **Concepteur de projets**.
+ `AutoStart` peut être activé sur la page **publier** du **Concepteur de projets**.
 
 ### <a name="to-enable-autostart"></a>Pour activer le démarrage automatique
 

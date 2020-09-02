@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1296c0f43d0409df0081861095c5ec068932bbc1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148148"
 ---
 # <a name="sdi-server-applications"></a>Applications serveur SDI
@@ -36,4 +36,4 @@ Si vous déboguez une application serveur SDI, vous devez spécifier `/Embedding
   
 ## <a name="see-also"></a>Voir aussi  
  [Débogage COM et ActiveX](../debugger/com-and-activex-debugging.md)   
- [Guide pratique : déboguer des serveurs COM](../debugger/how-to-debug-com-servers.md)
+ [Comment : déboguer des serveurs COM](../debugger/how-to-debug-com-servers.md)

@@ -10,10 +10,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 3c8b6e0570567e8eb696fda61fe9db7bbd4a2f1b
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283942"
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>Guide pratique pour substituer des paramètres dans un modèle
@@ -26,7 +26,7 @@ La section suivante vous montre comment modifier un modèle pour remplacer le no
 
 ## <a name="example---namespace-name"></a>Exemple : nom d’espace de noms
 
-1. Ajoutez le paramètre dans l'un ou plusieurs des fichiers de code du modèle. Par exemple :
+1. Ajoutez le paramètre dans l'un ou plusieurs des fichiers de code du modèle. Par exemple :
 
     ```csharp
     namespace $safeprojectname$

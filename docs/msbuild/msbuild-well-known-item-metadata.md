@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c810e166ef6f04befdbf7a5d18fe20bb65b8a299
-ms.sourcegitcommit: dda98068c0f62ccd1a19fdfde4bdb822428d0125
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87425379"
 ---
 # <a name="msbuild-well-known-item-metadata"></a>Métadonnées d’éléments connus MSBuild
@@ -40,7 +40,7 @@ Le premier tableau de cet article décrit les métadonnées assignées à chaque
 |%(FullPath)|Contient le chemin complet de l’élément. Par exemple :<br /><br /> *C:\MyProject\Source\Program.cs*|
 |%(RootDir)|Contient le répertoire racine de l’élément. Par exemple :<br /><br /> *Secteur\\*|
 |%(Filename)|Contient le nom de fichier de l’élément, sans l’extension. Par exemple :<br /><br /> *Programme*|
-|%(Extension)|Contient l’extension de nom de fichier de l’élément. Par exemple :<br /><br /> *. cs*|
+|%(Extension)|Contient l’extension de nom de fichier de l’élément. Par exemple :<br /><br /> *.cs*|
 |%(RelativeDir)|Contient le chemin spécifié dans l’attribut `Include`, jusqu’à la dernière barre oblique inverse (\\). Par exemple :<br /><br /> *Source\\*<br /><br /> Si l' `Include` attribut est un chemin d’accès complet, `%(RelativeDir)` commence par le répertoire racine `%(RootDir)` .  Par exemple : <br /><br /> *C:\MyProject\Source\\*|
 |%(Directory)|Contient le répertoire de l’élément, sans le répertoire racine. Par exemple :<br /><br /> *MyProject\\Source\\*|
 |%(RecursiveDir)|Si l’attribut `Include` contient le caractère générique \*\*, ces métadonnées spécifient la partie du chemin qui remplace le caractère générique. Pour plus d’informations sur les caractères génériques, consultez [How to : Select the files to Build](../msbuild/how-to-select-the-files-to-build.md).<br /><br /> Si le dossier *C:\MySolution\MyProject\Source \\ * contient le fichier *Program.cs*, et si le fichier projet contient cet élément :<br /><br /> `<ItemGroup>`<br /><br /> `<MyItem Include="C:\**\Program.cs" />`<br /><br /> `</ItemGroup>`<br /><br /> la valeur de `%(MyItem.RecursiveDir)` est *MySolution\MyProject\Source\\*.|
@@ -51,7 +51,7 @@ Le premier tableau de cet article décrit les métadonnées assignées à chaque
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Métadonnées d’élément MSBuild courantes](common-msbuild-item-metadata.md)
+- [Métadonnées communes d’éléments MSBuild](common-msbuild-item-metadata.md)
 - [Éléments](../msbuild/msbuild-items.md)
 - [Traitement par lot](../msbuild/msbuild-batching.md)
 - [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f761e87c1658c11bfdfd93a4f4e22299d88575a8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62979820"
 ---
 # <a name="spanspan-constructor"></a>span::span, constructeur
@@ -62,7 +62,7 @@ span(
 
 `_Category` Catégorie.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 
 **En-tête :** *cvmarkersobj.h*
 
@@ -70,4 +70,4 @@ span(
 
 ## <a name="see-also"></a>Voir aussi
 
-- [classe de portée](../profiling/span-class.md)
+- [span, classe](../profiling/span-class.md)

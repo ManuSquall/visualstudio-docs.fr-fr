@@ -1,5 +1,5 @@
 ---
-title: Raccourcis (HTML et JavaScript) clavier | Microsoft Docs
+title: Raccourcis clavier (HTML et JavaScript) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dedfc8e5be9b3410c978722518f50162bcd2b40b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199683"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>Raccourcis clavier (HTML et JavaScript)
@@ -43,7 +43,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
 |Action|Raccourci|  
 |------------|--------------|  
-|Exécuter une commande de console|Entrée|  
+|Exécuter une commande de console|Entrez|  
 |Effacer la console|Échap|  
 |Basculer entre les modes ligne simple et multiligne|Ctrl+Alt+M|  
   
@@ -54,10 +54,10 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 |------------|--------------|  
 |Sélection d'un élément|Ctrl+B|  
 |Basculer entre l’affichage et le masquage des zones de surlignage des pages web pendant l’utilisation de la commande **Sélectionner un élément**|Ctrl+Maj+I|  
-|Valider les modifications à l’aide de l’option **Modifier comme HTML**|Ctrl+Entrée|  
+|Valider les modifications à l’aide de l’option **Modifier comme HTML**|CTRL+ Enter|  
 |Ignorer les modifications à l’aide de l’option **Modifier comme HTML**|Échap|  
 |Augmenter de 1 la valeur CSS sélectionnée|Flèche haut|  
-|Réduire de 1 la valeur CSS sélectionnée|Flèche bas|  
+|Réduire de 1 la valeur CSS sélectionnée|Flèche Bas|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md)   
