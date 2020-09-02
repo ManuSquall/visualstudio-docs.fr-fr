@@ -14,19 +14,19 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d07a62027b494242d3c25aba00fbd5f4d75df78b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193913"
 ---
 # <a name="projectsubtype-element-visual-studio-templates"></a>ProjectSubType, élément (modèles Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Classe le modèle dans une sous-catégorie de la valeur spécifiée dans le `ProjectType` élément.  
+Classe le modèle dans une sous-catégorie de la valeur spécifiée dans l' `ProjectType` élément.  
   
  \<VSTemplate>  
- \<TemplateData >  
+ \<TemplateData>  
  \<ProjectSubType>  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -58,20 +58,20 @@ Classe le modèle dans une sous-catégorie de la valeur spécifiée dans le `Pro
 ## <a name="remarks"></a>Notes  
  `ProjectSubType` est un élément enfant facultatif de `TemplateData`.  
   
- Le `ProjectSubType` élément fournit une sous-catégorie à la [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) élément. Cette valeur peut inclure :  
+ L' `ProjectSubType` élément fournit une sous-catégorie à l’élément [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) . Cette valeur peut inclure :  
   
-- `SmartDevice-NETCFv1`: Spécifie que le modèle cible le [!INCLUDE[Compact](../includes/compact-md.md)] version 1.0.  
+- `SmartDevice-NETCFv1`: Spécifie que le modèle cible la [!INCLUDE[Compact](../includes/compact-md.md)] version 1,0.  
   
-- `SmartDevice-NETCFv2`: Spécifie que le modèle concerne la [!INCLUDE[Compact](../includes/compact-md.md)] version 2.0.  
+- `SmartDevice-NETCFv2`: Spécifie que le tempalate cible la [!INCLUDE[Compact](../includes/compact-md.md)] version 2,0.  
   
-  Si un modèle contient un `ProjectType` élément avec une valeur de `Web`, le `ProjectSubType` élément spécifie le langage de programmation du modèle. Cet élément peut avoir les valeurs suivantes :  
+  Si un modèle contient un `ProjectType` élément avec la valeur `Web` , l' `ProjectSubType` élément spécifie le langage de programmation du modèle. Cet élément peut avoir les valeurs suivantes :  
   
 - `CSharp`: Spécifie que le modèle crée un [!INCLUDE[csprcs](../includes/csprcs-md.md)] projet Web ou un élément.  
   
 - `VisualBasic`: Spécifie que le modèle crée un [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] projet Web ou un élément.  
   
-## <a name="example"></a>Exemples  
- L’exemple suivant montre les métadonnées d’un modèle de projet pour un [!INCLUDE[csprcs](../includes/csprcs-md.md)] appareil application ciblant le [!INCLUDE[Compact](../includes/compact-md.md)] version 2.0.  
+## <a name="example"></a>Exemple  
+ L’exemple suivant montre les métadonnées d’un modèle de projet pour une [!INCLUDE[csprcs](../includes/csprcs-md.md)] application d’appareil ciblant la [!INCLUDE[Compact](../includes/compact-md.md)] version 2,0.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  

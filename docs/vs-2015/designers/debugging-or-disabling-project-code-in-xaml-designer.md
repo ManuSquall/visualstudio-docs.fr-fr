@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e7de0b3985e09f61fd0c63d1764304b150503883
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657930"
 ---
 # <a name="debugging-or-disabling-project-code-in-xaml-designer"></a>Débogage ou désactivation de code de projet dans le concepteur XAML
@@ -73,9 +73,9 @@ Dans bien des cas, les exceptions non gérées dans le concepteur XAML peuvent �
 
 - Dans la boîte de dialogue de l’exception non gérée, choisissez le lien **Cliquez ici pour désactiver l’exécution du code de projet et recharger le concepteur** .
 
-- Sinon, dans la barre d’outils du concepteur XAML, cliquez sur le bouton **Désactiver le code de projet** .
+- Sinon, dans la barre d’outils du concepteur XAML, choisissez le bouton **désactiver le code de projet** .
 
-     ![Bouton désactiver le code de projet](../designers/media/xaml-disablecode.png "XAML_DisableCode")
+     ![Le bouton Désactiver le code de projet](../designers/media/xaml-disablecode.png "XAML_DisableCode")
 
      Vous pouvez cliquer à nouveau sur le bouton pour réactiver le code de projet.
 

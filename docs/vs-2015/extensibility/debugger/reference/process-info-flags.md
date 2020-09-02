@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 88ff2a1da1f937fd4011932979bd95057eb40dfd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205052"
 ---
-# <a name="processinfoflags"></a>PROCESS_INFO_FLAGS
+# <a name="process_info_flags"></a>PROCESS_INFO_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Décrivent ou spécifient les propriétés d’un processus.  
+Décrit ou spécifie les propriétés d’un processus.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -50,7 +50,7 @@ enum enum_PROCESS_INFO_FLAGS { 
  Indique que le processus est un processus système.  
   
  PIFLAG_DEBUGGER_ATTACHED  
- Indique que le processus est en cours de débogage par un débogueur. Il peut être un [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] débogueur, ou il peut être certains autres débogueur, par exemple WinDbg.  
+ Indique que le processus est en cours de débogage par un débogueur. Il peut s’agir d’un [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] débogueur, ou il peut s’agir d’un autre débogueur, par exemple Windbg.  
   
  PIFLAG_PROCESS_STOPPED  
  Indique que le processus est arrêté. Valide uniquement si `PIFLAG_DEBUGGER_ATTACHED` est également spécifié. Disponible dans [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)] et versions ultérieures.  
@@ -59,16 +59,16 @@ enum enum_PROCESS_INFO_FLAGS { 
  Indique que le processus est en cours d’exécution. Valide uniquement si `PIFLAG_DEBUGGER_ATTACHED` est également spécifié. Disponible dans [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)] et versions ultérieures.  
   
 ## <a name="remarks"></a>Notes  
- Utilisé pour le `Flags` membre de la [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) structure.  
+ Utilisé pour le `Flags` membre de la structure [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) .  
   
- Ces indicateurs peuvent être combinées avec un opérateur de bits `OR`.  
+ Ces indicateurs peuvent être combinés avec une opération au niveau du bit `OR` .  
   
 ## <a name="requirements"></a>Configuration requise  
- En-tête : msdbg.h  
+ En-tête : msdbg. h  
   
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft. VisualStudio. Debugger. Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

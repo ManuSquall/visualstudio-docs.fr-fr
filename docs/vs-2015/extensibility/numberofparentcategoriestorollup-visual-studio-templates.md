@@ -14,19 +14,19 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 278d8537ee253d8c79024d5e866befa1d65ded0d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194198"
 ---
 # <a name="numberofparentcategoriestorollup-visual-studio-templates"></a>NumberOfParentCategoriesToRollUp (modèles Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Spécifie le nombre de catégories parentes qui afficheront le modèle dans le **nouveau projet** boîte de dialogue.  
+Spécifie le nombre de catégories parentes qui afficheront le modèle dans la boîte de dialogue **nouveau projet** .  
   
  \<VSTemplate>  
- \<TemplateData >  
+ \<TemplateData>  
  \<NumberOfParentCategoriesToRollUp>  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -53,15 +53,15 @@ Spécifie le nombre de catégories parentes qui afficheront le modèle dans le *
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Définit la catégorie du modèle et comment il s’affiche dans la boîte de dialogue **Nouveau projet** ou **Ajouter un nouvel élément** .|  
   
 ## <a name="text-value"></a>Valeur texte  
- Un `integer` valeur est requise.  
+ Une `integer` valeur est requise.  
   
- Cette valeur spécifie le nombre de catégories parentes qui afficheront le modèle dans le **nouveau projet** boîte de dialogue.  
+ Cette valeur spécifie le nombre de catégories parentes qui afficheront le modèle dans la boîte de dialogue **nouveau projet** .  
   
 ## <a name="remarks"></a>Notes  
  `NumberOfParentCategoriesToRollUp` est un élément facultatif.  
   
 ## <a name="example"></a>Exemple  
- Cet exemple illustre les métadonnées d’un [!INCLUDE[csprcs](../includes/csprcs-md.md)] application de Windows. Si un modèle avec ces métadonnées est placé deux niveaux de dossiers sous le niveau supérieur [!INCLUDE[csprcs](../includes/csprcs-md.md)] nœud, le modèle s’affiche dans le nœud de niveau supérieur dans le **nouveau projet** boîte de dialogue. Si le `NumberOfParentCategoriesToRollUp` n’est pas défini, le modèle apparaît seulement dans le nœud dans lequel il se trouve physiquement.  
+ Cet exemple illustre les métadonnées d’une [!INCLUDE[csprcs](../includes/csprcs-md.md)] application Windows. Si un modèle avec ces métadonnées est placé deux niveaux de dossier sous le nœud de niveau supérieur [!INCLUDE[csprcs](../includes/csprcs-md.md)] , le modèle s’affiche dans le nœud de niveau supérieur de la boîte de dialogue **nouveau projet** . Si le `NumberOfParentCategoriesToRollUp` n’est pas défini, le modèle apparaît uniquement dans le nœud dans lequel il se trouve physiquement.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  

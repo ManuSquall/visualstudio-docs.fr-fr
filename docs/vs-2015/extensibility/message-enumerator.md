@@ -12,18 +12,18 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6bd42c825cd45068e13178856e524268b426ec53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194340"
 ---
 # <a name="message-enumerator"></a>Énumérateur de message
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Les indicateurs suivants sont utilisés pour le `TEXTOUTPROC` (fonction), qui est une fonction de rappel que l’IDE fournit lorsqu’il appelle le [SccOpenProject](../extensibility/sccopenproject-function.md) (consultez [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) pour plus d’informations sur le rappel fonction).  
+Les indicateurs suivants sont utilisés pour la `TEXTOUTPROC` fonction, qui est une fonction de rappel fournie par l’IDE lorsqu’il appelle le [SccOpenProject](../extensibility/sccopenproject-function.md) (consultez [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) pour plus d’informations sur la fonction de rappel).  
   
- Si l’IDE est invité à annuler le processus, il peut obtenir un des messages d’annulation. Dans ce cas, la source de contrôler les plug-in utilise `SCC_MSG_STARTCANCEL` pour demander de l’IDE pour afficher le **Annuler** bouton. Après cela, n’importe quel jeu de messages normaux peut-être être envoyé. Si un des ces retourne `SCC_MSG_RTN_CANCEL`, puis le plug-in se ferme l’opération et retourne. Le plug-in également interroge `SCC_MSG_DOCANCEL` périodiquement pour déterminer si l’utilisateur a annulé l’opération. Lorsque toutes les opérations sont effectuées, ou si l’utilisateur a annulé, envoie le plug-in `SCC_MSG_STOPCANCEL`. Le `SCC_MSG_INFO`, SCC_MSG_WARNING, et les types SCC_MSG_ERROR sont utilisés pour les messages qui s’affichent dans la liste déroulante des messages. `SCC_MSG_STATUS` est un type spécial qui indique que le texte doit apparaître dans une barre d’état ou de la zone d’affichage temporaire. Il ne reste pas définitivement dans la liste.  
+ Si l’IDE est invité à annuler le processus, il peut recevoir l’un des messages d’annulation. Dans ce cas, le plug-in de contrôle de code source utilise `SCC_MSG_STARTCANCEL` pour demander à l’IDE d’afficher le bouton **Annuler** . Après cela, tout ensemble de messages normaux peut être envoyé. Si l’un de ces deux retournes `SCC_MSG_RTN_CANCEL` , le plug-in quitte l’opération et retourne. Le plug-in effectue également des interrogations `SCC_MSG_DOCANCEL` périodiques pour déterminer si l’utilisateur a annulé l’opération. Lorsque toutes les opérations sont terminées, ou si l’utilisateur a annulé, le plug-in envoie `SCC_MSG_STOPCANCEL` . Les `SCC_MSG_INFO` types, SCC_MSG_WARNING et SCC_MSG_ERROR sont utilisés pour les messages qui s’affichent dans la liste déroulante de messages. `SCC_MSG_STATUS` est un type spécial qui indique que le texte doit s’afficher dans une barre d’État ou dans une zone d’affichage temporaire. Elle n’est pas conservée de manière permanente dans la liste.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -43,28 +43,28 @@ enum { 
   
 ## <a name="members"></a>Membres  
  SCC_MSG_RTN_CANCEL  
- Retour de rappel pour indiquer l’annulation.  
+ Retour du rappel pour indiquer l’annulation.  
   
  SCC_MSG_RTN_OK  
- Retour de rappel pour continuer.  
+ Retour du rappel pour continuer.  
   
  SCC_MSG_INFO  
- Est un message d’information.  
+ Le message est informatif.  
   
  SCC_MSG_WARNING  
- Message est un avertissement.  
+ Le message est un avertissement.  
   
  SCC_MSG_ERROR  
- Message est une erreur.  
+ Le message est une erreur.  
   
  SCC_MSG_STATUS  
- Message est destiné à la barre d’état.  
+ Le message est destiné à la barre d’État.  
   
  SCC_MSG_DOCANCEL  
- Aucun texte ; IDE retourne `SCC_MSG_RTN_OK` ou `SCC_MSG_RTN_CANCEL`.  
+ Aucun texte ; L’IDE retourne `SCC_MSG_RTN_OK` ou `SCC_MSG_RTN_CANCEL` .  
   
  SCC_MSG_STARTCANCEL  
- Démarre une boucle de l’annuler.  
+ Démarre une boucle d’annulation.  
   
  SCC_MSG_STOPCANCEL  
  Arrête la boucle d’annulation.  

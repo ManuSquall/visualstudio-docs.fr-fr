@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::Bind | Microsoft Docs
+title: 'IDebugPendingBreakpoint2 :: bind | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,10 +14,10 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 33cdcad38e2f46962120dcd63c1be21675060be0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194538"
 ---
 # <a name="idebugpendingbreakpoint2bind"></a>IDebugPendingBreakpoint2::Bind
@@ -38,12 +38,12 @@ int Bind();
 ```  
   
 ## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Retourne `E_BP_DELETED` si le point d’arrêt a été supprimé.  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Retourne `E_BP_DELETED` si le point d’arrêt a été supprimé.  
   
 ## <a name="remarks"></a>Notes  
- Lorsque cette méthode est appelée, un moteur de débogage (dé) doit tenter de lier tous les emplacements de code qui correspondent à ce point d’arrêt en attente.  
+ Lorsque cette méthode est appelée, un moteur DE débogage (DE) doit tenter de lier ce point d’arrêt en attente à tous les emplacements de code qui correspondent.  
   
- Une fois que cette méthode est retournée, l’appelant doit attendre pour les événements indiquant que le point d’arrêt en attente a lié ou est erroné avant de considérer que les appels à la [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) ou [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)méthodes énumérera tous erreur ou liés aux points d’arrêt, respectivement.  
+ Après le retour de cette méthode, l’appelant doit attendre les événements qui indiquent que le point d’arrêt en attente a lié ou est erroné avant de supposer que les appels à [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) ou [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md). Methods énumèrent tous tous les points d’arrêt liés ou d’erreur, respectivement.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   

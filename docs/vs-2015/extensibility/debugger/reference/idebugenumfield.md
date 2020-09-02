@@ -13,10 +13,10 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ac993e3a4676f1c84a193ddbf6e9a3b5bc8fa235
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65676508"
 ---
 # <a name="idebugenumfield"></a>IDebugEnumField
@@ -30,34 +30,34 @@ Cette interface représente un type d’énumération.
 IDebugEnumField : IDebugContainerField  
 ```  
   
-## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs  
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
  Un fournisseur de symboles implémente cette interface pour représenter une énumération.  
   
-## <a name="notes-for-callers"></a>Notes de publication pour les appelants  
- Utilisez [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) pour obtenir cette interface à partir de la [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interface si [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) retourne `FIELD_TYPE_ENUM`.  
+## <a name="notes-for-callers"></a>Notes pour les appelants  
+ Utilisez [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) pour obtenir cette interface à partir de l’interface [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) si [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) retourne `FIELD_TYPE_ENUM` .  
   
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l’ordre VTable  
- Outre les méthodes sur le `IDebugField` et `IDebugContainerField` interfaces, cette interface implémente les méthodes suivantes :  
+ Outre les méthodes sur les `IDebugField` `IDebugContainerField` interfaces et, cette interface implémente les méthodes suivantes :  
   
 |Méthode|Description|  
 |------------|-----------------|  
 |[GetUnderlyingSymbol](../../../extensibility/debugger/reference/idebugenumfield-getunderlyingsymbol.md)|Retourne un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) décrivant le nom de ce type d’énumération.|  
-|[GetStringFromValue](../../../extensibility/debugger/reference/idebugenumfield-getstringfromvalue.md)|Retourne le nom de la constante d’énumération associé à la valeur donnée.|  
-|[GetValueFromString](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstring.md)|Retourne la valeur associée au nom de constante d’énumération donné|  
-|[GetValueFromStringCaseInsensitive](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstringcaseinsensitive.md)|Renvoie la valeur associée avec le nom de constante d’énumération donné, mais ignorer la casse.|  
+|[GetStringFromValue](../../../extensibility/debugger/reference/idebugenumfield-getstringfromvalue.md)|Retourne le nom de la constante d’énumération associée à la valeur donnée.|  
+|[GetValueFromString](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstring.md)|Retourne la valeur associée au nom de la constante d’énumération donnée|  
+|[GetValueFromStringCaseInsensitive](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstringcaseinsensitive.md)|Retourne la valeur associée au nom de la constante d’énumération donnée, mais qui ignore la casse.|  
   
 ## <a name="remarks"></a>Notes  
- Il est le symbole sous-jacent qui est effectivement lié à un emplacement avec [lier](../../../extensibility/debugger/reference/idebugbinder-bind.md).  
+ Il s’agit du symbole sous-jacent qui est réellement lié à un emplacement avec [Bind](../../../extensibility/debugger/reference/idebugbinder-bind.md).  
   
 ## <a name="requirements"></a>Configuration requise  
- En-tête : sh.h  
+ En-tête : SH. h  
   
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft. VisualStudio. Debugger. Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
- [Interfaces de fournisseur de symboles](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
+ [Interfaces du fournisseur de symboles](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
  [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
- [Bind](../../../extensibility/debugger/reference/idebugbinder-bind.md)
+ [Établis](../../../extensibility/debugger/reference/idebugbinder-bind.md)

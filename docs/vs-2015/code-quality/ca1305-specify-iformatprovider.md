@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 025d76f8e946dd3021141d6736c6b4bd40d57170
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539084"
 ---
 # <a name="ca1305-specify-iformatprovider"></a>CA1305 : Spécifier IFormatProvider
@@ -32,7 +32,7 @@ ms.locfileid: "85539084"
 |Category|Microsoft. Globalization|
 |Modification avec rupture|Sans rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Une méthode ou un constructeur appelle un ou plusieurs membres qui ont des surcharges qui acceptent un <xref:System.IFormatProvider?displayProperty=fullName> paramètre, et la méthode ou le constructeur n’appelle pas la surcharge qui prend le <xref:System.IFormatProvider> paramètre. Cette règle ignore les appels aux [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] méthodes documentées comme ignorant le <xref:System.IFormatProvider> paramètre et en plus des méthodes suivantes :
 
 - <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>
@@ -61,7 +61,7 @@ ms.locfileid: "85539084"
  Il est possible de supprimer sans risque un avertissement de cette règle lorsqu’il est certain que le fournisseur de format/culture par défaut est le bon choix et où la maintenabilité du code n’est pas une priorité de développement importante.
 
 ## <a name="example"></a>Exemple
- Dans l’exemple suivant, `BadMethod` provoque deux violations de cette règle. `GoodMethod`corrige la première violation en passant la culture dite indifférente à <xref:System.String.Compare%2A> et corrige la deuxième violation en passant la culture actuelle à, <xref:System.String.ToLower%2A> car `string3` est affiché à l’utilisateur.
+ Dans l’exemple suivant, `BadMethod` provoque deux violations de cette règle. `GoodMethod` corrige la première violation en passant la culture dite indifférente à <xref:System.String.Compare%2A> et corrige la deuxième violation en passant la culture actuelle à, <xref:System.String.ToLower%2A> car `string3` est affiché à l’utilisateur.
 
  [!code-csharp[FxCop.Globalization.CultureInfo#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Globalization.CultureInfo/cs/FxCop.Globalization.CultureInfo.cs#1)]
 

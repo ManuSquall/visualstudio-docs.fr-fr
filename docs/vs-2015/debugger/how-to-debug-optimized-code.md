@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Déboguer le Code optimisé | Microsoft Docs'
+title: 'Comment : déboguer le code optimisé | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,17 +24,17 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 68ce036d420293e8a75bec1b2cac9f9ee8f8fcd2
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65675611"
 ---
-# <a name="how-to-debug-optimized-code"></a>Procédure : déboguer du code optimisé
+# <a name="how-to-debug-optimized-code"></a>Comment : déboguer le code optimisé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 REMARQUE]
-> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez Importation et exportation de paramètres dans le menu Outils. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Les boîtes de dialogue et les commandes de menu affichées peuvent différer de celles décrites dans l'Aide selon les paramètres actifs ou le mode d'édition. Pour modifier vos paramètres, choisissez Importation et exportation de paramètres dans le menu Outils. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 > [!NOTE]
 > L’option de compilateur [/Zo (Améliorer le débogage optimisé)](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) (introduite dans Visual Studio Update 3) génère des informations de débogage plus détaillées pour le code optimisé (projets qui ne sont pas générés avec l’option de compilateur **/Od**. Consultez [Options /O (Optimiser le code)](https://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d)). Cela inclut la prise en charge améliorée pour le débogage des variables locales et des fonctions inline.  
@@ -65,7 +65,7 @@ REMARQUE]
   
 2. Sélectionnez le projet dans l’Explorateur de solutions.  
   
-3. Dans le menu **vue**, cliquez sur **Pages de propriétés**.  
+3. Dans le menu **Affichage**, cliquez sur **Pages de propriétés**.  
   
 4. Dans la boîte de dialogue **Pages de propriétés**, vérifiez que `Debug` est sélectionné dans la liste déroulante **Configuration**.  
   
@@ -73,11 +73,11 @@ REMARQUE]
   
 6. Sous le dossier **C++**, sélectionnez `Optimization`.  
   
-7. Dans la liste des propriétés affichée à droite, recherchez `Optimization`. Le paramètre en regard de la propriété indique probablement `Disabled (`[/Od](https://msdn.microsoft.com/library/b1ac31b7-e086-4eeb-be5e-488f7513f5f5)`)`. Sélectionnez une des autres options (`Minimum Size``(`[/O1](https://msdn.microsoft.com/library/2d1423f5-53d9-44da-8908-b33a351656c2)`)`, `Maximum Speed``(`[/O2](https://msdn.microsoft.com/library/2d1423f5-53d9-44da-8908-b33a351656c2)`)`, `Full Optimization``(`[/Ox](https://msdn.microsoft.com/library/3ad7c30b-c615-428c-b1d0-2e024f81c760)`)` ou `Custom`).  
+7. Dans la liste des propriétés affichée à droite, recherchez `Optimization`. Le paramètre en regard de ce paramètre indique probablement `Disabled (` [/OD](https://msdn.microsoft.com/library/b1ac31b7-e086-4eeb-be5e-488f7513f5f5) `)` . Choisissez l’une des autres options ( `Minimum Size``(` [/O1](https://msdn.microsoft.com/library/2d1423f5-53d9-44da-8908-b33a351656c2) `)` , `Maximum Speed``(` [/O2](https://msdn.microsoft.com/library/2d1423f5-53d9-44da-8908-b33a351656c2) `)` , `Full Optimization``(` [/Ox](https://msdn.microsoft.com/library/3ad7c30b-c615-428c-b1d0-2e024f81c760) `)` ou `Custom` ).  
   
 8. Si vous avez choisi l'option `Custom` pour `Optimization`, vous pouvez maintenant définir des options pour l'une des autres propriétés affichées dans la liste des propriétés.  
   
-9. Sélectionnez les propriétés de Configuration, C/C++, nœud de ligne de commande de la page de propriétés de projet et ajoutez `(` [/Zo](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) `)` à la **des Options supplémentaires** zone de texte.  
+9. Sélectionnez le nœud Propriétés de configuration, C/C++, ligne de commande de la page Propriétés du projet et ajoutez `(` [/zo](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) `)` à la zone de texte **options supplémentaires** .  
   
     > [!WARNING]
     > `/Zo` nécessite Visual Studio 2013 Update 3 ou une version ultérieure.  

@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 50773821b328ea81381744bc6f32b3907cd1c5bc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657917"
 ---
 # <a name="updateconfiguration-devenvexe"></a>/Updateconfiguration (devenv.exe)
@@ -31,10 +31,10 @@ Notifie [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] pour qu’il fusionne le
 devenv /updateconfiguration
 ```
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] exécute cette commande automatiquement quand vous installez un package VSIX. Vous devez exécuter `devenv.exe /updateconfiguration` après la mise à jour corrective de vos fichiers pour que [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] mette à jour le cache MEF. Cela vous permet d’évaluer si votre correctif est adapté.
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
  La ligne de commande suivante permet à [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] de fusionner les packages [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] sur le système et de vérifier si des modifications ont été apportées au cache MEF.
 
 ```
