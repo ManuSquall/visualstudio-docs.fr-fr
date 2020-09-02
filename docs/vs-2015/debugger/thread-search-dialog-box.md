@@ -1,5 +1,5 @@
 ---
-title: Boîte de dialogue de recherche de thread | Microsoft Docs
+title: Boîte de dialogue recherche de thread | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,43 +12,43 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7090045097ed8d11d18faee44dcd74bb6f573b1b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197467"
 ---
 # <a name="thread-search-dialog-box"></a>Boîte de dialogue Recherche d'un thread
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Utilisez cette boîte de dialogue pour rechercher et sélectionner le nœud pour un thread spécifique dans [vue Threads](../debugger/threads-view.md). Pour afficher cette boîte de dialogue, déplacez le focus à un **Threads** fenêtre d’affichage. Puis choisissez **rechercher le Thread** à partir de la **recherche** menu.  
+Utilisez cette boîte de dialogue pour rechercher et sélectionner le nœud d’un thread spécifique dans la [vue threads](../debugger/threads-view.md). Pour afficher cette boîte de dialogue, déplacez le focus vers une fenêtre vue **Threads** . Ensuite, choisissez **Rechercher un thread** dans le menu **Rechercher** .  
   
- Les paramètres suivants sont disponibles :  
+ Les options suivantes sont disponibles :  
   
  **Thread**  
- L’ID de thread à rechercher.  
+ ID de thread à rechercher.  
   
  **Module**  
  Chaîne de module à rechercher.  
   
- **Sens de la recherche vers le haut ou vers le bas**  
- La direction de la recherche initiale.  
+ **Direction de la recherche vers le haut ou vers le bas**  
+ Direction initiale de la recherche.  
   
-## <a name="related-sections"></a>Rubriques connexes  
+## <a name="related-sections"></a>Sections connexes  
  [Propriétés du thread, boîte de dialogue](../debugger/thread-properties-dialog-box.md)  
- Permet d’afficher les propriétés d’un thread sélectionné dans la vue Threads.  
+ Permet d’afficher les propriétés d’un thread sélectionné dans la vue threads.  
   
- [Informations de référence sur Spy++](../debugger/spy-increment-reference.md)  
- Inclut des sections décrivant chaque Spy ++ menu et boîte de dialogue.  
+ [Référence Spy++](../debugger/spy-increment-reference.md)  
+ Comprend des sections décrivant chaque menu et boîte de dialogue Spy + +.  
   
- [Recherche d’un Thread dans la vue Threads](../debugger/how-to-search-for-a-thread-in-threads-view.md)  
- Explique comment rechercher un thread spécifique dans la vue Threads.  
+ [Recherche d’un thread dans la vue threads](../debugger/how-to-search-for-a-thread-in-threads-view.md)  
+ Explique comment rechercher un thread spécifique dans la vue threads.  
   
  [vue Threads](../debugger/threads-view.md)  
- Affiche une arborescence de threads actifs  
+ Affiche une arborescence des threads actifs  
   
  [Vues Spy++](../debugger/spy-increment-views.md)  
- Explique les arborescences Spy ++ de windows, les messages, les processus et les threads.  
+ Explique les vues de l’arborescence Spy + + des fenêtres, des messages, des processus et des threads.  
   
- [Utilisation de Spy++](../debugger/using-spy-increment.md)  
- Présente l’outil Spy ++ et explique comment il peut être utilisé.
+ [Utiliser Spy++](../debugger/using-spy-increment.md)  
+ Présente l’outil Spy + + et explique comment l’utiliser.

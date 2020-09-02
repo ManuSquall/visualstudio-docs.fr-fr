@@ -1,5 +1,5 @@
 ---
-title: Principes de base du débogueur | Microsoft Docs
+title: Concepts de base du débogueur | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1228b75b1e0e579012f0c2a04a100cb615ae1687
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145706"
 ---
 # <a name="debugger-basics"></a>Principes de base du débogueur
@@ -36,7 +36,7 @@ Le débogueur Visual Studio vous permet d’observer le comportement de votre pr
  [Naviguer dans le code avec le débogueur](../debugger/navigating-through-code-with-the-debugger.md)  
  Explique comment parcourir le code avec le débogueur.  
   
- [Utilisation des points d’arrêt](../debugger/using-breakpoints.md)  
+ [Utilisation des points d'arrêt](../debugger/using-breakpoints.md)  
  Décrit ce que sont les points d’arrêt et comment les utiliser.  
   
  [Fenêtres du débogueur](../debugger/debugger-windows.md)  
@@ -48,13 +48,13 @@ Le débogueur Visual Studio vous permet d’observer le comportement de votre pr
  [Gestion des exceptions](../debugger/managing-exceptions-with-the-debugger.md)  
  Décrit les exceptions, comment le débogueur les gère, comment modifier cette gestion, comment déterminer où s’est produite l’exception et comment afficher le contenu des variables. Décrit également les limitations pour les exceptions non gérées dans le code managé et la résolution des exceptions dans le code natif (C++).  
   
- [S’attacher à des processus en cours d’exécution](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)  
+ [Joindre aux processus en cours d’exécution](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)  
  Explique comment s’attacher à un processus en cours d’exécution.  
   
- [Spécifier les fichiers de symbole (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
+ [Spécifier les fichiers de symboles (.pdb) et les fichiers source](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
  Explique comment spécifier des fichiers de symboles et des fichiers sources pour le débogage.  
   
- [Déboguer des applications 64 bits](../debugger/debug-64-bit-applications.md)  
+ [Déboguer des applications 64 bits](../debugger/debug-64-bit-applications.md)  
  Explique comment déboguer les applications 64 bits et résoudre les problèmes.  
   
  [Sécurité du débogueur](../debugger/debugger-security.md)  

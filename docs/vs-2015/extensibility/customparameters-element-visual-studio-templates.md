@@ -1,5 +1,5 @@
 ---
-title: CustomParameters, élément (modèles Visual Studio) | Microsoft Docs
+title: Élément CustomParameters, (modèles Visual Studio) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,16 +13,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3f7be98415a4ab0d6d5c2d00891680e2959e93fe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62555936"
 ---
 # <a name="customparameters-element-visual-studio-templates"></a>CustomParameters, élément (modèles Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Regroupe les paramètres personnalisés qui doivent être passés à l’Assistant modèle lorsque les remplacements de paramètres.  
+Regroupe les paramètres personnalisés qui doivent être passés à l’Assistant modèle lorsque l’Assistant effectue des remplacements de paramètres.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -43,7 +43,7 @@ Regroupe les paramètres personnalisés qui doivent être passés à l’Assista
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[CustomParameter](../extensibility/customparameter-element-visual-studio-templates.md)|Élément facultatif.<br /><br /> Contient un nom de paramètre personnalisé et une valeur à utiliser lorsqu’un projet ou un élément est créé à partir du modèle. Un élément `CustomParameter` peut ne contenir aucun élément `CustomParameters` ou en contenir plusieurs.|  
+|[CustomParameter](../extensibility/customparameter-element-visual-studio-templates.md)|Élément facultatif.<br /><br /> Contient le nom et la valeur d’un paramètre personnalisé à utiliser lors de la création d’un projet ou d’un élément à partir du modèle. Un élément `CustomParameter` peut ne contenir aucun élément `CustomParameters` ou en contenir plusieurs.|  
   
 ### <a name="parent-elements"></a>Éléments parents  
   
@@ -54,7 +54,7 @@ Regroupe les paramètres personnalisés qui doivent être passés à l’Assista
 ## <a name="remarks"></a>Notes  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant montre comment utiliser plusieurs paramètres personnalisés dans un modèle. Création d’un projet ou un élément à partir d’un modèle avec les paramètres personnalisés suivants, toutes les instances de `$color1$` et `$color2$` dans le modèle de fichiers seront remplacées par `Red` et `Blue`, respectivement.  
+ L’exemple suivant montre comment utiliser plusieurs paramètres personnalisés dans un modèle. Lorsqu’un projet ou un élément est créé à partir d’un modèle avec les paramètres personnalisés suivants, toutes les instances de `$color1$` et `$color2$` dans les fichiers de modèles sont remplacées par `Red` et `Blue` , respectivement.  
   
 ```  
 <CustomParameters>  
@@ -64,6 +64,6 @@ Regroupe les paramètres personnalisés qui doivent être passés à l’Assista
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [CustomParameter, élément (modèles Visual Studio)](../extensibility/customparameter-element-visual-studio-templates.md)   
+ [Élément CustomParameter (modèles Visual Studio)](../extensibility/customparameter-element-visual-studio-templates.md)   
  [Paramètres de modèle](../ide/template-parameters.md)   
  [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

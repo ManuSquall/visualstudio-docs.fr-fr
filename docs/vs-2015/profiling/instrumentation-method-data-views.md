@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ac4e3bf3c5dfa20729fe2270121b7649041d9e59
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68159604"
 ---
 # <a name="instrumentation-method-data-views"></a>Vues de données de la méthode d'instrumentation
@@ -28,26 +28,26 @@ Cette section contient des informations de référence pour les vues et rapports
  [Vue Résumé](../profiling/summary-view-instrumentation-data.md)  
  Répertorie les fonctions qui ont exigé le plus de temps et les fonctions qui ont fait le travail le plus individuel.  
   
- [Mode Arborescence des appels](../profiling/call-tree-view-instrumentation-data.md)  
+ [Vue Arborescence des appels](../profiling/call-tree-view-instrumentation-data.md)  
  Affiche les chemins d’exécution des fonctions dans une arborescence hiérarchique.  
   
- [Modules, mode](../profiling/modules-view-instrumentation-data.md)  
+ [Vue Modules](../profiling/modules-view-instrumentation-data.md)  
  Organise les données de profilage par module et répertorie les données de profilage pour les fonctions présentes dans le module.  
   
- [Vue Appelant/appelé - Données d’instrumentation](../profiling/caller-callee-view-instrumentation-data.md)  
+ [Vue appelant/appelé-données d’instrumentation](../profiling/caller-callee-view-instrumentation-data.md)  
  Affiche les données de profilage pour les fonctions parentes et enfants d’une fonction sélectionnée.  
   
- [Mode Fonctions](../profiling/functions-view-instrumentation-data.md)  
+ [Vue Fonctions](../profiling/functions-view-instrumentation-data.md)  
  Répertorie les données de profilage par fonction.  
   
 ## <a name="reference"></a>Référence  
  [Vue Informations relatives à la fonction](../profiling/function-details-view.md)  
  Affiche un graphique de la relation qui existe entre une fonction sélectionnée et les fonctions qui l’ont appelée et qui ont été appelées par celle-ci.  
   
- [Processus, vue](../profiling/process-view.md)  
+ [Vue Processus](../profiling/process-view.md)  
  Affiche le début, la fin et la durée de vie des tous les processus qui ont été profilés.  
   
-## <a name="related-sections"></a>Rubriques connexes  
+## <a name="related-sections"></a>Sections connexes  
  [Vues de données de la méthode d’échantillonnage](../profiling/profiler-sampling-method-data-views.md)  
  Informations de référence pour les vues et rapports des fichiers de données du profileur générés à l’aide de la méthode d’échantillonnage.  
   
@@ -58,4 +58,4 @@ Cette section contient des informations de référence pour les vues et rapports
  Informations de référence pour les vues et rapports des fichiers de données du profileur générés à l’aide de la méthode appropriée pour les conflits de threads.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Présentation des valeurs de données d’instrumentation](../profiling/understanding-instrumentation-data-values.md)
+ [Fonctionnement des valeurs de données d’instrumentation](../profiling/understanding-instrumentation-data-values.md)

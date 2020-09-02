@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetAllAliases | Microsoft Docs
+title: 'IDebugBinder3 :: GetAllAliases | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dc2075ccc37d280640f7559b1454990ee6684f25
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62555746"
 ---
 # <a name="idebugbinder3getallaliases"></a>IDebugBinder3::GetAllAliases
@@ -44,16 +44,16 @@ int GetAllAliases(
   
 #### <a name="parameters"></a>Paramètres  
  `uRequest`  
- [in] Le nombre maximal d’alias à retourner (spécifie la longueur du tableau passé dans `ppAliases`).  
+ dans Nombre maximal d’alias à retourner (spécifie la longueur du tableau passé à `ppAliases` ).  
   
  `ppAliases`  
- [in, out] Tableau à remplir avec des alias (s’il s’agit d’une valeur null et `uRequest` est 0, le nombre d’alias qui peuvent être retournées est renvoyé par `puFetched`).  
+ [in, out] Tableau à remplir avec des alias (s’il s’agit d’une valeur null et `uRequest` est égal à 0, le nombre d’alias qui peuvent être retournés est retourné par `puFetched` ).  
   
  `puFetched`  
- [out] Retourne le nombre d’alias obtenu.  
+ à Retourne le nombre d’alias obtenus.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

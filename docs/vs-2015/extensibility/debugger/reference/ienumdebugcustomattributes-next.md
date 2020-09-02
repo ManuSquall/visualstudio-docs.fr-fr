@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugCustomAttributes::Next | Microsoft Docs
+title: 'IEnumDebugCustomAttributes :: suivant | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6f6ce0a8199bfb279c8f8d628de0b174d7f03369
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62551401"
 ---
 # <a name="ienumdebugcustomattributesnext"></a>IEnumDebugCustomAttributes::Next
@@ -44,16 +44,16 @@ int Next(
   
 #### <a name="parameters"></a>Paramètres  
  `celt`  
- [in] Le nombre d’éléments à récupérer. Spécifie également la taille maximale de la `rgelt` tableau.  
+ [in] Nombre d'éléments à récupérer. Spécifie également la taille maximale du `rgelt` tableau.  
   
  `rgelt`  
- [out] Un tableau de [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md) objets doit être renseigné.  
+ à Tableau d’objets [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md) à remplir.  
   
  `pceltFetched`  
- [out] Retourne le nombre d’éléments réellement retournés dans `rgelt`.  
+ à Retourne le nombre d’éléments réellement retournés dans `rgelt` .  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si inférieur au nombre demandé d’éléments peut être retournés ; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si un nombre inférieur au nombre d’éléments demandés peut être retourné ; sinon, retourne un code d’erreur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)   

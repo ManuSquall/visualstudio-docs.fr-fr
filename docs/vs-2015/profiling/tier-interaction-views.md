@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f313865f892fb17b5c7e2c5f0ad7ecfc800be803
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145563"
 ---
 # <a name="tier-interaction-views"></a>Interaction de couche, vues
@@ -23,9 +23,9 @@ ms.locfileid: "68145563"
 
 Le profilage d’interaction de couche fournit des informations supplémentaires sur les temps d’exécution des fonctions des applications multicouches qui communiquent avec des bases de données via [!INCLUDE[vstecado](../includes/vstecado-md.md)]. Les données sont collectées uniquement pour les appels de fonctions synchrones. Vous pouvez inclure des données d’interaction de couche dans toutes les méthodes de profilage.  
   
- **Spécifications**  
+ **Configuration requise**  
   
 - [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]  
   
 ## <a name="in-this-section"></a>Dans cette section  
- [Vue Interactions de couche](../profiling/tier-interactions-view.md)
+ [Interactions de couche (vue)](../profiling/tier-interactions-view.md)

@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3ad0570436dda6ac9ae52325c891b32a563cf6f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62547362"
 ---
-# <a name="idiadatasourcegetlasterror"></a>IDiaDataSource::get_lastError
+# <a name="idiadatasourceget_lasterror"></a>IDiaDataSource::get_lastError
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Récupère le nom de fichier pour la dernière erreur de chargement.  
+Récupère le nom de fichier de la dernière erreur de chargement.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -35,12 +35,12 @@ HRESULT get_lastError (
   
 #### <a name="parameters"></a>Paramètres  
  pRetVal  
- [out] Retourne une chaîne qui contient le nom de fichier .pdb associé à la dernière erreur de chargement.  
+ à Retourne une chaîne qui contient le nom de fichier. pdb associé à la dernière erreur de chargement.  
   
-## <a name="return-value"></a>Valeur de retour  
- Retourne le dernier code d’erreur provoqué par une opération de chargement. Retourne `E_INVALIDARG` si le `pRetVal` paramètre est `NULL`.  
+## <a name="return-value"></a>Valeur renvoyée  
+ Retourne le dernier code d’erreur provoqué par une opération de chargement. Retourne `E_INVALIDARG` si le `pRetVal` paramètre a la valeur `NULL` .  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a> Exemple  
   
 ```cpp#  
 BSTR    fileName;  

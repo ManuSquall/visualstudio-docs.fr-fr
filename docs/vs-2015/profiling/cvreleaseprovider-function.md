@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7d5e611c2a964fcbb78a387a09989436e672ecd6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62551232"
 ---
 # <a name="cvreleaseprovider-function"></a>CvReleaseProvider, fonction
@@ -35,12 +35,12 @@ HRESULT CvReleaseProvider(
   
 #### <a name="parameters"></a>Paramètres  
  `pProvider`  
- Contexte du fournisseur. Ne peut pas être Null.  
+ Contexte du fournisseur. Ne peut pas avoir la valeur NULL.  
   
-## <a name="return-value"></a>Valeur de retour  
+## <a name="return-value"></a>Valeur renvoyée  
  S_OK lorsque le fournisseur est correctement libéré, ou code d’erreur en cas d’erreur. Utilisez les macros SUCCEEDED/FAILED pour vérifier la condition d’erreur.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  **En-tête** : cvmarkers.h  
   
 ## <a name="see-also"></a>Voir aussi  

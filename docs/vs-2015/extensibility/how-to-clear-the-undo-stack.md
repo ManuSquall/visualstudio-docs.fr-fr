@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Effacer la pile d’annulations | Microsoft Docs'
+title: 'Comment : effacer la pile d’annulations | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,20 +11,20 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: db77f93fd7f6af16b5358b75b6ffcd5927430653
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62549167"
 ---
-# <a name="how-to-clear-the-undo-stack"></a>Procédure : Effacer la pile d’annulation
+# <a name="how-to-clear-the-undo-stack"></a>Guide pratique pour effacer la pile des opérations d’annulation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La procédure suivante ci-dessous explique comment effacer la pile d’annulation.  
+La procédure suivante explique comment effacer la pile d’annulations.  
   
-### <a name="to-clear-the-undo-stack"></a>Pour effacer la pile d’annulation  
+### <a name="to-clear-the-undo-stack"></a>Pour effacer la pile d’annulations  
   
-1. Pour effacer la pile d’annulation utilisent le [IOleUndoManager::DiscardFrom](/windows/desktop/api/ocidl/nf-ocidl-ioleundomanager-discardfrom) (méthode). Voici un exemple de ceci :  
+1. Pour effacer la pile d’annulations, utilisez la méthode [IOleUndoManager ::D iscardfrom](/windows/desktop/api/ocidl/nf-ocidl-ioleundomanager-discardfrom) . Voici un exemple :  
   
     ```  
     HRESULT CCmdWindow::ClearUndoStack()  

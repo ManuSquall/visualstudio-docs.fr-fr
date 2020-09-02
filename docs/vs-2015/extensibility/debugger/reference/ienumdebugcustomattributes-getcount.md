@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugCustomAttributes::GetCount | Microsoft Docs
+title: 'IEnumDebugCustomAttributes :: GetCount | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9c175297bf0f80c74e0c3409843164e0b08589ef
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62551489"
 ---
 # <a name="ienumdebugcustomattributesgetcount"></a>IEnumDebugCustomAttributes::GetCount
@@ -40,13 +40,13 @@ int GetCount(
   
 #### <a name="parameters"></a>Paramètres  
  `pcelt`  
- [out] Retourne le nombre d’éléments dans l’énumération.  
+ à Retourne le nombre d’éléments dans l’énumération.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode ne fait pas partie de l’interface d’énumération COM habituel qui spécifie que seules `Next`, `Clone`, `Skip`, et `Reset` doivent être implémentées.  
+ Cette méthode ne fait pas partie de l’interface d’énumération com personnalisée qui spécifie que seuls, `Next` `Clone` , `Skip` et `Reset` doivent être implémentés.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugField::GetInfo | Microsoft Docs
+title: 'IDebugField :: GetInfo | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b4b4b17242d1d2098c085acae0b88c91ecfb5441
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62547752"
 ---
 # <a name="idebugfieldgetinfo"></a>IDebugField::GetInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Cette méthode obtient des informations peut être affichées sur le champ.  
+Cette méthode obtient des informations affichables sur le champ.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -42,13 +42,13 @@ int GetInfo(
   
 #### <a name="parameters"></a>Paramètres  
  `dwFields`  
- [in] Une combinaison de [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) constantes qui sélectionne les informations à afficher. Si le champ représente un symbole, c’est généralement le nom de symbole et le type.  
+ dans Combinaison de [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) constantes qui sélectionne les informations à afficher. Si le champ représente un symbole, il s’agit généralement du nom et du type de symbole.  
   
  `pFieldInfo`  
- [out] Retourne les informations dans la liste fournie [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) structure.  
+ à Retourne les informations contenues dans la structure [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) fournie.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   

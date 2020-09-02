@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Ouvrir la vue Messages à partir de la fenêtre Rechercher | Microsoft Docs'
+title: 'Comment : ouvrir la vue messages à partir de rechercher une fenêtre | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,45 +13,45 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ee29135e659eff7e4965b6b1fb0d24de2c2e90cc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157882"
 ---
-# <a name="how-to-open-messages-view-from-find-window"></a>Procédure : ouvrir la vue Messages à partir de la fenêtre Rechercher
+# <a name="how-to-open-messages-view-from-find-window"></a>Comment : ouvrir la vue Messages à partir de Rechercher une fenêtre
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Il peut s’avérer pratique d’utiliser le **rechercher une fenêtre** boîte de dialogue pour sélectionner une fenêtre cible, puis ouvrez un affichage de Messages de cette fenêtre.  
+Il peut s’avérer pratique d’utiliser la boîte de dialogue **Rechercher** une fenêtre pour sélectionner une fenêtre cible, puis d’ouvrir une vue messages de cette fenêtre.  
   
-### <a name="to-open-a-messages-view-window-using-the-find-window-dialog-box"></a>Pour ouvrir une fenêtre d’affichage de Messages à l’aide de la boîte de dialogue Rechercher une fenêtre  
+### <a name="to-open-a-messages-view-window-using-the-find-window-dialog-box"></a>Pour ouvrir une fenêtre d’affichage des messages à l’aide de la boîte de dialogue Rechercher une fenêtre  
   
-1. Réorganisez vos fenêtres afin que Spy ++ et la fenêtre cible sont visibles.  
+1. Réorganisez vos fenêtres de manière à ce que Spy + + et la fenêtre cible soient visibles.  
   
-2. À partir de la **Spy** menu, choisissez **rechercher une fenêtre**.  
+2. Dans le menu **Espion** , choisissez **Rechercher une fenêtre**.  
   
-     Le [boîte de dialogue Rechercher une fenêtre](../debugger/find-window-dialog-box.md) s’ouvre.  
+     La [boîte de dialogue Rechercher une fenêtre](../debugger/find-window-dialog-box.md) s’ouvre.  
   
-3. À partir de la **Windows** onglet, faites glisser le **outil recherche** sur la fenêtre cible. Lorsque vous faites glisser l’outil, le **rechercher une fenêtre** boîte de dialogue affiche des détails sur la fenêtre sélectionnée.  
+3. À partir de l’onglet **Windows** , faites glisser l' **outil recherche** sur la fenêtre cible. Lorsque vous faites glisser l’outil, la boîte de dialogue **Rechercher une fenêtre** affiche des détails sur la fenêtre sélectionnée.  
   
      – ou –  
   
-     Si vous avez le handle de la fenêtre que vous souhaitez examiner (par exemple, copié à partir du débogueur), vous pouvez la taper dans le **gérer** zone de texte.  
+     Si vous avez le handle de la fenêtre que vous souhaitez examiner (par exemple, copié à partir du débogueur), vous pouvez le taper dans la zone de texte **handle** .  
   
-4. Sous **afficher**, sélectionnez **Messages**.  
+4. Sous **Afficher**, sélectionnez **messages**.  
   
 5. Appuyez sur **OK**.  
   
-     Une valeur vide [vue Messages](../debugger/messages-view.md) fenêtre s’ouvre et un **Messages** menu est ajouté à la barre d’outils Spy ++.  
+     Une fenêtre d' [affichage des messages](../debugger/messages-view.md) vide s’ouvre et un menu **messages** est ajouté à la barre d’outils Spy + +.  
   
-6. À partir de la **Messages** menu, choisissez **des Options de journalisation**.  
+6. Dans le menu **messages** , choisissez **options de journalisation**.  
   
-     Le [la boîte de dialogue Options des messages](../debugger/message-options-dialog-box.md) s’ouvre.  
+     La [boîte de dialogue Options des messages](../debugger/message-options-dialog-box.md) s’ouvre.  
   
 7. Sélectionnez les options pour les messages que vous souhaitez afficher.  
   
-8. Appuyez sur **OK** pour commencer la journalisation des messages.  
+8. Appuyez sur **OK** pour commencer l’enregistrement des messages.  
   
-     Selon les options sélectionnées, messages commencent le streaming dans la fenêtre d’affichage de Messages active.  
+     En fonction des options sélectionnées, les messages commencent à diffuser en continu dans la fenêtre Affichage des messages actifs.  
   
-9. Lorsque vous avez suffisamment de messages, choisissez **Stop Logging** à partir de la **Messages** menu.
+9. Lorsque vous avez suffisamment de messages, choisissez **arrêter la journalisation** dans le menu **messages** .

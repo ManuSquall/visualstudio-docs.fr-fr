@@ -26,10 +26,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a188e90d3feeb903eb8b4efceb91eb53cac3bdce
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651846"
 ---
 # <a name="how-to-manage-editor-modes"></a>Guide pratique pour gérer les modes de l'éditeur
@@ -38,16 +38,16 @@ ms.locfileid: "72651846"
 Vous pouvez afficher l’éditeur de code Visual Studio dans différents modes d’affichage.
 
 > [!NOTE]
-> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Paramètres Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Les boîtes de dialogue et les commandes de menu affichées peuvent différer de celles décrites dans l'Aide selon les paramètres actifs ou le mode d'édition. Pour modifier vos paramètres, choisissez **Paramètres d'importation et d'exportation** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="enabling-full-screen-mode"></a>Activation du mode Plein écran
- Vous pouvez choisir de masquer toutes les fenêtres Outil et d’afficher uniquement les fenêtres de document en activant le mode **Plein écran**.
+ Vous pouvez choisir de masquer toutes les fenêtres outil et d’afficher uniquement les fenêtres de document en activant le mode **plein écran** .
 
 #### <a name="to-enable-full-screen-mode"></a>Pour activer le mode Plein écran
 
 - Appuyez sur Alt+Maj+Entrée pour entrer en mode **Plein écran** ou le quitter.
 
-     – ou –
+     \- ou -
 
 - Exécutez la commande `View.Fullscreen` dans la fenêtre **Commande**.
 

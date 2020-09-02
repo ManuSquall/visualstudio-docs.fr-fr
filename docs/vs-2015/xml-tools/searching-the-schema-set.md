@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0e3a8563d5e2cd29c9c521761498d7ef87b7cbab
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656160"
 ---
 # <a name="searching-the-schema-set"></a>Recherche dans le jeu de schémas
@@ -28,7 +28,7 @@ L'Explorateur de schémas XML vous permet d'effectuer les recherches suivantes d
 ## <a name="keyword-search"></a>Recherches par mot clé
  Pour effectuer des recherches par mot clé, entrez une sous-chaîne dans la zone de texte **Rechercher dans schémas** de la barre d’outils de l’Explorateur de schémas XML.
 
- ![Recherche par mot clé de l’Explorateur de schémas XML](../xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")
+ ![Recherche par mot clé de l'Explorateur de schémas XML](../xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")
 
  L'Explorateur de schémas XML recherche les éléments suivants dans le jeu de schémas :
 
@@ -46,7 +46,7 @@ L'Explorateur de schémas XML vous permet d'effectuer les recherches suivantes d
 
  Vous pouvez ajouter les résultats de la recherche à l’espace de travail en cliquant sur le bouton **Ajouter les nœuds en surbrillance à l’espace de travail** dans le volet des résultats de résumé.
 
- ![Résultat de la recherche dans l’Explorateur de schémas XML](../xml-tools/media/schemaexplorersearchresult.gif "SchemaExplorerSearchResult")
+ ![Résultat de la recherche dans l'Explorateur de schémas XML](../xml-tools/media/schemaexplorersearchresult.gif "SchemaExplorerSearchResult")
 
 ## <a name="clearing-search-results"></a>Effacement des résultats de la recherche
  Pour effacer les résultats de la recherche, cliquez sur le bouton **x** dans le volet de synthèse des résultats de la barre d’outils recherche de l’Explorateur de schémas XML.

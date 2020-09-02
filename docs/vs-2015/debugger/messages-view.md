@@ -1,5 +1,5 @@
 ---
-title: La vue messages | Microsoft Docs
+title: Affichage des messages | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,73 +14,73 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3765b9804224549c98b57cd1b0a44f0330d278b5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157490"
 ---
 # <a name="messages-view"></a>Affichage Messages
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Chaque fenêtre a un flux de message associé. Une fenêtre d’affichage de Messages affiche ce flux de message. Le handle de fenêtre, le code de message et le message sont affichés. Vous pouvez créer un affichage de Messages pour un thread ou un processus. Cela vous permet de vous permet d’afficher les messages envoyés à toutes les fenêtres appartenant à un processus spécifique ou un thread, qui est particulièrement utile pour capturer les messages de l’initialisation de fenêtre.  
+Chaque fenêtre est associée à un flux de message. Une fenêtre d’affichage des messages affiche ce flux de message. Le handle de fenêtre, le code du message et le message sont affichés. Vous pouvez également créer une vue messages pour un thread ou un processus. Cela vous permet d’afficher les messages envoyés à toutes les fenêtres détenues par un processus ou un thread spécifique, ce qui est particulièrement utile pour la capture des messages d’initialisation de fenêtre.  
   
- Une fenêtre d’affichage de Messages standard s’affiche ci-dessous. Notez que la première colonne contient le handle de fenêtre et la deuxième colonne contient un code de message (expliqué dans [Codes des messages](../debugger/message-codes.md)). Paramètres de message décodés et les valeurs de retour sont sur la droite.  
+ Une fenêtre d’affichage des messages standard apparaît ci-dessous. Notez que la première colonne contient le handle de fenêtre et que la deuxième colonne contient un code de message (expliqué dans [codes de message](../debugger/message-codes.md)). Les paramètres de message et les valeurs de retour décodés se trouvent à droite.  
   
- ![Spy&#43; &#43; la vue Messages](../debugger/media/spy-messagesview.png "Spy ++ _MessagesView")  
+ ![Affichage des messages de&#43;&#43; Spy](../debugger/media/spy-messagesview.png "_MessagesView Spy + +")  
 Vue Messages Spy++  
   
 ## <a name="procedures"></a>Procédures  
   
-#### <a name="to-open-a-messages-view-for-a-window-process-or-thread"></a>Pour ouvrir un affichage de Messages pour une fenêtre, un processus ou un thread  
+#### <a name="to-open-a-messages-view-for-a-window-process-or-thread"></a>Pour ouvrir une vue messages pour une fenêtre, un processus ou un thread  
   
-1. Déplacer le focus à un [Windows vue](../debugger/windows-view.md), [vue processus](../debugger/processes-view.md), ou [vue Threads](../debugger/threads-view.md) fenêtre.  
+1. Déplacer le focus vers une fenêtre vue [fenêtres](../debugger/windows-view.md), [processus](../debugger/processes-view.md)ou [Threads](../debugger/threads-view.md) .  
   
 2. Recherchez le nœud de l’élément dont vous souhaitez examiner les messages, puis sélectionnez-le.  
   
-3. À partir de la **Spy** menu, choisissez **Messages du journal**.  
+3. Dans le menu **Espion** , choisissez **journaux des messages**.  
   
-     Le [la boîte de dialogue Options des messages](../debugger/message-options-dialog-box.md) s’ouvre.  
+     La [boîte de dialogue Options des messages](../debugger/message-options-dialog-box.md) s’ouvre.  
   
-4. Sélectionnez les options pour le message que vous souhaitez afficher.  
+4. Sélectionnez les options du message que vous souhaitez afficher.  
   
-5. Appuyez sur **OK** pour commencer la journalisation des messages.  
+5. Appuyez sur **OK** pour commencer l’enregistrement des messages.  
   
-     Ouvre la fenêtre d’affichage des Messages, ainsi qu’un **Messages** menu est ajouté à la barre d’outils Spy ++. Selon les options sélectionnées, messages commencent le streaming dans la fenêtre d’affichage de Messages active.  
+     Une fenêtre d’affichage des messages s’ouvre et un menu **messages** est ajouté à la barre d’outils Spy + +. En fonction des options sélectionnées, les messages commencent à diffuser en continu dans la fenêtre Affichage des messages actifs.  
   
-6. Lorsque vous avez suffisamment de messages, choisissez **Stop Logging** à partir de la **Messages** menu.  
+6. Lorsque vous avez suffisamment de messages, choisissez **arrêter la journalisation** dans le menu **messages** .  
   
 ## <a name="in-this-section"></a>Dans cette section  
- [Contrôler la vue Messages](../debugger/how-to-control-messages-view.md)  
- Explique comment gérer la vue Messages.  
+ [Contrôle de la vue messages](../debugger/how-to-control-messages-view.md)  
+ Explique comment gérer la vue messages.  
   
- [Recherche d’un Message dans la vue Messages](../debugger/how-to-search-for-a-message-in-messages-view.md)  
- Explique comment rechercher un message spécifique dans la vue Messages.  
+ [Recherche d’un message dans la vue messages](../debugger/how-to-search-for-a-message-in-messages-view.md)  
+ Explique comment rechercher un message spécifique dans la vue messages.  
   
  [Démarrage et arrêt de l’affichage du journal des messages](../debugger/how-to-start-and-stop-the-message-log-display.md)  
- Explique comment démarrer et arrêter la journalisation des messages.  
+ Explique comment démarrer et arrêter l’enregistrement des messages.  
   
  [Codes des messages](../debugger/message-codes.md)  
- Définit les codes des messages répertoriés dans la vue Messages.  
+ Définit les codes des messages listés dans la vue messages.  
   
- [Affichage des propriétés de Message](../debugger/how-to-display-message-properties.md)  
- Guide pratique pour afficher plus d’informations sur un message.  
+ [Affichage des propriétés d’un message](../debugger/how-to-display-message-properties.md)  
+ Comment afficher plus d’informations sur un message.  
   
-## <a name="related-sections"></a>Rubriques connexes  
+## <a name="related-sections"></a>Sections connexes  
  [Vues Spy++](../debugger/spy-increment-views.md)  
- Explique les arborescences Spy ++ de windows, les messages, les processus et les threads.  
+ Explique les vues de l’arborescence Spy + + des fenêtres, des messages, des processus et des threads.  
   
- [Utilisation de Spy++](../debugger/using-spy-increment.md)  
- Présente l’outil Spy ++ et explique comment il peut être utilisé.  
+ [Utiliser Spy++](../debugger/using-spy-increment.md)  
+ Présente l’outil Spy + + et explique comment l’utiliser.  
   
  [Options des messages, boîte de dialogue](../debugger/message-options-dialog-box.md)  
- Permet de sélectionner les messages sont répertoriés dans la vue Messages active.  
+ Permet de sélectionner les messages qui sont répertoriés dans la vue messages actifs.  
   
- [Recherche d’un message, boîte de dialogue](../debugger/message-search-dialog-box.md)  
- Utilisé pour rechercher le nœud pour un message spécifique dans la vue Messages.  
+ [Boîte de dialogue Recherche d'un message](../debugger/message-search-dialog-box.md)  
+ Utilisé pour rechercher le nœud pour un message spécifique dans la vue messages.  
   
- [Propriétés du message, boîte de dialogue](../debugger/message-properties-dialog-box.md)  
- Permet d’afficher les propriétés d’un message sélectionné dans la vue de Message.  
+ [Boîte de dialogue Propriétés du message](../debugger/message-properties-dialog-box.md)  
+ Permet d’afficher les propriétés d’un message sélectionné dans la vue message.  
   
- [Informations de référence sur Spy++](../debugger/spy-increment-reference.md)  
- Inclut des sections décrivant chaque Spy ++ menu et boîte de dialogue.
+ [Référence Spy++](../debugger/spy-increment-reference.md)  
+ Comprend des sections décrivant chaque menu et boîte de dialogue Spy + +.

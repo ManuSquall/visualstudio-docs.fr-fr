@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 91a4a50ecc745c0b56167d6a5dbb1932af7ed2bf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145416"
 ---
 # <a name="understanding-sampling-data-values"></a>Fonctionnement des valeurs de données d’échantillonnage
@@ -24,7 +24,7 @@ ms.locfileid: "68145416"
 
 La méthode de profilage par *échantillonnage* des outils de profilage de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] interrompt le processeur de l’ordinateur à des intervalles définis et collecte la pile des appels des fonctions. Une *pile des appels* est une structure dynamique qui stocke des informations sur les fonctions qui s’exécutent sur le processeur.  
   
- **Spécifications**  
+ **Configuration requise**  
   
 - [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
@@ -53,5 +53,5 @@ La méthode de profilage par *échantillonnage* des outils de profilage de [!INC
  Pourcentage du nombre total d’échantillons exclusifs lors de l’exécution du profilage qui sont des échantillons exclusifs de la fonction ou de la plage de données.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour Choisissez les méthodes de collecte](../profiling/how-to-choose-collection-methods.md)   
+ [Comment : choisir des méthodes de collection](../profiling/how-to-choose-collection-methods.md)   
  [Analyse des données des outils d’analyse des performances](../profiling/analyzing-performance-tools-data.md)

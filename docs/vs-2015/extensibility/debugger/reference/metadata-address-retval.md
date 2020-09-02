@@ -13,16 +13,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6f685bcfad5cf576215aa50aa26540ba207de2e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62546861"
 ---
-# <a name="metadataaddressretval"></a>METADATA_ADDRESS_RETVAL
+# <a name="metadata_address_retval"></a>METADATA_ADDRESS_RETVAL
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Cette structure représente une valeur de retour à partir d’une méthode ou une fonction.  
+Cette structure représente une valeur de retour d’une méthode ou d’une fonction.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -46,28 +46,28 @@ public struct METADATA_ADDRESS_RETVAL {
   
 ## <a name="terms"></a>Termes  
  tokMethod  
- ID de la méthode pour cette valeur de retour.  
+ ID de la méthode pour laquelle cette valeur de retour est.  
   
  dwCorType  
- Le type de base de la valeur de retour. Il s’agit d’une valeur comprise entre le `CorElementType` énumération définie dans le [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] fichier corhdr.h de kit de développement logiciel.  
+ Type de base de la valeur de retour. Il s’agit d’une valeur de l' `CorElementType` énumération définie dans le [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] fichier du kit de développement logiciel (SDK). h.  
   
  dwSigSize  
- La taille de la signature de la valeur de retour (tel que stocké dans `rgSig`).  
+ Taille de la signature de la valeur de retour (telle qu’elle est stockée dans `rgSig` ).  
   
  rgSig  
- Un tableau d’octets qui forment la signature de la valeur de retour.  
+ Tableau d’octets formant la signature de la valeur de retour.  
   
 ## <a name="remarks"></a>Notes  
- Cette structure fait partie de l’union dans le [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) structure lorsque le `dwKind` champ la `DEBUG_ADDRESS_UNION` structure est définie sur `ADDRESS_KIND_RETVAL` (une valeur comprise entre le [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) énumération).  
+ Cette structure fait partie de l’Union de la structure [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) lorsque le `dwKind` champ de la `DEBUG_ADDRESS_UNION` structure a la valeur `ADDRESS_KIND_RETVAL` (une valeur de l’énumération [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) ).  
   
 ## <a name="requirements"></a>Configuration requise  
- En-tête : sh.h  
+ En-tête : SH. h  
   
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft. VisualStudio. Debugger. Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
- [Structures et Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Structures et unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)   
  [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

@@ -21,10 +21,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6e14165ba2111f40898c00b3d01950425c042070
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72652914"
 ---
 # <a name="pass-data-between-forms"></a>Passer des données entre des formulaires
@@ -35,7 +35,7 @@ Cette procédure pas à pas fournit des instructions détaillées pour passer de
 > [!NOTE]
 > Cette procédure pas à pas n'indique qu'un seul moyen de passer les données entre formulaires. Il existe d’autres options pour passer des données à un formulaire, notamment la création d’un deuxième constructeur pour la réception de données, ou la création d’une propriété publique qui peut être définie avec les données du premier formulaire.
 
- Cette procédure pas à pas décrit notamment les tâches suivantes :
+ Cette procédure pas à pas décrit notamment les tâches suivantes :
 
 - Création d’un projet d' **application Windows** .
 
@@ -51,7 +51,7 @@ Cette procédure pas à pas fournit des instructions détaillées pour passer de
 
 - Transfert de données entre formulaires.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Prérequis
  Pour exécuter cette procédure pas à pas, vous avez besoin des éléments suivants :
 
 - avoir accès à l'exemple de base de données Northwind.
@@ -62,7 +62,7 @@ Cette procédure pas à pas fournit des instructions détaillées pour passer de
 
 1. Dans le menu **fichier** , créez un nouveau projet.
 
-2. Attribuez un nom au projet `PassingDataBetweenForms`.
+2. Nommez le projet `PassingDataBetweenForms`.
 
 3. Sélectionnez **Windows Forms application**, puis cliquez sur **OK**. Pour plus d’informations, consultez [applications clientes](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).
 
@@ -74,13 +74,13 @@ Cette procédure pas à pas fournit des instructions détaillées pour passer de
 
 1. Dans le menu **Données** , cliquez sur **Afficher les sources de données**.
 
-2. Dans la fenêtre **Sources de données**, sélectionnez **Ajouter une nouvelle source de données** pour démarrer l’Assistant **Configuration de source de données**.
+2. Dans la fenêtre **sources de données** , sélectionnez Ajouter une **nouvelle source de données** pour démarrer l’Assistant Configuration de source de **données** .
 
 3. Sélectionnez **Base de données** dans la page **Choisir un type de source de données** , puis cliquez sur **Suivant**.
 
 4. Dans la page **Choisir un modèle de base de données**, vérifiez que **Dataset** est spécifié, puis cliquez sur **Suivant**.
 
-5. Dans la page **Choisir votre connexion de données**, effectuez l’une des opérations suivantes :
+5. Dans la page **choisir votre connexion de données** , effectuez l’une des opérations suivantes :
 
     - Si une connexion de données à l’exemple de base de données Northwind est disponible dans la liste déroulante, sélectionnez-la.
 
@@ -144,13 +144,13 @@ Cette procédure pas à pas fournit des instructions détaillées pour passer de
     > [!NOTE]
     > Vérifiez que la syntaxe du paramètre est correcte pour votre base de données. Par exemple, dans Microsoft Access, la clause WHERE est de type : `WHERE CustomerID = ?`.
 
-6. Cliquez sur **Next**.
+6. Cliquez sur **Suivant**.
 
-7. Pour le **nom remplir un DataTableMethod**, tapez `FillByCustomerID`.
+7. Pour le **nom DataTableMethod**, tapez `FillByCustomerID` .
 
 8. Désactivez l’option **Retourner un DataTable**, puis cliquez sur **Suivant**.
 
-9. Cliquez sur **Finish**.
+9. Cliquez sur **Terminer**.
 
 ## <a name="create-a-method-on-form2-to-pass-data-to"></a>Créer une méthode sur Form2 pour passer des données à
 
@@ -180,7 +180,7 @@ Cette procédure pas à pas fournit des instructions détaillées pour passer de
      [!code-csharp[VbRaddataDisplaying#2](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDisplaying/CS/Form1.cs#2)]
      [!code-vb[VbRaddataDisplaying#2](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDisplaying/VB/Form1.vb#2)]
 
-## <a name="run-the-application"></a>Exécution de l'application
+## <a name="run-the-application"></a>Exécution de l’application
 
 #### <a name="to-run-the-application"></a>Pour exécuter l’application
 

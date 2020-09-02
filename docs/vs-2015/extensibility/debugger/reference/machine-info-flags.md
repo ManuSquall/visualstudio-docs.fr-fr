@@ -13,13 +13,13 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3b5819368c91590bbc1973e4c6097f29bb2ba9db
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62546835"
 ---
-# <a name="machineinfoflags"></a>MACHINE_INFO_FLAGS
+# <a name="machine_info_flags"></a>MACHINE_INFO_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 Utilisé pour décrire un ordinateur.  
@@ -44,14 +44,14 @@ public enum enum_MACHINE_INFO_FLAGS { 
  Indique que les services Terminal Server sont disponibles.  
   
 ## <a name="remarks"></a>Notes  
- Utilisé en tant que le `Flags` membre de la [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) structure.  
+ Utilisé comme `Flags` membre de la structure [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) .  
   
 ## <a name="requirements"></a>Configuration requise  
- En-tête : msdbg.h  
+ En-tête : msdbg. h  
   
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft. VisualStudio. Debugger. Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryContext2::Subtract | Microsoft Docs
+title: 'IDebugMemoryContext2 :: soustraire | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2efe4e15c5489ef07741a0d267b9c1b870d07aa8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68146370"
 ---
 # <a name="idebugmemorycontext2subtract"></a>IDebugMemoryContext2::Subtract
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Soustrait la valeur spécifiée à partir du contexte actuel et retourne un nouveau contexte.  
+Soustrait la valeur spécifiée du contexte actuel et retourne un nouveau contexte.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -43,18 +43,18 @@ int Subtract(
   
 #### <a name="parameters"></a>Paramètres  
  `dwCount`  
- [in] Le nombre d’octets de mémoire à décrémenter.  
+ dans Nombre d’octets de mémoire à décrémenter.  
   
  `ppMemCxt`  
- [out] Retourne un nouvel [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) objet.  
+ à Retourne un nouvel objet [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) .  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="remarks"></a>Notes  
- Un contexte de mémoire étant une adresse, en soustrayant une valeur à partir d’une adresse génère une nouvelle adresse qui requiert une nouvelle interface de contexte.  
+ Comme un contexte de mémoire est une adresse, la soustraction d’une valeur d’une adresse génère une nouvelle adresse qui requiert une nouvelle interface de contexte.  
   
- Cette méthode doit produire toujours un nouveau contexte, même si l’adresse obtenue est en dehors de l’espace de mémoire associé à ce contexte. La seule exception est si aucune mémoire ne pouvant être allouée pour le nouveau contexte ou si `ppMemCxt` est une valeur null (qui est une erreur).  
+ Cette méthode doit toujours produire un nouveau contexte, même si l’adresse résultante est en dehors de l’espace mémoire associé à ce contexte. La seule exception est si aucune mémoire ne peut être allouée pour le nouveau contexte ou si `ppMemCxt` est une valeur null (qui est une erreur).  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

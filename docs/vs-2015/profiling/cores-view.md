@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 869980fe7bbb773d566dffd38088b003e3a97a3d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145641"
 ---
-# <a name="cores-view"></a>Vue Cœurs
+# <a name="cores-view"></a>Affichage Cœurs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La vue Cœurs montre comment l’exécution du thread a été mappée aux cœurs de processeur logiques. Si vous écrivez des applications serveur, cette vue peut vous aider à optimiser les performances du cache à l’aide de la gestion du pool de thread ou de l’affinité de thread. Elle peut également vous aider à examiner les cas où l’utilisation de l’affinité de thread peut avoir aggravé le problème de migration inter-cœurs. La vue Cœurs comporte deux parties : un graphique et une légende.  
@@ -31,5 +31,5 @@ La vue Cœurs montre comment l’exécution du thread a été mappée aux cœurs
   
 ## <a name="see-also"></a>Voir aussi  
  [Visualiseur concurrentiel](../profiling/concurrency-visualizer.md)   
- [Vue Utilisation](../profiling/utilization-view.md)   
+ [Vue utilisation](../profiling/utilization-view.md)   
  [vue Threads](../profiling/threads-view-parallel-performance.md)

@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3f8bba5a4322ba02dfe6686774f3d16647fa87eb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655989"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Comment : intercepter un événement Click sur une forme ou un décorateur
@@ -24,7 +24,7 @@ ms.locfileid: "72655989"
 Les procédures suivantes montrent comment intercepter un clic sur une forme ou un élément décoratif d’icône. Vous pouvez intercepter les clics, les double-clics, les glissements et autres gestes, et faire en sorte que l’élément réponde.
 
 ## <a name="to-intercept-clicks-on-shapes"></a>Pour intercepter des clics sur des formes
- Dans le projet DSL, dans un fichier de code distinct des fichiers de code générés, écrivez une définition de classe partielle pour la classe Shape. Remplacez `OnDoubleClick()` ou l’une des autres méthodes dont le nom commence par `On...`. Exemple :
+ Dans le projet DSL, dans un fichier de code distinct des fichiers de code générés, écrivez une définition de classe partielle pour la classe Shape. Remplacez `OnDoubleClick()` ou l’une des autres méthodes dont le nom commence par `On...` . Par exemple :
 
 ```
 public partial class MyShape // change
@@ -38,10 +38,10 @@ public partial class MyShape // change
 ```
 
 > [!NOTE]
-> Définissez `e.Handled` sur `true`, sauf si vous souhaitez que l’événement soit passé à la forme ou au diagramme conteneur.
+> Affectez à la valeur `e.Handled` `true` , sauf si vous souhaitez que l’événement soit passé à la forme ou au diagramme conteneur.
 
 ## <a name="to-intercept-clicks-on-decorators"></a>Pour intercepter des clics sur des décorateurs
- Les éléments décoratifs d’image sont transportés sur une instance de la classe ImageField, qui a une méthode OnDoubleClick. Vous pouvez intercepter les clics si vous écrivez une sous-classe ImageField. Les champs sont configurés dans la méthode InitializeShapeFields. Par conséquent, vous devez modifier cette méthode pour instancier votre sous-classe au lieu du ImageField normal. La méthode InitializeShapeFields se trouve dans le code généré de la classe Shape. Vous pouvez substituer la classe Shape si vous définissez sa propriété `Generates Double Derived` comme décrit dans la procédure suivante.
+ Les éléments décoratifs d’image sont transportés sur une instance de la classe ImageField, qui a une méthode OnDoubleClick. Vous pouvez intercepter les clics si vous écrivez une sous-classe ImageField. Les champs sont configurés dans la méthode InitializeShapeFields. Par conséquent, vous devez modifier cette méthode pour instancier votre sous-classe au lieu du ImageField normal. La méthode InitializeShapeFields se trouve dans le code généré de la classe Shape. Vous pouvez substituer la classe Shape si vous définissez sa `Generates Double Derived` propriété comme décrit dans la procédure suivante.
 
  Bien que InitializeShapeFields soit une méthode d’instance, il est appelé une seule fois pour chaque classe. Par conséquent, il existe une seule instance de ClickableImageField pour chaque champ de chaque classe, et non une instance pour chaque forme dans le diagramme. Lorsque l’utilisateur double-clique sur une instance, vous devez identifier l’instance qui a été atteinte, comme le montre le code de l’exemple.
 
@@ -51,7 +51,7 @@ public partial class MyShape // change
 
 2. Choisissez ou créez une forme qui possède un élément décoratif d’icône et mappez-la à une classe de domaine.
 
-3. Dans un fichier de code distinct des fichiers figurant dans le dossier `GeneratedCode`, créez la nouvelle sous-classe de ImageField :
+3. Dans un fichier de code distinct des fichiers contenus dans le `GeneratedCode` dossier, créez la nouvelle sous-classe de ImageField :
 
     ```
     using Microsoft.VisualStudio.Modeling;
@@ -116,7 +116,7 @@ public partial class MyShape // change
     }
     ```
 
-1. Générez et exécutez la solution.
+1. Créez et exécutez la solution.
 
 2. Double-cliquez sur l’icône d’une instance de la forme. Votre message de test doit s’afficher.
 
@@ -137,7 +137,7 @@ public partial class MyShape // change
 
 - Un ensemble de gestionnaires d’événements de souris est attaché à chaque instance de compartiment lors de sa création.
 
-- L’événement `ClassShape.MouseDown` stocke l’élément actuel.
+- L' `ClassShape.MouseDown` événement stocke l’élément actuel.
 
 - Lorsque la souris quitte l’élément actuel, une instance de MouseAction est créée, ce qui définit le curseur et capture la souris jusqu’à ce qu’elle soit libérée.
 

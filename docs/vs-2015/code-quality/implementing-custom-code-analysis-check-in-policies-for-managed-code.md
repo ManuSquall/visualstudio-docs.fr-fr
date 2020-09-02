@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 1cf759e01e5f152f2220124c90f145bfbbe3c01d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651591"
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>Implémentation de stratégies d'archivage de l'analyse du code personnalisées pour le code managé
@@ -39,7 +39,7 @@ Une stratégie d’archivage de l’analyse du code spécifie un ensemble de rè
 
 #### <a name="to-create-the-version-control-folder-for-the-check-in-policy-rule-set"></a>Pour créer le dossier de contrôle de version pour l’ensemble de règles de stratégie d’archivage
 
-1. Dans [!INCLUDE[esprtfc](../includes/esprtfc-md.md)], développez le nœud du projet d’équipe, puis cliquez sur **contrôle de code source**.
+1. Dans [!INCLUDE[esprtfc](../includes/esprtfc-md.md)] , développez le nœud du projet d’équipe, puis cliquez sur **contrôle de code source**.
 
 2. Dans le volet **dossiers** , cliquez avec le bouton droit sur le projet d’équipe, puis cliquez sur **nouveau dossier**.
 
@@ -47,7 +47,7 @@ Une stratégie d’archivage de l’analyse du code spécifie un ensemble de rè
 
 #### <a name="to-create-the-check-in-policy-rule-set"></a>Pour créer l’ensemble de règles de stratégie d’archivage
 
-1. Dans le menu **fichier** , pointez sur **nouveau**, puis cliquez sur **fichier**.
+1. Dans le menu **Fichier** , pointez sur **Nouveau**, puis cliquez sur **Fichier**.
 
 2. Dans la liste **catégories** , cliquez sur **général**.
 
@@ -82,7 +82,7 @@ Une stratégie d’archivage de l’analyse du code spécifie un ensemble de rè
 
 3. Dans la liste des **stratégies d’archivage** , double-cliquez sur **analyse du code**et assurez-vous que la case à cocher **appliquer l’analyse du code pour le code managé** est activée.
 
-4. Dans la liste **exécuter cet ensemble de règles** , cliquez sur **\<Select ensemble de règles à partir du contrôle de code source >** .
+4. Dans la liste **exécuter cet ensemble de règles** , cliquez sur **\<Select Rule Set from Source Control>** .
 
 5. Tapez le chemin d’accès du fichier d’ensemble de règles de stratégie d’archivage dans le contrôle de version.
 
@@ -112,10 +112,10 @@ Une stratégie d’archivage de l’analyse du code spécifie un ensemble de rè
 
 4. Si nécessaire, cliquez sur les options appropriées dans les listes **configuration** et **plateforme** .
 
-5. Pour exécuter l’analyse du code chaque fois que le projet de code est généré à l’aide de la configuration spécifiée, activez la case à cocher **activer l’analyse du code sur la build (définit la constante CODE_ANALYSIS)** .
+5. Pour exécuter l’analyse du code chaque fois que le projet de code est généré à l’aide de la configuration spécifiée, activez la case à cocher **activer l’analyse du code sur la build (définit CODE_ANALYSIS constante)** .
 
 6. Pour ignorer le code dans les composants d’autres sociétés, activez la case à cocher **Supprimer les résultats du code généré** .
 
-7. Dans la liste **exécuter cet ensemble de règles** , cliquez sur **\<Browse... >** .
+7. Dans la liste **exécuter cet ensemble de règles** , cliquez sur **\<Browse...>** .
 
 8. Spécifiez la version locale du fichier d’ensemble de règles de stratégie d’archivage.

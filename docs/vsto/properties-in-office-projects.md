@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 9fc2a0774206eac0c9295a425d81555ffdd3cac8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62561361"
 ---
 # <a name="properties-in-office-projects"></a>Propriétés dans les projets Office
@@ -30,8 +30,8 @@ ms.locfileid: "62561361"
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
-## <a name="namespace-for-host-item"></a>Namespace de l’élément hôte
- Utilisez la propriété **Espace de noms de l'élément hôte** pour modifier l'espace de noms des classes d'élément hôte (par exemple, les classes `ThisAddIn`, `ThisWorkbook`ou `ThisDocument` ) dans les projets Visual C#. Cette propriété s’affiche dans le **propriétés** fenêtre lorsque vous sélectionnez le nœud de document dans un projet au niveau du document (tel que *Classeurexcel1.xlsx* ou *Documentword1.docx* ) ou le nœud d’application dans un projet complément VSTO (par exemple, Excel ou Word) dans **l’Explorateur de solutions**.
+## <a name="namespace-for-host-item"></a>Espace de noms pour l’élément hôte
+ Utilisez la propriété **espace de noms de l’élément hôte** pour modifier l’espace de noms des classes d’élément hôte (par exemple, les `ThisAddIn` `ThisWorkbook` classes, ou `ThisDocument` ) dans les projets Visual C#. Cette propriété s’affiche dans la fenêtre **Propriétés** lorsque vous sélectionnez le nœud de document dans un projet au niveau du document (tel que *ExcelWorkbook1.xlsx* ou *WordDocument1.docx*) ou le nœud d’application dans un projet de complément VSTO (par exemple, Excel ou Word) dans **Explorateur de solutions**.
 
  Quand vous créez un projet Office Visual C#, un espace de noms basé sur le nom du projet est attribué aux éléments hôtes. Il est recommandé d'utiliser la propriété **Espace de noms de l'élément hôte** pour modifier l'espace de noms, plutôt que de modifier directement les fichiers de code. Quand vous utilisez cette propriété, l'espace de noms est modifié dans les fichiers de code générés (masqués), ainsi que dans les fichiers de code visibles.
 
@@ -44,7 +44,7 @@ ms.locfileid: "62561361"
 
 - Choisissez **false** si vous ne voulez pas que le dataset soit mis en cache dans le document.
 
-  Pour plus d’informations sur la mise en cache des données, consultez [mis en cache des données dans les personnalisations au niveau du document](../vsto/cached-data-in-document-level-customizations.md).
+  Pour plus d’informations sur la mise en cache des données, consultez [données mises en cache dans les personnalisations au niveau du document](../vsto/cached-data-in-document-level-customizations.md).
 
 ## <a name="value2"></a>Value2
  La propriété **Value2** est uniquement disponible pour les projets de modèle ou de classeur Excel. Elle s'affiche sous le nœud de propriété **Databindings** dans la fenêtre **Propriétés** quand vous sélectionnez un contrôle <xref:Microsoft.Office.Tools.Excel.NamedRange> dans le concepteur de feuilles de calcul.

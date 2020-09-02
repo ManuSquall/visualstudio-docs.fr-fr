@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 3c6e7550940f9d2efa5ca228123310f1b861ee76
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651601"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy"></a>Comment : synchroniser des ensembles de règles applicables à des projets de code avec la stratégie d'archivage du projet d'équipe
@@ -35,7 +35,7 @@ Vous synchronisez les paramètres d’analyse du code des projets de code avec l
 
 1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le projet de code, puis cliquez sur **Propriétés**.
 
-2. Cliquez sur **analyse du code**.
+2. Cliquez sur **Analyse du code**.
 
 3. Dans la liste **exécuter cet ensemble de règles** , cliquez sur l’ensemble de règles de stratégie d’archivage.
 
@@ -45,9 +45,9 @@ Vous synchronisez les paramètres d’analyse du code des projets de code avec l
 
 2. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le projet de code, puis cliquez sur **Propriétés**.
 
-3. Cliquez sur **analyse du code**.
+3. Cliquez sur **Analyse du code**.
 
-4. Dans la liste **exécuter cet ensemble de règles** , cliquez sur **\<Browse... >** .
+4. Dans la liste **exécuter cet ensemble de règles** , cliquez sur **\<Browse...>** .
 
 5. Dans la boîte de dialogue **ouvrir** , spécifiez le fichier d’ensemble de règles de stratégie d’archivage.
 
@@ -65,6 +65,6 @@ Vous synchronisez les paramètres d’analyse du code des projets de code avec l
 
 5. Ouvrez la boîte de dialogue Propriétés du projet de code, puis affichez la page **analyse du code** .
 
-6. Dans la liste **exécuter cet ensemble de règles** , cliquez sur **\<Browse... >** .
+6. Dans la liste **exécuter cet ensemble de règles** , cliquez sur **\<Browse...>** .
 
 7. Dans la boîte de dialogue **ouvrir** , spécifiez le fichier d’ensemble de règles.

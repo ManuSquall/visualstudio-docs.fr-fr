@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5dc0b4195d33a7bf72d17681b6d71e78f1bacfe5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157777"
 ---
 # <a name="summary-view---instrumentation-data"></a>Vue Résumé - Données d’instrumentation
@@ -48,5 +48,5 @@ La vue Résumé affiche des informations sur les fonctions dont le coût est le 
 |**% de durée exclusive**|Pourcentage du temps total dans les données de profilage que la fonction a passé à exécuter du code dans son corps de fonction. Le temps passé dans les fonctions appelées par la fonction n’est pas inclus.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Vue Résumé](../profiling/summary-view-sampling-data.md)   
- [Mode Résumé](../profiling/summary-view-dotnet-memory-data.md)
+ [Mode Résumé](../profiling/summary-view-sampling-data.md)   
+ [Vue Résumé](../profiling/summary-view-dotnet-memory-data.md)

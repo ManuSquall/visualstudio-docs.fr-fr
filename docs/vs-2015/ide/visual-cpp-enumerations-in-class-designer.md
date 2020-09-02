@@ -12,16 +12,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7f967420e37d6337ce6d86cc56524f2751218f56
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651662"
 ---
 # <a name="visual-c-enumerations-in-class-designer"></a>Énumérations de Visual C++ dans le concepteur de classes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Le Concepteur de classes prend en charge les types `enum` C++ et `enum class` dont la portée est définie. Voici un exemple :
+Le Concepteur de classes prend en charge les types `enum` C++ et `enum class` dont la portée est définie. Vous trouverez ci-dessous un exemple :
 
 ```
 enum CardSuit {
@@ -46,4 +46,4 @@ enum class CardSuit {
  Pour plus d’informations sur l’utilisation du type `enum`, consultez [Énumérations](https://msdn.microsoft.com/library/081829db-5dca-411e-a53c-bffef315bcb3).
 
 ## <a name="see-also"></a>Voir aussi
- Utilisation des [énumérations](https://msdn.microsoft.com/library/081829db-5dca-411e-a53c-bffef315bcb3) [de Code visuel C++ (Concepteur de classes)](../ide/working-with-visual-cpp-code-class-designer.md)
+ Utilisation des [énumérations](https://msdn.microsoft.com/library/081829db-5dca-411e-a53c-bffef315bcb3) [de Code Visual C++ (Concepteur de classes)](../ide/working-with-visual-cpp-code-class-designer.md)
