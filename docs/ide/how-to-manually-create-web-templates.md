@@ -11,10 +11,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 6870143be825469fde2be4b3448da24d54034fc1
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284176"
 ---
 # <a name="how-to-manually-create-web-templates"></a>Guide pratique pour créer manuellement des modèles web
@@ -41,7 +41,7 @@ La création d’un modèle web ne ressemble pas à la création d’autres genr
    - CSharp
    - VisualBasic
 
-     Par exemple :
+     Par exemple :
 
      ```xml
      <TemplateData>

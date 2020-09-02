@@ -16,13 +16,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1c715c16782733a08bb617a464c1aa9510d35b54
-ms.sourcegitcommit: dda98068c0f62ccd1a19fdfde4bdb822428d0125
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87425956"
 ---
-# <a name="common-msbuild-item-metadata"></a>Métadonnées d’élément MSBuild courantes
+# <a name="common-msbuild-item-metadata"></a>Métadonnées communes d’éléments MSBuild
 
 Le tableau suivant décrit les métadonnées d’élément facultatives qui ont une signification pour certains kits de développement logiciel (SDK) MSBuild ou cibles, mais qui ne sont pas définis par défaut pour chaque élément. Vous pouvez les définir pour influencer le comportement de la génération, mais uniquement si le kit de développement logiciel (SDK) ou les fichiers cibles que vous utilisez le reconnaissent.
 

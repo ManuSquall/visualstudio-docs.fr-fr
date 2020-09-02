@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e1a50374a2603153cc7f4770a9aaf5ba72fbe007
-ms.sourcegitcommit: b8ec700fc4c14c68c6ce280f29c19870261990d8
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87453645"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Comment : personnaliser le dictionnaire d’analyse du code
@@ -74,7 +74,7 @@ Vous pouvez modifier le comportement du dictionnaire d’analyse du code en ajou
 
 - [Dictionnaire/Acronyms/CasingExceptions/acronyme](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)
 
-### <a name="dictionarywordsrecognizedword"></a><a name="BKMK_DictionaryWordsRecognizedWord"></a>Dictionnaire/mots/reconnus/Word
+### <a name="dictionarywordsrecognizedword"></a><a name="BKMK_DictionaryWordsRecognizedWord"></a> Dictionnaire/mots/reconnus/Word
 
 Pour inclure un terme dans la liste des termes que l’analyse du code identifie comme correctement orthographié, ajoutez le terme comme texte interne d’un élément Dictionary/Words/recognized/Word. Les termes du dictionnaire/des mots/reconnus/Word ne respectent pas la casse.
 
@@ -109,7 +109,7 @@ Les termes du dictionnaire/des mots/nœuds reconnus sont appliqués aux règles 
 
 - [CA2204 : Les littéraux doivent être orthographiés correctement](../code-quality/ca2204.md)
 
-### <a name="dictionarywordsunrecognizedword"></a><a name="BKMK_DictionaryWordsUnrecognizedWord"></a>Dictionnaire/mots/non reconnu/Word
+### <a name="dictionarywordsunrecognizedword"></a><a name="BKMK_DictionaryWordsUnrecognizedWord"></a> Dictionnaire/mots/non reconnu/Word
 
 Pour exclure un terme de la liste des termes que l’analyse du code identifie comme étant correctement orthographiés, ajoutez le terme à exclure comme texte interne d’un élément Dictionary/Words/non reconnu/Word. Les termes du dictionnaire/des mots/non reconnus/les éléments Word ne respectent pas la casse.
 
@@ -144,7 +144,7 @@ Les termes du nœud dictionnaire/mots/non reconnus sont appliqués aux règles d
 
 - [CA2204 : Les littéraux doivent être orthographiés correctement](../code-quality/ca2204.md)
 
-### <a name="dictionarywordsdeprecatedtermpreferredalternate"></a><a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a>Dictionnaire/mots/déconseillé/terme [ @PreferredAlternate ]
+### <a name="dictionarywordsdeprecatedtermpreferredalternate"></a><a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a> Dictionnaire/mots/déconseillé/terme [ @PreferredAlternate ]
 
 Pour inclure un terme dans la liste des termes identifié par l’analyse du code comme étant déconseillé, ajoutez le terme comme texte interne d’un élément Dictionary/Words/Deprecated/term. Un terme déconseillé est un mot qui est correctement orthographié, mais qui ne doit pas être utilisé.
 
@@ -181,7 +181,7 @@ Les termes du nœud dictionnaire/mots/déconseillé sont appliqués aux règles 
 
 - [CA1726 : Utilisez les termes par défaut](../code-quality/ca1726.md)
 
-### <a name="dictionarywordscompoundtermcompoundalternate"></a><a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a>Dictionnaire/mots/composé/terme [ @CompoundAlternate ]
+### <a name="dictionarywordscompoundtermcompoundalternate"></a><a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a> Dictionnaire/mots/composé/terme [ @CompoundAlternate ]
 
 Le dictionnaire intégré identifie certains termes comme des termes simples et discrets plutôt qu’un terme composé. Pour inclure un terme dans la liste des termes que l’analyse du code identifie comme un mot composé et pour spécifier la casse correcte du terme, ajoutez le terme comme texte interne d’un élément Dictionary/Words/Compound-term. Dans l’attribut CompoundAlternate de l’élément term, spécifiez les mots individuels qui composent le terme composé en majuscules la première lettre des mots individuels (casse Pascal). Notez que le terme spécifié dans le texte interne est automatiquement ajouté à la liste Dictionary/Words/DiscreteExceptions.
 
@@ -214,7 +214,7 @@ Les termes du nœud Dictionary/Words/Compound sont appliqués aux règles d’an
 
 - [CA1704 : L'orthographe des identificateurs doit être correcte](../code-quality/ca1704.md)
 
-### <a name="dictionarywordsdiscreteexceptionsterm"></a><a name="BKMK_DictionaryWordsDiscreteExceptionsTerm"></a>Dictionary/Words/DiscreteExceptions/Term
+### <a name="dictionarywordsdiscreteexceptionsterm"></a><a name="BKMK_DictionaryWordsDiscreteExceptionsTerm"></a> Dictionary/Words/DiscreteExceptions/Term
 
 Pour exclure un terme dans la liste des termes que l’analyse du code identifie comme un mot unique et discret lorsque le terme est vérifié par les règles de casse des mots composés, ajoutez le terme comme texte interne d’un élément Dictionary/Words/DiscreteExceptions/Term. Le terme dans l’élément Dictionary/Words/DiscreteExceptions/Term ne respecte pas la casse.
 
@@ -239,7 +239,7 @@ Les termes du nœud Dictionary/Words/DiscreteExceptions sont appliqués aux règ
 
 - [CA1702 : La casse des mots composés doit être correcte](../code-quality/ca1702.md)
 
-### <a name="dictionaryacronymscasingexceptionsacronym"></a><a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a>Dictionnaire/Acronyms/CasingExceptions/acronyme
+### <a name="dictionaryacronymscasingexceptionsacronym"></a><a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a> Dictionnaire/Acronyms/CasingExceptions/acronyme
 
 Pour inclure un acronyme dans la liste des termes que l’analyse du code identifie comme correctement orthographiés et pour indiquer comment l’acronyme est vérifié par les règles de casse des mots composés, ajoutez le terme comme texte interne d’un élément Dictionary/acronymes/CasingExceptions/acronyme. L’acronyme dans l’élément Dictionary/acronymes/CasingExceptions/acronyme respecte la casse.
 
@@ -262,7 +262,7 @@ Les termes du nœud dictionary/acronymes/CasingExceptions sont appliqués aux r�
 
 - [CA1709 : La casse des identificateurs doit être correcte](../code-quality/ca1709.md)
 
-## <a name="to-apply-a-custom-dictionary-to-a-project"></a><a name="BKMK_ToApplyACustomDictionaryToAProject"></a>Pour appliquer un dictionnaire personnalisé à un projet
+## <a name="to-apply-a-custom-dictionary-to-a-project"></a><a name="BKMK_ToApplyACustomDictionaryToAProject"></a> Pour appliquer un dictionnaire personnalisé à un projet
 
 1. Dans **Explorateur de solutions**, utilisez l’une des procédures suivantes :
 

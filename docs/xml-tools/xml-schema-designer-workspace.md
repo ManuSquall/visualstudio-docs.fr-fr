@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4cf86dd39e010424b25916deec8cdebd23ee1c1b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75592371"
 ---
 # <a name="xml-schema-designer-workspace-views"></a>Vues de l’espace de travail du concepteur de schémas XML
@@ -47,4 +47,4 @@ Pour basculer d'une vue à l'autre, utilisez l'un des éléments suivants :
 
 - Filigranes sur la page Vue de départ ou filigrane sur la vue de modèle de contenu ou la vue du graphique vide.
 
-- Touches d’accès rapide : **ctrl**+**1** pour la vue de départ, **CTRL**+**2** pour la vue du graphique et **CTRL**+**3** pour la vue de modèle de contenu.
+- Touches d’accès rapide : **CTRL** + **1** pour la vue de départ, **CTRL** + **2** pour la vue du graphique et **CTRL** + **3** pour la vue de modèle de contenu.

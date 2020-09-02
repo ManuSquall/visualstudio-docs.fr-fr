@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d673edac957e9625f7d948fbe766ee08b23b6b52
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85382430"
 ---
 # <a name="how-to-enable-clickonce-security-settings"></a>Guide pratique pour activer les paramètres de sécurité ClickOnce
@@ -34,7 +34,7 @@ La sécurité d’accès du code pour les applications ClickOnce doit être acti
 
 1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.
 
-2. Cliquez sur l’onglet **Sécurité**.
+2. Cliquez sur l’onglet **Security** .
 
 3. Cochez la case **Activer les paramètres de sécurité ClickOnce** .
 
@@ -47,7 +47,7 @@ La sécurité d’accès du code pour les applications ClickOnce doit être acti
 
 1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.
 
-2. Cliquez sur l’onglet **Sécurité**.
+2. Cliquez sur l’onglet **Security** .
 
 3. Désactivez la case à cocher **activer les paramètres de sécurité ClickOnce** .
 

@@ -10,13 +10,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2980d34028c58a6abadb2df21bf22c8d37cda6e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160758"
 ---
-# <a name="vsgdefaultrunfilename"></a>VSG_DEFAULT_RUN_FILENAME
+# <a name="vsg_default_run_filename"></a>VSG_DEFAULT_RUN_FILENAME
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Définit le nom de fichier par défaut du fichier journal graphique.  
@@ -29,22 +29,22 @@ Définit le nom de fichier par défaut du fichier journal graphique.
   
 #### <a name="parameters"></a>Paramètres  
  `filename`  
- Le nom de fichier donné par défaut pour le fichier journal de graphisme lorsque les informations graphiques sont capturées par programmation.  
+ Nom de fichier donné par défaut au fichier journal de graphisme lorsque les informations graphiques sont capturées par programme.  
   
-## <a name="value"></a>`Value`  
- Une chaîne littérale qui représente le nom de fichier des graphiques de fichier journal. Par défaut, L"default.vsglog ».  
+## <a name="value"></a>Valeur  
+ Littéral de chaîne qui représente le nom de fichier du fichier journal de graphisme. Par défaut, L "default. vsglog".  
   
 ```cpp  
 #define VSG_DEFAULT_FILENAME L"default.vsglog"  
 ```  
   
 ## <a name="remarks"></a>Notes  
- Si le symbole de préprocesseur `DONT_SAVE_VSGLOG_TO_TEMP` est défini, puis le nom de fichier est relatif au répertoire en cours de l’application capturée, ou est un chemin d’accès absolu ; sinon, il est relatif au répertoire des fichiers temporaires de l’utilisateur et ne peut pas être un chemin d’accès absolu.  
+ Si le symbole de préprocesseur `DONT_SAVE_VSGLOG_TO_TEMP` est défini, le nom de fichier est relatif au répertoire actif de l’application capturée ou est un chemin d’accès absolu ; dans le cas contraire, il est relatif au répertoire de fichiers temporaires de l’utilisateur et ne peut pas être un chemin d’accès absolu.  
   
- Pour modifier le nom de fichier défini, vous devez redéfinir avant d’inclure `vsgcapture.h` dans votre programme.  
+ Pour modifier le nom de fichier défini, vous devez le redéfinir avant `vsgcapture.h` d’inclure dans votre programme.  
   
 ## <a name="example"></a>Exemple  
- Cet exemple montre comment modifier le nom de fichier du fichier de capture par défaut :  
+ Cet exemple montre comment modifier le nom de fichier par défaut du fichier de capture :  
   
 ```cpp  
 // Redefine the default capture filename before including vsgcapture.h  

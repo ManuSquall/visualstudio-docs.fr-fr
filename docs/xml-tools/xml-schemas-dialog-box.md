@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9d01c56b04a9b046f695a19d61a9b47fcac73e06
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75592332"
 ---
 # <a name="xml-schemas-dialog-box"></a>Boîte de dialogue Schémas XML
@@ -23,7 +23,7 @@ La boîte de dialogue **schémas XML** permet de sélectionner le (s) schéma (s
 
 Pour accéder à la boîte de dialogue **schémas XML** , vous pouvez soit cliquer sur le bouton **schémas** de la fenêtre Propriétés du document, soit sélectionner **schémas** dans le menu **XML** .
 
-## <a name="uielement-list"></a>Liste des éléments d’interface
+## <a name="uielement-list"></a>Liste des éléments de l'interface utilisateur
 
 **Utilisation**
 
@@ -47,7 +47,7 @@ Affiche le nom de fichier du schéma XML.
 
 Ouvre la boîte de dialogue **ouvrir le schéma XSD** , qui vous permet de sélectionner des schémas supplémentaires à ajouter au jeu de schémas. Lorsque vous ajoutez un schéma au jeu de schémas, la valeur de colonne **use** est définie pour **utiliser ce schéma**.
 
-**Supprimer**
+**Remove**
 
 Supprime le schéma actuellement sélectionné du jeu de schémas. Cela supprime le schéma du cache de schémas en mémoire, mais pas du système de fichiers.
 

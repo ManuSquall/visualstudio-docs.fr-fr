@@ -11,10 +11,10 @@ ms.author: stsu
 manager: jillfra
 monikerRange: '>= vs-2019'
 ms.openlocfilehash: 4c44d267ef5686d04e9549601e05866aabbfb62d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72650837"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Solutions filtrées dans Visual Studio
@@ -37,7 +37,7 @@ Vous pouvez ouvrir une solution sans charger ses projets directement à partir d
 
 Pour ouvrir une solution sans charger ses projets à l’aide de la boîte de dialogue **Ouvrir un projet** :
 
-1. Choisissez **File** > **Open** > **Project/Solution** à partir de la barre de menu.
+1. **File**  >  **Open**  >  Dans la barre de menus, choisissez Fichier Ouvrir le**projet/la solution** .
 
 2. Dans la boîte de dialogue **Ouvrir un projet**, sélectionnez la solution, puis **Ne pas charger les projets**.
 
@@ -57,7 +57,7 @@ Pour ouvrir une solution sans charger ses projets à l’aide de la boîte de di
 
 (Nouveau dans Visual Studio 2019 version 16.1.)
 
-Pour ouvrir une solution sans charger aucun de ses [`/donotloadprojects`](../ide/reference/donotloadprojects-devenv-exe.md) projets à partir de la ligne de commande, utilisez le commutateur comme indiqué dans l’exemple suivant :
+Pour ouvrir une solution sans charger l’un de ses projets à partir de la ligne de commande, utilisez le [`/donotloadprojects`](../ide/reference/donotloadprojects-devenv-exe.md) commutateur comme indiqué dans l’exemple suivant :
 
 ```cmd
 devenv /donotloadprojects MySln.sln

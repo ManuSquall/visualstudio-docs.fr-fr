@@ -1,5 +1,5 @@
 ---
-title: Chaînes utilisées comme clés pour rechercher un contrôle de Source de plug-in | Microsoft Docs
+title: Chaînes utilisées comme clés pour la recherche d’un plug-in de contrôle de code source | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,22 +11,22 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 83ba843e318aac6a74d318978e42e2f81802d8ac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160574"
 ---
 # <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>Chaînes utilisées comme clés pour rechercher un plug-in de contrôle de code source
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Les chaînes suivantes sont les clés d’accès au Registre pour trouver des informations sur le contrôle de source de plug-in.  
+Les chaînes suivantes sont les clés permettant d’accéder au registre pour rechercher des informations sur le plug-in de contrôle de code source.  
   
- `STR_SCC_PROVIDER_REG_LOCATION`, `STR_PROVIDERREGKEY`, `STR_SCCPROVIDERPATH`, et `STR_SCCPROVIDERNAME` sont des clés de Registre ou des valeurs utilisées pour inscrire une DLL comme un plug-in de contrôle de code source pour Visual Studio.  
+ `STR_SCC_PROVIDER_REG_LOCATION`, `STR_PROVIDERREGKEY` , `STR_SCCPROVIDERPATH` et `STR_SCCPROVIDERNAME` sont des clés de registre ou des valeurs utilisées pour inscrire une dll en tant que plug-in de contrôle de code source pour Visual Studio.  
   
- `SCC_PROJECTNAME_KEY`, `SCC_PROJECTAUX_KEY`, `SCC_KEY, SCC_FILE_SIGNATURE`, et `SCC_STATUS_FILE` sont utilisés pour décrire le format de la MSSCCPRJ. Fichier de contrôle de code source.  
+ `SCC_PROJECTNAME_KEY`, `SCC_PROJECTAUX_KEY` , `SCC_KEY, SCC_FILE_SIGNATURE` et `SCC_STATUS_FILE` sont utilisés pour décrire le format du Mssccprj. Fichier SCC.  
   
-## <a name="string-keys-and-values"></a>Clés et des valeurs  
+## <a name="string-keys-and-values"></a>Clés et valeurs de chaîne  
   
 |Clé|Valeur|  
 |---------|-----------|  
@@ -34,15 +34,15 @@ Les chaînes suivantes sont les clés d’accès au Registre pour trouver des in
 |`STR_PROVIDERREGKEY`|ProviderRegKey|  
 |`STR_SCCPROVIDERPATH`|SCCServerPath|  
 |`STR_SCCPROVIDERNAME`|SCCServerName|  
-|`STR_SCC_INI_SECTION`|Contrôle de Code source|  
+|`STR_SCC_INI_SECTION`|Contrôle de code source|  
 |`STR_SCC_INI_KEY`|SourceCodeControlProvider|  
 |`SCC_PROJECTNAME_KEY`|SCC_Project_Name|  
 |`SCC_PROJECTAUX_KEY`|SCC_Aux_Path|  
-|`SCC_STATUS_FILE`|MSSCCPRJ. CONTRÔLE DE CODE SOURCE|  
-|`SCC_KEY`|CONTRÔLE DE CODE SOURCE|  
-|`SCC_FILE_SIGNATURE`|Un fichier de contrôle de code source|  
-|`SCC_NSE`|Extension de Namespace|  
-|`SCC_NSE_PREFIX`|Préfixe de protocole|  
+|`SCC_STATUS_FILE`|Mssccprj. SCC|  
+|`SCC_KEY`|SCC|  
+|`SCC_FILE_SIGNATURE`|Fichier de contrôle de code source|  
+|`SCC_NSE`|Extension de l’espace de noms|  
+|`SCC_NSE_PREFIX`|Préfixe protocole|  
 |`SCC_NSE_DisableOpenSCC`|DisableOpenFromSourceControl|  
 |`STR_SCCHELPCOLLECTION`|HelpCollection|  
 |`STR_UI_LANGUAGE`|UILanguage|  
@@ -50,5 +50,5 @@ Les chaînes suivantes sont les clés d’accès au Registre pour trouver des in
   
 ## <a name="see-also"></a>Voir aussi  
  [Plug-ins de contrôle de code source](../extensibility/source-control-plug-ins.md)   
- [Guide pratique : Installer un plug-in de contrôle de code Source](../extensibility/internals/how-to-install-a-source-control-plug-in.md)   
+ [Comment : installer un plug-in de contrôle de code source](../extensibility/internals/how-to-install-a-source-control-plug-in.md)   
  [Fichier MSSCCPRJ.SCC](../extensibility/mssccprj-scc-file.md)

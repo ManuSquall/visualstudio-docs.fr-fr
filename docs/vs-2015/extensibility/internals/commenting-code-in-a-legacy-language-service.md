@@ -1,5 +1,5 @@
 ---
-title: Commentaire du Code dans un Service de langage hérité | Microsoft Docs
+title: Commenter du code dans un service de langage hérité | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,37 +12,37 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cd1405456ca9a6ba00926c82bcc7959ea36d26c2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160910"
 ---
 # <a name="commenting-code-in-a-legacy-language-service"></a>Commentaire du code dans un service de langage hérité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-En général, les langages de programmation fournissent un moyen d’annoter ou de commenter le code. Un commentaire est une section de texte qui fournit des informations supplémentaires sur le code, mais est ignoré pendant la compilation ou une interprétation.  
+Les langages de programmation fournissent généralement un moyen d’annoter ou de commenter le code. Un commentaire est une section de texte qui fournit des informations supplémentaires sur le code, mais qui est ignorée lors de la compilation ou de l’interprétation.  
   
- Les classes de framework (MPF) de package gérée prennent en charge les commentaires et suppression de commentaires dans le texte sélectionné.  
+ Les classes MPF (Managed package Framework) assurent la prise en charge des commentaires et suppriment les marques de commentaire du texte sélectionné.  
   
-## <a name="comment-styles"></a>Styles de commentaire  
- Il existe deux styles générales de commentaire :  
+## <a name="comment-styles"></a>Styles de commentaires  
+ Il existe deux styles généraux de commentaire :  
   
-1. Commentaires sur une ligne où le commentaire se trouve sur une seule ligne.  
+1. Commentaires de ligne, où le commentaire se trouve sur une seule ligne.  
   
-2. Commentaires de bloc, où le commentaire peut inclure plusieurs lignes.  
+2. Bloquez les commentaires, où le commentaire peut inclure plusieurs lignes.  
   
-   Commentaires sur une ligne ont généralement un caractère de début (ou caractères) lors de commentaires de bloc de caractères de début et de fin. Par exemple, en c#, un commentaire sur une ligne commence par / /, et un commentaire de bloc commence par / * et se termine par \*/.  
+   Les commentaires de ligne comportent généralement un caractère de début (ou des caractères), tandis que les commentaires de bloc comportent des caractères de début et de fin. Par exemple, en C#, un commentaire de ligne commence par//, et un commentaire de bloc commence par/* et se termine par \* /.  
   
-   Lorsque l’utilisateur sélectionne la commande **commenter la sélection** à partir de la **modifier** -> **avancé** menu, la commande est acheminée vers le <xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A> méthode sur le <xref:Microsoft.VisualStudio.Package.Source> classe. Lorsque l’utilisateur sélectionne la commande **Décommenter la sélection**, la commande est acheminée vers le <xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A> (méthode).  
+   Lorsque l’utilisateur sélectionne la **sélection de commentaire** de commande dans le menu **Edition**  ->  **avancé** , la commande est routée vers la <xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A> méthode sur la <xref:Microsoft.VisualStudio.Package.Source> classe. Lorsque l’utilisateur sélectionne la commande supprimer les **marques de commentaire**, la commande est routée vers la <xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A> méthode.  
   
-## <a name="supporting-code-comments"></a>Prise en charge des commentaires de Code  
- Vous pouvez avoir vos commentaires de code de langue service prise en charge par le biais de la `EnableCommenting` nommé du paramètre de la <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> . Cela définit le <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCommenting%2A> propriété de la <xref:Microsoft.VisualStudio.Package.LanguagePreferences> classe. Pour plus d’informations sur la définition de langage servicce fonctionnalités, consultez [l’inscription d’un Service de langage hérité](../../extensibility/internals/registering-a-legacy-language-service1.md)).  
+## <a name="supporting-code-comments"></a>Commentaires sur le code de prise en charge  
+ Vous pouvez faire en sorte que votre service de langage prenne en charge les commentaires de code au moyen du `EnableCommenting` paramètre nommé de <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> . Cela définit la <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCommenting%2A> propriété de la <xref:Microsoft.VisualStudio.Package.LanguagePreferences> classe. Pour plus d’informations sur la définition des fonctionnalités du langage servicce, consultez [inscription d’un service de langage hérité](../../extensibility/internals/registering-a-legacy-language-service1.md)).  
   
- Vous devez également substituer la <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> méthode pour retourner un <xref:Microsoft.VisualStudio.Package.CommentInfo> structure avec les caractères de commentaire pour votre langage. C#-caractères de commentaire de ligne de style sont la valeur par défaut.  
+ Vous devez également substituer la <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> méthode pour retourner une <xref:Microsoft.VisualStudio.Package.CommentInfo> structure avec les caractères de commentaire pour votre langue. Les caractères de commentaire de ligne de style C# sont la valeur par défaut.  
   
 ### <a name="example"></a>Exemple  
- Voici un exemple d’implémentation de la <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> (méthode).  
+ Voici un exemple d’implémentation de la <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> méthode.  
   
 ```csharp  
 using Microsoft.VisualStudio.Package;  
@@ -64,5 +64,5 @@ namespace MyLanguagePackage
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Fonctionnalités de Service de langage hérité](../../extensibility/internals/legacy-language-service-features1.md)   
+ [Fonctionnalités du service de langage hérité](../../extensibility/internals/legacy-language-service-features1.md)   
  [Inscription d’un service de langage hérité](../../extensibility/internals/registering-a-legacy-language-service1.md)

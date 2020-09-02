@@ -1,5 +1,5 @@
 ---
-title: Procédure pas à pas :C++ analyse du code C pour les erreurs | Microsoft Docs
+title: 'Procédure pas à pas : analyse du code C-C++ pour les erreurs | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -15,18 +15,18 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: c822dbcc6a1ece2040da22a3442dd584c3926d97
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77272435"
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>Procédure pas à pas : analyse du code C/C++ pour rechercher les erreurs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Cette procédure pas à pas montre comment analyserC++ c/code pour identifier les erreurs de code potentielles à l’aideC++ de l’outil d’analyse du code pour c/code.  
+Cette procédure pas à pas montre comment analyser du code C/C++ pour les erreurs de code potentielles à l’aide de l’outil d’analyse du code pour le code C/C++.  
   
- Dans cette procédure pas à pas, vous allez effectuer un pas à pas détaillé dans le processusC++ d’utilisation de l’analyse du code pour analyser votre code C/pour identifier les erreurs de code potentielles.  
+ Dans cette procédure pas à pas, vous parcourez le processus d’utilisation de l’analyse du code pour analyser votre code C/C++ pour identifier les erreurs de code potentielles.  
   
  Vous allez accomplir les étapes ci-dessous :  
   
@@ -38,17 +38,17 @@ Cette procédure pas à pas montre comment analyserC++ c/code pour identifier le
   
 - Annoter le code source pour améliorer l’analyse des erreurs de code.  
   
-## <a name="prerequisites"></a>Composants requis  
+## <a name="prerequisites"></a>Prérequis  
   
 - [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] ou [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)].  
   
 - Copie de l' [exemple de démonstration](../code-quality/demo-sample.md).  
   
-- Connaissances de base de CC++/.  
+- Connaissances de base de C/C++.  
   
 ### <a name="to-run-code-defect-analysis-on-native-code"></a>Pour exécuter l’analyse des erreurs de code sur du code natif  
   
-1. Ouvrez la solution de démonstration dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+1. Ouvrez la solution de démonstration dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
      La solution de démonstration remplit maintenant **Explorateur de solutions**.  
   
@@ -64,7 +64,7 @@ Cette procédure pas à pas montre comment analyserC++ c/code pour identifier le
   
 5. Cliquez sur **Analyse du code**.  
   
-6. Activez la case à cocher **activer l'C++ analyse du code pour C/on Build** .  
+6. Activez la case à cocher **activer l’analyse du code pour C/C++ sur la build** .  
   
 7. Régénérez le projet CodeDefects.  
   
@@ -74,13 +74,13 @@ Cette procédure pas à pas montre comment analyserC++ c/code pour identifier le
   
 1. Dans le menu **Affichage** , cliquez sur **Liste d'erreurs**.  
   
-     En fonction du profil de développeur que vous avez choisi dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vous devrez peut-être pointer sur **autres fenêtres** dans le menu **affichage** , puis cliquer sur **liste d’erreurs**.  
+     Selon le profil de développeur que vous avez choisi dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , vous devrez peut-être pointer sur **autres fenêtres** dans le menu **affichage** , puis cliquez sur **liste d’erreurs**.  
   
 2. Dans la **liste d’erreurs**, double-cliquez sur l’avertissement suivant :  
   
      avertissement C6230 : cast implicite entre les types sémantiquement différents : utilisation de HRESULT dans un contexte booléen.  
   
-     L’éditeur de code affiche la ligne qui a provoqué l’avertissement dans la `bool``ProcessDomain()`de la fonction. Cet avertissement indique qu’un HRESULT est utilisé dans une instruction’If’où un résultat booléen est attendu.  
+     L’éditeur de code affiche la ligne qui a provoqué l’avertissement dans la fonction `bool``ProcessDomain()` . Cet avertissement indique qu’un HRESULT est utilisé dans une instruction’If’où un résultat booléen est attendu.  
   
 3. Corrigez cet avertissement à l’aide de la macro SUCCEEDED. Votre code doit ressembler au code suivant :  
   
@@ -100,7 +100,7 @@ Cette procédure pas à pas montre comment analyserC++ c/code pour identifier le
   
 ### <a name="to-treat-warning-as-an-error"></a>Pour traiter l’avertissement comme une erreur  
   
-1. Dans le fichier bug. cpp, ajoutez l’instruction `#pragma` suivante au début du fichier pour traiter l’avertissement C6001 comme une erreur :  
+1. Dans le fichier bug. cpp, ajoutez l' `#pragma` instruction suivante au début du fichier pour traiter l’avertissement C6001 comme une erreur :  
   
     ```  
     #pragma warning (error: 6001)  
@@ -110,7 +110,7 @@ Cette procédure pas à pas montre comment analyserC++ c/code pour identifier le
   
      Dans le **liste d’erreurs**, C6001 s’affiche à présent comme une erreur.  
   
-3. Corrigez les deux erreurs C6001 restantes dans le **liste d’erreurs** en initialisant `i` et `j` sur 0.  
+3. Corrigez les deux erreurs C6001 restantes dans le **liste d’erreurs** en initialisant `i` et `j` en 0.  
   
 4. Régénérez le projet CodeDefects.  
   
@@ -126,7 +126,7 @@ Cette procédure pas à pas montre comment analyserC++ c/code pour identifier le
   
 3. Cliquez sur **Analyse du code**.  
   
-4. Cochez la case **activer l’analyse du codeC++ pour C/on Build** .  
+4. Activez la case à cocher **activer l’analyse du code pour C/C++ sur la build** .  
   
 5. Régénérez le projet annotations.  
   
@@ -158,7 +158,7 @@ Cette procédure pas à pas montre comment analyserC++ c/code pour identifier le
   
 ### <a name="to-use-source-code-annotation"></a>Pour utiliser l’annotation de code source  
   
-1. Annotez les paramètres formels et la valeur de retour de la fonction `AddTail` à l’aide des conditions pre et postales, comme indiqué dans cet exemple :  
+1. Annotez les paramètres formels et la valeur de retour de la fonction `AddTail` en utilisant les conditions de pré et de publication comme indiqué dans cet exemple :  
   
      `[returnvalue:SA_Post (Null=SA_Maybe)] LinkedList* AddTail`  
   

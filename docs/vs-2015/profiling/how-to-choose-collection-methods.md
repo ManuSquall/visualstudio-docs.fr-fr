@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Choisir une méthode de collecte | Microsoft Docs'
+title: Guide pratique pour choisir une méthode de collecte | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,18 +14,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 33ff14ce88f2032b998214ed11310a15550321dc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199807"
 ---
-# <a name="how-to-choose-collection-methods"></a>Procédure : Choisir les méthodes de collecte
+# <a name="how-to-choose-collection-methods"></a>Guide pratique pour choisir une méthode de collecte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Les outils de profilage de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] prennent en charge trois méthodes de collecte des données de performances : l’échantillonnage, l’instrumentation et l’accès concurrentiel. Vous pouvez également utiliser les méthodes d’instrumentation et d’échantillonnage pour collecter des données de durée de vie et d’allocation de la mémoire .NET.  
   
- **Spécifications**  
+ **Configuration requise**  
   
 - [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
@@ -42,7 +42,7 @@ Les outils de profilage de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] prennent
 |**Échantillonnage de l’UC**|Collecte les statistiques d’application qui sont utiles pour l’analyse initiale et l’analyse des problèmes d’utilisation du processeur.|  
 |**Instrumentation**|Collecte des données de minutage détaillées utiles pour une analyse approfondie et pour l’analyse des problèmes de performances d’E/S.|  
 |**Allocation de mémoire .NET**|Collecte les données d’allocation de mémoire [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] à l’aide de la méthode de profilage par échantillonnage.|  
-|**Concurrence**|Collecte des données numériques concernant les conflits de ressources.|  
+|**Concurrency**|Collecte des données numériques concernant les conflits de ressources.|  
   
 ## <a name="performance-explorer"></a>Explorateur de performances  
   
@@ -97,6 +97,6 @@ Les outils de profilage de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] prennent
 3. Cliquez sur **Concurrence**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Configuration de sessions de performance](../profiling/configuring-performance-sessions.md)   
- [Présentation des valeurs de données d’échantillonnage](../profiling/understanding-sampling-data-values.md)   
- [Propriétés d’une session de performance](../profiling/performance-session-properties.md)
+ [Configuration des sessions de performance](../profiling/configuring-performance-sessions.md)   
+ [Fonctionnement des valeurs de données d’échantillonnage](../profiling/understanding-sampling-data-values.md)   
+ [Propriétés de la session de performance](../profiling/performance-session-properties.md)

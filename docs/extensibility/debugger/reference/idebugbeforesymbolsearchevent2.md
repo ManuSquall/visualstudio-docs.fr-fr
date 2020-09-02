@@ -1,5 +1,5 @@
 ---
-title: IDebugBeforeSymbolSearchEvent2 - France Microsoft Docs
+title: IDebugBeforeSymbolSearchEvent2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9d6f3f78e165ba2f4453131b7b459e3061243ff6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736113"
 ---
 # <a name="idebugbeforesymbolsearchevent2"></a>IDebugBeforeSymbolSearchEvent2
-Le moteur de déboçon (DE) envoie cette interface au gestionnaire de déboçon de session (SDM) pour définir le message de barre d’état pendant les charges de symbole.
+Le moteur DE débogage (DE) envoie cette interface au gestionnaire de débogage de session (SDM) pour définir le message de la barre d’État pendant les chargements de symboles.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -27,21 +27,21 @@ IDebugBeforeSymbolSearchEvent2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Notes pour les implémenteurs
- Le DE implémente cette interface lorsqu’elle doit définir le message de barre d’état pendant les charges du symbole. Cette interface n’est implémentée que par des moteurs de débogé qui fonctionnent avec ou font partie d’interprètes de script. [L’interface IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) doit être implémentée sur le même objet que cette interface (le SDM utilise **QueryInterface** pour accéder à **l’interface IDebugEvent2).**
+ Le DE implémente cette interface lorsqu’il doit définir le message de la barre d’État pendant les chargements de symboles. Cette interface est implémentée uniquement par les moteurs de débogage qui fonctionnent avec ou qui font partie des interpréteurs de script. L’interface [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) doit être implémentée sur le même objet que cette interface (le SDM utilise **QueryInterface** pour accéder à l’interface **IDebugEvent2** ).
 
 ## <a name="notes-for-callers"></a>Notes pour les appelants
- Le DE crée et envoie cet objet d’événement lorsqu’il doit définir le message de barre d’état pendant les charges de symbole. L’événement est envoyé en utilisant la fonction de rappel [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fournie par le SDM lorsqu’elle s’est jointe au programme en cours de débbugged.
+ Le DE crée et envoie cet objet d’événement lorsqu’il doit définir le message de la barre d’État pendant les chargements de symboles. L’événement est envoyé à l’aide de la fonction de rappel [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fournie par le SDM lorsqu’il est attaché au programme en cours de débogage.
 
 ## <a name="methods"></a>Méthodes
- Le tableau suivant montre `IDebugBeforeSymbolSearchEvent2`les méthodes de .
+ Le tableau suivant présente les méthodes de `IDebugBeforeSymbolSearchEvent2` .
 
 |Méthode|Description|
 |------------|-----------------|
-|[GetModuleName](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2-getmodulename.md)|Récupère le nom du module actuellement en cours de débocise.|
+|[GetModuleName](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2-getmodulename.md)|Récupère le nom du module en cours de débogage.|
 
-## <a name="requirements"></a>Spécifications
- En-tête: Msdbg.h
+## <a name="requirements"></a>Configuration requise
+ En-tête : msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Espace de noms : Microsoft. VisualStudio. Debugger. Interop
 
- Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
