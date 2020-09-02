@@ -1,5 +1,5 @@
 ---
-title: Copier (Capture par programmation) | Microsoft Docs
+title: Copier (capture par programmation) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 30ec235a-0abb-44b9-8852-61bc9e67ce22
@@ -9,14 +9,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3a888605cfae6b5430782defd198f83988c31870
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62895952"
 ---
 # <a name="copy-programmatic-capture"></a>Copier (capture par programmation)
-Copie le contenu du fichier journal (.vsglog) tracé actif dans un nouveau fichier.
+Copie le contenu du fichier journal de graphisme actif (. vsglog) dans un nouveau fichier.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -27,7 +27,7 @@ void Copy(
 ```
 
 #### <a name="parameters"></a>Paramètres
- `szNewVSGLog` Le nom de fichier du nouveau fichier journal graphics.
+ `szNewVSGLog` Nom de fichier du nouveau fichier journal de graphisme.
 
 ## <a name="remarks"></a>Notes
- Pour copier les informations graphiques dans un nouveau fichier, doit déjà avoir capturé des informations graphiques ; Sinon, rien ne se produit.
+ Pour copier les informations graphiques dans un nouveau fichier, vous devez déjà avoir capturé des informations graphiques. dans le cas contraire, rien ne se passe.

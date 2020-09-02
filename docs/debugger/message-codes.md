@@ -11,18 +11,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1c09245056bf7e947985bfa55dc9cc4a3a96b8cf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62846271"
 ---
 # <a name="message-codes"></a>Codes des messages
-Chaque ligne du message indiqué dans [vue Messages](../debugger/messages-view.md) contient un « P », du,' de,' ou le code de « R ». Ces codes ont les significations suivantes :
+Chaque ligne de message affichée dans la [vue messages](../debugger/messages-view.md) contient un code’P, ', ', 'ou’R'. Ces codes ont les significations suivantes :
 
 |Code|Signification|
 |----------|-------------|
-|P|Le message a été publié dans la file d’attente avec le **PostMessage** (fonction). Aucune information n’est disponible concernant la dernière disposition du message.|
-|S|Le message a été envoyé avec la **SendMessage** (fonction). Cela signifie que l’expéditeur ne reprend pas le contrôle jusqu'à ce que le destinataire traite et retourne le message. Le récepteur peut, par conséquent, passer une valeur de retour à l’expéditeur.|
+|P|Le message a été publié dans la file d’attente avec la fonction **PostMessage** . Aucune information n’est disponible concernant la disposition finale du message.|
+|S|Le message a été envoyé avec la fonction **SendMessage** . Cela signifie que l’expéditeur ne reprend pas le contrôle tant que le destinataire ne traite pas et ne renvoie pas le message. Le récepteur peut donc retourner une valeur de retour à l’expéditeur.|
 |s|Le message a été envoyé, mais la sécurité empêche l’accès à la valeur de retour.|
-|R|De chacun ' a une ligne « R » (retour) correspondante qui répertorie la valeur de retour du message. Parfois, les appels de message sont imbriquées, ce qui signifie que ce gestionnaire d’un message envoie un autre message.|
+|R|Chaque ligne’a une ligne’R' (retour) correspondante qui répertorie la valeur de retour du message. Parfois, les appels de message sont imbriqués, ce qui signifie qu’un gestionnaire de messages envoie un autre message.|

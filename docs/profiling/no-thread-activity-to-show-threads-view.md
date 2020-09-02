@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 91cc840a69135edf59603ba62d15985eb541df0e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62794466"
 ---
 # <a name="no-thread-activity-to-show-threads-view"></a>Aucune activité du thread à afficher (vue Threads)
@@ -33,4 +33,4 @@ Cette zone montre des données relatives aux threads non masqués dans l’inter
 - Vérifiez que Réduction du bruit est défini sur un seuil peu élevé.
 
 ## <a name="see-also"></a>Voir aussi
-- [Vue Threads](../profiling/threads-view-parallel-performance.md)
+- [vue Threads](../profiling/threads-view-parallel-performance.md)

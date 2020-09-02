@@ -1,5 +1,5 @@
 ---
-title: Affichage de Windows | Microsoft Docs
+title: Vue fenêtres | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,39 +13,39 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fef652cbaa83fde61f098fb8fcef9558473fe19a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62900855"
 ---
 # <a name="windows-view"></a>Vue Fenêtres
-Lorsque vous ouvrez Spy ++, Windows affiche une arborescence de toutes les fenêtres et les contrôles dans le système. Le nom de handle et de la classe de fenêtre sont affichés. La fenêtre du bureau actuelle est en haut de l’arborescence. Toutes les autres fenêtres sont des enfants du bureau et sont répertoriés en fonction de la hiérarchie de fenêtre standard. Fenêtres sœurs s’affichent dans les listes extensible mis en retrait sous leurs parents.
+Lorsque vous ouvrez Spy + + pour la première fois, la vue fenêtres affiche une arborescence de toutes les fenêtres et de tous les contrôles du système. Le handle de fenêtre et le nom de classe sont affichés. La fenêtre du Bureau active se trouve en haut de l’arborescence. Toutes les autres fenêtres sont des enfants du bureau et sont répertoriées en fonction de la hiérarchie de la fenêtre standard. Les fenêtres sœurs apparaissent dans les listes expansible en retrait sous leurs parents.
 
- La figure ci-dessous montre une vue de Spy ++ Windows classique avec le nœud supérieur est développé.
+ La figure ci-dessous illustre une vue de fenêtres Spy + + standard avec le nœud supérieur développé.
 
- ![Spy&#43; &#43; Windows vue](../debugger/media/spy--_windowsview.png "Spy ++ _WindowsView") vue Windows Spy ++
+ ![Vue fenêtres de l'&#43;&#43; Spy](../debugger/media/spy--_windowsview.png "_WindowsView Spy + +") Vue fenêtres Spy + +
 
- La fenêtre du bureau actuelle est en haut de l’arborescence. Toutes les autres fenêtres sont des enfants du bureau et sont répertoriés en fonction de la hiérarchie de la fenêtre standard, avec les fenêtres sœurs classés par ordre de plan. Vous pouvez développer ou réduire un nœud parent de l’arborescence en cliquant sur le + ou - le symbole en regard du nœud.
+ La fenêtre du Bureau active se trouve en haut de l’arborescence. Toutes les autres fenêtres sont des enfants du bureau et sont répertoriées en fonction de la hiérarchie de la fenêtre standard, avec les fenêtres sœurs classées selon l’ordre de plan. Vous pouvez développer ou réduire tout nœud parent de l’arborescence en cliquant sur le symbole + ou-en regard du nœud.
 
- Lorsque la vue de Windows a le focus, vous pouvez utiliser l’outil de recherche dans les [boîte de dialogue de recherche de fenêtre](../debugger/window-search-dialog-box.md) pour afficher des informations à partir de n’importe quelle fenêtre ouverte sur votre système.
+ Lorsque la vue Windows est active, vous pouvez utiliser l’outil Finder dans la [boîte de dialogue recherche](../debugger/window-search-dialog-box.md) d’une fenêtre pour afficher des informations à partir de n’importe quelle fenêtre ouverte sur votre système.
 
 ## <a name="in-this-section"></a>Dans cette section
- [Guide pratique pour Utiliser l’outil recherche](../debugger/how-to-use-the-finder-tool.md) montre comment cet outil analyse windows pour les propriétés ou les messages.
+ [Comment : utiliser l’outil Finder](../debugger/how-to-use-the-finder-tool.md) Montre comment cet outil analyse les propriétés ou les messages de Windows.
 
- [Guide pratique pour Rechercher une fenêtre dans la vue de Windows](../debugger/how-to-search-for-a-window-in-windows-view.md) explique comment rechercher une fenêtre spécifique dans la vue de Windows.
+ [Comment : Rechercher une fenêtre dans la vue fenêtres](../debugger/how-to-search-for-a-window-in-windows-view.md) Explique comment rechercher une fenêtre spécifique dans la vue Windows.
 
- [Guide pratique pour Afficher les propriétés de la fenêtre](../debugger/how-to-display-window-properties.md) m procédures pour ouvrir la boîte de dialogue Propriétés de la fenêtre.
+ [Comment : afficher les propriétés](../debugger/how-to-display-window-properties.md) d’une fenêtre m procédures pour ouvrir la boîte de dialogue Propriétés de la fenêtre.
 
-## <a name="related-sections"></a>Rubriques connexes
- [Vues Spy ++](../debugger/spy-increment-views.md) explique les arborescences Spy ++ de windows, les messages, les processus et les threads.
+## <a name="related-sections"></a>Sections connexes
+ [Vues Spy + +](../debugger/spy-increment-views.md) Explique les vues de l’arborescence Spy + + des fenêtres, des messages, des processus et des threads.
 
- [À l’aide de Spy ++](../debugger/using-spy-increment.md) présente l’outil Spy ++ et explique comment il peut être utilisé.
+ [Utilisation de Spy + +](../debugger/using-spy-increment.md) Présente l’outil Spy + + et explique comment l’utiliser.
 
- [Boîte de dialogue de fenêtre Rechercher](../debugger/find-window-dialog-box.md) permet d’afficher les propriétés ou les messages à partir d’une fenêtre spécifique.
+ [Rechercher une fenêtre, boîte de dialogue](../debugger/find-window-dialog-box.md) Permet d’afficher les propriétés ou les messages d’une fenêtre spécifique.
 
- [Boîte de dialogue de recherche de fenêtre](../debugger/window-search-dialog-box.md) utilisé pour rechercher le nœud pour une fenêtre spécifique dans la vue de Windows.
+ [Boîte de dialogue recherche de fenêtre](../debugger/window-search-dialog-box.md) Utilisé pour rechercher le nœud pour une fenêtre spécifique dans la vue Windows.
 
- [Boîte de dialogue Propriétés de fenêtre](../debugger/window-properties-dialog-box.md) utilisé pour afficher les propriétés d’une fenêtre sélectionné dans la vue de Windows.
+ [Boîte de dialogue Propriétés de la fenêtre](../debugger/window-properties-dialog-box.md) Permet d’afficher les propriétés d’une fenêtre sélectionnée en mode fenêtres.
 
- [Référence Spy ++](../debugger/spy-increment-reference.md) comprend les sections décrivant chaque Spy ++ menu et boîte de dialogue.
+ [Référence Spy + +](../debugger/spy-increment-reference.md) Comprend des sections décrivant chaque menu et boîte de dialogue Spy + +.

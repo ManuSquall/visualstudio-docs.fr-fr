@@ -1,5 +1,5 @@
 ---
-title: Fenêtre Sortie, débogage, de boîte de dialogue Options | Microsoft Docs
+title: Fenêtre Sortie, débogage, boîte de dialogue Options | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,23 +18,23 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9224258a2dfd48cc17ed15f9723e455e225af8b2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62904785"
 ---
 # <a name="output-window-debugging-options-dialog-box"></a>Fenêtre Sortie, Débogage, boîte de dialogue Options
 Vous pouvez spécifier les types d’informations de débogage qui apparaissent dans la fenêtre **Sortie**. Pour afficher ces options, ouvrez le menu **Outils**, cliquez sur **Options**, développez le nœud **Débogage** et cliquez sur **Fenêtre Sortie**.
 
-**Paramètres généraux de sortie** cette catégorie contient des contrôles qui déterminent si les messages généraux de débogage s’affichent dans le **sortie** fenêtre. Vous pouvez spécifier si chaque type de message doit apparaître.
+**Paramètres généraux de sortie** Cette catégorie contient des contrôles qui déterminent si les messages généraux de débogage s’affichent dans la fenêtre **sortie** . Vous pouvez spécifier si chaque type de message doit apparaître.
 
-**Paramètres de Trace WPF** cette catégorie contient des contrôles qui déterminent le niveau des messages de trace WPF qui apparaissent dans le **sortie** fenêtre. Vous pouvez spécifier si chaque type de message doit apparaître et spécifier un niveau allant de **Critique** à **Tous**.
+**Paramètres de trace WPF** Cette catégorie contient des contrôles qui déterminent le niveau des messages de trace WPF qui s’affichent dans la fenêtre **sortie** . Vous pouvez spécifier si chaque type de message doit apparaître et spécifier un niveau allant de **Critique** à **Tous**.
 
-Pour plus d'informations, voir [Procédure : afficher les informations de trace WPF](../debugger/how-to-display-wpf-trace-information.md).
+Pour plus d’informations, consultez [Comment : afficher des informations de trace WPF](../debugger/how-to-display-wpf-trace-information.md).
 
-Si vous avez besoin restaurer les paramètres par défaut, vous pouvez effectuer à l’aide de ce **outils** > **importation et exportation de paramètres** > **réinitialiser tous les paramètres**. Si vous souhaitez uniquement un sous-ensemble de paramètres de réinitialisation, enregistrez vos paramètres dans le **Assistant Importation et exportation paramètres** avant d’apporter les modifications que vous souhaitez tester, puis importer vos paramètres enregistrés ultérieurement.
+Si vous devez restaurer les paramètres par défaut, vous pouvez le faire à l’aide des **Outils**  >  **importation et exportation de paramètres**  >  **Réinitialiser tous les paramètres**. Si vous souhaitez uniquement réinitialiser un sous-ensemble de paramètres, enregistrez vos paramètres dans l' **Assistant importation et exportation de paramètres** avant d’effectuer les modifications que vous souhaitez tester, puis importez vos paramètres enregistrés ultérieurement.
 
 ## <a name="see-also"></a>Voir aussi
 - [Débogage, boîte de dialogue Options](../debugger/debugging-options-dialog-box.md)
-- [Sortie (fenêtre)](../ide/reference/output-window.md)
+- [Sortie, fenêtre](../ide/reference/output-window.md)

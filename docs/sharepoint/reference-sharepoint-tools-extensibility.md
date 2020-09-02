@@ -13,23 +13,23 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 4ab3b60e727f7f4ce113b86fc3491bf244115551
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62827101"
 ---
 # <a name="reference-sharepoint-tools-extensibility"></a>Référence (extensibilité des outils SharePoint)
 
 Cette section contient la documentation de référence pour l’extension des outils SharePoint dans Visual Studio.
 
-## <a name="in-this-section"></a>Dans cette section
+## <a name="in-this-section"></a>Contenu de cette section
 
-[Référence de schéma élément de projet SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)
+[Référence du schéma d’élément de projet SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)
 
-Contient la documentation de référence pour le *.spdata* schéma de fichier.
+Contient la documentation de référence pour le schéma de fichier *. resdonnées* .
 
-[Référence de l’API &#40;extensibilité des outils SharePoint&#41;](../sharepoint/api-reference-sharepoint-tools-extensibility.md)
+[Informations de référence sur l’API &#40;&#41;d’extensibilité des outils SharePoint ](../sharepoint/api-reference-sharepoint-tools-extensibility.md)
 
 Contient la documentation de référence des API permettant d’étendre les outils SharePoint dans Visual Studio.
 

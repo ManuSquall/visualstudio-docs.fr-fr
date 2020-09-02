@@ -12,16 +12,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 784704bea43a87f1aebdc42941906179dca815ce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62580415"
 ---
 # <a name="customdatasignature-element-visual-studio-templates"></a>Élément CustomDataSignature (modèles Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Spécifie la signature de texte pour localiser les données personnalisées.  
+Spécifie la signature du texte pour localiser les données personnalisées.  
   
  \<VSTemplate>  
  \<TemplateData>  
@@ -46,12 +46,12 @@ Spécifie la signature de texte pour localiser les données personnalisées.
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Élément requis.<br /><br /> Définit la catégorie du modèle et comment il est affiché dans un le **nouveau projet** ou **ajouter un nouvel élément** boîte de dialogue.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Élément requis.<br /><br /> Classe le modèle et définit son mode d’affichage dans la boîte de dialogue **nouveau projet** ou **Ajouter un nouvel élément** .|  
   
 ## <a name="text-value"></a>Valeur texte  
  Une valeur texte est requise.  
   
- Le texte est une chaîne qui a la signature de texte qui est nécessaire pour localiser les données personnalisées.  
+ Le texte est une chaîne qui possède la signature de texte requise pour localiser les données personnalisées.  
   
 ## <a name="remarks"></a>Notes  
  `CustomDataSignature` est un élément facultatif.  

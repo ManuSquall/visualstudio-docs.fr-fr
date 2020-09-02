@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0afc4f73ed287f753acf87bd0b112e6f5303e996
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62551250"
 ---
 # <a name="projectextensions-element-msbuild"></a>ProjectExtensions, élément (MSBuild)
@@ -32,7 +32,7 @@ ms.locfileid: "62551250"
 Permet à des fichiers projet [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] de contenir des informations autres que [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Tout élément inclus dans un élément `ProjectExtensions` est ignoré par [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
  \<Project>  
- \<ProjectExtensions >  
+ \<ProjectExtensions>  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -46,10 +46,10 @@ Permet à des fichiers projet [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-m
  Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.  
   
 ### <a name="attributes"></a>Attributs  
- Aucun.  
+ Aucun  
   
 ### <a name="child-elements"></a>Éléments enfants  
- Aucun.  
+ Aucun  
   
 ### <a name="parent-elements"></a>Éléments parents  
   
@@ -57,7 +57,7 @@ Permet à des fichiers projet [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-m
 |-------------|-----------------|  
 |[Projet](../msbuild/project-element-msbuild.md)|Élément racine requis d'un fichier projet [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] .|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Un seul élément `ProjectExtensions` peut être utilisé dans un projet [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
 ## <a name="example"></a>Exemple  
@@ -76,5 +76,5 @@ Permet à des fichiers projet [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-m
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Informations de référence sur le schéma de fichier projet MSBuild](../msbuild/msbuild-project-file-schema-reference.md)  
+ [Référence de schéma de fichier de projet](../msbuild/msbuild-project-file-schema-reference.md)  
  [MSBuild](msbuild.md)

@@ -11,39 +11,39 @@ ms.assetid: 408dcdef-8ef9-4644-97d2-f311cd35824f
 caps.latest.revision: 12
 manager: jillfra
 ms.openlocfilehash: a244463832ff5620efa74a2c7fd20d6d47d79e76
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62810698"
 ---
 # <a name="providing-a-custom-properties-window"></a>Fourniture d’une fenêtre de propriétés personnalisée
-Il est possible de fournir votre propre **propriétés** fenêtre pour un système de projet donné, au lieu de l’extension de la **propriétés** fenêtre fournie par le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] l’environnement de développement intégré (IDE). Le scénario plus fréquemment rencontré est lorsque vous devez implémentez l’objet que doit se trouver dans le frame de fenêtre.  
+Il est possible de fournir votre propre fenêtre de **Propriétés** pour un système de projet donné, au lieu d’étendre la fenêtre **Propriétés** fournie par l' [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] environnement de développement intégré (IDE). Le scénario le plus souvent rencontré est le moment où vous implémentez vous-même l’objet dans le frame de fenêtre.  
   
- Dans l’événement vous n’implémentez pas l’objet doit se trouver dans le frame de fenêtre, mais que vous avez toujours accès à celui-ci par d’autres moyens, il existe plusieurs façons d’accéder à la <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> comme indiqué dans la dernière procédure dans cette page de l’interface.  
+ Si vous n’implémentez pas l’objet sur site dans le frame de fenêtre, mais que vous y avez toujours accès par d’autres moyens, il existe plusieurs façons d’accéder à l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> interface, comme indiqué dans la dernière procédure de cette page.  
   
-### <a name="to-provide-your-properties-window"></a>Pour fournir votre fenêtre de propriétés  
+### <a name="to-provide-your-properties-window"></a>Pour fournir votre Fenêtre Propriétés  
   
-1. Définir un GUID qui représente votre **propriétés** implémentation de la fenêtre.  
+1. Définissez un GUID qui représente l’implémentation de votre fenêtre de **Propriétés** .  
   
-2. Dans votre <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> implémentation, utilisez le <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> service à mettre en avant votre **propriétés** fenêtre en tant que service à l’environnement Visual Studio.  
+2. Dans votre <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> implémentation, utilisez le <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> service pour offrir votre fenêtre de **Propriétés** en tant que service à l’environnement Visual Studio.  
   
-### <a name="to-call-your-properties-window"></a>Pour appeler votre fenêtre de propriétés  
+### <a name="to-call-your-properties-window"></a>Pour appeler la fenêtre Propriétés  
   
-1. Appelez la méthode <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane.SetSite%2A>.  
+1. Appelez la méthode <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane.SetSite%2A> .  
   
-2. `QueryService` pour <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackSelectionEx> à partir de la <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> passé dans le <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane.SetSite%2A> (méthode).  
+2. `QueryService` pour <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackSelectionEx> à partir du <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> passé dans la <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane.SetSite%2A> méthode.  
   
-3. Obtenir <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx> de <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackSelectionEx> service.  
+3. Obtenir <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx> à partir du <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackSelectionEx> service.  
   
-4. Appeler <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx.OnElementValueChange%2A> avec le premier paramètre défini sur `SEID_PropertyBrowserSID` (extraites de la <xref:Microsoft.VisualStudio.VSConstants.VSSELELEMID> énumération) et le troisième paramètre, `varValue`, représentant une forme de chaîne du GUID qui représente votre **propriétés** fenêtre. Rendre cet appel une seule fois lors de la première création de votre **propriétés** fenêtre de document. Après l’appel de cette **propriétés** fenêtre est associée à votre frame de fenêtre.  
+4. Appelez <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx.OnElementValueChange%2A> avec le premier paramètre défini sur `SEID_PropertyBrowserSID` (extrait de l' <xref:Microsoft.VisualStudio.VSConstants.VSSELELEMID> énumération) et le troisième paramètre, `varValue` , représentant une forme de chaîne du GUID qui représente la fenêtre de **Propriétés** . Effectuez cet appel une seule fois lors de la première création de la fenêtre de document de la fenêtre **Propriétés** . Une fois que l’appel de cette fenêtre de **Propriétés** est associé à votre frame de fenêtre.  
   
-### <a name="to-obtain-the-window-frame-object-when-you-are-not-the-implementer"></a>Pour obtenir l’objet de Frame de fenêtre lorsque vous n’êtes pas l’implémenteur  
+### <a name="to-obtain-the-window-frame-object-when-you-are-not-the-implementer"></a>Pour obtenir l’objet de frame de fenêtre lorsque vous n’êtes pas l’implémenteur  
   
-- Vous pouvez `QueryService` pour <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackSelectionEx> service <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> avec le paramètre `propid` défini sur <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>.  
+- `QueryService`Pour <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackSelectionEx> le service, vous pouvez <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> utiliser avec le paramètre `propid` défini sur <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID> .  
   
-- Vous pouvez obtenir la fenêtre de document actif en appelant <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCurrentSelection%2A> via SVsMonitorSelection service. Définissez le paramètre `elementid` à `SEID_WindowFrame`, effectuée à partir de la <xref:Microsoft.VisualStudio.VSConstants.VSSELELEMID> énumération.  
+- Vous pouvez obtenir la fenêtre de document active en appelant par le <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCurrentSelection%2A> biais du service SVsMonitorSelection. Affectez au paramètre la valeur `elementid` `SEID_WindowFrame` , extraite de l' <xref:Microsoft.VisualStudio.VSConstants.VSSELELEMID> énumération.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Étendre les propriétés](../extensibility/internals/extending-properties.md)   
+ [Extension des propriétés](../extensibility/internals/extending-properties.md)   
  [Champs et interfaces de la fenêtre Propriétés](../extensibility/internals/properties-window-fields-and-interfaces.md)

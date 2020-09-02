@@ -1,5 +1,5 @@
 ---
-title: Référence (Capture par programmation) | Microsoft Docs
+title: Référence (capture par programmation) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ef60eb8d-1ac2-4e3a-9b4b-f6da0bdd9da8
@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a462d22df9768d2ffc8b344933e9f5c1f556575a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62895519"
 ---
 # <a name="reference-programmatic-capture"></a>Référence (capture par programmation)
@@ -24,7 +24,7 @@ Graphics Diagnostics prend en charge le contrôle par programme de ses fonctionn
 
 |Nom|Description|
 |----------|-----------------|
-|[VsgDbg Class](vsgdbg-class.md)|Représente l'interface par l'intermédiaire de laquelle le composant dans l'application des diagnostics graphiques est contrôlé par programme.|
+|[VsgDbg, classe](vsgdbg-class.md)|Représente l'interface par l'intermédiaire de laquelle le composant dans l'application des diagnostics graphiques est contrôlé par programme.|
 
 ### <a name="preprocessor-symbols"></a>Symboles du préprocesseur
 
@@ -38,5 +38,5 @@ Graphics Diagnostics prend en charge le contrôle par programme de ses fonctionn
 
 | Titre | Description |
 | - | - |
-| [Capturing Graphics Information](capturing-graphics-information.md) | Vous pouvez capturer les informations graphiques de votre application basée sur DirectX de manière à utiliser les outils Graphics Diagnostics [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pour diagnostiquer les problèmes de rendu. |
-| [Vue d’ensemble](overview-of-visual-studio-graphics-diagnostics.md) | Montre comment Graphics Diagnostics peut vous aider à déboguer les erreurs de rendu dans les applications et jeux DirectX. |
+| [Capture d'informations graphiques](capturing-graphics-information.md) | Vous pouvez capturer les informations graphiques de votre application basée sur DirectX de manière à utiliser les outils Graphics Diagnostics [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pour diagnostiquer les problèmes de rendu. |
+| [Vue d'ensemble](overview-of-visual-studio-graphics-diagnostics.md) | Montre comment Graphics Diagnostics peut vous aider à déboguer les erreurs de rendu dans les applications et jeux DirectX. |

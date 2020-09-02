@@ -11,10 +11,10 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: ad52e9f97dfbb9a5d0b3d65085c6c2627ccb2232
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62819527"
 ---
 # <a name="customize-project-files-created-by-vstu"></a>Personnaliser les fichiers projet créés par VSTU
@@ -23,7 +23,7 @@ Visual Studio Tools pour Unity fournit un rappel de type Unity pendant la géné
 ## <a name="demonstrates"></a>Illustre le
  Comment personnaliser les fichiers projet Visual Studio générés par Visual Studio Tools pour Unity.
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 
 ```csharp
 #if ENABLE_VSTU

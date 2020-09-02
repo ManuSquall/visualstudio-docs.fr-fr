@@ -23,16 +23,16 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: aa16bd6f93198e5360139dbc5a6a0d96f02a1e41
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62564702"
 ---
-# <a name="context-operator-in-the-visual-studio-debugger-c"></a>Opérateur de contexte dans le débogueur de Visual Studio (C++)
+# <a name="context-operator-in-the-visual-studio-debugger-c"></a>Opérateur de contexte dans le débogueur Visual Studio (C++)
 Vous pouvez utiliser l’opérateur de contexte en C++ pour qualifier l’emplacement d’un point d’arrêt, un nom de variable ou une expression. L’opérateur de contexte est utile pour spécifier un nom issu d’une portée externe qui serait sinon masqué par un nom local.
 
-## <a name="BKMK_Using_context_operators_to_specify_a_symbol"></a> Syntaxe
+## <a name="syntax"></a><a name="BKMK_Using_context_operators_to_specify_a_symbol"></a> Syntaxe
  Il existe deux façons de spécifier le contexte :
 
 1. {,,[*module*] } *expression*
@@ -53,7 +53,7 @@ Vous pouvez utiliser l’opérateur de contexte en C++ pour qualifier l’emplac
 
 - *module* est le nom d’un module. Vous pouvez utiliser un chemin complet pour distinguer les modules portant le même nom.
 
-   Si le chemin du *module* comprend une virgule, un espace incorporé ou une accolade, vous devez utiliser des guillemets au début et à la fin du chemin afin que l’analyseur de contexte reconnaisse la chaîne. Les guillemets simples sont considérés comme faisant partie d’un nom de fichier Windows, c’est pourquoi vous devez utiliser des guillemets doubles. Par exemple :
+   Si le chemin du *module* comprend une virgule, un espace incorporé ou une accolade, vous devez utiliser des guillemets au début et à la fin du chemin afin que l’analyseur de contexte reconnaisse la chaîne. Les guillemets simples sont considérés comme faisant partie d’un nom de fichier Windows, c’est pourquoi vous devez utiliser des guillemets doubles. Par exemple,
 
   ```C++
   {,,"a long, long, library name.dll"} g_Var

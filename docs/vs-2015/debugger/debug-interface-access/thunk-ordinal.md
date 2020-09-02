@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b98098c0b6e1de9c3c2ceda5c644bc2957ab22bd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62576406"
 ---
-# <a name="thunkordinal"></a>THUNK_ORDINAL
+# <a name="thunk_ordinal"></a>THUNK_ORDINAL
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Désigne les types de conversion de code.  
+Désigne les types de thunks.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -43,31 +43,31 @@ typedef enum THUNK_ORDINAL { 
   
 ## <a name="elements"></a>Éléments  
  THUNK_ORDINAL_NOTYPE  
- Conversion de code standard.  
+ Thunk standard.  
   
  THUNK_ORDINAL_ADJUSTOR  
- Un `this` thunk d’expert.  
+ `this`Thunk de réglage.  
   
  THUNK_ORDINAL_VCALL  
- Conversion de code d’appel virtuel.  
+ Thunk d’appel virtuel.  
   
  THUNK_ORDINAL_PCODE  
- Thunk de P-code.  
+ Thunk de code P.  
   
  THUNK_ORDINAL_LOAD  
  Thunk de chargement différé.  
   
  THUNK_ORDINAL_TRAMP_INCREMENTAL  
- Thunk trampoline incrémentielle (un thunk trampoline est utilisé pour retransmettre des appels à partir de l’espace mémoire d’un à un autre).  
+ Thunk trampoline incrémentiel (un thunk trampoline est utilisé pour rebondir les appels d’un espace mémoire à un autre).  
   
  THUNK_ORDINAL_TRAMP_BRANCHISLAND  
- Conversion de code trampoline de point de branche.  
+ Thunk point de branche trampoline.  
   
 ## <a name="remarks"></a>Notes  
- Les valeurs dans cette énumération sont retournées à partir d’un appel à la [IDiaSymbol::get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md) (méthode).  
+ Les valeurs de cette énumération sont retournées à partir d’un appel à la méthode [IDiaSymbol :: get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md) .  
   
 ## <a name="requirements"></a>Configuration requise  
- En-tête : cvconst.h  
+ En-tête : cvconst. h  
   
 ## <a name="see-also"></a>Voir aussi  
  [Énumérations et structures](../../debugger/debug-interface-access/enumerations-and-structures.md)   

@@ -12,22 +12,22 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f6f71e145282d1d6e340060b9798ca54c9af9f4e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62584835"
 ---
 # <a name="visibilityitem-element"></a>Élément VisibilityItem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Le `VisibilityItem` élément détermine la visibilité statique des commandes et des barres d’outils. Chaque entrée identifie une commande ou un menu et également un contexte de l’interface utilisateur de commande associée. Visual Studio détecte les commandes, menus, barres d’outils et des leur visibilité, sans charger les VSPackages qui les définissent. L’IDE utilise le <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> méthode pour déterminer si un contexte d’interface utilisateur de commande est actif.  
+L' `VisibilityItem` élément détermine la visibilité statique des commandes et des barres d’outils. Chaque entrée identifie une commande ou un menu, ainsi qu’un contexte d’interface utilisateur de commande associé. Visual Studio détecte les commandes, les menus et les barres d’outils, ainsi que leur visibilité, sans charger les VSPackages qui les définissent. L’IDE utilise la <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> méthode pour déterminer si un contexte d’interface utilisateur de commande est actif.  
   
- Une fois le VSPackage est chargé, Visual Studio attend la visibilité de commande sera déterminé par le VSPackage plutôt que `VisibilityItem`. Pour déterminer la visibilité de votre commande, vous pouvez implémenter soit le <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> Gestionnaire d’événements ou le <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> méthode, en fonction de la façon dont vous avez implémenté votre commande.  
+ Une fois le VSPackage chargé, Visual Studio attend que la visibilité de la commande soit déterminée par le VSPackage plutôt que par le `VisibilityItem` . Pour déterminer la visibilité de votre commande, vous pouvez implémenter le <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> Gestionnaire d’événements ou la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> méthode, en fonction de la façon dont vous avez implémenté votre commande.  
   
- Une commande ou un menu qui a un `VisibilityItem` élément apparaît uniquement lorsque le contexte associé est actif. Vous pouvez associer une commande unique, un menu ou une barre d’outils avec un ou plusieurs contextes d’interface utilisateur de commande en incluant une entrée pour chaque combinaison de contexte de la commande. Si une commande ou un menu est associé à plusieurs contextes d’interface utilisateur de commande, puis la commande ou du menu est visible lorsque l’un des contextes d’interface utilisateur de commande associée est actif.  
+ Une commande ou un menu contenant un `VisibilityItem` élément apparaît uniquement lorsque le contexte associé est actif. Vous pouvez associer une commande, un menu ou une barre d’outils unique à un ou plusieurs contextes d’interface utilisateur de commande en incluant une entrée pour chaque combinaison de contexte de commande. Si une commande ou un menu est associé à plusieurs contextes d’interface utilisateur de commande, la commande ou le menu est visible quand l’un des contextes d’interface utilisateur de commande associés est actif.  
   
- Le `VisibilityItem` élément s’applique uniquement aux commandes, menus et barres d’outils, non à des groupes. Un élément qui n’a pas un connexes `VisibilityItem` élément est visible dès que son menu parent est actif.  
+ L' `VisibilityItem` élément s’applique uniquement aux commandes, menus et barres d’outils, pas aux groupes. Un élément qui n’a pas d' `VisibilityItem` élément associé est visible chaque fois que son menu parent est actif.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -45,24 +45,24 @@ Le `VisibilityItem` élément détermine la visibilité statique des commandes e
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|guid|Obligatoire. Le GUID de l’identificateur de commande/ID GUID.|  
-|ID|Obligatoire. L’ID de l’identificateur de commande/ID GUID.|  
-|contexte|Obligatoire. Le contexte de l’interface utilisateur dans lequel la commande est visible.|  
-|Condition|Optionnel. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|guid|Obligatoire. GUID de l’identificateur de la commande GUID/ID.|  
+|id|Obligatoire. ID de l’identificateur de la commande GUID/ID.|  
+|contexte|Obligatoire. Contexte de l’interface utilisateur dans lequel la commande est visible.|  
+|Condition|facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Éléments enfants  
- Aucun.  
+ Aucun  
   
 ### <a name="parent-elements"></a>Éléments parents  
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[Élément VisibilityConstraints](../extensibility/visibilityconstraints-element.md)|Le `VisibilityConstraints` élément détermine la visibilité statique de groupes de commandes et des barres d’outils.|  
+|[Élément VisibilityConstraints](../extensibility/visibilityconstraints-element.md)|L' `VisibilityConstraints` élément détermine la visibilité statique des groupes de commandes et des barres d’outils.|  
   
 ## <a name="remarks"></a>Notes  
- Les contextes d’interface utilisateur Visual Studio standards sont définis dans le *chemin d’installation de Visual Studio SDK*\VisualStudioIntegration\Common\Inc\vsshlids.h fichier ainsi que dans le <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids> et <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> classes. Un ensemble plus complet de contextes d’interface utilisateur est défini dans le <xref:Microsoft.VisualStudio.VSConstants> classe.  
+ Les contextes d’interface utilisateur standard de Visual Studio sont définis dans le fichier \VisualStudioIntegration\Common\Inc\vsshlids.h du *chemin d’installation du kit de développement logiciel Visual Studio*, ainsi que dans les <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids> <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> classes et. Un ensemble plus complet de contextes d’interface utilisateur est défini dans la <xref:Microsoft.VisualStudio.VSConstants> classe.  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a> Exemple  
   
 ```  
 <VisibilityConstraints>  

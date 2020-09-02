@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 799b7f2789898e0d02d9588f9a3ad7d1e8098a00
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62809805"
 ---
 # <a name="variable-explorer"></a>Explorateur de variables
@@ -43,9 +43,9 @@ Les données étant souvent sous forme de tableau, vous pouvez afficher n’impo
 
 ![Vue de tableau de l’Explorateur de variables](media/variable-explorer-table-view.png)
 
-Un clic sur un en-tête de colonne permet de trier les données par colonne (alternant entre croissant et décroissant). Retenir **Shift** et cliquer sur des colonnes supplémentaires ajoute ces colonnes au tri ainsi. Un clic sur une colonne sans appui sur la touche **Maj** rétablit le tri de colonne unique.
+Un clic sur un en-tête de colonne permet de trier les données par colonne (alternant entre croissant et décroissant). Si vous maintenez la **touche Maj** enfoncée et cliquez sur des colonnes supplémentaires, ces colonnes sont également ajoutées au tri. Un clic sur une colonne sans appui sur la touche **Maj** rétablit le tri de colonne unique.
 
-L’ordre dans lequel vous cliquez sur les en-têtes de colonnes détermine l’ordre dans lequel le tri est effectué. Par exemple,+**Changez** la colonne **de cyyl,** **Shift**puis **changez**+**click** la colonne **mpg** deux fois pour trier la liste pour les cylindres ascendants et descendre miles par gallon:
+L’ordre dans lequel vous cliquez sur les en-têtes de colonnes détermine l’ordre dans lequel le tri est effectué. Par exemple, **Shift** + **cliquez sur** la colonne **cyl** , **Shift**puis + **sur** Maj pour trier la liste des cylindres croissants et décroissant les miles par gallon : **mpg**
 
 ![Vue de tableau du tri des données d’après deux colonnes.](media/variable-explorer-table-view-sorting.png)
 
@@ -53,7 +53,7 @@ L’**Explorateur de variables** et les vues de tableau étant dans des fenêtre
 
 ## <a name="open-in-excel-or-other-csv-capable-application"></a>Ouvrir dans Excel (ou autre application compatible CSV)
 
-Pour une manipulation et une analyse approfondies, il est souvent utile d’exporter des variables de session au format CSV. L’exportation se fait avec![la petite](media/variable-explorer-excel-icon.png)icône Excel ( icône d’exportation Excel ) à côté de chaque nœud dans le **Variable Explorer**, ou en cliquant à droite sur un élément et en sélectionnant **Open in CSV App**. Quand vous sélectionnez l’icône, les données sont écrites dans un nouveau fichier CSV dans le dossier *%userprofile%\Documents\RTVS_CSV_Exports*, et ce fichier s’ouvre dans l’application associée avec l’extension *.csv*.
+Pour une manipulation et une analyse approfondies, il est souvent utile d’exporter des variables de session au format CSV. L’exportation s’effectue à l’aide de la petite icône Excel ( ![ icône d’exportation Excel ](media/variable-explorer-excel-icon.png) ) en regard de chaque nœud dans le **Explorateur de variables**, ou en cliquant avec le bouton droit sur un élément et en sélectionnant **ouvrir dans l’application CSV**. Quand vous sélectionnez l’icône, les données sont écrites dans un nouveau fichier CSV dans le dossier *%userprofile%\Documents\RTVS_CSV_Exports*, et ce fichier s’ouvre dans l’application associée avec l’extension *.csv*.
 
 ## <a name="scopes"></a>Étendues
 
@@ -61,7 +61,7 @@ Par défaut, l’**Explorateur de variables** s’ouvre dans la portée globale.
 
 ![Explorateur de variables montrant une portée de package](media/variable-explorer-package-scopes.png)
 
-Vous pouvez également passer à une portée de fonction lorsqu’il est arrêté à un point d’arrêt dans le débogénaire (notez que **Variable Explorer** ne passe pas automatiquement à la portée de fonction du code en cours de débopoint) :
+Vous pouvez également basculer vers une portée de fonction lorsqu’elle est arrêtée à un point d’arrêt dans le débogueur (Notez que **Explorateur de variables** ne bascule pas automatiquement vers la portée de fonction du code en cours de débogage) :
 
 ![Explorateur de variables montrant une trame de données pendant le débogage](media/variable-explorer-as-locals-window.png)
 

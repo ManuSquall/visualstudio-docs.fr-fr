@@ -12,42 +12,42 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1f590f40e4e3361f4dbeb46a3a9b8758b8ab5075
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62846113"
 ---
 # <a name="message-properties-dialog-box"></a>Boîte de dialogue Propriétés du message
-Utilisez cette boîte de dialogue pour en savoir plus sur un message spécifique. Pour afficher cette boîte de dialogue, déplacez le focus à un [vue Messages](../debugger/messages-view.md) fenêtre. Sélectionnez n’importe quel nœud de message dans l’arborescence, puis choisissez **propriétés** à partir de la **vue** menu.
+Utilisez cette boîte de dialogue pour en savoir plus sur un message spécifique. Pour afficher cette boîte de dialogue, déplacez le focus vers une fenêtre d' [affichage des messages](../debugger/messages-view.md) . Sélectionnez un nœud de message dans l’arborescence, puis choisissez **Propriétés** dans le menu **affichage** .
 
- Le **général** onglet est le seul onglet affiché. Les paramètres suivants sont disponibles :
+ L’onglet **général** est le seul onglet affiché. Les options suivantes sont disponibles :
 
- **Handle de fenêtre** l’ID unique de cette fenêtre. Les numéros de handle de fenêtre sont réutilisés ; ils identifient une fenêtre uniquement pour la durée de vie de cette fenêtre. Cliquez sur cette valeur pour afficher les propriétés de cette fenêtre.
+ **Handle de fenêtre** ID unique de cette fenêtre. Les numéros de handles de fenêtre sont réutilisés ; ils identifient une fenêtre uniquement pendant la durée de vie de cette fenêtre. Cliquez sur cette valeur pour afficher les propriétés de cette fenêtre.
 
- **Niveau d’imbrication** profondeur d’imbrication de ce message, où 0 est sans imbrication.
+ **Niveau d’imbrication** Profondeur d’imbrication de ce message, où 0 n’est pas une imbrication.
 
- **Message** nombre, état et le nom du message windows sélectionné.
+ **Message** Nombre, État et nom du message Windows sélectionné.
 
- **lResult** la valeur de la *lResult* paramètre, le cas échéant.
+ **LRESULT** Valeur du paramètre *LRESULT* , le cas échéant.
 
- **wParam** la valeur de la *wParam* paramètre, le cas échéant.
+ **wParam** Valeur du paramètre *wParam* , le cas échéant.
 
- **lParam** la valeur de la *lParam* paramètre, le cas échéant. Cette valeur est décodée s’il s’agit d’un pointeur vers une chaîne ou une structure.
+ **lParam** Valeur du paramètre *lParam* , le cas échéant. Cette valeur est décodée s’il s’agit d’un pointeur vers une chaîne ou une structure.
 
-## <a name="related-sections"></a>Rubriques connexes
- [Boîte de dialogue Options du message](../debugger/message-options-dialog-box.md) permet de sélectionner les messages sont répertoriés dans la vue Messages active.
+## <a name="related-sections"></a>Sections connexes
+ [Boîte de dialogue Options des messages](../debugger/message-options-dialog-box.md) Permet de sélectionner les messages qui sont répertoriés dans la vue messages actifs.
 
- [Boîte de dialogue de recherche du message](../debugger/message-search-dialog-box.md) utilisé pour rechercher le nœud pour un message spécifique dans la vue Messages.
+ [Boîte de dialogue recherche](../debugger/message-search-dialog-box.md) d’un message Utilisé pour rechercher le nœud pour un message spécifique dans la vue messages.
 
- [Référence Spy ++](../debugger/spy-increment-reference.md) comprend les sections décrivant chaque Spy ++ menu et boîte de dialogue.
+ [Référence Spy + +](../debugger/spy-increment-reference.md) Comprend des sections décrivant chaque menu et boîte de dialogue Spy + +.
 
- [Ouvrir la vue Messages à partir de la fenêtre Rechercher](../debugger/how-to-open-messages-view-from-find-window.md) explique comment ouvrir la vue Messages à partir de la boîte de dialogue Rechercher une fenêtre.
+ [Ouverture de la vue messages à partir de la fenêtre Rechercher](../debugger/how-to-open-messages-view-from-find-window.md) Explique comment ouvrir la vue messages à partir de la boîte de dialogue Rechercher une fenêtre.
 
- [Recherche d’un Message dans la vue Messages](../debugger/how-to-search-for-a-message-in-messages-view.md) explique comment rechercher un message spécifique dans la vue Messages.
+ [Recherche d’un message dans la vue messages](../debugger/how-to-search-for-a-message-in-messages-view.md) Explique comment rechercher un message spécifique dans la vue messages.
 
- [La vue messages](../debugger/messages-view.md) affiche le flux de message associé à une fenêtre, un processus ou un thread.
+ [Vue messages](../debugger/messages-view.md) Affiche le flux de message associé à une fenêtre, un processus ou un thread.
 
- [Vues Spy ++](../debugger/spy-increment-views.md) explique les arborescences Spy ++ de windows, les messages, les processus et les threads.
+ [Vues Spy + +](../debugger/spy-increment-views.md) Explique les vues de l’arborescence Spy + + des fenêtres, des messages, des processus et des threads.
 
- [À l’aide de Spy ++](../debugger/using-spy-increment.md) présente l’outil Spy ++ et explique comment il peut être utilisé.
+ [Utilisation de Spy + +](../debugger/using-spy-increment.md) Présente l’outil Spy + + et explique comment l’utiliser.

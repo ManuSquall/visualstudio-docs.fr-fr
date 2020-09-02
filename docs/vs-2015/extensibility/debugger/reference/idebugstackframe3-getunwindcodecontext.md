@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame3::GetUnwindCodeContext | Microsoft Docs
+title: 'IDebugStackFrame3 :: GetUnwindCodeContext | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c5a3fdaf9ca21841a43041f0ad5c1dc7b1507085
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62546887"
 ---
 # <a name="idebugstackframe3getunwindcodecontext"></a>IDebugStackFrame3::GetUnwindCodeContext
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Retourne le contexte de code qui représente un emplacement si l’opération de déroulement de pile s’est produite.  
+Retourne le contexte de code représentant un emplacement si une opération de déroulement de la pile s’est produite.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -40,13 +40,13 @@ int GetUnwindCodeContext(
   
 #### <a name="parameters"></a>Paramètres  
  `ppCodeContext`  
- [out] Retourne un [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objet qui représente l’emplacement de contexte de code si un déroulement de pile s’est produite.  
+ à Retourne un objet [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) qui représente l’emplacement du contexte de code si un déroulement de la pile s’est produit.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="remarks"></a>Notes  
- Bien que cette méthode peut retourner un contexte de code pour l’emplacement après un désempilage, cela ne signifie pas nécessairement que le déroulement de pile peut réellement se produire dans le frame de pile actuel.  
+ Même si cette méthode peut retourner un contexte de code pour l’emplacement après un déroulement de pile, cela ne signifie pas nécessairement que le déroulement de la pile peut réellement se produire dans le frame de pile actuel.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)   

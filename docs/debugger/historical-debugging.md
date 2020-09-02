@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e44e62997cac1060047de03253880bbf577935da
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62895167"
 ---
 # <a name="historical-debugging-c-visual-basic-c"></a>Débogage d’historique (C#, Visual Basic, C++)
@@ -25,14 +25,14 @@ Le débogage d'historique est un mode de débogage qui repose sur les informatio
 
  La définition de points d'arrêt pour rechercher des bogues peut être assez aléatoire. Vous définissez un point d'arrêt proche de l'endroit dans votre code où vous pensez que se trouve le bogue, puis vous exécutez l'application dans le débogueur en espérant que votre point d'arrêt soit atteint et que l'endroit où l'exécution s'arrête puisse révéler la source du bogue. Si ce n’est pas le cas, vous devez essayer de définir un point d’arrêt autre part dans le code puis réexécuter le débogueur, en réexécutant vos étapes de façon répétée jusqu’à ce que vous puissiez identifier le problème.
 
- ![définir un point d’arrêt](../debugger/media/breakpointprocesa.png "BreakpointProcesa")
+ ![définition d’un point d’arrêt](../debugger/media/breakpointprocesa.png "BreakpointProcesa")
 
  Vous pouvez utiliser IntelliTrace et le débogage d’historique pour parcourir votre application et inspecter son état (pile des appels et variables locales) sans avoir à définir des points d’arrêt, à redémarrer le débogage et à répéter les étapes de test. Vous pouvez gagner beaucoup de temps, en particulier quand le bogue se trouve loin dans un scénario de test dont l'exécution est  très longue.
 
 ## <a name="how-do-i-start-using-historical-debugging"></a>Comment utiliser le débogage d’historique ?
 
-IntelliTrace est activé par défaut. Il vous suffit est de déterminer les événements et les appels de fonction présentent un intérêt pour vous, et si vous souhaitez afficher les captures instantanées de votre état complet des applications. Pour plus d’informations sur l’identification de ce que vous voulez rechercher, consultez [Fonctionnalités d’IntelliTrace](../debugger/intellitrace-features.md). Prise en charge de la fonctionnalité varie selon la langue et application type.
+IntelliTrace est activé par défaut. Il vous suffit de choisir les événements et les appels de fonction qui vous intéressent, et de déterminer si vous souhaitez afficher des instantanés de l’état complet de votre application. Pour plus d’informations sur l’identification de ce que vous voulez rechercher, consultez [Fonctionnalités d’IntelliTrace](../debugger/intellitrace-features.md). La prise en charge des fonctionnalités varie selon la langue et le type d’application.
 
-- Pour afficher des captures instantanées avec le débogage d’historique, consultez [Inspecter les États d’application précédent à l’aide d’IntelliTrace](../debugger/view-historical-application-state.md)
-- Pour savoir comment inspecter des variables et parcourir le code, consultez [Inspecter votre application avec le débogage d’historique](../debugger/historical-debugging-inspect-app.md)
-- Pour en savoir plus sur le débogage avec des événements IntelliTrace, consultez [procédure pas à pas : À l’aide d’IntelliTrace](../debugger/walkthrough-using-intellitrace.md).
+- Pour afficher les instantanés avec le débogage d’historique, consultez [inspecter les États d’application précédents à l’aide d’IntelliTrace](../debugger/view-historical-application-state.md)
+- Pour savoir comment inspecter des variables et parcourir le code, consultez [inspecter votre application avec le débogage d’historique](../debugger/historical-debugging-inspect-app.md)
+- Pour en savoir plus sur le débogage avec des événements IntelliTrace, consultez [procédure pas à pas : utilisation d’IntelliTrace](../debugger/walkthrough-using-intellitrace.md).

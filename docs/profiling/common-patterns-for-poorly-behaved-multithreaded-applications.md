@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4aec033266ccb2a6e6dcd0342669b7c31082488a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62788903"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Modèles courants pour des applications multithread au comportement médiocre
@@ -24,7 +24,7 @@ Le visualiseur concurrentiel permet aux développeurs de visualiser le comportem
 
 ## <a name="lock-contention-and-serialized-execution"></a>Conflits de verrous et exécution sérialisée
 
-![Lock contention résultant en exécution sérialisée](../profiling/media/lockcontention_serialized.png "LockContention_Serialized")
+![Contention de verrouillage entraînant une exécution sérialisée](../profiling/media/lockcontention_serialized.png "LockContention_Serialized")
 
 Parfois, une application parallélisée continue de s’exécuter de façon sérialisée alors qu’elle dispose de plusieurs threads et que l’ordinateur contient un nombre suffisant de cœurs logiques. Le premier symptôme que vous observerez sont de mauvaises performances multithread, peut-être même un peu plus lentes qu’une implémentation en série. Dans la vue Threads, vous ne voyez pas plusieurs threads s’exécuter en parallèle, mais un seul thread qui s’exécute en continu. À ce stade, si vous cliquez sur un segment de synchronisation d’un thread, vous voyez la pile des appels du thread bloqué (pile des appels de blocage) et le thread qui a supprimé la condition de blocage (pile des appels de déblocage). En outre, si la pile des appels de déblocage se produit au cours du processus que vous analysez, un connecteur de thread s’affiche. À ce stade, vous pouvez naviguer dans votre code à partir des piles d’appels de blocage et de déblocage pour connaître plus précisément la cause de la sérialisation.
 
@@ -58,16 +58,16 @@ Vous devez tenir compte de ce qui suit lorsque vous examinez ce problème :
 
 ## <a name="inefficient-io"></a>E/S inefficace
 
-![Inefficace I&#47;O](../profiling/media/inefficient_io.png "Inefficient_IO")
+![E&#47;O inefficace](../profiling/media/inefficient_io.png "Inefficient_IO")
 
 L’utilisation abusive ou la mauvaise utilisation des E/S est une cause fréquente de l’inefficacité des applications. Regardez l’illustration précédente. Le profil de la chronologie visible montre que 44 % du temps de thread visible sont consommés par les E/S. La chronologie montre de grandes quantités d’E/S, ce qui indique que l’application profilée est fréquemment bloquée par les E/S. Pour obtenir des informations détaillées sur les types d’E/S dont il s’agit et sur l’endroit où votre programme se bloque, zoomez sur les zones problématiques, examinez le profil de chronologie visible, puis cliquez sur un bloc d’E/S spécifique pour afficher les piles d’appels en cours.
 
 ## <a name="lock-convoys"></a>Convois de verrouillage
 
-![Convois de verrouillage](../profiling/media/lock_convoys.png "Lock_Convoys")
+![Convois de verrous](../profiling/media/lock_convoys.png "Lock_Convoys")
 
 Les convois de verrouillage se produisent lorsque l’application acquiert des verrous dans un ordre de premier arrivé, premier servi, alors que le taux d’arrivée au verrou est supérieur au taux d’acquisition. La combinaison de ces deux conditions provoque l’envoi de demandes de sauvegarde au verrou. Une des méthodes possibles pour résoudre ce problème consiste à utiliser des verrous inéquitables, qui permettent au premier thread qui les trouve à l’état déverrouillé de les acquérir. L’illustration précédente montre ce comportement de convoi. Pour résoudre ce problème, essayez de réduire le nombre de conflits au niveau des objets de synchronisation et d’utiliser des verrous inéquitables.
 
 ## <a name="see-also"></a>Voir aussi
 
-[Vue Threads](../profiling/threads-view-parallel-performance.md)
+[vue Threads](../profiling/threads-view-parallel-performance.md)

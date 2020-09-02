@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ef2375fc4132e0274e7cded6daf5bdd0a58891c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62580223"
 ---
 # <a name="functions-view---instrumentation-data"></a>Vue Fonctions - Données d’instrumentation
@@ -32,10 +32,10 @@ La vue du rapport Fonctions répertorie les données de profilage par nom de fon
 |**Adresse de la fonction**|Adresse de la fonction.|  
 |**Numéro de ligne de fonction**|Numéro de ligne du début de cette fonction dans le fichier source.|  
 |**Nombre d’appels**|Nombre total d'appels passés à cette fonction.|  
-|**Fichier source**|Fichier source contenant la définition pour cette fonction.|  
+|**Source File**|Fichier source contenant la définition pour cette fonction.|  
 |**Nom du module**|Nom du module qui contient la fonction.|  
-|**Chemin de module**|Chemin d’accès du module qui contient la fonction.|  
-|**ID du processus**|ID du processus (PID) de l'exécution du profilage.|  
+|**Chemin du module**|Chemin d’accès du module qui contient la fonction.|  
+|**ID de processus**|ID du processus (PID) de l'exécution du profilage.|  
 |**Nom du processus**|Nom du processus.|  
 |**Traitement de sondes du temps exclusif**|Surcharge de temps pour cette fonction qui est provoquée par l'instrumentation. Cela n’inclut pas la surcharge des fonctions appelées par la fonction. Le traitement de sondes a été soustrait de tous les temps exclusifs.|  
 |**Traitement des sondes temps inclus**|Surcharge de temps pour cette fonction et ses fonctions enfants qui est provoquée par l'instrumentation. Cela inclut la surcharge dans les fonctions appelées par la fonction. Le traitement de sondes a été soustrait de tous les temps inclusifs.|  
@@ -85,7 +85,7 @@ La vue du rapport Fonctions répertorie les données de profilage par nom de fon
 |**Temps exclusif d’application min.**|Temps exclusif d’application minimal d’un appel à cette fonction.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour personnaliser les colonnes de la vue Rapport](../profiling/how-to-customize-report-view-columns.md)   
- [Vue Fonctions](../profiling/functions-view-sampling-data.md)   
- [Vue Fonctions - Échantillonnage](../profiling/functions-view-dotnet-memory-sampling-data.md)   
+ [Comment : personnaliser les colonnes de la vue rapport](../profiling/how-to-customize-report-view-columns.md)   
+ [Mode fonctions](../profiling/functions-view-sampling-data.md)   
+ [Vue fonctions-échantillonnage](../profiling/functions-view-dotnet-memory-sampling-data.md)   
  [Vue Fonctions - Instrumentation](../profiling/functions-view-dotnet-memory-instrumentation-data.md)

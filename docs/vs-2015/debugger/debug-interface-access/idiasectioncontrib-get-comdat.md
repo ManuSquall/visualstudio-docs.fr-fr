@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ddf479a2da74803916b7afc1945eb610d6b0e668
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62576631"
 ---
-# <a name="idiasectioncontribgetcomdat"></a>IDiaSectionContrib::get_comdat
+# <a name="idiasectioncontribget_comdat"></a>IDiaSectionContrib::get_comdat
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Récupère un indicateur qui indique si la section est un enregistrement COMDAT.  
+Récupère un indicateur qui signale si la section est un enregistrement COMDAT.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -35,13 +35,13 @@ HRESULT get_comdat ( 
   
 #### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- [out] Retourne `TRUE` si la section est un enregistrement COMDAT ; sinon, retourne `FALSE`.  
+ à Retourne `TRUE` si la section est un enregistrement COMDAT ; sinon, retourne `FALSE` .  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.  
   
 ## <a name="remarks"></a>Notes  
- Un enregistrement COMDAT est un enregistrement de fichier Format COFF (Common Object) qui rend les fonctions empaquetées visibles par l’éditeur de liens.  
+ Un enregistrement COMDAT est un enregistrement COFF (Common Object File Format) qui rend les fonctions empaquetées visibles à l’éditeur de liens.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

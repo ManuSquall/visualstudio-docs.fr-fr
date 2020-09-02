@@ -9,14 +9,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cb05bb6a424b5639e0ee98e96c80315c51081ace
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62848477"
 ---
 # <a name="togglehud"></a>ToggleHUD
-Active ou désactive les diagnostics graphiques *HUD* (Head-Up Display) de superposition ou désactiver.
+Active ou désactive la superposition de Graphics Diagnostics *HUD* (affichage de tête haut).
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -25,6 +25,6 @@ void ToggleHUD();
 ```
 
 ## <a name="remarks"></a>Notes
- Graphics diagnostics HUD s’affiche dans le coin supérieur gauche de l’application qui s’exécute dans graphics diagnostics. Il affiche des informations d’exécution sur l’application et capture des informations graphiques, ainsi que les messages qui sont ajoutés en appelant le [AddMessage](addmessage.md) fonction membre.
+ Le HUD Graphics Diagnostics s’affiche dans l’angle supérieur gauche de l’application exécutée dans Graphics Diagnostics. Il affiche des informations d’exécution sur l’application et sur la capture des informations graphiques, ainsi que des messages ajoutés en appelant la fonction membre [AddMessage](addmessage.md) .
 
- Pour activer/désactiver le HUD, vous n’êtes pas obligé d’être activement capture d’informations graphiques, autrement dit, il peut être activé ou désactivé via une instance de la `VsgDbg` (classe), mais la [Init](init.md) fonction membre n’a d’abord être appelées.
+ Pour activer/désactiver le HUD, vous n’êtes pas obligé de capturer activement les informations graphiques, c’est-à-dire qu’elles peuvent être basculées par le biais d’une instance de la `VsgDbg` classe, mais la fonction membre [init](init.md) n’a pas besoin d’être appelée en premier.

@@ -1,5 +1,5 @@
 ---
-title: Messages de commandes de Menu | Microsoft Docs
+title: Commandes du menu messages | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +11,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 283d079d01c5395b542a68b37b73c638702e7cda
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62845888"
 ---
 # <a name="messages-menu-commands"></a>commandes du menu Messages
-Le **Messages** menu fournit des commandes permettant de contrôler les vues de message.
+Le menu **messages** fournit des commandes permettant de contrôler les affichages des messages.
 
- **Démarrer/arrêter la journalisation** démarre ou arrête le message s’afficher.
+ **Démarrer/arrêter la journalisation** Démarre ou arrête l’affichage des messages.
 
- **Options de journalisation** ouvre le **Options des messages** boîte de dialogue, où vous pouvez spécifier des critères de recherche de message.
+ **Options de journalisation** Ouvre la boîte de dialogue **MessageOptions** , dans laquelle vous pouvez spécifier les critères de recherche des messages.
 
- **Effacer le journal** efface le contenu de la vue Messages active.
+ **Effacer le journal** Efface le contenu de la vue messages actifs.

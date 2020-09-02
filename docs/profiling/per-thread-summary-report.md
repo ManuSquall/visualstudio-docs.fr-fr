@@ -13,21 +13,21 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1ab5e88db9f539dd79482044ab3834b27a6b1747
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62794324"
 ---
 # <a name="per-thread-summary-report"></a>Rapport Récapitulatif par thread
 Cet histogramme présente la proportion de temps que chaque thread non masqué passe dans chaque catégorie d’activité pendant la plage horaire actuellement visible. « Exécution » signifie que le thread est en cours d’exécution ; toutes les autres catégories impliquent que le thread est en attente d’une opération.
 
 ## <a name="see-also"></a>Voir aussi
-- [Temps d’exécution (Threads View)](../profiling/execution-time-threads-view.md)
-- [I/O time (Threads View)](../profiling/i-o-time-threads-view.md)
-- [Période de gestion de la mémoire](../profiling/memory-management-time.md)
+- [Durée d’exécution (vue threads)](../profiling/execution-time-threads-view.md)
+- [Temps d’e/s (vue threads)](../profiling/i-o-time-threads-view.md)
+- [Temps de gestion de la mémoire](../profiling/memory-management-time.md)
 - [Durée de préemption](../profiling/preemption-time.md)
-- [Temps de sommeil](../profiling/sleep-time.md)
-- [Temps de synchronisation](../profiling/synchronization-time.md)
+- [Temps de veille](../profiling/sleep-time.md)
+- [Heure de synchronisation](../profiling/synchronization-time.md)
 - [Temps de traitement de l’interface utilisateur](../profiling/ui-processing-time.md)
-- [Vue Threads](../profiling/threads-view-parallel-performance.md)
+- [vue Threads](../profiling/threads-view-parallel-performance.md)

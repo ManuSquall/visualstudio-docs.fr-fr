@@ -1,5 +1,5 @@
 ---
-title: Arborescence de commandes de Menu | Microsoft Docs
+title: Commandes du menu arborescence | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,19 +11,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bc840ac19e48f6a0a6a597ec667a4bc799070e59
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62901827"
 ---
 # <a name="tree-menu-commands"></a>commandes du menu Arborescence
-Le **arborescence** menu fournit des commandes pour développer ou réduire des vues.
+Le menu **arborescence** fournit des commandes pour développer ou réduire des vues.
 
- **Développer un niveau** développe l’élément actuellement sélectionné dans une vue système en affichant un niveau en dessous d’elle.
+ **Développer un niveau** Développe l’élément actuellement sélectionné dans une vue système en affichant un niveau en dessous.
 
- **Développez la branche** développe tous les niveaux en dessous de l’élément actuellement sélectionné.
+ **Développer la branche** Développe tous les niveaux sous l’élément actuellement sélectionné.
 
- **Développer tout** se développe et affiche tous les niveaux dans une vue système.
+ **Développer tout** Développe et affiche tous les niveaux dans une vue système.
 
- **Réduire** réduit tous les niveaux en dessous de l’élément actuellement sélectionné.
+ **Réduire** Réduit tous les niveaux sous l’élément actuellement sélectionné.

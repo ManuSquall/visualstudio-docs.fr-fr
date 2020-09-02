@@ -1,5 +1,5 @@
 ---
-title: Commandes du Menu fenêtre | Microsoft Docs
+title: Commandes du menu fenêtre | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,25 +11,25 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a0d6332be7049d575b15c229b5892112fc972895
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62900965"
 ---
 # <a name="window-menu-commands"></a>commandes du menu Fenêtre
-Le **fenêtre** menu fournit des commandes pour gérer les fenêtres Spy ++.
+Le menu **fenêtre** fournit des commandes permettant de gérer les fenêtres Spy + +.
 
- **Cascade** Réorganise toutes les fenêtres dans un modèle en cascade.
+ En **cascade** Réorganise toutes les fenêtres dans un modèle en cascade.
 
- **Mosaïque horizontale** réorganiser toutes les fenêtres en mosaïque horizontale.
+ **Mosaïque horizontale** Réorganisez toutes les fenêtres dans un modèle de mosaïque horizontal.
 
- **Mosaïque verticale** Réorganise toutes les fenêtres en mosaïque verticale.
+ **Mosaïque verticale** Réorganise toutes les fenêtres dans un modèle de mosaïque vertical.
 
- **Réorganiser les icônes** réorganise les icônes d’affichage si les fenêtres ont été réduites.
+ **Organiser les icônes** Réorganise les icônes de vue, si les fenêtres ont été réduites.
 
- **Fermer / Fermer tout** ferme une ou toutes les fenêtres dans Spy ++.
+ **Fermer/Fermer tout** Ferme une ou toutes les fenêtres dans Spy + +.
 
- **Actualiser** actualise la vue actuellement sélectionnée.
+ **Actualiser** Actualise la vue actuellement sélectionnée.
 
- **Fenêtre** autorise la sélection d’une fenêtre spécifique.
+ **Fenêtre** Autorise la sélection d’une fenêtre spécifique.

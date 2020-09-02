@@ -1,5 +1,5 @@
 ---
-title: Paramètres de projets pour un C# déboguer config | Microsoft Docs
+title: Paramètres de projet pour une configuration Debug C# | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/21/2018
 ms.topic: reference
@@ -22,43 +22,43 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: a5108e195e5df245c72436752316e8ee91781e7d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62903957"
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>Paramètres de projet pour des configurations Debug C#
 
-Vous pouvez modifier C# projet des paramètres de débogage dans le [onglet débogage](#debug-tab) et [onglet Build](#build-tab) des pages de propriétés de projet.
+Vous pouvez modifier les paramètres de débogage de projet C# sous l’onglet [Déboguer](#debug-tab) et l' [onglet générer](#build-tab) des pages de propriétés du projet.
 
-Pour ouvrir les pages de propriétés, sélectionnez le projet dans **l’Explorateur de solutions** , puis sélectionnez le **propriétés** icône, ou cliquez sur le projet et sélectionnez **propriétés**.
+Pour ouvrir les pages de propriétés, sélectionnez le projet dans **Explorateur de solutions** puis sélectionnez l’icône **Propriétés** , ou cliquez avec le bouton droit sur le projet et sélectionnez **Propriétés**.
 
 Pour plus d’informations, consultez [Configurations Debug et Release](how-to-set-debug-and-release-configurations.md).
 
 >[!IMPORTANT]
->Ces paramètres ne s’appliquent aux applications .NET Core, ASP.NET ou UWP. Pour configurer les paramètres de débogage pour les applications UWP, consultez [démarrer une session de débogage pour une application UWP](start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).
+>Ces paramètres ne s’appliquent pas aux applications .NET Core, ASP.NET ou UWP. Pour configurer les paramètres de débogage pour les applications UWP, consultez [Démarrer une session de débogage pour une application UWP](start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).
 
 ## <a name="debug-tab"></a>Onglet Déboguer
 
 |Paramètre|Description|
 |-------------------------------------| - |
-| **Configuration** | Définit le mode de création de l’application. Sélectionnez **Active (Debug)**, **déboguer**, **version**, ou **toutes les Configurations** dans la liste déroulante. |
-| **Action de démarrage** | Spécifie l’action lorsque vous sélectionnez **Démarrer** dans une configuration Debug.<br />- **Démarrer le projet**, qui est l’option par défaut, lance le projet de démarrage pour le débogage. Pour plus d’informations, consultez [choisir le projet de démarrage](/previous-versions/visualstudio/visual-studio-2010/0s590bew(v=vs.100)).<br />- **Démarrer le programme externe** démarre et s’attache à une application qui n’est pas dans le cadre d’un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projet. Pour plus d’informations, consultez [attacher au processus en cours d’exécution avec le débogueur](attach-to-running-processes-with-the-visual-studio-debugger.md).<br />- **Démarrer le navigateur avec URL** vous permet de déboguer une application web. |
-| **Options de démarrage** > **des arguments de ligne de commande** | Spécifie les arguments de ligne de commande pour l’application en cours de débogage. Le nom de commande est le nom d’application spécifié dans **démarrer le programme externe**. |
-| **Options de démarrage** > **répertoire de travail** | Spécifie le répertoire de travail de l’application en cours de débogage. Dans C#, le répertoire de travail est *\bin\debug* par défaut.
-| **Options de démarrage** > **utiliser l’ordinateur distant**|Pour le débogage distant, sélectionnez cette option et entrez le nom de la cible de débogage à distance, ou un [nom de serveur Msvsmon](../debugger/remote-debugging.md). <br />L’emplacement d’une application sur l’ordinateur distant est spécifié par le **chemin de sortie** propriété sur le **Build** onglet. L'emplacement doit être un répertoire pouvant être partagé de l'ordinateur distant.
-| **Moteur du débogueur** > **activer le débogage de code non managé** | Débogue les appels pour le code Win32 natif (non managé) à partir de l’application gérée. |
-| **Moteur du débogueur** > **débogage activer SQL Server** | Débogue les objets de base de données SQL Server. |
+| **Configuration** | Définit le mode de génération de l’application. Dans la liste déroulante, sélectionnez **active (débogage)**, **Debug**, **Release**ou **toutes les configurations** . |
+| **Action de démarrage** | Spécifie l’action lorsque vous sélectionnez **Démarrer** dans une configuration de débogage.<br />- **Démarrer le projet** est la valeur par défaut et lance le projet de démarrage pour le débogage. Pour plus d’informations, consultez [choisir le projet de démarrage](/previous-versions/visualstudio/visual-studio-2010/0s590bew(v=vs.100)).<br />- **Démarrer le programme externe** démarre et se connecte à une application qui ne fait pas partie d’un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projet. Pour plus d’informations, consultez [attacher aux processus en cours d’exécution avec le débogueur](attach-to-running-processes-with-the-visual-studio-debugger.md).<br />- **Démarrer le navigateur avec l’URL** vous permet de déboguer une application Web. |
+| **Options**  >  de démarrage **Arguments de ligne de commande** | Spécifie les arguments de ligne de commande pour l’application en cours de débogage. Le nom de la commande est le nom de l’application spécifié dans **Démarrer le programme externe**. |
+| **Options**  >  de démarrage **Répertoire de travail** | Spécifie le répertoire de travail de l’application en cours de débogage. En C#, le répertoire de travail est *\bin\Debug* par défaut.
+| **Options**  >  de démarrage **Utiliser l’ordinateur distant**|Pour le débogage distant, sélectionnez cette option et entrez le nom de la cible de débogage distant, ou un [nom de serveur Msvsmon](../debugger/remote-debugging.md). <br />L’emplacement d’une application sur l’ordinateur distant est spécifié par la propriété **chemin de sortie** sous l’onglet **générer** . L’emplacement doit être un répertoire partageable sur l’ordinateur distant.
+| Moteur du débogueur **Debugger engine**  >  **Activer le débogage de code non managé** | Débogue les appels au code Win32 natif (non managé) à partir de l’application gérée. |
+| Moteur du débogueur **Debugger engine**  >  **Activer le débogage SQL Server** | Débogue SQL Server objets de base de données. |
 
 ## <a name="build-tab"></a>Onglet Générer
 
 |Paramètre|Description|
 |-------------|-----------------|
-|**Général** > **symboles de compilation conditionnelle**|Définissez les constantes DEBUG et TRACE si sélectionné.<br /><br /> Ces constantes activent la compilation conditionnelle de la [classe Debug](/dotnet/api/system.diagnostics.debug) et de la [classe Trace](/dotnet/api/system.diagnostics.trace). Avec ces constantes définies, les méthodes de classe Debug et Trace génèrent un résultat dans la fenêtre [Sortie](../ide/reference/output-window.md). Sans ces constantes, les méthodes de classe Debug et Trace ne sont pas compilées et aucun résultat n’est généré.<br /><br />En règle générale, DEBUG est défini dans la version Debug d’une build et non défini dans la version Release. TRACE est défini dans les versions Debug et Release.|
-|**Général** > **optimiser le code**|Sauf si un bogue s’affiche uniquement dans le code optimisé, laissez ce paramètre désélectionnées pour les versions Debug. Code optimisé est plus difficile à déboguer, car les instructions ne correspondent pas directement aux instructions dans le code source.|
-|**Sortie** > **chemin de sortie**|La valeur est généralement *bin\Debug* pour le débogage.|
-|**Advanced** bouton|Pour plus d’informations sur les options de débogage avancées, consultez [boîte de dialogue Paramètres de génération avancés (C#)](../ide/reference/advanced-build-settings-dialog-box-csharp.md). Le format portable pour le symbole (*.pdb*) fichiers est un format inter-plateformes récentes pour les applications .NET Core.
+|**Général**  >  **Symboles de compilation conditionnelle**|Définissez les constantes DEBUG et TRACE si elles sont sélectionnées.<br /><br /> Ces constantes activent la compilation conditionnelle de la [classe Debug](/dotnet/api/system.diagnostics.debug) et de la [classe Trace](/dotnet/api/system.diagnostics.trace). Avec ces constantes définies, les méthodes de classe Debug et Trace génèrent un résultat dans la fenêtre [Sortie](../ide/reference/output-window.md). Sans ces constantes, les méthodes de classe Debug et Trace ne sont pas compilées et aucun résultat n’est généré.<br /><br />En règle générale, DEBUG est défini dans la version Debug d’une build et non défini dans la version Release. La TRACE est définie à la fois dans les versions Debug et Release.|
+|**Général**  >  **Optimiser le code**|Si un bogue n’apparaît que dans le code optimisé, laissez ce paramètre désélectionné pour les versions Debug. Le code optimisé est plus difficile à déboguer, car les instructions ne correspondent pas directement aux instructions dans le code source.|
+|**Sortie**  >  **Chemin de sortie**|Est généralement défini sur *bin\Debug* pour le débogage.|
+|Bouton **avancé**|Pour plus d’informations sur les options de débogage avancées, consultez [paramètres de build avancés, boîte de dialogue (C#)](../ide/reference/advanced-build-settings-dialog-box-csharp.md). Le format portable des fichiers de symboles (*. pdb*) est un format multiplateforme récent pour les applications .net core.
 
 ## <a name="see-also"></a>Voir aussi
 - [Paramètres et préparation du débogueur](../debugger/debugger-settings-and-preparation.md)

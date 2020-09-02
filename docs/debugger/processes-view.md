@@ -13,41 +13,41 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 99ba60021410f1965e05f7c5479231013d53cb71
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62904225"
 ---
 # <a name="processes-view"></a>Vue Processus
-La vue processus affiche une arborescence de tous les processus actifs sur votre système. Le nom du module et les ID de processus sont affichés. Utilisez la vue processus si vous souhaitez examiner un processus système particulier, qui correspond généralement à un programme en cours d’exécution. Les processus sont identifiés par des noms de module, ou elles sont désignées « processus système. »
+La vue processus affiche une arborescence de tous les processus actifs sur votre système. L’ID de processus et le nom du module sont affichés. Utilisez la vue processus si vous souhaitez examiner un processus système particulier, qui correspond généralement à un programme en cours d’exécution. Les processus sont identifiés par des noms de module ou sont des « processus système » désignés.
 
- Microsoft Windows prend en charge plusieurs processus. Chaque processus peut avoir un ou plusieurs threads et chaque thread peut avoir une ou plusieurs associés des fenêtres de niveau supérieur. Chaque fenêtre de niveau supérieur peut posséder une série de windows. Un symbole + indique qu’un niveau est réduit. L’affichage réduit se compose d’une ligne par processus. Cliquez sur le symbole + pour développer le niveau.
+ Microsoft Windows prend en charge plusieurs processus. Chaque processus peut avoir un ou plusieurs threads, et chaque thread peut avoir une ou plusieurs fenêtres de niveau supérieur associées. Chaque fenêtre de niveau supérieur peut posséder une série de fenêtres. Un symbole + indique qu’un niveau est réduit. La vue réduite se compose d’une ligne par processus. Cliquez sur le signe + pour développer le niveau.
 
- Utilisez la vue processus si vous souhaitez examiner un processus système particulier, qui correspond généralement à un programme en cours d’exécution. Les processus sont identifiés par des noms de module, ou elles sont désignées « processus système. » Pour rechercher un processus, de réduire l’arborescence et de recherche dans la liste.
+ Utilisez la vue processus si vous souhaitez examiner un processus système particulier, qui correspond généralement à un programme en cours d’exécution. Les processus sont identifiés par des noms de module ou sont des « processus système » désignés. Pour rechercher un processus, réduisez l’arborescence et recherchez la liste.
 
 ## <a name="procedures"></a>Procédures
 
 #### <a name="to-open-the-processes-view"></a>Pour ouvrir la vue processus
 
-1. À partir de la **Spy** menu, choisissez **processus**.
+1. Dans le menu **Espion** , choisissez **processus**.
 
-   ![Spy&#43; &#43; vue processus](../debugger/media/spy--_processes.png "Spy ++ _Processes") Spy ++ vue processus
+   ![Vue processus Spy&#43;&#43; ](../debugger/media/spy--_processes.png "_Processes Spy + +") Affichage des processus Spy + +
 
-   La figure ci-dessus illustre la vue processus avec les nœuds de processus et thread développés.
+   La figure ci-dessus montre la vue processus avec les nœuds de processus et de thread développés.
 
 ### <a name="in-this-section"></a>Dans cette section
- [Recherche d’un processus dans la vue processus](../debugger/how-to-search-for-a-process-in-processes-view.md) explique comment rechercher un processus spécifique dans la vue processus.
+ [Recherche d’un processus dans la vue processus](../debugger/how-to-search-for-a-process-in-processes-view.md) Explique comment rechercher un processus spécifique dans la vue processus.
 
- [Affichage des propriétés de processus](../debugger/how-to-display-process-properties.md) explique comment afficher des informations supplémentaires sur un message.
+ [Affichage des propriétés](../debugger/how-to-display-process-properties.md) d’un processus Explique comment afficher plus d’informations sur un message.
 
-### <a name="related-sections"></a>Rubriques connexes
- [Vues Spy ++](../debugger/spy-increment-views.md) explique les arborescences Spy ++ de windows, les messages, les processus et les threads.
+### <a name="related-sections"></a>Sections connexes
+ [Vues Spy + +](../debugger/spy-increment-views.md) Explique les vues de l’arborescence Spy + + des fenêtres, des messages, des processus et des threads.
 
- [À l’aide de Spy ++](../debugger/using-spy-increment.md) présente l’outil Spy ++ et explique comment il peut être utilisé.
+ [Utilisation de Spy + +](../debugger/using-spy-increment.md) Présente l’outil Spy + + et explique comment l’utiliser.
 
- [Boîte de dialogue de recherche processus](../debugger/process-search-dialog-box.md) utilisé pour rechercher le nœud pour un processus spécifique dans la vue processus.
+ [Boîte de dialogue recherche de processus](../debugger/process-search-dialog-box.md) Utilisé pour rechercher le nœud d’un processus spécifique dans la vue processus.
 
- [Boîte de dialogue Propriétés du processus](../debugger/process-properties-dialog-box.md) affiche les propriétés d’un processus sélectionné dans la vue processus.
+ [Boîte de dialogue Propriétés du processus](../debugger/process-properties-dialog-box.md) Affiche les propriétés d’un processus sélectionné dans la vue processus.
 
- [Référence Spy ++](../debugger/spy-increment-reference.md) comprend les sections décrivant chaque Spy ++ menu et boîte de dialogue.
+ [Référence Spy + +](../debugger/spy-increment-reference.md) Comprend des sections décrivant chaque menu et boîte de dialogue Spy + +.

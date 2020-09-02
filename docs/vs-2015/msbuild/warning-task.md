@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: adbddc2fb36e5036e535dfc1049945187fe14ed0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62558487"
 ---
 # <a name="warning-task"></a>Warning, tâche
@@ -41,12 +41,12 @@ Enregistre un avertissement durant une génération en fonction d’une instruct
 |`HelpKeyword`|Paramètre `String` facultatif.<br /><br /> Mot clé d’aide à associer à l’avertissement.|  
 |`Text`|Paramètre `String` facultatif.<br /><br /> Texte d’avertissement que [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] journalise si le paramètre `Condition` a la valeur `true`.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  La tâche `Warning` permet aux projets [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] de vérifier la présence d’une configuration requise ou d’une propriété obligatoire avant de passer à l’étape de génération suivante.  
   
- Si le paramètre `Condition` de la tâche `Warning` a la valeur `true`, la valeur du paramètre `Text` est journalisée et la génération se poursuit. Si aucun paramètre `Condition` n’existe, le texte de l’avertissement est journalisé. Pour plus d’informations sur la journalisation, consultez l’article [Obtention de journaux de génération avec MSBuild](../msbuild/obtaining-build-logs-with-msbuild.md).  
+ Si le paramètre `Condition` de la tâche `Warning` a la valeur `true`, la valeur du paramètre `Text` est journalisée et la génération se poursuit. Si aucun paramètre `Condition` n’existe, le texte de l’avertissement est journalisé. Pour plus d’informations sur la journalisation, consultez [obtention de journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md).  
   
- En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+ En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension> , qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task> . Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Exemple  
  L’exemple de code suivant vérifie les propriétés définies sur la ligne de commande. Si aucune propriété n’est définie, le projet déclenche un événement d’avertissement et journalise la valeur du paramètre `Text` de la tâche `Warning`.  
@@ -66,5 +66,5 @@ Enregistre un avertissement durant une génération en fonction d’une instruct
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Obtention de journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md)   
- [Référence du schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)
+ [Obtention des journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md)   
+ [Référence de schéma de fichier de projet](../msbuild/msbuild-project-file-schema-reference.md)

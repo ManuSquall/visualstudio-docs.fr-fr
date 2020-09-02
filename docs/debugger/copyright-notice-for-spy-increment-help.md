@@ -1,5 +1,5 @@
 ---
-title: Notice de copyright pour l’aide de Spy ++ | Microsoft Docs
+title: Mention de droits d’auteur pour l’aide de Spy + + | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d16628dc634fe58843c71867b4795dae21a6341f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62565496"
 ---
 # <a name="copyright-notice-for-spy-help"></a>Mention de droits d'auteur pour l'aide de Spy++

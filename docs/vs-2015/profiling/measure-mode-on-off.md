@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 92db719f8af2688dc70ddb5ac253c17095302766
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62563270"
 ---
 # <a name="measure-mode-onoff"></a>Mode Mesure activé/désactivé
@@ -29,5 +29,5 @@ Avec cet outil, vous pouvez mesurer précisément une durée dans la chronologie
   
 ## <a name="see-also"></a>Voir aussi  
  [Gérer les canaux](../profiling/manage-channels.md)   
- [Contrôle Zoom (vue Threads)](../profiling/zoom-control-threads-view.md)   
+ [Contrôle zoom (vue threads)](../profiling/zoom-control-threads-view.md)   
  [vue Threads](../profiling/threads-view-parallel-performance.md)

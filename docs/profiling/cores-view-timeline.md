@@ -13,15 +13,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7ae006788f2704459de7ef32f01385e196e28c04
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62553108"
 ---
 # <a name="cores-view-timeline"></a>Chronologie de la vue Cœurs
 Chaque ligne de la chronologie représente un cœur de processeur logique sur le système profilé. Pour chaque ligne, l’axe horizontal indique le thread qui s’exécutait sur un cœur logique à un moment donné dans le temps. Vous pouvez pointer sur une couleur dans une chronologie pour afficher une info-bulle qui identifie le thread. Pour faciliter l’identification du thread, la légende dans le bas de la fenêtre indique ce que représente chaque couleur. Utilisez l’outil Zoom pour effectuer un zoom avant ou arrière, en cliquant et en faisant glisser, ou en appuyant sur Ctrl et en actionnant la roulette de la souris. La cohérence du zoom est conservée quand vous basculez entre la vue Cœurs et la vue Threads.
 
 ## <a name="see-also"></a>Voir aussi
-- [Vue Cœurs](../profiling/cores-view.md)
-- [Zoom, contrôle (vue Threads)](../profiling/zoom-control-threads-view.md)
+- [Affichage Cœurs](../profiling/cores-view.md)
+- [Contrôle zoom (vue threads)](../profiling/zoom-control-threads-view.md)

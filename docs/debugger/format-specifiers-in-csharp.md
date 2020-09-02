@@ -1,5 +1,5 @@
 ---
-title: Mettre en forme spécificateurs dans le débogueur (c#) | Microsoft Docs
+title: Spécificateurs de format dans le débogueur (C#) | Microsoft Docs
 ms.date: 11/21/2018
 ms.topic: conceptual
 dev_langs:
@@ -26,18 +26,18 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: caaf36e286f1bdc664ebdbb10e3baf7ed28183e7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62849852"
 ---
-# <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Spécificateurs de format en c# dans le débogueur Visual Studio
-Vous pouvez modifier le format dans lequel une valeur est affichée dans le **espion** fenêtre à l’aide de spécificateurs de format. Vous pouvez également utiliser des spécificateurs de format dans le **immédiat** fenêtre, le **commande** fenêtre, dans [des points de trace](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)et dans les fenêtres sources. Si vous faites une pause d’une expression dans ces fenêtres, le résultat s’affiche dans un [DataTip](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) dans l’affichage du format spécifié.
+# <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Spécificateurs de format en C# dans le débogueur Visual Studio
+Vous pouvez modifier le format dans lequel une valeur est affichée dans la fenêtre **Espion** à l’aide de spécificateurs de format. Vous pouvez également utiliser des spécificateurs de format dans la fenêtre **exécution** , la fenêtre **commande** , les points de [trace](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)et les fenêtres sources. Si vous faites une pause sur une expression dans ces fenêtres, le résultat s’affiche dans un  [DataTip](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) dans l’affichage de format spécifié.
 
-Pour utiliser un spécificateur de format, entrez l’expression de variable suivie par une virgule et le spécificateur approprié.
+Pour utiliser un spécificateur de format, entrez l’expression de variable suivie d’une virgule et du spécificateur approprié.
 
-## <a name="set-format-specifiers"></a>Spécificateurs de format de jeu
+## <a name="set-format-specifiers"></a>Définir des spécificateurs de format
 Nous allons utiliser l’exemple de code suivant :
 
 ```csharp
@@ -48,33 +48,33 @@ Nous allons utiliser l’exemple de code suivant :
 }
 ```
 
-Ajouter le `my_var1` à la variable le **espion** fenêtre pendant le débogage, **déboguer** > **Windows** > **regarder**  >  **Espion 1**. Ensuite, avec le bouton droit de la variable et sélectionnez **affichage hexadécimal**. Maintenant le **espion** fenêtre affiche la valeur 0 x 0065. Pour afficher cette valeur comme un entier décimal plutôt qu’un entier hexadécimal, ajoutez le spécificateur de format décimal **, d** dans le **nom** colonne après le nom de variable. Le **valeur** colonne affiche maintenant **101**.
+Ajoutez la `my_var1` variable à la fenêtre **Espion** pendant le débogage, puis **déboguez**  >  **Windows**  >  **Watch**  >  **Espion 1**. Ensuite, cliquez avec le bouton droit sur la variable et sélectionnez **affichage hexadécimal**. À présent, la fenêtre **Espion** affiche la valeur 0x0065. Pour afficher cette valeur sous la forme d’un entier décimal plutôt que sous la forme d’un entier hexadécimal, ajoutez le spécificateur de format décimal **, d** dans la colonne **nom** après le nom de la variable. La colonne **valeur** affiche maintenant **101**.
 
 ![WatchFormatCSharp](../debugger/media/watchformatcsharp.png "WatchFormatCSharp")
 
 ::: moniker range=">= vs-2019" 
 
-Vous pouvez afficher et sélectionner dans la liste des spécificateurs de format disponibles en ajoutant une virgule (,) à la valeur de la **espion** fenêtre. 
+Vous pouvez afficher et sélectionner dans une liste de spécificateurs de format disponibles en ajoutant une virgule (,) à la valeur dans la fenêtre **Espion** . 
 
 ![FormatSpecCSharp](../debugger/media/vs-2019/format-specs-csharp.png "FormatSpecCSharp")
 
 ::: moniker-end
 
 ## <a name="format-specifiers"></a>Spécificateurs de format
-Le tableau suivant décrit les C# spécificateurs pour le débogueur Visual Studio de format.
+Le tableau suivant décrit les spécificateurs de format C# pour le débogueur Visual Studio.
 
 |Spécificateur|Format|Valeur d’espion d’origine|Affiche|
 |---------------|------------|--------------------------|--------------|
-|ac|Forcer l’évaluation d’une expression qui peut être utile lors de l’évaluation implicite de propriétés et appels de fonction implicite est désactivée.|Message « L’évaluation de fonction implicite est désactivée par l’utilisateur »|\<valeur>|
+|clim|Force l’évaluation d’une expression, qui peut être utile lorsque l’évaluation implicite des propriétés et des appels de fonction implicite est désactivée.|Message « L’évaluation de fonction implicite est désactivée par l’utilisateur »|\<value>|
 |d|entier décimal|0x0065|101|
-|dynamic|Affiche l’objet spécifié à l’aide d’un affichage dynamique|Affiche tous les membres de l’objet, y compris l’affichage dynamique|Affiche uniquement l’affichage dynamique|
+|dynamique|Affiche l’objet spécifié à l’aide d’un affichage dynamique|Affiche tous les membres de l’objet, y compris l’affichage dynamique|Affiche uniquement l’affichage dynamique|
 |h|entier hexadécimal|61541|0x0000F065|
 |nq|chaîne sans guillemets|"Ma chaîne"|Ma chaîne|
-|NSE|Spécifie le comportement, pas de format. Évalue l’expression « Sans effets secondaires ». Si l’expression ne peut pas être interprétée et peut uniquement être résolue en un formulaire d’évaluation (par exemple, un appel de fonction), une erreur s’affiche à la place.|N/A|N/A|
+|NSE|Spécifie le comportement, et non le format. Évalue l’expression avec « aucun effet secondaire ». Si l’expression ne peut pas être interprétée et ne peut être résolue que par une évaluation (par exemple, un appel de fonction), une erreur s’affiche à la place.|N/A|N/A|
 |hidden|Affiche tous les membres publics et non publics|Affiche les membres publics|Affiche tous les membres|
-|raw|Affiche l’élément tel qu’il apparaît dans le nœud élément brut. Valide uniquement sur les objets proxy.|Dictionnaire\<T >|Affichage brut de Dictionary\<T >|
-|résultats|Utilisé avec une variable d’un type qui implémente IEnumerable ou IEnumerable\<T >, habituellement le résultat d’une expression de requête. Affiche uniquement les membres contenant les résultats de requête.|Affiche tous les membres|Affiche les membres qui répondent aux conditions de la requête|
+|raw|Affiche l’élément tel qu’il apparaît dans le nœud élément brut. Valide uniquement sur les objets proxy.|Dictionnaire\<T>|Affichage brut du dictionnaire\<T>|
+|results|Utilisé avec une variable d’un type qui implémente IEnumerable ou IEnumerable \<T> , habituellement le résultat d’une expression de requête. Affiche uniquement les membres contenant les résultats de requête.|Affiche tous les membres|Affiche les membres qui répondent aux conditions de la requête|
 
 ## <a name="see-also"></a>Voir aussi
-- [Fenêtres Espion et Espion express](../debugger/watch-and-quickwatch-windows.md)
-- [Fenêtres Variables locales et Automatique](../debugger/autos-and-locals-windows.md)
+- [Fenêtres espion et espion Express](../debugger/watch-and-quickwatch-windows.md)
+- [Fenêtres automatique et variables locales](../debugger/autos-and-locals-windows.md)

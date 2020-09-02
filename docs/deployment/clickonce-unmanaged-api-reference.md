@@ -1,5 +1,5 @@
 ---
-title: Référence des API non managées ClickOnce | Microsoft Docs
+title: Informations de référence sur les API non managées ClickOnce | Microsoft Docs
 ms.date: 11/04/2016
 api_name:
 - CleanOnlineAppCache
@@ -29,51 +29,51 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 3b536a17df4f54158aa6f157a0d9795cf359ddc0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62900270"
 ---
 # <a name="clickonce-unmanaged-api-reference"></a>Informations de référence sur les API non managées ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] API publiques non managées de dfshim.dll.
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] API publiques non managées à partir de dfshim.dll.
 
 ## <a name="cleanonlineappcache"></a>CleanOnlineAppCache
- Nettoie ou désinstalle toutes les applications en ligne à partir de la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] cache d’application.
+ Nettoie ou désinstalle toutes les applications en ligne du cache d' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application.
 
-### <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne S_OK ; Sinon, retourne un HRESULT qui représente l’échec. Si une exception managée se produit, retourne 0 x 80020009 (DISP_E_EXCEPTION).
+### <a name="return-value"></a>Valeur retournée
+ En cas de réussite, retourne S_OK ; Sinon, retourne un HRESULT qui représente l’échec. Si une exception managée se produit, retourne 0x80020009 (DISP_E_EXCEPTION).
 
 ### <a name="remarks"></a>Notes
- Appel de CleanOnlineAppCache démarrera le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] du service si elle n’est pas déjà en cours d’exécution.
+ L’appel de CleanOnlineAppCache démarre le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] service s’il n’est pas déjà en cours d’exécution.
 
 ## <a name="getdeploymentdatafrommanifest"></a>GetDeploymentDataFromManifest
- Récupère des informations sur le déploiement à partir de l’URL du manifeste et l’activation.
+ Récupère les informations de déploiement à partir du manifeste et de l’URL d’activation.
 
 ### <a name="parameters"></a>Paramètres
 
 |Paramètre|Description|Type|
 |---------------|-----------------|----------|
-|`pcwzActivationUrl`|Un pointeur vers le `ActivationURL`.|LPCWSTR|
-|`pcwzPathToDeploymentManifest`|Un pointeur vers le `PathToDeploymentManifest`.|LPCWSTR|
-|`pwzApplicationIdentity`|Un pointeur vers une mémoire tampon pour recevoir une chaîne se terminant par NULL qui spécifie l’identité de l’application complète est retourné.|LPWSTR|
-|`pdwIdentityBufferLength`|Un pointeur vers une valeur DWORD qui est la longueur de la `pwzApplicationIdentity` mémoire tampon, en WCHAR. Cela inclut l’espace pour le caractère NULL de fin.|LPDWORD|
-|`pwzProcessorArchitecture`|Un pointeur vers une mémoire tampon pour recevoir une chaîne se terminant par NULL qui spécifie l’architecture du processeur du déploiement d’application, à partir du manifeste.|LPWSTR|
-|`pdwArchitectureBufferLength`|Un pointeur vers une valeur DWORD qui est la longueur de la `pwzProcessorArchitecture` mémoire tampon, en WCHAR.|LPDWORD|
-|`pwzApplicationManifestCodebase`|Un pointeur vers une mémoire tampon pour recevoir une chaîne se terminant par NULL qui spécifie la base de code du manifeste d’application, à partir du manifeste.|LPWSTR|
-|`pdwCodebaseBufferLength`|Un pointeur vers une valeur DWORD qui est la longueur de la `pwzApplicationManifestCodebase` mémoire tampon, en WCHAR.|LPDWORD|
-|`pwzDeploymentProvider`|Un pointeur vers une mémoire tampon pour recevoir une chaîne se terminant par NULL qui spécifie le fournisseur de déploiement à partir du manifeste, s’il est présent. Sinon, une chaîne vide est retournée.|LPWSTR|
-|`pdwProviderBufferLength`|Un pointeur vers une valeur DWORD qui est la longueur de la `pwzProviderBufferLength`.|LPDWORD|
+|`pcwzActivationUrl`|Pointeur vers le `ActivationURL`.|LPCWSTR|
+|`pcwzPathToDeploymentManifest`|Pointeur vers le `PathToDeploymentManifest`.|LPCWSTR|
+|`pwzApplicationIdentity`|Pointeur vers une mémoire tampon destinée à recevoir une chaîne terminée par le caractère NULL qui spécifie l’identité d’application complète retournée.|LPWSTR|
+|`pdwIdentityBufferLength`|Pointeur vers une valeur DWORD qui est la longueur de la `pwzApplicationIdentity` mémoire tampon, en WCHARs. Cela comprend l’espace pour le caractère de fin NULL.|LPDWORD|
+|`pwzProcessorArchitecture`|Pointeur vers une mémoire tampon destinée à recevoir une chaîne terminée par le caractère NULL qui spécifie l’architecture du processeur du déploiement de l’application, à partir du manifeste.|LPWSTR|
+|`pdwArchitectureBufferLength`|Pointeur vers une valeur DWORD qui est la longueur de la `pwzProcessorArchitecture` mémoire tampon, en WCHARs.|LPDWORD|
+|`pwzApplicationManifestCodebase`|Pointeur vers une mémoire tampon destinée à recevoir une chaîne terminée par le caractère NULL qui spécifie le code base du manifeste d’application, à partir du manifeste.|LPWSTR|
+|`pdwCodebaseBufferLength`|Pointeur vers une valeur DWORD qui est la longueur de la `pwzApplicationManifestCodebase` mémoire tampon, en WCHARs.|LPDWORD|
+|`pwzDeploymentProvider`|Pointeur vers une mémoire tampon destinée à recevoir une chaîne terminée par le caractère NULL qui spécifie le fournisseur de déploiement du manifeste, le cas échéant. Dans le cas contraire, une chaîne vide est retournée.|LPWSTR|
+|`pdwProviderBufferLength`|Pointeur vers une valeur DWORD qui correspond à la longueur de `pwzProviderBufferLength` .|LPDWORD|
 
-### <a name="return-value"></a>Valeur de retour
+### <a name="return-value"></a>Valeur retournée
  En cas de réussite, retourne S_OK ; Sinon, retourne un HRESULT qui représente l’échec. Retourne HRESULTFROMWIN32 (ERROR_INSUFFICIENT_BUFFER) si une mémoire tampon est trop petite.
 
 ### <a name="remarks"></a>Notes
- Les pointeurs ne doivent pas être null. `pcwzActivationUrl` et `pcwzPathToDeploymentManifest` ne doit pas être vide.
+ Les pointeurs ne doivent pas avoir la valeur null. `pcwzActivationUrl` et `pcwzPathToDeploymentManifest` ne doivent pas être vides.
 
- Il est responsable de l’appelant pour nettoyer l’URL d’activation. Par exemple, ajout d’échappement des caractères lorsqu’ils sont nécessaires ou la suppression de la chaîne de requête.
+ L’appelant est responsable du nettoyage de l’URL d’activation. Par exemple, l’ajout de caractères d’échappement lorsqu’ils sont nécessaires ou la suppression de la chaîne de requête.
 
- Il est responsable de l’appelant pour limiter la longueur d’entrée. Par exemple, la longueur maximale des URL est de 2 Ko.
+ Il incombe à l’appelant de limiter la longueur d’entrée. Par exemple, la longueur maximale de l’URL est de 2 Ko.
 
 ## <a name="launchapplication"></a>LaunchApplication
  Lance ou installe une application à l’aide d’une URL de déploiement.
@@ -82,12 +82,12 @@ ms.locfileid: "62900270"
 
 |Paramètre|Description|Type|
 |---------------|-----------------|----------|
-|`deploymentUrl`|Un pointeur vers une chaîne se terminant par NULL qui contient l’URL du manifeste de déploiement.|LPCWSTR|
+|`deploymentUrl`|Pointeur vers une chaîne se terminant par un caractère NULL qui contient l’URL du manifeste de déploiement.|LPCWSTR|
 |`data`|Réservé à un usage ultérieur. Doit être NULL.|LPVOID|
-|`flags`|Réservé à un usage ultérieur. Doit être 0.|DWORD|
+|`flags`|Réservé à un usage ultérieur. Doit être égal à 0.|DWORD|
 
-### <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne S_OK ; Sinon, retourne un HRESULT qui représente l’échec. Si une exception managée se produit, retourne 0 x 80020009 (DISP_E_EXCEPTION).
+### <a name="return-value"></a>Valeur retournée
+ En cas de réussite, retourne S_OK ; Sinon, retourne un HRESULT qui représente l’échec. Si une exception managée se produit, retourne 0x80020009 (DISP_E_EXCEPTION).
 
 ## <a name="see-also"></a>Voir aussi
 - <xref:System.Deployment.Application.DeploymentServiceCom.CleanOnlineAppCache%2A>

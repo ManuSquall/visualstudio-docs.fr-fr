@@ -1,5 +1,5 @@
 ---
-title: Onglet sortie, le Message de boîte de dialogue Options | Microsoft Docs
+title: Onglet sortie de la boîte de dialogue Options des messages | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,35 +11,35 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 63268fdbc320e78a697c181112dbeaaf8ad161ab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62905073"
 ---
 # <a name="output-tab-message-options-dialog-box"></a>Onglet Sortie de la boîte de dialogue Options des messages
-Utilisez le **sortie** onglet pour spécifier les données à partir de chaque message à la liste dans [vue Messages](../debugger/messages-view.md). Pour afficher le [la boîte de dialogue Options des messages](../debugger/message-options-dialog-box.md), choisissez **Messages du journal** à partir de la **Spy** menu.
+Utilisez l’onglet **sortie** pour spécifier les données de chaque message à répertorier dans la [vue messages](../debugger/messages-view.md). Pour afficher la [boîte de dialogue Options des messages](../debugger/message-options-dialog-box.md), choisissez **journaux des messages** dans le menu **Espion** .
 
- Les paramètres suivants sont disponibles sur le **sortie** onglet :
+ Les paramètres suivants sont disponibles sous l’onglet **sortie** :
 
- **Numéros de ligne** afficher les numéros de ligne.
+ **Numéros de ligne** Affichez les numéros de ligne.
 
- **Niveau d’imbrication de message** préfixe les messages imbriqués avec une virgule par niveau.
+ **Niveau d’imbrication des messages** Préfixez les messages imbriqués avec un point par niveau.
 
- **Les paramètres de Message brut** affichage hexadécimal **wParam** et **lParam** valeurs.
+ **Paramètres de messages bruts** Affichez les valeurs hexadécimale **wParam** et **lParam** .
 
- **Décoder des paramètres de Message** afficher les résultats du décodage de message spécifique de la **wParam** et **lParam** valeurs.
+ **Paramètres de messages décodés** Affichez les résultats du décodage spécifique au message des valeurs **wParam** et **lParam** .
 
- **Les valeurs de retour brutes** affichage hexadécimal **lResult** valeur de retour.
+ **Valeurs de retour brutes** Affichez la valeur de retour de **LRESULT** hexadécimale.
 
- **Retourner des valeurs décodées** afficher les résultats du décodage de message spécifique de la **lResult** valeur de retour.
+ **Valeurs de retour décodées** Affichez les résultats du décodage spécifique au message de la valeur de retour **LRESULT** .
 
- **Heure d’origine du message** temps écoulé depuis le système Windows a été démarré (pour les messages publiés uniquement).
+ **Heure d’origine du message** Temps écoulé depuis le démarrage du système Windows (uniquement pour les messages publiés).
 
- **Position de la souris du message** les coordonnées d’écran de la souris lorsque le message a été publié (pour les messages publiés uniquement).
+ **Position de la souris du message** Coordonnées d’écran de la souris lorsque le message a été publié (uniquement pour les messages publiés).
 
- **Lignes au maximum** limiter le nombre de lignes qui sont conservés dans la vue Messages actuellement sélectionnée.
+ **Lignes au maximum** Limitez le nombre de lignes conservées dans la vue messages actuellement sélectionnés.
 
- **Également les Messages de journal au fichier** spécifier un fichier de sortie pour le journal des messages. Ce fichier de sortie est écrites simultanément avec la fenêtre de journal de message.
+ **Enregistrer également les messages dans un fichier** Spécifiez un fichier de sortie pour le journal des messages. Ce fichier de sortie est écrit simultanément avec la fenêtre du journal des messages.
 
- **Enregistrer les paramètres par défaut** enregistrer les paramètres précédents pour les nouvelles fenêtres de flux de message. Ces paramètres sont enregistrés lorsque vous quittez Spy ++.
+ **Enregistrer les paramètres par défaut** Enregistrez les paramètres précédents pour les nouvelles fenêtres de flux de messages. Ces paramètres sont enregistrés lorsque vous quittez Spy + +.
