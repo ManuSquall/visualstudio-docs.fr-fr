@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 39272790b6ef366c64d45e0aea238606d0b62bf4
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538634"
 ---
 # <a name="ca2224-override-equals-on-overloading-operator-equals"></a>CA2224 : Remplacez Equals au moment de surcharger l'opérateur égal
@@ -33,7 +33,7 @@ ms.locfileid: "85538634"
 |Category|Microsoft. usage|
 |Modification avec rupture|Sans rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Un type public implémente l’opérateur d’égalité, mais ne se substitue pas à <xref:System.Object.Equals%2A?displayProperty=fullName> .
 
 ## <a name="rule-description"></a>Description de la règle
@@ -50,7 +50,7 @@ ms.locfileid: "85538634"
 ## <a name="examples-of-inconsistent-equality-definitions"></a>Exemples de définitions d’égalité incohérentes
 
 ### <a name="description"></a>Description
- L’exemple suivant montre un type avec des définitions d’égalité incohérentes. `BadPoint`modifie la signification de l’égalité en fournissant une implémentation personnalisée de l’opérateur d’égalité, mais ne substitue pas <xref:System.Object.Equals%2A> afin qu’il se comporte de manière identique.
+ L’exemple suivant montre un type avec des définitions d’égalité incohérentes. `BadPoint` modifie la signification de l’égalité en fournissant une implémentation personnalisée de l’opérateur d’égalité, mais ne substitue pas <xref:System.Object.Equals%2A> afin qu’il se comporte de manière identique.
 
 ### <a name="code"></a>Code
  [!code-csharp[FxCop.Usage.OperatorEqualsRequiresEquals#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OperatorEqualsRequiresEquals/cs/FxCop.Usage.OperatorEqualsRequiresEquals.cs#1)]

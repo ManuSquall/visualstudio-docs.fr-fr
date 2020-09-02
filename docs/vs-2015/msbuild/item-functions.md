@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c94624aaea629c087b552ee46266a44f534888d5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192895"
 ---
 # <a name="item-functions"></a>Fonctions d'élément
@@ -54,7 +54,7 @@ ms.locfileid: "68192895"
 ## <a name="intrinsic-item-functions"></a>Fonctions d’élément intrinsèques  
  Le tableau ci-dessous liste les fonctions intrinsèques disponibles pour les éléments.  
   
-|Fonction|Exemples|Description|  
+|Fonction| Exemple|Description|  
 |--------------|-------------|-----------------|  
 |`Count`|`@(MyItem->Count())`|Retourne le nombre d’éléments.|  
 |`DirectoryName`|`@(MyItem->DirectoryName())`|Retourne l’équivalent de `Path.DirectoryName` pour chaque élément.|  

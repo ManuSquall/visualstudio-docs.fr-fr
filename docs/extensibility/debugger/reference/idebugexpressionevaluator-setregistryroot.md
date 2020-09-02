@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator::SetRegistryRoot (fr) Microsoft Docs
+title: 'IDebugExpressionEvaluator :: SetRegistryRoot | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 11e7cd69ed3f1e1b23cc0f2f03f3fd2cf912d308
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729416"
 ---
 # <a name="idebugexpressionevaluatorsetregistryroot"></a>IDebugExpressionEvaluator::SetRegistryRoot
-Cette méthode définit la racine du registre. Utilisé pour le débogage côte à côte.
+Cette méthode définit la racine du Registre. Utilisé pour le débogage côte à côte.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,13 +41,13 @@ int SetRegistryRoot(
 
 ## <a name="parameters"></a>Paramètres
 `ustrRegistryRoot`\
-[dans] La nouvelle racine du registre.
+dans Nouvelle racine du Registre.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- La racine de registre spécifiée est généralement définie lorsque l’évaluateur d’expression est d’abord instantané et indique la clé de\\registre pour une version spécifique de Visual Studio (HKEY_LOCAL_MACHINE-SOFTWARE-Microsoft-VisualStudio*X.Y*, où *X.Y* est un numéro de version).
+ La racine de Registre spécifiée est généralement définie lorsque l’évaluateur d’expression est instancié pour la première fois et pointe vers la clé de Registre pour une version spécifique de Visual Studio (HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio \\ *x. y*, où *X. y* est un numéro de version).
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)

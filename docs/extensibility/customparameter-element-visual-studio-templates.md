@@ -1,5 +1,5 @@
 ---
-title: CustomParameter Element (Visual Studio Templates) Microsoft Docs
+title: Élément CustomParameter (modèles Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,14 +14,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9063a354f03b896e189566e8d84a18caf7509db8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739433"
 ---
 # <a name="customparameter-element-visual-studio-templates"></a>Élément CustomParameter (modèles Visual Studio)
-Contient un nom de paramètre personnalisé et la valeur à utiliser lorsqu’un projet ou un élément est créé à partir du modèle.
+Contient le nom et la valeur d’un paramètre personnalisé à utiliser lors de la création d’un projet ou d’un élément à partir du modèle.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -36,8 +36,8 @@ Contient un nom de paramètre personnalisé et la valeur à utiliser lorsqu’un
 
 |Attribut|Description|
 |---------------|-----------------|
-|`Name`|Obligatoire. Le nom du paramètre. Le format pour les paramètres est $*nom*$.|
-|`Value`|Obligatoire. La valeur de remplacement du paramètre.|
+|`Name`|Obligatoire. Le nom du paramètre. Le format des paramètres est $*Name*$.|
+|`Value`|Obligatoire. Valeur de remplacement pour le paramètre.|
 
 ### <a name="child-elements"></a>Éléments enfants
  Aucun.
@@ -46,13 +46,13 @@ Contient un nom de paramètre personnalisé et la valeur à utiliser lorsqu’un
 
 |Élément|Description|
 |-------------|-----------------|
-|[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|Regroupe les paramètres personnalisés qui doivent être transmis à l’assistant modèle lorsque l’assistant effectue des remplacements de paramètres.|
+|[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|Regroupe les paramètres personnalisés qui doivent être passés à l’Assistant modèle lorsque l’Assistant effectue des remplacements de paramètres.|
 
 ## <a name="remarks"></a>Notes
- Lorsqu’un `CustomParameter` modèle contient des `Name` éléments, chaque `Value` cas l’attribut est remplacé par l’attribut dans les fichiers de projet ou d’élément créés.
+ Lorsqu’un modèle contient des `CustomParameter` éléments, chaque instance de l' `Name` attribut est remplacée par l' `Value` attribut dans les fichiers de projet ou d’élément créés.
 
 ## <a name="example"></a>Exemple
- L’exemple suivant montre comment utiliser plusieurs paramètres personnalisés dans un modèle. Lorsqu’un projet ou un élément est créé à partir `$color1$` d’un modèle avec les paramètres personnalisés suivants, tous les cas et `$color2$` dans les fichiers de modèle seront remplacés par `Red` et, `Blue`respectivement.
+ L’exemple suivant montre comment utiliser plusieurs paramètres personnalisés dans un modèle. Lorsqu’un projet ou un élément est créé à partir d’un modèle avec les paramètres personnalisés suivants, toutes les instances de `$color1$` et `$color2$` dans les fichiers de modèles sont remplacées par `Red` et `Blue` , respectivement.
 
 ```
 <CustomParameters>
@@ -62,6 +62,6 @@ Contient un nom de paramètre personnalisé et la valeur à utiliser lorsqu’un
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Élément CustomParameters (modèles Visual Studio)](../extensibility/customparameters-element-visual-studio-templates.md)
+- [Élément CustomParameters, (modèles Visual Studio)](../extensibility/customparameters-element-visual-studio-templates.md)
 - [Paramètres de modèle](../ide/template-parameters.md)
-- [Référence de schéma de modèle de studio visuel](../extensibility/visual-studio-template-schema-reference.md)
+- [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

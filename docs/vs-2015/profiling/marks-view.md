@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 77cf26d9746336a614b36d7dcd443b841afa06f7
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65699761"
 ---
 # <a name="marks-view"></a>Marques, vue
@@ -28,7 +28,7 @@ La vue Marques affiche l’échantillonnage et les événements ETW qui ont ét�
   
  Les marques par défaut qui sont préremplies dans le rapport indiquent le démarrage du programme et la fin du programme.  
   
- Les données des compteurs Windows provenant de marques générées automatiquement sont également présentées dans cette vue. Pour plus d'informations, voir [Procédure : Collecter les données des compteurs Windows](../profiling/how-to-collect-windows-counter-data.md).  
+ Les données des compteurs Windows provenant de marques générées automatiquement sont également présentées dans cette vue. Pour plus d’informations, consultez [Guide pratique pour collecter les données des compteurs Windows](../profiling/how-to-collect-windows-counter-data.md).  
   
  Pour créer un filtre entre deux marques, sélectionnez les marques, cliquez avec le bouton droit puis cliquez sur **Ajouter un filtre par marques** ou **Ajouter un filtre par horodatage**.  
   
@@ -40,15 +40,15 @@ La vue Marques affiche l’échantillonnage et les événements ETW qui ont ét�
  **Nom de la marque**  
  Nom de l’événement.  
   
- **Horodatage**  
+ **Timestamp**  
  Durée entre l’heure du début du profilage et l’heure à laquelle l’événement est enregistré.  
   
  Données des compteurs de performances Windows  
  Quand des données de compteurs de performances Windows sont collectées, les valeurs sont affichées dans une colonne portant le même nom que le compteur.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Vue d’ensemble du rapport Performances](../profiling/performance-report-overview.md)   
- [< PAVE_OVER > Comment : Configurer des marques de profilage](https://msdn.microsoft.com/library/65a23880-e5e8-4d5a-82b3-6498b9ef8975)   
- [< PAVE_OVER > Comment : Insérer des marques dans un fichier de données de Profiler](https://msdn.microsoft.com/library/856bfc81-a60f-42e5-a9bc-71b986c1e09d)   
- [Guide pratique pour Collecter les données des compteurs Windows](../profiling/how-to-collect-windows-counter-data.md)   
+ [Présentation du rapport de performances](../profiling/performance-report-overview.md)   
+ [<PAVE_OVER> Comment : configurer des marques de profilage](https://msdn.microsoft.com/library/65a23880-e5e8-4d5a-82b3-6498b9ef8975)   
+ [<PAVE_OVER> Comment : insérer des marques dans un fichier de données du profileur](https://msdn.microsoft.com/library/856bfc81-a60f-42e5-a9bc-71b986c1e09d)   
+ [Comment : collecter les données des compteurs Windows](../profiling/how-to-collect-windows-counter-data.md)   
  [&#91;NIB&#93; Fenêtre de contrôle de la collecte de données](https://msdn.microsoft.com/98d740d8-459f-4605-bf04-fb17aafaaa8f)

@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Définir des autorisations personnalisées pour une Application ClickOnce | Microsoft Docs'
+title: 'Comment : définir des autorisations personnalisées pour une application ClickOnce | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -17,13 +17,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6739f38e91ce998441c4cfa62453d485a5d370e3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697545"
 ---
-# <a name="how-to-set-custom-permissions-for-a-clickonce-application"></a>Procédure : Définir des autorisations personnalisées pour une application ClickOnce
+# <a name="how-to-set-custom-permissions-for-a-clickonce-application"></a>Comment : définir des autorisations personnalisées pour une application ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez déployer une application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] qui utilise les autorisations par défaut pour la zone Internet ou Intranet local. Vous pouvez également créer une zone personnalisée pour les autorisations spécifiques nécessaires à l’application. Vous pouvez pour cela personnaliser les autorisations de sécurité dans la page **Sécurité** du **Concepteur de projets**.  
@@ -32,7 +32,7 @@ Vous pouvez déployer une application [!INCLUDE[ndptecclick](../includes/ndptecc
   
 1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.  
   
-2. Cliquez sur l'onglet **Sécurité** .  
+2. Cliquez sur l’onglet **Security** .  
   
 3. Cochez la case **Activer les paramètres de sécurité ClickOnce** .  
   
@@ -49,7 +49,7 @@ Vous pouvez déployer une application [!INCLUDE[ndptecclick](../includes/ndptecc
 7. Avant l’élément `</applicationRequestMinimum>` , ajoutez le code XML pour les autorisations dont votre application a besoin.  
   
     > [!NOTE]
-    > Vous pouvez utiliser la méthode `ToXml` d’un jeu d'autorisations pour générer le code XML du manifeste d’application. Par exemple, pour générer le code XML pour le jeu d’autorisations <xref:System.Security.Permissions.EnvironmentPermission> , appelez la méthode <xref:System.Security.Permissions.EnvironmentPermission.ToXml%2A> . Pour plus d’informations sur la structure de l’autorisation de jeu XML, consultez [NIB : Procédure : Importer un jeu d’autorisations à l’aide d’un fichier XML](https://msdn.microsoft.com/dea16b54-c108-408a-ac36-cdc05f746236).  
+    > Vous pouvez utiliser la méthode `ToXml` d’un jeu d'autorisations pour générer le code XML du manifeste d’application. Par exemple, pour générer le code XML pour le jeu d’autorisations <xref:System.Security.Permissions.EnvironmentPermission> , appelez la méthode <xref:System.Security.Permissions.EnvironmentPermission.ToXml%2A> . Pour plus d’informations sur la structure du code XML de jeu d’autorisations, consultez [NIB: Comment : importer un jeu d’autorisations à l’aide d’un fichier XML](https://msdn.microsoft.com/dea16b54-c108-408a-ac36-cdc05f746236).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Sécurisation des applications ClickOnce](../deployment/securing-clickonce-applications.md)   

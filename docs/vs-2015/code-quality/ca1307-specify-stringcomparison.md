@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 033d8f0e22ec040ffb10821993a5a9c647ee401e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538916"
 ---
 # <a name="ca1307-specify-stringcomparison"></a>CA1307 : Spécifier StringComparison
@@ -32,7 +32,7 @@ ms.locfileid: "85538916"
 |Category|Microsoft. Globalization|
 |Modification avec rupture|Sans rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Une opération de comparaison de chaînes utilise une surcharge de méthode qui ne définit pas de <xref:System.StringComparison> paramètre.
 
 ## <a name="rule-description"></a>Description de la règle

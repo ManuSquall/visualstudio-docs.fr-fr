@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 40cddc1c4088ca51791a6778a436e2f1161444ba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68165504"
 ---
 # <a name="idiasessionfindsymbolbyaddr"></a>IDiaSession::findSymbolByAddr
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Récupère un type de symbole spécifié qui contienne, ou est le plus proche, une adresse spécifiée.  
+Récupère un type de symbole spécifié qui contient ou est le plus proche d’une adresse spécifiée.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -38,21 +38,21 @@ HRESULT findSymbolByAddr ( 
   
 #### <a name="parameters"></a>Paramètres  
  `isect`  
- [in] Spécifie le composant de la section de l’adresse.  
+ dans Spécifie le composant de section de l’adresse.  
   
  `offset`  
- [in] Spécifie le composant de décalage de l’adresse.  
+ dans Spécifie le composant de décalage de l’adresse.  
   
  `symtag`  
- [in] Type de symbole à rechercher. Les valeurs sont extraites à partir de la [SymTagEnum (énumération)](../../debugger/debug-interface-access/symtagenum.md) énumération.  
+ dans Type de symbole à trouver. Les valeurs sont extraites de l’énumération d' [énumération SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) .  
   
  `ppSymbol`  
- [out] Retourne un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) de récupérer l’objet qui représente le symbole.  
+ à Retourne un objet [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) qui représente le symbole récupéré.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
-## <a name="example"></a>Exemples  
+## <a name="example"></a> Exemple  
   
 ```cpp#  
 IDiaSymbol* pFunc;  

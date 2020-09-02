@@ -11,11 +11,11 @@ f1_keywords:
 ms.workload:
 - multiple
 ms.openlocfilehash: 9d540339ca25fc42fc05df4818a6d05204ccae0e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79301859"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89312585"
 ---
 # <a name="code-style-preferences"></a>Préférences de style de code
 
@@ -30,7 +30,7 @@ Vous pouvez aussi spécifier des [paramètres de style de code](../ide/editorcon
 
 ::: moniker range=">=vs-2019"
 
-Vous pouvez remplir manuellement votre fichier EditorConfig, ou vous pouvez générer automatiquement le fichier en fonction des paramètres de style de code que vous avez définis dans la boîte de dialogue **Options** de Visual Studio. Cette page d’options est disponible à **Tools** > **Options** > **Text Editor** > [ C **'** ou **Basic**] > **Code Style** > **General**. Cliquez sur **Générer le fichier .editorconfig à partir des paramètres** pour générer automatiquement un fichier *.editorconfig* de style de codage basé sur les paramètres de cette page **Options**.
+Vous pouvez remplir manuellement votre fichier EditorConfig, ou vous pouvez générer automatiquement le fichier en fonction des paramètres de style de code que vous avez définis dans la boîte de dialogue **Options** de Visual Studio. Cette page d’options est disponible dans **Outils**  >  **options**  >  **éditeur de texte** > [**C#** ou de **base**] > **style de code**  >  **général**. Cliquez sur **Générer le fichier .editorconfig à partir des paramètres** pour générer automatiquement un fichier *.editorconfig* de style de codage basé sur les paramètres de cette page **Options**.
 
 ![Générer un fichier .editorconfig à partir des paramètres dans Visual Studio 2019](media/vs-2019/generate-editorconfig-file-small.png)
 
@@ -58,7 +58,7 @@ Les options définies dans cette fenêtre sont applicables à votre compte de pe
 
 ### <a name="preference-and-severity"></a>Préférence et gravité
 
-Pour chaque paramètre de style de code de cette page, vous pouvez définir les valeurs **Préférence** et **Gravité** en utilisant les listes déroulantes sur chaque ligne. L’option Gravité peut avoir la valeur **Refactorisation uniquement**, **Suggestion**, **Avertissement** ou **Erreur**. Si vous souhaitez activer les [actions rapides](../ide/quick-actions.md) pour un style de code, vérifiez que la valeur de l’option **Gravité** n’est pas **Refactorisation uniquement**. ](media/light-bulb-dropdown.png)L’ampoule Quick ![ **Actions,** l’ampoule à](media/error-bulb.png)erreur ![erreur ![ampoule d’erreur, ou tournevis icône tournevis](media/screwdriver.png) apparaît quand un modèle non-préféré est utilisé, et vous pouvez choisir une option sur la liste Actions **rapides** pour réécrire automatiquement le code au style préféré.
+Pour chaque paramètre de style de code de cette page, vous pouvez définir les valeurs **Préférence** et **Gravité** en utilisant les listes déroulantes sur chaque ligne. L’option Gravité peut avoir la valeur **Refactorisation uniquement**, **Suggestion**, **Avertissement** ou **Erreur**. Si vous souhaitez activer les [actions rapides](../ide/quick-actions.md) pour un style de code, vérifiez que la valeur de l’option **Gravité** n’est pas **Refactorisation uniquement**. L’ampoule **actions rapides** , l’ampoule ![ d’erreur d’ampoule ou l’icône du tournevis Tournevis ](media/light-bulb-dropdown.png) ![ ](media/error-bulb.png) ![ ](media/screwdriver.png) apparaît lorsqu’un style non préféré est utilisé, et vous pouvez choisir une option dans la liste **actions rapides** pour réécrire automatiquement le code dans le style par défaut.
 
 ## <a name="apply-code-styles"></a>Appliquer des styles de code
 
@@ -74,7 +74,7 @@ Configurez les paramètres que la commande **Mettre en forme le document** doit 
 ![Paramètres de style de code pour mettre en forme le document dans Visual Studio 2017](media/format-document-settings-experiment.png)
 
 > [!TIP]
-> Les règles configurées avec une sévérité de **Aucun** ne participent pas au nettoyage du code, mais peuvent être appliquées individuellement via le menu **Actions rapides et Refactorings.**
+> Les règles configurées avec un niveau de gravité **aucun** ne participent pas au nettoyage du code, mais elles peuvent être appliquées individuellement via le menu **actions rapides et refactorisations** .
 
 La première fois que vous déclenchez la commande **Mettre en forme le document**, une barre d’informations jaune vous invite à configurer vos paramètres de nettoyage du code.
 
@@ -82,18 +82,18 @@ La première fois que vous déclenchez la commande **Mettre en forme le document
 
 ::: moniker range=">=vs-2019"
 
-Pour les fichiers de code C, Visual Studio 2019 dispose **d’un** bouton Code Cleanup en bas de **l’éditeur** (clavier : **Ctrl**+**K**, **Ctrl**+**E**) pour appliquer les styles de code à partir d’un fichier EditorConfig ou de la page d’options Code Style. S’il existe un fichier *.editorconfig* pour le projet, ces paramètres sont prioritaires.
+Pour les fichiers de code C#, Visual Studio 2019 a un bouton de **nettoyage de code** en bas de l’éditeur (clavier : **CTRL** + **K**, **CTRL** + **E**) pour appliquer des styles de code à partir d’un fichier EditorConfig ou de la page d’options de **style de code** . S’il existe un fichier *.editorconfig* pour le projet, ces paramètres sont prioritaires.
 
 ![Exécuter le nettoyage du code dans Visual Studio 2019](media/execute-code-cleanup.png)
 
 > [!TIP]
-> Les règles configurées avec une sévérité de **Aucun** ne participent pas au nettoyage du code, mais peuvent être appliquées individuellement via le menu **Actions rapides et Refactorings.**
+> Les règles configurées avec un niveau de gravité **aucun** ne participent pas au nettoyage du code, mais elles peuvent être appliquées individuellement via le menu **actions rapides et refactorisations** .
 
 Configurez d’abord les styles de code que vous voulez appliquer (dans un des deux profils) dans la boîte de dialogue **Configurer le nettoyage du code**. Pour ouvrir cette boîte de dialogue, cliquez sur la flèche en regard de l’icône de balai de nettoyage du code, puis choisissez **Configurer le nettoyage du code**.
 
 ![Configurer le nettoyage du code dans Visual Studio 2019](media/configure-code-cleanup.png)
 
-Une fois que vous avez configuré le nettoyage du code, vous pouvez soit cliquer sur l’icône du balai ou appuyer sur **Ctrl**+**K**, **Ctrl**+**E** pour exécuter le nettoyage du code. Vous pouvez également exécuter le nettoyage du code sur l’ensemble de votre projet ou solution. Cliquez avec le bouton droit sur le nom du projet ou de la solution dans **l’Explorateur de solutions**, sélectionnez **Analyser et nettoyer le code**, puis sélectionnez **Exécuter le nettoyage du code**.
+Une fois que vous avez configuré le nettoyage du code, vous pouvez cliquer sur l’icône du balai ou appuyer sur **CTRL** + **K**, **CTRL** + **E** pour exécuter le nettoyage du code. Vous pouvez également exécuter le nettoyage du code sur l’ensemble de votre projet ou solution. Cliquez avec le bouton droit sur le nom du projet ou de la solution dans **l’Explorateur de solutions**, sélectionnez **Analyser et nettoyer le code**, puis sélectionnez **Exécuter le nettoyage du code**.
 
 ![Exécuter le nettoyage du code sur l’ensemble du projet ou de la solution](media/run-code-cleanup-project-solution.png)
 
@@ -104,5 +104,5 @@ Si vous voulez que vos paramètres de style de code soient appliqués chaque foi
 ## <a name="see-also"></a>Voir aussi
 
 - [Actions rapides](../ide/quick-actions.md)
-- [Paramètres de convention de codage .NET pour EditorConfig](../ide/editorconfig-code-style-settings-reference.md)
+- [Paramètres de Convention de codage .NET pour EditorConfig](../ide/editorconfig-code-style-settings-reference.md)
 - [Comportement de l’éditeur (Visual Studio pour Mac)](/visualstudio/mac/editor-behavior)

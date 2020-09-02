@@ -1,5 +1,5 @@
 ---
-title: Élément AppliesTo (modèles Visual Studio) | Microsoft Docs
+title: AppliesTo, élément (modèles Visual Studio) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -9,10 +9,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f6622c4774be5188aced606ce4b73dffe544aea1
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65698940"
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>AppliesTo, élément (modèles Visual Studio)
@@ -22,7 +22,7 @@ Spécifie une expression facultative afin de la faire correspondre à une ou plu
   
  Cet élément est facultatif. Il peut y avoir au maximum une instance dans un fichier modèle. Cet élément permet uniquement à un modèle d'élément d'être déclaré comme applicable, en fonction des fonctionnalités du projet actif sélectionné. Il ne peut pas être utilisé pour rendre un modèle d'élément non applicable. Si `AppliesTo` est absent ou si l'expression ne permet pas de déclarer correctement, alors `TemplateID` ou `TemplateGroupID` est utilisé pour rendre le modèle applicable, comme avec les versions antérieures du produit.  
   
- Introduit pour la première fois dans Visual Studio 2013 Update 2. Pour faire référence à la version correcte, consultez [faisant référence à des assemblys remis dans Visual Studio 2013 SDK Update 2](https://msdn.microsoft.com/42b65c3e-e42b-4c39-98c8-bea285f25ffb).  
+ Introduit pour la première fois dans Visual Studio 2013 Update 2. Pour référencer la version appropriée, consultez [référencement des assemblys fournis dans le kit de développement logiciel (SDK) Visual Studio 2013 Update 2](https://msdn.microsoft.com/42b65c3e-e42b-4c39-98c8-bea285f25ffb).  
   
  \<VSTemplate>  
  \<TemplateData>  
@@ -54,11 +54,11 @@ Spécifie une expression facultative afin de la faire correspondre à une ou plu
   
  La syntaxe d'expression valide est définie comme suit :  
   
-- L’expression de fonctionnalité, tel que « (VisualC &#124; CSharp) + (MSTest &#124; NUnit) ».  
+- Expression de fonctionnalité, telle que « (VisualC &#124; CSharp) + (MSTest &#124; NUnit) ».  
   
-- Le «&#124;» est l’opérateur OR.  
+- « &#124; » est l’opérateur OR.  
   
-- Le « & » et « + » caractères sont les deux opérateurs AND.  
+- Les caractères « & » et « + » sont à la fois des opérateurs et.  
   
 - Le caractère « ! » est l'opérateur NOT.  
   
@@ -66,10 +66,10 @@ Spécifie une expression facultative afin de la faire correspondre à une ou plu
   
 - Une expression null ou vide est évaluée comme une correspondance.  
   
-- Fonctionnalités de projet peuvent être n’importe quel caractère à l’exception des caractères réservés suivants : « ''  :;,+-*/\\! ~&#124;& %$@^() ={}[] <> ? \t\b\n\r  
+- Les fonctionnalités du projet peuvent être n’importe quel caractère, à l’exception des caractères réservés suivants : "' ' :;, +-*/ \\ ! ~&#124;&% $ @ ^ () = {} [] <> ? \t\b\n\r  
   
 ## <a name="example"></a>Exemple  
- L'exemple suivant indique trois modèles différents. `Template1` s'applique à tous les types de projet C# ou à n'importe quel autre type de projet qui prend en charge la fonctionnalité `WindowsAppContainer`. `Template2` s'applique à tous les projets C# de n'importe quel type. `Template3` s'applique aux projets C# qui ne sont pas des projets `WindowsAppContainer`.  
+ L'exemple suivant indique trois modèles différents. `Template1` s’applique soit à tous les types de projets C#, soit à tout autre type de projet qui prend en charge la `WindowsAppContainer` fonctionnalité. `Template2` s’applique à tous les projets C# de tout type. `Template3` s'applique aux projets C# qui ne sont pas des projets `WindowsAppContainer`.  
   
 ```xml  
 <!--  Template 1 -->  

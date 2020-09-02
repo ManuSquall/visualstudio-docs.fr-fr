@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Utiliser la fenêtre Espion parallèle | Microsoft Docs'
+title: 'Comment : utiliser la fenêtre Espion parallèle | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,13 +19,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 734a55cb06ee46afc6fc3518d6dffe349690d3d7
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697491"
 ---
-# <a name="how-to-use-the-parallel-watch-window"></a>Procédure : Utiliser la fenêtre Espion parallèle
+# <a name="how-to-use-the-parallel-watch-window"></a>Comment : utiliser la fenêtre Espion parallèle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Dans la fenêtre Espion parallèle, vous pouvez simultanément afficher les valeurs qu'une expression contient sur plusieurs threads. Chaque ligne représente un thread s'exécutant dans une application, mais un thread peut être représenté dans plusieurs lignes. Plus spécifiquement, chaque ligne représente un appel de fonction dont la signature de la fonction correspond à la fonctionnalité sur le frame de pile actuel. Vous pouvez trier, réorganiser, supprimer et regrouper les éléments qui figurent dans les colonnes. Vous pouvez marquer ou supprimer l'indicateur, figer et libérer (reprendre) les threads. Les colonnes suivantes sont affichées dans la fenêtre **Espion parallèle** :  
@@ -37,9 +37,9 @@ Dans la fenêtre Espion parallèle, vous pouvez simultanément afficher les vale
 - Une colonne configurable qui peut afficher l’ordinateur, le processus, la mosaïque, la tâche et le thread.  
   
   > [!TIP]
-  > Vous devez ouvrir le **tâches parallèles** fenêtre pour afficher les informations de tâche dans le **espion parallèle** fenêtre.  
+  > Vous devez ouvrir la fenêtre de **tâche parallèle** pour afficher les informations sur la tâche dans la fenêtre **Espion parallèle** .  
   
-- Le  **\<ajouter un espion >** colonne, dans laquelle vous pouvez entrer des expressions à surveiller.  
+- **\<Add Watch>** Colonne dans laquelle vous pouvez entrer des expressions à surveiller.  
   
   [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
@@ -53,19 +53,19 @@ Dans la fenêtre Espion parallèle, vous pouvez simultanément afficher les vale
   
 ### <a name="to-add-a-watch-expression"></a>Pour ajouter une expression espionne  
   
-- Sélectionnez  **\<ajouter un espion >** , puis spécifiez une expression espionne.  
+- Sélectionnez **\<Add Watch>** , puis spécifiez une expression espionne.  
   
 ### <a name="to-flag-or-unflag-a-thread"></a>Pour marquer ou supprimer l'indicateur d'un thread  
   
-- Sélectionnez la colonne d’indicateur pour la ligne, ou ouvrez le menu contextuel pour le thread et choisissez **indicateur** ou **supprimer l’indicateur**.  
+- Sélectionnez la colonne d’indicateur pour la ligne, ou ouvrez le menu contextuel du thread et choisissez **marquer ou supprimer** l' **indicateur**.  
   
 ### <a name="to-display-only-flagged-threads"></a>Pour afficher seulement les threads avec indicateur  
   
-- Cliquez sur le bouton Afficher uniquement éléments avec indicateur dans le coin supérieur gauche de la **espion parallèle** fenêtre.  
+- Choisissez le bouton afficher uniquement les indicateurs dans l’angle supérieur gauche de la fenêtre **Espion parallèle** .  
   
 ### <a name="to-switch-frames"></a>Pour basculer vers les frames  
   
-- Double-cliquez sur la colonne de frame. (Clavier : Sélectionnez la ligne et appuyez sur ENTRÉE.)  
+- Double-cliquez sur la colonne de frame. (Raccourci : sélectionnez la ligne et appuyez sur Entrée.)  
   
 ### <a name="to-sort-a-column"></a>Pour trier une colonne  
   
@@ -88,6 +88,6 @@ Dans la fenêtre Espion parallèle, vous pouvez simultanément afficher les vale
 - Entrez une expression booléenne dans la zone **Filtrer par expression booléenne**. Le débogueur évalue l'expression de chaque contexte de thread. Seules les lignes avec la valeur `true` sont affichées.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Déboguer les applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Guide pratique pour utiliser la fenêtre Threads GPU](../debugger/how-to-use-the-gpu-threads-window.md)   
- [Procédure pas à pas : Débogage d’une application C++ AMP](https://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)
+ [Déboguer des applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+ [Comment : utiliser la fenêtre threads GPU](../debugger/how-to-use-the-gpu-threads-window.md)   
+ [Procédure pas à pas : débogage d’une application C++ AMP](https://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)

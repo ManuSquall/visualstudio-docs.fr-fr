@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 054cfc305400e3916ed7ba796a74370dfc2c77a5
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86386691"
 ---
 # <a name="idebugprocess3step"></a>IDebugProcess3::Step
@@ -56,7 +56,7 @@ dans Une des valeurs [STEPKIND](../../../extensibility/debugger/reference/stepki
 `step`\
 dans Une des valeurs [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md) .
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne S_OK ; Sinon, retourne le code d’erreur.
 
 ## <a name="remarks"></a>Notes

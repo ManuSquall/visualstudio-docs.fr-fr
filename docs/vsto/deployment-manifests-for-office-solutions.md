@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3540420d07bd158b19f0b078f01cfdb37ce18beb
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547548"
 ---
 # <a name="deployment-manifests-for-office-solutions"></a>Manifestes de déploiement pour les solutions Office
@@ -27,7 +27,7 @@ ms.locfileid: "85547548"
 
  Le développement Office dans Visual Studio utilise le [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] schéma de manifeste de déploiement défini dans la référence du [manifeste de déploiement ClickOnce](../deployment/clickonce-deployment-manifest.md) .
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Le fichier manifeste de déploiement pour les solutions Office identifie la version actuelle et d’autres paramètres de déploiement. Il fait référence au manifeste d’application et décrit la version actuelle de la solution, ainsi que tous les fichiers qu’elle contient.
 
 ## <a name="file-name-syntax"></a>Syntaxe du nom de fichier

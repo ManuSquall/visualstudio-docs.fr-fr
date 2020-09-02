@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 6e9e7fe418528bb888672b1b73d421d811b9e69e
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86386983"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Définir des commandes personnalisées pour les projets Python
@@ -355,7 +355,7 @@ Indique que le fichier projet comprend des erreurs de syntaxe. Le message inclut
 
 ### <a name="console-window-closes-immediately-after-command-is-run"></a>La fenêtre de console se ferme immédiatement après l’exécution de commande
 
-Utilisez `ExecuteIn="consolepause"` à la place de `ExecuteIn="console"`.
+Utilisez `ExecuteIn="consolepause"` au lieu de `ExecuteIn="console"`.
 
 ### <a name="command-does-not-appear-on-the-menu"></a>La commande n’apparaît pas dans le menu
 
@@ -386,7 +386,7 @@ Les valeurs d’attribut peuvent être vides si vous faites référence à une p
 
 ### <a name="visual-studio-stops-responding-and-crashes-when-running-the-command"></a>Visual Studio cesse de répondre et se bloque lors de l’exécution de la commande
 
-Vous tentez probablement d’exécuter une commande de console avec `ExecuteIn="output"`, auquel cas Visual Studio peut se bloquer quand il tente d’analyser la sortie. Utilisez `ExecuteIn="console"` à la place. (Consultez le [problème 3682](https://github.com/Microsoft/PTVS/issues/3681).)
+Vous tentez probablement d’exécuter une commande de console avec `ExecuteIn="output"`, auquel cas Visual Studio peut se bloquer quand il tente d’analyser la sortie. Utilisez plutôt `ExecuteIn="console"`. (Consultez le [problème 3682](https://github.com/Microsoft/PTVS/issues/3681).)
 
 ### <a name="executable-command-is-not-recognized-as-an-internal-or-external-command-operable-program-or-batch-file"></a>La commande executable « n’est pas reconnue en tant que commande interne ou externe, un programme exécutable ou un fichier de commandes »
 
