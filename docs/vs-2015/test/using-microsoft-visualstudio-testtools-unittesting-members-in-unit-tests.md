@@ -9,10 +9,10 @@ caps.latest.revision: 8
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e8b3ea10b96a63bd18098030dc884ac3f3383353
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657182"
 ---
 # <a name="using-microsoftvisualstudiotesttoolsunittesting-members-in-unit-tests"></a>Utilisation des membres Microsoft.VisualStudio.TestTools.UnitTesting dans les tests unitaires
@@ -41,7 +41,7 @@ Le framework de test unitaire prend en charge le test unitaire dans [!INCLUDE[vs
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceElementCollection>
 
 ## <a name="attributes-used-to-establish-a-calling-order"></a>Attributs utilisés pour établir un ordre d’appel
- Un élément de code décoré avec l’un des attributs suivants est appelé au moment spécifié. Pour plus d’informations, consultez [Anatomie d’un test unitaire](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+ Un élément de code décoré avec l’un des attributs suivants est appelé au moment spécifié. Pour plus d’informations, consultez [anatomie d’un test unitaire](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
 
 ### <a name="for-assemblies"></a>Pour les assemblys
  AssemblyInitialize et AssemblyCleanup sont appelés juste après le chargement de votre assembly et juste avant son déchargement.
@@ -64,7 +64,7 @@ Le framework de test unitaire prend en charge le test unitaire dans [!INCLUDE[vs
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute>
 
 ## <a name="attributes-used-to-identify-test-classes-and-methods"></a>Attributs utilisés pour identifier les classes et méthodes de test
- Chaque classe de test doit avoir l’attribut TestClass, et chaque méthode de test doit avoir l’attribut TestMethod. Pour plus d’informations, consultez [Anatomie d’un test unitaire](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+ Chaque classe de test doit avoir l’attribut TestClass, et chaque méthode de test doit avoir l’attribut TestMethod. Pour plus d’informations, consultez [anatomie d’un test unitaire](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute>
 

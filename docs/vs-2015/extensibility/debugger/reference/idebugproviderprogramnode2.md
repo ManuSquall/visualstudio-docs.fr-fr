@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a81668d5c45dd4b3363821972914e3f9dc10266a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65692217"
 ---
 # <a name="idebugproviderprogramnode2"></a>IDebugProviderProgramNode2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Cette interface marshale les interfaces associées à un programme au-delà des limites de processus.  
+Cette interface marshale les interfaces relatives au programme à travers les limites du processus.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -30,28 +30,28 @@ Cette interface marshale les interfaces associées à un programme au-delà des 
 IDebugProviderProgramNode2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs  
- Le moteur de débogage (dé) implémente cette interface sur le même objet qui implémente [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) pour prendre en charge du marshaling d’interfaces au-delà des limites de processus.  
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
+ Le moteur DE débogage (DE) implémente cette interface sur le même objet qui implémente [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) pour prendre en charge les interfaces de marshaling entre les limites de processus.  
   
-## <a name="notes-for-callers"></a>Notes de publication pour les appelants  
- Appelez [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) sur un `IDebugProgramNode2` interface pour obtenir cette interface. Si cette interface ne peut pas être obtenue, l’Allemagne ne prend pas en charge le marshaling d’interfaces.  
+## <a name="notes-for-callers"></a>Notes pour les appelants  
+ Appelez [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) sur une `IDebugProgramNode2` interface pour obtenir cette interface. Si cette interface ne peut pas être obtenue, le DE ne prend pas en charge le marshaling des interfaces.  
   
-## <a name="methods-in-vtable-order"></a>Méthodes dans l’ordre Vtable  
+## <a name="methods-in-vtable-order"></a>Méthodes dans l’ordre vtable  
  Cette interface implémente la méthode suivante :  
   
 |Méthode|Description|  
 |------------|-----------------|  
-|[UnmarshalDebuggeeInterface](../../../extensibility/debugger/reference/idebugproviderprogramnode2-unmarshaldebuggeeinterface.md)|Obtient une interface spécifiée au-delà des limites de processus.|  
+|[UnmarshalDebuggeeInterface](../../../extensibility/debugger/reference/idebugproviderprogramnode2-unmarshaldebuggeeinterface.md)|Obtient une interface spécifiée à travers les limites du processus.|  
   
 ## <a name="remarks"></a>Notes  
- Cette interface est implémentée lors de l’Allemagne s’exécute dans un espace de processus séparé à partir du programme en cours de débogage : par exemple, lorsque la D’est en cours d’exécution dans l’espace de processus de Visual Studio au lieu de l’espace de processus du programme en cours de débogage.  
+ Cette interface est implémentée lorsque le s’exécute dans un espace de processus distinct du programme en cours de débogage : par exemple, lorsque le DE est exécuté dans l’espace de processus Visual Studio au lieu de l’espace de processus du programme en cours de débogage.  
   
 ## <a name="requirements"></a>Configuration requise  
- En-tête : msdbg.h  
+ En-tête : msdbg. h  
   
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft. VisualStudio. Debugger. Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interfaces principales](../../../extensibility/debugger/reference/core-interfaces.md)   

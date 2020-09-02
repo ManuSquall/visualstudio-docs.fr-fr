@@ -1,5 +1,5 @@
 ---
-title: IDebugField::GetExtendedInfo (fr) Microsoft Docs
+title: 'IDebugField :: GetExtendedInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: dc414dd57e86149e38d7c85d11252eb93efced51
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728868"
 ---
 # <a name="idebugfieldgetextendedinfo"></a>IDebugField::GetExtendedInfo
-Cette méthode reçoit des informations étendues sur un champ.
+Cette méthode obtient des informations étendues sur un champ.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -45,24 +45,24 @@ int GetExtendedInfo(
 
 ## <a name="parameters"></a>Paramètres
 `guidExtendedInfo`\
-[dans] Sélectionne les informations à retourner. Les valeurs autorisées sont :
+dans Sélectionne les informations à retourner. Les valeurs autorisées sont :
 
 |Valeur|Description|
 |-----------|-----------------|
-|`guidConstantValue`|La valeur comme une séquence d’octets.|
-|`guidConstantType`|Le type comme une signature de type.|
+|`guidConstantValue`|Valeur sous la forme d’une séquence d’octets.|
+|`guidConstantType`|Type comme une signature de type.|
 
 `prgBuffer`\
-[out] Retourne l’information étendue.
+à Retourne les informations étendues.
 
 `pdwLen`\
-[dans, dehors] Retourne la taille de l’information étendue, dans les octets.
+[in, out] Retourne la taille des informations étendues, en octets.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- Actuellement, cette méthode ne renvoie que le type ou la valeur d’une constante. L’appelant doit libérer le `prgBuffer` tampon retourné `CoTaskMemFree` en appelant la fonction <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A> de COM (C) ou (C).
+ Actuellement, cette méthode retourne uniquement le type ou la valeur d’une constante. L’appelant doit libérer la mémoire tampon retournée dans `prgBuffer` en appelant la fonction de com `CoTaskMemFree` (C++) ou <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A> (C#).
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

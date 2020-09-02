@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Déboguer le Code assembleur Inline | Microsoft Docs'
+title: 'Comment : déboguer le code assembleur inline | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,13 +22,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0dde41d1ccee5b63c5cd84862ba4f4ffe51745d2
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65696242"
 ---
-# <a name="how-to-debug-inline-assembly-code"></a>Procédure : déboguer du code assembleur inline
+# <a name="how-to-debug-inline-assembly-code"></a>Comment : déboguer du code assembleur inline
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 REMARQUE]

@@ -12,28 +12,28 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 89a07bc5a5c4c8b7a6054b53610325c654355bc8
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65695959"
 ---
 # <a name="roadmap-for-extending-the-debugger"></a>Feuille de route pour l’extension du débogueur
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Cette documentation fournit des informations de référence et guide permettant d’étendre le [!INCLUDE[vs_current_short](../../includes/vs-current-short-md.md)] du débogueur avec les [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)].  
+Cette documentation fournit des informations de référence et de guide pour l’extension du [!INCLUDE[vs_current_short](../../includes/vs-current-short-md.md)] débogueur avec le [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] .  
   
- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] documentation relative au débogage inclut des exemples, une référence complète et plusieurs scénarios représentatifs qui illustrent les méthodes classiques de personnaliser le débogueur.  
+ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] la documentation sur le débogage comprend des exemples, une référence complète et plusieurs scénarios représentatifs qui illustrent des méthodes typiques de personnalisation du débogueur.  
   
- Votre compilateur et sa sortie déterminent ce que vous devez faire pour implémenter le débogage de votre produit. Si votre compilateur :  
+ Votre compilateur et sa sortie déterminent ce que vous devez faire pour implémenter le débogage dans votre produit. Si votre compilateur :  
   
-- Cible le système d’exploitation natif de Windows et écrit un. Fichier PDB, vous pouvez déboguer des programmes avec le moteur de débogage de code natif (DE), qui est intégré à [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Vous n’avez pas besoin d’implémenter un évaluateur DE ou une expression. L’évaluateur d’expression est écrite pour connaître la syntaxe du langage de programmation C++.  
+- Cible le système d’exploitation Windows natif et écrit un. Fichier PDB, vous pouvez déboguer des programmes avec le moteur DE débogage DE code natif (DE), qui est intégré dans [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] . Vous n’avez pas besoin d’implémenter un évaluateur DE ou d’expression. L’évaluateur d’expression est écrit pour la syntaxe du langage de programmation C++.  
   
-- Produit Microsoft intermediate language (MSIL) de la sortie, vous pouvez déboguer des programmes avec le moteur de débogage de code managé DE, qui est également intégré à [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Par conséquent, vous devez implémenter uniquement un évaluateur d’expression. Un évaluateur d’expression exemple est fourni pour vous. Pour plus d’informations, consultez les rubriques suivantes :  
+- Produit une sortie MSIL (Microsoft Intermediate Language), vous pouvez déboguer des programmes à l’aide du moteur DE débogage du code managé DE, qui est également intégré à [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] . Par conséquent, vous n’avez besoin que d’implémenter un évaluateur d’expression. Un exemple d’évaluateur d’expression est fourni pour vous. Pour plus d'informations, voir les rubriques suivantes :  
   
-     [Évaluation des expressions](../../extensibility/debugger/expression-evaluation-visual-studio-debugging-sdk.md)  
+     [Évaluation d’expression](../../extensibility/debugger/expression-evaluation-visual-studio-debugging-sdk.md)  
   
-     [Évaluation des expressions](../../extensibility/debugger/evaluating-expressions.md)  
+     [Évaluer des expressions](../../extensibility/debugger/evaluating-expressions.md)  
   
      [Contexte d’évaluation d’expression](../../extensibility/debugger/expression-evaluation-context.md)  
   
@@ -41,11 +41,11 @@ Cette documentation fournit des informations de référence et guide permettant 
   
      [Écriture d’un évaluateur d’expression Common Language Runtime](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)  
   
-- Cibles un propriétaire de système d’exploitation ou un autre environnement d’exécution, vous devez écrire votre propre DE. Un didacticiel qui crée un simple D’à l’aide de ATL COM est fourni. Pour plus d’informations, consultez les rubriques suivantes :  
+- Cible un système d’exploitation propriétaire ou un autre environnement d’exécution, vous devez écrire votre propre. Un didacticiel qui permet de créer un simple à l’aide d’ATL COM est fourni. Pour plus d'informations, voir les rubriques suivantes :  
   
      [Création d’un moteur de débogage personnalisé](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
   
-     [Tutoriel : Création d’un moteur de débogage à l’aide de ATL COM](https://msdn.microsoft.com/9097b71e-1fe7-48f7-bc00-009e25940c24)  
+     [Didacticiel : création d’un moteur de débogage à l’aide d’ATL COM](https://msdn.microsoft.com/9097b71e-1fe7-48f7-bc00-009e25940c24)  
   
      [Implémentation d’un fournisseur de port](../../extensibility/debugger/implementing-a-port-supplier.md)  
   

@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 555bb56ee84b7bc48f6b6453c11daef366f97e49
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75845115"
 ---
 # <a name="error-the-web-server-could-not-find-the-requested-resource"></a>Erreur : le serveur web n’a pas trouvé la ressource demandée
@@ -35,5 +35,5 @@ Pour des raisons de sécurité, IIS a retourné une erreur générique.
  Pour plus d’informations sur la résolution des problèmes liés à IIS, consultez [Administration et gestion IIS](https://www.iis.net/learn/manage/provisioning-and-managing-iis/iis-management-and-administration).  
   
 ## <a name="see-also"></a>Voir aussi  
-   de l' [outil de sécurité URLScan](/iis/extensions/working-with-urlscan/urlscan-3-reference)  
- [Erreur : le serveur web est verrouillé et bloque l’exécution du verbe DEBUG](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)
+ [Outil de sécurité UrlScan](/iis/extensions/working-with-urlscan/urlscan-3-reference)   
+ [Erreur : le serveur Web a été verrouillé et bloque le verbe de débogage](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)

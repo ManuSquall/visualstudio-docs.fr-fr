@@ -1,5 +1,5 @@
 ---
-title: Évaluation du temps de course et de l’expression des langues courantes (en anglais seulement) Microsoft Docs
+title: Common Language Runtime et évaluation des expressions | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,28 +12,28 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 013579473189dd9310501b76d2de0d5cf6fa5822
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739109"
 ---
-# <a name="common-language-runtime-and-expression-evaluation"></a>Évaluation de l’heure d’exécution et de l’expression des langues courantes
+# <a name="common-language-runtime-and-expression-evaluation"></a>Common Language Runtime et évaluation des expressions
 > [!IMPORTANT]
-> Dans Visual Studio 2015, cette façon de mettre en œuvre les évaluateurs d’expression est dépréciée. Pour obtenir de l’information sur la mise en œuvre des évaluateurs de l’expression CLR, veuillez consulter [les évaluateurs d’expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [l’échantillon d’évaluateur d’expression gérée.](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)
+> Dans Visual Studio 2015, cette façon d’implémenter les évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateur d’expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple évaluateur d’expression managée](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
- Les compilateurs, tels que Visual Basic et CMD (prononcé C-sharp), qui ciblent le Common Language Runtime (CLR), produisent Microsoft Intermediate Language (MSIL), qui est plus tard compilé au code natif. Le CLR fournit un moteur de débogé (DE) pour déboiffer le code résultant. Si vous envisagez d’intégrer votre langage de programmation propriétaire dans l’IDE Visual Studio, vous pouvez choisir de compiler à MSIL et donc ne pas avoir à écrire votre propre DE. Cependant, vous devrez écrire un évaluateur d’expression (EE) qui est capable d’évaluer les expressions dans le contexte de votre langage de programmation.
+ Les compilateurs, tels que Visual Basic et C# (prononcé C-Sharp), qui ciblent le Common Language Runtime (CLR), produisent le langage MSIL (Microsoft Intermediate Language), qui est ensuite compilé en code natif. Le CLR fournit un moteur de débogage (DE) pour déboguer le code résultant. Si vous envisagez d’intégrer votre langage de programmation propriétaire dans l’IDE de Visual Studio, vous pouvez choisir de compiler en MSIL et, par conséquent, vous n’aurez pas à écrire votre propre. Toutefois, vous devrez écrire un évaluateur d’expression (EE) qui est capable d’évaluer des expressions dans le contexte de votre langage de programmation.
 
-## <a name="discussion"></a>Discussions
- Les expressions en langage informatique sont généralement analysées pour produire un ensemble d’objets de données et un ensemble d’opérateurs utilisés pour les manipuler. Par exemple, l’expression « A-B » peut être analysée pour appliquer l’opérateur d’addition (MD) aux objets de données « A » et « B », ce qui peut entraîner un autre objet de données. L’ensemble total des objets de données, des opérateurs et de leurs associations sont le plus souvent représentés dans un programme comme arbre, avec les opérateurs aux nœuds de l’arbre et les objets de données dans les branches. Une expression qui a été décomposée sous forme d’arbre est souvent appelée arbre analysé.
+## <a name="discussion"></a>Discussion
+ Les expressions de langage informatique sont généralement analysées pour produire un ensemble d’objets de données et un ensemble d’opérateurs utilisés pour les manipuler. Par exemple, l’expression « A + B » peut être analysée pour appliquer l’opérateur d’addition (+) aux objets de données « A » et « B », ce qui peut entraîner un autre objet de données. Le jeu total d’objets de données, d’opérateurs et de leurs associations est le plus souvent représenté dans un programme sous la forme d’une arborescence, avec les opérateurs situés aux nœuds de l’arborescence et les objets de données au niveau des branches. Une expression qui a été décomposée sous forme d’arborescence est souvent appelée arborescence analysée.
 
- Une fois qu’une expression a été analysée, un fournisseur de symboles (SP) est appelé à évaluer chaque objet de données. Par exemple, si « A » est défini à la fois dans plus d’une méthode, la question « Which A? » doit être répondu avant que la valeur de A puisse être vérifiée. La réponse retournée par le SP est quelque chose comme "Le troisième élément sur le cadre de la cinquième pile" ou "Le A qui est de 50 octets au-delà du début de la mémoire statique allouée à cette méthode."
+ Une fois qu’une expression a été analysée, un fournisseur de symboles (SP) est appelé pour évaluer chaque objet de données. Par exemple, si « A » est défini à la fois dans plusieurs méthodes, la question « quel ? » la réponse doit être résolue avant que la valeur d’un puisse être vérifiée. La réponse retournée par le SP est semblable à la suivante : « le troisième élément du cinquième frame de pile » ou « A 50 octets au-delà du début de la mémoire statique allouée à cette méthode ».
 
- En plus de produire MSIL pour le programme lui-même, compilateurs CLR peut également produire des informations de débogage très descriptive qui est écrit dans un programme DataBase (*.pdb*) fichier. Tant qu’un compilateur en langue propriétaire produit des informations de débaillement dans le même format que les compilateurs CLR, le SP du CLR est en mesure d’identifier les objets de données nommés par cette langue. Une fois qu’un objet de données nommé a été identifié, l’EE utilise un objet de liant pour associer (ou lier) l’objet de données à la zone de mémoire qui détient la valeur de cet objet. Le DE peut alors obtenir ou définir une nouvelle valeur pour l’objet de données.
+ Outre la production de code MSIL pour le programme lui-même, les compilateurs CLR peuvent également produire des informations de débogage très descriptives écrites dans un fichier de base de données du programme (*. pdb*). Tant qu’un compilateur de langage propriétaire génère des informations de débogage dans le même format que les compilateurs CLR, le SP du CLR est en mesure d’identifier les objets de données nommées de cette langue. Une fois qu’un objet de données nommé a été identifié, le EE utilise un objet Binder pour associer (ou lier) l’objet de données à la zone mémoire qui contient la valeur de cet objet. La valeur DE peut ensuite obtenir ou définir une nouvelle valeur pour l’objet de données.
 
- Un compilateur propriétaire peut fournir des informations `ISymbolWriter` de débogage CLR en appelant l’interface (qui est définie dans le cadre .NET dans l’espace de `System.Diagnostics.SymbolStore`nom ). En compilant à MSIL et en écrivant des informations de débagé à travers ces interfaces, un compilateur propriétaire peut utiliser le CLR DE et SP. Cela simplifie grandement l’intégration d’une langue propriétaire dans l’IDE Visual Studio.
+ Un compilateur propriétaire peut fournir des informations de débogage du CLR en appelant l' `ISymbolWriter` interface (qui est définie dans le .NET Framework de l’espace de noms `System.Diagnostics.SymbolStore` ). En compilant en MSIL et en écrivant des informations de débogage par le biais de ces interfaces, un compilateur propriétaire peut utiliser le CLR DE et SP. Cela simplifie grandement l’intégration d’un langage propriétaire dans l’IDE de Visual Studio.
 
- Lorsque le CLR DE appelle l’EE propriétaire pour évaluer une expression, le DE fournit l’EE avec des interfaces à un SP et un objet de liant. Ainsi, l’écriture d’un moteur de débogé à base de CLR signifie qu’il est nécessaire seulement de mettre en œuvre les interfaces d’évaluateur d’expression appropriées; le CLR s’occupe de la reliure et de la manipulation du symbole pour vous.
+ Quand le CLR DE appelle l’EE propriétaire pour évaluer une expression, le service DE fournit à EE des interfaces à un SP et à un objet Binder. Par conséquent, l’écriture d’un moteur de débogage basé sur CLR signifie qu’il est nécessaire d’implémenter uniquement les interfaces d’évaluateur d’expression appropriées. le CLR s’occupe de la liaison et de la gestion des symboles pour vous.
 
 ## <a name="see-also"></a>Voir aussi
 - [Écrire un évaluateur d’expression CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

@@ -14,14 +14,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bece06c618e5fcc0e91dcbd683b961979fd76dcf
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75846189"
 ---
 # <a name="select-condition-dialog-box-legacy"></a>Sélectionner la condition, boîte de dialogue (héritée)
-Cette rubrique décrit comment utiliser la boîte de dialogue **Sélectionner une condition** dans le [!INCLUDE[wfd1](../includes/wfd1-md.md)]hérité. Utilisez le [!INCLUDE[wfd2](../includes/wfd2-md.md)] hérité lorsque vous devez cibler le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+Cette rubrique décrit comment utiliser la boîte de dialogue **Sélectionner une condition** dans le hérité [!INCLUDE[wfd1](../includes/wfd1-md.md)] . Utilisez le [!INCLUDE[wfd2](../includes/wfd2-md.md)] hérité lorsque vous devez cibler le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
  La boîte de dialogue **Sélectionner une condition** permet de sélectionner une condition de règle déclarative à assigner à la propriété condition d’une activité. Ces conditions de règle sont exposées comme propriétés pour les activités prédéfinies Windows Workflow Foundation suivantes :
 
@@ -37,7 +37,7 @@ Cette rubrique décrit comment utiliser la boîte de dialogue **Sélectionner un
 
   Le tableau suivant décrit les éléments d’interface utilisateur (IU) de la boîte de dialogue **Sélectionner une condition** .
 
-|Élément de l'interface utilisateur|Description|
+|Élément de l’interface utilisateur|Description|
 |----------------|-----------------|
 |**Nouveau...**|Cliquez pour ouvrir la [boîte de dialogue Éditeur de conditions de règle (héritée)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) afin de créer une nouvelle condition de règle.|
 |**Modifier...**|Cliquez pour ouvrir la [boîte de dialogue Éditeur de conditions de règle (héritée)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) pour modifier la condition de règle sélectionnée.|

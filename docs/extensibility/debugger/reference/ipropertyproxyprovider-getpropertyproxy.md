@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyProvider::GetPropertyProxy (fr) Microsoft Docs
+title: 'IPropertyProxyProvider :: GetPropertyProxy | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 35c23fc56c883845bdb7fb73daa60a845ee5e21a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714830"
 ---
 # <a name="ipropertyproxyprovidergetpropertyproxy"></a>IPropertyProxyProvider::GetPropertyProxy
-Récupère l’interface proxy de propriété pour l’ID proxy spécifié.
+Récupère l’interface de proxy de propriété pour l’ID de proxy spécifié.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -43,16 +43,16 @@ int GetPropertyProxy(
 
 ## <a name="parameters"></a>Paramètres
 `dwID`\
-[dans] ID du proxy de propriété désiré.
+dans ID du proxy de propriété souhaité.
 
 `proxy`\
-[out] Retourne un objet [IPropertyProxyEESide.](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
+à Retourne un objet [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) .
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- Pour prendre en charge les visualisateurs de type externe, cette méthode transmet généralement l’appel à la méthode [GetPropertyProxy.](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md) Voir [Visualizing and Viewing Data](../../../extensibility/debugger/visualizing-and-viewing-data.md) pour plus de détails sur la façon dont l’IEEVisualizerService est obtenu.
+ Pour prendre en charge les visualiseurs de types externes, cette méthode transfère généralement l’appel à la méthode [GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md) . Pour plus d’informations sur la façon dont le IEEVisualizerService est obtenu, consultez visualisation [et affichage des données](../../../extensibility/debugger/visualizing-and-viewing-data.md) .
 
 ## <a name="see-also"></a>Voir aussi
 - [IPropertyProxyProvider](../../../extensibility/debugger/reference/ipropertyproxyprovider.md)

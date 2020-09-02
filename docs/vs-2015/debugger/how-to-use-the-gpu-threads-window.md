@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Utilisez la fenêtre Threads GPU | Microsoft Docs'
+title: 'Comment : utiliser la fenêtre threads GPU | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,16 +20,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c7b97c346cc933e14292fbb1198bfb69ecf59717
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65696161"
 ---
-# <a name="how-to-use-the-gpu-threads-window"></a>Procédure : Utiliser la fenêtre Threads GPU
+# <a name="how-to-use-the-gpu-threads-window"></a>Comment : utiliser la fenêtre Threads GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Dans la fenêtre Threads GPU, vous pouvez visualiser et utiliser les threads qui s'exécutent sur le GPU dans l'application que vous déboguez. Pour plus d’informations sur les applications qui s’exécutent sur le GPU, consultez [présentation de C++ AMP](https://msdn.microsoft.com/library/9e593b06-6e3c-43e9-8bae-6d89efdd39fc).  
+Dans la fenêtre Threads GPU, vous pouvez visualiser et utiliser les threads qui s'exécutent sur le GPU dans l'application que vous déboguez. Pour plus d’informations sur les applications qui s’exécutent sur le GPU, consultez [C++ amp vue d’ensemble](https://msdn.microsoft.com/library/9e593b06-6e3c-43e9-8bae-6d89efdd39fc).  
   
  La fenêtre Threads GPU contient une table dans laquelle chaque ligne représente un ensemble de threads GPU qui ont les mêmes valeurs dans toutes les colonnes. Vous pouvez trier, réorganiser, supprimer et regrouper les éléments qui figurent dans les colonnes. Vous pouvez marquer ou supprimer l'indicateur, figer et libérer (reprendre) les threads à partir de la fenêtre Threads GPU. Les colonnes suivantes sont affichées dans la fenêtre Threads GPU :  
   
@@ -55,13 +55,13 @@ Dans la fenêtre Threads GPU, vous pouvez visualiser et utiliser les threads qui
   
 ### <a name="to-display-the-gpu-threads-window"></a>Pour afficher la fenêtre Threads GPU  
   
-1. Dans l' **Explorateur de solutions**, ouvrez le menu contextuel du projet et choisissez **Propriétés**.  
+1. Dans **Explorateur de solutions**, ouvrez le menu contextuel du projet, puis choisissez **Propriétés**.  
   
 2. Dans la fenêtre **Pages de propriétés** du projet, sous **Propriétés de configuration**, choisissez **Débogage**.  
   
 3. Dans la liste **Débogueur à lancer**, sélectionnez **Débogueur Windows local**. Dans la liste **Type de débogueur**, sélectionnez **GPU uniquement**. Vous devez choisir le débogueur pour désactiver des points d'arrêt dans le code qui s'exécute sur le GPU.  
   
-4. Sélectionnez le bouton **OK** .  
+4. Choisissez le bouton **OK**.  
   
 5. Définissez un point d'arrêt dans le code GPU.  
   
@@ -71,7 +71,7 @@ Dans la fenêtre Threads GPU, vous pouvez visualiser et utiliser les threads qui
   
 ### <a name="to-change-to-a-different-active-thread"></a>Pour passer à un autre thread actif  
   
-- Double-cliquez sur la colonne. (Clavier : Sélectionnez la ligne et appuyez sur ENTRÉE.)  
+- Double-cliquez sur la colonne. (Raccourci : sélectionnez la ligne et choisissez Entrée.)  
   
 ### <a name="to-display-a-particular-tile-and-thread"></a>Pour afficher une mosaïque et un thread particuliers  
   
@@ -106,6 +106,6 @@ Dans la fenêtre Threads GPU, vous pouvez visualiser et utiliser les threads qui
 - Cliquez sur le bouton indicateur dans la fenêtre Threads GPU.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Déboguer les applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Guide pratique pour utiliser la fenêtre Espion parallèle](../debugger/how-to-use-the-parallel-watch-window.md)   
- [Procédure pas à pas : Débogage d’une application C++ AMP](https://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)
+ [Déboguer des applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+ [Comment : utiliser la fenêtre Espion parallèle](../debugger/how-to-use-the-parallel-watch-window.md)   
+ [Procédure pas à pas : débogage d’une application C++ AMP](https://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)

@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 89dadc3213620b668160752e919679cccead90bc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778022"
 ---
 # <a name="visual-studio-profiler-api-reference-native"></a>Informations de référence sur l’API du profileur Visual Studio (native)
@@ -48,5 +48,5 @@ Les API du profileur Visual Studio vous permettent de contrôler par programmati
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Outils de profilage API](../profiling/profiling-tools-apis.md)
-- [Procédure pas à pas : Utilisation d’API profileurs](../profiling/walkthrough-using-profiler-apis.md)
+- [API des outils de profilage](../profiling/profiling-tools-apis.md)
+- [Procédure pas à pas : Utiliser les API du profileur](../profiling/walkthrough-using-profiler-apis.md)

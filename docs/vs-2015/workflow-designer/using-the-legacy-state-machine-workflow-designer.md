@@ -19,14 +19,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 77bb2c7abb49dbf6fe973ebc80f8340000e4afbd
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75846007"
 ---
 # <a name="using-the-legacy-state-machine-workflow-designer"></a>Utilisation du Concepteur de Workflow d'ordinateur d'état hérité
-Lorsque vous créez un projet de workflow d’ordinateur d’État dans [!INCLUDE[vs2010](../includes/vs2010-md.md)] qui cible l' [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], vous pouvez choisir d’utiliser l' **application console de workflow** de l’ordinateur d’État ou le modèle de projet hérité de la **bibliothèque de flux de travail** de l’ordinateur d’État. Si vous choisissez l'un de ces modèles de projet d'ordinateur d'état, le concepteur d'ordinateurs d'état est présenté comme interface utilisateur de concepteur de workflow hérité. Pour plus d’informations sur les modèles de projet d’ordinateur d’État hérités, consultez [Comment : créer des applications console de workflow d’ordinateur d’État (hérité)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) et [Comment : créer une bibliothèque de workflows d’ordinateur d’État (héritée)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).
+Lorsque vous créez un nouveau projet de workflow d’ordinateur d’État dans [!INCLUDE[vs2010](../includes/vs2010-md.md)] qui cible le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] , vous pouvez choisir d’utiliser l' **application console de workflow** de l’ordinateur d’État ou le modèle de projet hérité de la bibliothèque de **workflows** de l’ordinateur d’État. Si vous choisissez l'un de ces modèles de projet d'ordinateur d'état, le concepteur d'ordinateurs d'état est présenté comme interface utilisateur de concepteur de workflow hérité. Pour plus d’informations sur les modèles de projet d’ordinateur d’État hérités, consultez [Comment : créer des applications console de workflow d’ordinateur d’État (hérité)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) et [Comment : créer une bibliothèque de workflows d’ordinateur d’État (héritée)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).
 
  Un workflow d'ordinateur d'état se compose d'un ensemble d'états. Un état représente un état initial. Chaque état peut recevoir certains événements spécifiques. En fonction d'un événement, une transition peut s'effectuer vers un autre état. Le workflow d'ordinateur d'état peut porter un état final. Lorsqu'une transition est effectuée vers l'état final, l'exécution de workflow prend fin.
 
@@ -42,9 +42,9 @@ Lorsque vous créez un projet de workflow d’ordinateur d’État dans [!INCLUD
 
 |Nom de boîte à outils|Activité|Description|
 |------------------|--------------|-----------------|
-|**État**|[StateActivity](https://msdn2.microsoft.com/library/system.workflow.activities.stateactivity.aspx)|Représente un État dans une machine à États. peut contenir des activités **StateActivity** supplémentaires. Pour plus d’informations, consultez [utilisation de l’activité StateActivity](https://msdn2.microsoft.com/library/bb628612.aspx).|
+|**State**|[StateActivity](https://msdn2.microsoft.com/library/system.workflow.activities.stateactivity.aspx)|Représente un État dans une machine à États. peut contenir des activités **StateActivity** supplémentaires. Pour plus d’informations, consultez [utilisation de l’activité StateActivity](https://msdn2.microsoft.com/library/bb628612.aspx).|
 |**SetState**|[SetStateActivity](https://msdn2.microsoft.com/library/system.workflow.activities.setstateactivity.aspx)|Spécifie une transition vers un nouvel état. Pour plus d’informations, consultez [utilisation de l’activité SetStateActivity](https://msdn2.microsoft.com/library/bb628469.aspx).|
-|**Activités**|[StateInitializationActivity](https://msdn2.microsoft.com/library/system.workflow.activities.stateinitializationactivity.aspx)|Elle est exécutée lorsqu'un état est entré ; elle peut contenir d'autres activités. Pour plus d’informations, consultez [utilisation de l’activité StateInitialization](https://msdn2.microsoft.com/library/bb675253.aspx).|
+|**StateInitialization**|[StateInitializationActivity](https://msdn2.microsoft.com/library/system.workflow.activities.stateinitializationactivity.aspx)|Elle est exécutée lorsqu'un état est entré ; elle peut contenir d'autres activités. Pour plus d’informations, consultez [utilisation de l’activité StateInitialization](https://msdn2.microsoft.com/library/bb675253.aspx).|
 |**StateFinalization**|[StateFinalizationActivity](https://msdn2.microsoft.com/library/system.workflow.activities.statefinalizationactivity.aspx)|Exécute les activités contenues lors de la sortie d’une activité [StateActivity](https://msdn2.microsoft.com/library/system.workflow.activities.stateactivity.aspx) . Pour plus d’informations, consultez [utilisation de l’activité StateFinalizationActivity](https://msdn2.microsoft.com/library/bb675278.aspx).|
 |**EventDriven**|[EventDrivenActivity](https://msdn2.microsoft.com/library/system.workflow.activities.eventdrivenactivity.aspx)|Utilisée pour des états pour lesquels un événement externe déclenche l'exécution. L’activité **EventDrivenActivity** doit avoir une activité qui implémente l’interface [IEventActivity](https://msdn2.microsoft.com/library/system.workflow.activities.ieventactivity.aspx) en tant que première activité enfant. Pour plus d’informations, consultez [utilisation de l’activité EventDrivenActivity](https://msdn2.microsoft.com/library/bb628466.aspx).|
 

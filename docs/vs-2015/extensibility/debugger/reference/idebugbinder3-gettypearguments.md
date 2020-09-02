@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetTypeArguments | Microsoft Docs
+title: 'IDebugBinder3 :: GetTypeArguments (| Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,15 +13,15 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1f7b6038013370ad85a665d9899d367e621aa991
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192284"
 ---
 # <a name="idebugbinder3gettypearguments"></a>IDebugBinder3::GetTypeArguments
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
-Cette méthode récupère une liste des types d’arguments associée à cet objet.
+Cette méthode récupère une liste de types d’arguments associés à cet objet.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -47,25 +47,25 @@ int GetTypeArguments(
 
  `skip`
 
- [in] Nombre de champs à ignorer avant d’obtenir les types d’arguments.
+ dans Nombre de champs à ignorer avant d’obtenir les types d’arguments.
 
  `count`
 
- [in] Le nombre de champs de l’argument à retourner (spécifie également la taille de la `ppFields` tableau).
+ dans Nombre de champs d’arguments à retourner (spécifie également la taille du `ppFields` tableau).
 
  `ppFields`
 
- [in, out] Un tableau de champs renseignés au retour de cette méthode.
+ [in, out] Tableau de champs qui seront remplis au retour de cette méthode.
 
  `pFetched`
 
- [out] Le nombre de champs de type d’argument que vous souhaitez réellement retournés (facultatif).
+ à Nombre de champs de type d’argument réellement retournés (facultatif).
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- Le nombre de types d’arguments peut être obtenu au préalable avec [GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md).
+ Le nombre de types d’arguments peut être obtenu au préalable avec [GetTypeArgumentCount (](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md).
 
 ## <a name="see-also"></a>Voir aussi
 

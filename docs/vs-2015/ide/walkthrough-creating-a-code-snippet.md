@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ac188bcf7975b8da1bbc71a90d3b6c34b095d424
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75845576"
 ---
 # <a name="walkthrough-creating-a-code-snippet"></a>Procédure pas à pas : création d'un extrait de code
@@ -75,7 +75,7 @@ Vous pouvez créer un extrait de code en quelques étapes seulement. Il vous suf
 
 1. Vous pouvez ajouter vos propres extraits de code à votre installation Visual Studio par le biais du Gestionnaire des extraits de code. Ouvrez le Gestionnaire des extraits de code (**Outils/Gestionnaire des extraits de code**).
 
-2. Cliquez sur le bouton **Importer**.
+2. Cliquez sur le bouton **Import**.
 
 3. Accédez à l’emplacement où vous avez enregistré l’extrait de code dans la procédure précédente, sélectionnez-le, puis cliquez sur **Ouvrir**.
 
@@ -91,7 +91,7 @@ Vous pouvez créer un extrait de code en quelques étapes seulement. Il vous suf
 
 ### <a name="adding-description-and-shortcut-fields"></a>Ajout de champs Description et Raccourci
 
-1. Les champs Description donnent des informations supplémentaires sur votre extrait de code affiché dans le Gestionnaire des extraits de code. Le raccourci est une balise que les utilisateurs peuvent entrer pour insérer votre extrait de code. Modifiez l’extrait de code que vous avez ajouté en ouvrant le fichier `%USERPROFILE%\Documents\Visual Studio 2013\Code Snippets\Visual Basic\My Code Snippet\VBCodeSnippet.snippet`.
+1. Les champs Description donnent des informations supplémentaires sur votre extrait de code affiché dans le Gestionnaire des extraits de code. Le raccourci est une balise que les utilisateurs peuvent entrer pour insérer votre extrait de code. Modifiez l’extrait de code que vous avez ajouté en ouvrant le fichier `%USERPROFILE%\Documents\Visual Studio 2013\Code Snippets\Visual Basic\My Code Snippet\VBCodeSnippet.snippet` .
 
 2. Ajoutez les éléments Author et Description dans l’élément Header, puis renseignez-les.
 
@@ -122,11 +122,11 @@ Vous pouvez créer un extrait de code en quelques étapes seulement. Il vous suf
 
 6. Enregistrez de nouveau le fichier d’extrait de code.
 
-7. Pour tester le raccourci, ouvrez un projet Visual Basic et un fichier de code. Tapez `hello` dans le fichier et appuyez sur TAB. L’extrait de code doit être inséré.
+7. Pour tester le raccourci, ouvrez un projet Visual Basic et un fichier de code. Tapez `hello` dans le fichier et appuyez sur la touche Tab. L’extrait de code doit être inséré.
 
 ### <a name="to-add-references-and-imports"></a>Pour ajouter des références et des importations
 
-1. Avec Visual Basic extraits de code, vous pouvez ajouter une référence à un projet à l’aide de l’élément References et ajouter une déclaration Imports à l’aide de l’élément Imports. (Les extraits de code dans d’autres langages n’ont pas cette fonctionnalité.) Par exemple, si vous modifiez `Console.WriteLine` dans l’exemple de code pour `MessageBox.Show`, vous devrez peut-être ajouter l’assembly System. Windows. Forms. dll au projet.
+1. Avec Visual Basic extraits de code, vous pouvez ajouter une référence à un projet à l’aide de l’élément References et ajouter une déclaration Imports à l’aide de l’élément Imports. (Les extraits de code dans d’autres langages n’ont pas cette fonctionnalité.) Par exemple, si vous remplacez `Console.WriteLine` l’exemple de code par `MessageBox.Show` , vous devrez peut-être ajouter l’assembly System.Windows.Forms.dll au projet.
 
 2. Ouvrez votre extrait de code.
 
@@ -262,4 +262,4 @@ Vous pouvez créer un extrait de code en quelques étapes seulement. Il vous suf
     ```
 
 ## <a name="see-also"></a>Voir aussi
- [Informations de référence sur le schéma des extraits de code](../ide/code-snippets-schema-reference.md)
+ [Référence de schéma des extraits de code](../ide/code-snippets-schema-reference.md)

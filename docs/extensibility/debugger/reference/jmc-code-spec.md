@@ -1,5 +1,5 @@
 ---
-title: JMC_CODE_SPEC Microsoft Docs
+title: JMC_CODE_SPEC | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 0a6746ed0df400efc7feb3fb541c57c88f78cc2c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714739"
 ---
 # <a name="jmc_code_spec"></a>JMC_CODE_SPEC
-Cette structure est utilisée pour définir les informations JustMyCode pour un module.
+Cette structure est utilisée pour définir les informations de JustMyCode d’un module.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -43,20 +43,20 @@ public struct JMC_CODE_SPEC {
 
 ## <a name="members"></a>Membres
 `fIsUserCode`\
-Non-zéro`TRUE`( ) si le module doit être considéré comme code utilisateur; autrement, zéro`FALSE`( ) si le module doit être traité comme un code externe et ne pas être débogé.
+Différent de zéro ( `TRUE` ) si le module doit être considéré comme du code utilisateur ; sinon, zéro ( `FALSE` ) si le module doit être traité comme du code externe et ne doit pas être débogué.
 
 `bstrModuleName`\
 Nom du module en question.
 
 ## <a name="remarks"></a>Notes
-Cette structure est transmise comme une liste de ces structures à la méthode [SetJustMyCodeState.](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md)
+Cette structure est transmise comme une liste de ces structures à la méthode [SetJustMyCodeState](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md) .
 
-## <a name="requirements"></a>Spécifications
-En-tête: msdbg.h
+## <a name="requirements"></a>Configuration requise
+En-tête : msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Espace de noms : Microsoft. VisualStudio. Debugger. Interop
 
-Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Structures et unions](../../../extensibility/debugger/reference/structures-and-unions.md)

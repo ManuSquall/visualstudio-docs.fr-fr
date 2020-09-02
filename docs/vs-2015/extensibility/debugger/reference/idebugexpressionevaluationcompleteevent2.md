@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a7692a06004a1f9d31a31f91c081c6168d89a8dc
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65694387"
 ---
 # <a name="idebugexpressionevaluationcompleteevent2"></a>IDebugExpressionEvaluationCompleteEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Cette interface est envoyée par le moteur de débogage (dé) pour le Gestionnaire de session de débogage (SDM) lors de l’évaluation de l’expression asynchrone est terminée.  
+Cette interface est envoyée par le moteur de débogage (DE) au gestionnaire de débogage de session (SDM) lorsque l’évaluation de l’expression asynchrone est terminée.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -30,14 +30,14 @@ Cette interface est envoyée par le moteur de débogage (dé) pour le Gestionnai
 IDebugExpressionEvaluationCompleteEvent2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs  
- Le D’implémente cette interface jusqu'à la fin du rapport d’une évaluation d’expression démarrée par un appel à [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md). Le [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interface doit être implémentée sur le même objet que cette interface. Utilise le SDM [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) pour accéder à la `IDebugEvent2` interface.  
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
+ Le DE implémente cette interface pour signaler la fin de l’évaluation d’une expression lancée par un appel à [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md). L’interface [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) doit être implémentée sur le même objet que cette interface. Le SDM utilise [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) pour accéder à l' `IDebugEvent2` interface.  
   
-## <a name="notes-for-callers"></a>Notes de publication pour les appelants  
- Le DE crée et envoie cet objet d’événement pour signaler l’achèvement d’une évaluation d’expression. L’événement est envoyé à l’aide de la [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fonction de rappel qui est fournie par le SDM lorsqu’il est attaché au programme en cours de débogage.  
+## <a name="notes-for-callers"></a>Notes pour les appelants  
+ Le DE crée et envoie cet objet d’événement pour signaler la fin de l’évaluation d’une expression. L’événement est envoyé à l’aide de la fonction de rappel [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fournie par le SDM lorsqu’il est attaché au programme en cours de débogage.  
   
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
- Le tableau suivant présente les méthodes de `IDebugExpressionEvaluationCompleteEvent2`.  
+ Le tableau suivant présente les méthodes de `IDebugExpressionEvaluationCompleteEvent2` .  
   
 |Méthode|Description|  
 |------------|-----------------|  
@@ -45,16 +45,16 @@ IDebugExpressionEvaluationCompleteEvent2 : IUnknown
 |[GetResult](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getresult.md)|Obtient le résultat de l’évaluation de l’expression.|  
   
 ## <a name="remarks"></a>Notes  
- Le DE doit envoyer cet événement, si l’évaluation a réussi ou non.  
+ Le DE doit envoyer cet événement, que l’évaluation soit réussie ou non.  
   
- Si la version d’évaluation n’a pas réussie, le `DEBUG_PROPINFO_VALUE` et `DEBUG_PROPINFO_ATTRIB` indicateurs ne seront pas définis le [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) structure qui est retournée par [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) (le [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objet est créé par l’Allemagne et retournée dans le `IDebugExpressionEvaluationCompleteEvent2` événement en cas d’échec de la version d’évaluation).  
+ Si l’évaluation n’a pas réussi, `DEBUG_PROPINFO_VALUE` les `DEBUG_PROPINFO_ATTRIB` indicateurs et ne sont pas définis dans la structure [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) retournée par [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) (l’objet [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) est créé par le de et retourné dans l' `IDebugExpressionEvaluationCompleteEvent2` événement si l’évaluation a échoué).  
   
-## <a name="requirements"></a>Configuration requise  
- En-tête : msdbg.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : msdbg. h  
   
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft. VisualStudio. Debugger. Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   

@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 73d8e54938659920227b3614046b8a8f933023ff
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670215"
 ---
 # <a name="add-existing-project-command"></a>Ajouter un projet existant, commande
@@ -39,10 +39,10 @@ File.AddExistingProject filename
 
  Si aucun nom de fichier n’est spécifié, la commande ouvre la boîte de dialogue Fichier pour que l’utilisateur puisse sélectionner un projet.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  La saisie semi-automatique tente de deviner le chemin et le nom de fichier à mesure que vous tapez.
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
  Cet exemple ajoute le projet [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] (TestProject1) à la solution actuelle.
 
 ```

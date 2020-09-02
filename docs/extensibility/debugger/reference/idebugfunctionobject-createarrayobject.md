@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionObject::CreateArrayObject ( Microsoft Docs
+title: 'IDebugFunctionObject :: CreateArrayObject | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: bd4c07f2b95ff3077de79d4bc63f4fad19b0c6fa
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728608"
 ---
 # <a name="idebugfunctionobjectcreatearrayobject"></a>IDebugFunctionObject::CreateArrayObject
-Crée un objet de tableau. Ce tableau peut contenir des valeurs primitives ou d’instance d’objet.
+Crée un objet tableau. Ce tableau peut contenir des valeurs de l’instance primitive ou Object.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -51,28 +51,28 @@ int CreateArrayObject(
 
 ## <a name="parameters"></a>Paramètres
 `ot`\
-[dans] Spécifie une valeur du [recensement OBJECT_TYPE](../../../extensibility/debugger/reference/object-type.md) indiquant le type du nouvel objet de tableau.
+dans Spécifie une valeur de l’énumération [OBJECT_TYPE](../../../extensibility/debugger/reference/object-type.md) indiquant le type du nouvel objet tableau.
 
 `pClassField`\
-[dans] Un objet [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) représentant la classe d’un objet, si vous créez un tableau de valeurs d’instance d’objet. Si vous créez une gamme d’objets primitifs, ce paramètre est une valeur nulle.
+dans Objet [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) qui représente la classe d’un objet, en cas de création d’un tableau de valeurs d’instance d’objet. En cas de création d’un tableau d’objets primitifs, ce paramètre est une valeur null.
 
 `dwRank`\
-[dans] Le rang ou le nombre de dimensions du tableau.
+dans Rang ou nombre de dimensions du tableau.
 
 `dwDims`\
-[dans] Les tailles de chaque dimension du tableau.
+dans Tailles de chaque dimension du tableau.
 
 `dwLowBounds`\
-[dans] L’origine de chaque dimension (généralement 0 ou 1).
+dans Origine de chaque dimension (généralement 0 ou 1).
 
 `ppObject`\
-[out] Retourne un objet [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) représentant le tableau nouvellement créé. Il s’agit en fait d’un objet [IDebugArrayObject.](../../../extensibility/debugger/reference/idebugarrayobject.md)
+à Retourne un objet [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) qui représente le tableau nouvellement créé. Il s’agit en fait d’un objet [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md) .
 
-## <a name="return-value"></a>Valeur de retour
- En cas de succès, les retours S_OK; autrement, renvoie un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes
- Appelez cette méthode pour créer un objet qui représente un paramètre de tableau à la fonction qui est représentée par [l’interface IDebugFunctionObject.](../../../extensibility/debugger/reference/idebugfunctionobject.md)
+ Appelez cette méthode pour créer un objet qui représente un paramètre de tableau pour la fonction qui est représentée par l’interface [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) .
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)
