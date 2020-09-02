@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: e7b23a7cbefeace19a3deaa5c1bfc05580081d39
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778464"
 ---
 # <a name="performance-session-overview"></a>Vue d’ensemble de la session de performance
@@ -75,5 +75,5 @@ Cette vue d’ensemble explique les principes de base du profilage. Les dévelop
  Vous pouvez coller des lignes de vues de rapport de performances dans des e-mails et des feuilles de calcul. Il est également possible de générer des rapports qui contiennent les données d’une ou de plusieurs vues.
 
 ## <a name="see-also"></a>Voir aussi
-- [Vues d’ensemble](../profiling/overviews-performance-tools.md)
-- [Procédure pas à pas : Identifier les problèmes de performance](beginners-guide-to-cpu-sampling.md)
+- [Vues d'ensemble](../profiling/overviews-performance-tools.md)
+- [Procédure pas à pas : identifier les problèmes de performances](beginners-guide-to-cpu-sampling.md)

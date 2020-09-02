@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Mettre à jour de la barre d’état | Microsoft Docs'
+title: 'Comment : mettre à jour la barre d’État | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,42 +11,42 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1d48b07dd5e4fc1fe745e3669041884c1b8eacd9
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65703144"
 ---
-# <a name="how-to-update-the-status-bar"></a>Procédure : Mettre à jour de la barre d’état
+# <a name="how-to-update-the-status-bar"></a>Guide pratique pour mettre à jour la barre d’état
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Le **barre d’état** une barre de contrôle ne se trouve en bas de nombreuses fenêtres d’application qui contient un ou plusieurs lignes de texte d’état ou des indicateurs.  
+La **barre d’État** est une barre de contrôle située en bas de nombreuses fenêtres d’application qui contient un ou plusieurs indicateurs ou lignes de texte d’État.  
   
-### <a name="to-update-the-status-bar"></a>Pour mettre à jour de la barre d’état  
+### <a name="to-update-the-status-bar"></a>Pour mettre à jour la barre d’État  
   
-1. Implémentez <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> sur chaque objet de vue individuelle (DocView) fournies par votre éditeur, comme une vue de formulaire et un mode code.  
+1. Implémentez <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> sur chaque objet de vue (docview) fourni par votre éditeur, par exemple en mode formulaire et en mode Code.  
   
-2. Lorsque l’IDE appelle <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A>, mettre à jour les informations contenues dans le **barre d’état** en appelant les méthodes de <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>.  
+2. Lorsque l’IDE appelle <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> , mettez à jour les informations dans la **barre d’État** en appelant les méthodes de <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> .  
   
     > [!NOTE]
-    > Les appels IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> uniquement lorsque votre fenêtre de document est initialement activée. Pour le reste du temps que votre fenêtre de document est actif, vous devez mettre à jour le **barre d’état** informations en tant que l’état de vos modifications de l’éditeur.  
+    > L’IDE appelle <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> uniquement lorsque la fenêtre de document est initialement activée. Pour le reste du temps d’activité de la fenêtre de document, vous devez mettre à jour les informations de la **barre d’État** lorsque l’état de votre éditeur change.  
   
 ## <a name="robust-programming"></a>Programmation fiable  
- Un **barre d’état** contient quatre champs distincts :  
+ Une **barre d’État** contient quatre champs distincts :  
   
-- Texte d’état  
+- Texte d'état  
   
 - Barre de progression  
   
 - Icône animée  
   
-- Informations d’éditeur  
+- Informations sur l’éditeur  
   
-  Pour plus d’informations, consultez [barres d’état](https://msdn.microsoft.com/library/fcbc5029-1aab-4e14-adf7-419038a4935e).  
+  Pour plus d’informations, consultez [barres d’État](https://msdn.microsoft.com/library/fcbc5029-1aab-4e14-adf7-419038a4935e).  
   
   L’IDE appelle automatiquement la <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> méthode de votre <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> implémentation lorsque votre fenêtre de document est activée.  
   
-  L’implémenteur de VSPackage est chargé de la mise à jour le texte d’état dans la barre d’état. L’IDE réinitialise cette chaîne pour « Prêt » si le champ de texte d’état a la valeur texte vide (" ») en période d’inactivité.  
+  L’implémenteur VSPackage est chargé de mettre à jour le texte d’État dans la barre d’État. L’IDE réinitialise cette chaîne à « READY » si le champ de texte d’État est défini sur un texte vide («») au moment de l’inactivité.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Barres d’état](https://msdn.microsoft.com/library/fcbc5029-1aab-4e14-adf7-419038a4935e)
+ [Barres d’État](https://msdn.microsoft.com/library/fcbc5029-1aab-4e14-adf7-419038a4935e)

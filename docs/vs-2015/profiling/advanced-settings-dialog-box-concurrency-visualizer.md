@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 128327b956734f7d28e7ff88f3eb6c297544587c
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75849819"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Paramètres avancés, boîte de dialogue (visualiseur concurrentiel)
@@ -23,7 +23,7 @@ ms.locfileid: "75849819"
 
 La boîte de dialogue **Paramètres avancés** du visualiseur concurrentiel vous permet de contrôler la façon dont les traces sont collectées.  La boîte de dialogue comprend des onglets pour les symboles, « Uniquement mon code », la mise en mémoire tampon, le filtrage, les événements du CLR, les marqueurs, les fournisseurs et les fichiers.  
   
-## <a name="symbols"></a>Symboles  
+## <a name="symbols"></a>symboles  
  Le visualiseur concurrentiel utilise les mêmes paramètres de symboles que le débogueur Visual Studio. Le visualiseur concurrentiel utilise les paramètres pour résoudre les piles d’appels associées aux données de performance.  Quand il traite des traces, le visualiseur concurrentiel accède aux serveurs de symboles spécifiés dans la page des paramètres.  Si ces données sont accessibles sur un réseau, le traitement des traces ralentit.  Pour réduire la durée nécessaire à la résolution des symboles, vous pouvez les mettre en cache localement. Si les symboles ont été téléchargés, Visual Studio les charge à partir du cache local.  
   
 ## <a name="just-my-code"></a>Uniquement mon code  
@@ -31,10 +31,10 @@ La boîte de dialogue **Paramètres avancés** du visualiseur concurrentiel vous
   
  Les chemins des fichiers .exe et .dll sont stockés dans le fichier de trace quand la trace est collectée.  La modification de ce paramètre n’affecte pas les traces déjà collectées.  
   
-## <a name="buffering"></a>Mise en mémoire tampon  
+## <a name="buffering"></a>des réponses  
  Le visualiseur concurrentiel utilise le suivi d’événements pour Windows (ETW) quand il collecte une trace.  ETW utilise plusieurs mémoires tampons quand il stocke des événements.  Les paramètres de mémoire tampon ETW par défaut peuvent ne pas être optimaux dans tous les cas. Ils peuvent même provoquer des problèmes tels que la perte d’événements dans certaines situations.  Vous pouvez utiliser l’onglet Mise en mémoire tampon pour configurer les paramètres de mémoire tampon ETW. Pour plus d’informations, consultez [Traçage d’événements](https://msdn.microsoft.com/library/bb968803(VS.85).aspx) et [Structure d’EVENT_TRACE_PROPERTIES](https://msdn.microsoft.com/library/aa363784(VS.85).aspx).  
   
-## <a name="filter"></a>Filtre  
+## <a name="filter"></a>Filtrer  
  Sous l’onglet Filtre, vous pouvez sélectionner le jeu d’événements collecté par le visualiseur concurrentiel. La sélection d’un sous-ensemble d’événements limite les types de données qui s’affichent dans les rapports, réduit la taille de chaque trace et accélère le traitement des traces.  
   
 ### <a name="clr-events"></a>Événements CLR  
@@ -44,7 +44,7 @@ La boîte de dialogue **Paramètres avancés** du visualiseur concurrentiel vous
  Par défaut, les événements du CLR sont collectés uniquement quand un processus managé est profilé car ils ne sont normalement pas nécessaires pour les processus natifs.  Dans certains cas (par exemple, quand un processus natif héberge le CLR), vous devrez peut-être collecter les événements du CLR pour un processus natif.  Si tel est le cas, cochez la case **Collecter les processus natifs**.  
   
 ### <a name="disable-rundown-events"></a>Désactiver les événements d’arrêt  
- Le CLR génère des événements de deux fournisseurs : runtime et rundown.  Si vous souhaitez collecter les événements du runtime du CLR sans toutefois collecter les événements d’arrêt, cochez la case **Désactiver les événements d’arrêt**.  Cela permet de réduire la taille du fichier de trace généré par la collection, mais il est possible que certaines piles ne soient pas résolues. Pour plus d’informations, consultez [Fournisseurs ETW du CLR](https://msdn.microsoft.com/library/0beafad4-b2c8-47f4-b342-83411d57a51f).  
+ Le CLR génère des événements de deux fournisseurs : runtime et rundown.  Si vous souhaitez collecter les événements du runtime du CLR sans toutefois collecter les événements d’arrêt, cochez la case **Désactiver les événements d’arrêt**.  Cela permet de réduire la taille du fichier de trace généré par la collection, mais il est possible que certaines piles ne soient pas résolues. Pour plus d’informations, consultez [fournisseurs ETW du CLR](https://msdn.microsoft.com/library/0beafad4-b2c8-47f4-b342-83411d57a51f)  
   
 ### <a name="sample-events"></a>Échantillonner les événements  
  Vous pouvez utiliser des événements d’échantillon pour collecter les piles des appels associées à l’exécution de threads. Ces événements sont collectés environ une fois par milliseconde pour les threads qui s’exécutent dans le processus actif. Si vous désactivez la collecte d’événements d’échantillon, vous réduisez la taille de la trace collectée, mais vous ne pouvez pas afficher les piles des appels associées à l’exécution de threads.  
@@ -55,7 +55,7 @@ La boîte de dialogue **Paramètres avancés** du visualiseur concurrentiel vous
 ### <a name="file-io-events"></a>Événements d'E/S de fichier  
  Les événements d’E/S de fichier représentent les accès au disque pour le compte du processus actuel.  Si vous désactivez les événements d’E/S de fichier, vous réduisez la taille de la trace, mais la vue Threads ne signale aucune information sur les canaux de disque ou des opérations de disque.  
   
-## <a name="markers"></a>Markers  
+## <a name="markers"></a>Marqueurs  
  Sous l’onglet Marqueurs, vous pouvez configurer l’ensemble des fournisseurs ETW affichés comme Marqueurs dans le visualiseur concurrentiel.  Vous pouvez également filtrer la collection de marqueurs selon le niveau d’importance et la catégorie ETW.  Si vous utilisez le [kit SDK du visualiseur concurrentiel](../profiling/concurrency-visualizer-sdk.md) et votre propre fournisseur de marqueurs, vous pouvez l’inscrire ici pour qu’il apparaisse dans la vue Threads.  
   
 ### <a name="adding-a-new-provider"></a>Ajouter un nouveau fournisseur  
@@ -84,7 +84,7 @@ La boîte de dialogue **Paramètres avancés** du visualiseur concurrentiel vous
   
 - Un fichier de trace Visualiseur concurrentiel (*.CVTrace)  
   
-  Les deux fichiers ETL stockent les données de trace brutes, et les deux fichiers du visualiseur concurrentiel stockent les données gérées.  Les fichiers ETL bruts ne sont généralement pas utilisés après le traitement d’une trace.  Pour réduire la quantité de données de trace stockées sur votre disque, cochez la case **Supprimer les fichiers ETL (Event Trace Log) après l’analyse**.  
+  Les deux fichiers ETL stockent les données de trace brutes, et les deux fichiers du visualiseur concurrentiel stockent les données gérées.  Les fichiers ETL bruts ne sont généralement pas utilisés après le traitement d’une trace.  Si vous activez la case à cocher **Supprimer les fichiers ETL (Event Trace Log) après l’analyse** , vous réduisez la quantité de données de trace stockées sur votre disque.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Uniquement mon code](../profiling/just-my-code-threads-view.md)   

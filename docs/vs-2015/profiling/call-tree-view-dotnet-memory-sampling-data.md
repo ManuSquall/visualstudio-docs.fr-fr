@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7ed0d8a2ccf8e33b493ddcb71f9ce3a794a06862
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150753"
 ---
 # <a name="call-tree-view---net-memory-sampling-data"></a>Vue Arborescence des appels - Données d’échantillonnage de la mémoire .NET
@@ -35,11 +35,11 @@ La vue Arborescence des appels affiche les chemins d’exécution de la fonction
   
 |Colonne|Description|  
 |------------|-----------------|  
-|**ID du processus**|ID du processus (PID) de l'exécution du profilage.|  
+|**ID de processus**|ID du processus (PID) de l'exécution du profilage.|  
 |**Nom du processus**|Nom du processus.|  
 |**Nom du module**|Nom du module qui contient la fonction.|  
-|**Chemin de module**|Chemin d’accès du module qui contient la fonction.|  
-|**Fichier source**|Fichier source contenant la définition pour cette fonction.|  
+|**Chemin du module**|Chemin d’accès du module qui contient la fonction.|  
+|**Source File**|Fichier source contenant la définition pour cette fonction.|  
 |**Nom de la fonction**|Nom complet de la fonction.|  
 |**Numéro de ligne de fonction**|Numéro de ligne du début de cette fonction dans le fichier source.|  
 |**Adresse de la fonction**|Adresse de la fonction.|  
@@ -54,6 +54,6 @@ La vue Arborescence des appels affiche les chemins d’exécution de la fonction
 |**% d’octets exclusifs**|Pourcentage de tous les octets de mémoire alloués lors de l’exécution du profilage qui étaient des allocations exclusives de cette fonction.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Vue Arborescence des appels - Instrumentation](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
- [Arborescence des appels, vue](../profiling/call-tree-view-sampling-data.md)   
- [Mode Arborescence des appels](../profiling/call-tree-view-instrumentation-data.md)
+ [Vue arborescence des appels-Instrumentation](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
+ [Vue arborescence des appels](../profiling/call-tree-view-sampling-data.md)   
+ [Vue Arborescence des appels](../profiling/call-tree-view-instrumentation-data.md)

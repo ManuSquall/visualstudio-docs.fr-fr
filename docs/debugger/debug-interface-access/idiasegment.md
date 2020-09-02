@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d248bd5dcacf2c852076bc1dddbcd40d149ebf67
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85465880"
 ---
 # <a name="idiasegment"></a>IDiaSegment
@@ -43,7 +43,7 @@ Le tableau suivant présente les méthodes de `IDiaSegment` .
 |[IDiaSegment::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasegment-get-relativevirtualaddress.md)|Récupère l’adresse virtuelle relative (RVA) du début de la section.|
 |[IDiaSegment::get_virtualAddress](../../debugger/debug-interface-access/idiasegment-get-virtualaddress.md)|Récupère l’adresse virtuelle (VA) du début de la section.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Étant donné que le kit de développement logiciel (SDK) DIA effectue déjà des traductions du décalage de section vers des adresses virtuelles relatives, la plupart des applications n’utilisent pas les informations de la carte de segment.
 
 ## <a name="notes-for-callers"></a>Notes pour les appelants

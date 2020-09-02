@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1b78492ccd5c2666da5ffc503cdf126842431478
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65702550"
 ---
 # <a name="capturing-graphics-information"></a>Capture d'informations graphiques
@@ -30,26 +30,26 @@ Capturez les informations graphiques de votre application Direct3D pour pouvoir 
   
 #### <a name="to-run-your-app-under-graphics-diagnostics"></a>Pour exécuter l'application dans Graphics Diagnostics  
   
-- Dans la barre de menus, choisissez **Déboguer**, **Graphiques**, **Démarrer les diagnostics**. (Clavier : Appuyez sur Alt + F5)  
+- Dans la barre de menus, choisissez **Déboguer**, **Graphiques**, **Démarrer les diagnostics**. (Clavier : appuyez sur Alt+F5)  
   
-- Sur le **Graphics** barre d’outils, choisissez le **démarrer les Diagnostics** bouton.  
+- Dans la barre d’outils **graphiques** , choisissez le bouton **Démarrer les diagnostics** .  
   
   Lorsqu'une application s'exécute dans Graphics Diagnostics, certains types d'informations graphiques sont systématiquement capturés. Notamment l'installation de périphérique, la création de chaîne de permutation, la création d'objets graphiques et de ressources, et d'autres événements significatifs qui affectent plusieurs frames. En même temps, vous pouvez capturer des informations détaillées sur des frames spécifiques. Cela inclut des appels de dessin et des distributions de nuanceur de calcul, ainsi que des objets Direct3D et des ressources qui les prennent en charge.  
   
 #### <a name="to-capture-a-frame"></a>Pour capturer un frame  
   
-- Dans Visual Studio, sur le **Graphics** barre d’outils, choisissez le **capturer le Frame** bouton![Graphics capture l’icône du bouton](../debugger/media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics").  
+- Dans Visual Studio, dans la barre d’outils **graphiques** , choisissez l’icône de bouton capturer le **Frame** du bouton de![capture graphique](../debugger/media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics").  
   
 - Appuyez sur la touche Impr. écran du clavier.  
   
   > [!NOTE]
   > Quand une application s’exécute sous **Graphics Diagnostics**, la touche Impr. écran sert uniquement à capturer un frame d’informations graphiques. Elle n’effectue pas sa fonction habituelle. Cela reste en vigueur jusqu'à ce que vous ayez arrêté de capturer des informations graphiques (en général en arrêtant le débogage ou en quittant l'application normalement) même si une autre application est dans le focus.  
   
-- Dans l’interface de capture de Visual Studio, choisissez le **capturer le Frame** bouton situé au-dessus de la **session de Diagnostic** chronologie, ou choisissez le grand **capturer le Frame** bouton situé sous le **images par seconde** couloirs et à droite des frames précédemment capturés. Les deux boutons sont mis en évidence dans l'image ci-dessous.  
+- Dans l’interface de capture de Visual Studio, choisissez le bouton **capturer le frame** situé au-dessus de la chronologie de la **session de diagnostic** , ou choisissez le grand bouton frame de **capture** situé sous les **images par seconde** couloir et à droite des frames précédemment capturés. Les deux boutons sont mis en évidence dans l'image ci-dessous.  
   
-   ![Capturer des frames à l’aide de l’outil utilisation du GPU. ](../debugger/media/pix-gpu-usage-tool-capture-frame.png "pix_gpu_usage_tool_capture_frame")  
+   ![Capturer des frames à l'aide de l'outil Utilisation du GPU.](../debugger/media/pix-gpu-usage-tool-capture-frame.png "pix_gpu_usage_tool_capture_frame")  
   
-   Lorsque vous êtes prêt à examiner les frames que vous avez capturés, démarrez le **Visual Studio Graphics Analyzer** en suivant le **Frame...** lien au-dessus des images miniatures ou en double-cliquant sur la miniature.  
+   Lorsque vous êtes prêt à examiner les frames que vous avez capturés, démarrez le **Visual Studio Graphics Analyzer** en suivant le **cadre...** lien au-dessus des miniatures de l’image ou en double-cliquant sur la miniature.  
   
   Seuls les frames entiers peuvent être capturés. Par conséquent, lorsque vous faites une capture, il s'agit en fait des informations graphiques provenant du frame suivant qui sont enregistrées. L'enregistrement démarre dès que le frame dans lequel vous avez lancé la capture est affiché et se termine lorsque le frame capturé est affiché. Vous pouvez capturer autant de frames que vous souhaitez tant que l'application s'exécute dans Graphics Diagnostics. Si vous ne capturez pas frame, le journal de graphisme est ignoré.  
   
@@ -79,12 +79,12 @@ Capturez les informations graphiques de votre application Direct3D pour pouvoir 
 ## <a name="capturing-graphics-information-remotely"></a>Capture d'informations graphiques à distance  
  Les informations graphiques peuvent être capturées à partir d'une application qui est exécutée sur un ordinateur local, un ordinateur ou un appareil distant. La capture distante est prise en charge pour les ordinateurs [!INCLUDE[winblue_client_2](../includes/winblue-client-2-md.md)] et les appareils [!INCLUDE[winblue_winrt_2](../includes/winblue-winrt-2-md.md)]. Pour capturer des informations graphiques à partir d’une application exécutée à distance, configurez votre projet pour le débogage distant et exécutez l’application dans Graphics Diagnostics comme décrit plus haut. L'application s'exécute sur l'ordinateur distant, les informations graphiques capturées sont stockées sur votre ordinateur de développement.  
   
- La façon dont vous configurez votre projet pour le débogage distant dépend du type d'application et du langage de programmation que vous utilisez. Pour plus d’informations sur la configuration du débogage à distance pour une application Windows Store, consultez [applications Run Windows Store sur un ordinateur distant](../debugger/run-windows-store-apps-on-a-remote-machine.md). Pour plus d’informations sur la configuration du débogage à distance pour une application de bureau Windows, consultez [Set Up Remote Debugging pour un projet Visual Studio](https://msdn.microsoft.com/library/ec332dc4-400a-498b-a0e6-c8dcf10fef8a).  
+ La façon dont vous configurez votre projet pour le débogage distant dépend du type d'application et du langage de programmation que vous utilisez. Pour plus d’informations sur la configuration du débogage distant pour une application du Windows Store, consultez [exécuter des applications du Windows Store sur un ordinateur distant](../debugger/run-windows-store-apps-on-a-remote-machine.md). Pour plus d’informations sur la configuration du débogage distant pour une application de bureau Windows, consultez [configurer le débogage distant pour un projet Visual Studio](https://msdn.microsoft.com/library/ec332dc4-400a-498b-a0e6-c8dcf10fef8a).  
   
- Vous pouvez utiliser par la suite un ordinateur ou un appareil distant pour lire des informations graphiques, indépendamment de l'endroit où les informations ont été capturées. Pour plus d'informations, voir [Procédure : modifier l’ordinateur de lecture Graphics Diagnostics](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md).  
+ Vous pouvez utiliser par la suite un ordinateur ou un appareil distant pour lire des informations graphiques, indépendamment de l'endroit où les informations ont été capturées. For more information, see [Comment : modifier l'ordinateur de lecture Graphics Diagnostics](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md).  
   
 ## <a name="capturing-graphics-information-from-the-command-line"></a>Capture d'informations graphiques à partir de la ligne de commande  
  Vous pouvez capturer des informations graphiques à partir d'une application via un outil en ligne de commande. Cet outil, DXCap.exe, peut rapidement capturer et lire des informations graphiques sans passer par Visual Studio ou une capture par programmation. En particulier, vous pouvez utiliser DXCap.exe pour l'automatisation ou dans un environnement de test. Pour plus d’informations sur DXCap.exe, consultez [Outil en ligne de commande de capture](../debugger/command-line-capture-tool.md)  
   
 ## <a name="see-also"></a>Voir aussi  
- [Procédure pas à pas : capture d’informations graphiques](../debugger/walkthrough-capturing-graphics-information.md)
+ [Procédure pas à pas : Capture d'informations graphiques](../debugger/walkthrough-capturing-graphics-information.md)

@@ -9,10 +9,10 @@ caps.latest.revision: 7
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7f02c3fe2e3d8fa67cb8a996ba14dddce7b1a3a8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657065"
 ---
 # <a name="writing-unit-tests-for-the-net-framework-with-the-microsoft-unit-test-framework-for-managed-code"></a>Écriture de tests unitaires pour le .NET Framework à l'aide de l'infrastructure de tests unitaires Microsoft pour le code managé
@@ -26,9 +26,9 @@ Dans cette section, [procédure pas à pas : création et exécution de tests u
 
  [Utilisation des classes Assert](../test/using-the-assert-classes.md)
 
- [Guide pratique pour créer un test unitaire piloté par des données](../test/how-to-create-a-data-driven-unit-test.md)
+ [Comment : créer un test unitaire piloté par les données](../test/how-to-create-a-data-driven-unit-test.md)
 
- [Tests unitaires pour méthodes génériques](../test/unit-tests-for-generic-methods.md)
+ [Tests unitaires pour les méthodes génériques](../test/unit-tests-for-generic-methods.md)
 
  [Guide pratique pour cibler une version antérieure de .NET](../test/how-to-configure-unit-tests-to-target-an-earlier-version-of-the-dotnet-framework.md)
 

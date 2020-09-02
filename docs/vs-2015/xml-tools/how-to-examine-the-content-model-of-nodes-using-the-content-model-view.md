@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ddadcb0fbd772a5638bf6023b8cf6c18fbd270d7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670857"
 ---
 # <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>Procédure : examiner le modèle de contenu de nœuds à l'aide de la vue de modèle de contenu
@@ -29,9 +29,9 @@ Cette rubrique explique comment explorer vos nœuds à l’aide de la [vue de mo
 
 3. Copiez l’exemple de code XML à partir de exemple de schéma [XML : schéma de bon de commande](../xml-tools/sample-xsd-file-purchase-order-schema.md) , puis collez-le pour remplacer le code qui a été ajouté par défaut au nouveau fichier XSD.
 
-4. Sélectionnez l’élément `purchaseOrder` dans l’Explorateur de schémas en cliquant avec le bouton droit sur l’élément `purchaseOrder` dans l’éditeur XML, puis en sélectionnant **afficher dans l’Explorateur XML**.
+4. Sélectionnez l' `purchaseOrder` élément dans l’Explorateur de schémas en cliquant avec le bouton droit sur l' `purchaseOrder` élément dans l’éditeur XML et en sélectionnant **afficher dans l’Explorateur XML**.
 
-5. Cliquez avec le bouton droit sur le `purchaseOrder` dans l’Explorateur XML et sélectionnez **afficher en vue de modèle de contenu**.
+5. Cliquez avec le bouton droit sur `purchaseOrder` dans l’Explorateur XML et sélectionnez **afficher dans la vue de modèle de contenu**.
 
      La vue de modèle de contenu affiche l'élément `purchaseOrder` sur son aire de conception.
 
@@ -43,4 +43,4 @@ Cette rubrique explique comment explorer vos nœuds à l’aide de la [vue de mo
 
 8. Cliquez sur le bouton **afficher la documentation** dans la barre d’outils XSD pour basculer documentation. Vous pouvez également cliquer avec le bouton droit sur l'aire de conception pour basculer vers la documentation.
 
-9. Rick-cliquez sur le nœud `purchaseOrder`, puis sélectionnez **générer un exemple de code XML** pour afficher le document de l’instance XML.
+9. Rick-cliquez sur le `purchaseOrder` nœud et sélectionnez **générer un exemple de code XML** pour afficher le document de l’instance XML.

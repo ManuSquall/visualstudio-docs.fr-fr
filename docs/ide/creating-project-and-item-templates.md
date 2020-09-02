@@ -11,11 +11,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 2cc932a2407aeb4951bab970a0edc6e2b2a5fcc9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79301950"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89313794"
 ---
 # <a name="project-and-item-templates"></a>Modèles de projet et d’élément
 
@@ -27,7 +27,7 @@ L’installation de Visual Studio inclut également un certain nombre de modèle
 
 Ces modèles fournissent un point de départ aux utilisateurs pour commencer à créer des projets ou à développer des projets existants. Les modèles de projet fournissent les fichiers nécessaires à un type de projet particulier, incluent des références d'assembly standard et définissent les propriétés de projet ainsi que les options du compilateur par défaut. La complexité des modèles d’éléments peut aller d’un fichier unique vide ayant une extension de fichier particulière à plusieurs fichiers de code source contenant du code stub, des fichiers d’informations sur le concepteur et des ressources incorporées.
 
-Vous pouvez utiliser des modèles installés, créer vos propres modèles, ou bien télécharger et utiliser des modèles créés par la communauté. Pour plus d’informations, voir [Comment : Créer des modèles de projet et](../ide/how-to-create-project-templates.md) comment : Créer des modèles [d’éléments](../ide/how-to-create-item-templates.md).
+Vous pouvez utiliser des modèles installés, créer vos propres modèles, ou bien télécharger et utiliser des modèles créés par la communauté. Pour plus d’informations, consultez [Comment : créer des modèles de projet](../ide/how-to-create-project-templates.md) et [Comment : créer des modèles d’élément](../ide/how-to-create-item-templates.md).
 
 ## <a name="contents-of-a-template"></a>Contenu d’un modèle
 
@@ -65,12 +65,12 @@ Quand ces fichiers sont compressés dans un fichier *.zip* et placés dans le do
 
 - Les modèles d’élément apparaissent dans la fenêtre **Ajouter un nouvel élément**.
 
-Pour plus d’informations sur les dossiers de modèles, voir [comment localiser et organiser des modèles](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+Pour plus d’informations sur les dossiers de modèles, consultez Guide pratique [pour localiser et organiser les modèles](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Comment : Créer des modèles de projet](../ide/how-to-create-project-templates.md)
-- [Comment : Créer des modèles d’objets](../ide/how-to-create-item-templates.md)
+- [Comment : créer des modèles de projet](../ide/how-to-create-project-templates.md)
+- [Comment : créer des modèles d’élément](../ide/how-to-create-item-templates.md)
 - [Balises de modèle](template-tags.md)
 - [Paramètres de modèle](../ide/template-parameters.md)
 - [Personnaliser des modèles](../ide/customizing-project-and-item-templates.md)

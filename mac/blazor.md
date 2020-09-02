@@ -11,19 +11,19 @@ no-loc:
 - Blazor WebAssembly
 ms.topic: how-to
 ms.openlocfilehash: 86a8c35d2a379d6afbbe6cf55f53346223e7c462
-ms.sourcegitcommit: 5e82a428795749c594f71300ab03a935dc1d523b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86211594"
 ---
-# <a name="create-blazor-web-apps"></a>Créer des Blazor applications Web
+# <a name="create-no-locblazor-web-apps"></a>Créer des Blazor applications Web
 
 Ce guide propose une introduction à la création de votre première Blazor application Web. Pour obtenir des conseils détaillés, consultez [Introduction à ASP.net Core Blazor ](/aspnet/core/blazor/index).
 
 ASP.NET Core Blazor prend en charge deux options d’hébergement différentes ; Blazor Serveur et Blazor WebAssembly . Visual Studio pour Mac prend en charge les deux modèles d’hébergement. Visual Studio pour Mac 8.4 + prend en charge Blazor Server et Visual Studio pour Mac 8.6 + prend en charge les deux. Pour plus d’informations sur les Blazor modèles d’hébergement, consultez [ASP.net Core les modèles d' Blazor hébergement ](https://docs.microsoft.com/aspnet/core/blazor/hosting-models?view=aspnetcore-3.1). La prise en charge des Blazor WebAssembly projets de débogage dans Visual Studio pour Mac sera mise en service après 8,6.
 
-Qu’est-ce que c’est Blazor ? Blazorest une infrastructure permettant de créer une interface utilisateur Web interactive côté client avec .NET, qui offre les avantages suivants aux développeurs Web :
+Qu’est-ce que c’est Blazor ? Blazor est une infrastructure permettant de créer une interface utilisateur Web interactive côté client avec .NET, qui offre les avantages suivants aux développeurs Web :
 
 * Écriture de code dans C# plutôt que dans JavaScript.
 * Tirez parti de l’écosystème .NET existant des bibliothèques .NET.
@@ -32,27 +32,27 @@ Qu’est-ce que c’est Blazor ? Blazorest une infrastructure permettant de cré
 * Restez productif avec Visual Studio sur PC, Linux et macOS.
 * Développez avec un ensemble commun de langages, de frameworks et d’outils stables, riches en fonctionnalités et faciles à utiliser.
 
-## <a name="creating-a-new-blazor-server-project"></a>Création d’un Blazor projet de serveur
+## <a name="creating-a-new-no-locblazor-server-project"></a>Création d’un Blazor projet de serveur
 
 1. Dans la **fenêtre démarrer**, sélectionnez **nouveau** pour créer un nouveau projet :
 
    ![Visual Studio pour Mac la fenêtre de démarrage avec la nouvelle sélection mise en surbrillance](media/blazor-new-project.png)
-1. Dans la boîte de dialogue **nouveau projet** , sélectionnez application de serveur d’applications **.net Core** > **App** > ** Blazor ** et sélectionnez **suivant**: ![ choisir un modèle pour votre boîte de dialogue Nouveau projet avec le Blazor modèle d’application serveur sélectionné](media/blazor-project-template.png)
+1. Dans la boîte de dialogue **nouveau projet** , sélectionnez application de serveur d’applications **.net Core** , > **App** > ** Blazor ** puis sélectionnez **suivant**: ![ choisir un modèle pour votre boîte de dialogue Nouveau projet avec ::: No-Loc (éblouissant) ::: modèle d’application serveur sélectionné](media/blazor-project-template.png)
 
 1. Sélectionnez .NET Core 3,1 comme Framework cible, puis sélectionnez **suivant**. 
-   ![Configuration de la Blazor boîte de dialogue nouvelle application serveur affichée avec la version cible de .NET Framework sélectionnée pour .net Core 3,1](media/blazor-select-target-framework.png)
+   ![Configurer votre nouvelle boîte de dialogue d’application serveur ::: No-Loc (éblouissant) ::: serveur affichée avec la version cible du .NET Framework 3,1](media/blazor-select-target-framework.png)
 
 1. Choisissez un nom pour votre projet et ajoutez la prise en charge de git si vous le souhaitez. Sélectionnez **Créer** pour créer le projet.
-   ![BConfigurer la Blazor boîte de dialogue nouvelle application serveur s’affiche lors de la saisie du nom du projet](media/blazor-name-project.png)
+   ![BConfiguration de la boîte de dialogue de l’application serveur qui s’affiche lors de la saisie du nom du projet.](media/blazor-name-project.png)
 
    Visual Studio pour Mac ouvre votre projet dans la fenêtre de mise en page du code.
 1. Sélectionnez **exécuter**  >  **Démarrer sans débogage** pour exécuter l’application.
 
    Visual Studio démarre [Kestrel](/aspnet/core/fundamentals/servers/kestrel), ouvre un navigateur sur `https://localhost:5001` et affiche votre Blazor application Web.
 
-   ![Blazorapplication Web dans Safari](media/blazor-new-app-in-edge.png)
+   ![::: No-Loc (éblouissant) ::: application Web dans Safari](media/blazor-new-app-in-edge.png)
 
-## <a name="blazor-support-in-visual-studio-for-mac"></a>Blazorprise en charge dans Visual Studio pour Mac
+## <a name="no-locblazor-support-in-visual-studio-for-mac"></a>Blazor prise en charge dans Visual Studio pour Mac
 
 Visual Studio pour Mac (à partir de la version 8,4) comprend de nouvelles fonctionnalités qui vous aideront à créer des Blazor projets serveur. En outre, il vous offre la prise en charge standard attendue, comme la génération, l’exécution et le débogage de Blazor projets. En Visual Studio pour Mac 8,6, la prise en charge de la création, de la génération et de l’exécution des Blazor WebAssembly projets a été ajoutée.
 
@@ -61,16 +61,16 @@ Dans la procédure pas à pas ci-dessus, nous avons vu comment le Blazor modèle
 ### <a name="editor-support-for-razor-files"></a>Prise en charge de l’éditeur pour les fichiers *. Razor*
 Visual Studio pour Mac prend en charge la modification des fichiers. Razor, majoritairement des fichiers que vous allez utiliser lors de la création d' Blazor applications. La version Windows et Mac de l’IDE partagent le même éditeur pour les fichiers. Razor. Vous verrez la prise en charge complète de la colorisation et de la saisie semi-automatique de vos fichiers. Razor, notamment les saisies semi-automatiques des composants Razor déclarés dans le projet.
 
-![Fenêtre de l’éditeur de Visual Studio pour Mac avec IntelliSense pourBlazor](media/blazor-intellisense.png)
+![Fenêtre de l’éditeur de Visual Studio pour Mac avec IntelliSense pour ::: No-Loc (éblouissant) :::](media/blazor-intellisense.png)
 
-### <a name="publishing-blazor-applications-to-azure-app-service"></a>Publication Blazor d’applications sur Azure App service
+### <a name="publishing-no-locblazor-applications-to-azure-app-service"></a>Publication Blazor d’applications sur Azure App service
 Vous pouvez également publier des Blazor applications directement sur Azure App service. Si vous ne disposez pas d’un compte Azure pour exécuter votre Blazor application sur Azure, vous pouvez toujours vous [inscrire gratuitement](https://azure.microsoft.com/free) à cet emplacement : 12 mois de services populaires gratuits, $200 crédits Azure gratuits et plus de 25 services gratuits.
 
 ![Visual Studio pour Mac avec l’expérience de publication Azure](media/blazor-azure-publish.png)
 
 ## <a name="project-anatomy"></a>Anatomie du projet
 
-Blazorles applications Web incluent quelques répertoires et fichiers par défaut. Au cours de votre mise en route, Voici les principaux que vous devez connaître :
+Blazor les applications Web incluent quelques répertoires et fichiers par défaut. Au cours de votre mise en route, Voici les principaux que vous devez connaître :
 
 ### <a name="pages-folder"></a>Dossier Pages
 

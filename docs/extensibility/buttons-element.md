@@ -1,5 +1,5 @@
 ---
-title: Élément boutons Microsoft Docs
+title: Button, élément | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 64ac5621093f30af28ade0817906b767231e4ee1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739917"
 ---
-# <a name="buttons-element"></a>Élément boutons
-Groupes [Éléments bouton,](../extensibility/button-element.md) qui représentent des commandes individuelles.
+# <a name="buttons-element"></a>Buttons, élément
+Regroupe les éléments de [bouton](../extensibility/button-element.md) , qui représentent des commandes individuelles.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -37,20 +37,20 @@ Groupes [Éléments bouton,](../extensibility/button-element.md) qui représente
 
 |Attribut|Description|
 |---------------|-----------------|
-|Condition|facultatif. Voir [Attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condition|facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Éléments enfants
 
 |Élément|Description|
 |-------------|-----------------|
-|[Élément boutons](../extensibility/buttons-element.md)|Groupes Éléments bouton.|
-|[Élément bouton](../extensibility/button-element.md)|Définit une commande avec laquelle l’utilisateur peut interagir.|
+|[Buttons, élément](../extensibility/buttons-element.md)|Éléments du bouton groupes.|
+|[Button, élément](../extensibility/button-element.md)|Définit une commande avec laquelle l’utilisateur peut interagir.|
 
 ### <a name="parent-elements"></a>Éléments parents
 
 |Élément|Description|
 |-------------|-----------------|
-|[Élément de commande](../extensibility/commands-element.md)|Représente la collection de commandes sur la barre d’outils VSPackage.|
+|[Élément Commands](../extensibility/commands-element.md)|Représente la collection de commandes dans la barre d’outils VSPackage.|
 
 ## <a name="example"></a>Exemple
 
@@ -67,5 +67,5 @@ Groupes [Éléments bouton,](../extensibility/button-element.md) qui représente
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Comment VSPackages ajoute des éléments d’interface utilisateur](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Comment les VSPackages ajoutent des éléments d’interface utilisateur](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Commandes, menus et barres d’outils](../extensibility/internals/commands-menus-and-toolbars.md)

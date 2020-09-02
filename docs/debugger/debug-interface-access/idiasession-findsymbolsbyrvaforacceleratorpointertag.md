@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cf05d60499da0317461d03d05579dce6124385f7
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85465530"
 ---
 # <a name="idiasessionfindsymbolsbyrvaforacceleratorpointertag"></a>IDiaSession::findSymbolsByRVAForAcceleratorPointerTag
@@ -34,7 +34,7 @@ HRESULT findSymbolsByRVAForAcceleratorPointerTag ( 
 #### <a name="parameters"></a>Paramètres
  `parent`
 
-dans `IDiaSymbol`Qui correspond à la fonction stub d’accélérateur dans laquelle effectuer la recherche.
+dans `IDiaSymbol` Qui correspond à la fonction stub d’accélérateur dans laquelle effectuer la recherche.
 
  `tagValue`
 
@@ -51,7 +51,7 @@ dans Adresse virtuelle relative.
 ## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Appelez cette méthode uniquement sur une `IDiaSymbol` interface qui correspond à une fonction stub d’accélérateur.
 
 ## <a name="see-also"></a>Voir aussi

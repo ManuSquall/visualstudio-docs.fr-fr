@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 2a74862d59fe402cbfd9e6bfa804d62ca4c8310b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778373"
 ---
 # <a name="profiling-and-windows-vista-security"></a>Profilage et sécurité Windows Vista
@@ -47,6 +47,6 @@ Pour consulter la liste des processus disponibles, définissez les options de vi
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Vues d’ensemble](../profiling/overviews-performance-tools.md)
-- [Vsperfcmd](../profiling/vsperfcmd.md)
-- [Comment : Joindre à un processus en cours d’exécution](/previous-versions/visualstudio/visual-studio-2010/c6wf8e4z\(v\=vs.100\))
+- [Vues d'ensemble](../profiling/overviews-performance-tools.md)
+- [VSPerfCmd](../profiling/vsperfcmd.md)
+- [Comment : attacher à un processus en cours d’exécution](/previous-versions/visualstudio/visual-studio-2010/c6wf8e4z\(v\=vs.100\))

@@ -29,10 +29,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f4b4a90cc06396f9fb6afb8a356385e966ed1b3d
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88249218"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Attacher aux processus en cours d’exécution avec le débogueur Visual Studio
@@ -189,7 +189,7 @@ Vous pouvez attacher le débogueur Visual Studio à un processus en cours d’ex
     
     ![Menu Sélectionner le conteneur de l’ancrage](../debugger/media/select-docker-container.png "Select_Docker_Container_Menu")
  
-    **B. pour déboguer un processus de conteneur d’ancrage à distance :**
+    **P. Pour déboguer un processus de conteneur d’ancrage à distance :**
     
     > [!NOTE] 
     > Il existe deux options pour la connexion à distance à un processus en cours d’exécution dans un conteneur d’ancrage. La première option, pour utiliser SSH, est idéale si vous n’avez pas installé les outils de l’outil d’ancrage sur votre ordinateur local.  Si vous avez installé les outils de l’outil d’amarrage localement et que vous disposez d’un démon de station d’accueil configuré pour accepter les demandes distantes, essayez la deuxième option, à l’aide d’un démon de station d’accueil.
@@ -321,4 +321,4 @@ Si vous souhaitez des informations plus spécifiques sur la raison pour laquelle
 
 - [Déboguer plusieurs processus](../debugger/debug-multiple-processes.md)
 - [Débogage juste-à-temps](../debugger/just-in-time-debugging-in-visual-studio.md)
-- [Débogage à distance](../debugger/remote-debugging.md)
+- [Débogage distant](../debugger/remote-debugging.md)
