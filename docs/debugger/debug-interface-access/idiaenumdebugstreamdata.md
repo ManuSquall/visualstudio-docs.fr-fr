@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b12c0c8823bbaf687e7157c272b64e50e7dd02b1
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468426"
 ---
 # <a name="idiaenumdebugstreamdata"></a>IDiaEnumDebugStreamData
@@ -42,7 +42,7 @@ Le tableau suivant présente les méthodes de `IDiaEnumDebugStreamData` .
 |[IDiaEnumDebugStreamData::Reset](../../debugger/debug-interface-access/idiaenumdebugstreamdata-reset.md)|Rétablit le début de la séquence énumérée.|
 |[IDiaEnumDebugStreamData::Clone](../../debugger/debug-interface-access/idiaenumdebugstreamdata-clone.md)|Crée un énumérateur qui contient la même séquence énumérée que l’énumérateur actuel.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Cette interface représente un flux d’enregistrements dans un flux de données de débogage. La taille et l’interprétation de chaque enregistrement dépendent du flux de données d’où provient l’enregistrement. Cette interface fournit efficacement l’accès aux octets de données brutes dans le fichier de symboles.
 
 ## <a name="notes-for-callers"></a>Notes pour les appelants

@@ -13,16 +13,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f40ed5f3070f177d1c914495f78a223364d64ae4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662675"
 ---
 # <a name="walkthrough-test-first-support-with-the-generate-from-usage-feature"></a>Procédure pas à pas : prise en charge du développement basé d’abord sur les tests avec la fonctionnalité Générer à partir de l’utilisation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Cette rubrique montre comment utiliser la fonctionnalité [Générer à partir de l’utilisation](../misc/generate-from-usage.md), qui prend en charge le développement basé d’abord sur les tests.
+Cette rubrique montre comment utiliser la fonctionnalité [Generate From Usage](../misc/generate-from-usage.md) , qui prend en charge le développement basé d’abord sur les tests.
 
  Le*développement basé d’abord sur les tests* est une approche de conception logicielle dans laquelle vous écrivez d’abord des tests unitaires basés sur des spécifications de produits, puis vous écrivez le code source nécessaire pour que les tests réussissent. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] prend en charge le développement basé d’abord sur les tests en générant de nouveaux types et membres dans le code source lorsque vous y faites référence pour la première fois dans vos cas de test, avant de les définir.
 
@@ -71,13 +71,13 @@ Cette rubrique montre comment utiliser la fonctionnalité [Générer à partir d
 
      ![Soulignement de balise active en Visual Basic](../ide/media/genclass-underlinevb.png "GenClass_UnderlineVB") Visual Basic
 
-     ![Soulignement de balise active en C&#35; ](../ide/media/genclass-underline.png "GenClass_Underline") VisualC#
+     ![Soulignement de balise active en C&#35;](../ide/media/genclass-underline.png "GenClass_Underline") Visual C #
 
 4. Placez le pointeur de la souris sur la balise active pour afficher un message d’erreur indiquant qu’aucun type nommé `Automobile` n’est encore défini. Cliquez sur la balise active ou appuyez sur Ctrl+. (Ctrl+point) pour ouvrir le menu contextuel Générer à partir de l’utilisation, comme indiqué dans les illustrations suivantes.
 
      ![Menu contextuel de balise active dans Visual Basic](../ide/media/genclass-smartvb.png "GenClass_SmartVB") Visual Basic
 
-     ![Menu contextuel de balise&#35; active en C](../ide/media/genclass-smartcs.png "GenClass_SmartCS") VisualC#
+     ![Menu contextuel de balise active en C&#35;](../ide/media/genclass-smartcs.png "GenClass_SmartCS") Visual C #
 
 5. Vous avez maintenant deux choix : Vous pouvez cliquer sur **Générer 'Class Automobile'** pour créer un fichier dans votre projet de test et le remplir avec une classe vide nommée `Automobile`. C’est un moyen rapide de créer une classe dans un nouveau fichier qui a des modificateurs d’accès par défaut dans le projet actuel. Vous pouvez également cliquer sur **Générer un nouveau type** pour ouvrir la boîte de dialogue **Générer un nouveau type** . Elle vous permet entre autres de placer la classe dans un fichier existant et d’ajouter le fichier à un autre projet.
 
@@ -106,7 +106,7 @@ Cette rubrique montre comment utiliser la fonctionnalité [Générer à partir d
 
      ![Menu contextuel générer la propriété dans Visual Basic](../ide/media/genpropertysmarttagvb.png "GenPropertySmartTagVB") Visual Basic
 
-     ![Menu contextuel générer la propriété&#35; en C](../ide/media/genpropertysmarttagcs.png "GenPropertySmartTagCS") VisualC#
+     ![Menu contextuel générer la propriété en C&#35;](../ide/media/genpropertysmarttagcs.png "GenPropertySmartTagCS") Visual C #
 
 ### <a name="to-locate-the-source-code"></a>Pour rechercher le code source
 

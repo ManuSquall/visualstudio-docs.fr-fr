@@ -11,16 +11,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8ab9c43e915f2c23dfe5f38ce61beff29949ca0e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180802"
 ---
 # <a name="idebuggenericfieldinstance"></a>IDebugGenericFieldInstance
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Représente une instance d’un champ pour un type générique du code managé.  
+Représente une instance d’un champ pour un type générique de code managé.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -34,11 +34,11 @@ IDebugGenericFieldInstance : IUnknown
 |Méthode|Description|  
 |------------|-----------------|  
 |[GetTypeArguments](../../../extensibility/debugger/reference/idebuggenericfieldinstance-gettypearguments.md)|Récupère les arguments de paramètre de type pour cette instance.|  
-|[TypeArgumentCount](../../../extensibility/debugger/reference/idebuggenericfieldinstance-typeargumentcount.md)|Retourne le nombre de type des arguments de paramètre pour cette instance.|  
+|[TypeArgumentCount](../../../extensibility/debugger/reference/idebuggenericfieldinstance-typeargumentcount.md)|Retourne le nombre d’arguments de paramètre de type pour cette instance.|  
   
 ## <a name="requirements"></a>Configuration requise  
- En-tête : SH.h  
+ En-tête : SH. h  
   
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft. VisualStudio. Debugger. Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll

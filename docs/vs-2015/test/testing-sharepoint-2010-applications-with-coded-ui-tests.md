@@ -9,10 +9,10 @@ caps.latest.revision: 32
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0ec4c0a9594202b6755500d683c426238264aec3
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586972"
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>Test des applications SharePoint 2010 avec des tests codés de l'interface utilisateur
@@ -27,7 +27,7 @@ L'ajout de tests codés de l'interface utilisateur dans une application SharePoi
 ## <a name="what-else-should-i-know-about-coded-ui-tests"></a>Que dois-je savoir d'autre sur les tests codés de l'interface utilisateur ?
  Pour en savoir plus sur les avantages de l’utilisation de tests codés de l’interface utilisateur, consultez [Utiliser UI Automation pour tester votre code](../test/use-ui-automation-to-test-your-code.md) et [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5 Automating System Tests (Test de la livraison continue avec Visual Studio 2012 - Chapitre 5 Automatisation des tests système)](https://msdn.microsoft.com/library/jj159335.aspx).
 
- **Remarques**
+ **Notes**
 
 - ![Prérequis](../test/media/prereq.png "PREREQ") Les tests codés de l’interface utilisateur pour les applications SharePoint sont pris en charge uniquement avec SharePoint 2010.
 
@@ -60,7 +60,7 @@ Mouse.DoubliClick(uiItemCell,new Point(31,14));
 uiGridKeyboardInputEdit.Text=value;
 ```
 
- Si vous enregistrez des actions dans une cellule qui n’est pas vide, l’enregistrement est un peu plus compliqué, car le temps que vous ajoutiez du texte dans une cellule, un nouveau contrôle \<div> est ajouté en tant qu’enfant de la cellule. Le nouveau contrôle \<div> contient le texte que vous venez d’entrer. L’enregistreur doit enregistrer les actions sur le nouveau contrôle \<div>, mais il ne le peut pas, car le nouveau contrôle \<div> n’existe pas tant que le test n’est pas activé. Vous devez apporter manuellement les modifications de code suivantes pour résoudre ce problème.
+ Si vous enregistrez des actions sur une cellule non vide, l’enregistrement devient un peu plus compliqué, car le moment où vous ajoutez du texte à une cellule, un nouveau \<div> contrôle est ajouté en tant qu’enfant de la cellule. Le nouveau \<div> contrôle contient le texte que vous venez d’entrer. L’enregistreur doit enregistrer les actions sur le nouveau \<div> contrôle ; Toutefois, il ne peut pas, car le nouveau \<div> contrôle n’existe pas tant que le test n’est pas entré. Vous devez apporter manuellement les modifications de code suivantes pour résoudre ce problème.
 
 1. Accédez à l'initialisation des cellules et définissez `RowIndex` et `ColumnIndex` comme des propriétés principales :
 
@@ -137,11 +137,11 @@ uiGridKeyboardInputEdit.Text=value;
 
  [Content Index for Coded UI Test](https://blogs.msdn.microsoft.com/mathew_aniyan/2013/02/18/content-index-for-coded-ui-test/)
 
-### <a name="guidance"></a>Assistance
+### <a name="guidance"></a>Guidance
  [Test de la livraison continue avec Visual Studio 2012 – chapitre 5 automatisation des tests système](https://msdn.microsoft.com/library/jj159335.aspx)
 
 ### <a name="forum"></a>Forum
  [Blog Visual Studio ALM + Team Foundation Server](https://devblogs.microsoft.com/devops/welcome-to-the-visual-studio-alm-team-foundation-server-blog/)
 
-## <a name="see-also"></a> Voir aussi
+## <a name="see-also"></a>Voir aussi
  [Utiliser UI Automation pour tester votre code](../test/use-ui-automation-to-test-your-code.md) [performances Web et test de charge des applications sharepoint 2010 et 2013](https://msdn.microsoft.com/library/20c2e469-0e4e-4296-a739-c0e8fff36e54) [créer des solutions SharePoint](https://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631) [vérification et débogage de code SharePoint](https://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c) [création et débogage de solutions SharePoint](https://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae) [profilage des performances des applications SharePoint](https://msdn.microsoft.com/library/61ae02e7-3f37-4230-bae1-54a498c2fae8)

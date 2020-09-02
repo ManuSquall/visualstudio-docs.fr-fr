@@ -1,5 +1,5 @@
 ---
-title: Étendre les diagrammes de couches Microsoft Docs
+title: Étendre des diagrammes de couche | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -13,11 +13,11 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bfcec64f9401fdbf79e67bee5fe8430452632fbc
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79302335"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315276"
 ---
 # <a name="extend-layer-diagrams"></a>Extend layer diagrams
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,16 +34,16 @@ Vous pouvez écrire du code pour créer et mettre à jour des diagrammes de couc
 
 - [Valider du code avec des diagrammes de couche](../modeling/validate-code-with-layer-diagrams.md)
 
-## <a name="requirements"></a><a name="prereqs"></a>Exigences
+## <a name="requirements"></a><a name="prereqs"></a> Spécifications
  Vous devez avoir installé les éléments suivants sur l’ordinateur où vous voulez développer vos extensions de couche :
 
 - Visual Studio
 
 - [SDK Visual Studio](../extensibility/visual-studio-sdk.md)
 
-- [Modélisation SDK pour Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=48148)
+- [SDK Modeling pour Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=48148)
 
-  Une version appropriée de Visual Studio doit être installée sur l’ordinateur où vous voulez exécuter vos extensions de couche. Pour plus d’informations, voir [Déployez une extension de modèle de couche.](../modeling/deploy-a-layer-model-extension.md)
+  Une version appropriée de Visual Studio doit être installée sur l’ordinateur où vous voulez exécuter vos extensions de couche. Pour plus d’informations, consultez [déployer une extension de modèle de couche](../modeling/deploy-a-layer-model-extension.md).
 
   Pour connaître les versions de Visual Studio qui prennent en charge les diagrammes de couche, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -60,5 +60,5 @@ Vous pouvez écrire du code pour créer et mettre à jour des diagrammes de couc
 
  [Dépanner les extensions des diagrammes de couche](../modeling/troubleshoot-extensions-for-layer-diagrams.md)
 
-## <a name="see-also"></a> Voir aussi
- [Définir et installer une extension de modélisation](../modeling/define-and-install-a-modeling-extension.md) [Diagrammes de couche: Diagrammes](../modeling/layer-diagrams-reference.md) de couche de [référence: Lignes directrices](../modeling/layer-diagrams-guidelines.md) Créer des [diagrammes de couche à partir de votre code de](../modeling/create-layer-diagrams-from-your-code.md) validation de code avec des [diagrammes de couche](../modeling/validate-code-with-layer-diagrams.md) Générer des fichiers à partir [d’un modèle UML](../modeling/generate-files-from-a-uml-model.md) [Ouvrir un modèle UML en utilisant l’API Studio visuel](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)
+## <a name="see-also"></a>Voir aussi
+ [Définir et installer une extension de modélisation](../modeling/define-and-install-a-modeling-extension.md) [diagrammes de couche : références](../modeling/layer-diagrams-reference.md) [diagrammes de couche : instructions](../modeling/layer-diagrams-guidelines.md) [créer des diagrammes de couche à partir de votre code valider du](../modeling/create-layer-diagrams-from-your-code.md) [Code avec des diagrammes de couche](../modeling/validate-code-with-layer-diagrams.md) [générer des fichiers à partir d’un modèle UML](../modeling/generate-files-from-a-uml-model.md) [ouvrir un modèle UML à l’aide de l’API Visual Studio](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)

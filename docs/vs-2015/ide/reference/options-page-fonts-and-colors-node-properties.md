@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 23aa4eff3339ad3cd3ab7d4106745dc6fa83df34
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662428"
 ---
 # <a name="options-page-fonts-and-colors-node-properties"></a>Page Options, Polices et couleurs, propriétés de nœud
@@ -29,15 +29,15 @@ Ce document décrit les propriétés de police et de couleur d’une fenêtre Ou
 ## <a name="text-editor-or-printer-or-dialogs-and-tool-windows"></a>Éditeur de texte ou imprimante ou boîtes de dialogue et fenêtres Outil
  `DTE.Properties("FontsAndColors", "TextEditor")`
 
- -ou-
+ - ou -
 
  `DTE.Properties("FontsAndColors", "Printer")`
 
- -ou-
+ - ou -
 
  `DTE.Properties("FontsAndColors", "Dialogs and Tool Windows")`
 
-|Nom de l'élément de propriété|Value|Description|
+|Nom de l'élément de propriété|Valeur|Description|
 |------------------------|-----------|-----------------|
 |FontFamily|Get/Set (chaîne)|Nom de la police à utiliser, tel que « Courier New ».|
 |FontCharacterSet|Get/Set (<xref:EnvDTE.vsFontCharSet>)|Valeur <xref:EnvDTE.vsFontCharSet> indiquant le type de jeu de caractères à utiliser, tel que l’hébreu ou le russe.|

@@ -1,5 +1,5 @@
 ---
-title: IDebugEngineProgram2::WatchForThreadStep | Microsoft Docs
+title: 'IDebugEngineProgram2 :: WatchForThreadStep | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 59489af368c2e95a2d3cc93edbd6f7ab02a1c156
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195654"
 ---
 # <a name="idebugengineprogram2watchforthreadstep"></a>IDebugEngineProgram2::WatchForThreadStep
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Surveille l’exécution (ou cesse de surveiller l’exécution) se produise sur le thread donné.  
+Surveille l’exécution (ou arrête la surveillance de l’exécution) sur le thread donné.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -46,24 +46,24 @@ int WatchForThreadStep( 
   
 #### <a name="parameters"></a>Paramètres  
  `pOriginatingProgram`  
- [in] Un [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objet représentant le programme en cours en escalier.  
+ dans Objet [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) représentant le programme en cours d’exécution en escalier.  
   
  `dwTid`  
- [in] Spécifie l’identificateur du thread à surveiller.  
+ dans Spécifie l’identificateur du thread à surveiller.  
   
  `fWatch`  
- [in] Valeur différente de zéro (`TRUE`) moyen de visualiser la présentation pour l’exécution sur le thread identifié par `dwTid`; sinon, zéro (`FALSE`) signifie arrêter d’analyser pour l’exécution sur `dwTid`.  
+ dans Une valeur différente de zéro ( `TRUE` ) signifie que commence à surveiller l’exécution sur le thread identifié par `dwTid` ; sinon, zéro ( `FALSE` ) signifie arrêter la surveillance de l’exécution sur `dwTid` .  
   
  `dwFrame`  
- [in] Spécifie un index de frame qui contrôle le type d’étape. Lorsqu’il s’agit valeur est zéro (0), le type d’étape est « détaillé » et le programme doit s’arrêter dès que le thread identifié par `dwTid` s’exécute. Lorsque `dwFrame` est différente de zéro, le type d’étape est « pas à pas principal » et le programme doit s’arrêter uniquement si le thread identifié par `dwTid` est en cours d’exécution dans un frame dont l’index est égale ou supérieure sur la pile à `dwFrame`.  
+ dans Spécifie un index de frame qui contrôle le type d’étape. Quand la valeur est égale à zéro (0), le type d’étape est « pas à pas détaillé » et le programme doit s’arrêter chaque fois que le thread identifié par `dwTid` s’exécute. Lorsque `dwFrame` est différent de zéro, le type d’étape est « pas à pas principal » et le programme doit s’arrêter uniquement si le thread identifié par `dwTid` s’exécute dans un frame dont l’index est supérieur ou égal à la pile `dwFrame` .  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="remarks"></a>Notes  
- Lorsque le Gestionnaire de session de débogage (SDM) étapes un programme, identifié par le `pOriginatingProgram` paramètre, il avertit tous les autres programmes attachés en appelant cette méthode.  
+ Quand le gestionnaire de débogage de session (SDM) suit un programme, identifié par le `pOriginatingProgram` paramètre, il notifie tous les autres programmes attachés en appelant cette méthode.  
   
- Cette méthode s’applique uniquement à l’exécution pas à pas du même thread.  
+ Cette méthode s’applique uniquement au pas à pas du même thread.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)   

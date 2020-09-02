@@ -1,5 +1,5 @@
 ---
-title: Impossible de créer une association &lt;association nom &gt;-propriété listé deux fois | Microsoft Docs
+title: Impossible de créer une &lt; Association Association name &gt; -propriété listée deux fois | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9e4a1d20b5c341c1643836ae30e5de6243f35454
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662562"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-listed-twice"></a>Impossible de créer une association &lt;nom de l’association&gt;. La propriété est listée deux fois
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Impossible de créer une association \<nom de l’association>. La même propriété est listée plusieurs fois : \<nom de la propriété>.
+Impossible de créer une association \<association name> . La même propriété est listée plusieurs fois : \<property name> .
 
  Les associations sont définies par les **Propriétés d’association** sélectionnées dans la boîte de dialogue **Éditeur d’associations**. Les propriétés ne peuvent être répertoriées qu'une seule fois pour chaque classe dans l'association.
 

@@ -16,16 +16,16 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: cf922799301aef67ee70c480dd9e0823382cbd47
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543765"
 ---
 # <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;AddIn &gt; , élément (développement Office dans Visual Studio)
   L’élément **AddIn** de l' `vstav3` espace de noms contient des informations qui sont spécifiques à Microsoft Office compléments VSTO et aux personnalisations au niveau du document développées avec Visual Studio.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Syntaxe
 
 ```xml
 <addIn>
@@ -59,7 +59,7 @@ ms.locfileid: "85543765"
 ### <a name="entrypoints"></a>entryPoints
  Obligatoire. L’élément **entryPoints** est décrit dans [&#60;entryPoints&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).
 
-### <a name="update"></a>mise à jour
+### <a name="update"></a>update
  Obligatoire. L’élément **Update** est décrit dans [&#60;élément Update&#62; &#40;développement Office dans Visual Studio&#41;](../vsto/update-element-office-development-in-visual-studio.md).
 
 ### <a name="postactions"></a>postActions

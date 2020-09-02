@@ -9,39 +9,39 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 40781a5249d9b69df5f41f863f3d36ac6a119645
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75592488"
 ---
 # <a name="schema-cache"></a>Cache de schéma
 
 L’éditeur XML fournit un cache de schéma situé dans le répertoire *%VSInstallDir%\xml\Schemas* . Le cache de schéma est global pour tous les utilisateurs sur votre ordinateur et comprend des schémas XML standard qui sont utilisés pour IntelliSense et la validation de document XML.
 
-L’éditeur XML peut également trouver des schémas situés dans la solution, des schémas spécifiés dans le champ **schémas** de la fenêtre **Propriétés** du document et des schémas identifiés par les attributs `xsi:schemaLocation` et `xsi:noNamespaceSchemaLocation`.
+L’éditeur XML peut également trouver des schémas situés dans la solution, des schémas spécifiés dans le champ **schémas** de la fenêtre **Propriétés** du document et des schémas identifiés par les `xsi:schemaLocation` `xsi:noNamespaceSchemaLocation` attributs et.
 
 Le tableau suivant décrit les schémas installés avec l’éditeur XML.
 
-| NomFichier | Description |
+| Nom de fichier | Description |
 |-| - |
 | *catalog.xsd* | Schéma pour des fichiers catalogue de schémas de l'éditeur XML. Pour des informations sur les catalogues de schémas, voir ci-dessous. |
-| *DotNetConfig.xsd* | Schéma pour les fichiers Web. config, `http://schemas.microsoft.com/.NETConfiguration/v2.0`. |
-| *msbuild.xsd* | Schéma pour les fichiers Make de MSBuild, `http://schemas.microsoft.com/developer/msbuild/2003`. |
+| *DotNetConfig.xsd* | Schéma pour les fichiers Web.Config, `http://schemas.microsoft.com/.NETConfiguration/v2.0` . |
+| *msbuild.xsd* | Schéma pour les fichiers Make de MSBuild, `http://schemas.microsoft.com/developer/msbuild/2003` . |
 | *msdata.xsd* | Schéma pour les annotations XSD ajoutées par la classe <xref:System.Data.DataSet>, « urn:schemas-microsoft-com:xml-msdata ». |
 | *msxsl.xsd* | Schéma pour les extensions de bloc de script Microsoft XSLT, urn:schemas-microsoft-com:xslt. |
-| *SnippetFormat.xsd* | Schéma pour les fichiers XML d'extrait de code. Pour obtenir des exemples, consultez *% VSInstallDirVC#% \ \Expansions*. |
-| *SOAP 1.1. xsd* | Schéma pour le protocole SOAP (Simple Object Access Protocol) 1,1, `http://schemas.xmlsoap.org/soap/envelope/`. |
-| *SOAP 1.2. xsd* | Schéma pour Simple Object Access Protocol 1.2. |
-| *SiteMapSchema.xsd* | Schéma pour le fichier XML Sitemap ASP.NET, `http://schemas.microsoft.com/AspNet/SiteMap-File-1.0`. |
-| *wsdl.xsd* | Schéma pour le langage de description de service Web, `http://schemas.xmlsoap.org/wsdl/`. |
-| *xenc.xsd* | Schéma pour le chiffrement XML, `http://www.w3.org/2000/09/xmldsig#`. |
-| *xhtml.xsd* | Schéma pour les `http://www.w3.org/1999/xhtml`XHTML. |
-| *XLink. xsd* | Schéma pour XLink 1.0, `http://www.w3.org/1999/xlink`. |
-| *xml.xsd* | Schéma décrivant les attributs XML : Space et XML : lang, `http://www.w3.org/XML/1998/namespace`. |
-| *xmlsig.xsd* | Schéma pour les signatures numériques XML, `http://www.w3.org/2000/09/xmldsig#`. |
-| *xsdschema. xsd* | Schéma décrivant le XSD lui-même, `http://www.w3.org/2001/XMLSchema`. |
-| *xslt.xsd* | Schéma pour les transformations XML, `http://www.w3.org/1999/XSL/Transform`. |
+| *SnippetFormat.xsd* | Schéma pour les fichiers XML d'extrait de code. Pour obtenir des exemples, consultez *%VSInstallDir%\VC # \Expansions*. |
+| *Soap1.1.xsd* | Schéma pour le protocole SOAP (Simple Object Access Protocol) 1,1, `http://schemas.xmlsoap.org/soap/envelope/` . |
+| *Soap1.2.xsd* | Schéma pour Simple Object Access Protocol 1.2. |
+| *SiteMapSchema.xsd* | Schéma pour le fichier XML Sitemap ASP.NET, `http://schemas.microsoft.com/AspNet/SiteMap-File-1.0` . |
+| *wsdl.xsd* | Schéma pour le langage de description de service Web, `http://schemas.xmlsoap.org/wsdl/` . |
+| *xenc.xsd* | Schéma pour le chiffrement XML, `http://www.w3.org/2000/09/xmldsig#` . |
+| *xhtml.xsd* | Schéma pour XHTML `http://www.w3.org/1999/xhtml` . |
+| *xlink.xsd* | Schéma pour XLink 1.0, `http://www.w3.org/1999/xlink` . |
+| *xml.xsd* | Schéma décrivant les attributs XML : Space et XML : lang, `http://www.w3.org/XML/1998/namespace` . |
+| *xmlsig.xsd* | Schéma pour les signatures numériques XML, `http://www.w3.org/2000/09/xmldsig#` . |
+| *xsdschema.xsd* | Schéma décrivant XSD lui-même, `http://www.w3.org/2001/XMLSchema` . |
+| *xslt.xsd* | Schéma pour les transformations XML, `http://www.w3.org/1999/XSL/Transform` . |
 
 ## <a name="update-schemas-in-the-cache"></a>Mettre à jour les schémas dans le cache
 
@@ -50,7 +50,7 @@ L'éditeur charge le répertoire de cache de schéma lors du chargement du packa
 > [!NOTE]
 > Étant donné que le répertoire de cache de schéma est global sur votre ordinateur, n'y ajoutez que des schémas standard et utiles pour tous les projets Visual Studio susceptibles d'être créés sur votre ordinateur.
 
-L'éditeur XML prend également en charge un nombre quelconque de fichiers catalogue de schémas dans le répertoire de cache de schéma. Les catalogues de schémas peuvent pointer vers d'autres emplacements de schémas que l'éditeur doit toujours reconnaître. Le fichier *Catalog. xsd* définit le format du fichier catalogue et est inclus dans le répertoire de cache de schéma. Le fichier *Catalog. xml* est le catalogue par défaut et il contient des liens vers d’autres schémas dans *% VSInstallDir%* . Voici un échantillon du fichier *Catalog. xml* :
+L'éditeur XML prend également en charge un nombre quelconque de fichiers catalogue de schémas dans le répertoire de cache de schéma. Les catalogues de schémas peuvent pointer vers d'autres emplacements de schémas que l'éditeur doit toujours reconnaître. Le fichier *Catalog. xsd* définit le format du fichier catalogue et est inclus dans le répertoire de cache de schéma. Le fichier *catalog.xml* est le catalogue par défaut et il contient des liens vers d’autres schémas dans *% VSInstallDir%*. Voici un échantillon du fichier *catalog.xml* :
 
 ```xml
 <SchemaCatalog xmlns="http://schemas.microsoft.com/xsd/catalog">
@@ -64,11 +64,11 @@ L’attribut `href` peut être n’importe quel chemin de fichier ou URL http po
 
 - VSInstallDir
 
-- System
+- Système
 
 - ProgramFiles
 
-- Programs
+- Programmes
 
 - CommonProgramFiles
 
@@ -76,7 +76,7 @@ L’attribut `href` peut être n’importe quel chemin de fichier ou URL http po
 
 - CommonApplicationData
 
-- LCID.
+- LCID
 
 Le document de catalogue peut contenir un élément `Catalog` pointant vers d'autres catalogues. Vous pouvez utiliser l'élément `Catalog` pour pointer vers un catalogue central partagé par votre équipe ou votre entreprise ou vers un catalogue en ligne partagé avec vos partenaires commerciaux. L’attribut `href` est le chemin de fichier ou l’URL http des autres catalogues. Voici un exemple d'élément `Catalog` :
 
@@ -84,7 +84,7 @@ Le document de catalogue peut contenir un élément `Catalog` pointant vers d'au
 <Catalog href="file://c:/xcbl/xcblCatalog.xml"/>
 ```
 
-Le catalogue peut également contrôler la façon dont les schémas sont associés aux documents XML à l'aide de l'élément spécial `Association`. Cet élément associe des schémas qui n’ont pas d’espace de noms cible à une extension de fichier particulière, ce qui peut être utile car l’éditeur XML n’effectue aucune association automatique de schémas qui n’ont pas d’attribut `targetNamespace`. Dans l'exemple suivant, l'élément `Association` associe le schéma dotNetConfig à tous les fichiers dont l'extension est « config » :
+Le catalogue peut également contrôler la façon dont les schémas sont associés aux documents XML à l'aide de l'élément spécial `Association`. Cet élément associe des schémas qui n’ont pas d’espace de noms cible avec une extension de fichier particulière, ce qui peut être utile car l’éditeur XML n’effectue aucune association automatique de schémas qui n’ont pas d' `targetNamespace` attribut. Dans l'exemple suivant, l'élément `Association` associe le schéma dotNetConfig à tous les fichiers dont l'extension est « config » :
 
 ```xml
 <Association extension="config" schema="%VSInstallDir%/xml/schemas/dotNetConfig.xsd"/>
@@ -92,7 +92,7 @@ Le catalogue peut également contrôler la façon dont les schémas sont associ�
 
 ## <a name="localized-schemas"></a>Schémas localisés
 
-Dans de nombreux cas, le fichier *Catalog. xml* ne contient pas d’entrées pour les schémas localisés. Vous pouvez ajouter des entrées supplémentaires au fichier *Catalog. xml* qui pointent vers le répertoire de schéma localisé.
+Dans de nombreux cas, le fichier *catalog.xml* ne contient pas d’entrées pour les schémas localisés. Vous pouvez ajouter des entrées supplémentaires au fichier *catalog.xml* qui pointent vers le répertoire de schéma localisé.
 
 Dans l'exemple suivant, un nouvel élément `Schema` a été créé et il utilise la variable %LCID% pour pointer vers le schéma localisé.
 
@@ -120,11 +120,11 @@ Vous pouvez personnaliser l’emplacement du cache de schéma à l’aide de la 
 
 ### <a name="to-add-another-directory-of-common-schemas"></a>Pour ajouter un autre répertoire de schémas courants
 
-1. Modifiez le fichier *Catalog. xml* dans le répertoire de cache de schéma de l’éditeur XML.
+1. Modifiez le fichier *catalog.xml* dans le répertoire de cache de schéma de l’éditeur XML.
 
 2. Ajoutez-y un nouvel élément `<Catalog href="..."/>` pointant vers le répertoire contenant les schémas supplémentaires.
 
-3. Enregistrez les modifications apportées.
+3. Enregistrez vos modifications.
 
    Le catalogue est automatiquement rechargé.
 

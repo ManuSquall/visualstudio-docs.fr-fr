@@ -9,10 +9,10 @@ caps.latest.revision: 43
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 900a241549cd499437ee25d8f57ed66c0c958a17
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586904"
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>Procédures pas à pas : création, édition et gestion d'un test codé de l'interface utilisateur
@@ -49,11 +49,11 @@ Dans cette procédure pas à pas, vous allez créer une simple application WPF (
 
 9. Sous la section **Tous les contrôles WPF**, faites glisser un contrôle **Button**, **CheckBox** et **ProgressBar** sur la fenêtre MainWindow de l’aire de conception.
 
-10. Sélectionnez le contrôle Button. Dans la fenêtre Propriétés, changez la valeur de la propriété **Nom** de \<Sans nom> en button1. Changez ensuite la valeur de la propriété **Contenu** de Button en Start.
+10. Sélectionnez le contrôle Button. Dans la Fenêtre Propriétés, remplacez la valeur de la propriété **Name** par \<No Name> Button1. Changez ensuite la valeur de la propriété **Contenu** de Button en Start.
 
-11. Sélectionnez le contrôle ProgressBar. Dans la fenêtre Propriétés, changez la valeur de la propriété **Nom** de \<Sans nom> en progressBar1. Changez ensuite la valeur de la propriété **Maximum** de **100** en **10000**.
+11. Sélectionnez le contrôle ProgressBar. Dans la Fenêtre Propriétés, remplacez la valeur de la propriété **Name** par \<No Name> ProgressBar1. Changez ensuite la valeur de la propriété **Maximum** de **100** en **10000**.
 
-12. Sélectionnez le contrôle Checkbox. Dans la fenêtre Propriétés, changez la valeur de la propriété **Nom** de \<Sans nom> en checkBox1 et effacez la valeur de la propriété **IsEnabled**.
+12. Sélectionnez le contrôle Checkbox. Dans la Fenêtre Propriétés, remplacez la valeur de la propriété **nom** par \<No Name> CheckBox1 et effacez la propriété **IsEnabled** .
 
      ![Application WPF simple](../test/media/codedui-wpfapp.png "CodedUI_WPFApp")
 
@@ -118,7 +118,7 @@ Dans cette procédure pas à pas, vous allez créer une simple application WPF (
 
 ### <a name="create-and-run-a-coded-ui-test-for-simplewpfapp"></a>Créer et exécuter un test codé de l'interface utilisateur pour SimpleWPFApp
 
-1. Recherchez l'application SimpleWPFApp que vous avez créée précédemment. Par défaut, l’application se trouve dans C:\Users\\<nom_utilisateur\>\Documents\Visual Studio \<version>\Projects\SimpleWPFApp\SimpleWPFApp\bin\Debug\SimpleWPFApp.exe
+1. Recherchez l'application SimpleWPFApp que vous avez créée précédemment. Par défaut, l’application se trouve à l’emplacement C:\Users \\<nom d’utilisateur \> \Documents\Visual Studio \<version>\Projects\SimpleWPFApp\SimpleWPFApp\bin\Debug\SimpleWPFApp.exe
 
 2. Créez un raccourci sur le bureau à l'application SimpleWPFApp. Cliquez avec le bouton droit sur SimpleWPFApp.exe et choisissez **Copier**. Sur votre Bureau, cliquez avec le bouton droit et choisissez **Coller le raccourci**.
 
@@ -368,7 +368,7 @@ Dans cette procédure pas à pas, vous allez créer une simple application WPF (
 
 ## <a name="external-resources"></a>Ressources externes
 
-### <a name="videos"></a>Videos
+### <a name="videos"></a>Vidéos
  ![lien vers](../data-tools/media/playvideo.gif "PlayVideo") [les tests codés de l’interface utilisateur-DeepDive-Episode1-gettingstarted](https://skydrive.live.com/?cid=2db0e1efe1c1d3b8&id=2DB0E1EFE1C1D3B8%21118)
 
  ![lien vers](../data-tools/media/playvideo.gif "PlayVideo") [les tests codés de l’interface utilisateur-DeepDive-Episode2-maintenanceetdébogage](https://skydrive.live.com/?cid=2db0e1efe1c1d3b8&id=2DB0E1EFE1C1D3B8%21116)
@@ -386,5 +386,5 @@ Dans cette procédure pas à pas, vous allez créer une simple application WPF (
 ### <a name="forum"></a>Forum
  [Tests d’automation de l’interface utilisateur de Visual Studio (inclut CodedUI)](https://social.msdn.microsoft.com/Forums/en-US/vsautotest)
 
-## <a name="see-also"></a> Voir aussi
+## <a name="see-also"></a>Voir aussi
  [Utiliser UI Automation pour tester votre Code](../test/use-ui-automation-to-test-your-code.md) [prise en main avec les](https://msdn.microsoft.com/18e61d03-b96a-4058-a166-8ec6b3f6116b) [plateformes et configurations prises en charge par le Concepteur WPF pour les tests codés de l’interface utilisateur et les enregistrements des actions](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [modification des tests codés de l’interface utilisateur à l’aide de l’éditeur de test codé](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)

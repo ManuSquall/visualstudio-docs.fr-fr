@@ -1,5 +1,5 @@
 ---
-title: IDebugDisassemblyStream2::GetDocument | Microsoft Docs
+title: 'IDebugDisassemblyStream2 :: GetDocument | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d71db41646fece07b79389c35cdfaa7402c31438
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196199"
 ---
 # <a name="idebugdisassemblystream2getdocument"></a>IDebugDisassemblyStream2::GetDocument
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Obtient le document source associé au flux d’entrée.  
+Obtient le document source associé à ce flux d’entrée.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -42,16 +42,16 @@ int GetDocument( 
   
 #### <a name="parameters"></a>Paramètres  
  `bstrDocumentUrl`  
- [in] L’URL du document.  
+ dans URL du document.  
   
  `ppDocument`  
- [out] Retourne un [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) objet qui représente le document.  
+ à Retourne un objet [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) qui représente le document.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode est implémentée par les moteurs de débogage qui contient des documents de texte qui ne sont pas stockées dans un fichier réel.  
+ Cette méthode est implémentée par les moteurs de débogage qui ont des documents texte qui ne sont pas stockés dans un fichier réel.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)   

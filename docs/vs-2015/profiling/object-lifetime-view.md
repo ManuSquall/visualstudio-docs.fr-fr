@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ef216c1220cbfda37da579d3ea2dfdd32837ab75
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195565"
 ---
 # <a name="object-lifetime-view"></a>Mode Durée de vie de l'objet
@@ -37,18 +37,18 @@ La vue Durée de vie des objets est disponible quand l’option **Collecter auss
   
 |Colonne|Description|  
 |------------|-----------------|  
-|**Nom de classe**|Nom de classe du type alloué.|  
-|**ID du processus**|ID de processus de l’exécution du profilage.|  
+|**Nom de la classe**|Nom de classe du type alloué.|  
+|**ID de processus**|ID de processus de l’exécution du profilage.|  
 |**Nom du processus**|Nom du processus.|  
 |**Nom du module**|Nom du module qui contient la fonction.|  
-|**Chemin de module**|Chemin d’accès du module qui contient la fonction.|  
+|**Chemin du module**|Chemin d’accès du module qui contient la fonction.|  
   
 ## <a name="instance-data"></a>Données d’instance  
  Les données d’instance indiquent le nombre d’objets du type qui ont été créés lors de l’exécution du profilage, et la génération dans laquelle les objets ont été désalloués par le récupérateur de mémoire.  
   
 |Colonne|Description|  
 |------------|-----------------|  
-|**Instances**|Nombre d’allocations d’objets de ce type.|  
+|**Fois**|Nombre d’allocations d’objets de ce type.|  
 |**% du nombre total d’instances**|Pourcentage du nombre total d’allocations qui ont été effectuées lors de l’exécution du profilage.|  
 |**Instances de la génération 0 collectées**|Nombre d’instances du type qui ont été désallouées dans la génération 0 de l’algorithme de garbage collection.|  
 |**Instances de la génération 1 collectées**|Nombre d’instances du type qui ont été désallouées dans la génération 1 de l’algorithme de garbage collection.|  

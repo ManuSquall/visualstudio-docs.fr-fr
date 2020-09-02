@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 3d208c59f08ddeb5a322d174a2c6b56dd901c2c4
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348117"
 ---
 # <a name="debug-uwp-apps-on-remote-machines-from-visual-studio"></a>Déboguer des applications UWP sur des ordinateurs distants à partir de Visual Studio
@@ -35,15 +35,15 @@ Pour déboguer une application UWP sur un appareil distant à partir de Visual S
   - Certaines versions de Windows 10 démarrent et exécutent automatiquement les outils de contrôle à distance. Dans le cas contraire, [Installez et exécutez le outils de contrôle à distance de Visual Studio](#BKMK_download).
   - Les appareils Windows Mobile 10 ne nécessitent pas ou ne prennent pas en charge les outils de contrôle à distance.
 
-## <a name="configure-a-visual-studio-project-for-remote-debugging"></a><a name="BKMK_ConnectVS"></a>Configurer un projet Visual Studio pour le débogage distant
-<a name="BKMK_DirectConnect"></a>Vous utilisez les **Propriétés** du projet pour spécifier l’appareil distant auquel se connecter. Les paramètres varient en fonction du langage de programmation.
+## <a name="configure-a-visual-studio-project-for-remote-debugging"></a><a name="BKMK_ConnectVS"></a> Configurer un projet Visual Studio pour le débogage distant
+<a name="BKMK_DirectConnect"></a> Vous utilisez les **Propriétés** du projet pour spécifier l’appareil distant auquel se connecter. Les paramètres varient en fonction du langage de programmation.
 
 > [!CAUTION]
 > Par défaut, la page de propriétés définit le **type d’authentification** **universel (protocole non chiffré)** pour les connexions à distance Windows 10. Vous devrez peut-être définir **aucune authentification** pour vous connecter au débogueur distant. Le **protocole universel (protocole non chiffré)** et **aucun protocole d’authentification** n’ont aucune sécurité réseau. les données transmises entre le développement et les ordinateurs distants sont donc vulnérables. Choisissez ces types d’authentification uniquement pour les réseaux approuvés dont vous êtes sûr qu’ils ne sont pas exposés à un trafic malveillant ou hostile.
 >
 >Si vous choisissez l' **authentification Windows** pour le **type d’authentification**, vous devrez vous connecter à l’ordinateur distant lors du débogage. Le débogueur distant doit également s’exécuter en mode **d’authentification Windows** , avec le même compte d’utilisateur que sur l’ordinateur Visual Studio.
 
-### <a name="configure-a-c-or-visual-basic-project-for-remote-debugging"></a><a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a>Configurer un projet C# ou Visual Basic pour le débogage distant
+### <a name="configure-a-c-or-visual-basic-project-for-remote-debugging"></a><a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a> Configurer un projet C# ou Visual Basic pour le débogage distant
 
 1. Sélectionnez le projet C# ou Visual Basic dans Visual Studio **Explorateur de solutions** puis sélectionnez l’icône **Propriétés** , appuyez sur **ALT** + **entrée**, ou cliquez avec le bouton droit et choisissez **Propriétés**.
 
@@ -55,7 +55,7 @@ Pour déboguer une application UWP sur un appareil distant à partir de Visual S
 
     ![Propriétés du projet managé pour le débogage distant](../debugger/media/vsrun_managed_projprop_remote.png "Propriétés du projet de débogage managé")
 
-### <a name="configure-a-c-project-for-remote-debugging"></a><a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a>Configurer un projet C++ pour le débogage distant
+### <a name="configure-a-c-project-for-remote-debugging"></a><a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> Configurer un projet C++ pour le débogage distant
 
 1. Sélectionnez le projet C++ dans Visual Studio **Explorateur de solutions** puis sélectionnez l’icône **Propriétés** , appuyez sur **ALT** + **entrée**, ou cliquez avec le bouton droit et choisissez **Propriétés**.
 
@@ -67,7 +67,7 @@ Pour déboguer une application UWP sur un appareil distant à partir de Visual S
 
     ![Propriétés du projet C++ pour le débogage distant](../debugger/media/vsrun_cpp_projprop_remote.png "Propriétés du projet de débogage C++")
 
-### <a name="use-the-remote-connections-dialog-box"></a><a name="remote-connections"></a>Utiliser la boîte de dialogue connexions à distance
+### <a name="use-the-remote-connections-dialog-box"></a><a name="remote-connections"></a> Utiliser la boîte de dialogue connexions à distance
 
 Dans la boîte de dialogue **connexions à distance** , vous pouvez rechercher un nom d’ordinateur distant ou une adresse IP spécifique, ou détecter automatiquement les connexions en sélectionnant l’icône d’actualisation des flèches arrondies. La boîte de dialogue recherche uniquement les périphériques sur le sous-réseau local qui exécutent actuellement le débogueur distant. Tous les appareils ne peuvent pas être détectés dans la boîte de dialogue **connexions à distance** .
 
@@ -88,11 +88,11 @@ Pour que Visual Studio débogue des applications sur un ordinateur distant, l’
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
-### <a name="configure-the-remote-tools"></a><a name="BKMK_setup"></a>Configurer les outils de contrôle à distance
+### <a name="configure-the-remote-tools"></a><a name="BKMK_setup"></a> Configurer les outils de contrôle à distance
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
-## <a name="debug-uwp-apps-remotely"></a><a name="BKMK_RunRemoteDebug"></a>Déboguer des applications UWP à distance
+## <a name="debug-uwp-apps-remotely"></a><a name="BKMK_RunRemoteDebug"></a> Déboguer des applications UWP à distance
 
 Le débogage distant fonctionne de la même façon que le débogage local.
 

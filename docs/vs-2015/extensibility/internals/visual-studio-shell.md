@@ -12,71 +12,71 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2ec79aab58e167ff2c935317897ba10a042a2e5a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180368"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] shell est l’agent principal d’intégration dans [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. L’interpréteur de commandes fournit les fonctionnalités nécessaires pour activer les VSPackages partager des services courants. Étant donné que l’objectif architectural de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] consiste à vest des fonctionnalités principales dans les VSPackages, l’interpréteur de commandes est une infrastructure pour fournir des fonctionnalités de base et prend en charge les communications entre son composant VSPackages.  
+L' [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] interpréteur de commandes est l’agent principal d’intégration dans [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] . L’interpréteur de commandes fournit les fonctionnalités nécessaires pour permettre aux VSPackages de partager des services communs. Étant donné que l’objectif architectural de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] est de fournir des fonctionnalités principales dans les VSPackages, l’interpréteur de commandes est une infrastructure qui fournit des fonctionnalités de base et prend en charge la communication croisée entre ses VSPackages de composants.  
   
 ## <a name="shell-responsibilities"></a>Responsabilités de l’interpréteur de commandes  
- L’interpréteur de commandes a les responsabilités clées suivantes :  
+ L’interpréteur de commandes a les responsabilités clés suivantes :  
   
-- Prise en charge des éléments de base de l’interface utilisateur (IU) (par le biais des interfaces COM). Celles-ci incluent les menus par défaut et barres d’outils, frames de fenêtre de document ou fenêtres enfants de plusieurs documents MDI (interface) et les frames de fenêtre outil et prise en charge d’ancrage.  
+- Prise en charge (via des interfaces COM) éléments de base de l’interface utilisateur (IU). Il s’agit notamment des menus et barres d’outils par défaut, des cadres de fenêtre de document ou des fenêtres enfants MDI, ainsi que des frames de fenêtre d’outils et de la prise en charge de l’ancrage.  
   
-- Gérer la liste en cours d’exécution de tous les documents actuellement ouverts dans une table de documents en cours d’exécution (RDT) afin de coordonner la persistance de documents et de garantir qu’un document ne peut pas être ouvert de façon plus d’une ou de manière incompatible.  
+- Gestion d’une liste en cours d’exécution de tous les documents actuellement ouverts dans une table de documents en cours d’exécution (RDT) afin de coordonner la persistance des documents et de garantir qu’un document ne peut pas être ouvert de plusieurs façons ou d’une manière incompatible.  
   
-- Prise en charge de l’interface de routage des commandes et la gestion des commandes, `IOleCommandTarget`.  
+- Prise en charge de l’interface de routage de commande et de gestion de commande, `IOleCommandTarget` .  
   
-- Chargement de VSPackages aux moments opportuns. Un VSPackage à chargement différé est nécessaire pour améliorer les performances de l’interpréteur de commandes.  
+- Chargement des VSPackages aux moments appropriés. Le chargement différé d’un VSPackage est nécessaire pour améliorer les performances de l’interpréteur de commandes.  
   
-- La gestion de certains des services partagés, tels que <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>, qui fournit une fonctionnalité d’interpréteur de commandes de base, et <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>, qui fournit des fonctionnalités de base.  
+- La gestion de certains services partagés, tels que <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell> , qui fournit des fonctionnalités d’interpréteur de commandes de base et <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> , qui fournit des fonctionnalités de fenêtrage de base.  
   
-- Gestion des fichiers solution (.sln). Solutions contiennent des groupes de projets connexes, similaires aux fichiers (.dsw) de l’espace de travail dans Visual C++ 6.0.  
+- Gestion des fichiers de solution (. sln). Les solutions contiennent des groupes de projets connexes, similaires aux fichiers d’espace de travail (. dsw) dans Visual C++ 6,0.  
   
-- Sélection d’interpréteur de commandes à l’échelle du suivi, contexte et des devises. L’interpréteur de commandes effectue le suivi des éléments suivants :  
+- Suivi de la sélection à l’ensemble du shell, du contexte et de la devise. L’interpréteur de commandes effectue le suivi des types d’éléments suivants :  
   
-  - Le projet actuel  
+  - Le projet actif  
   
-  - L’élément de projet actuel ou ItemID actuel <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>  
+  - Élément de projet actuel ou ItemID du actuel <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>  
   
-  - La sélection actuelle pour le **propriétés** fenêtre ou `SelectionContainer`  
+  - Sélection actuelle pour la fenêtre **Propriétés** ou `SelectionContainer`  
   
-  - Le contexte de l’interface utilisateur, ID ou CmdUIGuids qui contrôlent la visibilité des commandes, menus et barres d’outils  
+  - ID de contexte d’interface utilisateur ou CmdUIGuids qui contrôlent la visibilité des commandes, menus et barres d’outils  
   
-  - Les éléments actuellement actifs, tels que la fenêtre active, le document et le Gestionnaire d’annulation  
+  - Éléments actuellement actifs, tels que la fenêtre active, le document et le gestionnaire d’annulation  
   
-  - Les attributs de contexte de l’utilisateur qui pilotent l’aide dynamique  
+  - Attributs de contexte de l’utilisateur qui pilotent l’aide dynamique  
   
-  L’interpréteur de commandes transmet également la communication entre les VSPackages installés et les services en cours. Il prend en charge les fonctionnalités principales de l’interpréteur de commandes et les rend disponibles pour tous les packages VS intégrés dans [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Ces fonctionnalités incluent les éléments suivants :  
+  L’interpréteur de commandes sert également à la communication entre les VSPackages installés et les services actuels. Il prend en charge les fonctionnalités principales de l’interpréteur de commandes et les met à disposition de tous les VSPackages intégrés à [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] . Ces fonctionnalités principales incluent les éléments suivants :  
   
-- **Sur** écran de démarrage et de la boîte de dialogue  
+- Boîte de dialogue **à propos** de et écran de démarrage  
   
-- **Ajouter de nouveau et ajouter un élément existant** boîtes de dialogue  
+- Boîtes **de dialogue Ajouter un nouvel élément et ajouter un élément existant**  
   
-- **Affichage de classes** fenêtre et **Explorateur d’objets**  
+- Fenêtre **affichage de classes** et **Explorateur d’objets**  
   
-- **Références** boîte de dialogue  
+- Boîte de dialogue **références**  
   
-- **Structure du document** fenêtre  
+- Fenêtre **structure du document**  
   
-- **Aide dynamique** fenêtre  
+- Fenêtre **d’aide dynamique**  
   
 - **Rechercher** et **remplacer**  
   
-- **Ouvrez le projet** et **ouvrir un fichier** boîtes de dialogue sur le **New** menu  
+- Boîtes de dialogue **ouvrir un projet** et **ouvrir un fichier** dans le menu **nouveau**  
   
-- **Options** boîte de dialogue sur le **outils** menu  
+- Boîte de dialogue **options** du menu **Outils**  
   
 - Fenêtre **Propriétés**  
   
 - **Explorateur de solutions**  
   
-- **Liste des tâches** fenêtre  
+- Fenêtre **liste des tâches**  
   
 - **Boîte à outils**  
   

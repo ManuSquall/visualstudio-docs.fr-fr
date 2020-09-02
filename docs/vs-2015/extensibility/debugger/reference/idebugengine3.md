@@ -13,16 +13,16 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1e43da0b05062c6c7b1c4d3cfe771ff0b93f83a9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195784"
 ---
 # <a name="idebugengine3"></a>IDebugEngine3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Représente un moteur de débogage unique (dé) qui contrôle le débogage d’un ou plusieurs modules.  
+Représente un moteur de débogage unique (DE) qui contrôle le débogage d’un ou plusieurs modules.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -30,29 +30,29 @@ Représente un moteur de débogage unique (dé) qui contrôle le débogage d’u
 IDebugEngine3 : IDebugEngine2  
 ```  
   
-## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs  
- Cette interface est implémentée par un DE personnalisé (si elle prend en charge les symboles) pour activer l’état JustMyCode. Cette interface doit être implémentée par le DE si elle prend en charge les symboles et JustMyCode.  
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
+ Cette interface est implémentée par un personnalisé DE (s’il prend en charge les symboles) pour activer l’état JustMyCode. Cette interface doit être implémentée par le si elle prend en charge les symboles et JustMyCode.  
   
-## <a name="notes-for-callers"></a>Notes de publication pour les appelants  
- Cette interface est appelée par le Gestionnaire de session de débogage (SDM) pour passer des options utilisateur pour les emplacements à partir desquels charger des symboles. Il est également appelée pour définir le GUID du moteur de lorsqu’il est instancié (ce GUID est basé sur les mesures à partir du moment de l’inscription du moteur). Le SDM appelle également cette interface pour définir l’état JustMyCode et pour définir toutes les exceptions connues par le débogueur à un état spécifique.  
+## <a name="notes-for-callers"></a>Notes pour les appelants  
+ Cette interface est appelée par le gestionnaire de débogage de session (SDM) pour transmettre les options utilisateur pour les emplacements à partir desquels les symboles doivent être chargés. Elle est également appelée pour définir le GUID du moteur lorsqu’il est instancié (ce GUID est basé sur les métriques du moment de l’inscription du moteur). Le SDM appelle également cette interface pour définir l’état JustMyCode et pour définir toutes les exceptions connues par le débogueur à un état spécifié.  
   
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
- Outre les méthodes héritées de [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md), le `IDebugEngine3` interface expose les méthodes suivantes.  
+ En plus des méthodes héritées de [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md), l' `IDebugEngine3` interface expose les méthodes suivantes.  
   
 |Méthode|Description|  
 |------------|-----------------|  
-|[SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md)|Définit le chemin d’accès ou les chemins d’accès qui le DE permet de rechercher de symboles de débogage.|  
-|[LoadSymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md)|Charge les symboles pour tous les modules qui n’ont pas encore été chargé des symboles.|  
-|[SetJustMyCodeState](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md)|Indique le DE sur les informations JustMyCode.|  
-|[SetEngineGuid](../../../extensibility/debugger/reference/idebugengine3-setengineguid.md)|Définit le GUID D’à partir des métriques.|  
-|[SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md)|Définir toutes les exceptions actuellement en attente sur un état spécifié.|  
+|[SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md)|Définit le ou les chemins d’accès que le DE utilise pour rechercher des symboles de débogage.|  
+|[LoadSymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md)|Charge les symboles pour tous les modules dont les symboles n’ont pas encore été chargés.|  
+|[SetJustMyCodeState](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md)|Indique à l’à propos des informations DE JustMyCode.|  
+|[SetEngineGuid](../../../extensibility/debugger/reference/idebugengine3-setengineguid.md)|Définit le GUID de à partir des métriques.|  
+|[SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md)|Définit toutes les exceptions actuellement en suspens à un état spécifié.|  
   
 ## <a name="requirements"></a>Configuration requise  
- En-tête : msdbg.h  
+ En-tête : msdbg. h  
   
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft. VisualStudio. Debugger. Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

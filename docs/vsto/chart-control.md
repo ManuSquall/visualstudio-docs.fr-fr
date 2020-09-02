@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 864422aac695fbf474e6ed6b8cf6d765247eabf9
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71255303"
 ---
 # <a name="chart-control"></a>Chart, contrôle
@@ -29,9 +29,9 @@ ms.locfileid: "71255303"
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
 ## <a name="create-the-control"></a>Créer le contrôle
- Vous pouvez ajouter des contrôles <xref:Microsoft.Office.Tools.Excel.Chart> à une feuille de calcul Microsoft Office Excel au moment du design ou au moment de l'exécution dans un projet au niveau du document.
+ Vous pouvez ajouter <xref:Microsoft.Office.Tools.Excel.Chart> des contrôles à une feuille de calcul Microsoft Office Excel au moment du design ou au moment de l’exécution dans un projet au niveau du document.
 
- Vous pouvez ajouter des contrôles <xref:Microsoft.Office.Tools.Excel.Chart> à une feuille de calcul au moment de l’exécution dans un complément VSTO. Pour plus d'informations, voir [Procédure : Ajoutez des contrôles Chart aux feuilles](../vsto/how-to-add-chart-controls-to-worksheets.md)de calcul.
+ Vous pouvez ajouter des contrôles <xref:Microsoft.Office.Tools.Excel.Chart> à une feuille de calcul au moment de l’exécution dans un complément VSTO. Pour plus d’informations, consultez [Comment : ajouter des contrôles Chart à des feuilles de calcul](../vsto/how-to-add-chart-controls-to-worksheets.md).
 
 > [!NOTE]
 > Les objets de graphique créés dynamiquement ne sont pas persistants dans la feuille de calcul en tant que contrôles hôtes, une fois la feuille de calcul fermée. Pour plus d’informations, consultez [Ajouter des contrôles aux documents Office au moment de l’exécution](../vsto/adding-controls-to-office-documents-at-run-time.md).
@@ -78,6 +78,6 @@ ms.locfileid: "71255303"
 - [Contrôles sur les documents Office](../vsto/controls-on-office-documents.md)
 - [Ajouter des contrôles aux documents Office au moment de l’exécution](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [Automatiser Excel à l’aide d’objets étendus](../vsto/automating-excel-by-using-extended-objects.md)
-- [Guide pratique pour Ajouter des contrôles Chart aux feuilles de calcul](../vsto/how-to-add-chart-controls-to-worksheets.md)
+- [Comment : ajouter des contrôles Chart à des feuilles de calcul](../vsto/how-to-add-chart-controls-to-worksheets.md)
 - [Lier des données à des contrôles dans les solutions Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Limitations de programmation des éléments hôtes et des contrôles hôtes](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

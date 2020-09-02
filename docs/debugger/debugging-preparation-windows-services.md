@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3161f6d2c328e8e33dd82ed206aa8aa20e654cc9
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72738088"
 ---
 # <a name="debugging-preparation-windows-services"></a>Préparation du débogage : services Windows
@@ -29,7 +29,7 @@ Un service Windows est un programme qui s'exécute en arrière-plan sous Microso
 
 ## <a name="see-also"></a>Voir aussi
 - [Débogage du code managé](../debugger/debugging-managed-code.md)
-- [Types de projets C#, F# et Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
-- [Paramètres de projet pour des configurations de débogage C#](../debugger/project-settings-for-csharp-debug-configurations.md)
+- [Types de projets C#, F# et Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
+- [Paramètres de projet pour des configurations Debug C#](../debugger/project-settings-for-csharp-debug-configurations.md)
 - [Paramètres de projet pour une configuration Debug Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
-- [Guide pratique pour déboguer la méthode OnStart](../debugger/how-to-debug-the-onstart-method.md)
+- [Comment : déboguer la méthode OnStart](../debugger/how-to-debug-the-onstart-method.md)

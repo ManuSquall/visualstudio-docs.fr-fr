@@ -1,5 +1,5 @@
 ---
-title: Où puis-je trouver les codes des erreurs Win32 ? | Microsoft Docs
+title: Où puis-je trouver les codes des erreurs Win32 ? | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -21,10 +21,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d403315a2320589f69174109d55c8726ffd5f673
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149394"
 ---
 # <a name="where-can-i-look-up-win32-error-codes"></a>Où puis-je trouver les codes des erreurs Win32 ?
@@ -39,5 +39,5 @@ WINERROR.H, dans le répertoire INCLUDE de votre installation de système par d�
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Questions fréquentes (FAQ) sur le débogage du code natif](../debugger/debugging-native-code-faqs.md)   
+ [FAQ sur le débogage du code natif](../debugger/debugging-native-code-faqs.md)   
  [Débogage du code natif](../debugger/debugging-native-code.md)

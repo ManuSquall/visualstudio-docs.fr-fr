@@ -28,10 +28,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7d1908f72bce01956bbb2eeb62bb9bbc30a64b0d
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71254014"
 ---
 # <a name="program-document-level-customizations"></a>Personnaliser les personnalisations au niveau du document
@@ -53,7 +53,7 @@ ms.locfileid: "71254014"
 
   Certains aspects de l’écriture de code dans des projets au niveau du document diffèrent des autres types de projets dans Visual Studio. Une grande partie de ces différences ont pour origine la façon dont les modèles objet Office sont exposés au code managé. Pour plus d’informations, consultez [écrire du code dans les solutions Office](../vsto/writing-code-in-office-solutions.md).
 
-  Pour obtenir des informations générales sur les personnalisations au niveau du document et d’autres types de solutions que vous pouvez créer à l’aide des outils de développement Office dans Visual Studio, consultez [vue d’ensemble &#40;du développement des solutions Office VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
+  Pour obtenir des informations générales sur les personnalisations au niveau du document et d’autres types de solutions que vous pouvez créer à l’aide des outils de développement Office dans Visual Studio, consultez [vue d’ensemble du développement des solutions office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
 
 ## <a name="use-the-generated-classes-in-document-level-projects"></a>Utiliser les classes générées dans les projets au niveau du document
  Quand vous créez un projet au niveau du document, Visual Studio génère automatiquement une classe dans le projet que vous pouvez utiliser pour commencer à écrire votre code. Visual Studio génère des classes différentes pour Word et Excel :
@@ -79,7 +79,7 @@ ms.locfileid: "71254014"
 
 - `ThisWorkbook`: dérive de <xref:Microsoft.Office.Tools.Excel.WorkbookBase>.
 
-- `Sheet`*n*: dérive de <xref:Microsoft.Office.Tools.Excel.WorksheetBase>.
+- `Sheet`*n*: dérive de <xref:Microsoft.Office.Tools.Excel.WorksheetBase> .
 
   Ces classes de base redirigent tous les appels à leurs membres vers les implémentations internes des interfaces de l’élément hôte correspondant dans le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Par exemple, si vous appelez la méthode <xref:Microsoft.Office.Tools.Word.DocumentBase.Protect%2A> de la classe `ThisDocument` , la classe <xref:Microsoft.Office.Tools.Word.DocumentBase> redirige cet appel vers l’implémentation interne de l’interface <xref:Microsoft.Office.Tools.Word.Document> dans le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
 
@@ -110,7 +110,7 @@ Globals.ThisDocument.Save();
 
  Pour plus d’informations sur l’utilisation des modèles objet de Word et Excel, consultez [vue d’ensemble du modèle objet Word](../vsto/word-object-model-overview.md) et [vue d’ensemble du modèle objet Excel](../vsto/excel-object-model-overview.md).
 
- Pour plus d’informations sur `Globals` l’objet, consultez [accès global aux objets dans les projets Office](../vsto/global-access-to-objects-in-office-projects.md).
+ Pour plus d’informations sur l' `Globals` objet, consultez [accès global aux objets dans les projets Office](../vsto/global-access-to-objects-in-office-projects.md).
 
 ## <a name="add-controls-to-documents"></a>Ajouter des contrôles aux documents
  Pour personnaliser l’interface utilisateur du document, vous pouvez ajouter des contrôles Windows Forms ou des *contrôles hôtes* à la surface du document. En combinant plusieurs jeux de contrôles et en écrivant du code, vous pouvez lier les contrôles à des données, recueillir des informations auprès de l’utilisateur et répondre aux actions de l’utilisateur.
@@ -146,7 +146,7 @@ Globals.ThisDocument.Save();
 
 - Ajouter des groupes personnalisés à un onglet prédéfini du ruban.
 
-   Pour plus d'informations, voir [Procédure : Personnaliser un onglet](../vsto/how-to-customize-a-built-in-tab.md)intégré.
+   Pour plus d’informations, consultez [Comment : personnaliser un onglet intégré](../vsto/how-to-customize-a-built-in-tab.md).
 
   Pour plus d’informations sur la personnalisation de l’interface utilisateur des applications Microsoft Office, consultez Personnalisation de l' [interface utilisateur Office](../vsto/office-ui-customization.md).
 
@@ -162,10 +162,10 @@ Globals.ThisDocument.Save();
 
 - Utilisez la méthode `GetVstoObject` pour obtenir l’objet étendu d’un objet Office natif. Cette méthode retourne un objet <xref:Microsoft.Office.Tools.Excel.ListObject>, <xref:Microsoft.Office.Tools.Excel.Workbook>, <xref:Microsoft.Office.Tools.Excel.Worksheet>ou <xref:Microsoft.Office.Tools.Word.Document> si l’objet Office natif spécifié en possède un. Sinon, `GetVstoObject` retourne la **valeur null**. Par exemple, la méthode `GetVstoObject` retourne un objet <xref:Microsoft.Office.Tools.Word.Document> si l’objet <xref:Microsoft.Office.Interop.Word.Document> spécifié est l’objet sous-jacent du document dans votre projet de document Word.
 
-  Dans les projets au niveau du document, vous ne pouvez pas utiliser la méthode `GetVstoObject` pour créer un nouvel élément hôte <xref:Microsoft.Office.Tools.Excel.Workbook>, <xref:Microsoft.Office.Tools.Excel.Worksheet> ou <xref:Microsoft.Office.Tools.Word.Document> au moment de l’exécution. Vous pouvez utiliser cette méthode uniquement pour accéder aux éléments hôtes existants, générés dans votre projet au moment du design. Si vous souhaitez créer des éléments hôtes au moment de l’exécution, vous devez développer un projet de complément VSTO. Pour plus d’informations, consultez [limitations de programmation des éléments hôtes et des contrôles hôtes](../vsto/programmatic-limitations-of-host-items-and-host-controls.md) et [étendre les documents Word et les classeurs Excel dans les compléments VSTO au moment](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)de l’exécution.
+  Dans les projets au niveau du document, vous ne pouvez pas utiliser la `GetVstoObject` méthode pour créer un nouvel <xref:Microsoft.Office.Tools.Excel.Workbook> <xref:Microsoft.Office.Tools.Excel.Worksheet> <xref:Microsoft.Office.Tools.Word.Document> élément hôte, ou au moment de l’exécution. Vous pouvez utiliser cette méthode uniquement pour accéder aux éléments hôtes existants, générés dans votre projet au moment du design. Si vous souhaitez créer des éléments hôtes au moment de l’exécution, vous devez développer un projet de complément VSTO. Pour plus d’informations, consultez [limitations de programmation des éléments hôtes et des contrôles hôtes](../vsto/programmatic-limitations-of-host-items-and-host-controls.md) et [étendre les documents Word et les classeurs Excel dans les compléments VSTO au moment](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)de l’exécution.
 
 ## <a name="use-the-getvstoobject-and-hasvstoobject-methods"></a>Utiliser les méthodes GetVstoObject et HasVstoObject
- Pour appeler la `HasVstoObject` méthode `GetVstoObject` et, utilisez la `Globals.Factory.GetVstoObject` méthode `Globals.Factory.HasVstoObject` ou, puis transmettez l’objet Word ou Excel natif (par exemple <xref:Microsoft.Office.Interop.Word.Document> , ou <xref:Microsoft.Office.Interop.Excel.Worksheet>) que vous voulez tester.
+ Pour appeler la `HasVstoObject` `GetVstoObject` méthode et, utilisez la `Globals.Factory.GetVstoObject` `Globals.Factory.HasVstoObject` méthode ou, puis transmettez l’objet Word ou Excel natif (par exemple, <xref:Microsoft.Office.Interop.Word.Document> ou <xref:Microsoft.Office.Interop.Excel.Worksheet> ) que vous voulez tester.
 
 ## <a name="see-also"></a>Voir aussi
 - [Contrôles sur les documents Office](../vsto/controls-on-office-documents.md)

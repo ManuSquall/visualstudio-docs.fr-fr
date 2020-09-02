@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::RemoveSetException | Microsoft Docs
+title: 'IDebugEngine2 :: RemoveSetException | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 53ba8c9c1934ee1c036e14fb51abd5babcf7e4c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195964"
 ---
 # <a name="idebugengine2removesetexception"></a>IDebugEngine2::RemoveSetException
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Supprime l’exception spécifiée, donc il n’est n’est plus géré par le moteur de débogage.  
+Supprime l’exception spécifiée afin qu’elle ne soit plus gérée par le moteur de débogage.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -40,15 +40,15 @@ int RemoveSetException( 
   
 #### <a name="parameters"></a>Paramètres  
  `pException`  
- [in] Un [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) structure qui décrit l’exception à supprimer.  
+ dans Structure [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) qui décrit l’exception à supprimer.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="remarks"></a>Notes  
- L’exception en cours de suppression doit avoir été précédemment définie par un appel antérieur à la [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) (méthode).  
+ L’exception en cours de suppression doit avoir été précédemment définie par un appel antérieur à la méthode [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) .  
   
- Pour supprimer toutes les exceptions de jeu à la fois, appelez le [RemoveAllSetExceptions](../../../extensibility/debugger/reference/idebugengine2-removeallsetexceptions.md) (méthode).  
+ Pour supprimer toutes les exceptions de jeu à la fois, appelez la méthode [RemoveAllSetExceptions](../../../extensibility/debugger/reference/idebugengine2-removeallsetexceptions.md) .  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   

@@ -18,10 +18,10 @@ caps.latest.revision: 87
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e054909bb8f020ed496185f0ba64aafec016358b
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586450"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Utiliser UI Automation pour tester votre code
@@ -65,7 +65,7 @@ Vous pouvez créer des tests automatisés qui vérifient l’interface utilisate
 
 - [Étapes suivantes](#VerifyCodeUsingCUITWhatsNext)
 
-## <a name="creating-coded-ui-tests"></a><a name="VerifyingCodeUsingCUITCreate"></a>Création de tests codés de l’interface utilisateur
+## <a name="creating-coded-ui-tests"></a><a name="VerifyingCodeUsingCUITCreate"></a> Création de tests codés de l’interface utilisateur
 
 1. **Créez un projet de test codé de l’interface utilisateur.**
 
@@ -288,7 +288,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 ```
 
-## <a name="customizing-your-coded-ui-test"></a><a name="VerifyingCodeCUITModify"></a>Personnalisation de votre test codé de l’interface utilisateur
+## <a name="customizing-your-coded-ui-test"></a><a name="VerifyingCodeCUITModify"></a> Personnalisation de votre test codé de l’interface utilisateur
  Après avoir créé votre test codé de l'interface utilisateur, vous pouvez le modifier à l'aide de l'un des outils suivants dans Visual Studio :
 
 - **Générateur de test codé de l’interface utilisateur :** vous pouvez utiliser le Générateur de test codé de l’interface utilisateur pour ajouter des contrôles et une validation supplémentaires à vos tests. Consultez la section [Ajout de contrôles et validation de leurs propriétés](#VerifyingCodeUsingCUITGenerateAssertions) dans cette rubrique.
@@ -315,7 +315,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
     - [Plateformes et configurations prises en charge pour les tests codés de l’interface utilisateur et les enregistrements des actions](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 
-### <a name="the-generated-code"></a><a name="generatedCode"></a>Code généré
+### <a name="the-generated-code"></a><a name="generatedCode"></a> Code généré
  Quand vous choisissez **Générer le code**, plusieurs segments de code sont créés :
 
 - **Une ligne dans la méthode de test**
@@ -383,7 +383,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
   Pour plus d’informations sur le code généré, consultez [Anatomie d’un test codé de l’interface utilisateur](../test/anatomy-of-a-coded-ui-test.md).
 
-### <a name="coding-ui-control-actions-and-properties"></a><a name="actions"></a>Codage des actions et propriétés du contrôle d’interface utilisateur
+### <a name="coding-ui-control-actions-and-properties"></a><a name="actions"></a> Codage des actions et propriétés du contrôle d’interface utilisateur
  Quand vous utilisez des contrôles de test de l'interface utilisateur dans des tests codés de l'interface utilisateur, ils sont séparés en deux catégories : actions et propriétés.
 
 - La première catégorie est constituée d'actions que vous pouvez effectuer sur des contrôles de test de l'interface utilisateur. Par exemple, les tests codés de l'interface utilisateur peuvent simuler des clics de souris sur un contrôle de test de l'interface utilisateur ou simuler des frappes sur des touches du clavier pour affecter un contrôle de test de l'interface utilisateur.
@@ -425,7 +425,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A> retourne le type de données approprié, mais cette valeur de retour est convertie en <xref:System.Object>. L'objet <xref:System.Object> retourné doit ensuite être converti en type approprié.
 
-     Exemple :
+     Exemple :
 
      `int i = (int)GetProperty(myHtmlList.PropertyNames.ItemCount);`
 
@@ -435,14 +435,14 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - Pour spécifier la propriété du contrôle à définir, utilisez la chaîne appropriée de la classe `PropertyNames` comme premier paramètre de <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A>, avec la valeur de propriété comme second paramètre.
 
-     Exemple :
+     Exemple :
 
      `SetProperty(myWinCheckBox.PropertyNames.Checked, true);`
 
-### <a name="debugging"></a><a name="debugging"></a>Débogage
+### <a name="debugging"></a><a name="debugging"></a> Débogage
  Vous pouvez analyser les tests codés de l'interface utilisateur à l'aide de journaux de tests codés de l'interface utilisateur. Les journaux de tests codés de l'interface utilisateur filtrent et enregistrent des informations importantes sur l'exécution de vos tests codés de l'interface utilisateur. Le format des journaux vous permet de déboguer les problèmes rapidement. Pour plus d’informations, consultez [Analyse des tests codés de l’interface utilisateur à l’aide des journaux de test codé de l’interface utilisateur](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md).
 
-## <a name="whats-next"></a><a name="VerifyCodeUsingCUITWhatsNext"></a>Et ensuite ?
+## <a name="whats-next"></a><a name="VerifyCodeUsingCUITWhatsNext"></a> Et ensuite ?
  **Options supplémentaires pour l’exécution des tests codés de l’interface utilisateur :** vous pouvez exécuter des tests codés de l’interface utilisateur directement à partir de Visual Studio, comme décrit plus haut dans cette rubrique. Vous pouvez aussi exécuter des tests de l'interface utilisateur automatisés à partir de [!INCLUDE[TCMext](../includes/tcmext-md.md)] ou de [!INCLUDE[esprbuild](../includes/esprbuild-md.md)]. Quand les tests codés de l'interface utilisateur sont automatisés, ils doivent interagir avec le Bureau lorsque vous les exécutez, contrairement aux autres tests automatisés.
 
 - [Comment : exécuter des tests à partir de Microsoft Visual Studio](https://msdn.microsoft.com/library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)
@@ -469,7 +469,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 ## <a name="external-resources"></a>Ressources externes
 
-### <a name="guidance"></a>Assistance
+### <a name="guidance"></a>Guidance
 - [Tester la livraison continue avec Visual Studio 2012 - Chapitre 2 : Tests unitaires : tester l’intérieur](https://msdn.microsoft.com/library/jj159340.aspx)
 
 - [Test de la livraison continue avec Visual Studio 2012 - Chapitre 5 : Automatisation des tests système](https://msdn.microsoft.com/library/jj159335.aspx)

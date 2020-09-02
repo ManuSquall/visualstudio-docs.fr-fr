@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerDataProvider::GetNewObjectForVisualizer | Microsoft Docs
+title: 'IEEVisualizerDataProvider :: GetNewObjectForVisualizer | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dfd7045ebe846d79d51c0351a3e8d53b7a7128bd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196158"
 ---
 # <a name="ieevisualizerdataprovidergetnewobjectforvisualizer"></a>IEEVisualizerDataProvider::GetNewObjectForVisualizer
@@ -40,13 +40,13 @@ int GetNewObjectForVisualizer(
   
 #### <a name="parameters"></a>Paramètres  
  `ppObject`  
- [out] Le nouvel objet.  
+ à Nouvel objet.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="remarks"></a>Notes  
- `This method` réévalue l’objet actuellement représente et retourne le résultat sous la forme d’un nouvel objet. L’objet existant mettra à jour à la suite de l’évaluation.  
+ `This method` réévalue l’objet qu’il représente actuellement et retourne le résultat sous la forme d’un nouvel objet. L’objet existant sera mis à jour à la suite de l’évaluation.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)   

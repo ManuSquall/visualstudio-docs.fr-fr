@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d3f6299a8be52aef068746ca33e48341da55f778
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586882"
 ---
 # <a name="item-functions"></a>fonctions d'élément
@@ -104,7 +104,7 @@ L’exemple suivant montre comment utiliser des fonctions d’élément intrins�
 
 ## <a name="msbuild-condition-functions"></a>Fonctions de condition MSBuild
 
-Les fonctions `Exists` et `HasTrailingSlash` ne sont pas des fonctions d’élément. Elles peuvent être utilisées avec l' `Condition` attribut. Consultez les [Conditions MSBuild](msbuild-conditions.md).
+Les fonctions `Exists` et ne `HasTrailingSlash` sont pas des fonctions d’élément. Elles peuvent être utilisées avec l' `Condition` attribut. Consultez les [Conditions MSBuild](msbuild-conditions.md).
 
 ## <a name="see-also"></a>Voir aussi
 

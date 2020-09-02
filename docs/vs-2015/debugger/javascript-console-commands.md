@@ -1,5 +1,5 @@
 ---
-title: JavaScript Console commands | Microsoft Docs
+title: Commandes de la console JavaScript | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d5c4223699c720750514aaf2b9abc18b34ae4269
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65690587"
 ---
 # <a name="javascript-console-commands"></a>JavaScript Console commands
@@ -30,9 +30,9 @@ ms.locfileid: "65690587"
 
 S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.png « windows_and_phone_content »)  
   
- Vous pouvez utiliser des commandes pour envoyer des messages et effectuer d’autres tâches dans la fenêtre de console JavaScript de Visual Studio. Pour obtenir des exemples qui illustrent l’utilisation de cette fenêtre, consultez [Guide de démarrage rapide : Déboguer du code JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Les informations contenues dans cette rubrique s’appliquent aux applications Windows Store ou Windows Phone Store et à celles créées à l’aide de Visual Studio Tools pour Apache Cordova. Pour plus d’informations sur les commandes de console prises en charge dans les applications Cordova, consultez [Debug Your App](https://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1). Pour obtenir des informations sur l’utilisation de la console dans les outils de développement F12 d’Internet Explorer, consultez [cette rubrique](https://msdn.microsoft.com/library/ie/dn255006.aspx).  
+ Vous pouvez utiliser des commandes pour envoyer des messages et effectuer d’autres tâches dans la fenêtre de console JavaScript de Visual Studio. Pour obtenir des exemples qui illustrent l’utilisation de cette fenêtre, consultez [démarrage rapide : déboguer du code JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Les informations contenues dans cette rubrique s’appliquent aux applications Windows Store ou Windows Phone Store et à celles créées à l’aide de Visual Studio Tools pour Apache Cordova. Pour plus d’informations sur les commandes de console prises en charge dans les applications Cordova, consultez [Debug Your App](https://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1). Pour obtenir des informations sur l’utilisation de la console dans les outils de développement F12 d’Internet Explorer, consultez [cette rubrique](https://msdn.microsoft.com/library/ie/dn255006.aspx).  
   
- Si la fenêtre de la console JavaScript est fermée, vous pouvez l’ouvrir pendant le débogage dans Visual Studio en choisissant **Déboguer** > **Windows** > **Console JavaScript**.  
+ Si la fenêtre de la console JavaScript est fermée, vous pouvez l’ouvrir pendant le débogage dans Visual Studio en choisissant **Déboguer**la  >  **Windows**  >  **console Windows JavaScript**.  
   
 > [!NOTE]
 > Si la fenêtre n’est pas disponible pendant une session de débogage, vérifiez que le type de débogueur est défini sur **Script** dans les propriétés de débogage du projet.  
@@ -56,7 +56,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 |`error(message)`|Envoie `message` dans la fenêtre de la console. Le texte du message est rouge et précédé d’un symbole d’erreur.<br /><br /> Les objets qui sont passés à l’aide de la commande sont convertis en valeur de chaîne.|`console.error("error message");`|  
 |`group(title)`|Démarre le regroupement des messages envoyés à la fenêtre de console, puis envoie le paramètre facultatif `title` comme étiquette de groupe. Les groupes peuvent être imbriqués et s’affichent dans une arborescence dans la fenêtre de console.<br /><br /> Les commandes group* peuvent faciliter l’affichage de la sortie de la fenêtre de console dans certains scénarios, par exemple lorsqu’un modèle de composant est en cours d’utilisation.|`console.group("Level 2 Header");` <br /> `console.log("Level 2");` <br /> `console.group();` <br /> `console.log("Level 3");` <br /> `console.warn("More of level 3");` <br /> `console.groupEnd();` <br /> `console.log("Back to level 2");` <br /> `console.groupEnd();` <br /> `console.debug("Back to the outer level");`|  
 |`groupCollapsed(title)`|Démarre le regroupement des messages envoyés à la fenêtre de console, puis envoie le paramètre facultatif `title` comme étiquette de groupe. Les groupes qui sont envoyés à l’aide de `groupCollapsed` s’affichent dans un affichage réduit par défaut. Les groupes peuvent être imbriqués et s’affichent dans une arborescence dans la fenêtre de console.|La syntaxe est la même que pour la commande `group` .<br /><br /> Consultez l’exemple correspondant à la commande `group` .|  
-|`groupEnd()`|Met fin au groupe actif.<br /><br /> Configuration requise :<br /><br /> Visual Studio 2013|Consultez l’exemple correspondant à la commande `group` .|  
+|`groupEnd()`|Met fin au groupe actif.<br /><br /> Conditions requises :<br /><br /> Visual Studio 2013|Consultez l’exemple correspondant à la commande `group` .|  
 |`info(message)`|Envoie `message` dans la fenêtre de la console. Le message est précédée d’un symbole d’informations.|`console.info("info message");`<br /><br /> Pour des exemples supplémentaires, consultez [Formatting console.log output](#ConsoleLog) plus loin dans cette rubrique.|  
 |`log(message)`|Envoie `message` dans la fenêtre de la console.<br /><br /> Si vous passez un objet, cette commande l’envoie à la fenêtre de la console et l’affiche dans un visualiseur d’objets. Utilisez le visualiseur pour examiner les propriétés dans la fenêtre de la console.|`console.log("logging message");`|  
 |`msIsIndependentlyComposed(element)`|Utilisée dans les applications web. Non prise en charge dans les applications de Store en JavaScript.|Non pris en charge.|  
@@ -73,7 +73,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
 |Commande|Description|Exemple|  
 |-------------|-----------------|-------------|  
-|`$0`, `$1`, `$2`, `$3`, `$4`|Retourne l’élément spécifié dans la fenêtre de console. `$0` retourne l'élément actuellement sélectionné dans l'Explorateur DOM, `$1` retourne l'élément précédemment sélectionné dans l'Explorateur DOM, et ainsi de suite, jusqu'au quatrième élément sélectionné précédemment.|$3|  
+|`$0`, `$1`, `$2`, `$3`, `$4`|Retourne l’élément spécifié dans la fenêtre de console. `$0` retourne l'élément actuellement sélectionné dans l'Explorateur DOM, `$1` retourne l'élément précédemment sélectionné dans l'Explorateur DOM, et ainsi de suite, jusqu'au quatrième élément sélectionné précédemment.|3 $|  
 |`$(id)`|Retourne un élément par ID. Il s’agit d’une commande de raccourci pour `document.getElementById(id)`, où `id` est une chaîne qui représente l’ID d’élément.|`$("contenthost")`|  
 |`$$(selector)`|Retourne un tableau des éléments qui correspondent au sélecteur spécifié à l’aide de la syntaxe du sélecteur CSS. Il s’agit d’une commande de raccourci pour `document.querySelectorAll()`.|`$$(".itemlist")`|  
 |`cd()`<br /><br /> `cd(window)`|Permet de modifier le contexte pour l’évaluation des expressions de la fenêtre de niveau supérieur par défaut de la page jusqu’à la fenêtre du frame spécifié. L’appel de `cd()` sans paramètres retourne le contexte dans la fenêtre de niveau supérieur.|`cd();`<br /><br /> `cd(myframe);`|  
@@ -91,9 +91,9 @@ if (console && console.log) {
 ```  
   
 ## <a name="examining-objects-in-the-javascript-console-window"></a>Examen des objets de la fenêtre de console JavaScript  
- Lorsque vous utilisez la fenêtre de console JavaScript, vous pouvez interagir avec un objet qui est dans la portée. Pour examiner un objet hors de portée dans la fenêtre de la console, utilisez les commandes `console.log` , `console.dir`ou d’autres commandes à partir de votre code. Sinon, vous pouvez interagir avec l’objet dans la fenêtre de la console pendant qu’il est dans la portée en définissant un point d’arrêt dans votre code (**Point d’arrêt** > **Insert Point d’arrêt**).  
+ Lorsque vous utilisez la fenêtre de console JavaScript, vous pouvez interagir avec un objet qui est dans la portée. Pour examiner un objet hors de portée dans la fenêtre de la console, utilisez les commandes `console.log` , `console.dir`ou d’autres commandes à partir de votre code. Vous pouvez également interagir avec l’objet à partir de la fenêtre de console pendant qu’il est dans la portée en définissant un point d’arrêt dans votre**code (point d’arrêt**  >  **Insérer point**d’arrêt).  
   
-## <a name="ConsoleLog"></a> Mise en forme de la sortie de console.log  
+## <a name="formatting-consolelog-output"></a><a name="ConsoleLog"></a> Mise en forme de la sortie de console. log  
  Si vous passez plusieurs arguments à `console.log`, la console les traite sous forme de tableau et concatène la sortie.  
   
 ```javascript  
@@ -138,5 +138,5 @@ console.log("%s is %f years old!", user.first, user.age);
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Démarrage rapide : Déboguer du code JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)   
- [Démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md)
+ [Démarrage rapide : déboguer JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)   
+ [Démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md)

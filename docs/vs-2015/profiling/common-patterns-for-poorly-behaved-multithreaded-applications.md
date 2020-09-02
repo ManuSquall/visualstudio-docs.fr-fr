@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 128de95d347fece01c9177057346b00e412e1e6f
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586632"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Modèles courants pour des applications multithread au comportement médiocre
@@ -66,5 +66,5 @@ Le visualiseur concurrentiel permet aux développeurs de visualiser le comportem
   
  Les convois de verrouillage se produisent lorsque l’application acquiert des verrous dans un ordre de premier arrivé, premier servi, alors que le taux d’arrivée au verrou est supérieur au taux d’acquisition. La combinaison de ces deux conditions provoque l’envoi de demandes de sauvegarde au verrou. Une des méthodes possibles pour résoudre ce problème consiste à utiliser des verrous inéquitables, qui permettent au premier thread qui les trouve à l’état déverrouillé de les acquérir. L’illustration précédente montre ce comportement de convoi. Pour résoudre ce problème, essayez de réduire le nombre de conflits au niveau des objets de synchronisation et d’utiliser des verrous inéquitables.  
   
-## <a name="see-also"></a> Voir aussi  
+## <a name="see-also"></a>Voir aussi  
  [vue Threads](../profiling/threads-view-parallel-performance.md)

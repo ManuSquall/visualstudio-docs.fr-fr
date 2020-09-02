@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 565ae9f27b9f5a113e51520724f525599ad5eda7
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904271"
 ---
 # <a name="change-the-value-of-a-local"></a>Modifier la valeur d’un local
@@ -42,7 +42,7 @@ ms.locfileid: "85904271"
 
    Cette procédure est également utilisée pour modifier la valeur d’une variable dans la fenêtre **Espion** , sauf qu’il s’agit de l' `IDebugProperty2` objet associé à la valeur de l’objet local utilisé à la place de l' `IDebugProperty2` objet associé au local lui-même.
 
-## <a name="in-this-section"></a>Dans cette section
+## <a name="in-this-section"></a>Contenu de cette section
  [Exemple d’implémentation de la modification de valeurs](../../extensibility/debugger/sample-implementation-of-changing-values.md) Utilise l’exemple MyCEE pour parcourir le processus de modification des valeurs.
 
 ## <a name="see-also"></a>Voir aussi

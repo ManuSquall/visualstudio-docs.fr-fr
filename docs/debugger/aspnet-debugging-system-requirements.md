@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - aspnet
 ms.openlocfilehash: 78f947c7ab9fcc1031d457526240ecdd7e9119a3
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72745804"
 ---
 # <a name="aspnet-debugging-system-requirements"></a>Débogage ASP.NET : configuration requise
@@ -34,10 +34,10 @@ Cette rubrique décrit les conditions de sécurité et les logiciels requis pour
 
 - Débogage distant, dans lequel [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] s'exécute sur un ordinateur client et débogue une application Web qui s'exécute sur un ordinateur de serveur distant.
 
-## <a name="security-requirements"></a>Conditions de sécurité
+## <a name="security-requirements"></a>Configuration de sécurité requise
  Pour le débogage distant, les ordinateurs locaux et distants doivent être sur une installation de domaine ou une installation de groupe de travail.
 
- Pour déboguer le processus de travail [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] (hébergé par un pool d’applications), vous devez être autorisé à déboguer ce processus. Par défaut, [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] applications antérieures à IIS 6,0 s’exécutent en tant qu’utilisateur **ASPNET** . Dans IIS 6,0 et IIS 7,0, le compte de **service réseau** est le compte par défaut. Si le processus de traitement s'exécute en tant qu' **ASPNET**ou que **SERVICE RÉSEAU**, vous devez disposer de droits d'administrateur pour le déboguer.
+ Pour déboguer le [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] processus de travail (hébergé par un pool d’applications), vous devez être autorisé à déboguer ce processus. Par défaut, [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] les applications antérieures à IIS 6,0 s’exécutent en tant qu’utilisateur **ASPNET** . Dans IIS 6,0 et IIS 7,0, le compte de **service réseau** est le compte par défaut. Si le processus de traitement s'exécute en tant qu' **ASPNET**ou que **SERVICE RÉSEAU**, vous devez disposer de droits d'administrateur pour le déboguer.
 
  > [!IMPORTANT]
  > À compter de Windows Server 2008 R2, nous vous recommandons d’utiliser [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities) comme identité pour chaque pool d’applications.
@@ -54,4 +54,4 @@ Cette rubrique décrit les conditions de sécurité et les logiciels requis pour
 ## <a name="see-also"></a>Voir aussi
 
 - [Déboguer des applications ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
-- [Guide pratique pour exécuter le processus Worker sous un compte d’utilisateur](../debugger/how-to-run-the-worker-process-under-a-user-account.md)
+- [Procédure : exécuter le processus de travail sous un compte d’utilisateur](../debugger/how-to-run-the-worker-process-under-a-user-account.md)

@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d901d09350af063a11e3d156f36a100df85e7718
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586919"
 ---
 # <a name="da0021-high-rate-of-gen-1-garbage-collections"></a>DA0021 : Taux élevé de garbage collection Gen 1
@@ -31,7 +31,7 @@ ID de règle | DA0021 |
   
  Lorsque vous effectuez un profilage à l’aide de la méthode d’échantillonnage, de mémoire .NET ou de conflit des ressources, vous devez collecter au moins 10 échantillons pour déclencher cette règle.  
   
-## <a name="cause"></a>Cause  
+## <a name="cause"></a>Cause :  
  Les données relatives aux performances système qui ont été collectées pendant le profilage indiquent qu’une importante quantité de mémoire allouée aux objets .NET Framework a été récupérée dans la génération 1 du garbage collection, par rapport à la collecte de données de la génération 0.  
   
 ## <a name="rule-description"></a>Description de la règle  

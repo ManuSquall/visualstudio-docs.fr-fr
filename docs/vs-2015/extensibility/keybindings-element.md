@@ -1,5 +1,5 @@
 ---
-title: Élément KeyBindings | Microsoft Docs
+title: KeyBindings, élément | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2649dee6bbf87b43caee260ddb2b6bbd217c7ae7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180307"
 ---
 # <a name="keybindings-element"></a>Élément KeyBindings
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-L’élément KeyBindings regroupe les éléments de la combinaison de touches et autres regroupements de combinaisons de touches.  
+L’élément KeyBindings groupe les éléments KeyBinding et d’autres regroupements de combinaisons de touches.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -48,7 +48,7 @@ L’élément KeyBindings regroupe les éléments de la combinaison de touches e
 |Élément|Description|  
 |-------------|-----------------|  
 |[Élément KeyBinding](../extensibility/keybinding-element.md)|Spécifie les raccourcis clavier pour les commandes.|  
-|[Combinaisons de touches](../extensibility/keybindings-element.md)|Regroupe les éléments de combinaison de touches et autres regroupements de combinaisons de touches.|  
+|[Combinaisons](../extensibility/keybindings-element.md)|Groupe les éléments KeyBinding et d’autres regroupements de combinaisons de touches.|  
   
 ### <a name="parent-elements"></a>Éléments parents  
   
@@ -56,7 +56,7 @@ L’élément KeyBindings regroupe les éléments de la combinaison de touches e
 |-------------|-----------------|  
 |[Élément CommandTable](../extensibility/commandtable-element.md)|Définit tous les éléments qui représentent des commandes.|  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a> Exemple  
   
 ```  
 <KeyBindings>  
@@ -68,5 +68,5 @@ L’élément KeyBindings regroupe les éléments de la combinaison de touches e
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Élément KeyBinding](../extensibility/keybinding-element.md)   
+ [KeyBinding (élément)](../extensibility/keybinding-element.md)   
  [Fichiers Visual Studio Command Table (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

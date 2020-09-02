@@ -1,5 +1,5 @@
 ---
-title: Problèmes de versioning/sécurité/manifeste de déploiement ClickOnce
+title: Sécurité/contrôle de version/manifestes dans le déploiement ClickOnce
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -23,79 +23,79 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bb2ec5229132265feb1095c9ee921d73a1568dd2
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66745603"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Problèmes liés à la sécurité, à la gestion de version et aux manifestes dans les déploiements ClickOnce
 
-Il existe une variété de problèmes avec [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] sécurité, des versions et manifeste de syntaxe et sémantique qui peut entraîner un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] réussite du déploiement ne pas.
+Il existe divers problèmes liés à la sécurité, au contrôle de version de l' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application, à la syntaxe du manifeste et à la sémantique qui peuvent provoquer l' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] échec du déploiement.
 
-## <a name="clickonce-and-windows-vista-user-account-control"></a>ClickOnce et contrôle de compte d’utilisateur Windows Vista
+## <a name="clickonce-and-windows-vista-user-account-control"></a>Contrôle de compte d’utilisateur ClickOnce et Windows Vista
 
-Dans [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)], applications par défaut exécutent en tant qu’utilisateur standard, même si l’utilisateur actuel est connecté avec un compte disposant des autorisations d’administrateur. Si une application doit effectuer une action qui nécessite des autorisations d’administrateur, elle indique le système d’exploitation, puis invite l’utilisateur à entrer leurs informations d’identification d’administrateur. Cette fonctionnalité, appelée contrôle de compte utilisateur (UAC), empêche les applications d’apporter des modifications susceptibles d’affecter l’ensemble du système d’exploitation sans approbation explicite d’un utilisateur. Les applications Windows déclarent qu’ils nécessitent l’élévation d’autorisations en spécifiant le `requestedExecutionLevel` d’attribut dans la `trustInfo` section de leur manifeste d’application.
+Dans [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)] , les applications s’exécutent par défaut en tant qu’utilisateur standard, même si l’utilisateur actuel est connecté avec un compte disposant d’autorisations d’administrateur. Si une application doit exécuter une action qui requiert des autorisations d’administrateur, elle indique au système d’exploitation qu’elle invite ensuite l’utilisateur à entrer ses informations d’identification d’administrateur. Cette fonctionnalité, appelée contrôle de compte d’utilisateur (UAC, User Account Control), empêche les applications d’apporter des modifications qui peuvent affecter l’ensemble du système d’exploitation sans l’approbation explicite d’un utilisateur. Les applications Windows déclarent qu’elles nécessitent cette élévation d’autorisations en spécifiant l' `requestedExecutionLevel` attribut dans la `trustInfo` section de leur manifeste d’application.
 
-En raison du risque d’exposition aux attaques d’élévation de sécurité, les applications [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applications ne peuvent pas demander l’élévation d’autorisations si UAC est activé pour le client. N’importe quel [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application qui tente de définir son `requestedExecutionLevel` attribut `requireAdministrator` ou `highestAvailable` n’installera pas sur [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)].
+En raison du risque d’exposition des applications aux attaques d’élévation de sécurité, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] les applications ne peuvent pas demander d’élévation d’autorisations si le contrôle de compte d’utilisateur est activé pour le client. Toute [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application qui tente de définir son `requestedExecutionLevel` attribut sur `requireAdministrator` ou ne `highestAvailable` s’installe pas sur [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)] .
 
-Dans certains cas, votre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application peut essayer de s’exécuter avec les autorisations d’administrateur en raison de la logique de détection de programme d’installation sur [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)]. Dans ce cas, vous pouvez définir le `requestedExecutionLevel` attribut dans le manifeste d’application pour `asInvoker`. Cela entraîne l’application de manière à s’exécuter sans élévation. [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] ajoute automatiquement cet attribut à tous les manifestes d’application.
+Dans certains cas, votre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application peut tenter de s’exécuter avec des autorisations d’administrateur en raison de la logique de détection du programme d’installation sur [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)] . Dans ce cas, vous pouvez définir l' `requestedExecutionLevel` attribut dans le manifeste de l’application sur `asInvoker` . Cela entraînera l’exécution de l’application elle-même sans élévation. [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] ajoute automatiquement cet attribut à tous les manifestes d’application.
 
-Si vous développez une application qui nécessite des autorisations d’administrateur pour toute la durée de vie de l’application, vous devez envisager le déploiement de l’application à l’aide de la technologie Windows Installer (MSI) à la place. Pour plus d’informations, consultez [principes fondamentaux du programme d’installation de Windows](../extensibility/internals/windows-installer-basics.md).
+Si vous développez une application qui requiert des autorisations d’administrateur pour toute la durée de vie de l’application, vous devez envisager de déployer l’application à l’aide de la technologie Windows Installer (MSI) à la place. Pour plus d’informations, consultez [principes de base de Windows Installer](../extensibility/internals/windows-installer-basics.md).
 
-## <a name="online-application-quotas-and-partial-trust-applications"></a>Quotas de l’application en ligne et les applications de confiance partielle
+## <a name="online-application-quotas-and-partial-trust-applications"></a>Quotas d’application en ligne et applications de confiance partielle
 
-Si votre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application s’exécute en ligne et non via une installation, elle doit répondre au quota défini à part pour les applications en ligne. En outre, une application de réseau qui s’exécute en confiance partielle, comme avec un ensemble limité d’autorisations de sécurité, ne peut pas être supérieure à la moitié de la taille de quota.
+Si votre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application s’exécute en ligne au lieu d’une installation, elle doit tenir dans le quota réservé aux applications en ligne. En outre, une application réseau qui s’exécute en confiance partielle, par exemple avec un ensemble limité d’autorisations de sécurité, ne peut pas être supérieure à la moitié de la taille de quota.
 
-Pour plus d’informations et d’obtenir des instructions sur la façon de modifier le quota d’application en ligne, consultez [vue d’ensemble du cache ClickOnce](../deployment/clickonce-cache-overview.md).
+Pour plus d’informations et pour obtenir des instructions sur la façon de modifier le quota d’applications en ligne, consultez [vue d’ensemble du cache ClickOnce](../deployment/clickonce-cache-overview.md).
 
 ## <a name="versioning-issues"></a>Problèmes de gestion des versions
 
-Vous pouvez rencontrer des problèmes si vous assignez des noms forts à votre assembly et incrémentez le numéro de version d’assembly pour refléter une mise à jour de l’application. N’importe quel assembly compilé avec une référence à un assembly avec nom fort doit être recompilé ou l’assembly va tenter de faire référence à l’ancienne version. L’assembly va tenter cela, car l’assembly est à l’aide de l’ancienne valeur de version dans sa demande de liaison.
+Vous pouvez rencontrer des problèmes si vous assignez des noms forts à votre assembly et que vous incrémentez le numéro de version de l’assembly pour refléter une mise à jour d’application. Tout assembly compilé avec une référence à un assembly avec nom fort doit lui-même être recompilé, sinon l’assembly tente de faire référence à l’ancienne version. L’assembly va essayer cela, car l’assembly utilise l’ancienne valeur de la version dans sa demande de liaison.
 
-Par exemple, que vous avez un assembly avec nom fort dans son propre projet avec la version 1.0.0.0. Après la compilation de l’assembly, ajoutez-le en tant que référence au projet qui contient votre application principale. Si vous mettez à jour l’assembly, incrémentez la version à 1.0.0.1 et tentez de déployer sans recompiler également l’application, il se peut que l’application ne sera pas en mesure de charger l’assembly au moment de l’exécution.
+Par exemple, imaginons que vous ayez un assembly avec nom fort dans son propre projet avec la version 1.0.0.0. Après avoir compilé l’assembly, vous l’ajoutez en tant que référence au projet qui contient votre application principale. Si vous mettez à jour l’assembly, incrémentez la version à 1.0.0.1 et essayez de la déployer sans recompiler également l’application, l’application ne sera pas en mesure de charger l’assembly au moment de l’exécution.
 
-Cette erreur peut se produire uniquement si vous modifiez votre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestes manuellement ; vous ne devez pas rencontrer cette erreur si vous générez votre déploiement à l’aide de Visual Studio.
+Cette erreur peut se produire uniquement si vous modifiez vos [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestes manuellement. vous ne devriez pas rencontrer cette erreur si vous générez votre déploiement à l’aide de Visual Studio.
 
-## <a name="specify-individual-net-framework-assemblies-in-the-manifest"></a>Spécifiez les assemblys .NET Framework individuels dans le manifeste
+## <a name="specify-individual-net-framework-assemblies-in-the-manifest"></a>Spécifier des assemblys .NET Framework individuels dans le manifeste
 
-Votre application ne sera pas chargé si vous avez modifié manuellement un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement pour référencer une version antérieure d’un assembly .NET Framework. Par exemple, si vous avez ajouté une référence à l’assembly System.Net pour une version de .NET Framework antérieures à la version spécifiée dans le manifeste, une erreur se produit. En règle générale, vous ne devez pas tenter de spécifier des références aux assemblys .NET Framework individuels, comme la version du .NET Framework sur laquelle votre application s’exécute est spécifiée en tant que dépendance dans le manifeste d’application.
+Le chargement de votre application échoue si vous avez modifié manuellement un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement pour référencer une version antérieure d’un assembly de .NET Framework. Par exemple, si vous avez ajouté une référence à l’assembly System.Net pour une version de la .NET Framework antérieure à la version spécifiée dans le manifeste, une erreur se produit. En général, vous ne devez pas tenter de spécifier des références à des assemblys .NET Framework individuels, car la version de la .NET Framework par rapport à laquelle votre application s’exécute est spécifiée en tant que dépendance dans le manifeste de l’application.
 
-## <a name="manifest-parsing-issues"></a>L’analyse des problèmes du manifeste
+## <a name="manifest-parsing-issues"></a>Problèmes d’analyse du manifeste
 
-Les fichiers manifeste sont utilisés par [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] sont des fichiers XML, et ils doivent être bien formé et valide : ils doivent respecter les règles de syntaxe XML et utiliser uniquement les éléments et attributs définis dans le schéma XML pertinent.
+Les fichiers manifestes utilisés par [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] sont des fichiers XML et doivent être correctement formés et valides : ils doivent respecter les règles de syntaxe XML et utiliser uniquement les éléments et les attributs définis dans le schéma XML approprié.
 
-Quelque chose qui peut entraîner des problèmes dans un fichier manifeste consiste à sélectionner un nom pour votre application qui contient un caractère spécial, tel qu’une marque de guillemets simple ou double. Nom de l’application fait partie de son [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] identité. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] actuellement n’analyse pas les identités qui contiennent des caractères spéciaux. Si votre application ne parvient pas à activer, assurez-vous que vous utilisez des caractères alphabétiques et numériques d’uniquement pour le nom et tentez de déployer de nouveau.
+Un fichier de manifeste peut être à l’origine d’un problème en sélectionnant un nom pour votre application qui contient un caractère spécial, tel qu’un guillemet simple ou double. Le nom de l’application fait partie de son [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] identité. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] actuellement, n’analyse pas les identités qui contiennent des caractères spéciaux. Si votre application ne parvient pas à s’activer, assurez-vous que vous utilisez uniquement des caractères alphabétiques et numériques pour le nom, puis essayez de la déployer à nouveau.
 
-Si vous avez modifié manuellement vos manifestes de déploiement ou d’application, vous avez endommagés volontairement leur. Un manifeste endommagé empêche une correct [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] installation. Vous pouvez déboguer ces erreurs en cours d’exécution en cliquant sur **détails** sur le **erreur ClickOnce** boîte de dialogue et en lisant le message d’erreur dans le journal. Le journal répertorie l’un des messages suivants :
+Si vous avez modifié manuellement vos manifestes de déploiement ou d’application, vous pouvez les corrompre involontairement. Le manifeste endommagé empêchera une installation correcte [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . Vous pouvez déboguer ces erreurs au moment de l’exécution en cliquant sur **Détails** dans la boîte de dialogue **erreur ClickOnce** et en lisant le message d’erreur dans le journal. Le journal affiche l’un des messages suivants :
 
-- Une description de l’erreur de syntaxe et le numéro de ligne et position où l’erreur s’est produite.
+- Une description de l’erreur de syntaxe, ainsi que le numéro de ligne et la position du caractère où l’erreur s’est produite.
 
-- Le nom d’un élément ou un attribut utilisé en violation de schéma du manifeste. Si vous avez ajouté manuellement XML à vos manifestes, vous devrez comparer vos ajouts aux schémas de manifeste. Pour plus d’informations, consultez [manifeste de déploiement ClickOnce](../deployment/clickonce-deployment-manifest.md) et [manifeste d’application ClickOnce](../deployment/clickonce-application-manifest.md).
+- Nom d’un élément ou d’un attribut utilisé en violation du schéma du manifeste. Si vous avez ajouté manuellement du code XML à vos manifestes, vous devrez comparer vos ajouts aux schémas de manifeste. Pour plus d’informations, consultez [manifeste de déploiement ClickOnce](../deployment/clickonce-deployment-manifest.md) et [manifeste d’application ClickOnce](../deployment/clickonce-application-manifest.md).
 
-- Un conflit d’ID. Références de dépendance dans les manifestes d’application et de déploiement doivent être uniques à la fois dans leur `name` et `publicKeyToken` attributs. Si les deux attributs correspondent entre deux éléments d’un manifeste, l’analyse du manifeste ne réussira pas.
+- Conflit d’ID. Les références de dépendance dans les manifestes de déploiement et d’application doivent être uniques dans leurs `name` `publicKeyToken` attributs et. Si les deux attributs correspondent entre deux éléments dans un manifeste, l’analyse du manifeste échoue.
 
-## <a name="precautions-when-manually-changing-manifests-or-applications"></a>Précautions lorsque vous modifiez manuellement les manifestes ou des applications
+## <a name="precautions-when-manually-changing-manifests-or-applications"></a>Précautions lors de la modification manuelle de manifestes ou d’applications
 
-Lorsque vous mettez à jour un manifeste d’application, vous devez resigner le manifeste d’application et le manifeste de déploiement. Le manifeste de déploiement contient une référence au manifeste d’application qui inclut le hachage de ce fichier et sa signature numérique.
+Lorsque vous mettez à jour un manifeste d’application, vous devez signer à nouveau le manifeste de l’application et le manifeste de déploiement. Le manifeste de déploiement contient une référence au manifeste d’application qui inclut le hachage de ce fichier et sa signature numérique.
 
-### <a name="precautions-with-deployment-provider-usage"></a>Précautions lors de l’utilisation du fournisseur de déploiement
+### <a name="precautions-with-deployment-provider-usage"></a>Précautions avec l’utilisation du fournisseur de déploiement
 
-Le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] le manifeste de déploiement contient un `deploymentProvider` propriété qui pointe vers le chemin d’accès complet de l’emplacement à partir d’où l’application doit être installée et pris en charge :
+Le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifeste de déploiement a une `deploymentProvider` propriété qui pointe vers le chemin d’accès complet de l’emplacement à partir duquel l’application doit être installée et desservie :
 
 ```xml
 <deploymentProvider codebase="http://myserver/myapp.application" />
 ```
 
-Ce chemin d’accès est définie lorsque [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] crée l’application et est obligatoire pour les applications installées. Le chemin d’accès pointe vers l’emplacement standard où le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] programme d’installation va installer l’application à partir d’et rechercher les mises à jour. Si vous utilisez le **xcopy** commande pour copier un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application vers un autre emplacement, mais ne modifiez pas le `deploymentProvider` propriété, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] se réfère toujours à l’emplacement d’origine lorsqu’il tente de télécharger le application.
+Ce chemin d’accès est défini lors [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] de la création de l’application et est obligatoire pour les applications installées. Le chemin d’accès pointe vers l’emplacement standard [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] à partir duquel le programme d’installation installe l’application et recherche les mises à jour. Si vous utilisez la commande **xcopy** pour copier une [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application vers un autre emplacement, mais que vous ne modifiez pas la `deploymentProvider` propriété, fait [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] toujours référence à l’emplacement d’origine lorsqu’elle tente de télécharger l’application.
 
-Si vous souhaitez déplacer ou copier une application, vous devez également mettre à jour le `deploymentProvider` chemin d’accès, afin que le client installe réellement à partir du nouvel emplacement. Ce chemin d’accès de la mise à jour s’applique principalement si vous avez installé des applications. Pour les applications en ligne qui sont toujours lancées via l’URL d’origine, en définissant le `deploymentProvider` est facultatif. Si `deploymentProvider` est définie, elle est respectée ; sinon, l’URL utilisée pour démarrer l’application sera utilisé en tant que l’URL de base pour télécharger les fichiers d’application.
+Si vous souhaitez déplacer ou copier une application, vous devez également mettre à jour le `deploymentProvider` chemin d’accès, afin que le client s’installe à partir du nouvel emplacement. La mise à jour de ce chemin d’accès est principalement un problème si vous avez installé des applications. Pour les applications en ligne qui sont toujours lancées par le biais de l’URL d’origine, la définition de `deploymentProvider` est facultative. Si `deploymentProvider` est défini, il sera respecté ; dans le cas contraire, l’URL utilisée pour démarrer l’application sera utilisée comme URL de base pour télécharger les fichiers d’application.
 
 > [!NOTE]
-> Chaque fois que vous mettez à jour le manifeste vous devez également le signer à nouveau.
+> Chaque fois que vous mettez à jour le manifeste, vous devez également le signer à nouveau.
 
 ## <a name="see-also"></a>Voir aussi
 
-[Résoudre les problèmes de déploiements ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)
-[applications ClickOnce Secure](../deployment/securing-clickonce-applications.md)
-[choisir une stratégie de déploiement ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)
+[Résoudre les problèmes liés aux déploiements ClickOnce](../deployment/troubleshooting-clickonce-deployments.md) 
+ [Sécuriser les applications ClickOnce](../deployment/securing-clickonce-applications.md) 
+ [Choisir une stratégie de déploiement ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)

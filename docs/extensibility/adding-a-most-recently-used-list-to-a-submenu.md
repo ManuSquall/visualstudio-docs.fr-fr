@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3f73f948befc7665ecc3a40f816389bfaae8e4fd
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904205"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>Ajouter une liste des derniers fichiers utilisés à un sous-menu

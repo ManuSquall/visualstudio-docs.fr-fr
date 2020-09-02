@@ -83,7 +83,7 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 > [!NOTE]
 > Cette fonctionnalité ne peut pas être utilisée dans les projets de modèle Word. Elle ne peut l'être que dans des projets de document Word, de classeur Excel ou de modèle Excel.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  Avant de pouvoir autoriser le code VBA à exécuter un appel dans l'assembly de personnalisation, votre projet doit remplir les conditions suivantes :
 
 - Le document doit avoir l'une des extensions de nom de fichier suivantes :

@@ -14,25 +14,25 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 199cee66013392a253139abf8ef1b88b502abac2
-ms.sourcegitcommit: ce3d0728ec1063ab548dac71c8eaf26d20450acc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80472610"
 ---
 # <a name="step-4-add-the-checktheanswer-method"></a>Étape 4 : Ajouter la méthode CheckTheAnswer()
 
-Dans la quatrième partie de ce didacticiel, vous allez écrire une méthode, `CheckTheAnswer()`, permettant de déterminer si les réponses aux problèmes mathématiques sont correctes. Cette rubrique fait partie d'une série de didacticiels sur les concepts de codage de base. Pour un aperçu du tutoriel, voir [Tutorial 2: Créer un quiz de mathématiques chronométrés](../ide/tutorial-2-create-a-timed-math-quiz.md).
+Dans la quatrième partie de ce didacticiel, vous allez écrire une méthode, `CheckTheAnswer()`, permettant de déterminer si les réponses aux problèmes mathématiques sont correctes. Cette rubrique fait partie d'une série de didacticiels sur les concepts de codage de base. Pour obtenir une vue d’ensemble du didacticiel, consultez [didacticiel 2 : créer un questionnaire mathématique chronométré](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 > [!NOTE]
-> Cette rubrique fait partie d'une série de didacticiels sur les concepts de codage de base. Pour un aperçu du tutoriel, voir [Tutorial 2: Créer un quiz de mathématiques chronométrés](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Cette rubrique fait partie d'une série de didacticiels sur les concepts de codage de base. Pour obtenir une vue d’ensemble du didacticiel, consultez [didacticiel 2 : créer un questionnaire mathématique chronométré](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 ## <a name="to-verify-whether-the-answers-are-correct"></a>Pour vérifier si les réponses sont correctes
 
 > [!NOTE]
 > Si vous programmez en Visual Basic, vous utiliserez le mot clé `Function` à la place du mot clé `Sub` habituel, car cette méthode retourne une valeur. En effet, contrairement aux procédures Function, les procédures Sub ne retournent aucune valeur.
 
-1. Ajoutez la méthode `CheckTheAnswer()`. Cette méthode doit être en ligne avec les `StartTheQuiz()`autres méthodes que vous avez faites, telles que .
+1. Ajoutez la méthode `CheckTheAnswer()`. Cette méthode doit être alignée sur les autres méthodes que vous avez effectuées, telles que `StartTheQuiz()` .
 
      Quand cette méthode est appelée, elle ajoute les valeurs d’addend1 et d’addend2, puis compare le résultat à la valeur dans le contrôle <xref:System.Windows.Forms.NumericUpDown> de somme. Si les valeurs sont égales, la méthode retourne la valeur `true`. Dans le cas contraire, la méthode retourne la valeur `false`. Votre code doit ressembler à ce qui suit.
 
@@ -43,7 +43,7 @@ Dans la quatrième partie de ce didacticiel, vous allez écrire une méthode, `C
 
      Vous vérifierez ensuite la réponse en mettant à jour le code dans la méthode, afin que le gestionnaire d'événements <xref:System.Windows.Forms.Timer.Tick> du minuteur appelle la nouvelle méthode `CheckTheAnswer()`.
 
-2. Ajoutez le code `if else` suivant à `Timer1_Tick()` l’instruction dans la méthode, de sorte que la minuterie s’arrête lorsque l’utilisateur obtient la bonne réponse.
+2. Ajoutez le code suivant à l' `if else` instruction dans la `Timer1_Tick()` méthode, afin que la minuterie s’arrête lorsque l’utilisateur obtient le droit de réponse.
 
      [!code-vb[VbExpressTutorial3Step4#10](../ide/codesnippet/VisualBasic/step-4-add-the-checktheanswer-parens-method_2.vb)]
      [!code-csharp[VbExpressTutorial3Step4#10](../ide/codesnippet/CSharp/step-4-add-the-checktheanswer-parens-method_2.cs)]
@@ -59,6 +59,6 @@ Dans la quatrième partie de ce didacticiel, vous allez écrire une méthode, `C
 
 ## <a name="to-continue-or-review"></a>Pour continuer ou examiner
 
-- Pour passer à l’étape suivante tutoriel, voir **[Step 5: Ajouter Enter gestionnaires d’événements pour les contrôles NumericUpDown](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md)**.
+- Pour passer à l’étape suivante du didacticiel, consultez **[étape 5 : ajouter des gestionnaires d’événements Enter pour les contrôles NumericUpDown](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md)**.
 
 - Pour revenir à l’étape précédente du tutoriel, consultez [Étape 3 : ajouter un compte à rebours](../ide/step-3-add-a-countdown-timer.md).

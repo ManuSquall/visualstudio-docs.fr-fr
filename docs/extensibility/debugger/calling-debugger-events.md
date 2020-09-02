@@ -11,16 +11,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3deef418620ab17297b4ef7e824a0d95c25e439e
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904324"
 ---
 # <a name="call-debugger-events"></a>Appeler les événements du débogueur
 Les événements dans les sessions de débogage se produisent dans un ordre spécifique.
 
-## <a name="discussion"></a>Discussions
+## <a name="discussion"></a>Discussion
  Pour comprendre le modèle d’appels entre le moteur de débogage (DE) et le gestionnaire de débogage de session (SDM), les éléments suivants représentent l’ordre d’appel des événements qui se produisent dans une session de débogage classique :
 
 1. [Attachement et détachement d’un programme](../../extensibility/debugger/attaching-and-detaching-to-a-program.md)

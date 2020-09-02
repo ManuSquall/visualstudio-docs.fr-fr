@@ -1,5 +1,5 @@
 ---
-title: Élément KeyBinding | Microsoft Docs
+title: KeyBinding, élément | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,18 +12,18 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 75d96098e8444aac9a4fc6f895099435b54f640b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180325"
 ---
 # <a name="keybinding-element"></a>Élément KeyBinding
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-L’élément de combinaison de touches Spécifie les raccourcis clavier pour les commandes.  
+L’élément KeyBinding spécifie les raccourcis clavier pour les commandes.  
   
- Commandes peuvent avoir un ou deux combinaisons de touches qui s’y rapportent. Un exemple d’une liaison de clé unique est CTRL + S pour le **enregistrer** commande. Les combinaisons de touches doubles nécessitent deux combinaisons de touches successives pour déclencher une commande. Un exemple d’une liaison de clé double est CTRL + K, CTRL + K pour définir un signet.  
+ Les commandes peuvent être associées à des liaisons à clé unique et à deux clés. Un exemple de liaison de clé unique est CTRL + S pour la commande **Enregistrer** . Les combinaisons de touches doubles requièrent deux combinaisons de touches successives pour déclencher une commande. Voici un exemple de liaison à deux clés : CTRL + K, CTRL + K pour définir un signet.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -38,14 +38,14 @@ L’élément de combinaison de touches Spécifie les raccourcis clavier pour le
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|GUID|Requis.|  
-|id|Requis.|  
-|éditeur|Requis. Le GUID de l’éditeur indique le contexte d’édition pour laquelle ce raccourci clavier est actif. La valeur d’étendue globale de liaison est « guidVSStd97 ».|  
-|key1|Requis. Les valeurs valides incluent tous les caractères d’alphanumériques peut être tapée et également les valeurs hexadécimales à deux chiffres précédés par 0 x et VK_constants.|  
-|mod1|facultatif. N’importe quelle combinaison de touches CTRL, ALT et MAJ séparés par un espace.|  
-|key2|facultatif. Les valeurs valides incluent tous les caractères d’alphanumériques peut être tapée et également les valeurs hexadécimales à deux chiffres précédés par 0 x et VK_constants.|  
-|mod2|facultatif. N’importe quelle combinaison de touches CTRL, ALT et MAJ séparés par un espace.|  
-|Émulateur|facultatif.|  
+|guid|Obligatoire.|  
+|id|Obligatoire.|  
+|éditeur|Obligatoire. Le GUID de l’éditeur indique le contexte d’édition pour lequel ce raccourci clavier est actif. La valeur de portée de liaison globale est « guidVSStd97 ».|  
+|key1|Obligatoire. Les valeurs valides incluent tous les alphanumériques typable, ainsi que les valeurs hexadécimales à deux chiffres précédées de 0x et VK_constants.|  
+|mod1|facultatif. Toutes les combinaisons de touches CTRL, ALT et Maj sont séparées par un espace.|  
+|key2|facultatif. Les valeurs valides incluent tous les alphanumériques typable, ainsi que les valeurs hexadécimales à deux chiffres précédées de 0x et VK_constants.|  
+|mod2|facultatif. Toutes les combinaisons de touches CTRL, ALT et Maj sont séparées par un espace.|  
+|émulateur|facultatif.|  
 |Condition|facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Éléments enfants  
@@ -59,9 +59,9 @@ L’élément de combinaison de touches Spécifie les raccourcis clavier pour le
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[Élément KeyBindings](../extensibility/keybindings-element.md)|Regroupe les éléments de combinaison de touches et autres regroupements de combinaisons de touches.|  
+|[Élément KeyBindings](../extensibility/keybindings-element.md)|Groupe les éléments KeyBinding et d’autres regroupements de combinaisons de touches.|  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a> Exemple  
   
 ```  
 <KeyBindings>  
@@ -73,5 +73,5 @@ L’élément de combinaison de touches Spécifie les raccourcis clavier pour le
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Élément KeyBindings](../extensibility/keybindings-element.md)   
+ [KeyBindings (élément)](../extensibility/keybindings-element.md)   
  [Fichiers Visual Studio Command Table (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

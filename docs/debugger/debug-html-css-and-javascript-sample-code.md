@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 460419d976211747c44f156a5821b88b75aa2e6b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72745543"
 ---
 # <a name="debug-html-and-css-sample-code"></a>Déboguer des exemples de code HTML et CSS
@@ -26,7 +26,7 @@ ms.locfileid: "72745543"
 Le code de cette rubrique est l’exemple de fichier pour le [démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md). Les erreurs présentes par conception dans le guide de démarrage rapide sont résolues dans cette version du code.
 
 ## <a name="sample-code"></a>Exemple de code
-Le code HTML suivant est utilisé dans l’étiquette \<body> du guide de démarrage rapide.
+Le code HTML suivant est utilisé dans la \<body> balise dans le démarrage rapide.
 
 ```html
 <div id="flipTemplate" data-win-control="WinJS.Binding.Template"
@@ -102,4 +102,4 @@ L'exemple de code suivant affiche le code JavaScript complet dans default.js. Le
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md)
+- [Démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md)

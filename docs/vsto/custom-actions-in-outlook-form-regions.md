@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 817cf9fe8698c2908e873246a8971f90fe72b460
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71254441"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Actions personnalisées dans les zones de formulaire Outlook
@@ -28,7 +28,7 @@ ms.locfileid: "71254441"
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="add-custom-actions-to-a-form-region"></a>Ajouter des actions personnalisées à une zone de formulaire
- Pour ajouter une action personnalisée à une zone de formulaire, utilisez la boîte de dialogue **actions personnalisées** . Vous pouvez ouvrir la boîte de dialogue **actions personnalisées** en sélectionnant la zone de formulaire dans **Explorateur de solutions**, en développant le nœud **manifeste** dans la **fenêtre Propriétés**, en sélectionnant la propriété **CustomActions** , puis en cliquant sur l’option bouton de sélection (![ASP.net Mobile designer ellipse](../sharepoint/media/mwellipsis.gif "ASP.net Mobile designer")).
+ Pour ajouter une action personnalisée à une zone de formulaire, utilisez la boîte de dialogue **actions personnalisées** . Vous pouvez ouvrir la boîte de dialogue **actions personnalisées** en sélectionnant la zone de formulaire dans **Explorateur de solutions**, en développant le nœud **manifeste** dans la **fenêtre Propriétés**, en sélectionnant la propriété **CustomActions** , puis en cliquant sur le bouton de sélection (![ellipse ASP.net Mobile designer](../sharepoint/media/mwellipsis.gif "Bouton de sélection du concepteur ASP.NET mobile")).
 
  Vous pouvez utiliser la boîte de dialogue **actions personnalisées** pour spécifier un *formulaire cible*. Un formulaire cible est le formulaire qui apparaît lorsque l’utilisateur exécute l’action personnalisée.
 
@@ -36,13 +36,13 @@ ms.locfileid: "71254441"
 
  Le tableau suivant décrit les propriétés qui sont disponibles dans la boîte de dialogue **actions personnalisées** .
 
-|Property|Description|
+|Propriété|Description|
 |--------------|-----------------|
 |**AddressLike**|Spécifie comment le formulaire cible sera adressé.|
 |**Corps**|Spécifie comment le corps de l’élément d’origine est ajouté au formulaire cible.|
 |**Activé**|Indique si l’action personnalisée est activée. Si cette propriété a la valeur **false**, l’action personnalisée est désactivée.|
 |**Méthode**|Spécifie le type de réponse disponible lors de l’exécution de l’action personnalisée. L’action personnalisée peut envoyer le formulaire, ouvrir le formulaire ou demander à l’utilisateur s’il souhaite envoyer ou ouvrir le formulaire.|
-|**Name**|Spécifie le nom interne que vous pouvez utiliser pour référencer cette action personnalisée dans le code.|
+|**Nom**|Spécifie le nom interne que vous pouvez utiliser pour référencer cette action personnalisée dans le code.|
 |**ShowOnRibbon**|Indique s’il faut afficher l’action personnalisée sur le ruban de l’élément d’origine.|
 |**SubjectPrefix**|Spécifie le texte inséré au début de la ligne d’objet du formulaire cible.|
 |**TargetForm**|Spécifie le nom de la classe de message du formulaire cible. Par exemple, tapez **IPM. Tâche** permettant d’ouvrir un formulaire de tâche.|
@@ -53,5 +53,5 @@ ms.locfileid: "71254441"
 
 ## <a name="see-also"></a>Voir aussi
 - [Créer des zones de formulaire Outlook](../vsto/creating-outlook-form-regions.md)
-- [Procédure pas à pas : Concevoir une zone de formulaire Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)
+- [Procédure pas à pas : conception d’une zone de formulaire Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)
 - [Associer une zone de formulaire à une classe de message Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)

@@ -9,10 +9,10 @@ caps.latest.revision: 25
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5234dddad13ccb52cc653a68ad1c35370a4eae18
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586338"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>Utilisation de différents navigateurs Web avec des tests codés de l'interface utilisateur
@@ -99,7 +99,7 @@ Les tests codés de l'interface utilisateur peuvent automatiser le test des appl
  Vous utilisez peut-être une version de [!INCLUDE[vs2011_first](../includes/vs2011-first-md.md)] qui ne prend pas en charge les tests codés de l'interface utilisateur à l'aide de différents navigateurs web. Pour utiliser de tels tests codés de l’interface utilisateur, vous devez utiliser Visual Studio Enterprise.
 
  *Que dois-je savoir de plus ?*
- **Remarques**
+ **Notes**
 
 - ![Prérequis](../test/media/prereq.png "PREREQ") Le navigateur Web Apple Safari n’est pas pris en charge.
 
@@ -109,7 +109,7 @@ Les tests codés de l'interface utilisateur peuvent automatiser le test des appl
 
 - ![Prérequis](../test/media/prereq.png "PREREQ") L’automatisation des actions d’interface utilisateur basées sur un navigateur, telles que l’agrandissement, le minimisation et la restauration, n’est pas prise en charge.
 
-  **Conseils**
+  **Conseil**
 
 - ![Conseil](../test/media/tip.png "Conseil") Vous pouvez configurer la sortie pour inclure des captures d’écran dans les journaux codés de l’interface utilisateur. Pour cela, vous devez définir des paramètres de configuration dans le fichier QTAgent32.exe.config. Par défaut, ce fichier est installé à l'endroit suivant :
 
@@ -127,7 +127,7 @@ Les tests codés de l'interface utilisateur peuvent automatiser le test des appl
 
 ## <a name="external-resources"></a>Ressources externes
 
-### <a name="videos"></a>Videos
+### <a name="videos"></a>Vidéos
  [Enregistrement dans IE et lecture dans tous les navigateurs](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!183&authkey=!ANqaLtCZbtJrImU)
 
  [Créer des tests multi-navigateurs avec le générateur de test codé de l’interface utilisateur](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!184&authkey=!AKG8CSow_qmeTq8)
@@ -138,7 +138,7 @@ Les tests codés de l'interface utilisateur peuvent automatiser le test des appl
 
  [Résoudre les problèmes des tests multi-navigateurs](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!182&authkey=!AEpS48i295B49FI)
 
-### <a name="guidance"></a>Assistance
+### <a name="guidance"></a>Guidance
  [Tester la livraison continue avec Visual Studio 2012 - Chapitre 2 : Tests unitaires : tester l’intérieur](https://msdn.microsoft.com/library/jj159340.aspx)
 
  [Test de la livraison continue avec Visual Studio 2012 - Chapitre 5 : Automatisation des tests système](https://msdn.microsoft.com/library/jj159335.aspx)
@@ -151,5 +151,5 @@ Les tests codés de l'interface utilisateur peuvent automatiser le test des appl
 ### <a name="forum"></a>Forum
  [Visual Studio UI Automation Testing (avec tests codés de l’interface utilisateur)](https://social.msdn.microsoft.com/Forums/en-US/vsautotest)
 
-## <a name="see-also"></a> Voir aussi
+## <a name="see-also"></a>Voir aussi
  [Utiliser UI Automation pour tester votre code](../test/use-ui-automation-to-test-your-code.md) [plateformes et configurations prises en charge pour les tests codés de l’interface utilisateur et les enregistrements des actions](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [analyse des tests codés de l’interface utilisateur à l’aide des journaux de test codé](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)
