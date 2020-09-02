@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointChecksumRequest2::GetChecksum | Microsoft Docs
+title: 'IDebugBreakpointChecksumRequest2 :: GetChecksum | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,16 +11,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bff00b5cbe0d59d3c7515d0a384746cd9303097c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158826"
 ---
 # <a name="idebugbreakpointchecksumrequest2getchecksum"></a>IDebugBreakpointChecksumRequest2::GetChecksum
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Récupère la somme de contrôle de document pour une demande de point d’arrêt étant donnée l’identificateur unique de l’algorithme de checksum à utiliser.  
+Récupère la somme de contrôle du document pour une demande de point d’arrêt en fonction de l’identificateur unique de l’algorithme de somme de contrôle à utiliser.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -40,16 +40,16 @@ public int GetChecksum(
   
 #### <a name="parameters"></a>Paramètres  
  `guidAlgorithm`  
- [in] Identificateur unique de l’algorithme de somme de contrôle.  
+ dans Identificateur unique de l’algorithme de somme de contrôle.  
   
  `pChecksumData`  
- [out] Somme de contrôle de document pour la demande de point d’arrêt.  
+ à Somme de contrôle du document pour la demande de point d’arrêt.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant montre une fonction qui vérifie si la somme de contrôle d’un document, qui est sur le point d’être lié, correspond à l’une à partir de l’interface utilisateur.  
+ L’exemple suivant montre une fonction qui vérifie si la somme de contrôle d’un document, qui est sur le paragraphe de la liaison, correspond à une valeur de l’interface utilisateur.  
   
 ```cpp#  
 bool CDebugProgram::DoChecksumsMatch(CDebugPendingBreakpoint *pPending, CDebugCodeContext *pContext)  

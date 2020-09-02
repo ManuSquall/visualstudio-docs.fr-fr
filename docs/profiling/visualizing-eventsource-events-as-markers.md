@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bd6339b3f55b4a4c9a1e2c90ff3183a36f16c178
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "64811547"
 ---
 # <a name="visualize-eventsource-events-as-markers"></a>Visualiser des événements EventSource en tant que marqueurs
@@ -29,7 +29,7 @@ Le visualiseur concurrentiel peut afficher des événements EventSource comme ma
 
 3. Dans tous les autres cas, l’événement est traité en tant que message.
 
-### <a name="importance"></a>importance
+### <a name="importance"></a>Importance
  Le tableau suivant établit une correspondance entre le niveau d’événement et l’importance du marqueur.
 
 |Niveau ETW|Importance dans le visualiseur concurrentiel|
@@ -65,7 +65,7 @@ Le visualiseur concurrentiel peut afficher des événements EventSource comme ma
 |3|Indicateur|
 |Toutes les autres erreurs|Message|
 
-### <a name="importance"></a>importance
+### <a name="importance"></a>Importance
  Vous pouvez utiliser le champ `cvImportance`, un octet, pour contrôler le paramètre d’importance d’un événement EventSource. Toutefois, nous vous recommandons de contrôler l’importance affichée d’un événement à l’aide de son niveau (Level).
 
 |Valeur de cvImportance|Importance dans le visualiseur concurrentiel|
@@ -94,4 +94,4 @@ Le visualiseur concurrentiel peut afficher des événements EventSource comme ma
 > L’utilisation de l’ID d’intervalle pour imbriquer des intervalles, permettre à des intervalles de se chevaucher partiellement sur le même thread ou permettre à des intervalles de démarrer sur un thread et de se terminer sur un autre n’est pas prise en charge.
 
 ## <a name="see-also"></a>Voir aussi
-- [Marqueurs de visualisation de concurrence](../profiling/concurrency-visualizer-markers.md)
+- [Marqueurs du visualiseur concurrentiel](../profiling/concurrency-visualizer-markers.md)

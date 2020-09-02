@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 6fcc4ae2a07eb7b1f155d6c65020e2c1a9ddc9f2
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546846"
 ---
 # <a name="ca1002-do-not-expose-generic-lists"></a>CA1002 : Ne pas exposer de listes génériques
@@ -32,11 +32,11 @@ ms.locfileid: "85546846"
 |Category|Microsoft. Design|
 |Modification avec rupture|Rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Un type contient un membre visible de l’extérieur, qui est un <xref:System.Collections.Generic.List%601?displayProperty=fullName> type, retourne un <xref:System.Collections.Generic.List%601?displayProperty=fullName> type, ou dont la signature inclut un <xref:System.Collections.Generic.List%601?displayProperty=fullName> paramètre.
 
 ## <a name="rule-description"></a>Description de la règle
- <xref:System.Collections.Generic.List%601?displayProperty=fullName>est une collection générique conçue pour les performances et non l’héritage. <xref:System.Collections.Generic.List%601?displayProperty=fullName>ne contient pas de membres virtuels qui facilitent la modification du comportement d’une classe héritée. Les collections génériques suivantes sont conçues pour l’héritage et doivent être exposées à la place de <xref:System.Collections.Generic.List%601?displayProperty=fullName> .
+ <xref:System.Collections.Generic.List%601?displayProperty=fullName> est une collection générique conçue pour les performances et non l’héritage. <xref:System.Collections.Generic.List%601?displayProperty=fullName> ne contient pas de membres virtuels qui facilitent la modification du comportement d’une classe héritée. Les collections génériques suivantes sont conçues pour l’héritage et doivent être exposées à la place de <xref:System.Collections.Generic.List%601?displayProperty=fullName> .
 
 - <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>
 

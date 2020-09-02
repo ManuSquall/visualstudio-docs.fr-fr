@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 03d21a824d2d3a9151dad139575f32e3417cbd39
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546833"
 ---
 # <a name="ca1043-use-integral-or-string-argument-for-indexers"></a>CA1043 : Utiliser un argument de chaîne ou intégral pour les indexeurs
@@ -32,7 +32,7 @@ ms.locfileid: "85546833"
 |Category|Microsoft. Design|
 |Modification avec rupture|Rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Un type public ou protégé contient un indexeur public ou protected qui utilise un type d’index autre que <xref:System.Int32?displayProperty=fullName> , <xref:System.Int64?displayProperty=fullName> , <xref:System.Object?displayProperty=fullName> ou <xref:System.String?displayProperty=fullName> .
 
 ## <a name="rule-description"></a>Description de la règle

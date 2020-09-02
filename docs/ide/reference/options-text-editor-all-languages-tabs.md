@@ -42,10 +42,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0fc169960cf757e4e334d5f77b06ff70b0d6da7c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75594745"
 ---
 # <a name="options-text-editor-all-languages-tabs"></a>Options, Éditeur de texte, Tous les langages, Onglets
@@ -63,7 +63,7 @@ None
 
 Lorsque cette option est sélectionnée, les nouvelles lignes ne sont pas mises en retrait. Le point d'insertion est placé dans la première colonne d'une nouvelle ligne.
 
-Block
+Bloquer
 
 Lorsque cette option est sélectionnée, les nouvelles lignes sont automatiquement mises en retrait. Le point d'insertion est placé sur le même point de départ que la ligne précédente.
 
@@ -89,9 +89,9 @@ Lorsque cette option est sélectionnée, les opérations de mise en retrait n’
 
 Conserver les tabulations
 
-Lorsque cette option est sélectionnée, les opérations de mise en retrait insèrent autant de caractères de tabulation que possible. Chaque personnage TAB remplit le nombre d’espaces spécifiés dans la **taille de l’onglet**. Si la valeur de **Taille du retrait** n’est pas un multiple pair de la valeur de **Taille des tabulations**, des espaces sont ajoutés pour combler la différence.
+Lorsque cette option est sélectionnée, les opérations de mise en retrait insèrent autant de caractères de tabulation que possible. Chaque caractère de tabulation remplit le nombre d’espaces spécifié dans **taille des tabulations**. Si la valeur de **Taille du retrait** n’est pas un multiple pair de la valeur de **Taille des tabulations**, des espaces sont ajoutés pour combler la différence.
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Options, Éditeur de texte, Tous les langages](../../ide/reference/options-text-editor-all-languages.md)
-- [Général, Environnement, Options Dialog Box](../../ide/reference/general-environment-options-dialog-box.md)
+- [Général, environnement, boîte de dialogue Options](../../ide/reference/general-environment-options-dialog-box.md)

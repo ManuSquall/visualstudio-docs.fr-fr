@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4fb849b43e21010d9183f53e31ccf6bbc70736b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157190"
 ---
 # <a name="automark"></a>AutoMark
@@ -34,10 +34,10 @@ VSPerfCmd.exe /Start:Method /WinCounter:Path /AutoMark:Milliseconds
  Spécifie le nombre de millisecondes écoulées entre les collectes des événements des compteurs de performances Windows.  
   
 ## <a name="required-options"></a>Options obligatoires  
- **WinCounter:** `Path`  
+ **WinCounter :**`Path`  
  Spécifie le compteur de performances Windows à collecter. Quand vous utilisez la méthode d’instrumentation, vous pouvez spécifier plusieurs compteurs Windows. Quand vous utilisez la méthode d’échantillonnage, vous ne pouvez spécifier qu’un seul compteur Windows. L’option **WinCounter** doit être spécifiée dans une ligne de commande qui contient l’option **Start**.  
   
-## <a name="example"></a>Exemples  
+## <a name="example"></a>Exemple  
  Dans cet exemple, un intervalle d’échantillonnage de 1 000 millisecondes est défini pour deux compteurs de performances Windows.  
   
 ```  
@@ -46,7 +46,7 @@ VSPerfCmd.exe /Launch:TestApp.exe
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [VSPerfCmd](../profiling/vsperfcmd.md)   
+ [Option](../profiling/vsperfcmd.md)   
  [Profilage d’applications autonomes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilage d’applications web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Profilage de services](../profiling/command-line-profiling-of-services.md)
+ [Profilage d’applications Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Profilage des services](../profiling/command-line-profiling-of-services.md)

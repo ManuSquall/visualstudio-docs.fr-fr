@@ -1,5 +1,5 @@
 ---
-title: Boîte de dialogue de recherche processus | Microsoft Docs
+title: Boîte de dialogue recherche de processus | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,29 +12,29 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eae6321cdc8d94b1f1344f36a1332aa0eee0bdb6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198129"
 ---
 # <a name="process-search-dialog-box"></a>Boîte de dialogue Recherche d'un processus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Utilisez cette boîte de dialogue pour rechercher et sélectionner le nœud d’un processus spécifique dans [vue processus](../debugger/processes-view.md). Pour afficher cette boîte de dialogue, déplacez le focus à un **processus** fenêtre d’affichage. Puis choisissez **rechercher le processus** à partir de la **recherche** menu.  
+Utilisez cette boîte de dialogue pour rechercher et sélectionner le nœud d’un processus spécifique dans la [vue processus](../debugger/processes-view.md). Pour afficher cette boîte de dialogue, déplacez le focus vers une fenêtre vue **processus** . Choisissez ensuite **Rechercher le processus** dans le menu **Rechercher** .  
   
- Les paramètres suivants sont disponibles :  
+ Les options suivantes sont disponibles :  
   
- **Process**  
- L’ID de processus à rechercher.  
+ **Processus**  
+ ID de processus à rechercher.  
   
  **Module**  
  Chaîne de module à rechercher.  
   
- **Sens de la recherche vers le haut ou vers le bas**  
- La direction de la recherche initiale.  
+ **Direction de la recherche vers le haut ou vers le bas**  
+ Direction initiale de la recherche.  
   
-## <a name="related-sections"></a>Rubriques connexes  
+## <a name="related-sections"></a>Sections connexes  
  [Recherche d’un processus dans la vue processus](../debugger/how-to-search-for-a-process-in-processes-view.md)  
  Explique comment rechercher un processus spécifique dans la vue processus.  
   
@@ -42,13 +42,13 @@ Utilisez cette boîte de dialogue pour rechercher et sélectionner le nœud d’
  Affiche une arborescence des processus actifs.  
   
  [Vues Spy++](../debugger/spy-increment-views.md)  
- Explique les arborescences Spy ++ de windows, les messages, les processus et les threads.  
+ Explique les vues de l’arborescence Spy + + des fenêtres, des messages, des processus et des threads.  
   
- [Utilisation de Spy++](../debugger/using-spy-increment.md)  
- Présente l’outil Spy ++ et explique comment il peut être utilisé.  
+ [Utiliser Spy++](../debugger/using-spy-increment.md)  
+ Présente l’outil Spy + + et explique comment l’utiliser.  
   
- [Propriétés du processus, boîte de dialogue](../debugger/process-properties-dialog-box.md)  
+ [Boîte de dialogue Propriétés du processus](../debugger/process-properties-dialog-box.md)  
  Permet d’afficher les propriétés d’un processus sélectionné dans la vue processus.  
   
- [Informations de référence sur Spy++](../debugger/spy-increment-reference.md)  
- Inclut des sections décrivant chaque Spy ++ menu et boîte de dialogue.
+ [Référence Spy++](../debugger/spy-increment-reference.md)  
+ Comprend des sections décrivant chaque menu et boîte de dialogue Spy + +.

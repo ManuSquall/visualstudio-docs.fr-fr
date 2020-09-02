@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bd9775bf03754913aea84f41e9878e755ff15d95
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198361"
 ---
 # <a name="span-class"></a>span, classe
@@ -35,7 +35,7 @@ class span;
   
 ### <a name="public-constructors"></a>Constructeurs publics  
   
-|Name|Description|  
+|Nom|Description|  
 |----------|-----------------|  
 |[span::span, constructeur](../profiling/span-span-constructor.md)|Initialise une nouvelle instance de la classe `span`.|  
 |[span::~span, destructeur](../profiling/span-tilde-span-destructor.md)|Détruit l’objet `span` et libère ses ressources.|  
@@ -49,4 +49,4 @@ class span;
  **Espace de noms** : Concurrency::diagnostic  
   
 ## <a name="see-also"></a>Voir aussi  
- [diagnostic, espace de noms](../profiling/diagnostic-namespace.md)
+ [Espace de noms diagnostic](../profiling/diagnostic-namespace.md)

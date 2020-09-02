@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 2ca0fb61c0973553ee6d410bc8b2718d19aeb28c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546859"
 ---
 # <a name="ca1044-properties-should-not-be-write-only"></a>CA1044 : Les propriétés ne doivent pas être en écriture seule
@@ -32,7 +32,7 @@ ms.locfileid: "85546859"
 |Category|Microsoft. Design|
 |Modification avec rupture|Rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  La propriété publique ou protégée a un accesseur Set mais n’a pas d’accesseur Get.
 
 ## <a name="rule-description"></a>Description de la règle
@@ -45,7 +45,7 @@ ms.locfileid: "85546859"
  Il est fortement recommandé de ne pas supprimer un avertissement de cette règle.
 
 ## <a name="example"></a>Exemple
- Dans l’exemple suivant, `BadClassWithWriteOnlyProperty` est un type avec une propriété en écriture seule. `GoodClassWithReadWriteProperty`contient le code corrigé.
+ Dans l’exemple suivant, `BadClassWithWriteOnlyProperty` est un type avec une propriété en écriture seule. `GoodClassWithReadWriteProperty` contient le code corrigé.
 
  [!code-csharp[FxCop.Design.PropertiesNotWriteOnly#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.PropertiesNotWriteOnly/cs/FxCop.Design.PropertiesNotWriteOnly.cs#1)]
  [!code-vb[FxCop.Design.PropertiesNotWriteOnly#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.PropertiesNotWriteOnly/vb/PropertiesNotWriteOnly.vb#1)]

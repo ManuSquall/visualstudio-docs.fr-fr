@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 85d3c146775ac06b3118186738ee74932a4c452a
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350470"
 ---
 # <a name="send-messages-to-the-output-window"></a>Envoyer des messages vers la Fenêtre Sortie
@@ -54,6 +54,6 @@ La fenêtre **sortie** peut également afficher des informations sur les éléme
 ## <a name="see-also"></a>Voir aussi
 - [Sécurité du débogueur](../debugger/debugger-security.md)
 - [Fenêtre Sortie](../ide/reference/output-window.md)
-- [Trace et instrumentation d’applications](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)
+- [Tracer et instrumenter les applications](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)
 - [Types de projets C#, F # et Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
 - [Débogage de code managé](../debugger/debugging-managed-code.md)

@@ -14,45 +14,45 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8d3f453770dbb389a688db0a9edcc8e97e179858
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62952739"
 ---
-# <a name="create-sharepoint-features"></a>Créer des fonctionnalités de SharePoint
-  Vous pouvez utiliser une fonctionnalité SharePoint pour regrouper des éléments de projet SharePoint connexes pour simplifier le déploiement. Vous pouvez créer des fonctionnalités, définir des étendues et marquer les autres fonctionnalités en tant que dépendances à l’aide du Concepteur de fonctionnalités SharePoint. Le concepteur génère également un manifeste, qui est un fichier XML qui décrit chaque fonctionnalité.
+# <a name="create-sharepoint-features"></a>Créer des fonctionnalités SharePoint
+  Vous pouvez utiliser une fonctionnalité SharePoint pour regrouper des éléments de projet SharePoint connexes pour faciliter le déploiement. Vous pouvez créer des fonctionnalités, définir des étendues et marquer d’autres fonctionnalités en tant que dépendances à l’aide du concepteur de fonctionnalités SharePoint. Le concepteur génère également un manifeste, qui est un fichier XML décrivant chaque fonctionnalité.
 
 ## <a name="add-features-to-the-sharepoint-solution"></a>Ajouter des fonctionnalités à la solution SharePoint
- Vous pouvez ajouter une fonctionnalité à la solution SharePoint à l’aide de l’Explorateur de solutions ou l’Explorateur de package. Vous pouvez utiliser une des méthodes suivantes pour ajouter une fonctionnalité.
+ Vous pouvez ajouter une fonctionnalité à la solution SharePoint à l’aide de Explorateur de solutions ou de l’Explorateur de package. Vous pouvez utiliser l’une des méthodes suivantes pour ajouter une fonctionnalité.
 
-- Dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour **fonctionnalités**, puis choisissez **ajouter une fonctionnalité**.
+- Dans **Explorateur de solutions**, ouvrez le menu contextuel des **fonctionnalités**, puis choisissez **Ajouter une fonctionnalité**.
 
-- Dans **Explorateur de package**, ouvrez le menu contextuel pour le package, puis choisissez **ajouter une fonctionnalité**.
+- Dans l' **Explorateur de packages**, ouvrez le menu contextuel du package, puis choisissez Ajouter une **fonctionnalité**.
 
-## <a name="using-the-feature-designer"></a>À l’aide du Concepteur de fonctionnalités
- Une solution SharePoint peut contenir une ou plusieurs fonctionnalités de SharePoint, lesquelles sont regroupées sous le nœud de fonction dans l’Explorateur de solutions. Chaque fonctionnalité possède son propre **Concepteur de fonctionnalités** que vous pouvez utiliser pour personnaliser les propriétés de fonctionnalité. Pour plus d'informations, voir [Procédure : Personnaliser une fonctionnalité SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md). Pour distinguer les uns des autres fonctionnalités, vous pouvez configurer les propriétés telles que le titre, la description, la version et la portée.
+## <a name="using-the-feature-designer"></a>Utilisation du concepteur de fonctionnalités
+ Une solution SharePoint peut contenir une ou plusieurs fonctionnalités SharePoint, qui sont regroupées sous le nœud Feature dans Explorateur de solutions. Chaque fonctionnalité possède son propre **Concepteur de fonctionnalités** que vous pouvez utiliser pour personnaliser les propriétés de la fonctionnalité. Pour plus d’informations, consultez [Comment : personnaliser une fonctionnalité SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md). Pour distinguer les fonctionnalités les unes des autres, vous pouvez configurer les propriétés des fonctionnalités telles que le titre, la description, la version et l’étendue.
 
-### <a name="feature-designer-options"></a>Options du Concepteur de fonctionnalité
- Après avoir créé une fonctionnalité, vous pouvez utiliser le Concepteur de fonctionnalités pour le personnaliser.
+### <a name="feature-designer-options"></a>Options du concepteur de fonctionnalités
+ Après avoir créé une fonctionnalité, vous pouvez utiliser le concepteur de fonctionnalités pour la personnaliser.
 
- Le tableau suivant décrit les propriétés de fonctionnalité qui sont affichent dans le Concepteur de fonctionnalités.
+ Le tableau suivant décrit les propriétés de fonctionnalité qui s’affichent dans le concepteur de fonctionnalités.
 
 |Propriété|Description|
 |--------------|-----------------|
-|Titre|Optionnel. Le titre par défaut de la fonctionnalité est défini *SolutionName* *FeatureName*.|
-|Description|Optionnel. La description de la fonctionnalité SharePoint.|
-|Portée|Obligatoire. Si une fonction est créée à l’aide de **l’Explorateur de solutions**, l’étendue est définie sur le Web par défaut.<br /><br /> -Batterie de serveurs : Activer une fonctionnalité pour une batterie de serveurs.<br /><br /> -Site : Activer une fonctionnalité pour tous les sites web dans une collection de sites.<br /><br /> -Web : Activer une fonctionnalité pour un site web spécifique.<br /><br /> -Application Web : Activer une fonctionnalité pour tous les sites web dans une application web.|
-|Éléments dans la Solution|Tous les éléments SharePoint peuvent être ajoutés à la fonctionnalité.|
-|Éléments dans la fonctionnalité|Les éléments de projet SharePoint qui ont été ajoutés à la fonctionnalité.|
+|Titre|facultatif. Le titre par défaut de la fonctionnalité a la valeur *SolutionName* *NomFonctionnalité*.|
+|Description|facultatif. Description de la fonctionnalité SharePoint.|
+|Étendue|Obligatoire. Si une fonctionnalité est créée à l’aide de **Explorateur de solutions**, l’étendue est définie sur Web par défaut.<br /><br /> -Batterie de serveurs : activer une fonctionnalité pour une batterie de serveurs entière.<br /><br /> -Site : active une fonctionnalité pour tous les sites Web d’une collection de sites.<br /><br /> -Web : active une fonctionnalité pour un site Web spécifique.<br /><br /> -WebApplication : active une fonctionnalité pour tous les sites Web d’une application Web.|
+|Éléments de la solution|Tous les éléments SharePoint qui peuvent être ajoutés à la fonctionnalité.|
+|Éléments dans la fonctionnalité|Éléments de projet SharePoint qui ont été ajoutés à la fonctionnalité.|
 
 ## <a name="add-and-remove-sharepoint-project-items"></a>Ajouter et supprimer des éléments de projet SharePoint
- Vous pouvez sélectionner les éléments de projet SharePoint que vous souhaitez ajouter une fonctionnalité SharePoint pour le déploiement. Utilisez le **Concepteur de fonctionnalités** pour ajouter et supprimer des éléments dans des fonctionnalités et consulter le manifeste de fonctionnalité. Pour plus d'informations, voir [Procédure : Ajouter et supprimer des éléments dans des fonctionnalités SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md).
+ Vous pouvez sélectionner les éléments de projet SharePoint auxquels vous souhaitez ajouter une fonctionnalité SharePoint pour le déploiement. Utilisez le **Concepteur de fonctionnalités** pour ajouter et supprimer des éléments dans les fonctionnalités, et pour afficher le manifeste de la fonctionnalité. Pour plus d’informations, consultez [Comment : ajouter et supprimer des éléments dans des fonctionnalités SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md).
 
-## <a name="add-feature-dependencies"></a>Ajouter des dépendances de fonctionnalité
- Vous pouvez configurer le manifeste de fonctionnalité afin que le serveur SharePoint active certaines fonctionnalités avant que votre fonctionnalité soit activée. Par exemple, si votre fonctionnalité SharePoint dépend d’autres fonctionnalités pour les fonctionnalités ou données, le serveur SharePoint peut tout d’abord essayez d’activer les fonctionnalités qui dépend de votre fonction. Pour plus d'informations, voir [Procédure : Ajouter et supprimer des dépendances de fonctionnalité](../sharepoint/how-to-add-and-remove-feature-dependencies.md).
+## <a name="add-feature-dependencies"></a>Ajouter des dépendances de fonctionnalités
+ Vous pouvez configurer le manifeste de fonctionnalité de sorte que le serveur SharePoint active certaines fonctionnalités avant que votre fonctionnalité soit activée. Par exemple, si votre fonctionnalité SharePoint dépend d’autres fonctionnalités de fonctionnalités ou de données, le serveur SharePoint peut tout d’abord essayer d’activer l’une des fonctionnalités dont dépend votre fonctionnalité. Pour plus d’informations, consultez [Comment : ajouter et supprimer des dépendances de fonctionnalités](../sharepoint/how-to-add-and-remove-feature-dependencies.md).
 
 ## <a name="see-also"></a>Voir aussi
-- [Guide pratique pour Personnaliser une fonctionnalité SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)
-- [Guide pratique pour Ajouter et supprimer des éléments dans des fonctionnalités SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)
-- [Guide pratique pour Ajouter et supprimer des dépendances de fonctionnalité](../sharepoint/how-to-add-and-remove-feature-dependencies.md)
+- [Comment : personnaliser une fonctionnalité SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)
+- [Comment : ajouter et supprimer des éléments dans des fonctionnalités SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)
+- [Comment : ajouter et supprimer des dépendances de fonctionnalités](../sharepoint/how-to-add-and-remove-feature-dependencies.md)

@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 30fd29357ab8b42ea6a8baa6412f9ccf7eafed28
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350509"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Prise en main du débogage des applications multithread (C#, Visual Basic, C++)
@@ -209,7 +209,7 @@ Vous avez tout d’abord besoin d’un projet d’application multithread. Un ex
     End Class
     ```
 
-1. Dans le menu **Fichier**, cliquez sur **Enregistrer tout**.
+1. Dans le menu **Fichier**, sélectionnez **Enregistrer tout**.
 
 1. (Visual Basic uniquement) Dans Explorateur de solutions (volet droit), cliquez avec le bouton droit sur le nœud du projet, puis choisissez **Propriétés**. Sous l’onglet **application** , remplacez l' **objet Startup** par **simple**.
 
@@ -313,7 +313,7 @@ Vous pouvez marquer les threads pour effectuer le suivi des threads importants e
 
 5. Pour supprimer l’indicateur de threads, cliquez avec le bouton droit sur un ou plusieurs threads avec indicateur dans la fenêtre **Espion parallèle** , puis sélectionnez **Supprimer l’indicateur**.
 
-### <a name="freeze-and-thaw-thread-execution"></a><a name="bkmk_freeze"></a>Figer et libérer l’exécution des threads
+### <a name="freeze-and-thaw-thread-execution"></a><a name="bkmk_freeze"></a> Figer et libérer l’exécution des threads
 
 > [!TIP]
 > Vous pouvez figer et libérer (suspendre et reprendre) les threads pour contrôler l’ordre dans lequel les threads effectuent le travail. Cela peut vous aider à résoudre les problèmes d’accès concurrentiel tels que les blocages et les conditions de concurrence.
@@ -332,7 +332,7 @@ Vous pouvez marquer les threads pour effectuer le suivi des threads importants e
 
     L’application peut également instancier de nouveaux threads. Les nouveaux threads ne sont pas signalés et ne sont pas figés.
 
-### <a name="follow-a-single-thread-with-conditional-breakpoints"></a><a name="bkmk_follow_a_thread"></a>Suivre un thread unique avec des points d’arrêt conditionnels
+### <a name="follow-a-single-thread-with-conditional-breakpoints"></a><a name="bkmk_follow_a_thread"></a> Suivre un thread unique avec des points d’arrêt conditionnels
 
 Il peut être utile de suivre l’exécution d’un thread unique dans le débogueur. Pour ce faire, vous pouvez figer les threads qui ne vous intéressent pas. Dans certains scénarios, vous devrez peut-être suivre un thread unique sans figer d’autres threads, par exemple pour reproduire un bogue particulier. Pour suivre un thread sans figer d’autres threads, vous devez éviter de vous arrêter dans le code, sauf sur le thread qui vous intéresse. Pour ce faire, vous pouvez définir un [point d’arrêt conditionnel](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).
 

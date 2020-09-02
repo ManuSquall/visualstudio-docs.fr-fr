@@ -27,10 +27,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5deb42b2ab708bae572aebbcac15af2d077b14fa
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350483"
 ---
 # <a name="find-memory-leaks-with-the-crt-library"></a>Rechercher les fuites de mémoire avec la bibliothèque CRT
@@ -186,7 +186,7 @@ Vous pouvez utiliser le numéro d'allocation pour définir un point d'arrêt sur
 
 1. Dans la fenêtre **Espion** , tapez `_crtBreakAlloc` dans la colonne **nom** .
 
-   Si vous utilisez la version DLL multithread de la bibliothèque CRT (l’option/MD), ajoutez l’opérateur de contexte :`{,,ucrtbased.dll}_crtBreakAlloc`
+   Si vous utilisez la version DLL multithread de la bibliothèque CRT (l’option/MD), ajoutez l’opérateur de contexte : `{,,ucrtbased.dll}_crtBreakAlloc`
    
    Assurez-vous que les symboles de débogage sont chargés. Dans le cas contraire, `_crtBreakAlloc` il est signalé comme non *identifié*.
 
@@ -229,7 +229,7 @@ Pour sortir le contenu d’une `_CrtMemState` structure, transmettez la structur
 _CrtMemDumpStatistics( &s1 );
 ```
 
-`_ CrtMemDumpStatistics`génère un vidage de l’état de la mémoire qui ressemble à ceci :
+`_ CrtMemDumpStatistics` génère un vidage de l’état de la mémoire qui ressemble à ceci :
 
 ```cmd
 0 bytes in 0 Free Blocks.
@@ -252,13 +252,13 @@ if ( _CrtMemDifference( &s3, &s1, &s2) )
    _CrtMemDumpStatistics( &s3 );
 ```
 
-`_CrtMemDifference`compare les États de la mémoire `s1` et `s2` et retourne un résultat ( `s3` ) qui correspond à la différence entre `s1` et `s2` .
+`_CrtMemDifference` compare les États de la mémoire `s1` et `s2` et retourne un résultat ( `s3` ) qui correspond à la différence entre `s1` et `s2` .
 
 Pour rechercher les fuites de mémoire, une technique consiste à placer `_CrtMemCheckpoint` des appels au début et à la fin de votre application, puis à utiliser `_CrtMemDifference` pour comparer les résultats. Si `_CrtMemDifference` indique une fuite de mémoire, vous pouvez ajouter `_CrtMemCheckpoint` d’autres appels pour diviser votre programme à l’aide d’une recherche binaire, jusqu’à ce que vous ayez isolé la source de la fuite.
 
 ## <a name="false-positives"></a>Faux positifs
 
- `_CrtDumpMemoryLeaks`peut fournir des fausses indications de fuites de mémoire si une bibliothèque marque des allocations internes comme blocs normaux plutôt que des blocs CRT ou des blocs client. Dans ce cas, `_CrtDumpMemoryLeaks` est incapable d'indiquer la différence entre les allocations d'utilisateur et les allocations de bibliothèque internes. Si les destructeurs globaux des allocations de la bibliothèque s'exécutent après le point d'appel à `_CrtDumpMemoryLeaks`, chaque allocation de bibliothèque interne est signalée comme une fuite de mémoire. Les versions de la bibliothèque STL (Standard Template Library) antérieures à Visual Studio .NET peuvent générer des `_CrtDumpMemoryLeaks` rapports de faux positifs.
+ `_CrtDumpMemoryLeaks` peut fournir des fausses indications de fuites de mémoire si une bibliothèque marque des allocations internes comme blocs normaux plutôt que des blocs CRT ou des blocs client. Dans ce cas, `_CrtDumpMemoryLeaks` est incapable d'indiquer la différence entre les allocations d'utilisateur et les allocations de bibliothèque internes. Si les destructeurs globaux des allocations de la bibliothèque s'exécutent après le point d'appel à `_CrtDumpMemoryLeaks`, chaque allocation de bibliothèque interne est signalée comme une fuite de mémoire. Les versions de la bibliothèque STL (Standard Template Library) antérieures à Visual Studio .NET peuvent générer des `_CrtDumpMemoryLeaks` rapports de faux positifs.
 
 ## <a name="see-also"></a>Voir aussi
 

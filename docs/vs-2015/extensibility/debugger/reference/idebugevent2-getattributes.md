@@ -1,5 +1,5 @@
 ---
-title: IDebugEvent2::GetAttributes | Microsoft Docs
+title: 'IDebugEvent2 :: GetAttributes | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8396d633e682eb9c78aef5b1241e7f9fc635a325
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68144378"
 ---
 # <a name="idebugevent2getattributes"></a>IDebugEvent2::GetAttributes
@@ -40,13 +40,13 @@ int GetAttribute( 
   
 #### <a name="parameters"></a>Paramètres  
  `pdwAttrib`  
- [out] Une combinaison d’indicateurs de la [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md) énumération.  
+ à Combinaison d’indicateurs de l’énumération [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md) .  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="remarks"></a>Notes  
- Le [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interface est commune à tous les événements. Cette méthode décrit le type d’événement ; par exemple, est l’événement synchrone ou asynchrone et il est un événement d’arrêt.  
+ L’interface [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) est commune à tous les événements. Cette méthode décrit le type d’événement. par exemple, est l’événement synchrone ou asynchrone et s’agit-il d’un événement d’arrêt.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   

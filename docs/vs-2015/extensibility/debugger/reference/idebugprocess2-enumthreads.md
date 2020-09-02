@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::EnumThreads | Microsoft Docs
+title: 'IDebugProcess2 :: Enumthreads, | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3e9b6447827baa80da2843c992a8d2233dd1a4b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188024"
 ---
 # <a name="idebugprocess2enumthreads"></a>IDebugProcess2::EnumThreads
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Récupère une liste de tous les threads en cours d’exécution dans le processus.  
+Récupère une liste de tous les threads qui s’exécutent dans le processus.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -40,15 +40,15 @@ int EnumThreads(
   
 #### <a name="parameters"></a>Paramètres  
  `ppEnum`  
- [out] Retourne un [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md) objet qui contient une liste de tous les threads dans tous les programmes dans le processus.  
+ à Retourne un objet [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md) qui contient une liste de tous les threads dans tous les programmes du processus.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode énumère les threads en cours d’exécution dans chaque programme et les combine ensuite en une vue des threads de processus. Un seul thread peut exécuter plusieurs programmes. Cette méthode énumère une seule fois ce thread.  
+ Cette méthode énumère les threads en cours d’exécution dans chaque programme, puis les combine dans une vue de processus des threads. Un seul thread peut s’exécuter dans plusieurs programmes. Cette méthode énumère ce thread une seule fois.  
   
- Cette méthode présente une liste de threads du processus sans doublons. Sinon, pour énumérer les threads en cours d’exécution dans un programme particulier, utilisez le [EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md) (méthode).  
+ Cette méthode présente une liste des threads du processus sans doublons. Dans le cas contraire, pour énumérer les threads en cours d’exécution dans un programme particulier, utilisez la méthode [enumthreads,](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md) .  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)   

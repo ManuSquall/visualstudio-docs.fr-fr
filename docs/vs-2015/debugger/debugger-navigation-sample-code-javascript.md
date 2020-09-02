@@ -1,5 +1,5 @@
 ---
-title: Navigation exemple code débogueur (JavaScript) | Microsoft Docs
+title: Exemple de code de navigation du débogueur (JavaScript) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,18 +15,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6102fd8eace3db19e44a0214ce7ce98278b53eea
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198204"
 ---
 # <a name="debugger-navigation-sample-code-javascript"></a>Exemple de code de navigation du débogueur (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Le code dans cette rubrique est l’exemple de fichier pour le [contrôler l’exécution dans une session de débogage (JavaScript)](../debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript.md) rubrique.  
+Le code de cette rubrique est l’exemple de fichier pour l' [exécution du contrôle dans une rubrique de session de débogage (JavaScript)](../debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript.md) .  
   
-## <a name="defaultjs-sample-code"></a>exemple de code default.js  
+## <a name="defaultjs-sample-code"></a>Exemple de code default.js  
   
 ```javascript  
 // For an introduction to the Blank template, see the following documentation:  

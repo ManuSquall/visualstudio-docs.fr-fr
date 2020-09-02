@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::CauseBreak | Microsoft Docs
+title: 'IDebugEngine2 :: CauseBreak | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2b6e52e4885a61c3fe04fff5bdcca08fd00cf460
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198485"
 ---
 # <a name="idebugengine2causebreak"></a>IDebugEngine2::CauseBreak
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Les demandes que tous les programmes en cours de débogage par ce moteur de débogage (dé) pour arrêter l’exécution de la prochaine fois qu’un de ses threads tente de s’exécuter.  
+Demande que tous les programmes débogués par ce moteur de débogage (DE) interrompent l’exécution lors de la prochaine tentative d’exécution de l’un de leurs threads.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -37,10 +37,10 @@ int CauseBreak();
 ```  
   
 ## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode est asynchrone : une [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) événement est envoyé lorsque le programme tente ensuite d’exécuter une fois que cette méthode est appelée.  
+ Cette méthode est asynchrone : un événement [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) est envoyé lorsque le programme tente ensuite de s’exécuter après l’appel de cette méthode.  
   
 ## <a name="see-also"></a>Voir aussi  
  [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)   

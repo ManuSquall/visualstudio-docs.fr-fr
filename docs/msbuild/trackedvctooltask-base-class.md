@@ -12,10 +12,10 @@ ms.author: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 8a4272f7800e0532c0674fe7117e839cb16557d5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75594927"
 ---
 # <a name="trackedvctooltask-base-class"></a>Classe de base TrackedVCToolTask
@@ -30,23 +30,23 @@ Le tableau ci-dessous décrit les paramètres de la classe de base **TrackedVCTo
 |---------------|-----------------|
 |**DeleteOutputOnExecute**|Paramètre **booléen** facultatif.|
 |**EnableExecuteTool**|Paramètre **booléen** facultatif.|
-|**ExcludedInputPaths**|Paramètre **ITaskItem[]** en option.|
+|**ExcludedInputPaths**|Paramètre **ITaskItem []** facultatif.|
 |**MinimalRebuildFromTracking**|Paramètre **booléen** facultatif.|
-|**PathOverride**|Paramètre **de chaîne** facultatif.|
+|**PathOverride**|Paramètre de **chaîne** facultatif.|
 |**PostBuildTrackingCleanup**|Paramètre **booléen** facultatif.|
-|**RootSource**|Paramètre **de chaîne** facultatif.|
+|**RootSource**|Paramètre de **chaîne** facultatif.|
 |**SkippedExecution**|Paramètre de sortie **booléen** facultatif.|
 |**SourcesCompiled**|Paramètre de sortie **ITaskItem[]** facultatif.|
 |**TLogCommandFile**|Paramètre **ITaskItem** facultatif.|
-|**TLogReadFiles**|Paramètre **ITaskItem[]** en option.|
-|**TLogWriteFiles**|Paramètre **ITaskItem[]** en option.|
-|**ToolArchitecture**|Paramètre **de chaîne** facultatif.|
+|**TLogReadFiles**|Paramètre **ITaskItem []** facultatif.|
+|**TLogWriteFiles**|Paramètre **ITaskItem []** facultatif.|
+|**ToolArchitecture**|Paramètre de **chaîne** facultatif.|
 |**TrackCommandLines**|Paramètre **booléen** facultatif.|
 |**TrackFileAccess**|Paramètre **booléen** facultatif.|
-|**TrackedInputFilesToIgnore**|Paramètre **ITaskItem[]** en option.|
-|**TrackedInputFilesToIgnore**|Paramètre **ITaskItem[]** en option.|
-|**TrackerFrameworkPath**|Paramètre **de chaîne** facultatif.|
-|**TrackerSdkPath**|Paramètre **de chaîne** facultatif.|
+|**TrackedInputFilesToIgnore**|Paramètre **ITaskItem []** facultatif.|
+|**TrackedInputFilesToIgnore**|Paramètre **ITaskItem []** facultatif.|
+|**TrackerFrameworkPath**|Paramètre de **chaîne** facultatif.|
+|**TrackerSdkPath**|Paramètre de **chaîne** facultatif.|
 
 ## <a name="see-also"></a>Voir aussi
 

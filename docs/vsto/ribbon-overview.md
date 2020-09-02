@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 668517705caa7ba6baef0b85305bf4470bc3b26b
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985609"
 ---
 # <a name="ribbon-overview"></a>Vue d’ensemble du ruban
@@ -35,7 +35,7 @@ ms.locfileid: "72985609"
 ## <a name="customize-the-microsoft-office-ribbon"></a>Personnaliser le ruban Microsoft Office
  Pour personnaliser le ruban, ajoutez l’un des éléments de ruban suivants à votre projet Office :
 
-- **Ruban (concepteur visuel)**
+- **Ruban (Concepteur visuel)**
 
 - **Ruban (XML)**
 
@@ -83,7 +83,7 @@ ms.locfileid: "72985609"
 
  Pour plus d’informations sur l’exportation du ruban vers XML, consultez [Comment : exporter un ruban à partir du concepteur de ruban vers le ruban XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md).
 
-### <a name="update-the-code"></a>Mettre à jour le code
+### <a name="update-the-code"></a>Mettez à jour le code
  Un nouveau fichier de code du ruban est ajouté à **Explorateur de solutions**. Ce fichier contient la classe Ribbon XML. Vous devez créer des méthodes de rappel dans la région `Ribbon Callbacks` de cette classe pour gérer les actions de l'utilisateur, telles qu'un clic sur un bouton. Déplacez votre code des gestionnaires d'événements vers les méthodes de rappel et modifiez le code pour qu'il fonctionne avec le modèle de programmation de l'extensibilité du ruban (RibbonX). Pour plus d'informations, consultez [Ribbon XML](../vsto/ribbon-xml.md).
 
  Vous devez également ajouter le code à la classe `ThisAddIn`, `ThisWorkbook` ou `ThisDocument` qui remplace la méthode `CreateRibbonExtensibilityObject` et retourne la classe Ribbon XML à l'application Office.
@@ -103,10 +103,10 @@ ms.locfileid: "72985609"
 ### <a name="select-which-ribbons-to-display-at-run-time"></a>Sélectionner les rubans à afficher au moment de l’exécution
  Étant donné qu’un projet peut contenir plusieurs rubans, vous pouvez sélectionner le ruban à afficher au moment de l’exécution.
 
- Pour sélectionner un ruban à afficher au moment de l’exécution, remplacez la méthode `CreateRibbonExtensibilityObject` dans la classe `ThisAddin`, `ThisWorkbook`ou `ThisDocument` de votre projet et retournez le ruban que vous souhaitez afficher. L’exemple suivant vérifie la valeur d’un champ nommé `myCondition` et retourne le ruban approprié.
+ Pour sélectionner un ruban à afficher au moment de l’exécution, substituez la `CreateRibbonExtensibilityObject` méthode dans la `ThisAddin` `ThisWorkbook` classe, ou `ThisDocument` de votre projet et retournez le ruban que vous souhaitez afficher. L’exemple suivant vérifie la valeur d’un champ nommé `myCondition` et retourne le ruban approprié.
 
 > [!NOTE]
-> La syntaxe utilisée dans cet exemple retourne un ruban qui a été créé à l’aide de l’élément **Ruban (concepteur visuel)** . La syntaxe permettant de retourner un ruban créé à l’aide d’un élément **Ruban (XML)** est légèrement différente. Pour plus d'informations sur le retour d'un élément **Ruban (XML)** , consultez [Ruban XML](../vsto/ribbon-xml.md).
+> La syntaxe utilisée dans cet exemple retourne un ruban qui a été créé à l’aide de l’élément **Ruban (concepteur visuel)** . La syntaxe permettant de retourner un ruban créé à l’aide d’un élément **Ruban (XML)** est légèrement différente. Pour plus d'informations sur le retour d'un élément **Ruban (XML)**, consultez [Ruban XML](../vsto/ribbon-xml.md).
 
  Ajoutez le code suivant :
 
@@ -130,5 +130,5 @@ ms.locfileid: "72985609"
 |[Comment : ajouter des contrôles au mode Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)|Montre comment ajouter des contrôles au menu qui s’ouvre lorsque vous cliquez sur le **fichier**.|
 |[Comment : ajouter un lanceur de boîte de dialogue à un groupe de ruban](../vsto/how-to-add-a-dialog-box-launcher-to-a-ribbon-group.md)|Montre comment ajouter un lanceur de boîte de dialogue à n’importe quel groupe sur un ruban.|
 |[Comment : exporter un ruban à partir du concepteur de ruban vers le ruban XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)|Montre comment personnaliser le ruban de manière avancée en exportant le ruban du concepteur vers le ruban XML.|
-|[Élément XML Ribbon](../vsto/ribbon-xml.md)|Explique comment personnaliser un ruban à l’aide du ruban XML.|
+|[Ribbon XML](../vsto/ribbon-xml.md)|Explique comment personnaliser un ruban à l’aide du ruban XML.|
 |[Procédure pas à pas : création d’un onglet personnalisé à l’aide du concepteur de ruban](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|Montre comment créer un onglet de ruban personnalisé à l’aide de l’élément **Ruban (XML)** .|

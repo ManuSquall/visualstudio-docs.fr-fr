@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8c420266d08550398f33c2e2da9ba1b7bc41b5dc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68141930"
 ---
-# <a name="idiastackwalkframegetregistervalue"></a>IDiaStackWalkFrame::get_registerValue
+# <a name="idiastackwalkframeget_registervalue"></a>IDiaStackWalkFrame::get_registerValue
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Récupère la valeur d’un Registre.  
+Récupère la valeur d’un registre.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -36,13 +36,13 @@ HRESULT get_registerValue ( 
   
 #### <a name="parameters"></a>Paramètres  
  `index`  
- [in] Une valeur comprise entre le [CV_HREG_e (énumération)](../../debugger/debug-interface-access/cv-hreg-e.md) énumération spécifiant le Registre pour obtenir la valeur de.  
+ dans Valeur de l’énumération d' [énumération CV_HREG_e](../../debugger/debug-interface-access/cv-hreg-e.md) spécifiant le registre pour lequel obtenir la valeur.  
   
  `pRetVal`  
- [out] Retourne la valeur actuelle du Registre.  
+ à Retourne la valeur actuelle du Registre.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)   

@@ -47,7 +47,7 @@ Définit la catégorie du modèle et comment il s’affiche dans la boîte de di
 
 | Élément | Description |
 | - | - |
-| [Name](../extensibility/name-element-visual-studio-templates.md) | Élément requis.<br /><br /> Spécifie le nom du modèle tel qu’il apparaît dans la boîte de dialogue **nouveau projet** ou **Ajouter un nouvel élément** . |
+| [Nom](../extensibility/name-element-visual-studio-templates.md) | Élément requis.<br /><br /> Spécifie le nom du modèle tel qu’il apparaît dans la boîte de dialogue **nouveau projet** ou **Ajouter un nouvel élément** . |
 | [Description](../extensibility/description-element-visual-studio-templates.md) | Élément requis.<br /><br /> Spécifie la description du modèle telle qu’elle apparaît dans la boîte de dialogue **nouveau projet** ou **Ajouter un nouvel élément** . |
 | [Située](../extensibility/icon-element-visual-studio-templates.md) | Élément requis.<br /><br /> Spécifie le chemin d’accès et le nom du fichier image qui sert d’icône, qui apparaît dans la boîte de dialogue **nouveau projet** ou **Ajouter un nouvel élément** , pour le modèle. |
 | [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) | Élément requis.<br /><br /> Classe le modèle de projet de manière à ce qu’il apparaisse sous le groupe spécifié dans la boîte de dialogue **nouveau projet** . |

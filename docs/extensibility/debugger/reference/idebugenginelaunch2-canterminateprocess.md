@@ -1,5 +1,5 @@
 ---
-title: IDebugEngineLaunch2::CanTerminateProcess (fr) Microsoft Docs
+title: 'IDebugEngineLaunch2 :: CanTerminateProcess | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 91c68e0a0e314015c1f2e6df2a96243c6ce854e7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730561"
 ---
 # <a name="idebugenginelaunch2canterminateprocess"></a>IDebugEngineLaunch2::CanTerminateProcess
-Détermine si un processus peut être terminé.
+Détermine si un processus peut être arrêté.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,13 +41,13 @@ int CanTerminateProcess ( 
 
 ## <a name="parameters"></a>Paramètres
 `pProcess`\
-[dans] Un objet [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) qui représente le processus à mettre fin.
+dans Objet [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) qui représente le processus à arrêter.
 
-## <a name="return-value"></a>Valeur de retour
- En cas `S_OK`de succès, les retours; renvoie autrement un code d’erreur. Retourne `S_FALSE` si le moteur ne peut pas mettre fin au processus, par exemple, parce que l’accès est refusé.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` ; sinon, retourne un code d’erreur. Retourne `S_FALSE` si le moteur ne peut pas arrêter le processus, par exemple, parce que l’accès est refusé.
 
 ## <a name="remarks"></a>Notes
- Si cette `S_OK`méthode revient, alors c’est la méthode [TerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-terminateprocess.md) peut être appelée pour mettre fin au processus.
+ Si cette méthode retourne `S_OK` , la méthode [TerminateProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-terminateprocess.md) peut être appelée pour terminer le processus.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)

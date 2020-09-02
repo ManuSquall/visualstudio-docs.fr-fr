@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3b5286a4bddff2b529abd0a565bb4dbeef7ffaf3
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71251864"
 ---
 # <a name="listobject-control"></a>ListObject (contrôle)
@@ -31,7 +31,7 @@ ms.locfileid: "71251864"
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
 ## <a name="create-the-control"></a>Créer le contrôle
- Dans les projets au niveau du document, vous pouvez ajouter des contrôles <xref:Microsoft.Office.Tools.Excel.ListObject> à une feuille de calcul au moment du design ou au moment de l’exécution. Dans les projets de complément VSTO, vous pouvez ajouter des contrôles <xref:Microsoft.Office.Tools.Excel.ListObject> uniquement au moment de l’exécution. Pour plus d'informations, voir [Procédure : Ajoutez des contrôles ListObject aux feuilles](../vsto/how-to-add-listobject-controls-to-worksheets.md)de calcul.
+ Dans les projets au niveau du document, vous pouvez ajouter des contrôles <xref:Microsoft.Office.Tools.Excel.ListObject> à une feuille de calcul au moment du design ou au moment de l’exécution. Dans les projets de complément VSTO, vous pouvez ajouter des contrôles <xref:Microsoft.Office.Tools.Excel.ListObject> uniquement au moment de l’exécution. Pour plus d’informations, consultez [Comment : ajouter des contrôles ListObject à des feuilles de calcul](../vsto/how-to-add-listobject-controls-to-worksheets.md).
 
 > [!NOTE]
 > Par défaut, les objets de liste créées dynamiquement ne sont pas persistants dans la feuille de calcul en tant que contrôles hôtes lorsque la feuille de calcul est fermée. Pour plus d’informations, consultez [Ajouter des contrôles aux documents Office au moment de l’exécution](../vsto/adding-controls-to-office-documents-at-run-time.md).
@@ -46,7 +46,7 @@ ms.locfileid: "71251864"
 
  Dans la mesure où les données sont séparées du <xref:Microsoft.Office.Tools.Excel.ListObject>, vous devez ajouter et supprimer des données via le dataset lié, et non pas directement via le <xref:Microsoft.Office.Tools.Excel.ListObject>. Si les données du dataset lié sont mises à jour via un mécanisme quelconque, le contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> reflète automatiquement les modifications. Pour plus d’informations, consultez [lier des données à des contrôles dans les solutions Office](../vsto/binding-data-to-controls-in-office-solutions.md).
 
- Vous pouvez remplir rapidement un contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> en liant le <xref:Microsoft.Office.Tools.Excel.ListObject> à une source de données. Si vous modifiez les données d’un <xref:Microsoft.Office.Tools.Excel.ListObject>lié aux données, les modifications sont aussi apportées automatiquement à la source de données. Si vous souhaitez remplir un <xref:Microsoft.Office.Tools.Excel.ListObject> et permettre ensuite à l’utilisateur de modifier les données contenue dans le <xref:Microsoft.Office.Tools.Excel.ListObject> sans modifier la source de données, vous pouvez utiliser la méthode <xref:Microsoft.Office.Tools.Excel.ListObject.Disconnect%2A> pour détacher le <xref:Microsoft.Office.Tools.Excel.ListObject> de la source de données. Pour plus d'informations, voir [Procédure : Remplir les contrôles ListObject avec](../vsto/how-to-fill-listobject-controls-with-data.md)des données.
+ Vous pouvez remplir rapidement un contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> en liant le <xref:Microsoft.Office.Tools.Excel.ListObject> à une source de données. Si vous modifiez les données d’un <xref:Microsoft.Office.Tools.Excel.ListObject>lié aux données, les modifications sont aussi apportées automatiquement à la source de données. Si vous souhaitez remplir un <xref:Microsoft.Office.Tools.Excel.ListObject> et permettre ensuite à l’utilisateur de modifier les données contenue dans le <xref:Microsoft.Office.Tools.Excel.ListObject> sans modifier la source de données, vous pouvez utiliser la méthode <xref:Microsoft.Office.Tools.Excel.ListObject.Disconnect%2A> pour détacher le <xref:Microsoft.Office.Tools.Excel.ListObject> de la source de données. Pour plus d’informations, consultez [Comment : remplir des contrôles ListObject avec des données](../vsto/how-to-fill-listobject-controls-with-data.md).
 
 > [!NOTE]
 > La liaison de données n’est pas prise en charge sur des contrôles <xref:Microsoft.Office.Tools.Excel.ListObject> superposés.
@@ -55,7 +55,7 @@ ms.locfileid: "71251864"
  La lecture d’un fichier XML dans un contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> lié aux données a tendance à être plus lente si vous liez d’abord le contrôle et que vous appelez ensuite <xref:System.Data.DataSet.ReadXml%2A> pour remplir le dataset. Pour améliorer les performances, appelez <xref:System.Data.DataSet.ReadXml%2A> avant de lier le contrôle.
 
 ### <a name="disconnect-listobject-controls-from-the-data-source"></a>Déconnecter les contrôles ListObject de la source de données
- Après avoir rempli un contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> avec des données en le liant à une source de données, vous pouvez le déconnecter afin que les modifications apportées aux données dans l’objet de liste n’affectent pas la source de données. Pour plus d'informations, voir [Procédure : Remplir les contrôles ListObject avec](../vsto/how-to-fill-listobject-controls-with-data.md)des données.
+ Après avoir rempli un contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> avec des données en le liant à une source de données, vous pouvez le déconnecter afin que les modifications apportées aux données dans l’objet de liste n’affectent pas la source de données. Pour plus d’informations, consultez [Comment : remplir des contrôles ListObject avec des données](../vsto/how-to-fill-listobject-controls-with-data.md).
 
 ### <a name="restore-column-and-row-order"></a>Restaurer l’ordre des colonnes et des lignes
  Lorsque vous liez des données à un contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> qui a été ajouté à un document au moment du design, Visual Studio effectue le suivi de l’ordre des colonnes et des lignes à chaque enregistrement du classeur. Si un utilisateur déplace les colonnes ou les lignes du <xref:Microsoft.Office.Tools.Excel.ListObject> lors de l’exécution, le nouvel ordre est conservé à la prochaine ouverture du classeur et le contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> se lie de nouveau à la source de données.
@@ -63,18 +63,18 @@ ms.locfileid: "71251864"
  Si vous souhaitez rétablir l’ordre d’origine des colonnes et des lignes du <xref:Microsoft.Office.Tools.Excel.ListObject> , vous pouvez appeler la méthode <xref:Microsoft.Office.Tools.Excel.ListObject.ResetPersistedBindingInformation%2A> . Cette méthode supprime les propriétés de document personnalisées liées à l’ordre des colonnes et des lignes du <xref:Microsoft.Office.Tools.Excel.ListObject>spécifié. Appelez cette méthode à partir de l’événement <xref:Microsoft.Office.Tools.Excel.Workbook.Shutdown> du classeur si vous ne souhaitez pas conserver l’ordre des colonnes et des lignes du <xref:Microsoft.Office.Tools.Excel.ListObject>.
 
 ## <a name="format"></a>Format
- Une mise en forme qui peut être appliquée à un <xref:Microsoft.Office.Interop.Excel.ListObject> peut également être appliquée à un contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> . Cela inclut les bordures, les polices, le format de nombre et les styles. Les utilisateurs finaux peuvent réorganiser les colonnes dans un lié <xref:Microsoft.Office.Tools.Excel.ListObject>aux données, et ces modifications sont conservées avec le document, à <xref:Microsoft.Office.Tools.Excel.ListObject> condition que le ait été ajouté au document au moment du Design. Lors de l’ouverture suivante du document, l’objet de liste est lié à la même source de données, mais l’ordre des colonnes reflète les modifications des utilisateurs.
+ Une mise en forme qui peut être appliquée à <xref:Microsoft.Office.Interop.Excel.ListObject> peut également être appliquée à un contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> . Cela inclut les bordures, les polices, le format de nombre et les styles. Les utilisateurs finaux peuvent réorganiser les colonnes dans un lié aux données <xref:Microsoft.Office.Tools.Excel.ListObject> , et ces modifications sont conservées avec le document, à condition que le <xref:Microsoft.Office.Tools.Excel.ListObject> ait été ajouté au document au moment du Design. Lors de l’ouverture suivante du document, l’objet de liste est lié à la même source de données, mais l’ordre des colonnes reflète les modifications des utilisateurs.
 
 ## <a name="add-and-remove-columns-at-run-time"></a>Ajouter et supprimer des colonnes au moment de l’exécution
  Au moment de l’exécution, vous ne pouvez pas ajouter ou supprimer manuellement des colonnes dans un contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> lié aux données. Si un utilisateur final tente de supprimer une colonne, celle-ci est immédiatement restaurée et toutes les colonnes ajoutées sont supprimées. Par conséquent, il est important d’écrire du code pour expliquer aux utilisateurs pourquoi ils ne peuvent pas exécuter ces actions sur un <xref:Microsoft.Office.Tools.Excel.ListObject> lié aux données. Visual Studio fournit plusieurs événements sur un <xref:Microsoft.Office.Tools.Excel.ListObject> relatif à la liaison de données. Par exemple, vous pouvez utiliser l’événement <xref:Microsoft.Office.Tools.Excel.ListObject.OriginalDataRestored> pour avertir les utilisateurs que les données qu’ils ont tenté de supprimer ne peuvent pas l’être et qu’elles ont été restaurées.
 
 ## <a name="add-and-remove-rows-at-run-time"></a>Ajouter et supprimer des lignes au moment de l’exécution
- Vous pouvez ajouter et supprimer manuellement des lignes dans un contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> lié aux données, à condition que la source de données autorise l’ajout de nouvelles lignes et qu’elle ne soit pas en lecture seule. Vous pouvez écrire du code par rapport à des événements tels que le <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow> pour valider les données. Pour plus d'informations, voir [Procédure : Validez les données lorsqu’une nouvelle ligne est ajoutée à un](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md)contrôle ListObject.
+ Vous pouvez ajouter et supprimer manuellement des lignes dans un contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> lié aux données, à condition que la source de données autorise l’ajout de nouvelles lignes et qu’elle ne soit pas en lecture seule. Vous pouvez écrire du code par rapport à des événements tels que le <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow> pour valider les données. Pour plus d’informations, consultez [Comment : valider des données lorsqu’une nouvelle ligne est ajoutée à un contrôle ListObject](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md).
 
  Il arrive que la relation de l’objet de liste à la source de données provoque des erreurs habituelles. Par exemple, vous pouvez mapper les colonnes que vous souhaitez voir apparaître dans le <xref:Microsoft.Office.Tools.Excel.ListObject>; par conséquent, si vous omettez des colonnes qui comportent des restrictions, comme un champ qui n’accepte pas les valeurs Null, des erreurs sont retournées chaque fois qu’une ligne est créée. Vous pouvez écrire du code pour ajouter les valeurs manquantes dans un gestionnaire d’événements pour l’événement <xref:Microsoft.Office.Tools.Excel.ListObject.ErrorAddDataBoundRow> .
 
 ## <a name="rename-listobject-controls-in-excel"></a>Renommer des contrôles ListObject dans Excel
- Excel permet aux utilisateurs de modifier le nom des tableaux Excel au moment de l’exécution en utilisant l’onglet **Création** . Toutefois, le contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> ne prend pas en charge cette fonctionnalité. Si un utilisateur tente de renommer un tableau Excel correspondant à un <xref:Microsoft.Office.Tools.Excel.ListObject>, le nom d’origine du tableau Excel est automatiquement rétabli lors de l’enregistrement du classeur.
+ Excel permet aux utilisateurs de modifier le nom des tableaux Excel au moment de l’exécution à l’aide de l’onglet **conception** . Toutefois, le <xref:Microsoft.Office.Tools.Excel.ListObject> contrôle ne prend pas en charge cette fonctionnalité. Si un utilisateur tente de renommer un tableau Excel correspondant à un <xref:Microsoft.Office.Tools.Excel.ListObject>, le nom d’origine du tableau Excel est automatiquement rétabli lors de l’enregistrement du classeur.
 
 ## <a name="events"></a>Événements
  Les événements suivants sont disponibles pour le contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> :
@@ -109,15 +109,15 @@ ms.locfileid: "71251864"
 
 ## <a name="see-also"></a>Voir aussi
 - [Automatiser Excel à l’aide d’objets étendus](../vsto/automating-excel-by-using-extended-objects.md)
-- [Guide pratique pour Ajouter des contrôles ListObject à des feuilles de calcul](../vsto/how-to-add-listobject-controls-to-worksheets.md)
-- [Guide pratique pour Redimensionner les contrôles ListObject](../vsto/how-to-resize-listobject-controls.md)
-- [Guide pratique pour Valider les données lorsqu’une nouvelle ligne est ajoutée à un contrôle ListObject](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md)
-- [Guide pratique pour Mapper les colonnes ListObject aux données](../vsto/how-to-map-listobject-columns-to-data.md)
-- [Guide pratique pour Remplir les contrôles ListObject avec des données](../vsto/how-to-fill-listobject-controls-with-data.md)
+- [Comment : ajouter des contrôles ListObject à des feuilles de calcul](../vsto/how-to-add-listobject-controls-to-worksheets.md)
+- [Comment : redimensionner des contrôles ListObject](../vsto/how-to-resize-listobject-controls.md)
+- [Comment : valider des données lorsqu’une nouvelle ligne est ajoutée à un contrôle ListObject](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md)
+- [Comment : mapper des colonnes ListObject à des données](../vsto/how-to-map-listobject-columns-to-data.md)
+- [Comment : remplir des contrôles ListObject avec des données](../vsto/how-to-fill-listobject-controls-with-data.md)
 - [Exemples et procédures pas à pas relatifs au développement Office](../vsto/office-development-samples-and-walkthroughs.md)
 - [Lier des données à des contrôles dans les solutions Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Étendre des documents Word et des classeurs Excel dans des compléments VSTO au moment de l’exécution](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Contrôles sur les documents Office](../vsto/controls-on-office-documents.md)
 - [Ajouter des contrôles aux documents Office au moment de l’exécution](../vsto/adding-controls-to-office-documents-at-run-time.md)
-- [Guide pratique pour Remplir des feuilles de calcul avec des données d’une base de données](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
+- [Comment : remplir des feuilles de calcul avec des données d’une base de données](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
 - [Limitations de programmation des éléments hôtes et des contrôles hôtes](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

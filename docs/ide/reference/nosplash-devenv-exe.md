@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9a1e8118faa743398271fb282a2603aab5fcd76b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62950662"
 ---
 # <a name="nosplash-devenvexe"></a>/NoSplash (devenv.exe)
@@ -31,7 +31,7 @@ devenv /NoSplash [File1[ FileN]...]
 
 ## <a name="arguments"></a>Arguments
 
-- *Fichier 1*
+- *File1*
 
   facultatif. Fichier à ouvrir dans une instance existante de Visual Studio. S’il n’en existe pas, une instance est créée avec une disposition de fenêtre simplifiée ; l’outil ouvre *File1* dans cette nouvelle instance.
 
@@ -39,13 +39,13 @@ devenv /NoSplash [File1[ FileN]...]
 
   facultatif. Un ou plusieurs fichiers supplémentaires à ouvrir dans l’instance existante de Visual Studio.
 
-## <a name="remarks"></a>Notes 
+## <a name="remarks"></a>Notes
 
 Ce commutateur masque l’écran de démarrage. S’il est omis, l’écran de démarrage s’affiche. Si vous voulez examiner en détail l’écran de démarrage (par exemple, pour vérifier l’icône de produit VSPackage), utilisez le commutateur [/Splash](../../extensibility/devenv-command-line-switches-for-vspackage-development.md).
 
 Le commutateur `/NoSplash` peut être combiné avec d’autres commutateurs, par exemple, [/Run](run-devenv-exe.md) ou [/DebugExe](debugexe-devenv-exe.md).
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 
 Les trois exemples ouvrent l’environnement IDE sans afficher l’écran de démarrage. Le deuxième compile également la solution spécifiée et exécute l’exécutable généré. Le troisième ouvre l’exécutable spécifié pour permettre son débogage dans l’environnement IDE.
 

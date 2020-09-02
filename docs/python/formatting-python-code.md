@@ -11,20 +11,20 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 6e95d05c3fbc0dd46d235c7480bd4a9caa48947e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62957531"
 ---
 # <a name="format-python-code"></a>Mettre en forme le code Python
 
 Dans Visual Studio, vous pouvez rapidement remettre en forme le code selon les options de mise en forme préconfigurées.
 
-- Pour formater une sélection : sélectionnez **Edit** > **Advanced** > **Format Selection** ou appuyez sur **Ctrl**+**E** > **F**.
-- Pour formater l’ensemble du fichier : sélectionnez **Modifier le** > **document format** **avancé** > ou appuyez sur **Ctrl**+**E** > **D**.
+- Pour mettre en forme une sélection : sélectionnez **modifier**la sélection du  >  **Advanced**  >  **format** avancé ou appuyez sur **CTRL** + **E**  >  **F**.
+- Pour mettre en forme l’ensemble du fichier : sélectionnez **modifier**le  >  **Advanced**  >  **document au format** avancé ou appuyez sur **CTRL** + **E**  >  **D**.
 
-Les options sont définies par **Tools** > **Options** > **Text Editor** > **Python** > **Formatting** et ses onglets imbriqués. Vous devez sélectionner **Afficher tous les paramètres** pour que ces options s’affichent :
+Les options sont définies via **Outils**  >  **options**  >  **éditeur de texte**  >  **Python**  >  **mise en forme** Python et leurs onglets imbriqués. Vous devez sélectionner **Afficher tous les paramètres** pour que ces options s’affichent :
 
 ![Options de mise en forme Python dans Visual Studio](media/options-editor-formatting.png)
 
@@ -42,7 +42,7 @@ L’onglet **Espacement** contrôle l’emplacement d’insertion ou de suppress
 
 Les tableaux ci-après fournissent des exemples des différentes options :
 
-| Option des définitions de classe | Activé | Désactivé |
+| Option des définitions de classe | Activée | Désactivé |
 | --- | --- | --- |
 | **Insérer un espace entre le nom d’une déclaration de classe et une liste de bases** | `class X (object): pass` | `class X(object): pass` |
 | **Insérer un espace entre les parenthèses d’une liste de bases** | `class X( object ): pass` | `class X(object): pass` |
@@ -50,7 +50,7 @@ Les tableaux ci-après fournissent des exemples des différentes options :
 
 <br/>
 
-| Option des définitions de fonction | Activé | Désactivé |
+| Option des définitions de fonction | Activée | Désactivé |
 | --- | --- | --- |
 | **Insérer un espace entre le nom d’une déclaration de fonction et une liste de paramètres** | `def X (): pass` | `def X(): pass` |
 | **Insérer un espace entre les parenthèses d’une liste de paramètres** | `def X( a, b ): pass` | `def X(a, b): pass` |
@@ -60,14 +60,14 @@ Les tableaux ci-après fournissent des exemples des différentes options :
 
 <br/>
 
-| Option des opérateurs | Activé | Désactivé |
+| Option des opérateurs | Activée | Désactivé |
 | --- | --- | --- |
 | **Insérer des espaces autour des opérateurs binaires** | `a + b` | `a+b` |
 | **Insérer des espaces autour des assignations** | `a = b` | `a=b` |
 
 <br/>
 
-| Option d’espacement d’expression | Activé | Désactivé |
+| Option d’espacement d’expression | Activée | Désactivé |
 | --- | --- | --- |
 | **Insérer un espace entre le nom d’un appel de fonction et une liste d’arguments** | `X ()` | `X()` |
 | **Insérer un espace dans les parenthèses de la liste d’arguments vide** | `X( )` | `X()` |
@@ -92,7 +92,7 @@ Les options **Instructions** contrôlent la réécriture automatique de différe
 | **Supprimer les points-virgules inutiles** | `x = 42;` | `x = 42` |
 | **Placer chaque instruction d’un groupe de plusieurs instructions sur une nouvelle ligne** | `x = 42; y = 100` | `x = 42`<br/>`y = 100` |
 
-## <a name="wrapping"></a>Retour à la ligne
+## <a name="wrapping"></a>Renvoi à la ligne
 
 L’onglet **Retour à la ligne** vous permet de définir l’option **Largeur maximale du commentaire** (la valeur par défaut est 80). Si l’option **Renvoyer à la ligne les commentaires trop longs** est définie, Visual Studio remet en forme les commentaires pour qu’ils ne dépassent pas cette largeur maximale.
 
@@ -109,7 +109,7 @@ L’onglet **Retour à la ligne** vous permet de définir l’option **Largeur m
 
 ## <a name="fill-comment-paragraph-command"></a>Commande Fill Comment Paragraph (Redisposer le paragraphe de commentaires)
 
-**Modifier** > **Advanced** > **Fill Comment Paragraph** (**Ctrl**+**E** > **P**) rénove et formate le texte de commentaire, combinant des lignes courtes ensemble et en brisant les longs.
+**Modifier**  >  **Paramètres avancés**  >  **Remplir le paragraphe de commentaire** (**CTRL** + **E**  >  **P**) repasse et met en forme le texte de commentaire, en combinant les lignes courtes et en fractionnant les longueurs.
 
 Par exemple :
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayField::GetElementType | Microsoft Docs
+title: 'IDebugArrayField :: GetElementType, | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 00ae24c2449d9bd26895647fc8f7b026291c4288
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68142973"
 ---
 # <a name="idebugarrayfieldgetelementtype"></a>IDebugArrayField::GetElementType
@@ -40,13 +40,13 @@ int GetElementType(
   
 #### <a name="parameters"></a>Paramètres  
  `ppType`  
- [out] Retourne un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objet qui décrit le type d’élément.  
+ à Retourne un objet [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) qui décrit le type d’élément.  
   
-## <a name="return-value"></a>Valeur de retour  
+## <a name="return-value"></a>Valeur renvoyée  
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Le [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md) objet part du principe que tous les éléments du tableau sont du même type.  
+ L’objet [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md) part du principe que tous les éléments du tableau sont du même type.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)   

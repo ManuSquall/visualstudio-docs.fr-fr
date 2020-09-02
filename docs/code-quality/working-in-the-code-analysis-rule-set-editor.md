@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d1e53df97c0535f59d0b96e9608ad55f2cb5ab21
-ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88893305"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>Utiliser l’éditeur d’ensembles de règles d’analyse du code

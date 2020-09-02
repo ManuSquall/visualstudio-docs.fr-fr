@@ -1,5 +1,5 @@
 ---
-title: Espace de travail d’indexation dans Visual Studio | Microsoft Docs
+title: Indexation de l’espace de travail dans Visual Studio | Microsoft Docs
 ms.date: 02/21/2018
 ms.topic: conceptual
 author: vukelich
@@ -8,29 +8,29 @@ manager: viveis
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9bf7df777d27003fa5763debc772a8804ec28ef5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62952700"
 ---
-# <a name="workspace-indexing"></a>Espace de travail d’indexation
+# <a name="workspace-indexing"></a>Indexation de l’espace de travail
 
-Dans une solution, les systèmes de projet sont responsables de fournir des fonctionnalités de génération, de déboguer, **GoTo** recherche de symbole et bien plus encore. Systèmes de projet peuvent effectuer cette tâche, car ils comprennent la relation et les fonctionnalités des fichiers dans un projet. Un [ouvrir le dossier](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md) l’information même fournir également des fonctionnalités IDE riches a besoin d’espace de travail. La collecte et le stockage persistant de ces données est un processus appelé espace de travail d’indexation. Ces données indexées peuvent être interrogées via un ensemble d’API asynchrones. Extendeurs peuvent participer au processus d’indexation en fournissant <xref:Microsoft.VisualStudio.Workspace.Indexing.IFileScanner>s qui savent comment gérer certains types de fichiers.
+Dans une solution, les systèmes de projet sont chargés de fournir des fonctionnalités pour la génération, le débogage, la recherche de symboles **goto** , et bien plus encore. Les systèmes de projet peuvent effectuer ce travail, car ils comprennent la relation et les fonctionnalités des fichiers dans un projet. Un espace de travail de [dossier ouvert](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md) a besoin du même Aperçu pour fournir également des fonctionnalités d’IDE riches. La collecte et le stockage permanent de ces données sont un processus appelé indexation de l’espace de travail. Ces données indexées peuvent être interrogées à l’aide d’un ensemble d’API asynchrones. Les extendeurs peuvent participer au processus d’indexation en fournissant des <xref:Microsoft.VisualStudio.Workspace.Indexing.IFileScanner> s qui savent gérer certains types de fichiers.
 
 ## <a name="types-of-indexed-data"></a>Types de données indexées
 
-Il existe trois types de données qui sont indexées. Notez que le type attendu à partir des analyseurs de fichiers est différent du type désérialisé à partir de l’index.
+Il existe trois types de données indexées. Notez que le type attendu des analyseurs de fichier diffère du type désérialisé de l’index.
 
-|Données|Type d’analyseur de fichier|Type de résultat de requête index|Types associés|
+|Données|Type d’analyse de fichier|Type de résultat de la requête d’index|Types associés|
 |--|--|--|--|
 |Références|<xref:Microsoft.VisualStudio.Workspace.Indexing.FileReferenceInfo>|<xref:Microsoft.VisualStudio.Workspace.Indexing.FileReferenceResult>|<xref:Microsoft.VisualStudio.Workspace.Indexing.FileReferenceInfoType>|
-|Symbols|<xref:Microsoft.VisualStudio.Workspace.Indexing.SymbolDefinition>|<xref:Microsoft.VisualStudio.Workspace.Indexing.SymbolDefinitionSearchResult>|<xref:Microsoft.VisualStudio.Workspace.Indexing.ISymbolService> doit être utilisé au lieu de `IIndexWorkspaceService` pour les requêtes|
+|symboles|<xref:Microsoft.VisualStudio.Workspace.Indexing.SymbolDefinition>|<xref:Microsoft.VisualStudio.Workspace.Indexing.SymbolDefinitionSearchResult>|<xref:Microsoft.VisualStudio.Workspace.Indexing.ISymbolService> doit être utilisé à la place de `IIndexWorkspaceService` pour les requêtes|
 |Valeurs de données|<xref:Microsoft.VisualStudio.Workspace.Indexing.FileDataValue>|<xref:Microsoft.VisualStudio.Workspace.Indexing.FileDataResult`1>||
 
-## <a name="querying-for-indexed-data"></a>Interrogation des données indexées
+## <a name="querying-for-indexed-data"></a>Interrogation de données indexées
 
-Il existe deux types asynchrones disponibles pour accéder aux données persistantes. La première consiste à utiliser <xref:Microsoft.VisualStudio.Workspace.Indexing.IIndexWorkspaceData>. Il fournit un accès de base dans un fichier unique `FileReferenceResult` et `FileDataResult` les données et met en cache les résultats. Le second est le <xref:Microsoft.VisualStudio.Workspace.Indexing.IIndexWorkspaceService> qui n’utilise pas la mise en cache, mais permet plusieurs fonctionnalités d’interrogation.
+Deux types asynchrones sont disponibles pour accéder aux données persistantes. La première consiste à <xref:Microsoft.VisualStudio.Workspace.Indexing.IIndexWorkspaceData> . Il fournit un accès de base aux données et à un seul fichier `FileReferenceResult` `FileDataResult` , et met en cache les résultats. Le second est le <xref:Microsoft.VisualStudio.Workspace.Indexing.IIndexWorkspaceService> qui n’utilise pas la mise en cache, mais autorise davantage de fonctionnalités d’interrogation.
 
 ```csharp
 using Microsoft.VisualStudio.Workspace;
@@ -50,23 +50,23 @@ private static IIndexWorkspaceService GetDirectIndexedData(IWorkspace workspace)
 }
 ```
 
-## <a name="participating-in-indexing"></a>Participant à l’indexation
+## <a name="participating-in-indexing"></a>Participation à l’indexation
 
-Espace de travail d’indexation suit à peu près de la séquence suivante :
+L’indexation de l’espace de travail suit à peu près la séquence suivante :
 
-1. Découverte et la persistance des entités de système de fichiers dans l’espace de travail (et uniquement sur l’analyse de l’ouverture initiale).
-1. Par fichier, le fournisseur de correspondance avec la priorité la plus élevée est invité à rechercher les `FileReferenceInfo`s.
-1. Par fichier, le fournisseur de correspondance avec la priorité la plus élevée est invité à rechercher les `SymbolDefinition`s.
-1. Par fichier, tous les fournisseurs êtes invité à entrer `FileDataValue`s.
+1. Détection et persistance des entités du système de fichiers dans l’espace de travail (uniquement lors de l’analyse d’ouverture initiale).
+1. Par fichier, le fournisseur correspondant avec la priorité la plus élevée est invité à rechercher les `FileReferenceInfo` .
+1. Par fichier, le fournisseur correspondant avec la priorité la plus élevée est invité à rechercher les `SymbolDefinition` .
+1. Par fichier, tous les fournisseurs sont invités à obtenir des `FileDataValue` .
 
-Extensions peuvent exporter un scanneur en implémentant `IWorkspaceProviderFactory<IFileScanner>` et l’exportation avec le type de <xref:Microsoft.VisualStudio.Workspace.Indexing.ExportFileScannerAttribute>. Le `SupportedTypes` argument d’attribut doit être une ou plusieurs valeurs à partir de <xref:Microsoft.VisualStudio.Workspace.Indexing.FileScannerTypeConstants>. Pour un analyseur d’exemple, consultez le kit SDK VS [exemple](https://github.com/Microsoft/VSSDK-Extensibility-Samples/blob/master/Open_Folder_Extensibility/C%23/SymbolScannerSample/TxtFileSymbolScanner.cs).
+Les extensions peuvent exporter un scanneur en implémentant `IWorkspaceProviderFactory<IFileScanner>` et en exportant le type avec <xref:Microsoft.VisualStudio.Workspace.Indexing.ExportFileScannerAttribute> . L' `SupportedTypes` argument d’attribut doit être une ou plusieurs valeurs de <xref:Microsoft.VisualStudio.Workspace.Indexing.FileScannerTypeConstants> . Pour obtenir un exemple de scanneur, consultez l' [exemple](https://github.com/Microsoft/VSSDK-Extensibility-Samples/blob/master/Open_Folder_Extensibility/C%23/SymbolScannerSample/TxtFileSymbolScanner.cs)du kit de développement Visual Studio.
 
 > [!WARNING]
-> Ne pas exporter un scanneur de fichier qui prend en charge la `FileScannerTypeConstants.FileScannerContentType` type. Il est utilisé pour Microsoft internes, uniquement.
+> N’exportez pas un scanneur de fichiers qui prend en charge le `FileScannerTypeConstants.FileScannerContentType` type. Il est utilisé uniquement à des fins internes Microsoft.
 
-Des situations avancées, une extension peut dynamiquement prend en charge un ensemble arbitraire de types de fichiers. Au lieu de l’exportation MEF `IWorkspaceProviderFactory<IFileScanner>`, une extension peut exporter `IWorkspaceProviderFactory<IFileScannerProvider>`. Lors de l’indexation commence, ce type de fabrique sera importé, instancié et avoir son <xref:Microsoft.VisualStudio.Workspace.Indexing.IFileScannerProvider.GetSymbolScannersAsync%2A> méthode appelée. `IFileScanner` prise en charge de n’importe quelle valeur à partir des instances `FileScannerTpeConstants` sera pris en compte, pas seulement les symboles.
+Dans les situations avancées, une extension peut prendre en charge de manière dynamique un ensemble arbitraire de types de fichiers. Au lieu d’exporter MEF `IWorkspaceProviderFactory<IFileScanner>` , une extension peut être exportée `IWorkspaceProviderFactory<IFileScannerProvider>` . Lorsque l’indexation commence, ce type de fabrique est importé, instancié et sa <xref:Microsoft.VisualStudio.Workspace.Indexing.IFileScannerProvider.GetSymbolScannersAsync%2A> méthode est appelée. `IFileScanner` les instances prenant en charge toute valeur de `FileScannerTpeConstants` sont honorées, pas seulement les symboles.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-* [Espaces de travail et les services de langage](workspace-language-services.md) -Apprenez à intégrer des services de langage dans un espace de travail d’ouvrir le dossier.
-* [Génération de l’espace de travail](workspace-build.md) -prend en charge d’ouvrir le dossier créer des systèmes tels que MSBuild et makefiles.
+* [Espaces de travail et services de langage](workspace-language-services.md) : Découvrez comment intégrer les services de langage dans un espace de travail de dossier ouvert.
+* [Espace de travail génération](workspace-build.md) : le dossier ouvert prend en charge les systèmes de génération tels que MSBuild et makefiles.

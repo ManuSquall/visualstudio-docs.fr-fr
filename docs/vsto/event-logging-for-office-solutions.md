@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 480a355ee2af321341c54b90edcc582d49102186
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62951935"
 ---
 # <a name="event-logging-for-office-solutions"></a>Journalisation des événements pour les solutions Office
@@ -32,9 +32,9 @@ ms.locfileid: "62951935"
 
 ### <a name="to-read-the-event-log-in-windows-server-2003-and-windows-xp"></a>Pour lire le journal des événements dans Windows Server 2003 et Windows XP
 
-1. Dans le Panneau de configuration, ouvrez **Outils d’administration**.
+1. Dans le panneau de configuration, ouvrez **Outils d’administration**.
 
-2. Démarrez l’ **Observateur d’événements**.
+2. Démarrez **Observateur d’événements**.
 
 3. Dans la liste des journaux des événements, sélectionnez **Application**.
 
@@ -48,15 +48,15 @@ ms.locfileid: "62951935"
 
 ### <a name="to-read-the-event-log-in-windows-7-windows-vista-and-windows-server-2008"></a>Pour lire le journal des événements dans Windows 7, Windows Vista et Windows Server 2008
 
-1. Dans le Panneau de configuration, ouvrez **Outils d’administration**.
+1. Dans le panneau de configuration, ouvrez **Outils d’administration**.
 
-2. Démarrez l’ **Observateur d’événements**.
+2. Démarrez **Observateur d’événements**.
 
 3. Développez **Journaux Windows**.
 
 4. Dans la liste des journaux des événements, sélectionnez **Application**.
 
-5. Dans le menu **Action** , cliquez sur **Filtrer le journal actuel**.
+5. Dans le menu **Action**, cliquez sur **Filtrer le journal actuel**.
 
 6. Dans la liste **Source d’événement** , sélectionnez **VSTO 4.0**.
 
@@ -74,12 +74,12 @@ ms.locfileid: "62951935"
 
   Après la désinstallation d’une solution Office, les messages d’exception restent dans le journal des événements.
 
-  Pour afficher ou enregistrer des messages d’exception lors de l’exécution d’une solution Office, consultez [les projets Office déboguer](../vsto/debugging-office-projects.md) et [les projets Office déboguer](../vsto/debugging-office-projects.md).
+  Pour afficher ou enregistrer des messages d’exception quand une solution Office est en cours d’exécution, consultez [Déboguer des projets Office](../vsto/debugging-office-projects.md) et [Déboguer des projets](../vsto/debugging-office-projects.md)Office.
 
 ### <a name="localization"></a>Localisation
- La langue du message d’exception est déterminée par la langue du runtime de Visual Studio Tools pour Office. Par exemple, si l’ordinateur de l’utilisateur final possède le module linguistique japonais installé, le message d’exception est écrit dans le journal des événements en japonais.
+ La langue du message d’exception est déterminée par la langue du runtime de Visual Studio Tools pour Office. Par exemple, si le module linguistique japonais est installé sur l’ordinateur de l’utilisateur final, le message d’exception est écrit dans le journal des événements en japonais.
 
-## <a name="disable-the-event-logger"></a>Désactiver le journal des événements
+## <a name="disable-the-event-logger"></a>Désactiver l’enregistreur d’événements
  Par défaut, le journal des événements est activé lorsque vous installez ou désinstallez des solutions Office. Vous pouvez désactiver le journal des événements en affectant la valeur « 1 » (un) à la variable d’environnement VSTO_EVENTLOGDISABLED.
 
 ### <a name="to-disable-the-event-log"></a>Pour désactiver le journal des événements

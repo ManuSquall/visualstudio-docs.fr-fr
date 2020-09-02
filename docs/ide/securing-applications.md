@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 87f06746901baaaf14f91032f8968a0d99fc20c2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595447"
 ---
 # <a name="secure-applications"></a>Sécuriser les applications
@@ -45,4 +45,4 @@ La sécurité est également un facteur important à prendre en compte dans le p
 - [Guide de sécurité de Windows 10 Mobile](/windows/security/threat-protection/windows-10-mobile-security-guide)
 - [Fonctionnalités de sécurité de la plateforme Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/security/best-practices?view=toolsforcordova-2017)
 - [Sécurité ASP.NET Core](/aspnet/core/security/?view=aspnetcore-2.1)
-- [Windows forme la sécurité](/dotnet/framework/winforms/windows-forms-security)
+- [Sécurité Windows Forms](/dotnet/framework/winforms/windows-forms-security)

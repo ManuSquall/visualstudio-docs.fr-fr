@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 98482eed6c1ed5a8ac2e3bbb7b5ada6af9517c1d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546921"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Ajouter une validation d’architecture personnalisée aux diagrammes de dépendance
@@ -125,7 +125,7 @@ Si vous souhaitez créer une extension VSIX qui contient des validateurs de couc
 
 9. Pour installer l’extension VSIX dans l’instance principale de Visual Studio, ou sur un autre ordinateur, recherchez le fichier **. vsix** dans le répertoire **bin** du projet VSIX. Copiez-le sur l’ordinateur sur lequel vous souhaitez installer l’extension VSIX. Double-cliquez sur le fichier VSIX dans l’Explorateur Windows.
 
-## <a name="programming-validation"></a><a name="programming"></a>Programmation de la validation
+## <a name="programming-validation"></a><a name="programming"></a> Programmation de la validation
 
 Pour définir une extension de validation de couche, définissez une classe avec les caractéristiques suivantes :
 
@@ -194,7 +194,7 @@ Chaque nœud et chaque lien sont associés à une ou plusieurs catégories qui s
 
 Les liens des couches vers les éléments dans le code ont la catégorie « Représente ».
 
-## <a name="debugging-validation"></a><a name="debugging"></a>Validation du débogage
+## <a name="debugging-validation"></a><a name="debugging"></a> Validation du débogage
 
 Pour déboguer votre extension de validation de couche, appuyez sur Ctrl+F5. Une instance expérimentale de Visual Studio s’ouvre. Dans cette instance, ouvrez ou créez un modèle de couche. Ce modèle doit être associé au code et doit avoir au moins une dépendance.
 
@@ -226,7 +226,7 @@ Démarrez toujours l’instance expérimentale en appuyant sur Ctrl+F5 (**Exécu
 
 Pour installer votre extension de validation sur un ordinateur sur lequel une version appropriée de Visual Studio est installée, ouvrez le fichier VSIX sur l’ordinateur cible.
 
-## <a name="example-code"></a><a name="example"></a>Exemple de code
+## <a name="example-code"></a><a name="example"></a> Exemple de code
 
 ```csharp
 using System;

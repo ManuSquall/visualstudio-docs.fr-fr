@@ -15,16 +15,16 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 149aa0cf8543f5b5b1b5ada18a8b2f0e58f063d0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546937"
 ---
 # <a name="ltpostactiongt-element-office-development-in-visual-studio"></a>&lt;&gt;élément postAction (développement Office dans Visual Studio)
   L’élément `postAction` de l’espace de noms `vstav3` contient les éléments `entrypoint` et tous les éléments `postActionData` associés à des actions de post-déploiement, lesquelles s’exécutent après l’installation des solutions Office.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Syntaxe
 
 ```xml
 <postAction>

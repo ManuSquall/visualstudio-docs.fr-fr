@@ -18,42 +18,42 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7b3f4038a05478d8e2d747efa700c7ece02e4827
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62951182"
 ---
 # <a name="custom-document-properties-overview"></a>Vue d’ensemble des propriétés de document personnalisées
 
-Lorsque vous générez un projet au niveau du document, Visual Studio ajoute deux propriétés personnalisées au document dans le projet : \_AssemblyLocation et \_AssemblyName. Lorsqu’un utilisateur ouvre un document, l’application Microsoft Office vérifie pour ces propriétés de document personnalisées. S’ils existent dans le document, l’application charge le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], qui démarre la personnalisation. Pour plus d’informations, consultez [solutions d’Architecture d’Office dans Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md).
+Quand vous générez un projet au niveau du document, Visual Studio ajoute deux propriétés personnalisées au document dans le projet : \_ AssemblyLocation et \_ AssemblyName. Lorsqu’un utilisateur ouvre un document, le Microsoft Office application vérifie ces propriétés de document personnalisées. S’ils existent dans le document, l’application charge le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] , qui démarre la personnalisation. Pour plus d’informations, consultez [architecture des solutions Office dans Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md).
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
-## <a name="assemblyname"></a>\_AssemblyName
+## <a name="_assemblyname"></a>\_NomAssembly
 
-Cette propriété contient le CLSID d’une interface dans le composant de chargeur de solution Office de la [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. La valeur CLSID est 4E3C66D5 58D - 4-491E-A7D4-64AF99AF6E8B. Cette valeur ne doit jamais changer.
+Cette propriété contient le CLSID d’une interface dans le composant chargeur de solution Office de [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . La valeur du CLSID est 4E3C66D5-58D4-491E-A7D4-64AF99AF6E8B. Vous ne devez jamais modifier cette valeur.
 
-## <a name="assemblylocation"></a>\_AssemblyLocation
+## <a name="_assemblylocation"></a>\_AssemblyLocation
 
-Cette propriété contient une chaîne qui fournit des détails sur le manifeste de déploiement pour la personnalisation. Pour plus d’informations sur les manifestes, consultez [manifestes d’Application et déploiement dans les solutions Office](../vsto/application-and-deployment-manifests-in-office-solutions.md).
+Cette propriété contient une chaîne qui fournit des détails sur le manifeste de déploiement pour la personnalisation. Pour plus d’informations sur les manifestes, consultez [manifestes d’application et de déploiement dans les solutions Office](../vsto/application-and-deployment-manifests-in-office-solutions.md).
 
- Le \_valeur de la propriété AssemblyLocation peut avoir différents formats, selon la façon dont la solution est déployée :
+ La \_ valeur de la propriété AssemblyLocation peut avoir des formats différents, en fonction de la façon dont la solution est déployée :
 
-- Si la solution est publiée pour être installée à partir d’un site Web, chemin d’accès UNC ou un CD ou un lecteur USB, la propriété _AssemblyLocation a le format *DeploymentManifestPath*|*SolutionID*. La chaîne suivante est un exemple :
+- Si la solution est publiée pour être installée à partir d’un site Web, d’un chemin d’accès UNC, d’un CD ou d’un lecteur USB, la propriété _AssemblyLocation est au format *DeploymentManifestPath* | *SolutionId*. La chaîne suivante est un exemple :
 
      file://deployserver/MyShare/ExcelWorkbook1.vsto|74744e4b-e4d6-41eb-84f7-ad20346fe2d9
 
-- Si vous êtes en cours d’exécution ou débogage de la solution à partir de Visual Studio, la propriété _AssemblyLocation a le format *DeploymentManifestName*|*SolutionID*| vstolocal. La chaîne suivante est un exemple :
+- Si vous exécutez ou déboguez la solution à partir de Visual Studio, la propriété _AssemblyLocation a le format *DeploymentManifestName* | *SolutionId*| vstolocal. La chaîne suivante est un exemple :
 
-     ExcelWorkbook1.vsto|74744e4b-e4d6-41eb-84f7-ad20346fe2d9|vstolocal
+     Classeurexcel1. vsto | 74744e4b-e4d6-41eb-84f7-ad20346fe2d9 | vstolocal
 
-  Le *SolutionID* est un GUID qui le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] utilise pour identifier la solution. Le *SolutionID* est généré automatiquement lorsque vous générez le projet. Le **vstolocal** terme indique à la [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] que l’assembly doit être chargé à partir du même dossier que le document.
+  *SolutionId* est un GUID que [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] utilise pour identifier la solution. *SolutionId* est généré automatiquement lorsque vous générez le projet. Le terme **vstolocal** indique au [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] que l’assembly doit être chargé à partir du même dossier que le document.
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Architecture des solutions Office dans Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
 - [Architecture des personnalisations au niveau du document](../vsto/architecture-of-document-level-customizations.md)
 - [Manifestes d’application et de déploiement dans les solutions Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)
-- [Guide pratique pour Publier une solution Office à l’aide de ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
-- [Guide pratique pour Créer et modifier les propriétés de document personnalisées](../vsto/how-to-create-and-modify-custom-document-properties.md)
+- [Comment : publier une solution Office à l’aide de ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
+- [Comment : créer et modifier des propriétés de document personnalisées](../vsto/how-to-create-and-modify-custom-document-properties.md)

@@ -1,5 +1,5 @@
 ---
-title: SupportsCodeSeparation Element (Visual Studio Templates) Microsoft Docs
+title: Élément SupportsCodeSeparation (modèles Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,16 +15,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bd52ae47f47f3ca1fce23f7cf8d37260ec86fb0c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80699509"
 ---
 # <a name="supportscodeseparation-element-visual-studio-templates"></a>SupportsCodeSeparation, élément (modèles Visual Studio)
-Précise si le **code Place dans** la case à cocher de fichiers séparé est activé dans la boîte de dialogue Add New **Item.**
+Spécifie si la case à cocher **Placer le code dans un fichier distinct** est activée dans la boîte de dialogue **Ajouter un nouvel élément** .
 
- \<VSTemplate> \<TemplateData> \<supportsCodeSeparation>
+ \<VSTemplate> \<TemplateData>
+ \<SupportsCodeSeparation>
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -45,22 +46,22 @@ Précise si le **code Place dans** la case à cocher de fichiers séparé est ac
 
 |Élément|Description|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Élément requis.<br /><br /> Catégorise le modèle et définit la façon dont il s’affiche dans le **nouveau projet** ou la boîte de dialogue Du **nouvel élément.**|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Élément requis.<br /><br /> Classe le modèle dans une catégorie et définit son affichage dans la boîte de dialogue **nouveau projet** ou **nouvel élément** .|
 
 ## <a name="text-value"></a>Valeur texte
  Une valeur texte est requise.
 
- Le texte doit `true` `false`être soit ou, indiquant si oui ou non le **code Place dans** la case à cocher de fichiers séparés est activé dans la boîte de dialogue Add New **Item.**
+ Le texte doit être `true` ou `false` , indiquant si la case à cocher **Placer le code dans un fichier distinct** est activée dans la boîte de dialogue **Ajouter un nouvel élément** .
 
 ## <a name="remarks"></a>Notes
  `SupportsCodeSeparation` est un élément facultatif. La valeur par défaut est `false`.
 
- L’élément `SupportsCodeSeparation` n’est disponible que pour les modèles d’objets Web.
+ L' `SupportsCodeSeparation` élément est uniquement disponible pour les modèles d’élément Web.
 
- La séparation du code, ou le modèle de page de code-derrière, vous permet de conserver la majoration dans un fichier et le code de programmation dans un autre fichier. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]et d’autres langues .NET utilisent ce modèle.
+ La séparation du code, ou le modèle de page code-behind, vous permet de conserver le balisage dans un fichier et le code de programmation dans un autre fichier. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] et d’autres langages .NET utilisent ce modèle.
 
 ## <a name="example"></a>Exemple
- L’exemple suivant spécifie d’afficher le code Place en option **de fichier séparé.**
+ L’exemple suivant spécifie l’affichage de l’option **Placer le code dans un fichier distinct** .
 
 ```
 <VSTemplate Version="3.0.0" Type="Project"

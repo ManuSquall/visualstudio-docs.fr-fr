@@ -10,21 +10,21 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2f23984d6c4723b020b361e1da30363442966ea7
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75594706"
 ---
 # <a name="domain-property-value-change-handlers"></a>Gestionnaires de modification de valeur de propriété de domaine
 
-Dans un langage spécifique à un domaine de Visual Studio, lorsque la valeur d’une propriété de domaine change, la `OnValueChanging()` et `OnValueChanged()` méthodes sont appelées dans le Gestionnaire de propriété de domaine. Pour répondre au changement, vous pouvez substituer ces méthodes.
+Dans un langage spécifique à un domaine Visual Studio, lorsque la valeur d’une propriété de domaine change, les `OnValueChanging()` `OnValueChanged()` méthodes et sont appelées dans le gestionnaire de propriétés de domaine. Pour répondre au changement, vous pouvez substituer ces méthodes.
 
-## <a name="override-the-property-handler-methods"></a>Substituez les méthodes de gestionnaire de propriétés
+## <a name="override-the-property-handler-methods"></a>Substituer les méthodes de gestionnaire de propriétés
 
-Chaque propriété de domaine de votre langage spécifique à un domaine est gérée par une classe imbriquée dans sa classe de domaine parente. Son nom respecte le format *PropertyName*PropertyHandler. Vous pouvez inspecter cette classe de gestionnaire de propriété dans le fichier **Dsl\Generated Code\DomainClasses.cs**. Dans la classe, `OnValueChanging()` est appelée juste avant que la valeur change et `OnValueChanged()` est appelée juste après que la valeur change.
+Chaque propriété de domaine de votre langage spécifique à un domaine est gérée par une classe imbriquée dans sa classe de domaine parente. Son nom suit le format *PropertyName*PropertyHandler. Vous pouvez inspecter cette classe de gestionnaire de propriétés dans le fichier **Dsl\Generated Code\DomainClasses.cs**. Dans la classe, `OnValueChanging()` est appelée juste avant que la valeur change et `OnValueChanged()` est appelée juste après que la valeur change.
 
-Par exemple, supposons que vous avez une classe de domaine nommée `Comment` qui a une propriété de domaine de chaîne nommée `Text` et une propriété entière nommée `TextLengthCount`. Pour provoquer `TextLengthCount` toujours pour contenir la longueur de la `Text` chaîne, vous pouvez écrire le code suivant dans un fichier distinct dans le projet Dsl :
+Par exemple, supposons que vous ayez une classe de domaine nommée `Comment` qui a une propriété de domaine de chaîne nommée `Text` et une propriété de type entier nommée `TextLengthCount` . Pour `TextLengthCount` que Always contienne toujours la longueur de la `Text` chaîne, vous pouvez écrire le code suivant dans un fichier distinct dans le projet DSL :
 
 ```csharp
 // Domain Class "Comment":
@@ -60,7 +60,7 @@ Notez les points suivants concernant les gestionnaires de propriétés :
 
 - Vous ne pouvez pas utiliser un gestionnaire de modification pour modifier la nouvelle valeur. Pour cela, par exemple si vous souhaitez restreindre la valeur à une plage spécifique, définissez une `ChangeRule`.
 
-- Vous ne pouvez pas ajouter un gestionnaire de modification à une propriété qui représente un rôle d'une relation. Au lieu de cela, définissez une `AddRule` et une `DeleteRule` sur la classe de relation. Ces règles sont déclenchées quand les liens sont créés ou modifiés. Pour plus d’informations, consultez [propager les modifications dans le modèle de règles](../modeling/rules-propagate-changes-within-the-model.md).
+- Vous ne pouvez pas ajouter un gestionnaire de modification à une propriété qui représente un rôle d'une relation. Au lieu de cela, définissez une `AddRule` et une `DeleteRule` sur la classe de relation. Ces règles sont déclenchées quand les liens sont créés ou modifiés. Pour plus d’informations, consultez [règles de propagation des modifications dans le modèle](../modeling/rules-propagate-changes-within-the-model.md).
 
 ### <a name="changes-in-and-out-of-the-store"></a>Modifications dans le magasin
 
@@ -97,19 +97,19 @@ if (newValue > 10)
 
 L'exemple précédent montre comment OnValueChanged() peut être utilisée pour propager des valeurs d'une propriété de domaine à une autre. Chaque propriété a sa propre valeur stockée.
 
-Au lieu de cela, vous pourriez définir la propriété dérivée en tant que propriété calculée. Dans ce cas, la propriété n'a aucun stockage propre et sa fonction de définition est évaluée chaque fois que sa valeur est nécessaire. Pour plus d’informations, consultez [calculées et les propriétés de stockage personnalisé](../modeling/calculated-and-custom-storage-properties.md).
+Au lieu de cela, vous pourriez définir la propriété dérivée en tant que propriété calculée. Dans ce cas, la propriété n'a aucun stockage propre et sa fonction de définition est évaluée chaque fois que sa valeur est nécessaire. Pour plus d’informations, consultez [Propriétés de stockage calculées et personnalisées](../modeling/calculated-and-custom-storage-properties.md).
 
-Au lieu de l’exemple précédent, vous pouvez définir le **type** champ `TextLengthCount` être **Calculated** dans la définition DSL. Vous devez fournir votre propre **obtenir** méthode pour cette propriété de domaine. Le **obtenir** méthode retournerait la longueur actuelle de la `Text` chaîne.
+Au lieu de l’exemple précédent, vous pouvez définir le champ **Kind** de `TextLengthCount` à **calculer** dans la définition DSL. Vous devez fournir votre propre méthode d' **extraction** pour cette propriété de domaine. La méthode **obtenir** retourne la longueur actuelle de la `Text` chaîne.
 
 Toutefois, l'un des inconvénients potentiels des propriétés calculées est que l'expression est évaluée chaque fois que la valeur est utilisée, ce qui pourrait poser un problème de performance. De plus, il n'existe aucune méthode OnValueChanging() et OnValueChanged() sur une propriété calculée.
 
 ### <a name="alternative-technique-change-rules"></a>Autre technique : modifier les règles
 
-Si vous définissez une ChangeRule, elle est exécutée à la fin d’une transaction dans laquelle valeur d’une propriété change.  Pour plus d’informations, consultez [propager les modifications dans le modèle de règles](../modeling/rules-propagate-changes-within-the-model.md).
+Si vous définissez un ChangeRule, il est exécuté à la fin d’une transaction dans laquelle la valeur d’une propriété change.  Pour plus d’informations, consultez [règles de propagation des modifications dans le modèle](../modeling/rules-propagate-changes-within-the-model.md).
 
-Si plusieurs modifications sont apportées dans une même transaction, la ChangeRule s'exécute quand elles sont toutes terminées. En revanche, le OnValue... méthodes sont exécutées lorsque certaines modifications n’ont pas été effectuées. Selon le résultat souhaité, une ChangeRule pourrait être plus appropriée.
+Si plusieurs modifications sont apportées dans une même transaction, la ChangeRule s'exécute quand elles sont toutes terminées. En revanche, le OnValue... les méthodes sont exécutées lorsque certaines modifications n’ont pas été effectuées. Selon le résultat souhaité, une ChangeRule pourrait être plus appropriée.
 
-Vous pouvez également utiliser une ChangeRule pour ajuster la nouvelle valeur de la propriété pour le conserver dans une plage spécifique.
+Vous pouvez également utiliser un ChangeRule pour ajuster la nouvelle valeur de la propriété afin de la conserver dans une plage spécifique.
 
 > [!WARNING]
 > Si une règle modifie le contenu du magasin, d'autres règles et gestionnaires de propriétés peuvent être déclenchés. Si une règle modifie la propriété qui l'a déclenchée, elle est de nouveau appelée. Vous devez vous assurer que vos définitions de règles ne provoquent pas un déclenchement sans fin.

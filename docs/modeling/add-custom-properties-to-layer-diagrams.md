@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3c68d8a75ca8203a790684506ffd44b3d890648a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546912"
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>Ajouter des propriétés personnalisées à des diagrammes de dépendance
@@ -43,7 +43,7 @@ Si vous souhaitez simplement que votre code joigne des valeurs à n’importe qu
 >      `devenv /rootSuffix /updateConfiguration`
 >
 >      `devenv /rootSuffix Exp /updateConfiguration`
-> 4. Redémarrez Visual Studio.
+> 4. Démarrez Visual Studio.
 
 **Vérifier que votre code se trouve dans un projet VSIX**
 
@@ -63,11 +63,11 @@ public class MyProperty : PropertyExtension<ILayerElement>
 
 Vous pouvez définir des propriétés sur [ILayerElement](/previous-versions/ff644511(v=vs.140)) ou sur l’une de ses classes dérivées, notamment :
 
-- `ILayerModel`-le modèle
+- `ILayerModel` -le modèle
 
-- `ILayer`-chaque couche
+- `ILayer` -chaque couche
 
-- `ILayerDependencyLink`-les liens entre les couches
+- `ILayerDependencyLink` -les liens entre les couches
 
 - `ILayerComment`
 
