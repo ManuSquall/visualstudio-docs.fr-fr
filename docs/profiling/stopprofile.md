@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: a5492d2bbd33e6b250b564532c929234d748506c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778230"
 ---
 # <a name="stopprofile"></a>StopProfile
@@ -55,7 +55,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StopProfile(
 |PROFILE_ERROR_NOT_YET_IMPLEMENTED|L’appel de fonction du profilage, le niveau de profilage ou la combinaison d’appel et de niveau n’est pas encore implémenté.|
 |PROFILE_OK|L’appel a réussi.|
 
-## <a name="remarks"></a>Notes 
+## <a name="remarks"></a>Notes
  StartProfile et StopProfile contrôlent l’état Start/Stop pour le niveau de profilage. La valeur par défaut de Start/Stop est 1. La valeur initiale peut être changée dans le Registre. Chaque appel à StartProfile définit Start/Stop sur 1 ; chaque appel à StopProfile le définit sur 0.
 
  Quand Start/Stop est supérieur à 0, l’état de Start/Stop pour le niveau est ON. Quand il est inférieur ou égal à 0, l’état de Start/Stop est OFF.
@@ -70,7 +70,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StopProfile(
 
  Bibliothèque d’importation : VSPerf.lib
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
  L’exemple suivant montre la méthode StopProfile. L’exemple suppose qu’un appel à la méthode StartProfile a été effectué pour le même thread ou le même processus identifié par [PROFILE_CURRENTID](../profiling/profile-currentid.md).
 
 ```cpp
@@ -108,4 +108,4 @@ void ExerciseStopProfile()
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Visual Studio profiler API référence (native)](../profiling/visual-studio-profiler-api-reference-native.md)
+- [Informations de référence sur l’API du profileur Visual Studio (natif)](../profiling/visual-studio-profiler-api-reference-native.md)

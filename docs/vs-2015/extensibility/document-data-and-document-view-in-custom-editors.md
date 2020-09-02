@@ -1,5 +1,5 @@
 ---
-title: Afficher les données de document et de documents dans les éditeurs personnalisés | Microsoft Docs
+title: Données de document et vue de document dans les éditeurs personnalisés | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,40 +11,40 @@ caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2f73ffde43f2ef3608ae492a9643f7920243d818
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204682"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>Données de documents et affichage de documents dans les éditeurs personnalisés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Un éditeur personnalisé se compose de deux parties : un objet de données de document et un objet de vue de document. Comme leur nom le suggère, l’objet de données représente les données de texte à afficher et l’objet de vue de document (ou « vue ») représente une ou plusieurs fenêtres d’affichage de l’objet de données de document.  
+Un éditeur personnalisé se compose de deux parties : un objet de données de document et un objet de vue de document. Comme les noms le suggèrent, l’objet de données de document représente les données de texte à afficher, et l’objet de vue de document (ou « vue ») représente une ou plusieurs fenêtres dans lesquelles afficher l’objet de données de document.  
   
 ## <a name="document-data-object"></a>Objet de données de document  
- Un objet de données de document est une représentation sous forme de données de texte dans la mémoire tampon de texte. C’est un objet COM qui stocke le texte du document et autres informations, gère la persistance de document et permet à plusieurs vues de ses données. Pour plus d'informations, consultez  
+ Un objet de données de document est une représentation de données de texte dans la mémoire tampon de texte. Il s’agit d’un objet COM qui stocke le texte du document et d’autres informations, gère la persistance des documents et active plusieurs vues de ses données. Pour plus d'informations, consultez la rubrique  
   
- <xref:EnvDTE80.Window2.DocumentData%2A> et [Document Windows](../extensibility/internals/document-windows.md).  
+ <xref:EnvDTE80.Window2.DocumentData%2A> et les [fenêtres de document](../extensibility/internals/document-windows.md).  
   
- Concepteurs et éditeurs personnalisés peuvent choisir d’utiliser le <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> objet ou leur propre mémoire tampon personnalisé. <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> suit le modèle d’incorporation simplifié pour un éditeur standard, prend en charge plusieurs vues et fournit des interfaces d’événements qui permettent de gérer plusieurs vues.  
+ Les éditeurs et les concepteurs personnalisés peuvent choisir d’utiliser l' <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> objet ou leur propre mémoire tampon personnalisée. <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> suit le modèle d’incorporation simplifié pour un éditeur standard, prend en charge plusieurs vues et fournit des interfaces d’événements qui sont utilisées pour gérer plusieurs vues.  
   
 ## <a name="document-view-object"></a>Objet de vue de document  
- Une fenêtre qui affiche le code et autres textes est connue comme un document ou un affichage. Lorsque vous créez un éditeur, vous pouvez choisir une vue unique, dans lequel le texte est affiché dans une fenêtre unique, ou une vue plusieurs, dans lequel le texte est affiché dans plusieurs fenêtres. Votre choix dépend de votre application. Par exemple, si vous avez besoin de modification côte à côte, vous choisiriez MultipleView. Chaque vue est associée à une entrée dans l’environnement de développement intégré de (IDE) en cours d’exécution (RDT) de table de document. Fenêtres d’affichage appartiennent à un projet ou un <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> objet.  
+ Une fenêtre qui affiche le code et un autre texte est appelée vue de document ou vue. Lorsque vous créez un éditeur, vous pouvez choisir une vue unique, dans laquelle le texte est affiché dans une fenêtre unique, ou une vue multiple, dans laquelle le texte est affiché dans plusieurs fenêtres. Votre choix dépend de votre application. Par exemple, si vous avez besoin d’une modification côte à côte, vous devez choisir affichage multiple. Chaque vue est associée à une entrée dans la table de documents en cours d’exécution de l’environnement de développement intégré (IDE) (RDT). Les fenêtres d’affichage appartiennent à un projet ou à un <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> objet.  
   
- Si votre éditeur prend en charge plusieurs vues d’un objet de données de document, vos données de document et les objets de vue de document doivent être distincts. Sinon, ils peuvent être regroupés. Pour plus d’informations, consultez [prenant en charge plusieurs vues de Document](../extensibility/supporting-multiple-document-views.md).  
+ Si votre éditeur prend en charge plusieurs vues d’un objet de données de document, les données de votre document et les objets de vue de document doivent être séparés. Dans le cas contraire, ils peuvent être regroupés. Pour plus d’informations, consultez [prise en charge de plusieurs vues de documents](../extensibility/supporting-multiple-document-views.md).  
   
- L’IDE signale des vues sur les événements (par exemple, lors de la fermeture d’une solution contenant un document) en mettant en correspondance un identificateur d’élément (ItemID) pour chaque entrée dans la table de document en cours d’exécution. Pour plus d’informations, consultez [Table de Document en cours d’exécution](../extensibility/internals/running-document-table.md).  
+ L’IDE avertit les affichages des événements (par exemple, lorsqu’une solution contenant un document est fermée) en faisant correspondre un identificateur d’élément (ItemID) pour chaque entrée dans la table de document en cours d’exécution. Pour plus d’informations, consultez exécution de la [table des documents](../extensibility/internals/running-document-table.md).  
   
- Il existe deux options pour la création d’une vue pour un éditeur personnalisé. Un est le modèle d’activation en place, où la vue est hébergée dans une fenêtre à l’aide d’un contrôle ActiveX ou un objet de données de document. Le second est le modèle d’incorporation simplifié, où la vue est hébergée par [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] et <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> est implémentée pour prendre en charge les commandes de fenêtre. Pour plus d’informations sur le modèle d’activation sur place, consultez [Activation en Place](../misc/in-place-activation.md). Pour plus d’informations sur le modèle d’incorporation simplifiée, consultez [incorporation simplifiée](../extensibility/simplified-embedding.md).  
+ Il existe deux options pour créer une vue d’un éditeur personnalisé. L’un est le modèle d’activation sur place, où la vue est hébergée dans une fenêtre à l’aide d’un contrôle ActiveX ou d’un objet de données de document. Le deuxième est le modèle d’incorporation simplifié, où la vue est hébergée par [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] et <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> est implémentée pour gérer les commandes de fenêtre. Pour plus d’informations sur le modèle d’activation sur place, consultez [activation sur place](../misc/in-place-activation.md). Pour plus d’informations sur le modèle d’incorporation simplifié, consultez [incorporation simplifiée](../extensibility/simplified-embedding.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Prise en charge plusieurs vues de Document](../extensibility/supporting-multiple-document-views.md)   
+ [Prise en charge de plusieurs vues de documents](../extensibility/supporting-multiple-document-views.md)   
  [Incorporation simplifiée](../extensibility/simplified-embedding.md)   
- [Guide pratique pour Joindre des vues de données de document](../extensibility/how-to-attach-views-to-document-data.md)   
- [Gestion du détenteur de verrou document](../extensibility/document-lock-holder-management.md)   
- [Vues uniques et multiples d’onglet](../extensibility/single-and-multi-tab-views.md)   
- [Enregistrement d’un Document Standard](../extensibility/internals/saving-a-standard-document.md)   
- [Persistance et la Table de Document en cours d’exécution](../extensibility/internals/persistence-and-the-running-document-table.md)   
- [Déterminer quel éditeur ouvre un fichier dans un projet](../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md)   
+ [Comment : attacher des vues à des données de document](../extensibility/how-to-attach-views-to-document-data.md)   
+ [Gestion des titulaires de verrous de documents](../extensibility/document-lock-holder-management.md)   
+ [Vues à onglet unique et à plusieurs onglets](../extensibility/single-and-multi-tab-views.md)   
+ [Enregistrement d’un document standard](../extensibility/internals/saving-a-standard-document.md)   
+ [Persistance et table de document en cours d’exécution](../extensibility/internals/persistence-and-the-running-document-table.md)   
+ [Détermination de l’éditeur qui ouvre un fichier dans un projet](../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md)   
  [Fabriques d’éditeur](../extensibility/editor-factories.md)

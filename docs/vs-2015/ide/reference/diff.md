@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fd76b0803f43a7694ec0d689eeb8489f491f8464
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657756"
 ---
 # <a name="diff"></a>/Diff
@@ -32,6 +32,6 @@ devenv /Diff SourceFile, TargetFile, [SourceDisplayName],[TargetDisplayName]
 
  `TargetFile` Obligatoire. Chemin complet et nom du deuxième fichier à comparer.
 
- `SourceDisplayName` (facultatif). Nom d’affichage du premier fichier.
+ `SourceDisplayName` Facultatif. Nom d’affichage du premier fichier.
 
- `TargetDisplayName` (facultatif). Nom d’affichage du deuxième fichier.
+ `TargetDisplayName` Facultatif. Nom d’affichage du deuxième fichier.

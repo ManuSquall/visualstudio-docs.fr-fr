@@ -1,5 +1,5 @@
 ---
-title: Énumérateur de Code d’état de fichier | Microsoft Docs
+title: Énumérateur de code d’état de fichier | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1b6e74caa9eedd42e25339d62f5837ccfe82d001
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204379"
 ---
 # <a name="file-status-code-enumerator"></a>Énumérateur de code d’état de fichier
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Le `SccStatus` énumérateur contient des valeurs de constantes nommées qui spécifient l’état d’un fichier dans le système de contrôle source. Cette énumération est utilisée par le [SccQueryInfo](../extensibility/sccqueryinfo-function.md) et `POPLISTFUNC` fonction de rappel (voir [POPLISTFUNC](../extensibility/poplistfunc.md) pour plus d’informations).  
+L' `SccStatus` énumérateur contient des valeurs constantes nommées qui spécifient l’état d’un fichier dans le système de contrôle de code source. Cette énumération est utilisée par [SccQueryInfo](../extensibility/sccqueryinfo-function.md) et la `POPLISTFUNC` fonction de rappel (pour plus d’informations, consultez [POPLISTFUNC](../extensibility/poplistfunc.md) ).  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -52,52 +52,52 @@ enum SccStatus {
   
 ## <a name="members"></a>Membres  
  SCC_STATUS_INVALID  
- État n’a pas pu être obtenu ; ne comptez pas sur celle-ci.  
+ Impossible d’obtenir l’État ; ne vous fiez pas à cette fonction.  
   
  SCC_STATUS_NOTCONTROLLED  
- Fichier n’est pas sous contrôle de code source.  
+ Le fichier n’est pas sous contrôle de code source.  
   
  SCC_STATUS_CONTROLLED  
- Fichier est sous contrôle de code source.  
+ Le fichier est sous contrôle de code source.  
   
  SCC_STATUS_CHECKEDOUT  
  Extrait par l’utilisateur actuel sur le disque local.  
   
  SCC_STATUS_OUTOTHER  
- Fichier est extrait par un autre utilisateur.  
+ Le fichier est extrait par un autre utilisateur.  
   
  SCC_STATUS_OUTEXCLUSIVE  
- Fichier est extrait en mode exclusif.  
+ Le fichier est extrait en mode exclusif.  
   
  SCC_STATUS_OUTMULTIPLE  
- Fichier est extrait par plusieurs utilisateurs.  
+ Le fichier est extrait par plusieurs utilisateurs.  
   
  SCC_STATUS_OUTOFDATE  
- Le fichier n’est pas la plus récente.  
+ Le fichier n’est pas le plus récent.  
   
  SCC_STATUS_DELETED  
- Fichier a été supprimé du projet.  
+ Le fichier a été supprimé du projet.  
   
  SCC_STATUS_LOCKED  
- Fichier est verrouillé ; aucune version plus autorisée.  
+ Le fichier est verrouillé ; aucune autre version n’est autorisée.  
   
  SCC_STATUS_MERGED  
- Fichier a été fusionné mais pas encore résolu/vérifié.  
+ Le fichier a été fusionné mais pas encore résolu/vérifié.  
   
  SCC_STATUS_SHARED  
- Fichier est partagé entre les projets.  
+ Le fichier est partagé entre les projets.  
   
  SCC_STATUS_PINNED  
- Fichier est partagé sur une version explicite.  
+ Le fichier est partagé dans une version explicite.  
   
  SCC_STATUS_MODIFIED  
- Fichier a été modifié, rompu/violée.  
+ Le fichier a été modifié/cassé/violé.  
   
  SCC_STATUS_OUTBYUSER  
- Fichier est extrait par l’utilisateur actuel.  
+ Le fichier est extrait par l’utilisateur actuel.  
   
  SCC_STATUS_NOMERGE  
- Fichier ne peut jamais être fusionnée avec et ne doive pas être enregistré avant une opération GET.  
+ Le fichier ne peut jamais être fusionné avec et ne doit pas être enregistré avant une opération d’extraction.  
   
  SCC_STATUS_RESERVED_1  
  Réservé à un usage interne.  

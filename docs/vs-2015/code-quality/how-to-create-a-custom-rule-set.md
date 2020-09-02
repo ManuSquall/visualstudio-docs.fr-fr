@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Créer un ensemble de règles personnalisé | Microsoft Docs'
+title: 'Comment : créer un ensemble de règles personnalisé | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -14,16 +14,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 6e4aef02a2bb320112d7d268da28cf66b1ec6751
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657447"
 ---
-# <a name="how-to-create-a-custom-rule-set"></a>Procédure : Créer un ensemble de règles personnalisé
+# <a name="how-to-create-a-custom-rule-set"></a>Comment : créer un ensemble de règles personnalisé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Dans [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] et [!INCLUDE[vsPro](../includes/vspro-md.md)], vous pouvez créer et modifier un ensemble de *règles* personnalisé pour répondre à des besoins de projet spécifiques associés à l’analyse du code. Pour créer un ensemble de règles personnalisé, vous ouvrez un ou plusieurs ensembles de règles standard dans l’éditeur d’ensembles de règles. Vous pouvez ensuite ajouter ou supprimer des règles spécifiques, et vous pouvez modifier l’action qui se produit lorsque l’analyse du code détermine qu’une règle a été violée.
+Dans [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] , [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] et [!INCLUDE[vsPro](../includes/vspro-md.md)] , vous pouvez créer et modifier un ensemble de *règles* personnalisé pour répondre à des besoins de projet spécifiques associés à l’analyse du code. Pour créer un ensemble de règles personnalisé, vous ouvrez un ou plusieurs ensembles de règles standard dans l’éditeur d’ensembles de règles. Vous pouvez ensuite ajouter ou supprimer des règles spécifiques, et vous pouvez modifier l’action qui se produit lorsque l’analyse du code détermine qu’une règle a été violée.
 
  Pour créer un ensemble de règles personnalisé, enregistrez-le à l’aide d’un nouveau nom de fichier. L’ensemble de règles personnalisé est automatiquement affecté au projet.
 
@@ -31,7 +31,7 @@ Dans [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort]
 
 #### <a name="to-open-an-empty-rule-set-file-in-the-rule-set-editor"></a>Pour ouvrir un fichier d’ensemble de règles vide dans l’éditeur d’ensembles de règles
 
-1. Dans le menu **fichier** de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], pointez sur **nouveau** , puis cliquez sur **fichier**.
+1. Dans le menu **fichier** de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] , pointez sur **nouveau** , puis cliquez sur **fichier**.
 
 2. Dans la boîte de dialogue **nouveau fichier** , cliquez sur **général** dans la liste **modèles installés** , puis sélectionnez **ensemble de règles d’analyse du code**.
 
@@ -49,7 +49,7 @@ Dans [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort]
 
      \- ou -
 
-   - Sélectionner **\<Browse... >** pour spécifier un ensemble de règles existant qui ne figure pas dans la liste.
+   - Sélectionnez **\<Browse...>** cette option pour spécifier un ensemble de règles existant qui ne figure pas dans la liste.
 
 4. Cliquez sur **ouvrir** pour afficher les règles dans l’éditeur d’ensembles de règles.
 
@@ -59,7 +59,7 @@ Dans [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort]
 
 2. Sous l’onglet **Propriétés** , cliquez sur **analyse du code**.
 
-3. Sélectionner **\<Choose plusieurs ensembles de règles... >** de **l’exécution de cet ensemble de règles**.
+3. Sélectionnez **\<Choose multiple rule sets...>** dans **exécuter cet ensemble de règles**.
 
 4. Dans la boîte de dialogue **Ajouter ou supprimer des ensembles de règles** , sélectionnez les ensembles de règles sur lesquels vous souhaitez baser votre nouvel ensemble de règles, puis cliquez sur **OK**.
 
@@ -97,7 +97,7 @@ Dans [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort]
 
 - Pour réduire les règles de tous les groupes, cliquez sur **réduire tout**.
 
-- Pour modifier le champ par lequel les règles sont regroupées, sélectionnez le champ dans la liste **regrouper par** . Pour afficher les règles non groupées, sélectionnez **\<None >** .
+- Pour modifier le champ par lequel les règles sont regroupées, sélectionnez le champ dans la liste **regrouper par** . Pour afficher les règles non groupées, sélectionnez **\<None>** .
 
 - Pour ajouter ou supprimer des champs dans les colonnes de règle, cliquez sur **options de colonne**.
 
@@ -112,4 +112,4 @@ Dans [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort]
 - Pour ajouter ou supprimer des ensembles de règles par défaut Microsoft pour l’ensemble de règles actuel, cliquez sur **Ajouter ou supprimer des ensembles de règles enfants**.
 
 ## <a name="see-also"></a>Voir aussi
- [Guide pratique : Configurer l’analyse du code pour un projet de code managé ](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md) référence de l' [ensemble de règles d’analyse du code](../code-quality/code-analysis-rule-set-reference.md)
+ [Comment : configurer l’analyse du code pour une référence d’ensemble de règles d’analyse du code de projet de code managé](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md) [Code analysis rule set reference](../code-quality/code-analysis-rule-set-reference.md)

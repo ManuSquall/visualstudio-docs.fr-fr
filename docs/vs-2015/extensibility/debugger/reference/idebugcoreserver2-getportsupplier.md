@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer2::GetPortSupplier | Microsoft Docs
+title: 'IDebugCoreServer2 :: GetPortSupplier | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5659453de43967f96cc2d7d238a4261aa7d5443a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192946"
 ---
 # <a name="idebugcoreserver2getportsupplier"></a>IDebugCoreServer2::GetPortSupplier
@@ -42,13 +42,13 @@ int GetPortSupplier( 
   
 #### <a name="parameters"></a>Paramètres  
  `guidPortSupplier`  
- [in] GUID du fournisseur de port doit être récupéré.  
+ dans GUID du fournisseur de ports à récupérer.  
   
  `ppPortSupplier`  
- [out] Retourne un [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) objet représentant le fournisseur de port souhaité.  
+ à Retourne un objet [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) représentant le fournisseur de ports souhaité.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)   

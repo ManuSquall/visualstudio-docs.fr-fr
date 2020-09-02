@@ -14,21 +14,21 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d2e31fc094b777b328347bdcd783b69f1539f246
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68176546"
 ---
-# <a name="how-to-start-and-stop-the-message-log-display"></a>Procédure : Démarrer et arrêter l’affichage du journal des messages
+# <a name="how-to-start-and-stop-the-message-log-display"></a>Comment : démarrer et arrêter l'affichage du journal des messages
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Quand un [vue Messages](../debugger/messages-view.md) fenêtre est active, un **Start Logging** ou **Stop Logging** choix s’affiche sur Spy ++ **Messages** menu et le correspondant **Start Logging** ou **Stop Logging** bouton de barre d’outils devienne actif.  
+Quand une fenêtre d' [affichage des messages](../debugger/messages-view.md) est active, un choix **Démarrer** l’enregistrement ou **arrêter l’enregistrement** s’affiche dans le menu **messages** Spy + + et le bouton **Démarrer la journalisation** ou **arrêter** l’enregistrement dans la barre d’outils est activé.  
   
 ### <a name="to-start-the-message-log-display"></a>Pour démarrer l’affichage du journal des messages  
   
-1. À partir de la **Messages** menu, choisissez **Start Logging**.  
+1. Dans le menu **messages** , choisissez **Démarrer la journalisation**.  
   
 ### <a name="to-stop-the-message-log-display"></a>Pour arrêter l’affichage du journal des messages  
   
-1. À partir de la **Messages** menu, choisissez **Stop Logging**.
+1. Dans le menu **messages** , choisissez **arrêter l’enregistrement**.

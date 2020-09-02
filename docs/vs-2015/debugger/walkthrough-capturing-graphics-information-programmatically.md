@@ -10,13 +10,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9de8e2a2ee69911f5505937494d2912c724326e9
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75847810"
 ---
-# <a name="walkthrough-capturing-graphics-information-programmatically"></a>Procédure pas à pas : capture d'informations Graphics par programmation
+# <a name="walkthrough-capturing-graphics-information-programmatically"></a>Procédure pas à pas : capture d’informations graphiques par programmation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour capturer par programmation les informations graphiques d'une application Direct3D.  
@@ -29,7 +29,7 @@ Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../inc
   
 - Appelez `CaptureCurrentFrame`quand un problème de rendu est difficile à prévoir et à capturer dans le cadre d'un test manuel, mais qui peut être prédit par programmation à partir d'informations sur l'état de l'application au moment de l'exécution.  
   
-## <a name="CaptureDX11_2"></a> Capture par programmation dans Windows 8.1  
+## <a name="programmatic-capture-in-windows-81"></a><a name="CaptureDX11_2"></a> Capture par programmation dans Windows 8.1  
  Cette partie de la procédure pas à pas illustre la capture par programmation dans des applications qui utilisent l'API DirectX 11.2 dans Windows 8.1, qui elle-même utilise la méthode de capture robuste. Pour plus d’informations sur l’utilisation de la capture par programmation dans les applications Windows 8 qui utilisent des versions antérieures de DirectX, consultez [Programmatic capture in Windows 8.0 and earlier](#CaptureDX11_1) , plus loin dans cette procédure pas à pas.  
   
  Cette section montre comment effectuer ces tâches :  
@@ -64,7 +64,7 @@ Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../inc
     > Si le Kit de développement logiciel (SDK) DirectX de juin 2010 est installé sur votre machine et que le chemin include de votre projet contient `%DXSDK_DIR%includex86`, déplacez-le à la fin du chemin include. Faites-en autant pour le chemin d'accès à votre bibliothèque.  
   
 #### <a name="windows-phone-81"></a>Windows Phone 8.1  
- Étant donné que le kit de développement logiciel (SDK) Windows Phone 8,1 n’inclut pas l’en-tête DXProgrammableCapture. h, vous devez définir l’interface `IDXGraphicsAnalysis` vous-même pour pouvoir utiliser les méthodes `BeginCapture()` et `EndCapture()`. Incluez les autres en-têtes comme décrit dans la section précédente.  
+ Étant donné que le kit de développement logiciel (SDK) Windows Phone 8,1 n’inclut pas l’en-tête DXProgrammableCapture. h, vous devez définir l' `IDXGraphicsAnalysis` interface vous-même pour pouvoir utiliser les `BeginCapture()` `EndCapture()` méthodes et. Incluez les autres en-têtes comme décrit dans la section précédente.  
   
 ###### <a name="to-define-the-idxgraphicsanalysis-interface"></a>Pour définir l'interface IDXGraphicsAnalysis  
   
@@ -85,7 +85,7 @@ Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../inc
  Avant de pouvoir capturer les informations graphiques de DirectX 11.2, vous devez obtenir l'interface de débogage DXGI.  
   
 > [!IMPORTANT]
-> Lorsque vous utilisez la capture par programmation, vous devez toujours exécuter votre application dans Graphics Diagnostics (Alt + F5 dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]) ou sous l' [outil de capture en ligne de commande](../debugger/command-line-capture-tool.md).  
+> Lorsque vous utilisez la capture par programmation, vous devez toujours exécuter votre application dans Graphics Diagnostics (Alt + F5 dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ) ou sous l' [outil de capture en ligne de commande](../debugger/command-line-capture-tool.md).  
   
 ##### <a name="to-get-the-idxgraphicsanalysis-interface"></a>Pour obtenir l'interface IDXGraphicsAnalysis  
   
@@ -129,7 +129,7 @@ Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../inc
     ...  
     ```  
   
-## <a name="CaptureDX11_1"></a> Programmatic capture in Windows 8.0 and earlier  
+## <a name="programmatic-capture-in-windows-80-and-earlier"></a><a name="CaptureDX11_1"></a> Programmatic capture in Windows 8.0 and earlier  
  Cette partie de la procédure pas à pas illustre la capture par programmation dans des applications pour Windows 8.0 ou version antérieure qui utilisent l'API DirectX 11.1, qui elle-même utilise la méthode de capture héritée. Pour plus d’informations sur l’utilisation de la capture par programmation dans les applications Windows 8.1 qui utilisent DirectX 11.2, consultez [Capture par programmation dans Windows 8.1](#CaptureDX11_2) , plus haut dans cette procédure pas à pas.  
   
  Cette partie présente les tâches suivantes :  
@@ -182,7 +182,7 @@ Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../inc
   
    Si vous n'effectuez pas cette étape, le nom de fichier est default.vsglog. Si vous n'avez pas défini `DONT_SAVE_VSGLOG_TO_TEMP`, l'emplacement du fichier est relatif au répertoire temporaire ; sinon, il est relatif au répertoire de travail ou se situe à un autre emplacement si vous avez spécifié un nom de fichier absolu.  
   
-  Pour les applications [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], l’emplacement du répertoire temporaire est propre à chaque utilisateur et application, et se trouve généralement à un emplacement tel que C:\Users\\nom *d’utilisateur*\AppData\Local\Packages\\nom de la *famille de packages*\TempState\\. Pour les applications de bureau, l’emplacement du répertoire temporaire est propre à chaque utilisateur et se trouve généralement à un emplacement tel que C:\Users\\*nom d’utilisateur*\AppData\Local\Temp\\.  
+  Pour les [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] applications, l’emplacement du répertoire temporaire est propre à chaque utilisateur et application, et se trouve généralement à un emplacement tel que C:\Users \\ *nom_utilisateur*\AppData\Local\Packages nom de la \\ *famille de packages*\TempState \\ . Pour les applications de bureau, l’emplacement du répertoire temporaire est propre à chaque utilisateur et se trouve généralement à un emplacement tel que C:\Users \\ *nom_utilisateur*\AppData\Local\Temp \\ .  
   
 > [!NOTE]
 > Pour écrire à un emplacement spécifique, vous devez avoir des autorisations d'accès en écriture à cet emplacement ; sinon, une erreur se produit. Gardez à l'esprit que les applications [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] sont plus limitées que les applications de bureau en ce qui concerne l'écriture des données et qu'une configuration supplémentaire peut être nécessaire pour leur permettre d'écrire à certains emplacements.  
@@ -200,5 +200,5 @@ Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../inc
   
 ## <a name="see-also"></a>Voir aussi  
  [Procédure pas à pas : capture d’informations graphiques](../debugger/walkthrough-capturing-graphics-information.md)   
- [Capturing Graphics Information](../debugger/capturing-graphics-information.md)   
- [Outil de capture en ligne de commande](../debugger/command-line-capture-tool.md)
+ [Capture d’informations graphiques](../debugger/capturing-graphics-information.md)   
+ [Outil en ligne de commande de capture](../debugger/command-line-capture-tool.md)

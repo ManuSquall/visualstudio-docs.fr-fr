@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 820f4ac8b154579664e01b12aa8146e4668cc17b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670670"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Comment : spécifier des événements de build (Visual Basic)
@@ -45,7 +45,7 @@ Vous pouvez utiliser des événements de build en Visual Basic pour exécuter de
 4. Entrez les arguments de ligne de commande pour votre action pré-build ou post-build, puis cliquez sur **OK**.
 
     > [!NOTE]
-    > Ajoutez une instruction `call` avant toutes les commandes post-build qui exécutent des fichiers .bat. Par exemple, `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.
+    > Ajoutez une instruction `call` avant toutes les commandes post-build qui exécutent des fichiers .bat.  Par exemple, `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.
 
     > [!NOTE]
     > Si votre événement pré-build ou post-build ne s’exécute pas correctement, vous pouvez terminer la génération en faisant en sorte que l’action d’événement s’achève avec un code autre que zéro (0), qui indique une action réussie.
@@ -63,9 +63,9 @@ Vous pouvez utiliser des événements de build en Visual Basic pour exécuter de
 
 #### <a name="to-create-an-exe-command-to-change-the-application-manifest"></a>Pour créer une commande .exe afin de modifier le manifeste d’application
 
-1. Créez une application console pour la commande. Dans le menu **Fichier**, cliquez sur **Nouveau**, puis sur **Projet**.
+1. Créez une application console pour la commande. Dans le menu **fichier** , cliquez sur **nouveau**, puis sur **projet**.
 
-2. Dans la boîte de dialogue **Nouveau projet**, dans le nœud **Visual Basic**, sélectionnez **Windows**, puis le modèle **Application console**. Attribuez un nom au projet `ChangeOSVersionVB`.
+2. Dans la boîte de dialogue **Nouveau projet**, dans le nœud **Visual Basic**, sélectionnez **Windows**, puis le modèle **Application console**. Nommez le projet `ChangeOSVersionVB`.
 
 3. Dans Module1.vb, ajoutez la ligne suivante aux autres instructions `Imports` au début du fichier :
 
@@ -118,7 +118,7 @@ Vous pouvez utiliser des événements de build en Visual Basic pour exécuter de
 
     La commande prend deux arguments. Le premier argument est le chemin du manifeste d’application (autrement dit, le dossier dans lequel le processus de génération crée le manifeste, en général NomProjet.Publish). Le second argument est la nouvelle version du système d’exploitation.
 
-5. Dans le menu **Générer** , cliquez sur **Générer la solution**.
+5. Dans le menu **Générer**, cliquez sur **Générer la solution**.
 
 6. Copiez le fichier .exe dans un répertoire tel que `C:\TEMP\ChangeOSVersionVB.exe`.
 
@@ -126,9 +126,9 @@ Vous pouvez utiliser des événements de build en Visual Basic pour exécuter de
 
 #### <a name="to-invoke-a-post-build-event-to-change-the-application-manifest"></a>Pour appeler un événement post-build afin de modifier le manifeste d’application
 
-1. Créez une application Windows pour le projet à publier. Dans le menu **Fichier**, cliquez sur **Nouveau**, puis sur **Projet**.
+1. Créez une application Windows pour le projet à publier. Dans le menu **fichier** , cliquez sur **nouveau**, puis sur **projet**.
 
-2. Dans la boîte de dialogue **Nouveau projet**, dans le nœud **Visual Basic**, sélectionnez **Windows**, puis le modèle **Application Windows**. Attribuez un nom au projet `VBWinApp`.
+2. Dans la boîte de dialogue **Nouveau projet**, dans le nœud **Visual Basic**, sélectionnez **Windows**, puis le modèle **Application Windows**. Nommez le projet `VBWinApp`.
 
 3. Après avoir sélectionné le projet dans l’**Explorateur de solutions**, dans le menu **Projet**, cliquez sur **Propriétés**.
 
@@ -144,7 +144,7 @@ Vous pouvez utiliser des événements de build en Visual Basic pour exécuter de
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
     ```
 
-6. Dans le Concepteur de projets, accédez à l’onglet **Compiler**, puis cliquez sur le bouton **Événements de build** pour ouvrir la boîte de dialogue **Événements de build**.
+6. Dans le concepteur de projets, accédez à l’onglet **compiler** , puis cliquez sur le bouton **événements de build** pour ouvrir la boîte de dialogue **événements de build** .
 
 7. Dans la zone **Ligne de commande de l’événement post-build**, entrez la commande suivante :
 
@@ -165,4 +165,4 @@ Vous pouvez utiliser des événements de build en Visual Basic pour exécuter de
     ```
 
 ## <a name="see-also"></a>Voir aussi
- [Page gestion des propriétés de compilation](https://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c) [, page de publication du concepteur de projets (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md) [,](../ide/reference/publish-page-project-designer.md) boîte de dialogue de la ligne de commande de l’événement [pré-build/après](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) génération du concepteur de projets [Comment : spécifier des événements de build (C#) ](../ide/how-to-specify-build-events-csharp.md)
+ Page de compilation [des propriétés de compilation](https://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c) [, page de publication du concepteur de projets (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md) [,](../ide/reference/publish-page-project-designer.md) boîte de dialogue de la ligne de commande de l’événement [pré-build/après](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) génération du concepteur de projets [Comment : spécifier des événements de build (C#)](../ide/how-to-specify-build-events-csharp.md)

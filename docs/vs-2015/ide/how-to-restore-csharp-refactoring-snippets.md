@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6ae3f1d74a482192d3782aaa87baa816694abcf4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670788"
 ---
 # <a name="how-to-restore-c-refactoring-snippets"></a>Comment : restaurer les extraits de code de refactorisation C#
@@ -44,7 +44,7 @@ Les opérations de refactorisation C# reposent sur des extraits de code disponib
 
 3. Dans la boîte de dialogue **Gestionnaire des extraits de code**, sélectionnez **Visual C#** dans la liste déroulante **Langage**.
 
-4. Cliquez sur **Ajouter**. La boîte de dialogue **Répertoire des extraits de code**, qui vous aide à localiser et spécifier le répertoire à rajouter dans le Gestionnaire des extraits de code, s’affiche.
+4. Cliquez sur **Add**. La boîte de dialogue **Répertoire des extraits de code**, qui vous aide à localiser et spécifier le répertoire à rajouter dans le Gestionnaire des extraits de code, s’affiche.
 
 5. Localisez le dossier **Refactoring**, dont le chemin est :
 
@@ -57,4 +57,4 @@ Les opérations de refactorisation C# reposent sur des extraits de code disponib
 6. Cliquez sur **Ouvrir** dans la boîte de dialogue **Répertoire des extraits de code**, puis cliquez sur **OK** dans le Gestionnaire des extraits de code.
 
 ## <a name="see-also"></a>Voir aussi
- [Extraits C# ](../ide/visual-csharp-code-snippets.md) de [code](../ide/code-snippets.md) des extraits de code Visual [(C#) refactorisation](../csharp-ide/refactoring-csharp.md)
+ Extraits de code [Visual c#](../ide/visual-csharp-code-snippets.md) [refactorisation (C#), extraits de](../csharp-ide/refactoring-csharp.md) [code](../ide/code-snippets.md)

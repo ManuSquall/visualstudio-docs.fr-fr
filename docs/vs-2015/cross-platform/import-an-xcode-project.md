@@ -8,10 +8,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 4faa2ecae7f53d29e6aad92723ca6d12e50e2812
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150982"
 ---
 # <a name="import-an-xcode-project"></a>Importer un projet Xcode
@@ -26,25 +26,25 @@ Microsoft Visual C++ pour le développement mobile multiplateforme prend en cha
   
 1. Dans le menu **Fichier**, choisissez **Nouveau**, **Importer**, **Importer à partir de Xcode**. Cela permet d’afficher la boîte de dialogue d’Assistant intitulée **Importer à partir de Xcode**.  
   
-    ![Choisir le projet cible Xcode à importer](../cross-platform/media/cppmdd-u2-importxcode-choose.PNG "CPPMDD_U2_ImportXCode_Choose")  
+    ![Choisir le projet de cible XCode à importer](../cross-platform/media/cppmdd-u2-importxcode-choose.PNG "CPPMDD_U2_ImportXCode_Choose")  
   
 2. Dans le volet **Choisir un projet**, choisissez le bouton Parcourir pour sélectionner un fichier .pbxproj Xcode. Accédez au fichier projet via la boîte de dialogue **Sélectionner un fichier projet Xcode**, puis choisissez **Ouvrir**.  
   
-    ![Sélectionner un fichier projet dans la boîte de dialogue Sélectionner un fichier projet Xcode](../cross-platform/media/cppmdd-u2-importxcode-browse.PNG "CPPMDD_U2_ImportXCode_Browse")  
+    ![Sélectionnez un fichier projet dans la boîte de dialogue Sélectionner le fichier projet XCode](../cross-platform/media/cppmdd-u2-importxcode-browse.PNG "CPPMDD_U2_ImportXCode_Browse")  
   
     Dans l’Assistant Importation à partir de Xcode, choisissez **Suivant**.  
   
 3. Dans le volet **Cibles de destination**, choisissez les cibles du projet Xcode à importer dans les projets Visual Studio. Les cibles Xcode sont semblables aux projets Visual Studio. Il s’agit pour la plupart d’un ensemble de codes et de ressources qui permettent de produire un fichier binaire. L’Assistant Importation à partir de Xcode autorise uniquement l’importation des cibles qui produisent un fichier binaire, mais pas une bibliothèque statique, en tant que cibles de destination. Les cibles de bibliothèque statique Xcode sont traitées à l’étape suivante.  
   
-    ![Volet Cibles de destination de l’Assistant Importation à partir de Xcode](../cross-platform/media/cppmdd-u2-importxcode-destination.jpg "CPPMDD_U2_ImportXCode_Destination")  
+    ![Importer à partir de XCode, Assistant cibles de destination](../cross-platform/media/cppmdd-u2-importxcode-destination.jpg "CPPMDD_U2_ImportXCode_Destination")  
   
-    Pour chaque cible sélectionnée dans **Cibles à importer**, l’Assistant détecte automatiquement les fichiers de code C++ qui peuvent être fractionnés en projet de bibliothèque statique distinct, puis les place dans la section **Éléments de projet C++** . Le reste du code et des ressources est laissé dans la section **Éléments de projet Xcode**. Une fois que l’Assistant a effectué le processus d’importation, ils deviennent des projets de bibliothèque statique et d’application distincts dans Visual Studio. Par défaut, les cibles de test unitaire et de framework ne sont pas fractionnées en projets distincts par l’Assistant.  
+    Pour chaque cible sélectionnée dans **Cibles à importer**, l’Assistant détecte automatiquement les fichiers de code C++ qui peuvent être fractionnés en projet de bibliothèque statique distinct, puis les place dans la section **Éléments de projet C++**. Le reste du code et des ressources est laissé dans la section **Éléments de projet Xcode**. Une fois que l’Assistant a effectué le processus d’importation, ils deviennent des projets de bibliothèque statique et d’application distincts dans Visual Studio. Par défaut, les cibles de test unitaire et de framework ne sont pas fractionnées en projets distincts par l’Assistant.  
   
     Pour changer les fichiers contenus dans chaque projet, utilisez les boutons de déplacement vers le haut et le bas. Une fois que la liste des fichiers de chaque projet vous convient, choisissez **Suivant** pour continuer.  
   
 4. Dans le volet **Cibles de bibliothèques**, choisissez les cibles de bibliothèque statique du projet Xcode à importer dans les projets Visual Studio. Dans ce volet, vous pouvez choisir les fichiers à placer dans un projet de code partagé, et ceux à placer dans un projet de bibliothèque statique. Dans chacune des cibles de la liste **Cibles à importer**, vous pouvez contrôler les fichiers à placer dans les **Éléments de projet de code partagé** et les **Éléments de projet de bibliothèque statique** à l’aide des boutons de déplacement vers le haut et le bas.  
   
-    ![Volet Cibles de bibliothèques de l’importation à partir de Xcode](../cross-platform/media/cppmdd-u2-importxcode-library.jpg "CPPMDD_U2_ImportXCode_Library")  
+    ![Importer à partir du volet cibles de la bibliothèque XCode](../cross-platform/media/cppmdd-u2-importxcode-library.jpg "CPPMDD_U2_ImportXCode_Library")  
   
     Un projet de code partagé est un moyen de partager un ensemble de fichiers de code source entre plusieurs projets dans Visual Studio. Le code est généré dans le cadre du projet où il se trouve, et non en tant que projet à part entière. Comme les projets qui incluent du code partagé peuvent avoir différentes architectures et configurations, ceci est le meilleur moyen de fournir un projet unique qui contient le code à générer pour de nombreux genres de plateforme.  
   
@@ -52,15 +52,15 @@ Microsoft Visual C++ pour le développement mobile multiplateforme prend en cha
   
 5. Vous pouvez utiliser le volet **Propriétés globales** pour définir un chemin de recherche de frameworks et un chemin de recherche de fichiers d’en-tête Include pour tous les projets iOS dans Visual Studio. Visual Studio utilise ces chemins pour la recherche du code source et pour IntelliSense. Ces chemins globaux sont utiles quand vous créez des projets iOS qui utilisent un ensemble commun d’en-têtes et de frameworks.  
   
-    ![Volet Propriétés globales de l’importation à partir de Xcode](../cross-platform/media/cppmdd-u2-importxcode-global.jpg "CPPMDD_U2_ImportXCode_Global")  
+    ![Importer à partir du volet Propriétés globales de XCode](../cross-platform/media/cppmdd-u2-importxcode-global.jpg "CPPMDD_U2_ImportXCode_Global")  
   
-    Vous pouvez également définir ces chemins globaux dans Visual Studio, dans la boîte de dialogue **Options**. Pour les trouver, dans le menu **Outils**, sélectionnez **Options**. Dans la boîte de dialogue **Options**, développez **Multiplateforme**, **C++** , **iOS**, **Propriétés globales**.  
+    Vous pouvez également définir ces chemins globaux dans Visual Studio, dans la boîte de dialogue **Options**. Pour les trouver, dans le menu **Outils**, sélectionnez **Options**. Dans la boîte de dialogue **Options**, développez **Multiplateforme**, **C++**, **iOS**, **Propriétés globales**.  
   
     Choisissez **Suivant** pour continuer.  
   
 6. Le volet **Frameworks** permet de configurer les chemins utilisés par Visual Studio pour parcourir les éléments de votre projet, ainsi que pour IntelliSense. Les chemins doivent être accessibles à Visual Studio pour chaque framework référencé par votre projet Xcode. L’Assistant vérifie les références de framework dans les projets Xcode et indique si Visual Studio peut trouver le framework. Si vous avez déjà configuré un chemin dans les propriétés globales, il doit être découvert par Visual Studio. Les exceptions sont répertoriées dans la liste Frameworks. Pour chaque framework listé avec un X, indiquez un chemin accessible au PC afin de permettre à Visual Studio de trouver le framework. Vous pouvez utiliser le bouton Parcourir [...] pour afficher une boîte de dialogue **Sélectionner un dossier** et trouver le chemin. Le chemin du framework peut être celui d’une copie locale ou d’un partage réseau sur votre Mac.  
   
-    ![Volet Frameworks de l’importation à partir de Xcode](../cross-platform/media/cppmdd-u2-importxcode-frameworks.jpg "CPPMDD_U2_ImportXCode_Frameworks")  
+    ![Importer à partir du volet frameworks XCode](../cross-platform/media/cppmdd-u2-importxcode-frameworks.jpg "CPPMDD_U2_ImportXCode_Frameworks")  
   
     Choisissez **Suivant** pour continuer.  
   
@@ -68,7 +68,7 @@ Microsoft Visual C++ pour le développement mobile multiplateforme prend en cha
   
     Pour définir un chemin spécifique à un projet, dans la liste déroulante **Projet de destination**, sélectionnez le fichier projet, puis définissez les valeurs des contrôles **Chemin de recherche de frameworks** et **Chemin de recherche de fichiers d’en-tête Include**. Vous pouvez utiliser le bouton Parcourir [...] près de chaque contrôle pour afficher une boîte de dialogue **Sélectionner un dossier** et trouver le chemin.  
   
-    ![Volet Projets de l’importation à partir de Xcode](../cross-platform/media/cppmdd-u2-importxcode-projects.jpg "CPPMDD_U2_ImportXCode_Projects")  
+    ![Importer à partir du volet projets XCode](../cross-platform/media/cppmdd-u2-importxcode-projects.jpg "CPPMDD_U2_ImportXCode_Projects")  
   
     Si aucun Mac distant n’a été jumelé à ce PC dans Visual Studio, le lien Configurer une machine distante s’affiche. Pour obtenir des instructions sur la configuration du jumelage, consultez [Installer et configurer des outils de génération en utilisant iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md).  
   

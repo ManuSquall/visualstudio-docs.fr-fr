@@ -1,5 +1,5 @@
 ---
-title: Étendre les propriétés et la fenêtre des propriétés | Microsoft Docs
+title: Extension des propriétés et de la fenêtre de propriétés | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -15,22 +15,22 @@ caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c9ec498aca375cb5c63a574ebc72ab04219eb047
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204483"
 ---
 # <a name="extending-properties-and-the-property-window"></a>Extension des propriétés et la fenêtre Propriétés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Le **propriétés** fenêtre est utilisée pour afficher et modifier les propriétés au moment du design et les événements des objets sélectionnés.  
+La fenêtre **Propriétés** permet d’afficher et de modifier les propriétés et les événements au moment du design des objets sélectionnés.  
   
- Lorsque vous sélectionnez un objet dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], les propriétés publiques de cet objet s’affichent dans le **propriétés** fenêtre. Pour plus d’informations, consultez [vue d’ensemble de la fenêtre Propriétés](../extensibility/internals/properties-window-overview.md).  
+ Lorsque vous sélectionnez un objet dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , les propriétés publiques de cet objet s’affichent dans la fenêtre **Propriétés** . Pour plus d’informations, consultez [vue d’ensemble de la fenêtre Propriétés](../extensibility/internals/properties-window-overview.md).  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Exposition des propriétés dans la fenêtre Propriétés](../extensibility/exposing-properties-to-the-properties-window.md)  
- Explique comment vous pouvez avoir vos propriétés personnalisées affichées dans la fenêtre Propriétés.  
+ Explique comment les propriétés personnalisées peuvent s’afficher dans la Fenêtre Propriétés.  
   
  [Obtention des propriétés d’un projet](../extensibility/getting-project-properties.md)  
- Explique comment obtenir les propriétés du projet.
+ Explique comment accéder aux propriétés d’un projet.

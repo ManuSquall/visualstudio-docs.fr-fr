@@ -1,5 +1,5 @@
 ---
-title: 'Comment : définir les propriétés d’analyse du code pourC++ C-Projects | Microsoft Docs'
+title: 'Comment : définir les propriétés d’analyse du code pour les projets C-C++ | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -20,10 +20,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: b2fb3cb81b49fd4b8cc83e0548110d2025c7488d
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77277984"
 ---
 # <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Comment : définir les propriétés d'analyse du code pour les projets C/C++
@@ -38,7 +38,7 @@ Vous pouvez configurer les règles que l’outil d’analyse du code utilise pou
  La liste de **configurations** et la liste de **plateformes** vous permettent d’appliquer différents paramètres d’analyse du code à différentes configurations de projet et combinaisons de plateformes. Par exemple, vous pouvez diriger l’analyse du code pour appliquer un ensemble de règles à votre projet pour les versions de débogage et un autre ensemble pour les versions release.  
   
 ## <a name="enabling-code-analysis"></a>Activation de l’analyse du code  
- Vous pouvez décider d’activer ou non l’analyse du code pour votre projet en sélectionnant **activer l'C++ analyse du code pour C/on Build**. En association avec la liste de **configuration** , vous pouvez, par exemple, décider de désactiver l’analyse du code pour les builds de débogage et de l’activer pour les versions release.  
+ Vous pouvez décider d’activer ou non l’analyse du code pour votre projet en sélectionnant **activer l’analyse du code pour C/C++ sur la build**. En association avec la liste de **configuration** , vous pouvez, par exemple, décider de désactiver l’analyse du code pour les builds de débogage et de l’activer pour les versions release.  
   
  Si votre projet contient du code managé, vous pouvez décider s’il faut activer ou désactiver l’analyse du code en sélectionnant **activer l’analyse du code sur la build**.  
   
@@ -53,5 +53,5 @@ Vous pouvez configurer les règles que l’outil d’analyse du code utilise pou
  Si votre projet contient du code managé, vous pouvez sélectionner les règles à appliquer dans une analyse du code en sélectionnant un ensemble de règles dans la liste **exécuter cet ensemble de règles** .  
   
 ## <a name="see-also"></a>Voir aussi  
- [Analyse de la qualité d’un code managé](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)   
- [Avertissements liés à l’analyse de code C/C++](../code-quality/code-analysis-for-c-cpp-warnings.md)
+ [Analyse de la qualité du code managé](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)   
+ [Analyse du code pour les avertissements C/C++](../code-quality/code-analysis-for-c-cpp-warnings.md)

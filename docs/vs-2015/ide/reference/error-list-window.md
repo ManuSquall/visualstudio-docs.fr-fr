@@ -17,17 +17,17 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 35be5ddeedf0b081fa94e399f294151e73a157ed
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657733"
 ---
-# <a name="error-list-window"></a>Liste d'erreurs, fenêtre
+# <a name="error-list-window"></a>Fenêtre Liste d'erreurs
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 REMARQUE]
-> La liste d'erreurs affiche des informations sur un message d'erreur spécifique. Vous pouvez copier le numéro d'erreur ou le texte de la chaîne d'erreur dans la fenêtre Sortie. Pour afficher la fenêtre Sortie, appuyez sur Ctrl+Alt+O. Consultez [Sortie, fenêtre](../../ide/reference/output-window.md).
+> La liste d'erreurs affiche des informations sur un message d'erreur spécifique. Vous pouvez copier le numéro d'erreur ou le texte de la chaîne d'erreur dans la fenêtre Sortie. Pour afficher la fenêtre Sortie, appuyez sur Ctrl+Alt+O. Consultez [fenêtre Sortie](../../ide/reference/output-window.md).
 
  La fenêtre **Liste d’erreurs** permet d’accélérer le développement des applications. Par exemple, il est possible de réaliser les tâches suivantes :
 
@@ -50,7 +50,7 @@ REMARQUE]
   Pour trier la liste, cliquez sur n'importe quel en-tête de colonne. Pour trier à nouveau sur une colonne supplémentaire, maintenez la touche Maj enfoncée et cliquez sur un autre en-tête de colonne. Pour sélectionner les colonnes qui doivent être affichées et celles qui doivent être masquées, choisissez **Afficher les colonnes** dans le menu contextuel. Pour modifier l'ordre dans lequel les colonnes sont affichées, faites glisser les en-têtes de votre choix vers la droite ou la gauche.
 
 > [!NOTE]
-> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites ici, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, cliquez sur **Outils/Importation et exportation de paramètres**. Pour plus d’informations, consultez [Paramètres Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites ici, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, cliquez sur **Outils/Importation et exportation de paramètres**. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="error-list-filters"></a>Filtres de la liste d'erreurs
  Il existe deux types de filtre dans deux zones de liste déroulante, l’un à droite de la barre d’outils, et l’autre à gauche de la barre d’outils. La liste déroulante située à gauche de la barre d’outils spécifie l’ensemble de fichiers de code à utiliser (**Solution complète**, **Documents ouverts**, **Projet actif**, **Document actif**).
@@ -77,7 +77,7 @@ REMARQUE]
  Vous pouvez copier la liste d'erreurs et l'enregistrer dans un fichier. Sélectionnez les erreurs que vous voulez copier, cliquez avec le bouton droit sur la sélection, puis, dans le menu contextuel, sélectionnez **Copier**. Vous pouvez ensuite coller les erreurs dans un fichier. Si vous collez les erreurs dans une feuille de calcul Excel, les champs apparaissent comme colonnes individuelles.
 
 ## <a name="ui-element-list"></a>Liste des éléments de l'interface utilisateur
- Gravité affiche les différents types d’entrée de **liste d’erreurs** (**erreur**, **message**, **Avertissement**, **avertissement (actif)** , **avertissement (inactif)** .
+ Gravité affiche les différents types d’entrée de **liste d’erreurs** (**erreur**, **message**, **Avertissement**, **avertissement (actif)**, **avertissement (inactif)**.
 
  Code affiche le code d’erreur.
 

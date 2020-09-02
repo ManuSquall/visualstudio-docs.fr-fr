@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 12dd028cac885978589524aaf02f110a5a6994c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151980"
 ---
 # <a name="idialoadcallbacknotifyopendbg"></a>IDiaLoadCallback::NotifyOpenDBG
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Appelé lorsqu’un fichier .dbg de candidat a été ouvert.  
+Appelée lorsqu’un fichier candidat. dbg a été ouvert.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -36,13 +36,13 @@ HRESULT NotifyOpenDBG ( 
   
 #### <a name="parameters"></a>Paramètres  
  `dbgPath`  
- [in] Le chemin d’accès complet du fichier .dbg.  
+ dans Chemin d’accès complet du fichier. dbg.  
   
  `resultCode`  
- [in] Code qui indique la réussite (`S_OK`) ou l’échec de la charge appliquée à ce fichier.  
+ dans Code qui indique la réussite ( `S_OK` ) ou l’échec de la charge appliquée à ce fichier.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Le code de retour est généralement ignoré.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Le code de retour est généralement ignoré.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

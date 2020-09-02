@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer2::GetMachineInfo | Microsoft Docs
+title: 'IDebugCoreServer2 :: GetMachineInfo | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e1ddaa1d46d64af604d679a52d23b604012dbf84
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192974"
 ---
 # <a name="idebugcoreserver2getmachineinfo"></a>IDebugCoreServer2::GetMachineInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Récupère une description de l’ordinateur qu'au serveur de base est en cours d’exécution.  
+Récupère une description de l’ordinateur sur lequel le serveur principal est en cours d’exécution.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -42,13 +42,13 @@ int GetInfo( 
   
 #### <a name="parameters"></a>Paramètres  
  `Fields`  
- [in] Une combinaison d’indicateurs de la [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md) énumération qui spécifient les champs de `pMachineInfo` doivent être remplis.  
+ dans Combinaison d’indicateurs de l’énumération [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md) qui spécifie les champs de `pMachineInfo` à remplir.  
   
  `pMachineInfo`  
- [in, out] Un [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) structure est remplie avec une description de l’ordinateur.  
+ [in, out] Structure [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) qui est remplie avec une description de l’ordinateur.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)   

@@ -12,10 +12,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: c129634dd2421809d5ac15eb930f07c94d8b39f3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151016"
 ---
 # <a name="cross-platform-mobile-development-examples"></a>Exemples de développement mobile multiplateforme
@@ -53,4 +53,4 @@ Plusieurs des modèles installés par Développement multiplateforme en Visual C
   
   Pour ouvrir un des exemples dans Visual Studio, téléchargez le fichier zip et ouvrez la page **Propriétés** du fichier téléchargé dans l’explorateur. Choisissez le bouton **Débloquer** , puis **OK**. Extrayez le contenu du fichier zip vers un emplacement pratique, puis ouvrez le dossier C++ dans l’exemple extrait et ouvrez le fichier solution.  
   
-  Pour générer l’exemple, appuyez sur F7 ou, dans la barre de menus, choisissez **Générer**, **Générer la solution**.
+  Pour générer l’exemple, appuyez sur F7 ou, dans la barre de menus, choisissez **générer**, **générer la solution**.

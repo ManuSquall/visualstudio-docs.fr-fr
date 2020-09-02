@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0f8599348d204d149f3e28d17d681941ddf476b8
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75849315"
 ---
 # <a name="how-to-create-a-policyactivity-rule-set-legacy"></a>Procédure : créer un ensemble de règles PolicyActivity (héritée)
@@ -36,15 +36,15 @@ Cette rubrique décrit comment créer un ensemble de règles d'activité de stra
 
 2. Cliquez sur la propriété **RuleSetReference** .
 
-3. Effectuez l'une des actions suivantes :
+3. Effectuez l’une des actions suivantes :
 
-    - Cliquez sur le **RuleSetReference** ellipses **[...]** , puis sélectionnez un ensemble de règles existant dans la [boîte de dialogue Sélectionner l’ensemble de règles (hérité)](../workflow-designer/select-rule-set-dialog-box-legacy.md). Passez à l'étape 10.
+    - Cliquez sur le **RuleSetReference** ellipses **[...]**, puis sélectionnez un ensemble de règles existant dans la [boîte de dialogue Sélectionner l’ensemble de règles (hérité)](../workflow-designer/select-rule-set-dialog-box-legacy.md). Passez à l'étape 10.
 
-         \- ou -
+         -ou-
 
-    - Tapez un nom d'ensemble de règles. Cliquez sur le **RuleSetReference** ellipses **[...]** , puis sélectionnez **modifier** dans la [boîte de dialogue Sélectionner l’ensemble de règles (hérité)](../workflow-designer/select-rule-set-dialog-box-legacy.md).
+    - Tapez un nom d'ensemble de règles. Cliquez sur le **RuleSetReference** ellipses **[...]**, puis sélectionnez **modifier** dans la [boîte de dialogue Sélectionner l’ensemble de règles (hérité)](../workflow-designer/select-rule-set-dialog-box-legacy.md).
 
-         \- ou -
+         -ou-
 
     - Tapez un nom d'ensemble de règles. Développez la propriété **RuleSetReference** et sélectionnez les ellipses **[...]** dans la propriété **RuleSet Definition** .
 
@@ -60,7 +60,7 @@ Cette rubrique décrit comment créer un ensemble de règles d'activité de stra
 
 8. Cliquez à nouveau sur **Ajouter une règle** pour ajouter une autre règle.
 
-9. Lorsque vous avez terminé, cliquez sur **OK**.
+9. Quand vous avez terminé, cliquez sur **OK**.
 
 ## <a name="see-also"></a>Voir aussi
  [PolicyActivity](https://msdn2.microsoft.com/library/system.workflow.activities.policyactivity.aspx) boîte de [dialogue Sélectionner l’ensemble de règles (hérité)](../workflow-designer/select-rule-set-dialog-box-legacy.md) [éditeur d’ensemble de règles, boîte de dialogue (héritée)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) [à l’aide de l’activité de stratégie activités de](https://msdn2.microsoft.com/library/bb675229.aspx) [flux de travail héritées](../workflow-designer/legacy-workflow-activities.md)

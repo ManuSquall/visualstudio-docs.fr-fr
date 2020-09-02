@@ -1,5 +1,5 @@
 ---
-title: Fonction SccProperties (fr) Microsoft Docs
+title: SccProperties fonction) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bf2dd87efbb50346093144db6e069eea30138e37
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80700506"
 ---
 # <a name="sccproperties-function"></a>Fonction SccProperties
-Cette fonction affiche les propriétés de contrôle de source pour un fichier ou un projet.
+Cette fonction affiche les propriétés du contrôle de code source pour un fichier ou un projet.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,34 +33,34 @@ SCCRTN SccProperties (
 ```
 
 #### <a name="parameters"></a>Paramètres
- pvContexte
+ pvContext
 
-[dans] La structure de contexte de plug-in de contrôle de source.
+dans Structure de contexte du plug-in de contrôle de code source.
 
  hWnd
 
-[dans] Une poignée à la fenêtre IDE que le plug-in de contrôle source peut utiliser comme parent pour toutes les boîtes de dialogue qu’il fournit.
+dans Handle de la fenêtre IDE que le plug-in de contrôle de code source peut utiliser comme parent pour toutes les boîtes de dialogue qu’il fournit.
 
  lpFileName
 
-[dans] Le nom de chemin entièrement qualifié du fichier ou du projet.
+dans Nom de chemin d’accès qualifié complet du fichier ou du projet.
 
-## <a name="return-value"></a>Valeur de retour
- La mise en œuvre plug-in de cette fonction de contrôle source devrait renvoyer l’une des valeurs suivantes :
+## <a name="return-value"></a>Valeur renvoyée
+ L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
 |Valeur|Description|
 |-----------|-----------------|
-|SCC_OK|Les propriétés ont été affichées avec succès.|
-|SCC_I_RELOADFILE|Le système de contrôle de version a modifié les propriétés du fichier, de sorte que l’IDE devrait recharger ce fichier.|
-|SCC_E_PROJNOTOPEN|Le projet spécifié n’a pas été ouvert dans le contrôle des sources.|
+|SCC_OK|Les propriétés ont été correctement affichées.|
+|SCC_I_RELOADFILE|Le système de gestion de version a modifié les propriétés du fichier, de sorte que l’IDE doit recharger ce fichier.|
+|SCC_E_PROJNOTOPEN|Le projet spécifié n’a pas été ouvert dans le contrôle de code source.|
 |SCC_E_NOTAUTHORIZED|L’utilisateur n’est pas autorisé à afficher les propriétés de ce fichier ou de ce projet.|
-|SCC_E_FILENOTCONTROLLED|Le fichier ou le projet spécifié n’est pas sous contrôle source.|
+|SCC_E_FILENOTCONTROLLED|Le fichier ou le projet spécifié n’est pas sous contrôle de code source.|
 |SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Une erreur inconnue ou générale s’est produite.|
 
 ## <a name="remarks"></a>Notes
- Le plug-in de contrôle source affiche les propriétés dans sa propre boîte de dialogue.
+ Le plug-in de contrôle de code source affiche les propriétés dans sa propre boîte de dialogue.
 
- Les propriétés sont définies par le plug-in de contrôle source et peuvent différer du plug-in au plug-in. Si le plug-in permet à l’utilisateur de modifier les `SCC_I_RELOAD` propriétés de contrôle source d’un fichier, il doit revenir pour signaler à l’IDE que ce fichier ou projet doit être rechargé.
+ Les propriétés sont définies par le plug-in de contrôle de code source et peuvent différer d’un plug-in à un plug-in. Si le plug-in permet à l’utilisateur de modifier les propriétés du contrôle de code source d’un fichier, il doit retourner `SCC_I_RELOAD` pour signaler à l’IDE que ce fichier ou ce projet doit être rechargé.
 
 ## <a name="see-also"></a>Voir aussi
 - [Fonctions d’API du plug-in de contrôle de code source](../extensibility/source-control-plug-in-api-functions.md)

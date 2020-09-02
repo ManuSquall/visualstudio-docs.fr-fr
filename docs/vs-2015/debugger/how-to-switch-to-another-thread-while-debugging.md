@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Basculer vers un autre Thread pendant un débogage | Microsoft Docs'
+title: 'Comment : basculer vers un autre thread pendant le débogage | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,13 +17,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8f481a0b1cb2142dc7dbfe11e17ac627753cebf0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68176506"
 ---
-# <a name="how-to-switch-to-another-thread-while-debugging"></a>Procédure : Basculer vers un autre thread pendant un débogage
+# <a name="how-to-switch-to-another-thread-while-debugging"></a>Comment : basculer vers un autre thread pendant un débogage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Lorsque vous déboguez une application multithread, plusieurs méthodes s'offrent à vous pour remplacer le contexte du thread avec lequel vous travaillez par un autre thread.  
@@ -34,13 +34,13 @@ Lorsque vous déboguez une application multithread, plusieurs méthodes s'offren
   
 ### <a name="to-switch-to-a-thread-in-a-source-window"></a>Pour basculer vers un thread dans une fenêtre source  
   
-- Dans la marge de gauche, cliquez sur un indicateur de thread, pointez sur **basculer vers**, puis cliquez sur le nom du thread auquel vous souhaitez basculer. Le menu contextuel contient uniquement les threads de cet emplacement spécifique.  
+- Dans la marge gauche, cliquez avec le bouton droit sur un indicateur de thread, pointez sur **basculer vers**, puis cliquez sur le nom du thread vers lequel vous souhaitez basculer. Le menu contextuel contient uniquement les threads de cet emplacement spécifique.  
   
-     Si aucun indicateur n’apparaît, avec le bouton droit dans le **Threads** fenêtre et vérifiez que **afficher les Threads dans la Source** est sélectionné.  
+     Si aucun indicateur n’apparaît, cliquez avec le bouton droit dans la fenêtre **Threads** et vérifiez que l’option **afficher les threads dans la source** est sélectionnée.  
   
 ### <a name="to-switch-to-a-thread-in-the-debug-location-toolbar"></a>Pour basculer vers un thread dans la barre d'outils Emplacement de débogage  
   
-1. Sur le **emplacement de débogage** barre d’outils, cliquez sur le **Thread** boîte.  
+1. Dans la barre d’outils **emplacement de débogage** , cliquez sur la zone **thread** .  
   
 2. Dans la liste, cliquez sur le thread vers lequel vous souhaitez basculer.  
   

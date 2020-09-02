@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b30b13610cc59b8a0225e52abf47f9a4f2cc97d1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657580"
 ---
 # <a name="manage-models-and-diagrams-under-version-control"></a>Gérer des modèles et des diagrammes sous la gestion de version
@@ -28,7 +28,7 @@ Gérez les différentes versions de vos projets et diagrammes de modélisation, 
 > [!IMPORTANT]
 > Faites attention quand plusieurs utilisateurs travaillent sur le même projet de modélisation. Découvrez comment vous pouvez [organiser les modèles dans des projets de taille moyenne ou grande](../modeling/structure-your-modeling-solution.md).
 
-## <a name="ModelingProjects"></a>Fichiers dans un projet de modélisation
+## <a name="files-in-a-modeling-project"></a><a name="ModelingProjects"></a> Fichiers dans un projet de modélisation
  Plusieurs utilisateurs peuvent travailler sur un projet de modélisation en même temps, à condition qu’ils travaillent sur des fichiers différents.
 
  Pour éviter ou résoudre les conflits entre les modifications apportées par différents utilisateurs, il est important de comprendre comment le modèle est stocké dans les fichiers.
@@ -42,9 +42,9 @@ Gérez les différentes versions de vos projets et diagrammes de modélisation, 
   - **DiagramName.classdiagram.layout** - Si ce fichier est supprimé, les formes continuent d’apparaître dans le diagramme, mais leurs tailles et leurs positions sont perdues. Chaque fichier de disposition est accessoire par rapport à un fichier de diagramme. Pour l’afficher, cliquez sur le [+] en regard du fichier de diagramme dans l’Explorateur de solutions.
 
 > [!NOTE]
-> Il est important de maintenir la cohérence entre les fichiers. Par exemple, si vous utilisez le contrôle de code source pour annuler des modifications apportées à un fichier .uml, annulez les modifications correspondantes dans les fichiers .*diagram et .layout en même temps. Éléments représentés dans un. \*diagram fichier sera perdu s’ils ne sont pas également représentés dans un fichier. Uml.
+> Il est important de maintenir la cohérence entre les fichiers. Par exemple, si vous utilisez le contrôle de code source pour annuler des modifications apportées à un fichier .uml, annulez les modifications correspondantes dans les fichiers .*diagram et .layout en même temps. Éléments représentés dans un. \* le fichier de diagramme sera perdu s’ils ne sont pas également représentés dans un fichier. Uml.
 
-## <a name="Shared"></a>Travailler sur des projets de modélisation partagés
+## <a name="working-on-shared-modeling-projects"></a><a name="Shared"></a> Travailler sur des projets de modélisation partagés
  Pour réduire les conflits liés au travail simultané sur différentes parties d’un projet :
 
 - Divisez votre projet de modélisation en plusieurs packages représentant différents domaines de travail. Déplacez l’ensemble du modèle dans les packages, au lieu de le laisser dans le modèle racine. Pour plus d’informations, consultez [définir des packages et des espaces de noms](../modeling/define-packages-and-namespaces.md).
@@ -70,7 +70,7 @@ Gérez les différentes versions de vos projets et diagrammes de modélisation, 
     > [!NOTE]
     > Si un fichier est ouvert quand vous effectuez une opération **Obtenir**et que l’opération entraîne des modifications locales, vous êtes invité à recharger le fichier. Dans ce cas, cliquez sur **Non**, puis rechargez l’ensemble du projet. Dans l’ **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud du projet de modélisation, cliquez sur **Décharger le projet**, puis sur **Recharger le projet**.
 
-### <a name="Exclusive"></a>Modifications nécessitant un accès exclusif au modèle
+### <a name="changes-requiring-exclusive-access-to-the-model"></a><a name="Exclusive"></a> Modifications nécessitant un accès exclusif au modèle
  Avant d’apporter les types suivants de modifications, assurez-vous d’avoir un verrou d’extraction sur l’ensemble du projet.
 
 - Renommer ou supprimer des éléments qui sont référencés à partir d’autres packages.
@@ -96,7 +96,7 @@ Gérez les différentes versions de vos projets et diagrammes de modélisation, 
     > [!NOTE]
     > Vous ne pouvez pas déplacer le fichier vers un autre projet.
 
-## <a name="Merging"></a>Fusion des modifications dans les fichiers de modèle et les diagrammes
+## <a name="merging-changes-in-model-files-and-diagrams"></a><a name="Merging"></a> Fusion des modifications dans les fichiers de modèle et les diagrammes
  Une fois que plusieurs utilisateurs ont travaillé simultanément sur un modèle, [!INCLUDE[esprscc](../includes/esprscc-md.md)] vous invite à fusionner les modifications apportées aux fichiers du modèle. Le fait de travailler sur des projets distincts comme décrit dans les sections précédentes permet d’éviter la plupart des fusions. En règle générale, les conflits restants peuvent être automatiquement fusionnés en toute sécurité. Les types de modifications suivants ne doivent entraîner aucune difficulté :
 
 - Types de lignes de vie. Quand vous ajoutez une ligne de vie à une interaction (diagramme de séquence), son type est stocké dans le modèle racine, sauf si vous avez créé la ligne de vie à partir d’un type existant.

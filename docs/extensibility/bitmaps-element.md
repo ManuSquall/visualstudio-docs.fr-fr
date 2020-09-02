@@ -1,5 +1,5 @@
 ---
-title: Élément Bitmaps (fr) Microsoft Docs
+title: Élément bitmaps | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 85310923134a6db59f1b6a3a15ac4b96a127e239
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739988"
 ---
-# <a name="bitmaps-element"></a>Élément Bitmaps
-Groupes [Éléments d’élément Bitmap.](../extensibility/bitmap-element.md)
+# <a name="bitmaps-element"></a>Élément bitmaps
+Regroupe les éléments d' [élément bitmap](../extensibility/bitmap-element.md) .
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -37,20 +37,20 @@ Groupes [Éléments d’élément Bitmap.](../extensibility/bitmap-element.md)
 
 |Attribut|Description|
 |---------------|-----------------|
-|Condition|facultatif. Voir [Attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condition|facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Éléments enfants
 
 |Élément|Description|
 |-------------|-----------------|
-|[Élément Bitmaps](../extensibility/bitmaps-element.md)|Groupes Bitmap éléments.|
-|[Élément Bitmap](../extensibility/bitmap-element.md)|Définit un bitmap.|
+|[Élément bitmaps](../extensibility/bitmaps-element.md)|Regroupe les éléments bitmap.|
+|[Élément bitmap](../extensibility/bitmap-element.md)|Définit une image bitmap.|
 
 ### <a name="parent-elements"></a>Éléments parents
 
 |Élément|Description|
 |-------------|-----------------|
-|[Élément de commande](../extensibility/commands-element.md)|Représente la collection de commandes sur la barre d’outils VSPackage.|
+|[Élément Commands](../extensibility/commands-element.md)|Représente la collection de commandes dans la barre d’outils VSPackage.|
 
 ## <a name="example"></a>Exemple
 
@@ -63,5 +63,5 @@ Groupes [Éléments d’élément Bitmap.](../extensibility/bitmap-element.md)
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Comment VSPackages ajoute des éléments d’interface utilisateur](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Comment les VSPackages ajoutent des éléments d’interface utilisateur](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Commandes, menus et barres d’outils](../extensibility/internals/commands-menus-and-toolbars.md)

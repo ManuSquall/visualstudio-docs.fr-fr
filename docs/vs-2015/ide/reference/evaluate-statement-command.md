@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6e2db8596c1c16f5c9fb54a8c7c867b06e997b7b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657709"
 ---
 # <a name="evaluate-statement-command"></a>Évaluer l'instruction, commande
@@ -35,7 +35,7 @@ Debug.EvaluateStatement text
 ## <a name="arguments"></a>Arguments
  `text` Obligatoire. Instruction à évaluer.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  La fenêtre utilisée pour entrer la commande **EvaluateStatement** détermine si un signe égal (=) est interprété comme un opérateur de comparaison ou comme un opérateur d’assignation.
 
  Dans la fenêtre **Commande**, un signe égal (=) est interprété comme un opérateur de comparaison. Ainsi, si les valeurs des variables `a` et `b` sont différentes, la commande
@@ -54,7 +54,7 @@ Debug.EvaluateStatement text
 
  assigne à la variable `a` la valeur de variable `b`.
 
-## <a name="example"></a>Exemples
+## <a name="example"></a> Exemple
 
 ```
 >Debug.EvaluateStatement(a+b)

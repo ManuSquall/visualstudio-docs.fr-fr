@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator2::SetCallback Microsoft Docs
+title: 'IDebugExpressionEvaluator2 :: SetCallback | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 907fdaa928b3f84f6ff37490d5c54a9d48515053
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729337"
 ---
 # <a name="idebugexpressionevaluator2setcallback"></a>IDebugExpressionEvaluator2::SetCallback
-Permet à l’évaluateur d’expression (EE) de spécifier l’interface de rappel que le moteur de débogénaire (DE) utilisera pour lire les paramètres métriques.
+Active l’évaluateur d’expression (EE) pour spécifier l’interface de rappel que le moteur du débogueur utilisera pour lire les paramètres de métrique.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -40,16 +40,16 @@ int SetCallback (
 
 ## <a name="parameters"></a>Paramètres
 `pCallback`\
-[dans] Interface à utiliser pour les paramètres de rappel.
+dans Interface à utiliser pour le rappel de paramètres.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
-Cette méthode fournit une interface au gestionnaire de débogé de session qu’un évaluateur d’expression peut utiliser pour lire les paramètres métriques. Il est utile dans le débogage [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] à distance pour lire les mesures sur l’ordinateur.
+Cette méthode fournit une interface au gestionnaire de débogage de session qu’un évaluateur d’expression peut utiliser pour lire les paramètres de métriques. Il est utile dans le débogage distant pour lire les métriques sur l' [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] ordinateur.
 
 ## <a name="example"></a>Exemple
-Les exemples suivants montrent comment implémenter cette méthode pour un objet **CEE** qui expose [l’interface IDebugSettingsCallback2.](../../../extensibility/debugger/reference/idebugsettingscallback2.md)
+Les exemples suivants montrent comment implémenter cette méthode pour un objet **CEE** qui expose l’interface [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md) .
 
 ```cpp
 HRESULT CEE::SetCallback(IDebugSettingsCallback2* in_pCallback)
