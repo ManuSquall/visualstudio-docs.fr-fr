@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 24c8afd5e34d4957dac3d9f4d5b0e4409ad20895
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75596539"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Instructions relatives à l'écriture de modèles de texte T4
@@ -52,19 +52,19 @@ Autorisez le code que vous écrivez manuellement en plus du code généré. Il e
 
 - Les classes doivent être générées par paires, l’une héritant de l’autre. La classe de base doit contenir toutes les méthodes et propriétés générées, et la classe dérivée doit contenir uniquement les constructeurs. Cela permet à votre code écrit manuellement de remplacer n’importe quelle méthode générée.
 
-Dans d’autres langages générés tels que XML, utilisez la directive `<#@include#>` pour effectuer des combinaisons simples de contenu écrit et généré manuellement. Dans les cas plus complexes, vous devrez peut-être écrire une étape de validation qui associe le fichier généré à tous les fichiers écrits manuellement.
+Dans d’autres langages générés tels que XML, utilisez la `<#@include#>` directive pour créer des combinaisons simples de contenu écrit et généré manuellement. Dans les cas plus complexes, vous devrez peut-être écrire une étape de validation qui associe le fichier généré à tous les fichiers écrits manuellement.
 
 Déplacer les éléments communs dans des fichiers include ou des modèles au moment de l’exécution.
 
-Pour éviter de répéter des blocs de texte et du code similaires dans plusieurs modèles, utilisez la directive `<#@ include #>`. Pour plus d’informations, consultez [directive include T4](../modeling/t4-include-directive.md).
+Pour éviter de répéter des blocs de texte et du code similaires dans plusieurs modèles, utilisez la `<#@ include #>` directive. Pour plus d’informations, consultez [directive include T4](../modeling/t4-include-directive.md).
 
-Vous pouvez également générer des modèles de texte au moment de l’exécution dans un projet distinct, puis les appeler à partir du modèle au moment du Design. Pour ce faire, utilisez la directive `<#@ assembly #>` pour accéder au projet distinct.
+Vous pouvez également générer des modèles de texte au moment de l’exécution dans un projet distinct, puis les appeler à partir du modèle au moment du Design. Pour ce faire, utilisez la `<#@ assembly #>` directive pour accéder au projet distinct.
 
 Envisagez de déplacer de grands blocs de code dans un assembly distinct.
 
-Si vous avez des blocs de code et des blocs de fonctionnalité de classe volumineux, il peut être utile de déplacer une partie de ce code dans les méthodes que vous compilez dans un projet distinct. Vous pouvez utiliser la directive `<#@ assembly #>` pour accéder au code dans le modèle. Pour plus d’informations, consultez [directive d’assembly T4](../modeling/t4-assembly-directive.md).
+Si vous avez des blocs de code et des blocs de fonctionnalité de classe volumineux, il peut être utile de déplacer une partie de ce code dans les méthodes que vous compilez dans un projet distinct. Vous pouvez utiliser la `<#@ assembly #>` directive pour accéder au code dans le modèle. Pour plus d’informations, consultez [directive d’assembly T4](../modeling/t4-assembly-directive.md).
 
-Vous pouvez placer les méthodes dans une classe abstraite que le modèle peut hériter. La classe abstraite doit hériter de <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>. Pour plus d’informations, consultez [directive de modèle T4](../modeling/t4-template-directive.md).
+Vous pouvez placer les méthodes dans une classe abstraite que le modèle peut hériter. La classe abstraite doit hériter de <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName> . Pour plus d’informations, consultez [directive de modèle T4](../modeling/t4-template-directive.md).
 
 Générez du code, et non des fichiers de configuration.
 
@@ -115,7 +115,7 @@ Dans **MyReportText-methods.cs**:
 
 Autoriser pour le code personnalisé : fournissez des points d’extension.
 
-Envisagez de générer des méthodes virtuelles dans \<blocs de fonctionnalité de classe # + # >. Cela permet d’utiliser un modèle unique dans de nombreux contextes sans modification. Au lieu de modifier le modèle, vous pouvez construire une classe dérivée qui fournit la logique supplémentaire minimale. La classe dérivée peut être du code normal ou peut être un modèle d’exécution.
+Envisagez de générer des méthodes virtuelles dans \<#+ class feature blocks #> . Cela permet d’utiliser un modèle unique dans de nombreux contextes sans modification. Au lieu de modifier le modèle, vous pouvez construire une classe dérivée qui fournit la logique supplémentaire minimale. La classe dérivée peut être du code normal ou peut être un modèle d’exécution.
 
 Par exemple, dans MyStandardRunTimeTemplate.tt :
 
@@ -139,11 +139,11 @@ class FabrikamTemplate : MyStandardRunTimeTemplate
 
 Collecte de données distincte à partir de la génération de texte.
 
-Essayez d’éviter de mélanger des blocs de calcul et de texte. Dans chaque modèle de texte, utilisez la première \<# code de bloc # > pour définir des variables et effectuer des calculs complexes. À partir du premier bloc de texte jusqu’à la fin du modèle ou du premier \<le bloc de fonctionnalité de classe # + # >, évitez les expressions longues et évitez les boucles et les conditions, sauf si elles contiennent des blocs de texte. Cette pratique rend le modèle plus facile à lire et à gérer.
+Essayez d’éviter de mélanger des blocs de calcul et de texte. Dans chaque modèle de texte, utilisez le premier \<# code block #> pour définir des variables et effectuer des calculs complexes. Du premier bloc de texte jusqu’à la fin du modèle ou du premier \<#+ class feature block #> , évitez les expressions longues et évitez les boucles et les conditions, sauf si elles contiennent des blocs de texte. Cette pratique rend le modèle plus facile à lire et à gérer.
 
 N’utilisez pas `.tt` pour les fichiers include.
 
-Utilisez une extension de nom de fichier différente, par exemple `.ttinclude` pour les fichiers include. Utilisez `.tt` uniquement pour les fichiers que vous souhaitez traiter en tant que modèles de texte au moment de l’exécution ou au moment du Design. Dans certains cas, Visual Studio reconnaît les fichiers `.tt` et définit automatiquement leurs propriétés pour le traitement.
+Utilisez une extension de nom de fichier différente comme `.ttinclude` pour les fichiers include. Utilisez `.tt` uniquement pour les fichiers que vous souhaitez traiter en tant que modèles de texte au moment de l’exécution ou au moment du Design. Dans certains cas, Visual Studio reconnaît les `.tt` fichiers et définit automatiquement leurs propriétés pour le traitement.
 
 Démarrez chaque modèle en tant que prototype fixe.
 
@@ -171,5 +171,5 @@ Vous pouvez également concevoir votre propre type de diagramme comme un langage
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Génération de code au moment du design à l’aide de modèles de texte T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
-- [Génération de texte à l’exécution à l’aide des modèles de texte T4](../modeling/run-time-text-generation-with-t4-text-templates.md)
+- [Génération de code durant la conception à l'aide de modèles de texte T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
+- [Génération de texte durant l'exécution à l'aide des modèles de texte T4](../modeling/run-time-text-generation-with-t4-text-templates.md)

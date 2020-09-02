@@ -29,10 +29,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dc8b2c013a3e685a6071f4a12d63e3ca475051a0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75596513"
 ---
 # <a name="class-designer-errors"></a>Erreurs du Concepteur de classes
@@ -48,4 +48,4 @@ Vous pouvez obtenir de l'aide sur d'autres erreurs et avertissements dans les re
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Concevoir et visualiser les classes et les types](designing-and-viewing-classes-and-types.md)
+- [Concevoir et afficher des classes et des types](designing-and-viewing-classes-and-types.md)

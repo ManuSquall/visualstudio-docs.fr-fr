@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b27b185e659fc3a1f0adca4379896543a1eb87ea
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68187841"
 ---
 # <a name="instruction-pointers-ips-view---contention-data"></a>Pointeurs d’instructions (IP), vue - Données de conflit
@@ -37,16 +37,16 @@ La vue IP des données de conflit répertorie les données des instructions d�
 |**Numéro de ligne de fonction**|Numéro de ligne du début de cette fonction dans le fichier source.|  
 |**Nom du module**|Nom du module qui contient l’instruction.|  
 |**Chemin du module**|Chemin du module qui contient l’instruction.|  
-|**ID du processus**|ID de processus (PID) du processus profilé.|  
+|**ID de processus**|ID de processus (PID) du processus profilé.|  
 |**Nom du processus**|Nom du processus.|  
 |**Début caractère source**|Décalage du caractère dans la ligne de fichier source au niveau duquel cette instruction commence.|  
 |**Fin du caractère source**|Décalage du caractère dans la ligne de fichier source au niveau duquel cette instruction se termine.|  
-|**Fichier source**|Fichier source qui contient l’instruction.|  
+|**Source File**|Fichier source qui contient l’instruction.|  
 |**Début ligne source**|Numéro de ligne dans le fichier source au niveau duquel cette instruction commence.|  
 |**Fin ligne source**|Numéro de ligne dans le fichier source au niveau duquel cette instruction se termine.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour personnaliser les colonnes de la vue Rapport](../profiling/how-to-customize-report-view-columns.md)   
- [Pointeurs d’instruction (IP), vue](../profiling/instruction-pointers-ips-view.md)   
- [Vue Pointeurs d’instructions (IP) - Données d’échantillonnage de mémoire .NET](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)   
- [Vue Pointeurs d’instruction (IP)](../profiling/instruction-pointers-ips-view-sampling-data.md)
+ [Comment : personnaliser les colonnes de la vue rapport](../profiling/how-to-customize-report-view-columns.md)   
+ [Mode pointeurs d’instructions (IP)](../profiling/instruction-pointers-ips-view.md)   
+ [Vue pointeurs d’instructions (IP)-échantillonnage](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)   
+ [Pointeurs d'instruction (IP), vue](../profiling/instruction-pointers-ips-view-sampling-data.md)

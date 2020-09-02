@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 66d78988ef70e4f991dd02cb16a164cbf48e55f1
-ms.sourcegitcommit: c4212f40df1a16baca1247cac2580ae699f97e4c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "89176076"
 ---
 # <a name="usage-warnings"></a>avertissements liés à l’utilisation
@@ -77,4 +77,4 @@ Les avertissements d’utilisation prennent en charge l’utilisation correcte d
 |[CA2246 : Ne pas attribuer un symbole et son membre dans la même instruction](../code-quality/ca2246.md)|L’assignation d’un symbole et de son membre, autrement dit, un champ ou une propriété, dans la même instruction n’est pas recommandée. Il n’est pas évident de préciser si l’accès au membre était destiné à utiliser l’ancienne valeur du symbole avant l’assignation ou la nouvelle valeur de l’assignation dans cette instruction.|
 |[CA2247 : L’argument passé au constructeur TaskCompletionSource doit être l’enum TaskCreationOptions au lieu de l’enum TaskContinuationOptions](../code-quality/ca2246.md)|TaskCompletionSource possède des constructeurs qui prennent des TaskCreationOptions qui contrôlent la tâche sous-jacente, et les constructeurs qui prennent l’état d’objet stocké dans la tâche.  Le passage accidentel d’un TaskContinuationOptions au lieu d’un TaskCreationOptions entraînera l’appel du traitement des options en tant qu’État.|
 |[CA2248 : fournissez un argument « enum » correct à « Enum. HasFlag »](../code-quality/ca2248.md)|Le type enum passé comme argument à l' `HasFlag` appel de méthode est différent du type enum appelant.|
-|[CA2249 : envisagez d’utiliser String. Contains à la place de String. IndexOf](../code-quality/ca2249.md)|Les appels à `string.IndexOf` où le résultat est utilisé pour vérifier la présence ou l’absence d’une sous-chaîne peuvent être remplacés par `string.Contains` .|
+|[CA2249 : Utiliser de préférence String.Contains à la place de String.IndexOf](../code-quality/ca2249.md)|Les appels à `string.IndexOf` où le résultat est utilisé pour vérifier la présence ou l’absence d’une sous-chaîne peuvent être remplacés par `string.Contains` .|

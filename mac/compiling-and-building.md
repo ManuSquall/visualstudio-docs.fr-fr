@@ -7,10 +7,10 @@ ms.author: dominicn
 ms.date: 08/29/2019
 ms.assetid: FB253757-DB00-4889-A6BF-E44722E25BD1
 ms.openlocfilehash: b4f1cfc3dfdffcc3dd4cb90cd7d29d4333578b9a
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71128418"
 ---
 # <a name="compiling-and-building-in-visual-studio-for-mac"></a>Compilation et génération dans Visual Studio pour Mac
@@ -19,7 +19,7 @@ Vous pouvez utiliser Visual Studio pour Mac pour générer des applications et c
 
 Une génération réussie signifie que le code source contient une syntaxe correcte et que toutes les références statiques aux bibliothèques, assemblys et autres composants peuvent être résolues. Le processus de génération produit un fichier exécutable de l’application. Ce fichier exécutable peut ensuite être testé via le débogage et différents types de tests manuels et automatisés pour valider la qualité du code. Une fois que l’application a été entièrement testée, vous pouvez alors compiler une version à déployer auprès de vos clients.
 
-Sur le Mac, vous pouvez utiliser l’une des méthodes suivantes pour construire votre application : Visual Studio pour Mac, outils de ligne de commande MSBuild ou Azure Pipelines.
+Sur le Mac, vous pouvez utiliser l’une des méthodes suivantes pour générer votre application : Visual Studio pour Mac, les outils en ligne de commande MSBuild ou Azure Pipelines.
 
 | Méthode de génération | Avantages |
 | --- |--- | --- |

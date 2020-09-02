@@ -28,33 +28,33 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f4cb60f4d378daab829713cb4bbbb670ef8ed25a
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73188347"
 ---
 # <a name="debugging-web-applications-errors-and-troubleshooting"></a>Débogage d'applications Web : erreurs et dépannage
 Les erreurs suivantes peuvent se produire lors d'une tentative de débogage d'applications Web.
 
-- [Résolution des problèmes](../debugger/debugging-web-applications-troubleshooting.md)
+- [Dépannage](../debugger/debugging-web-applications-troubleshooting.md)
 
 - [Erreur : le site utilise l’adresse IP](../debugger/error-site-uses-ip-address.md)
 
-- [Erreur : une vérification de la sécurité a échoué, car le service de l’administration IIS n’a pas répondu](../debugger/error-a-security-check-failed-because-the-iis-admin-service-did-not-respond.md)
+- [Erreur : une vérification de la sécurité a échoué, car le service d’administration IIS n’a pas répondu](../debugger/error-a-security-check-failed-because-the-iis-admin-service-did-not-respond.md)
 
 - [Erreur : ASP.NET n’est pas installé](../debugger/error-aspnet-not-installed.md)
 
 - [Erreur : le débogage a échoué, car l’authentification Windows intégrée n’est pas activée](../debugger/error-debugging-failed-because-integrated-windows-authentication-is-not-enabled.md)
 
-- [Erreur : le serveur web n’est pas configuré correctement](../debugger/error-the-web-server-is-not-configured-correctly.md)
+- [Erreur : le serveur Web n'est pas configuré correctement](../debugger/error-the-web-server-is-not-configured-correctly.md)
 
-- [Erreur : le serveur web est verrouillé et bloque l’exécution du verbe DEBUG](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)
+- [Erreur : le serveur Web a été verrouillé et bloque le verbe de débogage](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)
 
 - [Erreur : Expiration du délai d’attente lors du débogage de services web](../debugger/error-timeout-while-debugging-web-services.md)
 
-- [Erreur : Impossible de démarrer le débogage sur le serveur web](../debugger/error-unable-to-start-debugging-on-the-web-server.md)
+- [Erreur : impossible de démarrer le débogage sur le serveur Web](../debugger/error-unable-to-start-debugging-on-the-web-server.md)
 
 ## <a name="see-also"></a>Voir aussi
 - [Sécurité du débogueur](../debugger/debugger-security.md)
-- [Débogage d’applications et de scripts web](how-to-enable-debugging-for-aspnet-applications.md)
+- [Débogage d'applications et de scripts Web](how-to-enable-debugging-for-aspnet-applications.md)

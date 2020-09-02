@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6907ba5f0b48721646c57964012bf0aaa0838b60
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73188318"
 ---
 # <a name="debugging-web-applications-troubleshooting"></a>Débogage d'applications Web : dépannage
@@ -31,7 +31,7 @@ Cette section contient des procédures courantes qui peuvent servir à résoudre
 ## <a name="in-this-section"></a>Dans cette section
  [Comment : vérifier les paramètres des propriétés IIS](../debugger/how-to-verify-iis-property-settings.md) Explique comment définir correctement les propriétés dans IIS pour activer le débogage.
 
-## <a name="related-sections"></a>Rubriques connexes
+## <a name="related-sections"></a>Sections connexes
  [Débogage d’applications Web : erreurs et dépannage](../debugger/debugging-web-applications-errors-and-troubleshooting.md) Explique la résolution des problèmes et des erreurs.
 
- [Débogage d’applications et de scripts Web](how-to-enable-debugging-for-aspnet-applications.md) Vue d’ensemble du débogage d’applications Web telles que les [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], les services Web XML et les projets ATL Server.
+ [Débogage d’applications et de scripts Web](how-to-enable-debugging-for-aspnet-applications.md) Vue d’ensemble du débogage d’applications Web telles que [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] , les services Web XML et les projets ATL Server.

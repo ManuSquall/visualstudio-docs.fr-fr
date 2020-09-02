@@ -14,19 +14,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0489f534466149a437384d4f21e34f1fa9e98c5b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75596435"
 ---
 # <a name="toolbox-html-tab"></a>Boîte à outils, onglet HTML
 
-**L’onglet HTML** de la boîte à outils fournit des composants qui sont utiles sur les pages Web et les formulaires Web. Pour afficher cet onglet, ouvrez d’abord un document pour le modifier dans le concepteur HTML. Dans le menu **Affichage**, cliquez sur **Boîte à outils**, puis sur l’onglet **HTML** de la boîte à outils.
+L’onglet **HTML** de la boîte à outils fournit des composants utiles sur les pages Web et les Web Forms. Pour afficher cet onglet, ouvrez d’abord un document pour le modifier dans le concepteur HTML. Dans le menu **Affichage**, cliquez sur **Boîte à outils**, puis sur l’onglet **HTML** de la boîte à outils.
 
 Pour créer une instance d’un outil sous l’onglet **HTML**, double-cliquez sur l’outil pour l’ajouter à votre document au point d’insertion actuel, ou sélectionnez l’outil et faites-le glisser à la position souhaitée dans la surface d’édition.
 
-## <a name="ui-elements"></a>Éléments de l'interface utilisateur
+## <a name="ui-elements"></a>Éléments d’interface utilisateur
 
 Les outils suivants sont disponibles par défaut sous l’onglet HTML.
 
@@ -87,7 +87,7 @@ Quand vous faites glisser **Input (Text)** sur la surface en mode Design, une ba
 > [!IMPORTANT]
 >Il est recommandé de valider toutes les entrées d’utilisateur. Pour plus d’informations, consultez [Validation des entrées d’utilisateur sur des sites de pages web ASP.NET (Razor)](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).
 
-**Entrée (Fichier)**
+**Entrée (fichier)**
 
 ![Champ Fichier de page HTML](../../ide/reference/media/vxfilefield.gif)
 
@@ -192,7 +192,7 @@ Quand vous faites glisser **Image** sur la surface en mode Design, une balise HT
 <img alt="" src="">
 ```
 
-**Sélectionnez**
+**Select**
 
 ![Liste déroulante de boîte à outils de page HTML](../../ide/reference/media/vxdropdown.gif)
 
@@ -232,4 +232,4 @@ Quand vous faites glisser **Div** sur la surface en mode Design, une balise HTML
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Toolbox](../../ide/reference/toolbox.md)
+- [Boîte à outils](../../ide/reference/toolbox.md)

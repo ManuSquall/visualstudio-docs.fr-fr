@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4bdbf58321426890bffd45a08818dc5341bdfc3d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68187401"
 ---
 # <a name="idiaenumdebugstreamdatanext"></a>IDiaEnumDebugStreamData::Next
@@ -39,22 +39,22 @@ HRESULT Next ( 
   
 #### <a name="parameters"></a>Paramètres  
  celt  
- [in] Le nombre d’enregistrements à récupérer.  
+ dans Nombre d’enregistrements à récupérer.  
   
  cbData  
- [in] Taille de la mémoire tampon de données, en octets.  
+ dans Taille de la mémoire tampon de données, en octets.  
   
  pcbData  
- [out] Retourne le nombre d’octets retournés. Si `data` est NULL, puis `pcbData` contient le nombre total d’octets de données disponibles pour tous les enregistrements demandés.  
+ à Retourne le nombre d’octets retournés. Si `data` a la valeur null, `pcbData` contient le nombre total d’octets de données disponibles pour tous les enregistrements demandés.  
   
  data[]  
- [out] Une mémoire tampon qui doit être rempli avec les données d’enregistrement de débogage stream.  
+ à Mémoire tampon qui doit être remplie avec les données de l’enregistrement de flux de débogage.  
   
  pceltFetched  
- [in, out] Retourne le nombre d’enregistrements dans `data`.  
+ [in, out] Retourne le nombre d’enregistrements dans `data` .  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` s’il n’existe plus aucun enregistrement. Sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` s’il n’y a plus d’enregistrements. Sinon, retourne un code d'erreur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)   

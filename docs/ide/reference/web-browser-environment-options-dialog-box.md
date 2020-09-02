@@ -22,13 +22,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8915bef3bba477dd515b1d176971cfb9949e9899
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75596500"
 ---
-# <a name="options-dialog-box-environment--web-browser"></a>Boîte de dialogue \> d’options : Navigateur Web d’environnement
+# <a name="options-dialog-box-environment--web-browser"></a>Boîte de dialogue Options : \> navigateur Web de l’environnement
 
 Définit les options à la fois pour le navigateur web interne et pour Internet Explorer. Pour accéder à cette boîte de dialogue, cliquez sur **Options** dans le menu **Outils**, développez le dossier **Environnement**, puis sélectionnez **Navigateur web**.
 
@@ -52,7 +52,7 @@ Définit l’éditeur utilisé pour ouvrir une page web quand vous choisissez **
 
 - **Éditeur de code source** Sélectionnez cette option pour afficher le code source dans [l’éditeur](../../ide/writing-code-in-the-code-and-text-editor.md).
 
-- **Éditeur HTML** Sélectionnez pour afficher la source dans le [concepteur HTML](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). Utilisez cette sélection pour modifier la page web dans l’un des deux modes suivants : le mode Design ou le mode Code source basé sur du texte standard.
+- **Éditeur HTML** Sélectionnez cette option pour afficher la source dans le [Concepteur HTML](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). Utilisez cette sélection pour modifier la page web dans l’un des deux modes suivants : le mode Design ou le mode Code source basé sur du texte standard.
 
 - **Éditeur externe** Sélectionnez cette option pour afficher le code source dans un autre éditeur. Spécifiez le chemin de l’éditeur de votre choix, par exemple Notepad.exe.
 
@@ -65,5 +65,5 @@ Cliquez sur ce bouton pour modifier les options relatives à Internet Explorer d
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Général, Environnement, Options Dialog Box](../../ide/reference/general-environment-options-dialog-box.md)
+- [Général, environnement, boîte de dialogue Options](../../ide/reference/general-environment-options-dialog-box.md)
 - [Concepteur HTML](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)
