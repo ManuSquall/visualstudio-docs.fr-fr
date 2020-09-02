@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 289f92deaceca32a44249ed77c17187743a34fa4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778048"
 ---
 # <a name="understand-sampling-data-values"></a>Comprendre le fonctionnement des valeurs de données d’échantillonnage
@@ -52,5 +52,5 @@ Pourcentage du nombre total d’échantillons exclusifs lors de l’exécution d
 
 ## <a name="see-also"></a>Voir aussi
 
-[Comment : Choisissez des méthodes](../profiling/how-to-choose-collection-methods.md)
-de collecte[Analyser les données des outils de performance](../profiling/analyzing-performance-tools-data.md)
+[Comment : choisir des méthodes](../profiling/how-to-choose-collection-methods.md) 
+ de collection [Analyser les données des outils d’analyse des performances](../profiling/analyzing-performance-tools-data.md)

@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b189d3dbd5c1872094b0c1be2a64eb2c02bf1e2e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547340"
 ---
 # <a name="customizing-copy-behavior"></a>Personnalisation du comportement de la commande copier
@@ -211,7 +211,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
  **Permet à l’utilisateur de glisser-déplacer des éléments.**
 Consultez [Comment : ajouter un gestionnaire de glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md).
 
-## <a name="customizing-link-copy-behavior"></a><a name="customizeLinks"></a>Personnalisation du comportement de la copie des liens
+## <a name="customizing-link-copy-behavior"></a><a name="customizeLinks"></a> Personnalisation du comportement de la copie des liens
  Quand l'utilisateur copie un élément, le comportement standard est que tout élément incorporé est également copié. Vous pouvez modifier le comportement de copie standard. Dans la définition DSL, sélectionnez un rôle d’un côté d’une relation, puis dans la Fenêtre Propriétés définissez la valeur de **copie propages** .
 
  ![Propage la propriété de copie du rôle de domaine](../modeling/media/dslpropagatescopy.png)
@@ -284,12 +284,12 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
 
  Définissez deux méthodes dans votre classe ElementOperations :
 
-- `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)`qui détermine si l’élément source peut être glissé sur la forme, le connecteur ou le diagramme cible.
+- `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)` qui détermine si l’élément source peut être glissé sur la forme, le connecteur ou le diagramme cible.
 
-- `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)`qui combine l’élément source dans la cible.
+- `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)` qui combine l’élément source dans la cible.
 
 ### <a name="canmerge"></a>CanMerge()
- `CanMerge()`est appelé pour déterminer les commentaires qui doivent être donnés à l’utilisateur lorsque la souris se déplace dans le diagramme. Les paramètres de la méthode sont l'élément sur lequel la souris est placée et les données concernant la source à partir de laquelle l'opération de déplacement a été effectuée. L'utilisateur peut faire glisser un élément à partir de n'importe quel emplacement à l'écran. Ainsi, l'objet source peut être de nombreux types différents et peut être sérialisé dans différents formats. Si la source est un modèle DSL ou UML, le paramètre de données et la sérialisation d'un <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>. Les opérations de glissement, de copie et de boîte à outils utilise des ElementGroupPrototypes pour représenter des fragments de modèles.
+ `CanMerge()` est appelé pour déterminer les commentaires qui doivent être donnés à l’utilisateur lorsque la souris se déplace dans le diagramme. Les paramètres de la méthode sont l'élément sur lequel la souris est placée et les données concernant la source à partir de laquelle l'opération de déplacement a été effectuée. L'utilisateur peut faire glisser un élément à partir de n'importe quel emplacement à l'écran. Ainsi, l'objet source peut être de nombreux types différents et peut être sérialisé dans différents formats. Si la source est un modèle DSL ou UML, le paramètre de données et la sérialisation d'un <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>. Les opérations de glissement, de copie et de boîte à outils utilise des ElementGroupPrototypes pour représenter des fragments de modèles.
 
  Un prototype de groupe d'éléments peut contenir une quantité quelconque d'éléments et de liens. Les types d'éléments peuvent être identifiés par leurs GUID. Le GUID est de la forme qui a été déplacée, et non l'élément de modèle sous-jacent. Dans l'exemple suivant, `CanMerge()` retourne la valeur True si une forme de classe à partir d'un diagramme UML est déplacée sur ce diagramme.
 

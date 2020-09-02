@@ -1,5 +1,5 @@
 ---
-title: MODULE_INFO_FIELDS Microsoft Docs
+title: MODULE_INFO_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: fa64147738a916d44b6924f193860f74bd10a855
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714327"
 ---
 # <a name="module_info_fields"></a>MODULE_INFO_FIELDS
-Spécifie les drapeaux pour les informations du module de débogé.
+Spécifie les indicateurs pour les informations du module de débogage.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -66,57 +66,57 @@ public enum enum_MODULE_INFO_FIELDS { 
 
 ## <a name="fields"></a>Champs
  `MIF_NONE`\
- Initialiser/utiliser aucun des champs de la structure.
+ Initialisez/n’utilisez aucun des champs de la structure.
 
  `MIF_NAME`\
- Initialiser/utiliser `m_bstrName` le champ dans la structure [MODULE_INFO.](../../../extensibility/debugger/reference/module-info.md)
+ Initialisez/utilisez le `m_bstrName` champ de la structure [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) .
 
  `MIF_URL`\
- Initialiser/utiliser `m_bstrUrl` le champ `MODULE_INFO` dans la structure.
+ Initialisez/utilisez le `m_bstrUrl` champ de la `MODULE_INFO` structure.
 
  `MIF_VERSION`\
- Initialiser/utiliser `m_bstrVersion` le champ `MODULE_INFO` dans la structure.
+ Initialisez/utilisez le `m_bstrVersion` champ de la `MODULE_INFO` structure.
 
  `MIF_DEBUGMESSAGE`\
- Initialiser/utiliser `m_bstrDebugMessage` le champ `MODULE_INFO` dans la structure.
+ Initialisez/utilisez le `m_bstrDebugMessage` champ de la `MODULE_INFO` structure.
 
  `MIF_LOADADDRESS`\
- Initialiser/utiliser `m_addrLoadAddress` le champ `MODULE_INFO` dans la structure.
+ Initialisez/utilisez le `m_addrLoadAddress` champ de la `MODULE_INFO` structure.
 
  `MIF_PREFFEREDADDRESS`\
- Initialiser/utiliser `m_addrPreferredLoadAddress` le champ `MODULE_INFO` dans la structure.
+ Initialisez/utilisez le `m_addrPreferredLoadAddress` champ de la `MODULE_INFO` structure.
 
  `MIF_SIZE`\
- Initialiser/utiliser `m_dwSize` le champ `MODULE_INFO` dans la structure.
+ Initialisez/utilisez le `m_dwSize` champ de la `MODULE_INFO` structure.
 
  `MIF_LOADORDER`\
- Initialiser/utiliser `m_dwLoadOrder` le champ `MODULE_INFO` dans la structure.
+ Initialisez/utilisez le `m_dwLoadOrder` champ de la `MODULE_INFO` structure.
 
  `MIF_TIMESTAMP`\
- Initialiser/utiliser `m_TimeStamp` le champ `MODULE_INFO` dans la structure.
+ Initialisez/utilisez le `m_TimeStamp` champ de la `MODULE_INFO` structure.
 
  `MIF_URLSYMBOLLOCATION`\
- Initialiser/utiliser `m_bstrUrlSymbolLocation` le champ `MODULE_INFO` dans la structure.
+ Initialisez/utilisez le `m_bstrUrlSymbolLocation` champ de la `MODULE_INFO` structure.
 
  `MIF_FLAGS`\
- Initialiser/utiliser `m_dwModuleFlags` le champ `MODULE_INFO` dans la structure.
+ Initialisez/utilisez le `m_dwModuleFlags` champ de la `MODULE_INFO` structure.
 
  `MIF_ALLFIELDS`\
- Initialiser/utiliser tous les champs `MODULE_INFO` de la structure.
+ Initialisez/Utilisez tous les champs de la `MODULE_INFO` structure.
 
 ## <a name="remarks"></a>Notes
- Ces valeurs sont transmises comme un argument à la méthode [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) pour indiquer quels domaines de la structure [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) doivent être parasécés.
+ Ces valeurs sont passées en tant qu’arguments à la méthode [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) pour indiquer les champs de la structure [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) qui doivent être initialisés.
 
- Ces valeurs sont également `MODULE_INFO` utilisées dans la structure pour indiquer quels champs sont utilisés et valides.
+ Ces valeurs sont également utilisées dans la `MODULE_INFO` structure pour indiquer les champs qui sont utilisés et valides.
 
- Ces drapeaux peuvent être combinés avec un peu plus. `OR`
+ Ces indicateurs peuvent être combinés avec une opération au niveau du bit `OR` .
 
-## <a name="requirements"></a>Spécifications
- En-tête: msdbg.h
+## <a name="requirements"></a>Configuration requise
+ En-tête : msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Espace de noms : Microsoft. VisualStudio. Debugger. Interop
 
- Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

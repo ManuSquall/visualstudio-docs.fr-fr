@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEESide::InitSourceDataProvider (fr) Microsoft Docs
+title: 'IPropertyProxyEESide :: InitSourceDataProvider | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f14f24836beb1d69a15149a56a2817ebf14eff55
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714910"
 ---
 # <a name="ipropertyproxyeesideinitsourcedataprovider"></a>IPropertyProxyEESide::InitSourceDataProvider
-Initialise les données sources de cet objet et renvoie un objet contenant les données initiales.
+Initialise les données sources pour cet objet et retourne un objet contenant les données initiales.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,13 +41,13 @@ int InitSourceDataProvider(
 
 ## <a name="parameters"></a>Paramètres
 `dataOut`\
-[out] Retourne un objet [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)
+à Retourne un objet [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- Cette méthode fait tout ce qui est nécessaire pour initialiser un objet afin qu’il puisse retourner une interface [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) sur les données de l’objet. Cela permet d’visualiser les données de l’objet et, si cela est permis, de modifier par un visualisateur type.
+ Cette méthode effectue tout ce qui est nécessaire pour initialiser un objet afin qu’il puisse retourner une interface [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) sur les données de l’objet. Cela permet l’affichage des données de l’objet et, si elles sont autorisées, modifiées par un visualiseur de type.
 
 ## <a name="see-also"></a>Voir aussi
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)

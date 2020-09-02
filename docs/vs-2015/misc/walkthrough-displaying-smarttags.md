@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Affichage de balises actives | Microsoft Docs'
+title: 'Procédure pas à pas : affichage des SmartTags | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -10,14 +10,14 @@ ms.assetid: 10bb4f69-b259-41f0-b91a-69b04385d9a5
 caps.latest.revision: 31
 manager: jillfra
 ms.openlocfilehash: 116f76324a2150413c0ae6d08bc99e114efcc50e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436510"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "64805581"
 ---
-# <a name="walkthrough-displaying-smarttags"></a>Procédure pas à pas : Affichage de balises actives
-Les balises actives sont déconseillées au profit des ampoules. Consultez [Procédure pas à pas : Displaying Light Bulb Suggestions](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
+# <a name="walkthrough-displaying-smarttags"></a>Procédure pas à pas : affichage de balises actives
+Les balises actives sont déconseillées au profit des ampoules. Consultez [Walkthrough: Displaying Light Bulb Suggestions](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
   
  Les balises actives sont des balises sur du texte qui se développent pour afficher un ensemble d’actions. Par exemple, dans un projet Visual Basic ou Visual C#, une ligne rouge apparaît sous un mot quand vous renommez un identificateur tel qu’un nom de variable. Lorsque vous déplacez le pointeur sur le trait de soulignement, un bouton est affiché près du pointeur. Si vous cliquez sur le bouton, une action suggérée est affichée, par exemple **Renommer IsRead en IsReady**. Si vous cliquez sur l’action, toutes les références à **IsRead** dans le projet sont renommées **IsReady**.  
   
@@ -26,10 +26,10 @@ Les balises actives sont déconseillées au profit des ampoules. Consultez [Proc
 > [!NOTE]
 > Vous pouvez implémenter d’autres types de balises de manière similaire.  
   
- La procédure suivante montre comment créer une balise active qui apparaît sur le mot actuel et qui a deux actions suggérées : **Convertir en majuscules** et **convertir en minuscules**.  
+ La procédure suivante montre comment créer une balise active qui apparaît sur le mot actuel et suggère deux actions : **Convert to upper case** et **Convert to lower case**.  
   
 ## <a name="prerequisites"></a>Prérequis  
- Pour suivre cette procédure pas à pas, vous devez installer le Kit de développement logiciel (SDK) Visual Studio. Pour plus d’informations, consultez [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
+ Pour suivre cette procédure pas à pas, vous devez installer le Kit de développement logiciel (SDK) Visual Studio. Pour plus d’informations, consultez [Kit de développement logiciel (SDK) Visual Studio](../extensibility/visual-studio-sdk.md).  
   
 ## <a name="creating-a-managed-extensibility-framework-mef-project"></a>Création d’un projet Managed Extensibility Framework (MEF)  
   
@@ -55,7 +55,7 @@ Les balises actives sont déconseillées au profit des ampoules. Consultez [Proc
   
 1. Ajoutez un fichier de classe et nommez-le `TestSmartTag`.  
   
-2. Ajoutez les importations suivantes :  
+2. Ajoutez les importations suivantes :  
   
      [!code-csharp[VSSDKSmartTagTest#1](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#1)]
      [!code-vb[VSSDKSmartTagTest#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#1)]  
@@ -180,7 +180,7 @@ Les balises actives sont déconseillées au profit des ampoules. Consultez [Proc
   
      Un bouton doit s’afficher à côté du pointeur.  
   
-5. Lorsque vous cliquez sur le bouton, deux actions suggérées doivent être affichées. **Convertir en majuscules** et **convertir en minuscules**. Si vous cliquez sur la première action, tout le texte du mot actuel doit être converti en majuscules. Si vous cliquez sur la deuxième action, tout le texte doit être converti en minuscules.  
+5. Quand vous cliquez sur le bouton, deux suggestions d’action doivent s’afficher : **Convert to upper case** et **Convert to lower case**. Si vous cliquez sur la première action, tout le texte du mot actuel doit être converti en majuscules. Si vous cliquez sur la deuxième action, tout le texte doit être converti en minuscules.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Procédure pas à pas : Liaison d’un type de contenu à une extension de nom de fichier](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Procédure pas à pas : Liaison d’un type de contenu à une extension de nom de fichier](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: c3d9c1dfa45251d0f64a93bb9a5142dcec76b7c7
-ms.sourcegitcommit: 26178b116cbf7353fee6ca989b8d872114f7b405
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "89219723"
 ---
 # <a name="fxcop-rule-port-status"></a>État du port de la règle FXCop
@@ -27,7 +27,7 @@ La [page de documentation générée automatiquement](https://github.com/dotnet/
 
 À partir de la date de cette page, la liste des règles FxCop qui ont été portées aux [analyseurs FxCop](install-fxcop-analyzers.md) comprend les éléments suivants :
 
-Identificateur de la règle | Titre
+Identificateur de la règle | Intitulé
 --------|---------
 [CA1000](ca1000.md) | Ne pas déclarer de membres statiques sur les types génériques
 [CA1001](ca1001.md) | Les types qui possèdent des champs supprimables doivent être supprimables

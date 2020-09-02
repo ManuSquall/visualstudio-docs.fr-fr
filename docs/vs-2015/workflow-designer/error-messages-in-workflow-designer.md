@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d89c0dcad23a91ec6057311b9afde7d6d4702772
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656757"
 ---
 # <a name="error-messages-in-workflow-designer"></a>Messages d'erreur dans Workflow Designer
@@ -36,7 +36,7 @@ Cette rubrique décrit les types de messages d'erreur qui peuvent être rencontr
 
    Des expressions non valides et des contraintes de validation non satisfaites n’entraînent pas l’échec de la génération du workflow. La génération de votre workflow réussit, mais une exception <xref:System.Activities.InvalidWorkflowException> est levée pendant l'exécution. Si le fichier XAML contient des erreurs, la génération échoue.
 
-   Dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], lorsqu’un workflow est chargé, ses erreurs sont affichées dans le **liste d’erreurs**. Pour accéder à l’activité qui est la source de l’erreur, double-cliquez sur l’erreur dans la **liste d’erreurs**.
+   Dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , lorsqu’un workflow est chargé, ses erreurs sont affichées dans la **liste d’erreurs**. Pour accéder à l’activité qui est la source de l’erreur, double-cliquez sur l’erreur dans la **liste d’erreurs**.
 
 ### <a name="expression-errors"></a>Erreurs d'expression
  Une expression non valide est signalée par un point d'exclamation blanc dans un cercle rouge en regard de l'expression. Le déplacement de la souris au-dessus de cette icône affiche une info-bulle qui décrit la source de l'erreur. Dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], cliquez sur l'expression pour afficher la ligne qui souligne la source de l'erreur. Le déplacement de la souris au-dessus du texte souligné affiche une info-bulle qui décrit la source de l'erreur.

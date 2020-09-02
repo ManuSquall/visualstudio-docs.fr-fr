@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: de5868674790239b8374ef9796308280588ae96e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547249"
 ---
 # <a name="how-to-add-bookmark-controls-to-word-documents"></a>Comment : ajouter des contrôles Bookmark à des documents Word
@@ -38,7 +38,7 @@ ms.locfileid: "85547249"
 
   Pour plus d’informations sur les <xref:Microsoft.Office.Tools.Word.Bookmark> contrôles, consultez [contrôle Bookmark](../vsto/bookmark-control.md).
 
-## <a name="add-bookmark-controls-at-design-time"></a><a name="designtime"></a>Ajouter des contrôles Bookmark au moment du design
+## <a name="add-bookmark-controls-at-design-time"></a><a name="designtime"></a> Ajouter des contrôles Bookmark au moment du design
  Il existe plusieurs façons d'ajouter des contrôles <xref:Microsoft.Office.Tools.Word.Bookmark> au document Word d'un projet au niveau du document au moment du design :
 
 - À partir de la **boîte à outils**Visual Studio.
@@ -77,7 +77,7 @@ ms.locfileid: "85547249"
 
 3. Dans la boîte de dialogue **Signet** , entrez le nom du nouveau signet, puis cliquez sur **Ajouter**.
 
-## <a name="add-bookmark-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a>Ajouter des contrôles Bookmark au moment de l’exécution dans un projet au niveau du document
+## <a name="add-bookmark-controls-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a> Ajouter des contrôles Bookmark au moment de l’exécution dans un projet au niveau du document
  Vous pouvez ajouter des contrôles <xref:Microsoft.Office.Tools.Word.Bookmark> par programmation à votre document au moment de l'exécution à l'aide des méthodes de la propriété <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> de la classe `ThisDocument` de votre projet. Il existe deux surcharges de méthode qui permettent d'ajouter un contrôle <xref:Microsoft.Office.Tools.Word.Bookmark> de la façon suivante :
 
 - Ajouter un <xref:Microsoft.Office.Tools.Word.Bookmark> à une plage spécifiée.
@@ -96,7 +96,7 @@ ms.locfileid: "85547249"
     > [!NOTE]
     > Si vous souhaitez créer un contrôle <xref:Microsoft.Office.Tools.Word.Bookmark> à partir d'un <xref:Microsoft.Office.Interop.Word.Bookmark>existant, utilisez la méthode <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> et transmettez le <xref:Microsoft.Office.Interop.Word.Bookmark>existant.
 
-## <a name="add-bookmark-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a>Ajouter des contrôles Bookmark au moment de l’exécution dans un projet de complément VSTO
+## <a name="add-bookmark-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a> Ajouter des contrôles Bookmark au moment de l’exécution dans un projet de complément VSTO
  Vous pouvez ajouter des contrôles <xref:Microsoft.Office.Tools.Word.Bookmark> par programmation à tout document ouvert au moment de l'exécution en utilisant un complément VSTO. Pour ce faire, vous devez générer un élément hôte <xref:Microsoft.Office.Tools.Word.Document> basé sur un document ouvert, puis utiliser les méthodes de la propriété <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> de cet élément hôte. Il existe deux surcharges de méthode qui permettent d'ajouter un contrôle <xref:Microsoft.Office.Tools.Word.Bookmark> de la façon suivante :
 
 - Ajouter un <xref:Microsoft.Office.Tools.Word.Bookmark> à une plage spécifiée.

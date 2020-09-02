@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.workload:
 - azure
 ms.openlocfilehash: 9513a3414a38aa02f6a4607a8c95bbf02c0e1cf6
-ms.sourcegitcommit: c4212f40df1a16baca1247cac2580ae699f97e4c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/31/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "89178301"
 ---
 # <a name="multi-container-apps"></a>Application à plusieurs conteneurs
@@ -136,7 +136,7 @@ Pour le déterminer, vous allez utiliser le conteneur [nicolaka/netpousse](https
 
 ## <a name="run-your-app-with-mysql"></a>Exécuter votre application avec MySQL
 
-L’application todo prend en charge le paramètre de quelques variables d’environnement pour spécifier les paramètres de connexion MySQL. Il s'agit de :
+L’application todo prend en charge le paramètre de quelques variables d’environnement pour spécifier les paramètres de connexion MySQL. Les voici :
 
 - `MYSQL_HOST` -nom d’hôte du serveur MySQL en cours d’exécution
 - `MYSQL_USER` : nom d’utilisateur à utiliser pour la connexion.

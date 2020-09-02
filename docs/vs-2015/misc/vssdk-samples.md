@@ -8,10 +8,10 @@ ms.assetid: 6aefb510-64cd-4a16-882b-58ada1db02bf
 caps.latest.revision: 17
 manager: jillfra
 ms.openlocfilehash: 3ad69fe4909e358c395c7cd8a4abfea3f3003161
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75844802"
 ---
 # <a name="vssdk-samples"></a>Exemples d’extensibilité Visual Studio

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 45c7a5ba87c006332b601b93143cbf8acfda16b5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547301"
 ---
 # <a name="xaml-designer-options-page"></a>Page des options du concepteur XAML
@@ -37,7 +37,7 @@ Utilisez ce paramètre pour contrôler si le mode Design apparaît quand des doc
 |Nom|Description|
 |-|-|
 |**Mode Source**|Spécifie si seule la source XAML apparaît dans la vue XAML. Cela est utile quand vous chargez des documents volumineux.|
-|**Mode Design**|Spécifie si seul un concepteur visuel XAML apparaît dans la vue XAML.|
+|**Vue de conception**|Spécifie si seul un concepteur visuel XAML apparaît dans la vue XAML.|
 |**Mode fractionné**|Indique si le concepteur XAML visuel et la source XAML apparaissent l’un à côté de l’autre dans la vue XAML (emplacement basé sur le paramètre **Orientation du fractionnement**).|
 
 ## <a name="split-orientation"></a>Orientation du fractionnement
@@ -109,4 +109,4 @@ Utilisez ces paramètres pour déterminer si des effets sont affichés pendant l
 ## <a name="see-also"></a>Voir aussi
 
 - [Intégration du format XAML au format WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)
-- [Procédure pas à pas : ma première application de bureau WPF](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)
+- [Procédure pas à pas : Ma première application de bureau WPF](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)

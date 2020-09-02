@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3c57072d4b8707136f0ccd2a759bc3d393720efb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150436"
 ---
 # <a name="idiasessionfindfilebyid"></a>IDiaSession::findFileById
@@ -36,18 +36,18 @@ HRESULT findFileById ( 
   
 #### <a name="parameters"></a>Paramètres  
  `uniqueId`  
- [in] Spécifie l’identificateur de fichier source.  
+ dans Spécifie l’identificateur du fichier source.  
   
  `ppResult`  
- [out] Retourne un [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) de récupérer l’objet qui représente le fichier source.  
+ à Retourne un objet [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) qui représente le fichier source récupéré.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="remarks"></a>Notes  
- L’identificateur de fichier source est une valeur unique utilisée en interne pour le SDK DIA pour rendre tous les fichiers source unique. Cette méthode est généralement utilisée en interne pour le SDK DIA.  
+ L’identificateur du fichier source est une valeur unique utilisée en interne par le kit de développement logiciel (SDK) DIA pour rendre tous les fichiers sources uniques. Cette méthode est généralement utilisée en interne dans le kit de développement logiciel (SDK) DIA.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
- [IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)   
+ [IDiaSession :: findFile](../../debugger/debug-interface-access/idiasession-findfile.md)   
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

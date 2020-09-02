@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Déclencher des événements lorsque l’éditeur perd le Focus | Microsoft Docs'
+title: 'Comment : déclencher des événements lorsque l’éditeur perd le focus | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,27 +11,27 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2ebca733798636ca32787b88b8874c31a2ffffdb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204192"
 ---
-# <a name="how-to-fire-events-when-the-editor-loses-focus"></a>Procédure : Déclencher des événements lorsque l’éditeur perd le focus
+# <a name="how-to-fire-events-when-the-editor-loses-focus"></a>Guide pratique pour déclencher des événements quand l’éditeur perd le focus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Il est parfois nécessaire de savoir quand un éditeur perd le focus sur le frame de fenêtre. Par exemple, vous devrez peut-être extraire du code à partir d’une fenêtre de code une fois que l’éditeur de focus n’est plus sur celui-ci. La procédure suivante fournit les étapes à suivre pour recevoir une notification de l’éditeur perd le focus.  
+Il est parfois nécessaire de savoir quand un éditeur perd le focus sur le cadre de la fenêtre. Par exemple, vous devrez peut-être extraire le code à partir d’une fenêtre de code une fois que l’éditeur ne se concentre plus dessus. La procédure suivante fournit les étapes à suivre pour recevoir la notification de l’éditeur qui perd le focus.  
   
-### <a name="to-fire-an-event-in-response-to-an-editor-losing-focus"></a>Pour déclencher un événement en réponse à un éditeur perd le focus  
+### <a name="to-fire-an-event-in-response-to-an-editor-losing-focus"></a>Pour déclencher un événement en réponse à un éditeur qui perd le focus  
   
-1. Surveiller les événements de sélection en obtenant un <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection> à partir de l’objet <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>.  
+1. Surveiller les événements de sélection en obtenant un <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection> objet à partir de <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> .  
   
-2. Appelez <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.AdviseSelectionEvents%2A> et fournir votre <xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents> objet.  
+2. Appelez <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.AdviseSelectionEvents%2A> et fournissez votre <xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents> objet.  
   
-3. Dans votre appel à <xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents.OnElementValueChanged%2A>, recherchez `elementid==SEID_WindowFrame`.  
+3. Dans votre appel à <xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents.OnElementValueChanged%2A> , recherchez `elementid==SEID_WindowFrame` .  
   
-4. Test du `varValueNew` paramètre pour deux choses :  
+4. Testez le `varValueNew` paramètre pour deux choses :  
   
-    1. Le frame de fenêtre que vous recherchez.  
+    1. Frame de fenêtre que vous recherchez.  
   
-    2. Le point auquel votre programme perd la sélection pour ce frame de fenêtre.
+    2. Point auquel votre programme perd la sélection dans ce frame de fenêtre.

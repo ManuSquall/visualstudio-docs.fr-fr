@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Créer manuellement des sessions de performance | Microsoft Docs'
+title: Guide pratique pour créer manuellement des sessions de performance | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,13 +16,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 622d349fd063cf0a22e3c286003490e088cd4440
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192828"
 ---
-# <a name="how-to-manually-create-performance-sessions"></a>Procédure : Créer manuellement des sessions de performance
+# <a name="how-to-manually-create-performance-sessions"></a>Comment : créer manuellement des sessions de performance
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez créer manuellement des sessions de performance. Pour cela, vous n’êtes pas obligé d’ouvrir un projet dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Pour plus d’informations, consultez [Configuration de sessions de performance](../profiling/configuring-performance-sessions.md).  
