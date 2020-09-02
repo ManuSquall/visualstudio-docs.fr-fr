@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 1bb6f906cbfb715d67f6e10ddcecf094bc25821f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62552969"
 ---
 # <a name="custom-native-etw-heap-events"></a>Événements de tas ETW natifs personnalisés
@@ -51,7 +51,7 @@ Un instantané effectué à partir de l’outil [Utilisation de la mémoire](../
 
 En procédant aux étapes suivantes, nous pouvons utiliser ce même outil pour effectuer le suivi de l’utilisation de la mémoire dans notre tas personnalisé.
 
-## <a name="how-to-use"></a>Utilisation
+## <a name="how-to-use"></a>Procédure d'utilisation
 
 Cette bibliothèque peut facilement être utilisée en C et C++.
 
@@ -90,7 +90,7 @@ Cette bibliothèque peut facilement être utilisée en C et C++.
    pHeapTracker->AllocateEvent(memPtr, size);
    ```
 
-   or
+   ou
 
    ```C
    VSHeapTrackerAllocateEvent(hHeapTracker, memPtr, size);
@@ -156,5 +156,5 @@ Comme avec le tas Windows standard, vous pouvez également utiliser cet outil po
 > Visual Studio contient également un outil **Utilisation de la mémoire** dans l’ensemble d’outils de **profilage des performances**, que vous pouvez activer à l’aide de l’option de menu **Déboguer** > **Profileur de performances** ou de la combinaison de touches **Alt**+**F2**.  Cette fonctionnalité n’inclut pas le suivi de tas et n’affiche pas votre tas personnalisé comme décrit ici.  Cette fonctionnalité est uniquement disponible dans la fenêtre **Outils de diagnostic**, que vous pouvez activer avec le menu **Déboguer** > **Fenêtres** > **Afficher les outils de diagnostic** ou la combinaison de touches **Ctrl**+**Alt**+**F2**.
 
 ## <a name="see-also"></a>Voir aussi
-[Premier regard sur les outils](../profiling/profiling-feature-tour.md)
-de profilage[Utilisation de la mémoire](../profiling/memory-usage.md)
+[Premier aperçu des outils](../profiling/profiling-feature-tour.md) 
+ de profilage [Utilisation](../profiling/memory-usage.md) de la mémoire

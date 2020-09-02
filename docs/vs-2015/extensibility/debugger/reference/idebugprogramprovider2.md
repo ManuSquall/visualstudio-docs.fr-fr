@@ -13,16 +13,16 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6a3ccac5dc60c10983d3b1a33978196fad5197d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68146321"
 ---
 # <a name="idebugprogramprovider2"></a>IDebugProgramProvider2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Cette interface inscrite permet le débogage de session manager (SDM) pour obtenir des informations sur les programmes qui ont été « publié » via le [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md) interface.  
+Cette interface inscrite permet au gestionnaire de débogage de session (SDM) d’obtenir des informations sur les programmes qui ont été « publiés » par le biais de l’interface [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md) .  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -30,32 +30,32 @@ Cette interface inscrite permet le débogage de session manager (SDM) pour obten
 IDebugProgramProvider2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs  
- Le moteur de débogage (dé) implémente cette interface pour fournir des informations sur les programmes en cours de débogage. Cette interface est inscrit dans la section du Registre à l’aide de la métrique `metricProgramProvider`, comme décrit dans [aides SDK pour le débogage](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md).  
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
+ Le moteur DE débogage (DE) implémente cette interface pour fournir des informations sur les programmes en cours de débogage. Cette interface est inscrite dans la section de du Registre à l’aide de la métrique `metricProgramProvider` , comme décrit dans le [Kit de développement logiciel (SDK) pour le débogage](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md).  
   
-## <a name="notes-for-callers"></a>Notes de publication pour les appelants  
- Appel de COM `CoCreateInstance` fonctionne avec le `CLSID` du fournisseur de programme qui est obtenu à partir du Registre. Consultez l’exemple.  
+## <a name="notes-for-callers"></a>Notes pour les appelants  
+ Appelez la fonction de COM `CoCreateInstance` avec le `CLSID` du fournisseur de programme obtenu à partir du Registre. Consultez l’exemple.  
   
-## <a name="methods-in-vtable-order"></a>Méthodes dans l’ordre Vtable  
+## <a name="methods-in-vtable-order"></a>Méthodes dans l’ordre vtable  
   
 |Méthode|Description|  
 |------------|-----------------|  
-|[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)|Obtient des informations sur les programmes en cours d’exécution, filtré de façons différentes.|  
+|[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)|Obtient des informations sur les programmes en cours d’exécution, filtrés de différentes façons.|  
 |[GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)|Obtient un nœud de programme, en fonction d’un ID de processus spécifique.|  
-|[WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)|Établit un rappel pour surveiller les événements du fournisseur associés à des types spécifiques de processus.|  
-|[SetLocale](../../../extensibility/debugger/reference/idebugprogramprovider2-setlocale.md)|Établit les paramètres régionaux pour toutes les ressources linguistiques requises par l’Allemagne.|  
+|[WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)|Établit un rappel pour surveiller les événements de fournisseur associés à des genres spécifiques de processus.|  
+|[SetLocale](../../../extensibility/debugger/reference/idebugprogramprovider2-setlocale.md)|Établit des paramètres régionaux pour toutes les ressources spécifiques à la langue requises par le.|  
   
 ## <a name="remarks"></a>Notes  
- Normalement, un processus utilise cette interface pour découvrir comment les programmes en cours d’exécution dans ce processus.  
+ Normalement, un processus utilise cette interface pour rechercher les programmes en cours d’exécution dans ce processus.  
   
 ## <a name="requirements"></a>Configuration requise  
- En-tête : msdbg.h  
+ En-tête : msdbg. h  
   
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft. VisualStudio. Debugger. Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a> Exemple  
   
 ```cpp#  
 IDebugProgramProvider2 *GetProgramProvider(GUID *pDebugEngineGuid)  
@@ -87,4 +87,4 @@ IDebugProgramProvider2 *GetProgramProvider(GUID *pDebugEngineGuid)
 ## <a name="see-also"></a>Voir aussi  
  [Interfaces principales](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)   
- [Aides SDK pour le débogage](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
+ [Programmes d’assistance SDK pour le débogage](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)

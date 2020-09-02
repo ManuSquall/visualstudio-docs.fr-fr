@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d412cfa5a9b5e7e90aeac3ac6bbb530b0ef48ad0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157581"
 ---
 # <a name="diagnostic-namespace"></a>diagnostic, espace de noms
@@ -35,14 +35,14 @@ namespace diagnostic;
   
 ### <a name="classes"></a>Classes  
   
-|Name|Description|  
+|Nom|Description|  
 |----------|-----------------|  
 |[marker_series, classe](../profiling/marker-series-class.md)|Représente un canal série d’événements générés par un fournisseur unique.|  
 |[span, classe](../profiling/span-class.md)|Définit une phase de l’application.|  
   
 ### <a name="enumerations"></a>Énumérations  
   
-|Name|Description|  
+|Nom|Description|  
 |----------|-----------------|  
 |[marker_importance, énumération](../profiling/marker-importance-enumeration.md)|Représente le niveau d’importance d’un marqueur du visualiseur concurrentiel.|  
   

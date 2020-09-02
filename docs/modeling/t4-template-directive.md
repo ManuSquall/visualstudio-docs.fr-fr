@@ -8,15 +8,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f7ada5558cfdfaadca5793d9edc61f13a6d4d11b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591838"
 ---
 # <a name="t4-template-directive"></a>Directive du modèle T4
 
-Un modèle de texte T4 de Visual Studio commence généralement par une directive `template`, qui spécifie la façon dont le modèle doit être traité. Il ne doit y avoir qu'une seule directive de modèle dans un modèle de texte et les fichiers qu'il contient.
+Un modèle de texte T4 de Visual Studio commence généralement par une `template` directive, qui spécifie la façon dont le modèle doit être traité. Il ne doit y avoir qu'une seule directive de modèle dans un modèle de texte et les fichiers qu'il contient.
 
 Pour obtenir une vue d’ensemble générale de l’écriture de modèles de texte, consultez [écriture d’un modèle de texte T4](../modeling/writing-a-t4-text-template.md).
 
@@ -30,11 +30,11 @@ La directive `template` comporte plusieurs attributs qui vous permettent de spé
 
 ## <a name="compileroptions-attribute"></a>attribut compilerOptions
 
-Exemple :
+Exemple :
 
 `compilerOptions="optimize+"`
 
-Valeurs valides :
+Valeurs valides :
 
 Toutes les options du compilateur valides.
 
@@ -44,11 +44,11 @@ Ces options sont appliquées lorsque le modèle a été converti en [!INCLUDE[cs
 
 ## <a name="culture-attribute"></a>attribut de culture
 
-Exemple :
+Exemple :
 
 `culture="de-CH"`
 
-Valeurs valides :
+Valeurs valides :
 
 "", la culture dite indifférente, qui est la valeur par défaut.
 
@@ -58,17 +58,17 @@ L'attribut de culture spécifie la culture à utiliser lorsqu'un bloc d'expressi
 
 ## <a name="debug-attribute"></a>attribut de débogage
 
-Exemple :
+Exemple :
 
 ```
 debug="true"
 ```
 
-Valeurs valides :
+Valeurs valides :
 
 `true`
 
-`false` (par défaut)
+`false` (valeur par défaut)
 
 Si l'attribut `debug` a la valeur `true`, le fichier de code intermédiaire contient des informations qui permettent au débogueur d'identifier plus précisément la position, dans votre modèle, où s'est produit un arrêt ou une exception.
 
@@ -78,17 +78,17 @@ Pour exécuter un modèle au moment du design dans le débogueur, enregistrez le
 
 ## <a name="hostspecific-attribute"></a>attribut hostspecific
 
-Exemple :
+Exemple :
 
 ```
 hostspecific="true"
 ```
 
-Valeurs valides :
+Valeurs valides :
 
 `true`
 
-`false` (par défaut)
+`false` (valeur par défaut)
 
 `trueFromBase`
 
@@ -96,7 +96,7 @@ Si vous affectez à cet attribut la valeur `true`, une propriété nommée `Host
 
 Étant donné que le type de cette propriété dépend du type d'hôte, elle n'est utile que si vous écrivez un modèle de texte qui fonctionne uniquement avec un hôte spécifique. Elle s’applique aux [modèles au moment du design](../modeling/design-time-code-generation-by-using-t4-text-templates.md), mais pas aux [modèles au moment de l’exécution](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
-Lorsque `hostspecific` est `true` et que vous utilisez Visual Studio, vous pouvez convertir `this.Host` en IServiceProvider pour accéder aux fonctionnalités de Visual Studio. Vous pouvez également utiliser `Host.ResolvePath(filename)` pour obtenir le chemin d’accès absolu d’un fichier dans le projet. Par exemple :
+Lorsque `hostspecific` est `true` et que vous utilisez Visual Studio, vous pouvez effectuer un cast `this.Host` en IServiceProvider pour accéder aux fonctionnalités de Visual Studio. Vous pouvez également utiliser `Host.ResolvePath(filename)` pour obtenir le chemin d’accès absolu d’un fichier dans le projet. Par exemple :
 
 ```csharp
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -122,17 +122,17 @@ Si vous utilisez les attributs `inherits` et `hostspecific` ensemble, spécifiez
 
 ## <a name="language-attribute"></a>attribut de langage
 
-Exemple :
+Exemple :
 
 `language="VB"`
 
-Valeurs valides :
+Valeurs valides :
 
-`C#` (par défaut)
+`C#` (valeur par défaut)
 
 `VB`
 
-L’attribut `language` spécifie le langage ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ou [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]) à utiliser pour le code source dans les blocs d’instruction et d’expression. Le fichier de code intermédiaire à partir duquel la sortie est générée utilisera ce langage. Ce langage n'est pas lié au langage que votre modèle génère, qui peut être tout type de texte.
+L' `language` attribut spécifie le langage ( [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ou [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] ) à utiliser pour le code source dans les blocs d’instruction et d’expression. Le fichier de code intermédiaire à partir duquel la sortie est générée utilisera ce langage. Ce langage n'est pas lié au langage que votre modèle génère, qui peut être tout type de texte.
 
 Par exemple :
 
@@ -239,13 +239,13 @@ Pour plus d’informations, consultez [« héritage dans les modèles de texte�
 
 ## <a name="linepragmas-attribute"></a>attribut linePragmas
 
-Exemple :
+Exemple :
 
 `linePragmas="false"`
 
-Valeurs valides :
+Valeurs valides :
 
-`true` (par défaut)
+`true` (valeur par défaut)
 
 `false`
 
@@ -255,13 +255,13 @@ Cet attribut peut également être utile si vous recherchez les noms de fichiers
 
 ## <a name="visibility-attribute"></a>attribut Visibility
 
-Exemple :
+Exemple :
 
 `visibility="internal"`
 
-Valeurs valides :
+Valeurs valides :
 
-`public` (par défaut)
+`public` (valeur par défaut)
 
 `internal`
 

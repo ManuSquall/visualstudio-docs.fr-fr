@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fb84854bd871277f680a753b28c17e3429283928
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646720"
 ---
 # <a name="visual-c-code-snippets"></a>Extraits de code Visual C#
@@ -39,21 +39,21 @@ Les extraits de code sont des extraits prêts à l’emploi que vous pouvez rapi
 |#if|Crée une directive [#if](https://msdn.microsoft.com/library/48cabbff-ca82-491f-a56a-eeccd528c7c2) et une directive [#endif](https://msdn.microsoft.com/library/6a5fca55-5aee-441f-86f6-1c99fbe9ec05).|N’importe où.|
 |#region|Crée une directive [#region](https://msdn.microsoft.com/library/672c87d1-9771-4f64-ab3f-0ad3d4ffb2b4) et une directive [#endregion](https://msdn.microsoft.com/library/16099660-91b2-49e5-9646-77f9ef069526).|N’importe où.|
 |~|Crée un destructeur pour la classe conteneur.|Dans une classe.|
-|Attribut|Crée une déclaration pour une classe qui dérive de <xref:System.Attribute>.|Dans un espace de noms (notamment l’espace de noms global), une classe ou un struct.|
+|attribut|Crée une déclaration pour une classe qui dérive de <xref:System.Attribute>.|Dans un espace de noms (notamment l’espace de noms global), une classe ou un struct.|
 |checked|Crée un bloc [checked](https://msdn.microsoft.com/library/718a1194-988d-48a3-b089-d6ee8bd1608d).|Dans une méthode, un indexeur, un accesseur de propriété ou un accesseur d’événement.|
-|classe|Crée une déclaration de classe.|Dans un espace de noms (notamment l’espace de noms global), une classe ou un struct.|
+|class|Crée une déclaration de classe.|Dans un espace de noms (notamment l’espace de noms global), une classe ou un struct.|
 |ctor|Crée un constructeur pour la classe conteneur.|Dans une classe.|
 |cw|Crée un appel à <xref:System.Console.WriteLine%2A>.|Dans une méthode, un indexeur, un accesseur de propriété ou un accesseur d’événement.|
-|do|Crée une boucle [do](https://msdn.microsoft.com/library/50725f79-9ba6-4898-aa78-6e331568a1bb)`while`.|Dans une méthode, un indexeur, un accesseur de propriété ou un accesseur d’événement.|
+|do|Crée une boucle [do](https://msdn.microsoft.com/library/50725f79-9ba6-4898-aa78-6e331568a1bb) `while` .|Dans une méthode, un indexeur, un accesseur de propriété ou un accesseur d’événement.|
 |else|Crée un bloc [else](https://msdn.microsoft.com/library/d9a1d562-8cf5-4bd4-9ba7-8ad970cd25b2).|Dans une méthode, un indexeur, un accesseur de propriété ou un accesseur d’événement.|
 |enum|Crée une déclaration [enum](https://msdn.microsoft.com/library/bbeb9a0f-e9b3-41ab-b0a6-c41b1a08974c).|Dans un espace de noms (notamment l’espace de noms global), une classe ou un struct.|
-|est égal à|Crée une déclaration de méthode qui substitue la méthode <xref:System.Object.Equals%2A> définie dans la classe <xref:System.Object>.|Dans une classe ou un struct.|
+|equals|Crée une déclaration de méthode qui substitue la méthode <xref:System.Object.Equals%2A> définie dans la classe <xref:System.Object>.|Dans une classe ou un struct.|
 |exception|Crée une déclaration pour une classe qui dérive d’une exception (<xref:System.Exception> par défaut).|Dans un espace de noms (notamment l’espace de noms global), une classe ou un struct.|
-|for|Crée une boucle [for](https://msdn.microsoft.com/library/34041a40-2c87-467a-9ffb-a0417d8f67a8).|Dans une méthode, un indexeur, un accesseur de propriété ou un accesseur d’événement.|
+|pour|Crée une boucle [for](https://msdn.microsoft.com/library/34041a40-2c87-467a-9ffb-a0417d8f67a8).|Dans une méthode, un indexeur, un accesseur de propriété ou un accesseur d’événement.|
 |foreach|Crée une boucle [foreach](https://msdn.microsoft.com/library/5a9c5ddc-5fd3-457a-9bb6-9abffcd874ec).|Dans une méthode, un indexeur, un accesseur de propriété ou un accesseur d’événement.|
 |forr|Crée une boucle [for](https://msdn.microsoft.com/library/34041a40-2c87-467a-9ffb-a0417d8f67a8) qui décrémente la variable de boucle après chaque itération.|Dans une méthode, un indexeur, un accesseur de propriété ou un accesseur d’événement.|
 |if|Crée un bloc [if](https://msdn.microsoft.com/library/d9a1d562-8cf5-4bd4-9ba7-8ad970cd25b2).|Dans une méthode, un indexeur, un accesseur de propriété ou un accesseur d’événement.|
-|indexer|Crée une déclaration d’indexeur.|Dans une classe ou un struct.|
+|indexeur|Crée une déclaration d’indexeur.|Dans une classe ou un struct.|
 |interface|Crée une déclaration [interface](https://msdn.microsoft.com/library/7da38e81-4f99-4bc5-b07d-c986b687eeba).|Dans un espace de noms (notamment l’espace de noms global), une classe ou un struct.|
 |invoke|Crée un bloc qui appelle un événement en toute sécurité.|Dans une méthode, un indexeur, un accesseur de propriété ou un accesseur d’événement.|
 |iterator|Crée un itérateur.|Dans une classe ou un struct.|
@@ -68,7 +68,7 @@ Les extraits de code sont des extraits prêts à l’emploi que vous pouvez rapi
 |struct|Crée une déclaration [struct](https://msdn.microsoft.com/library/ff3dd9b7-dc93-4720-8855-ef5558f65c7c).|Dans un espace de noms (notamment l’espace de noms global), une classe ou un struct.|
 |svm|Crée une déclaration de méthode Main [static](https://msdn.microsoft.com/library/5509e215-2183-4da3-bab4-6b7e607a4fdf)[void](https://msdn.microsoft.com/library/0d2d8a95-fe20-4fbd-bf5d-c1e54bce71d4).|Dans une classe ou un struct.|
 |switch|Crée un bloc [switch](https://msdn.microsoft.com/library/44bae8b8-8841-4d85-826b-8a94277daecb).|Dans une méthode, un indexeur, un accesseur de propriété ou un accesseur d’événement.|
-|try|Crée un bloc [try-catch](https://msdn.microsoft.com/library/cb5503c7-bfa1-4610-8fc2-ddcd2e84c438).|Dans une méthode, un indexeur, un accesseur de propriété ou un accesseur d’événement.|
+|Essayer|Crée un bloc [try-catch](https://msdn.microsoft.com/library/cb5503c7-bfa1-4610-8fc2-ddcd2e84c438).|Dans une méthode, un indexeur, un accesseur de propriété ou un accesseur d’événement.|
 |tryf|Crée un bloc [try-finally](https://msdn.microsoft.com/library/c27623fb-7261-4464-862c-7a369d3c8f0a).|Dans une méthode, un indexeur, un accesseur de propriété ou un accesseur d’événement.|
 |unchecked|Crée un bloc [unchecked](https://msdn.microsoft.com/library/0c021f7c-923f-4b3d-a58f-55336f5ac27e).|Dans une méthode, un indexeur, un accesseur de propriété ou un accesseur d’événement.|
 |unsafe|Crée un bloc [unsafe](https://msdn.microsoft.com/library/7e818009-1c6e-4b9e-b769-3728a01586a0).|Dans une méthode, un indexeur, un accesseur de propriété ou un accesseur d’événement.|
@@ -76,4 +76,4 @@ Les extraits de code sont des extraits prêts à l’emploi que vous pouvez rapi
 |while|Crée une boucle [while](https://msdn.microsoft.com/library/72a0765c-6852-4aca-b327-4a11cb7f5c59).|Dans une méthode, un indexeur, un accesseur de propriété ou un accesseur d’événement.|
 
 ## <a name="see-also"></a>Voir aussi
- [Fonctions d’extrait de code](../ide/code-snippet-functions.md) [extraits de code](../ide/code-snippets.md) [Comment : créer un nouvel extrait avec les remplacements](https://msdn.microsoft.com/8d56d43c-097a-475b-aa85-cae1554b6338) [paramètres de modèle](../ide/template-parameters.md) [Comment : utiliser des extraits de code entourer](../ide/how-to-use-surround-with-code-snippets.md) de [comment C# : restaurer les extraits de code de refactorisation](../ide/how-to-restore-csharp-refactoring-snippets.md)
+ [Fonctions d’extrait de code](../ide/code-snippet-functions.md) [extraits de code](../ide/code-snippets.md) [Comment : créer un nouvel extrait avec les remplacements](https://msdn.microsoft.com/8d56d43c-097a-475b-aa85-cae1554b6338) [paramètres de modèle](../ide/template-parameters.md) [Comment : utiliser des extraits de code entourer](../ide/how-to-use-surround-with-code-snippets.md) de [Comment : restaurer les extraits de code de refactorisation C#](../ide/how-to-restore-csharp-refactoring-snippets.md)

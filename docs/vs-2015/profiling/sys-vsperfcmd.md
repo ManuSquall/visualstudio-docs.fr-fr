@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 981b37fe1ebaad5e45f0308143ab0384ef1d559b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145602"
 ---
 # <a name="sys-vsperfcmd"></a>Sys (VSPerfCmd)
@@ -40,28 +40,28 @@ VSPerfCmd.exe {/Launch:AppName|Attach:PID} /Sys[:Events] [Options]
 ## <a name="required-options"></a>Options obligatoires  
  **Sys** nécessite une des options suivantes.  
   
- **Launch :** `AppName`  
+ **Lancer :**`AppName`  
  Démarre le profileur et l'application spécifiée par `AppName`.  
   
- **Attach:** `PID`  
+ **Attacher :**`PID`  
  Attache le profileur au processus spécifié par `PID`.  
   
 ## <a name="invalid-options"></a>Options non valides  
  Vous ne pouvez pas spécifier les options suivantes sur la même ligne de commande que **Sys**.  
   
- **PF**[ **:** `Events`]  
+ **PF**[**:** `Events` ]  
  Définit l'événement d'échantillonnage sur les défauts de page et définit éventuellement l'intervalle d'échantillonnage sur `Events`. L'intervalle de défaut de page par défaut est 10.  
   
- **Timer**[ **:** `Cycles`]  
+ **Minuteur**[**:** `Cycles` ]  
  Définit l’événement d’échantillonnage sur les cycles d’horloge du processeur et définit éventuellement l’intervalle d’échantillonnage sur `Cycles`. L’intervalle de Timer par défaut est 10,000,000.  
   
- **Counter:** `Name`[`,Reload`[`,FriendlyName`]]  
+ **Compteur :** `Name` [`,Reload`[`,FriendlyName`]]  
  Définit l'événement d'échantillonnage sur le compteur de performance d'UC spécifié par `Name` et définit l'intervalle d'échantillonnage sur `Reload`.  
   
- **GC**[ **:** {**Allocation**&#124;**Lifetime**}]  
- Recueille des données de mémoire .NET. Par défaut (**Allocation**), les données sont collectées à chaque événement d’allocation mémoire. Quand le paramètre **Lifetime** est spécifié, les données sont aussi collectées à chaque événement de garbage collection.  
+ **GC**[**:**{**Allocation**&#124;**Lifetime**}]  
+ Recueille des données de mémoire .NET. Par défaut (**allocation**), les données sont collectées à chaque événement d’allocation de mémoire. Quand le paramètre **Lifetime** est spécifié, les données sont également collectées à chaque événement garbage collection.  
   
-## <a name="example"></a>Exemples  
+## <a name="example"></a>Exemple  
  Cet exemple montre comment définir le l’événement d’échantillonnage du profileur comme étant les appels système, et comment définir l’intervalle d’échantillonnage sur 20 appels par échantillon.  
   
 ```  
@@ -70,7 +70,7 @@ VSPerfCmd.exe /Launch:TestApp.exe /Sys:20
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [VSPerfCmd](../profiling/vsperfcmd.md)   
+ [Option](../profiling/vsperfcmd.md)   
  [Profilage d’applications autonomes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilage d’applications web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Profilage de services](../profiling/command-line-profiling-of-services.md)
+ [Profilage d’applications Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Profilage des services](../profiling/command-line-profiling-of-services.md)

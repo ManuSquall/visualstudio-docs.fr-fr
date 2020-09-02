@@ -1,5 +1,5 @@
 ---
-title: '&lt;publisherIdentity&gt; , élément (déploiement ClickOnce) | Microsoft Docs'
+title: '&lt;&gt;élément publisherIdentity (déploiement ClickOnce) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -18,13 +18,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 486e0bc5059e041f02e8dac4836c5ff59b27f63e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157629"
 ---
-# <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;publisherIdentity&gt; , élément (déploiement ClickOnce)
+# <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;&gt;élément publisherIdentity (déploiement ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Contient des informations sur l'éditeur qui a signé ce manifeste de déploiement.  
@@ -39,12 +39,12 @@ Contient des informations sur l'éditeur qui a signé ce manifeste de déploieme
 ```  
   
 ## <a name="elements-and-attributes"></a>Éléments et attributs  
- Le `publisherIdentity` élément est requis pour les manifestes signés. Le tableau suivant montre les attributs que le `publisherIdentity` élément prend en charge.  
+ L' `publisherIdentity` élément est requis pour les manifestes signés. Le tableau suivant présente les attributs `publisherIdentity` pris en charge par l’élément.  
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|`name`|Requis. Décrit l’identité du tiers qui a publié cette application.|  
-|`issuerKeyHash`|Requis. Contient le hachage SHA-1 de la clé publique de l’émetteur du certificat.|  
+|`name`|Obligatoire. Décrit l’identité du tiers qui a publié cette application.|  
+|`issuerKeyHash`|Obligatoire. Contient le hachage SHA-1 de la clé publique de l’émetteur du certificat.|  
   
 #### <a name="parameters"></a>Paramètres  
   
@@ -54,6 +54,6 @@ Contient des informations sur l'éditeur qui a signé ce manifeste de déploieme
   
 ## <a name="remarks"></a>Notes  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
   
 ## <a name="subhead"></a>Sous-titre

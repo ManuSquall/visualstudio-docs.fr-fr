@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5d3094e55cf791b60e4a2c163cdd7586ada467c2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646778"
 ---
 # <a name="targeting-a-specific-net-framework-version"></a>Cibler une version spécifique du .NET Framework
@@ -31,13 +31,13 @@ Dans Visual Studio, vous pouvez spécifier la version ou le profil du .NET Frame
 ## <a name="in-this-section"></a>Dans cette section
  [Vue d’ensemble du multi-ciblage Visual Studio](../ide/visual-studio-multi-targeting-overview.md) Fournit une vue d’ensemble des fonctionnalités de multi-ciblage dans Visual Studio.
 
- [Comment : cibler une version du .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md) Explique comment spécifier un [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] particulier pour votre C# F# projet Visual Basic, visuel ou visuel.
+ [Comment : cibler une version du .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md) Explique comment spécifier un particulier [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] pour votre projet Visual Basic, Visual C# ou Visual F#.
 
-## <a name="related-sections"></a>Rubriques connexes
+## <a name="related-sections"></a>Sections connexes
  [.NET Framework le multi-ciblage pour les projets Web ASP.net](https://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76) Explique comment utiliser cette version de Visual Studio pour développer des applications Web qui s’exécutent sous des versions antérieures du .NET Framework.
 
- [Page application, concepteur de projetsC#()](../ide/reference/application-page-project-designer-csharp.md) décrit le contrôle **Framework cible** dans le concepteur de projet pour les projets [!INCLUDE[csprcs](../includes/csprcs-md.md)].
+ [Page application, concepteur de projets (C#)](../ide/reference/application-page-project-designer-csharp.md) Décrit le contrôle **Framework cible** dans le concepteur de projets pour les [!INCLUDE[csprcs](../includes/csprcs-md.md)] projets.
 
- [Page application, concepteur de projets (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md) Décrit le contrôle **Framework cible** dans le concepteur de projets pour les projets [!INCLUDE[vbprvb](../includes/vbprvb-md.md)].
+ [Page application, concepteur de projets (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md) Décrit le contrôle **Framework cible** dans le concepteur de projets pour les [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] projets.
 
- [Comment : modifier le Framework cible et l’ensemble d’outils de plateforme](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe) Décrit comment modifier les paramètres des projets C++ visuels pour cibler différentes versions du .NET Framework et utiliser différents ensembles d’outils de plateforme.
+ [Comment : modifier le Framework cible et l’ensemble d’outils de plateforme](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe) Décrit comment modifier les paramètres de Visual C++ projets pour cibler différentes versions du .NET Framework et utiliser différents ensembles d’outils de plateforme.

@@ -18,10 +18,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eefe0160328f1eb6b3fe841742547efe8be50ec1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68158273"
 ---
 # <a name="property-element-msbuild"></a>Property, élément (MSBuild)
@@ -30,7 +30,7 @@ ms.locfileid: "68158273"
 Contient une valeur et un nom de propriété définis par l’utilisateur. Chaque propriété utilisée dans un projet [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] doit être spécifiée en tant qu’enfant d’un élément `PropertyGroup`.  
   
  \<Project>  
- \<PropertyGroup >  
+ \<PropertyGroup>  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -63,10 +63,10 @@ Contient une valeur et un nom de propriété définis par l’utilisateur. Chaqu
   
  Ce texte spécifie la valeur de propriété et peut contenir du code XML.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Les noms de propriétés sont limités uniquement aux caractères ASCII. Les valeurs de propriété sont référencées dans le projet en plaçant le nom de propriété entre « `$(` » et « `)` ». Par exemple, `$(builddir)\classes` serait résolu en « build\classes » si la propriété `builddir` avait la valeur `build`. Pour plus d’informations sur les propriétés, consultez l’article [Propriétés MSBuild](msbuild-properties1.md).  
   
-## <a name="example"></a>Exemples  
+## <a name="example"></a>Exemple  
  Le code suivant définit la propriété `Optimization` sur `false` et la propriété `DefaultVersion` sur `1.0` si la propriété `Version` est vide.  
   
 ```  
@@ -78,4 +78,4 @@ Contient une valeur et un nom de propriété définis par l’utilisateur. Chaqu
   
 ## <a name="see-also"></a>Voir aussi
 [Propriétés MSBuild](msbuild-properties1.md)  
- [Référence du schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)
+ [Référence de schéma de fichier de projet](../msbuild/msbuild-project-file-schema-reference.md)

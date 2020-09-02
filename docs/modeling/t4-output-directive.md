@@ -8,15 +8,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: eb1634da6374ad49f1386be4403e72e8edeff2ca
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591812"
 ---
 # <a name="t4-output-directive"></a>Directive de sortie T4
 
-Dans les modèles de texte Visual Studio, la directive `output` est utilisée pour définir l’extension de nom de fichier et l’encodage du fichier transformé.
+Dans les modèles de texte Visual Studio, la `output` directive est utilisée pour définir l’extension de nom de fichier et l’encodage du fichier transformé.
 
  Par exemple, si votre projet Visual Studio inclut un fichier de modèle nommé **MyTemplate.TT** qui contient la directive suivante :
 
@@ -39,7 +39,7 @@ Dans les modèles de texte Visual Studio, la directive `output` est utilisée po
 
  La valeur par défaut est **. cs**
 
- Exemples : `<#@ output extension=".txt" #>`
+ Exemples : `<#@ output extension=".txt" #>`
 
  `<#@ output extension=".htm" #>`
 
@@ -68,6 +68,6 @@ Dans les modèles de texte Visual Studio, la directive `output` est utilisée po
 
  `utf-32`
 
- `0` (valeur système par défaut)
+ `0` (Valeur système par défaut)
 
  En général, vous pouvez utiliser la chaîne WebName ou le nombre CodePage de n'importe lequel des encodages retournés par <xref:System.Text.Encoding.GetEncodings%2A?displayProperty=fullName>.

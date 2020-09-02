@@ -9,10 +9,10 @@ ms.workload:
 - multiple
 author: TerryGLee
 ms.openlocfilehash: 77d1318dbdb23516902523e9c7865dad781cb06b
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75593035"
 ---
 # <a name="unsupported-debugging-scenarios-in-the-workflow-designer"></a>Scénarios de débogage non pris en charge dans le Concepteur de workflow
@@ -43,7 +43,7 @@ Le Concepteur de flux de travail ne prend pas en charge les scénarios de débog
 
   - Condition
 
-  - Nombre d’accès
+  - Nombre d'accès
 
   - Lorsqu'il est atteint
 
@@ -51,6 +51,6 @@ Le Concepteur de flux de travail ne prend pas en charge les scénarios de débog
 
   - Données
 
-  - Processus
+  - Process
 
   - Atteindre le code machine

@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Personnaliser les colonnes de vue des rapports | Microsoft Docs'
+title: Guide pratique pour personnaliser les colonnes de la vue Rapport | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,36 +15,36 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f1f6cf340d7c0ef87f34fc908e075f36eed2962c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68146122"
 ---
-# <a name="how-to-customize-report-view-columns"></a>Procédure : Personnaliser les colonnes de vue des rapports
+# <a name="how-to-customize-report-view-columns"></a>Comment : personnaliser les colonnes de la vue de rapport
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Les outils d’analyse des performances de Visual Studio Team System Development Edition sont entièrement intégrés à l’environnement de développement intégré (IDE) pour fournir une expérience utilisateur transparente. La liste qui suit répertorie les vues que vous pouvez personnaliser en ajoutant, en supprimant et en réorganisant des colonnes :  
   
-- [Modules, mode](../profiling/modules-view.md)  
+- [Vue Modules](../profiling/modules-view.md)  
   
-- [Mode Fonctions](../profiling/functions-view.md)  
+- [Vue Fonctions](../profiling/functions-view.md)  
   
 - [Lignes, vue](../profiling/lines-view.md)  
   
-- [Vue Pointeurs d’instruction (IP)](../profiling/instruction-pointers-ips-view.md)  
+- [Pointeurs d'instruction (IP), vue](../profiling/instruction-pointers-ips-view.md)  
   
-- [Vue Appelant/Appelé](../profiling/caller-callee-view.md)  
+- [Mode appelant/appelé](../profiling/caller-callee-view.md)  
   
-- [Mode Arborescence des appels](../profiling/call-tree-view.md)  
+- [Vue Arborescence des appels](../profiling/call-tree-view.md)  
   
 - [Vue Allocations](../profiling/dotnet-memory-allocations-view.md)  
   
-- [Vue Durée de vie de l’objet](../profiling/object-lifetime-view.md)  
+- [Mode Durée de vie de l'objet](../profiling/object-lifetime-view.md)  
   
-- [Vue Marques](../profiling/marks-view.md)  
+- [Marques, vue](../profiling/marks-view.md)  
   
-- [Processus, vue](../profiling/process-view.md)  
+- [Vue Processus](../profiling/process-view.md)  
   
 ### <a name="to-customize-a-report-view"></a>Pour personnaliser une vue de rapport  
   
@@ -52,7 +52,7 @@ Les outils d’analyse des performances de Visual Studio Team System Development
   
 2. Cliquez avec le bouton droit sur la vue Rapport, puis cliquez sur **Ajouter/Supprimer des colonnes**.  
   
-     La boîte de dialogue **Ajouter/Supprimer des colonnes** s’affiche.  
+     La boîte de dialogue **Ajout/Suppression de colonnes** s'affiche.  
   
 3. Sélectionnez les colonnes que vous voulez ajouter.  
   

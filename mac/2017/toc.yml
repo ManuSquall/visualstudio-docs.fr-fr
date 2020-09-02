@@ -1,0 +1,150 @@
+- name: Visual Studio pour Mac
+  href: /visualstudio/mac/
+- name: Visite guidée de l’IDE
+  href: ide-tour.md
+- name: Installation
+  href: installation.md
+  items:
+    - name: Installer et utiliser derrière un pare-feu ou un proxy
+      href: /visualstudio/mac/install-behind-a-firewall-or-proxy-server
+    - name: Installer une préversion
+      href: /visualstudio/mac/install-preview
+    - name: Mise à jour
+      href: /visualstudio/mac/update
+    - name: Mise à jour vers Visual Studio 2019 pour Mac
+      href: /visualstudio/mac/update-vsmac-8.0
+    - name: Désinstaller
+      href: /visualstudio/mac/uninstall
+- name: Comptes d'utilisateurs
+  href: /visualstudio/mac/user-accounts
+  items:
+    - name: Connexion
+      href: /visualstudio/mac/signing-in
+    - name: Activer l’abonnement
+      href: /visualstudio/mac/enable-subscription
+- name: Personnalisation de l’IDE
+  href: /visualstudio/mac/customizing-the-ide
+  items:
+    - name: Extension de Visual Studio pour Mac
+      href: /visualstudio/mac/extending-visual-studio-mac
+- name: Projets et solutions
+  href: /visualstudio/mac/projects-and-solutions
+  items:
+    - name: Création de nouveaux projets
+      href: /visualstudio/mac/create-new-projects
+    - name: Ajout et suppression d’éléments de projet
+      href: /visualstudio/mac/add-and-remove-project-items
+    - name: Gestion des solutions et des propriétés des projets
+      href: /visualstudio/mac/managing-solutions-and-project-properties
+    - name: Gestion des références dans un projet
+      href: /visualstudio/mac/managing-references-in-a-project
+      items:
+        - name: "Procédure pas à pas\_: inclusion d’un package NuGet dans votre projet"
+          href: /visualstudio/mac/nuget-walkthrough
+    - name: Gestion des ressources d’application
+      href: /visualstudio/mac/managing-app-resources
+    - name: "Procédure\_: ouvrir plusieurs solutions ou instances"
+      href: /visualstudio/mac/open-multiple-solutions
+- name: Éditeur de code source
+  href: /visualstudio/mac/source-editor
+  items:
+    - name: Refactorisation
+      href: /visualstudio/mac/refactoring
+    - name: Commentaires
+      href: /visualstudio/mac/comments
+    - name: Comportement de l’éditeur
+      href: /visualstudio/mac/editor-behavior
+    - name: Commentaires des tâches
+      href: /visualstudio/mac/task-comments
+    - name: Extraits de code
+      href: /visualstudio/mac/snippets
+    - name: Sélection de bloc
+      href: /visualstudio/mac/block-selection
+    - name: Thèmes de l’éditeur
+      href: /visualstudio/mac/editor-themes
+    - name: EditorConfig
+      href: /visualstudio/mac/editorconfig
+    - name: Raccourcis clavier courants
+      href: /visualstudio/mac/keyboard-shortcuts
+- name: Débogage
+  href: /visualstudio/mac/debugging
+  items:
+    - name: Visualisation de données
+      href: /visualstudio/mac/data-visualizations
+- name: Compilation et génération
+  href: /visualstudio/mac/compiling-and-building
+  items:
+    - name: Génération et nettoyage des projets et des solutions
+      href: /visualstudio/mac/building-and-cleaning-projects-and-solutions
+    - name: Actions de génération
+      href: /visualstudio/mac/build-actions
+    - name: Personnalisation du système de génération
+      href: /visualstudio/mac/customizing-build-system
+    - name: Configurations
+      href: /visualstudio/mac/configurations
+      items:
+        - name: Créer et modifier des configurations
+          href: /visualstudio/mac/create-and-edit-configurations
+- name: Gestion de version
+  href: /visualstudio/mac/version-control
+  items:
+    - name: TF Version Control
+      href: /visualstudio/mac/tf-version-control
+    - name: Configuration d’un dépôt Git
+      href: /visualstudio/mac/set-up-git-repository
+    - name: Utilisation de Git
+      href: /visualstudio/mac/working-with-git
+    - name: Configuration d’un dépôt Subversion
+      href: /visualstudio/mac/set-up-subversion-repository
+    - name: Utilisation de Subversion
+      href: /visualstudio/mac/working-with-subversion
+- name: Déploiement d’applications web
+  href: /visualstudio/mac/web-app-deployment
+  items:
+    - name: Publier sur Azure App Service
+      href: /visualstudio/mac/publish-app-svc
+    - name: Publier sur un dossier
+      href: /visualstudio/mac/publish-folder
+- name: Charges de travail
+  href: /visualstudio/mac/workloads
+  items:
+    - name: ASP.NET Core
+      href: /visualstudio/mac/asp-net-core
+      items:
+        - name: Razor
+          href: /visualstudio/mac/razor
+        - name: JavaScript
+          href: /visualstudio/mac/javascript
+    - name: Azure
+      href: /visualstudio/mac/azure-workload
+      items:
+        - name: Introduction à Azure Functions
+          href: /visualstudio/mac/azure-functions
+        - name: "Tutoriel\_: Azure Functions"
+          href: /visualstudio/mac/azure-functions-lab
+        - name: Services connectés
+          href: /visualstudio/mac/connected-services
+    - name: Développement de jeux Unity
+      href: /visualstudio/mac/unity-tools
+      items:
+        - name: Installation
+          href: /visualstudio/mac/setup-vsmac-tools-unity
+        - name: Utilisation des outils Unity
+          href: /visualstudio/mac/using-vsmac-tools-unity
+        - name: "Utilisation de .NET\_4.x dans Unity"
+          href: /visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context
+        - name: Journal des modifications
+          href: /visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context
+    - name: Applications mobiles avec Xamarin
+      href: /visualstudio/mac/xamarin
+- name: Accessibilité
+  href: /visualstudio/mac/accessibility
+- name: Dépannage
+  href: /visualstudio/mac/troubleshooting
+  items:
+    - name: Programme d’amélioration du produit Visual Studio
+      href: /visualstudio/mac/visual-studio-experience-improvement-program
+    - name: Signaler un problème
+      href: /visualstudio/mac/report-a-problem
+    - name: 'Résolution des problèmes : Le programme de mise à jour présente des erreurs lors de la récupération des informations'
+      href: updater-troubleshooting.md

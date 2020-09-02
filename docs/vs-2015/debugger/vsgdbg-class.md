@@ -1,5 +1,5 @@
 ---
-title: Vsgdbg, classe | Microsoft Docs
+title: Vsgdbg,, classe | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,16 +10,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 053647d48324f056148375bae9268b997ba8721f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145692"
 ---
 # <a name="vsgdbg-class"></a>VsgDbg, classe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Représente une interface pour un contrôle par programmation du composant dans l’application de graphics diagnostics.  
+Représente une interface pour le contrôle par programmation du composant dans l’application de Graphics Diagnostics.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -28,27 +28,27 @@ class VsgDbg;
 ```  
   
 ## <a name="members"></a>Membres  
- Le `VsgDbg` classe prend en charge les membres suivants.  
+ La `VsgDbg` classe prend en charge les membres suivants.  
   
 ### <a name="public-constructors"></a>Constructeurs publics  
   
 |Nom|Description|  
 |----------|-----------------|  
-|[VsgDbg::VsgDbg, constructeur](../debugger/vsgdbg-vsgdbg-constructor.md)|Construit une instance de la `VsgDbg` classe et prépare éventuellement le composant dans l’application de graphics diagnostics activement capturer et enregistrer des informations graphiques.|  
+|[VsgDbg::VsgDbg, constructeur](../debugger/vsgdbg-vsgdbg-constructor.md)|Construit une instance de la `VsgDbg` classe et prépare éventuellement le composant dans l’application de Graphics Diagnostics pour capturer et enregistrer activement les informations graphiques.|  
 |[VsgDbg::~VsgDbg, destructeur](../debugger/vsgdbg-tilde-vsgdbg-destructor.md)|Détruit une instance de la `VsgDbg` classe.|  
   
 ### <a name="public-methods"></a>M&#233;thodes publiques  
   
 |Nom|Description|  
 |----------|-----------------|  
-|[AddMessage](../debugger/addmessage.md)|Ajoute un message personnalisé pour les diagnostics graphiques HUD (Head-Up Display).|  
-|[BeginCapture](../debugger/begincapture.md)|Commence un intervalle de capture s’achèvera par `EndCapture`.|  
-|[CaptureCurrentFrame](../debugger/capturecurrentframe.md)|Capture le reste de l’image actuelle dans le fichier journal de graphiques.|  
-|[Copier (capture par programmation)](../debugger/copy-programmatic-capture.md)|Copie le contenu du fichier journal (.vsglog) tracé actif dans un nouveau fichier.|  
-|[EndCapture](../debugger/endcapture.md)|Met fin à un intervalle de capture a été démarré avec `BeginCapture`.|  
-|[Init](../debugger/init.md)|Prépare le composant dans l’application de graphics diagnostics activement capturer et enregistrer des informations graphiques.|  
-|[ToggleHUD](../debugger/togglehud.md)|Active ou désactive le segment de recouvrement graphics diagnostics HUD activé ou désactivé.|  
-|[UnInit](../debugger/uninit.md)|Finalise le fichier journal de graphisme, il ferme et libère les ressources qui ont été utilisés pendant que l’application a été enregistre activement les informations graphiques.|  
+|[AddMessage](../debugger/addmessage.md)|Ajoute un message personnalisé à l’affichage à haute vue de Graphics Diagnostics (affichage principal).|  
+|[BeginCapture](../debugger/begincapture.md)|Commence un intervalle de capture qui se termine par `EndCapture` .|  
+|[CaptureCurrentFrame](../debugger/capturecurrentframe.md)|Capture le reste du frame actuel dans le fichier journal de graphisme.|  
+|[Copier (capture par programmation)](../debugger/copy-programmatic-capture.md)|Copie le contenu du fichier journal de graphisme actif (. vsglog) dans un nouveau fichier.|  
+|[EndCapture](../debugger/endcapture.md)|Termine un intervalle de capture qui a été démarré avec `BeginCapture` .|  
+|[Init](../debugger/init.md)|Prépare le composant dans l’application de Graphics Diagnostics pour capturer et enregistrer activement les informations graphiques.|  
+|[ToggleHUD](../debugger/togglehud.md)|Active ou désactive la superposition HUD Graphics Diagnostics.|  
+|[UnInit](../debugger/uninit.md)|Finalise le fichier journal de graphisme, le ferme et libère les ressources qui ont été utilisées pendant que l’application enregistrait activement des informations graphiques.|  
   
 ## <a name="remarks"></a>Notes  
- Le `VsgDbg` classe représente une interface qui vous permettent de contrôler par programme les fonctionnalités graphics diagnostics. Vous pouvez utiliser certaines fonctionnalités même lorsque vous n’êtes pas activement capturer et enregistrer les informations graphiques ; Cela inclut la `AddMessage` fonction membre et `ToggleHUD` fonction membre. Les autres fonctions membres de préparer le composant dans l’application de graphics diagnostics pour démarrer ou arrêter la capture des informations graphiques actifs ou doivent être appelées pendant que l’application est activement capturer et enregistrer des informations graphiques dans un fichier journal de graphisme.
+ La `VsgDbg` classe représente une interface que vous pouvez utiliser pour contrôler les fonctionnalités des diagnostics de graphiques par programmation. Vous pouvez utiliser certaines fonctionnalités même si vous ne parvenez pas à capturer et à enregistrer activement des informations graphiques. Cela comprend la `AddMessage` fonction membre et la `ToggleHUD` fonction membre. Les autres fonctions membres préparent le composant dans l’application de Graphics Diagnostics pour démarrer ou arrêter la capture active des informations graphiques, ou doivent être appelées pendant que l’application capture et enregistre activement des informations graphiques dans un fichier journal de graphisme.

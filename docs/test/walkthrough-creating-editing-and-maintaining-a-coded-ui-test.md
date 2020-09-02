@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: f1e22a39035e5d3500f4dd45481319e1daecfa04
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75592059"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Procédure pas à pas : créer, modifier et gérer un test codé de l’interface utilisateur
@@ -30,11 +30,11 @@ Dans cette procédure pas à pas, vous allez apprendre à créer, modifier et g�
 
 3. Sous la section **Tous les contrôles WPF**, faites glisser un contrôle **Button**, **CheckBox** et **ProgressBar** sur la fenêtre MainWindow de l’aire de conception.
 
-4. Sélectionnez le contrôle **Button**. Dans la fenêtre **Propriétés**, changez la valeur de la propriété **Nom** de \<Sans nom> en button1. Changez ensuite la valeur de la propriété **Contenu** de Button en Start.
+4. Sélectionnez le contrôle **Button**. Dans la fenêtre **Propriétés** , remplacez la valeur de la propriété **nom** par \<No Name> Button1. Changez ensuite la valeur de la propriété **Contenu** de Button en Start.
 
-5. Sélectionnez le contrôle **ProgressBar**. Dans la fenêtre **Propriétés**, changez la valeur de la propriété **Nom** de \<Sans nom> en progressBar1. Changez ensuite la valeur de la propriété **Maximum** de **100** en **10000**.
+5. Sélectionnez le contrôle **ProgressBar**. Dans la fenêtre **Propriétés** , remplacez la valeur de la propriété **nom** par \<No Name> ProgressBar1. Changez ensuite la valeur de la propriété **Maximum** de **100** en **10000**.
 
-6. Sélectionnez le contrôle **Checkbox**. Dans la fenêtre **Propriétés**, changez la valeur de la propriété **Nom** de \<Sans nom> en checkBox1 et effacez la valeur de la propriété **IsEnabled**.
+6. Sélectionnez le contrôle **Checkbox**. Dans la fenêtre **Propriétés** , remplacez la valeur de la propriété **nom** par \<No Name> CheckBox1 et effacez la propriété **IsEnabled** .
 
      ![Application WPF simple](../test/media/codedui_wpfapp.png)
 
@@ -99,7 +99,7 @@ Dans cette procédure pas à pas, vous allez apprendre à créer, modifier et g�
 
 1. Recherchez l'application SimpleWPFApp que vous avez créée précédemment.
 
-2. Créez un raccourci sur le bureau à l'application SimpleWPFApp. Cliquez à droite *SimpleWPFApp.exe* et choisissez **Copy**. Sur votre Bureau, cliquez avec le bouton droit et choisissez **Coller le raccourci**.
+2. Créez un raccourci sur le bureau à l'application SimpleWPFApp. Cliquez avec le bouton droit sur *SimpleWPFApp.exe* , puis choisissez **copier**. Sur votre Bureau, cliquez avec le bouton droit et choisissez **Coller le raccourci**.
 
     > [!TIP]
     > Un raccourci vers l’application simplifie l’ajout ou la modification des tests codés de l'interface utilisateur de votre application parce qu’il permet de démarrer l’application rapidement.
@@ -111,7 +111,7 @@ Dans cette procédure pas à pas, vous allez apprendre à créer, modifier et g�
 2. Recherchez et sélectionnez le modèle de projet **Projet de test codé de l’interface utilisateur** et continuez les étapes jusqu’à ce que le projet soit créé.
 
    > [!NOTE]
-   > Si vous ne voyez pas le modèle **Coded UI Test Project,** vous devez [installer le composant de test d’interface utilisateur codé](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
+   > Si vous ne voyez pas le modèle de **projet de test codé de l’interface utilisateur** , vous devez [installer le composant de test codé de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
 
      Le nouveau projet de test codé de l’interface utilisateur nommé **CodedUITestProject1** est ajouté à votre solution et la boîte de dialogue **Générer le code pour le test codé de l’interface utilisateur** s’affiche.
 
@@ -148,9 +148,9 @@ Dans cette procédure pas à pas, vous allez apprendre à créer, modifier et g�
 
 1. Dans la zone **Nom de la méthode**, tapez **SimpleAppTest** et choisissez **Ajouter et générer**. En quelques secondes, le test codé de l’interface utilisateur s’affiche et s’ajoute à la solution.
 
-1. Fermer **UIMap - Coded UI Test Builder**.
+1. Fermer **UIMap-générateur de test codé de l’interface utilisateur**.
 
-     Le *fichier CodedUITest1.cs* apparaît dans l’éditeur de code.
+     Le fichier *CodedUITest1.cs* s’affiche dans l’éditeur de code.
 
 1. Enregistrez votre projet.
 
@@ -158,17 +158,17 @@ Dans cette procédure pas à pas, vous allez apprendre à créer, modifier et g�
 
 1. Dans le menu **Test**, choisissez **Fenêtres**, puis **Explorateur de tests**.
 
-2. Dans le menu **Build,** choisissez **Build Solution**.
+2. Dans le menu **générer** , choisissez **générer la solution**.
 
-3. Dans le fichier *CodedUITest1.cs,* localiser la méthode **CodedUITestMethod,** cliquer à droite et sélectionner **les tests d’exécution,** ou exécuter le test de **Test Explorer**.
+3. Dans le fichier *CodedUITest1.cs* , recherchez la méthode **CodedUITestMethod** , cliquez avec le bouton droit et sélectionnez **exécuter les tests**, ou exécutez le test à partir de l’Explorateur de **tests**.
 
-   Pendant l'exécution du test codé de l'interface utilisateur, SimpleWPFApp est visible. Les étapes que vous avez effectuées dans la procédure précédente sont exécutées. Toutefois, lorsque le test tente de sélectionner la case à cocher pour le contrôle de la case à cocher, la fenêtre **résultats de test** montre que le test a échoué. Cela s'explique par le fait que le test tente de cocher la case, mais ne sait pas que le contrôle CheckBox est désactivé tant que la barre de progression n'a pas atteint 100 %. Vous pouvez corriger ce problème et d'autres problèmes connexes à l'aide des différentes méthodes `UITestControl.WaitForControlXXX()` disponibles pour les tests codés de l'interface utilisateur. La procédure suivante montrera l'utilisation de la méthode `WaitForControlEnabled()` pour corriger le problème à l'origine de l'échec de ce test. Pour plus d’informations, consultez [Mettre en suspens des tests codés de l’interface utilisateur en attendant des événements spécifiques lors de la lecture](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).
+   Pendant l'exécution du test codé de l'interface utilisateur, SimpleWPFApp est visible. Les étapes que vous avez effectuées dans la procédure précédente sont exécutées. Toutefois, lorsque le test tente d’activer la case à cocher du contrôle de case à cocher, la fenêtre de **résultats des tests** indique que le test a échoué. Cela s'explique par le fait que le test tente de cocher la case, mais ne sait pas que le contrôle CheckBox est désactivé tant que la barre de progression n'a pas atteint 100 %. Vous pouvez corriger ce problème et d'autres problèmes connexes à l'aide des différentes méthodes `UITestControl.WaitForControlXXX()` disponibles pour les tests codés de l'interface utilisateur. La procédure suivante montrera l'utilisation de la méthode `WaitForControlEnabled()` pour corriger le problème à l'origine de l'échec de ce test. Pour plus d’informations, consultez [Mettre en suspens des tests codés de l’interface utilisateur en attendant des événements spécifiques lors de la lecture](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).
 
 ## <a name="edit-and-rerun-the-coded-ui-test"></a>Modifier et réexécuter le test codé de l’interface utilisateur
 
-1. Dans la fenêtre **Test Explorer,** sélectionnez le test échoué et dans la section **StackTrace,** choisissez le premier lien vers **UIMap.SimpleAppTest()**.
+1. Dans la fenêtre **Explorateur de tests** , sélectionnez le test ayant échoué et, dans la section **StackTrace** , choisissez le premier lien vers **UIMap. SimpleAppTest ()**.
 
-2. Le fichier *UIMap.Designer.cs* s’ouvre avec le point d’erreur mis en évidence dans le code :
+2. Le fichier *UIMap.Designer.cs* s’ouvre avec le point d’erreur mis en surbrillance dans le code :
 
     ```csharp
     // Select 'CheckBox' check box
@@ -178,9 +178,9 @@ Dans cette procédure pas à pas, vous allez apprendre à créer, modifier et g�
 3. Pour résoudre ce problème, le test codé de l'interface utilisateur peut attendre que le contrôle CheckBox soit activé avant de continuer sur cette ligne à l'aide de la méthode `WaitForControlEnabled()`.
 
     > [!WARNING]
-    > Ne modifiez pas le *fichier UIMap.Designer.cs.* Toutes les modifications apportées au code seront remplacées chaque fois que vous générez du code dans **UIMap - Générateur de test codé de l'interface utilisateur**. Si vous devez modifier une méthode enregistrée, copiez-la dans le fichier *UIMap.cs* et renommez-la. Le *fichier UIMap.cs* peut être utilisé pour remplacer les méthodes et les propriétés dans le fichier *UIMapDesigner.cs.* Vous devez supprimer la référence à la méthode d’origine dans le fichier *CodedUITest.cs* et la remplacer par le nom de la méthode renommée.
+    > Ne modifiez pas le fichier *UIMap.Designer.cs* . Toutes les modifications apportées au code seront remplacées chaque fois que vous générez du code dans **UIMap - Générateur de test codé de l'interface utilisateur**. Si vous devez modifier une méthode enregistrée, copiez-la dans le fichier *UIMap.cs* et renommez-la. Le fichier *UIMap.cs* peut être utilisé pour substituer les méthodes et les propriétés dans le fichier *UIMapDesigner.cs* . Vous devez supprimer la référence à la méthode d’origine dans le fichier *CodedUITest.cs* et la remplacer par le nom de la méthode renommée.
 
-4. Dans **Solution Explorer**, localisez *UIMap.uitest* dans votre projet de test d’interface utilisateur codé.
+4. Dans **Explorateur de solutions**, recherchez *UIMap. UITest* dans votre projet de test codé de l’interface utilisateur.
 
 5. Ouvrez le menu contextuel pour *UIMap.uitest* et choisissez **Ouvrir**.
 
@@ -188,15 +188,15 @@ Dans cette procédure pas à pas, vous allez apprendre à créer, modifier et g�
 
 6. Dans le volet **Action de l’interface utilisateur**, sélectionnez la méthode de test (SimpleAppTest) que vous souhaitez déplacer vers le fichier *UIMap.cs* ou *UIMap.vb*. Le déplacement de la méthode dans un autre fichier permet au code personnalisé à ajouter de ne pas être remplacé quand le code de test est recompilé.
 
-7. Choisissez le bouton **Code de déplacement** sur la barre d’outils **Coded UI Test Editor.**
+7. Choisissez le bouton **déplacer le code** dans la barre d’outils de l’éditeur de test codé de l' **interface utilisateur** .
 
 8. Une boîte de dialogue Microsoft Visual Studio s'affiche. Elle vous informe que la méthode sera déplacée du fichier *UIMap.uitest* dans le fichier *UIMap.cs* et que vous ne pourrez plus la modifier à l’aide de l’éditeur de test codé de l’interface utilisateur. Cliquez sur **Oui**.
 
-     La méthode de test est supprimée du fichier *UIMap.uitest* et n’apparaît plus dans le volet Actions de l’interface utilisateur. Pour modifier le fichier de test déplacé, ouvrez le fichier *UIMap.cs* de **Solution Explorer**.
+     La méthode de test est supprimée du fichier *UIMap.uitest* et n’apparaît plus dans le volet Actions de l’interface utilisateur. Pour modifier le fichier de test déplacé, ouvrez le fichier *UIMap.cs* à partir de **Explorateur de solutions**.
 
 9. Dans la barre d’outils Visual Studio, choisissez **Enregistrer**.
 
-     Les mises à jour de la méthode de test sont enregistrées dans le fichier *UIMap.Designer.*
+     Les mises à jour apportées à la méthode de test sont enregistrées dans le fichier *UIMap. designer* .
 
     > [!WARNING]
     > Une fois que vous avez déplacé la méthode, vous ne pouvez plus la modifier à l'aide de l'éditeur de test codé de l'interface utilisateur. Vous devez ajouter le code personnalisé et le gérer à l'aide de l'éditeur de code.
@@ -218,7 +218,7 @@ Dans cette procédure pas à pas, vous allez apprendre à créer, modifier et g�
     uICheckBoxCheckBox.Checked = this.SimpleAppTestParams.UICheckBoxCheckBoxChecked;
     ```
 
-13. Dans le fichier *CodedUITest1.cs,* localiser la méthode **CodedUITestMethod** et soit commenter ou renommer la référence à la méthode originale SimpleAppTest() et ensuite la remplacer par le nouveau ModifiedSimpleAppTest ():
+13. Dans le fichier *CodedUITest1.cs* , recherchez la méthode **CodedUITestMethod** et supprimez les commentaires ou renommez la référence à la méthode SimpleAppTest () d’origine, puis remplacez-la par la nouvelle ModifiedSimpleAppTest () :
 
     ```csharp
     [TestMethod]
@@ -235,23 +235,23 @@ Dans cette procédure pas à pas, vous allez apprendre à créer, modifier et g�
 
 15. Cliquez avec le bouton droit sur la méthode **CodedUITestMethod** et sélectionnez **Exécuter les tests**.
 
-16. Cette fois, le test d’interface utilisateur codé complète avec succès toutes les étapes du test, et **Passed** est affiché dans la fenêtre **Test Explorer.**
+16. Cette fois, le test codé de l’interface utilisateur exécute avec succès toutes les étapes du test et le **passé** est affiché dans la fenêtre de l' **Explorateur de tests** .
 
 ## <a name="refactor-a-control-in-simplewpfapp"></a>Refactoriser un contrôle dans SimpleWPFApp
 
-1. Dans le fichier *MainWindow.xaml,* dans le concepteur, sélectionnez le contrôle du bouton.
+1. Dans le fichier *MainWindow. Xaml* , dans le concepteur, sélectionnez le contrôle Button.
 
-2. En haut de la fenêtre **Propriétés,** changez la valeur de la propriété **Nom** du **bouton1** au **boutonA**.
+2. En haut de la fenêtre **Propriétés** , remplacez la valeur de la propriété **nom** de **Button1** par **buttonA**.
 
 3. Dans le menu **Générer** , choisissez **Générer la solution**.
 
-4. Dans **Test Explorer**, exécuter **CodedUITestMethod1**.
+4. Dans l' **Explorateur de tests**, exécutez **CodedUITestMethod1**.
 
      Le test échoue parce que le test codé de l'interface utilisateur ne trouve pas le contrôle Button mappé à l'origine dans UIMap comme button1. La refactorisation peut avoir un impact sur les tests codés de l'interface utilisateur de cette manière.
 
 5. Dans l’**Explorateur de tests**, dans la section **StackTrace**, choisissez le premier lien en regard de **UIMpa.ModifiedSimpleAppTest()**.
 
-     Le *fichier UIMap.cs s’ouvre.* Le point d'erreur est mis en surbrillance dans le code :
+     Le fichier *UIMap.cs* s’ouvre. Le point d'erreur est mis en surbrillance dans le code :
 
     ```csharp
     // Click 'Start' button
@@ -264,9 +264,9 @@ Dans cette procédure pas à pas, vous allez apprendre à créer, modifier et g�
 
 ## <a name="map-refactored-control-rerun-the-test"></a>Mapper le contrôle refactorisé pour réexécuter le test
 
-1. Dans le fichier *CodedUITest1.cs,* dans la méthode **CodedUITestMethod1(),** clic droit, **sélectionnez le code de génération pour le test d’interface utilisateur codé** et choisissez ensuite **Use Coded UI Test Builder**.
+1. Dans le fichier *CodedUITest1.cs* , dans la méthode **CodedUITestMethod1 ()** , cliquez avec le bouton droit sur, sélectionnez **générer le code pour le test codé de l’interface utilisateur** , puis choisissez utiliser le générateur de **test codé de l’interface utilisateur**.
 
-     **L’interface utilisateur - Coded UI Test Builder** apparaît.
+     **UIMap-le générateur de test codé de l’interface utilisateur** s’affiche.
 
 2. À l'aide du raccourci sur le Bureau que vous avez créé précédemment, exécutez l'application SimpleWPFApp créée précédemment.
 
@@ -288,9 +288,9 @@ Dans cette procédure pas à pas, vous allez apprendre à créer, modifier et g�
 
 8. Fermez SimpleWPFApp.
 
-9. Fermer **UIMap - Coded UI Test Builder**.
+9. Fermer **UIMap-générateur de test codé de l’interface utilisateur**.
 
-10. Dans **Solution Explorer**, ouvrez le fichier *UIMap.Designer.cs.*
+10. Dans **Explorateur de solutions**, ouvrez le fichier *UIMap.Designer.cs* .
 
 11. Dans le fichier *UIMap.Designer.cs*, recherchez la propriété **UIStartButton1**. Notez que `SearchProperties` a pour valeur `"buttonA"` :
 
@@ -314,7 +314,7 @@ Dans cette procédure pas à pas, vous allez apprendre à créer, modifier et g�
 
      Vous pouvez maintenant modifier le test codé de l'interface utilisateur pour utiliser le nouveau contrôle mappé. Comme signalé dans la procédure précédente, si vous souhaitez remplacer les méthodes ou les propriétés dans le test codé de l’interface utilisateur, vous devez le faire dans le fichier *UIMap.cs*.
 
-12. Dans le fichier *UIMap.cs,* ajouter un constructeur `SearchProperties` et spécifier la propriété de la `UIStartButton` propriété pour utiliser la `AutomationID` propriété d’une valeur de`"buttonA":`
+12. Dans le fichier *UIMap.cs* , ajoutez un constructeur et spécifiez la `SearchProperties` propriété de la `UIStartButton` propriété pour utiliser la `AutomationID` propriété avec la valeur `"buttonA":`
 
     ```csharp
     public UIMap()
@@ -325,11 +325,11 @@ Dans cette procédure pas à pas, vous allez apprendre à créer, modifier et g�
 
 13. Dans le menu **Générer** , choisissez **Générer la solution**.
 
-14. Dans **Test Explorer**, exécuter **CodedUITestMethod1**.
+14. Dans l' **Explorateur de tests**, exécutez **CodedUITestMethod1**.
 
      Cette fois-ci, le test codé de l'interface utilisateur exécute avec succès toutes les étapes du test. Dans la fenêtre **Résultats des tests**, l’état **Réussite** s’affiche.
 
-## <a name="videos"></a>Videos
+## <a name="videos"></a>Vidéos
 
 ![lien vers la vidéo](../data-tools/media/playvideo.gif) [Bien démarrer avec les tests codés de l’interface utilisateur](https://onedrive.live.com/?id=2DB0E1EFE1C1D3B8%21110&cid=2DB0E1EFE1C1D3B8)
 
@@ -339,6 +339,6 @@ Dans cette procédure pas à pas, vous allez apprendre à créer, modifier et g�
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Utilisez l’automatisation de l’interface utilisateur pour tester votre code](../test/use-ui-automation-to-test-your-code.md)
-- [Configurations et plates-formes prises en charge pour les tests d’interface utilisateur codés et les enregistrements d’action](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-- [Modifier des tests codés de l’interface utilisateur à l’aide de l’éditeur de test codé de l’interface utilisateur](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)
+- [Utiliser UI Automation pour tester votre code](../test/use-ui-automation-to-test-your-code.md)
+- [Configurations et plateformes prises en charge pour les tests codés de l’interface utilisateur et les enregistrements des actions](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [Modifier les tests codés de l’interface utilisateur avec l’éditeur de test codé de l’interface utilisateur](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)

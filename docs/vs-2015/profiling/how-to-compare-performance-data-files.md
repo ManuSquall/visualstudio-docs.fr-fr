@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Comparer des fichiers de données de performances | Microsoft Docs'
+title: Guide pratique pour comparer des fichiers de données de performances | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,13 +15,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 185494623e019ef666374bd46e52bca0d58738f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185934"
 ---
-# <a name="how-to-compare-performance-data-files"></a>Procédure : Comparer des fichiers de données de performances
+# <a name="how-to-compare-performance-data-files"></a>Guide pratique pour comparer des fichiers de données de performances
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez comparer les résultats de deux fichiers de données du profileur (.vsp ou .vsps) en créant un rapport ou une vue de comparaison (« Différences »). Le rapport de comparaison montre les différences, les régressions de performances et les améliorations qui se sont produites d’une session de profilage à l’autre.  

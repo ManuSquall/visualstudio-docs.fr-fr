@@ -1,5 +1,5 @@
 ---
-title: Extraire la méthode refactorisationC#() | Microsoft Docs
+title: Extraire la méthode refactorisation (C#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6e6d5e7913a7433fd4b30da490f33dd614c3e2b2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667545"
 ---
 # <a name="extract-method-refactoring-c"></a>Extraire la méthode (Refactorisation C#)
@@ -82,7 +82,7 @@ L' **extraction de méthode** est une opération de refactorisation qui fournit 
 
      Vous pouvez également cliquer avec le bouton droit sur le code sélectionné, pointer sur **Refactoriser**, puis cliquer sur **extraire la méthode** pour afficher la boîte de dialogue **extraire la méthode** .
 
-4. Spécifiez un nom pour la nouvelle méthode, par exemple `CircleArea`, dans la zone nom de la **nouvelle méthode** .
+4. Spécifiez un nom pour la nouvelle méthode, par exemple `CircleArea` , dans la zone **nouveau nom** de la méthode.
 
      Un aperçu de la nouvelle signature de méthode s’affiche sous la signature de la **méthode d’aperçu**.
 
@@ -95,7 +95,7 @@ L' **extraction de méthode** est une opération de refactorisation qui fournit 
  Si la classe est un type partiel, la **méthode Extract** génère immédiatement la nouvelle méthode qui suit le membre source. La **méthode Extract** détermine la signature de la nouvelle méthode, en créant une méthode statique quand aucune donnée d’instance n’est référencée par le code dans la nouvelle méthode.
 
 ## <a name="generic-type-parameters"></a>Paramètres de type générique
- Lorsque vous extrayez une méthode ayant un paramètre de type générique sans contrainte, le code généré n’ajoute pas le modificateur `ref` à ce paramètre, sauf si une valeur lui est assignée. Si la méthode extraite prend en charge les types référence comme argument de type générique, vous devez ajouter manuellement le modificateur `ref` au paramètre dans la signature de la méthode.
+ Lorsque vous extrayez une méthode ayant un paramètre de type générique sans contrainte, le code généré n’ajoute pas le `ref` modificateur à ce paramètre, sauf si une valeur lui est assignée. Si la méthode extraite prend en charge les types référence comme argument de type générique, vous devez ajouter manuellement le `ref` modificateur au paramètre dans la signature de la méthode.
 
 ## <a name="anonymous-methods"></a>Méthodes anonymes
  Si vous tentez d’extraire une partie d’une méthode anonyme qui contient une référence à une variable locale qui est déclarée ou référencée en dehors de la méthode anonyme, Visual Studio vous avertit des modifications sémantiques potentielles.

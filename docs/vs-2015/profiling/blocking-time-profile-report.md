@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0efeb7fb0eb481d0b8d62ff4a9ebf9daad98c39f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68147242"
 ---
 # <a name="blocking-time-profile-report"></a>Profil de temps de blocage, rapport
@@ -36,7 +36,7 @@ Les rapports de profil rassemblent des données relatives au temps de blocage po
   
 |Nom de la colonne|Description|  
 |-----------------|-----------------|  
-|Name|Nom de la fonction pour chaque niveau de la pile des appels.|  
+|Nom|Nom de la fonction pour chaque niveau de la pile des appels.|  
 |Instances|Nombre d’instances de l’appel bloquant pendant la période visible.|  
 |Durée de blocage inclusif|Durée totale de blocage pour toutes les piles qui atteignent ce niveau de l’arborescence de la pile des appels. Le nombre inclusif correspond à la somme du temps de blocage exclusif de cette fonction et de celui de tous ses nœuds enfants.|  
 |Durée de blocage exclusif|Durée totale de blocage au cours de laquelle cette fonction se trouve au niveau le plus bas de la pile des appels. Une entrée de pile d’appels unique dont le temps de blocage exclusif est élevé peut être une fonction intéressante.|  
@@ -44,13 +44,13 @@ Les rapports de profil rassemblent des données relatives au temps de blocage po
 |Détails|Nom complet de la fonction. Peut contenir le nombre de lignes lorsque celui-ci est disponible.|  
   
 ### <a name="synchronization"></a>Synchronisation  
- Le rapport Synchronisation affiche les appels responsables des segments qui se bloquent lors de la synchronisation, ainsi que les durées totales de blocage pour chaque pile des appels. Pour plus d’informations, consultez [Durée de synchronisation](../profiling/synchronization-time.md).  
+ Le rapport Synchronisation affiche les appels responsables des segments qui se bloquent lors de la synchronisation, ainsi que les durées totales de blocage pour chaque pile des appels. Pour plus d’informations, consultez [heure de synchronisation](../profiling/synchronization-time.md)  
   
-### <a name="sleep"></a>Sleep  
+### <a name="sleep"></a>Veille  
  Le rapport Veille affiche les appels responsables du temps de blocage attribué à du temps passé en veille, ainsi que les durées totales de blocage pour chaque pile des appels. Pour plus d’informations, consultez [Durée de veille](../profiling/sleep-time.md).  
   
 ### <a name="io"></a>E/S  
- Le rapport E/S affiche les appels responsables des segments qui se bloquent lors d’une opération d’E/S, ainsi que les durées totales de blocage pour chaque pile des appels. Pour plus d’informations, consultez [Temps d’E/S (vue Threads)](../profiling/i-o-time-threads-view.md).  
+ Le rapport E/S affiche les appels responsables des segments qui se bloquent lors d’une opération d’E/S, ainsi que les durées totales de blocage pour chaque pile des appels. Pour plus d’informations, consultez [temps d’e/s (vue threads)](../profiling/i-o-time-threads-view.md).  
   
 ### <a name="memory-management"></a>Gestion de la mémoire  
  Le rapport Gestion de la mémoire affiche les appels responsables des segments qui se bloquent lors d’une opération de gestion de la mémoire, ainsi que les durées totales de blocage pour chaque pile des appels. Pour plus d’informations, consultez [Période de gestion de la mémoire](../profiling/memory-management-time.md).  

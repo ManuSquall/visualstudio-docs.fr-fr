@@ -8,15 +8,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8d441d74d1ddea5a7b5dd063d302ec93e75fc1c9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591890"
 ---
 # <a name="t4-assembly-directive"></a>Directive d'assembly T4
 
-Dans un modèle de texte au moment de la conception de Visual Studio, la directive `assembly` charge un assembly afin que votre code de modèle puisse utiliser ses types. L’effet est similaire à l’ajout d’une référence d’assembly dans un projet Visual Studio.
+Dans un modèle de texte au moment de la conception de Visual Studio, la `assembly` directive charge un assembly afin que votre code de modèle puisse utiliser ses types. L’effet est similaire à l’ajout d’une référence d’assembly dans un projet Visual Studio.
 
  Pour obtenir une vue d’ensemble générale de l’écriture de modèles de texte, consultez [écriture d’un modèle de texte T4](../modeling/writing-a-t4-text-template.md).
 
@@ -36,7 +36,7 @@ Dans un modèle de texte au moment de la conception de Visual Studio, la directi
 
 - Chemin d’accès absolu de l’assembly
 
-  Vous pouvez utiliser la syntaxe `$(variableName)` pour référencer des variables Visual Studio, comme `$(SolutionDir)`, et `%VariableName%` pour référencer des variables d’environnement. Par exemple :
+  Vous pouvez utiliser la `$(variableName)` syntaxe pour référencer des variables Visual Studio telles que `$(SolutionDir)` et `%VariableName%` pour référencer des variables d’environnement. Par exemple :
 
 ```
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>
@@ -63,7 +63,7 @@ Dans un modèle de texte au moment de la conception de Visual Studio, la directi
 
 - Assembly contenant votre langage spécifique à un domaine.
 
-## <a name="msbuild"></a>Utilisation des propriétés de projet dans MSBuild et Visual Studio
+## <a name="using-project-properties-in-both-msbuild-and-visual-studio"></a><a name="msbuild"></a> Utilisation des propriétés de projet dans MSBuild et Visual Studio
  Les macros Visual Studio telles que $ (SolutionDir) ne fonctionnent pas dans MSBuild. Si vous souhaitez transformer les modèles de votre ordinateur de build, vous devez utiliser les propriétés de projet à la place.
 
  Modifiez votre fichier projet .csproj ou .vbproj pour définir une propriété de projet. Cet exemple définit une propriété nommée `myLibFolder` :

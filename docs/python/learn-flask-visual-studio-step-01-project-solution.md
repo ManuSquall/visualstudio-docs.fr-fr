@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 7707d993ac5fb6f73060d0f862c828e67c833872
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79302846"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315302"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Tutoriel : Bien démarrer avec le framework web Flask dans Visual Studio
 
@@ -38,7 +38,7 @@ Au cours de ces étapes, vous créez une même solution Visual Studio qui contie
 > [!Note]
 > Ce tutoriel diffère de [Flask - Démarrage rapide](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json) en cela que vous en apprenez plus sur Flask et que vous découvrez comment utiliser les différents modèles de projet Flask qui constituent un point de départ plus avancé pour vos propres projets. Par exemple, les modèles de projet installent automatiquement le package Flask lors de la création d’un projet, ce qui vous évite de devoir l’installer manuellement, comme expliqué dans le guide de démarrage rapide.
 
-## <a name="prerequisites"></a>Conditions préalables requises
+## <a name="prerequisites"></a>Prérequis
 
 - Visual Studio 2017 ou ultérieur sur Windows avec les options suivantes :
   - La charge de travail **Développement Python** (onglet **Charge de travail** dans le programme d’installation). Pour obtenir des instructions, consultez [Installer la prise en charge de Python dans Visual Studio](installing-python-support-in-visual-studio.md).
@@ -50,19 +50,19 @@ Le développement Python n’est actuellement pas pris en charge dans Visual Stu
 
 ## <a name="step-1-1-create-a-visual-studio-project-and-solution"></a>Étape 1-1 : créer un projet et une solution Visual Studio
 
-1. Dans Visual Studio, sélectionnez **File** > **New** > **Project**, recherchez "Flask", et sélectionnez le modèle De Projet Web **Blank Flask.** (Le modèle se trouve également sous **Python** > **Web** dans la liste de gauche.)
+1. Dans Visual Studio, sélectionnez **fichier**  >  **nouveau**  >  **projet**, recherchez « fiole », puis sélectionnez le modèle de **projet Web flacon vide** . (Le modèle est également disponible sous **python**  >  **Web** dans la liste de gauche.)
 
     ![Boîte de dialogue Nouveau projet dans Visual Studio pour le projet web Flask vide](media/flask/step01-new-blank-project.png)
 
 1. Dans les champs en bas de la boîte de dialogue, entrez les informations suivantes (comme indiqué dans le graphique précédent), puis sélectionnez **OK** :
 
-    - **Nom**: définissez le nom du projet Visual Studio à **BasicProject**. Ce nom est également utilisé pour le projet Flask.
+    - **Nom**: définissez le nom du projet Visual Studio sur **BasicProject**. Ce nom est également utilisé pour le projet Flask.
     - **Emplacement** : spécifiez un emplacement où créer la solution et le projet Visual Studio.
     - **Nom de la solution** : défini sur **LearningFlask**, qui convient pour la solution en tant que conteneur pour plusieurs projets de ce tutoriel.
     - **Créer un répertoire pour la solution** : laissez cette option activée (par défaut).
     - **Créez un référentiel Git** : sélectionnez cette option (qui est clairement par défaut), afin que Visual Studio crée un référentiel Git local lorsqu’il crée la solution. Si vous ne voyez pas cette option, exécutez le programme d’installation de Visual Studio et ajoutez **Git pour Windows** et **Extension GitHub pour Visual Studio** sous l’onglet **Composants individuels** sous **Outils de code**.
 
-1. Après un moment, Visual Studio vous invite avec un dialogue disant que **ce projet nécessite des paquets externes** (voir ci-dessous). Cette boîte de dialogue s’affiche, car le modèle inclut un fichier *requirements.txt* référençant le dernier package Flask 1.x. (Sélectionnez **Afficher les packages requis** pour voir les dépendances exactes.)
+1. Après quelques instants, Visual Studio vous invite à saisir un dialogue indiquant que **ce projet nécessite des packages externes** (voir ci-dessous). Cette boîte de dialogue s’affiche, car le modèle inclut un fichier *requirements.txt* référençant le dernier package Flask 1.x. (Sélectionnez **Afficher les packages requis** pour voir les dépendances exactes.)
 
     ![Invite indiquant que le projet requiert des packages externes](media/tutorials-common/step01-requirements-prompt-install-myself.png)
 
@@ -85,7 +85,7 @@ Le développement Python n’est actuellement pas pris en charge dans Visual Stu
 
     ![Fenêtre Team Explorer à la page Modifications](media/flask/step01-team-explorer-changes.png)
 
-1. Sur la barre d’état Visual Studio, sélectionnez le bouton commits non bouilli (la flèche vers le haut avec **2**) pour ouvrir la page **de synchronisation** dans **Team Explorer**. Étant donné que vous avez uniquement un référentiel local, la page fournit des options simples pour publier le référentiel sur les différents référentiels à distance.
+1. Dans la barre d’état de Visual Studio, sélectionnez le bouton validations non Pushed (flèche haut avec **2**) pour ouvrir la page **synchronisation** dans **Team Explorer**. Étant donné que vous avez uniquement un référentiel local, la page fournit des options simples pour publier le référentiel sur les différents référentiels à distance.
 
     ![La fenêtre Team Explorer affiche les options de référentiels disponibles pour le contrôle de code source.](media/flask/step01-team-explorer.png)
 
@@ -100,7 +100,7 @@ Le développement Python n’est actuellement pas pris en charge dans Visual Stu
 1. Au cours de ce tutoriel, prenez l’habitude d’utiliser périodiquement les contrôles dans Visual Studio pour valider et envoyer des modifications. Ce tutoriel vous le rappellera aux endroits appropriés.
 
 > [!Tip]
-> Pour naviguer rapidement au sein **de Team Explorer**, sélectionnez l’en-tête (qui lit **Changements** ou **Push** dans les images ci-dessus) pour voir un menu pop-up des pages disponibles.
+> Pour naviguer rapidement dans **Team Explorer**, sélectionnez l’en-tête (qui lit les **modifications** ou **envoie** les images ci-dessus) pour afficher un menu contextuel des pages disponibles.
 
 ### <a name="question-what-are-some-advantages-of-using-source-control-from-the-beginning-of-a-project"></a>Question : Quels sont les avantages de l’utilisation du contrôle de code source dès le début d’un projet ?
 
@@ -120,7 +120,7 @@ Maintenant que vous avez configuré le contrôle de code source pour votre proje
 
     ![Ajouter la commande Environnement virtuel dans l’Explorateur de solutions](media/flask/step01-add-virtual-environment-command.png)
 
-1. Un **dialogue Add Virtual Environment** apparaît, avec un message disant que nous avons trouvé un fichier **requirements.txt.** Ce message indique que Visual Studio utilise ce fichier pour configurer l’environnement virtuel.
+1. La boîte de dialogue **Ajouter un environnement virtuel** s’affiche avec un message indiquant **que nous avons trouvé un fichier de requirements.txt.** Ce message indique que Visual Studio utilise ce fichier pour configurer l’environnement virtuel.
 
     ![Ajouter un environnement virtuel avec un message de requirements.txt](media/tutorials-common/step01-add-virtual-environment-found-requirements.png)
 
@@ -228,7 +228,7 @@ Réponse : Oui. Développez le nœud **Environnements Python**, cliquez avec le
 
 ## <a name="step-1-5-run-the-project"></a>Étape 1-5 : Exécuter le projet
 
-1. Dans Visual Studio, sélectionnez **Debug** > **Start Debugging** (**F5**) ou utilisez le bouton **Web Server** sur la barre d’outils (le navigateur que vous voyez peut varier):
+1. Dans Visual Studio, sélectionnez **Déboguer**  >  **Démarrer le débogage** (**F5**) ou utilisez le bouton **serveur Web** dans la barre d’outils (le navigateur que vous voyez peut varier) :
 
     ![Exécuter le bouton de la barre d’outils du serveur Web dans Visual Studio](media/tutorials-common/run-web-server-toolbar-button.png)
 
@@ -238,11 +238,11 @@ Réponse : Oui. Développez le nœud **Environnements Python**, cliquez avec le
 
     ![Vue par défaut du projet Flask](media/flask/step01-first-run-success.png)
 
-1. Lorsque vous avez terminé, arrêtez le serveur en fermant la fenêtre de la console, ou en utilisant la commande **Debug** > **Stop Debugging** dans Visual Studio.
+1. Lorsque vous avez terminé, arrêtez le serveur en fermant la fenêtre de la console, ou en utilisant la commande **Déboguer**  >  **arrêter le débogage** dans Visual Studio.
 
 ### <a name="question-whats-the-difference-between-using-the-debug-menu-commands-and-the-server-commands-on-the-projects-python-submenu"></a>Question : Quelle est la différence entre les commandes de menu Déboguer et les commandes de serveur dans le sous-menu Python du projet ?
 
-Réponse : en plus des commandes de menu **Déboguer** et des boutons de barre d’outils, vous pouvez également lancer le serveur avec les commandes **Python** > **Exécuter le serveur** ou **Python** > **Exécuter le serveur de débogage** dans le menu contextuel du projet. Les deux commandes ouvrent une fenêtre de console dans laquelle vous voyez l’URL locale (localhost:port) du serveur en cours d’exécution. Toutefois, vous devez ouvrir manuellement un navigateur avec cette URL, et l’exécution du serveur de débogage n’entraîne pas le démarrage automatique du débogueur Visual Studio. Vous pouvez attacher un débbugger au processus d’exécution plus tard, si vous le souhaitez, en utilisant la commande **Debug** > **Attach to Process.**
+Réponse : en plus des commandes de menu **Déboguer** et des boutons de barre d’outils, vous pouvez également lancer le serveur avec les commandes **Python** > **Exécuter le serveur** ou **Python** > **Exécuter le serveur de débogage** dans le menu contextuel du projet. Les deux commandes ouvrent une fenêtre de console dans laquelle vous voyez l’URL locale (localhost:port) du serveur en cours d’exécution. Toutefois, vous devez ouvrir manuellement un navigateur avec cette URL, et l’exécution du serveur de débogage n’entraîne pas le démarrage automatique du débogueur Visual Studio. Vous pouvez joindre un débogueur au processus en cours d’exécution ultérieurement, si vous le souhaitez, à l’aide de la commande **Déboguer**  >  **attacher au processus** .
 
 ## <a name="next-steps"></a>Étapes suivantes
 

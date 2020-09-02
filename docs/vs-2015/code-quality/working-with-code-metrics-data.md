@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3c2460b4e8b9e0b9043178989fcf8825815471be
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645708"
 ---
 # <a name="working-with-code-metrics-data"></a>Utiliser des données de la métrique du code
@@ -29,7 +29,7 @@ La fenêtre résultats de la **métrique du code** affiche les données génér�
 
  Cette rubrique contient les sections suivantes :
 
-- [Code Metrics Results Window](../code-quality/working-with-code-metrics-data.md#BKMK_CodeMetricsResultsWindow)
+- [Fenêtre résultats de la métrique du code](../code-quality/working-with-code-metrics-data.md#BKMK_CodeMetricsResultsWindow)
 
 - [Affichage des résultats de la métrique du code](../code-quality/working-with-code-metrics-data.md#BKMK_DisplayingCodeMetricsResults)
 
@@ -41,15 +41,15 @@ La fenêtre résultats de la **métrique du code** affiche les données génér�
 
 - [Création d’un élément de travail en fonction des résultats de la métrique du code](../code-quality/working-with-code-metrics-data.md#BKMK_Creating_a_Work_Item_Based_on_Code_Metric_Results)
 
-## <a name="BKMK_CodeMetricsResultsWindow"></a> Code Metrics Results Window
+## <a name="code-metrics-results-window"></a><a name="BKMK_CodeMetricsResultsWindow"></a> Code Metrics Results Window
  La fenêtre résultats de la **métrique du code** comporte une barre d’outils en haut et des colonnes pour afficher les résultats calculés.
 
 |Colonne|Description|
 |------------|-----------------|
-|**Hiérarchie**|La colonne **hiérarchie** contient une arborescence de la hiérarchie de code que vous pouvez développer ou réduire pour afficher le niveau de détail souhaité. Les colonnes restantes affichent les résultats calculés. Vous pouvez masquer ou organiser les colonnes de résultats comme vous le souhaitez.|
-|**La facilité**|La colonne **maintenabilité** contient une icône en plus du résultat numérique. Une icône verte indique un degré de facilité de maintenance relativement élevé. Une icône jaune indique un degré modéré de maintenabilité. Une icône rouge indique une maintenabilité faible et un problème potentiel. Ces indicateurs de couleur correspondent aux catégories de gravité utilisées par la règle FxCop AvoidUnmaintainableCode. Cette règle déclenche une erreur si l’index de maintenabilité est inférieur à 10, un avertissement si l’index est compris entre 10 et 20, et ni une erreur, ni un avertissement si l’index est supérieur à 20. L’index de maintenabilité est une synthèse de trois mesures : la complexité cyclomatic, les lignes de code et la complexité du calcul. Ses valeurs ne sont pas exprimées en unités.|
+|**Hierarchy**|La colonne **hiérarchie** contient une arborescence de la hiérarchie de code que vous pouvez développer ou réduire pour afficher le niveau de détail souhaité. Les colonnes restantes affichent les résultats calculés. Vous pouvez masquer ou organiser les colonnes de résultats comme vous le souhaitez.|
+|**Maintenabilité**|La colonne **maintenabilité** contient une icône en plus du résultat numérique. Une icône verte indique un degré de facilité de maintenance relativement élevé. Une icône jaune indique un degré modéré de maintenabilité. Une icône rouge indique une maintenabilité faible et un problème potentiel. Ces indicateurs de couleur correspondent aux catégories de gravité utilisées par la règle FxCop AvoidUnmaintainableCode. Cette règle déclenche une erreur si l’index de maintenabilité est inférieur à 10, un avertissement si l’index est compris entre 10 et 20, et ni une erreur, ni un avertissement si l’index est supérieur à 20. L’index de maintenabilité est une synthèse de trois mesures : la complexité cyclomatic, les lignes de code et la complexité du calcul. Ses valeurs ne sont pas exprimées en unités.|
 
-## <a name="BKMK_DisplayingCodeMetricsResults"></a>Affichage des résultats de la métrique du code
+## <a name="displaying-code-metrics-results"></a><a name="BKMK_DisplayingCodeMetricsResults"></a> Affichage des résultats de la métrique du code
  La fenêtre résultats de la métrique du code s’affiche automatiquement lorsque vous générez des résultats de métriques du code. Vous pouvez également afficher la fenêtre à tout moment.
 
 #### <a name="to-display-the-code-metrics-results-window"></a>Pour afficher la fenêtre résultats de la métrique du code
@@ -66,7 +66,7 @@ La fenêtre résultats de la **métrique du code** affiche les données génér�
 
 - Si les résultats de la métrique du code ont été générés, développez l’arborescence dans la colonne **hiérarchie** .
 
-## <a name="BKMK_FilteringCodeMetricsResults"></a>Filtrage des résultats de la métrique du code
+## <a name="filtering-code-metrics-results"></a><a name="BKMK_FilteringCodeMetricsResults"></a> Filtrage des résultats de la métrique du code
  Vous pouvez filtrer les résultats affichés dans la fenêtre résultats de la **métrique du code** à l’aide de la barre d’outils située en haut. Par exemple, vous souhaiterez peut-être afficher uniquement les résultats qui ont un index de maintenabilité inférieur à 65.
 
  La zone de liste déroulante **filtre** contient les noms des colonnes de résultats. Lorsqu’un filtre est défini, il est ajouté en bas de la liste avec une mise en retrait. La liste peut contenir les dix derniers filtres qui ont été définis.
@@ -83,7 +83,7 @@ La fenêtre résultats de la **métrique du code** affiche les données génér�
 
 5. Pour afficher les détails du résultat, développez l’arborescence de la hiérarchie.
 
-## <a name="BKMK_AddingRemovingandRearrangingDataColumns"></a>Ajout, suppression et réorganisation des colonnes de données
+## <a name="adding-removing-and-rearranging-data-columns"></a><a name="BKMK_AddingRemovingandRearrangingDataColumns"></a> Ajout, suppression et réorganisation des colonnes de données
  Vous pouvez ajouter ou supprimer des colonnes de résultats dans la fenêtre résultats de la **métrique du code** . En outre, vous pouvez réorganiser les colonnes de résultats afin qu’elles s’affichent dans l’ordre de votre choix.
 
 #### <a name="to-remove-a-column"></a>Pour supprimer une colonne
@@ -118,13 +118,13 @@ La fenêtre résultats de la **métrique du code** affiche les données génér�
 
 3. Lorsque la colonne est positionnée à l’emplacement de votre choix, cliquez sur **OK**.
 
-## <a name="BKMK_Copying_Data_to_the_Clipboard_or_Excel"></a>Copie de données dans le presse-papiers ou Excel
+## <a name="copying-data-to-the-clipboard-or-excel"></a><a name="BKMK_Copying_Data_to_the_Clipboard_or_Excel"></a> Copie de données dans le presse-papiers ou Excel
  Vous pouvez sélectionner et copier une ligne sélectionnée de données de métriques du code dans le presse-papiers sous la forme d’une chaîne de texte qui contient une ligne pour le nom et la valeur de chaque colonne de données. Vous pouvez également cliquer sur **ouvrir la liste dans Microsoft Excel** pour exporter tous les résultats de la métrique du code dans une feuille de calcul Excel.
 
-## <a name="BKMK_Creating_a_Work_Item_Based_on_Code_Metric_Results"></a>Création d’un élément de travail en fonction des résultats de la métrique du code
- Vous pouvez créer un élément de travail [!INCLUDE[esprfound](../includes/esprfound-md.md)] basé sur les résultats dans la fenêtre résultats de la **métrique du code** . Lorsque l’élément de travail est créé, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] entre automatiquement un titre dans le champ **titre** et les données de métrique du code sous l’onglet **historique** .
+## <a name="creating-a-work-item-based-on-code-metric-results"></a><a name="BKMK_Creating_a_Work_Item_Based_on_Code_Metric_Results"></a> Création d’un élément de travail en fonction des résultats de la métrique du code
+ Vous pouvez créer un [!INCLUDE[esprfound](../includes/esprfound-md.md)] élément de travail basé sur les résultats dans la fenêtre résultats de la **métrique du code** . Lorsque l’élément de travail est créé, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] entre automatiquement un titre dans le champ **titre** et les données de métrique du code sous l’onglet **historique** .
 
- Pour plus d’informations sur la création d’éléments de travail, consultez [créer un &#91;élément de travail&#93;Redirigé](https://msdn.microsoft.com/24b2e064-16ac-4bf0-8de4-98a1f48b8c4b).
+ Pour plus d’informations sur la création d’éléments de travail, consultez [créer un élément de travail &#91;Redirigé&#93;](https://msdn.microsoft.com/24b2e064-16ac-4bf0-8de4-98a1f48b8c4b).
 
 #### <a name="to-create-a-work-item-based-on-a-result"></a>Pour créer un élément de travail en fonction d’un résultat
 

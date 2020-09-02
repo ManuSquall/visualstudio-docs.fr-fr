@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: da9c50b6c63176fdb3156b2daa15d6c0e1bbefbb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62552561"
 ---
-# <a name="idiaframedatagetlengthlocals"></a>IDiaFrameData::get_lengthLocals
+# <a name="idiaframedataget_lengthlocals"></a>IDiaFrameData::get_lengthLocals
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Récupère le nombre d’octets de l’objet d’un push sur la pile de variables locales.  
+Récupère le nombre d’octets de variables locales faisant l’objet d’un push sur la pile.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -35,13 +35,13 @@ HRESULT get_lengthLocals ( 
   
 #### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- [out] Retourne le nombre d’octets de variables locales.  
+ à Retourne le nombre d’octets de variables locales.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.  
   
 ## <a name="remarks"></a>Notes  
- La valeur retournée par cette méthode est généralement utilisée dans l’interprétation d’une chaîne de programme (voir la [IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) méthode pour la définition d’une chaîne de programme).  
+ La valeur retournée par cette méthode est généralement utilisée dans l’interprétation d’une chaîne de programme (consultez la méthode [IDiaFrameData :: get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) pour la définition d’une chaîne de programme).  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   

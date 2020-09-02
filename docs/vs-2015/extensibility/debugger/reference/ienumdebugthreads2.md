@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 97bc8383f990f6c0c35a402f2ab36b2595d82a9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68147685"
 ---
 # <a name="ienumdebugthreads2"></a>IEnumDebugThreads2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Cette interfac énumère les threads en cours d’exécution dans la session de débogage actuelle.  
+Ce interfac énumère les threads qui s’exécutent dans la session de débogage actuelle.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -30,37 +30,37 @@ Cette interfac énumère les threads en cours d’exécution dans la session de 
 IEnumDebugThreads2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs  
- Le moteur de débogage (dé) implémente cette interface pour représenter une liste de threads dans un programme.  
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
+ Le moteur de débogage (DE) implémente cette interface pour représenter une liste de threads dans un programme.  
   
-## <a name="notes-for-callers"></a>Notes de publication pour les appelants  
- Appelez [EnumThreads](../../../extensibility/debugger/reference/idebugprocess2-enumthreads.md) pour obtenir cette interface représentant une liste de tous les threads dans tous les programmes en cours d’exécution dans un processus. Appelez [EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md) pour obtenir cette interface représentant une liste de threads en cours d’exécution dans un programme.  
+## <a name="notes-for-callers"></a>Notes pour les appelants  
+ Appelez [enumthreads,](../../../extensibility/debugger/reference/idebugprocess2-enumthreads.md) pour obtenir cette interface représentant une liste de tous les threads dans tous les programmes en cours d’exécution dans un processus. Appelez [enumthreads,](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md) pour obtenir cette interface représentant une liste de threads s’exécutant dans un programme.  
   
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
- Le tableau suivant présente les méthodes de `IEnumDebugThreads2`.  
+ Le tableau suivant présente les méthodes de `IEnumDebugThreads2` .  
   
 |Méthode|Description|  
 |------------|-----------------|  
 |[Next](../../../extensibility/debugger/reference/ienumdebugthreads2-next.md)|Récupère un nombre spécifié de threads dans la séquence d’énumération.|  
 |[Skip](../../../extensibility/debugger/reference/ienumdebugthreads2-skip.md)|Ignore un nombre spécifié de threads dans une séquence d’énumération.|  
-|[Reset](../../../extensibility/debugger/reference/ienumdebugthreads2-reset.md)|Réinitialise une séquence d’énumération au début.|  
-|[Clone](../../../extensibility/debugger/reference/ienumdebugthreads2-clone.md)|Crée un énumérateur qui contient le même état d’énumération que celui en cours.|  
+|[Réinitialiser](../../../extensibility/debugger/reference/ienumdebugthreads2-reset.md)|Réinitialise une séquence d'énumération.|  
+|[Clone](../../../extensibility/debugger/reference/ienumdebugthreads2-clone.md)|Crée un énumérateur qui contient le même état d’énumération que le même état d’énumération actuel.|  
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugthreads2-getcount.md)|Obtient le nombre de threads dans un énumérateur.|  
   
 ## <a name="remarks"></a>Notes  
- Visual Studio obtient généralement cette interface pour mettre à jour le **Threads** fenêtre ainsi que pour obtenir le premier thread de la liste, afin d’appeler [Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md), [continuer](../../../extensibility/debugger/reference/idebugprocess3-continue.md), et [Étape](../../../extensibility/debugger/reference/idebugprocess3-step.md).  
+ Visual Studio obtient généralement cette interface pour mettre à jour la fenêtre **Threads** et pour obtenir le premier thread de la liste, afin d’appeler [Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md), [continue](../../../extensibility/debugger/reference/idebugprocess3-continue.md)et [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md).  
   
 ## <a name="requirements"></a>Configuration requise  
- En-tête : msdbg.h  
+ En-tête : msdbg. h  
   
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft. VisualStudio. Debugger. Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interfaces principales](../../../extensibility/debugger/reference/core-interfaces.md)   
- [EnumThreads](../../../extensibility/debugger/reference/idebugprocess2-enumthreads.md)   
- [EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)   
- [Étape](../../../extensibility/debugger/reference/idebugprocess3-step.md)   
- [Continuer](../../../extensibility/debugger/reference/idebugprocess3-continue.md)   
+ [Enumthreads,](../../../extensibility/debugger/reference/idebugprocess2-enumthreads.md)   
+ [Enumthreads,](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)   
+ [Première](../../../extensibility/debugger/reference/idebugprocess3-step.md)   
+ [Pouvoir](../../../extensibility/debugger/reference/idebugprocess3-continue.md)   
  [Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md)

@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 703d80da623c4fdb72328565513c6debe80447d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145476"
 ---
 # <a name="understanding-instrumentation-data-values"></a>Fonctionnement des valeurs de données d’instrumentation
@@ -24,7 +24,7 @@ ms.locfileid: "68145476"
 
 La méthode de profilage par *instrumentation* de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] enregistre les informations de minutage détaillées pour les appels de fonction, les lignes et les instructions de l’application profilée.  
   
- **Spécifications**  
+ **Configuration requise**  
   
 - [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
@@ -34,7 +34,7 @@ La méthode de profilage par *instrumentation* de [!INCLUDE[vsprvs](../includes/
   
 - Si le système d’exploitation a effectué une opération pendant l’intervalle. Par exemple, le système d’exploitation peut lire ou écrire sur un disque, ou basculer entre le thread cible et un autre thread d’un autre processus.  
   
-  **Spécifications**  
+  **Configuration requise**  
   
 - [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
@@ -100,4 +100,4 @@ La méthode de profilage par *instrumentation* de [!INCLUDE[vsprvs](../includes/
   
 ## <a name="see-also"></a>Voir aussi  
  [Analyse des données des outils d’analyse des performances](../profiling/analyzing-performance-tools-data.md)   
- [Guide pratique pour choisir des méthodes de collecte](../profiling/how-to-choose-collection-methods.md)
+ [Guide pratique pour choisir une méthode de collecte](../profiling/how-to-choose-collection-methods.md)

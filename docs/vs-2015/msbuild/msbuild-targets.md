@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c4cc8d9654fc2d277f0b7c69483ab46aa3209983
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157603"
 ---
 # <a name="msbuild-targets"></a>Cibles de MSBuild
@@ -62,7 +62,7 @@ Les cibles regroupent les tâches dans un ordre particulier et permet au process
   
   Pour plus d’informations sur l’ordre de génération des cibles, consultez [Ordre de génération des cibles](../msbuild/target-build-order.md).  
   
-## <a name="target-batching"></a>Traitement par lot des cibles  
+## <a name="target-batching"></a>Traitement de cibles par lots  
  Un élément cible peut avoir un attribut `Outputs` qui spécifie des métadonnées au format suivant : %(métadonnées). Dans ce cas, MSBuild exécute la cible une fois pour chaque valeur unique de métadonnées, en regroupant par lot les éléments qui ont cette valeur de métadonnées. Par exemple,  
   
 ```  

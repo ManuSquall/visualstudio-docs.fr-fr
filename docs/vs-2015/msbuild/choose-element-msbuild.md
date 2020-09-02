@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 642a4996b9b7cb24ead5b58e8f3f98b8abf7657c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68187006"
 ---
 # <a name="choose-element-msbuild"></a>Choose, élément (MSBuild)
@@ -59,21 +59,21 @@ ms.locfileid: "68187006"
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[Otherwise](../msbuild/otherwise-element-msbuild.md)|Élément facultatif.<br /><br /> Spécifie le bloc de code `PropertyGroup` et les éléments `ItemGroup` à exécuter si les conditions de tous les éléments `When` correspondent à la valeur `false`. Un élément `Choose` peut ne contenir aucun élément `Otherwise` ou en contenir un seul qui doit figurer en dernière position.|  
-|[When](../msbuild/when-element-msbuild.md)|Élément requis.<br /><br /> Spécifie un bloc de code que l’élément `Choose` peut sélectionner. Un élément `Choose` peut contenir un ou plusieurs éléments `When`.|  
+|[Dispose](../msbuild/otherwise-element-msbuild.md)|Élément facultatif.<br /><br /> Spécifie le bloc de code `PropertyGroup` et les éléments `ItemGroup` à exécuter si les conditions de tous les éléments `When` correspondent à la valeur `false`. Un élément `Choose` peut ne contenir aucun élément `Otherwise` ou en contenir un seul qui doit figurer en dernière position.|  
+|[Lorsque le répertoire](../msbuild/when-element-msbuild.md)|Élément requis.<br /><br /> Spécifie un bloc de code que l’élément `Choose` peut sélectionner. Un élément `Choose` peut contenir un ou plusieurs éléments `When`.|  
   
 ### <a name="parent-elements"></a>Éléments parents  
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[Otherwise](../msbuild/otherwise-element-msbuild.md)|Spécifie le bloc de code à exécuter si les conditions de tous les éléments `When` correspondent à la valeur `false`.|  
+|[Dispose](../msbuild/otherwise-element-msbuild.md)|Spécifie le bloc de code à exécuter si les conditions de tous les éléments `When` correspondent à la valeur `false`.|  
 |[Projet](../msbuild/project-element-msbuild.md)|Élément racine requis d'un fichier projet [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] .|  
-|[When](../msbuild/when-element-msbuild.md)|Spécifie un bloc de code que l’élément `Choose` peut sélectionner.|  
+|[Lorsque le répertoire](../msbuild/when-element-msbuild.md)|Spécifie un bloc de code que l’élément `Choose` peut sélectionner.|  
   
-## <a name="remarks"></a>Remarques  
- Les éléments `Choose`, `When` et `Otherwise` sont utilisés ensemble pour permettre la sélection d’une section de code spécifique à exécuter parmi plusieurs options possibles. Pour plus d’informations, consultez [Constructions conditionnelles](../msbuild/msbuild-conditional-constructs.md).  
+## <a name="remarks"></a>Notes  
+ Les éléments `Choose`, `When` et `Otherwise` sont utilisés ensemble pour permettre la sélection d’une section de code spécifique à exécuter parmi plusieurs options possibles. Pour plus d’informations, consultez [constructions conditionnelles](../msbuild/msbuild-conditional-constructs.md).  
   
-## <a name="example"></a>Exemples  
+## <a name="example"></a>Exemple  
  Le projet suivant utilise l’élément `Choose` pour sélectionner l’ensemble de valeurs de propriété à définir dans les éléments `When`. Si les attributs `Condition` des deux éléments `When` s’évaluent à `false`, les valeurs des propriétés dans l’élément `Otherwise` sont définies.  
   
 ```  
@@ -122,5 +122,5 @@ ms.locfileid: "68187006"
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Constructions conditionnelles MSBuild](../msbuild/msbuild-conditional-constructs.md)   
- [Référence du schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)
+ [Constructions conditionnelles](../msbuild/msbuild-conditional-constructs.md)   
+ [Référence de schéma de fichier de projet](../msbuild/msbuild-project-file-schema-reference.md)

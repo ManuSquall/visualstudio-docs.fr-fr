@@ -1,5 +1,5 @@
 ---
-title: Ce qui&#39;nouveau pour le design
+title: '&#39;nouveautés de la conception'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -14,13 +14,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6c68db12f8ecea523327250fec1f600639a2f267
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79302370"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315328"
 ---
-# <a name="whats-new-for-design-in-visual-studio-in-visual-studio-2015"></a>Quoi de neuf pour le design dans Visual Studio dans Visual Studio 2015
+# <a name="whats-new-for-design-in-visual-studio-in-visual-studio-2015"></a>Nouveautés de la conception dans Visual Studio dans Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 Cette version de Visual Studio inclut les améliorations suivantes pour vous aider à mieux comprendre et concevoir le code.
 
@@ -62,20 +62,20 @@ Cette version de Visual Studio inclut les améliorations suivantes pour vous aid
 
 - **Diagrammes UML**. Vous ne pouvez plus créer des diagrammes de classes UML et des diagrammes de séquence à partir du code. Pour créer ces diagrammes, vous devez à présent utiliser de nouveaux éléments UML.
 
-- **Architecture Explorer**. Vous ne pouvez plus utiliser le Navigateur de l'architecture pour créer des diagrammes. Mais vous pouvez toujours utiliser l'Explorateur de solutions.
+- **Navigateur**de l’architecture. Vous ne pouvez plus utiliser le Navigateur de l'architecture pour créer des diagrammes. Mais vous pouvez toujours utiliser l'Explorateur de solutions.
 
-## <a name="edition-support-for-architecture-and-modeling-tools"></a><a name="VersionSupport"></a>Soutien en édition pour l’architecture et les outils de modélisation
+## <a name="edition-support-for-architecture-and-modeling-tools"></a><a name="VersionSupport"></a> Prise en charge d’édition pour les outils d’architecture et de modélisation
 
-Visual Studio 2015 est disponible en plusieurs éditions. Tous ne fournissent pas de soutien pour l’architecture et les outils de modélisation. Le tableau ci-après décrit la disponibilité de chaque outil.
+Visual Studio 2015 est disponible dans plusieurs éditions. Les outils d’architecture et de modélisation ne sont pas tous pris en charge. Le tableau ci-après décrit la disponibilité de chaque outil.
 
-|**Fonctionnalité**|**Entreprise**|**Professionnel**|**Communauté**|**Express**|
+|**Fonctionnalité**|**Entreprise**|**Professional**|**Communauté**|**Express**|
 |-----------------|--------------------|----------------------|-------------------|-----------------|
-|**Cartes de code**|Oui|Prend uniquement en charge la lecture et le filtrage des cartes de code, l’ajout de nouveaux nœuds génériques et la création d’un nouveau graphique dirigé à partir d’une sélection.|-|-|
-|**Diagrammes de classe UML**|Oui|-|-|-|
+|**Cartes de code**|Oui|Prend uniquement en charge la lecture et le filtrage de cartes de code, l’ajout de nouveaux nœuds génériques et la création d’un graphique orienté à partir d’une sélection.|-|-|
+|**Diagrammes de classes UML**|Oui|-|-|-|
 |**Diagrammes de séquence UML**|Oui|-|-|-|
-|**Diagrammes de cas d’utilisation UML**|Oui|-|-|-|
-|**Diagrammes d’activité UML**|Oui|-|-|-|
+|**Diagrammes de cas d’usage UML**|Oui|-|-|-|
+|**Diagrammes d’activités UML**|Oui|-|-|-|
 |**Diagrammes de composants UML**|Oui|-|-|-|
 |**Diagrammes de couche**|Oui|-|-|-|
-|**Graphiques dirigés** (diagrammes DGML)|Oui|Oui|-|-|
+|**Graphiques orientés** (diagrammes dgml)|Oui|Oui|-|-|
 |**Clone de code**|Oui|-|-|-|

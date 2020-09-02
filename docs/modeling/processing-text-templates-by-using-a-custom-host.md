@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0f7ecd6508df780f570d10b3d615094fae15209d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591682"
 ---
 # <a name="process-text-templates-by-using-a-custom-host"></a>Traiter des modèles de texte à l’aide d’un hôte personnalisé
@@ -44,19 +44,19 @@ string output = engine.ProcessTemplate(templateString, host);
 
  Votre application doit rechercher et fournir le modèle, de même que traiter la sortie.
 
- Dans le paramètre `host`, vous devez fournir une classe qui implémente [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). Celle-ci est rappelée par le moteur.
+ Dans le `host` paramètre, vous devez fournir une classe qui implémente [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). Celle-ci est rappelée par le moteur.
 
  L'hôte doit être en mesure de consigner les erreurs, de résoudre les références à l'assembly et aux fichiers Include, de fournir un domaine d'application dans lequel le modèle peut s'exécuter et d'appeler le processeur approprié pour chaque directive.
 
- <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> est défini dans **Microsoft. VisualStudio. TextTemplating\*. 0. dll**, et [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)) est défini dans **Microsoft. VisualStudio. TextTemplating. interfaces\*. 0. dll**.
+ <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> est défini dans **Microsoft. VisualStudio. TextTemplating. \*.0.dll**, et [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)) est défini dans **Microsoft. visualstudio. TextTemplating. interfaces. \*.0.dll**.
 
 ## <a name="in-this-section"></a>Dans cette section
  [Procédure pas à pas : création d’un hôte de modèle de texte personnalisé](../modeling/walkthrough-creating-a-custom-text-template-host.md) Montre comment créer un hôte de modèle de texte personnalisé qui rend la fonctionnalité de modèle de texte disponible en dehors de Visual Studio.
 
-## <a name="reference"></a>Reference
+## <a name="reference"></a>Informations de référence
  [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))
 
-## <a name="related-sections"></a>Rubriques connexes
+## <a name="related-sections"></a>Sections connexes
 
 - [Le processus de transformation de modèle de texte](../modeling/the-text-template-transformation-process.md) décrit le fonctionnement de la transformation de texte et les parties que vous pouvez personnaliser.
 - [Création de processeurs de directive de modèle de texte T4 personnalisés](../modeling/creating-custom-t4-text-template-directive-processors.md) fournit une vue d’ensemble des processeurs de directive de modèle de texte.

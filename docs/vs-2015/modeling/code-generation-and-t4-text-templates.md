@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1f34422dfd47efdce9bf837f923da0e139a13398
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667917"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>Génération de code et modèles de texte T4
@@ -44,7 +44,7 @@ Par exemple, vous pouvez créer un modèle pour définir une page HTML :
 
  De plus, le modèle contient des fragments de code du programme. Vous pouvez utiliser ces fragments pour répéter des sections de texte, organiser des sections conditionnelles et afficher des données de votre application.
 
- Pour générer la sortie, votre application appelle une fonction générée par le modèle. Exemple :
+ Pour générer la sortie, votre application appelle une fonction générée par le modèle. Par exemple :
 
 ```csharp
 string webResponseText = new MyTemplate().TransformText();
@@ -102,7 +102,7 @@ namespace Fabrikam.FirstJob
 
  [Génération de code au moment du design à l’aide de modèles de texte T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md) La génération de code et d’autres ressources à partir d’un modèle vous permet de mettre à jour votre application en mettant à jour le modèle.
 
- [Génération de code dans un processus de génération](../modeling/code-generation-in-a-build-process.md) Si vous avez installé [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Kit de développement logiciel de visualisation et de modélisation, vous pouvez vous assurer que les logiciels générés restent à jour avec les modifications apportées au modèle.
+ [Génération de code dans un processus de génération](../modeling/code-generation-in-a-build-process.md) Si vous avez installé le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Kit de développement logiciel de visualisation et de modélisation, vous pouvez vous assurer que les logiciels générés restent à jour avec les modifications apportées au modèle.
 
  [Écriture d’un modèle de texte T4](../modeling/writing-a-t4-text-template.md) Syntaxe d’un fichier de modèle de texte.
 

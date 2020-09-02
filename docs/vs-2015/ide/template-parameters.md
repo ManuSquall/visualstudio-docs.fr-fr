@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2d7bb7e0f3dfee3dd1bf3e9b42afd5837a29f6ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646803"
 ---
 # <a name="template-parameters"></a>Paramètres de modèle
@@ -27,7 +27,7 @@ ms.locfileid: "72646803"
 L’utilisation de paramètres dans vos modèles vous permet de remplacer les valeurs des parties principales du modèle, telles que les noms de classes et les espaces de noms, quand le modèle est instancié. Ces paramètres sont remplacés par l’Assistant Modèle qui s’exécute en arrière-plan quand un utilisateur clique sur **OK** dans les boîtes de dialogue **Nouveau projet** ou **Ajouter un nouvel élément**.
 
 ## <a name="declaring-and-enabling-template-parameters"></a>Déclaration et activation des paramètres de modèle
- Les paramètres de modèle sont déclarés au format $*paramètre*$. Par exemple :
+ Les paramètres de modèle sont déclarés au format $*paramètre*$. Par exemple :
 
 - $safeprojectname$
 

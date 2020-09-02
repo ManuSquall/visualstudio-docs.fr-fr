@@ -10,22 +10,22 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c55da4d58b717bc4d42b6fafdd084067b7e21a31
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591760"
 ---
 # <a name="text-template-utility-methods"></a>Méthodes utilitaires de modèle de texte
 
-Il existe plusieurs méthodes qui sont toujours à votre disposition lorsque vous écrivez du code dans un modèle de texte Visual Studio. Ces méthodes sont définies dans <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.
+Il existe plusieurs méthodes qui sont toujours à votre disposition lorsque vous écrivez du code dans un modèle de texte Visual Studio. Ces méthodes sont définies dans <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation> .
 
 > [!TIP]
 > Vous pouvez également utiliser d’autres méthodes et services fournis par l’environnement hôte dans un modèle de texte normal (non prétraité). Par exemple, vous pouvez résoudre les chemins d’accès aux fichiers, consigner les erreurs et obtenir les services fournis par Visual Studio, ainsi que tous les packages chargés. Pour plus d’informations, consultez [accès à Visual Studio à partir d’un modèle de texte](/previous-versions/visualstudio/visual-studio-2010/gg604090\(v\=vs.100\)).
 
 ## <a name="write-methods"></a>Méthodes d’écriture
 
-Vous pouvez utiliser les méthodes `Write()` et `WriteLine()` pour ajouter du texte à l’intérieur d’un bloc de code standard au lieu d’utiliser un bloc de code d’expression. Les deux blocs de code suivants sont fonctionnellement équivalents.
+Vous pouvez utiliser les `Write()` `WriteLine()` méthodes et pour ajouter du texte à l’intérieur d’un bloc de code standard au lieu d’utiliser un bloc de code d’expression. Les deux blocs de code suivants sont fonctionnellement équivalents.
 
 ### <a name="code-block-with-an-expression-block"></a>Bloc de code avec un bloc d’expression
 
@@ -53,7 +53,7 @@ while (i-- > 0)
 
 Il peut s’avérer utile d’utiliser l’une de ces méthodes utilitaires au lieu d’un bloc d’expression à l’intérieur d’un bloc de code long avec des structures de contrôle imbriquées.
 
-Les méthodes `Write()` et `WriteLine()` ont deux surcharges, une qui prend un paramètre de chaîne unique et une chaîne de format composite, ainsi qu’un tableau d’objets à inclure dans la chaîne (par exemple, la méthode `Console.WriteLine()`). Les deux utilisations suivantes de `WriteLine()` sont fonctionnellement équivalentes :
+Les `Write()` `WriteLine()` méthodes et ont deux surcharges, une qui prend un paramètre de chaîne unique et une chaîne de format composite plus un tableau d’objets à inclure dans la chaîne (comme la `Console.WriteLine()` méthode). Les deux utilisations suivantes de `WriteLine()` sont fonctionnellement équivalentes :
 
 ```
 <#
@@ -69,7 +69,7 @@ Les méthodes `Write()` et `WriteLine()` ont deux surcharges, une qui prend un p
 
 ## <a name="indentation-methods"></a>Méthodes de mise en retrait
 
-Vous pouvez utiliser des méthodes de mise en retrait pour mettre en forme la sortie de votre modèle de texte. La classe <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation> a une propriété de chaîne `CurrentIndent` qui indique la mise en retrait actuelle dans le modèle de texte et un champ `indentLengths` qui est une liste des mises en retrait qui ont été ajoutées. Vous pouvez ajouter une mise en retrait à l’aide de la méthode `PushIndent()` et soustraire une mise en retrait à la méthode `PopIndent()`. Si vous souhaitez supprimer toutes les mises en retrait, utilisez la méthode `ClearIndent()`. Le bloc de code suivant illustre l’utilisation de ces méthodes :
+Vous pouvez utiliser des méthodes de mise en retrait pour mettre en forme la sortie de votre modèle de texte. La <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation> classe a une `CurrentIndent` propriété de type chaîne qui indique la mise en retrait actuelle dans le modèle de texte et un `indentLengths` champ qui est une liste des mises en retrait qui ont été ajoutées. Vous pouvez ajouter une mise en retrait avec la `PushIndent()` méthode et soustraire une mise en retrait à la `PopIndent()` méthode. Si vous souhaitez supprimer toutes les mises en retrait, utilisez la `ClearIndent()` méthode. Le bloc de code suivant illustre l’utilisation de ces méthodes :
 
 ```
 <#
@@ -115,11 +115,11 @@ Vous pouvez utiliser les méthodes de l’utilitaire d’erreur et d’avertisse
 
 ## <a name="access-to-host-and-service-provider"></a>Accès à l’hôte et au fournisseur de services
 
-La propriété `this.Host` peut fournir l’accès aux propriétés exposées par l’hôte qui exécute le modèle. Pour utiliser `this.Host`, vous devez définir `hostspecific` attribut dans la directive `<@template#>` :
+La propriété `this.Host` peut fournir l’accès aux propriétés exposées par l’hôte qui exécute le modèle. Pour utiliser `this.Host` , vous devez définir `hostspecific` l’attribut dans la `<@template#>` directive :
 
 `<#@template ... hostspecific="true" #>`
 
-Le type de `this.Host` dépend du type d’hôte dans lequel le modèle s’exécute. Dans un modèle qui s’exécute dans Visual Studio, vous pouvez effectuer un cast `this.Host` en `IServiceProvider` pour accéder à des services tels que l’IDE. Par exemple :
+Le type de `this.Host` dépend du type d’hôte dans lequel le modèle est en cours d’exécution. Dans un modèle qui s’exécute dans Visual Studio, vous pouvez effectuer un cast vers pour accéder `this.Host` `IServiceProvider` à des services tels que l’IDE. Par exemple :
 
 ```
 EnvDTE.DTE dte = (EnvDTE.DTE) ((IServiceProvider) this.Host)
@@ -128,10 +128,10 @@ EnvDTE.DTE dte = (EnvDTE.DTE) ((IServiceProvider) this.Host)
 
 ## <a name="using-a-different-set-of-utility-methods"></a>Utilisation d’un autre ensemble de méthodes utilitaires
 
-Dans le cadre du processus de génération de texte, votre fichier de modèle est transformé en une classe, qui est toujours nommée `GeneratedTextTransformation`et hérite de <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>. Si vous souhaitez utiliser un autre ensemble de méthodes, vous pouvez écrire votre propre classe et la spécifier dans la directive de modèle. Votre classe doit hériter de <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.
+Dans le cadre du processus de génération de texte, votre fichier de modèle est transformé en une classe, qui est toujours nommée `GeneratedTextTransformation` et hérite de <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation> . Si vous souhaitez utiliser un autre ensemble de méthodes, vous pouvez écrire votre propre classe et la spécifier dans la directive de modèle. Votre classe doit hériter de <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation> .
 
 ```
 <#@ template inherits="MyUtilityClass" #>
 ```
 
-Utilisez la directive `assembly` pour référencer l’assembly où se trouve la classe compilée.
+Utilisez la `assembly` directive pour référencer l’assembly où se trouve la classe compilée.

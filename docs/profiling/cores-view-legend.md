@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8ea3184fbcd3561b88521f7dbdf4bf44c925150d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62553161"
 ---
 # <a name="cores-view-legend"></a>Légende de la vue Cœurs
@@ -36,4 +36,4 @@ La légende de la vue Cœurs identifie chaque thread par couleur et par nom. Ell
 |Pourcentage de changements de contexte inter-cœurs|Calculé comme un pourcentage en divisant le nombre de changements de contexte inter-cœurs par le nombre total de changements de contexte. Plus ce pourcentage est élevé, plus l’impact global de la surcharge des changements de contexte inter-cœurs affectera les performances du thread en question.|
 
 ## <a name="see-also"></a>Voir aussi
-- [Vue Cœurs](../profiling/cores-view.md)
+- [Affichage Cœurs](../profiling/cores-view.md)

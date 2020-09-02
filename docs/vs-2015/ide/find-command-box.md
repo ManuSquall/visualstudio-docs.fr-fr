@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b7c5f9c19573a04b1d9a8d7b8c6e9450aef9bc44
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645728"
 ---
 # <a name="findcommand-box"></a>zone Rechercher/Commande
@@ -29,22 +29,22 @@ Vous pouvez rechercher des commandes Visual Studio de texte et d’exécution à
 
  La zone **Rechercher/Commande** conserve les 20 derniers éléments entrés et les affiche dans une liste déroulante. Vous pouvez parcourir la liste à l’aide des touches de direction.
 
- ![Rechercher&#47;la zone de commande](../ide/media/findcommandbox.png "|::ref1::|") Zone Rechercher/commande
+ ![Zone de commande rechercher&#47;](../ide/media/findcommandbox.png "FindCommandBox") Zone Rechercher/commande
 
 ## <a name="searching-for-text"></a>Recherche de texte
- Par défaut, quand vous spécifiez du texte dans la zone **Rechercher/Commande**, puis que vous choisissez la touche Entrée, Visual Studio recherche dans la fenêtre de document ou Outil actuelle en utilisant les options spécifiées dans la boîte de dialogue **Rechercher dans les fichiers**. Pour plus d’informations, consultez [Finding and Replacing Text](../ide/finding-and-replacing-text.md).
+ Par défaut, quand vous spécifiez du texte dans la zone **Rechercher/Commande**, puis que vous choisissez la touche Entrée, Visual Studio recherche dans la fenêtre de document ou Outil actuelle en utilisant les options spécifiées dans la boîte de dialogue **Rechercher dans les fichiers**. Pour plus d’informations, consultez [recherche et remplacement de texte](../ide/finding-and-replacing-text.md).
 
 ## <a name="entering-commands"></a>Entrée de commandes
- Si vous voulez utiliser la zone **Rechercher/Commande** pour émettre une commande ou un alias [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] unique plutôt que de rechercher du texte, entrez la commande [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] précédée du signe > (supérieur à). Par exemple :
+ Si vous voulez utiliser la zone **Rechercher/Commande** pour émettre une commande ou un alias [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] unique plutôt que de rechercher du texte, entrez la commande [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] précédée du signe > (supérieur à). Par exemple :
 
 ```
 >File.NewFile c:\temp\MyFile /t:"General\Text File"
 ```
 
- Vous avez également la possibilité d’utiliser la fenêtre Commande pour entrer et exécuter une ou plusieurs commandes. Certaines commandes ou certains alias peuvent être entrés et exécutés sans aucun argument, alors que d’autres ont des arguments obligatoires dans leur syntaxe. Pour obtenir la liste des commandes qui ont des arguments, consultez [Commandes Visual Studio](../ide/reference/visual-studio-commands.md).
+ Vous avez également la possibilité d’utiliser la fenêtre Commande pour entrer et exécuter une ou plusieurs commandes. Certaines commandes ou certains alias peuvent être entrés et exécutés sans aucun argument, alors que d’autres ont des arguments obligatoires dans leur syntaxe. Pour obtenir la liste des commandes qui ont des arguments, consultez [commandes Visual Studio](../ide/reference/visual-studio-commands.md).
 
 ## <a name="escape-characters"></a>Caractères d’échappement
- La présence d’un signe d’insertion (^) dans une ligne de commande signifie que le caractère situé juste après ce signe est interprété littéralement, et non comme un caractère de contrôle. Ceci permet d’incorporer des guillemets ("), des espaces, des barres obliques, des accents circonflexes ou tout autre caractère littéral dans une valeur de paramètre ou de commutateur, à l’exception des noms de commutateur. Par exemple :
+ La présence d’un signe d’insertion (^) dans une ligne de commande signifie que le caractère situé juste après ce signe est interprété littéralement, et non comme un caractère de contrôle. Ceci permet d’incorporer des guillemets ("), des espaces, des barres obliques, des accents circonflexes ou tout autre caractère littéral dans une valeur de paramètre ou de commutateur, à l’exception des noms de commutateur. Par exemple,
 
 ```
 >Edit.Find ^^t /regex

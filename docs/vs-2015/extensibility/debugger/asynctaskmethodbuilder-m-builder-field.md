@@ -1,5 +1,5 @@
 ---
-title: Champ AsyncTaskMethodBuilder.m_builder | Microsoft Docs
+title: AsyncTaskMethodBuilder. m_builder le champ | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,22 +11,22 @@ caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ae8e79d948bb95a8f55e43985e80bc7ab949ff76
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197390"
 ---
-# <a name="asynctaskmethodbuildermbuilder-field"></a>Champ AsyncTaskMethodBuilder.m_builder
+# <a name="asynctaskmethodbuilderm_builder-field"></a>Champ AsyncTaskMethodBuilder.m_builder
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Représente l’objet de Générateur générique auquel cette instance non générique délègue.  
+Représente l’objet générateur générique auquel cette instance non générique délègue.  
   
- **Espace de noms :** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
+ **Espace de noms :** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
   
- **Assembly :** mscorlib (dans mscorlib.dll)  
+ **Assembly :** mscorlib (en mscorlib.dll)  
   
- Étant donné que vous ne pouvez pas accéder à ce membre interne du .NET Framework, la syntaxe suivante est fournie en commun Intermediate Language (CIL).  
+ Étant donné que vous ne pouvez pas accéder à ce membre interne à partir de la .NET Framework, la syntaxe suivante est fournie en Common Intermediate Language (CIL).  
   
 ## <a name="syntax"></a>Syntaxe  
   

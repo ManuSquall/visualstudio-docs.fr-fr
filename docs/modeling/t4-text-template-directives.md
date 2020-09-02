@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f7ceb5139ff133a0005efafd5dc96f20e22b73cf
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591825"
 ---
 # <a name="t4-text-template-directives"></a>Directives de modèles de texte T4
@@ -59,7 +59,7 @@ En général, les directives sont les premiers éléments d'un fichier modèle o
 <#@ assembly name="[assembly strong name|assembly file name]" #>
 ```
 
-[Directive d’importation T4](../modeling/t4-import-directive.md)
+[Directive d'importation T4](../modeling/t4-import-directive.md)
 
 ```
 <#@ import namespace="namespace" #>

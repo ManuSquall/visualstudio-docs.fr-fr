@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fdcf281e1ace40d1d7cdac0be302810ea173581b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667555"
 ---
 # <a name="extract-interface-refactoring-c"></a>Refactorisation d'extraction d'interface (C#)
@@ -34,7 +34,7 @@ L’interface d’extraction est une opération de refactorisation qui fournit u
 
 ### <a name="to-use-extract-interface"></a>Pour utiliser l’interface Extract
 
-1. Créez une application console nommée `ExtractInterface`, puis remplacez `Program` par le code suivant :
+1. Créez une application console nommée `ExtractInterface` , puis remplacez `Program` -la par le code suivant :
 
     ```csharp
     // Invoke Extract Interface on ProtoA.
@@ -45,7 +45,7 @@ L’interface d’extraction est une opération de refactorisation qui fournit u
     }
     ```
 
-2. Avec le curseur positionné dans `MethodB`, puis cliquez sur **extraire l’interface** dans le menu **Refactoriser** .
+2. Avec le curseur positionné dans `MethodB` , puis cliquez sur **extraire l’interface** dans le menu **Refactoriser** .
 
      La boîte de dialogue **extraire l’interface** s’affiche.
 

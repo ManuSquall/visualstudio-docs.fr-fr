@@ -1,5 +1,5 @@
 ---
-title: Référence des API de visualiseur | Microsoft Docs
+title: Informations de référence sur l’API du visualiseur | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ef86bcca5e7b8b6fa8f2b6c5e7a0efe86ab5ba17
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197445"
 ---
 # <a name="visualizer-api-reference"></a>Référence des API du visualiseur
@@ -43,6 +43,6 @@ Les API de visualiseur sont fournies aux utilisateurs qui souhaitent écrire un 
 - <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource?displayProperty=fullName>  
   
 ## <a name="see-also"></a>Voir aussi  
- [Procédure pas à pas : Écriture d’un visualiseur en C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
- [Guide pratique pour écrire un visualiseur](../debugger/how-to-write-a-visualizer.md)   
+ [Procédure pas à pas : écriture d’un visualiseur en C #](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
+ [Comment : écrire un visualiseur](../debugger/how-to-write-a-visualizer.md)   
  [Créer des visualiseurs personnalisés](../debugger/create-custom-visualizers-of-data.md)

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c6862493de844ad8108009a2103752122114ae6c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62553043"
 ---
 # <a name="cores-view-zoom-tool"></a>Outil Zoom de la vue Cœurs
@@ -26,7 +26,7 @@ Le contrôle Zoom est un curseur qui vous permet d’effectuer un zoom avant et 
 
 - Zoom avant : faites glisser pour sélectionner une zone dans la vue de la chronologie. Quand vous relâchez le bouton de la souris, l’affichage de la chronologie effectue un zoom avant sur la plage sélectionnée.
 
-- Zoom sur et en dehors: Planer au-dessus de la chronologie, puis appuyez sur **Ctrl** pendant que vous déplacez la roue de la souris.
+- Zoom avant et arrière : Placez le curseur sur la chronologie, puis appuyez sur **CTRL** pendant que vous déplacez la roulette de la souris.
 
 ## <a name="see-also"></a>Voir aussi
-- [Vue Cœurs](../profiling/cores-view.md)
+- [Affichage Cœurs](../profiling/cores-view.md)

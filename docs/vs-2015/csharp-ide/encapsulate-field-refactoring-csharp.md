@@ -1,5 +1,5 @@
 ---
-title: Encapsuler la refactorisationC#de champ () | Microsoft Docs
+title: Encapsuler le champ refactorisation (C#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0b4f5ddbe7eab925b06584f00b04bed3c74e9811
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667568"
 ---
 # <a name="encapsulate-field-refactoring-c"></a>Encapsuler le champ (Refactorisation C#)
@@ -76,7 +76,7 @@ L’opération de refactorisation **encapsuler le champ** vous permet de créer 
 
 5. Appuyez sur entrée ou cliquez sur le bouton **OK** .
 
-6. Si vous avez sélectionné l’option **aperçu des modifications de référence** , la fenêtre Aperçu des modifications de la **référence** s’ouvre. Cliquez sur le bouton **appliquer** .
+6. Si vous avez sélectionné l’option **aperçu des modifications de référence** , la fenêtre Aperçu des modifications de la **référence** s’ouvre. Cliquez sur le bouton **Appliquer**.
 
      Le code d'accesseur `get` et `set` suivant est affiché dans votre fichier source :
 
@@ -103,7 +103,7 @@ L’opération de refactorisation **encapsuler le champ** vous permet de créer 
 
  Pour les déclarations qui déclarent plusieurs champs, **encapsuler le champ** utilise la virgule comme limite entre les champs et initialise la refactorisation sur le champ le plus proche du curseur et sur la même ligne que le curseur. Vous pouvez également spécifier quel champ vous voulez encapsuler en sélectionnant le nom de ce champ dans la déclaration.
 
- Le code généré par cette opération de refactorisation est modélisé par la fonctionnalité d'extraits de code Encapsuler le champ. Les extraits de code sont modifiables. Pour plus d'informations, consultez [Code Snippets](../ide/code-snippets.md).
+ Le code généré par cette opération de refactorisation est modélisé par la fonctionnalité d'extraits de code Encapsuler le champ. Les extraits de code sont modifiables. Pour plus d’informations, consultez [Extraits de code](../ide/code-snippets.md).
 
 ## <a name="see-also"></a>Voir aussi
- [Extraits de code visuelC#](../csharp-ide/refactoring-csharp.md) [ C# ](../ide/visual-csharp-code-snippets.md) de refactorisation ()
+ [Refactorisation (c#) extraits de](../csharp-ide/refactoring-csharp.md) [code Visual C#](../ide/visual-csharp-code-snippets.md)

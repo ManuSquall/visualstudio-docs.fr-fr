@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 44d816c7107d34cf81369a98ea0c435133e8e4b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62551939"
 ---
 # <a name="zoom-control-threads-view"></a>Contrôle Zoom (vue Threads)
@@ -33,6 +33,6 @@ Le contrôle de zoom est un curseur qui vous permet d’effectuer un zoom avant 
   
 ## <a name="see-also"></a>Voir aussi  
  [Gérer les canaux](../profiling/manage-channels.md)   
- [Mode Mesure activé/désactivé](../profiling/measure-mode-on-off.md)   
- [Vue Threads](../profiling/threads-view-parallel-performance.md)   
- [Navigateur d’utilisation](../profiling/utilization-navigator.md)
+ [Mode mesure activé/désactivé](../profiling/measure-mode-on-off.md)   
+ [Vue threads](../profiling/threads-view-parallel-performance.md)   
+ [Navigateur d'utilisation](../profiling/utilization-navigator.md)

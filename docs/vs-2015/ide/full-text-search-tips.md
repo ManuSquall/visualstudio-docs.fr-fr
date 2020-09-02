@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ac683ff6e7079478d5b4e642918df4e281a53f0b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645653"
 ---
 # <a name="full-text-search-tips"></a>Conseils de recherche en texte intégral
@@ -29,7 +29,7 @@ L’une des approches les plus utiles pour trouver des informations dans l’Aid
 ## <a name="full-text-search-tips"></a>Conseils de recherche en texte intégral
  Pour créer des recherches ciblées qui retournent uniquement les rubriques qui vous intéressent, vous devez comprendre comment l’Aide interprète la mise en forme que vous utilisez dans les requêtes. Ces mises en forme comprennent les caractères spéciaux, les mots réservés et les filtres.
 
-### <a name="general-guidelines"></a>Indications générales
+### <a name="general-guidelines"></a>Instructions générales
  Le tableau suivant présente quelques règles de base et des instructions pour le développement de requêtes de recherche dans l’Aide.
 
 |Syntaxe|Description|
@@ -43,13 +43,13 @@ L’une des approches les plus utiles pour trouver des informations dans l’Aid
 
 > [!IMPORTANT]
 > 1. Les recherches d’expressions ne sont pas prises en charge. Si vous spécifiez plusieurs mots dans une chaîne de recherche, les rubriques retournées contiennent tous les mots que vous avez spécifiés, mais pas nécessairement l’expression exacte que vous avez spécifiée.
->    2. Utilisez des opérateurs logiques pour spécifier la relation entre les mots dans votre expression de recherche. Vous pouvez inclure des opérateurs logiques, tels que AND, OR, NOT et NEAR, pour affiner votre recherche. Par exemple, si vous recherchez « déclarer NEAR union », les résultats de recherche incluent les rubriques dans lesquelles les mots « déclarer » et « union » ne sont séparés que de quelques mots. Pour plus d’informations, consultez [Opérateurs logiques dans les expressions de recherche](../ide/logical-operators-in-search-expressions.md).
+>    2. Utilisez des opérateurs logiques pour spécifier la relation entre les mots dans votre expression de recherche. Vous pouvez inclure des opérateurs logiques, tels que AND, OR, NOT et NEAR, pour affiner votre recherche. Par exemple, si vous recherchez « déclarer NEAR union », les résultats de recherche incluent les rubriques dans lesquelles les mots « déclarer » et « union » ne sont séparés que de quelques mots. Pour plus d’informations, consultez [opérateurs logiques dans les expressions de recherche](../ide/logical-operators-in-search-expressions.md).
 
 ### <a name="filters"></a>Filtres
  Vous pouvez restreindre davantage les résultats de la recherche en utilisant des opérateurs de recherche avancée. L’Aide inclut trois catégories que vous pouvez utiliser pour filtrer les résultats d’une recherche en texte intégral : titre, code et mot clé. Pour plus d’informations, consultez [Opérateurs de recherche avancée dans les expressions de recherche](../ide/advanced-search-operators-in-search-expressions.md).
 
 ### <a name="ranking-of-search-results"></a>Classement des résultats de recherche
- L’algorithme de recherche applique certains critères pour aider à classer les résultats de la recherche dans la liste des résultats. En général :
+ L’algorithme de recherche applique certains critères pour aider à classer les résultats de la recherche dans la liste des résultats. En général :
 
 1. Le contenu qui comprend les mots à rechercher dans le titre a un classement plus élevé.
 

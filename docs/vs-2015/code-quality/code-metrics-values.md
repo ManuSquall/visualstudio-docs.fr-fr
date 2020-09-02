@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 23dba7b7c29c05b55af2c461f36bdaa4b46b948f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667719"
 ---
 # <a name="code-metrics-values"></a>Valeurs de la métrique du code
@@ -26,7 +26,7 @@ ms.locfileid: "72667719"
 La métrique du code est un jeu de mesures de logiciel qui fournit aux développeurs plus de détails sur le code qu'ils développent. En tirant parti des métriques du code, les développeurs peuvent comprendre quels types et/ou méthodes doivent être retravaillés ou être testés de manière plus approfondie. Les équipes de développement peuvent identifier les risques potentiels, comprendre l’état actuel d’un projet et suivre la progression pendant le développement de logiciels.
 
 ## <a name="software-measurements"></a>Mesures des logiciels
- La liste suivante affiche les résultats de la métrique du code que [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] calcule :
+ La liste suivante répertorie les résultats de la métrique du code qui [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] calcule :
 
 - **Index de maintenabilité** : calcule une valeur d’index comprise entre 0 et 100 qui représente la simplicité relative de la gestion du code. Une valeur élevée signifie une meilleure maintenabilité. Les évaluations codées en couleurs peuvent être utilisées pour identifier rapidement les zones problématiques dans votre code. Une évaluation verte est comprise entre 20 et 100 et indique que le code a une bonne maintenabilité. Une évaluation jaune est comprise entre 10 et 19 et indique que le code peut être géré de façon modérée. Une évaluation rouge est une évaluation comprise entre 0 et 9 et indique une maintenabilité faible.
 
@@ -37,7 +37,7 @@ La métrique du code est un jeu de mesures de logiciel qui fournit aux développ
 
 - **Profondeur d’héritage** : indique le nombre de définitions de classe qui s’étendent à la racine de la hiérarchie de classes. Plus la hiérarchie est profonde, plus il est difficile de comprendre où des méthodes et des champs particuliers sont définis ou/et redéfinis.
 
-- **Couplage de classe** : mesure le couplage à des classes uniques via des paramètres, des variables locales, des types de retour, des appels de méthode, des instanciations génériques ou de modèle, des classes de base, des implémentations d’interface, des champs définis sur des types externes et un attribut noms. Une bonne conception logicielle impose que les types et les méthodes aient une cohésion élevée et un faible couplage. Le couplage élevé indique une conception qui est difficile à réutiliser et à gérer en raison de ses nombreuses interdépendances sur d’autres types.
+- **Couplage de classe** : mesure le couplage à des classes uniques via des paramètres, des variables locales, des types de retour, des appels de méthode, des instanciations génériques ou de modèle, des classes de base, des implémentations d’interface, des champs définis sur des types externes et une décoration d’attribut. Une bonne conception logicielle impose que les types et les méthodes aient une cohésion élevée et un faible couplage. Le couplage élevé indique une conception qui est difficile à réutiliser et à gérer en raison de ses nombreuses interdépendances sur d’autres types.
 
 - **Lignes de code** : indique le nombre approximatif de lignes dans le code. Le nombre est basé sur le code IL et n’est donc pas le nombre exact de lignes dans le fichier de code source. Un nombre très élevé peut indiquer qu’un type ou une méthode tente de faire trop de travail et doit être fractionné. Il peut également indiquer que le type ou la méthode peut être difficile à gérer.
 

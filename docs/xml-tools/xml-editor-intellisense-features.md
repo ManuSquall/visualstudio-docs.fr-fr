@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 609684452190bf7471f90fee75f66dbb2fcbec8e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75592384"
 ---
 # <a name="xml-editor-intellisense-features"></a>Fonctionnalités IntelliSense de l’éditeur XML
@@ -21,7 +21,7 @@ L'éditeur XML offre des fonctionnalités IntelliSense complètes comparables à
 
 ## <a name="intellisense-in-an-xsd-document"></a>IntelliSense dans un document XSD
 
-Une fois qu’un schéma est associé à votre document, vous recevez une liste déroulante d’éléments attendus chaque fois que vous tapez `"<"` ou que vous cliquez sur le bouton **afficher la liste des membres** de l’objet dans la barre d’outils de l’éditeur XML.
+Une fois qu’un schéma est associé à votre document, vous recevez une liste déroulante d’éléments attendus chaque fois que vous tapez ou que vous `"<"` cliquez sur le bouton **afficher la liste des membres** de l’objet dans la barre d’outils de l’éditeur XML.
 
 ![Bouton afficher la liste des membres de l’objet](media/display-object-member-list-xml.png)
 
@@ -57,7 +57,7 @@ L'éditeur XML facilite également l'édition du XML en complétant automatiquem
 
 `<book>`
 
-L’éditeur XML insère l’étiquette de fin et place le curseur juste après l’étiquette de début. Voici un exemple (le «&#124;» note la position du curseur) :
+L’éditeur XML insère l’étiquette de fin et place le curseur juste après l’étiquette de début. Voici un exemple (le « &#124; » note la position du curseur) :
 
 `<book>`&#124;`</book>`
 
@@ -85,33 +85,33 @@ Par exemple, si vous sélectionnez l'élément `e:Book` dans la liste IntelliSen
 
 `<e:Book xmlns:e="http://books"`
 
-## <a name="brace-matching"></a>Accolades correspondantes
+## <a name="brace-matching"></a>Correspondance d’accolade
 
-L'éditeur XML met en évidence les accolades pour indiquer immédiatement quel élément vous venez de fermer. Vous pouvez également utiliser le raccourci clavier (**Ctrl**+ **]** ) pour passer d’une accolade à l’accolade correspondante.
+L'éditeur XML met en évidence les accolades pour indiquer immédiatement quel élément vous venez de fermer. Vous pouvez également utiliser le raccourci clavier (**CTRL** + **]**) pour passer d’une accolade à l’accolade correspondante.
 
 L'éditeur XML offre cette fonctionnalité pour les éléments suivants :
 
-- Les étiquettes de début et de fin qui se correspondent.
+- Correspondance des balises de début et de fin.
 
-- Toute paire de crochets «\<» ou « > ».
+- Toute paire de crochets pointus « \<" or "> ».
 
-- Le début et la fin de commentaires
+- Début et fin des commentaires.
 
-- Le début et la fin d'instructions de traitement
+- Début et fin des instructions de traitement.
 
-- Le début et la fin de blocs CDATA
+- Début et fin des blocs CDATA.
 
-- Le début et la fin de déclarations DTD
+- Début et fin des déclarations DTD.
 
-- Les guillemets ouvrants et fermants des attributs
+- Ouverture et fermeture des guillemets sur les attributs.
 
 ## <a name="modify-the-intellisense-options"></a>Modifier les options IntelliSense
 
-Les fonctions IntelliSense et de saisie semi-automatique sont activées par défaut. Toutefois, vous pouvez modifier ce paramètre en modifiant vos **outils** > paramètres **options** .
+Les fonctions IntelliSense et de saisie semi-automatique sont activées par défaut. Toutefois, vous pouvez modifier ce paramètre en modifiant les **Tools**  >  paramètres**options** des outils.
 
 La section **insertion automatique** de la page **divers** contrôle le comportement suivant :
 
-|Name|Description|
+|Nom|Description|
 |-|-----------------|
 |Balises de fermeture|Insère des étiquettes de fermeture pour les nouveaux éléments.|
 |Guillemets d'attribut|Insère les guillemets marquant une valeur d'attribut lorsque vous entrez un nouveau nom d'attribut.|
