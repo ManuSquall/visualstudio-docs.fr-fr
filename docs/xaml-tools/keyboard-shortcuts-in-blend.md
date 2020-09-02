@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a4d0d537dc93479cc791b2e1c3246e9bab74139f
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85332227"
 ---
 # <a name="keyboard-shortcuts-in-blend-for-visual-studio"></a>Raccourcis clavier dans Blend pour Visual Studio
@@ -46,7 +46,7 @@ ms.locfileid: "85332227"
 |Couper|**CTRL** + **X**|
 |Copier|**CTRL** + **C**|
 |Coller|**CTRL** + **V**|
-|Supprimer|**Supprimer**|
+|DELETE|**Supprimer**|
 |Rechercher du texte (mode XAML ou éditeur JavaScript uniquement)|**CTRL** + **F**|
 |Rechercher l’occurrence suivante du texte (mode XAML ou éditeur JavaScript uniquement)|**F3** ou **Ctrl**+**H**|
 

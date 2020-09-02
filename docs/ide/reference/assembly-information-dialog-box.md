@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ae70a2bf989b73dedc5becaac6f4b49bd0108730
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595785"
 ---
 # <a name="assembly-information-dialog-box"></a>Informations de l’assembly (boîte de dialogue)
@@ -27,45 +27,45 @@ Pour accéder à cette boîte de dialogue, sélectionnez un nœud de projet dans
 
 ## <a name="uielement-list"></a>Liste des éléments de l'interface utilisateur
 
-**Titre**\
+**Bonhomme**\
 Spécifie un titre pour le manifeste de l’assembly. Correspond à <xref:System.Reflection.AssemblyTitleAttribute>.
 
 **Description**\
 Spécifie une description facultative pour le manifeste de l’assembly. Correspond à <xref:System.Reflection.AssemblyDescriptionAttribute>.
 
-**Société**\
+**Entreprise**\
 Spécifie un nom de société pour le manifeste de l’assembly. Correspond à <xref:System.Reflection.AssemblyCompanyAttribute>.
 
 Vous pouvez définir ou modifier la valeur par défaut pour Company dans le registre. Recherchez la valeur **RegisteredOrganization** sous la clé **Computer\HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows NT\CurrentVersion** ou **Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion**, selon votre version de Windows.
 
-**Produit**\
+**Production**\
 Spécifie un nom de produit pour le manifeste de l’assembly. Correspond à <xref:System.Reflection.AssemblyProductAttribute>.
 
-**Copyright**\
+**Intellectuelle**\
 Spécifie une mention de droits d’auteur pour le manifeste de l’assembly. Correspond à <xref:System.Reflection.AssemblyCopyrightAttribute>.
 
-**Marque**\
+**Commerciale**\
 Spécifie une marque pour le manifeste de l’assembly. Correspond à <xref:System.Reflection.AssemblyTrademarkAttribute>.
 
-**Version De l’assemblage**\
+**Version de l’assembly**\
 Spécifie la version de l’assembly. Correspond à <xref:System.Reflection.AssemblyVersionAttribute>.
 
 **Version du fichier**\
 Spécifie un numéro de version qui indique au compilateur d’utiliser une version spécifique pour la ressource de la version du fichier Win32. Correspond à <xref:System.Reflection.AssemblyFileVersionAttribute>.
 
-**Guid**\
+**UNIQUES**\
 GUID unique qui identifie l’assembly. Quand vous créez un projet, Visual Studio génère un GUID pour l’assembly. Correspond à <xref:System.Guid>.
 
-**Langage neutre**\
-Spécifie la culture prise en charge par l'assembly. Correspond à <xref:System.Resources.NeutralResourcesLanguageAttribute>. La valeur par défaut est **(Aucun)**.
+**Langue neutre**\
+Spécifie la culture prise en charge par l'assembly. Correspond à <xref:System.Resources.NeutralResourcesLanguageAttribute>. La valeur par défaut est **(aucune)**.
 
-**Rendre l’assemblage COM-Visible**\
+**Rendre l’assembly visible par COM**\
 Spécifie si les types dans l’assembly seront disponibles pour COM. Correspond à <xref:System.Runtime.InteropServices.ComVisibleAttribute>.
 
 > [!NOTE]
-> Pour plus d’informations sur la définition de ces propriétés lors de la génération d’un paquet NuGet dans une bibliothèque de classe Cadre .NET, voir [configurer les propriétés du projet pour le paquet](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework#configure-project-properties-for-the-package).
+> Pour plus d’informations sur la définition de ces propriétés lors de la génération d’un package NuGet dans une bibliothèque de classes .NET Framework, consultez [configurer les propriétés du projet pour le package](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework#configure-project-properties-for-the-package).
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Page Application, Concepteur de projets (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md)
+- [Page Application, Concepteur de projet (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md)
 - [Attributs](https://msdn.microsoft.com/Library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)

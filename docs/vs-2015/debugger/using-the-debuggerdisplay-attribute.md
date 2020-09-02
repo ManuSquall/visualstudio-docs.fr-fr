@@ -1,5 +1,5 @@
 ---
-title: À l’aide de l’attribut DebuggerDisplay | Microsoft Docs
+title: Utilisation de l’attribut DebuggerDisplay | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: aba6feb17a4e7bd4cabfe40bd45480a0f7a9f552
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65683935"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>Utilisation de l’attribut DebuggerDisplay
@@ -41,7 +41,7 @@ La <xref:System.Diagnostics.DebuggerDisplayAttribute> contrôle la façon dont u
   
  Le tableau suivant montre quelques-unes des utilisations possibles de l'attribut `DebuggerDisplay` et quelques exemples de sorties.  
   
-|Attribut|Sortie (affichée dans la colonne **Valeur** )|  
+|Attribut|Sortie figurant dans la colonne **valeur** )|  
 |---------------|------------------------------------------------|  
 |`[DebuggerDisplay("x = {x} y = {y}")]`<br /><br /> Utilisé sur un type avec champs `x` et `y`.|`x = 5 y = 18`|  
 |`[DebuggerDisplay("String value is {getString()}")]`La syntaxe des paramètres peut varier d'un langage à l'autre. Par conséquent, soyez vigilant dans son emploi.|`String value is [5, 6, 6]`|  
@@ -98,10 +98,10 @@ public sealed class MyClass
 ## <a name="example"></a>Exemple  
  L'exemple de code suivant explique l'utilisation de `DebuggerDisplay`, ainsi que de `DebuggerBrowseable` et `DebuggerTypeProxy`. Lorsqu'il s'affiche dans une fenêtre de variables du débogueur, comme la fenêtre **Espion** , il produit une expansion de ce genre :  
   
-|**Name**|**Valeur**|**Type**|  
+|**Nom**|**Valeur**|**Type**|  
 |--------------|---------------|--------------|  
-|Touche|"trois"|objet {string}|  
-|Value|3|objet {int}|  
+|Clé|"trois"|objet {string}|  
+|Valeur|3|objet {int}|  
   
 ```csharp  
 [DebuggerDisplay("{value}", Name = "{key}")]  
@@ -180,4 +180,4 @@ class MyHashtable
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [À l’aide de l’attribut DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md) [amélioration du débogage avec les attributs d’affichage de débogueur](https://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)
+ [Utilisation de l’attribut DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md) [amélioration du débogage avec les attributs d’affichage du débogueur](https://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)

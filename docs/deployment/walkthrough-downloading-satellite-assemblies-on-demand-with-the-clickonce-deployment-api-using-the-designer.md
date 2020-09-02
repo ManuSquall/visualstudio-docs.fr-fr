@@ -1,5 +1,5 @@
 ---
-title: Télécharger l’assembly satellite à la demande à l’aide du Concepteur de ClickOnce
+title: Télécharger l’assembly satellite à la demande à l’aide du concepteur ClickOnce
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -21,16 +21,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f510ef4ad81188997e1d572e7aa3b52b65883269
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66263415"
 ---
-# <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Procédure pas à pas : Télécharger des assemblys satellites à la demande avec l’API à l’aide du concepteur du déploiement ClickOnce
+# <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Procédure pas à pas : Télécharger des assemblys satellites à la demande avec l’API de déploiement ClickOnce à l’aide du concepteur
 Les applications Windows Forms peuvent être configurées pour plusieurs cultures à l’aide d’assemblys satellites. Un *assembly satellite* contient des ressources d’application pour une culture autre que la culture par défaut de l’application.
 
- Comme indiqué dans [localisation d’Applications ClickOnce](../deployment/localizing-clickonce-applications.md), vous pouvez inclure plusieurs assemblys satellites pour plusieurs cultures au sein du même [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement. Par défaut, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] télécharge tous les assemblys satellites de votre déploiement sur l’ordinateur client, même si un seul client n’a probablement besoin que d’un assembly satellite.
+ Comme indiqué dans la [localisation d’applications ClickOnce](../deployment/localizing-clickonce-applications.md), vous pouvez inclure plusieurs assemblys satellites pour plusieurs cultures au sein du même [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement. Par défaut, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] télécharge tous les assemblys satellites de votre déploiement sur l’ordinateur client, même si un seul client n’a probablement besoin que d’un assembly satellite.
 
  Cette procédure pas à pas explique comment marquer vos assemblys satellites comme facultatifs et télécharger uniquement l’assembly dont a besoin un ordinateur client pour ses paramètres de culture actuels.
 
@@ -47,15 +47,15 @@ Les applications Windows Forms peuvent être configurées pour plusieurs culture
 
 4. Cochez la case **Afficher tous les fichiers** pour afficher les assemblys satellites. Par défaut, tous les assemblys satellites sont inclus dans votre déploiement et sont visibles dans cette boîte de dialogue.
 
-     Le nom d’un assembly satellite se présente sous la forme *\<CodeISO\ApplicationName.resources.dll*, où \<CodeISO> est un identificateur de langue au format RFC 1766.
+     Un assembly satellite aura un nom sous la forme * \<isoCode>\ApplicationName.resources.dll*, où \<isoCode> est un identificateur de langue au format RFC 1766.
 
-5. Cliquez sur **Nouveau** dans la liste **Groupe de téléchargement** pour chaque identificateur de langue. Quand vous êtes invité à entrer un nom de groupe de téléchargement, indiquez l'identificateur de langue. Par exemple, pour un assembly satellite japonais, spécifiez le nom de groupe de téléchargement `ja-JP`.
+5. Cliquez sur **Nouveau** dans la liste **Groupe de téléchargement** pour chaque identificateur de langue. Quand vous êtes invité à entrer un nom de groupe de téléchargement, indiquez l'identificateur de langue. Par exemple, pour un assembly satellite japonais, vous devez spécifier le nom du groupe de téléchargement `ja-JP` .
 
 6. Fermez la boîte de dialogue **Fichiers d’application**.
 
 ### <a name="to-download-satellite-assemblies-on-demand-in-c"></a>Pour télécharger des assemblys satellites à la demande en C\#
 
-1. Ouvrez le fichier *Program.cs*. Si ce fichier ne s’affiche pas dans l’Explorateur de solutions, sélectionnez votre projet et, dans le menu **Projet**, cliquez sur **Afficher tous les fichiers**.
+1. Ouvrez le fichier *Program.cs* . Si ce fichier ne s’affiche pas dans l’Explorateur de solutions, sélectionnez votre projet et, dans le menu **Projet**, cliquez sur **Afficher tous les fichiers**.
 
 2. Utilisez le code suivant pour télécharger l'assembly satellite approprié et démarrer votre application.
 
@@ -67,7 +67,7 @@ Les applications Windows Forms peuvent être configurées pour plusieurs culture
 
 2. En bas de cette page, cliquez sur **Afficher les événements de l’application**.
 
-3. Ajoutez les importations suivantes au début du fichier *ApplicationEvents.VB*.
+3. Ajoutez les importations suivantes au début du fichier *ApplicationEvents. vb* .
 
      [!code-vb[ClickOnce.SatelliteAssembliesVB#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_2.vb)]
 
@@ -79,5 +79,5 @@ Les applications Windows Forms peuvent être configurées pour plusieurs culture
  Dans un environnement de production, vous aurez probablement besoin de supprimer la ligne dans les exemples de code qui définit <xref:System.Threading.Thread.CurrentUICulture%2A> avec une valeur spécifique, car les ordinateurs clients ont la valeur correcte définie par défaut. Quand votre application s’exécute sur un ordinateur client japonais, par exemple, <xref:System.Threading.Thread.CurrentUICulture%2A> aura la valeur `ja-JP` par défaut. La définition par programmation est un bon moyen de tester vos assemblys satellites avant de déployer votre application.
 
 ## <a name="see-also"></a>Voir aussi
-- [Procédure pas à pas : Télécharger des assemblys satellites à la demande avec l’API du déploiement ClickOnce](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)
+- [Procédure pas à pas : Télécharger des assemblys satellites à la demande avec l’API de déploiement ClickOnce](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)
 - [Localiser des applications ClickOnce](../deployment/localizing-clickonce-applications.md)

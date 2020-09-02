@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6edc8b246055dcd8efdb32f4118f81a535635d55
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65683832"
 ---
 # <a name="vbc-task"></a>Vbc, tâche
@@ -59,10 +59,10 @@ Encapsule vbc.exe, qui produit des fichiers exécutables (.exe), des bibliothèq
 |`NoConfig`|Paramètre `Boolean` facultatif.<br /><br /> Indique que le compilateur ne doit pas utiliser le fichier vbc.rsp. Ce paramètre correspond au commutateur [/noconfig](https://msdn.microsoft.com/library/a7405067-bd21-4171-adf4-a126fa3ad6c3) du compilateur vbc.exe.|  
 |`NoLogo`|Paramètre `Boolean` facultatif.<br /><br /> Si `true`, supprime l’affichage des informations de bannière du compilateur. Ce paramètre correspond au commutateur [/nologo](https://msdn.microsoft.com/library/25ef54b6-d676-4639-a2d2-a747a158bc07) du compilateur vbc.exe.|  
 |`NoStandardLib`|Paramètre `Boolean` facultatif.<br /><br /> Configure le compilateur pour ne pas référencer les bibliothèques standard. Ce paramètre correspond au commutateur [/nostdlib](https://msdn.microsoft.com/library/140381b8-dc96-4ad5-ae11-792c9ed0be4d) du compilateur vbc.exe.|  
-|`NoVBRuntimeReference`|Paramètre `Boolean` facultatif.<br /><br /> Usage interne uniquement. Si la valeur est true, empêche la référence automatique à Microsoft.VisualBasic.dll.|  
+|`NoVBRuntimeReference`|Paramètre `Boolean` facultatif.<br /><br /> À usage interne uniquement Si la valeur est true, empêche la référence automatique à Microsoft.VisualBasic.dll.|  
 |`NoWarnings`|Paramètre `Boolean` facultatif.<br /><br /> Si la valeur est `true`, la tâche supprime tous les avertissements. Pour plus d’informations, consultez [/nowarn](https://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83).|  
 |`Optimize`|Paramètre `Boolean` facultatif.<br /><br /> Si la valeur est `true`, active les optimisations du compilateur. Ce paramètre correspond au commutateur [/optimize](https://msdn.microsoft.com/library/fcba4a97-3622-4b87-a891-0f77deab4998) du compilateur vbc.exe.|  
-|`OptionCompare`|Paramètre `String` facultatif.<br /><br /> Spécifie la façon dont sont effectuées les comparaisons de chaînes. Ce paramètre peut avoir les valeurs suivantes :<br /><br /> -   `binary`<br />-   `text`<br /><br /> La valeur `binary` indique que la tâche utilise des comparaisons de chaînes binaires. La valeur `text` indique que la tâche utilise des comparaisons de chaînes de texte. La valeur par défaut de ce paramètre est `binary`. Ce paramètre correspond au commutateur [/optioncompare](https://msdn.microsoft.com/library/7237b766-b44d-4cc5-9a3c-885348a7d9e4) du compilateur vbc.exe.|  
+|`OptionCompare`|Paramètre `String` facultatif.<br /><br /> Spécifie la façon dont sont effectuées les comparaisons de chaînes. Ce paramètre peut avoir les valeurs suivantes :<br /><br /> -   `binary`<br />-   `text`<br /><br /> La valeur `binary` indique que la tâche utilise des comparaisons de chaînes binaires. La valeur `text` indique que la tâche utilise des comparaisons de chaînes de texte. La valeur par défaut de ce paramètre est `binary`. Ce paramètre correspond au commutateur [/optioncompare](https://msdn.microsoft.com/library/7237b766-b44d-4cc5-9a3c-885348a7d9e4) du compilateur vbc.exe.|  
 |`OptionExplicit`|Paramètre `Boolean` facultatif.<br /><br /> Si la valeur est `true`, les variables doivent être déclarées de manière explicite. Ce paramètre correspond au commutateur [/optionexplicit](https://msdn.microsoft.com/library/5d296ab3-bafe-4c4d-9887-78f162ed86c7) du compilateur vbc.exe.|  
 |`OptionInfer`|Paramètre `Boolean` facultatif.<br /><br /> Si la valeur est `true`, autorise l’inférence de type des variables.|  
 |`OptionStrict`|Paramètre `Boolean` facultatif.<br /><br /> Si la valeur est `true`, la tâche applique la sémantique de type stricte pour restreindre les conversions de types implicites. Ce paramètre correspond au commutateur [/optionstrict](https://msdn.microsoft.com/library/c7b10086-0fa4-49db-b3c8-4ae0db5957da) du compilateur vbc.exe.|  
@@ -90,7 +90,7 @@ Encapsule vbc.exe, qui produit des fichiers exécutables (.exe), des bibliothèq
 |`Win32Resources`|Paramètre `String` facultatif.<br /><br /> Insère un fichier de ressources Win32 (.res) dans le fichier de sortie. Ce paramètre correspond au commutateur [/win32resource](https://msdn.microsoft.com/library/e226946d-19ce-4cc9-91f5-aed24f77aa2b) du compilateur vbc.exe.|  
   
 ## <a name="remarks"></a>Notes  
- En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.ToolTask>. Pour obtenir la liste de ces paramètres supplémentaires et de leurs descriptions, consultez l’article [ToolTaskExtension Base Class (Classe de base ToolTaskExtension)](../msbuild/tooltaskextension-base-class.md).  
+ En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.ToolTaskExtension> , qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.ToolTask> . Pour obtenir la liste de ces paramètres supplémentaires et de leurs descriptions, consultez l’article [ToolTaskExtension Base Class (Classe de base ToolTaskExtension)](../msbuild/tooltaskextension-base-class.md).  
   
 ## <a name="example"></a>Exemple  
  L’exemple suivant compile un projet [!INCLUDE[vbprvb](../includes/vbprvb-md.md)].  
@@ -104,6 +104,6 @@ Encapsule vbc.exe, qui produit des fichiers exécutables (.exe), des bibliothèq
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Compilateur de ligne de commande de Visual Basic](https://msdn.microsoft.com/library/6b57c444-50c7-4b88-8f59-ed65cff5e05c)   
- [Tâches](../msbuild/msbuild-tasks.md)   
- [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)
+ [Visual Basic du compilateur de ligne de commande](https://msdn.microsoft.com/library/6b57c444-50c7-4b88-8f59-ed65cff5e05c)   
+ [Décrites](../msbuild/msbuild-tasks.md)   
+ [Référence de tâche](../msbuild/msbuild-task-reference.md)

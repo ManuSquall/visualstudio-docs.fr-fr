@@ -17,10 +17,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8dfa8314ffe8f174422519ba549d9949cc36b764
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65683014"
 ---
 # <a name="msbuild-reference"></a>Référence MSBuild
@@ -29,13 +29,13 @@ ms.locfileid: "65683014"
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] est le système de génération de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Les liens indiqués ci-dessous renvoient aux rubriques qui contiennent les informations de référence sur [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
 ## <a name="in-this-section"></a>Dans cette section  
- [Référence du schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)  
+ [Référence de schéma de fichier de projet](../msbuild/msbuild-project-file-schema-reference.md)  
  Décrit les éléments XML qui composent le format de fichier [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
- [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)  
+ [Référence de tâche](../msbuild/msbuild-task-reference.md)  
  Décrit quelques-unes des tâches standard qui sont incluses avec [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
- [Conditions MSBuild](../msbuild/msbuild-conditions.md)  
+ [Conditions](../msbuild/msbuild-conditions.md)  
  Décrit les conditions qui sont disponibles dans les fichiers [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
  [Constructions conditionnelles MSBuild](../msbuild/msbuild-conditional-constructs.md)  
@@ -50,7 +50,7 @@ ms.locfileid: "65683014"
  [Éléments communs des projets MSBuild](../msbuild/common-msbuild-project-items.md)  
  Décrit les éléments de projets qui sont communs à tous les types de projet, ainsi que les éléments qui sont souvent utilisés par des types de projet particuliers.  
   
- [Command-Line Reference (Informations de référence sur la ligne de commande MSBuild)](../msbuild/msbuild-command-line-reference.md)  
+ [Référence de ligne de commande](../msbuild/msbuild-command-line-reference.md)  
  Décrit les arguments et les commutateurs qui peuvent être utilisés avec [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].exe.  
   
  [Fichiers .Targets](../msbuild/msbuild-dot-targets-files.md)  
@@ -59,19 +59,19 @@ ms.locfileid: "65683014"
  [Métadonnées d’élément connues](../msbuild/msbuild-well-known-item-metadata.md)  
  Répertorie les métadonnées qui sont créées avec chaque élément.  
   
- [Fichiers réponse MSBuild](../msbuild/msbuild-response-files.md)  
+ [Fichiers réponse](../msbuild/msbuild-response-files.md)  
  Décrit les fichiers .rsp qui contiennent des commutateurs de ligne de commande.  
   
- [Ressources supplémentaires pour MSBuild](../msbuild/additional-resources-for-msbuild.md)  
+ [Ressources supplémentaires](../msbuild/additional-resources-for-msbuild.md)  
  Fournit des liens vers les sites web et groupes de discussion [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
  [Informations de référence sur MSBuild WPF](../msbuild/wpf-msbuild-reference.md)  
  Contient des informations de référence sur les cibles et les tâches [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] pour WPF (Windows Presentation Foundation).  
   
- [Caractères d’échappement spéciaux](../msbuild/special-characters-to-escape.md)  
+ [Caractères spéciaux à échapper](../msbuild/special-characters-to-escape.md)  
  Répertorie les caractères qui peuvent devoir être insérés dans une « séquence d’échappement » pour être interprétés correctement. Une séquence d’échappement est une série de caractères qui signifie que ce qui suit est une autre interprétation.  
   
-## <a name="related-sections"></a>Rubriques connexes  
+## <a name="related-sections"></a>Sections connexes  
  [Vue d’ensemble de MSBuild](https://msdn.microsoft.com/e39f13f7-1e1d-4435-95ca-0c222bca071c) Présente [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] et fournit des liens vers des rubriques qui expliquent comment l’utiliser pour générer des projets.  
   
  <xref:Microsoft.Build.Conversion>  

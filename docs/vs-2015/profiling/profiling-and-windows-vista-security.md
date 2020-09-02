@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d7e485bc6289634e1bb6d4b4106d54c8dc82096b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65683698"
 ---
 # <a name="profiling-and-windows-vista-security"></a>Profilage et sécurité Windows Vista
@@ -47,5 +47,5 @@ Selon les paramètres d’autorisation d’accès utilisateur de [!INCLUDE[wiprl
   
 ## <a name="see-also"></a>Voir aussi  
  [Vues d’ensemble](../profiling/overviews-performance-tools.md)   
- [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Guide pratique pour Attacher à un processus en cours d’exécution](https://msdn.microsoft.com/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4)
+ [Option](../profiling/vsperfcmd.md)   
+ [Guide pratique pour attacher un processus à un processus en cours d’exécution](https://msdn.microsoft.com/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4)

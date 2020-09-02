@@ -11,15 +11,15 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 2ed5d86599fa99b9c1360b414b37ef95ab59082d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79303028"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89313430"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
-C IntelliSense est disponible lors du codage dans l’éditeur, et tout en débogage dans la fenêtre de commande [en mode immédiat.](../ide/reference/immediate-window.md)
+C# IntelliSense est disponible lors du codage dans l’éditeur et lors du débogage dans la fenêtre de commande [mode immédiat](../ide/reference/immediate-window.md) .
 
 ## <a name="completion-lists"></a>Listes de saisie semi-automatique
 
@@ -35,15 +35,15 @@ Les listes de saisie semi-automatique IntelliSense en C# contiennent des jetons 
 
 - Méthodes d’extension
 
-La liste de saisie semi-automatique en C# est également assez intelligente pour filtrer les jetons inappropriés et présélectionner un jeton en fonction du contexte. Pour plus d’informations, voir [Listes d’achèvement filtré .](#filtered-completion-lists)
+La liste de saisie semi-automatique en C# est également assez intelligente pour filtrer les jetons inappropriés et présélectionner un jeton en fonction du contexte. Pour plus d’informations, consultez [listes de saisie semi-automatique filtrées](#filtered-completion-lists).
 
 ### <a name="code-snippets-in-completion-lists"></a>Extraits de code dans les listes de complétion
 
-En C#, la liste de saisie semi-automatique comprend des extraits de code pour vous aider à insérer facilement des entités prédéfinies de code dans votre programme. Dans la liste de saisie semi-automatique, les extraits de code sont affichés sous forme de [raccourci](../ide/code-snippets-schema-reference.md#shortcut-element) d’extrait de code. Pour plus d’informations sur les extraits de code qui sont disponibles en C par défaut, voir [extraits de code C .](../ide/visual-csharp-code-snippets.md)
+En C#, la liste de saisie semi-automatique comprend des extraits de code pour vous aider à insérer facilement des entités prédéfinies de code dans votre programme. Dans la liste de saisie semi-automatique, les extraits de code sont affichés sous forme de [raccourci](../ide/code-snippets-schema-reference.md#shortcut-element) d’extrait de code. Pour plus d’informations sur les extraits de code qui sont disponibles en C# par défaut, consultez [extraits de code c#](../ide/visual-csharp-code-snippets.md).
 
 ### <a name="language-keywords-in-completion-lists"></a>Mots clés du langage dans les listes de complétion
 
-En C#, la liste de saisie semi-automatique inclut également des mots clés de langage. Pour plus d’informations sur les mots clés en langue C, voir [les mots clés C .](/dotnet/csharp/language-reference/keywords/index)
+En C#, la liste de saisie semi-automatique inclut également des mots clés de langage. Pour plus d’informations sur les mots clés du langage C#, consultez [Mots clés c#](/dotnet/csharp/language-reference/keywords/index).
 
 ### <a name="extension-methods-in-completion-lists"></a>Méthodes d’extension dans les listes de complétion
 
@@ -62,9 +62,9 @@ IntelliSense supprime les membres inutiles de la liste de saisie semi-automatiqu
 
 - **Attributs** : quand vous appliquez un attribut à un type, la liste de saisie semi-automatique est filtrée afin de répertorier uniquement les types qui descendent des espaces de noms qui contiennent ces types, comme <xref:System.Attribute>.
 
-- **Clauses de capture**
+- **Clauses catch**
 
-- **Initialisateurs d’objets**: Seuls les membres qui peuvent être paralysés apparaîtront dans la liste d’achèvement.
+- **Initialiseurs d’objets**: seuls les membres qui peuvent être initialisés s’affichent dans la liste de saisie semi-automatique.
 
 - **Mot clé new** : quand vous tapez `new` puis que vous appuyez sur la **barre d’espace**, une liste de complétion apparaît. Un élément est sélectionné automatiquement dans la liste en fonction du contexte de votre code. Par exemple, des éléments sont automatiquement sélectionnés dans la liste de saisie semi-automatique pour les déclarations et pour les instructions return dans les méthodes.
 
@@ -74,11 +74,11 @@ IntelliSense supprime les membres inutiles de la liste de saisie semi-automatiqu
 
 - **Événements** : quand vous tapez le mot clé `event`, la liste de saisie semi-automatique contient uniquement des types délégués.
 
-- **L’aide paramètre** trie automatiquement la première surcharge de méthode qui correspond aux paramètres lorsque vous les entrez. Si plusieurs surcharges de méthode sont disponibles, vous pouvez utilisez les flèches haut et bas pour accéder à la surcharge suivante dans la liste.
+- L' **aide** sur les paramètres est automatiquement triée vers la première surcharge de méthode qui correspond aux paramètres à mesure que vous les entrez. Si plusieurs surcharges de méthode sont disponibles, vous pouvez utilisez les flèches haut et bas pour accéder à la surcharge suivante dans la liste.
 
 ### <a name="most-recently-used-members"></a>Membres utilisés récemment
 
-IntelliSense mémorise les membres que vous avez récemment sélectionnés dans la fenêtre contextuelle [Liste des membres](../ide/using-intellisense.md) pour la saisie semi-automatique du nom d’objet. La prochaine fois que vous utilisez **la liste des**membres , les membres les plus récemment utilisés sont affichés en haut. L’historique des membres utilisés récemment est effacé entre chaque session de Visual Studio.
+IntelliSense mémorise les membres que vous avez récemment sélectionnés dans la fenêtre contextuelle [Liste des membres](../ide/using-intellisense.md) pour la saisie semi-automatique du nom d’objet. La prochaine fois que vous utiliserez la **liste des membres**, les membres utilisés récemment seront affichés en haut. L’historique des membres utilisés récemment est effacé entre chaque session de Visual Studio.
 
 ### <a name="override"></a>override
 
@@ -94,7 +94,7 @@ Quand vous tapez [override](/dotnet/csharp/language-reference/keywords/override)
 
 L’opération IntelliSense **Ajouter using** ajoute automatiquement la directive `using` obligatoire dans votre fichier de code. Avec cette fonctionnalité, vous pouvez conserver le focus dans le code que vous écrivez au lieu de devoir le déplacer vers une autre partie du code.
 
-Pour initier **l’Add à l’aide de** l’opération, placez le curseur sur une référence type qui ne peut pas être résolue. Par exemple, quand vous créez une application console et que vous ajoutez ensuite `XmlReader` dans le corps de la méthode `Main`, une ligne ondulée rouge s’affiche sous cette ligne de code pour signaler que la référence de type ne peut pas être résolue. Vous pouvez ensuite appeler l’opération **Ajouter using** via **Actions rapides**. Les **Actions rapides** ne sont visibles que lorsque vous placez le curseur sur le type indépendant.
+Pour lancer l’opération **ajouter using** , positionnez le curseur sur une référence de type qui ne peut pas être résolue. Par exemple, quand vous créez une application console et que vous ajoutez ensuite `XmlReader` dans le corps de la méthode `Main`, une ligne ondulée rouge s’affiche sous cette ligne de code pour signaler que la référence de type ne peut pas être résolue. Vous pouvez ensuite appeler l’opération **Ajouter using** via **Actions rapides**. Les **Actions rapides** ne sont visibles que lorsque vous placez le curseur sur le type indépendant.
 
 ![Ajouter using, image développée de l’action rapide](../ide/media/addusing-quickaction.png)
 
@@ -106,15 +106,15 @@ L’option **Supprimer et trier les directives using** trie et supprime les déc
 
 ### <a name="implement-interface"></a>Implémenter une interface
 
-IntelliSense vous offre une option pour vous aider à implémenter une [interface](/dotnet/csharp/language-reference/keywords/interface) tout en travaillant dans l’éditeur de code. Normalement, pour implémenter correctement une interface, vous devez créer une déclaration de méthode pour chaque membre de l’interface dans votre classe. À l’aide d’IntelliSense, après avoir tapé le nom d’une interface dans une déclaration de classe, une ampoule **Quick Actions** s’affiche. Cette fonctionnalité vous permet d’implémenter l’interface automatiquement, à l’aide d’un nommage explicite ou implicite. Avec un nommage explicite, les déclarations de méthode indiquent le nom de l’interface. Avec un nommage implicite, les déclarations de méthode n’indiquent pas l’interface à laquelle elles appartiennent. Une méthode d'interface explicitement nommée est accessible uniquement via une instance d'interface et non via une instance de classe. Pour plus d’informations, voir [l’implémentation de l’interface explicite](/dotnet/csharp/programming-guide/interfaces/explicit-interface-implementation).
+IntelliSense fournit une option pour vous aider à implémenter une [interface](/dotnet/csharp/language-reference/keywords/interface) tout en travaillant dans l’éditeur de code. Normalement, pour implémenter correctement une interface, vous devez créer une déclaration de méthode pour chaque membre de l’interface dans votre classe. Grâce à IntelliSense, après avoir tapé le nom d’une interface dans une déclaration de classe, une ampoule **actions rapides** s’affiche. Cette fonctionnalité vous permet d’implémenter l’interface automatiquement, à l’aide d’un nommage explicite ou implicite. Avec un nommage explicite, les déclarations de méthode indiquent le nom de l’interface. Avec un nommage implicite, les déclarations de méthode n’indiquent pas l’interface à laquelle elles appartiennent. Une méthode d'interface explicitement nommée est accessible uniquement via une instance d'interface et non via une instance de classe. Pour plus d’informations, consultez [implémentation d’interface explicite](/dotnet/csharp/programming-guide/interfaces/explicit-interface-implementation).
 
 L’option Implémenter l’interface génère le nombre minimal de stubs de méthode nécessaires à l’interface. Si une classe de base implémente des parties de l’interface, ces stubs ne sont pas regénérés.
 
 ### <a name="implement-abstract-base-class"></a>Implémenter une classe de base abstraite
 
-IntelliSense fournit une option qui vous aidera à implémenter automatiquement les membres d’une classe de base abstraite pendant que vous travaillez dans l’éditeur de code. Normalement, pour implémenter les membres d'une classe de base abstraite, il est nécessaire de créer une nouvelle définition de méthode pour chaque méthode de la classe de base abstraite dans votre classe dérivée. À l’aide d’IntelliSense, après avoir tapé le nom d’une classe de base abstraite dans une déclaration de classe, une ampoule **Quick Actions** s’affiche. Cette fonctionnalité vous permet d’implémenter automatiquement les méthodes de la classe de base.
+IntelliSense fournit une option qui vous aidera à implémenter automatiquement les membres d’une classe de base abstraite pendant que vous travaillez dans l’éditeur de code. Normalement, pour implémenter les membres d'une classe de base abstraite, il est nécessaire de créer une nouvelle définition de méthode pour chaque méthode de la classe de base abstraite dans votre classe dérivée. À l’aide d’IntelliSense, après avoir tapé le nom d’une classe de base abstraite dans une déclaration de classe, une ampoule **actions rapides** s’affiche. Cette fonctionnalité vous permet d’implémenter automatiquement les méthodes de la classe de base.
 
-Les talons de méthode qui sont générés par la fonction **de classe de base abstraite d’implémentement** sont modélisé par l’extrait de code défini dans le fichier *MethodStub.snippet*. Les extraits de code sont modifiables. Pour plus d’informations, consultez [Procédure pas à pas : créer un extrait de code](../ide/walkthrough-creating-a-code-snippet.md).
+Les stubs de méthode générés par la fonctionnalité **implémenter une classe de base abstraite** sont modélisés par l’extrait de code défini dans le fichier *MethodStub. snippet*. Les extraits de code sont modifiables. Pour plus d’informations, consultez [Procédure pas à pas : créer un extrait de code](../ide/walkthrough-creating-a-code-snippet.md).
 
 ### <a name="generate-from-usage"></a>Générer à partir de l'utilisation
 
@@ -124,7 +124,7 @@ Une ligne ondulée rouge s’affiche sous chaque identificateur non défini. Qua
 
 - Cliquez sur l'identificateur non défini. Une ampoule d’erreur **Actions rapides** apparaît sous l’identificateur. Cliquez sur l’ampoule d’erreur.
 
-- Cliquez sur l’identifiant indéfini, puis appuyez sur **Ctrl**+**.** (période**de Ctrl).**
+- Cliquez sur l’identificateur non défini, puis appuyez sur **CTRL** + **.** (**CTRL** + point).
 
 - Cliquez avec le bouton droit sur l’identificateur non défini, puis cliquez sur **Actions rapides et refactorisations**.
 
@@ -134,7 +134,7 @@ Les options qui apparaissent peuvent inclure les éléments suivants :
 
 - **Générer le champ**
 
-- **Générer de la méthode**
+- **Générer la méthode**
 
 - **Générer la classe**
 
@@ -144,23 +144,23 @@ Les options qui apparaissent peuvent inclure les éléments suivants :
 
 Dans l’éditeur de code, IntelliSense peut vous aider à connecter des méthodes (gestionnaires d’événements) à des champs d’événement.
 
-Lorsque vous `+=` tapez l’opérateur après un champ d’événements dans un fichier *.cs,* IntelliSense vous invite à appuyer sur la clé **Tab.** Une nouvelle instance d'un délégué pointant vers la méthode qui gère l'événement est alors insérée.
+Quand vous tapez l' `+=` opérateur après un champ d’événement dans un fichier *. cs* , IntelliSense vous invite à appuyer sur la touche **Tab** . Une nouvelle instance d'un délégué pointant vers la méthode qui gère l'événement est alors insérée.
 
 ![Bouton de raccordement automatique](../ide/media/vxautohookup.gif)
 
-Si vous appuyez sur **Tab**, IntelliSense termine automatiquement la déclaration pour vous et affiche la référence de gestionnaire d’événement comme texte sélectionné dans l’éditeur de code. Pour compléter la connexion automatique à l’événement, IntelliSense vous invite à appuyer à nouveau sur la clé **Tab** pour créer un talon vide pour le gestionnaire de l’événement.
+Si vous appuyez sur la touche **Tab**, IntelliSense termine automatiquement l’instruction pour vous et affiche la référence du gestionnaire d’événements sous forme de texte sélectionné dans l’éditeur de code. Pour terminer l’accrochage automatique de l’événement, IntelliSense vous invite à appuyer de nouveau sur la touche **Tab** pour créer un stub vide pour le gestionnaire d’événements.
 
 ![Générer un gestionnaire d'événements](../ide/media/vxgenerateeventhandler.gif)
 
 > [!NOTE]
 > Si un nouveau délégué créé par IntelliSense fait référence à un gestionnaire d'événements existant, IntelliSense communique cette information dans l'info-bulle. Vous pouvez ensuite modifier cette référence ; le texte est déjà sélectionné dans l’éditeur de code. Sinon, la connexion d'événements automatique se termine à ce stade.
 
-Si vous appuyez sur **Tab**, IntelliSense talons une méthode avec la signature correcte et met le curseur dans le corps de votre gestionnaire d’événement.
+Si vous appuyez sur la touche **Tab**, IntelliSense choisit une méthode avec la signature appropriée et place le curseur dans le corps de votre gestionnaire d’événements.
 
 > [!NOTE]
-> Utilisez la commande **Navigate Backward** sur le menu **View** (**Ctrl**+**-**) pour revenir à l’énoncé de connexion à l’événement.
+> Utilisez la commande naviguer vers l' **arrière** du menu **affichage** (**CTRL** + **-** ) pour revenir à l’instruction de raccordement de l’événement.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Utiliser IntelliSense](../ide/using-intellisense.md)
+- [Utilisez IntelliSense](../ide/using-intellisense.md)
 - [IDE Visual Studio](../get-started/visual-studio-ide.md)

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b5300af2bc011cb6ae5255d2d55aa425ca9f1925
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86875915"
 ---
 # <a name="primitives-activity-designers"></a>Concepteurs d'activités primitives
@@ -20,7 +20,7 @@ ms.locfileid: "86875915"
 Les concepteurs d'activités primitives sont utilisés pour créer et configurer différentes activités dans l'espace de noms <xref:System.Activities.Statements> telles qu'Assign et Delay. Les rubriques contenues dans cette section fournissent des conseils sur l’utilisation de la Concepteur de flux de travail les concepteurs d’activités et de modèles.
 
 ## <a name="related-sections"></a>Sections connexes
- [Workflow de contrôle](../workflow-designer/control-flow-activity-designers.md)
+ [Flux de contrôle](../workflow-designer/control-flow-activity-designers.md)
 
  [Organigramme](../workflow-designer/flowchart-activity-designers.md)
 

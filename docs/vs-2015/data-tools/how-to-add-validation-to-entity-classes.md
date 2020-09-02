@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a68b0314f3c64ce9196b8d48a78844bc81990a92
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665991"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Guide pratique pour ajouter une validation à des classes d’entité
@@ -33,7 +33,7 @@ La *validation* de classes d’entité est le processus qui consiste à valider 
 
 #### <a name="to-validate-data-during-a-columns-value-change"></a>Pour valider des données pendant la modification de valeur d'une colonne
 
-1. Ouvrez ou créez un nouveau fichier de classes LINQ to SQL (fichier **. dbml** ) dans le [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Double-cliquez sur le fichier **.dbml** dans l’**Explorateur de solutions**.)
+1. Ouvrez ou créez un fichier de classes LINQ to SQL (fichier **. dbml** ) dans le [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] . (Double-cliquez sur le fichier **.dbml** dans l’**Explorateur de solutions**.)
 
 2. Dans le Concepteur O/R, cliquez avec le bouton droit sur la classe pour laquelle vous souhaitez ajouter une validation, puis cliquez sur **afficher le code**.
 
@@ -47,7 +47,7 @@ La *validation* de classes d’entité est le processus qui consiste à valider 
 
    2. Localisez la méthode **on**_ColumnName_**Changing** pour la colonne à laquelle vous souhaitez ajouter la validation.
 
-   3. Une méthode `On`*COLUMNNAME* `Changing` est ajoutée à la classe partielle.
+   3. Une `On` méthode *ColumnName* `Changing` est ajoutée à la classe partielle.
 
    4. Ajoutez le code suivant pour vérifier tout d'abord qu'une valeur a bien été entrée, puis pour garantir que la valeur entrée dans la colonne est acceptable dans votre application. L'argument `value` contient la valeur proposée. Vous devez donc ajouter la logique pour confirmer qu'il s'agit d'une valeur valide :
 
@@ -82,9 +82,9 @@ La *validation* de classes d’entité est le processus qui consiste à valider 
 
 #### <a name="to-validate-data-during-an-update-to-an-entity-class"></a>Pour valider des données pendant une mise à jour de classe d'entité
 
-1. Ouvrez ou créez un nouveau fichier de classes LINQ to SQL (fichier **. dbml** ) dans le [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Double-cliquez sur le fichier **.dbml** dans l’**Explorateur de solutions**.)
+1. Ouvrez ou créez un fichier de classes LINQ to SQL (fichier **. dbml** ) dans le [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] . (Double-cliquez sur le fichier **.dbml** dans l’**Explorateur de solutions**.)
 
-2. Cliquez avec le bouton droit sur une zone vide du Concepteur O/R, puis cliquez sur **afficher le code**.
+2. Cliquez avec le bouton droit sur une zone vide du Concepteur O/R et cliquez sur **Afficher le code**.
 
     Une classe partielle pour le `DataContext` s'ouvre dans l'éditeur de code.
 
@@ -96,7 +96,7 @@ La *validation* de classes d’entité est le processus qui consiste à valider 
 
    2. Cliquez sur **mettre à jour**_ENTITYCLASSNAME_.
 
-   3. Une méthode `Update`*ENTITYCLASSNAME* est ajoutée à la classe partielle.
+   3. Une `Update` méthode *ENTITYCLASSNAME* est ajoutée à la classe partielle.
 
    4. Accédez aux valeurs des colonnes individuelles à l’aide de l’argument `instance`, comme illustré par le code suivant :
 
@@ -109,9 +109,9 @@ La *validation* de classes d’entité est le processus qui consiste à valider 
 
       Pour les projets C# :
 
-   5. Étant C# donné que les projets ne génèrent pas automatiquement les gestionnaires d’événements, vous pouvez utiliser IntelliSense pour créer la méthode `Update`*className* partielle.
+   5. Étant donné que les projets C# ne génèrent pas automatiquement les gestionnaires d’événements, vous pouvez utiliser IntelliSense pour créer la méthode partielle `Update` *className* .
 
-   6. Tapez `partial`, puis un espace pour accéder à la liste de méthodes partielles disponibles. Cliquez sur la méthode de mise à jour pour la classe concernée. Le code suivant ressemble au code généré lorsque vous sélectionnez une méthode partielle `Update`*className* :
+   6. Tapez `partial`, puis un espace pour accéder à la liste de méthodes partielles disponibles. Cliquez sur la méthode de mise à jour pour la classe concernée. Le code suivant ressemble au code généré lorsque vous sélectionnez une `Update` méthode partielle *className* :
 
       ```csharp
       partial void UpdateCLASSNAME(CLASSNAME instance)

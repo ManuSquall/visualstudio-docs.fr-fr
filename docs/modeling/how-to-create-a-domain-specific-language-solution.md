@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 844f3eb97ed9e07aa8125688d2bfe8944249b008
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541789"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Comment : créer une solution de langage spécifique à un domaine
@@ -65,7 +65,7 @@ Avant de commencer cette procédure, installez les composants suivants :
    > [!NOTE]
    > Si un message s’affiche pour vous avertir que vous n’exécutez pas de modèles de texte provenant de sources non approuvées, cliquez sur **OK**. Vous pouvez définir ce message pour qu’il ne s’affiche plus.
 
-## <a name="the-dsl-designer-wizard-pages"></a><a name="settings"></a>Pages de l’Assistant Concepteur DSL
+## <a name="the-dsl-designer-wizard-pages"></a><a name="settings"></a> Pages de l’Assistant Concepteur DSL
  Vous pouvez ne pas modifier les valeurs par défaut de plusieurs champs. Toutefois, veillez à définir le champ extension de fichier.
 
 ### <a name="solution-settings-page"></a>Page Paramètres de la solution

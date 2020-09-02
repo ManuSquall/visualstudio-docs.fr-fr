@@ -1,5 +1,5 @@
 ---
-title: Fonction SccDirQueryInfo (fr) Microsoft Docs
+title: SccDirQueryInfo fonction) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 222b5d15a1e2bcd9bd3f27a5cd0e9904642d9786
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80700951"
 ---
-# <a name="sccdirqueryinfo-function"></a>Fonction SccDirQueryInfo
-Cette fonction examine une liste d’annuaires entièrement qualifiés pour leur statut actuel.
+# <a name="sccdirqueryinfo-function"></a>SccDirQueryInfo fonction)
+Cette fonction examine une liste de répertoires complets pour leur état actuel.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -36,38 +36,38 @@ LPLONG  lpStatus
 ### <a name="parameters"></a>Paramètres
  pContext
 
-[dans] La structure de contexte de plug-in de contrôle de source.
+dans Structure de contexte du plug-in de contrôle de code source.
 
- nDirs (nDirs)
+ nDirs
 
-[dans] Le nombre d’annuaires sélectionnés pour être interrogés.
+dans Nombre de répertoires sélectionnés à interroger.
 
- lpDirNames (en)
+ lpDirNames
 
-[dans] Un éventail de chemins entièrement qualifiés des répertoires à interroger.
+dans Tableau de chemins d’accès qualifiés complets des répertoires à interroger.
 
  lpStatus
 
-[dans, dehors] Une structure de tableau pour le plug-in de contrôle source pour retourner les drapeaux d’état (voir [code d’état d’annuaire](../extensibility/directory-status-code-enumerator.md) pour plus de détails).
+[in, out] Structure de tableau pour que le plug-in de contrôle de code source retourne les indicateurs d’État (pour plus d’informations, consultez le [code d’État du répertoire](../extensibility/directory-status-code-enumerator.md) ).
 
 ## <a name="return-value"></a>Valeur retournée
- La mise en œuvre plug-in de cette fonction de contrôle source devrait renvoyer l’une des valeurs suivantes :
+ L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
 |Valeur|Description|
 |-----------|-----------------|
-|SCC_OK|La requête a été couronnée de succès.|
-|SCC_E_OPNOTSUPPORTED|Le système de contrôle du code source ne prend pas en charge cette opération.|
-|SCC_E_ACCESSFAILURE|Il y avait un problème d’accès au système de contrôle à la source, probablement en raison de problèmes de réseau ou de contention. Une nouvelle tentative est recommandée.|
-|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Défaillance non spécifique.|
+|SCC_OK|La requête a réussi.|
+|SCC_E_OPNOTSUPPORTED|Le système de contrôle de code source ne prend pas en charge cette opération.|
+|SCC_E_ACCESSFAILURE|Un problème est survenu lors de l’accès au système de contrôle de code source, probablement en raison de problèmes de réseau ou de contention. Une nouvelle tentative est recommandée.|
+|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Échec non spécifique.|
 
 ## <a name="remarks"></a>Notes
- La fonction remplit le tableau de retour avec un `SCC_DIRSTATUS` peu de bits de la famille (voir [code de statut répertoire](../extensibility/directory-status-code-enumerator.md)), une entrée pour chaque répertoire donné. Le tableau d’état est attribué par l’appelant.
+ La fonction remplit le tableau de retour avec un masque de bits de la `SCC_DIRSTATUS` famille (voir [code d’État du répertoire](../extensibility/directory-status-code-enumerator.md)), une entrée pour chaque répertoire donné. Le tableau d’État est alloué par l’appelant.
 
- L’IDE utilise cette fonction avant qu’un répertoire ne soit renommé pour vérifier si l’annuaire est sous contrôle source en se demandait s’il a un projet correspondant. Si l’annuaire n’est pas sous contrôle source, l’IDE peut fournir l’avertissement approprié à l’utilisateur.
+ L’IDE utilise cette fonction avant qu’un répertoire ne soit renommé afin de vérifier si le répertoire est sous contrôle de code source en interrogeant s’il possède un projet correspondant. Si le répertoire n’est pas sous contrôle de code source, l’IDE peut fournir l’avertissement approprié à l’utilisateur.
 
 > [!NOTE]
-> Si un plug-in de contrôle source choisit de ne pas implémenter une ou plusieurs valeurs de statut, les bits non mis en œuvre doivent être réglés à zéro.
+> Si un plug-in de contrôle de code source choisit de ne pas implémenter une ou plusieurs des valeurs d’État, les bits non implémentés doivent avoir la valeur zéro.
 
 ## <a name="see-also"></a>Voir aussi
-- [Fonctions d’API plug-in de contrôle des sources](../extensibility/source-control-plug-in-api-functions.md)
-- [Code d’état de l’annuaire](../extensibility/directory-status-code-enumerator.md)
+- [Fonctions de l’API du plug-in de contrôle de code source](../extensibility/source-control-plug-in-api-functions.md)
+- [Code d’État du répertoire](../extensibility/directory-status-code-enumerator.md)

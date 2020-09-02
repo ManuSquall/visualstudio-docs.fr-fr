@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 369c5b75780e9d557dedbde60b5b584c8b3345b3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65705835"
 ---
 # <a name="adding-tier-interaction-data-from-the-command-line"></a>Ajout des données d’interaction de couche à partir de la ligne de commande
@@ -24,17 +24,17 @@ ms.locfileid: "65705835"
 
 Le profilage d’interaction de couche fournit des informations supplémentaires sur les temps d’exécution des appels [!INCLUDE[vstecado](../includes/vstecado-md.md)] synchrones, contenus dans les fonctions d’applications multicouches qui communiquent avec une ou plusieurs bases de données.  
   
- **Windows 8 et Windows Server 2012**  
+ **Windows 8 et Windows Server 2012**  
   
  Pour collecter des données d’interaction de couche à partir d’applications de bureau Windows 8 ou d’applications Windows Server 2012, vous devez utiliser la méthode d’instrumentation. La collecte de données d’interaction de couche à partir des applications Windows Store n’est pas prise en charge.  
   
  **Éditions Visual Studio**  
   
- Les données de profilage d’interaction de couche peuvent être collectées en utilisant [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] ou [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)]. Cependant, ces données ne peuvent être affichées que dans [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] et [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
+ Les données de profilage d’interaction de couche peuvent être collectées en utilisant [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] ou [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)]. Cependant, les données de profilage d’interaction de couche ne peuvent être affichées que dans [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] et [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
   
- **Collecte de données TIP sur un ordinateur distant**  
+ **Collecte de données TiP sur un ordinateur distant**  
   
- Pour collecter des données d’interaction entre niveaux sur un ordinateur distant, vous devez copier le fichier **vs\_profiler\_**_\<Plateforme>_**\_**_\<Langage>_**.exe** depuis le dossier _%VSInstallDir%_**\Team Tools\Performance Tools\Setups** d’un ordinateur Visual Studio vers l’ordinateur distant, puis lancer l’installation. Vous ne pouvez pas utiliser les outils de profilage contenus dans le package de téléchargement [Outils de contrôle à distance de Visual Studio](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) .  
+ Pour collecter les données d’interaction de couche sur un ordinateur distant, vous devez copier le fichier **vs \_ Profiler \_ ** _\<Platform>_ **\_** _\<Language>_ **. exe** du dossier _% VSInstallDir%_**\Team Tools\Performance Tools\Setups** d’un ordinateur Visual Studio sur l’ordinateur distant et l’installer. Vous ne pouvez pas utiliser les outils de profilage contenus dans le package de téléchargement [Outils de contrôle à distance de Visual Studio](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) .  
   
  **Rapports TIP**  
   
@@ -138,11 +138,11 @@ Le profilage d’interaction de couche fournit des informations supplémentaires
   
 13. Redémarrez l’ordinateur pour enregistrer la suppression des variables d’environnement.  
   
-    Pour plus d'informations, consultez l'une des rubriques suivantes :  
+    Pour plus d’informations, consultez l’une des rubriques suivantes :  
   
-    [Profilage d’applications web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)  
+    [Profilage d'applications Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)  
   
-    [Profilage de services](../profiling/command-line-profiling-of-services.md)  
+    [Profilage des services](../profiling/command-line-profiling-of-services.md)  
   
 ## <a name="adding-tier-interaction-data-with-vsperfaspnetcmd"></a>Ajout de données d’interaction de couche avec VSPerfASPNETCmd  
  L’outil en ligne de commande VSPerfASPNETCmd vous permet de profiler facilement des applications web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Par rapport à l’outil en ligne de commande **VSPerfCmd**, cet outil comporte moins d’options et ne nécessite ni configuration de variables d’environnement, ni redémarrage de l’ordinateur. Ces fonctionnalités de VSPerfASPNETCmd facilitent grandement la collecte de données d’interaction de couche.  
@@ -153,4 +153,4 @@ Le profilage d’interaction de couche fournit des informations supplémentaires
 vsperfaspnetcmd /tip /trace http://localhost/MyWebApp  
 ```  
   
- Pour plus d’informations sur VSPerfASPNETCmd, consultez [Profilage de site web rapide avec VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).
+ Pour plus d’informations sur VSPerfASPNETCmd, consultez [profilage de site Web rapide avec VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).

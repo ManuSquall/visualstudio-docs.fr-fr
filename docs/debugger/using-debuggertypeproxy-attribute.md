@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b98481cb1727ecad9289f63136291d500c0d577e
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85347961"
 ---
 # <a name="tell-the-debugger-what-type-to-show-using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>Indiquer au débogueur le type à afficher à l’aide de l’attribut DebuggerTypeProxy (C#, Visual Basic, C++/CLI)
@@ -43,7 +43,7 @@ Pour éviter de trop handicaper les performances, l’évaluateur d’expression
 
 Il sera judicieux de faire du proxy de type une classe privée imbriquée dans la classe ciblée par l'attribut. Cela lui permettra d'accéder facilement aux membres internes.
 
-<xref:System.Diagnostics.DebuggerTypeProxyAttribute>peut être héritée, de sorte que si un proxy de type est spécifié sur une classe de base, il s’applique à toutes les classes dérivées, sauf si ces classes dérivées spécifient leur propre proxy de type.
+<xref:System.Diagnostics.DebuggerTypeProxyAttribute> peut être héritée, de sorte que si un proxy de type est spécifié sur une classe de base, il s’applique à toutes les classes dérivées, sauf si ces classes dérivées spécifient leur propre proxy de type.
 
 Si <xref:System.Diagnostics.DebuggerTypeProxyAttribute> est utilisé au niveau de l'assembly, le paramètre `Target` spécifie le type que le proxy remplacera.
 

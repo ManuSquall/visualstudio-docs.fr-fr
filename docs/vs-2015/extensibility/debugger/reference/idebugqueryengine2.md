@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7274d621e47c9c705cc0ce6bc4ad49f24e144f59
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65683280"
 ---
 # <a name="idebugqueryengine2"></a>IDebugQueryEngine2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Cette interface permet à la session de débogage manager (SDM) extraire une interface qui représente le moteur de débogage (dé).  
+Cette interface permet au gestionnaire de débogage de session (SDM) de récupérer une interface qui représente le moteur DE débogage (DE).  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -30,28 +30,28 @@ Cette interface permet à la session de débogage manager (SDM) extraire une int
 IDebugQueryEngine2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs  
- Le D’implémente cette interface sur les objets qui implémentent les interfaces DE courants (tels que [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md), [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md), et [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)) dans afin d’autoriser l’accès à la [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) interface de la DE lui-même.  
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
+ Le DE implémente cette interface sur les objets qui implémentent les interfaces DE la plus courante (telles que [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md), [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)et [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)) afin d’autoriser l’accès à l’interface [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) de la classe.  
   
-## <a name="notes-for-callers"></a>Notes de publication pour les appelants  
- Appelez [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) sur une interface DE type pour obtenir cette interface.  
+## <a name="notes-for-callers"></a>Notes pour les appelants  
+ Appelez [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) sur une interface de type standard pour obtenir cette interface.  
   
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
- Le tableau suivant présente les méthodes de `IDebugQueryEngine2`.  
+ Le tableau suivant présente les méthodes de `IDebugQueryEngine2` .  
   
 |Méthode|Description|  
 |------------|-----------------|  
-|[GetEngineInterface](../../../extensibility/debugger/reference/idebugqueryengine2-getengineinterface.md)|Obtient une interface de (dé) de moteur de débogage personnalisé.|  
+|[GetEngineInterface](../../../extensibility/debugger/reference/idebugqueryengine2-getengineinterface.md)|Obtient une interface DE moteur DE débogage personnalisé (DE).|  
   
 ## <a name="remarks"></a>Notes  
- Cette interface est généralement implémentée dans l’objet qui implémente le [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interface pour prendre en charge de la causalité ordonné parcourant des fonctions ; autrement dit, lorsque le débogueur est sortir pas à une fonction, le Pour exécuter la fonction Next peut-être pas la fonction précédente sur la pile, mais une fonction dans un autre thread complètement. Pour une définition de « causalité », consultez la [glossaire du débogueur Visual Studio](../../../extensibility/debugger/reference/visual-studio-debugger-glossary.md).  
+ Cette interface est généralement implémentée dans l’objet qui implémente l’interface [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) afin de prendre en charge l’exécution pas à pas de la causalité dans les fonctions ; autrement dit, lorsque le débogueur effectue un pas à pas sortant d’une fonction, la fonction suivante à exécuter peut ne pas être la fonction précédente sur la pile, mais une fonction dans un autre thread. Pour une définition de « causalité », consultez le [Glossaire du débogueur Visual Studio](../../../extensibility/debugger/reference/visual-studio-debugger-glossary.md).  
   
 ## <a name="requirements"></a>Configuration requise  
- En-tête : msdbg.h  
+ En-tête : msdbg. h  
   
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft. VisualStudio. Debugger. Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interfaces principales](../../../extensibility/debugger/reference/core-interfaces.md)   

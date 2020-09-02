@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 75fb1da392bce7dbd0cd7849d83b3b452521e0c7
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86875928"
 ---
 # <a name="transactedreceivescope-activity-designer"></a>Concepteur d'activités TransactedReceiveScope
@@ -37,15 +37,15 @@ Le tableau suivant présente les propriétés de <xref:System.ServiceModel.Activ
 
 |Nom de la propriété|Obligatoire|Usage|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Nom convivial facultatif de l'activité <xref:System.ServiceModel.Activities.TransactedReceiveScope>. La valeur par défaut est TransactedReceiveScope.<br /><br /> Bien que le nom de la propriété <xref:System.Activities.Activity.DisplayName%2A> ne soit pas strictement obligatoire, la meilleure pratique consiste à l'utiliser.|
-|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A>|True|Supprime une <xref:System.ServiceModel.Activities.Receive> activité dans le bloc de **requête** sur l’aire du concepteur d’activités.|
-|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A>|False|Dépose un <xref:System.Activities.Activity> dans le bloc de **corps** sur l’aire du concepteur d’activités.|
+|<xref:System.Activities.Activity.DisplayName%2A>|Faux|Nom convivial facultatif de l'activité <xref:System.ServiceModel.Activities.TransactedReceiveScope>. La valeur par défaut est TransactedReceiveScope.<br /><br /> Bien que le nom de la propriété <xref:System.Activities.Activity.DisplayName%2A> ne soit pas strictement obligatoire, la meilleure pratique consiste à l'utiliser.|
+|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A>|Vrai|Supprime une <xref:System.ServiceModel.Activities.Receive> activité dans le bloc de **requête** sur l’aire du concepteur d’activités.|
+|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A>|Faux|Dépose un <xref:System.Activities.Activity> dans le bloc de **corps** sur l’aire du concepteur d’activités.|
 
 ## <a name="see-also"></a>Voir aussi
 
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)
-- [Recevoir](../workflow-designer/receive-activity-designer.md)
+- [Çoive](../workflow-designer/receive-activity-designer.md)
 - [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)
 - [Envoyer](../workflow-designer/send-activity-designer.md)
 - [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)

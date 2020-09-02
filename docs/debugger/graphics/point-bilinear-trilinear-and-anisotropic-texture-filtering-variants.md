@@ -1,5 +1,5 @@
 ---
-title: Variantes de filtre de point/bilinéaire/trilinéaire/ANISOTROPIQUE
+title: Variantes de filtre de texture point/bilinéaire/trilinéaire/anisotrope
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 57d14fc9-b5f7-45ee-9717-48086886742d
@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 314ec61da7ed61cc8bdd573e201d98a53862a32c
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66262931"
 ---
 # <a name="point-bilinear-trilinear-and-anisotropic-texture-filtering-variants"></a>Variantes de filtrage de texture ponctuelle, bilinéaire, trilinéaire et anisotropique
@@ -58,7 +58,7 @@ Substitue le mode de filtrage sur les échantillonneurs de texture appropriés.
 
   Dans la variante **Filtrage de texture anisotropique**, le mode de filtrage fourni par l’application est remplacé par `D3D11_FILTER_ANISOTROPIC`, et le paramètre d’anisotropie maximale est défini sur 16.
 
-## <a name="restrictions-and-limitations"></a>Restrictions et limitations
+## <a name="restrictions-and-limitations"></a>Limitations et restrictions
  Dans Direct3D, le niveau de fonctionnalité 9.1 spécifie une anisotropie maximale de 2x. Étant donné que la variante **Filtrage de texture anisotropique** essaie d’utiliser exclusivement l’anisotropie 16x, la lecture échoue quand l’analyse des frames est exécutée sur un appareil ayant un niveau de fonctionnalité 9.1. Les appareils actuels concernés par cette limitation sont notamment les tablettes Surface RT et Surface 2 ARM. Cette limitation peut aussi toucher les GPU plus anciens qui peuvent encore équiper certains ordinateurs, mais ceux-ci étant considérés comme obsolètes, ils sont de moins en moins répandus.
 
 ## <a name="example"></a>Exemple

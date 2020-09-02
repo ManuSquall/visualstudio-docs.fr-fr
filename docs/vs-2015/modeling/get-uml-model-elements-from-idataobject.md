@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 66b4ffc312af89aa5852a1f4dad62fd328176df3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666074"
 ---
 # <a name="get-uml-model-elements-from-idataobject"></a>Obtenir des éléments de modèle UML à partir de l'interface IDataObject
@@ -27,13 +27,13 @@ Quand l'utilisateur fait glisser des éléments à partir d'une source quelconqu
 > La plupart des opérations que vous devez effectuer sur les modèles UML peuvent être effectuées à l’aide des types définis dans les assemblys **Microsoft. VisualStudio. Uml. interfaces** et **Microsoft. VisualStudio. ArchitectureTools. Extensibility**. Pour cela, vous devez utiliser des classes qui font partie de l'implémentation des outils de modélisation UML. Par exemple, `ShapeElement` dans ce fragment n'est pas identique à `IShape` en langage UML. Pour réduire le risque de mettre le modèle et les diagrammes UML dans un état incohérent, il est préférable d'éviter d'utiliser les méthodes sur ces classes d'implémentation, sauf s'il n'existe aucune alternative.
 
 ## <a name="code-sample"></a>Exemple de code
- Votre projet doit référencer les assemblys [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] suivants :
+ Votre projet doit référencer les [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] assemblys suivants :
 
- **Microsoft. VisualStudio. Modeling. Sdk. version**
+ **Microsoft.VisualStudio.Modeling.Sdk.[version]**
 
- **Microsoft. VisualStudio. Modeling. Sdk. Diagrams. version**
+ **Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]**
 
- **System. Windows. Forms**
+ **System.Windows.Forms**
 
 ```
 using Microsoft.VisualStudio.Modeling;
@@ -78,7 +78,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
     }
 ```
 
- Pour plus d’informations sur les `ElementGroupPrototype` et le `Store` dans lequel les outils de modélisation UML sont implémentés, consultez [Modeling SDK for Visual Studio-Domain-Specific Languages (en anglais)](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md).
+ Pour plus d’informations sur `ElementGroupPrototype` et le `Store` dans lequel les outils de modélisation UML sont implémentés, consultez [Modeling SDK for Visual Studio-specific Language-Specific Languages (en anglais)](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md).
 
 ## <a name="see-also"></a>Voir aussi
  [Programmation à l’aide de l’API UML](../modeling/programming-with-the-uml-api.md) [définition d’une commande de menu sur un diagramme de modélisation](../modeling/define-a-menu-command-on-a-modeling-diagram.md)

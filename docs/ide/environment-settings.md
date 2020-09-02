@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 780f9e6cdd3a2b30a8cc5ce31b0c8cc61a6d5e55
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79301880"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89313027"
 ---
 # <a name="environment-settings-for-visual-studio"></a>Paramètres d’environnement pour Visual Studio
 
@@ -23,7 +23,7 @@ Les collections de paramètres suivants sont disponibles :
 - Général
 - JavaScript
 - Visual Basic
-- Visual C# 
+- Visual C#
 - Visual C++
 - Développement web
 - Développement web (code uniquement)
@@ -32,7 +32,7 @@ Les collections de paramètres suivants sont disponibles :
 
 Pour changer vos paramètres de développement après avoir ouvert Visual Studio pour la première fois, procédez comme suit :
 
-1. Sélectionnez **Outils** > **Importation et Paramètres d’exportation** de la barre de menu pour ouvrir **l’assistant d’importation et d’exportation .**
+1. Sélectionnez **Outils**  >  **Importer et exporter des paramètres** dans la barre de menus pour ouvrir l' **Assistant importation et exportation de paramètres**.
 
 1. Dans l’Assistant **Importation et exportation de paramètres**, sélectionnez **Réinitialiser tous les paramètres**, puis **Suivant**.
 

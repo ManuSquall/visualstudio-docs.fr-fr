@@ -10,16 +10,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 97c45b4fc780330e0ac2b8396601e0e181ff4112
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65683678"
 ---
 # <a name="profiling-aspnet-load-tests"></a>Profilage des tests de charge ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous pouvez collecter les données de profilage à partir de tests web [!INCLUDE[TCMext](../includes/tcmext-md.md)] automatisés que vous exécutez sur les projets de sites web ASP.NET. Vous pouvez collecter des données d’échantillonnage et d’interaction de couche. Pour plus d’informations, consultez les rubriques suivantes :
+Vous pouvez collecter les données de profilage à partir de tests web [!INCLUDE[TCMext](../includes/tcmext-md.md)] automatisés que vous exécutez sur les projets de sites web ASP.NET. Vous pouvez collecter des données d’échantillonnage et d’interaction de couche. Pour plus d'informations, voir les rubriques suivantes :
 
  [Guide pratique pour exécuter une session de performance sur une application web depuis l’éditeur de test de performances web](/previous-versions/ff356203(v=vs.100))
 
@@ -29,7 +29,7 @@ Vous pouvez collecter les données de profilage à partir de tests web [!INCLUDE
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Présentation des valeurs de données d’échantillonnage](../profiling/understanding-sampling-data-values.md)
-- [Utilisation des règles de performances pour analyser des données](../profiling/using-performance-rules-to-analyze-data.md)
+- [Fonctionnement des valeurs de données d’échantillonnage](../profiling/understanding-sampling-data-values.md)
+- [Utilisation des règles de performance pour analyser des données](../profiling/using-performance-rules-to-analyze-data.md)
 - [Vues de données de la méthode d’échantillonnage](../profiling/profiler-sampling-method-data-views.md)
-- [Interactions de couche, vue](../profiling/tier-interactions-view.md)
+- [Interactions de couche (vue)](../profiling/tier-interactions-view.md)

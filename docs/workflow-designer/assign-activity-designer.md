@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 83a01c96b64dcd55adfd775efc266063efbab27d
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86875941"
 ---
 # <a name="assign-activity-designer"></a>Concepteur d'activités Assign
@@ -37,9 +37,9 @@ Le tableau suivant présente les propriétés de <xref:System.Activities.Stateme
 
 |Nom de la propriété|Obligatoire|Usage|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Nom convivial de l'activité <xref:System.Activities.Statements.Assign>. La valeur par défaut est Assign. Bien que la valeur de la propriété <xref:System.Activities.Activity.DisplayName%2A> ne soit pas strictement obligatoire, il est recommandé d'en utiliser une.|
-|<xref:System.Activities.Statements.Assign.To%2A>|True|Variable ou argument auquel la propriété <xref:System.Activities.Statements.Assign.Value%2A> est affectée. La valeur doit être un identificateur de Visual Basic valide. Pour définir la propriété, tapez une expression Visual Basic dans la zone à dans le concepteur **d'** activités **Assign** ou dans la grille des propriétés.|
-|<xref:System.Activities.Statements.Assign.Value%2A>|True|Valeur qui est affectée à la variable. Pour définir le <xref:System.Activities.Statements.Assign.Value%2A> , tapez une expression Visual Basic dans la zone **valeur** du concepteur d’activités **Assign** ou dans la grille des propriétés.|
+|<xref:System.Activities.Activity.DisplayName%2A>|Faux|Nom convivial de l'activité <xref:System.Activities.Statements.Assign>. La valeur par défaut est Assign. Bien que la valeur de la propriété <xref:System.Activities.Activity.DisplayName%2A> ne soit pas strictement obligatoire, il est recommandé d'en utiliser une.|
+|<xref:System.Activities.Statements.Assign.To%2A>|Vrai|Variable ou argument auquel la propriété <xref:System.Activities.Statements.Assign.Value%2A> est affectée. La valeur doit être un identificateur de Visual Basic valide. Pour définir la propriété, tapez une expression Visual Basic dans la zone à dans le concepteur **d'** activités **Assign** ou dans la grille des propriétés.|
+|<xref:System.Activities.Statements.Assign.Value%2A>|Vrai|Valeur qui est affectée à la variable. Pour définir le <xref:System.Activities.Statements.Assign.Value%2A> , tapez une expression Visual Basic dans la zone **valeur** du concepteur d’activités **Assign** ou dans la grille des propriétés.|
 
 ## <a name="see-also"></a>Voir aussi
 
