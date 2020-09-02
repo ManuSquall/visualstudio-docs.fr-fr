@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 93813aa734c615e7f045c98c776e600be4ee3fab
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663939"
 ---
 # <a name="working-with-textures-and-images"></a>Utilisation des textures et des images
@@ -45,5 +45,5 @@ Vous pouvez utiliser l’Éditeur d’images de [!INCLUDE[vsprvs](../includes/vs
 
 |Titre|Description|
 |-----------|-----------------|
-|[Image Editor](../designers/image-editor.md)|Décrit comment utiliser l’Éditeur d’images pour utiliser les textures et les images.|
+|[Éditeur d’images](../designers/image-editor.md)|Décrit comment utiliser l’Éditeur d’images pour utiliser les textures et les images.|
 |[Exemples de l’éditeur d’images](../designers/image-editor-examples.md)|Fournit des liens vers des rubriques qui expliquent comment utiliser l’Éditeur d’images pour effectuer des tâches de traitement d’images courantes.|

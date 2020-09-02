@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dd06bc09114785c4359d05e3cda70c3ce7646c9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68143676"
 ---
 # <a name="instruction-pointers-ips-view---net-memory-sampling-data"></a>Vue Pointeurs d’instruction - Données d’échantillonnage de la mémoire .NET
@@ -27,11 +27,11 @@ La vue Pointeurs d’instruction pour les données de profilage de l’allocatio
   
 |Colonne|Description|  
 |------------|-----------------|  
-|**ID du processus**|ID du processus (PID) de l'exécution du profilage.|  
+|**ID de processus**|ID du processus (PID) de l'exécution du profilage.|  
 |**Nom du processus**|Nom du processus.|  
 |**Nom du module**|Nom du module qui contient l’instruction.|  
 |**Chemin du module**|Chemin du module qui contient l’instruction.|  
-|**Fichier source**|Fichier source qui contient l’instruction.|  
+|**Source File**|Fichier source qui contient l’instruction.|  
 |**Nom de la fonction**|Nom de la fonction.|  
 |**Numéro de ligne de fonction**|Numéro de ligne du début de cette fonction dans le fichier source.|  
 |**Adresse de la fonction**|Adresse de départ de la fonction.|  
@@ -46,4 +46,4 @@ La vue Pointeurs d’instruction pour les données de profilage de l’allocatio
 |**% d’octets exclusifs**|Pourcentage de tous les octets de mémoire alloués lors de l’exécution du profilage qui ont été alloués par l’instruction.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Vue Pointeurs d’instruction (IP)](../profiling/instruction-pointers-ips-view-sampling-data.md)
+ [Pointeurs d'instruction (IP), vue](../profiling/instruction-pointers-ips-view-sampling-data.md)

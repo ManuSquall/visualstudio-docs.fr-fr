@@ -1,5 +1,5 @@
 ---
-title: Expressions dans le Debugger (fr) Microsoft Docs
+title: Expressions dans le débogueur | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -28,11 +28,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3999737a2fad04c9b513722ae11608574a72c410
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79302524"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315029"
 ---
 # <a name="expressions-in-the-debugger"></a>Expressions dans le débogueur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ int main()
   
 ```  
   
-### <a name="using-debugger-intrinsic-functions-to-maintain-state"></a><a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a>Utilisation de fonctions intrinsèques de débbugger pour maintenir l’état  
+### <a name="using-debugger-intrinsic-functions-to-maintain-state"></a><a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a> Utilisation de fonctions intrinsèques du débogueur pour maintenir l’État  
  Les fonctions intrinsèques du débogueur vous permettent d’appeler certaines fonctions C/C++ dans les expressions sans modifier l’état de l’application.  
   
  Fonctions intrinsèques du débogueur :  
@@ -113,7 +113,7 @@ int main()
 |**Comparaison de chaînes**|strcmp, wcscmp, stricmp, _stricmp, _strcmpi, wcsicmp, _wcscmpi, _wcsnicmp, strncmp, wcsncmp, strnicmp, wcsnicmp|  
 |**Recherche de chaîne**|strchr, wcschr, strstr, wcsstr|  
 |**Win32**|GetLastError(), TlsGetValue()|  
-|**Windows 8**|WindowsGetStringLen(), WindowsGetStringRawBuffer()<br /><br /> Ces fonctions requièrent que le processus en cours de débogage s’exécute sur Windows 8. Le débogage des fichiers dump générés à partir d’un appareil Windows 8 requiert également que l’ordinateur Visual Studio exécute Windows 8. Toutefois, si vous déboguez un appareil Windows 8 à distance, l’ordinateur Visual Studio peut exécuter Windows 7.|  
+|**Windows 8**|WindowsGetStringLen(), WindowsGetStringRawBuffer()<br /><br /> Ces fonctions requièrent que le processus en cours de débogage s’exécute sur Windows 8. Le débogage des fichiers dump générés à partir d’un appareil Windows 8 requiert également que l’ordinateur Visual Studio exécute Windows 8. Toutefois, si vous déboguez un appareil Windows 8 à distance, l’ordinateur Visual Studio peut exécuter Windows 7.|  
 |**Divers**|__log2<br /><br /> Retourne le logarithme base 2 d’un entier spécifié, arrondi à l’entier inférieur le plus proche.|  
   
 ## <a name="ccli---unsupported-expressions"></a>Expressions non prises en charge en C++/CLI  
@@ -214,8 +214,8 @@ int main()
   
 - Mots clés de niveau espace de noms ou module, comme `End Sub` ou `Module`.  
   
-## <a name="see-also"></a> Voir aussi  
- [Spécifications de format dans C](../debugger/format-specifiers-in-cpp.md)   
- [Opérateur de contexte (CMD)](../debugger/context-operator-cpp.md)   
- [Spécifications de format en C #](../debugger/format-specifiers-in-csharp.md)   
+## <a name="see-also"></a>Voir aussi  
+ [Spécificateurs de format en C++](../debugger/format-specifiers-in-cpp.md)   
+ [Context, opérateur (C++)](../debugger/context-operator-cpp.md)   
+ [Spécificateurs de format en C #](../debugger/format-specifiers-in-csharp.md)   
  [Pseudo-variables](../debugger/pseudovariables.md)

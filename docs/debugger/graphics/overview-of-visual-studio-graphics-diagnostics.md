@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0bf8cbcc699f015cae954400744d9bd724d70c57
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73187914"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Vue d'ensemble de Visual Studio Graphics Diagnostics
@@ -66,12 +66,12 @@ Visual Studio *Graphics Diagnostics* est un ensemble d’outils pour l’enregis
 
  Cette illustration montre une disposition typique des outils dans Graphics Analyzer.
 
- ![Toutes les fenêtres du débogueur Graphics](media/graphicsdebuggerwindows.png "GraphicsDebuggerWindows")
+ ![Toutes les fenêtres du débogueur de graphiques](media/graphicsdebuggerwindows.png "GraphicsDebuggerWindows")
 
 ### <a name="the-graphics-toolbar-graphics-analyzer"></a>Barre d'outils Graphics (Graphics Analyzer)
  La barre d'outils Graphics fournit un accès rapide aux fenêtres d'outils Graphics Analyzer.
 
- ![Barre d’outils graphiques en mode Graphics Diagnostics](media/vsg_toolbar.png "vsg_toolbar")
+ ![Barre d’outils Graphics en mode de diagnostics des graphiques](media/vsg_toolbar.png "vsg_toolbar")
 
 ### <a name="graphics-log-document"></a>Document journal de graphisme
  Dans Graphics Analyzer, le document journal de graphisme est la fenêtre d'outil la plus importante. Cette fenêtre représente tous les frames capturés durant l’exécution de votre application dans Graphics Diagnostics. À ce stade, vous pouvez sélectionner un autre frame pour examiner ou choisir un pixel spécifique à analyser avec l'outil Historique des pixels. L'image de tampon de trame affichée dans ce document change pour refléter l'événement actuellement sélectionné, ce qui vous permet de voir la façon dont le tampon de trame est affecté au fil du temps.
@@ -118,5 +118,5 @@ Visual Studio *Graphics Diagnostics* est un ensemble d’outils pour l’enregis
  Toutefois, l’analyse des frames ne se réduit pas à une question de vitesse. Elle vise à atteindre les meilleures performances possibles avec un minimum de concessions sur la qualité visuelle. Parfois, un effet impressionnant sur un affichage de grande taille n'a pas le même impact sur le petit écran d'un téléphone, où un effet plus simple peut s'avérer tout aussi réussi sans épuiser la batterie. Les modifications automatiques et les benchmarks fournis par Graphics Analysis peuvent vous aider à trouver l’équilibre approprié pour votre application sur toute une gamme d’appareils.
 
 ## <a name="see-also"></a>Voir aussi
-- [Outil de capture en ligne de commande](command-line-capture-tool.md)
+- [Outil en ligne de commande de capture](command-line-capture-tool.md)
 - [Débogueur HLSL](hlsl-shader-debugger.md)

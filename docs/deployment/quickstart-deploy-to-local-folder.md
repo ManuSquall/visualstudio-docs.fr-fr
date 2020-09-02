@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: da13cb2b249146c7a29abbab03b66f77594abf4b
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85285402"
 ---
 # <a name="deploy-an-app-to-a-local-folder-using-visual-studio"></a>Déployer une application dans un dossier local à l’aide de Visual Studio

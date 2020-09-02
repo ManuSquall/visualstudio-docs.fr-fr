@@ -1,5 +1,5 @@
 ---
-title: IDebugAddress::GetAddress | Microsoft Docs
+title: 'IDebugAddress :: GetAddress | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f4d3263ca020f491e0c1cf20ee49792cacfbc362
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68186684"
 ---
 # <a name="idebugaddressgetaddress"></a>IDebugAddress::GetAddress
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Retourne une structure qui décrit un objet et son emplacement dans son étendue ou le conteneur.  
+Retourne une structure décrivant un objet et son emplacement dans son étendue ou conteneur.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -40,13 +40,13 @@ int GetAddress(
   
 #### <a name="parameters"></a>Paramètres  
  `pAddress`  
- [in, out] Un [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) structure est remplie par cette méthode.  
+ [in, out] Structure [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) qui est remplie par cette méthode.  
   
-## <a name="return-value"></a>Valeur de retour  
+## <a name="return-value"></a>Valeur renvoyée  
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Le [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) structure est passée à cette méthode, qui ensuite le remplit avec les informations appropriées. Interprétation de ces informations varie selon le type d’informations renvoyées et le Gestionnaire de symbole lui-même. Consultez [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) pour plus d’informations.  
+ La structure [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) est passée à cette méthode, qui la remplit avec les informations appropriées. La façon dont ces informations sont interprétées dépend du type d’informations retourné et du gestionnaire de symboles lui-même. Pour plus d’informations, consultez [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) .  
   
 ## <a name="see-also"></a>Voir aussi  
  [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)

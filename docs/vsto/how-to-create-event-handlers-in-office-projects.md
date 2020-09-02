@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ee85d89dcb990cebd595dadbd7b28add4a7b371a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538305"
 ---
 # <a name="how-to-create-event-handlers-in-office-projects"></a>Comment : créer des gestionnaires d’événements dans les projets Office

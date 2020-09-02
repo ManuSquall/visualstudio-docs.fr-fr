@@ -1,5 +1,5 @@
 ---
-title: Fonction SccRename | Microsoft Docs
+title: SccRename fonction) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e78975acab0bf30f1f188cdd7b6454fd6e74ce6f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68143717"
 ---
 # <a name="sccrename-function"></a>Fonction SccRename
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Cette fonction renomme un fichier dans le système de contrôle source.  
+Cette fonction renomme un fichier dans le système de contrôle de code source.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -37,33 +37,33 @@ SCCRTN SccRename(
   
 #### <a name="parameters"></a>Paramètres  
  pvContext  
- [in] La structure de contexte de plug-in de contrôle de source.  
+ dans Structure de contexte du plug-in de contrôle de code source.  
   
  hWnd  
- [in] Handle vers la fenêtre de l’IDE que le plug-in de contrôle de code source peut utiliser en tant que parent pour les boîtes de dialogue qu’il fournit.  
+ dans Handle de la fenêtre IDE que le plug-in de contrôle de code source peut utiliser comme parent pour toutes les boîtes de dialogue qu’il fournit.  
   
  lpFileName  
- [in] Le nom de fichier qualifié complet du fichier qui est renommé.  
+ dans Nom de fichier complet du fichier renommé.  
   
  lpNewName  
- [in] Nouveau nom qualifié complet. Si le chemin du répertoire est différent, le fichier a été déplacé à partir d’un sous-répertoire à un autre.  
+ [in] Nom qualifié complet du nouveau nom. Si le chemin d’accès au répertoire est différent, le fichier a été déplacé d’un sous-répertoire à un autre.  
   
-## <a name="return-value"></a>Valeur de retour  
- L’implémentation de plug-in de contrôle de source de cette fonction est censée retourner l’une des valeurs suivantes :  
+## <a name="return-value"></a>Valeur renvoyée  
+ L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :  
   
 |Valeur|Description|  
 |-----------|-----------------|  
-|SCC_OK|L’opération de changement de nom s’est terminée correctement.|  
-|SCC_E_PROJNOTOPEN|Le projet n’est pas ouvert sous contrôle de code source.|  
-|SCC_E_FILENOTCONTROLLED|Le fichier n’est pas sous contrôle de code source.|  
-|SCC_E_ACCESSFAILURE|Impossible d’accéder au système de contrôle source, probablement en raison de problèmes réseau ou de contention.|  
+|SCC_OK|L’opération de changement de nom s’est terminée avec succès.|  
+|SCC_E_PROJNOTOPEN|Le projet n’est pas ouvert sous le contrôle de code source.|  
+|SCC_E_FILENOTCONTROLLED|Le fichier n'est pas soumis au contrôle de code source.|  
+|SCC_E_ACCESSFAILURE|Un problème est survenu lors de l’accès au système de contrôle de code source, probablement en raison de problèmes de réseau ou de contention.|  
 |SCC_E_NOTAUTHORIZED|L’utilisateur n’est pas autorisé à effectuer cette opération.|  
 |SCC_E_COULDNOTCREATEPROJECT|Le projet n’a pas pu être créé dans le cadre du processus de changement de nom.|  
 |SCC_E_OPNOTPERFORMED|L’opération n’a pas été effectuée.|  
 |SCC_E_NONSPECIFICERROR|Une erreur non spécifiée ou générale s’est produite.|  
   
 ## <a name="remarks"></a>Notes  
- Cette fonction peut être utilisée pour renommer un fichier ou le déplacer d’un emplacement vers un autre dans le système de contrôle de source. Le plug-in de contrôle de code source ne devez pas essayer d’accéder au fichier sur le disque. Il incombe de l’IDE pour renommer le fichier local.  
+ Cette fonction peut être utilisée pour renommer un fichier ou le déplacer d’un emplacement à un autre dans le système de contrôle de code source. Le plug-in de contrôle de code source ne doit pas tenter d’accéder au fichier sur le disque. Il incombe à l’IDE de renommer le fichier local.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Fonctions d’API du plug-in de contrôle de code source](../extensibility/source-control-plug-in-api-functions.md)

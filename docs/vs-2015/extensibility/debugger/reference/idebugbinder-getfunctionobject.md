@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder::GetFunctionObject | Microsoft Docs
+title: 'IDebugBinder :: GetFunctionObject | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4a2a55285684c5aa93cc5876fb06c69c809d8b01
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157310"
 ---
 # <a name="idebugbindergetfunctionobject"></a>IDebugBinder::GetFunctionObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Cette méthode obtient un [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) objet utilisé pour créer des paramètres de fonction.  
+Cette méthode obtient un objet [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) utilisé pour créer des paramètres de fonction.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -40,9 +40,9 @@ int GetFunctionObject(
   
 #### <a name="parameters"></a>Paramètres  
  `ppFunction`  
- [out] Retourne le [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) interface qui permet de créer des paramètres de fonction.  
+ à Retourne l’interface [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) utilisée pour créer des paramètres de fonction.  
   
-## <a name="return-value"></a>Valeur de retour  
+## <a name="return-value"></a>Valeur renvoyée  
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.  
   
 ## <a name="see-also"></a>Voir aussi  

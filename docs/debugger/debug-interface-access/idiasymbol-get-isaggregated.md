@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 02e1a3a831ccd7394c58af4b744f0be8b905d763
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85463483"
 ---
 # <a name="idiasymbolget_isaggregated"></a>IDiaSymbol::get_isAggregated
@@ -41,7 +41,7 @@ HRESULT get_isAggregated(
 > [!NOTE]
 > Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  La méthode [IDiaSymbol :: get_isSplitted](../../debugger/debug-interface-access/idiasymbol-get-issplitted.md) est `TRUE` pour le symbole qui est le parent des symboles agrégés.
 
 ## <a name="requirements"></a>Configuration requise

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8e29643f530667560d4979906152a174c6eddd1b
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85463378"
 ---
 # <a name="idiasymbolget_ishotpatchable"></a>IDiaSymbol::get_isHotpatchable
@@ -41,7 +41,7 @@ HRESULT get_isHotpatchable(
 > [!NOTE]
 > Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Cette propriété est disponible à partir du `SymTagCompilandDetails` type de symbole (consultez [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)).
 
 ## <a name="requirements"></a>Configuration requise

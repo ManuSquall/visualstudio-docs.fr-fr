@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 264e8dfb784af75a8138aa1b606e0f4a926f8d65
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85463448"
 ---
 # <a name="idiasymbolget_isctypes"></a>IDiaSymbol::get_isCTypes
@@ -41,7 +41,7 @@ HRESULT get_isCTypes(
 > [!NOTE]
 > Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Cette propriété est disponible à partir du `SymTagExe` type de symbole (consultez [exe](../../debugger/debug-interface-access/exe.md)).
 
 ## <a name="requirements"></a>Configuration requise
@@ -53,4 +53,4 @@ HRESULT get_isCTypes(
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
-- [Exécutable](../../debugger/debug-interface-access/exe.md)
+- [Exe](../../debugger/debug-interface-access/exe.md)

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3a22be61d5f4c05720a5ff223806f2e14a8bfbc0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663942"
 ---
 # <a name="working-with-shaders"></a>Utilisation des nuanceurs
@@ -37,6 +37,6 @@ Vous pouvez utiliser le concepteur Shader graphique dans [!INCLUDE[vsprvs](../in
 
 |Titre|Description|
 |-----------|-----------------|
-|[Concepteur de nuanceur](../designers/shader-designer.md)|Explique comment utiliser le concepteur Shader de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour travailler avec des nuanceurs.|
-|[Nœuds du concepteur de nuanceur](../designers/shader-designer-nodes.md)|Décrit les types de nœuds du concepteur Shader que vous pouvez utiliser pour obtenir des effets graphiques.|
-|[Exemples du concepteur de nuanceur](../designers/shader-designer-examples.md)|Fournit des liens vers des rubriques qui montrent comment utiliser le concepteur Shader pour obtenir des effets graphiques courants.|
+|[Concepteur Shader](../designers/shader-designer.md)|Explique comment utiliser le concepteur Shader de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour travailler avec des nuanceurs.|
+|[Nœuds du concepteur Shader](../designers/shader-designer-nodes.md)|Décrit les types de nœuds du concepteur Shader que vous pouvez utiliser pour obtenir des effets graphiques.|
+|[Exemples du concepteur Shader](../designers/shader-designer-examples.md)|Fournit des liens vers des rubriques qui montrent comment utiliser le concepteur Shader pour obtenir des effets graphiques courants.|

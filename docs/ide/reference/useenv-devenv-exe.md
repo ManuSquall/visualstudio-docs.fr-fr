@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 35808b27964b3ca8fa0488f1be2ce6dc5530b3dd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75596392"
 ---
 # <a name="useenv-devenvexe"></a>/UseEnv (devenv.exe)
@@ -45,20 +45,20 @@ devenv /UseEnv {SolutionName|ProjectName}
 
   Chemin complet et nom d’un fichier solution.
 
-- *Projectname*
+- *Nom du projet*
 
   Chemin complet et nom d’un fichier projet.
 
-## <a name="remarks"></a>Notes 
+## <a name="remarks"></a>Notes
 
-Ce commutateur affecte l’environnement IDE de Visual Studio dans les propriétés du projet de **Répertoires VC++**. Si le commutateur `/UseEnv` est spécifié, le nœud **Répertoires VC++** affiche les valeurs des variables d’environnement PATH, INCLUDE, LIBPATH et LIB. (Il montre également des valeurs pour **les annuaires source** et **exclure les annuaires**.) Sinon, le nœud remplace les variables de l’environnement par cinq valeurs d’annuaire : **Répertoires exécutables,** **Inclure des annuaires, annuaires** **de référence,** **annuaires de bibliothèque,** et **répertoires de la bibliothèque WinRT**.
+Ce commutateur affecte l’environnement IDE de Visual Studio dans les propriétés du projet de **Répertoires VC++**. Si le commutateur `/UseEnv` est spécifié, le nœud **Répertoires VC++** affiche les valeurs des variables d’environnement PATH, INCLUDE, LIBPATH et LIB. (Il affiche également les valeurs des **répertoires sources** et des **répertoires d’exclusion**.) Dans le cas contraire, le nœud remplace les variables d’environnement par cinq valeurs de répertoire : **répertoires exécutables**, **répertoires Include**, répertoires de **référence**, **répertoires de bibliothèques**et **répertoires WinRT**de la bibliothèque.
 
 > [!TIP]
 > Pour accéder aux propriétés du projet, cliquez avec le bouton droit sur un projet C++ et sélectionnez **Propriétés**. Dans la boîte de dialogue **Pages de propriétés**, sélectionnez **Propriétés de configuration**, puis **Répertoires VC++**.
 
 Lorsqu’un nom de projet est spécifié avec ce commutateur, l’outil affiche les variables d’environnement de tous les projets de la solution parente du projet.
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 
 L’exemple suivant lance Visual Studio et charge les variables d’environnement dans la page de propriétés de la solution `MySolution`.
 

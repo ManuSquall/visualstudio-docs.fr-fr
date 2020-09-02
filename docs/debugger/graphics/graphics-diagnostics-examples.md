@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4df2fafb523d04a8ec222b10e1ac9ed3aa95454d
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73187927"
 ---
 # <a name="graphics-diagnostics-examples"></a>Exemples Graphics Diagnostics
@@ -21,7 +21,7 @@ Ces exemples montrent comment déboguer les problèmes de rendu dans les applica
 ## <a name="capturing-graphics-information"></a>Capture d'informations graphiques
  Avant d'utiliser Graphics Diagnostics pour diagnostiquer des problèmes de rendu dans votre application, vous devez capturer les informations graphiques de l'application pendant qu'elle s'exécute. Les informations graphiques peuvent être capturées à partir d'une application s'exécutant en local ou sur un ordinateur ou autre appareil distant. Ces procédures pas à pas montrent comment capturer les informations graphiques d'une application manuellement ou par programmation :
 
-- [Procédure pas à pas : capture d’informations graphiques](walkthrough-capturing-graphics-information.md)
+- [Procédure pas à pas : Capture d'informations graphiques](walkthrough-capturing-graphics-information.md)
 
 - [Procédure pas à pas : capture d’informations graphiques par programmation](walkthrough-capturing-graphics-information-programmatically.md)
 
@@ -36,9 +36,9 @@ Ces exemples montrent comment déboguer les problèmes de rendu dans les applica
 
  Ces scénarios montrent comment utiliser Graphics Diagnostics pour déterminer la raison de l’absence d’un objet et identifier le code qui en est responsable.
 
-- [Procédure pas à pas : objets manquants en raison de l’état de l’appareil](walkthrough-missing-objects-due-to-device-state.md)
+- [Procédure pas à pas : objets manquants en raison de l’état de l’appareil](walkthrough-missing-objects-due-to-device-state.md)
 
-- [Procédure pas à pas : objets manquants en raison de l’ombrage de vertex](walkthrough-missing-objects-due-to-vertex-shading.md)
+- [Procédure pas à pas : objets manquants en raison de Vertex Shader](walkthrough-missing-objects-due-to-vertex-shading.md)
 
 - [Procédure pas à pas : objets manquants en raison d’un pipeline mal configuré](walkthrough-missing-objects-due-to-misconfigured-pipeline.md)
 

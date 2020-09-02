@@ -1,5 +1,5 @@
 ---
-title: effectuer le rendu 16 BPP variante de Format cible | Microsoft Docs
+title: Variante de format de cible de rendu 16 bpp | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7b315c7ab9bb10d039e81ba26b1beb9c4447a205
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157569"
 ---
 # <a name="16bpp-render-target-format-variant"></a>Variante de format cible de rendu 16 bpp
@@ -43,11 +43,11 @@ Affecte aux pixels le format DXGI_FORMAT_B5G6R5_UNORM pour toutes les cibles de 
   
 - Le membre Usage a la valeur D3D11_USAGE_DEFAULT.  
   
-## <a name="restrictions-and-limitations"></a>Restrictions et limitations  
+## <a name="restrictions-and-limitations"></a>Limitations et restrictions  
  Sachant que le format B5G6R5 n'a pas de canal alpha, le contenu alpha n'est pas conservé par cette variante. Si le rendu de votre application nécessite la présence d'un canal alpha dans votre cible de rendu, il vous suffit de passer au format B5G6R5.  
   
 ## <a name="example"></a>Exemple  
- Le **Format cible de rendu 16 BPP** variante peut être reproduite pour les cibles de rendu créées à l’aide de `CreateTexture2D` à l’aide de code similaire à celui-ci :  
+ La variante de **format de cible de rendu 16 bpp** peut être reproduite pour les cibles de rendu créées à l’aide de à `CreateTexture2D` l’aide d’un code similaire à celui-ci :  
   
 ```  
 D3D11_TEXTURE2D_DESC target_description;  

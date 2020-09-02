@@ -7,11 +7,11 @@ ms.date: 05/06/2018
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
 ms.custom: video
 ms.openlocfilehash: f547662278d2ae01660312aff2708970a0a9300a
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "79301712"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315003"
 ---
 # <a name="customizing-the-ide"></a>Personnalisation de l’IDE
 
@@ -21,7 +21,7 @@ Visual Studio pour Mac peut être personnalisé de plusieurs façons, permettant
 
 ![Vue du thème foncé](media/customizing-the-ide-image7a.png)
 
-Vous pouvez changer de thème en Visual Studio pour Mac en naviguant vers **Visual Studio > Préférences > Environnement > Style Visuel** et en sélectionnant votre thème désiré à partir de **l’interface utilisateur Thème** drop-down, comme illustré dans l’image suivante:
+Vous pouvez basculer les thèmes dans Visual Studio pour Mac en accédant à **Visual Studio > préférences > environnement > style visuel** et en sélectionnant le thème de votre choix dans la liste déroulante thème de l' **interface utilisateur** , comme illustré dans l’image suivante :
 
 ![Sélection du thème foncé](media/customizing-the-ide-image7b.png)
 
@@ -44,7 +44,7 @@ Visual Studio pour Mac est localisé dans les 14 langues suivantes, ce qui lui 
 * Espagnol
 * Turc
 
-Pour modifier la langue affichée par Visual Studio pour Mac, consultez **Visual Studio > Préférences > Environnement > Style visuel** et sélectionnez votre langue désirée à partir de la langue **d’interface utilisateur** drop-down, comme illustré dans l’image suivante:
+Pour modifier la langue affichée par Visual Studio pour Mac, accédez à  **Visual Studio > préférences > environnement > style visuel** et sélectionnez la langue de votre choix dans la liste déroulante langue de l' **interface utilisateur** , comme illustré dans l’image suivante :
 
 ![Sélection de la langue](media/customizing-the-ide-image11a.png)
 
@@ -64,7 +64,7 @@ Les champs **Nom** et **E-mail** sont utilisés dans les validations effectuées
 
 Les combinaisons de touches vous permettent d’adapter votre environnement de développement afin de vous déplacer plus efficacement dans Visual Studio pour Mac. Il fournit des combinaisons de touches courantes pour de nombreux IDE répandus, tels que Visual Studio (sur Windows), ReSharper, Visual Studio Code et Xcode.
 
-Les reliures clés peuvent être définies en naviguant vers **Visual Studio > Préférences > Environnement > Liaisons clés,** comme l’illustre l’image suivante :
+Les combinaisons de touches peuvent être définies en accédant à **Visual Studio > préférences > les combinaisons de touches de l’environnement >**, comme illustré par l’image suivante :
 
 ![Définir des combinaisons de touches](media/customizing-the-ide-image10a.png)
 

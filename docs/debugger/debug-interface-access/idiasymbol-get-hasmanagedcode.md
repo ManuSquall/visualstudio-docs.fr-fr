@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: e4ce3326e6922227b83a12b21b6fc2aa2f9ce81e
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85463693"
 ---
 # <a name="idiasymbolget_hasmanagedcode"></a>IDiaSymbol::get_hasManagedCode
@@ -41,7 +41,7 @@ HRESULT get_hasManagedCode(
 > [!NOTE]
 > Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Cette propriété est disponible à partir du `SymTagCompilandDetails` type de symbole (consultez [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)).
 
 ## <a name="requirements"></a>Configuration requise

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 960c74625a04b209dc9aa251256e994517a3a52f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538526"
 ---
 # <a name="ca2219-do-not-raise-exceptions-in-exception-clauses"></a>CA2219 : Ne pas lever d'exceptions dans les clauses d'exception
@@ -32,7 +32,7 @@ ms.locfileid: "85538526"
 |Category|Microsoft. usage|
 |Modification avec rupture|Sans rupture, rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Une exception est levée à partir d’une `finally` clause, d’un filtre ou d’une clause Fault.
 
 ## <a name="rule-description"></a>Description de la règle

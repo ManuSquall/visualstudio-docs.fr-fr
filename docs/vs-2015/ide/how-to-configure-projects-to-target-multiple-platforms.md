@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bb759faff99b641f24df87f73bc1d3d52b6635cc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663556"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Comment : configurer des projets pour plusieurs plateformes cibles
@@ -31,7 +31,7 @@ ms.locfileid: "72663556"
 
 1. Dans le menu **Générer**, cliquez sur **Gestionnaire de configuration**.
 
-2. Dans la **zone Plateforme de la solution active**, sélectionnez la plateforme que votre solution doit cibler, ou sélectionnez **\<Nouveau>** pour créer une nouvelle plateforme. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] compile votre application de façon à cibler la plateforme qui est définie comme plateforme active dans la boîte de dialogue **Gestionnaire de configurations**.
+2. Dans la **zone plateforme de la solution active**, sélectionnez la plateforme que votre solution doit cibler, ou choisissez **\<New>** de créer une nouvelle plateforme. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] compile votre application de façon à cibler la plateforme qui est définie comme plateforme active dans la boîte de dialogue **Gestionnaire de configurations**.
 
 ## <a name="removing-a-platform"></a>Suppression d’une plateforme
  Si vous constatez que vous n’avez pas besoin d’une plateforme, vous pouvez la supprimer à l’aide de la boîte de dialogue Gestionnaire de configurations. Cela supprime tous les paramètres de solution et de projet que vous avez configurés pour cette combinaison de configuration et de cible.
@@ -40,7 +40,7 @@ ms.locfileid: "72663556"
 
 1. Dans le menu **Générer**, cliquez sur **Gestionnaire de configuration**.
 
-2. Dans la **zone Plateforme de la solution active**, sélectionnez **\<Modifier>** . La boîte de dialogue **Modifier les plateformes de solution** s’affiche.
+2. Dans la **zone plateforme de la solution active**, sélectionnez **\<Edit>** . La boîte de dialogue **Modifier les plateformes de solution** s’affiche.
 
 3. Cliquez sur la plateforme à supprimer, puis sur **Supprimer**.
 

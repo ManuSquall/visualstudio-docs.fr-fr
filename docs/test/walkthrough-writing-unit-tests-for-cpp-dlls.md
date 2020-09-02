@@ -8,10 +8,10 @@ ms.workload:
 - cplusplus
 author: corob-msft
 ms.openlocfilehash: 16020c0928229c80a9eb33b3bc4804b004d9f432
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816005"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Guide pratique pour écrire des tests unitaires pour des DLL C++
@@ -82,7 +82,7 @@ Cette procédure pas à pas décrit comment développer une DLL C++ native en ut
 
          ![Explorateur de tests unitaires avec un test réussi](../test/media/utecpp04.png)
 
-## <a name="create-a-dll-project"></a><a name="create_dll_project"></a>Créer un projet DLL
+## <a name="create-a-dll-project"></a><a name="create_dll_project"></a> Créer un projet DLL
 
 ::: moniker range="vs-2019"
 
@@ -194,7 +194,7 @@ Les étapes suivantes montrent comment créer un projet DLL dans Visual Studio 2
 
    Vous avez configuré le test et les projets de code, et vérifié que vous pouviez exécuter des tests exécutant les fonctions du projet de code. Maintenant, vous pouvez commencer à écrire le code et les tests réels.
 
-## <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="iterate"></a>Augmenter itérativement les tests et les faire passer
+## <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="iterate"></a> Augmenter itérativement les tests et les faire passer
 
 1. Ajoutez un nouveau test :
 
@@ -252,7 +252,7 @@ Les étapes suivantes montrent comment créer un projet DLL dans Visual Studio 2
     > [!TIP]
     > Développez le code en ajoutant les tests individuellement. Assurez-vous que tous les tests réussissent après chaque itération.
 
-## <a name="debug-a-failing-test"></a><a name="debug"></a>Déboguer un test ayant échoué
+## <a name="debug-a-failing-test"></a><a name="debug"></a> Déboguer un test ayant échoué
 
 1. Ajoutez un autre test :
 
@@ -337,7 +337,7 @@ Les étapes suivantes montrent comment créer un projet DLL dans Visual Studio 2
 
 ::: moniker-end
 
-## <a name="refactor-the-code-without-changing-tests"></a><a name="refactor"></a>Refactoriser le code sans modifier les tests
+## <a name="refactor-the-code-without-changing-tests"></a><a name="refactor"></a> Refactoriser le code sans modifier les tests
 
 1. Simplifiez le calcul central de la fonction SquareRoot :
 

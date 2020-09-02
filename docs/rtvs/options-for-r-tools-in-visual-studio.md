@@ -14,15 +14,15 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: c7c2cb57dc96d7bb0df09248eb7a877820e50521
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79302706"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315081"
 ---
 # <a name="r-tools-for-visual-studio-options"></a>Options des Outils R dans Visual Studio
 
-Les paramètres sont accessibles via le menu **R Tools** > **Options,** ou par le biais **d’options d’outils** > **Options** et de défilement vers **R Tools**:
+Les paramètres sont accessibles par le biais du menu **Outils R**  >  **Options** , ou via les **Tools**  >  **options** outils et en faisant défiler vers **Outils r**:
 
   ![Boîte de dialogue Options pour les Outils R](media/options-dialog.png)
 
@@ -33,7 +33,7 @@ Les options et paramètres propres à R sont accessibles à l’aide des méthod
 - Options avancées de l’éditeur ([décrites dans cet article](#text-editor--r--advanced-options)) : menu **Outils** > **Options**, puis sélectionnez **Éditeur de texte** > **R** > **Avancé**
 - Options comportementales ([décrites dans cet article](#r-tools--advanced-options)) : menu **Outils R** > **Options** ou **Outils** > **Options**, puis faites défiler jusqu’à **Outils R**.
 
-La commande **R Tools** > **Data Science Settings** affecte également un certain nombre de paramètres différents dans Visual Studio dans l’ensemble. Cette commande est décrite dans la section suivante.
+La commande **Outils R**  >  **paramètres de science des données** affecte également un certain nombre de paramètres différents dans Visual Studio. Cette commande est décrite dans la section suivante.
 
 <a name="data-scientist-layout"></a>
 
@@ -43,7 +43,7 @@ L’élément de menu **Outils R > Paramètres de science des données** configu
 
 ![Disposition de fenêtre pour scientifique des données dans Visual Studio](media/installation-data-scientist-layout-result.png)
 
-Pour revenir à d’autres paramètres Visual Studio plus tard, utilisez d’abord la commande **Tools** > **Import and Export Settings,** **sélectionnez les paramètres de l’environnement sélectionnés à Export**et spécifiez un nom de fichier. Pour restaurer ces paramètres, utilisez la même commande et sélectionnez **Importer les paramètres d'environnement sélectionnés**. Vous pouvez aussi utiliser les mêmes commandes si vous changez la disposition pour les scientifiques des données et que vous souhaitez y revenir plus tard, au lieu d’utiliser directement la commande **Paramètres de science des données**.
+Pour revenir ultérieurement à d’autres paramètres de Visual Studio, utilisez d’abord la commande **Outils**  >  **Importer et exporter les paramètres** , sélectionnez **Exporter les paramètres d’environnement sélectionnés**et spécifiez un nom de fichier. Pour restaurer ces paramètres, utilisez la même commande et sélectionnez **Importer les paramètres d'environnement sélectionnés**. Vous pouvez aussi utiliser les mêmes commandes si vous changez la disposition pour les scientifiques des données et que vous souhaitez y revenir plus tard, au lieu d’utiliser directement la commande **Paramètres de science des données**.
 
 ## <a name="text-editor--r--advanced-options"></a>Éditeur de texte > R > Options avancées
 
@@ -57,7 +57,7 @@ Chaque option est activée ou désactivée pour contrôler le comportement en qu
 
 ## <a name="r-tools--advanced-options"></a>Outils R > Options avancées
 
-La commande **R Tools** > **Options** du menu ouvre le dialogue **Options** aux options R :
+La **R Tools**  >  **Options** commande de menu Outils r permet d’ouvrir la boîte de dialogue **options** pour les options r :
 
   ![Boîte de dialogue Options pour les Outils R](media/options-dialog.png)
 
@@ -72,7 +72,7 @@ Ces options contrôlent la façon dont les valeurs sont gérées dans l’[Explo
 | Évaluer les liaisons actives | `True` | Quand cette option a la valeur `True`, vous voyez toujours la valeur de date la plus à jour lors de l’inspection des variables et des propriétés. Le risque est que l’évaluation des expressions peut avoir des effets secondaires, selon la façon dont elles ont été implémentées. |
 | Afficher les variables préfixées par un point | `False` | Indique si les variables précédées de `.` sont affichées. |
 
-### <a name="grid-view"></a>Affichage de grille
+### <a name="grid-view"></a>Affichage Grille
 
 | Option | Valeur par défaut | Description |
 | --- | --- | --- |
@@ -82,8 +82,8 @@ Ces options contrôlent la façon dont les valeurs sont gérées dans l’[Explo
 
 | Option | Valeur par défaut | Description |
 | --- | --- | --- |
-| Navigateur web (F1) | `Internal` | Contrôle la façon dont l’aide est affichée lorsque vous recherchez un terme à l’aide **de Ctrl**+**F1**. Quand cette option a la valeur `Internal`, l’aide est affichée dans une fenêtre d’outil dans Visual Studio. Quand elle a la valeur `External`, l’aide est affichée dans votre navigateur par défaut. |
-| Chaîne de recherche web (F1) | `R site:stackoverflow.com` | Contrôle la façon dont les termes de recherche sont transmis à votre moteur de recherche lorsque vous appuyez sur **Ctrl**+**F1** sur un terme dans l’éditeur. Par défaut, la chaîne est `R site:stackoverflow.com`, ce qui ajoute `R` à votre terme de recherche. `site:stackoverflow.com` est une directive destinée au moteur de recherche qui lui indique de limiter la recherche aux pages du domaine `stackoverflow.com`. |
+| Navigateur web (F1) | `Internal` | Contrôle l’affichage de l’aide lorsque vous recherchez un terme à l’aide de la **touche Ctrl** + **F1**. Quand cette option a la valeur `Internal`, l’aide est affichée dans une fenêtre d’outil dans Visual Studio. Quand elle a la valeur `External`, l’aide est affichée dans votre navigateur par défaut. |
+| Chaîne de recherche web (F1) | `R site:stackoverflow.com` | Contrôle la façon dont les termes de recherche sont transmis à votre moteur de recherche lorsque vous appuyez sur **CTRL** + **F1** sur un terme dans l’éditeur. Par défaut, la chaîne est `R site:stackoverflow.com`, ce qui ajoute `R` à votre terme de recherche. `site:stackoverflow.com` est une directive destinée au moteur de recherche qui lui indique de limiter la recherche aux pages du domaine `stackoverflow.com`. |
 | Navigateur de l’aide R | `Automatic` | Contrôle comment l’aide s’affiche quand vous effectuez une recherche dans la documentation de R en utilisant **F1**, **?** ou **??**. Quand cette option a la valeur `Automatic`, l’aide s’affiche dans la fenêtre appropriée. Par exemple, l’aide HTML s’affiche dans une fenêtre d’outil Visual Studio, tandis que les fichiers PDF s’affichent dans votre programme PDF par défaut. Quand elle a la valeur `External`, l’aide s’affiche dans le navigateur web par défaut. |
 
 ### <a name="history"></a>Historique

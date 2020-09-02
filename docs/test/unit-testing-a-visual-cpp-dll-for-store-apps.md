@@ -8,10 +8,10 @@ ms.workload:
 - uwp
 author: corob-msft
 ms.openlocfilehash: 7b556f085ae4e4a9c610aefa87b3f9125fb27042
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85285607"
 ---
 # <a name="how-to-test-a-c-dll"></a>Comment tester une DLL C++
@@ -22,7 +22,7 @@ Cette rubrique vous montre comment utiliser les tests unitaires comme première 
 
 Cette rubrique crée également une solution Visual Studio unique et des projets distincts pour les tests unitaires et la DLL que vous souhaitez tester. Vous pouvez également inclure les tests unitaires directement dans le projet DLL, ou vous pouvez créer des solutions distinctes pour les tests unitaires et la DLL. Consultez la page [Ajout de tests unitaires aux applications C++ existantes](../test/how-to-use-microsoft-test-framework-for-cpp.md) pour obtenir des conseils sur la structure à utiliser.
 
-## <a name="create-the-solution-and-the-unit-test-project"></a><a name="Create_the_solution_and_the_unit_test_project"></a>Créer la solution et le projet de test unitaire
+## <a name="create-the-solution-and-the-unit-test-project"></a><a name="Create_the_solution_and_the_unit_test_project"></a> Créer la solution et le projet de test unitaire
 
 ::: moniker range="vs-2019"
 
@@ -48,7 +48,7 @@ Commencez par créer un projet de test. Dans le menu **Fichier**, choisissez **N
 
      ![unittest1.cpp](../test/media/ute_cpp_windows_unittest1_cpp.png)
 
-     Notez les points suivants :
+     Sachez que :
 
     - Chaque test est défini à l'aide de `TEST_METHOD(YourTestName){...}`.
 
@@ -58,7 +58,7 @@ Commencez par créer un projet de test. Dans le menu **Fichier**, choisissez **N
 
          Lorsque les tests sont exécutés, une instance de chaque classe de test est créée. Les méthodes de test sont appelées dans un ordre non défini. Vous pouvez définir des méthodes spéciales qui sont appelées avant et après chaque module, classe ou méthode. Pour plus d’informations, consultez [Utilisation de Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md).
 
-## <a name="verify-that-the-tests-run-in-test-explorer"></a><a name="Verify_that_the_tests_run_in_Test_Explorer"></a>Vérifier que les tests s’exécutent dans l’Explorateur de tests
+## <a name="verify-that-the-tests-run-in-test-explorer"></a><a name="Verify_that_the_tests_run_in_Test_Explorer"></a> Vérifier que les tests s’exécutent dans l’Explorateur de tests
 
 1. Insérez le code de test :
 
@@ -77,7 +77,7 @@ Commencez par créer un projet de test. Dans le menu **Fichier**, choisissez **N
 
      ![Explorateur de tests](../test/media/ute_cpp_testexplorer_testmethod1.png)
 
-## <a name="add-the-dll-project-to-the-solution"></a><a name="Add_the_DLL_project_to_the_solution"></a>Ajouter le projet DLL à la solution
+## <a name="add-the-dll-project-to-the-solution"></a><a name="Add_the_DLL_project_to_the_solution"></a> Ajouter le projet DLL à la solution
 
 ::: moniker range="vs-2019"
 
@@ -196,7 +196,7 @@ Dans **l’Explorateur de solutions**, choisissez le nom de la solution. Dans le
 
    Vous avez configuré le test et les projets de code, et vérifié que vous pouviez exécuter des tests exécutant les fonctions du projet de code. Maintenant, vous pouvez commencer à écrire le code et les tests réels.
 
-## <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="Iteratively_augment_the_tests_and_make_them_pass"></a>Augmenter itérativement les tests et les faire passer
+## <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="Iteratively_augment_the_tests_and_make_them_pass"></a> Augmenter itérativement les tests et les faire passer
 
 1. Ajoutez un nouveau test :
 
@@ -256,7 +256,7 @@ Dans **l’Explorateur de solutions**, choisissez le nom de la solution. Dans le
 > [!TIP]
 > Développez le code en ajoutant les tests individuellement. Assurez-vous que tous les tests réussissent après chaque itération.
 
-## <a name="debug-a-failing-test"></a><a name="Debug_a_failing_test"></a>Déboguer un test ayant échoué
+## <a name="debug-a-failing-test"></a><a name="Debug_a_failing_test"></a> Déboguer un test ayant échoué
 
 1. Ajoutez un autre test à *unittest1.cpp* :
 
@@ -325,7 +325,7 @@ Dans **l’Explorateur de solutions**, choisissez le nom de la solution. Dans le
 
    ![Tous les tests sont concluants](../test/media/ute_ult_alltestspass.png)
 
-## <a name="refactor-the-code-without-changing-tests"></a><a name="Refactor_the_code_without_changing_tests"></a>Refactoriser le code sans modifier les tests
+## <a name="refactor-the-code-without-changing-tests"></a><a name="Refactor_the_code_without_changing_tests"></a> Refactoriser le code sans modifier les tests
 
 1. Simplifiez le calcul central dans la fonction `SquareRoot` :
 

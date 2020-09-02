@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9ea2068bce101eb27a81da4925e0fef6ffa8c534
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68144271"
 ---
 # <a name="target-build-order"></a>Ordre de génération des cibles
@@ -33,7 +33,7 @@ Les cibles doivent être classées si l’entrée d’une cible dépend de la so
   
   Une cible n’est jamais exécutée deux fois pendant une génération, même si une cible suivante de la génération en dépend. Une fois qu’une cible a été exécutée, sa contribution à la génération est terminée.  
   
-  Les cibles peuvent posséder un attribut `Condition`. Si la condition spécifiée a la valeur `false`, la cible n’est pas exécutée et n’a aucun effet sur la génération. Pour plus d’informations sur les conditions, consultez l’article [Conditions (Conditions MSBuild)](../msbuild/msbuild-conditions.md).  
+  Les cibles peuvent posséder un attribut `Condition`. Si la condition spécifiée a la valeur `false`, la cible n’est pas exécutée et n’a aucun effet sur la génération. Pour plus d’informations sur les conditions, consultez [conditions](../msbuild/msbuild-conditions.md).  
   
 ## <a name="initial-targets"></a>Cibles initiales  
  L’attribut `InitialTargets` de l’élément [Project](../msbuild/project-element-msbuild.md) spécifie les cibles qui sont exécutées en premier, même si des cibles sont spécifiées sur la ligne de commande ou dans l’attribut `DefaultTargets`. En règle générale, les cibles initiales sont utilisées pour la vérification des erreurs.  
@@ -46,7 +46,7 @@ Les cibles doivent être classées si l’entrée d’une cible dépend de la so
   
  Les projets importés peuvent posséder leurs propres attributs `InitialTargets`. Toutes les cibles initiales sont agrégées et exécutées dans l’ordre.  
   
- Pour plus d’informations, consultez [Guide pratique pour Spécifier la cible à générer en premier](../msbuild/how-to-specify-which-target-to-build-first.md).  
+ Pour plus d’informations, consultez [Comment : spécifier la cible à générer en premier](../msbuild/how-to-specify-which-target-to-build-first.md).  
   
 ## <a name="default-targets"></a>Cibles par défaut  
  L’attribut `DefaultTargets` de l’élément [Project](../msbuild/project-element-msbuild.md) spécifie la ou les cibles qui sont générées si aucune cible n’est spécifiée explicitement sur une ligne de commande.  
@@ -57,7 +57,7 @@ Les cibles doivent être classées si l’entrée d’une cible dépend de la so
 <Project DefaultTargets="Clean;Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
 ```  
   
- Vous pouvez remplacer les cibles par défaut en utilisant le commutateur **/target** sur la ligne de commande. Dans l’exemple suivant, la cible `Build` est exécutée avant la cible `Report`. Si vous spécifiez des cibles de cette manière, les cibles par défaut sont ignorées.  
+ Vous pouvez remplacer les cibles par défaut à l’aide du commutateur **/target** sur la ligne de commande. Dans l’exemple suivant, la cible `Build` est exécutée avant la cible `Report`. Si vous spécifiez des cibles de cette manière, les cibles par défaut sont ignorées.  
   
  `msbuild /target:Build;Report`  
   
@@ -65,7 +65,7 @@ Les cibles doivent être classées si l’entrée d’une cible dépend de la so
   
  Les projets importés peuvent posséder leurs propres attributs `DefaultTargets`. Le premier attribut `DefaultTargets` rencontré détermine les cibles par défaut qui s’exécuteront.  
   
- Pour plus d’informations, consultez [Guide pratique pour Spécifier la cible à générer en premier](../msbuild/how-to-specify-which-target-to-build-first.md).  
+ Pour plus d’informations, consultez [Comment : spécifier la cible à générer en premier](../msbuild/how-to-specify-which-target-to-build-first.md).  
   
 ## <a name="first-target"></a>Première cible  
  En l’absence de cibles initiales, cibles par défaut ou cibles de ligne de commande, MSBuild exécute la première cible qu’il rencontre dans le fichier projet ou dans les fichiers projet importés.  
@@ -122,4 +122,4 @@ Les cibles doivent être classées si l’entrée d’une cible dépend de la so
 7. Une fois qu’une cible est exécutée ou ignorée, toute cible qui la répertorie dans un attribut `AfterTargets` est exécutée.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Targets (Cibles MSBuild)](../msbuild/msbuild-targets.md)
+ [Cibles](../msbuild/msbuild-targets.md)

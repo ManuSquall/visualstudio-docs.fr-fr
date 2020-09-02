@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Définir un nom de Thread dans du Code managé | Microsoft Docs'
+title: 'Comment : définir un nom de thread dans du code managé | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,20 +20,20 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b800fbd2f39d75f110a059c70b87a203eb72e7d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68157672"
 ---
-# <a name="how-to-set-a-thread-name-in-managed-code"></a>Procédure : définir un nom de thread dans du code managé
+# <a name="how-to-set-a-thread-name-in-managed-code"></a>Comment : définir un nom de thread dans le code managé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Il est possible d'attribuer des noms aux threads dans toutes les éditions de Visual Studio. Ces noms sont utiles pour effectuer le suivi des threads dans la fenêtre **Threads**. Étant donné que le **Threads** fenêtre n’est pas disponible dans les éditions Express de Visual Studio, d’affectation de noms thread a petit utilitaire dans les éditions Express.  
+Il est possible d'attribuer des noms aux threads dans toutes les éditions de Visual Studio. Ces noms sont utiles pour effectuer le suivi des threads dans la fenêtre **Threads**. Étant donné que la fenêtre **Threads** n’est pas disponible dans les éditions Visual Studio Express, le nom de thread n’a que peu d’utilitaire dans les éditions Express.  
   
  Pour définir un nom de thread en code managé, utilisez la propriété <xref:System.Threading.Thread.Name%2A>.  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a> Exemple  
   
 ```  
 Public Class Needle  
@@ -56,5 +56,5 @@ End Sub
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Déboguer les applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Guide pratique pour définir un nom de thread dans du code natif](../debugger/how-to-set-a-thread-name-in-native-code.md)
+ [Déboguer des applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+ [Comment : définir un nom de thread dans du code natif](../debugger/how-to-set-a-thread-name-in-native-code.md)

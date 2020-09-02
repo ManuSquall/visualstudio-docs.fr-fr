@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a6a72d1093bc8acd9aae788ff357aee2efeb9e52
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68197636"
 ---
 # <a name="datakind"></a>DataKind
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Indique la portée d’une valeur de données particulière.  
+Indique l’étendue particulière d’une valeur de données.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -44,40 +44,40 @@ enum DataKind { 
   
 ## <a name="elements"></a>Éléments  
  DataIsUnknown  
- Symbole de données ne peut pas être déterminé.  
+ Impossible de déterminer le symbole de données.  
   
  DataIsLocal  
- Élément de données est une variable locale.  
+ L’élément de données est une variable locale.  
   
  DataIsStaticLocal  
- Élément de données est une variable locale statique.  
+ Data Item est une variable locale statique.  
   
  DataIsParam  
- Élément de données est un paramètre formel.  
+ L’élément de données est un paramètre formel.  
   
  DataIsObjectPtr  
- Élément de données est un pointeur d’objet (`this`).  
+ L’élément de données est un pointeur d’objet ( `this` ).  
   
  DataIsFileStatic  
- Élément de données est une variable de portée de fichier.  
+ L’élément de données est une variable de portée de fichier.  
   
  DataIsGlobal  
- Élément de données est une variable globale.  
+ L’élément de données est une variable globale.  
   
  DataIsMember  
- Élément de données est une variable de membre d’objet.  
+ L’élément de données est une variable membre de l’objet.  
   
  DataIsStaticMember  
- Élément de données est une variable statique de classe.  
+ Data Item est une variable statique de classe.  
   
  DataIsConstant  
- Élément de données est une valeur constante.  
+ L’élément de données est une valeur constante.  
   
 ## <a name="remarks"></a>Notes  
- Les valeurs dans cette énumération sont retournées par la [IDiaSymbol::get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) (méthode).  
+ Les valeurs de cette énumération sont retournées par la méthode [IDiaSymbol :: get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) .  
   
 ## <a name="requirements"></a>Configuration requise  
- En-tête : cvconst.h  
+ En-tête : cvconst. h  
   
 ## <a name="see-also"></a>Voir aussi  
  [Énumérations et structures](../../debugger/debug-interface-access/enumerations-and-structures.md)   

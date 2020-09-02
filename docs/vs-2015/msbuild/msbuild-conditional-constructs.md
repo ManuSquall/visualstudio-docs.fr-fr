@@ -24,10 +24,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b7b22f63d5d3d6e0b1f7789561029bbfbfb4cdf4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68143768"
 ---
 # <a name="msbuild-conditional-constructs"></a>Constructions conditionnelles MSBuild
@@ -40,7 +40,7 @@ ms.locfileid: "68143768"
   
  Les éléments `Choose` peuvent être utilisés comme des éléments enfants des éléments `Project`, `When` et `Otherwise`. Les éléments `When` et `Otherwise` peuvent avoir des éléments enfants `ItemGroup`, `PropertyGroup` ou `Choose`.  
   
-## <a name="example"></a>Exemples  
+## <a name="example"></a>Exemple  
  L’exemple suivant utilise les éléments `Choose` et `When` pour un traitement de type « soit/soit ». Les propriétés et les éléments du projet sont définis en fonction de la valeur de la propriété `Configuration`.  
   
 ```  
@@ -83,4 +83,4 @@ ms.locfileid: "68143768"
  [Choose, élément (MSBuild)](../msbuild/choose-element-msbuild.md)   
  [When, élément (MSBuild)](../msbuild/when-element-msbuild.md)   
  [Otherwise, élément (MSBuild)](../msbuild/otherwise-element-msbuild.md)   
- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)
+ [Référence MSBuild](../msbuild/msbuild-reference.md)

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 00507b5d69f46657968407170d9633f1d84c8e4f
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85463427"
 ---
 # <a name="idiasymbolget_isdataaligned"></a>IDiaSymbol::get_isDataAligned
@@ -41,7 +41,7 @@ HRESULT get_isDataAligned(
 > [!NOTE]
 > Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Cette propriété est généralement définie lorsque l’exécutable est compilé avec un alignement de données non défini par défaut. Par exemple, le compilateur Microsoft C++ peut modifier l’alignement des données avec l’option de ligne de commande/ZP <em>#</em> , où *#* est une valeur d’octet.
 
 ## <a name="requirements"></a>Configuration requise

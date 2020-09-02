@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::GetDefaultIndexer ( Microsoft Docs
+title: 'IDebugClassField :: GetDefaultIndexer | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 57e00107374485043af370967794bdade1c213d1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734419"
 ---
 # <a name="idebugclassfieldgetdefaultindexer"></a>IDebugClassField::GetDefaultIndexer
@@ -40,13 +40,13 @@ int GetDefaultIndexer(
 ```
 
 ## <a name="parameters"></a>Paramètres
-`pbstrIndexer`[out] Retourne une chaîne contenant le nom de l’indexeur par défaut.
+`pbstrIndexer` à Retourne une chaîne contenant le nom de l’indexeur par défaut.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de succès, les retours S_OK ou les retours S_FALSE s’il n’y a pas d’indexeur par défaut. Sinon, retourne un code d'erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne S_OK ou retourne S_FALSE s’il n’y a pas d’indexeur par défaut. Sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- L’indexeur par défaut d’une classe `Default` est la propriété qui est marquée comme la propriété pour les accès de tableau. Ceci est [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]spécifique à . Voici un exemple d’un indexeur par défaut déclaré et [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] comment il est utilisé.
+ L’indexeur par défaut d’une classe est la propriété qui est marquée en tant que `Default` propriété pour les accès au tableau. Cela est spécifique à [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] . Voici un exemple d’indexeur par défaut déclaré dans [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] et comment il est utilisé.
 
 ```vb
 Imports System.Collections;

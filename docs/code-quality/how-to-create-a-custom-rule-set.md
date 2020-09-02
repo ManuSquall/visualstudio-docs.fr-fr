@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a4659efef9b233284a593fecd5c8404cb2650b0c
-ms.sourcegitcommit: 4d7c883ea3eedd795eeb4a9d3bd3dee82c8e093e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88893266"
 ---
 # <a name="customize-a-rule-set"></a>Personnaliser un ensemble de règles
@@ -51,7 +51,7 @@ Pour créer un ensemble de règles personnalisé, vous pouvez ouvrir un ensemble
 4. Sélectionnez **ouvrir** pour afficher les règles dans l’éditeur d’ensembles de règles.
 
 > [!NOTE]
-> Si vous avez un projet .NET Core ou .NET Standard, le processus est un peu différent, car il n’existe pas d’onglet de propriété **analyse du code** . Suivez les étapes pour [copier un ensemble de règles prédéfini vers votre projet et le définir comme l’ensemble de règles actif](analyzer-rule-sets.md). Une fois que vous avez copié un ensemble de règles, vous pouvez [le modifier dans l’éditeur d’ensembles de règles de Visual Studio](working-in-the-code-analysis-rule-set-editor.md) en l’ouvrant à partir de **Explorateur de solutions**.
+> Si vous avez un projet .NET Core ou .NET Standard, le processus est un peu différent, car il n’existe pas d’onglet de propriété **analyse du code** . Suivez les étapes pour [copier un ensemble de règles prédéfini vers votre projet et le définir comme ensemble de règles actif](analyzer-rule-sets.md). Une fois que vous avez copié un ensemble de règles, vous pouvez [le modifier dans l’éditeur d’ensembles de règles de Visual Studio](working-in-the-code-analysis-rule-set-editor.md) en l’ouvrant à partir de **Explorateur de solutions**.
 
 ## <a name="create-a-new-rule-set"></a>Créer un ensemble de règles
 

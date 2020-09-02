@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Ouvrir un projet à partir d’une pension'
+title: 'Didacticiel : ouvrir un projet à partir d’un référentiel'
 description: Découvrez comment ouvrir un projet dans un référentiel Git ou Azure DevOps à l’aide de Visual Studio.
 ms.custom: get-started
 ms.date: 03/30/2019
@@ -15,13 +15,13 @@ ms.workload:
 - dotnet
 - dotnetcore
 ms.openlocfilehash: 3af54d663cee1ad2b2dd4e8241678b88c635d376
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "70180443"
 ---
-# <a name="tutorial-open-a-project-from-a-repo"></a>Tutorial: Ouvrir un projet à partir d’une pension
+# <a name="tutorial-open-a-project-from-a-repo"></a>Didacticiel : ouvrir un projet à partir d’un référentiel
 
 Dans ce didacticiel, vous allez utiliser Visual Studio pour vous connecter à un référentiel pour la première fois puis ouvrir un projet à partir de celui-ci.
 
@@ -177,7 +177,7 @@ Regardez l’animation suivante pour vérifier le travail que vous avez effectu�
 
 Si vous êtes prêt à coder avec Visual Studio, suivez un des didacticiels spécifiques au langage suivants :
 
-- [Tutoriels Visual Studio (en anglais) **C**](./csharp/index.yml)
+- [Didacticiels Visual Studio | **C#**](./csharp/index.yml)
 - [Didacticiels Visual Studio | **Visual Basic**](./visual-basic/index.yml)
 - [Didacticiels Visual Studio | **C++**](/cpp/get-started/tutorial-console-cpp)
 - [Didacticiels Visual Studio | **Python**](/visualstudio/python/)
@@ -185,5 +185,5 @@ Si vous êtes prêt à coder avec Visual Studio, suivez un des didacticiels spé
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Azure DevOps Services: Démarrer avec Azure Repos et Visual Studio](/azure/devops/repos/git/gitquickstart/)
-- [Microsoft Learn: Démarrer avec Azure DevOps](/learn/modules/get-started-with-devops/)
+- [Azure DevOps Services : prise en main de Azure Repos et de Visual Studio](/azure/devops/repos/git/gitquickstart/)
+- [Microsoft Learn : prise en main d’Azure DevOps](/learn/modules/get-started-with-devops/)

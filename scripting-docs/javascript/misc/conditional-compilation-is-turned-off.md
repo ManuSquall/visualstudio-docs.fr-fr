@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: da272529768f3227ce6e0ee3e0ebbf086140dd15
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816122"
 ---
 # <a name="conditional-compilation-is-turned-off"></a>La compilation conditionnelle est désactivée
@@ -39,6 +39,6 @@ Vous avez tenté d’utiliser une variable de compilation conditionnelle sans ac
 ## <a name="see-also"></a>Voir aussi  
  [Compilation conditionnelle](../../javascript/advanced/conditional-compilation-javascript.md)   
  [Variables de compilation conditionnelle](../../javascript/advanced/conditional-compilation-variables-javascript.md)   
- [@cc_onGestion](../../javascript/reference/at-cc-on-statement-javascript.md)   
- [@ifGestion](../../javascript/reference/at-if-statement-javascript.md)   
- [@setGestion](../../javascript/reference/at-set-statement-javascript.md)
+ [@cc_on Gestion](../../javascript/reference/at-cc-on-statement-javascript.md)   
+ [@if Gestion](../../javascript/reference/at-if-statement-javascript.md)   
+ [@set Gestion](../../javascript/reference/at-set-statement-javascript.md)

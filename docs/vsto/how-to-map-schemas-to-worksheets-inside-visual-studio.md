@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c8a0437b940953e89e24969314f63df34d223496
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538136"
 ---
 # <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>Comment : mapper des schémas à des feuilles de calcul dans Visual Studio

@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b420644672309371ab61f1499e22d4745c69c569
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75596409"
 ---
 # <a name="visual-studio-command-aliases"></a>Alias de commandes Visual Studio
@@ -35,7 +35,7 @@ Le tableau ci-dessous contient une liste des alias de commandes Visual Studio pr
 
 |Nom de la commande|Alias|Nom complet|
 |------------------|-----------|-------------------|
-|[Imprimer, commande](../../ide/reference/print-command.md)|?|Debug.Print|
+|[Commande Imprimer](../../ide/reference/print-command.md)|?|Debug.Print|
 |[Espion express, commande](../../ide/reference/quick-watch-command.md)|??|Debug.Quickwatch|
 |Ajouter un nouveau projet|AddProj|File.AddNewProject|
 |[Alias, commande](../../ide/reference/alias-command.md)|Alias|Tools.Alias|
@@ -44,7 +44,7 @@ Le tableau ci-dessous contient une liste des alias de commandes Visual Studio pr
 |Basculer le point d'arrêt|bp|Debug.ToggleBreakPoint|
 |Fenêtre Pile des appels|CallStack|Debug.CallStack|
 |Effacer les signets|ClearBook|Edit.ClearBookmarks|
-|fermez|fermez|File.Close|
+|Fermer|Fermer|File.Close|
 |Fermer tous les documents|CloseAll|Window.CloseAllDocuments|
 |Effacer tout|sécurité au niveau des colonnes|Edit.ClearAll|
 |Mode Commande|cmd|View.CommandWindow|
@@ -66,30 +66,30 @@ Le tableau ci-dessous contient une liste des alias de commandes Visual Studio pr
 |Quitter|Quitter|File.Exit|
 |Mettre la sélection en forme|format|Edit.FormatSelection|
 |Plein écran|FullScreen|View.FullScreen|
-|[Commande de démarrage](../../ide/reference/start-command.md)|g|Debug.Start|
-|[Aller au commandement](../../ide/reference/go-to-command.md)|GotoLn|Edit.GoTo|
+|[Démarrer, commande](../../ide/reference/start-command.md)|g|Debug.Start|
+|[Atteindre, commande](../../ide/reference/go-to-command.md)|GotoLn|Edit.GoTo|
 |Atteindre l'accolade|GotoBrace|Edit.GotoBrace|
 |F1 Aide|Aide|Help.F1Help|
 |Mode immédiat|immed|Tools.ImmediateMode|
 |Insérer le fichier comme texte|InsertFile|Edit.InsertFileAsText|
-|[Afficher la pile d’appels, commande](../../ide/reference/list-call-stack-command.md)|kb|Debug.ListCallStack|
+|[Afficher la pile des appels, commande](../../ide/reference/list-call-stack-command.md)|kb|Debug.ListCallStack|
 |Mettre en minuscules|Lcase|Edit.MakeLowercase|
 |Couper la ligne|LineCut|Edit.LineCut|
 |Supprimer la ligne|LineDel|Edit.LineDelete|
 |Liste des membres|ListMembers|Edit.ListMembers|
 |Fenêtre Variables locales|Locals|Debug.Locals|
-|[Enregistrer la sortie de la fenêtre de commande, commande](../../ide/reference/log-command-window-output-command.md)|Journal|Tools.LogCommandWindowOutput|
+|[Commande Enregistrer la sortie de la fenêtre commande](../../ide/reference/log-command-window-output-command.md)|Journal|Tools.LogCommandWindowOutput|
 |Mode Marque de la fenêtre Commande|mark|Tools.CommandWindowMarkMode|
 |Mémoire (fenêtre)|Memory1|Debug.Memory1|
 |Mémoire 2 (fenêtre)|Memory2|Debug.Memory2|
 |Mémoire 3 (fenêtre)|Memory3|Debug.Memory3|
 |Mémoire 4 (fenêtre)|Memory4|Debug.Memory4|
 |[Définir la base, commande](../../ide/reference/set-radix-command.md)|n|Debug.SetRadix|
-|[Afficher le navigateur Web, commande](../../ide/reference/showwebbrowser-command.md)|nav navigate|View.ShowWebBrowser|
+|[Commande ShowWebBrowser (](../../ide/reference/showwebbrowser-command.md)|nav navigate|View.ShowWebBrowser|
 |Signet suivant|NextBook|Edit.NextBookmark|
-|[Nouvelle commande de fichiers](../../ide/reference/new-file-command.md)|nf|File.NewFile|
+|[Nouveau fichier, commande](../../ide/reference/new-file-command.md)|nf|File.NewFile|
 |Nouveau projet|np NewProj|File.NewProject|
-|[Ouvrir un fichier, commande](../../ide/reference/open-file-command.md)|of Open|File.OpenFile|
+|[Ouvrir un fichier (commande)](../../ide/reference/open-file-command.md)|of Open|File.OpenFile|
 |[Ouvrir un projet, commande](../../ide/reference/open-project-command.md)|op|File.OpenProject|
 |Réduire aux définitions/Arrêter le mode Plan|OutlineDefs StopOutlining|Edit.CollapseToDefinitions|
 |Pas à pas principal|p|Debug.StepOver|
@@ -105,7 +105,7 @@ Le tableau ci-dessous contient une liste des alias de commandes Visual Studio pr
 |Enregistrer les éléments sélectionnés|Enregistrer|File.SaveSelectedItems|
 |Enregistrer tout|SaveAll|File.SaveAll|
 |Enregistrer sous|SaveAs|File.SaveSelectedItemsAs|
-|[Shell, commande](../../ide/reference/shell-command.md)|shell|Tools.Shell|
+|[Commande shell](../../ide/reference/shell-command.md)|shell|Tools.Shell|
 |Arrêter la recherche dans les fichiers|StopFind|Edit.FindInFiles /stop|
 |Permuter l'ancre|SwapAnchor|Edit.SwapAnchor|
 |Pas à pas détaillé|t|Debug.StepInto|
@@ -116,17 +116,17 @@ Le tableau ci-dessous contient une liste des alias de commandes Visual Studio pr
 |Mosaïque verticale|TileV|Window.TileVertically|
 |Activer/Désactiver le signet|ToggleBook|Edit.ToggleBookmark|
 |Fenêtre Boîte à outils|toolbox|View.Toolbox|
-|[Afficher le code machine, commande](../../ide/reference/list-disassembly-command.md)|u|Debug.ListDisassembly|
+|[List code machine, commande](../../ide/reference/list-disassembly-command.md)|u|Debug.ListDisassembly|
 |Mettre en majuscules|Ucase|Edit.MakeUppercase|
 |Annuler|phase de restauration|Edit.Undo|
 |Remplacer les tabulations par des espaces dans la sélection|Untabify|Edit.UntabifySelection|
 |Fenêtre Espion|Espion|Debug.WatchN|
 |Activer/Désactiver le retour automatique à la ligne|WordWrap|Edit.ToggleWordWrap|
 |Afficher les processus|&#124;|Debug.ListProcesses|
-|[Répertorier les threads, commande](../../ide/reference/list-threads-command.md)|~ ~*k ~\*kb|Debug.ListThreads Debug.ListTheads /AllThreads|
+|[Liste des threads, commande](../../ide/reference/list-threads-command.md)|~ ~*k ~\*kb|Debug.ListThreads Debug.ListTheads /AllThreads|
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Commandes de studio visuel](../../ide/reference/visual-studio-commands.md)
-- [Commande, fenêtre](../../ide/reference/command-window.md)
-- [Boîte de recherche/commande](../../ide/find-command-box.md)
+- [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)
+- [Fenêtre commande](../../ide/reference/command-window.md)
+- [Zone Rechercher/commande](../../ide/find-command-box.md)

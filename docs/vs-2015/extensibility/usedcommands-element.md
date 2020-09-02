@@ -14,18 +14,18 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ba37458e0f8abca27047574170ab8aa3cc7a44ce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68186296"
 ---
 # <a name="usedcommands-element"></a>Élément UsedCommands
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-L’élément UsedCommands regroupe les éléments UsedCommand et autres regroupements UsedCommands.  
+L’élément UsedCommands groupe les éléments UsedCommand et d’autres regroupements UsedCommands.  
   
- L’élément UsedCommands est facultatif. Si vous n’appelez pas les commandes définies en dehors de votre package, il est inutile d’inclure cette section dans votre fichier .vsct.  
+ L’élément UsedCommands est facultatif. Si vous n’appelez pas de commandes définies en dehors de votre package, vous n’avez pas besoin d’inclure cette section dans votre fichier. vsct.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -48,15 +48,15 @@ L’élément UsedCommands regroupe les éléments UsedCommand et autres regroup
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[Élément UsedCommand](../extensibility/usedcommand-element.md)|La commande est implémentée par un autre code.|  
+|[Élément UsedCommand](../extensibility/usedcommand-element.md)|Commande implémentée par un autre code.|  
   
 ### <a name="parent-elements"></a>Éléments parents  
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[Élément CommandTable](../extensibility/commandtable-element.md)|Définit tous les éléments qui représentent des commandes (par exemple, les éléments de menu, menus, barres d’outils et zones de liste déroulante) qui fournit un VSPackage à l’environnement de développement intégré (IDE).|  
+|[Élément CommandTable](../extensibility/commandtable-element.md)|Définit tous les éléments qui représentent des commandes (par exemple, des éléments de menu, des menus, des barres d’outils et des zones de liste déroulante) qu’un VSPackage fournit à l’environnement de développement intégré (IDE).|  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a> Exemple  
   
 ```  
 <UsedCommands>  

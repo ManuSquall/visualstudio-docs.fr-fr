@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::Virtualize | Microsoft Docs
+title: 'IDebugPendingBreakpoint2 :: virtualiser | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: caf4277afc63d403cc3d02c4d79b9e5f2b1b8d26
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68143880"
 ---
 # <a name="idebugpendingbreakpoint2virtualize"></a>IDebugPendingBreakpoint2::Virtualize
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Active ou désactive le virtualisé cela en attente de point d’arrêt. Lorsqu’un point d’arrêt en attente est virtualisé, le moteur de débogage va tenter de lier chaque chargement de nouveau code dans le programme.  
+Active/désactive l’État virtualisé de ce point d’arrêt en attente. Lorsqu’un point d’arrêt en attente est virtualisé, le moteur de débogage tente de le lier chaque fois que le nouveau code se charge dans le programme.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -41,16 +41,16 @@ int Virtualize( 
   
 #### <a name="parameters"></a>Paramètres  
  `fVirtualize`  
- [in] Définir à différente de zéro (`TRUE`) pour virtualiser le point d’arrêt en attente ou à zéro (`FALSE`) pour désactiver la virtualisation.  
+ dans Définissez sur une valeur différente de zéro ( `TRUE` ) pour virtualiser le point d’arrêt en attente, ou sur zéro ( `FALSE` ) pour désactiver la virtualisation.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Retourne `E_BP_DELETED` si le point d’arrêt a été supprimé.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Retourne `E_BP_DELETED` si le point d’arrêt a été supprimé.  
   
 ## <a name="remarks"></a>Notes  
- Un point d’arrêt virtualisé est lié à chaque fois que le code est chargé.  
+ Un point d’arrêt virtualisé est lié chaque fois que le code est chargé.  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant montre comment implémenter cette méthode pour une simple `CPendingBreakpoint` objet qui expose le [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) interface.  
+ L’exemple suivant montre comment implémenter cette méthode pour un `CPendingBreakpoint` objet simple qui expose l’interface [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) .  
   
 ```cpp#  
 HRESULT CPendingBreakpoint::Virtualize(BOOL fVirtualize)    

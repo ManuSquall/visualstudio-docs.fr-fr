@@ -1,5 +1,5 @@
 ---
-title: IDebugAlias::GetObject | Microsoft Docs
+title: 'IDebugAlias :: GetObject | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bced4d6ea45cc33c3811e42428aa43c334b7b83b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68187235"
 ---
 # <a name="idebugaliasgetobject"></a>IDebugAlias::GetObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Obtient l’objet auquel cet alias est destinée.  
+Obtient l’objet pour lequel cet alias est destiné.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -40,9 +40,9 @@ int GetObject(
   
 #### <a name="parameters"></a>Paramètres  
  `ppObject`  
- [out] Le [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md) représente cet alias.  
+ à [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md) représenté par cet alias.  
   
-## <a name="return-value"></a>Valeur de retour  
+## <a name="return-value"></a>Valeur renvoyée  
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.  
   
 ## <a name="see-also"></a>Voir aussi  
