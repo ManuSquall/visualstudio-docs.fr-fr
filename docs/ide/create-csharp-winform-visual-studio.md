@@ -14,10 +14,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 79fb60f05d12b1105febc12a218b1f36ee498deb
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88248726"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-c"></a>Créer une application Windows Forms dans Visual Studio avec C\#
@@ -90,7 +90,7 @@ Vous allez d’abord créer un projet d’application C#. Le type de projet incl
 
 ::: moniker-end
 
-## <a name="create-the-application"></a>Créer l’application
+## <a name="create-the-application"></a>Création de l'application
 
 Une fois que vous avez sélectionné votre modèle de projet C# et que vous avez nommé votre fichier, Visual Studio ouvre un formulaire pour vous. Un formulaire est une interface utilisateur Windows. Nous allons créer une application « Hello World » en ajoutant des contrôles au formulaire, puis exécuter l’application.
 

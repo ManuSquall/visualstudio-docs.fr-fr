@@ -10,17 +10,17 @@ manager: AndSter
 ms.workload:
 - multiple
 ms.openlocfilehash: 4cba043d8300d47ae5ffba1c175a19fcfa2e65ed
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85330336"
 ---
 # <a name="events-viewer"></a>Observateur d’événements
 
 La visionneuse des événements génériques montre l’activité de l’application via une liste d’événements tels que le chargement du module, le démarrage du thread et la configuration du système. Cette vue vous aide à mieux diagnostiquer le fonctionnement de votre application dans le profileur Visual Studio.
 
-## <a name="setup"></a>Programme d’installation
+## <a name="setup"></a>Installation
 
 1. Appuyez sur **ALT + F2** pour ouvrir le profileur de performances dans Visual Studio.
 
@@ -43,11 +43,11 @@ Pour plus d’informations sur la façon de rendre l’outil plus efficace, cons
 |Nom de la colonne|Description|
 |----------|---------------------|
 |Nom du fournisseur|Source de l’événement|
-|Nom de l’événement|Événement spécifié par son fournisseur.|
+|Nom de l'événement|Événement spécifié par son fournisseur.|
 |Texte|Descriptions du fournisseur, du nom d’événement et de l’ID de l’événement|
 |Horodateur (MS)|Lorsque l’événement a eu lieu|
 |GUID du fournisseur|ID du fournisseur d’événements|
-|ID de l'événement|ID de l’événement|
+|ID de l’événement|ID de l’événement|
 |ID du processus|Processus à partir duquel l’événement s’est produit (s’il est connu)|
 |Nom du processus|Nom du processus s’il est en cours d’exécution|
 |ID du thread|ID du thread à partir duquel l’événement s’est produit (s’il est connu)|

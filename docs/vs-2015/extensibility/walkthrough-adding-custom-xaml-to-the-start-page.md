@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Ajout de XAML personnalisé à la Page de démarrage | Microsoft Docs'
+title: 'Procédure pas à pas : ajout de code XAML personnalisé à la page de démarrage | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,24 +12,24 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7b2de492bd1eddf4bf18e4824cdb64de4241fa5f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65674123"
 ---
-# <a name="walkthrough-adding-custom-xaml-to-the-start-page"></a>Procédure pas à pas : Ajout de code XAML personnalisé à la page de démarrage
+# <a name="walkthrough-adding-custom-xaml-to-the-start-page"></a>Procédure pas à pas : ajout de code XAML personnalisé à la page de démarrage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Cette procédure pas à pas montre comment créer un Visual Studio Page de démarrage personnalisée qui contient un navigateur Web.  
+Cette procédure pas à pas montre comment créer une page de démarrage Visual Studio personnalisée qui contient un navigateur Web.  
   
-## <a name="adding-custom-xaml"></a>Ajout de XAML personnalisé  
+## <a name="adding-custom-xaml"></a>Ajout de code XAML personnalisé  
   
-1. Créer une Page de démarrage en suivant les instructions dans [création d’une Page de démarrage personnalisée](../extensibility/creating-a-custom-start-page.md).  
+1. Créez une page de démarrage en suivant les instructions fournies dans [création d’une page de démarrage personnalisée](../extensibility/creating-a-custom-start-page.md).  
   
-2. Dans le fichier MainWindow.xaml, recherchez le \<grille > section.  
+2. Dans le fichier MainWindow. xaml, recherchez la \<Grid> section.  
   
-3. Ajouter un \<TabControl > élément et un \<TabItem > à l’intérieur de la \< grille > élément, comme indiqué dans l’exemple suivant.  
+3. Ajoutez un \<TabControl> élément et un \<TabItem> à l’intérieur de l' \< Grid> élément, comme indiqué dans l’exemple suivant.  
   
     ```xml  
     <Grid>  
@@ -41,7 +41,7 @@ Cette procédure pas à pas montre comment créer un Visual Studio Page de déma
     </Grid>  
     ```  
   
-4. Ajoutez une deuxième \<TabItem >, avec un \<bouton > élément qui ouvre un nouveau projet :  
+4. Ajoutez un second \<TabItem> , avec un \<Button> élément qui ouvre un nouveau projet :  
   
     ```xml  
     <Grid>  
@@ -59,37 +59,37 @@ Cette procédure pas à pas montre comment créer un Visual Studio Page de déma
     </Grid>  
     ```  
   
-## <a name="testing-the-custom-start-page"></a>Test de la Page de démarrage personnalisée  
+## <a name="testing-the-custom-start-page"></a>Test de la page de démarrage personnalisée  
   
 1. Appuyez sur F5.  
   
-     L’instance expérimentale de Visual Studio s’ouvre, avec la Page de démarrage personnalisée installée mais ne pas sélectionnée.  
+     L’instance expérimentale de Visual Studio s’ouvre, avec la page de démarrage personnalisée installée, mais non sélectionnée.  
   
-2. Dans l’instance expérimentale de Visual Studio, ouvrez le **Outils /Options / environnement** page.  
+2. Dans l’instance expérimentale de Visual Studio, ouvrez la page **Outils/Options/environnement** .  
   
-3. Sélectionnez **démarrage**. Sur le **personnaliser la Page de démarrage** liste, sélectionnez le fichier .xaml, puis cliquez sur **OK**.  
+3. Sélectionnez **démarrage**. Dans la liste **personnaliser la page de démarrage** , sélectionnez votre fichier. xaml, puis cliquez sur **OK**.  
   
 4. Dans le menu **Affichage** , cliquez sur **Page de démarrage**.  
   
-5. Cliquez sur le **Bing** onglet.  
+5. Cliquez sur l’onglet **Bing** .  
   
-     Vous devez voir une page web de Bing.  
+     Une page Web Bing doit s’afficher.  
   
-6. Cliquez sur le **MyButton** onglet.  
+6. Cliquez sur l’onglet **MyButton** .  
   
-     Vous devez voir un **MonProjet** bouton, ce qui ouvre le **nouveau projet** boîte de dialogue.  
+     Vous devez voir un bouton **MyProject** qui ouvre la boîte de dialogue **nouveau projet** .  
   
 7. Fermez l’instance expérimentale.  
   
-## <a name="applying-the-custom-start-page"></a>Application de la Page de démarrage personnalisée  
+## <a name="applying-the-custom-start-page"></a>Application de la page de démarrage personnalisée  
   
-#### <a name="to-test-the-custom-start-page"></a>Pour tester la Page de démarrage personnalisée  
+#### <a name="to-test-the-custom-start-page"></a>Pour tester la page de démarrage personnalisée  
   
-1. Dans **Outils / Options / environnement**, sélectionnez **démarrage**. Sur le **personnaliser la Page de démarrage** liste, sélectionnez le fichier .xaml, puis cliquez sur **OK**.  
+1. Dans **Outils/Options/environnement**, sélectionnez **démarrage**. Dans la liste **personnaliser la page de démarrage** , sélectionnez votre fichier. xaml, puis cliquez sur **OK**.  
   
 ## <a name="next-steps"></a>Étapes suivantes  
- La Page de démarrage de Visual Studio propose désormais un onglet qui affiche un onglet de navigateur Web et un onglet MyButton. Vous pouvez créer des Pages de démarrage personnalisées qui ont d’autres fonctionnalités à l’aide de la *code-behind* modèle pour ajouter un fichier .dll personnalisé, comme illustré dans [ajouter le contrôle utilisateur à la Page de démarrage](../extensibility/adding-user-control-to-the-start-page.md). Vous pouvez partager des Pages de démarrage personnalisées avec d’autres utilisateurs en publiant le fichier .vsix résultant de la [Visual Studio Marketplace](https://marketplace.visualstudio.com/) site Web, ou vers un autre site Web ou réseau de partage. Pour plus d’informations, consultez [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md).  
+ La page de démarrage de Visual Studio contient désormais un onglet qui affiche un onglet de navigateur Web et un onglet MyButton. Vous pouvez créer des pages de démarrage personnalisées qui ont d’autres fonctionnalités en utilisant le modèle *code-behind* pour ajouter un fichier. dll personnalisé, comme indiqué dans [Ajout d’un contrôle utilisateur à la page de démarrage](../extensibility/adding-user-control-to-the-start-page.md). Vous pouvez partager des pages de démarrage personnalisées avec d’autres utilisateurs en publiant le fichier. vsix résultant sur le site Web [Visual Studio Marketplace](https://marketplace.visualstudio.com/) ou sur un autre site Web ou partage réseau. Pour plus d’informations, consultez [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Personnalisation de la Page de démarrage](../ide/customizing-the-start-page-for-visual-studio.md)   
- [Conteneur des contrôles WPF](https://msdn.microsoft.com/a0177167-d7db-4205-9607-8ae316952566)
+ [Personnalisation de la page de démarrage](../ide/customizing-the-start-page-for-visual-studio.md)   
+ [Contrôles de conteneur WPF](https://msdn.microsoft.com/a0177167-d7db-4205-9607-8ae316952566)

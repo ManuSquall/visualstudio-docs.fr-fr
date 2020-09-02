@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: c87836f99684c7e16c022e3e9f15bf546ba82d62
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547782"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801 : Passez en revue les paramètres inutilisés
@@ -35,7 +35,7 @@ Pour obtenir la documentation la plus récente sur Visual Studio, consultez [CA1
 |Category|Microsoft. usage|
 |Modification avec rupture|Sans rupture : si le membre n’est pas visible à l’extérieur de l’assembly, quelle que soit la modification que vous apportez.<br /><br /> Sans rupture : Si vous modifiez le membre pour utiliser le paramètre dans son corps.<br /><br /> Avec rupture : Si vous supprimez le paramètre et qu’il est visible à l’extérieur de l’assembly.|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Une signature de méthode inclut un paramètre qui n'est pas utilisé dans le corps de la méthode. Cette règle n’examine pas les méthodes suivantes :
 
 - Méthodes référencées par un délégué.

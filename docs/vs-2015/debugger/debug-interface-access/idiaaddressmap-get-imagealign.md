@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3f3e7a326c78207976fb8493905b412df65e0c63
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68178240"
 ---
-# <a name="idiaaddressmapgetimagealign"></a>IDiaAddressMap::get_imageAlign
+# <a name="idiaaddressmapget_imagealign"></a>IDiaAddressMap::get_imageAlign
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Récupère l’alignement de l’image actuelle.  
@@ -35,13 +35,13 @@ HRESULT get_imageAlign ( 
   
 #### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- [out] Retourne la valeur d’alignement de l’exécutable.  
+ à Retourne la valeur d’alignement de l’image à partir de l’exécutable.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="remarks"></a>Notes  
- Les images sont alignés sur les limites de mémoire spécifiques en fonction de la façon dont l’image a été chargé et créée. L’alignement est généralement sur des limites de 1, 2, 4, 8, 16, 32 ou 64 octets. L’alignement de l’image peut être définie avec un appel à la [IDiaAddressMap::put_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-put-imagealign.md) (méthode).  
+ Les images sont alignées sur des limites de mémoire spécifiques, en fonction de la façon dont l’image a été chargée et créée. L’alignement s’effectue généralement sur des limites de 1, 2, 4, 8, 16, 32 ou 64 octets. L’alignement de l’image peut être défini à l’aide d’un appel à la méthode [IDiaAddressMap ::p ut_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-put-imagealign.md) .  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)   

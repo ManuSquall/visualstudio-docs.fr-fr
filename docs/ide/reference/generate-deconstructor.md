@@ -10,10 +10,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 5a3a89d15d05b44575fede98d3043d706b24c1d9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65531885"
 ---
 # <a name="generate-a-deconstructor-in-visual-studio"></a>Générer un constructeur dans Visual Studio
@@ -22,11 +22,11 @@ Cette génération de code s’applique à :
 
 - C#
 
-**Quoi :** Vous permet de générer immédiatement le talon de méthode pour un nouveau déconstructeur.
+**Ce qui suit :** Vous permet de générer immédiatement le stub de méthode pour un nouveau deconstructeur.
 
-**Quand :** Vous souhaitez déconstruire correctement votre type automatiquement.
+Dans les **cas suivants :** Vous voulez décomposer correctement votre type automatiquement.
 
-**Pourquoi:** Vous pouvez taper manuellement un déconstructeur, mais cette fonctionnalité génère le talon pour vous avec les paramètres corrects.
+**Pourquoi :** Vous pouvez taper manuellement un deconstructeur, mais cette fonctionnalité génère le stub pour vous avec les paramètres de sortie corrects.
 
 ## <a name="generate-a-deconstructor"></a>Générer un déconstructeur
 
@@ -50,6 +50,6 @@ Cette génération de code s’applique à :
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Génération de codes](../code-generation-in-visual-studio.md)
+- [Génération de code](../code-generation-in-visual-studio.md)
 - [Aperçu des modifications](../../ide/preview-changes.md)
 - [Conseils pour les développeurs .NET](../csharp-developer-productivity.md)

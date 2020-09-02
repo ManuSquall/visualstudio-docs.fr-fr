@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 113d6aafbd09f6b726613405a8c1eb82f9e202e5
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85330036"
 ---
 # <a name="cvleavespan-function"></a>CvLeaveSpan, fonction
@@ -36,7 +36,7 @@ HRESULT CvLeaveSpan(
 ## <a name="return-value"></a>Valeur renvoyée
  S_OK lorsque le message est correctement écrit. Code d’erreur en cas d’erreur. Utilisez les macros SUCCEEDED/FAILED pour vérifier la condition d’erreur.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  **En-tête :** *cvmarkers.h*
 
 ## <a name="see-also"></a>Voir aussi

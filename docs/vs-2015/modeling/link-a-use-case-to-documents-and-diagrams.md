@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c713759a8ea75eed3048469327f962668efa4f70
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657642"
 ---
 # <a name="link-a-use-case-to-documents-and-diagrams"></a>Lier un cas d'usage à des documents et diagrammes
@@ -74,14 +74,14 @@ Vous pouvez lier un cas d'usage dans un diagramme de cas d'usage à un autre dia
 
 ### <a name="to-link-to-a-shared-document-onenote-element-or-web-page"></a>Pour créer un lien vers un élément OneNote, une page web ou un document partagé
 
-1. Obtenez l'URL de l'élément partagé. Il peut s’agir, par exemple, d’un chemin d’accès au fichier réseau commençant par « \\ \\ », d’une page Web ou d’une URL SharePoint commençant par « http:// », ou d’un lien vers une section, une page ou un paragraphe OneNote commençant par « OneNote : ».
+1. Obtenez l'URL de l'élément partagé. Il peut s’agir, par exemple, d’un chemin d’accès au fichier réseau commençant par « \\ \\ », d’une page Web ou d’une URL SharePoint commençant par « http:// », ou d’un lien vers une section, une page ou un paragraphe OneNote commençant par « OneNote : ».
 
 2. Dans la boîte à outils, cliquez sur **artefact** , puis cliquez dans le diagramme de cas d’usage.
 
 3. Après avoir sélectionné le nouvel artefact, tapez ou collez l’URL dans la propriété **lien hypertexte** .
 
     > [!NOTE]
-    > Si vous souhaitez fournir un chemin d’accès de fichier, il est préférable de choisir un fichier dans un espace de travail commun (à partir de « \\ \\ ») ou un fichier dans votre solution Visual Studio. Cela garantit que le chemin d'accès au fichier restera valide sur l'ordinateur d'un autre membre de l'équipe ou en cas de déplacement de la solution. Pour ajouter un document tel qu’un document Word à votre solution, cliquez avec le bouton droit sur la solution dans Explorateur de solutions, pointez sur **Ajouter** , puis cliquez sur **élément existant**.
+    > Si vous souhaitez fournir un chemin d’accès de fichier, il est préférable de choisir un fichier dans un espace de travail commun (à partir de « \\ \\ ») ou un fichier dans votre solution Visual Studio. Cela garantit que le chemin d'accès au fichier restera valide sur l'ordinateur d'un autre membre de l'équipe ou en cas de déplacement de la solution. Pour ajouter un document tel qu’un document Word à votre solution, cliquez avec le bouton droit sur la solution dans Explorateur de solutions, pointez sur **Ajouter** , puis cliquez sur **élément existant**.
 
 ## <a name="see-also"></a>Voir aussi
  [Diagrammes de cas d’usage UML : référence](../modeling/uml-use-case-diagrams-reference.md) [diagrammes de cas d’usage UML : instructions](../modeling/uml-use-case-diagrams-guidelines.md) [modifier des modèles et des diagrammes UML](../modeling/edit-uml-models-and-diagrams.md) [créer des modèles pour votre application](../modeling/create-models-for-your-app.md)

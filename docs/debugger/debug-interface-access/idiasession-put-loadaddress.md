@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 807346ef5a34c0b175257fe2099dc25e8de692f6
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85465383"
 ---
 # <a name="idiasessionput_loadaddress"></a>IDiaSession::put_loadAddress
@@ -35,7 +35,7 @@ HRESULT put_loadAddress ( 
 
 dans Adresse de chargement du fichier exécutable.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Les propriétés d’adresse virtuelle de symbole (VA) sont calculées à l’aide de la valeur de cette méthode. Les adresses virtuelles ne sont pas calculées, sauf si cette propriété est définie sur une valeur différente de zéro.
 
 > [!NOTE]

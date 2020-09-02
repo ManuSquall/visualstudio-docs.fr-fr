@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a2fa9581d94b3b70ca427c292c147562a11d55a4
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75847996"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Outils d’analyse des performances sur les applications Windows 8 et Windows Server 2012
@@ -24,8 +24,8 @@ Les fonctionnalités de sécurité renforcée de Windows 8 et Windows Server 2
 > [!NOTE]
 > Les outils d’analyse des performances des autres versions prises en charge de Windows (Windows 7, Windows Server 2008 R2) n’ont pas changé.  
   
-## <a name="BKMK_In_this_topic"></a> Dans cette rubrique  
- [Collecte de données dans des applications du Windows Store à partir de l’IDE de Visual Studio](#BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE)  
+## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a> Dans cette rubrique  
+ [Collecte de données sur les applications du Windows Store à partir de l’IDE de Visual Studio](#BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE)  
   
  [Collecte de données dans des applications qui s’exécutent sur les postes de travail Windows 8 ou sur Windows Server 2012 à partir de l’IDE de Visual Studio](#BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE)  
   
@@ -33,9 +33,9 @@ Les fonctionnalités de sécurité renforcée de Windows 8 et Windows Server 2
   
   [Profilage à partir de la ligne de commande](#BKMK_Profiling_from_the_command_line)  
   
-  [Collecte de données d’interaction de couche (TIP)](#BKMK_Collecting_tier_interaction__TIP__data)  
+  [Collecte des données d'interaction de couche (TIP)](#BKMK_Collecting_tier_interaction__TIP__data)  
   
-## <a name="BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE"></a> Collecte de données dans des applications du Windows Store à partir de l’IDE de Visual Studio  
+## <a name="collecting-data-on-windows-store-apps-from-the-visual-studio-ide"></a><a name="BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE"></a> Collecte de données dans des applications du Windows Store à partir de l’IDE de Visual Studio  
  Quand vous profilez une application du Windows Store écrite en JavaScript et HTML 5, vous collectez des données d’instrumentation pour le code JavaScript. Quand vous profilez une application ou un composant du Windows Store écrit en Visual C++, Visual C# ou Visual Basic, vous collectez des données d’échantillonnage pour le code natif et managé. Vous pouvez profiler votre application localement ou sur un ordinateur distant.  
   
  Ces fonctionnalités et options de profilage ne sont pas prises en charge quand il s’agit de profiler des applications du Windows Store :  
@@ -60,7 +60,7 @@ Les fonctionnalités de sécurité renforcée de Windows 8 et Windows Server 2
   
   [Exécuter des applications du Windows Store sur un ordinateur distant](../debugger/run-windows-store-apps-on-a-remote-machine.md)  
   
-  [Analyser les performances des applications](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)  
+  [Analyser le niveau de performance de l’application](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)  
   
 - [Minutage de fonction JavaScript](https://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03)  
   
@@ -68,7 +68,7 @@ Les fonctionnalités de sécurité renforcée de Windows 8 et Windows Server 2
   
 - [Analyser les données de minutage de fonction JavaScript](https://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
   
-- [Profiler du code Visual C++, Visual C# et Visual Basic dans des applications du Windows Store sur un ordinateur local](https://msdn.microsoft.com/2d0c939e-0bac-48c5-b727-46f6c6113060)  
+- [Profiler du code Visual C++, Visual C# et Visual Basic dans des applications du Windows Store sur un ordinateur local](https://msdn.microsoft.com/2d0c939e-0bac-48c5-b727-46f6c6113060)  
   
 - [Profiler le code Visual C++, Visual C# et Visual Basic des applications Windows Store sur un périphérique distant](https://msdn.microsoft.com/b932a2be-11b0-40fd-b996-75c6b6a79d22)  
   
@@ -76,19 +76,19 @@ Les fonctionnalités de sécurité renforcée de Windows 8 et Windows Server 2
   
   [Dans cette rubrique](#BKMK_In_this_topic)  
   
-## <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE"></a>Collecte de données dans des applications qui s’exécutent sur les postes de travail Windows 8 ou sur Windows Server 2012 à partir de l’IDE de Visual Studio  
+## <a name="collecting-data-on-apps-running-on-the-windows-8-desktop-or-on-windows-server-2012-from-the-visual-studio-ide"></a><a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE"></a> Collecte de données sur les applications qui s’exécutent sur le bureau Windows 8 ou sur Windows Server 2012 à partir de l’IDE de Visual Studio  
  Le profilage à l’aide de la méthode d’instrumentation n’a pas évolué pour Windows 8.  
   
  Le profilage d’interaction de couche (TIP) n’est pas pris en charge en utilisant la méthode d’échantillonnage.  
   
-### <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_by_using_sampling_from_the_Visual_Studio_IDE"></a>Collecte de données dans des applications qui s’exécutent sur les postes de travail Windows 8 ou sur Windows Server 2012 à l’aide de l’échantillonnage de l’IDE de Visual Studio  
+### <a name="collecting-data-on-apps-running-on-the-windows-8-desktop-or-on-windows-server-2012-by-using-sampling-from-the-visual-studio-ide"></a><a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_by_using_sampling_from_the_Visual_Studio_IDE"></a> Collecte de données sur des applications exécutées sur le bureau Windows 8 ou sur Windows Server 2012 à l’aide de l’échantillonnage de l’IDE de Visual Studio  
  Ces fonctionnalités et options de profilage ne sont pas prises en charge quand il s’agit de profiler des applications de bureau Windows 8 ou des applications Windows Server 2012 à l’aide de la méthode d’échantillonnage :  
   
 - Profilage d’interaction de couche (TIP). La collecte de données de TIP est prise en charge en utilisant l’instrumentation.  
   
 - Options d’échantillonnage, telles que la définition de l’événement d’échantillonnage et l’intervalle de temporisation, ou la collecte de données de compteurs de performances supplémentaires.  
   
-## <a name="BKMK_Profiling_from_the_command_line"></a> Profilage à partir de la ligne de commande  
+## <a name="profiling-from-the-command-line"></a><a name="BKMK_Profiling_from_the_command_line"></a> Profilage à partir de la ligne de commande  
  Pour collecter les données de profilage sur les appareils Windows 8 et Windows Server 2012, y compris les appareils qui n’ont pas d’installation de Visual Studio, vous pouvez utiliser deux outils de ligne de commande :  
   
 |Nom de l’outil|Description|  
@@ -102,7 +102,7 @@ Les fonctionnalités de sécurité renforcée de Windows 8 et Windows Server 2
   
 - Téléchargez les outils dans le cadre des Outils de contrôle à distance pour Visual Studio à partir du [site web MSDN](https://www.microsoft.com/visualstudio/eng#downloads+d-additional-software).  
   
-- Copiez et exécutez le programme d’installation des outils de profilage autonomes à partir de votre ordinateur Visual Studio. Les programmes d’installation se trouvent dans le dossier *% VSInstallDir%* **\Team Tools\Performance Tools\Setups** Choisissez le programme d’installation correspondant au système d’exploitation (x86/x64) de l’ordinateur distant.  
+- Copiez et exécutez le programme d’installation des outils de profilage autonomes à partir de votre ordinateur Visual Studio. Les programmes d’installation se trouvent dans le dossier *VSInstallDir%* **\Team Tools\Performance Tools\Setups** . Choisissez le programme d’installation correspondant au système d’exploitation (x86/x64) de l’ordinateur distant.  
   
 > [!NOTE]
 > Pour collecter les données de profilage TIP, vous devez installer le profileur autonome de votre ordinateur Visual Studio sur l’ordinateur distant.  
@@ -115,12 +115,12 @@ Les fonctionnalités de sécurité renforcée de Windows 8 et Windows Server 2
   
 - Options d’échantillonnage, telles que la définition de l’événement d’échantillonnage et l’intervalle de temporisation, ou la collecte de données de compteurs de performances supplémentaires.  
   
-## <a name="BKMK_Collecting_tier_interaction__TIP__data"></a> Collecte des données d'interaction de couche (TIP)  
+## <a name="collecting-tier-interaction-tip-data"></a><a name="BKMK_Collecting_tier_interaction__TIP__data"></a> Collecte de données d’interaction de couche (TIP)  
  Le profilage d’interaction de couche fournit des informations supplémentaires sur les temps d’exécution des fonctions d’applications multicouches qui communiquent avec des bases de données via les services ADO.NET. Les données sont collectées uniquement pour les appels de fonctions synchrones.  
   
  **Éditions Visual Studio**  
   
- Les données de profilage d’interaction de couche peuvent être collectées en utilisant [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]ou [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)]. Cependant, ces données ne peuvent être affichées que dans [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] et [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
+ Les données de profilage d’interaction de couche peuvent être collectées en utilisant [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]ou [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)]. Cependant, les données de profilage d’interaction de couche ne peuvent être affichées que dans [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] et [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
   
  **Windows 8 et Windows Server 2012**  
   
@@ -132,11 +132,11 @@ Les fonctionnalités de sécurité renforcée de Windows 8 et Windows Server 2
   
    **Assistant Performance et Explorateur de performances**  
   
-   Vous devez ajouter l’option de collecte de données d’interaction de couche à une exécution du profilage à partir de l’Explorateur de performances. Vous devez aussi ajouter le projet, l’exécutable ou le site web au nœud cible de l’Explorateur de performances. Consultez [Collecte de données d’interaction de couche](../profiling/collecting-tier-interaction-data.md).  
+   Vous devez ajouter l’option de collecte de données d’interaction de couche à une exécution du profilage à partir de l’Explorateur de performances. Vous devez aussi ajouter le projet, l’exécutable ou le site web au nœud cible de l’Explorateur de performances. Consultez [collecte de données d’interaction de couche](../profiling/collecting-tier-interaction-data.md).  
   
    **Collecte de données TiP sur un ordinateur distant**  
   
-   Pour collecter des données d’interaction entre niveaux sur un ordinateur distant, vous devez copier le fichier **vs\_profiler\_** _\<Plateforme>_ **\_** _\<Langage>_ **.exe** depuis le dossier _%VSInstallDir%_ **\Team Tools\Performance Tools\Setups** d’un ordinateur Visual Studio vers l’ordinateur distant, puis lancer l’installation. Vous ne pouvez pas utiliser les outils de profilage contenus dans le package de téléchargement [Outils de contrôle à distance de Visual Studio](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) .  
+   Pour collecter les données d’interaction de couche sur un ordinateur distant, vous devez copier le fichier **vs \_ Profiler \_ ** _\<Platform>_ **\_** _\<Language>_ **. exe** du dossier _% VSInstallDir%_**\Team Tools\Performance Tools\Setups** d’un ordinateur Visual Studio sur l’ordinateur distant et l’installer. Vous ne pouvez pas utiliser les outils de profilage contenus dans le package de téléchargement [Outils de contrôle à distance de Visual Studio](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) .  
   
    Vous pouvez utiliser [VSPerfCmd](../profiling/vsperfcmd.md) ou [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) pour collecter les données de profilage.  
   
@@ -146,5 +146,5 @@ Les fonctionnalités de sécurité renforcée de Windows 8 et Windows Server 2
   
 ## <a name="see-also"></a>Voir aussi  
  [Explorateur de performances](../profiling/performance-explorer.md)   
- [Configuration de sessions de performance](../profiling/configuring-performance-sessions.md)   
+ [Configuration des sessions de performance](../profiling/configuring-performance-sessions.md)   
  [Profilage à partir de la ligne de commande](../profiling/using-the-profiling-tools-from-the-command-line.md)

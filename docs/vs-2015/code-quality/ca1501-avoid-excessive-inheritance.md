@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: cf797ad67b7df2eb1f3ba1246e965ed6ebbd586d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547860"
 ---
 # <a name="ca1501-avoid-excessive-inheritance"></a>CA1501 : Éviter l'excès d'héritage
@@ -32,7 +32,7 @@ ms.locfileid: "85547860"
 |Category|Microsoft. maintenabilité|
 |Modification avec rupture|Rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Un type est imbriqué de plus de quatre niveaux dans sa hiérarchie d'héritage.
 
 ## <a name="rule-description"></a>Description de la règle

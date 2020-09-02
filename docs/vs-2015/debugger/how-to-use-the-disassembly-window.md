@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : La fenêtre code machine | Microsoft Docs'
+title: 'Comment : utiliser la fenêtre Code machine | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -26,16 +26,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c25c3cdeb96abacb4123b2d0a851ac3d4acb0cd5
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65696144"
 ---
-# <a name="how-to-use-the-disassembly-window"></a>Procédure : La fenêtre code machine
+# <a name="how-to-use-the-disassembly-window"></a>Comment : utiliser la fenêtre Code Machine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Cette fonctionnalité est disponible uniquement si le débogage au niveau des adresses est activé le **Options** boîte de dialogue, **débogage** nœud. Elle n'est pas disponible pour le débogage de script ni le débogage SQL.  
+Cette fonctionnalité est disponible uniquement si le débogage au niveau de l’adresse est activé dans la boîte de dialogue **options** , nœud **débogage** . Elle n'est pas disponible pour le débogage de script ni le débogage SQL.  
   
  La fenêtre **Code Machine** affiche le code assembleur correspondant aux instructions créées par le compilateur. Si vous déboguez du code managé, ces instructions assembleur correspondent au code natif créé par le compilateur juste-à-temps (JIT), et non au langage intermédiaire de Microsoft (MSIL) généré par le compilateur Visual Studio.  
   
@@ -60,22 +60,22 @@ Cette fonctionnalité est disponible uniquement si le débogage au niveau des ad
   Vous n'aurez probablement jamais le désir ni le besoin de consulter les instructions du code machine dans leur format numérique brut, plutôt qu'en langage assembleur. Néanmoins, si vous le souhaitez, vous pouvez les consulter dans la fenêtre Mémoire ou en sélectionnant Octets du code dans le menu contextuel de la fenêtre Code Machine.  
   
 > [!NOTE]
-> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Les boîtes de dialogue et les commandes de menu affichées peuvent différer de celles décrites dans l'Aide selon les paramètres actifs ou le mode d'édition. Pour modifier vos paramètres, choisissez **Paramètres d'importation et d'exportation** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-display-the-disassembly-window"></a>Pour afficher la fenêtre Code Machine  
   
-- Sur le **déboguer** menu, choisissez **Windows**, puis cliquez sur **désassemblage**.  
+- Dans le menu **Déboguer** , choisissez **fenêtres**, puis cliquez sur **code machine**.  
   
      Le débogueur doit être en cours d'exécution ou en mode arrêt.  
   
 ### <a name="to-turn-optional-information-on-or-off"></a>Pour activer ou désactiver les informations facultatives  
   
-- Cliquez sur le **désassemblage** fenêtre, puis activez ou désactivez les options souhaitées dans le menu contextuel.  
+- Cliquez avec le bouton droit sur la fenêtre **code machine** , puis définissez ou désactivez les options souhaitées dans le menu contextuel.  
   
      Dans la marge de gauche, une flèche jaune marque l'emplacement du point d'exécution en cours. Pour le code natif, il correspond au compteur programme de la CPU. Cet emplacement montre l'instruction suivante qui sera exécutée dans votre programme.  
   
-     Pour plus d’informations, consultez [vers le haut ou vers le bas dans la mémoire](../debugger/how-to-page-up-or-down-in-memory.md).  
+     Pour plus d’informations, consultez [pagination en mémoire](../debugger/how-to-page-up-or-down-in-memory.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Affichage des données dans le débogueur](../debugger/viewing-data-in-the-debugger.md)   
- [Guide pratique pour utiliser la fenêtre Registres](../debugger/how-to-use-the-registers-window.md)
+ [Comment : utiliser la fenêtre Registres](../debugger/how-to-use-the-registers-window.md)

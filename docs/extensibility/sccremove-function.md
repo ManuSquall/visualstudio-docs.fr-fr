@@ -1,5 +1,5 @@
 ---
-title: Fonction SccRemove (fr) Microsoft Docs
+title: SccRemove fonction) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 17889d50dbdcf68dd4cca161d6703b8b6d69ad47
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80700455"
 ---
 # <a name="sccremove-function"></a>Fonction SccRemove
-Cette fonction supprime les fichiers du système de contrôle source.
+Cette fonction supprime les fichiers du système de contrôle de code source.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -37,50 +37,50 @@ SCCRTN SccRemove(
 ```
 
 #### <a name="parameters"></a>Paramètres
- pvContexte
+ pvContext
 
-[dans] La structure de contexte de plug-in de contrôle de source.
+dans Structure de contexte du plug-in de contrôle de code source.
 
  hWnd
 
-[dans] Une poignée à la fenêtre IDE que le plug-in de contrôle source peut utiliser comme parent pour toutes les boîtes de dialogue qu’il fournit.
+dans Handle de la fenêtre IDE que le plug-in de contrôle de code source peut utiliser comme parent pour toutes les boîtes de dialogue qu’il fournit.
 
- nFiles
+ Nfichiers
 
-[dans] Nombre de fichiers `lpFileNames` spécifiés dans le tableau.
+dans Nombre de fichiers spécifiés dans le `lpFileNames` tableau.
 
  lpFileNames
 
-[dans] Array de noms de chemin local entièrement qualifiés des fichiers à supprimer.
+dans Tableau de noms de chemins d’accès locaux complets des fichiers à supprimer.
 
  lpComment
 
-[dans] Le commentaire à appliquer à chaque fichier supprimé.
+dans Commentaire à appliquer à chaque fichier supprimé.
 
  fOptions
 
-[dans] Drapeaux de commandement (inutilisés).
+dans Indicateurs de commande (inutilisé).
 
  pvOptions
 
-[dans] Options spécifiques au plug-in de contrôle des sources.
+dans Options spécifiques au plug-in de contrôle de code source.
 
-## <a name="return-value"></a>Valeur de retour
- La mise en œuvre plug-in de cette fonction de contrôle source devrait renvoyer l’une des valeurs suivantes :
+## <a name="return-value"></a>Valeur renvoyée
+ L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
 |Valeur|Description|
 |-----------|-----------------|
-|SCC_OK|L’enlèvement a été un succès.|
-|SCC_E_FILENOTCONTROLLED|Le fichier sélectionné n’est pas sous contrôle source.|
-|SCC_E_OPNOTSUPPORTED|Le système de contrôle à la source ne prend pas en charge cette opération.|
-|SCC_E_ISCHECKEDOUT|Impossible de supprimer un fichier parce qu’un utilisateur l’a actuellement vérifié.|
-|SCC_E_ACCESSFAILURE|Il y avait un problème d’accès au système de contrôle à la source, probablement en raison de problèmes de réseau ou de contention.|
+|SCC_OK|La suppression a réussi.|
+|SCC_E_FILENOTCONTROLLED|Le fichier sélectionné n’est pas sous contrôle de code source.|
+|SCC_E_OPNOTSUPPORTED|Le système de contrôle de code source ne prend pas en charge cette opération.|
+|SCC_E_ISCHECKEDOUT|Impossible de supprimer un fichier parce qu’il est actuellement extrait par un utilisateur.|
+|SCC_E_ACCESSFAILURE|Un problème est survenu lors de l’accès au système de contrôle de code source, probablement en raison de problèmes de réseau ou de contention.|
 |SCC_E_NOTAUTHORIZED|L’utilisateur n’est pas autorisé à effectuer cette opération.|
-|SCC_E_NONSPECIFICERROR|Défaillance non spécifique; n’a pas été supprimé.|
-|SCC_I_OPERATIONCANCELED|L’opération a été annulée avant l’achèvement.|
+|SCC_E_NONSPECIFICERROR|Échec non spécifique ; le fichier n’a pas été supprimé.|
+|SCC_I_OPERATIONCANCELED|L’opération a été annulée avant la fin.|
 
 ## <a name="remarks"></a>Notes
- Cette fonction supprime les fichiers du système de contrôle source, mais ne les supprime pas du disque dur local de l’utilisateur.
+ Cette fonction supprime les fichiers du système de contrôle de code source, mais ne les supprime pas du disque dur local de l’utilisateur.
 
 ## <a name="see-also"></a>Voir aussi
 - [Fonctions d’API du plug-in de contrôle de code source](../extensibility/source-control-plug-in-api-functions.md)

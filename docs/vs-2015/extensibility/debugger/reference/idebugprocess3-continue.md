@@ -13,10 +13,10 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 92a36bb7e89d8afaa6d76f7d7b3772bd1714ffa7
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86386236"
 ---
 # <a name="idebugprocess3continue"></a>IDebugProcess3::Continue
@@ -45,7 +45,7 @@ int Continue(
  `pThread`  
  dans Objet [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) qui représente le thread à continuer.  
   
-## <a name="return-value"></a>Valeur de retour  
+## <a name="return-value"></a>Valeur renvoyée  
  En cas de réussite, retourne `S_OK` ; sinon, retourne le code d’erreur.  
   
 ## <a name="remarks"></a>Notes  

@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugProcesses2 - France Microsoft Docs
+title: IEnumDebugProcesses2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8b9fe0e96ade081e8da11b5e1c06c5b45279b10b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80715760"
 ---
 # <a name="ienumdebugprocesses2"></a>IEnumDebugProcesses2
-Cette interface énumère les processus en cours d’exécution sur un port de déboguer.
+Cette interface énumère les processus en cours d’exécution sur un port de débogage.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -35,25 +35,25 @@ IEnumDebugProcesses : IUnknown
  Visual Studio appelle [EnumProcesses](../../../extensibility/debugger/reference/idebugport2-enumprocesses.md) pour obtenir cette interface.
 
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable
- Le tableau suivant montre `IEnumDebugProcesses2`les méthodes de .
+ Le tableau suivant présente les méthodes de `IEnumDebugProcesses2` .
 
 |Méthode|Description|
 |------------|-----------------|
-|[Suivant](../../../extensibility/debugger/reference/ienumdebugprocesses2-next.md)|Récupère un nombre précis de processus dans une séquence de recensement.|
-|[Ignorer](../../../extensibility/debugger/reference/ienumdebugprocesses2-skip.md)|Passe un nombre précis de processus dans une séquence de recensement.|
+|[Next](../../../extensibility/debugger/reference/ienumdebugprocesses2-next.md)|Récupère un nombre spécifié de processus dans une séquence d’énumération.|
+|[Skip](../../../extensibility/debugger/reference/ienumdebugprocesses2-skip.md)|Ignore un nombre spécifié de processus dans une séquence d’énumération.|
 |[Réinitialiser](../../../extensibility/debugger/reference/ienumdebugprocesses2-reset.md)|Réinitialise une séquence d'énumération.|
-|[Clone](../../../extensibility/debugger/reference/ienumdebugprocesses2-clone.md)|Crée un enumérateur qui contient le même état de recensement que l’enumérateur actuel.|
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugprocesses2-getcount.md)|Obtient le nombre de processus dans un enumérateur.|
+|[Clone](../../../extensibility/debugger/reference/ienumdebugprocesses2-clone.md)|Crée un énumérateur qui contient le même état d’énumération que l’énumérateur actuel.|
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugprocesses2-getcount.md)|Obtient le nombre de processus dans un énumérateur.|
 
 ## <a name="remarks"></a>Notes
- Visual Studio utilise cette interface pour remplir la fenêtre **Processes.**
+ Visual Studio utilise cette interface pour remplir la fenêtre **processus** .
 
-## <a name="requirements"></a>Spécifications
- En-tête: msdbg.h
+## <a name="requirements"></a>Configuration requise
+ En-tête : msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Espace de noms : Microsoft. VisualStudio. Debugger. Interop
 
- Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Interfaces de base](../../../extensibility/debugger/reference/core-interfaces.md)

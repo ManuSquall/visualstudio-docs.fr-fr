@@ -20,13 +20,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ef861d13387c013659e5e4c1714680b71896858c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657864"
 ---
-# <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>Paramètres de projet VC++, Projets et solutions, boîte de dialogue Options
+# <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>Paramètres du projet VC++, Projets et solutions, boîte de dialogue Options
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Cette boîte de dialogue vous permet de définir des paramètres du projet [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] relatifs à la journalisation de la génération et à la prise en charge des types de fichiers.
@@ -35,7 +35,7 @@ Cette boîte de dialogue vous permet de définir des paramètres du projet [!INC
 
 1. Dans le menu **Outils** , cliquez sur **Options**.
 
-2. Sélectionnez **Projets et solutions**, puis **Paramètres de projet VC++** .
+2. Sélectionnez **Projets et solutions**, puis **Paramètres de projet VC++**.
 
 ## <a name="build-customization-search-path"></a>Chemin de recherche des personnalisations de la build
  Spécifie la liste des répertoires contenant les fichiers .rules, qui vous permettent de définir des règles de génération pour vos projets.
@@ -70,4 +70,4 @@ Cette boîte de dialogue vous permet de définir des paramètres du projet [!INC
  **Afficher tous les fichiers** Configure **Explorateur de solutions** pour afficher les fichiers du projet et les fichiers sur le disque dans le dossier du projet.
 
 ## <a name="see-also"></a>Voir aussi
- [Génération de cC++ /Programs](https://msdn.microsoft.com/library/fa6ed4ff-334a-4d99-b5e2-a1f83d2b3008) [cC++ /Build de référence](https://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d)
+ Génération de la [référence de génération c](https://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) /C++ des [programmes c/c++](https://msdn.microsoft.com/library/fa6ed4ff-334a-4d99-b5e2-a1f83d2b3008)

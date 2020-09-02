@@ -12,79 +12,79 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 19d82f006bb1c37981f60e1a0b2710588eb0053c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204783"
 ---
 # <a name="visual-studio-debugger-glossary"></a>Glossaire du débogueur Visual Studio
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Les éléments suivants sont des termes utilisés dans le [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] SDK de débogage.  
+Voici les termes utilisés dans le [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] Kit de développement logiciel (SDK) de débogage.  
   
 ## <a name="terms"></a>Termes  
  point d’arrêt lié  
- Abstraction d’un point d’arrêt défini dans le code. Il existe une relation entre un point d’arrêt lié et une instruction de point d’arrêt dans le flux de code. Quand le code décharge, points d’arrêt liés peuvent annuler la liaison.  
+ Abstraction d’un point d’arrêt défini dans le code. Il existe une relation un-à-un entre un point d’arrêt lié et une instruction de point d’arrêt dans le flux de code. Lors du déchargement du code, les points d’arrêt liés peuvent être dissociés.  
   
- lien de causalité  
- Offre la possibilité de suivre un thread logique d’exécution sur plusieurs threads physiques, des processus et des machines et pour reconstruire la pile des appels de ce thread logique à un moment donné dans la durée de vie de ce thread.  
+ causalité  
+ Permet d’effectuer le suivi d’un thread logique d’exécution sur plusieurs threads physiques, processus et ordinateurs, et de reconstruire la pile des appels de ce thread logique à un point donné dans la durée de vie de ce thread.  
   
  Contexte de code  
- Fournit une abstraction d’une position dans le code connu du moteur de débogage. Pour la plupart des architectures d’exécution, un contexte de code est une adresse dans le flux d’instructions d’un programme. Pour les langues non traditionnel, dans lequel code ne peut pas être représenté par des instructions, un contexte de code peut être représenté par d’autres moyens.  
+ Fournit une abstraction d’une position dans le code connue du moteur de débogage. Pour la plupart des architectures Runtime, un contexte de code est une adresse dans le flux d’instructions d’un programme. Pour les langages non traditionnels, dans lesquels le code ne peut pas être représenté par des instructions, un contexte de code peut être représenté par d’autres moyens.  
   
- chemin d’accès du code  
- Représente un point d’exécution dans le code où provient d’une branche ou un appel de fonction est effectué. Une trace de pile est essentiellement une liste de chemins de code d’appel de fonction.  
+ chemin du code  
+ Représente un point d’exécution dans le code où une branche est prise ou un appel de fonction est effectué. Une trace de la pile est essentiellement une liste de chemins de code d’appel de fonction.  
   
- moteur de débogage (DE)  
- Un composant qui permet le débogage d’une architecture d’exécution. Un moteur de débogage fonctionne conjointement avec le système d’exploitation ou un interpréteur et fournit des services de débogage telles que l’exécution du contrôle des points d’arrêt, évaluation et expression.  
+ moteur DE débogage (DE)  
+ Composant qui autorise le débogage d’une architecture au moment de l’exécution. Un moteur de débogage fonctionne conjointement avec l’interpréteur ou le système d’exploitation et fournit des services de débogage tels que le contrôle d’exécution, les points d’arrêt et l’évaluation d’expression.  
   
  Contexte de document  
- Fournit une abstraction d’une position dans un document de fichier source connu du moteur de débogage. Pour la plupart des langages, un contexte de document est une position dans un fichier source. Pour les langues non traditionnel, pour lesquels le fichier source ne peut pas être texte, un contexte de document peut être représenté par d’autres moyens. Voir aussi *document position*.  
+ Fournit une abstraction d’une position dans un document de fichier source connu du moteur de débogage. Pour la plupart des langues, un contexte de document est une position dans un fichier source. Pour les langues non traditionnelles, pour lesquelles le fichier source peut ne pas être du texte, un contexte de document peut être représenté par d’autres moyens. Voir aussi *position du document*.  
   
- Position du document  
- Fournit une abstraction d’une position dans un fichier source connu pour l’IDE. Pour la plupart des langages, une position de document est une position dans un fichier source. Pour les langues non traditionnel, une position de document peut être représentée par d’autres moyens. Voir aussi *contexte de document*.  
+ position du document  
+ Fournit une abstraction d’une position dans un fichier source connu de l’IDE. Pour la plupart des langues, une position de document est une position dans un fichier source. Pour les langages non traditionnels, une position de document peut être représentée d’autres façons. Voir aussi *contexte de document*.  
   
- point d’arrêt de l’erreur  
- Une abstraction pour la description d’une erreur dans un point d’arrêt en attente. Un point d’arrêt de l’erreur peut-être décrire une erreur dans l’emplacement du point d’arrêt en attente, l’expression associée au point d’arrêt en attente, ou d’autres informations qui empêche le point d’arrêt en attente à partir de la liaison vers un emplacement du code.  
+ point d’arrêt d’erreur  
+ Abstraction pour la description d’une erreur dans un point d’arrêt en attente. Un point d’arrêt d’erreur peut décrire une erreur à l’emplacement du point d’arrêt en attente, l’expression associée au point d’arrêt en attente, ou d’autres informations qui empêchent le point d’arrêt en attente de se lier à un emplacement de code.  
   
- Contexte d’évaluation  
- Fournit une abstraction d’un contexte de programmation pour l’évaluation d’expression. En règle générale, un contexte d’évaluation est une étendue. Lors de la version d’évaluation de l’expression dans le contexte d’une expression, le contexte d’expression fournit des règles de portée qui correspondent à son point de la création. Par exemple, un contexte de l’expression créé dans un frame de pile fournit le contexte pour évaluer les variables locales, les paramètres de méthode, les membres de classe (le cas échéant) et les variables globales.  
+ contexte d’évaluation  
+ Fournit une abstraction d’un contexte de programmation pour l’évaluation d’expression. En règle générale, un contexte d’évaluation est une étendue. Lorsque vous procédez à une évaluation d’expression dans un contexte d’expression, le contexte d’expression fournit des règles d’étendue qui correspondent à son point de création. Par exemple, un contexte d’expression créé dans un frame de pile fournit le contexte pour l’évaluation des variables locales, des paramètres de méthode, des membres de classe (le cas échéant) et des variables globales.  
   
- exception interceptée  
- Une exception est interceptée par un moteur de débogage, même si aucun mécanisme d’exceptions ne sont en place dans le frame de pile actuel.  
+ Exception interceptée  
+ Exception interceptée par un moteur de débogage, même si aucun mécanisme de gestion des exceptions n’est en place dans le frame de pile actuel.  
   
  JustMyCode  
- Le concept de débogage uniquement du code qui appartient à un utilisateur et en ignorant tout le code intermédiaire tel que le code du système, même si le code source est disponible pour le code de ce système.  
+ Le concept de débogage du code qui appartient à un utilisateur et d’ignorer tout le code intermédiaire tel que le code système, même si le code source est disponible pour ce code système.  
   
  point d’arrêt en attente  
- Fournit une abstraction pour les points d’arrêt avant, pendant et après le code est chargé et une méthode pour virtualiser des points d’arrêt. Un en attente de point d’arrêt :  
+ Fournit une abstraction pour les points d’arrêt avant, pendant et après le chargement du code et une méthode pour virtualiser les points d’arrêt. Un point d’arrêt en attente :  
   
-- Contient toutes les informations nécessaires pour lier un point d’arrêt au code dans un ou plusieurs programmes.  
+- Contient toutes les informations nécessaires pour lier un point d’arrêt à du code dans un ou plusieurs programmes.  
   
-- Peut lier à plusieurs emplacements de code dans un ou plusieurs programmes.  
+- Peut être lié à plusieurs emplacements de code dans un ou plusieurs programmes.  
   
-- Jamais de se lier au code.  
+- Ne se lie jamais à du code.  
   
-  Charge de chaque code de temps, tous les points d’arrêt en attente dans un programme sont vérifiées pour voir si elles peuvent lier. Un point d’arrêt en attente est dit qu’il contient tous les points d’arrêt liés auquel elle est liée.  
+  Chaque fois que le code est chargé, tous les points d’arrêt en attente dans un programme sont vérifiés pour voir s’ils peuvent être liés. Un point d’arrêt en attente est dit contenir tous les points d’arrêt liés qu’il lie.  
   
   processus  
-  Un processus Win32 physique. Un processus peut contenir plusieurs programmes. Voir aussi *programme*.  
+  Processus Win32 physique. Un processus peut contenir plusieurs programmes. Voir aussi *programme*.  
   
   programme  
-  Un espace de noms en cours d’exécution à l’intérieur d’une architecture d’exécution particulière. Voir aussi *processus*.  
+  Un espace de noms unique s’exécutant dans une architecture d’exécution particulière. Voir aussi *processus*.  
   
-  Gestionnaire de session de débogage (SDM)  
-  Gère n’importe quel nombre de moteurs de débogage n’importe quel nombre de programmes dans plusieurs processus sur n’importe quel nombre d’ordinateurs de débogage. Au niveau de base, le SDM est un multiplexeur de moteurs de débogage. En outre, le SDM fournit une vue unifiée de la session de débogage à l’IDE.  
+  Gestionnaire de débogage de session (SDM)  
+  Gère un nombre quelconque de moteurs de débogage déboguant un nombre quelconque de programmes dans plusieurs processus sur un nombre quelconque d’ordinateurs. Au niveau de base, le SDM est un multiplexeur de moteurs de débogage. En outre, le SDM fournit une vue unifiée de la session de débogage à l’IDE.  
   
   frame de pile  
-  Représente l’état de calcul sur un frame particulier et niveau particulier d’appels de fonction imbriqués.  
+  Représente l’état du calcul sur un frame particulier et un niveau particulier d’appels de fonction imbriqués.  
   
   thread  
-  La notion généralisée de l’exécution d’instructions basées sur la pile en cours d’exécution au moins un programme.  
+  Notion généralisée d’exécution d’instruction basée sur la pile exécutée dans au moins un programme.  
   
   point d’arrêt d’avertissement  
-  Une abstraction pour décrire un avertissement dans un point d’arrêt en attente. Un point d’arrêt de l’avertissement décrit une raison pour laquelle le point d’arrêt en attente n’a pas encore lié à un emplacement du code de raison. Cela peut être que le code n'a pas encore chargé pour l’emplacement indiqué par le point d’arrêt en attente, ou pour une raison quelconque.  
+  Abstraction pour la description d’un avertissement dans un point d’arrêt en attente. Un point d’arrêt d’avertissement décrit une raison pour laquelle le point d’arrêt en attente n’est pas encore lié à un emplacement de code. Cela peut être dû au fait que le code n’a pas encore été chargé pour l’emplacement décrit par le point d’arrêt en attente, ou pour une raison quelconque.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Extensibilité du débogueur de Visual Studio](../../../extensibility/debugger/visual-studio-debugger-extensibility.md)

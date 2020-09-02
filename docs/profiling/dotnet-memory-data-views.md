@@ -13,17 +13,17 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 7e74027512eba0d64593133a3bbe758570cbf567
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74779270"
 ---
 # <a name="net-memory-data-views"></a>Vues des données de la mémoire .NET
 Cette section contient des informations de référence sur les vues et les rapports des fichiers de données du profileur qui comprennent des données de profilage de mémoire .NET.
 
 ## <a name="in-this-section"></a>Contenu de cette section
-- [Vue sommaire](../profiling/summary-view-dotnet-memory-data.md)
+- [Vue Résumé](../profiling/summary-view-dotnet-memory-data.md)
 
  Répertorie les fonctions et les types qui ont alloué le plus de mémoire.
 
@@ -31,7 +31,7 @@ Cette section contient des informations de référence sur les vues et les rappo
 
  Répertorie les types alloués lors de l’exécution du profilage, ainsi que les arborescences des appels (chemins d’exécution) qui ont provoqué l’allocation du type.
 
-- [Vue Durée de vie de l’objet](../profiling/object-lifetime-view.md)
+- [Mode Durée de vie de l'objet](../profiling/object-lifetime-view.md)
 
  Répertorie les types alloués lors de l’exécution du profilage, ainsi que le nombre d’instances, la taille en octets et la génération de garbage collection du type.
 
@@ -43,7 +43,7 @@ Cette section contient des informations de référence sur les vues et les rappo
 
  Organise les données d’allocation de mémoire .NET par module, et répertorie les fonctions, les lignes de code source et les instructions qui étaient en cours d’exécution lorsque la mémoire a été allouée.
 
-- [Vue Appelant/Appelé - Données d’échantillonnage de mémoire .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)
+- [Vue appelant/appelé-données d’échantillonnage de la mémoire .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)
 
  Répertorie les données d’allocation de mémoire d’une fonction sélectionnée, ainsi que les fonctions qui ont appelé la fonction sélectionnée et les fonctions qui ont été appelées par la fonction sélectionnée.
 
@@ -59,7 +59,7 @@ Cette section contient des informations de référence sur les vues et les rappo
 
  Répertorie les données d’allocation de mémoire des instructions de fonctions lors de l’exécution du profilage.
 
-- [Call Tree View - Instrumentation](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)
+- [Vue arborescence des appels-Instrumentation](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)
 
  Affiche une arborescence hiérarchique qui représente les chemins d’exécution, les données d’allocation de mémoire et les données de minutage détaillées des fonctions instrumentées de l’exécution du profilage.
 
@@ -67,7 +67,7 @@ Cette section contient des informations de référence sur les vues et les rappo
 
  Organise les données de profilage par module et répertorie les fonctions, les données d’allocation de mémoire et les données de minutage détaillées du module.
 
-- [Vue Appelant/Appelé - Données d’instrumentation de la mémoire .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)
+- [Vue appelant/appelé-données d’instrumentation de la mémoire .net](../profiling/caller-callee-view-net-memory-instrumentation-data.md)
 
  Répertorie les données d’allocation de mémoire et les données de minutage détaillées d’une fonction instrumentée sélectionnée, ainsi que les fonctions qui ont appelé la fonction sélectionnée et les fonctions qui ont été appelées par la fonction sélectionnée.
 
@@ -93,6 +93,6 @@ Cette section contient des informations de référence sur les vues et les rappo
 
  Informations de référence pour les vues et rapports des fichiers de données du profileur générés à l’aide de la méthode d’échantillonnage.
 
-- [Vues de données de la méthode d’instrumentation](../profiling/instrumentation-method-data-views.md)
+- [Vues de données de la méthode d'instrumentation](../profiling/instrumentation-method-data-views.md)
 
  Informations de référence sur les vues et les rapports des fichiers de données du profileur générés à l’aide de la méthode d’instrumentation.

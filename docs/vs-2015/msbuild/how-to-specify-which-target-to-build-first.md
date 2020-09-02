@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Spécifier la cible à générer en premier | Microsoft Docs'
+title: 'Comment : spécifier la cible à générer en premier | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -14,13 +14,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7d7d47746aed2e663eb1fa25e3bb9ca2c6bed2c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68178338"
 ---
-# <a name="how-to-specify-which-target-to-build-first"></a>Procédure : Spécifier la cible à générer en premier
+# <a name="how-to-specify-which-target-to-build-first"></a>Comment : spécifier la cible à générer en premier
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Un fichier projet peut contenir un ou plusieurs éléments `Target` qui définissent le mode de génération du projet. Le moteur [!INCLUDE[vstecmsbuildengine](../includes/vstecmsbuildengine-md.md)] ([!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]) génère le premier projet trouvé, et toutes les dépendances, à moins que le fichier projet ne contienne un attribut `DefaultTargets`, un attribut `InitialTargets` ou qu’une cible ne soit spécifiée sur la ligne de commande à l’aide du commutateur **/target**.  
@@ -76,5 +76,5 @@ Un fichier projet peut contenir un ou plusieurs éléments `Target` qui définis
   
 ## <a name="see-also"></a>Voir aussi
   [MSBuild](msbuild.md)  
- [Targets (Cibles MSBuild)](../msbuild/msbuild-targets.md)   
+ [Compilé](../msbuild/msbuild-targets.md)   
  [Guide pratique pour nettoyer une build](../msbuild/how-to-clean-a-build.md)

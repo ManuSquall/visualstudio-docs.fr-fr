@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 96e0614bc5c08c83008af4e67a2aa865f08f74f3
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547808"
 ---
 # <a name="ca1726-use-preferred-terms"></a>CA1726 : Utilisez les termes par défaut
@@ -33,7 +33,7 @@ Pour obtenir la documentation la plus récente sur Visual Studio, consultez [CA1
 |Category|Microsoft. Naming|
 |Modification avec rupture|Avec rupture : en cas de déclenchement sur les assemblys<br /><br /> Sans rupture-en cas de déclenchement sur les paramètres de type|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Le nom d'un identificateur visible de l'extérieur contient un terme pour lequel un autre terme par défaut existe. Le nom comprend également l’indicateur de terme ou les indicateurs.
 
 ## <a name="rule-description"></a>Description de la règle
