@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1222e6603ea45e1a4172af84b9062c17a407c28c
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72986160"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Créer des compléments VSTO pour Office à l'aide de Visual Studio
@@ -28,8 +28,8 @@ ms.locfileid: "72986160"
 
  Pour obtenir les informations les plus récentes sur le développement Office, consultez le [Centre de développement Microsoft Office](https://developer.microsoft.com/office/docs).
 
-## <a name="in-this-section"></a>Dans cette section
-- [Prise en &#40;main du développement Office dans Visual Studio&#41;](getting-started-office-development-in-visual-studio.md)
+## <a name="in-this-section"></a>Contenu de cette section
+- [Prise en main &#40;le développement Office dans Visual Studio&#41;](getting-started-office-development-in-visual-studio.md)
 
  Fournit des liens vers des informations relatives à la configuration d'un ordinateur de développement pour créer des solutions Office, à la mise en route pour créer des solutions Office et aux nouveautés du développement Office dans Visual Studio.
 
@@ -49,11 +49,11 @@ ms.locfileid: "72986160"
 
  Fournit des informations sur l'utilisation de code managé avec les solutions Office, notamment sur la personnalisation de l'interface utilisateur Office, l'utilisation des données et la résolution des problèmes.
 
-- [Solutions Excel](excel-solutions.md)
+- [solutions Excel](excel-solutions.md)
 
  Fournit des informations sur l'automatisation d'Excel, la création de solutions Excel et la compréhension de problèmes de globalisation spécifiques à Excel.
 
-- [Solutions InfoPath](infopath-solutions.md)
+- [solutions InfoPath](infopath-solutions.md)
 
  Fournit des informations sur la création de modèles de formulaire et de compléments VSTO pour InfoPath.
 
@@ -73,7 +73,7 @@ ms.locfileid: "72986160"
 
  Fournit des informations sur l'automatisation de Visio et sur la création de compléments VSTO Visio.
 
-- [Solutions Word](word-solutions.md)
+- [solutions Word](word-solutions.md)
 
  Fournit des informations sur l'automatisation de Word et la création de solutions Word.
 
@@ -97,19 +97,19 @@ ms.locfileid: "72986160"
 
  Fournit des liens vers des exemples d'applications et des rubriques qui contiennent des instructions détaillées pour l'exécution de tâches courantes.
 
-- [Référence &#40;générale du développement Office dans Visual Studio&#41;](general-reference-office-development-in-visual-studio.md)
+- [Référence générale &#40;le développement Office dans Visual Studio&#41;](general-reference-office-development-in-visual-studio.md)
 
  Fournit des liens vers des informations détaillées sur les assemblys PIA (Primary Interop Assembly) Office, les manifestes, les éléments d’interface utilisateur et les messages d’erreur.
 
-- [Développement Office &#40;de référence managée dans Visual Studio&#41;](managed-reference-office-development-in-visual-studio.md)
+- [Référence managée &#40;le développement Office dans Visual Studio&#41;](managed-reference-office-development-in-visual-studio.md)
 
  Fournit des liens vers des informations sur les espaces de noms API et les types utilisés dans les projets Office qui ciblent [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Pour obtenir une documentation de référence des API sur les espaces de noms et les types utilisés dans les projets Office qui ciblent le .NET Framework 3,5, consultez la section de référence suivante dans la documentation de Visual Studio 2008 : [2007 référence gérée](managed-reference-office-development-in-visual-studio.md)par le système.
 
-- [Référence &#40;des API non managées développement Office dans Visual Studio&#41;](unmanaged-api-reference-office-development-in-visual-studio.md)
+- [Informations de référence sur les API non managées &#40;le développement Office dans Visual Studio&#41;](unmanaged-api-reference-office-development-in-visual-studio.md)
 
  Contient des liens vers des informations sur les interfaces COM que vous pouvez utiliser pour effectuer des actions comme le chargement et le déchargement de compléments VSTO managés dans des applications Office.
 
-## <a name="related-sections"></a>Rubriques connexes
+## <a name="related-sections"></a>Sections connexes
 - [Développement Office avec le portail des développeurs Visual Studio](https://developer.microsoft.com/office/docs) Fournit des ressources supplémentaires, telles que des articles techniques, des vidéos et des blogs.
 
 - [Centre de développement Visual Studio](https://visualstudio.microsoft.com/) Fournit des ressources Visual Studio supplémentaires, telles que des articles techniques, des vidéos et des blogs.
@@ -118,4 +118,4 @@ ms.locfileid: "72986160"
 
 - [Développement d’applications dans Visual Studio](https://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68) Contient des liens vers des rubriques qui expliquent comment vous pouvez utiliser Visual Studio pour concevoir, développer, déboguer et déployer des applications Web, des services Web XML et des applications clientes traditionnelles.
 
-- [Programmation .NET Framework dans Visual Studio](/previous-versions/visualstudio/visual-studio-2010/k1s94fta(v=vs.100)) Décrit le développement d’applications avec le .NET Framework dans Visual Basic et C#visuel.
+- [Programmation .NET Framework dans Visual Studio](/previous-versions/visualstudio/visual-studio-2010/k1s94fta(v=vs.100)) Décrit le développement d’applications avec le .NET Framework dans Visual Basic et Visual C#.

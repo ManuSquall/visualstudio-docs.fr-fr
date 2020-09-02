@@ -1,5 +1,5 @@
 ---
-title: Comment déclencher suspendre, reprendre, événements et d’arrière-plan pour les applications du Windows Store
+title: Comment déclencher des événements d’interruption, de reprise et d’arrière-plan pour les applications du Windows Store
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d341f0550cfa3c978e94152fb792c5b73c68cc74
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65685930"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio"></a>Comment déclencher des événements de suspension, de reprise et d'arrière-plan pour les applications Windows Store dans Visual Studio
@@ -32,20 +32,20 @@ Lorsque vous n'effectuez pas de débogage, Windows **Process Lifetime Management
 
  Pour plus d'informations sur PLM (Process Lifetime Management) et les tâches en arrière-plan, consultez [Launching, resuming, and multitasking](https://msdn.microsoft.com/04307b1b-05af-46a6-b639-3f35e297f71b).
 
-## <a name="BKMK_In_this_topic"></a> Dans cette rubrique
+## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a> Dans cette rubrique
  [Déclencher les événements PLM (Process Lifetime Management)](#BKMK_Trigger_Process_Lifecycle_Management_events)
 
  [Déclencher les tâches en arrière-plan](#BKMK_Trigger_background_tasks)
 
 - [Déclencher un événement de tâche en arrière-plan à partir d'une session de débogage standard](#BKMK_Trigger_a_background_task_event_from_a_standard_debug_session)
 
-- [Déclencher une tâche en arrière-plan lorsque l'application n'est pas en cours d'exécution](#BKMK_Trigger_a_background_task_when_the_app_is_not_running)
+- [Déclencher une tâche en arrière-plan lorsque l’application n’est pas en cours d’exécution](#BKMK_Trigger_a_background_task_when_the_app_is_not_running)
 
   [Déclencher les événements PLM (Process Lifecycle Management) et les tâches en arrière-plan depuis une application installée](#BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app)
 
   [Diagnostic des erreurs d'activation des tâches en arrière-plan](#BKMK_Diagnosing_background_task_activation_errors)
 
-## <a name="BKMK_Trigger_Process_Lifecycle_Management_events"></a> Déclencher les événements PLM (Process Lifetime Management)
+## <a name="trigger-process-lifetime-management-events"></a><a name="BKMK_Trigger_Process_Lifecycle_Management_events"></a> Déclencher des événements de gestion de la durée de vie des processus
  Windows peut suspendre votre application lorsque l'utilisateur la quitte ou lorsque Windows entre dans un état de faible consommation d'énergie. Répondez à l'événement `Suspending` pour enregistrer des données appropriées relatives à l'application et aux utilisateurs dans un espace de stockage permanent et pour libérer les ressources. Lorsqu'une application quitte l'état **Suspendu** , elle entre dans l'état **Exécution** et reprend là où elle a été suspendue. Vous pouvez répondre à l'événement `Resuming` pour restaurer ou actualiser l'état de l'application et pour libérer les ressources.
 
  Même si Windows essaie de conserver en mémoire autant d'applications suspendues que possible, Windows peut arrêter votre application si les ressources sont insuffisantes pour les conserver en mémoire. Un utilisateur peut également explicitement fermer votre application. Il n'existe aucun événement spécial qui indique que l'utilisateur a fermé une application.
@@ -58,11 +58,11 @@ Lorsque vous n'effectuez pas de débogage, Windows **Process Lifetime Management
 
 3. Dans la barre d'outils **Emplacement de débogage** , choisissez l'événement à déclencher :
 
-     ![Suspendre, reprendre, terminer et tâches en arrière-plan](../debugger/media/dbg-suspendresumebackground.png "DBG_SuspendResumeBackground")
+     ![Suspendre, reprendre et terminer les tâches et les mettre en arrière plan](../debugger/media/dbg-suspendresumebackground.png "DBG_SuspendResumeBackground")
 
      Notez que **Interrompre et quitter** ferme l'application et termine la session de débogage.
 
-## <a name="BKMK_Trigger_background_tasks"></a> Déclencher les tâches en arrière-plan
+## <a name="trigger-background-tasks"></a><a name="BKMK_Trigger_background_tasks"></a> Déclencher des tâches en arrière-plan
  Une application peut enregistrer une tâche en arrière-plan pour répondre à certains événements système, même si l'application n'est pas en cours d'exécution. Les tâches en arrière-plan ne peuvent pas exécuter le code qui met à jour directement l'interface utilisateur; En fait, elles affichent des informations à l'utilisateur avec des mises à jour de mosaïque, des mises à jour de badge et des notifications contextuelles. Pour plus d'informations, consultez [Supporting your app with background tasks](https://msdn.microsoft.com/4c7bb148-eb1f-4640-865e-41f627a46e8e)
 
  Déclenchez les événements qui démarrent les tâches en arrière-plan pour votre application à partir du débogueur.
@@ -72,7 +72,7 @@ Lorsque vous n'effectuez pas de débogage, Windows **Process Lifetime Management
 
  La méthode la plus réaliste pour déclencher un événement de tâche en arrière-plan est le moment où votre application n'est pas en cours d'exécution. Toutefois, le déclenchement de l'événement dans une session de débogage standard est également pris en charge.
 
-### <a name="BKMK_Trigger_a_background_task_event_from_a_standard_debug_session"></a> Déclencher un événement de tâche en arrière-plan à partir d'une session de débogage standard
+### <a name="trigger-a-background-task-event-from-a-standard-debug-session"></a><a name="BKMK_Trigger_a_background_task_event_from_a_standard_debug_session"></a> Déclencher un événement de tâche en arrière-plan à partir d’une session de débogage standard
 
 1. Définissez un point d'arrêt dans le code d'une tâche en arrière-plan à déboguer.
 
@@ -80,40 +80,40 @@ Lorsque vous n'effectuez pas de débogage, Windows **Process Lifetime Management
 
 3. Dans la liste des événements dans la barre d'outils **Emplacement de débogage** , choisissez la tâche en arrière-plan à démarrer.
 
-     ![Suspendre, reprendre, terminer et tâches en arrière-plan](../debugger/media/dbg-suspendresumebackground.png "DBG_SuspendResumeBackground")
+     ![Suspendre, reprendre et terminer les tâches et les mettre en arrière plan](../debugger/media/dbg-suspendresumebackground.png "DBG_SuspendResumeBackground")
 
-### <a name="BKMK_Trigger_a_background_task_when_the_app_is_not_running"></a> Déclencher une tâche en arrière-plan lorsque l'application n'est pas en cours d'exécution
+### <a name="trigger-a-background-task-when-the-app-is-not-running"></a><a name="BKMK_Trigger_a_background_task_when_the_app_is_not_running"></a> Déclencher une tâche en arrière-plan lorsque l'application n'est pas en cours d'exécution
 
 1. Définissez un point d'arrêt dans le code d'une tâche en arrière-plan à déboguer.
 
-2. Ouvrez la page des propriétés de débogage du projet de démarrage. Dans l'Explorateur de solutions, sélectionnez le projet. Dans le menu **Déboguer** , choisissez **Propriétés**.
+2. Ouvrez la page des propriétés de débogage du projet de démarrage. Dans l’Explorateur de solutions, sélectionnez le projet. Dans le menu **Déboguer** , choisissez **Propriétés**.
 
      Pour les projets C++, vous devrez peut-être développer **Propriétés de configuration** , puis choisir **Débogage**.
 
-3. Effectuez l’une des opérations suivantes :
+3. Effectuez l’une des actions suivantes :
 
     - Pour les projets Visual C# et Visual Basic, choisissez **Ne pas lancer, mais déboguer mon code au démarrage**
 
-         ![C&#35;&#47;propriété d’application VB débogage lancement](../debugger/media/dbg-csvb-dontlaunchapp.png "DBG_CsVb_DontLaunchApp")
+         ![Propriétés de l’application de lancement du débogage C&#35;&#47;VB](../debugger/media/dbg-csvb-dontlaunchapp.png "DBG_CsVb_DontLaunchApp")
 
     - Pour les projets JavaScript et Visual C++, choisissez **Non** dans la liste **Lancer l'application** .
 
-         ![C&#43;&#43;&#47;propriété de débogage d’application VB lancer](../debugger/media/dbg-cppjs-dontlaunchapp.png "DBG_CppJs_DontLaunchApp")
+         ![C&#43;&#43;&#47;VB lancer la propriété de débogage d’application](../debugger/media/dbg-cppjs-dontlaunchapp.png "DBG_CppJs_DontLaunchApp")
 
 4. Appuyez sur **F5** pour exécuter l'application en mode débogage. Notez que la liste **Processus** dans la barre d'outils **Emplacement de débogage** affiche le nom du package d'application pour indiquer que vous êtes en mode débogage.
 
-     ![Liste des processus d’arrière-plan tâches](../debugger/media/dbg-backgroundtask-processlist.png "DBG_BackgroundTask_ProcessList")
+     ![Liste des processus de tâches d'arrière-plan](../debugger/media/dbg-backgroundtask-processlist.png "DBG_BackgroundTask_ProcessList")
 
 5. Dans la liste des événements dans la barre d'outils **Emplacement de débogage** , choisissez la tâche en arrière-plan à démarrer.
 
-     ![Suspendre, reprendre, terminer et tâches en arrière-plan](../debugger/media/dbg-suspendresumebackground.png "DBG_SuspendResumeBackground")
+     ![Suspendre, reprendre et terminer les tâches et les mettre en arrière plan](../debugger/media/dbg-suspendresumebackground.png "DBG_SuspendResumeBackground")
 
-## <a name="BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app"></a> Déclencher les événements PLM (Process Lifecycle Management) et les tâches en arrière-plan depuis une application installée
+## <a name="trigger-process-lifetime-management-events-and-background-tasks-from-an-installed-app"></a><a name="BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app"></a> Déclencher des événements de gestion de la durée de vie des processus et des tâches en arrière-plan depuis une application installée
  Utilisez la boîte de dialogue Déboguer l'application installée pour charger une application déjà installée dans le débogueur. Vous pouvez par exemple déboguer une application installée depuis Windows Store, ou pour laquelle vous disposez des fichiers source, mais pas un projet Visual Studio pour l'application. La boîte de dialogue Déboguer l'application installée vous permet de démarrer une application en mode débogage sur l'ordinateur Visual Studio ou sur un périphérique distant, ou de configurer l'application pour s'exécuter en mode débogage sans la démarrer. Pour plus d'informations, consultez la section **Démarrer une application installée dans le débogueur** dans les versions [JavaScript](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Start_an_installed_app_in_the_debugger) ou [Visual C++, Visual C# et Visual Basic](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md#BKMK_Start_an_installed_app_in_the_debugger) de **Comment : démarrer une session de débogage** .
 
  Une fois l'application chargée dans le débogueur, vous pouvez utiliser l'une des procédures décrites ci-dessus.
 
-## <a name="BKMK_Diagnosing_background_task_activation_errors"></a> Diagnostic des erreurs d'activation des tâches en arrière-plan
+## <a name="diagnosing-background-task-activation-errors"></a><a name="BKMK_Diagnosing_background_task_activation_errors"></a> Diagnostic des erreurs d’activation des tâches en arrière-plan
  Les journaux de diagnostic dans l'Observateur d'événements Windows pour infrastructure en arrière-plan contiennent des informations détaillées que vous pouvez utiliser pour diagnostiquer et résoudre les erreurs des tâches en arrière-plan. Pour consulter le journal :
 
 1. Ouvrez l'application Observateur d'événements.
@@ -125,4 +125,4 @@ Lorsque vous n'effectuez pas de débogage, Windows **Process Lifetime Management
 4. Choisissez le journal **Diagnostic** .
 
 ## <a name="see-also"></a>Voir aussi
- [Test des applications de Store avec Visual Studio](../test/testing-store-apps-with-visual-studio.md) [déboguer des applications dans Visual Studio](../debugger/debug-store-apps-in-visual-studio.md) [cycle de vie des applications](https://msdn.microsoft.com/53cdc987-c547-49d1-a5a4-fd3f96b2259d) [Launching, resuming et multitâche](https://msdn.microsoft.com/04307b1b-05af-46a6-b639-3f35e297f71b)
+ [Test des applications du Windows Store avec les](../test/testing-store-apps-with-visual-studio.md) [applications de débogage Visual Studio dans Visual Studio cycle de](../debugger/debug-store-apps-in-visual-studio.md) [vie des applications](https://msdn.microsoft.com/53cdc987-c547-49d1-a5a4-fd3f96b2259d) [lancement, reprise et multitâche](https://msdn.microsoft.com/04307b1b-05af-46a6-b639-3f35e297f71b)

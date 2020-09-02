@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2865bd89da3b59a24208e07739e8c56254959c88
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72986102"
 ---
 # <a name="customize-a-ribbon-for-outlook"></a>Personnaliser un ruban pour Outlook
@@ -39,11 +39,11 @@ ms.locfileid: "72986102"
  Vous pouvez ajouter plusieurs rubans à un projet. Si plusieurs rubans partagent un ID de ruban, substituez la méthode `CreateRibbonExtensibilityObject` de la classe `ThisAddin` de votre projet pour spécifier le ruban à afficher au moment de l'exécution. Pour plus d’informations, consultez [vue d’ensemble du ruban](../vsto/ribbon-overview.md). Pour plus d’informations sur chaque type de ruban, consultez l’article technique [personnaliser le ruban dans Outlook 2007](/previous-versions/office/developer/office-2007/bb226712(v=office.12)).
 
 ## <a name="specify-the-ribbon-type-by-using-ribbon-xml"></a>Spécifier le type de ruban à l’aide du ruban XML
- Si vous utilisez l’élément **Ruban (XML)** , vérifiez la valeur du paramètre *ribbonID* dans la méthode <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> et retournez le ruban approprié.
+ Si vous utilisez l’élément **Ruban (XML)** , vérifiez la valeur du paramètre *ribbonID* dans la <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> méthode et retournez le ruban approprié.
 
  La méthode <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> est automatiquement générée par Visual Studio dans le fichier de code du ruban. Le paramètre *ribbonID* est une chaîne qui identifie l’Explorateur ou un type spécifique d’inspecteur. Pour obtenir la liste complète des valeurs possibles du paramètre *ribbonID* , consultez l’article technique [personnaliser le ruban dans Outlook 2007](/previous-versions/office/developer/office-2007/bb226712(v=office.12)).
 
- L'exemple de code suivant montre comment afficher un ruban personnalisé uniquement dans l' inspecteur `Microsoft.Outlook.Mail.Compose`. Il s'agit de l'inspecteur qui s'affiche lorsqu'un utilisateur crée un message électronique. Le ruban à afficher est spécifié dans la méthode `GetResourceText()`, qui est générée dans la classe **Ribbon** . Pour plus d’informations sur la classe **Ribbon** , consultez [Ruban XML](../vsto/ribbon-xml.md).
+ L'exemple de code suivant montre comment afficher un ruban personnalisé uniquement dans l' inspecteur `Microsoft.Outlook.Mail.Compose`. Il s'agit de l'inspecteur qui s'affiche lorsqu'un utilisateur crée un message électronique. Le ruban à afficher est spécifié dans la `GetResourceText()` méthode, qui est générée dans la classe **du ruban** . Pour plus d’informations sur la classe **Ribbon** , consultez [Ruban XML](../vsto/ribbon-xml.md).
 
  [!code-csharp[Trin_RibbonOutlookBasic#1](../vsto/codesnippet/CSharp/Trin_RibbonOutlookBasic/Ribbon1.cs#1)]
  [!code-vb[Trin_RibbonOutlookBasic#1](../vsto/codesnippet/VisualBasic/Trin_RibbonOutlookBasic/Ribbon1.vb#1)]
@@ -52,4 +52,4 @@ ms.locfileid: "72986102"
 - [Accéder au ruban au moment de l’exécution](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Vue d’ensemble du ruban](../vsto/ribbon-overview.md)
 - [Concepteur de ruban](../vsto/ribbon-designer.md)
-- [Élément XML Ribbon](../vsto/ribbon-xml.md)
+- [Ribbon XML](../vsto/ribbon-xml.md)

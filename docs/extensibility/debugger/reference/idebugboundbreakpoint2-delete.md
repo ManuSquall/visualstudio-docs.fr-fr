@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::Delete Microsoft Docs
+title: IDebugBoundBreakpoint2 ::D supprim | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,10 +17,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a480a97c14b568565fee9b1b82d672db11f4ebab
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735655"
 ---
 # <a name="idebugboundbreakpoint2delete"></a>IDebugBoundBreakpoint2::Delete
@@ -39,10 +39,10 @@ int Delete();
 ```
 
 ## <a name="return-value"></a>Valeur de retour
-En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Retourne `E_BP_DELETED` si l’état de l’objet `BPS_DELETED` de rupture lié est réglé (une partie du [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) énumération).
+En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Retourne `E_BP_DELETED` si l’état de l’objet de point d’arrêt lié est défini sur `BPS_DELETED` (partie de l’énumération [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) ).
 
 ## <a name="example"></a>Exemple
-L’exemple suivant montre comment implémenter cette méthode pour un objet simple `CBoundBreakpoint` qui expose [l’interface IDebugBoundBreakpoint2.](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
+L’exemple suivant montre comment implémenter cette méthode pour un `CBoundBreakpoint` objet simple qui expose l’interface [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) .
 
 ```
 HRESULT CBoundBreakpoint::Delete(void)

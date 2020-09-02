@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 607247c6853c59036d1ab386f7371964265a32b8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62995346"
 ---
 # <a name="just-my-code-threads-view"></a>Uniquement mon code (vue Threads)
@@ -27,5 +27,5 @@ Si vous sélectionnez cette option, vous filtrez la pile des appels pour affiche
  Dans certains cas, cette option peut éliminer l’appel bloquant. Si vous avez besoin des détails de la pile des appels complète pour déterminer cet appel, désactivez cette option de façon à afficher la totalité de la pile des appels.
 
 ## <a name="see-also"></a>Voir aussi
-- [Vue Threads](../profiling/threads-view-parallel-performance.md)
+- [vue Threads](../profiling/threads-view-parallel-performance.md)
 - [Pourcentage de réduction du bruit](../profiling/noise-reduction-percentage.md)

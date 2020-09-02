@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1bb08a617574839432ee581d563079648cd06976
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664456"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>Guide pratique pour exporter une texture à utiliser avec des applications Javascript ou Direct2D
@@ -54,15 +54,15 @@ Le pipeline de contenus d’image peut générer des textures compatibles avec l
 
 2. Configurez le fichier de texture pour qu’il soit traité par le pipeline de contenus d’image. Dans l’**Explorateur de solutions**, ouvrez le menu contextuel pour le fichier de texture que vous venez de créer puis choisissez **Propriétés**. Dans la page **Propriétés de configuration**, **Général**, définissez la propriété **Type d’élément** sur **Pipeline de contenus d’image**. Vérifiez que la propriété **Contenu** est définie sur **Oui** et que **Exclure de la génération** est défini sur **Non**, puis choisissez le bouton **Appliquer**. La page des propriétés de configuration du **Pipeline de contenus d’image** apparaît.
 
-3. Définissez le format de sortie sur un des formats de compression de blocs. Dans la page **Propriétés de configuration**, **Pipeline de contenus d’image**, **Général**, définissez la propriété **Compresser** sur **Compression BC3_UNORM (/compress:BC3_UNORM)** . Vous pouvez choisir un des autres formats BC1, BC2 ou BC3, selon vos besoins. Direct2D ne prend actuellement pas en charge les textures BC4, BC5, BC6 ou BC7. Pour plus d’informations sur les différents formats BC, consultez [Block Compression (Direct3D 10)](https://msdn.microsoft.com/library/windows/desktop/bb694531.aspx).
+3. Définissez le format de sortie sur un des formats de compression de blocs. Dans la page **Propriétés de configuration**, **Pipeline de contenus d’image**, **Général**, définissez la propriété **Compresser** sur **Compression BC3_UNORM (/compress:BC3_UNORM)**. Vous pouvez choisir un des autres formats BC1, BC2 ou BC3, selon vos besoins. Direct2D ne prend actuellement pas en charge les textures BC4, BC5, BC6 ou BC7. Pour plus d’informations sur les différents formats BC, consultez [Block Compression (Direct3D 10)](https://msdn.microsoft.com/library/windows/desktop/bb694531.aspx).
 
    > [!NOTE]
    > Le format de compression spécifié détermine le format du fichier produit par le pipeline de contenus d’image. Ceci est différent de la propriété **Format** de l’image source dans l’éditeur d’images, qui détermine le format du fichier image source stocké sur le disque, c’est-à-dire le *format de travail*. En règle générale, vous ne voulez pas qu’un format de travail soit compressé.
 
-4. Configurez le pipeline de contenus d’image pour produire une sortie qui utilise une valeur alpha prémultipliée. Dans la page **Propriétés de configuration**, **Pipeline de contenus d’image**, **Général**, définissez la propriété **Convertir au format alpha prémultiplié** sur **Oui (/generatepremultipliedalpha)** .
+4. Configurez le pipeline de contenus d’image pour produire une sortie qui utilise une valeur alpha prémultipliée. Dans la page **Propriétés de configuration**, **Pipeline de contenus d’image**, **Général**, définissez la propriété **Convertir au format alpha prémultiplié** sur **Oui (/generatepremultipliedalpha)**.
 
 5. Configurez le pipeline de contenus d’image pour qu’il ne génère pas de mipmaps. Dans la page **Propriétés de configuration**, **Pipeline de contenus d’image**, **Général**, définissez la propriété **Générer des mips** sur **Non**.
 
-6. Sélectionnez le bouton **OK** .
+6. Choisissez le bouton **OK**.
 
    Quand vous générez le projet, le pipeline de contenus d’image convertit l’image source du format de travail vers le format de sortie que vous avez spécifié (la conversion inclut la génération d’une valeur alpha prémultipliée) et le résultat est copié dans le répertoire de sortie du projet.

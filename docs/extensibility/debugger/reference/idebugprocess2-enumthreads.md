@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::EnumThreads Microsoft Docs
+title: 'IDebugProcess2 :: Enumthreads, | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 52383649fc45eae6bbac6831f9bb233b9c0a2fde
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724055"
 ---
 # <a name="idebugprocess2enumthreads"></a>IDebugProcess2::EnumThreads
-Récupère une liste de tous les threads en cours d’exécution dans le processus.
+Récupère une liste de tous les threads qui s’exécutent dans le processus.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,15 +41,15 @@ int EnumThreads(
 
 ## <a name="parameters"></a>Paramètres
 `ppEnum`\
-[out] Retourne un objet [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md) qui contient une liste de tous les threads dans tous les programmes du processus.
+à Retourne un objet [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md) qui contient une liste de tous les threads dans tous les programmes du processus.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- Cette méthode énumère les fils en cours d’exécution dans chaque programme, puis les combine dans une vue de processus des fils. Un seul thread peut s’exécuter dans plusieurs programmes; cette méthode énumère ce fil qu’une seule fois.
+ Cette méthode énumère les threads en cours d’exécution dans chaque programme, puis les combine dans une vue de processus des threads. Un seul thread peut s’exécuter dans plusieurs programmes. Cette méthode énumère ce thread une seule fois.
 
- Cette méthode présente une liste des fils du processus sans doublons. Sinon, pour énumérer les fils en cours d’exécution dans un programme particulier, utilisez la méthode [EnumThreads.](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)
+ Cette méthode présente une liste des threads du processus sans doublons. Dans le cas contraire, pour énumérer les threads en cours d’exécution dans un programme particulier, utilisez la méthode [enumthreads,](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md) .
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

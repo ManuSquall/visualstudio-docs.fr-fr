@@ -18,17 +18,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dbf0c25967d84e930ee97a84709c808d3541e733
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "78263096"
 ---
-# <a name="parameter-element"></a>élément Parameter
+# <a name="parameter-element"></a>Élément de paramètre
 
-Contient des informations sur un paramètre spécifique `UsingTask` `TaskFactory`pour une tâche qui est générée par un .  Le nom de l’élément est le nom du paramètre.  Pour plus d’informations, voir [Élément UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).
+Contient des informations sur un paramètre spécifique pour une tâche générée par un `UsingTask` `TaskFactory` .  Le nom de l’élément est le nom du paramètre.  Pour plus d’informations, voir [Élément UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).
 
- \<Project> \<UsingTask> \<ParameterGroup> \<Parameter>
+ \<Project> \<UsingTask>
+ \<ParameterGroup>
+ \<Parameter>
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -58,9 +60,9 @@ Contient des informations sur un paramètre spécifique `UsingTask` `TaskFactory
 
 |Élément|Description|
 |-------------|-----------------|
-|[ParameterGroup](../msbuild/parametergroup-element.md)|Contient une liste facultative des paramètres qui seront présents `UsingTask` `TaskFactory`sur la tâche générée par un .|
+|[ParameterGroup](../msbuild/parametergroup-element.md)|Contient une liste facultative de paramètres qui seront présents sur la tâche générée par un `UsingTask` `TaskFactory` .|
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 
  L'exemple suivant montre comment utiliser l'élément `Parameter`.
 
@@ -81,4 +83,4 @@ Contient des informations sur un paramètre spécifique `UsingTask` `TaskFactory
 
 - [Tâches](../msbuild/msbuild-tasks.md)
 - [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)
-- [Référence du schéma de fichier de projet](../msbuild/msbuild-project-file-schema-reference.md)
+- [Référence du schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)

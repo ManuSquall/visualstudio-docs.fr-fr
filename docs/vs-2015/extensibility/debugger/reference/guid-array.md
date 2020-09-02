@@ -11,13 +11,13 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0465188cd44ad14ef3f7df9f5eda619a5ecb6d0e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160111"
 ---
-# <a name="guidarray"></a>GUID_ARRAY
+# <a name="guid_array"></a>GUID_ARRAY
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 Décrit un tableau d’identificateurs uniques pour les moteurs de débogage disponibles.  
@@ -48,15 +48,15 @@ public struct GUID_ARRAY
  Tableau qui contient des identificateurs uniques.  
   
 ## <a name="remarks"></a>Notes  
- Cette structure est retournée par la [GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md) (méthode).  
+ Cette structure est retournée par la méthode [GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md) .  
   
 ## <a name="requirements"></a>Configuration requise  
- En-tête : Msdbg.h  
+ En-tête : msdbg. h  
   
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft. VisualStudio. Debugger. Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
- [Structures et Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Structures et unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md)

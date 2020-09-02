@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Mettre à jour d’un graphique dans un document à l’aide de cases d’option'
+title: 'Procédure pas à pas : mise à jour d’un graphique dans un document à l’aide de cases d’option'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,18 +14,18 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 88f7bb81557db813912fe4470e63b8d52c0c9371
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62981047"
 ---
-# <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>Procédure pas à pas : Mettre à jour d’un graphique dans un document à l’aide de cases d’option
+# <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>Procédure pas à pas : mise à jour d’un graphique dans un document à l’aide de cases d’option
   Cette procédure pas à pas montre comment utiliser des cases d'option dans une personnalisation de document pour Microsoft Office Word dans le but de donner aux utilisateurs la possibilité de sélectionner des styles de graphique dans le document.
 
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]
 
- Cette procédure pas à pas décrit les tâches suivantes :
+ Cette procédure pas à pas décrit les tâches suivantes :
 
 - Ajout d'un graphique au document d'un projet de niveau document au moment du design.
 
@@ -33,12 +33,12 @@ ms.locfileid: "62981047"
 
 - Changement de style de graphique quand une option est sélectionnée.
 
-  Pour voir le résultat dans un exemple complet, consultez l’exemple des contrôles Word [exemples de développement Office et des procédures pas à pas](../vsto/office-development-samples-and-walkthroughs.md).
+  Pour voir le résultat sous forme d’exemple terminé, consultez l’exemple de contrôles Word dans les [exemples et procédures pas à pas relatifs au développement Office](../vsto/office-development-samples-and-walkthroughs.md).
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>Prérequis
- Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :
+ Vous devez disposer des éléments suivants pour exécuter cette procédure pas à pas :
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -49,75 +49,75 @@ ms.locfileid: "62981047"
 
 ### <a name="to-create-a-new-project"></a>Pour créer un projet
 
-1. Créer un projet de Document Word portant le nom **mes Options de graphique**. Dans l’Assistant, sélectionnez **créer un nouveau document**. Pour plus d'informations, voir [Procédure : Créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Créez un projet de document Word avec les **options nom My Chart**. Dans l’Assistant, sélectionnez **créer un nouveau document**. Pour plus d’informations, consultez [Comment : créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-     Visual Studio ouvre le nouveau document Word dans le concepteur et ajoute le **mes Options de graphique** projet **l’Explorateur de solutions**.
+     Visual Studio ouvre le nouveau document Word dans le concepteur et ajoute le projet **mes options de graphique** à **Explorateur de solutions**.
 
 ## <a name="add-a-chart-to-the-document"></a>Ajouter un graphique au document
 
 ### <a name="to-add-a-chart"></a>Pour ajouter un graphique
 
-1. Dans le document Word qui est hébergé dans le concepteur Visual Studio, dans le ruban, cliquez sur le **insérer** onglet.
+1. Dans le document Word qui est hébergé dans le concepteur Visual Studio, sur le ruban, cliquez sur l’onglet **Insérer** .
 
-2. Dans le **texte** de groupe, cliquez sur le **insérer un objet** bouton de liste déroulante, puis cliquez sur **objet**.
+2. Dans le groupe **texte** , cliquez sur le bouton déroulant **Insérer un objet** , puis cliquez sur **objet**.
 
-     Le **objet** boîte de dialogue s’ouvre.
+     La boîte de dialogue **objet** s’ouvre.
 
-3. Dans le **type d’objet** liste sur le **créer un nouveau** onglet, sélectionnez **graphique Microsoft Graph** puis cliquez sur **OK**.
+3. Dans la liste **type d’objet** de l’onglet **créer nouveau** , sélectionnez **Microsoft Graph graphique** , puis cliquez sur **OK**.
 
-     Un graphique est ajouté au document au point d’insertion et le **fiche technique** fenêtre s’affiche avec des données par défaut.
+     Un graphique est ajouté au document au point d’insertion et la fenêtre **feuille** de données s’affiche avec des données par défaut.
 
-4. Fermer le **fiche technique** fenêtre pour accepter les valeurs par défaut dans le graphique et cliquez dans le document pour déplacer le focus hors du graphique.
+4. Fermez la fenêtre **feuille** de données pour accepter les valeurs par défaut dans le graphique et cliquez à l’intérieur du document pour déplacer le focus en dehors du graphique.
 
-5. Cliquez sur le graphique, puis cliquez sur **Format objet**.
+5. Cliquez avec le bouton droit sur le graphique, puis cliquez sur format de l' **objet**.
 
-6. Sur le **disposition** onglet de la **Format objet** boîte de dialogue, sélectionnez **carré** et cliquez sur **OK**.
+6. Sous l’onglet **disposition** de la boîte de dialogue Format de l' **objet** , sélectionnez **Square** , puis cliquez sur **OK**.
 
 ## <a name="add-a-user-control-to-the-project"></a>Ajouter un contrôle utilisateur au projet
  Les cases d'option d'un document ne s'excluent pas mutuellement par défaut. Vous pouvez les faire fonctionner correctement en les ajoutant à un contrôle utilisateur, puis en écrivant du code pour commander la sélection.
 
 ### <a name="to-add-a-user-control"></a>Pour ajouter un contrôle utilisateur
 
-1. Sélectionnez le **mes Options de graphique** projet **l’Explorateur de solutions**.
+1. Sélectionnez le projet **mes options de graphique** dans **Explorateur de solutions**.
 
 2. Dans le menu **Projet** , cliquez sur **Ajouter un nouvel élément**.
 
-3. Dans le **ajouter un nouvel élément** boîte de dialogue, cliquez sur **contrôle utilisateur**, nommez le contrôle **ChartOptions** et cliquez sur **ajouter**.
+3. Dans la boîte de dialogue **Ajouter un nouvel élément** , cliquez sur **contrôle utilisateur**, nommez le contrôle **ChartOptions,** puis cliquez sur **Ajouter**.
 
 ### <a name="to-add-windows-form-controls-to-the-user-control"></a>Pour ajouter des contrôles Windows Form au contrôle utilisateur
 
-1. Si le contrôle utilisateur n’est pas visible dans le concepteur, double-cliquez sur **ChartOptions** dans **l’Explorateur de solutions**.
+1. Si le contrôle utilisateur n’est pas visible dans le concepteur, double-cliquez sur **ChartOptions** dans **Explorateur de solutions**.
 
-2. À partir de la **contrôles communs** onglet de la **boîte à outils**, faites glisser le premier **case** contrôler au contrôle utilisateur et modifiez les propriétés suivantes.
+2. Dans l’onglet **contrôles communs** de la **boîte à outils**, faites glisser le premier contrôle de case d' **option** vers le contrôle utilisateur et modifiez les propriétés suivantes.
 
-    |Propriété|Value|
+    |Propriété|Valeur|
     |--------------|-----------|
-    |**Name**|**columnChart**|
+    |**Nom**|**columnChart**|
     |**Text**|**Histogramme**|
 
-3. Ajoutez une deuxième **case** à l’utilisateur contrôle et modifiez les propriétés suivantes.
+3. Ajoutez une deuxième case d' **option** au contrôle utilisateur et modifiez les propriétés suivantes.
 
-    |Propriété|Value|
+    |Propriété|Valeur|
     |--------------|-----------|
-    |**Name**|**barChart**|
+    |**Nom**|**barChart**|
     |**Text**|**Graphique à barres**|
 
-4. Ajoutez une troisième **case** à l’utilisateur contrôle et modifiez les propriétés suivantes.
+4. Ajoutez une troisième **case d’option** au contrôle utilisateur et modifiez les propriétés suivantes.
 
-    |Propriété|Value|
+    |Propriété|Valeur|
     |--------------|-----------|
-    |**Name**|**lineChart**|
+    |**Nom**|**lineChart**|
     |**Text**|**Graphique en courbes**|
 
-5. Ajoutez une quatrième **case** à l’utilisateur contrôle et modifiez les propriétés suivantes.
+5. Ajoutez une quatrième case d' **option** au contrôle utilisateur et modifiez les propriétés suivantes.
 
-    |Propriété|Value|
+    |Propriété|Valeur|
     |--------------|-----------|
-    |**Name**|**areaBlockChart**|
+    |**Nom**|**areaBlockChart**|
     |**Text**|**Graphique en secteurs**|
 
-## <a name="add-references"></a>Ajoutez des références
- Pour accéder au graphique à partir du contrôle utilisateur sur un document, vous devez disposer d’une référence à la `Microsoft.Office.Interop.Graph` assembly dans votre projet.
+## <a name="add-references"></a>Ajouter des références
+ Pour accéder au graphique à partir du contrôle utilisateur sur un document, vous devez avoir une référence à l' `Microsoft.Office.Interop.Graph` assembly dans votre projet.
 
 ### <a name="to-add-a-reference-to-the-microsoftofficeinteropgraph-assembly"></a>Pour ajouter une référence à l'assembly Microsoft.Office.Interop.Graph
 
@@ -125,14 +125,14 @@ ms.locfileid: "62981047"
 
      La boîte de dialogue **Ajouter une référence** s’affiche.
 
-2. Sur le **.NET** onglet, sélectionnez **Microsoft.Office.Interop.Graph** et cliquez sur **OK**. Sélectionnez la version 14.0.0.0 de l'assembly.
+2. Sous l’onglet **.net** , sélectionnez **Microsoft. Office. Interop. Graph** , puis cliquez sur **OK**. Sélectionnez la version 14.0.0.0 de l'assembly.
 
-## <a name="change-the-chart-style-when-a-radio-button-is-selected"></a>Modifier le style de graphique quand une case d’option est sélectionnée.
+## <a name="change-the-chart-style-when-a-radio-button-is-selected"></a>Modifier le style du graphique lorsqu’une case d’option est sélectionnée
  Pour que les boutons fonctionnent correctement, créez un événement public sur le contrôle utilisateur, ajoutez une propriété pour définir le type de sélection et créez une procédure pour l'événement `CheckedChanged` de chacune des cases d'option.
 
 ### <a name="to-create-an-event-and-property-on-a-user-control"></a>Pour créer un événement et une propriété sur un contrôle utilisateur
 
-1. Dans **l’Explorateur de solutions**, cliquez sur le contrôle utilisateur, puis cliquez sur **afficher le Code**.
+1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le contrôle utilisateur, puis cliquez sur **afficher le code**.
 
 2. Ajoutez du code pour créer un événement `SelectionChanged` et la propriété `Selection` à la classe `ChartOptions`.
 
@@ -161,24 +161,24 @@ ms.locfileid: "62981047"
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#13](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs#13)]
      [!code-vb[Trin_VstcoreProgrammingControlsWord#13](../vsto/codesnippet/VisualBasic/my chart options/ChartOptions.vb#13)]
 
-5. En C#, vous devez ajouter des gestionnaires d'événements pour les cases d'option. Vous pouvez ajouter du code au constructeur `ChartOptions`, sous l'appel à `InitializeComponent`. Pour plus d’informations sur la création de gestionnaires d’événements, consultez [Comment : Créer des gestionnaires d’événements dans les projets Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
+5. En C#, vous devez ajouter des gestionnaires d'événements pour les cases d'option. Vous pouvez ajouter du code au constructeur `ChartOptions`, sous l'appel à `InitializeComponent`. Pour plus d’informations sur la création de gestionnaires d’événements, consultez [Comment : créer des gestionnaires d’événements dans les projets Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
 
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#14](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs#14)]
 
-## <a name="add-the-user-control-to-the-document"></a>Ajoutez le contrôle utilisateur au document
- Lorsque vous générez la solution, le nouveau contrôle utilisateur est automatiquement ajouté à la **boîte à outils**. Vous pouvez ensuite faire glisser le contrôle à partir de la **boîte à outils** vers votre document.
+## <a name="add-the-user-control-to-the-document"></a>Ajouter le contrôle utilisateur au document
+ Lorsque vous générez la solution, le nouveau contrôle utilisateur est automatiquement ajouté à la **boîte à outils**. Vous pouvez ensuite faire glisser le contrôle de la **boîte à outils** vers votre document.
 
 ### <a name="to-add-the-user-control-your-document"></a>Pour ajouter le contrôle utilisateur à votre document
 
-1. Dans le menu **Générer** , cliquez sur **Générer la solution**.
+1. Dans le menu **Générer**, cliquez sur **Générer la solution**.
 
-     Le **ChartOptions** contrôle utilisateur est ajouté à la **boîte à outils**.
+     Le contrôle utilisateur **ChartOptions** est ajouté à la **boîte à outils**.
 
-2. Dans **l’Explorateur de solutions**, avec le bouton droit **ThisDocument.vb** ou **ThisDocument.cs**, puis cliquez sur **Concepteur de vues**.
+2. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur **ThisDocument. vb** ou **ThisDocument.cs**, puis cliquez sur **Concepteur de vues**.
 
-3. Faites glisser le `ChartOptions` contrôle depuis la **boîte à outils** au document.
+3. Faites glisser le `ChartOptions` contrôle de la **boîte à outils** vers le document.
 
-     Dans le **propriétés** fenêtre, le nom du contrôle que vous venez d’ajouter au document `ChartOptions1`.
+     Dans la fenêtre **Propriétés** , nommez le contrôle que vous venez d’ajouter au document  `ChartOptions1` .
 
 ## <a name="change-the-chart-type"></a>Modifier le type de graphique
  Créez un gestionnaire d'événements pour changer de type de graphique en fonction de l'option sélectionnée dans le contrôle utilisateur.
@@ -208,11 +208,11 @@ ms.locfileid: "62981047"
 ## <a name="next-steps"></a>Étapes suivantes
  Voici quelques tâches susceptibles de venir après :
 
-- Utilisation d'un bouton pour renseigner une zone de texte. Pour plus d’informations, consultez [Procédure pas à pas : Afficher du texte dans une zone de texte dans un document à l’aide d’un bouton](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).
+- Utilisation d'un bouton pour renseigner une zone de texte. Pour plus d’informations, consultez [procédure pas à pas : affichage de texte dans une zone de texte dans un document à l’aide d’un bouton](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).
 
-- Modifier la mise en forme en sélectionnant un style dans une zone déroulante. Pour plus d’informations, consultez [Procédure pas à pas : Modifier le format de document à l’aide de contrôles CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).
+- Modifier la mise en forme en sélectionnant un style dans une zone déroulante. Pour plus d’informations, consultez [procédure pas à pas : modifier la mise en forme d’un document à l’aide de contrôles CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).
 
 ## <a name="see-also"></a>Voir aussi
 - [Procédures pas à pas utilisant Word](../vsto/walkthroughs-using-word.md)
-- [Procédures pas à pas et des exemples de développement office](../vsto/office-development-samples-and-walkthroughs.md)
-- [Limitations des contrôles Windows Forms sur des documents Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)
+- [Exemples et procédures pas à pas relatifs au développement Office](../vsto/office-development-samples-and-walkthroughs.md)
+- [Limitations des contrôles de Windows Forms sur les documents Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)

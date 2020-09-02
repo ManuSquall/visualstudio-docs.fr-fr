@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1439bef59c621523b74f0e0634cd809deea1f3ee
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72986063"
 ---
 # <a name="get-started-office-development-in-visual-studio"></a>Prise en main (développement Office dans Visual Studio)
@@ -26,8 +26,8 @@ ms.locfileid: "72986063"
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
-## <a name="in-this-section"></a>Dans cette section
-- [Vue d’ensemble du &#40;développement des solutions Office VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+## <a name="in-this-section"></a>Contenu de cette section
+- [Vue d’ensemble du développement de solutions Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 
  Fournit des informations générales sur le développement de solutions Office dans Visual Studio.
 
@@ -63,7 +63,7 @@ ms.locfileid: "72986063"
 
  Fournit des liens vers des rubriques qui aident à résoudre des problèmes courants.
 
-## <a name="related-sections"></a>Rubriques connexes
+## <a name="related-sections"></a>Sections connexes
 - [Exemples et procédures pas à pas relatifs au développement Office](../vsto/office-development-samples-and-walkthroughs.md)
 
  Fournit des liens vers des exemples d'applications et des rubriques qui contiennent des instructions détaillées pour l'exécution de tâches courantes.

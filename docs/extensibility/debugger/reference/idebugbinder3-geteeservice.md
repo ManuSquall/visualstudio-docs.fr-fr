@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3:GetEEService ( Microsoft Docs
+title: 'IDebugBinder3 :: GetEEService | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 7c08d7df4a6b05be489f6b9ab06569c085f3b1f8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735828"
 ---
 # <a name="idebugbinder3geteeservice"></a>IDebugBinder3::GetEEService
-Cette méthode renvoie un service demandé.
+Cette méthode retourne un service demandé.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -47,22 +47,22 @@ Int GetEEService(
 
 ## <a name="parameters"></a>Paramètres
 `vendor`\
-[dans] `GUID` d’un fournisseur (une valeur nulle est acceptable).
+[in] `GUID` d’un fournisseur (une valeur null est acceptable).
 
 `language`\
-[dans] `GUID` d’une langue (une valeur nulle est acceptable).
+[in] `GUID` d’un langage (une valeur null est acceptable).
 
 `iid`\
-[dans] `IID` du service à obtenir.
+[in] `IID` du service à obtenir.
 
 `ppService`\
-[out] Une interface au service demandé.
+à Interface avec le service demandé.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- Laissez passer `IID` le pour [l’interface IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md) (`IID_IEEVisualizerServiceProvider`) pour voir si le service de visualisation de type est disponible. Si c’est le cas, l’évaluateur d’expression peut obtenir [l’interface IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) pour prendre en charge les visualisateurs de type. Voir [Visualizing and Viewing Data](../../../extensibility/debugger/visualizing-and-viewing-data.md) pour plus de détails.
+ Transmettez le `IID` pour l’interface [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md) ( `IID_IEEVisualizerServiceProvider` ) afin de déterminer si le service du visualiseur de type est disponible. Dans ce cas, l’évaluateur d’expression peut obtenir l’interface [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) pour prendre en charge les visualiseurs de type. Pour plus d’informations [, consultez visualisation et affichage des données](../../../extensibility/debugger/visualizing-and-viewing-data.md) .
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

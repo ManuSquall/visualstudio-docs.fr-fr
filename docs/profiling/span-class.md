@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8d8f31d24dc6c6c2ea20b50c9bf8af1cb4a9f9af
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62979755"
 ---
 # <a name="span-class"></a>span, classe
@@ -40,10 +40,10 @@ class span;
 ## <a name="inheritance-hierarchy"></a>Hiérarchie d'héritage
  `span`
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  **En-tête :** *cvmarkersobj.h*
 
  **Espace de noms** : Concurrency::diagnostic
 
 ## <a name="see-also"></a>Voir aussi
-- [espace de nom de diagnostic](../profiling/diagnostic-namespace.md)
+- [espace de noms diagnostic](../profiling/diagnostic-namespace.md)

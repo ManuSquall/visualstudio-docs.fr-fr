@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 370e19757890d6d9f56fad4e7b89b2197e515d9c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62999656"
 ---
 # <a name="timeline-caret"></a>Signe insertion de chronologie
 Quand vous sélectionnez un point sur la chronologie d’un segment de thread en exécution, un signe insertion de chronologie apparaît au-dessus de celui-ci. La pile des appels qui s’affiche sur l’onglet de la pile active est celle qui est la plus proche dans le temps de l’endroit où vous avez cliqué sur le segment. Le signe d’insertion est utilisé pour associer la pile des appels qui est affichée sous l’onglet **Actuel** au moment où elle a été échantillonnée. Le signe d’insertion indique l’emplacement exact de la pile des appels, qui est la pile des appels la plus proche de l’emplacement sélectionné par l’utilisateur.
 
 ## <a name="see-also"></a>Voir aussi
-- [Vue Threads](../profiling/threads-view-parallel-performance.md)
+- [vue Threads](../profiling/threads-view-parallel-performance.md)

@@ -7,10 +7,10 @@ ms.date: 06/06/2019
 ms.technology: vs-azure
 ms.topic: reference
 ms.openlocfilehash: 427a70d9bc4f6ef326ffb16e7d26df9d8fae2365
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283201"
 ---
 # <a name="container-tools-build-properties"></a>Propriétés de build des outils de conteneur
@@ -86,4 +86,4 @@ Pour plus d’informations sur les propriétés MSBuild en général, consultez 
 
 [Paramètres de lancement des outils de conteneur](container-launch-settings.md)
 
-[MSBuild, propriétés réservées et connues](../msbuild/msbuild-reserved-and-well-known-properties.md)
+[Propriétés réservées et connues de MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)

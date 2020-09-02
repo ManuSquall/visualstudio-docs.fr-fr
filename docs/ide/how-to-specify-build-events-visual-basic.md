@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5986576fdf668aba952609dbf241e31d4b3dbf3d
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283968"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Guide pratique pour spécifier des événements de build (Visual Basic)
@@ -44,7 +44,7 @@ Les événements de build sont spécifiés dans la boîte de dialogue **Événem
 4. Entrez les arguments de ligne de commande pour votre action pré-build ou post-build, puis cliquez sur **OK**.
 
     > [!NOTE]
-    > Ajoutez une `call` instruction avant toutes les commandes postérieures à la génération qui exécutent des fichiers *. bat* . Par exemple, `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.
+    > Ajoutez une `call` instruction avant toutes les commandes postérieures à la génération qui exécutent des fichiers *. bat* .  Par exemple, `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.
 
     > [!NOTE]
     > Si votre événement pré-build ou post-build ne s’exécute pas correctement, vous pouvez terminer la génération en faisant en sorte que l’action d’événement s’achève avec un code autre que zéro (0), qui indique une action réussie.

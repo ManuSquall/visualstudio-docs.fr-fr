@@ -12,13 +12,13 @@ ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
 ms.openlocfilehash: 571079b7de52c4dbebbe842b232e4f889a9f0eef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62989783"
 ---
-# <a name="prepare-to-publish-or-deploy-a-cloud-service-from-visual-studio"></a>Préparer la publication ou le déploiement d’un service cloud à partir de Visual Studio
+# <a name="prepare-to-publish-or-deploy-a-cloud-service-from-visual-studio"></a>Préparation de la publication ou du déploiement d’un service cloud à partir de Visual Studio
 
 Pour pouvoir publier un projet de service cloud, vous devez configurer les services suivants, comme décrit dans cet article :
 

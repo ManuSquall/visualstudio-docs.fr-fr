@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 258cb5964946d5dbf136463538905d970346b8df
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "63001078"
 ---
 # <a name="concurrency-namespace-concurrency-visualizer"></a>Concurrency, espace de noms (visualiseur concurrentiel)
@@ -34,10 +34,10 @@ namespace Concurrency;
 
 |Nom|Description|
 |----------|-----------------|
-|[diagnostic Namespace](../profiling/diagnostic-namespace.md)|L’espace de noms `diagnostics` fournit des fonctionnalités permettant d’émettre des marqueurs du visualiseur concurrentiel.|
+|[Espace de noms diagnostic](../profiling/diagnostic-namespace.md)|L’espace de noms `diagnostics` fournit des fonctionnalités permettant d’émettre des marqueurs du visualiseur concurrentiel.|
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  **En-tête** : cvmarkersobj.h
 
 ## <a name="see-also"></a>Voir aussi
-- [Référence de la bibliothèque C](../profiling/c-library-reference.md)
+- [Informations de référence sur la bibliothèque C](../profiling/c-library-reference.md)

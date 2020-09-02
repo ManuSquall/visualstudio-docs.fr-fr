@@ -1,4 +1,4 @@
-﻿---
+---
 title: Tutoriel d’apprentissage de Django dans Visual Studio, étape 5, authentification
 titleSuffix: ''
 description: Une procédure pas à pas des principes de base de Django dans le contexte de projets Visual Studio, en particulier les fonctionnalités d’authentification comme fournies par les modèles de projet Web Django.
@@ -12,17 +12,17 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: bdc76b0a7b9d3f74da77b317faf31dae83706f04
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62957851"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>Étape 5 : Authentifier les utilisateurs dans Django
 
 **Étape précédente : [utiliser le modèle de projet Web Django complet](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
 
-Étant donné que l’authentification est un besoin courant pour les applications Web, le modèle « Projet Web de Django » contient un flux de l’authentification de base. (Le modèle "Polls Django Web Project" discuté à l’étape 6 de ce tutoriel comprend également le même flux.) Lors de l’utilisation de l’un des modèles de projet Django, Visual Studio inclut tous les modules nécessaires à l’authentification dans le *settings.py*du projet Django .
+Étant donné que l’authentification est un besoin courant pour les applications Web, le modèle « Projet Web de Django » contient un flux de l’authentification de base. (Le modèle de « projet Web Django d’interrogation » abordé à l’étape 6 de ce didacticiel comprend également le même fluide.) Lorsque vous utilisez l’un des modèles de projet Django, Visual Studio comprend tous les modules nécessaires pour l’authentification dans le *Settings.py*du projet Django.
 
 Dans cette étape vous apprenez :
 
@@ -35,7 +35,7 @@ Les étapes suivantes exécutent le flux d’authentification et décrivent les 
 
 1. Si vous n’avez pas déjà suivi les instructions du fichier *readme.html* dans la racine du projet pour créer un compte de superutilisateur (administrateur), faites-le maintenant.
 
-1. Exécutez l’application de Visual Studio à l’aide **de Debug** > **Start Debugging** (**F5**). Lorsque l’application s’affiche dans le navigateur, observez que **Connecter** s’affiche dans le coin supérieur droit de la barre de navigation.
+1. Exécutez l’application à partir de Visual Studio à **l’aide du débogage**  >  **Démarrer le débogage** (**F5**). Lorsque l’application s’affiche dans le navigateur, observez que **Connecter** s’affiche dans le coin supérieur droit de la barre de navigation.
 
     ![Contrôle de connexion dans la page d’application du projet Web Django](media/django/step05-login-control.png)
 
@@ -204,7 +204,7 @@ Les étapes suivantes exécutent le flux d’authentification et décrivent les 
 
 1. Lorsque vous avez tout terminé, arrêtez le serveur et validez à nouveau les modifications apportées au contrôle de code source.
 
-### <a name="question-what-is-the-purpose-of-the--csrf_token--tag-that-appears-in-the-form-elements"></a>Question : quel est l’objectif de la balise {% csrf_token %} qui apparaît dans les éléments du \<formulaire\> ?
+### <a name="question-what-is-the-purpose-of-the--csrf_token--tag-that-appears-in-the-form-elements"></a>Question : quelle est la fonction de la balise {% csrf_token%} qui apparaît dans les \<form\> éléments ?
 
 Réponse : la balise `{% csrf_token %}` inclut la [protection (csrf) contre la falsification de requêtes intersites](https://docs.djangoproject.com/en/2.0/ref/csrf/) intégrée dans Django (documents Django). En général, vous ajoutez cette balise à tout élément qui implique des méthodes de requête POST, PUT ou DELETE, comme un formulaire. La fonction de rendu de modèle (`render`) insère ensuite la protection nécessaire.
 

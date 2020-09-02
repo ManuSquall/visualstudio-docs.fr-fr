@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 93e2d5abb9c8fda9d4a1300a9bb0958ac9266499
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72986172"
 ---
 # <a name="bind-data-to-controls-in-office-solutions"></a>Lier des données à des contrôles dans les solutions Office
@@ -103,5 +103,5 @@ ms.locfileid: "72986172"
 - [Lier des contrôles Windows Forms à des données dans Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Enregistrer les données dans la base de données](../data-tools/save-data-back-to-the-database.md)
 - [Guide pratique pour mettre à jour les données à l’aide d’un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)
-- [Données du cache](../vsto/caching-data.md)
+- [Données de cache](../vsto/caching-data.md)
 - [Données dans les solutions Office](../vsto/data-in-office-solutions.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Utiliser des contrôles d’exécution natifs | Microsoft Docs'
+title: 'Comment : utiliser les contrôles natifs au moment de l’exécution | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -42,13 +42,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b50dda3e31e27fa5d177c3b0ba2790babd2a660f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65685857"
 ---
-# <a name="how-to-use-native-run-time-checks"></a>Procédure : Utiliser les vérifications natives à l’exécution
+# <a name="how-to-use-native-run-time-checks"></a>Comment : utiliser les contrôles natifs à l'exécution
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En Visual C++, vous pouvez utiliser des [runtime_checks](https://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b) natifs pour dépister les erreurs d’exécution courantes, telles que :  
@@ -65,7 +65,7 @@ En Visual C++, vous pouvez utiliser des [runtime_checks](https://msdn.microsoft.
   
   Si vous utilisez **/RTC** dans une version optimisée (**/O**), il en résulte une erreur du compilateur. Un pragma `runtime_checks` n'a aucun effet s'il est utilisé dans une version optimisée.  
   
-  Si les contrôles à l'exécution sont activés dans le programme que vous déboguez, par défaut, le programme s'arrête et entre dans le débogueur en cas d'erreur. Vous pouvez modifier ce comportement par défaut pour tout contrôle d'exécution. Pour plus d’informations, consultez [la gestion des Exceptions avec le débogueur](../debugger/managing-exceptions-with-the-debugger.md).  
+  Si les contrôles à l'exécution sont activés dans le programme que vous déboguez, par défaut, le programme s'arrête et entre dans le débogueur en cas d'erreur. Vous pouvez modifier ce comportement par défaut pour tout contrôle d'exécution. Pour plus d’informations, consultez [gestion des exceptions avec le débogueur](../debugger/managing-exceptions-with-the-debugger.md).  
   
   Les procédures suivantes décrivent comment activer des contrôles d'exécution natifs dans une génération Debug et comment modifier le comportement du contrôle d'exécution natif.  
   
@@ -73,7 +73,7 @@ En Visual C++, vous pouvez utiliser des [runtime_checks](https://msdn.microsoft.
   
 - [Personnalisation des contrôles d'exécution avec la bibliothèque Runtime C](../debugger/native-run-time-checks-customization.md)  
   
-- [Utilisation de contrôles d'exécution sans la bibliothèque Runtime C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)  
+- [Utilisation de contrôles d’exécution sans la bibliothèque Runtime C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)  
   
 ### <a name="to-enable-native-run-time-checks-in-a-debug-build"></a>Pour activer les contrôles natifs à l'exécution dans une version Debug  
   
@@ -86,4 +86,4 @@ En Visual C++, vous pouvez utiliser des [runtime_checks](https://msdn.microsoft.
 ## <a name="see-also"></a>Voir aussi  
  [Débogage dans Visual Studio](../debugger/debugging-in-visual-studio.md)   
  [runtime_checks](https://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b)   
- [Vérifications des erreurs au moment de l’exécution](https://msdn.microsoft.com/library/c965dd01-57ad-4a3c-b1d6-5aa04f920501)
+ [Vérification des erreurs au moment de l’exécution](https://msdn.microsoft.com/library/c965dd01-57ad-4a3c-b1d6-5aa04f920501)

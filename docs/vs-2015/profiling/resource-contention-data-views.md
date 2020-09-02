@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1d672d90254626cfef9bd87bfef9dcf2426aa346
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160310"
 ---
 # <a name="resource-contention-data-views"></a>Vues de données de conflit de ressources
@@ -28,34 +28,34 @@ Cette section contient des informations de référence sur les vues et les rappo
  [Vue Récapitulatif - Données de conflit du profileur](../profiling/resource-contention-data-views.md)  
  Affiche une chronologie graphique des données de profilage et liste les fonctions et les ressources qui ont participé aux événements les plus bloquants.  
   
- [Mode Arborescence des appels](../profiling/call-tree-view-contention-data.md)  
+ [Vue Arborescence des appels](../profiling/call-tree-view-contention-data.md)  
  Affiche une arborescence hiérarchique qui représente les chemins d’exécution et les données des conflits de ressources des fonctions lors de l’exécution du profilage.  
   
- [Modules, mode](../profiling/modules-view-contention-data.md)  
+ [Vue Modules](../profiling/modules-view-contention-data.md)  
  Organise les données des conflits de threads et de ressources par module et liste les fonctions, les lignes de code source et les instructions qui étaient en cours d’exécution quand des événements bloquants se sont produits.  
   
- [Vue Appelant/Appelé - Données de conflit](../profiling/caller-callee-view-contention-data.md)  
+ [Vue appelant/appelé-données de conflit](../profiling/caller-callee-view-contention-data.md)  
  Liste les données de conflits de threads et de ressources d’une fonction sélectionnée, et des fonctions qui l’ont appelée et qui ont été appelées par celle-ci.  
   
- [Informations sur les ressources, vue](../profiling/resource-details-view-contention-data.md)  
+ [Vue Détails sur la ressource](../profiling/resource-details-view-contention-data.md)  
  Affiche une chronologie graphique des événements bloquants pour chaque ressource en conflit et liste le contenu de la pile des appels pour les événements bloquants.  
   
- [Détails relatifs au thread, vue](../profiling/thread-details-view-contention-data.md)  
+ [Vue Détails sur le thread](../profiling/thread-details-view-contention-data.md)  
  Affiche une chronologie graphique des événements bloquants pour chaque thread et répertorie le contenu de la pile des appels pour les événements bloquants.  
   
- [Mode Fonctions](../profiling/functions-view-contention-data.md)  
+ [Vue Fonctions](../profiling/functions-view-contention-data.md)  
  Liste les données de conflits de threads et de ressources par fonction.  
   
- [Vue Conflits de ressources](../profiling/resource-contentions-view-contention-data.md)  
+ [Vue Conflits de la ressource](../profiling/resource-contentions-view-contention-data.md)  
  Liste les données de conflits de ressources par ressource bloquée.  
   
  [Lignes, vue](../profiling/lines-view-contention-data.md)  
  Liste les données de conflits de ressources par ligne de code source.  
   
- [Vue Pointeurs d’instruction (IP)](../profiling/instruction-pointers-ips-view-contention-data.md)  
+ [Pointeurs d'instruction (IP), vue](../profiling/instruction-pointers-ips-view-contention-data.md)  
  Liste les conflits de ressources par instruction.  
   
- [Processus, vue](../profiling/process-view-contention-data.md)  
+ [Vue Processus](../profiling/process-view-contention-data.md)  
  Liste les conflits de ressources par processus et par thread.  
   
 ## <a name="reference"></a>Référence  

@@ -10,10 +10,10 @@ ms.workload: multiple
 ms.date: 07/25/2019
 ms.technology: vs-azure
 ms.openlocfilehash: 26562268167abdfc5ee643618ec1610da231f9f0
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283162"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>Déboguer des applications dans un conteneur d’ancrage local

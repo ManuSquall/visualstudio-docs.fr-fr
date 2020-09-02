@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 9d245ddf00e4005b763bcd4437d3f8c18d05291e
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72986041"
 ---
 # <a name="grant-trust-to-documents"></a>Accorder un niveau de confiance à des documents
@@ -28,7 +28,7 @@ ms.locfileid: "72986041"
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
 ## <a name="trusted-locations"></a>Emplacements approuvés
- Les applications dans [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] et Office 2010 disposent de centres de confiance où les utilisateurs peuvent configurer des paramètres de sécurité et de confidentialité, tels que des emplacements approuvés. Pour les solutions Office, l’ordinateur local est considéré comme un emplacement approuvé. Toutefois, en raison de risques plus élevés, certains répertoires ne peuvent jamais être approuvés, tels que les dossiers temporaires système propres à chaque utilisateur et à Internet Explorer.
+ Les applications dans [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] et Office 2010 disposent de centres de confiance où les utilisateurs peuvent configurer des paramètres de sécurité et de confidentialité, tels que des emplacements approuvés. Pour les solutions Office, l'ordinateur local est considéré comme un emplacement approuvé. Toutefois, en raison de risques plus élevés, certains répertoires ne peuvent jamais être approuvés, tels que les dossiers temporaires système propres à chaque utilisateur et à Internet Explorer.
 
  Pour plus d’informations sur le centre de gestion de la confidentialité, consultez [sécurité et stratégies et paramètres dans Office 2010](/previous-versions/office/office-2010/cc178946(v=office.14)). Pour plus d’informations sur la façon de créer, gérer, supprimer et configurer des dossiers approuvés, consultez [configurer les emplacements approuvés et les paramètres éditeurs approuvés dans le système Office 2007](/previous-versions/office/office-2007-resource-kit/cc178948(v=office.12)) et [créer, supprimer ou modifier un emplacement approuvé pour vos fichiers](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).
 

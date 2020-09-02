@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f1a0d10dabdace7ef7ab3805a59b892548cf6556
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645519"
 ---
 # <a name="how-to-add-class-diagrams-to-projects-class-designer"></a>Comment : ajouter des diagrammes de classes aux projets (Concepteur de classes)
@@ -28,7 +28,7 @@ Pour concevoir, modifier et refactoriser des classes et d'autres types, ajoutez 
 
 ### <a name="to-add-a-blank-class-diagram-to-a-project"></a>Pour ajouter un diagramme de classes vide à un projet
 
-1. Dans l'Explorateur de solutions, cliquez avec le bouton droit sur le nom du projet. Choisissez **Ajouter un nouvel élément** ou **Ajouter**, **Nouvel élément**.
+1. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le nom du projet. Choisissez **Ajouter un nouvel élément** ou **Ajouter**, **Nouvel élément**.
 
 2. Dans la liste des modèles, choisissez **Diagramme de classes**. Pour des projets Visual C++, regardez sous **Modèles**, puis sous **Utilitaire** pour trouver ce modèle.
 
@@ -40,7 +40,7 @@ Pour concevoir, modifier et refactoriser des classes et d'autres types, ajoutez 
 
 1. Dans l’Explorateur de solutions, ouvrez le menu contextuel du fichier de classe, puis choisissez **Afficher le diagramme de classes**.
 
-     ou
+     - ou -
 
      Dans **Affichage de classes**, ouvrez le menu contextuel de l’espace de noms ou du type, puis choisissez **Afficher le diagramme de classes**.
 
@@ -51,4 +51,4 @@ Pour concevoir, modifier et refactoriser des classes et d'autres types, ajoutez 
      Un diagramme de classes est alors créé et rempli automatiquement.
 
 ## <a name="see-also"></a>Voir aussi
- [Comment : créer des types à l’aide de concepteur de classes](../ide/how-to-create-types-by-using-class-designer.md) [Comment : afficher des types existants (Concepteur de classes)](../ide/how-to-view-existing-types-class-designer.md) [conception de Classes et de types (Concepteur de classes)](../ide/designing-classes-and-types-class-designer.md) [affichage des types et des relations (Concepteur de classes)](../ide/viewing-types-and-relationships-class-designer.md) [utilisation des diagrammes de classes ( Concepteur de classes)](../ide/working-with-class-diagrams-class-designer.md)
+ [Comment : créer des types à l’aide de concepteur de classes](../ide/how-to-create-types-by-using-class-designer.md) [Comment : afficher des types existants (Concepteur de classes)](../ide/how-to-view-existing-types-class-designer.md) [conception de Classes et de types (Concepteur de classes)](../ide/designing-classes-and-types-class-designer.md) [affichage des types et des relations (Concepteur de classes)](../ide/viewing-types-and-relationships-class-designer.md) [utilisation des diagrammes de classes (Concepteur de classes)](../ide/working-with-class-diagrams-class-designer.md)

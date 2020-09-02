@@ -1,5 +1,5 @@
 ---
-title: IDebugMessageEvent2::GetMessage | Microsoft Docs
+title: 'IDebugMessageEvent2 :: GetMessage | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,10 +14,10 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 14eb540962db3a806273d5c76facb7f9bf25dee7
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65685895"
 ---
 # <a name="idebugmessageevent2getmessage"></a>IDebugMessageEvent2::GetMessage
@@ -49,22 +49,22 @@ int GetMessage( 
   
 #### <a name="parameters"></a>Paramètres  
  `pMessageType`  
- [out] Retourne une valeur de la [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) énumération qui décrit le type du message.  
+ à Retourne une valeur de l’énumération [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) qui décrit le type du message.  
   
  `pbstrMessage`  
- [out] Retourne le message.  
+ à Retourne le message.  
   
  `pdwType`  
- [out] Retourne le type du message, en utilisant les conventions de Win32 `MessageBox` (fonction). Consultez le [AfxMessageBox](https://msdn.microsoft.com/library/d66d0328-cdcc-48f6-96a4-badf089099c8) (fonction) pour plus d’informations.  
+ à Retourne le type du message, à l’aide des conventions de la `MessageBox` fonction Win32. Pour plus d’informations, consultez la fonction [AfxMessageBox](https://msdn.microsoft.com/library/d66d0328-cdcc-48f6-96a4-badf089099c8) .  
   
  `pbstrHelpFileName`  
- [in, out] Retourne le nom de fichier. Peut-être une valeur null (C++) ou une valeur vide (c#) s’il n’existe aucun fichier d’aide.  
+ [in, out] Retourne le nom du fichier d’aide. Peut être une valeur null (C++) ou vide (C#) s’il n’y a aucun fichier d’aide.  
   
  `pdwHelpId`  
- [in, out] Retourne l’identificateur d’aide. Peut être 0 si aucune aide n’est associé au message.  
+ [in, out] Retourne l’identificateur d’aide. Peut avoir la valeur 0 si aucune aide n’est associée à ce message.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md)   

@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Téléchargement d’assemblys à la demande avec l’API à l’aide du concepteur du déploiement ClickOnce | Microsoft Docs'
+title: 'Procédure pas à pas : Téléchargement d’assemblys à la demande avec l’API de déploiement ClickOnce à l’aide du concepteur | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -19,13 +19,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a7ff4fe24720f707c8f3faa330f71a8abda3c698
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65686335"
 ---
-# <a name="walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Procédure pas à pas : Téléchargement d’assemblys à la demande avec l’API à l’aide du concepteur du déploiement ClickOnce
+# <a name="walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Procédure pas à pas : téléchargement d'assemblys à la demande avec l'API du déploiement ClickOnce à l'aide du concepteur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Par défaut, tous les assemblys inclus dans une application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] sont téléchargés lors de la première exécution de l’application. Toutefois, il peut y avoir certaines parties de votre application qui sont utilisées par un petit ensemble d’utilisateurs. Dans ce cas, vous souhaiterez sans doute télécharger un assembly uniquement quand vous créez l’un de ses types. La procédure suivante montre comment marquer certains assemblys de votre application comme « facultatifs » et comment les télécharger à l’aide de classes dans l’espace de noms <xref:System.Deployment.Application> quand le Common Language Runtime en a besoin.  
@@ -34,7 +34,7 @@ Par défaut, tous les assemblys inclus dans une application [!INCLUDE[ndptecclic
 > Votre application doit s’exécuter avec une confiance totale pour utiliser cette procédure.  
   
 > [!NOTE]
-> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier ces paramètres, cliquez sur **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Les boîtes de dialogue et les commandes de menu affichées peuvent différer de celles décrites dans l'Aide selon les paramètres actifs ou le mode d'édition. Pour modifier ces paramètres, cliquez sur **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="creating-the-projects"></a>Création des projets  
   
@@ -82,11 +82,11 @@ Par défaut, tous les assemblys inclus dans une application [!INCLUDE[ndptecclic
   
 4. Développez la zone de liste déroulante **Groupe** et sélectionnez **Nouveau**. Entrez `ClickOnceLibrary` comme nom du nouveau groupe.  
   
-5. Poursuivez la publication de votre application comme décrit dans [Comment : publier une application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
+5. Continuez la publication de votre application comme décrit dans [Comment : publier une application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
 #### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-manifest-generation-and-editing-tool--graphical-client-mageuiexe"></a>Pour marquer des assemblys comme facultatifs dans votre application ClickOnce à l’aide de l’Outil Manifest Generation and Editing — Client graphique (MageUI.exe)  
   
-1. Créer votre [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] se manifeste comme décrit dans [procédure pas à pas : déploiement manuel d’une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+1. Créez vos [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifestes comme décrit dans [procédure pas à pas : déploiement manuel d’une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
 2. Avant de fermer MageUI.exe, sélectionnez l’onglet qui contient le manifeste d’application de votre déploiement et, sous cet onglet, sélectionnez l’onglet **Fichiers** .  
   

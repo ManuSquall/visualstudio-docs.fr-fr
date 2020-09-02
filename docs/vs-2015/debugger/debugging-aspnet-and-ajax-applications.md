@@ -1,5 +1,5 @@
 ---
-title: Débogage des Applications ASP.NET et AJAX | Microsoft Docs
+title: Débogage des applications ASP.NET et AJAX | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,10 +20,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e0645cd28e6124e31e19b03489661c6828799cf4
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65686742"
 ---
 # <a name="debugging-aspnet-and-ajax-applications"></a>Débogage d’applications ASP.NET et AJAX
@@ -36,17 +36,17 @@ Le débogage d'applications Web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]
 - Dans une application Windows, le code à déboguer se trouve essentiellement rassemblé au même endroit ; dans une application Web, le code peut se trouver sur le client et sur le serveur. Alors que le code [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] se trouve entièrement sur le serveur, il peut y avoir également du code JavaScript ou [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] sur le client.  
   
 ## <a name="in-this-section"></a>Dans cette section  
- [Préparation du débogage ASP.NET](../debugger/preparing-to-debug-aspnet.md)  
+ [Préparation d'un débogage ASP.NET](../debugger/preparing-to-debug-aspnet.md)  
  Décrit les étapes nécessaires pour activer le débogage d'applications [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
   
- [Débogage d’applications web](../debugger/debugging-web-applications.md)  
+ [Débogage d'applications Web](../debugger/debugging-web-applications.md)  
  Explique comment déboguer une application [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], y compris des applications de script compatibles AJAX.  
   
-## <a name="related-sections"></a>Rubriques connexes  
+## <a name="related-sections"></a>Sections connexes  
  [Gestion des exceptions avec le débogueur](../debugger/managing-exceptions-with-the-debugger.md)  
  Explique pourquoi Uniquement mon code doit être activé pour le débogage d'exceptions [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
   
- [Debugging and Tracing Ajax Applications Overview](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)  
+ [Debugging and Tracing AJAX Applications Overview](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)  
  Présente quelques techniques et outils qui peuvent vous aider à déboguer votre code AJAX plus facilement.  
   
  [IntelliTrace](../debugger/intellitrace.md)  
@@ -54,6 +54,6 @@ Le débogage d'applications Web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]
   
 ## <a name="see-also"></a>Voir aussi  
  [Sécurité du débogueur](../debugger/debugger-security.md)   
- [Débogage d’applications et de scripts web](../debugger/debugging-web-applications-and-script.md)   
+ [Débogage d’applications et de scripts Web](../debugger/debugging-web-applications-and-script.md)   
  [Paramètres et préparation du débogueur](../debugger/debugger-settings-and-preparation.md)   
  [Principes de base du débogueur](../debugger/debugger-basics.md)

@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 2d1f7deb7aca1fed7b75b66b17ce2e4d63768a0d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62969162"
 ---
 # <a name="pull-members-up"></a>Remonter des membres
@@ -25,16 +25,16 @@ Cette refactorisation s’applique à :
 
 - Visual Basic
 
-**Quoi :** Permet de tirer les membres jusqu’au type de base.
+**Ce qui suit :** Permet d’extraire les membres jusqu’au type de base.
 
-**Quand :** Vous avez implémenté une interface et vous souhaitez déplacer un membre vers le type de base.
+Dans les **cas suivants :** Vous avez implémenté une interface et vous souhaitez déplacer un membre vers le type de base.
 
-**Pourquoi:** Tirer les membres vers le haut permet à d’autres implémentations de votre interface d’hériter de ces membres ainsi.
+**Pourquoi :** L’extraction de membres permet à d’autres implémentations de votre interface d’hériter également de ces membres.
 
 ## <a name="how-to"></a>Procédures
 
 1. Placez votre curseur dans un membre d’une interface implémentée.
-2. Appuyez **sur Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
+2. Appuyez sur **CTRL** + **.** pour afficher le menu **Actions rapides et refactorisations**.
 
    ![Remonter des membres](media/pull-members-up.png)
 

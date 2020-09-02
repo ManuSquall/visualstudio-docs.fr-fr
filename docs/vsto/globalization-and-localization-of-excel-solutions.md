@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f37ddcbbd3145fc96cd8081d7a1df524ef7ea8ec
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72986053"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Globalisation et localisation de solutions Excel
@@ -47,7 +47,7 @@ ms.locfileid: "72986053"
  Vous devez quand même vous assurer que les parties de votre code qui interagissent avec le texte du document continuent de correspondre à la langue du texte et que les signets, plages nommées et autres champs d’affichage s’accommodent de toute nouvelle mise en forme du document Office qui s’avérait nécessaire pour s’adapter à la grammaire et à la longueur de texte différentes. Pour les modèles de document qui contiennent peu de texte, vous pouvez envisager de stocker le texte dans des fichiers de ressources, puis de le charger au moment de l’exécution.
 
 ### <a name="text-direction"></a>Orientation du texte
- Dans Excel, vous pouvez définir une propriété de la feuille de calcul pour afficher le texte de droite à gauche. Les contrôles hôtes, ou tout contrôle ayant une propriété `RightToLeft`, qui est placé sur le concepteur correspondent automatiquement à ces paramètres au moment de l’exécution. Word n’a pas de paramètre de document pour le texte bidirectionnel (vous modifiez simplement l’alignement du texte). par conséquent, les contrôles ne peuvent pas être mappés à ce paramètre. Au lieu de cela, vous devez définir l’alignement du texte pour chaque contrôle. Il est possible d’écrire du code qui parcoure tous les contrôles et les force à afficher le texte de droite à gauche.
+ Dans Excel, vous pouvez définir une propriété de la feuille de calcul pour afficher le texte de droite à gauche. Les contrôles hôtes, ou tout contrôle ayant une `RightToLeft` propriété, qui est placé sur le concepteur correspondent automatiquement à ces paramètres au moment de l’exécution. Word n’a pas de paramètre de document pour le texte bidirectionnel (vous modifiez simplement l’alignement du texte). par conséquent, les contrôles ne peuvent pas être mappés à ce paramètre. Au lieu de cela, vous devez définir l’alignement du texte pour chaque contrôle. Il est possible d’écrire du code qui parcoure tous les contrôles et les force à afficher le texte de droite à gauche.
 
 ### <a name="change-culture"></a>Modifier la culture
  Votre code de personnalisation au niveau du document partage généralement le thread d’interface utilisateur principal d’Excel. De ce fait, toute modification que vous apportez à la culture du thread affecte tout ce qui s’exécute sur celui-ci ; la modification ne se limite pas à votre personnalisation.
@@ -55,7 +55,7 @@ ms.locfileid: "72986053"
  Les contrôles Windows Forms sont initialisés avant que l’application hôte démarre les compléments VSTO de niveau application. En pareil cas, la culture doit être modifiée avant de définir les contrôles d’interface utilisateur.
 
 ## <a name="install-the-language-packs"></a>Installer les modules linguistiques
- Si vous n’avez pas les paramètres Anglais pour Windows, vous pouvez installer les modules linguistiques [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] pour voir les messages de [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] dans la même langue que celle de Windows. Si des utilisateurs finals n’exécutent pas vos solutions avec des paramètres Anglais pour Windows, ils doivent disposer du module linguistique approprié pour voir les messages du runtime dans la même langue que celle de Windows. Les modules linguistiques [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] sont disponibles dans le [Centre de téléchargement Microsoft](https://www.microsoft.com/download).
+ Si vous n’avez pas les paramètres Anglais pour Windows, vous pouvez installer les modules linguistiques [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] pour voir les messages de [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] dans la même langue que celle de Windows. Si des utilisateurs finals n’exécutent pas vos solutions avec des paramètres Anglais pour Windows, ils doivent disposer du module linguistique approprié pour voir les messages du runtime dans la même langue que celle de Windows. Les [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] modules linguistiques sont disponibles dans le [Centre de téléchargement Microsoft](https://www.microsoft.com/download).
 
  Par ailleurs, les modules linguistiques .NET Framework sont nécessaires pour les messages ClickOnce. Les modules linguistiques .NET Framework sont disponibles dans le [Centre de téléchargement Microsoft](https://www.microsoft.com/download).
 
@@ -77,7 +77,7 @@ Application.ActiveCell.Value2 = "05/12/04"
 
  Ce même code, quand il est utilisé dans une solution créée à l’aide des outils de développement Office dans Visual Studio et passé à Excel via COM Interop, produit les mêmes résultats quand la date est mise en forme dans le style en-US.
 
- Exemple :
+ Par exemple :
 
  [!code-vb[Trin_VstcoreCreatingExcel#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb#6)]
  [!code-csharp[Trin_VstcoreCreatingExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs#6)]

@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e9d2e8b0414746523d0f76e8266f6463d9c05574
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160296"
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>Enregistrement des informations des symboles avec des fichiers de données de performances
@@ -28,7 +28,7 @@ Si vous utilisez l’environnement de développement intégré (IDE) [!INCLUDE[v
   
 - Pour conserver les symboles, afin que le rapport de performances soit portable depuis l’ordinateur profilé et génère les mêmes informations si le rapport est ouvert pour analyse sur un autre ordinateur, qui peut avoir des symboles différents.  
   
-  **Spécifications**  
+  **Configuration requise**  
   
 - [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
@@ -65,6 +65,6 @@ Si vous utilisez l’environnement de développement intégré (IDE) [!INCLUDE[v
  VsPerfReport -packsymbols -summary:all nom_fichier.vsp  
   
 ## <a name="see-also"></a>Voir aussi  
- [Enregistrement et exportation de données des outils d’analyse des performances](../profiling/saving-and-exporting-performance-tools-data.md)   
- [Guide pratique pour Informations de symbole de référence Windows](../profiling/how-to-reference-windows-symbol-information.md)   
+ [Enregistrement et exportation des données des outils de performances](../profiling/saving-and-exporting-performance-tools-data.md)   
+ [Comment : référencer les informations de symboles Windows](../profiling/how-to-reference-windows-symbol-information.md)   
  [VSPerfReport](../profiling/vsperfreport.md)

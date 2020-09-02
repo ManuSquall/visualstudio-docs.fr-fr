@@ -8,10 +8,10 @@ ms.date: 02/23/2020
 ms.topic: how-to
 description: Découvrez comment tirer parti des tarifs spéciaux d’Azure DevTest disponibles pour les clients disposant d’un contrat entreprise
 ms.openlocfilehash: 6d7ad872568ead5c7c53dcd8d0429f2ff0444095
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903142"
 ---
 # <a name="azure-enterprise-agreement-devtest-offer"></a>Offre Azure Accord Entreprise DevTest
@@ -32,7 +32,7 @@ Pour activer les offres :
 0. Pointez sur le nom du compte. 
 0. Cliquez sur l’icône de **modification** (crayon) à l’extrême droite. 
 0. Cliquez sur la case à cocher **dev/test** .
-0. Cliquez sur **Enregistrer**.
+0. Cliquez sur **Save**.
 
 ## <a name="create-individual-subscriptions-within-the-account"></a>Créer des abonnements individuels au sein du compte
 Chaque abonné sur le compte peut créer un abonnement en procédant comme suit :

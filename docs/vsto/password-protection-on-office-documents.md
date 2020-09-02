@@ -1,5 +1,5 @@
 ---
-title: Protection de mot de passe des documents Office
+title: Protection par mot de passe sur les documents Office
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,28 +17,28 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e3c9521389ce348a482f35ec95c9766edea49f5f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62977898"
 ---
-# <a name="password-protection-on-office-documents"></a>Protection de mot de passe des documents Office
-  Il est possible de définir un mot de passe sur vos documents Microsoft Office Word et les classeurs Microsoft Office Excel afin qu’ils ne peuvent pas être ouverts par une personne ne connaît pas le mot de passe. Cette option est appelée **mot de passe à l’ouverture**.
+# <a name="password-protection-on-office-documents"></a>Protection par mot de passe sur les documents Office
+  Il est possible de définir un mot de passe dans vos documents Word Microsoft Office et Microsoft Office classeurs Excel afin qu’ils ne puissent pas être ouverts par une personne qui ne connaît pas le mot de passe. Cette option est appelée **mot de passe à l’ouverture**.
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
- Vous pouvez créer des projets au niveau du document à l’aide de documents existants et les classeurs qui ont **mot de passe à l’ouverture** activé. Le comportement dans Visual Studio est différent pour les documents Word et Excel qui ont **mot de passe à l’ouverture** activé.
+ Vous pouvez créer des projets au niveau du document à l’aide de documents et classeurs existants dont **le mot de passe** est activé. Le comportement dans Visual Studio est différent pour les documents Word et Excel dont le **mot de passe** est activé.
 
- Pour plus d’informations sur l’activation de **mot de passe à l’ouverture**, consultez l’aide dans Word ou Excel.
+ Pour plus d’informations sur l’activation du **mot de passe à l’ouverture**, consultez aide dans Word ou Excel.
 
-## <a name="behavior-of-excel-and-word"></a>Comportement d’Excel et Word
- Chaque fois que vous ouvrez un classeur Excel dans Visual Studio a **mot de passe à l’ouverture** activée, Excel vous demande le mot de passe. Lorsque vous générez votre solution vous demandera le mot de passe à nouveau, car le document est ouvert pendant la génération.
+## <a name="behavior-of-excel-and-word"></a>Comportement d’Excel et de Word
+ Chaque fois que vous ouvrez un classeur Excel dans Visual Studio pour lequel le **mot de passe** est activé, Excel vous invite à entrer le mot de passe. Lorsque vous générez votre solution, vous êtes invité à entrer à nouveau le mot de passe, car le document est ouvert pendant la génération.
 
- La première fois que vous ouvrez un document Word dans Visual Studio a **mot de passe à l’ouverture** activé, Word vous propose le mot de passe. Après avoir entré correctement le mot de passe, **mot de passe à l’ouverture** est supprimé du document et de l’ouverture du document n’aura plus besoin un mot de passe. Si vous souhaitez que le document dans votre solution pour exiger un mot de passe avant qu’il peut être ouvert, vous devez activer **mot de passe à l’ouverture** après la génération finale et avant de déployer la solution.
+ La première fois que vous ouvrez un document Word dans Visual Studio pour lequel le **mot de passe** est activé, Word vous invite à entrer le mot de passe. Une fois que vous avez entré le mot de passe, le **mot de passe à l’ouverture** est supprimé du document et l’ouverture du document n’a plus besoin d’un mot de passe. Si vous souhaitez que le document dans votre solution exige un mot de passe avant de pouvoir être ouvert, vous devez activer le **mot de passe à l’ouverture** après votre Build finale et avant de déployer la solution.
 
 ## <a name="see-also"></a>Voir aussi
 - [Protection des documents dans les solutions au niveau du document](../vsto/document-protection-in-document-level-solutions.md)
-- [Information rights management et vue d’ensemble des extensions de code managé](../vsto/information-rights-management-and-managed-code-extensions-overview.md)
-- [Guide pratique pour Autoriser le code de s’exécuter derrière des documents avec des autorisations restreintes](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)
+- [Présentation de la gestion des droits relatifs à l’information et des extensions de code managé](../vsto/information-rights-management-and-managed-code-extensions-overview.md)
+- [Comment : autoriser le code à s’exécuter derrière des documents avec des autorisations restreintes](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)
 - [Concevoir et créer des solutions Office](../vsto/designing-and-creating-office-solutions.md)

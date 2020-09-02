@@ -1,5 +1,5 @@
 ---
-title: 'Éléments fondamentaux du débogage : Registres (fenêtre) | Microsoft Docs'
+title: 'Concepts de base du débogage : fenêtre registres | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,13 +22,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c5c9380ccc9a21270da3c5832222976e4c7121e3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65686716"
 ---
-# <a name="debugging-basics-registers-window"></a>Éléments fondamentaux du débogage : Registres (fenêtre)
+# <a name="debugging-basics-registers-window"></a>Concepts de base du débogage : fenêtre Registres
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La fenêtre **Registres** est disponible uniquement si le débogage au niveau des adresses est activé dans la boîte de dialogue **Options**, nœud **Débogage**.  
@@ -45,7 +45,7 @@ La fenêtre **Registres** est disponible uniquement si le débogage au niveau de
   
  Pour plus d'informations sur l'affichage de la fenêtre **Registres**, consultez [Utilisation de la fenêtre Registres](../debugger/how-to-use-the-registers-window.md).  
   
- Lorsque vous examinez le **inscrit** fenêtre, vous verrez des entrées telles que cet exemple :  
+ Lorsque vous examinez la fenêtre **registres** , vous verrez des entrées telles que l’exemple suivant :  
   
 ```  
 EAX = 003110D8  
@@ -59,5 +59,5 @@ EAX = 003110D8
  Pour des raisons de clarté, la fenêtre **Registres** classe les registres par groupes. Si vous cliquez avec le bouton droit sur la fenêtre **Registres**, un menu contextuel contenant une liste de groupes s'affiche. Vous pouvez afficher ou masquer des groupes selon vos besoins.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour utiliser la fenêtre Registres](../debugger/how-to-use-the-registers-window.md)   
+ [Comment : utiliser la fenêtre registres](../debugger/how-to-use-the-registers-window.md)   
  [Principes de base du débogueur](../debugger/debugger-basics.md)

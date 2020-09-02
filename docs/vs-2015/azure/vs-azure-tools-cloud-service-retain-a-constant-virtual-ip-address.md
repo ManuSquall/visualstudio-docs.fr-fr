@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
 ms.openlocfilehash: 525b5fe8f2726ab1f7f2ff80abf7bc06937a7a0b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62964224"
 ---
 # <a name="retain-a-constant-virtual-ip-address-for-an-azure-cloud-service"></a>Conserver une adresse IP virtuelle constante pour un service cloud Azure
@@ -37,7 +37,7 @@ Vous pouvez spécifier les paramètres de déploiement dans l’**Assistant Publ
 
     ![Publication d’application Azure : page de connexion](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-signin.png)
 
-4. Dans l’onglet **Paramètres communs**, vérifiez que le nom du service cloud vers lequel vous souhaitez effectuer le déploiement, **l’environnement**, la **configuration de build** et la **configuration du service** sont corrects.
+4. Sous l’onglet **paramètres communs** , vérifiez que le nom du service Cloud vers lequel vous effectuez le déploiement, l' **environnement**, la **configuration de build**et la configuration du **service** sont tous corrects.
 
     ![Publication d’application Azure : onglet Paramètres communs](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-common-settings.png)
 

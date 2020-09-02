@@ -14,10 +14,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2908c8217070196de1b2d3cd4f1c5f8d8f2868a5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68160435"
 ---
 # <a name="build-loggers"></a>Enregistreurs d’événements de génération
@@ -44,12 +44,12 @@ Les enregistreurs d’événements vous permettent de personnaliser la sortie de
  [!code-csharp[msbuild_SimpleConsoleLogger#3](../snippets/csharp/VS_Snippets_Misc/msbuild_SimpleConsoleLogger/CS/msbuild_SimpleConsoleLogger.cs#3)]  
   
 ## <a name="responding-to-logger-verbosity-values"></a>Réponse aux valeurs Verbosity de l’enregistreur d’événements  
- Dans certains cas, vous souhaiterez enregistrer les informations d’un événement uniquement si le commutateur **/verbosity** de MSBuild.exe contient une certaine valeur. Dans cet exemple, le gestionnaire d’événements <xref:Microsoft.Build.Framework.IEventSource.TargetStarted> n’enregistre un message que si la propriété <xref:Microsoft.Build.Utilities.Logger.Verbosity%2A>, définie par le commutateur **/verbosity**, est égale à <xref:Microsoft.Build.Framework.LoggerVerbosity>`Detailed`.  
+ Dans certains cas, vous souhaiterez enregistrer les informations d’un événement uniquement si le commutateur **/verbosity** de MSBuild.exe contient une certaine valeur. Dans cet exemple, le <xref:Microsoft.Build.Framework.IEventSource.TargetStarted> Gestionnaire d’événements enregistre un message uniquement si la <xref:Microsoft.Build.Utilities.Logger.Verbosity%2A> propriété, qui est définie par le commutateur **/verbosity** , est égale à <xref:Microsoft.Build.Framework.LoggerVerbosity> `Detailed` .  
   
  [!code-csharp[msbuild_SimpleConsoleLogger#4](../snippets/csharp/VS_Snippets_Misc/msbuild_SimpleConsoleLogger/CS/msbuild_SimpleConsoleLogger.cs#4)]  
   
 ## <a name="specifying-a-logger"></a>Spécification d’un enregistreur d’événements  
- Une fois l’enregistreur d’événements compilé dans un assembly, vous devez indiquer à [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] qu’il faut utiliser cet enregistreur d’événements pendant les générations. Pour cela, vous devez utiliser le commutateur **/logger** avec MSBuild.exe. Pour plus d’informations sur les commutateurs disponibles pour MSBuild.exe, consultez [Référence de ligne de commande](../msbuild/msbuild-command-line-reference.md).  
+ Une fois l’enregistreur d’événements compilé dans un assembly, vous devez indiquer à [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] qu’il faut utiliser cet enregistreur d’événements pendant les générations. Pour ce faire, utilisez le commutateur **/logger** avec MSBuild.exe. Pour plus d’informations sur les commutateurs disponibles pour MSBuild.exe, consultez Référence de la [ligne de commande](../msbuild/msbuild-command-line-reference.md).  
   
  La ligne de commande suivante génère le projet `MyProject.csproj` et utilise la classe d’enregistreur d’événements implémentée dans `SimpleLogger.dll`. Le commutateur **/nologo** masque la bannière et le message de copyright, et le commutateur **/noconsolelogger** désactive l’enregistreur d’événements de console [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] par défaut.  
   
@@ -63,7 +63,7 @@ MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll
 MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed  
 ```  
   
-## <a name="example"></a>Exemples  
+## <a name="example"></a>Exemple  
   
 ### <a name="description"></a>Description  
  L’exemple suivant contient le code complet pour l’enregistreur d’événements.  
@@ -73,7 +73,7 @@ MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed
   
 ### <a name="comments"></a>Commentaires  
   
-## <a name="example"></a>Exemples  
+## <a name="example"></a>Exemple  
   
 ### <a name="description"></a>Description  
  L’exemple suivant montre comment implémenter un enregistreur d’événements qui écrit le journal dans un fichier au lieu de l’afficher dans la fenêtre de console.  
@@ -84,5 +84,5 @@ MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed
 ### <a name="comments"></a>Commentaires  
   
 ## <a name="see-also"></a>Voir aussi  
- [Obtention de journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md)   
+ [Obtention des journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md)   
  [Concepts MSBuild](../msbuild/msbuild-concepts.md)

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3ef13b959d4e106b451ea0cfb336835059667ce4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75592072"
 ---
 # <a name="view-type-and-member-definitions"></a>Afficher les définitions de type et de membre
@@ -26,15 +26,15 @@ Les développeurs doivent souvent afficher les définitions du code source pour 
 
 ## <a name="go-to-definition"></a>Atteindre la définition
 
-La fonction **Go To Definition** navigue vers la source d’un type ou d’un membre, et ouvre le résultat dans un nouvel onglet. Si vous êtes un utilisateur de clavier, placez votre curseur de texte quelque part à l’intérieur du nom du symbole et appuyez sur **F12**. Si vous préférez utiliser la souris, sélectionnez **Atteindre la définition** dans le menu contextuel (clic droit) ou utilisez la fonctionnalité **Ctrl+clic** décrite dans la section suivante.
+La fonctionnalité **atteindre la définition** permet d’accéder à la source d’un type ou d’un membre et d’ouvrir le résultat dans un nouvel onglet. Si vous êtes un utilisateur du clavier, placez le curseur de texte à l’intérieur du nom du symbole et appuyez sur **F12**. Si vous préférez utiliser la souris, sélectionnez **Atteindre la définition** dans le menu contextuel (clic droit) ou utilisez la fonctionnalité **Ctrl+clic** décrite dans la section suivante.
 
 ### <a name="ctrl-click-go-to-definition"></a>Atteindre la définition avec Ctrl+clic
 
-**Ctrl**+**click** est un raccourci pour les utilisateurs de souris d’accéder rapidement à Go **To Definition**. Vous pouvez cliquer sur les symboles quand vous appuyez sur **Ctrl** et que vous pointez sur le type ou le membre. Pour accéder rapidement à la définition d’un symbole, appuyez sur la touche **Ctrl**, puis cliquez sur le symbole. C’est aussi simple que cela !
+**CTRL** + **cliquez sur** le raccourci permettant aux utilisateurs de la souris d’accéder rapidement **à atteindre la définition**. Vous pouvez cliquer sur les symboles quand vous appuyez sur **Ctrl** et que vous pointez sur le type ou le membre. Pour accéder rapidement à la définition d’un symbole, appuyez sur la touche **Ctrl**, puis cliquez sur le symbole. C’est aussi simple que cela !
 
 ![Animation de l’accès à la définition avec un clic de souris](../ide/media/click_gotodef.gif)
 
-Vous pouvez modifier la clé modificateur pour la souris-cliquez **Go To Definition** en allant à **Tools** > **Options** > **Text Editor** > **General**, et en sélectionnant soit **Alt** ou **Ctrl**+**Alt** à partir de la clé de **modification d’utilisation** drop-down. Vous pouvez également désactiver **Atteindre la définition** avec un clic de souris en décochant la case **Activer le clic de souris pour exécuter Atteindre la définition**.
+Vous pouvez modifier la touche de modification pour **accéder à la définition** en cliquant sur **Outils**  >  **options**  >  **éditeur de texte**  >  **général**, puis en sélectionnant **ALT** ou **CTRL** + **ALT** dans la liste déroulante **utiliser la touche de modification** . Vous pouvez également désactiver **Atteindre la définition** avec un clic de souris en décochant la case **Activer le clic de souris pour exécuter Atteindre la définition**.
 
 ![Activation du clic de souris pour la fonctionnalité Atteindre la définition](../ide/media/editor_options_mouse_click_gotodef.png)
 
@@ -42,7 +42,7 @@ Vous pouvez modifier la clé modificateur pour la souris-cliquez **Go To Definit
 
 La fonctionnalité **Aperçu de la définition** vous permet d’afficher un aperçu de la définition d’un type sans avoir à quitter votre emplacement actuel dans l’éditeur. Si vous utilisez le clavier, placez le curseur texte dans le nom du type ou du membre, puis appuyez sur **Alt+F12**. Si vous préférez utiliser la souris, sélectionnez **Aperçu de la définition** dans le menu contextuel (clic droit).
 
-Pour activer la fonctionnalité de**clic** **Ctrl,**+rendez-vous sur **Tools** > **Options** > **Text Editor** > **General**. Sélectionnez l’option **Ouvrir la définition dans l’aperçu** et cliquez sur **OK** pour fermer la boîte de dialogue **Options**.
+Pour activer la fonctionnalité **CTRL +** + **clic** , accédez à **Outils**  >  **options**  >  **éditeur de texte**  >  **général**. Sélectionnez l’option **Ouvrir la définition dans l’aperçu** et cliquez sur **OK** pour fermer la boîte de dialogue **Options**.
 
 ![Activation de l’option Aperçu de la définition avec un clic de souris](../ide/media/editor_options_peek_view.png)
 
@@ -69,7 +69,7 @@ Par exemple, si vous exécutez la commande **Atteindre la définition** pour <xr
 
 ### <a name="view-decompiled-source-definitions-instead-of-metadata-c"></a>Afficher les définitions de source décompilées au lieu de métadonnées (C#)
 
-Vous pouvez définir une option pour afficher le code source décompilé quand vous visualisez la définition d’un type C# ou d’un membre dont le code source n’est pas disponible. Pour activer cette fonctionnalité, choisissez **Tools** > **Options** dans la barre de menu. Ensuite, élargissez **l’éditeur** > de texte**C-Advanced** > **Advanced**, et **sélectionnez Activez la navigation vers des sources en décomposition.**
+Vous pouvez définir une option pour afficher le code source décompilé quand vous visualisez la définition d’un type C# ou d’un membre dont le code source n’est pas disponible. Pour activer cette fonctionnalité, choisissez **Outils**  >  **options** dans la barre de menus. Ensuite, développez **éditeur de texte**  >  **C#**  >  **avancé**, puis sélectionnez **activer la navigation vers les sources décompilées**.
 
 ![Affichage d’une définition décompilée](media/go-to-definition-decompiled-sources.png)
 
@@ -79,4 +79,4 @@ Vous pouvez définir une option pour afficher le code source décompilé quand v
 ## <a name="see-also"></a>Voir aussi
 
 - [Naviguer dans le code](../ide/navigating-code.md)
-- [Comment : Afficher et modifier le code en utilisant Peek Definition (Alt-F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
+- [Comment : afficher et modifier le code à l’aide de l’aperçu de définition (ALT + F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)

@@ -25,10 +25,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 6db2202971facb0419db68c04835c8d5c848f528
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77271581"
 ---
 # <a name="annotating-structs-and-classes"></a>Structs et classes d'annotation
@@ -40,25 +40,25 @@ Vous pouvez annoter des membres de classe et de struct à l’aide d’annotatio
   
 - `_Field_range_(low, high)`  
   
-     Le champ se trouve dans la plage (inclusive) de `low` à `high`.  Équivaut à `_Satisfies_(_Curr_ >= low && _Curr_ <= high)` appliquée à l’objet annoté à l’aide des conditions pre ou postales appropriées.  
+     Le champ se trouve dans la plage (inclusive) de `low` à `high` .  Équivalent à `_Satisfies_(_Curr_ >= low && _Curr_ <= high)` appliqué à l’objet annoté à l’aide des conditions pre ou postales appropriées.  
   
 - `_Field_size_(size)`, `_Field_size_opt_(size)`, `_Field_size_bytes_(size)`, `_Field_size_bytes_opt_(size)`  
   
-     Champ qui a une taille accessible en écriture dans les éléments (ou octets) comme spécifié par `size`.  
+     Champ qui a une taille accessible en écriture dans les éléments (ou octets), comme spécifié par `size` .  
   
-- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`, `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`  
+- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`,         `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`  
   
-     Champ qui a une taille accessible en écriture dans des éléments (ou octets) comme spécifié par `size`, et le `count` de ces éléments (octets) qui sont accessibles en lecture.  
+     Champ qui a une taille accessible en écriture dans les éléments (ou octets) comme spécifié par `size` , et le `count` de ces éléments (octets) qui sont accessibles en lecture.  
   
 - `_Field_size_full_(size)`, `_Field_size_full_opt_(size)`, `_Field_size_bytes_full_(size)`, `_Field_size_bytes_full_opt_(size)`  
   
-     Champ qui a à la fois une taille lisible et accessible en écriture dans des éléments (ou octets), comme spécifié par `size`.  
+     Champ qui a à la fois une taille lisible et accessible en écriture dans des éléments (ou octets), comme spécifié par `size` .  
   
 - `_Struct_size_bytes_(size)`  
   
-     Champ qui a à la fois une taille lisible et accessible en écriture dans des éléments (ou octets), comme spécifié par `size`.  
+     Champ qui a à la fois une taille lisible et accessible en écriture dans des éléments (ou octets), comme spécifié par `size` .  
   
-     S’applique à une déclaration de classe ou de struct.  Indique qu’un objet valide de ce type peut être plus grand que le type déclaré, avec le nombre d’octets spécifié par `size`.  Par exemple :  
+     S’applique à une déclaration de classe ou de struct.  Indique qu’un objet valide de ce type peut être plus grand que le type déclaré, avec le nombre d’octets spécifié par `size` .  Par exemple :  
   
     ```cpp  
   
@@ -77,11 +77,11 @@ Vous pouvez annoter des membres de classe et de struct à l’aide d’annotatio
     ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Utilisation d’annotations SAL pour réduireC++ les erreurs C/code](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
- [Compréhension](../code-quality/understanding-sal.md) des  SAL  
+ [Utilisation d’annotations SAL pour réduire les défauts du code C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
+ [Comprendre SAL](../code-quality/understanding-sal.md)   
  [Annotation des paramètres de fonction et des valeurs de retour](../code-quality/annotating-function-parameters-and-return-values.md)   
- [Annoter le comportement](../code-quality/annotating-function-behavior.md) de la fonction   
- [Annoter le comportement de verrouillage](../code-quality/annotating-locking-behavior.md)   
+ [Annotation du comportement d’une fonction](../code-quality/annotating-function-behavior.md)   
+ [Annotation du comportement de verrouillage](../code-quality/annotating-locking-behavior.md)   
  [Spécification du moment et de l’endroit où une annotation s’applique](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [Fonctions intrinsèques](../code-quality/intrinsic-functions.md)   
  [Bonnes pratiques et exemples](../code-quality/best-practices-and-examples-sal.md)

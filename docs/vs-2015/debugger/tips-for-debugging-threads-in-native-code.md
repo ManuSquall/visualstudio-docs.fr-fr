@@ -1,5 +1,5 @@
 ---
-title: Conseils pour le débogage de Threads en Code natif | Microsoft Docs
+title: Conseils pour le débogage de threads en code natif | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,10 +18,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7c299d3585d9089f8525c2ec7f470601797cc3a2
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65684873"
 ---
 # <a name="tips-for-debugging-threads-in-native-code"></a>Conseils pour le débogage de threads en code natif
@@ -36,5 +36,5 @@ Voici quelques conseils que vous utiles pour le débogage de threads en code nat
 - Vous pouvez utiliser les fonctions des bibliothèques Runtime C pour déboguer une application multithread. Pour plus d’informations, consultez [_malloc_dbg](https://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Déboguer les applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+ [Déboguer des applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Débogage du code natif](../debugger/debugging-native-code.md)

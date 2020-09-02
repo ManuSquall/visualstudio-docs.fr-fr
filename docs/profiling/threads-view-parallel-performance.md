@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4382a21a68848a758f3d4cd37a8528722927691c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62973750"
 ---
 # <a name="threads-view-in-the-concurrency-visualizer"></a>Vue Threads dans le visualiseur concurrentiel
@@ -47,13 +47,13 @@ Vous pouvez utiliser la vue **Threads** pour :
 
 ## <a name="use-threads-view"></a>Utiliser la vue Threads
 
-Pour démarrer Concurrency Visualizer, **sélectionnez Analyze** > **Concurrency Visualizer,** puis sélectionnez une option, comme **Le lancement d’un nouveau processus**.
+Pour démarrer le visualiseur concurrentiel, sélectionnez **analyser**le  >  **visualiseur concurrentiel**, puis sélectionnez une option, telle que **lancer un nouveau processus**.
 
 Le visualiseur concurrentiel démarre l’application et collecte une trace jusqu’à ce que vous sélectionniez **Arrêter la collecte**. Le visualiseur analyse ensuite la trace et affiche les résultats dans la page de rapport de la trace.
 
 Sélectionnez l’onglet **Threads** en haut à gauche du rapport pour ouvrir la vue **Threads**.
 
-![Vue de fils](../profiling/media/threadsviewnarrowing.png "vue Threads")
+![Vue threads](../profiling/media/threadsviewnarrowing.png "vue Threads")
 
 Sélectionnez les intervalles de temps et les threads pour démarrer une analyse des performances.
 
@@ -118,13 +118,13 @@ L’onglet **Rapport des profils** montre les rapports des catégories et des li
 
 - **E/S** Le rapport **E/S** montre les appels responsables des blocages d’E/S ainsi que les durées totales de blocage pour chaque pile des appels. Pour plus d’informations, consultez [Temps d’E/S (vue Threads)](../profiling/i-o-time-threads-view.md).
 
-- **Veille** Le rapport **Veille** montre les appels responsables des blocages de veille ainsi que les durées totales de blocage pour chaque pile des appels. Pour plus d’informations, voir [Temps de sommeil](../profiling/sleep-time.md).
+- **Veille** Le rapport **Veille** montre les appels responsables des blocages de veille ainsi que les durées totales de blocage pour chaque pile des appels. Pour plus d’informations, consultez [durée de veille](../profiling/sleep-time.md).
 
-- **Gestion de la mémoire** Le rapport **Gestion de la mémoire** montre les appels où les blocages de gestion de la mémoire se sont produits ainsi que les durées totales de blocage pour chaque pile des appels. Utilisez ces informations pour identifier les zones qui ont des problèmes de pagination ou de garbage collection excessifs.  Pour plus d’informations, voir [le temps de gestion de la mémoire](../profiling/memory-management-time.md).
+- **Gestion de la mémoire** Le rapport **Gestion de la mémoire** montre les appels où les blocages de gestion de la mémoire se sont produits ainsi que les durées totales de blocage pour chaque pile des appels. Utilisez ces informations pour identifier les zones qui ont des problèmes de pagination ou de garbage collection excessifs.  Pour plus d’informations, consultez [temps de gestion](../profiling/memory-management-time.md)de la mémoire.
 
-- **Anticipation** Le rapport **Anticipation** montre où les processus sur le système ont anticipé le processus en cours. Il montre également les threads individuels qui ont remplacé les threads du processus en cours. Vous pouvez utiliser ces informations pour identifier les processus et les threads qui ont effectué le plus de préemptions. Pour plus d’informations, voir [Temps de Préemption](../profiling/preemption-time.md).
+- **Anticipation** Le rapport **Anticipation** montre où les processus sur le système ont anticipé le processus en cours. Il montre également les threads individuels qui ont remplacé les threads du processus en cours. Vous pouvez utiliser ces informations pour identifier les processus et les threads qui ont effectué le plus de préemptions. Pour plus d’informations, consultez [durée de préemption](../profiling/preemption-time.md).
 
-- **Traitement de l’interface utilisateur** Le rapport **Traitement de l’interface utilisateur** montre les appels responsables des blocages de traitement de l’IU ainsi que les durées totales de blocage pour chaque pile des appels. Pour plus d’informations, voir [le temps de traitement de l’interface utilisateur](../profiling/ui-processing-time.md).
+- **Traitement de l’interface utilisateur** Le rapport **Traitement de l’interface utilisateur** montre les appels responsables des blocages de traitement de l’IU ainsi que les durées totales de blocage pour chaque pile des appels. Pour plus d’informations, consultez [durée de traitement de l’interface utilisateur](../profiling/ui-processing-time.md).
 
 - **Synthèse par thread** Sélectionnez **Synthèse par thread** pour afficher un graphe indiquant l’état des threads pendant l’intervalle de temps sélectionné. Les colonnes avec des codes de couleur montrent la durée totale que chaque thread a passée dans les états En cours d’exécution, Bloqué, E/S et autres. Les threads sont nommés en bas. Quand vous ajustez le niveau de zoom dans le graphe chronologique, celui-ci se met automatiquement à jour.
 

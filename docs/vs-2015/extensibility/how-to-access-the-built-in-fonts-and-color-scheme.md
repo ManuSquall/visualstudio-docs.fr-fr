@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Le jeu de couleurs et polices intégrées d’accès | Microsoft Docs'
+title: 'Comment : accéder aux polices et au modèle de couleurs intégrés | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,75 +13,75 @@ caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a43fb3a22ecb2d04542eacf07bf883590868b75b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65685307"
 ---
-# <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>Procédure : Le jeu de couleurs et polices intégrées d’accès
+# <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>Guide pratique pour accéder aux polices intégrées et au modèle de couleurs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-L’environnement de développement intégré (IDE) Visual Studio a un jeu de polices et couleurs qui est associé à la fenêtre d’éditeur. Vous pouvez accéder à ce schéma via les <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interface.  
+L’environnement de développement intégré (IDE) de Visual Studio dispose d’un schéma de polices et de couleurs associées à la fenêtre de l’éditeur. Vous pouvez accéder à ce schéma par le biais de l' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interface.  
   
- Pour utiliser les polices intégrées et le jeu de couleurs, un VSPackage doit :  
+ Pour utiliser le modèle de polices et de couleurs intégré, un VSPackage doit :  
   
-- Définir une catégorie à utiliser avec le service de polices et couleurs par défaut.  
+- Définissez une catégorie à utiliser avec le service polices et couleurs par défaut.  
   
-- S’inscrire à la catégorie avec le serveur de polices et couleurs par défaut.  
+- Inscrivez la catégorie avec le serveur de polices et de couleurs par défaut.  
   
-- Informez l’IDE qu’une fenêtre spécifique utilise les catégories et les éléments d’affichage intégrées à l’aide de la `T:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer` et `T:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer` interfaces.  
+- Conseillez à l’IDE qu’une fenêtre spécifique utilise les éléments et les catégories d’affichage intégrés à l’aide des `T:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer` `T:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer` interfaces et.  
   
-  L’IDE utilise la catégorie résultant en tant que handle vers la fenêtre. Nom de la catégorie s’affiche dans le **afficher les paramètres de :** zone de liste déroulante dans le **polices et couleurs** page de propriétés.  
+  L’IDE utilise la catégorie résultante comme handle de la fenêtre. Le nom de la catégorie est affiché dans la zone de liste déroulante **afficher les paramètres de :** de la page de propriétés **polices et couleurs** .  
   
-### <a name="to-define-a-category-using-built-in-fonts-and-colors"></a>Pour définir une catégorie à l’aide de couleurs et polices intégrées  
+### <a name="to-define-a-category-using-built-in-fonts-and-colors"></a>Pour définir une catégorie à l’aide de couleurs et de polices intégrées  
   
-1. Créer un GUID arbitraire.  
+1. Créez un GUID arbitraire.  
   
-    Ce GUID est utilisé pour identifier une catégorie<strong>.</strong> Cette catégorie réutilise la spécification de couleurs et de polices par défaut de l’IDE.  
+    Ce GUID est utilisé pour identifier une catégorie de manière unique<strong>.</strong> Cette catégorie réutilise la spécification des polices et couleurs par défaut de l’IDE.  
   
    > [!NOTE]
-   > Lors de la récupération des données de police et de couleur avec la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> ou autres interfaces, les VSPackages utiliser ce GUID pour référencer les informations intégrées.  
+   > Lorsque vous récupérez des données de police et de couleur avec le <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> ou d’autres interfaces, les VSPackages utilisent ce GUID pour référencer les informations intégrées.  
   
-2. Nom de la catégorie doit être ajouté à une table de chaînes à l’intérieur du fichier de ressources (.rc) du VSPackage, afin qu’elle peut être localisée en fonction des besoins lorsque affichés dans l’IDE.  
+2. Le nom de la catégorie doit être ajouté à une table de chaînes à l’intérieur du fichier de ressources (. RC) du VSPackage, afin qu’il puisse être localisé en fonction des besoins lorsqu’il est affiché dans l’IDE.  
   
     Pour plus d’informations, consultez [Ajout ou suppression d’une chaîne](https://msdn.microsoft.com/library/077077b4-0f4b-4633-92d6-60b321164cab).  
   
-### <a name="to-register-a-category-using-built-in-fonts-and-colors"></a>Pour inscrire une catégorie à l’aide de couleurs et polices intégrées  
+### <a name="to-register-a-category-using-built-in-fonts-and-colors"></a>Pour inscrire une catégorie à l’aide des couleurs et des polices intégrées  
   
-1. Construire un type spécial d’entrée de Registre de catégorie dans l’emplacement suivant :  
+1. Construisez un type spécial d’entrée de Registre Category à l’emplacement suivant :  
   
-     [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<Visual Studio version>* \FontAndColors\\*\<Category>*]  
+     [Hklm\software\microsoft. \Visual Studio \\ *\<Visual Studio version>* \FontAndColors \\ *\<Category>* ]  
   
-     *\<Catégorie >* est le nom non localisé de la catégorie.  
+     *\<Category>* est le nom non localisé de la catégorie.  
   
-2. Remplir le Registre afin d’utiliser le jeu de couleurs et polices du stock avec quatre valeurs :  
+2. Renseignez le registre pour utiliser les polices et le modèle de couleurs de stock avec quatre valeurs :  
   
     |Nom|Type|Données|Description|  
     |----------|----------|----------|-----------------|  
-    |Category|REG_SZ|GUID|Un GUID arbitraire qui identifie une catégorie qui contient le schéma de police et couleur stock.|  
-    |Package|REG_SZ|GUID|{F5E7E71D-1401-11D1-883B-0000F87579D2}<br /><br /> Ce GUID est utilisé par tous les packages qui utilisent les configurations de couleur et de police par défaut.|  
-    |NameID|REG_DWORD|Id|L’ID de ressource d’un nom de catégorie localisable dans le VSPackage.|  
-    |ToolWindowPackage|REG_SZ|GUID|Le GUID de l’implémentation VSPackage le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interface.|  
+    |Category|REG_SZ|GUID|GUID arbitraire qui identifie une catégorie qui contient la police et le modèle de couleurs de l’action.|  
+    |Package|REG_SZ|GUID|F5E7E71D-1401-11D1-883B-0000F87579D2<br /><br /> Ce GUID est utilisé par tous les VSPackages qui utilisent les configurations de police et de couleur par défaut.|  
+    |NameID|REG_DWORD|ID|ID de ressource d’un nom de catégorie localisable dans le VSPackage.|  
+    |ToolWindowPackage|REG_SZ|GUID|GUID du VSPackage qui implémente l' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interface.|  
   
 3. 
   
-### <a name="to-initiate-the-use-of-system-provided-fonts-and-colors"></a>Pour lancer l’utilisation de polices fournis par le système et les couleurs  
+### <a name="to-initiate-the-use-of-system-provided-fonts-and-colors"></a>Pour initier l’utilisation des polices et des couleurs fournies par le système  
   
-1. Créez une instance de la `T:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer` interface dans le cadre de l’implémentation et de l’initialisation de la fenêtre.  
+1. Créez une instance de l' `T:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer` interface dans le cadre de l’implémentation et de l’initialisation de la fenêtre.  
   
-2. Appelez le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> méthode pour obtenir une instance de la `T:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer` interface correspondant à l’actuel <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> instance.  
+2. Appelez la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> méthode pour obtenir une instance de l' `T:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer` interface correspondant à l' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> instance actuelle.  
   
-3. Appelez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> à deux reprises.  
+3. Appelez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> deux fois.  
   
-   - Appeler une seule fois avec `VSEDITPROPID_ViewGeneral_ColorCategory`en tant qu’argument.  
+   - Appelez une fois avec `VSEDITPROPID_ViewGeneral_ColorCategory` comme argument.  
   
-   - Appeler une seule fois avec `VSEDITPROPID_ViewGeneral_FontCategory` en tant qu’argument.  
+   - Appelez une fois avec `VSEDITPROPID_ViewGeneral_FontCategory` comme argument.  
   
-     Cela définit et expose les services de polices et couleurs par défaut en tant que propriété de la fenêtre.  
+     Cela définit et expose les services polices et couleurs par défaut en tant que propriété de la fenêtre.  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant lance l’utilisation intégrées polices et couleurs.  
+ L’exemple suivant illustre l’utilisation de polices et de couleurs intégrées.  
   
 ```  
 CComVariant vt;  
@@ -98,7 +98,7 @@ if (spPropCatContainer != NULL){
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Utilisation de polices et couleurs](../extensibility/using-fonts-and-colors.md)   
- [L’obtention de la police et les informations de couleur de colorisation de texte](../extensibility/getting-font-and-color-information-for-text-colorization.md)   
- [L’accès à la police stockée ni les paramètres de couleur](../extensibility/accessing-stored-font-and-color-settings.md)   
- [Vue d’ensemble des polices et des couleurs](../extensibility/font-and-color-overview.md)
+ [Utilisation des polices et des couleurs](../extensibility/using-fonts-and-colors.md)   
+ [Obtention d’informations sur la police et la couleur pour la coloration du texte](../extensibility/getting-font-and-color-information-for-text-colorization.md)   
+ [Accès aux paramètres de police et de couleur stockés](../extensibility/accessing-stored-font-and-color-settings.md)   
+ [Présentation de la couleur et de la police](../extensibility/font-and-color-overview.md)
