@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1a0c479182f1ff9efd4b35f2fed2de35d3536202
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153265"
 ---
-# <a name="bptype"></a>BP_TYPE
+# <a name="bp_type"></a>BP_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Spécifie si le point d’arrêt se trouve à un emplacement de code, est un emplacement de données ou un autre type de point d’arrêt.  
+Spécifie si le point d’arrêt se trouve à un emplacement de code, si est un emplacement de données ou s’il s’agit d’un autre type de point d’arrêt.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -50,23 +50,23 @@ public enum enum_BP_TYPE { 
  Ne spécifie aucun type de point d’arrêt.  
   
  BPT_CODE  
- Spécifie un point d’arrêt du code.  
+ Spécifie un point d’arrêt de code.  
   
  BPT_DATA  
- Spécifie un point d’arrêt de données.  
+ Spécifie un point d’arrêt sur variable.  
   
  BPT_SPECIAL  
- Spécifie un point d’arrêt qui n’est ni un code, ni un type de données. Ce type est déconseillé et ne doit pas être utilisé.  
+ Spécifie un point d’arrêt qui n’est ni un code ni un type de données. Ce type est déconseillé et ne doit pas être utilisé.  
   
 ## <a name="remarks"></a>Notes  
- Passé en tant que paramètre à la [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) et [GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md) méthodes.  
+ Passé en tant que paramètre aux méthodes [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) et [GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md) .  
   
 ## <a name="requirements"></a>Configuration requise  
- En-tête : msdbg.h  
+ En-tête : msdbg. h  
   
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft. VisualStudio. Debugger. Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

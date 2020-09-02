@@ -16,13 +16,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3177c92713f6fdeb9b9b8a47a0da38608714174d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651285"
 ---
-# <a name="immediate-window"></a>Exécution (fenêtre)
+# <a name="immediate-window"></a>Fenêtre Exécution
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 La fenêtre **Exécution** est utilisée pour déboguer et évaluer des expressions, exécuter des instructions, imprimer les valeurs des variables, etc. Elle vous permet d’entrer des expressions qui doivent être évaluées ou exécutées par le langage de développement lors du processus de débogage. Pour afficher la fenêtre **Exécution**, ouvrez un projet à modifier, puis choisissez **Fenêtres** dans le menu **Déboguer** et sélectionnez **Exécution**, ou appuyez sur Ctrl+Alt+I.
@@ -30,7 +30,7 @@ La fenêtre **Exécution** est utilisée pour déboguer et évaluer des expressi
  Vous pouvez utiliser cette fenêtre pour émettre des commandes [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] individuelles. Parmi les commandes disponibles, `EvaluateStatement` peut être utilisée pour assigner des valeurs aux variables. La fenêtre **Exécution** prend également en charge IntelliSense.
 
 ## <a name="displaying-the-values-of-variables"></a>Affichage des valeurs de variables
- Cette fenêtre peut être particulièrement utile lors du débogage d’une application. Par exemple, pour vérifier la valeur d’une variable `varA`, vous pouvez utiliser la [commande Imprimer](../../ide/reference/print-command.md) :
+ Cette fenêtre peut être particulièrement utile lors du débogage d’une application. Par exemple, pour vérifier la valeur d’une variable `varA` , vous pouvez utiliser la [commande Imprimer](../../ide/reference/print-command.md):
 
 ```
 >Debug.Print varA
@@ -45,7 +45,7 @@ La fenêtre **Exécution** est utilisée pour déboguer et évaluer des expressi
  Les deux versions de cette commande retournent la valeur de la variable `varA`.
 
 > [!NOTE]
-> Pour émettre une commande [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] dans la fenêtre **Exécution**, vous devez faire précéder la commande d’un signe supérieur à (>). Pour entrer plusieurs commandes, basculez vers la fenêtre **Commande**.
+> Pour émettre une commande [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] dans la fenêtre **Exécution**, vous devez faire précéder la commande d’un signe supérieur à (>). Pour entrer plusieurs commandes, basculez vers la fenêtre **commande** .
 
 ## <a name="design-time-expression-evaluation"></a>Évaluation des expressions au moment du design
  Vous pouvez utiliser la fenêtre **Exécution** pour exécuter une fonction ou une sous-routine au moment du design.
@@ -70,7 +70,7 @@ La fenêtre **Exécution** est utilisée pour déboguer et évaluer des expressi
 
 2. Dans le menu **Déboguer**, cliquez sur **Fenêtres**, puis sur **Exécution**.
 
-3. Tapez `?MyFunction(2)` dans la fenêtre **Exécution** et appuyez sur Entrée.
+3. Tapez `?MyFunction(2)` dans la fenêtre **exécution** et appuyez sur entrée.
 
     La fenêtre **Exécution** exécute `MyFunction` et affiche `4`.
 
@@ -123,4 +123,4 @@ La fenêtre **Exécution** est utilisée pour déboguer et évaluer des expressi
 2. Cliquez avec le bouton droit sur la zone de texte de la fenêtre **Sortie** et sélectionnez ou désélectionnez **Messages d’exception**.
 
 ## <a name="see-also"></a>Voir aussi
- [Navigation dans le code avec le](../../debugger/navigating-through-code-with-the-debugger.md) débogueur [fenêtre commande](../../ide/reference/command-window.md) [débogage dans Visual Studio Guide de](../../debugger/debugging-in-visual-studio.md) [base du débogueur](../../debugger/debugger-basics.md) [procédure pas à pas : débogage au moment du design](../../debugger/walkthrough-debugging-at-design-time.md) [alias de commande Visual Studio](../../ide/reference/visual-studio-command-aliases.md) [utilisation régulière Expressions dans Visual Studio](../../ide/using-regular-expressions-in-visual-studio.md)
+ [Navigation dans le code avec le](../../debugger/navigating-through-code-with-the-debugger.md) débogueur [fenêtre commande](../../ide/reference/command-window.md) [débogage dans Visual Studio Guide de](../../debugger/debugging-in-visual-studio.md) [base du débogueur](../../debugger/debugger-basics.md) [procédure pas à pas : débogage au moment du design](../../debugger/walkthrough-debugging-at-design-time.md) [alias de commande Visual Studio](../../ide/reference/visual-studio-command-aliases.md) [à l’aide d’expressions régulières dans Visual Studio](../../ide/using-regular-expressions-in-visual-studio.md)

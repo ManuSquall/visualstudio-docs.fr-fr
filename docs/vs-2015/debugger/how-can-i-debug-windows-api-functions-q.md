@@ -1,5 +1,5 @@
 ---
-title: Comment puis-je déboguer des fonctions API Windows ? | Microsoft Docs
+title: Comment puis-je déboguer des fonctions API Windows ? | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,10 +24,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8c5fd73eb64c79ac9476c0036b9f2d709294d178
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65704595"
 ---
 # <a name="how-can-i-debug-windows-api-functions"></a>Comment puis-je déboguer des fonctions API Windows ?
@@ -43,8 +43,8 @@ Si vous voulez déboguer une fonction API Windows qui a chargé les symboles NT
     {,,USER32.DLL}_MessageBeep@4  
     ```  
   
-     Pour obtenir le nom décoré, consultez [affichage de noms décorés](https://msdn.microsoft.com/f79e2717-a4db-4d12-a689-69830cce2be0).  
+     Pour obtenir le nom décoré, consultez [affichage des noms décorés](https://msdn.microsoft.com/f79e2717-a4db-4d12-a689-69830cce2be0).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Questions fréquentes (FAQ) sur le débogage du code natif](../debugger/debugging-native-code-faqs.md)   
+ [FAQ sur le débogage du code natif](../debugger/debugging-native-code-faqs.md)   
  [Débogage du code natif](../debugger/debugging-native-code.md)

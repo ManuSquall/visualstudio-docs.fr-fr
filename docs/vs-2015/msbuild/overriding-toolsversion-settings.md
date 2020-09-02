@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 468561a627a3ad7eb477328b5afef794c7acf2c7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199949"
 ---
 # <a name="overriding-toolsversion-settings"></a>Substitution des paramètres ToolsVersion
@@ -31,7 +31,7 @@ Vous pouvez changer l’Ensemble d’outils pour les projets et solutions de tro
 3. En définissant la propriété `$(ProjectToolsVersion)` sur un projet dans une solution Cela vous permet de générer un projet dans une solution avec une version de l’Ensemble d’outils qui diffère de celle des autres projets.  
   
 ## <a name="override-the-toolsversion-settings-of-projects-and-solutions-on-command-line-builds"></a>Substituer les paramètres ToolsVersion de projets et de solutions sur des générations en mode ligne de commande  
- Bien que les projets Visual Studio soient généralement générés avec la version ToolsVersion spécifiée dans le fichier projet, vous pouvez utiliser le commutateur `/ToolsVersion` (ou `/tv`) sur la ligne de commande pour substituer cette valeur et générer tous les projets et leurs dépendances projet-à-projet avec un autre Ensemble d’outils. Par exemple :  
+ Bien que les projets Visual Studio soient généralement générés avec la version ToolsVersion spécifiée dans le fichier projet, vous pouvez utiliser le commutateur `/ToolsVersion` (ou `/tv`) sur la ligne de commande pour substituer cette valeur et générer tous les projets et leurs dépendances projet-à-projet avec un autre Ensemble d’outils. Par exemple :  
   
 ```  
 msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug  
@@ -114,7 +114,7 @@ msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug
   
     2. La version des outils par défaut dans le fichier MSBuild.exe.config.  
   
-    3. La version des outils par défaut dans le Registre. Pour plus d’informations, consultez [Configurations standard et personnalisée de l’ensemble d’outils](../msbuild/standard-and-custom-toolset-configurations.md).  
+    3. La version des outils par défaut dans le Registre. Pour plus d’informations, consultez [configurations standard et personnalisée](../msbuild/standard-and-custom-toolset-configurations.md)de l’ensemble d’outils.  
   
 6. Si la variable d’environnement `MSBUILDLEGACYDEFAULTTOOLSVERSION` n’est pas définie, l’ordre de priorité est le suivant :  
   
@@ -127,7 +127,7 @@ msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug
     4. Sinon, utilisez la valeur actuelle de `ToolsVersion`.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Multiciblage](../msbuild/msbuild-multitargeting-overview.md)   
+ [MULTICIBLAGE](../msbuild/msbuild-multitargeting-overview.md)   
  [Concepts MSBuild](../msbuild/msbuild-concepts.md)   
  [Ensemble d’outils (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)   
  [Configurations standard et personnalisée de l’ensemble d’outils](../msbuild/standard-and-custom-toolset-configurations.md)

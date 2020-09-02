@@ -24,18 +24,18 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: f5247a56667f5715d9f155c662eb333967878d71
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73188652"
 ---
-# <a name="create-custom-views-of-managed-objects-c-visual-basic-f-ccli"></a>Créer des vues personnalisées d’objetsC#gérés (, F#Visual Basic C++,,/CLI)
+# <a name="create-custom-views-of-managed-objects-c-visual-basic-f-ccli"></a>Créer des vues personnalisées d’objets managés (C#, Visual Basic, F #, C++/CLI)
 Vous pouvez personnaliser la façon dont Visual Studio affiche les types de données dans les fenêtres de variables du débogueur.
 
 ## <a name="attributes"></a>Attributs
 
-Dans C#, Visual Basic, F#et C++ (C++code/CLI uniquement), vous pouvez ajouter des expansions pour les données personnalisées à l’aide de <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, <xref:System.Diagnostics.DebuggerDisplayAttribute> et <xref:System.Diagnostics.DebuggerBrowsableAttribute>.
+En C#, Visual Basic, F # et C++ (code C++/CLI uniquement), vous pouvez ajouter des expansions pour les données personnalisées à l’aide de <xref:System.Diagnostics.DebuggerTypeProxyAttribute> , de <xref:System.Diagnostics.DebuggerDisplayAttribute> et de <xref:System.Diagnostics.DebuggerBrowsableAttribute> .
 
 Dans .NET Framework code 2,0, Visual Basic ne prend pas en charge l’attribut DebuggerBrowsable. Cette limitation est supprimée dans les versions plus récentes de .NET.
 
@@ -44,11 +44,11 @@ Dans .NET Framework code 2,0, Visual Basic ne prend pas en charge l’attribut D
 Vous pouvez écrire un visualiseur pour afficher les types de données managées. Pour plus d’informations, consultez [Comment : écrire un visualiseur](create-custom-visualizers-of-data.md).
 
 > [!NOTE]
-> Pour C++ le code, vous pouvez ajouter des expansions de type de données personnalisées à l’aide de l’infrastructure Natvis, comme décrit dans [créer des vues personnalisées d' C++ objets dans le débogueur](create-custom-views-of-native-objects.md).
+> Pour le code C++, vous pouvez ajouter des expansions de type de données personnalisées à l’aide de l’infrastructure Natvis, comme décrit dans [créer des vues personnalisées d’objets C++ dans le débogueur](create-custom-views-of-native-objects.md).
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Indiquer au débogueur ce qui doit être affiché à l’aide de l’attribut DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)
 - [Indiquer au débogueur le type à afficher à l’aide de l’attribut DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)
 - [Espion et Espion express, fenêtres](../debugger/watch-and-quickwatch-windows.md)
-- [Amélioration du débogage avec les attributs d’affichage de débogueur](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)
+- [Amélioration du débogage avec les attributs d'affichage de débogueur](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

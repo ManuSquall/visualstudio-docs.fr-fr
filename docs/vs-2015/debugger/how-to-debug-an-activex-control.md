@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Déboguer un contrôle ActiveX | Microsoft Docs'
+title: 'Comment : déboguer un contrôle ActiveX | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -26,25 +26,25 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9524ab08ab955609f29f437e8a1576af02738aa1
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65704463"
 ---
-# <a name="how-to-debug-an-activex-control"></a>Procédure : déboguer un contrôle ActiveX
+# <a name="how-to-debug-an-activex-control"></a>Comment : déboguer un contrôle ActiveX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 REMARQUE]
-> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez Importation et exportation de paramètres dans le menu Outils. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Les boîtes de dialogue et les commandes de menu affichées peuvent différer de celles décrites dans l'Aide selon les paramètres actifs ou le mode d'édition. Pour modifier vos paramètres, choisissez Importation et exportation de paramètres dans le menu Outils. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Pour déboguer votre contrôle ActiveX, vous devez spécifier un conteneur (exécutable) à utiliser pour l'exécution du contrôle.  
   
 ### <a name="to-specify-a-container-for-the-debug-session"></a>Pour spécifier un conteneur pour une session de débogage  
   
-1. Dans l'Explorateur de solutions, sélectionnez le projet.  
+1. Dans l’Explorateur de solutions, sélectionnez le projet.  
   
-2. À partir de la **vue** menu, choisissez **Pages de propriétés**.  
+2. Dans le menu **affichage** , cliquez sur **pages de propriétés**.  
   
 3. Dans la boîte de dialogue **Pages de propriété de projet**, ouvrez le dossier **Propriétés de configuration** et sélectionnez **Débogage**.  
   
@@ -60,6 +60,6 @@ REMARQUE]
   
 ## <a name="see-also"></a>Voir aussi  
  [Contrôles ActiveX](https://msdn.microsoft.com/library/52aaec4d-3889-402e-b57d-758078f8ac57)   
- [Test des propriétés et des événements avec le conteneur de Test](https://msdn.microsoft.com/library/626867cf-fe53-4c30-8973-55bb93ef3917)   
+ [Test des propriétés et des événements avec le conteneur de test](https://msdn.microsoft.com/library/626867cf-fe53-4c30-8973-55bb93ef3917)   
  [Débogage COM et ActiveX](../debugger/com-and-activex-debugging.md)   
  [Débogage dans Visual Studio](../debugger/debugging-in-visual-studio.md)

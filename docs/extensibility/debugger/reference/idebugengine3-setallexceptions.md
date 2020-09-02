@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine3:SetAllExceptions (fr) Microsoft Docs
+title: 'IDebugEngine3 :: SetAllExceptions | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1b2913756c30bf3b1c8436434da71337a2100aa8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730795"
 ---
 # <a name="idebugengine3setallexceptions"></a>IDebugEngine3::SetAllExceptions
@@ -41,10 +41,10 @@ int SetAllExceptions(
 
 ## <a name="parameters"></a>Paramètres
 `dwState`\
-[dans] Une des [valeurs EXCEPTION_STATE.](../../../extensibility/debugger/reference/exception-state.md)
+dans L’une des valeurs [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md) .
 
-## <a name="return-value"></a>Valeur de retour
- En cas `S_OK`de succès, les retours; autrement, renvoie le code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` ; sinon, retourne le code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)

@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c66894fe0515b28037bbb2a19715fa09cbf9fa62
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153587"
 ---
-# <a name="attachreason"></a>ATTACH_REASON
+# <a name="attach_reason"></a>ATTACH_REASON
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Spécifie la raison pour le moteur de débogage (dé) à attacher à un nœud de programme.  
+Spécifie la raison pour laquelle le moteur de débogage (DE) doit être attaché à un nœud de programme.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -45,23 +45,23 @@ public enum enum_ATTACH_REASON { 
   
 ## <a name="members"></a>Membres  
  ATTACH_REASON_AUTO  
- Attacher, car le processus est actuellement en mode débogage.  
+ Attachement, car le processus est actuellement en mode débogage.  
   
  ATTACH_REASON_LAUNCH  
- Attacher, car le processus a été lancé.  
+ Attachement, car le processus a été lancé.  
   
  ATTACH_REASON_USER  
- Attacher en raison d’une demande de l’utilisateur.  
+ Attachement en raison d’une demande de l’utilisateur.  
   
 ## <a name="remarks"></a>Notes  
- Ces valeurs sont utilisées en tant que paramètre à la [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) et [attacher](../../../extensibility/debugger/reference/idebugprogramex2-attach.md) méthodes.  
+ Ces valeurs sont utilisées comme paramètre pour les méthodes d' [attachement](../../../extensibility/debugger/reference/idebugengine2-attach.md) et d' [attachement](../../../extensibility/debugger/reference/idebugprogramex2-attach.md) .  
   
 ## <a name="requirements"></a>Configuration requise  
- En-tête : msdbg.h  
+ En-tête : msdbg. h  
   
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft. VisualStudio. Debugger. Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

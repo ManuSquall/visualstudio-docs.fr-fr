@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f1c3dfb145e70665156c921cc9a6f740539bc4e6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665849"
 ---
 # <a name="customizing-the-start-page-for-visual-studio"></a>Personnalisation de la page de démarrage pour Visual Studio
@@ -31,7 +31,7 @@ Vous pouvez personnaliser la page de démarrage de Visual Studio de plusieurs fa
 
 ## <a name="customizing-the-default-start-page"></a>Personnalisation de la page de démarrage par défaut
 
-1. Dans la barre de menus, sélectionnez **Outils**, **Options**.
+1. Dans la barre de menus, choisissez **Outils**, **options**.
 
 2. Développez **Environnement**, puis choisissez **Démarrage**.
 
@@ -52,7 +52,7 @@ Vous pouvez personnaliser la page de démarrage de Visual Studio de plusieurs fa
 
          Consultez [Création de votre propre page de démarrage](../misc/creating-your-own-start-page.md).
 
-2. Dans la barre de menus, sélectionnez **Outils**, **Options**.
+2. Dans la barre de menus, choisissez **Outils**, **options**.
 
 3. Développez **Environnement**, puis choisissez **Démarrage**.
 

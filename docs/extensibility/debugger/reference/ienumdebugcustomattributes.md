@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugCustomAttributes Microsoft Docs
+title: IEnumDebugCustomAttributes | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7f8b521432124267d3f0e179d3a889fb599fa99d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80717132"
 ---
 # <a name="ienumdebugcustomattributes"></a>IEnumDebugCustomAttributes
@@ -29,28 +29,28 @@ IEnumCustomAttributes : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Notes pour les implémenteurs
- Un fournisseur de symboles implémente cette interface pour prendre en charge les attributs personnalisés (via l’interface [IDebugCustomAttribute).](../../../extensibility/debugger/reference/idebugcustomattribute.md)
+ Un fournisseur de symboles implémente cette interface pour prendre en charge des attributs personnalisés (par le biais de l’interface [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md) ).
 
 ## <a name="notes-for-callers"></a>Notes pour les appelants
-- [EnumCustomAttributes renvoie](../../../extensibility/debugger/reference/idebugcustomattributequery2-enumcustomattributes.md) cette interface.
+- [EnumCustomAttributes (](../../../extensibility/debugger/reference/idebugcustomattributequery2-enumcustomattributes.md) retourne cette interface.
 
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable
- Le tableau suivant montre `IEnumDebugCustomAttributes`les méthodes de .
+ Le tableau suivant présente les méthodes de `IEnumDebugCustomAttributes` .
 
 |Méthode|Description|
 |------------|-----------------|
-|[Suivant](../../../extensibility/debugger/reference/ienumdebugcustomattributes-next.md)|Récupère un nombre précis d’attributs personnalisés dans une séquence de recensement.|
-|[Ignorer](../../../extensibility/debugger/reference/ienumdebugcustomattributes-skip.md)|Passe un nombre spécifié d’attributs personnalisés dans une séquence de recensement.|
+|[Next](../../../extensibility/debugger/reference/ienumdebugcustomattributes-next.md)|Récupère un nombre spécifié d’attributs personnalisés dans une séquence d’énumération.|
+|[Skip](../../../extensibility/debugger/reference/ienumdebugcustomattributes-skip.md)|Ignore un nombre spécifié d’attributs personnalisés dans une séquence d’énumération.|
 |[Réinitialiser](../../../extensibility/debugger/reference/ienumdebugcustomattributes-reset.md)|Réinitialise une séquence d'énumération.|
-|[Clone](../../../extensibility/debugger/reference/ienumdebugcustomattributes-clone.md)|Crée un enumérateur qui contient le même état de recensement que l’enumérateur actuel.|
-|[GetCount](../../../extensibility/debugger/reference/ienumdebugcustomattributes-getcount.md)|Obtient le nombre d’attributs personnalisés dans un enumérateur.|
+|[Clone](../../../extensibility/debugger/reference/ienumdebugcustomattributes-clone.md)|Crée un énumérateur qui contient le même état d’énumération que l’énumérateur actuel.|
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugcustomattributes-getcount.md)|Obtient le nombre d’attributs personnalisés dans un énumérateur.|
 
-## <a name="requirements"></a>Spécifications
- En-tête: sh.h
+## <a name="requirements"></a>Configuration requise
+ En-tête : SH. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Espace de noms : Microsoft. VisualStudio. Debugger. Interop
 
- Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Interfaces des fournisseurs de symboles](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)

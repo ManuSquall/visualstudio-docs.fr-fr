@@ -10,21 +10,21 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7a63e81abcae508487afa40d0778c0f9e9b9caf4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665928"
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Guide pratique pour créer des classes LINQ to SQL mappées à des tables et à des vues (Concepteur O/R)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-LINQ to SQL classes mappées à des tables et des vues de base de données sont appelées *classes d’entité*. La classe d'entité mappe à un enregistrement, alors que les propriétés individuelles d'une classe d'entité mappent aux colonnes individuelles qui composent un enregistrement. Créez des classes d’entité basées sur des tables ou des vues de base de données en faisant glisser des tables ou des vues à partir de **Explorateur de serveurs** /**Explorateur de base de données** vers les [Outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md). Le [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] génère les classes et applique les [ ! LINQ to SQL attributs pour activer [ ! LINQ to SQL fonctionnalités (fonctionnalités de communication et de modification des données de la <xref:System.Data.Linq.DataContext>). Pour plus d’informations sur [ ! LINQ to SQL les classes, consultez [le modèle objet LINQ to SQL](https://msdn.microsoft.com/library/81dd0c37-e2a4-4694-83b0-f2e49e693810).
+LINQ to SQL classes mappées à des tables et des vues de base de données sont appelées *classes d’entité*. La classe d'entité mappe à un enregistrement, alors que les propriétés individuelles d'une classe d'entité mappent aux colonnes individuelles qui composent un enregistrement. Créez des classes d’entité basées sur des tables ou des vues de base de données en faisant glisser des tables ou des vues à partir de **Explorateur de serveurs** / **Explorateur de base de données** vers les [outils de LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md). [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]Génère les classes et applique les [ ! LINQ to SQL attributs pour activer [ ! LINQ to SQL fonctionnalités (fonctionnalités de communication et de modification des données de <xref:System.Data.Linq.DataContext> ). Pour plus d’informations sur [ ! LINQ to SQL les classes, consultez [le modèle objet LINQ to SQL](https://msdn.microsoft.com/library/81dd0c37-e2a4-4694-83b0-f2e49e693810).
 
 > [!NOTE]
-> Le [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] est un mappeur relationnel objet simple, car il ne prend en charge que les relations de mappage 1:1. En d'autres termes, une classe d'entité peut uniquement avoir une relation de mappage 1:1 avec une table ou une vue de base de données. Le mappage complexe, tel que le mappage d'une classe d'entité à plusieurs tables, n'est pas pris en charge. Toutefois, vous pouvez mapper une classe d'entité à une vue qui joint plusieurs tables associées.
+> [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]Est un mappeur relationnel objet simple, car il ne prend en charge que les relations de mappage 1:1. En d'autres termes, une classe d'entité peut uniquement avoir une relation de mappage 1:1 avec une table ou une vue de base de données. Le mappage complexe, tel que le mappage d'une classe d'entité à plusieurs tables, n'est pas pris en charge. Toutefois, vous pouvez mapper une classe d'entité à une vue qui joint plusieurs tables associées.
 
 ## <a name="create-linq-to-sql-classes-that-are-mapped-to-database-tables-or-views"></a>Création de classes LINQ to SQL mappées à des tables ou vues de base de données
- Le fait de faire glisser des tables ou des vues à partir de **Explorateur de serveurs** /**explorateur de base de données** sur le [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] crée des classes d’entité en plus des méthodes de <xref:System.Data.Linq.DataContext> utilisées pour effectuer des mises à jour.
+ Le fait de faire glisser des tables ou des vues à partir de **Explorateur de serveurs** / **Explorateur de base de données** vers le [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] crée des classes d’entité en plus des <xref:System.Data.Linq.DataContext> méthodes utilisées pour effectuer des mises à jour.
 
  Par défaut, les [ ! LINQ to SQL Runtime crée une logique pour enregistrer les modifications apportées à une classe d’entité pouvant être mise à jour dans la base de données. Cette logique est basée sur le schéma de la table (les définitions de colonne et les informations de clé primaire). Si vous ne souhaitez pas ce comportement, vous pouvez configurer une classe d’entité pour utiliser des procédures stockées afin d’effectuer des insertions, des mises à jour et des suppressions au lieu d’utiliser la valeur par défaut [ ! LINQ to SQL comportement d’exécution. Pour plus d’informations, consultez [Comment : assigner des procédures stockées pour effectuer des mises à jour, des insertions et des suppressions (Concepteur O/R)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
 
@@ -32,14 +32,14 @@ LINQ to SQL classes mappées à des tables et des vues de base de données sont 
 
 #### <a name="to-create-linq-to-sql-classes-that-are-mapped-to-database-tables-or-views"></a>Pour créer des classes LINQ to SQL mappées à des tables ou vues de base de données
 
-1. Dans **serveur** /**Explorateur de base de données**, développez **tables** ou **vues** et localisez la table ou la vue de base de données que vous souhaitez utiliser dans votre application.
+1. Dans **Server** / **Explorateur de base de données**de serveur, développez **tables** ou **vues** et localisez la table ou la vue de base de données que vous souhaitez utiliser dans votre application.
 
 2. Faites glisser la table ou la vue vers le [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].
 
      Une classe d'entité est créée et apparaît dans l'aire de conception. La classe d'entité a des propriétés qui mappent aux colonnes de la table ou de la vue sélectionnée.
 
 ## <a name="create-an-object-data-source-and-display-the-data-on-a-form"></a>Création d'un objet source de données et affichage des données sur un formulaire
- Après avoir créé des classes d’entité à l’aide de l' [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], vous pouvez créer une source de données d’objet et remplir la [fenêtre sources de données](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) avec les classes d’entité.
+ Après avoir créé des classes d’entité à l’aide de [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] , vous pouvez créer une source de données d’objet et remplir la [fenêtre sources de données](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) avec les classes d’entité.
 
 #### <a name="to-create-an-object-data-source-based-on-linq-to-sql-entity-classes"></a>Pour créer un objet source de données basé sur des classes d'entité LINQ to SQL
 
@@ -62,9 +62,9 @@ LINQ to SQL classes mappées à des tables et des vues de base de données sont 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Outils de LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Procédure pas à pas : création de classes LINQ to SQL (Concepteur O-R)](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)
-- [DataContext, méthodes (Concepteur O/R)](../data-tools/datacontext-methods-o-r-designer.md)
+- [Méthode DataContext (Concepteur O/R)](../data-tools/datacontext-methods-o-r-designer.md)
 - [Guide pratique pour créer des méthodes DataContext mappées à des procédures stockées et à des fonctions (Concepteur O/R)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)
 - [Modèle objet LINQ to SQL](https://msdn.microsoft.com/library/81dd0c37-e2a4-4694-83b0-f2e49e693810)
 - [Procédure pas à pas : personnalisation du comportement d’insertion, de mise à jour et de suppression de classes d’entité](../data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes.md)

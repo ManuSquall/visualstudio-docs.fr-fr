@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: eeeb9ffb92b2bf97513923bdef901dacd1a9a67a
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73189732"
 ---
 # <a name="migration-activity-designers"></a>Concepteurs d’activités de migration
@@ -21,7 +21,7 @@ Les concepteurs d’activités de migration sont utilisés pour appeler des acti
 
 Les rubriques contenues dans cette section fournissent des conseils sur l’utilisation des concepteurs d’activités Concepteur de flux de travail.
 
-## <a name="related-sections"></a>Rubriques connexes
+## <a name="related-sections"></a>Sections connexes
 
 Pour les autres types de concepteurs d’activités, consultez les rubriques suivantes :
 
@@ -29,7 +29,7 @@ Pour les autres types de concepteurs d’activités, consultez les rubriques sui
 
 - [Organigramme](../workflow-designer/flowchart-activity-designers.md)
 
-- [Utilisation des concepteurs d’activités](control-flow-activity-designers.md)
+- [Utilisation des concepteurs d'activités](control-flow-activity-designers.md)
 
 - [Messagerie](../workflow-designer/messaging-activity-designers.md)
 
@@ -39,6 +39,6 @@ Pour les autres types de concepteurs d’activités, consultez les rubriques sui
 
 - [Transaction](../workflow-designer/transaction-activity-designers.md)
 
-- [Regroupement](../workflow-designer/collection-activity-designers.md)
+- [Collection](../workflow-designer/collection-activity-designers.md)
 
 - [Gestion des erreurs](../workflow-designer/error-handling-activity-designers.md)

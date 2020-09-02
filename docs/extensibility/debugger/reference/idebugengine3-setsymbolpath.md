@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine3:SetSymbolPath (fr) Microsoft Docs
+title: 'IDebugEngine3 :: SetSymbolPath | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1fbe5128900fa10147c747cbcba4129e96d4c4ce
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730660"
 ---
 # <a name="idebugengine3setsymbolpath"></a>IDebugEngine3::SetSymbolPath
-Définit le chemin ou les chemins qui sont recherchés pour les symboles de débogage.
+Définit le ou les chemins d’accès dans lesquels sont recherchés les symboles de débogage.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -46,21 +46,21 @@ int SetSymbolPath(
 ## <a name="parameters"></a>Paramètres
 
 `szSymbolSearchPath`\
-[dans] Chaîne contenant le chemin de recherche de symbole ou des chemins. Voir "Remarques" pour plus de détails. Ne peut pas avoir la valeur null.
+dans Chaîne contenant le chemin d’accès ou les chemins d’accès de recherche des symboles. Pour plus d’informations, consultez « Remarques ». Ne peut pas être null.
 
 `szSymbolCachePath`\
-[dans] Chaîne contenant le chemin local où les symboles peuvent être mis en cache. Ne peut pas avoir la valeur null.
+dans Chaîne contenant le chemin d’accès local dans lequel les symboles peuvent être mis en cache. Ne peut pas être null.
 
 `Flags`\
-[dans] Non utilisé; toujours réglé à 0.
+dans Non utilisé ; toujours défini sur 0.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de succès, les retours S_OK; renvoie autrement un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes
- La `szSymbolSearchPath` chaîne est une liste d’un ou plusieurs chemins, séparés par des semi-colons, à la recherche de symboles. Ces chemins peuvent être un chemin local, un chemin de style UNC, ou une URL. Ces chemins peuvent également être un mélange de différents types. Si le chemin est UNC \\(par exemple, «Symserver-Symbols), puis le moteur de débogé devrait déterminer si le chemin est à un `szSymbolCachePath`serveur symbole et devrait être en mesure de charger des symboles à partir de ce serveur, les cachant dans le chemin spécifié par .
+ La chaîne `szSymbolSearchPath` est une liste d’un ou plusieurs chemins d’accès, séparés par des points-virgules, pour rechercher des symboles. Ces chemins d’accès peuvent être un chemin d’accès local, un chemin d’accès de style UNC ou une URL. Ces chemins d’accès peuvent également être une combinaison de différents types. Si le chemin d’accès est UNC (par exemple, \\ \Symserver\Symbols), le moteur de débogage doit déterminer si le chemin d’accès est vers un serveur de symboles et doit être en mesure de charger les symboles à partir de ce serveur, en les mettant en cache dans le chemin d’accès spécifié par `szSymbolCachePath` .
 
- Le chemin du symbole peut également contenir un ou plusieurs emplacements de cache. Les caches sont énumérées dans l’ordre prioritaire, avec le cache de priorité la plus élevée d’abord, et séparées par des symboles. Par exemple :
+ Le chemin d’accès aux symboles peut également contenir un ou plusieurs emplacements du cache. Les caches sont répertoriés par ordre de priorité, avec le cache avec la priorité la plus élevée en premier, et séparés par des symboles *. Par exemple :
 
 ```
 \\symbols\symbols;\\someotherserver\symbols;c:\symbols\httpsymbols*https://msdl.microsoft.com

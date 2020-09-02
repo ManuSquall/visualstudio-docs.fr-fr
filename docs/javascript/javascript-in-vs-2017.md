@@ -13,10 +13,10 @@ author: bowdenk7
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9df1b66f1a2407d523e38cd71fc9ffa993cd2d92
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81649631"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>JavaScript dans Visual Studio 2017
@@ -24,7 +24,7 @@ ms.locfileid: "81649631"
 JavaScript est un langage de premier ordre dans Visual Studio. Vous pouvez utiliser la plupart ou toutes les aides standard de modification (extraits de code, IntelliSense, etc.) lorsque vous écrivez du code JavaScript dans l'IDE de Visual Studio. Vous pouvez écrire du code JavaScript pour de nombreux types d'applications et services.
 
 > [!NOTE]
-> Nous avons rejoint l’effort à l’échelle de la communauté pour faire [des documents Web MDN](https://developer.mozilla.org/en-US/) de la web un-stop, première ressource de développement, en redirigeant tous (500 pages) de Microsoft JavaScript API référence de docs.microsoft.com à leurs homologues MDN. Pour plus d’informations, consultez cette [annonce](https://blogs.windows.com/msedgedev/2018/06/26/chakra-docs-mdn-web-docs/).
+> Nous avons rejoint l’effort de la communauté afin de faire de [MDN Web docs](https://developer.mozilla.org/en-US/) la ressource de développement « One-Stop » du Web, en redirigeant l’ensemble (plus de 500 pages) de la référence de l’API JavaScript de Microsoft de docs.Microsoft.com à ses homologues MDN. Pour plus d’informations, consultez cette [annonce](https://blogs.windows.com/msedgedev/2018/06/26/chakra-docs-mdn-web-docs/).
 
 ## <a name="support-for-ecmascript-2015-es6-and-beyond"></a><a name="ES6"></a> Prise en charge d’ECMAScript 2015 (ES6) et ultérieur
 

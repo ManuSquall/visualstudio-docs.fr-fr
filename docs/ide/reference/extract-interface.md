@@ -13,10 +13,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 5055f50d07cf9362c9be1bdc8135e31240a7cc66
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595668"
 ---
 # <a name="extract-an-interface-refactoring"></a>Extraire une interface (refactorisation)
@@ -27,9 +27,9 @@ Cette refactorisation s’applique à :
 
 - Visual Basic
 
-**Quoi :** Vous permet de créer une interface en utilisant des membres existants à partir d’une classe, d’une structuration ou d’une interface.
+**Ce qui suit :** Vous permet de créer une interface à l’aide de membres existants à partir d’une classe, d’une structure ou d’une interface.
 
-**Quand :** Vous avez des membres dans une classe, une struct ou une interface qui pourraient être héritées par d’autres classes, structs ou interfaces.
+Dans les **cas suivants :** Vous avez des membres dans une classe, un struct ou une interface qui peuvent être hérités par d’autres classes, structures ou interfaces.
 
 **Pourquoi :** les interfaces sont d’excellentes constructions pour les conceptions orientées objet. Imaginez des classes représentant différents animaux (chien, chat, oiseau) pouvant être associées à des méthodes courantes, par exemple Manger, Boire et Dormir. Une interface comme IAnimal permettrait aux éléments Chien, Chat et Oiseai d’avoir la même « signature » pour ces méthodes.
 
@@ -49,7 +49,7 @@ Cette refactorisation s’applique à :
 
    - **Clavier**
       - Appuyez sur **Ctrl+R**, puis **Ctrl+I**. (Le raccourci clavier peut varier en fonction du profil que vous avez sélectionné.)
-      - Appuyez **sur Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**, puis sélectionnez **Extraire l’interface** dans la fenêtre contextuelle d’aperçu.
+      - Appuyez sur **CTRL** + **.** pour afficher le menu **Actions rapides et refactorisations**, puis sélectionnez **Extraire l’interface** dans la fenêtre contextuelle d’aperçu.
    - **Souris**
       - Sélectionnez **Modifier > Refactoriser > Extraire l’interface**.
       - Cliquez avec le bouton droit sur le nom de la classe et choisissez le menu **Actions rapides et refactorisations**, puis sélectionnez **Extraire l’interface** dans la fenêtre contextuelle d’aperçu.

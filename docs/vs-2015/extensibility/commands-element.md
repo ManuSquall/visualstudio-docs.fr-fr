@@ -1,5 +1,5 @@
 ---
-title: Commandes d’élément | Microsoft Docs
+title: Commands, élément | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,18 +14,18 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 194768a3b540511996e1d99e6450a7a9b24ebc74
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184296"
 ---
 # <a name="commands-element"></a>Élément Commands
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Représente la collection de commandes sur la barre d’outils de VSPackage. La collection peut avoir jusqu'à cinq sous-sections, comme suit : menus, des groupes, des boutons, des combos et des bitmaps.  
+Représente la collection de commandes dans la barre d’outils VSPackage. La collection peut contenir jusqu’à cinq sous-sections, comme suit : menus, groupes, boutons, combos et bitmaps.  
   
- Chaque élément enfant sous-section, par exemple, \<Menu >, est identifié par un ID de commande unique qui est un GUID et une paire d’identificateur numérique. Le GUID identifie le jeu de commandes « » et est utilisé pour regrouper les commandes liés logiquement entre eux. Le VSPackage doit définir son propre jeu de commandes pour éviter les collisions avec les ID de commande qui sont définies par les autres VSPackages.  
+ Chaque élément enfant de sous-section, par exemple, \<Menu> est identifié par un ID de commande unique qui est un GUID et une paire d’identificateurs numériques. Le GUID identifie le « jeu de commandes » et est utilisé pour regrouper les commandes associées de manière logique. Le VSPackage doit définir son propre jeu de commandes pour éviter les collisions avec les ID de commande définis par d’autres VSPackages.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -46,25 +46,25 @@ Représente la collection de commandes sur la barre d’outils de VSPackage. La 
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|package|Un GUID qui identifie le VSPackage qui fournit les commandes.<br /><br /> Par exemple, un package = « guidVsPackage1Pkg ».|  
+|package|GUID qui identifie le VSPackage qui fournit les commandes.<br /><br /> Par exemple, package = "guidVsPackage1Pkg".|  
   
 ### <a name="child-elements"></a>Éléments enfants  
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[Élément Menus](../extensibility/menus-element.md)|Définit tous les menus qui implémente un VSPackage.|  
+|[Élément Menus](../extensibility/menus-element.md)|Définit tous les menus qu’un VSPackage implémente.|  
 |[Élément Groups](../extensibility/groups-element.md)|Contient des entrées qui définissent les groupes de commandes dans un VSPackage.|  
-|[Élément Buttons](../extensibility/buttons-element.md)|Regroupe les éléments de bouton.|  
-|[Élément Bitmaps](../extensibility/bitmaps-element.md)|Regroupe les éléments de la Bitmap.|  
-|[Élément Combos](../extensibility/combos-element.md)|Regroupe les éléments de liste déroulante.|  
+|[Élément Buttons](../extensibility/buttons-element.md)|Éléments du bouton groupes.|  
+|[Élément Bitmaps](../extensibility/bitmaps-element.md)|Regroupe les éléments bitmap.|  
+|[Élément Combos](../extensibility/combos-element.md)|Regroupe les éléments de liste.|  
   
 ### <a name="parent-elements"></a>Éléments parents  
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[Élément CommandTable](../extensibility/commandtable-element.md)|Définit tous les éléments qui représentent les commandes qu’un VSPackage fournit à l’IDE. Éléments possibles sont les éléments de menu, des menus, des barres d’outils et des zones de liste déroulante.|  
+|[Élément CommandTable](../extensibility/commandtable-element.md)|Définit tous les éléments qui représentent les commandes qu’un VSPackage fournit à l’IDE. Les éléments possibles sont les éléments de menu, les menus, les barres d’outils et les zones de liste modifiable.|  
   
-## <a name="example"></a>Exemples  
+## <a name="example"></a>Exemple  
  L’exemple suivant montre comment utiliser un [élément Commands](../extensibility/commands-element.md).  
   
 ```  
@@ -91,5 +91,5 @@ Représente la collection de commandes sur la barre d’outils de VSPackage. La 
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Comment VSPackages ajoute des éléments d’Interface utilisateur](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [Comment les VSPackages ajoutent des éléments d’interface utilisateur](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Commandes, menus et barres d’outils](../extensibility/internals/commands-menus-and-toolbars.md)

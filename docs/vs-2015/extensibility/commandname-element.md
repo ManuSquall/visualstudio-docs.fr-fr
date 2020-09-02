@@ -1,5 +1,5 @@
 ---
-title: Élément CommandName | Microsoft Docs
+title: CommandName, élément | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 113f420aa4cbbed9454df1ee0c0dd8aafd09a548
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184317"
 ---
 # <a name="commandname-element"></a>Élément CommandName
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Le `CommandName` élément spécifie le texte qui apparaît dans la catégorie de clavier dans le **Options** boîte de dialogue, puis, dans le **commandes** liste dans le **personnaliser** boîte de dialogue zone.  
+L' `CommandName` élément spécifie le texte qui apparaît dans la catégorie clavier de la boîte de dialogue **options** et dans la liste **commandes** de la boîte de dialogue **personnaliser** .  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -42,7 +42,7 @@ Le `CommandName` élément spécifie le texte qui apparaît dans la catégorie d
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[Élément Strings](../extensibility/strings-element.md)|Regroupe les éléments de texte, tel que `ButtonText` et `CommandName`.|  
+|[Élément Strings](../extensibility/strings-element.md)|Groupe des éléments de texte, tels que `ButtonText` et `CommandName` .|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Fichiers Visual Studio Command Table (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

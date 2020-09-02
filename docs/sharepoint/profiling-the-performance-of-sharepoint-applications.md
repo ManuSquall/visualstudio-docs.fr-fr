@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 72739cd1063298a2dafc71976fd45360bc2d6ec2
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73189205"
 ---
 # <a name="profile-the-performance-of-sharepoint-applications"></a>Profiler les performances des applications SharePoint
@@ -49,7 +49,7 @@ Vous pouvez analyser les performances de stress de vos applications en créant d
 
 Figure 1 : exemple de résultats de test de charge
 
-![Exécution de la vue graphiques de test de charge](../sharepoint/media/load-webgraphs.png "Exécution de la vue des graphiques du test de charge")
+![Exécution de la vue des graphiques du test de charge](../sharepoint/media/load-webgraphs.png "Exécution de la vue des graphiques du test de charge")
 
 Les tests de performances de site Web simulent la manière dont un utilisateur final peut interagir avec une application SharePoint. Vous pouvez créer des tests de performances de site Web en enregistrant des requêtes HTTP dans une session de navigateur ou à l’aide de l' **enregistreur de test de performances de site Web**. Les requêtes Web s’affichent dans la **éditeur de test de performances Web** une fois la session de navigateur terminée. Vous pouvez ensuite déboguer les résultats dans la **visionneuse de résultats des tests performances de site Web**. Vous pouvez également générer manuellement des tests de performances de site Web à l’aide de l' **éditeur de test de performances Web**.
 
@@ -63,7 +63,7 @@ Les tests codés de l’interface utilisateur pilotent automatiquement votre app
 |-----------|-----------------|
 |[Procédure pas à pas : profilage d’une application SharePoint](../sharepoint/walkthrough-profiling-a-sharepoint-application.md)|Montre comment effectuer une analyse de profil d’échantillonnage sur une application SharePoint.|
 |[Tester les performances de votre application avant publication](/azure/devops/test/load-test/run-performance-tests-app-before-release?view=vsts)|Décrit comment créer des tests de charge, qui vous aident à effectuer des tests de contrainte sur les applications SharePoint.|
-|[Tests unitaires de votre code](../test/unit-test-your-code.md)|Décrit comment rechercher des erreurs de logique dans votre code à l’aide de tests unitaires.|
+|[Tests unitaires sur votre code](../test/unit-test-your-code.md)|Décrit comment rechercher des erreurs de logique dans votre code à l’aide de tests unitaires.|
 |[Test des applications SharePoint 2010 avec des tests codés de l’interface utilisateur](/visualstudio/test/testing-sharepoint-2010-applications-with-coded-ui-tests?view=vs-2015)|Décrit comment tester l’interface utilisateur de vos applications SharePoint.|
 
 ## <a name="see-also"></a>Voir aussi

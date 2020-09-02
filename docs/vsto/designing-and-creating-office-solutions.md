@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 385d313d0a8796d2aba93903e95e989ac1e0ced6
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73189714"
 ---
 # <a name="design-and-create-office-solutions"></a>Concevoir et créer des solutions Office
@@ -44,7 +44,7 @@ Visual Studio fournit des modèles de projet que vous pouvez utiliser pour crée
 
 - [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]
 
-  La version de .NET Framework que vous choisissez pour votre projet est requise sur les ordinateurs des utilisateurs finaux pour que votre solution s’exécute. Par exemple, si votre projet cible le [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], le [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] est requis sur les ordinateurs des utilisateurs finaux. Dans cet exemple, votre solution ne s’exécute pas si seule la .NET Framework 3,5 est installée sur les ordinateurs des utilisateurs finaux.
+  La version de .NET Framework que vous choisissez pour votre projet est requise sur les ordinateurs des utilisateurs finaux pour que votre solution s’exécute. Par exemple, si votre projet cible le [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] , [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] est requis sur les ordinateurs des utilisateurs finaux. Dans cet exemple, votre solution ne s’exécute pas si seule la .NET Framework 3,5 est installée sur les ordinateurs des utilisateurs finaux.
 
   Si vous migrez un projet de complément VSTO qui cible le .NET Framework 3.5, Visual Studio remplace la version cible du .NET Framework de votre projet par [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou ultérieur en fonction de la version d’Office installée.
 
@@ -56,14 +56,14 @@ Visual Studio fournit des modèles de projet que vous pouvez utiliser pour crée
 > Vous ne pouvez pas cibler le .NET Framework 3.5 ou version antérieure dans les projets Office créés à l'aide de [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]. Les projets Office créés à l'aide de [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] nécessitent les fonctionnalités introduites dans le [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)].
 
 ### <a name="understand-when-the-office-pias-are-required-on-end-user-computers"></a>Comprendre quand les assemblys PIA d’Office sont requis sur les ordinateurs des utilisateurs finaux
- Par défaut, les assemblys PIA (Primary Interop Assembly) d’Office n’ont pas besoin d’être installés sur les ordinateurs des utilisateurs finaux si la propriété **incorporer les types d’interopérabilité** de chaque référence d’assembly PIA dans le projet a la valeur **true**, qui est la valeur par défaut. Dans ce scénario, les informations relatives aux types PIA utilisés par votre solution sont incorporées dans l'assembly de solution au moment de la génération du projet. Au moment de l’exécution, les informations de type incorporées sont utilisées à la place des assemblys PIA pour appeler le modèle objet COM de l’application Office. Pour plus d’informations sur la façon dont les types des assemblys PIA sont incorporés dans votre solution, consultez [équivalence de type et types Interop incorporés](/dotnet/framework/interop/type-equivalence-and-embedded-interop-types).
+ Par défaut, les assemblys PIA (Primary Interop Assembly) d’Office n’ont pas besoin d’être installés sur les ordinateurs des utilisateurs finaux si la propriété **incorporer les types d’interopérabilité** de chaque référence d’assembly PIA dans le projet a la valeur **true**, qui est la valeur par défaut. Dans ce scénario, les informations relatives aux types PIA utilisés par votre solution sont incorporées dans l'assembly de solution au moment de la génération du projet. Au moment de l'exécution, les informations de type incorporées sont utilisées au lieu des assemblys PIA pour exécuter un appel dans le modèle objet COM de l'application Office. Pour plus d’informations sur la façon dont les types des assemblys PIA sont incorporés dans votre solution, consultez [équivalence de type et types Interop incorporés](/dotnet/framework/interop/type-equivalence-and-embedded-interop-types).
 
  Si la propriété **incorporer les types d’interopérabilité** de chaque référence d’assembly PIA dans le projet a la valeur **false**, les assemblys PIA d’Office doivent être installés et inscrits dans le global assembly cache sur chaque ordinateur de l’utilisateur final qui exécute la solution. Dans la plupart des cas, les assemblys PIA sont installés par défaut avec Office, mais vous pouvez également inclure le composant redistribuable de l'assembly PIA comme composant requis pour votre solution. Pour plus d’informations, consultez [conditions préalables pour la solution Office pour le déploiement](https://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e).
 
 ### <a name="understand-the-client-profile"></a>Comprendre le profil client
  Le .NET Framework Client Profile est un sous-ensemble du .NET Framework complet. Vous pouvez cibler le .NET Framework Client Profile si vous devez utiliser uniquement les fonctionnalités client du .NET Framework et souhaitez fournir le déploiement le plus rapide possible pour votre solution Office. Pour plus d’informations, consultez [.NET Framework Client Profile](/dotnet/framework/deployment/client-profile).
 
- Quand vous créez un projet Office qui cible le [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], le [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)] est ciblé par défaut. Si vous souhaitez développer pour la [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]complète, vous devez définir cette option après la création du projet. Pour plus d’informations, consultez [Guide pratique pour cibler une version du .NET Framework](../ide/visual-studio-multi-targeting-overview.md).
+ Quand vous créez un projet Office qui cible le [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], le [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)] est ciblé par défaut. Si vous souhaitez développer pour la complète [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] , vous devez définir cette option après la création du projet. Pour plus d’informations, consultez [Guide pratique pour cibler une version du .NET Framework](../ide/visual-studio-multi-targeting-overview.md).
 
 ## <a name="create-solutions-for-the-64-bit-edition-of-microsoft-office"></a>Créer des solutions pour l’édition 64 bits de Microsoft Office
  Microsoft Office est disponibles dans les éditions 64 bits et 32 bits. Pour créer des solutions Office qui peuvent s’exécuter dans l’une ou l’autre édition, le paramètre de plateforme cible de votre projet doit être défini sur **Any CPU**. Il s'agit de la valeur par défaut pour les projets Office. Pour plus d’informations, consultez [créer des solutions Office](../vsto/building-office-solutions.md).

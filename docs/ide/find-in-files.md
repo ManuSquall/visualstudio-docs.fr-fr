@@ -20,32 +20,32 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5e1f067df647f843819e085f283005606699f3bb
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595473"
 ---
 # <a name="find-in-files"></a>Rechercher dans les fichiers
 
-**Trouver dans les fichiers** vous permet de rechercher un ensemble de fichiers spécifié. Les correspondances trouvées et les actions prises sont répertoriées dans la fenêtre **Résultats de recherche** sélectionnée dans les options de **résultat**.
+**Rechercher dans les fichiers** vous permet de rechercher un ensemble de fichiers spécifié. Les correspondances trouvées et les actions prises sont répertoriées dans la fenêtre résultats de la **recherche** sélectionnée dans **options de résultat**.
 
 Vous pouvez utiliser l’une des méthodes suivantes pour afficher l’option **Rechercher dans les fichiers** de la fenêtre **Rechercher et remplacer**.
 
 ## <a name="to-display-find-in-files"></a>Pour afficher l'option Rechercher dans les fichiers
 
-1. Sur la barre de menu, choisissez **Edit** > **Trouver et remplacer**.
+1. Dans la barre de menus, choisissez **modifier**  >  **Rechercher et remplacer**.
 
 1. Choisissez **Rechercher dans les fichiers**.
 
-Pour annuler une opération Find, appuyez sur **Ctrl** + **Break**.
+Pour annuler une opération de recherche, appuyez sur **CTRL**  +  **Pause**.
 
 > [!NOTE]
 > L’outil Rechercher et remplacer n’effectue pas de recherche dans les répertoires ayant l’attribut `Hidden` ou `System`.
 
 ## <a name="find-what"></a>Rechercher
 
-Pour rechercher une nouvelle chaîne de texte ou expression, entrez-la dans cette zone. Pour rechercher l’une des 20 dernières chaînes que vous avez recherchées, ouvrez la liste déroulante et choisissez la chaîne. Choisissez le bouton adjacent **Générateur d’expressions** si vous souhaitez utiliser une ou plusieurs expressions régulières dans votre chaîne de recherche. Pour plus d’informations, voir [Utiliser des expressions régulières dans Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
+Pour rechercher une nouvelle chaîne de texte ou expression, entrez-la dans cette zone. Pour rechercher l’une des 20 dernières chaînes que vous avez recherchées, ouvrez la liste déroulante et choisissez la chaîne. Choisissez le bouton adjacent **Générateur d’expressions** si vous souhaitez utiliser une ou plusieurs expressions régulières dans votre chaîne de recherche. Pour plus d’informations, consultez [utilisation d’expressions régulières dans Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
 
 > [!NOTE]
 > Le bouton **Générateur d’expressions** est activé uniquement si vous avez sélectionné **Expressions régulières** sous **Options de recherche**.
@@ -66,7 +66,7 @@ Spécifie que les sous-dossiers du dossier choisi dans **Regarder dans** sont in
 
 ## <a name="find-options"></a>Options de recherche
 
-Vous pouvez élargir ou effondrer la section **Options Trouver.** Les options suivantes peuvent être sélectionnées ou désélectionnées :
+Vous pouvez développer ou réduire la section **options de recherche** . Les options suivantes peuvent être sélectionnées ou désélectionnées :
 
 **Respecter la casse**
 
@@ -78,7 +78,7 @@ Si vous sélectionnez cette option, la fenêtre **Résultats de la recherche** a
 
 **Utiliser des expressions régulières**
 
-Si cette case est cochée, vous pouvez utiliser des notations spéciales pour définir des modèles de texte à rechercher dans les zones de texte **Rechercher** ou **Remplacer par**. Pour une liste de ces notations, voir [Utiliser des expressions régulières dans Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
+Si cette case est cochée, vous pouvez utiliser des notations spéciales pour définir des modèles de texte à rechercher dans les zones de texte **Rechercher** ou **Remplacer par**. Pour obtenir la liste de ces notations, consultez [utilisation d’expressions régulières dans Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
 
 **Examiner ces types de fichiers**
 
@@ -88,13 +88,13 @@ Sélectionnez un élément dans la liste pour entrer une chaîne de recherche pr
 
 ## <a name="result-options"></a>Options de résultat
 
-Vous pouvez élargir ou effondrer la section **Options de résultat.** Les options suivantes peuvent être sélectionnées ou désélectionnées :
+Vous pouvez développer ou réduire la section **options de résultat** . Les options suivantes peuvent être sélectionnées ou désélectionnées :
 
-**Trouver les résultats 1 fenêtre**
+**Fenêtre résultats de la recherche 1**
 
 Si cette option est sélectionnée, les résultats de la recherche actuelle remplacent le contenu de la fenêtre **Résultats de la recherche 1**. Cette fenêtre s'ouvre automatiquement pour afficher vos résultats de recherche. Pour ouvrir cette fenêtre manuellement, sélectionnez **Autres fenêtres** dans le menu **Affichage** et choisissez **Résultats de la recherche 1**.
 
-**Trouver les résultats 2 fenêtre**
+**Fenêtre résultats de la recherche 2**
 
 Si cette option est sélectionnée, les résultats de la recherche actuelle remplacent le contenu de la fenêtre **Résultats de la recherche 2**. Cette fenêtre s'ouvre automatiquement pour afficher vos résultats de recherche. Pour ouvrir cette fenêtre manuellement, sélectionnez **Autres fenêtres** dans le menu **Affichage** et choisissez **Résultats de la recherche 2**.
 
@@ -108,6 +108,6 @@ Ajoute les résultats de la recherche actuelle aux résultats des recherches pr�
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Trouver et remplacer le texte](../ide/finding-and-replacing-text.md)
+- [Recherche et remplacement de texte](../ide/finding-and-replacing-text.md)
 - [Remplacer dans les fichiers](../ide/replace-in-files.md)
 - [Commandes Visual Studio](../ide/reference/visual-studio-commands.md)

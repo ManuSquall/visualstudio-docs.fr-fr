@@ -58,10 +58,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7a9ebda81f013f42aeac23c9c0a8cc5a0a41f5f0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651351"
 ---
 # <a name="managing-external-tools"></a>Gestion des outils externes
@@ -85,10 +85,10 @@ Vous pouvez appeler des outils externes à partir de Visual Studio. Certains out
 6. Éditeur de configuration de service WCF : vous permet de créer et de modifier les paramètres de configuration des services WCF.
 
 > [!WARNING]
-> Il est possible qu'une liste différente d'outils externes s'affiche, en fonction de l'édition de Visual Studio que vous avez installée et du profil de paramètres que vous avez appliqué. Pour plus d’informations, consultez [Paramètres Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Il est possible qu'une liste différente d'outils externes s'affiche, en fonction de l'édition de Visual Studio que vous avez installée et du profil de paramètres que vous avez appliqué. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="adding-new-tools"></a>Ajout de nouveaux outils
- Vous pouvez ajouter un outil externe au menu **Outils**. Ouvrez la boîte de dialogue **Outils externes**, cliquez sur **Ajouter**, puis entrez les informations. Par exemple, l'entrée suivante peut provoquer l'ouverture de l'Explorateur Windows dans le répertoire du fichier qui est actuellement ouvert dans Visual Studio :
+ Vous pouvez ajouter un outil externe au menu **Outils**. Ouvrez la boîte de dialogue **outils externes** , cliquez sur **Ajouter**, puis renseignez les informations. Par exemple, l'entrée suivante peut provoquer l'ouverture de l'Explorateur Windows dans le répertoire du fichier qui est actuellement ouvert dans Visual Studio :
 
 1. Titre : Ouvrir l'emplacement du fichier
 
@@ -102,24 +102,24 @@ Vous pouvez appeler des outils externes à partir de Visual Studio. Certains out
 > [!NOTE]
 > La barre d'état IDE affiche les variables Ligne active et Colonne active pour indiquer l'emplacement du point d'insertion dans l'éditeur de code actif. La variable Texte actif retourne le texte ou le code sélectionné à cet emplacement.
 
-|Name|Argument|Description|
+|Nom|Argument|Description|
 |----------|--------------|-----------------|
 |Chemin d'accès de l'élément|$(ItemPath)|Nom complet du fichier actif (lecteur + chemin d'accès + nom de fichier).|
 |Répertoire de l'élément|$(ItemDir)|Répertoire du fichier actif (lecteur + chemin d'accès).|
 |Nom de fichier de l'élément|$(ItemFilename)|Nom du fichier actif (nom de fichier).|
 |Extension de l'élément|$(ItemExt)|Extension du nom du fichier actif.|
 |Ligne active|$(CurLine)|Position de la ligne active du curseur dans la fenêtre de code.|
-|Colonne active.|$(CurCol)|Position de la colonne active du curseur dans la fenêtre de code.|
+|Colonne active|$(CurCol)|Position de la colonne active du curseur dans la fenêtre de code.|
 |Texte actif|$(CurText)|Texte sélectionné.|
-|Chemin d'accès cible|$(TargetPath)|Nom de fichier complet de l'élément à générer (lecteur + chemin d'accès + nom de fichier).|
+|Chemin d'accès de la cible|$(TargetPath)|Nom de fichier complet de l'élément à générer (lecteur + chemin d'accès + nom de fichier).|
 |Répertoire cible|$(TargetDir)|Répertoire de l'élément à générer.|
-|Nom cible|$(TargetName)|Nom de fichier de l'élément à générer.|
-|Extension cible|$(TargetExt)|Extension de nom de fichier de l'élément à générer.|
-|Répertoire binaire|$(BinDir)|Emplacement final du binaire en cours de génération (sous la forme lecteur + chemin d’accès). Par exemple : **\\...\Mes documents\Visual Studio \<Version>\\<NomProjet\>\bin\debug**|
+|Nom de la cible|$(TargetName)|Nom de fichier de l'élément à générer.|
+|Extension de la cible|$(TargetExt)|Extension de nom de fichier de l'élément à générer.|
+|Répertoire binaire|$(BinDir)|Emplacement final du binaire en cours de génération (sous la forme lecteur + chemin d’accès). Par exemple :** \\ . ..\Mes documents\Visual Studio \<Version> \\<NomProjet \> \bin\Debug**|
 |Répertoire du projet|$(ProjDir)|Répertoire du projet actif (lecteur + chemin d'accès).|
 |Nom du fichier projet|$(ProjFileName)|Nom de fichier du projet actif (lecteur + chemin d'accès + nom de fichier).|
 |Répertoire de la solution|$(SolutionDir)|Répertoire de la solution active (lecteur + chemin d'accès).|
 |Nom du fichier solution|$(SolutionFileName)|Nom de fichier de la solution active (lecteur + chemin d’accès + nom de fichier).|
 
 ## <a name="see-also"></a>Voir aussi
- [Outils de génération C/C++](https://msdn.microsoft.com/library/48d9daf4-6bbf-473a-8ce2-bf2923b69f80)
+ [Outils de génération C/C++](https://msdn.microsoft.com/library/48d9daf4-6bbf-473a-8ce2-bf2923b69f80)

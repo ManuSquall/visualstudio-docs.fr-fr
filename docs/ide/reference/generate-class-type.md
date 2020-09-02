@@ -13,10 +13,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 94786ef10e427a0deb4f80471305509124f1638b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595629"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>Générer une classe ou un type dans Visual Studio
@@ -48,19 +48,19 @@ Cette génération de code s’applique à :
 2. Effectuez ensuite l'une des opérations suivantes :
 
    - **Clavier**
-      - Appuyez **sur Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
+      - Appuyez sur **CTRL** + **.** pour afficher le menu **Actions rapides et refactorisations**.
    - **Souris**
       - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
       - Placez le curseur sur la ligne ondulée rouge, puis cliquez sur l’icône ![ampoule d’erreur](media/error-bulb.png) qui apparaît.
-      - Cliquez sur le bouton ![ampoule d’erreur](media/error-bulb.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne ondulée rouge.
+      - Cliquez sur l’icône ![ampoule d’erreur](media/error-bulb.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne ondulée rouge.
 
       ![Aperçu de l’action Générer la classe](media/class-preview-cs.png)
 
 3. Sélectionnez l’une des options dans le menu déroulant :
 
    - Générer la classe '*TypeName*' dans un nouveau fichier&mdash;Crée une classe nommée *TypeName* dans un fichier nommé *TypeName*.cs/.vb.
-   - Générer la classe '&mdash;*TypeName*' Crée une classe nommée *TypeName* dans le fichier actuel.
-   - Générer classe imbriquée&mdash;'*TypeName*' Crée une classe nommée *TypeName* niché à l’intérieur de la classe actuelle.
+   - Générer la classe'*TypeName*' &mdash; crée une classe nommée *TypeName* dans le fichier actuel.
+   - Générer la classe imbriquée'*TypeName*' &mdash; crée une classe nommée *TypeName* imbriquée dans la classe actuelle.
    - Générer un nouveau type...&mdash;Crée une classe ou un struct avec toutes les propriétés que vous spécifiez.
 
    > [!TIP]
@@ -75,7 +75,7 @@ Cette génération de code s’applique à :
    Accès | Définissez un accès *Par défaut*, *Interne* ou *Public* pour le type.
    Type | Peut être défini sur *classe* ou *structure*.
    Nom | Ce paramètre ne peut pas être modifié et affichera le nom que vous avez déjà tapé.
-   Projet | Si votre solution contient plusieurs projets, vous pouvez choisir l’emplacement souhaité pour la classe/structure à utiliser.
+   Project | Si votre solution contient plusieurs projets, vous pouvez choisir l’emplacement souhaité pour la classe/structure à utiliser.
    Nom de fichier | Vous pouvez créer un nouveau fichier, ou ajouter le type à un fichier existant.
 
 La classe ou le struct est créé. Pour C#, un constructeur est également créé.
@@ -90,5 +90,5 @@ La classe ou le struct est créé. Pour C#, un constructeur est également cré�
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Génération de codes](../code-generation-in-visual-studio.md)
+- [Génération de code](../code-generation-in-visual-studio.md)
 - [Aperçu des modifications](../../ide/preview-changes.md)

@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fd88191baf15837a7862fc447471744977bdf60b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665873"
 ---
 # <a name="customizing-project-and-item-templates"></a>Personnalisation des modèles de projet et d'élément
@@ -32,13 +32,13 @@ Une fois que vous avez créé des modèles de projet et d’élément, vous avez
 
 - Passez des paramètres personnalisés dans un modèle pour remplacer les valeurs existantes.
 
-     Pour plus d’informations, consultez [Guide pratique pour substituer des paramètres dans un modèle](../ide/how-to-substitute-parameters-in-a-template.md).
+     Pour plus d’informations, consultez [Comment : substituer des paramètres dans un modèle](../ide/how-to-substitute-parameters-in-a-template.md).
 
 - Personnalisez les Assistants de création de projets à partir de modèles.
 
      Pour plus d’informations, consultez [Guide pratique pour utiliser des Assistants avec des modèles de projet](../extensibility/how-to-use-wizards-with-project-templates.md).
 
-## <a name="related-sections"></a>Rubriques connexes
+## <a name="related-sections"></a>Sections connexes
  [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)
 
  [Guide pratique pour dépanner des modèles](../ide/how-to-troubleshoot-templates.md)

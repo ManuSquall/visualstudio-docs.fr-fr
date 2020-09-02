@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 717e24315d1f6e57eda224ef17cc4ea5b5d550c9
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73189754"
 ---
 # <a name="use-wpf-controls-in-office-solutions"></a>Utiliser des contrôles WPF dans les solutions Office
@@ -49,7 +49,7 @@ Vous ne pouvez pas ajouter des contrôles WPF directement aux éléments d'inter
 
      Par défaut, lorsque le concepteur de contrôles utilisateur WPF est ouvert, la **boîte à outils** contient uniquement des contrôles WPF.
 
-4. Générez le projet.
+4. Créez le projet.
 
 5. Ajoutez un volet Actions, une zone de formulaire ou un volet des tâches personnalisé à votre projet :
 
@@ -73,7 +73,7 @@ Vous ne pouvez pas ajouter des contrôles WPF directement aux éléments d'inter
 
 3. À partir de la **boîte à outils**, ajoutez des contrôles WPF à l’aire de conception du contrôle utilisateur WPF.
 
-4. Générez le projet.
+4. Créez le projet.
 
 5. Ajoutez un élément de **contrôle utilisateur** (autrement dit, un contrôle utilisateur Windows Forms) au projet.
 

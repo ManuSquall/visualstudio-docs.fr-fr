@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: aadb526e50351c8344c8b265dca3364637d1ff0c
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86875564"
 ---
 # <a name="initializecorrelation-activity-designer"></a>Concepteur d'activités InitializeCorrelation
@@ -41,14 +41,14 @@ Le tableau suivant présente les <xref:System.ServiceModel.Activities.Initialize
 
 |Nom de la propriété|Obligatoire|Usage|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Nom convivial de l'activité <xref:System.ServiceModel.Activities.InitializeCorrelation>. La valeur par défaut est InitializeCorrelation.<br /><br /> Bien que l’utilisation d’une valeur non définie par défaut pour l’friendly <xref:System.Activities.Activity.DisplayName%2A> ne soit pas strictement obligatoire, il est recommandé.|
-|<xref:System.ServiceModel.Activities.InitializeCorrelation.Correlation%2A>|False|Objet <xref:System.ServiceModel.Activities.CorrelationHandle> utilisé pour associer des activités de workflow dans la corrélation.|
-|<xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>|False|Dictionnaire des données de corrélation qui lie les messages à l'instance de workflow.<br /><br /> Utilisez la boîte de dialogue **initialiser la corrélation** pour configurer le <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> . Pour plus d’informations sur l’utilisation de cette boîte de dialogue, consultez l’article de la [boîte de dialogue Éditeur de collections de types](../workflow-designer/type-collection-editor-dialog-box.md) .|
+|<xref:System.Activities.Activity.DisplayName%2A>|Faux|Nom convivial de l'activité <xref:System.ServiceModel.Activities.InitializeCorrelation>. La valeur par défaut est InitializeCorrelation.<br /><br /> Bien que l’utilisation d’une valeur non définie par défaut pour l’friendly <xref:System.Activities.Activity.DisplayName%2A> ne soit pas strictement obligatoire, il est recommandé.|
+|<xref:System.ServiceModel.Activities.InitializeCorrelation.Correlation%2A>|Faux|Objet <xref:System.ServiceModel.Activities.CorrelationHandle> utilisé pour associer des activités de workflow dans la corrélation.|
+|<xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>|Faux|Dictionnaire des données de corrélation qui lie les messages à l'instance de workflow.<br /><br /> Utilisez la boîte de dialogue **initialiser la corrélation** pour configurer le <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> . Pour plus d’informations sur l’utilisation de cette boîte de dialogue, consultez l’article de la [boîte de dialogue Éditeur de collections de types](../workflow-designer/type-collection-editor-dialog-box.md) .|
 
 ## <a name="see-also"></a>Voir aussi
 
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)
-- [Recevoir](../workflow-designer/receive-activity-designer.md)
+- [Çoive](../workflow-designer/receive-activity-designer.md)
 - [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)
 - [Envoyer](../workflow-designer/send-activity-designer.md)
 - [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)

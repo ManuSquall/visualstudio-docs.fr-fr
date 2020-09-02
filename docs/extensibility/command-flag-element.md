@@ -1,5 +1,5 @@
 ---
-title: Élément du drapeau de commande (en anglais seulement) Microsoft Docs
+title: Élément d’indicateur de commande | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,13 +12,13 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 84138a69dbb42fc349c12276fd7cca4b593e4d47
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81649369"
 ---
-# <a name="command-flag-eelement"></a>Eelement de drapeau de commande
+# <a name="command-flag-eelement"></a>Indicateur de commande Eelement
 Modifie son élément parent.
 
 ## <a name="syntax"></a>Syntaxe
@@ -37,42 +37,42 @@ Modifie son élément parent.
 
 |Valeur|Description|
 |-----------|-----------------|
-|AutoriserParams|Indique que les utilisateurs peuvent entrer les paramètres de commande dans la fenêtre **de commande** lorsqu’ils tapent le nom canonique de la commande.<br /><br /> Valable pour :`Button`|
-|Toujourscréer|Le menu est créé même s’il n’a pas de groupes ou de boutons.<br /><br /> Valable pour :`Menu`|
-|CaseSensitive|Les entrées des utilisateurs sont sensibles aux cas.<br /><br /> Valable pour :`Combo`|
-|CommandWellOnly|Appliquez ce drapeau si la commande n’apparaît pas sur le menu de haut niveau et que vous souhaitez la rendre disponible pour une personnalisation supplémentaire de la coque, par exemple, pour la lier à un raccourci clavier. Une fois que le VSPackage est installé, vous pouvez personnaliser ces commandes en ouvrant la boîte de dialogue **Options,** puis en éditant le placement de commande dans la catégorie **Environnement Clavier.** Ce drapeau n’affecte pas le placement sur les menus de raccourcis, les barres d’outils, les contrôleurs de menu ou le sous-genre.<br /><br /> Valable pour: `Button`,`Combo`|
-|DéfautDisabled|Par défaut, la commande est désactivée si le VSPackage `QueryStatus` qui l’implémente n’est pas chargé ou si la méthode n’a pas été appelée.<br /><br /> Valable pour: `Button`,`Combo`|
-|DéfautDocked|Amarré par défaut. Ce paramètre ne s’applique plus aux barres d’outils parce qu’ils sont toujours amarrés.|
-|DéfautInvisible|Par défaut, la commande est invisible si le VSPackage `QueryStatus` qui l’implémente n’est pas chargé ou si la méthode n’a pas été appelée.<br /><br /> Nous vous recommandons de `DynamicVisibility` combiner cela avec le drapeau.<br /><br /> Valable `Button`pour: `Combo`, ,`Menu`|
-|DontCache (en)|L’environnement de développement `QueryStatus` ne cache pas les résultats de la méthode pour cette commande.<br /><br /> Pour un menu, cela indique à un contrôleur de menu de ne pas mettre en cache le texte de ses éléments de menu. Utilisez ce drapeau lorsque le menu contient des éléments dynamiques ou des éléments qui ont du texte dynamique.<br /><br /> Valable pour: `Button`,`Menu`|
-|DynamicItemStart (en)|Indique le début d’une liste dynamique. Cela permet à l’environnement de construire `QueryStatus` une liste en appelant successivement la méthode sur les éléments de liste jusqu’à ce que le drapeau OLECMDERR_E_UNSUPPORTED soit retourné. Cela fonctionne bien pour des éléments tels que les listes les plus récemment utilisées (MRU) et les listes de fenêtres.<br /><br /> Valable pour :`Button`|
-|DynamicVisibilité|La visibilité de la commande `QueryStatus` peut être modifiée par la méthode `VisibilityConstraints` ou par un contexte GUID qui est inclus dans la section.<br /><br /> S’applique aux commandes qui apparaissent sur les menus et les barres d’outils de fenêtre d’outil, mais pas sur les barres d’outils de haut niveau qui apparaissent sur la fenêtre principale. Les éléments de barre d’outils de haut niveau peuvent être désactivés `QueryStatus` mais non cachés, lorsque le drapeau OLECMDF_INVISIBLE est retourné de la méthode. Les commandes de barres d’outils qui apparaissent sur les barres d’outils de fenêtre d’outil peuvent être cachées.<br /><br /> Sur un menu, ce drapeau indique également qu’il doit être automatiquement caché lorsque tous ses membres sont cachés. Ce drapeau est généralement attribué à submenus parce que les menus de haut niveau ont déjà ce comportement.<br /><br /> Ce drapeau doit être `DefaultInvisible` combiné avec le drapeau.<br /><br /> Valable `Button`pour: `Combo`, ,`Menu`|
-|FilterKeys (en)|Voir le sujet Filtering Keys sous [Combo Element](../extensibility/combo-element.md).<br /><br /> Valable pour :`Combo`|
-|FixMenuController|Si cette commande est positionnée sur un contrôleur de menu, la commande est toujours la valeur par défaut ; c’est-à-dire que la commande est sélectionnée chaque fois que le bouton de contrôleur de menu lui-même est sélectionné. Si le contrôleur `TextIsAnchorCommand` de menu a l’ensemble de drapeau, alors `FixMenuController` le contrôleur de menu prend également son texte de la commande qui a le drapeau.<br /><br /> Une seule commande sur un `FixMenuController` contrôleur de menu devrait avoir le drapeau. Si plus d’une commande est si marquée, la dernière commande dans le menu devient la commande par défaut.<br /><br /> Valable pour :`Button`|
-|IconAndText|Afficher une icône et un texte sur le menu et la barre d’outils.<br /><br /> Valable `Button`pour: `Combo`, ,`Menu`|
-|NoAutoComplete|La fonction auto-complète est désactivée.<br /><br /> Valable pour :`Combo`|
-|NoButtonCustomize|Ne laissez pas l’utilisateur personnaliser ce bouton.<br /><br /> Valable pour: `Button`,`Combo`|
-|NoKeyCustomize NoKeyCustomize|N’activez pas la personnalisation du clavier.<br /><br /> Valable pour: `Button`,`Combo`|
-|NoShowOnMenuController|Si cette commande est positionnée sur un contrôleur de menu, la commande n’apparaît pas dans la liste déroulante.<br /><br /> Valable pour :`Button`|
-|NotInTBList|N’apparaît pas dans la liste des barres d’outils disponibles. Ceci est valable uniquement pour les types de menu Toolbar.<br /><br /> Valable pour :`Menu`|
-|NoToolbarClose (noToolbarClose)|L’utilisateur ne peut pas fermer la barre d’outils. Ceci est valable uniquement pour les types de menu Toolbar.<br /><br /> Valable pour :`Menu`|
-|Pict|Afficher seulement une icône sur une barre d’outils, mais seulement du texte sur un menu. Si aucune icône n’est spécifiée, affiche un espace vide cliquable sur une barre d’outils.<br /><br /> Valable pour :`Button`|
-|PostExec (en anglais)|Rend la commande non-blocage. L’environnement de développement reporte l’exécution jusqu’à ce que toutes les requêtes préalables au traitement soient terminées.<br /><br /> Valable pour :`Button`|
-|RouteToDocs|La commande est acheminée vers le document actif.<br /><br /> Valable pour :`Button`|
-|StretchHorizontally|Lorsque ce drapeau est réglé, la largeur devient la largeur minimale pour la boîte combo, et s’il ya de la place sur la barre d’outils, la boîte combo s’étend pour remplir l’espace disponible. Cela ne se produit que si la barre d’outils est horizontalement amarré, et une seule boîte combo sur la barre d’outils peut utiliser le drapeau (le drapeau est ignoré sur tous sauf la première boîte combo).<br /><br /> Valable pour :`Combo`|
-|TextChanges TextChanges TextChanges TextChang|Le texte de commande ou de menu peut `QueryStatus` être modifié au moment de l’exécution, généralement à travers la méthode.<br /><br /> Valable pour: `Button`,`Menu`|
-|TextChangesButton|Valable pour :`Button`|
-|TextIsAnchorCommand|Pour un contrôleur de menu, le texte du menu est tiré de la commande par défaut (ancre). Une commande d’ancrage est la dernière commande sélectionnée ou verrouillée. Si ce drapeau n’est pas défini, le contrôleur de menu utilise son propre `MenuText` champ. Cependant, en cliquant sur le contrôleur de menu permet toujours la dernière commande sélectionnée à partir de ce contrôleur.<br /><br /> Nous vous recommandons de combiner `TextChanges` ce drapeau avec le drapeau.<br /><br /> Ce drapeau ne s’applique qu’aux menus de type MenuController ou MenuControllerLatched.<br /><br /> Valable pour :`Menu`|
-|TextMenuCtrlUseMenu|Utilisez `MenuText` le terrain sur les contrôleurs de menu. Le champ `ButtonText`par défaut est .<br /><br /> Valable pour :`Button`|
-|TextMenuUseButton|Utilisez `ButtonText` le terrain pour les menus. Le champ `MenuText` par défaut est s’il est spécifié.<br /><br /> Valable pour :`Button`|
-|TextOnly|Afficher uniquement du texte sur une barre d’outils ou un menu, mais pas d’icône même si l’icône est spécifiée.<br /><br /> Valable pour :`Button`|
+|AllowParams|Indique que les utilisateurs peuvent entrer des paramètres de commande dans la fenêtre **commande** lorsqu’ils tapent le nom canonique de la commande.<br /><br /> Valide pour : `Button`|
+|AlwaysCreate|Le menu est créé même s’il n’a pas de groupes ou de boutons.<br /><br /> Valide pour : `Menu`|
+|CaseSensitive|Les entrées utilisateur respectent la casse.<br /><br /> Valide pour : `Combo`|
+|CommandWellOnly|Appliquez cet indicateur si la commande n’apparaît pas dans le menu de niveau supérieur et si vous souhaitez la rendre disponible pour une personnalisation de l’interpréteur de commandes supplémentaire, par exemple pour la lier à un raccourci clavier. Une fois le VSPackage installé, vous pouvez personnaliser ces commandes en ouvrant la boîte de dialogue **options** , puis en modifiant le placement de la commande sous la catégorie **environnement clavier** . Cet indicateur n’affecte pas l’emplacement des menus contextuels, des barres d’outils, des contrôleurs de menu ou des sous-menus.<br /><br /> Valide pour : `Button` , `Combo`|
+|DefaultDisabled|Par défaut, la commande est désactivée si le VSPackage qui l’implémente n’est pas chargé ou si la `QueryStatus` méthode n’a pas été appelée.<br /><br /> Valide pour : `Button` , `Combo`|
+|DefaultDocked|Ancré par défaut. Ce paramètre ne s’applique plus aux barres d’outils car elles sont toujours ancrées.|
+|DefaultInvisible|Par défaut, la commande est invisible si le VSPackage qui l’implémente n’est pas chargé ou si la `QueryStatus` méthode n’a pas été appelée.<br /><br /> Nous vous recommandons de combiner cela avec l' `DynamicVisibility` indicateur.<br /><br /> Valide pour : `Button` , `Combo` , `Menu`|
+|DontCache|L’environnement de développement ne met pas en cache les `QueryStatus` résultats de la méthode pour cette commande.<br /><br /> Pour un menu, cela indique à un contrôleur de menu de ne pas mettre en cache le texte de ses éléments de menu. Utilisez cet indicateur lorsque le menu contient des éléments dynamiques ou des éléments qui ont du texte dynamique.<br /><br /> Valide pour : `Button` , `Menu`|
+|DynamicItemStart|Indique le début d’une liste dynamique. Cela permet à l’environnement de générer une liste en appelant successivement la `QueryStatus` méthode sur les éléments de liste jusqu’à ce que l’indicateur OLECMDERR_E_UNSUPPORTED soit retourné. Cela fonctionne bien pour les éléments tels que les listes des fenêtres et listes des derniers fichiers utilisés.<br /><br /> Valide pour : `Button`|
+|DynamicVisibility|La visibilité de la commande peut être modifiée par le biais de la `QueryStatus` méthode ou d’un GUID de contexte qui est inclus dans la `VisibilityConstraints` section.<br /><br /> S’applique aux commandes qui s’affichent dans les menus et les barres d’outils de la fenêtre outil, mais pas dans les barres d’outils de niveau supérieur qui s’affichent dans la fenêtre principale. Les éléments de barre d’outils de niveau supérieur peuvent être désactivés, mais ils ne sont pas masqués, lorsque l’indicateur OLECMDF_INVISIBLE est retourné à partir de la `QueryStatus` méthode. Les commandes de la barre d’outils qui s’affichent dans les barres d’outils de fenêtre outil peuvent être masquées.<br /><br /> Dans un menu, cet indicateur indique également qu’il doit être masqué automatiquement lorsque tous ses membres sont masqués. Cet indicateur est généralement affecté aux sous-menus, car les menus de niveau supérieur ont déjà ce comportement.<br /><br /> Cet indicateur doit être combiné avec l' `DefaultInvisible` indicateur.<br /><br /> Valide pour : `Button` , `Combo` , `Menu`|
+|Rémanent|Consultez la rubrique relative aux clés de filtrage sous l' [élément de liste](../extensibility/combo-element.md).<br /><br /> Valide pour : `Combo`|
+|FixMenuController|Si cette commande est positionnée sur un contrôleur de menu, la commande est toujours la valeur par défaut ; autrement dit, la commande est sélectionnée chaque fois que le bouton de contrôleur de menu lui-même est sélectionné. Si l’indicateur est défini pour le contrôleur de menu `TextIsAnchorCommand` , le contrôleur de menu prend également son texte à partir de la commande qui a l' `FixMenuController` indicateur.<br /><br /> Une seule commande sur un contrôleur de menu doit avoir l' `FixMenuController` indicateur. Si plusieurs commandes sont activées, la dernière commande du menu devient la commande par défaut.<br /><br /> Valide pour : `Button`|
+|IconAndText|Affichez une icône et du texte dans le menu et la barre d’outils.<br /><br /> Valide pour : `Button` , `Combo` , `Menu`|
+|NoAutoComplete|La fonctionnalité de saisie semi-automatique est désactivée.<br /><br /> Valide pour : `Combo`|
+|NoButtonCustomize|Ne laissez pas l’utilisateur personnaliser ce bouton.<br /><br /> Valide pour : `Button` , `Combo`|
+|NoKeyCustomize|N’activez pas la personnalisation du clavier.<br /><br /> Valide pour : `Button` , `Combo`|
+|NoShowOnMenuController|Si cette commande est positionnée sur un contrôleur de menu, la commande n’apparaît pas dans la liste déroulante.<br /><br /> Valide pour : `Button`|
+|NotInTBList|N’apparaît pas dans la liste des barres d’outils disponibles. Cela est valide uniquement pour les types de menu de barre d’outils.<br /><br /> Valide pour : `Menu`|
+|NoToolbarClose|L’utilisateur ne peut pas fermer la barre d’outils. Cela est valide uniquement pour les types de menu de barre d’outils.<br /><br /> Valide pour : `Menu`|
+|PICT|Afficher uniquement une icône dans une barre d’outils, mais uniquement du texte dans un menu. Si aucune icône n’est spécifiée, affiche un espace vide sur une barre d’outils.<br /><br /> Valide pour : `Button`|
+|PostExec|Rend la commande non bloquante. L’environnement de développement diffère l’exécution jusqu’à ce que toutes les requêtes de pré-traitement soient terminées.<br /><br /> Valide pour : `Button`|
+|RouteToDocs|La commande est routée vers le document actif.<br /><br /> Valide pour : `Button`|
+|StretchHorizontally|Lorsque cet indicateur est défini, la largeur devient la largeur minimale de la zone de liste déroulante, et si la barre d’outils contient de la place, la zone de liste déroulante est étirée pour occuper de l’espace disponible. Cela se produit uniquement si la barre d’outils est ancrée horizontalement et qu’une seule zone de liste déroulante de la barre d’outils peut utiliser l’indicateur (l’indicateur est ignoré sur tous les sauf la première zone de liste modifiable).<br /><br /> Valide pour : `Combo`|
+|Textchanges au|Le texte de la commande ou du menu peut être modifié au moment de l’exécution, en général via la `QueryStatus` méthode.<br /><br /> Valide pour : `Button` , `Menu`|
+|TextChangesButton|Valide pour : `Button`|
+|TextIsAnchorCommand|Pour un contrôleur de menu, le texte du menu est issu de la commande par défaut (ancre). Une commande d’ancrage est la dernière commande sélectionnée ou verrouillée. Si cet indicateur n’est pas défini, le contrôleur de menu utilise son propre `MenuText` champ. Toutefois, un clic sur le contrôleur de menu active toujours la dernière commande sélectionnée à partir de ce contrôleur.<br /><br /> Nous vous recommandons de combiner cet indicateur avec l' `TextChanges` indicateur.<br /><br /> Cet indicateur s’applique uniquement aux menus de type MenuController ou MenuControllerLatched.<br /><br /> Valide pour : `Menu`|
+|TextMenuCtrlUseMenu|Utilisez le `MenuText` champ sur les contrôleurs de menu. Le champ par défaut est `ButtonText` .<br /><br /> Valide pour : `Button`|
+|TextMenuUseButton|Utilisez le `ButtonText` champ pour les menus. Le champ par défaut est `MenuText` s’il est spécifié.<br /><br /> Valide pour : `Button`|
+|TextOnly|Affichez uniquement du texte dans une barre d’outils ou un menu, mais pas d’icône même si l’icône est spécifiée.<br /><br /> Valide pour : `Button`|
 
 ### <a name="parent-elements"></a>Éléments parents
 
 |Élément|Description|
 |-------------|-----------------|
-|[Élément boutons](../extensibility/buttons-element.md)|Fournit un groupe pour les éléments [d’élément Bouton.](../extensibility/button-element.md)|
-|[Élément menus](../extensibility/menus-element.md)|Définit tous les menus qu’un VSPackage met en œuvre.|
+|[Buttons, élément](../extensibility/buttons-element.md)|Fournit un groupe pour les éléments d' [élément de bouton](../extensibility/button-element.md) .|
+|[Élément menus](../extensibility/menus-element.md)|Définit tous les menus qu’un VSPackage implémente.|
 
 ## <a name="see-also"></a>Voir aussi
-- [Table de commande Visual Studio (. Vsct) Fichiers](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Table de commandes Visual Studio (. Fichiers vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

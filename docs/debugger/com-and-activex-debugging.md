@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0a818cfde2996b26bd9d5f31b128e41f2a9fe2e1
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73188682"
 ---
 # <a name="com-and-activex-debugging"></a>Débogage COM et ActiveX
@@ -38,12 +38,12 @@ Cette section réunit des conseils sur le débogage des applications COM et des 
 
  [Outils de débogage com](../debugger/com-debugging-tools.md) Répertorie les visionneuses et les exemples d’applications qui peuvent être utiles pour déboguer votre application COM.
 
-## <a name="related-sections"></a>Rubriques connexes
- [Tout d’abord, examinez le débogueur](../debugger/debugger-feature-tour.md) Fournit des liens vers les sections de plus grande taille de la documentation sur le débogage. Les informations comprennent les nouveautés du débogueur, les paramètres et la préparation, les points d’arrêt, la gestion des exceptions, la fonction Modifier & continuer, le débogage de code managé, le débogage de C++ projets, le débogage com et ActiveX, le débogage de dll, le débogage SQL et l’utilisateur. références d’interface.
+## <a name="related-sections"></a>Sections connexes
+ [Tout d’abord, examinez le débogueur](../debugger/debugger-feature-tour.md) Fournit des liens vers les sections de plus grande taille de la documentation sur le débogage. Les informations comprennent les nouveautés du débogueur, les paramètres et la préparation, les points d’arrêt, la gestion des exceptions, la fonction Modifier & continuer, le débogage de code managé, le débogage de projets C++, le débogage COM et ActiveX, le débogage de dll, le débogage SQL et les références de l’interface utilisateur.
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Sécurité du débogueur](../debugger/debugger-security.md)
-- [Présentation de COM](/cpp/atl/introduction-to-com)
+- [Introduction à COM](/cpp/atl/introduction-to-com)
 - [Contrôles ActiveX](/cpp/mfc/activex-controls)
 - [Applications serveur SDI](com-server-and-container-debugging.md)
