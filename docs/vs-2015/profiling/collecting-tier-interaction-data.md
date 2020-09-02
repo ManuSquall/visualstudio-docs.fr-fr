@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a20266c870316be9b6be67e661d13eb4e6fdbaee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62568045"
 ---
 # <a name="collecting-tier-interaction-data"></a>Collecte de données d’interaction de couche
@@ -49,4 +49,4 @@ Le profilage d’interaction de couche fournit des informations supplémentaires
 3. Dans l’Explorateur de performances, sélectionnez le nœud **Cibles**, puis spécifiez le projet, le fichier exécutable ou le site web que vous voulez profiler.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Interactions de couche, vue](../profiling/tier-interactions-view.md)
+ [Interactions de couche (vue)](../profiling/tier-interactions-view.md)

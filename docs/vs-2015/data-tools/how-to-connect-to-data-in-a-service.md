@@ -23,10 +23,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d9bfa6c776e3a2137f751d4253feb0239811d95a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72654687"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>Comment : se connecter à des données dans un service
@@ -56,7 +56,7 @@ Pour connecter votre application aux données retournées par un service, exécu
 
 5. Cliquez sur **OK** pour ajouter une référence de service à votre projet.
 
-6. Cliquez sur **Finish**.
+6. Cliquez sur **Terminer**.
 
      La source de données est ajoutée à la fenêtre **Sources de données**.
 

@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 16a09a5b0f5e534d310092036b8e7eb1d4c344d9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668478"
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>Substitution et extension des classes générées
@@ -29,7 +29,7 @@ Votre définition DSL est une plateforme sur laquelle vous pouvez créer un ense
 ### <a name="overriding-methods-in-a-partial-class"></a>Substitution de méthodes dans une classe partielle
  Les définitions de classes partielles permettent de définir une classe dans plusieurs emplacements. Cela vous permet de séparer le code généré du code que vous écrivez vous-même. Dans votre code écrit manuellement, vous pouvez remplacer les classes héritées par le code généré.
 
- Par exemple, si dans votre définition DSL vous définissez une classe de domaine nommée `Book`, vous pouvez écrire du code personnalisé qui ajoute des méthodes override :
+ Par exemple, si dans votre définition DSL vous définissez une classe de domaine nommée `Book` , vous pouvez écrire du code personnalisé qui ajoute des méthodes override :
 
  `public partial class Book`
 
@@ -55,13 +55,13 @@ Votre définition DSL est une plateforme sur laquelle vous pouvez créer un ense
 
  Toutefois, vous pouvez substituer ces méthodes en définissant le paramètre génère un indicateur de **double dérivé** pour la classe de domaine. Deux classes sont alors générées, l’une étant une classe de base abstraite de l’autre. Toutes les définitions de méthode et de propriété se trouvent dans la classe de base, et seul le constructeur est dans la classe dérivée.
 
- Par exemple, dans l’exemple de bibliothèque. DSL, la propriété `Generates``Double Derived` de la classe de domaine `CirculationBook` a la valeur `true`. Le code généré pour cette classe de domaine contient deux classes :
+ Par exemple, dans l’exemple de bibliothèque. DSL, la propriété de la `CirculationBook` classe de domaine a la `Generates``Double Derived` valeur `true` . Le code généré pour cette classe de domaine contient deux classes :
 
 - `CirculationBookBase`, qui est un abstrait et qui contient toutes les méthodes et propriétés.
 
-- `CirculationBook`, dérivée de `CirculationBookBase`. Elle est vide, à l’exception de ses constructeurs.
+- `CirculationBook`, qui est dérivé de `CirculationBookBase` . Elle est vide, à l’exception de ses constructeurs.
 
-  Pour substituer n’importe quelle méthode, vous créez une définition partielle de la classe dérivée telle que `CirculationBook`. Vous pouvez substituer les méthodes générées et les méthodes héritées de l’infrastructure de modélisation.
+  Pour substituer n’importe quelle méthode, vous créez une définition partielle de la classe dérivée telle que `CirculationBook` . Vous pouvez substituer les méthodes générées et les méthodes héritées de l’infrastructure de modélisation.
 
   Vous pouvez utiliser cette méthode avec tous les types d’élément, y compris les éléments de modèle, les relations, les formes, les diagrammes et les connecteurs. Vous pouvez également substituer des méthodes d’autres classes générées. Certaines classes générées, telles que ToolboxHelper, sont toujours doubles dérivées.
 
@@ -73,7 +73,7 @@ Votre définition DSL est une plateforme sur laquelle vous pouvez créer un ense
  Écrivez une définition de classe partielle dans un fichier distinct des fichiers générés et fournissez le constructeur.
 
 ### <a name="flagged-extension-points"></a>Points d’extension avec indicateur
- Un point d’extension avec indicateur est un emplacement dans la définition DSL où vous pouvez définir une propriété ou une case à cocher pour indiquer que vous allez fournir une méthode personnalisée. Les constructeurs personnalisés en sont un exemple. D’autres exemples incluent la définition de la `Kind` d’une propriété de domaine sur un stockage calculé ou personnalisé ou la définition de l’indicateur **is Custom** dans un générateur de connexions.
+ Un point d’extension avec indicateur est un emplacement dans la définition DSL où vous pouvez définir une propriété ou une case à cocher pour indiquer que vous allez fournir une méthode personnalisée. Les constructeurs personnalisés en sont un exemple. D’autres exemples incluent la définition `Kind` d’une propriété de domaine sur un stockage calculé ou personnalisé ou la définition de l’indicateur **is Custom** dans un générateur de connexions.
 
  Dans chaque cas, lorsque vous définissez l’indicateur et régénérez le code, une erreur de génération se produit. Double-cliquez sur l’erreur pour afficher un commentaire qui explique ce que vous devez fournir.
 

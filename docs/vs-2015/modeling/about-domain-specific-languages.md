@@ -12,16 +12,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b76142dfbc2dca860591bf3c3cb73c2971f56b22
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655366"
 ---
 # <a name="about-domain-specific-languages"></a>À propos des langages spécifiques à un domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Contrairement à un langage à usage général tel C# que ou UML, un langage spécifique à un domaine (DSL) est conçu pour exprimer des instructions dans un espace de problème particulier ou un domaine.
+Contrairement à un langage à usage général tel que C# ou UML, un langage spécifique à un domaine (DSL) est conçu pour exprimer des instructions dans un espace de problème particulier ou un domaine.
 
  Les DSL bien connus incluent des expressions régulières et SQL. Chaque DSL est bien mieux qu’un langage à usage général pour décrire les opérations sur les chaînes de texte ou une base de données, mais il est bien plus difficile de décrire des idées qui se trouvent en dehors de sa propre portée. Chaque secteur possède également son propre DSL. Par exemple, dans le secteur des télécommunications, les langages de description des appels sont largement utilisés pour spécifier la séquence d’États dans un appel téléphonique et, dans le secteur des voyages aériens, un DSL standard est utilisé pour décrire les réservations de vol.
 
@@ -41,16 +41,16 @@ Contrairement à un langage à usage général tel C# que ou UML, un langage sp�
 
   L’illustration suivante montre un petit modèle dans un DSL schématique :
 
-  ![Modèle d’arbre de familles Tudor](../modeling/media/tudor-familytreemodel.png "Tudor_FamilyTreeModel")
+  ![Modèle d'arbre généalogique de la famille Tudor](../modeling/media/tudor-familytreemodel.png "Tudor_FamilyTreeModel")
 
 ## <a name="what-you-can-do-with-dsls"></a>Ce que vous pouvez faire avec DSL
  Une application classique d’une solution DSL consiste à générer un code de programme ou d’autres artefacts. Lorsque vous définissez votre DSL, vous pouvez définir des *modèles de texte* qui lisent un modèle du DSL et génèrent des fichiers texte.
 
  Par exemple, vous pouvez écrire des modèles qui prennent un plan aéroportuaire et génèrent une partie du logiciel pour la gestion des bagages, ainsi que certains documents utilisateur qui décrivent le plan.
 
- Lorsque vous avez défini une solution DSL, vous pouvez la distribuer à d’autres utilisateurs qui peuvent l’installer sur leurs propres ordinateurs. Les utilisateurs de votre DSL peuvent créer et modifier des modèles dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+ Lorsque vous avez défini une solution DSL, vous pouvez la distribuer à d’autres utilisateurs qui peuvent l’installer sur leurs propres ordinateurs. Les utilisateurs de votre DSL peuvent créer et modifier des modèles dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
- Vous pouvez également définir des commandes de menu et d’autres outils qui aident les utilisateurs à modifier le DSL, les contraintes de validation pour s’assurer que le DSL est utilisé correctement et les modèles d’élément qui aident les utilisateurs à créer de nouvelles instances. Vous pouvez encapsuler un ou plusieurs DSL avec leurs outils et d’autres extensions de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] en tant que package intégré.
+ Vous pouvez également définir des commandes de menu et d’autres outils qui aident les utilisateurs à modifier le DSL, les contraintes de validation pour s’assurer que le DSL est utilisé correctement et les modèles d’élément qui aident les utilisateurs à créer de nouvelles instances. Vous pouvez encapsuler un ou plusieurs DSL avec leurs outils et autres [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensions en tant que package intégré.
 
  En règle générale, un langage spécifique à un domaine est créé lorsqu’une équipe de développement doit écrire du code similaire pour plusieurs produits. Par exemple, une société spécialisée dans les systèmes de gestion des bagages peut définir un DSL de la piste de bagages à partir duquel elle peut générer une partie du code pour chaque installation. Les avantages de la solution DSL sont qu’elle peut être comprise par les clients, que le code généré à partir de celle-ci est fiable et que le système peut être rapidement mis à jour en cas de modification des exigences des clients.
 
@@ -73,21 +73,21 @@ Contrairement à un langage à usage général tel C# que ou UML, un langage sp�
 - Intégration à Visual Studio
 
 ### <a name="notation"></a>Notation
- Un langage spécifique à un domaine doit avoir un ensemble raisonnablement restreint d’éléments qui peuvent être facilement définis et étendus pour représenter des constructions spécifiques à un domaine. Une notation se compose de formes, qui représentent les éléments, et de connecteurs, qui représentent les relations entre les éléments, sur une surface de diagramme graphique. Dans [!INCLUDE[dsl](../includes/dsl-md.md)], les formes peuvent être étendues et affinées pour représenter les éléments de votre langage spécifique à un domaine.
+ Un langage spécifique à un domaine doit avoir un ensemble raisonnablement restreint d’éléments qui peuvent être facilement définis et étendus pour représenter des constructions spécifiques à un domaine. Une notation se compose de formes, qui représentent les éléments, et de connecteurs, qui représentent les relations entre les éléments, sur une surface de diagramme graphique. Dans [!INCLUDE[dsl](../includes/dsl-md.md)] , les formes peuvent être étendues et affinées pour représenter les éléments de votre langage spécifique à un domaine.
 
 ### <a name="domain-model"></a>Modèle de domaine
  Un langage spécifique à un domaine doit combiner l’ensemble d’éléments et les relations entre eux dans une grammaire cohérente. Elle doit également définir si les combinaisons d’éléments et de relations sont valides. Par exemple, les langages de programmation empêchent généralement l’héritage circulaire, dans lequel une classe est dérivée d’une deuxième classe et la deuxième classe est dérivée de la première classe. Les contraintes peuvent également être utilisées pour exprimer la logique métier, par exemple, une personne ne peut pas être une dépendante de lui-même. [!INCLUDE[dsl](../includes/dsl-md.md)] utilise des contraintes pour exprimer les genres de restrictions nécessaires à la plupart des langages spécifiques à un domaine.
 
 ### <a name="artifact-generation"></a>Génération d’artefacts
- L’un des principaux objectifs d’un langage spécifique à un domaine consiste à générer un artefact, par exemple, un code source, un fichier XML ou d’autres données utilisables. En règle générale, une modification dans le modèle signifie une modification de l’artefact. Vous pouvez utiliser [!INCLUDE[dsl](../includes/dsl-md.md)] pour générer des artefacts et les régénérer lorsque vous modifiez le modèle.
+ L’un des principaux objectifs d’un langage spécifique à un domaine consiste à générer un artefact, par exemple, un code source, un fichier XML ou d’autres données utilisables. En règle générale, une modification dans le modèle signifie une modification de l’artefact. Vous pouvez utiliser [!INCLUDE[dsl](../includes/dsl-md.md)] pour générer des artefacts et les régénérer quand vous modifiez le modèle.
 
 ### <a name="serialization"></a>Sérialisation
  Un langage spécifique à un domaine doit être conservé sous une forme qui peut être modifiée, enregistrée, fermée et rechargée. [!INCLUDE[dsl](../includes/dsl-md.md)] utilise un format XML qui vous permet de définir et de personnaliser la façon dont votre langage spécifique à un domaine est sérialisé ou conservé.
 
 ### <a name="integration-with-visual-studio"></a>Intégration à Visual Studio
- Étant donné que [!INCLUDE[dsl](../includes/dsl-md.md)] est hébergé dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], il étend de nombreux [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fenêtres et contrôles. Elle vous permet également de personnaliser le comportement des commandes de menu, des éléments de boîte à outils et d’autres éléments de l’interface utilisateur.
+ Étant donné que [!INCLUDE[dsl](../includes/dsl-md.md)] est hébergé dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , il étend de nombreuses [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fenêtres et contrôles. Elle vous permet également de personnaliser le comportement des commandes de menu, des éléments de boîte à outils et d’autres éléments de l’interface utilisateur.
 
- Vous pouvez également créer un adaptateur de bus de modèles pour votre langage spécifique à un domaine. Cet adaptateur vous permet de référencer un modèle et des éléments dans un modèle, et vous permet d’écrire du code qui peut accéder à une instance du DSL et le mettre à jour. En utilisant le puissant mécanisme de bus de modèle, vous pouvez écrire des extensions [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] qui fonctionnent avec plusieurs modèles. Vous pouvez également écrire des applications autonomes qui fonctionnent avec les modèles. Pour plus d’informations, consultez [intégration de modèles à l’aide de Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
+ Vous pouvez également créer un adaptateur de bus de modèles pour votre langage spécifique à un domaine. Cet adaptateur vous permet de référencer un modèle et des éléments dans un modèle, et vous permet d’écrire du code qui peut accéder à une instance du DSL et le mettre à jour. En utilisant le puissant mécanisme de bus de modèle, vous pouvez écrire [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] des extensions qui fonctionnent avec plusieurs modèles. Vous pouvez également écrire des applications autonomes qui fonctionnent avec les modèles. Pour plus d’informations, consultez [intégration de modèles à l’aide de Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
 
 ## <a name="benefits-of-domain-specific-development"></a>Avantages du développement spécifique à un domaine
  Un langage spécifique à un domaine peut offrir les avantages suivants :

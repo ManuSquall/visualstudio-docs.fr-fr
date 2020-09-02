@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 62ece3a7a56f931f949fc13124af430ce24e622f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72646836"
 ---
 # <a name="supplying-xml-code-comments"></a>Insertion de commentaires dans le code XML
@@ -34,4 +34,4 @@ Vous pouvez insérer des commentaires dans les fichiers de code source IntelliSe
  Pour plus d’informations sur la documentation du code C++, consultez [Commentaires](https://msdn.microsoft.com/library/6fcb906c-c264-4083-84bc-373800b2e514) et [Documentation XML](https://msdn.microsoft.com/library/a1aec1c5-b2d1-4c74-83ae-1dbbbb76b506).
 
 ## <a name="see-also"></a>Voir aussi
- [Utilisation de la fonctionnalité IntelliSense](../ide/using-intellisense.md)
+ [Utilisation d’IntelliSense](../ide/using-intellisense.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2:EnumPrograms Microsoft Docs
+title: 'IDebugEngine2 :: EnumPrograms | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5ab53366b228077ab3c3cc6b1ab38ee5d0383dcd
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731095"
 ---
 # <a name="idebugengine2enumprograms"></a>IDebugEngine2::EnumPrograms
-Récupère une liste de tous les programmes étant déboqués par un moteur de débogé (DE).
+Récupère une liste de tous les programmes débogués par un moteur de débogage (DE).
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,9 +41,9 @@ int EnumPrograms( 
 
 ## <a name="parameters"></a>Paramètres
 `ppEnum`\
-[out] Retourne un objet [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md) qui contient une liste de tous les programmes étant déboqués par un DE.
+à Retourne un objet [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md) qui contient une liste de tous les programmes en cours de débogage par un de.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

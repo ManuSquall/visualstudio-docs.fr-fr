@@ -11,16 +11,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f3e030facd8c70aec4fdc480b01c90ee4c0acda7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188390"
 ---
 # <a name="idebugportpicker"></a>IDebugPortPicker
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Représente une interface utilisateur personnalisée pour sélectionner le port.  
+Représente une interface utilisateur personnalisée pour la sélection du port.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -28,11 +28,11 @@ Représente une interface utilisateur personnalisée pour sélectionner le port.
 IDebugPortPicker : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs  
- Cette interface est implémentée par les fournisseurs de port. Un fournisseur de port définit leur sélecteur de port à exposer en tant qu’un CLSID et en pointant le `metricPortPickerCLSID` métrique au CLSID exposé.  
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
+ Cette interface est implémentée par les fournisseurs de port. Un fournisseur de ports définit son sélecteur de port en l’exposant en tant que CLSID et en pointant `metricPortPickerCLSID` sur la mesure au niveau du CLSID exposé.  
   
 ## <a name="methods"></a>Méthodes  
- Le tableau suivant présente les méthodes de `IDebugPortPicker`.  
+ Le tableau suivant présente les méthodes de `IDebugPortPicker` .  
   
 |Méthode|Description|  
 |------------|-----------------|  
@@ -40,8 +40,8 @@ IDebugPortPicker : IUnknown
 |[SetSite](../../../extensibility/debugger/reference/idebugportpicker-setsite.md)|Définit le fournisseur de services.|  
   
 ## <a name="requirements"></a>Configuration requise  
- En-tête : Msdbg.h  
+ En-tête : msdbg. h  
   
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft. VisualStudio. Debugger. Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll

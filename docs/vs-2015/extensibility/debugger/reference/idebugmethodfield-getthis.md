@@ -1,5 +1,5 @@
 ---
-title: IDebugMethodField::GetThis | Microsoft Docs
+title: 'IDebugMethodField :: GetThis | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 786f3986875518470ed5756a0f7b57f4f93f5ca2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62563609"
 ---
 # <a name="idebugmethodfieldgetthis"></a>IDebugMethodField::GetThis
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Obtient le `this` (`Me` dans [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)]) pointeur de l’objet qui contient la méthode.  
+Obtient le `this` `Me` pointeur (en [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] ) de l’objet contenant la méthode.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -40,13 +40,13 @@ int GetThis(
   
 #### <a name="parameters"></a>Paramètres  
  `ppClass`  
- [out] Retourne un [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) objet représentant le pointeur « this ».  
+ à Retourne un objet [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) qui représente le pointeur « this ».  
   
-## <a name="return-value"></a>Valeur de retour  
+## <a name="return-value"></a>Valeur renvoyée  
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Dans les langages orientés objet, il est généralement un pointeur implicite à l’instanciation actuelle d’une classe. Il s’agit `this` en C# / C++ et en tant que `Me` dans [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)].  
+ Dans les langages orientés objet, il existe généralement un pointeur implicite vers l’instanciation actuelle d’une classe. Cela est connu sous le nom `this` de C#/c + + et comme `Me` dans [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] .  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   

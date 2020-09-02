@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ec927532ebc808fae0717e36439be356cb022b32
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85465873"
 ---
 # <a name="idiasessionfindacceleratorinlineesbylinenum"></a>IDiaSession::findAcceleratorInlineesByLinenum
@@ -35,11 +35,11 @@ HRESULT findAcceleratorInlineeLinesByName ( 
 #### <a name="parameters"></a>Paramètres
  `parent`
 
-dans `IDiaSymbol`Qui correspond à la fonction stub d’accélérateur à laquelle doit porter la recherche.
+dans `IDiaSymbol` Qui correspond à la fonction stub d’accélérateur à laquelle doit porter la recherche.
 
  `file`
 
-dans `IDiaSourceFile`De l’emplacement source.
+dans `IDiaSourceFile` De l’emplacement source.
 
  `linenum`
 

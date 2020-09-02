@@ -1,5 +1,5 @@
 ---
-title: Fenêtre Sortie, débogage, de boîte de dialogue Options | Microsoft Docs
+title: Fenêtre Sortie, débogage, boîte de dialogue Options | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9153da163fb30b05e13d9c25f8589d632d64326e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198140"
 ---
 # <a name="output-window-debugging-options-dialog-box"></a>Fenêtre Sortie, Débogage, boîte de dialogue Options
@@ -31,13 +31,13 @@ ms.locfileid: "68198140"
 Vous pouvez spécifier les types d’informations de débogage qui apparaissent dans la fenêtre **Sortie**. Pour afficher ces options, ouvrez le menu **Outils**, cliquez sur **Options**, développez le nœud **Débogage** et cliquez sur **Fenêtre Sortie**.  
   
  **Paramètres généraux de sortie**  
- Cette catégorie contient des contrôles qui déterminent si les messages généraux de débogage s’affichent dans le **sortie** fenêtre. Vous pouvez spécifier si chaque type de message doit apparaître.  
+ Cette catégorie contient des contrôles qui déterminent si les messages généraux de débogage s’affichent dans la fenêtre **sortie** . Vous pouvez spécifier si chaque type de message doit apparaître.  
   
- **Paramètres de Trace WPF**  
- Cette catégorie contient des contrôles qui déterminent le niveau des messages de trace WPF qui apparaissent dans le **sortie** fenêtre. Vous pouvez spécifier si chaque type de message doit apparaître et spécifier un niveau allant de **Critique** à **Tous**.  
+ **Paramètres de trace WPF**  
+ Cette catégorie contient des contrôles qui déterminent le niveau des messages de trace WPF qui s’affichent dans la fenêtre **sortie** . Vous pouvez spécifier si chaque type de message doit apparaître et spécifier un niveau allant de **Critique** à **Tous**.  
   
- Pour plus d’informations, consultez [Guide pratique pour afficher les informations de trace WPF](../debugger/how-to-display-wpf-trace-information.md).  
+ Pour plus d’informations, consultez [Comment : afficher des informations de trace WPF](../debugger/how-to-display-wpf-trace-information.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Débogage, boîte de dialogue Options](../debugger/debugging-options-dialog-box.md)   
- [Sortie (fenêtre)](../ide/reference/output-window.md)
+ [Sortie, fenêtre](../ide/reference/output-window.md)

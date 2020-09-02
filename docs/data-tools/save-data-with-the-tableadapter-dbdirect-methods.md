@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 77d7aa0859ee383258f80dfd74f36d584790e464
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281607"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Enregistrer des données avec les méthodes DBDirect du TableAdapter
@@ -89,7 +89,7 @@ Cette étape utilise l’**Assistant Configuration de source de données** pour 
 
     - Si une connexion de données à l’exemple de base de données Northwind est disponible dans la liste déroulante, sélectionnez-la.
 
-         -ou-
+         - ou -
 
     - Sélectionnez **Nouvelle connexion** pour afficher la boîte de dialogue **Ajouter/Modifier la connexion**.
 
@@ -120,7 +120,7 @@ Un contrôle <xref:System.Windows.Forms.DataGridView> et une barre d'outils (<xr
     |Nom|Texte|
     |----------|----------|
     |`InsertButton`|**Insérer**|
-    |`UpdateButton`|**Update**|
+    |`UpdateButton`|**Mettre à jour**|
     |`DeleteButton`|**Supprimer**|
 
 ### <a name="to-add-code-to-insert-new-records-into-the-database"></a>Pour ajouter du code afin d'insérer de nouveaux enregistrements dans la base de données
@@ -150,7 +150,7 @@ Un contrôle <xref:System.Windows.Forms.DataGridView> et une barre d'outils (<xr
      [!code-vb[VbRaddataSaving#3](../data-tools/codesnippet/VisualBasic/save-data-with-the-tableadapter-dbdirect-methods_3.vb)]
      [!code-csharp[VbRaddataSaving#3](../data-tools/codesnippet/CSharp/save-data-with-the-tableadapter-dbdirect-methods_3.cs)]
 
-## <a name="run-the-application"></a>Exécuter l’application
+## <a name="run-the-application"></a>Exécution de l'application
 
 - Appuyez sur **F5** pour exécuter l’application.
 

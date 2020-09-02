@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a5f8568edc636955558ec93b55c0aedebf0065d3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651838"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Guide pratique pour gérer des configurations de build en appliquant les paramètres du développeur Visual Basic
@@ -45,7 +45,7 @@ Par défaut, toutes les options de configuration de build avancées sont masqué
 
 4. Cliquez sur **OK**.
 
-     Dans le menu **Générer**, le **Gestionnaire de configurations** est maintenant disponible, et les listes **Configuration** et **Plateforme** sont visibles dans le Concepteur de projets.
+     Dans le menu **générer** , **Configuration Manager** est désormais disponible, et les listes **configuration** et **plateforme** sont visibles dans le concepteur de projet.
 
 ## <a name="see-also"></a>Voir aussi
  [Fonctionnement des configurations de build](../ide/understanding-build-configurations.md) [compilation et génération](../ide/compiling-and-building-in-visual-studio.md)

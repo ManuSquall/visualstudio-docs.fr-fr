@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
 ms.openlocfilehash: b959d411f0f574b03729d8016feb6efc531ae171
-ms.sourcegitcommit: 95f26af1da51d4c83ae78adcb7372b32364d8a2b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79302559"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315042"
 ---
 # <a name="publishing-a-cloud-service-using-visual-studio"></a>Publication d'un service cloud avec Visual Studio
 
@@ -69,13 +69,13 @@ Si l'infrastructure principale de votre application est stable, mais que les rô
 
 ### <a name="requirements-for-using-web-deploy"></a>Configuration requise pour l’utilisation de Web Deploy
 
-- **Pour le développement et les tests seulement**: Les modifications sont apportées directement à la machine virtuelle où le rôle web est en cours d’exécution. Si cette machine virtuelle doit être recyclée, les modifications sont perdues car le package d'origine que vous avez publié sert à recréer la machine virtuelle pour le rôle. Republiez votre application afin d’obtenir les dernières modifications pour le rôle web.
+- **À des fins de développement et de test uniquement**: les modifications sont apportées directement à la machine virtuelle sur laquelle le rôle Web s’exécute. Si cette machine virtuelle doit être recyclée, les modifications sont perdues car le package d'origine que vous avez publié sert à recréer la machine virtuelle pour le rôle. Republiez votre application afin d’obtenir les dernières modifications pour le rôle web.
 
-- **Seuls les rôles web peuvent être mis à jour**: les rôles des travailleurs ne peuvent pas être mis à jour. En outre, vous ne pouvez pas mettre à jour `RoleEntryPoint` dans `web role.cs`.
+- **Seuls les rôles Web peuvent être mis à jour**: les rôles de travail ne peuvent pas être mis à jour. En outre, vous ne pouvez pas mettre à jour `RoleEntryPoint` dans `web role.cs`.
 
-- **Ne peut prendre en charge qu’une seule instance d’un rôle web**: vous ne pouvez pas avoir plusieurs instances d’un rôle web dans votre environnement de déploiement. Toutefois, plusieurs rôles web, chacun avec une seule instance, sont pris en charge.
+- **Ne peut prendre en charge qu’une seule instance d’un rôle Web**: vous ne pouvez pas avoir plusieurs instances d’un rôle Web dans votre environnement de déploiement. Toutefois, plusieurs rôles web, chacun avec une seule instance, sont pris en charge.
 
-- **Activez les connexions de bureau à distance**: Cette exigence permet à Web Deploy d’utiliser l’utilisateur et le mot de passe pour se connecter à la machine virtuelle pour déployer les modifications apportées au serveur en cours d’exécution des services d’information Internet (IIS). En outre, vous devrez peut-être vous connecter à la machine virtuelle pour ajouter un certificat approuvé à IIS sur cette machine virtuelle. (Ce certificat assure la sécurité de la connexion à distance pour IIS utilisée par Web Deploy.)
+- **Activer les connexions Bureau à distance**: cette exigence permet à Web Deploy d’utiliser l’utilisateur et le mot de passe pour se connecter à la machine virtuelle afin de déployer les modifications sur le serveur qui exécute Internet Information Services (IIS). En outre, vous devrez peut-être vous connecter à la machine virtuelle pour ajouter un certificat approuvé à IIS sur cette machine virtuelle. (Ce certificat assure la sécurité de la connexion à distance pour IIS utilisée par Web Deploy.)
 
 La procédure suivante suppose que vous utilisiez l’Assistant **Application de publication Azure**.
 
@@ -138,10 +138,10 @@ Vous devrez peut-être inclure des fichiers spécifiques dans votre package de s
    c. Choisissez la référence que vous souhaitez ajouter, puis sélectionnez **OK**. La référence est ajoutée à la liste sous le dossier **Références**.
    d. Ouvrez le menu contextuel de l'assembly que vous venez d'ajouter et sélectionnez **Propriétés**. La fenêtre **Propriétés** s'affiche.
 
-      Pour inclure cette assemblée dans le forfait de service, dans la **liste Copy Local** choisir **True**.
+      Pour inclure cet assembly dans le package de services, dans la **liste copie locale** , choisissez **true**.
 1. Dans l'**Explorateur de solutions**, ouvrez le nœud de projet auquel manque l'assembly référencé.
 
-1. Pour ajouter l'assembly au projet, ouvrez le menu contextuel du dossier **Références** et sélectionnez **Ajouter une référence**. Le dialogue **Add Reference** apparaît.
+1. Pour ajouter l'assembly au projet, ouvrez le menu contextuel du dossier **Références** et sélectionnez **Ajouter une référence**. La boîte de dialogue **Ajouter une référence** s’affiche.
 
 1. Sélectionnez la référence à ajouter, puis cliquez sur le bouton **OK**.
 

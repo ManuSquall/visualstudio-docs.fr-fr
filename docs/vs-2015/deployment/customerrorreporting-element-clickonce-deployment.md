@@ -1,5 +1,5 @@
 ---
-title: '&lt;customErrorReporting&gt; , élément (déploiement ClickOnce) | Microsoft Docs'
+title: '&lt;&gt;élément customErrorReporting (déploiement ClickOnce) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -16,13 +16,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b7e8a0db3e10a277fe1c4a2f8fcd2bb85fa69e69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68187833"
 ---
-# <a name="ltcustomerrorreportinggt-element-clickonce-deployment"></a>&lt;customErrorReporting&gt; , élément (déploiement ClickOnce)
+# <a name="ltcustomerrorreportinggt-element-clickonce-deployment"></a>&lt;&gt;élément customErrorReporting (déploiement ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Spécifie un URI à afficher en cas d'erreur.  
@@ -36,12 +36,12 @@ Spécifie un URI à afficher en cas d'erreur.
 ```  
   
 ## <a name="remarks"></a>Notes  
- Cet élément est facultatif. Sans cela, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] affiche une boîte de dialogue d’erreur indiquant la pile d’exception. Si le `customErrorReporting` élément est présent, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] affiche l’URI indiqué par le `uri` paramètre. L’URI cible inclut la classe d’exception externe, la classe d’exception interne et le message d’exception interne en tant que paramètres.  
+ Cet élément est facultatif. Sans lui, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] affiche une boîte de dialogue d’erreur indiquant la pile d’exception. Si l' `customErrorReporting` élément est présent, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] affichera à la place l’URI indiqué par le `uri` paramètre. L’URI cible inclura la classe d’exception externe, la classe d’exception interne et le message d’exception interne en tant que paramètres.  
   
- Utilisez cet élément pour ajouter le rapport d’erreurs des fonctionnalités à votre application. Étant donné que l’URI généré inclut des informations sur le type d’erreur, votre site Web peut analyser ces informations et afficher, par exemple, un écran de dépannage approprié.  
+ Utilisez cet élément pour ajouter la fonctionnalité de création de rapports d’erreurs à votre application. Étant donné que l’URI généré contient des informations sur le type d’erreur, votre site Web peut analyser ces informations et afficher, par exemple, un écran de dépannage approprié.  
   
 ## <a name="example"></a>Exemple  
- L’extrait de code suivant montre le `customErrorReporting` élément, ainsi que l’URI généré qu’il peut produire.  
+ L’extrait de code suivant montre l' `customErrorReporting` élément, ainsi que l’URI généré qu’il peut produire.  
   
 ```  
 <customErrorReporting uri=http://www.contoso.com/applications/error.asp />  

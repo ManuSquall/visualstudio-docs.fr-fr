@@ -34,10 +34,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 00d3c90ce7e21ab4e9852ed937481103c351609b
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77271592"
 ---
 # <a name="annotating-locking-behavior"></a>Annotation du comportement de verrouillage
@@ -76,7 +76,7 @@ Pour éviter les bogues d'accès concurrentiel dans votre programme multithread,
 |`_Create_lock_level_(name)`|Instruction qui déclare le symbole `name` comme un niveau de verrou afin qu'il puisse être utilisé dans les annotations `_Has_Lock_level_` et `_Lock_level_order_`.|  
 |`_Has_lock_kind_(kind)`|Annote n’importe quel objet pour affiner les informations de type d’un objet de ressource. Parfois, un type commun est utilisé pour différents genres de ressources et le type surchargé n’est pas suffisant pour distinguer les exigences sémantiques des différentes ressources. Voici la liste des paramètres `kind` prédéfinis :<br /><br /> `_Lock_kind_mutex_`<br /> ID de type de verrou pour les mutex.<br /><br /> `_Lock_kind_event_`<br /> ID de type de verrou pour les événements.<br /><br /> `_Lock_kind_semaphore_`<br /> ID de type de verrou pour les sémaphores.<br /><br /> `_Lock_kind_spin_lock_`<br /> ID de type de verrou pour les verrous de rotation.<br /><br /> `_Lock_kind_critical_section_`<br /> ID de type de verrou pour les sections critiques.|  
 |`_Has_lock_level_(name)`|Annote un objet verrou, en lui donnant le niveau de verrou de `name`.|  
-|`_Lock_level_order_(name1, name2)`|Instruction qui donne l’ordre de verrouillage entre `name1` et `name2`.|  
+|`_Lock_level_order_(name1, name2)`|Instruction qui donne l’ordre de verrouillage entre `name1` et `name2` .|  
 |`_Post_same_lock_(expr1, expr2)`|Annote une fonction et indique qu’à l’état postérieur les deux verrous, `expr1` et `expr2`, sont traités comme s’ils étaient le même objet verrou.|  
 |`_Releases_exclusive_lock_(expr)`|Annote une fonction et indique qu'à l'état postérieur la fonction décrémente d'une unité le nombre de verrous exclusifs de l'objet verrou nommé par `expr`.|  
 |`_Releases_lock_(expr)`|Annote une fonction et indique qu’à l’état postérieur la fonction décrémente d’une unité le nombre de verrous de l’objet verrou nommé par `expr`.|  
@@ -104,16 +104,16 @@ Pour éviter les bogues d'accès concurrentiel dans votre programme multithread,
 |Annotation|Description|  
 |----------------|-----------------|  
 |`_Guarded_by_(expr)`|Annote une variable et indique qu’à chaque accès à la variable, le nombre de verrous de l’objet verrou nommé par `expr` est d’au moins un.|  
-|`_Interlocked_`|Annote une variable et équivaut à `_Guarded_by_(_Global_interlock_)`.|  
+|`_Interlocked_`|Annote une variable et équivaut à `_Guarded_by_(_Global_interlock_)` .|  
 |`_Interlocked_operand_`|Le paramètre de fonction annoté est l’opérande cible de l’une des différentes fonctions verrouillées.  Ces opérandes doivent avoir des propriétés supplémentaires spécifiques.|  
 |`_Write_guarded_by_(expr)`|Annote une variable et indique qu'à chaque modification de la variable, le nombre de verrous de l'objet verrou nommé par `expr` est d'au moins un.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Utilisation d’annotations SAL pour réduireC++ les erreurs C/code](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
- [Compréhension](../code-quality/understanding-sal.md) des  SAL  
+ [Utilisation d’annotations SAL pour réduire les défauts du code C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
+ [Comprendre SAL](../code-quality/understanding-sal.md)   
  [Annotation des paramètres de fonction et des valeurs de retour](../code-quality/annotating-function-parameters-and-return-values.md)   
- [Annoter le comportement](../code-quality/annotating-function-behavior.md) de la fonction   
- [Annoter des structs et des Classes](../code-quality/annotating-structs-and-classes.md)   
+ [Annotation du comportement d’une fonction](../code-quality/annotating-function-behavior.md)   
+ [Annoter des structs et des classes](../code-quality/annotating-structs-and-classes.md)   
  [Spécification du moment et de l’endroit où une annotation s’applique](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [Fonctions intrinsèques](../code-quality/intrinsic-functions.md)   
  [Meilleures pratiques et exemples](../code-quality/best-practices-and-examples-sal.md)   

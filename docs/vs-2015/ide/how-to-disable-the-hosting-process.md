@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 95dcd7da113bfe996d00e617b7c8e2f9b68864d7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667975"
 ---
 # <a name="how-to-disable-the-hosting-process"></a>Comment : désactiver le processus d'hébergement
@@ -28,7 +28,7 @@ Les appels à certaines API peuvent être affectés quand le processus hôte est
 
 1. Ouvrez un projet exécutable dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Les projets qui ne produisent pas de fichiers exécutables (par exemple, les projets de bibliothèque de classes ou de service) n’ont pas cette option.
 
-2. Dans le menu **Projet**, cliquez sur **Propriétés**.
+2. Dans le menu **Projet** , cliquez sur **Propriétés**.
 
 3. Cliquez sur l’onglet **Déboguer**.
 
@@ -45,4 +45,4 @@ Les appels à certaines API peuvent être affectés quand le processus hôte est
 - le débogage de confiance partielle n’est pas disponible.
 
 ## <a name="see-also"></a>Voir aussi
- [Les builds de débogage et](../debugger/debugging-and-the-hosting-process.md) de processus d’hébergement de processus d’hébergement [(vshost. exe)](../ide/hosting-process-vshost-exe.md) [lors du développement d’applications](https://msdn.microsoft.com/c9497d62-3b7b-4449-88e8-cf27acc9efe6)
+ [Le débogage et les](../debugger/debugging-and-the-hosting-process.md) [Builds](https://msdn.microsoft.com/c9497d62-3b7b-4449-88e8-cf27acc9efe6) de processus d’hébergement du processus d’hébergement [(vshost.exe)](../ide/hosting-process-vshost-exe.md) pendant le développement de l’application

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1cebf6f7621fb5fada37b8e4592efd429bdc85e6
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817396"
 ---
 # <a name="walkthrough-use-xml-editor-features"></a>Procédure pas à pas : utiliser les fonctionnalités de l’éditeur XML
@@ -34,7 +34,7 @@ Les étapes de cette procédure pas à pas expliquent la création d'un document
 
      La boîte de dialogue **schémas XSD** s’affiche.
 
-4. Cliquez sur **Ajouter**.
+4. Cliquez sur **Add**.
 
      La boîte de dialogue **ouvrir le schéma XSD** s’affiche.
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugPortPicker::DisplayPortPicker | Microsoft Docs
+title: IDebugPortPicker ::D isplayPortPicker | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,10 +12,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3dd9317a73800a3886a5a807e9e28b0c24b2301c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188377"
 ---
 # <a name="idebugportpickerdisplayportpicker"></a>IDebugPortPicker::DisplayPortPicker
@@ -41,13 +41,13 @@ public int DisplayPortPicker(
   
 #### <a name="parameters"></a>Paramètres  
  `hwndParentDialog`  
- [in] Handle de la boîte de dialogue parent.  
+ dans Handle de la boîte de dialogue parente.  
   
  `pbstrPortId`  
- [out] Chaîne d’identificateur de port.  
+ à Chaîne de l’identificateur de port.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. La valeur de retour `S_FALSE` (ou une valeur de retour de `S_OK` avec la `BSTR` définie sur `NULL`) indique que l’utilisateur a cliqué **Annuler**.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Une valeur de retour `S_FALSE` (ou une valeur de retour de `S_OK` avec la valeur `BSTR` `NULL` ) indique que l’utilisateur a cliqué sur **Annuler**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugPortPicker](../../../extensibility/debugger/reference/idebugportpicker.md)

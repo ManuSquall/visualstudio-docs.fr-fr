@@ -1,5 +1,5 @@
 ---
-title: Message de boîte de dialogue Options | Microsoft Docs
+title: Boîte de dialogue Options des messages | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,45 +13,45 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b5aaf79478ba84d87d3dc6d7868bdb13ee0168f3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198195"
 ---
 # <a name="message-options-dialog-box"></a>Options des messages, boîte de dialogue
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Utilisez cette boîte de dialogue pour sélectionner les messages sont répertoriés dans [vue Messages](../debugger/messages-view.md). Pour afficher cette boîte de dialogue, choisissez **Messages du journal** à partir de la **Spy** menu.  
+Utilisez cette boîte de dialogue pour sélectionner les messages qui sont répertoriés dans la [vue messages](../debugger/messages-view.md). Pour afficher cette boîte de dialogue, choisissez **journaux des messages** dans le menu **Espion** .  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Onglet Fenêtres de la boîte de dialogue Options des messages](../debugger/windows-tab-message-options-dialog-box.md)  
- Permet de sélectionner les types de messages à la liste. Inclut l’outil de recherche.  
+ Utilisé pour sélectionner les types de messages à répertorier. Comprend l’outil Finder.  
   
  [Onglet Messages de la boîte de dialogue Options des messages](../debugger/messages-tab-message-options-dialog-box.md)  
- Permet de sélectionner les types de message à afficher.  
+ Utilisé pour sélectionner les types de messages à afficher.  
   
  [Onglet Sortie de la boîte de dialogue Options des messages](../debugger/output-tab-message-options-dialog-box.md)  
- Permet de spécifier les données de message à afficher.  
+ Utilisé pour spécifier les données de message à afficher.  
   
-## <a name="related-sections"></a>Rubriques connexes  
- [Recherche d’un message, boîte de dialogue](../debugger/message-search-dialog-box.md)  
- Utilisé pour rechercher le nœud d’un message spécifique dans la vue de Message.  
+## <a name="related-sections"></a>Sections connexes  
+ [Boîte de dialogue Recherche d'un message](../debugger/message-search-dialog-box.md)  
+ Utilisé pour rechercher le nœud pour un message spécifique dans la vue message.  
   
- [Propriétés du message, boîte de dialogue](../debugger/message-properties-dialog-box.md)  
- Permet d’afficher les propriétés d’un message sélectionné dans la vue de Message.  
+ [Boîte de dialogue Propriétés du message](../debugger/message-properties-dialog-box.md)  
+ Permet d’afficher les propriétés d’un message sélectionné dans la vue message.  
   
- [Informations de référence sur Spy++](../debugger/spy-increment-reference.md)  
- Inclut des sections décrivant chaque Spy ++ menu et boîte de dialogue.  
+ [Référence Spy++](../debugger/spy-increment-reference.md)  
+ Comprend des sections décrivant chaque menu et boîte de dialogue Spy + +.  
   
- [Recherche d’un Message dans la vue Messages](../debugger/how-to-search-for-a-message-in-messages-view.md)  
- Explique comment rechercher un message spécifique dans la vue Messages.  
+ [Recherche d’un message dans la vue messages](../debugger/how-to-search-for-a-message-in-messages-view.md)  
+ Explique comment rechercher un message spécifique dans la vue messages.  
   
- [Vue Messages](../debugger/messages-view.md)  
+ [Affichage Messages](../debugger/messages-view.md)  
  Affiche le flux de message associé à une fenêtre, un processus ou un thread.  
   
  [Vues Spy++](../debugger/spy-increment-views.md)  
- Explique les arborescences Spy ++ de windows, les messages, les processus et les threads.  
+ Explique les vues de l’arborescence Spy + + des fenêtres, des messages, des processus et des threads.  
   
- [Utilisation de Spy++](../debugger/using-spy-increment.md)  
- Présente l’outil Spy ++ et explique comment il peut être utilisé.
+ [Utiliser Spy++](../debugger/using-spy-increment.md)  
+ Présente l’outil Spy + + et explique comment l’utiliser.

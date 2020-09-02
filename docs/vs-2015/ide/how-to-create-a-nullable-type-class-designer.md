@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 438f84a172c7e0a2d0dc957c578adc568a46495f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668156"
 ---
 # <a name="how-to-create-a-nullable-type-class-designer"></a>Guide pratique pour créer un type Nullable (Concepteur de classes)
@@ -24,7 +24,7 @@ ms.locfileid: "72668156"
 
 Certains types valeur n’ont pas, ou n’ont pas besoin d’avoir, systématiquement une valeur définie. Il s’agit d’une pratique courante dans les bases de données, où certains champs peuvent ne se voir assigner aucune valeur. Par exemple, vous pouvez assigner une valeur null à un champ de base de données, qu’il conservera jusqu’à ce qu’une valeur lui soit affectée.
 
- Un *type Nullable* est un type de valeur que vous étendez afin qu’il accepte la plage ordinaire de valeurs de ce type, ainsi qu’une valeur null. Par exemple, un type Nullable `Int32`, également appelé Nullable\<Int32>, peut se voir assigner n’importe quelle valeur entre -2147483648 et 2147483647, ou une valeur null. Un type Nullable\<bool> peut se voir assigner les valeurs `True`, `False` ou null (aucune valeur).
+ Un *type Nullable* est un type de valeur que vous étendez afin qu’il accepte la plage ordinaire de valeurs de ce type, ainsi qu’une valeur null. Par exemple, un Nullable de `Int32` , également désigné comme Nullable \<Int32> , peut se voir attribuer n’importe quelle valeur comprise entre-2147483648 et 2147483647, ou une valeur NULL peut lui être assignée. Une \<bool> valeur NULL peut être assignée aux valeurs `True` , `False` ou null (aucune valeur).
 
  Les types Nullable sont des instances de la structure <xref:System.Nullable%601>. Chaque instance d’un type Nullable a deux propriétés publiques en lecture seule, `HasValue` et `Value` :
 
@@ -82,4 +82,4 @@ Certains types valeur n’ont pas, ou n’ont pas besoin d’avoir, systématiqu
 5. Cliquez avec le bouton droit sur la forme de classe, puis cliquez sur **Détails de classe**. Vous pouvez afficher ou modifier les propriétés du nouveau type dans la fenêtre **Détails de classe**.
 
 ## <a name="see-also"></a>Voir aussi
- <xref:System.Nullable%601> [types Nullable](https://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6) [utilisant des types Nullable](https://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28) [Comment : identifier un type Nullable](https://msdn.microsoft.com/library/d4b67ee2-66e8-40c1-ae9d-545d32c71387) [types valeur Nullable](https://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6)
+ <xref:System.Nullable%601>[Types Nullable](https://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6) [utilisant des types Nullable](https://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28) [Comment : identifier un type Nullable](https://msdn.microsoft.com/library/d4b67ee2-66e8-40c1-ae9d-545d32c71387) [types valeur Nullable](https://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6)

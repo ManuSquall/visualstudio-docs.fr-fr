@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9a3b35e05108db879b365b9cafc39cacdf843397
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668554"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Utilisation de plusieurs langages spécifiques à un domaine dans une solution
@@ -27,7 +27,7 @@ Vous pouvez empaqueter plusieurs DSL comme partie intégrante d'une seule soluti
 
 1. Créez au moins deux solutions DSL, ainsi qu'un projet VSIX, et ajoutez tous les projets à une solution unique.
 
-   - Pour créer un projet VSIX : dans la boîte de dialogue **nouveau projet** , **sélectionnez C#visuel** , **extensibilité**, **projet VSIX**.
+   - Pour créer un projet VSIX : dans la boîte de dialogue **nouveau projet** , sélectionnez **Visual C#**, **extensibilité**, **projet VSIX**.
 
    - Créez au moins deux solutions DSL dans le répertoire de solutions VSIX.
 
@@ -41,13 +41,13 @@ Vous pouvez empaqueter plusieurs DSL comme partie intégrante d'une seule soluti
 
         `string dslProjectName = "Dsl2";`
 
-   - Dans la solution VSIX, ajoutez les projets \* DSL * et DslPackage.
+   - Dans la solution VSIX, ajoutez les projets DSL * et DslPackage \* .
 
         Il se peut que vous souhaitiez placer chaque paire dans son propre dossier de solution.
 
 2. Regroupez les manifestes VSIX des DSL :
 
-   1. Ouvrez _YourVsixProject_ **\Source.extension.manifest**.
+   1. Ouvrez _YourVsixProject_**\Source.extension.manifest**.
 
    2. Pour chaque DSL, choisissez **Ajouter du contenu** et ajoutez :
 
@@ -59,7 +59,7 @@ Vous pouvez empaqueter plusieurs DSL comme partie intégrante d'une seule soluti
 
 3. Générez la solution.
 
-   Le VSIX résultant installera les deux DSL. Vous pouvez les tester à l’aide de la touche F5 ou déployer _YourVsixProject_ **\bin\Debug \\ \*. vsix**.
+   Le VSIX résultant installera les deux DSL. Vous pouvez les tester à l’aide de la touche F5 ou déployer _YourVsixProject_**\bin\Debug \\ \* . vsix**.
 
 ## <a name="see-also"></a>Voir aussi
  [Intégration de modèles à l’aide de Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md) [Comment : ajouter un gestionnaire de glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md) [Personnalisation du comportement](../modeling/customizing-copy-behavior.md) de la copie

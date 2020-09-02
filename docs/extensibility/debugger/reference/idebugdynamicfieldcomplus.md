@@ -1,5 +1,5 @@
 ---
-title: IDebugDynamicFieldCOMPlus - France Microsoft Docs
+title: IDebugDynamicFieldCOMPlus | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 823057303655da59494680ce9f591b252e28f792
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731226"
 ---
 # <a name="idebugdynamicfieldcomplus"></a>IDebugDynamicFieldCOMPlus
-Représente un champ dynamique pour un objet [IDebugBinder.](../../../extensibility/debugger/reference/idebugbinder.md)
+Représente un champ dynamique pour un objet [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) .
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -27,16 +27,16 @@ IDebugDynamicFieldCOMPlus : IDebugDynamicField
 ```
 
 ## <a name="methods"></a>Méthodes
- En plus des méthodes de l’interface [IDebugDynamicField,](../../../extensibility/debugger/reference/idebugdynamicfield.md) cette interface met en œuvre les méthodes suivantes :
+ Outre les méthodes sur l’interface [IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md) , cette interface implémente les méthodes suivantes :
 
 |Méthode|Description|
 |------------|-----------------|
-|[GetTypeFromPrimitive](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus-gettypefromprimitive.md)|Récupère un type donné son type primitif.|
-|[GetTypeFromTypeDef](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus-gettypefromtypedef.md)|Récupère un type donné son jeton.|
+|[GetTypeFromPrimitive](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus-gettypefromprimitive.md)|Récupère un type en fonction de son type primitif.|
+|[GetTypeFromTypeDef](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus-gettypefromtypedef.md)|Récupère un type en fonction de son jeton.|
 
-## <a name="requirements"></a>Spécifications
- En-tête: Sh.h
+## <a name="requirements"></a>Configuration requise
+ En-tête : SH. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Espace de noms : Microsoft. VisualStudio. Debugger. Interop
 
- Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll

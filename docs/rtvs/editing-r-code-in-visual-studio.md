@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 7ecfd8f1cf50e94991ce2fd94ad94ac9815c92ca
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79302713"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315094"
 ---
 # <a name="edit-r-code-in-visual-studio"></a>Modifier le code R dans Visual Studio
 
@@ -27,7 +27,7 @@ En plus de colorer différentes parties de votre code, comme les chaînes, les c
 
 ![Couleurs de syntaxe pour le code R](media/editing-syntax-colors.png)
 
-Pour personnaliser les polices et certaines couleurs de surbrillance, sélectionnez la commande **Tools** > **Options,** naviguez vers **Environment** > **Fonts and Colors,** puis modifiez les paramètres pour les éléments liés à la R dans la boîte **d’éléments d’affichage** :
+Pour personnaliser les polices et certaines couleurs de surbrillance, sélectionnez la commande **Outils**  >  **options** , accédez à **Environment**  >  **polices et couleurs**de l’environnement, puis modifiez les paramètres pour les éléments liés à R dans la zone **afficher les éléments** :
 
 ![Polices et options de couleur pour le code R](media/editing-syntax-colors-options.png)
 
@@ -35,7 +35,7 @@ Visual Studio souligne également les erreurs de syntaxe dans l’éditeur :
 
 ![Mise en surbrillance des erreurs de syntaxe dans le code R](media/editing-syntax-error.png)
 
-Pour changer ce comportement, consultez le paramètre de**vérification Syntaxe** **avancée** > sous les options [de l’éditeur](#editor-options).
+Pour modifier ce comportement, consultez le **Advanced**paramètre de vérification de la  >  **syntaxe** avancée sous options de l' [éditeur](#editor-options).
 
 ## <a name="edit-and-organize-code"></a>Modifier et organiser le code
 
@@ -49,35 +49,35 @@ Quand vous tapez des appels à des fonctions qui ont plusieurs paramètres, souv
 
 Pour changer ce comportement, consultez les [options de l’éditeur](#editor-options) pour le groupe **Onglets**.
 
-Les régions de code réductibles vous permettent de masquer temporairement une partie de code dans l’éditeur. Visual Studio crée automatiquement différentes régions pour vous, comme pour les relevés multi-lignes, à moins que l’option**Outlining** > **d’exposé** du Code **d’exposé avancé** > ne soit définie.
+Les régions de code réductibles vous permettent de masquer temporairement une partie de code dans l’éditeur. Visual Studio crée plusieurs régions pour vous automatiquement, comme pour les instructions sur plusieurs lignes, sauf si l’option mode plan du code en mode plan **avancé**  >  **Outlining**  >  **Code outlining** est désactivée.
 
 Pour créer une région de votre choix, entourez le code souhaité avec des commentaires qui se terminent par `---`. Les contrôles +/- à gauche du code vous permettent ensuite de développer et réduire des régions :
 
 ![Création d’une zone réductible avec des commentaires](media/editing-collapsible-regions.gif)
 
-Par défaut, Visual Studio insère des espaces lorsque vous appuyez sur la touche **Tab.** Vous pouvez là encore modifier ce comportement, comme décrit dans [Options, Éditeur de texte, Onglets](../ide/reference/options-text-editor-all-languages.md).
+Par défaut, Visual Studio insère des espaces quand vous appuyez sur la touche **Tab** . Vous pouvez là encore modifier ce comportement, comme décrit dans [Options, Éditeur de texte, Onglets](../ide/reference/options-text-editor-all-languages.md).
 
 ## <a name="code-navigation"></a>Navigation dans le code
 
 La navigation dans le code vous permet d’accéder rapidement au code source de votre programme R et à ses bibliothèques. Ces fonctionnalités vous permettent de rester concentré sur votre travail, plutôt que d’avoir à rechercher le code manuellement.
 
-La fonctionnalité **Atteindre la définition** permet d’accéder rapidement à une définition de fonction ou affiche un mini-éditeur inline pour lire le code source d’une fonction de bibliothèque. Il suffit de cliquer à droite sur la fonction d’intérêt et de sélectionner **Go To Definition**, ou placez le curseur dans la fonction et appuyez sur **F12**.
+La fonctionnalité **Atteindre la définition** permet d’accéder rapidement à une définition de fonction ou affiche un mini-éditeur inline pour lire le code source d’une fonction de bibliothèque. Cliquez avec le bouton droit sur la fonction qui vous intéresse, sélectionnez **atteindre la définition**, ou placez le curseur dans la fonction et appuyez sur **F12**.
 
 Cette commande ouvre une nouvelle fenêtre d’éditeur contenant le code source de la fonction. Le curseur est positionné de façon pratique au début de la définition de fonction.
 
-**Peek Definition**, invoqué à partir du menu à clic droit ou **Alt**+**F12**, insère une région lisible et défilementable contenant le code source de la fonction ci-dessous l’appel de fonction :
+**Aperçu de définition**, appelée à partir du menu contextuel ou **ALT** + **F12**, insère une zone en lecture seule et défilante contenant le code source de la fonction au-dessous de l’appel de fonction :
 
 ![Animation de l’aperçu de la définition](media/editing-peek-definition.gif)
 
 ## <a name="send-code-to-the-interactive-window"></a>Envoyer du code dans la fenêtre interactive
 
-De nombreux développeurs aiment écrire du code dans l’éditeur, puis l’envoyer dans la [fenêtre interactive](interactive-repl-for-r-in-visual-studio.md) pour le tester immédiatement (il s’agit de la boucle REPL : read-evaluate-print loop). Appuyer **sur Ctrl**+**Enter** dans l’éditeur R envoie la ligne de code actuelle à la fenêtre interactive, puis place le curseur sur la ligne suivante. Avec **Ctrl**+**Enter**, alors, vous pouvez effectivement passer à travers votre code à partir de l’éditeur.
+De nombreux développeurs aiment écrire du code dans l’éditeur, puis l’envoyer dans la [fenêtre interactive](interactive-repl-for-r-in-visual-studio.md) pour le tester immédiatement (il s’agit de la boucle REPL : read-evaluate-print loop). Appuyez sur **CTRL** + **entrée** dans l’éditeur R pour envoyer la ligne de code active dans la fenêtre interactive, puis positionnez le curseur sur la ligne suivante. Avec la **touche Ctrl** + **entrée**, vous pouvez effectuer un pas à pas détaillé dans votre code à partir de l’éditeur.
 
-Vous pouvez également sélectionner le code et appuyer sur **Ctrl**+**Enter** pour appliquer toute cette sélection. Sinon, cliquez avec le bouton droit sur la sélection et sélectionnez **Exécuter en mode interactif**.
+Vous pouvez également sélectionner le code et appuyer sur **CTRL** + **entrée** pour appliquer cette sélection entière. Sinon, cliquez avec le bouton droit sur la sélection et sélectionnez **Exécuter en mode interactif**.
 
 ## <a name="format-code"></a>Code du format
 
-La mise en forme automatique de Visual Studio conserve la mise en forme du code que vous écrivez, ainsi que celle du code que vous collez dans l’éditeur, conformément à vos préférences. Vous pouvez également faire une sélection, clic droit, et sélectionner **La sélection de format** (**Ctrl**+**K**,**F**) pour appliquer ces préférences. Par exemple, si vous avez une définition de fonction tenant sur une seule ligne :
+La mise en forme automatique de Visual Studio conserve la mise en forme du code que vous écrivez, ainsi que celle du code que vous collez dans l’éditeur, conformément à vos préférences. Vous pouvez également effectuer une sélection, cliquer avec le bouton droit et sélectionner **mettre la sélection en forme** (**CTRL** + **K**,**F**) pour appliquer ces préférences. Par exemple, si vous avez une définition de fonction tenant sur une seule ligne :
 
 ```R
 f<-function  (a){  return(a + 1) }
@@ -89,11 +89,11 @@ L’application de la mise en forme la transforme en ce qui suit :
 f <- function(a) { return(a + 1) }
 ```
 
-Pour reformer l’ensemble du fichier de code, sélectionnez **Edit** > **Advanced** > **Format Document** (**Ctrl**+**E**,**D**).
+Pour reformater l’intégralité du fichier de code, sélectionnez **modifier**le  >  **Advanced**  >  **document au format** avancé (**CTRL** + **E**,**D**).
 
-La mise en forme automatique est une opération distincte qui peut être annulée. Par exemple, si vous collez du code dans l’éditeur et que vous le formatez s’applique, la+sélection **d’Edit** > **Undo** ou le pressage **de Ctrl****Z** une fois inverse le formatage ; un deuxième **Annuler** inverse la pâte elle-même.
+La mise en forme automatique est une opération distincte qui peut être annulée. Par exemple, si vous collez du code dans l’éditeur et que la mise en forme s’applique, la sélection de l’option **modifier**  >  l'**annulation** ou en appuyant sur **CTRL** + **Z** annule la mise en forme. une deuxième **annulation** inverse le collage lui-même.
 
-Les options de formatage (y compris l’arrêt du formatage) sont définies par **des options d’outils** > **Options** sur l’onglet**R** > **Advanced** **de l’éditeur** > de texte. Vous pouvez vous rendre directement sur cette page en utilisant la commande**d’options** **R Tools** > Editor ou en cliquant à droite dans l’éditeur et en sélectionnant les **options de formatage**. Consultez la section des [options de l’éditeur](#editor-options) pour plus d’informations.
+Les options de mise en forme (notamment la désactivation de la **Tools**mise en forme) sont définies via  >  les**options** outils de l’onglet **éditeur de texte**  >  **R**  >  **avancé** . Vous pouvez accéder directement à cette page à l’aide de la commande Options de l’éditeur d' **Outils R**  >  **Editor options** ou en cliquant avec le bouton droit dans l’éditeur et en sélectionnant **options de mise en forme**. Consultez la section des [options de l’éditeur](#editor-options) pour plus d’informations.
 
 ## <a name="inserting-roxygen-comments"></a>Insertion de commentaires Roxygen
 
@@ -103,7 +103,7 @@ RTVS fournit un raccourci pour la génération de commentaires [Roxygen](https:/
 
 ## <a name="editor-options"></a>Options de l’éditeur
 
-Les options spécifiques à l’éditeur sont définies par la commande **Tools** > **Options,** naviguant vers **Text Editor** > **R**, ou utilisez la commande de raccourci R **Tools** > **Editor Options**.
+Les options spécifiques à l’éditeur sont définies à l’aide de la commande **Outils**  >  **options** , en accédant à l' **éditeur de texte**  >  **r**, ou à l’aide des options de l’éditeur de commandes **r outils**  >  **Editor**.
 
 Les options des onglets **Général**, **Barres de défilement** et **Onglets** ne sont pas propres à R, mais sont plutôt des paramètres généraux de Visual Studio disponibles pour tous les langages, mais appliqués langage par langage. Pour plus de détails, consultez les articles suivants :
 
@@ -111,23 +111,23 @@ Les options des onglets **Général**, **Barres de défilement** et **Onglets** 
 - [Suivre votre code en personnalisant la barre de défilement](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)
 - [Options, Éditeur de texte, Onglets](../ide/reference/options-text-editor-all-languages-tabs.md)
 
-Les options sur l’onglet **R** > **Advanced** sont spécifiques à RTVS :
+Les options de l’onglet **R**  >  **avancé** sont spécifiques à RTVS :
 
-| Groupe | Option | Default | Description |
+| Grouper | Option | Default | Description |
 | --- | --- | --- | --- |
-| Mise en forme | Mise en forme automatique | Il en va | Remet en forme le code à mesure que vous tapez. N’affecte pas les commandes **Mettre la sélection en forme** ou **Mettre le document en forme**. |
-| | Accolades développées | Off | Place une { ouvrante sur une nouvelle ligne. |
-| | Mettre en forme lors du collage | Il en va | Applique la mise en forme lors du collage. |
-| | Mettre en forme la portée après } | Il en va | Met en forme la portée après avoir tapé une } fermante. |
-| | Espace après une virgule | Il en va | Place un espace après les virgules. |
-| | Espace après un mot clé | Il en va | Insère un espace après les mots clés comme `if`, `while` et `repeat`. |
-| | Espace avant { | Il en va | Place un espace avant une { ouvrante. |
-| | Espace autour de = | Il en va | Place des espaces autour d’un signe égal. |
-| IntelliSense | Valider après la touche Entrée | Off | Engage la sélection d’auto-achèvement lorsque **Enter** est pressé. |
-| | Valider après la touche Espace | Off | Engage la sélection d’auto-achèvement lorsque **l’espace** est pressé.|
-| | Liste de saisie semi-automatique après le premier caractère | Il en va | Affiche la liste de saisie semi-automatique quand vous tapez les premiers caractères. Lorsqu’il est éteint, une liste d’achèvement est affichée avec **Edit** > **IntelliSense** > **List Members** (**Ctrl**+**J**). |
-| | Liste d’achèvement sur la clé **de l’onglet** | Off | Invoque la liste d’achèvement en tapant un ou plusieurs caractères et en appuyant sur **Tab**. |
-| | Correspondance partielle de noms d’argument de types | Off | Quand vous tapez des noms d’argument dans un appel de fonction, l’aide de la signature affiche une description de l’argument qui correspond le mieux. |
-| Fenêtre interactive | Vérification syntaxique dans la console R | Off | Applique la vérification syntaxique dans la fenêtre interactive. La vérification syntaxique peut ne pas fonctionner correctement avec les instructions multilignes. |
-| Mode Plan | Plan du code | Il en va | Crée automatiquement des régions réductibles pour des zones comme les instructions multilignes. |
-| Vérification syntaxique | Afficher les erreurs de syntaxe | Il en va | Active la vérification syntaxique automatique du code. |
+| Mise en forme | Mise en forme automatique | Activé | Remet en forme le code à mesure que vous tapez. N’affecte pas les commandes **Mettre la sélection en forme** ou **Mettre le document en forme**. |
+| | Accolades développées | Désactivé | Place une { ouvrante sur une nouvelle ligne. |
+| | Mettre en forme lors du collage | Activé | Applique la mise en forme lors du collage. |
+| | Mettre en forme la portée après } | Activé | Met en forme la portée après avoir tapé une } fermante. |
+| | Espace après une virgule | Activé | Place un espace après les virgules. |
+| | Espace après un mot clé | Activé | Insère un espace après les mots clés comme `if`, `while` et `repeat`. |
+| | Espace avant { | Activé | Place un espace avant une { ouvrante. |
+| | Espace autour de = | Activé | Place des espaces autour d’un signe égal. |
+| IntelliSense | Valider après la touche Entrée | Désactivé | Valide la sélection de saisie semi-automatique quand vous appuyez sur **entrée** . |
+| | Valider après la touche Espace | Désactivé | Valide la sélection de saisie semi-automatique lorsque l' **espace** est enfoncé.|
+| | Liste de saisie semi-automatique après le premier caractère | Activé | Affiche la liste de saisie semi-automatique quand vous tapez les premiers caractères. Lorsqu’elle est désactivée, une liste de saisie semi-automatique s’affiche avec **modifier**  >  **IntelliSense**  >  **les membres** de la liste IntelliSense (**CTRL** + **J**). |
+| | Liste de saisie semi-automatique sur la touche **Tab** | Désactivé | Appelle la liste de saisie semi-automatique en tapant un ou plusieurs caractères et en appuyant sur la touche **Tab**. |
+| | Correspondance partielle de noms d’argument de types | Désactivé | Quand vous tapez des noms d’argument dans un appel de fonction, l’aide de la signature affiche une description de l’argument qui correspond le mieux. |
+| Fenêtre interactive | Vérification syntaxique dans la console R | Désactivé | Applique la vérification syntaxique dans la fenêtre interactive. La vérification syntaxique peut ne pas fonctionner correctement avec les instructions multilignes. |
+| mode Plan | Plan du code | Activé | Crée automatiquement des régions réductibles pour des zones comme les instructions multilignes. |
+| Vérification syntaxique | Afficher les erreurs de syntaxe | Activé | Active la vérification syntaxique automatique du code. |

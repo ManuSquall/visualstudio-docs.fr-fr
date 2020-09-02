@@ -18,10 +18,10 @@ ms.author: corob
 ms.workload:
 - multiple
 ms.openlocfilehash: bfa60ff0f7e4060f5725fe54bd5950d858b86a22
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77272396"
 ---
 # <a name="getoutofdateitems-task"></a>Tâche GetOutOfDateItems
@@ -35,14 +35,14 @@ Le tableau suivant décrit les paramètres de la tâche **GetOutOfDateItems**.
 |Paramètre|Description|
 |---------------|-----------------|
 |**CheckForInterdependencies**|Paramètre **booléen** facultatif.|
-|**CommandMetadataName**|Paramètre **de chaîne** facultatif.|
-|**DependenciesMetadataName**|Paramètre **de chaîne** facultatif.|
+|**CommandMetadataName**|Paramètre de **chaîne** facultatif.|
+|**DependenciesMetadataName**|Paramètre de **chaîne** facultatif.|
 |**HasInterdependencies**|Paramètre de sortie **booléen** facultatif.|
 |**OutOfDateSources**|Paramètre de sortie **ITaskItem[]** facultatif.|
-|**OutputsMetadataName**|Paramètre **de chaîne** requis.|
-|**récentes**|Paramètre **ITaskItem[]** en option.|
-|**TLogDirectory**|Paramètre **de chaîne** requis.|
-|**TLogNamePrefix**|Paramètre **de chaîne** requis.|
+|**OutputsMetadataName**|Paramètre de **chaîne** obligatoire.|
+|**Sources**|Paramètre **ITaskItem []** facultatif.|
+|**TLogDirectory**|Paramètre de **chaîne** obligatoire.|
+|**TLogNamePrefix**|Paramètre de **chaîne** obligatoire.|
 
 ## <a name="see-also"></a>Voir aussi
 

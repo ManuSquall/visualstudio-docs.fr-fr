@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::Attach | Microsoft Docs
+title: 'IDebugProcess2 :: Attach | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4d4664f164675c445510d8976f33577684dbd1d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188100"
 ---
 # <a name="idebugprocess2attach"></a>IDebugProcess2::Attach
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Attache le Gestionnaire de session de débogage (SDM) au processus.  
+Joint le gestionnaire de débogage de session (SDM) au processus.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -46,30 +46,30 @@ int Attach( 
   
 #### <a name="parameters"></a>Paramètres  
  `pCallback`  
- [in] Un [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) objet qui est utilisé pour la notification d’événement de débogage.  
+ dans Objet [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) utilisé pour la notification d’événements de débogage.  
   
  `rgguidSpecificEngines`  
- [in] Tableau de GUID des moteurs de débogage à utiliser pour déboguer des programmes en cours d’exécution dans le processus. Ce paramètre peut être une valeur null. Pour plus d’informations, consultez la section Notes.  
+ dans Tableau de GUID des moteurs de débogage à utiliser pour déboguer les programmes en cours d’exécution dans le processus. Ce paramètre peut être une valeur null. Pour plus de détails, consultez la section Notes.  
   
  `celtSpecificEngines`  
- [in] Le nombre de débogage moteurs dans le `rgguidSpecificEngines` tableau et la taille de la `rghrEngineAttach` tableau.  
+ dans Le nombre de moteurs de débogage dans le `rgguidSpecificEngines` tableau et la taille du `rghrEngineAttach` tableau.  
   
  `rghrEngineAttach`  
- [in, out] Un tableau des codes HRESULT retourné par les moteurs de débogage. La taille de ce tableau est spécifiée dans le `celtSpecificEngines` paramètre. Chaque code est généralement `S_OK` ou `S_ATTACH_DEFERRED`. Ce dernier indique que l’Allemagne est actuellement attaché à aucun programme.  
+ [in, out] Tableau de codes HRESULT retournés par les moteurs de débogage. La taille de ce tableau est spécifiée dans le `celtSpecificEngines` paramètre. Chaque code est généralement `S_OK` ou `S_ATTACH_DEFERRED` . Ce dernier indique que le DE est actuellement attaché à aucun programme.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Le tableau suivant présente les autres valeurs possibles.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Le tableau suivant présente d’autres valeurs possibles.  
   
 |Valeur|Description|  
 |-----------|-----------------|  
 |`E_ATTACH_DEBUGGER_ALREADY_ATTACHED`|Le processus spécifié est déjà attaché au débogueur.|  
-|`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|Une violation de sécurité s’est produite lors de la procédure d’attachement.|  
+|`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|Une violation de sécurité s’est produite pendant la procédure d’attachement.|  
 |`E_ATTACH_CANNOT_ATTACH_TO_DESKTOP`|Un processus de bureau ne peut pas être attaché au débogueur.|  
   
 ## <a name="remarks"></a>Notes  
- Attachement à un processus attache le SDM sur tous les programmes en cours d’exécution dans ce processus qui peuvent être débogué par les moteurs de débogage (dé) spécifiés dans le `rgguidSpecificEngines` tableau. Définir le `rgguidSpecificEngines` une valeur null au paramètre de valeur ou inclure `GUID_NULL` dans le tableau à attacher à tous les programmes dans le processus.  
+ L’attachement à un processus joint le SDM à tous les programmes qui s’exécutent dans ce processus et qui peuvent être débogués par les moteurs DE débogage (DE) spécifiés dans le `rgguidSpecificEngines` tableau. Définissez le `rgguidSpecificEngines` paramètre sur une valeur null ou incluez-le `GUID_NULL` dans le tableau à attacher à tous les programmes dans le processus.  
   
- Tous les événements de débogage qui se produisent dans le processus sont envoyés à la donnée [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) objet. Cela `IDebugEventCallback2` objet est fourni lorsque le SDM appelle cette méthode.  
+ Tous les événements de débogage qui se produisent dans le processus sont envoyés à l’objet [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) donné. Cet `IDebugEventCallback2` objet est fourni lorsque le SDM appelle cette méthode.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)   

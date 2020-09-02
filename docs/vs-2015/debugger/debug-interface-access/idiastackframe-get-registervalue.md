@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3b8038acf2aef8c34d07e7f21543a597ad7b96fa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62572983"
 ---
-# <a name="idiastackframegetregistervalue"></a>IDiaStackFrame::get_registerValue
+# <a name="idiastackframeget_registervalue"></a>IDiaStackFrame::get_registerValue
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Récupère la valeur d’un registre spécifié, tel que stocké dans le frame de pile.  
+Récupère la valeur d’un registre spécifié, telle qu’elle est stockée dans le frame de pile.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -36,13 +36,13 @@ HRESULT get_registerValue(
   
 #### <a name="parameters"></a>Paramètres  
  `registerIndex`  
- [in] Parmi les [CV_HREG_e (énumération)](../../debugger/debug-interface-access/cv-hreg-e.md) valeurs d’énumération.  
+ dans L’une des CV_HREG_e valeurs d’énumération d' [énumération](../../debugger/debug-interface-access/cv-hreg-e.md) .  
   
  `pRetVal`  
- [out] Valeur stockée dans le Registre.  
+ à Valeur stockée dans le registre.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne le code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` ; sinon, retourne le code d’erreur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)   

@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 694f10fb0af440513331aa6e76dbf9a59a16d340
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668505"
 ---
 # <a name="open-a-uml-model-by-using-the-visual-studio-api"></a>Ouvrir un modèle UML à l'aide de l'API Visual Studio
@@ -29,12 +29,12 @@ Vous pouvez aussi ouvrir des modèles et des diagrammes dans l'interface utilisa
 
 - Vous pouvez ouvrir un modèle en mode lecture seule. Pour plus d’informations, consultez [lire un modèle UML dans le code de programme](../modeling/read-a-uml-model-in-program-code.md).
 
-## <a name="Showing"></a>Ouverture de modèles et de diagrammes dans Visual Studio
+## <a name="opening-models-and-diagrams-in-visual-studio"></a><a name="Showing"></a> Ouverture de modèles et de diagrammes dans Visual Studio
  Pour ouvrir un modèle dans l'interface utilisateur, utilisez l'API Visual Studio standard `EnvDTE.DTE`. Il existe deux casts utiles que vous pouvez effectuer sur les éléments de projet de modélisation :
 
-- `EnvDTE.Project` peut être casté vers et depuis `IModelingProject`, si le projet est un projet de modélisation et s'il est chargé dans l'AppDomain actuel.
+- `EnvDTE.Project` peut être casté vers et à partir de `IModelingProject` , si le projet est un projet de modélisation et si le projet est chargé dans l’AppDomain actuel.
 
-- `EnvDTE.ProjectItem` peut être casté vers et depuis `IDiagramContext`, si l'élément est un diagramme UML.
+- `EnvDTE.ProjectItem` peut être casté vers et à partir de `IDiagramContext` , si l’élément est un diagramme UML.
 
   Pour l'exemple suivant, votre projet doit importer ces références :
 

@@ -1,5 +1,5 @@
 ---
-title: Arborescence de commandes de Menu | Microsoft Docs
+title: Commandes du menu arborescence | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,25 +12,25 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 66ac968f21ef28916f038f8abf54331bea2b972f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68144565"
 ---
 # <a name="tree-menu-commands"></a>commandes du menu Arborescence
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Le **arborescence** menu fournit des commandes pour développer ou réduire des vues.  
+Le menu **arborescence** fournit des commandes pour développer ou réduire des vues.  
   
  **Développer un niveau**  
- Développe l’élément actuellement sélectionné dans une vue système en affichant un niveau en dessous d’elle.  
+ Développe l’élément actuellement sélectionné dans une vue système en affichant un niveau en dessous.  
   
- **Développez la branche**  
- Développe tous les niveaux en dessous de l’élément actuellement sélectionné.  
+ **Développer la branche**  
+ Développe tous les niveaux sous l’élément actuellement sélectionné.  
   
  **Développer tout**  
- Se développe et affiche tous les niveaux dans une vue système.  
+ Développe et affiche tous les niveaux dans une vue système.  
   
- **Réduire**  
- Réduit tous les niveaux en dessous de l’élément actuellement sélectionné.
+ **Collapse**  
+ Réduit tous les niveaux sous l’élément actuellement sélectionné.

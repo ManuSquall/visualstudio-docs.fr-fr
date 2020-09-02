@@ -11,10 +11,10 @@ caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 789d9f97958b9662db5f792f28a75c0f6b46a8c8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188149"
 ---
 # <a name="idebugportsupplierlocale2"></a>IDebugPortSupplierLocale2
@@ -28,7 +28,7 @@ Fournit la prise en charge des paramètres régionaux pour un fournisseur de por
 IDebugPortSupplierLocale2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs  
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
  Un fournisseur de port personnalisé implémente cette interface pour définir les paramètres régionaux.  
   
 ## <a name="methods"></a>Méthodes  
@@ -39,11 +39,11 @@ IDebugPortSupplierLocale2 : IUnknown
 |[SetLocale](../../../extensibility/debugger/reference/idebugportsupplierlocale2-setlocale.md)|Définit les paramètres régionaux pour le fournisseur de port.|  
   
 ## <a name="requirements"></a>Configuration requise  
- En-tête : Portpriv.h  
+ En-tête : Portpriv. h  
   
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft. VisualStudio. Debugger. Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interfaces principales](../../../extensibility/debugger/reference/core-interfaces.md)   

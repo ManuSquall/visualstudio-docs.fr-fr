@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b5f55de910eb77ec7ccbd205b78d5c95039e6b39
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651872"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Guide pratique pour localiser et organiser les modèles de projet et d'élément
@@ -40,7 +40,7 @@ Les fichiers modèles doivent être placés à un emplacement que Visual Studio 
 
   Par exemple, le répertoire suivant contient les modèles de projet [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour l'anglais :
 
-  \\*Répertoire_Installation_Visual_Studio*\Common7\IDE\ItemTemplates\VisualBasic\1033\
+  C : \\ *VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\VisualBasic\1033\
 
 ### <a name="custom-templates"></a>Modèles personnalisés
  Par défaut, les modèles personnalisés se trouvent dans :
@@ -49,7 +49,7 @@ Les fichiers modèles doivent être placés à un emplacement que Visual Studio 
 
 - \Mes documents\Visual Studio *Version*\Templates\ItemTemplates\\*Langage*\
 
-  Par exemple, le répertoire suivant contient les modèles de projet [!INCLUDE[csprcs](../includes/csprcs-md.md)] personnalisés :
+  Par exemple, le répertoire suivant contient les modèles de projet [!INCLUDE[csprcs](../includes/csprcs-md.md)] personnalisés : 
 
   C:\Documents and Settings\NomUtilisateur\Mes documents\\<version de Visual Studio\>\Templates\ProjectTemplates\Visual C#\
 
@@ -68,7 +68,7 @@ Les fichiers modèles doivent être placés à un emplacement que Visual Studio 
 
 ##### <a name="to-create-new-installed-project-template-categories"></a>Pour créer des catégories de modèles de projet installés
 
-1. Créez un dossier dans le dossier du langage du répertoire des modèles installés. Par exemple, pour créer une catégorie Office pour les modèles de projet [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vous pourriez créer le répertoire suivant :
+1. Créez un dossier dans le dossier du langage du répertoire des modèles installés. Par exemple, pour créer une catégorie Office pour les modèles de projet [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vous pourriez créer le répertoire suivant : 
 
     \\*Répertoire_Installation_Visual_Studio*\Common7\IDE\ProjectTemplates\VisualBasic\1033\Office\
 
@@ -82,7 +82,7 @@ Les fichiers modèles doivent être placés à un emplacement que Visual Studio 
 
 6. Exécutez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
-7. Dans le menu **Fichier** , cliquez sur **Nouveau**, puis sur **Projet**.
+7. Dans le menu **Fichier**, cliquez sur **Nouveau**, puis sur **Projet**.
 
 8. Vérifiez que la catégorie Office apparaît dans la boîte de dialogue **Nouveau projet**, dans le volet **Types de projets**, sous [!INCLUDE[vbprvb](../includes/vbprvb-md.md)].
 
@@ -90,7 +90,7 @@ Les fichiers modèles doivent être placés à un emplacement que Visual Studio 
 
 ##### <a name="to-create-new-installed-item-template-categories"></a>Pour créer des catégories de modèles d'élément installés
 
-1. Créez un dossier dans le dossier du langage du répertoire des modèles installés. Par exemple, pour créer une catégorie Web pour les modèles d'élément [!INCLUDE[csprcs](../includes/csprcs-md.md)], vous pourriez créer le répertoire suivant :
+1. Créez un dossier dans le dossier du langage du répertoire des modèles installés. Par exemple, pour créer une catégorie Web pour les modèles d'élément [!INCLUDE[csprcs](../includes/csprcs-md.md)], vous pourriez créer le répertoire suivant : 
 
      \\*Répertoire_Installation_Visual_Studio*\Common7\IDE\ItemTemplates\CSharp\1033\Web\
 
@@ -115,13 +115,13 @@ Les fichiers modèles doivent être placés à un emplacement que Visual Studio 
 
 ##### <a name="to-create-new-custom-project-template-categories"></a>Pour créer des catégories de modèles de projet personnalisés
 
-1. Créez un dossier dans le dossier du langage du répertoire des modèles de projet personnalisés. Par exemple, pour créer une catégorie HelloWorld pour les modèles [!INCLUDE[csprcs](../includes/csprcs-md.md)], vous pourriez créer le répertoire suivant :
+1. Créez un dossier dans le dossier du langage du répertoire des modèles de projet personnalisés. Par exemple, pour créer une catégorie HelloWorld pour les modèles [!INCLUDE[csprcs](../includes/csprcs-md.md)], vous pourriez créer le répertoire suivant : 
 
     \Mes documents\\<version de Visual Studio\>\Templates\ProjectTemplates\CSharp\HelloWorld\
 
 2. Placez tous les modèles de cette catégorie dans le nouveau dossier.
 
-3. Dans le menu **Fichier** , cliquez sur **Nouveau**, puis sur **Projet**.
+3. Dans le menu **Fichier**, cliquez sur **Nouveau**, puis sur **Projet**.
 
 4. Vérifiez que la catégorie HelloWorld apparaît dans la boîte de dialogue **Nouveau projet** dans le volet **Types de projets**, sous [!INCLUDE[csprcs](../includes/csprcs-md.md)].
 
@@ -129,7 +129,7 @@ Les fichiers modèles doivent être placés à un emplacement que Visual Studio 
 
 ##### <a name="to-create-new-custom-item-template-categories"></a>Pour créer des catégories de modèles d'élément personnalisés
 
-1. Créez un dossier dans le dossier du langage du répertoire des modèles d'élément personnalisés. Par exemple, pour créer une catégorie HelloWorld pour les modèles [!INCLUDE[csprcs](../includes/csprcs-md.md)], vous pourriez créer le répertoire suivant :
+1. Créez un dossier dans le dossier du langage du répertoire des modèles d'élément personnalisés. Par exemple, pour créer une catégorie HelloWorld pour les modèles [!INCLUDE[csprcs](../includes/csprcs-md.md)], vous pourriez créer le répertoire suivant : 
 
      \Mes documents\\<version de Visual Studio\>\Templates\ItemTemplates\CSharp\HelloWorld\
 
@@ -164,7 +164,7 @@ Les fichiers modèles doivent être placés à un emplacement que Visual Studio 
     </TemplateData>
     ```
 
-5. Enregistrez et fermez le fichier .vstemplate.
+5. Enregistrez et fermez le fichier .vstemplate. 
 
 6. Sélectionnez les fichiers présents dans votre modèle, cliquez avec le bouton droit sur la sélection, cliquez sur **Envoyer vers**, puis sur **Dossier compressé**. Les fichiers sont compressés dans un fichier .zip.
 

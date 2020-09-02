@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d5f5d8bb92b80942a95528a0b2e4c7e64bbfafc8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668140"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Guide pratique pour créer et modifier des configurations
@@ -121,7 +121,7 @@ Vous pouvez créer plusieurs configurations de build pour une solution. Par exem
 
 2. Dans la liste déroulante **Configuration de la solution active**, sélectionnez la configuration de votre choix.
 
-3. Dans le volet **Contextes des projets**, pour chaque projet, sélectionnez la **configuration** et la **plateforme** de votre choix, puis choisissez de **générer** ou de **déployer**.
+3. Dans le volet **contextes des projets** , pour chaque projet, sélectionnez la **configuration** et la **plateforme** de votre choix, puis indiquez si vous souhaitez la **générer** et si vous voulez la **déployer** .
 
 ## <a name="see-also"></a>Voir aussi
  [Compréhension des configurations de build](../ide/understanding-build-configurations.md) [génération et nettoyage des projets et des solutions dans Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md) [bec Comment : modifier les propriétés et les paramètres de configuration](https://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67) d’un projet

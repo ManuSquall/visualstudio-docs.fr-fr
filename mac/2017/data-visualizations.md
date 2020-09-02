@@ -7,10 +7,10 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
 ms.openlocfilehash: 3355b81406d2b510dc13604a026bcd014bf9dbcb
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74984758"
 ---
 # <a name="data-visualizations"></a>Visualisations de données
@@ -60,7 +60,7 @@ Le visualiseur affiche un `NSBezierPath` :
 
 ![Visualisation d’une courbe de Bézier](media/data-visualizations-image16.png)
 
-## <a name="string"></a>String
+## <a name="string"></a>Chaîne
 
 Une chaîne de moins de 100 caractères s’affiche en totalité, sans aperçu. Les chaînes plus longues s’affichent en totalité dans l’aperçu. Les chaînes sont modifiables, et le visualiseur comporte un bouton Modifier, qui permet la modification de la valeur de la chaîne dans l’aperçu ou dans l’éditeur de valeur de chaîne, montré ci-dessous :
 
@@ -90,9 +90,9 @@ Voici quelques autres types qui ont leur propre visualiseur :
 
 * **Primitives**
   * Ceci affiche la valeur brute du type primitif.
-* **Enum**
+* **Énumération**
   * Ceci affiche la valeur du champ sans le qualificateur de type enum.
-* **Tuple**
+* **Passent**
   * Affiché dans le format (,)
 * **Null**
   * Affiche la valeur « null ».
