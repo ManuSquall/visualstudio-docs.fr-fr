@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 52d978472f057359cb2b1e0375f2d7ba524d1925
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62423839"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Inspecter les propriétés XAML en phase de débogage
@@ -28,11 +28,11 @@ Vous pouvez obtenir une vue en temps réel de votre code XAML en cours d’exéc
   
  Vous pouvez utiliser ces outils dans les configurations suivantes :  
   
-|Type d'application|Système d'exploitation et outils|  
+|Type d’application|Système d'exploitation et outils|  
 |-----------------|--------------------------------|  
 |Applications Windows Presentation Foundation (4.0 et versions ultérieures).|Windows 7 et versions ultérieures|  
-|Applications Windows Store et Windows Phone 8.1|Windows 10 et versions ultérieures, avec le [Windows 10 SDK](https://dev.windows.com/downloads/windows-10-sdk)|  
-|Applications pour la plateforme Windows universelle|Windows 10 et versions ultérieures, avec le [Windows 10 SDK](https://dev.windows.com/downloads/windows-10-sdk)|  
+|Applications Windows Store et Windows Phone 8.1|Windows 10 et versions ultérieures, avec le [Kit de développement logiciel (SDK) Windows 10](https://dev.windows.com/downloads/windows-10-sdk)|  
+|Applications Windows universelles|Windows 10 et versions ultérieures, avec le [Kit de développement logiciel (SDK) Windows 10](https://dev.windows.com/downloads/windows-10-sdk)|  
   
 ## <a name="looking-at-elements-in-the-live-visual-tree"></a>Examen des éléments dans l'arborescence d'éléments visuels dynamique  
  Commençons par une application WPF très simple qui présente une vue Liste et un bouton. Chaque fois que vous cliquez sur le bouton, un autre élément est ajouté à la liste. Les éléments avec un numéro pair sont en gris, tandis que les éléments avec un numéro impair sont en jaune.  
@@ -78,19 +78,19 @@ private void button_Click(object sender, RoutedEventArgs e)
   
  Générez le projet et commencez le débogage. (La configuration de build doit être Debug, et non pas Release. Pour plus d’informations sur les configurations de build, consultez [Présentation des configurations de build](../ide/understanding-build-configurations.md).)  
   
- Quand la fenêtre apparaît, cliquez sur le bouton **Ajouter un élément** deux fois. Vous devez voir quelque chose de similaire à :  
+ Quand la fenêtre apparaît, cliquez sur le bouton **Ajouter un élément** deux fois. Un résultat semblable à celui-ci doit s’afficher :  
   
- ![Fenêtre principale de l’application](../debugger/media/livevisualtree-app.png "LiveVIsualTree-App")  
+ ![Fenêtre principale de l'application](../debugger/media/livevisualtree-app.png "LiveVIsualTree-application")  
   
- Ouvrez maintenant le **Live Visual Tree** fenêtre (**déboguer / Windows / arborescence d’éléments visuels en direct**, ou recherchez-la sur le côté gauche de l’IDE). Faites-la glisser hors de sa position d’ancrage afin de la positionner à côté de la fenêtre **Propriétés dynamiques**. Dans la fenêtre **Arborescence d’éléments visuels en direct**, développez le nœud **ContentPresenter**. Il doit contenir des nœuds pour le bouton et la zone de liste. Développez la zone de liste (puis **ScrollContentPresenter** et **ItemsPresenter**) pour rechercher les éléments de zone de liste. La fenêtre doit ressembler à ceci :  
+ À présent, ouvrez la fenêtre arborescence d’éléments **visuels dynamique** (**Déboguer/fenêtres/arborescence d’éléments visuels dynamique**ou recherchez-la sur le côté gauche de l’IDE). Faites-la glisser hors de sa position d’ancrage afin de la positionner à côté de la fenêtre **Propriétés dynamiques**. Dans la fenêtre **Arborescence d’éléments visuels en direct**, développez le nœud **ContentPresenter**. Il doit contenir des nœuds pour le bouton et la zone de liste. Développez la zone de liste (puis **ScrollContentPresenter** et **ItemsPresenter**) pour rechercher les éléments de zone de liste. La fenêtre doit ressembler à ceci :  
   
- ![ListBoxItems dans l’arborescence d’éléments visuels en direct](../debugger/media/livevisualtree-listboxitems.png "LiveVisualTree-ListBoxItems")  
+ ![ListBoxItems dans l'arborescence d'éléments visuels dynamique](../debugger/media/livevisualtree-listboxitems.png "LiveVisualTree-ListBoxItem")  
   
  Revenez à la fenêtre d'application et ajoutez quelques éléments. Vous devriez voir des éléments de zone de liste supplémentaires dans l’**arborescence d’éléments visuels en direct**.  
   
- À présent, examinons les propriétés d'un des éléments de zone de liste. Sélectionnez le premier élément de zone de liste dans l’**arborescence d’éléments visuels en direct** et cliquez sur l’icône **Afficher les propriétés** dans la barre d’outils. L’**Explorateur de propriétés en direct** doit apparaître. Notez que le **contenu** champ est « Item1 » et le **arrière-plan** champ est **#ffffffe0** (jaune clair). Revenez à l’**arborescence d’éléments visuels en direct** et sélectionnez le deuxième élément de zone de liste. Le **Live Property Explorer** doit montrer que le **contenu** champ est « Item2 » et le **arrière-plan** champ est **#ffd3d3d3** (gris clair ).  
+ À présent, examinons les propriétés d'un des éléments de zone de liste. Sélectionnez le premier élément de zone de liste dans l’**arborescence d’éléments visuels en direct** et cliquez sur l’icône **Afficher les propriétés** dans la barre d’outils. L’**Explorateur de propriétés en direct** doit apparaître. Notez que le champ de **contenu** est « Item1 » et que le champ d' **arrière-plan** est **#FFFFFFE0** (jaune clair). Revenez à l’**arborescence d’éléments visuels en direct** et sélectionnez le deuxième élément de zone de liste. L' **Explorateur de propriétés en direct** doit indiquer que le champ de **contenu** est « Item2 » et que le champ d' **arrière-plan** est **#FFD3D3D3** (gris clair).  
   
- La structure réelle du code XAML inclut de nombreux éléments qui ne vous intéressent probablement pas directement et, si vous ne connaissez pas bien le code, vous pouvez avoir des difficultés à parcourir l’arborescence pour trouver ce que vous recherchez. Par conséquent, le **Live Visual Tree** a deux façons qui vous permettent d’utiliser l’interface utilisateur de l’application pour vous aider à trouver l’élément que vous souhaitez examiner.  
+ La structure réelle du code XAML inclut de nombreux éléments qui ne vous intéressent probablement pas directement et, si vous ne connaissez pas bien le code, vous pouvez avoir des difficultés à parcourir l’arborescence pour trouver ce que vous recherchez. L’arborescence d’éléments **visuels en direct** peut donc vous permettre d’utiliser l’interface utilisateur de l’application pour vous aider à trouver l’élément que vous souhaitez examiner.  
   
  **Activer la sélection dans l’application en cours d’exécution**. Vous pouvez activer ce mode quand vous sélectionnez le bouton le plus à gauche de la barre d’outils de l’**arborescence d’éléments visuels en direct**. Quand ce mode est activé, vous pouvez sélectionner un élément d’interface utilisateur dans l’application et l’**arborescence d’éléments visuels en direct** (ainsi que la **visionneuse de propriétés en direct**) est automatiquement mise à jour pour afficher le nœud dans l’arborescence correspondant à cet élément, et ses propriétés.  
   
@@ -105,8 +105,8 @@ private void button_Click(object sender, RoutedEventArgs e)
   
 1. Démarrez l’application **TestXaml** dans la configuration Release. Vous ne pouvez pas attacher à un processus qui s’exécute dans une configuration **Debug**.  
   
-2. Ouvrez une deuxième instance de Visual Studio et cliquez sur **déboguer / attacher au processus**. Recherchez **TestXaml.exe** dans la liste des processus disponibles, puis cliquez sur **Attacher**.  
+2. Ouvrez une deuxième instance de Visual Studio, puis cliquez sur **Déboguer/attacher au processus**. Recherchez **TestXaml.exe** dans la liste des processus disponibles, puis cliquez sur **Attacher**.  
   
 3. L'application démarre.  
   
-4. Dans la deuxième instance de Visual Studio, ouvrez le **Live Visual Tree** (**déboguer / Windows / arborescence d’éléments visuels en direct**). Vous devez voir les éléments d’interface utilisateur **TestXaml** et vous devez pouvoir les manipuler comme vous l’avez fait lors du débogage direct de l’application.
+4. Dans la deuxième instance de Visual Studio, ouvrez l' **arborescence d’éléments visuels dynamique** (**Déboguer/fenêtres/arborescence d’éléments visuels dynamique**). Vous devez voir les éléments d’interface utilisateur **TestXaml** et vous devez pouvoir les manipuler comme vous l’avez fait lors du débogage direct de l’application.

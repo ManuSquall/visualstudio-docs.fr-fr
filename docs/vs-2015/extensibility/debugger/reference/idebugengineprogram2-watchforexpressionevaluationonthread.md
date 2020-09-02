@@ -1,5 +1,5 @@
 ---
-title: IDebugEngineProgram2::WatchForExpressionEvaluationOnThread | Microsoft Docs
+title: 'IDebugEngineProgram2 :: WatchForExpressionEvaluationOnThread | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ebc513ead1ae911147217becd8f541cb11cd5585
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62431470"
 ---
 # <a name="idebugengineprogram2watchforexpressionevaluationonthread"></a>IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Autorise (ou interdit) d’évaluation d’expression se produise sur le thread donné, même si le programme s’est arrêté.  
+Autorise (ou interdit) l’évaluation d’une expression sur le thread donné, même si le programme s’est arrêté.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -48,27 +48,27 @@ int WatchForExpressionEvaluationOnThread( 
   
 #### <a name="parameters"></a>Paramètres  
  `pOriginatingProgram`  
- [in] Un [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objet représentant le programme qui évalue une expression.  
+ dans Objet [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) qui représente le programme qui évalue une expression.  
   
  `dwTid`  
- [in] Spécifie l’identificateur du thread.  
+ dans Spécifie l’identificateur du thread.  
   
  `dwEvalFlags`  
- [in] Une combinaison d’indicateurs de la [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) énumération qui spécifient la façon dont l’évaluation doit être effectuée.  
+ dans Combinaison d’indicateurs de l’énumération [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) qui spécifie le mode d’exécution de l’évaluation.  
   
  `pExprCallback`  
- [in] Un [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) objet à utiliser pour envoyer des événements de débogage qui se produisent pendant l’évaluation d’expression.  
+ dans Objet [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) à utiliser pour envoyer les événements de débogage qui se produisent pendant l’évaluation de l’expression.  
   
  `fWatch`  
- [in] Si non nulle (`TRUE`), permet l’évaluation de l’expression sur le thread identifié par `dwTid`; sinon, zéro (`FALSE`) n’autorise pas d’évaluation de l’expression sur ce thread.  
+ dans Si différent de zéro ( `TRUE` ), autorise l’évaluation de l’expression sur le thread identifié par `dwTid` ; sinon, zéro ( `FALSE` ) interdit l’évaluation de l’expression sur ce thread.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="remarks"></a>Notes  
- Lorsque le Gestionnaire de session de débogage (SDM) demande un programme, identifié par le `pOriginatingProgram` paramètre, pour évaluer une expression, il avertit tous les autres programmes attachés en appelant cette méthode.  
+ Quand le gestionnaire de débogage de session (SDM) demande à un programme, identifié par le `pOriginatingProgram` paramètre, d’évaluer une expression, il avertit tous les autres programmes attachés en appelant cette méthode.  
   
- Évaluation des expressions dans un programme peut entraîner le code à exécuter dans un autre, en raison d’une version d’évaluation de fonction ou de n’importe quel `IDispatch` propriétés. Pour cette raison, cette méthode permet d’évaluation d’expression exécuter et terminer même si le thread peut être arrêté dans ce programme.  
+ L’évaluation d’une expression dans un programme peut entraîner l’exécution du code dans un autre programme, en raison de l’évaluation de la fonction ou de l’évaluation de toutes les `IDispatch` Propriétés. Pour cette raison, cette méthode permet l’exécution et la finalisation de l’évaluation des expressions même si le thread peut être arrêté dans ce programme.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)   

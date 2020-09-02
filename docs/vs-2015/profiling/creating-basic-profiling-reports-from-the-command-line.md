@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5f13921dea810ab2185e626cc2889f339d9d174f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62537181"
 ---
 # <a name="creating-basic-profiling-reports-from-the-command-line"></a>Création de rapports de profilage de base à partir de la ligne de commande
@@ -27,7 +27,7 @@ Cette rubrique décrit les commandes VSPerfReport de base qui génèrent des rap
  **VSPerfReport** `VSPFile` **/Summary:All**  
  Génère tous les rapports disponibles pour le fichier .vsp ou .vsps.  
   
- **VSPerfReport** `VSPFile` **/Summary:**`ReportType`[,`ReportType`...]  
+ **VSPerfReport** `VSPFile` **/Summary :** `ReportType` [,`ReportType`...]  
  Génère les types de rapports spécifiés.  
   
  **VSPerfReport** `VSPFile` **/CallTrace**  
@@ -39,18 +39,18 @@ Cette rubrique décrit les commandes VSPerfReport de base qui génèrent des rap
 |Paramètre récapitulatif|Description du rapport|Informations de référence pour le rapport|  
 |-----------------------|------------------------|----------------------|  
 |**CallerCallee**|Représente les relations parents/enfants entre les fonctions.|-   [Données d’échantillonnage](../profiling/caller-callee-view-sampling-data.md)<br />-   [Données d’instrumentation](../profiling/caller-callee-view-instrumentation-data.md)<br />-   [Données d’échantillonnage de la mémoire .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)<br />-   [Données d’instrumentation de la mémoire .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)<br />-   [Données de conflit](../profiling/caller-callee-view-contention-data.md)|  
-|**Function**|Répertorie les données de profilage par fonction.|-   [Données d’échantillonnage](../profiling/functions-view-sampling-data.md)<br />-   [Données d’instrumentation](../profiling/functions-view-instrumentation-data.md)<br />-   [Données d’échantillonnage de la mémoire .NET](../profiling/functions-view-dotnet-memory-sampling-data.md)<br />-   [Données d’instrumentation de la mémoire .NET](../profiling/functions-view-dotnet-memory-instrumentation-data.md)<br />-   [Données de conflit](../profiling/functions-view-contention-data.md)|  
+|**Fonction**|Répertorie les données de profilage par fonction.|-   [Données d’échantillonnage](../profiling/functions-view-sampling-data.md)<br />-   [Données d’instrumentation](../profiling/functions-view-instrumentation-data.md)<br />-   [Données d’échantillonnage de la mémoire .NET](../profiling/functions-view-dotnet-memory-sampling-data.md)<br />-   [Données d’instrumentation de la mémoire .NET](../profiling/functions-view-dotnet-memory-instrumentation-data.md)<br />-   [Données de conflit](../profiling/functions-view-contention-data.md)|  
 |**CallTree**|Représente les chemins d’exécution et les données de profilage des fonctions dans l’exécution du profilage.|-   [Données d’instrumentation](../profiling/call-tree-view-instrumentation-data.md)<br />-   [Données d’échantillonnage](../profiling/call-tree-view-sampling-data.md)<br />-   [Données d’échantillonnage de la mémoire .NET](../profiling/call-tree-view-dotnet-memory-sampling-data.md)<br />-   [Données d’instrumentation de la mémoire .NET](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)<br />-   [Données de conflit](../profiling/call-tree-view-contention-data.md)|  
-|**Compteur**|Répertorie les marques de profilage et les valeurs de compteur de performances Windows qui ont été collectés pendant l’exécution du profilage.|-   [Vue Marques](../profiling/marks-view.md)|  
-|**Ip**|Répertorie les données de profilage par instruction.|-   [Données d’échantillonnage](../profiling/instruction-pointers-ips-view-sampling-data.md)<br />-   [Données d’échantillonnage de la mémoire .NET](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)<br />-   [Données de conflit](../profiling/instruction-pointers-ips-view-contention-data.md)|  
-|**Life**|Répertorie la durée de vie des objets alloués.|-   [Vue Durée de vie des objets](../profiling/object-lifetime-view.md)|  
-|**Line**|Répertorie les données de profilage par ligne de code source.|-   [Données d’échantillonnage](../profiling/lines-view-sampling-data.md)<br />-   [Données d’échantillonnage de la mémoire .NET](../profiling/lines-view-dotnet-memory-sampling-data.md)<br />-   [Données de conflit](../profiling/lines-view-contention-data.md)|  
-|**Header**|Informations d’en-tête du fichier de données de profilage.|Spécifique au fichier.|  
-|**Marque**|Marques de profilage collectées lors de l’exécution du profilage.|-   [Vue Marques](../profiling/marks-view.md)|  
+|**Compteur**|Répertorie les marques de profilage et les valeurs de compteur de performances Windows qui ont été collectés pendant l’exécution du profilage.|-   [Affichage des marques](../profiling/marks-view.md)|  
+|**AdressesIP**|Répertorie les données de profilage par instruction.|-   [Données d’échantillonnage](../profiling/instruction-pointers-ips-view-sampling-data.md)<br />-   [Données d’échantillonnage de la mémoire .NET](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)<br />-   [Données de conflit](../profiling/instruction-pointers-ips-view-contention-data.md)|  
+|**Life**|Répertorie la durée de vie des objets alloués.|-   [Vue durée de vie des objets](../profiling/object-lifetime-view.md)|  
+|**Ligne**|Répertorie les données de profilage par ligne de code source.|-   [Données d’échantillonnage](../profiling/lines-view-sampling-data.md)<br />-   [Données d’échantillonnage de la mémoire .NET](../profiling/lines-view-dotnet-memory-sampling-data.md)<br />-   [Données de conflit](../profiling/lines-view-contention-data.md)|  
+|**En-tête**|Informations d’en-tête du fichier de données de profilage.|Spécifique au fichier.|  
+|**Marque**|Marques de profilage collectées lors de l’exécution du profilage.|-   [Affichage des marques](../profiling/marks-view.md)|  
 |**Module**|Répertorie les données de profilage par module.|-   [Données d’échantillonnage](../profiling/modules-view-sampling-data.md)<br />-   [Données d’instrumentation](../profiling/modules-view-instrumentation-data.md)<br />-   [Données d’échantillonnage de la mémoire .NET](../profiling/modules-view-dotnet-memory-sampling-data.md)<br />-   [Données d’instrumentation de la mémoire .NET](../profiling/modules-view-dotnet-memory-instrumentation-data.md)<br />-   [Données de conflit](../profiling/modules-view-contention-data.md)|  
-|**Process**|Répertorie les données de profilage pour les processus.|-   [Vue Processus](../profiling/process-view.md)<br />-   [Données de conflit](../profiling/process-view-contention-data.md)|  
-|**Thread**|Répertorie les données de profilage pour les threads.|-   [Vue Processus](../profiling/process-view.md)|  
-|**Type**|Répertorie les données de profilage d’allocation par type.|-   [Vue Allocations](../profiling/dotnet-memory-allocations-view.md)|  
-|**Conflit**|Conflit de ressources.|-   [Conflit de ressources](../profiling/resource-contentions-view-contention-data.md)|  
+|**Processus**|Répertorie les données de profilage pour les processus.|-   [Vue processus](../profiling/process-view.md)<br />-   [Données de conflit](../profiling/process-view-contention-data.md)|  
+|**Thread**|Répertorie les données de profilage pour les threads.|-   [Vue processus](../profiling/process-view.md)|  
+|**Type**|Répertorie les données de profilage d’allocation par type.|-   [Allocation, vue](../profiling/dotnet-memory-allocations-view.md)|  
+|**Contention**|Conflit de ressources.|-   [Conflits de ressources](../profiling/resource-contentions-view-contention-data.md)|  
 |**RuleWarnings**|Répertorie les problèmes de règle de performance.|-   Répertorie le CheckId, la description et l’emplacement du code source du problème de la règle.|  
 |**ETW**|Répertorie les événements de suivi d’événements pour Windows (ETW) collectés lors de l’exécution du profilage.|-   [Rapport ETW](../profiling/event-tracing-for-windows-etw-report.md)|

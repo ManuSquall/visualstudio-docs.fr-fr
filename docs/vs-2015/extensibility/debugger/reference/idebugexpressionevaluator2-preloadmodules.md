@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator2::PreloadModules | Microsoft Docs
+title: IDebugExpressionEvaluator2 ::P reloadModules | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d6d7236f19032fa0767a050ac84afe4b4e1585f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62540236"
 ---
 # <a name="idebugexpressionevaluator2preloadmodules"></a>IDebugExpressionEvaluator2::PreloadModules
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Précharge les modules désignés par le fournisseur du symbole spécifié.  
+Précharge les modules désignés par le fournisseur de symboles spécifié.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -39,16 +39,16 @@ int PreloadModules (
   
 #### <a name="parameters"></a>Paramètres  
  `pSym`  
- [in] Fournisseur de symboles pour lequel les modules sont préchargés.  
+ dans Fournisseur de symboles pour lequel les modules seront préchargés.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode facultative est utilisée lorsque vous effectuez un attachement de processus d’hébergement. Il permet du EE 'préchauffage » dans le cadre de l’attachement.  
+ Cette méthode facultative est utilisée quand vous effectuez un attachement de processus d’hébergement. Il donne à EE une chance de « chauffer » dans le cadre de l’attachement.  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant montre comment implémenter cette méthode pour un **ExpressionEvaluatorPackage** objet qui expose le [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) interface.  
+ L’exemple suivant montre comment implémenter cette méthode pour un objet **ExpressionEvaluatorPackage** qui expose l’interface [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) .  
   
 ```cpp#  
 STDMETHODIMP ExpressionEvaluatorPackage::PreloadModules  

@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dbf0c2d13668dbf380f326ee3a49e0389815a8fd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62535734"
 ---
 # <a name="error-rpc-requires-authentication"></a>Erreur : RPC requiert une authentification
@@ -30,10 +30,10 @@ Le débogueur Visual Studio ne peut pas se connecter à l'ordinateur distant. Un
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
-1. Exécutez `\` *windir*`\system32\regedt32.exe`  
+1. Exécuter `\` *windir*`\system32\regedt32.exe`  
   
-2. Localisez et supprimez `HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows NT\RPC\RestrictRemoteClients`.  
+2. Recherchez et supprimez `HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows NT\RPC\RestrictRemoteClients` .  
   
 3. Redémarrez votre ordinateur afin que la modification du Registre entre en vigueur.  
   
-4. Si le problème persiste, contactez votre administrateur de domaine sur le **Configuration ordinateur -> modèles d’administration - > système -> Remote Procedure Call -> Restrictions pour les clients RPC non authentifiés** groupe paramètre de stratégie.
+4. Si le problème persiste, contactez votre administrateur de domaine à propos du paramètre de stratégie de groupe **Configuration ordinateur->modèles d’administration->de l’appel de procédure distante->des Restrictions >pour les clients RPC non authentifiés** .

@@ -11,20 +11,20 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 874e31c331f16e760e030f337dda715473b77af8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62423398"
 ---
 # <a name="setnotificationforwaitcompletion-method"></a>Méthode SetNotificationForWaitCompletion
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Définit ou efface le bit d’état TASK_STATE_WAIT_COMPLETION_NOTIFICATION.  
+Définit ou efface le bit d’État TASK_STATE_WAIT_COMPLETION_NOTIFICATION.  
   
- **Espace de noms :** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **Espace de noms :** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Assembly :** mscorlib (dans mscorlib.dll)  
+ **Assembly :** mscorlib (en mscorlib.dll)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -35,14 +35,14 @@ internal void SetNotificationForWaitCompletion(bool enabled)
 #### <a name="parameters"></a>Paramètres  
  `enabled`  
   
- `true` Pour définir le bit ; `false` pour le bit.  
+ `true` pour définir le bit ; `false` pour annuler l’annulation du bit.  
   
 ## <a name="exceptions"></a>Exceptions  
   
 ## <a name="remarks"></a>Notes  
- Le débogueur définit ce bit pour aider à sortir un corps de la méthode async. Si `enabled` est `true`, cette méthode doit être appelée uniquement sur une tâche qui n’est pas encore terminée. Si `enabled` est `false`, cette méthode ne peut être appelée sur les tâches terminées. Dans les deux cas, il doit uniquement servir pour les tâches de style de promesse.  
+ Le débogueur définit ce bit pour faciliter le pas à pas sortant d’un corps de méthode Async. Si `enabled` est `true` , cette méthode doit être appelée uniquement sur une tâche qui n’est pas encore terminée. Si `enabled` est `false` , cette méthode peut être appelée sur les tâches terminées. Dans les deux cas, il ne doit être utilisé que pour les tâches de type promesse.  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
   
 ## <a name="see-also"></a>Voir aussi  
- [Classe Task](../../extensibility/debugger/task-class-internal-members.md)
+ [Classe de tâche](../../extensibility/debugger/task-class-internal-members.md)

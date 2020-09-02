@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: 1a53d6fed4b2900aa730f4a5c2e04d528b42d1b9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62419841"
 ---
 # <a name="contribute-to-visual-studio-documentation"></a>Contribuer à la documentation de Visual Studio
@@ -14,7 +14,7 @@ Ce guide traite de sujets d’ordre général liés à la contribution. Il fait 
 
 ## <a name="code-of-conduct"></a>Code de conduite
 
-Ce projet a adopté le [Code de conduite Open Source de Microsoft](https://opensource.microsoft.com/codeofconduct/). Pour de plus amples renseignements, consultez [opencode@microsoft.com](mailto:opencode@microsoft.com) le Code de conduite [FAQ](https://opensource.microsoft.com/codeofconduct/faq/)ou communiquez avec des questions ou des commentaires supplémentaires.
+Ce projet a adopté le [Code de conduite Open Source de Microsoft](https://opensource.microsoft.com/codeofconduct/). Pour plus d’informations, consultez le [Forum aux questions sur le code de réalisation](https://opensource.microsoft.com/codeofconduct/faq/)ou contactez [opencode@microsoft.com](mailto:opencode@microsoft.com) avec des questions ou des commentaires supplémentaires.
 
 ## <a name="how-can-i-contribute"></a>Comment faire pour contribuer
 
@@ -34,6 +34,6 @@ Suivez les instructions contenues dans le guide des contributeurs pour [modifier
 
 Passez en revue les instructions figurant dans le guide des contributeurs pour effectuer des[demandes de tirage (pull requests)](https://docs.microsoft.com/contribute/how-to-write-workflows-major#pull-request-processing).
 
-**Note**
+**REMARQUE**
 
 Nous ne travaillons pas activement sur les fichiers du dossier `docs/vs-2015` dans la mesure où ceux-ci concernent Visual Studio 2015, une version antérieure de notre produit. Nous n’acceptons pas les demandes de tirage (pull request) pour des modifications triviales de ces fichiers.

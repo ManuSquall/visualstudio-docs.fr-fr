@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetNextAddress | Microsoft Docs
+title: 'IDebugSymbolProvider :: GetNextAddress | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e1bf0798e0f49d9e7b2871c5601f966bc282b186
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62421448"
 ---
 # <a name="idebugsymbolprovidergetnextaddress"></a>IDebugSymbolProvider::GetNextAddress
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Obtient l’adresse de débogage qui suit une adresse de débogage donné dans une méthode.  
+Obtient l’adresse de débogage qui suit une adresse de débogage donnée dans une méthode.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -44,16 +44,16 @@ int GetNextAddress( 
   
 #### <a name="parameters"></a>Paramètres  
  `pAddress`  
- [in] Adresse de débogage donné.  
+ dans Adresse de débogage donnée.  
   
  `fStatementOnly`  
- [in] Si la valeur est TRUE, limite les adresses de débogage à une seule instruction.  
+ dans Si la valeur est TRUE, limite les adresses de débogage à une seule instruction.  
   
  `ppAddress`  
- [out] Retourne l’adresse de débogage suivante.  
+ à Retourne l’adresse de débogage suivante.  
   
-## <a name="return-value"></a>Valeur de retour  
- Retourne une liste valide `HRESULT`, généralement S_OK.  
+## <a name="return-value"></a>Valeur renvoyée  
+ Retourne un valide `HRESULT` , généralement S_OK.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

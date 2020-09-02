@@ -12,27 +12,27 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7bb98eac2bc481aa5e3652144dfbcadf70430d04
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62538094"
 ---
 # <a name="filtering-the-additem-dialog-box-for-nested-projects"></a>Filtrage de la boîte de dialogue AddItem pour les projets imbriqués
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Lorsque vous affichez un **AddItem** boîte de dialogue pour un projet imbriqué, le projet parent peut contrôler quels éléments sont affichés dans la boîte de dialogue.  
+Lorsque vous affichez une boîte de dialogue **AddItem** pour un projet imbriqué, le projet parent peut contrôler les éléments qui sont affichés dans la boîte de dialogue.  
   
- Le <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2> interface vous permet de filtrer les nœuds qui seront dans un **AddItem** boîte de dialogue. Lorsque le projet enfant affiche le **AddItem** boîte de dialogue, le parent peut implémenter la `IVsFilterAddProjectItemDlg` interface et filtrer des éléments qui seraient affichées dans le projet de l’enfant.  
+ L' <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2> interface vous permet de filtrer les nœuds qui se trouvent dans une boîte de dialogue **AddItem** . Lorsque le projet enfant affiche la boîte de dialogue **AddItem** , le parent peut implémenter l' `IVsFilterAddProjectItemDlg` interface et filtrer les éléments qui seraient autrement affichés dans le projet de l’enfant.  
   
- Lorsque les projets sont regroupés par fonction, dans les projets parent spécifique, vous pouvez implémenter `IVsFilterAddProjectItemDlg` lorsque l’utilisateur sélectionne **ajouter un élément de projet** dans le menu contextuel dans un projet imbriqué. Implémentation `IvsFilterAddProjectItemDlg displays` projet uniquement les éléments ou les fichiers spécifique à ce groupe. Éléments de projet pour d’autres groupes sont exclus de la boîte de dialogue, même si elles sont stockées dans le même répertoire.  
+ Lorsque les projets sont regroupés par fonction dans des projets parents spécifiques, vous pouvez implémenter `IVsFilterAddProjectItemDlg` lorsque l’utilisateur sélectionne **Ajouter un élément de projet** dans le menu contextuel d’un projet imbriqué. Implémenter `IvsFilterAddProjectItemDlg displays` uniquement les éléments de projet ou les fichiers spécifiques à ce groupe. Les éléments de projet des autres groupes sont filtrés à partir de la boîte de dialogue, même s’ils sont stockés dans le même répertoire.  
   
- Lorsqu’un utilisateur ouvre le **AddItem** boîte de dialogue pour l’enfant, l’implémentation du projet parent de la `IVsFilterAddProjectItemDlg` interface est appelée.  
+ Lorsqu’un utilisateur ouvre la boîte de dialogue **AddItem** pour l’enfant, l’implémentation de l’interface du projet parent `IVsFilterAddProjectItemDlg` est appelée.  
   
- Le `IVsFilterAddProjectItemDlg` interface peut également implémenter le filtrage par catégorie. Pour plus d’informations, consultez [Ajout d’éléments pour les boîtes de dialogue Ajouter un nouvel élément](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md) et [l’inscription de Project and Item Templates](../../extensibility/internals/registering-project-and-item-templates.md).  
+ L' `IVsFilterAddProjectItemDlg` interface peut également implémenter le filtrage par catégorie. Pour plus d’informations, consultez [Ajout d’éléments aux boîtes de dialogue Ajouter un nouvel élément](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md) et [inscription de modèles de projet et d’élément](../../extensibility/internals/registering-project-and-item-templates.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>   
- [Ajout d’éléments à l’ajouter un nouvel élément boîtes de dialogue](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
- [L’inscription de projet et modèles d’élément](../../extensibility/internals/registering-project-and-item-templates.md)   
+ [Ajout d’éléments aux boîtes de dialogue Ajouter un nouvel élément](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
+ [Inscription de modèles de projet et d’élément](../../extensibility/internals/registering-project-and-item-templates.md)   
  [Imbriquer des projets](../../extensibility/internals/nesting-projects.md)

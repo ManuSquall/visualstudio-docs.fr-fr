@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayObject::GetRank | Microsoft Docs
+title: 'IDebugArrayObject :: GetRank, | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bf9700e2c3b29561229999506ed789a2e3d6e52e
-ms.sourcegitcommit: 6f7a740750b2cd17ea2275c3d046caebc9782917
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62423671"
 ---
 # <a name="idebugarrayobjectgetrank"></a>IDebugArrayObject::GetRank
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Obtient le rang du tableau, autrement dit, le nombre de dimensions.  
+Obtient le rang du tableau, autrement dit le nombre de dimensions.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -40,13 +40,13 @@ int GetRank(
   
 #### <a name="parameters"></a>Paramètres  
  `pdwRank`  
- [out] Retourne le rang.  
+ à Retourne le rang.  
   
-## <a name="return-value"></a>Valeur de retour  
+## <a name="return-value"></a>Valeur renvoyée  
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Utilisez le [GetDimensions](../../../extensibility/debugger/reference/idebugarrayobject-getdimensions.md) méthode pour récupérer la taille de chaque dimension de l’objet de tableau.  
+ Utilisez la méthode [GetDimensions,](../../../extensibility/debugger/reference/idebugarrayobject-getdimensions.md) pour récupérer la taille de chaque dimension de l’objet Array.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

@@ -13,16 +13,16 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e18e906cbc65ea811e765553a8d2711b3e4eb0f6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62423736"
 ---
-# <a name="fieldinfo"></a>FIELD_INFO
+# <a name="field_info"></a>FIELD_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Une variable locale, paramètre ou autre champ décrite par cette structure.  
+Cette structure décrit une variable locale, un paramètre ou un autre champ.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -48,32 +48,32 @@ public struct FIELD_INFO {
   
 ## <a name="members"></a>Membres  
  dwFields  
- Une combinaison d’indicateurs de la [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) énumération qui indique quels membres sont renseignés.  
+ Combinaison d’indicateurs de l’énumération [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) qui spécifie les membres qui sont remplis.  
   
  bstrFullName  
- Le nom complet du champ.  
+ Nom complet du champ.  
   
- bstrName  
- Le nom court du champ.  
+ bstrName,  
+ Nom abrégé du champ.  
   
  bstrType  
- Le type du champ.  
+ Type du champ.  
   
  dwModifiers  
- Une combinaison d’indicateurs de la [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) énumération qui décrit le champ.  
+ Combinaison d’indicateurs de l’énumération [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) qui décrit le champ.  
   
 ## <a name="remarks"></a>Notes  
- Cette structure est passée à la [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) méthode où il est renseigné.  
+ Cette structure est transmise à la méthode [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) où elle est remplie.  
   
 ## <a name="requirements"></a>Configuration requise  
- En-tête : sh.h  
+ En-tête : SH. h  
   
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft. VisualStudio. Debugger. Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
- [Structures et Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Structures et unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md)   
  [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)   
  [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)

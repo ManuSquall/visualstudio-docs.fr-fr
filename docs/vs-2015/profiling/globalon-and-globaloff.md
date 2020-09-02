@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eae720bdd904c7b904c906022cea700512167617
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62434226"
 ---
 # <a name="globalon-and-globaloff"></a>GlobalOn et GlobalOff
@@ -33,7 +33,7 @@ Les options **GlobalOff** et **GlobalOn** de VSPerfCmd.exe suspendent et reprenn
   
 - **GlobalOff** affecte immédiatement la valeur 1 au Nombre Start/Stop global et reprend ainsi le profilage.  
   
-  Pour plus d’informations, consultez [API des outils de profilage](../profiling/profiling-tools-apis.md).  
+  Pour plus d’informations, consultez [outils de profilage des API](../profiling/profiling-tools-apis.md).  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -46,24 +46,24 @@ VSPerfCmd.exe {Launch:AppName|Attach:PID} /{GlobalOff|GlobalOn}[Options]
 ```  
   
 #### <a name="parameters"></a>Paramètres  
- Aucun.  
+ Aucun  
   
 ## <a name="valid-options"></a>Options valides  
  Vous pouvez spécifier **GlobalOn** et **GlobalOff** sur des lignes de commande qui contiennent également les options suivantes.  
   
- **Start :** `Method`  
+ **Démarrer :**`Method`  
  Initialise la session de profileur en ligne de commande et définit la méthode de profilage spécifiée.  
   
- **Launch :** `AppName`  
+ **Lancer :**`AppName`  
  Démarre l’application spécifiée et commence le profilage avec la méthode d’échantillonnage.  
   
- **Attach :** `PID`  
+ **Attacher :**`PID`  
  Démarre le profilage du processus spécifié.  
   
- {**ProcessOff**&#124;**ProcessOn**}  **:** `PID`  
+ {**ProcessOff**&#124;**ProcessOn**} **:**`PID`  
  Arrête ou démarre le profilage du processus spécifié.  
   
- {**ThreadOff**&#124;**ThreadOn**}  **:** `TID`  
+ {**Threadoff**&#124;**ThreadOn**} **:**`TID`  
  Arrête ou démarre le profilage du processus spécifié (méthode d’instrumentation uniquement).  
   
 ## <a name="example"></a>Exemple  
@@ -85,7 +85,7 @@ VSPerfCmd /Shutdown
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [VSPerfCmd](../profiling/vsperfcmd.md)   
+ [Option](../profiling/vsperfcmd.md)   
  [Profilage d’applications autonomes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilage d’applications web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Profilage de services](../profiling/command-line-profiling-of-services.md)
+ [Profilage d’applications Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Profilage des services](../profiling/command-line-profiling-of-services.md)

@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1ac5452437ab6fdec3eb68baf46aeeab8434df4e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62538861"
 ---
 # <a name="idiareadexeatoffsetcallbackreadexecutableat"></a>IDiaReadExeAtOffsetCallback::ReadExecutableAt
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Lit le nombre spécifié d’octets commençant au décalage spécifié à partir d’un fichier exécutable.  
+Lit le nombre d’octets spécifié en commençant à l’offset spécifié à partir d’un fichier exécutable.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -38,19 +38,19 @@ HRESULT ReadExecutableAt ( 
   
 #### <a name="parameters"></a>Paramètres  
  fileOffset  
- [in] Offset dans le fichier exécutable à commencer la lecture.  
+ dans Offset dans le fichier exécutable à partir duquel commencer la lecture.  
   
  cbData  
- [in] Nombre d’octets à lire.  
+ dans Nombre d’octets à lire.  
   
- cbData  
- [out] Retourne le nombre d’octets lus.  
+ pcbData  
+ à Retourne le nombre d’octets lus.  
   
  data[]  
- [in, out] Un tableau est rempli avec les octets lus à partir du fichier.  
+ [in, out] Tableau qui est renseigné avec des octets lus à partir du fichier.  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode est appelée par le code de prise en charge DIA pour charger des octets de données à partir d’un fichier exécutable à l’aide d’un décalage de fichier absolu. Cette méthode est appelée à l’appui de la [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) (méthode).  
+ Cette méthode est appelée par le code de prise en charge de DIA pour charger des octets de données à partir d’un exécutable à l’aide d’un offset de fichier absolu. Cette méthode est appelée pour la prise en charge de la méthode [IDiaDataSource :: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) .  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)   

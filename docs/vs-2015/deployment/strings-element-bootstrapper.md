@@ -1,5 +1,5 @@
 ---
-title: '&lt;Chaînes&gt; élément (programme d’amorçage) | Microsoft Docs'
+title: '&lt;Strings &gt; , élément (programme d’amorçage) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -20,16 +20,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dd799020e50121e2f3e9a6ba7ad90fd79a1241cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62421523"
 ---
-# <a name="ltstringsgt-element-bootstrapper"></a>&lt;Chaînes&gt; élément (programme d’amorçage)
+# <a name="ltstringsgt-element-bootstrapper"></a>&lt;Strings &gt; , élément (programme d’amorçage)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Définit des chaînes localisées pour les noms de produits, les noms de package et les messages d’erreur d’installation.  
+Définit des chaînes localisées pour les noms de produits, les noms de packages et les messages d’erreur d’installation.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -43,16 +43,16 @@ Définit des chaînes localisées pour les noms de produits, les noms de package
 ```  
   
 ## <a name="elements-and-attributes"></a>Éléments et attributs  
- Le `Strings` élément est un enfant de le `Package` élément. Il a pas d’attributs.  
+ L' `Strings` élément est un enfant de l' `Package` élément. Elle n’a pas d’attribut.  
   
 ## <a name="string"></a>Chaîne  
- Le `String` élément est un enfant de le `Strings` élément. Un `Strings` élément peut avoir un ou plusieurs `String` éléments.  
+ L' `String` élément est un enfant de l' `Strings` élément. Un `Strings` élément peut avoir un ou plusieurs `String` éléments.  
   
  `String` a l’attribut suivant.  
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|`Name`|Obligatoire. Le nom de la chaîne.|  
+|`Name`|Obligatoire. Nom de la chaîne.|  
   
 ## <a name="example"></a>Exemple  
  L’exemple de code suivant spécifie toutes les chaînes en anglais pour le [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] programme d’installation.  
@@ -77,4 +77,4 @@ Définit des chaînes localisées pour les noms de produits, les noms de package
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [\<Package>, élément](../deployment/package-element-bootstrapper.md)
+ [\<Package> Appartient](../deployment/package-element-bootstrapper.md)

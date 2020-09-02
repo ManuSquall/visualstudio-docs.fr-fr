@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f4546c3be480349f3e2cb36f483fa8711bc2ac49
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62434213"
 ---
 # <a name="gpu-activity-graph"></a>Graphique d'activité GPU
@@ -31,4 +31,4 @@ Le graphique d’activité GPU du visualiseur concurrentiel affiche le niveau d�
  Le blanc indique la disponibilité des moteurs DirectX inutilisés sur le système. Ces moteurs sont disponibles pour votre processus si vous leur trouvez d’autres usages. Certains moteurs ne peuvent être utilisés que pour certains types de tâches.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Vue Utilisation](../profiling/utilization-view.md)
+ [vue Utilisation](../profiling/utilization-view.md)

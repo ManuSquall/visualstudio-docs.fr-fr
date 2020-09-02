@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProviderDirect::GetCurrentModulesInfo | Microsoft Docs
+title: 'IDebugSymbolProviderDirect :: GetCurrentModulesInfo | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,10 +12,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4ce4473fca76424f3b737d530997f766da7b219d
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62421913"
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesinfo"></a>IDebugSymbolProviderDirect::GetCurrentModulesInfo
@@ -47,22 +47,22 @@ int GetCurrentModulesInfo(
   
 #### <a name="parameters"></a>Paramètres  
  `pCount`  
- [in] Nombre de modules dans le `ppGuids` tableau.  
+ dans Nombre de modules dans le `ppGuids` tableau.  
   
  `ppGuids`  
- [in] Tableau qui contient les identificateurs uniques pour les modules.  
+ dans Tableau qui contient les identificateurs uniques des modules.  
   
  `pADIds`  
- [in] Identificateurs pour les domaines d’application.  
+ dans Identificateurs des domaines d’application.  
   
  `pCurrentState`  
- [in] État actuel du groupe de symboles.  
+ dans État actuel du groupe de symboles.  
   
  `ppCDModItfs`  
- [out] Retourne un objet qui contient les modules dans le groupe de symboles.  
+ à Retourne un objet qui contient les modules dans le groupe de symboles.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

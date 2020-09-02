@@ -1,5 +1,5 @@
 ---
-title: Attributs conditionnels du schéma XML VSCT | Microsoft Docs
+title: Attributs conditionnels de schéma XML VSCT | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,22 +12,22 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6294ee8027b61840149096561efc91b8a4a3c3ec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62422147"
 ---
 # <a name="vsct-xml-schema-conditional-attributes"></a>Attributs conditionnels du schéma XML VSCT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Attributs conditionnels peuvent être appliqués à tous les éléments et les listes. Opérateurs logiques et les expressions d’expansion symbole équivalente à true ou false. Si la valeur est true, la liste associée ou l’élément est inclus dans la sortie résultante.  
+Les attributs conditionnels peuvent être appliqués à toutes les listes et éléments. Les opérateurs logiques et les expressions d’expansion de symboles prennent la valeur true ou false. Si la valeur est true, la liste ou l’élément associé est inclus dans la sortie obtenue.  
   
- Extensions de jeton peuvent être testées par rapport à d’autres extensions de jeton ou des constantes. La fonction Defined() est utilisée pour tester si un nom particulier a été défini, même si elle n’a aucune valeur.  
+ Les expansions de jeton peuvent être testées par rapport à d’autres constantes ou expansions de jeton. La fonction définie () permet de tester si un nom particulier a été défini, même s’il n’a pas de valeur.  
   
- Lorsqu’un attribut Condition est appliqué à une liste, la condition est appliquée à chaque élément enfant dans la liste. Si un élément enfant lui-même contient un attribut de Condition, sa condition est combinée avec l’expression parent par une opération AND.  
+ Lorsqu’un attribut condition est appliqué à une liste, la condition est appliquée à chaque élément enfant de la liste. Si un élément enfant lui-même contient un attribut condition, sa condition est combinée avec l’expression parente par une opération AND.  
   
- Les valeurs 1, « 1 » et « trues » sont évaluées comme true et 0, '0' et 'false' sont évaluées comme false.  
+ Les valeurs 1, « 1 » et « true » sont évaluées comme vraies, et 0, « 0 » et « false » sont évalués comme faux.  
   
 ## <a name="operators"></a>Opérateurs  
  Les opérateurs suivants peuvent être utilisés pour évaluer des expressions conditionnelles.  
@@ -37,8 +37,8 @@ Attributs conditionnels peuvent être appliqués à tous les éléments et les l
 |(,)|Regroupement|  
 |!|Opérateur NOT logique|  
 |\<, >, \<=, >=, ==, !=|Opérateurs relationnels et opérateurs d'égalité|  
-|et|Booléen|  
-|ou|Booléen|  
+|et|Boolean|  
+|ou|Boolean|  
   
 ## <a name="examples"></a>Exemples  
   

@@ -11,22 +11,22 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f7d5f05a077e5243d5de52c210ae65dbfe3b2850
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62428025"
 ---
-# <a name="taskstaterantocompletion-field"></a>Champ TASK_STATE_RAN_TO_COMPLETION
+# <a name="task_state_ran_to_completion-field"></a>Champ TASK_STATE_RAN_TO_COMPLETION
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 L’exécution de la tâche s’est terminée avec succès.  
   
- **Espace de noms :** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **Espace de noms :** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Assembly :** mscorlib (dans mscorlib.dll)  
+ **Assembly :** mscorlib (en mscorlib.dll)  
   
- Étant donné que vous ne pouvez pas accéder à ce membre interne du .NET Framework, la syntaxe suivante est fournie en commun Intermediate Language (CIL).  
+ Étant donné que vous ne pouvez pas accéder à ce membre interne à partir de la .NET Framework, la syntaxe suivante est fournie en Common Intermediate Language (CIL).  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -35,7 +35,7 @@ L’exécution de la tâche s’est terminée avec succès.
 ```  
   
 ## <a name="remarks"></a>Notes  
- Si le [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) champ contient cette valeur, le <xref:System.Threading.Tasks.Task.Status%2A> retourne de la propriété <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>.  
+ Si le champ [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) contient cette valeur, la <xref:System.Threading.Tasks.Task.Status%2A> propriété retourne <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> .  
   
 ## <a name="see-also"></a>Voir aussi  
- [Classe Task](../../extensibility/debugger/task-class-internal-members.md)
+ [Classe de tâche](../../extensibility/debugger/task-class-internal-members.md)

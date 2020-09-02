@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetMethodFieldsByName | Microsoft Docs
+title: 'IDebugSymbolProvider :: GetMethodFieldsByName | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: eb26d7382c9c501a1c3235153c2364b2a3e677fb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62421173"
 ---
 # <a name="idebugsymbolprovidergetmethodfieldsbyname"></a>IDebugSymbolProvider::GetMethodFieldsByName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Cette méthode obtient le champ qui représente un nom de méthode qualifié complet.  
+Cette méthode obtient le champ représentant un nom de méthode complet.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -44,19 +44,19 @@ int GetMethodFieldsByName(
   
 #### <a name="parameters"></a>Paramètres  
  `pszFullName`  
- [in] Le nom de la méthode.  
+ dans Nom de la méthode.  
   
  `nameMatch`  
- [in] Sélectionne le type de correspondance, par exemple, respect de la casse.  
+ dans Sélectionne le type de correspondance, par exemple en respectant la casse.  
   
  `ppEnum`  
- [out] Retourne un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) énumérateur pour les champs associés à cette méthode.  
+ à Retourne un énumérateur [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) pour les champs associés à cette méthode.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="remarks"></a>Notes  
- Si elle est surchargée, par exemple, une méthode peut être associée à plusieurs champs.  
+ Une méthode peut être associée à plusieurs champs si elle est surchargée, par exemple.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   

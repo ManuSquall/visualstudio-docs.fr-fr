@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 8fbbd8c49ecc367a0dd01d9ab775735b93174fe6
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62429059"
 ---
 # <a name="quickstart-create-a-python-project-from-existing-code"></a>Démarrage rapide : Créer un projet Python à partir du code existant
@@ -26,7 +26,7 @@ Une fois que vous avez [installé la prise en charge de Python dans Visual Studi
 
 [!INCLUDE[project-from-existing](includes/project-from-existing.md)]
 
-Si vous le souhaitez, exécutez le programme en appuyant sur **Ctrl**+**F5** ou en sélectionnant **Debug** > **Start sans Debugging**.
+Si vous le souhaitez, exécutez le programme en appuyant sur **CTRL** + **F5** ou en sélectionnant **Déboguer**exécuter  >  **sans débogage**.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

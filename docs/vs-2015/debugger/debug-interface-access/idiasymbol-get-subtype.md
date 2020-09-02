@@ -12,13 +12,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 705bbb952436c9e87e16fe0a5901472b0bbb71be
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62428269"
 ---
-# <a name="idiasymbolgetsubtype"></a>IDiaSymbol::get_subType
+# <a name="idiasymbolget_subtype"></a>IDiaSymbol::get_subType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Récupère le sous-type.  
@@ -32,10 +32,10 @@ HRESULT get_subType(
   
 #### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- [out] Pointeur vers le sous-type.  
+ à Pointeur vers le sous-type.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

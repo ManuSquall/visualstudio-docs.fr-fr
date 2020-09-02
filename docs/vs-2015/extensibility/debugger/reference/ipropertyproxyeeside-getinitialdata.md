@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEESide::GetInitialData | Microsoft Docs
+title: 'IPropertyProxyEESide :: GetInitialData | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b68244702e13434c89f6f7a964782a8a9a2719d5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62414813"
 ---
 # <a name="ipropertyproxyeesidegetinitialdata"></a>IPropertyProxyEESide::GetInitialData
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Retourne les données initiales pour cet objet.  
+Retourne les données initiales de cet objet.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -40,10 +40,10 @@ int GetInitialData(
   
 #### <a name="parameters"></a>Paramètres  
  `dataOut`  
- [out] Retourne un [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) objet contenant les données initiales de cet objet.  
+ à Retourne un objet [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) contenant les données initiales de cet objet.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   

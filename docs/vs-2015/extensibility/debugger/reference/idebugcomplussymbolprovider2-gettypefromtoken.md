@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider2::GetTypeFromToken | Microsoft Docs
+title: 'IDebugComPlusSymbolProvider2 :: GetTypeFromToken | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,10 +12,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1fa5e258390040fc70c0538c929a166984c3a7b0
-ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62540567"
 ---
 # <a name="idebugcomplussymbolprovider2gettypefromtoken"></a>IDebugComPlusSymbolProvider2::GetTypeFromToken
@@ -56,8 +56,8 @@ int GetTypeFromToken(
  `ppField`  
  à Retourne le type représenté par [IDebugField](../../../extensibility/debugger/reference/idebugfield.md).  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite `S_OK`, retourne; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="example"></a>Exemple  
  L’exemple suivant montre comment implémenter cette méthode pour un objet **CDebugSymbolProvider** qui expose l’interface [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) .  

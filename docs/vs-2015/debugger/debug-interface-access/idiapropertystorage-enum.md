@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 48b289ed1e376f224ec513e7a118691d75fc9b69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62538837"
 ---
 # <a name="idiapropertystorageenum"></a>IDiaPropertyStorage::Enum
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Obtient un énumérateur pour les propriétés au sein de cet ensemble.  
+Obtient un énumérateur pour les propriétés dans cet ensemble.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -35,10 +35,10 @@ HRESULT Enum ( 
   
 #### <a name="parameters"></a>Paramètres  
  `ppenum`  
- [out] Retourne un `IEnumSTATPROPSTG` objet (dans l’espace de noms d’assemblys Microsoft.VisualStudio.OLE.Interop) qui représente une énumération des propriétés.  
+ à Retourne un `IEnumSTATPROPSTG` objet (dans l’espace de noms Microsoft. VisualStudio. OLE. Interop) représentant une énumération de propriétés.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` ; sinon, retourne un code d’erreur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

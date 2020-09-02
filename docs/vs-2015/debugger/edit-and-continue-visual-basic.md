@@ -22,10 +22,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 24782fee98cff09513ff2b4d1606f2be0bd9fbd2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62428553"
 ---
 # <a name="edit-and-continue-visual-basic"></a>Modifier & Continuer (Visual Basic)
@@ -44,12 +44,12 @@ La fonctionnalité Modifier &amp; Continuer destinée au débogage de [!INCLUDE[
  Les rubriques de cette section fournissent des détails supplémentaires sur l’utilisation de cette fonctionnalité et les types de modifications non autorisés.  
   
 ## <a name="in-this-section"></a>Dans cette section  
- [Guide pratique pour Appliquer des modifications en mode arrêt avec Modifier et Continuer](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)  
+ [Comment : appliquer des modifications en mode arrêt avec modifier & continuer](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)  
  Explique comment appliquer des modifications de code en mode Arrêt.  
   
- [Modifications non prises en charge dans Modifier & Continuer (Visual Basic)](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md)  
+ [Modifications non prises en charge dans Modifier &amp;amp; Continuer (Visual Basic)](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md)  
  Décrit les types de modifications qui ne peuvent pas être appliqués à Modifier &amp; Continuer en [!INCLUDE[vb_current_short](../includes/vb-current-short-md.md)].  
   
-## <a name="related-sections"></a>Rubriques connexes  
- [Modifier & Continuer](../debugger/edit-and-continue.md)  
+## <a name="related-sections"></a>Sections connexes  
+ [Modifier &amp; Continuer](../debugger/edit-and-continue.md)  
  Fournit une liste de rubriques sur Modifier &amp; Continuer.

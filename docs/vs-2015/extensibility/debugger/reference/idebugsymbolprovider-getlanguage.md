@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetLanguage | Microsoft Docs
+title: 'IDebugSymbolProvider :: GetLanguage | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8124e0c6328695da9773edbfd949ec2634dbfdb1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62421770"
 ---
 # <a name="idebugsymbolprovidergetlanguage"></a>IDebugSymbolProvider::GetLanguage
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Cette méthode obtient le langage ayant servi à compiler le code à l’adresse de débogage.  
+Cette méthode obtient le langage utilisé pour compiler le code à l’adresse de débogage.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -44,19 +44,19 @@ int GetLanguage(
   
 #### <a name="parameters"></a>Paramètres  
  `pAddress`  
- [in] Un type d’objet représenté par un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface.  
+ dans Objet d’adresse représenté par une interface [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) .  
   
  `pguidLanguage`  
- [out] Retourne un `GUID` qui spécifie le langage.  
+ à Retourne un `GUID` qui spécifie le langage.  
   
  `pguidLanguageVendor`  
- [out] Retourne un `GUID` qui spécifie le fournisseur de langage.  
+ à Retourne un `GUID` qui spécifie le fournisseur de langage.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="remarks"></a>Notes  
- Le moteur de débogage appelle cette méthode pour obtenir les informations nécessaires sélectionner l’évaluateur d’expression correcte.  
+ Le moteur de débogage appelle cette méthode pour obtenir les informations dont il a besoin pour sélectionner l’évaluateur d’expression approprié.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   

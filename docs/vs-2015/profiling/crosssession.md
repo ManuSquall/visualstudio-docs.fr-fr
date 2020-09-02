@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 05e1f2360b3257e44fde1af8be3554dd7fd95115
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62537176"
 ---
 # <a name="crosssession"></a>CrossSession
@@ -30,15 +30,15 @@ VSPerfCmd.exe /Start:Method /CrossSession [Options]
 ```  
   
 #### <a name="parameters"></a>Paramètres  
- Aucun.  
+ Aucun  
   
 ## <a name="valid-options"></a>Options valides  
  Pour activer le profilage dans une autre session, l’option **CrossSession** doit être spécifiée avec l’option **Start**. L’option **CrossSession** doit également être spécifiée dans toutes les commandes **VSPerfCmd Attach** et **Detach** suivantes.  
   
- **Start:** `Method`  
+ **Démarrer :**`Method`  
  L’option **Start** initialise le profileur avec la méthode de profilage spécifiée.  
   
- **Attach:** _PID_[**,**_PID_]  
+ **Attach :** _PID_[**,**_PID_]  
  Démarre le profilage des processus spécifiés.  
   
  **Detach**[**:**_PID_[,_PID_]]  
@@ -53,7 +53,7 @@ VSPerfCmd.exe /Attach:12345 /CS
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [VSPerfCmd](../profiling/vsperfcmd.md)   
+ [Option](../profiling/vsperfcmd.md)   
  [Profilage d’applications autonomes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilage d’applications web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Profilage de services](../profiling/command-line-profiling-of-services.md)
+ [Profilage d’applications Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Profilage des services](../profiling/command-line-profiling-of-services.md)

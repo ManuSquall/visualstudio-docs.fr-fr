@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::GetParent | Microsoft Docs
+title: 'IDebugProperty2 :: GetParent | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 85c8ac00550c4a8e63cd06bdabf9e794f636129d
-ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62538712"
 ---
 # <a name="idebugproperty2getparent"></a>IDebugProperty2::GetParent
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Obtient la propriété parent d’une propriété.  
+Obtient la propriété parente d’une propriété.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -40,10 +40,10 @@ int GetParent ( 
   
 #### <a name="parameters"></a>Paramètres  
  `ppParent`  
- [out] Retourne un [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objet qui représente le parent de la propriété.  
+ à Retourne un objet [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) qui représente le parent de la propriété.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon retourne le code d’erreur. Retourne `S_GETPARENT_NO_PARENT` s’il n’existe aucun parent.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` ; sinon, retourne le code d’erreur. Retourne `S_GETPARENT_NO_PARENT` s'il n'y a aucun parent.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

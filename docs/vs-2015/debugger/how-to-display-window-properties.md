@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Afficher la fenêtre Propriétés | Microsoft Docs'
+title: 'Comment : afficher les propriétés d’une fenêtre | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,19 +12,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: acef433d8f82151a7870fda047f27ac46090b480
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62538185"
 ---
-# <a name="how-to-display-window-properties"></a>Procédure : Afficher les propriétés d’une fenêtre
+# <a name="how-to-display-window-properties"></a>Comment : afficher les propriétés d'une fenêtre
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Pour en savoir plus sur une fenêtre listée dans [Windows vue](../debugger/windows-view.md), utilisez le [boîte de dialogue Propriétés de fenêtre](../debugger/window-properties-dialog-box.md).  
+Pour en savoir plus sur une fenêtre listée dans l' [affichage Windows](../debugger/windows-view.md), utilisez la [boîte de dialogue Propriétés](../debugger/window-properties-dialog-box.md)de la fenêtre.  
   
 ### <a name="to-open-the-window-properties-dialog-box"></a>Pour ouvrir la boîte de dialogue Propriétés de la fenêtre  
   
-1. Sélectionnez l’élément, puis choisissez **propriétés** à partir de la **vue** menu.  
+1. Sélectionnez l’élément, puis choisissez **Propriétés** dans le menu **affichage** .  
   
-   Boîtes de dialogue de propriétés ne sont pas modales. Lorsque vous cliquez sur à partir d’un élément à un autre dans une fenêtre d’affichage, la boîte de dialogue est automatiquement actualisée avec plus d’informations sur chaque élément sélectionné.
+   Les boîtes de dialogue Propriétés ne sont pas modales. Lorsque vous cliquez sur d’un élément à l’élément dans une fenêtre d’affichage, la boîte de dialogue est automatiquement actualisée avec des informations sur chaque élément sélectionné.

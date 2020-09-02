@@ -1,5 +1,5 @@
 ---
-title: Classe ContingentProperties - membres internes | Microsoft Docs
+title: Classe ContingentProperties-membres internes | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,10 +12,10 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3f6778aef90361a7751ccd744fcf93822f8f97db
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62414644"
 ---
 # <a name="contingentproperties-class---internal-members"></a>Classe ContingentProperties - Membres internes
@@ -23,11 +23,11 @@ ms.locfileid: "62414644"
 
 Contient des propriétés supplémentaires pour un <xref:System.Threading.Tasks.Task> objet.  
   
- **Espace de noms :** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **Espace de noms :** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Assembly :** mscorlib (dans mscorlib.dll)  
+ **Assembly :** mscorlib (en mscorlib.dll)  
   
- Étant donné que vous ne peut pas accéder à ces membres internes à partir de .NET Framework, la syntaxe suivante est fournie en commun Intermediate Language (CIL).  
+ Étant donné que vous ne pouvez pas accéder à ces membres internes à partir du .NET Framework, la syntaxe suivante est fournie en Common Intermediate Language (CIL).  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -42,10 +42,10 @@ Contient des propriétés supplémentaires pour un <xref:System.Threading.Tasks.
   
 |Nom|Description|  
 |----------|-----------------|  
-|[m_children](../../extensibility/debugger/m-children-field.md)|La liste des tâches enfants qui sont inscrits auprès de cette tâche.|  
+|[m_children](../../extensibility/debugger/m-children-field.md)|Liste des tâches enfants inscrites avec cette tâche.|  
   
 ## <a name="remarks"></a>Notes  
- Le .NET Framework initialise les champs de cette classe uniquement lorsqu’elles sont nécessaires.  
+ L' .NET Framework initialise les champs de cette classe uniquement lorsqu’ils sont nécessaires.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Valeurs internes d’extension parallèle pour .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

@@ -12,10 +12,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 96c067d4c55a5df4d9343e60360142466e8f218f
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62431300"
 ---
 # <a name="install-python-support-in-visual-studio"></a>Installer la prise en charge de Python dans Visual Studio
@@ -35,7 +35,7 @@ ms.locfileid: "62431300"
 
     ![Charge de travail de développement Python dans le programme d’installation de Visual Studio](media/installation-python-workload.png)
 
-1. Pour tester rapidement le support Python, lancez Visual Studio, appuyez sur **Alt**+**I** pour ouvrir la fenêtre **Python Interactive,** et entrez `2+2`. Si vous ne voyez pas la sortie **4**, revérifiez les étapes.
+1. Pour tester rapidement la prise en charge de Python, lancez Visual Studio, appuyez sur **ALT** + **I** pour ouvrir la fenêtre **interactive Python** , puis entrez `2+2` . Si vous ne voyez pas la sortie **4**, revérifiez les étapes.
 
     ![Test de Python via la fenêtre interactive](media/installation-interactive-test.png)
 

@@ -1,5 +1,5 @@
 ---
-title: '&lt;assemblyIdentity&gt; , élément (Application ClickOnce) | Microsoft Docs'
+title: '&lt;assemblyIdentity &gt; , élément (application ClickOnce) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -18,13 +18,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5bde22809af69071f5484e25717a5aea7d78a603
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62428532"
 ---
-# <a name="ltassemblyidentitygt-element-clickonce-application"></a>&lt;assemblyIdentity&gt; , élément (Application ClickOnce)
+# <a name="ltassemblyidentitygt-element-clickonce-application"></a>&lt;assemblyIdentity &gt; , élément (application ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Identifie l’application déployée dans un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] déploiement.  
@@ -43,20 +43,20 @@ Identifie l’application déployée dans un [!INCLUDE[ndptecclick](../includes/
 ```  
   
 ## <a name="elements-and-attributes"></a>Éléments et attributs  
- Le `assemblyIdentity` élément est requis. Il ne contient aucun élément enfant et a les attributs suivants.  
+ L’élément `assemblyIdentity` est obligatoire. Il ne contient pas d’éléments enfants et a les attributs suivants.  
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|`Name`|Obligatoire. Identifie le nom de l’application.<br /><br /> Si `Name` contient des caractères spéciaux, tels que des guillemets simples ou doubles, l’application peut échouer à activer.|  
-|`Version`|Obligatoire. Spécifie le numéro de version de l’application dans le format suivant : `major.minor.build.revision`|  
-|`publicKeyToken`|Facultatif. Spécifie une chaîne hexadécimale de 16 caractères qui représente les 8 derniers octets de la `SHA-1` la valeur de la clé publique sous laquelle est signé l’application ou un assembly de hachage. La clé publique qui est utilisée pour signer le catalogue doit être de 2 048 bits ou supérieur.<br /><br /> Bien que la signature d’un assembly est recommandé mais facultatif, cet attribut est requis. Si un assembly n’est pas signé, vous devez copier une valeur à partir d’un assembly auto-signé ou utiliser une valeur « factice » de tous les zéros non significatifs.|  
-|`processorArchitecture`|Obligatoire. Spécifie le processeur. Les valeurs valides sont `msil` pour tous les processeurs, `x86` pour Windows 32 bits, `IA64` pour Windows 64 bits, et `Itanium` pour les processeurs Itanium d’Intel 64 bits.|  
-|`language`|Obligatoire. Identifie les codes de langue de deux parties (par exemple, `en-US`) de l’assembly. Cet élément est dans le `asmv2` espace de noms. Si non spécifié, la valeur par défaut est `neutral`.|  
+|`Name`|Obligatoire. Identifie le nom de l’application.<br /><br /> Si `Name` contient des caractères spéciaux, tels que des guillemets simples ou doubles, l’activation de l’application peut échouer.|  
+|`Version`|Obligatoire. Spécifie le numéro de version de l’application au format suivant : `major.minor.build.revision`|  
+|`publicKeyToken`|facultatif. Spécifie une chaîne hexadécimale de 16 caractères qui représente les 8 derniers octets de la `SHA-1` valeur de hachage de la clé publique sous laquelle l’application ou l’assembly est signé. La clé publique utilisée pour signer le catalogue doit être supérieure ou égale à 2048 bits.<br /><br /> Bien que la signature d’un assembly soit recommandée mais facultative, cet attribut est obligatoire. Si un assembly n’est pas signé, vous devez copier une valeur d’un assembly auto-signé ou utiliser une valeur « factice » de zéros.|  
+|`processorArchitecture`|Obligatoire. Spécifie le processeur. Les valeurs valides sont `msil` pour tous les processeurs, `x86` pour Windows 32 bits, `IA64` pour Windows 64 bits et `Itanium` pour les processeurs Itanium Intel 64 bits.|  
+|`language`|Obligatoire. Identifie les codes de langue en deux parties (par exemple, `en-US` ) de l’assembly. Cet élément se trouve dans l' `asmv2` espace de noms. S’il n’est pas spécifié, la valeur par défaut est `neutral` .|  
   
 ## <a name="examples"></a>Exemples  
   
 ### <a name="description"></a>Description  
- L’exemple de code suivant illustre un `assemblyIdentity` élément dans un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifeste d’application. Cet exemple de code fait partie d’un exemple plus complet fourni dans [manifeste d’Application ClickOnce](../deployment/clickonce-application-manifest.md).  
+ L’exemple de code suivant illustre un `assemblyIdentity` élément dans un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifeste d’application. Cet exemple de code fait partie d’un exemple plus complet fourni dans le manifeste de l' [application ClickOnce](../deployment/clickonce-application-manifest.md).  
   
 ### <a name="code"></a>Code  
   
@@ -72,4 +72,4 @@ Identifie l’application déployée dans un [!INCLUDE[ndptecclick](../includes/
   
 ## <a name="see-also"></a>Voir aussi  
  [Manifeste d’application ClickOnce](../deployment/clickonce-application-manifest.md)   
- [\<assemblyIdentity>, élément](../deployment/assemblyidentity-element-clickonce-deployment.md)
+ [\<assemblyIdentity> Appartient](../deployment/assemblyidentity-element-clickonce-deployment.md)

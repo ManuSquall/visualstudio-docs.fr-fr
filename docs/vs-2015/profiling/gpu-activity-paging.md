@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5979ccf8cafedb849b7ae9f7af6b0b35096e624f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62434161"
 ---
 # <a name="gpu-activity-paging"></a>Activité GPU (pagination)
@@ -27,4 +27,4 @@ Les segments **Activité GPU (pagination)** sous l’onglet Threads représenten
  Lorsque vous sélectionnez un segment de pagination GPU, le rapport sous l’onglet **Actuel** affiche des informations sur le paquet DMA qui a été traité. Ces informations incluent la durée pendant laquelle le paquet a attendu dans la file d’attente matérielle associée au moteur DirectX, le processus qui a envoyé le paquet DMA, ainsi que le temps nécessaire pour traiter le paquet.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Vue Utilisation](../profiling/utilization-view.md)
+ [vue Utilisation](../profiling/utilization-view.md)

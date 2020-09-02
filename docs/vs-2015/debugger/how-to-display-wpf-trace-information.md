@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Afficher les informations de Trace WPF | Microsoft Docs'
+title: 'Comment : afficher les informations de trace WPF | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,13 +18,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c9642902bf334ce83f95a9113059683f183c6116
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62537956"
 ---
-# <a name="how-to-display-wpf-trace-information"></a>Procédure : Afficher les informations de trace WPF
+# <a name="how-to-display-wpf-trace-information"></a>Comment : afficher les informations de trace WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] peut recevoir des informations de trace de débogage envoyées par des applications WPF et afficher ces informations dans la fenêtre **Sortie**. Pour afficher les informations de trace de débogage, le traçage WPF doit être activé.  
@@ -33,7 +33,7 @@ ms.locfileid: "62537956"
   
 ### <a name="to-enable-or-customize-wpf-trace-information"></a>Pour activer ou personnaliser les informations de trace WPF  
   
-1. Dans le menu **Outils**, sélectionnez **Options**.  
+1. Dans le menu **Tools** (Outils), sélectionnez **Options**.  
   
 2. Dans la boîte de dialogue **Options**, ouvrez le nœud **Débogage** dans la zone située à gauche.  
   
@@ -49,7 +49,7 @@ ms.locfileid: "62537956"
   
      Un contrôle de liste déroulante s’affiche dans la colonne Paramètres en regard de **Liaison de données** ou de la catégorie sur laquelle vous avez cliqué.  
   
-8. Cliquez sur la liste déroulante et sélectionnez le type d’informations de trace que vous souhaitez voir : **Tous les**, **critique**, **erreur**, **avertissement**, **informations**, **Verbose**, ou **ActivityTracing**.  
+8. Cliquez sur la liste déroulante et sélectionnez le type d’informations de trace que vous voulez voir : **Tous**, **Critique**, **Erreur**, **Avertissement**, **Informations**, **Commentaires** ou **Activité**.  
   
      **Critique** permet de tracer uniquement les événements « Critique ».  
   
@@ -69,7 +69,7 @@ ms.locfileid: "62537956"
   
 ### <a name="to-disable-wpf-trace-information"></a>Pour désactiver les informations de trace WPF  
   
-1. Dans le menu **Outils**, sélectionnez **Options**.  
+1. Dans le menu **Tools** (Outils), sélectionnez **Options**.  
   
 2. Dans la boîte de dialogue **Options**, ouvrez le nœud **Débogage** dans la zone située à gauche.  
   
@@ -88,4 +88,4 @@ ms.locfileid: "62537956"
 8. Cliquez sur **OK**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Débogage de WPF](../debugger/debugging-wpf.md)
+ [Débogage WPF](../debugger/debugging-wpf.md)
