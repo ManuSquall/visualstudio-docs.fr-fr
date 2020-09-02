@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: e1a3083b59ad0cec727f753395768a214ff571b7
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85283994"
 ---
 # <a name="how-to-specify-build-events-c"></a>Guide pratique pour spécifier des événements de build (C#)
@@ -44,7 +44,7 @@ Quand un projet est généré, les événements pré-build sont ajoutés à un f
 5. Dans la zone **Ligne de commande de l’événement post-build**, spécifiez la syntaxe de l’événement de build.
 
    > [!NOTE]
-   > Ajoutez une `call` instruction avant toutes les commandes postérieures à la génération qui exécutent des fichiers *. bat* . Par exemple, `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.
+   > Ajoutez une `call` instruction avant toutes les commandes postérieures à la génération qui exécutent des fichiers *. bat* .  Par exemple, `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.
 
 6. Dans la zone **Exécuter l’événement post-build**, spécifiez sous quelles conditions exécuter l’événement post-build.
 
@@ -179,4 +179,4 @@ Ensuite, appelez cette commande dans un événement post-build pour modifier le 
 - [Événements de build, page du concepteur de projets (C#)](../ide/reference/build-events-page-project-designer-csharp.md)
 - [Ligne de commande de l’événement pré-build/après génération (boîte de dialogue)](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
 - [Guide pratique pour spécifier des événements de build (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)
-- [Compilation et génération](../ide/compiling-and-building-in-visual-studio.md)
+- [Compiler et générer](../ide/compiling-and-building-in-visual-studio.md)

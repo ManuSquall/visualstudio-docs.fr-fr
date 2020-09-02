@@ -1,5 +1,5 @@
 ---
-title: IDebugAlias::GetICorDebugValue (fr) Microsoft Docs
+title: 'IDebugAlias :: GetICorDebugValue | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: fd01785fee7ce65296bac940fb19819415139d53
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736482"
 ---
 # <a name="idebugaliasgeticordebugvalue"></a>IDebugAlias::GetICorDebugValue
-Récupère une interface de code gérée qui représente la valeur associée à ce pseudonyme.
+Récupère une interface de code managé qui représente la valeur associée à cet alias.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,13 +41,13 @@ int GetICorDebugValue(
 
 ## <a name="parameters"></a>Paramètres
 `ppUnk`\
-[out] `IUnknown` interface qui représente la valeur associée à ce pseudonyme. Cette interface peut être demandée pour l’interface. `ICorDebugValue`
+[out] `IUnknown` interface qui représente la valeur associée à cet alias. Cette interface peut être interrogée pour l' `ICorDebugValue` interface.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de succès, les retours S_OK; autrement, renvoie un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes
- Cette méthode ne s’applique `ICorDebugValue` qu’aux valeurs gérées (l’interface est disponible dans le cadre .NET et est définie dans le cadre .NET SDK dans le fichier cordebug.idl).
+ Cette méthode s’applique uniquement aux valeurs managées ( `ICorDebugValue` est une interface disponible dans le .NET Framework et est définie dans le kit de développement logiciel (SDK) .NET Framework dans le fichier Cordebug. idl).
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

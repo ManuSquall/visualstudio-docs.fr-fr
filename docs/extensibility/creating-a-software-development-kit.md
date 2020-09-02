@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 61e547be5f240cafccc058eb7ea2249fd492554b
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904113"
 ---
 # <a name="create-a-software-development-kit"></a>Créer un kit de développement logiciel
@@ -27,7 +27,7 @@ Il existe deux types de kits de développement logiciel :
 
 Les sections suivantes décrivent l’infrastructure générale des kits de développement logiciel (SDK) et expliquent comment créer un SDK de plateforme et un SDK d’extension.
 
-## <a name="platform-sdks"></a>Kits de développement logiciels (SDK) pour plateformes
+## <a name="platform-sdks"></a>SDK de plateforme
 
 Les kits de développement logiciel (SDK) de plateforme sont requis pour développer des applications pour une plateforme. Par exemple, le [!INCLUDE[win81](../debugger/includes/win81_md.md)] Kit de développement logiciel (SDK) est requis pour développer des applications pour [!INCLUDE[win81](../debugger/includes/win81_md.md)] .
 
@@ -135,7 +135,7 @@ Les kits de développement logiciel (SDK) d’extension présentent la dispositi
 
 ### <a name="sdkmanifestxml"></a>SDKManifest.xml
 
-Le fichier *SDKManifest.xml* décrit la façon dont Visual Studio doit utiliser le kit de développement logiciel (SDK). Voici un exemple :
+Le fichier *SDKManifest.xml* décrit la façon dont Visual Studio doit utiliser le kit de développement logiciel (SDK). Par exemple :
 
 ```
 <FileList>
@@ -195,7 +195,7 @@ La liste suivante indique les éléments du fichier :
 
 16. Référence de fichier : spécifiée uniquement pour les références qui contiennent des contrôles ou qui sont des Winmd natifs. Pour plus d’informations sur la façon de spécifier si une référence contient des contrôles, consultez [spécifier l’emplacement des éléments de boîte à outils](#ToolboxItems) ci-dessous.
 
-## <a name="specify-the-location-of-toolbox-items"></a><a name="ToolboxItems"></a>Spécifier l’emplacement des éléments de la boîte à outils
+## <a name="specify-the-location-of-toolbox-items"></a><a name="ToolboxItems"></a> Spécifier l’emplacement des éléments de la boîte à outils
 
 L’élément **ToolBoxItems** du schéma *SDKManifest.xml* spécifie la catégorie et l’emplacement des éléments de boîte à outils dans les kits de développement logiciel (SDK) de plateforme et d’extension. Les exemples suivants montrent comment spécifier des emplacements différents. Cela s’applique aux références WinMD ou DLL.
 

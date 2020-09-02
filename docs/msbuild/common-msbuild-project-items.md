@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 99ed79b1654057c4114ceb171b5cb1e1dfdb439f
-ms.sourcegitcommit: dda98068c0f62ccd1a19fdfde4bdb822428d0125
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87425392"
 ---
 # <a name="common-msbuild-project-items"></a>Éléments communs des projets MSBuild
@@ -30,7 +30,7 @@ Dans MSBuild, un élément est une référence nommée à un ou plusieurs fichie
 
 Voici une liste de tous les éléments de projet communs.
 
-### <a name="reference"></a>Référence
+### <a name="reference"></a>Informations de référence
 
 Représente une référence (managée) d'assembly dans le projet.
 
@@ -41,7 +41,7 @@ Représente une référence (managée) d'assembly dans le projet.
 |FusionName|Chaîne facultative. Spécifie le nom de fusion simple ou fort de l'élément.<br /><br /> La présence de cet attribut peut faire gagner du temps, car il vous évite d'ouvrir le fichier d'assembly pour obtenir le nom de fusion.|
 |SpecificVersion|Valeur booléenne facultative. Indique si seule la version figurant dans le nom de fusion doit être référencée.|
 |Alias|Chaîne facultative. Alias éventuels de la référence.|
-|Privé|Valeur booléenne facultative. Indique si la référence doit être copiée dans le dossier de sortie. Cet attribut correspond à la propriété **Copie locale** de la référence qui se trouve dans l’IDE Visual Studio.|
+|Privées|Valeur booléenne facultative. Indique si la référence doit être copiée dans le dossier de sortie. Cet attribut correspond à la propriété **Copie locale** de la référence qui se trouve dans l’IDE Visual Studio.|
 
 ### <a name="comreference"></a>COMReference
 
@@ -76,7 +76,7 @@ Représente un fichier manifeste natif ou une référence à un fichier de ce ty
 
 ### <a name="projectreference"></a>ProjectReference
 
-Représente une référence à un autre projet. `ProjectReference`les éléments sont transformés en éléments de [référence](#reference) par la `ResolveProjectReferences` cible, donc toutes les métadonnées valides sur une référence peuvent être valides sur `ProjectReference` , si le processus de transformation ne le remplace pas.
+Représente une référence à un autre projet. `ProjectReference` les éléments sont transformés en éléments de [référence](#reference) par la `ResolveProjectReferences` cible, donc toutes les métadonnées valides sur une référence peuvent être valides sur `ProjectReference` , si le processus de transformation ne le remplace pas.
 
 |Nom des métadonnées de l’élément|Description|
 |---------------|-----------------|
@@ -112,7 +112,7 @@ Représente les ressources à incorporer dans l'assembly généré.
 | CopyToOutputDirectory | Chaîne facultative. Détermine si le fichier doit être copié dans le répertoire de sortie. Les valeurs sont les suivantes :<br /><br /> 1. jamais<br />2. toujours<br />3. PreserveNewest |
 | LogicalName | Chaîne obligatoire. Nom logique de la ressource incorporée. |
 
-### <a name="content"></a>Contenu
+### <a name="content"></a>Content
 
 Représente les fichiers qui ne sont pas compilés dans le projet, mais qui peuvent être incorporés ou publiés en même temps.
 
@@ -170,4 +170,4 @@ Représente les assemblys dont les espaces de noms doivent être importés par l
 
 - [Propriétés communes des projets MSBuild](../msbuild/common-msbuild-project-properties.md)
 - [Propriétés MSBuild pour les projets kit SDK .NET Core](/dotnet/core/project-sdk/msbuild-props)
-- [Métadonnées d’élément MSBuild courantes](common-msbuild-item-metadata.md)
+- [Métadonnées communes d’éléments MSBuild](common-msbuild-item-metadata.md)

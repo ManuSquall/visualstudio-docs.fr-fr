@@ -1,5 +1,5 @@
 ---
-title: 'Démarrage rapide : Déboguer du code JavaScript à l’aide de la console | Microsoft Docs'
+title: 'Démarrage rapide : déboguer du code JavaScript à l’aide de la console | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -21,13 +21,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a2256dfde39c761258ffb63ec6bbd9473e1be385
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65687584"
 ---
-# <a name="quickstart-debug-javascript-using-the-console"></a>Démarrage rapide : Déboguer du code JavaScript à l’aide de la console
+# <a name="quickstart-debug-javascript-using-the-console"></a>Démarrage rapide : déboguer du code JavaScript à l’aide de la console
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.png « windows_and_phone_content »)  
@@ -48,7 +48,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
 - Effectuer d’autres tâches, telles que l’effacement de l’écran. Consultez [JavaScript Console commands](../debugger/javascript-console-commands.md) pour obtenir la liste complète des commandes.  
   
-  Dans cette rubrique :  
+  Dans cette rubrique :  
   
 - [Débogage à l’aide de la fenêtre de la console JavaScript](#InteractiveConsole)  
   
@@ -59,11 +59,11 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 - [Basculement du contexte d’exécution du script](#Switching)  
   
 > [!TIP]
-> Si la fenêtre de la console JavaScript est fermée, sélectionnez **Déboguer**>**Fenêtres** > **Console JavaScript** pour la rouvrir. La fenêtre s’ouvre uniquement pendant une session de débogage de script.  
+> Si la fenêtre de la console JavaScript est fermée, choisissez **Déboguer**la > **Windows**  >  **console Windows JavaScript** pour la rouvrir. La fenêtre s’ouvre uniquement pendant une session de débogage de script.  
   
- À l’aide de la fenêtre de la console JavaScript, vous pouvez interagir avec votre application sans interrompre et redémarrer le débogueur. Pour plus d’informations, consultez [actualiser une application (JavaScript)](../debugger/refresh-an-app-javascript.md). Pour plus d’informations sur les fonctionnalités, comme à l’aide de l’Explorateur DOM et la définition des points d’arrêt, de débogage de JavaScript, consultez [Guide de démarrage rapide : Déboguer le code HTML et CSS](../debugger/quickstart-debug-html-and-css.md) et [déboguer des applications dans Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
+ À l’aide de la fenêtre de la console JavaScript, vous pouvez interagir avec votre application sans interrompre et redémarrer le débogueur. Pour plus d’informations, consultez [actualiser une application (JavaScript)](../debugger/refresh-an-app-javascript.md). Pour plus d’informations sur d’autres fonctionnalités de débogage JavaScript, telles que l’utilisation de l’Explorateur DOM et la définition de points d’arrêt, consultez [démarrage rapide : déboguer des applications HTML et CSS](../debugger/quickstart-debug-html-and-css.md) et [Déboguer des applications dans Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
   
-## <a name="InteractiveConsole"></a> Débogage à l’aide de la fenêtre de la console JavaScript  
+## <a name="debug-by-using-the-javascript-console-window"></a><a name="InteractiveConsole"></a> Déboguer à l’aide de la fenêtre de la console JavaScript  
  La procédure suivante crée une application `FlipView` et montre comment déboguer interactivement une erreur de codage JavaScript.  
   
 > [!CAUTION]
@@ -71,11 +71,11 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
 #### <a name="to-debug-javascript-code-in-the-flipview-app"></a>Pour déboguer le code JavaScript dans l’application FlipView  
   
-1. Créez une solution dans Visual Studio en sélectionnant **Fichier** > **Nouveau projet**.  
+1. Créez une nouvelle solution dans Visual Studio en choisissant **fichier**  >  **nouveau projet**.  
   
-2. Sélectionnez **JavaScript** > **Applications du Windows Store**, **Applications Windows** ou **Applications Windows Phone**, puis **Application vide**.  
+2. Choisissez **JavaScript**applications du  >  Windows**Store**JavaScript, applications **Windows** ou **applications Windows Phone**, puis **application vide**.  
   
-3. Attribuez un nom au projet, tel que `FlipViewApp`, puis choisissez **OK** pour créer l’application.  
+3. Tapez un nom pour le projet, comme `FlipViewApp`, puis choisissez **OK** pour créer l’application.  
   
 4. Dans l’élément BODY de default.html, remplacez le code HTML existant par le code suivant :  
   
@@ -155,17 +155,17 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
 7. Si une cible de débogage n’est pas déjà sélectionnée, sélectionnez **Simulateur** ou, pour Windows Phone, **Emulator 8.1 WVGA 4 pouces 512 Mo** dans la liste déroulante en regard du bouton **Périphérique** de la barre d’outils **Déboguer** :  
   
-     ![Liste cible de débogage sélectionnez](../debugger/media/js-select-target.png "JS_Select_Target")  
+     ![Sélectionner la liste cible de débogage](../debugger/media/js-select-target.png "JS_Select_Target")  
   
 8. Appuyez sur F5 pour démarrer le débogueur.  
   
      L’application fonctionne mais les images sont absentes. Les erreurs APPHOST dans la fenêtre de console JavaScript indiquent que les images sont absentes.  
   
-9. Avec le `FlipView` application s’exécutant dans le simulateur ou l’émulateur Windows Phone, type `Data.items` dans l’invite d’entrée de la fenêtre de console (à côté le « >> » symbole) et appuyez sur ENTRÉE.  
+9. Une fois l' `FlipView` application en cours d’exécution dans le simulateur ou l’émulateur Windows Phone, tapez `Data.items` dans l’invite d’entrée de la fenêtre de la console (à côté du symbole « >> ») et appuyez sur entrée.  
   
      Un visualiseur pour l’objet `items` apparaît dans la fenêtre de la console. Cela indique que l’objet `items` a été instancié et qu’il est disponible dans le contexte de script actif. Dans la fenêtre de la console, cliquez sur les nœuds d’un objet pour afficher les valeurs des propriétés (ou utilisez les touches de direction). Si vous cliquez sur l’objet `items._data` , comme le montre l’illustration suivante, vous pouvez noter que les références à la source de l’image sont incorrectes, comme prévu. Les images par défaut (logo.png) sont encore présentes dans l’objet, et des images manquantes sont intercalées avec des images attendues.  
   
-     ![Fenêtre de JavaScript Console](../debugger/media/js-console-window.png "JS_Console_Window")  
+     ![Fenêtre de la console JavaScript](../debugger/media/js-console-window.png "JS_Console_Window")  
   
      Remarquez aussi que l’objet `items._data` comporte bien plus d’éléments que vous ne pouviez le prévoir.  
   
@@ -205,26 +205,26 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
 17. Dans l’explorateur DOM, vous pouvez voir l’élément DIV mis à jour et naviguer dans la sous-arborescence pour rechercher les éléments IMG attendus.  
   
-18. Arrêtez le débogage en sélectionnant **Déboguer** > **Arrêter le débogage** ou en appuyant sur Maj+F5, puis corrigez le code source.  
+18. Arrêtez le débogage en sélectionnant **Déboguer**  >  **arrêter** le débogage ou en appuyant sur Maj + F5, puis corrigez le code source.  
   
      Pour la page default.html complète contenant l’exemple de code corrigé, consultez [Déboguer un exemple de code HTML, CSS et JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md).  
   
-## <a name="InteractiveDebuggingBreakMode"></a> Débogage interactif et mode arrêt  
+## <a name="interactive-debugging-and-break-mode"></a><a name="InteractiveDebuggingBreakMode"></a> Débogage interactif et mode arrêt  
  Utilisez des points d’arrêt et effectuez une exécution pas-à-pas du code pendant que vous utilisez les outils de débogage JavaScript comme la fenêtre de la console JavaScript. Lorsqu’un programme en cours d’exécution dans le débogueur rencontre un point d’arrêt, le débogueur suspend provisoirement l’exécution du programme. Lorsque l’exécution est suspendue, votre programme passe du mode exécution au mode arrêt. Vous pouvez reprendre manuellement l’exécution à tout moment.  
   
  Lorsqu’un programme est en mode arrêt, vous pouvez utiliser la fenêtre de la console JavaScript pour exécuter les scripts et les commandes valides dans le contexte actif d’exécution du script. Dans cette procédure, nous utiliserons la version corrigée de l’application `FlipView` que vous avez créée précédemment pour illustrer l’utilisation du mode arrêt.  
   
 #### <a name="to-set-a-breakpoint-and-debug-the-app"></a>Pour définir un point d’arrêt et déboguer l’application  
   
-1. Dans le fichier default.html de l’application `FlipView` que vous avez créée précédemment, ouvrez le menu contextuel de la fonction `updateImages()` et sélectionnez **Point d’arrêt** > **Insérer un point d’arrêt**.  
+1. Dans le fichier default.html de l' `FlipView` application que vous avez créée précédemment, ouvrez le menu contextuel de la `updateImages()` fonction, puis choisissez **point d’arrêt**  >  **Insérer un point d’arrêt**.  
   
 2. Choisissez **Ordinateur local** ou **Emulator 8.1 WVGA 4 pouces 512 Mo** dans la liste déroulante en regard du bouton **Démarrer le débogage** de la barre d’outils **Déboguer** .  
   
-3. Sélectionnez **Déboguer** > **Démarrer le débogage**ou appuyez sur F5.  
+3. Choisissez **Déboguer**  >  **Démarrer le débogage**ou appuyez sur F5.  
   
      L’application passe en mode arrêt lorsque l’exécution atteint la fonction `updateImages()` , et la ligne en cours du programme d’exécution est mise en surbrillance en jaune.  
   
-     ![Utilisation du mode arrêt avec la JavaScript Console](../debugger/media/js-breakmode.png "JS_BreakMode")  
+     ![Utilisation du mode arrêt avec la console JavaScript](../debugger/media/js-breakmode.png "JS_BreakMode")  
   
      Modifiez les valeurs des variables pour changer immédiatement l’état du programme sans mettre fin à la session de débogage en cours.  
   
@@ -234,7 +234,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
      L’illustration suivante présente la fenêtre de la console à ce stade.  
   
-     ![Fenêtre de Console JavaScript affichant un visualiseur](../debugger/media/js-console-function-visualizer.png "JS_Console_Function_Visualizer")  
+     ![Fenêtre Console JavaScript affichant un visualiseur](../debugger/media/js-console-function-visualizer.png "JS_Console_Function_Visualizer")  
   
 6. Copiez une ligne de la fonction depuis la fenêtre de sortie dans l’invite d’entrée, puis remplacez la valeur d’index par 3 :  
   
@@ -250,23 +250,23 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
      Pour revenir à Visual Studio, appuyez sur F12 ou Alt+Tab.  
   
-## <a name="SinglelineMultilineMode"></a> Mode à ligne simple et mode multiligne dans la fenêtre de la console JavaScript  
+## <a name="single-line-mode-and-multiline-mode-in-the-javascript-console-window"></a><a name="SinglelineMultilineMode"></a> Mode à ligne simple et mode multiligne dans la fenêtre de la console JavaScript  
  L’invite d’entrée de la fenêtre de la console JavaScript prend en charge le mode à ligne simple et le mode multiligne. La procédure de débogage interactif de cette rubrique fournit un exemple d’utilisation de ces deux modes. Appuyez sur Ctrl+Alt+M pour basculer entre les modes.  
   
  Le mode à ligne simple fournit l’historique des entrées. Naviguez dans l’historique des entrées à l’aide des touches Haut et Bas. Le mode à ligne simple efface la ligne d’invite d’entrée lorsque vous exécutez les scripts. Pour exécuter un script en mode à ligne simple, appuyez sur Entrée.  
   
  Le mode multiligne n’efface pas l’invite d’entrée lorsque vous exécutez des scripts. Lorsque vous basculez en mode à ligne simple à partir du mode multiligne, vous pouvez effacer la ligne d’entrée en appuyant sur **Effacer l’entrée** (le « X » rouge). Pour exécuter un script en mode multiligne, appuyez sur Ctrl+Entrée ou sélectionnez le symbole représentant une flèche dans l’angle inférieur droit de la fenêtre.  
   
-## <a name="Switching"></a> Basculement du contexte d’exécution du script  
+## <a name="switching-the-script-execution-context"></a><a name="Switching"></a> Basculement du contexte d’exécution du script  
  La fenêtre de la console JavaScript vous permet d’interagir avec un seul contexte d’exécution, lequel représente une seule instance de l’hôte de la plateforme web (WWAHost.exe), à la fois. Dans certains scénarios, votre application peut démarrer une autre instance de l’hôte, comme lorsque vous utilisez un `iframe`, un contrat de partage, un traitement web ou un contrôle `WebView` . Si une autre instance de l’hôte est en cours d’exécution, vous pouvez sélectionner un autre contexte d’exécution tout en exécutant l’application en sélectionnant le contexte d’exécution dans la liste **Cible** .  
   
  L’illustration suivante montre la liste Cible dans la fenêtre de la console JavaScript.  
   
- ![Cibler la sélection dans la fenêtre de console JavaScript](../debugger/media/js-console-target.png "JS_Console_Target")  
+ ![Sélection cible dans la fenêtre de la console JavaScript](../debugger/media/js-console-target.png "JS_Console_Target")  
   
  Vous pouvez aussi basculer le contexte d’exécution à l’aide de la commande `cd` , mais vous devez connaître le nom de l’autre contexte d’exécution et la référence que vous devez utiliser dans la portée. La liste **Cible** offre le meilleur accès aux autres contextes d’exécution.  
   
-## <a name="BrowserSupport"></a> Navigateurs et plateformes pris en charge  
+## <a name="browser-and-platform-support"></a><a name="BrowserSupport"></a> Navigateurs et plateformes pris en charge  
  La fenêtre de la console JavaScript est prise en charge sur les plateformes suivantes :  
   
 - Applications[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] et Windows Phone Store en JavaScript et HTML  
@@ -276,8 +276,8 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 - Internet Explorer 10 s’exécutant sur [!INCLUDE[win8](../includes/win8-md.md)]  
   
 ## <a name="see-also"></a>Voir aussi  
- [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
- [JavaScript Console commands](../debugger/javascript-console-commands.md)   
+ [Déboguer des applications dans Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
+ [Commandes de la console JavaScript](../debugger/javascript-console-commands.md)   
  [Actualiser une application (JavaScript)](../debugger/refresh-an-app-javascript.md)   
  [Raccourcis clavier](../debugger/keyboard-shortcuts-html-and-javascript.md)   
  [Déboguer un exemple de code HTML, CSS et JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)   

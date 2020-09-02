@@ -11,16 +11,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 070068853d962bdf9b209edb9410d33d46ccf853
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85903556"
 ---
 # <a name="debug-tasks"></a>Tâches de débogage
 Pour déboguer un programme, celui-ci doit être lancé et un moteur de débogage (DE) doit être attaché à celui-ci, sinon le DE doit être attaché à un programme lancé précédemment. Une fois attaché, le DE doit générer certains événements DE démarrage. En réponse, le package de débogage tente de lier les points d’arrêt définis dans l’IDE. Lorsque le programme atteint un point d’arrêt lié, il s’arrête et attend une entrée de l’utilisateur.
 
-## <a name="in-this-section"></a>Dans cette section
+## <a name="in-this-section"></a>Contenu de cette section
  [Problèmes de sécurité](../../extensibility/debugger/security-issues.md) Décrit les étapes de sécurité nécessaires pour déboguer un programme.
 
  [Lancer un programme](../../extensibility/debugger/launching-a-program.md) Fournit des instructions pas à pas sur la façon de spécifier un DE, qui appelle le système d’exploitation pour lancer le programme.

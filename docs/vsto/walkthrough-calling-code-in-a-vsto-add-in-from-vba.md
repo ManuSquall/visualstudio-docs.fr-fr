@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6fdbd2cf85086bac0aa7bb56c128a7ad6fe36f94
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72650782"
 ---
 # <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>Procédure pas à pas : appel de code dans un complément VSTO à partir de VBA
@@ -32,7 +32,7 @@ ms.locfileid: "72650782"
 
  Bien que cette procédure pas à pas utilise spécifiquement Excel, les concepts présentés ici s'appliquent à tous les modèles de projet de complément VSTO fournis par Visual Studio.
 
- Cette procédure pas à pas décrit les tâches suivantes :
+ Cette procédure pas à pas décrit les tâches suivantes :
 
 - Définition d'une classe pouvant être exposée à d'autres solutions Office
 
@@ -42,8 +42,8 @@ ms.locfileid: "72650782"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Configuration requise
- Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :
+## <a name="prerequisites"></a>Prérequis
+ Vous devez disposer des éléments suivants pour exécuter cette procédure pas à pas :
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -56,7 +56,7 @@ ms.locfileid: "72650782"
 
 1. Créez un projet de complément VSTO Excel nommé **ExcelImportData**à l’aide du modèle de projet de complément VSTO Excel. Pour plus d'informations, consultez [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ouvre le fichier de code **ThisAddIn.cs** ou **ThisAddIn.vb** et ajoute le projet **ExcelImportData** à l' **Explorateur de solutions**.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ouvre le fichier de code **ThisAddIn.cs** ou **ThisAddIn. vb** et ajoute le projet **ExcelImportData** à **Explorateur de solutions**.
 
 ## <a name="define-a-class-that-you-can-expose-to-other-office-solutions"></a>Définir une classe que vous pouvez exposer à d’autres solutions Office
  L'objectif de cette procédure pas à pas est d'appeler la méthode `ImportData` d'une classe nommée `AddInUtilities` dans votre complément VSTO à partir du code VBA. Cette méthode écrit une chaîne dans la cellule A1 de la feuille de calcul active.
@@ -97,7 +97,7 @@ ms.locfileid: "72650782"
      [!code-csharp[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/ThisAddIn.cs#1)]
      [!code-vb[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/ThisAddIn.vb#1)]
 
-4. Dans le menu **Générer** , cliquez sur **Générer la solution**.
+4. Dans le menu **Générer**, cliquez sur **Générer la solution**.
 
      Vérifiez que la solution se génère sans erreur.
 
@@ -108,7 +108,7 @@ ms.locfileid: "72650782"
 
 1. Appuyez sur **F5** pour exécuter votre projet.
 
-2. Dans Excel, enregistrez le classeur actif en tant que classeur Excel prenant en charge les macros (*.xlsm) Enregistrez-le dans un emplacement approprié, tel que le Bureau.
+2. Dans Excel, enregistrez le classeur actif en tant que classeur Excel prenant en charge les macros (*.xlsm) dans un emplacement pratique, tel que le Bureau.
 
 3. Dans le ruban, cliquez sur l'onglet **Développeur** .
 
@@ -123,7 +123,7 @@ ms.locfileid: "72650782"
 
      Le fichier de code de l'objet `ThisWorkbook` s'ouvre.
 
-6. Ajoutez le code VBA suivant au fichier de code. Ce code obtient d’abord un objet COMAddIn qui représente le complément VSTO **ExcelImportData** . Ensuite, le code utilise la propriété Object de l’objet COMAddIn pour appeler la méthode `ImportData`.
+6. Ajoutez le code VBA suivant au fichier de code. Ce code obtient d’abord un objet COMAddIn qui représente le complément VSTO **ExcelImportData** . Ensuite, le code utilise la propriété Object de l’objet COMAddIn pour appeler la `ImportData` méthode.
 
     ```vb
     Sub CallVSTOMethod()
@@ -155,5 +155,5 @@ ms.locfileid: "72650782"
 - [Appeler du code dans des compléments VSTO à partir d’autres solutions Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)
 - [Développer des solutions Office](../vsto/developing-office-solutions.md)
 - [Comment : créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
-- [Architecture des compléments VSTO](../vsto/architecture-of-vsto-add-ins.md)
+- [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)
 - [Personnaliser les fonctionnalités de l’interface utilisateur à l’aide des interfaces d’extensibilité](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugAlias::Dispose Microsoft Docs
+title: IDebugAlias ::D ispose | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: df3a2ecc50063df8f90645b9ccaa72754c3728c1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736560"
 ---
 # <a name="idebugaliasdispose"></a>IDebugAlias::Dispose
-Marque ce pseudonyme pour le retrait.
+Marque cet alias pour la suppression.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -38,8 +38,8 @@ int Dispose();
 ## <a name="parameters"></a>Paramètres
  Aucun.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de succès, les retours S_OK; autrement, renvoie un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes
  Une fois cette méthode appelée, l’alias n’est plus disponible.

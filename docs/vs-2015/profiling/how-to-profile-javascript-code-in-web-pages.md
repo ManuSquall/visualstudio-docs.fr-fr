@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Profiler du code JavaScript dans des pages web | Microsoft Docs'
+title: Guide pratique pour profiler du code JavaScript dans des pages web | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,18 +14,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: aa504e961ed8e592f5e3df84ff7a688fa2398200
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65688144"
 ---
-# <a name="how-to-profile-javascript-code-in-web-pages"></a>Procédure : Profiler du Code JavaScript dans les Pages Web
+# <a name="how-to-profile-javascript-code-in-web-pages"></a>Guide pratique pour profiler du code JavaScript dans des pages web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Les outils de profilage de[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] peuvent collecter des données de performances pour le code JavaScript qui s’exécute dans une application web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] , une page web arbitraire ou une application JavaScript en utilisant la méthode de profilage par instrumentation.  
   
- **Spécifications**  
+ **Configuration requise**  
   
 - [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
@@ -34,7 +34,7 @@ Les outils de profilage de[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] peuvent c
 > [!WARNING]
 > Pour profiler JavaScript dans des applications du Windows Store, consultez une des rubriques suivantes :  
 > 
-> - [Minutage de fonction JavaScript](https://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03) [minutage de fonction JavaScript sur un périphérique distant](https://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
+> - Minutage des fonctions JavaScript de [minutage des fonctions JavaScript](https://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03) [sur un appareil distant](https://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
 >   - [Analyser les données de minutage de fonction JavaScript](https://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
 >   - 
   
@@ -42,13 +42,13 @@ Les outils de profilage de[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] peuvent c
   
  Quand vous spécifiez le profilage JavaScript, le code JavaScript qui s’exécute dans le navigateur et le code [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] qui s’exécute sur le serveur sont profilés.  
   
-- Pour une application web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], le code JavaScript qui s’exécute dans le navigateur et le code [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] qui s’exécute sur le serveur sont profilés.  
+- Pour une application web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] , le code JavaScript qui s’exécute dans le navigateur et le code [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] qui s’exécute sur le serveur sont profilés.  
   
 - Pour une page web arbitraire, le code JavaScript qui s’exécute dans le navigateur est profilé.  
   
 ### <a name="to-profile-javascript-in-an-aspnet-web-application-project"></a>Pour profiler JavaScript dans un projet d’application web ASP.NET  
   
-1. Dans [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], ouvrez le projet web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
+1. Dans [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], ouvrez le projet web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] .  
   
 2. Dans le menu **Analyser** , cliquez sur **Lancer l’Assistant Performance**.  
   
@@ -58,7 +58,7 @@ Les outils de profilage de[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] peuvent c
   
 5. Dans la troisième page de l’Assistant, cochez la case **Profiler JavaScript** , puis cliquez sur **Suivant**.  
   
-6. Dans la quatrième page de l’Assistant, cliquez sur **Terminer** pour démarrer l’application web dans le navigateur.  
+6. Sur la quatrième page de l’Assistant, cliquez sur **Terminer** pour démarrer l’application Web dans le navigateur.  
   
 7. Testez la fonctionnalité que vous voulez profiler.  
   
@@ -80,7 +80,7 @@ Les outils de profilage de[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] peuvent c
   
     2. Cochez la case **Profiler JavaScript** , puis cliquez sur **Suivant**.  
   
-6. Dans la quatrième page de l’Assistant, cliquez sur **Terminer** pour démarrer la page web dans le navigateur.  
+6. Sur la quatrième page de l’Assistant, cliquez sur **Terminer** pour démarrer la page Web dans le navigateur.  
   
 7. Testez la fonctionnalité que vous voulez profiler.  
   
