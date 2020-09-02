@@ -1,5 +1,5 @@
 ---
-title: les variantes MSAA x-4 x-2 0 | Microsoft Docs
+title: Variantes MSAA 0x-2x-4x | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 668a6603-5082-4c78-98e6-f3dc871aa55b
@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 707d63d3ae5fb487f6232321a1d9d3128d379e06
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "64816536"
 ---
 # <a name="0x2x4x-msaa-variants"></a>Variantes MSAA 0x/2x/4x
@@ -49,7 +49,7 @@ Substitue les paramètres d‘anticrénelage MSSA (Multi-Sample Anti-Aliasing) s
 
   L'effet concret de ces modifications est que l'ensemble du rendu se produit au niveau d'une cible de rendu MSAA, mais si votre application utilise l'une de ces cibles de rendu ou mémoires tampons de chaîne de permutation comme vue de la ressource de nuanceur ou vue de l'accès arbitraire, les données sont échantillonnées à partir de la copie non MSAA résolue de la cible de rendu.
 
-## <a name="restrictions-and-limitations"></a>Restrictions et limitations
+## <a name="restrictions-and-limitations"></a>Limitations et restrictions
  Dans Direct3D11, les textures MSAA sont soumises à davantage de restrictions que les textures non MSAA. Par exemple, vous ne pouvez pas appeler `ID3D11DeviceContext::UpdateSubresource` sur une texture MSAA, et l'appel de `ID3D11DeviceContext::CopySubresourceRegion` échoue si le nombre d'échantillons et la qualité d'échantillon de la ressource source et de la ressource de destination ne correspondent pas, ce qui peut se produire quand cette variante substitue les paramètres MSAA d'une ressource mais pas de l'autre.
 
  Quand le lecture détecte ce type de conflit, elle fait son possible pour répliquer le comportement visé, mais le résultat n'est pas garanti. Bien qu'il soit rare que cela affecte les performances de ces variantes ou que leur impact en soit dissimulé, cela est possible (par exemple, quand le contrôle de flux dans un nuanceur de pixels est déterminé par le contenu précis d'une texture), car le contenu de la texture répliquée risque de ne pas être identique.

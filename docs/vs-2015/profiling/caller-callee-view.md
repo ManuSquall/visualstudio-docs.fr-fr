@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 58aca542571066ecfa9328c9600972665e757150
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68176638"
 ---
 # <a name="callercallee-view"></a>Appelant/Appelé, mode
@@ -38,11 +38,11 @@ La vue Appelant/Appelé affiche des données de profilage pour la fonction séle
   
  Pour sélectionner une autre fonction comme fonction active, dans la grille centrale de la vue Rapport, double-cliquez sur l’une des fonctions répertoriées dans les deux autres grilles. La vue Rapport est mise à jour automatiquement pour refléter les modifications.  
   
- Vous pouvez trier les données en cliquant sur un nom de colonne. Des colonnes supplémentaires peuvent être ajoutées à la vue Appelant/Appelé. Pour plus d’informations, consultez [Guide pratique pour Personnaliser les colonnes de la vue rapport](../profiling/how-to-customize-report-view-columns.md).  
+ Vous pouvez trier les données en cliquant sur un nom de colonne. Des colonnes supplémentaires peuvent être ajoutées à la vue Appelant/Appelé. Pour plus d’informations, consultez [Guide pratique pour personnaliser les colonnes de la vue Rapport](../profiling/how-to-customize-report-view-columns.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Vue Appelant/Appelé - Données d’échantillonnage](../profiling/caller-callee-view-sampling-data.md)   
- [Vue Appelant/Appelé - Données d’instrumentation](../profiling/caller-callee-view-instrumentation-data.md)   
- [Vue Appelant/Appelé - Données d’instrumentation de la mémoire .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
- [Vue Appelant/Appelé - Données d’échantillonnage de mémoire .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
- [Vue Appelant/Appelé - Données de conflit](../profiling/caller-callee-view-contention-data.md)
+ [Vue appelant/appelé-données d’échantillonnage](../profiling/caller-callee-view-sampling-data.md)   
+ [Vue appelant/appelé-données d’instrumentation](../profiling/caller-callee-view-instrumentation-data.md)   
+ [Vue appelant/appelé-données d’instrumentation de la mémoire .net](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
+ [Vue appelant/appelé-données d’échantillonnage de la mémoire .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
+ [Vue appelant/appelé-données de conflit](../profiling/caller-callee-view-contention-data.md)

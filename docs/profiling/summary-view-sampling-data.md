@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 649d0e9e5b32c124cfa962f45e4d128e4a32210f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778204"
 ---
 # <a name="summary-view---sampling-data"></a>Vue Résumé - Données d’échantillonnage
@@ -26,7 +26,7 @@ La vue Résumé affiche des informations sur les fonctions dont le coût est le 
 > Les fonctionnalités de sécurité renforcée de Windows 8 et Windows Server 2012 ont imposé des changements importants dans la façon dont le profileur Visual Studio collecte les données sur ces plateformes. Les applications UWP nécessitent aussi de nouvelles techniques de collecte. Consultez [Outils d’analyse des performances sur les applications Windows 8 et Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 
 ## <a name="timeline-graph"></a>Graphique chronologique
- Le graphique chronologique de la vue Résumé montre le pourcentage d’utilisation du processeur (UC) de l’application profilée pendant la durée du profilage. Vous pouvez utiliser le graphique chronologique pour filtrer la vue en lui appliquant un intervalle de temps sélectionné. Pour plus d’informations, voir [Comment : Filtrer les vues du rapport à partir de la chronologie sommaire](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).
+ Le graphique chronologique de la vue Résumé montre le pourcentage d’utilisation du processeur (UC) de l’application profilée pendant la durée du profilage. Vous pouvez utiliser le graphique chronologique pour filtrer la vue en lui appliquant un intervalle de temps sélectionné. Pour plus d’informations, consultez [Comment : filtrer les vues de rapport à partir de la chronologie Résumé](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).
 
 ## <a name="hot-path"></a>Chemin réactif
  Le **chemin réactif** montre le chemin d’exécution dans lequel la plupart des échantillons ont été collectés. Vous pouvez cliquer sur une fonction pour afficher la vue Détails de la fonction pour celle-ci. Pour afficher d’autres vues pour la fonction, cliquez avec le bouton droit sur la fonction puis cliquez sur une vue de la liste.
@@ -35,7 +35,7 @@ La vue Résumé affiche des informations sur les fonctions dont le coût est le 
 
 |Colonne|Description|
 |------------|-----------------|
-|**Nom   **|Nom de la fonction.|
+|**Name**|Nom de la fonction.|
 |**% des échantillons inclusifs**|Pourcentage de tous les échantillons collectés quand cette fonction ou une fonction appelée par cette fonction s’exécutait.|
 |**% d’échantillons exclusifs**|Pourcentage de tous les échantillons collectés quand la fonction exécutait du code du corps de la fonction. Ce pourcentage n’inclut pas les échantillons collectés dans les fonctions appelées par cette fonction.|
 
@@ -48,9 +48,9 @@ La vue Résumé affiche des informations sur les fonctions dont le coût est le 
 
 |Colonne|Description|
 |------------|-----------------|
-|**Nom   **|Nom de la fonction.|
+|**Name**|Nom de la fonction.|
 |**% d’échantillons exclusifs**|Pourcentage de tous les échantillons de l’exécution de la fonction collectés quand la fonction exécutait du code du corps de la fonction. Le pourcentage ne comprend pas les échantillons collectés quand des fonctions appelées par cette fonction étaient en cours d’exécution.|
 
 ## <a name="see-also"></a>Voir aussi
-- [Vue sommaire - données de mémoire .NET](../profiling/summary-view-dotnet-memory-data.md)
-- [Vue sommaire - données d’instrumentation](../profiling/summary-view-instrumentation-data.md)
+- [Vue Résumé - Données de la mémoire .NET](../profiling/summary-view-dotnet-memory-data.md)
+- [Vue Résumé-données d’instrumentation](../profiling/summary-view-instrumentation-data.md)

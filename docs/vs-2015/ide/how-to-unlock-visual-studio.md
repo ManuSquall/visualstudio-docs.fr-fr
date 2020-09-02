@@ -11,10 +11,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a71a045661c48fd36733ecd8d2266470667a5c35
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670594"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Déverrouillage de Visual Studio
@@ -50,7 +50,7 @@ Vous pouvez évaluer Visual Studio gratuitement pendant 30 jours. Quand vous vou
 ### <a name="updating-stale-licenses"></a>Mise à jour des licences obsolètes
  Le message ci-après selon lequel votre licence est périmée s'est peut-être affiché dans Visual Studio.
 
- ![Boîte de dialogue d’informations sur l’utilisateur de Visual Studio](../ide/media/vs2013-userinfo.png "|::ref1::|")
+ ![Boîte de dialogue d’informations sur l’utilisateur de Visual Studio](../ide/media/vs2013-userinfo.png "VS2013_UserInfo")
 
  Ce message indique que, même si votre abonnement est peut-être toujours valide, le jeton de licence que Visual Studio utilise pour maintenir votre abonnement à jour n'a pas été actualisé et est devenu obsolète en raison de l'une des raisons suivantes :
 
@@ -70,7 +70,7 @@ Vous pouvez évaluer Visual Studio gratuitement pendant 30 jours. Quand vous vou
 
 1. Renouveler votre abonnement. Pour plus d'informations sur la licence que vous utilisez, accédez à Fichier > boîte de dialogue Paramètres de compte et examinez les informations de licence sur le côté droit de la boîte de dialogue.
 
-2. Si un autre abonnement est associé à un compte différent, ajoutez ce compte à la liste Tous les comptes située à gauche de la boîte de dialogue Fichier > Paramètres de compte en cliquant sur le lien Ajouter un compte.
+2. Si un autre abonnement est associé à un compte différent, ajoutez ce compte à la liste Tous les comptes située à gauche de la boîte de dialogue Fichier > Paramètres de compte en cliquant sur le lien Ajouter un .
 
 ## <a name="see-also"></a>Voir aussi
  [Connexion à Visual Studio](../ide/signing-in-to-visual-studio.md)

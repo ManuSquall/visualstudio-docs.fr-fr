@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 3dace7b13816c63664ccb4dabfed52d1c5fb7523
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778074"
 ---
 # <a name="understand-instrumentation-data-values"></a>Comprendre le fonctionnement des valeurs de données d’instrumentation
@@ -98,5 +98,5 @@ Pourcentage du total des valeurs de temps inclusif d’application de la session
 
 ## <a name="see-also"></a>Voir aussi
 
-[Analyser les données](../profiling/analyzing-performance-tools-data.md)
-des outils de performance[Comment : Choisissez des méthodes de collecte](../profiling/how-to-choose-collection-methods.md)
+[Analyser les données](../profiling/analyzing-performance-tools-data.md) 
+ des outils d’analyse des performances [Comment : choisir des méthodes de collection](../profiling/how-to-choose-collection-methods.md)

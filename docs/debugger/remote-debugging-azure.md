@@ -12,10 +12,10 @@ ms.workload:
 - dotnetcore
 - azure
 ms.openlocfilehash: debf44bfe8187a7fd84e04b4362283658f636f17
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536784"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>ASP.NET Core de débogage à distance sur IIS dans Azure dans Visual Studio
@@ -51,7 +51,7 @@ Visual Studio 2019 est requis pour suivre les étapes décrites dans cet article
 Visual Studio 2017 est requis pour suivre les étapes décrites dans cet article.
 ::: moniker-end
 
-### <a name="network-requirements"></a>Conditions requises en matière de réseau
+### <a name="network-requirements"></a>Configuration requise pour le réseau
 
 Le débogage entre deux ordinateurs connectés via un proxy n’est pas pris en charge. Le débogage sur une connexion à latence élevée ou à faible bande passante, tel qu’Internet à distance ou sur Internet dans les différents pays, n’est pas recommandé et peut échouer ou être trop lent. Pour obtenir la liste complète des conditions requises, consultez [Configuration requise](../debugger/remote-debugging.md#requirements_msvsmon).
 
@@ -68,7 +68,7 @@ Le débogage entre deux ordinateurs connectés via un proxy n’est pas pris en 
 
 1. Ouvrez le fichier About.cshtml.cs et définissez un point d’arrêt dans la `OnGet` méthode (dans modèles plus anciens, ouvrez HomeController.cs à la place et définissez le point d’arrêt dans la `About()` méthode).
 
-## <a name="remote-debug-aspnet-core-on-an-azure-app-service"></a><a name="remote_debug_azure_app_service"></a>Débogage à distance ASP.NET Core sur une Azure App Service
+## <a name="remote-debug-aspnet-core-on-an-azure-app-service"></a><a name="remote_debug_azure_app_service"></a> Débogage à distance ASP.NET Core sur une Azure App Service
 
 Dans Visual Studio, vous pouvez rapidement publier et déboguer votre application sur une instance entièrement approvisionnée d’IIS. Toutefois, la configuration d’IIS est prédéfinie et vous ne pouvez pas le personnaliser. Pour obtenir des instructions plus détaillées, consultez [déployer une application web ASP.net Core sur Azure à l’aide de Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). (Si vous avez besoin de personnaliser IIS, essayez de déboguer sur une [machine virtuelle Azure](#remote_debug_azure_vm).)
 
@@ -96,9 +96,9 @@ Dans Visual Studio, vous pouvez rapidement publier et déboguer votre applicatio
 
     Le point d’arrêt doit être atteint dans Visual Studio.
 
-    Et voilà ! Les autres étapes de cette rubrique s’appliquent au débogage à distance sur une machine virtuelle Azure.
+    C’est tout ! Les autres étapes de cette rubrique s’appliquent au débogage à distance sur une machine virtuelle Azure.
 
-## <a name="remote-debug-aspnet-core-on-an-azure-vm"></a><a name="remote_debug_azure_vm"></a>Débogage à distance ASP.NET Core sur une machine virtuelle Azure
+## <a name="remote-debug-aspnet-core-on-an-azure-vm"></a><a name="remote_debug_azure_vm"></a> Débogage à distance ASP.NET Core sur une machine virtuelle Azure
 
 Vous pouvez créer une machine virtuelle Azure pour Windows Server, puis installer et configurer IIS et les autres composants logiciels requis. Cela prend plus de temps que le déploiement sur un Azure App Service et nécessite que vous suiviez les étapes restantes de ce didacticiel.
 
@@ -191,7 +191,7 @@ Une fois l’application déployée, elle doit démarrer automatiquement. Si l�
 
 Vous pouvez utiliser cette option pour déployer votre application si vous souhaitez copier l’application sur IIS à l’aide de PowerShell, RoboCopy ou si vous souhaitez copier manuellement les fichiers.
 
-### <a name="configure-the-aspnet-core-web-site-on-the-windows-server-computer"></a><a name="BKMK_deploy_asp_net"></a>Configurer le site Web ASP.NET Core sur l’ordinateur Windows Server
+### <a name="configure-the-aspnet-core-web-site-on-the-windows-server-computer"></a><a name="BKMK_deploy_asp_net"></a> Configurer le site Web ASP.NET Core sur l’ordinateur Windows Server
 
 Si vous importez des paramètres de publication, vous pouvez ignorer cette section.
 
@@ -211,20 +211,20 @@ Si vous n’utilisez pas Web Deploy, vous devez publier et déployer l’applica
 
 [!INCLUDE [remote-debugger-deploy-app-local](../debugger/includes/remote-debugger-deploy-app-local.md)]
 
-### <a name="download-and-install-the-remote-tools-on-windows-server"></a><a name="BKMK_msvsmon"></a>Télécharger et installer les outils de contrôle à distance sur Windows Server
+### <a name="download-and-install-the-remote-tools-on-windows-server"></a><a name="BKMK_msvsmon"></a> Télécharger et installer les outils de contrôle à distance sur Windows Server
 
 Téléchargez la version des outils de contrôle à distance qui correspond à votre version de Visual Studio.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
-### <a name="set-up-the-remote-debugger-on-windows-server"></a><a name="BKMK_setup"></a>Configurer le débogueur distant sur Windows Server
+### <a name="set-up-the-remote-debugger-on-windows-server"></a><a name="BKMK_setup"></a> Configurer le débogueur distant sur Windows Server
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
 > [!NOTE]
 > Si vous devez ajouter des autorisations pour des utilisateurs supplémentaires, modifier le mode d’authentification ou le numéro de port pour le débogueur distant, consultez [configurer le débogueur distant](../debugger/remote-debugging.md#configure_msvsmon).
 
-### <a name="attach-to-the-aspnet-application-from-the-visual-studio-computer"></a><a name="BKMK_attach"></a>Attachement à l’application ASP.NET à partir de l’ordinateur Visual Studio
+### <a name="attach-to-the-aspnet-application-from-the-visual-studio-computer"></a><a name="BKMK_attach"></a> Attachement à l’application ASP.NET à partir de l’ordinateur Visual Studio
 
 1. Sur l’ordinateur Visual Studio, ouvrez la solution que vous essayez de déboguer (**MyASPApp** si vous suivez les étapes décrites dans cet article).
 2. Dans Visual Studio, cliquez sur **Déboguer > attacher au processus** (Ctrl + Alt + P).

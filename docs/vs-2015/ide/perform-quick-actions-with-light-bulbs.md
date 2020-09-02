@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 78ac9b0aba4e56b2240ef65783231d31d77e5144
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670351"
 ---
 # <a name="perform-quick-actions-with-light-bulbs"></a>Effectuer des actions rapides avec des ampoules
@@ -21,7 +21,7 @@ ms.locfileid: "72670351"
 
 Les ampoules sont une nouvelle fonctionnalité de productivité de Visual Studio 2015. Il s’agit d’icônes qui apparaissent dans l’éditeur Visual Studio. Vous pouvez cliquer dessus pour effectuer des actions rapides, notamment la refactorisation et la correction d’erreurs. Les ampoules regroupent des fonctions d’aide à la correction et à la refactorisation dans un point focal unique, souvent directement sur la ligne que vous tapez.
 
- ![Icône petite ampoule](../ide/media/vs2015-lightbulbsmall.png "VS2015_LightBulbSmall")
+ ![Petite icône en forme d'ampoule](../ide/media/vs2015-lightbulbsmall.png "VS2015_LightBulbSmall")
 
  Dans les langages C# et Visual Basic, une ampoule apparaît si votre code est souligné d’une ligne ondulée rouge et qu’une suggestion pour résoudre le problème est disponible dans Visual Studio. Par exemple, si une erreur est signalée par un soulignement rouge ondulé, une ampoule apparaît lorsque des corrections sont disponibles pour cette erreur. En C++, quand vous ajoutez une nouvelle fonction à un fichier d’en-tête, une ampoule apparaît pour vous proposer de créer une implémentation de stub de cette fonction. Des éditeurs tiers peuvent fournir des diagnostics et des suggestions personnalisés pour n'importe quel langage, par exemple dans le cadre d'un SDK. Dans ce cas, les ampoules Visual Studio s'allument en fonction des règles établies.
 
@@ -41,4 +41,4 @@ Les ampoules sont une nouvelle fonctionnalité de productivité de Visual Studio
 ## <a name="to-do-a-refactoring"></a>Pour effectuer une refactorisation
  Pour effectuer des refactorisations, vous pouvez toujours cliquer avec le bouton droit pour faire apparaître le menu contextuel. Vous pouvez aussi appuyer sur Ctrl + . pour afficher les options de refactorisation. Dans l'illustration suivante, la refactorisation Extraire une méthode vous est proposée lorsque vous appuyez sur Ctrl + . quelque part sur la ligne contenant l'appel `Math.Abs` :
 
- ![Ampoule présentant des options de refactorisation](../ide/media/vs2015-lightbulbs-refactor.png "VS2015_LightBulbs_refactor")
+ ![Ampoule indiquant les options de refactorisation](../ide/media/vs2015-lightbulbs-refactor.png "VS2015_LightBulbs_refactor")

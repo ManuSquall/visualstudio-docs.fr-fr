@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 41d3ef0efd4c9eb8eab16bd12cc79f8df1449d65
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670684"
 ---
 # <a name="how-to-specify-build-events-c"></a>Guide pratique pour spécifier des événements de build (C#)
@@ -37,7 +37,7 @@ Utilisez des événements de build pour spécifier des commandes à exécuter av
 
 1. Dans l’**Explorateur de solutions**, sélectionnez le projet pour lequel vous voulez spécifier l’événement de build.
 
-2. Dans le menu **Projet**, cliquez sur **Propriétés**.
+2. Dans le menu **Projet** , cliquez sur **Propriétés**.
 
 3. Sélectionnez l’onglet **Événements de build**.
 
@@ -49,12 +49,12 @@ Utilisez des événements de build pour spécifier des commandes à exécuter av
 5. Dans la zone **Ligne de commande de l’événement post-build**, spécifiez la syntaxe de l’événement de build.
 
     > [!NOTE]
-    > Ajoutez une instruction `call` avant toutes les commandes post-build qui exécutent des fichiers .bat. Par exemple, `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.
+    > Ajoutez une instruction `call` avant toutes les commandes post-build qui exécutent des fichiers .bat.  Par exemple, `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.
 
 6. Dans la zone **Exécuter l’événement post-build**, spécifiez sous quelles conditions exécuter l’événement post-build.
 
     > [!NOTE]
-    > Pour ajouter une syntaxe longue, ou pour sélectionner des macros de génération à partir de la [boîte de dialogue Ligne de commande de l’événement prébuild/postbuild](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md), cliquez sur le bouton de sélection ( **...** ) afin d’afficher une zone d’édition.
+    > Pour ajouter une syntaxe longue, ou pour sélectionner des macros de génération à partir de la [boîte de dialogue ligne de commande de l’événement pré-build/après génération](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md), cliquez sur le bouton de sélection (**...**) pour afficher une zone d’édition.
 
      La syntaxe de l’événement de build peut inclure toute commande qui est valide à une invite de commandes ou dans un fichier .bat. Le nom d’un fichier de commandes doit être précédé par `call` pour vous assurer que toutes les commandes suivantes sont exécutées.
 
@@ -75,7 +75,7 @@ Utilisez des événements de build pour spécifier des commandes à exécuter av
 
 1. Créez une application console pour la commande. Dans le menu **Fichier**, pointez sur **Nouveau**, puis cliquez sur **Projet**.
 
-2. Dans la boîte de dialogue **Nouveau projet**, développez **Visual C#** , cliquez sur **Windows**, puis cliquez sur le modèle **Application console**. Attribuez un nom au projet `ChangeOSVersionCS`.
+2. Dans la boîte de dialogue **Nouveau projet**, développez **Visual C#**, cliquez sur **Windows**, puis cliquez sur le modèle **Application console**. Nommez le projet `ChangeOSVersionCS`.
 
 3. Dans Program.cs, ajoutez la ligne suivante aux autres instructions `using` au début du fichier :
 
@@ -137,7 +137,7 @@ Utilisez des événements de build pour spécifier des commandes à exécuter av
 
     La commande prend deux arguments : le chemin du manifeste d’application (autrement dit, le dossier dans lequel le processus de génération crée le manifeste, en général NomProjet.publish) et la version du nouveau système d’exploitation.
 
-5. Générez le projet. Dans le menu **Générer** , cliquez sur **Générer la solution**.
+5. Créez le projet. Dans le menu **Générer**, cliquez sur **Générer la solution**.
 
 6. Copiez le fichier .exe dans un répertoire tel que `C:\TEMP\ChangeOSVersionVB.exe`.
 
@@ -147,7 +147,7 @@ Utilisez des événements de build pour spécifier des commandes à exécuter av
 
 1. Créez une application Windows pour le projet à publier. Dans le menu **Fichier**, pointez sur **Nouveau**, puis cliquez sur **Projet**.
 
-2. Dans la boîte de dialogue **Nouveau projet**, développez **Visual C#** , cliquez sur **Windows**, puis cliquez sur le modèle **Application Windows Forms**. Attribuez un nom au projet `CSWinApp`.
+2. Dans la boîte de dialogue **Nouveau projet**, développez **Visual C#**, cliquez sur **Windows**, puis cliquez sur le modèle **Application Windows Forms**. Nommez le projet `CSWinApp`.
 
 3. Après avoir sélectionné le projet dans l’**Explorateur de solutions**, dans le menu **Projet**, cliquez sur **Propriétés**.
 
@@ -163,7 +163,7 @@ Utilisez des événements de build pour spécifier des commandes à exécuter av
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
     ```
 
-6. Dans le Concepteur de projet, cliquez sur l’onglet **Événements de build** puis sur le bouton **Modifier post-build**.
+6. Dans le concepteur de projet, cliquez sur l’onglet **événements de build** , puis cliquez sur le bouton **modifier après génération** .
 
 7. Dans la zone **Ligne de commande de l’événement post-build**, tapez la commande suivante :
 
@@ -184,4 +184,4 @@ Utilisez des événements de build pour spécifier des commandes à exécuter av
     ```
 
 ## <a name="see-also"></a>Voir aussi
- [Page événements deC#Build,](../ide/reference/build-events-page-project-designer-csharp.md) boîte de dialogue de la ligne de commande de l' [événement pré-build](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) du concepteur de projets (), boîte [de dialogue Comment : spécifier des événements de build (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md) [compiler et générer](../ide/compiling-and-building-in-visual-studio.md)
+ Page événements de build, boîte de dialogue de la ligne de commande de l’événement pré-build du [Concepteur de projets (C#)](../ide/reference/build-events-page-project-designer-csharp.md) [/après génération](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [Comment : spécifier des événements de build (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md) [compiler et générer](../ide/compiling-and-building-in-visual-studio.md)

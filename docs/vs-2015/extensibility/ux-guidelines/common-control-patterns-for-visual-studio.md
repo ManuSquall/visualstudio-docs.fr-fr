@@ -9,16 +9,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dd2b2723a5ecfe66e9471cfea1e8eb55ed7ced59
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547444"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Modèles de contrôle courants pour Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-## <a name="common-controls"></a><a name="BKMK_CommonControls"></a>Contrôles communs
+## <a name="common-controls"></a><a name="BKMK_CommonControls"></a> Contrôles communs
 
 ### <a name="overview"></a>Vue d’ensemble
  Les contrôles communs constituent la majeure partie de l’interface utilisateur dans Visual Studio. La plupart des contrôles courants utilisés dans l’interface Visual Studio doivent respecter les [instructions relatives à l’interaction avec les ordinateurs de bureau Windows](https://msdn.microsoft.com/library/windows/desktop/dn742399.aspx). Ce document est propre à Visual Studio et aborde des situations particulières ou des détails qui augmentent ces instructions Windows.
@@ -50,10 +50,10 @@ ms.locfileid: "85547444"
 
 - **Fenêtres outil, éditeurs de documents, aires de conception et boîtes de dialogue à thème :** Utilisez l’apparence spécialisée à thème à l’aide du service de couleurs.
 
-### <a name="scrollbars"></a><a name="BKMK_Scrollbars"></a>Barres
+### <a name="scrollbars"></a><a name="BKMK_Scrollbars"></a> Barres
  Les barres de défilement doivent suivre [les modèles d’interaction courants pour les barres de défilement Windows](https://msdn.microsoft.com/library/windows/desktop/bb787527\(v=vs.85\).aspx) , sauf si elles sont complétées par des informations de contenu, comme dans l’éditeur de code.
 
-### <a name="input-fields"></a><a name="BKMK_InputFields"></a>Champs d’entrée
+### <a name="input-fields"></a><a name="BKMK_InputFields"></a> Champs d’entrée
  Pour le comportement d’interaction standard, suivez les [instructions du bureau Windows pour les zones de texte](https://msdn.microsoft.com/library/windows/desktop/dn742442\(v=vs.85\).aspx).
 
 #### <a name="visual-style"></a>Style visuel
@@ -76,7 +76,7 @@ ms.locfileid: "85547444"
 
      ![Corriger la largeur de contrôle du champ d’entrée](../../extensibility/ux-guidelines/media/0707-02-correctinputfieldcontrol.png "0707-02_CorrectInputFieldControl") **correcte longueur du champ d’entrée : le champ d’entrée est une largeur raisonnable pour le contenu attendu.**
 
-### <a name="combo-boxes-and-drop-down-lists"></a><a name="BKMK_ComboBoxesAndDropDowns"></a>Zones de liste déroulante et listes déroulantes
+### <a name="combo-boxes-and-drop-down-lists"></a><a name="BKMK_ComboBoxesAndDropDowns"></a> Zones de liste déroulante et listes déroulantes
  Pour le comportement d’interaction standard, suivez les [instructions du bureau Windows pour les listes déroulantes et les zones de liste](https://msdn.microsoft.com/library/windows/desktop/dn742404\(v=vs.85\).aspx)déroulante.
 
 #### <a name="visual-style"></a>Style visuel
@@ -96,7 +96,7 @@ ms.locfileid: "85547444"
 
  **Longueur de champ correcte pour un contrôle de liste déroulante**
 
-### <a name="check-boxes"></a><a name="BKMK_CheckBoxes"></a>Cases à cocher
+### <a name="check-boxes"></a><a name="BKMK_CheckBoxes"></a> Cases à cocher
  Pour le comportement d’interaction standard, suivez les [instructions du bureau Windows pour les cases à cocher](https://msdn.microsoft.com/library/windows/desktop/dn742401\(v=vs.85\).aspx).
 
 #### <a name="visual-style"></a>Style visuel
@@ -115,7 +115,7 @@ ms.locfileid: "85547444"
 
      ![Correct check box alignment](../../extensibility/ux-guidelines/media/0707-06-correctcheckboxalign.png "0707-06_CorrectCheckBoxAlign") Alignement de la case à cocher alignement de la case à cocher correcte alignement : la case **à cocher est alignée avec la ligne de base de la première ligne de texte.**
 
-### <a name="radio-buttons"></a><a name="BKMK_RadioButtons"></a>Cases d’option
+### <a name="radio-buttons"></a><a name="BKMK_RadioButtons"></a> Cases d’option
  Pour le comportement d’interaction standard, suivez les [instructions relatives au bureau Windows pour les cases d’option](https://msdn.microsoft.com/library/windows/desktop/dn742436\(v=vs.85\).aspx).
 
 #### <a name="visual-style"></a>Style visuel
@@ -124,7 +124,7 @@ ms.locfileid: "85547444"
 #### <a name="specialized-interactions"></a>Interactions spécialisées
  Il n’est pas nécessaire d’utiliser un cadre de groupe pour encadrer les choix radio.
 
-### <a name="group-frames"></a><a name="BKMK_GroupFrames"></a>Frames de groupe
+### <a name="group-frames"></a><a name="BKMK_GroupFrames"></a> Frames de groupe
  Pour le comportement d’interaction standard, suivez les [instructions du bureau Windows pour les cadres de groupe](https://msdn.microsoft.com/library/windows/desktop/dn742405\(v=vs.85\).aspx).
 
 #### <a name="visual-style"></a>Style visuel
@@ -138,7 +138,7 @@ ms.locfileid: "85547444"
 
 - Il est parfois acceptable d’utiliser une règle horizontale au lieu d’un conteneur de cadre de groupe.
 
-## <a name="text-controls"></a><a name="BKMK_TextControls"></a>Contrôles de texte
+## <a name="text-controls"></a><a name="BKMK_TextControls"></a> Contrôles de texte
 
 ### <a name="labels"></a>Étiquettes
 
@@ -227,7 +227,7 @@ ms.locfileid: "85547444"
 
   **Exemples de texte de filigrane dans Visual Studio**
 
-## <a name="buttons-and-hyperlinks"></a><a name="BKMK_ButtonsAndHyperlinks"></a>Boutons et liens hypertexte
+## <a name="buttons-and-hyperlinks"></a><a name="BKMK_ButtonsAndHyperlinks"></a> Boutons et liens hypertexte
 
 ### <a name="overview"></a>Vue d’ensemble
  Les boutons et les contrôles de liens (liens hypertexte) doivent suivre les [instructions du bureau Windows de base sur les liens hypertexte](https://msdn.microsoft.com/library/windows/desktop/dn742406\(v=vs.85\).aspx) pour l’utilisation, le libellé, le dimensionnement et l’espacement.
@@ -335,7 +335,7 @@ ms.locfileid: "85547444"
 |Supprimer tout|![Bouton graphique « Supprimer tout »](../../extensibility/ux-guidelines/media/070703-11-buttonremoveall.png "070703-11_ButtonRemoveAll")|
 |Monter|![Bouton graphique « Monter »](../../extensibility/ux-guidelines/media/070703-12-buttonmoveup.png "070703-12_ButtonMoveUp")|
 |Descendre|![Bouton graphique « Descendre »](../../extensibility/ux-guidelines/media/070703-13-buttonmovedown.png "070703-13_ButtonMoveDown")|
-|DELETE|![Bouton graphique « Supprimer »](../../extensibility/ux-guidelines/media/070703-14-buttondelete.png "070703-14_ButtonDelete")|
+|Supprimer|![Bouton graphique « Supprimer »](../../extensibility/ux-guidelines/media/070703-14-buttondelete.png "070703-14_ButtonDelete")|
 
 ##### <a name="sizing-and-spacing"></a>Dimensionnement et espacement
  Le dimensionnement des boutons graphiques est le même que pour la version abrégée du bouton **[Parcourir...]** (26x23 pixels) :
@@ -358,7 +358,7 @@ ms.locfileid: "85547444"
 
 - Les traits de soulignement ne doivent pas apparaître au pointage. Au lieu de cela, le retour à l’utilisateur pour lequel le lien est actif est une légère modification de couleur et le curseur de lien approprié.
 
-## <a name="tree-views"></a><a name="BKMK_TreeViews"></a>Arborescences
+## <a name="tree-views"></a><a name="BKMK_TreeViews"></a> Arborescences
 
 ### <a name="overview"></a>Vue d’ensemble
  Les arborescences permettent d’organiser des listes complexes en groupes parent-enfant. Un utilisateur peut développer ou réduire des groupes parents pour afficher ou masquer des éléments enfants sous-jacents. Chaque élément d’une arborescence peut être sélectionné pour fournir une action supplémentaire.
@@ -371,7 +371,7 @@ ms.locfileid: "85547444"
 
 - [Interactions](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_TreeViewInteractions)
 
-### <a name="visual-style"></a><a name="BKMK_TreeViewVisualStyle"></a>Style visuel
+### <a name="visual-style"></a><a name="BKMK_TreeViewVisualStyle"></a> Style visuel
 
 #### <a name="expanders"></a>Expanders
  Les contrôles d’arborescence doivent être conformes à la conception de l’Expander utilisée par Windows et Visual Studio. Chaque nœud utilise un contrôle Expander pour afficher ou masquer les éléments sous-jacents. L’utilisation d’un contrôle Expander offre une cohérence aux utilisateurs qui peuvent rencontrer des arborescences différentes dans Windows et Visual Studio.
@@ -405,9 +405,9 @@ ms.locfileid: "85547444"
 
  **Les barres de défilement verticale et horizontale s’affichent, car le contenu a dépassé les limites du contrôle TreeView.**
 
-### <a name="interactions"></a><a name="BKMK_TreeViewInteractions"></a>Relations
+### <a name="interactions"></a><a name="BKMK_TreeViewInteractions"></a> Relations
 
-#### <a name="context-menus"></a>Les menus contextuels :
+#### <a name="context-menus"></a>Menu contextuels
  Un nœud d’arborescence peut afficher des options de sous-menu dans un menu contextuel. En général, cela se produit lorsqu’un utilisateur clique avec le bouton droit sur un élément ou a appuyé sur la touche de menu d’un clavier Windows avec l’élément sélectionné. Il est important que le nœud gagne le focus et qu’il soit sélectionné. Cela permet à l’utilisateur d’identifier l’élément auquel le sous-menu appartient.
 
  ![Nœud sélectionné dans une arborescence et menu contextuel](../../extensibility/ux-guidelines/media/070705-5-contextmenu.png "070705-5_ContextMenu")

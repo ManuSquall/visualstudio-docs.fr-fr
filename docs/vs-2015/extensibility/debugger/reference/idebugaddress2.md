@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ca14e6236fc7e12ea259b97f7f2ddb69fe052f55
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65692839"
 ---
 # <a name="idebugaddress2"></a>IDebugAddress2
@@ -30,26 +30,26 @@ Cette interface fournit l’accès à l’ID du processus qui possède l’objet
 IDebugAddress2 : IDebugAddress  
 ```  
   
-## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs  
- Un fournisseur de symboles implémente cette interface sur le même objet qui implémente le [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface. Cette interface fournit l’accès à l’ID du processus qui possède l’objet qui est associé à cette adresse.  
+## <a name="notes-for-implementers"></a>Notes pour les implémenteurs  
+ Un fournisseur de symboles implémente cette interface sur le même objet qui implémente l’interface [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) . Cette interface fournit l’accès à l’ID du processus qui possède l’objet associé à cette adresse.  
   
-## <a name="notes-for-callers"></a>Notes de publication pour les appelants  
- Utilisez [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) pour obtenir cette interface à partir de la [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface.  
+## <a name="notes-for-callers"></a>Notes pour les appelants  
+ Utilisez [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) pour obtenir cette interface à partir de l’interface [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) .  
   
-## <a name="methods-in-vtable-order"></a>Méthodes dans l’ordre de vtable  
- Outre les méthodes héritées de la [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface, cette interface implémente la méthode suivante :  
+## <a name="methods-in-vtable-order"></a>Méthodes dans l’ordre vtable  
+ En plus des méthodes héritées de l’interface [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) , cette interface implémente la méthode suivante :  
   
 |Méthode|Description|  
 |------------|-----------------|  
-|[GetProcessID](../../../extensibility/debugger/reference/idebugaddress2-getprocessid.md)|Récupère l’ID de processus qui possède l’objet représenté par cette interface.|  
+|[GetProcessID](../../../extensibility/debugger/reference/idebugaddress2-getprocessid.md)|Récupère l’ID du processus qui possède l’objet représenté par cette interface.|  
   
 ## <a name="requirements"></a>Configuration requise  
- En-tête : sh.h  
+ En-tête : SH. h  
   
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft. VisualStudio. Debugger. Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
- [Interfaces de fournisseur de symboles](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
+ [Interfaces du fournisseur de symboles](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   
  [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)

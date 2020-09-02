@@ -1,5 +1,5 @@
 ---
-title: Messages de diagnostic dans la fenêtre de sortie | Microsoft Docs
+title: Messages de diagnostic dans le Fenêtre Sortie | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -30,10 +30,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 60f8da2430e1c84af3c26be31c6de561291c8c6e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65695297"
 ---
 # <a name="diagnostic-messages-in-the-output-window"></a>Messages de diagnostic dans la fenêtre Sortie
@@ -46,11 +46,11 @@ Vous pouvez écrire des messages d'exécution dans la fenêtre Sortie en utilisa
   
 - Plusieurs méthodes `Write`, qui génèrent des informations de sortie sans interrompre l'exécution. Ces méthodes remplacent la méthode `Debug.Print` utilisée dans les versions précédentes de Visual Basic.  
   
-- Les méthodes <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> et <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName>, qui interrompent l'exécution et génèrent des informations de sortie si une condition spécifique échoue. Par défaut, la méthode `Assert` affiche les informations dans une boîte de dialogue. Pour plus d’informations, consultez [Assertions dans du code managé](../debugger/assertions-in-managed-code.md).  
+- <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName><xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName>les méthodes et, qui interrompent l’exécution et génèrent des informations en cas d’échec d’une condition spécifiée. Par défaut, la méthode `Assert` affiche les informations dans une boîte de dialogue. Pour plus d’informations, consultez [assertions dans du code managé](../debugger/assertions-in-managed-code.md).  
   
 - Les méthodes <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName> et <xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName>, qui interrompent toujours l'exécution et génèrent des informations de sortie. Par défaut, les méthodes `Fail` affichent les informations dans une boîte de dialogue.  
   
-  En plus de programmer à partir de votre application, le **sortie** fenêtre peut afficher des informations sur :  
+  En plus de programmer à partir de votre application, la fenêtre **sortie** peut afficher des informations sur les éléments suivants :  
   
 - Modules que le débogueur a chargés ou déchargés.  
   
@@ -63,7 +63,7 @@ Vous pouvez écrire des messages d'exécution dans la fenêtre Sortie en utilisa
 ## <a name="see-also"></a>Voir aussi  
  [Sécurité du débogueur](../debugger/debugger-security.md)   
  [Fenêtre Sortie](../ide/reference/output-window.md)   
- [Suivi et instrumentation d’applications](https://msdn.microsoft.com/library/773b6fc4-9013-4322-b728-5dec7a72e743)   
- [Introduction à l’Instrumentation et au traçage](https://msdn.microsoft.com/e924e57c-33cf-4b0e-9e7f-a45d13e38f2c)   
- [Types de projets C#, F# et Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
+ [Traçage et instrumentation d’applications](https://msdn.microsoft.com/library/773b6fc4-9013-4322-b728-5dec7a72e743)   
+ [Présentation de l’instrumentation et du suivi](https://msdn.microsoft.com/e924e57c-33cf-4b0e-9e7f-a45d13e38f2c)   
+ [Types de projets C#, F # et Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
  [Débogage du code managé](../debugger/debugging-managed-code.md)

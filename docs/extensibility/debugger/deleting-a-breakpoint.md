@@ -1,5 +1,5 @@
 ---
-title: Suppression d’un point d’arrêt (fr) Microsoft Docs
+title: Suppression d’un point d’arrêt | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,20 +12,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a77be200a11eb7b3985a4c1a47e4cddaa543f900
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738942"
 ---
 # <a name="deleting-a-breakpoint"></a>Suppression d’un point d’arrêt
-Ce qui suit décrit le processus lors de la suppression d’un point d’arrêt en attente :
+Les éléments suivants décrivent le processus de suppression d’un point d’arrêt en attente :
 
 ## <a name="deletion-process"></a>Processus de suppression
- Le gestionnaire de débogé de session (SDM) appelle la méthode [IDebugPendingBreakpoint2::Déléte](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md) pour supprimer le point d’arrêt en attente et tous les points de rupture liés à partir de lui.
+ Le gestionnaire de débogage de session (SDM) appelle la méthode [IDebugPendingBreakpoint2 ::D supprimable](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md) pour supprimer le point d’arrêt en attente et tous les points d’arrêt liés qui y sont liés.
 
 > [!NOTE]
-> Un point d’arrêt unique peut également être supprimé par un appel à [IDebugBoundBreakpoint2::Delete](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md).
+> Un point d’arrêt à liaison unique peut également être supprimé par un appel à [IDebugBoundBreakpoint2 ::D supprim](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md).
 
 ## <a name="see-also"></a>Voir aussi
-- [Événements de débogénaire d’appel](../../extensibility/debugger/calling-debugger-events.md)
+- [Appeler les événements du débogueur](../../extensibility/debugger/calling-debugger-events.md)

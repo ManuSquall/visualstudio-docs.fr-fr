@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Tester et déboguer un visualiseur | Microsoft Docs'
+title: 'Comment : tester et déboguer un visualiseur | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,18 +19,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 18261d9e8c6c7d3f65dea7c72439b29f4e2e0df3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68176505"
 ---
-# <a name="how-to-test-and-debug-a-visualizer"></a>Procédure : tester et déboguer un visualiseur
+# <a name="how-to-test-and-debug-a-visualizer"></a>Comment : tester et déboguer un visualiseur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Après avoir écrit un visualiseur, vous devez le déboguer et le tester.  
   
- Une façon de tester un visualiseur consiste à l'installer dans Visual Studio et de l'appeler d'une fenêtre du débogueur. (Consultez [Guide pratique pour installer un visualiseur](../debugger/how-to-install-a-visualizer.md).) Si vous procédez ainsi, vous devez utiliser une deuxième instance de Visual Studio pour attacher et déboguer le visualiseur, qui s'exécute dans la première instance du débogueur.  
+ Une façon de tester un visualiseur consiste à l'installer dans Visual Studio et de l'appeler d'une fenêtre du débogueur. (Consultez [Comment : installer un visualiseur](../debugger/how-to-install-a-visualizer.md).) Dans ce cas, vous devrez utiliser une deuxième instance de Visual Studio pour attacher et déboguer le visualiseur, qui s’exécute dans la première instance du débogueur.  
   
  Une façon plus facile de déboguer un visualiseur consiste à exécuter ce dernier à partir d'un pilote de test. Les API du visualiseur facilitent la création de ce type de pilote appelé *hôte de développement de visualiseur*.  
   
@@ -54,9 +54,9 @@ Après avoir écrit un visualiseur, vous devez le déboguer et le tester.
     DebuggerSide.TestShowVisualizer(myString);  
     ```  
   
-     Pour obtenir un exemple plus complet, consultez [procédure pas à pas : Écriture d’un visualiseur en C# ](../debugger/walkthrough-writing-a-visualizer-in-csharp.md).  
+     Pour obtenir un exemple plus complet, consultez [procédure pas à pas : écriture d’un visualiseur en C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Procédure pas à pas : Écriture d’un visualiseur en C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
- [Guide pratique pour installer un visualiseur](../debugger/how-to-install-a-visualizer.md)   
+ [Procédure pas à pas : écriture d’un visualiseur en C #](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
+ [Comment : installer un visualiseur](../debugger/how-to-install-a-visualizer.md)   
  [Créer des visualiseurs personnalisés](../debugger/create-custom-visualizers-of-data.md)

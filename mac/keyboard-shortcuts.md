@@ -6,10 +6,10 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
 ms.openlocfilehash: 989c47e3c192c936eec0828b96a800d5ed4feaa4
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88247375"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Raccourcis clavier par défaut dans Visual Studio pour Mac
@@ -107,7 +107,7 @@ Nous avons compilé les raccourcis clavier les plus utilisés et les plus utiles
 |Nouvelle solution|**⇧ ⌘ N**|
 |Ouvrir|**⌘ O**|
 |Impression|**⌘ P**|
-|Quit|**⌘ Q**|
+|Quitter|**⌘ Q**|
 |Revenir à la dernière version|**⌘ U**|
 |Enregistrer|**⌘ S**|
 |Enregistrer tout|**⇧ ⌘ S**|
@@ -119,14 +119,14 @@ Nous avons compilé les raccourcis clavier les plus utilisés et les plus utiles
 |Documentation de l’API|**⌥ ⌘ ?**|
 |Informations de référence sur l’API Unity|**⌘**|
 
-## <a name="other"></a>Autre
+## <a name="other"></a>Autres
 
 |Commandes|Raccourcis clavier|
 |-|-|
 |Implémenter les messages Unity|**⇧ ⌘ M**|
 |Inspecter|**⌥ ⌘ I**|
 
-## <a name="project"></a>Project
+## <a name="project"></a>Projet
 
 |Commandes|Raccourcis clavier|
 |-|-|
@@ -134,7 +134,7 @@ Nous avons compilé les raccourcis clavier les plus utilisés et les plus utiles
 |Build|**⌘K**, **⇧F6**|
 |Tout générer|**⌘B**, **F6**|
 |Clean|**⇧ ⌘ K**|
-|Reconstruire|**⌃ ⌘ K**|
+|Regénérer|**⌃ ⌘ K**|
 |Tout regénérer|**⌃ ⌘ B**|
 |Démarrer le débogage|**⌘ ⏎**, **F5**|
 |Démarrer sans débogage|**⌥ ⌘ ⏎**, **⌃ F5**|
@@ -260,11 +260,11 @@ Nous avons compilé les raccourcis clavier les plus utilisés et les plus utiles
 
 ## <a name="macos-key-symbols-lookup"></a>Recherche de symboles de touches macOS
 
-|Symbole|Clé :|
+|Symbole|Clé|
 |-|-|
 |⌘|**Commande** (**cmd**)|
 |⌥|**Option** (**alt**)|
-|⇧|**Shift**|
+|⇧|**Majuscule**|
 |⌃|**Contrôle** (**ctrl**)
 |⇞|**Page précédente** (**Page préc.**)|
 |⇟|**Page suivante** (**Page suiv.**)|
@@ -273,7 +273,7 @@ Nous avons compilé les raccourcis clavier les plus utilisés et les plus utiles
 |⏎|**Renvoi**|
 |←→↑↓|**Touches de direction**|
 |↖|**Page d'accueil**|
-|↘|**End**|
+|↘|**Effet**|
 |␣|**Barre d’espace**|
 |⇥|**Onglet**|
 

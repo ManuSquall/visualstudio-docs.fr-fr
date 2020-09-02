@@ -13,10 +13,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 8122f42fb5d2ec4c31ec553407b644e59e9f4418
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88248285"
 ---
 # <a name="learn-to-use-the-code-editor-with-c"></a>En savoir plus sur l’utilisation de l’éditeur de code avec C\#
@@ -195,4 +195,4 @@ Aucun développeur ne réussit à créer un code parfait dès le départ. L’un
 - [mode Plan](../../ide/outlining.md)
 - [Atteindre la définition et Aperçu de la définition](../../ide/go-to-and-peek-definition.md)
 - [Refactorisation](../../ide/refactoring-in-visual-studio.md)
-- [Utiliser IntelliSense](../../ide/using-intellisense.md)
+- [Utilisez IntelliSense](../../ide/using-intellisense.md)

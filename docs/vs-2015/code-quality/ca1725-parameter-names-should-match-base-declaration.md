@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: f1fb30cd37ebffcee7619190cef83560813b25db
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547366"
 ---
 # <a name="ca1725-parameter-names-should-match-base-declaration"></a>CA1725 : Les noms des paramètres doivent correspondre à la déclaration de base
@@ -32,7 +32,7 @@ ms.locfileid: "85547366"
 |Category|Microsoft. Naming|
 |Modification avec rupture|Rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Le nom d’un paramètre dans une substitution de méthode visible de l’extérieur ne correspond pas au nom du paramètre dans la déclaration de base de la méthode, ou au nom du paramètre dans la déclaration d’interface de la méthode.
 
 ## <a name="rule-description"></a>Description de la règle

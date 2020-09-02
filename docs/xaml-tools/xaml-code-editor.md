@@ -8,10 +8,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 6421fd0139b04262ac5f1e835f010c1372c034ee
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85329181"
 ---
 # <a name="xaml-code-editor"></a>Éditeur de code XAML
@@ -103,7 +103,7 @@ Vous pouvez utiliser des [actions rapides](../ide/quick-actions.md) pour Refacto
 
 Par exemple, une tâche utile que vous pouvez effectuer à l’aide d’actions rapides consiste à **Supprimer les using inutiles** du code C# dans l’onglet **MainWindow.Xaml.cs** .
 
-Voici comment faire :
+Voici comment procéder :
 
 1. Pointez sur une instruction using, choisissez l’icône ampoule, puis choisissez **Supprimer les instructions using inutiles** dans la liste déroulante.
 
@@ -116,7 +116,7 @@ Vous pouvez également accéder à cette fonctionnalité à partir de la barre d
 
 Pour plus d’informations sur l’utilisation des paramètres, consultez la page trier les données [using](../ide/reference/sort-usings.md) . Pour plus d’informations sur IntelliSense, consultez la page [IntelliSense dans Visual Studio](../ide/using-intellisense.md) . Et, pour plus d’informations sur les façons courantes pour les développeurs d’utiliser des actions rapides, consultez la page [actions rapides communes](../ide/common-quick-actions.md) .
 
-#### <a name="change-tracking"></a>Change tracking
+#### <a name="change-tracking"></a>Suivi des modifications
 
 La couleur de la marge de gauche vous permet de conserver une trace des modifications effectuées dans un fichier. Voici comment les couleurs sont liées aux actions que vous effectuez :
 
@@ -173,7 +173,7 @@ Vous pouvez également modifier l’apparence de la barre de défilement et les 
 
 D’autres apprécient l’utilisation du *mode carte*, qui affiche des lignes de code dans la miniature de la barre de défilement. Les développeurs qui ont beaucoup de code dans un fichier peuvent trouver que le mode de mappage effectue le suivi des lignes de code plus efficacement que la barre de défilement par défaut.
 
-Pour plus d’informations sur la modification des paramètres par défaut de la barre de défilement, consultez la page [personnaliser la barre de défilement](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md) .
+Pour plus d’informations sur la modification des paramètres par défaut de la barre de défilement, consultez la page  [personnaliser la barre de défilement](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md) .
 
 ## <a name="xaml-specific-features"></a>Fonctionnalités spécifiques à XAML
 
@@ -281,7 +281,7 @@ Dans la boîte de dialogue [options](../ide/reference/options-text-editor-xaml-f
 |---------|---------|
 |Général  | [Boîte de dialogue Options : éditeur de texte > tous les langages](../ide/reference/options-text-editor-all-languages.md) |
 |Barres de défilement | [Options, Éditeur de texte, Tous les langages, Barres de défilement](../ide/reference/options-text-editor-all-languages-scroll-bars.md) |
-|Tabulations  |  [Options, Éditeur de texte, Tous les langages, Tabulations](../ide/reference/options-text-editor-all-languages-tabs.md) |
+|Onglets  |  [Options, Éditeur de texte, Tous les langages, Tabulations](../ide/reference/options-text-editor-all-languages-tabs.md) |
 
 ### <a name="xaml-specific-text-editor-options"></a>Options de l’éditeur de texte spécifique à XAML
 
