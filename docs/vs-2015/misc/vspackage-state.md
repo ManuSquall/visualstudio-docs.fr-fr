@@ -1,5 +1,5 @@
 ---
-title: État du VSPackage | Microsoft Docs
+title: État VSPackage | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -12,70 +12,70 @@ ms.assetid: 6056a9ea-e7a8-481c-9fc8-340229fa12d9
 caps.latest.revision: 25
 manager: jillfra
 ms.openlocfilehash: f3140b527673f87b1d7c552e99584232494aed7f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62979993"
 ---
 # <a name="vspackage-state"></a>État du VSPackage
-De nombreux facteurs déterminent le jeu de valeurs persistantes ou l’état d’un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] application.  
+De nombreux facteurs déterminent l’ensemble des valeurs persistantes, ou l’État, d’une [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] application.  
   
-- Les projets ont des propriétés de configuration et de projet.  
+- Les projets ont des propriétés de projet et de configuration.  
   
-- Solutions ont des propriétés.  
+- Les solutions ont des propriétés.  
   
-- Paramètres utilisateur déterminent la taille et la position des fenêtres de document, les fenêtres Outil, état d’ancrage et raccourcis clavier.  
+- Les paramètres utilisateur déterminent la taille et la position des fenêtres de document, des fenêtres outil, de l’état d’ancrage et des raccourcis clavier.  
   
-- Applications peuvent avoir des options qui définit un utilisateur.  
+- Les applications peuvent avoir des options qu’un utilisateur définit.  
   
-- Les objets créés par une application peuvent avoir leurs propres propriétés.  
+- Les objets qu’une application crée peuvent avoir leurs propres propriétés.  
   
-  Voici quelques-unes des méthodes qui un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] état de l’application peut être géré :  
+  Voici quelques-unes des façons dont l' [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] État d’une application peut être géré :  
   
-- Via les pages de propriétés de projet et solution.  
+- Via les pages de propriétés projet et solution.  
   
-- Via le **Assistant Importation et exportation paramètres**, ce qui permet à un utilisateur déplacer les paramètres d’un ordinateur à un autre.  
+- À l’aide de l' **Assistant importation et exportation de paramètres**, qui permet à un utilisateur de déplacer des paramètres d’un ordinateur à un autre.  
   
-- Via le **Options** boîte de dialogue qui inclut des options relatives aux applications.  
+- Via la boîte de dialogue **options** , qui comprend des options relatives aux applications.  
   
-- Via le **propriétés** fenêtre, qui expose les propriétés d’objets.  
+- Via la fenêtre **Propriétés** , qui expose les propriétés d’objets.  
   
-- Grâce à l’automatisation. Une application peut accéder à des propriétés VSPackage et les objets qui ont été exposées à Automation.  
+- Via Automation. Une application peut accéder au VSPackage et aux propriétés des objets qui ont été exposés à Automation.  
   
-  Sous-jacent de l’état de l’application est différents mécanismes de persistance qui permettent l’état de l’application à être enregistré et restauré.  
+  Sous-jacent l’état de l’application sont différents mécanismes de persistance qui permettent d’enregistrer et de restaurer l’état de l’application.  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Prise en charge de la persistance de l’état](../misc/support-for-state-persistence.md)  
  Répertorie les stratégies couramment utilisées pour enregistrer, restaurer et réinitialiser l’état d’un VSPackage.  
   
  [Options et pages Options](../extensibility/internals/options-and-options-pages.md)  
- Présente des pages d’Options générales et personnalisées et explique comment les implémenter.  
+ Présente des pages d’options générales et personnalisées et explique comment les implémenter.  
   
  [Création d’une page d’options](../extensibility/creating-an-options-page.md)  
- Explique comment créer deux pages d’Options, une page simple et une page personnalisée.  
+ Explique comment créer deux pages d’options, une page simple et une page personnalisée.  
   
  [Prise en charge des catégories de paramètres](../misc/support-for-settings-categories.md)  
- Décrit les paramètres utilisateur et comment elles sont créées et conservées.  
+ Décrit les paramètres utilisateur et la façon dont ils sont créés et rendus persistants.  
   
  [Création d’une catégorie de paramètres](../extensibility/creating-a-settings-category.md)  
- Explique comment créer un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] catégorie de paramètres et l’utiliser pour enregistrer les valeurs et de restaurer les valeurs à partir d’un fichier de paramètres.  
+ Explique comment créer une [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] catégorie de paramètres et l’utiliser pour enregistrer et restaurer des valeurs à partir d’un fichier de paramètres.  
   
  [Extension des propriétés et la fenêtre Propriétés](../extensibility/extending-properties-and-the-property-window.md)  
- Explique comment afficher et modifier la valeur d’un objet dans le **propriétés** fenêtre.  
+ Explique comment afficher et modifier la valeur d’un objet dans la fenêtre **Propriétés** .  
   
  [Exposition des propriétés dans la fenêtre Propriétés](../extensibility/exposing-properties-to-the-properties-window.md)  
- Explique comment exposer les propriétés publiques d’un objet pour le **propriétés** fenêtre.  
+ Explique comment exposer les propriétés publiques d’un objet dans la fenêtre **Propriétés** .  
   
  [Prise en charge des propriétés de configuration et de projet](../extensibility/internals/support-for-project-and-configuration-properties.md)  
- Explique comment afficher et modifier les propriétés de configuration et de projet.  
+ Explique comment afficher et modifier les propriétés de projet et de configuration.  
   
  [Obtention des propriétés d’un projet](../extensibility/getting-project-properties.md)  
- Vous guide à travers les étapes de création d’un VSPackage managé qui affiche les propriétés du projet dans une fenêtre outil.  
+ Vous guide tout au long des étapes de création d’un VSPackage géré qui affiche les propriétés d’un projet dans une fenêtre outil.  
   
  [Utilisation de la banque de paramètres](../extensibility/using-the-settings-store.md)  
- Explique le mécanisme de persistance des paramètres Store et comment l’utiliser.  
+ Explique le mécanisme de persistance du magasin de paramètres et comment l’utiliser.  
   
-## <a name="related-sections"></a>Rubriques connexes  
+## <a name="related-sections"></a>Sections connexes  
  [VSPackages](../extensibility/internals/vspackages.md)  
- Fournit une orientation générale vers des rubriques qui expliquent comment créer et utiliser des VSPackages.
+ Fournit une orientation générale pour les rubriques qui expliquent comment créer et utiliser des VSPackages.

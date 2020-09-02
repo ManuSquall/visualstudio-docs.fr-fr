@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8caf9dcabe46c0d68fabf9e620818f52316e484b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68162332"
 ---
 # <a name="logging-in-msbuild"></a>Journalisation dans MSBuild
@@ -24,10 +24,10 @@ ms.locfileid: "68162332"
 La journalisation vous permet de surveiller la progression d’une génération. Elle capture dans un fichier journal les événements, messages, avertissements et erreurs liés à la génération.  
   
 ## <a name="in-this-section"></a>Dans cette section  
- [Obtention de journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md)  
+ [Obtention des journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md)  
  Décrit les différents aspects de la journalisation dans [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
- [Enregistreurs d’événements de génération](../msbuild/build-loggers.md)  
+ [Enregistreurs de build](../msbuild/build-loggers.md)  
  Décrit les étapes requises pour créer un enregistreur d’événements dans un environnement monoprocesseur.  
   
  [Journalisation dans un environnement multiprocesseur](../msbuild/logging-in-a-multi-processor-environment.md)  
@@ -36,9 +36,9 @@ La journalisation vous permet de surveiller la progression d’une génération.
  [Écriture d’enregistreurs d’événements prenant en charge plusieurs processeurs](../msbuild/writing-multi-processor-aware-loggers.md)  
  Décrit la création d’enregistreurs d’événements prenant en charge plusieurs processeurs, ainsi que l’utilisation de ConfigurableForwardingLogger.  
   
- [Création d’enregistreurs d’événements de transfert](../msbuild/creating-forwarding-loggers.md)  
+ [Création de journaux de transfert](../msbuild/creating-forwarding-loggers.md)  
  Décrit la création de journaux de transfert personnalisés.  
   
-## <a name="related-sections"></a>Rubriques connexes  
- [Génération parallèle de plusieurs projets](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)  
+## <a name="related-sections"></a>Sections connexes  
+ [Génération de plusieurs projets en parallèle](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)  
  Explique comment générer plus rapidement plusieurs projets en les exécutant en parallèle.

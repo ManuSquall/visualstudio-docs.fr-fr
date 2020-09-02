@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 888e2ac47348d7e61d115f51e3ea52d15ea9f447
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282434"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Remplir des datasets à l’aide de TableAdapters
@@ -52,7 +52,7 @@ Les TableAdapters sont des composants générés par le concepteur qui se connec
 
 ![Flux de données dans une application cliente](../data-tools/media/clientdatadiagram.gif)
 
-Alors que les TableAdapters sont conçus avec l' **Concepteur de DataSet**, les classes TableAdapter ne sont pas générées en tant que classes imbriquées de <xref:System.Data.DataSet> . Ils se trouvent dans des espaces de noms distincts qui sont spécifiques à chaque jeu de données. Par exemple, si vous avez un dataset nommé `NorthwindDataSet` , les TableAdapters qui sont associés à des <xref:System.Data.DataTable> dans le sont `NorthwindDataSet` dans l' `NorthwindDataSetTableAdapters` espace de noms. Pour accéder à un TableAdapter particulier par programme, vous devez déclarer une nouvelle instance du TableAdapter. Par exemple :
+Alors que les TableAdapters sont conçus avec l' **Concepteur de DataSet**, les classes TableAdapter ne sont pas générées en tant que classes imbriquées de  <xref:System.Data.DataSet> . Ils se trouvent dans des espaces de noms distincts qui sont spécifiques à chaque jeu de données. Par exemple, si vous avez un dataset nommé `NorthwindDataSet` , les TableAdapters qui sont associés à des  <xref:System.Data.DataTable> dans le sont `NorthwindDataSet` dans l' `NorthwindDataSetTableAdapters` espace de noms. Pour accéder à un TableAdapter particulier par programme, vous devez déclarer une nouvelle instance du TableAdapter. Par exemple :
 
 [!code-csharp[VbRaddataTableAdapters#7](../data-tools/codesnippet/CSharp/fill-datasets-by-using-tableadapters_1.cs)]
 [!code-vb[VbRaddataTableAdapters#7](../data-tools/codesnippet/VisualBasic/fill-datasets-by-using-tableadapters_1.vb)]
@@ -129,9 +129,9 @@ Voici les méthodes et les propriétés fréquemment utilisées de la `TableAdap
 |Membre|Description|
 |------------|-----------------|
 |Méthode `UpdateAll`|Enregistre toutes les données de toutes les tables de données.|
-|Propriété `BackUpDataSetBeforeUpdate`|Détermine si une copie de sauvegarde du DataSet doit être créée avant l’exécution de la `TableAdapterManager.UpdateAll` méthode. Expression.|
+|Propriété`BackUpDataSetBeforeUpdate`|Détermine si une copie de sauvegarde du DataSet doit être créée avant l’exécution de la `TableAdapterManager.UpdateAll` méthode. Expression.|
 |*TableName* `TableAdapter` propriété|Représente un TableAdapter. Le TableAdapterManager généré contient une propriété pour chaque `TableAdapter` qu’il gère. Par exemple, un jeu de données avec une table Customers et Orders génère avec un TableAdapterManager qui contient `CustomersTableAdapter` les `OrdersTableAdapter` Propriétés et.|
-|Propriété `UpdateOrder`|Contrôle l’ordre des commandes INSERT, Update et DELETE individuelles. Affectez-lui l’une des valeurs de l' `TableAdapterManager.UpdateOrderOption` énumération.<br /><br /> Par défaut, `UpdateOrder` est défini sur **InsertUpdateDelete**. Cela signifie que les insertions, les mises à jour, puis les suppressions sont effectuées pour toutes les tables du DataSet.|
+|Propriété`UpdateOrder`|Contrôle l’ordre des commandes INSERT, Update et DELETE individuelles. Affectez-lui l’une des valeurs de l' `TableAdapterManager.UpdateOrderOption` énumération.<br /><br /> Par défaut, `UpdateOrder` est défini sur **InsertUpdateDelete**. Cela signifie que les insertions, les mises à jour, puis les suppressions sont effectuées pour toutes les tables du DataSet.|
 
 ## <a name="security"></a>Sécurité
 

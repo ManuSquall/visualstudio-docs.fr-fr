@@ -15,10 +15,10 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0396d3290ef870fb2c2c7b7b49c774b66397077c
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852214"
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>Liaison de raccourcis clavier à des éléments de menu
@@ -52,16 +52,16 @@ Pour lier un raccourci clavier à une commande de menu personnalisée, ajoutez s
   
 1. Ouvrez le fichier. vsct pour votre package.  
   
-2. Crée une section de `<KeyBindings>` vide après la `<Commands>` si elle n’est pas déjà présente.  
+2. Crée une `<KeyBindings>` section vide après `<Commands>` si elle n’est pas déjà présente.  
   
    > [!WARNING]
    > Pour plus d’informations sur les combinaisons de touches, consultez [KeyBinding](../extensibility/keybinding-element.md).  
   
-    Dans la section `<KeyBindings>`, créez une entrée de `<KeyBinding>`.  
+    Dans la `<KeyBindings>` section, créez une `<KeyBinding>` entrée.  
   
-    Définissez les attributs `guid` et `id` sur ceux de la commande que vous souhaitez appeler.  
+    Affectez `guid`  les  `id` attributs et à ceux de la commande que vous souhaitez appeler.  
   
-    Affectez la valeur **Control**, **ALT**ou **Shift**à l’attribut `mod1`.  
+    Affectez `mod1` à l’attribut la valeur **Control**, **ALT**ou **Shift**.  
   
     La section KeyBindings doit ressembler à ceci :  
   
@@ -73,18 +73,18 @@ Pour lier un raccourci clavier à une commande de menu personnalisée, ajoutez s
   
    ```  
   
-   Si votre raccourci clavier nécessite plus de deux clés, définissez les attributs `mod2` et `key2`.  
+   Si votre raccourci clavier nécessite plus de deux clés, définissez les `mod2` `key2` attributs et.  
   
    Dans la plupart des cas, la **touche Maj** ne doit pas être utilisée sans un deuxième modificateur, car l’appui sur celle-ci amène déjà la plupart des touches alphanumériques à taper une lettre majuscule ou un symbole.  
   
    Les codes de clé virtuelle vous permettent d’accéder à des clés spéciales qui n’ont pas de caractère associé, par exemple des touches de fonction et la touche **retour arrière** . Pour plus d’informations, consultez [codes de clé virtuelle](https://msdn2.microsoft.com/library/ms645540.aspx).  
   
-   Pour rendre la commande disponible dans l’éditeur Visual Studio, affectez à l’attribut `editor` la valeur `guidVSStd97`.  
+   Pour rendre la commande disponible dans l’éditeur Visual Studio, affectez `editor` à l’attribut la valeur `guidVSStd97` .  
   
-   Pour que la commande soit disponible uniquement dans un éditeur personnalisé, affectez à l’attribut `editor` le nom de l’éditeur personnalisé qui a été généré par le modèle de package [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] quand vous avez créé le VSPackage qui comprend l’éditeur personnalisé. Pour rechercher la valeur de nom, recherchez dans la section `<Symbols>` un nœud `<GuidSymbol>` dont l’attribut `name` se termine par «`editorfactory`». Il s’agit du nom de l’éditeur personnalisé.  
+   Pour que la commande soit disponible uniquement dans un éditeur personnalisé, affectez `editor` à l’attribut le nom de l’éditeur personnalisé qui a été généré par le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] modèle de package lors de la création du VSPackage qui comprend l’éditeur personnalisé. Pour rechercher la valeur de nom, recherchez dans la `<Symbols>` section un `<GuidSymbol>` nœud dont l' `name` attribut se termine par « `editorfactory` . » Il s’agit du nom de l’éditeur personnalisé.  
   
 ## <a name="example"></a>Exemple  
- Cet exemple lie le raccourci clavier CTRL + ALT + C à une commande nommée `cmdidMyCommand` dans un package nommé `MyPackage`.  
+ Cet exemple lie le raccourci clavier CTRL + ALT + C à une commande nommée `cmdidMyCommand` dans un package nommé `MyPackage` .  
   
 ```  
 <CommandTable>  
@@ -101,7 +101,7 @@ Pour lier un raccourci clavier à une commande de menu personnalisée, ajoutez s
 ```  
   
 ## <a name="example"></a>Exemple  
- Cet exemple lie le raccourci clavier CTRL + B à une commande nommée `cmdidBold` dans un projet nommé `TestEditor`. La commande est disponible uniquement dans l’éditeur personnalisé et non dans d’autres éditeurs.  
+ Cet exemple lie le raccourci clavier CTRL + B à une commande nommée `cmdidBold` dans un projet nommé `TestEditor` . La commande est disponible uniquement dans l’éditeur personnalisé et non dans d’autres éditeurs.  
   
 ```xml  
 <KeyBinding guid="guidVSStd97" id="cmdidBold" editor="guidTestEditorEditorFactory" key1="B" mod1="Control" />  

@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f7994f1c0c7281fc9902e15a3fd60293905abc4f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670456"
 ---
 # <a name="index-search-tips"></a>Conseils de recherche d'index
@@ -29,7 +29,7 @@ Vous pouvez rechercher des informations se trouvant dans l’index en entrant de
 ## <a name="index-search-tips"></a>Conseils de recherche d'index
  L’utilisation de l’index est un processus simple ; toutefois, comprendre comment mieux entrer des mots clés peut rendre vos recherches d’index plus productives.
 
-### <a name="general-guidelines"></a>Indications générales
+### <a name="general-guidelines"></a>Instructions générales
 
 - Faites défiler les entrées d’index. Toutes les rubriques ne sont pas indexées de la même façon, et celle qui peut vous aider peut être plus haut ou plus bas que prévu dans la liste.
 

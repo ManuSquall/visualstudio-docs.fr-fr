@@ -15,10 +15,10 @@ caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5b1b4846bcceba2325da1c835b59a48e651190a1
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852118"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Prise en charge du SDK Visual Studio
@@ -40,13 +40,13 @@ Plusieurs options de support sont disponibles pour les clients qui ont des quest
 ### <a name="visual-studio-marketplace"></a>Visual Studio Marketplace  
  Le [Visual Studio Marketplace](https://marketplace.visualstudio.com/) est l’emplacement des extensions et des exemples de code. Vous pouvez trouver des outils qui améliorent votre productivité et votre expérience utilisateur avec Visual Studio, des exemples d’applications qui montrent comment utiliser les VSPackages et le Managed Extensibility Framework (MEF), ainsi que d’autres types d’exemples.  
   
-### <a name="codeplex"></a>Codeplex  
- [CodePlex](https://www.codeplex.com/) est le site Web d’hébergement de projets open source de Microsoft. Vous pouvez utiliser CodePlex pour créer et partager de nouveaux projets, contribuer à des projets existants, ou utiliser les applications sur le site et fournir des commentaires. Tous les PowerToys (et leur documentation) qui étaient inclus dans les versions antérieures du [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] sont désormais disponibles sur CodePlex.  
+### <a name="codeplex"></a>CodePlex  
+ [CodePlex](https://www.codeplex.com/) est le site Web d’hébergement de projets open source de Microsoft. Vous pouvez utiliser CodePlex pour créer et partager de nouveaux projets, contribuer à des projets existants, ou utiliser les applications sur le site et fournir des commentaires. Tous les PowerToys (et leur documentation) qui étaient inclus dans les versions antérieures de [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] sont désormais disponibles sur CodePlex.  
   
 ## <a name="included-support"></a>Support inclus  
   
 ### <a name="visual-studio-product-support"></a>Support technique Visual Studio  
- Une partie de la prise en charge est incluse dans l’achat de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] produits. Pour plus d’informations, consultez [prise en charge de Visual Studio](https://msdn.microsoft.com/vstudio/cc136615.aspx). Microsoft maintient une équipe de support dédiée pour répondre aux questions sur l’extensibilité de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+ Une partie du support est incluse dans l’achat de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] produits. Pour plus d’informations, consultez [prise en charge de Visual Studio](https://msdn.microsoft.com/vstudio/cc136615.aspx). Microsoft maintient une équipe de support dédiée pour répondre aux questions sur l' [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensibilité.  
   
 ### <a name="msdn-subscription-support"></a>Support des abonnements MSDN  
  Les packages d’abonnement MSDN peuvent également inclure une prise en charge. Pour plus d’informations, consultez [prise en charge des abonnés MSDN](https://msdn.microsoft.com/subscriptions/aa718661.aspx).  
@@ -56,12 +56,12 @@ Plusieurs options de support sont disponibles pour les clients qui ont des quest
 ### <a name="developer-tools-support"></a>Support Outils de développement  
  Le support peut également être acheté. Différentes offres de support sont disponibles sous la catégorie Outils de développement dans les [centres d’aide et de support Microsoft](https://support.microsoft.com/supportforbusiness/productselection?fltadd=sps-business-1&sapId=4fd4947b-15ea-ce01-080f-97f2ca3c76e8).  
   
- Les clients qui souhaitent utiliser le [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] pour développer des packages complexes peuvent envisager d’acheter un contrat de Support Premier auprès de Microsoft. Pour plus d’informations, consultez [Microsoft support premier](https://support.microsoft.com/premier). Pour les petites entreprises, le [support avancé pour les partenaires](https://partner.microsoft.com/support/advanced-cloud-support) peut être une alternative intéressante à une offre de support premier traditionnelle.  
+ Les clients qui souhaitent utiliser le [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] pour développer des packages complexes peuvent envisager d’acheter un contrat de support premier avec Microsoft. Pour plus d’informations, consultez [Microsoft support premier](https://support.microsoft.com/premier). Pour les petites entreprises, le [support avancé pour les partenaires](https://partner.microsoft.com/support/advanced-cloud-support) peut être une alternative intéressante à une offre de support premier traditionnelle.  
   
 > [!NOTE]
 > Le support standard ne peut pas être utilisé pour la consultation ou pour obtenir des conseils.  
   
- Vous pouvez envoyer des questions sur les offres de Support Premier conjointement avec le programme VSIP à [vsipsvs@microsoft.com](mailto:vsipsvs@microsoft.com). Vous pouvez envoyer des questions sur le nouveau programme Partner Advantage à [advantg@microsoft.com](mailto:advantg@microsoft.com).  
+ Vous pouvez envoyer des questions sur les offres de Support Premier conjointement avec le programme VSIP à [vsipsvs@microsoft.com](mailto:vsipsvs@microsoft.com) . Vous pouvez envoyer des questions sur le nouveau programme d’avantage du partenaire à [advantg@microsoft.com](mailto:advantg@microsoft.com) .  
   
  Vous trouverez des informations sur les demandes de support individuelles dans [demandes de support individuelles](https://support.microsoft.com/oas/default.aspx?gprid=3040).  
   

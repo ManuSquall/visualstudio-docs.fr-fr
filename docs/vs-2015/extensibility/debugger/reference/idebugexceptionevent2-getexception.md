@@ -1,5 +1,5 @@
 ---
-title: IDebugExceptionEvent2::GetException | Microsoft Docs
+title: 'IDebugExceptionEvent2 :: GetException | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a0e19dc924101fcceb93948272fc1e83353e2815
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68163795"
 ---
 # <a name="idebugexceptionevent2getexception"></a>IDebugExceptionEvent2::GetException
@@ -40,13 +40,13 @@ int GetException( 
   
 #### <a name="parameters"></a>Paramètres  
  `pExceptionInfo`  
- [in, out] Un [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) structure est remplie avec la description de l’exception.  
+ [in, out] Structure [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) qui est remplie avec la description de l’exception.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="remarks"></a>Notes  
- [C++ uniquement] L’appelant est chargé de libérer toutes les chaînes dans le [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) structure, ainsi que de libérer le [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objet dans la structure.  
+ [C++ uniquement] L’appelant est chargé de libérer des chaînes dans la structure [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) , ainsi que de libérer l’objet [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) dans la structure.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)   

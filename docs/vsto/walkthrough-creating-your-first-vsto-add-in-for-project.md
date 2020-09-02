@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Créer votre premier complément VSTO pour Project'
+title: 'Procédure pas à pas : créer votre premier complément VSTO pour Project'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,18 +16,18 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 4a84d295a47d3391f27e7101ad815dca0c910aa6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62981393"
 ---
-# <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>Procédure pas à pas : Créer votre premier complément VSTO pour Project
-  Cette procédure pas à pas vous montre comment créer un complément, VSTO pour Microsoft Office Project. Les fonctionnalités que vous créez dans ce type de solution sont accessibles à l’application proprement dite, quels que soient les projets ouverts. Pour plus d’informations, consultez [présentation du développement de solutions Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
+# <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>Procédure pas à pas : créer votre premier complément VSTO pour Project
+  Cette procédure pas à pas vous montre comment créer un complément VSTO pour Microsoft Office projet. Les fonctionnalités que vous créez dans ce type de solution sont accessibles à l’application proprement dite, quels que soient les projets ouverts. Pour plus d’informations, consultez [vue d’ensemble du développement des solutions Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
 
  [!INCLUDE[appliesto_projallapp](../vsto/includes/appliesto-projallapp-md.md)]
 
- Cette procédure pas à pas décrit les tâches suivantes :
+ Cette procédure pas à pas décrit les tâches suivantes :
 
 - Création d’un projet de complément VSTO Project
 
@@ -40,7 +40,7 @@ ms.locfileid: "62981393"
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>Prérequis
- Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :
+ Vous devez disposer des éléments suivants pour exécuter cette procédure pas à pas :
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -69,7 +69,7 @@ ms.locfileid: "62981393"
 ## <a name="write-code-that-adds-a-new-task-to-a-project"></a>Écrire du code qui ajoute une nouvelle tâche à un projet
  L'étape suivante consiste à ajouter du code au fichier de code ThisAddIn. Le nouveau code utilise le modèle objet de Project pour ajouter une nouvelle tâche à un projet. Par défaut, le fichier de code ThisAddIn contient le code généré suivant :
 
-- Une définition partielle de la classe `ThisAddIn` . Cette classe fournit un point d’entrée pour votre code et donne accès au modèle objet de Project. Pour plus d’informations, consultez [programme VSTO Add-ins](../vsto/programming-vsto-add-ins.md). Le reste de la classe `ThisAddIn` est défini dans un fichier de code masqué que vous ne devez pas modifier.
+- Une définition partielle de la classe `ThisAddIn` . Cette classe fournit un point d’entrée pour votre code et donne accès au modèle objet de Project. Pour plus d’informations, consultez [compléments VSTO du programme](../vsto/programming-vsto-add-ins.md). Le reste de la `ThisAddIn` classe est défini dans un fichier de code masqué que vous ne devez pas modifier.
 
 - Les gestionnaires d'événements `ThisAddIn_Startup` et `ThisAddIn_Shutdown` . Ces gestionnaires d’événements sont appelés quand Project charge et décharge votre complément VSTO. Utilisez ces gestionnaires d'événements pour initialiser votre complément VSTO quand il est chargé, ainsi que pour nettoyer les ressources utilisées par votre complément VSTO quand il est déchargé. Pour plus d’informations, consultez [événements dans les projets Office](../vsto/events-in-office-projects.md).
 
@@ -86,20 +86,20 @@ ms.locfileid: "62981393"
 
 - Le champ `Application` de la classe `ThisAddIn` . Le champ `Application` retourne un objet `Microsoft.Office.Interop.MSProject.Application` qui représente l’instance active de Project.
 
-- Le `pj` paramètre du Gestionnaire d’événements pour l’événement NewProject. Le paramètre `pj` est un objet `Microsoft.Office.Interop.MSProject.Project` qui représente le projet. Pour plus d’informations, consultez [projet solutions](../vsto/project-solutions.md).
+- `pj`Paramètre du gestionnaire d’événements pour l’événement NewProject. Le paramètre `pj` est un objet `Microsoft.Office.Interop.MSProject.Project` qui représente le projet. Pour plus d’informations, consultez [solutions de projet](../vsto/project-solutions.md).
 
-1. En C#, ajoutez le code suivant au gestionnaire d'événements `ThisAddIn_Startup` . Ce code connecte le `Application_Newproject` Gestionnaire d’événements avec l’événement NewProject.
+1. En C#, ajoutez le code suivant au gestionnaire d'événements `ThisAddIn_Startup` . Ce code connecte le `Application_Newproject` Gestionnaire d’événements à l’événement NewProject.
 
      [!code-csharp[Trin_ProjectAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_ProjectAddInTutorial/ThisAddIn.cs#2)]
 
-## <a name="test-the-project"></a>Le projet de test
+## <a name="test-the-project"></a>Tester le projet
  Quand vous générez et exécutez le projet, vérifiez que la nouvelle tâche apparaît dans le nouveau projet obtenu.
 
 ### <a name="to-test-the-project"></a>Pour tester le projet
 
 1. Appuyez sur **F5** pour générer et exécuter votre projet. Microsoft Project démarre et ouvre automatiquement un nouveau projet vide.
 
-     Quand vous générez le projet, le code est compilé dans un assembly qui est inclus dans le dossier de sortie de la génération du projet. Visual Studio crée aussi un jeu d’entrées de Registre qui permet à Project de détecter et de charger le complément VSTO, puis configure les paramètres de sécurité sur l’ordinateur de développement pour permettre l’exécution du complément VSTO. Pour plus d’informations, consultez [vue d’ensemble des processus de génération de solution Office](/previous-versions/visualstudio/visual-studio-2010/h2c9cdc0(v=vs.100)).
+     Quand vous générez le projet, le code est compilé dans un assembly qui est inclus dans le dossier de sortie de la génération du projet. Visual Studio crée aussi un jeu d’entrées de Registre qui permet à Project de détecter et de charger le complément VSTO, puis configure les paramètres de sécurité sur l’ordinateur de développement pour permettre l’exécution du complément VSTO. Pour plus d’informations, consultez [vue d’ensemble du processus de génération de solutions Office](/previous-versions/visualstudio/visual-studio-2010/h2c9cdc0(v=vs.100)).
 
 2. Vérifiez qu’une nouvelle tâche est bien ajoutée au projet vierge.
 
@@ -119,17 +119,17 @@ ms.locfileid: "62981393"
 ## <a name="next-steps"></a>Étapes suivantes
  Maintenant que vous avez créé un complément VSTO de base pour Project, vous pouvez en savoir plus sur le développement des compléments VSTO en consultant les rubriques suivantes :
 
-- Tâches de programmation générales que vous pouvez effectuer dans les Compléments VSTO pour Project : [Programmer des Compléments VSTO](../vsto/programming-vsto-add-ins.md).
+- Tâches de programmation générales que vous pouvez effectuer dans les compléments VSTO pour Project : [programmer les compléments VSTO](../vsto/programming-vsto-add-ins.md).
 
-- À l’aide du modèle objet de Project : [Solutions de projet](../vsto/project-solutions.md).
+- Utilisation du modèle objet de Project : [solutions de projet](../vsto/project-solutions.md).
 
-- Génération et débogage des Compléments VSTO pour Project : [Générer des solutions Office](../vsto/building-office-solutions.md).
+- Génération et débogage des compléments VSTO pour Project : [créer des solutions Office](../vsto/building-office-solutions.md).
 
-- Déploiement de compléments VSTO pour Project : [Déployer une solution Office](../vsto/deploying-an-office-solution.md).
+- Déploiement de compléments VSTO pour Project : [déployer une solution Office](../vsto/deploying-an-office-solution.md).
 
 ## <a name="see-also"></a>Voir aussi
-- [Programmer des Compléments VSTO](../vsto/programming-vsto-add-ins.md)
-- [Solutions Project](../vsto/project-solutions.md)
-- [Générer des solutions Office](../vsto/building-office-solutions.md)
+- [Programmer les compléments VSTO](../vsto/programming-vsto-add-ins.md)
+- [Solutions de projet](../vsto/project-solutions.md)
+- [Créer des solutions Office](../vsto/building-office-solutions.md)
 - [Déployer une solution Office](../vsto/deploying-an-office-solution.md)
 - [Vue d’ensemble des modèles de projet Office](../vsto/office-project-templates-overview.md)

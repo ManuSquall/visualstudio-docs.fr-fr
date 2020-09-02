@@ -11,19 +11,19 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: aecf9d95fb8a3b2cda659e2694bff145424e150b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62970734"
 ---
 # <a name="lint-r-code-in-visual-studio"></a>Lint de code R dans Visual Studio
 
 Un linter analyse le code pour révéler des erreurs potentielles, des problèmes de mise en forme et d’autres parasites dans le code, par exemple un faux espace blanc. L’utilisation d’un linter contribue également à encourager certaines conventions de codage, telles que la manière de nommer les identificateurs. Ces conventions sont utiles au sein d’équipes et dans d’autres situations de collaboration.
 
-Outils R pour Visual Studio (RTVS) fournit un linter intégré pour R, dont le comportement est contrôlé par le biais de diverses options décrites dans cet article. Ces options se trouvent dans **Tools** > **Options** > **Text Editor** > **R** > **Lint**.
+Outils R pour Visual Studio (RTVS) fournit un linter intégré pour R, dont le comportement est contrôlé par le biais de diverses options décrites dans cet article. Ces options se trouvent dans **Outils**  >  **options**  >  **éditeur de texte**  >  **R**  >  **Lint**.
 
-Le lint est désactivé par défaut. Pour activer la peluche, définissez**l’option** **All** > Enable lint à **True**.
+Le lint est désactivé par défaut. Pour activer le Lint, affectez **All**la  >  **valeur true**à l’option All ensembliste**Enable** .
 
 Quand il est activé, le linter s’exécute dans l’éditeur pendant votre saisie. Les problèmes sont signalés par des lignes ondulées vertes. Dans le graphique suivant, par exemple, RTVS a identifié six problèmes de lint, notamment l’utilisation de `=` au lieu de `<-` pour une assignation, un manque d’espace autour d’arguments de fonction, l’utilisation de la casse Pascal et d’identificateurs en majuscules, ainsi que l’utilisation d’un point-virgule. Pointez le curseur sur un problème pour afficher une description.
 
@@ -35,7 +35,7 @@ Vous changez souvent les options du linter selon les besoins d’un projet ou d�
 
 | Option | Valeur par défaut | Effet lint |
 | --- | --- | --- |
-| **Appliquer\<-** | **Vrai** | Détecte si `<-` n’est pas utilisé pour l’assignation. |
+| **Oeuvre \<-** | **True** | Détecte si `<-` n’est pas utilisé pour l’assignation. |
 
 ## <a name="naming-group"></a>Groupe de nommage
 
@@ -43,13 +43,13 @@ Ces options marquent des identificateurs qui utilisent des conventions de nommag
 
 | Option | Valeur par défaut | Effet lint |
 | --- | --- | --- |
-| **Marquer la casse mixte** | **Faux** | Marque les identificateurs qui utilisent une casse mixte. |
-| **Marquer les noms longs** | **Faux** | Marque les identificateurs dont les noms dépassent le paramètre **Longueur maximale de nom**. |
-| **Marquer plusieurs points** | **Vrai** | Marque les identificateurs qui utilisent plusieurs points. |
-| **Marquer la casse Pascal** | **Vrai** | Marque les identificateurs qui utilisent la casse Pascal. |
-| **Marquer les mots séparés par des tirets** | **Faux** | Marque les identificateurs qui utilisent des traits de soulignements. |
-| **Marquer les majuscules** | **Vrai** | Marque les identificateurs qui n’utilisent que des majuscules. |
-| **Longueur maximale de nom** | **32** | La longueur appliquée avec le réglage **des noms longs de drapeau.** |
+| **Marquer la casse mixte** | **False** | Marque les identificateurs qui utilisent une casse mixte. |
+| **Marquer les noms longs** | **False** | Marque les identificateurs dont les noms dépassent le paramètre **Longueur maximale de nom**. |
+| **Marquer plusieurs points** | **True** | Marque les identificateurs qui utilisent plusieurs points. |
+| **Marquer la casse Pascal** | **True** | Marque les identificateurs qui utilisent la casse Pascal. |
+| **Marquer les mots séparés par des tirets** | **False** | Marque les identificateurs qui utilisent des traits de soulignements. |
+| **Marquer les majuscules** | **True** | Marque les identificateurs qui n’utilisent que des majuscules. |
+| **Longueur maximale de nom** | **32** | Longueur appliquée avec le paramètre de **noms longs d’indicateur** . |
 
 ## <a name="spacing-group"></a>Groupe d’espacement
 
@@ -59,15 +59,15 @@ Ces options, qui ont toutes la valeur **True** par défaut, contrôlent l’endr
 
 | Option | Valeur par défaut | Effet lint |
 | --- | --- | --- |
-| **Plusieurs** | **Vrai** | Détecte si plusieurs instructions sont sur la même ligne. |
-| **Points-virgules** | **Vrai** | Identifie les utilisations de points-virgules. |
+| **Multiple** | **True** | Détecte si plusieurs instructions sont sur la même ligne. |
+| **Points-virgules** | **True** | Identifie les utilisations de points-virgules. |
 
 ## <a name="text-group"></a>Groupe de texte
 
 | Option | Valeur par défaut | Effet lint |
 | --- | --- | --- |
-| **Longueur limite de ligne** | **Faux** | Définit si les drapeaux linter s’alignent plus longtemps que l’option **de longueur de ligne Max.** |
-| **Longueur maximale de ligne** | **80** | Définit la longueur de la ligne appliquée par l’option **limite de longueur de ligne.** |
+| **Longueur limite de ligne** | **False** | Définit si le délinteur signale des lignes plus longues que l’option de **longueur de ligne maximale** . |
+| **Longueur maximale de ligne** | **80** | Définit la longueur de ligne appliquée par l’option **limite de longueur de ligne** . |
 
 ## <a name="whitespace-group"></a>Groupe d’espaces blancs
 

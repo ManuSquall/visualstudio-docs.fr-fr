@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 3f522d1854cae86d9dc6e757ef0c9a62f4511800
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74779985"
 ---
 # <a name="understand-resource-contention-data-values"></a>Comprendre le fonctionnement des valeurs de données de contention de ressources
@@ -30,8 +30,8 @@ Les rapports de conflit de ressources affichent le nombre total de conflits et l
 
 Les vues du rapport de conflit de ressources incluent également des graphiques chronologiques qui montrent les événements de conflit individuels au fil du temps et affichent les piles d’appels qui ont créé l’événement particulier. Pour plus d’informations, consultez l’une des rubriques suivantes :
 
-- [Vue de détails de fil](../profiling/thread-details-view-contention-data.md)
+- [Vue Détails du thread](../profiling/thread-details-view-contention-data.md)
 
-- [Vue des détails des ressources](../profiling/resource-details-view-contention-data.md)
+- [Vue Détails de la ressource](../profiling/resource-details-view-contention-data.md)
 
 Pour plus d’informations sur le deuxième mode de profilage d’accès concurrentiel, consultez [Visualiseur concurrentiel](../profiling/concurrency-visualizer.md).

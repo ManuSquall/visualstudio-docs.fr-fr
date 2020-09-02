@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9b7174418267a77cc668ab0a79092fc7daefbf58
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62979664"
 ---
 # <a name="spanspan-destructor"></a>span::~span, destructeur
@@ -29,7 +29,7 @@ Détruit l’objet `span` et libère ses ressources.
 ~span();
 ```
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 
 **En-tête :** *cvmarkersobj.h*
 
@@ -37,4 +37,4 @@ Détruit l’objet `span` et libère ses ressources.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [classe de portée](../profiling/span-class.md)
+- [span, classe](../profiling/span-class.md)

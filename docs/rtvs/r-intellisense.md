@@ -9,15 +9,15 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 854f7d410e327ca92d0c5156d89bc21765e13cc7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62999126"
 ---
 # <a name="intellisense"></a>IntelliSense
 
-La fonctionnalité IntelliSense de Visual Studio affiche des informations sur les fonctions que vous pouvez appeler, les membres des objets, les arguments de fonction et les [extraits de code](code-snippets-for-r.md) directement dans votre champ de vision à mesure que vous écrivez du code. Il affiche également les achèvements possibles au fur et à mesure que vous tapez, et se termine lorsque vous appuyez sur **l’onglet** ou **enterz** les clés (voir [les options d’éditeur](editing-r-code-in-visual-studio.md#editor-options) pour l’onglet **Advanced).** La fonctionnalité IntelliSense est disponible à la fois dans l’éditeur et dans la [fenêtre interactive](interactive-repl-for-r-in-visual-studio.md).
+La fonctionnalité IntelliSense de Visual Studio affiche des informations sur les fonctions que vous pouvez appeler, les membres des objets, les arguments de fonction et les [extraits de code](code-snippets-for-r.md) directement dans votre champ de vision à mesure que vous écrivez du code. Il affiche également les saisies semi-automatiques possibles au fur et à mesure que vous tapez, et se termine lorsque vous appuyez sur l' **onglet** ou **Entrez** des touches (consultez Options de l' [éditeur](editing-r-code-in-visual-studio.md#editor-options) pour l’onglet **avancé** ). La fonctionnalité IntelliSense est disponible à la fois dans l’éditeur et dans la [fenêtre interactive](interactive-repl-for-r-in-visual-studio.md).
 
 ![IntelliSense affichant une signature de fonction](media/intellisense-function-signature.png)
 
@@ -25,22 +25,22 @@ Quand vous tapez une fonction ou une autre instruction, IntelliSense fournit un 
 
 ![Menu de saisie semi-automatique IntelliSense](media/intellisense-auto-complete-menu.png)
 
-Appuyer sur **l’onglet** (ou **entrer,** ou **l’espace**, selon la façon dont les options sont définies), insère l’élément sélectionné dans le dropdown. Vous pouvez changer la sélection avec les touches de direction.
+En appuyant sur la touche **Tab** (ou **entrée**, ou **espace**, selon la façon dont les options sont définies), insère l’élément sélectionné dans la liste déroulante. Vous pouvez changer la sélection avec les touches de direction.
 
 IntelliSense fournit également des suggestions pour les membres des objets R :
 
 ![Suggestions IntelliSense pour les membres d’objet](media/intellisense-auto-complete-r-objects.png)
 
-Presser **ESC** rejette complètement le menu. Vous pouvez le ramener avec **Ctrl**+**Space**.
+Appuyez sur **Échap** pour fermer complètement le menu. Vous pouvez le rétablir avec l’espace **CTRL** + **Space**.
 
 Le fait de taper la parenthèse ouvrante `(` pour un appel de fonction insère la parenthèse fermante `)` et affiche l’aide de la signature comme indiqué plus haut :
 
 ![Aide de la signature IntelliSense pour une fonction](media/intellisense-function-signature.png)
 
-Encore une fois, **l’ESC** rejette le popup; pour les signatures de fonction, vous pouvez l’évoquer à nouveau avec **Ctrl**+**Shift**+**Space**.
+Là encore, la **touche Échap** ferme la fenêtre contextuelle. pour les signatures de fonction, vous pouvez la refaire avec **CTRL** + **+** + **espace**.
 
 > [!Tip]
-> Si le paramètre aide à obscurcir le texte en dessous, appuyez et maintenez la clé **Ctrl** pour rendre le paramètre aider le texte translucide.
+> Si le paramètre aide obscurcit le texte situé en dessous, appuyez sur la touche **CTRL** et maintenez-la enfoncée pour rendre translucide le texte d’aide du paramètre.
 
 ## <a name="intellisense-for-user-defined-functions-and-variables"></a>IntelliSense pour les fonctions définies par l’utilisateur et les variables
 

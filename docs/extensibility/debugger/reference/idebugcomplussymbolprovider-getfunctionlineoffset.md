@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::GetFunctionLineOffset Microsoft Docs
+title: 'IDebugComPlusSymbolProvider :: GetFunctionLineOffset | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 52f519259cbd0a79325fb062d630e7c4db757695
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733881"
 ---
 # <a name="idebugcomplussymbolprovidergetfunctionlineoffset"></a>IDebugComPlusSymbolProvider::GetFunctionLineOffset
-Récupère l’adresse dans une fonction qui représente le décalage de ligne donné.
+Récupère l’adresse dans une fonction qui représente l’offset de ligne donné.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -44,19 +44,19 @@ int GetFunctionLineOffset(
 
 ## <a name="parameters"></a>Paramètres
 `pAddress`\
-[dans] Adresse qui représente la fonction.
+dans Adresse qui représente la fonction.
 
 `dwLine`\
-[dans] Ligne compensée dès le début de la fonction.
+dans Offset de ligne à partir du début de la fonction.
 
 `ppNewAddress`\
-[out] Nouvelle adresse qui représente la ligne compensée depuis le début de la fonction.
+à Nouvelle adresse qui représente l’offset de ligne à partir du début de la fonction.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="example"></a>Exemple
-L’exemple suivant montre comment implémenter cette méthode pour un objet **CDebugSymbolProvider** qui expose [l’interface IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+L’exemple suivant montre comment implémenter cette méthode pour un objet **CDebugSymbolProvider** qui expose l’interface [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) .
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetFunctionLineOffset(

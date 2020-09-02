@@ -1,5 +1,5 @@
 ---
-title: IDebugMethodField::EnumStaticLocals | Microsoft Docs
+title: 'IDebugMethodField :: EnumStaticLocals | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 69230ce3f748cca460c08d2d40648523161707d5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68162581"
 ---
 # <a name="idebugmethodfieldenumstaticlocals"></a>IDebugMethodField::EnumStaticLocals
@@ -40,13 +40,13 @@ int EnumStaticLocals(
   
 #### <a name="parameters"></a>Paramètres  
  `ppLocals`  
- [out] Retourne un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) objet représentant la liste des variables locales statiques. Retourne une valeur null s’il en existe pas de variables locales statiques.  
+ à Retourne un objet [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) représentant la liste des variables locales statiques. Retourne une valeur null s’il n’y a pas de variables locales statiques.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne S_OK, ou retourne S_FALSE s’il n’y a aucuns variables locales statiques. Sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne S_OK ou retourne S_FALSE s’il n’y a pas de variables locales statiques. Sinon, retourne un code d'erreur.  
   
 ## <a name="remarks"></a>Notes  
- Chaque élément est un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objet représentant les différents types de variables locales statiques. Appelez le [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) méthode sur chaque objet pour déterminer exactement quel type de variable locale statique de l’objet représente.  
+ Chaque élément est un objet [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) représentant différents types de variables locales statiques. Appelez la méthode [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) sur chaque objet pour déterminer exactement le type de l’objet local statique représenté par l’objet.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   

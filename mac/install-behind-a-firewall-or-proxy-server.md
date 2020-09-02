@@ -7,10 +7,10 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 09/18/2019
 ms.openlocfilehash: 25a4597c8d523b63e7ceb0cf8b5eff71af58071a
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88800409"
 ---
 # <a name="install-and-use-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Installer et utiliser Visual Studio pour Mac derrière un pare-feu ou un serveur proxy
@@ -56,7 +56,7 @@ Nous vous recommandons, pour avoir accès à toutes les fonctionnalités dont vo
 
 ### <a name="general"></a>Général
 
-| Domaine | Port(s)|Fonction|
+| Domaine | Port(s)|Objectif|
 | ----------------------|------------------|------------------|
 | go.microsoft.com | 80/443|Résolution d’URL Microsoft |
 | vsstartpage.blob.core.windows.net| 80/443| Données de la page de démarrage|
@@ -65,9 +65,9 @@ Nous vous recommandons, pour avoir accès à toutes les fonctionnalités dont vo
 | visualstudio-devdiv-c2s.msedge.net | 80/443| Notifications et fonctionnalité expérimentale |
 | targetednotifications.azurewebsites.net|  80/443| Permet de filtrer une liste de notifications globale sur une liste qui s’applique uniquement à certains types de scénarios de machines/d’utilisation|
 
-### <a name="identity"></a>Fournisseur
+### <a name="identity"></a>Identité
 
-| Domaine | Port(s)|Fonction|
+| Domaine | Port(s)|Objectif|
 | ----------------------|------------------|------------------|
 | login.microsoftonline.com | 80/443| Fournisseur d’identité|
 | secure.aadcdn.microsoftonline-p.com | 80/443|Fournisseur d’identité|
@@ -76,7 +76,7 @@ Nous vous recommandons, pour avoir accès à toutes les fonctionnalités dont vo
 
 ### <a name="nuget"></a>NuGet
 
-| Domaine | Port(s)|Fonction|
+| Domaine | Port(s)|Objectif|
 | ----------------------|------------------|------------------|
 | api.nuget.org | 80/443|API NuGet|
 | secure.aadcdn.microsoftonline-p.com |80/443| Fournisseur d’identité|

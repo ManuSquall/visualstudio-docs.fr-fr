@@ -14,10 +14,10 @@ helpviewer_keywords:
 - trusted files
 - trusted folders
 ms.openlocfilehash: 492a94962d255a9d18dcabdababf7fa6a540ada1
-ms.sourcegitcommit: 935e1388281df0f04147802606b5cb7f513d45ed
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88197385"
 ---
 # <a name="configure-trust-settings-for-files-and-folders"></a>Configurer les paramètres d’approbation pour les fichiers et les dossiers

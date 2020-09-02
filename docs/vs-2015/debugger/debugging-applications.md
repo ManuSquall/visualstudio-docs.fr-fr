@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 747f96a31ace1267512b9327a0d6aaaf07e02631
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545585"
 ---
 # <a name="debugging-applications"></a>Déboguer des applications
@@ -28,7 +28,7 @@ Les sections suivantes traitent du débogage pour des types spécifiques d'appli
   
 ## <a name="debugging-for-different-types-of-applications"></a>Débogage des différents types d'applications  
   
-|Intitulé|Description|  
+|Titre|Description|  
 |-|-|  
 |[Débogage d'applications du Windows Store et d'applications universelles Windows](../debugger/debugging-windows-store-and-windows-universal-apps.md)|Décrit comment déboguer des applications du Windows Store et des applications universelles Windows.|  
 |[Débogage du code managé](../debugger/debugging-managed-code.md)|Décrit comment déboguer du code managé (Visual C#, Visual Basic et F3).|  

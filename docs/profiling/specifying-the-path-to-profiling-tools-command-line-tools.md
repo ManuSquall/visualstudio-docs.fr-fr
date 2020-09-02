@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f66ed17aec8c6e5303ea61741021dd25032fcb37
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75406301"
 ---
 # <a name="specify-the-path-to-profiling-tools-command-line-tools"></a>Spécifier le chemin des outils en ligne de commande des outils de profilage
@@ -24,7 +24,7 @@ Le chemin d'accès aux outils de profilage en ligne de commande de [!INCLUDE[vsp
 
 Pour le code natif, les API du profileur Visual Studio se trouvent dans *VSPerf.dll*. Le fichier d’en-tête, *VSPerf.h*, et la bibliothèque d’importation, *VSPerf.lib*, se trouvent dans le répertoire *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK*.
 
- Pour le code géré, les API profiler sont dans le *Microsoft.VisualStudio.Profiler.dll*. Cette DLL se trouve dans le répertoire *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*.
+ Pour le code managé, les API du profileur se trouvent dans le *Microsoft.VisualStudio.Profiler.dll*. Cette DLL se trouve dans le répertoire *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*.
 
 ## <a name="64-bit-computers"></a>Ordinateurs 64 bits
 
@@ -32,12 +32,12 @@ Sur les ordinateurs 64 bits, spécifiez le chemin d'accès en fonction de la pl
 
 - Pour les applications 32 bits, le répertoire par défaut des outils de profilage est le suivant :
 
-     (natif) *Microsoft Visual Studio-2017-Team Tools-Performance Tools-PerfSDK*
+     natif *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK*
      
-     (géré) *Microsoft Visual Studio-Shared-Common-VSPerfCollectionTools*
+     nage *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*
 
 - Pour les applications 64 bits, le répertoire par défaut des outils de profilage est le suivant :
 
-     (natif) *Microsoft Visual Studio-2017-Team Tools-Performance Tools*
+     natif *Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK*
 
-     (géré) *Microsoft Visual Studio-Shared-Common-VSPerfCollectionTools-x64*
+     nage *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*

@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 ms.openlocfilehash: ffa8c7634c0d97dd24ff69814ae73ad5ff12928b
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88800201"
 ---
 # <a name="installation"></a>Installation
@@ -213,7 +213,7 @@ Pour installer PyTorch, exécutez la commande suivante dans un terminal :
     pip3 install torchvision
     ```
 
-- **MacOS**
+- **macOS**
 
   ```bash
   pip3.5 install http://download.pytorch.org/whl/torch-0.2.0.post3-cp35-cp35m-macosx_10_7_x86_64.whl

@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 52b8ef11e295d60e71a59820a48bca5e477c639d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68163601"
 ---
 # <a name="output-element-msbuild"></a>Output, élément (MSBuild)
@@ -52,8 +52,8 @@ Stocke les valeurs de sortie d’une tâche dans les éléments et les propriét
 |Attribut|Description|  
 |---------------|-----------------|  
 |`TaskParameter`|Attribut requis.<br /><br /> Nom du paramètre de sortie de la tâche.|  
-|`PropertyName`|L’attribut `PropertyName` ou `ItemName` est obligatoire.<br /><br /> Propriété recevant la valeur du paramètre de sortie de la tâche. Votre projet peut ensuite référencer la propriété avec la syntaxe `$(`*PropertyName*`)`. Ce nom de propriété peut être un nouveau nom de propriété ou un nom déjà défini dans le projet.<br /><br /> Cet attribut n’est pas utilisable si `ItemName` est également utilisé.|  
-|`ItemName`|L’attribut `PropertyName` ou `ItemName` est obligatoire.<br /><br /> Élément recevant la valeur du paramètre de sortie de la tâche. Votre projet peut ensuite référencer l’élément avec la syntaxe `@(`*ItemName*`)`. Ce nom d’élément peut être un nouveau nom d’élément ou un nom déjà défini dans le projet.<br /><br /> Cet attribut n’est pas utilisable si `PropertyName` est également utilisé.|  
+|`PropertyName`|L’attribut `PropertyName` ou `ItemName` est obligatoire.<br /><br /> Propriété recevant la valeur du paramètre de sortie de la tâche. Votre projet peut ensuite référencer la propriété avec la `$(` *PropertyName* `)` syntaxe PropertyName. Ce nom de propriété peut être un nouveau nom de propriété ou un nom déjà défini dans le projet.<br /><br /> Cet attribut n’est pas utilisable si `ItemName` est également utilisé.|  
+|`ItemName`|L’attribut `PropertyName` ou `ItemName` est obligatoire.<br /><br /> Élément recevant la valeur du paramètre de sortie de la tâche. Votre projet peut ensuite référencer l’élément avec la `@(` *ItemName* `)` syntaxe ItemName. Ce nom d’élément peut être un nouveau nom d’élément ou un nom déjà défini dans le projet.<br /><br /> Cet attribut n’est pas utilisable si `PropertyName` est également utilisé.|  
 |`Condition`|Attribut facultatif.<br /><br /> Condition à évaluer. Pour plus d’informations, consultez l’article [Conditions (Conditions MSBuild)](../msbuild/msbuild-conditions.md).|  
   
 ### <a name="child-elements"></a>Éléments enfants  
@@ -63,9 +63,9 @@ Stocke les valeurs de sortie d’une tâche dans les éléments et les propriét
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[Task](../msbuild/task-element-msbuild.md)|Crée et exécute une instance d’une tâche [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].|  
+|[Tâche](../msbuild/task-element-msbuild.md)|Crée et exécute une instance d’une tâche [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].|  
   
-## <a name="example"></a>Exemples  
+## <a name="example"></a>Exemple  
  L’exemple de code ci-après présente l’exécution de la tâche `Csc` au sein d’un élément `Target`. Les éléments et propriétés transmis aux paramètres de la tâche sont déclarés en dehors de la portée de cet exemple. La valeur du paramètre de sortie `OutputAssembly` est stockée dans l’élément `FinalAssemblyName`, et la valeur du paramètre de sortie `BuildSucceeded` est stockée dans la propriété `BuildWorked`. Pour plus d’informations, consultez l’article [Tâches MSBuild](../msbuild/msbuild-tasks.md).  
   
 ```  

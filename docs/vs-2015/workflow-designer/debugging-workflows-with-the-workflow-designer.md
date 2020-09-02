@@ -13,20 +13,20 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b2b5dcbc69853007eebec65142f522f8a942abd1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656835"
 ---
 # <a name="debugging-workflows-with-the-workflow-designer"></a>Débogage de workflows avec Workflow Designer
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] permet de déboguer des workflows et des activités personnalisées. Le processus et le comportement sont semblables à celui du débogueur [!INCLUDE[vs2010](../includes/vs2010-md.md)] par défaut. Les rubriques de cette section expliquent comment exécuter des procédures de débogage traditionnelles ainsi que le débogage de code XAML et d'expressions.
 
 ## <a name="in-this-section"></a>Dans cette section
- [Guide pratique pour appeler le débogueur de flux de travail](../workflow-designer/how-to-invoke-the-workflow-debugger.md)
+ [Procédure : appeler le débogueur de workflow](../workflow-designer/how-to-invoke-the-workflow-debugger.md)
 
- [Guide pratique pour définir des points d’arrêt dans les flux de travail](../workflow-designer/how-to-set-breakpoints-in-workflows.md)
+ [Comment : définir des points d'arrêt dans les workflows](../workflow-designer/how-to-set-breakpoints-in-workflows.md)
 
- [Guide pratique pour déboguer du code XAML à l’aide du Concepteur de flux de travail](../workflow-designer/how-to-debug-xaml-with-the-workflow-designer.md)
+ [Procédure : déboguer du code XAML avec Workflow Designer](../workflow-designer/how-to-debug-xaml-with-the-workflow-designer.md)
 
- [Scénarios de débogage non pris en charge dans le Concepteur de flux de travail](../workflow-designer/unsupported-debugging-scenarios-in-the-workflow-designer.md)
+ [Scénarios de débogage non pris en charge dans le Concepteur de workflow](../workflow-designer/unsupported-debugging-scenarios-in-the-workflow-designer.md)

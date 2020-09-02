@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ab5e4b65db5c3d96b16a68a7b8e21a2786b9110b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "63001048"
 ---
 # <a name="concurrency-visualizer-markers"></a>Marqueurs du visualiseur concurrentiel
@@ -41,11 +41,11 @@ Dans le visualiseur concurrentiel, les marqueurs sont des icônes qui représent
 ## <a name="known-sources-of-markers"></a>Sources connues de marqueurs
  Tous les fournisseurs ETW peuvent générer des marqueurs, tant qu’ils respectent certaines contraintes. Vous pouvez configurer le visualiseur concurrentiel pour qu’il écoute d’autres sources d’événements de marqueurs. Par défaut, le visualiseur écoute les sources d’événements suivantes :
 
-- [SDK du visualiseur concurrentiel](../profiling/concurrency-visualizer-sdk.md)
+- [Kit de développement logiciel (SDK) du visualiseur concurrentiel](../profiling/concurrency-visualizer-sdk.md)
 
 - [Bibliothèque parallèle de tâches](/dotnet/standard/parallel-programming/task-parallel-library-tpl)
 
-- [Flux de données](/dotnet/standard/parallel-programming/dataflow-task-parallel-library)
+- [DataFlow](/dotnet/standard/parallel-programming/dataflow-task-parallel-library)
 
 - [Parallel LINQ (PLINQ)](/dotnet/standard/parallel-programming/parallel-linq-plinq)
 
@@ -61,7 +61,7 @@ Dans le visualiseur concurrentiel, les marqueurs sont des icônes qui représent
  Le visualiseur concurrentiel peut également afficher des événements EventSource.  Pour plus d’informations, consultez [Visualiser des événements EventSource en tant que marqueurs](../profiling/visualizing-eventsource-events-as-markers.md).
 
 ## <a name="see-also"></a>Voir aussi
-- [Marqueurs indicateurs](../profiling/flag-markers.md)
+- [Marqueurs d’indicateur](../profiling/flag-markers.md)
 - [Marqueurs de messages](../profiling/message-markers.md)
-- [Marqueurs d’intervalles](../profiling/span-markers.md)
+- [Marqueurs span](../profiling/span-markers.md)
 - [Visualiser des événements EventSource en tant que marqueurs](../profiling/visualizing-eventsource-events-as-markers.md)

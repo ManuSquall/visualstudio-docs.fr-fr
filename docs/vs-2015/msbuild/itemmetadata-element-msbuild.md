@@ -18,10 +18,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8e3d9f72abfd095288b50ab8de9b9bc3eae4cc51
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68162367"
 ---
 # <a name="itemmetadata-element-msbuild"></a>ItemMetadata, élément (MSBuild)
@@ -62,9 +62,9 @@ Contient une clé de métadonnées d’élément définie par l’utilisateur, q
   
  Ce texte spécifie la valeur des métadonnées de l’élément (texte ou XML).  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
   
-## <a name="example"></a>Exemples  
+## <a name="example"></a>Exemple  
  L’exemple de code ci-après indique comment ajouter des métadonnées `Culture` avec la valeur `fr` à l’élément `CSFile`.  
   
 ```  

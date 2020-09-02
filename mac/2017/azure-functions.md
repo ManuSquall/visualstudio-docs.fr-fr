@@ -1,5 +1,5 @@
 ---
-title: Présentation d’Azure Functions
+title: Introduction à Azure Functions
 description: Utilisation des fonctions Azure dans Visual Studio pour Mac.
 author: heiligerdankgesang
 ms.author: dominicn
@@ -8,13 +8,13 @@ ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
 ms.topic: how-to
 ms.openlocfilehash: f2621ab30099baae5521c8b2226f288ec1a2531b
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85938859"
 ---
-# <a name="introduction-to-azure-functions"></a>Présentation d’Azure Functions
+# <a name="introduction-to-azure-functions"></a>Introduction à Azure Functions
 
 Azure Functions permet de créer et d’exécuter dans le cloud des fonctions, à savoir des extraits de code basés sur des événements, sans devoir provisionner ni gérer explicitement l’infrastructure. Pour plus d’informations, consultez la [documentation sur Azure Functions](/azure/azure-functions/).
 
@@ -91,7 +91,7 @@ Vous pouvez utiliser la procédure ci-dessus pour ajouter des fonctions à votre
 
 ## <a name="publish-to-azure"></a>Publication dans Azure
 
-1. Cliquez avec le bouton droit sur le nom du projet et sélectionnez **publier > publier sur Azure**: ![ option de menu publier sur Azure](media/azure-functions-image5.png)
+1. Cliquez avec le bouton droit sur le nom du projet et sélectionnez **publier > publier sur Azure**:  ![ option de menu publier sur Azure](media/azure-functions-image5.png)
 2. Si vous avez déjà connecté votre compte Azure à Visual Studio pour Mac, une liste des services d’application disponibles s’affiche. Si vous ne vous êtes pas connecté, vous êtes invité à le faire.
 3. Dans la boîte de dialogue **Publier sur Azure App Service**, sélectionnez un service d’application existant, ou créez un service en cliquant sur **Nouveau**.
 4. Dans la boîte de dialogue **Créer un App Service**, entrez vos paramètres : ![Option de menu Publier sur Azure](media/azure-functions-image7.png)

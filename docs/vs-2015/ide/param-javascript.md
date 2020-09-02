@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ca6207d22d82e607fa589f944230b36b46e633c2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670362"
 ---
 # <a name="ltparamgt-javascript"></a>&lt;param&gt; (JavaScript)
@@ -42,17 +42,17 @@ Spécifie des informations de documentation pour un paramètre dans une fonction
 
  `type` Facultatif. Type de données du paramètre. Le type peut être l’un des suivants :
 
-- Type de langage ECMAScript dans la spécification ECMAScript 5, par exemple `Number` et `Object`.
+- Type de langage ECMAScript dans la spécification ECMAScript 5, tel que `Number` et `Object` .
 
 - Objet DOM, comme `HTMLElement`, `Window` et `Document`.
 
 - Fonction constructeur JavaScript.
 
-  `integer` Facultatif. Si `type` est `Number`, spécifie si le paramètre est un entier. Affectez la valeur `true` pour indiquer que le paramètre est un entier. Sinon, affectez la valeur `false`. Cet attribut n’est pas utilisé par Visual Studio pour fournir des informations IntelliSense.
+  `integer` Facultatif. Si `type` est `Number` , spécifie si le paramètre est un entier. Affectez `true` la valeur pour indiquer que le paramètre est un entier ; sinon, affectez à la valeur `false` . Cet attribut n’est pas utilisé par Visual Studio pour fournir des informations IntelliSense.
 
-  `domElement` Facultatif. Cet attribut est déprécié ; l’attribut `type` a la priorité sur cet attribut. Cet attribut spécifie si le paramètre documenté est un élément DOM. Affectez la valeur `true` pour spécifier que le paramètre est un élément DOM ; Sinon, affectez la valeur `false`. Si l’attribut `type` n’est pas défini et `domElement` a la valeur `true`, IntelliSense traite le paramètre documenté comme une `HTMLElement` lors de la saisie semi-automatique des instructions.
+  `domElement` Facultatif. Cet attribut est déprécié ; l’attribut `type` a la priorité sur cet attribut. Cet attribut spécifie si le paramètre documenté est un élément DOM. Affectez `true` la valeur pour spécifier que le paramètre est un élément DOM ; sinon, affectez à la valeur `false` . Si l' `type` attribut n’est pas défini et que `domElement` a la valeur `true` , IntelliSense traite le paramètre documenté comme un lors de l’exécution de la `HTMLElement` saisie semi-automatique des instructions.
 
-  `mayBeNull` Facultatif. Spécifie si le paramètre documenté peut avoir la valeur null. Affectez la valeur `true` pour indiquer que le paramètre peut avoir la valeur null. Sinon, affectez la valeur `false`. La valeur par défaut est `false`. Cet attribut n’est pas utilisé par Visual Studio pour fournir des informations IntelliSense.
+  `mayBeNull` Facultatif. Spécifie si le paramètre documenté peut avoir la valeur null. Affectez `true` la valeur pour indiquer que le paramètre peut avoir la valeur NULL ; sinon, affectez à la valeur `false` . La valeur par défaut est `false`. Cet attribut n’est pas utilisé par Visual Studio pour fournir des informations IntelliSense.
 
   `elementType` Facultatif. Si `type` est `Array`, cet attribut spécifie le type des éléments contenus dans le tableau.
 
@@ -62,24 +62,24 @@ Spécifie des informations de documentation pour un paramètre dans une fonction
 
   `elementMayBeNull` Facultatif. Si `type` est `Array`, indique si les éléments contenus dans le tableau peuvent être définis sur null. Définissez `true` pour indiquer que les éléments contenus dans le tableau peuvent être définis sur null ; sinon, définissez `false`. La valeur par défaut est `false`. Cet attribut n’est pas utilisé par Visual Studio pour fournir des informations IntelliSense.
 
-  `locid` Facultatif. Identificateur des informations de localisation concernant le paramètre. L’identificateur est soit un ID de membre soit il correspond à la valeur d’attribut `name` dans un lot de messages défini par des métadonnées OpenAjax. Le type d’identificateur varie selon le format spécifié dans l’élément [\<loc>](../ide/loc-javascript.md).
+  `locid` Facultatif. Identificateur des informations de localisation concernant le paramètre. L’identificateur est soit un ID de membre soit il correspond à la valeur d’attribut `name` dans un lot de messages défini par des métadonnées OpenAjax. Le type d’identificateur dépend du format spécifié dans l' [\<loc>](../ide/loc-javascript.md) élément.
 
-  `parameterArray` Facultatif. Spécifie si le paramètre documenté peut être répété dans l’appel de fonction, de la même façon que les paramètres répétitifs pris en charge dans la fonction `String.format`. Affectez la valeur `true` pour indiquer que le paramètre peut être répété. Sinon, affectez la valeur `false`. Cet attribut n’est pas utilisé par Visual Studio pour fournir des informations IntelliSense.
+  `parameterArray` Facultatif. Spécifie si le paramètre documenté peut être répété dans l’appel de fonction, de la même façon que les paramètres répétitifs pris en charge dans la `String.format` fonction. Affectez `true` la valeur pour indiquer que le paramètre peut être répété ; sinon, affectez à la valeur `false` . Cet attribut n’est pas utilisé par Visual Studio pour fournir des informations IntelliSense.
 
-  `optional` Facultatif. Spécifie si le paramètre documenté est facultatif dans la fonction appelante. Affectez la valeur `true` pour indiquer que le paramètre est facultatif. Sinon, affectez la valeur `false`.
+  `optional` Facultatif. Spécifie si le paramètre documenté est facultatif dans la fonction appelante. Affectez `true` la valeur pour indiquer que le paramètre est facultatif ; sinon, affectez à la valeur `false` .
 
   `value` Facultatif. Spécifie le code qui doit être évalué pour être utilisé par IntelliSense au lieu du code de fonction lui-même. Vous pouvez utiliser cet attribut pour fournir des informations de type lorsque le type de paramètre n’est pas défini. Par exemple, vous pouvez utiliser `value=’1’` pour traiter le type de paramètre comme un nombre.
 
   `description` Facultatif. Description du paramètre.
 
-## <a name="remarks"></a>Remarques
- Le seul attribut requis est `name`. Tous les autres attributs sont facultatifs.
+## <a name="remarks"></a>Notes
+ Le seul attribut requis est `name` . Tous les autres attributs sont facultatifs.
 
- Les éléments utilisés pour annoter des fonctions, telles que [\<summary >](../ide/summary-javascript.md), [\<param >](../ide/param-javascript.md)et [\<returns](../ide/returns-javascript.md)>, doivent être placés dans le corps de la fonction avant toute instruction.
+ Les éléments utilisés pour annoter des fonctions, telles que [\<summary>](../ide/summary-javascript.md) , [\<param>](../ide/param-javascript.md) et, [\<returns>](../ide/returns-javascript.md) doivent être placés dans le corps de la fonction avant toute instruction.
 
- S’il existe plusieurs éléments `<param>` portant le même nom, l’un des éléments `<param>` est utilisé et les éléments redondants sont ignorés. Le comportement qui détermine l’élément utilisé n’est pas défini. Si `name` fait référence à un paramètre inexistant, l’élément est ignoré.
+ S’il y a plusieurs `<param>` éléments qui portent le même nom, l’un des `<param>` éléments est utilisé et les éléments redondants sont ignorés. Le comportement qui détermine l’élément utilisé n’est pas défini. Si `name` fait référence à un paramètre inexistant, l’élément est ignoré.
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
  L’exemple de code suivant montre comment utiliser l'élément `<param>`.
 
 ```javascript
@@ -108,4 +108,4 @@ function calculate(a) {
 ```
 
 ## <a name="see-also"></a>Voir aussi
- [Commentaires sur la documentation XML](../ide/xml-documentation-comments-javascript.md)
+ [Commentaires de documentation XML](../ide/xml-documentation-comments-javascript.md)

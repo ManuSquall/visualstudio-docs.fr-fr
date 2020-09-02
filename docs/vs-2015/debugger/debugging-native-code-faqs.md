@@ -1,5 +1,5 @@
 ---
-title: Débogage de Code natif FAQ | Microsoft Docs
+title: FAQ sur le débogage de code natif | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -23,10 +23,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 63055cf443f20e353ac87ca3226e9f8208587fb6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190496"
 ---
 # <a name="debugging-native-code-faqs"></a>Forum Aux Questions sur le débogage du code natif
@@ -36,19 +36,19 @@ Les rubriques suivantes contiennent des réponses à quelques questions fréquem
   
 - [Comment puis-je déboguer les violations d’accès quand mon programme fonctionne de manière autonome ?](../debugger/how-can-i-debug-access-violations-when-running-my-program-outside-the-debugger-q.md)  
   
-- [Comment puis-je déboguer une violation d’accès ?](../debugger/how-can-i-debug-an-access-violation-q.md)  
+- [Comment puis-je déboguer une violation d'accès ?](../debugger/how-can-i-debug-an-access-violation-q.md)  
   
 - [Comment puis-je savoir si mes pointeurs endommagent une adresse mémoire ?](../debugger/how-can-i-find-out-if-my-pointers-corrupt-a-memory-address-q.md)  
   
-- [Comment puis-je savoir d’où provient une valeur de paramètre incorrecte ?](../debugger/how-can-i-find-out-who-is-passing-a-wrong-parameter-value-q.md)  
+- [Comment puis-je savoir d'où provient une valeur de paramètre incorrecte ?](../debugger/how-can-i-find-out-who-is-passing-a-wrong-parameter-value-q.md)  
   
 - [Quand j’appelle une fonction des centaines de fois, comment puis-je savoir quel appel a échoué ?](../debugger/when-calling-a-function-hundreds-of-times-how-do-i-know-which-call-failed-q.md)  
   
 - [Où puis-je trouver les codes des erreurs Win32 ?](../debugger/where-can-i-look-up-win32-error-codes-q.md)  
   
-- [Comment puis-je conserver le focus lorsque j’exécute mon programme pas à pas ?](../debugger/how-can-i-keep-focus-when-stepping-through-my-program-q.md)  
+- [Comment puis-je conserver le focus lorsque j'exécute mon programme pas à pas ?](../debugger/how-can-i-keep-focus-when-stepping-through-my-program-q.md)  
   
-- [Comment puis-je utiliser les fenêtres du débogueur pendant le débogage d’un programme d’avant-plan ?](../debugger/how-can-i-use-debugger-windows-while-debugging-a-foreground-program-q.md)  
+- [Comment puis-je utiliser les fenêtres du débogueur pendant le débogage d'un programme d'avant-plan ?](../debugger/how-can-i-use-debugger-windows-while-debugging-a-foreground-program-q.md)  
   
 - [En cas d’arrêt dans les MFC, comment puis-je revenir à la fonction qui les a appelées ?](../debugger/how-to-get-back-to-the-function-that-called-mfc-if-halted.md)  
   

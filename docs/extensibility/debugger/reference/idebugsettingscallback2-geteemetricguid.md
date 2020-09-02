@@ -1,5 +1,5 @@
 ---
-title: IDebugSettingsCallback2::GetEEMetricGuid - France Microsoft Docs
+title: 'IDebugSettingsCallback2 :: GetEEMetricGuid | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d95842ecde264accd8989a83ae652ac540183ef1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720003"
 ---
 # <a name="idebugsettingscallback2geteemetricguid"></a>IDebugSettingsCallback2::GetEEMetricGuid
-Récupère l’identifiant unique pour une mesure d’évaluateur d’expression donné son nom.
+Récupère l’identificateur unique d’une mesure de l’évaluateur d’expression en fonction de son nom.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -45,18 +45,18 @@ HRESULT GetEEMetricGuid(
 
 ## <a name="parameters"></a>Paramètres
 `guidLang`\
-[dans] Identifiant unique du langage de programmation.
+dans Identificateur unique du langage de programmation.
 
 `guidVendor`\
-[dans] Identifiant unique du vendeur.
+dans Identificateur unique du fournisseur.
 
 `pszMetric`\
-[dans] Nom de la mesure.
+dans Nom de la métrique.
 
 `pguidValue`\
-[out] Retourne l’identifiant unique de la mesure.
+à Retourne l’identificateur unique de la mesure.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

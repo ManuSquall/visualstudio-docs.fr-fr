@@ -8,10 +8,10 @@ ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
 ms.topic: how-to
 ms.openlocfilehash: 2e921ac1e9c85216bebf1626e1454b9fb764f129
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85938934"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Bien démarrer avec ASP.NET Core
@@ -221,7 +221,7 @@ Pour ajouter un contrôleur, procédez comme suit :
 
     ![Exécution de l’application dans le navigateur avec des arguments](media/asp-net-core-image10.png)
 
-## <a name="troubleshooting"></a>Résolution des problèmes
+## <a name="troubleshooting"></a>Dépannage
 
 Si vous avez besoin d’installer .NET Core manuellement sur Mac OS 10.11 (El Capitan) et ultérieur, procédez comme suit :
 

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: b141d755c717ad6650d2a49c98c2b26547066b7a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545520"
 ---
 # <a name="ca1010-collections-should-implement-generic-interface"></a>CA1010 : Les collections doivent implémenter une interface générique
@@ -32,7 +32,7 @@ ms.locfileid: "85545520"
 |Category|Microsoft. Design|
 |Modification avec rupture|Sans rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Un type visible de l’extérieur implémente l' <xref:System.Collections.IEnumerable?displayProperty=fullName> interface, mais n’implémente pas l' <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName> interface et les cibles de l’assembly conteneur [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] . Cette règle ignore les types qui implémentent <xref:System.Collections.IDictionary?displayProperty=fullName> .
 
 ## <a name="rule-description"></a>Description de la règle

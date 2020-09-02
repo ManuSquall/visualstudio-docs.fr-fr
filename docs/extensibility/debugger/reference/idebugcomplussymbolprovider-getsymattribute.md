@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::GetSymAttribute Microsoft Docs
+title: 'IDebugComPlusSymbolProvider :: GetSymAttribute, | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cb405bd0cf6f3ec846e3b146e4fd02399d583fb7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733775"
 ---
 # <a name="idebugcomplussymbolprovidergetsymattribute"></a>IDebugComPlusSymbolProvider::GetSymAttribute
-Récupère les symboles de débogé avec l’attribut parent donné pour le module spécifié.
+Récupère les symboles de débogage avec l’attribut parent donné pour le module spécifié.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -52,31 +52,31 @@ int GetSymAttribute (
 
 ## <a name="parameters"></a>Paramètres
 `ulAppDomainID`\
-[dans] Identification du domaine de l’application.
+dans Identificateur du domaine d’application.
 
 `guidModule`\
-[dans] Identifiant unique du module.
+dans Identificateur unique du module.
 
 `tokParent`\
-[dans] Jeton pour l’attribut parent.
+dans Jeton de l’attribut parent.
 
 `pstrName`\
-[dans] Nom du module.
+dans Nom du module.
 
 `cBuffer`\
-[dans] Nombre d’octets requis `buffer`pour la sortie .
+dans Nombre d’octets requis pour la sortie `buffer` .
 
 `pcBuffer`\
-[out] Longueur de `buffer`la sortie .
+à Longueur de la sortie `buffer` .
 
 `buffer`\
-[out] Array qui contient les symboles.
+à Tableau qui contient les symboles.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="example"></a>Exemple
-L’exemple suivant montre comment implémenter cette méthode pour un objet **CDebugSymbolProvider** qui expose [l’interface IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+L’exemple suivant montre comment implémenter cette méthode pour un objet **CDebugSymbolProvider** qui expose l’interface [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) .
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetSymAttribute(

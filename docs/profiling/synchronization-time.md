@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ae73f7b9a9838a006dce47bf44b0ed46aa0b84fa
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62965308"
 ---
 # <a name="synchronization-time"></a>Période de synchronisation
@@ -29,4 +29,4 @@ Ces segments de la chronologie sont associés à des périodes de blocage class�
   Pour comprendre la cause sous-jacente d’un événement de blocage de thread, examinez attentivement les piles des appels bloquants et les rapports de profil.
 
 ## <a name="see-also"></a>Voir aussi
-- [Vue de fils](../profiling/threads-view-parallel-performance.md)
+- [Vue threads](../profiling/threads-view-parallel-performance.md)

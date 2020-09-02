@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 066e8d9e6f64984f861a5e14335020c625e96bb6
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149775"
 ---
-# <a name="idiasymbolgetcountliveranges"></a>IDiaSymbol::get_countLiveRanges
+# <a name="idiasymbolget_countliveranges"></a>IDiaSymbol::get_countLiveRanges
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Récupère le nombre de plages d’adresses valide associée au code local.  
+Récupère le nombre de plages d’adresses valides associées au symbole local.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -35,15 +35,15 @@ HRESULT get_countLiveRanges ( 
   
 #### <a name="parameters"></a>Paramètres  
  `count`  
- [out] Retourne le nombre de plages d’adresses.  
+ à Retourne le nombre de plages d’adresses.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="requirements"></a>Configuration requise  
- En-tête : Dia2.h  
+ En-tête : Dia2. h  
   
- Bibliothèque : diaguids.lib  
+ Bibliothèque : diaguids. lib  
   
  DLL : msdia100.dll  
   

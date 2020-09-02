@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 25886ad4f7c31ea02c8dab2d45d8709a362a5a69
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62969990"
 ---
 # <a name="execution-profile-report"></a>Profil d’exécution, rapport
@@ -37,7 +37,7 @@ Le rapport Profil d’exécution est un profil d’échantillonnage classique. D
 |% exclusifs|Pourcentage du total des échantillons qui apparaissent dans la colonne des échantillons exclusifs. Les pourcentages sont arrondis à deux décimales.|
 |Détails|Nom complet de la fonction. Peut contenir le nombre de lignes lorsque celui-ci est disponible.|
 
- Ce tableau de rapport peut être vu dans la vue [temps d’exécution (Threads View).](../profiling/execution-time-threads-view.md)
+ Cette table de rapport peut être affichée dans la vue [durée d’exécution (vue threads)](../profiling/execution-time-threads-view.md) .
 
 ## <a name="see-also"></a>Voir aussi
-- [Vue Threads](../profiling/threads-view-parallel-performance.md)
+- [vue Threads](../profiling/threads-view-parallel-performance.md)

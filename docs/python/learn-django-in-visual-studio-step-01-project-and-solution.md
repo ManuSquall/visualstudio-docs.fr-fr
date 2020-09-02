@@ -12,10 +12,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: b41ed3901cd4ad18a1b52ddbdc7ee6fd82cb5380
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "62962147"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>Tutoriel : Bien démarrer avec le framework web Django dans Visual Studio
@@ -32,7 +32,7 @@ Dans ce tutoriel, vous allez apprendre à :
 > - authentifier les utilisateurs (étape 5) ;
 > - utiliser le modèle de sondages du projet web Django pour créer une application utilisant des modèles des migrations de bases de données et des personnalisations de l’interface d’administration (étape 6).
 
-## <a name="prerequisites"></a>Conditions préalables requises
+## <a name="prerequisites"></a>Prérequis
 
 - Visual Studio 2017 ou ultérieur sur Windows avec les options suivantes :
   - La charge de travail **Développement Python** (onglet **Charge de travail** dans le programme d’installation). Pour obtenir des instructions, consultez [Installer la prise en charge de Python dans Visual Studio](installing-python-support-in-visual-studio.md).
@@ -54,20 +54,20 @@ Au cours de ce tutoriel, vous allez créer une solution Visual Studio unique qui
 
 Lorsque vous travaillez avec Django à partir de la ligne de commande, vous commencez généralement un projet en exécutant la commande `django-admin startproject <project_name>`. Dans Visual Studio, l’utilisation du modèle « Projet web Django vide » fournit la même structure dans un projet et dans une solution Visual Studio.
 
-1. Dans Visual Studio, sélectionnez **File** > **New** > **Project**, recherchez "Django", et sélectionnez le modèle **Blank Django Web Project.** (Le modèle se trouve également sous **Python** > **Web** dans la liste de gauche.)
+1. Dans Visual Studio, sélectionnez **fichier**  >  **nouveau**  >  **projet**, recherchez « Django », puis sélectionnez le modèle de **projet Web Django vide** . (Le modèle est également disponible sous **python**  >  **Web** dans la liste de gauche.)
 
     ![Nouvelle boîte de dialogue de projet dans Visual Studio pour le projet web Django vide](media/django/step01-new-blank-project.png)
 
 1. Dans les champs en bas de la boîte de dialogue, entrez les informations suivantes (comme indiqué dans le graphique précédent), puis sélectionnez **OK** :
 
-    - **Nom**: définissez le nom du projet Visual Studio à **BasicProject**. Par défaut, ce nom est également utilisé pour le projet Django.
+    - **Nom**: définissez le nom du projet Visual Studio sur **BasicProject**. Par défaut, ce nom est également utilisé pour le projet Django.
     - **Emplacement** : spécifiez un emplacement où créer la solution et le projet Visual Studio.
-    - **Solution**: laissez ce jeu de contrôle par défaut Créer une nouvelle option **de solution.**
-    - **Nom de solution**: set à **LearningDjango**, qui est approprié pour la solution comme un conteneur pour plusieurs projets dans ce tutoriel.
+    - **Solution**: laissez ce contrôle défini sur l’option **créer une nouvelle solution** par défaut.
+    - **Nom**de la solution : définissez sur **LearningDjango**, qui convient à la solution en tant que conteneur pour plusieurs projets dans ce didacticiel.
     - **Créer un répertoire pour la solution** : laissez cette option activée (par défaut).
     - **Créez un référentiel Git** : sélectionnez cette option (qui est clairement par défaut), afin que Visual Studio crée un référentiel Git local lorsqu’il crée la solution. Si vous ne voyez pas cette option, exécutez le programme d’installation de Visual Studio et ajoutez **Git pour Windows** et **Extension GitHub pour Visual Studio** sous l’onglet **Composants individuels** sous **Outils de code**.
 
-1. Après un moment, Visual Studio vous invite avec un dialogue disant que **ce projet nécessite des paquets externes** (voir ci-dessous). Cette boîte de dialogue s’affiche, car le modèle inclut un fichier *requirements.txt* référençant le dernier package Django 1.x. (Sélectionnez **Afficher les packages requis** pour voir les dépendances exactes.)
+1. Après quelques instants, Visual Studio vous invite à saisir un dialogue indiquant que **ce projet nécessite des packages externes** (voir ci-dessous). Cette boîte de dialogue s’affiche, car le modèle inclut un fichier *requirements.txt* référençant le dernier package Django 1.x. (Sélectionnez **Afficher les packages requis** pour voir les dépendances exactes.)
 
     ![Invite indiquant que le projet requiert des packages externes](media/django/step01-requirements-prompt-install-myself.png)
 
@@ -90,7 +90,7 @@ Lorsque vous travaillez avec Django à partir de la ligne de commande, vous comm
 
     ![Fenêtre Team Explorer à la page Modifications](media/django/step01-team-explorer-changes.png)
 
-1. Sur la barre d’état Visual Studio, sélectionnez le bouton commits non bouilli (la flèche vers le haut avec **2**) pour ouvrir la page **de synchronisation** dans **Team Explorer**. Étant donné que vous avez uniquement un référentiel local, la page fournit des options simples pour publier le référentiel sur les différents référentiels à distance.
+1. Dans la barre d’état de Visual Studio, sélectionnez le bouton validations non Pushed (flèche haut avec **2**) pour ouvrir la page **synchronisation** dans **Team Explorer**. Étant donné que vous avez uniquement un référentiel local, la page fournit des options simples pour publier le référentiel sur les différents référentiels à distance.
 
     ![La fenêtre Team Explorer affiche les options de référentiels disponibles pour le contrôle de code source.](media/django/step01-team-explorer.png)
 
@@ -105,7 +105,7 @@ Lorsque vous travaillez avec Django à partir de la ligne de commande, vous comm
 1. Au cours de ce tutoriel, prenez l’habitude d’utiliser périodiquement les contrôles dans Visual Studio pour valider et envoyer des modifications. Ce tutoriel vous le rappellera aux endroits appropriés.
 
 > [!Tip]
-> Pour naviguer rapidement au sein **de Team Explorer**, sélectionnez l’en-tête (qui lit **Changements** ou **Push** dans les images ci-dessus) pour voir un menu pop-up des pages disponibles.
+> Pour naviguer rapidement dans **Team Explorer**, sélectionnez l’en-tête (qui lit les **modifications** ou **envoie** les images ci-dessus) pour afficher un menu contextuel des pages disponibles.
 
 ### <a name="question-what-are-some-advantages-of-using-source-control-from-the-beginning-of-a-project"></a>Question : Quels sont les avantages de l’utilisation du contrôle de code source dès le début d’un projet ?
 
@@ -125,7 +125,7 @@ Maintenant que vous avez configuré le contrôle de code source pour votre proje
 
     ![Ajouter la commande Environnement virtuel dans l’Explorateur de solutions](media/django/step01-add-virtual-environment-command.png)
 
-1. Un **dialogue Add Virtual Environment** apparaît, avec un message disant que nous avons trouvé un fichier **requirements.txt.** Ce message indique que Visual Studio utilise ce fichier pour configurer l’environnement virtuel.
+1. La boîte de dialogue **Ajouter un environnement virtuel** s’affiche avec un message indiquant **que nous avons trouvé un fichier de requirements.txt.** Ce message indique que Visual Studio utilise ce fichier pour configurer l’environnement virtuel.
 
     ![Ajouter un environnement virtuel avec un message de requirements.txt](media/django/step01-add-virtual-environment-found-requirements.png)
 
@@ -166,7 +166,7 @@ Une fois la création du projet terminée, examinez le code de projet Django ré
 2. Votre projet contient un dossier qui porte le même nom que le projet. Il contient les fichiers projet Django de base :
 
    - *__init.py* : un fichier vide qui indique à Python que ce dossier est un package Python.
-   - *wsgi.py* : un point d’entrée pour les serveurs web compatibles WSGI afin de traiter votre projet. Vous ne toucherez généralement pas à ce fichier, qui assure les raccordements des serveurs web de production.
+   - *wsgi.py* : un point d’entrée pour les serveurs web compatibles WSGI afin de traiter votre projet. En règle générale, ce fichier est laissé tel quel, car il fournit les raccordements pour les serveurs web de production.
    - *settings.py* : contient les paramètres du projet Django, que vous modifiez au cours du développement d’une application web.
    - *urls.py* : contient une table des matières pour le projet Django, que vous modifiez également au cours du développement.
 
@@ -180,7 +180,7 @@ Réponse : Oui. Développez le nœud **Environnements Python**, cliquez avec le
 
 ## <a name="step-1-5-run-the-empty-django-project"></a>Étape 1-5 : exécuter le projet Django vide
 
-1. Dans Visual Studio, sélectionnez **Debug** > **Start Debugging** (**F5**) ou utilisez le bouton **Web Server** sur la barre d’outils (le navigateur que vous voyez peut varier):
+1. Dans Visual Studio, sélectionnez **Déboguer**  >  **Démarrer le débogage** (**F5**) ou utilisez le bouton **serveur Web** dans la barre d’outils (le navigateur que vous voyez peut varier) :
 
     ![Exécuter le bouton de la barre d’outils du serveur Web dans Visual Studio](media/django/run-web-server-toolbar-button.png)
 
@@ -190,15 +190,15 @@ Réponse : Oui. Développez le nœud **Environnements Python**, cliquez avec le
 
     ![Affichage par défaut du projet Django](media/django/step01-first-run-success.png)
 
-1. Lorsque vous avez terminé, arrêtez le serveur en fermant la fenêtre de la console, ou en utilisant la commande **Debug** > **Stop Debugging** dans Visual Studio.
+1. Lorsque vous avez terminé, arrêtez le serveur en fermant la fenêtre de la console, ou en utilisant la commande **Déboguer**  >  **arrêter le débogage** dans Visual Studio.
 
 ### <a name="question-is-django-a-web-server-as-well-as-a-framework"></a>Question : Django est-il à la fois un serveur web et une infrastructure ?
 
-Réponse : oui et non. Django a un serveur web intégré qui est utilisé à des fins de développement. Ce serveur web est utilisé lorsque vous exécutez l’application web localement, par exemple lors d’un débogage dans Visual Studio. Cependant, lorsque vous déployez sur un hôte web, Django utilise le serveur web de l’hôte à la place. Le module *wsgi.py* dans le projet Django prend en charge le raccordement aux serveurs de production.
+Réponse : oui et non. Django a un serveur web intégré qui est utilisé à des fins de développement. Ce serveur web est utilisé lorsque vous exécutez l’application web localement, par exemple lors d’un débogage dans Visual Studio. Toutefois, lorsque vous effectuez le déploiement sur un hôte web, Django utilise le serveur web de l’hôte à la place. Le module *wsgi.py* dans le projet Django prend en charge le raccordement aux serveurs de production.
 
 ### <a name="question-whats-the-difference-between-using-the-debug-menu-commands-and-the-server-commands-on-the-projects-python-submenu"></a>Question : Quelle est la différence entre les commandes de menu Déboguer et les commandes de serveur dans le sous-menu Python du projet ?
 
-Réponse : en plus des commandes de menu **Déboguer** et des boutons de barre d’outils, vous pouvez également lancer le serveur avec les commandes **Python** > **Exécuter le serveur** ou **Python** > **Exécuter le serveur de débogage** dans le menu contextuel du projet. Les deux commandes ouvrent une fenêtre de console dans laquelle vous voyez l’URL locale (localhost:port) du serveur en cours d’exécution. Toutefois, vous devez ouvrir manuellement un navigateur avec cette URL, et l’exécution du serveur de débogage n’entraîne pas le démarrage automatique du débogueur Visual Studio. Vous pouvez attacher un débbugger au processus d’exécution plus tard, si vous le souhaitez, en utilisant la commande **Debug** > **Attach to Process.**
+Réponse : en plus des commandes de menu **Déboguer** et des boutons de barre d’outils, vous pouvez également lancer le serveur avec les commandes **Python** > **Exécuter le serveur** ou **Python** > **Exécuter le serveur de débogage** dans le menu contextuel du projet. Les deux commandes ouvrent une fenêtre de console dans laquelle vous voyez l’URL locale (localhost:port) du serveur en cours d’exécution. Toutefois, vous devez ouvrir manuellement un navigateur avec cette URL, et l’exécution du serveur de débogage n’entraîne pas le démarrage automatique du débogueur Visual Studio. Vous pouvez joindre un débogueur au processus en cours d’exécution ultérieurement, si vous le souhaitez, à l’aide de la commande **Déboguer**  >  **attacher au processus** .
 
 ## <a name="next-steps"></a>Étapes suivantes
 

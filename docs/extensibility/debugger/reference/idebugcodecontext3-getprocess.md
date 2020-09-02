@@ -1,5 +1,5 @@
 ---
-title: IDebugCodeContext3::GetProcess (fr) Microsoft Docs
+title: 'IDebugCodeContext3 :: GetProcess | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 8d169f86548e97d4bb745e1ba91f39782de97cbc
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734170"
 ---
 # <a name="idebugcodecontext3getprocess"></a>IDebugCodeContext3::GetProcess
-Récupère une référence à l’interface du processus de débogé.
+Récupère une référence à l’interface du processus de débogage.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -39,13 +39,13 @@ public int GetProcess(
 
 ## <a name="parameters"></a>Paramètres
 `ppProcess`\
-[out] Référence à l’interface de processus de débogé.
+à Référence à l’interface du processus de débogage.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="example"></a>Exemple
-L’exemple suivant montre comment implémenter cette méthode pour un objet **CDebugCodeContext** qui expose [l’interface IDebugBeforeSymbolSearchEvent2.](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md)
+L’exemple suivant montre comment implémenter cette méthode pour un objet **CDebugCodeContext** qui expose l’interface [IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md) .
 
 ```cpp
 HRESULT CDebugCodeContext::GetProcess(IDebugProcess2** ppProcess)
