@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2e5ed5703d67e4c10bd7a9e4fe2ab234c5577f65
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85520858"
 ---
 # <a name="properties-of-port-shapes"></a>Propriétés des formes de port
@@ -49,7 +49,7 @@ Vous pouvez utiliser des formes port pour représenter des classes de domaine da
 |Largeur initiale|Largeur initiale de cette forme, en pouces.|1.5|
 |Couleur de remplissage exposée en tant que propriété<br /><br /> Mode dégradé de remplissage exposé<br /><br /> Couleur de contour exposée en tant que propriété<br /><br /> Exposé du style de tiret de contour en tant que propriété<br /><br /> Exposer l’épaisseur de la structure en tant que propriété<br /><br /> Expose la couleur de texte|Si `True` la valeur est, l’utilisateur peut définir la propriété déclarée d’une forme. Pour ce faire, cliquez avec le bouton droit sur la définition de la forme, puis cliquez sur **Ajouter exposé**.|False|
 |Description|Utilisé pour documenter le concepteur généré.|\<none>|
-|Nom complet|Nom qui sera affiché dans le concepteur généré pour cette forme.|\<none>|
+|Nom d’affichage|Nom qui sera affiché dans le concepteur généré pour cette forme.|\<none>|
 |Correction du texte d’info-bulle|Texte utilisé pour une info-bulle fixe.|\<none>|
 |Help Keyword|Mot clé utilisé pour indexer l’aide F1 pour cette forme.|\<none>|
 

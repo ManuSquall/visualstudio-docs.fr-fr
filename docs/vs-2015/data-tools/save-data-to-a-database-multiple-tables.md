@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c5c4d5fc73660c97bcb69957a93d2ff08f64e31c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655462"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Enregistrer des données dans une base de données (plusieurs tables)
@@ -34,9 +34,9 @@ L'un des scénarios les plus courants dans le développement d'applications cons
  Vous pouvez enregistrer des données de votre application dans la base de données en appelant la méthode `Update` d'un TableAdapter. Lorsque vous faites glisser des tables depuis la fenêtre **sources de données** vers un formulaire, le code requis pour enregistrer les données est automatiquement ajouté. Toutes les tables supplémentaires ajoutées à un formulaire nécessitent l’ajout manuel de ce code. Cette procédure pas à pas indique comment ajouter du code pour enregistrer les mises à jour de plusieurs tables.
 
 > [!NOTE]
-> Les boîtes de dialogue et les commandes de menu affichées peuvent différer de celles décrites dans l’aide en fonction de vos paramètres actifs ou de l’édition que vous utilisez. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Paramètres Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Les boîtes de dialogue et les commandes de menu affichées peuvent différer de celles décrites dans l’aide en fonction de vos paramètres actifs ou de l’édition que vous utilisez. Pour modifier vos paramètres, choisissez **Paramètres d'importation et d'exportation** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
- Cette procédure pas à pas décrit notamment les tâches suivantes :
+ Cette procédure pas à pas décrit notamment les tâches suivantes :
 
 - Création d’un projet d' **application Windows** .
 
@@ -50,8 +50,8 @@ L'un des scénarios les plus courants dans le développement d'applications cons
 
 - Modification du code pour renvoyer les données mises à jour dans le dataset à la base de données.
 
-## <a name="prerequisites"></a>Configuration requise
- Pour exécuter cette procédure pas à pas, vous avez besoin des éléments suivants :
+## <a name="prerequisites"></a>Prérequis
+ Pour réaliser cette procédure pas à pas, vous aurez besoin des éléments suivants :
 
 - avoir accès à l'exemple de base de données Northwind.
 
@@ -62,7 +62,7 @@ L'un des scénarios les plus courants dans le développement d'applications cons
 
 1. Dans le menu **fichier** , créez un nouveau projet.
 
-2. Attribuez un nom au projet `UpdateMultipleTablesWalkthrough`.
+2. Nommez le projet `UpdateMultipleTablesWalkthrough`.
 
 3. Sélectionnez **application Windows**, puis cliquez sur **OK**. Pour plus d’informations, consultez [applications clientes](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).
 
@@ -83,7 +83,7 @@ L'un des scénarios les plus courants dans le développement d'applications cons
 
     - Si une connexion de données à l’exemple de base de données Northwind est disponible dans la liste déroulante, sélectionnez-la.
 
-         ou
+         -ou-
 
     - Sélectionnez **Nouvelle connexion** pour ouvrir la boîte de dialogue **Ajouter/Modifier la connexion**.
 
@@ -98,7 +98,7 @@ L'un des scénarios les plus courants dans le développement d'applications cons
      **NorthwindDataSet** est ajouté à votre projet et les tables apparaissent dans la fenêtre **Sources de données**.
 
 ## <a name="set-the-controls-to-be-created"></a>Définir les contrôles à créer
- Pour cette procédure pas à pas, les données de la table `Customers` sont dans une disposition des **Détails** où les données sont affichées dans des contrôles individuels. Les données de la table `Orders` sont dans une disposition en **grille** qui est affichée dans un contrôle <xref:System.Windows.Forms.DataGridView>.
+ Pour cette procédure pas à pas, les données de la `Customers` table sont dans une disposition des **Détails** où les données sont affichées dans des contrôles individuels. Les données de la `Orders` table sont dans une disposition en **grille** qui est affichée dans un <xref:System.Windows.Forms.DataGridView> contrôle.
 
 #### <a name="to-set-the-drop-type-for-the-items-in-the-data-sources-window"></a>Pour définir le type de déplacement des éléments de la fenêtre Sources de données
 
@@ -107,7 +107,7 @@ L'un des scénarios les plus courants dans le développement d'applications cons
 2. Sur le nœud **Customers** , sélectionnez **Details** dans la liste de contrôle pour remplacer le contrôle de la table **Customers** par des contrôles individuels. Pour plus d’informations, consultez [définir le contrôle à créer lors d’une opération de glisser-déplacer à partir de la fenêtre sources de données](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
 ## <a name="create-the-data-bound-form"></a>Créer le formulaire lié aux données
- Pour créer des contrôles liés aux données, vous pouvez faire glisser des éléments depuis la fenêtre **Sources de données** vers votre formulaire.
+ Vous pouvez créer les contrôles liés aux données en faisant glisser des éléments depuis la fenêtre **sources de données** vers votre formulaire.
 
 #### <a name="to-create-data-bound-controls-on-the-form"></a>Pour créer des contrôlés liés aux données dans le formulaire
 
@@ -120,17 +120,17 @@ L'un des scénarios les plus courants dans le développement d'applications cons
     > [!NOTE]
     > Le nœud **Orders** associé est situé sous la colonne **Fax** et constitue un nœud enfant du nœud **Customers**.
 
-     Un contrôle <xref:System.Windows.Forms.DataGridView> et une barre d'outils (<xref:System.Windows.Forms.BindingNavigator>) pour parcourir les enregistrements apparaissent dans le formulaire. Un OrdersTableAdapter et <xref:System.Windows.Forms.BindingSource> apparaissent dans la barre d’état des composants.
+     Un contrôle <xref:System.Windows.Forms.DataGridView> et une barre d'outils (<xref:System.Windows.Forms.BindingNavigator>) pour parcourir les enregistrements apparaissent dans le formulaire. Un OrdersTableAdapter et <xref:System.Windows.Forms.BindingSource> s’affiche dans la barre d’état des composants.
 
 ## <a name="addcode-to-update-the-database"></a>Addcode pour mettre à jour la base de données
- Vous pouvez mettre à jour la base de données en appelant les méthodes `Update` des TableAdapters **Customers** et **Orders**. Par défaut, un gestionnaire d’événements pour le bouton **Enregistrer** de l' <xref:System.Windows.Forms.BindingNavigator> est ajouté au code du formulaire pour envoyer des mises à jour à la base de données. Cette procédure modifie le code pour envoyer les mises à jour dans le bon ordre. Cela élimine la possibilité de déclencher des erreurs d’intégrité référentielle. Le code implémente également la gestion des erreurs en enveloppant l'appel de mise à jour dans un bloc try-catch. Vous pouvez modifier le code pour répondre aux besoins de votre application.
+ Vous pouvez mettre à jour la base de données en appelant les méthodes `Update` des TableAdapters **Customers** et **Orders**. Par défaut, un gestionnaire d’événements pour le bouton **Enregistrer** de <xref:System.Windows.Forms.BindingNavigator> est ajouté au code du formulaire pour envoyer des mises à jour à la base de données. Cette procédure modifie le code pour envoyer les mises à jour dans le bon ordre. Cela élimine la possibilité de déclencher des erreurs d’intégrité référentielle. Le code implémente également la gestion des erreurs en enveloppant l'appel de mise à jour dans un bloc try-catch. Vous pouvez modifier le code pour répondre aux besoins de votre application.
 
 > [!NOTE]
 > Par souci de clarté, cette procédure pas à pas n’utilise pas de transaction. Toutefois, si vous mettez à jour au moins deux tables associées, vous devez inclure toute la logique de mise à jour dans une transaction. Une transaction est un processus qui garantit que toutes les modifications associées à une base de données réussissent avant que les modifications ne soient validées. Pour plus d’informations, consultez [transactions et accès concurrentiel](https://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b).
 
 #### <a name="to-add-update-logic-to-the-application"></a>Pour ajouter une logique de mise à jour à l'application
 
-1. Sélectionnez le bouton **Enregistrer** dans la <xref:System.Windows.Forms.BindingNavigator>. l’éditeur de code s’ouvre dans le gestionnaire d’événements `bindingNavigatorSaveItem_Click`.
+1. Sélectionnez le bouton **Enregistrer** dans la <xref:System.Windows.Forms.BindingNavigator> . L’éditeur de code s’ouvre alors dans le `bindingNavigatorSaveItem_Click` Gestionnaire d’événements.
 
 2. Remplacez le code dans le gestionnaire d'événements pour appeler les méthodes `Update` des TableAdapters associés. Le code suivant crée d'abord trois tables de données temporaires pour contenir les informations mises à jour pour chaque <xref:System.Data.DataRowState> (<xref:System.Data.DataRowState>, <xref:System.Data.DataRowState> et <xref:System.Data.DataRowState>). Les mises à jour sont ensuite exécutées dans le bon ordre. Le code doit se présenter comme suit :
 

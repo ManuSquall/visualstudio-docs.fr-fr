@@ -1,5 +1,5 @@
 ---
-title: 'Erreur : le fichier &#39;&#39; de dépendance du &#39;projet&#39; projet ne peut pas être copié dans le répertoire d’exécution, car &#39;il&#39; est en conflit avec le fichier de dépendance | Microsoft Docs'
+title: 'Erreur : impossible de copier le fichier de dépendance &#39;&#39; dans le projet &#39;Project&#39; dans le répertoire d’exécution, car il est en conflit avec le &#39;de fichiers de dépendance | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -12,13 +12,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5d4fd45741585aaf82c82257999b40d6257e82d9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656044"
 ---
-# <a name="error-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-conflict-with-dependency-39file39"></a>Erreur : le fichier &#39;&#39; de dépendance du &#39;projet&#39; projet ne peut pas être copié dans le répertoire d’exécution, car &#39;il est en conflit avec le fichier de dépendance&#39;
+# <a name="error-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-conflict-with-dependency-39file39"></a>Erreur : impossible de copier le fichier de &#39;de dépendance&#39; dans le projet &#39;Project&#39; dans le répertoire d’exécution, car il est en conflit avec le fichier de &#39;de dépendance&#39;
 Il existe un conflit entre des références, car plusieurs dépendances distinctes qui portent le même nom de fichier sont copiées dans le répertoire bin pour permettre à l’application de s’exécuter. Le répertoire d’exécution ne peut pas résoudre le conflit dans la mesure où aucune des dépendances n’est une référence principale.
 
  Cette erreur entraîne l’échec de la build.

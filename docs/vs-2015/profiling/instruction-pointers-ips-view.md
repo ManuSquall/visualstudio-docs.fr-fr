@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1c6dcd6da21d83203f2e22472aaeb226f65e8475
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68191536"
 ---
 # <a name="instruction-pointers-ips-view"></a>Pointeurs d'instruction (IP), vue
@@ -37,6 +37,6 @@ La vue Pointeurs d’instruction vous permet de consulter les instructions spéc
  Pour les données de mémoire .NET, la vue Lignes identifie les instructions qui allouent la mémoire.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Pointeurs d’instruction (IP), vue - Données d’échantillonnage](../profiling/instruction-pointers-ips-view-sampling-data.md)   
- [Vue Pointeurs d’instructions (IP) - Données d’échantillonnage de mémoire .NET](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)   
- [Vue Pointeurs d’instruction (IP)](../profiling/instruction-pointers-ips-view-contention-data.md)
+ [Mode pointeurs d’instructions (IP)](../profiling/instruction-pointers-ips-view-sampling-data.md)   
+ [Vue pointeurs d’instructions (IP)-échantillonnage](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)   
+ [Pointeurs d'instruction (IP), vue](../profiling/instruction-pointers-ips-view-contention-data.md)

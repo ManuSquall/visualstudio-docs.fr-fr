@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ebc8f4f6c17af54f4dfdcfc0d0d05c5da9d2d88b
-ms.sourcegitcommit: d9254e54079ae01cdf2d07b11f988faf688f80fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/11/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88114074"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Modèles composites pour Visual Studio
@@ -28,7 +28,7 @@ Les modèles composites combinent des éléments d’interaction et de conceptio
 
 - [Entrée tactile](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_TouchInput)
 
-## <a name="data-visualization"></a><a name="BKMK_DataVisualization"></a>Visualisation des données
+## <a name="data-visualization"></a><a name="BKMK_DataVisualization"></a> Visualisation des données
 
 ### <a name="overview"></a>Vue d’ensemble
  Les graphiques sont un moyen visuel d’agréger et de visualiser des données afin d’améliorer la prise de décision. Ils peuvent aider les utilisateurs à être confrontés à beaucoup de données, mais peu d’entre elles, voir ce qui mérite une attention et ce qui peut nécessiter une action.
@@ -81,7 +81,7 @@ Les modèles composites combinent des éléments d’interaction et de conceptio
 |![Échantillon 79D7F2](../../extensibility/ux-guidelines/media/0711_79d7f2.png "0711_79D7F2")|#79D7F2|121 215 242|
 |![Échantillon B5B5B5](../../extensibility/ux-guidelines/media/0711_b5b5b5.png "0711_B5B5B5")|#B5B5B5|181 181 181|
 
-## <a name="on-object-ui-and-peeking"></a><a name="BKMK_OnObjectUI"></a>Interface utilisateur et aperçu en un objet
+## <a name="on-object-ui-and-peeking"></a><a name="BKMK_OnObjectUI"></a> Interface utilisateur et aperçu en un objet
  Cette section fournit un contexte de lecture, également appelé vue d’aperçu du code, un type d’interface utilisateur sur objet unique à Visual Studio.
 
 ### <a name="overview"></a>Vue d’ensemble
@@ -247,7 +247,7 @@ Les modèles composites combinent des éléments d’interaction et de conceptio
 
 - **N'** Affichez jamais le contenu au pointage qui semble modifiable ou qui invite l’interaction de l’utilisateur. Ce comportement peut nuire aux utilisateurs s’ils essaient de déplacer le curseur sur le contenu de détail, car le comportement standard d’une info-bulle consiste à faire disparaître immédiatement lorsque le curseur ne se trouve plus sur le contenu maître qui l’a généré.
 
-## <a name="selection-models"></a><a name="BKMK_SelectionModels"></a>Modèles de sélection
+## <a name="selection-models"></a><a name="BKMK_SelectionModels"></a> Modèles de sélection
 
 ### <a name="overview"></a>Vue d’ensemble
  Un modèle de sélection est le mécanisme utilisé pour indiquer et confirmer les opérations sur un ou plusieurs objets intéressants au sein de l’interface utilisateur. Cette rubrique décrit les modèles d’interaction de sélection dans les éditeurs de documents Visual Studio : les éditeurs de texte, les aires de conception et les surfaces de modélisation.
@@ -272,7 +272,7 @@ Les modèles composites combinent des éléments d’interaction et de conceptio
 
 - Région
 
-#### <a name="scope"></a>Scope (Étendue)
+#### <a name="scope"></a>Étendue
  Le composant le plus important de la sélection consiste à s’assurer que l’utilisateur sait dans quelle fenêtre il travaille (activation) et où se trouve le focus (sélection). Visual Studio étend les fonctionnalités de gestion des fenêtres dans Windows, mais le schéma d’activation est le même : l’interaction avec une fenêtre met le focus sur la fenêtre. Visual Studio a deux indicateurs d’activation : un pour les fenêtres de document et un pour les fenêtres outil.
 
  Pour les fenêtres de document, la fenêtre active est indiquée par un onglet de fenêtre de document à l’avant et en modifiant sa couleur d’arrière-plan :
@@ -390,10 +390,10 @@ Les modèles composites combinent des éléments d’interaction et de conceptio
 
  **Sélection principale avec deux sélections secondaires**
 
-#### <a name="graphical-object-selection-appearance"></a><a name="BKMK_GraphicalObjectSelectionAppearance"></a>Apparence de la sélection d’objets graphiques
+#### <a name="graphical-object-selection-appearance"></a><a name="BKMK_GraphicalObjectSelectionAppearance"></a> Apparence de la sélection d’objets graphiques
  Les poignées de sélection sont des carrés dessinés dans un motif rectangulaire autour du cadre englobant de l’objet. Le graphique ci-dessous montre des exemples des différents États qu’un objet graphique peut avoir avec la poignée, le dimensionnement et l’apparence de modification sur place. La taille des handles doit être liée à la bordure de fenêtre et aux métriques de bord à l’aide de l’API **GetSystemMetrics** .
 
-| State (État) | Apparence | Détails visuels |
+| State | Apparence | Détails visuels |
 |-------------------------|---------------| - |
 | **Non sélectionné** | Default | ![État du bouton par défaut](../../extensibility/ux-guidelines/media/0713-10_defaultstate.png "0713-10_DefaultState") |
 | **Sélection principale** | Redimensionnable | ![Sélection principale avec des poignées de redimensionnement](../../extensibility/ux-guidelines/media/0713-11_primaryresize.png "0713-11_PrimaryResize") |
@@ -437,9 +437,9 @@ Les modèles composites combinent des éléments d’interaction et de conceptio
 
 | Object | Sélection |
 |--------|------------|
-| List | Contiguë |
-| List | Disjoint |
-| List | Région |
+| Liste | Contiguë |
+| Liste | Disjoint |
+| Liste | Région |
 
  Cliquez une fois sur une liste pour sélectionner la ligne où le clic s’est produit. Si l’utilisateur clique dans une cellule de liste qui prend en charge la modification sur place, la cellule est également immédiatement activée pour la modification sur place. Dans le cas contraire, la ligne entière est immédiatement sélectionnée et montre une mise en surbrillance.
 
@@ -471,7 +471,7 @@ Les modèles composites combinent des éléments d’interaction et de conceptio
 
 - La touche F2 active la modification sur place pour la cellule actuellement sélectionnée.
 
-## <a name="persistence-and-saving-settings"></a><a name="BKMK_PersistenceAndSavingSettings"></a>Persistance et enregistrement des paramètres
+## <a name="persistence-and-saving-settings"></a><a name="BKMK_PersistenceAndSavingSettings"></a> Persistance et enregistrement des paramètres
 
 ### <a name="overview"></a>Vue d’ensemble
  Bien que chaque composant logiciel dans Visual Studio soit généralement responsable de son propre État et de sa persistance, Visual Studio enregistre automatiquement les paramètres dans certains cas, par exemple avec les tailles et les positions des fenêtres. Le tableau ci-dessous est une combinaison de paramètres enregistrés automatiquement et des paramètres qui nécessitent un utilisateur explicite ou une action programmée à entreprendre.
@@ -482,7 +482,7 @@ Les modèles composites combinent des éléments d’interaction et de conceptio
 |Boîte de dialogue|Emplacement de la boîte de dialogue, si elle a été déplacée<br /><br /> Affichage que l’utilisateur a utilisé en dernier dans la boîte de dialogue|Quand la boîte de dialogue se ferme<br /><br /> À la fin de la session Visual Studio|En mémoire<br /><br /> Registre dans **HKEY_CURRENT_USER**|
 |Fenêtre|La taille et l’emplacement de la fenêtre|Quand la fenêtre se ferme<br /><br /> En cas de modification du mode Visual Studio<br /><br /> À la fin de la session Visual Studio|Fichier d' **options utilisateur (. suo)** pour le projet<br /><br /> Fichier d’options personnalisées pour les paramètres de fenêtre|
 |Document|Sélection actuelle dans le document<br /><br /> Vue du document<br /><br /> Les derniers emplacements visités par l’utilisateur|Lors de l’enregistrement du document|Fichier d' **options utilisateur (. suo)** pour le projet|
-|Projet|Références aux fichiers<br /><br /> Références aux répertoires sur le disque<br /><br /> Références à d’autres logiciels<br /><br /> Components<br /><br /> Informations d’État sur le projet lui-même|Lors de l’enregistrement du projet|Fichier projet|
+|Project|Références aux fichiers<br /><br /> Références aux répertoires sur le disque<br /><br /> Références à d’autres logiciels<br /><br /> Components<br /><br /> Informations d’État sur le projet lui-même|Lors de l’enregistrement du projet|Fichier projet|
 |Solution|Références aux projets<br /><br /> Références aux fichiers|Lors de l’enregistrement du projet ou de la solution|Fichier **solution (. sln)**|
 |Paramètres dans **outils > options**|Personnalisations du clavier<br /><br /> Personnalisations de la barre d’outils<br /><br /> Modèles de couleurs|Quand la boîte de dialogue **outils > options** se ferme<br /><br /> À la fin de la session Visual Studio|Registre dans **HKEY_CURRENT_USER**|
 
@@ -506,7 +506,7 @@ Les modèles composites combinent des éléments d’interaction et de conceptio
 #### <a name="profile-specific-layouts"></a>Dispositions spécifiques au profil
  Chaque profil comprend des dispositions de fenêtres outil, organisées de manière familière à des personnes de développeur spécifiques (Visual C++ les développeurs s’attendent à voir le **Explorateur de solutions** sur le côté gauche de l’IDE, tandis que les développeurs C# s’attendent à voir le **Explorateur de solutions** à droite). Les dispositions de fenêtres spécifiques au profil sont chargées une fois que l’utilisateur a choisi un profil au démarrage. Un auteur de package doit déterminer la disposition de fenêtre qui convient le mieux à l’expérience de son client, sachant que les modifications apportées par l’utilisateur à la configuration de la fenêtre seront conservées.
 
-## <a name="touch-input"></a><a name="BKMK_TouchInput"></a>Entrée tactile
+## <a name="touch-input"></a><a name="BKMK_TouchInput"></a> Entrée tactile
  Les utilisateurs utilisent de plus en plus des produits de développement Microsoft sur des appareils tactiles. Toutefois, il existe des barrières qui compliquent l’utilisation des outils de développement sur des appareils tactiles. Les utilisateurs s’attendent à ce que nos produits fournissent une expérience tactile fiable et précise. L’objectif de ces instructions est d’informer les décisions concernant les fonctionnalités tactiles à incorporer et d’encourager une expérience tactile cohérente sur Visual Studio et les produits associés.
 
 ### <a name="levels-of-experience"></a>Niveaux d’expérience

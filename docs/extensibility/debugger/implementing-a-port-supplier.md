@@ -1,5 +1,5 @@
 ---
-title: Mise en œuvre d’un fournisseur de ports (fr) Microsoft Docs
+title: Implémentation d’un fournisseur de port | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,24 +12,24 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8218e372ad3aece922811bc20cfd7650f33296f3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738555"
 ---
-# <a name="implement-a-port-supplier"></a>Mettre en œuvre un fournisseur portuaire
-Un fournisseur portuaire fournit des ports sur demande au gestionnaire de débogé de session (SDM). Un fournisseur de port doit être mis en œuvre lors du débogage vers une machine non-DCOM ou lorsqu’un nouvel appareil nécessite un soutien. Par exemple, pour fournir le débogage à un téléphone cellulaire, vous pouvez configurer un fournisseur de port qui fournit des ports, qui se connectent au téléphone cellulaire (peut-être par le moyen de l’IR ou une connexion cellulaire) et énumère les processus et les programmes en cours d’exécution sur le téléphone.
+# <a name="implement-a-port-supplier"></a>Implémenter un fournisseur de port
+Un fournisseur de port fournit des ports à la demande au gestionnaire de débogage de session (SDM). Un fournisseur de ports doit être implémenté lors du débogage sur un ordinateur non-DCOM ou lorsqu’un nouvel appareil requiert la prise en charge. Par exemple, pour permettre le débogage sur un téléphone portable, vous pouvez configurer un fournisseur de ports qui fournit des ports, qui se connectent au téléphone portable (par exemple, par le biais d’une connexion IR ou de cellule) et énumère les processus et les programmes en cours d’exécution sur le téléphone.
 
- Pour les programmes de débogage sur les machines Windows (y compris le débogage à distance), Visual Studio fournit des fournisseurs portuaires pour les processus natifs et common Language Runtime (CLR), de sorte qu’il n’est pas nécessaire de mettre en place votre propre fournisseur de port dans ces cas.
+ Pour déboguer des programmes sur des ordinateurs Windows (y compris le débogage distant), Visual Studio fournit des fournisseurs de port pour les processus natif et CLR (Common Language Runtime). il n’est donc pas nécessaire de configurer votre propre fournisseur de port dans ces cas.
 
 ## <a name="in-this-section"></a>Contenu de cette section
- [Mettre en œuvre et enregistrer un fournisseur portuaire](../../extensibility/debugger/implementing-and-registering-a-port-supplier.md) Discute de la façon dont le SDM interagit avec le fournisseur du port et ses ports.
+ [Implémenter et inscrire un fournisseur de port](../../extensibility/debugger/implementing-and-registering-a-port-supplier.md) Explique comment le SDM interagit avec le fournisseur de ports et ses ports.
 
- [Interfaces de fournisseur portuaire requises](../../extensibility/debugger/required-port-supplier-interfaces.md) Documente les interfaces que vous devez mettre en œuvre pour obtenir un fournisseur de port.
+ [Interfaces du fournisseur de port requises](../../extensibility/debugger/required-port-supplier-interfaces.md) Documente les interfaces que vous devez implémenter pour obtenir un fournisseur de ports.
 
 ## <a name="related-sections"></a>Sections connexes
- [Concepts Debugger](../../extensibility/debugger/debugger-concepts.md) Décrit les principaux concepts architecturaux débogage.
+ [Concepts du débogueur](../../extensibility/debugger/debugger-concepts.md) Décrit les principaux concepts architecturaux du débogage.
 
 ## <a name="see-also"></a>Voir aussi
- [Visual Studio débbugger extensibility](../../extensibility/debugger/visual-studio-debugger-extensibility.md)
+ [Extensibilité du débogueur Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

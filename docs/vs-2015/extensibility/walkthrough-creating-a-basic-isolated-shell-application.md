@@ -13,18 +13,18 @@ caps.latest.revision: 55
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6192eb5583e7d0bc37518e995aacccad643cc9ec
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850350"
 ---
-# <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>Procédure pas à pas : création d’une application Shell isolée de base
+# <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>Procédure pas à pas : Création d’une application Shell isolée de base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette procédure pas à pas montre comment créer une solution de Shell isolé, personnaliser l’aide à propos de la fenêtre outil et créer un programme d’installation qui installe l’interpréteur de commandes isolé.  
   
-## <a name="prerequisites"></a>Configuration requise  
+## <a name="prerequisites"></a>Prérequis  
  Pour suivre cette procédure pas à pas, vous devez installer le Kit de développement logiciel (SDK) Visual Studio. Pour plus d’informations, consultez [Kit de développement logiciel (SDK) Visual Studio](../extensibility/visual-studio-sdk.md). Pour déployer l’interpréteur de commandes isolé, vous devez également utiliser le package redistribuable Visual Studio Shell (isolé).  
   
 ## <a name="creating-an-isolated-shell-solution"></a>Création d’une solution de Shell isolé  
@@ -59,7 +59,7 @@ Cette procédure pas à pas montre comment créer une solution de Shell isolé, 
   
 1. Dans le projet MyVSShellStub, ouvrez \Shell Customization\MyVSShellStub.Application.pkgdef.  
   
-2. Remplacez la valeur de l’élément `AppName` par **« appname » = « Fabrikam Music Editor »**  
+2. Remplacez la `AppName` valeur de l’élément par **« appname » = « Fabrikam Music Editor »**  
   
 3. Pour modifier l’icône de l’application, copiez une autre icône dans le répertoire \MyVSShellStub\MyVSShellStub\MyVSShellStub\. Renommez le fichier ApplicationIcon. ico existant en ApplicationIcon1. ico. Renommez le nouveau fichier en ApplicationIcon. ico.  
   
@@ -70,7 +70,7 @@ Cette procédure pas à pas montre comment créer une solution de Shell isolé, 
   
 #### <a name="to-customize-the-default-web-browser-home-page"></a>Pour personnaliser la page d’hébergement par défaut du navigateur Web  
   
-1. Dans le fichier MyVSShellStub. application. pkgdef, remplacez la valeur de l’élément `DefaultHomePage` par «<https://www.microsoft.com>».  
+1. Dans le fichier MyVSShellStub. application. pkgdef, remplacez la `DefaultHomePage` valeur de l’élément par « <https://www.microsoft.com> ».  
   
 2. Régénérez le projet MyVSShellStub.  
   
@@ -79,7 +79,7 @@ Cette procédure pas à pas montre comment créer une solution de Shell isolé, 
 4. Dans **affichage/autres fenêtres**, cliquez sur **navigateur Web**. La fenêtre du **navigateur Web** affiche la page d’accueil de Microsoft Corporation.  
   
 ## <a name="removing-the-print-command"></a>Suppression de la commande d’impression  
- Le fichier. vsct dans un projet d’interface utilisateur de Shell isolé se compose d’un ensemble de déclarations de la forme `<Define name=No_`*élément*`>`, où *élément* est l’un des menus et des commandes Visual Studio standard.  
+ Le fichier. vsct dans un projet d’interface utilisateur de Shell isolé se compose d’un ensemble de déclarations de l' `<Define name=No_` *élément*Form `>` , où *Element* est l’un des menus et commandes Visual Studio standard.  
   
  Si une déclaration n’est pas commentée, le menu ou la commande est exclu de l’interpréteur de commandes isolé. À l’inverse, si une déclaration est commentée, le menu ou la commande est inclus dans l’interpréteur de commandes isolé.  
   
@@ -115,7 +115,7 @@ Cette procédure pas à pas montre comment créer une solution de Shell isolé, 
   
 2. Supprimez les marques de commentaire de la ligne suivante :  
   
-     [$RootKey $ \Packages\\{87569308-4813-40a0-9cd0-d7a30838ca3f}]  
+     [$RootKey $ \Packages \\ {87569308-4813-40a0-9cd0-d7a30838ca3f}]  
   
 3. Régénérez la solution et démarrez le débogage de l’interpréteur de commandes isolé. Ouvrez un fichier XML, par exemple, \MyVSShellStub\MyVSShellStub\MyVSShellStubUI\MyVSShellStubUI.vsct. Vérifiez que les mots clés XML dans le fichier ne sont pas coloriés et que la saisie de « < » sur une ligne ne fait pas apparaître les info-bulles XML.  
   
@@ -126,7 +126,7 @@ Cette procédure pas à pas montre comment créer une solution de Shell isolé, 
   
 1. Le nom de la société, les informations de copyright, la version du produit et la description du produit se trouvent dans le projet MyVSShellStub. AboutBoxPackage, dans le fichier \Properties\AssemblyInfo.cs. Ouvrez ce fichier.  
   
-2. Remplacez la valeur de `AssemblyCompany` par **Fabrikam**, le `AssemblyProduct` et les valeurs de `AssemblyTitle` par **Fabrikam Music Editor**, et la valeur `AssemblyCopyright` sur **Copyright © Fabrikam 2015**:  
+2. Remplacez la `AssemblyCompany` valeur par **Fabrikam**, les `AssemblyProduct` `AssemblyTitle` valeurs et par **Fabrikam Music Editor**, et la `AssemblyCopyright` valeur par **Copyright © Fabrikam 2015**:  
   
     ```  
     [assembly: AssemblyTitle("Fabrikam Music Editor")]  
@@ -139,15 +139,15 @@ Cette procédure pas à pas montre comment créer une solution de Shell isolé, 
     [assembly: AssemblyCopyright("Copyright © Fabrikam 2015”)]  
     ```  
   
-3. Pour ajouter une description du produit, remplacez la valeur `AssemblyDescription` par **la description de Fabrikam Music Editor.** :  
+3. Pour ajouter une description du produit, remplacez la `AssemblyDescription` valeur par **la description de Fabrikam Music Editor.**:  
   
     ```  
     [assembly: AssemblyDescription("The description of Fabrikam Music editor.”)]  
     ```  
   
-4. Démarrez le débogage et, dans l’application Shell isolé, ouvrez la zone **aide/à propos** de. Vous devez voir les chaînes modifiées. Le titre de la zone aide/à propos de est identique à la valeur `AssemblyTitle` dans AssemblyInfo.cs.  
+4. Démarrez le débogage et, dans l’application Shell isolé, ouvrez la zone **aide/à propos** de. Vous devez voir les chaînes modifiées. Le titre de la zone aide/à propos de est identique à la `AssemblyTitle` valeur dans AssemblyInfo.cs.  
   
-5. Les propriétés de la zone **aide/à propos** de se trouvent dans le fichier MyVSShellStub. AboutBoxPackage\AboutBox.Xaml. Pour modifier la largeur de la zone aide/à propos de, accédez au bloc `AboutDialogStyle` et affectez à la propriété `Width` la valeur 200 :  
+5. Les propriétés de la zone **aide/à propos** de se trouvent dans le fichier MyVSShellStub. AboutBoxPackage\AboutBox.Xaml. Pour modifier la largeur de la zone aide/à propos de, accédez au `AboutDialogStyle` bloc et définissez la `Width` propriété sur 200 :  
   
     ```  
     <Style x:Key="AboutDialogStyle" TargetType="Window">  
@@ -178,7 +178,7 @@ Cette procédure pas à pas montre comment créer une solution de Shell isolé, 
   
 1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud de la solution, puis cliquez sur **Ajouter un nouveau projet**.  
   
-2. Dans la boîte de dialogue **nouveau projet** , développez **autres types de projets** , puis sélectionnez **configuration et déploiement**. Sélectionnez le modèle InstallShield. Nommez le nouveau projet `MySetup`, puis cliquez sur **OK**.  
+2. Dans la boîte de dialogue **nouveau projet** , développez **autres types de projets** , puis sélectionnez **configuration et déploiement**. Sélectionnez le modèle InstallShield. Nommez le nouveau projet `MySetup` , puis cliquez sur **OK**.  
   
 3. Si InstallShield Limited Edition est déjà installé, passez à l’étape suivante.  
   
@@ -206,15 +206,15 @@ Cette procédure pas à pas montre comment créer une solution de Shell isolé, 
   
     2. DebuggerProxy.dll  
   
-    3. DebuggerProxy. dll. manifest  
+    3. DebuggerProxy.dll. manifest  
   
-    4. MyVSShellStub.pkgdef  
+    4. MyVSShellStub. pkgdef  
   
-    5. MyVSShellStub.pkgundef  
+    5. MyVSShellStub. pkgundef  
   
     6. MyVSShellStub.winprf  
   
-    7. Splash. bmp  
+    7. Splash.bmp  
   
 5. Cliquez sur le bouton **Ajouter des sorties de projet** et ajoutez la **sortie MyVSShellStub/Primary**. Cliquez sur **OK**.  
   
@@ -226,9 +226,9 @@ Cette procédure pas à pas montre comment créer une solution de Shell isolé, 
   
 9. Cliquez sur le bouton **Ajouter des fichiers** et, dans le dossier \MyVSShellStub\Release\Extensions\Application\, ajoutez les fichiers suivants :  
   
-    - MyVSShellStub.AboutBoxPackage.pkgdef  
+    - MyVSShellStub. AboutBoxPackage. pkgdef  
   
-    - MyVSShellStub.Application.pkgdef  
+    - MyVSShellStub. application. pkgdef  
   
 10. Cliquez avec le bouton droit sur le nœud de l' **éditeur Fabrikam Music [INSTALLDIR]** dans le volet gauche et ajoutez un nouveau dossier nommé **1033**.  
   
@@ -248,15 +248,15 @@ Cette procédure pas à pas montre comment créer une solution de Shell isolé, 
   
 18. Dans le volet **que voulez-vous trouver ?** , choisissez **entrée de registre** dans la liste déroulante, puis cliquez sur **suivant**.  
   
-19. Dans le volet **Comment voulez-vous le Rechercher ?** , sélectionnez **HKEY_LOCAL_MACHINE** comme racine du Registre. Entrez **SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\14.0\isoshell** pour les systèmes 64 bits ou **SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\isoshell** pour les systèmes 32 bits, puis entrez **install** comme valeur de registre. Cliquez sur **Next**.  
+19. Dans le volet **Comment voulez-vous le Rechercher ?** , sélectionnez **HKEY_LOCAL_MACHINE** comme racine du Registre. Entrez **SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\14.0\isoshell** pour les systèmes 64 bits ou **SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\isoshell** pour les systèmes 32 bits, puis entrez **install** comme valeur de registre. Cliquez sur **Suivant**.  
   
 20. Dans le volet **que voulez-vous faire avec la valeur ?** , entrez **ce produit nécessite l’installation du package redistribuable Visual Studio 2015 isolated Shell.** comme texte d’affichage, puis cliquez sur **Terminer**.  
   
 21. Régénérez la solution d’interpréteur de commandes isolé pour créer le projet d’installation.  
   
-     Vous pouvez trouver le fichier Setup. exe dans le dossier suivant :  
+     Vous pouvez trouver le fichier setup.exe dans le dossier suivant :  
   
      \MyVSShellStub\MySetup\MySetup\Express\SingleImage\DiskImages\DISK1  
   
 ## <a name="testing-the-installation-program"></a>Test du programme d’installation  
- Pour tester l’installation, copiez le fichier Setup. exe sur un autre ordinateur et exécutez le programme d’installation. Vous devez être en mesure d’exécuter l’application Shell isolé.
+ Pour tester l’installation, copiez le fichier setup.exe sur un autre ordinateur et exécutez le programme d’installation exécutable. Vous devez être en mesure d’exécuter l’application Shell isolé.

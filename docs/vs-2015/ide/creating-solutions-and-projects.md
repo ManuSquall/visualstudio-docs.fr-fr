@@ -19,19 +19,19 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 10375e00eb850691e88d01c56a87bb967c40e9ea
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850568"
 ---
-# <a name="creating-solutions-and-projects"></a>Création de projets et de solutions
+# <a name="creating-solutions-and-projects"></a>Creating Solutions and Projects
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Les projets sont les conteneurs logiques pour tout ce qui est nécessaire pour générer votre application. Quand vous créez un projet en choisissant **Fichier &#124; Nouveau &#124; Projet** dans le menu principal, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] crée une solution pour le contenir. Vous pouvez ensuite si nécessaire ajouter plusieurs projets nouveaux ou existants à la solution. Vous pouvez créer des projets à partir de fichiers de code existants et vous pouvez créer des projets temporaires (.NET uniquement) qui sont supprimés quand vous en avez terminé avec eux.
 
 > [!NOTE]
-> Les descriptions de cette rubrique sont basées sur l'édition Visual Studio Community. Les boîtes de dialogue et les commandes de menu affichées peuvent différer de celles décrites ici, selon vos paramètres ou votre version de Visual Studio. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Les descriptions de cette rubrique sont basées sur l'édition Visual Studio Community. Les boîtes de dialogue et les commandes de menu affichées peuvent différer de celles décrites ici, selon vos paramètres ou votre version de Visual Studio. Pour modifier vos paramètres, choisissez **Paramètres d'importation et d'exportation** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="create-a-project-from-an-installed-project-template"></a>Créer un projet à partir d'un modèle de projet installé
  **Fichier &#124; Nouveau &#124; Projet** dans le menu principal pour afficher la boîte de dialogue Nouveau projet. Dans le volet gauche sous **Installé &#124; Modèles**, choisissez le langage de programmation, et la plateforme ou la technologie, puis choisissez parmi les modèles disponibles dans le volet central.

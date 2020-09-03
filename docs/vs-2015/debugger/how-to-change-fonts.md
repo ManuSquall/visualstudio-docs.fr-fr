@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Modifier les polices | Microsoft Docs'
+title: 'Comment : modifier les polices | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,28 +12,28 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a5aafed36dd9e011cef34391aa3b87027257b91d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185188"
 ---
-# <a name="how-to-change-fonts"></a>Procédure : Modifier les polices
+# <a name="how-to-change-fonts"></a>Comment : modifier les polices
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous pouvez modifier la police, le style de police et la taille de police des fenêtres Spy ++.  
+Vous pouvez modifier la police, le style de police et la taille de police des fenêtres Spy + +.  
   
 ### <a name="to-change-font-options"></a>Pour modifier les options de police  
   
-1. À partir de la **vue** menu, choisissez **police**.  
+1. Dans le menu **affichage** , choisissez **police**.  
   
-2. Choisissez une police, le style de police et la taille de police.  
+2. Choisissez une police, un style de police et une taille de police.  
   
 3. Cliquez sur **OK**.  
   
-   En sélectionnant **enregistrer la police par défaut** entraîne toutes les fenêtres Spy ++ futures à utiliser cette police.  
+   Si vous sélectionnez **enregistrer la police par défaut** , toutes les fenêtres Spy + + ultérieures utilisent cette police.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Utilisation de Spy++](../debugger/using-spy-increment.md)   
- [Vues Spy++](../debugger/spy-increment-views.md)   
- [Informations de référence sur Spy++](../debugger/spy-increment-reference.md)
+ [Utilisation de Spy + +](../debugger/using-spy-increment.md)   
+ [Vues Spy + +](../debugger/spy-increment-views.md)   
+ [Référence Spy++](../debugger/spy-increment-reference.md)

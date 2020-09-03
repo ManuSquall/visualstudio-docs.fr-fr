@@ -10,10 +10,10 @@ ms.technology: vs-azure
 ms.date: 03/14/2019
 ms.author: ghogen
 ms.openlocfilehash: 4626b64f5e733fec049d56dfe53407cc0fe31566
-ms.sourcegitcommit: 2c26d6e6f2a5c56ae5102cdded7b02f2d0fd686c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88168690"
 ---
 # <a name="deploy-an-aspnet-container-to-a-container-registry-using-visual-studio"></a>Déployer un conteneur ASP.NET dans un registre de conteneurs à l’aide de Visual Studio
@@ -59,7 +59,7 @@ La procédure suivante vous accompagne dans la création d’une application ASP
 
     | Paramètre      | Valeur suggérée  | Description                                |
     | ------------ |  ------- | -------------------------------------------------- |
-    | **Préfixe DNS** | Nom global unique | Nom qui identifie uniquement votre registre de conteneurs. |
+    | **Préfixe DNS** | Nom globalement unique | Nom qui identifie uniquement votre registre de conteneurs. |
     | **Abonnement** | Choisir votre abonnement | Sélectionnez l’abonnement Azure à utiliser. |
     | **[Groupe de ressources](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Nom du groupe de ressources où créer votre registre de conteneurs. Choisissez **Nouveau** pour créer un groupe de ressources.|
     | **[PAIRE](/azure/container-registry/container-registry-skus)** | Standard | Niveau de service du registre de conteneurs  |
@@ -85,7 +85,7 @@ La procédure suivante vous accompagne dans la création d’une application ASP
 
     | Paramètre      | Valeur suggérée  | Description                                |
     | ------------ |  ------- | -------------------------------------------------- |
-    | **Préfixe DNS** | Nom global unique | Nom qui identifie uniquement votre registre de conteneurs. |
+    | **Préfixe DNS** | Nom globalement unique | Nom qui identifie uniquement votre registre de conteneurs. |
     | **Abonnement** | Choisir votre abonnement | Sélectionnez l’abonnement Azure à utiliser. |
     | **[Groupe de ressources](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Nom du groupe de ressources où créer votre registre de conteneurs. Choisissez **Nouveau** pour créer un groupe de ressources.|
     | **[PAIRE](/azure/container-registry/container-registry-skus)** | Standard | Niveau de service du registre de conteneurs  |

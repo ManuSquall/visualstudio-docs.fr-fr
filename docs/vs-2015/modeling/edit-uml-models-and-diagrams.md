@@ -22,10 +22,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 00ac30cc7e9ee3aff0dd64f015a4b4954972c09a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74295530"
 ---
 # <a name="edit-uml-models-and-diagrams"></a>Modifier des modèles et des diagrammes UML
@@ -39,7 +39,7 @@ Vous pouvez créer et modifier un modèle UML par l'intermédiaire des vues four
 
 ## <a name="in-this-topic"></a>Dans cette rubrique
 
-- [Les diagrammes UML sont des vues d’un modèle UML](#Views)
+- [Les diagrammes UML sont des vues d'un modèle UML](#Views)
 
 - [Création de diagrammes de modélisation UML](#Creating)
 
@@ -47,21 +47,21 @@ Vous pouvez créer et modifier un modèle UML par l'intermédiaire des vues four
 
 - [Modification des formes et des connecteurs](#Editing)
 
-- [Annuler les modifications apportées au modèle](#Undo)
+- [Annulation de modifications apportées au modèle](#Undo)
 
-- [Partage d’éléments entre des diagrammes](#Sharing)
+- [Partage d'éléments entre des diagrammes](#Sharing)
 
-- [Copie d’éléments et de groupes d’éléments associés](#Copying)
+- [Copie d'éléments et de groupes d'éléments associés](#Copying)
 
-- [Suppression d’un élément de modèle ou de ses vues](#Deleting)
+- [Suppression d'un élément de modèle ou de ses vues](#Deleting)
 
 - [Recherche de texte dans un diagramme](#Searching)
 
-- [Préparation d’un diagramme pour la présentation](#presentation)
+- [Préparation d'un diagramme pour la présentation](#presentation)
 
 - [Extension des concepteurs UML](#extensions)
 
-## <a name="Views"></a>Les diagrammes UML sont des vues d’un modèle UML
+## <a name="uml-diagrams-are-views-of-a-uml-model"></a><a name="Views"></a> Les diagrammes UML sont des vues d’un modèle UML
  Vous pouvez créer et utiliser des diagrammes UML uniquement dans les projets de modélisation. Pour plus d’informations sur la création de diagrammes et de projets, consultez [créer des projets et des diagrammes de modélisation UML](../modeling/create-uml-modeling-projects-and-diagrams.md).
 
 - Un projet de modélisation contient un seul modèle UML. Chaque diagramme UML dans le projet est une vue du modèle UML.
@@ -70,9 +70,9 @@ Vous pouvez créer et modifier un modèle UML par l'intermédiaire des vues four
 
 - Chaque forme dans un diagramme est une vue d'un élément du modèle. Quand vous placez une nouvelle forme dans un diagramme, vous créez un nouvel élément dans le modèle.
 
-- Quand vous enregistrez un diagramme, Visual Studio enregistre l’ensemble du modèle, tous ses diagrammes et le fichier de projet de modélisation.
+- Quand vous enregistrez un diagramme, Visual Studio enregistre le modèle entier, tous ses diagrammes et le fichier projet de modélisation.
 
-## <a name="Creating"></a>Création de diagrammes de modélisation UML
+## <a name="creating-uml-modeling-diagrams"></a><a name="Creating"></a> Création de diagrammes de modélisation UML
 
 1. Dans le menu **architecture** de Visual Studio, cliquez sur **nouveau diagramme UML ou diagramme de couche**.
 
@@ -91,7 +91,7 @@ Vous pouvez créer et modifier un modèle UML par l'intermédiaire des vues four
 
   Pour plus d’informations sur la gestion des projets de modélisation, consultez [créer des projets et des diagrammes de modélisation UML](../modeling/create-uml-modeling-projects-and-diagrams.md).
 
-## <a name="Drawing"></a>Dessin de diagrammes de modélisation UML
+## <a name="drawing-uml-modeling-diagrams"></a><a name="Drawing"></a> Dessin de diagrammes de modélisation UML
  Un diagramme de modélisation illustre une collection d'éléments de modèle liés par des relations. Chaque élément est affiché en tant que forme et chaque relation est affichée en tant que connecteur entre deux formes.
 
  Il existe deux genres d'outils, un pour les éléments et un pour les relations. Par exemple, dans la boîte à outils diagramme de classes UML, **Class** est un outil d’élément et **Association** est un outil de relation.
@@ -117,7 +117,7 @@ Vous pouvez créer et modifier un modèle UML par l'intermédiaire des vues four
 
    Dans certains types de diagrammes, vous pouvez également dessiner des formes simples. Ces formes ne font pas partie du modèle, mais vous pouvez les utiliser pour attirer l'attention sur des parties du diagramme ou pour le diviser en différentes zones.
 
-## <a name="Editing"></a>Modification des formes et des connecteurs
+## <a name="editing-shapes-and-connectors"></a><a name="Editing"></a> Modification des formes et des connecteurs
  Quand vous redimensionnez ou colorez une forme, ou quand vous réacheminez un connecteur, cela n'a aucun effet sur le modèle sous-jacent. En revanche, quand vous renommez une forme dans le diagramme ou dans l'Explorateur de modèles UML, l'élément correspondant est renommé dans l'Explorateur de modèles UML et dans tous les autres diagrammes où figure cet élément.
 
 > [!NOTE]
@@ -125,18 +125,18 @@ Vous pouvez créer et modifier un modèle UML par l'intermédiaire des vues four
 
  La figure suivante montre comment modifier la taille ou le nom d'une forme.
 
- ![Ajustement d’un élément de modèle](../modeling/media/uml-drawadjust1.png "UML_DrawAdjust1")
+ ![Ajustement d'un élément de modèle](../modeling/media/uml-drawadjust1.png "UML_DrawAdjust1")
 
 > [!TIP]
 > Les commandes intégrées ne comprennent pas de commande pour aligner correctement les formes. Toutefois, vous pouvez facilement créer votre propre commande d’alignement en copiant le code dans l’exemple dans [afficher un modèle UML sur des diagrammes](../modeling/display-a-uml-model-on-diagrams.md).
 
  La figure suivante montre comment ajuster l'itinéraire et la position d'un connecteur ou de ses étiquettes.
 
- ![Ajustement d’un connecteur](../modeling/media/uml-drawadjust2.png "UML_DrawAdjust2")
+ ![Ajustement d'un connecteur](../modeling/media/uml-drawadjust2.png "UML_DrawAdjust2")
 
 #### <a name="to-move-one-end-of-a-connector-to-another-shape"></a>Pour déplacer une extrémité d'un lien vers une autre forme
 
-1. Effectuez l'une des opérations suivantes :
+1. Effectuez l’une des actions suivantes :
 
    - Appuyez sur **CTRL** et déplacez la fin.
 
@@ -166,7 +166,7 @@ Vous pouvez créer et modifier un modèle UML par l'intermédiaire des vues four
 
 - Dans la barre d’outils **concepteurs d’architecture** , cliquez sur le signe plus ( **+** ) ou le signe moins ( **-** ), ou choisissez un niveau de zoom.
 
-## <a name="Searching"></a>Recherche dans un diagramme
+## <a name="searching-in-a-diagram"></a><a name="Searching"></a> Recherche dans un diagramme
  La fonction Recherche rapide permet de rechercher des éléments dans un diagramme. Vous devez définir **l’apparence dans** le **document actif**.
 
 #### <a name="to-search-for-text-in-a-modeling-diagram"></a>Pour rechercher du texte dans un diagramme de modélisation
@@ -185,20 +185,20 @@ Vous pouvez créer et modifier un modèle UML par l'intermédiaire des vues four
     > [!NOTE]
     > Si le texte à rechercher est à l'intérieur d'une forme réduite, la forme est mise en surbrillance. Développez la forme, puis cliquez à nouveau sur **Rechercher suivant** .
 
-## <a name="Undo"></a>Annuler les modifications apportées au modèle
+## <a name="undoing-changes-to-the-model"></a><a name="Undo"></a> Annuler les modifications apportées au modèle
  Vous pouvez annuler et rétablir les modifications que vous avez apportées au modèle et aux diagrammes à l’aide des commandes **Annuler** et **rétablir** du menu **Edition** .
 
  **Chaque projet de modélisation a une seule pile de modifications.** Toutes les modifications que vous apportez au modèle et aux diagrammes sont conservées sur cette pile. La pile comprend également les modifications de focus d'un diagramme à un autre. La commande Annuler annule les modifications sur cette pile.
 
  Par exemple, supposez que vous effectuez les opérations suivantes : modification du diagramme 1 ; basculement du focus vers le diagramme 2 ; modification du diagramme 2. Si vous annulez les modifications, le premier clic sur Annuler annule la dernière modification, le second redéplace le focus vers le diagramme 1 et le troisième annule la modification apportée au diagramme 1.
 
- **La fermeture d’un diagramme tronque la pile des modifications.** Si vous fermez un diagramme, vous ne pouvez pas annuler les modifications que vous lui avez apportées, ni annuler les modifications précédentes apportées au modèle ou à l'un de ses diagrammes.
+ **La fermeture d'un diagramme tronque la pile de modifications.** Si vous fermez un diagramme, vous ne pouvez pas annuler les modifications que vous lui avez apportées, ni annuler les modifications précédentes apportées au modèle ou à l'un de ses diagrammes.
 
  **Vous ne pouvez pas annuler pendant la modification d’une propriété.** Pendant que vous modifiez une propriété dans la fenêtre Propriétés, ou dans une étiquette dans un diagramme, vous pouvez annuler uniquement les modifications que vous avez effectuées dans cette propriété. Terminez votre modification dans la propriété en appuyant sur Entrée ou annulez-la en appuyant sur Échap. Vous pourrez alors annuler les modifications dans le modèle et les diagrammes.
 
- **La fermeture d’un diagramme sans l’enregistrer peut ne pas avoir l’effet escompté.** Si vous apportez des modifications et fermez ensuite un diagramme sans l'enregistrer, vos modifications seront tout de même conservées dans le modèle. Nous vous recommandons de fermer le modèle entier si vous souhaitez le fermer sans l'enregistrer.
+ **Fermer un diagramme sans l'enregistrer peut ne pas avoir l'effet attendu.** Si vous apportez des modifications et fermez ensuite un diagramme sans l'enregistrer, vos modifications seront tout de même conservées dans le modèle. Nous vous recommandons de fermer le modèle entier si vous souhaitez le fermer sans l'enregistrer.
 
-## <a name="Sharing"></a>Partage d’éléments entre des diagrammes
+## <a name="sharing-elements-between-diagrams"></a><a name="Sharing"></a> Partage d’éléments entre des diagrammes
  Vous pouvez faire apparaître une instance spécifique d'un élément de modèle plusieurs fois dans vos diagrammes. Cela s'applique aux classes, interfaces, composants, cas d'usage et acteurs.
 
  Cela est utile si vous souhaitez afficher différents groupes de relations dans différents diagrammes. Par exemple, dans un diagramme, vous pouvez afficher les associations entre les classes Client et Adresse. Dans un autre diagramme, vous pouvez afficher une deuxième fois la classe Adresse, avec son association à Code postal.
@@ -234,7 +234,7 @@ Vous pouvez créer et modifier un modèle UML par l'intermédiaire des vues four
 > [!NOTE]
 > Si vous ajoutez à un diagramme des vues de deux éléments de modèle qui sont déjà connectées par une relation, une vue de la relation apparaît également dans le diagramme. Vous ne pouvez supprimer cette vue qu'en supprimant l'un des éléments du diagramme ou en supprimant la relation du modèle.
 
-## <a name="Copying"></a>Copie d’éléments et de groupes d’éléments associés
+## <a name="copying-elements-and-groups-of-related-elements"></a><a name="Copying"></a> Copie d’éléments et de groupes d’éléments associés
  Vous pouvez copier et coller des éléments de modèle, et copier et coller des groupes d'éléments et les relations entre eux.
 
 > [!NOTE]
@@ -247,7 +247,7 @@ Vous pouvez créer et modifier un modèle UML par l'intermédiaire des vues four
     > [!NOTE]
     > Vous ne pouvez pas copier des relations, sauf dans le cadre d'un groupe d'éléments.
 
-2. Dans le menu **Edition** , cliquez sur **copier**.
+2. Dans le menu **Edition** , cliquez sur **Couper**.
 
 3. Si vous souhaitez copier les éléments vers un autre diagramme, créez le nouveau diagramme ou ouvrez le diagramme existant.
 
@@ -270,7 +270,7 @@ Vous pouvez créer et modifier un modèle UML par l'intermédiaire des vues four
 
    Vous ne pouvez pas dupliquer un diagramme en le copiant et en le collant dans l'Explorateur de solutions.
 
-## <a name="Deleting"></a>Suppression d’un élément de modèle ou de ses vues
+## <a name="deleting-a-model-element-or-its-views"></a><a name="Deleting"></a> Suppression d’un élément de modèle ou de ses vues
  Certains types d'éléments (les classifieurs) peuvent être supprimés d'un diagramme sans être supprimés du modèle. Les classifieurs sont les éléments majeurs affichés sur les diagrammes de classes, de composants et de cas d'usage. Ils peuvent figurer dans plusieurs diagrammes. Pour ces types d’éléments, il existe deux commandes distinctes : **supprimer du diagramme** et **supprimer du modèle**.
 
  Par contre, quand vous supprimez une relation d'un diagramme, elle est toujours supprimée du modèle.
@@ -307,7 +307,7 @@ Vous pouvez créer et modifier un modèle UML par l'intermédiaire des vues four
 
      La relation est supprimée du modèle et de chaque diagramme où elle apparaît.
 
-## <a name="presentation"></a>Préparation d’un diagramme pour la présentation
+## <a name="preparing-a-diagram-for-presentation"></a><a name="presentation"></a> Préparation d’un diagramme pour la présentation
  Les fonctionnalités suivantes vous aident à attirer l'attention sur une partie spécifique de votre diagramme, à ajouter des explications ou à diviser un diagramme en différentes zones d'intérêt.
 
 - Vous pouvez copier une partie d'un diagramme dans un document Word, PowerPoint ou autre. Sélectionnez les formes et les connecteurs souhaités, cliquez avec le bouton droit, puis cliquez sur **copier**.
@@ -323,7 +323,7 @@ Vous pouvez créer et modifier un modèle UML par l'intermédiaire des vues four
 ### <a name="to-export-a-diagram-as-an-image"></a>Pour exporter un diagramme en tant qu'image
  Pour plus d’informations, consultez [exporter des diagrammes en tant qu’images](../modeling/export-diagrams-as-images.md).
 
-## <a name="extensions"></a>Extension des concepteurs UML
+## <a name="extending-the-uml-designers"></a><a name="extensions"></a> Extension des concepteurs UML
  Vous pouvez ajouter de nouvelles fonctionnalités aux outils UML et adapter la notation de diagramme à vos besoins. Pour plus d’informations, consultez [étendre des modèles et des diagrammes UML](../modeling/extend-uml-models-and-diagrams.md).
 
 ## <a name="see-also"></a>Voir aussi

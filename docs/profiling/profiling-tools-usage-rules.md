@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 1aeeb7e0a9061d72a07b718acde70b00dfcbba89
-ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/12/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88144673"
 ---
 # <a name="profiling-tools-usage-rules"></a>Règles d'utilisation des outils de profilage
