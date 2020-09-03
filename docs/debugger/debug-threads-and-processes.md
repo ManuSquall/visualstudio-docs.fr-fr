@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dcdaf083462b75485449cae05894681e2bb5c900
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72738381"
 ---
 # <a name="tools-to-debug-threads-and-processes-in-visual-studio"></a>Outils pour déboguer des threads et des processus dans Visual Studio
@@ -44,7 +44,7 @@ Les outils que vous devez utiliser dans [!INCLUDE[vsprvs](../code-quality/includ
 
 - Pour les threads, les principaux outils de débogage des threads sont la fenêtre **Threads** , les marqueurs de thread dans les fenêtres source, la fenêtre **Piles parallèles** , la fenêtre **Espion parallèle** et la barre d’outils **emplacement de débogage** .
 
-- Pour le code qui utilise la <xref:System.Threading.Tasks.Task> dans la [bibliothèque parallèle de tâches (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl), le [Runtime d’accès concurrentiel](/cpp/parallel/concrt/concurrency-runtime/) (code natif), les principaux outils pour le débogage d’applications multithread sont la fenêtre **Piles parallèles** , la **surveillance parallèle** et la fenêtre **tâches** (la fenêtre **tâches** prend également en charge l’objet de promesse JavaScript).
+- Pour le code qui utilise <xref:System.Threading.Tasks.Task> dans la [bibliothèque parallèle de tâches (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl), [le runtime d’accès concurrentiel](/cpp/parallel/concrt/concurrency-runtime/) (code natif), les principaux outils pour le débogage d’applications multithread sont la **fenêtre piles parallèles** , la fenêtre **Espion parallèle** et la fenêtre **tâches** (la fenêtre **tâches** prend également en charge l’objet de promesse JavaScript).
 
 - Pour déboguer des threads sur le GPU, l’outil principal est la fenêtre **Threads GPU** .
 
@@ -64,6 +64,6 @@ Les outils que vous devez utiliser dans [!INCLUDE[vsprvs](../code-quality/includ
 
 ## <a name="see-also"></a>Voir aussi
 
-- [S’attacher à des processus en cours d’exécution](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
+- [Joindre aux processus en cours d’exécution](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
 - [Déboguer les applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Débogage du code GPU](../debugger/debugging-gpu-code.md)

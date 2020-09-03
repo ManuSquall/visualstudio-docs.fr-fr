@@ -1,5 +1,5 @@
 ---
-title: 'Démarrage rapide : Déboguer le code HTML et CSS | Microsoft Docs'
+title: 'Démarrage rapide : déboguer du code HTML et CSS | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,13 +22,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: be85bd5c09d59df576d66cef6cf2d4e7e34876ab
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65687648"
 ---
-# <a name="quickstart-debug-html-and-css"></a>Démarrage rapide : déboguer du code HTML et CSS ;
+# <a name="quickstart-debug-html-and-css"></a>Démarrage rapide : déboguer du code HTML et CSS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.png « windows_and_phone_content »)  
@@ -37,11 +37,11 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
  Grâce au modèle de débogage interactif fourni par les outils d’inspection DOM, vous pouvez afficher et modifier le rendu du code HTML et CSS. Et cela, sans avoir à arrêter ni redémarrer le débogueur.  
   
- Dans cette rubrique :  
+ Dans cette rubrique :  
   
-- [Examen du modèle DOM en direct](#InspectingDOM)  
+- [Inspection du DOM actif](#InspectingDOM)  
   
-- [Selecting elements](#SelectingElements)  
+- [Sélection d’éléments](#SelectingElements)  
   
   Pour obtenir des informations supplémentaires sur l’utilisation de l’explorateur DOM, consultez les rubriques suivantes :  
   
@@ -49,15 +49,15 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
 - [Déboguer la disposition avec l’Explorateur DOM](../debugger/debug-layout-using-dom-explorer.md)  
   
-- [Afficher les écouteurs d’événements DOM](../debugger/view-dom-event-listeners.md)  
+- [Afficher les écouteurs d'événements DOM](../debugger/view-dom-event-listeners.md)  
   
 - [Actualiser une application (JavaScript)](../debugger/refresh-an-app-javascript.md)  
   
 - [Déboguer un contrôle WebView](../debugger/debug-a-webview-control.md)  
   
-  Pour plus d’informations sur les fonctionnalités, telles que l’utilisation de la fenêtre de JavaScript Console et en définissant des points d’arrêt, le débogage de JavaScript, consultez [Guide de démarrage rapide : Déboguer du code JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) et [déboguer des applications dans Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
+  Pour plus d’informations sur d’autres fonctionnalités de débogage JavaScript, telles que l’utilisation de la fenêtre de la console JavaScript et la définition de points d’arrêt, consultez [démarrage rapide : déboguer](../debugger/quickstart-debug-javascript-using-the-console.md) des applications JavaScript et [Déboguer des applications dans Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
   
-## <a name="InspectingDOM"></a> Examen du modèle DOM en direct  
+## <a name="inspecting-the-live-dom"></a><a name="InspectingDOM"></a> Examen du modèle DOM en direct  
  L’explorateur DOM affiche une vue de la page rendue ; utilisez l’explorateur DOM pour modifier des valeurs et afficher immédiatement les résultats. Cela vous permet de tester les modifications sans arrêter et redémarrer le débogueur. Le code source de votre projet ne change pas quand vous interagissez avec la page à l’aide de cette méthode. Ainsi, quand vous trouvez les corrections de code souhaitées, vous modifiez votre code source.  
   
 > [!TIP]
@@ -71,10 +71,10 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
 - Inspecter la façon dont les styles CSS ont été appliqués aux éléments de page et effectuer un suivi des règles qui ont été appliquées.  
   
-  Lorsque vous déboguez des applications, vous devez souvent sélectionner des éléments dans l’explorateur DOM. Quand vous sélectionnez un élément, les valeurs qui s’affichent sous les onglets dans la partie droite de l’explorateur DOM sont automatiquement mises à jour pour refléter l’élément sélectionné dans l’explorateur DOM. Voici les onglets : **Styles**, **Computed**, **Layout**. Les applications Windows Store prennent également en charge les onglets **Événements** et **Modifications** . Pour plus d’informations sur la sélection des éléments, consultez [Selecting elements](#SelectingElements).  
+  Lorsque vous déboguez des applications, vous devez souvent sélectionner des éléments dans l’explorateur DOM. Quand vous sélectionnez un élément, les valeurs qui s’affichent sous les onglets dans la partie droite de l’explorateur DOM sont automatiquement mises à jour pour refléter l’élément sélectionné dans l’explorateur DOM. Ces onglets sont les suivants : **Styles**, **Calculé**, **Disposition**. Les applications Windows Store prennent également en charge les onglets **Événements** et **Modifications** . Pour plus d’informations sur la sélection des éléments, consultez [Selecting elements](#SelectingElements).  
   
 > [!TIP]
-> Si la fenêtre de l’explorateur DOM est fermée, sélectionnez **Déboguer**>**Fenêtres** > **Explorateur DOM** pour la rouvrir. La fenêtre s’ouvre uniquement pendant une session de débogage de script.  
+> Si la fenêtre de l’Explorateur DOM est fermée, choisissez **Déboguer**l' > **Windows**  >  **Explorateur DOM** Windows pour la rouvrir. La fenêtre s’ouvre uniquement pendant une session de débogage de script.  
   
  Dans la procédure qui suit, nous examinerons le processus de débogage interactif d’une application à l’aide de l’explorateur DOM. Nous créerons une application qui utilise un contrôle `FlipView` , puis nous la déboguerons. L’application contient plusieurs erreurs.  
   
@@ -83,9 +83,9 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
 #### <a name="to-debug-by-inspecting-the-live-dom"></a>Pour déboguer en examinant le modèle DOM en direct  
   
-1. Créez une solution dans Visual Studio en sélectionnant **Fichier** > **Nouveau projet**.  
+1. Créez une nouvelle solution dans Visual Studio en choisissant **fichier**  >  **nouveau projet**.  
   
-2. Choisissez **JavaScript** > **Store**, puis **Applications Windows** ou **Applications Windows Phone**, puis sélectionnez **Application vide**.  
+2. Choisissez **JavaScript**  >  **magasin**JavaScript, applications **Windows** ou **applications Windows Phone**, puis choisissez **application vide**.  
   
 3. Tapez un nom pour le projet, comme `FlipViewApp`, puis choisissez **OK** pour créer l’application.  
   
@@ -172,9 +172,9 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
 7. Sélectionnez **Simulateur** ou **Emulator 8.1 WVGA 512 Mo** dans la liste déroulante située en regard du bouton **Démarrer le débogage** dans la barre d’outils **Déboguer** :  
   
-    ![Liste cible de débogage sélectionnez](../debugger/media/js-select-target.png "JS_Select_Target")  
+    ![Sélectionner la liste cible de débogage](../debugger/media/js-select-target.png "JS_Select_Target")  
   
-8. Choisissez **Déboguer** > **Démarrer le débogage**, ou appuyez sur F5, pour exécuter votre application en mode débogage.  
+8. Choisissez **Déboguer**  >  **Démarrer le débogage**ou appuyez sur F5 pour exécuter votre application en mode débogage.  
   
     L’application est ainsi exécutée dans le simulateur ou l’émulateur Windows Phone, mais l’écran affiché est en grande partie vide parce que le style contient quelques erreurs. La première image `FlipView` apparaît dans un petit carré non loin du milieu de l’écran.  
   
@@ -187,7 +187,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
 11. Dans la fenêtre de l’explorateur DOM, sélectionnez l’élément DIV de la section associée à l’ID `"fView"`. Utilisez les touches de direction pour afficher et sélectionner l’élément DIV approprié. (La touche de direction droite vous permet d’afficher les enfants d’un élément.)  
   
-     ![DOM Explorer](../debugger/media/js-dom-explorer.png "JS_DOM_Explorer")  
+     ![Explorateur DOM](../debugger/media/js-dom-explorer.png "JS_DOM_Explorer")  
   
     > [!TIP]
     > Vous pouvez aussi sélectionner l’élément DIV en bas à gauche de la fenêtre de la console JavaScript en tapant `select(fView)` à l’invite de commandes >> et en appuyant sur Entrée.  
@@ -202,14 +202,14 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
      L’illustration suivante montre l’onglet **Calculé** .  
   
-     ![Onglet calculé de l’Explorateur DOM](../debugger/media/js-dom-explorer-computed.png "JS_DOM_Explorer_Computed")  
+     ![Onglet Calculé de l'explorateur DOM](../debugger/media/js-dom-explorer-computed.png "JS_DOM_Explorer_Computed")  
   
 14. Dans la fenêtre principale de l’explorateur DOM, double-cliquez sur le style intraligne pour la hauteur et la largeur de l’élément DIV `fView` . Vous pouvez maintenant modifier les valeurs ici. Dans ce scénario, il est convenu de les supprimer complètement.  
   
 15. Sélectionnez `width: 100px;height: 100px;`, appuyez sur la touche Suppr, puis sur Entrée. Dès que vous appuyez sur Entrée, les nouvelles valeurs sont immédiatement répercutées dans le simulateur ou l’émulateur Windows Phone, même si vous n’avez pas arrêté votre session de débogage.  
   
     > [!IMPORTANT]
-    > Comme vous pouvez mettre à jour les attributs dans la fenêtre de l’explorateur DOM, vous pouvez également mettre à jour les valeurs affichées sous les onglets **Styles**, **Calculé**et **Disposition** . Pour plus d’informations, consultez [styles CSS déboguer à l’aide de l’Explorateur DOM](../debugger/debug-css-styles-using-dom-explorer.md) et [disposition de débogage à l’aide de l’Explorateur DOM](../debugger/debug-layout-using-dom-explorer.md).  
+    > Comme vous pouvez mettre à jour les attributs dans la fenêtre de l’explorateur DOM, vous pouvez également mettre à jour les valeurs affichées sous les onglets **Styles**, **Calculé**et **Disposition** . Pour plus d’informations, consultez [déboguer les styles CSS avec l’Explorateur DOM](../debugger/debug-css-styles-using-dom-explorer.md) et [Déboguer la disposition à l’aide de l’Explorateur DOM](../debugger/debug-layout-using-dom-explorer.md).  
   
 16. Basculez vers l’application en sélectionnant le simulateur ou l’émulateur Windows Phone, ou en utilisant les touches Alt+Tab.  
   
@@ -229,13 +229,13 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
      Sous l’onglet **Disposition** , les valeurs suivantes s’affichent :  
   
-    - Pour le simulateur : 320px (décalage) et 320px (marge).  
+    - pour le simulateur, 320 px (Décalage) et 320 px (Marge) ;  
   
-    - Pour l’émulateur Windows Phone : 100px (décalage) et 100px (marge).  
+    - pour l’émulateur Windows Phone, 100 px (Décalage) et 100 px (Marge).  
   
       L’illustration suivante montre l’apparence de l’onglet **Disposition** si vous utilisez l’émulateur Windows Phone (décalage et marge à 100 px).  
   
-      ![Onglet Disposition de l’Explorateur DOM](../debugger/media/js-dom-explorer-layout.png "JS_DOM_Explorer_Layout")  
+      ![Onglet Disposition de l'explorateur DOM](../debugger/media/js-dom-explorer-layout.png "JS_DOM_Explorer_Layout")  
   
       Cela ne semble pas correct. L’onglet **Calculé** indique aussi des valeurs de marge identiques.  
   
@@ -253,13 +253,13 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
 2. Ouvrez le fichier default.html et modifiez votre code source en définissant la hauteur et la largeur de l’élément DIV `"fView"` sur la valeur 100 %.  
   
-3. Sélectionnez le bouton **Actualiser l’application Windows** dans la barre d’outils Déboguer (ou appuyez sur F4). Le bouton se présente comme suit : ![Windows application bouton Actualiser](../debugger/media/js-refresh.png "JS_Refresh").  
+3. Sélectionnez le bouton **Actualiser l’application Windows** dans la barre d’outils Déboguer (ou appuyez sur F4). Le bouton se présente comme suit : ![bouton actualiser l’application Windows](../debugger/media/js-refresh.png "JS_Refresh").  
   
      Les pages d’application sont rechargées et le simulateur ou l’émulateur Windows Phone s’affiche au premier plan.  
   
      Pour plus d’informations sur la fonctionnalité d’actualisation, consultez [actualiser une application (JavaScript)](../debugger/refresh-an-app-javascript.md).  
   
-## <a name="SelectingElements"></a> Selecting elements  
+## <a name="selecting-elements"></a><a name="SelectingElements"></a> Selecting elements  
  Il existe trois façons de sélectionner des éléments DOM lors du débogage d’une application :  
   
 - Cliquez sur les éléments directement dans la fenêtre de l’explorateur DOM (ou utilisez les touches de direction).  
@@ -270,22 +270,22 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
   Quand vous utilisez la fenêtre de l’explorateur DOM pour sélectionner des éléments et placez le pointeur de la souris sur un élément, l’élément correspondant est mis en surbrillance dans l’application en cours d’exécution. Vous devez cliquer sur l’élément dans l’explorateur DOM pour le sélectionner, ou vous pouvez utiliser les touches de direction pour mettre en surbrillance et sélectionner des éléments. Vous pouvez également sélectionner des éléments dans l’explorateur DOM à l’aide du bouton **Sélectionner un élément** . L’illustration suivante présente le bouton **Sélectionner un élément** .  
   
-  ![Sélectionnez le bouton de l’élément dans l’Explorateur DOM](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button")  
+  ![Bouton Sélection d'un élément dans l'explorateur DOM](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button")  
   
   Lorsque vous cliquez sur **Sélectionner un élément** (ou appuyez sur Ctrl+B), le mode de sélection est modifié pour vous permettre de sélectionner un élément dans l’explorateur DOM en cliquant dessus dans l’application en cours d’exécution. Après un clic, le mode de sélection normale est restauré. Lorsque vous cliquez sur **Sélectionner un élément**, l’application s’affiche au premier plan et le curseur change pour refléter le nouveau mode de sélection. Quand vous cliquez sur l’élément encadré, l’explorateur DOM s’affiche au premier plan avec l’élément spécifié sélectionné.  
   
   Avant de choisir **Sélectionner un élément**, spécifiez si les éléments doivent être mis en surbrillance dans l’application en cours d’exécution en activant le bouton **Afficher les zones de surlignement de la page web pour l’élément sélectionné dans l’arborescence DOM** . Voici une illustration de ce bouton. Les zones de surlignement sont affichées par défaut.  
   
-  ![Page d’affichage web met en évidence le bouton](../debugger/media/js-dom-display-highlights-button.png "JS_DOM_Display_Highlights_Button")  
+  ![Bouton pour afficher les éléments essentiels du site web](../debugger/media/js-dom-display-highlights-button.png "JS_DOM_Display_Highlights_Button")  
   
   Quand vous choisissez de mettre en surbrillance des éléments, les éléments pointés dans le simulateur sont mis en surbrillance. Les couleurs des éléments mis en surbrillance correspondent au modèle de boîte qui apparaît sous l’onglet **Disposition** de l’explorateur DOM.  
   
 > [!NOTE]
 > La mise en surbrillance d’éléments par pointage n’est que partiellement prise en charge dans l’émulateur Windows Phone.  
   
- Pour obtenir un exemple qui montre comment sélectionner des éléments à l’aide de la **sélectionner un élément** bouton, consultez [styles CSS déboguer à l’aide de l’Explorateur DOM](../debugger/debug-css-styles-using-dom-explorer.md).  
+ Pour obtenir un exemple qui montre comment sélectionner des éléments à l’aide du bouton **Sélectionner un élément** , consultez [déboguer les styles CSS à l’aide de l’Explorateur DOM](../debugger/debug-css-styles-using-dom-explorer.md).  
   
-## <a name="BrowserSupport"></a> Navigateurs et plateformes pris en charge  
+## <a name="browser-and-platform-support"></a><a name="BrowserSupport"></a> Navigateurs et plateformes pris en charge  
  Les outils Visual Studio pour JavaScript, l’explorateur DOM et la fenêtre de la console JavaScript sont pris en charge sur les plateformes suivantes :  
   
 - Applications[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] et Windows Phone Store en JavaScript et HTML  
@@ -297,13 +297,13 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   Allez [ici](https://developer.microsoft.com/windows/downloads/sdk-archive) pour télécharger [!INCLUDE[win8](../includes/win8-md.md)] et Visual Studio.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
+ [Déboguer des applications dans Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
  [Déboguer les styles CSS à l’aide de l’Explorateur DOM](../debugger/debug-css-styles-using-dom-explorer.md)   
  [Déboguer la disposition à l’aide de l’Explorateur DOM](../debugger/debug-layout-using-dom-explorer.md)   
  [Afficher les écouteurs d’événements DOM](../debugger/view-dom-event-listeners.md)   
  [Actualiser une application (JavaScript)](../debugger/refresh-an-app-javascript.md)   
  [Déboguer un contrôle WebView](../debugger/debug-a-webview-control.md)   
  [Raccourcis clavier](../debugger/keyboard-shortcuts-html-and-javascript.md)   
- [JavaScript Console commands](../debugger/javascript-console-commands.md)   
+ [Commandes de la console JavaScript](../debugger/javascript-console-commands.md)   
  [Déboguer un exemple de code HTML, CSS et JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)   
  [Support technique et accessibilité](https://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)

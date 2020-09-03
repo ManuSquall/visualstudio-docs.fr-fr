@@ -7,10 +7,10 @@ ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: 1C7AC52E-754E-473F-A5B5-00C3A40DAACD
 ms.openlocfilehash: 2b5fd2fd115c4461659ba1b4f211e645367851d2
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67691227"
 ---
 # <a name="how-to-report-a-problem-in-visual-studio-for-mac"></a>Guide pratique pour signaler un problème avec Visual Studio pour Mac
@@ -49,7 +49,7 @@ Pour signaler un problème avec Visual Studio pour Mac, sélectionnez **Aide > S
 
    ![Signaler un nouveau problème](media/report-problem-image5.png)
 
-1. Sélectionnez **À côté** de passer à **l’onglet Pièces jointes Inclure.** Ici, vous pouvez capturer votre écran actuel pour l’envoyer à Microsoft. Pour joindre des fichiers journaux, cliquez sur l’icône ![Joindre les journaux](media/report-problem-attach-logs.png). Pour joindre d’autres captures d’écran et d’autres fichiers, cliquez sur l’icône ![Joindre un fichier](media/report-problem-attach-file.png).
+1. Sélectionnez **suivant** pour accéder à l’onglet **inclure les pièces jointes** . Ici, vous pouvez capturer votre écran actuel pour l’envoyer à Microsoft. Pour joindre des fichiers journaux, cliquez sur l’icône ![Joindre les journaux](media/report-problem-attach-logs.png). Pour joindre d’autres captures d’écran et d’autres fichiers, cliquez sur l’icône ![Joindre un fichier](media/report-problem-attach-file.png).
 
    ![Joindre une capture d’écran à un rapport de problème Visual Studio pour Mac](media/report-problem-image6.png)
 

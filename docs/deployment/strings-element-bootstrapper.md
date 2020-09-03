@@ -1,5 +1,5 @@
 ---
-title: '&lt;Chaînes&gt; élément (programme d’amorçage) | Microsoft Docs'
+title: '&lt;Strings &gt; , élément (programme d’amorçage) | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -19,14 +19,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a8bc56bf980bba6326b3615b6892ec555b795ec8
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66747414"
 ---
-# <a name="ltstringsgt-element-bootstrapper"></a>&lt;Chaînes&gt; élément (programme d’amorçage)
-Définit des chaînes localisées pour les noms de produits, les noms de package et les messages d’erreur d’installation.
+# <a name="ltstringsgt-element-bootstrapper"></a>&lt;Strings &gt; , élément (programme d’amorçage)
+Définit des chaînes localisées pour les noms de produits, les noms de packages et les messages d’erreur d’installation.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -40,19 +40,19 @@ Définit des chaînes localisées pour les noms de produits, les noms de package
 ```
 
 ## <a name="elements-and-attributes"></a>Éléments et attributs
- Le `Strings` élément est un enfant de le `Package` élément. Il a pas d’attributs.
+ L' `Strings` élément est un enfant de l' `Package` élément. Elle n’a pas d’attribut.
 
-## <a name="string"></a>Chaîne
- Le `String` élément est un enfant de le `Strings` élément. Un `Strings` élément peut avoir un ou plusieurs `String` éléments.
+## <a name="string"></a>String
+ L' `String` élément est un enfant de l' `Strings` élément. Un `Strings` élément peut avoir un ou plusieurs `String` éléments.
 
  `String` a l’attribut suivant.
 
 |Attribut|Description|
 |---------------|-----------------|
-|`Name`|Obligatoire. Le nom de la chaîne.|
+|`Name`|Obligatoire. Nom de la chaîne.|
 
 ## <a name="example"></a>Exemple
- L’exemple de code suivant spécifie toutes les chaînes en anglais pour le programme d’installation de .NET Framework.
+ L’exemple de code suivant spécifie toutes les chaînes en anglais pour le programme d’installation .NET Framework.
 
 ```xml
 <Strings>
@@ -74,4 +74,4 @@ Définit des chaînes localisées pour les noms de produits, les noms de package
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [\<Package > élément](../deployment/package-element-bootstrapper.md)
+- [\<Package> appartient](../deployment/package-element-bootstrapper.md)

@@ -1,5 +1,5 @@
 ---
-title: Mise à jour des zones de formulaire Outlook dans les projets migrés vers .NET Framework 4, 4.5
+title: Mettre à jour les zones de formulaire Outlook dans des projets migrés vers .NET Framework 4, 4,5
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,17 +13,17 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e7e300cd9f6f7d631a029310b01fbfdad7cb4686
-ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66836048"
 ---
-# <a name="update-form-regions-in-outlook-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Mettre à jour de zones de formulaire dans les projets Outlook que vous migrez vers le .NET Framework 4 ou .NET Framework 4.5
+# <a name="update-form-regions-in-outlook-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Mettez à jour les zones de formulaire dans les projets Outlook que vous migrez vers le .NET Framework 4 ou le .NET Framework 4,5
   Si l’infrastructure cible d’un projet de complément VSTO Outlook avec une zone de formulaire passe à [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou une version ultérieure, vous devez apporter quelques changements au code de zone de formulaire généré, ainsi qu’au code qui instancie certaines classes de zone de formulaire au moment de l’exécution.
 
-## <a name="update-the-generated-form-region-code"></a>Mettre à jour le code de région de formulaire généré
- Si la version cible de .NET Framework du projet est remplacée par [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou une version ultérieure, vous devez changer le code de zone de formulaire généré. Les changements que vous apportez ne sont pas les mêmes pour les zones de formulaire que vous avez créées dans Visual Studio, et les zones de formulaire que vous avez importées à partir d'Outlook. Pour plus d’informations sur les différences entre ces types de zones de formulaire, consultez [zones de formulaire Outlook créer](../vsto/creating-outlook-form-regions.md).
+## <a name="update-the-generated-form-region-code"></a>Mettre à jour le code de zone de formulaire généré
+ Si la version cible de .NET Framework du projet est remplacée par [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou une version ultérieure, vous devez changer le code de zone de formulaire généré. Les changements que vous apportez ne sont pas les mêmes pour les zones de formulaire que vous avez créées dans Visual Studio, et les zones de formulaire que vous avez importées à partir d'Outlook. Pour plus d’informations sur les différences entre ces types de zones de formulaire, consultez [créer des zones de formulaire Outlook](../vsto/creating-outlook-form-regions.md).
 
 ### <a name="to-update-the-generated-code-for-a-form-region-that-you-designed-in-visual-studio"></a>Pour mettre à jour le code généré d'une zone de formulaire que vous avez créée dans Visual Studio
 
@@ -103,13 +103,13 @@ ms.locfileid: "66836048"
     }
     ```
 
-5. Ajoutez un nouvel élément de zone de formulaire Outlook à votre projet. Ouvrez le fichier code-behind de la nouvelle zone de formulaire, recherchez les classes *VotreNouvelleZoneDeFormulaire*`Factory` et `WindowFormRegionCollection` dans le fichier, puis copiez ces classes vers le Presse-papiers.
+5. Ajoutez un nouvel élément de zone de formulaire Outlook à votre projet. Ouvrez le fichier code-behind de la nouvelle zone de formulaire, recherchez les *classes votrenouvellezonedeformulaire* `Factory` et `WindowFormRegionCollection` classes dans le fichier, puis copiez ces classes dans le presse-papiers.
 
 6. Supprimez la nouvelle zone de formulaire que vous avez ajoutée à votre projet.
 
-7. Dans le fichier code-behind de la zone de formulaire que vous mettez à jour pour qu'elle fonctionne dans le projet reciblé, localisez les classes *VotreZoneDeFormulaireInitiale*`Factory` et `WindowFormRegionCollection` , puis remplacez-les par le code que vous avez copié à partir de la nouvelle zone de formulaire.
+7. Dans le fichier code-behind de la zone de formulaire que vous mettez à jour pour qu’elle fonctionne dans le projet reciblé, localisez les classes *classes votrezonedeformulaireinitiale* `Factory` et `WindowFormRegionCollection` et remplacez-les par le code que vous avez copié à partir de la nouvelle zone de formulaire.
 
-8. Dans les classes *VotreNouvelleZoneDeFormulaire*`Factory` et `WindowFormRegionCollection` , recherchez toutes les références à la classe *VotreNouvelleZoneDeFormulaire* , puis remplacez chaque référence par la classe *VotreZoneDeFormulaireInitiale* . Par exemple, si la zone de formulaire que vous mettez à jour se nomme `SalesDataFormRegion` , et si la zone de formulaire que vous avez créée à l'étape 5 se nomme `FormRegion1`, remplacez toutes les références de `FormRegion1` par `SalesDataFormRegion`.
+8. Dans les classes *classes votrenouvellezonedeformulaire* `Factory` et `WindowFormRegionCollection` , recherchez toutes les références à la classe *classes votrenouvellezonedeformulaire* et modifiez chaque référence à la classe *classes votrezonedeformulaireinitiale* à la place. Par exemple, si la zone de formulaire que vous mettez à jour se nomme `SalesDataFormRegion` , et si la zone de formulaire que vous avez créée à l'étape 5 se nomme `FormRegion1`, remplacez toutes les références de `FormRegion1` par `SalesDataFormRegion`.
 
 #### <a name="to-update-the-generated-code-for-a-form-region-that-you-imported-from-outlook"></a>Pour mettre à jour le code généré d'une zone de formulaire que vous avez importée à partir d'Outlook
 
@@ -175,18 +175,18 @@ ms.locfileid: "66836048"
     this.olkTextBox1 = (Microsoft.Office.Interop.Outlook.OlkTextBox)GetFormRegionControl("OlkTextBox1");
     ```
 
-5. Ajoutez un nouvel élément de zone de formulaire Outlook à votre projet. Ouvrez le fichier code-behind de la nouvelle zone de formulaire, recherchez les classes *VotreNouvelleZoneDeFormulaire*`Factory` et `WindowFormRegionCollection` dans le fichier, puis copiez ces classes vers le Presse-papiers.
+5. Ajoutez un nouvel élément de zone de formulaire Outlook à votre projet. Ouvrez le fichier code-behind de la nouvelle zone de formulaire, recherchez les *classes votrenouvellezonedeformulaire* `Factory` et `WindowFormRegionCollection` classes dans le fichier, puis copiez ces classes dans le presse-papiers.
 
 6. Supprimez la nouvelle zone de formulaire que vous avez ajoutée à votre projet.
 
-7. Dans le fichier code-behind de la zone de formulaire que vous mettez à jour pour qu'elle fonctionne dans le projet reciblé, localisez les classes *VotreZoneDeFormulaireInitiale*`Factory` et `WindowFormRegionCollection` , puis remplacez-les par le code que vous avez copié à partir de la nouvelle zone de formulaire.
+7. Dans le fichier code-behind de la zone de formulaire que vous mettez à jour pour qu’elle fonctionne dans le projet reciblé, localisez les classes *classes votrezonedeformulaireinitiale* `Factory` et `WindowFormRegionCollection` et remplacez-les par le code que vous avez copié à partir de la nouvelle zone de formulaire.
 
-8. Dans les classes *VotreNouvelleZoneDeFormulaire*`Factory` et `WindowFormRegionCollection` , recherchez toutes les références à la classe *VotreNouvelleZoneDeFormulaire* , puis remplacez chaque référence par la classe *VotreZoneDeFormulaireInitiale* . Par exemple, si la zone de formulaire que vous mettez à jour se nomme `SalesDataFormRegion` , et si la zone de formulaire que vous avez créée à l'étape 5 se nomme `FormRegion1`, remplacez toutes les références de `FormRegion1` par `SalesDataFormRegion`.
+8. Dans les classes *classes votrenouvellezonedeformulaire* `Factory` et `WindowFormRegionCollection` , recherchez toutes les références à la classe *classes votrenouvellezonedeformulaire* et modifiez chaque référence à la classe *classes votrezonedeformulaireinitiale* à la place. Par exemple, si la zone de formulaire que vous mettez à jour se nomme `SalesDataFormRegion` , et si la zone de formulaire que vous avez créée à l'étape 5 se nomme `FormRegion1`, remplacez toutes les références de `FormRegion1` par `SalesDataFormRegion`.
 
-## <a name="instantiate-form-region-classes"></a>Instancier des classes de zone de formulaire
+## <a name="instantiate-form-region-classes"></a>Instancier les classes de zone de formulaire
  Vous devez modifier tout code qui instancie dynamiquement certaines classes de zone de formulaire. Dans les projets qui ciblent .NET Framework 3.5, vous pouvez instancier directement des classes de zone de formulaire telles que `Microsoft.Office.Tools.Outlook.FormRegionManifest`. Dans les projets qui ciblent [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou une version ultérieure, ces classes sont des interfaces que vous ne pouvez pas instancier directement.
 
- Si la version cible de .NET Framework du projet est remplacée par [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou une version ultérieure, vous devez instancier les interfaces à l'aide des méthodes fournies par la propriété `Globals.Factory`. Pour plus d’informations sur la `Globals.Factory` propriété, consultez [d’accès Global aux objets dans les projets Office](../vsto/global-access-to-objects-in-office-projects.md).
+ Si la version cible de .NET Framework du projet est remplacée par [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou une version ultérieure, vous devez instancier les interfaces à l'aide des méthodes fournies par la propriété `Globals.Factory`. Pour plus d’informations sur la `Globals.Factory` propriété, consultez [accès global aux objets dans les projets Office](../vsto/global-access-to-objects-in-office-projects.md).
 
  Le tableau suivant répertorie les types de zone de formulaire et la méthode à utiliser pour instancier les types dans les projets qui ciblent [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou une version ultérieure.
 
@@ -197,5 +197,5 @@ ms.locfileid: "66836048"
 |<xref:Microsoft.Office.Tools.Outlook.FormRegionManifest>|<xref:Microsoft.Office.Tools.Outlook.Factory.CreateFormRegionManifest%2A>|
 
 ## <a name="see-also"></a>Voir aussi
-- [Migrer des solutions Office vers .NET Framework 4 ou version ultérieure](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
+- [Migrer des solutions Office vers le .NET Framework 4 ou version ultérieure](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
 - [Créer des zones de formulaire Outlook](../vsto/creating-outlook-form-regions.md)

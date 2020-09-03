@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Exclure des fichiers de la build | Microsoft Docs'
+title: 'Comment : exclure des fichiers de la génération | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -14,13 +14,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d7aac21e1ee4d77453808090fc37a3fccaf77e1d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67821612"
 ---
-# <a name="how-to-exclude-files-from-the-build"></a>Procédure : Exclure des fichiers de la build
+# <a name="how-to-exclude-files-from-the-build"></a>Comment : exclure des fichiers de la build
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Dans un fichier projet, vous pouvez utiliser des caractères génériques pour inclure tous les fichiers d’un répertoire ou un ensemble imbriqué de répertoires comme des entrées d’une génération. Toutefois, il se peut que vous ne souhaitiez pas inclure un fichier du répertoire ou un répertoire d’un ensemble imbriqué de répertoires comme entrée d’une génération. Vous pouvez explicitement exclure ce fichier ou ce répertoire de la liste d’entrées. Il peut également s’agir d’un fichier d’un projet que vous ne souhaitez inclure que dans certaines conditions. Vous pouvez déclarer explicitement les conditions dans lesquelles un fichier est inclus dans une génération.  
@@ -126,5 +126,5 @@ Dans un fichier projet, vous pouvez utiliser des caractères génériques pour i
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Éléments](../msbuild/msbuild-items.md)   
- [MSBuild](msbuild.md) [Comment : sélectionner des fichiers dans une build](../msbuild/how-to-select-the-files-to-build.md)
+ [Contenus](../msbuild/msbuild-items.md)   
+ [MSBuild](msbuild.md) [How to: Select the Files to Build (Comment : sélectionner les fichiers à générer)](../msbuild/how-to-select-the-files-to-build.md)

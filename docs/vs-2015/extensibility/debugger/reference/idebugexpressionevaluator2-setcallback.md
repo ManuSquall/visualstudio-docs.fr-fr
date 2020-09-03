@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator2::SetCallback | Microsoft Docs
+title: 'IDebugExpressionEvaluator2 :: SetCallback | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8d6f715bb33afe051cdccffbf3219e062b606f57
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179923"
 ---
 # <a name="idebugexpressionevaluator2setcallback"></a>IDebugExpressionEvaluator2::SetCallback
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Permet l’évaluateur d’expression (EE) spécifier l’interface de rappel que le moteur du débogueur (dé) utilisera pour lire les paramètres de mesure.  
+Active l’évaluateur d’expression (EE) pour spécifier l’interface de rappel que le moteur du débogueur utilisera pour lire les paramètres de métrique.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -39,16 +39,16 @@ int SetCallback (
   
 #### <a name="parameters"></a>Paramètres  
  `pCallback`  
- [in] Interface à utiliser pour le rappel de paramètres.  
+ dans Interface à utiliser pour le rappel de paramètres.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode fournit une interface avec le Gestionnaire de débogage de session un évaluateur d’expression peut utiliser pour lire les paramètres de mesure. Il est utile dans le débogage distant pour lire les métriques sur le [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] ordinateur.  
+ Cette méthode fournit une interface au gestionnaire de débogage de session qu’un évaluateur d’expression peut utiliser pour lire les paramètres de métriques. Il est utile dans le débogage distant pour lire les métriques sur l' [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] ordinateur.  
   
 ## <a name="example"></a>Exemple  
- Les exemples suivants montrent comment implémenter cette méthode pour un **CEE** objet qui expose le [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md) interface.  
+ Les exemples suivants montrent comment implémenter cette méthode pour un objet **CEE** qui expose l’interface [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md) .  
   
 ```cpp#  
 HRESULT CEE::SetCallback(IDebugSettingsCallback2* in_pCallback)  

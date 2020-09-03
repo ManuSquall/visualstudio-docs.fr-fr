@@ -11,10 +11,10 @@ ms.assetid: 3bac375d-8bd5-41be-a8de-32eb33c5cfac
 caps.latest.revision: 20
 manager: jillfra
 ms.openlocfilehash: 15a3896f8a2010a063393d3a11c1ed3453a008d5
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65689097"
 ---
 # <a name="support-for-settings-categories"></a>Prise en charge des catégories de paramètres
@@ -51,7 +51,7 @@ Une catégorie de paramètres se compose d’un groupe d’options qui personnal
 > Le nom canonique n’apparaît pas dans une interface utilisateur. Il est utilisé pour associer un nom lisible à la catégorie de paramètres, un peu comme un identificateur programmatique (ProgID).  
   
 ### <a name="settings-category-attribute"></a>Attribut de catégorie de paramètres  
- Le <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> détermine le mappage des catégories aux points de paramètres personnalisés dans le **Assistant Importation et exportation paramètres** en associant une catégorie au VSPackage qui le fournit. Prenons le fragment de code suivant :  
+ Le <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> détermine le mappage des catégories aux points de paramètres personnalisés dans l' **Assistant importation et exportation de paramètres** en associant une catégorie au VSPackage qui le fournit. Prenons le fragment de code suivant :  
   
  [!code-csharp[VSSDKSupportForSettingsCategories#1](../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforsettingscategories/cs/vssdksupportforsettingscategoriespackage.cs#1)]
  [!code-vb[VSSDKSupportForSettingsCategories#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforsettingscategories/vb/vssdksupportforsettingscategoriespackage.vb#1)]  
@@ -61,7 +61,7 @@ Une catégorie de paramètres se compose d’un groupe d’options qui personnal
  Dans l’ **Assistant Importation et exportation de paramètres**, le point de paramètres se nomme My Settings. Quand le point de paramètres est sélectionné, la description, **Various Options**, s’affiche. Le nom et la description du point de paramètres sont extraits de ressources de chaînes localisées.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Création d’une Page d’Options](../extensibility/creating-an-options-page.md)   
- [Exemples d’extensibilité Visual Studio](../misc/vssdk-samples.md)   
+ [Création d’une page d’options](../extensibility/creating-an-options-page.md)   
+ [Exemples VSSDK](../misc/vssdk-samples.md)   
  [État du VSPackage](../misc/vspackage-state.md)   
  [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

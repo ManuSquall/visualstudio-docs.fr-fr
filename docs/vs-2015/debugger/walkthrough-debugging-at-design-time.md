@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Débogage au moment du Design | Microsoft Docs'
+title: 'Procédure pas à pas : débogage au moment du design | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,22 +24,22 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 54466cc3561c194199bbad2b35cd00433da2b0f3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149426"
 ---
-# <a name="walkthrough-debugging-at-design-time"></a>Procédure pas à pas : Débogage au moment du design
+# <a name="walkthrough-debugging-at-design-time"></a>Procédure pas à pas : débogage au moment du design
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous pouvez utiliser Visual Studio **immédiat** fenêtre pour exécuter une fonction ou une sous-routine pendant que votre application n’est pas en cours d’exécution. Si la fonction ou une sous-routine contient un point d’arrêt, Visual Studio s’arrête l’exécution au point approprié. Vous pouvez ensuite utiliser les fenêtres du débogueur pour examiner l’état de votre programme. Cette fonctionnalité est appelée débogage au moment du design.  
+Vous pouvez utiliser la fenêtre **exécution** Visual Studio pour exécuter une fonction ou une sous-routine pendant que votre application n’est pas en cours d’exécution. Si la fonction ou la sous-routine contient un point d’arrêt, Visual Studio interrompt l’exécution au point approprié. Vous pouvez ensuite utiliser les fenêtres du débogueur pour examiner l’état de votre programme. Cette fonctionnalité est appelée débogage au moment de la conception.  
   
  La procédure suivante montre comment vous pouvez utiliser cette fonctionnalité.  
   
-### <a name="to-hit-breakpoints-from-the-immediate-window"></a>Atteindre des points d’arrêt à partir de la fenêtre exécution  
+### <a name="to-hit-breakpoints-from-the-immediate-window"></a>Pour atteindre des points d’arrêt à partir de la fenêtre exécution  
   
-1. Collez le code suivant dans une application de console Visual Basic :  
+1. Collez le code suivant dans une application console Visual Basic :  
   
     ```  
     Module Module1  
@@ -63,23 +63,23 @@ Vous pouvez utiliser Visual Studio **immédiat** fenêtre pour exécuter une fon
     End Module  
     ```  
   
-2. Définissez un point d’arrêt sur la ligne qui lit, `s="Add BreakPoint Here"`.  
+2. Définissez un point d’arrêt sur la ligne qui lit, `s="Add BreakPoint Here"` .  
   
-3. Tapez la commande suivante dans le **immédiat** fenêtre : `?MyFunction<enter>`  
+3. Tapez la commande suivante dans la fenêtre **exécution** : `?MyFunction<enter>`  
   
 4. Vérifiez que le point d’arrêt a été atteint et que la pile des appels est exacte.  
   
-5. Sur le **déboguer** menu, cliquez sur **continuer**et vérifiez que vous êtes toujours en mode de conception.  
+5. Dans le menu **Déboguer** , cliquez sur **Continuer**et vérifiez que vous êtes toujours en mode création.  
   
-6. Tapez la commande suivante dans le **immédiat** fenêtre : `?MyFunction<enter>`  
+6. Tapez la commande suivante dans la fenêtre **exécution** : `?MyFunction<enter>`  
   
-7. Tapez la commande suivante dans le **immédiat** fenêtre : `?MySub<enter>`  
+7. Tapez la commande suivante dans la fenêtre **exécution** : `?MySub<enter>`  
   
-8. Vérifiez que vous atteignez le point d’arrêt et examinez la valeur de la variable statique `i` dans le **variables locales** fenêtre. Il doit avoir la valeur de 3.  
+8. Vérifiez que vous avez atteint le point d’arrêt, puis examinez la valeur de la variable statique `i` dans la fenêtre **variables locales** . Elle doit avoir la valeur 3.  
   
-9. Vérifiez que la pile des appels est exacte.  
+9. Vérifiez que la pile des appels est précise.  
   
-10. Sur le **déboguer** menu, cliquez sur **continuer**et vérifiez que vous êtes toujours en mode de conception.  
+10. Dans le menu **Déboguer** , cliquez sur **Continuer**et vérifiez que vous êtes toujours en mode création.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Sécurité du débogueur](../debugger/debugger-security.md)   

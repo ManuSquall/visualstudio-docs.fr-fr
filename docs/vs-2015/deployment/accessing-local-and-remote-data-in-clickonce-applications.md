@@ -1,5 +1,5 @@
 ---
-title: L’accès aux données locales et distantes dans les Applications ClickOnce | Microsoft Docs
+title: Accès aux données locales et distantes dans les applications ClickOnce | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -17,10 +17,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1ce6b6ee633e926709b0c15c2234077055600a07
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65688114"
 ---
 # <a name="accessing-local-and-remote-data-in-clickonce-applications"></a>Accès aux données locales et distantes dans les applications ClickOnce
@@ -31,7 +31,7 @@ La plupart des applications consomment ou produisent des données. [!INCLUDE[ndp
 ## <a name="local-data"></a>Données locales  
  Avec [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], vous pouvez charger et stocker des données localement à l'aide de l'une des méthodes suivantes :  
   
-- Répertoire de données[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]   
+- Répertoire de données[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]  
   
 - Stockage isolé  
   
@@ -46,10 +46,10 @@ La plupart des applications consomment ou produisent des données. [!INCLUDE[ndp
 > Quand une application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] est désinstallée, son répertoire de données est également supprimé. N'utilisez jamais le répertoire de données pour stocker les données gérées par l'utilisateur final, telles que les documents.  
   
 #### <a name="marking-data-files-in-a-clickonce-distribution"></a>Marquage des fichiers de données dans une distribution ClickOnce  
- Pour placer un fichier existant dans le répertoire de données, vous devez marquer le fichier existant en tant que fichier de données dans le fichier manifeste de votre application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] . Pour plus d'informations, voir [Procédure : Inclure un fichier de données dans une application ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
+ Pour placer un fichier existant dans le répertoire de données, vous devez marquer le fichier existant en tant que fichier de données dans le fichier manifeste de votre application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] . Pour plus d'informations, consultez [How to: Include a Data File in a ClickOnce Application](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
   
 #### <a name="reading-from-and-writing-to-the-data-directory"></a>Lecture et écriture dans le répertoire de données  
- La lecture dans le répertoire de données implique que votre application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] demande une autorisation d'accès en lecture. De la même façon, l'écriture dans le répertoire requiert une autorisation d'accès en écriture. Votre application reçoit automatiquement cette autorisation si elle est configurée pour s'exécuter avec un niveau de confiance totale. Pour plus d’informations sur l’élévation d’autorisations pour votre application à l’aide de l’élévation d’autorisations ou de déploiement d’applications approuvées, consultez [sécurisation des Applications ClickOnce](../deployment/securing-clickonce-applications.md).  
+ La lecture dans le répertoire de données implique que votre application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] demande une autorisation d'accès en lecture. De la même façon, l'écriture dans le répertoire requiert une autorisation d'accès en écriture. Votre application reçoit automatiquement cette autorisation si elle est configurée pour s'exécuter avec un niveau de confiance totale. Pour plus d’informations sur l’élévation d’autorisations pour votre application à l’aide de l’élévation d’autorisations ou du déploiement d’applications approuvées, consultez [sécurisation des applications ClickOnce](../deployment/securing-clickonce-applications.md).  
   
 > [!NOTE]
 > Si votre organisation n'utilise pas le déploiement d'applications approuvées et a désactivé l'élévation d'autorisations, la déclaration des autorisations échoue.  
@@ -59,7 +59,7 @@ La plupart des applications consomment ou produisent des données. [!INCLUDE[ndp
  [!code-csharp[ClickOnce.OpenDataFile#1](../snippets/csharp/VS_Snippets_Winforms/ClickOnce.OpenDataFile/CS/Form1.cs#1)]
  [!code-vb[ClickOnce.OpenDataFile#1](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnce.OpenDataFile/VB/Form1.vb#1)]  
   
- Pour plus d’informations sur le marquage des fichiers dans votre déploiement en tant que fichiers de données, consultez [Comment : Inclure un fichier de données dans une application ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
+ Pour plus d’informations sur le marquage des fichiers dans votre déploiement en tant que fichiers de données, consultez [How to: Include a Data File in a ClickOnce Application](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
   
  Vous pouvez également obtenir le chemin d'accès au répertoire de données en utilisant les variables appropriées sur la classe <xref:System.Windows.Forms.Application> , telles que <xref:System.Windows.Forms.Application.LocalUserAppDataPath%2A>.  
   
@@ -98,7 +98,7 @@ La plupart des applications consomment ou produisent des données. [!INCLUDE[ndp
 |Installation à partir d'un partage de fichiers|Ne peut pas accéder à tous les serveurs web|  
 |Installation à partir d'un CD-ROM|Peut accéder à tous les serveurs web|  
   
- Si votre application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] ne peut pas accéder à un serveur web en raison des restrictions de sécurité, l'application doit déclarer <xref:System.Net.WebPermission> pour ce site web. Pour plus d’informations sur l’augmentation des autorisations de sécurité pour un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application, consultez [sécurisation des Applications ClickOnce](../deployment/securing-clickonce-applications.md).  
+ Si votre application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] ne peut pas accéder à un serveur web en raison des restrictions de sécurité, l'application doit déclarer <xref:System.Net.WebPermission> pour ce site web. Pour plus d’informations sur l’amélioration des autorisations de sécurité pour une [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application, consultez [sécurisation des applications ClickOnce](../deployment/securing-clickonce-applications.md).  
   
 ### <a name="accessing-data-through-an-xml-web-service"></a>Accès aux données via un service web XML  
  Si vous exposez vos données en tant que service web XML, vous pouvez accéder aux données à l'aide d'un proxy de service web XML. Le proxy est une classe [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] que vous créez à l'aide de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Les opérations du service web XML, par exemple, la récupération de clients, le passage de commandes, etc., sont exposées en tant que méthodes sur le proxy. De cette façon, les services web sont beaucoup plus faciles à utiliser que les fichiers de texte brut ou XML.  
@@ -111,4 +111,4 @@ La plupart des applications consomment ou produisent des données. [!INCLUDE[ndp
  La plupart du temps, vous n'aurez pas besoin d'accéder directement à la base de données, mais plutôt via une application de serveur web écrite en [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] ou un service web XML. L'accès à la base de données de cette manière est généralement la meilleure méthode si votre application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] est déployée à partir d'un serveur web. Vous pouvez accéder au serveur dans un contexte de confiance partielle sans élever les autorisations de votre application.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour inclure un fichier de données dans une application ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)
+ [Comment : inclure un fichier de données dans une application ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)

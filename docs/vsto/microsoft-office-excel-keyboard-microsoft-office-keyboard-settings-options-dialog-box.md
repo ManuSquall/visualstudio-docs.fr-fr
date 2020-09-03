@@ -17,23 +17,23 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 090e943df2b61352c2342218c3c71c8f0e60eaad
-ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "66836034"
 ---
-# <a name="microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box"></a>Boîte de dialogue Options de clavier Microsoft Office Excel, paramètres du clavier Microsoft Office,
-  Microsoft Office Excel et Visual Studio prennent en charge les touches de raccourci. La même combinaison de touches de raccourci peut correspondre à des commandes différentes dans Excel et dans Visual Studio. Quand Excel est ouvert dans un projet au niveau du document dans Visual Studio, qu’une seule application à la fois reçoit les commandes de touches de raccourci. Par défaut, Visual Studio reçoit toutes les commandes de touches de raccourci, mais vous souhaitez qu’Excel les reçoive lorsque le document a le focus en sélectionnant **schéma de clavier dynamique**.
+# <a name="microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box"></a>Microsoft Office clavier Excel, Microsoft Office paramètres du clavier, boîte de dialogue Options
+  Microsoft Office Excel et Visual Studio gèrent les touches de raccourci. La même combinaison de touches de raccourci peut reposer pour différentes commandes dans Excel et dans Visual Studio. Quand Excel est ouvert dans un projet au niveau du document dans Visual Studio, une seule application à la fois reçoit les commandes de touches de raccourci. Par défaut, Visual Studio reçoit toutes les commandes de touches de raccourci, mais vous pouvez faire en sorte qu’Excel les reçoit lorsque le document a le focus en sélectionnant **schéma de clavier dynamique**.
 
- Si vous utilisez une touche de raccourci qui n’est pas affectée à une commande dans l’application qui gère les touches de raccourci actuellement, la touche de raccourci est passée à l’autre application.
+ Si vous utilisez une touche de raccourci qui n’est pas assignée à une commande de l’application qui gère actuellement les touches de raccourci, la touche de raccourci est transmise à l’autre application.
 
- L’option que vous sélectionnez restera en vigueur pour les projets Excel jusqu'à ce que vous le changiez. La sélection n’affecte pas les projets Microsoft Office Word ; Vous devez vous des modifications dans Word en utilisant les options de clavier Microsoft Office Word.
+ L’option que vous sélectionnez reste en vigueur pour les projets Excel jusqu’à ce que vous le modifiiez. La sélection n’affecte pas les projets Microsoft Office Word ; vous devez apporter des modifications à Word à l’aide des options de clavier Microsoft Office Word.
 
-## <a name="uielement-list"></a>Liste UIElement
- **Schéma de clavier Visual Studio** Visual Studio reçoit toutes les commandes de touches de raccourci, même si Excel a le focus. Par exemple, si vous appuyez sur la touche de fonction **F5** quand Excel a le focus, Visual Studio démarre le débogage de votre solution.
+## <a name="uielement-list"></a>Liste des éléments de l'interface utilisateur
+ **Schéma de clavier Visual Studio** Visual Studio reçoit toutes les commandes de touches de raccourci, même si Excel a le focus. Par exemple, si vous appuyez sur la touche de fonction **F5** alors qu’Excel a le focus, Visual Studio démarre le débogage de votre solution.
 
- **Schéma de clavier dynamique** Visual Studio reçoit les commandes de touches de raccourci uniquement lorsque celui-ci a le focus. Lorsqu’Excel a le focus, Excel reçoit toutes les commandes de touches de raccourci. Par exemple, si vous appuyez sur la touche de fonction **F5** quand Excel a le focus, Excel s’ouvre le **atteindre** boîte de dialogue. Si vous appuyez sur **F5** tandis que Visual Studio a le focus, Visual Studio démarre le débogage de votre solution.
+ **Schéma de clavier dynamique** Visual Studio reçoit des commandes de touche de raccourci uniquement lorsqu’il a le focus. Lorsqu’Excel a le focus, Excel reçoit toutes les commandes de touches de raccourci. Par exemple, si vous appuyez sur la touche de fonction **F5** alors qu’Excel a le focus, Excel ouvre la boîte **de dialogue atteindre** . Si vous appuyez sur **F5** alors que Visual Studio a le focus, Visual Studio démarre le débogage de votre solution.
 
 ## <a name="see-also"></a>Voir aussi
-- [Boîte de dialogue Options de clavier Microsoft Office Word, paramètres du clavier Microsoft Office,](../vsto/microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md)
+- [Microsoft Office clavier Word, Microsoft Office paramètres du clavier, boîte de dialogue Options](../vsto/microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md)

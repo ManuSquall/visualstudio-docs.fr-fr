@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6ab66089de25b7648b13e1ba05f88ab55b7868df
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348026"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Surveiller les variables avec les fenêtres espion et espion Express
@@ -68,7 +68,7 @@ int main()
 
 1. Dans la fenêtre **Espion** , sélectionnez une ligne vide, puis tapez variable `a` . Procédez de la même façon pour `b` et `c` .
 
-   ![Surveiller des variables](../debugger/media/watchvariables.png "WatchVariables")
+   ![Variables espion](../debugger/media/watchvariables.png "WatchVariables")
 
 1. Poursuivez le débogage en sélectionnant étape de **débogage**  >  **dans** ou en appuyant sur **F11** si nécessaire pour avancer. Les valeurs des variables dans la fenêtre **Espion** changent à mesure que vous itérez au sein de la `for` boucle.
 
@@ -116,7 +116,7 @@ Vous pouvez également activer/désactiver les noms de propriété et exclure le
 
 ::: moniker-end
 
-### <a name="refresh-watch-values"></a><a name="bkmk_refreshWatch"></a>Actualiser les valeurs de la surveillance
+### <a name="refresh-watch-values"></a><a name="bkmk_refreshWatch"></a> Actualiser les valeurs de la surveillance
 
 Une icône d’actualisation (flèche circulaire) peut apparaître dans la fenêtre **Espion** lorsqu’une expression est évaluée. L’icône d’actualisation indique une erreur ou une valeur obsolète.
 
@@ -153,7 +153,7 @@ Pour illustrer l’utilisation de l’icône d’actualisation :
 
 1. Pour actualiser la valeur, sélectionnez l’icône d’actualisation ou appuyez sur la barre d’espace. Le débogueur réévalue l’expression.
 
-### <a name="expression-side-effects"></a><a name="bkmk_sideEffects"></a>Effets secondaires de l’expression
+### <a name="expression-side-effects"></a><a name="bkmk_sideEffects"></a> Effets secondaires de l’expression
 
 L’évaluation de certaines expressions peut modifier la valeur d’une variable ou affecter l’état de votre application. Par exemple, l’évaluation de l’expression suivante modifie la valeur de `var1`:
 
@@ -169,7 +169,7 @@ Une façon d’empêcher la désignation des effets secondaires est de désactiv
 
 Pour C# uniquement, lorsque l’évaluation des propriétés ou des appels de fonction implicite est désactivée, vous pouvez forcer l’évaluation en ajoutant le modificateur de format **AC** à un **nom** de variable dans la fenêtre **Espion** . Consultez [spécificateurs de format en C#](../debugger/format-specifiers-in-csharp.md).
 
-## <a name="use-object-ids-in-the-watch-window-c-and-visual-basic"></a><a name="bkmk_objectIds"></a>Utiliser les ID d’objet dans le Fenêtre Espion (C# et Visual Basic)
+## <a name="use-object-ids-in-the-watch-window-c-and-visual-basic"></a><a name="bkmk_objectIds"></a> Utiliser les ID d’objet dans le Fenêtre Espion (C# et Visual Basic)
 
 Vous pouvez parfois observer le comportement d’un objet spécifique. Par exemple, vous pouvez souhaiter effectuer le suivi d’un objet référencé par une variable locale une fois que cette variable est hors de portée. En C# et Visual Basic, vous pouvez créer des ID d’objet pour des instances spécifiques de types référence et les utiliser dans la fenêtre **Espion** et dans les conditions de point d’arrêt. L’ID d’objet est généré par les services de débogage du Common Language Runtime (CLR) et associé à l’objet.
 

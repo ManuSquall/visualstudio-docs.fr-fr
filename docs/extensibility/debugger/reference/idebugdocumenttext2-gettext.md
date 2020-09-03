@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText2::GetText (fr) Microsoft Docs
+title: 'IDebugDocumentText2 :: GetText | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 2429bdf3f09eff168210a7b835a9e506d74d63ea
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731575"
 ---
 # <a name="idebugdocumenttext2gettext"></a>IDebugDocumentText2::GetText
@@ -47,22 +47,22 @@ int GetText(
 
 ## <a name="parameters"></a>Paramètres
 `pos`\
-[dans] Une structure [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) qui indique l’emplacement du texte à récupérer.
+dans Structure [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) qui indique l’emplacement du texte à récupérer.
 
 `cMaxChars`\
-[dans] Le nombre maximum de caractères du texte à récupérer.
+dans Nombre maximal de caractères du texte à récupérer.
 
 `pText`\
-[dans, dehors] Un pointeur vers un tampon qui doit être rempli avec le texte désiré. Ce tampon doit être en `cMaxChars` mesure de contenir au moins un nombre de caractères larges.
+[in, out] Pointeur vers une mémoire tampon qui doit être remplie avec le texte souhaité. Cette mémoire tampon doit pouvoir contenir au moins un `cMaxChars` nombre de caractères larges.
 
 `pcNumChars`\
-[out] Retourne le nombre de caractères réellement récupérés.
+à Retourne le nombre de caractères réellement récupérés.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="example"></a>Exemple
-Cet exemple montre comment cette méthode peut être appelée à partir de C.
+Cet exemple montre comment cette méthode peut être appelée à partir de C#.
 
 ```csharp
 using System.Runtime.Interop.Services;

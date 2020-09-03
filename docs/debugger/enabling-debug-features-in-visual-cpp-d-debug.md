@@ -1,5 +1,5 @@
 ---
-title: Activation des fonctionnalités de C++ débogage dans les projets (-D_DEBUG) | Microsoft Docs
+title: Activation des fonctionnalités de débogage dans les projets C++ (-D_DEBUG) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -25,13 +25,13 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 19d341cba47e0a3d2259cc57d239c63420095347
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72737958"
 ---
-# <a name="enabling-debug-features-in-c-projects-d_debug"></a>Activation des fonctionnalités de C++ débogage dans les projets (/D_DEBUG)
+# <a name="enabling-debug-features-in-c-projects-d_debug"></a>Activation des fonctionnalités de débogage dans les projets C++ (/D_DEBUG)
 En [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], les fonctionnalités de débogage comme les assertions sont activées quand vous compilez votre programme avec le symbole **_DEBUG** défini. Vous pouvez définir **_DEBUG** de deux façons différentes :
 
 - Spécifiez **#define _DEBUG** dans votre code source, ou

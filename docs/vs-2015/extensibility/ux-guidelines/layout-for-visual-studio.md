@@ -1,5 +1,5 @@
 ---
-title: Mise en page
+title: Layout
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -9,152 +9,152 @@ caps.latest.revision: 3
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 09656b9afac82eec8981f8573af87391c99a3688
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179719"
 ---
-# <a name="layout-for-visual-studio"></a>Mise en page pour Visual Studio
+# <a name="layout-for-visual-studio"></a>Présentation pour Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La majorité des boîtes de dialogue Visual Studio sont [mise en page de la boîte de dialogue utilitaire](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), qui sont l’unthemed boîtes de dialogue de cette norme suivi [principes de mise en page de boîte de dialogue Windows Desktop](https://msdn.microsoft.com/library/windows/desktop/dn742499\(v=vs.85\).aspx). Lorsque Visual Studio s’à actualiser son interface utilisateur, certaines des boîtes de dialogue plus apparents ont une nouvelle conception qui établit les expériences comme définition de produit. Ces [mise en page de boîte de dialogue à thème](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) ont une apparence à thème.
+La plupart des boîtes de dialogue Visual Studio sont [en mode de boîte de dialogue utilitaire](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), qui sont les boîtes de dialogue qui suivent les principes de présentation standard de la [boîte de dialogue Windows Desktop](https://msdn.microsoft.com/library/windows/desktop/dn742499\(v=vs.85\).aspx). À mesure que Visual Studio se déplace pour actualiser son interface utilisateur, certaines des boîtes de dialogue plus importantes ont une nouvelle conception qui les établit en tant qu’expériences de définition de produit. La [disposition](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) de ces boîtes de dialogue à thème a un aspect à thème.
 
-## <a name="BKMK_UtilityDialogLayout"></a> Mise en page de boîte de dialogue utilitaire
+## <a name="utility-dialog-layout"></a><a name="BKMK_UtilityDialogLayout"></a> Disposition de la boîte de dialogue utilitaire
 
-- Tous les contrôles dans une boîte de dialogue Utilitaire doivent commencer en haut/gauche et vers le bas de flux.
+- Tous les contrôles d’une boîte de dialogue utilitaire doivent démarrer en haut/à gauche et circuler vers le bas.
 
-- Centre jamais des contrôles dans une boîte de dialogue pour remplir une zone importante.
+- Ne jamais centrer les contrôles sur une boîte de dialogue pour remplir une grande zone.
 
-- Utiliser la police d’environnement pour tout texte de la boîte de dialogue. Lorsque vous écrivez une spécification visual, spécifiez la police d’environnement au lieu de sélectionner une police particulière et la taille. Consultez [la police d’environnement](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont).
+- Utilisez la police d’environnement pour tout le texte de la boîte de dialogue. Lors de l’écriture d’une spécification visuelle, spécifiez la police d’environnement au lieu de sélectionner une police et une taille particulières. Consultez [la police de l’environnement](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont).
 
-- Utiliser l’espacement du contrôle cohérent et le positionnement pour prendre en charge l’objectif de qualité dans savoir-faire.
+- Utilisez un espace et un emplacement de contrôle cohérents pour soutenir l’objectif de la qualité de l’artisan.
 
-- Boîtes de dialogue peuvent devenir plus complexes à partir d’un plus grand nombre de contrôles, une unique juxtaposition des contrôles ou les deux. Pour ces situations complexes, permettre suffisamment d’espace entre les regroupements de contrôle à un flux logique d’analyse de l’utilisateur.
+- Les boîtes de dialogue peuvent devenir plus complexes à partir d’un plus grand nombre de contrôles, d’un juxtaposition unique de contrôles, ou des deux. Pour ces situations complexes, prévoyez un espace suffisant entre les regroupements de contrôle pour permettre à l’utilisateur d’effectuer un traitement logique à analyser.
 
-### <a name="utility-dialog-layout-examples"></a>Exemples de mise en page de boîte de dialogue utilitaire
+### <a name="utility-dialog-layout-examples"></a>Exemples de mise en page de la boîte de dialogue utilitaire
  Toutes les dimensions sont exprimées en pixels.
 
  ![Espacement de boîte de dialogue pour les étiquettes au-dessus des contrôles](../../extensibility/ux-guidelines/media/0801-a-utilityspacingabove.png "0801-a_UtilitySpacingAbove")
 
- **Figure 08.01-a : Instructions de l’espacement des boîtes de dialogue utilitaire avec les étiquettes au-dessus des contrôles**
+ **Figure 08,01-a : instructions d’espacement pour les boîtes de dialogue d’utilitaire avec des étiquettes au-dessus des contrôles**
 
  ![Espacement de boîte de dialogue pour les étiquettes à gauche des contrôles](../../extensibility/ux-guidelines/media/0801-b-utilityspacingleft.png "0801-b_UtilitySpacingLeft")
 
- **Figure 08.01-b : Instructions de l’espacement des boîtes de dialogue utilitaire avec des étiquettes à gauche des contrôles**
+ **Figure 08,01-b : instructions d’espacement pour les boîtes de dialogue d’utilitaire avec des étiquettes à gauche de contrôles**
 
-### <a name="layout-details"></a>Détails de la mise en page
+### <a name="layout-details"></a>Détails de la disposition
 
 #### <a name="margins"></a>Marges
 
 - Toutes les boîtes de dialogue doivent avoir une bordure de 12 pixels autour de tous les bords.
 
-- Marges dans un cadre de groupe doivent être 9 pixels du bord de l’image.
+- Les marges dans un cadre de groupe doivent être comprises entre 9 pixels et le bord du cadre.
 
-- Marges dans un contrôle onglet doivent être 6 pixels du bord du contrôle onglet.
+- Les marges dans un contrôle Tab doivent être situées à 6 pixels du bord du contrôle Tab.
 
 #### <a name="command-buttons"></a>Boutons de commande
 
-- Boutons de commande fonctionnent sur le frame de boîte de dialogue, pas sur le contenu. Ils doivent être placés dans la partie inférieure droite et doivent avoir suffisamment d’espace variable ci-dessus pour définir les boutons distinctes.
+- Les boutons de commande fonctionnent sur le cadre de la boîte de dialogue, et non sur le contenu. Ils doivent être placés en bas à droite et doivent disposer de suffisamment d’espace pour définir les boutons séparément.
 
-- S’il existe des boutons horizontaux qui opèrent au sein de la boîte de dialogue, la configuration de bouton de commande alternatif est une pile verticale en haut à droite. Consultez [des boutons de commande intérieurs](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_InteriorCommandButtons) ci-dessous.
+- S’il existe des boutons horizontaux qui fonctionnent dans la boîte de dialogue, l’autre configuration du bouton de commande est une pile verticale en haut à droite. Consultez les [boutons de commande intérieurs](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_InteriorCommandButtons) ci-dessous.
 
-- L’espace à gauche des boutons de commande (gauche/centre en bas de la boîte de dialogue) est considéré comme partie de la « bande » des contrôles d’opération de boîte de dialogue. La seule chose qui doit empiéter sur cet espace est un lien d’aide correspondant à la tâche globale ou de la boîte de dialogue.
+- L’espace à gauche des boutons de commande (en bas à gauche/au centre de la boîte de dialogue) est considéré comme faisant partie de la « bande » des contrôles d’opération de dialogue. La seule chose qui devrait être à l’abri de cet espace est un lien d’aide qui concerne la tâche ou la boîte de dialogue globale.
 
-- Boutons de commande doit être x 23 75 pixels.
+- Les boutons de commande doivent être 75x23 pixels.
 
-- Boutons de commande doit être 6 pixels uns des autres.
+- Les boutons de commande doivent être espacés de 6 pixels.
 
   ![Alignement des boutons de base](../../extensibility/ux-guidelines/media/0801-c-buttonalign.png "0801-c_ButtonAlign")
 
-  **Figure 08.01-c : Alignement des boutons de base**
+  **Figure 08,01-c : alignement du bouton de base**
 
 #### <a name="labels"></a>Étiquettes
 
 - Aligner à gauche toutes les étiquettes.
 
-- Pour les étiquettes qui se trouvent au-dessus d’un contrôle, ils doivent aligner à gauche précisément avec le contrôle en dessous et le bas de l’étiquette doit être de 5 pixels au-dessus du haut de l’autre contrôle (par exemple, une zone de liste déroulante).
+- Pour les étiquettes qui se trouvent au-dessus d’un contrôle, elles doivent s’aligner avec précision avec le contrôle situé au-dessous et le bas de l’étiquette doit être de 5 pixels au-dessus de l’autre contrôle (par exemple, une zone de liste modifiable).
 
-- Pour les étiquettes qui se trouvent à gauche des contrôles, la largeur minimale entre l’étiquette et le contrôle d’entrée est de 10 pixels. Une deuxième colonne implicite doit être établie pour aligner les zones de texte, zones de liste déroulante ou d’autres contrôles.
+- Pour les étiquettes qui se trouvent à gauche des contrôles, la largeur minimale entre l’étiquette et le contrôle d’entrée est de 10 pixels. Une deuxième colonne implicite doit être établie pour aligner les zones de texte, les zones de liste déroulante ou d’autres contrôles.
 
-- Étiquettes adoptent une majuscule et sont suivies par un signe deux-points. Consultez [style de texte](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).
+- Les étiquettes sont en majuscules et sont suivies d’un signe deux-points. Voir [style de texte](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).
 
 #### <a name="distance-between-controls"></a>Distance entre les contrôles
- Contrôles de pile raisonnablement. Il n’existe aucune règle absolue pour l’espacement entre les contrôles empilées. La précision entre les contrôles peut-être varier légèrement entre les boîtes de dialogue. L’espacement recommandée est 20 pixels pour les paires de contrôle/étiquette verticale et 9 pixels pour les paires de contrôle/étiquettes horizontales. L’espacement du contrôle minimal pour les paires horizontales est 6 pixels.
+ Contrôles de pile raisonnablement. Il n’existe pas d’indications absolues pour l’espacement entre les contrôles empilés. L’étanchéité entre les contrôles peut varier légèrement entre les boîtes de dialogue. L’espacement recommandé est de 20 pixels pour les paires contrôle/étiquette verticale, et de 9 pixels pour les paires contrôle/étiquette horizontales. L’espacement de contrôle minimal pour les paires horizontales est de 6 pixels.
 
- ![Recommandé de distance entre les contrôles](../../extensibility/ux-guidelines/media/0801-d-controldistance.png "0801-d_ControlDistance")
+ ![Distance recommandée entre les contrôles](../../extensibility/ux-guidelines/media/0801-d-controldistance.png "0801-d_ControlDistance")
 
- **Figure 08.01-d : Recommandations pour la distance entre les contrôles**
+ **Figure 08,01-d : recommandations relatives à la distance entre les contrôles**
 
-#### <a name="control-indentation"></a>Mise en retrait du contrôle
- Lorsque les contrôles sont imbriqués, aligner les contrôles internes horizontalement avec le bord gauche du contrôle ci-dessus, généralement l’étiquette.
+#### <a name="control-indentation"></a>Contrôler la mise en retrait
+ Lorsque les contrôles sont imbriqués, alignez les contrôles internes horizontalement avec le bord gauche du contrôle ci-dessus, généralement l’étiquette.
 
- ![Imbriqué alignement](../../extensibility/ux-guidelines/media/0801-e-controlalign.png "0801-e_ControlAlign")
+ ![Alignement des contrôles imbriqués](../../extensibility/ux-guidelines/media/0801-e-controlalign.png "0801-e_ControlAlign")
 
- **Figure 08.01-e : Alignement des contrôles imbriqués**
+ **Figure 08,01-e : alignement du contrôle imbriqué**
 
 #### <a name="control-width"></a>Largeur du contrôle
- La largeur d’une zone de texte ou d’autres contrôles similaires doit être pas plue de l’entrée moyenne pour le champ. La moyenne des mots anglais sont cinq caractères. Par exemple, une zone de texte qui requiert un nom de chemin d’accès long devrait être aussi longue que la disposition horizontale permet, tandis que d’une liste déroulante pour les noms de plateforme doivent uniquement avoir une longueur qui autorise l’entrée la plus longue.
+ La largeur d’une zone de texte ou d’autres contrôles similaires ne doit pas être supérieure à l’entrée moyenne du champ. Le mot anglais moyen est de cinq caractères. Par exemple, une zone de texte qui requiert un long nom de chemin d’accès doit être aussi longue que la disposition horizontale, tandis qu’une liste déroulante pour les noms de plateformes doit uniquement être une longueur qui autorise l’entrée la plus longue.
 
-#### <a name="helper-text"></a>Texte d’aide
+#### <a name="helper-text"></a>Texte d’assistance
 
-- Une boîte de dialogue peut afficher le texte d’assistance qui fournit plus d’informations sur l’objectif de la boîte de dialogue. En règle générale, cela se trouve en haut et peut être des phrases de 1 à 2.
+- Une boîte de dialogue peut afficher du texte d’assistance qui fournit des informations supplémentaires sur l’objectif de la boîte de dialogue. Cela se situe généralement en haut et peut être de 1-2 phrases.
 
-- La longueur de ligne doit être une largeur à l’aise pour un utilisateur à analyser et à lire. Une boîte de dialogue de taille moyenne doit être pas plus de 550 pixels de large.
+- La longueur de ligne doit être une largeur confortable pour l’analyse et la lecture d’un utilisateur. Une boîte de dialogue de taille moyenne ne doit pas dépasser 550 pixels de largeur.
 
-#### <a name="BKMK_InteriorCommandButtons"></a> Boutons de commande intérieurs
- Dans les boîtes de dialogue plus complexes, un contrôle interne peut avoir ses propres boutons associés, qui peuvent affecter l’emplacement où se trouvent les boutons de validation de la boîte de dialogue.
+#### <a name="interior-command-buttons"></a><a name="BKMK_InteriorCommandButtons"></a> Boutons de commande intérieurs
+ Dans les boîtes de dialogue plus complexes, un contrôle interne peut avoir ses propres boutons associés, ce qui peut affecter l’emplacement des boutons de validation de la boîte de dialogue.
 
-- Utilisez un alignement vertical (colonne) de l’intérieur boutons lorsque **OK**/**Annuler** est orienté horizontalement dans le coin inférieur droit.
+- Utilisez un alignement vertical (colonne) de boutons intérieurs lorsque l’opération **OK** / sur**Annuler** est orientée horizontalement dans le coin inférieur droit.
 
-- Utilisez un alignement horizontal (ligne) de l’intérieur boutons lorsque **OK**/**Annuler** est orienté verticalement dans le coin supérieur droit. Cette situation est moins courante.
+- Utilisez un alignement horizontal (ligne) de boutons intérieurs lorsque **OK** / **Annuler** est orienté verticalement dans le coin supérieur droit. Cette situation est moins courante.
 
-- Taille du bouton intérieurs doit cibler la taille des boutons standard de 75 x 23 pixels, correspondant à la taille de **OK**/**Annuler** boutons lorsque cela est possible. Si une étiquette de bouton rend le bouton de dépassement de la taille de bouton standard, les autres boutons dans cet ensemble doivent s’aligner avec cette taille plus large.
+- La taille du bouton intérieur doit viser la taille de bouton standard de 75x23 pixels, ce **qui correspond à la taille des** / boutons**Annuler** lorsque cela est possible. Si une étiquette de bouton fait passer le bouton au-delà de la taille de bouton standard, les autres boutons de cet ensemble doivent s’aligner sur cette taille plus grande.
 
-  ![Boutons horizontaux OK et annuler](../../extensibility/ux-guidelines/media/0801-f-horizokcan.png "0801-f_HorizOKCan")
+  ![Boutons OK et Annuler horizontaux](../../extensibility/ux-guidelines/media/0801-f-horizokcan.png "0801-f_HorizOKCan")
 
-  **Figure 08.01-f: Boutons intérieurs verticales avec horizontal OK/Annuler**
+  **Figure 08,01-f : boutons intérieurs verticaux avec horizontal OK/Annuler**
 
-  ![Boutons verticale OK et annuler](../../extensibility/ux-guidelines/media/0801-g-vertokcan.png "0801-g_VertOKCan")
+  ![Boutons OK et Annuler verticaux](../../extensibility/ux-guidelines/media/0801-g-vertokcan.png "0801-g_VertOKCan")
 
-  **Figure 08.01-g : Boutons intérieurs horizontales avec OK/Annuler verticaux**
+  **Figure 08,01-g : boutons intérieurs horizontaux avec vertical OK/Annuler**
 
 #### <a name="browse-button"></a>[Parcourir...] bouton
- **[Parcourir...]**  boutons qui suivent une zone de texte énoncez à « Parcourir... » dans sa totalité, y compris les points de suspension. Si l’espace est étroit ou il existe plusieurs **[Parcourir...]**  boutons à l’écran, le bouton peut être réduit à simplement les points de suspension.
+ **[Parcourir...]** les boutons qui suivent une zone de texte doivent épeler « parcourir... » entièrement, y compris les points de suspension. Si l’espace est étroit ou s’il y a plusieurs boutons **[Parcourir...]** sur l’écran, le bouton peut être réduit uniquement aux points de suspension.
 
-## <a name="BKMK_ThemedDialogLayout"></a> Mise en page de boîte de dialogue à thème
- Boîtes de dialogue à thème dans Visual Studio ont une apparence plus claire et offrent davantage d’espace blanc. Typographie fournit plus l’accent et centres d’intérêt, offrant plus ouvert interligne et une variante de tailles de police et les poids. Si possible, les barres de titre et de chrome ont été réduites ou supprimés. La disposition de ces boîtes de dialogue doit suivre ce modèle de base :
+## <a name="themed-dialog-layout"></a><a name="BKMK_ThemedDialogLayout"></a> Disposition de la boîte de dialogue à thème
+ Les boîtes de dialogue à thème dans Visual Studio ont une apparence plus claire et offrent davantage d’espace blanc. La typographie offre davantage d’importance et d’intérêt, offre davantage d’espacement ouvert et une variation des tailles et des poids des polices. Lorsque cela est possible, les barres de chrome et de titre ont été réduites ou supprimées. La disposition de ces boîtes de dialogue doit suivre ce modèle de base :
 
 1. L’arrière-plan de la boîte de dialogue est blanc.
 
-2. Il existe une bordure de la règle de 1 pixel dans un gris moyen de valeur.
+2. Il y a une bordure de règle de 1 pixel dans un gris de valeur moyenne.
 
-3. Le titre de la boîte de dialogue n’est plus se trouve dans une barre de titre, mais fournit un intérêt visuel et une accentuation dans une taille supérieure. (Consultez la section de taille de police dans [style de texte](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).)
+3. Le titre de la boîte de dialogue ne se trouve plus dans une barre de titre, mais fournit un intérêt visuel et met l’accent sur une plus grande taille. (Consultez la section taille de police dans [style de texte](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).)
 
-4. Les étiquettes couplés avec un texte supplémentaire, telle qu’une description, doivent être **police d’environnement + gras**.
+4. Les étiquettes associées à du texte supplémentaire, telles qu’une description, doivent être de type **police d’environnement + gras**.
 
-5. Intérieurs colonnes sont séparées par une règle de 1 pixel en gris clair.
+5. Les colonnes intérieures sont séparées par une règle de 1 pixel en gris clair.
 
-6. Liens par défaut n’ont aucun trait de soulignement. États survol et enfoncés ont un changement de couleur suivi d’un trait de soulignement.
+6. Les liens par défaut n’ont pas de trait de soulignement. Les États pointage et enfoncé ont une modification de couleur et un trait de soulignement.
 
-7. Valider des boutons (comme **OK**/**Annuler**) se trouvent dans le coin inférieur droit.
+7. Les boutons de validation (comme **OK** / **Annuler**) se trouvent dans le coin inférieur droit.
 
-### <a name="themed-dialog-layout-examples"></a>Exemples de mise en page de boîte de dialogue à thème
- ![Mise en page de boîte de dialogue à thème](../../extensibility/ux-guidelines/media/0801-h-themeddialog.png "0801-h_ThemedDialog")
+### <a name="themed-dialog-layout-examples"></a>Exemples de disposition de boîte de dialogue à thème
+ ![Disposition de boîte de dialogue à thème](../../extensibility/ux-guidelines/media/0801-h-themeddialog.png "0801-h_ThemedDialog")
 
- **Figure 08.01-h : Boîte de dialogue à thème**
+ **Figure 08,01-h : boîte de dialogue à thème**
 
- ![Dimensions de la boîte de dialogue à thème](../../extensibility/ux-guidelines/media/0801-i-themeddialogdimensions.png "0801-i_ThemedDialogDimensions")
+ ![Dimensions de boîte de dialogue à thème](../../extensibility/ux-guidelines/media/0801-i-themeddialogdimensions.png "0801-i_ThemedDialogDimensions")
 
- **Figure 08.01-i : Boîte de dialogue à thème – Dimensions**
+ **Figure 08,01-i : boîte de dialogue à thème – Dimensions**
 
  ![Polices de boîte de dialogue à thème](../../extensibility/ux-guidelines/media/0801-j-themeddialogfonts.png "0801-j_ThemedDialogFonts")
 
- **Figure 08.01-j : Boîte de dialogue à thème – polices**
+ **Figure 08,01-j : boîte de dialogue à thème – polices**
 
- ![Couleurs de la boîte de dialogue à thème](../../extensibility/ux-guidelines/media/0801-k-themeddialogcolors.png "0801-k_ThemedDialogColors")
+ ![Couleurs de boîte de dialogue à thème](../../extensibility/ux-guidelines/media/0801-k-themeddialogcolors.png "0801-k_ThemedDialogColors")
 
- **Figure 08.01-k : Boîte de dialogue à thème – couleurs**
+ **Figure 08,01-k : boîte de dialogue à thème-couleurs**
 
 ## <a name="see-also"></a>Voir aussi
- [Modèles d’application pour Visual Studio](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md) [contrôles (Windows)](https://msdn.microsoft.com/library/windows/desktop/dn742399.aspx) [boîtes de dialogue (Windows)](https://msdn.microsoft.com/library/windows/desktop/dn742499\(v=vs.85\).aspx)
+ [Modèles d’application pour les contrôles Visual Studio](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md) [(Windows),](https://msdn.microsoft.com/library/windows/desktop/dn742399.aspx) [boîtes de dialogue (Windows)](https://msdn.microsoft.com/library/windows/desktop/dn742499\(v=vs.85\).aspx)

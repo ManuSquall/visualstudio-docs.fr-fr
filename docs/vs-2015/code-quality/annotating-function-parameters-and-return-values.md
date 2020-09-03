@@ -127,10 +127,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 71854388f3fb1c5eaea7d40ed2757af9cecacf1a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543804"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Annotation de paramètres de fonction et valeurs de retour
@@ -187,7 +187,7 @@ Cet article décrit les utilisations typiques des annotations pour les paramètr
   
      `typedef _Null_terminated_ wchar_t *PWSTR; void MyStringCopy(_Out_writes_ (size) PWSTR p1,    _In_ size_t size,    _In_ PWSTR p2);`  
   
-     Dans cet exemple, l’appelant fournit une mémoire tampon d' `size` éléments pour `p1` .  `MyStringCopy`rend certains de ces éléments valides. Plus important encore, l' `_Null_terminated_` annotation sur `PWSTR` signifie que `p1` se termine par un caractère NULL dans un État postérieur.  De cette façon, le nombre d’éléments valides est toujours bien défini, mais un nombre d’éléments spécifique n’est pas requis.  
+     Dans cet exemple, l’appelant fournit une mémoire tampon d' `size` éléments pour `p1` .  `MyStringCopy` rend certains de ces éléments valides. Plus important encore, l' `_Null_terminated_` annotation sur `PWSTR` signifie que `p1` se termine par un caractère NULL dans un État postérieur.  De cette façon, le nombre d’éléments valides est toujours bien défini, mais un nombre d’éléments spécifique n’est pas requis.  
   
      La `_bytes_` variante donne la taille en octets au lieu des éléments. À utiliser uniquement lorsque la taille ne peut pas être exprimée en tant qu’éléments.  Par exemple, `char` les chaînes utilisent la `_bytes_` variante uniquement si une fonction similaire utilise `wchar_t` .  
   

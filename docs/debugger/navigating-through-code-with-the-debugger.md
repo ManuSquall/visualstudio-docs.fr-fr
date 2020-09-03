@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5d6b9bb2eb6169de2bbbf41b6d4e96a5960e40fe
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348247"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Naviguer dans le code avec le débogueur Visual Studio
@@ -49,7 +49,7 @@ La plupart des fenêtres du débogueur, telles que les **modules** et les fenêt
 
 Les commandes de l’étape du débogueur vous aident à inspecter l’état de votre application ou à en savoir plus sur son Workflow d’exécution.
 
-### <a name="step-into-code-line-by-line"></a><a name="BKMK_Step_into__over__or_out_of_the_code"></a>Pas à pas détaillé dans le code ligne par ligne
+### <a name="step-into-code-line-by-line"></a><a name="BKMK_Step_into__over__or_out_of_the_code"></a> Pas à pas détaillé dans le code ligne par ligne
 
 Pour arrêter l’opération sur chaque instruction pendant le débogage, utilisez le **débogage**  >  **pas à pas**détaillé ou appuyez sur **F11**.
 
@@ -74,7 +74,7 @@ Dans un appel à plusieurs fonctions imbriquées, **Pas à pas détaillé** va j
 >[!TIP]
 >À mesure que vous exécutez chaque ligne de code, vous pouvez pointer sur les variables pour voir leurs valeurs, ou utiliser les fenêtres variables [locales](autos-and-locals-windows.md) et [Espion](watch-and-quickwatch-windows.md) pour surveiller les valeurs modifiées. Vous pouvez également suivre visuellement la [pile des appels](how-to-use-the-call-stack-window.md) tout en effectuant un pas à pas détaillé dans les fonctions. (Pour Visual Studio Enterprise uniquement, consultez [mapper des méthodes sur la pile des appels pendant le débogage](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)).
 
-### <a name="step-through-code-and-skip-some-functions"></a><a name="BKMK_Step_over_Step_out"></a>Exécuter le code pas à pas et ignorer certaines fonctions
+### <a name="step-through-code-and-skip-some-functions"></a><a name="BKMK_Step_over_Step_out"></a> Exécuter le code pas à pas et ignorer certaines fonctions
 
 Vous ne vous souciez peut-être pas d’une fonction pendant le débogage, ou vous savez qu’elle fonctionne, comme un code de bibliothèque bien testé. Vous pouvez utiliser les commandes suivantes pour ignorer le code pendant l’exécution pas à pas du code. Les fonctions s’exécutent toujours, mais le débogueur les ignore.
 
@@ -83,7 +83,7 @@ Vous ne vous souciez peut-être pas d’une fonction pendant le débogage, ou vo
 |**F10**|**Pas à pas principal**|Si la ligne active contient un appel de fonction, **pas à pas principal** exécute le code, puis interrompt l’exécution à la première ligne de code après le retour de la fonction appelée.|
 |**MAJ** + **F11**|**Pas à pas sortant**|**Pas à pas sortant** poursuit l’exécution du code et interrompt l’exécution lorsque la fonction active retourne. Le débogueur ignore la fonction active.|
 
-## <a name="run-to-a-specific-location-or-function"></a><a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a>Exécuter jusqu’à un emplacement ou une fonction spécifique
+## <a name="run-to-a-specific-location-or-function"></a><a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a> Exécuter jusqu’à un emplacement ou une fonction spécifique
 
 Vous préférerez peut-être exécuter directement à un emplacement ou une fonction spécifique si vous savez exactement quel code vous souhaitez inspecter ou si vous savez où vous souhaitez démarrer le débogage.
 
@@ -138,7 +138,7 @@ Lorsque vous êtes en pause dans le débogueur, vous pouvez pointer sur une inst
 
 Pour rompre la ligne de code suivante disponible dans une application en cours d’exécution, sélectionnez **Déboguer**  >  **tout**ou appuyez sur **CTRL** + **ALT** + **arrêter**.
 
-## <a name="move-the-pointer-to-change-the-execution-flow"></a><a name="BKMK_Set_the_next_statement_to_execute"></a>Déplacer le pointeur pour modifier le workflow d’exécution
+## <a name="move-the-pointer-to-change-the-execution-flow"></a><a name="BKMK_Set_the_next_statement_to_execute"></a> Déplacer le pointeur pour modifier le workflow d’exécution
 
 Pendant que le débogueur est suspendu, une flèche jaune dans la marge de la fenêtre code source ou code **machine** marque l’emplacement de la prochaine instruction à exécuter. Vous pouvez modifier la prochaine instruction à exécuter en déplaçant cette flèche. Vous pouvez ignorer une partie du code ou revenir à une ligne précédente. Le déplacement du pointeur est utile dans des situations telles que l’omission d’une section de code qui contient un bogue connu.
 
