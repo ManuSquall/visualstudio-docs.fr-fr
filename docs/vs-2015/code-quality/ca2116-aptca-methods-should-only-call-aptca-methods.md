@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 115c0e733716994ba463eada938f8ff908612d0f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547756"
 ---
 # <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116 : Les méthodes APTCA doivent uniquement appeler des méthodes APTCA
@@ -32,7 +32,7 @@ ms.locfileid: "85547756"
 |Category|Microsoft.Security|
 |Modification avec rupture|Rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Une méthode dans un assembly avec l' <xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=fullName> attribut appelle une méthode dans un assembly qui n’a pas l’attribut.
 
 ## <a name="rule-description"></a>Description de la règle
@@ -40,9 +40,9 @@ ms.locfileid: "85547756"
 
  Lorsque l’attribut APTCA est présent dans un assembly entièrement fiable et que l’assembly exécute du code dans un autre assembly qui n’autorise pas les appelants d’un niveau de confiance partiel, une faille de sécurité est possible. Si deux méthodes `M1` et `M2` remplissent les conditions suivantes, les appelants malveillants peuvent utiliser la méthode `M1` pour contourner la demande de liaison de confiance totale implicite qui protège `M2` :
 
-- `M1`est une méthode publique déclarée dans un assembly de confiance totale qui a l’attribut APTCA.
+- `M1` est une méthode publique déclarée dans un assembly de confiance totale qui a l’attribut APTCA.
 
-- `M1`appelle une méthode à `M2` l’extérieur `M1` de l’assembly.
+- `M1` appelle une méthode à `M2` l’extérieur `M1` de l’assembly.
 
 - `M2`l’assembly de n’a pas l’attribut APTCA et, par conséquent, ne doit pas être exécuté par ou pour le compte des appelants qui ont un niveau de confiance partiel.
 

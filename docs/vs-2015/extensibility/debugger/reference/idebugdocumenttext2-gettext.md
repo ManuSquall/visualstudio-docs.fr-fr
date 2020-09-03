@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText2::GetText | Microsoft Docs
+title: 'IDebugDocumentText2 :: GetText | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 066c2c025fe7b1c83fb30cb3a0e1a7b61d8c2c41
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200177"
 ---
 # <a name="idebugdocumenttext2gettext"></a>IDebugDocumentText2::GetText
@@ -46,22 +46,22 @@ int GetText( 
   
 #### <a name="parameters"></a>Paramètres  
  `pos`  
- [in] Un [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) structure qui indique l’emplacement du texte à récupérer.  
+ dans Structure [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) qui indique l’emplacement du texte à récupérer.  
   
  `cMaxChars`  
- [in] Le nombre maximal de caractères du texte à récupérer.  
+ dans Nombre maximal de caractères du texte à récupérer.  
   
  `pText`  
- [in, out] Pointeur vers une mémoire tampon qui doit être rempli avec le texte souhaité. Cette mémoire tampon doit être en mesure de contenir au moins `cMaxChars` nombre de caractères larges.  
+ [in, out] Pointeur vers une mémoire tampon qui doit être remplie avec le texte souhaité. Cette mémoire tampon doit pouvoir contenir au moins un `cMaxChars` nombre de caractères larges.  
   
  `pcNumChars`  
- [out] Retourne le nombre de caractères réellement récupérées.  
+ à Retourne le nombre de caractères réellement récupérés.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="example"></a>Exemple  
- Cet exemple montre comment cette méthode peut être appelée à partir de c#.  
+ Cet exemple montre comment cette méthode peut être appelée à partir de C#.  
   
 ```csharp  
 using System.Runtime.Interop.Services;  

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a93225b4bd4180a9ce3389911c2c15d0dbef52ad
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468601"
 ---
 # <a name="getting-started-debug-interface-access-sdk"></a>Mise en route (Kit de développement logiciel de Debug Interface Access)
@@ -47,10 +47,10 @@ Le kit de développement logiciel (SDK) debug interface Access (DIA) fournit une
 
 Passe en revue l’architecture de base de DIA.
 
-[Interrogation du fichier .Pdb](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)
+[Interrogation du fichier .Pdb](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)
 
 Fournit des instructions pas à pas sur l’utilisation de l’API DIA pour interroger un fichier. pdb.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Kit de développement logiciel de Debug Interface Access](../../debugger/debug-interface-access/debug-interface-access-sdk.md)
+- [SDK Debug Interface Access](../../debugger/debug-interface-access/debug-interface-access-sdk.md)

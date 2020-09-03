@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7fb49ee4ccd49d848b4d770459352c685469fb7b
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468699"
 ---
 # <a name="debug-interface-access-sdk-reference"></a>Debug Interface Access, référence du SDK
@@ -35,16 +35,16 @@ Une référence complète à toutes les interfaces fournies par le kit de dével
 
 Une référence complète à toutes les énumérations et structures requises par les interfaces.
 
-[Constantes (Kit de développement logiciel Debug Interface Access)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)
+[Constantes (Kit de développement logiciel Debug Interface Access)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)
 
 Décrit un certain nombre de chaînes et leurs étiquettes qui peuvent être utilisées avec les interfaces.
 
 ## <a name="related-sections"></a>Sections connexes
 
-[Balises Symbols et Symbol](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)
+[Symboles et étiquettes de symbole](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)
 
 Décrit les symboles et la façon dont ils sont identifiés par type.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Kit de développement logiciel de Debug Interface Access](../../debugger/debug-interface-access/debug-interface-access-sdk.md)
+- [SDK Debug Interface Access](../../debugger/debug-interface-access/debug-interface-access-sdk.md)
