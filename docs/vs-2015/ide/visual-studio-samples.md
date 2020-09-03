@@ -12,13 +12,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0662506ab9ea19a033e6af2a26b495725fe5b838
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918098"
 ---
-# <a name="visual-studio-samples"></a>Exemples Visual Studio :
+# <a name="visual-studio-samples"></a>Exemples Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous trouverez des exemples de code Visual Studio sur le site web [MSDN Code Gallery](https://code.msdn.microsoft.com/) .
@@ -28,13 +28,13 @@ Vous trouverez des exemples de code Visual Studio sur le site web [MSDN Code Gal
 ## <a name="finding-samples"></a>Recherche d’exemples
  Voici d’autres emplacements où rechercher des exemples.
 
-|Zone|Description|
+|Domaine|Description|
 |----------|-----------------|
 |[Exemples du Centre de développement Windows](https://code.msdn.microsoft.com/windowsapps/)|Montre comment développer des applications [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] .|
 |[Exemples .NET Framework](/samples/browse/?products=dotnet)|Montre différents aspects du [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] en C# et Visual Basic.|
 |[Exemples C#](/samples/browse/?languages=csharp)|Montre comment utiliser différentes fonctionnalités de C#.|
 |[Exemples Visual Basic](/samples/browse/?languages=vb)|Montre comment utiliser différentes fonctionnalités de Visual Basic.|
-|[Exemples F#](/samples/browse/?languages=fsharp)|Montre comment utiliser différentes fonctionnalités de F#.|
+|[Exemples F #](/samples/browse/?languages=fsharp)|Montre comment utiliser différentes fonctionnalités de F#.|
 |[Exemples JavaScript](/samples/browse/?languages=javascript)|Montre comment utiliser différentes fonctionnalités en JavaScript.|
 |[Exemples C++](/samples/browse/?languages=cpp)|Montre comment utiliser différentes fonctionnalités en C++.|
 |[Exemples DirectX](/samples/browse/?products=xbox)|Montre comment utiliser DirectX.|

@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 36803dfbba7ea6d6d2a869fb94c05105ed4af15d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72643336"
 ---
 # <a name="visual-c-intellisense"></a>Visual C# IntelliSense
@@ -32,7 +32,7 @@ Visual C# IntelliSense est disponible quand vous écrivez du code dans l’édi
 
 - Noms de variables, de commandes et de fonctions
 
-- [Extraits de code](#CodeSnippets)
+- [Extraits de code](#CodeSnippets),
 
 - [Mots clés de langage](#Keywords)
 
@@ -40,13 +40,13 @@ Visual C# IntelliSense est disponible quand vous écrivez du code dans l’édi
 
   La liste de saisie semi-automatique en C# est également assez intelligente pour éliminer les jetons inappropriés et présélectionner un jeton selon le contexte. Pour plus d’informations, consultez [Listes de saisie semi-automatique filtrées en C#](../misc/filtered-completion-lists-in-csharp.md) et [Éléments présélectionnés d’une liste de saisie semi-automatique en C#](../misc/pre-selected-completion-list-items-in-csharp.md).
 
-### <a name="CodeSnippets"></a> Extraits de code dans les listes de saisie semi-automatique
+### <a name="code-snippets-in-completion-lists"></a><a name="CodeSnippets"></a> Extraits de code dans les listes de saisie semi-automatique
  Dans Visual C#, la liste de saisie semi-automatique comprend des extraits de code pour vous aider à insérer facilement des entités prédéfinies de code dans votre programme. Les extraits de code apparaissent dans la liste de saisie semi-automatique en tant qu’[éléments Shortcut (extraits de code Intellisense)](https://msdn.microsoft.com/052cc97a-5c70-42f8-b398-4c3adf670cfa) de l’extrait de code.  Pour plus d’informations sur les extraits de code fournis par défaut en Visual C#, consultez [Extraits de code Visual C#](../ide/visual-csharp-code-snippets.md).
 
-### <a name="Keywords"></a> Mots clés de langage dans les listes de saisie semi-automatique
+### <a name="language-keywords-in-completion-lists"></a><a name="Keywords"></a> Mots clés de langage dans les listes de saisie semi-automatique
  Dans Visual C#, la liste de saisie semi-automatique inclut également des mots clés de langage. Pour plus d’informations sur les mots clés du langage C#, consultez [Mots clés C#](https://msdn.microsoft.com/library/e929b0f2-4b92-4d37-8060-23d323b098ad).
 
-### <a name="ExtensionMethods"></a> Méthodes d’extension dans les listes de saisie semi-automatique
+### <a name="extension-methods-in-completion-lists"></a><a name="ExtensionMethods"></a> Méthodes d’extension dans les listes de saisie semi-automatique
  Dans Visual C#, la liste de saisie semi-automatique inclut les méthodes d’extension qui sont dans la portée.
 
 > [!NOTE]
@@ -71,7 +71,7 @@ Visual C# IntelliSense est disponible quand vous écrivez du code dans l’édi
 
 - **Mot clé new** : quand vous tapez `new` et appuyez sur la barre d’espace, une liste de saisie semi-automatique s’affiche. Un élément est sélectionné automatiquement dans la liste en fonction du contexte de votre code. Par exemple, des éléments sont automatiquement sélectionnés dans la liste de saisie semi-automatique pour les déclarations et pour les instructions return dans les méthodes.
 
-- **Opérateurs as et is** : une liste de saisie semi-automatique filtrée s’affiche automatiquement quand vous appuyez sur la barre d’espace après avoir tapé le mot clé `as` ou `is`.
+- **opérateurs As et is :** Une liste de saisie semi-automatique filtrée s’affiche automatiquement lorsque vous appuyez sur la barre d’espace après avoir tapé le `as` `is` mot clé ou.
 
 - Événements : quand vous tapez le mot clé `event`, la liste de saisie semi-automatique contient uniquement des types délégués.
 
@@ -90,11 +90,11 @@ Visual C# IntelliSense est disponible quand vous écrivez du code dans l’édi
 
  Pour lancer l'opération Ajouter using, positionnez le curseur sur une référence de type qui ne peut pas être résolue. Par exemple, quand vous créez une application console, puis ajoutez `XmlTextReader` au corps de la méthode `Main`, une balise active apparaît sous le caractère le plus à droite de `XmlTextReader`, car il s’agit d’une référence de type qui ne peut pas être résolue.
 
- ![Ajouter à l’aide de l’image de balise active](../ide/media/addusesmart.gif "AddUseSmart")
+ ![Image de balise active Ajouter using](../ide/media/addusesmart.gif "AddUseSmart")
 
  Vous pouvez alors appeler l’opération Ajouter using en la sélectionnant dans le sous-menu **Résoudre** du menu **IntelliSense** ou dans le menu contextuel, ou en l’appelant via la balise active. L’étiquette active est visible uniquement quand le curseur est positionné sur le type indépendant ou à côté de lui.
 
- ![Ajouter à l’aide de, image développée de la balise active](../ide/media/addusesmartexp.gif "AddUseSmartExp")
+ ![Image d’étiquette active agrandie Ajouter using](../ide/media/addusesmartexp.gif "AddUseSmartExp")
 
 ### <a name="organize-usings"></a>Organiser les instructions Using
  Les options **Organiser les instructions Using** trient et suppriment les déclarations `using` et `extern` sans modifier le comportement du code source. Au fil du temps, les fichiers sources peuvent devenir trop importants et difficiles à lire à cause de directives `using` inutiles et désorganisées. Les options **Organiser les instructions Using** compactent le code source en supprimant les directives `using` inutilisées et améliorent la lisibilité en triant les directives.
@@ -145,7 +145,7 @@ Visual C# IntelliSense est disponible quand vous écrivez du code dans l’édi
 
  Si vous appuyez sur la touche Tab, IntelliSense complète automatiquement l'instruction pour vous et affiche la référence du gestionnaire d'événements sous forme de texte sélectionné dans l'éditeur de code. Pour terminer la connexion d'événements automatique, IntelliSense vous invite à appuyer de nouveau sur la touche Tab pour créer un stub vide pour le gestionnaire d'événements.
 
- ![Générer un gestionnaire d’événements](../ide/media/vxgenerateeventhandler.gif "vxGenerateEventHandler")
+ ![Générer un gestionnaire d'événements](../ide/media/vxgenerateeventhandler.gif "vxGenerateEventHandler")
 
 > [!NOTE]
 > Si un nouveau délégué créé par IntelliSense fait référence à un gestionnaire d'événements existant, IntelliSense communique cette information dans l'info-bulle. Vous pouvez ensuite modifier cette référence, dans la mesure où le texte est déjà sélectionné dans l'éditeur de code. Sinon, la connexion d'événements automatique se termine à ce stade.

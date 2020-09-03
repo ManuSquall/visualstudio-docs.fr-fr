@@ -2,7 +2,7 @@
   href: xml-tools-in-visual-studio.md
 - name: Éditeur XML
   items:
-    - name: Vue d'ensemble
+    - name: Vue d’ensemble
       displayName: XML editor
       href: xml-editor.md
     - name: Validation de documents XML
@@ -11,7 +11,7 @@
       href: xml-editor-intellisense-features.md
     - name: extraits XML
       items:
-        - name: Vue d'ensemble
+        - name: Vue d’ensemble
           displayName: XML snippets overview
           href: xml-snippets.md
         - name: Utiliser des extraits XML
@@ -48,7 +48,7 @@
       href: xml-schemas-dialog-box.md
 - name: Concepteur de schémas XML
   items:
-    - name: Vue d'ensemble
+    - name: Vue d’ensemble
       displayName: XML Schema Designer overview
       href: xml-schema-designer.md
     - name: Explorateur de schémas XML
@@ -59,7 +59,7 @@
           href: searching-the-schema-set.md
         - name: 'Trier, filtrer et regrouper'
           href: sorting-filtering-and-grouping-xml-schema-explorer.md
-        - name: Menus contextuels
+        - name: Menu contextuels
           href: context-menus-xml-schema-explorer.md
         - name: Intégration de littéraux XML
           href: integration-of-xml-literals-with-xml-schema-explorer.md
@@ -108,7 +108,7 @@
               href: sample-xsd-file-relationships.md
 - name: Débogage XSLT
   items:
-    - name: Vue d'ensemble
+    - name: Vue d’ensemble
       displayName: XSLT debugging
       href: debugging-xslt.md
     - name: "Procédure pas à pas\_: Déboguer une feuille de style XSLT"

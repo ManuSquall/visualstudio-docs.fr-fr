@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - aspnet
 ms.openlocfilehash: cd2b787fe546b9c53332fcdc548d3da829759755
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84173913"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Déboguer à distance ASP.NET sur un ordinateur distant IIS
@@ -40,7 +40,7 @@ Visual Studio 2017 est requis pour suivre les étapes décrites dans cet article
 Ces procédures ont été testées sur ces configurations de serveur :
 * Windows Server 2012 R2 et IIS 8 (pour Windows Server 2008 R2, les étapes de serveur sont différentes)
 
-## <a name="network-requirements"></a>Conditions requises en matière de réseau
+## <a name="network-requirements"></a>Configuration requise pour le réseau
 
 Le débogueur distant est pris en charge sur Windows Server à partir de Windows Server 2008 Service Pack 2. Pour obtenir la liste complète des conditions requises, consultez [Configuration requise](../debugger/remote-debugging.md#requirements_msvsmon).
 
@@ -66,9 +66,9 @@ Cet article explique comment configurer une configuration de base d’IIS sur Wi
     Pour effectuer cette opération dans Visual Studio 2017, choisissez **fichier > nouveau > projet**, puis sélectionnez **Visual C# > Web > application Web ASP.net**. Dans la section des modèles **ASP.NET 4.5.2** , sélectionnez **MVC**. Assurez-vous que l’option **activer la prise en charge** de l’ancrage n’est pas sélectionnée et que **l’authentification** est définie sur **aucune authentification**. Nommez le projet **MyASPApp**.)
     ::: moniker-end
 
-2. Ouvrez le fichier *HomeController.cs* et définissez un point d’arrêt dans la `About()` méthode.
+2. Ouvrez le fichier  *HomeController.cs* et définissez un point d’arrêt dans la `About()` méthode.
 
-## <a name="install-and-configure-iis-on-windows-server"></a><a name="bkmk_configureIIS"></a>Installer et configurer IIS sur Windows Server
+## <a name="install-and-configure-iis-on-windows-server"></a><a name="bkmk_configureIIS"></a> Installer et configurer IIS sur Windows Server
 
 [!INCLUDE [remote-debugger-install-iis-role](../debugger/includes/remote-debugger-install-iis-role.md)]
 
@@ -83,7 +83,7 @@ Si la configuration de sécurité renforcée est activée dans Internet Explorer
 
 Lorsque vous téléchargez le logiciel, vous pouvez recevoir des demandes pour accorder l’autorisation de charger divers scripts et ressources de site Web. Certaines de ces ressources ne sont pas requises, mais pour simplifier le processus, cliquez sur **Ajouter** lorsque vous y êtes invité.
 
-## <a name="install-aspnet-45-on-windows-server"></a><a name="BKMK_deploy_asp_net"></a>Installer ASP.NET 4,5 sur Windows Server
+## <a name="install-aspnet-45-on-windows-server"></a><a name="BKMK_deploy_asp_net"></a> Installer ASP.NET 4,5 sur Windows Server
 
 Si vous souhaitez des informations plus détaillées sur l’installation de ASP.NET sur IIS, consultez [iis 8,0 avec ASP.NET 3,5 et ASP.NET 4,5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
@@ -132,7 +132,7 @@ Une fois l’application déployée, elle doit démarrer automatiquement. Si l�
 1. Dans la boîte de dialogue **paramètres** , activez le débogage en cliquant sur **suivant**, choisissez une configuration de **débogage** , puis choisissez **Supprimer les fichiers supplémentaires à la destination** sous les options de publication de **fichier** .
 
     > [!IMPORTANT]
-    > Si vous choisissez une configuration Release, vous désactivez le débogage dans le fichier *Web. config* lorsque vous publiez.
+    > Si vous choisissez une configuration Release, vous désactivez le débogage dans le fichier *web.config* lors de la publication.
 
 1. Cliquez sur **Enregistrer** , puis republiez l’application.
 
@@ -140,7 +140,7 @@ Une fois l’application déployée, elle doit démarrer automatiquement. Si l�
 
 Vous pouvez utiliser cette option pour déployer votre application si vous souhaitez copier l’application sur IIS à l’aide de PowerShell, RoboCopy ou si vous souhaitez copier manuellement les fichiers.
 
-### <a name="configure-the-aspnet-web-site-on-the-windows-server-computer"></a><a name="BKMK_deploy_asp_net"></a>Configurer le site Web ASP.NET sur l’ordinateur Windows Server
+### <a name="configure-the-aspnet-web-site-on-the-windows-server-computer"></a><a name="BKMK_deploy_asp_net"></a> Configurer le site Web ASP.NET sur l’ordinateur Windows Server
 
 1. Ouvrez l’Explorateur Windows et créez un nouveau dossier, **C:\Publish**, où vous déploierez ultérieurement le projet ASP.net.
 
@@ -162,7 +162,7 @@ Vous pouvez utiliser cette option pour déployer votre application si vous souha
 
 Vous pouvez également publier et déployer l’application à l’aide du système de fichiers ou d’autres outils.
 
-1. (ASP.NET 4.5.2) Assurez-vous que le fichier Web. config répertorie la version correcte de .NET.  Par exemple, si vous ciblez ASP.NET 4.5.2, assurez-vous que cette version est répertoriée dans Web. config.
+1. (ASP.NET 4.5.2) Assurez-vous que le fichier web.config répertorie la version correcte de .NET.  Par exemple, si vous ciblez ASP.NET 4.5.2, assurez-vous que cette version est répertoriée dans web.config.
 
     ```xml
     <system.web>
@@ -179,13 +179,13 @@ Vous pouvez également publier et déployer l’application à l’aide du syst�
 
 [!INCLUDE [remote-debugger-deploy-app-local](../debugger/includes/remote-debugger-deploy-app-local.md)]
 
-## <a name="download-and-install-the-remote-tools-on-windows-server"></a><a name="BKMK_msvsmon"></a>Télécharger et installer les outils de contrôle à distance sur Windows Server
+## <a name="download-and-install-the-remote-tools-on-windows-server"></a><a name="BKMK_msvsmon"></a> Télécharger et installer les outils de contrôle à distance sur Windows Server
 
 Téléchargez la version des outils de contrôle à distance qui correspond à votre version de Visual Studio.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
-## <a name="set-up-the-remote-debugger-on-windows-server"></a><a name="BKMK_setup"></a>Configurer le débogueur distant sur Windows Server
+## <a name="set-up-the-remote-debugger-on-windows-server"></a><a name="BKMK_setup"></a> Configurer le débogueur distant sur Windows Server
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
@@ -194,7 +194,7 @@ Téléchargez la version des outils de contrôle à distance qui correspond à v
 
 Pour plus d’informations sur l’exécution du débogueur distant en tant que service, consultez [exécuter le débogueur distant en tant que service](../debugger/remote-debugging.md#bkmk_configureService).
 
-## <a name="attach-to-the-aspnet-application-from-the-visual-studio-computer"></a><a name="BKMK_attach"></a>Attachement à l’application ASP.NET à partir de l’ordinateur Visual Studio
+## <a name="attach-to-the-aspnet-application-from-the-visual-studio-computer"></a><a name="BKMK_attach"></a> Attachement à l’application ASP.NET à partir de l’ordinateur Visual Studio
 
 1. Sur l’ordinateur Visual Studio, ouvrez la solution que vous essayez de déboguer (**MyASPApp** si vous suivez les étapes décrites dans cet article).
 2. Dans Visual Studio, cliquez sur **Déboguer > attacher au processus** (Ctrl + Alt + P).
@@ -221,9 +221,9 @@ Pour plus d’informations sur l’exécution du débogueur distant en tant que 
 
 5. Cochez  **Afficher les processus de tous les utilisateurs**.
 
-6. Tapez la première lettre d’un nom de processus pour trouver rapidement **w3wp. exe** pour ASP.net 4,5.
+6. Tapez la première lettre d’un nom de processus pour trouver rapidement **w3wp.exe** pour ASP.net 4,5.
 
-    Si vous avez plusieurs processus présentant **w3wp. exe**, vérifiez la colonne **nom d’utilisateur** . Dans certains scénarios, la colonne **nom d’utilisateur** affiche le nom de votre pool d’applications, par exemple **IIS APPPOOL\DefaultAppPool**. Si vous voyez le pool d’applications, un moyen simple d’identifier le processus correct consiste à créer un nouveau pool d’applications nommé pour l’instance d’application que vous souhaitez déboguer, puis vous pouvez le trouver facilement dans la colonne **nom d’utilisateur** .
+    Si plusieurs processus indiquent **w3wp.exe**, vérifiez la colonne **nom d’utilisateur** . Dans certains scénarios, la colonne **nom d’utilisateur** affiche le nom de votre pool d’applications, par exemple **IIS APPPOOL\DefaultAppPool**. Si vous voyez le pool d’applications, un moyen simple d’identifier le processus correct consiste à créer un nouveau pool d’applications nommé pour l’instance d’application que vous souhaitez déboguer, puis vous pouvez le trouver facilement dans la colonne **nom d’utilisateur** .
 
     ::: moniker range=">=vs-2019"
     ![RemoteDBG_AttachToProcess](../debugger/media/vs-2019/remotedbg-attachtoprocess.png "RemoteDBG_AttachToProcess")

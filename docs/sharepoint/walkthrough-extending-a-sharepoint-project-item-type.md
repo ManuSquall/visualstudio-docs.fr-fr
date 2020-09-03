@@ -15,9 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f949329c7db71386a12c3ab8d7fccf1483b8cca2
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015676"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Procédure pas à pas : étendre un type d’élément de projet SharePoint
@@ -40,7 +41,7 @@ ms.locfileid: "86015676"
 
 - Éditions prises en charge de Microsoft Windows, SharePoint et Visual Studio.
 
-- Le [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. Cette procédure pas à pas utilise le modèle de **projet VSIX** dans le kit de développement logiciel (SDK) pour créer un package VSIX afin de déployer l’élément de projet. Pour plus d’informations, consultez [étendre les outils SharePoint dans Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).
+- L’[!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]opérateur Cette procédure pas à pas utilise le modèle de **projet VSIX** dans le kit de développement logiciel (SDK) pour créer un package VSIX afin de déployer l’élément de projet. Pour plus d’informations, consultez [étendre les outils SharePoint dans Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).
 
   La connaissance des concepts suivants est utile, mais pas obligatoire, pour effectuer la procédure pas à pas :
 
@@ -76,7 +77,7 @@ ms.locfileid: "86015676"
 
 6. Dans la zone **nom** , entrez **GenerateExternalDataLists**, puis choisissez le bouton **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Ajoute le projet **GenerateExternalDataLists** à **Explorateur de solutions**.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Ajoute le projet **GenerateExternalDataLists** à **Explorateur de solutions**.
 
 7. Si le fichier source. extension. vsixmanifest ne s’ouvre pas automatiquement, ouvrez le menu contextuel du projet GenerateExternalDataLists, puis choisissez **ouvrir** .
 
@@ -94,7 +95,7 @@ ms.locfileid: "86015676"
 
 5. Dans la zone **nom** , entrez **BdcProjectItemExtension**, puis choisissez le bouton **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Ajoute le projet **BdcProjectItemExtension** à la solution et ouvre le fichier de code Class1 par défaut.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Ajoute le projet **BdcProjectItemExtension** à la solution et ouvre le fichier de code Class1 par défaut.
 
 6. Supprimez le fichier de code Class1 du projet.
 

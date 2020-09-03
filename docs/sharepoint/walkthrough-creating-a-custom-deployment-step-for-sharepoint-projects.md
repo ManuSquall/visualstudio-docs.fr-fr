@@ -14,9 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 56fac2be1e73de5df9da8aa13e6631c4cc9d1022
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015895"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>Procédure pas à pas : création d’une étape de déploiement personnalisée pour les projets SharePoint
@@ -79,7 +80,7 @@ ms.locfileid: "86015895"
 
 5. Choisissez le modèle de **projet VSIX** , nommez le projet **UpgradeDeploymentStep**, puis choisissez le bouton **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Ajoute le projet **UpgradeDeploymentStep** à **Explorateur de solutions**.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Ajoute le projet **UpgradeDeploymentStep** à **Explorateur de solutions**.
 
 #### <a name="to-create-the-extension-project"></a>Pour créer le projet d’extension
 
@@ -91,7 +92,7 @@ ms.locfileid: "86015895"
 
 4. Choisissez le modèle de projet **bibliothèque de classes** , nommez le projet **DeploymentStepExtension**, puis choisissez le bouton **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Ajoute le projet **DeploymentStepExtension** à la solution et ouvre le fichier de code Class1 par défaut.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Ajoute le projet **DeploymentStepExtension** à la solution et ouvre le fichier de code Class1 par défaut.
 
 5. Supprimez le fichier de code Class1 du projet.
 
@@ -265,7 +266,7 @@ ms.locfileid: "86015895"
 
 7. Cliquez sur le bouton **Terminer**.
 
-    [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]crée le projet EmployeesListDefinition.
+    [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] crée le projet EmployeesListDefinition.
 
 8. Ouvrez le menu contextuel du projet EmployeesListDefinition, choisissez **Ajouter**, puis **nouvel élément**.
 
@@ -283,7 +284,7 @@ ms.locfileid: "86015895"
 
     3. La **valeur par défaut (vide)** est choisie dans la liste **créer une liste personnalisable basée sur :** .
 
-       [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]crée l’élément de liste Employees avec une colonne title et une instance vide unique et ouvre le concepteur de listes.
+       [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] crée l’élément de liste Employees avec une colonne title et une instance vide unique et ouvre le concepteur de listes.
 
 12. Dans le concepteur de listes, sous l’onglet **colonnes** , choisissez la ligne **tapez un nom de colonne nouveau ou existant** , puis ajoutez les colonnes suivantes dans la liste **nom complet** de la colonne :
 

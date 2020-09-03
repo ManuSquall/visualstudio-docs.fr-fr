@@ -14,15 +14,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1ed60e07c625665f92838cfbc671b03c605fda0d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75567643"
 ---
-# <a name="options-dialog-box-projects-and-solutions--general"></a>Boîte de dialogue d’options : Projets et solutions \> générales
+# <a name="options-dialog-box-projects-and-solutions--general"></a>Boîte de dialogue Options : projets et solutions \> général
 
-Utilisez cette page pour définir le comportement de Visual Studio relativement aux projets et aux solutions. Pour accéder à ces options, sélectionnez **des options d’outils,** > **Options**développez **des projets et des solutions,** puis sélectionnez **General**.
+Utilisez cette page pour définir le comportement de Visual Studio relativement aux projets et aux solutions. Pour accéder à ces options, sélectionnez **Outils**  >  **options**, développez **projets et solutions**, puis sélectionnez **général**.
 
 Les options suivantes sont disponibles dans la page **Général**.
 
@@ -58,7 +58,7 @@ Si vous tentez de créer un projet ou d’ouvrir un projet existant dans un empl
 
 ## <a name="show-output-window-when-build-starts"></a>Afficher la fenêtre Sortie au démarrage de la génération
 
-Affiche automatiquement la [fenêtre de sortie](../../ide/reference/output-window.md) dans l’IDE au début de la solution.
+Affiche automatiquement la [fenêtre Sortie](../../ide/reference/output-window.md) dans l’IDE au départ des builds de la solution.
 
 ## <a name="prompt-for-symbolic-renaming-when-renaming-files"></a>Inviter à utiliser des noms symboliques au moment de renommer les fichiers
 
@@ -98,6 +98,6 @@ Si cette option n’est pas sélectionnée et que vous voulez modifier un fichie
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Boîte de dialogue d’options : Emplacements des projets et des solutions \>](projects-solutions-locations-options.md)
+- [Boîte de dialogue Options : emplacements des projets et des solutions \>](projects-solutions-locations-options.md)
 - [Options (boîte de dialogue), Projets et solutions, Générer et exécuter](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)
 - [Boîte de dialogue Options, Projets et solutions, Projets web](../../ide/reference/options-dialog-box-projects-and-solutions-web-projects.md)

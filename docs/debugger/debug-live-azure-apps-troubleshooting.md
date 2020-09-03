@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 16d55c4e729a39f46b4b038490e92f7cb43bf98d
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84182870"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Résolution des problèmes et problèmes connus du débogage de capture instantanée dans Visual Studio.
@@ -37,7 +37,7 @@ Suivez ces étapes :
 * Assurez-vous que votre compte de personnalisation Visual Studio dispose des autorisations d’accès à l’abonnement Azure et à la ressource à laquelle vous vous connectez. Un moyen rapide de déterminer cela consiste à vérifier si la ressource est disponible dans la boîte de dialogue à partir de débogueur de capture instantanée d’attachement de **débogage**  >  **...**  >  **Ressource Azure**  >  **Sélectionnez existant**ou dans Cloud Explorer.
 * Si cette erreur persiste, utilisez l’un des canaux de commentaires décrits au début de cet article.
 
-Si vous avez activé l’authentification/autorisation (EasyAuth) sur votre App Service, vous pouvez rencontrer une erreur 401 avec LaunchAgentAsync dans le message d’erreur de la pile des appels. Assurez-vous que l' **action à entreprendre lorsque la demande n’est pas authentifiée** est définie sur **autoriser les requêtes anonymes (aucune action)** dans le portail Azure et fournissez un Authorization. JSON dans D:\Home\sites\wwwroot avec le contenu suivant à la place. 
+Si vous avez activé l’authentification/autorisation (EasyAuth) sur votre App Service, vous pouvez rencontrer une erreur 401 avec LaunchAgentAsync dans le message d’erreur de la pile des appels. Assurez-vous que l' **action à effectuer lorsque la demande n’est pas authentifiée** est définie sur **autoriser les requêtes anonymes (aucune action)** dans le portail Azure et fournissez un authorization.jsdans D:\Home\sites\wwwroot avec le contenu suivant à la place. 
 
 ```
 {
@@ -59,7 +59,7 @@ Si vous avez activé l’authentification/autorisation (EasyAuth) sur votre App 
 }
 ```
 
-Le premier itinéraire sécurise efficacement votre domaine d’application de la même façon que **vous vous connectez avec [IdentityProvider]**. Le deuxième itinéraire expose le point de terminaison SnapshotDebugger AgentLaunch en dehors de l’authentification, qui effectue l’action prédéfinie de démarrage de l’agent de diagnostic SnapshotDebugger *uniquement si* l’extension de site préinstallée SnapshotDebugger est activée pour votre App service. Pour plus d’informations sur la configuration Authorization. JSON, consultez [règles d’autorisation d’URL](https://azure.github.io/AppService/2016/11/17/URL-Authorization-Rules.html).
+Le premier itinéraire sécurise efficacement votre domaine d’application de la même façon que **vous vous connectez avec [IdentityProvider]**. Le deuxième itinéraire expose le point de terminaison SnapshotDebugger AgentLaunch en dehors de l’authentification, qui effectue l’action prédéfinie de démarrage de l’agent de diagnostic SnapshotDebugger *uniquement si* l’extension de site préinstallée SnapshotDebugger est activée pour votre App service. Pour plus d’informations sur la authorization.jssur la configuration, consultez [règles d’autorisation d’URL](https://azure.github.io/AppService/2016/11/17/URL-Authorization-Rules.html).
 
 ### <a name="403-forbidden"></a>(403) Interdit
 

@@ -13,10 +13,10 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2a769b0d04f76a2a32c00e262ff03b400af02feb
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852289"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Anatomie d’un package VSIX
@@ -27,7 +27,7 @@ Un package VSIX est un fichier. vsix qui contient une ou plusieurs extensions Vi
  Le format de package VSIX suit la norme OPC (Open Packaging Conventions). Le package contient des fichiers binaires et des fichiers de prise en charge, ainsi qu’un fichier [Content_Types]. xml et un fichier manifeste. vsix. Un package VSIX peut contenir la sortie de plusieurs projets, voire plusieurs packages ayant leurs propres manifestes.  
   
 > [!NOTE]
-> Les noms des fichiers inclus dans les packages VSIX ne doivent pas inclure d’espaces, ni de caractères réservés dans les URI (Uniform Resource Identifier), comme défini sous [\[\]rfc2396 ](https://go.microsoft.com/fwlink/?LinkId=90339).  
+> Les noms des fichiers inclus dans les packages VSIX ne doivent pas inclure d’espaces, ni de caractères réservés dans les URI (Uniform Resource Identifier), comme défini sous [ \[ rfc2396 \] ](https://go.microsoft.com/fwlink/?LinkId=90339).  
   
 ## <a name="the-vsix-manifest"></a>Manifeste VSIX  
  Le manifeste VSIX contient des informations sur l’extension à installer et suit le schéma VSX. Pour plus d’informations, consultez [Référence du schéma d’extension VSIX 1,0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b). Pour obtenir un exemple de manifeste VSIX, consultez [élément PackageManifest (élément racine, schéma VSX)](https://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187).  
@@ -47,16 +47,16 @@ Un package VSIX est un fichier. vsix qui contient une ou plusieurs extensions Vi
   
  Si le manifeste de l’extension contient un ou plusieurs éléments de [référence](https://msdn.microsoft.com/32c52934-e81e-4b53-8cb6-4df45ef7bfa8) , les **extensions et les mises à jour** comparent le manifeste de chaque référence aux extensions qui sont installées sur le système et installent l’extension référencée si elle n’est pas déjà installée. Si une version antérieure d’une extension référencée est installée, la version la plus récente la remplace.  
   
- Si un projet dans une solution à plusieurs projets comprend une référence à un autre projet dans la même solution, le package VSIX comprend les dépendances de ce projet. Vous pouvez remplacer ce comportement en cliquant sur la référence du projet interne, puis, dans la fenêtre **Propriétés** , en affectant à la propriété **groupes de sorties inclus dans** la propriété VSIX la valeur `BuiltProjectOutputGroup`.  
+ Si un projet dans une solution à plusieurs projets comprend une référence à un autre projet dans la même solution, le package VSIX comprend les dépendances de ce projet. Vous pouvez remplacer ce comportement en cliquant sur la référence du projet interne, puis, dans la fenêtre **Propriétés** , en affectant à la propriété **groupes de sorties inclus dans** la propriété VSIX la valeur `BuiltProjectOutputGroup` .  
   
  Pour inclure des dll satellites à partir d’assemblys référencés dans le package VSIX, ajoutez `SatelliteDllsProjectOutputGroup` aux **groupes de sorties inclus dans** la propriété VSIX.  
   
 ## <a name="installation-location"></a>Emplacement d'installation  
  Pendant l’installation, les **extensions et les mises à jour** recherchent le contenu du package VSIX dans un dossier sous%LocalAppData%\Microsoft\VisualStudio\14.0\Extensions.  
   
- Par défaut, l’installation s’applique uniquement à l’utilisateur actuel, car% LocalAppData% est un répertoire spécifique à l’utilisateur. Toutefois, si vous définissez l’élément [ALLUSERS](https://msdn.microsoft.com/ac817f50-3276-4ddb-b467-8bbb1432455b) du manifeste sur `True`, l’extension sera installée sous.\\*VisualStudioInstallationFolder*\Common7\IDE\Extensions et sera disponible pour tous les utilisateurs de l’ordinateur.  
+ Par défaut, l’installation s’applique uniquement à l’utilisateur actuel, car% LocalAppData% est un répertoire spécifique à l’utilisateur. Toutefois, si vous affectez à l’élément [ALLUSERS](https://msdn.microsoft.com/ac817f50-3276-4ddb-b467-8bbb1432455b) du manifeste la valeur `True` , l’extension sera installée sous. \\ *VisualStudioInstallationFolder*\Common7\IDE\Extensions et sera disponible pour tous les utilisateurs de l’ordinateur.  
   
-## <a name="content_typesxml"></a>[Content_Types].xml  
- Le fichier [Content_Types]. XML identifie les types de fichiers dans le fichier. vsix développé. Visual Studio utilise ce fichier lors de l’installation du package, mais n’installe pas le fichier lui-même. Pour plus d’informations sur ce fichier, consultez [la structure de l’Content_Types fichier\]. xml](../extensibility/the-structure-of-the-content-types-dot-xml-file.md).  
+## <a name="content_typesxml"></a>[Content_Types]. Xml  
+ Le fichier [Content_Types]. XML identifie les types de fichiers dans le fichier. vsix développé. Visual Studio utilise ce fichier lors de l’installation du package, mais n’installe pas le fichier lui-même. Pour plus d’informations sur ce fichier, consultez [la structure du \] fichier Content_Types. xml](../extensibility/the-structure-of-the-content-types-dot-xml-file.md).  
   
  Un fichier [Content_Types]. xml est requis par la norme OPC (Open Packaging Conventions). Pour plus d’informations sur OPC, consultez [OPC : nouvelle norme pour l’empaquetage de vos données](https://msdn.microsoft.com/magazine/cc163372.aspx) sur le site Web MSDN.

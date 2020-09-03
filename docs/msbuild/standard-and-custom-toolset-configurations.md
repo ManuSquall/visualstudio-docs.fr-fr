@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bb75d6fc02f2841383127482503799b2c78512cf
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85289181"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Configurations standard et personnalisées des ensembles d’outils
@@ -29,9 +29,9 @@ Un ensemble d’outils MSBuild contient des références à des tâches, des cib
 
 |ToolsVersion|Chemin de l’ensemble d’outils (spécifié dans la propriété de build MSBuildToolsPath ou MSBuildBinPath)|
 |------------------| - |
-|2.0|*\<Windows installation path>\Microsoft.Net\Framework\v2.0.50727\\*|
+|2,0|*\<Windows installation path>\Microsoft.Net\Framework\v2.0.50727\\*|
 |3,5|*\<Windows installation path>\Microsoft.NET\Framework\v3.5\\*|
-|4.0|*\<Windows installation path>\Microsoft.NET\Framework\v4.0.30319\\*|
+|4,0|*\<Windows installation path>\Microsoft.NET\Framework\v4.0.30319\\*|
 |Actuel|*\<Visual Studio installation path>\MSBuild\Current\bin*|
 
  La valeur de `ToolsVersion` détermine l’ensemble d’outils utilisé par un projet généré par Visual Studio. Dans Visual Studio 2019, la valeur par défaut est « Current » (quelle que soit la version spécifiée dans le fichier projet), mais vous pouvez remplacer cet attribut avec le commutateur **/toolsversion** à une invite de commandes. Pour plus d’informations sur cet attribut et d’autres façons de spécifier le `ToolsVersion` , consultez [substitution des paramètres ToolsVersion](../msbuild/overriding-toolsversion-settings.md).
@@ -43,9 +43,9 @@ Un ensemble d’outils MSBuild contient des références à des tâches, des cib
 
 |ToolsVersion|Chemin de l’ensemble d’outils (spécifié dans la propriété de build MSBuildToolsPath ou MSBuildBinPath)|
 |------------------| - |
-|2.0|*\<Windows installation path>\Microsoft.Net\Framework\v2.0.50727\\*|
+|2,0|*\<Windows installation path>\Microsoft.Net\Framework\v2.0.50727\\*|
 |3,5|*\<Windows installation path>\Microsoft.NET\Framework\v3.5\\*|
-|4.0|*\<Windows installation path>\Microsoft.NET\Framework\v4.0.30319\\*|
+|4,0|*\<Windows installation path>\Microsoft.NET\Framework\v4.0.30319\\*|
 |15.0|*\<Visual Studio installation path>\MSBuild\15.0\bin*|
 
  La valeur de `ToolsVersion` détermine l’ensemble d’outils utilisé par un projet généré par Visual Studio. Dans Visual Studio 2017, la valeur par défaut est « 15.0 » (quelle que soit la version spécifiée dans le fichier projet), mais vous pouvez remplacer cet attribut avec le commutateur **/toolsversion** à une invite de commandes. Pour plus d’informations sur cet attribut et d’autres façons de spécifier le `ToolsVersion` , consultez [substitution des paramètres ToolsVersion](../msbuild/overriding-toolsversion-settings.md).
@@ -114,4 +114,4 @@ Visual Studio 2017 et versions ultérieures n’utilise pas une clé de Registre
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Ensemble d’outils (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)
+- [Ensemble d'outils (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)

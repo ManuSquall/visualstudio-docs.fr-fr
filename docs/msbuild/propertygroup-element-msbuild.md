@@ -19,15 +19,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b94cf266be81b81aca9c83fe8d29b9777ee9114b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77632925"
 ---
 # <a name="propertygroup-element-msbuild"></a>Élément PropertyGroup (MSBuild)
 
-Contient un ensemble d’éléments [Property](../msbuild/property-element-msbuild.md) définis par l’utilisateur. Chaque `Property` élément utilisé dans un projet MSBuild `PropertyGroup` doit être un enfant d’un élément.
+Contient un ensemble d’éléments [Property](../msbuild/property-element-msbuild.md) définis par l’utilisateur. Chaque `Property` élément utilisé dans un projet MSBuild doit être un enfant d’un `PropertyGroup` élément.
 
  \<Project> \<PropertyGroup>
 
@@ -60,9 +60,9 @@ Contient un ensemble d’éléments [Property](../msbuild/property-element-msbui
 
 | Élément | Description |
 | - | - |
-| [Projet](../msbuild/project-element-msbuild.md) | Élément racine requis d’un fichier de projet MSBuild. |
+| [Projet](../msbuild/project-element-msbuild.md) | Élément racine requis d’un fichier projet MSBuild. |
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 
  L’exemple de code suivant montre comment définir des propriétés en fonction d’une condition. Dans cet exemple, si la valeur de la propriété `CompileConfig` est `DEBUG`, les propriétés `Optimization`, `Obfuscate` et `OutputPath` contenues dans l’élément `PropertyGroup` sont définies.
 
@@ -76,5 +76,5 @@ Contient un ensemble d’éléments [Property](../msbuild/property-element-msbui
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Référence du schéma de fichier de projet](../msbuild/msbuild-project-file-schema-reference.md)
-- [Propriétés MSBuild](../msbuild/msbuild-properties.md)
+- [Référence du schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)
+- [MSBuild (propriétés)](../msbuild/msbuild-properties.md)

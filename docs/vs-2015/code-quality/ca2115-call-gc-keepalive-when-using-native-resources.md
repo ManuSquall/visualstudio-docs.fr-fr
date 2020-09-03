@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: c668172ca318000068fb4e90f4848e456c32208d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543622"
 ---
 # <a name="ca2115-call-gckeepalive-when-using-native-resources"></a>CA2115 : Appelez GC.KeepAlive lorsque vous utilisez des ressources natives
@@ -32,7 +32,7 @@ ms.locfileid: "85543622"
 |Category|Microsoft.Security|
 |Modification avec rupture|Sans rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Une méthode déclarée dans un type avec un finaliseur référence <xref:System.IntPtr?displayProperty=fullName> un <xref:System.UIntPtr?displayProperty=fullName> champ ou, mais n’appelle pas <xref:System.GC.KeepAlive%2A?displayProperty=fullName> .
 
 ## <a name="rule-description"></a>Description de la règle
@@ -53,7 +53,7 @@ ms.locfileid: "85543622"
   Examinez attentivement les autres messages avant de les exclure. Cette règle détecte les erreurs difficiles à reproduire et à déboguer.
 
 ## <a name="example"></a>Exemple
- Dans l’exemple suivant, `BadMethod` n’inclut pas d’appel à `GC.KeepAlive` et, par conséquent, viole la règle. `GoodMethod`contient le code corrigé.
+ Dans l’exemple suivant, `BadMethod` n’inclut pas d’appel à `GC.KeepAlive` et, par conséquent, viole la règle. `GoodMethod` contient le code corrigé.
 
 > [!NOTE]
 > Cet exemple est pseudo-code même si le code est compilé et exécuté, l’avertissement n’est pas déclenché, car une ressource non managée n’est pas créée ou libérée.

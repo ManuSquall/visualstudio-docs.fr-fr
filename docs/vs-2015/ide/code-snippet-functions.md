@@ -14,28 +14,28 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 92533b90e6a2da9f29a67d13c6e0eee2c31dbcfe
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72620239"
 ---
 # <a name="code-snippet-functions"></a>Fonctions des extraits de code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Trois fonctions peuvent être utilisées avec les extraits de code [!INCLUDE[csprcs](../includes/csprcs-md.md)]. Les fonctions sont spécifiées dans l’élément [Function](https://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df) de l’extrait de code. Pour plus d’informations sur la création d’extraits de code, consultez [Extraits de code](../ide/code-snippets.md).
+Trois fonctions peuvent être utilisées avec les extraits de code [!INCLUDE[csprcs](../includes/csprcs-md.md)]. Les fonctions sont spécifiées dans l’élément [Function](https://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df) de l’extrait de code. Pour plus d’informations sur la création d’extraits de code, consultez [extraits de code](../ide/code-snippets.md).
 
 ## <a name="functions"></a>Fonctions
  Le tableau suivant décrit les fonctions qui peuvent être utilisées avec l’élément `Function` dans les extraits de code.
 
-|Fonction|Description|Langue|
+|Fonction|Description|Langage|
 |--------------|-----------------|--------------|
 |`GenerateSwitchCases(` `EnumerationLiteral` `)`|Génère une instruction switch et un ensemble d’instructions case pour les membres de l’énumération spécifiée par le paramètre `EnumerationLiteral`. Le paramètre `EnumerationLiteral` doit être une référence à un littéral d’énumération ou un type d’énumération.|[!INCLUDE[csprcs](../includes/csprcs-md.md)]|
 |`ClassName()`|Retourne le nom de la classe qui contient l’extrait de code inséré.|[!INCLUDE[csprcs](../includes/csprcs-md.md)]|
 |`SimpleTypeName(` `TypeName` `)`|Réduit le paramètre *TypeName* à sa forme la plus simple dans le contexte dans lequel l’extrait de code a été appelé.|[!INCLUDE[csprcs](../includes/csprcs-md.md)]|
 
-## <a name="example"></a>Exemples
- L'exemple suivant montre comment utiliser la fonction `GenerateSwitchCases`. Quand cet extrait de code est inséré et qu’une énumération est entrée dans le littéral `$switch_on$`, le littéral `$cases$` génère une instruction `case` pour chaque valeur contenue dans l’énumération.
+## <a name="example"></a>Exemple
+ L’exemple suivant explique comment utiliser la fonction `GenerateSwitchCases`. Quand cet extrait de code est inséré et qu’une énumération est entrée dans le littéral `$switch_on$`, le littéral `$cases$` génère une instruction `case` pour chaque valeur contenue dans l’énumération.
 
 ```
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
@@ -75,8 +75,8 @@ Trois fonctions peuvent être utilisées avec les extraits de code [!INCLUDE[cs
 </CodeSnippets>
 ```
 
-## <a name="example"></a>Exemples
- L'exemple suivant montre comment utiliser la fonction `ClassName`. Quand cet extrait de code est inséré, le littéral `$classname$` est remplacé par le nom de la classe englobante à cet emplacement dans le fichier de code.
+## <a name="example"></a>Exemple
+ L’exemple suivant explique comment utiliser la fonction `ClassName`. Quand cet extrait de code est inséré, le littéral `$classname$` est remplacé par le nom de la classe englobante à cet emplacement dans le fichier de code.
 
 ```
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
@@ -121,7 +121,7 @@ Trois fonctions peuvent être utilisées avec les extraits de code [!INCLUDE[cs
 </CodeSnippets>
 ```
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
  Cet exemple montre comment utiliser la fonction `SimpleTypeName`. Quand cet extrait de code est inséré dans un fichier de code, le littéral `$SystemConsole$` est remplacé par la forme la plus simple du type <xref:System.Console> dans le contexte dans lequel l’extrait de code a été appelé.
 
 ```

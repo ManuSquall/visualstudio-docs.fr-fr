@@ -13,23 +13,23 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fdc9024db06fe27fab5dfdf9589300a6eb671368
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633211"
 ---
 # <a name="msbuild-special-characters"></a>Caractères spéciaux MSBuild
 
 MSBuild réserve certains caractères pour une utilisation spéciale dans des contextes spécifiques. Pour les utiliser littéralement dans le contexte où ils sont réservés, il vous suffit de les placer dans une séquence d’échappement. Par exemple, un astérisque n’a une signification spéciale que dans les attributs `Include` et `Exclude` d’une définition d’élément, et dans les appels à `CreateItem`. Si vous souhaitez qu’un astérisque apparaisse comme un astérisque dans l’un de ces contextes, vous devez le placer dans une séquence d’échappement. Dans tous les autres contextes, tapez simplement l’astérisque là où vous souhaitez qu’il apparaisse.
 
- Pour placer un caractère spécial dans une séquence d’échappement, utilisez la syntaxe %\<xx>, où \<xx> représente la valeur hexadécimale du caractère ASCII. Pour plus d’informations, voir [Comment: Échapper à des personnages spéciaux dans MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md).
+ Pour placer un caractère spécial dans une séquence d’échappement, utilisez la syntaxe% \<xx> , où \<xx> représente la valeur hexadécimale ASCII du caractère. Pour plus d’informations, consultez [Comment : échapper des caractères spéciaux dans MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md).
 
 ## <a name="special-characters"></a>Caractères spéciaux
 
- Le tableau suivant répertorie les caractères spéciaux MSBuild :
+ Le tableau suivant répertorie les caractères spéciaux MSBuild :
 
-|**personnage**|**Ascii**|**Utilisation réservée**|
+|**Caractère**|**ASCII**|**Utilisation réservée**|
 |-------------------|---------------|------------------------|
 |%|%25|Référencement des métadonnées|
 |$|%24|Référencement des propriétés|

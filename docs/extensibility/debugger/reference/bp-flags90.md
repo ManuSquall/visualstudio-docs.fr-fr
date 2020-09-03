@@ -1,5 +1,5 @@
 ---
-title: BP_FLAGS90 Microsoft Docs
+title: BP_FLAGS90 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5628af4a6e5c4deae3de02340e882bd2605e22d3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738043"
 ---
 # <a name="bp_flags90"></a>BP_FLAGS90
-Énumère les valeurs valides pour les drapeaux optionnels. Les drapeaux optionnels peuvent être utilisés pour spécifier des informations supplémentaires lorsque vous définissez un point d’arrêt. Cette énumération prolonge [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) la BP_FLAGS’énumération.
+Énumère les valeurs valides pour les indicateurs facultatifs. Les indicateurs facultatifs peuvent être utilisés pour spécifier des informations supplémentaires lorsque vous définissez un point d’arrêt. Cette énumération étend l’énumération [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) .
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -54,23 +54,23 @@ public enum enum_BP_FLAGS90
 
 ## <a name="fields"></a>Champs
 `BP90_FLAG_NONE`\
-Spécifie aucun drapeau de point d’arrêt.
+Ne spécifie aucun indicateur de point d’arrêt.
 
 `BP90_FLAG_MAP_DOCPOSITION`\
-Précise que le moteur de débogé (DE) doit cartographier le point d’arrêt en utilisant la position du document. Cela ne s’applique qu’aux points de rupture définis dans les fichiers sources axés sur le script tels que Active Server Pages (ASP).
+Spécifie que le moteur DE débogage (DE) doit mapper le point d’arrêt à l’aide de la position du document. Cela s’applique uniquement aux points d’arrêt définis dans les fichiers sources orientés script tels que les pages de Active Server (ASP).
 
 `BP90_FLAG_DONT_STOP`\
-Précise que le point d’arrêt doit être traité par le moteur de débogé, mais que le moteur de débogé ne devrait finalement pas s’arrêter là; c’est-à-dire qu’un objet d’événement [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) ne doit pas être envoyé. Ce drapeau est conçu pour être utilisé principalement avec des points de trace.
+Spécifie que le point d’arrêt doit être traité par le moteur de débogage, mais que le moteur de débogage ne doit finalement pas s’arrêter là ; autrement dit, un objet événement [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) ne doit pas être envoyé. Cet indicateur est conçu pour être utilisé principalement avec les points de trace.
 
 `BP90_FLAG_TRACEPOINT_CONTINUE`\
-Utilisé par le moteur de débogé indigène pour déterminer si l’état de marche doit être effacé. Il diffère de BP90_FLAG_DONT_STOP parce que BP90_FLAG_DONT_STOP n’est pas réglée si le point de trace exécute une macro.
+Utilisé par le moteur de débogage natif pour déterminer si l’état d’exécution doit être effacé. Il diffère de BP90_FLAG_DONT_STOP, car BP90_FLAG_DONT_STOP n’est pas défini si le point de trace exécute une macro.
 
-## <a name="requirements"></a>Spécifications
-En-tête: Msdbg90.h
+## <a name="requirements"></a>Configuration requise
+En-tête : Msdbg90. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Espace de noms : Microsoft. VisualStudio. Debugger. Interop
 
-Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

@@ -15,9 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 778bbc9cff2d7853628edbb5be6466acc55d9ab8
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015812"
 ---
 # <a name="use-modules-to-include-files-in-the-solution"></a>Utiliser des modules pour inclure des fichiers dans la solution
@@ -51,7 +52,7 @@ ms.locfileid: "86015812"
 |------------------|-----------------|
 |Éléments|Contient tous les éléments définis dans le module.|
 |Module|L’élément module possède un attribut unique, *Name*, qui spécifie le nom du module au format `<Module Name="Module1">` .<br /><br /> Notez que si vous modifiez le nom du module (ou sa propriété *nom de dossier* ), vous devez mettre à jour manuellement le nom dans l’élément de module.<br /><br /> Si vous spécifiez un sous-répertoire pour le ou les fichiers dans l’élément de module, [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] (WSS) crée automatiquement une structure de répertoire correspondante.|
-|File|L’élément file a deux paramètres, *path* et *URL*.<br /><br /> -Path : nom et emplacement du fichier dans la solution SharePoint. Le format est, `Path="Module1\Sample.txt"` .<br /><br /> -URL : emplacement où le fichier sera déployé sur le serveur SharePoint. Le format est, `Url="Module1/Sample.txt"` .<br /><br /> -Type : attribut facultatif qui a deux paramètres : *GhostableInLibrary* et *Ghostable*. Le format est, `Type="GhostableInLibrary"` . La spécification de *GhostableInLibrary* signifie que le fichier sera ajouté à une bibliothèque de documents dans SharePoint avec un élément de liste pour accompagner le fichier lorsqu’il est ajouté à la bibliothèque. Si vous spécifiez *Ghostable* , le fichier est ajouté à SharePoint en dehors de la bibliothèque de documents.|
+|Fichier|L’élément file a deux paramètres, *path* et *URL*.<br /><br /> -Path : nom et emplacement du fichier dans la solution SharePoint. Le format est, `Path="Module1\Sample.txt"` .<br /><br /> -URL : emplacement où le fichier sera déployé sur le serveur SharePoint. Le format est, `Url="Module1/Sample.txt"` .<br /><br /> -Type : attribut facultatif qui a deux paramètres : *GhostableInLibrary* et *Ghostable*. Le format est, `Type="GhostableInLibrary"` . La spécification de *GhostableInLibrary* signifie que le fichier sera ajouté à une bibliothèque de documents dans SharePoint avec un élément de liste pour accompagner le fichier lorsqu’il est ajouté à la bibliothèque. Si vous spécifiez *Ghostable* , le fichier est ajouté à SharePoint en dehors de la bibliothèque de documents.|
 
  Chaque fichier que vous souhaitez déployer requiert une `<File>` entrée d’élément distincte dans *Elements.xml*.
 

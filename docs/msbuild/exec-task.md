@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 785f3f7d350a21ae31fe9ee4657b967b63e40f2d
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288921"
 ---
 # <a name="exec-task"></a>Exec (tâche)
@@ -51,7 +51,7 @@ Le tableau ci-dessous décrit les paramètres de la tâche `Exec`.
 
 [!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
 Cette tâche est utile quand une tâche MSBuild spécifique pour le travail que vous souhaitez effectuer n’est pas disponible. Toutefois, la tâche `Exec`, contrairement à une tâche plus spécifique, ne peut pas effectuer de traitement ou d’opérations conditionnelles supplémentaires en fonction du résultat de l’outil ou de la commande exécutée.
 

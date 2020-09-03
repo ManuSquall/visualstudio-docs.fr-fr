@@ -10,13 +10,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7dc2ba585c500fe045d143a2b8baa2d193466fdf
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75917783"
 ---
-# <a name="work-with-multiple-user-accounts"></a>Utiliser plusieurs comptes d'utilisateur
+# <a name="work-with-multiple-user-accounts"></a>Utiliser plusieurs comptes d’utilisateur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Si vous avez plusieurs comptes Microsoft et/ou comptes professionnels ou scolaires, vous pouvez les ajouter à Visual Studio. Vous avez ainsi accès aux ressources de n'importe quel compte sans avoir à vous y connecter séparément. À compter de Visual Studio 2015 RTM, Azure, Application Insights, Team Foundation Server et Office 365 prennent en charge l'expérience de connexion simplifiée. D'autres services pourront être rajoutés au fil du temps.
@@ -29,7 +29,7 @@ Si vous avez plusieurs comptes Microsoft et/ou comptes professionnels ou scolair
 
 1. Connectez-vous à Visual Studio 2015 avec un compte Microsoft ou un compte professionnel. Votre nom d'utilisateur doit apparaître dans le coin supérieur droit de la fenêtre, comme ceci :
 
-     ![Utilisateur actuellement utilisateur connecté](../ide/media/vs2015-username.png "VS2015_UserName")
+     ![Utilisateur actuellement connecté](../ide/media/vs2015-username.png "VS2015_UserName")
 
 ### <a name="access-your-azure-account-in-server-explorer"></a>Accès à votre compte Azure dans l'Explorateur de serveurs
  Appuyez sur **Ctrl + Alt + S** pour ouvrir l' **Explorateur de serveurs**. Cliquez sur l'icône Azure pour la développer. Les ressources disponibles dans le compte Azure associé à l'ID que vous avez utilisé pour vous connecter à Visual Studio 2015 s'affichent alors. Les ressources affichées doivent ressembler à ceci, sauf qu’il doit s’agir de vos propres ressources et non des ressources de M. Guido :
@@ -38,7 +38,7 @@ Si vous avez plusieurs comptes Microsoft et/ou comptes professionnels ou scolair
 
  La première fois que vous utilisez Visual Studio sur un appareil spécifique, la boîte de dialogue affiche uniquement les abonnements inscrits sous l'ID avec lequel vous vous êtes connecté à l'IDE. Vous pouvez accéder aux ressources de n'importe lequel de vos autres comptes directement de l' **Explorateur de serveurs** en cliquant avec le bouton droit sur le nœud Azure, en choisissant **Gérer et filtrer les abonnements** , puis en ajoutant vos comptes à partir du contrôle de sélecteur de compte. Si vous le souhaitez, vous pouvez ensuite choisir un autre compte en cliquant sur la flèche déroulante vers le bas et en faisant une sélection dans la liste des comptes. Après avoir choisi le compte, vous pouvez choisir les abonnements inscrits sous ce compte que vous voulez afficher dans l'Explorateur de serveurs.
 
- ![Boîte de dialogue gérer les abonnements Azure](../ide/media/vs2015-manage-subs.png "vs2015_manage_subs")
+ ![Boîte de dialogue Gérer les abonnements Azure](../ide/media/vs2015-manage-subs.png "vs2015_manage_subs")
 
  La prochaine fois que vous ouvrez l'Explorateur de serveurs, les ressources correspondant à ces abonnements s'affichent.
 
@@ -49,12 +49,12 @@ Si vous avez plusieurs comptes Microsoft et/ou comptes professionnels ou scolair
 2. Cliquez avec le bouton droit sur le nœud du projet dans l’Explorateur de solutions, puis choisissez **Ajouter > Service connecté**. Dans l'Assistant lié à la fonctionnalité Ajouter un service connecté qui apparaît, vous pouvez voir la liste des services dans le compte Azure associé à votre ID de connexion Visual Studio. Notez que vous n'êtes pas obligé de vous connecter séparément à Azure. Vous devez néanmoins vous connecter aux autres comptes la première fois que vous tentez d'accéder à leurs ressources à partir d'un ordinateur donné.
 
     > [!WARNING]
-    > S’il s’agit de la première fois que vous créez une application du Windows Store dans Visual Studio 2015 sur un ordinateur spécifique, vous êtes invité à activer votre appareil pour le mode de développement en accédant à **paramètres &#124; . Mises à jour et sécurité &#124; pour les développeurs** sur votre ordinateur. Pour plus d’informations, consultez [Activer votre appareil pour le développement](https://msdn.microsoft.com/library/windows/apps/dn706236.aspx).
+    > S’il s’agit de la première fois que vous créez une application du Windows Store dans Visual Studio 2015 sur un ordinateur spécifique, vous êtes invité à activer votre appareil pour le mode de développement en accédant à **paramètres &#124;. Mises à jour et sécurité &#124; pour les développeurs** sur votre ordinateur. Pour plus d’informations, consultez [activer votre appareil pour le développement](https://msdn.microsoft.com/library/windows/apps/dn706236.aspx).
 
-### <a name="access_azure"></a> Accès à Azure Active Directory dans un projet web
+### <a name="access-azure-active-directory-in-a-web-project"></a><a name="access_azure"></a> Accès à Azure Active Directory dans un projet web
  Azure AD permet de prendre en charge l'authentification unique des utilisateurs finaux dans les applications web MVC ASP.NET ou l'authentification AD dans les services API web. L'authentification de domaine est différente de l'authentification de comptes d'utilisateurs individuels ; les utilisateurs qui ont accès à votre domaine Active Directory peuvent utiliser leur compte Azure AD existant pour se connecter à vos applications web. Les applications Office 365 peuvent également utiliser l'authentification de domaine. Pour voir à quoi cela ressemble concrètement, créez une application web (**Fichier > Nouveau projet > C# > Cloud > Application web ASP.NET**). Dans la boîte de dialogue Nouveau projet ASP.NET, choisissez **Modifier l'authentification**. L'Assistant Authentification s'affiche et vous permet de choisir le type d'authentification à utiliser dans votre application.
 
- ![Boîte de dialogue Modifier l’authentification pour ASP.NET](../ide/media/vs2015-change-authentication.png "VS2015_change_authentication")
+ ![Boîte de dialogue Modifier l'authentification pour ASP.NET](../ide/media/vs2015-change-authentication.png "VS2015_change_authentication")
 
  Pour plus d’informations sur les différents types d’authentification dans ASP.NET, consultez [Creating ASP.NET Web Projects in Visual Studio 2013](/aspnet/visual-studio/overview/2013/creating-web-projects-in-visual-studio#orgauth) (les informations relatives à l’authentification sont toujours applicables à Visual Studio 2015).
 

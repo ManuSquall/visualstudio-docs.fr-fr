@@ -1,5 +1,5 @@
 ---
-title: 'Étape 1 : créer un projet et ajouter des étiquettes à votre formulaire'
+title: 'Étape 1 : Créer un projet et ajouter des étiquettes à votre formulaire'
 ms.date: 10/15/2019
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -11,24 +11,24 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6bf904fca84fba88e81306ff91add6c2156b4544
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77579447"
 ---
-# <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Étape 1 : créer un projet et ajouter des étiquettes à votre formulaire
+# <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Étape 1 : Créer un projet et ajouter des étiquettes à votre formulaire
 
 Les premières étapes du développement de ce questionnaire consistent à créer le projet, puis à ajouter des étiquettes, un bouton et d'autres contrôles à un formulaire. Vous devez également définir des propriétés pour chaque contrôle que vous ajoutez. Le projet contiendra le formulaire, les contrôles et, ultérieurement dans le didacticiel, du code. Le bouton démarre le questionnaire, les étiquettes affichent les problèmes à résoudre et les autres contrôles montrent les réponses aux problèmes et le temps restant pour terminer le questionnaire.
 
 > [!NOTE]
-> Cette rubrique fait partie d'une série de didacticiels sur les concepts de codage de base. Pour un aperçu du tutoriel, voir [Tutorial 2: Créer un quiz de mathématiques chronométrés](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Cette rubrique fait partie d'une série de didacticiels sur les concepts de codage de base. Pour obtenir une vue d’ensemble du didacticiel, consultez [didacticiel 2 : créer un questionnaire mathématique chronométré](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 ## <a name="to-create-a-project-for-a-form"></a>Pour créer un projet pour un formulaire
 
 ::: moniker range="vs-2017"
 
-1. Sur la barre de menu, choisissez **File** > **New** > **Project**.
+1. Dans la barre de menus, choisissez **fichier** > **nouveau** > **projet**.
 
 1. Choisissez **Visual C#** ou **Visual Basic** dans la partie gauche de la boîte de dialogue **Nouveau projet**, puis, choisissez **Windows Desktop**.
 
@@ -43,15 +43,15 @@ Les premières étapes du développement de ce questionnaire consistent à crée
 
 ::: moniker range="vs-2019"
 
-1. Sur la fenêtre de départ, choisissez **Créer un nouveau projet**.
+1. Dans la fenêtre Démarrer, choisissez **créer un nouveau projet**.
 
    ![Afficher la fenêtre « Créer un projet »](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. Dans la fenêtre **Créer un projet**, entrez ou tapez *Windows Forms* dans la zone de recherche. Ensuite, choisissez **Desktop** parmi la liste **de type Projet.**
+1. Dans la fenêtre **Créer un projet**, entrez ou tapez *Windows Forms* dans la zone de recherche. Ensuite, choisissez **Bureau** dans la liste **type de projet** .
 
-   Après avoir appliqué le filtre **de type Projet,** choisissez le modèle **Windows Forms App (.NET Framework)** pour C ou Visual Basic, puis choisissez **Next**.
+   Après avoir appliqué le filtre de **type de projet** , choisissez le modèle d' **application Windows Forms (.NET Framework)** pour C# ou Visual Basic, puis choisissez **suivant**.
 
-   ![Choisissez le modèle de base visuel ou Cmd pour l’application formulaires Windows (.NET Framework)](./media/create-new-project-search-winforms-filtered.png)
+   ![Choisir le modèle C# ou Visual Basic pour l’application Windows Forms (.NET Framework)](./media/create-new-project-search-winforms-filtered.png)
 
    > [!NOTE]
    > Si vous ne voyez pas le modèle **Windows Forms (.NET Framework)**, vous pouvez l’installer à partir de la fenêtre **Créer un projet**. Dans le **Vous ne trouvez pas ce que vous cherchez ?**, choisissez le lien **Installer plus d’outils et de fonctionnalités**.
@@ -64,7 +64,7 @@ Les premières étapes du développement de ce questionnaire consistent à crée
    >
    > Après cela, choisissez le bouton **Modifier** dans Visual Studio Installer. Vous pouvez être invité à enregistrer votre travail ; le cas échéant, faites-le. Ensuite, choisissez **Continuer** pour installer la charge de travail.
 
-1. Dans la fenêtre **Configurer votre nouveau projet**, saisissez ou entrez *MathQuiz* dans la boîte **Nom du projet**. Ensuite, choisissez **Créer**.
+1. Dans la fenêtre **Configurer votre nouveau projet**, saisissez ou entrez *MathQuiz* dans la boîte **Nom du projet**. Ensuite, choisissez **créer**.
 
 ::: moniker-end
 
@@ -98,15 +98,15 @@ Les premières étapes du développement de ce questionnaire consistent à crée
 
      Ces lignes vous aideront à aligner des contrôles dans le formulaire.
 
-6. Dans la fenêtre **Propriétés,** choisissez la propriété **Text,** puis choisissez la clé **Backspace** pour effacer sa valeur.
+6. Dans la fenêtre **Propriétés** , choisissez la propriété **Text** , puis appuyez sur la touche **retour arrière** pour effacer sa valeur.
 
-7. Choisissez le signe**+** positif ( ) à côté de la propriété **Font,** puis changer la valeur de la propriété **Taille** à **15,75**.
+7. Choisissez le signe plus ( **+** ) en regard de la propriété **font** , puis remplacez la valeur de la propriété **Size** par **15,75**.
 
      Vous pouvez modifier plusieurs propriétés de police, comme le montre la capture d’écran suivante.
 
      ![Fenêtre Propriétés affichant la taille de police](../ide/media/express_setfontsize.png)
 
-8. Ajoutez un autre contrôle d’étiquette de la boîte à **outils,** puis définissez sa taille de police à **15.75**.
+8. Ajoutez un autre contrôle Label à partir de la **boîte à outils**, puis définissez sa taille de police sur **15,75**.
 
 9. Affectez la valeur **Temps restant** à la propriété **Text**.
 
@@ -114,7 +114,7 @@ Les premières étapes du développement de ce questionnaire consistent à crée
 
 ### <a name="to-add-controls-for-the-addition-problems"></a>Pour ajouter des contrôles pour les problèmes d'addition
 
-1. Ajouter un contrôle d’étiquette de la boîte à **outils,** puis définir sa propriété **textuelle** **à?** (point d’interrogation).
+1. Ajoutez un contrôle Label à partir de la **boîte à outils**, puis affectez à sa propriété **Text** la valeur **?** (point d’interrogation).
 
 2. Affectez à la propriété **AutoSize** la valeur **False**.
 
@@ -128,9 +128,9 @@ Les premières étapes du développement de ce questionnaire consistent à crée
 
 7. Affectez à la propriété **(Name)** la valeur **plusLeftLabel**.
 
-8. Choisissez **l’étiquette plusLeftLabel,** puis choisissez soit les clés **Ctrl**+**C** ou **copiez** sur le menu **Edit.**
+8. Choisissez l’étiquette **plusLeftLabel** , puis choisissez **CTRL** + **C** ou **copier** dans le menu **Edition** .
 
-9. Coller l’étiquette trois fois en choisissant soit les touches **Ctrl**+**V** ou **pâte** sur le menu **Edit.**
+9. Collez l’étiquette trois fois en cliquant sur les touches **CTRL** + **V** ou sur **coller** dans le menu **Edition** .
 
 10. Disposez les trois nouveaux contrôles Label en ligne à droite du contrôle Label **plusLeftLabel**.
 
@@ -150,7 +150,7 @@ Les premières étapes du développement de ce questionnaire consistent à crée
 
 16. Modifiez la propriété **(Name)** du contrôle NumericUpDown en lui affectant la valeur **sum** (somme).
 
-     Vous avez créé la première rangée, comme le montre l’illustration suivante.
+     Vous avez créé la première ligne, comme indiqué dans l’illustration suivante.
 
      ![Première ligne du questionnaire mathématique](../ide/media/express_firstrow.png)
 
@@ -196,7 +196,7 @@ Les premières étapes du développement de ce questionnaire consistent à crée
 6. Affectez à la propriété **TabIndex** du contrôle **startButton** la valeur **1**.
 
     > [!NOTE]
-    > La propriété **TabIndex** définit l’ordre des commandes lorsque le quiz-dispose choisit la clé **Tab.** Pour voir comment cela fonctionne, ouvrez n’importe quelle boîte de dialogue (par exemple, sur la barre de menu, choisissez **File** > **Open**), puis choisissez la clé **Tab** à quelques reprises. Regardez comment votre curseur passe du contrôle au contrôle chaque fois que vous choisissez la clé **Tab.** Un programmeur a choisi l'ordre en créant le formulaire.
+    > La propriété **TabIndex** définit l’ordre des contrôles lorsque le preneur de quiz choisit la touche **Tab** . Pour voir comment cela fonctionne, ouvrez une boîte de dialogue (par exemple, dans la barre de menus, choisissez **fichier**  >  **ouvrir**), puis appuyez plusieurs fois sur la touche **Tab** . Regardez comment votre curseur passe d’un contrôle à l’autre chaque fois que vous choisissez la touche **Tab** . Un programmeur a choisi l'ordre en créant le formulaire.
 
 7. Affectez à la propriété **TabIndex** du contrôle NumericUpDown de somme la valeur **2**, à celle du contrôle de différence la valeur **3**, à celle du contrôle de produit la valeur **4** et à celle du contrôle quotient la valeur **5**.
 
@@ -208,6 +208,6 @@ Les premières étapes du développement de ce questionnaire consistent à crée
 
 ## <a name="to-continue-or-review"></a>Pour continuer ou examiner
 
-- Pour passer à l’étape suivante tutoriel, voir **[Étape 2: Créer un problème d’ajout aléatoire](../ide/step-2-create-a-random-addition-problem.md)**.
+- Pour passer à l’étape suivante du didacticiel, consultez **[étape 2 : créer un problème d’addition aléatoire](../ide/step-2-create-a-random-addition-problem.md)**.
 
-- Pour revenir au sujet de l’aperçu, voir [Tutorial 2: Créer un quiz de mathématiques chronométré](../ide/tutorial-2-create-a-timed-math-quiz.md).
+- Pour revenir à la rubrique de présentation, consultez [didacticiel 2 : créer un questionnaire mathématique chronométré](../ide/tutorial-2-create-a-timed-math-quiz.md).

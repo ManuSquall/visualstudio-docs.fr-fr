@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: faac29c59b78d8f3f1a0260b0b7a8ace16169f9d
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75916796"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Comment : étendre le concepteur de langage spécifique à un domaine
@@ -26,11 +26,11 @@ Vous pouvez créer des extensions pour le concepteur que vous utilisez pour modi
 
 #### <a name="to-create-a-dsl-designer-extension-solution"></a>Pour créer une solution d’extension Concepteur DSL
 
-1. Créez un nouveau projet à l’aide du modèle de projet Bibliothèque de classes. Dans la boîte de dialogue **nouveau projet** , cliquez sur  **C# visuel** , puis dans la fenêtre du milieu, cliquez sur **bibliothèque de classes**.
+1. Créez un nouveau projet à l’aide du modèle de projet Bibliothèque de classes. Dans la boîte de dialogue **nouveau projet** , cliquez sur **Visual C#** , puis dans la fenêtre du milieu, cliquez sur **bibliothèque de classes**.
 
      Ce projet contiendra le code de vos extensions.
 
-2. Créez un projet à l’aide du modèle de projet VSIX. Dans la boîte de dialogue **nouveau projet** , développez **visuel C#** , cliquez sur **extensibilité**, puis dans la fenêtre du milieu, sélectionnez **projet VSIX**.
+2. Créez un projet à l’aide du modèle de projet VSIX. Dans la boîte de dialogue **nouveau projet** , développez **Visual C#**, cliquez sur **extensibilité**, puis, dans la fenêtre du milieu, sélectionnez **projet VSIX**.
 
      Sélectionnez **Ajouter à la solution**.
 
@@ -46,13 +46,13 @@ Vous pouvez créer des extensions pour le concepteur que vous utilisez pour modi
 
 7. Dans le projet de bibliothèque de classes, ajoutez des références aux assemblys suivants :
 
-     Microsoft.VisualStudio.CoreUtility
+     Microsoft. VisualStudio. CoreUtility
 
-     Microsoft.VisualStudio.Modeling.Sdk.11.0
+     Microsoft. VisualStudio. Modeling. Sdk. 11.0
 
-     Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0
+     Microsoft. VisualStudio. Modeling. Sdk. Diagrams. 11.0
 
-     Microsoft.VisualStudio.Modeling.Sdk.DslDefinition.11.0
+     Microsoft. VisualStudio. Modeling. Sdk. DslDefinition. 11.0
 
      Microsoft.VisualStudio.Modeling.Sdk.Integration.11.0
 
@@ -67,24 +67,24 @@ Vous pouvez créer des extensions pour le concepteur que vous utilisez pour modi
 ## <a name="testing-and-deployment"></a>Tests et déploiement
  Pour tester l’une des extensions de cette rubrique, générez et exécutez la solution. Une instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] s’ouvre. Dans cette instance, ouvrez une solution DSL. Modifiez le diagramme DslDefinition. Le comportement de l’extension est visible.
 
- Pour déployer les extensions sur le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]principal et sur d’autres ordinateurs, procédez comme suit :
+ Pour déployer les extensions sur le principal [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] et sur d’autres ordinateurs, procédez comme suit :
 
-1. Rechercher le fichier d’installation de VSIX dans votre projet VSIX dans emplacement\\*\*\\\*.vsix
+1. Recherchez le fichier d’installation VSIX dans votre projet VSIX dans bin \\ * \\ \* . vsix
 
 2. Copiez ce fichier sur l’ordinateur cible, puis dans l’Explorateur Windows (ou l’Explorateur de fichiers), double-cliquez dessus.
 
-    Le gestionnaire d’extensions [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] s’ouvre pour confirmer que l’extension a été installée.
+    Le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Gestionnaire d’extensions s’ouvre pour confirmer que l’extension a été installée.
 
    Pour désinstaller l’extension, procédez comme suit :
 
-3. dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], dans le menu **Outils** , cliquez sur **Gestionnaire d’extensions**.
+3. dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , dans le menu **Outils** , cliquez sur **Gestionnaire d’extensions**.
 
 4. Sélectionnez l’extension et supprimez-la.
 
 ## <a name="adding-a-shortcut-menu-command"></a>Ajout d’une commande de menu contextuel
  Pour qu’une commande de menu contextuel s’affiche sur la surface de Concepteur DSL ou dans la fenêtre de l’Explorateur DSL, écrivez une classe ressemblant à ce qui suit.
 
- La classe doit implémenter `ICommandExtension` et doit avoir l’attribut `DslDefinitionModelCommandExtension`.
+ La classe doit implémenter `ICommandExtension` et doit avoir l’attribut `DslDefinitionModelCommandExtension` .
 
 ```
 using System.Collections.Generic;

@@ -17,17 +17,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 18e1722fcd6867ca5e8ae52e220ff0a3dd2a3b7f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633614"
 ---
 # <a name="itemmetadata-element-msbuild"></a>ItemMetadata, élément (MSBuild)
 
 Contient une clé de métadonnées d’élément définie par l’utilisateur, qui contient la valeur des métadonnées de l’élément. Un élément peut comporter un nombre quelconque de paires clé-valeur de métadonnées.
 
- \<Project> \<ItemGroup> \<Item>
+ \<Project> \<ItemGroup>
+ \<Item>
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -53,7 +54,7 @@ Contient une clé de métadonnées d’élément définie par l’utilisateur, q
 
 |Élément|Description|
 |-------------|-----------------|
-|[Article](../msbuild/item-element-msbuild.md)|Élément défini par l’utilisateur qui définit les entrées pour le processus de génération.|
+|[Item](../msbuild/item-element-msbuild.md)|Élément défini par l’utilisateur qui définit les entrées pour le processus de génération.|
 
 ## <a name="text-value"></a>Valeur texte
 
@@ -61,7 +62,7 @@ Contient une clé de métadonnées d’élément définie par l’utilisateur, q
 
  Ce texte spécifie la valeur des métadonnées de l’élément (texte ou XML).
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 
  L’exemple de code ci-après indique comment ajouter des métadonnées `Culture` avec la valeur `fr` à l’élément `CSFile`.
 
@@ -75,5 +76,5 @@ Contient une clé de métadonnées d’élément définie par l’utilisateur, q
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Référence du schéma de fichier de projet](../msbuild/msbuild-project-file-schema-reference.md)
+- [Référence du schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)
 - [Éléments](../msbuild/msbuild-items.md)

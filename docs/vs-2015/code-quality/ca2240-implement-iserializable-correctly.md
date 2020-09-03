@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 217f95b7d3658db107fc482040686eea9ee47604
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543661"
 ---
 # <a name="ca2240-implement-iserializable-correctly"></a>CA2240 : Implémentez ISerializable comme il se doit
@@ -32,7 +32,7 @@ ms.locfileid: "85543661"
 |Category|Microsoft. usage|
 |Modification avec rupture|Sans rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Un type visible de l’extérieur peut être assigné à l' <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interface et l’une des conditions suivantes est remplie :
 
 - Le type hérite de, mais ne se substitue pas <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> à la méthode et le type déclare des champs d’instance qui ne sont pas marqués avec l' <xref:System.NonSerializedAttribute?displayProperty=fullName> attribut.

@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8d45461c7dab250cd43d7a25d8693658c7b8e164
-ms.sourcegitcommit: 3ba2968a4b44643482aadad4d50e1a55bb36b136
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74566978"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>Procédure pas à pas : création de votre première personnalisation au niveau du document pour Excel
@@ -27,7 +27,7 @@ ms.locfileid: "74566978"
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
- Cette procédure pas à pas décrit les tâches suivantes :
+ Cette procédure pas à pas décrit les tâches suivantes :
 
 - Création d'un projet de classeur Excel.
 
@@ -41,9 +41,9 @@ ms.locfileid: "74566978"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Prérequis
 
- Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :
+ Vous devez disposer des éléments suivants pour exécuter cette procédure pas à pas :
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -74,7 +74,7 @@ ms.locfileid: "74566978"
 
      [!INCLUDE[new-project-dialog-search](../vsto/includes/new-project-dialog-search-md.md)]
 
-4. Cliquez sur **Next**.
+4. Cliquez sur **Suivant**.
 
 5. Tapez **FirstWorkbookCustomization** dans la zone **nom** de la boîte de dialogue **configurer votre nouveau projet** , puis cliquez sur **créer**.
 
@@ -84,7 +84,7 @@ ms.locfileid: "74566978"
 
    - *FirstWorkbookCustomization*. xlsx : représente le classeur Excel dans le projet. Contient l'ensemble des feuilles de calcul et des graphiques.
 
-   - Feuille1 (fichier *. vb* pour Visual Basic ou fichier *. cs* pour le C#visuel)-feuille de calcul qui fournit l’aire de conception et le code de la première feuille de calcul dans le classeur. Pour plus d’informations, consultez [élément hôte de feuille de calcul](../vsto/worksheet-host-item.md).
+   - Feuille1 (fichier *. vb* pour Visual Basic ou fichier *. cs* pour Visual C#)-feuille de calcul qui fournit l’aire de conception et le code de la première feuille de calcul dans le classeur. Pour plus d’informations, consultez [élément hôte de feuille de calcul](../vsto/worksheet-host-item.md).
 
    - Feuil2 (fichier *. vb* pour Visual Basic ou fichier *. cs* pour Visual C#)-feuille de calcul qui fournit l’aire de conception et le code de la deuxième feuille de calcul dans le classeur.
 
@@ -116,7 +116,7 @@ ms.locfileid: "74566978"
 
 1. Dans la feuille de calcul qui est ouverte dans le concepteur, sélectionnez la cellule **a1**, puis tapez le texte suivant.
 
-     **Ce texte a été ajouté à l’aide du concepteur.**
+     **Ce texte a été ajouté à l'aide du concepteur.**
 
 > [!WARNING]
 > Si vous ajoutez cette ligne de texte à la cellule **a2**, elle sera remplacée par un autre code dans cet exemple.
@@ -150,7 +150,7 @@ ms.locfileid: "74566978"
 
 2. Dans le classeur, vérifiez que vous voyez le texte suivant.
 
-     **Ce texte a été ajouté à l’aide du concepteur.**
+     **Ce texte a été ajouté à l'aide du concepteur.**
 
      **Ce texte a été ajouté via le code.**
 
@@ -164,7 +164,7 @@ ms.locfileid: "74566978"
 
 1. Dans Visual Studio, dans le menu **Générer** , cliquez sur **Nettoyer la solution**.
 
-## <a name="next-steps"></a>Étapes suivantes :
+## <a name="next-steps"></a>Étapes suivantes
 
  Une fois que vous avez créé une personnalisation de base au niveau du document pour Excel, vous pouvez en apprendre plus sur la manière de développer des personnalisations dans les rubriques suivantes :
 
@@ -184,8 +184,8 @@ ms.locfileid: "74566978"
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Vue d’ensemble du &#40;développement des solutions Office VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
-- [Solutions Excel](../vsto/excel-solutions.md)
+- [Vue d’ensemble du développement de solutions Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+- [solutions Excel](../vsto/excel-solutions.md)
 - [Personnaliser les personnalisations au niveau du document](../vsto/programming-document-level-customizations.md)
 - [Vue d’ensemble du modèle objet Excel](../vsto/excel-object-model-overview.md)
 - [Automatiser Excel à l’aide d’objets étendus](../vsto/automating-excel-by-using-extended-objects.md)

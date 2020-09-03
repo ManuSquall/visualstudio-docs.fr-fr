@@ -10,10 +10,10 @@ author: alexhomer1
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b70e3a24cd4cb05dc1a28ff855498496f5665ddc
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542855"
 ---
 # <a name="run-unit-tests-for-store-apps-in-visual-studio"></a>Exécuter des tests unitaires pour les applications du Windows Store dans Visual Studio
@@ -29,12 +29,12 @@ Cette rubrique décrit comment exécuter des tests unitaires à l'aide de l'Expl
 >
 >   Pour plus d’informations, consultez [Tests unitaires sur votre code](../test/unit-test-your-code.md) dans MSDN Library.
 
-## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a>Dans cette rubrique
+## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a> Dans cette rubrique
  [Infrastructures de tests unitaires et projets de test](#BKMK_Unit_test_frameworks_and_test_projects)
 
  [Exécution des tests dans l’Explorateur de tests](#BKMK_Running_tests_in_Test_Explorer)
 
-- [Exécution de tests](#BKMK_Running_tests)
+- [Exécution des tests](#BKMK_Running_tests)
 
   [Affichage des résultats de tests](#BKMK_Viewing_test_results)
 
@@ -53,7 +53,7 @@ Cette rubrique décrit comment exécuter des tests unitaires à l'aide de l'Expl
 ## <a name="unit-test-frameworks-and-test-projects"></a><a name="BKMK_Unit_test_frameworks_and_test_projects"></a> Infrastructures de tests unitaires et projets de test
  Visual Studio Express pour les applications du Windows Store comprend les frameworks de tests unitaires Microsoft pour le code C++ natif et managé. L'Explorateur de tests peut exécuter des tests à partir de plusieurs projets de test dans une solution et à partir de classes de test qui font partie des projets de code de production. Les projets de test peuvent être n'importe quelle combinaison des frameworks de tests unitaires Visual C++ ou Visual C# et Visual Basic. Quand le code testé est écrit pour le .NET Framework, le projet de test peut être écrit dans n'importe quel langage du .NET Framework, quel que soit le langage du code cible. Les projets de code C/C++ natifs doivent être testés à l'aide d'une infrastructure de tests unitaires C++.
 
-## <a name="running-tests-in-test-explorer"></a><a name="BKMK_Running_tests_in_Test_Explorer"></a>Exécution de tests dans l’Explorateur de tests
+## <a name="running-tests-in-test-explorer"></a><a name="BKMK_Running_tests_in_Test_Explorer"></a> Exécution de tests dans l’Explorateur de tests
  Quand vous générez le projet de test, les tests s’affichent dans l’explorateur de tests. Si l’explorateur de tests n’est pas visible, sélectionnez **Test** dans le menu Visual Studio et choisissez **Fenêtres**, puis **Explorateur de tests**.
 
  ![Explorateur de tests unitaires](../ide/media/ute-failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
@@ -64,7 +64,7 @@ Cette rubrique décrit comment exécuter des tests unitaires à l'aide de l'Expl
 
  ![Exécuter des tests à partir de la barre d'outils de l'explorateur de tests](../test/media/ute-toolbar.png "UTE_ToolBar")
 
-### <a name="running-tests"></a><a name="BKMK_Running_tests"></a>Exécution des tests
+### <a name="running-tests"></a><a name="BKMK_Running_tests"></a> Exécution des tests
  Vous pouvez exécuter tous les tests dans la solution, tous les tests dans un groupe, ou un ensemble de tests que vous sélectionnez. Effectuez l’une des actions suivantes :
 
 - Pour exécuter tous les tests dans une solution, choisissez **Exécuter tout**.
@@ -75,7 +75,7 @@ Cette rubrique décrit comment exécuter des tests unitaires à l'aide de l'Expl
 
   La barre Réussite/Échec en haut de la fenêtre Explorateur de tests est animée pendant l'exécution des tests. À la fin de la série de tests, la barre Réussite/Échec devient verte si tous les tests ont réussi ou rouge si un test a échoué.
 
-## <a name="viewing-test-results"></a><a name="BKMK_Viewing_test_results"></a>Affichage des résultats des tests
+## <a name="viewing-test-results"></a><a name="BKMK_Viewing_test_results"></a> Affichage des résultats des tests
  Tandis que vous exécutez, écrivez et réexécutez vos tests, l'Explorateur de tests affiche les résultats dans les groupes **Échecs de tests**, **Tests réussis**, **Tests ignorés** et **Tests non exécutés**. Le volet d'informations en bas de l'Explorateur de tests affiche un résumé de la série de tests.
 
 ### <a name="viewing-test-details"></a><a name="BKMK_Viewing_test_details"></a> Affichage des détails de tests

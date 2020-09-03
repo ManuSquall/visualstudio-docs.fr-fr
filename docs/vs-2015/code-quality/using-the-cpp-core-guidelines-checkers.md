@@ -10,10 +10,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: fffa4cec6a2bd7a340b90776ac20dc486f28045b
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84173552"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Utilisation des vérificateurs C++ Core Guidelines
@@ -51,7 +51,7 @@ Les C++ Core Guidelines sont un ensemble portable d’instructions, de règles e
   
    ![Page de propriétés pour les paramètres des extensions d’analyse du code](../code-quality/media/cppcorecheck-codeanalysis-extensions.png "CPPCoreCheck_CodeAnalysis_Extensions")  
   
-   Pour activer ou désactiver les ensembles de règles C++ Core Check, ouvrez la boîte de dialogue **pages de propriétés** de votre projet. Sous **Propriétés de configuration**, développez **analyse du code**, **Extensions**. Dans le contrôle de liste déroulante en regard de **activer la C++ Core Check (publiée)** ou **activer C++ Core Check (expérimental)**, choisissez **Oui** ou **non**. Cliquez sur **OK** ou sur **appliquer** pour enregistrer vos modifications.  
+   Pour activer ou désactiver les ensembles de règles C++ Core Check, ouvrez la boîte de dialogue **pages de propriétés** de votre projet. Sous **Propriétés de configuration**, développez  **analyse du code**, **Extensions**. Dans le contrôle de liste déroulante en regard de **activer la C++ Core Check (publiée)** ou **activer C++ Core Check (expérimental)**, choisissez **Oui** ou **non**. Cliquez sur **OK** ou sur **appliquer** pour enregistrer vos modifications.  
   
 ## <a name="check-types-bounds-and-lifetimes"></a>Vérifier les types, les limites et les durées de vie  
  Le package C++ Core Check contient actuellement des contrôleurs pour la [sécurité de type](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-type), les limites de [sécurité](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-bounds)et les profils de sécurité de [durée de vie](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-lifetime) .  
@@ -83,7 +83,7 @@ int main()
   
 - C26485 est une limite de règle. 3 : aucune atténuation de tableau à pointeur.  
   
-- C26481 est une limite de règle. 1 : n’utilisez pas l’arithmétique de pointeur. Utilisez `span` à la place.  
+- C26481 est une limite de règle. 1 : n’utilisez pas l’arithmétique de pointeur. Utilisez plutôt `span`.  
   
   Si les ensembles de règles d’analyse du code C++ Core Check sont installés et activés lorsque vous compilez ce code, les deux premiers avertissements sont générés, mais le troisième est supprimé. Voici la sortie de la génération de l’exemple de code :  
   

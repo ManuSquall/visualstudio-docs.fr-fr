@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 65f5a43bee5a89492bc1ecc7bf7c1126b5a80456
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84173588"
 ---
 # <a name="commands-menus-and-toolbars"></a>Commandes, menus et barres d’outils
@@ -34,7 +34,7 @@ Les menus et les barres d’outils permettent aux utilisateurs d’accéder aux 
 
   Les rubriques de cette section expliquent comment fonctionnent les commandes, les menus et les barres d’outils dans les VSPackages.
 
-## <a name="in-this-section"></a>Dans cette section
+## <a name="in-this-section"></a>Contenu de cette section
 - [Comment les VSPackages ajoutent des éléments d’interface utilisateur](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 
  Description détaillée de la spécification de format de la table de commandes.

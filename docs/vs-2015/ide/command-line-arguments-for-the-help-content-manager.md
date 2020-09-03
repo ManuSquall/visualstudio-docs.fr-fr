@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a3e7cc942550c979ca4b3f3138da252321b4c983
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72619687"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Arguments de ligne de commande pour Help Content Manager
@@ -35,7 +35,7 @@ Vous pouvez spécifier la façon de déployer et de gérer le contenu d’aide l
 HlpCtntmgr.exe /operation Value /catalogname CatalogName /locale Locale /sourceuri InstallationPoint
 ```
 
- Par exemple :
+ Par exemple :
 
 ```
 hlpctntmgr.exe /operation install /catalogname VisualStudio14 /locale en-us /sourceuri d:\productDocumentation\HelpContentSetup.msha
@@ -44,7 +44,7 @@ hlpctntmgr.exe /operation install /catalogname VisualStudio14 /locale en-us /sou
 ## <a name="switches-and-arguments"></a>Commutateurs et arguments
  Le tableau suivant définit les commutateurs et les arguments que vous pouvez utiliser pour l’outil en ligne de commande pour Help Content Manager :
 
-|Basculer|Obligatoire ?|Arguments|
+|Commutateur|Requis ?|Arguments|
 |------------|---------------|---------------|
 |/operation|Oui|-   **Install** : ajoute des livres de la source d’installation spécifiée dans le magasin de contenu local.<br />     Ce commutateur requiert l’argument /booklist, l’argument /sourceURI, ou les deux. Si vous ne spécifiez pas l’argument /sourceURI, l’URI de Visual Studio par défaut est utilisé comme source d’installation. Si vous ne spécifiez pas l’argument /booklist, tous les livres sur /sourceUri sont installés.<br />-   **Uninstall** : supprime les livres que vous spécifiez dans le magasin de contenu local.<br />     Ce commutateur requiert l’argument /booklist ou l’argument /sourceURI.  Si vous spécifiez l’argument /sourceURI, tous les livres sont supprimés, et l’argument /booklist est ignoré.<br />-   **Move** : déplace le magasin local vers le chemin que vous spécifiez. Le chemin d’accès au magasin local par défaut est défini lors de la configuration de l’aide sous %PROGRAMDATA%.<br />     Ce commutateur requiert les arguments /locationPath et /catalogName. Les messages d’erreur sont collectés dans le journal des événements si vous spécifiez un chemin d’accès non valide ou si le lecteur ne contient pas suffisamment d’espace libre pour accueillir le contenu.<br />-   **Refresh** : met à jour les rubriques qui ont été modifiées depuis leur installation ou récemment mises à jour.<br />     Ce commutateur requiert l’argument /sourceURI.|
 |/catalogName|Oui|Spécifie le nom du catalogue de contenu.|
@@ -59,7 +59,7 @@ hlpctntmgr.exe /operation install /catalogname VisualStudio14 /locale en-us /sou
 |/locationpath|Non|Spécifie le dossier par défaut du contenu d’aide locale. Vous devez utiliser ce commutateur uniquement pour installer ou déplacer le contenu. Si vous spécifiez ce commutateur, vous devez également spécifier le commutateur /silent.|
 |/silent|Non|Installe ou supprime le contenu d’aide sans questionner l’utilisateur ou afficher d’élément d’interface utilisateur tel que l’icône dans la zone de notification d’état. La sortie est stockée dans un fichier dans le répertoire %Temp%. **Important :** Pour installer le contenu en mode silencieux, vous devez utiliser les fichiers signés numériquement .cab, pas les fichiers .mshc.|
 |/launchingApp|Non|Définit l’application et le contexte de catalogue lorsque la visionneuse d’aide est lancée sans application parente. Les arguments pour ce commutateur sont *CompanyName*, *ProductName* et *VersionNumber* (par exemple, `/launchingApp Microsoft,VisualStudio,11.0`).<br /><br /> Cet argument est requis pour installer le contenu avec le paramètre /silent.”|
-|/wait *secondes*|Non|Suspend les opérations d’installation, de désinstallation et d’actualisation. Si une opération est en cours pour le catalogue, le processus attend jusqu’au nombre donné de secondes pour continuer. Utilisez 0 pour une attente indéfinie.|
+|/wait *secondes*|Non|Suspend les opérations d’installation, de désinstallation et d’actualisation. Si une opération est en cours pour le catalogue, le processus attend jusqu’au nombre donné de secondes pour continuer. Utilisez 0 pour attendre indéfiniment.|
 |/?|Non|Répertorie les commutateurs, ainsi que leur description, de l’outil en ligne de commande pour le gestionnaire de contenu d’aide.|
 
 ### <a name="exit-codes"></a>Codes de sortie

@@ -28,10 +28,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a581328a22fda584e2e03a39cc34e9b4b369b280
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72650995"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Polices et couleurs, Environnement, boîte de dialogue Options
@@ -40,22 +40,22 @@ ms.locfileid: "72650995"
 La page **Polices et couleurs** de la boîte de dialogue **Options** vous permet d’établir un jeu de polices et un modèle de couleurs personnalisés pour divers éléments d’interface utilisateur dans l’environnement de développement intégré (IDE). Vous pouvez accéder à cette boîte de dialogue en cliquant sur **Outils / Options**, puis en sélectionnant **Environnement / Polices et couleurs**. Si cette page n’apparaît pas dans la liste, sélectionnez **Afficher tous les paramètres** dans la boîte de dialogue **Options**.
 
 > [!NOTE]
-> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Paramètres Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Les boîtes de dialogue et les commandes de menu affichées peuvent différer de celles décrites dans l'Aide selon les paramètres actifs ou le mode d'édition. Pour modifier vos paramètres, choisissez **Paramètres d'importation et d'exportation** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
- Les changements relatifs au modèle de couleurs ne sont pas appliqués durant la session où vous les apportez. Vous pouvez évaluer les changements de couleurs en ouvrant une autre instance de Visual Studio, et en reproduisant les conditions dans lesquelles vous souhaitez qu'ils soient appliqués.
+ Les modifications apportées à un modèle de couleurs ne sont pas prises en compte lors de la session au cours de laquelle vous avez effectué ces changements. Vous pouvez évaluer les changements de couleurs en ouvrant une autre instance de Visual Studio, et en reproduisant les conditions dans lesquelles vous souhaitez qu'ils soient appliqués.
 
- **Afficher les paramètres de** Répertorie tous les éléments d’interface utilisateur pour lesquels vous pouvez changer le jeu de polices et le modèle de couleurs. Après avoir sélectionné un élément dans cette liste, vous pouvez personnaliser les paramètres de couleurs de l’élément en question dans **Éléments affichés**.
+ **Afficher les paramètres de** Répertorie tous les éléments d’interface utilisateur pour lesquels vous pouvez changer le jeu de polices et le modèle de couleurs. Après avoir sélectionné un élément dans cette liste, vous pouvez personnaliser les paramètres de couleurs de l’élément sélectionné dans **Éléments affichés**.
 
 - **Éditeur de texte**
 
-   Les changements apportés aux paramètres de style, de taille et d'affichage des couleurs de la police pour l'éditeur de texte affectent l'apparence du texte dans votre éditeur de texte par défaut. Les documents ouverts dans un éditeur de texte en dehors de l'IDE ne sont pas affectés par ces paramètres.
+   Les modifications apportées aux paramètres d'affichage du style, de la taille et de la couleur des polices dans l'éditeur de texte influencent la présentation du texte dans l'éditeur de texte par défaut. Les documents ouverts dans un éditeur de texte en dehors de l'IDE ne sont pas affectés par ces paramètres.
 
 - **Imprimante**
 
-   Les changements apportés aux paramètres de style, de taille et d'affichage des couleurs de la police pour l'imprimante affectent l'apparence du texte dans les documents imprimés.
+   Les modifications apportées aux paramètres d'affichage du style, de la taille et de la couleur des polices de l'imprimante influencent la présentation du texte sur les documents imprimés.
 
   > [!NOTE]
-  > Selon les besoins, vous pouvez sélectionner une autre police par défaut pour l'impression que celle utilisée pour l'affichage dans l'éditeur de texte. Cela peut être utile pour imprimer du code contenant des caractères codés sur un octet et sur deux octets.
+  > Selon les besoins, vous pouvez sélectionner une autre police par défaut pour l'impression que celle utilisée pour l'affichage dans l'éditeur de texte. Cela peut être utile lors de l'impression de code contenant des caractères codés sur un octet et sur deux octets.
 
 - **Compléter automatiquement les instructions**
 
@@ -74,7 +74,7 @@ La page **Polices et couleurs** de la boîte de dialogue **Options** vous permet
    Les changements apportés aux paramètres de style, de taille et d'affichage des couleurs de la police pour cet élément affectent l'apparence du texte dans les fenêtres Outil qui ont des volets de sortie dans l'IDE. C'est le cas, par exemple, de la fenêtre Sortie, la fenêtre Commande, la fenêtre Exécution, etc.
 
   > [!NOTE]
-  > Les changements relatifs au texte des éléments de **[Toutes les fenêtres Outil de texte]** ne sont pas appliqués durant la session où vous les apportez. Vous pouvez évaluer ces changements en ouvrant une autre instance de Visual Studio.
+  > Les modifications apportées au texte des éléments **[toutes les fenêtres outil de texte]** ne prennent pas effet au cours de la session dans laquelle vous les apportez. Vous pouvez évaluer ces changements en ouvrant une autre instance de Visual Studio.
 
   **Par défaut** Réinitialise les valeurs de couleur et de police de l’élément de liste sélectionné dans **Afficher les paramètres de**. Le bouton **Utiliser** s’affiche quand d’autres modèles d’affichage sont disponibles pour la sélection. Par exemple, vous avez le choix entre deux modèles pour l'imprimante.
 
@@ -94,7 +94,7 @@ La page **Polices et couleurs** de la boîte de dialogue **Options** vous permet
 |**Texte brut**|Texte dans l'éditeur.|
 |**Texte sélectionné**|Texte inclus dans la sélection actuelle quand l'éditeur a le focus.|
 |**Texte sélectionné inactif**|Texte inclus dans la sélection actuelle quand l'éditeur a perdu le focus.|
-|**Marge des indicateurs**|Marge de gauche de l'éditeur de code où les points d'arrêt et les icônes de signet sont affichés.|
+|**Marge des indicateurs**|marge à gauche de l’éditeur de code où sont affichés les points d’arrêt et les icônes de signet.|
 |**Numéros de ligne**|Numéros facultatifs qui apparaissent en regard de chaque ligne de code|
 |**Espaces blancs visibles**|Indicateurs des espaces, des onglets et du retour automatique à la ligne|
 |**Signet**|Lignes qui ont des signets. Le **signet** n’est visible que si la marge des indicateurs est désactivée.|
@@ -117,12 +117,12 @@ La page **Polices et couleurs** de la boîte de dialogue **Options** vous permet
 |**Champ dépendant d’extrait de code**|Champ mis à jour quand le champ modifiable actuel est modifié.|
 |**Champ d’extrait de code**|Champ modifiable quand un extrait de code est actif.|
 |**Texte réductible**|Bloc de texte ou de code qui peut être affiché et masqué dans l'éditeur de code.|
-|**Commentaireaire**|Commentaires de code.|
+|**Commentaire**|Commentaires de code.|
 |**Erreur du compilateur**|Soulignements ondulés (ou tildes) bleus dans l'éditeur indiquant une erreur de compilation.|
 |**Zone non couverte**|Code non couvert par un test unitaire.|
 |**Zone partiellement couverte**|Code partiellement couvert par un test unitaire.|
 |**Zone couverte**|Code complètement couvert par un test unitaire.|
-|**Commentaire CSS**|Commentaire dans des feuilles de style en cascade. Exemple :<br /><br /> /* commentaire \*/|
+|**Commentaire CSS**|Commentaire dans des feuilles de style en cascade. Par exemple :<br /><br /> /* commentaire \*/|
 |**Mot clé CSS**|Mots clés dans la feuille de style en cascade.|
 |**Nom de propriété CSS**|Nom d'une propriété, par exemple Background.|
 |**Valeur de propriété CSS**|Valeur assignée à une propriété, par exemple blue.|
@@ -142,10 +142,10 @@ La page **Polices et couleurs** de la boîte de dialogue **Options** vous permet
 |**Mot clé**|Mots clés réservés du langage donné. Exemple : class et namespace.|
 |**Adresse mémoire**|Couleur de texte utilisée pour afficher la colonne d’adresse dans la fenêtre **Mémoire**.|
 |**Mémoire modifiée**|Couleur de texte utilisée pour afficher les données modifiées dans la fenêtre **Mémoire**.|
-|**Données de la mémoire**|Couleur de texte utilisée pour afficher les données dans la fenêtre **Mémoire**.|
+|**Données de la mémoire**|Couleur de texte utilisée pour afficher les données à l’intérieur de la fenêtre **mémoire** .|
 |**Mémoire illisible**|Couleur de texte utilisée pour afficher les zones de mémoire illisibles dans la fenêtre **Mémoire**.|
 |**Nombre**|Nombre dans du code, qui représente une valeur numérique réelle.|
-|**Operator**|Opérateurs tels que +, - et !=.|
+|**Opérateur**|Opérateurs tels que +, - et !=.|
 |**Autre erreur**|Autres types d'erreurs non couverts par d'autres tildes d'erreur. Actuellement, cela inclut les modifications non applicables dans Modifier & Continuer.|
 |**Mot clé de préprocesseur**|Mots clés utilisés par le préprocesseur tels que #include.|
 |**Zone en lecture seule**|Code qui ne peut pas être modifié. Il s'agit, par exemple, du code affiché dans la fenêtre Définition de code, ou du code qui ne peut pas être modifié durant Modifier & Continuer.|
@@ -154,11 +154,11 @@ La page **Polices et couleurs** de la boîte de dialogue **Options** vous permet
 |**Refactorisation du champ dépendant**|Couleur des références de l’élément à refactoriser dans la boîte de dialogue **Aperçu des modifications**.|
 |**Données du registre**|Couleur de texte utilisée pour afficher les données dans la fenêtre **Registres**.|
 |**Inscrire NAT**|Couleur de texte utilisée pour afficher les données et objets non reconnus dans la fenêtre **Registres**.|
-|**Étiquette active**|Sert à désigner le plan quand des étiquettes actives sont appelées.|
+|**Balise active**|Sert à désigner le plan quand des étiquettes actives sont appelées.|
 |**Marqueur SQL DML**|S'applique à l'éditeur Transact-SQL. Les instructions DML dans cet éditeur sont marquées avec un cadre englobant bleu par défaut.|
 |**Code périmé**|Code annulé et remplacé en attente d'une mise à jour. Dans certains cas, Modifier & Continuer ne peut pas appliquer immédiatement les modifications du code, mais ce sera le cas plus tard, durant le débogage. Cela se produit si vous modifiez une fonction qui doit appeler la fonction en cours d'exécution, ou si vous ajoutez plus de 64 octets de nouvelles variables à une fonction en attente dans la pile des appels. Dans ce cas, le débogueur affiche la boîte de dialogue "Avertissement : code périmé". Par ailleurs, le code annulé et remplacé continue à s'exécuter jusqu'à ce que la fonction en question s'arrête et soit appelée à nouveau. Modifier & Continuer applique les modifications du code à ce moment-là.|
-|**String**|Littéraux de chaîne.|
-|**String (C# @ Verbatim)**|Les littéraux de chaîne en C# sont interprétés textuellement. Exemple :<br /><br /> @"x"|
+|**Chaîne**|Littéraux de chaîne.|
+|**String (C# @ Verbatim)**|Les littéraux de chaîne en C# sont interprétés textuellement. Par exemple :<br /><br /> @"x"|
 |**Erreur de syntaxe**|Erreurs d'analyse.|
 |**Raccourci de la liste des tâches**|Si le raccourci **Liste des tâches** est ajouté à une ligne, et si la marge des indicateurs est désactivée, la ligne est mise en surbrillance.|
 |**Point de trace (Désactivé)**|Non utilisé.|
@@ -186,10 +186,10 @@ La page **Polices et couleurs** de la boîte de dialogue **Options** vous permet
 |**Attribut XML**|Noms d'attributs.|
 |**Guillemets d’attribut XML**|Guillemets pour les attributs XML.|
 |**Valeur d’attribut XML**|Contenu des attributs XML.|
-|**Section Cdata XML**|Contenu de \<![CDATA[…]]>.|
+|**Section Cdata XML**|Contenu de \<![CDATA[…]]> .|
 |**Commentaire XML**|Contenu de \<!-- -->.|
-|**Délimiteur XML**|Séparateurs de syntaxe XML, notamment <, <?, <!, \<!--, -->, ?\>, \<![, ]]> et [, ].|
-|**Attribut de documentation XML**|Valeur d’un attribut de documentation xml, tel que \<param name="I"> où "I" est colorisé.|
+|**Délimiteur XML**|Délimiteurs de syntaxe XML, y compris <, < ?, < !, \<!--, --> , ? \> , \<![, ]]> et [,].|
+|**Attribut de documentation XML**|Valeur d’un attribut de documentation XML, telle que \<param name="I"> l’endroit où le « I » est coloré.|
 |**Commentaire sur la documentation XML**|Commentaires insérés dans les commentaires de la documentation xml.|
 |**Étiquette de documentation XML**|Étiquettes dans les commentaires de document XML, comme<br /><br /> /// \<summary>.|
 |**Mot clé XML**|Mots clés DTD tels que CDATA, IDREF et NDATA.|
@@ -207,7 +207,7 @@ La page **Polices et couleurs** de la boîte de dialogue **Options** vous permet
  **Personnalisée** Affiche la boîte de dialogue Couleur pour vous permettre de définir une couleur personnalisée pour l’élément sélectionné dans la liste Éléments affichés.
 
 > [!NOTE]
-> Votre capacité à définir des couleurs personnalisées peut être limitée par les paramètres de couleur spécifiques à l'affichage de votre ordinateur. Par exemple, si votre ordinateur est configuré pour afficher 256 couleurs, et si vous sélectionnez une couleur personnalisée dans la boîte de dialogue **Couleur**, l’IDE adopte par défaut la **couleur de base** la plus proche et affiche la couleur noire dans la zone d’aperçu **Couleur**.
+> Il se peut que les paramètres de couleur de l'affichage de votre ordinateur limitent vos possibilités en matière de définition de couleurs personnalisées. Par exemple, si votre ordinateur est configuré pour afficher 256 couleurs, et si vous sélectionnez une couleur personnalisée dans la boîte de dialogue **Couleur**, l’IDE adopte par défaut la **couleur de base** la plus proche et affiche la couleur noire dans la zone d’aperçu **Couleur**.
 
  **Arrière plan de l’élément** Fournit une palette de couleurs à partir de laquelle vous pouvez choisir une couleur d’arrière-plan pour l’élément sélectionné dans **Éléments affichés**. Dans la mesure où certains éléments sont liés et doivent conserver un modèle d'affichage cohérent, le changement de la couleur d'arrière-plan du texte modifie également les valeurs par défaut des éléments tels que Erreur du compilateur, Mot clé ou Opérateur.
 

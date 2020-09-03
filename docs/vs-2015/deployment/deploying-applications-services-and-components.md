@@ -23,10 +23,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 42e3a4afec71b90a087ac927f5cbbbc0b181fadd
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75917552"
 ---
 # <a name="deploying-applications-services-and-components"></a>Déploiement d'applications, de services et de composants
@@ -38,10 +38,10 @@ En déployant une application, un service ou un composant, vous le distribuez po
   
 ## <a name="in-this-section"></a>Dans cette section  
   
-|Scénario de déploiement|Contenu de support|  
+|Scénario de déploiement|Contenu de prise en charge|  
 |-------------------------|------------------------|  
 |**Publier dans le Cloud :** Vous pouvez rendre des applications, des services et des données disponibles n’importe où à l’aide de Visual Studio pour les déployer sur Microsoft Azure.|[Publication d’applications sur Microsoft Azure](/visualstudio/deployment/quickstart-deploy-to-azure)|  
-|**Publier une application du Windows Store :** Vous pouvez facilement créer, envoyer et vendre vos applications à partir du Windows Store à des clients dans le monde entier.|[Empaquetage, déploiement et interrogation d’applications du Windows Store](https://msdn.microsoft.com/library/hh446593\(v=vs.85\).aspx)|  
+|**Publier une application du Windows Store :** Vous pouvez facilement créer, envoyer et vendre vos applications à partir du Windows Store à des clients dans le monde entier.|[Packaging, déploiement et interrogation des applications du Windows Store](https://msdn.microsoft.com/library/hh446593\(v=vs.85\).aspx)|  
 |**Publier une application Windows Phone :** Vous pouvez soumettre une nouvelle application ou une mise à jour à une application existante pour la certification dans le centre de développement Windows Phone.|[Publier une application Windows Phone](https://developer.microsoft.com/)|  
 |**Déployer une application ou un service ASP.net :** Vous pouvez déployer des applications et des services ASP.NET de différentes manières.|[Déploiement d’applications et de services Web ASP.NET](/aspnet/mvc/overview/deployment/)|  
 |**Déployer une application ou un service LightSwitch :** Après avoir créé des applications et des services OData à l’aide de LightSwitch, vous pouvez les déployer sur un serveur Web ou sur Microsoft Azure.|[Déploiement d’applications LightSwitch](https://msdn.microsoft.com/library/4818d933-295c-4ecc-9148-7ad9ca28dcdb)|  
@@ -52,6 +52,6 @@ En déployant une application, un service ou un composant, vous le distribuez po
 |**Déployer une application de bureau :** À l’aide du déploiement ClickOnce, vous pouvez publier une application de bureau sur un serveur Web ou un partage de fichiers réseau. Les utilisateurs peuvent ensuite installer l'application d'un seul clic.|[Sécurité et déploiement ClickOnce](../deployment/clickonce-security-and-deployment.md)|  
 |**Créez un programme d’installation :** Vous pouvez créer un programme d’installation à l’aide d’InstallShield Limited Edition, qui est gratuit.|[InstallShield Limited Edition](../deployment/installshield-limited-edition.md)|  
 |**Tenir à jour un programme d’installation existant :** Continuez à utiliser un programme d’installation créé dans une version antérieure de Visual Studio en installant l’extension des projets Visual Studio Installer.|[Extension des projets Visual Studio Installer](https://devblogs.microsoft.com/visualstudio/visual-studio-installer-projects-extension/)<br /><br /> La documentation des projets d’installation est disponible ici : [déploiement de Visual Studio installer](https://msdn.microsoft.com/library/2kt85ked\(v=vs.100\).aspx)|  
-|**Déployer une application C++ visuelle :** vous pouvez déployer le runtime C++ visuel avec une application à l’aide d’un déploiement central, d’un déploiement local ou d’une liaison statique.|[Déploiement des applications de bureau natives (Visual C++)](/cpp/windows/deploying-native-desktop-applications-visual-cpp)|  
+|**Déployer une application Visual C++ :** Vous pouvez déployer le runtime Visual C++ avec une application en utilisant le déploiement central, le déploiement local ou la liaison statique.|[Déploiement des applications de bureau natives (Visual C++)](/cpp/windows/deploying-native-desktop-applications-visual-cpp)|  
 |**Déployer une application à des fins de test :** Vous pouvez activer un développement et des tests plus sophistiqués en déployant vos applications dans des environnements virtuels.|[Test sur un environnement lab](https://msdn.microsoft.com/library/14ba54c8-a158-4a6e-b00a-b00ae960feb8)|  
-|**Conditions préalables à l’installation :** Vous pouvez installer les composants requis pour les applications de bureau en configurant un programme d’installation générique, appelé programme d’amorçage.|[Prérequis pour le déploiement d’applications](../deployment/application-deployment-prerequisites.md)|
+|**Conditions préalables à l’installation :** Vous pouvez installer les composants requis pour les applications de bureau en configurant un programme d’installation générique, appelé programme d’amorçage.|[Conditions préalables pour le déploiement d’applications](../deployment/application-deployment-prerequisites.md)|

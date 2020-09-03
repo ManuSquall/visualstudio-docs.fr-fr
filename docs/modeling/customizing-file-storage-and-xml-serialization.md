@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 07592247e0afb870f3c4774c6f2023a6e8141cd1
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542738"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>Personnaliser le stockage de fichiers et la sérialisation XML
@@ -272,7 +272,7 @@ Ces éléments se trouvent dans l’Explorateur DSL sous **sérialisation XML Be
 |Est personnalisé|Affectez la valeur **true** si vous souhaitez écrire votre propre code de sérialisation et de désérialisation pour cette classe de domaine.<br /><br /> Générez la solution et examinez les erreurs pour découvrir des instructions détaillées.|
 |Classe de domaine|Classe de domaine à laquelle ce nœud de données de classe s’applique. Lecture seule.|
 |Nom de l’élément|Nom de nœud XML pour les éléments de cette classe. La valeur par défaut est une version en minuscules du nom de classe de domaine.|
-|Nom d’attribut de moniker|Nom de l’attribut utilisé dans les éléments moniker pour contenir la référence. Si vide, le nom de la propriété ou l'identificateur de clé est utilisé.<br /><br /> Dans cet exemple, il s’agit de « Name » :`<personMoniker name="/Mike Nash"/>`|
+|Nom d’attribut de moniker|Nom de l’attribut utilisé dans les éléments moniker pour contenir la référence. Si vide, le nom de la propriété ou l'identificateur de clé est utilisé.<br /><br /> Dans cet exemple, il s’agit de « Name » :  `<personMoniker name="/Mike Nash"/>`|
 |Nom de l’élément moniker|Nom de l’élément XML utilisé pour les monikers qui font référence aux éléments de cette classe.<br /><br /> La valeur par défaut est une version en minuscules du nom de classe avec le suffixe « moniker ». Par exemple : `personMoniker`.|
 |Nom de type de moniker|Nom du type XSD généré pour les monikers aux éléments de cette classe. Le schéma XSD se trouve dans **Dsl\Generated code \\ \* Schema. xsd**|
 |ID de sérialisation|Si la valeur est true, le GUID de l’élément est inclus dans le fichier. Cela doit avoir la valeur true s’il n’y a aucune propriété marquée comme **clé de moniker** et que la DSL définit des relations de référence à cette classe.|

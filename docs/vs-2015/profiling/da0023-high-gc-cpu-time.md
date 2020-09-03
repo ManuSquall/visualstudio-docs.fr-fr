@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 667dc76019259faa12d41b7e4b7bf383bcda2258
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542920"
 ---
 # <a name="da0023-high-gc-cpu-time"></a>DA0023 : Temps processeur GC élevé
@@ -33,7 +33,7 @@ ms.locfileid: "85542920"
   
  Lorsque vous effectuez un profilage à l’aide de la méthode d’échantillonnage, de mémoire .NET ou de conflit des ressources, vous devez collecter au moins 10 échantillons pour déclencher cette règle.  
   
-## <a name="cause"></a>Cause  
+## <a name="cause"></a>Cause :  
  Les données relatives aux performances système qui sont collectées pendant le profilage indiquent que le temps consacré au garbage collection est très important, par rapport au temps total de traitement de l’application.  
   
 ## <a name="rule-description"></a>Description de la règle  

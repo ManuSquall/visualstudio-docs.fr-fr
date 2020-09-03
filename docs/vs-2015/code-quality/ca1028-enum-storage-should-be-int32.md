@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 0b2e8ebcc7720f5cd9dc6c700bcc08b68f89e275
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542491"
 ---
 # <a name="ca1028-enum-storage-should-be-int32"></a>CA1028 : Enum Storage doit être Int32
@@ -32,7 +32,7 @@ ms.locfileid: "85542491"
 |Category|Microsoft. Design|
 |Modification avec rupture|Rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Le type sous-jacent d’une énumération publique n’est pas <xref:System.Int32?displayProperty=fullName> .
 
 ## <a name="rule-description"></a>Description de la règle

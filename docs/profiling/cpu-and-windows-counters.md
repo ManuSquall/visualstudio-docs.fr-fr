@@ -14,10 +14,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 9accd3d0ab5ff1f7a3084d5973cace08e66396b9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74779547"
 ---
 # <a name="cpu-and-windows-counters"></a>Compteurs UC et Windows
@@ -45,7 +45,7 @@ Le profileur Visual Studio continue de prendre en charge certains événements d
 
 Les événements portables sont un groupe de compteurs UC qui ne sont pas spécifiques à un processeur. Tous les autres compteurs UC sont des événements de plateforme et peuvent ne pas être pris en charge sur toutes les plateformes.
 
- Les compteurs pour les événements portables et de plate-forme sont définis en . *xml* fichiers, où des valeurs spécifiques qui sont liées aux compteurs sont fournis. Ces fichiers varient selon le processeur. En effet, les données des processeurs Intel et AMD, par exemple, ne sont pas les mêmes. Le profileur [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] utilise ces informations pour présenter des compteurs appropriés (à la fois pour les événements portables et les événements de plateforme) à l’utilisateur pour qu’il puisse mesurer les performances.
+ Les compteurs pour les événements portables et de plateforme sont définis dans. fichiers *XML* , où des valeurs spécifiques relatives aux compteurs sont fournies. Ces fichiers varient selon le processeur. En effet, les données des processeurs Intel et AMD, par exemple, ne sont pas les mêmes. Le profileur [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] utilise ces informations pour présenter des compteurs appropriés (à la fois pour les événements portables et les événements de plateforme) à l’utilisateur pour qu’il puisse mesurer les performances.
 
 ### <a name="portable-events"></a>Événements portables
 
@@ -53,27 +53,27 @@ Les événements portables contiennent les événements suivants :
 
 **Événements généraux**
 
-|Nom de l'événement|Description de l'événement|
+|Nom de l’événement|Description de l’événement|
 |----------------|-----------------------|
 |Instructions retirées|Indique le nombre d’instructions qui ont été exécutées avant la fin de l’événement.|
 |Cycles hors interruption|Indique uniquement les cycles au cours desquels le processeur n’est pas arrêté, comme pour une attente d’E/S.|
 
 **Événements frontaux**
 
-|Nom de l'événement|Description de l'événement|
+|Nom de l’événement|Description de l’événement|
 |----------------|-----------------------|
 |Échecs dans ITLB|Indique le nombre de recherches dans le tampon de traduction ITLB qui ont échoué.|
 
 **Événements de branche**
 
-|Nom de l'événement|Description de l'événement|
+|Nom de l’événement|Description de l’événement|
 |----------------|-----------------------|
 |Branches retirées|Indique le nombre d’instructions de branche qui ont été exécutées avant la fin de l’événement.|
 |Branches mal prédites|Indique les branches mal prédites qui sont dues à la mauvaise prédiction du chemin par le processeur. Les branches mal prédites affectent les performances, car le processeur doit abandonner tout le travail effectué et recommencer sur le bon chemin.|
 
 **Événements mémoire**
 
-|Nom de l'événement|Description de l'événement|
+|Nom de l’événement|Description de l’événement|
 |----------------|-----------------------|
 |Échecs de l'accès en lecture au cache L2|Indique le nombre d’échecs de lecture du cache de deuxième niveau (L2).|
 |Références de lecture du cache L2|Indique le nombre de références de lecture du cache de deuxième niveau (L2). Cela comprend les échecs de chargement, ainsi que les échecs et les réussites RFO (Read For Ownership).|
@@ -88,7 +88,7 @@ Pour voir la liste des compteurs disponibles sur un ordinateur à partir de l’
 
 #### <a name="to-view-a-list-of-a-list-of-all-cpu-counters-that-are-supported-on-the-current-platform"></a>Pour afficher la liste de tous les compteurs UC pris en charge sur la plateforme actuelle
 
-1. Dans Performance Explorer, cliquez à droite sur la session de performance, puis cliquez sur **Properties**.
+1. Dans Explorateur de performances, cliquez avec le bouton droit sur la session de performance, puis cliquez sur **Propriétés**.
 
 2. Effectuez l’une des actions suivantes :
 
@@ -96,15 +96,15 @@ Pour voir la liste des compteurs disponibles sur un ordinateur à partir de l’
 
       **Remarque** Cliquez sur **Annuler** pour revenir à la configuration d’échantillonnage précédente.
 
-     -ou-
+     - ou -
 
    - Sélectionnez **Compteurs UC**, puis sélectionnez **Collecter les compteurs UC**. Les compteurs UC sont répertoriés sous **Compteurs disponibles**.
 
-      **Note** Cliquez **sur Annuler** pour revenir à la configuration de collecte de compteurs précédente.
+      **Remarque** Cliquez sur **Annuler** pour revenir à la configuration de la collection de compteurs précédente.
 
 #### <a name="to-view-a-list-of-a-list-of-window-counters-that-are-supported-on-the-current-platform"></a>Pour afficher la liste des compteurs Windows pris en charge sur la plateforme actuelle
 
-1. Dans Performance Explorer, cliquez à droite sur la session de performance, puis cliquez sur **Properties**.
+1. Dans Explorateur de performances, cliquez avec le bouton droit sur la session de performance, puis cliquez sur **Propriétés**.
 
 2. Cliquez sur **Compteurs Windows**.
 
@@ -124,13 +124,13 @@ L’outil en ligne de commande [VSPerfCmd](../profiling/vsperfcmd.md) permet de 
 
 2. Type
 
-     **\<Répertoire visual studio d’outils de performance>-VSPerfCmd/requêtes**
+     **\<Visual Studio Performance Tools Directory>\VSPerfCmd/QueryCounters**
 
-     où Visual * \<Studio Performance Tools Directory>* est le chemin vers le répertoire Performance Tools de votre installation Visual Studio. Pour obtenir le chemin d’accès des outils d’analyse des performances, voir [Spécifier le chemin d’accès des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
+     où *\<Visual Studio Performance Tools Directory>* est le chemin d’accès au répertoire des outils de performances de votre installation de Visual Studio. Pour obtenir le chemin d’accès des outils d’analyse des performances, voir [Spécifier le chemin d’accès des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
 
 ## <a name="see-also"></a>Voir aussi
 
-[Aperçus](../profiling/overviews-performance-tools.md)
-[Comment: Choisissez des événements](../profiling/how-to-choose-sampling-events.md)
-d’échantillonnage[Comment: Collecter des données](../profiling/how-to-collect-cpu-counter-data.md)
-de compteur CPU[Comment: Collecter des données compteur Windows](../profiling/how-to-collect-windows-counter-data.md)
+[Vues d’ensemble](../profiling/overviews-performance-tools.md) 
+ [Comment : choisir des événements](../profiling/how-to-choose-sampling-events.md) 
+ d’échantillonnage [Procédure : collecter les données](../profiling/how-to-collect-cpu-counter-data.md) 
+ des compteurs UC [Comment : collecter les données des compteurs Windows](../profiling/how-to-collect-windows-counter-data.md)

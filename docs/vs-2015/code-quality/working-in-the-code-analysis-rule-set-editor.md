@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: f25cc5a5f56c20f6a1696baa5aa3e9ee5ebdf2fc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72621509"
 ---
 # <a name="working-in-the-code-analysis-rule-set-editor"></a>Utilisation de l'Éditeur d'ensembles de règles d'analyse du code
@@ -26,7 +26,7 @@ L’éditeur d’ensembles de règles d’analyse du code vous permet de spécif
 |Action|Description|
 |------------|-----------------|
 |**Avertissement**|Génère un avertissement dans la fenêtre de **liste d’erreurs** .|
-|**Error**|Génère une erreur dans la fenêtre de **liste d’erreurs** .|
+|**Erreur**|Génère une erreur dans la fenêtre de **liste d’erreurs** .|
 |**Aucun**|Désactive la règle.|
 
  L’éditeur affiche les règles dans une arborescence qui regroupe les règles par un champ d’ensemble de règles que vous spécifiez. Pour ajouter ou supprimer des règles dans un ensemble de règles, effectuez une ou plusieurs des étapes suivantes :
@@ -46,8 +46,8 @@ L’éditeur d’ensembles de règles d’analyse du code vous permet de spécif
 |---------------------|-----------------|
 |**Développer tout**|Affiche les règles dans tous les groupes.|
 |**Réduire tout**|Masque les règles dans tous les groupes.|
-|**Group By**|Spécifie le champ selon lequel les règles sont regroupées. Cliquez sur **\<None >** pour afficher les règles sans les groupes.|
-|**options de colonne**|Spécifie les champs de règle à afficher.|
+|**Regrouper par**|Spécifie le champ selon lequel les règles sont regroupées. Cliquez **\<None>** pour afficher les règles sans groupes.|
+|**Options de colonne**|Spécifie les champs de règle à afficher.|
 |**Masquer les règles qui ne s’appliquent pas à la solution actuelle**|Affiche ou masque les règles qui ne sont pas du même type de cible que la solution.|
 |**Afficher les règles qui peuvent générer des erreurs d’analyse du code**|Affiche ou masque les règles auxquelles l’action d’erreur est assignée.|
 |**Afficher les règles qui peuvent générer des avertissements d’analyse du code**|Affiche ou masque les règles auxquelles l’action d’avertissement est assignée.|
@@ -62,10 +62,10 @@ L’éditeur d’ensembles de règles d’analyse du code vous permet de spécif
 
 |Champ|Description|
 |-----------|-----------------|
-|**ID**|Identificateur de la règle.|
+|**Identifiant**|Identificateur de la règle.|
 |**Catégorie**|Outre leur appartenance aux ensembles de règles, les règles d’analyse du code sont également regroupées par catégorie. Pour plus d’informations, consultez [analyse du code pour les avertissements de code managé](../code-quality/code-analysis-for-managed-code-warnings.md).|
 |**Nom**|Titre de la règle.|
-|**Namespace**|Espace de noms de la règle.|
+|**Espace de noms**|Espace de noms de la règle.|
 |**Type de cible**|Indique si la règle est pour le code natif, managé ou de base de données.|
 |**Action**|Action entreprise lorsque la règle n’est pas respectée lors d’une exécution de l’analyse du code.<br /><br /> **Avertissement** : génère un avertissement.<br /><br /> **Erreur** : génère une erreur.<br /><br /> **None** : désactive la règle.<br /><br /> Vous pouvez modifier le champ action. La définition de la valeur sur aucun est identique à la désactivation de la case à cocher de la règle.|
 |**Ensembles de règles sources**|Ensemble de règles qui contient la règle.|

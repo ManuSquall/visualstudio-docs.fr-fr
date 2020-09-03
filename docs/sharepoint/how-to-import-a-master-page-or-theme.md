@@ -14,13 +14,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7abca9e9141fdc8d4540e8a38e9579862fc540f1
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015295"
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>Procédure : importer une page maître ou un thème
-  Vous pouvez attribuer à des pages de votre site SharePoint une apparence cohérente en créant et en utilisant des pages maîtres et des thèmes. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]ne fournit pas de modèles pour ces éléments, mais vous pouvez les créer dans SharePoint Designer, puis les importer dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Pour plus d’informations, consultez [bloc de construction : pages et interface utilisateur](/previous-versions/office/developer/sharepoint-2010/ee539040(v=office.14)) sur le site Web de Microsoft.
+  Vous pouvez attribuer à des pages de votre site SharePoint une apparence cohérente en créant et en utilisant des pages maîtres et des thèmes. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ne fournit pas de modèles pour ces éléments, mais vous pouvez les créer dans SharePoint Designer, puis les importer dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Pour plus d’informations, consultez [bloc de construction : pages et interface utilisateur](/previous-versions/office/developer/sharepoint-2010/ee539040(v=office.14)) sur le site Web de Microsoft.
 
 ### <a name="to-import-a-master-page-or-theme"></a>Pour importer une page maître ou un thème
 

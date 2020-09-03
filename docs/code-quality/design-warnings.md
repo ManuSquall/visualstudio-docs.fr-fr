@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a585aa64fec565a58a3af245ff3d3beaa9dc8af3
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84173926"
 ---
 # <a name="design-warnings"></a>Avertissements liés à la conception
@@ -93,6 +93,6 @@ Les avertissements de conception prennent en charge l’adhésion aux [règles d
 | [CA1066 : Implémenter IEquatable au moment de remplacer Equals](../code-quality/ca1066.md) | Un type valeur substitue la <xref:System.Object.Equals%2A> méthode, mais n’implémente pas <xref:System.IEquatable%601> . |
 | [CA1067: Remplacer Equals lors de l’implémentation d’IEquatable](../code-quality/ca1067.md) | Un type implémente <xref:System.IEquatable%601> , mais ne se substitue pas à la <xref:System.Object.Equals%2A> méthode. |
 | [CA1068 : Les paramètres CancellationToken doivent venir en dernier](../code-quality/ca1068.md) | Une méthode a un paramètre CancellationToken qui n’est pas le dernier paramètre. |
-| [Ca1069 : les enums ne doivent pas avoir de valeurs en double](../code-quality/ca1069.md) | Une énumération a plusieurs membres auxquels la même valeur de constante est affectée explicitement. |
-| [Ca1070 : ne déclarez pas les champs d’événement comme virtuels](../code-quality/ca1070.md) | Un [événement de type champ](/dotnet/csharp/language-reference/language-specification/classes#field-like-events) a été déclaré comme étant virtuel. |
+| [CA1069 : Les enums ne doivent pas avoir de valeurs en double](../code-quality/ca1069.md) | Une énumération a plusieurs membres auxquels la même valeur de constante est affectée explicitement. |
+| [CA1070 : Ne pas déclarer de champs d’événement comme virtuels](../code-quality/ca1070.md) | Un [événement de type champ](/dotnet/csharp/language-reference/language-specification/classes#field-like-events) a été déclaré comme étant virtuel. |
 | [CA2210 : Les assemblys doivent porter des noms forts valides](../code-quality/ca2210.md) | Le nom fort protège les clients du chargement à leur insu d'un assembly falsifié. Les assemblys sans noms forts ne doivent pas être déployés hors de scénarios très limités. Si vous partagez ou distribuez des assemblys qui ne sont pas signés correctement, ceux-ci peuvent être falsifiés, le Common Language Runtime peut ne pas les charger ou l'utilisateur peut être amené à désactiver une vérification sur son ordinateur. |

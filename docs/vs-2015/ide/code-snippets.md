@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5b41b6e4d4a7635b32edb5697c89ecb1249fb9da
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72619724"
 ---
 # <a name="code-snippets"></a>Extraits de code
@@ -48,7 +48,7 @@ finally
 
 ```
 
- Pour insérer cet extrait, cliquez sur **Insérer un extrait** dans le menu contextuel de la fenêtre de code, cliquez sur **Visual C#** , tapez `tryf`, puis appuyez sur la touche TAB. Vous pouvez également taper `tryf`, puis appuyer sur TAB + TAB.
+ Pour insérer cet extrait, cliquez sur **Insérer un extrait** dans le menu contextuel de la fenêtre de code, cliquez sur **Visual C#**, tapez `tryf`, puis appuyez sur la touche TAB. Vous pouvez également taper `tryf`, puis appuyer sur TAB + TAB.
 
  Exemple d'extrait de code d'encerclement : en C++, le raccourci `if` peut être utilisé comme un extrait d'insertion ou comme un extrait de code d'encerclement. Si vous sélectionnez une ligne de code (par exemple `return FALSE;`), et que vous cliquez ensuite sur **Entourer de**, puis sur **if**, l’extrait est développé autour de la ligne :
 
@@ -86,4 +86,4 @@ End Property
  Vous pouvez ajouter et supprimer des répertoires d’extraits de code à l’aide des boutons **Ajouter** et **Supprimer** dans la boîte de dialogue **Gestionnaire des extraits de code**. Pour ajouter des extraits de code individuels, utilisez le bouton **Importer**.
 
 ## <a name="see-also"></a>Voir aussi
- [Procédure pas à pas : création d’un extrait](../ide/walkthrough-creating-a-code-snippet.md) de code [Comment : distribuer des extraits](../ide/how-to-distribute-code-snippets.md) [de code meilleures pratiques pour l’utilisation d’extraits de code](../ide/best-practices-for-using-code-snippets.md) [Dépannage des](../ide/troubleshooting-snippets.md) extraits de code [visuels C# ](../ide/visual-csharp-code-snippets.md) [ C++ ](../ide/visual-cpp-code-snippets.md) extraits de code visuels [Référence de schéma des extraits de code](../ide/code-snippets-schema-reference.md)
+ [Procédure pas à pas : création d’un extrait](../ide/walkthrough-creating-a-code-snippet.md) de code [Comment : distribuer des extraits de code](../ide/how-to-distribute-code-snippets.md) [meilleures pratiques pour l’utilisation d’extraits de code](../ide/best-practices-for-using-code-snippets.md) [dépanner des extraits](../ide/troubleshooting-snippets.md) de code [Visual C#](../ide/visual-csharp-code-snippets.md) [Visual C++](../ide/visual-cpp-code-snippets.md) les extraits de code extraits de code [Référence du schéma](../ide/code-snippets-schema-reference.md)

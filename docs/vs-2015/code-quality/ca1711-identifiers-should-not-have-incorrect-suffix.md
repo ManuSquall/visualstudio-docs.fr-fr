@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 1e753083e9b4bda1e33553021ccb0027a2af2533
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544012"
 ---
 # <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711 : Les identificateurs ne doivent pas porter un suffixe incorrect
@@ -51,7 +51,7 @@ ms.locfileid: "85544012"
 |Autorisation|<xref:System.Security.IPermission?displayProperty=fullName>|
 |File d'attente|<xref:System.Collections.Queue?displayProperty=fullName>|
 |Pile|<xref:System.Collections.Stack?displayProperty=fullName>|
-|STREAM|<xref:System.IO.Stream?displayProperty=fullName>|
+|Flux|<xref:System.IO.Stream?displayProperty=fullName>|
 
  En outre, les suffixes suivants ne doivent **pas** être utilisés :
 

@@ -26,10 +26,10 @@ ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
 ms.openlocfilehash: 33b97050f04fd23a9fa3b6c3c641faa5dfe4802f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651059"
 ---
 # <a name="create-a-sql-database-by-using-a-designer"></a>Créer une base de données SQL à l’aide d’un concepteur
@@ -47,24 +47,24 @@ Vous pouvez explorer les tâches de base, telles que l’ajout de tables et la d
 
 - [Remplir les tables avec des données](../data-tools/create-a-sql-database-by-using-a-designer.md#BKMK_Populating)
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Prérequis
  Pour effectuer cette procédure pas à pas, assurez-vous que SQL Server Data Tools est installé. Dans le menu **affichage** , vous devriez voir **Explorateur d’objets SQL Server**. Si ce n’est pas le cas, accédez à **Ajout/suppression de programmes**, cliquez sur **Visual Studio 2015**, sélectionnez **modifier**, puis activez la case à cocher en regard de **SQL Server Data Tools**.
 
-## <a name="BKMK_CreateNewSQLDB"></a>Créer un projet et un fichier de base de données local
+## <a name="create-a-project-and-a-local-database-file"></a><a name="BKMK_CreateNewSQLDB"></a> Créer un projet et un fichier de base de données local
 
 #### <a name="to-create-a-project-and-a-database-file"></a>Pour créer un projet et un fichier de base de données
 
-1. Créez un projet Windows Forms nommé `SampleDatabaseWalkthrough`.
+1. Créez un projet Windows Forms nommé `SampleDatabaseWalkthrough` .
 
-2. Dans la barre de menus, sélectionnez **projet**  > **Ajouter un nouvel élément**.
+2. Dans la barre de menus, sélectionnez **projet**  >  **Ajouter un nouvel élément**.
 
 3. Dans la liste des modèles d’élément, faites défiler vers le dessous et sélectionnez **base de données basée sur les services**.
 
-    ![Modèles d’élément, boîte de dialogue](../data-tools/media/raddata-vsitemtemplates.png "raddata VSItemTemplates")
+    ![Boîte de dialogue Modèles d'élément](../data-tools/media/raddata-vsitemtemplates.png "raddata VSItemTemplates")
 
 4. Nommez la base de données **SampleDatabase**, puis sélectionnez le bouton **Ajouter** .
 
-5. Si la fenêtre **sources de données** n’est pas ouverte, ouvrez-la en sélectionnant les touches Maj + Alt + D ou, dans la barre de menus, en sélectionnant **Afficher**  >  d’autres**sources de données** **Windows**  > .
+5. Si la fenêtre **sources de données** n’est pas ouverte, ouvrez-la en sélectionnant les touches Maj + Alt + D ou, dans la barre de menus, sélectionnez **Afficher**d'  >  **autres**  >  **sources de données**Windows.
 
 6. Dans la fenêtre **sources de données** , sélectionnez le lien ajouter une **nouvelle source de données** .
 
@@ -72,11 +72,11 @@ Vous pouvez explorer les tâches de base, telles que l’ajout de tables et la d
 
    En ouvrant la fenêtre de propriétés pour la base de données, vous pouvez consulter la chaîne de connexion et l'emplacement du fichier principal .mdf. Vous verrez que le fichier de base de données se trouve dans le dossier du projet.
 
-- Dans Visual Studio, sélectionnez **afficher**  > **Explorateur d’objets SQL Server** si cette fenêtre n’est pas déjà ouverte. Ouvrez la fenêtre Propriétés en développant le nœud **connexions de données** , en ouvrant le menu contextuel pour SampleDatabase. mdf, puis en sélectionnant **Propriétés**.
+- Dans Visual Studio, sélectionnez **Afficher**  >  **Explorateur d’objets SQL Server** si cette fenêtre n’est pas déjà ouverte. Ouvrez la fenêtre Propriétés en développant le nœud **connexions de données** , en ouvrant le menu contextuel pour SampleDatabase. mdf, puis en sélectionnant **Propriétés**.
 
-- Vous pouvez également sélectionner **afficher**  > **Explorateur de serveurs**si cette fenêtre n’est pas déjà ouverte. Ouvrez la fenêtre Propriétés en développant le nœud **connexions de données** . Ouvrez le menu contextuel pour SampleDatabase. mdf, puis sélectionnez **Propriétés**.
+- Vous pouvez également sélectionner **Afficher**  >  **Explorateur de serveurs**, si cette fenêtre n’est pas déjà ouverte. Ouvrez la fenêtre Propriétés en développant le nœud **connexions de données** . Ouvrez le menu contextuel pour SampleDatabase. mdf, puis sélectionnez **Propriétés**.
 
-## <a name="BKMK_CreateNewTbls"></a>Créer des tables, des colonnes, des clés primaires et des clés étrangères
+## <a name="create-tables-columns-primary-keys-and-foreign-keys"></a><a name="BKMK_CreateNewTbls"></a> Créer des tables, des colonnes, des clés primaires et des clés étrangères
  Dans cette section, vous créerez des tables, une clé primaire dans chaque table, et quelques lignes d'exemples de données. La procédure suivante vous donnera une idée de la façon dont ces informations peuvent apparaître dans une application. Vous créerez également une clé étrangère pour spécifier comment les enregistrements d'une table peuvent correspondre aux enregistrements de l'autre table.
 
 #### <a name="to-create-the-customers-table"></a>Pour créer la table Customers
@@ -96,7 +96,7 @@ Vous pouvez explorer les tâches de base, telles que l’ajout de tables et la d
     |`ContactName`|`nvarchar (50)`|True (sélectionné)|
     |`Phone`|`nvarchar (24)`|True (sélectionné)|
 
-4. Ouvrez le menu contextuel de la ligne `CustomerID`, puis sélectionnez **définir la clé primaire**.
+4. Ouvrez le menu contextuel de la `CustomerID` ligne, puis sélectionnez **définir la clé primaire**.
 
 5. Ouvrez le menu contextuel de la ligne par défaut, puis sélectionnez **supprimer**.
 
@@ -106,7 +106,7 @@ Vous pouvez explorer les tâches de base, telles que l’ajout de tables et la d
     CREATE TABLE [dbo].[Customers]
     ```
 
-     Vous devez voir quelque chose de similaire à :
+     Un résultat semblable à celui-ci doit s’afficher :
 
      ![Concepteur de tables](../data-tools/media/raddata-table-designer.png "raddata Concepteur de tables")
 
@@ -145,9 +145,9 @@ Vous pouvez explorer les tâches de base, telles que l’ajout de tables et la d
 
 1. Dans le volet contextuel à droite de la grille, ouvrez le menu contextuel pour les **clés étrangères**, puis sélectionnez **Ajouter une nouvelle clé étrangère**, comme le montre l’illustration suivante.
 
-     ![Ajout d’une clé étrangère dans Concepteur de tables](../data-tools/media/foreignkey.png "ForeignKey")
+     ![Ajout d'une clé étrangère dans le concepteur de tables](../data-tools/media/foreignkey.png "ForeignKey")
 
-2. Dans la zone de texte qui s’affiche, remplacez **ToTable** par `Customers`.
+2. Dans la zone de texte qui s’affiche, remplacez **ToTable** par `Customers` .
 
 3. Dans le volet T-SQL, mettez à jour la dernière ligne pour qu’elle corresponde à l’exemple suivant :
 
@@ -161,7 +161,7 @@ Vous pouvez explorer les tâches de base, telles que l’ajout de tables et la d
 
      Vos modifications sont enregistrées dans le fichier de base de données local.
 
-## <a name="BKMK_Populating"></a>Remplir les tables avec des données
+## <a name="populate-the-tables-with-data"></a><a name="BKMK_Populating"></a> Remplir les tables avec des données
 
 #### <a name="to-populate-the-tables-with-data"></a>Pour remplir les tables avec des données
 
@@ -182,9 +182,9 @@ Vous pouvez explorer les tâches de base, telles que l’ajout de tables et la d
     > [!IMPORTANT]
     > Vérifiez que tous les ID de commande et quantités commandées sont des entiers et que chaque ID client correspond à une valeur que vous avez spécifiée dans la colonne CustomerID de la table Customers.
 
-7. Dans la barre de menus, sélectionnez **fichier**  > **enregistrer tout**.
+7. Dans la barre de menus, sélectionnez **fichier**  >  **enregistrer tout**.
 
-8. Dans la barre de menus, sélectionnez **fichier**  > **Fermer la solution**.
+8. Dans la barre de menus, sélectionnez **fichier**  >  **Fermer la solution**.
 
     > [!NOTE]
     > Il est recommandé de sauvegarder le fichier de base de données que vous venez de créer en copiant et en collant la copie dans un autre emplacement ou en renommant la copie.
