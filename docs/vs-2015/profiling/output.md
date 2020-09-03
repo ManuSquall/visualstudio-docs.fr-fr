@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 26a9532bcf0e641d9ad27522f207493b905dc471
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179563"
 ---
 # <a name="output"></a>Sortie
@@ -34,10 +34,10 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 ## <a name="required-options"></a>Options obligatoires  
  L’option **Output** doit être utilisée avec l’option **Start**.  
   
- **Start:** `Method`  
+ **Démarrer :**`Method`  
  Spécifie le nom du fichier de sortie.  
   
-## <a name="example"></a>Exemples  
+## <a name="example"></a>Exemple  
  Dans l’exemple suivant, le fichier de données de profilage est créé dans le répertoire actif.  
   
 ```  
@@ -45,7 +45,7 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [VSPerfCmd](../profiling/vsperfcmd.md)   
+ [Option](../profiling/vsperfcmd.md)   
  [Profilage d’applications autonomes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilage d’applications web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Profilage de services](../profiling/command-line-profiling-of-services.md)
+ [Profilage d’applications Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Profilage des services](../profiling/command-line-profiling-of-services.md)

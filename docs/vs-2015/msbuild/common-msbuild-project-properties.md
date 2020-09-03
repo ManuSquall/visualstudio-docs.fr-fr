@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1eb56d1334eb18dd5872457d032e5780a3f75eb3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65698719"
 ---
 # <a name="common-msbuild-project-properties"></a>Propriétés communes des projets MSBuild
@@ -42,7 +42,7 @@ Le tableau ci-dessous répertorie les propriétés fréquemment utilisées qui s
 |ALToolPath|Chemin d'accès du fichier AL.exe. Cette propriété remplace la version actuelle du fichier AL.exe pour permettre l'utilisation d'une autre version.|  
 |ApplicationIcon|Fichier icône .ico à passer au compilateur pour qu'il soit incorporé en tant qu'icône Win32. Cette propriété est équivalente au commutateur `/win32icon` du compilateur.|  
 |ApplicationManifest|Spécifie le chemin d'accès du fichier utilisé pour générer les informations de manifeste de Contrôle de compte d'utilisateur externe. S'applique uniquement aux projets Visual Studio ciblant [!INCLUDE[windowsver](../includes/windowsver-md.md)].<br /><br /> Dans la plupart des cas, le manifeste est incorporé. Toutefois, si vous utilisez un déploiement COM sans inscription ou [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], le manifeste peut être un fichier externe installé avec les assemblys de votre application. Pour plus d'informations, consultez la propriété NoWin32Manifest dans cette rubrique.|  
-|AssemblyOriginatorKeyFile|Spécifie le fichier utilisé pour signer l’assembly (.snk ou .pfx) et passé à la [tâche ResolveKeySource](../msbuild/resolvekeysource-task.md) pour générer la clé réelle utilisée pour signer l’assembly.|  
+|AssemblyOriginatorKeyFile|Spécifie le fichier utilisé pour signer l’assembly (. snk ou. pfx) et qui est passé à la [tâche ResolveKeySource](../msbuild/resolvekeysource-task.md) pour générer la clé réelle utilisée pour signer l’assembly.|  
 |AssemblySearchPaths|Liste d'emplacements dans lesquels il convient de rechercher au cours de la résolution de l'assembly de référence au moment de la génération. L'ordre dans lequel les chemins d'accès apparaissent dans cette liste est significatif, car les chemins répertoriés antérieurement ont priorité sur les entrées ultérieures.|  
 |AssemblyName|Nom de l'assembly de sortie définitif après génération du projet.|  
 |BaseAddress|Spécifie l'adresse de base de l'assembly de sortie principal. Cette propriété est équivalente au commutateur `/baseaddress` du compilateur.|  
@@ -56,7 +56,7 @@ Le tableau ci-dessous répertorie les propriétés fréquemment utilisées qui s
 |Configuration|Configuration que vous générez, "Debug" ou "Release".|  
 |CscToolPath|Chemin d'accès de csc.exe, le compilateur [!INCLUDE[csprcs](../includes/csprcs-md.md)].|  
 |CustomBeforeMicrosoftCommonTargets|Nom d'un fichier projet ou fichier de cibles qui doit être importé automatiquement avant l'importation des cibles communes.|  
-|DebugSymbols|Valeur booléenne qui indique si les symboles sont générés par la procédure.<br /><br /> En spécifiant **/p:DebugSymbols=false** sur la ligne de commande, vous désactivez la génération de fichiers de symboles de la base de données du programme (.pdb).|  
+|DebugSymbols|Valeur booléenne qui indique si les symboles sont générés par la procédure.<br /><br /> Le paramètre **/p : DebugSymbols = false** sur la ligne de commande désactive la génération de fichiers de symboles de base de données du programme (. pdb).|  
 |DefineConstants|Définit des constantes conditionnelles du compilateur. Les paires symbole/valeur sont séparées par des points-virgules et spécifiées avec la syntaxe suivante :<br /><br /> *symbole1 = valeur1 ; symbole2 = valeur2*<br /><br /> Cette propriété est équivalente au commutateur `/define` du compilateur.|  
 |DefineDebug|Valeur booléenne qui indique si vous souhaitez que la constante DEBUG soit définie.|  
 |DefineTrace|Valeur booléenne qui indique si vous souhaitez que la constante TRACE soit définie.|  
@@ -79,7 +79,7 @@ Le tableau ci-dessous répertorie les propriétés fréquemment utilisées qui s
 |NoStdLib|Valeur booléenne qui indique s'il faut éviter de référencer la bibliothèque standard (mscorlib.dll). La valeur par défaut est `false`.|  
 |NoVBRuntimeReference|Valeur booléenne qui indique si le runtime [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] (Microsoft.VisualBasic.dll) doit être inclus comme référence dans le projet.|  
 |NoWin32Manifest|Valeur booléenne qui indique si les informations de manifeste de Contrôle de compte d'utilisateur seront incorporées dans l'exécutable de l'application. S'applique uniquement aux projets Visual Studio ciblant [!INCLUDE[windowsver](../includes/windowsver-md.md)]. Dans les projets déployés à l'aide de [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] et de COM sans inscription, cet élément est ignoré. `False` (valeur par défaut) spécifie que les informations de manifeste de Contrôle de compte d'utilisateur doivent être incorporées dans le fichier exécutable de l'application. `True` spécifie que les informations de manifeste de Contrôle de compte d'utilisateur ne doivent pas être incorporées.<br /><br /> Cette propriété s'applique uniquement aux projets [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ciblant [!INCLUDE[windowsver](../includes/windowsver-md.md)]. Dans les projets déployés à l'aide de [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] et de COM sans inscription, cette propriété est ignorée.<br /><br /> Vous ne devez ajouter NoWin32Manifest que si vous ne voulez pas que [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] incorpore la moindre information de manifeste dans l’exécutable de l’application ; ce processus s’appelle *virtualisation*. Pour utiliser la virtualisation, définissez `<ApplicationManifest>` conjointement à `<NoWin32Manifest>`, comme suit :<br /><br /> -   Pour les projets [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], supprimez le nœud `<ApplicationManifest>`. (Dans les projets [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], `<NoWin32Manifest>` est ignoré s’il existe un nœud `<ApplicationManifest>`.)<br />-   Pour les projets [!INCLUDE[csprcs](../includes/csprcs-md.md)], affectez à `<ApplicationManifest>` la valeur `False` et à `<NoWin32Manifest>` la valeur `True`. (Dans les projets [!INCLUDE[csprcs](../includes/csprcs-md.md)], `<ApplicationManifest>` remplace `<NoWin32Manifest>`.)|  
-|Optimize|Valeur booléenne qui, lorsqu'elle correspond à `true`, active les optimisations du compilateur. Cette propriété est équivalente au commutateur `/optimize` du compilateur.|  
+|Optimiser|Valeur booléenne qui, lorsqu'elle correspond à `true`, active les optimisations du compilateur. Cette propriété est équivalente au commutateur `/optimize` du compilateur.|  
 |OptionCompare|Spécifie la façon dont sont effectuées les comparaisons de chaînes. Les valeurs valides sont "binary" et "text". Cette propriété est équivalente au commutateur `/optioncompare` du compilateur de vbc.exe.|  
 |OptionExplicit|Valeur booléenne qui, lorsqu'elle correspond à `true`, requiert une déclaration explicite des variables dans le code source. Cette propriété est équivalente au commutateur `/optionexplicit` du compilateur.|  
 |OptionInfer|Valeur booléenne qui, lorsqu'elle correspond à `true`, active l'inférence de type des variables. Cette propriété est équivalente au commutateur `/optioninfer` du compilateur.|  
@@ -114,7 +114,7 @@ Le tableau ci-dessous répertorie les propriétés fréquemment utilisées qui s
 |Satellite_Version|Spécifie les informations de version concernant l'assembly satellite.|  
 |Satellite_Win32Icon|Insère un fichier icône .ico dans l'assembly satellite.|  
 |Satellite_Win32Resource|Insère une ressource Win32 (fichier .res) dans l'assembly satellite.|  
-|SubsystemVersion|Spécifie la version minimale du sous-système utilisable par le fichier exécutable généré. Cette propriété est équivalente au commutateur `/subsystemversion` du compilateur. Pour plus d’informations sur la valeur par défaut de cette propriété, consultez [/subsystemversion (Visual Basic)](https://msdn.microsoft.com/library/08be22b2-f447-4cd3-8203-120b1b920b54) ou [/subsystemversion (Options du compilateur C#)](https://msdn.microsoft.com/library/a99fce81-9d92-4813-9874-bee777041445).|  
+|SubsystemVersion|Spécifie la version minimale du sous-système utilisable par le fichier exécutable généré. Cette propriété est équivalente au commutateur `/subsystemversion` du compilateur. Pour plus d’informations sur la valeur par défaut de cette propriété, consultez [/SubSystemVersion (Visual Basic)](https://msdn.microsoft.com/library/08be22b2-f447-4cd3-8203-120b1b920b54) ou [/SubSystemVersion (options du compilateur C#)](https://msdn.microsoft.com/library/a99fce81-9d92-4813-9874-bee777041445).|  
 |TargetCompactFramework|Version du .NET Compact Framework requise pour exécuter l'application que vous générez. La spécification de ce paramètre vous permet de référencer certains assemblys Framework que vous ne pourriez peut-être pas référencer autrement.|  
 |TargetFrameworkVersion|Version du [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] nécessaire pour exécuter l’application que vous générez. La spécification de ce paramètre vous permet de référencer certains assemblys Framework que vous ne pourriez peut-être pas référencer autrement.|  
 |TreatWarningsAsErrors|Paramètre booléen qui, s'il a pour valeur `true`, entraîne le traitement de tous les avertissements comme des erreurs. Ce paramètre est équivalent au commutateur `/nowarn` du compilateur.|  

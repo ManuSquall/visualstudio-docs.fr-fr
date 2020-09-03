@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 797f1a55ec7632114e411bf0ba08e7f4e0cc146e
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71255080"
 ---
 # <a name="workbook-host-item"></a>Élément hôte de classeur
@@ -44,7 +44,7 @@ ms.locfileid: "71255080"
 ### <a name="limitations-of-the-workbook-host-item-in-document-level-projects"></a>Limitations de l’élément hôte de classeur dans les projets au niveau du document
  Un projet au niveau du document peut contenir un seul élément hôte <xref:Microsoft.Office.Tools.Excel.Workbook> (autrement dit, la classe `ThisWorkbook` ). Vous ne pouvez pas ajouter de nouveaux éléments hôtes <xref:Microsoft.Office.Tools.Excel.Workbook> à votre projet au moment du design. Vous ne pouvez pas non plus créer des éléments hôtes <xref:Microsoft.Office.Tools.Excel.Workbook> au moment de l’exécution à partir d’une personnalisation au niveau du document.
 
- Si vous créez un classeur Excel au moment de l’exécution, son type est <xref:Microsoft.Office.Interop.Excel.Workbook>. Comme il ne s’agit pas d’un élément hôte, elle ne peut pas contenir de contrôles hôtes ni de contrôles Windows Forms. Pour plus d’informations sur la création de classeurs au moment [de l’exécution, consultez Procédure : Créer des classeurs](../vsto/how-to-programmatically-create-new-workbooks.md)par programmation.
+ Si vous créez un classeur Excel au moment de l’exécution, son type est <xref:Microsoft.Office.Interop.Excel.Workbook>. Comme il ne s’agit pas d’un élément hôte, il ne peut pas contenir de contrôles hôtes ni de contrôles Windows Forms. Pour plus d’informations sur la création de classeurs au moment de l’exécution, consultez [Comment : créer des classeurs par programmation](../vsto/how-to-programmatically-create-new-workbooks.md).
 
  L’élément hôte <xref:Microsoft.Office.Tools.Excel.Workbook> n’agit pas comme un conteneur pour les contrôles hôtes. Ainsi, vous ne pouvez pas ajouter de contrôles visibles au classeur, mais vous pouvez ajouter des composants, comme <xref:System.Data.DataSet>, pour pouvoir les partager dans toutes les feuilles de calcul. Dans un projet au niveau du document, les composants disponibles pour le classeur se trouvent sous les onglets **Composant** , **Données** et **Tous les Windows Forms** de la **Boîte à outils**.
 

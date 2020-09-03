@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 160897a37ff6a8b335479b42a80f4186f176cab6
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71254402"
 ---
 # <a name="controls-on-office-documents"></a>Contrôles sur les documents Office
@@ -32,7 +32,7 @@ ms.locfileid: "71254402"
 
  Quand vous développez des projets au niveau du document pour Excel ou Word, vous pouvez ajouter ces contrôles par programme au moment de l'exécution ou utiliser le concepteur Visual Studio pour ajouter ces contrôles au document ou au classeur dans votre projet au moment du design.
 
-## <a name="in-this-section"></a>Dans cette section
+## <a name="in-this-section"></a>Contenu de cette section
 - [Vue d’ensemble des éléments hôtes et des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md)
 
  Décrit les fonctionnalités des éléments hôtes et des contrôles hôtes, notamment la programmation par rapport à des événements, la liaison des contrôles aux données et la différence entre les contrôles et les objets natifs.
@@ -49,7 +49,7 @@ ms.locfileid: "71254402"
 
  Décrit comment ajouter des contrôles Windows Forms et des contrôles hôtes à des documents Word et Excel, ainsi que les limitations relatives à la persistance de ces contrôles dans le document.
 
-## <a name="related-sections"></a>Rubriques connexes
+## <a name="related-sections"></a>Sections connexes
 - [Personnalisation de l’interface utilisateur Office](../vsto/office-ui-customization.md)
 
  Fournit des informations sur les différentes façons de personnaliser l'interface utilisateur des applications Microsoft Office à l'aide de Visual Studio.

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4af506da822a7f8e38a8952d7c1d0d15fc1995d2
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468552"
 ---
 # <a name="idiaaddressmapset_addressmap"></a>IDiaAddressMap::set_addressMap
@@ -43,12 +43,12 @@ dans Tableau de structures de [structure DiaAddressMapEntry](../../debugger/debu
 
  `imagetoSymbols`
 
-[in] `TRUE` Si le `data` paramètre définit un mappage de la nouvelle disposition d’image à la disposition d’origine (comme décrit par les symboles de débogage). `FALSE`Si `data` est une carte à laquelle la nouvelle disposition d’image provient de la disposition d’origine.
+[in] `TRUE` Si le `data` paramètre définit un mappage de la nouvelle disposition d’image à la disposition d’origine (comme décrit par les symboles de débogage). `FALSE` Si `data` est une carte à laquelle la nouvelle disposition d’image provient de la disposition d’origine.
 
 ## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  En règle générale, le DIA récupère les mappages de traduction d’adresses à partir du fichier de base de données du programme (. pdb). Si ces valeurs sont manquantes, la méthode [IDiaAddressMap :: set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md) est appelée deux fois, une fois avec le `imagetoSymbols` paramètre défini sur `TRUE` et une fois avec le `imagetoSymbols` paramètre défini sur `FALSE` . Les traductions de mappage d’adresses ne peuvent pas être activées à l’aide de la méthode [IDiaAddressMap ::p ut_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md) , sauf si les deux mappages de traduction sont fournis.
 
 ## <a name="see-also"></a>Voir aussi

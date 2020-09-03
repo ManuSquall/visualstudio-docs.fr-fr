@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2b8557581e93c8d2ba5a54a13c04d5de74b24f71
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71255149"
 ---
 # <a name="bookmark-control"></a>Bookmark (contrôle)
@@ -29,17 +29,17 @@ ms.locfileid: "71255149"
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
- Dans les projets au niveau du document, vous pouvez ajouter des contrôles <xref:Microsoft.Office.Tools.Word.Bookmark> à votre document au moment du design ou au moment de l’exécution. Dans les projets de complément VSTO, vous pouvez ajouter des contrôles <xref:Microsoft.Office.Tools.Word.Bookmark> aux documents ouverts au moment de l’exécution. Pour plus d'informations, voir [Procédure : Ajoutez des contrôles Bookmark à des](../vsto/how-to-add-bookmark-controls-to-word-documents.md)documents Word.
+ Dans les projets au niveau du document, vous pouvez ajouter des contrôles <xref:Microsoft.Office.Tools.Word.Bookmark> à votre document au moment du design ou au moment de l’exécution. Dans les projets de complément VSTO, vous pouvez ajouter des contrôles <xref:Microsoft.Office.Tools.Word.Bookmark> à tout document ouvert au moment de l’exécution. Pour plus d’informations, consultez [Comment : ajouter des contrôles Bookmark à des documents Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md).
 
 ## <a name="bind-data-to-the-control"></a>Lier des données au contrôle
  Un contrôle <xref:Microsoft.Office.Tools.Word.Bookmark> prend en charge la liaison de données simple. Le signet doit être lié à une source de données à l’aide de la propriété <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> . La propriété de liaison de données par défaut du signet est la propriété <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> .
 
- Si les données du dataset lié sont mises à jour, <xref:Microsoft.Office.Tools.Word.Bookmark> le contrôle affiche les modifications.
+ Si les données du dataset lié sont mises à jour, le <xref:Microsoft.Office.Tools.Word.Bookmark> contrôle affiche les modifications.
 
- Dans les projets au niveau du document, vous pouvez également lier des données à des signets via la fenêtre **Sources de données** . Pour plus d'informations, voir [Procédure : Remplir des documents avec des données](../vsto/how-to-populate-documents-with-data-from-objects.md)d’objets.
+ Dans les projets au niveau du document, vous pouvez également lier des données à des signets via la fenêtre **Sources de données** . Pour plus d’informations, consultez [Comment : remplir des documents avec des données d’objets](../vsto/how-to-populate-documents-with-data-from-objects.md).
 
 ## <a name="formatting"></a>Mise en forme
- Une mise en forme qui peut être appliquée à un <xref:Microsoft.Office.Interop.Word.Bookmark> peut également être appliquée à un contrôle <xref:Microsoft.Office.Tools.Word.Bookmark> . Cette mise en forme comprend les polices, les retraits, l’espacement, la numérotation et les styles.
+ Une mise en forme qui peut être appliquée à <xref:Microsoft.Office.Interop.Word.Bookmark> peut également être appliquée à un contrôle <xref:Microsoft.Office.Tools.Word.Bookmark> . Cette mise en forme comprend les polices, les retraits, l’espacement, la numérotation et les styles.
 
 ## <a name="assign-text-to-the-bookmark"></a>Assigner du texte au signet
  Il existe une différence supplémentaire entre un objet <xref:Microsoft.Office.Interop.Word.Bookmark?displayProperty=nameWithType> et un contrôle <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType> . Il s’agit du comportement observé quand vous assignez du texte au signet. Si vous assignez du texte à un <xref:Microsoft.Office.Interop.Word.Bookmark?displayProperty=nameWithType>de longueur nulle, ce texte est ajouté à droite du signet. Par ailleurs, le signet conserve une longueur nulle. Toutefois, si vous assignez du texte à un <xref:Microsoft.Office.Tools.Word.Bookmark?displayProperty=nameWithType>de longueur nulle, le texte est inséré dans le signet. Par ailleurs, la longueur du signet se développe en fonction du nombre total de caractères insérés.
@@ -81,7 +81,7 @@ Le tableau suivant montre comment la phrase « Voici un exemple textuel. » est 
 |--------------|----------|
 |Chevauchement de signets|[voici un {exemple} textuel.]|
 |Signet1|Voici un exemple textuel.|
-|Signet2|exemple|
+|Signet2|sample|
 
  Si vous assignez le nouveau texte « Voici un remplacement. » à Signet1, les signets ne se chevauchent plus. Par ailleurs, Signet2 devient un signet vide situé à la fin de Signet1.
 
@@ -112,7 +112,7 @@ Les événements suivants sont disponibles pour le contrôle <xref:Microsoft.Off
 ## <a name="see-also"></a>Voir aussi
 
 - [Automatiser Word à l’aide d’objets étendus](../vsto/automating-word-by-using-extended-objects.md)
-- [Guide pratique pour Ajouter des contrôles Bookmark à des documents Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
-- [Procédure pas à pas : Créer des menus contextuels pour les signets](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)
+- [Comment : ajouter des contrôles Bookmark à des documents Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
+- [Procédure pas à pas : créer des menus contextuels pour les signets](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)
 - [Lier des données à des contrôles dans les solutions Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Limitations de programmation des éléments hôtes et des contrôles hôtes](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

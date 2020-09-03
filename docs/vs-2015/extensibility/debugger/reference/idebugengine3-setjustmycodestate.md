@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine3::SetJustMyCodeState | Microsoft Docs
+title: 'IDebugEngine3 :: SetJustMyCodeState | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ebaf697bfdfff435c12eee1002ff93f4eba7ed65
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195861"
 ---
 # <a name="idebugengine3setjustmycodestate"></a>IDebugEngine3::SetJustMyCodeState
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Cette méthode indique au moteur de débogage sur les informations d’état JustMyCode.  
+Cette méthode indique au moteur de débogage à propos des informations d’état JustMyCode.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -44,19 +44,19 @@ int SetJustMyCodeState(
   
 #### <a name="parameters"></a>Paramètres  
  `fUpdate`  
- [in] Différent de zéro (`TRUE`) pour mettre à jour les informations actuelles, zéro (`FALSE`) pour réinitialiser toutes les informations (en ignorant quoi que ce soit défini précédemment).  
+ dans Différent de zéro ( `TRUE` ) pour mettre à jour les informations actuelles, zéro ( `FALSE` ) pour réinitialiser toutes les informations (sans tenir compte des éléments précédemment définis).  
   
  `dwModules`  
- [in] Nombre de structures d’informations dans `rgJMCSpec.`  
+ dans Nombre de structures d’informations dans `rgJMCSpec.`  
   
  `rgJMCSpec`  
- [in] Tableau de [JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md) structures à utiliser.  
+ dans Tableau de structures de [JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md) à utiliser.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne le code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` ; sinon, retourne le code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- JustMyCode est le concept de débogage uniquement du code qui appartient à un utilisateur et en ignorant tout le code intermédiaire tel que le code du système, même si le code source est disponible pour le code de ce système.  
+ JustMyCode est le concept qui consiste à déboguer uniquement le code qui appartient à un utilisateur et à ignorer tout le code intermédiaire tel que le code système, même si le code source est disponible pour ce code système.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)   

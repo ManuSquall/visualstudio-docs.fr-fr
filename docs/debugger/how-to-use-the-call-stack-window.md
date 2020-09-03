@@ -30,10 +30,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: aa91807459ea5c2d8f576891d0eafc35336347bc
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348741"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>Afficher la pile des appels et utiliser la fenêtre pile des appels dans le débogueur
@@ -66,7 +66,7 @@ Le code non-utilisateur est un code qui n’est pas affiché lorsque [uniquement
 
 `[<External Code>]`
 
-## <a name="switch-to-another-stack-frame-change-the-debugger-context"></a><a name="bkmk_switch"></a>Basculer vers un autre frame de pile (modifier le contexte du débogueur)
+## <a name="switch-to-another-stack-frame-change-the-debugger-context"></a><a name="bkmk_switch"></a> Basculer vers un autre frame de pile (modifier le contexte du débogueur)
 
 1. Dans la fenêtre **pile des appels** , cliquez avec le bouton droit sur le frame de pile dont vous souhaitez afficher le code et les données.
 
@@ -110,7 +110,7 @@ Dans Visual Studio Enterprise (uniquement), vous pouvez afficher les cartes de c
 
 - Cliquez avec le bouton droit dans la fenêtre **pile des appels** et définissez ou désélectionnez **afficher \<**_the information that you want_**> **.
 
-## <a name="load-symbols-for-a-module-c-c-visual-basic-f"></a><a name="bkmk_symbols"></a>Charger des symboles pour un module (C#, C++, Visual Basic, F #)
+## <a name="load-symbols-for-a-module-c-c-visual-basic-f"></a><a name="bkmk_symbols"></a> Charger des symboles pour un module (C#, C++, Visual Basic, F #)
 
 Dans la fenêtre **Pile des appels**, vous pouvez charger des symboles de débogage pour du code qui ne possède actuellement aucun symbole chargé. Ces symboles peuvent être des symboles .NET ou système téléchargés à partir des serveurs de symboles publics Microsoft, ou des symboles dans un chemin d’accès aux symboles sur l’ordinateur que vous déboguez.
 

@@ -26,10 +26,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bab5b86856029615231d908f1e523bb3d42583aa
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662628"
 ---
 # <a name="working-with-classes-and-other-types-class-designer"></a>Utilisation des classes et d'autres types (Concepteur de classes)
@@ -42,7 +42,7 @@ Concentrez-vous plus facilement sur les classes et les types qui vous intéresse
 
  [Conception des classes et des types (Concepteur de classes)](../ide/designing-classes-and-types-class-designer.md)
 
- [Affichage des types et des relations (Concepteur de classes)](../ide/viewing-types-and-relationships-class-designer.md)
+ [Affichage des types et relations (Concepteur de classes)](../ide/viewing-types-and-relationships-class-designer.md)
 
  [Refactorisation des classes et des types (Concepteur de classes)](../ide/refactoring-classes-and-types-class-designer.md)
 

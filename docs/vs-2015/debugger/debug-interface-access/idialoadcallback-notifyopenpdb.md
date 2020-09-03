@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 89ab553fdbe75470853db4506261ab719061f10d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68150617"
 ---
 # <a name="idialoadcallbacknotifyopenpdb"></a>IDiaLoadCallback::NotifyOpenPDB
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Appelé lorsqu’un fichier .pdb de candidat est ouvert.  
+Appelée lorsqu’un fichier candidat. pdb est ouvert.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -36,13 +36,13 @@ HRESULT NotifyOpenPDB ( 
   
 #### <a name="parameters"></a>Paramètres  
  `pdbPath`  
- [in] Le chemin d’accès complet du fichier .pdb.  
+ dans Chemin d’accès complet du fichier. pdb.  
   
  `resultCode`  
- [in] Code qui indique la réussite (`S_OK`) ou l’échec de la charge appliquée à ce fichier.  
+ dans Code qui indique la réussite ( `S_OK` ) ou l’échec de la charge appliquée à ce fichier.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Le code de retour est généralement ignoré.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Le code de retour est généralement ignoré.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

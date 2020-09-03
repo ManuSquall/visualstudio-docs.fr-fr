@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ebea0c3a09d08741523deddce94def170d844202
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71253708"
 ---
 # <a name="document-host-item"></a>Élément hôte de document
@@ -40,7 +40,7 @@ ms.locfileid: "71253708"
 ### <a name="limitations-of-the-document-host-item-in-document-level-projects"></a>Limitations de l’élément hôte de document dans les projets au niveau du document
  Un projet au niveau du document peut contenir un seul élément hôte <xref:Microsoft.Office.Tools.Word.Document> (autrement dit, la classe `ThisDocument` ). Vous ne pouvez pas ajouter de nouveaux éléments hôtes <xref:Microsoft.Office.Tools.Word.Document> à votre projet au moment du design. Vous ne pouvez pas non plus créer des éléments hôtes <xref:Microsoft.Office.Tools.Word.Document> au moment de l’exécution à partir d’une personnalisation au niveau du document.
 
- Si vous créez un document Word au moment de l’exécution, il sera de type <xref:Microsoft.Office.Interop.Word.Document>. Comme il ne s’agit pas d’un élément hôte, elle ne peut pas contenir de contrôles hôtes ni de contrôles Windows Forms. Pour plus d’informations sur la création de documents au moment [de l’exécution, consultez Procédure : Créer des documents](../vsto/how-to-programmatically-create-new-documents.md)par programmation.
+ Si vous créez un document Word au moment de l’exécution, il sera de type <xref:Microsoft.Office.Interop.Word.Document>. Comme il ne s’agit pas d’un élément hôte, il ne peut pas contenir de contrôles hôtes ni de contrôles Windows Forms. Pour plus d’informations sur la création de documents au moment de l’exécution, consultez [Comment : créer des documents par programmation](../vsto/how-to-programmatically-create-new-documents.md).
 
 ## <a name="understand-document-host-items-in-application-level-projects"></a>Comprendre les éléments hôtes de document dans les projets au niveau de l’application
  Dans les projets complément VSTO, vous pouvez générer un élément hôte <xref:Microsoft.Office.Tools.Word.Document> au moment de l’exécution pour tout document ouvert dans Word. Vous pouvez utiliser l’élément hôte <xref:Microsoft.Office.Tools.Word.Document> pour ajouter des contrôles au document associé ou pour gérer des événements qui ne sont pas disponibles sur des objets <xref:Microsoft.Office.Interop.Word.Document> .

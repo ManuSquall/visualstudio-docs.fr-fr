@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 33375a8970638765d02a94e6e3e9cd8afc1a0fe7
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85348650"
 ---
 # <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>Procédure pas à pas : déboguer une application multithread à l’aide de la fenêtre threads (C#, Visual Basic, C++)
@@ -168,7 +168,7 @@ En plus des **indicateurs**, des **désindicateurs**et des **désindicateurs tou
 - **Renommer**, qui vous permet de modifier le nom du thread.
 - [Figer et libérer des](#bkmk_freeze) commandes.
 
-## <a name="freeze-and-thaw-thread-execution"></a><a name="bkmk_freeze"></a>Figer et libérer l’exécution des threads
+## <a name="freeze-and-thaw-thread-execution"></a><a name="bkmk_freeze"></a> Figer et libérer l’exécution des threads
 
 Vous pouvez figer et libérer, ou suspendre et reprendre, les threads pour contrôler l’ordre dans lequel les threads effectuent le travail. Figer et libérer des threads peut vous aider à résoudre les problèmes d’accès concurrentiel, tels que les blocages et les conditions de concurrence.
 

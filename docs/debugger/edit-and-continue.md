@@ -22,28 +22,28 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2accfed995415a508a47e492837ded7acea150d7
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72737891"
 ---
-# <a name="edit-code-and-continue-debugging-in-visual-studio-c-vb-c"></a>Modifier le code et continuer le débogage dans Visual StudioC#(, VB C++,)
+# <a name="edit-code-and-continue-debugging-in-visual-studio-c-vb-c"></a>Modifier le code et continuer le débogage dans Visual Studio (C#, VB, C++)
 Modifier &amp; Continuer est une fonctionnalité qui vous fait gagner du temps en vous permettant de modifier votre code source pendant que votre programme est en mode arrêt. Lorsque vous reprenez l’exécution du programme en choisissant une commande d’exécution telle que **continue** ou **Step**, modifier & Continuer applique automatiquement les modifications du code avec certaines limitations. Cela vous permet de modifier votre code pendant une session de débogage, au lieu de devoir arrêter, recompiler votre programme entier et redémarrer la session de débogage.
 
  Cette section comprend les rubriques suivantes :
 
- [Guide pratique pour activer et désactiver Modifier & Continuer](../debugger/how-to-enable-and-disable-edit-and-continue.md)
+ [Comment : activer et désactiver Modifier &amp;amp; Continuer](../debugger/how-to-enable-and-disable-edit-and-continue.md)
 
- [Guide pratique pour arrêter des modifications de code](../debugger/how-to-stop-code-changes.md)
+ [Comment : arrêter des modifications de code](../debugger/how-to-stop-code-changes.md)
 
- [Modifier & Continuer (C++)](../debugger/edit-and-continue-visual-cpp.md)
+ [Modifier &amp; Continuer (C++)](../debugger/edit-and-continue-visual-cpp.md)
 
- [Modifier & Continuer (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)
+ [Modifier &amp; Continuer (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)
 
- [Modifier & Continuer (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)
+ [Modifier &amp; Continuer (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)
 
- [Opération Modifier & Continuer non prise en charge pour F#](../debugger/edit-and-continue-not-supported-for-f-hash.md)
+ [Opération Modifier &amp;amp; Continuer non prise en charge pour F#](../debugger/edit-and-continue-not-supported-for-f-hash.md)
 
 ## <a name="see-also"></a>Voir aussi
 - [Sécurité du débogueur](../debugger/debugger-security.md)

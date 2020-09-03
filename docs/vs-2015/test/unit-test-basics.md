@@ -11,10 +11,10 @@ caps.latest.revision: 29
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0657fdd846c201b4f9bff4910bdd9fc271c399c9
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543778"
 ---
 # <a name="unit-test-basics"></a>Notions de base des tests unitaires
@@ -40,9 +40,9 @@ Vérifiez que votre code fonctionne comme prévu en créant et en exécutant des
 
 - [Exécuter et afficher des tests](#BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar)
 
-## <a name="unit-testing-overview"></a><a name="BKMK_Unit_testing_overview"></a>Vue d’ensemble des tests unitaires
+## <a name="unit-testing-overview"></a><a name="BKMK_Unit_testing_overview"></a> Vue d’ensemble des tests unitaires
 
-### <a name="quick-starts"></a><a name="BKMK_Quick_starts"></a>Démarrages rapides
+### <a name="quick-starts"></a><a name="BKMK_Quick_starts"></a> Démarrages rapides
  Pour obtenir une introduction aux tests unitaires qui vous conduit directement dans le code, consultez l’une des rubriques suivantes :
 
 - [Procédure pas à pas : création et exécution de tests unitaires pour le code managé](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
@@ -51,7 +51,7 @@ Vérifiez que votre code fonctionne comme prévu en créant et en exécutant des
 
 - [Tests unitaires de code natif avec l’explorateur de tests](https://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c)
 
-## <a name="the-mybank-solution-example"></a><a name="BKMK_The_MyBank_Solution_example"></a>Exemple de solution MyBank
+## <a name="the-mybank-solution-example"></a><a name="BKMK_The_MyBank_Solution_example"></a> Exemple de solution MyBank
  Dans cette rubrique, nous utilisons comme exemple le développement d’une application fictive, appelée `MyBank` . Vous n’avez pas besoin du code réel pour suivre les explications fournies dans cette rubrique. Les méthodes de test sont écrites en C# et présentées à l’aide du framework de tests unitaires Microsoft pour le code managé. Cependant, les concepts peuvent être facilement transférés vers d’autres langages et frameworks.
 
  ![Solution MyBank](../test/media/ute-mybanksolution.png "UTE_MyBankSolution")
@@ -142,7 +142,7 @@ public void Withdraw(double amount)
 
 - la classe`CheckingAccountTests` contient les méthodes de test unitaire pour la classe `CheckingAccount` .
 
-## <a name="write-your-tests"></a><a name="BKMK_Writing_your_tests"></a>Écrire vos tests
+## <a name="write-your-tests"></a><a name="BKMK_Writing_your_tests"></a> Écrire vos tests
  L’infrastructure de tests unitaires que vous utilisez et Visual Studio IntelliSense vous guident lors de l’écriture du code des tests unitaires pour un projet de code. Pour s’exécuter dans l’explorateur de tests, la plupart des infrastructures nécessitent que vous ajoutiez des attributs spécifiques pour identifier les méthodes de test unitaire. Les infrastructures fournissent également un moyen, généralement par le biais d’instructions assert ou d’attributs de méthode, pour indiquer si la méthode de test a réussi ou échoué. D’autres attributs identifient les méthodes facultatives d’installation lors de l’initialisation des classes et avant chaque méthode de test, ainsi que les méthodes de démontage qui sont exécutées après chaque méthode de test et avant la destruction de la classe.
 
  Le modèle AAA (Arrange, Act, Assert) est un moyen couramment utilisé pour écrire les tests unitaires d’une méthode testée.
@@ -217,7 +217,7 @@ public void My_Test ()
 }
 ```
 
-## <a name="run-tests-in-test-explorer"></a><a name="BKMK_Running_tests_in_Test_Explorer"></a>Exécuter les tests dans l’Explorateur de tests
+## <a name="run-tests-in-test-explorer"></a><a name="BKMK_Running_tests_in_Test_Explorer"></a> Exécuter les tests dans l’Explorateur de tests
  Quand vous générez le projet de test, les tests s’affichent dans l’explorateur de tests. Si l’explorateur de tests n’est pas visible, sélectionnez **Test** dans le menu Visual Studio et choisissez **Fenêtres**, puis **Explorateur de tests**.
 
  ![Explorateur de tests unitaires](../ide/media/ute-failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
@@ -226,7 +226,7 @@ public void My_Test ()
 
  Vous pouvez également filtrer les tests de n’importe quelle vue sur le texte de la zone de recherche au niveau global ou en sélectionnant l’un des filtres prédéfinis. Vous pouvez exécuter une sélection des tests à tout moment. Les résultats d’une série de tests sont immédiatement visibles dans la barre réussite/échec en haut de la fenêtre de l’explorateur. Les détails d’un résultat de méthode de test sont affichés quand vous sélectionnez le test.
 
-### <a name="run-and-view-tests"></a><a name="BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar"></a>Exécuter et afficher des tests
+### <a name="run-and-view-tests"></a><a name="BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar"></a> Exécuter et afficher des tests
  La barre d’outils de l’explorateur de tests vous permet de découvrir, d’organiser et d’exécuter les tests qui vous intéressent.
 
  ![Exécuter des tests à partir de la barre d'outils de l'explorateur de tests](../test/media/ute-toolbar.png "UTE_ToolBar")
@@ -244,7 +244,7 @@ public void My_Test ()
 |-|-|
 |![Exécuter après les builds](../test/media/ute-runafterbuild-btn.png "UTE_RunAfterBuild_btn")|Pour exécuter vos tests unitaires après chaque génération locale, choisissez **Test** dans le menu standard, puis **Exécuter les tests après la génération** dans la barre d’outils de l’explorateur de tests.|
 
-### <a name="filter-and-group-the-test-list"></a><a name="BKMK_Filtering_and_grouping_the_test_list"></a>Filtrer et regrouper la liste de tests
+### <a name="filter-and-group-the-test-list"></a><a name="BKMK_Filtering_and_grouping_the_test_list"></a> Filtrer et regrouper la liste de tests
  Quand vous avez un grand nombre de tests, vous pouvez entrer une chaîne dans la zone de recherche de l’explorateur de tests pour filtrer la liste sur la chaîne spécifiée. Vous pouvez limiter votre filtre encore plus en choisissant parmi la liste des filtres.
 
  ![Rechercher des catégories de filtre](../test/media/ute-searchfilter.png "UTE_SearchFilter")

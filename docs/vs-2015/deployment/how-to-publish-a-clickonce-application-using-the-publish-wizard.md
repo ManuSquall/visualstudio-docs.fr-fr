@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Publier une Application ClickOnce à l’aide de l’Assistant Publication | Microsoft Docs'
+title: 'Comment : publier une application ClickOnce à l’aide de l’Assistant Publication | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -19,16 +19,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7ff519416d874462a86f7e615822d15139fc4726
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697635"
 ---
-# <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Procédure : Publier une application ClickOnce à l’aide de l’Assistant Publication
+# <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Comment : publier une application ClickOnce à l'aide de l'Assistant Publication
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Pour mettre une application ClickOnce à la disposition des utilisateurs, vous devez la publier sur un partage de fichiers ou un chemin d'accès, un serveur FTP ou un média amovible. Vous pouvez publier cette application à l’aide de l’Assistant Publication. Vous trouverez des propriétés supplémentaires liées à la publication sur la page **Publier** du **Concepteur de projet**. Pour plus d’informations, consultez [publication d’Applications ClickOnce](../deployment/publishing-clickonce-applications.md).  
+Pour mettre une application ClickOnce à la disposition des utilisateurs, vous devez la publier sur un partage de fichiers ou un chemin d'accès, un serveur FTP ou un média amovible. Vous pouvez publier cette application à l’aide de l’Assistant Publication. Vous trouverez des propriétés supplémentaires liées à la publication sur la page **Publier** du **Concepteur de projet**. Pour plus d’informations, consultez [publication d’applications ClickOnce](../deployment/publishing-clickonce-applications.md).  
   
  Avant d'exécuter l'Assistant Publication, vous devez correctement définir les propriétés de publication. Par exemple, vous pouvez spécifier une clé pour signer votre application ClickOnce dans la page **Signature** du **Concepteur de projet**. Pour plus d’informations, consultez [Sécurisation des applications ClickOnce](../deployment/securing-clickonce-applications.md).  
   
@@ -42,7 +42,7 @@ Pour mettre une application ClickOnce à la disposition des utilisateurs, vous d
   
 1. Dans l’**Explorateur de solutions**, sélectionnez le projet d’application.  
   
-2. Sur le **Build** menu, cliquez sur **publier**`Projectname`.  
+2. Dans le menu **générer** , cliquez sur **publier** `Projectname` .  
   
     L'Assistant Publication apparaît.  
   
@@ -52,7 +52,7 @@ Pour mettre une application ClickOnce à la disposition des utilisateurs, vous d
   
    - Si les utilisateurs effectuent l’installation à partir d’un site web, cliquez sur **À partir d’un site web**, puis entrez une URL qui correspond au chemin de fichier entré à l’étape précédente. Cliquez sur **Suivant**. (Cette option est généralement utilisée quand vous spécifiez une adresse FTP comme emplacement de publication. Le téléchargement direct à partir de FTP n'est pas pris en charge. Vous devez donc entrer une URL ici.)   
   
-   - Si les utilisateurs installent directement l’application à partir du partage de fichiers, cliquez sur **À partir d’un chemin UNC ou d’un partage de fichiers**, puis cliquez sur **Suivant**. (Il s’agit de la publication des emplacements de la forme c:\deploy\myapp ou \\\server\myapp.)  
+   - Si les utilisateurs installent directement l’application à partir du partage de fichiers, cliquez sur **À partir d’un chemin UNC ou d’un partage de fichiers**, puis cliquez sur **Suivant**. (Il s’agit des emplacements de publication au format c:\deploy\myapp ou \\ \server\myapp.)  
   
    - Si les utilisateurs installent l’application à partir d’un média amovible, cliquez sur **À partir d’un CD-ROM ou DVD-ROM**, puis cliquez sur **Suivant**.  
   
@@ -72,13 +72,13 @@ Pour mettre une application ClickOnce à la disposition des utilisateurs, vous d
   
 1. Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur le projet d’application, puis cliquez sur **Propriétés**.  
   
-    Le **Concepteur de projet** s’affiche.  
+    Le **Concepteur de projets** s’affiche.  
   
 2. Cliquez sur l’onglet **Publier** pour ouvrir la page **Publier** du **Concepteur de projet**, puis cliquez sur le bouton **Assistant Publication**.  
   
     L'Assistant Publication apparaît.  
   
-3. Dans le **où voulez-vous publier l’application ?** , entrez le chemin d’accès de fichier ou l’emplacement de FTP où l’application sera publiée, par exemple d:\deploy. Cliquez ensuite sur **Suivant** pour continuer.  
+3. Dans la page **où voulez-vous publier l’application ?** , entrez le chemin d’accès du fichier ou l’emplacement FTP où l’application sera publiée, par exemple d:\deploy. Cliquez ensuite sur **Suivant** pour continuer.  
   
 4. Dans la page **Comment les utilisateurs installeront-ils l’application ?**, cliquez sur **À partir d’un CD-ROM ou DVD-ROM**, puis cliquez sur **Suivant**.  
   
@@ -103,4 +103,4 @@ Pour mettre une application ClickOnce à la disposition des utilisateurs, vous d
 ## <a name="see-also"></a>Voir aussi  
  [Sécurité et déploiement ClickOnce](../deployment/clickonce-security-and-deployment.md)   
  [Sécurisation des applications ClickOnce](../deployment/securing-clickonce-applications.md)   
- [Déploiement d’une solution Office à l’aide de ClickOnce](https://msdn.microsoft.com/library/feb516b3-5e4d-449a-9fd2-347d08d90252)
+ [Déploiement d'une solution Office à l'aide de ClickOnce](https://msdn.microsoft.com/library/feb516b3-5e4d-449a-9fd2-347d08d90252)

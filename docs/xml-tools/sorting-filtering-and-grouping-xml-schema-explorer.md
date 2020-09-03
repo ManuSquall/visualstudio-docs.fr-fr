@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cd288171cd8713e6b403f71a4eee6ba09d3f6ea9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75592514"
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>Tri, filtrage et regroupement (Explorateur de schémas XML)
@@ -27,7 +27,7 @@ Les options de filtrage suivantes sont disponibles. Par défaut, les options **a
 
 - **Affichez les fichiers de schéma**.
 
-- **Afficher les compositeurs (séquence/choix/tous)** .
+- **Afficher les compositeurs (séquence/choix/tous)**.
 
 ## <a name="sorting-options"></a>Options de tri
 
@@ -65,7 +65,7 @@ Lorsque l’option **Trier par type** est sélectionnée, les nœuds globaux son
 
 Lorsque l’option **Trier par nom** est sélectionnée, les nœuds globaux sont triés dans l’ordre suivant :
 
-1. `import` les nœuds (dans l’ordre alphabétique des espaces de noms).
+1. `import` nœuds (dans l’ordre alphabétique des espaces de noms).
 
 2. Nœuds `include` (par ordre alphabétique des attributs `schemaLocation`).
 

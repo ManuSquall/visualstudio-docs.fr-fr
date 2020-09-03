@@ -13,16 +13,16 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fbfa24733644067b3f79fc7b6e8450df2130116d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179949"
 ---
-# <a name="contextinfofields"></a>CONTEXT_INFO_FIELDS
+# <a name="context_info_fields"></a>CONTEXT_INFO_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Spécifie les informations à récupérer sur un contexte de la mémoire.  
+Spécifie les informations à récupérer sur un contexte de mémoire.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -53,36 +53,36 @@ public enum enum_CONTEXT_INFO_FIELDS {
   
 ## <a name="members"></a>Membres  
  CIF_MODULEURL  
- Initialize/utiliser le `bstrModuleUrl` champ la [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) structure.  
+ Initialisez/utilisez le `bstrModuleUrl` champ de la structure [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) .  
   
  CIF_FUNCTION  
- Initialize/utiliser le `bstrFunction` champ la `CONTEXT_INFO` structure.  
+ Initialisez/utilisez le `bstrFunction` champ de la `CONTEXT_INFO` structure.  
   
  CIF_FUNCTIONOFFSET  
- Initialize/utiliser le `posFunctionOffset` champ la `CONTEXT_INFO` structure.  
+ Initialisez/utilisez le `posFunctionOffset` champ de la `CONTEXT_INFO` structure.  
   
  CIF_ADDRESS  
- Initialize/utiliser le `bstrAddress` champ la `CONTEXT_INFO` structure.  
+ Initialisez/utilisez le `bstrAddress` champ de la `CONTEXT_INFO` structure.  
   
  CIF_ADDRESSOFFSET  
- Initialize/utiliser le `bstrAddressOffset` champ la `CONTEXT_INFO` structure.  
+ Initialisez/utilisez le `bstrAddressOffset` champ de la `CONTEXT_INFO` structure.  
   
  CIF_ALLFIELDS  
- Initialize/utiliser tous les champs de la `CONTEXT_INFO` structure.  
+ Initialisez/Utilisez tous les champs de la `CONTEXT_INFO` structure.  
   
 ## <a name="remarks"></a>Notes  
- Ces valeurs sont passées à un paramètre à la [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) méthode pour indiquer les champs de la [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) structure doivent être initialisées.  
+ Un paramètre est passé à la méthode [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) pour indiquer les champs de la structure [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) qui doivent être initialisés.  
   
- Ces indicateurs sont également utilisées pour indiquer les champs de la `CONTEXT_INFO` structure sont utilisées et valide lors de la structure est retournée.  
+ Ces indicateurs sont également utilisés pour indiquer les champs de la `CONTEXT_INFO` structure qui sont utilisés et valides lorsque la structure est retournée.  
   
- Ces valeurs peuvent être combinées avec une opération OR au niveau du bit.  
+ Ces valeurs peuvent être combinées avec une opération or au niveau du bit.  
   
 ## <a name="requirements"></a>Configuration requise  
- En-tête : msdbg.h  
+ En-tête : msdbg. h  
   
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft. VisualStudio. Debugger. Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

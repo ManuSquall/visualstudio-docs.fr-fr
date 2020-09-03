@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 50e29e3182a19c9f3a667d41725327110b415fd0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591513"
 ---
 # <a name="open-file-command"></a>Ouvrir un fichier, commande
@@ -51,11 +51,11 @@ Par exemple, pour ouvrir un fichier dans l’éditeur de code source, entrez les
 /e:"Source Code (text) Editor"
 ```
 
-## <a name="remarks"></a>Notes 
+## <a name="remarks"></a>Notes
 
 La fonctionnalité de saisie semi-automatique tente de trouver le chemin et le nom de fichier correspondant aux caractères que vous tapez.
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 
 Cet exemple ouvre la feuille de style « Test1.css » dans l’éditeur de code source.
 
@@ -66,7 +66,7 @@ Cet exemple ouvre la feuille de style « Test1.css » dans l’éditeur de code 
 ## <a name="see-also"></a>Voir aussi
 
 - [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Fenêtre de commande](../../ide/reference/command-window.md)
-- [Fenêtre immédiate](../../ide/reference/immediate-window.md)
-- [Boîte De recherche/commande](../../ide/find-command-box.md)
+- [Fenêtre Commande](../../ide/reference/command-window.md)
+- [Exécution (fenêtre)](../../ide/reference/immediate-window.md)
+- [Zone Rechercher/commande](../../ide/find-command-box.md)
 - [Alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

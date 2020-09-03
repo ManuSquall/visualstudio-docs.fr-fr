@@ -12,10 +12,10 @@ ms.devlang: python
 ms.workload:
 - multiple
 ms.openlocfilehash: 6cd833a687591ba4f49e785746381f9a5d738f5e
-ms.sourcegitcommit: 9c1cecaff4d9955276eee7865b78d47679dd1e2a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80638764"
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>Former un modèle TensorFlow dans le cloud
@@ -69,7 +69,7 @@ Dans la fenêtre d’envoi :
 
 - Dans la liste **Cluster to use** (Utiliser le cluster), sélectionnez l’ordinateur distant (avec le préfixe « rm: ») auquel envoyer la tâche.
 
-- Entrez un **nom d’emploi**.
+- Entrez un **nom de travail**.
 
 - Cliquez sur **Envoyer**.
 

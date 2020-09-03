@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3c48c2bad3594e716a363ff932bd041d27bca528
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662488"
 ---
 # <a name="troubleshooting-quality-tools"></a>Résolution des problèmes liés aux outils de qualité
@@ -23,7 +23,7 @@ ms.locfileid: "72662488"
 
 Si vous rencontrez des problèmes quand vous exécutez les outils de qualité Visual Studio, les rubriques de cette section peuvent vous aider à diagnostiquer et à résoudre le problème.
 
-## <a name="in-this-section"></a>Dans cette section
+## <a name="in-this-section"></a>Contenu de cette section
  [Dépannage de l’analyse du code](../code-quality/troubleshooting-code-analysis-issues.md)
 
  [Dépannage de la métrique du code](../code-quality/troubleshooting-code-metrics-issues.md)

@@ -8,19 +8,19 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 39d5d54021e7b8286bd653941d233a73bcf8cfb4
-ms.sourcegitcommit: 334024a43477290ecc610e70c80a0f772787a7d6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80527984"
 ---
 # <a name="troubleshoot-code-coverage"></a>Résoudre les problèmes liés à la couverture du code
 
-L’outil d’analyse de la couverture de code dans Visual Studio recueille des données pour les assemblages natifs et gérés *(fichiers .dll* ou *.exe).* Toutefois, dans certains cas, la fenêtre **des résultats de couverture du code** affiche une erreur similaire à « Résultats vides générés : ... Il ya plusieurs raisons pour lesquelles vous pouvez obtenir des résultats vides. Cet article vous aide à résoudre ces problèmes.
+L’outil d’analyse de couverture du code dans Visual Studio collecte des données pour les assemblys natifs et managés (fichiers *. dll* ou *. exe* ). Toutefois, dans certains cas, la fenêtre résultats de la **couverture du code** affiche une erreur semblable à « les résultats vides ont été générés :... ». Il existe plusieurs raisons pour lesquelles vous pouvez obtenir des résultats vides. Cet article vous aide à résoudre ces problèmes.
 
 ## <a name="what-you-should-see"></a>Ce qui suit doit s'afficher
 
-Si vous choisissez une commande **de couverture de code d’analyse** sur le menu de **test,** et si la version et les tests fonctionnent avec succès, vous devriez voir une liste des résultats dans la fenêtre de **couverture de code.** Vous devrez peut-être développer les éléments pour afficher les détails.
+Si vous choisissez une commande **analyser la couverture du code** dans le menu **test** et si la génération et les tests s’exécutent correctement, vous devez voir une liste de résultats dans la fenêtre de couverture du **code** . Vous devrez peut-être développer les éléments pour afficher les détails.
 
 ::: moniker range=">=vs-2019"
 ![Résultats de la couverture du code avec coloration](../test/media/vs-2019/codecoverage1.png)
@@ -49,27 +49,27 @@ Résolution &mdash; dans l’Explorateur de tests, choisissez **Exécuter tout**
 
 Quand vous modifiez et que vous réexécutez vos tests, le résultat d’une couverture du code antérieure peut être toujours visible, notamment la coloration du code de cette exécution antérieure.
 
-1. Exécuter **la couverture du code d’analyse**.
+1. Exécutez **analyser la couverture du code**.
 
-2. Assurez-vous d’avoir sélectionné le résultat le plus récent défini dans la fenêtre **de résultats de couverture de code.**
+2. Assurez-vous que vous avez sélectionné le jeu de résultats le plus récent dans la fenêtre résultats de la **couverture du code** .
 
 ### <a name="pdb-symbol-files-are-unavailable"></a>Les fichiers .pdb (symbole) ne sont pas disponibles
 
-Analyse&mdash;Ouvrez le dossier cible compilateur (généralement *bin-debug*), et vérifiez que pour chaque assemblage, il y a un fichier *.pdb* dans le même répertoire que le fichier *.dll* ou *.exe.*
+Analyse &mdash; Ouvrez le dossier cible de compilation (généralement *bin\Debug*) et vérifiez que pour chaque assembly, il existe un fichier *. pdb* dans le même répertoire que le fichier *. dll* ou *. exe* .
 
-Explication&mdash;Le moteur de couverture de code exige que chaque assemblage ait son fichier *.pdb* associé accessible pendant la course d’essai. S’il n’y a pas de fichier *.pdb* pour une assemblée particulière, l’assemblage n’est pas analysé.
+Explication &mdash; le moteur de couverture du code requiert que le fichier *. pdb* associé à chaque assembly soit accessible pendant la série de tests. S’il n’existe aucun fichier *. pdb* pour un assembly particulier, l’assembly n’est pas analysé.
 
-Le fichier *.pdb* doit être généré à partir de la même version que les fichiers *.dll* ou *.exe.*
+Le fichier *. pdb* doit être généré à partir de la même build que les fichiers. *dll* ou *. exe* .
 
-Résolution&mdash;Assurez-vous que vos paramètres de construction génèrent le fichier *.pdb.* Si les fichiers *.pdb* ne sont pas mis à jour lorsque le projet est construit, puis ouvrez les propriétés du projet, sélectionnez la page **Build,** choisissez **Advanced**, et inspectez **Debug Info**.
+Résolution Assurez-vous &mdash; que vos paramètres de génération génèrent le fichier *. pdb* . Si les fichiers *. pdb* ne sont pas mis à jour lors de la génération du projet, ouvrez les propriétés du projet, sélectionnez la page **générer** , choisissez **avancé**, puis inspecter les **informations de débogage**.
 
-Pour les projets CMD, assurez-vous que les fichiers .pdb générés ont des informations complètes de débbug. Ouvrez les propriétés du projet et vérifiez que **Linker** > **Debugging** > **Generate Debug Info** est configuré pour générer des informations **Debug optimisées pour le partage et la publication (/DEBUG:FULL)**.
+Pour les projets C++, vérifiez que les fichiers. pdb générés contiennent des informations de débogage complètes. Ouvrez les propriétés du projet et vérifiez que le débogage de l' **éditeur de liens**  >  **Debugging**  >  **générer** des informations de débogage est défini pour **générer des informations de débogage optimisées pour le partage et la publication (/Debug : Full)**.
 
-Si les fichiers *.pdb* et *.dll* ou *.exe* sont à différents endroits, copiez le fichier *.pdb* au même répertoire. Il est également possible de configurer le moteur de couverture de code pour rechercher des fichiers *.pdb* dans un autre endroit. Pour plus d’informations, consultez [Personnaliser l’analyse de la couverture du code](../test/customizing-code-coverage-analysis.md).
+Si les fichiers *. pdb* et *. dll* ou *. exe* se trouvent dans des emplacements différents, copiez le fichier *. pdb* dans le même répertoire. Il est également possible de configurer le moteur de couverture du code pour rechercher des fichiers *. pdb* dans un autre emplacement. Pour plus d’informations, consultez [Personnaliser l’analyse de la couverture du code](../test/customizing-code-coverage-analysis.md).
 
 ### <a name="use-an-instrumented-or-optimized-binary"></a>Utiliser un fichier binaire instrumenté ou optimisé
 
-Analyse&mdash;Déterminez si le binaire a subi toute forme d’optimisation avancée telle que l’optimisation guidée de profil, ou a été instrumenté par un outil de profilage tel que *vsinstr.exe* ou *vsperfmon.exe*.
+&mdash;L’analyse détermine si le fichier binaire a subi une forme d’optimisation avancée telle que l’optimisation guidée par profil, ou s’il a été instrumenté par un outil de profilage tel que *vsinstr.exe* ou *vsperfmon.exe*.
 
 Explication &mdash; si un assembly a déjà été instrumenté ou optimisé par un autre outil de profilage, l’assembly est omis de l’analyse de la couverture du code. L’analyse de la couverture du code ne peut pas être exécutée sur ces assemblys.
 
@@ -95,13 +95,13 @@ Résolution &mdash; utilisez une version MSIL de l’assembly. Ne le traitez pas
 
 Analyse &mdash; si vous utilisez un fichier *.runsettings* personnalisé, il peut contenir une erreur de syntaxe. La couverture du code n’est pas exécutée, et la fenêtre de couverture du code ne s’ouvre pas à l’issue de l’exécution du test ou elle affiche des résultats anciens.
 
-Explication&mdash;Vous pouvez exécuter vos tests unitaires avec un fichier *personnalisé .runsettings* pour configurer les options de couverture de code. Les options vous permettent d'inclure ou d'exclure des fichiers. Pour plus d’informations, consultez [Personnaliser l’analyse de la couverture du code](../test/customizing-code-coverage-analysis.md).
+Explication &mdash; vous pouvez exécuter vos tests unitaires avec un fichier *. RunSettings* personnalisé pour configurer les options de couverture du code. Les options vous permettent d'inclure ou d'exclure des fichiers. Pour plus d’informations, consultez [Personnaliser l’analyse de la couverture du code](../test/customizing-code-coverage-analysis.md).
 
 Résolution &mdash; il existe deux types d’erreurs possibles :
 
 - **Erreur XML**
 
-     Ouvrez le fichier *.runsettings* dans l’éditeur Visual Studio XML. Recherchez les indications des erreurs.
+     Ouvrez le fichier *. RunSettings* dans l’éditeur XML de Visual Studio. Recherchez les indications des erreurs.
 
 - **Erreur d’expressions régulières**
 
@@ -115,9 +115,9 @@ Résolution &mdash; il existe deux types d’erreurs possibles :
 
 Analyse &mdash; si vous utilisez un fichier *.runsettings* personnalisé, vérifiez qu’il inclut votre assembly.
 
-Explication&mdash;Vous pouvez exécuter vos tests unitaires avec un fichier *personnalisé .runsettings* pour configurer les options de couverture de code. Les options vous permettent d'inclure ou d'exclure des fichiers. Pour plus d’informations, consultez [Personnaliser l’analyse de la couverture du code](../test/customizing-code-coverage-analysis.md).
+Explication &mdash; vous pouvez exécuter vos tests unitaires avec un fichier *. RunSettings* personnalisé pour configurer les options de couverture du code. Les options vous permettent d'inclure ou d'exclure des fichiers. Pour plus d’informations, consultez [Personnaliser l’analyse de la couverture du code](../test/customizing-code-coverage-analysis.md).
 
-Résolution&mdash;Retirez `Include` tous les nœuds du fichier *.runsettings,* puis supprimez tous les `Exclude` nœuds. Si cela résout le problème, remettez-les en étapes.
+Résolution &mdash; supprimez tous les `Include` nœuds du fichier *. RunSettings* , puis supprimez tous les `Exclude` nœuds. Si cela résout le problème, remettez-les en étapes.
 
 Assurez-vous que le nœud DataCollectors spécifie la couverture du code. Comparez-le à l’exemple dans [Personnaliser l’analyse de la couverture du code](../test/customizing-code-coverage-analysis.md).
 

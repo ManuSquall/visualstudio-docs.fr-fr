@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 023d049c5256abe6212dd65df78cd67151be94a2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75593055"
 ---
 # <a name="type-collection-editor-dialog-box"></a>Boîte de dialogue Éditeur de collections de types
@@ -25,9 +25,9 @@ Pour plus d’informations, consultez [types connus de contrat de données](/dot
 
 Le tableau suivant décrit les éléments d’interface utilisateur de la boîte de dialogue **type de collection** .
 
-|Élément de l'interface utilisateur|Description|
+|Élément de l’interface utilisateur|Description|
 |-|-----------------|
-|**Liste de types**|Liste des types qui ont été ajoutés ou supprimés.|
+|**Type List**|Liste des types qui ont été ajoutés ou supprimés.|
 
 ## <a name="to-bring-up-the-type-collection-editor-for-the-send-and-receive-activities"></a>Pour afficher l'Éditeur de collections de types pour les activités Send et Receive
 

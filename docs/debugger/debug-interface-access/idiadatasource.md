@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c9f8730fb864a70e7f649d5e8b4920d916c07c11
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468489"
 ---
 # <a name="idiadatasource"></a>IDiaDataSource
@@ -40,7 +40,7 @@ Le tableau suivant présente les méthodes de `IDiaDataSource` .
 |[IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)|Prépare les données de débogage stockées dans un fichier de base de données du programme (. pdb) accessible via un flux de données en mémoire.|
 |[IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md)|Ouvre une session pour interroger les symboles.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Un appel à l’une des méthodes Load de l' `IDiaDataSource` interface ouvre la source du symbole. Un appel réussi à la méthode [IDiaDataSource :: OpenSession](../../debugger/debug-interface-access/idiadatasource-opensession.md) retourne une interface [IDiaSession](../../debugger/debug-interface-access/idiasession.md) qui prend en charge l’interrogation de la source de données. Si la méthode Load retourne une erreur liée à un fichier, la valeur de retour de la méthode [IDiaDataSource :: get_lastError](../../debugger/debug-interface-access/idiadatasource-get-lasterror.md) contient le nom de fichier associé à l’erreur.
 
 ## <a name="notes-for-callers"></a>Notes pour les appelants

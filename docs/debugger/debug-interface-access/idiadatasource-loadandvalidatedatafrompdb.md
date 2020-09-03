@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3e3a4b73cbbfe16cb87108c5f157dada135e71ee
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468538"
 ---
 # <a name="idiadatasourceloadandvalidatedatafrompdb"></a>IDiaDataSource::loadAndValidateDataFromPdb
@@ -62,7 +62,7 @@ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Le tab
 |E_INVALIDARG|Paramètre non valide.|
 |E_UNEXPECTED|La source de données a déjà été préparée.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Un fichier. PDB contient à la fois des valeurs de signature et d’âge. Ces valeurs sont répliquées dans le fichier. exe ou. dll qui correspond au fichier. pdb. Avant de préparer la source de données, cette méthode vérifie que la signature et l’âge du fichier. PDB nommé correspondent aux valeurs fournies.
 
 Pour charger un fichier. pdb sans validation, utilisez la méthode [IDiaDataSource :: loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) .

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: fc5dc311fd85af2b6a0eb3e29e9932614ca55193
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543908"
 ---
 # <a name="ca1815-override-equals-and-operator-equals-on-value-types"></a>CA1815 : Remplacez Equals et l'opérateur égal à dans les types valeur
@@ -32,7 +32,7 @@ ms.locfileid: "85543908"
 |Category|Microsoft. performance|
 |Modification avec rupture|Sans rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Un type valeur public ne remplace pas <xref:System.Object.Equals%2A?displayProperty=fullName> ou n’implémente pas l’opérateur d’égalité (= =). Cette règle ne vérifie pas les énumérations.
 
 ## <a name="rule-description"></a>Description de la règle

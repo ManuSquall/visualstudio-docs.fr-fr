@@ -1,5 +1,5 @@
 ---
-title: Vue du graphique du Concepteur de schémas XML
+title: Vue Graphique du concepteur de schémas XML
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 5881afde-3f24-4eb9-bff8-6cb3fc8aade7
@@ -9,19 +9,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cb71196dfbaf371e66131bf1e4b22584d3dbf0c3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75592865"
 ---
-# <a name="graph-view"></a>Vue du graphique
+# <a name="graph-view"></a>Affichage du graphique
 
 La vue du graphique fournit une représentation graphique des nœuds de schéma globaux et des relations entre les nœuds. Notez que la vue du graphique ne vous permet pas de modifier la disposition du jeu de schémas sur l'aire de conception. La vue du graphique comprend également la barre d'outils Concepteur de schémas XML et la barre de fil d'Ariane (breadcrumb).
 
 L'image suivante montre la vue du graphique avec six nœuds globaux sur son aire de conception.
 
-![Vue du graphique du Concepteur de schémas XML](../xml-tools/media/xsddesigner_graphview.gif)
+![Vue Graphique du concepteur de schémas XML](../xml-tools/media/xsddesigner_graphview.gif)
 
 ## <a name="design-surface"></a>Aire de conception
 
@@ -33,7 +33,7 @@ Pour supprimer des nœuds sélectionnés de l’espace de travail, utilisez la b
 
 Si l’aire de conception est vide, l’éditeur XML, l' **Explorateur de schémas XML**et le filigrane sont affichés. Le *filigrane* est une liste de liens vers toutes les vues du concepteur XSD.
 
-![Concepteur XSD ; vue du graphique](../xml-tools/media/xsdgraphviewwatermark.gif)
+![Concepteur XSD ; vue Graphique](../xml-tools/media/xsdgraphviewwatermark.gif)
 
 Si le jeu de schémas comporte des erreurs, le texte suivant est affiché à la fin de la liste : « Utilisez la liste d'erreurs pour afficher et résoudre les erreurs dans le jeu ».
 
@@ -47,31 +47,31 @@ Le tableau décrit les options disponibles pour tous les nœuds sur l'aire de co
 
 |Option|Description|
 |-|-----------------|
-|**Afficher dans l’Explorateur de schémas XML**|Met le focus sur l'Explorateur de schémas et met en surbrillance le nœud de jeu de schémas.|
+|**Afficher dans l'Explorateur de schémas XML**|Met le focus sur l'Explorateur de schémas et met en surbrillance le nœud de jeu de schémas.|
 |**Afficher dans la vue du graphique**|Bascule vers la vue du graphique (grisée).|
 |**Générer un exemple de code XML**|Disponible uniquement pour les éléments globaux. Génère un exemple de fichier XML pour l'élément global.|
-|**Effacer l’espace de travail**|Efface l'espace de travail et l'aire de conception.|
-|**Supprimer de l’espace de travail**|Supprime les nœuds sélectionnés de l'espace de travail et de l'aire de conception.|
-|**Supprimer tout sauf la sélection dans l’espace de travail**|Supprime les nœuds qui ne sont pas sélectionnés dans l'espace de travail et l'aire de conception.|
+|**Effacer l'espace de travail**|Efface l'espace de travail et l'aire de conception.|
+|**Supprimer de l'espace de travail**|Supprime les nœuds sélectionnés de l'espace de travail et de l'aire de conception.|
+|**Supprimer tout, sauf la sélection de l'espace de travail**|Supprime les nœuds qui ne sont pas sélectionnés dans l'espace de travail et l'aire de conception.|
 |**Exporter le diagramme en tant qu’image**|Enregistre l'aire de conception dans un fichier XPS.|
-|**Tout sélectionner**|Sélectionne tous les nœuds sur l'aire de conception.|
+|**Sélectionner tout**|Sélectionne tous les nœuds sur l'aire de conception.|
 |**Afficher le code**|Ouvre le fichier qui contient le nœud sélectionné dans l’éditeur XML. L’élément sélectionné dans l’Explorateur de **schémas XML** est également sélectionné dans l’éditeur XML.|
-|**Propriétés (fenêtre)**|Ouvre la fenêtre **Propriétés** (si elle n’est pas déjà ouverte). Cette fenêtre affiche des informations sur le nœud.|
+|**Fenêtre Propriétés**|Ouvre la fenêtre **Propriétés** (si elle n’est pas déjà ouverte). Cette fenêtre affiche des informations sur le nœud.|
 
 En plus des options communes décrites ci-dessus, le menu contextuel pour les éléments globaux comprend les options suivantes :
 
 |Option|Description|
 |-|-----------------|
-|**Ajouter une définition de type**|Ajoute le type de base au diagramme.|
+|**Ajouter la définition de type**|Ajoute le type de base au diagramme.|
 |**Ajouter toutes les références**|Ajoute tous les nœuds qui font référence à l'élément et dessine des flèches pour indiquer les relations entre eux.|
-|**Ajouter des membres au groupe de substitution**|Ajoute tous les membres du groupe de substitution. Cette option s'affiche dans la vue si l'élément est l'en-tête ou membre d'un groupe de substitution.|
+|**Ajouter les membres du groupe de substitution**|Ajoute tous les membres du groupe de substitution. Cette option s'affiche dans la vue si l'élément est l'en-tête ou membre d'un groupe de substitution.|
 |**Générer un exemple de code XML**|Génère un exemple de fichier XML pour l'élément global.|
 
 En plus des options communes décrites ci-dessus, le menu contextuel pour les types simples et complexes globaux comprend les options suivantes :
 
 |Option|Description|
 |-|-----------------|
-|**Ajouter un type de base**|Si le type sélectionné est dérivé d'un type global, ajoute le type de base du type sélectionné.|
+|**Ajouter le type de base**|Si le type sélectionné est dérivé d'un type global, ajoute le type de base du type sélectionné.|
 |**Ajouter toutes les références**|Ajoute toutes les références du type sélectionné. Ceci inclut les éléments et les attributs du type sélectionné, ainsi que les types dérivés du type sélectionné.|
 |**Ajouter tous les types dérivés**|Ajoute tous les types qui sont directement et indirectement dérivés du type sélectionné.|
 |**Ajouter tous les ancêtres**|Ajoute tous les types parents (de base).|
@@ -89,7 +89,7 @@ En plus des options communes décrites ci-dessus, le menu contextuel pour les at
 |-|-----------------|
 |**Ajouter toutes les références**|Ajoute tous les nœuds qui font référence au groupe et dessine des flèches pour indiquer les relations entre eux.|
 
-## <a name="properties-window"></a>Propriétés (fenêtre)
+## <a name="properties-window"></a>Fenêtre Propriétés
 
 Utilisez le menu contextuel (clic droit) pour ouvrir initialement la fenêtre **Propriétés** . Par défaut, la fenêtre **Propriétés** s’affiche dans le coin inférieur droit de Visual Studio. Lorsque vous cliquez sur un nœud affiché dans la vue de modèle de contenu, les propriétés de ce nœud s’affichent dans la fenêtre **Propriétés** .
 
@@ -97,20 +97,20 @@ Utilisez le menu contextuel (clic droit) pour ouvrir initialement la fenêtre **
 
 Les boutons suivants de la barre d'outils XSD sont activés lorsque la vue du graphique est active.
 
-![Barre d'outils du Concepteur de schémas XML](../xml-tools/media/xsdgraphviewtoolbar.gif)
+![Barre d'outils du concepteur de schémas XML](../xml-tools/media/xsdgraphviewtoolbar.gif)
 
 |Option|Description|
 |-|-----------------|
-|**Afficher la vue de départ**|Bascule vers la [vue de départ](../xml-tools/start-view.md). Cette vue est accessible à l’aide du raccourci clavier : **Ctrl**+**1**.|
-|**Afficher la vue de modèle de contenu**|Bascule vers la [vue de modèle de contenu](../xml-tools/content-model-view.md). Cette vue est accessible à l’aide du raccourci clavier : **Ctrl**+**2**.|
-|**Afficher la vue du graphique**|Bascule vers la [vue du graphique](../xml-tools/graph-view.md). Cette vue est accessible à l’aide du raccourci clavier : **Ctrl**+**3**.|
-|**Effacer l’espace de travail**|Efface l'espace de travail et l'aire de conception.|
-|**Supprimer de l’espace de travail**|Supprime les nœuds sélectionnés de l'espace de travail et de l'aire de conception.|
-|**Supprimer tout sauf la sélection dans l’espace de travail**|Supprime les nœuds qui ne sont pas sélectionnés dans l'espace de travail et l'aire de conception. Cette option est activée dans la vue de modèle de contenu et dans la vue du graphique.|
-|**De gauche à droite**|Modifie la disposition de la vue du graphique pour représenter hiérarchiquement les nœuds de gauche à droite. Cette option est accessible à l’aide du raccourci clavier : **Alt**+**flèche droite**.|
-|**De droite à gauche**|Modifie la disposition de la vue du graphique pour représenter hiérarchiquement les nœuds de droite à gauche. Cette option est accessible à l’aide du raccourci clavier : **Alt**+**flèche gauche**.|
-|**De haut en bas**|Modifie la disposition de la vue du graphique pour représenter hiérarchiquement les nœuds de haut en bas. Cette option est accessible à l’aide du raccourci clavier : **Alt**+**flèche bas**.|
-|**De bas en haut**|Modifie la disposition de la vue du graphique pour représenter hiérarchiquement les nœuds de bas en haut. Cette option est accessible à l’aide du raccourci clavier : **Alt**+**flèche haut**.|
+|**Afficher la vue de départ**|Bascule vers la [vue de départ](../xml-tools/start-view.md). Cette vue est accessible à l’aide du raccourci clavier : **CTRL** + **1**.|
+|**Afficher la vue de modèle de contenu**|Bascule vers la [vue de modèle de contenu](../xml-tools/content-model-view.md). Cette vue est accessible à l’aide du raccourci clavier : **CTRL** + **2**.|
+|**Afficher la vue du graphique**|Bascule vers la [vue du graphique](../xml-tools/graph-view.md). Cette vue est accessible à l’aide du raccourci clavier : **CTRL** + **3**.|
+|**Effacer l'espace de travail**|Efface l'espace de travail et l'aire de conception.|
+|**Supprimer de l'espace de travail**|Supprime les nœuds sélectionnés de l'espace de travail et de l'aire de conception.|
+|**Supprimer tout, sauf la sélection de l'espace de travail**|Supprime les nœuds qui ne sont pas sélectionnés dans l'espace de travail et l'aire de conception. Cette option est activée dans la vue de modèle de contenu et dans la vue du graphique.|
+|**De gauche à droite**|Modifie la disposition de la vue du graphique pour représenter hiérarchiquement les nœuds de gauche à droite. Cette option est accessible à l’aide du raccourci clavier : **ALT** + **flèche droite**.|
+|**De droite à gauche**|Modifie la disposition de la vue du graphique pour représenter hiérarchiquement les nœuds de droite à gauche. Cette option est accessible à l’aide du raccourci clavier : **ALT** + **flèche gauche**.|
+|**De haut en bas**|Modifie la disposition de la vue du graphique pour représenter hiérarchiquement les nœuds de haut en bas. Cette option est accessible à l’aide de la flèche de raccourci clavier : **ALT** + **bas**.|
+|**De bas en haut**|Modifie la disposition de la vue du graphique pour représenter hiérarchiquement les nœuds de bas en haut. Cette option est accessible à l’aide du raccourci clavier : **ALT** + **flèche haut**.|
 
 ## <a name="panscroll"></a>Panoramique/Défilement
 

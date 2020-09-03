@@ -19,10 +19,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1edb7ceae1ba187b01b92d64ca33d41d83364e72
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662369"
 ---
 # <a name="options-text-editor-basic-visual-basic"></a>Options, Éditeur de texte, De base (Visual Basic)
@@ -50,7 +50,7 @@ La page de propriétés **Spécifique à VB**, accessible via le menu **Outils**
 
   **Activer le mode plan** Lorsque vous ouvrez un fichier dans l’éditeur de code, vous pouvez afficher le document en mode plan. Pour plus d’informations, consultez [Mode Plan](../../ide/outlining.md). Quand cette option est sélectionnée, la fonctionnalité mode Plan est activée à l’ouverture d’un fichier.
 
-  **Insertion automatique des membres interface et MustOverride** Quand vous validez une instruction `Implements` ou une instruction `Inherits` pour une classe, l’éditeur de texte insère des prototypes pour les membres qui doivent être implémentés ou substitués, respectivement.
+  **Insertion automatique des membres interface et MustOverride** Lorsque vous validez une `Implements` instruction ou une `Inherits` instruction pour une classe, l’éditeur de texte insère des prototypes pour les membres qui doivent être implémentés ou substitués, respectivement.
 
   **Afficher les séparateurs de ligne de procédure** L’éditeur de texte indique l’étendue visuelle des procédures. Une ligne est dessinée dans les fichiers sources .vb de votre projet aux emplacements répertoriés dans le tableau suivant :
 
@@ -62,7 +62,7 @@ La page de propriétés **Spécifique à VB**, accessible via le menu **Outils**
 
  **Activer les suggestions de correction d’erreur** L’éditeur de texte peut suggérer des solutions aux erreurs courantes et vous permettre de sélectionner la correction appropriée, qui est ensuite appliquée à votre code.
 
- **Activer la mise en surbrillance des références et des mots clés** L’éditeur de texte peut mettre en surbrillance toutes les instances d’un symbole ou tous les mots clés dans une clause comme `If..Then`, `While...End While` ou `Try...Catch...Finally`. Vous pouvez naviguer entre les références ou les mots clés en surbrillance en appuyant sur Ctrl+Maj+Bas ou Ctrl+Maj+Haut.
+ **Activer la mise en surbrillance des références et des mots clés** L’éditeur de texte peut mettre en surbrillance toutes les instances d’un symbole ou tous les mots clés dans une clause telle que `If..Then` , `While...End While` ou `Try...Catch...Finally` . Vous pouvez naviguer entre les références ou les mots clés en surbrillance en appuyant sur Ctrl+Maj+Bas ou Ctrl+Maj+Haut.
 
 ## <a name="see-also"></a>Voir aussi
  [Général, environnement, options de la boîte de dialogue Options](../../ide/reference/general-environment-options-dialog-box.md) [, éditeur de texte, tous les langages, onglets](../../ide/reference/options-text-editor-all-languages-tabs.md)

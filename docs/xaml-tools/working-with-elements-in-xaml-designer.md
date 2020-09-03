@@ -7,10 +7,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 3f544501a7d8a792af9ddd89c682324a21002c4f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75592923"
 ---
 # <a name="work-with-elements-in-xaml-designer"></a>Utiliser des éléments dans le concepteur XAML
@@ -94,7 +94,7 @@ Le regroupement de plusieurs éléments dans le concepteur XAML crée un contene
 
 Pour regrouper des éléments dans un nouveau conteneur de disposition :
 
-1. Sélectionnez les éléments que vous souhaitez regrouper. (Pour sélectionner plusieurs éléments, maintenez enfoncée la touche **Ctrl** et cliquez sur les éléments.)
+1. Sélectionnez les éléments que vous souhaitez regrouper. (Pour sélectionner plusieurs éléments, appuyez sur la touche **CTRL** et maintenez-la enfoncée pendant que vous cliquez dessus.)
 
 2. Cliquez avec le bouton droit sur les éléments sélectionnés, pointez sur **Grouper**, puis cliquez sur le type de conteneur de disposition dans lequel vous souhaitez que le groupe réside.
 
@@ -107,7 +107,7 @@ Pour dissocier des éléments et supprimer la disposition, cliquez avec le bouto
 
 Vous pouvez restaurer les valeurs par défaut de propriétés de disposition spécifiques d'un élément à l'aide des commandes de réinitialisation de la disposition. Cette commande vous permet de réinitialiser la marge, l'alignement, la largeur, la hauteur et la taille d'un élément, de manière individuelle ou collective.
 
-Pour réinitialiser la disposition des éléments, cliquez avec le bouton droit sur l’élément dans la fenêtre structure du document ou la planche graphique, puis choisissez **disposition** > **Réinitialiser** *PropertyName*, où *PropertyName* est la propriété à réinitialiser (ou choisissez **disposition** > **Réinitialiser tout** pour réinitialiser toutes les propriétés de disposition de l’élément).
+Pour réinitialiser la disposition des éléments, cliquez avec le bouton droit sur l’élément dans la fenêtre structure du document ou la planche graphique, puis choisissez réinitialisation de la **mise en page**  >  **Reset** *NomPropriété*, où *PropertyName* est la propriété à réinitialiser (ou choisissez **disposition**  >  **Réinitialiser tout** pour réinitialiser toutes les propriétés de disposition de l’élément).
 
 ## <a name="see-also"></a>Voir aussi
 

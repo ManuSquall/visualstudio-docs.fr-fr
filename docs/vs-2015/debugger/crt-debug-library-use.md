@@ -1,5 +1,5 @@
 ---
-title: Utilisation de la bibliothèque de débogage CRT | Microsoft Docs
+title: Bibliothèque de débogage CRT utiliser | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -31,16 +31,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7e14a181b432dede3f00a4465d40154fdb393bb0
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "65697856"
 ---
 # <a name="crt-debug-library-use"></a>Utilisation de la bibliothèque de débogage CRT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La bibliothèque Runtime C assure une prise en charge complète du débogage. Pour utiliser une des bibliothèques de débogage CRT, vous devez le lier avec [/DEBUG](https://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103) et compilez avec **/MDd**, **/MTd**, ou **/LDd**.  
+La bibliothèque Runtime C assure une prise en charge complète du débogage. Pour utiliser l’une des bibliothèques de débogage CRT, vous devez effectuer une liaison avec [/Debug](https://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103) et compiler avec **/MDD**, **/MTD**ou **/LDD**.  
   
 ## <a name="remarks"></a>Notes  
  Les principales définitions et macros pour le débogage CRT se trouvent dans le fichier d'en-tête CRTDBG.h.  
@@ -52,5 +52,5 @@ La bibliothèque Runtime C assure une prise en charge complète du débogage. P
  Pour plus d’informations sur les différentes bibliothèques Runtime que vous pouvez utiliser, consultez [Bibliothèques Runtime C](https://msdn.microsoft.com/library/a889fd39-807d-48f2-807f-81492612463f).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Techniques de débogage CRT](../debugger/crt-debugging-techniques.md)   
- [/MD, /MT, /LD (Utiliser la bibliothèque Runtime)](https://msdn.microsoft.com/library/cf7ed652-dc3a-49b3-aab9-ad60e5395579)
+ [Techniques de débogage CRT](../debugger/crt-debugging-techniques.md)   
+ [/MD,/MT,/LD (utiliser la bibliothèque Runtime)](https://msdn.microsoft.com/library/cf7ed652-dc3a-49b3-aab9-ad60e5395579)

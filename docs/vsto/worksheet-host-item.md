@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 301b0a62efae4674432b1051451e5d982899c1b3
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71254870"
 ---
 # <a name="worksheet-host-item"></a>Élément hôte de feuille de calcul
@@ -47,7 +47,7 @@ ms.locfileid: "71254870"
  Dans un projet au niveau du document, vous pouvez renommer les feuilles de calcul dans le concepteur Visual Studio, mais cela modifie uniquement le nom d’affichage de la feuille de calcul. Le nom de programmation est encore le nom par défaut de la feuille de calcul. Si vous renommez la feuille de calcul dans la fenêtre **Propriétés** , seul le nom de programmation est modifié.
 
 ### <a name="limitations-of-the-worksheet-host-item-in-document-level-projects"></a>Limitations de l’élément hôte Worksheet dans les projets au niveau du document
- Vous ne pouvez pas créer d’éléments hôtes <xref:Microsoft.Office.Tools.Excel.Worksheet> au moment de l’exécution dans un projet au niveau du document. Si vous créez une feuille de calcul Excel au moment de l’exécution, elle sera de type <xref:Microsoft.Office.Interop.Excel.Worksheet>. Comme il ne s’agit pas d’un élément hôte, elle ne peut pas contenir de contrôles hôtes ni de contrôles Windows Forms. Pour plus d’informations sur la création de documents au moment [de l’exécution, consultez Procédure : Ajoutez des feuilles de calcul à des classeurs](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)par programmation.
+ Vous ne pouvez pas créer d’éléments hôtes <xref:Microsoft.Office.Tools.Excel.Worksheet> au moment de l’exécution dans un projet au niveau du document. Si vous créez une feuille de calcul Excel au moment de l’exécution, elle sera de type <xref:Microsoft.Office.Interop.Excel.Worksheet>. Comme il ne s’agit pas d’un élément hôte, il ne peut pas contenir de contrôles hôtes ni de contrôles Windows Forms. Pour plus d’informations sur la création de documents au moment de l’exécution, consultez [Comment : ajouter des feuilles de calcul à des classeurs par programmation](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md).
 
 ## <a name="understand-worksheet-host-items-in-vsto-add-in-projects"></a>Comprendre les éléments hôtes de feuille de calcul dans les projets de complément VSTO
  Dans les projets de niveau application, vous pouvez générer un élément hôte <xref:Microsoft.Office.Tools.Excel.Worksheet> au moment de l’exécution pour toute feuille de calcul ouverte dans Excel. Vous pouvez utiliser l’élément hôte <xref:Microsoft.Office.Tools.Excel.Worksheet> pour ajouter des contrôles à la feuille de calcul associée ou pour gérer des événements qui ne sont pas disponibles sur des objets <xref:Microsoft.Office.Interop.Excel.Worksheet> .

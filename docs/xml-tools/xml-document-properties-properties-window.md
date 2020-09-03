@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1b21f4435737597136e1ac4a4dd8651decaf4c65
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75592423"
 ---
 # <a name="xml-document-properties-properties-window"></a>Propriétés de document XML, Fenêtre Propriétés
@@ -28,7 +28,7 @@ Encodage de caractères utilisé pour le fichier. La modification de cette propr
 
 **Entrée**
 
-Document d'entrée associé à la feuille de style XSLT. Il est utilisé par les commandes de **démarrage XSLT** , par exemple, **XML** > **Démarrer XSLT sans débogage**. Un document peut être sélectionné à l’aide du bouton de navigation ( **...** ).
+Document d'entrée associé à la feuille de style XSLT. Elle est utilisée par les commandes de **démarrage XSLT** , par exemple, **XML**  >  **Start XSLT sans débogage**. Un document peut être sélectionné à l’aide du bouton de navigation (**...**).
 
 Cette propriété est visible uniquement lorsqu’un fichier XSLT est ouvert dans l’éditeur.
 
@@ -36,7 +36,7 @@ Cette propriété est visible uniquement lorsqu’un fichier XSLT est ouvert dan
 
 Fichier généré lors de la transformation d'un document XML.
 
-Si aucun fichier n’est spécifié, un nom de fichier par défaut est généré en fonction de l’attribut `method` sur l’élément `xsl:output`, qui détermine l’extension de fichier. Le fichier par défaut se situe dans le répertoire temporaire de l'utilisateur actuel.
+Si aucun fichier n’est spécifié, un nom de fichier par défaut est généré en fonction de l' `method` attribut de l' `xsl:output` élément, qui détermine l’extension de fichier. Le fichier par défaut se situe dans le répertoire temporaire de l'utilisateur actuel.
 
 **Schémas**
 
@@ -46,7 +46,7 @@ Il permet également d’entrer le chemin des schémas. Si plusieurs schémas so
 
 **Feuille**
 
-Fichier XSLT utilisé pour transformer le document lors de l’utilisation des commandes **Démarrer le débogage XSLT** et **Démarrer XSLT sans débogage** . Si ce champ est vide, l’éditeur utilise la valeur fournie dans le `xml-stylesheet` instruction de traitement du document ou il vous invite à entrer un nom de fichier.
+Fichier XSLT utilisé pour transformer le document lors de l’utilisation des commandes **Démarrer le débogage XSLT** et **Démarrer XSLT sans débogage** . Si ce champ est vide, l’éditeur utilise la valeur fournie dans l' `xml-stylesheet` instruction de traitement du document ou il vous invite à entrer un nom de fichier.
 
 Lorsque vous modifiez un fichier XSLT, cette propriété peut être utilisée pour spécifier qu’une autre feuille de style doit être utilisée lorsque la commande **Démarrer le débogage XSLT** ou **Démarrer XSLT sans débogage** est sélectionnée. Par exemple, vous souhaiterez peut-être le faire lorsque vous modifiez une feuille de style qui est incluse dans une feuille de style parente.
 

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9dec73d392dc6af74e5daef99bd6d306f7d58409
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662754"
 ---
 # <a name="how-to-create-an-activity-library"></a>Procédure : créer une bibliothèque d'activités
@@ -23,11 +23,11 @@ Les activités personnalisées permettent de modeler vos processus d'entreprise 
 
 1. Démarrez [!INCLUDE[vs2010](../includes/vs2010-md.md)].
 
-2. Dans le menu **fichier** , pointez sur **nouveau**, puis sélectionnez **projet...** .
+2. Dans le menu **fichier** , pointez sur **nouveau**, puis sélectionnez **projet...**.
 
-     La boîte de dialogue **Nouveau projet** s'affiche.
+     La boîte de dialogue **Nouveau projet** s’affiche.
 
-3. Dans le volet **types de projets** , sélectionnez flux de **travail** à partir des projets **visuels C#**  ou des regroupements de **Visual Basic** en fonction de vos préférences linguistiques.
+3. Dans le volet **types de projets** , sélectionnez flux de **travail** à partir des projets **Visual C#** ou **Visual Basic** regroupements en fonction de vos préférences linguistiques.
 
 4. Dans le volet **modèles** , sélectionnez **bibliothèque d’activités**.
 
@@ -38,7 +38,7 @@ Les activités personnalisées permettent de modeler vos processus d'entreprise 
 7. Dans la zone **solution** , tapez un nom descriptif pour votre solution, puis cliquez sur **OK**.
 
     > [!NOTE]
-    > Si vous souhaitez ajouter une application console de workflow à une solution existante, ouvrez cette solution dans [!INCLUDE[vs2010](../includes/vs2010-md.md)], cliquez avec le bouton droit sur la solution dans **Explorateur de solutions**, puis sélectionnez **Ajouter**, puis **nouveau projet...** pour ouvrir la boîte de dialogue **nouveau projet** . Procédez comme décrit ci-dessus dans cette procédure.
+    > Si vous souhaitez ajouter une application console de workflow à une solution existante, ouvrez cette solution dans [!INCLUDE[vs2010](../includes/vs2010-md.md)] , cliquez avec le bouton droit sur la solution dans **Explorateur de solutions**, puis sélectionnez **Ajouter**, puis **nouveau projet...** pour ouvrir la boîte de dialogue **nouveau projet** . Procédez comme décrit ci-dessus dans cette procédure.
 
 8. Le modèle de projet crée une définition d'activité au format XAML. [!INCLUDE[wfd1](../includes/wfd1-md.md)] s'ouvre et affiche la zone de dessin pour votre activité personnalisée.
 
