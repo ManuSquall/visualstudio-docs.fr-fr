@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 70d994e32b717ff566a2e38acee732c7525d1bb0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77630845"
 ---
 # <a name="wpf-msbuild-task-reference"></a>Informations de référence sur les tâches MSBuild WPF
@@ -37,35 +37,35 @@ Le processus de génération de Windows Presentation Foundation (WPF) étend Mic
 
 - [GenerateTemporaryTargetAssembly](../msbuild/generatetemporarytargetassembly-task.md)
 
- Génère un assemblage si au moins une page XAML dans un projet fait référence à un type qui est déclaré localement dans ce projet. L’assembly généré est supprimé une fois le processus de génération terminé, ou en cas d’échec du processus de génération.
+ Génère un assembly si au moins une page XAML d’un projet fait référence à un type déclaré localement dans ce projet. L’assembly généré est supprimé une fois le processus de génération terminé, ou en cas d’échec du processus de génération.
 
 - [GetWinFXPath](../msbuild/getwinfxpath-task.md)
 
- Retourne le répertoire de l’heure d’exécution actuelle .NET Framework.
+ Retourne le répertoire du runtime d' .NET Framework actuel.
 
 - [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md)
 
- Convertit les fichiers de projet XAML non localisables en format binaire compilé.
+ Convertit des fichiers projet XAML non localisables au format binaire compilé.
 
 - [MarkupCompilePass2](../msbuild/markupcompilepass2-task.md)
 
- Effectue la compilation de balisage de deuxième passage sur les fichiers XAML qui font référence aux types dans le même projet.
+ Effectue une deuxième passe de compilation du balisage sur des fichiers XAML qui référencent des types dans le même projet.
 
 - [MergeLocalizationDirectives](../msbuild/mergelocalizationdirectives-task.md)
 
- Fusionne les attributs de localisation et les commentaires d’un ou plusieurs fichiers de format binaire XAML en un seul fichier pour l’ensemble de l’assemblage.
+ Fusionne les attributs de localisation et les commentaires d’un ou plusieurs fichiers de format binaire XAML dans un seul fichier pour l’assembly entier.
 
 - [ResourcesGenerator](../msbuild/resourcesgenerator-task.md)
 
- Embeds une ou plusieurs ressources (*.jpg*, *.ico*, *.bmp*, XAML en format binaire, et d’autres types d’extension) dans un fichier *.resources.*
+ Incorpore une ou plusieurs ressources (*. jpg*, *. ico*, *. bmp*, XAML au format binaire et d’autres types d’extensions) dans un fichier *. Resources* .
 
 - [UidManager](../msbuild/uidmanager-task.md)
 
- Vérifie, met à jour ou supprime des identifiants uniques (UIM), afin de localiser tous les éléments XAML qui sont inclus dans les fichiers source XAML.
+ Vérifie, met à jour ou supprime les identificateurs uniques (UID), afin de localiser tous les éléments XAML inclus dans les fichiers XAML source.
 
 - [UpdateManifestForBrowserApplication](../msbuild/updatemanifestforbrowserapplication-task.md)
 
- Ajoute ** \<l’élément hostInBrowser />** au manifeste de l’application*\<(nom de projet>.exe.manifest*) lorsqu’un projet d’application de navigateur XAML (XBAP) est construit.
+ Ajoute l' **\<hostInBrowser />** élément au manifeste d’application (* \<projectname> . exe. manifest*) lors de la génération d’un projet d’application de navigateur XAML (XBAP).
 
 ## <a name="see-also"></a>Voir aussi
 

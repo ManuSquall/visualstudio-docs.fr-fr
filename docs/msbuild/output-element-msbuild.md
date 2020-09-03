@@ -19,17 +19,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 90fbd517608c9c36db0b1035f296b9d9402abddd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633029"
 ---
 # <a name="output-element-msbuild"></a>Élément Output (MSBuild)
 
 Stocke les valeurs de sortie d’une tâche dans les éléments et les propriétés.
 
- \<Project> \<Target> \<Task> \<Output>
+ \<Project> \<Target>
+ \<Task>
+ \<Output>
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -48,8 +50,8 @@ Stocke les valeurs de sortie d’une tâche dans les éléments et les propriét
 |Attribut|Description|
 |---------------|-----------------|
 |`TaskParameter`|Attribut requis.<br /><br /> Nom du paramètre de sortie de la tâche.|
-|`PropertyName`|L’attribut `PropertyName` ou `ItemName` est obligatoire.<br /><br /> Propriété recevant la valeur du paramètre de sortie de la tâche. Votre projet peut alors faire référence à la propriété avec la syntaxe $(\<nom_propriété>). Ce nom de propriété peut être un nouveau nom de propriété ou un nom déjà défini dans le projet.<br /><br /> Cet attribut n’est pas utilisable si `ItemName` est également utilisé.|
-|`ItemName`|L’attribut `PropertyName` ou `ItemName` est obligatoire.<br /><br /> Élément recevant la valeur du paramètre de sortie de la tâche. Votre projet peut alors faire référence à l’élément avec la syntaxe @(\<nom_élément>). Ce nom d’élément peut être un nouveau nom d’élément ou un nom déjà défini dans le projet. Quand le nom d’élément est un élément existant, les valeurs de paramètre de sortie sont ajoutées à l’élément existant. <br /><br /> Cet attribut n’est pas utilisable si `PropertyName` est également utilisé.|
+|`PropertyName`|L’attribut `PropertyName` ou `ItemName` est obligatoire.<br /><br /> Propriété recevant la valeur du paramètre de sortie de la tâche. Votre projet peut ensuite référencer la propriété avec la syntaxe $ ( \<PropertyName> ). Ce nom de propriété peut être un nouveau nom de propriété ou un nom déjà défini dans le projet.<br /><br /> Cet attribut n’est pas utilisable si `ItemName` est également utilisé.|
+|`ItemName`|L’attribut `PropertyName` ou `ItemName` est obligatoire.<br /><br /> Élément recevant la valeur du paramètre de sortie de la tâche. Votre projet peut ensuite référencer l’élément avec la syntaxe @ ( \<ItemName> ). Ce nom d’élément peut être un nouveau nom d’élément ou un nom déjà défini dans le projet. Quand le nom d’élément est un élément existant, les valeurs de paramètre de sortie sont ajoutées à l’élément existant. <br /><br /> Cet attribut n’est pas utilisable si `PropertyName` est également utilisé.|
 |`Condition`|Attribut facultatif.<br /><br /> Condition à évaluer. Pour plus d’informations, consultez l’article [Conditions (Conditions MSBuild)](../msbuild/msbuild-conditions.md).|
 
 ### <a name="child-elements"></a>Éléments enfants
@@ -62,7 +64,7 @@ Stocke les valeurs de sortie d’une tâche dans les éléments et les propriét
 | - | - |
 | [Tâche](../msbuild/task-element-msbuild.md) | Crée et exécute une instance d’une tâche MSBuild. |
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 
  L’exemple de code ci-après présente l’exécution de la tâche `Csc` au sein d’un élément `Target`. Les éléments et propriétés transmis aux paramètres de la tâche sont déclarés en dehors de la portée de cet exemple. La valeur du paramètre de sortie `OutputAssembly` est stockée dans l’élément `FinalAssemblyName`, et la valeur du paramètre de sortie `BuildSucceeded` est stockée dans la propriété `BuildWorked`. Pour plus d’informations, consultez l’article [Tâches MSBuild](../msbuild/msbuild-tasks.md).
 
@@ -85,5 +87,5 @@ Stocke les valeurs de sortie d’une tâche dans les éléments et les propriét
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Référence du schéma de fichier de projet](../msbuild/msbuild-project-file-schema-reference.md)
+- [Référence du schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)
 - [Tâches](../msbuild/msbuild-tasks.md)

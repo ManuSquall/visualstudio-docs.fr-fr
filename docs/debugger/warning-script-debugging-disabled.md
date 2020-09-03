@@ -1,5 +1,5 @@
 ---
-title: 'Avertissement: Script Debugging Désactivé (fr) Microsoft Docs'
+title: 'AVERTISSEMENT : débogage de script désactivé | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 15de1a1e516cb3d84c24428ef04dd87baedaed9e
-ms.sourcegitcommit: ade07bd1cf69b8b494d171ae648cfdd54f7800d3
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/21/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81648501"
 ---
 # <a name="warning-script-debugging-disabled"></a>Avertissement : le débogage de script est désactivé
@@ -44,4 +44,4 @@ Le débogage de script est actuellement désactivé dans Internet Explorer
      Les nouveaux paramètres sont désormais appliqués.
 
 ## <a name="see-also"></a>Voir aussi
-- [Comment: Joindre à Script](attach-to-running-processes-with-the-visual-studio-debugger.md)
+- [Comment : attacher à un script](attach-to-running-processes-with-the-visual-studio-debugger.md)

@@ -13,19 +13,19 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3de31652af7bc3fd2da3c5e67e37df8e9ff120e8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68204002"
 ---
 # <a name="icon-element-visual-studio-templates"></a>Icon, élément (modèles Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Spécifie le chemin d’accès et le nom de fichier du fichier image qui sert d’icône qui apparaît dans un le **nouveau projet** ou **ajouter un nouvel élément** boîte de dialogue, pour le modèle.  
+Spécifie le chemin d’accès et le nom du fichier image qui sert d’icône, qui apparaît dans la boîte de dialogue **nouveau projet** ou **Ajouter un nouvel élément** , pour le modèle.  
   
  \<VSTemplate>  
- \<TemplateData >  
+ \<TemplateData>  
  \<Icon>  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -47,8 +47,8 @@ Spécifie le chemin d’accès et le nom de fichier du fichier image qui sert d�
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|`Package`|Attribut facultatif, pour les scénarios complexes.<br /><br /> Un GUID qui spécifie l’ID du package Visual Studio.|  
-|`ID`|Attribut facultatif, pour les scénarios complexes.<br /><br /> Spécifie l’ID de la ressource Visual Studio.|  
+|`Package`|Attribut facultatif, pour les scénarios utilisateur avancés.<br /><br /> Un GUID qui spécifie l’ID du package Visual Studio.|  
+|`ID`|Attribut facultatif, pour les scénarios utilisateur avancés.<br /><br /> Spécifie l’ID de la ressource Visual Studio.|  
   
 ### <a name="child-elements"></a>Éléments enfants  
  Aucun.  
@@ -62,13 +62,13 @@ Spécifie le chemin d’accès et le nom de fichier du fichier image qui sert d�
 ## <a name="text-value"></a>Valeur texte  
  Une valeur texte est requise, sauf si les attributs `Package` et `ID` sont utilisés.  
   
- Le texte fournit le chemin d’accès et le nom de l’icône de modèle qui apparaîtra dans le **nouveau projet** boîte de dialogue.  
+ Le texte fournit le chemin d’accès et le nom de fichier de l’icône de modèle qui s’affichera dans la boîte de dialogue **nouveau projet** .  
   
 ## <a name="remarks"></a>Notes  
  `Icon` est un élément enfant obligatoire de `TemplateData`.  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant montre les métadonnées d’un modèle de projet pour un [!INCLUDE[csprcs](../includes/csprcs-md.md)] application.  
+ L’exemple suivant montre les métadonnées d’un modèle de projet pour une [!INCLUDE[csprcs](../includes/csprcs-md.md)] application.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  

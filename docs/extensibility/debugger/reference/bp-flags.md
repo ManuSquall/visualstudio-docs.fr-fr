@@ -1,5 +1,5 @@
 ---
-title: BP_FLAGS Microsoft Docs
+title: BP_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 62626ff75a4545d89835d3136649191004291f8f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738064"
 ---
 # <a name="bp_flags"></a>BP_FLAGS
-Fournit des drapeaux optionnels qui peuvent être utilisés pour spécifier des informations supplémentaires lors de la configuration d’un point d’arrêt.
+Fournit des indicateurs facultatifs qui peuvent être utilisés pour spécifier des informations supplémentaires lors de la définition d’un point d’arrêt.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -46,25 +46,25 @@ public enum enum_BP_FLAGS {
 
 ## <a name="fields"></a>Champs
 `BP_FLAG_NONE`\
-Spécifie aucun drapeau de point d’arrêt.
+Ne spécifie aucun indicateur de point d’arrêt.
 
 `BP_FLAG_MAP_DOCPOSITION`\
-Précise que le moteur de débogé (DE) doit cartographier le point d’arrêt à l’aide de la position du document. Cela ne s’applique qu’aux points de rupture définis dans les fichiers sources axés sur le script tels que Active Server Pages (ASP).
+Spécifie que le moteur DE débogage (DE) doit mapper le point d’arrêt à l’aide de la position du document. Cela s’applique uniquement aux points d’arrêt définis dans les fichiers sources orientés script tels que les pages de Active Server (ASP).
 
 `BP_FLAG_DONT_STOP`\
-Précise que le point d’arrêt doit être traité par le moteur de débogé, mais que le moteur de débogé ne devrait finalement pas s’arrêter là (c’est-à-dire qu’un objet d’événement [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) ne doit pas être envoyé). Ce drapeau est conçu pour être utilisé principalement avec des points de trace.
+Spécifie que le point d’arrêt doit être traité par le moteur de débogage, mais que le moteur de débogage ne doit finalement pas s’arrêter ici (autrement dit, un objet d’événement [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) ne doit pas être envoyé). Cet indicateur est conçu pour être utilisé principalement avec les points de trace.
 
 ## <a name="remarks"></a>Notes
-Utilisé pour `dwFlags` le membre des structures [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) et [BP_REQUEST_INFO2.](../../../extensibility/debugger/reference/bp-request-info2.md)
+Utilisé pour le `dwFlags` membre des structures [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) et [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) .
 
-Ces valeurs peuvent être combinées avec un peu plus. `OR`
+Ces valeurs peuvent être combinées avec une opération de bits `OR` .
 
-## <a name="requirements"></a>Spécifications
-En-tête: msdbg.h
+## <a name="requirements"></a>Configuration requise
+En-tête : msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Espace de noms : Microsoft. VisualStudio. Debugger. Interop
 
-Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

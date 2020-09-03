@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5d14abdd9ba6547a3aaf131084168be2e453dd04
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77558176"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Assistant Publication (développement Office dans Visual Studio)
@@ -39,14 +39,14 @@ ms.locfileid: "77558176"
 
 - Chemin d’accès relatif ou absolu dans le format Windows standard, tel que *C:\Deploy\MyApplication* ou *\MyApplication*.
 
-- Un chemin d’accès UNC (Universal Naming Convention), tel que *\\\ServerName\MyApplication\\* .
+- Un chemin d’accès UNC (Universal Naming Convention), tel que * \\ \ServerName\MyApplication \\ *.
 
-- URL d’un site Web, par exemple `http://www.contoso.com/MyApplication`.
+- URL d’un site Web, telle que `http://www.contoso.com/MyApplication` .
 
   Par défaut, l’emplacement de publication est *http://localhost/projectname/* si IIS est installé, ou le répertoire publish \ si IIS n’est pas installé.
 
 > [!NOTE]
-> Il y a plus de points à prendre en compte si l’ordinateur cible exécute Windows Vista. Pour utiliser l’option de publication locale, vous devez être administrateur sur l’ordinateur Windows Vista. En outre, l’emplacement par défaut est toujours le répertoire *publish\\* , qu’IIS soit installé ou non.
+> Il y a plus de points à prendre en compte si l’ordinateur cible exécute Windows Vista. Pour utiliser l’option de publication locale, vous devez être administrateur sur l’ordinateur Windows Vista. En outre, l’emplacement par défaut est toujours le répertoire de *publication \\ * , qu’IIS soit installé ou non.
 
 ## <a name="what-is-the-default-installation-path-on-end-user-computers"></a>Quel est le chemin d’installation par défaut sur les ordinateurs des utilisateurs finaux ?
  Le chemin d’installation est facultatif. Vous pouvez définir le chemin d’installation ultérieurement si vous préférez. Pour plus d’informations, consultez [Comment : modifier le chemin d’installation d’une solution Office](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).
@@ -63,5 +63,5 @@ ms.locfileid: "77558176"
 
 ## <a name="see-also"></a>Voir aussi
 - [Déployer une solution Office à l’aide de ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)
-- [Page publier, concepteur &#40;de projets développement Office dans Visual Studio&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)
+- [Page publier, concepteur de projets &#40;développement Office dans Visual Studio&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)
 - [Déployer une solution Office](../vsto/deploying-an-office-solution.md)

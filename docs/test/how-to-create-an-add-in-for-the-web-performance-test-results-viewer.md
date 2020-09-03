@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 736c43a83a956c02b760b4909a427a82c6fa9e4c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85287829"
 ---
 # <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>Comment : créer un complément pour la visionneuse de Résultats des tests performances de site Web
@@ -324,7 +324,7 @@ Le complément Visual Studio créé dans les procédures précédentes référen
 
 Pour améliorer la sécurité en empêchant les compléments nuisibles de s’activer automatiquement, Visual Studio fournit différents paramètres dans une page **Options Outils** nommée **Sécurité des compléments/macros**.
 
-En outre, cette page d’options vous permet de spécifier les dossiers dans lesquels Visual Studio recherche *. *Fichiers d’enregistrement de complément. Cela améliore la sécurité en vous permettant de limiter les emplacements dans lesquels les fichiers d’inscription *.AddIn* peuvent être lus. Cela permet d’éviter que des fichiers *.AddIn* malveillants ne soient involontairement utilisés.
+En outre, cette page d’options vous permet de spécifier les dossiers dans lesquels Visual Studio recherche *. * Fichiers d’enregistrement de complément. Cela améliore la sécurité en vous permettant de limiter les emplacements dans lesquels les fichiers d’inscription *.AddIn* peuvent être lus. Cela permet d’éviter que des fichiers *.AddIn* malveillants ne soient involontairement utilisés.
 
 **Paramètres de sécurité des compléments**
 

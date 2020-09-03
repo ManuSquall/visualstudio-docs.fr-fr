@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7eadb30ee25b1182be5deb12feebd5ef280ebf4b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77630676"
 ---
 # <a name="writealltlogs"></a>WriteAllTLogs
@@ -44,7 +44,7 @@ HRESULT WINAPI WriteAllTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRootName
 
 ## <a name="return-value"></a>Valeur retournée
 
- Un **HRESULT** avec l’ensemble de bits **SUCCEEDED** si le contexte de suivi a été créé.
+ **HRESULT** avec le bit **Succeeded** défini si le contexte de suivi a été créé.
 
 ## <a name="requirements"></a>Spécifications
 

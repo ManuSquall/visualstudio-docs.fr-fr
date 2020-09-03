@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 46e03ecb00e4a5733039e003d170f3cfe0a854ee
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586963"
 ---
 # <a name="da0005-frequent-gc2-collections"></a>DA0005 : Collections GC2 fréquentes
@@ -30,7 +30,7 @@ ID de règle | DA0005 |
 | Message | La plupart de vos objets sont collectés dans la génération 2 garbage collection. |  
 | Type de message | AVERTISSEMENT |  
   
-## <a name="cause"></a>Cause  
+## <a name="cause"></a>Cause :  
  Un nombre élevé d’objets mémoire .NET est actuellement récupéré dans le cadre d’un garbage collection de génération 2.  
   
 ## <a name="rule-description"></a>Description de la règle  

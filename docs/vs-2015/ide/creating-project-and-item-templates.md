@@ -19,10 +19,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 995696dafce64cdcb1fbb11d0788bbe13453c440
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72619298"
 ---
 # <a name="creating-project-and-item-templates"></a>Création de modèles de projet et d’élément
@@ -42,7 +42,7 @@ Les modèles de projet et d'élément [!INCLUDE[vsprvs](../includes/vsprvs-md.md
 
 - Les fichiers à créer lors de l'utilisation du modèle. Ce sont les fichiers de code source, les ressources incorporées, les fichiers projet, etc.
 
-- Un fichier .vstemplate. Ce fichier contient les métadonnées qui fournissent à [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] les informations nécessaires pour afficher le modèle dans les boîtes de dialogue **Nouveau projet** et **Ajouter un nouvel élément**, ainsi que pour créer un projet ou un élément à partir du modèle. Pour plus d’informations sur les fichiers .vstemplate, consultez [Paramètres de modèle](../ide/template-parameters.md).
+- Un fichier .vstemplate. Ce fichier contient les métadonnées qui fournissent à [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] les informations nécessaires pour afficher le modèle dans les boîtes de dialogue **Nouveau projet** et **Ajouter un nouvel élément**, ainsi que pour créer un projet ou un élément à partir du modèle. Pour plus d’informations sur les fichiers. vstemplate, consultez [paramètres de modèle](../ide/template-parameters.md).
 
   Lorsque ces fichiers sont compressés dans un fichier .zip et placés dans le dossier approprié, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] les affiche automatiquement. Les modèles de projet s’affichent dans la section **Mes modèles** de la boîte de dialogue **Nouveau projet**, et les modèles d’élément s’affichent dans la boîte de dialogue **Ajouter un nouvel élément**. Pour plus d’informations sur les dossiers de modèles, consultez [Guide pratique pour localiser et organiser les modèles](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
