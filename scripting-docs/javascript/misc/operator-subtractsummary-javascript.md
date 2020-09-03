@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 995a286140464e58635bc485478bb570871f5e09
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85816785"
 ---
 # <a name="operator-summary-javascript"></a>Résumé des opérateurs (JavaScript)
@@ -29,8 +29,8 @@ Les tableaux suivants répertorient les [!INCLUDE[javascript](../../javascript/i
 |[Complément](../../javascript/reference/addition-operator-decrement-javascript.md)|+|  
 |[Décrémentation](../../javascript/reference/increment-and-decrement-operators-javascript.md)|--|  
 |[Division](../../javascript/reference/division-operator-decrement-javascript.md)|/|  
-|[Lier](../../javascript/reference/increment-and-decrement-operators-javascript.md)|++|  
-|[Remainder](../../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
+|[Incrément](../../javascript/reference/increment-and-decrement-operators-javascript.md)|++|  
+|[Reste](../../javascript/reference/modulus-operator-decrementjavascript.md)|%|  
 |[Multiplication](../../javascript/reference/multiplication-operator-decrement-javascript.md)|*|  
 |[Soustraction](../../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
 |[Négation unaire](../../javascript/reference/subtraction-operator-decrement-javascript.md)|-|  
@@ -39,7 +39,7 @@ Les tableaux suivants répertorient les [!INCLUDE[javascript](../../javascript/i
   
 |Opérateur|Symbole|  
 |--------------|------------|  
-|[Comma](../../javascript/reference/comma-operator-decrement-javascript.md)|,|  
+|[Point](../../javascript/reference/comma-operator-decrement-javascript.md)|,|  
 |[Conditionnel (ternaire)](../../javascript/reference/conditional-ternary-operator-decrement-javascript.md)|?:|  
 |[Égalité](../../javascript/reference/comparison-operators-javascript.md)|==|  
 |[Supérieur à](../../javascript/reference/comparison-operators-javascript.md)|>|  
@@ -48,7 +48,7 @@ Les tableaux suivants répertorient les [!INCLUDE[javascript](../../javascript/i
 |[Inégalité](../../javascript/reference/comparison-operators-javascript.md)|!=|  
 |[Inférieur à](../../javascript/reference/comparison-operators-javascript.md)|<|  
 |[Inférieur ou égal à](../../javascript/reference/comparison-operators-javascript.md)|<=|  
-|[AND logique](../../javascript/reference/logical-and-operator-decrement-javascript.md)|&&|  
+|[ET logique](../../javascript/reference/logical-and-operator-decrement-javascript.md)|&&|  
 |[NOT logique](../../javascript/reference/logical-not-operator-decrement-exclpt-javascript.md)|!|  
 |[Ou logique](../../javascript/reference/logical-or-operator-decrement-javascript.md)|&#124;&#124;|  
 |[Non-identité](../../javascript/reference/comparison-operators-javascript.md)|!==|  
@@ -75,11 +75,11 @@ Les tableaux suivants répertorient les [!INCLUDE[javascript](../../javascript/i
   
  [instanceof](../../javascript/reference/instanceof-operator-decrementjavascript.md)  
   
- [Nouveau](../../javascript/reference/new-operator-decrementjavascript.md)  
+ [nouveau](../../javascript/reference/new-operator-decrementjavascript.md)  
   
  [typeof](../../javascript/reference/typeof-operator-decrementjavascript.md)  
   
  [void](../../javascript/reference/void-operator-decrementjavascript.md)  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]

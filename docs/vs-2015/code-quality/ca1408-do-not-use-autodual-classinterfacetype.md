@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: b953a97d557e28cce50f554acc03797d4be38220
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534873"
 ---
 # <a name="ca1408-do-not-use-autodual-classinterfacetype"></a>CA1408 : Ne pas utiliser le paramètre AutoDual ClassInterfaceType
@@ -32,7 +32,7 @@ ms.locfileid: "85534873"
 |Category|Microsoft. Interoperability|
 |Modification avec rupture|Rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Un type visible COM (Component Object Model) est marqué avec l' <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> attribut défini sur la `AutoDual` valeur de <xref:System.Runtime.InteropServices.ClassInterfaceType> .
 
 ## <a name="rule-description"></a>Description de la règle

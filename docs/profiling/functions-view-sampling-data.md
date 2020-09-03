@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 70fda712a29ff07ee34a4ac76a06198cb5ead8a5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74780024"
 ---
 # <a name="functions-view---sampling-data"></a>Fonctions, vue - données d’échantillonnage
@@ -27,12 +27,12 @@ La vue de rapport Fonctions de la méthode de profilage par échantillonnage ré
 
 |Colonne|Description|
 |------------|-----------------|
-|**ID du processus**|ID du processus (PID) de l'exécution du profilage.|
+|**ID de processus**|ID du processus (PID) de l'exécution du profilage.|
 |**Nom du processus**|Nom du processus.|
 |**Nom du module**|Nom du module qui contient la fonction.|
 |**Chemin du module**|Chemin d’accès du module qui contient la fonction.|
-|**Fichier source**|Fichier source contenant la définition pour cette fonction.|
-|**Nom de fonction**|Nom complet de la fonction.|
+|**Source File**|Fichier source contenant la définition pour cette fonction.|
+|**Nom de la fonction**|Nom complet de la fonction.|
 |**Numéro de ligne de fonction**|Numéro de ligne du début de cette fonction dans le fichier source.|
 |**Adresse de la fonction**|Adresse de la fonction.|
 |**Échantillons inclusifs**|Nombre total d’échantillons collectés lorsque cette fonction était en cours d’exécution ; autrement dit, le nombre d’échantillons collectés lorsque cette fonction se trouvait sur la pile des appels. Ce nombre comprend les échantillons collectés lorsque les fonctions appelées par cette fonction étaient en cours d’exécution.|
@@ -42,6 +42,6 @@ La vue de rapport Fonctions de la méthode de profilage par échantillonnage ré
 
 ## <a name="see-also"></a>Voir aussi
 - [Guide pratique pour personnaliser les colonnes de la vue de rapport](../profiling/how-to-customize-report-view-columns.md)
-- [Fonctions Vue - instrumentation](../profiling/functions-view-dotnet-memory-instrumentation-data.md)
-- [Vue des fonctions - échantillonnage](../profiling/functions-view-dotnet-memory-sampling-data.md)
+- [Vue fonctions-Instrumentation](../profiling/functions-view-dotnet-memory-instrumentation-data.md)
+- [Vue fonctions-échantillonnage](../profiling/functions-view-dotnet-memory-sampling-data.md)
 - [Vue Fonctions](../profiling/functions-view-instrumentation-data.md)

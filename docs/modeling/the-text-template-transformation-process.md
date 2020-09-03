@@ -10,26 +10,26 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6d6cca9a4a98c4afcffa8322acb75a4cef8a7527
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75565862"
 ---
 # <a name="the-text-template-transformation-process"></a>Processus de transformation du modèle de texte
-Le processus de transformation de modèle de texte prend un fichier de modèle de texte comme entrée et génère un nouveau fichier texte comme sortie. Par exemple, vous pouvez utiliser des modèles de texte pour générer C# Visual Basic ou du code, ou vous pouvez générer un rapport HTML.
+Le processus de transformation de modèle de texte prend un fichier de modèle de texte comme entrée et génère un nouveau fichier texte comme sortie. Par exemple, vous pouvez utiliser des modèles de texte pour générer du code Visual Basic ou C#, ou vous pouvez générer un rapport HTML.
 
  Trois composants participent à ce processus : le moteur, l’hôte et les processeurs de directive. Le moteur contrôle le processus ; Il interagit avec l’hôte et le processeur de directive pour produire le fichier de sortie. L’hôte fournit toute interaction avec l’environnement, telle que la localisation des fichiers et des assemblys. Le processeur de directive ajoute des fonctionnalités, telles que la lecture de données à partir d’un fichier XML ou d’une base de données.
 
  Le processus de transformation de modèle de texte s’effectue en deux étapes. Tout d’abord, le moteur crée une classe temporaire, appelée classe de transformation générée. Cette classe contient le code généré par les directives et les blocs de contrôle. Après cela, le moteur compile et exécute la classe de transformation générée pour produire le fichier de sortie.
 
-## <a name="components"></a>Composants
+## <a name="components"></a>Components
 
 |Composant|Description|Personnalisable (oui/non)|
 |-|-|-|
-|Moteur|Le composant moteur contrôle le processus de transformation de modèle de texte.|No.|
-|Hôte|L’hôte est l’interface entre le moteur et l’environnement utilisateur. Visual Studio est un hôte du processus de transformation de texte.|Oui, Vous pouvez écrire un hôte personnalisé.|
-|Processeurs de directive|Les processeurs de directive sont des classes qui gèrent les directives dans les modèles de texte. Vous pouvez utiliser des directives pour fournir des données à un modèle de texte à partir d’une source d’entrée.|Oui, Vous pouvez écrire des processeurs de directive personnalisés|
+|Moteur|Le composant moteur contrôle le processus de transformation de modèle de texte.|Non.|
+|Host|L’hôte est l’interface entre le moteur et l’environnement utilisateur. Visual Studio est un hôte du processus de transformation de texte.|Oui. Vous pouvez écrire un hôte personnalisé.|
+|Processeurs de directive|Les processeurs de directive sont des classes qui gèrent les directives dans les modèles de texte. Vous pouvez utiliser des directives pour fournir des données à un modèle de texte à partir d’une source d’entrée.|Oui. Vous pouvez écrire des processeurs de directive personnalisés|
 
 ## <a name="the-engine"></a>Le moteur
  Le moteur reçoit le modèle en tant que chaîne à partir de l’hôte, qui gère tous les fichiers utilisés dans le processus de transformation. Le moteur demande ensuite à l’hôte de localiser tous les processeurs de directive personnalisés et d’autres aspects de l’environnement. Le moteur compile ensuite et exécute la classe de transformation générée. Le moteur retourne le texte généré à l’hôte, ce qui enregistre normalement le texte dans un fichier.
@@ -56,8 +56,8 @@ Le processus de transformation de modèle de texte prend un fichier de modèle d
 
  Un processeur de directive peut traiter une ou plusieurs directives. Lorsque vous transformez un modèle, vous devez avoir installé un processeur de directive qui peut gérer les directives de votre modèle.
 
- Les directives fonctionnent en ajoutant du code dans la classe de transformation générée. Vous appelez des directives à partir d’un modèle de texte, et le moteur traite tous les appels de directive lorsqu’il crée la classe de transformation générée. Une fois que vous avez correctement appelé une directive, le reste du code que vous écrivez dans votre modèle de texte peut reposer sur les fonctionnalités fournies par la directive. Par exemple, vous pouvez effectuer l’appel suivant à la directive `import` dans votre modèle :
+ Les directives fonctionnent en ajoutant du code dans la classe de transformation générée. Vous appelez des directives à partir d’un modèle de texte, et le moteur traite tous les appels de directive lorsqu’il crée la classe de transformation générée. Une fois que vous avez correctement appelé une directive, le reste du code que vous écrivez dans votre modèle de texte peut reposer sur les fonctionnalités fournies par la directive. Par exemple, vous pouvez effectuer l’appel suivant à la `import` directive dans votre modèle :
 
  `<#@ import namespace="System.Text" #>`
 
- Le processeur de directive standard convertit ce en une instruction `using` dans la classe de transformation générée. Vous pouvez ensuite utiliser la classe `StringBuilder` dans le reste de votre code de modèle sans l’qualifier comme `System.Text.StringBuilder`.
+ Le processeur de directive standard convertit ce en une `using` instruction dans la classe de transformation générée. Vous pouvez ensuite utiliser la `StringBuilder` classe dans le reste de votre code de modèle sans l’qualifier comme `System.Text.StringBuilder` .

@@ -1,5 +1,5 @@
 ---
-title: Élément commandPlacements (fr) Microsoft Docs
+title: Élément CommandPlacements | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,16 +14,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a72b087652a654b563fd4e00bacc52290a29fe1c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739702"
 ---
 # <a name="commandplacements-element"></a>Élément CommandPlacements
-L’élément CommandPlacements regroupe les éléments commandPlacement et d’autres groupes CommandPlacements.
+L’élément CommandPlacements groupe les éléments Commandplacement ayant et d’autres regroupements CommandPlacements.
 
- L’élément CommandPlacements est facultatif. Si aucune commande, groupe ou menu ne doit être inclus dans un emplacement secondaire, vous n’avez pas à inclure cette section dans votre fichier *.vsct.*
+ L’élément CommandPlacements est facultatif. Si aucune commande, aucun groupe ou aucun menu ne doit être inclus dans un emplacement secondaire, vous n’avez pas besoin d’inclure cette section dans votre fichier *. vsct* .
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,20 +41,20 @@ L’élément CommandPlacements regroupe les éléments commandPlacement et d’
 
 |Attribut|Description|
 |---------------|-----------------|
-|Condition|facultatif. Voir [Attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condition|facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Éléments enfants
 
 |Élément|Description|
 |-------------|-----------------|
-|CommandPlacements (CommandPlacements)|Groupes CommandPlacement éléments et autres groupes CommandPlacements.|
-|[Élément CommandPlacement](../extensibility/commandplacement-element.md)|Permet d’inclure des boutons, des groupes et des menus dans plus d’un groupe ou un menu.|
+|CommandPlacements|Regroupe les éléments Commandplacement ayant et d’autres regroupements CommandPlacements.|
+|[Élément Commandplacement ayant](../extensibility/commandplacement-element.md)|Permet l’inclusion de boutons, de groupes et de menus dans plusieurs groupes ou menus.|
 
 ### <a name="parent-elements"></a>Éléments parents
 
 |Élément|Description|
 |-------------|-----------------|
-|[Élément CommandTable](../extensibility/commandtable-element.md)|Définit tous les éléments qui représentent les commandes.|
+|[Élément CommandTable](../extensibility/commandtable-element.md)|Définit tous les éléments qui représentent des commandes.|
 
 ## <a name="example"></a>Exemple
 
@@ -68,5 +68,5 @@ L’élément CommandPlacements regroupe les éléments commandPlacement et d’
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Élément CommandPlacement](../extensibility/commandplacement-element.md)
-- [Fichiers visualister de table de commande de studio (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Élément Commandplacement ayant](../extensibility/commandplacement-element.md)
+- [Fichiers de table de commandes Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

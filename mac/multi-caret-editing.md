@@ -1,44 +1,44 @@
 ---
 title: Modification avec signes insertion multiples
-description: Insérez du texte à plusieurs endroits lors de l’édition de code dans Visual Studio pour Mac.
+description: Insérer du texte à plusieurs emplacements lors de la modification du code dans Visual Studio pour Mac.
 author: cobey
 ms.author: cobey
 ms.date: 08/19/2019
 ms.openlocfilehash: a21bebda057a772017fa1481e18f9801d1fbcbdf
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75451446"
 ---
 # <a name="multi-caret-editing"></a>Modification avec signes insertion multiples
 
-L’édition multi-soins vous permet d’ajouter _n_ n nombre de points d’insertion à une seule fois. Lorsque vous êtes en mode multi-caret, vous pouvez ajouter des carets supplémentaires à votre document, soit via des clics de souris, soit via des commandes de clavier. Le caret primaire est dénoté par un curseur rouge, tandis que les carets secondaires présents dans une couleur bleu clair. Le mode d’édition multi-soins `ESC` peut être désactivé via la clé.
+La modification de plusieurs signets vous permet d’ajouter _n_ points d’insertion à un seul moment. Lorsque vous êtes en mode multipoint, vous pouvez ajouter des signes d’insertion supplémentaires à votre document à l’aide de clics de souris ou de commandes du clavier. Le signe insertion principal est indiqué par un curseur rouge, tandis que les signes secondaires sont présents dans une couleur bleu clair. Le mode d’édition à plusieurs carets peut être désactivé via la `ESC` clé.
 
-## <a name="enabling-multi-caret-editing"></a>Permettre l’édition multi-caret
+## <a name="enabling-multi-caret-editing"></a>Activation de la modification de plusieurs carets
 
 ### <a name="keyboard"></a>Clavier
 
-Vous êtes en mesure d’activer le mode multi-caret via le clavier de plusieurs façons. Le tableau suivant fournit les raccourcis clavier disponibles pour entrer des modes spécifiques d’édition multi-caret:
+Vous pouvez activer le mode multicaret à l’aide du clavier de plusieurs façons. Le tableau suivant fournit les raccourcis clavier disponibles pour entrer des modes spécifiques d’édition à plusieurs carets :
 
 | Touche d’accès rapide  | Action                        | 
 |---------| ------------------------------|
-|  ⌥⇧.   | Insérer la prochaine caret assortie    | 
-|  ⌥⇧;   | Insérer des carets à tous les correspondants | 
-|  ⌥⇧,   | Enlever la dernière caret             | 
-|  ⌥⇧/   | Déplacez-vous dernière caret vers le bas          | 
+|  ⌥⇧.   | Insérer le signe insertion correspondant suivant    | 
+|  ⌥⇧;   | Insérer des signes d’insertion à la correspondance | 
+|  ⌥⇧,   | Supprimer le dernier signe insertion             | 
+|  ⌥⇧/   | Déplacer le dernier signe insertion vers le dessous          | 
 
-Chacun de ces comportements est ancré à la position actuelle de la caret lorsque vous invoquez la commande. Par exemple, si le caret est au début du mot «nom» et que vous invoquez « Insérez des carets à tous les correspondances » (;) chaque instance du mot «nom» dans votre document actuel aura une caret insérée au début du mot. De même, si vous invoquez la commande "Insérer le prochain caret correspondant" () alors une caret sera placée à la prochaine instance du mot "nom". Cette commande peut être invoquée plusieurs fois.
+Chacun de ces comportements est ancré à la position actuelle du signe insertion lorsque vous appelez la commande. Par exemple, si le signe insertion se trouve au début du mot « nom » et que vous appelez « insérer des signes à toutes les correspondances » (⌥ ⇧;) une insertion du mot « Name » dans votre document actif est insérée au début du mot. De même, si vous appelez la commande « Insérer le signe insertion suivant » (⌥ ⇧.), un signe insertion sera placé à l’instance suivante du mot « nom ». Cette commande peut être appelée plusieurs fois.
 
-![clavier multi-caret](media/multi-caret-keyboard.gif)
+![clavier à plusieurs carets](media/multi-caret-keyboard.gif)
 
-## <a name="mousetouchpad"></a>Souris/touchpad
+## <a name="mousetouchpad"></a>Souris/pavé tactile
 
-En utilisant votre curseur, vous êtes en mesure de sélectionner gratuitement des points d’insertion spécifiques pour vos plusieurs carets. Alors que les raccourcis clavier sont liés à des cordes assorties, vous pouvez insérer manuellement un caret n’importe où dans le document avec le curseur. Une fois les carets réglés, chacun fera écho aux entrées clés que vous tapez sur votre clavier.
+À l’aide de votre curseur, vous pouvez libérer des points d’insertion spécifiques pour vos multiples signes. Tandis que les raccourcis clavier sont liés aux chaînes correspondantes, vous pouvez insérer manuellement un signe insertion n’importe où dans le document à l’aide du curseur. Une fois que les signes d’insertion sont définis, chacun répercute les entrées de touches que vous tapez sur votre clavier.
 
-Pour utiliser la souris pour insérer plusieurs carets, vous devez appuyer et tenir et tenir et cliquer là où vous souhaitez que les carets soient entrés. Vous serez en mode insertion tant que les clés sont conservées. Si vous insérez une caret dans un endroit incorrect, vous pouvez supprimer le caret en continuant à tenir et en cliquant à nouveau dans la même zone. Une fois que vous avez tous les carets situés où vous les souhaitez, arrêtez d’appuyer sur les touches et commencer à taper. Le GIF suivant démontre à la fois la sélection d’un ensemble de points d’insertion ainsi que la suppression des points réglés par erreur.
+Pour utiliser la souris pour insérer plusieurs signes d’insertion, vous devez appuyer et maintenir ⌘ ⌥ et cliquer à l’endroit où vous souhaitez que les signes d’insertion soient saisis. Vous serez en mode insertion tant que les clés ⌘ ⌥ sont conservées. Si vous insérez un signe insertion dans un emplacement incorrect, vous pouvez supprimer le signe insertion en continuant à maintenir ⌘ ⌥ et en cliquant de nouveau sur la même zone. Une fois que vous avez tous les signes indiquant l’emplacement où vous souhaitez les placer, arrêtez l’appui sur les touches ⌘ ⌥ et commencez à taper. Le GIF suivant illustre la sélection d’un ensemble de points d’insertion et la suppression de points définis de manière erronée.
 
-![souris multi-soins](media/multi-caret-mouse.gif)
+![souris à plusieurs carets](media/multi-caret-mouse.gif)
 
 ## <a name="see-also"></a>Voir aussi
 

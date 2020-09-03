@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Créer un modèle 3D de base | Microsoft Docs'
+title: 'Comment : créer un modèle 3D de base | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-designers
@@ -10,13 +10,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4b4db5b54f39a0be6de184b609e672b1f0173890
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664594"
 ---
-# <a name="how-to-create-a-basic-3-d-model"></a>Procédure : Créer un modèle 3D de base
+# <a name="how-to-create-a-basic-3-d-model"></a>Procédure : créer un modèle 3D de base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ce document montre comment utiliser l'éditeur de modèle pour créer un modèle 3D de base.
@@ -60,13 +60,13 @@ Ce document montre comment utiliser l'éditeur de modèle pour créer un modèle
 
 6. Étendez une des extrusions. Choisissez l’une des faces que vous venez d’extruder, puis, dans la barre d’outils de l’éditeur de modèle, choisissez l’outil **Translater** et déplacez le manipulateur de translation dans la même direction que l’extrusion.
 
-    ![Un côté du cube a été extrudé.](../designers/media/gfx-model-demo-house-extend.png "gfx_model_demo_house_extend")
+    ![Un côté du cube a été plus extrudé.](../designers/media/gfx-model-demo-house-extend.png "gfx_model_demo_house_extend")
 
 7. Effectuez une triangulation du modèle. Dans la barre d’outils de l’éditeur de modèle, choisissez **Avancé**, **Outils**, **Effectuer une triangulation**.
 
 8. Créez le toit de la maison. Passez en mode de sélection d’arête en choisissant **Sélectionner le bord** dans la barre d’outils de l’éditeur de modèle, puis choisissez le cube pour l’activer. Appuyez sur la touche Contrôle et maintenez-la enfoncée tout en sélectionnant les arêtes illustrées ici :
 
-    ![Les bords qui forment le pic du toit](../designers/media/gfx-model-demo-house-edges.png "gfx_model_demo_house_edges")
+    ![Bords qui forment la pointe du toit](../designers/media/gfx-model-demo-house-edges.png "gfx_model_demo_house_edges")
 
     Lorsque les bords sont sélectionnés, dans la barre d’outils de l’éditeur de modèle, choisissez l’outil **Translater**, puis déplacez le manipulateur de translation au-dessus pour créer le toit de la maison.
 
@@ -74,7 +74,7 @@ Ce document montre comment utiliser l'éditeur de modèle pour créer un modèle
 
    ![Modèle terminé de la maison simplifiée](../designers/media/gfx-model-demo-house-final.png "gfx_model_demo_house_final")
 
-   Ensuite, vous pouvez appliquer un nuanceur à ce modèle 3D. Pour plus d’informations, consultez [Guide pratique pour Appliquez un nuanceur à un modèle 3D ](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+   Ensuite, vous pouvez appliquer un nuanceur à ce modèle 3D. Pour plus d’informations, consultez [Comment : appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
 ## <a name="see-also"></a>Voir aussi
- [Guide pratique : Modèle 3-D terrain ](../designers/how-to-model-3-d-terrain.md) [Éditeur de modèle](../designers/model-editor.md) [Concepteur de nuanceur](../designers/shader-designer.md)
+ [Comment : modéliser l’éditeur de modèle de terrain 3D](../designers/how-to-model-3-d-terrain.md) [Model Editor](../designers/model-editor.md) [Concepteur de nuanceur](../designers/shader-designer.md)

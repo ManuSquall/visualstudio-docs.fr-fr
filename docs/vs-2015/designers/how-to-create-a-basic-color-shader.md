@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 90f27e2359954e56a5b3d86bfc31883d4f29c44d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664586"
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>Comment : créer un nuanceur de couleur de base
@@ -53,7 +53,7 @@ Ce document indique comment utiliser le concepteur de nuanceur et DGSL (Directed
 > [!NOTE]
 > Une couleur orange a été spécifiée dans l’illustration pour mettre en évidence l’effet du nuanceur.
 
- ![Graphique du nuanceur et résultat sur un&#45;modèle 3D](../designers/media/digit-flat-color-effect.png "Chiffre-effet à couleur plate")
+ ![Graphique du nuanceur et résultat sur un modèle de 3&#45;D](../designers/media/digit-flat-color-effect.png "Chiffre-effet à couleur plate")
 
  Certaines formes peuvent fournir de meilleurs aperçus pour certains nuanceurs. Pour plus d’informations sur l’aperçu des nuanceurs dans le concepteur de nuanceur, consultez l’article [Concepteur de nuanceur](../designers/shader-designer.md).
 

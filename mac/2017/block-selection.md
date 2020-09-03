@@ -6,15 +6,15 @@ ms.author: dominicn
 ms.date: 11/06/2018
 ms.assetid: E8E0831E-E076-44B1-A82A-A325382916A6
 ms.openlocfilehash: 8369950b4bf6ac834cc736cffa3bc2a402a9c0d5
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74983226"
 ---
 # <a name="block-selection"></a>Sélection de bloc
 
-Visual Studio pour Mac vous permet de sélectionner, couper, copier et coller facilement des sections de votre code. Les blocs de code rectangulaires peuvent être mis en surbrillance et sélectionnés en utilisant la commande **Option et Drag** sur le bloc de code. La mise en forme au sein de cette sélection de bloc est conservée quand vous collez le bloc.
+Visual Studio pour Mac vous permet de sélectionner, couper, copier et coller facilement des sections de votre code. Vous pouvez mettre en surbrillance et sélectionner des blocs de code rectangulaires à l’aide de la commande **option + glisser** du bloc de code. La mise en forme au sein de cette sélection de bloc est conservée quand vous collez le bloc.
 
 Vous pouvez également modifier les sélections de bloc et ainsi modifier du texte sur plusieurs lignes à la fois. Vous pouvez utiliser une sélection de bloc de largeur zéro pour placer le point d’insertion devant un grand nombre de lignes à la fois, ce qui vous permet de taper un texte identique sur plusieurs lignes :
 

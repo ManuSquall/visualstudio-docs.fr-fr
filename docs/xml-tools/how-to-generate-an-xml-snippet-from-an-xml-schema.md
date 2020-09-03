@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3c7dff8e1bb211343ccc44e0d1fd33d96c102283
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817175"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Comment : générer un extrait XML à partir d’un schéma XML
@@ -60,7 +60,7 @@ Les étapes de cette section vous montrent comment utiliser la fonctionnalité d
 
      La boîte de dialogue **schémas XSD** s’affiche.
 
-4. Cliquez sur **Ajouter**.
+4. Cliquez sur **Add**.
 
      La boîte de dialogue **ouvrir le schéma XSD** s’affiche.
 

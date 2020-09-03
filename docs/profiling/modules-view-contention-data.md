@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 2de844867e9c0a8d95abdaa13f860a6487254bfe
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74780011"
 ---
 # <a name="modules-view---contention-data"></a>Modules, vue - données de conflit
@@ -38,15 +38,15 @@ La vue Modules des données de conflit affiche les données de concurrence regro
 |**Numéro de ligne de fonction**|Numéro de ligne du début de cette fonction dans le fichier source.|
 |**Nom du module**|Nom du module qui contient la fonction, la ligne ou le pointeur d’instruction.|
 |**Chemin du module**|Chemin du module qui contient le module, la fonction, la ligne ou le pointeur d’instruction.|
-|**Nom   **|Nom du module ou de la fonction.|
-|**ID du processus**|ID du processus (PID) de l'exécution du profilage.|
+|**Name**|Nom du module ou de la fonction.|
+|**ID de processus**|ID du processus (PID) de l'exécution du profilage.|
 |**Nom du processus**|Nom du processus.|
-|**Fichier source**|Fichier source contenant la définition pour cette fonction.|
+|**Source File**|Fichier source contenant la définition pour cette fonction.|
 
 ## <a name="see-also"></a>Voir aussi
 - [Guide pratique pour personnaliser les colonnes de la vue de rapport](../profiling/how-to-customize-report-view-columns.md)
 - [Vue Modules](../profiling/modules-view.md)
-- [Modules Vue - instrumentation](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
-- [Modules Vue - échantillonnage](../profiling/modules-view-dotnet-memory-sampling-data.md)
+- [Vue modules-Instrumentation](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
+- [Vue modules-échantillonnage](../profiling/modules-view-dotnet-memory-sampling-data.md)
 - [Vue Modules](../profiling/modules-view-instrumentation-data.md)
 - [Vue Modules](../profiling/modules-view-sampling-data.md)

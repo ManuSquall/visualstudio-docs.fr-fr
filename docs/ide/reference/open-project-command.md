@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 97c1034fbbafa04af2d62526fdbb48812d64e050
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75565810"
 ---
 # <a name="open-project-command"></a>Ouvrir un projet, commande
@@ -41,13 +41,13 @@ Obligatoire. Chemin complet et nom de fichier de la solution ou du projet à ouv
 > [!NOTE]
 > La syntaxe de l’argument `filename` nécessite que les chemins contenant des espaces utilisent des guillemets.
 
-## <a name="remarks"></a>Notes 
+## <a name="remarks"></a>Notes
 
 La saisie semi-automatique tente de deviner le chemin et le nom de fichier à mesure que vous tapez.
 
 Cette commande n’est pas disponible lors du débogage.
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 
 L’exemple suivant ouvre le projet Visual Basic **Test1** :
 
@@ -58,6 +58,6 @@ L’exemple suivant ouvre le projet Visual Basic **Test1** :
 ## <a name="see-also"></a>Voir aussi
 
 - [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Fenêtre de commande](../../ide/reference/command-window.md)
-- [Boîte De recherche/commande](../../ide/find-command-box.md)
+- [Fenêtre Commande](../../ide/reference/command-window.md)
+- [Zone Rechercher/commande](../../ide/find-command-box.md)
 - [Alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

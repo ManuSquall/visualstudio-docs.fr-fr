@@ -1,13 +1,13 @@
 ---
 ms.openlocfilehash: 0170c6ed655ce54e2dbadf57341dff56616186ec
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68205725"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89325453"
 ---
 > [!WARNING]
-> Quand vous activez les diagnostics pour un rôle existant, toutes les extensions que vous avez déjà définies sont désactivées lors du déploiement du package. Elles incluent notamment :
+> Quand vous activez les diagnostics pour un rôle existant, toutes les extensions que vous avez déjà définies sont désactivées lors du déploiement du package. notamment :
 >
 > * Extension Microsoft Monitoring Agent Diagnostics
 > * Surveillance de la sécurité de Microsoft Azure
@@ -15,7 +15,7 @@ ms.locfileid: "68205725"
 > * Microsoft Monitoring Agent
 > * Agent du profileur de service Microsoft      
 > * Extension de domaine Microsoft Azure        
-> * Extension Diagnostics Windows Azure   
+> * Extension Diagnostics Azure pour Windows   
 > * Extension Bureau à distance de Microsoft Azure
 > * Collecteur de journaux Microsoft Azure
 >

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: d7879d8b2aa9eb4ece1ce07f89681b6c0b0f5f31
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534704"
 ---
 # <a name="ca2114-method-security-should-be-a-superset-of-type"></a>CA2114 : La sécurité de la méthode doit être un sur-ensemble du type
@@ -32,7 +32,7 @@ ms.locfileid: "85534704"
 |Category|Microsoft.Security|
 |Modification avec rupture|Rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Un type a une sécurité déclarative et l’une de ses méthodes a une sécurité déclarative pour la même action de sécurité, et l’action de sécurité n’est pas une [demande de liaison](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) ou des [demandes d’héritage](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9), et les autorisations vérifiées par le type ne sont pas un sous-ensemble des autorisations contrôlées par la méthode.
 
 ## <a name="rule-description"></a>Description de la règle

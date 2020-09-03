@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 96f7d7ae0ea5eaf0de1a6fa4357e2750cdd8c22e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75565472"
 ---
 # <a name="replace-in-files-command"></a>Remplacer dans les fichiers, commande
@@ -98,7 +98,7 @@ facultatif. Utilise des caractères spéciaux prédéfinis dans l’argument `fi
 
 facultatif. Recherche uniquement les mots entiers.
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 Cet exemple recherche `btnCancel` et le remplace par `btnReset` dans tous les fichiers .cls situés dans le dossier « My Visual Studio Projects », puis affiche les informations de remplacement dans la fenêtre **Résultats de la recherche 2**.
 
 ```
@@ -109,7 +109,7 @@ Cet exemple recherche `btnCancel` et le remplace par `btnReset` dans tous les fi
 
 - [Recherche et remplacement de texte](../../ide/finding-and-replacing-text.md)
 - [Remplacer dans les fichiers](../../ide/replace-in-files.md)
-- [Commande, fenêtre](../../ide/reference/command-window.md)
-- [Boîte de recherche/commande](../../ide/find-command-box.md)
-- [Commandes de studio visuel](../../ide/reference/visual-studio-commands.md)
-- [Alias de commande de studio visuel](../../ide/reference/visual-studio-command-aliases.md)
+- [Fenêtre commande](../../ide/reference/command-window.md)
+- [Zone Rechercher/commande](../../ide/find-command-box.md)
+- [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)
+- [Alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

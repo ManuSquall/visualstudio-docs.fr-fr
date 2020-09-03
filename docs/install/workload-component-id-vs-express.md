@@ -18,10 +18,10 @@ ms.technology: vs-installation
 monikerRange: vs-2017
 open_to_public_contributors: false
 ms.openlocfilehash: 1e24f90f24921bee9a6132ccc047c0b9da37fc90
-ms.sourcegitcommit: 22deb247ad951e4971f27fdab413b158415d0584
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/14/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81276290"
 ---
 # <a name="visual-studio-desktop-express-component-directory"></a>Répertoire des composants Visual Studio Desktop Express

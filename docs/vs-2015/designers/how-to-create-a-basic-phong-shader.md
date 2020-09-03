@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 17ba5d143a5f4534b09b2aaff718af7ce99f2773
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664551"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>Comment : créer un nuanceur Phong de base
@@ -32,13 +32,13 @@ Ce document indique comment utiliser le concepteur de nuanceur et DGSL (Directed
 ## <a name="the-phong-lighting-model"></a>Modèle d’éclairage Phong
  Le modèle d’éclairage Phong étend le modèle d’éclairage Lambert pour inclure une mise en surbrillance spéculaire, ce qui simule les propriétés de reflet d’une surface. Le composant spéculaire fournit un éclairage supplémentaire provenant des mêmes sources de lumière directionnelle que celles qui sont utilisées dans le modèle d’éclairage Lambert, mais sa contribution à la couleur finale est traitée différemment. L’éclairage spéculaire affecte différemment chaque surface de la scène, en fonction de la relation entre la direction de l’affichage, la direction des sources de lumière et l’orientation de la surface. Il s’agit d’un produit de la couleur spéculaire, de la puissance spéculaire, de l’orientation de la surface, et de la couleur, de l’intensité et de la direction des sources de lumière. Les surfaces qui reflètent directement la source de lumière à la visionneuse reçoivent la contribution spéculaire maximale, tandis que celles qui reflètent la source de lumière distante de la visionneuse ne reçoivent aucune contribution. Dans le modèle d’éclairage Phong, un ou plusieurs composants spéculaires sont combinés pour déterminer la couleur et l’intensité de la mise en surbrillance spéculaire de chaque point de l’objet. Ils sont ensuite ajoutés au résultat du modèle d’éclairage Lambert pour produire la couleur finale du pixel.
 
- Pour plus d’informations sur le modèle d’éclairage Lambert, consultez l’article [Comment : créer un nuanceur Lambert de base](../designers/how-to-create-a-basic-lambert-shader.md).
+ Pour plus d’informations sur le modèle d’éclairage Lambert, consultez [Comment : créer un nuanceur Lambert de base](../designers/how-to-create-a-basic-lambert-shader.md).
 
  Avant de commencer, veillez à ce que la fenêtre **Propriétés** et la **Boîte à outils** soient affichées.
 
 #### <a name="to-create-a-phong-shader"></a>Pour créer un nuanceur Phong
 
-1. Créez un nuanceur Lambert, en suivant la description de l’article [Comment : créer un nuanceur Lambert de base](../designers/how-to-create-a-basic-lambert-shader.md).
+1. Créez un nuanceur Lambert, comme décrit dans [Comment : créer un nuanceur Lambert de base](../designers/how-to-create-a-basic-lambert-shader.md).
 
 2. Déconnectez le nœud **Lambert** du nœud **Couleur finale**. Choisissez le terminal **RVB** du nœud **Lambert**, puis choisissez **Rompre les liaisons**. Le nœud ajouté à l'étape suivante bénéficie ainsi d'un espace supplémentaire.
 
@@ -55,9 +55,9 @@ Ce document indique comment utiliser le concepteur de nuanceur et DGSL (Directed
 > [!NOTE]
 > Pour mettre en évidence l’effet du nuanceur dans cette illustration, une couleur orange a été spécifiée à l’aide du paramètre **MaterialDiffuse** du nuanceur, et un fini d’aspect métallique a été spécifié à l’aide des paramètres **MaterialSpecular** et **MaterialSpecularPower**. Pour plus d’informations sur les paramètres de matériau, consultez la section Aperçu des nuanceurs de l’article [Concepteur de nuanceur](../designers/shader-designer.md).
 
- ![Graphique du nuanceur et aperçu de son effet](../designers/media/digit-lighting-graph.png "Digit-Lighting-Graph")
+ ![Graphique du nuanceur et un aperçu de ses effets](../designers/media/digit-lighting-graph.png "Digit-Lighting-Graph")
 
- Certaines formes peuvent fournir de meilleurs aperçus pour certains nuanceurs. Pour plus d’informations sur l’aperçu des nuanceurs dans le concepteur de nuanceur, consultez la section Aperçu des nuanceurs de l’article [Concepteur de nuanceur](../designers/shader-designer.md).
+ Certaines formes peuvent fournir de meilleurs aperçus pour certains nuanceurs. Pour plus d’informations sur la façon d’afficher un aperçu des nuanceurs dans le concepteur de nuanceur, consultez la section aperçu des nuanceurs dans le [Concepteur de nuanceur](../designers/shader-designer.md) .
 
  L’illustration suivante présente le nuanceur, décrit dans ce document, appliqué à un modèle 3D. La propriété **MaterialSpecular** est définie sur (1,00, 0,50, 0,20, 0,00), et sa propriété **MaterialSpecularPower** est définie sur 16.
 

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 59a926ab35e04aa120bc57250c3e5b2712858aa5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664497"
 ---
 # <a name="how-to-create-a-basic-texture-shader"></a>Procédure : créer un nuanceur de texture de base
@@ -36,7 +36,7 @@ Ce document indique comment utiliser le concepteur de nuanceur et DGSL (Directed
 ## <a name="creating-a-basic-texture-shader"></a>Création d’un nuanceur de texture de base
  Vous pouvez implémenter un nuanceur de texture unique de base en écrivant les valeurs de couleur et alpha d’un échantillon de texture directement dans la couleur de sortie finale.
 
- Avant de commencer, assurez-vous que la fenêtre **Propriétés** et la **Boîte à outils** sont affichées.
+ Avant de commencer, veillez à ce que la fenêtre **Propriétés** et la **Boîte à outils** soient affichées.
 
 #### <a name="to-create-a-basic-texture-shader"></a>Pour créer un nuanceur de texture de base
 
@@ -61,9 +61,9 @@ Ce document indique comment utiliser le concepteur de nuanceur et DGSL (Directed
 > [!NOTE]
 > Dans cette illustration, un plan est utilisé comme forme d’aperçu, et une texture a été spécifiée pour mettre en évidence l’effet du nuanceur.
 
- ![Graphique du nuanceur et un aperçu de ses effets](../designers/media/digit-texture-effect.png "|::ref1::|")
+ ![Graphique du nuanceur et un aperçu de ses effets](../designers/media/digit-texture-effect.png "Chiffre-texture-effet")
 
- Certaines formes peuvent fournir de meilleurs aperçus pour certains nuanceurs. Pour plus d’informations sur l’aperçu des nuanceurs dans le concepteur de nuanceur, consultez l’article [Concepteur de nuanceur](../designers/shader-designer.md).
+ Certaines formes peuvent fournir de meilleurs aperçus pour certains nuanceurs. Pour plus d’informations sur l’aperçu des nuanceurs dans le concepteur de nuanceur, consultez [Shader designer](../designers/shader-designer.md) .
 
 ## <a name="see-also"></a>Voir aussi
  Guide pratique [pour appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md) [image éditeur](../designers/image-editor.md) [nuanceur](../designers/shader-designer.md) concepteur de [nuanceur concepteur de nuanceur](../designers/shader-designer-nodes.md)

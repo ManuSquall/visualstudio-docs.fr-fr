@@ -10,13 +10,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 554717d59a42bed15b37379d3bf7a5c4da727e95
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664511"
 ---
-# <a name="how-to-create-a-grayscale-texture-shader"></a>Comment : créer un nuanceur de texture avec nuances de gris
+# <a name="how-to-create-a-grayscale-texture-shader"></a>Comment : créer un nuanceur de texture avec nuances de gris
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ce document indique comment utiliser le concepteur de nuanceur et DGSL (Directed Graph Shader Language) pour créer un nuanceur de texture avec nuances de gris. Ce nuanceur modifie la valeur de couleur RVB de l’échantillon de texture, puis l’utilise avec la valeur alpha non modifiée pour définir la couleur finale.
@@ -28,7 +28,7 @@ Ce document indique comment utiliser le concepteur de nuanceur et DGSL (Directed
 
 #### <a name="to-create-a-grayscale-texture-shader"></a>Pour créer un nuanceur de texture avec nuances de gris
 
-1. Créez un nuanceur de texture de base, en suivant la description de l’article [Comment : créer un nuanceur de texture de base](../designers/how-to-create-a-basic-texture-shader.md).
+1. Créez un nuanceur de texture de base, comme décrit dans [Comment : créer un nuanceur de texture de base](../designers/how-to-create-a-basic-texture-shader.md).
 
 2. Déconnectez le terminal **RVB** du nœud **Échantillon de texture** à partir du terminal **RVB** du nœud **Couleur finale**. En mode **Sélection**, choisissez le terminal **RVB** du nœud **Échantillon de texture**, puis **Rompre les liaisons**. Le nœud ajouté à l'étape suivante bénéficie ainsi d'un espace supplémentaire.
 
@@ -46,9 +46,9 @@ Ce document indique comment utiliser le concepteur de nuanceur et DGSL (Directed
 > [!NOTE]
 > Dans cette illustration, un plan est utilisé comme forme d’aperçu, et une texture a été spécifiée pour mettre en évidence l’effet du nuanceur.
 
- ![Graphique du nuanceur et aperçu de son effet](../designers/media/digit-grayscale-effect.png "Effet digit-nuances de gris")
+ ![Graphique du nuanceur et un aperçu de ses effets](../designers/media/digit-grayscale-effect.png "Effet digit-nuances de gris")
 
- Certaines formes peuvent fournir de meilleurs aperçus pour certains nuanceurs. Pour plus d’informations sur l’aperçu des nuanceurs dans le concepteur de nuanceur, consultez l’article [Concepteur de nuanceur](../designers/shader-designer.md).
+ Certaines formes peuvent fournir de meilleurs aperçus pour certains nuanceurs. Pour plus d’informations sur l’aperçu des nuanceurs dans le concepteur de nuanceur, consultez [Shader designer](../designers/shader-designer.md) .
 
 ## <a name="see-also"></a>Voir aussi
  [Comment : appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md) [Comment : exporter un](../designers/how-to-export-a-shader.md) [éditeur d’images](../designers/image-editor.md) de nuanceur [nuanceur](../designers/shader-designer.md) concepteur Shader [nœuds](../designers/shader-designer-nodes.md)

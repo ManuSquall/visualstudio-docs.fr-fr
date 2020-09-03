@@ -11,16 +11,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7e6384ea963fe1da145cacc0be46b5989f7bc610
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198751"
 ---
-# <a name="fieldkindex"></a>FIELD_KIND_EX
+# <a name="field_kind_ex"></a>FIELD_KIND_EX
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Énumère les types de champs supplémentaires qui un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objet peut contenir. Cette énumération étend la [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) énumération.  
+Énumère les types de champs supplémentaires qu’un objet [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) peut contenir. Cette énumération étend l’énumération [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) .  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -45,20 +45,20 @@ public enum enum_FIELD_KIND_EX
   
 ## <a name="members"></a>Membres  
  FIELD_KIND_EX_NONE  
- Champ ne contient pas un type étendu.  
+ Le champ ne contient pas de type étendu.  
   
  FIELD_TYPE_EX_METHODVAR  
- Champ contient une variable de méthode.  
+ Le champ contient une variable de méthode.  
   
  FIELD_TYPE_EX_CLASSVAR  
- Champ contient une variable de classe.  
+ Le champ contient une variable de classe.  
   
 ## <a name="requirements"></a>Configuration requise  
- En-tête : SH.h  
+ En-tête : SH. h  
   
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft. VisualStudio. Debugger. Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

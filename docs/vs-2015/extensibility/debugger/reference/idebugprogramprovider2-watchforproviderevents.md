@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramProvider2::WatchForProviderEvents | Microsoft Docs
+title: 'IDebugProgramProvider2 :: WatchForProviderEvents | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 64ee4b40aefc848d89068076fb3176ae6b625e9f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198706"
 ---
 # <a name="idebugprogramprovider2watchforproviderevents"></a>IDebugProgramProvider2::WatchForProviderEvents
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Permet au processus d’être averti des événements de port.  
+Autorise le processus à être notifié des événements de port.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -50,38 +50,38 @@ int WatchForProviderEvents(
   
 #### <a name="parameters"></a>Paramètres  
  `Flags`  
- [in] Une combinaison d’indicateurs de la [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) énumération. Les indicateurs suivants sont généralement utilisés pour cet appel :  
+ dans Combinaison d’indicateurs de l’énumération [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) . Les indicateurs suivants sont typiques pour cet appel :  
   
 |Indicateur|Description|  
 |----------|-----------------|  
 |`PFLAG_REMOTE_PORT`|L’appelant est en cours d’exécution sur l’ordinateur distant.|  
-|`PFLAG_DEBUGGEE`|L’appelant est en cours de débogage (informations supplémentaires sur le marshaling sont retournées pour chaque nœud).|  
-|`PFLAG_ATTACHED_TO_DEBUGGEE`|L’appelant a été attaché à mais pas lancé par le débogueur.|  
-|`PFLAG_REASON_WATCH`|L’appelant souhaite surveiller les événements. Si cet indicateur n’est pas défini. Ensuite, l’événement de rappel est supprimé et l’appelant ne reçoit plus les notifications.|  
+|`PFLAG_DEBUGGEE`|L’appelant est actuellement en cours de débogage (des informations supplémentaires sur le marshaling sont retournées pour chaque nœud).|  
+|`PFLAG_ATTACHED_TO_DEBUGGEE`|L’appelant a été attaché à, mais il n’a pas été lancé par le débogueur.|  
+|`PFLAG_REASON_WATCH`|L’appelant souhaite surveiller les événements. Si cet indicateur n’est pas défini. l’événement de rappel est ensuite supprimé et l’appelant ne reçoit plus de notifications.|  
   
  `pPort`  
- [in] Le port, le processus appelant s’exécute sur.  
+ dans Port sur lequel le processus appelant s’exécute.  
   
  `processId`  
- [in] Un [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) structure qui contient l’ID du processus qui contient le programme en question.  
+ dans Structure [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) contenant l’ID du processus qui contient le programme en question.  
   
  `EngineFilter`  
- [in] Un tableau de GUID de moteurs de débogage associés au processus.  
+ dans Tableau de GUID des moteurs de débogage associés au processus.  
   
  `guidLaunchingEngine`  
- [in] GUID du moteur de débogage qui a lancé ce processus (le cas échéant).  
+ dans GUID du moteur de débogage qui a lancé ce processus (le cas échéant).  
   
  `pEventCallback`  
- [in] Un [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) objet qui reçoit les notifications d’événements.  
+ dans Objet [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) qui reçoit les notifications d’événements.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="remarks"></a>Notes  
- Lorsqu’un appelant souhaite supprimer le Gestionnaire d’événements qui a été établi avec un appel précédent à cette méthode, l’appelant transmet les mêmes paramètres, comme elle le faisait la première fois, mais laisse hors tension le `PFLAG_REASON_WATCH` indicateur.  
+ Lorsqu’un appelant souhaite supprimer un gestionnaire d’événements qui a été établi à l’aide d’un appel précédent à cette méthode, l’appelant passe les mêmes paramètres que la première fois, mais quitte l' `PFLAG_REASON_WATCH` indicateur.  
   
-## <a name="example"></a>Exemples  
- L’exemple suivant montre comment implémenter cette méthode pour un **CDebugEngine** objet qui expose le [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) interface.  
+## <a name="example"></a>Exemple  
+ L’exemple suivant montre comment implémenter cette méthode pour un objet **CDebugEngine** qui expose l’interface [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) .  
   
 ```cpp#  
 STDMETHODIMP CDebugEngine::WatchForProviderEvents(  

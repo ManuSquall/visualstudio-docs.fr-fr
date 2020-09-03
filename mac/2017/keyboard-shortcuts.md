@@ -61,7 +61,7 @@ Pour accéder à diverses commandes dans Visual Studio pour Mac, vous pouvez uti
 |Mode d’édition de contrainte|**⌘ E**|
 |Copier|**⌘ C**|
 |Couper|**⌘ X**|
-|Supprimer|**⌘ ⌫**|
+|DELETE|**⌘ ⌫**|
 |Mettre le document en forme|**⌃ I**|
 |Mettre en retrait la sélection|**⌘**|
 |Coller|**⌘ V**|
@@ -112,14 +112,14 @@ Pour accéder à diverses commandes dans Visual Studio pour Mac, vous pouvez uti
 |Documentation de l’API|**⌥ ⌘ ?**|
 |Informations de référence sur l’API Unity|**⌘**|
 
-## <a name="other"></a>Autre
+## <a name="other"></a>Autres
 
 |Commandes|Raccourcis clavier|
 |-|-|
 |Implémenter les messages Unity|**⇧ ⌘ M**|
 |Inspecter|**⌥ ⌘ I**|
 
-## <a name="project"></a>Projet
+## <a name="project"></a>Project
 
 |Commandes|Raccourcis clavier|
 |-|-|
@@ -257,7 +257,7 @@ Pour accéder à diverses commandes dans Visual Studio pour Mac, vous pouvez uti
 |-|-|
 |⌘|**Commande** (**cmd**)|
 |⌥|**Option** (**alt**)|
-|⇧|**Shift**|
+|⇧|**Majuscule**|
 |⌃|**Contrôle** (**ctrl**)
 |⇞|**Page précédente** (**Page préc.**)|
 |⇟|**Page suivante** (**Page suiv.**)|

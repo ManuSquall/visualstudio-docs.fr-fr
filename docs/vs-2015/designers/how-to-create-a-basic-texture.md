@@ -10,13 +10,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8a19cd0b68927effc32b0480fdeb7286be8ad8dd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664576"
 ---
-# <a name="how-to-create-a-basic-texture"></a>Comment : créer une texture de base
+# <a name="how-to-create-a-basic-texture"></a>Comment : créer une texture de base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ce document montre comment utiliser l’éditeur d’images pour créer une texture de base.
@@ -38,7 +38,7 @@ Ce document montre comment utiliser l’éditeur d’images pour créer une text
 
  Les étapes suivantes montrent comment créer une texture représentant une cible. Lorsque vous avez terminé, la texture doit ressembler à l’image suivante. Pour mettre en évidence la transparence de la texture, l’éditeur d’images a été configuré pour utiliser un modèle à damiers verts pour l’afficher.
 
- ![Cible « cercle concentrique » avec transparence affichée en vert](../designers/media/digit-bullseye-texture-in-editor.png "Chiffre-cercle concentrique-texture dans l’éditeur")
+ ![Cible « Bullseye » avec la transparence illustrée en vert](../designers/media/digit-bullseye-texture-in-editor.png "Chiffre-cercle concentrique-texture dans l’éditeur")
 
  Avant de commencer, assurez-vous que la fenêtre **Propriétés** est affichée. Vous utilisez la fenêtre **Propriétés** pour définir la taille de l'image,, modifier les propriétés des outils et spécifier des couleurs pendant que vous travaillez.
 
@@ -86,9 +86,9 @@ Ce document montre comment utiliser l’éditeur d’images pour créer une text
 
     La texture de cible est complète. Voici l’image finale, affichée avec la transparence.
 
-    ![Texture de cible « cercle concentrique » complète](../designers/media/gfx-image-demo-bullseye.png "gfx_image_demo_bullseye")
+    ![Texture cible « Bullseye » complète](../designers/media/gfx-image-demo-bullseye.png "gfx_image_demo_bullseye")
 
     Ensuite, vous pouvez générer des niveaux MIP pour cette texture. Pour plus d’informations, consultez l’article [Comment : créer et modifier les niveaux MIP](../designers/how-to-create-and-modify-mip-levels.md).
 
 ## <a name="see-also"></a>Voir aussi
- [Image Editor](../designers/image-editor.md)
+ [Éditeur d’images](../designers/image-editor.md)

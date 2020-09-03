@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 87b240dea73cc447f21422d9c165dad67f136075
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534236"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Raccourcis clavier par défaut pour les commandes fréquemment utilisées dans Visual Studio
@@ -26,7 +26,7 @@ Vous pouvez accéder à des commandes fréquemment utilisées dans Visual Studio
 
  **Dans cette rubrique**
 
-- [Générer](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_build)
+- [Créer](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_build)
 
 - [Modifier](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_edit)
 
@@ -38,13 +38,13 @@ Vous pouvez accéder à des commandes fréquemment utilisées dans Visual Studio
 
 - [Déboguer](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_debug)
 
-- [File](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_file)
+- [Fichier](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_file)
 
 - [Refactorisation](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_refactor)
 
 - [Affichage](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_view)||
 
-## <a name="build"></a><a name="bkmk_build"></a>Build
+## <a name="build"></a><a name="bkmk_build"></a> Build
 
 |Commandes|Raccourcis clavier [Contextes]|
 |--------------|-------------------------------------|
@@ -53,7 +53,7 @@ Vous pouvez accéder à des commandes fréquemment utilisées dans Visual Studio
 |Build.Compile|Ctrl+F7 [Global]|
 |Build.RunCodeAnalysisonSolution|Alt+F11 [Global]|
 
-## <a name="debug"></a><a name="bkmk_debug"></a>Debug
+## <a name="debug"></a><a name="bkmk_debug"></a> Debug
 
 |Commandes|Raccourcis clavier [Contextes]|
 |--------------|-------------------------------------|
@@ -124,7 +124,7 @@ dit.SurroundWith|Ctrl+K, Ctrl+S [Global]|
 |Edit.WordDeleteToEnd|Ctrl+Suppr [Éditeur de texte]|
 |Edit.WordDeleteToStart|Ctrl+Retour arrière [Éditeur de texte]|
 
-## <a name="file"></a><a name="bkmk_file"></a>Txt
+## <a name="file"></a><a name="bkmk_file"></a> Txt
 
 |Commandes|Raccourcis clavier [Contextes]|
 |--------------|-------------------------------------|
@@ -147,7 +147,7 @@ dit.SurroundWith|Ctrl+K, Ctrl+S [Global]|
 |Project.AddExistingItem|Maj+Alt+A [Global]|
 |Project.AddNewItem|Ctrl+Maj+A [Global]|
 
-## <a name="refactor"></a><a name="bkmk_refactor"></a>Refactoriser
+## <a name="refactor"></a><a name="bkmk_refactor"></a> Refactoriser
 
 |Commande|Raccourci clavier [Contexte]|
 |-------------|-----------------------------------|
@@ -159,7 +159,7 @@ dit.SurroundWith|Ctrl+K, Ctrl+S [Global]|
 |-------------|-----------------------------------|
 |Tools.AttachtoProcess|Ctrl+Alt+P [Global]|
 
-## <a name="view"></a><a name="bkmk_view"></a>Affichage
+## <a name="view"></a><a name="bkmk_view"></a> Affichage
 
 |Commandes|Raccourcis clavier [Contextes]|
 |--------------|-------------------------------------|
@@ -180,7 +180,7 @@ iew.TfsTeamExplorer|Ctrl+\\, Ctrl+M [Global]|
 |View.ViewCode|Entrée [Diagramme de classes]<br /><br /> ou F7 [Concepteur de paramètres]|
 |View.ViewDesigner|Maj+F7 [Mode Source de l'éditeur HTML]|
 
-## <a name="window"></a><a name="bkmk_window"></a>Fenetre
+## <a name="window"></a><a name="bkmk_window"></a> Fenetre
 
 |Commandes|Raccourcis clavier [Contextes]|
 |--------------|-------------------------------------|

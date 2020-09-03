@@ -5,10 +5,10 @@ author: cobey
 ms.author: cobey
 ms.date: 08/16/2019
 ms.openlocfilehash: 07ef1d6292e4ac88ca616d0f35e3fd831cacc649
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75405806"
 ---
 # <a name="intellisense"></a>IntelliSense
@@ -29,12 +29,12 @@ La fenêtre de complétion offre également la prise en charge du filtrage des c
 | ![Icône de constante](media/constant-icon.png) | constant      | `const`    |  ⌥O
 | ![Icône Délégué](media/delegate-icon.png) | délégué      | `delegate` |  ⌥D
 | ![Icône Énumération](media/enums-icon.png)    | enum          | `enum`     |  ⌥E
-| ![Icône Événement](media/event-icon.png)    | événement         |            |  ⌥V
+| ![Icône Événement](media/event-icon.png)    | event         |            |  ⌥V
 | ![Icône de champ](media/fields-icon.png)   | field         |            |  ⌥F
 | ![Icône Interface](media/interface-icon.png)| interface     | `interface`|  ⌥I
 | ![Icône Mot clé](media/keyword-icon.png)  | mot clé       |            |  ⌥K
 | ![Icône Méthode](media/method-icon.png)   | method        |            |  ⌥M
-| ![Icône Espace de noms](media/namespace-icon.png)| espace de noms     | `namespace`|  ⌥N
+| ![Icône Espace de noms](media/namespace-icon.png)| namespace     | `namespace`|  ⌥N
 | ![Icône Propriétés](media/props-icon.png)    | propriété      |            |  ⌥P
 | ![Icône Extrait de code](media/snippet-icon.png)  | extrait       | `class`    |  ⌥S
 | ![Icône Structure](media/struct-icon.png)   | structure     | `struct`   |  ⌥S

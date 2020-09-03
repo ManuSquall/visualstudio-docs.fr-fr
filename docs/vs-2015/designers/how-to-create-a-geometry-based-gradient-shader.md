@@ -10,13 +10,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1d9bfa9a6e9be1a97b3a606aa302defd12a8d062
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664520"
 ---
-# <a name="how-to-create-a-geometry-based-gradient-shader"></a>Comment : créer un nuanceur de géométrie dégradé
+# <a name="how-to-create-a-geometry-based-gradient-shader"></a>Comment : créer un nuanceur de géométrie dégradé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ce document indique comment utiliser le concepteur de nuanceur et DGSL (Directed Graph Shader Language) pour créer un nuanceur de géométrie dégradé. Ce nuanceur met à l’échelle une valeur de couleur RVB de constante en fonction de la hauteur de chaque point d’un objet dans l’espace universel.
@@ -61,13 +61,13 @@ Ce document indique comment utiliser le concepteur de nuanceur et DGSL (Directed
 > [!NOTE]
 > Dans cette illustration, la couleur orange est spécifiée pour mettre en évidence l’effet du nuanceur, mais comme la forme d’aperçu n’a pas de position dans l’espace universel, le nuanceur ne peut pas être entièrement visualisé dans le concepteur de nuanceur. Le nuanceur doit être visualisé dans une scène réelle pour montrer l’effet réel.
 
- ![Graphique du nuanceur et aperçu de son effet](../designers/media/digit-gradient-effect-graph.png "Caractère-gradient-effet-graphique")
+ ![Graphique du nuanceur et un aperçu de ses effets](../designers/media/digit-gradient-effect-graph.png "Caractère-gradient-effet-graphique")
 
- Certaines formes peuvent fournir de meilleurs aperçus pour certains nuanceurs. Pour plus d’informations sur l’aperçu des nuanceurs dans le concepteur de nuanceur, consultez la section **Aperçu des nuanceurs** de l’article [Concepteur de nuanceur](../designers/shader-designer.md).
+ Certaines formes peuvent fournir de meilleurs aperçus pour certains nuanceurs. Pour plus d’informations sur la façon d’afficher un aperçu des nuanceurs dans le concepteur de nuanceur, consultez aperçu des **nuanceurs** dans le [Concepteur de nuanceur](../designers/shader-designer.md)
 
- L’illustration suivante présente le nuanceur, décrit dans ce document, appliqué à la scène 3D qui est illustrée dans [Comment : modéliser un terrain 3D](../designers/how-to-model-3-d-terrain.md). L’intensité de la couleur augmente avec la hauteur du point dans l’espace universel.
+ L’illustration suivante montre le nuanceur décrit dans ce document, appliqué à la scène 3D qui est illustrée dans Guide pratique [pour modéliser un terrain 3D](../designers/how-to-model-3-d-terrain.md). L’intensité de la couleur augmente avec la hauteur du point dans l’espace universel.
 
- ![Effet dégradé appliqué à un modèle&#45;de terrain 3 D](../designers/media/digit-gradient-effect-result.png "Résultat-gradient-Effect-result")
+ ![Effet dégradé appliqué à un modèle de terrain 3&#45;D](../designers/media/digit-gradient-effect-result.png "Résultat-gradient-Effect-result")
 
  Pour plus d’informations sur l’application d’un nuanceur à un modèle 3D, consultez l’article [Comment : appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 

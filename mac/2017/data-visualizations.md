@@ -28,7 +28,7 @@ Une structure Point/PointF, ou CGPoint dans iOS et Mac, est restituée sous la f
 
 ![Visualisation d’une structure Point](media/data-visualizations-image10.png)
 
-## <a name="size"></a>Size
+## <a name="size"></a>Taille
 Une structure Size/SizeF, ou CGSize dans iOS et Mac, est restituée sous la forme d’un rectangle. Elle est dessinée à l’échelle jusqu’à ce qu’une dimension dépasse 250 pixels, limite à partir de laquelle elle est mise à l’échelle par rapport au rectangle avec comme dimension maximale 250 pixels :
 
 [Visualisation d’une structure Size](media/data-visualizations-image11.png)
@@ -60,7 +60,7 @@ Le visualiseur affiche un `NSBezierPath` :
 
 ![Visualisation d’une courbe de Bézier](media/data-visualizations-image16.png)
 
-## <a name="string"></a>Chaîne
+## <a name="string"></a>String
 
 Une chaîne de moins de 100 caractères s’affiche en totalité, sans aperçu. Les chaînes plus longues s’affichent en totalité dans l’aperçu. Les chaînes sont modifiables, et le visualiseur comporte un bouton Modifier, qui permet la modification de la valeur de la chaîne dans l’aperçu ou dans l’éditeur de valeur de chaîne, montré ci-dessous :
 

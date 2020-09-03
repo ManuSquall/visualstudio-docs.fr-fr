@@ -18,15 +18,15 @@ ms.author: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: d9e8b23492f23d39977b4eb26f8ee633b8463f27
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75565212"
 ---
 # <a name="multitooltask-task"></a>Tâche MultiToolTask
 
-Aucune description.
+Pas de description.
 
 ## <a name="parameters"></a>Paramètres
 
@@ -34,14 +34,14 @@ Le tableau suivant décrit les paramètres de la tâche **MultiToolTask**.
 
 |Paramètre|Description|
 |---------------|-----------------|
-|**EnvironmentVariablesToSet**|Paramètre **de chaîne en** option.|
-|**SemaphoreProcCount**|Paramètre **de chaîne** facultatif.|
-|**SchedulerFunction**|Paramètre **de chaîne** facultatif.|
+|**EnvironmentVariablesToSet**|Paramètre **String []** facultatif.|
+|**SemaphoreProcCount**|Paramètre de **chaîne** facultatif.|
+|**SchedulerFunction**|Paramètre de **chaîne** facultatif.|
 |**SchedulerVerbose**|Paramètre **booléen** facultatif.|
-|**récentes**|Paramètre **ITaskItem[]** requis.|
-|**TaskAssemblyName**|Paramètre **de chaîne** facultatif.|
-|**TaskName**|Paramètre **de chaîne** requis.|
-|**TrackerLogDirectory**|Paramètre **de chaîne** requis.|
+|**Sources**|Paramètre **ITaskItem []** obligatoire.|
+|**TaskAssemblyName**|Paramètre de **chaîne** facultatif.|
+|**TaskName**|Paramètre de **chaîne** obligatoire.|
+|**TrackerLogDirectory**|Paramètre de **chaîne** obligatoire.|
 
 ## <a name="see-also"></a>Voir aussi
 

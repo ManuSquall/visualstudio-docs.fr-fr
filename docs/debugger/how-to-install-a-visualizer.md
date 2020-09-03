@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b070eb361bcc3fbe4f72adfff10b5e7d19649087
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85349560"
 ---
 # <a name="how-to-install-a-visualizer"></a>Comment : installer un visualiseur
@@ -50,9 +50,9 @@ Après avoir créé un visualiseur, vous devez l'installer de sorte qu'il soit d
     - `My Documents\`*VisualStudioVersion* `\Visualizers\` *Infrastructure*
 
     où *Framework* est l’un des éléments suivants :
-    - `net2.0`pour les débogueurs exécutant le `.NET Framework` Runtime.
-    - `netstandard2.0`pour les débogueurs utilisant un Runtime qui prend en charge `netstandard 2.0` ( `.NET Framework v4.6.1+` ou `.NET Core 2.0+` ).
-    - `netcoreapp`pour les débogueurs exécutant le `.NET Core` Runtime. (prend en charge `.NET Core 2.0+` )
+    - `net2.0` pour les débogueurs exécutant le `.NET Framework` Runtime.
+    - `netstandard2.0` pour les débogueurs utilisant un Runtime qui prend en charge `netstandard 2.0` ( `.NET Framework v4.6.1+` ou `.NET Core 2.0+` ).
+    - `netcoreapp` pour les débogueurs exécutant le `.NET Core` Runtime. (prend en charge `.NET Core 2.0+` )
 
    Une DLL côté programme débogué est nécessaire si vous souhaitez créer un visualiseur autonome. Cette DLL contient le code de l’objet de données, qui peut implémenter des méthodes de <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> .
 

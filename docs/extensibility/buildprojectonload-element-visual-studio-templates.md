@@ -1,5 +1,5 @@
 ---
-title: BuildProjectOnload Element (Visual Studio Templates) Microsoft Docs
+title: Élément BuildProjectOnload (modèles Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -10,16 +10,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 72d1981aab67762b3ee4aa8d62e0643f4c2a8963
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739947"
 ---
 # <a name="buildprojectonload-element-visual-studio-templates"></a>Élément BuildProjectOnload (modèles Visual Studio)
-Construit uniquement de nouveaux projets au fur et à mesure que vous les créez et les ajoutez à une solution. Toute la solution n’est pas construite.
+Génère uniquement les nouveaux projets au fur et à mesure que vous les créez et les ajoute à une solution. L’ensemble de la solution n’est pas généré.
 
-Hiérarchie des éléments :
+Hiérarchie d’éléments :
 
 ```xml
 <VSTemplate>
@@ -46,18 +46,18 @@ Hiérarchie des éléments :
 
 |Élément|Description|
 |-------------|-----------------|
-|`TemplateData`|Catégorise le modèle et définit comment il apparaît à la fois dans le **nouveau projet** et dans les boîtes de dialogue Add **New Item.**|
+|`TemplateData`|Classe le modèle et définit son apparence dans les boîtes de dialogue **nouveau projet** et **Ajouter un nouvel élément** .|
 
 ## <a name="text-value"></a>Valeur texte
  Une valeur texte est requise.
 
- Le texte doit `true` `false` être soit ou pour indiquer s’il ne faut construire que le nouveau projet lorsqu’il est créé à partir du modèle.
+ Le texte doit être `true` ou `false` pour indiquer s’il faut générer uniquement le nouveau projet lorsqu’il est créé à partir du modèle.
 
 ## <a name="remarks"></a>Notes
  `BuildProjectOnLoad` est un élément facultatif. La valeur par défaut est `false`.
 
 ## <a name="example"></a>Exemple
- L’exemple suivant illustre les métadonnées d’un modèle Visual C.
+ L’exemple suivant illustre les métadonnées d’un modèle Visual C#.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -86,6 +86,6 @@ Hiérarchie des éléments :
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Attribut et élément BuildOnLoad](buildonload-visual-studio-templates.md)
-- [Création de modèles de projets et d’objets](../ide/creating-project-and-item-templates.md)
-- [Référence de schéma de modèle de studio visuel](../extensibility/visual-studio-template-schema-reference.md)
+- [Élément et attribut BuildOnLoad](buildonload-visual-studio-templates.md)
+- [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)
+- [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
