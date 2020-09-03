@@ -9,10 +9,10 @@ ms.workload:
 - cplusplus
 author: corob-msft
 ms.openlocfilehash: a9393fd248f4e6520c261d405bc624a75d8cf69f
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85287114"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Utiliser le framework de tests unitaires Microsoft pour C++ dans Visual Studio
@@ -23,7 +23,7 @@ Le framework de tests unitaires Microsoft pour C++ est par défaut dans la charg
 
 En règle générale, vous exécutez votre code de test dans son propre projet, dans la même solution que le code que vous voulez tester. Pour installer et configurer un nouveau projet de test, consultez [Écriture de tests unitaires pour C/C++](writing-unit-tests-for-c-cpp.md).
 
-## <a name="to-write-unit-tests-in-the-same-project"></a><a name="same_project"></a>Pour écrire des tests unitaires dans le même projet
+## <a name="to-write-unit-tests-in-the-same-project"></a><a name="same_project"></a> Pour écrire des tests unitaires dans le même projet
 
 Dans certains cas, par exemple lors du test de fonctions non exportées dans une DLL, il peut être nécessaire de créer les tests dans le même projet que le programme que vous testez. Pour écrire des tests unitaires dans le même projet :
 

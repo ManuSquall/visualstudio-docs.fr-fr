@@ -1,5 +1,5 @@
 ---
-title: DEBUGREF_INFO_FLAGS Microsoft Docs
+title: DEBUGREF_INFO_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cb10ae5d3b4ce9f8aa777f643d412e075bd5293f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737387"
 ---
 # <a name="debugref_info_flags"></a>DEBUGREF_INFO_FLAGS
-Précise les informations à récupérer sur un objet de référence débogé.
+Spécifie les informations à récupérer sur un objet de référence de débogage.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -58,45 +58,45 @@ public enum enum_DEBUGREF_INFO_FLAGS {
 
 ## <a name="fields"></a>Champs
 `DEBUGREF_INFO_NAME`\
-Initialiser/utiliser `bstrName` le champ dans la structure.
+Initialisez/utilisez le `bstrName` champ de la structure.
 
 `DEBUGREF_INFO_TYPE`\
-Initialiser/utiliser `bstrType` le champ dans la structure.
+Initialisez/utilisez le `bstrType` champ de la structure.
 
 `DEBUGREF_INFO_VALUE`\
-Initialiser/utiliser `bstrValue` le champ dans la structure.
+Initialisez/utilisez le `bstrValue` champ de la structure.
 
 `DEBUGREF_INFO_ATTRIB`\
-Initialiser/utiliser `dwAttrib` le champ dans la structure.
+Initialisez/utilisez le `dwAttrib` champ de la structure.
 
 `DEBUGREF_INFO_REFTYPE`\
-Initialiser/utiliser `dwRefType` le champ dans la structure.
+Initialisez/utilisez le `dwRefType` champ de la structure.
 
 `DEBUGREF_INFO_REF`\
-Initialiser/utiliser `pReference` le champ dans la structure.
+Initialisez/utilisez le `pReference` champ de la structure.
 
 `DEBUGREF_INFO_VALUE_AUTOEXPAND`\
-Le champ de valeur doit contenir la valeur auto-élargie, si disponible, pour ce type d’objet.
+Le champ valeur doit contenir la valeur développée automatiquement, si elle est disponible, pour ce type d’objet.
 
 `DEBUGREF_INFO_NONE`\
-Indique qu’aucun drapeau n’est fixé.
+Indique qu’aucun indicateur n’est défini.
 
 `DEBUGREF_INFO_ALL`\
-Indique un masque des drapeaux.
+Indique un masque des indicateurs.
 
 ## <a name="remarks"></a>Notes
-Ces drapeaux sont transmis aux méthodes [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) et [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) pour indiquer quels champs de la structure [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) doivent être parasésés.
+Ces indicateurs sont passés aux méthodes [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) et [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) pour indiquer les champs de la structure [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) qui doivent être initialisés.
 
-Utilisé pour `dwFields` le `DEBUG_REFERENCE_INFO` membre de la structure pour indiquer quels champs sont utilisés et valides lorsque la structure est retournée.
+Utilisé pour le `dwFields` membre de la `DEBUG_REFERENCE_INFO` structure pour indiquer les champs qui sont utilisés et valides lorsque la structure est retournée.
 
-Ces valeurs peuvent être combinées avec un peu plus. `OR`
+Ces valeurs peuvent être combinées avec une opération de bits `OR` .
 
-## <a name="requirements"></a>Spécifications
-En-tête: msdbg.h
+## <a name="requirements"></a>Configuration requise
+En-tête : msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Espace de noms : Microsoft. VisualStudio. Debugger. Interop
 
-Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

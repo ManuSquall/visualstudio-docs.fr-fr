@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fd4f0ef9fe4e9b8f284dd082ebadf27910806beb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672852"
 ---
 # <a name="api-reference-for-t4-text-templates"></a>Référence API pour les modèles de texte T4
@@ -23,8 +23,8 @@ L’API de création de modèles de texte vous permet d’appeler et de personna
 
 ## <a name="namespaces"></a>Espaces de noms
 
-|Espace de noms|Fonction|
+|Espace de noms|Objectif|
 |---------------|-------------|
 |<xref:Microsoft.VisualStudio.TextTemplating>|Contient des classes pour la fonctionnalité de transformation de modèle de texte. Le moteur de transformation de modèle de texte est intégré à Visual Studio et transforme les fichiers de modèle de texte en fichiers de sortie texte générés.|
-|[Pièces](/previous-versions/ee844312(v=vs.140))|Fournit des fonctionnalités de transformation de texte liées aux modèles UML et aux langages spécifiques à un domaine, tels que l’accès à [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus.|
-|<xref:Microsoft.VisualStudio.TextTemplating.VSHost>|Fournit l’accès au service de création de modèles de texte dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
+|[Modélisation](/previous-versions/ee844312(v=vs.140))|Fournit des fonctionnalités de transformation de texte liées aux modèles UML et aux langages spécifiques à un domaine, tels que l’accès à [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus.|
+|<xref:Microsoft.VisualStudio.TextTemplating.VSHost>|Fournit l’accès au service de création de modèles de texte dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .|

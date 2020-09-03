@@ -1,5 +1,5 @@
 ---
-title: '&lt;Tâches PackageFiles&gt; élément (programme d’amorçage) | Microsoft Docs'
+title: '&lt;&gt;Élément PackageFiles (programme d’amorçage) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -17,16 +17,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 382689dada13adce1ee530e66fef6ba78452efaa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68188989"
 ---
-# <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;Tâches PackageFiles&gt; élément (programme d’amorçage)
+# <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;&gt;Élément PackageFiles (programme d’amorçage)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Le `PackageFiles` élément contient `PackageFile` éléments qui définissent les packages d’installation exécutées en raison de la `Command` élément.  
+L' `PackageFiles` élément contient `PackageFile` des éléments qui définissent les packages d’installation exécutés à la suite de l' `Command` élément.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -49,23 +49,23 @@ Le `PackageFiles` élément contient `PackageFile` éléments qui définissent l
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|`CopyAllPackageFiles`|facultatif. Si la valeur `false`, le programme d’installation téléchargera uniquement les fichiers référencés à partir du `Command` élément. Si la valeur `true`, tous les fichiers seront téléchargés.<br /><br /> Si la valeur `IfNotHomesite`, le programme d’installation se comportera comme si `False` si `ComponentsLocation` a la valeur `HomeSite`et sinon se comporte comme si `True`. Ce paramètre peut être utile pour permettre aux packages qui sont eux-mêmes des programmes d’amorçage exécuter leur propre comportement dans un scénario HomeSite.<br /><br /> Par défaut, il s’agit de `true`.|  
+|`CopyAllPackageFiles`|facultatif. Si la valeur `false` est, le programme d’installation télécharge uniquement les fichiers référencés à partir de l' `Command` élément. Si la valeur `true` est, tous les fichiers sont téléchargés.<br /><br /> Si la valeur `IfNotHomesite` est, le programme d’installation se comporte de la même façon que si `False` `ComponentsLocation` a la valeur `HomeSite` , et sinon se comporte comme si `True` . Ce paramètre peut être utile pour permettre aux packages qui sont eux-mêmes des programmes d’amorçage d’exécuter leur propre comportement dans un scénario HomeSite.<br /><br /> Par défaut, il s’agit de `true`.|  
   
 ## <a name="packagefile"></a>PackageFile  
- Le `PackageFile` élément est un enfant de le `PackageFiles` élément. Un `PackageFiles` élément doit avoir au moins un `PackageFile` élément.  
+ L' `PackageFile` élément est un enfant de l' `PackageFiles` élément. Un `PackageFiles` élément doit avoir au moins un `PackageFile` élément.  
   
  `PackageFile` a les attributs suivants.  
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|`Name`|Requis. Le nom du fichier du package. Il s’agit du nom qui le `Command` élément référence lorsqu’il définit les conditions d’installation d’un package. Cette valeur est également utilisée comme clé dans le `Strings` table pour récupérer le nom localisé des outils tels que [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour décrire le package.|  
-|`HomeSite`|facultatif. L’emplacement du package sur le serveur distant, si elle n’est pas inclus dans le programme d’installation.|  
+|`Name`|Obligatoire. Nom du fichier de package. Il s’agit du nom que l' `Command` élément référencera lorsqu’il définit les conditions d’installation d’un package. Cette valeur est également utilisée comme clé dans la `Strings` table pour récupérer le nom localisé que les outils, tels que, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] utiliseront pour décrire le package.|  
+|`HomeSite`|facultatif. Emplacement du package sur le serveur distant, s’il n’est pas inclus dans le programme d’installation.|  
 |`CopyOnBuild`|facultatif. Spécifie si le programme d’amorçage doit copier le fichier de package sur le disque au moment de la génération. La valeur par défaut est true.|  
-|`PublicKey`|La clé publique chiffrée du signataire de certificat du package. Obligatoire si `HomeSite` est utilisée ; sinon, facultatif.|  
-|`Hash`|facultatif. Un hachage SHA1 du fichier du package. Cela est utilisé pour vérifier l’intégrité du fichier au moment de l’installation. Si le hachage identique ne peut pas être calculé à partir du fichier de package, le package ne sera pas installé.|  
+|`PublicKey`|Clé publique chiffrée du signataire du certificat du package. Obligatoire si `HomeSite` est utilisé ; sinon, facultatif.|  
+|`Hash`|facultatif. Hachage SHA1 du fichier de package. Cette valeur est utilisée pour vérifier l’intégrité du fichier au moment de l’installation. Si le hachage identique ne peut pas être calculé à partir du fichier de package, le package ne sera pas installé.|  
   
-## <a name="example"></a>Exemples  
- L’exemple de code suivant définit des packages pour le [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] redistributable package et ses dépendances, telles que le programme d’installation de Windows.  
+## <a name="example"></a>Exemple  
+ L’exemple de code suivant définit des packages pour le [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] package redistribuable et ses dépendances, tels que le Windows Installer.  
   
 ```  
 <PackageFiles>  
@@ -77,6 +77,6 @@ Le `PackageFiles` élément contient `PackageFile` éléments qui définissent l
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [\<Produit > élément](../deployment/product-element-bootstrapper.md)   
- [\<Package > élément](../deployment/package-element-bootstrapper.md)   
- [Informations de référence sur le schéma de produit et de package](../deployment/product-and-package-schema-reference.md)
+ [\<Product> Appartient](../deployment/product-element-bootstrapper.md)   
+ [\<Package> Appartient](../deployment/package-element-bootstrapper.md)   
+ [Référence du schéma de produit et de package](../deployment/product-and-package-schema-reference.md)

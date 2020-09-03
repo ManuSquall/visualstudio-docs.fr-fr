@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7d660189ede0848216eb44d6ef49fe9c93a06ec8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672728"
 ---
 # <a name="boundsrules-constrain-shape-location-and-size"></a>Définition de l'emplacement et de la taille de la forme par la classe BoundsRules
@@ -25,7 +25,7 @@ Une *règle de limites* est une classe qui définit des limites sur la taille et
 
  L’exemple suivant limite la taille d’une forme rectangulaire à une barre de taille fixe, horizontale ou verticale. Lorsque l’utilisateur fait glisser les angles ou les côtés, le contour s’incline entre les deux configurations autorisées de hauteur et de largeur.
 
- La règle de limites est une classe dérivée de <xref:Microsoft.VisualStudio.Modeling.Diagrams.BoundsRules>. Une instance de la règle est créée dans la forme :
+ La règle de limites est une classe dérivée de <xref:Microsoft.VisualStudio.Modeling.Diagrams.BoundsRules> . Une instance de la règle est créée dans la forme :
 
 ```
 using Microsoft.VisualStudio.Modeling.Diagrams; ...
@@ -68,4 +68,4 @@ public class BarBoundsRule: BoundsRules
  Notez que l’emplacement et la taille peuvent être limités si vous le souhaitez.
 
 ## <a name="see-also"></a>Voir aussi
- <xref:Microsoft.VisualStudio.Modeling.Diagrams.BoundsRules> [répondre aux modifications et les propager](../modeling/responding-to-and-propagating-changes.md)
+ <xref:Microsoft.VisualStudio.Modeling.Diagrams.BoundsRules> [Propagation et réponse aux modifications en attente](../modeling/responding-to-and-propagating-changes.md)

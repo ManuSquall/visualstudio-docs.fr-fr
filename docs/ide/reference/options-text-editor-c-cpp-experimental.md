@@ -12,10 +12,10 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 7e239ad3d2091f334f18ec00a367fc47d5c21db3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77278702"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Options, Éditeur de texte, C/C++, Expérimental
@@ -28,7 +28,7 @@ Cet article décrit les options disponibles dans Visual Studio 2017. Pour Visua
 
 ::: moniker-end
 
-Pour accéder à cette page de propriété, appuyez sur **Ctrl**+**Q** pour activer la boîte de recherche, puis tapez **expérimentale**. La recherche trouve la page dès les premières lettres saisies. Vous pouvez également y arriver en choisissant **des options d’outils** > **Options** et en élargissant **l’éditeur de texte,** puis **C /C ,** puis en choisissant **Experimental**.
+Pour accéder à cette page de propriétés, appuyez sur **CTRL** + **Q** pour activer la zone de recherche, puis tapez **expérimental**. La recherche trouve la page dès les premières lettres saisies. Vous pouvez également y accéder en choisissant **Outils**  >  **options** et en développant **éditeur de texte**, puis **C/C++**, puis en choisissant **expérimental**.
 
 Ces fonctionnalités sont disponibles dans une installation de Visual Studio.
 
@@ -65,6 +65,6 @@ Vous pouvez parcourir d’autres fonctionnalités de l’éditeur de texte dans 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Définir des options d’éditeur spécifiques à la langue](../../ide/reference/setting-language-specific-editor-options.md)
+- [Définition des options de l’éditeur spécifiques à une langue](../../ide/reference/setting-language-specific-editor-options.md)
 - [Refactorisation en C++ (blog VC)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/
 )

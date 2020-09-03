@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Déplacer des binaires instrumentés | Microsoft Docs'
+title: 'Comment : déplacer des binaires instrumentés | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,18 +17,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 00b39b91b0a776438199d1df3c212cb9fe40f338
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155516"
 ---
-# <a name="how-to-relocate-instrumented-binaries"></a>Procédure : Déplacer des binaires instrumentés
+# <a name="how-to-relocate-instrumented-binaries"></a>Comment : déplacer des binaires instrumentés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Lors de l’instrumentation, des sondes sont insérées dans le fichier binaire pour mesurer les performances de l’application. Quand vous choisissez de déplacer le fichier binaire instrumenté, une copie du fichier binaire d’origine est instrumentée et placée à l’emplacement spécifié. Cette option est utile si vous ne voulez pas que le profileur renomme votre fichier binaire d’origine. Si le fichier binaire n’est pas déplacé, la version d’origine du fichier binaire est remplacée.  
   
- **Spécifications**  
+ **Configuration requise**  
   
 - [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
@@ -43,5 +43,5 @@ Lors de l’instrumentation, des sondes sont insérées dans le fichier binaire 
 4. Spécifiez l’emplacement du fichier binaire instrumenté.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Configuration de sessions de performance](../profiling/configuring-performance-sessions.md)   
+ [Configuration des sessions de performance](../profiling/configuring-performance-sessions.md)   
  [VSInstr](../profiling/vsinstr.md)

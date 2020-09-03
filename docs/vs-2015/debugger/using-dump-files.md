@@ -26,10 +26,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1a2d6215887512f2e0c1410688b2bc924dc1fe3a
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86387055"
 ---
 # <a name="using-dump-files"></a>Utilisation de fichiers dump
@@ -37,12 +37,12 @@ ms.locfileid: "86387055"
 
 Fichiers dump avec ou sans tas ; créez un fichier dump ; ouvrez un fichier dump ; recherchez les binaires, les fichiers pdbs et le fichier source pour un fichier dump. 
   
-## <a name="contents"></a><a name="BKMK_Contents"></a>Matières  
+## <a name="contents"></a><a name="BKMK_Contents"></a> Matières  
  [Qu'est-ce qu'un fichier dump ?](#BKMK_What_is_a_dump_file_)  
   
  [Fichiers dump, avec ou sans tas](#BKMK_Dump_files__with_or_without_heaps)  
   
- [Exigences et limitations](#BKMK_Requirements_and_limitations)  
+ [Conditions requises et limitations :](#BKMK_Requirements_and_limitations)  
   
  [Créer un fichier de vidage](#BKMK_Create_a_dump_file)  
   
@@ -50,14 +50,14 @@ Fichiers dump avec ou sans tas ; créez un fichier dump ; ouvrez un fichier du
   
  [Rechercher les binaires, les fichiers de symboles (.pdb) et les fichiers sources](#BKMK_Find_binaries__symbol___pdb__files__and_source_files)  
   
-## <a name="what-is-a-dump-file"></a><a name="BKMK_What_is_a_dump_file_"></a>Qu’est-ce qu’un fichier dump ?  
+## <a name="what-is-a-dump-file"></a><a name="BKMK_What_is_a_dump_file_"></a> Qu’est-ce qu’un fichier dump ?  
  Un *fichier dump* est un instantané d’une application au moment où le dump est pris. Il indique quel processus s'exécutait et quels modules ont été chargés. Si le dump a été stocké avec les informations du tas, le fichier dump contiendra un instantané de ce qui était dans la mémoire de l'application à ce moment. L'ouverture d'un fichier dump avec un tas dans Visual Studio est semblable à l'arrêt à un point d'arrêt dans la session de débogage. Bien que vous ne puissiez pas continuer l'exécution, vous pouvez examiner les piles, les threads, et les valeurs de variables de l'application au moment où le dump s'est produit.  
   
  Les dumps sont principalement utilisés pour le débogage des problèmes qui se produisent sur des ordinateurs sur lesquels le développeur n'a pas accès. Par exemple, vous pouvez utiliser un fichier de vidage à partir de l’ordinateur d’un client lorsque vous ne pouvez pas reproduire le blocage du client ou le programme qui ne répond pas sur votre ordinateur. Les testeurs sont également créés par les testeurs pour enregistrer les données de programme bloquantes ou qui ne répondent pas, afin que l’ordinateur de test puisse être utilisé pour davantage de tests. Le débogueur Visual Studio peut enregistrer des fichiers dump pour le code managé ou natif. Le débogueur peut charger des fichiers dump créés par Visual Studio ou par d’autres programmes qui enregistrent des fichiers au format *Minidump* .  
   
  ![Retour au contenu du haut](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contents](#BKMK_Contents)  
   
-## <a name="dump-files-with-or-without-heaps"></a><a name="BKMK_Dump_files__with_or_without_heaps"></a>Fichiers dump, avec ou sans tas  
+## <a name="dump-files-with-or-without-heaps"></a><a name="BKMK_Dump_files__with_or_without_heaps"></a> Fichiers dump, avec ou sans tas  
  Vous pouvez créer des fichiers dump avec ou sans information du tas.  
   
 - Les **fichiers dump avec des tas** contiennent un instantané de la mémoire de l’application. Cela inclut les valeurs de variables lorsque le dump a été créé. Si vous chargez un fichier dump qui été enregistré avec un tas, Visual Studio peut charger les symboles même si l'application binaire est introuvable. Visual Studio enregistre également les binaires des modules natifs chargés dans le fichier dump, ce qui peut faciliter le débogage.  
@@ -107,7 +107,7 @@ Fichiers dump avec ou sans tas ; créez un fichier dump ; ouvrez un fichier du
   
 4. Pour démarrer le débogage, accédez à la section **actions** et choisissez **Déboguer avec natif uniquement** ou **Déboguer avec mixte**.  
   
-## <a name="find-binaries-symbol-pdb-files-and-source-files"></a><a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a>Rechercher des fichiers binaires, des fichiers de symboles (. pdb) et des fichiers sources  
+## <a name="find-binaries-symbol-pdb-files-and-source-files"></a><a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> Rechercher des fichiers binaires, des fichiers de symboles (. pdb) et des fichiers sources  
  Pour utiliser les fonctionnalités complètes de Visual Studio pour déboguer un fichier dump, vous devez accéder à :  
   
 - Fichier .exe pour lequel le dump a été effectué et autres fichiers binaires (DLL, etc.) utilisés dans le processus de dump.  

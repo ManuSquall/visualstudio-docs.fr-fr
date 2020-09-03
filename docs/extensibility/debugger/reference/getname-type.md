@@ -1,5 +1,5 @@
 ---
-title: GETNAME_TYPE Microsoft Docs
+title: GETNAME_TYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1d0d146ec4ed7340bde36b298df9d455257b35fe
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736677"
 ---
 # <a name="getname_type"></a>GETNAME_TYPE
-Spécifie le type de nom de fichiers à récupérer.
+Spécifie le type de nom des fichiers à récupérer.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -54,35 +54,35 @@ public enum enum_GETNAME_TYPE {
 
 ## <a name="fields"></a>Champs
 `GN_NAME`\
-Spécifie un nom ami du document ou du contexte.
+Spécifie un nom convivial du document ou du contexte.
 
 `GN_FILENAME`\
-Spécifie la voie complète du document ou du contexte.
+Spécifie le chemin d’accès complet du document ou du contexte.
 
 `GN_BASENAME`\
-Spécifie un nom de fichier de base au lieu d’un chemin complet du document ou du contexte.
+Spécifie un nom de fichier de base au lieu d’un chemin d’accès complet au document ou au contexte.
 
 `GN_MONIKERNAME`\
-Spécifie un nom unique du document ou du contexte sous la forme d’un surnom.
+Spécifie un nom unique du document ou du contexte sous la forme d’un moniker.
 
 `GN_URL`\
-Spécifie un nom URL du document ou du contexte.
+Spécifie le nom de l’URL du document ou du contexte.
 
 `GN_TITLE`\
-Spécifie un titre du document, s’il y en a un.
+Spécifie le titre du document, s’il en existe un.
 
 `GN_STARTPAGEURL`\
-Obtient l’URL de la page de départ pour les processus.
+Obtient l’URL de la page de démarrage pour les processus.
 
 ## <a name="remarks"></a>Notes
-Ces valeurs sont transmises comme paramètres pour les méthodes [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md), [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)et [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) pour spécifier le type de nom à retourner.
+Ces valeurs sont passées en tant que paramètres aux méthodes [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md), [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)et [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) pour spécifier le genre de nom à retourner.
 
-## <a name="requirements"></a>Spécifications
-En-tête: msdbg.h
+## <a name="requirements"></a>Configuration requise
+En-tête : msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Espace de noms : Microsoft. VisualStudio. Debugger. Interop
 
-Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

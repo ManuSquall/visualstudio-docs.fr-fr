@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::SetPassCount | Microsoft Docs
+title: 'IDebugBoundBreakpoint2 :: SetPassCount | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9711ae6d9048b1de953d8a090b8e11b22c640345
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156179"
 ---
 # <a name="idebugboundbreakpoint2setpasscount"></a>IDebugBoundBreakpoint2::SetPassCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Définit ou modifie le nombre de passe associé à ce point d’arrêt lié.  
+Définit ou modifie le nombre de tests associés à ce point d’arrêt lié.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -41,15 +41,15 @@ int SetPassCount( 
   
 #### <a name="parameters"></a>Paramètres  
  `bpPassCount`  
- [in] Le [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) structure qui spécifie le nombre de pass.  
+ dans Structure [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) qui spécifie le nombre de passes.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Retourne `E_BP_DELETED` si l’état de l’objet de point d’arrêt lié est défini sur `BPS_DELETED` (dans le cadre de la [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) énumération).  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Retourne `E_BP_DELETED` si l’état de l’objet de point d’arrêt lié est défini sur `BPS_DELETED` (partie de l’énumération [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) ).  
   
 ## <a name="remarks"></a>Notes  
- Le nombre de pass détermine quand le point d’arrêt est déclenché. Le test actuel ou le nombre d’accès peut être obtenu en appelant le [GetHitCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-gethitcount.md) (méthode).  
+ Le nombre de passes détermine à quel moment le point d’arrêt est déclenché. Le nombre de réussites ou d’accès actuel peut être obtenu en appelant la méthode [GetHitCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-gethitcount.md) .  
   
- N’importe quel nombre de passe qui a été précédemment associé à ce point d’arrêt est perdu.  
+ Tout nombre de réussites précédemment associé à ce point d’arrêt est perdu.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   

@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7700670774dcb38b054cf28275f64c0c3046f741
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205025"
 ---
-# <a name="processinfofields"></a>PROCESS_INFO_FIELDS
+# <a name="process_info_fields"></a>PROCESS_INFO_FIELDS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Spécifié le type d’informations à récupérer pour un processus.  
+Spécifie le type d’informations à récupérer pour un processus.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -57,45 +57,45 @@ public enum enum_PROCESS_INFO_FIELDS { 
   
 ## <a name="members"></a>Membres  
  PIF_FILE_NAME  
- Initialize/utiliser le `bstrFileName` champ la [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) structure.  
+ Initialisez/utilisez le `bstrFileName` champ de la structure [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) .  
   
  PIF_BASE_NAME  
- Initialize/utiliser le `bstrBaseName` champ la `PROCESS_INFO` structure.  
+ Initialisez/utilisez le `bstrBaseName` champ de la `PROCESS_INFO` structure.  
   
  PIF_TITLE  
- Initialize/utiliser le `bstrTitle` champ la `PROCESS_INFO` structure.  
+ Initialisez/utilisez le `bstrTitle` champ de la `PROCESS_INFO` structure.  
   
  PIF_PROCESS_ID  
- Initialize/utiliser le `ProcessId` champ la `PROCESS_INFO` structure.  
+ Initialisez/utilisez le `ProcessId` champ de la `PROCESS_INFO` structure.  
   
  PIF_SESSION_ID  
- Initialize/utiliser le `dwSessionId` champ la `PROCESS_INFO` structure.  
+ Initialisez/utilisez le `dwSessionId` champ de la `PROCESS_INFO` structure.  
   
  PIF_ATTACHED_SESSION_NAME  
- Initialize/utiliser le `bstrAttachedSessionName` champ la `PROCESS_INFO` structure.  
+ Initialisez/utilisez le `bstrAttachedSessionName` champ de la `PROCESS_INFO` structure.  
   
  PIF_CREATION_TIME  
- Initialize/utiliser le `CreationTime` champ la `PROCESS_INFO` structure.  
+ Initialisez/utilisez le `CreationTime` champ de la `PROCESS_INFO` structure.  
   
  PIF_FLAGS  
- Initialize/utiliser le `Flags` champ la `PROCESS_INFO` structure.  
+ Initialisez/utilisez le `Flags` champ de la `PROCESS_INFO` structure.  
   
  PIF_ALL  
  Remplit tous les champs.  
   
 ## <a name="remarks"></a>Notes  
- Passé à la [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) méthode pour indiquer les champs de la [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) structure doivent être initialisées.  
+ Passé à la méthode [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) pour indiquer les champs de la structure [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) qui doivent être initialisés.  
   
- Également utilisé dans `Fields` champ la `PROCESS_INFO` structure pour indiquer quels champs sont utilisés et valide.  
+ Également utilisé dans `Fields` le champ de la `PROCESS_INFO` structure pour indiquer les champs qui sont utilisés et valides.  
   
- Ces indicateurs peuvent être combinées avec un opérateur de bits `OR`.  
+ Ces indicateurs peuvent être combinés avec une opération au niveau du bit `OR` .  
   
 ## <a name="requirements"></a>Configuration requise  
- En-tête : msdbg.h  
+ En-tête : msdbg. h  
   
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft. VisualStudio. Debugger. Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

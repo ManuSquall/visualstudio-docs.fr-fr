@@ -1,5 +1,5 @@
 ---
-title: FIELD_KIND Microsoft Docs
+title: FIELD_KIND | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cafe4a34745f3b34070f7d8fed1a246c806375a4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736863"
 ---
 # <a name="field_kind"></a>FIELD_KIND
-Spécifie le type de champ contenu dans un objet [IDebugField.](../../../extensibility/debugger/reference/idebugfield.md)
+Spécifie le type de champ contenu dans un objet [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) .
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -126,13 +126,13 @@ public enum enum_FIELD_KIND {
 
 ## <a name="fields"></a>Champs
 `FIELD_KIND_TYPE`\
-Indique que le champ est un type seulement.
+Indique que le champ est un type uniquement.
 
 `FIELD_KIND_SYMBOL`\
 Indique que le champ est un symbole, avec le type, le nom et d’autres informations.
 
 `FIELD_TYPE_PRIMITIVE`\
-Indique que le champ est un type de données primitive.
+Indique que le champ est un type de données primitif.
 
 `FIELD_TYPE_STRUCT`\
 Indique que le champ est une structure.
@@ -144,7 +144,7 @@ Indique que le champ est une classe.
 Indique que le champ est une interface.
 
 `FIELD_TYPE_UNION`\
-Indique que le champ est un syndicat.
+Indique que le champ est une Union.
 
 `FIELD_TYPE_ARRAY`\
 Indique que le champ est un tableau.
@@ -159,19 +159,19 @@ Indique que le champ est un bloc.
 Indique que le champ est un pointeur.
 
 `FIELD_TYPE_ENUM`\
-Indique que le champ est un type de données énumérés.
+Indique que le champ est un type de données énuméré.
 
 `FIELD_TYPE_LABEL`\
 Indique que le champ est une étiquette.
 
 `FIELD_TYPE_TYPEDEF`\
-Indique que le champ est un dactylo.
+Indique que le champ est un typedef.
 
 `FIELD_TYPE_BITFIELD`\
-Indique que le champ est un peu terrain.
+Indique que le champ est un champ de binaire.
 
 `FIELD_TYPE_NAMESPACE`\
-Indique que le champ est un espace nom.
+Indique que le champ est un espace de noms.
 
 `FIELD_TYPE_MODULE`\
 Indique que le champ est un module.
@@ -183,13 +183,13 @@ Indique que le champ est dynamique.
 Indique que le champ est une propriété.
 
 `FIELD_TYPE_INNERCLASS`\
-Indique que le champ est une classe intérieure.
+Indique que le champ est une classe interne.
 
 `FIELD_TYPE_REFERENCE`\
 Indique que le champ est une référence.
 
 `FIELD_TYPE_EXTENDED`\
-Réservé pour un usage futur.
+Réservé à un usage ultérieur.
 
 `FIELD_SYM_MEMBER`\
 Indique que le champ est un membre.
@@ -201,40 +201,40 @@ Indique que le champ est local.
 Indique que le champ est un paramètre.
 
 `FIELD_SYM_THIS`\
-Indique que le champ est le pointeur "ce".
+Indique que le champ est le pointeur « this ».
 
 `FIELD_SYM_GLOBAL`\
-Indique que le domaine est mondial.
+Indique que le champ est global.
 
 `FIELD_SYM_PROP_GETTER`\
-Indique que le champ récupère des propriétés.
+Indique que le champ récupère les propriétés.
 
 `FIELD_SYM_PROP_SETTER`\
-Indique que le champ définit les propriétés.
+Indique que le champ définit des propriétés.
 
 `FIELD_SYM_EXTENDED`\
-Réservé pour un usage futur.
+Réservé à un usage ultérieur.
 
 `FIELD_KIND_MASK`\
-Indique un masque pour les types de champ.
+Indique un masque pour les genres de champs.
 
 `FIELD_TYPE_MASK`\
-Indique un masque pour les types de champ.
+Indique un masque pour les types de champs.
 
 `FIELD_SYM_MASK`\
 Indique un masque pour les informations de symbole.
 
 ## <a name="remarks"></a>Notes
-Revenu d’un appel à la méthode [GetKind.](../../../extensibility/debugger/reference/idebugfield-getkind.md)
+Retourné à partir d’un appel à la méthode [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) .
 
-Selon le type de champ, [QueryInterface](/cpp/atl/queryinterface) peut être appelé sur l’interface [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) pour une forme plus spécifique d’interface. Par exemple, si `FIELD_TYPE_METHOD` [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) revient,`DebugField` vous pouvez alors faire appel `QueryInterface` à I pour obtenir l’interface [IDebugMethodField.](../../../extensibility/debugger/reference/idebugmethodfield.md)
+Selon le type de champ, [QueryInterface](/cpp/atl/queryinterface) peut être appelé sur l’interface [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) pour une forme d’interface plus spécifique. Par exemple, si [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) retourne `FIELD_TYPE_METHOD` , vous pouvez appeler `QueryInterface` sur I `DebugField` pour obtenir l’interface [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) .
 
-## <a name="requirements"></a>Spécifications
-En-tête: sh.h
+## <a name="requirements"></a>Configuration requise
+En-tête : SH. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Espace de noms : Microsoft. VisualStudio. Debugger. Interop
 
-Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

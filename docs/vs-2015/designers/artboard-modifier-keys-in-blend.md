@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2cdd069e8b17bcc26e067e0927ceef8cd9b1125a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658005"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Touches de modification de la planche graphique dans Blend
@@ -21,9 +21,9 @@ ms.locfileid: "72658005"
 
 Certains raccourcis clavier ne sont pas associés à des éléments de menu et il est donc impossible d'utiliser l'interface utilisateur [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] pour les découvrir. Le tableau suivant répertorie les raccourcis qui modifient une action, par exemple le redimensionnement d’un objet.
 
-|Pour|Faites cela|
+|Pour effectuer cette action|Action|
 |-----------------------|-------------|
-|Sélectionner temporairement l’outil **Sélection** tandis qu’un autre outil reste sélectionné (cela réduit le nombre de clics à effectuer sur un élément du panneau **Outils**, en faisant des allées et venues entre les outils **Sélection** et les autres)|Maintenez la touche CTRL enfoncée.|
+|Sélectionner temporairement l’outil **Sélection** tandis qu’un autre outil reste sélectionné (cela réduit le nombre de clics à effectuer sur un élément du panneau **Outils**, en faisant des allées et venues entre les outils **Sélection** et les autres)|Maintenez la touche Ctrl enfoncée.|
 |Déplacer les objets sélectionnés alors que l’outil **Sélection** est sélectionné|Appuyez sur les touches de direction.|
 |Effectuer un panoramique de la planche graphique|Maintenez la touche Espace enfoncée et faites glisser la planche graphique.|
 |Effectuer un zoom avant ou arrière sur la planche graphique|Faire tourner la roulette de la souris|

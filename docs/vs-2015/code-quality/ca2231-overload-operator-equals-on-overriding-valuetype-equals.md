@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: f01495e4238461d0b1dfe5a13a208b528df1581f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85540294"
 ---
 # <a name="ca2231-overload-operator-equals-on-overriding-valuetypeequals"></a>CA2231 : Surchargez l’opérateur égal (equals) en remplaçant ValueType.Equals
@@ -33,7 +33,7 @@ ms.locfileid: "85540294"
 |Category|Microsoft. usage|
 |Modification avec rupture|Sans rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Un type valeur se substitue à <xref:System.Object.Equals%2A?displayProperty=fullName> , mais n’implémente pas l’opérateur d’égalité.
 
 ## <a name="rule-description"></a>Description de la règle

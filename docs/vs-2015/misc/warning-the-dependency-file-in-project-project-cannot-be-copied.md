@@ -1,5 +1,5 @@
 ---
-title: 'AVERTISSEMENT : le fichier &#39;&#39; de dépendance du &#39;projet&#39; projet ne peut pas être copié dans le répertoire d’exécution, car il &#39;remplacerait le fichier de référence. &#39; | Microsoft Docs'
+title: 'AVERTISSEMENT : impossible de copier le fichier de &#39;de dépendance&#39; dans le projet &#39;Project&#39; dans le répertoire d’exécution, car il remplacerait le fichier de &#39;de référence. &#39; | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -12,13 +12,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a619168bd07fde5d27e5c3d87dc46f505cf5268d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672821"
 ---
-# <a name="warning-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-overwrite-the-reference-39file39"></a>AVERTISSEMENT : le fichier &#39;&#39; de dépendance du &#39;projet&#39; projet ne peut pas être copié dans le répertoire d’exécution, car il &#39;remplacerait le fichier de référence.&#39;
+# <a name="warning-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-overwrite-the-reference-39file39"></a>AVERTISSEMENT : impossible de copier le fichier de &#39;de dépendance&#39; dans le projet &#39;Project&#39; dans le répertoire d’exécution, car il remplacerait le fichier de référence &#39;. &#39;
 Un conflit existe entre des dépendances ; plusieurs fichiers d’assembly distincts ayant le même nom doivent être copiés dans le répertoire bin pour permettre à l’application de s’exécuter. Le répertoire d’exécution peut résoudre le conflit, car l’une des dépendances est une référence principale.
 
  Le fait de double-cliquer sur cet élément de liste de tâche vous dirige vers le nœud de la référence principale en conflit.

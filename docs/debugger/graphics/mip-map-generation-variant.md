@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 422a68f4e33733aa2874c639f0dcc799cd3ec795
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72734900"
 ---
 # <a name="mip-map-generation-variant"></a>Variante de génération mipmap
@@ -26,7 +26,7 @@ Pour les scènes 3D, les mipmaps sont recommandés quand la mémoire disponible 
 Si cette variante donne lieu à un gain de performances sensible, cela indique que vous utilisez des textures sans avoir activé les mipmaps et que donc vous ne tirez pas le meilleur parti du cache de texture.
 
 ## <a name="remarks"></a>Notes
-La génération de mipmaps est forcée à chaque appel à `ID3D11Device::CreateTexture2D`, qui est chargé de créer une texture source. Plus précisément, la génération de mappage MIP est forcée lorsque l’objet D3D11_TEXTURE2D_DESC passé dans `pDesc` décrit une ressource de nuanceur immuable ; C'est:
+La génération de mipmaps est forcée à chaque appel à `ID3D11Device::CreateTexture2D`, qui est chargé de créer une texture source. Plus précisément, la génération de mappage MIP est forcée lorsque l’objet D3D11_TEXTURE2D_DESC passé dans `pDesc` décrit une ressource de nuanceur immuable ; c’est-à-dire :
 
 - Seul l'indicateur D3D11_BIND_SHADER_RESOURCE du membre BindFlags est défini.
 
@@ -70,4 +70,4 @@ Rappelez-vous qu'au moment de fournir les données initiales à `CreateTexture2D
 > Si vous voulez fournir votre propre contenu de niveau MIP au lieu de le générer automatiquement, vous devez créer vos textures à l'aide d'un éditeur d'image qui prend en charge les textures mipmappées, puis charger le fichier et passer les niveaux MIP à `CreateTexture2D`.
 
 ## <a name="see-also"></a>Voir aussi
-[Variante de dimensions de la texture moitié/un quart](half-quarter-texture-dimensions-variant.md)
+[Variante de dimensions de texture demi-quart](half-quarter-texture-dimensions-variant.md)

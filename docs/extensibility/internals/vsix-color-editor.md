@@ -1,5 +1,5 @@
 ---
-title: VSIX Color Editor ( fr) Microsoft Docs
+title: Éditeur de couleurs VSIX | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 70879c5d-e0f0-4845-993c-2f4229869706
@@ -9,61 +9,61 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: aa3ed1f1a2a761a6602ac891eb78b5a5436abf92
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80704040"
 ---
 # <a name="vsix-color-editor"></a>Éditeur de couleur VSIX
-L’outil Visual Studio Extension Color Editor peut créer et modifier des couleurs personnalisées pour Visual Studio. L’outil peut également générer des clés de ressources thématiques afin que les couleurs puissent être utilisées dans le code. Cet outil est utile pour faire des couleurs pour une extension Visual Studio qui prend en charge le thème. Cet outil peut ouvrir .pkgdef et .xml fichiers. Les thèmes Visual Studio (.vstheme fichiers) peuvent être utilisés avec le Visual Studio Extension Color Editor en changeant l’extension de fichier à .xml. En outre, les fichiers .vstheme peuvent être importés dans un fichier .xml en cours.
+L’outil Éditeur de couleurs des extensions Visual Studio permet de créer et de modifier des couleurs personnalisées pour Visual Studio. L’outil peut également générer des clés de ressources de thème afin que les couleurs puissent être utilisées dans le code. Cet outil est utile pour créer des couleurs pour une extension Visual Studio qui les prend en charge. Cet outil peut ouvrir les fichiers. pkgdef et. Xml. Les thèmes Visual Studio (fichiers. vstheme) peuvent être utilisés avec l’éditeur de couleurs de l’extension Visual Studio en remplaçant l’extension de fichier par. Xml. En outre, les fichiers. vstheme peuvent être importés dans un fichier. XML actuel.
 
  ![Sélecteur de couleurs VSIX - Hero](../../extensibility/internals/media/vsix-color-editor-hero.png "Sélecteur de couleurs VSIX - Hero")
 
  **Fichiers de définition du package**
 
- Les fichiers de définition de paquet (.pkgdef) sont les fichiers qui définissent les thèmes. Les couleurs elles-mêmes sont stockées dans des fichiers de couleur thème .xml, qui sont compilés dans un fichier .pkgdef. Les fichiers .pkgdef sont déployés dans des endroits consultables Visual Studio, traités à l’heure de l’exécution et fusionnés pour définir des thèmes.
+ Les fichiers de définition de package (. pkgdef) sont les fichiers qui définissent des thèmes. Les couleurs elles-mêmes sont stockées dans des fichiers Theme Color. xml, qui sont compilés dans un fichier. pkgdef. Les fichiers. pkgdef sont déployés dans des emplacements Visual Studio pouvant faire l’objet d’une recherche, traités au moment de l’exécution et fusionnés pour définir des thèmes.
 
  **Jetons de couleur**
 
- Un jeton de couleur est composé de quatre éléments :
+ Un jeton de couleur est constitué de quatre éléments :
 
-- **Nom de catégorie:** Un regroupement logique pour un ensemble de couleurs. Utilisez un nom de catégorie existant s’il existe déjà des couleurs spécifiques à l’élément d’interface utilisateur souhaité, ou un groupe d’éléments d’interface utilisateur.
+- **Nom de la catégorie :** Regroupement logique pour un ensemble de couleurs. Utilisez un nom de catégorie existant s’il existe déjà des couleurs spécifiques à l’élément d’interface utilisateur souhaité, ou à un groupe d’éléments d’interface utilisateur.
 
-- **Nom symbolique:** Un nom descriptif pour les ensembles de jetons de couleur et de jeton. Les ensembles comprennent des noms de jetons de fond et de premier plan (texte) ainsi que tous leurs états, et ceux-ci doivent être nommés de sorte qu’il soit facile d’identifier les paires et les états auxquels ils s’appliquent.
+- **Nom du jeton :** Nom descriptif du jeton de couleur et des ensembles de jetons. Les jeux incluent les noms des jetons d’arrière-plan et de premier plan (texte), ainsi que tous leurs États, et ils doivent être nommés afin qu’il soit facile d’identifier les paires et les États auxquels elles s’appliquent.
 
-- **Valeurs de couleur (ou teintes) :** Nécessaire pour chaque thème coloré. Toujours créer des valeurs de couleur de fond et de texte par paires. Les couleurs sont appariées pour le fond/au premier plan de sorte que le texte (au premier plan) couleur est toujours lisible sur la couleur de fond sur laquelle il est dessiné. Ces couleurs sont liées et seront utilisées ensemble dans l’interface utilisateur. Si l’arrière-plan n’est pas destiné à une utilisation avec le texte, ne définissez pas une couleur de premier plan.
+- **Valeurs de couleur (ou teintes) :** Nécessaire pour chaque thème de couleur. Créez toujours des valeurs de couleur d’arrière-plan et de texte par paires. Les couleurs sont jumelées pour l’arrière-plan/premier plan, de sorte que la couleur de texte (premier plan) est toujours lisible par rapport à la couleur d’arrière-plan sur laquelle elle est dessinée. Ces couleurs sont liées et seront utilisées ensemble dans l’interface utilisateur. Si l’arrière-plan n’est pas destiné à être utilisé avec du texte, ne définissez pas de couleur de premier plan.
 
-- **Nom de couleur du système:** Pour une utilisation dans les écrans à contraste élevé.
+- **Nom de la couleur système :** À utiliser dans les affichages à contraste élevé.
 
 ## <a name="how-to-use-the-tool"></a>Comment utiliser l’outil
- Dans la mesure du possible, et le cas échéant, les couleurs existantes visual Studio devraient être réutilisées au lieu d’en faire de nouvelles. Cependant, pour les cas où aucune couleur appropriée n’est définie, les couleurs personnalisées doivent être créées pour garder une extension de thème compatible.
+ Autant que possible et, le cas échéant, les couleurs de Visual Studio existantes doivent être réutilisées au lieu d’en créer d’autres. Toutefois, dans les cas où aucune couleur appropriée n’est définie, des couleurs personnalisées doivent être créées pour garantir la compatibilité des extensions.
 
  **Création de nouveaux jetons de couleur**
 
- Pour créer des couleurs personnalisées à l’aide de l’éditeur visual Studio Extension Color Editor, suivez ces étapes :
+ Pour créer des couleurs personnalisées à l’aide de l’éditeur de couleurs de l’extension Visual Studio, procédez comme suit :
 
-1. Déterminez la catégorie et les noms symboliques pour les nouveaux jetons de couleur.
+1. Déterminez les noms de catégorie et de jeton pour les nouveaux jetons de couleur.
 
-2. Choisissez les teintes que l’élément d’interface utilisateur utilisera pour chaque thème et la couleur du système pour High Contrast.
+2. Choisissez les teintes que l’élément d’interface utilisateur utilisera pour chaque thème et la couleur système pour contraste élevé.
 
 3. Utilisez l’éditeur de couleurs pour créer de nouveaux jetons de couleur.
 
 4. Utilisez les couleurs dans une extension Visual Studio.
 
-5. Testez les changements dans Visual Studio.
+5. Testez les modifications dans Visual Studio.
 
-   **Étape 1 : Déterminez la catégorie et les noms symboliques pour les nouveaux jetons de couleur.**
+   **Étape 1 : déterminer les noms de catégorie et de jeton pour les nouveaux jetons de couleur.**
 
-   Le système de nommage préféré d’un VSColor est **[catégorie] [type d’assurance-chômage] [État]**. N’utilisez pas le mot "couleur" dans les noms VSColor, car il est redondant.
+   Le schéma d’attribution de noms préféré pour un VSColor est **[catégorie] [type d’interface utilisateur] [État]**. N’utilisez pas le mot « Color » dans les noms VSColor, car il est redondant.
 
-   Les noms de catégorie fournissent des regroupements logiques et doivent être définis aussi étroitement que possible. Par exemple, le nom d’une fenêtre d’outil unique peut être un nom de catégorie, mais le nom de toute une unité d’affaires ou d’une équipe de projet ne l’est pas. Regrouper les entrées en catégories permet d’éviter la confusion entre les couleurs du même nom.
+   Les noms de catégorie fournissent des regroupements logiques et doivent être définis de la manière la plus étroite possible. Par exemple, le nom d’une seule fenêtre outil peut être un nom de catégorie, mais le nom d’une unité commerciale ou d’une équipe de projet n’est pas. Le regroupement des entrées en catégories permet d’éviter toute confusion entre les couleurs portant le même nom.
 
-   Un nom symbolique doit indiquer clairement le type d’élément et les situations, ou « état », pour lesquels la couleur sera appliquée. Par exemple, un conseil de données active **[type d’interface utilisateur]** pourrait être nommé "**DataTip**" et le **[État]** pourrait être nommé "**Actif**", ce qui donne un nom couleur de "**DataTipActive**". Étant donné que les conseils de données ont du texte, une couleur de premier plan et une couleur de fond doivent être définies. En utilisant un fond /avant-plan d’appariement, l’éditeur de couleur va automatiquement créer les couleurs "**DataTipActive**" pour l’arrière-plan et "**DataTipActiveText**" pour le premier plan.
+   Un nom de jeton doit indiquer clairement le type d’élément et les situations, ou « État », auquel la couleur sera appliquée. Par exemple, un **[type d’interface utilisateur]** d’une info-bulle active peut être nommée «**DataTip**» et le **[État]** peut être nommé «**actif**», ce qui donne le nom de couleur «**DataTipActive**». Étant donné que les info-bulles de données contiennent du texte, vous devez définir un premier plan et une couleur d’arrière-plan. En utilisant un jumelage d’arrière-plan/premier plan, l’éditeur de couleurs crée automatiquement les couleurs «**DataTipActive**» pour l’arrière-plan et «**DataTipActiveText**» pour le premier plan.
 
-   Si le morceau de l’interface utilisateur n’a qu’un seul état, la partie **[de l’État]** du nom peut être omise. Par exemple, si une boîte de recherche a une bordure et qu’il n’y a pas de changement d’état qui affecterait la couleur de la frontière, alors le nom du jeton couleur de la frontière peut simplement être appelé «**SearchBoxBorder**».
+   Si la partie de l’interface utilisateur n’a qu’un seul État, la partie **[État]** du nom peut être omise. Par exemple, si une zone de recherche a une bordure et qu’aucun changement d’État n’affecte la couleur de la bordure, le nom du jeton de couleur de la bordure peut simplement être appelé «**SearchBoxBorder**».
 
-   Voici quelques noms d’État courants :
+   Certains noms d’État courants sont les suivants :
 
 - Actif
 
@@ -71,75 +71,75 @@ L’outil Visual Studio Extension Color Editor peut créer et modifier des coule
 
 - MouseOver
 
-- Mousedown
+- MouseDown
 
-- Volumes sélectionnés
+- Sélectionné
 
 - Avec focus
 
-  Exemples de quelques noms symboliques pour les parties d’un contrôle d’élément de liste :
+  Exemples de quelques noms de jeton pour les parties d’un contrôle d’élément de liste :
 
 - ListItem
 
-- ListItemBorder (listitemBorder)
+- ListItemBorder
 
-- ListItemMouseOver (en)
+- ListItemMouseOver
 
 - ListItemMouseOverBorder
 
-- ListItemSelected ListItemSelected ListItemSelected ListIte
+- ListItemSelected
 
-- ListeItemSelectedBorder
+- ListItemSelectedBorder
 
-- ListItemDisabled ListItemDisabled
+- ListItemDisabled
 
-- ListeItemDisabledBorder
+- ListItemDisabledBorder
 
-  **Étape 2 : Choisissez les teintes que l’élément d’interface utilisateur utilisera pour chaque thème et la couleur du système pour High Contrast.**
+  **Étape 2 : choisissez les teintes que l’élément d’interface utilisateur utilisera pour chaque thème et la couleur système pour contraste élevé.**
 
-  Lors du choix des couleurs personnalisées pour l’interface utilisateur, sélectionnez un élément d’interface utilisateur existant similaire, et utilisez ses couleurs comme base. Les couleurs pour les éléments d’interface utilisateur dans la boîte ont subi l’examen et les tests, de sorte qu’ils auront l’air approprié et se comportent correctement dans tous les thèmes.
+  Lorsque vous choisissez des couleurs personnalisées pour l’interface utilisateur, sélectionnez un élément d’interface utilisateur existant similaire et utilisez ses couleurs comme base. Les couleurs des éléments d’interface utilisateur intégrés ont été examinées et testées, de sorte qu’elles s’affichent correctement et se comportent correctement dans tous les thèmes.
 
-  **Étape 3 : Utilisez l’éditeur de couleurs pour créer de nouveaux jetons de couleur.**
+  **Étape 3 : utilisez l’éditeur de couleurs pour créer de nouveaux jetons de couleur.**
 
-  Lancez l’éditeur de couleurs et ouvrez ou créez un nouveau fichier personnalisé couleurs thème .xml. Sélectionnez **Modifier > Nouvelle Couleur** dans le menu. Cela ouvre un dialogue pour spécifier la catégorie et un ou plusieurs noms pour les entrées de couleur dans cette catégorie:
+  Lancez l’éditeur de couleurs et ouvrez ou créez un nouveau fichier de thème personnalisé Colors. Xml. Sélectionnez **modifier > nouvelle couleur** dans le menu. Cela ouvre une boîte de dialogue permettant de spécifier la catégorie et un ou plusieurs noms pour les entrées de couleur de cette catégorie :
 
   ![Sélecteur de couleurs VSIX - Nouvelle couleur](../../extensibility/internals/media/vsix-color-editor-new-color.png "Sélecteur de couleurs VSIX - Nouvelle couleur")
 
-  Sélectionnez une catégorie existante ou sélectionnez **une nouvelle catégorie** pour créer une nouvelle catégorie. Un autre dialogue s’ouvrira, créant un nouveau nom de catégorie :
+  Sélectionnez une catégorie existante ou sélectionnez **nouvelle catégorie** pour créer une nouvelle catégorie. Une autre boîte de dialogue s’ouvre et crée un nom de catégorie :
 
   ![Sélecteur de couleurs VSIX - Nouvelle catégorie](../../extensibility/internals/media/vsix-color-editor-new-category.png "Sélecteur de couleurs VSIX - Nouvelle catégorie")
 
-  La nouvelle catégorie sera ensuite disponible dans le menu drop-down de la catégorie **Nouvelle Couleur.** Après avoir choisi une catégorie, entrez un nom par ligne pour chaque nouveau jeton de couleur et sélectionnez « Créer » une fois terminé :
+  La nouvelle catégorie devient alors disponible dans le menu déroulant nouvelle catégorie de **couleurs** . Après avoir choisi une catégorie, entrez un nom par ligne pour chaque nouveau jeton de couleur, puis sélectionnez « créer » lorsque vous avez terminé :
 
   ![Sélecteur de couleurs VSIX - Remplissage par une nouvelle couleur](../../extensibility/internals/media/vsix-color-editor-new-color-filled.png "Sélecteur de couleurs VSIX - Remplissage par une nouvelle couleur")
 
-  Les valeurs de couleur sont affichées dans les paires de fond/premier plan, avec "Aucun" indiquant que la couleur n’a pas été définie. Remarque : si une couleur n’a pas de couleur de texte/paire de couleurs de fond, alors seul l’arrière-plan doit être défini.
+  Les valeurs de couleur sont indiquées en paires d’arrière-plan/premier plan, avec la valeur « None » indiquant que la couleur n’a pas été définie. Remarque : si une couleur n’a pas de paire couleur de texte/couleur d’arrière-plan, seul l’arrière-plan doit être défini.
 
   ![Sélecteur de couleurs VSIX - Valeurs de couleur](../../extensibility/internals/media/vsix-color-editor-color-values.png "Sélecteur de couleurs VSIX - Valeurs de couleur")
 
-  Pour modifier un jeton de couleur, sélectionnez une entrée de couleur pour le thème (colonne) de ce jeton. Ajoutez la valeur de couleur en tapant une valeur de couleur hex dans le format ARGB à 8 chiffres, en entrant un nom de couleur du système dans la cellule, ou en utilisant le menu de décrochage pour sélectionner la couleur désirée via un ensemble de curseurs de couleur ou une liste de couleurs du système.
+  Pour modifier un jeton de couleur, sélectionnez une entrée de couleur pour le thème (colonne) de ce jeton. Ajoutez la valeur de couleur en tapant une valeur de couleur hexadécimale au format ARVB à 8 chiffres, en entrant un nom de couleur système dans la cellule ou en utilisant le menu déroulant pour sélectionner la couleur souhaitée à l’aide d’un jeu de curseurs de couleur ou d’une liste de couleurs système.
 
   ![Sélecteur de couleurs VSIX - Modifier une couleur](../../extensibility/internals/media/vsix-color-editor-edit-color.png "Sélecteur de couleurs VSIX - Modifier une couleur")
 
   ![Sélecteur de couleurs VSIX - Arrière-plan](../../extensibility/internals/media/vsix-color-editor-background.png "Sélecteur de couleurs VSIX - Arrière-plan")
 
-  Pour les composants qui n’ont pas besoin d’afficher du texte, entrez une seule valeur de couleur : la couleur de fond. Sinon, entrez les valeurs pour la couleur de fond et de texte, séparée par une barre oblique vers l’avant.
+  Pour les composants qui n’ont pas besoin d’afficher du texte, entrez une seule valeur de couleur : la couleur d’arrière-plan. Sinon, entrez des valeurs pour la couleur de l’arrière-plan et du texte, séparées par une barre oblique.
 
-  Lors de l’entrée des valeurs pour High Contrast, entrez les noms de couleur valides du système Windows. N’entrez pas les valeurs ARGB codées en dur. Vous pouvez consulter une liste de noms de couleur système valides en sélectionnant "Background: System" ou "Foreground: System" à partir des menus de baisse de la valeur des couleurs. Lors de la création d’éléments qui ont des composants de texte, utilisez la paire de couleur de fond/système de texte correcte ou le texte peut être illisible.
+  Lorsque vous entrez des valeurs pour contraste élevé, entrez des noms de couleurs système Windows valides. N’entrez pas de valeurs ARVB codées en dur. Vous pouvez afficher une liste de noms de couleurs système valides en sélectionnant « arrière-plan : système » ou « premier plan : système » dans les menus déroulants de la valeur de couleur. Lorsque vous créez des éléments qui ont des composants de texte, utilisez la paire de couleurs du système d’arrière-plan/texte correcte, sinon le texte peut être illisible.
 
-  Lorsque vous avez terminé la création, le réglage et l’édition des jetons de couleur, enregistrez-les dans le format .xml ou .pkgdef souhaité. Les jetons de couleur sans arrière-plan ni un ensemble de premier plan seront enregistrés comme des couleurs vides en format .xml, mais jetés en format .pkgdef. Un dialogue vous avertira de la perte de couleur potentielle si vous essayez d’enregistrer les couleurs vides à un fichier .pkgdef.
+  Lorsque vous avez fini de créer, de définir et de modifier les jetons de couleur, enregistrez-les au format. XML ou. pkgdef souhaité. Les jetons de couleur qui ne sont ni un arrière-plan ni un jeu de premier plan sont enregistrés sous forme de couleurs vides au format. xml, mais ignorés au format. pkgdef. Une boîte de dialogue vous avertit de la perte potentielle de couleurs si vous tentez d’enregistrer des couleurs vides dans un fichier. pkgdef.
 
-  **Étape 4 : Utilisez les couleurs dans une extension Visual Studio.**
+  **Étape 4 : utiliser les couleurs dans une extension Visual Studio.**
 
-  Après avoir défini les nouveaux jetons de couleur, inclure le .pkgdef dans le fichier du projet avec "Build Action" réglé à "Contenu," et "Inclure dans VSIX" mis à "Vrai."
+  Après avoir défini les nouveaux jetons de couleur, incluez le fichier. pkgdef dans le fichier projet avec « action de génération » défini sur « contenu » et « inclure dans VSIX » défini sur « true ».
 
   ![Sélecteur de couleurs VSIX - pkgdef](../../extensibility/internals/media/vsix-color-editor-pkgdef.png "Sélecteur de couleurs VSIX - pkgdef")
 
-  Dans l’éditeur visual Studio Extension Color Editor, choisissez File > View Resource Code pour afficher le code qui est utilisé pour accéder aux couleurs personnalisées dans l’interface utilisateur basée sur le WPF.
+  Dans l’éditeur de couleurs des extensions Visual Studio, choisissez fichier > afficher le code de la ressource pour afficher le code utilisé pour accéder aux couleurs personnalisées dans l’interface utilisateur WPF.
 
   ![Sélecteur de couleurs VSIX - Visionneuse du code de la ressource](../../extensibility/internals/media/vsix-color-editor-resource-code-viewer.png "Sélecteur de couleurs VSIX - Visionneuse du code de la ressource")
 
-  Inclure ce code dans une classe statique dans le projet. Une référence à **Microsoft.VisualStudio.Shell.\< VSVersion>.0.dll** doit être ajouté au projet pour utiliser le type **ThemeResourceKey.**
+  Incluez ce code dans une classe statique du projet. Une référence à **Microsoft. VisualStudio. Shell. \<VSVersion>.0.dll** doit être ajoutée au projet pour utiliser le type **ThemeResourceKey** .
 
 ```csharp
 namespace MyCustomColors
@@ -163,7 +163,7 @@ namespace MyCustomColors
 }
 ```
 
- Cela permet d’accéder aux couleurs dans le code XAML et permet à l’interface utilisateur de répondre aux changements de thème.
+ Cela permet l’accès aux couleurs dans le code XAML et permet à l’interface utilisateur de répondre aux modifications de thème.
 
 ```xaml
 <UserControl x:Class="NewTestProject.TestPackageControl" Name="MyToolWindow"
@@ -179,21 +179,21 @@ namespace MyCustomColors
 </UserControl>
 ```
 
- **Étape 5 : Testez les changements dans Visual Studio.**
+ **Étape 5 : tester les modifications dans Visual Studio.**
 
- L’éditeur de couleur peut temporairement appliquer des jetons de couleur aux instances en cours d’exécution de Visual Studio pour voir les changements en direct aux couleurs sans reconstruire le paquet d’extension. Pour ce faire, cliquez sur le bouton " Appliquer ce thème aux fenêtres Visual Studio en cours d’exécution" situé sur l’en-tête de chaque colonne thème. Ce thème temporaire disparaîtra lorsque l’éditeur de couleurs VSIX sera fermé.
+ L’éditeur de couleurs peut appliquer temporairement des jetons de couleur aux instances en cours d’exécution de Visual Studio pour afficher les modifications dynamiques apportées aux couleurs sans reconstruire le package d’extension. Pour ce faire, cliquez sur le bouton « appliquer ce thème à l’exécution de Visual Studio Windows » situé dans l’en-tête de chaque colonne de thème. Ce thème temporaire disparaît lorsque l’éditeur de couleurs VSIX est fermé.
 
  ![Sélecteur de couleurs VSIX - Appliquer](../../extensibility/internals/media/vsix-color-editor-apply.png "Sélecteur de couleurs VSIX - Appliquer")
 
- Pour rendre les modifications permanentes, reconstruire et redéployer l’extension Visual Studio après avoir ajouté les nouvelles couleurs au fichier .pkgdef et l’écriture du code qui utilisera ces couleurs. La reconstruction de l’extension Visual Studio fusionnera les valeurs de registre des nouvelles couleurs dans le reste des thèmes. Ensuite, relancez Visual Studio, regardez l’interface utilisateur, et vérifiez que les nouvelles couleurs apparaissent comme prévu.
+ Pour rendre les modifications permanentes, régénérez et redéployez l’extension Visual Studio après avoir ajouté les nouvelles couleurs au fichier. pkgdef et écrit le code qui utilisera ces couleurs. La reconstruction de l’extension Visual Studio permet de fusionner les valeurs de Registre pour les nouvelles couleurs dans le reste des thèmes. Ensuite, redémarrez Visual Studio, affichez l’interface utilisateur et vérifiez que les nouvelles couleurs s’affichent comme prévu.
 
 ## <a name="notes"></a>Notes
- Cet outil est destiné à être utilisé pour créer des couleurs personnalisées pour les thèmes préexistants Visual Studio, ou pour l’édition des couleurs d’un thème Visual Studio personnalisé. Pour créer des thèmes Visual Studio personnalisés complets, téléchargez [l’extension Visual Studio Color Theme Editor](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.VisualStudio2015ColorThemeEditor) de la Visual Studio Extensions Gallery.
+ Cet outil est destiné à la création de couleurs personnalisées pour les thèmes Visual Studio préexistants, ou pour la modification des couleurs d’un thème Visual Studio personnalisé. Pour créer des thèmes Visual Studio personnalisés complets, téléchargez l’extension de l' [éditeur de thème de couleurs Visual Studio](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.VisualStudio2015ColorThemeEditor) à partir de la Galerie d’extensions Visual Studio.
 
 ## <a name="sample-output"></a>Exemple de sortie
  **Sortie de couleur XML**
 
- Le fichier .xml généré par l’outil sera similaire à ceci :
+ Le fichier. XML généré par l’outil est semblable à ce qui suit :
 
 ```xml
 <Themes>
@@ -222,9 +222,9 @@ namespace MyCustomColors
 
 ```
 
- **Sortie couleur PKGDEF**
+ **Sortie de la couleur de l’PKGDEF**
 
- Le fichier .pkgdef généré par l’outil sera similaire à ceci :
+ Le fichier. pkgdef généré par l’outil est semblable à ce qui suit :
 
 ```
 [$RootKey$\Themes\{de3dbbcd-f642-433c-8353-8f1df4370aba}\CategoryName]
@@ -238,9 +238,9 @@ namespace MyCustomColors
 
 ```
 
- **Emballage de clés de ressources CMD**
+ **Wrapper de clés de ressources C#**
 
- Les clés de ressources en couleur générées par l’outil seront similaires à ceci :
+ Les clés de ressource de couleur générées par l’outil sont similaires à ceci :
 
 ```csharp
 namespace MyNamespace
@@ -267,9 +267,9 @@ namespace MyNamespace
 }
 ```
 
- **Emballage de dictionnaire de ressource de WPF**
+ **Wrapper de dictionnaire de ressources WPF**
 
- Les touches **de couleur ResourceDictionary** générées par l’outil seront similaires à ceci :
+ Les clés de **ResourceDictionary** de couleur générées par l’outil sont similaires à ce qui suit :
 
 ```xaml
 <ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"

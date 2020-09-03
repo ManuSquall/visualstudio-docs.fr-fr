@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: 801ea23430d13dbefd9498c57b07881235275961
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85285190"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Déboguer une application JavaScript ou TypeScript dans Visual Studio
@@ -58,7 +58,7 @@ Si votre source est minimisée ou créée par un transpiler comme TypeScript ou 
 
 Pour obtenir de l’aide pour générer des mappages de source, consultez [générer des mappages de sources pour le débogage](#generate_source_maps).
 
-### <a name="prepare-the-browser-for-debugging"></a><a name="prepare_the_browser_for_debugging"></a>Préparer le navigateur pour le débogage
+### <a name="prepare-the-browser-for-debugging"></a><a name="prepare_the_browser_for_debugging"></a> Préparer le navigateur pour le débogage
 
 ::: moniker range=">=vs-2019"
 Pour ce scénario, utilisez Microsoft Edge (chrome), actuellement nommé **Microsoft Edge Beta** dans l’IDE, ou chrome.
@@ -162,7 +162,7 @@ Pour attacher le débogueur de Visual Studio et atteindre des points d’arrêt 
 
    * Si vous devez vous arrêter dans du code dans un fichier JavaScript compilé (par exemple, *app-bundle.js*) et que vous ne pouvez pas le faire, supprimez le fichier de mappage source, *filename.js. map*.
 
-### <a name="troubleshooting-breakpoints-and-source-maps"></a><a name="troubleshooting_source_maps"></a>Dépannage des points d’arrêt et des mappages de sources
+### <a name="troubleshooting-breakpoints-and-source-maps"></a><a name="troubleshooting_source_maps"></a> Dépannage des points d’arrêt et des mappages de sources
 
 Si vous devez vous arrêter dans du code dans un fichier source de machine à écrire ou JSX et que vous ne pouvez pas le faire, utilisez **attacher au processus** comme décrit dans les étapes précédentes pour attacher le débogueur. Assurez-vous que votre environnement est correctement configuré :
 
@@ -210,7 +210,7 @@ Il s’agit d’un paramètre de développement uniquement pour activer le débo
 
 Pour les scénarios complexes, les outils de navigation (**F12**) fonctionnent parfois mieux pour le débogage, car ils ne nécessitent pas de modifications des préfixes personnalisés.
 
-### <a name="configure-source-maps-using-a-tsconfigjson-file"></a><a name="configure_source_maps"></a>Configurer des mappages de sources à l’aide d’un tsconfig.jssur un fichier
+### <a name="configure-source-maps-using-a-tsconfigjson-file"></a><a name="configure_source_maps"></a> Configurer des mappages de sources à l’aide d’un tsconfig.jssur un fichier
 
 Si vous ajoutez un fichier *tsconfig.json* à votre projet, Visual Studio traite la racine du répertoire comme un projet TypeScript. Pour ajouter le fichier, cliquez avec le bouton droit sur votre projet dans Explorateur de solutions, puis choisissez **ajouter > nouvel élément > fichier de configuration d’une machine à écrire JSON**. Un fichier *tsconfig.json* comme ce qui suit est ajouté à votre projet.
 

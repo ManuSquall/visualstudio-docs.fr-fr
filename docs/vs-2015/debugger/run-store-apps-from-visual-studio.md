@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2ac3e8ec68553159972e88538d8a4bc1ec49ce50
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85540307"
 ---
 # <a name="run-store-apps-from-visual-studio"></a>Exécuter des applications du Windows Store à partir de Visual Studio
@@ -28,9 +28,9 @@ Les applications Windows Store s'exécutent sur une grande variété d'appareils
 
  ![Démarrez le débogage et sélectionnez la cible](../debugger/media/vsrun-dropdownlist.png "VSRUN_DropDownList")
 
-## <a name="in-this-section"></a>Dans cette section
+## <a name="in-this-section"></a>Contenu de cette section
 
-|Intitulé|Description|
+|Titre|Description|
 |-|-|
 |[Exécuter des applications du Windows Store sur un ordinateur local](../debugger/run-windows-store-apps-on-the-local-machine.md)|Exécuter votre application Windows Store sur l'appareil Visual Studio.|
 |[Exécuter des applications du Windows Store dans le simulateur](../debugger/run-windows-store-apps-in-the-simulator.md)|Exécuter votre application Windows Store dans une fenêtre du bureau qui simule les fonctionnalités [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] telles que l'interaction tactile et l'orientation.|

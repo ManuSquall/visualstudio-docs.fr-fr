@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 87ed8f7a291c95e500196f511c6fec0f38cef68e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539410"
 ---
 # <a name="ca1056-uri-properties-should-not-be-strings"></a>CA1056 : Les propriétés URI ne doivent pas être des chaînes
@@ -32,7 +32,7 @@ ms.locfileid: "85539410"
 |Category|Microsoft. Design|
 |Modification avec rupture|Rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Un type déclare une propriété de type chaîne dont le nom contient « URI », « Uri », « URN », « URN », « URL » ou « URL ».
 
 ## <a name="rule-description"></a>Description de la règle

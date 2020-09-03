@@ -1,5 +1,5 @@
 ---
-title: Source Control VSPackage Design Elements (fr) Microsoft Docs
+title: Éléments de conception VSPackage de contrôle de code source | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,29 +11,29 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b5e94829f781c058d9b0ea56cdec6c03c71ffe0c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80705007"
 ---
 # <a name="source-control-vspackage-design-elements"></a>Éléments de conception de VSPackage de contrôle de source
-Les sujets de cette section décrivent la structure que le contrôle source VSPackage doit mettre en œuvre pour une intégration profonde. Il répertorie également les interfaces et les services que le contrôle source VSPackage peut [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] implémenter, et les interfaces et les services que le contrôle source VSPackage peut utiliser à partir d’autres composants pour prendre en charge son modèle de contrôle source et la fonctionnalité.
+Les rubriques de cette section décrivent la structure que le VSPackage de contrôle de code source doit implémenter pour une intégration profonde. Il répertorie également les interfaces et les services que le VSPackage de contrôle de code source peut implémenter, ainsi que les interfaces et les services que le VSPackage de contrôle de code source peut utiliser à partir d’autres [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] composants pour prendre en charge son modèle et ses fonctionnalités de contrôle de code source.
 
 ## <a name="in-this-section"></a>Dans cette section
 - [Structure VSPackage](../../extensibility/internals/vspackage-structure-source-control-vspackage.md)
 
- Définit la structure du contrôle source VSPackage.
+ Définit la structure du VSPackage de contrôle de code source.
 
 - [Interfaces et services associés](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md)
 
- Répertorie les interfaces et services liés au paquet de contrôle des sources.
+ Répertorie les services et interfaces liés au package de contrôle de code source.
 
 - [Services fournis](../../extensibility/internals/services-provided-source-control-vspackage.md)
 
- Décrit le service de contrôle source fourni par le contrôle source VSPackage.
+ Décrit le service de contrôle de code source fourni par le VSPackage de contrôle de code source.
 
 ## <a name="related-sections"></a>Sections connexes
 - [Création d’un VSPackage de contrôle de code source](../../extensibility/internals/creating-a-source-control-vspackage.md)
 
- Discute de la façon de créer un contrôle source VSPackage qui non [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] seulement fournit la fonctionnalité de contrôle des sources, mais peut être utilisé pour personnaliser l’interface utilisateur de contrôle source.
+ Explique comment créer un VSPackage de contrôle de code source qui fournit non seulement une fonctionnalité de contrôle de code source, mais qui peut être utilisé pour personnaliser l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interface utilisateur du contrôle de code source.

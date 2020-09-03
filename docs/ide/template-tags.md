@@ -14,10 +14,10 @@ helpviewer_keywords:
 - template tagging, updating
 - template tags, updating
 ms.openlocfilehash: 37a1965712920420bdc4d784a003dbfbd2f2167a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85285216"
 ---
 # <a name="add-tags-to-project-templates"></a>Ajouter des balises à des modèles de projet
@@ -44,7 +44,7 @@ Vous pouvez ajouter ou modifier des balises dans le fichier XML *.vstemplate* de
 * [Mettez à jour votre modèle de projet existant](how-to-update-existing-templates.md).
 * [Créez un nouveau modèle de projet VSIX](../extensibility/getting-started-with-the-vsix-project-template.md).
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Syntaxe
 
 ```xml
 <LanguageTag> Language Name </LanguageTag>

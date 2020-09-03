@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::DetachDebugger-V7 ( Microsoft Docs
+title: IDebugProgramNode2 ::D etachDebugger_V7 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,16 +16,16 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 925f1b07662ece35d21f9b647681bc898428c4c7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722107"
 ---
 # <a name="idebugprogramnode2detachdebugger_v7"></a>IDebugProgramNode2::DetachDebugger_V7
 
 > [!Note]
-> Déconseillée. NE PAS UTILISER.
+> Déconseillé. N’UTILISEZ PAS.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,14 +41,14 @@ int DetachDebugger_V7 ();
 
 ## <a name="return-value"></a>Valeur de retour
 
-Une mise en `E_NOTIMPL`œuvre doit toujours revenir .
+Une implémentation doit toujours retourner `E_NOTIMPL` .
 
 ## <a name="remarks"></a>Notes
 
 > [!WARNING]
-> A partir de Visual Studio 2005, cette méthode `E_NOTIMPL`n’est plus utilisée et devrait toujours revenir .
+> À compter de Visual Studio 2005, cette méthode n’est plus utilisée et doit toujours retourner `E_NOTIMPL` .
 
-Cette méthode est appelée lorsque le débbuggeur quitte de façon inattendue. Lorsque cette méthode est appelée, le DE doit reprendre le programme comme si l’utilisateur s’en était détaché. Il ne faut plus envoyer d’événements de débogé. Le programme devrait être dans un état où il est joignable d’un autre cas du débbuggeur.
+Cette méthode est appelée lorsque le débogueur se ferme de manière inattendue. Lorsque cette méthode est appelée, le DE doit reprendre le programme comme si l’utilisateur l’avait détaché. Aucun autre événement de débogage ne doit être envoyé. Le programme doit être dans un État où il peut être attaché à partir d’une autre instance du débogueur.
 
 ## <a name="see-also"></a>Voir aussi
 
