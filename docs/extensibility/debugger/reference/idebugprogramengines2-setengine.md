@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramEngines2::SetEngine - France Microsoft Docs
+title: 'IDebugProgramEngines2 :: SetEngine | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 226f5bbf11627a3171641806a673eaa15b614572
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722404"
 ---
 # <a name="idebugprogramengines2setengine"></a>IDebugProgramEngines2::SetEngine
-Indique au programme ou au nœud de programme quel moteur débogé (DE) à utiliser pour déboiffer ce programme.
+Indique au programme ou au nœud de programme le moteur de débogage à utiliser pour déboguer ce programme.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,9 +41,9 @@ int SetEngine( 
 
 ## <a name="parameters"></a>Paramètres
 `guidEngine`\
-[dans] Le GUID du DE.
+dans GUID du DE.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

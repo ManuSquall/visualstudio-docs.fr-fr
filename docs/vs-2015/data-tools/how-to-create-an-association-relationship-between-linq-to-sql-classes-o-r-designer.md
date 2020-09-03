@@ -10,13 +10,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9c2f6f6f65410336eacf72967c8360a56e8fa5ca
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72609998"
 ---
-# <a name="how-to-create-an-association-relationship-between-linq-to-sql-classes-or-designer"></a>Comment : créer une association (relation) entre des classes LINQ to SQL (Concepteur O/R)
+# <a name="how-to-create-an-association-relationship-between-linq-to-sql-classes-or-designer"></a>Guide pratique pour créer une association (relation) entre des classes LINQ to SQL (Concepteur O/R)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Les associations entre classes d'entité dans [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] sont analogues aux relations entre les tables dans une base de données. Vous pouvez créer des associations entre des classes d’entité en utilisant la boîte de dialogue **Éditeur d’associations**.
@@ -24,11 +24,11 @@ Les associations entre classes d'entité dans [!INCLUDE[vbtecdlinq](../includes/
  Vous devez sélectionner une classe parente et une classe enfant quand vous utilisez la boîte de dialogue **Éditeur d’associations** pour créer une association. La classe parente est la classe d'entité qui contient la clé primaire ; la classe enfant est la classe d'entité qui contient la clé étrangère. Par exemple, si les classes d'entité ont été créées pour mapper aux tables Customers et Orders de Northwind, la classe Customer constitue la classe parente et la classe Order, la classe enfant.
 
 > [!NOTE]
-> Lorsque vous faites glisser des tables à partir de **Explorateur de serveurs** /**explorateur de base de données** sur le [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]), les associations sont créées automatiquement en fonction des relations de clé étrangère existantes dans la base de données.
+> Lorsque vous faites glisser des tables à partir de **Explorateur de serveurs** / **Explorateur de base de données** vers le [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ( [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] ), les associations sont créées automatiquement en fonction des relations de clé étrangère existantes dans la base de données.
 
  Une fois que vous avez créé une association, lorsque vous sélectionnez l’Association dans le Concepteur O/R, certaines propriétés peuvent être configurées dans la fenêtre **Propriétés** . (L’Association est la ligne entre les classes connexes.) Le tableau suivant fournit des descriptions pour les propriétés d’une association.
 
-|Property|Description|
+|Propriété|Description|
 |--------------|-----------------|
 |**Cardinalité**|Détermine s'il s'agit d'une l'association est un-à-plusieurs ou un-à-un.|
 |**Propriété enfant**|Spécifie s’il faut créer, dans le parent, une propriété qui est une collection ou une référence aux enregistrements enfants sur le côté clé étrangère de l’association. Par exemple, dans l’association entre Customer et Order, si la **propriété Child** a la valeur **true**, une propriété nommée Orders est créée sur la classe parente.|

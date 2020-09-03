@@ -10,13 +10,13 @@ ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
 ms.openlocfilehash: 57841baaf147c2aae02ac89a8401c46d3bd64ca3
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72911678"
 ---
-# <a name="set-up-named-authentication-credentials"></a>Configurer des informations d’identification d’authentification nommées
+# <a name="set-up-named-authentication-credentials"></a>Configurer les informations d’authentification nommées
 
 Pour publier une application sur Azure ou pour surveiller un service cloud existant, Visual Studio requiert des informations d'identification pour authentifier les demandes auprès d'Azure, à savoir votre ID d'abonnement Azure et un certificat X.509 v3 valide avec une clé d'au moins 2048 bits. Vous pouvez fournir ces informations d'identification à l’aide de l’une des méthodes suivantes :
 
@@ -39,5 +39,5 @@ Si vous souhaitez créer vous-même un certificat, vous pouvez consulter les ins
 
 - [Vue d’ensemble de Web Apps](/azure/app-service/)
 - [Déploiement de votre application dans Azure App Service](/azure/app-service/app-service-deploy-local-git)
-- [Déployer WebJobs avec Visual Studio](/azure/app-service/websites-dotnet-deploy-webjobs)
+- [Déployer des tâches web à l’aide de Visual Studio](/azure/app-service/websites-dotnet-deploy-webjobs)
 - [Création et déploiement d’un service cloud](/azure/cloud-services/cloud-services-how-to-create-deploy-portal)

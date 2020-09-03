@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramDestroyEventFlags2 - France Microsoft Docs
+title: IDebugProgramDestroyEventFlags2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d869304dd8b6dc82db78cc09ed9d51a54acdc3c0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722507"
 ---
 # <a name="idebugprogramdestroyeventflags2"></a>IDebugProgramDestroyEventFlags2
-Permet à un moteur débogé de [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] remplacer le comportement par défaut de l’interface utilisateur lorsque vous terminez une session de débogé.
+Permet à un moteur de débogage de substituer le comportement par défaut de l' [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] interface utilisateur quand vous terminez une session de débogage.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -27,21 +27,21 @@ IDebugProgramDestroyEventFlags2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Notes pour les implémenteurs
- Cette interface est implémentée par les moteurs de débogé. Il est utile pour les hôtes qui pourraient créer et détruire plusieurs programmes au cours de la durée de vie d’un processus.
+ Cette interface est implémentée par les moteurs de débogage. Elle est utile pour les hôtes qui peuvent créer et détruire plusieurs programmes pendant la durée de vie d’un processus.
 
 ## <a name="methods"></a>Méthodes
- Le tableau suivant montre `IDebugProgramDestroyEventFlags2`les méthodes de .
+ Le tableau suivant présente les méthodes de `IDebugProgramDestroyEventFlags2` .
 
 |Méthode|Description|
 |------------|-----------------|
-|[GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md)|Récupère le programme détruire les drapeaux.|
+|[GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md)|Récupère les indicateurs de destruction du programme.|
 
 ## <a name="remarks"></a>Notes
- Le comportement par [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] défaut de l’interface utilisateur est de revenir en mode de conception après que tous les programmes ont envoyé un événement de destruction de programme. Cette interface permet à un moteur de débogé de changer ce comportement.
+ Le comportement par défaut de l' [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] interface utilisateur consiste à revenir au mode création après que tous les programmes ont envoyé un événement de destruction de programme. Cette interface permet à un moteur de débogage de modifier ce comportement.
 
-## <a name="requirements"></a>Spécifications
- En-tête: Msdbg.h
+## <a name="requirements"></a>Configuration requise
+ En-tête : msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Espace de noms : Microsoft. VisualStudio. Debugger. Interop
 
- Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll

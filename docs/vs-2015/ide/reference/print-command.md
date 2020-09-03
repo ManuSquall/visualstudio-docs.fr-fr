@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 136edf7fa91e4caeb9303edfd4441ee178fa6038
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662158"
 ---
 # <a name="print-command"></a>Imprimer, commande
@@ -36,7 +36,7 @@ Debug.Print text
 ## <a name="arguments"></a>Arguments
  `text` Obligatoire. Expression à évaluer ou texte à afficher.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Vous pouvez utiliser le point d’interrogation (?) comme alias pour cette commande. Ainsi, la commande
 
 ```
@@ -51,7 +51,7 @@ Debug.Print text
 
  Les deux versions de cette commande retournent la valeur courante de l’expression `expA`.
 
-## <a name="example"></a>Exemples
+## <a name="example"></a> Exemple
 
 ```
 >Debug.Print varA

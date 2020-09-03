@@ -49,10 +49,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fa81b08d6e375da4ad67b2e6eec32f244a779408
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662264"
 ---
 # <a name="options-text-editor-general"></a>Options, Éditeur de texte, Général
@@ -61,7 +61,7 @@ ms.locfileid: "72662264"
 Cette boîte de dialogue vous permet de modifier les paramètres globaux de l’éditeur de code et de texte de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Pour afficher cette boîte de dialogue, cliquez sur **Options** dans le menu **Outils**, développez le dossier **Éditeur de texte**, puis cliquez sur **Général**.
 
 > [!NOTE]
-> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Les boîtes de dialogue et les commandes de menu affichées peuvent différer de celles décrites dans l'Aide selon les paramètres actifs ou le mode d'édition. Pour modifier vos paramètres, choisissez **Paramètres d'importation et d'exportation** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="settings"></a>Paramètres
  La modification du texte par glisser-déplacer lorsqu’elle est sélectionnée, vous permet de déplacer du texte en le sélectionnant et en le faisant glisser avec la souris vers un autre emplacement dans le document actif ou dans tout autre document ouvert.
@@ -77,7 +77,7 @@ Cette boîte de dialogue vous permet de modifier les paramètres globaux de l’
 
 |Marge de sélection activée|Marge de sélection désactivée|
 |-------------------------|--------------------------|
-|![Capture d’écran HTMLpageSelectionMarginOn](../../ide/reference/media/vxselmaron.gif "|::ref1::|")|![Capture d’écran HTMLpageSelectionMarginOff](../../ide/reference/media/vxselmaroff.gif "|::ref2::|")|
+|![Capture d’écran HTMLpageSelectionMarginOn](../../ide/reference/media/vxselmaron.gif "vxSelmaron")|![Capture d’écran HTMLpageSelectionMarginOff](../../ide/reference/media/vxselmaroff.gif "vxSelmaroff")|
 
  Marge des indicateurs : lorsque cette option est sélectionnée, une marge verticale s’affiche à l’extérieur du bord gauche de la zone de texte de l’éditeur. Quand vous cliquez dans cette marge, une icône et une info-bulle relatives au texte s’affichent. Par exemple, les raccourcis des points d’arrêt ou de la liste des tâches s’affichent dans la marge des indicateurs. Le contenu de la marge des indicateurs ne s’imprime pas.
 
@@ -88,4 +88,4 @@ Cette boîte de dialogue vous permet de modifier les paramètres globaux de l’
  Mettre en surbrillance la ligne active quand elle est sélectionnée, affiche une zone grise autour de la ligne de code où se trouve le curseur.
 
 ## <a name="see-also"></a>Voir aussi
- [Options, éditeur de texte, toutes les langues](../../ide/reference/options-text-editor-all-languages.md) [options, éditeur de texte, tous les langages, options onglets](../../ide/reference/options-text-editor-all-languages-tabs.md) [, éditeur de texte, extension](../../ide/reference/options-text-editor-file-extension.md) [de fichier identification et personnalisation des raccourcis clavier](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) [Personnalisation de l’éditeur](../../ide/customizing-the-editor.md) [à l’aide de IntelliSense](../../ide/using-intellisense.md)
+ [Options, éditeur de texte, toutes les langues](../../ide/reference/options-text-editor-all-languages.md) [options, éditeur de texte, tous les langages, options onglets](../../ide/reference/options-text-editor-all-languages-tabs.md) , [éditeur de texte, extension de fichier](../../ide/reference/options-text-editor-file-extension.md) [identification et personnalisation des raccourcis clavier](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) [Personnalisation de l’éditeur](../../ide/customizing-the-editor.md) [à l’aide d’IntelliSense](../../ide/using-intellisense.md)

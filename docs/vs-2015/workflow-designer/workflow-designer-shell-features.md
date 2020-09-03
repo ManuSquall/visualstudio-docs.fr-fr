@@ -12,14 +12,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2c59dc8232713d4126b2c37693a1e241735eb163
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72606599"
 ---
 # <a name="workflow-designer-shell-features"></a>Fonctionnalités du shell Workflow Designer
-[!INCLUDE[wfd1](../includes/wfd1-md.md)] est composé de trois zones d'interface utilisateur principales : l'aire du concepteur, la barre de navigation au-dessus et l'interpréteur de commandes en dessous. La barre de navigation, située en haut de l'écran, sert à afficher la liste des ancêtres de l'activité racine actuelle. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Comment : utiliser la navigation de navigation](../workflow-designer/how-to-use-breadcrumb-navigation.md). L'aire du concepteur, située au centre de l'écran, permet de composer des flux de travail. L'interpréteur de commandes, situé en bas de l'écran, contient plusieurs boutons pour gérer l'affichage actuel.
+[!INCLUDE[wfd1](../includes/wfd1-md.md)] est composé de trois zones d’interface utilisateur majeures : l’aire du concepteur, la barre de navigation au-dessus et l’interpréteur de commandes situé en dessous. La barre de navigation, située en haut de l'écran, sert à afficher la liste des ancêtres de l'activité racine actuelle. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Comment : utiliser la navigation de navigation](../workflow-designer/how-to-use-breadcrumb-navigation.md). L'aire du concepteur, située au centre de l'écran, permet de composer des flux de travail. L'interpréteur de commandes, situé en bas de l'écran, contient plusieurs boutons pour gérer l'affichage actuel.
 
 ## <a name="shell-features"></a>Fonctionnalités de l'interpréteur de commandes
  La barre de l'interpréteur de commandes comporte des boutons à droite qui permettent d'effectuer un zoom avant ou arrière dans le flux de travail, d'ajuster le contenu du flux de travail à la taille de l'écran et d'afficher ou masquer la vue d'ensemble. Vous pouvez également effectuer un zoom avant ou arrière dans un flux de travail à l'aide des raccourcis clavier CTRL++ et CTRL+-.

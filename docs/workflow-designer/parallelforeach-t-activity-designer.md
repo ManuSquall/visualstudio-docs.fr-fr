@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8e2d3d33b150bd9c360896f88eddf032837fe9c9
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86876045"
 ---
 # <a name="parallelforeach-activity-designer"></a>Concepteur d’activités ParallelForEach 
@@ -25,7 +25,7 @@ L' <xref:System.Activities.Statements.ParallelForEach%601> activité a une <xref
 
 ## <a name="the-parallelforeacht-activity"></a>Activité ParallelForEach<T \>
 
-<xref:System.Activities.Statements.ParallelForEach%601>énumère ses valeurs et planifie <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> pour chaque valeur sur laquelle il énumère. Elle planifie seulement la propriété <xref:System.Activities.Statements.ParallelForEach%601.Body%2A>. La manière dont le corps s'exécute dépend de l'inactivation de la propriété <xref:System.Activities.Statements.ParallelForEach%601.Body%2A>.
+<xref:System.Activities.Statements.ParallelForEach%601> énumère ses valeurs et planifie <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> pour chaque valeur sur laquelle il énumère. Elle planifie seulement la propriété <xref:System.Activities.Statements.ParallelForEach%601.Body%2A>. La manière dont le corps s'exécute dépend de l'inactivation de la propriété <xref:System.Activities.Statements.ParallelForEach%601.Body%2A>.
 
 Si la propriété <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> ne devient pas inactive, son exécution s'effectue dans l'ordre inverse, car les activités planifiées sont gérées comme une pile, la dernière activité planifiée s'exécutant en premier. Par exemple, si vous avez une collection de {1,2,3,4} dans <xref:System.Activities.Statements.ParallelForEach%601> et utilisez un **WriteLine** comme corps pour écrire la valeur. Vous avez 4, 3, 2, 1 imprimée dans la console. Cela est dû au fait que **WriteLine** n’est pas inactif, de sorte que les activités **WriteLine** ont été planifiées, après l’exécution d’un comportement de pile (premier en dernier sorti).
 
@@ -43,10 +43,10 @@ Le tableau suivant répertorie les propriétés les plus utiles de l'activité <
 
 |Nom de la propriété|Obligatoire|Usage|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Spécifie le nom d'affichage convivial du concepteur d'activités dans l'en-tête. La valeur par défaut **est \<Int32> ParallelForEach**. La valeur peut éventuellement être modifiée dans la grille des **Propriétés** ou directement dans l’en-tête du concepteur d’activités.|
-|<xref:System.Activities.Statements.ParallelForEach%601.Body%2A>|False|Activité à exécuter pour chaque élément dans la collection. Pour ajouter l' <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> activité, déplacez une activité de la boîte à outils vers la zone **Body** sur le concepteur d’activités **ParallelForEach \<T> ** avec le texte d’indication « déposer l’activité ici ».|
-|**TypeArgument**|True|Type des éléments dans la <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> collection spécifiée par le paramètre générique *T*. Par défaut, **TypeArgument** a la valeur **Int32**. Pour modifier le type T dans le concepteur d’activités **ParallelForEach<T \> ** , modifiez la valeur de la zone de liste déroulante **TypeArgument** dans la grille des propriétés.|
-|<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>|True|Collection d’éléments à itérer. Pour définir le <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> , tapez une expression Visual Basic dans la zone **valeurs** du concepteur d’activités **foreach \><T** dans la zone avec le texte d’indication « entrer une expression vb » ou dans la zone **valeurs** de la fenêtre **Propriétés** .|
+|<xref:System.Activities.Activity.DisplayName%2A>|Faux|Spécifie le nom d'affichage convivial du concepteur d'activités dans l'en-tête. La valeur par défaut **est \<Int32> ParallelForEach**. La valeur peut éventuellement être modifiée dans la grille des **Propriétés** ou directement dans l’en-tête du concepteur d’activités.|
+|<xref:System.Activities.Statements.ParallelForEach%601.Body%2A>|Faux|Activité à exécuter pour chaque élément dans la collection. Pour ajouter l' <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> activité, déplacez une activité de la boîte à outils vers la zone **Body** sur le concepteur d’activités **ParallelForEach \<T> ** avec le texte d’indication « déposer l’activité ici ».|
+|**TypeArgument**|Vrai|Type des éléments dans la <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> collection spécifiée par le paramètre générique *T*. Par défaut, **TypeArgument** a la valeur **Int32**. Pour modifier le type T dans le concepteur d’activités **ParallelForEach<T \> ** , modifiez la valeur de la zone de liste déroulante **TypeArgument** dans la grille des propriétés.|
+|<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>|Vrai|Collection d’éléments à itérer. Pour définir le <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> , tapez une expression Visual Basic dans la zone **valeurs** du concepteur d’activités **foreach \><T** dans la zone avec le texte d’indication « entrer une expression vb » ou dans la zone **valeurs** de la fenêtre **Propriétés** .|
 |<xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A>||Propriété évaluée à l'issue de chaque itération. Si sa valeur est True, les itérations en attente planifiées sont annulées. Si cette propriété n'est pas définie, toutes les instructions planifiées s'exécutent jusqu'à ce qu'elles soient terminées.|
 
 Par défaut, l'itérateur de boucle est nommé « item ». Vous pouvez modifier le nom de la variable d’itérateur dans la zone **foreach** du concepteur d’activités **ParallelForEach \<T> ** . L'itérateur de boucle peut être utilisé dans des expressions dans les enfants de l'activité <xref:System.Activities.Statements.ParallelForEach%601>.
@@ -55,4 +55,4 @@ Par défaut, l'itérateur de boucle est nommé « item ». Vous pouvez modifie
 
 - [Séquence](../workflow-designer/sequence-activity-designer.md)
 - [Parallel](../workflow-designer/parallel-activity-designer.md)
-- [Workflow de contrôle](../workflow-designer/control-flow-activity-designers.md)
+- [Flux de contrôle](../workflow-designer/control-flow-activity-designers.md)

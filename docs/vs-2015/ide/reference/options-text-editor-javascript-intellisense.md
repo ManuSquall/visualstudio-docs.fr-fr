@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1b0d9dec8ec9b3eb8860bb8b3a4ed8f7347aa54d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662233"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>Options, Éditeur de texte, JavaScript, IntelliSense
@@ -31,7 +31,7 @@ Utilisez la page **IntelliSense** de la boîte de dialogue **Options** pour modi
 ## <a name="validation"></a>Validation
  Vous pouvez utiliser ces options pour définir comment l'éditeur JavaScript doit valider la syntaxe dans votre document.
 
-## <a name="uielement-list"></a>Liste des éléments d’interface
+## <a name="uielement-list"></a>Liste des éléments de l'interface utilisateur
  **Afficher les erreurs de syntaxe** Lorsque cette case à cocher n’est pas activée, l’éditeur de code JavaScript n’affiche pas d’erreurs de syntaxe. Cela est utile si vous travaillez avec du code dont vous n'êtes pas l'auteur et que vous n'avez pas l'intention de corriger les erreurs de syntaxe.
 
  Lorsque cette case à cocher est activée, vous pouvez activer la case à cocher **Afficher les erreurs comme des avertissements** .
@@ -46,13 +46,13 @@ Utilisez la page **IntelliSense** de la boîte de dialogue **Options** pour modi
 ## <a name="statement-completion"></a>Compléter automatiquement les instructions
  Vous pouvez utiliser ces options pour modifier le comportement de la saisie semi-automatique des instructions IntelliSense.
 
-## <a name="uielement-list"></a>Liste des éléments d’interface
+## <a name="uielement-list"></a>Liste des éléments de l'interface utilisateur
  **Utiliser uniquement la touche Tab ou entrée pour valider** Lorsque cette case à cocher est activée, l’éditeur de code JavaScript ajoute des instructions avec des éléments sélectionnés dans la liste de saisie semi-automatique uniquement après que vous avez choisi l’onglet ou la touche entrée. Lorsque cette case à cocher est désactivée, d'autres caractères, comme un point, une virgule, deux-points, une parenthèse ouvrante, et une accolade ouvrante ({)) peuvent également ajouter des instructions aux éléments sélectionnés.
 
 ## <a name="references"></a>Références
  Vous pouvez utiliser ces options pour spécifier les types de fichiers IntelliSense .js qui sont dans la portée pour différents types de projet JavaScript. Les références IntelliSense sont généralement utilisées pour fournir une prise en charge IntelliSense pour les objets globaux. Vous pouvez également utiliser cette page pour définir l'ordre de chargement des scripts qui doivent être chargés au moment de l'exécution, et ajouter des fichiers d'extension IntelliSense.
 
-## <a name="uielement-list"></a>Liste des éléments d’interface
+## <a name="uielement-list"></a>Liste des éléments de l'interface utilisateur
  **Groupes de référence** Cette option spécifie le type de groupe de référence. Trois groupes de référence sont pris en charge :
 
  Vous pouvez utiliser les groupes de référence prédéfinis pour spécifier les fichiers IntelliSense .js particuliers qui sont dans la portée des projets JavaScript. Quatre groupes de référence sont disponibles :
@@ -73,4 +73,4 @@ Utilisez la page **IntelliSense** de la boîte de dialogue **Options** pour modi
  **Ajouter une référence au groupe** Cette option permet d’ajouter des fichiers IntelliSense. js supplémentaires en parcourant les fichiers appropriés.
 
 ## <a name="see-also"></a>Voir aussi
- [JavaScript IntelliSense](../../ide/javascript-intellisense.md)
+ [IntelliSense JavaScript](../../ide/javascript-intellisense.md)

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 0ef6dc666cbc3c26d58358c9b59264f93a7bf184
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548250"
 ---
 # <a name="ca1040-avoid-empty-interfaces"></a>CA1040 : Éviter les interfaces vides
@@ -32,7 +32,7 @@ ms.locfileid: "85548250"
 |Category|Microsoft. Design|
 |Modification avec rupture|Rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  L’interface ne déclare aucun membre ni n’implémente plusieurs autres interfaces.
 
 ## <a name="rule-description"></a>Description de la règle

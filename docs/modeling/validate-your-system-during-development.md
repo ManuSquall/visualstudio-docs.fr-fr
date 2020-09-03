@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ae2b7d81b1f166e6cc97debc3291661d59ee6960
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75594030"
 ---
 # <a name="validate-your-system-during-development"></a>Validation de votre système pendant le développement
@@ -26,17 +26,17 @@ Pour connaître les versions de Visual Studio qui prennent en charge chacune de 
 
 Utilisez les tâches suivantes pour valider votre logiciel :
 
-|**Tâches MSBuild**|**Rubriques associées**|
+|**Tâches**|**Rubriques associées**|
 |-|-|
-|**Assurez-vous que votre logiciel répond aux besoins des utilisateurs**:<br /><br />Utilisez les spécifications et les modèles architecturaux pour vous aider à organiser les tests de votre système et de ses composants. Cette pratique vous permet de vous assurer que vous testez les besoins importants des utilisateurs et des autres parties prenantes, et vous aide à mettre rapidement à jour les tests quand les besoins changent.|- [développer des tests à partir d’un modèle](../modeling/develop-tests-from-a-model.md)|
-|**Assurez-vous que votre logiciel reste cohérent avec la conception prévue de votre système :**<br /><br />Les diagrammes de dépendance décrivent les dépendances prévues entre les composants de votre application. Pendant le développement, vous pouvez vérifier que les dépendances actuelles dans le code sont conformes à la conception prévue.|- [créer des diagrammes de dépendance à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md)<br />- [valider du code avec des diagrammes de dépendance](../modeling/validate-code-with-layer-diagrams.md)|
+|**Assurez-vous que votre logiciel répond aux besoins des utilisateurs**:<br /><br />Utilisez les spécifications et les modèles architecturaux pour vous aider à organiser les tests de votre système et de ses composants. Cette pratique vous permet de vous assurer que vous testez les besoins importants des utilisateurs et des autres parties prenantes, et vous aide à mettre rapidement à jour les tests quand les besoins changent.|- [Développer des tests à partir d’un modèle](../modeling/develop-tests-from-a-model.md)|
+|**Assurez-vous que votre logiciel reste cohérent avec la conception prévue de votre système :**<br /><br />Les diagrammes de dépendance décrivent les dépendances prévues entre les composants de votre application. Pendant le développement, vous pouvez vérifier que les dépendances actuelles dans le code sont conformes à la conception prévue.|- [Créer des diagrammes de dépendance à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Valider du code avec des diagrammes de dépendance](../modeling/validate-code-with-layer-diagrams.md)|
 
 ## <a name="external-resources"></a>Ressources externes
 
-|**Catégorie**|**Links**|
+|**Catégorie**|**Liens**|
 |-|-|
-|**Vidéos**|![lien vers la vidéo](../data-tools/media/playvideo.gif) [Channel 9 : Doug sept : compréhension du code et conception des systèmes avec Visual Studio 2010](https://channel9.msdn.com/shows/VS2010Launch/Doug-Seven-Code-Understanding-and-Systems-Design-with-Visual-Studio-2010)<br /><br /> ![un lien vers la vidéo](../data-tools/media/playvideo.gif) [Channel 9 : architecture d’une application](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-5-architecting-an-application))|
-|**Forums**|- [Outils de visualisation et de modélisation Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />- [extensibilité de Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx)|
+|**Vidéos**|![lien vers la vidéo ](../data-tools/media/playvideo.gif) [Channel 9 : Doug sept : compréhension du code et conception de systèmes avec Visual Studio 2010](https://channel9.msdn.com/shows/VS2010Launch/Doug-Seven-Code-Understanding-and-Systems-Design-with-Visual-Studio-2010)<br /><br /> ![lien vers la vidéo ](../data-tools/media/playvideo.gif) [Channel 9 : architecture d’une application](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-5-architecting-an-application))|
+|**Forums**|- [Outils de visualisation et de modélisation Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />- [Extensibilité de Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx)|
 
 ## <a name="see-also"></a>Voir aussi
 

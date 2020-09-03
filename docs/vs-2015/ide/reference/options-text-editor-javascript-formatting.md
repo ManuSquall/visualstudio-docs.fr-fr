@@ -14,13 +14,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: dcfa4a2fb15ed8f4abfff24aa8e78c2b08eb8412
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662244"
 ---
-# <a name="options-text-editor-javascript-formatting"></a>Options, Éditeur de texte, JavaScript, Mise en forme
+# <a name="options-text-editor-javascript-formatting"></a>Options, Text Editor, JavaScript, Formatting
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Utilisez la page **Mise en forme** de la boîte de dialogue **Options** pour définir les options de mise en forme du code dans l’éditeur de code. Pour accéder à cette page, dans la barre de menus, choisissez **Outils**, **Options**, puis développez **Éditeur de texte**, **JavaScript** et **Mise en forme**.
@@ -30,7 +30,7 @@ Utilisez la page **Mise en forme** de la boîte de dialogue **Options** pour dé
 ## <a name="automatic-formatting"></a>Mise en forme automatique
  Ces options déterminent à quel moment la mise en forme se produit dans la vue **Source**.
 
-## <a name="uielement-list"></a>Liste des éléments d’interface
+## <a name="uielement-list"></a>Liste des éléments de l'interface utilisateur
 
 |Option|Description|
 |------------|-----------------|
@@ -42,7 +42,7 @@ Utilisez la page **Mise en forme** de la boîte de dialogue **Options** pour dé
 ## <a name="new-lines"></a>Nouvelles lignes
  Ces options déterminent si l’éditeur de code place une accolade ouvrante sur une nouvelle ligne pour les fonctions et les blocs de contrôle.
 
-## <a name="uielement-list"></a>Liste des éléments d’interface
+## <a name="uielement-list"></a>Liste des éléments de l'interface utilisateur
 
 |Option|Description|
 |------------|-----------------|
@@ -52,7 +52,7 @@ Utilisez la page **Mise en forme** de la boîte de dialogue **Options** pour dé
 ## <a name="spacing"></a>Espacement
  Ces options déterminent la façon dont les espaces sont insérés dans la vue **Source**.
 
-## <a name="uielement-list"></a>Liste des éléments d’interface
+## <a name="uielement-list"></a>Liste des éléments de l'interface utilisateur
 
 |Option|Description|
 |------------|-----------------|
@@ -60,8 +60,8 @@ Utilisez la page **Mise en forme** de la boîte de dialogue **Options** pour dé
 |**Insérer un espace après le point-virgule dans une instruction « for »**|Quand cette option est sélectionnée, l’éditeur de code ajoute un espace après chaque point-virgule dans la première ligne d’une boucle `for`.|
 |**Insérer un espace avant et après les opérateurs binaires**|Quand cette option est sélectionnée, l’éditeur de code ajoute un espace avant et après les opérateurs binaires (par exemple, +, -, &&, &#124;&#124;).|
 |**Insérer un espace après les mots clés dans les instructions de flux de contrôle**|Quand cette option est sélectionnée, l’éditeur de code ajoute un espace après les mots clés JavaScript dans les instructions de flux de contrôle.|
-|**Insérer un espace après le mot clé function pour les fonctions anonymes**|Quand cette option est sélectionnée, l’éditeur de code ajoute un espace après le mot clé `function` pour les fonctions anonymes.|
+|**Insérer un espace après le mot clé function pour les fonctions anonymes.**|Quand cette option est sélectionnée, l’éditeur de code ajoute un espace après le mot clé `function` pour les fonctions anonymes.|
 |**Insérer un espace après l’ouverture et avant la fermeture de parenthèses non vides**|Quand cette option est sélectionnée, l’éditeur de code ajoute un espace après la parenthèse ouvrante et avant la parenthèse fermante si celles-ci renferment des caractères non vides.|
 
 ## <a name="see-also"></a>Voir aussi
- [Général, Environnement, boîte de dialogue Options](../../ide/reference/general-environment-options-dialog-box.md)
+ [Général, environnement, boîte de dialogue Options](../../ide/reference/general-environment-options-dialog-box.md)

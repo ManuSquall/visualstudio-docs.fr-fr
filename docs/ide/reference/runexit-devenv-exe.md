@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 18ca581c5a8a7f631138e8b3eacff02a031e0931
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75593601"
 ---
 # <a name="runexit-devenvexe"></a>/RunExit (devenv.exe)
@@ -35,15 +35,15 @@ devenv /RunExit {SolutionName|ProjectName} [/Out OutputFilename]
 
   Chemin complet et nom d’un fichier solution.
 
-- *Projectname*
+- *Nom du projet*
 
   Chemin complet et nom d’un fichier projet.
 
-- `/Out`*OutputFilename (en)*
+- `/Out`*OutputFileName*
 
   facultatif. Nom du fichier auquel vous souhaitez envoyer la sortie de l’outil. Si le fichier existe déjà, l’outil ajoute la sortie à la fin du fichier.
 
-## <a name="remarks"></a>Notes 
+## <a name="remarks"></a>Notes
 
 Compile et exécute la solution ou le projet spécifié en fonction des paramètres spécifiés pour la configuration de la solution active. Ce commutateur réduit l’environnement IDE pendant l’exécution du projet ou de la solution, et le ferme ensuite.
 
@@ -51,7 +51,7 @@ Compile et exécute la solution ou le projet spécifié en fonction des paramèt
 
 - Les informations résumées, notamment les erreurs, peuvent être affichées dans la fenêtre **Commande**, ou dans tout fichier journal spécifié avec le commutateur `/Out`.
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 
 Cet exemple exécute la solution `MySolution` dans une fenêtre réduite de l’IDE en utilisant la configuration de déploiement active, puis ferme l’IDE.
 
@@ -64,5 +64,5 @@ devenv /runexit "%USERPROFILE%\source\repos\MySolution\MySolution.sln"
 - [Commutateurs de ligne de commande Devenv](../../ide/reference/devenv-command-line-switches.md)
 - [/Run (devenv.exe)](../../ide/reference/run-devenv-exe.md)
 - [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)
-- [/Reconstruire (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)
+- [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)
 - [/Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)

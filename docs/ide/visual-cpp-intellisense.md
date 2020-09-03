@@ -8,15 +8,15 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: c0d1be12f733a858bf223fb1dce6a091c0dc6c50
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75594212"
 ---
 # <a name="visual-c-intellisense-features"></a>Fonctionnalités IntelliSense pour Visual C++
 
-IntelliSense est le nom d’un ensemble de fonctionnalités conçues pour faciliter le codage. IntelliSense pour C++ peut être utilisé avec des fichiers autonomes, mais aussi avec des fichiers qui font partie d’un projet C++. Dans les projets multiplateformes, certaines fonctionnalités IntelliSense sont disponibles dans les fichiers *.cpp* et *.c* dans le projet de code partagé, même lorsque vous êtes dans un contexte Android ou iOS.
+IntelliSense est le nom d’un ensemble de fonctionnalités conçues pour faciliter le codage. IntelliSense pour C++ peut être utilisé avec des fichiers autonomes, mais aussi avec des fichiers qui font partie d’un projet C++. Dans les projets multiplateformes, certaines fonctionnalités IntelliSense sont disponibles dans les fichiers *. cpp* et *. c* du projet de code partagé, même si vous êtes dans un contexte Android ou iOS.
 
 Cet article présente une vue d’ensemble des fonctionnalités IntelliSense C++. Pour plus d’informations sur la configuration des projets pour IntelliSense et la résolution des problèmes, voir [Configurer un projet C++ pour IntelliSense](visual-cpp-intellisense-configuration.md).
 
@@ -34,11 +34,11 @@ Vous pouvez utiliser les éléments de menu et les raccourcis clavier indiqués 
 
 Quand vous commencez à taper un mot clé, un type, une fonction, un nom de variable ou tout autre élément de code reconnu par le compilateur, l'éditeur vous propose de compléter automatiquement la chaîne.
 
-Pour une liste des icônes et de leurs significations, voir [Class View et Object Browser icônes](../ide/class-view-and-object-browser-icons.md).
+Pour obtenir la liste des icônes et leurs significations, consultez [affichage de classes et icônes](../ide/class-view-and-object-browser-icons.md)de l’Explorateur d’objets.
 
 ![Fenêtre Compléter le mot de Visual C&#43;&#43;](../ide/media/vs2015_cpp_complete_word.png)
 
-Au premier appel de la liste des membres, seuls les membres accessibles dans le contexte actuel sont affichés. Si vous appuyez sur **Ctrl**+**J** après cela, il montre à tous les membres indépendamment de l’accessibilité. Si vous l'appelez une troisième fois, la liste qui s'affiche présente encore plus d'éléments de code. Vous pouvez désactiver la liste des membres dans la boîte de dialogue **Options** sous **Éditeur de texte** > **C/C++** > **Général** > **Répertorier automatiquement les membres**.
+Au premier appel de la liste des membres, seuls les membres accessibles dans le contexte actuel sont affichés. Si vous appuyez sur **CTRL** + **J** après cela, il affiche tous les membres indépendamment de l’accessibilité. Si vous l'appelez une troisième fois, la liste qui s'affiche présente encore plus d'éléments de code. Vous pouvez désactiver la liste des membres dans la boîte de dialogue **Options** sous **Éditeur de texte** > **C/C++** > **Général** > **Répertorier automatiquement les membres**.
 
 ![Liste de membres Visual C&#43;&#43;](../ide/media/vs2015_cpp_list_members.png)
 
@@ -48,7 +48,7 @@ Quand vous tapez une accolade ouvrante dans un appel de fonction, ou un crochet 
 
 ![Aide sur les paramètres Visual C&#43;&#43;](../ide/media/vs_2015_cpp_param_help.png)
 
-## <a name="quick-info"></a>Info express
+## <a name="quick-info"></a>Infos express
 
 Quand vous placez le curseur sur une variable, une petite fenêtre inline s'affiche, présentant les informations de type et l'en-tête où le type est défini. Placez le curseur sur un appel de fonction pour afficher la signature de la fonction. Vous pouvez désactiver la fonctionnalité Info express dans la boîte de dialogue **Options** sous **Éditeur de texte** > **C/C++** > **Avancé** > **Info express auto**.
 
@@ -106,5 +106,5 @@ Par défaut, IntelliSense pour fichier unique utilise uniquement les répertoire
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Using IntelliSense](../ide/using-intellisense.md)
+- [Utilisation d’IntelliSense](../ide/using-intellisense.md)
 - [Configurer un projet C++ pour IntelliSense](visual-cpp-intellisense-configuration.md)

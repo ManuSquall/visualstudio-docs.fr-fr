@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 9478394162051fc08c33047cf1ac24275aff75e2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72609330"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Procédure pas à pas : analyse du code managé pour les erreurs de code
@@ -27,23 +27,23 @@ Dans cette procédure pas à pas, vous analysez un projet managé pour les erreu
 
  Cette procédure pas à pas vous guidera tout au long du processus d’utilisation de l’analyse du code pour analyser vos assemblys de code managé .NET en conformité avec les règles de conception de la Microsoft .NET Framework.
 
- Dans cette procédure pas à pas, vous allez :
+ Lors de cette procédure pas à pas, vous allez effectuer les opérations suivantes :
 
 - Analyser et corriger les avertissements de défaut de code.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Prérequis
 
-- [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].,
+- [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].
 
 ## <a name="create-a-class-library"></a>Créer une bibliothèque de classes
 
 #### <a name="to-create-a-class-library"></a>Pour créer une bibliothèque de classes
 
-1. Dans le menu **fichier** de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], cliquez sur **nouveau** , puis sur **projet**.
+1. Dans le menu **fichier** de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] , cliquez sur **nouveau** , puis sur **projet**.
 
-2. Dans la boîte de dialogue **nouveau projet** , sous **types de projets**, cliquez sur **visuel C#** .
+2. Dans la boîte de dialogue **nouveau projet** , sous **types de projets**, cliquez sur **Visual C#**.
 
-3. Sous **modèles**, sélectionnez **bibliothèque de classes**.
+3. Sous **Modèles**, sélectionnez **Bibliothèque de classes**.
 
 4. Dans la zone de texte **nom** , tapez **CodeAnalysisManagedDemo** , puis cliquez sur **OK**.
 
@@ -61,13 +61,13 @@ Dans cette procédure pas à pas, vous analysez un projet managé pour les erreu
 
 1. Sélectionnez le projet CodeAnalysisManagedDemo dans **Explorateur de solutions**.
 
-2. Dans le menu **Projet**, cliquez sur **Propriétés**.
+2. Dans le menu **Projet** , cliquez sur **Propriétés**.
 
      La page de propriétés CodeAnalysisManagedDemo s’affiche.
 
 3. Cliquez sur **CodeAnalysis**.
 
-4. Assurez-vous que l’option **activer l’analyse du code sur la build (définit la constante CODE_ANALYSIS**) est cochée.
+4. Assurez-vous que l’option  **activer l’analyse du code sur la build (définit CODE_ANALYSIS constante**) est cochée.
 
 5. Dans la liste déroulante **exécuter cet ensemble de règles** , sélectionnez **toutes les règles Microsoft**.
 
@@ -83,7 +83,7 @@ Dans cette procédure pas à pas, vous analysez un projet managé pour les erreu
 
 #### <a name="to-correct-code-analysis-rule-violations"></a>Pour corriger les violations des règles d’analyse du code
 
-1. Dans le menu **affichage** , cliquez sur **liste d’erreurs**.
+1. Dans le menu **Affichage** , cliquez sur **Liste d'erreurs**.
 
      En fonction du profil de développeur que vous avez choisi, vous devrez peut-être pointer sur **autres fenêtres** dans le menu **affichage** , puis cliquez sur **liste d’erreurs**.
 
@@ -95,23 +95,23 @@ Dans cette procédure pas à pas, vous analysez un projet managé pour les erreu
 
 - [CA1014 : marquer les assemblys avec CLSCompliantAttribute](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md): Microsoft. Design : « Demo » doit être marqué avec CLSCompliantAttribute, et sa valeur doit être true.
 
-  - Ajoutez le `using``System;` de code au fichier AssemblyInfo.cs.
+  - Ajoutez le code `using``System;` au fichier AssemblyInfo.cs.
 
-       Ajoutez ensuite le code `[assembly: CLSCompliant(true)]` à la fin du fichier AssemblyInfo.cs.
+       Ensuite, ajoutez le code `[assembly: CLSCompliant(true)]` à la fin du fichier AssemblyInfo.cs.
 
        Regénérez le projet.
 
 - [CA1032 : implémenter des constructeurs d’exception standard](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft. Design : ajoutez le constructeur suivant à cette classe : Demo public (String)
 
-  - Ajoutez le `public demo (String s) : base(s) { }` du constructeur à la classe `demo`.
+  - Ajoutez le constructeur `public demo (String s) : base(s) { }` à la classe `demo` .
 
 - [CA1032 : implémenter des constructeurs d’exception standard](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft. Design : ajoutez le constructeur suivant à cette classe : Demo public (String, exception)
 
-  - Ajoutez le `public demo (String s, Exception e) : base(s, e) { }` du constructeur à la classe `demo`.
+  - Ajoutez le constructeur `public demo (String s, Exception e) : base(s, e) { }` à la classe `demo` .
 
 - [CA1032 : implémenter des constructeurs d’exception standard](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft. Design : ajoutez le constructeur suivant à cette classe : Demo protected demo (SerializationInfo, StreamingContext)
 
-  - Ajoutez le `using System.Runtime.Serialization;` de code au début du fichier Class1.cs.
+  - Ajoutez le code `using System.Runtime.Serialization;` au début du fichier Class1.cs.
 
        Ensuite, ajoutez le constructeur `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { } to the class demo.`
 
@@ -119,25 +119,25 @@ Dans cette procédure pas à pas, vous analysez un projet managé pour les erreu
 
 - [CA1032 : implémenter des constructeurs d’exception standard](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft. Design : ajoutez le constructeur suivant à cette classe : Demo public ()
 
-  - Ajoutez le `public demo () : base() { }` du constructeur à la classe `demo` **.**
+  - Ajoutez le constructeur `public demo () : base() { }` à la classe `demo` **.**
 
        Regénérez le projet.
 
 - [CA1709 : la casse des identificateurs doit être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft. Naming : corrigez la casse du nom d’espace de noms’testCode’en le remplaçant par’testCode'.
 
-  - Modifiez la casse de l’espace de noms `testCode` en `TestCode`.
+  - Remplacez la casse de l’espace de noms `testCode` par `TestCode` .
 
 - [CA1709 : la casse des identificateurs doit être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft. Naming : corrigez la casse du nom de type « Demo » en le remplaçant par « demo ».
 
-  - Remplacez le nom du membre par `Demo`.
+  - Remplacez le nom du membre par `Demo` .
 
 - [CA1709 : la casse des identificateurs doit être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft. Naming : corrigez la casse du nom de membre’Item’en le remplaçant par’Item'.
 
-  - Remplacez le nom du membre par `Item`.
+  - Remplacez le nom du membre par `Item` .
 
 - [CA1710 : les identificateurs doivent avoir le suffixe correct](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft. Naming : Rename’TestCode. Demo’pour se terminer par’exception'.
 
-  - Modifiez le nom de la classe et ses constructeurs pour `DemoException`.
+  - Remplacez le nom de la classe et ses constructeurs par `DemoException` .
 
 - [CA2210 : les assemblys doivent avoir des noms forts valides](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md): signez’ManagedDemo’avec une clé de nom fort.
 
@@ -149,9 +149,9 @@ Dans cette procédure pas à pas, vous analysez un projet managé pour les erreu
 
        Activez la case à cocher **signer l’assembly** .
 
-       Dans la liste **choisir un fichier de clé de nom de chaîne** , sélectionnez **\<New... >** .
+       Dans la liste **choisir un fichier de clé de nom de chaîne** , sélectionnez **\<New…>** .
 
-       La boîte de dialogue **créer une clé de nom fort** s’affiche.
+       La boîte de dialogue **Créer une clé de nom fort** s'affiche.
 
        Dans le **nom du fichier de clé**, tapez TestKey.
 
@@ -163,7 +163,7 @@ Dans cette procédure pas à pas, vous analysez un projet managé pour les erreu
 
 - [CA2237 : Marquez les types ISerializable avec SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md): Microsoft. usage : ajoutez un attribut [Serializable] au type « Demo », car ce type implémente ISerializable.
 
-  - Ajoutez l’attribut `[Serializable ()]` à la classe `demo`.
+  - Ajoutez l' `[Serializable ()]` attribut à la classe `demo` .
 
        Regénérez le projet.
 

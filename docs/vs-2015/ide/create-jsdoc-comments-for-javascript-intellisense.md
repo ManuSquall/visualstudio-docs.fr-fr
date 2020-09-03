@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b974f3450b88ab22e58e284881f270c1b3d72298
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72619275"
 ---
 # <a name="create-jsdoc-comments-for-javascript-intellisense"></a>Créer des commentaires JSDoc pour IntelliSense JavaScript
@@ -26,17 +26,17 @@ IntelliSense dans Visual Studio affiche les informations que vous ajoutez à un 
 
 |  Balise JSDoc   |                       Syntaxe                        |                                                     Notes                                                      |
 |--------------|-----------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| @deprecated  |              @deprecated *description*              |                                   Spécifie une fonction ou méthode déconseillée.                                   |
-| @description |             @description *description*              |                              Spécifie la description d'une fonction ou d'une méthode.                               |
-|    @param    | @param {*type*} *NomParamètre*<em>description</em> | Spécifie les informations de paramètre dans une fonction ou méthode.<br /><br /> La machine à écrire prend également en charge @paramTag. |
+| @deprecated  |              @deprecated*Description*              |                                   Spécifie une fonction ou méthode déconseillée.                                   |
+| @description |             @description*Description*              |                              Spécifie la description d'une fonction ou d'une méthode.                               |
+|    @param    | @param {*type*} *NomParamètre*<em>description</em> | Spécifie les informations de paramètre dans une fonction ou méthode.<br /><br /> La machine à écrire prend également en charge @paramTag . |
 |  @property   |          @property {*type*} *NomPropriété*          |   Spécifie les informations, y compris une description, pour un champ ou un membre qui est défini sur un objet.    |
-|   @returns   |                  @returns {*type*}                  |           Spécifie une valeur de retour.<br /><br /> Pour la machine à écrire, utilisez @returnType au lieu de @returns.           |
-|   @summary   |               @summary *description*                |                   Spécifie la description d’une fonction ou d’une méthode (identique à @description).                   |
+|   @returns   |                  @returns {*type*}                  |           Spécifie une valeur de retour.<br /><br /> Pour la machine à écrire, utilisez @returnType au lieu de @returns .           |
+|   @summary   |               @summary*Description*                |                   Spécifie la description d’une fonction ou d’une méthode (identique à @description ).                   |
 |    @type     |                   @type {*type*}                    |                                Spécifie le type d'une constante ou d'une variable.                                |
 |   @typedef   |         @typedef {*type*} *NomTypePersonnalisé*          |                                            Spécifie un type personnalisé.                                            |
 
 ### <a name="examples"></a>Exemples
- L’exemple suivant illustre l’utilisation des balises @description, @param et @return JSDoc pour une fonction nommée `getArea`.
+ L’exemple suivant illustre l’utilisation des @description @param balises, et @return JSDoc pour une fonction nommée `getArea` .
 
 ```javascript
 /** @description Determines the area of a circle that has the specified radius parameter.
@@ -54,7 +54,7 @@ function getArea(radius) {
 
  ![Informations IntelliSense pour une fonction](../ide/media/js-intellisense-jsdoc-comments.png "JS_IntelliSense_JSDoc_Comments")
 
- L’exemple suivant montre comment utiliser la balise @typedef avec la balise @property.
+ L’exemple suivant montre comment utiliser la @typedef balise avec la @property balise.
 
 ```javascript
 /**
@@ -67,7 +67,7 @@ function getForecast(Weather) {
 var w = new Weather();
 ```
 
- L’exemple suivant illustre l’utilisation des balises @type JSDoc. Comme le montre cet exemple, l’ajout d’un seul astérisque (*) après les deux astérisques initiaux (\*\*) n’est pas obligatoire.
+ L’exemple suivant illustre l’utilisation des @type balises JSDoc. Comme le montre cet exemple, l’ajout d’un seul astérisque (*) après les deux astérisques initiaux (\*\*) n’est pas obligatoire.
 
 ```javascript
 /**
@@ -77,7 +77,7 @@ const RED = 'FF0000';
 
 ```
 
- L’exemple suivant montre comment utiliser la balise @deprecated JSDoc.
+ L’exemple suivant montre comment utiliser la @deprecated balise JSDoc.
 
 ```javascript
 /**

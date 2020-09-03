@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramHost2::GetHostId Microsoft Docs
+title: 'IDebugProgramHost2 :: GetHostId | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 6e02a78350fead837d4540c435b97a423dfdd471
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722320"
 ---
 # <a name="idebugprogramhost2gethostid"></a>IDebugProgramHost2::GetHostId
-Obtient l’identifiant de processus du processus d’hébergement de ce programme.
+Obtient l’identificateur de processus du processus qui héberge ce programme.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,9 +41,9 @@ int GetHostId( 
 
 ## <a name="parameters"></a>Paramètres
 `pdwId`\
-[dans, dehors] Une structure [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) qui est remplie avec les informations d’identification du processus.
+[in, out] Structure [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) qui est renseignée avec les informations relatives à l’identificateur de processus.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

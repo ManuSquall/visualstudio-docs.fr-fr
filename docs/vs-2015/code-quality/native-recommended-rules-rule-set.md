@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: db76627afdf44ef1c46ed9ff7a9e204da8eb112d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72608874"
 ---
 # <a name="native-recommended-rules-rule-set"></a>Ensemble de règles des règles recommandées natives
@@ -144,7 +144,7 @@ Les règles natives recommandées se concentrent sur les problèmes les plus cri
 |                       [C6705](../code-quality/c6705.md)                        |                Le nombre d’arguments attendu pour l’annotation ne correspond pas au nombre réel d’arguments pour l’annotation                 |
 |                       [C6706](../code-quality/c6706.md)                        |                                             Erreur d'annotation inattendue pour l'annotation                                              |
 |                       [C6995](../code-quality/c6995.md)                        |                                                     Échec de l’enregistrement du fichier journal XML                                                     |
-|                      [C26100](../code-quality/c26100.md)                       |                                                           Condition de concurrence critique                                                            |
+|                      [C26100](../code-quality/c26100.md)                       |                                                           Condition de concurrence                                                            |
 |                      [C26101](../code-quality/c26101.md)                       |                                            Échec de l’utilisation de l’opération verrouillée                                            |
 |                      [C26110](../code-quality/c26110.md)                       |                                                     Appelant qui ne détient pas de verrou                                                     |
 |                      [C26111](../code-quality/c26111.md)                       |                                                   Échec de libération du verrou par l’appelant                                                    |
@@ -156,7 +156,7 @@ Les règles natives recommandées se concentrent sur les problèmes les plus cri
 |                      [C28020](../code-quality/c28020.md)                       |                                               L’expression n’est pas vraie pour cet appel                                               |
 |                      [C28021](../code-quality/c28021.md)                       |                                           Le paramètre annoté doit être un pointeur                                           |
 |                      [C28022](../code-quality/c28022.md)                       |            La ou les classes de fonction sur cette fonction ne correspondent pas à la ou les classes de fonction sur le typedef utilisé pour la définir.            |
-|                      [C28023](../code-quality/c28023.md)                       |         La fonction assignée ou passée doit avoir une annotation \_Function_class \_ pour au moins une des classes         |
+|                      [C28023](../code-quality/c28023.md)                       |         La fonction affectée ou passée doit avoir une \_ annotation Function_class \_ pour au moins une des classes         |
 |                      [C28024](../code-quality/c28024.md)                       | Le pointeur de fonction assigné à est annoté avec la classe de fonction, qui n’est pas contenue dans la liste des classes de fonction. |
 |                      [C28039](../code-quality/c28039.md)                       |                                     Le type du paramètre réel doit correspondre exactement au type                                      |
 |                      [C28112](../code-quality/c28112.md)                       |            Une variable qui est accessible via une fonction Interlocked doit toujours être accessible via une fonction verrouillée.            |

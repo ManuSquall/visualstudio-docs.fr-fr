@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2054a55f0633d5d4add51fee2e933d9f4d829fcf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72609981"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Guide pratique pour affecter des procédures stockées pour effectuer des mises à jour, des insertions et des suppressions (Concepteur O/R)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Les procédures stockées peuvent être ajoutées au Concepteur O/R et être exécutées comme méthodes <xref:System.Data.Linq.DataContext> typiques. Elles peuvent également être utilisées pour substituer le comportement d’exécution par défaut [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] qui effectue des insertions, des mises à jour et des suppressions lorsque des modifications sont enregistrées à partir de classes d’entité dans une base de données (par exemple, lors de l’appel de la méthode <xref:System.Data.Linq.DataContext.SubmitChanges%2A>).
+Les procédures stockées peuvent être ajoutées au Concepteur O/R et être exécutées comme méthodes <xref:System.Data.Linq.DataContext> typiques. Elles peuvent également être utilisées pour substituer le comportement d’exécution par défaut [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] qui effectue des insertions, des mises à jour et des suppressions lorsque des modifications sont enregistrées à partir de classes d’entité dans une base de données (par exemple, lors de l’appel de la <xref:System.Data.Linq.DataContext.SubmitChanges%2A> méthode).
 
 > [!NOTE]
 > Si votre procédure stockée retourne des valeurs qui doivent être renvoyées au client (par exemple, les valeurs sont calculées dans la procédure stockée), créez des paramètres de sortie dans vos procédures stockées. Si vous ne pouvez pas utiliser de paramètres de sortie, écrivez une implémentation de méthode partielle au lieu de vous fier aux substitutions générées par le Concepteur O/R. Les membres mappés aux valeurs générées par base de données doivent avoir les valeurs appropriées lorsque les opérations INSERT ou UPDATE se sont correctement achevées. Pour plus d’informations, consultez [responsabilités du développeur en matière de substitution du comportement par défaut](https://msdn.microsoft.com/library/c6909ddd-e053-46a8-980c-0e12a9797be1).
@@ -34,9 +34,9 @@ Les procédures stockées peuvent être ajoutées au Concepteur O/R et être ex�
 
 #### <a name="to-assign-stored-procedures-to-override-the-default-behavior-of-an-entity-class"></a>Pour assigner des procédures stockées afin de substituer le comportement par défaut d'une classe d'entité
 
-1. Ouvrez le fichier **LINQ to SQL** dans le concepteur. (Double-cliquez sur le fichier. dbml dans **Explorateur de solutions**.)
+1. Ouvrez le fichier **LINQ to SQL** dans le concepteur. (Double-cliquez sur le fichier .dbml dans l’**Explorateur de solutions**.)
 
-2. Dans **Explorateur de serveurs** /**Explorateur de base de données**, développez **procédures stockées** et localisez les procédures stockées que vous souhaitez utiliser pour les commandes d’insertion, de mise à jour et/ou de suppression de la classe d’entité.
+2. Dans **Explorateur de serveurs** / **Explorateur de base de données**, développez **procédures stockées** et localisez les procédures stockées que vous souhaitez utiliser pour les commandes d’insertion, de mise à jour et/ou de suppression de la classe d’entité.
 
 3. Faites glisser la procédure stockée vers le Concepteur O/R.
 

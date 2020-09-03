@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4fc312736508a11d43cadf789b08aae77c528d35
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72608680"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>Classes Visual C++ dans le Concepteur de classes
@@ -56,7 +56,7 @@ class Penguin : public Bird, public Swimmer {};
 
  Pour plus d’informations sur l’héritage de classes multiples, consultez [(NOTINBUILD) Héritage multiple](https://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca) et [Plusieurs classes de base](https://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740).
 
-## <a name="abstract-classes"></a>Classes abstraites
+## <a name="abstract-classes"></a>classes abstraites
  Le Concepteur de classes prend en charge les classes abstraites (également appelées "classes de base abstraites"). Il s’agit de classes que vous n’instanciez jamais, mais desquelles vous pouvez dériver d’autres classes. Dans le cadre de l’exemple "Héritage multiple" présenté précédemment dans ce document, vous pouvez instancier la classe `Bird` comme objets individuels, comme suit :
 
 ```
@@ -152,7 +152,7 @@ typedef struct
 
 |Élément de code|Vue Concepteur de classes|
 |------------------|-------------------------|
-|`class A`<br /><br /> `{`<br /><br /> `template <class T, class U>`<br /><br /> `void func(T a, U b);`<br /><br /> `template <class T>`<br /><br /> `void func(T a, int b);`<br /><br /> `};`|`A`<br /><br /> func\<T, U> (+ 1 surcharge)|
+|`class A`<br /><br /> `{`<br /><br /> `template <class T, class U>`<br /><br /> `void func(T a, U b);`<br /><br /> `template <class T>`<br /><br /> `void func(T a, int b);`<br /><br /> `};`|`A`<br /><br /> Func \<T, U> (+ 1 surcharge)|
 |`template <class T1>`<br /><br /> `class A {`<br /><br /> `template <class T2>`<br /><br /> `class B {};`<br /><br /> `};`<br /><br /> `template<> template<>`<br /><br /> `class A<type>::B<type> {};`|`A<T1>`<br /><br /> Classe de modèle<br /><br /> `B<T2>`<br /><br /> Classe de modèle<br /><br /> (B est contenu dans la classe A sous **Types imbriqués**)|
 |`template <class T>`<br /><br /> `class C {};`<br /><br /> `class A : C<int> {};`|`A`<br /><br /> Classe<br /><br /> -> C\<int><br /><br /> `C<T>`<br /><br /> Classe de modèle|
 
@@ -170,4 +170,4 @@ typedef struct
 |`class B {`<br /><br /> `template <class T>`<br /><br /> `T min (const T &a, const T &b);`<br /><br /> `};`|`B`<br /><br /> min \<T>|
 
 ## <a name="see-also"></a>Voir aussi
- [Utilisation du code C++ Visual (Concepteur de classes) ](../ide/working-with-visual-cpp-code-class-designer.md) des [Classes et des structs ](https://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873) [Anonymous types de classes ](https://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8) [ (NOTINBUILD) plusieurs héritages ](https://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca) [Multiple les classes de base ](https://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740) [Templates](https://msdn.microsoft.com/library/90fcc14a-2092-47af-9d2e-dba26d25b872)
+ [Utilisation de classes de Visual C++ code (Concepteur de classes)](../ide/working-with-visual-cpp-code-class-designer.md) [et de structs](https://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873) [types de classes anonymes](https://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8) [(NOTINBUILD)](https://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca) plusieurs [classes de base](https://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740) [Templates](https://msdn.microsoft.com/library/90fcc14a-2092-47af-9d2e-dba26d25b872) d’héritage multiple

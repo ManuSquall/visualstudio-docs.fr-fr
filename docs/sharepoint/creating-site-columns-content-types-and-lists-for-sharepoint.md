@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 538d82794fcecb91e4f13ab6d7718d0bf407b86f
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72984517"
 ---
 # <a name="create-site-columns-content-types-and-lists-for-sharepoint"></a>Créer des colonnes de site, des types de contenu et des listes pour SharePoint
@@ -31,7 +31,7 @@ ms.locfileid: "72984517"
 ## <a name="site-columns"></a>Colonnes de site
  Les colonnes de site font partie des éléments les plus critiques que vous puissiez ajouter à un projet SharePoint. Une colonne de site représente un type de données, tel qu'un numéro de téléphone, un commentaire, ou le nom d'une ville d'un contact dans une liste de contacts.
 
- Le modèle de projet de site rend la création de colonnes de site plus facile que dans la version antérieure de Visual Studio. Après avoir créé une colonne de site, vous pouvez modifier le XML dans le fichier *Elements. xml* de la colonne de site pour inclure les informations souhaitées, telles que son nom d’affichage, son type de données et le groupe dans lequel vous souhaitez que la colonne de site apparaisse dans SharePoint. Pour plus d’informations sur les colonnes de site, consultez [Présentation des colonnes](/previous-versions/office/developer/sharepoint-2010/ms450825(v=office.14)).
+ Le modèle de projet de site rend la création de colonnes de site plus facile que dans la version antérieure de Visual Studio. Après avoir créé une colonne de site, vous pouvez modifier le XML dans le fichier *Elements.xml* de la colonne de site pour inclure les informations souhaitées, telles que son nom d’affichage, son type de données et le groupe dans lequel vous souhaitez que la colonne de site apparaisse dans SharePoint. Pour plus d’informations sur les colonnes de site, consultez [Présentation des colonnes](/previous-versions/office/developer/sharepoint-2010/ms450825(v=office.14)).
 
 ## <a name="content-types-and-lists"></a>Types de contenu et listes
  Les types de contenu et listes font partie des éléments les plus fréquemment utilisés dans SharePoint.
@@ -44,7 +44,7 @@ ms.locfileid: "72984517"
 
 ## <a name="related-topics"></a>Rubriques connexes
 
-|Titre|Description|
+|Intitulé|Description|
 |-----------|-----------------|
 |[Procédure pas à pas : création d’une colonne de site, d’un type de contenu et d’une liste pour SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|Illustre comment créer des colonnes de site utilisées dans un type de contenu personnalisé. Le type de contenu est ensuite utilisé dans une liste personnalisée.|
 

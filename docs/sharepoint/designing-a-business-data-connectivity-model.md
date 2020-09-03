@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 16a410b59cef6f282d2d27ad90a90013636d6489
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72984463"
 ---
 # <a name="design-a-business-data-connectivity-model"></a>Concevoir un modèle de connectivité de données métiers
@@ -26,7 +26,7 @@ ms.locfileid: "72984463"
 ## <a name="add-entities"></a>Ajouter des entités
  Vous pouvez ajouter une entité en faisant glisser ou en copiant une **entité** de la **boîte à outils** Visual Studio vers le concepteur BDC. Pour plus d’informations, consultez [Comment : ajouter une entité à un modèle](../sharepoint/how-to-add-an-entity-to-a-model.md).
 
- Définissez les champs de l’entité dans une classe. Par exemple, vous pouvez ajouter un champ nommé `Address` à une classe `Customer`. Vous pouvez ajouter une nouvelle classe au projet ou utiliser une classe existante créée à l’aide d’autres outils tels que le Concepteur Objet Relationnel (Concepteur O/R). Le nom de l’entité et le nom de la classe qui représente l’entité ne doivent pas nécessairement correspondre. Vous associez la classe à l’entité lorsque vous définissez les méthodes dans votre modèle.
+ Définissez les champs de l’entité dans une classe. Par exemple, vous pouvez ajouter un champ nommé `Address` à une `Customer` classe. Vous pouvez ajouter une nouvelle classe au projet ou utiliser une classe existante créée à l’aide d’autres outils tels que le Concepteur Objet Relationnel (Concepteur O/R). Le nom de l’entité et le nom de la classe qui représente l’entité ne doivent pas nécessairement correspondre. Vous associez la classe à l’entité lorsque vous définissez les méthodes dans votre modèle.
 
 ## <a name="add-methods"></a>Ajouter des méthodes
  Le service BDC appelle des méthodes dans votre modèle lorsque les utilisateurs affichent, ajoutent, mettent à jour ou suppriment des informations dans une liste ou un composant WebPart basé sur votre modèle. Vous devez ajouter une méthode au modèle pour chaque tâche que l’utilisateur peut effectuer. Créez des méthodes en sélectionnant l’un des cinq types de méthode de base dans la fenêtre Détails de la **méthode BDC** . Le tableau suivant décrit les cinq méthodes de base d’un modèle BDC.
@@ -35,14 +35,14 @@ ms.locfileid: "72984463"
 |------------|-----------------|
 |Recherche|Retourne une collection d’instances d’entité. Appelé lorsque l’utilisateur ouvre la liste ou le composant WebPart. Pour plus d’informations, consultez [Comment : ajouter une méthode de recherche](../sharepoint/how-to-add-a-finder-method.md).|
 |recherche spécifique|Retourne une instance d’entité spécifique. Appelée lorsqu’un utilisateur affiche les détails d’un élément spécifique dans une liste. Pour plus d’informations, consultez [Comment : ajouter une méthode de recherche spécifique](../sharepoint/how-to-add-a-specific-finder-method.md).|
-|créateur|Ajoute de nouvelles données à la source de données d’une entité. Appelé lorsque les utilisateurs choisissent le bouton **nouvel élément** sur le ruban d’une liste basée sur le modèle. Pour plus d’informations, consultez [Comment : ajouter une méthode Creator](../sharepoint/how-to-add-a-creator-method.md).|
+|Creator|Ajoute de nouvelles données à la source de données d’une entité. Appelé lorsque les utilisateurs choisissent le bouton **nouvel élément** sur le ruban d’une liste basée sur le modèle. Pour plus d’informations, consultez [Comment : ajouter une méthode Creator](../sharepoint/how-to-add-a-creator-method.md).|
 |programme de mise à jour|Modifie les données d’une liste. Appelé lorsque les utilisateurs mettent à jour des informations dans une liste. Pour plus d’informations, consultez [Comment : ajouter une méthode de](../sharepoint/how-to-add-an-updater-method.md)mise à jour.|
 |programme de suppression|Supprime des données. Appelé lorsque les utilisateurs suppriment un élément de la liste. Pour plus d’informations, consultez [Comment : ajouter une méthode de suppression](../sharepoint/how-to-add-a-deleter-method.md).|
 
 ## <a name="define-method-parameters"></a>Définir les paramètres de méthode
  Quand vous créez une méthode, Visual Studio ajoute les paramètres d’entrée et de sortie appropriés pour le type de méthode. Ces paramètres sont simplement des espaces réservés. Dans la plupart des cas, vous devez modifier les paramètres afin qu’ils passent ou retournent le type de données correct. Par exemple, une méthode Finder retourne une chaîne par défaut. Dans la plupart des cas, vous souhaitez modifier le paramètre de retour de la méthode Finder afin qu’il retourne une collection d’entités. Pour ce faire, vous pouvez modifier le descripteur de type du paramètre. Un descripteur de type est une collection d’attributs qui décrit le type de données d’un paramètre. Pour plus d’informations, consultez [Comment : définir le descripteur de type d’un paramètre](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
 
- Visual Studio vous permet de copier des descripteurs de type entre des paramètres dans le modèle. Par exemple, vous pouvez définir un descripteur de type nommé `CustomerTD` pour le paramètre de retour de la méthode `GetCustomer`. Vous pouvez copier le descripteur de type `CustomerTD` dans l' **Explorateur BDC**, puis coller ce descripteur de type dans le paramètre d’entrée de la méthode `CreateCustomer`. Cela vous empêche d’avoir à définir plusieurs fois le même descripteur de type.
+ Visual Studio vous permet de copier des descripteurs de type entre des paramètres dans le modèle. Par exemple, vous pouvez définir un descripteur de type nommé `CustomerTD` pour le paramètre de retour de la `GetCustomer` méthode. Vous pouvez copier le `CustomerTD` descripteur de type dans l' **Explorateur BDC**, puis coller ce descripteur de type dans le paramètre d’entrée de la `CreateCustomer` méthode. Cela vous empêche d’avoir à définir plusieurs fois le même descripteur de type.
 
 ## <a name="method-instances"></a>Instances de méthode
  Quand vous créez une méthode, Visual Studio ajoute une instance de méthode par défaut. Une instance de méthode est une référence à une méthode, plus les valeurs par défaut pour les paramètres. Une méthode unique peut avoir plusieurs instances de méthode. Chaque instance est une combinaison de la signature de la méthode et d’un ensemble de valeurs par défaut. Pour plus d’informations, consultez [Comment : définir le descripteur de type d’un paramètre](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
@@ -71,7 +71,7 @@ ms.locfileid: "72984463"
 ## <a name="validate-the-model"></a>Valider le modèle
  Vous pouvez valider votre modèle pendant le développement. Visual Studio identifie les problèmes qui peuvent empêcher votre modèle de se comporter comme prévu. Ces problèmes s’affichent dans le **liste d’erreurs**Visual Studio.
 
- Vous pouvez valider un modèle en ouvrant le menu contextuel du concepteur BDC, puis en choisissant **valider**. Si le modèle contient des erreurs, celles-ci apparaissent dans la **liste d’erreurs**. Vous pouvez rapidement déplacer le curseur vers le code qui contient une erreur en double-cliquant sur l’erreur dans la liste. Vous pouvez également choisir les touches **F8** ou **MAJ**+**F8** à plusieurs reprises pour effectuer un pas à pas détaillé ou reculer des erreurs dans la liste.
+ Vous pouvez valider un modèle en ouvrant le menu contextuel du concepteur BDC, puis en choisissant **valider**. Si le modèle contient des erreurs, celles-ci apparaissent dans la **liste d’erreurs**. Vous pouvez rapidement déplacer le curseur vers le code qui contient une erreur en double-cliquant sur l’erreur dans la liste. Vous pouvez également choisir les touches **F8** ou **MAJ** + **F8** à plusieurs reprises pour effectuer un pas à pas détaillé ou reculer des erreurs dans la liste.
 
  Des erreurs de validation peuvent se produire lorsque les règles du modèle sont enfreintes d’une certaine manière. Par exemple, si la propriété **IsCollection** d’un descripteur de type a la valeur **true**, mais qu’il n’existe aucun descripteur de type enfant, une erreur de validation s’affiche. Vous devrez peut-être faire référence aux règles d’un modèle BDC pour comprendre certaines erreurs qui s’affichent dans le **liste d’erreurs**Visual Studio. Pour plus d’informations sur les règles d’un modèle BDC, consultez [schéma BDCMetadata](/previous-versions/office/developer/sharepoint-2010/ee556387(v=office.14)).
 
@@ -87,9 +87,9 @@ ms.locfileid: "72984463"
 
 |Tâche|Option|
 |----------|------------|
-|Pour déployer des modèles dans le service BDC.|Éditer|
+|Pour déployer des modèles dans le service BDC.|Modifier|
 |Pour créer des listes et des composants WebPart à l’aide de types de contenu externes (entités) dans votre modèle.|Sélectionnable dans les clients|
-|Pour créer, lire, mettre à jour et supprimer des données d’entité.|Exécuter|
+|Pour créer, lire, mettre à jour et supprimer des données d’entité.|Execute|
 
  Pour plus d’informations sur ces paramètres, consultez [gestion des services Business Data Connectivity](/previous-versions/office/sharepoint-server-2010/ee661742(v=office.14)).
 
@@ -124,7 +124,7 @@ ms.locfileid: "72984463"
 |[Comment : définir le descripteur de type d’un paramètre](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)|Montre comment définir des types de données de paramètre dans le modèle.|
 |[Comment : définir une instance de méthode](../sharepoint/how-to-define-a-method-instance.md)|Montre comment créer une instance d’une méthode exécutée par le BDC.|
 |[Comment : ajouter un descripteur de filtre à une méthode de recherche](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md)|Montre comment permettre aux utilisateurs de limiter le nombre d’instances retournées par une méthode de recherche.|
-|[Création d’une association entre des entités](../sharepoint/creating-an-association-between-entities.md)|Décrit comment vous pouvez définir des relations entre des entités dans le modèle. Les composants WebPart de données métiers, les listes externes et les applications personnalisées peuvent afficher ces relations de données dans une interface utilisateur (IU).|
+|[Création d'une association entre des entités](../sharepoint/creating-an-association-between-entities.md)|Décrit comment vous pouvez définir des relations entre des entités dans le modèle. Les composants WebPart de données métiers, les listes externes et les applications personnalisées peuvent afficher ces relations de données dans une interface utilisateur (IU).|
 |[Comment : créer une association entre des entités](../sharepoint/how-to-create-an-association-between-entities.md)|Montre comment définir des relations entre des entités dans le modèle.|
 |[Procédure pas à pas : Createan liste externe dans SharePoint à l’aide de données d’entreprise](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)|Fournit des instructions pas à pas qui vous montrent comment créer et tester un modèle qui affiche des contacts dans une liste externe SharePoint.|
 |[Intégrer des données métiers dans SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)|Fournit une vue d’ensemble de la création et de la conception de modèles pour le service BDC.|

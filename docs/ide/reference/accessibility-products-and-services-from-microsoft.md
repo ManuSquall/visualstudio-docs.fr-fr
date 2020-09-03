@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 79e9ead07e58a1b359e67289913581a533185a45
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72919101"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Services et produits d'accessibilité de Microsoft
@@ -35,7 +35,7 @@ Microsoft s'attache à rendre ses produits et services conviviaux. Cette page fo
 > [!IMPORTANT]
 > Les informations contenues dans cette page peuvent s’appliquer uniquement aux utilisateurs qui ont acheté leurs produits Microsoft aux États-Unis. Si vous avez obtenu ce produit en dehors des États-Unis, visitez le site web [Accessibilité Microsoft](https://www.microsoft.com/accessibility/) pour obtenir la liste des numéros de téléphone et des adresses des services de support Microsoft. Vous pouvez contacter votre filiale pour savoir si les types de produits et de services décrits dans cette page sont disponibles dans votre région. Les informations sur l’accessibilité sont disponibles dans d’autres langues.
 
-## <a name="accessibility-features-of-windows"></a><a name="windows"></a>Caractéristiques d’accessibilité de Windows
+## <a name="accessibility-features-of-windows"></a><a name="windows"></a> Fonctionnalités d’accessibilité de Windows
 
 Le système d’exploitation Windows intègre plusieurs fonctionnalités d’accessibilité utiles aux personnes ayant des difficultés à taper au clavier ou à utiliser une souris, qui sont aveugles ou malvoyantes ou qui sont atteintes de surdité ou de troubles de l’audition. Les fonctionnalités sont installées en même temps que le produit. Pour plus d’informations sur ces fonctionnalités, consultez l’aide de Windows et le [site web Microsoft consacré à l’accessibilité](https://www.microsoft.com/accessibility/).
 
@@ -51,18 +51,18 @@ Un large éventail de produits de technologie d’assistance destinés aux perso
 
 Si vous utilisez une technologie d’assistance, veillez à en contacter le fournisseur avant de mettre à niveau votre logiciel ou matériel pour vous renseigner sur les problèmes de compatibilité éventuels.
 
-## <a name="documentation-in-alternative-formats"></a><a name="altfortmats"></a>Documentation dans des formats alternatifs
+## <a name="documentation-in-alternative-formats"></a><a name="altfortmats"></a> Documentation dans d’autres formats
 
 Si vous avez des difficultés à lire ou manipuler les documents imprimés, vous pouvez obtenir la documentation de nombreux produits Microsoft dans des formats plus accessibles. Vous pouvez consulter l’index de la documentation produit accessible sur le [site web Microsoft consacré à l’accessibilité](https://www.microsoft.com/accessibility/).
 
 De plus, vous pouvez vous procurer des publications Microsoft supplémentaires auprès de Learning Ally. Learning Ally distribue ces documents aux membres inscrits et éligibles de son service de distribution. Pour plus d’informations sur la disponibilité de la documentation produit de Microsoft et des ouvrages de Microsoft Press, contactez :
 
 > Learning Ally<br />
-> 20 Roszel Road<br /> Princeton, NJ 08540<br /><br /> Site Web d’Learning Ally :[http://www.learningally.org](https://learningally.org/)
+> 20 Roszel Road<br /> Princeton, NJ 08540<br /><br /> Site Web de formation : [http://www.learningally.org](https://learningally.org/)
 
 Comme les adresses web peuvent changer, peut-être ne pourrez-vous pas vous connecter aux sites web ou sites mentionnés ici.
 
-## <a name="customer-service-for-people-with-hearing-impairments"></a><a name="hearing"></a>Service à la clientèle pour les personnes malentendantes
+## <a name="customer-service-for-people-with-hearing-impairments"></a><a name="hearing"></a> Service clientèle pour les personnes ayant des handicaps auditifs
 
 Si vous êtes atteint de surdité ou de troubles de l’audition, un accès complet aux services clientèle et produits Microsoft est disponible via un service télétexte/téléscripteur (TTY/TDD) :
 
@@ -72,7 +72,7 @@ Si vous êtes atteint de surdité ou de troubles de l’audition, un accès comp
 
 Le support Microsoft est soumis au tarif et aux conditions en vigueur au moment de l’utilisation du service.
 
-## <a name="for-more-information"></a><a name="moreinfo"></a>Pour plus d’informations
+## <a name="for-more-information"></a><a name="moreinfo"></a> Pour plus d’informations
 
 Pour plus d’informations sur la façon dont les technologies d’accessibilité pour ordinateurs contribuent à améliorer la vie des personnes handicapées, consultez le [site web Microsoft consacré à l’accessibilité](https://www.microsoft.com/accessibility/).
 
@@ -85,6 +85,6 @@ Pour plus d’informations sur la façon dont les technologies d’accessibilit�
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Ressources pour concevoir des applications accessibles](../../ide/reference/resources-for-designing-accessible-applications.md)
-* [Caractéristiques d’accessibilité de Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
+* [Ressources pour la conception d’applications accessibles](../../ide/reference/resources-for-designing-accessible-applications.md)
+* [Fonctionnalités d’accessibilité de Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
 * [Accessibilité de Visual Studio pour Mac](/visualstudio/mac/accessibility)

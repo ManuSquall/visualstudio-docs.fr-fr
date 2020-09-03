@@ -1,5 +1,5 @@
 ---
-title: DISASSEMBLY_STREAM_FIELDS Microsoft Docs
+title: DISASSEMBLY_STREAM_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d10f2143cbefa86442e4087ac098020f5f2bd6ac
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737357"
 ---
 # <a name="disassembly_stream_fields"></a>DISASSEMBLY_STREAM_FIELDS
-Précise les informations à récupérer sur un champ de démontage.
+Spécifie les informations à récupérer à propos d’un champ Code machine.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -66,57 +66,57 @@ public enum enum_DISASSEMBLY_STREAM_FIELDS {
 
 ## <a name="fields"></a>Champs
 `DSF_ADDRESS`\
-Initialiser/utiliser `bstrAddress` le champ.
+Initialiser/utiliser le `bstrAddress` champ.
 
 `DSF_ADDRESSOFFSET`\
-Initialiser/utiliser `bstrAddressOffset` le champ.
+Initialiser/utiliser le `bstrAddressOffset` champ.
 
 `DSF_CODEBYTES`\
-Initialiser/utiliser `bstrCodeBytes` le champ.
+Initialiser/utiliser le `bstrCodeBytes` champ.
 
 `DSF_OPCODE`\
-Initialiser/utiliser `bstrOpCode` le champ.
+Initialiser/utiliser le `bstrOpCode` champ.
 
 `DSF_OPERANDS`\
-Initialiser/utiliser `bstrOperands` le champ.
+Initialiser/utiliser le `bstrOperands` champ.
 
 `DSF_SYMBOL`\
-Initialiser/utiliser `bstrSymbol` le champ.
+Initialiser/utiliser le `bstrSymbol` champ.
 
 `DSF_CODELOCATIONID`\
-Initialiser/utiliser `uCodeLocationId` le champ.
+Initialiser/utiliser le `uCodeLocationId` champ.
 
 `DSF_POSITION`\
-Initialiser/utiliser `posBeg` les `posEnd` champs et les champs.
+Initialisez/utilisez les `posBeg` `posEnd` champs et.
 
 `DSF_DOCUMENTURL`\
-Initialiser/utiliser `bstrDocumentUrl` le champ.
+Initialiser/utiliser le `bstrDocumentUrl` champ.
 
 `DSF_BYTEOFFSET`\
-Initialiser/utiliser `dwByteOffset` le champ.
+Initialiser/utiliser le `dwByteOffset` champ.
 
 `DSF_FLAGS`\
-Initialiser/utiliser `dwFlags` le champ ([DISASSEMBLY_FLAGS).](../../../extensibility/debugger/reference/disassembly-flags.md)
+Initialisez/utilisez le `dwFlags` champ ([DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)).
 
 `DSF_OPERANDS_SYMBOLS`\
-Inclure des noms `bstrOperands` de symboles sur le terrain.
+Incluez les noms de symboles dans le `bstrOperands` champ.
 
 `DSF_ALL`\
-Spécifie tous les champs pour le flux de démontage.
+Spécifie tous les champs du flux de code machine.
 
 ## <a name="remarks"></a>Notes
-Passé comme paramètre à la méthode [Lire](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) pour indiquer quels champs de la structure [de démonmblyData](../../../extensibility/debugger/reference/disassemblydata.md) doivent être paralysés.
+Passé en tant que paramètre à la méthode [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) pour indiquer les champs de la structure [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) à initialiser.
 
-Utilisé pour `dwFields` le `DisassemblyData` membre de la structure pour indiquer quels champs sont utilisés et valides lorsque la structure est retournée.
+Utilisé pour le `dwFields` membre de la `DisassemblyData` structure pour indiquer les champs qui sont utilisés et valides lorsque la structure est retournée.
 
-Ces valeurs peuvent être combinées avec un peu plus. `OR`
+Ces valeurs peuvent être combinées avec une opération de bits `OR` .
 
-## <a name="requirements"></a>Spécifications
-En-tête: msdbg.h
+## <a name="requirements"></a>Configuration requise
+En-tête : msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Espace de noms : Microsoft. VisualStudio. Debugger. Interop
 
-Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

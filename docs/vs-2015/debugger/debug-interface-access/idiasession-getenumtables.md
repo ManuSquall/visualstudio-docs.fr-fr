@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f2196da51a92d79a302c4efcd04eccbcf38a7ad6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190734"
 ---
 # <a name="idiasessiongetenumtables"></a>IDiaSession::getEnumTables
@@ -35,13 +35,13 @@ HRESULT getEnumTables ( 
   
 #### <a name="parameters"></a>Paramètres  
  `ppEnumTables`  
- [out] Retourne un [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md) objet. Utilisez cette interface pour énumérer les tables dans le magasin de symboles.  
+ à Retourne un objet [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md) . Utilisez cette interface pour énumérer les tables dans le magasin de symboles.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="example"></a>Exemple  
- Cet exemple présente une fonction générale qui utilise le `getEnumTables` méthode pour obtenir un objet énumérateur spécifique. Si l’énumérateur est trouvé, la fonction retourne un pointeur qui peut être casté vers l’interface souhaitée ; Sinon, la fonction retourne `NULL`.  
+ Cet exemple présente une fonction générale qui utilise la `getEnumTables` méthode pour obtenir un objet énumérateur spécifique. Si l’énumérateur est trouvé, la fonction retourne un pointeur qui peut être casté en l’interface souhaitée ; Sinon, la fonction retourne `NULL` .  
   
 ```cpp#  
 IUnknown *GetTable(IDiaSession *pSession, REFIID iid)  

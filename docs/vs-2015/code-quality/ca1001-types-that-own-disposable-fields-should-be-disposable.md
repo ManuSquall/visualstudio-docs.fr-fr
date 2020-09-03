@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: dab4532f082bd81eaa7b812eb038c5957636d453
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548315"
 ---
 # <a name="ca1001-types-that-own-disposable-fields-should-be-disposable"></a>CA1001 : Les types qui possèdent des champs supprimables doivent être supprimables
@@ -32,7 +32,7 @@ ms.locfileid: "85548315"
 |Category|Microsoft. Design|
 |Modification avec rupture|Sans rupture : si le type n’est pas visible à l’extérieur de l’assembly.<br /><br /> Avec rupture : si le type est visible à l’extérieur de l’assembly.|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Une classe déclare et implémente un champ d’instance qui est un <xref:System.IDisposable?displayProperty=fullName> type et la classe n’implémente pas <xref:System.IDisposable> .
 
 ## <a name="rule-description"></a>Description de la règle
