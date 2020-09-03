@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 66af4d95707be99865df3df32751215cf5eb10b2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68181170"
 ---
-# <a name="exceptioninfo"></a>EXCEPTION_INFO
+# <a name="exception_info"></a>EXCEPTION_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Décrit une exception ou une erreur d’exécution levées par le programme en cours de débogage.  
+Décrit une exception ou une erreur d’exécution levée par le programme en cours de débogage.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -50,35 +50,35 @@ public struct EXCEPTION_INFO { 
   
 ## <a name="members"></a>Membres  
  pProgram  
- Le [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objet qui représente le programme dans lequel l’exception s’est produite.  
+ Objet [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) qui représente le programme dans lequel l’exception s’est produite.  
   
  bstrProgramName  
- Le nom du programme dans lequel l’exception s’est produite.  
+ Nom du programme dans lequel l’exception s’est produite.  
   
  bstrExceptionName  
- Le nom de l’exception.  
+ Nom de l'exception.  
   
  dwCode  
- Le code d’identification de l’erreur d’exception ou d’exécution.  
+ Code d’identification de l’erreur d’exception ou d’exécution.  
   
  dwState  
- Une valeur comprise entre le [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md) énumération qui définit l’état de l’exception.  
+ Valeur de l’énumération [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md) qui définit l’état de l’exception.  
   
  guidType  
- L’identificateur de langue GUID, soit `guidLang` ou `guidEng`.  
+ Identificateur de langue GUID, `guidLang` ou `guidEng` .  
   
 ## <a name="remarks"></a>Notes  
- Cette structure est passée en tant que paramètre à la [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) et [RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md) méthodes. Cette structure est également passée à la [GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md) méthode doit être renseigné.  
+ Cette structure est passée en tant que paramètre aux méthodes [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) et [RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md) . Cette structure est également passée à la méthode [GetException](../../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md) à remplir.  
   
 ## <a name="requirements"></a>Configuration requise  
- En-tête : msdbg.h  
+ En-tête : msdbg. h  
   
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft. VisualStudio. Debugger. Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
- [Structures et Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Structures et unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)   

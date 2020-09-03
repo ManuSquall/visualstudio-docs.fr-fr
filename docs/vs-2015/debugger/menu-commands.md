@@ -13,45 +13,45 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 640d4586d851be6f4335ed346e0e155acb4ae902
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68181207"
 ---
 # <a name="menu-commands"></a>Commandes de menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Les rubriques d’aide dans cette section répertorient les commandes disponibles dans les menus Spy ++.  
+Les rubriques d’aide de cette section répertorient les commandes disponibles dans les menus Spy + +.  
   
 ## <a name="in-this-section"></a>Dans cette section  
- [Commandes du menu Spy](../debugger/spy-menu-commands.md)  
- Décrit chaque commande disponible dans le **Spy** menu.  
+ [commandes du menu Spy](../debugger/spy-menu-commands.md)  
+ Décrit chaque commande disponible à partir du menu **Spy** .  
   
- [Commandes du menu Arborescence](../debugger/tree-menu-commands.md)  
- Décrit chaque commande disponible dans le **arborescence** menu.  
+ [commandes du menu Arborescence](../debugger/tree-menu-commands.md)  
+ Décrit chaque commande disponible dans le menu de l' **arborescence** .  
   
- [Commandes du menu Rechercher](../debugger/search-menu-commands.md)  
- Décrit chaque commande disponible dans le **recherche** menu.  
+ [commandes du menu Rechercher](../debugger/search-menu-commands.md)  
+ Décrit chaque commande disponible dans le menu **Rechercher** .  
   
- [Commandes du menu Affichage](../debugger/view-menu-commands.md)  
- Décrit chaque commande disponible dans le **vue** menu.  
+ [commandes du menu Affichage](../debugger/view-menu-commands.md)  
+ Décrit chaque commande disponible dans le menu **affichage** .  
   
- [Commandes du menu Messages](../debugger/messages-menu-commands.md)  
- Décrit chaque commande disponible dans le **Messages** menu.  
+ [commandes du menu Messages](../debugger/messages-menu-commands.md)  
+ Décrit chaque commande disponible dans le menu **messages** .  
   
- [Commandes du menu Fenêtre](../debugger/window-menu-commands.md)  
- Décrit chaque commande disponible dans le **fenêtre** menu.  
+ [commandes du menu Fenêtre](../debugger/window-menu-commands.md)  
+ Décrit chaque commande disponible dans le menu **fenêtre** .  
   
- [Commandes du menu Aide](../debugger/help-menu-commands.md)  
- Décrit chaque commande disponible dans le **aide** menu.  
+ [commandes du menu Aide](../debugger/help-menu-commands.md)  
+ Décrit chaque commande disponible dans le menu **aide** .  
   
-## <a name="related-sections"></a>Rubriques connexes  
- [Utilisation de Spy++](../debugger/using-spy-increment.md)  
- Présente l’outil Spy ++ et explique comment il peut être utilisé.  
+## <a name="related-sections"></a>Sections connexes  
+ [Utiliser Spy++](../debugger/using-spy-increment.md)  
+ Présente l’outil Spy + + et explique comment l’utiliser.  
   
  [Vues Spy++](../debugger/spy-increment-views.md)  
- Explique les arborescences Spy ++ de windows, les messages, les processus et les threads.  
+ Explique les vues de l’arborescence Spy + + des fenêtres, des messages, des processus et des threads.  
   
- [Informations de référence sur Spy++](../debugger/spy-increment-reference.md)  
- Inclut cette section et des sections décrivant chaque boîte de dialogue Spy ++.
+ [Référence Spy++](../debugger/spy-increment-reference.md)  
+ Comprend cette section et les sections décrivant chaque boîte de dialogue Spy + +.

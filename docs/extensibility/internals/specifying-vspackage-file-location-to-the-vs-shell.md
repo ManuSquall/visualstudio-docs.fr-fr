@@ -1,5 +1,5 @@
 ---
-title: Spécifier l’emplacement du fichier VSPackage à la coque VS (fr) Microsoft Docs
+title: Spécification de l’emplacement du fichier VSPackage dans le shell VS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,21 +12,21 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f112da4e79bff06d12472f0af7a3fe47b2f25da4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80704979"
 ---
 # <a name="specifying-vspackage-file-location-to-the-vs-shell"></a>Spécification de l’emplacement du fichier VSPackage au shell Visual Studio
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]doit être en mesure de localiser le DLL d’assemblage pour charger le VSPackage. Vous pouvez le localiser de diverses façons, comme décrit dans le tableau suivant.
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] doit être en mesure de localiser la DLL d’assembly pour charger le VSPackage. Vous pouvez le localiser de différentes manières, comme décrit dans le tableau suivant.
 
 | Méthode | Description |
 | - | - |
-| Utilisez la clé de registre CodeBase. | La clé CodeBase peut [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] être utilisée pour charger l’assemblage VSPackage à partir de n’importe quelle trajectoire de fichier entièrement qualifiée. La valeur de la clé doit être le chemin de fichier vers le DLL. C’est la meilleure [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] façon d’avoir charger votre assemblage de paquets. Cette technique est parfois appelée la « technique d’annuaire d’installation privée de CodeBase». Lors de l’inscription, la valeur de la base de <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.RegistrationContext> code est transmise aux classes d’attribut d’enregistrement par une instance du type. |
-| Placez le DLL dans le répertoire **PrivateAssemblies.** | Placez l’assemblée dans la sous-direction [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] privée des **Assemblées** du répertoire. Les assemblages situés dans **PrivateAssemblies** sont automatiquement détectés, mais ne sont pas visibles dans la boîte de dialogue **Add References.** La différence entre **PrivateAssemblies** et **PublicAssemblies** est que les assemblées dans **PublicAssemblies** sont énumérées dans la boîte de dialogue **Add References.** Si vous avez choisi de ne pas utiliser la technique "CodeBase/annuaire d’installation privée", alors vous devez installer dans le répertoire **PrivateAssemblies.** |
-| Utilisez une assemblée forte et la clé du registre de l’Assemblée. | La clé d’assemblage peut [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] être utilisée pour diriger explicitement une forte assemblage VSPackage. La valeur de la clé doit être le nom fort de l’assemblée. |
-| Placez le DLL dans le répertoire **PublicAssemblies.** | Enfin, l’assemblage peut également être placé dans la sous-direction **de PublicAssemblies.** Les assemblages situés dans **PublicAssemblies** sont automatiquement détectés, et apparaîtront également dans la boîte de dialogue **Add References** dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].<br /><br /> Les assemblages VSPackage ne doivent être placés dans **l’annuaire PublicAssemblies que s’ils** contiennent des composants gérés qui sont destinés à être réutilisés par d’autres développeurs VSPackage. La majorité des assemblées ne répondent pas à ce critère. |
+| Utilisez la clé de Registre code base. | La clé de code base peut être utilisée pour diriger [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] le chargement de l’assembly VSPackage à partir de n’importe quel chemin d’accès de fichier complet. La valeur de la clé doit être le chemin d’accès au fichier DLL. Il s’agit de la meilleure façon de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] charger votre assembly de package. Cette technique est parfois appelée « technique du répertoire d’installation code base/privé ». Pendant l’inscription, la valeur de la base de code est passée aux classes d’attributs d’inscription par le biais d’une instance du <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.RegistrationContext> type. |
+| Placez la DLL dans le répertoire **PrivateAssemblies** . | Placez l’assembly dans le sous-répertoire **PrivateAssemblies** du [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] répertoire. Les assemblys situés dans **PrivateAssemblies** sont détectés automatiquement, mais ne sont pas visibles dans la boîte de dialogue **Ajouter des références** . La différence entre **PrivateAssemblies** et **PublicAssemblies** est que les assemblys dans **PublicAssemblies** sont énumérés dans la boîte de dialogue **Ajouter des références** . Si vous avez choisi de ne pas utiliser la technique « répertoire d’installation code base/privé », vous devez installer dans le répertoire **PrivateAssemblies** . |
+| Utilisez un assembly avec nom fort et la clé de registre de l’assembly. | La clé d’assembly peut être utilisée pour diriger explicitement le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] chargement d’un assembly VSPackage nommé fort. La valeur de la clé doit être le nom fort de l’assembly. |
+| Placez la DLL dans le répertoire **PublicAssemblies** . | Enfin, l’assembly peut également être placé dans le sous-répertoire **PublicAssemblies** . Les assemblys situés dans **PublicAssemblies** sont automatiquement détectés et s’affichent également dans la boîte de dialogue **Ajouter des références** dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .<br /><br /> Les assemblys VSPackage doivent être placés uniquement dans le répertoire **PublicAssemblies** s’ils contiennent des composants gérés qui sont destinés à être réutilisés par d’autres développeurs VSPackage. La majorité des assemblys ne répondent pas à ce critère. |
 
 > [!NOTE]
-> Utilisez des assemblages signés et nommés pour tous vos assemblées dépendantes. Ces assemblages doivent également être installés dans votre propre répertoire ou le cache d’assemblage global (GAC). Cela protège contre les conflits avec les assemblées qui ont le même nom de fichier de base, connu sous le nom de liaison de nom faible.
+> Utilisez des assemblys signés avec un nom fort pour tous vos assemblys dépendants. Ces assemblys doivent également être installés dans votre propre répertoire ou dans le Global Assembly Cache (GAC). Cela protège contre les conflits avec les assemblys qui ont le même nom de fichier de base, appelé liaison de nom faible.

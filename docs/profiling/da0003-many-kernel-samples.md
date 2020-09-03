@@ -15,10 +15,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: d0523f9a21dbdb655a02fb6263a6eb644458ab6d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548224"
 ---
 # <a name="da0003-many-kernel-samples"></a>DA0003 : Nombreux échantillons de noyau
@@ -31,7 +31,7 @@ ms.locfileid: "85548224"
 |Message|Vous avez une proportion élevée d’échantillons en mode noyau. Ceci peut indiquer un volume élevé d’activité d’E/S ou un taux élevé de changements de contexte. Envisagez de reprofiler votre application avec le mode Instrumentation.|
 |Type de règle|Information|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Une proportion importante des échantillons de pile des appels qui ont été collectés pour l’application s’exécutaient en mode noyau. Envisagez de profiler votre application avec une autre méthode de profilage.
 
 ## <a name="rule-description"></a>Description de la règle

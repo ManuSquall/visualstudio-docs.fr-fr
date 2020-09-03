@@ -1,5 +1,5 @@
 ---
-title: EncUnavailableReason - France Microsoft Docs
+title: EncUnavailableReason | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 28863549ab3eac96322530bc85c52697f20448c8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737169"
 ---
 # <a name="encunavailablereason"></a>EncUnavailableReason
-`This is for internal use only!`Représente les raisons pour lesquelles **Edit and Continue** n’est pas disponible.
+`This is for internal use only!` Représente les raisons pour lesquelles **modifier & continuer** n’est pas disponible.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -54,35 +54,35 @@ public enum EncUnavailableReason {
 
 ## <a name="fields"></a>Champs
 `ENCUN_NONE`\
-Aucune raison précise pour laquelle Edit and Continue n’est pas disponible.
+Aucune raison spécifique pour laquelle modifier & Continuer n’est pas disponible.
 
 `ENCUN_INTEROP`\
-Edit and Continue n’est pas disponible lors d’un appel InterOp.
+Modifier & Continuer n’est pas disponible pendant un appel InterOp.
 
 `ENCUN_SQLCLR`\
-Edit and Continue n’est pas disponible lors d’un appel de procédure SQL qui utilise le common Language Runtime (CLR).
+Modifier & Continuer n’est pas disponible pendant un appel de procédure SQL qui utilise le CLR (Common Language Runtime).
 
 `ENCUN_MINIDUMP`\
-Edit and Continue n’est pas disponible lors du traitement d’un mini-dump.
+Modifier & Continuer n’est pas disponible lors du traitement d’un mini-vidage.
 
 `ENCUN_EMBEDDED`\
-Edit and Continue n’est pas disponible lors du traitement du code intégré.
+Modifier & Continuer n’est pas disponible lors du traitement d’un code incorporé.
 
 `ENCUN_ATTACH`\
-Edit and Continue n’est pas disponible parce que la session a été jointe à, pas lancé par, le débbugger.
+Modifier & Continuer n’est pas disponible, car la session a été attachée à, et non lancée par le débogueur.
 
 `ENCUN_WIN64`\
-Edit and Continue n’est pas disponible lors du traitement du code Windows 64 bits.
+Modifier & Continuer n’est pas disponible lors du traitement du code Windows 64 bits.
 
 ## <a name="remarks"></a>Notes
-Cette énumération est pour un [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]usage interne seulement par . Les méthodes [GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md) et [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md) mises en œuvre par un fournisseur de ports personnalisés doivent toujours revenir. `E_NOTIMPL`
+Cette énumération est destinée à un usage interne uniquement par [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] . Les méthodes [GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md) et [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md) implémentées par un fournisseur de ports personnalisé doivent toujours retourner `E_NOTIMPL` .
 
-## <a name="requirements"></a>Spécifications
-En-tête: msdbg.idl
+## <a name="requirements"></a>Configuration requise
+En-tête : msdbg. idl
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Espace de noms : Microsoft. VisualStudio. Debugger. Interop
 
-Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4dac40177c3df2a346039a08cf557b6083ed9fc2
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548276"
 ---
 # <a name="customize-the-properties-window"></a>Personnaliser le Fenêtre Propriétés
@@ -146,7 +146,7 @@ Ajoutez un attribut CLR à la propriété de domaine, sous la forme suivante :
 
 Vous pouvez définir l’attribut sur une propriété à l’aide de l’entrée **attribut personnalisé** dans la fenêtre Propriétés.
 
-Le type de `AnEditor` doit être dérivé du type spécifié dans le deuxième paramètre. Le deuxième paramètre doit avoir la valeur <xref:System.Drawing.Design.UITypeEditor> ou <xref:System.ComponentModel.ComponentEditor> . Pour plus d’informations, consultez <xref:System.ComponentModel.EditorAttribute>.
+Le type de `AnEditor` doit être dérivé du type spécifié dans le deuxième paramètre. Le deuxième paramètre doit avoir la valeur <xref:System.Drawing.Design.UITypeEditor> ou <xref:System.ComponentModel.ComponentEditor> . Pour plus d'informations, consultez <xref:System.ComponentModel.EditorAttribute>.
 
 Vous pouvez spécifier votre propre éditeur ou un éditeur .NET, tel que <xref:System.Windows.Forms.Design.FileNameEditor> ou <xref:System.Drawing.Design.ImageEditor> . Par exemple, utilisez la procédure suivante pour avoir une propriété dans laquelle l’utilisateur peut entrer un nom de fichier.
 
@@ -183,7 +183,7 @@ Vous définissez un éditeur en écrivant une classe dérivée de <xref:System.D
 
 - <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>, pour spécifier si votre éditeur doit ouvrir une boîte de dialogue ou fournir un menu déroulant.
 
-Vous pouvez également fournir une représentation graphique de la valeur de la propriété qui sera affichée dans la grille des propriétés. Pour ce faire, substituez `GetPaintValueSupported` et `PaintValue` .  Pour plus d’informations, consultez <xref:System.Drawing.Design.UITypeEditor>.
+Vous pouvez également fournir une représentation graphique de la valeur de la propriété qui sera affichée dans la grille des propriétés. Pour ce faire, substituez `GetPaintValueSupported` et `PaintValue` .  Pour plus d'informations, consultez <xref:System.Drawing.Design.UITypeEditor>.
 
 > [!NOTE]
 > Ajoutez le code dans un fichier de code séparé dans le projet **DSL** .
@@ -210,7 +210,7 @@ Pour utiliser cet éditeur, affectez à l' **attribut personnalisé** d’une pr
    , typeof(System.Drawing.Design.UITypeEditor))]
 ```
 
-Pour plus d’informations, consultez <xref:System.Drawing.Design.UITypeEditor>.
+Pour plus d'informations, consultez <xref:System.Drawing.Design.UITypeEditor>.
 
 ## <a name="provide-a-drop-down-list-of-values"></a>Fournir une liste déroulante de valeurs
 

@@ -28,10 +28,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 83fc6adeba0529be03a9a982713d0584a2a7bc45
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72661273"
 ---
 # <a name="general-environment-options-dialog-box"></a>Général, Environnement, boîte de dialogue Options
@@ -40,7 +40,7 @@ ms.locfileid: "72661273"
 Utilisez cette page pour modifier les thèmes de couleurs, les paramètres de la barre d'état et les associations d'extensions de fichier, entre autres options, pour l'environnement de développement intégré (IDE). Vous pouvez accéder à la boîte de dialogue **Options** en ouvrant le menu **Outils**, en choisissant **Options**, en ouvrant le dossier **Environnement**, puis en choisissant la page **Général**. Si cette page n’apparaît pas dans la liste, cochez la case **Afficher tous les paramètres** dans la boîte de dialogue **Options**.
 
 > [!NOTE]
-> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour changer vos paramètres, ouvrez le menu **Outils**, puis choisissez **Importation et exportation de paramètres**. Pour plus d’informations, consultez [Paramètres Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Les boîtes de dialogue et les commandes de menu affichées peuvent différer de celles décrites dans l'Aide selon les paramètres actifs ou le mode d'édition. Pour changer vos paramètres, ouvrez le menu **Outils**, puis choisissez **Importation et exportation de paramètres**. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="visual-experience"></a>Expérience visuelle
  **Thème de couleur** Choisissez le thème de couleur **bleu**, **clair** ou **sombre** pour l’IDE.
@@ -71,4 +71,4 @@ Utilisez cette page pour modifier les thèmes de couleurs, les paramètres de la
  Cette option peut être utile si vous avez deux versions de Visual Studio installées sur le même ordinateur et que vous désinstallez l'une des versions plus tard. Après la désinstallation, les icônes des fichiers Visual Studio n'apparaissent plus dans l'Explorateur de fichiers. En outre, Windows ne reconnaît plus Visual Studio comme application par défaut pour modifier ces fichiers. Cette option restaure ces associations.
 
 ## <a name="see-also"></a>Voir aussi
- [Boîte de dialogue Options d’environnement](../../ide/reference/environment-options-dialog-box.md) [Personnalisation des dispositions de fenêtres](../../ide/customizing-window-layouts-in-visual-studio.md)
+ [Environnement, boîte de dialogue Options](../../ide/reference/environment-options-dialog-box.md) [Personnalisation des dispositions de fenêtres](../../ide/customizing-window-layouts-in-visual-studio.md)

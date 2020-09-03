@@ -8,10 +8,10 @@ ms.assetid: 9d3186f3-07d2-441f-b33e-435e95d8a0b8
 caps.latest.revision: 11
 ms.author: brgeorge
 ms.openlocfilehash: 76c04680b63eb362e02fdf26d817660d671b3b52
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548354"
 ---
 # <a name="shared-colors"></a>Couleurs partagés
@@ -35,7 +35,7 @@ Insérez l'introduction ici.
   
 ### <a name="command-structures"></a>Structures de commande  
   
-#### <a name="menus"></a><a name="BKMK_CommandMenus"></a>Menus  
+#### <a name="menus"></a><a name="BKMK_CommandMenus"></a> Menus  
  Les menus peuvent se dérouler à plusieurs endroits dans Visual Studio 2013 : la barre de menus principale incorporée dans la fenêtre du document ou de l’outil, ou en cliquant avec le bouton droit à divers endroits de l’IDE. Les implémentations de menus associées aux autres éléments d’interface utilisateur sont décrites dans la section de l’élément correspondant. Vous devez toujours utiliser l’implémentation de menu standard fournie par l’environnement Visual Studio. Toutefois, dans de rares cas, vous n’aurez peut-être pas accès aux menus Visual Studio standard. Dans ce cas, utilisez les noms de jeton suivants pour vous assurer que votre interface utilisateur est cohérente avec les autres menus dans Visual Studio.  
   
  ![Ligne rouge de menus](../extensibility/ux-guidelines/media/0303-000-menuredline.png "0303-000_MenuRedline")  
@@ -121,8 +121,8 @@ N’utilisez pas...
 |![Valeur par défaut de menu](../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303-010_MenuDefault")<br /><br /> **Menu**|Arrière-plan de canal d’icône|`Environment.CommandBarMenuIconBackground`|  
 |![Valeur par défaut de menu](../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303-010_MenuDefault")<br /><br /> **Menu**|Séparateur|`Environment.CommandBarMenuSeparator`|  
 |![Valeur par défaut de menu](../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303-010_MenuDefault")<br /><br /> **Menu**|Shadow|`Environment.DropShadowBackground`|  
-|![Menu activé](../extensibility/ux-guidelines/media/0303-011-menuchecked.png "0303-011_MenuChecked")<br /><br /> **Désactivé**|Coche|`Environment.CommandBarCheckBox`|  
-|![Menu activé](../extensibility/ux-guidelines/media/0303-011-menuchecked.png "0303-011_MenuChecked")<br /><br /> **Désactivé**|Arrière-plan de case à cocher|`Environment.CommandBarSelectedIcon`|  
+|![Menu activé](../extensibility/ux-guidelines/media/0303-011-menuchecked.png "0303-011_MenuChecked")<br /><br /> **Activée**|Coche|`Environment.CommandBarCheckBox`|  
+|![Menu activé](../extensibility/ux-guidelines/media/0303-011-menuchecked.png "0303-011_MenuChecked")<br /><br /> **Activée**|Arrière-plan de case à cocher|`Environment.CommandBarSelectedIcon`|  
 |![Menu sélectionné](../extensibility/ux-guidelines/media/0303-012-menuselected.png "0303-012_MenuSelected")<br /><br /> **Selected**|Arrière-plan d’icône|`Environment.CommandBarSelected`|  
 |![Menu sélectionné](../extensibility/ux-guidelines/media/0303-012-menuselected.png "0303-012_MenuSelected")<br /><br /> **Selected**|Bordure d’icône|`Environment.CommandBarSelectedBorder`|  
   
@@ -133,8 +133,8 @@ N’utilisez pas...
 |![Pointage de menu](../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303-013_MenuHover")<br /><br /> **Élément de menu**|Arrière-plan|`Environment.CommandBarMenuItemMouseOver`|  
 |![Pointage de menu](../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303-013_MenuHover")<br /><br /> **Élément de menu**|Premier plan (texte)|`Environment.CommandBarMenuItemMouseOver`|  
 |![Pointage de menu](../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303-013_MenuHover")<br /><br /> **Élément de menu**|Premier plan (glyphe de sous-menu)|`Environment.CommandBarMenuMouseOverSubmenuGlyph`|  
-|![Pointage de menu activé](../extensibility/ux-guidelines/media/0303-014-menuhoverchecked.png "0303-014_MenuHoverChecked")<br /><br /> **Désactivé**|Coche|`Environment.CommandBarCheckBoxMouseOver`|  
-|![Pointage de menu activé](../extensibility/ux-guidelines/media/0303-014-menuhoverchecked.png "0303-014_MenuHoverChecked")<br /><br /> **Désactivé**|Arrière-plan de case à cocher|`Environment.CommandBarHoverOverSelectedIcon`|  
+|![Pointage de menu activé](../extensibility/ux-guidelines/media/0303-014-menuhoverchecked.png "0303-014_MenuHoverChecked")<br /><br /> **Activée**|Coche|`Environment.CommandBarCheckBoxMouseOver`|  
+|![Pointage de menu activé](../extensibility/ux-guidelines/media/0303-014-menuhoverchecked.png "0303-014_MenuHoverChecked")<br /><br /> **Activée**|Arrière-plan de case à cocher|`Environment.CommandBarHoverOverSelectedIcon`|  
 |![Pointage de menu sélectionné](../extensibility/ux-guidelines/media/0303-015-menuhoverselected.png "0303-015_MenuHoverSelected")<br /><br /> **Selected**|Arrière-plan d’icône|`Environment.CommandBarHoverOverSelected`|  
 |![Pointage de menu sélectionné](../extensibility/ux-guidelines/media/0303-015-menuhoverselected.png "0303-015_MenuHoverSelected")<br /><br /> **Selected**|Bordure d’icône|`Environment.CommandBarHoverOverSelectedIconBorder`|  
   
@@ -144,8 +144,8 @@ N’utilisez pas...
 |---------------|-------------|--------------------------------|  
 |![Menu désactivé](../extensibility/ux-guidelines/media/0303-016-menudisabled.png "0303-016_MenuDisabled")<br /><br /> Élément de menu|Premier plan (texte)|`Environment.CommandBarTextInactive`|  
 |![Menu désactivé](../extensibility/ux-guidelines/media/0303-016-menudisabled.png "0303-016_MenuDisabled")<br /><br /> Élément de menu|Premier plan (glyphe de sous-menu)|`Environment.CommandBarMenuSubmenuGlyph`|  
-|![Menu désactivé activé](../extensibility/ux-guidelines/media/0303-017-menudisabledchecked.png "0303-017_MenuDisabledChecked")<br /><br /> Activé|Coche|`Environment.CommandBarCheckBoxDisabled`|  
-|![Menu désactivé activé](../extensibility/ux-guidelines/media/0303-017-menudisabledchecked.png "0303-017_MenuDisabledChecked")<br /><br /> Activé|Arrière-plan de case à cocher|`Environment.CommandBarSelectedIconDisabled`|  
+|![Menu désactivé activé](../extensibility/ux-guidelines/media/0303-017-menudisabledchecked.png "0303-017_MenuDisabledChecked")<br /><br /> Activée|Coche|`Environment.CommandBarCheckBoxDisabled`|  
+|![Menu désactivé activé](../extensibility/ux-guidelines/media/0303-017-menudisabledchecked.png "0303-017_MenuDisabledChecked")<br /><br /> Activée|Arrière-plan de case à cocher|`Environment.CommandBarSelectedIconDisabled`|  
   
 #### <a name="command-bar"></a>Barre de commandes  
  La barre de commandes peut apparaître à plusieurs endroits dans l’IDE Visual Studio, notamment dans l’interface de commande et incorporée dans des fenêtres de document ou d’outil.  
@@ -237,7 +237,7 @@ N’utilisez pas...
 |![Icône de commande désactivée](../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303-028_CommandIconDisabled")<br /><br /> **Icône de commande désactivée**|Premier plan (texte)|`Environment.CommandBarTextInactive`|  
 |![Icône de commande désactivée](../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303-028_CommandIconDisabled")<br /><br /> **Icône de commande désactivée**|Bordure|N/A|  
   
-##### <a name="combo-box"></a><a name="BKMK_CommandComboBox"></a>Zone de liste déroulante  
+##### <a name="combo-box"></a><a name="BKMK_CommandComboBox"></a> Zone de liste déroulante  
   
 > [!IMPORTANT]
 > Les zones de liste modifiable ressemblent aux listes déroulantes, mais elles comprennent une zone de texte modifiable. Si votre liste déroulante n’inclut pas de zone de texte modifiable, utilisez les jetons de couleur disponibles sous [Drop-down](../misc/shared-colors.md#BKMK_CommandDropDown).  
@@ -315,7 +315,7 @@ N’utilisez pas...
 |![Zone de liste déroulante&#47;bouton de suppression&#45;enfoncé désactivé](../extensibility/ux-guidelines/media/0303-040-comboboxdropdownbuttondisabled.png "0303-040_ComboBoxDropdownButtonDisabled")<br /><br /> **Bouton de liste déroulante**|Arrière-plan|None|  
 |![Zone de liste déroulante&#47;bouton de suppression&#45;enfoncé désactivé](../extensibility/ux-guidelines/media/0303-040-comboboxdropdownbuttondisabled.png "0303-040_ComboBoxDropdownButtonDisabled")<br /><br /> **Bouton de liste déroulante**|Premier plan (glyphe)|`Environment.ComboBoxDisabledGlyph`|  
   
-##### <a name="drop-down"></a><a name="BKMK_CommandDropDown"></a>Liste déroulante  
+##### <a name="drop-down"></a><a name="BKMK_CommandDropDown"></a> Liste déroulante  
   
 > [!IMPORTANT]
 > Les listes déroulantes ressemblent aux zones de liste modifiable, mais elles ne disposent pas de zones de texte modifiable. Si votre liste déroulante inclut une zone de texte modifiable, utilisez les jetons de couleur disponibles sous [Combo box](../misc/shared-colors.md#BKMK_CommandComboBox).  
@@ -449,8 +449,8 @@ N’utilisez pas...
   
 |Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Autres options](../extensibility/ux-guidelines/media/0303-059-moreoptions.png "0303-059_MoreOptions")<br /><br /> **Autres options**|Arrière-plan|`Environment.CommandBarOptionsBackground`|  
-|![Autres options](../extensibility/ux-guidelines/media/0303-059-moreoptions.png "0303-059_MoreOptions")<br /><br /> **Autres options**|Premier plan (glyphe)|`Environment.CommandBarOptionsGlyph`|  
+|![Plus d’options](../extensibility/ux-guidelines/media/0303-059-moreoptions.png "0303-059_MoreOptions")<br /><br /> **Plus d’options**|Arrière-plan|`Environment.CommandBarOptionsBackground`|  
+|![Plus d’options](../extensibility/ux-guidelines/media/0303-059-moreoptions.png "0303-059_MoreOptions")<br /><br /> **Plus d’options**|Premier plan (glyphe)|`Environment.CommandBarOptionsGlyph`|  
 |![Bouton de dépassement](../extensibility/ux-guidelines/media/0303-060-overflow.png "0303-060_Overflow")<br /><br /> **Surcharge**|Arrière-plan|`Environment.CommandBarOptionsBackground`|  
 |![Bouton de dépassement](../extensibility/ux-guidelines/media/0303-060-overflow.png "0303-060_Overflow")<br /><br /> **Surcharge**|Premier plan (glyphe)|`Environment.CommandBarOptionsGlyph`|  
   
@@ -458,8 +458,8 @@ N’utilisez pas...
   
 |Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Autres options au pointage](../extensibility/ux-guidelines/media/0303-061-moreoptionshover.png "0303-061_MoreOptionsHover")<br /><br /> **Autres options**|Arrière-plan|`Environment.CommandBarOptionsMouseOverBackgroundBegin`<br /><br /> Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.|  
-|![Autres options au pointage](../extensibility/ux-guidelines/media/0303-061-moreoptionshover.png "0303-061_MoreOptionsHover")<br /><br /> **Autres options**|Premier plan (glyphe)|`Environment.CommandBarOptionsMouseDownGlyph`|  
+|![Autres options au pointage](../extensibility/ux-guidelines/media/0303-061-moreoptionshover.png "0303-061_MoreOptionsHover")<br /><br /> **Plus d’options**|Arrière-plan|`Environment.CommandBarOptionsMouseOverBackgroundBegin`<br /><br /> Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.|  
+|![Autres options au pointage](../extensibility/ux-guidelines/media/0303-061-moreoptionshover.png "0303-061_MoreOptionsHover")<br /><br /> **Plus d’options**|Premier plan (glyphe)|`Environment.CommandBarOptionsMouseDownGlyph`|  
 |![Dépassement au pointage](../extensibility/ux-guidelines/media/0303-062-overflowoptions.png "0303-062_OverflowOptions")<br /><br /> **Surcharge**|Arrière-plan|`Environment.CommandBarOptionsMouseOverBackgroundBegin`<br /><br /> Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.|  
 |![Dépassement au pointage](../extensibility/ux-guidelines/media/0303-062-overflowoptions.png "0303-062_OverflowOptions")<br /><br /> **Surcharge**|Premier plan (glyphe)|`Environment.CommandBarOptionsMouseDownGlyph`|  
   
@@ -467,8 +467,8 @@ N’utilisez pas...
   
 |Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Option Autres options enfoncée](../extensibility/ux-guidelines/media/0303-063-moreoptionspressed.png "0303-063_MoreOptionsPressed")<br /><br /> **Autres options**|Arrière-plan|`Environment.CommandBarOptionsMouseDownBackgroundBegin`<br /><br /> Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.|  
-|![Option Autres options enfoncée](../extensibility/ux-guidelines/media/0303-063-moreoptionspressed.png "0303-063_MoreOptionsPressed")<br /><br /> **Autres options**|Premier plan (glyphe)|`Environment.CommandBarOptionsMouseDownGlyph`|  
+|![Option Autres options enfoncée](../extensibility/ux-guidelines/media/0303-063-moreoptionspressed.png "0303-063_MoreOptionsPressed")<br /><br /> **Plus d’options**|Arrière-plan|`Environment.CommandBarOptionsMouseDownBackgroundBegin`<br /><br /> Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.|  
+|![Option Autres options enfoncée](../extensibility/ux-guidelines/media/0303-063-moreoptionspressed.png "0303-063_MoreOptionsPressed")<br /><br /> **Plus d’options**|Premier plan (glyphe)|`Environment.CommandBarOptionsMouseDownGlyph`|  
 |![Bouton de dépassement enfoncé](../extensibility/ux-guidelines/media/0303-064-overflowpressed.png "0303-064_OverflowPressed")<br /><br /> **Surcharge**|Arrière-plan|`Environment.CommandBarOptionsMouseDownBackgroundBegin`<br /><br /> Même si cet arrière-plan n’est pas utilisé dans l’interface utilisateur à thème moderne, il comporte des points et valeurs de dégradés.|  
 |![Bouton de dépassement enfoncé](../extensibility/ux-guidelines/media/0303-064-overflowpressed.png "0303-064_OverflowPressed")<br /><br /> **Surcharge**|Premier plan (glyphe)|`Environment.CommandBarOptionsMouseDownGlyph`|  
   
@@ -1079,7 +1079,7 @@ N’utilisez pas...
 |![Barre d'informations](../extensibility/ux-guidelines/media/0303-139-infobar.png "0303-139_Infobar")<br /><br /> **Barre d'informations**|Premier plan (texte)|`Environment.InfoText`|  
 |![Barre d'informations](../extensibility/ux-guidelines/media/0303-139-infobar.png "0303-139_Infobar")<br /><br /> **Barre d'informations**|Bordure|`Environment.ToolWindowBorder`|  
   
-#### <a name="scroll-bar"></a>Barre de défilement  
+#### <a name="scroll-bar"></a>Scroll bar  
  Les barres de défilement sont stylisées par l’environnement Visual Studio et aucun thème ne doit leur être appliqué. Toutefois, vous pouvez décider que vous souhaitez tirer parti des couleurs utilisées dans les barres de défilement afin que votre interface utilisateur apparaisse toujours cohérente avec cette partie de l’environnement Visual Studio.  
   
  ![Ligne rouge de barre de défilement](../extensibility/ux-guidelines/media/0303-140-scrollbarredline.png "0303-140_ScrollbarRedline")  
@@ -1094,8 +1094,8 @@ N’utilisez pas...
   
 |Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Barre de défilement](../extensibility/ux-guidelines/media/0303-141-scrollbar.png "0303-141_Scrollbar")<br /><br /> **Rail**|Scrollbar|`Environment.ScrollBarBackground`|  
-|![Barre de défilement](../extensibility/ux-guidelines/media/0303-141-scrollbar.png "0303-141_Scrollbar")<br /><br /> **Rail**|Premier plan (curseur de défilement)|`Environment.ScrollBarThumbBackground`|  
+|![Scroll bar](../extensibility/ux-guidelines/media/0303-141-scrollbar.png "0303-141_Scrollbar")<br /><br /> **Rail**|Scrollbar|`Environment.ScrollBarBackground`|  
+|![Scroll bar](../extensibility/ux-guidelines/media/0303-141-scrollbar.png "0303-141_Scrollbar")<br /><br /> **Rail**|Premier plan (curseur de défilement)|`Environment.ScrollBarThumbBackground`|  
 |![Flèche de barre de défilement](../extensibility/ux-guidelines/media/0303-142-scrollbararrow.png "0303-142_ScrollbarArrow")<br /><br /> **Flèche de défilement**|Arrière-plan|`Environment.ScrollBarArrowBackground`<br /><br /> Défini sur la même couleur que la barre de défilement.|  
 |![Flèche de barre de défilement](../extensibility/ux-guidelines/media/0303-142-scrollbararrow.png "0303-142_ScrollbarArrow")<br /><br /> **Flèche de défilement**|Premier plan (glyphe)|`Environment.ScrollBarArrowGlyph`|  
   
@@ -1117,7 +1117,7 @@ N’utilisez pas...
 |![Flèche de barre de défilement enfoncée](../extensibility/ux-guidelines/media/0303-146-scrollbararrowpressed.png "0303-146_ScrollbarArrowPressed")<br /><br /> **Flèche de défilement**|Arrière-plan|`Environment.ScrollBarArrowPressedBackground`<br /><br /> Défini sur la même couleur que la barre de défilement.|  
 |![Flèche de barre de défilement enfoncée](../extensibility/ux-guidelines/media/0303-146-scrollbararrowpressed.png "0303-146_ScrollbarArrowPressed")<br /><br /> **Flèche de défilement**|Premier plan (glyphe)|`Environment.ScrollBarArrowGlyphPressed`|  
   
-#### <a name="tree-view"></a><a name="BKMK_TreeView"></a>Arborescence  
+#### <a name="tree-view"></a><a name="BKMK_TreeView"></a> Arborescence  
  Plusieurs fenêtres d’outil, notamment l’Explorateur de solutions, l’Explorateur de serveurs et l’Affichage de classes, implémentent un schéma d’organisation hiérarchique dont les couleurs sont contrôlées par les noms de couleur de la catégorie TreeView. Tous les éléments d’une arborescence ont des couleurs d’arrière-plan et de texte. Les éléments qui possèdent des éléments enfants imbriqués ont également des glyphes qui indiquent si l’élément est développé ou réduit.  
   
  ![Ligne rouge d'arborescence](../extensibility/ux-guidelines/media/0303-147-treeviewredline.png "0303-147_TreeViewRedline")  
@@ -1385,12 +1385,12 @@ N’utilisez pas...
 ##### <a name="column-headers"></a>En-têtes de colonne  
  Les en-têtes de colonnes comprennent un arrière-plan, une bordure, le texte du titre et un éventuel glyphe généralement utilisé pour trier une grille selon cette colonne.  
   
-|State (État)|Élément|Nom du jeton : Category.color|  
+|State|Élément|Nom du jeton : Category.color|  
 |-----------|-------------|--------------------------------|  
-|Valeur par défaut|Arrière-plan|`Header.Default`|  
-|Valeur par défaut|Premier plan (texte)|`Environment.CommandBarTextActive`|  
-|Valeur par défaut|Premier plan (glyphe)|`Header.Glyph`|  
-|Valeur par défaut|Bordure|`Header.SeparatorLine`|  
+|Default|Arrière-plan|`Header.Default`|  
+|Default|Premier plan (texte)|`Environment.CommandBarTextActive`|  
+|Default|Premier plan (glyphe)|`Header.Glyph`|  
+|Default|Bordure|`Header.SeparatorLine`|  
 |Pointage|Arrière-plan|`Header.MouseOver`|  
 |Pointage|Premier plan (texte)|`Environment.CommandBarTextHover`|  
 |Pointage|Premier plan (glyphe)|`Header.MouseOverGlyph`|  
@@ -1403,11 +1403,11 @@ N’utilisez pas...
 ##### <a name="list-view-items"></a>Éléments de la vue Liste  
  Les éléments de la vue Liste comprennent un arrière-plan et le contenu. Le contenu peut être du texte, une icône ou les deux.  
   
-|State (État)|Élément|Nom du jeton : Category.color|  
+|State|Élément|Nom du jeton : Category.color|  
 |-----------|-------------|--------------------------------|  
-|Valeur par défaut|Arrière-plan|Mode transparent|  
-|Valeur par défaut|Premier plan (texte)|`Environment.CommandBarTextActive`|  
-|Valeur par défaut|Bordure|None|  
+|Default|Arrière-plan|Mode transparent|  
+|Default|Premier plan (texte)|`Environment.CommandBarTextActive`|  
+|Default|Bordure|None|  
 |Sélectionné (actif)|Arrière-plan|`TreeView.SelectedItemActive`|  
 |Sélectionné (actif)|Premier plan (texte)|`TreeView.SelectedItemActiveText`|  
 |Sélectionné (actif)|Bordure|None|  
@@ -1430,7 +1430,7 @@ N’utilisez pas...
 
 - pour toute interface utilisateur qui n’est pas structurée comme le concepteur de manifeste.  
   
-|State (État)|Composant|Élément|Nom du jeton : Category.color|  
+|State|Composant|Élément|Nom du jeton : Category.color|  
 |-----------|---------------|-------------|--------------------------------|  
 |Par défaut (sélectionné)|Onglet|Arrière-plan|`ManifestDesigner.TabActive`|  
 |Par défaut (sélectionné)|Onglet|Bordure|None|  
@@ -1574,8 +1574,8 @@ Utilisez...
   
 |Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Nœud parent de boîte à outils](../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303-190_ToolboxParentNode")<br /><br /> **Nœud parent**|Arrière-plan|`Environment.ToolboxContent`<br /><br /> Titres<br /><br /> `Environment.ToolWindowBackground`<br /><br /> Éléments individuels ou fenêtre entière en l’absence de contrôles disponibles|  
-|![Nœud enfant de boîte à outils](../extensibility/ux-guidelines/media/0303-191-toolboxchildnode.png "0303-191_ToolboxChildNode")<br /><br /> **Nœud enfant**|Arrière-plan|`Environment.ToolboxContent`<br /><br /> Titres<br /><br /> `Environment.ToolWindowBackground`<br /><br /> Éléments individuels ou fenêtre entière en l’absence de contrôles disponibles|  
+|![Nœud parent de boîte à outils](../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303-190_ToolboxParentNode")<br /><br /> **Nœud parent**|Arrière-plan|`Environment.ToolboxContent`<br /><br /> En-têtes<br /><br /> `Environment.ToolWindowBackground`<br /><br /> Éléments individuels ou fenêtre entière en l’absence de contrôles disponibles|  
+|![Nœud enfant de boîte à outils](../extensibility/ux-guidelines/media/0303-191-toolboxchildnode.png "0303-191_ToolboxChildNode")<br /><br /> **Nœud enfant**|Arrière-plan|`Environment.ToolboxContent`<br /><br /> En-têtes<br /><br /> `Environment.ToolWindowBackground`<br /><br /> Éléments individuels ou fenêtre entière en l’absence de contrôles disponibles|  
 |![Nœud parent de boîte à outils](../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303-190_ToolboxParentNode")<br /><br /> **Nœud parent**|Bordure|None|  
 |![Nœud enfant de boîte à outils](../extensibility/ux-guidelines/media/0303-191-toolboxchildnode.png "0303-191_ToolboxChildNode")<br /><br /> **Nœud enfant**|Bordure|None|  
 |![Nœud parent de boîte à outils](../extensibility/ux-guidelines/media/0303-190-toolboxparentnode.png "0303-190_ToolboxParentNode")<br /><br /> **Nœud parent**|Premier plan (glyphe)|`Environment.ToolboxContent`|  
@@ -1614,12 +1614,12 @@ Utilisez...
   
 ## <a name="color-value-reference"></a>Référence de valeur de couleur  
   
-|Composant|Élément|Élément|State (État)|Léger|Foncé|Blue|Contraste élevé|
+|Composant|Élément|Élément|State|Léger|Foncé|Bleu|Contraste élevé|
 |---------|----|-------|-----|-----|----|----|----|  
-|Lignes de séparation|||Valeur par défaut|FFEEEEF2|FF2D2D30|FFEEEEF2|ControlDark|  
-|Glyphe de développeur||Premier plan|Valeur par défaut|||||  
+|Lignes de séparation|||Default|FFEEEEF2|FF2D2D30|FFEEEEF2|ControlDark|  
+|Glyphe de développeur||Premier plan|Default|||||  
 |Glyphe de développeur||Premier plan|Pointage|||||  
-|Glyphe de développeur||Arrière-plan|Valeur par défaut|||||  
+|Glyphe de développeur||Arrière-plan|Default|||||  
 |Glyphe de développeur||Arrière-plan|Pointage|||||  
-|Glyphe de développeur||Bordure|Valeur par défaut|||||  
+|Glyphe de développeur||Bordure|Default|||||  
 |Glyphe de développeur||Bordure|Pointage|||||
