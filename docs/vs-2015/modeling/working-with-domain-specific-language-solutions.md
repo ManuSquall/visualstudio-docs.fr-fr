@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3b3dfc40b8489e774572b5ac157ebdaec9c71ad5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659228"
 ---
 # <a name="working-with-domain-specific-language-solutions"></a>Utilisation de solutions de langage spécifique à un domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Un langage spécifique à un domaine (DSL) est créé à l’aide d’une solution [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Cette section explique comment configurer et personnaliser la solution.
+Un langage spécifique à un domaine (DSL) est créé à l’aide d’une [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solution. Cette section explique comment configurer et personnaliser la solution.
 
 ## <a name="in-this-section"></a>Dans cette section
  [À propos des langages spécifiques à un domaine](../modeling/about-domain-specific-languages.md) Explique comment développer des DSL et comment les appliquer.

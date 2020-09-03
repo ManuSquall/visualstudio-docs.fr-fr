@@ -1,5 +1,5 @@
 ---
-title: Messages de commandes de Menu | Microsoft Docs
+title: Commandes du menu messages | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,22 +12,22 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 689ae78a5409a37fa6251044172f9108f296235b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68206119"
 ---
 # <a name="messages-menu-commands"></a>commandes du menu Messages
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Le **Messages** menu fournit des commandes permettant de contrôler les vues de message.  
+Le menu **messages** fournit des commandes permettant de contrôler les affichages des messages.  
   
  **Démarrer/arrêter la journalisation**  
- Démarre ou arrête l’affichage du message.  
+ Démarre ou arrête l’affichage des messages.  
   
  **Options de journalisation**  
- Ouvre le **Options des messages** boîte de dialogue, où vous pouvez spécifier des critères de recherche de message.  
+ Ouvre la boîte de dialogue **MessageOptions** , dans laquelle vous pouvez spécifier les critères de recherche des messages.  
   
  **Effacer le journal**  
- Efface le contenu de la vue Messages active.
+ Efface le contenu de la vue messages actifs.

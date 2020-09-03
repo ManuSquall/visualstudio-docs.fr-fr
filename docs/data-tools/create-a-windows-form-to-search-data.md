@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: df6f2245f06a594e35febe07d5aab2d7e83c48fd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586807"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Créer un Windows Form pour rechercher des données
@@ -43,7 +43,7 @@ Cette procédure pas à pas décrit notamment les tâches suivantes :
 
 - Entrée de paramètres dans le formulaire et exécution de la requête paramétrable.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Prérequis
 
 Cette procédure pas à pas utilise SQL Server Express base de données locale et l’exemple de base de données Northwind.
 
@@ -71,7 +71,7 @@ Cette étape crée une source de données à partir d’une base de données à 
 
 1. Pour ouvrir la fenêtre **sources de données** , dans le menu **données** , cliquez sur Afficher les **sources de données**.
 
-2. Dans la fenêtre **Sources de données**, sélectionnez **Ajouter une nouvelle source de données** pour démarrer l’Assistant **Configuration de source de données**.
+2. Dans la fenêtre **sources de données** , sélectionnez Ajouter une **nouvelle source de données** pour démarrer l’Assistant Configuration de source de **données** .
 
 3. Sélectionnez **Base de données** dans la page **Choisir un type de source de données** , puis cliquez sur **Suivant**.
 
@@ -121,23 +121,23 @@ Vous pouvez ajouter une clause WHERE à la requête d’origine à l’aide de l
      ```
 
     > [!NOTE]
-    > Les sources de données Access et OLE DB utilisent le point d’interrogation («  ? ») pour désigner les paramètres, donc la clause WHERE ressemble à ceci : `WHERE City = ?`.
+    > Les sources de données Access et OLE DB utilisent le point d’interrogation («  ? ») pour désigner les paramètres, donc la clause WHERE ressemble à ceci : `WHERE City = ?` .
 
 4. Cliquez sur **OK** pour fermer la boîte de dialogue **Générateur de critères de recherche**.
 
      Un **FillByCityToolStrip** est ajouté au formulaire.
 
-## <a name="test-the-application"></a>Tester l'application
+## <a name="test-the-application"></a>Tester l’application
 
 L’exécution de l’application ouvre votre formulaire et le rend prêt à prendre le paramètre comme entrée :
 
-1. Appuyez sur **F5** pour exécuter l’application.
+1. Appuyez sur **F5** pour exécuter l'application.
 
 2. Tapez **London** dans la zone de texte **City**, puis cliquez sur **FillByCity**.
 
      La grille de données est remplie avec les clients qui répondent aux critères. Dans cet exemple, la grille de données n’affiche que les clients possédant une valeur **London** dans leur colonne **City**.
 
-## <a name="next-steps"></a>Étapes suivantes :
+## <a name="next-steps"></a>Étapes suivantes
 
 Selon les spécifications de votre application, vous pouvez exécuter différentes étapes après la création d'un formulaire paramétrable. Vous pouvez apporter à cette procédure pas à pas les améliorations suivantes :
 

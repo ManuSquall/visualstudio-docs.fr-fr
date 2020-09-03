@@ -1,5 +1,5 @@
 ---
-title: Enregistrement d’une fenêtre d’outil Microsoft Docs
+title: Inscription d’une fenêtre outil | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2e7971de5ae5301d99147bbfc374dda6b039662a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701603"
 ---
-# <a name="register-a-tool-window"></a>Enregistrer une fenêtre d’outil
-Vous pouvez enregistrer vos <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute>fenêtres d’outils à l’aide et .
+# <a name="register-a-tool-window"></a>Inscrire une fenêtre outil
+Vous pouvez inscrire vos fenêtres outil à l’aide <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> de et  <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute> .
 
 ## <a name="example"></a>Exemple
 
@@ -35,4 +35,4 @@ public class PackageToolWindow : Package
 {
 ```
 
- Dans le code <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> ci-dessus, `DynamicWindowPane` les enregistre les fenêtres et les `PersistedWindowPane` fenêtres d’outils avec Visual Studio. La fenêtre d’outil persistée est amarrée et tabbed avec **Solution Explorer**, et la fenêtre dynamique est donnée une position de départ par défaut et la taille. La fenêtre dynamique est rendue transitoire, ce qui indique qu’elle n’est pas créée sur le démarrage. Cela écrit `DontForceCreate` une `ToolWindows` valeur dans la clé dans le registre du système. Pour plus d’informations, voir [la configuration de l’affichage de fenêtre d’outil](/visualstudio/extensibility/tool-window-display-configuration?view=vs-2015).
+ Dans le code ci-dessus, le <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> inscrit `PersistedWindowPane` les `DynamicWindowPane` fenêtres outil et dans Visual Studio. La fenêtre outil rendue persistante est ancrée et avec des onglets **Explorateur de solutions**, et la fenêtre dynamique reçoit une position et une taille de départ par défaut. La fenêtre dynamique est rendue temporaire, ce qui indique qu’elle n’est pas créée au démarrage. Cela écrit une `DontForceCreate` valeur dans la `ToolWindows` clé dans le registre système. Pour plus d’informations, consultez Configuration de l’affichage de la [fenêtre outil](/visualstudio/extensibility/tool-window-display-configuration?view=vs-2015).

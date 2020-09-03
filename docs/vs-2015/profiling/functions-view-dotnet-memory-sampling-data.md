@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8e77c6c2b3bf079e8aae88c9779c3b487ff97fe7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68141866"
 ---
 # <a name="functions-view---net-memory-sampling-data"></a>Vue Fonctions - Données d’échantillonnage de la mémoire .NET
@@ -25,11 +25,11 @@ La vue Fonctions des données de profilage de l’allocation mémoire .NET qui o
   
 |Colonne|Description|  
 |------------|-----------------|  
-|**ID du processus**|ID du processus (PID) de l'exécution du profilage.|  
+|**ID de processus**|ID du processus (PID) de l'exécution du profilage.|  
 |**Nom du processus**|Nom du processus.|  
 |**Nom du module**|Nom du module qui contient la fonction.|  
-|**Chemin de module**|Chemin d’accès du module qui contient la fonction.|  
-|**Fichier source**|Fichier source contenant la définition pour cette fonction.|  
+|**Chemin du module**|Chemin d’accès du module qui contient la fonction.|  
+|**Source File**|Fichier source contenant la définition pour cette fonction.|  
 |**Nom de la fonction**|Nom complet de la fonction.|  
 |**Numéro de ligne de fonction**|Numéro de ligne du début de cette fonction dans le fichier source.|  
 |**Adresse de la fonction**|Adresse de la fonction.|  
@@ -43,6 +43,6 @@ La vue Fonctions des données de profilage de l’allocation mémoire .NET qui o
 |**% d’octets exclusifs**|Pourcentage de tous les octets de mémoire alloués lors de l’exécution du profilage, qui étaient des octets exclusifs de cette fonction.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Vue Fonctions - Instrumentation](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
- [Mode Fonction](../profiling/functions-view-sampling-data.md)   
- [Mode Fonctions](../profiling/functions-view-instrumentation-data.md)
+ [Vue fonctions-Instrumentation](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
+ [Mode fonctions](../profiling/functions-view-sampling-data.md)   
+ [Vue Fonctions](../profiling/functions-view-instrumentation-data.md)

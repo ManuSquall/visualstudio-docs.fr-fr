@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5426c6f8e9c4a932430a0c3bd3df6d98400c3562
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659558"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Présentation des modèles, des classes et des relations
@@ -26,15 +26,15 @@ Un langage spécifique à un domaine (DSL) est défini par son fichier de défin
  Cette rubrique décrit les fonctionnalités centrales de la définition DSL.
 
 ## <a name="the-dsl-definition"></a>Définition DSL
- Lorsque vous ouvrez `Dsl\DslDefinition.dsl`, la fenêtre de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ressemble à l’image suivante.
+ Lorsque vous ouvrez `Dsl\DslDefinition.dsl` , votre [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fenêtre ressemble à l’image suivante.
 
- ![concepteur DSL](../modeling/media/dsl-designer.png "dsl_designer")
+ ![Concepteur dsl](../modeling/media/dsl-designer.png "dsl_designer")
 
  Les informations les plus importantes de la définition DSL s’affichent dans le diagramme de définition DSL. Des informations supplémentaires, qui font également partie de DslDefinition. DSL, s’affichent dans l’Explorateur DSL, qui apparaît généralement sur le côté du diagramme. Vous utilisez le diagramme pour les tâches les plus fréquentes et avec l’Explorateur DSL pour des personnalisations plus avancées.
 
  Le diagramme de définition DSL affiche les classes de domaine qui définissent des éléments de modèle, ainsi que les relations qui définissent des liens entre des éléments de modèle. Il montre également les formes et les connecteurs utilisés pour afficher les éléments de modèle pour l’utilisateur.
 
- ![concepteur DSL avec couloir](../modeling/media/dsl-desinger.png "dsl_desinger")
+ ![Concepteur dsl avec couloir](../modeling/media/dsl-desinger.png "dsl_desinger")
 
  Lorsque vous sélectionnez un élément dans la définition DSL, sur le diagramme ou dans l’Explorateur DSL, les informations le concernant s’affichent dans la Fenêtre Propriétés. Des informations supplémentaires peuvent s’afficher dans la fenêtre Détails DSL.
 
@@ -48,13 +48,13 @@ Un langage spécifique à un domaine (DSL) est défini par son fichier de défin
 
  Cette illustration montre un modèle qui a été créé par l’utilisateur d’une bibliothèque musicale DSL. Les albums musicaux sont représentés par des zones qui contiennent des listes de chansons. Les artistes sont représentés par des rectangles arrondis et sont connectés aux albums auxquels ils ont participé.
 
- ![Modèle d’instance du DSL généré](../modeling/media/music-instance.png "Music_Instance")
+ ![Modèle d'instance du DSL généré](../modeling/media/music-instance.png "Music_Instance")
 
  La définition DSL sépare deux aspects. L’apparence des éléments de modèle sur le diagramme de modèle est définie à l’aide des classes de formes et des classes de connecteur. Les informations contenues dans le modèle sont définies à l’aide des classes de domaine et des relations de domaine.
 
  L’illustration suivante montre les classes de domaine et les relations dans la définition DSL de la bibliothèque Music.
 
- ![Relations d’incorporation et de référence](../modeling/media/music-classes.png "Music_Classes")
+ ![Relations d'incorporation et de référence](../modeling/media/music-classes.png "Music_Classes")
 
  L’illustration montre quatre classes de domaine : musique, album, artiste et chanson. Les classes de domaine définissent les propriétés de domaine, telles que le nom, le titre et ainsi de suite. Dans le modèle d’instance, les valeurs de certaines de ces propriétés sont affichées dans le diagramme.
 
@@ -132,9 +132,9 @@ Un langage spécifique à un domaine (DSL) est défini par son fichier de défin
  Lorsque vous créez une relation dans une définition DSL, les noms de propriété et de relation reçoivent des valeurs par défaut. Toutefois, vous pouvez les modifier.
 
 ## <a name="multiplicities"></a>Multiplicités
- Les multiplicités spécifient le nombre d’éléments qui peuvent avoir le même rôle dans une relation de domaine. Dans l’exemple, le paramètre de multiplicité zéro-à-plusieurs (0.. \*) sur le rôle de **catalogue** spécifie qu’une instance de la classe de domaine de l' **éditeur** peut avoir autant de liens de relation **PublisherCatalog** que vous le souhaitez.
+ Les multiplicités spécifient le nombre d’éléments qui peuvent avoir le même rôle dans une relation de domaine. Dans l’exemple, le paramètre de multiplicité zéro-à-plusieurs (0... \* ) sur le rôle de **catalogue** spécifie qu’une instance de la classe de domaine de l' **éditeur** peut avoir autant de liens de relation **PublisherCatalog** que vous le souhaitez.
 
- Configurez la multiplicité d’un rôle en tapant sur le diagramme ou en modifiant la propriété `Multiplicity` dans la fenêtre **Propriétés** . Le tableau suivant décrit les paramètres de cette propriété.
+ Configurez la multiplicité d’un rôle en tapant sur le diagramme ou en modifiant la `Multiplicity` propriété dans la fenêtre **Propriétés** . Le tableau suivant décrit les paramètres de cette propriété.
 
 |Type de multiplicité|Description|
 |-----------------------|-----------------|

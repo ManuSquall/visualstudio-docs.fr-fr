@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Déboguer des serveurs COM | Microsoft Docs'
+title: 'Comment : déboguer des serveurs COM | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,13 +24,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3552ff1ffb5d6b3e3789aebd3a8903bf82a66b16
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205412"
 ---
-# <a name="how-to-debug-com-servers"></a>Procédure : Déboguer des serveurs COM
+# <a name="how-to-debug-com-servers"></a>Comment : déboguer des serveurs COM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Le débogage d'applications serveur COM pose un ensemble de problèmes qui ne sont pas toujours faciles à résoudre.  
@@ -47,6 +47,6 @@ Le débogage d'applications serveur COM pose un ensemble de problèmes qui ne so
   
 ## <a name="see-also"></a>Voir aussi  
  [Débogage COM et ActiveX](../debugger/com-and-activex-debugging.md)   
- [Guide pratique : déboguer des clients et des serveurs COM à l’aide du débogage RPC](../debugger/how-to-debug-com-clients-and-servers-using-rpc-debugging.md)   
+ [Comment : déboguer des clients et des serveurs COM à l’aide du débogage RPC](../debugger/how-to-debug-com-clients-and-servers-using-rpc-debugging.md)   
  [Débogage de serveurs et de conteneurs COM](../debugger/com-server-and-container-debugging.md)   
  [Débogage dans Visual Studio](../debugger/debugging-in-visual-studio.md)

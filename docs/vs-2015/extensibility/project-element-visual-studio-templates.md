@@ -14,10 +14,10 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a5c9708bb8c35e66199aaf3665883307e48a63c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193966"
 ---
 # <a name="project-element-visual-studio-templates"></a>Project, élément (modèles Visual Studio)
@@ -48,16 +48,16 @@ Spécifie les fichiers ou répertoires à ajouter au projet.
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|`File`|Attribut requis.<br /><br /> Spécifie le nom du fichier projet dans le fichier .zip du modèle.|  
-|`ReplaceParameters`|Attribut facultatif.<br /><br /> Valeur booléenne qui spécifie si le fichier projet a des valeurs de paramètre qui doivent être remplacés lorsqu’un projet est créé à partir du modèle. La valeur par défaut est `false`.|  
+|`File`|Attribut requis.<br /><br /> Spécifie le nom du fichier projet dans le fichier. zip du modèle.|  
+|`ReplaceParameters`|Attribut facultatif.<br /><br /> Valeur booléenne qui spécifie si le fichier projet a des valeurs de paramètre qui doivent être remplacées lors de la création d’un projet à partir du modèle. La valeur par défaut est `false`.|  
 |`TargetFileName`|Attribut facultatif.<br /><br /> Spécifie le nom du fichier projet lorsqu’un projet est créé à partir du modèle.|  
-|`IgnoreProjectParameter`|Attribut facultatif.<br /><br /> Spécifie si le projet doit être ajouté à la solution actuelle. Si la valeur de paramètre personnalisé, « $*myCustomParameter*$» existe dans le fichier de remplacement de paramètre, le projet est créé, mais pas ajouté en tant que partie de la solution actuellement ouverte.|  
+|`IgnoreProjectParameter`|Attribut facultatif.<br /><br /> Spécifie si le projet doit être ajouté à la solution actuelle. Si la valeur du paramètre personnalisé, « $*myCustomParameter*$ » existe dans le fichier de remplacement de paramètre, le projet est créé mais n’est pas ajouté dans le cadre de la solution actuellement ouverte.|  
   
 ### <a name="child-elements"></a>Éléments enfants  
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[Dossier](../extensibility/folder-element-visual-studio-project-templates.md)|Élément facultatif.<br /><br /> Spécifie un dossier à ajouter au projet.|  
+|[Folder](../extensibility/folder-element-visual-studio-project-templates.md)|Élément facultatif.<br /><br /> Spécifie un dossier à ajouter au projet.|  
 |[ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md)|Élément facultatif.<br /><br /> Spécifie un fichier à ajouter à un projet.|  
   
 ### <a name="parent-elements"></a>Éléments parents  
@@ -69,14 +69,14 @@ Spécifie les fichiers ou répertoires à ajouter au projet.
 ## <a name="remarks"></a>Notes  
  `Project` est un élément enfant facultatif de `TemplateContent`.  
   
- Le `Project` élément est utilisé pour spécifier si un projet et par conséquent, est uniquement valide dans les modèles de projet.  
+ L' `Project` élément est utilisé pour spécifier un projet et, par conséquent, est uniquement valide dans les modèles de projet.  
   
- `Project` les éléments peuvent avoir [dossier](../extensibility/folder-element-visual-studio-project-templates.md) éléments enfants ou [ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md) éléments enfants, mais pas un mélange des deux `Folder` et `ProjectItem` les éléments enfants.  
+ `Project` les éléments peuvent avoir des éléments enfants [Folder](../extensibility/folder-element-visual-studio-project-templates.md) ou [ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md) , mais pas un mélange des `Folder` `ProjectItem` éléments enfants et.  
   
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] renomme automatiquement le nom du fichier projet basé sur le nom entré par l’utilisateur dans le **nouveau projet** boîte de dialogue. Utilisez le `TargetFileName` si vous souhaitez fournir un autre nom de fichier pour les fichiers projet créés avec le modèle d’attribut.  
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] renomme automatiquement le nom du fichier projet en fonction du nom entré par l’utilisateur dans la boîte de dialogue **nouveau projet** . Utilisez l' `TargetFileName` attribut si vous souhaitez fournir un autre nom de fichier pour les fichiers projet créés avec le modèle.  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant montre les métadonnées d’un modèle de projet pour un [!INCLUDE[csprcs](../includes/csprcs-md.md)] application.  
+ L’exemple suivant montre les métadonnées d’un modèle de projet pour une [!INCLUDE[csprcs](../includes/csprcs-md.md)] application.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  

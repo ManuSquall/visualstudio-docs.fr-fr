@@ -11,13 +11,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2090eeac014feb6a3a4308c920140d7934d3b0e4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68606010"
 ---
-# <a name="options-dialog-box-text-editor--javascripttypescript--code-validation"></a>Boîte de dialogue d’options : Éditeur de \> texte JavaScript/TypeScript \> Code Validation
+# <a name="options-dialog-box-text-editor--javascripttypescript--code-validation"></a>Options, boîte de dialogue : \> validation du code JavaScript/machine à écrire dans l’éditeur de texte \>
 
 Utilisez la page **Validation du code** de la boîte de dialogue **Options** pour modifier les paramètres qui affectent la façon dont JavaScript gère les erreurs. Vous pouvez accéder à la page **Validation du code** en choisissant **Outils** > **Options** dans la barre de menus, puis en développant **Éditeur de texte** > **JavaScript/TypeScript** > **Validation du code**.
 
@@ -41,4 +41,4 @@ Quand elle est définie sur **True**, les erreurs JavaScript sont montrées sous
 
 ## <a name="see-also"></a>Voir aussi
 
-- [JavaScript IntelliSense](../../ide/javascript-intellisense.md)
+- [IntelliSense JavaScript](../../ide/javascript-intellisense.md)

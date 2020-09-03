@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 35184f6ef724a9f0e803a10c9bda2c6981313ed6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205979"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>Journalisation dans un environnement multiprocesseur
@@ -60,7 +60,7 @@ public interface IForwardingLogger: INodeLogger
   
  Pour transférer des événements dans un journal de transfert, appelez la méthode <xref:Microsoft.Build.Framework.IEventRedirector.ForwardEvent%2A> de l’interface <xref:Microsoft.Build.Framework.IEventRedirector>. Passez les <xref:Microsoft.Build.Framework.BuildEventArgs> appropriés, ou un dérivé, comme paramètre.  
   
- Pour plus d’informations, consultez [Création de journaux de transfert](../msbuild/creating-forwarding-loggers.md).  
+ Pour plus d’informations, consultez [création de journaux de transfert](../msbuild/creating-forwarding-loggers.md).  
   
 ### <a name="attaching-a-distributed-logger"></a>Attacher un journal distribué  
  Pour attacher un journal distribué sur une génération en ligne de commande, utilisez le commutateur `/distributedlogger` (ou sa version abrégée `/dl`). Le format de nom des types et des classes de journal est le même que celui du commutateur `/logger`, sauf qu’un journal distribué a toujours deux classes de journalisation au lieu d’une : un journal de transfert et un journal central. Voici un exemple d’attachement d’un journal distribué :  
@@ -74,5 +74,5 @@ Culture=neutral
  Un astérisque (*) sépare les deux noms de journaux dans le commutateur `/dl`.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Enregistreurs d’événements de génération](../msbuild/build-loggers.md)   
- [Création d’enregistreurs d’événements de transfert](../msbuild/creating-forwarding-loggers.md)
+ [Enregistreurs de build](../msbuild/build-loggers.md)   
+ [Création de journaux de transfert](../msbuild/creating-forwarding-loggers.md)

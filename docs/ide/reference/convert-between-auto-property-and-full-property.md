@@ -1,5 +1,5 @@
 ---
-title: Convertir entre la propriété automobile et la propriété complète
+title: Conversion entre la propriété auto et la propriété full
 ms.date: 03/27/2020
 ms.topic: reference
 author: mikadumont
@@ -10,37 +10,37 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 8950ce27e95a59f5425419dcac5bd807193d51b6
-ms.sourcegitcommit: d6828e7422c8d74ec1e99146fedf0a05f757245f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80395411"
 ---
-# <a name="convert-between-auto-property-and-full-property"></a>Convertir entre la propriété automobile et la propriété complète
+# <a name="convert-between-auto-property-and-full-property"></a>Conversion entre la propriété auto et la propriété full
 
 Cette refactorisation s’applique à :
 
 - C#
 
-**Quoi :** Convertir entre une propriété auto-mise en œuvre à une propriété complète.
+**Ce qui suit :** Effectue la conversion entre une propriété implémentée automatiquement en une propriété complète.
 
-**Quand :** La logique de la propriété a changé.
+Dans les **cas suivants :** La logique de la propriété a été modifiée.
 
-**Pourquoi:** Vous pouvez convertir entre une propriété auto-mise en œuvre à une propriété complète manuellement, mais cette fonctionnalité fera automatiquement le travail pour vous. 
+**Pourquoi :** Vous pouvez effectuer une conversion manuelle d’une propriété implémentée automatiquement en une propriété complète, mais cette fonctionnalité effectue automatiquement le travail pour vous. 
 
 ## <a name="how-to"></a>Procédures
 
-1. Placez votre curseur sur le nom de la propriété.
-2. Appuyez **sur Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
-3. Sélectionnez parmi les deux options suivantes : 
+1. Placez le curseur sur le nom de la propriété.
+2. Appuyez sur **CTRL** + **.** pour afficher le menu **Actions rapides et refactorisations**.
+3. Sélectionnez l’une des deux options suivantes : 
 
-    Sélectionnez **Convertir à la propriété complète**.
+    Sélectionnez **convertir en propriété complète**.
 
    ![Convertir une propriété automatique en propriété complète](media/convert-auto-property-to-full-property.png) 
 
-    Sélectionnez **Utilisez la propriété automobile**. 
+    Sélectionnez **utiliser auto Property**. 
 
-    ![Convertir la propriété complète en propriété automobile](media/convert-full-property-to-auto-property.png) 
+    ![Convertir la propriété Full en propriété auto](media/convert-full-property-to-auto-property.png) 
 
 ## <a name="see-also"></a>Voir aussi
 

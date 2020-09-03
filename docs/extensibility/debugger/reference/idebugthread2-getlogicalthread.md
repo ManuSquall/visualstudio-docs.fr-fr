@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::GetLogicalThread ( Microsoft Docs
+title: 'IDebugThread2 :: GetLogicalThread | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e148fb0b9b043fc1717effca00d698ee14beb2f1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718843"
 ---
 # <a name="idebugthread2getlogicalthread"></a>IDebugThread2::GetLogicalThread
-Les moteurs Debug ne mettent pas en œuvre cette méthode.
+Les moteurs de débogage n’implémentent pas cette méthode.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -43,13 +43,13 @@ int GetLogicalThread( 
 
 ## <a name="parameters"></a>Paramètres
 `pStackFrame`\
-[dans] Un objet [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) qui représente le cadre de pile.
+dans Objet [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) qui représente le frame de pile.
 
 `ppLogicalThread`\
-[out] Retourne `IDebugLogicalThread2` une interface qui représente le thread logique associé. Une mise en œuvre du moteur de débogé devrait définir cette valeur nulle.
+à Retourne une `IDebugLogicalThread2` interface qui représente le thread logique associé. Une implémentation du moteur de débogage doit définir cette valeur sur une valeur null.
 
-## <a name="return-value"></a>Valeur de retour
- Les implémentations `E_NOTIMPL`du moteur Debug reviennent toujours.
+## <a name="return-value"></a>Valeur renvoyée
+ Les implémentations du moteur de débogage retournent toujours `E_NOTIMPL` .
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

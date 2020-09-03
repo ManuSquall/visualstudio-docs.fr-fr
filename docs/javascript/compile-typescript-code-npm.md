@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: 58603db021d7aeebe3272711e5ba92d96eb22075
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88250175"
 ---
 # <a name="compile-typescript-code-nodejs"></a>Compiler le code de la machine à écrire (Node.js)
@@ -70,7 +70,7 @@ Le [package NPM de machine à écrire](https://www.npmjs.com/package/typescript)
 
    La configuration précédente fournit uniquement une présentation de base de la configuration de la machine à écrire. Pour plus d’informations sur les autres options, consultez [tsconfig.jssur](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).
 
-## <a name="build-the-application"></a>Générer l’application
+## <a name="build-the-application"></a>Créer l’application
 
 1. Ajoutez des fichiers de machine à écrire (*. TS*) ou de jsx (*. TSX*) à votre projet, puis ajoutez le code de la machine à écrire. Pour obtenir un exemple simple de la méthode de machine à écrire, utilisez ce qui suit :
 

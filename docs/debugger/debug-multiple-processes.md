@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 94a61e0083b17fa095b419a2066a4f8b9c39dfb7
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350600"
 ---
 # <a name="debug-multiple-processes-c-visual-basic-c"></a>Déboguer plusieurs processus (C#, Visual Basic, C++)
@@ -52,7 +52,7 @@ Pour démarrer le débogage d’un projet à partir de **Explorateur de solution
 
 1. Sélectionnez **appliquer**ou **OK** pour appliquer et fermer la boîte de dialogue.
 
-### <a name="attach-to-a-process"></a><a name="BKMK_Attach_to_a_process"></a>Attacher à un processus
+### <a name="attach-to-a-process"></a><a name="BKMK_Attach_to_a_process"></a> Attacher à un processus
 
 Le débogueur peut également *être attaché* à des applications qui s’exécutent dans des processus en dehors de Visual Studio, y compris sur des appareils distants. Après l’attachement à une application, vous pouvez utiliser le débogueur Visual Studio. Les fonctionnalités de débogage peuvent être limitées. Cela dépend du fait que l’application a été générée avec les informations de débogage, que vous ayez accès au code source de l’application et que le compilateur JIT effectue le suivi des informations de débogage.
 
@@ -69,7 +69,7 @@ Pour plus d’informations, consultez [attacher aux processus en cours d’exéc
 >[!NOTE]
 >Le débogueur n'effectue pas un attachement automatique à un processus enfant démarré par un processus débogué, même si le projet enfant se trouve dans la même solution. Pour déboguer un processus enfant, joignez-le au processus enfant après son démarrage, ou configurez l’éditeur du Registre Windows pour démarrer le processus enfant dans une nouvelle instance du débogueur.
 
-### <a name="use-the-registry-editor-to-automatically-start-a-process-in-the-debugger"></a><a name="BKMK_Automatically_start_an_process_in_the_debugger"></a>Utiliser l’éditeur du Registre pour démarrer automatiquement un processus dans le débogueur
+### <a name="use-the-registry-editor-to-automatically-start-a-process-in-the-debugger"></a><a name="BKMK_Automatically_start_an_process_in_the_debugger"></a> Utiliser l’éditeur du Registre pour démarrer automatiquement un processus dans le débogueur
 
 Parfois, vous devrez peut-être déboguer le code de démarrage d’une application qui est lancée par un autre processus. C'est le cas des services et des actions d'installation personnalisée. Vous pouvez lancer le débogueur et l’attacher automatiquement à l’application.
 
@@ -93,7 +93,7 @@ Parfois, vous devrez peut-être déboguer le code de démarrage d’une applicat
 
    ![Entrée de démarrage du débogueur automatique dans regedit.exe](../debugger/media/dbg_execution_automaticstart_result.png "Entrée de démarrage du débogueur automatique dans regedit.exe")
 
-## <a name="debug-with-multiple-processes"></a><a name="BKMK_Switch_processes__break_and_continue_execution__step_through_source"></a>Déboguer avec plusieurs processus
+## <a name="debug-with-multiple-processes"></a><a name="BKMK_Switch_processes__break_and_continue_execution__step_through_source"></a> Déboguer avec plusieurs processus
 <a name="BKMK_Configure_the_execution_behavior_of_multiple_processes"></a>
 
 Lors du débogage d’une application à l’aide de plusieurs processus, les commandes de rupture, d’exécution pas à pas et de poursuite du débogueur affectent tous les processus par défaut. Par exemple, lorsqu’un processus est interrompu à un point d’arrêt, l’exécution de tous les autres processus est également interrompue. Vous pouvez changer ce comportement par défaut pour mieux contrôler les cibles des commandes d’exécution.
@@ -106,7 +106,7 @@ Lors du débogage d’une application à l’aide de plusieurs processus, les co
 
 Le tableau suivant décrit les comportements des commandes de débogage lorsque la case à cocher **arrêter tous les processus lorsqu’un processus s’arrête** est activée ou désactivée :
 
-|**Commande**|Volumes sélectionnés|Désélectionné|
+|**Commande**|Sélectionné|Désélectionné|
 |-|-|-|
 |**Débogage**   >  **Arrêter tout**|Tous les processus s'arrêtent.|Tous les processus s'arrêtent.|
 |**Débogage**  >  **Continuer**|Tout les processus reprennent.|Tous les processus suspendus reprennent.|

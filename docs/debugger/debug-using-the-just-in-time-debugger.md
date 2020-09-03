@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 40b6a0e43a8d0980615087c946e5dd14deef1b0b
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350574"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Déboguer à l’aide du débogueur juste-à-temps dans Visual Studio
@@ -26,7 +26,7 @@ Le débogage juste-à-temps fonctionne pour les applications de bureau Windows. 
 > [!TIP]
 > Si vous souhaitez simplement arrêter l’affichage de la boîte de dialogue débogueur juste-à-temps, mais que Visual Studio n’est pas installé, consultez [désactiver le débogueur juste-à-temps](../debugger/just-in-time-debugging-in-visual-studio.md). Si vous avez installé Visual Studio, vous devrez peut-être [désactiver le débogage juste-à-temps à partir du Registre Windows](#disable-just-in-time-debugging-from-the-windows-registry).
 
-## <a name="enable-or-disable-just-in-time-debugging-in-visual-studio"></a><a name="BKMK_Enabling"></a>Activer ou désactiver le débogage juste-à-temps dans Visual Studio
+## <a name="enable-or-disable-just-in-time-debugging-in-visual-studio"></a><a name="BKMK_Enabling"></a> Activer ou désactiver le débogage juste-à-temps dans Visual Studio
 
 >[!NOTE]
 >Pour activer ou désactiver le débogage juste-à-temps, vous devez exécuter Visual Studio en tant qu’administrateur. L’activation ou la désactivation du débogage juste-à-temps définit une clé de Registre et des privilèges d’administrateur peuvent être nécessaires pour modifier cette clé. Pour ouvrir Visual Studio en tant qu’administrateur, cliquez avec le bouton droit sur l’application Visual Studio et choisissez **exécuter en tant qu’administrateur**.
@@ -93,7 +93,7 @@ Pour activer le débogage juste-à-temps au lieu de la gestion des erreurs Windo
    [assembly:System::Diagnostics::DebuggableAttribute(true, true)];
    ```
 
-   Pour plus d’informations, consultez <xref:System.Diagnostics.DebuggableAttribute>.
+   Pour plus d'informations, consultez <xref:System.Diagnostics.DebuggableAttribute>.
 
 ## <a name="use-just-in-time-debugging"></a><a name="BKMK_Using_JIT"></a>Utiliser le débogage juste-à-temps
 Cet exemple vous guide tout au long du débogage juste-à-temps lorsqu’une application génère une erreur.
@@ -147,7 +147,7 @@ Vous pouvez démarrer le débogage à ce stade. Si vous déboguez une applicatio
 > [!CAUTION]
 > Si votre application contient du code non fiable, une boîte de dialogue d’avertissement de sécurité s’affiche, vous permettant de décider s’il faut poursuivre le débogage. Avant de continuer le débogage, déterminez si vous faites confiance au code. Avez-vous écrit le code vous-même ? Si l'application s'exécute sur un ordinateur distant, reconnaissez-vous le nom du processus ? Si l’application s’exécute localement, pensez à la possibilité que du code malveillant s’exécute sur votre ordinateur. Si vous décidez que le code est digne de confiance, sélectionnez **OK**. Sinon, sélectionnez **Annuler**.
 
-## <a name="troubleshoot-just-in-time-debugging"></a><a name="jit_errors"></a>Résoudre les problèmes de débogage juste-à-temps
+## <a name="troubleshoot-just-in-time-debugging"></a><a name="jit_errors"></a> Résoudre les problèmes de débogage juste-à-temps
 
 Si le débogage juste-à-temps ne démarre pas lorsqu’une application se bloque, même si elle est activée dans Visual Studio :
 

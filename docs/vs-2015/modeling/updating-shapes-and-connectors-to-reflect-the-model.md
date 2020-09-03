@@ -10,18 +10,18 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c31d54a87ff305504496eac6ae02900334c0966a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659453"
 ---
 # <a name="updating-shapes-and-connectors-to-reflect-the-model"></a>Mise à jour des formes et des connecteurs pour refléter le modèle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Dans un langage spécifique à un domaine dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vous pouvez faire en sorte que l’apparence d’une forme reflète l’état du modèle sous-jacent.
+Dans un langage spécifique à un domaine dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , vous pouvez faire en sorte que l’apparence d’une forme reflète l’état du modèle sous-jacent.
 
- Les exemples de code de cette rubrique doivent être ajoutés à un fichier `.cs` dans votre projet `Dsl`. Vous aurez besoin de ces instructions dans chaque fichier :
+ Les exemples de code de cette rubrique doivent être ajoutés à un `.cs` fichier dans votre `Dsl` projet. Vous aurez besoin de ces instructions dans chaque fichier :
 
 ```
 using Microsoft.VisualStudio.Modeling;
@@ -30,9 +30,9 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ```
 
 ## <a name="set-shape-map-properties-to-control-the-visibility-of-a-decorator"></a>Définir les propriétés de mappage de forme pour contrôler la visibilité d’un élément décoratif
- Vous pouvez contrôler la visibilité d’un élément décoratif sans écrire de code de programme, en configurant le mappage entre la forme et la classe de domaine dans la définition DSL. Pour plus d’informations, consultez les rubriques suivantes :
+ Vous pouvez contrôler la visibilité d’un élément décoratif sans écrire de code de programme, en configurant le mappage entre la forme et la classe de domaine dans la définition DSL. Pour plus d'informations, voir les rubriques suivantes :
 
-- [Guide pratique pour contrôler la visibilité d’un décorateur - redirection](../misc/how-to-control-the-visibility-of-a-decorator-redirect.md)
+- [Comment : contrôler la visibilité d'un Decorator - redirection](../misc/how-to-control-the-visibility-of-a-decorator-redirect.md)
 
 - [Guide pratique pour définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md)
 
@@ -43,14 +43,14 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
  `shape.FillColor = System.Drawing.Color.Red;`
 
- Si vous souhaitez que la variable de propriété soit uniquement sous contrôle du programme, et non par l’utilisateur, sélectionnez la nouvelle propriété de domaine comme **couleur de remplissage** dans le diagramme de définition DSL. Ensuite, dans la Fenêtre Propriétés, Set **peut être exploré** pour `false` ou définir **is UI ReadOnly** pour `true`.
+ Si vous souhaitez que la variable de propriété soit uniquement sous contrôle du programme, et non par l’utilisateur, sélectionnez la nouvelle propriété de domaine comme **couleur de remplissage** dans le diagramme de définition DSL. Ensuite, dans la Fenêtre Propriétés, Set **peut être exploré** `false` ou défini comme **UI ReadOnly** to `true` .
 
 ## <a name="define-change-rules-to-make-color-style-or-location-depend-on-model-element-properties"></a>Définir des règles de modification pour définir la couleur, le style ou l’emplacement en fonction des propriétés de l’élément de modèle
  Vous pouvez définir des règles qui mettent à jour l’apparence de la forme en fonction des autres parties du modèle. Par exemple, vous pouvez définir une règle de modification sur un élément de modèle qui met à jour la couleur de sa forme en fonction des propriétés de l’élément de modèle. Pour plus d’informations sur les règles de modification, consultez [règles de propagation des modifications dans le modèle](../modeling/rules-propagate-changes-within-the-model.md).
 
  Vous devez utiliser des règles uniquement pour mettre à jour les propriétés qui sont conservées dans le magasin, car les règles ne sont pas appelées lors de l’exécution de la commande Annuler. Cela n’inclut pas certaines fonctionnalités graphiques telles que la taille et la visibilité d’une forme. Pour mettre à jour ces fonctionnalités d’une forme, consultez [mise à jour des fonctionnalités graphiques de non-stockage](#OnAssociatedProperty).
 
- L’exemple suivant suppose que vous avez exposé `FillColor` en tant que propriété de domaine, comme décrit dans la section précédente.
+ L’exemple suivant suppose que vous avez exposé `FillColor` en tant que propriété de domaine comme décrit dans la section précédente.
 
 ```csharp
 [RuleOn(typeof(ExampleElement))]
@@ -90,7 +90,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ```
 
 ## <a name="use-onchildconfigured-to-initialize-a-shapes-properties"></a>Utiliser OnChildConfigured pour initialiser les propriétés d’une forme
- Pour définir les propriétés d’une forme lors de sa création, la substitution `OnChildConfigured()` dans une définition partielle de la classe Diagram. La classe Diagram est spécifiée dans votre définition DSL et le code généré se trouve dans **Dsl\Generated Code\Diagram.cs**. Exemple :
+ Pour définir les propriétés d’une forme lorsqu’elle est créée pour la première fois, remplacez `OnChildConfigured()` dans une définition partielle de la classe Diagram. La classe Diagram est spécifiée dans votre définition DSL et le code généré se trouve dans **Dsl\Generated Code\Diagram.cs**. Par exemple :
 
 ```csharp
 partial class MyLanguageDiagram
@@ -115,10 +115,10 @@ partial class MyLanguageDiagram
 
  Cette méthode peut être utilisée à la fois pour les propriétés de domaine et les fonctionnalités de non-stockage, telles que la taille de la forme.
 
-## <a name="OnAssociatedProperty"></a>Utiliser AssociateValueWith () pour mettre à jour d’autres fonctionnalités d’une forme
+## <a name="use-associatevaluewith-to-update-other-features-of-a-shape"></a><a name="OnAssociatedProperty"></a> Utiliser AssociateValueWith () pour mettre à jour d’autres fonctionnalités d’une forme
  Pour certaines fonctionnalités d’une forme, par exemple si elle a une ombre, ou le style de flèche d’un connecteur, il n’existe aucune méthode intégrée pour exposer la fonctionnalité en tant que propriété de domaine.  Les modifications apportées à ces fonctionnalités ne sont pas sous le contrôle du système de transactions. Par conséquent, il n’est pas approprié de les mettre à jour à l’aide de règles, car les règles ne sont pas appelées lorsque l’utilisateur exécute la commande Annuler.
 
- Au lieu de cela, vous pouvez mettre à jour ces fonctionnalités à l’aide de <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A>. Dans l’exemple suivant, le style de flèche d’un connecteur est contrôlé par la valeur d’une propriété de domaine dans la relation que le connecteur affiche :
+ Au lieu de cela, vous pouvez mettre à jour ces fonctionnalités à l’aide de <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A> . Dans l’exemple suivant, le style de flèche d’un connecteur est contrôlé par la valeur d’une propriété de domaine dans la relation que le connecteur affiche :
 
 ```
 public partial class ArrowConnector // My connector class.

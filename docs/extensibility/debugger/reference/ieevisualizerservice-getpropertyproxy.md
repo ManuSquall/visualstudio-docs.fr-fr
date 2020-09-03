@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerService::GetPropertyProxy (fr) Microsoft Docs
+title: 'IEEVisualizerService :: GetPropertyProxy | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4f499b816b012c3b3a71e3e8ecafaa2c0f34586d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718005"
 ---
 # <a name="ieevisualizerservicegetpropertyproxy"></a>IEEVisualizerService::GetPropertyProxy
-Cette méthode renvoie un proxy pour un objet de propriété.
+Cette méthode retourne un proxy pour un objet de propriété.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -43,16 +43,16 @@ int GetPropertyProxy(
 
 ## <a name="parameters"></a>Paramètres
 `dwID`\
-[dans] ID de proxy de propriété à récupérer.
+dans ID du proxy de propriété à récupérer.
 
 `proxy`\
-[out] Proxy souhaité implémenté dans une interface [IPropertyProxyEESide.](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
+à Proxy souhaité implémenté dans une interface [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) .
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
-- [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) transmet la demande à cette méthode dans le cadre de son support pour les visualisateurs de type.
+- [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) transmet la requête à cette méthode dans le cadre de sa prise en charge des visualiseurs de type.
 
 ## <a name="see-also"></a>Voir aussi
 - [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)

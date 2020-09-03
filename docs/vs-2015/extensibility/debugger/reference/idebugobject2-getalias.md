@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::GetAlias | Microsoft Docs
+title: 'IDebugObject2 :: GetAlias | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b05d416da41265f6727df843b1b686fcfe5107f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194612"
 ---
 # <a name="idebugobject2getalias"></a>IDebugObject2::GetAlias
@@ -40,13 +40,13 @@ int GetAlias(
   
 #### <a name="parameters"></a>Paramètres  
  `ppAlias`  
- [out] Retourne un [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) de l’objet représentant l’alias de cet objet ; sinon, retourne une valeur null.  
+ à Retourne un objet [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) représentant l’alias de cet objet. Sinon, retourne une valeur null.  
   
-## <a name="return-value"></a>Valeur de retour  
+## <a name="return-value"></a>Valeur renvoyée  
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Un alias pour un objet est créé avec un appel à la [CreateAlias](../../../extensibility/debugger/reference/idebugobject2-createalias.md) (méthode).  
+ Un alias pour un objet est créé avec un appel à la méthode [CreateAlias](../../../extensibility/debugger/reference/idebugobject2-createalias.md) .  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)   

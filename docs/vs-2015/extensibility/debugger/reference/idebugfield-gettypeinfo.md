@@ -1,5 +1,5 @@
 ---
-title: IDebugField::GetTypeInfo | Microsoft Docs
+title: 'IDebugField :: GetTypeInfo | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d4229bef0460c7475cda3f81d06b6b24e38ed759
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148911"
 ---
 # <a name="idebugfieldgettypeinfo"></a>IDebugField::GetTypeInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Cette méthode obtient indépendant du type d’informations sur le symbole ou d’un type.  
+Cette méthode obtient des informations indépendantes du type sur le symbole ou le type.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -40,13 +40,13 @@ int GetTypeInfo(
   
 #### <a name="parameters"></a>Paramètres  
  `pTypeInfo`  
- [out] Retourne les informations de type dans la liste fournie [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) structure.  
+ à Retourne des informations de type dans la structure [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) fournie.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="remarks"></a>Notes  
- Indépendant du type informations inclut, par exemple, le domaine d’application, le module et la classe qui contient le symbole.  
+ Les informations indépendantes du type incluent, par exemple, AppDomain, le module et la classe qui contient le symbole.  
   
 ## <a name="see-also"></a>Voir aussi  
  [GetType](../../../extensibility/debugger/reference/idebugfield-gettype.md)   

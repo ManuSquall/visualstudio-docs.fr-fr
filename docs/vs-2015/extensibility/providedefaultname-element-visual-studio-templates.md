@@ -1,5 +1,5 @@
 ---
-title: ProvideDefaultName, élément (modèles Visual Studio) | Microsoft Docs
+title: Élément ProvideDefaultName (modèles Visual Studio) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,19 +13,19 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0bd18dd979436b02cc12a4dab5439bdb5f371e2d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193889"
 ---
 # <a name="providedefaultname-element-visual-studio-templates"></a>ProvideDefaultName, élément (modèles Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Spécifie si le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] système de projet génère un nom par défaut pour le modèle dans le **ajouter un nouvel élément** ou **nouveau projet** boîte de dialogue.  
+Spécifie si le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] système de projet génère un nom par défaut pour le modèle dans la boîte de dialogue **Ajouter un nouvel élément** ou **nouveau projet** .  
   
  \<VSTemplate>  
- \<TemplateData >  
+ \<TemplateData>  
  \<ProvideDefaultName>  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -52,17 +52,17 @@ Spécifie si le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] système de projet 
 ## <a name="text-value"></a>Valeur texte  
  Une valeur texte est requise.  
   
- Le texte doit être `true` ou `false`, indiquant s’il faut générer un nom par défaut pour le modèle dans le **ajouter un nouvel élément** ou **nouveau projet** boîte de dialogue.  
+ Le texte doit être `true` ou `false` , indiquant s’il faut ou non générer un nom par défaut pour le modèle dans la boîte de dialogue **Ajouter un nouvel élément** ou **nouveau projet** .  
   
 ## <a name="remarks"></a>Notes  
  `ProvideDefaultName` est un élément facultatif. La valeur par défaut est `true`.  
   
- Si le `ProvideDefaultName` élément est `false`, le **nom** cases de la **ajouter un nouvel élément** et **nouveau projet** boîtes de dialogue contiennent la valeur `<Enter_name>`.  
+ Si l' `ProvideDefaultName` élément est `false` , les zones **nom** des boîtes de dialogue **Ajouter un nouvel élément** et **nouveau projet** contiennent la valeur `<Enter_name>` .  
   
- Utilisez le [DefaultName](../extensibility/defaultname-element-visual-studio-templates.md) élément pour spécifier le nom par défaut du projet ou élément dans le **ajouter un nouvel élément** et **nouveau projet** boîtes de dialogue.  
+ Utilisez l’élément [DefaultName](../extensibility/defaultname-element-visual-studio-templates.md) pour spécifier le nom par défaut du projet ou de l’élément dans les boîtes de dialogue **Ajouter un nouvel élément** et **nouveau projet** .  
   
-## <a name="example"></a>Exemples  
- Le code suivant exemple définit le `ProvideDefaultName` élément à `false`.  
+## <a name="example"></a>Exemple  
+ L’exemple de code suivant affecte `ProvideDefaultName` à l’élément la valeur `false` .  
   
 ```  
 <VSTemplate Type="Item" Version="3.0.0"  

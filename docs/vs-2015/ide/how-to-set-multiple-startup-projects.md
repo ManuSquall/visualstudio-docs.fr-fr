@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f751ef8ecc884c0e0b338d70f9e198fdc07807cb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660136"
 ---
 # <a name="how-to-set-multiple-startup-projects"></a>Guide pratique pour définir plusieurs projets de démarrage
@@ -27,7 +27,7 @@ Visual Studio vous permet de spécifier la façon dont plusieurs projets sont ex
 
 1. Dans l’**Explorateur de solutions**, sélectionnez la solution (le nœud tout en haut). Cliquez avec le bouton droit sur le nœud pour afficher le menu contextuel.
 
-2. Sélectionnez **Propriétés**. La boîte de dialogue **Pages de propriétés de Solution** s’affiche.
+2. Sélectionner **Propriétés**. La boîte de dialogue **Pages de propriétés de Solution** s’affiche.
 
 3. Développez le nœud **Propriétés communes** et cliquez sur **Projet de démarrage**.
 

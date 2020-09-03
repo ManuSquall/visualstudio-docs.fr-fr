@@ -16,15 +16,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 24ba5bbf34ecc12c2508c538e74909ee0a10aef4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68461394"
 ---
-# <a name="options-dialog-box-projects-and-solutions--build-and-run"></a>Boîte de dialogue d’options : Projets et solutions \> Construisent et exécutent
+# <a name="options-dialog-box-projects-and-solutions--build-and-run"></a>Boîte de dialogue Options : projets et solutions \> générer et exécuter
 
-Dans cette boîte de dialogue, vous pouvez spécifier le nombre maximal de projets C++ ou C# pouvant être générés simultanément, certains comportements de génération par défaut et certains paramètres du journal de génération. Pour accéder à ces options, sélectionnez **Outils** > **Options d’élargir** les **projets et les solutions,** puis sélectionnez **Build and Run**.
+Dans cette boîte de dialogue, vous pouvez spécifier le nombre maximal de projets C++ ou C# pouvant être générés simultanément, certains comportements de génération par défaut et certains paramètres du journal de génération. Pour accéder à ces options, sélectionnez **Outils**  >  **options** développer des **projets et des solutions**, puis sélectionnez **générer et exécuter**.
 
 **Nombre maximal de générations de projets en parallèle**
 
@@ -58,10 +58,10 @@ Détermine la quantité d’informations du processus de génération qui s’af
 
 *S’applique aux projets C++ uniquement.*
 
-Détermine la quantité d’informations écrites sur le fichier de journal de construction, qui est situé à * \\ \<ProjectName\\\<>-Debug ProjectName>.log*.
+Détermine la quantité d’informations qui sont écrites dans le fichier journal de génération, qui se trouve dans * \\ \<ProjectName> \Debug. \\ \<ProjectName> . log*.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Compilation et construction](../../ide/compiling-and-building-in-visual-studio.md)
+- [Compilation et génération](../../ide/compiling-and-building-in-visual-studio.md)
 - [Boîte de dialogue Options, Projets et solutions](projects-and-solutions-options-dialog-box.md)
 - [Boîte de dialogue Options, Projets et solutions, Projets web](options-dialog-box-projects-and-solutions-web-projects.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::EnumFrameInfo - France Microsoft Docs
+title: 'IDebugThread2 :: EnumFrameInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 8bd3c6d46a577930cc7a2b87c85cd82a55f8cf66
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718833"
 ---
 # <a name="idebugthread2enumframeinfo"></a>IDebugThread2::EnumFrameInfo
-Récupère une liste des cadres de pile pour ce thread.
+Récupère une liste des frames de pile pour ce thread.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -45,19 +45,19 @@ int EnumFrameInfo ( 
 
 ## <a name="parameters"></a>Paramètres
 `dwFieldSpec`\
-[dans] Une combinaison de drapeaux de [l’énumération FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) qui précise quels champs des structures [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) doivent être remplis. Spécifier le `FIF_FUNCNAME_FORMAT` drapeau pour formater le nom de la fonction en une seule chaîne.
+dans Combinaison d’indicateurs de l’énumération [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) qui spécifie les champs des structures [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) à remplir. Spécifiez l' `FIF_FUNCNAME_FORMAT` indicateur pour mettre en forme le nom de fonction en une seule chaîne.
 
 `nRadix`\
-[dans] Radix utilisé dans la mise en forme des informations numériques dans l’enumérateur.
+dans Base utilisée pour mettre en forme les informations numériques dans l’énumérateur.
 
 `ppEnum`\
-[out] Retourne un objet [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) qui contient une liste de structures [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) décrivant le cadre de pile.
+à Retourne un objet [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) qui contient une liste de structures [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) décrivant le frame de pile.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- Les cadres du fil sont énumérés dans l’ordre, avec le cadre actuel énuméré en premier et le cadre le plus ancien énuméré dernier.
+ Les frames du thread sont énumérés dans l’ordre, avec l’image actuelle énumérée en premier et la trame la plus ancienne énumérée en dernier.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

@@ -1,5 +1,5 @@
 ---
-title: Nom de l’élément (modèles Visual Studio) | Microsoft Docs
+title: Name, élément (modèles Visual Studio) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,19 +13,19 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a3da08450df7edf9046aaa926d89c182c91d03a7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194188"
 ---
 # <a name="name-element-visual-studio-templates"></a>Name, élément (modèles Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Spécifie le nom du modèle tel qu’il apparaît dans le **nouveau projet** ou **ajouter un nouvel élément** boîte de dialogue.  
+Spécifie le nom du modèle tel qu’il apparaît dans la boîte de dialogue **nouveau projet** ou **Ajouter un nouvel élément** .  
   
  \<VSTemplate>  
- \<TemplateData >  
+ \<TemplateData>  
  \<Name>  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -45,8 +45,8 @@ Spécifie le nom du modèle tel qu’il apparaît dans le **nouveau projet** ou 
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|`Package`|Attribut facultatif, pour les scénarios complexes.<br /><br /> Un GUID qui spécifie l’ID du package Visual Studio.|  
-|`ID`|Attribut facultatif, pour les scénarios complexes.<br /><br /> Spécifie l’ID de la ressource Visual Studio.|  
+|`Package`|Attribut facultatif, pour les scénarios utilisateur avancés.<br /><br /> Un GUID qui spécifie l’ID du package Visual Studio.|  
+|`ID`|Attribut facultatif, pour les scénarios utilisateur avancés.<br /><br /> Spécifie l’ID de la ressource Visual Studio.|  
   
 ### <a name="child-elements"></a>Éléments enfants  
  Aucun.  
@@ -66,7 +66,7 @@ Spécifie le nom du modèle tel qu’il apparaît dans le **nouveau projet** ou 
  `Name` est un élément enfant obligatoire de `TemplateData`.  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant montre les métadonnées d’un modèle de projet pour un [!INCLUDE[csprcs](../includes/csprcs-md.md)] application.  
+ L’exemple suivant montre les métadonnées d’un modèle de projet pour une [!INCLUDE[csprcs](../includes/csprcs-md.md)] application.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  

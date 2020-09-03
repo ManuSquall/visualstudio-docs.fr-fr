@@ -7,10 +7,10 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
 ms.openlocfilehash: 14696040160dfc33f89b7647fb73b116b41afa16
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67691729"
 ---
 # <a name="data-visualizations"></a>Visualisations de données
@@ -28,7 +28,7 @@ Une structure Point/PointF, ou CGPoint dans iOS et Mac, est restituée sous la f
 
 ![Visualisation d’une structure Point](media/data-visualizations-image10.png)
 
-## <a name="size"></a>Size
+## <a name="size"></a>Taille
 Une structure Size/SizeF, ou CGSize dans iOS et Mac, est restituée sous la forme d’un rectangle. Elle est dessinée à l’échelle jusqu’à ce qu’une dimension dépasse 250 pixels, limite à partir de laquelle elle est mise à l’échelle par rapport au rectangle avec comme dimension maximale 250 pixels :
 
 [Visualisation d’une structure Size](media/data-visualizations-image11.png)
@@ -90,9 +90,9 @@ Voici quelques autres types qui ont leur propre visualiseur :
 
 * **Primitives**
   * Ceci affiche la valeur brute du type primitif.
-* **Enum**
+* **Énumération**
   * Ceci affiche la valeur du champ sans le qualificateur de type enum.
-* **Tuple**
+* **Passent**
   * Affiché dans le format (,)
 * **Null**
   * Affiche la valeur « null ».

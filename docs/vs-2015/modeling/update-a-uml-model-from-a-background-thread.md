@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9e6626faa09f1e38506c2d205d13caa9a3707fc0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659462"
 ---
 # <a name="update-a-uml-model-from-a-background-thread"></a>Mettre à jour un modèle UML à partir d'un thread d'arrière-plan
@@ -32,7 +32,7 @@ Il peut parfois être utile apporter des modifications à un modèle dans un thr
 
 #### <a name="to-run-the-example"></a>Pour exécuter l'exemple
 
-1. Créez un gestionnaire de commandes dans C# un projet, comme décrit dans [définir une commande de menu sur un diagramme de modélisation](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
+1. Créez un gestionnaire de commandes dans un projet C#, comme décrit dans [définir une commande de menu sur un diagramme de modélisation](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
 
 2. Assurez-vous que le projet comprend des références aux assemblys suivants :
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::CreateAlias | Microsoft Docs
+title: 'IDebugObject2 :: CreateAlias | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 070340d72006f4b81ac306dcf05d721105bb875a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194627"
 ---
 # <a name="idebugobject2createalias"></a>IDebugObject2::CreateAlias
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Crée un identificateur unique ou un alias pour cet objet, ou retourne un alias existant.  
+Crée un alias ou un ID unique pour cet objet ou retourne un alias existant.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -40,13 +40,13 @@ int CreateAlias(
   
 #### <a name="parameters"></a>Paramètres  
  `ppAlias`  
- [out] L’alias de nouveau (ou existant).  
+ à Alias nouveau (ou existant).  
   
-## <a name="return-value"></a>Valeur de retour  
+## <a name="return-value"></a>Valeur renvoyée  
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Un alias est une étiquette qui représente un objet particulier, tandis que l’objet est en mémoire.  
+ Un alias est une étiquette qui représente un objet particulier lorsque l’objet est en mémoire.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)   

@@ -13,16 +13,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b435507c84d697ef27a2b37d6153a53dbe13cb3c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68206081"
 ---
-# <a name="constructorenum"></a>CONSTRUCTOR_ENUM
+# <a name="constructor_enum"></a>CONSTRUCTOR_ENUM
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Sélectionne les différents types de constructeurs.  
+Sélectionne différents types de constructeurs.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -47,20 +47,20 @@ public enum ConstructorMatchOptions { 
  Sélectionne tous les constructeurs.  
   
  crNonStatic  
- Sélectionne les constructeurs non statique.  
+ Sélectionne des constructeurs non statiques.  
   
  crStatic  
- Sélectionne les constructeurs statiques.  
+ Sélectionne des constructeurs statiques.  
   
 ## <a name="remarks"></a>Notes  
- Passé en tant qu’argument à la [EnumConstructors](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md) (méthode).  
+ Passé comme argument à la méthode [EnumConstructors](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md) .  
   
 ## <a name="requirements"></a>Configuration requise  
- En-tête : sh.h  
+ En-tête : SH. h  
   
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft. VisualStudio. Debugger. Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

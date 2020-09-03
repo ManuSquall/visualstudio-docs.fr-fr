@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e31ec2be9ccce0b07b04746d2ed51ab3909cdd2c
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84183676"
 ---
 # <a name="code-snippets-schema-reference"></a>Référence de schéma des extraits de code
@@ -270,7 +270,7 @@ Spécifie des informations d'ordre général sur l'extrait de code IntelliSense.
 |Élément enfant|Description|
 |-------------------|-----------------|
 |[Élément Author](../ide/code-snippets-schema-reference.md#author-element)|Élément facultatif. Nom de la personne ou de la société qui a créé l'extrait de code. Il peut y avoir zéro ou un élément `Author` dans un élément `Header`.|
-|[Description, élément](../ide/code-snippets-schema-reference.md#description-element)|Élément facultatif. Description de l'extrait de code. Il peut y avoir zéro ou un élément `Description` dans un élément `Header`.|
+|[Élément Description](../ide/code-snippets-schema-reference.md#description-element)|Élément facultatif. Description de l'extrait de code. Il peut y avoir zéro ou un élément `Description` dans un élément `Header`.|
 |[HelpUrl, élément](../ide/code-snippets-schema-reference.md#helpurl-element)|Élément facultatif. URL contenant plus d'informations sur l'extrait de code. Il peut y avoir zéro ou un élément `HelpURL` dans un élément . **Remarque** : Visual Studio n’utilise pas l’élément `HelpUrl`. L'élément fait partie du schéma XML des extraits de code IntelliSense et tout extrait de code contenant l'élément est validé mais la valeur de l'élément n'est jamais utilisée.|
 |[Keywords, élément](../ide/code-snippets-schema-reference.md#keywords-element)|Élément facultatif. Groupe les éléments `Keyword`. Il peut y avoir zéro ou un élément `Keywords` dans un élément `Header`.|
 |[Shortcut, élément](../ide/code-snippets-schema-reference.md#shortcut-element)|Élément facultatif. Spécifie le texte du raccourci qui peut être utilisé pour insérer l'extrait de code. Il peut y avoir zéro ou un élément `Shortcut` dans un élément `Header`.|
@@ -347,7 +347,7 @@ Groupe des éléments `Import` individuels.
 
 |Élément enfant|Description|
 |-------------------|-----------------|
-|[Élément Import](../ide/code-snippets-schema-reference.md#import-element)|Élément facultatif. Contient les espaces de noms importés pour l'extrait de code. Un élément **Import** peut ne contenir aucun élément `Imports` ou en contenir plusieurs.|
+|[Import, élément](../ide/code-snippets-schema-reference.md#import-element)|Élément facultatif. Contient les espaces de noms importés pour l'extrait de code. Un élément **Import** peut ne contenir aucun élément `Imports` ou en contenir plusieurs.|
 
 |Élément parent|Description|
 | - |-----------------|
@@ -430,7 +430,7 @@ Spécifie l'espace de noms qui doit être importé pour compiler l'extrait de co
 
 |Élément parent|Description|
 | - |-----------------|
-|[Élément Import](../ide/code-snippets-schema-reference.md#import-element)|Importe l'espace de noms spécifié.|
+|[Import, élément](../ide/code-snippets-schema-reference.md#import-element)|Importe l'espace de noms spécifié.|
 
 Une valeur texte est requise. Ce texte spécifie un espace de noms que l'extrait de code considère comme importé.
 

@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugFrameInfo2::Skip | Microsoft Docs
+title: 'IEnumDebugFrameInfo2 :: Skip | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3714a4eac50e8f8175879181dc025536d15af7b2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161029"
 ---
 # <a name="ienumdebugframeinfo2skip"></a>IEnumDebugFrameInfo2::Skip
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Ignore le nombre spécifié d’éléments.  
+Ignore le nombre spécifié d'éléments.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -40,13 +40,13 @@ int Skip(
   
 #### <a name="parameters"></a>Paramètres  
  `celt`  
- [in] Nombre d’éléments à ignorer.  
+ [in] Nombre d'éléments à ignorer.  
   
-## <a name="return-value"></a>Valeur de retour  
+## <a name="return-value"></a>Valeur renvoyée  
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si `celt` est supérieur au nombre d’éléments restants ; sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Si `celt` spécifie une valeur supérieure au nombre d’éléments restants, l’énumération est définie à la fin et `S_FALSE` est retourné.  
+ Si `celt` spécifie une valeur supérieure au nombre d’éléments restants, l’énumération est définie à la fin et `S_FALSE` est retournée.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)

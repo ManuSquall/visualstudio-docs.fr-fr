@@ -22,10 +22,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0c9dcc0d09887cacca7e6cdaa2e4f2b719c6451c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67826246"
 ---
 # <a name="xsd-task"></a>Tâche XSD
@@ -38,33 +38,33 @@ Encapsule l’outil Définition du schéma XML (xsd.exe), qui génère des fichi
   
 - **AdditionalOptions**  
   
-     Paramètre **String** facultatif.  
+     Paramètre de **chaîne** facultatif.  
   
-     Liste des options comme indiqué sur la ligne de commande. Par exemple, «  */option1 /option2 /option#*  ». Utilisez ce paramètre pour spécifier des options qui ne sont pas représentées par un autre paramètre de tâche **XSD**.  
+     Liste des options comme indiqué sur la ligne de commande. Par exemple, «*/option1/option2/option #*». Utilisez ce paramètre pour spécifier des options qui ne sont pas représentées par un autre paramètre de tâche **XSD**.  
   
 - **GenerateFromSchema**  
   
-  Paramètre **String** facultatif.  
+  Paramètre de **chaîne** facultatif.  
 
   Indique les types qui sont générés à partir du schéma spécifié.  
 
   Spécifiez l’une des valeurs suivantes, chacune d’elles correspondant à une option XSD.  
 
-  - **classes** -  **/classes**  
+  - **classes**  -  **/classes**  
 
-  - **dataset** -  **/dataset**  
+  - **jeu de données**  -  **/DataSet**  
   
-- **Language**  
+- **Langage**  
   
-     Paramètre **String** facultatif.  
+     Paramètre de **chaîne** facultatif.  
   
      Spécifie le langage de programmation à utiliser pour le code généré.  
   
      Vous avez le choix entre **CS** (C#, qui est la valeur par défaut), **VB** (Visual Basic) ou **JS** (JScript). Vous pouvez également spécifier un nom qualifié complet pour une classe qui implémente `System.CodeDom.Compiler.CodeDomProvider Class`.  
   
-- **Namespace**  
+- **Espace de noms**  
   
-     Paramètre **String** facultatif.  
+     Paramètre de **chaîne** facultatif.  
   
      Spécifie l'espace de noms du runtime pour les types générés.  
   
@@ -76,15 +76,15 @@ Encapsule l’outil Définition du schéma XML (xsd.exe), qui génère des fichi
   
 - **SuppressStartupBanner**  
   
-     Paramètre **Boolean** facultatif.  
+     Paramètre **booléen** facultatif.  
   
      Si la valeur est `true`, empêche l'affichage du message de copyright et de numéro de version quand la tâche démarre.  
   
 - **TrackerLogDirectory**  
   
-     Paramètre **String** facultatif.  
+     Paramètre de **chaîne** facultatif.  
   
      Spécifie le répertoire du journal de Tracker.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)
+ [Référence de tâche](../msbuild/msbuild-task-reference.md)

@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: a5d6309818c251b9101b1345450ef66f3fc8f1f8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586794"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Créer un contrôle utilisateur Windows Forms prenant en charge la liaison de données de recherche
@@ -36,11 +36,11 @@ Quand vous créez des contrôles utilisables dans des scénarios de liaison de d
 |Implémentez <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> sur des contrôles, comme <xref:System.Windows.Forms.DataGridView>, qui affichent des listes (ou tables) de données. Pour plus d’informations, consultez [créer un Windows Forms contrôle utilisateur qui prend en charge la liaison de données complexe](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md).|
 |Implémentez <xref:System.ComponentModel.LookupBindingPropertiesAttribute> sur des contrôles, comme <xref:System.Windows.Forms.ComboBox>, qui affichent des listes (ou tables) de données, mais doivent également présenter une seule colonne ou propriété. (Ce processus est décrit dans cette page de procédure pas à pas.)|
 
-Cette procédure pas à pas crée un contrôle de recherche qui effectue une liaison vers les données de deux tables. Cet exemple utilise les tables `Customers` et `Orders` de l'exemple de base de données Northwind. Le contrôle de recherche est lié au champ `CustomerID` à partir de la table `Orders`. Elle utilise cette valeur pour rechercher le `CompanyName` à partir de la table `Customers`.
+Cette procédure pas à pas crée un contrôle de recherche qui effectue une liaison vers les données de deux tables. Cet exemple utilise les tables `Customers` et `Orders` de l'exemple de base de données Northwind. Le contrôle de recherche est lié au `CustomerID` champ de la `Orders` table. Elle utilise cette valeur pour rechercher `CompanyName` dans la `Customers` table.
 
 Au cours de cette procédure pas à pas, vous apprendrez à :
 
-- Créer une **application Windows Forms**.
+- Créez une **application de Windows Forms**.
 
 - Ajouter un nouveau **Contrôle utilisateur** à votre projet.
 
@@ -54,7 +54,7 @@ Au cours de cette procédure pas à pas, vous apprendrez à :
 
 - Créer un formulaire pour afficher des données dans le nouveau contrôle.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Prérequis
 
 Cette procédure pas à pas utilise SQL Server Express base de données locale et l’exemple de base de données Northwind.
 
@@ -78,7 +78,7 @@ La première étape consiste à créer un projet d' **Application Windows Forms*
 
 1. Dans Visual Studio, dans le menu **Fichier**, sélectionnez **Nouveau** > **Projet**.
 
-2. Développez **Visual C#**  ou **Visual Basic** dans le volet gauche, puis sélectionnez **Bureau Windows**.
+2. Développez **Visual C#** ou **Visual Basic** dans le volet gauche, puis sélectionnez **Bureau Windows**.
 
 3. Dans le volet central, sélectionnez le type de projet d' **application Windows Forms** .
 
@@ -111,7 +111,7 @@ Pour des contrôles de recherche prenant en charge la liaison de données, vous 
      [!code-vb[VbRaddataDisplaying#5](../data-tools/codesnippet/VisualBasic/create-a-windows-forms-user-control-that-supports-lookup-data-binding_1.vb)]
      [!code-csharp[VbRaddataDisplaying#5](../data-tools/codesnippet/CSharp/create-a-windows-forms-user-control-that-supports-lookup-data-binding_1.cs)]
 
-3. Dans le menu **Générer** , cliquez sur **Générer la solution**.
+3. Dans le menu **générer** , choisissez **générer la solution**.
 
 ## <a name="create-a-data-source-from-your-database"></a>Créer une source de données à partir de votre base de données
 
@@ -119,7 +119,7 @@ Cette étape crée une source de données à l’aide de l’Assistant **Configu
 
 1. Pour ouvrir la fenêtre **sources de données** , dans le menu **données** , cliquez sur Afficher les **sources de données**.
 
-2. Dans la fenêtre **Sources de données**, sélectionnez **Ajouter une nouvelle source de données** pour démarrer l’Assistant **Configuration de source de données**.
+2. Dans la fenêtre **sources de données** , sélectionnez Ajouter une **nouvelle source de données** pour démarrer l’Assistant Configuration de source de **données** .
 
 3. Sélectionnez **Base de données** dans la page **Choisir un type de source de données** , puis cliquez sur **Suivant**.
 
@@ -137,7 +137,7 @@ Cette étape crée une source de données à l’aide de l’Assistant **Configu
 
 8. Sélectionnez les tables `Customers` et `Orders`, puis cliquez sur **Terminer**.
 
-     **NorthwindDataSet** est ajouté à votre projet, et les tables `Customers` et `Orders` apparaissent dans la fenêtre **Sources de données**.
+     **NorthwindDataSet** est ajouté à votre projet et les `Customers` `Orders` tables et s’affichent dans la fenêtre sources de **données** .
 
 ## <a name="set-the-customerid-column-of-the-orders-table-to-use-the-lookupbox-control"></a>Définir la colonne CustomerID de la table Orders pour qu’elle utilise le contrôle LookupBox
 
@@ -163,7 +163,7 @@ Dans la fenêtre **Sources de données**, vous pouvez définir le contrôle à c
 
 Pour créer des contrôles liés aux données, vous pouvez faire glisser des éléments depuis la fenêtre **Sources de données** vers **Form1**.
 
-Pour créer des contrôles liés aux données dans le Windows Form, faites glisser le nœud **Orders** à partir de la fenêtre **sources de données** vers le Windows Form, puis vérifiez que le contrôle **LookupBox** est utilisé pour afficher les données dans la colonne `CustomerID`.
+Pour créer des contrôles liés aux données dans le Windows Form, faites glisser le nœud **Orders** de la fenêtre **sources de données** vers le Windows Form, puis vérifiez que le contrôle **LookupBox** est utilisé pour afficher les données dans la `CustomerID` colonne.
 
 ## <a name="bind-the-control-to-look-up-companyname-from-the-customers-table"></a>Lier le contrôle pour rechercher CompanyName dans la table Customers
 
@@ -171,9 +171,9 @@ Pour configurer les liaisons de recherche, sélectionnez le nœud **Customers** 
 
 Ceci configure la liaison des données pour afficher le `CompanyName` de la table `Customers` tout en conservant la valeur de `CustomerID` de la table `Orders`.
 
-## <a name="run-the-application"></a>Exécuter l'application
+## <a name="run-the-application"></a>Exécution de l'application
 
-- Appuyez sur **F5** pour exécuter l’application.
+- Appuyez sur **F5** pour exécuter l'application.
 
 - Parcourez quelques enregistrements et vérifiez que le `CompanyName` apparaît dans le contrôle `LookupBox`.
 

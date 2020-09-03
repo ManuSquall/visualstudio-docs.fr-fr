@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerService::GetCustomViewerCount (fr) Microsoft Docs
+title: 'IEEVisualizerService :: GetCustomViewerCount | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 90f040c4ca0736a0312829d196d0991788357edc
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718042"
 ---
 # <a name="ieevisualizerservicegetcustomviewercount"></a>IEEVisualizerService::GetCustomViewerCount
-Cette méthode obtient le nombre de visualisateurs de type disponibles à partir de ce service.
+Cette méthode obtient le nombre de visualiseurs de types disponibles à partir de ce service.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,13 +41,13 @@ int GetCustomViewerCount(
 
 ## <a name="parameters"></a>Paramètres
 `pcelt`\
-[out] Retourne le nombre d’visualisateurs de type disponibles.
+à Retourne le nombre de visualiseurs de type disponibles.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
-- [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) transmet la demande à cette méthode dans son support pour les visualisateurs de type.
+- [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) transmet la requête à cette méthode dans sa prise en charge des visualiseurs de type.
 
 ## <a name="see-also"></a>Voir aussi
 - [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)

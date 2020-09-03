@@ -1,5 +1,5 @@
 ---
-title: Réorganiser les paramètres de refactorisation (C#) | Microsoft Docs
+title: Réorganiser les paramètres (refactorisation C#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -17,25 +17,25 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e39564fb108b63859620e2c4a650608cdf1e7e82
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72673143"
 ---
 # <a name="reorder-parameters-refactoring-c"></a>Réorganisation de la refactorisation de paramètres (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-`Reorder Parameters` est une opération C# de refactorisation visuelle qui fournit un moyen simple de modifier l’ordre des paramètres pour les méthodes, les indexeurs et les délégués. `Reorder Parameters` modifie la déclaration et, à tous les emplacements où le membre est appelé, les paramètres sont réorganisés pour refléter le nouvel ordre.
+`Reorder Parameters` est une opération de refactorisation Visual C# qui offre un moyen facile de modifier l’ordre des paramètres pour les méthodes, les indexeurs et les délégués. `Reorder Parameters` modifie la déclaration et, à tous les emplacements où le membre est appelé, les paramètres sont réorganisés pour refléter le nouvel ordre.
 
- Pour effectuer l’opération `Reorder Parameters`, placez le curseur sur ou à côté d’une méthode, d’un indexeur ou d’un délégué. Lorsque le curseur est en position, appelez l’opération `Reorder Parameters` en appuyant sur le raccourci clavier ou en cliquant sur la commande dans le menu contextuel.
+ Pour effectuer l' `Reorder Parameters` opération, placez le curseur sur ou à côté d’une méthode, d’un indexeur ou d’un délégué. Lorsque le curseur est en position, appelez l' `Reorder Parameters` opération en appuyant sur le raccourci clavier ou en cliquant sur la commande dans le menu contextuel.
 
 > [!NOTE]
 > Vous ne pouvez pas réorganiser le premier paramètre dans une méthode d’extension.
 
 ### <a name="to-reorder-parameters"></a>Pour réorganiser les paramètres
 
-1. Créez une bibliothèque de classes nommée `ReorderParameters`, puis remplacez `Class1` par l’exemple de code suivant.
+1. Créez une bibliothèque de classes nommée `ReorderParameters` , puis remplacez `Class1` par l’exemple de code suivant.
 
     ```csharp
     class ProtoClassA
@@ -56,7 +56,7 @@ ms.locfileid: "72673143"
     }
     ```
 
-2. Placez le curseur sur `MethodB`, dans la déclaration de la méthode ou l’appel de la méthode.
+2. Placez le curseur sur `MethodB` , dans la déclaration de la méthode ou l’appel de la méthode.
 
 3. Dans le menu **Refactoriser** , cliquez sur **Réorganiser les paramètres**.
 
