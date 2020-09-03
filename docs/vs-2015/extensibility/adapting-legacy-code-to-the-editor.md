@@ -1,5 +1,5 @@
 ---
-title: Adaptation de l’éditeur de Code hérité | Microsoft Docs
+title: Adaptation du code hérité à l’éditeur | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,73 +11,73 @@ caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0bb90723a72c10dbf6cfda5edd4aa68f71f1c6b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184922"
 ---
 # <a name="adapting-legacy-code-to-the-editor"></a>Adaptation du code hérité dans l’éditeur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-L’éditeur Visual Studio propose de nombreuses fonctionnalités que vous pouvez accéder depuis les composants de code existants. Les instructions suivantes indiquent comment adapter un composant non MEF, par exemple, un VSPackage pour utiliser les fonctionnalités de l’éditeur. Les instructions indiquent également comment utiliser des adaptateurs pour obtenir les services de l’éditeur de code managé et non managé.  
+L’éditeur Visual Studio propose de nombreuses fonctionnalités auxquelles vous pouvez accéder à partir de composants de code existants. Les instructions suivantes indiquent comment adapter un composant non MEF, par exemple un VSPackage, pour consommer les fonctionnalités de l’éditeur. Les instructions montrent également comment utiliser des adaptateurs pour obtenir les services de l’éditeur dans du code managé et non managé.  
   
 ## <a name="editor-adapters"></a>Adaptateurs de l’éditeur  
- Adaptateurs de l’éditeur, ou des shims, sont des wrappers pour les objets de l’éditeur qui exposent également les classes et interfaces dans les <xref:Microsoft.VisualStudio.TextManager.Interop> API. Vous pouvez utiliser les adaptateurs pour vous déplacer entre les services non éditeur par exemple, commandes d’interpréteur de commandes de Visual Studio et les services de l’éditeur. (C’est la façon dont l’éditeur est actuellement hébergé dans Visual Studio.) Les adaptateurs permettent également l’éditeur et la langue service les extensions héritées à fonctionner correctement dans Visual Studio.  
+ Les adaptateurs d’éditeur, ou shims, sont des wrappers pour les objets Editor qui exposent également les classes et les interfaces dans l' <xref:Microsoft.VisualStudio.TextManager.Interop> API. Vous pouvez utiliser les adaptateurs pour vous déplacer entre les services non-éditeur, par exemple, les commandes de l’interpréteur de commandes Visual Studio et les services de l’éditeur. (Il s’agit de la façon dont l’éditeur est actuellement hébergé dans Visual Studio.) Les adaptateurs activent également l’éditeur hérité et les extensions du service de langage pour fonctionner correctement dans Visual Studio.  
   
-## <a name="using-editor-adapters"></a>L’utilisation des adaptateurs de l’éditeur  
- Le <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService> fournit des méthodes qui basculent entre les nouvelles interfaces de l’éditeur et les interfaces héritées, ainsi que les méthodes qui créent des adaptateurs.  
+## <a name="using-editor-adapters"></a>Utilisation d’adaptateurs d’éditeur  
+ <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>Fournit des méthodes qui basculent entre les nouvelles interfaces d’éditeur et les interfaces héritées, ainsi que les méthodes qui créent des adaptateurs.  
   
- Si vous utilisez ce service dans un composant MEF, vous pouvez importer le service comme suit.  
+ Si vous utilisez ce service dans une partie du composant MEF, vous pouvez importer le service comme suit.  
   
 ```  
 [Import(typeof(IVsEditorAdaptersFactoryService))]  
 internal IVsEditorAdaptersFactoryService editorFactory;  
 ```  
   
- Si vous souhaitez utiliser ce service dans un composant non MEF, suivez les instructions dans la section « À l’aide de Visual Studio Editor Services dans un Non-MEF composant » plus loin dans cette rubrique.  
+ Si vous souhaitez utiliser ce service dans un composant non MEF, suivez les instructions de la section « utilisation des services de l’éditeur Visual Studio dans un composant non MEF » plus loin dans cette rubrique.  
   
-## <a name="switching-between-the-new-editor-api-and-the-legacy-api"></a>Basculer entre la nouvelle API de l’éditeur et l’API héritée  
- Utiliser les méthodes suivantes pour basculer entre un objet de l’éditeur et une interface héritée.  
+## <a name="switching-between-the-new-editor-api-and-the-legacy-api"></a>Basculement entre la nouvelle API d’éditeur et l’API héritée  
+ Utilisez les méthodes suivantes pour basculer entre un objet Editor et une interface héritée.  
   
 |Méthode|Conversion|  
 |------------|----------------|  
-|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.GetBufferAdapter%2A>|Convertit un <xref:Microsoft.VisualStudio.Text.ITextBuffer> à un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>.|  
-|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.GetDataBuffer%2A>|Convertit un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> à un <xref:Microsoft.VisualStudio.Text.ITextBuffer>.|  
-|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.GetDocumentBuffer%2A>|Convertit un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> à un <xref:Microsoft.VisualStudio.Text.ITextBuffer>.|  
-|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.GetViewAdapter%2A>|Convertit un <xref:Microsoft.VisualStudio.Text.Editor.ITextView> à un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>.|  
-|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.GetWpfTextView%2A>|Convertit un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> à un <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>.|  
+|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.GetBufferAdapter%2A>|Convertit un <xref:Microsoft.VisualStudio.Text.ITextBuffer> en <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>.|  
+|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.GetDataBuffer%2A>|Convertit un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> en <xref:Microsoft.VisualStudio.Text.ITextBuffer>.|  
+|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.GetDocumentBuffer%2A>|Convertit un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> en <xref:Microsoft.VisualStudio.Text.ITextBuffer>.|  
+|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.GetViewAdapter%2A>|Convertit un <xref:Microsoft.VisualStudio.Text.Editor.ITextView> en <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>.|  
+|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.GetWpfTextView%2A>|Convertit un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> en <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>.|  
   
-## <a name="creating-adapters"></a>Création d’adaptateurs  
- Utiliser les méthodes suivantes pour créer des adaptateurs pour les interfaces héritées.  
+## <a name="creating-adapters"></a>Création d'adaptateurs  
+ Utilisez les méthodes suivantes pour créer des adaptateurs pour les interfaces héritées.  
   
 |Méthode|Conversion|  
 |------------|----------------|  
 |<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.CreateVsCodeWindowAdapter%2A>|Crée un objet <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>.|  
-|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.CreateVsTextBufferAdapter%2A>|Crée un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> spécifié <xref:Microsoft.VisualStudio.Utilities.IContentType>.|  
+|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.CreateVsTextBufferAdapter%2A>|Crée un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> pour un spécifié <xref:Microsoft.VisualStudio.Utilities.IContentType> .|  
 |<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.CreateVsTextBufferAdapter%2A>|Crée un objet <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>.|  
 |<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.CreateVsTextBufferCoordinatorAdapter%2A>|Crée un objet <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator>.|  
 |<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.CreateVsTextViewAdapter%2A>|Crée un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> pour un <xref:Microsoft.VisualStudio.Text.Editor.ITextViewRoleSet>.|  
 |<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService.CreateVsTextViewAdapter%2A>|Crée un objet <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>.|  
   
-## <a name="creating-adapters-in-unmanaged-code"></a>Création d’adaptateurs en Code non managé  
- Toutes les classes d’adaptateur sont inscrits pour être local hébergé qui peut être créé et peut être instancié à l’aide de la `VsLocalCreateInstance()` (fonction).  
+## <a name="creating-adapters-in-unmanaged-code"></a>Création d’adaptateurs dans du code non managé  
+ Toutes les classes d’adaptateur sont inscrites pour être cocréées localement et peuvent être instanciées à l’aide de la `VsLocalCreateInstance()` fonction.  
   
- Toutes les cartes sont créés à l’aide de GUID qui sont définis dans le fichier vsshlids.h dans le... Dossier \VisualStudioIntegration\Common\Inc\ de l’installation de Visual Studio SDK. Pour créer une instance de VsTextBufferAdapter, utilisez le code suivant.  
+ Tous les adaptateurs sont créés à l’aide des GUID définis dans le fichier vsshlids. h dans le. Dossier \VisualStudioIntegration\Common\Inc\ de l’installation du kit de développement logiciel (SDK) Visual Studio. Pour créer une instance de VsTextBufferAdapter, utilisez le code suivant.  
   
 ```  
 IVsTextBuffer *pBuf = NULL;  
 VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTextBuffer, (void**)&pBuf);  
 ```  
   
-## <a name="creating-adapters-in-managed-code"></a>Création d’adaptateurs dans le Code managé  
- Dans le code managé, vous pouvez co-créer les cartes de la même façon que celle décrite pour le code non managé. Vous pouvez également utiliser un service MEF qui vous permet de créer et interagir avec les adaptateurs. Cette manière d’obtenir un adaptateur permet un contrôle plus précis que vous avez lorsque vous la créez conjointement.  
+## <a name="creating-adapters-in-managed-code"></a>Création d’adaptateurs dans du code managé  
+ En code managé, vous pouvez co-créer les adaptateurs de la même façon que pour le code non managé. Vous pouvez également utiliser un service MEF qui vous permet de créer des adaptateurs et d’interagir avec eux. Cette méthode d’obtention d’un adaptateur permet un contrôle plus précis que celui que vous avez lorsque vous le créez.  
   
 #### <a name="to-create-an-adapter-for-ivstextview"></a>Pour créer un adaptateur pour IVsTextView  
   
-1. Ajoutez une référence à Microsoft.VisualStudio.Editor.dll. Assurez-vous que l’option `CopyLocal` est défini sur `false`.  
+1. Ajoutez une référence à Microsoft.VisualStudio.Editor.dll. Assurez-vous que la valeur `CopyLocal` est définie sur `false`.  
   
-2. Instanciez le <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>, comme suit.  
+2. Instanciez le <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService> , comme suit.  
   
     ```  
     using Microsoft.VisualStudio.Editor;  
@@ -85,20 +85,20 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
     IVsEditorAdaptersFactoryService adapterFactoryService = ComponentModel.GetService<IVsEditorAdaptersFactoryService>();  
     ```  
   
-3. Appelez la méthode `CreateX()`.  
+3. Appelez la méthode `CreateX()` .  
   
     ```  
     adapterFactoryService.CreateTextViewAdapter(textView);  
     ```  
   
-## <a name="using-the-visual-studio-editor-directly-from-unmanaged-code"></a>À l’aide de l’éditeur Visual Studio directement à partir de Code non managé  
- L’espace de noms Microsoft.VisualStudio.Platform.VSEditor et l’espace de noms Microsoft.VisualStudio.Platform.VSEditor.Interop exposent les interfaces COM-callable en tant qu’interfaces de IVx. Par exemple, l’interface Microsoft.VisualStudio.Platform.VSEditor.Interop.IVxTextBuffer est la version COM de le <xref:Microsoft.VisualStudio.Text.ITextBuffer> interface. À partir de la `IVxTextBuffer`, vous pouvez accéder aux instantanés de la mémoire tampon, modifier la mémoire tampon, écouter des événements de modification du texte sur la mémoire tampon et créer des points de suivi et d’intervalles. Les étapes suivantes montrent comment accéder à un `IVxTextBuffer` à partir d’un `IVsTextBuffer`.  
+## <a name="using-the-visual-studio-editor-directly-from-unmanaged-code"></a>Utilisation de l’éditeur Visual Studio directement à partir de code non managé  
+ L’espace de noms Microsoft. VisualStudio. Platform. VSEditor et l’espace de noms Microsoft. VisualStudio. Platform. VSEditor. Interop exposent les interfaces pouvant être appelées par COM en tant qu’interfaces IVx *. Par exemple, l’interface Microsoft. VisualStudio. Platform. VSEditor. Interop. IVxTextBuffer est la version COM de l' <xref:Microsoft.VisualStudio.Text.ITextBuffer> interface. À partir du `IVxTextBuffer` , vous pouvez accéder aux instantanés de la mémoire tampon, modifier la mémoire tampon, écouter les événements de modification de texte sur la mémoire tampon et créer des points de suivi et des étendues. Les étapes suivantes montrent comment accéder à un `IVxTextBuffer` à partir d’un `IVsTextBuffer` .  
   
-#### <a name="to-get-an-ivxtextbuffer"></a>Pour obtenir une IVxTextBuffer  
+#### <a name="to-get-an-ivxtextbuffer"></a>Pour recevoir un IVxTextBuffer  
   
-1. Les définitions pour les interfaces IVx * sont dans le fichier VSEditor.h dans le... Dossier \VisualStudioIntegration\Common\Inc\ de l’installation de Visual Studio SDK.  
+1. Les définitions des interfaces IVx * se trouvent dans le fichier VSEditor. h dans le. Dossier \VisualStudioIntegration\Common\Inc\ de l’installation du kit de développement logiciel (SDK) Visual Studio.  
   
-2. Le code suivant instancie une mémoire tampon de texte à l’aide de la `IVsUserData->GetData()` (méthode). Dans le code suivant, `pData` est un pointeur vers un `IVsUserData` objet.  
+2. Le code suivant instancie une mémoire tampon de texte à l’aide de la `IVsUserData->GetData()` méthode. Dans le code suivant, `pData` est un pointeur vers un `IVsUserData` objet.  
   
     ```  
     #include <textmgr.h>  
@@ -120,14 +120,14 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
     }  
     ```  
   
-## <a name="using-visual-studio-editor-services-in-a-non-mef-component"></a>À l’aide des Services de l’éditeur Visual Studio dans un composant Non MEF  
- Si vous avez un composant de code managé existant qui n’utilise pas de MEF et que vous souhaitez utiliser les services de l’éditeur Visual Studio, vous devez ajouter une référence à l’assembly qui contient le ComponentModelHost VSPackage et obtenir son service SComponentModel en vue.  
+## <a name="using-visual-studio-editor-services-in-a-non-mef-component"></a>Utilisation des services de l’éditeur Visual Studio dans un composant non MEF  
+ Si vous disposez d’un composant de code managé existant qui n’utilise pas MEF et que vous souhaitez utiliser les services de l’éditeur Visual Studio, vous devez ajouter une référence à l’assembly qui contient le VSPackage ComponentModelHost et obtenir son service SComponentModel.  
   
-#### <a name="to-consume-visual-studio-editor-components-from-a-non-mef-component"></a>Pour consommer des composants de l’éditeur Visual Studio à partir d’un composant non MEF  
+#### <a name="to-consume-visual-studio-editor-components-from-a-non-mef-component"></a>Pour utiliser les composants de l’éditeur Visual Studio à partir d’un composant non MEF  
   
-1. Ajoutez une référence à l’assembly Microsoft.VisualStudio.ComponentModelHost.dll dans le... Dossier \Common7\IDE\ de l’installation de Visual Studio. Assurez-vous que l’option `CopyLocal` est défini sur `false`.  
+1. Ajoutez une référence à l’assembly Microsoft.VisualStudio.ComponentModelHost.dll dans le.. Dossier \Common7\IDE\ de l’installation de Visual Studio. Assurez-vous que la valeur `CopyLocal` est définie sur `false`.  
   
-2. Ajouter une privée `IComponentModel` membre à la classe dans laquelle vous souhaitez utiliser les services de l’éditeur de Visual Studio, comme suit.  
+2. Ajoutez un `IComponentModel` membre privé à la classe dans laquelle vous souhaitez utiliser les services de l’éditeur Visual Studio, comme suit.  
   
     ```  
     using Microsoft.VisualStudio.ComponentModelHost;  
@@ -135,14 +135,14 @@ VsLocalCreateInstance(CLSID_VsTextBuffer, NULL, CLSCTX_INPROC_SERVER, IID_IVsTex
     private IComponentModel componentModel;  
     ```  
   
-3. Instanciez le modèle de composant dans la méthode d’initialisation pour votre composant.  
+3. Instanciez le modèle de composant dans la méthode d’initialisation de votre composant.  
   
     ```  
     componentModel =  
      (IComponentModel)Package.GetGlobalService(typeof(SComponentModel));  
     ```  
   
-4. Après cela, vous pouvez obtenir l’un des services de l’éditeur Visual Studio en appelant le `IComponentModel.GetService<T>()` méthode pour le service souhaité.  
+4. Après cela, vous pouvez obtenir l’un des services de l’éditeur Visual Studio en appelant la `IComponentModel.GetService<T>()` méthode pour le service souhaité.  
   
     ```  
     textBufferFactoryService =  

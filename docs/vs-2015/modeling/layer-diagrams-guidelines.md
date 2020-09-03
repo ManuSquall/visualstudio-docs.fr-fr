@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 21376668eef88d3d8ce42ff73785b972be045cb2
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850632"
 ---
 # <a name="layer-diagrams-guidelines"></a>Diagrammes de couche : instructions
@@ -31,7 +31,7 @@ Décrivez l’architecture de votre application à un niveau élevé en créant 
 ## <a name="what-is-a-layer-diagram"></a>Qu'est-ce qu'un diagramme de couche ?
  À l'image d'un diagramme d'architecture traditionnel, un diagramme de couche identifie les principaux composants ou unités fonctionnelles de la conception et leurs interdépendances. Chaque nœud du diagramme, appelé *couche*, représente un groupe logique d’espaces de noms, de projets ou d’autres artefacts. Vous pouvez dessiner les dépendances qui doivent exister dans votre conception. Contrairement à un diagramme d'architecture traditionnel, vous pouvez vérifier que les dépendances réelles dans le code source sont conformes aux dépendances prévues que vous avez spécifiées. En incluant la partie validation d'une build normale dans [!INCLUDE[esprtfs](../includes/esprtfs-md.md)], vous pouvez vous assurer que le code du programme continue à respecter l'architecture du système au travers des modifications futures. Consultez [diagrammes de couche : référence](../modeling/layer-diagrams-reference.md).
 
-## <a name="Update"></a>Comment concevoir ou mettre à jour votre application avec des diagrammes de couche
+## <a name="how-to-design-or-update-your-app-with-layer-diagrams"></a><a name="Update"></a> Comment concevoir ou mettre à jour votre application avec des diagrammes de couche
  Les étapes suivantes fournissent une vue d'ensemble de l'utilisation des diagrammes de couche dans le processus de développement. Les sections suivantes de cette rubrique décrivent plus en détail chaque étape. Si vous développez une nouvelle conception, ignorez les étapes qui font référence au code existant.
 
 > [!NOTE]
@@ -39,7 +39,7 @@ Décrivez l’architecture de votre application à un niveau élevé en créant 
 
 1. [Créez un diagramme de couche](#Create) pour l’application entière ou pour une couche qu’il contient.
 
-2. [Définissez les couches pour représenter les zones fonctionnelles principales ou les composants](#CreateLayers) de votre application. Nommez ces couches d'après leur fonction, par exemple, « Présentation » ou « Services ». Si vous disposez d’une solution [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vous pouvez associer chaque couche à une collection d' *artefacts*, tels que des projets, des espaces de noms, des fichiers, etc.
+2. [Définissez les couches pour représenter les zones fonctionnelles principales ou les composants](#CreateLayers) de votre application. Nommez ces couches d'après leur fonction, par exemple, « Présentation » ou « Services ». Si vous avez une [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solution, vous pouvez associer chaque couche à une collection d' *artefacts*, tels que des projets, des espaces de noms, des fichiers, etc.
 
 3. [Découvrez les dépendances existantes entre les](#Generate) couches.
 
@@ -55,7 +55,7 @@ Décrivez l’architecture de votre application à un niveau élevé en créant 
 
 9. [Incluez la validation de couche dans le processus de génération](#BuildValidation) pour vous assurer que le code continue à adhérer à votre conception.
 
-## <a name="Create"></a>Créer un diagramme de couche
+## <a name="create-a-layer-diagram"></a><a name="Create"></a> Créer un diagramme de couche
  Un diagramme de couche doit être créé à l'intérieur d'un projet de modélisation. Vous pouvez ajouter un nouveau diagramme de couche à un projet de modélisation existant, créer un nouveau projet de modélisation pour le diagramme de couche ou copier un diagramme de couche existant au sein du même projet de modélisation.
 
 > [!IMPORTANT]
@@ -63,17 +63,17 @@ Décrivez l’architecture de votre application à un niveau élevé en créant 
 
  Consultez [créer des diagrammes de couche à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md).
 
-## <a name="CreateLayers"></a>Définir des couches pour représenter des zones fonctionnelles ou des composants
+## <a name="define-layers-to-represent-functional-areas-or-components"></a><a name="CreateLayers"></a> Définir des couches pour représenter des zones fonctionnelles ou des composants
  Les couches représentent des groupes logiques d' *artefacts*, tels que des projets, des fichiers de code, des espaces de noms, des classes et des méthodes. Vous pouvez créer des couches à partir d'artefacts de projets Visual C# .NET et Visual Basic .NET, ou vous pouvez attacher des spécifications ou des plans à une couche en liant des documents, tels que des fichiers Word ou des présentations PowerPoint. Chaque couche apparaît comme un rectangle sur le diagramme et indique le nombre d’artefacts qui lui sont liés. Une couche peut contenir des couches imbriquées qui décrivent des tâches plus spécifiques.
 
- En règle générale, nommez les couches selon leur fonction : par exemple, « Présentation » ou « Services ». Si les artefacts sont étroitement interdépendants, placez-les dans la même couche. Si les artefacts peuvent être mis à jour séparément ou utilisés dans des applications distinctes, placez-les dans des couches différentes. Pour en savoir plus sur les modèles de superposition, visitez le site patterns & Practices à l’adresse [http://go.microsoft.com/fwlink/?LinkId=145794](https://apparch.codeplex.com/Wiki/View.aspx?title=Application Patterns&referringTitle=Home).
+ En règle générale, nommez les couches selon leur fonction : par exemple, « Présentation » ou « Services ». Si les artefacts sont étroitement interdépendants, placez-les dans la même couche. Si les artefacts peuvent être mis à jour séparément ou utilisés dans des applications distinctes, placez-les dans des couches différentes. Pour en savoir plus sur les modèles de superposition, visitez le site patterns & Practices à l’adresse [http://go.microsoft.com/fwlink/?LinkId=145794](https://apparch.codeplex.com/Wiki/View.aspx?title=Application Patterns&referringTitle=Home) .
 
 > [!TIP]
 > Il existe certains types d’artefacts que vous pouvez lier aux couches, mais qui ne prennent pas en charge la validation par rapport au diagramme de couche. Pour voir si l’artefact prend en charge la validation, ouvrez l' **Explorateur de couches** pour examiner la propriété **prend en charge la validation** du lien d’artefact. Consultez [découvrir les dépendances existantes entre les couches](#Generate).
 
  Lors de la mise à jour d'une application peu familière, vous pouvez également créer des cartes de code. Ces diagrammes peuvent vous aider à découvrir des modèles et des dépendances quand vous explorez le code. Utilisez l'Explorateur de solutions pour explorer des espaces de noms et des classes, qui correspondent souvent à des couches existantes. Assignez ces artefacts de code à des couches en les faisant glisser de l'Explorateur de solutions vers des diagrammes de couche. Vous pouvez ensuite utiliser les diagrammes de couche pour vous aider à mettre à jour le code et à garantir sa cohérence avec votre conception.
 
- Consultez :
+ Consultez l'article :
 
 - [Créer des diagrammes de couche à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md)
 
@@ -81,7 +81,7 @@ Décrivez l’architecture de votre application à un niveau élevé en créant 
 
 - [Mapper les dépendances à travers vos solutions](../modeling/map-dependencies-across-your-solutions.md)
 
-## <a name="Generate"></a>Découvrir les dépendances existantes entre les couches
+## <a name="discover-existing-dependencies-between-layers"></a><a name="Generate"></a> Découvrir les dépendances existantes entre les couches
  Une dépendance existe chaque fois qu'un artefact associé à une couche comporte une référence à un artefact associé à une autre couche. Par exemple, une classe dans une couche déclare une variable qui a une classe dans une autre couche. Vous pouvez découvrir les dépendances existantes par rétroconception.
 
 > [!NOTE]
@@ -93,26 +93,26 @@ Décrivez l’architecture de votre application à un niveau élevé en créant 
 
   En général, des dépendances qui ne devraient pas exister s'affichent. Vous pouvez modifier ces dépendances pour les ajuster à la conception prévue.
 
-## <a name="EditArchitecture"></a>Modifier les couches et les dépendances pour afficher la conception prévue
+## <a name="edit-layers-and-dependencies-to-show-the-intended-design"></a><a name="EditArchitecture"></a> Modifier les couches et les dépendances pour afficher la conception prévue
  Pour décrire les modifications que vous envisagez d'apporter à votre système ou l'architecture prévue, utilisez la procédure suivante pour modifier le diagramme de couche : vous pouvez aussi envisager d'apporter des modifications de refactorisation pour améliorer la structure du code avant de l'étendre. Consultez [amélioration de la structure du code](#Improving).
 
-|**Pour**|**Procédez comme suit**|
+|**To**|**Exécuter ces étapes**|
 |------------|-----------------------------|
 |Supprimer une dépendance qui ne doit pas exister|Cliquez sur la dépendance, puis appuyez sur la touche **Suppr**.|
 |Changer ou restreindre la direction d'une dépendance|Définissez sa propriété **direction** .|
 |Créer de nouvelles dépendances|Utilisez les outils de **dépendance bidirectionnelle** et de **dépendance** .<br /><br /> Pour dessiner plusieurs dépendances, double-cliquez sur l'outil. Lorsque vous avez terminé, cliquez sur l’outil **pointeur** ou appuyez sur la touche **Échap** .|
-|Spécifier que les artefacts associés à une couche ne peuvent pas dépendre des espaces de noms spécifiés|Tapez les espaces de noms dans la propriété **dépendances de l’espace de noms interdit** de la couche. Utilisez un point-virgule ( **;** ) pour séparer les espaces de noms.|
-|Spécifier que les artefacts associés à une couche ne doivent pas appartenir aux espaces de noms spécifiés|Tapez les espaces de noms dans la propriété **espaces de noms interdits** de la couche. Utilisez un point-virgule ( **;** ) pour séparer les espaces de noms.|
-|Spécifier que les artefacts associés à une couche doivent appartenir à un des espaces de noms spécifiés|Tapez l’espace de noms dans la propriété **espace de noms requis** de la couche. Utilisez un point-virgule ( **;** ) pour séparer les espaces de noms.|
+|Spécifier que les artefacts associés à une couche ne peuvent pas dépendre des espaces de noms spécifiés|Tapez les espaces de noms dans la propriété **dépendances de l’espace de noms interdit** de la couche. Utilisez un point-virgule (**;**) pour séparer les espaces de noms.|
+|Spécifier que les artefacts associés à une couche ne doivent pas appartenir aux espaces de noms spécifiés|Tapez les espaces de noms dans la propriété **espaces de noms interdits** de la couche. Utilisez un point-virgule (**;**) pour séparer les espaces de noms.|
+|Spécifier que les artefacts associés à une couche doivent appartenir à un des espaces de noms spécifiés|Tapez l’espace de noms dans la propriété **espace de noms requis** de la couche. Utilisez un point-virgule (**;**) pour séparer les espaces de noms.|
 
-### <a name="Improving"></a>Amélioration de la structure du code
+### <a name="improving-the-structure-of-the-code"></a><a name="Improving"></a> Amélioration de la structure du code
  Les modifications de refactorisation sont des améliorations qui n'affectent pas le comportement de l'application, mais qui contribuent à rendre le code plus facile à modifier et à étendre à l'avenir. Le code correctement structuré présente une conception qu'il est facile de résumer en un diagramme de couche.
 
  Par exemple, si vous créez une couche pour chaque espace de noms dans le code, puis soumettez les dépendances à une rétroconception, il doit exister un ensemble minimal de dépendances unidirectionnelles entre les couches. Si vous créez un diagramme plus détaillé à l'aide de classes ou de méthodes en tant que couches, le résultat doit également présenter les mêmes caractéristiques.
 
  Si tel n’est pas le cas, le code sera plus difficile à modifier tout au long de son cycle de vie et sera moins adapté à la validation à l’aide de diagrammes de couche.
 
-## <a name="NewAreas"></a>Concevoir de nouvelles zones de votre application
+## <a name="design-new-areas-of-your-application"></a><a name="NewAreas"></a> Concevoir de nouvelles zones de votre application
  Lorsque vous démarrez le développement d'un nouveau projet, ou d'une nouvelle partie d'un nouveau projet, vous pouvez dessiner des couches et des dépendances pour aider à identifier les principaux composants avant de commencer à développer le code.
 
 - **Affichez les modèles architecturaux identifiables** dans vos diagrammes de couche, si possible. Par exemple, un diagramme de couche qui décrit une application bureautique peut inclure des couches telles que Présentation, Logique de domaine et Magasin de données. Un diagramme de couche qui couvre une fonctionnalité unique au sein d'une application peut avoir des couches telles que Modèle, Vue et Contrôleur. Pour plus d’informations sur ces modèles, consultez [patterns & Practices : architecture d’application](https://apparch.codeplex.com/Wiki/View.aspx?title=Application Patterns&referringTitle=Home).
@@ -127,7 +127,7 @@ Décrivez l’architecture de votre application à un niveau élevé en créant 
 
      Lorsque vous générez l’application, votre code est validé par rapport au diagramme global et à votre diagramme de fonctionnalités détaillé.
 
-## <a name="EditLayout"></a>Modifier la disposition pour la présentation et la discussion
+## <a name="edit-the-layout-for-presentation-and-discussion"></a><a name="EditLayout"></a> Modifier la disposition pour la présentation et la discussion
  Pour vous aider à identifier des couches et des dépendances ou à en discuter avec les membres de l'équipe, modifiez l'aspect et la disposition du diagramme comme suit :
 
 - Modifiez les tailles, formes et positions des couches.
@@ -136,16 +136,16 @@ Décrivez l’architecture de votre application à un niveau élevé en créant 
 
   - Sélectionnez une ou plusieurs couches ou dépendances, cliquez avec le bouton droit sur, puis cliquez sur **Propriétés**. Dans la fenêtre **Propriétés** , modifiez la propriété **couleur** .
 
-## <a name="Validate"></a>Valider le code par rapport au diagramme
+## <a name="validate-the-code-against-the-diagram"></a><a name="Validate"></a> Valider le code par rapport au diagramme
  Quand vous avez modifié le diagramme, vous pouvez le valider manuellement par rapport au code à tout moment ou automatiquement chaque fois que vous exécutez une génération locale ou [!INCLUDE[esprbuild](../includes/esprbuild-md.md)].
 
- Consultez :
+ Consultez l'article :
 
 - [Valider du code avec des diagrammes de couche](../modeling/validate-code-with-layer-diagrams.md)
 
 - [Inclure la validation de couche dans le processus de génération](#BuildValidation)
 
-## <a name="UpdateCode"></a>Mettre à jour le code pour qu’il soit conforme à la nouvelle architecture
+## <a name="update-the-code-to-conform-to-the-new-architecture"></a><a name="UpdateCode"></a> Mettre à jour le code pour qu’il soit conforme à la nouvelle architecture
  En général, les erreurs apparaissent la première fois que vous validez le code par rapport à un diagramme de couche mis à jour. Ces erreurs peuvent avoir plusieurs causes :
 
 - Un artefact est assigné à une couche inappropriée. Dans ce cas, déplacez l’artefact.
@@ -159,7 +159,7 @@ Décrivez l’architecture de votre application à un niveau élevé en créant 
 
  Pendant le processus de développement, vous pouvez supprimer certains conflits signalés pendant la validation. Par exemple, vous pouvez supprimer des erreurs que vous êtes déjà en train de traiter qui ne sont pas pertinentes dans le cadre de votre scénario spécifique. Lorsque vous supprimez une erreur, il est conseillé d’entrer un élément de travail dans [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Pour effectuer cette tâche, consultez [valider le code avec des diagrammes de couche](../modeling/validate-code-with-layer-diagrams.md).
 
-## <a name="BuildValidation"></a>Inclure la validation de couche dans le processus de génération
+## <a name="include-layer-validation-in-the-build-process"></a><a name="BuildValidation"></a> Inclure la validation de couche dans le processus de génération
  Pour vous assurer que les futures modifications du code sont conformes aux diagrammes de couche, incluez la validation de couche au processus de génération standard de votre solution. Chaque fois que les autres membres de l'équipe génèrent la solution, les différences entre les dépendances dans le code et le diagramme de couche sont signalées comme erreurs de build. Pour plus d’informations sur l’inclusion de la validation de couche dans le processus de génération, consultez [valider du code avec des diagrammes de couche](../modeling/validate-code-with-layer-diagrams.md).
 
 ## <a name="see-also"></a>Voir aussi

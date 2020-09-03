@@ -12,10 +12,10 @@ caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d62a4c6cc45681fe6a66ae57df2e1da1d1cc12e0
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850595"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Lancement du développement d’extensions Visual Studio
@@ -58,10 +58,10 @@ Si vous n’avez jamais écrit une extension Visual Studio, vous avez probableme
 
 - [Shell isolé Visual Studio](../extensibility/visual-studio-isolated-shell.md)
 
-## <a name="BKMK_ProjectTemplate"></a>Quels modèles de projet sont fournis par le VSSDK ?
+## <a name="what-project-templates-are-provided-by-the-vssdk"></a><a name="BKMK_ProjectTemplate"></a> Quels modèles de projet sont fournis par le VSSDK ?
  Les deux principaux types d’extensions sont les VSPackages et les extensions MEF. En général, les extensions VSPackage sont utilisées pour les extensions qui utilisent ou étendent des commandes, des fenêtres outil et des projets. Les extensions MEF permettent d’étendre ou de personnaliser l’éditeur Visual Studio.
 
- Pour les C# extensions Visual et Visual Basic, le VSSDK fournit un modèle de projet VSIX vide que vous pouvez utiliser avec les nouveaux modèles d’élément qui créent des commandes de menu, des fenêtres outil et des extensions d’éditeur. Pour plus d’informations, consultez [Nouveautés du kit de développement logiciel (SDK) Visual Studio 2015](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md). Vous pouvez également utiliser ce modèle pour empaqueter des modèles de projet, des extraits de code et d’autres artefacts à distribuer à d’autres utilisateurs.
+ Pour les extensions Visual C# et Visual Basic, le VSSDK fournit un modèle de projet VSIX vide que vous pouvez utiliser avec les nouveaux modèles d’élément qui créent des commandes de menu, des fenêtres outil et des extensions d’éditeur. Pour plus d’informations, consultez [Nouveautés du kit de développement logiciel (SDK) Visual Studio 2015](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md). Vous pouvez également utiliser ce modèle pour empaqueter des modèles de projet, des extraits de code et d’autres artefacts à distribuer à d’autres utilisateurs.
 
  Pour C++, l’Assistant VSPackage fournit le code permettant d’ajouter des commandes de menu, des fenêtres outil et des éditeurs personnalisés.
 

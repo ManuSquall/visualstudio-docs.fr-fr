@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 2379ce588eeb4773e562f630ade37e28d7f17315
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "79094295"
 ---
 # <a name="convert-anonymous-type-to-class"></a>Conversion de type anonyme en classe
@@ -25,16 +25,16 @@ Cette refactorisation s’applique à :
 
 - Visual Basic
 
-**Quoi :** Convertir un type anonyme en classe.
+**Ce qui suit :** Convertit un type anonyme en classe.
 
-**Quand :** Vous avez un type anonyme sur lequel vous voulez continuer à bâtir dans une classe.
+Dans les **cas suivants :** Vous avez un type anonyme que vous souhaitez continuer à créer dans une classe.
 
-**Pourquoi:** Les types anonymes sont utiles si vous ne les utilisez que localement. À mesure que votre code se développe, il est intéressant de disposer d’un moyen simple de le promouvoir en classe.
+**Pourquoi :** Les types anonymes sont utiles si vous les utilisez uniquement localement. À mesure que votre code se développe, il est intéressant de disposer d’un moyen simple de le promouvoir en classe.
 
 ## <a name="how-to"></a>Procédures
 
 1. Placez votre curseur dans un type anonyme.
-2. Appuyez **sur Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
+2. Appuyez sur **CTRL** + **.** pour afficher le menu **Actions rapides et refactorisations**.
 
    ![Conversion de type anonyme en classe](media/convert-anon-to-class.png)
 

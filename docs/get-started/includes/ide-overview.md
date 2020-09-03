@@ -7,10 +7,10 @@ author: TerryGLee
 manager: jillfra
 ms.topic: include
 ms.openlocfilehash: c6e715602d0157f52109d7d0bedf25fbd25a23a0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "79082420"
 ---
 *L’environnement de développement intégré* de Visual Studio est une plateforme de lancement créative avec laquelle vous pouvez modifier, déboguer et générer du code, puis publier une application. Un environnement de développement intégré (IDE) est un programme riche en fonctionnalités qui peut être utilisé pour de nombreux aspects du développement de logiciels. Au-delà de l’éditeur et du débogueur standard fournis par la plupart des IDE, Visual Studio inclut des compilateurs, des outils de complétion de code, des concepteurs graphiques et de nombreuses autres fonctionnalités afin de faciliter le processus de développement logiciel.
@@ -23,13 +23,13 @@ ms.locfileid: "79082420"
 
 ::: moniker range="vs-2019"
 
-[![Le Studio Visuel 2019 IDE](../media/vs-2019/ide-overview.png)](../media/vs-2019/ide-overview.png#lightbox)
+[![IDE Visual Studio 2019](../media/vs-2019/ide-overview.png)](../media/vs-2019/ide-overview.png#lightbox)
 
 ::: moniker-end
 
 Cette image montre Visual Studio avec un projet ouvert et plusieurs fenêtres Outil principales dont vous êtes susceptible de vous servir :
 
-- L’[Explorateur de solutions](../../ide/solutions-and-projects-in-visual-studio.md) (en haut à droite) vous permet d’afficher, de parcourir et de gérer vos fichiers de code. **Solution Explorer** peut vous aider à organiser votre code en groupant les fichiers en [solutions et projets](../tutorial-projects-solutions.md).
+- L’[Explorateur de solutions](../../ide/solutions-and-projects-in-visual-studio.md) (en haut à droite) vous permet d’afficher, de parcourir et de gérer vos fichiers de code. **Explorateur de solutions** pouvez vous aider à organiser votre code en regroupant les fichiers dans des [solutions et des projets](../tutorial-projects-solutions.md).
 
 - La [fenêtre de l’éditeur](../../ide/writing-code-in-the-code-and-text-editor.md) (au centre), où vous passerez sans doute la plupart de votre temps, affiche le contenu des fichiers. C’est là que vous pouvez modifier le code ou concevoir une interface utilisateur telle qu’une fenêtre avec des boutons et des zones de texte.
 
@@ -47,7 +47,7 @@ Cette image montre Visual Studio avec un projet ouvert et plusieurs fenêtres Ou
 
 Visual Studio est disponible pour Windows et Mac. [Visual Studio pour Mac](/visualstudio/mac/) compte de nombreuses fonctionnalités en commun avec Visual Studio 2017, et est optimisé pour le développement d’applications mobiles et multiplateformes. Cet article traite essentiellement de la version Windows de Visual Studio 2017.
 
-Il y a trois éditions de Visual Studio : Community, Professional et Enterprise. Voir [comparez les éditions Visual Studio](https://visualstudio.microsoft.com/vs/compare/) pour en savoir plus sur les fonctionnalités prises en charge dans chaque édition.
+Il existe trois éditions de Visual Studio : Community, Professional et Enterprise. Consultez [comparer les éditions de Visual Studio](https://visualstudio.microsoft.com/vs/compare/) pour en savoir plus sur les fonctionnalités prises en charge dans chaque édition.
 
 ::: moniker-end
 
@@ -55,7 +55,7 @@ Il y a trois éditions de Visual Studio : Community, Professional et Enterprise.
 
 Visual Studio est disponible pour Windows et Mac. [Visual Studio pour Mac](/visualstudio/mac/) compte de nombreuses fonctionnalités en commun avec Visual Studio 2019, et est optimisé pour le développement d’applications mobiles et multiplateformes. Cet article traite essentiellement de la version Windows de Visual Studio 2019.
 
-Il y a trois éditions de Visual Studio 2019 : Communauté, Professionnel et Entreprise. Voir [comparez les éditions Visual Studio](https://visualstudio.microsoft.com/vs/compare/) pour en savoir plus sur les fonctionnalités prises en charge dans chaque édition.
+Il existe trois éditions de Visual Studio 2019 : Community, Professional et Enterprise. Consultez [comparer les éditions de Visual Studio](https://visualstudio.microsoft.com/vs/compare/) pour en savoir plus sur les fonctionnalités prises en charge dans chaque édition.
 
 ::: moniker-end
 
@@ -96,7 +96,7 @@ Voici quelques-unes des fonctionnalités populaires de Visual Studio qui vous ai
    La maîtrise de Visual Studio peut sembler insurmontable parfois, avec autant de menus, d’options et de propriétés. La zone de recherche est un excellent moyen de trouver rapidement ce dont vous avez besoin dans Visual Studio. Quand vous commencez à taper le nom d’un élément que vous recherchez, Visual Studio affiche des résultats qui vous mènent exactement où vous devez accéder. Pour ajouter des fonctionnalités à Visual Studio, par exemple la prise en charge d’un langage de programmation supplémentaire, la zone de recherche fournit des résultats qui ouvrent Visual Studio Installer afin d’installer une charge de travail ou un composant spécifique.
 
    > [!TIP]
-   > Appuyez sur **Ctrl**+**Q** comme un raccourci vers la boîte de recherche.
+   > Appuyez sur **CTRL** + **Q** comme raccourci vers la zone de recherche.
 
    ::: moniker range="vs-2017"
 
@@ -116,7 +116,7 @@ Voici quelques-unes des fonctionnalités populaires de Visual Studio qui vous ai
 
    Modifiez et déboguez de manière collaborative avec d’autres utilisateurs en temps réel, quel que soit le type de votre application ou le langage de programmation. Vous pouvez partager instantanément et en toute sécurité votre projet puis partager au besoin des sessions de débogage, des instances de terminal, des applications web localhost, des appels vocaux, etc.
 
-- [Hiérarchie des appels](../../ide/reference/call-hierarchy.md)
+- [Hiérarchie d'appels](../../ide/reference/call-hierarchy.md)
 
    La fenêtre **Hiérarchie d’appels** affiche les méthodes qui appellent une méthode sélectionnée. Ces informations peuvent être utiles quand vous envisagez de changer ou de supprimer la méthode, ou quand vous essayez de repérer un bogue.
 
@@ -134,7 +134,7 @@ Voici quelques-unes des fonctionnalités populaires de Visual Studio qui vous ai
 
    ![Atteindre la définition](../media/go-to-definition-menu.png)
 
-- [Définition de Peek](../../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
+- [Aperçu de définition](../../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
 
    La fenêtre **Aperçu de définition** montre la définition d’une méthode ou d’un type sans réellement ouvrir un fichier distinct.
 
@@ -168,11 +168,11 @@ Nous allons aller plus loin en créant un programme simple.
 
 1. Ouvrez Visual Studio.
 
-1. Sur la barre de menu, choisissez **File** > **New** > **Project**.
+1. Dans la barre de menus, choisissez **fichier** > **nouveau** > **projet**.
 
    ![Fichier > Nouveau projet sur la barre de menus](../media/file-new-project-menu.png)
 
-   La boîte de dialogue **du nouveau projet** montre plusieurs modèles de *projet.* Un modèle contient les fichiers et les paramètres de base nécessaires pour un type de projet donné.
+   La boîte **de dialogue Nouveau projet** affiche plusieurs *modèles*de projet. Un modèle contient les fichiers et les paramètres de base nécessaires pour un type de projet donné.
 
 1. Choisissez la catégorie de modèle **.NET Core** sous **Visual C#**, puis choisissez le modèle **Application console (.NET Core)**. Dans la zone de texte **Nom**, tapez **HelloWorld**, puis cliquez sur le bouton **OK**.
 
@@ -185,7 +185,7 @@ Nous allons aller plus loin en créant un programme simple.
 
    Quelque chose qui ressemble à ce qui suit doit s’afficher :
 
-   ![IDE Visual Studio](../media/overview-ide-console-app.png)
+   ![Environnement IDE de Visual Studio](../media/overview-ide-console-app.png)
 
    Le code C# de votre application figure dans la fenêtre d’éditeur, qui occupe la majeure partie de l’espace. Notez que le texte est colorisé automatiquement pour indiquer les différentes parties du code, comme les mots clés et les types. En outre, les petites lignes en pointillés verticales du code indiquent les accolades correspondant entre elles et les numéros de ligne vous aident à localiser le code. Vous pouvez cliquer sur les signes moins encadrés pour réduire ou développer des blocs de code. Cette fonctionnalité de surlignage de code vous permet de masquer le code dont vous n’avez pas besoin, ce qui contribue à réduire l’encombrement à l’écran. Vos fichiers projet sont répertoriés sur le côté droit dans une fenêtre appelée **Explorateur de solutions**.
 
@@ -193,7 +193,7 @@ Nous allons aller plus loin en créant un programme simple.
 
    Il existe d’autres menus et fenêtres d’outil, que nous aborderons par la suite.
 
-1. Maintenant, démarrez l’application. Pour ce faire, vous pouvez choisir **Démarrer sans débogage** dans le menu **Déboguer** de la barre de menus. Vous pouvez également appuyer sur **Ctrl**+**F5**.
+1. Maintenant, démarrez l’application. Pour ce faire, vous pouvez choisir **Démarrer sans débogage** dans le menu **Déboguer** de la barre de menus. Vous pouvez également appuyer sur **CTRL** + **F5**.
 
    ![Menu Déboguer > Démarrer sans débogage](../media/overview-start-without-debugging.png)
 
@@ -236,7 +236,7 @@ Nous allons aller plus loin en créant un programme simple.
 
    La fenêtre de démarrage s’affiche avec différentes options de clonage d’un référentiel, d’ouverture d’un projet récent ou de création d’un tout nouveau projet.
 
-1. Choisissez **Créer un nouveau projet**.
+1. Choisissez **créer un nouveau projet**.
 
    ![Fenêtre de démarrage de Visual Studio - Créer un projet](../media/vs-2019/start-window-create-new-project.png)
 
@@ -254,7 +254,7 @@ Nous allons aller plus loin en créant un programme simple.
 
    Quelque chose qui ressemble à ce qui suit doit s’afficher :
 
-   ![IDE Visual Studio](../media/vs-2019/overview-ide-console-app.png)
+   ![Environnement IDE de Visual Studio](../media/vs-2019/overview-ide-console-app.png)
 
    Le code C# de votre application figure dans la fenêtre d’éditeur, qui occupe la majeure partie de l’espace. Notez que le texte est colorisé automatiquement pour indiquer les différentes parties du code, comme les mots clés et les types. En outre, les petites lignes en pointillés verticales du code indiquent les accolades correspondant entre elles et les numéros de ligne vous aident à localiser le code. Vous pouvez cliquer sur les signes moins encadrés pour réduire ou développer des blocs de code. Cette fonctionnalité de surlignage de code vous permet de masquer le code dont vous n’avez pas besoin, ce qui contribue à réduire l’encombrement à l’écran. Vos fichiers projet sont répertoriés sur le côté droit dans une fenêtre appelée **Explorateur de solutions**.
 
@@ -262,7 +262,7 @@ Nous allons aller plus loin en créant un programme simple.
 
    Il existe d’autres menus et fenêtres d’outil, que nous aborderons par la suite.
 
-1. Maintenant, démarrez l’application. Pour ce faire, vous pouvez choisir **Démarrer sans débogage** dans le menu **Déboguer** de la barre de menus. Vous pouvez également appuyer sur **Ctrl**+**F5**.
+1. Maintenant, démarrez l’application. Pour ce faire, vous pouvez choisir **Démarrer sans débogage** dans le menu **Déboguer** de la barre de menus. Vous pouvez également appuyer sur **CTRL** + **F5**.
 
    ![Menu Déboguer > Démarrer sans débogage](../media/overview-start-without-debugging.png)
 
@@ -339,7 +339,7 @@ Tout d’abord, renommons la variable `name` :
 
    ![Liste des membres IntelliSense dans Visual Studio](../media/intellisense-list-members.png)
 
-5. Sélectionnez le membre nommé **Maintenant**, qui est une propriété de la classe, en cliquant deux fois dessus ou en appuyant sur **Tab**. Complétez la ligne de code en ajoutant un semi-colon à la fin.
+5. Sélectionnez le membre nommé **Now**, qui est une propriété de la classe, en double-cliquant dessus ou en appuyant sur la touche **Tab**. Complétez la ligne de code en ajoutant un point-virgule à la fin.
 
 6. Au-dessous, tapez ou collez les lignes de code suivantes :
 
@@ -365,7 +365,7 @@ Tout d’abord, renommons la variable `name` :
 
 ::: moniker range="vs-2017"
 
-10. Exécuter le programme à nouveau en appuyant sur **Ctrl**+**F5**. La sortie ressemble à ceci :
+10. Réexécutez le programme en appuyant sur **CTRL** + **F5**. La sortie ressemble à ceci :
 
     ![Fenêtre de console avec la sortie du programme](../media/overview-console-final.png)
 
@@ -373,7 +373,7 @@ Tout d’abord, renommons la variable `name` :
 
 ::: moniker range=">=vs-2019"
 
-10. Exécuter le programme à nouveau en appuyant sur **Ctrl**+**F5**. La sortie ressemble à ceci :
+10. Réexécutez le programme en appuyant sur **CTRL** + **F5**. La sortie ressemble à ceci :
 
     ![Fenêtre de console avec la sortie du programme](../media/vs-2019/overview-console-final.png)
 
@@ -391,7 +391,7 @@ Définissons un point d’arrêt pour voir la valeur de la variable `username` q
 
    ![Point d’arrêt sur une ligne de code dans Visual Studio](../media/breakpoint.png)
 
-1. Commencez à débogage en sélectionnant **Debug** > **Start Debugging** ou en appuyant sur **F5**.
+1. Démarrez le débogage **en sélectionnant déboguer**  >  **Démarrer le débogage** ou en appuyant sur **F5**.
 
 1. Quand la fenêtre de console apparaît et vous demande votre nom, tapez-le, puis appuyez sur **Entrée**.
 
@@ -409,7 +409,7 @@ Pour en savoir plus sur le processus de débogage de Visual Studio, consultez [V
 
 Vous pouvez personnaliser l’interface utilisateur de Visual Studio, notamment changer le thème de couleur par défaut. Pour remplacer le thème par **Sombre** :
 
-1. Sur la barre de menu, choisissez **des options d’outils** > **Options** pour ouvrir le dialogue **Options.**
+1. Dans la barre de menus, choisissez **Outils**  >  **options** pour ouvrir la boîte de dialogue **options** .
 
 ::: moniker range="vs-2017"
 

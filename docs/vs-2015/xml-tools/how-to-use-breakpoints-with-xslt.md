@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0519c3ab19e7d36aa26ea2f462c8a4571b9f8b32
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656308"
 ---
 # <a name="how-to-use-breakpoints-with-xslt"></a>Procédure : utiliser des points d'arrêt avec XSLT
@@ -32,7 +32,7 @@ Vous pouvez définir des points d'arrêt dans une feuille de style XSLT ou dans 
 
 2. Placez le curseur à l’emplacement du point d’arrêt, cliquez avec le bouton droit, pointez sur point d' **arrêt**, puis cliquez sur **Insérer un point d’arrêt**.
 
-3. Cliquez sur le bouton Parcourir ( **...** ) dans le champ **entrée** de la fenêtre Propriétés du document.
+3. Cliquez sur le bouton Parcourir (**...**) dans le champ **entrée** de la fenêtre Propriétés du document.
 
 4. Recherchez le document source XML, puis cliquez sur **ouvrir**.
 
@@ -49,7 +49,7 @@ Vous pouvez définir des points d'arrêt dans une feuille de style XSLT ou dans 
 
 2. Placez le curseur à l’emplacement du point d’arrêt, cliquez avec le bouton droit, pointez sur point d' **arrêt**, puis cliquez sur **Insérer un point d’arrêt**.
 
-3. Cliquez sur le bouton Parcourir ( **...** ) dans le champ **feuille de style** de la fenêtre Propriétés du document.
+3. Cliquez sur le bouton Parcourir (**...**) dans le champ **feuille de style** de la fenêtre Propriétés du document.
 
 4. Recherchez le document source XML, puis cliquez sur **ouvrir**.
 

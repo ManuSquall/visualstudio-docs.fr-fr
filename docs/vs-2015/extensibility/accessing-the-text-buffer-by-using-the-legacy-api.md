@@ -1,5 +1,5 @@
 ---
-title: L’accès à la mémoire tampon de texte à l’aide de l’API héritée | Microsoft Docs
+title: Accès à la mémoire tampon de texte à l’aide de l’API héritée | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,33 +11,33 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f2cfbd84bc4f9298358a2a2d1ba87f76d6e5303c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185011"
 ---
 # <a name="accessing-the-text-buffer-by-using-the-legacy-api"></a>Accès à la mémoire tampon du texte à l’aide de l’API héritée
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Le texte est chargé de gérer les flux de texte et la persistance du fichier. Bien que la mémoire tampon pour lire ou écrire les autres formats, toutes les communications normales avec la mémoire tampon sont effectuée à l’aide d’Unicode. Dans les API héritées, la mémoire tampon de texte peut utiliser soit un une ou un système de coordonnées à deux dimensions pour identifier les emplacements de caractère dans la mémoire tampon.  
+Le texte est responsable de la gestion des flux de texte et de la persistance des fichiers. Même si la mémoire tampon peut lire ou écrire dans d’autres formats, toute communication ordinaire avec la mémoire tampon est effectuée à l’aide d’Unicode. Dans les API héritées, la mémoire tampon de texte peut utiliser un système de coordonnées à une ou deux dimensions pour identifier les emplacements de caractère dans la mémoire tampon.  
   
-## <a name="one--and-two-dimension-coordinate-systems"></a>Et deux-unidimensionnel coordonner les systèmes  
- Une position de la coordonnée unidimensionnelle repose sur la position d’un caractère à partir du premier caractère dans la mémoire tampon, tels que 147. Vous utilisez le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream> interface pour accéder à un emplacement unidimensionnel dans la mémoire tampon. Un système de coordonnées à deux dimensions est basé sur des paires de ligne et d’index. Par exemple, un caractère dans la mémoire tampon à 43, 5 serait de ligne 43, cinq caractères à droite du premier caractère dans la ligne. Vous accédez à un emplacement à deux dimensions de la mémoire tampon en utilisant le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> interface. À la fois le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> et <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream> interfaces sont implémentées par l’objet de mémoire tampon de texte (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>) et est accessible à partir de l’autre à l’aide de `QueryInterface`. Le diagramme suivant illustre ces et autres interfaces de clé sur <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>.  
+## <a name="one--and-two-dimension-coordinate-systems"></a>Systèmes de coordonnées à une ou deux dimensions  
+ La position d’une coordonnée unidimensionnelle est basée sur la position d’un caractère à partir du premier caractère de la mémoire tampon, par exemple 147. Vous utilisez l' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream> interface pour accéder à un emplacement unidimensionnel dans la mémoire tampon. Un système de coordonnées à deux dimensions est basé sur des paires de lignes et d’index. Par exemple, un caractère de la mémoire tampon à 43, 5 se trouve à la ligne 43, cinq caractères à droite du premier caractère de cette ligne. Vous accédez à un emplacement à deux dimensions dans la mémoire tampon à l’aide de l' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> interface. Les <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream> interfaces et sont implémentées par l’objet de mémoire tampon de texte ( <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> ) et sont accessibles les unes par rapport aux autres à l’aide de `QueryInterface` . Le diagramme suivant illustre ces interfaces clés et d’autres sur <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> .  
   
  ![Objet de mémoire tampon de texte](../extensibility/media/vstextbuffer.gif "vsTextBuffer")  
 Objet de mémoire tampon de texte  
   
- Bien que le de ces systèmes de coordonnées fonctionne dans la mémoire tampon de texte, il est optimisé pour utiliser des coordonnées à deux dimensions. Un système de coordonnées unidimensionnel peut dégrader les performances. Par conséquent, utilisez le système de coordonnées à deux dimensions autant que possible.  
+ Bien qu’un système de coordonnées fonctionne dans la mémoire tampon de texte, il est optimisé pour utiliser des coordonnées à deux dimensions. Un système de coordonnées unidimensionnel peut créer une surcharge de performance. Par conséquent, utilisez le système de coordonnées à deux dimensions dans la mesure du possible.  
   
- Le deuxième responsabilité de la mémoire tampon de texte est une persistance de fichiers. Pour ce faire, l’objet de mémoire tampon de texte implémente <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> et agit comme le composant d’objet de données de document pour les éléments de projet et d’autres composants d’environnement impliquées dans la persistance. Pour plus d’informations, consultez [d’ouverture et de l’enregistrement des éléments de projet](../extensibility/internals/opening-and-saving-project-items.md).  
+ La seconde responsabilité de la mémoire tampon de texte est la persistance du fichier. Pour ce faire, l’objet de mémoire tampon de texte implémente <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> et agit comme composant de l’objet de données de document pour les éléments de projet et d’autres composants d’environnement impliqués dans la persistance. Pour plus d’informations, consultez [ouverture et enregistrement d’éléments de projet](../extensibility/internals/opening-and-saving-project-items.md).  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Modification des paramètres d’affichage à l’aide de l’API héritée](../extensibility/changing-view-settings-by-using-the-legacy-api.md)  
- Explique comment modifier les paramètres de vue à l’aide de l’API héritée.  
+ Explique comment modifier les paramètres d’affichage à l’aide de l’API héritée.  
   
- [Utilisation du gestionnaire de texte pour superviser les paramètres globaux](../extensibility/using-the-text-manager-to-monitor-global-settings.md)  
- Explique comment utiliser le Gestionnaire de texte pour surveiller les paramètres globaux...  
+ [Utilisation du gestionnaire de texte pour surveiller les paramètres globaux](../extensibility/using-the-text-manager-to-monitor-global-settings.md)  
+ Explique comment utiliser le gestionnaire de texte pour analyser les paramètres globaux.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Dans l’éditeur de base](../extensibility/inside-the-core-editor.md)
+ [À l’intérieur de l’éditeur de base](../extensibility/inside-the-core-editor.md)

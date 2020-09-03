@@ -13,34 +13,34 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a23a8d28f336728789fe9cbbe38f965cc56763d7
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74295515"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Propagation de modifications en dehors du modèle par des gestionnaires d'événements
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Dans le kit de développement logiciel de visualisation et de modélisation, vous pouvez définir des gestionnaires d’événements de magasin pour propager les modifications vers les ressources en dehors du magasin, telles que les variables non stockées, les fichiers, les modèles dans d’autres magasins ou d’autres extensions de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Les gestionnaires d’événements Store sont exécutés après la fin de la transaction dans laquelle l’événement de déclenchement s’est produit. Elles sont également exécutées lors d’une opération d’annulation ou de rétablissement. Par conséquent, contrairement aux règles de magasin, les événements de magasin sont particulièrement utiles pour mettre à jour des valeurs qui se trouvent en dehors du magasin. Contrairement aux événements .NET, les gestionnaires d’événements de magasin sont inscrits pour écouter une classe : vous n’avez pas besoin d’inscrire un gestionnaire distinct pour chaque instance. Pour plus d’informations sur le choix entre les différentes façons de gérer les modifications, consultez [réponse aux modifications et propagation](../modeling/responding-to-and-propagating-changes.md).
+Dans le kit de développement logiciel de visualisation et de modélisation, vous pouvez définir des gestionnaires d’événements de magasin pour propager les modifications vers les ressources en dehors du magasin, telles que les variables non stockées, les fichiers, les modèles dans d’autres magasins ou d’autres [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Extensions. Les gestionnaires d’événements Store sont exécutés après la fin de la transaction dans laquelle l’événement de déclenchement s’est produit. Elles sont également exécutées lors d’une opération d’annulation ou de rétablissement. Par conséquent, contrairement aux règles de magasin, les événements de magasin sont particulièrement utiles pour mettre à jour des valeurs qui se trouvent en dehors du magasin. Contrairement aux événements .NET, les gestionnaires d’événements de magasin sont inscrits pour écouter une classe : vous n’avez pas besoin d’inscrire un gestionnaire distinct pour chaque instance. Pour plus d’informations sur le choix entre les différentes façons de gérer les modifications, consultez [réponse aux modifications et propagation](../modeling/responding-to-and-propagating-changes.md).
 
  La surface graphique et les autres contrôles d’interface utilisateur sont des exemples de ressources externes qui peuvent être gérées par les événements de stockage.
 
 ### <a name="to-define-a-store-event"></a>Pour définir un événement de magasin
 
-1. Choisissez le type d’événement que vous souhaitez analyser. Pour obtenir une liste complète, examinez les propriétés de <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Chaque propriété correspond à un type d’événement. Les types d’événements les plus fréquemment utilisés sont les suivants :
+1. Choisissez le type d’événement que vous souhaitez analyser. Pour obtenir une liste complète, examinez les propriétés de <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory> . Chaque propriété correspond à un type d’événement. Les types d’événements les plus fréquemment utilisés sont les suivants :
 
-   - `ElementAdded` : déclenché lors de la création d’un élément de modèle, d’un lien de relation, d’une forme ou d’un connecteur.
+   - `ElementAdded` : déclenché lors de la création d’un élément de modèle, d’un lien de relation, d’une forme ou d’un connecteur.
 
-   - ElementPropertyChanged : déclenché lorsque la valeur d’une propriété de domaine `Normal` est modifiée. L’événement est déclenché uniquement si les valeurs nouvelles et anciennes ne sont pas égales. L’événement ne peut pas être appliqué aux propriétés de stockage calculées et personnalisées.
+   - ElementPropertyChanged : déclenché lorsque la valeur d’une `Normal` propriété de domaine est modifiée. L’événement est déclenché uniquement si les valeurs nouvelles et anciennes ne sont pas égales. L’événement ne peut pas être appliqué aux propriétés de stockage calculées et personnalisées.
 
-        Il ne peut pas être appliqué aux propriétés de rôle qui correspondent à des liens de relation. Utilisez plutôt `ElementAdded` pour surveiller la relation de domaine.
+        Il ne peut pas être appliqué aux propriétés de rôle qui correspondent à des liens de relation. À la place, utilisez `ElementAdded` pour surveiller la relation de domaine.
 
-   - `ElementDeleted` : déclenché après la suppression d’un élément de modèle, d’une relation, d’une forme ou d’un connecteur. Vous pouvez toujours accéder aux valeurs de propriété de l’élément, mais il n’aura aucune relation avec d’autres éléments.
+   - `ElementDeleted` : déclenché après la suppression d’un élément de modèle, d’une relation, d’une forme ou d’un connecteur. Vous pouvez toujours accéder aux valeurs de propriété de l’élément, mais il n’aura aucune relation avec d’autres éléments.
 
 2. Ajoutez une définition de classe partielle pour _YourDsl_**DocData** dans un fichier de code séparé dans le projet **DslPackage** .
 
-3. Écrivez le code de l’événement sous la forme d’une méthode, comme dans l’exemple suivant. Il peut être `static`, sauf si vous souhaitez accéder à `DocData`.
+3. Écrivez le code de l’événement sous la forme d’une méthode, comme dans l’exemple suivant. Il peut s’agir de `static` , sauf si vous souhaitez accéder à `DocData` .
 
 4. Substituez `OnDocumentLoaded()` pour inscrire le gestionnaire. Si vous avez plus d’un gestionnaire, vous pouvez les inscrire dans le même emplacement.
 
@@ -175,12 +175,12 @@ private static void AlbumTitleAdjuster(object sender,
 ## <a name="store-event-types"></a>Types d’événements Store
  Chaque type d’événement correspond à une collection dans Store. EventManagerDirectory. Vous pouvez ajouter ou supprimer des gestionnaires d’événements à tout moment, mais il est habituel de les ajouter lorsque le document est chargé.
 
-|nom de la propriété `EventManagerDirectory`|Exécuté lorsque|
+|`EventManagerDirectory` Nom de la propriété|Exécuté lorsque|
 |-------------------------------------------|-------------------|
 |ElementAdded|Une instance d’une classe de domaine, relation de domaine, forme, connecteur ou diagramme est créée.|
 |ElementDeleted|Un élément de modèle a été supprimé du répertoire de l’élément du magasin et n’est plus la source ou la cible d’une relation. L’élément n’est pas réellement supprimé de la mémoire, mais il est conservé en cas d’annulation ultérieure.|
 |ElementEventsBegun|Appelée à la fin d’une transaction externe.|
-|ElementEventsEnded|Appelé lorsque tous les autres événements ont été traités.|
+|Un événement elementeventsended|Appelé lorsque tous les autres événements ont été traités.|
 |ElementMoved|Un élément de modèle a été déplacé d’une partition de magasin à une autre.<br /><br /> Cela n’est pas lié à l’emplacement d’une forme sur le diagramme.|
 |ElementPropertyChanged|La valeur d’une propriété de domaine a changé. Cette valeur est exécutée uniquement si les valeurs anciennes et nouvelles ne sont pas égales.|
 |RolePlayerChanged|L’un des deux rôles (se termine) d’une relation fait référence à un nouvel élément.|
@@ -190,4 +190,4 @@ private static void AlbumTitleAdjuster(object sender,
 |TransactionRolledBack||
 
 ## <a name="see-also"></a>Voir aussi
- [Propagation et réponse aux modifications](../modeling/responding-to-and-propagating-changes.md)
+ [Propagation et réponse aux modifications en attente](../modeling/responding-to-and-propagating-changes.md)

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2c205ff68ebc51d0b0f5b32038763c1741855d7d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656105"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>Procédure pas à pas : déboguer une feuille de style XSLT
@@ -29,7 +29,7 @@ Les étapes de cette procédure pas à pas montrent comment utiliser le débogue
 
 ## <a name="start-debugging"></a>Démarrer le débogage
 
-#### <a name="to-start-debugging"></a>Pour démarrer le débogage
+#### <a name="to-start-debugging"></a>Pour commencer le débogage
 
 1. Dans le menu **fichier** , pointez sur **ouvrir**, puis cliquez sur **fichier**.
 
@@ -37,13 +37,13 @@ Les étapes de cette procédure pas à pas montrent comment utiliser le débogue
 
     La feuille de style s'ouvre dans l'éditeur XML.
 
-3. Cliquez sur le bouton Parcourir ( **...** ) dans le champ **entrée** de la fenêtre Propriétés du document.
+3. Cliquez sur le bouton Parcourir (**...**) dans le champ **entrée** de la fenêtre Propriétés du document.
 
-4. Recherchez le fichier books. xml, puis cliquez sur **ouvrir**.
+4. Recherchez le fichier books.xml, puis cliquez sur **ouvrir**.
 
     Vous définissez ainsi le document source à utiliser pour la transformation XSLT.
 
-5. Cliquez avec le bouton droit sur la balise de début `xsl:if`, pointez sur **point d’arrêt**, puis cliquez sur Insérer un **point d’arrêt**.
+5. Cliquez avec le bouton droit sur la `xsl:if` balise de début, pointez sur **point d’arrêt**, puis cliquez sur Insérer un **point d’arrêt**.
 
 6. Cliquez sur le bouton **Déboguer xsl** dans la barre d’outils de l’éditeur XML.
 
@@ -55,7 +55,7 @@ Les étapes de cette procédure pas à pas montrent comment utiliser le débogue
 
    La fenêtre **sortie XSL** affiche la sortie de la transformation XSL. Cette fenêtre est distincte de la fenêtre **sortie de Visual Studio** .
 
-## <a name="watch-window"></a>Fenêtre Espion
+## <a name="watch-window"></a>Espion (fenêtre)
 
 #### <a name="to-use-the-watch-window"></a>Pour utiliser la fenêtre Espion
 
@@ -63,13 +63,13 @@ Les étapes de cette procédure pas à pas montrent comment utiliser le débogue
 
      La fenêtre Espion 1 s'affiche.
 
-2. Tapez `$bookAverage` dans le champ **nom** , puis appuyez sur entrée.
+2. Tapez `$bookAverage` dans le champ **nom** et appuyez sur entrée.
 
      La valeur de la variable `$bookAverage` s'affiche dans la fenêtre.
 
-3. Tapez `self::node()` dans le champ **nom** , puis appuyez sur entrée.
+3. Tapez `self::node()` dans le champ **nom** et appuyez sur entrée.
 
-     `self::node()` est une expression XPath qui évalue le nœud de contexte actuel. La valeur de l'expression XPath `self::node()` est le premier nœud book. Cette valeur change à mesure que la transformation progresse.
+     `self::node()` expression XPath qui prend la valeur du nœud de contexte actuel. La valeur de l'expression XPath `self::node()` est le premier nœud book. Cette valeur change à mesure que la transformation progresse.
 
 4. Développez le nœud `self::node()`, puis le nœud `price`.
 

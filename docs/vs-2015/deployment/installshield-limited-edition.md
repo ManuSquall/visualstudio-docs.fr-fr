@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2e56618138fccf6ac431741769b1d4b5ebe7bad4
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74295132"
 ---
 # <a name="installshield-limited-edition"></a>Installshield Limited Edition
@@ -26,7 +26,7 @@ Grâce à InstallShield Limited Edition, vous pouvez créer un fichier de config
   
 ### <a name="to-enable-installshield-limited-edition"></a>Pour activer InstallShield Limited Edition  
   
-1. Dans la barre de menus, sélectionnez **Fichier**, **Nouveau**, **Projet**.  
+1. Dans le menu principal, sélectionnez **Fichier**, **Nouveau**, **Projet**.  
   
 2. Dans la boîte de dialogue **Nouveau projet** , développez le nœud **Autres types de projets** , puis choisissez le nœud **Configuration et déploiement** .  
   

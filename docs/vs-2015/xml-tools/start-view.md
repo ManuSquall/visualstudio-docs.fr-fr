@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e839f1a6231a3317c3932a0ca706123b58e772a9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656125"
 ---
 # <a name="start-view"></a>vue de départ
@@ -31,10 +31,10 @@ La vue de départ est le point de lancement du Concepteur de schémas XML (XSD).
 ## <a name="schema-set-details"></a>Détails du jeu de schémas
  Le volet **Détails du jeu de schémas** répertorie les types de nœuds de schéma globaux et affiche le nombre d’instances de chaque type dans le schéma. Vous pouvez utiliser les liens **Ajouter** en regard des types de nœuds pour ajouter de nouveaux nœuds à l’espace de travail.
 
-## <a name="toolbar"></a>ToolBar
+## <a name="toolbar"></a>Barre d’outils
  Vous pouvez naviguer entre la vue de départ, la [vue de modèle de contenu](../xml-tools/content-model-view.md) et la vue de [graphique](../xml-tools/graph-view.md) à partir de la barre d’outils du concepteur de schémas XML.
 
- ![Barre d’outils du concepteur de schémas XML](../xml-tools/media/xsdstartviewtoolbar.gif "XSDStartViewToolbar")
+ ![Barre d'outils du concepteur de schémas XML](../xml-tools/media/xsdstartviewtoolbar.gif "XSDStartViewToolbar")
 
  Les boutons suivants sont activés dans la barre d'outils du Concepteur XSD lorsque la vue de départ est active :
 

@@ -1,5 +1,5 @@
 ---
-title: Rechercher dans les fichiers | Microsoft Docs
+title: Rechercher dans les fichiers | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -22,16 +22,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5e21d0880813452e37c9e20afdc98321e4b2e3a6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655899"
 ---
 # <a name="find-in-files"></a>Rechercher dans les fichiers
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-L’option Rechercher dans les fichiers** vous permet de faire des recherches dans un ensemble défini de fichiers. Les correspondances trouvées et les actions entreprises sont répertoriées dans la fenêtre **Résultats de la recherche** sélectionnée dans **Options de résultat**.
+L’option Rechercher dans les fichiers** vous permet de faire des recherches dans un ensemble défini de fichiers. Les correspondances trouvées et les actions prises sont répertoriées dans la fenêtre résultats de la **recherche** sélectionnée dans **options de résultat**.
 
  Vous pouvez utiliser l’une des méthodes suivantes pour afficher l’option **Rechercher dans les fichiers** de la fenêtre **Rechercher et remplacer**.
 
@@ -50,7 +50,7 @@ L’option Rechercher dans les fichiers** vous permet de faire des recherches da
  Pour rechercher une nouvelle chaîne de texte ou expression, entrez-la dans cette zone. Pour rechercher une des 20 dernières chaînes que vous avez recherchées récemment, ouvrez la liste et sélectionnez la chaîne à rechercher. Choisissez le bouton adjacent **Générateur d’expressions** si vous souhaitez utiliser une ou plusieurs expressions régulières dans votre chaîne de recherche. Pour plus d’informations, consultez [Utilisation d’expressions régulières dans Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
 
 ## <a name="look-in"></a>Regarder dans
- L’option choisie dans la liste déroulante **Regarder dans** détermine si l’opération **Rechercher dans les fichiers** porte sur les fichiers actifs uniquement ou sur tous les fichiers figurant dans certains dossiers. Sélectionnez une étendue de recherche dans la liste ou cliquez sur le bouton **Parcourir (...)** pour afficher la boîte de dialogue **Choisir des dossiers de recherche** et spécifier l’ensemble de répertoires de votre choix. Vous pouvez également taper un chemin directement dans la zone **Regarder dans**.
+ L’option sélectionnée dans la liste déroulante **Regarder dans** détermine si l’option **Rechercher dans les fichiers** limite la recherche aux fichiers qui sont actuellement actifs ou l’étend à tous les fichiers stockés dans certains dossiers. Sélectionnez une étendue de recherche dans la liste ou cliquez sur le bouton **Parcourir (...)** pour afficher la boîte de dialogue **Choisir des dossiers de recherche** et spécifier l’ensemble de répertoires de votre choix. Vous pouvez également taper un chemin directement dans la zone **Regarder dans**.
 
 > [!WARNING]
 > Avec les options **Solution complète** ou **Projet actuel**, les fichiers solution et projet ne sont pas inclus dans la recherche. Pour effectuer une recherche dans les fichiers projet, choisissez un dossier de recherche.
@@ -62,7 +62,7 @@ L’option Rechercher dans les fichiers** vous permet de faire des recherches da
  Spécifie que les sous-dossiers du dossier choisi dans **Regarder dans** sont inclus dans la recherche.
 
 ## <a name="find-options"></a>Options de recherche
- Vous pouvez développer ou réduire la section **Options de recherche**. Les options suivantes peuvent être sélectionnées ou désélectionnées :
+ Vous pouvez développer ou réduire la section **options de recherche** . Les options suivantes peuvent être sélectionnées ou désélectionnées :
 
  Respecter la casse lorsqu’elle est sélectionnée, la recherche des **résultats** de la recherche est sensible à la casse
 
@@ -75,11 +75,11 @@ L’option Rechercher dans les fichiers** vous permet de faire des recherches da
  Sélectionnez un élément dans la liste pour entrer une chaîne de recherche prédéfinie à rechercher dans les fichiers de ces types particuliers.
 
 ## <a name="result-options"></a>Options de résultat
- Vous pouvez développer ou réduire la section **Options de résultat**. Les options suivantes peuvent être sélectionnées ou désélectionnées :
+ Vous pouvez développer ou réduire la section **options de résultat** . Les options suivantes peuvent être sélectionnées ou désélectionnées :
 
- Fenêtre résultats de la recherche 1 : lorsque cette option est sélectionnée, les résultats de la recherche actuelle remplacent le contenu de la fenêtre résultats de la **recherche 1** . Cette fenêtre s'ouvre automatiquement pour afficher les résultats de votre recherche. Pour ouvrir cette fenêtre manuellement, sélectionnez **Autres fenêtres** dans le menu **Affichage** et choisissez **Résultats de la recherche 1**.
+ Fenêtre résultats de la recherche 1 : lorsque cette option est sélectionnée, les résultats de la recherche actuelle remplacent le contenu de la fenêtre résultats de la **recherche 1** . Cette fenêtre s'ouvre automatiquement pour afficher vos résultats de recherche. Pour ouvrir cette fenêtre manuellement, sélectionnez **Autres fenêtres** dans le menu **Affichage** et choisissez **Résultats de la recherche 1**.
 
- Fenêtre résultats de la recherche 2 : lorsque cette option est sélectionnée, les résultats de la recherche actuelle remplacent le contenu de la fenêtre résultats de la **recherche 2** . Cette fenêtre s'ouvre automatiquement pour afficher les résultats de votre recherche. Pour ouvrir cette fenêtre manuellement, sélectionnez **Autres fenêtres** dans le menu **Affichage** et choisissez **Résultats de la recherche 2**.
+ Fenêtre résultats de la recherche 2 : lorsque cette option est sélectionnée, les résultats de la recherche actuelle remplacent le contenu de la fenêtre résultats de la **recherche 2** . Cette fenêtre s'ouvre automatiquement pour afficher vos résultats de recherche. Pour ouvrir cette fenêtre manuellement, sélectionnez **Autres fenêtres** dans le menu **Affichage** et choisissez **Résultats de la recherche 2**.
 
  Afficher les noms de fichiers affiche uniquement la liste des fichiers contenant des correspondances de recherche au lieu d’afficher les correspondances de recherche.
 

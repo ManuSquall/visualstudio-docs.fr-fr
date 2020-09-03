@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0785686c9292e346c698c6f2b233cfe20edf796a
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88800760"
 ---
 # <a name="features-of-visual-studio"></a>Fonctionnalités de Visual Studio
@@ -140,4 +140,4 @@ Pour en savoir plus sur l’extension de Visual Studio, consultez [Étendre l’
 
 - [Vue d’ensemble de l’IDE de Visual Studio](../get-started/visual-studio-ide.md)
 - [Nouveautés de Visual Studio 2017](../ide/whats-new-visual-studio-2017.md)
-- [Nouveautés de Visual Studio 2019](../ide/whats-new-visual-studio-2019.md)
+- [Nouveautés de Visual Studio 2019](../ide/whats-new-visual-studio-2019.md)

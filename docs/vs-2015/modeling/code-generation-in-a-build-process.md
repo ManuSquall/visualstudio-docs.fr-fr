@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bffaf0bcff0c0fc93201badeb01b95928edc2979
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850714"
 ---
 # <a name="code-generation-in-a-build-process"></a>Génération de code dans un processus de génération
@@ -27,7 +27,7 @@ Il existe quelques différences en matière de possibilités offertes par les t�
 
 Cela signifie que vous ne pouvez pas accéder aux éléments tels que les noms de fichiers projet de la même manière lorsque vous générez un modèle de texte dans MSBuild. Toutefois, vous pouvez [passer des informations d’environnement dans des modèles de texte et des processeurs de directive en utilisant des paramètres de build](#parameters).
 
-## <a name="buildserver"></a>Configurer vos ordinateurs
+## <a name="configure-your-machines"></a><a name="buildserver"></a> Configurer vos ordinateurs
 
 Pour activer les tâches de génération sur votre ordinateur de développement, installez le [Kit de développement logiciel Modeling SDK pour Visual Studio](https://www.microsoft.com/download/details.aspx?id=48148).
 
@@ -213,7 +213,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </PropertyGroup>
 ```
 
-## <a name="parameters"></a>Passer les données de contexte de build dans les modèles
+## <a name="pass-build-context-data-into-the-templates"></a><a name="parameters"></a> Passer les données de contexte de build dans les modèles
 
 Vous pouvez définir des valeurs de paramètre dans le fichier projet. Par exemple, vous pouvez passer des propriétés de build et des [variables d’environnement](../msbuild/how-to-use-environment-variables-in-a-build.md):
 
@@ -234,7 +234,7 @@ Dans un modèle de texte, définissez `hostspecific` dans la directive de modèl
 The project folder is: <#= ProjectFolder #>
 ```
 
-## <a name="msbuild"></a>Utilisation des propriétés de projet dans les directives assembly et include
+## <a name="using-project-properties-in-assembly-and-include-directives"></a><a name="msbuild"></a> Utilisation des propriétés de projet dans les directives assembly et include
 
 Les macros Visual Studio telles que $(SolutionDir) ne fonctionnent pas dans MSBuild. Vous pouvez utiliser des propriétés de projet à la place.
 
@@ -263,13 +263,13 @@ Désormais, vous pouvez utiliser votre propriété de projet dans les directives
 
  Ces directives obtiennent des valeurs à partir de T4parameterValues dans MSBuild et les hôtes Visual Studio.
 
-## <a name="q--a"></a>Q et R
+## <a name="q--a"></a>Questions et réponses
 
 **Pourquoi souhaite-t-il transformer des modèles dans le serveur de builds ? J’ai déjà transformé les modèles dans Visual Studio avant d’avoir archivé mon code.**
 
 Si vous mettez à jour un fichier inclus ou tout autre fichier lu par le modèle, Visual Studio ne transforme pas le fichier automatiquement. La transformation des modèles dans le cadre de la build permet de s'assurer que tout est à jour.
 
-**Quelles sont les autres options disponibles pour la transformation des modèles de texte ?**
+**Quelles sont les autres options en matière de transformation de modèles de texte ?**
 
 - L' [utilitaire TextTransform](../modeling/generating-files-with-the-texttransform-utility.md) peut être utilisé dans des scripts de commande. Dans la plupart des cas, il est plus facile d'utiliser MSBuild.
 
@@ -279,10 +279,10 @@ Si vous mettez à jour un fichier inclus ou tout autre fichier lu par le modèle
 
 - Les [modèles de texte au moment](../modeling/run-time-text-generation-with-t4-text-templates.md) de l’exécution sont transformés au moment de l’exécution dans votre application.
 
-## <a name="read-more"></a>En lire plus
+## <a name="read-more"></a>En savoir plus
 
 Vous trouverez de bons conseils dans le modèle T4 MSbuild, $(VSToolsPath)\TextTemplating\Microsoft.TextTemplating.targets
 
-- [Écriture d’un modèle de texte T4](../modeling/writing-a-t4-text-template.md)
-- [Kit de développement logiciel de visualisation et de modélisation Visual Studio](https://www.visualstudio.com/)
+- [Écriture d'un modèle de texte T4](../modeling/writing-a-t4-text-template.md)
+- [Kit de développement logiciel (SDK) Visual Studio Visualization and Modeling](https://www.visualstudio.com/)
 - [Oleg Sych : Understanding T4 : intégration de MSBuild](https://github.com/olegsych/T4Toolbox)

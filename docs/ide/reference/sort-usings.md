@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: d502abe583c09d6c117ed1083e87cded823bc386
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "79093789"
 ---
 # <a name="sort-usings"></a>Trier les instructions Using
@@ -26,16 +26,16 @@ Cette refactorisation s’applique à :
 
 - Visual Basic
 
-**Quoi :** Trier les utilisations.
+**Ce qui suit :** Trie les using.
 
-**Quand :** Vous voulez `using` trier les directives en haut de votre fichier afin qu’elles soient par ordre alphabétique. 
+Dans les **cas suivants :** Vous souhaitez trier `using` les directives en haut de votre fichier afin qu’elles soient triées par ordre alphabétique. 
 
-**Pourquoi:** Il est plus facile de trouver une directive d’utilisation.
+**Pourquoi :** Il facilite la recherche d’une directive using.
 
 ## <a name="how-to"></a>Procédures
 
 1. Sélectionnez **Modifier** dans la barre de menus.
-2. Sélectionnez **Intellisense** > **Sort Usings**.
+2. Sélectionnez **Intellisense**  >  **Tri IntelliSense en utilisant**.
 
    ![Trier les instructions Using](media/sort-usings.png)
 

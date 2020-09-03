@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a9e82cf8387756cb4a4abe8b4c41d082485cdcdc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656293"
 ---
 # <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Procédure : utiliser le Concepteur de schémas XML avec des littéraux XML
@@ -25,7 +25,7 @@ Cette rubrique décrit comment afficher un schéma associé à un littéral XML 
 
 1. Démarrez Visual Studio 2010.
 
-2. Dans le menu **fichier** , sélectionnez **nouveau**, puis **projet**. La boîte de dialogue **Nouveau projet** s’affiche. Pour **types de projets**, sélectionnez **autres langues,** puis **Visual Basic**. Pour **modèles**, sélectionnez application console. Tapez ensuite `XMLLiterals` dans le champ **nom** et un emplacement de projet dans le champ **emplacement** . Cliquez sur **OK**.
+2. Dans le menu **Fichier**, sélectionnez **Nouveau**, puis **Projet**. La boîte de dialogue **Nouveau projet** apparaît. Pour **types de projets**, sélectionnez **autres langues,** puis **Visual Basic**. Pour **modèles**, sélectionnez application console. Ensuite, tapez dans le champ `XMLLiterals` **nom** et un emplacement de projet dans le champ **emplacement** . Cliquez sur **OK**.
 
      Le nouveau projet est créé. Le projet XMLLiterals contient un fichier source Visual Basic, Module1.vb.
 
@@ -35,7 +35,7 @@ Cette rubrique décrit comment afficher un schéma associé à un littéral XML 
 
 2. Enregistrez le fichier à l'emplacement de votre choix avec le nom PurchaseOrderSchema.xsd.
 
-3. Dans le Explorateur de solutions, cliquez avec le bouton droit sur le nom du projet, sélectionnez **Ajouter**, puis sélectionnez **élément existant...** . La boîte de dialogue **élément AddExisting** s’affiche. Accédez au fichier PurchaseOrderSchema. xsd, sélectionnez-le, puis cliquez sur **Ajouter**.
+3. Dans le Explorateur de solutions, cliquez avec le bouton droit sur le nom du projet, sélectionnez **Ajouter**, puis sélectionnez **élément existant...**. La boîte de dialogue **élément AddExisting** s’affiche. Accédez au fichier PurchaseOrderSchema. xsd, sélectionnez-le, puis cliquez sur **Ajouter**.
 
      Le projet XMLLiterals contient désormais deux fichiers : Module1.vb et PurchaseOrderSchema.xsd.
 

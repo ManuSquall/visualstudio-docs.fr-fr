@@ -14,10 +14,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: a59f9f2cb2548d6d40670832e66d4df5c83680df
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74295919"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio Administrator Guide
@@ -43,7 +43,7 @@ Vous pouvez déployer Visual Studio 2015 sur un réseau tant que chaque ordinate
 |État d’installation|Redémarrage non nécessaire|Redémarrage nécessaire|Description|  
 |------------------|--------------------------|----------------------|-----------------|  
 |Opération réussie|0x00000000 [0]|0x00000bc2 [3010]|Installation réussie.|  
-|Bloc|0x80044000 [-2147205120]|0x8004C000 [-2147172352]|Si le seul bloc à signaler est « Redémarrage en attente, » la valeur retournée est la valeur requise pour Redémarrage incomplet (0x80048bc7).|  
+|Bloquer|0x80044000 [-2147205120]|0x8004C000 [-2147172352]|Si le seul bloc à signaler est « Redémarrage en attente, » la valeur retournée est la valeur requise pour Redémarrage incomplet (0x80048bc7).|  
 |Annuler|0x00000642 [1602]|0x80048642 [-2147187134]|Quand la valeur Reboot est retournée, le code de retour est 1602.|  
 |Incomplet-Redémarrage nécessaire|N/A|0x80048bc7 [-2147185721]|Un redémarrage est nécessaire pour que l’installation puisse continuer.|  
 |Échec|0x00000643 [1603]|0x80048643 [-2147187133]|Quand la valeur Reboot est retournée, le code de retour est 1603.|  
@@ -69,8 +69,8 @@ Par défaut, l’installation de Visual Studio active les commentaires client. V
   
 |Rubrique|Description|  
 |-----------|-----------------|  
-|[Guide pratique pour installer une version spécifique de Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md)|Décrit comment installer des configurations spécifiques de la version actuelle de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
-|[Guide pratique pour créer et exécuter une installation sans assistance de Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)|Décrit comment installer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] en mode sans assistance.|  
+|[Guide pratique pour installer une version spécifique de Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md)|Décrit comment installer des configurations spécifiques de la version actuelle de  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .|  
+|[Comment : créer et exécuter une installation sans assistance de Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)|Décrit comment installer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] en mode sans assistance.|  
 |[Guide pratique pour appliquer automatiquement des clés de produit lors du déploiement de Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)|Décrit comment appliquer des clés de produit lors du déploiement sur plusieurs ordinateurs.|  
-|[Guide de l’administrateur de la visionneuse d’aide](../ide/help-viewer-administrator-guide.md)|Fournit des informations sur la gestion des installations de l’aide locale pour les environnements réseau qui disposent ou non d’un accès à Internet.|  
-|[Installer Visual Studio](../install/install-visual-studio-2015.md)|Fournit des instructions et des liens vers des rubriques qui décrivent comment installer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
+|[Guide de l'administrateur Help Viewer](../ide/help-viewer-administrator-guide.md)|Fournit des informations sur la gestion des installations de l’aide locale pour les environnements réseau qui disposent ou non d’un accès à Internet.|  
+|[Installer Visual Studio](../install/install-visual-studio-2015.md)|Fournit des instructions et des liens vers des rubriques qui décrivent comment installer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .|

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 28267f705dd9a747d0e3f3ac5dc2869ab7de8f6a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656317"
 ---
 # <a name="how-to-switch-between-views-and-the-xml-editor"></a>Procédure : basculer entre les vues et l'Éditeur XML
@@ -29,7 +29,7 @@ Cette rubrique montre comment basculer entre les vues XML du Concepteur de sché
 
 3. Pour basculer vers la vue du graphique à l’aide du filigrane, cliquez sur le lien **utiliser la vue du graphique pour afficher la relation entre les nœuds** dans la vue de départ.
 
-4. Faites glisser le nœud `USAddress` de l'Explorateur de schémas XML sur la vue du graphique. Cliquez avec le bouton droit sur le nœud `USAddress` dans la vue du graphique, puis sélectionnez **afficher en vue de modèle de contenu** dans le menu contextuel.
+4. Faites glisser le nœud `USAddress` de l'Explorateur de schémas XML sur la vue du graphique. Cliquez avec le bouton droit sur le `USAddress` nœud dans la vue du graphique, puis sélectionnez **afficher en vue de modèle de contenu** dans le menu contextuel.
 
      La vue de modèle de contenu avec les détails du nœud `USAddress` s'affiche.
 

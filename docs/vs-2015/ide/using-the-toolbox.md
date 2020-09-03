@@ -28,10 +28,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ba8a37ac9e049455ffe19314dee0e228c3c14c97
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74295612"
 ---
 # <a name="using-the-toolbox"></a>Utilisation de la boîte à outils
@@ -58,9 +58,9 @@ Vous pouvez utiliser la boîte à outils pour ajouter des contrôles et d'autres
 
 - **Trier les éléments par ordre alphabétique** : trie les éléments par leur nom.
 
-- **Réinitialiser la barre d’outils** : restaure les paramètres et éléments par défaut de la boîte à outils.
+- **Réinitialiser la barre d’outils** : restaure les paramètres et éléments par défaut de la boîte à outils.
 
-- **Ajouter un onglet** : ajoute un nouvel onglet à la boîte à outils.
+- **Ajouter** un onglet : ajoute un nouvel onglet de boîte à outils.
 
 - **Monter** : déplace l’élément sélectionné vers le haut.
 

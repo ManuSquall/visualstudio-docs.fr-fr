@@ -13,10 +13,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 2b9c86c17b89258145613e867ba6a91b2219fe0d
-ms.sourcegitcommit: 2c26d6e6f2a5c56ae5102cdded7b02f2d0fd686c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88168747"
 ---
 # <a name="update-visual-studio-using-a-minimal-offline-layout"></a>Mettre à jour Visual Studio avec une disposition hors connexion minimale
@@ -49,7 +49,7 @@ Cet outil crée des dispositions de mise à jour pour Visual Studio 2017 (15,9) 
 
 ### <a name="how-to-use-the-minimal-layout-tool"></a>Comment utiliser l’outil de disposition minimal
 
-`MinimalLayout.exe`utilise les commandes et options suivantes pour générer la disposition. Au moins une commande est requise pour exécuter l’outil. Voici comment exécuter l’outil :
+`MinimalLayout.exe` utilise les commandes et options suivantes pour générer la disposition. Au moins une commande est requise pour exécuter l’outil. Voici comment exécuter l’outil :
 
 ```MinimalLayout.exe [command] <options>...```
 
@@ -160,7 +160,7 @@ La mise à jour est appliquée à une instance de Visual Studio en deux étapes.
 
 1. **Mettre à jour le Visual Studio Installer** 
 
-    Exécutez la commande suivante, en remplaçant `vs_enterprise.exe` le cas échéant par le nom correct de l’application du programme d’amorçage. 
+    Exécutez la commande suivante, en remplaçant `vs_enterprise.exe`  le cas échéant par le nom correct de l’application du programme d’amorçage. 
 
     ```cmd
     vs_enterprise.exe --quiet --update --offline C:\VSLayout\vs_installer.opc

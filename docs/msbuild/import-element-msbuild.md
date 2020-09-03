@@ -19,17 +19,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7d9e66934015c7c4a57c7d7c6911b9ebe02ac536
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "79094492"
 ---
 # <a name="import-element-msbuild"></a>Import, élément (MSBuild)
 
 Importe le contenu d’un fichier projet dans un autre fichier projet.
 
-\<Project> \<Import>
+\<Project>
+\<Import>
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -58,34 +59,34 @@ Importe le contenu d’un fichier projet dans un autre fichier projet.
 
 | Élément | Description |
 | - | - |
-| [Projet](../msbuild/project-element-msbuild.md) | Élément racine requis d’un fichier de projet MSBuild. |
+| [Projet](../msbuild/project-element-msbuild.md) | Élément racine requis d’un fichier projet MSBuild. |
 | [ImportGroup](../msbuild/importgroup-element.md) | Contient une collection d’éléments `Import` regroupés sous une condition facultative. |
 
-## <a name="remarks"></a>Notes 
+## <a name="remarks"></a>Notes
 
  L’élément `Import` vous permet de réutiliser du code commun à de nombreux fichiers projet. Cela facilite la maintenance du code, car les mises à jour que vous apportez au code partagé sont propagées à tous les projets qui l’importent.
 
- Par convention, les fichiers de projets importés partagés sont enregistrés sous forme de fichiers *.cibles,* mais il s’œd de fichiers de projets MSBuild standard. MSBuild ne vous empêche pas d’importer un projet qui a une extension de nom de fichier différente, mais nous vous recommandons d’utiliser l’extension *.targets* pour la cohérence.
+ Par Convention, les fichiers projet importés partagés sont enregistrés en tant que fichiers *. targets* , mais il s’agit de fichiers projet MSBuild standard. MSBuild ne vous empêche pas d’importer un projet ayant une extension de nom de fichier différente, mais nous vous recommandons d’utiliser l’extension *. targets* pour des fins de cohérence.
 
- Les voies relatives dans les projets importés sont interprétées par rapport à l’annuaire du projet d’importation (à quelques exceptions près décrites plus loin dans ce paragraphe). Ainsi, si un fichier projet est importé dans plusieurs fichiers projet à différents emplacements, les chemins relatifs dans le fichier projet importé sont interprétés différemment pour chaque projet importé. Il y a deux exceptions. Une exception est `Import` que dans les éléments, le chemin `Import` est toujours interprété par rapport au projet qui contient l’élément. Une autre exception `UsingTask` est que le toujours `AssemblyFile` interprète le chemin relatif `UsingTask` pour l’attribut par rapport au fichier qui contient l’élément.
+ Les chemins d’accès relatifs dans les projets importés sont interprétés par rapport au répertoire du projet importateur (avec quelques exceptions décrites plus loin dans ce paragraphe). Ainsi, si un fichier projet est importé dans plusieurs fichiers projet à différents emplacements, les chemins relatifs dans le fichier projet importé sont interprétés différemment pour chaque projet importé. Il existe deux exceptions. Une exception est que dans `Import` les éléments, le chemin d’accès est toujours interprété par rapport au projet qui contient l' `Import` élément. Une autre exception est que le `UsingTask` interprète toujours le chemin d’accès relatif de l' `AssemblyFile` attribut par rapport au fichier qui contient l' `UsingTask` élément.
 
- Toutes les propriétés réservées MSBuild qui `MSBuildProjectDirectory` se `MSBuildProjectFile`rapportent au dossier du projet, par exemple, et, qui sont référencées dans un projet importé sont attribués des valeurs basées sur le fichier du projet d’importation.
+ Toutes les propriétés réservées MSBuild relatives au fichier projet, par exemple, `MSBuildProjectDirectory` et `MSBuildProjectFile` , qui sont référencées dans un projet importé sont affectées de valeurs basées sur le fichier projet d’importation.
 
- Si le projet importé n’a pas d’attribut `DefaultTargets` , les projets importés sont inspectés dans l’ordre dans lequel ils sont importés, et la valeur du premier attribut `DefaultTargets` découvert est utilisée. Par exemple, si ProjectA importe ProjectB et ProjectC (dans cet ordre), et que `DefaultTargets` les importations du ProjectB sont projetées, MSBuild recherche d’abord des éléments précis sur ProjectA, puis ProjectB, puis ProjectD, et enfin ProjectC.
+ Si le projet importé n’a pas d’attribut `DefaultTargets` , les projets importés sont inspectés dans l’ordre dans lequel ils sont importés, et la valeur du premier attribut `DefaultTargets` découvert est utilisée. Par exemple, si ProjectA importe le projetb et le projetC (dans cet ordre) et que le projetb importe ProjectD, MSBuild commence par rechercher `DefaultTargets` spécifié sur ProjectA, puis le projetb, puis Projected et enfin le projetC.
 
- Le schéma d’un projet importé est identique à celui d’un projet standard. Bien que MSBuild puisse être en mesure de construire un projet importé, il est peu probable qu’un projet importé ne contienne généralement pas d’information sur les propriétés à établir ou l’ordre dans lequel exécuter des cibles. Le projet importé dépend du projet dans lequel il est importé pour fournir ces informations.
+ Le schéma d’un projet importé est identique à celui d’un projet standard. Même si MSBuild peut être en mesure de générer un projet importé, cela est peu probable, car un projet importé ne contient généralement pas d’informations sur les propriétés à définir ou l’ordre dans lequel exécuter les cibles. Le projet importé dépend du projet dans lequel il est importé pour fournir ces informations.
 
 ## <a name="wildcards"></a>Caractères génériques
 
  Dans le .NET Framework 4, MSBuild autorise les caractères génériques dans l’attribut de projet. Quand il existe des caractères génériques, toutes les correspondances trouvées sont triées (à des fins de reproductibilité), puis elles sont importées dans cet ordre comme si celui-ci avait été défini explicitement.
 
- Cela est utile si vous souhaitez offrir un point d’extensibilité pour que quelqu’un d’autre puisse importer un fichier sans avoir à ajouter explicitement le nom du fichier au fichier d’importation. À cette fin, *Microsoft.Common.Targets* contient la ligne suivante en haut du fichier.
+ Cela est utile si vous souhaitez offrir un point d’extensibilité pour que quelqu’un d’autre puisse importer un fichier sans avoir à ajouter explicitement le nom du fichier au fichier d’importation. À cet effet, *Microsoft. Common. targets* contient la ligne suivante en haut du fichier.
 
 ```xml
 <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\$(MSBuildThisFile)\ImportBefore\*" Condition="'$(ImportByWildcardBeforeMicrosoftCommonTargets)' == 'true' and exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\$(MSBuildThisFile)\ImportBefore')"/>
 ```
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 
  L’exemple suivant montre un projet qui a plusieurs éléments et propriétés, et qui importe un fichier projet général.
 
@@ -114,5 +115,5 @@ Importe le contenu d’un fichier projet dans un autre fichier projet.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Référence du schéma de fichier de projet](../msbuild/msbuild-project-file-schema-reference.md)
-- [Comment : Utiliser la même cible dans plusieurs fichiers de projet](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
+- [Référence du schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)
+- [Comment : utiliser la même cible dans plusieurs fichiers projet](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

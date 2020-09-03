@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ce0084d6bf734ee8a9de63b0cf3da73504b0d4e4
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88800942"
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Développement Office et SharePoint dans Visual Studio
@@ -59,7 +59,7 @@ ms.locfileid: "88800942"
 
  **En savoir plus**
 
-|À|Consultez|
+|Pour|Consultez|
 |--------|---------|
 |En savoir plus sur les compléments Office, puis en créer un.|[Compléments Office](/office/dev/add-ins/publish/publish)|
 |Comparez les différentes façons dont vous pouvez étendre Office et décidez si vous devez utiliser une application ou un complément Office.|[Feuille de route pour les compléments Office, VSTO et VBA](https://blogs.msdn.microsoft.com/officeapps/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba/)|
@@ -75,14 +75,14 @@ ms.locfileid: "88800942"
 
  **En savoir plus**
 
-|À|Consultez|
+|Pour|Consultez|
 |--------|---------|
 |En savoir plus sur les compléments SharePoint, puis en créer un.|[Compléments SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins)|
 |Comparer les compléments pour SharePoint avec les solutions SharePoint traditionnelles.|[Comparaison entre les compléments SharePoint et les solutions SharePoint](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|
 |Choisir entre la création d’un complément SharePoint et la création d’une solution SharePoint.|[Choisir entre des compléments SharePoint et des solutions SharePoint](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|
 
 ## <a name="create-a-vsto-add-in"></a><a name="Add-ins"></a> Créer un complément VSTO
- Créez un complément VSTO pour cibler Office 2007 ou Office 2010, ou pour étendre Office 2013 et Office 2016 au-delà de ce qui est possible avec les compléments Office. les compléments VSTO s’exécutent uniquement sur le bureau. Les utilisateurs doivent installer les compléments VSTO, afin qu’ils soient généralement plus difficiles à déployer et à prendre en charge.  Votre complément VSTO peut cependant être intégré plus étroitement à Office. Par exemple, il peut ajouter des onglets et des contrôles au ruban Office et effectuer des tâches d'automatisation avancées telles que la fusion de documents ou la modification de graphiques. Vous pouvez tirer parti du .NET Framework, et utiliser C# et Visual Basic pour interagir avec des objets Office.
+ Créez un complément VSTO pour cibler Office 2007 ou Office 2010, ou pour étendre Office 2013 et Office 2016 au-delà de ce qui est possible avec les compléments Office. Les compléments VSTO s’exécutent uniquement sur le bureau. Les utilisateurs doivent installer les compléments VSTO, afin qu’ils soient généralement plus difficiles à déployer et à prendre en charge.  Votre complément VSTO peut cependant être intégré plus étroitement à Office. Par exemple, il peut ajouter des onglets et des contrôles au ruban Office et effectuer des tâches d'automatisation avancées telles que la fusion de documents ou la modification de graphiques. Vous pouvez tirer parti du .NET Framework, et utiliser C# et Visual Basic pour interagir avec des objets Office.
 
  Voici un exemple de ce que peut faire un complément VSTO. Ce complément VSTO ajoute des contrôles de ruban, un volet des tâches personnalisé et une boîte de dialogue dans PowerPoint.
 
@@ -90,7 +90,7 @@ ms.locfileid: "88800942"
 
  **En savoir plus**
 
-|À|Lire|
+|Pour|Lire|
 |--------|----------|
 |Comparer les différentes façons dont vous pouvez étendre Office et déterminer si vous devez utiliser un complément VSTO ou un complément Office.|[Feuille de route pour les compléments Office, VSTO et VBA](https://blogs.msdn.microsoft.com/officeapps/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba/)|
 |Créer un complément VSTO.|[Création de compléments VSTO avec Visual Studio](create-vsto-add-ins-for-office-by-using-visual-studio.md)|
@@ -102,7 +102,7 @@ ms.locfileid: "88800942"
 
  **En savoir plus**
 
-|À|Consultez|
+|Pour|Consultez|
 |--------|---------|
 |Comparer des solutions SharePoint et des compléments SharePoint.|[Comparaison entre les compléments SharePoint et les solutions SharePoint](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|
 |Créer une solution SharePoint.|[Créer des solutions SharePoint](../sharepoint/create-sharepoint-solutions.md)|

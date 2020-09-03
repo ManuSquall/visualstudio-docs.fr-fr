@@ -11,13 +11,13 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: a8b0fd53164cb98921b111d49fa04a76c9d0d8a8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "79094302"
 ---
-# <a name="simplify-string-interpolation-refactoring"></a>Simplifier la refactorisation de l’interpolation des chaînes
+# <a name="simplify-string-interpolation-refactoring"></a>Simplifier la refactorisation de l’interpolation de chaîne
 
 Cette refactorisation s’applique à :
 
@@ -25,19 +25,19 @@ Cette refactorisation s’applique à :
 
 - Visual Basic
 
-**Quoi :** Permet de simplifier une [interpolation des chaînes](https://docs.microsoft.com/dotnet/csharp/tutorials/string-interpolation).
+**Ce qui suit :** Vous permet de simplifier une [interpolation de chaîne](https://docs.microsoft.com/dotnet/csharp/tutorials/string-interpolation).
 
-**Quand :** Vous avez une interpolation des chaînes qui peut être simplifiée.
+Dans les **cas suivants :** Vous avez une interpolation de chaîne qui peut être simplifiée.
 
-**Pourquoi:** La simplification d’une interpolation des cordes peut fournir plus de clarté et de syntaxe concise. Cet outil de refactoration effectuera la tâche automatiquement au lieu d’avoir à le faire manuellement.
+**Pourquoi :** La simplification d’une interpolation de chaîne peut fournir une plus grande clarté et une syntaxe concise. Cet outil de refactorisation effectuera automatiquement la tâche au lieu de devoir le faire manuellement.
 
 ## <a name="how-to"></a>Procédures
 
-1. Placez votre caret sur l’interpolation de chaîne :
+1. Placez le signe insertion sur l’interpolation de chaîne :
 
-2. Appuyez **sur Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
+2. Appuyez sur **CTRL** + **.** pour afficher le menu **Actions rapides et refactorisations**.
 
-3. Sélectionnez **Simplifier l’interpolation**
+3. Sélectionner **simplifier l’interpolation**
 
     ![Simplifier l’interpolation de chaîne](media/simplify-string-interpolation.png)
 

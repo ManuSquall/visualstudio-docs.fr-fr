@@ -14,10 +14,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: af507a8b437a20e3d4f4807d582abab6f9a12e27
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "79094213"
 ---
 # <a name="convert-get-method-to-property--convert-property-to-get-method-refactorings"></a>Convertir la méthode Get en propriété/convertir une propriété en méthode Get (refactorisations)
@@ -41,9 +41,9 @@ Ces refactorisations s’appliquent à :
 1. Effectuez ensuite l'une des opérations suivantes :
 
    - **Clavier**
-      - Appuyez **sur Ctrl**+**.** pour déclencher le menu **Actions rapides et Refactorings,** et sélectionnez **la méthode Remplacer par la propriété** de la fenêtre Preview popup.
+      - Appuyez sur **CTRL** + **.** pour afficher le menu **actions rapides et refactorisations** , puis sélectionnez **remplacer la méthode par la propriété** dans la fenêtre contextuelle d’aperçu.
    - **Souris**
-      - Cliquez à droite sur le code, sélectionnez le menu **Actions rapides et Refactorings,** et **sélectionnez la méthode Remplacer par la propriété** de la fenêtre Preview popup.
+      - Cliquez avec le bouton droit sur le code, sélectionnez le menu **actions rapides et refactorisations** , puis sélectionnez **remplacer la méthode par la propriété** dans la fenêtre contextuelle d’aperçu.
 
 1. (Facultatif) Si vous avez une méthode Set, vous pouvez également convertir votre méthode Set à cette étape en sélectionnant **Remplacer la méthode Get et la méthode Set par une propriété**.
 
@@ -82,7 +82,7 @@ public int MyValue
 1. Effectuez ensuite l'une des opérations suivantes :
 
    - **Clavier**
-      - Appuyez **sur Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**, puis sélectionnez **Remplacer une propriété par des méthodes** dans la fenêtre contextuelle d’aperçu.
+      - Appuyez sur **CTRL** + **.** pour afficher le menu **Actions rapides et refactorisations**, puis sélectionnez **Remplacer une propriété par des méthodes** dans la fenêtre contextuelle d’aperçu.
    - **Souris**
       - Cliquez avec le bouton droit sur le code, choisissez le menu **Actions rapides et refactorisations**, puis sélectionnez **Remplacer une propriété par des méthodes** dans la fenêtre contextuelle d’aperçu.
 

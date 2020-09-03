@@ -15,13 +15,13 @@ caps.latest.revision: 57
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 27dce16d9fe02063eae935af96c26184285e583d
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850378"
 ---
-# <a name="visual-studio-sdk"></a>Kit de développement Visual Studio SDK
+# <a name="visual-studio-sdk"></a>Kit de développement logiciel Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Le kit de développement logiciel (SDK) Visual Studio vous aide à étendre les fonctionnalités de Visual Studio ou à intégrer de nouvelles fonctionnalités dans Visual Studio. Vous pouvez distribuer vos extensions à d’autres utilisateurs, ainsi qu’à la Galerie Visual Studio. Voici quelques-unes des façons dont vous pouvez étendre Visual Studio :  
@@ -76,25 +76,25 @@ Le kit de développement logiciel (SDK) Visual Studio vous aide à étendre les 
 - [Extension de Visual Studio](https://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)  
   
 ## <a name="see-also"></a>Voir aussi  
- [Création d’une extension à l’aide d’une commande de Menu](../extensibility/creating-an-extension-with-a-menu-command.md)   
+ [Création d’une extension à l’aide d’une commande de menu](../extensibility/creating-an-extension-with-a-menu-command.md)   
  [Comment : migrer des projets d’extensibilité vers Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md)   
  [FAQ : conversion des compléments en extensions VSPackage](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)   
- [Gestion de plusieurs threads dans le code managé](../extensibility/managing-multiple-threads-in-managed-code.md)   
+ [Gestion de plusieurs threads dans du code managé](../extensibility/managing-multiple-threads-in-managed-code.md)   
  [Extension des menus et des commandes](../extensibility/extending-menus-and-commands.md)   
  [Ajout de commandes aux barres d’outils](../extensibility/adding-commands-to-toolbars.md)   
  [Extension et personnalisation des fenêtres outil](../extensibility/extending-and-customizing-tool-windows.md)   
  [Extensions du service de langage et de l’éditeur](../extensibility/editor-and-language-service-extensions.md)   
- [Extension des projets](../extensibility/extending-projects.md)   
- [Extension des paramètres et options de l’utilisateur](../extensibility/extending-user-settings-and-options.md)   
+ [Étendre des projets](../extensibility/extending-projects.md)   
+ [Extension des paramètres et des options utilisateur](../extensibility/extending-user-settings-and-options.md)   
  [Création de modèles de projet et d’élément personnalisés](../extensibility/creating-custom-project-and-item-templates.md)   
- [Extension des propriétés et de la fenêtre des propriétés](../extensibility/extending-properties-and-the-property-window.md)   
+ [Extension des propriétés et de la fenêtre Propriétés](../extensibility/extending-properties-and-the-property-window.md)   
  [Extension d’autres parties de Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)   
- [Utilisation et fourniture de Services](../extensibility/using-and-providing-services.md)   
+ [Utilisation et fourniture de services](../extensibility/using-and-providing-services.md)   
  [Extension de Services connectés](../extensibility/extending-connected-services.md)   
  [Gestion des VSPackages](../extensibility/managing-vspackages.md)   
-   de [Shell isolé Visual Studio](../extensibility/visual-studio-isolated-shell.md)  
- [Expédition des extensions Visual Studio](../extensibility/shipping-visual-studio-extensions.md)   
+ [Shell isolé Visual Studio](../extensibility/visual-studio-isolated-shell.md)   
+ [Expédition d’extensions Visual Studio](../extensibility/shipping-visual-studio-extensions.md)   
  [Dans le kit de développement logiciel Visual Studio](../extensibility/internals/inside-the-visual-studio-sdk.md)   
  [Prise en charge du kit de développement logiciel Visual Studio](../extensibility/support-for-the-visual-studio-sdk.md)   
-   d' [Archive](../extensibility/archive.md)  
- [Référence du Kit de développement logiciel (SDK) Visual Studio](../extensibility/visual-studio-sdk-reference.md)
+ [Archiver](../extensibility/archive.md)   
+ [Informations de référence sur le SDK Visual Studio](../extensibility/visual-studio-sdk-reference.md)

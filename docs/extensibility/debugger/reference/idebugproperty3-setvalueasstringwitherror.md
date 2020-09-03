@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::SetValueAsStringWithError ( Microsoft Docs
+title: 'IDebugProperty3 :: SetValueAsStringWithError | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: fb3441dabba1ff13600a9e505eeaec5ae93acd8e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721066"
 ---
 # <a name="idebugproperty3setvalueasstringwitherror"></a>IDebugProperty3::SetValueAsStringWithError
-Définit la valeur de cette propriété et renvoie un message d’erreur, si nécessaire.
+Définit la valeur de cette propriété et retourne un message d’erreur, si nécessaire.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -47,25 +47,25 @@ int SetValueAsStringWithError(
 
 ## <a name="parameters"></a>Paramètres
 `pszValue`\
-[dans] Valeur à définir.
+dans Valeur à définir.
 
 `dwRadix`\
-[dans] Le radix de la valeur étant définie.
+dans Base de la valeur qui est définie.
 
 `dwTimeout`\
-[dans] La durée d’attente pour que la`INFINITE` valeur soit définie (signifie attendre éternellement).
+dans Durée d’attente de la définition de la valeur ( `INFINITE` signifie attendre indéfiniment).
 
 `errorString`\
-[out] S’il y a eu une erreur définissant la valeur, cela explique l’échec.
+à Si une erreur s’est produite lors de la définition de la valeur, cela contient la raison de l’échec.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
-La valeur entrante pourrait être une expression à évaluer.
+La valeur entrante peut être une expression à évaluer.
 
 ## <a name="example"></a>Exemple
-L’exemple suivant montre comment implémenter cette méthode pour un objet **CProperty** qui expose [l’interface IDebugProperty3.](../../../extensibility/debugger/reference/idebugproperty3.md)
+L’exemple suivant montre comment implémenter cette méthode pour un objet **CProperty** qui expose l’interface [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) .
 
 ```cpp
 HRESULT CProperty::SetValueAsStringWithError(

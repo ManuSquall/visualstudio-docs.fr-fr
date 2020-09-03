@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 893647303b493ea633caf076658edbdcf0664ccc
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850836"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Page Application, Concepteur de projet (Visual Basic)
@@ -27,7 +27,7 @@ ms.locfileid: "75850836"
 
 Utilisez la page **Application** du Concepteur de projet pour spécifier les paramètres d’application et les propriétés du projet.
 
- Pour accéder à la page **Application**, choisissez un nœud de projet (pas le nœud **Solution**) dans l’**Explorateur de solutions**. Ensuite, choisissez **Projet**, **Propriétés** dans la barre de menus. Quand le Concepteur de projet apparaît, cliquez sur l’onglet **Application**.
+ Pour accéder à la page **Application**, choisissez un nœud de projet (pas le nœud **Solution**) dans l’**Explorateur de solutions**. Ensuite, choisissez **Projet**, **Propriétés** dans la barre de menus. Quand le Concepteur de projet s’affiche, cliquez sur l’onglet **Application**.
 
  [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)]
 
@@ -41,7 +41,7 @@ Utilisez la page **Application** du Concepteur de projet pour spécifier les par
  Si vous effacez l’**espace de noms racine**, vous pouvez spécifier la structure de l’espace de noms de votre projet dans le code.
 
 > [!NOTE]
-> Si vous utilisez le mot clé Global dans une [instruction Namespace](https://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2), vous pouvez définir un espace de noms en dehors de l’espace de noms racine de votre projet. Si vous effacez l’**espace de noms racine**, `Global` devient l’espace de noms de niveau supérieur et vous n’avez plus besoin du mot clé `Global` dans une instruction `Namespace`. Pour plus d’informations, consultez « Mot clé Global dans les instructions Namespace » dans [Espaces de noms dans Visual Basic](https://msdn.microsoft.com/library/cffac744-ab8c-4f1f-ba50-732c22ab4b88).
+> Si vous utilisez le mot clé Global dans une [instruction Namespace](https://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2), vous pouvez définir un espace de noms en dehors de l’espace de noms racine de votre projet. Si vous effacez l' **espace de noms racine**, `Global` devient l’espace de noms de niveau supérieur, ce qui supprime le recours au `Global` mot clé dans une `Namespace` instruction. Pour plus d’informations, consultez « Mot clé Global dans les instructions Namespace » dans [Espaces de noms dans Visual Basic](https://msdn.microsoft.com/library/cffac744-ab8c-4f1f-ba50-732c22ab4b88).
 
  Pour plus d’informations sur la création d’espaces de noms dans votre code, consultez [Instruction Namespace](https://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2).
 
@@ -56,7 +56,7 @@ Utilisez la page **Application** du Concepteur de projet pour spécifier les par
 > [!NOTE]
 > Les packages de prérequis répertoriés dans la [boîte de dialogue Composants requis](../../ide/reference/prerequisites-dialog-box.md) sont définis automatiquement la première fois que vous ouvrez la boîte de dialogue. Si vous modifiez par la suite le framework cible du projet, vous devez spécifier manuellement les prérequis pour qu’ils correspondent au nouveau framework cible.
 
- Pour plus d'informations, voir [Procédure : Cibler une version du .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) et [Présentation du multiciblage Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).
+ Pour plus d’informations, consultez [Guide pratique pour cibler une version du .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) et [Présentation du multiciblage Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).
 
  **Type d’application** Spécifie le type d’application à générer. Pour les applications [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)], vous pouvez spécifier **Application du Windows Store**, **Bibliothèque de classes** ou **Fichier WinMD**. Pour la plupart des autres types d’applications, vous pouvez spécifier **Application Windows**, **Application console**, **Bibliothèque de classes**, **Service Windows** ou **Bibliothèque de contrôles web**.
 
@@ -69,7 +69,7 @@ Utilisez la page **Application** du Concepteur de projet pour spécifier les par
 
  Pour plus d’informations sur la propriété **Type d’application**, consultez [/target (Visual Basic)](https://msdn.microsoft.com/library/e0954147-548b-461f-9c4b-a8f88845616c). Pour plus d’informations sur la façon d’accéder à cette propriété par programmation, consultez <xref:VSLangProj.ProjectProperties.OutputType%2A>.
 
- **Icône** Définit le fichier .ico à utiliser comme icône de votre programme. Sélectionnez **\<Parcourir...>** pour rechercher un graphique existant. Pour plus d’informations, consultez [/win32icon](https://msdn.microsoft.com/library/aecaab01-9353-46c5-941c-6edabd4eff92) (ou [/win32icon (Options du compilateur C#)](https://msdn.microsoft.com/library/756d9b6d-ab07-41b7-ba58-5bd88f711138). Pour accéder à cette propriété par programmation, consultez <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.
+ **Icône** Définit le fichier .ico à utiliser comme icône de votre programme. Sélectionnez cette option **\<Browse...>** pour rechercher un graphique existant. Pour plus d’informations, consultez [/win32icon](https://msdn.microsoft.com/library/aecaab01-9353-46c5-941c-6edabd4eff92) (ou [/win32icon (Options du compilateur C#)](https://msdn.microsoft.com/library/756d9b6d-ab07-41b7-ba58-5bd88f711138). Pour accéder à cette propriété par programmation, consultez <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.
 
  **Formulaire de démarrage/objet de démarrage/URI de démarrage** Spécifie le formulaire de démarrage ou le point d’entrée de l’application.
 
@@ -79,11 +79,11 @@ Utilisez la page **Application** du Concepteur de projet pour spécifier les par
 
  Si **Activer l’infrastructure de l’application** n’est pas sélectionné, cette liste devient **Objet de démarrage**, et affiche des formulaires et des classes ou des modules avec un `Sub Main`.
 
- L’**objet de démarrage** définit le point d’entrée à appeler quand l’application se charge. Cet objet est généralement défini sur le formulaire principal de votre application ou sur la procédure `Sub Main` qui s’exécute quand l’application démarre. Comme les bibliothèques de classes n’ont pas de point d’entrée, la seule option disponible pour cette propriété est **(Aucun)** . Pour plus d’informations, consultez [/main](https://msdn.microsoft.com/library/83fc339d-6652-415d-b205-b5133319b5b0). Pour accéder à cette propriété par programmation, consultez <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
+ L’**objet de démarrage** définit le point d’entrée à appeler quand l’application se charge. Cet objet est généralement défini sur le formulaire principal de votre application ou sur la procédure `Sub Main` qui s’exécute quand l’application démarre. Comme les bibliothèques de classes n’ont pas de point d’entrée, la seule option disponible pour cette propriété est **(Aucun)**. Pour plus d’informations, consultez [/main](https://msdn.microsoft.com/library/83fc339d-6652-415d-b205-b5133319b5b0). Pour accéder à cette propriété par programmation, consultez <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
 
  **Informations sur l’assembly** Cliquez sur ce bouton pour afficher la [boîte de dialogue informations de l’assembly](../../ide/reference/assembly-information-dialog-box.md).
 
- **Activer l’infrastructure d’application** Spécifie si un projet utilise l’infrastructure d’application. Le paramètre de cette option affecte les options disponibles dans **Formulaire de démarrage**/**Objet de démarrage**.
+ **Activer l’infrastructure d’application** Spécifie si un projet utilise l’infrastructure d’application. La valeur de cette option affecte les options disponibles dans l’objet de démarrage du formulaire de **démarrage** / **Startup object**.
 
  Si cette case est cochée, votre application utilise le `Sub Main` standard. En cochant cette case, vous activez les fonctionnalités de la section **Propriétés de l’infrastructure d’application Windows** et vous êtes invité à sélectionner un formulaire de démarrage.
 
@@ -100,11 +100,11 @@ Utilisez la page **Application** du Concepteur de projet pour spécifier les par
 ## <a name="windows-application-framework-properties"></a>Propriétés de l’infrastructure d’application Windows
  Les paramètres suivants sont disponibles dans la section **Propriétés de l’infrastructure d’application Windows**. Ces options sont disponibles uniquement si la case **Activer l’infrastructure de l’application** est cochée. La section suivante décrit les paramètres des **Propriétés de l’infrastructure d’application Windows** pour les applications Windows Presentation Foundation (WPF).
 
- **Activer les styles visuels XP** Active ou désactive les styles visuels Windows XP, également appelés *thèmes Windows XP*. Les styles visuels Windows XP activent, par exemple, les contrôles avec des angles arrondis et des couleurs dynamiques. Les styles sont activés par défaut. Pour plus d’informations sur les styles visuels Windows XP, consultez [Fonctionnalités de Windows XP et contrôles Windows Forms](https://msdn.microsoft.com/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0)).
+ **Activer les styles visuels XP** Active ou désactive les styles visuels Windows XP, également appelés *thèmes Windows XP*. Les styles visuels Windows XP activent, par exemple, les contrôles avec des angles arrondis et des couleurs dynamiques. Il est activé par défaut. Pour plus d’informations sur les styles visuels Windows XP, consultez [Fonctionnalités de Windows XP et contrôles Windows Forms](https://msdn.microsoft.com/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0)).
 
  **Créer une application à instance unique** Activez cette case à cocher pour empêcher les utilisateurs d’exécuter plusieurs instances de l’application. Par défaut, cette case est décochée. Ce paramètre autorise l’exécution de plusieurs instances de l’application.
 
- **Enregistrer My. Settings lors de l’arrêt** Activez cette case à cocher pour indiquer que les paramètres de `My.Settings` de l’application sont enregistrés lorsque les utilisateurs arrêtent leurs ordinateurs. La case est cochée par défaut. Si cette option est désactivée, vous pouvez enregistrer manuellement les paramètres de l’application en appelant `My.Settings.Save`.
+ **Enregistrer My. Settings lors de l’arrêt** Activez cette case à cocher pour indiquer que les paramètres de l’application `My.Settings` sont enregistrés lorsque les utilisateurs arrêtent leurs ordinateurs. La case est cochée par défaut. Si cette option est désactivée, vous pouvez enregistrer manuellement les paramètres de l’application en appelant `My.Settings.Save`.
 
  **Mode d’authentification** Sélectionnez **Windows** (valeur par défaut) pour spécifier l’utilisation de l’authentification Windows pour identifier l’utilisateur actuellement connecté. Vous pouvez récupérer ces informations au moment de l’exécution à l’aide de l’objet `My.User`. Sélectionnez **Défini par l’application** si vous fournissez votre propre code pour authentifier les utilisateurs au lieu d’utiliser les méthodes d’authentification Windows par défaut.
 
@@ -116,9 +116,9 @@ Utilisez la page **Application** du Concepteur de projet pour spécifier les par
 
  Sélectionnez **Lors de la fermeture de la fenêtre principale** pour spécifier que l’application doit se fermer à la fermeture de la fenêtre principale ou quand vous appelez explicitement `Shutdown`.
 
- **Écran de démarrage** Sélectionnez le formulaire que vous souhaitez utiliser comme écran de démarrage. Vous devez déjà avoir créé un écran de démarrage à l’aide d’un formulaire ou d’un modèle. La valeur par défaut est **(Aucun)** .
+ **Écran de démarrage** Sélectionnez le formulaire que vous souhaitez utiliser comme écran de démarrage. Vous devez déjà avoir créé un écran de démarrage à l’aide d’un formulaire ou d’un modèle. La valeur par défaut est **(aucune)**.
 
- **Afficher les événements d’application** Cliquez sur ce bouton pour afficher un fichier de code d’événements dans lequel vous pouvez écrire des événements pour les événements de l’infrastructure d’application `Startup`, `Shutdown`, `UnhandledException`, `StartupNextInstance` et `NetworkAvailabilityChanged`. Vous pouvez également remplacer certaines méthodes du framework d’application. Par exemple, vous pouvez modifier le comportement d’affichage de l’écran de démarrage en remplaçant `OnInitialize`.
+ **Afficher les événements d’application** Cliquez sur ce bouton pour afficher un fichier de code d’événements dans lequel vous pouvez écrire des événements pour les événements de l’infrastructure d’application `Startup` ,, `Shutdown` `UnhandledException` `StartupNextInstance` et `NetworkAvailabilityChanged` . Vous pouvez également remplacer certaines méthodes du framework d’application. Par exemple, vous pouvez modifier le comportement d’affichage de l’écran de démarrage en remplaçant `OnInitialize`.
 
 ### <a name="windows-application-framework-properties-for-windows-presentation-foundation-wpf-applications"></a>Propriétés de l’infrastructure d’application Windows pour les applications Windows Presentation Foundation (WPF)
  Les paramètres suivants sont disponibles dans la section **Propriétés de l’infrastructure d’application Windows** quand le projet est une application Windows Presentation Foundation. Ces options sont disponibles uniquement si la case **Activer l’infrastructure de l’application** est cochée. Les options répertoriées dans ce tableau sont disponibles uniquement pour les applications WPF ou les applications de navigateur WPF. Elles ne sont pas disponibles pour les bibliothèques de contrôles personnalisés ou de contrôles utilisateur WPF.
@@ -140,4 +140,4 @@ Utilisez la page **Application** du Concepteur de projet pour spécifier les par
  L’objet <xref:System.Windows.Application> déclenche des événements quand certaines modifications de l’état de l’application se produisent (par exemple, au démarrage ou à l’arrêt de l’application). Pour obtenir la liste complète des événements exposés par cette classe, consultez <xref:System.Windows.Application>. Ces événements sont traités dans la section de code utilisateur de la classe partielle `Application`.
 
 ## <a name="see-also"></a>Voir aussi
-[Gestion des propriétés](../../ide/application-properties.md) [de l’application écriture de code dans les solutions Office](https://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)
+[Gestion des propriétés de l’application](../../ide/application-properties.md) [Écriture de code dans les solutions Office](https://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)

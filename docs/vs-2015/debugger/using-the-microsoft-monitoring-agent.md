@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f3f70d3799bfae96b15c13a42c3c11246d1e89ba
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85520573"
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>Utilisation de Microsoft Monitoring Agent
@@ -36,10 +36,10 @@ Pour obtenir la documentation la plus récente sur Visual Studio, consultez [uti
   
 3. [Étape 3 : Créer un journal des événements enregistrés](#SaveEvents)  
   
-## <a name="step-1-set-up-microsoft-monitoring-agent"></a><a name="SetUpMonitoring"></a>Étape 1 : configurer Microsoft Monitoring Agent  
+## <a name="step-1-set-up-microsoft-monitoring-agent"></a><a name="SetUpMonitoring"></a> Étape 1 : configurer Microsoft Monitoring Agent  
  Configurez l’agent autonome sur votre serveur web pour effectuer une surveillance locale sans modifier votre application. Si vous utilisez System Center 2012, consultez [Installation de Microsoft Monitoring Agent](https://technet.microsoft.com/library/dn465156.aspx).  
   
-### <a name="set-up-the-standalone-agent"></a><a name="SetUpStandaloneMMA"></a>Configurer l’agent autonome  
+### <a name="set-up-the-standalone-agent"></a><a name="SetUpStandaloneMMA"></a> Configurer l’agent autonome  
   
 1. Assurez-vous que :  
   
@@ -68,7 +68,7 @@ Pour obtenir la documentation la plus récente sur Visual Studio, consultez [uti
   
 ### <a name="q--a"></a>Questions et réponses  
   
-#### <a name="q-what-if-i-have-windows-powershell-20"></a><a name="PowerShell2"></a>Q : que se passe-t-il si j’ai Windows PowerShell 2,0 ?  
+#### <a name="q-what-if-i-have-windows-powershell-20"></a><a name="PowerShell2"></a> Q : que se passe-t-il si j’ai Windows PowerShell 2,0 ?  
  **R :** Nous vous recommandons vivement d’utiliser PowerShell 3.0. Sinon, vous devrez importer les applets de commande PowerShell de Microsoft Monitoring Agent chaque fois que vous exécuterez PowerShell. De plus, vous n’aurez pas accès au contenu d’aide téléchargeable.  
   
 1. Ouvrez une fenêtre d’invite de commandes **Windows PowerShell** ou **Windows PowerShell ISE** en tant qu’administrateur.  
@@ -79,7 +79,7 @@ Pour obtenir la documentation la plus récente sur Visual Studio, consultez [uti
   
 3. [Visitez TechNet](https://technet.microsoft.com/systemcenter/default) pour obtenir le contenu d’aide le plus récent.  
   
-#### <a name="q-how-do-i-set-up-permissions-for-the-application-pool"></a><a name="FullPermissionsITLog"></a>Q : Comment faire définir des autorisations pour le pool d’applications ?  
+#### <a name="q-how-do-i-set-up-permissions-for-the-application-pool"></a><a name="FullPermissionsITLog"></a> Q : Comment faire définir des autorisations pour le pool d’applications ?  
  **R :** Utilisez la commande Windows **icacls** ou l’Explorateur Windows (ou l’Explorateur de fichiers). Par exemple :  
   
 - Pour définir des autorisations avec la commande Windows **icacls** :  
@@ -110,7 +110,7 @@ Pour obtenir la documentation la plus récente sur Visual Studio, consultez [uti
   
   7. Vérifiez que le pool d’applications a les autorisations **Lire et exécuter**.  
   
-## <a name="step-2-start-monitoring-your-app"></a><a name="MonitorEvents"></a>Étape 2 : démarrer la surveillance de votre application  
+## <a name="step-2-start-monitoring-your-app"></a><a name="MonitorEvents"></a> Étape 2 : démarrer la surveillance de votre application  
  Utilisez la commande Windows PowerShell [Start-WebApplicationMonitoring](https://technet.microsoft.com/library/dn472749(v=sc.20).aspx) pour démarrer la surveillance de votre application. Si vous utilisez System Center 2012, consultez [Analyse des applications web avec Microsoft Monitoring Agent](https://technet.microsoft.com/library/dn465157.aspx).  
   
 1. Sur votre serveur web, ouvrez une fenêtre d’invite de commandes **Windows PowerShell** ou **Windows PowerShell ISE** en tant qu’administrateur.  
@@ -149,7 +149,7 @@ Pour obtenir la documentation la plus récente sur Visual Studio, consultez [uti
   
 ### <a name="q--a"></a>Questions et réponses  
   
-#### <a name="q-how-do-i-get-the-most-data-without-slowing-down-my-app"></a><a name="Minimizing"></a>Q : Comment faire récupérer le plus de données sans ralentir mon application ?  
+#### <a name="q-how-do-i-get-the-most-data-without-slowing-down-my-app"></a><a name="Minimizing"></a> Q : Comment faire récupérer le plus de données sans ralentir mon application ?  
  **R :** Microsoft Monitoring Agent peut collecter beaucoup de données. L’impact de la collecte sur les performances de votre application dépend donc des données collectées et du mode de collecte choisi. Voici quelques méthodes permettant d’obtenir le maximum de données sans ralentir votre application :  
   
 - Pour les applications web et SharePoint, l’agent enregistre les données pour chaque application partageant le pool d’applications spécifié. La collecte peut donc ralentir n’importe quelle application partageant le même pool d’applications, même si vous choisissez de limiter la collecte aux modules d’une seule application. Pour éviter de ralentir d’autres applications, hébergez chaque application dans son propre pool d’applications.  
@@ -230,7 +230,7 @@ Pour obtenir la documentation la plus récente sur Visual Studio, consultez [uti
   
   L’agent enregistre les valeurs pour `id`, `Employee.Id`, `Employee.Name` et l’objet `Employee` retourné par la méthode `AlterEmployee` . Toutefois, l’agent n’enregistre pas d’informations sur l’objet `Address` (il indique seulement si cet objet a ou non une valeur null). L’agent n’enregistre pas non plus de données sur les variables locales de la méthode `AlterEmployee` , sauf si d’autres méthodes utilisent ces variables locales en tant que paramètres (elles sont alors enregistrées en tant que paramètres de méthode).  
   
-## <a name="step-3-save-recorded-events"></a><a name="SaveEvents"></a>Étape 3 : enregistrer les événements enregistrés  
+## <a name="step-3-save-recorded-events"></a><a name="SaveEvents"></a> Étape 3 : enregistrer les événements enregistrés  
  Si vous trouvez une erreur ou un problème de performances, consignez les événements enregistrés dans un journal IntelliTrace. L’agent ne crée un journal que s’il a enregistré des événements. Si vous utilisez System Center 2012, consultez [Analyse des applications web avec Microsoft Monitoring Agent](https://technet.microsoft.com/library/dn465157.aspx).  
   
 ### <a name="save-recorded-events-but-continue-monitoring"></a>Créer un journal des événements enregistrés et continuer la surveillance  

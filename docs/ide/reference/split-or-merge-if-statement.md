@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: a3b42f83faacda6be34b282150cf4fb4c0f379f1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "79093651"
 ---
 # <a name="split-or-merge-if-statements"></a>Fractionner ou fusionner des instructions if
@@ -25,11 +25,11 @@ Cette refactorisation s’applique à :
 
 - Visual Basic
 
-**Quoi:** **Quoi:** Diviser ou fusionner [si](/dotnet/csharp/language-reference/keywords/if-else) les déclarations.
+**Quoi :** instructions **de fractionnement** ou de fusion [si](/dotnet/csharp/language-reference/keywords/if-else) .
 
-**Quand :** Vous souhaitez diviser `if` une déclaration `&&` `||` qui utilise le `if` ou les `if` opérateurs dans `if` une déclaration imbriquée, ou fusionner une déclaration avec une déclaration extérieure.
+Dans les **cas suivants :** Vous souhaitez fractionner une instruction `if` qui utilise les `&&` `||` opérateurs ou dans une instruction imbriquée `if` , ou fusionner une `if` instruction avec une `if` instruction externe.
 
-**Pourquoi:** C’est une question de préférence de style.  
+**Pourquoi :** C’est une question de préférence de style.  
 
 ## <a name="how-to"></a>Procédures
 
@@ -37,7 +37,7 @@ Si vous souhaitez fractionner l’instruction `if` :
 
 1. Placez votre curseur dans l’instruction `if` au niveau de l’opérateur `&&` ou `||`.
 
-2. Appuyez **sur Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
+2. Appuyez sur **CTRL** + **.** pour afficher le menu **Actions rapides et refactorisations**.
 
     ![Instruction Split If](../media/split-if-statement.png)
 
@@ -49,7 +49,7 @@ Si vous souhaitez fusionner une instruction `if` interne avec une instruction `i
 
 1. Placez votre curseur dans le mot clé `if` interne.
 
-2. Appuyez **sur Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
+2. Appuyez sur **CTRL** + **.** pour afficher le menu **Actions rapides et refactorisations**.
 
     ![Instruction Merge If](../media/merge-if-statement.png)
 

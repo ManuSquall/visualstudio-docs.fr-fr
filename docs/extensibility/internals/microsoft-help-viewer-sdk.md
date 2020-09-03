@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4181fd11e6f1ba86e2965991aab704995210e6bc
-ms.sourcegitcommit: 2c26d6e6f2a5c56ae5102cdded7b02f2d0fd686c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88168734"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Kit SDK de Microsoft Help Viewer
@@ -131,17 +131,17 @@ Exemple de section de métadonnées :
 
 Le corps (à l’exclusion de l’en-tête et du pied de page) de la rubrique contient des liens de page, une section de note, une zone réductible, un extrait de code et une section de texte spécifique à une langue.  Pour plus d’informations sur les zones de la rubrique présentée, consultez la section relative à la personnalisation.
 
-1. Ajoutez une balise de titre de rubrique :`<div class="title">Contoso Topic 4</div>`
+1. Ajoutez une balise de titre de rubrique :  `<div class="title">Contoso Topic 4</div>`
 
-2. Ajoutez une section Note :`<div class="alert"> add your table tag and text </div>`
+2. Ajoutez une section Note : `<div class="alert"> add your table tag and text </div>`
 
-3. Ajouter une zone réductible :`<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`
+3. Ajouter une zone réductible :  `<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`
 
-4. Ajoutez un extrait de code :`<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
+4. Ajoutez un extrait de code :  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
 
-5. Ajoutez du texte spécifique à une langue : `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` Notez que `devLangnu=` vous pouvez entrer d’autres langues. Par exemple, `devLangnu="Fortran"` affiche Fortran lorsque l’extrait de code DisplayLanguage = Fortran
+5. Ajoutez du texte spécifique à une langue :  `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` Notez que `devLangnu=` vous pouvez entrer d’autres langues. Par exemple, `devLangnu="Fortran"` affiche Fortran lorsque l’extrait de code DisplayLanguage = Fortran
 
-6. Ajouter des liens de page :`<a href="ms-xhelp:///?Id=ContosoTopic1">Main Topic</a>`
+6. Ajouter des liens de page : `<a href="ms-xhelp:///?Id=ContosoTopic1">Main Topic</a>`
 
 > [!NOTE]
 > Remarque : pour une nouvelle « langue d’affichage » non prise en charge (par exemple, F #, COBOL, Fortran), colorisation de code dans l’extrait de code est monochrome.
@@ -563,25 +563,25 @@ Le fichier branding.js contient du code JavaScript utilisé par les éléments d
 
 Le package de personnalisation contient un ensemble de fichiers HTM qui prennent en charge des scénarios de communication des informations clés pour aider les utilisateurs du contenu, par exemple une page d’accueil contenant une section décrivant les jeux de contenu installés et des pages indiquant à l’utilisateur quand les rubriques sont introuvables dans l’ensemble de rubriques local. Ces fichiers HTM peuvent être modifiés par produit.  Les fournisseurs de l’interpréteur de commandes ISO sont en mesure de prendre le package de personnalisation par défaut et de modifier le comportement et le contenu de ces pages en fonction de leurs besoins.  Ces fichiers font référence à leur package de personnalisation respectif pour que les balises de personnalisation obtiennent le contenu correspondant à partir du fichier branding.xml.
 
-|**File**|**Utilisation**|**Source de contenu affichée**|
+|**Fichier**|**Utilisation**|**Source de contenu affichée**|
 |-|-|-|
 |homepage.htm|Il s’agit d’une page qui affiche le contenu actuellement installé et tout autre message approprié à présenter à l’utilisateur sur son contenu.  Ce fichier contient l’attribut de métadonnées supplémentaire « Microsoft.Help.Id » content = « -1 » qui place ce contenu en haut de la table des matières locale.||
-||<META_HOME_PAGE_TITLE_ADD/>|Branding.xml, balise\<HomePageTitle>|
-||<HOME_PAGE_INTRODUCTION_SECTION_ADD/>|Branding.xml, balise\<HomePageIntroduction>|
-||<HOME_PAGE_CONTENT_INSTALL_SECTION_ADD/>|Branding.xml, balise\<HomePageContentInstallText>|
-||<HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD/>|Section de titre Branding.xml balise \<HomePageInstalledBooks> , les données générées à partir de l’application, \<HomePageNoBooksInstalled> quand aucun livre n’est installé.|
+||<META_HOME_PAGE_TITLE_ADD/>|Branding.xml, balise \<HomePageTitle>|
+||<HOME_PAGE_INTRODUCTION_SECTION_ADD/>|Branding.xml, balise \<HomePageIntroduction>|
+||<HOME_PAGE_CONTENT_INSTALL_SECTION_ADD/>|Branding.xml, balise \<HomePageContentInstallText>|
+||<HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD/>|Section de titre Branding.xml balise \<HomePageInstalledBooks> , les données générées à partir de l’application,  \<HomePageNoBooksInstalled> quand aucun livre n’est installé.|
 ||<HOME_PAGE_SETTINGS_SECTION_ADD/>|Section de titre Branding.xml balise \<HomePageHelpSettings> , texte de la section \<HomePageHelpSettingsText> .|
 |topiccorrupted.htm|Lorsqu’une rubrique existe dans le jeu local, mais pour une raison quelconque, ne peut pas être affichée (contenu endommagé).||
-||<META_TOPIC_CORRUPTED_TITLE_ADD/>|Branding.xml, balise\<TopicCorruptedTitle>|
-||<TOPIC_CORRUPTED_SECTION_ADD/>|Branding.xml, balise\<TopicCorruptedViewOnlineText>|
+||<META_TOPIC_CORRUPTED_TITLE_ADD/>|Branding.xml, balise \<TopicCorruptedTitle>|
+||<TOPIC_CORRUPTED_SECTION_ADD/>|Branding.xml, balise \<TopicCorruptedViewOnlineText>|
 |topicnotfound.htm|Lorsqu’une rubrique est introuvable dans le jeu de contenu local, ni disponible en ligne||
-||<META_TOPIC_NOT_FOUND_TITLE_ADD/>|Branding.xml, balise\<TopicNotFoundTitle>|
-||<META_TOPIC_NOT_FOUND_ID_ADD/>|Branding.xml, balise\<TopicNotFoundViewOnlineText> + \<TopicNotFoundDownloadContentText>|
-||<TOPIC_NOT_FOUND_SECTION_ADD/>|Branding.xml, balise\<TopicNotFoundText>|
+||<META_TOPIC_NOT_FOUND_TITLE_ADD/>|Branding.xml, balise \<TopicNotFoundTitle>|
+||<META_TOPIC_NOT_FOUND_ID_ADD/>|Branding.xml, balise \<TopicNotFoundViewOnlineText> + \<TopicNotFoundDownloadContentText>|
+||<TOPIC_NOT_FOUND_SECTION_ADD/>|Branding.xml, balise \<TopicNotFoundText>|
 |contentnotinstalled.htm|Lorsqu’aucun contenu local n’est installé pour le produit.||
-||<META_CONTENT_NOT_INSTALLED_TITLE_ADD/>|Branding.xml, balise\<ContentNotInstalledTitle>|
-||<META_CONTENT_NOT_INSTALLED_ID_ADD/>|Branding.xml, balise\<ContentNotInstalledDownloadContentText>|
-||<CONTENT_NOT_INSTALLED_SECTION_ADD/>|Branding.xml, balise\<ContentNotInstalledText>|
+||<META_CONTENT_NOT_INSTALLED_TITLE_ADD/>|Branding.xml, balise \<ContentNotInstalledTitle>|
+||<META_CONTENT_NOT_INSTALLED_ID_ADD/>|Branding.xml, balise \<ContentNotInstalledDownloadContentText>|
+||<CONTENT_NOT_INSTALLED_SECTION_ADD/>|Branding.xml, balise \<ContentNotInstalledText>|
 
 **Fichiers CSS**
 
@@ -597,7 +597,7 @@ Personnalisation des fichiers. CSS inclut les définitions pour la présentation
 
 Le contenu Visual Studio affiche un logo Visual Studio, ainsi que d’autres graphiques.  La liste complète des fichiers graphiques dans le package de personnalisation de la visionneuse d’aide Visual Studio est indiquée ci-dessous.
 
-|**File**|**Utilisation**|**Exemples**|
+|**Fichier**|**Utilisation**|**Exemples**|
 |-|-|-|
 |clear.gif|Utilisé pour restituer la zone réductible||
 |footer_slice.gif|Présentation du pied de page||
@@ -741,9 +741,9 @@ Définissez le magasin de contenu dans le registre. Pour l’interpréteur de co
 
 Pour créer une extension de Shell isolée :
 
-1. Dans Visual Studio, sous **fichier**, choisissez **nouveau projet**, sous **autres types de projets** , choisissez **extensibilité**, puis sélectionnez **Visual Studio Shell isolé**. Nommez le projet `ContosoHelpShell` ) pour créer un projet d’extensibilité basé sur le modèle Visual Studio isolated Shell.
+1. Dans Visual Studio, sous **fichier**, choisissez **nouveau projet**, sous **autres types de projets** , choisissez **extensibilité**, puis sélectionnez  **Visual Studio Shell isolé**. Nommez le projet `ContosoHelpShell` ) pour créer un projet d’extensibilité basé sur le modèle Visual Studio isolated Shell.
 
-2. Dans Explorateur de solutions, dans le projet ContosoHelpShellUI, dans le dossier fichiers de ressources, ouvrez ApplicationCommands. vsct. Assurez-vous que cette ligne est commentée (recherchez « No_Help ») :`<!-- <define name="No_HelpMenuCommands"/> -->`
+2. Dans Explorateur de solutions, dans le projet ContosoHelpShellUI, dans le dossier fichiers de ressources, ouvrez ApplicationCommands. vsct. Assurez-vous que cette ligne est commentée (recherchez « No_Help ») : `<!-- <define name="No_HelpMenuCommands"/> -->`
 
 3. Appuyez sur la touche F5 pour compiler et exécuter **Debug**. Dans l’instance expérimentale de l’IDE de l’interpréteur de commandes isolé, choisissez le menu **aide** . Assurez-vous que les commandes **afficher l’aide**, **Ajouter et supprimer le contenu d’aide**et **définir les préférences d’aide** s’affichent.
 
@@ -785,7 +785,7 @@ Pour tester cela comme si elle était déployée :
 
 3. Copiez le contenu du dossier ContosoHelpShell Release dans le \\ dossier \Program Files (x86) \Contoso\.
 
-4. Démarrez l’éditeur du registre en sélectionnant **exécuter** dans le menu **Démarrer** et en entrant `Regedit` . Dans l’éditeur du Registre, choisissez **fichier**, puis **Importer**. Accédez au dossier du projet ContosoHelpShell. Dans le sous-dossier ContosoHelpShell, choisissez ContosoHelpShell. reg.
+4. Démarrez l’éditeur du registre en sélectionnant  **exécuter** dans le menu **Démarrer** et en entrant `Regedit` . Dans l’éditeur du Registre, choisissez **fichier**, puis **Importer**. Accédez au dossier du projet ContosoHelpShell. Dans le sous-dossier ContosoHelpShell, choisissez ContosoHelpShell. reg.
 
 5. Créer un magasin de contenu :
 
@@ -808,7 +808,7 @@ Pour tester cela comme si elle était déployée :
 
     C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio15
 
-    [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)]Interpréteur de commandes intégré :
+    [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] Interpréteur de commandes intégré :
 
     C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio15en-US
 
