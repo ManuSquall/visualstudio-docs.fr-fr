@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b1f5aaa106e00f9b10eb88892bcc978b92a01c79
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545689"
 ---
 # <a name="how-to-access-and-constrain-the-current-selection"></a>Comment : accéder à et contraindre la sélection actuelle
@@ -36,10 +36,10 @@ Selon la commande, le gestionnaire de commandes peut avoir besoin de la sélecti
     |Méthode <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsDiagramSelected%2A>|Retourne `true` si le diagramme est sélectionné dans le concepteur de modèles ; sinon, `false` .|
     |Méthode <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleDocumentSelection%2A>|Retourne `true` si un seul élément est sélectionné dans le concepteur de modèles ; sinon, `false` .|
     |Méthode <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleSelection%2A>|Retourne `true` si un seul élément est sélectionné dans la fenêtre active ; sinon, `false` .|
-    |Propriété <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentDocumentSelection%2A>|Obtient une collection en lecture seule des éléments sélectionnés dans le générateur de modèles.|
-    |Propriété <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentSelection%2A>|Obtient une collection en lecture seule des éléments sélectionnés dans la fenêtre active.|
-    |Propriété <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleDocumentSelection%2A>|Obtient l’élément principal de la sélection dans le générateur de modèles.|
-    |Propriété <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleSelection%2A>|Obtient l’élément principal de la sélection dans la fenêtre active.|
+    |Propriété<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentDocumentSelection%2A>|Obtient une collection en lecture seule des éléments sélectionnés dans le générateur de modèles.|
+    |Propriété<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentSelection%2A>|Obtient une collection en lecture seule des éléments sélectionnés dans la fenêtre active.|
+    |Propriété<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleDocumentSelection%2A>|Obtient l’élément principal de la sélection dans le générateur de modèles.|
+    |Propriété<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleSelection%2A>|Obtient l’élément principal de la sélection dans la fenêtre active.|
 
 2. La <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet.CurrentDocView%2A> propriété de la <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> classe fournit l’accès à l' <xref:Microsoft.VisualStudio.Modeling.Shell.DiagramDocView> objet qui représente la fenêtre du concepteur de modèles et fournit un accès supplémentaire aux éléments sélectionnés dans le générateur de modèles.
 

@@ -1,5 +1,5 @@
 ---
-title: Exemple de code HTML, CSS et JavaScript de déboguer | Microsoft Docs
+title: Déboguer un exemple de code HTML, CSS et JavaScript | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 134b4e3c5195e9008d951062ec813a939d0d4fe6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161471"
 ---
 # <a name="debug-html-css-and-javascript-sample-code"></a>Déboguer un exemple de code HTML, CSS et JavaScript
@@ -26,10 +26,10 @@ ms.locfileid: "68161471"
 
 S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.png « windows_and_phone_content »)  
   
- Le code dans cette rubrique est l’exemple de fichier pour [Guide de démarrage rapide : Déboguer le code HTML et CSS](../debugger/quickstart-debug-html-and-css.md). Les erreurs présentes par conception dans le guide de démarrage rapide sont résolues dans cette version du code.  
+ Le code de cette rubrique est l’exemple de fichier pour le [démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md). Les erreurs présentes par conception dans le guide de démarrage rapide sont résolues dans cette version du code.  
   
 ## <a name="sample-code"></a>Exemple de code  
- Le code HTML suivant est utilisé dans l’étiquette \<body> du guide de démarrage rapide.  
+ Le code HTML suivant est utilisé dans la \<body> balise dans le démarrage rapide.  
   
 ```html  
 <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
@@ -105,4 +105,4 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md)
+ [Démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md)

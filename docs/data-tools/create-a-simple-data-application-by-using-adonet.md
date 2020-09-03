@@ -12,30 +12,30 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 8f35173ded1ba4d52e0c5a9800fa228a7f93b981
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586872"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Créer une application de données simple à l’aide d’ADO.NET
 
-Quand vous créez une application qui manipule les données d’une base de données, vous effectuez des tâches élémentaires, comme définir les chaînes de connexion, insérer les données et exécuter les procédures stockées. En suivant cette rubrique, vous pouvez découvrir comment interagir avec une base de données à partir d’une application simple Windows Forms « formulaires de données » à C# l’aide de Visual ou Visual Basic et ADO.net.  Toutes les technologies de données .NET (y compris les jeux de données, les LINQ to SQL et les Entity Framework) effectuent au final des étapes qui sont très similaires à celles indiquées dans cet article.
+Quand vous créez une application qui manipule les données d’une base de données, vous effectuez des tâches élémentaires, comme définir les chaînes de connexion, insérer les données et exécuter les procédures stockées. En suivant cette rubrique, vous pouvez découvrir comment interagir avec une base de données à partir d’une application simple Windows Forms « formulaires de données » à l’aide de Visual C# ou Visual Basic et ADO.NET.  Toutes les technologies de données .NET (y compris les jeux de données, les LINQ to SQL et les Entity Framework) effectuent au final des étapes qui sont très similaires à celles indiquées dans cet article.
 
 Cet article présente un moyen simple de récupérer des données d’une base de données de manière rapide. Si votre application doit modifier des données de manière non triviale et mettre à jour la base de données, vous devez envisager d’utiliser des Entity Framework et d’utiliser la liaison de données pour synchroniser automatiquement les contrôles d’interface utilisateur avec les modifications apportées aux données sous-jacentes.
 
 > [!IMPORTANT]
 > Pour que le code reste simple, il n’inclut pas la gestion des exceptions prête à la production.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Prérequis
 
 Pour créer l'application, vous aurez besoin des éléments suivants :
 
-- Visual Studio.
+- Visual Studio.
 
 - SQL Server Express LocalDB. Si vous n’avez pas SQL Server Express base de données locale, vous pouvez l’installer à partir de la [page de téléchargement SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express).
 
-Cette rubrique suppose que vous êtes familiarisé avec les fonctionnalités de base de l’IDE de Visual Studio et que vous pouvez créer une application Windows Forms, ajouter des formulaires au projet, placer des boutons et d’autres contrôles sur les formulaires, définir les propriétés des contrôles et coder des événements simples. Si vous n’êtes pas familiarisé avec ces tâches, nous vous suggérons de suivre la rubrique [prise en main de C# Visual et Visual Basic](../ide/quickstart-visual-basic-console.md) avant de commencer cette procédure pas à pas.
+Cette rubrique suppose que vous êtes familiarisé avec les fonctionnalités de base de l’IDE de Visual Studio et que vous pouvez créer une application Windows Forms, ajouter des formulaires au projet, placer des boutons et d’autres contrôles sur les formulaires, définir les propriétés des contrôles et coder des événements simples. Si vous n’êtes pas familiarisé avec ces tâches, nous vous suggérons de suivre la rubrique [prise en main de Visual C# et de Visual Basic](../ide/quickstart-visual-basic-console.md) avant de commencer cette procédure pas à pas.
 
 ## <a name="set-up-the-sample-database"></a>Installer l'exemple de base de données
 
@@ -45,7 +45,7 @@ Créez l’exemple de base de données en procédant comme suit :
 
 2. Cliquez avec le bouton droit sur **connexions de données** et choisissez **créer une nouvelle SQL Server base de données**.
 
-3. Dans la zone de texte **nom du serveur** , entrez **(\mssqllocaldb)** .
+3. Dans la zone de texte **nom du serveur** , entrez **(\mssqllocaldb)**.
 
 4. Dans la zone **de texte nom de la nouvelle base de données** , entrez **Sales**, puis choisissez **OK**.
 
@@ -86,9 +86,9 @@ Créez l’exemple de base de données en procédant comme suit :
 
 |Contrôles du formulaire Navigation|Propriétés|
 | - |----------------|
-|Button|Name = btnGoToAdd|
-|Button|Name = btnGoToFillOrCancel|
-|Button|Name = btnExit|
+|Bouton|Name = btnGoToAdd|
+|Bouton|Name = btnGoToFillOrCancel|
+|Bouton|Name = btnExit|
 
 **Formulaire NewCustomer**
 
@@ -98,12 +98,12 @@ Créez l’exemple de base de données en procédant comme suit :
 | - |----------------|
 |TextBox|Name = txtCustomerName|
 |TextBox|Name = txtCustomerID<br /><br /> Readonly = True|
-|Button|Name = btnCreateAccount|
+|Bouton|Name = btnCreateAccount|
 |NumericUpdown|DecimalPlaces = 0<br /><br /> Maximum = 5000<br /><br /> Name = numOrderAmount|
 |DateTimePicker|Format = Short<br /><br /> Name = dtpOrderDate|
-|Button|Name = btnPlaceOrder|
-|Button|Name = btnAddAnotherAccount|
-|Button|Name = btnAddFinish|
+|Bouton|Name = btnPlaceOrder|
+|Bouton|Name = btnAddAnotherAccount|
+|Bouton|Name = btnAddFinish|
 
 **Formulaire FillOrCancel**
 
@@ -112,24 +112,24 @@ Créez l’exemple de base de données en procédant comme suit :
 |Contrôles du formulaire FillOrCancel|Propriétés|
 | - |----------------|
 |TextBox|Name = txtOrderID|
-|Button|Name = btnFindByOrderID|
+|Bouton|Name = btnFindByOrderID|
 |DateTimePicker|Format = Short<br /><br /> Name = dtpFillDate|
 |DataGridView|Name = dgvCustomerOrders<br /><br /> Readonly = True<br /><br /> RowHeadersVisible = False|
-|Button|Name = btnCancelOrder|
-|Button|Name = btnFillOrder|
-|Button|Name = btnFinishUpdates|
+|Bouton|Name = btnCancelOrder|
+|Bouton|Name = btnFillOrder|
+|Bouton|Name = btnFinishUpdates|
 
 ## <a name="store-the-connection-string"></a>Stocker la chaîne de connexion
-Quand votre application tente d'ouvrir une connexion à la base de données, elle doit avoir accès à la chaîne de connexion. Pour éviter d’entrer la chaîne manuellement sur chaque formulaire, stockez la chaîne dans le fichier *app. config* de votre projet, puis créez une méthode qui retourne la chaîne lorsque la méthode est appelée à partir de n’importe quel formulaire de votre application.
+Quand votre application tente d'ouvrir une connexion à la base de données, elle doit avoir accès à la chaîne de connexion. Pour éviter d’entrer la chaîne manuellement sur chaque formulaire, stockez la chaîne dans le fichier *App.config* de votre projet, puis créez une méthode qui retourne la chaîne lorsque la méthode est appelée à partir de n’importe quel formulaire de votre application.
 
-Vous pouvez trouver la chaîne de connexion en cliquant avec le bouton droit sur la connexion de données de **vente** dans **Explorateur de serveurs** et en choisissant **Propriétés**. Localisez la propriété **ConnectionString** , puis utilisez **CTRL**+**A**, **CTRL**+**C** pour sélectionner et copier la chaîne dans le presse-papiers.
+Vous pouvez trouver la chaîne de connexion en cliquant avec le bouton droit sur la connexion de données de **vente** dans **Explorateur de serveurs** et en choisissant **Propriétés**. Recherchez la propriété **ConnectionString** , puis utilisez **CTRL** + **A**, **CTRL** + **C** pour sélectionner et copier la chaîne dans le presse-papiers.
 
-1. C#Si vous utilisez, dans **Explorateur de solutions**, développez le nœud **Propriétés** sous le projet, puis ouvrez le fichier **Settings. Settings** .
+1. Si vous utilisez C#, dans **Explorateur de solutions**, développez le nœud **Propriétés** sous le projet, puis ouvrez le fichier **Settings. Settings** .
     Si vous utilisez Visual Basic, dans **Explorateur de solutions**, cliquez sur **Afficher tous les fichiers**, développez le nœud **mon projet** , puis ouvrez le fichier **Settings. Settings** .
 
-2. Dans la colonne **nom** , entrez `connString`.
+2. Dans la colonne **nom** , entrez `connString` .
 
-3. Dans la liste **type** , sélectionnez **(chaîne de connexion)** .
+3. Dans la liste **type** , sélectionnez **(chaîne de connexion)**.
 
 4. Dans la liste **étendue** , sélectionnez **application**.
 
@@ -175,7 +175,7 @@ Créez un gestionnaire d’événements Click vide pour chaque bouton du formula
 
 Pour terminer la logique du formulaire NewCustomer, procédez comme suit.
 
-1. Placez l’espace de noms `System.Data.SqlClient` dans la portée afin de ne pas avoir à qualifier complètement les noms de ses membres.
+1. Mettez l' `System.Data.SqlClient` espace de noms dans la portée afin de ne pas avoir à qualifier complètement les noms de ses membres.
 
      ```csharp
      using System.Data.SqlClient;

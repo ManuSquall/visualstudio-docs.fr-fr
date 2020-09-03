@@ -8,10 +8,10 @@ ms.date: 05/10/2020
 ms.topic: how-to
 description: Découvrez comment les administrateurs peuvent attribuer des licences à plusieurs abonnés à l’aide de la fonctionnalité d’ajout en bloc ou de groupes de Microsoft Azure Active Directory
 ms.openlocfilehash: da7ce369e1d9aaa13b0c346005914b7f64ceb780
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88249617"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Attribuer des abonnements à plusieurs utilisateurs
@@ -137,4 +137,4 @@ R : selon la façon dont votre organisation a configuré Azure AD, vous pouvez 
 
 ## <a name="next-steps"></a>Étapes suivantes
 - Vous n’avez qu’un ou deux abonnés à ajouter ?  Consultez [Ajouter des utilisateurs uniques](assign-license.md)
-- Besoin d'aide ? Contactez la [prise en charge de l’administration et des abonnements Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).
+- Vous avez besoin d’aide ? Contactez la [prise en charge de l’administration et des abonnements Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).

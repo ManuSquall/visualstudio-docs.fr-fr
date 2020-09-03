@@ -12,19 +12,19 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ce312d7951f4c1be720604c006f9afcd63f364d3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68163654"
 ---
 # <a name="requiredframeworkversion-element-visual-studio-templates"></a>Élément RequiredFrameworkVersion (modèles Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Spécifie la version minimale de .NET Framework qui est requis par le modèle. Hiérarchie de schéma.  
+Spécifie la version minimale de .NET Framework requise par le modèle. Hiérarchie du schéma.  
   
  \<VSTemplate>  
- \<TemplateData >  
+ \<TemplateData>  
  \<RequiredFrameworkVersion>  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -46,15 +46,15 @@ Spécifie la version minimale de .NET Framework qui est requis par le modèle. H
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Élément requis.<br /><br /> Définit la catégorie du modèle et comment il est affiché dans un le **nouveau projet** ou **ajouter un nouvel élément** boîte de dialogue.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Élément requis.<br /><br /> Classe le modèle et définit son mode d’affichage dans la boîte de dialogue **nouveau projet** ou **Ajouter un nouvel élément** .|  
   
 ## <a name="text-value"></a>Valeur texte  
  Une valeur texte est requise.  
   
- Le texte doit être le numéro de version minimale du .NET Framework qui est requise pour le modèle.  
+ Le texte doit être le numéro de version minimal du .NET Framework requis pour le modèle.  
   
 ## <a name="remarks"></a>Notes  
- `RequiredFrameworkVersion` est un élément facultatif. Utilisez cet élément si le modèle prend uniquement en charge une version minimale spécifique et les versions ultérieures éventuelle du .NET Framework.  
+ `RequiredFrameworkVersion` est un élément facultatif. Utilisez cet élément si le modèle prend uniquement en charge une version minimale spécifique et, le cas échéant, les versions ultérieures du .NET Framework.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   

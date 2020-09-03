@@ -1,5 +1,5 @@
 ---
-title: Utilisation d’annotations SAL pour réduireC++ les défauts de code C | Microsoft Docs
+title: Utilisation d’annotations SAL pour réduire les défauts du code C-C++ | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -14,10 +14,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 66da17a31f6287bea810fc29fdb9c12d95cc94b2
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77275410"
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>Utilisation d’annotations SAL pour réduire les défauts du code C/C++
@@ -31,7 +31,7 @@ SAL est le langage d’annotation du code source de Microsoft. À l’aide des a
   
      Fournit des informations et des exemples qui illustrent les principales annotations SAL.  
   
-- [Annotation des paramètres de fonction et des valeurs de retour](../code-quality/annotating-function-parameters-and-return-values.md)  
+- [Annotation de paramètres de fonction et valeurs de retour](../code-quality/annotating-function-parameters-and-return-values.md)  
   
      Répertorie les annotations SAL pour les fonctions et les paramètres de fonction.  
   
@@ -47,7 +47,7 @@ SAL est le langage d’annotation du code source de Microsoft. À l’aide des a
   
      Explique comment utiliser des annotations SAL avec des mécanismes de verrouillage.  
   
-- [Spécification du moment et de l’endroit où une annotation s’applique](../code-quality/specifying-when-and-where-an-annotation-applies.md)  
+- [Spécification du moment où une annotation est applicable et dans quel cas](../code-quality/specifying-when-and-where-an-annotation-applies.md)  
   
      Répertorie les annotations SAL qui spécifient la condition ou la portée (emplacement) d’autres annotations SAL.  
   

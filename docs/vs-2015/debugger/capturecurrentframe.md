@@ -10,16 +10,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2718e800e2a31eb66319259ed1e43f2ab8b084c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161632"
 ---
 # <a name="capturecurrentframe"></a>CaptureCurrentFrame
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Capture le reste de l’image actuelle dans le fichier journal de graphiques.  
+Capture le reste du frame actuel dans le fichier journal de graphisme.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -28,10 +28,10 @@ void CaptureCurrentFrame();
 ```  
   
 ## <a name="remarks"></a>Notes  
- Si une autre capture est actuellement en cours d’exécution, comme une capture qui a été démarrée par le `BeginCapture` (fonction) — cette capture est terminée et enregistrée dans le journal de graphisme en tant qu’un frame distinct. Immédiatement par la suite, graphics diagnostics commence à capturer le reste de l’image actuelle, qui est également enregistré comme une trame distincte. Fin de l’image actuelle est marquée par un appel à présenter.  
+ Si une autre capture est actuellement en cours, telle qu’une capture qui a été démarrée par la `BeginCapture` fonction, cette capture est terminée et enregistrée dans le journal de graphisme sous la forme d’un frame distinct. Immédiatement après, Graphics Diagnostics commence à capturer le reste de l’image actuelle, qui est également enregistré sous la forme d’un frame distinct. La fin du frame actuel est marquée par un appel à present.  
   
- Pour capturer un frame, vous devez préparer votre application pour capturer et enregistrer des informations graphiques, autrement dit, vous devez appeler [Init](../debugger/init.md) via une instance de la `VsgDbg` classe avant d’appeler `CaptureCurrentFrame`.  
+ Pour capturer un frame, vous devez préparer votre application pour capturer et enregistrer les informations graphiques, autrement dit, vous devez avoir appelé [init](../debugger/init.md) via une instance de la `VsgDbg` classe avant d’appeler `CaptureCurrentFrame` .  
   
 ## <a name="see-also"></a>Voir aussi  
- [Init](../debugger/init.md)   
+ [Rein](../debugger/init.md)   
  [BeginCapture](../debugger/begincapture.md)

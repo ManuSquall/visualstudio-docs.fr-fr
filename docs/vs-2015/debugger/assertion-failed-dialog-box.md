@@ -1,5 +1,5 @@
 ---
-title: Boîte de dialogue Échec de l’assertion | Microsoft Docs
+title: Échec de l’assertion, boîte de dialogue | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,10 +22,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d665f51f2ec5d825dbac1533c82e3d15bf419ff2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161818"
 ---
 # <a name="assertion-failed-dialog-box"></a>Échec de l'assertion (boîte de dialogue)
@@ -33,11 +33,11 @@ ms.locfileid: "68161818"
 
 Une instruction d'assertion spécifie une condition dont vous prévoyez qu'elle est vraie en un certain point de votre programme. Si cette condition n'est pas vraie, l'assertion échoue, l'exécution de votre programme est interrompue et cette boîte de dialogue apparaît.  
   
-|Clic|À|  
+|Cliquez|Pour|  
 |-----------|--------|  
 |Recommencer|Déboguer l'assertion ou obtenir de l'aide sur les assertions.|  
-|Ignore|Ignorer l'assertion et poursuivre l'exécution du programme.|  
-|Abandonner|Arrêter l'exécution du programme et clôturer la session de débogage.|  
+|Ignorer|Ignorer l'assertion et poursuivre l'exécution du programme.|  
+|Abandon|Arrêter l'exécution du programme et clôturer la session de débogage.|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Assertions C/C++](../debugger/c-cpp-assertions.md)

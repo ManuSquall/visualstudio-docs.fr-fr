@@ -1,5 +1,5 @@
 ---
-title: IDebugDisassemblyStream2::Lire Microsoft Docs
+title: 'IDebugDisassemblyStream2 :: Read | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4a4f5c0250405c2e2a0314b52c4cbc64d749fc0a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732098"
 ---
 # <a name="idebugdisassemblystream2read"></a>IDebugDisassemblyStream2::Read
-Lit les instructions à partir de la position actuelle dans le flux de démontage.
+Lit les instructions à partir de la position actuelle dans le flux de code machine.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -47,26 +47,26 @@ int Read( 
 
 ## <a name="parameters"></a>Paramètres
 `dwInstructions`\
-[dans] Le nombre d’instructions à démonter. Cette valeur est également la `prgDisassembly` longueur maximale de la gamme.
+dans Nombre d’instructions à désassembler. Cette valeur est également la longueur maximale du `prgDisassembly` tableau.
 
 `dwFields`\
-[dans] Une combinaison de drapeaux de [l’DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) énumération qui `prgDisassembly` indiquent quels champs de sont à remplir.
+dans Combinaison d’indicateurs de l’énumération [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) qui indique les champs de `prgDisassembly` à remplir.
 
 `pdwInstructionsRead`\
-[out] Retourne le nombre d’instructions effectivement démontées.
+à Retourne le nombre d’instructions effectivement désassemblées.
 
 `prgDisassembly`\
-[out] Un éventail de structures [de démontageData](../../../extensibility/debugger/reference/disassemblydata.md) qui est rempli avec le code démonté, une structure par instruction démontée. La longueur de ce tableau `dwInstructions` est dictée par le paramètre.
+à Tableau de structures [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) qui est rempli avec le code désassemblé, une structure par instruction désassemblée. La longueur de ce tableau est dictée par le `dwInstructions` paramètre.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- Le nombre maximal d’instructions disponibles dans la portée actuelle peut être obtenu en appelant la méthode [GetSize.](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md)
+ Le nombre maximal d’instructions disponibles dans l’étendue actuelle peut être obtenu en appelant la méthode de la [méthode de recherche](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md) .
 
- La position actuelle d’où l’instruction suivante est lue peut être modifiée en appelant la méthode [Seek.](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)
+ La position actuelle à partir de laquelle l’instruction suivante est lue peut être modifiée en appelant la méthode [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md) .
 
- Le `DSF_OPERANDS_SYMBOLS` drapeau peut être `DSF_OPERANDS` ajouté `dwFields` au drapeau dans le paramètre pour indiquer que les noms des symboles doivent être utilisés lors du démontage des instructions.
+ L' `DSF_OPERANDS_SYMBOLS` indicateur peut être ajouté à l' `DSF_OPERANDS` indicateur dans le `dwFields` paramètre pour indiquer que les noms de symboles doivent être utilisés lors du désassemblage des instructions.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)

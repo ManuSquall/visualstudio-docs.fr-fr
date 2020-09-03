@@ -1,5 +1,5 @@
 ---
-title: Élément de nom (Visual Studio Templates) Microsoft Docs
+title: Name, élément (modèles Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,16 +14,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b2a02dc377bac5f93f8e0365f6f3d9ccb81737a8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80702454"
 ---
-# <a name="name-element-visual-studio-templates"></a>Élément de nom (modèles Visual Studio)
-Spécifie le nom du modèle tel qu’il apparaît dans la boîte de dialogue **Du nouveau projet** ou ajouter un nouvel **élément.**
+# <a name="name-element-visual-studio-templates"></a>Name, élément (modèles Visual Studio)
+Spécifie le nom du modèle tel qu’il apparaît dans la boîte de dialogue **nouveau projet** ou **Ajouter un nouvel élément** .
 
- \<VSTemplate> \<TemplateData> \<Nom>
+ \<VSTemplate> \<TemplateData>
+ \<Name>
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -42,8 +43,8 @@ Spécifie le nom du modèle tel qu’il apparaît dans la boîte de dialogue **D
 
 |Attribut|Description|
 |---------------|-----------------|
-|`Package`|Attribut facultatif, pour les scénarios d’utilisateur avancés.<br /><br /> Un GUID qui spécifie l’ID du package Visual Studio.|
-|`ID`|Attribut facultatif, pour les scénarios d’utilisateur avancés.<br /><br /> Spécifie l’ID de la ressource Visual Studio.|
+|`Package`|Attribut facultatif, pour les scénarios utilisateur avancés.<br /><br /> Un GUID qui spécifie l’ID du package Visual Studio.|
+|`ID`|Attribut facultatif, pour les scénarios utilisateur avancés.<br /><br /> Spécifie l’ID de la ressource Visual Studio.|
 
 ### <a name="child-elements"></a>Éléments enfants
  Aucun.
@@ -63,7 +64,7 @@ Spécifie le nom du modèle tel qu’il apparaît dans la boîte de dialogue **D
  `Name` est un élément enfant obligatoire de `TemplateData`.
 
 ## <a name="example"></a>Exemple
- L’exemple suivant montre les métadonnées [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] d’un modèle de projet pour une application.
+ L’exemple suivant montre les métadonnées d’un modèle de projet pour une [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] application.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -90,5 +91,5 @@ Spécifie le nom du modèle tel qu’il apparaît dans la boîte de dialogue **D
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Référence de schéma de modèle de studio visuel](../extensibility/visual-studio-template-schema-reference.md)
-- [Création de modèles de projets et d’objets](../ide/creating-project-and-item-templates.md)
+- [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)

@@ -1,17 +1,17 @@
 ---
 title: Refactorisation du code
 description: Affinage du code avec Visual Studio pour Mac et des actions rapides.
-author: cobey
-ms.author: cobey
-ms.date: 03/29/2019
+author: jmatthiesen
+ms.author: jomatthi
+ms.date: 07/03/2020
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
 ms.custom: video
-ms.openlocfilehash: 5a87b87f3a14462daec1e069fe222164818d2a19
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3892117e5c84a71f258d4e019105fca0a8cf9c5b
+ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/02/2020
-ms.locfileid: "67691298"
+ms.locfileid: "89402580"
 ---
 # <a name="refactoring"></a>Refactorisation
 
@@ -31,9 +31,9 @@ Ceci met en évidence le symbole et toutes les références à celui-ci. Quand v
 
 ![Renommage et identificateur](media/refactoring-renaming2.png)
 
-## <a name="quick-actions"></a>Actions rapides
+## <a name="quick-actions-and-refactorings"></a>Actions rapides et refactorisations
 
-Les actions rapides vous permettent de refactoriser, générer ou modifier facilement le code en une seule action.
+Les actions rapides et les refactorisations vous permettent de refactoriser, générer ou modifier facilement le code en une seule action.
 
 Les actions rapides peuvent servir à :
 
@@ -55,7 +55,7 @@ L’icône qui s’affiche quand une action rapide est disponible donne une indi
 
    ![Ampoule avec pointage de la souris](media/refactoring-lightbulb-hover.png)
 
-- Les ampoules et tournevis apparaissent dans la marge de gauche de l’éditeur quand vous déplacez le signe insertion dans une ligne de code pour lequel une action rapide est disponible.
+- Les ampoules et les tournevis s’affichent dans la marge de gauche de l’éditeur lorsque vous déplacez le signe insertion dans une ligne de code pour laquelle une action rapide ou une refactorisation est disponible.
 
 - Appuyez sur l' **option (⌥)** + **Entrez** n’importe où sur une ligne pour afficher la liste des actions rapides et des refactorisations disponibles.
 

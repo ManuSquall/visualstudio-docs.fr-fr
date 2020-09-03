@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 463e73a989deecf90e6bbfb7e8b92409b15695a5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545728"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Créer des diagrammes de dépendance à partir de votre code
@@ -29,7 +29,7 @@ Un diagramme de dépendance vous permet d’organiser les éléments de solution
 
 [Vidéo : valider vos dépendances d’architecture en temps réel](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
 
-## <a name="create-a-dependency-diagram"></a><a name="CreateDiagram"></a>Créer un diagramme de dépendance
+## <a name="create-a-dependency-diagram"></a><a name="CreateDiagram"></a> Créer un diagramme de dépendance
 
 Avant de créer un diagramme de dépendances, assurez-vous que votre solution possède un projet de modélisation.
 
@@ -51,7 +51,7 @@ Avant de créer un diagramme de dépendances, assurez-vous que votre solution po
 
 4. Dans **Ajouter au projet de modélisation**, recherchez et sélectionnez un projet de modélisation existant dans votre solution.
 
-     -ou-
+     - ou -
 
      Choisissez **créer un nouveau projet de modélisation** pour ajouter un nouveau projet de modélisation à la solution.
 
@@ -78,7 +78,7 @@ Avant de créer un diagramme de dépendances, assurez-vous que votre solution po
 
 ![Diagramme de dépendance généré à partir d’une carte de code](media/dependency-validation-01.png)
 
-## <a name="create-layers-from-artifacts"></a><a name="CreateLayers"></a>Créer des couches à partir d’artefacts
+## <a name="create-layers-from-artifacts"></a><a name="CreateLayers"></a> Créer des couches à partir d’artefacts
  Vous pouvez créer des couches à partir d'éléments de solution Visual Studio, tels que des projets, des fichiers de code, des espaces de noms, des classes et des méthodes. Cela crée automatiquement des liens entre ces couches et les éléments, les incluant dans le processus de validation de couche.
 
  Afin de pouvoir associer une couche à des caractéristiques ou des plans, vous pouvez également lier des couches à des éléments qui ne prennent pas en charge la validation, tels que des documents Word ou des présentations PowerPoint. Vous pouvez également lier des couches à des fichiers dans des projets qui sont partagés sur plusieurs applications, mais le processus de validation n’inclut pas ces couches qui s’affichent avec des noms génériques tels que « Couche 1 » et « Couche 2 ».
@@ -107,7 +107,7 @@ Avant de créer un diagramme de dépendances, assurez-vous que votre solution po
 
 - Si une couche contient d'autres couches liées à des artefacts, la couche du conteneur est également liée à ces artefacts, même si le nombre indiqué sur la couche du conteneur ne comprend pas ces artefacts.
 
-## <a name="manage-links-between-layers-and-artifacts"></a><a name="Managing"></a>Gérer les liens entre les couches et les artefacts
+## <a name="manage-links-between-layers-and-artifacts"></a><a name="Managing"></a> Gérer les liens entre les couches et les artefacts
 
 1. Dans le diagramme de dépendances, ouvrez le menu contextuel de la couche, puis choisissez **afficher les liens**.
 
@@ -123,7 +123,7 @@ Avant de créer un diagramme de dépendances, assurez-vous que votre solution po
 |Créer une nouvelle couche à partir d’un lien d’artefact existant|Faites glisser le lien d’artefact vers une zone vide sur le diagramme.|
 |Vérifiez qu’un artefact lié prend en charge la validation par rapport au diagramme de dépendance.|Examinez la colonne **prend en charge la validation** du lien d’artefact.|
 
-## <a name="reverse-engineer-existing-dependencies"></a><a name="Discovering"></a>Ingénierie à rebours des dépendances existantes
+## <a name="reverse-engineer-existing-dependencies"></a><a name="Discovering"></a> Ingénierie à rebours des dépendances existantes
  Une dépendance existe chaque fois qu'un artefact associé à une couche comporte une référence à un artefact associé à une autre couche. Par exemple, une classe dans une couche déclare une variable qui a une classe dans une autre couche. Vous pouvez effectuer une ingénierie à rebours des dépendances existantes pour les artefacts liés aux couches sur le diagramme.
 
 > [!NOTE]
@@ -133,7 +133,7 @@ Avant de créer un diagramme de dépendances, assurez-vous que votre solution po
 
   En général, des dépendances qui ne devraient pas exister s'affichent. Vous pouvez modifier ces dépendances pour les ajuster à la conception prévue.
 
-## <a name="edit-layers-and-dependencies-to-show-the-intended-design"></a><a name="EditDependencies"></a>Modifier les couches et les dépendances pour afficher la conception prévue
+## <a name="edit-layers-and-dependencies-to-show-the-intended-design"></a><a name="EditDependencies"></a> Modifier les couches et les dépendances pour afficher la conception prévue
  Pour décrire les modifications que vous envisagez d’apporter à votre système ou à l’architecture prévue, modifiez le diagramme de dépendance :
 
 |**To**|**Exécuter ces étapes**|
@@ -144,10 +144,10 @@ Avant de créer un diagramme de dépendances, assurez-vous que votre solution po
 |Spécifier que les artefacts associés à une couche ne doivent pas appartenir aux espaces de noms spécifiés|Tapez les espaces de noms dans la propriété **espaces de noms interdits** de la couche. Utilisez un point-virgule (**;**) pour séparer les espaces de noms.|
 |Spécifier que les artefacts associés à une couche doivent appartenir à un des espaces de noms spécifiés|Tapez l’espace de noms dans la propriété **espace de noms requis** de la couche. Utilisez un point-virgule (**;**) pour séparer les espaces de noms.|
 
-## <a name="change-how-elements-appear-on-the-diagram"></a><a name="EditLayout"></a>Modifier le mode d’affichage des éléments dans le diagramme
+## <a name="change-how-elements-appear-on-the-diagram"></a><a name="EditLayout"></a> Modifier le mode d’affichage des éléments dans le diagramme
  Vous pouvez modifier la taille, la forme, la couleur et la position des couches ou de la couleur des dépendances en modifiant leurs propriétés.
 
-## <a name="discover-patterns-and-dependencies-on-a-code-map"></a><a name="Codemaps"></a>Découvrir des modèles et des dépendances sur une carte de code
+## <a name="discover-patterns-and-dependencies-on-a-code-map"></a><a name="Codemaps"></a> Découvrir des modèles et des dépendances sur une carte de code
  Lors de la création de diagrammes de dépendance, vous pouvez également créer des **cartes de code**. Ces diagrammes peuvent vous aider à découvrir des modèles et des dépendances quand vous explorez le code. Utilisez l'Explorateur de solutions, l'Affichage de classes ou l'Explorateur d'objets pour explorer les assemblys, les espaces de noms et les classes, qui correspondent souvent à des couches existantes. Pour plus d'informations sur les cartes de code, consultez :
 
 - [Mapper les dépendances à travers vos solutions](../modeling/map-dependencies-across-your-solutions.md)

@@ -11,19 +11,19 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d60244ea827433678afbd09dd1e8cf1c972595cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68162114"
 ---
 # <a name="description-element-visual-studio-templates"></a>Description, élément (modèles Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Spécifie la description du modèle tel qu’il apparaît dans un le **nouveau projet** ou **ajouter un nouvel élément** boîte de dialogue.  
+Spécifie la description du modèle telle qu’elle apparaît dans la boîte de dialogue **nouveau projet** ou **Ajouter un nouvel élément** .  
   
  \<VSTemplate>  
- \<TemplateData >  
+ \<TemplateData>  
  \<Description>  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -45,8 +45,8 @@ Spécifie la description du modèle tel qu’il apparaît dans un le **nouveau p
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|`Package`|Attribut facultatif, pour les scénarios complexes.<br /><br /> Un GUID qui spécifie l’ID du package Visual Studio.|  
-|`ID`|Attribut facultatif, pour les scénarios complexes.<br /><br /> Spécifie l’ID de la ressource Visual Studio.|  
+|`Package`|Attribut facultatif, pour les scénarios utilisateur avancés.<br /><br /> Un GUID qui spécifie l’ID du package Visual Studio.|  
+|`ID`|Attribut facultatif, pour les scénarios utilisateur avancés.<br /><br /> Spécifie l’ID de la ressource Visual Studio.|  
   
 ### <a name="child-elements"></a>Éléments enfants  
  Aucun.  
@@ -63,10 +63,10 @@ Spécifie la description du modèle tel qu’il apparaît dans un le **nouveau p
  Le texte fournit une description du modèle.  
   
 ## <a name="remarks"></a>Notes  
- `Description` est un élément enfant requis de l'élément `TemplateData`.  
+ `Description` est un élément enfant obligatoire de l' `TemplateData` élément.  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant montre les métadonnées d’un modèle de projet pour un [!INCLUDE[csprcs](../includes/csprcs-md.md)] application.  
+ L’exemple suivant montre les métadonnées d’un modèle de projet pour une [!INCLUDE[csprcs](../includes/csprcs-md.md)] application.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  

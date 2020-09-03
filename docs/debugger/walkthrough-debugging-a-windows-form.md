@@ -24,14 +24,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 701d156d5fdc23a5e98ac1de43c1882f3065171e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72728335"
 ---
-# <a name="walkthrough-debugging-a-windows-form"></a>Procédure pas à pas : débogage d'un Windows Form
-Un Windows Form est l’une des applications gérées les plus courantes. Un Windows Form crée une application Windows standard. Vous pouvez effectuer cette procédure pas à pas C#à l' C++aide de Visual Basic, ou.
+# <a name="walkthrough-debugging-a-windows-form"></a>Procédure pas à pas : débogage d’un Windows Form
+Un Windows Form est l’une des applications gérées les plus courantes. Un Windows Form crée une application Windows standard. Vous pouvez effectuer cette procédure pas à pas à l’aide de Visual Basic, C# ou C++.
 
  Tout d’abord, vous devez fermer toutes les solutions ouvertes.
 
@@ -46,11 +46,11 @@ Un Windows Form est l’une des applications gérées les plus courantes. Un Win
 
 1. Dans le menu **fichier** , choisissez **nouveau** , puis cliquez sur **projet**.
 
-     La boîte de dialogue **Nouveau projet** s’affiche.
+     La boîte de dialogue **Nouveau projet** apparaît.
 
-2. Dans le volet types de projets, ouvrez le nœud **Visual Basic**, **visuel C#** ou **visuel C++**  , puis
+2. Dans le volet types de projets, ouvrez le nœud **Visual Basic**, **Visual C#** ou **Visual C++** , puis
 
-    1. Pour Visual Basic ou visuel C#, sélectionnez **Windows Desktop**  > **application Windows Form**.
+    1. Pour Visual Basic ou Visual C#, sélectionnez Windows **Desktop**  >  **Windows Form App**.
 
     2. Pour Visual C++, sélectionnez **application de bureau Windows**.
 
@@ -70,7 +70,7 @@ Un Windows Form est l’une des applications gérées les plus courantes. Un Win
 
 8. Sur l’aire de conception de formulaire, double-cliquez sur le bouton.
 
-     Vous accédez alors à la page de codes. Le curseur doit se trouver dans `button1_Click`.
+     Vous accédez alors à la page de codes. Le curseur doit être dans `button1_Click` .
 
 10. Dans la fonction `button1_Click`, ajoutez le code suivant :
 
@@ -114,7 +114,7 @@ Un Windows Form est l’une des applications gérées les plus courantes. Un Win
     > [!NOTE]
     > Vous pouvez également cliquer avec le bouton droit sur n’importe quelle ligne de code, pointer sur **point d’arrêt**, puis cliquer sur Insérer un **point d’arrêt** pour ajouter un point d’arrêt sur cette ligne.
 
-2. Dans le menu **Déboguer**, choisissez **Démarrer**.
+2. DANS le menu **Déboguer** , choisissez **Démarrer**.
 
      L’exécution du Windows Form démarre.
 
@@ -124,7 +124,7 @@ Un Windows Form est l’une des applications gérées les plus courantes. Un Win
 
 4. Dans le menu **Déboguer** , choisissez **fenêtres**, **Espion**, puis cliquez sur **Espion1**.
 
-5. Dans la fenêtre **Espion1** , cliquez sur une ligne vide. Dans la colonne **nom** , tapez `textBox1.Text` (si vous utilisez Visual Basic ou visuel C#) ou `textBox1->Text` (si vous utilisez C++), puis appuyez sur entrée.
+5. Dans la fenêtre **Espion1** , cliquez sur une ligne vide. Dans la colonne **nom** , tapez `textBox1.Text` (si vous utilisez Visual Basic ou Visual C#) ou `textBox1->Text` (si vous utilisez C++), puis appuyez sur entrée.
 
      La fenêtre **Espion1** affiche la valeur de cette variable entre guillemets comme suit :
 
@@ -167,7 +167,7 @@ Un Windows Form est l’une des applications gérées les plus courantes. Un Win
     textBox1->Text = "Button was clicked!";
     ```
 
-2. Dans le menu **Déboguer** , sélectionnez **exécuter sans débogage**.
+2. Dans le menu **Déboguer**, sélectionnez **Démarrer sans débogage**.
 
      Le Windows Form commence à s’exécuter sous Windows, comme si vous aviez double-cliqué sur son fichier exécutable. Le débogueur n’est pas attaché.
 
@@ -175,7 +175,7 @@ Un Windows Form est l’une des applications gérées les plus courantes. Un Win
 
      La boîte de dialogue **Attacher au processus** s'affiche.
 
-4. Dans le volet **processus disponibles** , recherchez le nom du processus (Walkthrough_SimpleDebug. exe) dans la colonne **traiter** , puis cliquez dessus.
+4. Dans le volet **processus disponibles** , recherchez le nom du processus (Walkthrough_SimpleDebug.exe) dans la colonne **traiter** , puis cliquez dessus.
 
 5. Cliquez sur le bouton **attacher** .
 

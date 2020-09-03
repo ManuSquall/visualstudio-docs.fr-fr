@@ -7,18 +7,18 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
 ms.topic: how-to
-ms.openlocfilehash: f2621ab30099baae5521c8b2226f288ec1a2531b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 009df6525696405914aeeb224e3817bbfbe27155
+ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/02/2020
-ms.locfileid: "85938859"
+ms.locfileid: "89402624"
 ---
 # <a name="introduction-to-azure-functions"></a>Introduction à Azure Functions
 
 Azure Functions permet de créer et d’exécuter dans le cloud des fonctions, à savoir des extraits de code basés sur des événements, sans devoir provisionner ni gérer explicitement l’infrastructure. Pour plus d’informations, consultez la [documentation sur Azure Functions](/azure/azure-functions/).
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
 
 Les outils Azure Functions sont inclus dans **Visual Studio pour Mac 7.5**.
 
@@ -161,4 +161,4 @@ Vous pouvez être amené à définir un paramètre important : `FUNCTIONS_EXTEN
 
 - **Image Resizer** : cette fonction crée des images redimensionnées chaque fois qu’un objet blob est ajouté à un conteneur. Le modèle accepte un chemin et une chaîne de connexion pour le déclencheur, une petite image de sortie et une moyenne image de sortie.
 
-- **SAS token** : cette fonction génère un jeton SAP pour un conteneur Stockage Azure et un nom d’objet blob spécifiés. En plus du nom de fonction, ce modèle accepte des propriétés de chemin et de connexion. La propriété de chemin correspond au chemin dans le compte de stockage surveillé par le déclencheur. Le compte de connexion correspond au nom du paramètre d’application contenant votre chaîne de connexion de compte de stockage. Vous devez également définir des **droits d’accès**. Le niveau d’autorisation contrôle si la fonction nécessite une clé d’API et la clé à utiliser. La fonction utilise une clé de fonction, et l’administrateur utilise votre clé principale. Pour plus d’informations, consultez l’exemple de [fonction Azure C# pour générer des jetons SAP](https://github.com/Azure-Samples/functions-dotnet-sas-token/).
+- **SAS token** : cette fonction génère un jeton SAP pour un conteneur Stockage Azure et un nom d’objet blob spécifiés. En plus du nom de fonction, ce modèle accepte des propriétés de chemin et de connexion. La propriété de chemin correspond au chemin dans le compte de stockage surveillé par le déclencheur. Le compte de connexion correspond au nom du paramètre d’application contenant votre chaîne de connexion de compte de stockage. Vous devez également définir des **droits d’accès**. Le niveau d’autorisation contrôle si la fonction requiert une clé API et la clé à utiliser ; La fonction utilise une touche de fonction ; L’administrateur utilise votre clé d’accès au compte. Pour plus d’informations, consultez l’exemple de [fonction Azure C# pour générer des jetons SAP](https://github.com/Azure-Samples/functions-dotnet-sas-token/).

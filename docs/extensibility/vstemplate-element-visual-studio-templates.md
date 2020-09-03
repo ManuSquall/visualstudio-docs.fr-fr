@@ -1,5 +1,5 @@
 ---
-title: ÉLÉMENT VSTemplate (Visual Studio Templates) Microsoft Docs
+title: VSTemplate, élément (modèles Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,14 +14,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 651e8b6dbbe11c450b105f3185e7e987bb30da9b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80697867"
 ---
-# <a name="vstemplate-element-visual-studio-templates"></a>ÉLÉMENT VSTemplate (Visual Studio Templates)
-Contient toutes les métadonnées sur le modèle de projet, le modèle d’élément ou le kit de démarrage.
+# <a name="vstemplate-element-visual-studio-templates"></a>VSTemplate, élément (modèles Visual Studio)
+Contient toutes les métadonnées relatives au modèle de projet, au modèle d’élément ou à la starter kit.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -40,14 +40,14 @@ Contient toutes les métadonnées sur le modèle de projet, le modèle d’élé
 
 | Attribut | Description |
 |-----------| - |
-| `Type` | Identifie le modèle comme un modèle de projet ou un modèle d’élément. Cet attribut peut avoir `Project` `Item`une valeur de ou . |
-| `Version` | Spécifie un numéro de version pour le modèle. Modèles et [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] ont `Version` une valeur `3.0.0`d’attribut de . |
+| `Type` | Identifie le modèle en tant que modèle de projet ou modèle d’élément. Cet attribut peut avoir la valeur `Project` ou `Item` . |
+| `Version` | Spécifie un numéro de version pour le modèle. Les modèles dans [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] et [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] ont une `Version` valeur d’attribut de `3.0.0` . |
 
 ### <a name="child-elements"></a>Éléments enfants
 
 |Élément|Description|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Élément requis.<br /><br /> Spécifie les données qui catégorisent le modèle et définissent comment il s’affiche dans la boîte de dialogue **Du nouveau projet** ou ajouter un nouvel **élément.**|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Élément requis.<br /><br /> Spécifie les données qui classent le modèle et définit son affichage dans la boîte de dialogue **nouveau projet** ou **Ajouter un nouvel élément** .|
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Élément requis.<br /><br /> Spécifie le contenu du modèle.|
 |[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Élément facultatif.|
 |[WizardData](../extensibility/wizarddata-element-visual-studio-templates.md)|Élément facultatif.|
@@ -56,10 +56,10 @@ Contient toutes les métadonnées sur le modèle de projet, le modèle d’élé
  Aucun.
 
 ## <a name="remarks"></a>Notes
- L’élément `VSTemplate` est l’élément racine des fichiers *.vstemplate.*
+ L' `VSTemplate` élément est l’élément racine des fichiers *. vstemplate* .
 
 ## <a name="example"></a>Exemple
- L’exemple suivant montre les métadonnées [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] d’un modèle de projet pour une application.
+ L’exemple suivant montre les métadonnées d’un modèle de projet pour une [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] application.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -86,5 +86,5 @@ Contient toutes les métadonnées sur le modèle de projet, le modèle d’élé
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Référence de schéma de modèle de studio visuel](../extensibility/visual-studio-template-schema-reference.md)
-- [Création de modèles de projets et d’objets](../ide/creating-project-and-item-templates.md)
+- [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)

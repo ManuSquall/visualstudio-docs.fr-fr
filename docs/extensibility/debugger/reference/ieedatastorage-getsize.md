@@ -1,5 +1,5 @@
 ---
-title: IEEDataStorage::GetSize Microsoft Docs
+title: 'IEEDataStorage :: obtient | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e7d9000889d082826f46bdceb0476dd5d06c24d2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718195"
 ---
 # <a name="ieedatastoragegetsize"></a>IEEDataStorage::GetSize
@@ -41,9 +41,9 @@ int GetSize(
 
 ## <a name="parameters"></a>Paramètres
 `size`\
-[out] Le nombre d’octets contenus dans cet objet.
+à Nombre d’octets contenus dans cet objet.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes

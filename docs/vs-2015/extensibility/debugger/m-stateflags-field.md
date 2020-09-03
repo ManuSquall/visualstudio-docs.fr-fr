@@ -11,22 +11,22 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 794ab8baac441fc14d41c2d30b9db4b0894e88e8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149083"
 ---
-# <a name="mstateflags-field"></a>Champ m_stateFlags
+# <a name="m_stateflags-field"></a>Champ m_stateFlags
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Stocke des informations sur l’état actuel de la <xref:System.Threading.Tasks.Task> objet.  
+Stocke les informations sur l’état actuel de l' <xref:System.Threading.Tasks.Task> objet.  
   
- **Espace de noms :** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **Espace de noms :** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Assembly :** mscorlib (dans mscorlib.dll)  
+ **Assembly :** mscorlib (en mscorlib.dll)  
   
- Étant donné que vous ne pouvez pas accéder à ce membre interne du .NET Framework, la syntaxe suivante est fournie en commun Intermediate Language (CIL).  
+ Étant donné que vous ne pouvez pas accéder à ce membre interne à partir de la .NET Framework, la syntaxe suivante est fournie en Common Intermediate Language (CIL).  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -35,7 +35,7 @@ Stocke des informations sur l’état actuel de la <xref:System.Threading.Tasks.
 ```  
   
 ## <a name="remarks"></a>Notes  
- Vous utilisez généralement le <xref:System.Threading.Tasks.Task.Status%2A?displayProperty=fullName> propriété pour accéder à cette valeur.  
+ En général, vous utilisez la <xref:System.Threading.Tasks.Task.Status%2A?displayProperty=fullName> propriété pour accéder à cette valeur.  
   
  Ce membre peut être n’importe quelle combinaison des valeurs suivantes :  
   
@@ -50,4 +50,4 @@ Stocke des informations sur l’état actuel de la <xref:System.Threading.Tasks.
 - [TASK_STATE_RAN_TO_COMPLETION](../../extensibility/debugger/task-state-ran-to-completion-field.md)  
   
 ## <a name="see-also"></a>Voir aussi  
- [Classe Task](../../extensibility/debugger/task-class-internal-members.md)
+ [Classe de tâche](../../extensibility/debugger/task-class-internal-members.md)

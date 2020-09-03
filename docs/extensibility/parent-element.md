@@ -1,5 +1,5 @@
 ---
-title: Élément parent (fr) Microsoft Docs
+title: Élément parent | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8c018505ba06762bf8426f266b24ee1835313c29
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80702216"
 ---
 # <a name="parent-element"></a>Élément parent
-Le parent d’un bouton ou d’une boîte combo ne peut être qu’un groupe. Le parent d’un menu ou d’un groupe peut être n’importe quel autre menu ou groupe. Dans un [élément CommandPlacement,](../extensibility/commandplacement-element.md)cet élément est nécessaire; dans tous les autres cas, il est facultatif. Si cet élément est omis, `Group_Undefined:0` le parent de sera implicite.
+Le parent d’un bouton ou d’une zone de liste déroulante ne peut être qu’un groupe. Le parent d’un menu ou d’un groupe peut être n’importe quel autre menu ou groupe. Dans un [élément commandplacement ayant](../extensibility/commandplacement-element.md), cet élément est obligatoire. dans toutes les autres instances, il est facultatif. Si cet élément est omis, le parent de `Group_Undefined:0` est implicite.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -34,8 +34,8 @@ Le parent d’un bouton ou d’une boîte combo ne peut être qu’un groupe. Le
 
 |Attribut|Description|
 |---------------|-----------------|
-|guid|Obligatoire. GUID de l’identifiant de commande GUID/ID.|
-|id|Obligatoire. ID de l’identifiant de commande GUID/ID.|
+|guid|Obligatoire. GUID de l’identificateur de commande GUID/ID.|
+|id|Obligatoire. ID de l’identificateur de la commande GUID/ID.|
 
 ### <a name="child-elements"></a>Éléments enfants
  None
@@ -44,10 +44,10 @@ Le parent d’un bouton ou d’une boîte combo ne peut être qu’un groupe. Le
 
 |Élément|Description|
 |-------------|-----------------|
-|[Élément CommandTable](../extensibility/commandtable-element.md)|Définit tous les éléments qui représentent les commandes qu’un VSPackage fournit à l’environnement de développement intégré (IDE). Par exemple, les éléments de menu, les menus, les barres d’outils et les boîtes combo.|
-|[Élément boutons](../extensibility/buttons-element.md)|Groupes [Éléments d’élément bouton.](../extensibility/button-element.md)|
-|[Élément menus](../extensibility/menus-element.md)|Définit tous les menus qu’un VSPackage met en œuvre.|
-|[Élément des groupes](../extensibility/groups-element.md)|Contient des entrées qui définissent les groupes de commande d’un VSPackage.|
+|[Élément CommandTable](../extensibility/commandtable-element.md)|Définit tous les éléments qui représentent les commandes qu’un VSPackage fournit à l’environnement de développement intégré (IDE). Par exemple, les éléments de menu, les menus, les barres d’outils et les zones de liste modifiable.|
+|[Buttons, élément](../extensibility/buttons-element.md)|Éléments du [bouton](../extensibility/button-element.md) groupes.|
+|[Élément menus](../extensibility/menus-element.md)|Définit tous les menus qu’un VSPackage implémente.|
+|[Élément Groups](../extensibility/groups-element.md)|Contient des entrées qui définissent les groupes de commandes d’un VSPackage.|
 
 ## <a name="see-also"></a>Voir aussi
-- [Fichiers visualister de table de commande de studio (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Fichiers de table de commandes Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 97d9e64a0fcabb207d4606d4819f6afcb61b1043
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586846"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Créer un contrôle utilisateur Windows Forms prenant en charge la liaison de données complexes
@@ -51,7 +51,7 @@ Au cours de cette procédure pas à pas, vous apprendrez à :
 
 - Ajouter le nouveau contrôle en le faisant glisser depuis la fenêtre **Sources de données** vers **Form1**.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Prérequis
 
 Cette procédure pas à pas utilise SQL Server Express base de données locale et l’exemple de base de données Northwind.
 
@@ -98,15 +98,15 @@ Pour des contrôles complexes prenant en charge la liaison de données, vous pou
     [!code-csharp[VbRaddataDisplaying#4](../data-tools/codesnippet/CSharp/create-a-windows-forms-user-control-that-supports-complex-data-binding_1.cs)]
     [!code-vb[VbRaddataDisplaying#4](../data-tools/codesnippet/VisualBasic/create-a-windows-forms-user-control-that-supports-complex-data-binding_1.vb)]
 
-1. Dans le menu **Générer** , cliquez sur **Générer la solution**.
+1. Dans le menu **générer** , choisissez **générer la solution**.
 
 ## <a name="create-a-data-source-from-your-database"></a>Créer une source de données à partir de votre base de données
 
-Utilisez l’Assistant **configuration de source de données** pour créer une source de données basée sur la table `Customers` de l’exemple de base de données Northwind :
+Utilisez l’Assistant **configuration de source de données** pour créer une source de données basée sur la `Customers` table dans l’exemple de base de données Northwind :
 
 1. Pour ouvrir la fenêtre **sources de données** , dans le menu **données** , cliquez sur Afficher les **sources de données**.
 
-2. Dans la fenêtre **Sources de données**, sélectionnez **Ajouter une nouvelle source de données** pour démarrer l’Assistant **Configuration de source de données**.
+2. Dans la fenêtre **sources de données** , sélectionnez Ajouter une **nouvelle source de données** pour démarrer l’Assistant Configuration de source de **données** .
 
 3. Sélectionnez **Base de données** dans la page **Choisir un type de source de données** , puis cliquez sur **Suivant**.
 
@@ -124,11 +124,11 @@ Utilisez l’Assistant **configuration de source de données** pour créer une s
 
 8. Sélectionnez la table `Customers`, puis cliquez sur **Terminer**.
 
-   **NorthwindDataSet** est ajouté à votre projet et la table `Customers` apparaît dans la fenêtre **Sources de données**.
+   **NorthwindDataSet** est ajouté à votre projet et la `Customers` table s’affiche dans la fenêtre **sources de données** .
 
 ## <a name="set-the-customers-table-to-use-the-complexdatagridview-control"></a>Définir la table Customers pour qu’elle utilise le contrôle ComplexDataGridView
 
-Dans la fenêtre **Sources de données**, vous pouvez définir le contrôle à créer avant de faire glisser des éléments vers votre formulaire :
+Dans la fenêtre **sources de données** , vous pouvez définir le contrôle à créer avant de faire glisser des éléments dans votre formulaire :
 
 1. Ouvrez **Form1** dans le concepteur.
 
@@ -142,13 +142,13 @@ Dans la fenêtre **Sources de données**, vous pouvez définir le contrôle à c
 
 ## <a name="add-controls-to-the-form"></a>Ajouter des contrôles au formulaire
 
-Pour créer des contrôles liés aux données, vous pouvez faire glisser des éléments depuis la fenêtre **Sources de données** vers votre formulaire. Faites glisser le nœud **Customers** principal depuis la fenêtre **Sources de données** vers le formulaire. Vérifiez que le contrôle **ComplexDataGridView** est utilisé pour afficher les données de la table.
+Vous pouvez créer les contrôles liés aux données en faisant glisser des éléments depuis la fenêtre **sources de données** vers votre formulaire. Faites glisser le nœud **Customers** principal depuis la fenêtre **Sources de données** vers le formulaire. Vérifiez que le contrôle **ComplexDataGridView** est utilisé pour afficher les données de la table.
 
-## <a name="run-the-application"></a>Exécuter l'application
+## <a name="run-the-application"></a>Exécution de l'application
 
-Appuyez sur **F5** pour exécuter l’application.
+Appuyez sur **F5** pour exécuter l'application.
 
-## <a name="next-steps"></a>Étapes suivantes :
+## <a name="next-steps"></a>Étapes suivantes
 
 Selon les spécifications de votre application, vous pouvez exécuter différentes étapes après la création d'un contrôle prenant en charge la liaison de données. Les étapes ultérieures sont habituellement celles-ci :
 

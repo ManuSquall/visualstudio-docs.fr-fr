@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3476244d3044eb80dbfce3559479421b012cc5fa
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659496"
 ---
 # <a name="list-registers-command"></a>Afficher les registres, commande
@@ -36,25 +36,25 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 ```
 
 ## <a name="switches"></a>Commutateurs
- /Display [{`register`&#124; `registerGroup`}...] Affiche les valeurs du `register` ou `registerGroup` spécifié. Si aucun `register` ni `registerGroup` n’est spécifié, la liste par défaut de registres est affichée. Si aucun commutateur n’est spécifié, le comportement est le même. Exemple :
+ /Display [{ `register`&#124;`registerGroup` }...] Affiche les valeurs du ou spécifié `register` `registerGroup` . Si aucun `register` ni `registerGroup` n’est spécifié, la liste par défaut de registres est affichée. Si aucun commutateur n’est spécifié, le comportement est le même. Par exemple :
 
  `Debug.ListRegisters /Display eax`
 
- est équivalent à
+ équivaut à :
 
  `Debug.ListRegisters eax`
 
  /List affiche tous les groupes de registres dans la liste.
 
- /Watch [{`register`&#124; `registerGroup`}...] Ajoute une ou plusieurs valeurs `register` ou `registerGroup` à la liste.
+ /Watch [{ `register`&#124;`registerGroup` }...] Ajoute une ou plusieurs `register` `registerGroup` valeurs ou à la liste.
 
- /Unwatch [{`register`&#124; `registerGroup`}...] Supprime une ou plusieurs valeurs `register` ou `registerGroup` de la liste.
+ /Unwatch [{ `register`&#124;`registerGroup` }...] Supprime une ou plusieurs `register` `registerGroup` valeurs ou de la liste.
 
 ## <a name="remarks"></a>Notes
  L’alias `r` peut être utilisé à la place de `Debug.ListRegisters`.
 
 ## <a name="example"></a>Exemple
- Cet exemple utilise l’alias `Debug.ListRegisters` `r` pour afficher les valeurs du groupe de registres `Flags`.
+ Cet exemple utilise l’alias `Debug.ListRegisters``r` pour afficher les valeurs du groupe de registres `Flags`.
 
 ```
 r /Display Flags

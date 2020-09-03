@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8dfaf19e358d96b7737b06880d6fa4581b5c54f8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659374"
 ---
 # <a name="validate-your-uml-model"></a>Valider votre modèle UML
@@ -38,7 +38,7 @@ Certains des modèles UML que vous pouvez dessiner dans Visual Studio peuvent ê
 
    Si des erreurs se produisent, il vous sera demandé si vous souhaitez toujours enregistrer le modèle. Vous pouvez choisir de corriger les erreurs ou d'enregistrer quand même le modèle.
 
-- **Lors de l’ouverture d’un modèle.** Quand vous ouvrez un modèle, les méthodes de validation peuvent être appliquées pour restaurer les messages d'erreur qui existaient au moment de l'enregistrement du modèle. Des erreurs peuvent également être introduites par les incohérences qui résultent des modifications apportées par les utilisateurs travaillant sur différentes parties d'un modèle. Pour plus d’informations, consultez [partager des modèles et exportation de diagrammes](../modeling/share-models-and-exporting-diagrams.md).
+- **Lors de l'ouverture d'un modèle.** Quand vous ouvrez un modèle, les méthodes de validation peuvent être appliquées pour restaurer les messages d'erreur qui existaient au moment de l'enregistrement du modèle. Des erreurs peuvent également être introduites par les incohérences qui résultent des modifications apportées par les utilisateurs travaillant sur différentes parties d'un modèle. Pour plus d’informations, consultez [partager des modèles et exportation de diagrammes](../modeling/share-models-and-exporting-diagrams.md).
 
   Les erreurs de validation sont signalées dans la fenêtre des erreurs de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
@@ -58,7 +58,7 @@ Certains des modèles UML que vous pouvez dessiner dans Visual Studio peuvent ê
 
 #### <a name="to-disable-or-uninstall-a-visual-studio-extension"></a>Pour désactiver ou désinstaller une extension Visual Studio
 
-1. Dans le menu **Outils** de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], cliquez sur **extensions et mises à jour**.
+1. Dans le menu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **Outils**, cliquez sur **Extensions et mises à jour**.
 
 2. En regard de l’extension, cliquez sur **Désactiver** pour désactiver temporairement l’extension. Vous pouvez la réactiver ultérieurement en revenant à la fenêtre **extensions et mises à jour** .
 

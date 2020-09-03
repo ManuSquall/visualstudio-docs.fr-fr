@@ -15,10 +15,10 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 2e7e031836c9762d9666a5624e78ecc7c8cc7dd9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77275202"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Options, Éditeur de texte, C/C++, Avancé
@@ -52,7 +52,7 @@ La base de données de navigation du code ne collecte pas les données pour les 
 
 **Désactiver le nettoyage implicite**
 
-La base de données de navigation du code ne nettoie pas les fichiers implicites qui ne sont plus référencés. Cette option empêche les fichiers implicites d’être supprimés de la base de données quand ils ne sont plus utilisés. Par exemple, si vous ajoutez une directive `#include` qui référence mapi.h à l’un de vos fichiers sources, mapi.h est trouvé et indexé. Si vous supprimez ensuite la directive #include et que le fichier n’est pas référencé ailleurs, les informations le concernant sont supprimées, sauf si vous choisissez cette option. (Voir l’option **Réscan Solution Interval.)** Cette option est ignorée lorsque vous rescan explicitement la solution.
+La base de données de navigation du code ne nettoie pas les fichiers implicites qui ne sont plus référencés. Cette option empêche les fichiers implicites d’être supprimés de la base de données quand ils ne sont plus utilisés. Par exemple, si vous ajoutez une directive `#include` qui référence mapi.h à l’un de vos fichiers sources, mapi.h est trouvé et indexé. Si vous supprimez ensuite la directive #include et que le fichier n’est pas référencé ailleurs, les informations le concernant sont supprimées, sauf si vous choisissez cette option. (Voir l’option **intervalle de nouvelle analyse** de la solution.) Cette option est ignorée quand vous effectuez une nouvelle analyse de la solution de manière explicite.
 
 **Activer les dossiers de dépendances externes**
 
@@ -64,17 +64,17 @@ Recréez entièrement la base de données de navigation du code lors du prochain
 
 **Intervalle de nouvelle analyse de la solution**
 
-Un travail « Relancer l’analyse de la solution maintenant » est planifié pour l’intervalle que vous spécifiez. Vous devez spécifier une valeur entre 0 et 5 000 minutes. La valeur par défaut est 60 minutes. Pendant la nouvelle analyse de la solution, les horodateurs de fichiers sont vérifiés pour déterminer si un fichier a été modifié en dehors de l’IDE. (Les modifications apportées dans l’IDE sont automatiquement suivies et les fichiers sont mis à jour.) Les fichiers implicitement inclus sont vérifiés pour déterminer s’ils sont tous encore référencés.
+Un travail « Relancer l’analyse de la solution maintenant » est planifié pour l’intervalle que vous spécifiez. Vous devez spécifier une valeur entre 0 et 5 000 minutes. La valeur par défaut est 60 minutes. Pendant la nouvelle analyse de la solution, les horodateurs de fichiers sont vérifiés pour déterminer si un fichier a été modifié en dehors de l’IDE. (Les modifications apportées à l’IDE sont suivies automatiquement et les fichiers sont mis à jour.) Les fichiers inclus implicitement sont vérifiés pour déterminer s’ils sont toujours référencés.
 
 ## <a name="diagnostic-logging"></a>Journalisation des diagnostics
 
 Ces options sont fournies au cas où Microsoft vous demande de collecter des informations avancées pour diagnostiquer un problème. Les informations de journalisation ne sont pas utiles pour les utilisateurs, et nous vous recommandons de laisser cette option désactivée.
 
-**Activer l’enregistrement**
+**Activer la journalisation**
 
 Active la journalisation des diagnostics dans la fenêtre de sortie.
 
-**Niveau d’exploitation forestière**
+**Niveau de journalisation**
 
 Définir le niveau de détail du journal, de 0 à 5.
 
@@ -208,4 +208,4 @@ Si cette option est activée, vous pouvez entourer le texte sélectionné de par
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Définir des options d’éditeur spécifiques à la langue](../../ide/reference/setting-language-specific-editor-options.md)
+- [Définition des options de l’éditeur spécifiques à une langue](../../ide/reference/setting-language-specific-editor-options.md)

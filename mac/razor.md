@@ -8,10 +8,10 @@ ms.technology: vs-ide-general
 ms.assetid: F898CB6E-05ED-44CD-8DB6-427B2592CCC6
 ms.topic: how-to
 ms.openlocfilehash: 26575367d7aff2b92c64dc5d07068b4900b24e7f
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88249536"
 ---
 # <a name="create-razor-web-apps"></a>Créer des applications Web Razor
@@ -57,7 +57,7 @@ Les fichiers de prise en charge ont des noms commençant par un trait de soulign
 
 Le fichier *launchSettings.js* contient les paramètres IIS, l’URL de l’application et d’autres paramètres associés.
 
-### <a name="app-settings"></a>Paramètres d’application
+### <a name="app-settings"></a>Paramètres de l’application
 
 Le *appSettings.js* fichier contient des données de configuration telles que des chaînes de connexion.
 

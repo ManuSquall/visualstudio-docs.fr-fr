@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8a4ae5e4f6f21208f02cbfd6513b3c5eb28124a8
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350587"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>Diagnostiquer des problèmes après le déploiement à l’aide d’IntelliTrace (C#, Visual Basic)
@@ -233,7 +233,7 @@ Visual Studio 2017 et les versions ultérieures n’incluent pas le fichier *Bui
 
      [En quoi consistent tous les autres événements et informations du journal IntelliTrace ?](../debugger/using-saved-intellitrace-data.md)
 
-### <a name="what-else-can-i-do-from-here"></a><a name="WhatElse"></a>Que puis-je faire d’autre à partir d’ici ?
+### <a name="what-else-can-i-do-from-here"></a><a name="WhatElse"></a> Que puis-je faire d’autre à partir d’ici ?
 
 - [Obtenez plus d’informations sur ce code](../ide/find-code-changes-and-other-history-with-codelens.md). Pour trouver des références à ce code, son historique de modification, les bogues associés, les éléments de travail, les révisions du code ou les tests unitaires, le tout sans quitter l’éditeur, utilisez les indicateurs CodeLens de l’éditeur.
 
@@ -245,7 +245,7 @@ Visual Studio 2017 et les versions ultérieures n’incluent pas le fichier *Bui
 
      ![Mapper la pile d'appels pendant le débogage](../debugger/media/ffr_itsummarypageperformancedebuggermap.png "FFR_ITSummaryPagePerformanceDebuggerMap")
 
-### <a name="q--a"></a><a name="FAQ"></a>Q & A
+### <a name="q--a"></a><a name="FAQ"></a> Q & A
 
 #### <a name="q-why-include-information-about-my-project-source-control-build-and-symbols-with-my-release"></a><a name="WhyInclude"></a>Q : Pourquoi ajouter des informations sur mon projet, le contrôle de code source, la build et les symboles à ma version ?
  Visual Studio utilise ces informations pour trouver la solution et la source correspondant à la version que vous tentez de déboguer. Après avoir ouvert le journal IntelliTrace et sélectionné un événement pour démarrer le débogage, Visual Studio utilise des symboles pour trouver et vous indiquer le code où l’événement s’est produit. Vous pouvez alors examiner les valeurs enregistrées et avancer ou reculer dans l’exécution de votre code.
@@ -315,7 +315,7 @@ Visual Studio 2017 et les versions ultérieures n’incluent pas le fichier *Bui
     </SourceControl>
     ```
 
-- **Générer**
+- **Créer**
 
    Informations sur votre système de génération, `"TeamBuild"` ou `"MSBuild"`, et les propriétés requises suivantes :
 
@@ -356,7 +356,7 @@ Visual Studio 2017 et les versions ultérieures n’incluent pas le fichier *Bui
     </Build>
     ```
 
-#### <a name="q-why-does-visual-studio-say-my-selected-workspace-is-ineligible"></a><a name="IneligibleWorkspace"></a>Q : pourquoi Visual Studio indique-t-il que mon espace de travail sélectionné est inéligible ?
+#### <a name="q-why-does-visual-studio-say-my-selected-workspace-is-ineligible"></a><a name="IneligibleWorkspace"></a> Q : pourquoi Visual Studio indique-t-il que mon espace de travail sélectionné est inéligible ?
  **R :** L’espace de travail sélectionné ne possède aucun mappage entre le dossier de contrôle de code source et un dossier local. Pour créer un mappage de cet espace de travail, choisissez **Gérer**. Sinon, choisissez un espace de travail déjà mappé ou créez-en un.
 
  ![Ouvrir à partir du contrôle de code source sans espace de travail mappé](../debugger/media/ffr_openprojectfromsourcecontrol_notmapped.png "FFR_OpenProjectFromSourceControl_NotMapped")
