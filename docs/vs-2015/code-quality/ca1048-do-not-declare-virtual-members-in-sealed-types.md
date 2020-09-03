@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 19ae3a4fdc620343f18aa0845c33e1d73529adfe
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546794"
 ---
 # <a name="ca1048-do-not-declare-virtual-members-in-sealed-types"></a>CA1048 : Ne pas déclarer les membres virtuels dans les types sealed
@@ -32,7 +32,7 @@ ms.locfileid: "85546794"
 |Category|Microsoft. Design|
 |Modification avec rupture|Rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Un type public est sealed et déclare une méthode qui est à la fois `virtual` ( `Overridable` en Visual Basic) et non final. Cette règle ne signale pas de violations pour les types délégués, qui doivent suivre ce modèle.
 
 ## <a name="rule-description"></a>Description de la règle

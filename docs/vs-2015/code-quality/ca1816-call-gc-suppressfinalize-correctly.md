@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 532478a8d6ed6b88347d196b4a74b6f19a38ef85
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546768"
 ---
 # <a name="ca1816-call-gcsuppressfinalize-correctly"></a>CA1816 : Appeler GC.SuppressFinalize correctement
@@ -29,10 +29,10 @@ ms.locfileid: "85546768"
 |-|-|
 |TypeName|CallGCSuppressFinalizeCorrectly|
 |CheckId|CA1816|
-|Category|Microsoft. Utilisation|
+|Category|Microsoft. Usage|
 |Modification avec rupture|Sans rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
 
 - Une méthode qui est une implémentation de <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> n’appelle pas <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> .
 
@@ -41,7 +41,7 @@ ms.locfileid: "85546768"
 - Une méthode appelle <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> et passe autre chose que this (me dans Visual Basic).
 
 ## <a name="rule-description"></a>Description de la règle
- La <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> méthode permet aux utilisateurs de libérer des ressources à tout moment avant que l’objet devienne disponible pour garbage collection. Si la <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> méthode est appelée, elle libère les ressources de l’objet. La finalisation n’est donc pas nécessaire. <xref:System.IDisposable.Dispose%2A?displayProperty=fullName>doit appeler <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> afin que le garbage collector n’appelle pas le finaliseur de l’objet.
+ La <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> méthode permet aux utilisateurs de libérer des ressources à tout moment avant que l’objet devienne disponible pour garbage collection. Si la <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> méthode est appelée, elle libère les ressources de l’objet. La finalisation n’est donc pas nécessaire. <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> doit appeler <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> afin que le garbage collector n’appelle pas le finaliseur de l’objet.
 
  Pour empêcher les types dérivés avec finaliseurs d’avoir à réimplémenter [System. IDisposable] (<!-- TODO: review code entity reference <xref:assetId:///System.IDisposable?qualifyHint=True&amp;autoUpgrade=False>  -->) et pour l’appeler, les types non scellés sans finaliseurs doivent toujours appeler <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> .
 

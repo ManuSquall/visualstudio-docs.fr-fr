@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplierDescription2 - France Microsoft Docs
+title: IDebugPortSupplierDescription2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 69853e34788a2f24afe183dfbb7070e48f14aa46
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724358"
 ---
 # <a name="idebugportsupplierdescription2"></a>IDebugPortSupplierDescription2
-Permet [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] à l’interface utilisateur d’afficher du texte à l’intérieur de la section **Informations sur** les transports de la boîte de dialogue Attach **to Process.**
+Permet [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] à l’interface utilisateur d’afficher du texte dans la section **informations de transport** de la boîte de dialogue **attacher au processus** .
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -27,18 +27,18 @@ IDebugPortSupplierDescription2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Notes pour les implémenteurs
- Cette interface est mise en œuvre par les fournisseurs portuaires.
+ Cette interface est implémentée par les fournisseurs de port.
 
 ## <a name="methods"></a>Méthodes
- Le tableau suivant montre `IDebugPortSupplierDescription2`les méthodes de .
+ Le tableau suivant présente les méthodes de `IDebugPortSupplierDescription2` .
 
 |Méthode|Description|
 |------------|-----------------|
-|[GetDescription (en)](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md)|Récupère les métadonnées de description et de description pour le fournisseur du port.|
+|[GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md)|Récupère la description et les métadonnées de description pour le fournisseur de port.|
 
-## <a name="requirements"></a>Spécifications
- En-tête: Msdbg.h
+## <a name="requirements"></a>Configuration requise
+ En-tête : msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Espace de noms : Microsoft. VisualStudio. Debugger. Interop
 
- Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll

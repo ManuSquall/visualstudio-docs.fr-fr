@@ -16,13 +16,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 99f2b67d264edcaab5272d0224d4450ee2e8a6f6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74297159"
 ---
-# <a name="uml-component-diagrams-guidelines"></a>Diagrammes de composants UML : instructions
+# <a name="uml-component-diagrams-guidelines"></a>Diagrammes de composants UML : indications
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Dans Visual Studio, vous pouvez dessiner un *diagramme de composant* pour afficher la structure d’un système logiciel. Pour une démonstration vidéo, consultez [conception de la structure physique à l’aide de diagrammes de composants](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-6-designing-a-projects-physical-structure).
@@ -41,17 +41,17 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de composant* pour affich
 
   Vous pouvez utiliser un diagramme de composant pour représenter votre conception, indépendamment du langage ou de la plateforme que la conception utilise ou utilisera.
 
-## <a name="OtherDiagrams"></a>Relation avec d’autres diagrammes
+## <a name="relationship-to-other-diagrams"></a><a name="OtherDiagrams"></a> Relation avec d’autres diagrammes
  Vous pouvez utiliser un diagramme de composant avec d'autres diagrammes.
 
 |Autre diagramme|Permet d'évoquer et de communiquer ces aspects de votre conception|
 |-------------------|--------------------------------------------------------------------|
 |Diagramme de séquence UML|-Interactions entre les composants d’un système<br />-Interactions entre les parties à l’intérieur d’un composant.<br /><br /> Pour plus d’informations, consultez [diagrammes de séquence UML : indications](../modeling/uml-sequence-diagrams-guidelines.md).|
-|Diagramme de classes UML|-Interfaces d’un composant. Le diagramme de classes vous permet de détailler les méthodes de l'interface.<br />-Les données envoyées dans les paramètres à travers les interfaces des composants.<br /><br /> Pour plus d’informations, consultez [diagrammes de classes UML : indications](../modeling/uml-class-diagrams-guidelines.md).|
+|Diagramme de classes UML|-Interfaces d’un composant. Le diagramme de classes vous permet de détailler les méthodes de l'interface.<br />-Les données envoyées dans les paramètres à travers les interfaces des composants.<br /><br /> Pour plus d’informations, consultez [diagrammes de classes UML : indications](../modeling/uml-class-diagrams-guidelines.md).|
 |Diagrammes d'activités|: Traitement interne effectué par un composant en réponse à des messages entrants.<br /><br /> Pour plus d’informations, consultez [diagrammes d’activités UML : indications](../modeling/uml-activity-diagrams-guidelines.md).|
 |Diagrammes de couche|-Niveaux architecturaux logiques de vos composants.<br /><br /> Pour plus d’informations, consultez [diagrammes de couche : référence](../modeling/layer-diagrams-reference.md).|
 
-## <a name="Basics"></a>Étapes de base pour dessiner des diagrammes de composants
+## <a name="basic-steps-for-drawing-component-diagrams"></a><a name="Basics"></a> Étapes de base pour dessiner des diagrammes de composants
  Pour obtenir des informations de référence sur les éléments des diagrammes de composants, consultez [diagrammes de composants UML : référence](../modeling/uml-component-diagrams-reference.md).
 
  Pour plus d’informations sur l’utilisation des diagrammes de composants dans le processus de conception, consultez [modéliser l’architecture de votre application](../modeling/model-your-app-s-architecture.md).
@@ -146,7 +146,7 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de composant* pour affich
 
 - Recherchez l’interface dans l' **Explorateur de modèles UML** , puis faites-la glisser vers le composant.
 
-     -ou-
+     - ou -
 
 - Copiez et collez une référence vers une interface à partir d'un diagramme.
 
@@ -161,8 +161,8 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de composant* pour affich
 
     3. Si vous souhaitez créer une interface requise, cliquez sur la balise d’action, puis sur **convertir en interface requise**.
 
-## <a name="Parts"></a>Indication des parties internes d’un composant
- ![Diagramme de composant montrant des parties internes](../modeling/media/uml-compshowing.png "UML_CompShowing")
+## <a name="showing-the-internal-parts-of-a-component"></a><a name="Parts"></a> Indication des parties internes d’un composant
+ ![Diagramme de composant montrant des composants internes](../modeling/media/uml-compshowing.png "UML_CompShowing")
 
  Vous pouvez placer des parties (3) dans un composant (1) pour montrer qu'il se compose de plus petits composants qui interagissent entre eux.
 
@@ -255,7 +255,7 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de composant* pour affich
 
      Vous pouvez maintenant y ajouter des parties.
 
-## <a name="Designing"></a>Conception du composant
+## <a name="designing-the-component"></a><a name="Designing"></a> Conception du composant
 
 ### <a name="describing-how-the-parts-collaborate"></a>Description de la collaboration des parties
  Vous pouvez dessiner un diagramme de séquences pour montrer comment les parties collaborent, en réponse à un message qui arrive dans le composant parent.
@@ -270,7 +270,7 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de composant* pour affich
 
 - Si le travail est trop uniformément réparti et que de nombreuses interactions sont présentes, il se peut que le système s'exécute de manière incorrecte et qu'il soit difficile à comprendre.
 
-  ![Diagramme de séquence montrant des parties de collaboration](../modeling/media/uml-compdescparts.png "UML_CompDescParts")
+  ![Diagramme de séquence affichant des composants de collaboration](../modeling/media/uml-compdescparts.png "UML_CompDescParts")
 
 ##### <a name="to-draw-a-sequence-diagram-that-shows-collaboration-between-parts"></a>Pour dessiner un diagramme de séquences qui affiche une collaboration entre les différentes parties
 
@@ -300,7 +300,7 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de composant* pour affich
 ### <a name="describing-the-process-inside-each-part"></a>Description du processus à l'intérieur de chaque partie
  Vous pouvez utiliser des diagrammes d'activités pour montrer comment un composant traite chaque message entrant. Pour plus d’informations, consultez [diagrammes d’activités UML : indications](../modeling/uml-activity-diagrams-guidelines.md).
 
- ![Diagramme d’activités avec mémoire tampon de données](../modeling/media/uml-compdescribingproc.png "UML_CompDescribingProc")
+ ![Diagramme d'activités avec tampon de données](../modeling/media/uml-compdescribingproc.png "UML_CompDescribingProc")
 
  Utilisez une action Accepter un événement (1) pour montrer qu'un message entrant démarre un nouveau thread.
 
@@ -318,7 +318,7 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de composant* pour affich
 ### <a name="general-dependencies-between-components"></a>Dépendances générales entre composants
  Vous ne pouvez utiliser un diagramme de composant que pour afficher les principales parties de votre conception et leurs interdépendances.
 
- ![Une dépendance entre les composants](../modeling/media/uml-compdepend.png "UML_CompDepend")
+ ![Dépendance entre composants](../modeling/media/uml-compdepend.png "UML_CompDepend")
 
  Utilisez l’outil de **dépendance** pour dessiner une dépendance. Cela indique que la conception d'un composant compte sur un autre.
 
