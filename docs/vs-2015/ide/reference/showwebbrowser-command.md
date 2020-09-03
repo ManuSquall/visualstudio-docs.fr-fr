@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1ecf86bdc7516f05935bd944f23633b3baad2c7c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663520"
 ---
 # <a name="showwebbrowser-command"></a>Afficher le navigateur Web, commande
@@ -40,10 +40,10 @@ View.ShowWebBrowser URL [/new][/ext]
 
  /ext (facultatif). Spécifie que la page s’affiche dans le navigateur web par défaut en dehors de l’IDE.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  L’alias de la commande **ShowWebBrowser** est **navigate** ou **nav**.
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
  L’exemple suivant affiche la page d’accueil de MSDN Online dans un navigateur web en dehors de l’IDE. Si une instance du navigateur web est déjà ouverte, elle est utilisée ; sinon, une nouvelle instance est démarrée.
 
 ```

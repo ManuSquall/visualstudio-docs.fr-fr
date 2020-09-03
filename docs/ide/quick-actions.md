@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 2ce8ce85e027a7ed7f78d0da1f68f328c1ca103d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75596955"
 ---
 # <a name="quick-actions"></a>Actions rapides
@@ -23,28 +23,28 @@ Les actions rapides vous permettent de refactoriser, générer ou modifier facil
 
 Les actions rapides peuvent servir à :
 
-- Appliquer un correctif de code pour une violation de règle [d’analyseur de code](../code-quality/roslyn-analyzers-overview.md)
+- Appliquer un correctif de code pour une violation de règle de l' [Analyseur de code](../code-quality/roslyn-analyzers-overview.md)
 
 ::: moniker range=">=vs-2019"
 
-- [Supprimer](../code-quality/use-roslyn-analyzers.md#suppress-violations) une violation de règle d’analyseur de code ou [configurer](../code-quality/use-roslyn-analyzers.md#automatically-configure-rule-severity) sa sévérité
+- [Supprimer](../code-quality/use-roslyn-analyzers.md#suppress-violations) une violation de règle de l’analyseur de code ou [configurer](../code-quality/use-roslyn-analyzers.md#automatically-configure-rule-severity) sa gravité
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-- [Supprimer](../code-quality/use-roslyn-analyzers.md#suppress-violations) une violation de la règle de l’analyseur de code
+- [Supprimer](../code-quality/use-roslyn-analyzers.md#suppress-violations) une violation de règle de l’analyseur de code
 
 ::: moniker-end
 
-- Appliquer une refactoration (par exemple, [en ligne une variable temporaire](../ide/reference/inline-temporary-variable.md))
+- Appliquer une refactorisation (par exemple, [inline une variable temporaire](../ide/reference/inline-temporary-variable.md))
 
 - Générer du code (par exemple, [introduire une variable locale](../ide/reference/introduce-local-variable.md))
 
 > [!NOTE]
 > Cette rubrique s’applique à Visual Studio sur Windows. Pour Visual Studio pour Mac, consultez [Refactorisation (Visual Studio pour Mac)](/visualstudio/mac/refactoring).
 
-Actions rapides peuvent être appliquées ![en](media/light-bulb-icon.png) utilisant ![l’icône ampoule](media/screwdriver-icon.png) ampoule ou tournevis icônes icônes, ou en appuyant sur **Ctrl**+**.** lorsque le curseur se trouve sur une ligne de code pour laquelle une action est disponible. Vous voyez une ampoule d’erreur ![icône en forme d’ampoule d’erreur](media/error-light-bulb-icon.png) s’il existe une ligne ondulée rouge indiquant une erreur, pour laquelle Visual Studio met à disposition un correctif.
+Les actions rapides peuvent être appliquées à l’aide de l’icône d’ampoule de l’ampoule ou des icônes de l' ![ ](media/light-bulb-icon.png) icône du tournevis Tournevis ![ ](media/screwdriver-icon.png) , ou en appuyant sur **CTRL** + **.** lorsque le curseur se trouve sur une ligne de code pour laquelle une action est disponible. Vous voyez une ampoule d’erreur ![icône en forme d’ampoule d’erreur](media/error-light-bulb-icon.png) s’il existe une ligne ondulée rouge indiquant une erreur, pour laquelle Visual Studio met à disposition un correctif.
 
 Des éditeurs tiers peuvent fournir des diagnostics et des suggestions personnalisés pour n’importe quel langage, par exemple dans le cadre d’un Kit de développement logiciel (SDK). Dans ce cas, les ampoules Visual Studio s’affichent en fonction des règles établies.
 
@@ -62,7 +62,7 @@ Si un correctif est disponible, les ampoules apparaissent :
 
 - Dans la marge gauche de l’éditeur lorsque vous déplacez le point d’insertion (curseur) dans la ligne de code concernée
 
-Vous pouvez également appuyer sur **Ctrl**+**.** n’importe où sur une ligne pour afficher la liste des actions rapides et refactorisations disponibles.
+Vous pouvez également appuyer sur **CTRL** + **.** n’importe où sur une ligne pour afficher la liste des actions rapides et refactorisations disponibles.
 
 Pour afficher les corrections éventuelles, sélectionnez la flèche vers le bas en regard de l’ampoule ou le lien **Afficher les corrections éventuelles**. Une liste des actions rapides disponibles s’affiche.
 

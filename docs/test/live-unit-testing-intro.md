@@ -11,30 +11,30 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 3f3a5e97153997908a0360bc123fd1b88fb5c009
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75596838"
 ---
-# <a name="live-unit-testing-overview"></a>Aperçu des tests d’unités en direct
+# <a name="live-unit-testing-overview"></a>Présentation de Live Unit Testing
 
-Live Unit Testing exécute vos tests unitaires automatiquement et en temps réel lorsque vous modifiez le code. Cela vous permet de refactorer et de changer de code avec une plus grande confiance. Live Unit Testing exécute automatiquement tous les tests impactés lorsque vous modifiez votre code pour vous assurer que vos modifications n’introduisent pas de régressions.
+Live Unit Testing exécute vos tests unitaires automatiquement et en temps réel à mesure que vous apportez des modifications au code. Cela vous permet de refactoriser et de modifier le code avec une plus grande confiance. Live Unit Testing exécute automatiquement tous les tests impactés au fur et à mesure que vous modifiez votre code pour vous assurer que vos modifications n’introduisent pas de régressions.
 
-Live Unit Testing indique si vos tests unitaires couvrent adéquatement votre code. Il représente graphiquement la couverture du code en temps réel. Vous pouvez voir en un coup d’œil combien de tests couvrent chaque ligne de code et quelles lignes ne sont pas couvertes par des tests unitaires.
+Live Unit Testing indique si vos tests unitaires couvrent correctement votre code. Il représente graphiquement la couverture du code en temps réel. Vous pouvez voir d’un coup d’œil le nombre de tests couvrant chaque ligne de code et les lignes qui ne sont pas couvertes par les tests unitaires.
 
-Si vous disposez d’une solution qui comprend un ou plusieurs projets de test unitaire, vous pouvez activer le test d’unité en direct en sélectionnant **Test** > **Live Unit Testing** > **Start** à partir de la barre de menu haut de gamme de Visual Studio.
+Si vous disposez d’une solution qui comprend un ou plusieurs projets de test unitaire, vous pouvez activer Live Unit testing en sélectionnant **test**  >  **Live Unit testing**  >  **Démarrer** à partir de la barre de menus de niveau supérieur dans Visual Studio.
 
 > [!NOTE]
 > Live Unit Testing n’est disponible que dans l’édition Visual Studio Enterprise.
 
 Pour en savoir plus sur Live Unit Testing :
 
-- Essayez un tutoriel d’introduction: [Démarrer avec Live Unit Testing](live-unit-testing-start.md).
+- Essayez un didacticiel de présentation : [prise en main de Live Unit testing](live-unit-testing-start.md).
 
-- Lire la documentation détaillée: [Utilisez Live Unit Testing avec Visual Studio Enterprise Edition](live-unit-testing.md).
+- Lire la documentation détaillée : [utilisez Live Unit testing avec l’édition Visual Studio Enterprise](live-unit-testing.md).
 
-- Lisez la [FAQ de test d’unité en direct](live-unit-testing-faq.md) pour savoir ce qui est nouveau dans les tests d’unité en direct ainsi que les conseils et les techniques.
+- Lisez le [FAQ Live Unit testing](live-unit-testing-faq.md) pour découvrir les nouveautés de Live Unit testing, ainsi que les conseils et les techniques.
 
 - Regardez la vidéo de Channel 9 pour une vue d’ensemble de Live Unit Testing et de ses fonctionnalités.</p>
 

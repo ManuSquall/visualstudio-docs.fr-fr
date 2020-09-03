@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::DoesInterfaceExist | Microsoft Docs
+title: IDebugClassField ::D oesInterfaceExist | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9f71346c1b69729ae54ef0d33be4149e7000316c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68191125"
 ---
 # <a name="idebugclassfielddoesinterfaceexist"></a>IDebugClassField::DoesInterfaceExist
@@ -40,13 +40,13 @@ int DoesInterfaceExist(
   
 #### <a name="parameters"></a>Paramètres  
  `pszInterfaceName`  
- [in] Chaîne contenant le nom de l’interface à rechercher.  
+ dans Chaîne contenant le nom de l’interface à rechercher.  
   
-## <a name="return-value"></a>Valeur de retour  
+## <a name="return-value"></a>Valeur renvoyée  
  En cas de réussite, retourne S_OK, retourne S_FALSE si l’interface n’existe pas ; Sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- En effet, cette méthode obtient une énumération de toutes les interfaces et recherche dans la liste pour une interface correspondant.  
+ Cette méthode obtient une énumération de toutes les interfaces et recherche une interface correspondante dans la liste.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

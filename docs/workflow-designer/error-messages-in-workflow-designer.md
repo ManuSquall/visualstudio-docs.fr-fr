@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 72592d21fdaba1ef47a15a113c820dffe0ba71eb
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75597046"
 ---
 # <a name="error-messages-in-workflow-designer"></a>Messages d'erreur dans Workflow Designer
@@ -35,7 +35,7 @@ Les erreurs dans Concepteur de flux de travail se produisent dans les cas suivan
 
 4. Le fichier XAML contient des erreurs qui provoquent l'échec du chargement du workflow.
 
-Des expressions non valides et des contraintes de validation non satisfaites n’entraînent pas l’échec de la génération du workflow. La génération de votre flux de travail s’effectue correctement, mais une <xref:System.Activities.InvalidWorkflowException> est levée au moment de l’exécution. Si le fichier XAML contient des erreurs, la génération échoue.
+Des expressions non valides et des contraintes de validation non satisfaites n’entraînent pas l’échec de la génération du workflow. La génération de votre flux de travail s’effectue correctement, mais une exception <xref:System.Activities.InvalidWorkflowException> est levée au moment de l’exécution. Si le fichier XAML contient des erreurs, la génération échoue.
 
 Dans Visual Studio, lorsqu’un flux de travail est chargé, ses erreurs sont affichées dans la **liste d’erreurs**. Pour accéder à l’activité qui est la source de l’erreur, double-cliquez sur l’erreur dans la **liste d’erreurs**.
 
