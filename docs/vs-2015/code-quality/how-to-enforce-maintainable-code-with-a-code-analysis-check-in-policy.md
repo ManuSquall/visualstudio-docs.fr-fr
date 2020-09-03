@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 0d54ca9a31e8a1bbd2496bf8689a119e53580c79
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660216"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Comment : appliquer du code facile à maintenir avec une stratégie d’archivage de l’analyse du code
@@ -25,7 +25,7 @@ Les développeurs peuvent utiliser l’outil de métrique du code pour mesurer l
 
  Les développeurs peuvent activer la profondeur d’héritage, le couplage de classe, l’index de maintenabilité et les règles de complexité pour appliquer du code gérable grâce à des stratégies d’archivage de l’analyse du code. Ces quatre règles se trouvent sous la catégorie « règles de maintenabilité » dans l’éditeur de stratégie d’analyse du code.
 
- Les administrateurs du contrôle de version pour les [!INCLUDE[esprfound](../includes/esprfound-md.md)] peuvent ajouter les règles de maintenabilité de l’analyse du code aux spécifications de la stratégie d’archivage. Ces stratégies d’archivage requièrent que les développeurs exécutent l’analyse du code en fonction de ces modifications de règles avant d’initier un archivage.
+ Les administrateurs du contrôle de version pour [!INCLUDE[esprfound](../includes/esprfound-md.md)] peuvent ajouter les règles de maintenabilité de l’analyse du code aux spécifications de la stratégie d’archivage. Ces stratégies d’archivage requièrent que les développeurs exécutent l’analyse du code en fonction de ces modifications de règles avant d’initier un archivage.
 
 ### <a name="to-open-the-code-analysis-policy-editor"></a>Pour ouvrir l’éditeur de stratégie d’analyse du code
 

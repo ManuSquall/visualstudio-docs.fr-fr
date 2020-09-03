@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::EnableAutoAttach ( Microsoft Docs
+title: 'IDebugCoreServer3 :: EnableAutoAttach | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d529bb80f79a3f2972e9349a2679bb528cc10463
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732908"
 ---
 # <a name="idebugcoreserver3enableautoattach"></a>IDebugCoreServer3::EnableAutoAttach
-Permet l’attachement automatique pour les moteurs de débogé spécifiés.
+Active l’attachement automatique pour les moteurs de débogage spécifiés.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -47,22 +47,22 @@ int EnableAutoAttach(
 
 ## <a name="parameters"></a>Paramètres
 `rgguidSpecificEngines`\
-[dans] Array de GUIDs pour chaque moteur de débogé à la marque comme auto-attachement.
+dans Tableau de GUID pour chaque moteur de débogage à marquer comme attachement automatique.
 
 `celtSpecificEngines`\
-[dans] Le nombre de `rgguidSpecificEngines`moteurs spécifiés dans .
+dans Nombre de moteurs spécifiés dans `rgguidSpecificEngines` .
 
 `pszStartPageUrl`\
-[dans] L’URL de départ à utiliser lors de l’auto-fixation.
+dans URL de début à utiliser lors de l’attachement automatique.
 
 `pbstrSessionID`\
-[out] ID de la session qui était auto-joint.
+à ID de la session qui a été attachée automatiquement.
 
-## <a name="return-value"></a>Valeur de retour
- En cas `S_OK`de succès, les retours; retourne autrement le code d’erreur. Un code `E_AUTO_ATTACH_NOT_REGISTERED`d’erreur est , ce qui indique que l’usine de classe de joint automatique n’a pas été enregistrée.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` ; sinon, retourne le code d’erreur. Un code d’erreur est `E_AUTO_ATTACH_NOT_REGISTERED` , qui indique que la fabrique de classe d’attachement automatique n’a pas été inscrite.
 
 ## <a name="remarks"></a>Notes
- Lorsqu’un programme associé à l’URL spécifiée est lancé, les moteurs de débogé spécifiés sont automatiquement démarrés et fixés.
+ Lorsqu’un programme associé à l’URL spécifiée est démarré, les moteurs de débogage spécifiés sont automatiquement démarrés et attachés.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

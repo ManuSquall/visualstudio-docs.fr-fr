@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Utiliser les API du profileur | Microsoft Docs'
+title: 'Procédure pas à pas : utilisation des API du profileur | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,13 +13,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d5fc0f5a11d29fdb1ee570dc32066fdd492ed8db
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68871536"
 ---
-# <a name="walkthrough-using-profiler-apis"></a>Procédure pas à pas : Utilisation des API du profileur
+# <a name="walkthrough-using-profiler-apis"></a>Procédure pas à pas : utilisation des API du profileur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La procédure pas à pas utilise une application C# pour montrer comment utiliser les API des outils de profilage [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Vous utilisez les API du profileur pour limiter la quantité de données collectées pendant le profilage par instrumentation.
@@ -34,12 +34,12 @@ La procédure pas à pas utilise une application C# pour montrer comment utilise
 
  Pour le code natif, les API du profileur Visual Studio se trouvent dans VSPerf.dll. Le fichier d’en-tête, VSPerf.h, et la bibliothèque d’importation, VSPerf.lib, se trouvent dans le répertoire Microsoft Visual Studio 9\Team Tools\Performance Tools.
 
- Pour le code managé, les API du profileur se trouvent dans Microsoft.VisualStudio.Profiler.dll. Cette DLL se trouve dans le répertoire Microsoft Visual Studio 9\Team Tools\Performance Tools. Pour plus d’informations, consultez [Profiler](/previous-versions/ms242704(v=vs.140)).
+ Pour le code managé, les API du profileur se trouvent dans Microsoft.VisualStudio.Profiler.dll. Cette DLL se trouve dans le répertoire Microsoft Visual Studio 9\Team Tools\Performance Tools. Pour plus d'informations, consultez [Profiler](/previous-versions/ms242704(v=vs.140)).
 
 ## <a name="prerequisites"></a>Prérequis
  Cette procédure pas à pas suppose que votre environnement de développement est configuré pour prendre en charge le débogage et l’échantillonnage. Les rubriques suivantes fournissent une vue d’ensemble de ces prérequis :
 
- [Guide pratique : choisir des méthodes de collecte](../profiling/how-to-choose-collection-methods.md)
+ [Guide pratique pour choisir une méthode de collecte](../profiling/how-to-choose-collection-methods.md)
 
  [Guide pratique pour référencer les informations de symboles Windows](../profiling/how-to-reference-windows-symbol-information.md)
 
@@ -147,9 +147,9 @@ DataCollection.CurrentId);
 
      **VsPefCLREnv /traceon**
 
-3. Tapez la commande suivante : **VSInstr \<nom_fichier>.exe**
+3. Tapez la commande suivante :**VSInstr \<filename> . exe**
 
-4. Tapez la commande suivante : **VSPerfCmd /start:trace /output:\<nom_fichier>.vsp**
+4. Tapez la commande suivante :**VSPerfCmd/start : trace/output : \<filename> . vsp**
 
 5. Tapez la commande suivante : **VSPerfCmd /globaloff**
 
@@ -157,13 +157,13 @@ DataCollection.CurrentId);
 
 7. Tapez la commande suivante : **VSPerfCmd /shutdown**
 
-8. Tapez la commande suivante : **VSPerfReport /calltrace:\<nom_fichier>.vsp**
+8. Tapez la commande suivante :**VSPerfReport/calltrace : \<filename> . vsp**
 
      Un fichier .csv est créé dans le répertoire actif avec les données de performances résultantes.
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Profiler](/previous-versions/ms242704(v=vs.140))
-- [Informations de référence sur l’API du profileur Visual Studio (native)](../profiling/visual-studio-profiler-api-reference-native.md)
+- [Informations de référence sur l’API du profileur Visual Studio (natif)](../profiling/visual-studio-profiler-api-reference-native.md)
 - [Prise en main](../profiling/getting-started-with-performance-tools.md)
 - [Profilage à partir de la ligne de commande](../profiling/using-the-profiling-tools-from-the-command-line.md)

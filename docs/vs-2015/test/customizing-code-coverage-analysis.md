@@ -9,10 +9,10 @@ caps.latest.revision: 18
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f2a78c10b125379d1b4aa284d4b2ff6e999b80f0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660599"
 ---
 # <a name="customizing-code-coverage-analysis"></a>Personnalisation de l'analyse de couverture du code
@@ -53,9 +53,9 @@ Par défaut, l’outil de couverture de Visual Studio Code 2012 analyse tous le
 
 5. Pour activer ou désactiver les paramètres personnalisés, désélectionnez ou sélectionnez le fichier dans le menu **Test**, **Paramètres de test**.
 
-   ![Menu des paramètres de test avec le fichier de paramètres personnalisés](../test/media/codecoverage-settingsfile.png "CodeCoverage-settingsFile")
+   ![Menu Paramètres de test avec le fichier de paramètres de test](../test/media/codecoverage-settingsfile.png "CodeCoverage-settingsFile")
 
-   D'autres aspects des tests unitaires peuvent être configurés dans le même fichier .runsettings. Pour plus d'informations, consultez [Unit Test Your Code](../test/unit-test-your-code.md).
+   D'autres aspects des tests unitaires peuvent être configurés dans le même fichier .runsettings. Pour plus d’informations, consultez [Tests unitaires sur votre code](../test/unit-test-your-code.md).
 
 ### <a name="specifying-symbol-search-paths"></a>Spécification des chemins de recherche de symboles
  La couverture du code requiert que des symboles (.pdb) pour les assemblys soient présents. Pour les assemblys générés par votre solution, les fichiers de symboles sont généralement présents à côté des fichiers binaires, et la couverture du code s'exécute automatiquement. Mais, dans certains cas, vous pouvez inclure les assemblys référencés dans votre analyse de couverture du code. Dans ce cas, les fichiers .pdb peuvent ne pas être adjacents aux fichiers binaires, mais vous pouvez spécifier le chemin de recherche de symboles dans le fichier .runsettings.
@@ -72,7 +72,7 @@ Par défaut, l’outil de couverture de Visual Studio Code 2012 analyse tous le
 > La résolution de symboles peut prendre du temps, surtout lorsque vous utilisez un emplacement de fichier distant avec de nombreux assemblys. Par conséquent, envisagez de copier les fichiers distants .pdb au même emplacement local que les fichiers binaires (.dll et .exe).
 
 ### <a name="excluding-and-including"></a>Exclusion et inclusion
- Vous pouvez exclure les assemblys spécifiés de l'analyse de couverture du code. Exemple :
+ Vous pouvez exclure les assemblys spécifiés de l'analyse de couverture du code. Par exemple :
 
 ```minterastlib
 <ModulePaths>
@@ -99,23 +99,23 @@ Par défaut, l’outil de couverture de Visual Studio Code 2012 analyse tous le
  `Include` est traité avant `Exclude`.
 
 ### <a name="regular-expressions"></a>Expressions régulières
- Les nœuds inclure et exclure utilisent des expressions régulières. Pour plus d’informations, consultez [Utilisation d’expressions régulières dans Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Les expressions régulières ne sont pas l'équivalent des caractères génériques. En particulier :
+ Les nœuds inclure et exclure utilisent des expressions régulières. Pour plus d’informations, consultez [Utilisation d’expressions régulières dans Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Les expressions régulières ne sont pas l'équivalent des caractères génériques. En particulier :
 
-1. **\.\\** * correspond à une chaîne de caractères
+1. **\.\\*** correspond à une chaîne de n’importe quel caractère
 
 2. **\\.** correspond à un point « . »
 
-3. **\\(   \\)** correspond à des parenthèses « (  ) »
+3. ** \\ ( \\ )** correspond aux parenthèses « () »
 
-4. **\\\\** correspond à un séparateur de chemin de fichier « \\ »
+4. **\\\\** correspond à un délimiteur de chemin d’accès de fichier « \\ »
 
 5. **^** correspond au début de la chaîne
 
-6. **$** correspond la fin de la chaîne
+6. **$** correspond à la fin de la chaîne
 
    Les correspondances ne respectent pas la casse.
 
-   Exemple :
+   Par exemple :
 
 ```xml
 <ModulePaths>
@@ -153,7 +153,7 @@ Par défaut, l’outil de couverture de Visual Studio Code 2012 analyse tous le
 
   **Correspondance avec un nom de fonction**
 
-  Votre expression régulière doit correspondre au nom qualifié complet de la fonction, y compris l'espace de noms, le nom de la classe, le nom de méthode et la liste de paramètres. Par exemple :
+  Votre expression régulière doit correspondre au nom qualifié complet de la fonction, y compris l'espace de noms, le nom de la classe, le nom de méthode et la liste de paramètres. Par exemple,
 
 - C# ou Visual Basic : `Fabrikam.Math.LocalMath.SquareRoot(double)`
 
@@ -194,7 +194,7 @@ Par défaut, l’outil de couverture de Visual Studio Code 2012 analyse tous le
 ### <a name="to-customize-run-settings-in-a-build-definition"></a>Pour personnaliser des paramètres d'exécution dans une définition de build
  Vous pouvez obtenir des données de couverture du code depuis une build d’équipe.
 
- ![Spécification de RunSettings dans une définition de build](../test/media/codecoverage-buildrunsettings.png "CodeCoverage-buildRunsettings")
+ ![Spécification des paramètres d'exécution dans une définition de build](../test/media/codecoverage-buildrunsettings.png "CodeCoverage-buildRunsettings")
 
 1. Assurez-vous que votre fichier .runsettings est archivé.
 
@@ -208,7 +208,7 @@ Par défaut, l’outil de couverture de Visual Studio Code 2012 analyse tous le
 
    Les résultats sont visibles dans la section de résumé du rapport de build.
 
-## <a name="sample"></a> Exemple de fichier runsettings
+## <a name="sample-runsettings-file"></a><a name="sample"></a> Exemple de fichier runsettings
  Copiez ce code et modifiez-le selon vos besoins. Il s'agit du fichier .runsettings par défaut.
 
  (Pour connaître d’autres utilisations du fichier .runsettings, consultez [Configurer des tests unitaires à l’aide d’un fichier .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).)

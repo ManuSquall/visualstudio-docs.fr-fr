@@ -9,10 +9,10 @@ caps.latest.revision: 12
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c2bd087dc0b06cbf8ffe4c08f84d819e8ef1c2f8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660511"
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>Installer des frameworks de tests unitaires tierces
@@ -20,7 +20,7 @@ ms.locfileid: "72660511"
 
 L'Explorateur de tests Visual Studio peut exécuter n'importe quel framework de tests unitaires ayant développé une interface d'adaptateur pour l'Explorateur. Le programme d'installation du framework installe les fichiers binaires et ajoute des modèles de projet Visual Studio pour les langages qu'il prend en charge. Lorsque vous créez un projet avec le modèle, le framework est inscrit avec l'Explorateur de tests. Une solution Visual Studio peut contenir des projets de test unitaire qui utilisent des frameworks différents et qui sont destinés à des langages différents. L'Explorateur de tests les exécute tous.
 
- **Prérequis**
+ **Configuration requise**
 
 - Visual Studio Enterprise, Visual Studio Professional
 
@@ -37,7 +37,7 @@ L'Explorateur de tests Visual Studio peut exécuter n'importe quel framework de 
 
 4. Sélectionnez le framework, puis choisissez **Télécharger**.
 
-   Pour plus d’informations, consultez [Recherche et utilisation des extensions Visual Studio](../ide/finding-and-using-visual-studio-extensions.md).
+   Pour plus d’informations [, consultez recherche et utilisation des extensions Visual Studio](../ide/finding-and-using-visual-studio-extensions.md).
 
 ### <a name="installing-from-the-web"></a>Installation à partir du web
  Si vous savez quel framework vous intéresse :
@@ -59,4 +59,4 @@ L'Explorateur de tests Visual Studio peut exécuter n'importe quel framework de 
 7. Choisissez un framework dans la liste des résultats pour accéder à une page de la galerie Visual Studio correspondant à l'outil.
 
 ## <a name="see-also"></a>Voir aussi
- [Tests unitaires de votre code](../test/unit-test-your-code.md)
+ [Tests unitaires sur votre code](../test/unit-test-your-code.md)

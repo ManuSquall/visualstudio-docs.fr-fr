@@ -1,5 +1,5 @@
 ---
-title: Modifications du code prisesC# en charge (et Visual Basic) | Microsoft Docs
+title: Modifications du code prises en charge (C# et Visual Basic) | Microsoft Docs
 ms.date: 10/11/2018
 ms.topic: conceptual
 dev_langs:
@@ -17,20 +17,20 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 44881035da14483c3ddf1f4c48cb3957a1ce8b50
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72729087"
 ---
-# <a name="supported-code-changes-c-and-visual-basic"></a>Modifications du code prisesC# en charge (et Visual Basic)
+# <a name="supported-code-changes-c-and-visual-basic"></a>Modifications de code prises en charge (C# et Visual Basic)
 Modifier &amp; Continuer gère la plupart des types de modifications du code dans le corps des méthodes. Toutefois, la plupart des modifications en dehors du corps des méthodes et quelques autres à l'intérieur ne peuvent pas s'appliquer pendant le débogage. Pour appliquer ces modifications non prises en charge, vous devez arrêter le débogage et redémarrer avec une version nouvelle du code.
 
 ## <a name="supported-changes-to-code"></a>Modifications de code prises en charge
 
-Le tableau ci-dessous présente les modifications qui peuvent être C# apportées à et Visual Basic code pendant une session de débogage sans redémarrer la session.
+Le tableau ci-dessous montre les modifications qui peuvent être apportées à C# et Visual Basic code pendant une session de débogage sans redémarrer la session.
 
-|Élément ou fonctionnalité de langage|Opération de modification prise en charge|Limitations|
+|Élément ou fonctionnalité de langage|Opération de modification prise en charge|Limites|
 |-|-|-|
 |Types|Ajouter des méthodes, des champs, des constructeurs, et al|[Oui](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
 |Iterators|Ajouter ou modifier|Non|
@@ -43,7 +43,7 @@ Le tableau ci-dessous présente les modifications qui peuvent être C# apportée
 > Les nouvelles fonctionnalités de langage telles que l’interpolation de chaîne et les opérateurs conditionnels NULL sont généralement prises en charge par modifier & continuer. Pour obtenir les informations les plus récentes, consultez la page [modifications prises en charge par enc](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits) .
 
 ## <a name="unsupported-changes-to-code"></a>Modifications du code non prises en charge
- Les modifications suivantes ne peuvent pas être C# appliquées à et Visual Basic code pendant une session de débogage :
+ Les modifications suivantes ne peuvent pas être appliquées à C# et Visual Basic code pendant une session de débogage :
 
 - Modifications à l'instruction en cours ou à toute autre instruction active.
 
@@ -106,5 +106,5 @@ Les applications et les plateformes non prises en charge incluent ASP.NET 5, Sil
 - Débogage d'une version ancienne de votre code après l'échec de génération d'une nouvelle version en raison d'erreurs de build.
 
 ## <a name="see-also"></a>Voir aussi
-- [Modifier & Continuer (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)
+- [Modifier &amp; Continuer (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)
 - [Guide pratique pour utiliser Modifier & Continuer (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)

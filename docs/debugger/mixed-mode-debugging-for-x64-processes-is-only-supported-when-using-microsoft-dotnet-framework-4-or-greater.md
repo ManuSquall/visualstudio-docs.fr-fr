@@ -16,24 +16,24 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 64f079181ed7784de097d2bb22b8143cfe2415f4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72731027"
 ---
 # <a name="mixed-mode-debugging-for-x64-processes-is-only-supported-when-using-microsoftnet-framework-4-or-greater"></a>Le débogage en mode mixte des processus x64 est pris en charge uniquement lorsque vous utilisez Microsoft .NET Framework 4 ou version ultérieure
 Les versions du .NET Framework antérieures à la version 4 ne prennent pas en charge le débogage en mode mixte des processus x64. Cela signifie que vous ne pouvez pas passer du code managé au code natif, ou inversement, lorsque vous procédez au débogage.
 
-### <a name="workarounds"></a>Solutions
+### <a name="workarounds"></a>Solutions de contournement
 
 - Mettez votre projet à jour de façon à utiliser Microsoft .NET Framework 4 ou version ultérieure.
 
-     ou
+     - ou -
 
      Déboguez votre code managé et natif dans des sessions de débogage distinctes.
 
-     ou
+     - ou -
 
      Déboguez votre code mixte en tant que processus 32 bits, de la façon décrite dans les procédures suivantes.
 
@@ -58,4 +58,4 @@ Les versions du .NET Framework antérieures à la version 4 ne prennent pas en 
 - Consultez [configuration du débogage SQL](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100)).
 
 ## <a name="see-also"></a>Voir aussi
-- [Déboguer des applications 64 bits](../debugger/debug-64-bit-applications.md)
+- [Déboguer des applications 64 bits](../debugger/debug-64-bit-applications.md)

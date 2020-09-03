@@ -1,5 +1,5 @@
 ---
-title: IDebugTypeFieldBuilder::CreatePointerToType (fr) Microsoft Docs
+title: 'IDebugTypeFieldBuilder :: CreatePointerToType | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 871f061df1fdc60362f39fab36136eb71f5d7e50
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718433"
 ---
 # <a name="idebugtypefieldbuildercreatepointertotype"></a>IDebugTypeFieldBuilder::CreatePointerToType
-Crée un pointeur pour le type spécifié.
+Crée un pointeur vers le type spécifié.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -42,12 +42,12 @@ int CreatePointerToType(
 
 ## <a name="parameters"></a>Paramètres
 `pTypeField`\
-[dans] Type à point. Il est représenté par l’interface [IDebugField.](../../../extensibility/debugger/reference/idebugfield.md)
+dans Type vers lequel pointer. Elle est représentée par l’interface [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) .
 
 `pPtrToTypeField`\
-[out] Retourne le pointeur représenté par un nouvel objet **IDebugField.**
+à Retourne le pointeur représenté par un nouvel objet **IDebugField** .
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

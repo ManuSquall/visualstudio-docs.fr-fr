@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bb4cd0a46e5ab4cc9c3a9e00773818d536b84891
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68461450"
 ---
 # <a name="build-events-dialog-box-visual-basic"></a>Événements de build, boîte de dialogue (Visual Basic)
@@ -37,10 +37,10 @@ Spécifie les commandes à exécuter avant le début de la génération. Pour ta
 
 **Ligne de commande d'événement après génération**
 
-Spécifie les commandes à exécuter à l’issue de la génération. Pour taper de longues commandes, cliquez sur **Edit Post-build** pour afficher la boîte de dialogue **Event/Post-build Event Command Line pré-construction.**
+Spécifie les commandes à exécuter à l’issue de la génération. Pour taper de longues commandes, cliquez sur **modifier après génération** pour afficher la boîte de dialogue ligne de commande de l' **événement pré-build/après génération** .
 
 > [!NOTE]
-> Ajoutez une instruction `call` avant toutes les commandes post-build qui exécutent des fichiers .bat. Par exemple, `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.
+> Ajoutez une instruction `call` avant toutes les commandes post-build qui exécutent des fichiers .bat.  Par exemple, `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.
 
 **Exécuter l'événement post-build**
 
@@ -55,5 +55,5 @@ Spécifie les conditions pour l’événement post-build à exécuter, comme ind
 ## <a name="see-also"></a>Voir aussi
 
 - [Page Compiler, Concepteur de projets (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)
-- [Comment : Spécifier des événements de construction (visual basic)](../../ide/how-to-specify-build-events-visual-basic.md)
-- [Pré-construction Event/Post-build Event Command Line Dialog Box](../../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
+- [Comment : spécifier des événements de build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
+- [Ligne de commande de l’événement pré-build/après génération (boîte de dialogue)](../../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)

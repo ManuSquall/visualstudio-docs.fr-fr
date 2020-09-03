@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 20ec2a10210517f291a3bb21db9e1689942786c9
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84184274"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>Procédure pas à pas : créer un fichier projet MSBuild en partant de zéro
@@ -49,7 +49,7 @@ Pour effectuer la procédure pas à pas, vous devez avoir installé Visual Studi
 
 ## <a name="extend-the-path"></a>Étendre le chemin d’accès
 
-Avant de pouvoir utiliser MSBuild, vous devez étendre la variable d’environnement PATH pour inclure tous les outils requis. Vous pouvez utiliser le **invite de commandes développeur pour Visual Studio**. Recherchez-le sur Windows 10 dans la zone de recherche de la barre des tâches Windows. Pour configurer l’environnement dans une invite de commandes ordinaire ou dans un environnement de script, exécutez *VSDevCmd. bat* dans le sous-dossier *Common7/Tools* d’une installation Visual Studio.
+Avant de pouvoir utiliser MSBuild, vous devez étendre la variable d’environnement PATH pour inclure tous les outils requis. Vous pouvez utiliser le **invite de commandes développeur pour Visual Studio**. Recherchez-le sur Windows 10 dans la zone de recherche de la barre des tâches Windows. Pour configurer l’environnement dans une invite de commandes ordinaire ou dans un environnement de script, exécutez *VSDevCmd.bat* dans le sous-dossier *Common7/Tools* d’une installation Visual Studio.
 
 ## <a name="create-a-minimal-application"></a>Créer une application minimale
 
@@ -234,7 +234,7 @@ Votre fichier projet doit maintenant ressembler au code suivant :
 ```
 
 > [!NOTE]
-> Nous vous recommandons d’ajouter le délimiteur de chemin (\\) (barre oblique inverse) à la fin du nom du dossier quand vous le spécifiez dans l’élément `OutputPath`, au lieu de l’ajouter dans l’attribut `OutputAssembly` de la tâche `Csc`. Par conséquent :
+> Nous vous recommandons d’ajouter le délimiteur de chemin (\\) (barre oblique inverse) à la fin du nom du dossier quand vous le spécifiez dans l’élément `OutputPath`, au lieu de l’ajouter dans l’attribut `OutputAssembly` de la tâche `Csc`. Par conséquent,
 >
 > `<OutputPath>Bin\</OutputPath>`
 >
@@ -329,7 +329,7 @@ Votre fichier projet doit maintenant ressembler au code suivant :
 
 1. À l’invite de commandes, tapez **MSBuild HelloWorld. csproj-p :AssemblyName = Greetings**.
 
-     Étant donné que vous n’avez pas utilisé le commutateur **-t** pour définir explicitement la cible, MSBuild exécute la cible de génération par défaut. Le commutateur **-p** remplace la `AssemblyName` propriété et lui donne la nouvelle valeur, `Greetings` . Cela entraîne la création d’une nouvelle application, *Greetings. exe*, dans le dossier *\Bin \\ * .
+     Étant donné que vous n’avez pas utilisé le commutateur **-t** pour définir explicitement la cible, MSBuild exécute la cible de génération par défaut. Le commutateur **-p** remplace la `AssemblyName` propriété et lui donne la nouvelle valeur, `Greetings` . Cela entraîne la création d’une nouvelle application, *Greetings.exe*, dans le *dossier \\ \Bin* .
 
 2. Pour vérifier que le *dossier \\ \Bin* contient à la fois l’application *MSBuildSample* et la nouvelle application *Greetings* , tapez **dir Bin**.
 
@@ -466,11 +466,11 @@ L’exemple suivant montre un fichier projet qui compile une application Visual 
 </Project>
 ```
 
-## <a name="whats-next"></a>Quelle est l’étape suivante ?
+## <a name="whats-next"></a>Et ensuite ?
 
  Visual Studio peut faire automatiquement la plus grande partie du travail qui est montré dans cette procédure pas à pas. Pour découvrir comment utiliser Visual Studio pour créer, modifier, générer et tester des fichiers projet MSBuild, consultez la [Procédure pas à pas : utiliser MSBuild](../msbuild/walkthrough-using-msbuild.md).
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Vue d’ensemble de MSBuild](../msbuild/msbuild.md)
-- [Référence MSBuild](../msbuild/msbuild-reference.md)
+- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)

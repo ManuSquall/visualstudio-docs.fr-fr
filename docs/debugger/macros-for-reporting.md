@@ -23,21 +23,21 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c2129db98293cef678527fb331992c6c5960d8f9
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72731385"
 ---
 # <a name="macros-for-reporting"></a>Macros pour la création de rapports
-Pour le débogage, vous pouvez utiliser les macros **_RPTn** et **_RPTFn** , définies dans CRTDBG. H, pour remplacer l’utilisation des instructions `printf`. Vous n’avez pas besoin de les inverser dans **#ifdef**s, car ils disparaissent automatiquement dans votre version Release lorsque **_ DEBUG** n’est pas défini.
+Pour le débogage, vous pouvez utiliser les macros **_RPTn** et **_RPTFn** , définies dans CRTDBG. H, pour remplacer l’utilisation des `printf` instructions. Vous n’avez pas besoin de les inverser dans **#ifdef**s, car ils disparaissent automatiquement dans votre version release lorsque **_DEBUG** n’est pas défini.
 
 |Macro|Description|
 |-----------|-----------------|
 |**_RPT0**, **_RPT1**, **_RPT2**, **_RPT3**, **_RPT4**|Sort une chaîne de message et zéro à quatre arguments. Pour _RPT1 à **_RPT4**, la chaîne de message fait office de chaîne de mise en forme du style printf pour les arguments.|
 |**_RPTF0**, **_RPTF1**, **_RPTF2**, **_RPTF4**|Ces macros sont identiques à **_RPTn**, mais elles montrent également le nom du fichier et le numéro de la ligne où est située la macro.|
 
- Prenons l'exemple suivant :
+ Prenons l’exemple suivant :
 
 ```cpp
 #ifdef _DEBUG
@@ -70,7 +70,7 @@ Vous constaterez peut-être qu’une application particulière nécessite des ra
 #endif
 ```
 
- Un appel à **ALERT_IF2** peut effectuer toutes les fonctions du code **printf** :
+ Un appel à **ALERT_IF2** peut faire toutes les fonctions du code **printf** :
 
 ```cpp
 ALERT_IF2(someVar > MAX_SOMEVAR, "OVERFLOW! In NameOfThisFunc( ),

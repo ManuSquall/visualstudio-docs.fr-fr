@@ -9,10 +9,10 @@ caps.latest.revision: 10
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2442bf4cc31eeb51332aa28325924e18ccb1ffb7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660730"
 ---
 # <a name="analyzing-code-coverage-in-build-verification-tests"></a>Analyse de la couverture du code dans les tests de vérification de build
@@ -28,11 +28,11 @@ L’analyse de la couverture du code dans Microsoft Visual Studio vous montre le
 
     Si vous avez plusieurs définitions de source de test, répétez cette étape pour chaque définition.
 
-   - <em>Mais aucun champ n’est nommé **Type de fichier des paramètres d’exécution</em>* .*
+   - <em>Mais il n’existe aucun champ nommé **type de fichier de paramètres d’exécution</em>*. *
 
       Sous **Tests automatisés**, sélectionnez **Assembly de test**, puis choisissez le bouton de sélection **[...]** situé à la fin de la ligne. Dans la boîte de dialogue **Ajouter/Modifier une série de tests**, sous **Test Runner**, choisissez **Visual Studio Test Runner**.
 
-   ![Définition de la définition de build pour la couverture du code](../test/media/codecoverage-plaincc.png "CodeCoverage-plainCC")
+   ![Définition de build pour la couverture du code](../test/media/codecoverage-plaincc.png "CodeCoverage-plainCC")
 
    Après l’exécution de la build, les résultats de la couverture du code s’affichent dans le résumé de la build.
 

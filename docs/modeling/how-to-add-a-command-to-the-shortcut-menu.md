@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6aac779a3c165d10262c078ff431731d9d248f3a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545715"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Comment : ajouter une commande au menu contextuel
@@ -48,7 +48,7 @@ Appliquez la méthode décrite dans cette rubrique dans les cas suivants :
 
    Autrement, vous pouvez utiliser la méthode MEF pour définir des commandes. Pour plus d’informations, consultez [étendre votre DSL à l’aide de MEF](../modeling/extend-your-dsl-by-using-mef.md).
 
-## <a name="declare-the-command-in-commandsvsct"></a><a name="VSCT"></a>Déclarer la commande dans Commands. vsct
+## <a name="declare-the-command-in-commandsvsct"></a><a name="VSCT"></a> Déclarer la commande dans Commands. vsct
  La déclaration des commandes de menu s'effectue dans DslPackage\Commands.vsct. Ces définitions spécifient les étiquettes des éléments de menu et l'emplacement où est elles apparaissent dans les menus.
 
  Le fichier que vous modifiez, Commands. vsct, importe les définitions à partir de plusieurs fichiers. h, qui se trouvent dans le répertoire répertoire *d’installation du kit de développement logiciel (SDK) Visual Studio*\VisualStudioIntegration\Common\Inc. Il comprend également GeneratedVsct. vsct, qui est généré à partir de votre définition DSL.
@@ -128,7 +128,7 @@ Appliquez la méthode décrite dans cette rubrique dans les cas suivants :
 
     - `My Context Menu Command`
 
-## <a name="update-the-package-version-in-packagett"></a><a name="version"></a>Mettre à jour la version du package dans Package.tt
+## <a name="update-the-package-version-in-packagett"></a><a name="version"></a> Mettre à jour la version du package dans Package.tt
  Chaque fois que vous ajoutez ou modifiez une commande, mettez à jour le paramètre `version` de l'objet <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> qui est appliqué à la classe de package avant de publier la nouvelle version de votre langage spécifique à un domaine.
 
  La classe de package étant définie dans un fichier généré, vous devez mettre à jour l'attribut dans le fichier de modèle de texte qui génère le fichier Package.cs.
@@ -143,7 +143,7 @@ Appliquez la méthode décrite dans cette rubrique dans les cas suivants :
 
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`
 
-## <a name="define-the-behavior-of-the-command"></a><a name="CommandSet"></a>Définir le comportement de la commande
+## <a name="define-the-behavior-of-the-command"></a><a name="CommandSet"></a> Définir le comportement de la commande
 
 Votre solution DSL possède déjà certaines commandes qui sont implémentées dans une classe partielle déclarée dans DslPackage\GeneratedCode\CommandSet.cs. Pour ajouter de nouvelles commandes, vous devez étendre cette classe en créant un fichier qui contient une déclaration partielle de la même classe. Le nom de la classe est généralement *\<YourDslName>* `CommandSet` . Il est utile de commencer par vérifier le nom de la classe et d’inspecter son contenu.
 
@@ -222,15 +222,15 @@ Les fragments suivants sont souvent utiles dans les méthodes OnStatus :
 
 - `this.CurrentSelection`. La forme sur laquelle l'utilisateur a cliqué avec le bouton droit est toujours incluse dans cette liste. Si l'utilisateur clique sur une partie vierge du diagramme, ce dernier est le seul membre de la liste.
 
-- `this.IsDiagramSelected()` - `true`Si l’utilisateur a cliqué sur une partie vide du diagramme.
+- `this.IsDiagramSelected()` - `true` Si l’utilisateur a cliqué sur une partie vide du diagramme.
 
 - `this.IsCurrentDiagramEmpty()`
 
-- `this.IsSingleSelection()`-l’utilisateur n’a pas sélectionné plusieurs objets
+- `this.IsSingleSelection()` -l’utilisateur n’a pas sélectionné plusieurs objets
 
-- `this.SingleSelection`-forme ou diagramme sur lequel l’utilisateur a cliqué avec le bouton droit
+- `this.SingleSelection` -forme ou diagramme sur lequel l’utilisateur a cliqué avec le bouton droit
 
-- `shape.ModelElement as MyLanguageElement`: élément de modèle représenté par une forme.
+- `shape.ModelElement as MyLanguageElement` : élément de modèle représenté par une forme.
 
 En règle générale, vous devez faire en sorte que la propriété `Visible` dépende de ce qui est sélectionné et que la propriété `Enabled` dépende de l'état des éléments sélectionnés.
 
@@ -297,7 +297,7 @@ private const int cmdidMyContextMenuCommand = 1;
 > [!NOTE]
 > Si vous modifiez la section Symbols du fichier VSCT, vous devez aussi modifier ces déclarations pour qu'elles correspondent. Vous devez également incrémenter le numéro de version dans Package.tt.
 
- Inscrivez vos commandes de menu dans le cadre de ce jeu de commandes. `GetMenuCommands()`est appelée une fois lorsque le diagramme est initialisé :
+ Inscrivez vos commandes de menu dans le cadre de ce jeu de commandes. `GetMenuCommands()` est appelée une fois lorsque le diagramme est initialisé :
 
 ```csharp
 protected override IList<MenuCommand> GetMenuCommands()
@@ -329,7 +329,7 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 4. Cliquez avec le bouton droit sur différents éléments du diagramme pour vérifier que la commande est activée ou désactivée correctement et affichée ou masquée de manière appropriée, en fonction de l'élément sélectionné.
 
-## <a name="troubleshoot"></a>Dépannage
+## <a name="troubleshoot"></a>Dépanner
 
 **La commande n'apparaît pas dans le menu :**
 

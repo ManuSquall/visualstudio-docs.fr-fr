@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8a0868019247e20b9154690469d4c291f1f8e0d6
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545806"
 ---
 # <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>Comment : configurer les informations de configuration d’une solution Office
@@ -37,7 +37,7 @@ ms.locfileid: "85545806"
 
 4. Dans la zone **nom** , tapez le même nom que l’assembly et l’extension *. config*. Par exemple, un fichier de configuration pour un assembly de projet Excel appelé *ExcelWorkbook1.dll* serait nommé *ExcelWorkbook1.dll.config*.
 
-5. Cliquez sur **Ajouter**.
+5. Cliquez sur **Add**.
 
 6. Créez votre fichier de configuration selon le schéma du fichier de configuration de l’application. Pour plus d’informations, consultez [schéma du fichier de configuration pour le .NET Framework](/dotnet/framework/configure-apps/file-schema/index).
 

@@ -9,17 +9,17 @@ ms.topic: how-to
 ms.workload:
 - multiple
 ms.openlocfilehash: 9bb3aa4a7aa9818f42f99860956e0e2ae73b2b7f
-ms.sourcegitcommit: 48e93538f1e352fc1f972b642bb5fcce2f6834a2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85371584"
 ---
 # <a name="clone-a-repository-of-python-code-in-visual-studio"></a>Cloner un dépôt de code Python dans Visual Studio
 
 Une fois que vous avez [installé Visual Studio Tools pour IA](installation.md), vous pouvez facilement cloner un dépôt de code Python et créer un projet à partir de celui-ci.
 
-1. Pour vous connecter aux référentiels GitHub, exécutez le programme d’installation de Visual Studio, sélectionnez **modifier**, puis sélectionnez l’onglet **composants individuels** . faites défiler jusqu’à la section **outils de code** , sélectionnez **extension GitHub pour Visual Studio**, puis sélectionnez **modifier**.
+1. Pour vous connecter aux référentiels GitHub, exécutez le programme d’installation de Visual Studio, sélectionnez **modifier**, puis sélectionnez l’onglet **composants individuels** . Faites défiler jusqu’à la section **outils de code** , sélectionnez **extension GitHub pour Visual Studio**, puis sélectionnez **modifier**.
 
     ![Sélection de l’extension GitHub dans le programme d’installation de Visual Studio](media/create-project-repo/installation-github-extension.png)
 
