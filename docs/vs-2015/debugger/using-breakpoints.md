@@ -42,10 +42,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bbe2ecf89f94cc75ff9036285ae9acbf9cf3b657
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534496"
 ---
 # <a name="using-breakpoints"></a>Utilisation des points d'arrêt
@@ -90,7 +90,7 @@ Vous pouvez définir des points d’arrêt quand vous voulez interrompre l’ex�
   
 2. Cliquez dans la marge de gauche au niveau de l’instruction où vous voulez effectuer l’arrêt ou définissez votre curseur au niveau de l’instruction et appuyez sur **F9**.  
   
-## <a name="setting-a-data-breakpoint-native-c-only"></a><a name="BKMK_set_a_data_breakpoint_native_cplusplus_only"></a>Définition d’un point d’arrêt sur variable (C++ natif uniquement)  
+## <a name="setting-a-data-breakpoint-native-c-only"></a><a name="BKMK_set_a_data_breakpoint_native_cplusplus_only"></a> Définition d’un point d’arrêt sur variable (C++ natif uniquement)  
  Les points d’arrêt sur variable interrompent l’exécution quand une valeur stockée à l’adresse mémoire spécifiée change. Si la valeur est lue mais pas modifiée, l’exécution ne s’interrompt pas. Pour définir des points d’arrêt sur variable, le débogueur doit être en mode arrêt.  
   
 1. Commencez le débogage de l’application et attendez qu’un point d’arrêt soit atteint. Dans le menu **Déboguer** , choisissez **Nouveau point d’arrêt/Point d’arrêt sur variable** (ou ouvrez la fenêtre **Points d’arrêt** et choisissez **Nouveau/Point d’arrêt sur variable**.  

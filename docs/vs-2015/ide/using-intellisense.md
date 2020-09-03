@@ -26,10 +26,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 735f93b2f900b8681a1e9fee490de8e4b697f9e7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656447"
 ---
 # <a name="using-intellisense"></a>Using IntelliSense
@@ -46,7 +46,7 @@ IntelliSense est le terme général employé pour plusieurs fonctionnalités : 
 
  Dans la liste des membres, l'icône de gauche représente le type de membre, tel que l'espace de noms, la classe, la fonction ou la variable. Pour obtenir une liste des icônes, consultez [Icônes de l’Explorateur d’objets et de la fenêtre Affichage de classes](../ide/class-view-and-object-browser-icons.md). La liste pouvant être relativement longue, vous pouvez appuyer sur PG.PRÉC et PG.SUIV pour vous déplacer vers le haut ou vers le bas dans la liste.
 
- ![Liste des membres Visual Studio](../ide/media/vs2015-intellisense.png "|::ref1::|")
+ ![Liste des membres Visual Studio](../ide/media/vs2015-intellisense.png "vs2015_Intellisense")
 
  Vous pouvez appeler la fonctionnalité **Liste des membres** manuellement en appuyant sur Ctrl+J, en cliquant sur **Modifier/IntelliSense/Liste des membres** ou en cliquant sur le bouton **Liste des membres** dans la barre d’outils de l’éditeur. Lorsque la liste des membres est appelée sur une ligne vide ou en dehors d'une portée reconnue, elle affiche des symboles dans l'espace de noms global.
 
@@ -59,20 +59,20 @@ IntelliSense est le terme général employé pour plusieurs fonctionnalités : 
 
  Le paramètre suivant à taper pour la fonction vous est indiqué en gras. Pour les fonctions surchargées, vous pouvez utiliser les touches de direction Haut et Bas pour consulter les différentes informations de paramètres concernant les surcharges de fonction.
 
- ![Informations sur les paramètres](../ide/media/vs2015-param-info.png "|::ref2::|")
+ ![Informations sur les paramètres](../ide/media/vs2015-param-info.png "VS2015_param_Info")
 
  Lorsque vous annotez des fonctions et des paramètres avec les commentaires de documentation XML, les commentaires apparaissent comme Informations sur les paramètres. Pour plus d’informations, consultez [Insertion de commentaires dans le code XML](../ide/supplying-xml-code-comments.md).
 
  Vous pouvez appeler manuellement la fonctionnalité Informations sur les paramètres en cliquant sur **Edition/IntelliSense/Informations sur les paramètres**, en appuyant sur Ctrl+Maj+Espace ou en cliquant sur le bouton **Informations sur les paramètres** dans la barre d’outils de l’éditeur.
 
-## <a name="quick-info"></a>Info express
+## <a name="quick-info"></a>Infos express
  Infos express affiche la déclaration complète de tout identificateur dans votre code.
 
- ![Info express Visual Studio](../ide/media/vs2015-quick-info.png "|::ref3::|")
+ ![Info express Visual Studio](../ide/media/vs2015-quick-info.png "VS2015_Quick_info")
 
  Quand vous sélectionnez un membre dans la zone **Liste des membres**, l’info-bulle Info express s’affiche aussi.
 
- ![Informations sur les paramètres dans un fichier de code C&#35;](../ide/media/vs2015-paraminfo.png "|::ref4::|")
+ ![Informations sur les paramètres dans un fichier de code C&#35;](../ide/media/vs2015-paraminfo.png "VS2015_ParamInfo")
 
  Vous pouvez appeler manuellement la fonctionnalité Info express en cliquant sur **Edition/IntelliSense/Info express**, en appuyant sur Ctrl+I ou en cliquant sur le bouton **Info express** dans la barre d’outils de l’éditeur.
 
@@ -99,7 +99,7 @@ IntelliSense est le terme général employé pour plusieurs fonctionnalités : 
 MessageBox( hWnd, "String literal|") )
 ```
 
- **Les options automatiques sont désactivées.** Par défaut, IntelliSense est automatiquement utilisé, mais vous pouvez le désactiver. Même lorsque la saisie semi-automatique des instructions est désactivée, vous pouvez appeler une fonctionnalité IntelliSense.
+ **Les options automatiques ne sont pas activées.** Par défaut, IntelliSense est automatiquement utilisé, mais vous pouvez le désactiver. Même lorsque la saisie semi-automatique des instructions est désactivée, vous pouvez appeler une fonctionnalité IntelliSense.
 
 ## <a name="see-also"></a>Voir aussi
- IntelliSense [spécifique à Visual Basic](../ide/visual-basic-specific-intellisense.md) [IntelliSense C# Visual IntelliSense](../ide/visual-csharp-intellisense.md) [JavaScript](../ide/javascript-intellisense.md) qui [fournit des commentaires de code XML](../ide/supplying-xml-code-comments.md)
+ IntelliSense [spécifique à Visual Basic](../ide/visual-basic-specific-intellisense.md) [Visual C#](../ide/visual-csharp-intellisense.md) [IntelliSense IntelliSense](../ide/javascript-intellisense.md) IntelliSense fournissant des commentaires sur le [code XML](../ide/supplying-xml-code-comments.md)

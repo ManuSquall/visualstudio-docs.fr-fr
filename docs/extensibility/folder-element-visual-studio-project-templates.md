@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b05ef44896e5cd428584c7efed267f130597ee35
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85769585"
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Élément Folder (modèles de projet Visual Studio)
@@ -27,7 +27,7 @@ Spécifie un dossier qui sera ajouté au projet.
  \<Project>
  \<Folder>
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Syntaxe
 
 ```
 <Folder Name="Project Folder">
@@ -50,7 +50,7 @@ Spécifie un dossier qui sera ajouté au projet.
 
 |Élément|Description|
 |-------------|-----------------|
-|`Folder`|Spécifie un dossier à ajouter au projet. `Folder`les éléments peuvent contenir des `Folder` éléments enfants.|
+|`Folder`|Spécifie un dossier à ajouter au projet. `Folder` les éléments peuvent contenir des `Folder` éléments enfants.|
 |[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|Spécifie un fichier à ajouter au projet.|
 
 ### <a name="parent-elements"></a>Éléments parents
@@ -59,8 +59,8 @@ Spécifie un dossier qui sera ajouté au projet.
 |-------------|-----------------|
 |[Projet](../extensibility/project-element-visual-studio-templates.md)|Élément enfant facultatif de [TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md).|
 
-## <a name="remarks"></a>Remarques
- `Folder`est un enfant facultatif de `Project` .
+## <a name="remarks"></a>Notes
+ `Folder` est un enfant facultatif de `Project` .
 
  Vous pouvez utiliser l’une des méthodes suivantes pour organiser les éléments de projet en dossiers dans un modèle :
 

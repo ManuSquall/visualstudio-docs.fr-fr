@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f9611170c7b23a9db72c27b9c3f69a39e21a4bdc
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74300625"
 ---
 # <a name="what39s-new-in-profiling-tools"></a>Nouveautés des outils de profilage
@@ -29,13 +29,13 @@ Pour plus d’informations sur toutes les nouveautés en matière de débogage e
 ## <a name="whats-new-in-update-1"></a>Nouveautés d’Update 1  
  À compter de Visual Studio 2015 Update 1, vous pouvez afficher une répartition par fonction de l’utilisation du processeur sans quitter le débogueur. Pour plus d’informations, consultez [Profile Your CPU in the Debugger in Visual Studio 2015](https://devblogs.microsoft.com/devops/profile-your-cpu-in-the-debugger-in-visual-studio-2015/).  
   
- La fenêtre **Outils de diagnostic** a ajouté des options de recherche et de filtre à l’onglet **Événements** . Pour plus d’informations, consultez [Debugger-integrated profiling](/visualstudio/profiling/running-profiling-tools-with-or-without-the-debugger) et [Searching and filtering the Events tab of the Diagnostic Tools window](https://devblogs.microsoft.com/devops/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/).  
+ La fenêtre **outils de diagnostic** a ajouté des options de recherche et de filtre à l’onglet **événements** . Pour plus d’informations, consultez [profilage intégré au débogueur](/visualstudio/profiling/running-profiling-tools-with-or-without-the-debugger) et  [recherche et filtrage de l’onglet événements de la fenêtre outils de diagnostic](https://devblogs.microsoft.com/devops/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/).  
   
 ## <a name="diagnostics-with-debugging-ui-and-hotkey-changes"></a>Diagnostics avec l'interface utilisateur de débogage et changements de touches d'accès rapide  
  Vous pouvez maintenant exécuter les outils de diagnostic pendant le débogage à l'aide de la nouvelle fenêtre **Outils de diagnostic** . La fenêtre s’affiche automatiquement, mais vous pouvez également l’ouvrir avec le nouvel élément de menu **Afficher les outils de diagnostic** (raccourci clavier **Ctrl+Alt+F2**).  
   
 ## <a name="diagnostics-without-debugging-ui-and-hotkey-changes"></a>Diagnostics sans l'interface utilisateur de débogage et changements de touches d'accès rapide  
- Pour exécuter des diagnostics sans débogage, accédez à **Déboguer/Démarrer les outils de diagnostic sans débogage** ou **Déboguer/Profileur/Profileur de performance...** . Dans Visual Studio 2013, cette option se trouvait dans **Analyser/Performances et diagnostics** ou **Déboguer/Performances et diagnostics**.  
+ Pour exécuter les diagnostics sans débogage, accédez à **Déboguer/démarrer les outils de diagnostic sans débogage** ni **Déboguer/profileur/profileur de performances...**. Dans Visual Studio 2013, cela a été trouvé dans **analyser/performances et diagnostics** , **Déboguer/performances et diagnostics**.  
   
  L' **Explorateur de performances** se trouve désormais dans **Déboguer/Profileurs/Explorateur de performances**. Dans Visual Studio 2013, cette option se trouvant dans **Analyser/Profileur**.  
   

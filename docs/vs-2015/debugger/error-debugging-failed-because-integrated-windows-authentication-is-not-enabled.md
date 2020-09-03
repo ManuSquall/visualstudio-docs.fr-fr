@@ -20,10 +20,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 89afba591899b626863b0157f6d9d955d46e46cf
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851914"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Erreur : le débogage a échoué, car l'authentification intégrée de Windows n'est pas activée
@@ -37,9 +37,9 @@ L'authentification de l'utilisateur qui a demandé le débogage a été empêch�
   
 1. Ouvrez une session sur le serveur web à l’aide d’un compte d’administrateur.  
   
-2. Cliquez sur **Démarrer**, puis sur **Panneau de configuration**.  
+2. Cliquez sur **Démarrer** , puis sur **panneau de configuration**.  
   
-3. Dans le **Panneau de configuration**, double-cliquez sur **Outils d’administration**.  
+3. Dans **le panneau de configuration**, double-cliquez sur **Outils d’administration**.  
   
 4. Double-cliquez sur **Services IIS**.  
   
@@ -77,7 +77,7 @@ L'authentification de l'utilisateur qui a demandé le débogage a été empêch�
   
          La boîte de dialogue Contrôle d'accès utilisateur s'affiche et vous invite à confirmer que vous êtes autorisé à poursuivre.  
   
-    3. Cliquez sur **Continue**(Continuer).  
+    3. Cliquez sur **Continuer**.  
   
          La boîte de dialogue Fonctionnalités Windows apparaît.  
   
@@ -97,11 +97,11 @@ L'authentification de l'utilisateur qui a demandé le débogage a été empêch�
   
     11. Redémarrez l'ordinateur pour que ces modifications soient prises en compte.  
   
-3. Cliquez sur **Démarrer**, puis sur **Panneau de configuration**.  
+3. Cliquez sur **Démarrer** , puis sur **panneau de configuration**.  
   
 4. Cliquez sur **Affichage classique**, puis double-cliquez sur **Outils d’administration**.  
   
-5. Dans la colonne **Nom**, double-cliquez sur **Gestionnaire des services Internet (IIS)** .  
+5. Dans la colonne **Nom**, double-cliquez sur **Gestionnaire des services Internet (IIS)**.  
   
 6. Dans la colonne **Connexions**, développez le nœud correspondant à votre serveur.  
   
@@ -115,9 +115,9 @@ L'authentification de l'utilisateur qui a demandé le débogage a été empêch�
   
 9. Dans la colonne le volet **Authentification**, dans la colonne **Nom**, cliquez avec le bouton droit sur **Authentification Windows**, puis cliquez sur **Activer**.  
   
-10. Fermez la fenêtre **Gestionnaire des services Internet (IIS)** .  
+10. Fermez la fenêtre **Gestionnaire des services Internet (IIS)**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Débogage d’applications Web : erreurs et dépannage](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
- [Microsoft Digest Authentication](https://msdn2.microsoft.com/library/Aa378744.aspx)   
+ [Authentification Microsoft Digest](https://msdn2.microsoft.com/library/Aa378744.aspx)   
  [Exécution d’applications Web sur Windows Vista avec IIS 7,0 et Visual Studio](https://msdn.microsoft.com/library/262a82ac-dd0e-4096-86c6-fb463e88be66)

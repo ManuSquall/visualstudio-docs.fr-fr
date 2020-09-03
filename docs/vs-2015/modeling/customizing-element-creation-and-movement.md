@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8189330f5bc3ff5c9008b6f01ffc00af96162806
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74301145"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Personnalisation de la création et du mouvement des éléments
@@ -25,7 +25,7 @@ ms.locfileid: "74301145"
 
 Vous pouvez autoriser le glissement d’un élément vers un autre, soit à partir de la boîte à outils, soit dans une opération de collage ou de déplacement. Vous pouvez faire en sorte que les éléments déplacés soient liés aux éléments cibles, à l’aide des relations que vous spécifiez.
 
- Une directive de fusion d’éléments (EMD) spécifie ce qui se produit lorsqu’un élément de modèle est *fusionné* dans un autre élément de modèle. Cette situation se produit dans les circonstances suivantes :
+ Une directive de fusion d’éléments (EMD) spécifie ce qui se produit lorsqu’un élément de modèle est *fusionné* dans un autre élément de modèle. Cela se produit dans les situations suivantes :
 
 - L’utilisateur fait glisser de la boîte à outils vers le diagramme ou une forme.
 
@@ -41,7 +41,7 @@ Vous pouvez autoriser le glissement d’un élément vers un autre, soit à part
 
   La responsabilité d’un EMD consiste à décider comment un objet ou un groupe d’objets doit être fusionné à un emplacement particulier dans le modèle. En particulier, il décide des relations qui doivent être instanciées pour lier le groupe fusionné au modèle. Vous pouvez également le personnaliser pour définir des propriétés et créer des objets supplémentaires.
 
-  ![Fusion&#45;EMD&#95;DSL](../modeling/media/dsl-emd-merge.png "DSL-EMD_Merge") Rôle d’une directive de fusion d’éléments
+  ![&#45;DSL EMD&#95;fusion](../modeling/media/dsl-emd-merge.png "DSL-EMD_Merge") Rôle d’une directive de fusion d’éléments
 
   Un EMD est généré automatiquement lorsque vous définissez une relation d’incorporation. Ce EMD par défaut crée une instance de la relation lorsque les utilisateurs ajoutent de nouvelles instances enfants au parent. Vous pouvez modifier ces EMDs par défaut, par exemple en ajoutant du code personnalisé.
 
@@ -50,7 +50,7 @@ Vous pouvez autoriser le glissement d’un élément vers un autre, soit à part
 ## <a name="defining-an-element-merge-directive"></a>Définition d’une directive de fusion d’éléments
  Vous pouvez ajouter des directives de fusion d’éléments à des classes de domaine, des relations de domaine, des formes, des connecteurs et des diagrammes. Vous pouvez les ajouter ou les trouver dans l’Explorateur DSL sous la classe de domaine réceptrice. La classe de réception est la classe de domaine de l’élément qui se trouve déjà dans le modèle, et sur lequel l’élément nouveau ou copié sera fusionné.
 
- ![Détails&#45;de&#95;EMD DSL](../modeling/media/dsl-emd-details.png "DSL-EMD_Details")
+ ![Détails de la&#95;EMD DSL&#45;](../modeling/media/dsl-emd-details.png "DSL-EMD_Details")
 
  La **classe d’indexation** est la classe de domaine des éléments qui peuvent être fusionnés dans les membres de la classe de réception. Les instances de sous-classes de la classe d’indexation seront également fusionnées par ce EMD, sauf si vous affectez la valeur false **à la propriété s’applique aux sous-classes** .
 
@@ -73,7 +73,7 @@ Vous pouvez autoriser le glissement d’un élément vers un autre, soit à part
 > [!NOTE]
 > Si vous écrivez du code de fusion personnalisé, il affecte uniquement les fusions effectuées à l’aide de ce EMD. S’il existe d’autres EMDs qui fusionnent le même type d’objet, ou s’il existe un autre code personnalisé qui crée ces objets sans utiliser le EMD, ils ne sont pas affectés par votre code de fusion personnalisé.
 >
-> Si vous souhaitez vous assurer qu’un nouvel élément ou une nouvelle relation est toujours traité par votre code personnalisé, envisagez de définir un `AddRule` sur la relation d’incorporation et un `DeleteRule` sur la classe de domaine de l’élément. Pour plus d’informations, consultez [règles de propagation des modifications dans le modèle](../modeling/rules-propagate-changes-within-the-model.md).
+> Si vous souhaitez vous assurer qu’un nouvel élément ou une nouvelle relation est toujours traité par votre code personnalisé, envisagez `AddRule` de définir un sur la relation d’incorporation et un `DeleteRule` sur la classe de domaine de l’élément. Pour plus d’informations, consultez [règles de propagation des modifications dans le modèle](../modeling/rules-propagate-changes-within-the-model.md).
 
 ## <a name="example-defining-an-emd-without-custom-code"></a>Exemple : définition d’un EMD sans code personnalisé
  L’exemple suivant permet aux utilisateurs de créer un élément et un connecteur en même temps en faisant glisser la souris de la boîte à outils vers une forme existante. L’exemple ajoute un EMD à la définition DSL. Avant cette modification, les utilisateurs peuvent faire glisser des outils sur le diagramme, mais pas sur les formes existantes.
@@ -86,15 +86,15 @@ Vous pouvez autoriser le glissement d’un élément vers un autre, soit à part
 
     Lorsque vous exécutez cette solution DSL, elle vous permet de créer des formes et des connecteurs entre les formes. Vous ne pouvez pas faire glisser une nouvelle forme **ExampleElement** de la boîte à outils vers une forme existante.
 
-2. Pour permettre aux utilisateurs de fusionner des éléments sur des formes de `ExampleElement`, créez un EMD dans la classe de domaine `ExampleElement` :
+2. Pour permettre aux utilisateurs de fusionner des éléments sur des `ExampleElement` formes, créez un EMD dans la `ExampleElement` classe de domaine :
 
-   1. Dans l' **Explorateur DSL**, développez **classes de domaine**. Cliquez avec le bouton droit sur `ExampleElement`, puis cliquez sur **Ajouter une nouvelle directive de fusion d’élément**.
+   1. Dans l' **Explorateur DSL**, développez **classes de domaine**. Cliquez avec le bouton droit sur `ExampleElement` , puis cliquez sur **Ajouter une nouvelle directive de fusion d’élément**.
 
    2. Assurez-vous que la fenêtre **Détails DSL** est ouverte, afin que vous puissiez voir les détails de la nouvelle EMD. (Menu : **affichage**, **autres fenêtres**, **Détails DSL**.)
 
-3. Définissez la **classe d’indexation** dans la fenêtre Détails DSL pour définir la classe d’éléments qui peut être fusionnée sur `ExampleElement` objets.
+3. Définissez la **classe d’indexation** dans la fenêtre Détails DSL pour définir la classe d’éléments qui peut être fusionnée sur les `ExampleElement` objets.
 
-    Pour cet exemple, sélectionnez `ExampleElements`, afin que l’utilisateur puisse faire glisser de nouveaux éléments sur des éléments existants.
+    Pour cet exemple, sélectionnez `ExampleElements` , afin que l’utilisateur puisse faire glisser de nouveaux éléments sur des éléments existants.
 
     Notez que la classe d’indexation devient le nom du EMD dans l’Explorateur DSL.
 
@@ -110,7 +110,7 @@ Vous pouvez autoriser le glissement d’un élément vers un autre, soit à part
 
       Vous pouvez utiliser l’outil de navigation du chemin d’accès pour créer chaque chemin d’accès :
 
-   3. Sous **traiter la fusion en créant des liens dans chemins d'** accès, cliquez sur **\<ajouter un chemin d’accès >** .
+   3. Sous **traiter la fusion en créant des liens sur les chemins d’accès**, cliquez sur **\<add path>** .
 
    4. Cliquez sur la flèche déroulante à droite de l’élément de liste. Une arborescence s’affiche.
 
@@ -142,7 +142,7 @@ Vous pouvez autoriser le glissement d’un élément vers un autre, soit à part
 
 - EMD affecte à la fois la création à partir de la boîte à outils et les opérations de collage.
 
-     Si vous écrivez du code personnalisé qui crée de nouveaux éléments, vous pouvez appeler explicitement le EMD à l’aide de la méthode `ElementOperations.Merge`. Cela permet de s’assurer que votre code lie les nouveaux éléments dans le modèle de la même façon que les autres opérations. Pour plus d’informations, consultez [Personnalisation du comportement](../modeling/customizing-copy-behavior.md)de la copie.
+     Si vous écrivez du code personnalisé qui crée de nouveaux éléments, vous pouvez appeler explicitement le EMD à l’aide de la `ElementOperations.Merge` méthode. Cela permet de s’assurer que votre code lie les nouveaux éléments dans le modèle de la même façon que les autres opérations. Pour plus d’informations, consultez [Personnalisation du comportement](../modeling/customizing-copy-behavior.md)de la copie.
 
 ## <a name="example-adding-custom-accept-code-to-an-emd"></a>Exemple : ajout d’un code Accept personnalisé à un EMD
  En ajoutant du code personnalisé à un EMD, vous pouvez définir un comportement de fusion plus complexe. Cet exemple simple empêche l’utilisateur d’ajouter plus d’un nombre fixe d’éléments au diagramme. L’exemple modifie le EMD par défaut qui accompagne une relation d’incorporation.
@@ -151,9 +151,9 @@ Vous pouvez autoriser le glissement d’un élément vers un autre, soit à part
 
 1. Créez un DSL à l’aide du modèle de solution de **langage minimal** . Ouvrez le diagramme de définition DSL.
 
-2. Dans l’Explorateur DSL, développez **classes de domaine**, `ExampleModel`, directives de **fusion d’éléments**. Sélectionnez la directive de fusion d’éléments nommée `ExampleElement`.
+2. Dans l’Explorateur DSL, développez **classes de domaine**, `ExampleModel` , puis **directives de fusion d’éléments**. Sélectionnez la directive de fusion d’éléments nommée `ExampleElement` .
 
-     Ce EMD contrôle la manière dont l’utilisateur peut créer de nouveaux objets `ExampleElement` dans le modèle, par exemple en faisant glisser la souris à partir de la boîte à outils.
+     Ce EMD contrôle la manière dont l’utilisateur peut créer des `ExampleElement` objets dans le modèle, par exemple en faisant glisser la souris à partir de la boîte à outils.
 
 3. Dans la fenêtre **Détails DSL** , sélectionnez **utilise l’acceptation personnalisée**.
 
@@ -161,7 +161,7 @@ Vous pouvez autoriser le glissement d’un élément vers un autre, soit à part
 
      Une erreur de build est signalée, comme suit : « Company. ElementMergeSample. ExampleElement ne contient pas de définition pour CanMergeExampleElement... »
 
-     Vous devez implémenter la méthode `CanMergeExampleElement`.
+     Vous devez implémenter la méthode `CanMergeExampleElement` .
 
 5. Créez un nouveau fichier de code dans le projet **DSL** . Remplacez son contenu par le code suivant et remplacez l’espace de noms par l’espace de noms de votre projet.
 
@@ -191,7 +191,7 @@ Vous pouvez autoriser le glissement d’un élément vers un autre, soit à part
 
     ```
 
-     Cet exemple simple restreint le nombre d’éléments qui peuvent être fusionnés dans le modèle parent. Pour les conditions plus intéressantes, la méthode peut inspecter les propriétés et les liens de l’objet de réception. Il peut également inspecter les propriétés des éléments de fusion, qui sont transportées dans un <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>. Pour plus d’informations sur les `ElementGroupPrototypes`, consultez [Personnalisation du comportement](../modeling/customizing-copy-behavior.md)de la copie. Pour plus d’informations sur la façon d’écrire du code qui lit un modèle, consultez [navigation et mise à jour d’un modèle dans le code de programme](../modeling/navigating-and-updating-a-model-in-program-code.md).
+     Cet exemple simple restreint le nombre d’éléments qui peuvent être fusionnés dans le modèle parent. Pour les conditions plus intéressantes, la méthode peut inspecter les propriétés et les liens de l’objet de réception. Il peut également inspecter les propriétés des éléments de fusion, qui sont transportées dans un <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> . Pour plus d’informations sur `ElementGroupPrototypes` , consultez [Personnalisation du comportement](../modeling/customizing-copy-behavior.md)de la copie. Pour plus d’informations sur la façon d’écrire du code qui lit un modèle, consultez [navigation et mise à jour d’un modèle dans le code de programme](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
 6. Testez le DSL :
 
@@ -212,7 +212,7 @@ Vous pouvez autoriser le glissement d’un élément vers un autre, soit à part
 
 1. Set **utilise la fusion personnalisée** et fournit le code requis. Votre code remplace le code de fusion généré. Utilisez cette option si vous souhaitez redéfinir complètement ce que fait la fusion.
 
-2. Substituez la méthode `MergeRelate`, et éventuellement la méthode `MergeDisconnect`. Pour ce faire, vous devez définir la propriété **générée double dérivée** de la classe de domaine. Votre code peut appeler le code de fusion généré dans la classe de base. Utilisez cette option si vous souhaitez effectuer des opérations supplémentaires après l’exécution de la fusion.
+2. Substituez la `MergeRelate` méthode, et éventuellement la `MergeDisconnect` méthode. Pour ce faire, vous devez définir la propriété **générée double dérivée** de la classe de domaine. Votre code peut appeler le code de fusion généré dans la classe de base. Utilisez cette option si vous souhaitez effectuer des opérations supplémentaires après l’exécution de la fusion.
 
    Ces approches affectent uniquement les fusions effectuées à l’aide de ce EMD. Si vous souhaitez affecter tous les moyens de créer l’élément fusionné, vous pouvez également définir un `AddRule` sur la relation d’incorporation et un `DeleteRule` sur la classe de domaine fusionnée. Pour plus d’informations, consultez [règles de propagation des modifications dans le modèle](../modeling/rules-propagate-changes-within-the-model.md).
 
@@ -222,7 +222,7 @@ Vous pouvez autoriser le glissement d’un élément vers un autre, soit à part
 
 2. Dans le diagramme DslDefinition, sélectionnez la classe de réception de la fusion. En général, il s’agit de la classe à l’extrémité source d’une relation d’incorporation.
 
-     Par exemple, dans un DSL généré à partir de la solution de langage minimale, sélectionnez `ExampleModel`.
+     Par exemple, dans un DSL généré à partir de la solution de langage minimale, sélectionnez `ExampleModel` .
 
 3. Dans la fenêtre **Propriétés** , Set **génère une valeur double dérivée** de **true**.
 
@@ -230,7 +230,7 @@ Vous pouvez autoriser le glissement d’un élément vers un autre, soit à part
 
 5. Inspectez le contenu de **Dsl\Generated Files\DomainClasses.cs**. Recherchez des méthodes nommées `MergeRelate` et examinez leur contenu. Cela vous aidera à écrire vos propres versions.
 
-6. Dans un nouveau fichier de code, écrivez une classe partielle pour la classe de réception et substituez la méthode `MergeRelate`. N’oubliez pas d’appeler la méthode de base. Exemple :
+6. Dans un nouveau fichier de code, écrivez une classe partielle pour la classe de réception et substituez la `MergeRelate` méthode. N’oubliez pas d’appeler la méthode de base. Par exemple :
 
     ```csharp
     partial class ExampleModel
@@ -259,9 +259,9 @@ Vous pouvez autoriser le glissement d’un élément vers un autre, soit à part
 
 #### <a name="to-write-custom-merge-code"></a>Pour écrire du code de fusion personnalisé
 
-1. Dans **Dsl\Generated Code\DomainClasses.cs**, inspectez les méthodes nommées `MergeRelate`. Ces méthodes créent des liens entre un nouvel élément et le modèle existant.
+1. Dans **Dsl\Generated Code\DomainClasses.cs**, inspectez les méthodes nommées `MergeRelate` . Ces méthodes créent des liens entre un nouvel élément et le modèle existant.
 
-    Examinez également les méthodes nommées `MergeDisconnect`. Ces méthodes dissocient un élément du modèle lorsqu’il doit être supprimé.
+    Examinez également les méthodes nommées `MergeDisconnect` . Ces méthodes dissocient un élément du modèle lorsqu’il doit être supprimé.
 
 2. Dans l' **Explorateur DSL**, sélectionnez ou créez la directive de fusion d’éléments que vous souhaitez personnaliser. Dans la fenêtre **Détails DSL** , Set **utilise la fusion personnalisée**.
 
@@ -269,11 +269,11 @@ Vous pouvez autoriser le glissement d’un élément vers un autre, soit à part
 
 3. Régénérez la solution. Elle prendra plus de temps que d’habitude, car les fichiers de code générés seront mis à jour à partir du modèle.
 
-    Des messages d’erreur s’affichent. Double-cliquez sur les messages d’erreur pour afficher les instructions dans le code généré. Ces instructions vous demandent de fournir deux méthodes, `MergeRelate`*YourDomainClass* et `MergeDisconnect`*YourDomainClass*
+    Des messages d’erreur s’affichent. Double-cliquez sur les messages d’erreur pour afficher les instructions dans le code généré. Ces instructions vous demandent de fournir deux méthodes, `MergeRelate` *YourDomainClass* et `MergeDisconnect` *YourDomainClass*
 
 4. Écrivez les méthodes dans une définition de classe partielle dans un fichier de code séparé. Les exemples que vous avez inspectés précédemment doivent suggérer ce dont vous avez besoin.
 
-   Le code de fusion personnalisé n’affecte pas le code qui crée directement des objets et des relations, et il n’affecte pas les autres EMDs. Pour vous assurer que vos modifications supplémentaires sont implémentées, quelle que soit la façon dont l’élément est créé, envisagez d’écrire un `AddRule` et un `DeleteRule` à la place. Pour plus d’informations, consultez [règles de propagation des modifications dans le modèle](../modeling/rules-propagate-changes-within-the-model.md).
+   Le code de fusion personnalisé n’affecte pas le code qui crée directement des objets et des relations, et il n’affecte pas les autres EMDs. Pour vous assurer que vos modifications supplémentaires sont implémentées, quelle que soit la façon dont l’élément est créé, envisagez d’écrire un `AddRule` et un à la `DeleteRule` place. Pour plus d’informations, consultez [règles de propagation des modifications dans le modèle](../modeling/rules-propagate-changes-within-the-model.md).
 
 ## <a name="redirecting-a-merge-operation"></a>Redirection d’une opération de fusion
  Une directive de fusion directe redirige la cible d’une opération de fusion. En règle générale, la nouvelle cible est le parent d’incorporation de la cible initiale.
@@ -284,7 +284,7 @@ Vous pouvez autoriser le glissement d’un élément vers un autre, soit à part
 
 #### <a name="to-create-a-forward-merge-directive"></a>Pour créer une directive de fusion directe
 
-1. Créez une solution [!INCLUDE[dsl](../includes/dsl-md.md)] à l’aide du modèle de modèle de composant.
+1. Créez une [!INCLUDE[dsl](../includes/dsl-md.md)] solution à l’aide du modèle de modèle de composant.
 
 2. Affichez l' **Explorateur DSL** en ouvrant DslDefinition. DSL.
 
@@ -308,7 +308,7 @@ Vous pouvez autoriser le glissement d’un élément vers un autre, soit à part
 
 9. Enregistrez la solution, puis transformez les modèles en cliquant sur le bouton le plus à droite dans la barre d’outils **Explorateur de solutions** .
 
-10. Générez et exécutez la solution. Une nouvelle instance de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] s’affiche.
+10. Créez et exécutez la solution. Une nouvelle instance de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] s’affiche.
 
 11. Dans **Explorateur de solutions**, ouvrez Sample. MyDSL. Le diagramme et la **boîte à outils ComponentLanguage** s’affichent.
 

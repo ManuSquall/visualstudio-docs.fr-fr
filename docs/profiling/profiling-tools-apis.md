@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: ed4fef32c04d68f37df71101447a4e24f39eecba
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74772075"
 ---
 # <a name="profiling-tools-apis"></a>API des outils de profilage
@@ -22,11 +22,11 @@ Vous pouvez insérer des méthodes managées ou natives des API des outils de pr
 
 ## <a name="in-this-section"></a>Contenu de cette section
 
-[Informations de référence sur l’API du profileur Visual Studio (native)](../profiling/visual-studio-profiler-api-reference-native.md)
+[Informations de référence sur l’API du profileur Visual Studio (natif)](../profiling/visual-studio-profiler-api-reference-native.md)
 
 Décrit les méthodes des outils de profilage C++.
 
-[Profileur](/previous-versions/ms242704(v=vs.140))
+[Profiler](/previous-versions/ms242704(v=vs.140))
 
 Décrit les méthodes des outils de profilage .NET.
 

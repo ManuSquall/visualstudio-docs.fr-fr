@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4b6481a56b4cbc254baaee3ae087201df69c371b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534210"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Définir une commande de menu sur un diagramme de modélisation
@@ -166,13 +166,13 @@ Dans Visual Studio, vous pouvez définir des éléments de menu supplémentaires
 
          **Projet**  =  *Votre projet de bibliothèque de classes*
 
-## <a name="implementing-the-menu-command"></a><a name="Implementing"></a>Implémentation de la commande de menu
+## <a name="implementing-the-menu-command"></a><a name="Implementing"></a> Implémentation de la commande de menu
  La classe de commande de menu implémente les méthodes nécessaires pour <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension>.
 
 |Signature|Description|
 |-|-|
 |`string Text { get; }`|Retourne l’étiquette de votre élément de menu.|
-|`void QueryStatus(IMenuCommand command);`|Appelée quand l’utilisateur clique avec le bouton droit sur le diagramme.<br /><br /> Cette méthode ne doit pas modifier le modèle.<br /><br /> Utilisez `DiagramContext.CurrentDiagram.SelectedShapes` pour déterminer si vous souhaitez que la commande apparaisse et soit activée.<br /><br /> Définissez :<br /><br /> -   `command.Visible`à `true` si la commande doit apparaître dans le menu quand l’utilisateur clique avec le bouton droit dans le diagramme<br />-   `command.Enabled`sur `true` si l’utilisateur peut cliquer sur la commande dans le menu<br />-   `command.Text`pour définir l’étiquette de menu de manière dynamique|
+|`void QueryStatus(IMenuCommand command);`|Appelée quand l’utilisateur clique avec le bouton droit sur le diagramme.<br /><br /> Cette méthode ne doit pas modifier le modèle.<br /><br /> Utilisez `DiagramContext.CurrentDiagram.SelectedShapes` pour déterminer si vous souhaitez que la commande apparaisse et soit activée.<br /><br /> Définissez :<br /><br /> -   `command.Visible` à `true` si la commande doit apparaître dans le menu quand l’utilisateur clique avec le bouton droit dans le diagramme<br />-   `command.Enabled` sur `true` si l’utilisateur peut cliquer sur la commande dans le menu<br />-   `command.Text` pour définir l’étiquette de menu de manière dynamique|
 |`void Execute (IMenuCommand command);`|Appelée quand l’utilisateur clique sur votre élément de menu, s’il est visible et activé.|
 
 ### <a name="accessing-the-model-in-code"></a>Accès au modèle dans le code
@@ -209,7 +209,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
  Toutefois, sachez que le magasin de modèles n’est pas thread-safe. Vous devez toujours utiliser le thread d’interface utilisateur pour effectuer des mises à jour et, dans la mesure du possible, empêcher l’utilisateur d’apporter des modifications pendant que l’opération d’arrière-plan est en cours. Pour obtenir un exemple, consultez [mettre à jour un modèle UML à partir d’un thread d’arrière-plan](../modeling/update-a-uml-model-from-a-background-thread.md).
 
-## <a name="executing-the-menu-command"></a><a name="Executing"></a>Exécution de la commande de menu
+## <a name="executing-the-menu-command"></a><a name="Executing"></a> Exécution de la commande de menu
  À des fins de test, exécutez votre commande en mode débogage.
 
 #### <a name="to-test-the-menu-command"></a>Pour tester la commande de menu
@@ -240,7 +240,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
     - le type de diagramme de modèle que vous utilisez (classe UML, séquence, etc.) est répertorié comme l’un des attributs de classe de commande de menu `[ClassDesignerExtension]`, `[SequenceDesignerExtension]` et ainsi de suite.
 
-## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a>Installation et désinstallation d’une extension
+## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a> Installation et désinstallation d’une extension
  Vous pouvez installer une extension [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] sur votre propre ordinateur et sur d’autres ordinateurs.
 
 #### <a name="to-install-an-extension"></a>Pour installer une extension

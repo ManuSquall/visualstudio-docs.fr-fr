@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b634b11418ef2d4220dc4eb07c825b514ab5494c
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74301196"
 ---
 # <a name="customize-your-model-with-profiles-and-stereotypes"></a>Personnaliser votre modèle avec des profils et des stéréotypes
@@ -38,7 +38,7 @@ Dans Visual Studio, vous pouvez adapter les éléments de modèle UML standard, 
 
 ## <a name="related-topics"></a>Rubriques connexes
 
-|Titre|Description|
+|Intitulé|Description|
 |-----------|-----------------|
 |[Ajouter des stéréotypes à des éléments de modèle UML](../modeling/add-stereotypes-to-uml-model-elements.md)|Placement d'un élément de modèle dans un package, liaison du package à un profil et application d'un stéréotype à l'élément.|
 |[Stéréotypes standard pour les modèles UML](../modeling/standard-stereotypes-for-uml-models.md)|Les profils standard UML L2 et L3 sont installés avec Visual Studio, et chaque modèle est lié à eux par défaut. Ils fournissent des stéréotypes que vous pouvez utiliser pour annoter vos modèles.<br /><br /> Par exemple, vous pouvez appliquer le stéréotype « spécification » à une classe pour indiquer qu'il vise uniquement à définir le comportement extérieurement visible de ses instances.|

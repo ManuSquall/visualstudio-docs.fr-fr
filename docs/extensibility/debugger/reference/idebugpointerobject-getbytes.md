@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerObject::GetBytes ( Microsoft Docs
+title: 'IDebugPointerObject :: GetBytes | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 17bc39f65d7c4c42b4f958b559df7c5b7d3bbdf7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725520"
 ---
 # <a name="idebugpointerobjectgetbytes"></a>IDebugPointerObject::GetBytes
-Obtient la valeur pointée comme une série d’octets consécutifs.
+Obtient la valeur pointée sous la forme d’une série d’octets consécutifs.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -47,23 +47,23 @@ int GetBytes(
 
 ## <a name="parameters"></a>Paramètres
 `dwStart`\
-[dans] Un décalage, dans les octets, dès le début de l’objet pointé vers.
+dans Offset, en octets, à partir du début de l’objet vers lequel pointe.
 
 `dwCount`\
-[dans] Le nombre d’octets à récupérer.
+dans Nombre d’octets à récupérer.
 
 `pBytes`\
-[dans, dehors] Un tableau qui est rempli avec la valeur comme une série d’octets consécutifs, à partir de la compensation donnée de l’objet pointé vers.
+[in, out] Tableau qui est rempli avec la valeur sous la forme d’une série d’octets consécutifs, en commençant au décalage donné par rapport à l’objet pointé.
 
 `pdwBytes`\
-[out] Retourne le nombre d’octets effectivement récupérés.
+à Retourne le nombre d’octets réellement récupérés.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de succès, les retours S_OK; autrement, renvoie un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes
- Cette méthode est utilisée si le pointeur représenté par cet [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) pointe vers un type primitif ou un simple tableau de types primitifs (c’est-à-dire un tableau qui peut être représenté par une simple séquence d’octets).
+ Cette méthode est utilisée si le pointeur représenté par ce [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) pointe vers un type primitif ou un tableau simple de types primitifs (autrement dit, un tableau qui peut être représenté par une séquence simple d’octets).
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)
-- [SetBytes SetBytes](../../../extensibility/debugger/reference/idebugpointerobject-setbytes.md)
+- [SetBytes](../../../extensibility/debugger/reference/idebugpointerobject-setbytes.md)

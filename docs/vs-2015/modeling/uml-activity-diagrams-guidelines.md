@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 692859008891439e4af3d751306bfd3ee6d351e8
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74298986"
 ---
 # <a name="uml-activity-diagrams-guidelines"></a>Diagrammes d'activités UML : instructions
@@ -43,7 +43,7 @@ Dans Visual Studio, vous pouvez dessiner un diagramme d'activités pour décrire
 
   Pour obtenir des informations de référence sur les éléments des diagrammes d’activités, consultez [diagrammes d’activités UML : référence](../modeling/uml-activity-diagrams-reference.md).
 
-## <a name="Relationships"></a>Relation avec d’autres diagrammes
+## <a name="relationship-to-other-diagrams"></a><a name="Relationships"></a> Relation avec d’autres diagrammes
  Si vous dessinez un diagramme d'activités pour décrire un processus d'entreprise ou la manière dont les utilisateurs se servent de votre système, vous pouvez dessiner un diagramme de cas d'usage pour afficher une vue différente des mêmes informations. Dans le diagramme de cas d'usage, vous dessinez des actions sous la forme de cas d'usage. Attribuez aux cas d'usage les mêmes noms que ceux des actions correspondantes. Grâce à la vue des cas d'usage, vous pouvez :
 
 - afficher dans un même diagramme la façon dont les actions/cas d'usage importants sont composés d'actions/cas d'usage de plus petite taille, à l'aide de la relation Include ;
@@ -56,7 +56,7 @@ Dans Visual Studio, vous pouvez dessiner un diagramme d'activités pour décrire
 
   Dans un diagramme d'activités, vous pouvez afficher le flux des données passées entre des actions. Consultez la section sur la [Description du Data Flow](#DataFlows). Mais un diagramme d'activités ne décrit pas la structure des données. Pour cela, vous pouvez dessiner un diagramme de classes UML. Pour plus d’informations, consultez [diagrammes de classes UML : indications](../modeling/uml-class-diagrams-guidelines.md).
 
-## <a name="BasicSteps"></a>Étapes de base pour dessiner des diagrammes d’activités
+## <a name="basic-steps-for-drawing-activity-diagrams"></a><a name="BasicSteps"></a> Étapes de base pour dessiner des diagrammes d’activités
  Les étapes détaillées de création des diagrammes de modélisation sont décrites dans [modifier des modèles et des diagrammes UML](../modeling/edit-uml-models-and-diagrams.md).
 
 #### <a name="to-draw-an-activity-diagram"></a>Pour dessiner un diagramme d'activités
@@ -100,12 +100,12 @@ Dans Visual Studio, vous pouvez dessiner un diagramme d'activités pour décrire
     > [!NOTE]
     > L'activité apparaît uniquement dans l'Explorateur de modèles UML quand vous ajoutez le premier élément au diagramme.
 
-## <a name="SimpleControlFlow"></a>Description du workflow de contrôle
+## <a name="describing-control-flow"></a><a name="SimpleControlFlow"></a> Description du workflow de contrôle
  Un diagramme d'activités décrit un processus d'entreprise ou un algorithme de logiciel sous la forme d'une série d'actions. Les flèches du connecteur montrent la façon dont le contrôle passe de manière séquentielle d'une action à la suivante. En règle générale, une action peut uniquement démarrer au terme de l'exécution de l'action précédente.
 
  L'illustration suivante est un exemple d'affichage d'une séquence d'actions montrant des actions, des connecteurs, des branches et des boucles. Chaque élément est expliqué en détail dans les sections suivantes.
 
- ![Diagramme d’activités simple](../modeling/media/uml-actguidectrl.png "UML_ActGuideCtrl")
+ ![Diagramme d'activités simple](../modeling/media/uml-actguidectrl.png "UML_ActGuideCtrl")
 
  Les diagrammes d’activités utilisent des **actions** et des **connecteurs** pour décrire votre système ou votre application sous la forme d’une série d’actions avec le contrôle qui circule de manière séquentielle d’une action à la suivante.
 
@@ -149,7 +149,7 @@ Dans Visual Studio, vous pouvez dessiner un diagramme d'activités pour décrire
 
      Cette méthode est particulièrement utile quand vous décrivez une sous-activité ou quand il n'est pas nécessaire d'indiquer de manière explicite ce qui initie l'activité. Par exemple, l'activité Commander un repas commence clairement quand un client a faim.
 
-- **Accepter le nœud d’événement**
+- **Nœud Accepter un événement**
 
      Créez des **nœuds accepter les événements**, comme décrit dans la section [flux simultanés](#Concurrent), pour indiquer le début d’un thread qui répond à un événement particulier, tel qu’une entrée d’utilisateur. Ne fournissez pas de flux entrant au nœud. L'omission d'un flux entrant indique qu'un thread est démarré chaque fois que l'événement se produit.
 
@@ -174,7 +174,7 @@ Dans Visual Studio, vous pouvez dessiner un diagramme d'activités pour décrire
 
   Les formes simples ne font pas partie du modèle UML et n'apparaissent pas dans l'Explorateur de modèles UML.
 
-## <a name="DataFlows"></a>Description du workflow de données
+## <a name="describing-data-flow"></a><a name="DataFlows"></a> Description du workflow de données
  Vous pouvez décrire les données passées vers et depuis une activité de deux manières :
 
 - Utilisez un **nœud d’objet**. Il s'agit de la méthode la plus simple pour décrire des informations qui circulent entre des activités. Un nœud d'objet s'apparente à une variable dans un programme. Il représente un élément qui stocke une ou plusieurs valeurs qui passent d'une action à une autre.
@@ -189,7 +189,7 @@ Dans Visual Studio, vous pouvez dessiner un diagramme d'activités pour décrire
 
  Si vous souhaitez décrire ces données sur votre diagramme, vous pouvez remplacer un connecteur par un nœud d'objet et deux connecteurs, comme indiqué dans l'illustration suivante.
 
- ![Les nœuds d’objet peuvent afficher les données transmises entre les actions](../modeling/media/uml-actguidedata.png "UML_ActGuideData")
+ ![Les nœuds d'objet peuvent afficher des données passées entre des actions](../modeling/media/uml-actguidedata.png "UML_ActGuideData")
 
  Notez que les rectangles aux angles arrondis, notamment Expédier les marchandises, représentent des actions où se déroule le traitement. Les rectangles aux angles droits, notamment Adresse d'expédition, représentent un flux d'objets d'une action vers une autre.
 
@@ -203,7 +203,7 @@ Dans Visual Studio, vous pouvez dessiner un diagramme d'activités pour décrire
 #### <a name="buffering-data-in-object-nodes"></a>Mise en mémoire tampon de données dans des nœuds d'objet
  Un nœud d'objet peut jouer le rôle d'une mémoire tampon pour plusieurs objets. Dans l'illustration suivante, le flux de contrôle indique que l'utilisateur peut suivre la boucle [sélection supplémentaire] (1) plusieurs fois, tandis que le nœud d'objet Éléments de menu choisis (2) accumule les choix de l'utilisateur. Enfin, quand l'utilisateur a terminé sa sélection, le contrôle passe à l'action Confirmer la commande (3), qui accepte la liste complète de choix de la mémoire tampon Éléments de menu choisis.
 
- ![Mise en mémoire tampon des données dans des nœuds d’objet](../modeling/media/uml-actguidebuffer.png "UML_ActGuideBuffer")
+ ![Mise en mémoire tampon de données dans des nœuds d'objet](../modeling/media/uml-actguidebuffer.png "UML_ActGuideBuffer")
 
  Vous pouvez spécifier la façon dont les éléments sont stockés dans une mémoire tampon en définissant les propriétés du nœud d'objet :
 
@@ -222,7 +222,7 @@ Dans Visual Studio, vous pouvez dessiner un diagramme d'activités pour décrire
 ### <a name="describing-data-flow-with-input-and-output-pins"></a>Description du flux de données avec des broches d'entrée et de sortie
  Utilisez une **broche de sortie** et une **broche d’entrée** pour décrire séparément les sorties d’une action et les entrées vers une autre.
 
- ![Les broches d’entrée et de sortie sont des paramètres d’action](../modeling/media/uml-actguidepins.png "UML_ActGuidePins")
+ ![Les broches d'entrée et de sortie sont des paramètres d'action](../modeling/media/uml-actguidepins.png "UML_ActGuidePins")
 
  Pour créer un code confidentiel, cliquez sur **broche d’entrée** ou **broche de sortie** dans la boîte à outils, puis cliquez sur une action. Vous pouvez ensuite déplacer la broche autour du périmètre de l'action et modifier son nom. Vous pouvez créer des broches d’entrée et de sortie pour tout type d’action, y compris des actions **appeler un comportement**, appeler des **actions d’opération**, envoyer des **signaux**et **accepter des événements**.
 
@@ -236,7 +236,7 @@ Dans Visual Studio, vous pouvez dessiner un diagramme d'activités pour décrire
 
  Vous pouvez également spécifier que le flux d'objet inclut une transformation qui convertit des données entre le type de la broche de sortie et le type de la broche d'entrée. La transformation la plus courante de ce genre extrait juste la partie appropriée d'un plus grand type. L'exemple figurant dans l'illustration implique l'existence d'une transformation qui extrait l'Adresse d'expédition à partir du Détail de la commande.
 
-## <a name="Details"></a>Définition d’une action plus en détail
+## <a name="defining-an-action-in-more-detail"></a><a name="Details"></a> Définition d’une action plus en détail
  Outre l'utilisation du nom de l'action pour clarifier le résultat qui doit être normalement obtenu, voici quelques façons d'ajouter davantage de détails à une action:
 
 - Écrivez une description plus détaillée dans la propriété **Body** . Par exemple, vous pouvez écrire un fragment de code du programme ou pseudo-code, ou une description complète des résultats obtenus.
@@ -245,12 +245,12 @@ Dans Visual Studio, vous pouvez dessiner un diagramme d'activités pour décrire
 
 - Définissez les **post** -conditions locales de l’action et les propriétés des **conditions préalables locales** pour décrire son résultat dans des détails plus spécifiques. Pour plus d’informations, consultez [définition de post-conditions et de conditions préalables](#Postcondition).
 
-### <a name="Subactivities"></a>Description des sous-activités avec des actions appeler un comportement
+### <a name="describing-sub-activities-with-call-behavior-actions"></a><a name="Subactivities"></a> Description des sous-activités avec des actions appeler un comportement
  Vous pouvez décrire le comportement détaillé d'une action à l'aide d'un diagramme d'activités séparé. Un comportement appelé est un diagramme d'activités représenté sur votre diagramme d'activités principal par une Action Appeler un comportement. Vous pouvez également utiliser l'Action Appeler un comportement pour décrire un comportement partagé entre différentes activités pour éviter de dessiner plusieurs fois la sous-activité.
 
  Dans l'illustration suivante, le diagramme 1 affiche une activité qui présente une Action Appeler un comportement et le diagramme 2 affiche le diagramme de sous-activité qui présente le comportement appelé.
 
- ![Un diagramme d’activités distinct affiche des actions détaillées](../modeling/media/uml-actguidedetail.png "UML_ActGuideDetail")
+ ![Un diagramme d'activités distinct affiche des actions détaillées](../modeling/media/uml-actguidedetail.png "UML_ActGuideDetail")
 
 ##### <a name="to-describe-a-sub-activity-with-a-call-behavior-action"></a>Pour décrire une sous-activité avec une Action Appeler un comportement
 
@@ -283,9 +283,9 @@ Dans Visual Studio, vous pouvez dessiner un diagramme d'activités pour décrire
 
 - Dans le diagramme de sous-activités, dessinez des connecteurs qui montrent le flux d'objets vers et depuis chaque nœud du paramètre de l'activité.
 
-  ![Épingler la carte de comportement d’appel aux paramètres d’activité](../modeling/media/uml-actguidesub.png "UML_ActGuideSub")
+  ![Les broches sur l'action Appeler un comportement mappent aux paramètres d'activité](../modeling/media/uml-actguidesub.png "UML_ActGuideSub")
 
-### <a name="Postcondition"></a>Définition de post-conditions et de conditions préalables
+### <a name="defining-postconditions-and-preconditions"></a><a name="Postcondition"></a> Définition de post-conditions et de conditions préalables
  Vous pouvez utiliser les propriétés des post-conditions **locales** et des **conditions préalables locales** pour spécifier en détail le résultat d’une action. Ces propriétés décrivent l'effet de l'action sans décrire la façon dont l'effet est obtenu.
 
  Pour définir ces propriétés, cliquez avec le bouton droit sur l’action, puis cliquez sur **Propriétés**. Tapez les valeurs des propriétés dans la fenêtre Propriétés.
@@ -295,11 +295,11 @@ Dans Visual Studio, vous pouvez dessiner un diagramme d'activités pour décrire
 
  Le client a fourni des détails complets et valides qui sont obligatoires pour le traitement de sa carte de crédit.
 
- Une post-condition peut exprimer une relation entre les états antérieur et postérieur au déroulement de l'action. Exemple :
+ Une post-condition peut exprimer une relation entre les états antérieur et postérieur au déroulement de l'action. Par exemple :
 
  Le taux d'intérêt a doublé par rapport à ce qu'il était précédemment.
 
- Vous pouvez écrire des post-conditions dans un style plus formel, en faisant référence aux attributs spécifiques des données traitées dans les actions. Exemple :
+ Vous pouvez écrire des post-conditions dans un style plus formel, en faisant référence aux attributs spécifiques des données traitées dans les actions. Par exemple :
 
  `InvoiceTotal == Sum(OrderItem.MenuItem.Price)`
 
@@ -319,7 +319,7 @@ Dans Visual Studio, vous pouvez dessiner un diagramme d'activités pour décrire
 
   - Si vous affectez à la valeur **Synchronous** la valeur false, vous indiquez que le Flow peut passer à l’action suivante avant la fin de l’opération appelée. Vous ne devez pas définir des broches de sortie ou des flux de données sortants à partir de l'action.
 
-## <a name="Concurrent"></a>Flux simultanés
+## <a name="concurrent-flows"></a><a name="Concurrent"></a> Flux simultanés
  Vous pouvez utiliser le **nœud de fourche** et le **nœud de jointure** pour décrire deux ou plusieurs threads d’activités pouvant s’exécuter en même temps.
 
  ![Les nœuds de bifurcation et de jointure affichent des flux simultanés](../modeling/media/uml-actguideconcurrent.png "UML_ActGuideConcurrent")
@@ -358,7 +358,7 @@ Dans Visual Studio, vous pouvez dessiner un diagramme d'activités pour décrire
 
  L'exemple suivant présente plusieurs flux vers et depuis des actions.
 
- ![Flux d’objets parallèles](../modeling/media/uml-actguidemulti.png "UML_ActGuideMulti")
+ ![Flux d'objets parallèles](../modeling/media/uml-actguidemulti.png "UML_ActGuideMulti")
 
  Quand l'action « Le client fournit des détails » se termine, elle génère deux objets : « Adresse d'expédition » et « Informations de carte de crédit ». Les deux objets sont ensuite traités par différentes actions.
 
@@ -371,7 +371,7 @@ Dans Visual Studio, vous pouvez dessiner un diagramme d'activités pour décrire
 
  Notez que les connecteurs dans cet exemple sont des flux d'objet, car ils ont tous au moins une extrémité sur un nœud du paramètre de l'activité, un nœud d'objet ou une broche d'entrée ou de sortie.
 
- ![Un Workflow](../modeling/media/uml-actguidestream.png "UML_ActGuideStream")
+ ![Flux de données](../modeling/media/uml-actguidestream.png "UML_ActGuideStream")
 
  1. L'exemple montre trois nœuds du paramètre de l'activité, qui représentent ses entrées et ses sorties.
 
@@ -392,13 +392,13 @@ Dans Visual Studio, vous pouvez dessiner un diagramme d'activités pour décrire
 
   L'exemple montre une transformation. La première action dans Diagramme 1 génère un code postal au niveau d'une broche de sortie. Cet élément est connecté à une broche d'entrée sur la deuxième action. Mais la deuxième action attend une adresse complète. La conversion d'un type à un autre est spécifiée dans une deuxième activité, Recherche d'adresse. Cet élément est référencé à partir de la propriété Transformation du flux d'objet. L'activité Recherche d'adresse contient un nœud du paramètre de l'activité pour le code postal entrant et un autre pour l'adresse complète sortante.
 
-  ![Transformation d’objet définie dans un autre diagramme](../modeling/media/uml-actguidetransform.png "UML_ActGuideTransform")
+  ![Transformation d'objet définie dans un autre diagramme](../modeling/media/uml-actguidetransform.png "UML_ActGuideTransform")
 
   Vous pouvez spécifier une transformation ou une sélection de deux façons :
 
 - En joignant un commentaire à la broche d'entrée ou de sortie.
 
-  - Pour distinguer cette description d’un commentaire général, vous pouvez commencer le commentaire par <\<**transformation**> > ou **<\<>** >.
+  - Pour distinguer cette description d’un commentaire général, vous pouvez commencer le commentaire avec <\<**transformation**>> ou <\<**selection**>>.
 
 - En spécifiant en détail la transformation ou la sélection dans un diagramme d'activités séparé.
 
@@ -408,7 +408,7 @@ Dans Visual Studio, vous pouvez dessiner un diagramme d'activités pour décrire
 
 1. Créez un nouveau diagramme d'activités dans lequel décrire le flux de transformation ou de sélection.
 
-   - Dans **Explorateur de solutions**, cliquez avec le bouton droit sur votre projet, pointez sur **Ajouter**, cliquez sur **nouvel élément**, puis cliquez sur **diagramme d’activités**. Donnez un nom approprié au diagramme pour le flux de transformation ou de sélection. Cliquez sur **Ajouter**.
+   - Dans **Explorateur de solutions**, cliquez avec le bouton droit sur votre projet, pointez sur **Ajouter**, cliquez sur **nouvel élément**, puis cliquez sur **diagramme d’activités**. Donnez un nom approprié au diagramme pour le flux de transformation ou de sélection. Cliquez sur **Add**.
 
 2. Dans le nouveau diagramme :
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::SetPassCount (fr) Microsoft Docs
+title: 'IDebugPendingBreakpoint2 :: SetPassCount | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 732eadc955b9a6c9bdded3d52f038ff58ed9c217
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725678"
 ---
 # <a name="idebugpendingbreakpoint2setpasscount"></a>IDebugPendingBreakpoint2::SetPassCount
-Définit ou modifie le nombre de laissez-passer associé au point d’arrêt en attente.
+Définit ou modifie le nombre de réussites associé au point d’arrêt en attente.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -42,13 +42,13 @@ int SetPassCount( 
 
 ## <a name="parameters"></a>Paramètres
 `bpPassCount`\
-[dans] Une structure [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) qui contient le nombre de laissez-passer.
+dans Structure [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) qui contient le nombre de passes.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Retourne `E_BP_DELETED` si le point d’arrêt a été supprimé.
 
 ## <a name="remarks"></a>Notes
- Tout nombre de laissez-passer qui était auparavant associé au point d’arrêt en attente est perdu. Tous les points de rupture liés à partir de ce point `bpPassCount` de rupture en attente sont appelés à définir leur nombre de laissez-passer sur le paramètre.
+ Tout nombre de réussites précédemment associé au point d’arrêt en attente est perdu. Tous les points d’arrêt liés à ce point d’arrêt en attente sont appelés pour définir leur nombre de passes sur le `bpPassCount` paramètre.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

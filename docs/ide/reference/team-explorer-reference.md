@@ -6,10 +6,10 @@ ms.author: kaelli
 author: KathrynEE
 ms.manager: jillfra
 ms.openlocfilehash: b1a956579b527de9df9d24bd09dda6ae48eff961
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74538573"
 ---
 # <a name="team-explorer-reference"></a>Informations de référence sur Team Explorer
@@ -98,11 +98,11 @@ Consultez l'article :
 - [Installer les outils de livraison continue (CD) pour Visual Studio](/azure/devops/pipelines/apps/cd/azure/aspnet-core-to-acr#install-continuous-delivery-cd-tools-for-visual-studio-2017)
 - [Configurer et exécuter la livraison continue (CD) pour votre application](/azure/devops/pipelines/apps/cd/azure/aspnet-core-to-acr#configure-and-execute-continuous-delivery-cd-for-your-app)
 
-## <a name="settings-page"></a>Page Paramètres
+## <a name="settings-page"></a>Page de paramètres
 
 La page **Paramètres** vous permet de configurer les fonctionnalités d’administration pour un projet ou une collection de projets. Voir les articles suivants :
 
-| Projet | Collection de projets | Autres |
+| Projet | Collection de projets | Autre |
 | - | - | - |
 | [Sécurité, appartenance au groupe](/azure/devops/organizations/security/set-project-collection-level-permissions)<br/>[Sécurité, contrôle de code source (TFVC)](/azure/devops/organizations/security/set-git-tfvc-repository-permissions)<br/>[Zones d’éléments de travail](/azure/devops/organizations/settings/set-area-paths)<br/>[Itérations d’éléments de travail](/azure/devops/organizations/settings/set-iteration-paths-sprints)<br/>[Paramètres du portail](/azure/devops/report/sharepoint-dashboards/configure-or-add-a-project-portal)<br/>[Alertes de projet](/azure/devops/notifications/howto-manage-team-notifications) | [Sécurité, appartenance au groupe](/azure/devops/organizations/security/set-project-collection-level-permissions)<br/>[Contrôle de code source (TFVC)](/azure/devops/repos/tfvc/decide-between-using-local-server-workspace)<br/>[Gestionnaire de modèles de processus](/azure/devops/boards/work-items/guidance/manage-process-templates) | [Paramètres globaux Git](/azure/devops/repos/git/git-config)<br/>[Paramètres de dépôt Git](/azure/devops/repos/git/git-config) |
 

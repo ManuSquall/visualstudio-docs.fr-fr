@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2bf9c64a55f6f3b49cb1e0a50fa532f276394dac
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852000"
 ---
 # <a name="application-page-project-designer-c"></a>Page Application, Concepteur de projet (C#)
@@ -27,7 +27,7 @@ ms.locfileid: "75852000"
 
 Utilisez la page **Application** du **Concepteur de projet** pour spécifier les paramètres d’application et les propriétés du projet.
 
- Pour accéder à la page **Application**, choisissez un nœud de projet (pas le nœud **Solution**) dans l’**Explorateur de solutions**. Ensuite, choisissez **Projet**, **Propriétés** dans la barre de menus. Quand le Concepteur de projet apparaît, cliquez sur l’onglet **Application**.
+ Pour accéder à la page **Application**, choisissez un nœud de projet (pas le nœud **Solution**) dans l’**Explorateur de solutions**. Ensuite, choisissez **Projet**, **Propriétés** dans la barre de menus. Quand le Concepteur de projet s’affiche, cliquez sur l’onglet **Application**.
 
  [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)]
 
@@ -47,9 +47,9 @@ Utilisez la page **Application** du **Concepteur de projet** pour spécifier les
  Par défaut, la valeur est la même que le framework cible que vous avez sélectionné dans la boîte de dialogue **Nouveau projet**.
 
 > [!NOTE]
-> Les packages de prérequis répertoriés dans la [boîte de dialogue Composants requis](../../ide/reference/prerequisites-dialog-box.md) sont définis automatiquement la première fois que vous ouvrez la boîte de dialogue. Si vous modifiez ultérieurement l'infrastructure cible du projet, vous devrez sélectionner manuellement les composants requis pour qu'ils correspondent à la nouvelle version cible de l'infrastructure.
+> Les packages de prérequis répertoriés dans la [boîte de dialogue Composants requis](../../ide/reference/prerequisites-dialog-box.md) sont définis automatiquement la première fois que vous ouvrez la boîte de dialogue. Si vous modifiez ultérieurement le framework cible du projet, vous devrez sélectionner manuellement les composants requis pour qu'ils correspondent au nouveau framework cible.
 
- Pour plus d'informations, voir [Procédure : Cibler une version du .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) et [Présentation du multiciblage Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).
+ Pour plus d’informations, consultez [Guide pratique pour cibler une version du .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) et [Présentation du multiciblage Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).
 
  **Type d’application** Spécifie le type d’application à générer. Pour les applications [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)], vous pouvez spécifier **Application du Windows Store**, **Bibliothèque de classes** ou **Fichier WinMD**. Pour la plupart des autres types d’applications, vous pouvez spécifier **Application Windows**, **Application console**, **Bibliothèque de classes**, **Service Windows** ou **Bibliothèque de contrôles web**.
 
@@ -64,9 +64,9 @@ Utilisez la page **Application** du **Concepteur de projet** pour spécifier les
 
  **Informations de l’assembly** Cliquez sur ce bouton pour afficher la [boîte de dialogue Informations de l’assembly](../../ide/reference/assembly-information-dialog-box.md).
 
- **Objet de démarrage** Définit le point d’entrée à appeler quand l’application se charge. Cet objet est généralement défini sur le formulaire principal de votre application ou sur la procédure `Main` qui s’exécute quand l’application démarre. Comme les bibliothèques de classes n’ont pas de point d’entrée, la seule option disponible pour cette propriété est **(Non défini)** .
+ **Objet de démarrage** Définit le point d’entrée à appeler lors du chargement de l’application. Cet objet est généralement défini sur le formulaire principal de votre application ou sur la procédure `Main` qui s’exécute quand l’application démarre. Comme les bibliothèques de classes n’ont pas de point d’entrée, la seule option disponible pour cette propriété est **(Non défini)**.
 
- Par défaut, dans un projet d’application de navigateur WPF, cette option est **(Non défini)** . L’autre option est *nom_projet*.App. Dans ce type de projet, vous devez définir l’URI de démarrage pour charger une ressource d’interface utilisateur quand l’application démarre. Pour ce faire, ouvrez le fichier Application.xaml dans votre projet et définissez la propriété `StartupUri` sur un fichier .xaml dans votre projet, par exemple, Window1.xaml. Pour obtenir la liste des éléments racines valides, consultez <xref:System.Windows.Application.StartupUri%2A>. Vous devez également définir une méthode `public static void Main()` dans une classe du projet. Cette classe s’affiche dans la liste **Objet de démarrage** comme *nom_projet.nom_classe*. Vous pouvez ensuite sélectionner la classe comme objet de démarrage.
+ Par défaut, dans un projet d’application de navigateur WPF, cette option est **(Non défini)**. L’autre option est *nom_projet*.App. Dans ce type de projet, vous devez définir l’URI de démarrage pour charger une ressource d’interface utilisateur quand l’application démarre. Pour ce faire, ouvrez le fichier Application.xaml dans votre projet et définissez la propriété `StartupUri` sur un fichier .xaml dans votre projet, par exemple, Window1.xaml. Pour obtenir la liste des éléments racines valides, consultez <xref:System.Windows.Application.StartupUri%2A>. Vous devez également définir une méthode `public static void Main()` dans une classe du projet. Cette classe s’affiche dans la liste **Objet de démarrage** comme *nom_projet.nom_classe*. Vous pouvez ensuite sélectionner la classe comme objet de démarrage.
 
  Pour plus d’informations, consultez [/main (Options du compilateur C#)](https://msdn.microsoft.com/library/975cf4d5-36ac-4530-826c-4aad0c7f2049). Pour accéder à cette propriété par programmation, consultez <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
 
@@ -77,7 +77,7 @@ Utilisez la page **Application** du **Concepteur de projet** pour spécifier les
 
  **Icône** Définit le fichier .ico à utiliser comme icône de votre programme. Cliquez sur le bouton de sélection pour rechercher un graphique existant ou tapez le nom du fichier souhaité. Pour plus d’informations, consultez [/win32icon (Options du compilateur C#)](https://msdn.microsoft.com/library/756d9b6d-ab07-41b7-ba58-5bd88f711138). Pour accéder à cette propriété par programmation, consultez <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.
 
- **Manifeste** Sélectionne une option de génération de manifeste quand l’application s’exécute sur Windows Vista sous contrôle de compte d’utilisateur (UAC). Cette option peut avoir les valeurs suivantes :
+ **Manifeste** Sélectionne une option de génération de manifeste quand l’application s’exécute sur Windows Vista sous contrôle de compte d’utilisateur (UAC). Cette option peut avoir les valeurs suivantes :
 
 - **Incorporer les paramètres par défaut dans le fichier manifeste**. Prend en charge le fonctionnement standard de Visual Studio sur Windows Vista, qui incorpore les informations de sécurité dans le fichier exécutable de l’application, en indiquant que `requestedExecutionLevel` doit être `AsInvoker`. Il s'agit de l'option par défaut.
 
@@ -87,7 +87,7 @@ Utilisez la page **Application** du **Concepteur de projet** pour spécifier les
 
   **Fichier de ressources** Sélectionnez cette case d’option, sauf si vous fournissez un fichier de ressources pour le projet. Cette option désactive les options **Icône** et **Manifeste**.
 
-  Entrez un nom de chemin ou utilisez le bouton Parcourir ( **...** ) pour ajouter un fichier de ressources Win32 au projet.
+  Entrez un nom de chemin ou utilisez le bouton Parcourir (**... **) pour ajouter un fichier de ressources Win32 au projet.
 
 ## <a name="see-also"></a>Voir aussi
-[Gestion des propriétés](../../ide/application-properties.md) [de l’application écriture de code dans les solutions Office](https://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)
+[Gestion des propriétés de l’application](../../ide/application-properties.md) [Écriture de code dans les solutions Office](https://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)

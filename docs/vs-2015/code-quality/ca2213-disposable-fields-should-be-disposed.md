@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 887600bad0c3d05ff78050aa4449cf49dc882027
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534574"
 ---
 # <a name="ca2213-disposable-fields-should-be-disposed"></a>CA2213 : Les champs pouvant être supprimés doivent l’être
@@ -32,7 +32,7 @@ ms.locfileid: "85534574"
 |Category|Microsoft. usage|
 |Modification avec rupture|Sans rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Un type qui implémente <xref:System.IDisposable?displayProperty=fullName> déclare des champs de types qui implémentent également <xref:System.IDisposable> . La <xref:System.IDisposable.Dispose%2A> méthode du champ n’est pas appelée par la <xref:System.IDisposable.Dispose%2A> méthode du type déclarant.
 
 ## <a name="rule-description"></a>Description de la règle
@@ -50,7 +50,7 @@ ms.locfileid: "85534574"
  [!code-csharp[FxCop.Usage.IDisposablePattern#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.IDisposablePattern/cs/FxCop.Usage.IDisposablePattern.cs#1)]
 
 ## <a name="example"></a>Exemple
- L’exemple suivant montre un type `TypeB` qui viole cette règle en déclarant un champ `aFieldOfADisposableType` ( `F` dans la discussion précédente) comme type jetable ( `TypeA` ) et n’appelant pas <xref:System.IDisposable.Dispose%2A> sur le champ. `TypeB`correspond à `T` dans la discussion précédente.
+ L’exemple suivant montre un type `TypeB` qui viole cette règle en déclarant un champ `aFieldOfADisposableType` ( `F` dans la discussion précédente) comme type jetable ( `TypeA` ) et n’appelant pas <xref:System.IDisposable.Dispose%2A> sur le champ. `TypeB` correspond à `T` dans la discussion précédente.
 
  [!code-csharp[FxCop.Usage.IDisposableFields#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.IDisposableFields/cs/FxCop.Usage.IDisposableFields.cs#1)]
 

@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 title: Organiser et modifier le code dans Visual Studio
-summary: Renseignez-vous sur le travail avec des projets de code, l’utilisation des fonctionnalités de l’éditeur de code et le maintien d’un style de code cohérent.
+summary: En savoir plus sur l’utilisation des projets de code, l’utilisation des fonctionnalités de l’éditeur de code et la maintenance du style de code cohérent.
 metadata:
   title: Fonctionnalités de l’éditeur de code
-  description: Renseignez-vous sur les fonctionnalités d’édition de code dans Visual Studio.
+  description: En savoir plus sur les fonctionnalités d’édition de code dans Visual Studio.
   ms.prod: visual-studio-windows
   ms.technology: vs-ide-general
   ms.topic: landing-page
@@ -11,13 +11,13 @@ metadata:
   ms.author: jillfra
   ms.date: 10/15/2019
   ms.openlocfilehash: 797df026fb9873c5f50e39fe281e0c9a11688b8f
-  ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+  ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 03/18/2020
+  ms.lasthandoff: 09/02/2020
   ms.locfileid: "74316443"
 landingContent:
-- title: Ouvrez ou créez un projet
+- title: Ouvrir ou créer un projet
   linkLists:
   - linkListType: tutorial
     links:
@@ -29,7 +29,7 @@ landingContent:
     links:
     - text: Utiliser Visual Studio sans project ou solution
       url: develop-code-in-visual-studio-without-projects-or-solutions.md
-- title: Utiliser des fonctionnalités d’édition
+- title: Utiliser les fonctionnalités d’édition
   linkLists:
   - linkListType: overview
     links:
@@ -39,7 +39,7 @@ landingContent:
       url: navigating-code.md
     - text: Générer et corriger du code
       url: code-generation-in-visual-studio.md
-    - text: Utilisez IntelliSense pour l’achèvement du code
+    - text: Utiliser IntelliSense pour la saisie semi-automatique du code
       url: using-intellisense.md
     - text: Gérer les préférences de style de code
       url: code-styles-and-code-cleanup.md
@@ -47,7 +47,7 @@ landingContent:
       url: ../code-quality/roslyn-analyzers-overview.md
     - text: IntelliCode
       url: /visualstudio/intellicode/intellicode-visual-studio
-- title: Commencer avec les langages de programmation
+- title: Prise en main des langages de programmation
   linkLists:
   - linkListType: tutorial
     links:
