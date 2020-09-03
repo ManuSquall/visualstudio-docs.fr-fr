@@ -23,10 +23,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e386277c56f7da50e55e077620cbf649ec6a0c9e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546248"
 ---
 # <a name="intellitrace-features"></a>Fonctionnalités IntelliTrace
@@ -43,12 +43,12 @@ Vous pouvez utiliser IntelliTrace pour enregistrer les événements et les appel
 > [!NOTE]
 > L’étendue de tous les paramètres dans la page d’options **IntelliTrace** est Visual Studio tout entier, et non pas des projets ou des solutions spécifiques. Une modification de ces paramètres s'applique à toutes les instances de Visual Studio, à toutes les sessions de débogage et à tous les projets ou solutions.  
   
-## <a name="choose-the-events-that-intellitrace-records"></a><a name="ChooseEvents"></a>Choisir les événements qu’IntelliTrace enregistre  
+## <a name="choose-the-events-that-intellitrace-records"></a><a name="ChooseEvents"></a> Choisir les événements qu’IntelliTrace enregistre  
  Vous pouvez activer ou désactiver l'enregistrement d'événements IntelliTrace spécifiques.  
   
  Si vous êtes en cours de débogage, interrompez-le. Accédez à **Outils/Options/IntelliTrace/événements IntelliTrace**. Choisissez les événements IntelliTrace à enregistrer.  
   
-## <a name="collect-intellitrace-events-and-call-information"></a><a name="GoingFurther"></a>Collecter les événements IntelliTrace et les informations sur les appels  
+## <a name="collect-intellitrace-events-and-call-information"></a><a name="GoingFurther"></a> Collecter les événements IntelliTrace et les informations sur les appels  
  Cette fonctionnalité n'est pas activée par défaut, mais IntelliTrace peut enregistrer les appels de méthode en plus des événements. Pour activer la collecte des appels de méthode, accédez à **Outils/Options/IntelliTrace/général**, puis sélectionnez **événements IntelliTrace et informations sur les appels**.  
   
  Cette opération vous permet de consulter l'historique de la pile des appels et de vous déplacer vers l'arrière ou vers l'avant dans les appels de votre code. IntelliTrace enregistre des données comme les noms des méthodes, les points d'entrée et de sortie des méthodes, ainsi que certaines valeurs de paramètres et de retour.  
@@ -82,7 +82,7 @@ Vous pouvez utiliser IntelliTrace pour enregistrer les événements et les appel
   
  Essayez de réduire le nombre de modules au minimum. Vous obtiendrez de meilleures performances car il y aura moins de données à recueillir. Vous obtiendrez également moins de bruit dans l'interface utilisateur car il y aura moins de données à parcourir.  
   
-## <a name="saving-intellitrace-data-to-file"></a><a name="SaveSession"></a>Enregistrement des données IntelliTrace dans un fichier  
+## <a name="saving-intellitrace-data-to-file"></a><a name="SaveSession"></a> Enregistrement des données IntelliTrace dans un fichier  
  Vous pouvez enregistrer les données collectées par IntelliTrace, en accédant à **Déboguer/IntelliTrace/enregistrer la session IntelliTrace** pendant le débogage et l’application est dans un état d’arrêt. L'élément de menu est désactivé et vous ne pourrez pas enregistrer les données recueillies par IntelliTrace si l'application est encore en cours d'exécution ou si vous avez arrêté le débogage.  
   
  Vous pouvez configurer IntelliTrace pour enregistrer automatiquement dans un fichier en accédant à **Outils/Options/IntelliTrace/avancé** , puis en sélectionnant **stocker les enregistrements IntelliTrace dans ce répertoire**. Vous pouvez aussi configurer une taille fixe pour le fichier généré. Dans ce cas, IntelliTrace remplace les anciennes données quand l'espace libre est insuffisant. Visual Studio crée deux fichiers pour chaque session IntelliTrace quand elles sont enregistrées automatiquement et que le processus d'hébergement Visual Studio (vshost.exe) est activé.  

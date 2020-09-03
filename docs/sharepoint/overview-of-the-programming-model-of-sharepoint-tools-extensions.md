@@ -15,17 +15,17 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 160751e7f580ede458232f98dc753a1145094f57
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985141"
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>Vue d’ensemble du modèle de programmation des extensions d’outils SharePoint
   Quand vous créez une extension pour les outils SharePoint dans Visual Studio, vous commencez par implémenter une ou plusieurs interfaces d'extensibilité qui sont exposées par ces outils. Dans la plupart des cas, vous utilisez également d'autres types fournis par les outils SharePoint pour implémenter des fonctionnalités dans votre extension. Dans certains scénarios, vous pouvez également utiliser des types dans d'autres modèles objet fournis par Visual Studio et SharePoint. Vous devez comprendre l’objectif de chacun de ces modèles objet et savoir comment les utiliser les uns avec les autres pour créer des extensions pour les outils SharePoint.
 
 ## <a name="extend-the-sharepoint-tools-by-implementing-extensibility-interfaces"></a>Étendre les outils SharePoint en implémentant des interfaces d’extensibilité
- Visual Studio utilise Managed Extensibility Framework (MEF) dans .NET Framework 4 pour fournir le modèle d'extensibilité pour les outils SharePoint. MEF est une API (implémentée dans l'assembly System.ComponentModel.Composition) qui permet aux applications d'exposer des points d'extensibilité et de découvrir et de charger des extensions au moment de l'exécution. Pour plus d’informations sur MEF, [consultez &#40;Managed Extensibility Framework&#41;MEF](/dotnet/framework/mef/index).
+ Visual Studio utilise Managed Extensibility Framework (MEF) dans .NET Framework 4 pour fournir le modèle d'extensibilité pour les outils SharePoint. MEF est une API (implémentée dans l'assembly System.ComponentModel.Composition) qui permet aux applications d'exposer des points d'extensibilité et de découvrir et de charger des extensions au moment de l'exécution. Pour plus d’informations sur MEF, consultez [Managed Extensibility Framework &#40;mef&#41;](/dotnet/framework/mef/index).
 
  Pour étendre les outils SharePoint, implémentez une ou plusieurs interfaces d'extensibilité qui sont exposées par Visual Studio. Vous devez également appliquer l'attribut <xref:System.ComponentModel.Composition.ExportAttribute> et, si nécessaire, des attributs supplémentaires spécifiques aux outils SharePoint, à l'implémentation de votre interface. Le tableau suivant répertorie les interfaces que vous pouvez implémenter pour étendre les outils SharePoint.
 
@@ -83,16 +83,16 @@ ms.locfileid: "72985141"
 ### <a name="visual-studio-automation-object-model"></a>Modèle objet Automation Visual Studio
  Le modèle objet automation Visual Studio fournit des API que vous pouvez utiliser pour automatiser des projets Visual Studio et l'IDE. Utilisez le modèle objet Visual Studio pour effectuer des tâches relatives au projet qui ne sont pas spécifiques aux projets SharePoint, ou pour effectuer d’autres tâches d’automatisation générales dans Visual Studio. En règle générale, ce modèle objet est souvent utilisé dans les macros et les compléments Visual Studio, mais vous pouvez également l’utiliser dans les extensions des outils SharePoint.
 
- La partie principale du modèle objet Automation Visual Studio est définie dans l’assembly *EnvDTE. dll* . Les assemblys *EnvDTE\\\<version >. dll* fournissent des fonctionnalités supplémentaires qui ont été introduites dans des versions spécifiques de Visual Studio. Ces assemblys sont inclus avec Visual Studio.
+ La partie principale du modèle objet Automation Visual Studio est définie dans l’assembly *EnvDTE.dll* . Les assemblys *EnvDTE \\ \<version> . dll* fournissent des fonctionnalités supplémentaires qui ont été introduites dans des versions spécifiques de Visual Studio. Ces assemblys sont inclus avec Visual Studio.
 
  Pour plus d’informations sur le modèle objet Automation, consultez [Référence du kit de développement logiciel (SDK) Visual Studio](../extensibility/visual-studio-sdk-reference.md).
 
 ### <a name="visual-studio-integration-object-model"></a>Modèle objet d’intégration Visual Studio
  Le modèle objet d’intégration fournit des API que vous pouvez utiliser pour ajouter des fonctionnalités à Visual Studio en créant un *VSPackage*. Un package Visual Studio est un module qui étend l’IDE Visual Studio en fournissant des fonctionnalités personnalisées telles que les fenêtres Outil, les éditeurs, les concepteurs, les services et les projets.
 
- Vous pouvez utiliser le modèle objet d’intégration si vous souhaitez ajouter une nouvelle fonctionnalité Visual Studio à utiliser avec les outils SharePoint intégrés. Par exemple, si vous créez un élément de projet SharePoint personnalisé qui représente une action personnalisée pour un site SharePoint, vous pouvez également créer un package Visual Studio qui implémente un concepteur pour l'action personnalisée. Vous pouvez associer le concepteur à l’action personnalisée en ajoutant un élément de menu contextuel à l’élément de projet qui représente l’action personnalisée dans **Explorateur de solutions**. Vous pouvez ouvrir votre concepteur en ouvrant son menu contextuel (en cliquant avec le bouton droit sur l’élément de projet action personnalisée ou en le sélectionnant, puis en choisissant la **touche maj**+**F10** ), puis en choisissant **ouvrir**.
+ Vous pouvez utiliser le modèle objet d’intégration si vous souhaitez ajouter une nouvelle fonctionnalité Visual Studio à utiliser avec les outils SharePoint intégrés. Par exemple, si vous créez un élément de projet SharePoint personnalisé qui représente une action personnalisée pour un site SharePoint, vous pouvez également créer un package Visual Studio qui implémente un concepteur pour l'action personnalisée. Vous pouvez associer le concepteur à l’action personnalisée en ajoutant un élément de menu contextuel à l’élément de projet qui représente l’action personnalisée dans **Explorateur de solutions**. Vous pouvez ouvrir votre concepteur en ouvrant son menu contextuel (en cliquant avec le bouton droit sur l’élément de projet d’action personnalisée ou en le sélectionnant, puis en choisissant l’option **Shift** + **F10** ), puis en choisissant **ouvrir**.
 
- Ce modèle objet est défini dans un jeu d'assemblys qui sont inclus dans le Kit de développement logiciel (SDK) Visual Studio. Voici quelques-uns des principaux assemblys de ce modèle objet : *Microsoft. VisualStudio. Shell. 11.0. dll*, *Microsoft. VisualStudio. Shell. Interop. dll*et *Microsoft. VisualStudio. OLE. Interop. dll*.
+ Ce modèle objet est défini dans un jeu d'assemblys qui sont inclus dans le Kit de développement logiciel (SDK) Visual Studio. Voici quelques-uns des principaux assemblys de ce modèle objet : *Microsoft.VisualStudio.Shell.11.0.dll*, *Microsoft.VisualStudio.Shell.Interop.dll*et *Microsoft.VisualStudio.OLE.Interop.dll*.
 
  Pour plus d’informations sur le modèle objet d’intégration, consultez [vue d’ensemble du modèle Automation](../extensibility/internals/automation-model-overview.md) et [Référence du kit de développement logiciel (SDK) Visual Studio](../extensibility/visual-studio-sdk-reference.md).
 
@@ -103,8 +103,8 @@ ms.locfileid: "72985141"
 
 |Modèle objet|Description|
 |------------------|-----------------|
-|Modèle objet serveur|Le modèle objet serveur fournit l'accès à toutes les fonctionnalités que [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] et [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] exposent par programmation. Ce modèle objet est conçu pour être utilisé par les solutions SharePoint qui s'exécutent sur le serveur SharePoint. La majeure partie de ce modèle objet est définie dans l’assembly *Microsoft. SharePoint. dll* . Pour plus d’informations sur le modèle objet serveur, consultez [utilisation du modèle objet côté serveur SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ee538251(v=office.14)).|
-|Modèle objet client|Le modèle objet client est un sous-ensemble du modèle objet serveur qui permet d'interagir avec des données SharePoint à partir d'un client ou serveur distant. Il est conçu pour réduire le nombre d'allers-retours qui doivent être exécutés pour effectuer des tâches courantes. La majorité du modèle d’objet client est définie dans les assemblys *Microsoft. SharePoint. client. dll* et *Microsoft. SharePoint. client. Runtime. dll* . Pour plus d’informations sur le modèle objet client, consultez [modèle objet client géré](/previous-versions/office/developer/sharepoint-2010/ee537247(v=office.14)).|
+|Modèle objet serveur|Le modèle objet serveur fournit l'accès à toutes les fonctionnalités que [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] et [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] exposent par programmation. Ce modèle objet est conçu pour être utilisé par les solutions SharePoint qui s'exécutent sur le serveur SharePoint. La majeure partie de ce modèle objet est définie dans l’assembly *Microsoft.SharePoint.dll* . Pour plus d’informations sur le modèle objet serveur, consultez [utilisation du modèle objet côté serveur SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ee538251(v=office.14)).|
+|Modèle objet client|Le modèle objet client est un sous-ensemble du modèle objet serveur qui permet d'interagir avec des données SharePoint à partir d'un client ou serveur distant. Il est conçu pour réduire le nombre d'allers-retours qui doivent être exécutés pour effectuer des tâches courantes. La majorité du modèle d’objet client est définie dans les assemblys *Microsoft.SharePoint.Client.dll* et *Microsoft.SharePoint.Client.Runtime.dll* . Pour plus d’informations sur le modèle objet client, consultez [modèle objet client géré](/previous-versions/office/developer/sharepoint-2010/ee537247(v=office.14)).|
 
 ## <a name="see-also"></a>Voir aussi
 - [Étendre les outils SharePoint dans Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)

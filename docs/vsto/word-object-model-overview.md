@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 71e66d6cda802b2b1243911e1927af751e2cdbe9
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985393"
 ---
 # <a name="word-object-model-overview"></a>Vue d’ensemble du modèle objet Word
@@ -39,7 +39,7 @@ ms.locfileid: "72985393"
 
 - [Utiliser des tables](../vsto/working-with-tables.md)
 
-## <a name="understanding"></a>Comprendre le modèle objet Word
+## <a name="understand-the-word-object-model"></a><a name="understanding"></a> Comprendre le modèle objet Word
  Word fournit des centaines d'objets avec lesquels vous pouvez interagir. Ces objets sont organisés selon une hiérarchie qui suit étroitement l'interface utilisateur. L'objet <xref:Microsoft.Office.Interop.Word.Application> se trouve en haut de la hiérarchie. Cet objet représente l'instance active de Word. L'objet <xref:Microsoft.Office.Interop.Word.Application> contient les objets <xref:Microsoft.Office.Interop.Word.Document>, <xref:Microsoft.Office.Interop.Word.Selection>, <xref:Microsoft.Office.Interop.Word.Bookmark>et <xref:Microsoft.Office.Interop.Word.Range> . Chacun de ces objets possède de nombreuses méthodes et propriétés auxquelles vous pouvez accéder pour manipuler l'objet et interagir avec lui.
 
  L'illustration suivante montre une vue de ces objets dans la hiérarchie du modèle objet Word.
@@ -50,7 +50,7 @@ ms.locfileid: "72985393"
 
  Les sections suivantes décrivent brièvement les objets de niveau supérieur et la façon dont ils interagissent les uns avec les autres. Ces objets incluent les cinq éléments suivants :
 
-- Objet Application
+- Objet application
 
 - Objet Document
 
@@ -62,7 +62,7 @@ ms.locfileid: "72985393"
 
   Outre le modèle objet Word, les projets Office dans Visual Studio fournissent des *éléments hôtes* et des *contrôles hôtes* qui étendent certains objets du modèle objet Word. Les éléments hôtes et les contrôles hôtes se comportent comme les objets Word qu'ils étendent, mais ils possèdent également des fonctionnalités supplémentaires, telles que la liaison de données, et des événements supplémentaires. Pour plus d’informations, consultez [automatisation de Word à l’aide d’objets étendus](../vsto/automating-word-by-using-extended-objects.md) et [vue d’ensemble des éléments hôtes et des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md).
 
-### <a name="application-object"></a>Objet Application
+### <a name="application-object"></a>Objet application
  L'objet <xref:Microsoft.Office.Interop.Word.Application> représente l'application Word et est le parent de tous les autres objets. Ses membres s'appliquent généralement à Word dans son ensemble. Vous pouvez utiliser ses propriétés et méthodes pour contrôler l'environnement Word.
 
  Dans les projets de compléments VSTO, vous pouvez accéder à l'objet <xref:Microsoft.Office.Interop.Word.Application> à l'aide du champ `Application` de la classe `ThisAddIn` . Pour plus d’informations, consultez [compléments VSTO du programme](../vsto/programming-vsto-add-ins.md).
@@ -70,7 +70,7 @@ ms.locfileid: "72985393"
  Dans les projets au niveau du document, vous pouvez accéder à l'objet <xref:Microsoft.Office.Interop.Word.Application> en utilisant la propriété <xref:Microsoft.Office.Tools.Word.Document.Application%2A> de la classe `ThisDocument` .
 
 ### <a name="document-object"></a>Objet Document
- L'objet <xref:Microsoft.Office.Interop.Word.Document> est essentiel à la programmation de Word. Il représente un document et tout son contenu. Quand vous ouvrez ou créez un document, vous créez un objet <xref:Microsoft.Office.Interop.Word.Document> , qui est ajouté à la collection <xref:Microsoft.Office.Interop.Word.Documents> de l'objet <xref:Microsoft.Office.Interop.Word.Application> . Le document qui a le focus est appelé le document actif. Il est représenté par la propriété <xref:Microsoft.Office.Interop.Word._Application.ActiveDocument%2A> de l'objet <xref:Microsoft.Office.Interop.Word.Application> .
+ L'objet <xref:Microsoft.Office.Interop.Word.Document> est essentiel à la programmation de Word. Il représente un document et tout son contenu. Quand vous ouvrez ou créez un document, vous créez un objet <xref:Microsoft.Office.Interop.Word.Document> , qui est ajouté à la collection <xref:Microsoft.Office.Interop.Word.Documents> de l'objet <xref:Microsoft.Office.Interop.Word.Application> . Le document qui a le focus est appelé document actif. Il est représenté par la propriété <xref:Microsoft.Office.Interop.Word._Application.ActiveDocument%2A> de l'objet <xref:Microsoft.Office.Interop.Word.Application> .
 
  Les outils de développement Office dans Visual Studio étendent l'objet <xref:Microsoft.Office.Interop.Word.Document> en fournissant le type <xref:Microsoft.Office.Tools.Word.Document> . Ce type est un *élément hôte* qui vous donne accès à toutes les fonctionnalités d'un objet <xref:Microsoft.Office.Interop.Word.Document> et ajoute des événements supplémentaires et la possibilité d'ajouter des contrôles managés.
 
@@ -115,7 +115,7 @@ ms.locfileid: "72985393"
 
   Visual Studio étend l'objet <xref:Microsoft.Office.Interop.Word.Bookmark> en fournissant le contrôle hôte <xref:Microsoft.Office.Tools.Word.Bookmark> . Le contrôle hôte <xref:Microsoft.Office.Tools.Word.Bookmark> se comporte comme un objet <xref:Microsoft.Office.Interop.Word.Bookmark>natif, mais il possède des fonctionnalités de liaison de données et des événements supplémentaires. Vous pouvez lier des données à un contrôle de signet dans un document de la même façon que vous liez des données à un contrôle de zone de texte dans un Windows Form. Pour plus d’informations, consultez [contrôle Bookmark](../vsto/bookmark-control.md).
 
-## <a name="WordOMDocumentation"></a>Utiliser la documentation du modèle objet Word
+## <a name="use-the-word-object-model-documentation"></a><a name="WordOMDocumentation"></a> Utiliser la documentation du modèle objet Word
  Pour obtenir des informations complètes sur le modèle objet Word, vous pouvez vous reporter à la documentation de référence de l'assembly PIA (Primary Interop Assembly) Word et à la documentation de référence du modèle objet VBA (Visual Basic pour Applications).
 
 ### <a name="primary-interop-assembly-reference"></a>Référence d’assembly PIA (Primary Interop Assembly)
@@ -126,10 +126,10 @@ ms.locfileid: "72985393"
 ### <a name="vba-object-model-reference"></a>Référence du modèle objet VBA
  La documentation de référence du modèle objet VBA présente le modèle objet Word tel qu'il est exposé au code VBA. Pour plus d’informations, consultez [Référence du modèle objet Word 2010](/office/vba/api/overview/Word/object-model).
 
- Tous les objets et membres mentionnés dans la documentation de référence du modèle objet VBA correspondent aux types et aux membres de l'assembly PIA Word. Par exemple, l’objet document dans la documentation de référence du modèle objet VBA correspond à l’objet <xref:Microsoft.Office.Interop.Word.Document> dans l’assembly PIA Word. Même si la documentation de référence du modèle objet VBA fournit des exemples de code pour la plupart des propriétés, méthodes et événements, vous devez traduire le code VBA fourni dans cette documentation de référence en code Visual Basic ou Visual C# pour pouvoir les utiliser dans un projet Word créé à l'aide de Visual Studio.
+ Tous les objets et membres mentionnés dans la documentation de référence du modèle objet VBA correspondent aux types et aux membres de l'assembly PIA Word. Par exemple, l’objet document dans la documentation de référence du modèle objet VBA correspond à l' <xref:Microsoft.Office.Interop.Word.Document> objet dans l’assembly PIA Word. Même si la documentation de référence du modèle objet VBA fournit des exemples de code pour la plupart des propriétés, méthodes et événements, vous devez traduire le code VBA fourni dans cette documentation de référence en code Visual Basic ou Visual C# pour pouvoir les utiliser dans un projet Word créé à l'aide de Visual Studio.
 
 ## <a name="see-also"></a>Voir aussi
-- [Assemblys PIA (Primary Interop Assembly) Office](../vsto/office-primary-interop-assemblies.md)
+- [assemblys PIA (Primary Interop Assembly) Office](../vsto/office-primary-interop-assemblies.md)
 - [Automatiser Word à l’aide d’objets étendus](../vsto/automating-word-by-using-extended-objects.md)
 - [Utiliser des documents](../vsto/working-with-documents.md)
 - [Utiliser du texte dans des documents](../vsto/working-with-text-in-documents.md)

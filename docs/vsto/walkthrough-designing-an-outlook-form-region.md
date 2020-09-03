@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 01cfe55964a1d61c2ad200c9538ced9ff0aa5599
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985471"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>Procédure pas à pas : conception d’une zone de formulaire Outlook
@@ -24,7 +24,7 @@ ms.locfileid: "72985471"
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
- Cette procédure pas à pas décrit les tâches suivantes :
+ Cette procédure pas à pas décrit les tâches suivantes :
 
 - Création d’un projet de complément VSTO Outlook.
 
@@ -37,10 +37,10 @@ ms.locfileid: "72985471"
 - Test de la zone de formulaire Outlook
 
 > [!NOTE]
-> Il est possible que pour certains des éléments de l'interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L’édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Il est possible que pour certains des éléments de l'interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L'édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="prerequisites"></a>Configuration requise
- Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :
+## <a name="prerequisites"></a>Prérequis
+ Vous devez disposer des éléments suivants pour exécuter cette procédure pas à pas :
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -53,7 +53,7 @@ ms.locfileid: "72985471"
 
 ### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>Pour créer un projet de complément VSTO Outlook
 
-1. Dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], créez un projet de complément VSTO Outlook portant le nom **MapItAddIn**.
+1. Dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , créez un projet de complément VSTO Outlook portant le nom **MapItAddIn**.
 
 2. Dans la boîte de dialogue **Nouveau projet** , sélectionnez **Créer le répertoire pour la solution**.
 
@@ -122,12 +122,12 @@ ms.locfileid: "72985471"
 
     La classe de fabrique de zones de formulaire `MapItFactory` est exposée.
 
-3. Ajoutez le code ci-après au gestionnaire d'événements `MapItFactory_FormRegionInitializing`. Ce gestionnaire d'événements est appelé quand l'utilisateur ouvre un élément de contact. Le code suivant détermine si l'élément de contact contient une adresse. Si l’élément de contact ne contient pas d’adresse, ce code affecte la **valeur true** à la propriété <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> de la classe <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> et la zone de formulaire n’est pas affichée. Sinon, le complément VSTO déclenche l’événement <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> et affiche la zone de formulaire.
+3. Ajoutez le code ci-après au gestionnaire d'événements `MapItFactory_FormRegionInitializing`. Ce gestionnaire d'événements est appelé quand l'utilisateur ouvre un élément de contact. Le code suivant détermine si l'élément de contact contient une adresse. Si l’élément de contact ne contient pas d’adresse, ce code affecte <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> à la propriété de la <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> classe la **valeur true** et la zone de formulaire n’est pas affichée. Sinon, le complément VSTO déclenche l’événement <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> et affiche la zone de formulaire.
 
     [!code-csharp[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#1)]
     [!code-vb[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#1)]
 
-4. Ajoutez le code ci-après au gestionnaire d'événements <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing>. Ce code exécute les tâches suivantes :
+4. Ajoutez le code ci-après au gestionnaire d'événements <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing>. Ce code effectue les tâches suivantes :
 
    - Concatène chaque adresse figurant dans l'élément de contact et crée une chaîne d'URL.
 
@@ -153,9 +153,9 @@ ms.locfileid: "72985471"
 
     |Type d'adresse|Adresse|
     |------------------|-------------|
-    |**Ouvrable**|**4567 principale St. Buffalo, NY**|
-    |**Accueil**|**1234 nord du Saint-buffle, NY**|
-    |**Autre**|**3456 principale St. Seattle, WA**|
+    |**Métier**|**4567 principale St. Buffalo, NY**|
+    |**Page d'accueil**|**1234 nord du Saint-buffle, NY**|
+    |**Autres**|**3456 principale St. Seattle, WA**|
 
 4. Enregistrez et fermez l'élément de contact.
 

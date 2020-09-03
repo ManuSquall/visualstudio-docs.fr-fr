@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 99caf87000ea9df9260e8926eee4c7136bc9b848
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985493"
 ---
 # <a name="walkthrough-complex-data-binding-in-vsto-add-in-project"></a>Procédure pas à pas : liaison de données complexe dans un projet de complément VSTO
@@ -26,28 +26,28 @@ ms.locfileid: "72985493"
 
  [!INCLUDE[appliesto_xlallapp](../vsto/includes/appliesto-xlallapp-md.md)]
 
- Cette procédure pas à pas décrit les tâches suivantes :
+ Cette procédure pas à pas décrit les tâches suivantes :
 
 - Ajout d’un contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> à une feuille de calcul au moment de l’exécution.
 
-- Créer un <xref:System.Windows.Forms.BindingSource> qui connecte le contrôle à une instance d’un dataset.
+- Création d’un <xref:System.Windows.Forms.BindingSource> qui connecte le contrôle à une instance d’un dataset.
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Configuration requise
- Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :
+## <a name="prerequisites"></a>Prérequis
+ Vous devez disposer des éléments suivants pour exécuter cette procédure pas à pas :
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
 - [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] ou [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
-- Accès à une instance en cours d’exécution de SQL Server 2005 ou SQL Server 2005 Express à laquelle l’exemple de base de données `AdventureWorksLT` est attaché. Vous pouvez télécharger la base de données `AdventureWorksLT` à partir du [SQL Server exemples GitHub référentiel](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks). Pour plus d’informations sur l’attachement d’une base de données, consultez les rubriques suivantes :
+- Accès à une instance en cours d’exécution de SQL Server 2005 ou SQL Server 2005 Express à laquelle l’exemple de base de données `AdventureWorksLT` est attaché. Vous pouvez télécharger la `AdventureWorksLT` base de données à partir du [SQL Server exemples GitHub référentiel](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks). Pour plus d’informations sur l’attachement d’une base de données, consultez les rubriques suivantes :
 
   - Pour attacher une base de données à l’aide d’SQL Server Management Studio ou SQL Server Management Studio Express, consultez [Comment : attacher une base de données (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
 
   - Pour attacher une base de données à l’aide de la ligne de commande, consultez [Comment : attacher un fichier de base de données à SQL Server Express](/previous-versions/sql/).
 
-## <a name="create-a-new-project"></a>Créer un projet
+## <a name="create-a-new-project"></a>Création d'un projet
  La première étape consiste à créer un projet de complément VSTO Excel.
 
 ### <a name="to-create-a-new-project"></a>Pour créer un projet
@@ -58,12 +58,12 @@ ms.locfileid: "72985493"
 
      Visual Studio ouvre le fichier `ThisAddIn.vb` or `ThisAddIn.cs` , et ajoute le projet **Remplissage de feuilles de calcul à partir d’une base de données** dans l’ **Explorateur de solutions**.
 
-## <a name="create-a-data-source"></a>Créer une source de données
+## <a name="create-a-data-source"></a>Création d'une source de données
  Utilisez la fenêtre **Sources de données** pour ajouter un dataset typé à votre projet.
 
 ### <a name="to-add-a-typed-dataset-to-the-project"></a>Pour ajouter un dataset typé au projet
 
-1. Si la fenêtre **sources de données** n’est pas visible, affichez-la dans la barre de menus, en choisissant **Afficher** > autres **sources de données** **Windows** > .
+1. Si la fenêtre **sources de données** n’est pas visible, affichez-la en cliquant sur **Afficher**d'  >  **autres**  >  **sources de données**Windows dans la barre de menus.
 
 2. Choisissez **Ajouter une nouvelle source de données** pour démarrer l' **Assistant Configuration de source de données**.
 
@@ -75,15 +75,15 @@ ms.locfileid: "72985493"
 
 5. Dans la page **Enregistrer la chaîne de connexion dans le fichier de configuration de l’application** , cliquez sur **Suivant**.
 
-6. Dans la page **Choisir vos objets de base de données** , développez **Tables** et sélectionnez **Address (SalesLT)** .
+6. Dans la page **Choisir vos objets de base de données** , développez **Tables** et sélectionnez **Address (SalesLT)**.
 
-7. Cliquez sur **Finish**.
+7. Cliquez sur **Terminer**.
 
     Le fichier *AdventureWorksLTDataSet. xsd* est ajouté à **Explorateur de solutions**. Ce fichier définit les éléments suivants :
 
    - Un dataset typé nommé `AdventureWorksLTDataSet`. Ce dataset représente le contenu de la table **Address (SalesLT)** dans la base de données AdventureWorksLT.
 
-   - Un TableAdapter nommé `AddressTableAdapter`. Ce TableAdapter peut être utilisé pour lire et écrire des données dans le `AdventureWorksLTDataSet`. Pour plus d’informations, consultez [vue d’ensemble de TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
+   - Un TableAdapter nommé `AddressTableAdapter` . Ce TableAdapter peut être utilisé pour lire et écrire des données dans le `AdventureWorksLTDataSet` . Pour plus d’informations, consultez [vue d’ensemble de TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
 
      Vous utiliserez ces deux objets ultérieurement dans cette procédure pas à pas.
 
@@ -126,7 +126,7 @@ ms.locfileid: "72985493"
 
 - Appuyez sur **F5**.
 
-     Un contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> nommé `addressListObject` est créé dans la feuille de calcul. En même temps, un objet dataset nommé `adventureWorksLTDataSet` et un <xref:System.Windows.Forms.BindingSource> nommé `addressBindingSource` sont ajoutés au projet. Le <xref:Microsoft.Office.Tools.Excel.ListObject> est lié au <xref:System.Windows.Forms.BindingSource>, qui est lui-même lié à l’objet dataset.
+     Un contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> nommé `addressListObject` est créé dans la feuille de calcul. Au même moment, un objet dataset nommé `adventureWorksLTDataSet` et un <xref:System.Windows.Forms.BindingSource> nommé `addressBindingSource` sont ajoutés au projet. <xref:Microsoft.Office.Tools.Excel.ListObject> est lié à <xref:System.Windows.Forms.BindingSource>, qui est lui-même lié à l’objet dataset.
 
 ## <a name="see-also"></a>Voir aussi
 

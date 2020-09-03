@@ -9,10 +9,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 27d837c09e5f2f90796c149bf58d1114d7e6352d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546313"
 ---
 # <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153 : Éviter la gestion des exceptions d’état endommagé
@@ -25,7 +25,7 @@ ms.locfileid: "85546313"
 |Category|Microsoft.Security|
 |Modification avec rupture|Sans rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Les[exceptions d’état endommagé (CSE, Corrupted State Exceptions)](https://msdn.microsoft.com/magazine/dd419661.aspx) indiquent une altération de la mémoire dans votre processus. Le fait d’intercepter ces exceptions au lieu d’autoriser le processus à se bloquer peut engendrer des failles de sécurité si une personne malveillante réussit à placer une attaque dans la région de la mémoire endommagée.
 
 ## <a name="rule-description"></a>Description de la règle
@@ -68,7 +68,7 @@ void TestMethod1()
 }
 ```
 
-### <a name="solution-1"></a>Solution 1
+### <a name="solution-1"></a>Solution 1
  Supprimez l’attribut HandleProcessCorruptedExceptions pour faire en sorte que les exceptions ne soient pas gérées.
 
 ```
@@ -89,7 +89,7 @@ void TestMethod1()
 }
 ```
 
-### <a name="solution-2"></a>Solution 2
+### <a name="solution-2"></a>Solution 2
  Supprimez le gestionnaire catch général et interceptez uniquement des types d’exceptions spécifiques.
 
 ```
@@ -110,7 +110,7 @@ void TestMethod1()
 }
 ```
 
-### <a name="solution-3"></a>Solution 3
+### <a name="solution-3"></a>Solution 3
  Levez à nouveau l’exception.
 
 ```

@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4dccd82ea260c6d113ffaf077922c5e22946bbbd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651888"
 ---
 # <a name="how-to-find-topics-in-the-table-of-contents"></a>Comment : rechercher des rubriques dans la table des matières
@@ -32,7 +32,7 @@ Sous l’onglet **Sommaire**, vous pouvez utiliser la table des matières pour r
 > Le nombre de rubriques disponibles dans la table des matières dépend du filtre que vous avez sélectionné.
 
 ## <a name="filter-the-toc"></a>Filtrer la table des matières
- Vous pouvez filtrer la table des matières pour limiter l’étendue des rubriques qui s’affichent sous l’onglet **Sommaire** . les titres apparaissent dans la liste uniquement s’ils contiennent la racine du terme que vous spécifiez. Par exemple, si vous spécifiez le filtre « configurer », seuls les titres qui contiennent « configure » ou « configurer » s'affichent. Les nœuds dont les titres ne contiennent pas le terme sont réduits à un seul nœud avec des points de suspension (...).
+ Vous pouvez filtrer la table des matières pour limiter l’étendue des rubriques qui s’affichent sous l’onglet **Sommaire** . Les titres apparaissent dans la liste uniquement s’ils contiennent la racine du terme que vous spécifiez. Par exemple, si vous spécifiez le filtre « configurer », seuls les titres qui contiennent « configure » ou « configurer » s'affichent. Les nœuds dont les titres ne contiennent pas le terme sont réduits à un seul nœud avec des points de suspension (...).
 
 #### <a name="to-filter-the-toc"></a>Pour filtrer la table des matières
 

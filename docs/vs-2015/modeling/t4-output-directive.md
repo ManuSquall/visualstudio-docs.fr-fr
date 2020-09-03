@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 149370bfee1b142876dff881625d08083afadea4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72652313"
 ---
 # <a name="t4-output-directive"></a>Directive de sortie T4
@@ -21,11 +21,11 @@ ms.locfileid: "72652313"
 
 Dans les modèles de texte [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], la directive `output` sert à définir l'extension du nom de fichier et l'encodage du fichier transformé.
 
- Par exemple, si votre projet [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] inclut un fichier de modèle nommé **MyTemplate.TT** qui contient la directive suivante :
+ Par exemple, si votre [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projet inclut un fichier de modèle nommé **MyTemplate.TT** qui contient la directive suivante :
 
  `<#@output extension=".cs"#>`
 
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] générera ensuite un fichier nommé **MyTemplate.cs**
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]génère ensuite un fichier nommé **MyTemplate.cs**
 
  La directive `output` n'est pas obligatoire dans un modèle de texte au moment de l'exécution (prétraité). Au lieu de cela, votre application obtient la chaîne générée en appelant `TextTransform()`. Pour plus d’informations, consultez [génération de texte au moment de l’exécution avec des modèles de texte T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
@@ -53,7 +53,7 @@ Dans les modèles de texte [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], la dire
  Valeurs acceptables : toute extension de nom de fichier valide.
 
 ## <a name="encoding-attribute"></a>attribut d’encodage
- Spécifie l'encodage à utiliser lors de la génération du fichier de sortie. Exemple :
+ Spécifie l'encodage à utiliser lors de la génération du fichier de sortie. Par exemple :
 
  `<#@ output encoding="utf-8"#>`
 
@@ -71,6 +71,6 @@ Dans les modèles de texte [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], la dire
 
  `utf-32`
 
- `0` (valeur système par défaut)
+ `0` (Valeur système par défaut)
 
  En général, vous pouvez utiliser la chaîne WebName ou le nombre CodePage de n'importe lequel des encodages retournés par <xref:System.Text.Encoding.GetEncodings%2A?displayProperty=fullName>.

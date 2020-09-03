@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 31bf7fe33aa59c3a713d2da81ddbd11ed6899723
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546287"
 ---
 # <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202 : Ne pas supprimer d'objets plusieurs fois
@@ -32,7 +32,7 @@ ms.locfileid: "85546287"
 |Category|Microsoft. usage|
 |Modification avec rupture|Sans rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Une implémentation de méthode contient des chemins d’accès de code qui peuvent provoquer des appels multiples vers <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> ou un équivalent dispose, comme une méthode Close () sur certains types, sur le même objet.
 
 ## <a name="rule-description"></a>Description de la règle

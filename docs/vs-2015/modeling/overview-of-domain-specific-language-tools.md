@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d38aed17d7fdaa694c8c5753705b28b0390dedfc
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72652144"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Vue d'ensemble des outils de langage spécifique à un domaine
@@ -68,7 +68,7 @@ Les Outils Domain-Specific Language (DSL), qui sont hébergés dans [!INCLUDE[vs
 ## <a name="validation-in-dsl-tools"></a>Validation dans les Outils DSL
  DSL offre un niveau de validation pour vous assurer que le modèle de domaine répond aux exigences de base pour générer du code. En règle générale, lorsque vous créez votre propre langage spécifique à un domaine, vous devez ajouter votre propre validation pour exprimer vos règles de logique métier. Pour plus d’informations sur la validation personnalisée, consultez [Validation dans un langage spécifique à un domaine](../modeling/validation-in-a-domain-specific-language.md).
 
- Nous vous recommandons de valider souvent votre langage spécifique à un domaine quand vous le créez. Si votre langage spécifique à un domaine comporte des erreurs de validation, vous ne pouvez pas générer le code source. Le processus de génération de code source à partir des modèles est effectué en cliquant sur **Transformer tous les modèles** dans la barre d’outils de l’Explorateur de solutions. Chaque fois que vous modifiez la définition de langage, veillez également à **Transformer tous les modèles**. Pour plus d’informations, voir [Comment : Créer une solution linguistique spécifique au domaine.](../modeling/how-to-create-a-domain-specific-language-solution.md)
+ Nous vous recommandons de valider souvent votre langage spécifique à un domaine quand vous le créez. Si votre langage spécifique à un domaine comporte des erreurs de validation, vous ne pouvez pas générer le code source. Le processus de génération de code source à partir des modèles est effectué en cliquant sur **Transformer tous les modèles** dans la barre d’outils de l’Explorateur de solutions. Chaque fois que vous modifiez la définition de langage, veillez également à **Transformer tous les modèles**. Pour plus d’informations, consultez [Comment : créer une solution de langage spécifique à un domaine](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
 ## <a name="customization-of-dsl-tools"></a>Personnalisation des Outils DSL
  Vous pouvez fournir du code supplémentaire pour affiner le comportement du modèle et définir des contraintes sur votre langage. Si nécessaire, vous pouvez apporter des changements significatifs en modifiant les modèles de texte.
@@ -78,5 +78,5 @@ Les Outils Domain-Specific Language (DSL), qui sont hébergés dans [!INCLUDE[vs
 
  Quand vous générez et exécutez la solution Outils DSL dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], une deuxième instance de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] vous montre comment votre langage spécifique à un domaine apparaît à l’utilisateur du langage. Après avoir vérifié que tout fonctionne correctement, vous pouvez distribuer le fichier `.vsix` que vous trouverez dans le dossier de génération du projet DslPackage. Vous pouvez utiliser ce fichier pour installer le langage DSL comme extension [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sur d’autres ordinateurs.  Pour plus d’informations, consultez [Déploiement de solutions de langage spécifique à un domaine](../modeling/deploying-domain-specific-language-solutions.md).
 
-## <a name="see-also"></a> Voir aussi
- [Le Glossaire des](../extensibility/the-experimental-instance.md) [outils linguistiques spécifiques au domaine d’instance](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa) expérimentale
+## <a name="see-also"></a>Voir aussi
+ [L’instance expérimentale](../extensibility/the-experimental-instance.md) [Outils Domain-specific language Glossaire](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

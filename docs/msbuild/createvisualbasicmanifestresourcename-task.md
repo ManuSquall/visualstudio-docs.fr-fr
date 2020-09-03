@@ -17,33 +17,33 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6aa419001d2e890c87873862f0575607b31d22c2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77634290"
 ---
 # <a name="createvisualbasicmanifestresourcename-task"></a>CreateVisualBasicManifestResourceName (tâche)
 
-Crée un nom manifeste de style Visual Basic à partir d’un nom de fichier *.resx* donné ou d’une autre ressource.
+Crée un nom de manifeste de style Visual Basic à partir d’un nom de fichier *. resx* donné ou d’une autre ressource.
 
 ## <a name="parameters"></a>Paramètres
 
- Le tableau suivant décrit les paramètres de la [tâche CreateVisualBasicManifestResourceName](../msbuild/createvisualbasicmanifestresourcename-task.md).
+ Le tableau suivant décrit les paramètres de la [tâche CreateVisualBasicManifestResourceName,](../msbuild/createvisualbasicmanifestresourcename-task.md).
 
 | Paramètre | Description |
 | - | - |
-| `ManifestResourceNames` | <xref:Microsoft.Build.Framework.ITaskItem>`[]` paramètre de lecture de sortie seulement.<br /><br /> Noms des manifestes résultants. |
+| `ManifestResourceNames` | <xref:Microsoft.Build.Framework.ITaskItem>`[]`paramètre de sortie en lecture seule.<br /><br /> Noms des manifestes résultants. |
 | `ResourceFiles` | Paramètre `String` requis.<br /><br /> Nom du fichier de ressources à partir duquel créer le nom du manifeste Visual Basic. |
-| `RootNamespace` | Paramètre `String` facultatif.<br /><br /> Espace de noms racine du fichier de ressources, qui provient généralement du fichier projet. Il peut s'agir de `null`. |
+| `RootNamespace` | Paramètre `String` facultatif.<br /><br /> Espace de noms racine du fichier de ressources, qui provient généralement du fichier projet. Peut avoir la valeur `null`. |
 | `PrependCultureAsDirectory` | Paramètre `Boolean` facultatif.<br /><br /> Si `true`, le nom de culture est ajouté comme nom de répertoire juste avant le nom de ressource de manifeste. La valeur par défaut est `true`. |
 | `ResourceFilesWithManifestResourceNames` | Paramètre de sortie `String` en lecture seule facultatif.<br /><br /> Retourne le nom du fichier de ressources qui inclut maintenant le nom de ressource de manifeste. |
 
-## <a name="remarks"></a>Notes 
+## <a name="remarks"></a>Notes
 
- La [tâche CreateVisualBasicManifestResourceName](../msbuild/createvisualbasicmanifestresourcename-task.md) détermine le nom de ressource manifeste approprié à attribuer à un fichier de ressources *.resx* ou autre. La tâche fournit un nom logique à un fichier de ressources, puis l’attache à un paramètre de sortie en tant que métadonnées.
+ La [tâche CreateVisualBasicManifestResourceName,](../msbuild/createvisualbasicmanifestresourcename-task.md) détermine le nom de ressource de manifeste approprié à assigner à un fichier *. resx* donné ou à un autre fichier de ressources. La tâche fournit un nom logique à un fichier de ressources, puis l’attache à un paramètre de sortie en tant que métadonnées.
 
- En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension> , qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task> . Pour une liste de ces paramètres supplémentaires et leurs descriptions, voir [TaskExtension classe de base](../msbuild/taskextension-base-class.md).
+ En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension> , qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task> . Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [classe de base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="see-also"></a>Voir aussi
 

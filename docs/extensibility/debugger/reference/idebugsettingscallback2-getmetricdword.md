@@ -1,5 +1,5 @@
 ---
-title: IDebugSettingsCallback2::GetMetricDword (fr) Microsoft Docs
+title: 'IDebugSettingsCallback2 :: GetMetricDword | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 3b8890cb76d8f15ff0519db5e20d3b8e8866d4eb
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720012"
 ---
 # <a name="idebugsettingscallback2getmetricdword"></a>IDebugSettingsCallback2::GetMetricDword
-Récupère la valeur d’une mesure donnée à son nom.
+Récupère la valeur d’une mesure en fonction de son nom.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -45,18 +45,18 @@ private int GetMetricDword(
 
 ## <a name="parameters"></a>Paramètres
 `pszType`\
-[dans] Type de la métrique.
+dans Type de la métrique.
 
 `guidSection`\
-[dans] Identifiant unique de la section.
+dans Identificateur unique de la section.
 
 `pszMetric`\
-[dans] Nom de la mesure.
+dans Nom de la métrique.
 
 `pdwValue`\
-[out] Retourne la valeur de la mesure.
+à Retourne la valeur de la métrique.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

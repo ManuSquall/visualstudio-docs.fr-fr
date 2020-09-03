@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 49da7d5e7f6a7731a708accb3d52fb6383ff1017
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72652225"
 ---
 # <a name="anonymous-methods-and-code-analysis"></a>Méthodes anonymes et analyse du code
@@ -67,7 +67,7 @@ class Class
 ```
 
 ## <a name="inline-anonymous-methods"></a>Méthodes anonymes Inline
- Les avertissements et les métriques pour une méthode anonyme déclarée comme une assignation Inline à un champ sont associés au constructeur. Si le champ est déclaré comme `static` (`Shared` dans [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]), les avertissements et les métriques sont associés au constructeur de classe. dans le cas contraire, elles sont associées au constructeur d’instance.
+ Les avertissements et les métriques pour une méthode anonyme déclarée comme une assignation Inline à un champ sont associés au constructeur. Si le champ est déclaré comme `static` ( `Shared` dans [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ), les avertissements et les métriques sont associés au constructeur de classe ; sinon, ils sont associés au constructeur d’instance.
 
  Par exemple, dans la classe suivante, tous les avertissements qui se trouvent dans la déclaration de **anonymousMethod1** seront déclenchés par rapport au constructeur par défaut généré implicitement de la **classe**. En revanche, ceux qui se trouvent dans **anonymousMethod2** seront appliqués au constructeur de classe implicitement généré.
 
@@ -108,7 +108,7 @@ class Class
 
  Une classe peut contenir une méthode anonyme inline qui assigne une valeur à un champ ayant plusieurs constructeurs. Dans ce cas, les avertissements et les métriques sont associés à tous les constructeurs, sauf si ce constructeur est chaîné à un autre constructeur de la même classe.
 
- Par exemple, dans la classe suivante, tous les avertissements détectés dans la déclaration de **anonymousMethod** doivent être déclenchés par rapport à la classe **(int)** et à la **classe (String)** , mais pas à la **classe ()** .
+ Par exemple, dans la classe suivante, tous les avertissements détectés dans la déclaration de **anonymousMethod** doivent être déclenchés par rapport à la classe **(int)** et à la **classe (String)** , mais pas à la **classe ()**.
 
 ```vb
 

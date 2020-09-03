@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 23d058e7bdbbe3f12ef4521318236e939e1b22f2
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985436"
 ---
 # <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>Procédure pas à pas : importer une zone de formulaire conçue dans Outlook
@@ -25,7 +25,7 @@ ms.locfileid: "72985436"
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
- Cette procédure pas à pas décrit les tâches suivantes :
+ Cette procédure pas à pas décrit les tâches suivantes :
 
 - conception d’une zone de formulaire à l’aide du Concepteur de zones de formulaire dans Outlook ;
 
@@ -35,15 +35,15 @@ ms.locfileid: "72985436"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Configuration requise
- Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :
+## <a name="prerequisites"></a>Prérequis
+ Vous devez disposer des éléments suivants pour exécuter cette procédure pas à pas :
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
 - [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] ou [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)].
 
 > [!NOTE]
-> Il est possible que pour certains des éléments de l'interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L’édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Il est possible que pour certains des éléments de l'interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L'édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="design-a-form-region-by-using-the-form-region-designer-in-outlook"></a>Concevoir une zone de formulaire à l’aide du concepteur de zones de formulaire dans Outlook
  Dans cette étape, vous allez concevoir une zone de formulaire dans Outlook. Vous enregistrerez ensuite la zone de formulaire à un emplacement facile à trouver pour pouvoir l’importer dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
@@ -108,7 +108,7 @@ ms.locfileid: "72985436"
 
      Nommez la zone de formulaire **TaskFormRegion** , puis enregistrez-la dans un répertoire local sur votre ordinateur.
 
-     Outlook enregistre la zone de formulaire sous la forme d’un fichier de stockage de formulaire Outlook ( *. OFS*). La zone de formulaire est enregistrée sous le nom *TaskFormRegion. OFS*.
+     Outlook enregistre la zone de formulaire sous la forme d’un fichier de stockage de formulaire Outlook (*. OFS*). La zone de formulaire est enregistrée sous le nom *TaskFormRegion. OFS*.
 
 27. Quittez Outlook.
 
@@ -136,7 +136,7 @@ ms.locfileid: "72985436"
 
      L’Assistant **zone de formulaire NewOutlook** démarre.
 
-3. Dans la page **Sélectionnez la méthode de création de la zone de formulaire** , cliquez sur **Importer un fichier de stockage de formulaire Outlook (.ofs)** , puis sur **Parcourir**.
+3. Dans la page **Sélectionnez la méthode de création de la zone de formulaire** , cliquez sur **Importer un fichier de stockage de formulaire Outlook (.ofs)**, puis sur **Parcourir**.
 
 4. Dans la boîte de dialogue **Emplacement du fichier de zone du formulaire Outlook existant** , accédez à l’emplacement de *TaskFormRegion.ofs*, sélectionnez **TaskFormRegion.ofs**, cliquez sur **Ouvrir**, puis sur **Suivant**.
 
@@ -166,7 +166,7 @@ ms.locfileid: "72985436"
     [!code-csharp[Trin_Outlook_FR_Import#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#1)]
     [!code-vb[Trin_Outlook_FR_Import#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#1)]
 
-3. Ajoutez le code suivant à la classe `TaskFormRegion` . Ce code exécute les tâches suivantes :
+3. Ajoutez le code suivant à la classe `TaskFormRegion` . Ce code effectue les tâches suivantes :
 
    - Localise l’emplacement de `Microsoft.Office.Interop.Outlook.TaskItem` dans le dossier Tâches en appelant la méthode d’assistance `FindTaskBySubjectName` et en passant l’objet de la tâche souhaitée. Vous allez ajouter la méthode d’assistance `FindTaskBySubjectName` durant la prochaine étape.
 
@@ -182,18 +182,18 @@ ms.locfileid: "72985436"
     [!code-csharp[Trin_Outlook_FR_Import#3](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#3)]
     [!code-vb[Trin_Outlook_FR_Import#3](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#3)]
 
-5. Ajoutez le code suivant à la classe `TaskFormRegion` . Ce code exécute les tâches suivantes :
+5. Ajoutez le code suivant à la classe `TaskFormRegion` . Ce code effectue les tâches suivantes :
 
    - Actualise la zone de liste de la zone de formulaire à l’aide de l’état d’achèvement actuel de chaque tâche dépendante.
 
-   - Analyse le champ de texte masqué pour obtenir l’objet de chaque tâche dépendante. Il localise ensuite chaque `Microsoft.Office.Interop.Outlook.TaskItem` dans le dossier *tâches* en appelant la méthode d’assistance `FindTaskBySubjectName` et en passant l’objet de chaque tâche.
+   - Analyse le champ de texte masqué pour obtenir l’objet de chaque tâche dépendante. Il localise ensuite chaque `Microsoft.Office.Interop.Outlook.TaskItem` dans le dossier *tâches* en appelant la `FindTaskBySubjectName` méthode d’assistance et en passant l’objet de chaque tâche.
 
    - Ajoute les valeurs `Microsoft.Office.Interop.Outlook.TaskItem.Subject` et `Microsoft.Office.Interop.Outlook.TaskItem.PercentComplete` à la zone de liste des tâches dépendantes.
 
      [!code-csharp[Trin_Outlook_FR_Import#4](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#4)]
      [!code-vb[Trin_Outlook_FR_Import#4](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#4)]
 
-6. Remplacez le gestionnaire d'événements `TaskFormRegion_FormRegionShowing` par le code suivant. Ce code exécute les tâches suivantes :
+6. Remplacez le gestionnaire d'événements `TaskFormRegion_FormRegionShowing` par le code suivant. Ce code effectue les tâches suivantes :
 
    - Remplit la zone de liste modifiable de la zone de formulaire à l’aide des objets de tâche, une fois que la zone de formulaire s’affiche.
 
@@ -233,7 +233,7 @@ ms.locfileid: "72985436"
 
 10. Rouvrez l’élément Tâche dépendante dans Outlook.
 
-11. Dans le formulaire de tâche dépendante, remplacez la valeur du champ **% achevé** par **50 %** .
+11. Dans le formulaire de tâche dépendante, remplacez la valeur du champ **% achevé** par **50 %**.
 
 12. Sous l’onglet **tâche** du ruban tâches dépendantes, dans le groupe **actions** , cliquez sur **Enregistrer & fermer**.
 

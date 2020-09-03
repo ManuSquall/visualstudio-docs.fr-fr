@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 4f0d4eee6714d29a1609f6f6531ab18c132d5527
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87234690"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Résoudre les erreurs dans les solutions Office
@@ -40,7 +40,7 @@ ms.locfileid: "87234690"
 
 - [Déboguer des projets](#debugging)
 
-## <a name="create-upgrade-and-open-projects"></a><a name="creating"></a>Créer, mettre à niveau et ouvrir des projets
+## <a name="create-upgrade-and-open-projects"></a><a name="creating"></a> Créer, mettre à niveau et ouvrir des projets
  Vous pouvez rencontrer les erreurs suivantes quand vous créez ou ouvrez des projets Office.
 
 ### <a name="the-project-cannot-be-created"></a>Impossible de créer le projet
@@ -84,7 +84,7 @@ ms.locfileid: "87234690"
 
  Une fois la mise à niveau du projet terminée, vous pourrez désinstaller Visual Studio 2005 Tools pour Office Second Edition Runtime de l'ordinateur de développement s'il n'est pas utilisé par d'autres solutions Office.
 
-## <a name="use-the-designers"></a><a name="designers"></a>Utiliser les concepteurs
+## <a name="use-the-designers"></a><a name="designers"></a> Utiliser les concepteurs
  Vous pouvez rencontrer les erreurs suivantes en utilisant le document, le classeur ou le concepteur de feuille de calcul dans des projets de niveau document.
 
 ### <a name="designer-failed-to-load-correctly"></a>Le concepteur n’a pas pu se charger correctement
@@ -105,7 +105,7 @@ ms.locfileid: "87234690"
 ### <a name="insert-clip-art-command-does-nothing-in-the-visual-studio-designer"></a>La commande INSERT clip art ne fait rien dans le concepteur Visual Studio
  Quand Excel ou Word est ouvert dans le concepteur Visual Studio, le fait de cliquer sur le bouton image **clipart** sous l’onglet **illustrations** du ruban n’ouvre pas le volet de tâches image **clipart** . Pour ajouter une image clipart, vous devez ouvrir la copie du classeur ou du document qui se trouve dans le dossier du projet principal (pas la copie qui se trouve dans le dossier *\Bin* ) en dehors de Visual Studio, ajouter l’image clipart, puis enregistrer le classeur ou le document.
 
-## <a name="write-code"></a><a name="code"></a>Écrire du code
+## <a name="write-code"></a><a name="code"></a> Écrire du code
  Vous pouvez rencontrer les erreurs suivantes quand vous écrivez du code dans des projets Office.
 
 ### <a name="some-events-of-office-objects-are-not-accessible-when-using-c"></a>Certains événements d’objets Office ne sont pas accessibles lors de l’utilisation de C\#
@@ -123,7 +123,7 @@ ms.locfileid: "87234690"
 
  Pour plus d’informations sur les interfaces d’événements dans les assemblys PIA Office, consultez [vue d’ensemble des classes et des interfaces dans les assemblys PIA (Primary Interop Assembly](/previous-versions/office/office-12//ms247299(v=office.12))) d’Office.
 
-### <a name="cannot-reference-office-pia-classes-in-projects-that-target-the-net_v40_short-or-the-net_v45"></a>Impossible de référencer des classes d’assembly PIA Office dans des projets qui ciblent [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou[!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]
+### <a name="cannot-reference-office-pia-classes-in-projects-that-target-the-net_v40_short-or-the-net_v45"></a>Impossible de référencer des classes d’assembly PIA Office dans des projets qui ciblent [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]
  Dans les projets qui ciblent [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], le code qui fait référence à une classe définie dans un assembly PIA Office ne peut pas être compilé par défaut. Les classes dans les assemblys PIA utilisent la classe de convention d’affectation de noms *ObjectName*, telle que <xref:Microsoft.Office.Interop.Word.DocumentClass> et <xref:Microsoft.Office.Interop.Excel.WorkbookClass> . Par exemple, le code suivant issu d’un projet de complément Word VSTO ne peut pas être compilé.
 
 ```vb
@@ -183,7 +183,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 ### <a name="compiler-errors-occur-after-a-namedrange-control-is-deleted"></a>Des erreurs de compilateur se produisent après la suppression d’un contrôle NamedRange
  Si vous supprimez un contrôle <xref:Microsoft.Office.Tools.Excel.NamedRange> d'une feuille de calcul qui n'est pas la feuille de calcul active dans le concepteur, il est possible que le code généré automatiquement ne soit pas supprimé de votre projet et que des erreurs du compilateur se produisent. Pour vous assurer que le code est supprimé, vous devez toujours sélectionner la feuille de calcul qui contient le contrôle <xref:Microsoft.Office.Tools.Excel.NamedRange> pour qu'elle devienne la feuille de calcul active avant la suppression du contrôle. Si le code généré automatiquement n'est pas supprimé quand vous supprimez le contrôle, vous pouvez entraîner la suppression du code par le concepteur en activant la feuille de calcul et en apportant une modification afin que la feuille de calcul soit marquée comme modifiée. Quand vous recréez le projet, le code est supprimé.
 
-## <a name="debug-projects"></a><a name="debugging"></a>Déboguer des projets
+## <a name="debug-projects"></a><a name="debugging"></a> Déboguer des projets
  Vous pouvez rencontrer les erreurs suivantes quand vous déboguez des projets Office.
 
 ### <a name="prompt-to-uninstall-appears-when-you-publish-and-install-a-solution-on-the-development-computer"></a>L’invite de désinstallation s’affiche lorsque vous publiez et installez une solution sur l’ordinateur de développement

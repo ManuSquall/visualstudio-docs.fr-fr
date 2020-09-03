@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: a526bc9504f4f63a7a135978ade02654bbe63ffd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75597111"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Rechercher et sélectionner un type .NET, boîte de dialogue
@@ -39,7 +39,7 @@ Elle est employée dans plusieurs scénarios utilisateur, notamment les suivants
 
 1. Dans la zone **nom de type** , entrez le nom du type que vous souhaitez utiliser.
 
-2. Effectuez l'une des actions suivantes :
+2. Effectuez l’une des actions suivantes :
 
     - Une fois que le nom du type que vous souhaitez utiliser s’affiche dans l’arborescence, dans la zone **nom de type** , double-cliquez sur le type pour le sélectionner.
 
@@ -65,9 +65,9 @@ La liste des types dans la zone **nom de type** est plus petite lorsque vous tap
 
 Par exemple :
 
-1. L' **opération** de frappe correspond à <xref:System.OperationCanceledException> mais pas <xref:System.InvalidOperationException>. Pour trouver <xref:System.InvalidOperationException>, commencez par taper System.I ou Invalid.
+1. L' **opération** de frappe correspond à <xref:System.OperationCanceledException> , mais pas à <xref:System.InvalidOperationException> . Pour trouver <xref:System.InvalidOperationException>, commencez par taper System.I ou Invalid.
 
-2. La saisie de correspondances **génériques** <xref:System.GenericUriParser> mais pas les types dans l’espace de noms <xref:System.Collections.Generic>. Pour rechercher des types dans l’espace de noms <xref:System.Collections.Generic>, tapez le nom complet de l’espace de noms.
+2. La saisie de correspondances **génériques** <xref:System.GenericUriParser> , mais pas de types dans l' <xref:System.Collections.Generic> espace de noms. Pour rechercher des types dans l' <xref:System.Collections.Generic> espace de noms, tapez le nom complet de l’espace de noms.
 
 ## <a name="selecting-a-service-contract-using-the-type-browser-dialog"></a>Sélectionner un contrat de service à l'aide de la boîte de dialogue de l'Explorateur de types
 
@@ -75,4 +75,4 @@ Lorsque vous sélectionnez un type de contrat de service, l'Explorateur de types
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Utilisation des concepteurs d’activités](control-flow-activity-designers.md)
+- [Utilisation des concepteurs d'activités](control-flow-activity-designers.md)

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 927031b4755644aeac553367a4f8a08faa0c0992
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75718634"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Autorisations utilisateur et Visual Studio
@@ -26,21 +26,21 @@ Pour des raisons de sécurité, vous devez exécuter Visual Studio en tant qu’
 > [!WARNING]
 > Vous devez également veiller à ne pas compiler, lancer ou déboguer une solution Visual Studio qui ne provient pas d'une personne de confiance ou d'un emplacement de confiance.
 
-Vous pouvez faire presque tout dans le Visual Studio IDE en tant qu’utilisateur typique. Vous avez besoin d’autorisations d’administrateur pour effectuer les tâches suivantes :
+Vous pouvez faire presque tout dans l’IDE de Visual Studio en tant qu’utilisateur standard. Vous avez besoin d’autorisations d’administrateur pour effectuer les tâches suivantes :
 
 |Domaine|Tâche|Informations supplémentaires|
 |----------|----------| - |
-|Installation|Installer ou modifier Visual Studio.|[Installer Visual Studio](../install/install-visual-studio.md), [Modifier Visual Studio](../install/modify-visual-studio.md)|
+|Installation|Installez ou modifiez Visual Studio.|[Installer Visual Studio](../install/install-visual-studio.md), [modifier Visual Studio](../install/modify-visual-studio.md)|
 ||Installer, mettre à jour ou supprimer le contenu d’aide locale.|[Installer et gérer le contenu d’aide locale](../help-viewer/install-manage-local-content.md)|
-|Boîte à outils|Ajouter des contrôles COM classiques à la **Boîte à outils**.|[Toolbox](../ide/reference/toolbox.md)|
+|Boîte à outils|Ajouter des contrôles COM classiques à la **Boîte à outils**.|[Boîte à outils](../ide/reference/toolbox.md)|
 |Génération|Utiliser des événements post-build qui inscrivent un composant.|[Présentation des étapes de build personnalisée et des événements de build](/cpp/build/understanding-custom-build-steps-and-build-events)|
 ||Inclure une étape d’inscription lors de la gestion de projets C++.||
-|Débogage|Déboguer des applications exécutées avec des autorisations élevées.|[Réglages et préparation de Debugger](../debugger/debugger-settings-and-preparation.md)|
-||Déboguer des applications exécutées sous un compte d’utilisateur différent, comme les sites web ASP.NET.|[Applications Debug ASP.NET et AJAX](../debugger/how-to-enable-debugging-for-aspnet-applications.md)|
+|Débogage|Déboguer des applications exécutées avec des autorisations élevées.|[Paramètres et préparation du débogueur](../debugger/debugger-settings-and-preparation.md)|
+||Déboguer des applications exécutées sous un compte d’utilisateur différent, comme les sites web ASP.NET.|[Déboguer des applications ASP.NET et AJAX](../debugger/how-to-enable-debugging-for-aspnet-applications.md)|
 ||Déboguer dans la zone pour les applications du navigateur XAML (XBAP).|[Hôte WPF (PresentationHost.exe)](/dotnet/framework/wpf/app-development/wpf-host-presentationhost-exe)|
 ||Utiliser l’émulateur pour déboguer des projets de service cloud pour Microsoft Azure.|[Déboguer un service cloud dans Visual Studio](/azure/vs-azure-tools-debug-cloud-services-virtual-machines)|
-||Configurer un pare-feu pour le débogage distant|[Débogage à distance](../debugger/remote-debugging.md)|
-|Outils d’analyse des performances|Attachement à une application avec élévation de privilèges.|[Guide des débutants sur le profilage des performances](../profiling/beginners-guide-to-performance-profiling.md)|
+||Configurer un pare-feu pour le débogage distant|[Débogage distant](../debugger/remote-debugging.md)|
+|Outils d'analyse des performances|Attachement à une application avec élévation de privilèges.|[Guide du débutant en profilage des performances](../profiling/beginners-guide-to-performance-profiling.md)|
 ||Utilisez le profileur GPU.|[Profilage du GPU](../profiling/gpu-usage.md)|
 |Déploiement|Déployer une application web sur les Services IIS (Internet Information Services) sur un ordinateur local.|[Déployer une application web ASP.NET à l’aide de Visual Studio](/aspnet/web-forms/overview/older-versions-getting-started/deployment-to-a-hosting-provider/)|
 
@@ -75,5 +75,5 @@ Vous pouvez également modifier le raccourci de l’application afin de toujours
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Port, migrer et mettre à niveau les projets Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md)
+- [Porter, migrer et mettre à niveau des projets Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md)
 - [Installer Visual Studio](../install/install-visual-studio.md)

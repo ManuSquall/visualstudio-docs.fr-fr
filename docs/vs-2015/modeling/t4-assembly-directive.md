@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bc0e6e7e1530abb63beabc6fa4aedd4a0fa985af
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672342"
 ---
 # <a name="t4-assembly-directive"></a>Directive d'assembly T4
@@ -24,7 +24,7 @@ Dans un modèle de texte au moment du design [!INCLUDE[vsprvs](../includes/vsprv
  Pour obtenir une vue d’ensemble générale de l’écriture de modèles de texte, consultez [écriture d’un modèle de texte T4](../modeling/writing-a-t4-text-template.md).
 
 > [!NOTE]
-> Vous n'avez pas besoin de la directive `assembly` dans un modèle de texte au moment de l'exécution (prétraité). Au lieu de cela, ajoutez les assemblys nécessaires aux **références** de votre projet [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+> Vous n'avez pas besoin de la directive `assembly` dans un modèle de texte au moment de l'exécution (prétraité). Au lieu de cela, ajoutez les assemblys nécessaires aux **références** de votre [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projet.
 
 ## <a name="using-the-assembly-directive"></a>Utilisation de la directive d'assembly
  La syntaxe de la directive est la suivante :
@@ -39,13 +39,13 @@ Dans un modèle de texte au moment du design [!INCLUDE[vsprvs](../includes/vsprv
 
 - Chemin d’accès absolu de l’assembly
 
-  Vous pouvez utiliser la syntaxe `$(variableName)` pour référencer des variables [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] telles que `$(SolutionDir)`, et `%VariableName%` pour référencer des variables d'environnement. Exemple :
+  Vous pouvez utiliser la syntaxe `$(variableName)` pour référencer des variables [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] telles que `$(SolutionDir)`, et `%VariableName%` pour référencer des variables d'environnement. Par exemple :
 
 ```
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>
 ```
 
- La directive assembly n'a aucun effet dans un modèle de texte prétraité. Au lieu de cela, incluez les références nécessaires dans la section **références** de votre projet [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Pour plus d’informations, consultez [génération de texte au moment de l’exécution avec des modèles de texte T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ La directive assembly n'a aucun effet dans un modèle de texte prétraité. Au lieu de cela, incluez les références nécessaires dans la section **références** de votre [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projet. Pour plus d’informations, consultez [génération de texte au moment de l’exécution avec des modèles de texte T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
 ## <a name="standard-assemblies"></a>Assemblys standard
  Les assemblys suivants sont chargés automatiquement, afin que vous n'ayez pas besoin d'écrire des directives d'assembly pour eux :
@@ -66,7 +66,7 @@ Dans un modèle de texte au moment du design [!INCLUDE[vsprvs](../includes/vsprv
 
 - Assembly contenant votre langage spécifique à un domaine.
 
-## <a name="msbuild"></a>Utilisation des propriétés de projet dans MSBuild et Visual Studio
+## <a name="using-project-properties-in-both-msbuild-and-visual-studio"></a><a name="msbuild"></a> Utilisation des propriétés de projet dans MSBuild et Visual Studio
  Les macros Visual Studio telles que $(SolutionDir) ne fonctionnent pas dans MSBuild. Si vous souhaitez transformer les modèles de votre ordinateur de build, vous devez utiliser les propriétés de projet à la place.
 
  Modifiez votre fichier projet .csproj ou .vbproj pour définir une propriété de projet. Cet exemple définit une propriété nommée `myLibFolder` :

@@ -27,10 +27,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e1b1a54d8be5ab4aa9703d318d0b537deff53b6f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72652870"
 ---
 # <a name="save-data-back-to-the-database"></a>Enregistrer les données dans la base de données
@@ -38,11 +38,11 @@ ms.locfileid: "72652870"
 
 Le jeu de données est une copie en mémoire des données. Si vous modifiez ces données, il est conseillé d’enregistrer ces modifications dans la base de données. Pour ce faire, vous disposez de trois méthodes :
 
-- En appelant l’une des méthodes `Update` d’un TableAdapter
+- En appelant l’une des `Update` méthodes d’un TableAdapter
 
 - En appelant l’une des méthodes DBDirect du TableAdapter
 
-- En appelant la méthode UpdateAll sur la `TableAdapterManager` que Visual Studio génère pour vous lorsque le DataSet contient des tables qui sont liées à d’autres tables dans le DataSet
+- En appelant la méthode UpdateAll sur le `TableAdapterManager` que Visual Studio génère pour vous lorsque le DataSet contient des tables qui sont liées à d’autres tables dans le DataSet
 
   Lorsque vous liez des données à des tables de DataSet à des contrôles sur un Windows Form ou une page XAML, l’architecture de liaison de données effectue tout le travail pour vous.
 
@@ -73,29 +73,29 @@ Le jeu de données est une copie en mémoire des données. Si vous modifiez ces 
 ## <a name="merge-datasets"></a>Fusionner des datasets
  Vous pouvez mettre à jour le contenu d’un DataSet en le *fusionnant* avec un autre jeu de données. Cela implique de copier le contenu d’un jeu de données *source* dans le DataSet appelant (appelé DataSet *cible* ). Lorsque vous fusionnez des jeux de données, les nouveaux enregistrements du jeu de données source sont ajoutés au jeu de données cible. En outre, les colonnes supplémentaires du jeu de données source sont ajoutées au jeu de données cible. La fusion de datasets est utile lorsque vous disposez d’un jeu de données local et que vous recevez un deuxième jeu de données à partir d’une autre application. Elle est également utile lorsque vous recevez un deuxième jeu de données à partir d’un composant, tel qu’un service Web XML, ou lorsque vous avez besoin d’intégrer des données provenant de plusieurs datasets.
 
- Lors de la fusion de datasets, vous pouvez passer un argument booléen (`preserveChanges`) qui indique à la méthode <xref:System.Data.DataSet.Merge%2A> s’il faut conserver les modifications existantes dans le DataSet cible. Étant donné que les jeux de données conservent plusieurs versions d’enregistrements, il est important de garder à l’esprit que plusieurs versions des enregistrements sont fusionnées. Le tableau suivant montre comment fusionner un enregistrement dans deux datasets :
+ Lors de la fusion de datasets, vous pouvez passer un argument booléen ( `preserveChanges` ) qui indique <xref:System.Data.DataSet.Merge%2A> à la méthode s’il faut conserver les modifications existantes dans le DataSet cible. Étant donné que les jeux de données conservent plusieurs versions d’enregistrements, il est important de garder à l’esprit que plusieurs versions des enregistrements sont fusionnées. Le tableau suivant montre comment fusionner un enregistrement dans deux datasets :
 
-|DataRowVersion|DataSet cible|Jeu de données source|
+|DataRowVersion|Jeu de données cible|Jeu de données source|
 |--------------------|--------------------|--------------------|
-|D'origine|James Wilson|James C. Wilson|
-|Actuelle|Jim Wilson|James C. Wilson|
+|Original|James Wilson|James C. Wilson|
+|Actuel|Jim Wilson|James C. Wilson|
 
- L’appel de la méthode <xref:System.Data.DataSet.Merge%2A> sur le tableau précédent avec `preserveChanges=false targetDataset.Merge(sourceDataset)` entraîne les opérations suivantes :
+ L’appel de la <xref:System.Data.DataSet.Merge%2A> méthode sur le tableau précédent avec `preserveChanges=false targetDataset.Merge(sourceDataset)` entraîne les opérations suivantes :
 
-|DataRowVersion|DataSet cible|Jeu de données source|
+|DataRowVersion|Jeu de données cible|Jeu de données source|
 |--------------------|--------------------|--------------------|
-|D'origine|James C. Wilson|James C. Wilson|
-|Actuelle|James C. Wilson|James C. Wilson|
+|Original|James C. Wilson|James C. Wilson|
+|Actuel|James C. Wilson|James C. Wilson|
 
- L’appel de la méthode <xref:System.Data.DataSet.Merge%2A> avec `preserveChanges = true targetDataset.Merge(sourceDataset, true)` entraîne les opérations suivantes :
+ L’appel de la <xref:System.Data.DataSet.Merge%2A> méthode avec `preserveChanges = true targetDataset.Merge(sourceDataset, true)` entraîne les opérations suivantes :
 
-|DataRowVersion|DataSet cible|Jeu de données source|
+|DataRowVersion|Jeu de données cible|Jeu de données source|
 |--------------------|--------------------|--------------------|
-|D'origine|James C. Wilson|James C. Wilson|
-|Actuelle|Jim Wilson|James C. Wilson|
+|Original|James C. Wilson|James C. Wilson|
+|Actuel|Jim Wilson|James C. Wilson|
 
 > [!CAUTION]
-> Dans le scénario de `preserveChanges = true`, si la méthode <xref:System.Data.DataSet.RejectChanges%2A> est appelée sur un enregistrement du DataSet cible, elle revient aux données d’origine à partir du jeu de données *source* . Cela signifie que si vous essayez de mettre à jour la source de données d’origine avec le DataSet cible, il est possible qu’elle ne puisse pas trouver la ligne d’origine à mettre à jour. Vous pouvez empêcher une violation de l’accès concurrentiel en remplissant un autre DataSet avec les enregistrements mis à jour de la source de données, puis en effectuant une fusion pour empêcher une violation de l’accès concurrentiel. (Une violation d’accès concurrentiel se produit lorsqu’un autre utilisateur modifie un enregistrement dans la source de données après avoir rempli le jeu de données.)
+> Dans le `preserveChanges = true` scénario, si la <xref:System.Data.DataSet.RejectChanges%2A> méthode est appelée sur un enregistrement dans le DataSet cible, elle revient aux données d’origine à partir du jeu de données *source* . Cela signifie que si vous essayez de mettre à jour la source de données d’origine avec le DataSet cible, il est possible qu’elle ne puisse pas trouver la ligne d’origine à mettre à jour. Vous pouvez empêcher une violation de l’accès concurrentiel en remplissant un autre DataSet avec les enregistrements mis à jour de la source de données, puis en effectuant une fusion pour empêcher une violation de l’accès concurrentiel. (Une violation d’accès concurrentiel se produit lorsqu’un autre utilisateur modifie un enregistrement dans la source de données après avoir rempli le jeu de données.)
 
 ## <a name="update-constraints"></a>Mettre à jour des contraintes
  Pour apporter des modifications à une ligne de données existante, ajoutez ou mettez à jour des données dans les colonnes individuelles. Si le DataSet contient des contraintes (telles que des clés étrangères ou des contraintes non Nullable), il est possible que l’enregistrement soit temporairement dans un état d’erreur lors de sa mise à jour. Autrement dit, il peut être dans un état d’erreur une fois que vous avez terminé la mise à jour d’une colonne, mais avant d’accéder à la suivante.
@@ -109,9 +109,9 @@ Le jeu de données est une copie en mémoire des données. Si vous modifiez ces 
   Une fois que vous avez terminé une mise à jour, vous pouvez réactiver la vérification des contraintes, ce qui réactive également les événements de mise à jour et les déclenche.
 
 > [!NOTE]
-> Dans Windows Forms, l’architecture de liaison de données intégrée au DataGrid interrompt la vérification des contraintes jusqu’à ce que le focus quitte une ligne et que vous n’ayez pas à appeler explicitement les méthodes <xref:System.Data.DataRow.BeginEdit%2A>, <xref:System.Data.DataRow.EndEdit%2A> ou <xref:System.Data.DataRow.CancelEdit%2A>.
+> Dans Windows Forms, l’architecture de liaison de données intégrée au DataGrid interrompt la vérification des contraintes jusqu’à ce que le focus se déplace hors d’une ligne et que vous n’ayez pas à appeler explicitement les <xref:System.Data.DataRow.BeginEdit%2A> <xref:System.Data.DataRow.EndEdit%2A> méthodes, ou <xref:System.Data.DataRow.CancelEdit%2A> .
 
- Les contraintes sont automatiquement désactivées lorsque la méthode <xref:System.Data.DataSet.Merge%2A> est appelée sur un DataSet. Une fois la fusion terminée, si des contraintes sur le DataSet ne peuvent pas être activées, une <xref:System.Data.ConstraintException> est levée. Dans ce cas, la propriété <xref:System.Data.DataSet.EnforceConstraints%2A> est définie sur `false,` et toutes les violations de contrainte doivent être résolues avant de réinitialiser la propriété <xref:System.Data.DataSet.EnforceConstraints%2A> à `true`.
+ Les contraintes sont automatiquement désactivées lorsque la <xref:System.Data.DataSet.Merge%2A> méthode est appelée sur un DataSet. Une fois la fusion terminée, si des contraintes sur le DataSet ne peuvent pas être activées, une <xref:System.Data.ConstraintException> est levée. Dans ce cas, la <xref:System.Data.DataSet.EnforceConstraints%2A> propriété a la valeur `false,` et toutes les violations de contrainte doivent être résolues avant de réaffecter la valeur <xref:System.Data.DataSet.EnforceConstraints%2A> à la propriété `true` .
 
  Une fois que vous avez terminé une mise à jour, vous pouvez réactiver la vérification des contraintes, ce qui réactive également les événements de mise à jour et les déclenche.
 
@@ -121,32 +121,32 @@ Le jeu de données est une copie en mémoire des données. Si vous modifiez ces 
  Lorsque vous mettez à jour un enregistrement dans un jeu de données, il existe un risque d’erreur. Par exemple, vous pouvez écrire par inadvertance des données d’un type incorrect dans une colonne, ou des données trop longues, ou des données qui présentent un autre problème d’intégrité. Ou vous pouvez avoir des contrôles de validation spécifiques à l’application qui peuvent déclencher des erreurs personnalisées pendant n’importe quelle étape d’un événement de mise à jour. Pour plus d’informations, consultez [valider des données dans des datasets](../data-tools/validate-data-in-datasets.md).
 
 ## <a name="maintaining-information-about-changes"></a>Gestion des informations sur les modifications
- Les informations sur les modifications apportées à un jeu de données sont conservées de deux façons : en marquant des lignes qui indiquent qu’elles ont changé (<xref:System.Data.DataRow.RowState%2A>) et en conservant plusieurs copies d’un enregistrement (<xref:System.Data.DataRowVersion>). Grâce à ces informations, les processus peuvent déterminer ce qui a changé dans le jeu de données et peuvent envoyer des mises à jour appropriées à la source de données.
+ Les informations sur les modifications apportées à un jeu de données sont conservées de deux façons : en marquant les lignes qui indiquent qu’elles ont changé ( <xref:System.Data.DataRow.RowState%2A> ) et en conservant plusieurs copies d’un enregistrement ( <xref:System.Data.DataRowVersion> ). Grâce à ces informations, les processus peuvent déterminer ce qui a changé dans le jeu de données et peuvent envoyer des mises à jour appropriées à la source de données.
 
 ### <a name="rowstate-property"></a>Propriété RowState
- La propriété <xref:System.Data.DataRow.RowState%2A> d’un objet <xref:System.Data.DataRow> est une valeur qui fournit des informations sur l’état d’une ligne de données particulière.
+ La <xref:System.Data.DataRow.RowState%2A> propriété d’un <xref:System.Data.DataRow> objet est une valeur qui fournit des informations sur l’état d’une ligne de données particulière.
 
- Le tableau suivant détaille les valeurs possibles de l’énumération <xref:System.Data.DataRowState> :
+ Le tableau suivant détaille les valeurs possibles de l' <xref:System.Data.DataRowState> énumération :
 
 |Valeur DataRowState|Description|
 |------------------------|-----------------|
-|<xref:System.Data.DataRowState>|La ligne a été ajoutée en tant qu’élément à un <xref:System.Data.DataRowCollection>. (Une ligne dans cet État n’a pas de version d’origine correspondante, car elle n’existait pas lors de l’appel de la dernière méthode de <xref:System.Data.DataRow.AcceptChanges%2A>).|
-|<xref:System.Data.DataRowState>|La ligne a été supprimée à l’aide de la <xref:System.Data.DataRow.Delete%2A> d’un objet <xref:System.Data.DataRow>.|
-|<xref:System.Data.DataRowState>|La ligne a été créée mais ne fait partie d’aucune <xref:System.Data.DataRowCollection>. Un objet <xref:System.Data.DataRow> est dans cet État immédiatement après sa création, avant d’être ajouté à une collection et après avoir été supprimé d’une collection.|
+|<xref:System.Data.DataRowState>|La ligne a été ajoutée en tant qu’élément à un <xref:System.Data.DataRowCollection> . (Une ligne dans cet État n’a pas de version d’origine correspondante, car elle n’existait pas lorsque la dernière <xref:System.Data.DataRow.AcceptChanges%2A> méthode a été appelée).|
+|<xref:System.Data.DataRowState>|La ligne a été supprimée à l’aide du <xref:System.Data.DataRow.Delete%2A> d’un <xref:System.Data.DataRow> objet.|
+|<xref:System.Data.DataRowState>|La ligne a été créée, mais n'appartient à aucun <xref:System.Data.DataRowCollection>. Un <xref:System.Data.DataRow> objet est dans cet État immédiatement après qu’il a été créé, avant d’avoir été ajouté à une collection et qu’il a été supprimé d’une collection.|
 |<xref:System.Data.DataRowState>|Une valeur de colonne dans la ligne a été modifiée d’une certaine façon.|
-|<xref:System.Data.DataRowState>|La ligne n’a pas été modifiée depuis le dernier appel de <xref:System.Data.DataRow.AcceptChanges%2A>.|
+|<xref:System.Data.DataRowState>|La ligne n'a pas été modifiée depuis le dernier appel à <xref:System.Data.DataRow.AcceptChanges%2A>.|
 
 ### <a name="datarowversion-enumeration"></a>DataRowVersion (énumération)
- Les jeux de données conservent plusieurs versions d’enregistrements. L’énumération <xref:System.Data.DataRowVersion> d’un objet <xref:System.Data.DataRow> est une valeur qui peut être utilisée pour retourner une version spécifique d’un objet <xref:System.Data.DataRow>.
+ Les jeux de données conservent plusieurs versions d’enregistrements. L' <xref:System.Data.DataRowVersion> énumération d’un <xref:System.Data.DataRow> objet est une valeur qui peut être utilisée pour retourner une version spécifique d’un <xref:System.Data.DataRow> objet.
 
- Le tableau suivant détaille les valeurs possibles de l’énumération <xref:System.Data.DataRowVersion> :
+ Le tableau suivant détaille les valeurs possibles de l' <xref:System.Data.DataRowVersion> énumération :
 
 |Valeur DataRowVersion|Description|
 |--------------------------|-----------------|
-|<xref:System.Data.DataRowVersion>|La version actuelle d’un enregistrement contient toutes les modifications qui ont été effectuées sur l’enregistrement depuis la dernière fois que <xref:System.Data.DataRow.AcceptChanges%2A> a été appelée. Si la ligne a été supprimée, il n’y a pas de version actuelle.|
+|<xref:System.Data.DataRowVersion>|La version actuelle d’un enregistrement contient toutes les modifications qui ont été effectuées sur l’enregistrement depuis l’appel de la dernière fois <xref:System.Data.DataRow.AcceptChanges%2A> . Si la ligne a été supprimée, il n’y a pas de version actuelle.|
 |<xref:System.Data.DataRowVersion>|Valeur par défaut d’un enregistrement, telle que définie par le schéma ou la source de données du DataSet.|
 |<xref:System.Data.DataRowVersion>|La version d’origine d’un enregistrement est une copie de l’enregistrement telle qu’elle était lors de la dernière validation des modifications dans le jeu de données. En pratique, il s’agit généralement de la version d’un enregistrement lu à partir d’une source de données.|
-|<xref:System.Data.DataRowVersion>|Version proposée d’un enregistrement qui est disponible temporairement pendant que vous êtes au milieu d’une mise à jour, c’est-à-dire entre l’heure à laquelle vous avez appelé la méthode <xref:System.Data.DataRow.BeginEdit%2A> et la méthode <xref:System.Data.DataRow.EndEdit%2A>. En général, vous accédez à la version proposée d’un enregistrement dans un gestionnaire pour un événement tel que <xref:System.Data.DataTable.RowChanging>. L’appel de la méthode <xref:System.Data.DataRow.CancelEdit%2A> inverse les modifications et supprime la version proposée de la ligne de données.|
+|<xref:System.Data.DataRowVersion>|Version proposée d’un enregistrement qui est disponible temporairement pendant que vous êtes au milieu d’une mise à jour, c’est-à-dire entre l’heure à laquelle vous avez appelé la <xref:System.Data.DataRow.BeginEdit%2A> méthode et la <xref:System.Data.DataRow.EndEdit%2A> méthode. En général, vous accédez à la version proposée d’un enregistrement dans un gestionnaire pour un événement tel que <xref:System.Data.DataTable.RowChanging> . L’appel <xref:System.Data.DataRow.CancelEdit%2A> de la méthode inverse les modifications et supprime la version proposée de la ligne de données.|
 
  Les versions d’origine et actuelle sont utiles lorsque les informations de mise à jour sont transmises à une source de données. En général, lorsqu’une mise à jour est envoyée à la source de données, les nouvelles informations de la base de données se trouvent dans la version actuelle d’un enregistrement. Les informations de la version d’origine sont utilisées pour localiser l’enregistrement à mettre à jour.
 
@@ -154,21 +154,21 @@ Le jeu de données est une copie en mémoire des données. Si vous modifiez ces 
 
  La version proposée est utile lorsque vous devez effectuer la validation avant de valider les modifications apportées au jeu de données.
 
- Même si les enregistrements ont changé, il n’y a pas toujours d’original ou de versions actuelles de cette ligne. Lorsque vous insérez une nouvelle ligne dans la table, il n’y a pas de version d’origine, uniquement une version actuelle. De même, si vous supprimez une ligne en appelant la méthode `Delete` de la table, il existe une version d’origine, mais pas de version actuelle.
+ Même si les enregistrements ont changé, il n’y a pas toujours d’original ou de versions actuelles de cette ligne. Lorsque vous insérez une nouvelle ligne dans la table, il n’y a pas de version d’origine, uniquement une version actuelle. De même, si vous supprimez une ligne en appelant la méthode de la table `Delete` , il existe une version d’origine, mais pas de version actuelle.
 
- Vous pouvez tester pour déterminer s’il existe une version spécifique d’un enregistrement en interrogeant la méthode de <xref:System.Data.DataRow.HasVersion%2A> d’une ligne de données. Vous pouvez accéder à l’une ou l’autre des versions d’un enregistrement en passant une valeur d’énumération <xref:System.Data.DataRowVersion> comme argument facultatif quand vous demandez la valeur d’une colonne.
+ Vous pouvez tester pour déterminer s’il existe une version spécifique d’un enregistrement en interrogeant la méthode d’une ligne de données <xref:System.Data.DataRow.HasVersion%2A> . Vous pouvez accéder à l’une ou l’autre des versions d’un enregistrement en passant une <xref:System.Data.DataRowVersion> valeur d’énumération en tant qu’argument facultatif quand vous demandez la valeur d’une colonne.
 
 ## <a name="getting-changed-records"></a>Obtention d’enregistrements modifiés
- Il est courant de ne pas mettre à jour chaque enregistrement dans un jeu de données. Par exemple, un utilisateur peut travailler avec un contrôle Windows Forms <xref:System.Windows.Forms.DataGridView> qui affiche de nombreux enregistrements. Toutefois, l’utilisateur ne peut mettre à jour que quelques enregistrements, en supprimer un et en insérer un nouveau. Les datasets et les tables de données fournissent une méthode (`GetChanges`) pour retourner uniquement les lignes qui ont été modifiées.
+ Il est courant de ne pas mettre à jour chaque enregistrement dans un jeu de données. Par exemple, un utilisateur peut travailler avec un contrôle de Windows Forms <xref:System.Windows.Forms.DataGridView> qui affiche de nombreux enregistrements. Toutefois, l’utilisateur ne peut mettre à jour que quelques enregistrements, en supprimer un et en insérer un nouveau. Les datasets et les tables de données fournissent une méthode ( `GetChanges` ) pour retourner uniquement les lignes qui ont été modifiées.
 
- Vous pouvez créer des sous-ensembles d’enregistrements modifiés à l’aide de la méthode `GetChanges` de la table de données (<xref:System.Data.DataTable.GetChanges%2A>) ou du jeu de données (<xref:System.Data.DataSet.GetChanges%2A>) lui-même. Si vous appelez la méthode pour la table de données, elle retourne une copie de la table avec uniquement les enregistrements modifiés. De même, si vous appelez la méthode sur le DataSet, vous recevez un nouveau jeu de données avec uniquement les enregistrements modifiés.
+ Vous pouvez créer des sous-ensembles d’enregistrements modifiés à l’aide `GetChanges` de la méthode de la table de données ( <xref:System.Data.DataTable.GetChanges%2A> ) ou du jeu de données ( <xref:System.Data.DataSet.GetChanges%2A> ) lui-même. Si vous appelez la méthode pour la table de données, elle retourne une copie de la table avec uniquement les enregistrements modifiés. De même, si vous appelez la méthode sur le DataSet, vous recevez un nouveau jeu de données avec uniquement les enregistrements modifiés.
 
- `GetChanges` par lui-même retourne tous les enregistrements modifiés. En revanche, en passant le <xref:System.Data.DataRowState> souhaité en tant que paramètre à la méthode `GetChanges`, vous pouvez spécifier le sous-ensemble d’enregistrements modifiés que vous souhaitez : enregistrements récemment ajoutés, enregistrements marqués pour suppression, enregistrements détachés ou enregistrements modifiés.
+ `GetChanges` retourne tous les enregistrements modifiés. En revanche, en passant le souhaité <xref:System.Data.DataRowState> en tant que paramètre à la `GetChanges` méthode, vous pouvez spécifier le sous-ensemble d’enregistrements modifiés que vous souhaitez : enregistrements récemment ajoutés, enregistrements marqués pour suppression, enregistrements détachés ou enregistrements modifiés.
 
- L’obtention d’un sous-ensemble d’enregistrements modifiés est utile lorsque vous souhaitez envoyer des enregistrements à un autre composant en vue de leur traitement. Au lieu d’envoyer l’ensemble du jeu de données, vous pouvez réduire la surcharge liée à la communication avec l’autre composant en obtenant uniquement les enregistrements dont le composant a besoin. Pour plus d’informations, consultez [Guide pratique pour Récupérez les lignes modifiées ](https://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).
+ L’obtention d’un sous-ensemble d’enregistrements modifiés est utile lorsque vous souhaitez envoyer des enregistrements à un autre composant en vue de leur traitement. Au lieu d’envoyer l’ensemble du jeu de données, vous pouvez réduire la surcharge liée à la communication avec l’autre composant en obtenant uniquement les enregistrements dont le composant a besoin. Pour plus d’informations, consultez [Comment : récupérer des lignes modifiées](https://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).
 
 ## <a name="committing-changes-in-the-dataset"></a>Validation des modifications dans le DataSet
- À mesure que des modifications sont apportées dans le jeu de données, la propriété <xref:System.Data.DataRow.RowState%2A> des lignes modifiées est définie. Les versions d’origine et actuelle des enregistrements sont établies, gérées et mises à votre disposition par la propriété <xref:System.Data.DataRowView.RowVersion%2A>. Les métadonnées stockées dans les propriétés de ces lignes modifiées sont nécessaires pour envoyer les mises à jour appropriées à la source de données.
+ À mesure que des modifications sont apportées dans le jeu de données, la <xref:System.Data.DataRow.RowState%2A> propriété des lignes modifiées est définie. Les versions d’origine et actuelle des enregistrements sont établies, gérées et mises à votre disposition par la <xref:System.Data.DataRowView.RowVersion%2A> propriété. Les métadonnées stockées dans les propriétés de ces lignes modifiées sont nécessaires pour envoyer les mises à jour appropriées à la source de données.
 
  Si les modifications reflètent l’état actuel de la source de données, vous n’avez plus besoin de conserver ces informations. En règle générale, il existe deux fois lorsque le DataSet et sa source sont synchronisés :
 
@@ -176,12 +176,12 @@ Le jeu de données est une copie en mémoire des données. Si vous modifiez ces 
 
 - Après l’envoi des modifications du DataSet à la source de données (mais pas avant, car vous perdriez les informations de modification nécessaires pour envoyer des modifications à la base de données).
 
-  Vous pouvez valider les modifications en attente du jeu de données en appelant la méthode <xref:System.Data.DataSet.AcceptChanges%2A>. En général, <xref:System.Data.DataSet.AcceptChanges%2A> est appelée pendant les heures suivantes dans votre application.
+  Vous pouvez valider les modifications en attente du DataSet en appelant la <xref:System.Data.DataSet.AcceptChanges%2A> méthode. En général, <xref:System.Data.DataSet.AcceptChanges%2A> est appelé pendant les heures suivantes dans votre application.
 
-- Après avoir chargé le jeu de données. Si vous chargez un DataSet en appelant la méthode `Fill` d’un TableAdapter, l’adaptateur valide automatiquement les modifications pour vous. Toutefois, si vous chargez un DataSet en fusionnant un autre jeu de données dans celui-ci, vous devez valider les modifications manuellement.
+- Après avoir chargé le jeu de données. Si vous chargez un DataSet en appelant la méthode d’un TableAdapter `Fill` , l’adaptateur valide automatiquement les modifications pour vous. Toutefois, si vous chargez un DataSet en fusionnant un autre jeu de données dans celui-ci, vous devez valider les modifications manuellement.
 
   > [!NOTE]
-  > Vous pouvez empêcher l’adaptateur de valider automatiquement les modifications lorsque vous appelez la méthode `Fill` en affectant à la propriété `AcceptChangesDuringFill` de l’adaptateur la valeur `false`. S’il est défini sur `false`, la <xref:System.Data.DataRow.RowState%2A> de chaque ligne insérée pendant le remplissage est définie sur <xref:System.Data.DataRowState>.
+  > Vous pouvez empêcher l’adaptateur de valider automatiquement les modifications lorsque vous appelez la `Fill` méthode en affectant `AcceptChangesDuringFill` à la propriété de l’adaptateur la valeur `false` . Si la valeur est `false` , la <xref:System.Data.DataRow.RowState%2A> valeur de chaque ligne insérée pendant le remplissage est définie sur <xref:System.Data.DataRowState> .
 
 - Après avoir envoyé des modifications de jeu de données à un autre processus, tel qu’un service Web XML.
 
@@ -190,29 +190,29 @@ Le jeu de données est une copie en mémoire des données. Si vous modifiez ces 
 
   Cette méthode effectue les opérations suivantes :
 
-- Écrit la version <xref:System.Data.DataRowVersion> d’un enregistrement dans sa version <xref:System.Data.DataRowVersion> et remplace la version d’origine.
+- Écrit la version <xref:System.Data.DataRowVersion> d’un enregistrement dans sa <xref:System.Data.DataRowVersion> version et remplace la version d’origine.
 
-- Supprime toutes les lignes où la propriété <xref:System.Data.DataRow.RowState%2A> a la valeur <xref:System.Data.DataRowState>.
+- Supprime toutes les lignes où la <xref:System.Data.DataRow.RowState%2A> propriété a la valeur <xref:System.Data.DataRowState> .
 
-- Définit la propriété <xref:System.Data.DataRow.RowState%2A> d’un enregistrement sur <xref:System.Data.DataRowState>.
+- Affecte la valeur <xref:System.Data.DataRow.RowState%2A> à la propriété d’un enregistrement <xref:System.Data.DataRowState> .
 
-  La méthode <xref:System.Data.DataSet.AcceptChanges%2A> est disponible à trois niveaux. Vous pouvez l’appeler sur un objet <xref:System.Data.DataRow> pour valider les modifications uniquement pour cette ligne. Vous pouvez également l’appeler sur un objet <xref:System.Data.DataTable> pour valider toutes les lignes d’une table. Enfin, vous pouvez l’appeler sur l’objet <xref:System.Data.DataSet> pour valider toutes les modifications en attente dans tous les enregistrements de toutes les tables du DataSet.
+  La <xref:System.Data.DataSet.AcceptChanges%2A> méthode est disponible à trois niveaux. Vous pouvez l’appeler sur un <xref:System.Data.DataRow> objet pour valider les modifications uniquement pour cette ligne. Vous pouvez également l’appeler sur un <xref:System.Data.DataTable> objet pour valider toutes les lignes d’une table. Enfin, vous pouvez l’appeler sur l' <xref:System.Data.DataSet> objet pour valider toutes les modifications en attente dans tous les enregistrements de toutes les tables du DataSet.
 
   Le tableau suivant décrit les modifications qui sont validées en fonction de l’objet sur lequel la méthode est appelée.
 
-|Méthode|Résultat|
+|Méthode|Résultats|
 |------------|------------|
 |<xref:System.Data.DataRow.AcceptChanges%2A?displayProperty=fullName>|Les modifications sont validées uniquement sur la ligne spécifique.|
 |<xref:System.Data.DataTable.AcceptChanges%2A?displayProperty=fullName>|Les modifications sont validées sur toutes les lignes de la table spécifique.|
 |<xref:System.Data.DataSet.AcceptChanges%2A?displayProperty=fullName>|Les modifications sont validées sur toutes les lignes de toutes les tables du DataSet.|
 
 > [!NOTE]
-> Si vous chargez un DataSet en appelant la méthode `Fill` d’un TableAdapter, vous n’êtes pas obligé d’accepter explicitement les modifications. Par défaut, la méthode `Fill` appelle la méthode `AcceptChanges` après avoir complété le remplissage de la table de données.
+> Si vous chargez un DataSet en appelant la méthode d’un TableAdapter `Fill` , vous n’êtes pas obligé d’accepter explicitement les modifications. Par défaut, la `Fill` méthode appelle la `AcceptChanges` méthode une fois que le remplissage de la table de données est terminé.
 
- Une méthode associée, `RejectChanges`, annule l’effet des modifications en copiant la version <xref:System.Data.DataRowVersion> dans la version <xref:System.Data.DataRowVersion> des enregistrements. Il définit également la <xref:System.Data.DataRow.RowState%2A> de chaque enregistrement sur <xref:System.Data.DataRowState>.
+ Une méthode associée, `RejectChanges` , annule l’effet des modifications en recopiant la <xref:System.Data.DataRowVersion> version dans la <xref:System.Data.DataRowVersion> version des enregistrements. Elle rétablit également le <xref:System.Data.DataRow.RowState%2A> de chaque enregistrement <xref:System.Data.DataRowState> .
 
 ## <a name="data-validation"></a>Validation des données
- Pour vérifier que les données de votre application remplissent les conditions des processus qu’elle reçoit, vous devez souvent ajouter la validation. Cela peut impliquer la vérification de l’exactitude de l’entrée d’un utilisateur dans un formulaire, la validation des données envoyées à votre application par une autre application, ou même la vérification que les informations calculées au sein de votre composant sont comprises dans les contraintes de votre source de données. et les exigences de l’application.
+ Pour vérifier que les données de votre application remplissent les conditions des processus qu’elle reçoit, vous devez souvent ajouter la validation. Cela peut impliquer de vérifier que l’entrée d’un utilisateur dans un formulaire est correcte, de valider les données envoyées à votre application par une autre application, ou même de vérifier que les informations calculées au sein de votre composant se trouvent dans les contraintes de la source de données et des exigences de votre application.
 
  Vous pouvez valider les données de plusieurs façons :
 
@@ -223,9 +223,9 @@ Le jeu de données est une copie en mémoire des données. Si vous modifiez ces 
 - Dans le back end de données, en envoyant des données à la source de données (par exemple, la base de données) et en l’autorisant à accepter ou à refuser les données. Si vous travaillez avec une base de données qui dispose de fonctionnalités sophistiquées pour valider les données et fournir des informations sur les erreurs, il peut s’agir d’une approche pratique, car vous pouvez valider les données quel que soit leur origine. Toutefois, cette approche peut ne pas répondre aux exigences de validation spécifiques à l’application. En outre, la validation des données par la source de données peut entraîner de nombreux allers-retours vers la source de données, en fonction de la manière dont votre application facilite la résolution des erreurs de validation déclenchées par le back end.
 
   > [!IMPORTANT]
-  > Lorsque vous utilisez des commandes de données avec une propriété <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> définie sur <xref:System.Data.CommandType>, vérifiez attentivement les informations envoyées à partir d’un client avant de les transmettre à votre base de données. Des utilisateurs malveillants peuvent tenter d’envoyer (injecter) des instructions SQL modifiées ou supplémentaires afin d’accéder à la base de données ou de l’endommager. Avant de transférer une entrée d’utilisateur à une base de données, vérifiez toujours que les informations sont valides. Il est recommandé de toujours utiliser des requêtes paramétrables ou des procédures stockées dans la mesure du possible. Pour plus d’informations, consultez [Vue d’ensemble des attaques de script](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).
+  > Lorsque vous utilisez des commandes de données avec une <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> propriété définie sur <xref:System.Data.CommandType> , vérifiez attentivement les informations envoyées à partir d’un client avant de les transmettre à votre base de données. Des utilisateurs malveillants peuvent tenter d’envoyer (injecter) des instructions SQL modifiées ou supplémentaires afin d’accéder à la base de données ou de l’endommager. Avant de transférer une entrée d’utilisateur à une base de données, vérifiez toujours que les informations sont valides. Il est recommandé de toujours utiliser des requêtes paramétrables ou des procédures stockées dans la mesure du possible. Pour plus d’informations, consultez [Vue d’ensemble des attaques de script](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).
 
-  Une fois les modifications apportées à un jeu de données, vous pouvez transmettre les modifications à une source de données. Le plus souvent, vous le faites en appelant la méthode `Update` d’un TableAdapter (ou d’un adaptateur de données). La méthode parcourt chaque enregistrement d’une table de données, détermine le type de mise à jour requis (mise à jour, insertion ou suppression), le cas échéant, puis exécute la commande appropriée.
+  Une fois les modifications apportées à un jeu de données, vous pouvez transmettre les modifications à une source de données. Le plus souvent, vous le faites en appelant la `Update` méthode d’un TableAdapter (ou d’un adaptateur de données). La méthode parcourt chaque enregistrement d’une table de données, détermine le type de mise à jour requis (mise à jour, insertion ou suppression), le cas échéant, puis exécute la commande appropriée.
 
 ## <a name="transmitting-updates-to-the-data-source"></a>Transmission des mises à jour à la source de données
  Pour illustrer la façon dont les mises à jour sont effectuées, supposez que votre application utilise un jeu de données qui contient une table de données unique. L’application extrait deux lignes de la base de données. Après la récupération, la table de données en mémoire se présente comme suit :
@@ -236,7 +236,7 @@ Le jeu de données est une copie en mémoire des données. Si vous modifiez ces 
 (Unchanged)    c400         Nancy Buchanan    Pending
 ```
 
- Votre application modifie l’état de Nancy Buchanan en « préféré ». Suite à cette modification, la valeur de la propriété <xref:System.Data.DataRow.RowState%2A> pour cette ligne passe de <xref:System.Data.DataRowState> à <xref:System.Data.DataRowState>. La valeur de la propriété <xref:System.Data.DataRow.RowState%2A> de la première ligne reste <xref:System.Data.DataRowState>. La table de données se présente désormais comme suit :
+ Votre application modifie l’état de Nancy Buchanan en « préféré ». Suite à cette modification, la valeur de la <xref:System.Data.DataRow.RowState%2A> propriété pour cette ligne passe de <xref:System.Data.DataRowState> à <xref:System.Data.DataRowState> . La valeur de la <xref:System.Data.DataRow.RowState%2A> propriété de la première ligne est conservée <xref:System.Data.DataRowState> . La table de données se présente désormais comme suit :
 
 ```
 (RowState)     CustomerID   Name             Status
@@ -244,30 +244,30 @@ Le jeu de données est une copie en mémoire des données. Si vous modifiez ces 
 (Modified)     c400         Nancy Buchanan    Preferred
 ```
 
- Votre application appelle désormais la méthode `Update` pour transmettre le DataSet à la base de données. La méthode inspecte chaque ligne à son tour. Pour la première ligne, la méthode ne transmet aucune instruction SQL à la base de données, car cette ligne n’a pas été modifiée depuis qu’elle a été extraite à l’origine de la base de données.
+ Votre application appelle désormais la `Update` méthode pour transmettre le DataSet à la base de données. La méthode inspecte chaque ligne à son tour. Pour la première ligne, la méthode ne transmet aucune instruction SQL à la base de données, car cette ligne n’a pas été modifiée depuis qu’elle a été extraite à l’origine de la base de données.
 
- Toutefois, pour la deuxième ligne, la méthode `Update` appelle automatiquement la commande de données correcte et la transmet à la base de données. La syntaxe spécifique de l’instruction SQL dépend du dialecte SQL pris en charge par le magasin de données sous-jacent. Toutefois, les caractéristiques générales suivantes de l’instruction SQL transmise sont intéressantes :
+ Toutefois, pour la deuxième ligne, la `Update` méthode appelle automatiquement la commande de données correcte et la transmet à la base de données. La syntaxe spécifique de l’instruction SQL dépend du dialecte SQL pris en charge par le magasin de données sous-jacent. Toutefois, les caractéristiques générales suivantes de l’instruction SQL transmise sont intéressantes :
 
-- L’instruction SQL transmise est une instruction UPDATE. L’adaptateur sait qu’il doit utiliser une instruction UPDATE, car la valeur de la propriété <xref:System.Data.DataRow.RowState%2A> est <xref:System.Data.DataRowState>.
+- L’instruction SQL transmise est une instruction UPDATE. L’adaptateur sait qu’il doit utiliser une instruction UPDATE, car la valeur de la <xref:System.Data.DataRow.RowState%2A> propriété est <xref:System.Data.DataRowState> .
 
-- L’instruction SQL transmise comprend une clause WHERE indiquant que la cible de l’instruction UPDATE correspond à la ligne où `CustomerID = 'c400'`. Cette partie de l’instruction SELECT fait la distinction entre la ligne cible et les autres, car le `CustomerID` est la clé primaire de la table cible. Les informations de la clause WHERE sont dérivées de la version d’origine de l’enregistrement (`DataRowVersion.Original`), au cas où les valeurs requises pour identifier la ligne ont changé.
+- L’instruction SQL transmise comprend une clause WHERE indiquant que la cible de l’instruction UPDATE correspond à la ligne où `CustomerID = 'c400'` . Cette partie de l’instruction SELECT distingue la ligne cible des autres, car `CustomerID` est la clé primaire de la table cible. Les informations de la clause WHERE sont dérivées de la version d’origine de l’enregistrement ( `DataRowVersion.Original` ), au cas où les valeurs requises pour identifier la ligne ont changé.
 
 - L’instruction SQL transmise comprend la clause SET, afin de définir les nouvelles valeurs des colonnes modifiées.
 
     > [!NOTE]
-    > Si la propriété `UpdateCommand` du TableAdapter a été définie sur le nom d’une procédure stockée, l’adaptateur ne construit pas d’instruction SQL. Au lieu de cela, il appelle la procédure stockée avec les paramètres appropriés passés.
+    > Si la propriété du TableAdapter `UpdateCommand` a été définie sur le nom d’une procédure stockée, l’adaptateur ne construit pas d’instruction SQL. Au lieu de cela, il appelle la procédure stockée avec les paramètres appropriés passés.
 
 ## <a name="passing-parameters"></a>Passage de paramètres
- En général, vous utilisez des paramètres pour transmettre les valeurs des enregistrements qui vont être mis à jour dans la base de données.  Lorsque la méthode `Update` du TableAdapter exécute une instruction UPDATE, elle doit remplir les valeurs des paramètres. Elle obtient ces valeurs à partir de la collection `Parameters` pour la commande de données appropriée, dans ce cas, l’objet `UpdateCommand` dans le TableAdapter.
+ En général, vous utilisez des paramètres pour transmettre les valeurs des enregistrements qui vont être mis à jour dans la base de données.  Quand la méthode du TableAdapter `Update` exécute une instruction Update, elle doit remplir les valeurs des paramètres. Elle obtient ces valeurs à partir de la `Parameters` collection pour la commande de données appropriée, dans ce cas, l' `UpdateCommand` objet dans le TableAdapter.
 
- Si vous avez utilisé les outils Visual Studio pour générer un adaptateur de données, l’objet `UpdateCommand` contient une collection de paramètres qui correspondent à chaque espace réservé de paramètre dans l’instruction.
+ Si vous avez utilisé les outils Visual Studio pour générer un adaptateur de données, l' `UpdateCommand` objet contient une collection de paramètres qui correspondent à chaque espace réservé de paramètre dans l’instruction.
 
- La propriété <xref:System.Data.SqlClient.SqlParameter.SourceColumn%2A?displayProperty=fullName> de chaque paramètre pointe vers une colonne de la table de données. Par exemple, la propriété `SourceColumn` pour les paramètres `au_id` et `Original_au_id` est définie sur la colonne de la table de données qui contient l’ID de l’auteur. Lorsque la méthode `Update` de l’adaptateur s’exécute, elle lit la colonne ID auteur à partir de l’enregistrement en cours de mise à jour et remplit les valeurs dans l’instruction.
+ La <xref:System.Data.SqlClient.SqlParameter.SourceColumn%2A?displayProperty=fullName> propriété de chaque paramètre pointe vers une colonne de la table de données. Par exemple, la `SourceColumn` propriété des `au_id` paramètres et `Original_au_id` est définie sur la colonne de la table de données qui contient l’ID de l’auteur. Lorsque la méthode de l’adaptateur `Update` s’exécute, elle lit la colonne ID de l’auteur à partir de l’enregistrement en cours de mise à jour et remplit les valeurs dans l’instruction.
 
  Dans une instruction UPDATE, vous devez spécifier les nouvelles valeurs (celles qui seront écrites dans l’enregistrement), ainsi que les anciennes valeurs (afin que l’enregistrement puisse se trouver dans la base de données). Il y a donc deux paramètres pour chaque valeur : un pour la clause SET et un autre pour la clause WHERE. Les deux paramètres lisent les données de l’enregistrement en cours de mise à jour, mais ils obtiennent des versions différentes de la valeur de colonne en fonction de la [propriété SqlParameter. SourceVersion](https://msdn.microsoft.com/library/system.data.sqlclient.sqlparameter.sourceversion.aspx)du paramètre. Le paramètre de la clause SET obtient la version actuelle et le paramètre de la clause WHERE obtient la version d’origine.
 
 > [!NOTE]
-> Vous pouvez également définir vous-même les valeurs de la collection `Parameters` dans le code, ce que vous feriez généralement dans un gestionnaire d’événements pour l’événement <xref:System.Data.DataTable.RowChanging> de l’adaptateur de données.
+> Vous pouvez également définir vous-même les valeurs de la `Parameters` collection dans le code, ce qui est généralement le cas dans un gestionnaire d’événements pour l’événement de l’adaptateur de données <xref:System.Data.DataTable.RowChanging> .
 
 ## <a name="see-also"></a>Voir aussi
  [Mettre à jour des données à l’aide d’un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md) [préparation de votre application pour recevoir](https://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad) des [contrôles de liaison de données à des données dans Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md) [validation des données](https://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)

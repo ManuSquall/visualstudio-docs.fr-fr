@@ -1,5 +1,5 @@
 ---
-title: Processus Microsoft Docs
+title: Processus | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,35 +11,35 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 392c59b90bb117dded0f528bc33a617370b091a7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738247"
 ---
 # <a name="processes"></a>Processus
-Dans l’architecture débbugger, un *processus*:
+Dans l’architecture du débogueur, un *processus*:
 
 - Est un conteneur pour un ensemble de programmes. Il est étroitement analogue à un processus Windows, qui est un conteneur pour un ensemble de threads.
 
-- Peut s’identifier par nom, identifiant ou identifiant physique.
+- Peut s’identifier à l’aide d’un nom, d’un identificateur ou d’un identificateur physique.
 
-- Peut énumérer tous les programmes en cours d’exécution (et leurs fils).
+- Peut énumérer tous les programmes en cours d’exécution (et leurs threads).
 
-- Peut se décrire lui-même, le port dans lequel il est en cours d’exécution, et la machine qui le contient.
+- Peut se décrire lui-même, le port dans lequel il s’exécute et l’ordinateur qui le contient.
 
-- Peut créer un ou plusieurs programmes, mettre fin à l’un des programmes qu’il crée, ou provoquer l’arrêt d’un programme.
+- Peut créer un ou plusieurs programmes, terminer l’un des programmes qu’il crée ou provoquer l’arrêt d’un programme.
 
-- Est représenté par une interface [IDebugProcess2,](../../extensibility/debugger/reference/idebugprocess2.md) qui est créée lors du lancement du processus. Un processus est lancé soit par le gestionnaire de déboges de session (SDM) ou [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md).
+- Est représenté par une interface [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md) , qui est créée lorsque le processus est lancé. Un processus est lancé par le gestionnaire de débogage de session (SDM) ou par [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md).
 
-  Le paquet de débaillement peut attacher un moteur de déboguer (DE) à un processus en appelant [Attach](../../extensibility/debugger/reference/idebugprocess2-attach.md), ce qui signifie que le DE se fixe à tous les programmes possibles en cours d’exécution dans le processus qu’il peut gérer. Par exemple, si le langage courant runtime DE se fixe à un processus, il se fixe uniquement aux programmes qui exécutent le code géré.
+  Le package de débogage peut attacher un moteur de débogage (DE) à un processus en appelant [Attach](../../extensibility/debugger/reference/idebugprocess2-attach.md), ce qui signifie que le se lie à tous les programmes possibles qui s’exécutent dans le processus qu’il peut gérer. Par exemple, si le common language runtime DE s’attache à un processus, il s’attache uniquement aux programmes qui exécutent le code managé.
 
 ## <a name="see-also"></a>Voir aussi
 - [Programmes](../../extensibility/debugger/programs.md)
-- [Fils](../../extensibility/debugger/threads.md)
-- [Concepts Debugger](../../extensibility/debugger/debugger-concepts.md)
-- [Paquet Debug](../../extensibility/debugger/debug-package.md)
-- [Moteur Debug](../../extensibility/debugger/debug-engine.md)
+- [Thèmes](../../extensibility/debugger/threads.md)
+- [Concepts du débogueur](../../extensibility/debugger/debugger-concepts.md)
+- [Package de débogage](../../extensibility/debugger/debug-package.md)
+- [Moteur de débogage](../../extensibility/debugger/debug-engine.md)
 - [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)
 - [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)
-- [Attach](../../extensibility/debugger/reference/idebugprocess2-attach.md)
+- [Attacher](../../extensibility/debugger/reference/idebugprocess2-attach.md)

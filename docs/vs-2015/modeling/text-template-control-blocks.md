@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d78f20116552c34d36def4eaf28e5e5bc56f7875
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72652340"
 ---
 # <a name="text-template-control-blocks"></a>Blocs de contrôle des modèles de texte
@@ -122,7 +122,7 @@ Some text.
 > [!NOTE]
 > Un bloc de contrôle de fonctionnalité de classe ne doit pas être suivi de blocs de contrôle standard dans le même fichier modèle. Toutefois, cette restriction ne s'applique pas au résultat de l'utilisation de directives `<#@include#>`. Chaque fichier inclus peut avoir des blocs standard suivis de blocs de fonctionnalité de classe.
 
- Vous pouvez créer une fonction qui génère une sortie en incorporant des blocs de texte et d'expression dans un bloc de contrôle de fonctionnalité de classe. Exemple :
+ Vous pouvez créer une fonction qui génère une sortie en incorporant des blocs de texte et d'expression dans un bloc de contrôle de fonctionnalité de classe. Par exemple :
 
 ```
 <#+
@@ -146,11 +146,11 @@ Some text.
 ```
 
 ## <a name="how-to-use-control-blocks"></a>Comment utiliser les blocs de contrôle
- Tout le code contenu dans chacun des blocs de contrôle d'expression et standard d'un modèle unique (y compris celui figurant dans les modèles inclus) est combiné pour former la méthode `TransformText()` du code généré. (Pour plus d’informations sur l’inclusion d’autres modèles de texte avec la directive `include`, consultez Directives pour les [modèles de texte T4](../modeling/t4-text-template-directives.md).)
+ Tout le code contenu dans chacun des blocs de contrôle d'expression et standard d'un modèle unique (y compris celui figurant dans les modèles inclus) est combiné pour former la méthode `TransformText()` du code généré. (Pour plus d’informations sur l’inclusion d’autres modèles de texte avec la `include` directive, consultez Directives pour les modèles de [texte T4](../modeling/t4-text-template-directives.md).)
 
  Vous devez tenir compte des considérations suivantes quand vous utilisez des blocs de contrôle :
 
-- **Sous.** Vous pouvez utiliser du code C# ou Visual Basic dans un modèle de texte. Le langage par défaut est C#, mais vous pouvez spécifier Visual Basic avec le paramètre `language` de la directive `template`. (Pour plus d’informations sur la directive `template`, consultez directives relatives aux [modèles de texte T4](../modeling/t4-text-template-directives.md).)
+- **Langue.** Vous pouvez utiliser du code C# ou Visual Basic dans un modèle de texte. Le langage par défaut est C#, mais vous pouvez spécifier Visual Basic avec le paramètre `language` de la directive `template`. (Pour plus d’informations sur la `template` directive, consultez directives relatives aux [modèles de texte T4](../modeling/t4-text-template-directives.md).)
 
      Le langage que vous utilisez dans les blocs de contrôle n'a aucun rapport avec le langage ou le format du texte que vous générez dans un modèle de texte. Vous pouvez générer du code C# en utilisant du code Visual Basic ou vice versa.
 
@@ -160,7 +160,7 @@ Some text.
 
      Nous vous recommandons également d'initialiser vos variables locales à des valeurs sensibles quand vous les déclarez, en particulier quand vous incluez plusieurs modèles de texte.
 
-- **Imbrication des blocs de contrôle.** Les blocs de contrôle ne peuvent pas être imbriqués les uns dans les autres. Vous devez toujours terminer un bloc de contrôle donné avant d'en ouvrir un autre. Par exemple, le code suivant montre comment imprimer du texte d'un bloc d'expression dans le cadre d'un bloc de contrôle standard.
+- **Imbrication de blocs de contrôle.** Les blocs de contrôle ne peuvent pas être imbriqués les uns dans les autres. Vous devez toujours terminer un bloc de contrôle donné avant d'en ouvrir un autre. Par exemple, le code suivant montre comment imprimer du texte d'un bloc d'expression dans le cadre d'un bloc de contrôle standard.
 
     ```
     <#

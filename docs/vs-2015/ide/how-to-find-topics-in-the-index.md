@@ -17,13 +17,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4de007ef262304d570ec8ebed39e6b14a2730833
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651937"
 ---
-# <a name="how-to-find-topics-in-the-index"></a>Guide pratique pour rechercher des rubriques dans l’index
+# <a name="how-to-find-topics-in-the-index"></a>Comment : rechercher des rubriques dans l’index
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 L’index contient une liste de mots clés qui sont associés à des rubriques dans le contenu installé. Chaque rubrique peut être associée à plusieurs mots clés et chaque mot clé peut être associé à plusieurs rubriques. Utilisez cet index comme celui d’un livre.

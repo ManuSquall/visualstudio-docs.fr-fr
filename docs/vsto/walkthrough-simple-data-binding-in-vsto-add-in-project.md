@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: bcfb150cc0b97b72fd0f6eac02f59ae1db3e9ca6
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72985406"
 ---
 # <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>Procédure pas à pas : liaison de données simple dans un projet de complément VSTO
@@ -27,31 +27,31 @@ Vous pouvez lier des données à des contrôles hôtes et des contrôles Windows
 
 [!INCLUDE[appliesto_wdallapp](../vsto/includes/appliesto-wdallapp-md.md)]
 
-Cette procédure pas à pas décrit les tâches suivantes :
+Cette procédure pas à pas décrit les tâches suivantes :
 
 - Ajouter un <xref:Microsoft.Office.Tools.Word.ContentControl> à un document au moment de l’exécution.
 
-- Créer un <xref:System.Windows.Forms.BindingSource> qui connecte le contrôle à une instance d’un dataset.
+- Création d’un <xref:System.Windows.Forms.BindingSource> qui connecte le contrôle à une instance d’un dataset.
 
 - Permettre à l’utilisateur de parcourir les enregistrements et de les afficher dans le contrôle.
 
 [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Prérequis
 
-Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :
+Vous devez disposer des éléments suivants pour exécuter cette procédure pas à pas :
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
 - [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] ou [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].
 
-- Accès à une instance en cours d’exécution de SQL Server 2005 ou SQL Server 2005 Express à laquelle l’exemple de base de données `AdventureWorksLT` est attaché. Vous pouvez télécharger la base de données `AdventureWorksLT` à partir du [SQL Server exemples GitHub référentiel](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks). Pour plus d’informations sur l’attachement d’une base de données, consultez les rubriques suivantes :
+- Accès à une instance en cours d’exécution de SQL Server 2005 ou SQL Server 2005 Express à laquelle l’exemple de base de données `AdventureWorksLT` est attaché. Vous pouvez télécharger la `AdventureWorksLT` base de données à partir du [SQL Server exemples GitHub référentiel](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks). Pour plus d’informations sur l’attachement d’une base de données, consultez les rubriques suivantes :
 
   - Pour attacher une base de données à l’aide d’SQL Server Management Studio ou SQL Server Management Studio Express, consultez [Comment : attacher une base de données (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
 
   - Pour attacher une base de données à l’aide de la ligne de commande, consultez [Comment : attacher un fichier de base de données à SQL Server Express](/previous-versions/sql/).
 
-## <a name="create-a-new-project"></a>Créer un projet
+## <a name="create-a-new-project"></a>Création d'un projet
 
 La première étape consiste à créer un projet de complément VSTO Word.
 
@@ -63,15 +63,15 @@ La première étape consiste à créer un projet de complément VSTO Word.
 
      Visual Studio ouvre le fichier *ThisAddIn. vb* ou *ThisAddIn.cs* et ajoute le **remplissage de documents à partir d’un projet de base de données** à **Explorateur de solutions**.
 
-2. Si votre projet cible le [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou le [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], ajoutez une référence à l’assembly *Microsoft. Office. Tools. Word. v 4.0. Utilities. dll* . Cette référence est obligatoire pour ajouter par programmation un contrôle Windows Forms au document, plus loin dans cette procédure pas à pas.
+2. Si votre projet cible le [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou le [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] , ajoutez une référence à l’assembly *Microsoft.Office.Tools.Word.v4.0.Utilities.dll* . Cette référence est obligatoire pour ajouter par programmation un contrôle Windows Forms au document, plus loin dans cette procédure pas à pas.
 
-## <a name="create-a-data-source"></a>Créer une source de données
+## <a name="create-a-data-source"></a>Création d'une source de données
 
 Utilisez la fenêtre **Sources de données** pour ajouter un dataset typé à votre projet.
 
 ### <a name="to-add-a-typed-dataset-to-the-project"></a>Pour ajouter un dataset typé au projet
 
-1. Si la fenêtre **sources de données** n’est pas visible, affichez-la dans la barre de menus, en choisissant **Afficher** > autres **sources de données** **Windows** > .
+1. Si la fenêtre **sources de données** n’est pas visible, affichez-la en cliquant sur **Afficher**d'  >  **autres**  >  **sources de données**Windows dans la barre de menus.
 
 2. Choisissez **Ajouter une nouvelle source de données** pour démarrer l' **Assistant Configuration de source de données**.
 
@@ -83,15 +83,15 @@ Utilisez la fenêtre **Sources de données** pour ajouter un dataset typé à vo
 
 5. Dans la page **Enregistrer la chaîne de connexion dans le fichier de configuration de l’application** , cliquez sur **Suivant**.
 
-6. Dans la page **Choisir vos objets de base de données** , développez **Tables** et sélectionnez **Customer (SalesLT)** .
+6. Dans la page **Choisir vos objets de base de données** , développez **Tables** et sélectionnez **Customer (SalesLT)**.
 
-7. Cliquez sur **Finish**.
+7. Cliquez sur **Terminer**.
 
     Le fichier *AdventureWorksLTDataSet. xsd* est ajouté à **Explorateur de solutions**. Ce fichier définit les éléments suivants :
 
    - Un dataset typé nommé `AdventureWorksLTDataSet`. Ce dataset représente le contenu de la table **Customer (SalesLT)** dans la base de données AdventureWorksLT.
 
-   - Un TableAdapter nommé `CustomerTableAdapter`. Ce TableAdapter peut être utilisé pour lire et écrire des données dans le `AdventureWorksLTDataSet`. Pour plus d’informations, consultez [vue d’ensemble de TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
+   - Un TableAdapter nommé `CustomerTableAdapter` . Ce TableAdapter peut être utilisé pour lire et écrire des données dans le `AdventureWorksLTDataSet` . Pour plus d’informations, consultez [vue d’ensemble de TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
 
      Vous utiliserez ces deux objets ultérieurement dans cette procédure pas à pas.
 
@@ -146,7 +146,7 @@ Lorsque vous ouvrez Word, le contrôle de contenu affiche des données du datase
 
 1. Appuyez sur **F5**.
 
-     Un contrôle de contenu nommé `customerContentControl` est créé et rempli avec des données. En même temps, un objet dataset nommé `adventureWorksLTDataSet` et un <xref:System.Windows.Forms.BindingSource> nommé `customerBindingSource` sont ajoutés au projet. Le <xref:Microsoft.Office.Tools.Word.ContentControl> est lié au <xref:System.Windows.Forms.BindingSource>, qui est lui-même lié à l’objet dataset.
+     Un contrôle de contenu nommé `customerContentControl` est créé et rempli avec des données. Au même moment, un objet dataset nommé `adventureWorksLTDataSet` et un <xref:System.Windows.Forms.BindingSource> nommé `customerBindingSource` sont ajoutés au projet. <xref:Microsoft.Office.Tools.Word.ContentControl> est lié à <xref:System.Windows.Forms.BindingSource>, qui est lui-même lié à l’objet dataset.
 
 2. Cliquez sur les boutons **Suivant** et **Précédent** pour parcourir les enregistrements de base de données.
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugSettingsCallback2::GetEEMetricDword (fr) Microsoft Docs
+title: 'IDebugSettingsCallback2 :: GetEEMetricDword | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ce326c63f97dfafd06e3e2b3e760b1c06e60d442
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720056"
 ---
 # <a name="idebugsettingscallback2geteemetricdword"></a>IDebugSettingsCallback2::GetEEMetricDword
-Récupère une valeur qui correspond à la mesure spécifiée de l’évaluateur d’expression.
+Récupère une valeur qui correspond à la métrique spécifiée de l’évaluateur d’expression.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -45,18 +45,18 @@ private int GetEEMetricDword(
 
 ## <a name="parameters"></a>Paramètres
 `guidLang`\
-[dans] Identifiant unique du langage de programmation.
+dans Identificateur unique du langage de programmation.
 
 `guidVendor`\
-[dans] Identifiant unique du vendeur.
+dans Identificateur unique du fournisseur.
 
 `pszMetric`\
-[dans] Nom de la mesure.
+dans Nom de la métrique.
 
 `pdwValue`\
-[out] Retourne la valeur qui correspond à la chaîne métrique.
+à Retourne la valeur qui correspond à la chaîne de mesure.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

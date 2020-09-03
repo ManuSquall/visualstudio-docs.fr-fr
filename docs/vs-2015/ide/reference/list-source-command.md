@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3f13689b6e3ac4db2d58c1def3a5d0dd05c219f2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672319"
 ---
 # <a name="list-source-command"></a>Afficher la source, commande
@@ -45,9 +45,9 @@ Debug.ListSource [/Count:number] [/Current] [/File:filename]
 
  /ShowLineNumbers : `yes|no` facultatif. Spécifie s’il faut afficher les numéros de ligne.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
  Cet exemple affiche le code source à partir de la ligne 4 du fichier Form1.vb, avec les numéros de ligne.
 
 ```

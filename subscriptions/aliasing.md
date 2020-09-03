@@ -8,10 +8,10 @@ ms.date: 03/02/2020
 ms.topic: conceptual
 description: La connexion peut échouer si des alias ou des noms conviviaux sont utilisés.
 ms.openlocfilehash: 1b6c465bc3e850d8582abde200ac9e5bd995e431
-ms.sourcegitcommit: 9a7fb8556a5f3dbb4459122fefc7e7a8dfda753a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87234638"
 ---
 # <a name="signing-into-visual-studio-subscriptions-may-fail-when-using-aliases"></a>La connexion à des abonnements Visual Studio peut échouer lors de l’utilisation d’alias
@@ -40,7 +40,7 @@ Une incompatibilité de nom UPN peut être rencontrée quand une société a une
 
 #### <a name="how-to-fix-a-upn-mismatch"></a>Correction d’une incompatibilité UPN
 
-1. Accéder au portail de gestion de l’administration de Visual Studio[https://manage.visualstudio.com](https://manage.visualstudio.com) 
+1. Accéder au portail de gestion de l’administration de Visual Studio [https://manage.visualstudio.com](https://manage.visualstudio.com) 
 
 2. Recherchez l’abonné présentant un problème d’incompatibilité de nom d’utilisateur principal. (La fonctionnalité de [filtre](search-license.md) peut faciliter la recherche d’un abonné.)
 
@@ -56,7 +56,7 @@ Les comptes d’abonnement personnels peuvent également rencontrer des problèm
 
 #### <a name="how-to-detect-if-your-personal-subscription-account-is-impacted-by-an-aliasing-issue"></a>Comment détecter si votre compte d’abonnement personnel est affecté par un problème d’alias
 
-1. Connectez-vous à[https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions)
+1. Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions)
 
 0. Vérifiez que l’adresse e-mail de connexion indiquée en haut à droite de la page correspond à celle que vous avez utilisée pour vous connecter.  Si l’adresse e-mail de connexion n’est pas la même que l’adresse de messagerie utilisée pour accéder au site Web, il y a un conflit entre votre compte et l’alias.
 
@@ -82,7 +82,7 @@ En tant qu’administrateur, il existe deux options pour garantir que vos abonn�
 - La deuxième option (moins sécurisée) est de permettre à vos abonnés de se connecter à l’aide d’une adresse de messagerie différente de l’adresse de messagerie de leur annuaire.
 
 Ces deux options sont configurées dans le portail d’administration en procédant comme suit :  
-1. Se connecter[https://manage.visualstudio.com](https://manage.visualstudio.com) 
+1. Se connecter [https://manage.visualstudio.com](https://manage.visualstudio.com) 
 
 0. Si vous modifiez un seul utilisateur, sélectionnez cet utilisateur dans la table et cliquez avec le bouton droit pour le modifier. Cela ouvre un panneau dans lequel vous pouvez modifier l’adresse e-mail de connexion. Effectuez les mises à jour nécessaires dans le champ adresse de messagerie de connexion. Cliquez sur Enregistrer pour appliquer les modifications.  
 

@@ -10,15 +10,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bfd073b07902e3c0a9e33dfe9ae50d4947a50ef2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75597267"
 ---
 # <a name="about-domain-specific-languages"></a>À propos des langages spécifiques à un domaine
 
-Contrairement à un langage à usage général tel C# que ou UML, un langage spécifique à un domaine (DSL) est conçu pour exprimer des instructions dans un espace de problème particulier ou un domaine.
+Contrairement à un langage à usage général tel que C# ou UML, un langage spécifique à un domaine (DSL) est conçu pour exprimer des instructions dans un espace de problème particulier ou un domaine.
 
 Les DSL bien connus incluent des expressions régulières et SQL. Chaque DSL est bien mieux qu’un langage à usage général pour décrire les opérations sur les chaînes de texte ou une base de données, mais il est bien plus difficile de décrire des idées qui se trouvent en dehors de sa propre portée. Chaque secteur possède également son propre DSL. Par exemple, dans le secteur des télécommunications, les langages de description des appels sont largement utilisés pour spécifier la séquence d’États dans un appel téléphonique et, dans le secteur des voyages aériens, un DSL standard est utilisé pour décrire les réservations de vol.
 
@@ -74,7 +74,7 @@ Un langage spécifique à un domaine graphique doit inclure les fonctionnalités
 
 ### <a name="notation"></a>Notation
 
-Un langage spécifique à un domaine doit avoir un ensemble raisonnablement restreint d’éléments qui peuvent être facilement définis et étendus pour représenter des constructions spécifiques à un domaine. Une notation se compose de formes, qui représentent les éléments, et de connecteurs, qui représentent les relations entre les éléments, sur une surface de diagramme graphique. Dans [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], les formes peuvent être étendues et affinées pour représenter les éléments de votre langage spécifique à un domaine.
+Un langage spécifique à un domaine doit avoir un ensemble raisonnablement restreint d’éléments qui peuvent être facilement définis et étendus pour représenter des constructions spécifiques à un domaine. Une notation se compose de formes, qui représentent les éléments, et de connecteurs, qui représentent les relations entre les éléments, sur une surface de diagramme graphique. Dans [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] , les formes peuvent être étendues et affinées pour représenter les éléments de votre langage spécifique à un domaine.
 
 ### <a name="domain-model"></a>Modèle de domaine
 
@@ -82,7 +82,7 @@ Un langage spécifique à un domaine doit combiner l’ensemble d’éléments e
 
 ### <a name="artifact-generation"></a>Génération d’artefacts
 
-L’un des principaux objectifs d’un langage spécifique à un domaine consiste à générer un artefact, par exemple, un code source, un fichier XML ou d’autres données utilisables. En règle générale, une modification dans le modèle signifie une modification de l’artefact. Vous pouvez utiliser [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] pour générer des artefacts et les régénérer lorsque vous modifiez le modèle.
+L’un des principaux objectifs d’un langage spécifique à un domaine consiste à générer un artefact, par exemple, un code source, un fichier XML ou d’autres données utilisables. En règle générale, une modification dans le modèle signifie une modification de l’artefact. Vous pouvez utiliser [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] pour générer des artefacts et les régénérer quand vous modifiez le modèle.
 
 ### <a name="serialization"></a>Sérialisation
 
