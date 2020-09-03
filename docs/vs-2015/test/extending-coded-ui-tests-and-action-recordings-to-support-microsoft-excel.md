@@ -9,10 +9,10 @@ caps.latest.revision: 32
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c4cac9981a582d5ba9527e0f8dc47d14b6fba18b
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851765"
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>Extension des tests codés de l'interface utilisateur t enregistrements des actions pour prendre charge Microsoft Excel
@@ -20,7 +20,7 @@ ms.locfileid: "75851765"
 
 L'infrastructure de test pour les tests codés de l'interface utilisateur et les enregistrements des actions ne prend pas en charge toutes les interfaces utilisateur possibles. Elle risque de ne pas prendre en charge l’interface utilisateur spécifique que vous souhaitez tester. Par exemple, vous ne pouvez pas créer immédiatement un test codé de l'interface utilisateur ou un enregistrement des actions pour une feuille de calcul [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)]. Toutefois, vous pouvez créer votre propre extension de l'infrastructure de test codé de l'interface utilisateur, qui prend en charge votre interface utilisateur spécifique en tirant parti de l'extensibilité de l'infrastructure de test codé de l'interface utilisateur. La rubrique suivante fournit un exemple montrant comment étendre l'infrastructure pour prendre en charge la création de tests codés de l'interface utilisateur et les enregistrements des actions pour [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)]. Pour plus d’informations sur les plateformes prises en charge, consultez [Configurations et plateformes prises en charge pour les tests codés de l’interface utilisateur et les enregistrements des actions](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md).
 
- **Spécifications**
+ **Configuration requise**
 
 - Visual Studio Enterprise
 
@@ -28,7 +28,7 @@ L'infrastructure de test pour les tests codés de l'interface utilisateur et les
 
   ![Architecture du test de l’interface utilisateur](../test/media/ui-testarch.png "UI_TestArch") Présentation de l’architecture
 
-## <a name="download-the-sample"></a>Télécharger l'exemple
+## <a name="download-the-sample"></a>Télécharger l’exemple
  L'exemple se compose de quatre projets dans la solution `CodedUIExtensibilitySample.sln` :
 
 - CodedUIextensibilitySample
@@ -77,5 +77,5 @@ L'infrastructure de test pour les tests codés de l'interface utilisateur et les
 - [UITestActionFilter](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110))
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>
 - [Utiliser UI Automation pour tester votre code](../test/use-ui-automation-to-test-your-code.md)
-- [Bonnes pratiques pour les tests codés de l’interface utilisateur](../test/best-practices-for-coded-ui-tests.md)
+- [Meilleures pratiques pour les tests codés de l'interface utilisateur](../test/best-practices-for-coded-ui-tests.md)
 - [Plateformes et configurations prises en charge pour les tests codés de l’interface utilisateur et les enregistrements des actions](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

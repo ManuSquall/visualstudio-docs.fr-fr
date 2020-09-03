@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3915351bff74f35ceb5fc462cb29dfd2f322fb6a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74299625"
 ---
 # <a name="install-sql-server-sample-databases"></a>Installer des bases de données SQL Server
@@ -27,7 +27,7 @@ Les exemples de bases de données sont utiles pour expérimenter les requêtes S
 
 #### <a name="to-restore-a-database-from-a-bak-file-in-visual-studio"></a>Pour restaurer une base de données à partir d’un fichier. bak dans Visual Studio
 
-1. Lorsque vous sauvegardez une base de données Microsoft SQL Server, le résultat est un fichier. bak. Pour que le fichier. bak soit à nouveau utilisable comme fichier de base de données, il doit être *restauré*. Dans le menu principal, sélectionnez **afficher** > **Explorateur d’objets SQL Server**. Si vous ne le voyez pas, vous devrez peut-être l’installer. Accédez au **panneau de configuration** > **programmes et fonctionnalités**, recherchez Microsoft Visual Studio 2015, puis cliquez sur le bouton **modifier** . Lorsque la liste des composants installés s’affiche dans la fenêtre installer, activez la case à cocher **Explorateur d’objets SQL Server** , puis poursuivez l’installation.
+1. Lorsque vous sauvegardez une base de données Microsoft SQL Server, le résultat est un fichier. bak. Pour que le fichier. bak soit à nouveau utilisable comme fichier de base de données, il doit être *restauré*. Dans le menu principal, sélectionnez **Afficher**  >  **Explorateur d’objets SQL Server**. Si vous ne le voyez pas, vous devrez peut-être l’installer. Accédez à **panneau de configuration**  >  **programmes et fonctionnalités**, recherchez Microsoft Visual Studio 2015, puis cliquez sur le bouton **modifier** . Lorsque la liste des composants installés s’affiche dans la fenêtre installer, activez la case à cocher **Explorateur d’objets SQL Server** , puis poursuivez l’installation.
 
 2. Dans Explorateur d’objets SQL Server, cliquez avec le bouton droit sur n’importe quel moteur de base de données SQL Server (par exemple, la base de données locale), puis sélectionnez**nouvelle requête**.
 

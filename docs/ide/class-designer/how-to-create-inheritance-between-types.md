@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e1ffae72a3fe171b6bd16cfbc623a777f4d4d2e4
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770200"
 ---
 # <a name="how-to-create-inheritance-between-types-in-class-designer"></a>Guide pratique pour créer un héritage entre les types dans le Concepteur de classes

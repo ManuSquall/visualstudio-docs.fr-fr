@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6e4f239c5be290f6d79f52f55dbcb6da60d10785
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851701"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Options, Éditeur de texte, C/C++, Expérimental
@@ -23,7 +23,7 @@ ms.locfileid: "75851701"
 
 En modifiant ces options, vous pouvez changer le comportement lié à IntelliSense et la base de données de navigation quand vous programmez en C ou C++.
 
- Pour accéder à cette page, dans la boîte de dialogue **Options** , dans le volet gauche, développez **Éditeur de texte**, **C/C++** , puis choisissez **Expérimental**.
+ Pour accéder à cette page, dans la boîte de dialogue **Options** , dans le volet gauche, développez **Éditeur de texte**, **C/C++**, puis choisissez **Expérimental**.
 
  Ces fonctionnalités sont disponibles dans une installation de Visual Studio 2015 Update 1 RC.
 
@@ -36,7 +36,7 @@ En modifiant ces options, vous pouvez changer le comportement lié à IntelliSen
 ## <a name="intellisense"></a>IntelliSense
  **Liste des membres point par flèche** Remplace « . » par « -> » le cas échéant pour la liste des membres.
 
-## <a name="refactoring"></a>Refactoring
+## <a name="refactoring"></a>Refactorisation
  **Activer l’extraction de fonction** Extrayez le code sélectionné dans sa propre fonction et remplacez le code par un appel à la nouvelle fonction. Pour accéder à cette fonctionnalité, cliquez avec le bouton droit sur le code sélectionné et sélectionnez **Actions rapides**, ou appuyez simplement sur le raccourci par défaut Ctrl+point [Ctrl+.].
 
  **Activer la signature de modification** Ajoutez, réorganisez et supprimez les paramètres d’une fonction et Propagez les modifications à tous les sites d’appel. Pour accéder à cette fonctionnalité, cliquez avec le bouton droit sur toute utilisation de la fonction et sélectionnez **Actions rapides**, ou appuyez simplement sur le raccourci par défaut Ctrl+point [Ctrl+.].
@@ -59,4 +59,4 @@ En modifiant ces options, vous pouvez changer le comportement lié à IntelliSen
   Vous pouvez soit pointer sur un tilde pour obtenir une ampoule, soit utiliser le raccourci clavier par défaut Ctrl+point [Ctrl+.]. Notez que, pour le raccourci clavier, votre signe d’insertion ne doit pas être positionné sur le jeton ou l’erreur spécifique ; vous pouvez tout simplement vous placer sur la même ligne que l’erreur pour appeler des suggestions pour tout élément sur cette ligne.
 
 ## <a name="see-also"></a>Voir aussi
- [Définition des options de l’éditeur spécifiques](../../ide/reference/setting-language-specific-editor-options.md) [à la langue C++ en cours de refactorisation (blog VC)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/)
+ [Définition des options de l’éditeur spécifiques](../../ide/reference/setting-language-specific-editor-options.md) à la langue [refactorisation en C++ (blog VC)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/)

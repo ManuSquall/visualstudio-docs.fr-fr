@@ -95,10 +95,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 07a84648a24a709b47b60ee9e2a6e5d342777d77
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851648"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Ressources pour résoudre les erreurs d'environnement de développement intégré
@@ -114,5 +114,5 @@ Les messages d’erreur n’ont pas tous une rubrique d’aide associée. Si les
 
  Vous pouvez accéder aux forums, blogs, conversations et autres ressources sur le site web [Communautés techniques Microsoft](https://techcommunity.microsoft.com/).
 
-## <a name="product-support"></a>Support technique
+## <a name="product-support"></a>Prise en charge du produit
  Si vous avez encore des questions après avoir essayé les autres ressources, vous pouvez contacter les services de support technique Microsoft en visitant le site web [Support Microsoft](https://support.microsoft.com/). Pour plus d’informations sur le support technique disponible dans votre région, consultez [Nous contacter](../../ide/talk-to-us.md).

@@ -1,5 +1,5 @@
 ---
-title: Objet VSCodeWindowManager (fr) Microsoft Docs
+title: Objet VSCodeWindowManager | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,18 +14,18 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 17bc9462af55ec9621654bd39cd65a2091f3f73f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80740421"
 ---
-# <a name="vscodewindowmanager-object"></a>OBJET VSCodeWindowManager
+# <a name="vscodewindowmanager-object"></a>Objet VSCodeWindowManager
 
-Le service linguistique implémente le gestionnaire de fenêtre de code et est responsable de la gestion des ornements (par exemple, la barre d’abandon). Pour plus d’informations, voir [Personnaliser Code Windows en utilisant l’API Legacy](/visualstudio/extensibility/customizing-code-windows-by-using-the-legacy-api?view=vs-2015).
+Le service de langage implémente le gestionnaire de fenêtre de code et est chargé de gérer les ornements (par exemple, la barre de liste déroulante). Pour plus d’informations, consultez [Personnalisation des fenêtres de code à l’aide de l’API héritée](/visualstudio/extensibility/customizing-code-windows-by-using-the-legacy-api?view=vs-2015).
 
-Le tableau suivant affiche les `VSCodeWindowManager` interfaces de l’objet.
+Le tableau suivant répertorie les interfaces de l' `VSCodeWindowManager` objet.
 
 |Interface|Description|
 |---------------|-----------------|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Permet d’ajouter ou de retirer les parures (comme les barres de dépôt) ou de les retirer d’une fenêtre de code.|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Permet d’ajouter ou de supprimer des ornements (tels que des barres déroulantes) dans une fenêtre de code.|

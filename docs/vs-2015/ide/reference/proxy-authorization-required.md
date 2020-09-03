@@ -10,34 +10,34 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 848817691d7fae32f2240e3d6cac4451c4ce58c4
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74297813"
 ---
-# <a name="proxy-authorization-required"></a>autorisation du proxy requise
+# <a name="proxy-authorization-required"></a>Autorisation du proxy requise
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 L’erreur **autorisation du proxy requise** se produit généralement lorsque les utilisateurs sont connectés aux ressources Visual Studio online via un serveur proxy et que le serveur proxy bloque les appels.
 
 Pour corriger cette erreur, essayez une ou plusieurs des étapes suivantes :
 
-- Redémarrez Visual Studio. Une boîte de dialogue d'authentification du proxy doit s'afficher. Entrez vos informations d'identification dedans.
+- Démarrez Visual Studio. Une boîte de dialogue d'authentification du proxy doit s'afficher. Entrez vos informations d'identification dedans.
 
 - Si l'étape ci-dessus ne résout pas le problème, cela est peut-être dû au fait que votre serveur proxy ne demande pas d'informations d'identification pour les adresses https://go.microsoft.com, mais uniquement pour les adresses *. visualStudio.com. Pour ces serveurs, vous devez ajouter les URL suivantes à la liste verte pour débloquer tous les scénarios de connexion dans Visual Studio :
 
-  - *.windows.net
+  - \* .windows.net
 
   - *.microsoftonline.com
 
-  - *.visualStudio.com
+  - *.visualstudio.com
 
   - *.microsoft.com
 
   - *.live.com
 
-- Vous pouvez supprimer l’adresse https://go.microsoft.com de la liste verte pour que la boîte de dialogue d’authentification de proxy s’affiche pour l’adresse https://go.microsoft.com et les points de terminaison de serveur lors du redémarrage de Visual Studio.
+- Vous pouvez supprimer l' https://go.microsoft.com adresse de la liste verte pour que la boîte de dialogue d’authentification de proxy s’affiche à la fois pour l' https://go.microsoft.com adresse et les points de terminaison de serveur lors du redémarrage de Visual Studio.
 
 - Si vous souhaitez utiliser vos informations d’identification par défaut avec votre proxy, procédez comme suit :
 
@@ -51,6 +51,6 @@ Pour corriger cette erreur, essayez une ou plusieurs des étapes suivantes :
       </defaultProxy>
       ```
 
-      Insérez l’adresse proxy correcte de votre réseau dans `proxyaddress="<http://<yourproxy:port#>`.
+      Insérez l’adresse proxy correcte de votre réseau dans `proxyaddress="<http://<yourproxy:port#>` .
 
 - Suivez les instructions de [ce](https://blogs.msdn.microsoft.com/rido/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy/) billet de blog pour ajouter du code qui vous permet d’utiliser le proxy.

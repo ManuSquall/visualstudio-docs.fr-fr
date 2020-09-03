@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: ce6281a87900247cc54422a5175714d5f05b8e07
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85349144"
 ---
 # <a name="how-to-set-a-thread-name-in-native-code"></a>Comment : définir un nom de thread dans le code natif
@@ -32,7 +32,7 @@ Il existe deux façons de définir un nom de thread. La première consiste à ut
 
 Il est à noter que _les deux_ approches peuvent être utilisées ensemble, si vous le souhaitez, étant donné que les mécanismes par lesquels elles fonctionnent sont indépendants les uns des autres.
 
-### <a name="set-a-thread-name-by-using-setthreaddescription"></a>Définir un nom de thread à l’aide de`SetThreadDescription`
+### <a name="set-a-thread-name-by-using-setthreaddescription"></a>Définir un nom de thread à l’aide de `SetThreadDescription`
 
 Avantages :
 * Les noms de threads sont visibles lors du débogage dans Visual Studio, que le débogueur ait ou non été attaché au processus au moment de l’appel de SetThreadDescription.

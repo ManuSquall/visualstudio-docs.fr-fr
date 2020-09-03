@@ -1,5 +1,5 @@
 ---
-title: IDebugPortRequest2 - France Microsoft Docs
+title: IDebugPortRequest2 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 163718fda344ba5f3f44ef630b4eba3e5613dc61
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724785"
 ---
 # <a name="idebugportrequest2"></a>IDebugPortRequest2
@@ -29,27 +29,27 @@ IDebugPortRequest2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>Notes pour les implémenteurs
- Visual Studio implémente généralement cette interface dans le processus d’obtention d’un port de débogé d’un fournisseur de port.
+ Visual Studio implémente généralement cette interface dans le processus d’obtention d’un port de débogage à partir d’un fournisseur de ports.
 
 ## <a name="notes-for-callers"></a>Notes pour les appelants
- Cette interface est passée dans [AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md) pour créer un port de débogé. Un appel à [GetPortRequest](../../../extensibility/debugger/reference/idebugport2-getportrequest.md) renvoie cette interface, représentant la demande utilisée pour créer le port en premier lieu.
+ Cette interface est transmise à [addport](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md) pour créer un port de débogage. Un appel à [GetPortRequest](../../../extensibility/debugger/reference/idebugport2-getportrequest.md) retourne cette interface, représentant la requête utilisée pour créer le port en premier lieu.
 
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable
- Le tableau suivant montre `IDebugPortRequest2`les méthodes de .
+ Le tableau suivant présente les méthodes de `IDebugPortRequest2` .
 
 |Méthode|Description|
 |------------|-----------------|
 |[GetPortName](../../../extensibility/debugger/reference/idebugportrequest2-getportname.md)|Obtient le nom du port à créer.|
 
 ## <a name="remarks"></a>Notes
- Un moteur de débogé ne va généralement pas interagir avec un fournisseur de port et n’aura aucune utilité pour cette interface.
+ En général, un moteur de débogage n’interagit pas avec un fournisseur de port et n’a pas d’utilisation pour cette interface.
 
-## <a name="requirements"></a>Spécifications
- En-tête: msdbg.h
+## <a name="requirements"></a>Configuration requise
+ En-tête : msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Espace de noms : Microsoft. VisualStudio. Debugger. Interop
 
- Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Interfaces de base](../../../extensibility/debugger/reference/core-interfaces.md)

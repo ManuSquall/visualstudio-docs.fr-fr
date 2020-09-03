@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2ddec4c7327aa9799ae8a12a04b3940d690205cb
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851571"
 ---
 # <a name="step-2-run-your-program"></a>Étape 2 : exécuter votre programme
@@ -21,7 +21,7 @@ ms.locfileid: "75851571"
 
 Lorsque vous avez créé une solution, vous avez en fait généré un programme qui fonctionne. Pour le moment, le programme offre peu de fonctionnalités : il affiche simplement une fenêtre vide avec la barre de titre **Form1**. Mais il fonctionne réellement, comme vous allez le découvrir.
 
- ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo") Pour obtenir une version vidéo de cette rubrique, consultez [didacticiel 1 : créer une visionneuse d’images dans Visual Basic vidéo 1](https://msdn.microsoft.com/vbasic/gg315352.aspx) ou [didacticiel 1 : créer une visionneuse d’images dans C# la vidéo 1](https://msdn.microsoft.com/vcsharp/gg278409.aspx). Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d’interface utilisateur. Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.
+ ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo") Pour obtenir une version vidéo de cette rubrique, consultez [didacticiel 1 : créer une visionneuse d’images dans Visual Basic vidéo 1](https://msdn.microsoft.com/vbasic/gg315352.aspx) ou [didacticiel 1 : créer une visionneuse d’images en C#-vidéo 1](https://msdn.microsoft.com/vcsharp/gg278409.aspx). Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d’interface utilisateur. Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.
 
 ### <a name="to-run-your-program"></a>Pour exécuter votre programme
 
@@ -52,10 +52,10 @@ Lorsque vous avez créé une solution, vous avez en fait généré un programme 
     - Dans l’angle supérieur de la fenêtre **Form1**, choisissez le bouton X.
 
     > [!NOTE]
-    > Quand vous exécutez votre programme dans l’IDE, vous effectuez un *débogage*, car vous le faites généralement pour rechercher et résoudre des bogues (erreurs) dans le programme. Bien que ce programme soit petit et ne fasse pas encore grand chose, il n'en reste pas moins un programme. Vous suivez la même procédure pour exécuter et déboguer d'autres programmes. Pour en savoir plus sur le débogage, consultez [Principes de base du débogueur](../debugger/debugger-basics.md).
+    > Quand vous exécutez votre programme à partir de l’IDE, on parle de *débogage* , car vous le faites généralement pour rechercher et corriger les bogues (erreurs) dans le programme. Bien que ce programme soit petit et ne fasse pas encore grand chose, il n'en reste pas moins un programme. Vous suivez la même procédure pour exécuter et déboguer d'autres programmes. Pour en savoir plus sur le débogage, consultez [concepts de base du débogueur](../debugger/debugger-basics.md).
 
 ### <a name="to-continue-or-review"></a>Pour continuer ou examiner
 
-- Pour accéder à l’étape suivante du didacticiel, consultez [Étape 3 : Définir les propriétés de votre formulaire](../ide/step-3-set-your-form-properties.md).
+- Pour passer à l’étape suivante du didacticiel, consultez [étape 3 : définir les propriétés de votre formulaire](../ide/step-3-set-your-form-properties.md).
 
-- Pour revenir à l’étape précédente du didacticiel, consultez [Étape 1 : Créer un projet d’application Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md).
+- Pour revenir à l’étape précédente du didacticiel, consultez [étape 1 : créer un projet d’Application Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md).

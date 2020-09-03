@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f7537c3007f54480874047f52f186996cf663508
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656409"
 ---
 # <a name="using-the-task-list"></a>Utilisation de la liste des tâches
@@ -28,7 +28,7 @@ ms.locfileid: "72656409"
 
 Avec la **liste des tâches** , effectuez le suivi des commentaires de code qui utilisent des jetons tels que `TODO` et `HACK`, ou des jetons personnalisés, et gérez les raccourcis qui permettent d’accéder directement à un emplacement prédéfini dans le code. Cliquez sur l’élément dans la liste pour accéder à son emplacement dans le code source.
 
- Dans cette rubrique :
+ Dans cette rubrique :
 
 - [Fenêtre Liste des tâches](../ide/using-the-task-list.md#taskListWindow)
 
@@ -42,14 +42,14 @@ Avec la **liste des tâches** , effectuez le suivi des commentaires de code qui 
 
 - [Raccourcis](../ide/using-the-task-list.md#shortcuts)
 
-## <a name="taskListWindow"></a> Fenêtre Liste des tâches
+## <a name="the-task-list-window"></a><a name="taskListWindow"></a> Fenêtre Liste des tâches
  Quand la **Liste des tâches** est ouverte, elle apparaît en bas de la fenêtre d’application.
 
 #### <a name="to-open-the-task-list"></a>Pour ouvrir la fenêtre Liste des tâches
 
-- Dans le menu **Affichage**, choisissez **Liste des tâches** (clavier : Ctrl+\\,T).
+- Dans le menu **affichage** , choisissez **liste des tâches** (raccourci : Ctrl + \\ , T).
 
-     ![Fenêtre Liste des tâches](../ide/media/vs2015-task-list.png "|::ref1::|")
+     ![Fenêtre Liste des tâches](../ide/media/vs2015-task-list.png "vs2015_task_list")
 
 #### <a name="to-change-the-sort-order-of-the-list"></a>Pour modifier l'ordre de tri de la liste
 
@@ -65,12 +65,12 @@ Avec la **liste des tâches** , effectuez le suivi des commentaires de code qui 
 
 - Faites glisser n'importe quel en-tête de colonne à l'emplacement de votre choix.
 
-## <a name="userTasks"></a> Tâches utilisateur
+## <a name="user-tasks"></a><a name="userTasks"></a> Tâches utilisateur
  La fonctionnalité des tâches utilisateur a été supprimée dans Visual Studio 2015. Quand vous ouvrez une solution qui comporte des données de tâches utilisateur de Visual Studio 2013 et versions antérieures dans Visual Studio 2015, les données de tâches utilisateur dans votre fichier .suo ne sont pas affectées, mais les tâches utilisateur ne sont pas affichées dans la liste des tâches.
 
  Si vous voulez continuer à accéder aux données de tâches utilisateur et les mettre à jour, vous devez ouvrir le projet dans Visual Studio 2013 et copier le contenu de toutes les tâches utilisateur dans votre outil de gestion de projet par défaut (tel que Team Foundation Server).
 
-## <a name="tokensComments"></a> Jetons et commentaires
+## <a name="tokens-and-comments"></a><a name="tokensComments"></a> Jetons et commentaires
  Un commentaire dans votre code, précédé d'un marqueur de commentaire et d'un jeton prédéfini, apparaîtra également dans la fenêtre **Liste des tâches** . Par exemple, le commentaire C# suivant comprend trois parties distinctes :
 
 - le marqueur de commentaire (`//`) ;
@@ -85,26 +85,26 @@ Avec la **liste des tâches** , effectuez le suivi des commentaires de code qui 
 
  Étant donné que `TODO` est un jeton prédéfini, ce commentaire s’affiche comme une tâche `TODO` dans la liste.
 
-### <a name="customTokens"></a> Jetons personnalisés
+### <a name="custom-tokens"></a><a name="customTokens"></a> Jetons personnalisés
  Par défaut, Visual Studio inclut les jetons suivants : HACK, TODO, UNDONE, NOTE. Ces jetons ne respectent pas la casse.
 
  Vous pouvez également créer vos propres jetons personnalisés.
 
 ##### <a name="to-create-a-custom-token"></a>Pour créer un jeton personnalisé
 
-1. Dans le menu **Outils** , choisissez **Options**.
+1. Dans le menu **Outils**, choisissez **Options**.
 
 2. Ouvrez le dossier **Environnement** , puis choisissez **Liste des tâches**.
 
      [Task List, Environment, Options Dialog Box](../ide/reference/task-list-environment-options-dialog-box.md) s'affiche.
 
-     ![Liste des tâches Visual Studio](../ide/media/vs2015-task-list-options.png "|::ref2::|")
+     ![Liste des tâches Visual Studio](../ide/media/vs2015-task-list-options.png "vs2015_task_list_options")
 
-3. Dans la catégorie **Jetons** , dans la zone de texte **Nom** , entrez le nom du jeton, par exemple « BOGUE ».
+3. Dans la catégorie **jetons** , dans la zone de texte **nom** , entrez le nom du jeton, par exemple « bogue ».
 
-4. Dans la liste déroulante **Priorité** , choisissez une priorité par défaut pour le nouveau jeton. Choisissez le bouton **Ajouter** .
+4. Dans la liste déroulante **Priorité** , choisissez une priorité par défaut pour le nouveau jeton. Choisissez le bouton **Ajouter**.
 
-### <a name="cppComments"></a> Commentaires TODO C++
+### <a name="c-todo-comments"></a><a name="cppComments"></a> Commentaires TODO C++
  Par défaut, les commentaires TODO C++ sont affichés dans la fenêtre **Liste des tâches** . Vous pouvez modifier ce comportement.
 
 ##### <a name="to-turn-off-c-todo-comments"></a>Pour désactiver les commentaires TODO C++
@@ -113,12 +113,12 @@ Avec la **liste des tâches** , effectuez le suivi des commentaires de code qui 
 
 2. Dans la boîte de dialogue **Options** , ouvrez l' **Éditeur de texte**.
 
-3. Sous **C/C++** , choisissez **Affichage**, puis affectez à **Énumérer les tâches de commentaire** la valeur **False**.
+3. Sous **C/C++**, choisissez **Affichage**, puis affectez à **Énumérer les tâches de commentaire** la valeur **False**.
 
-## <a name="shortcuts"></a> Raccourcis
+## <a name="shortcuts"></a><a name="shortcuts"></a> Raccourcis
  Un *raccourci* est un signet dans le code qui est suivi dans la **Liste des tâches**; son icône est différente de celle d’un signet normal. Double-cliquez sur le raccourci dans la fenêtre **Liste des tâches** pour accéder à l'emplacement correspondant dans le code.
 
- ![Icône de raccourci de la liste des tâches Visual Studio](../ide/media/vs2015-task-list-bookmark.png "|::ref3::|")
+ ![Icône de raccourci de la liste des tâches Visual Studio](../ide/media/vs2015-task-list-bookmark.png "vs2015_task_list_bookmark")
 
 #### <a name="to-create-a-shortcut"></a>Pour créer un raccourci
 

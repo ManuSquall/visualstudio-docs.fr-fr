@@ -26,10 +26,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 52c55b2cfdf000d91a83071b53e8e9450187b720
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852018"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>Créer des projets et des diagrammes de modélisation UML
@@ -42,7 +42,7 @@ Les modèles UML vous aident à comprendre, à expliquer et à concevoir les sys
 > [!NOTE]
 > Il existe un autre type de diagramme, le diagramme de classes .NET, qui permet de visualiser le code du programme. Pour plus d’informations, consultez [conception et affichage des classes et des types](https://msdn.microsoft.com/library/ab7aty24.aspx).
 
-## <a name="CreatingModelingDiagrams"></a>Créer un diagramme dans un projet de modélisation
+## <a name="create-a-diagram-in-a-modeling-project"></a><a name="CreatingModelingDiagrams"></a> Créer un diagramme dans un projet de modélisation
  Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 #### <a name="to-create-a-diagram-and-add-it-to-a-project"></a>Pour créer un diagramme et l'ajouter à un projet
@@ -65,7 +65,7 @@ Les modèles UML vous aident à comprendre, à expliquer et à concevoir les sys
 
    2. Dans la boîte de dialogue **créer un nouveau projet de modélisation** , tapez un nom et un emplacement pour le nouveau projet, puis cliquez sur **OK**.
 
-        ![Boîte de dialogue créer un nouveau projet de modélisation](../modeling/media/uml-createmodel.png "UML_CreateModel")
+        ![Boîte de dialogue Créer un nouveau projet de modélisation](../modeling/media/uml-createmodel.png "UML_CreateModel")
 
         Si votre solution est ouverte, le nouveau projet est ajouté à la solution. Si vous n'avez aucune solution ouverte, vous pouvez entrer un nom pour une nouvelle solution.
 
@@ -80,7 +80,7 @@ Les modèles UML vous aident à comprendre, à expliquer et à concevoir les sys
 
 2. Dans le menu **Projet** , cliquez sur **Ajouter un nouvel élément**.
 
-3. Dans la boîte de dialogue **Ajouter un nouvel élément-** *\<le nom du projet >* , sous **modèles**, cliquez sur le type de diagramme de modélisation, par exemple **diagramme de composant UML**.
+3. Dans la boîte de dialogue **Ajouter un nouvel élément** *\<project name>* , sous **modèles**, cliquez sur le type de diagramme de modélisation, par exemple **diagramme de composant UML**.
 
 4. Tapez un nom pour le diagramme, puis cliquez sur **Ajouter**.
 
@@ -101,7 +101,7 @@ Les modèles UML vous aident à comprendre, à expliquer et à concevoir les sys
 
 5. Dans la zone **solution** , sélectionnez **Ajouter à la solution** pour ajouter le nouveau projet à une solution que vous avez déjà ouverte. ou **créez une nouvelle solution** pour fermer toute solution ouverte et ajouter le projet à une nouvelle solution.
 
-## <a name="RemovingModelingDiagrams"></a>Suppression de diagrammes de modélisation d’un projet
+## <a name="removing-modeling-diagrams-from-a-project"></a><a name="RemovingModelingDiagrams"></a> Suppression de diagrammes de modélisation d’un projet
  Vous pouvez supprimer définitivement un diagramme ou exclure temporairement un diagramme d'un projet, puis le restaurer.
 
 #### <a name="to-permanently-delete-a-diagram-from-a-project"></a>Pour supprimer définitivement un diagramme d'un projet
@@ -138,7 +138,7 @@ Les modèles UML vous aident à comprendre, à expliquer et à concevoir les sys
     > [!NOTE]
     > Chaque diagramme a une paire de fichiers dans le système de fichiers. Ne sélectionnez pas un fichier ayant l’extension `.layout`. En outre, Visual Studio ne prend pas en charge l'ajout de diagrammes UML existants à plusieurs projets de modélisation. Chaque fichier de diagramme doit être ouvert au sein du projet de modélisation dans lequel il a été créé. La raison en est qu'un diagramme UML est une vue du modèle appartenant à son projet de modélisation.
 
-## <a name="NonModelDiagrams"></a>Diagrammes qui ne nécessitent pas de projets de modélisation
+## <a name="diagrams-that-do-not-require-modeling-projects"></a><a name="NonModelDiagrams"></a> Diagrammes qui ne nécessitent pas de projets de modélisation
  Les types de diagrammes suivants ne font pas partie d'un projet de modélisation :
 
 - Diagrammes de classes créés en tant que vues du code source. Ils ne sont pas liés aux diagrammes de classes UML. Pour plus d’informations, consultez [conception et affichage des classes et des types](../ide/designing-and-viewing-classes-and-types.md).
@@ -147,13 +147,13 @@ Les modèles UML vous aident à comprendre, à expliquer et à concevoir les sys
 
 - Diagrammes qui ne sont pas des diagrammes UML ou des diagrammes de couche, tels que les langages spécifiques du domaine.
 
-## <a name="TroubleshootingModelingProjects"></a>Résolution des problèmes des projets et des diagrammes de modélisation
+## <a name="troubleshooting-modeling-projects-and-diagrams"></a><a name="TroubleshootingModelingProjects"></a> Résolution des problèmes des projets et des diagrammes de modélisation
  Le tableau suivant décrit les problèmes qui peuvent se produire avec les projets de modélisation ou les diagrammes, et explique comment les résoudre :
 
-|**Problème**|**Donne**|**Résolution**|
+|**Problème**|**Causes**|**Résolution :**|
 |---------------|----------------|--------------------|
-|Le projet de modélisation ne peut pas être ouvert ou chargé dans la solution.<br /><br /> Le message suivant s'affiche :<br /><br /> « Un ou plusieurs projets de la solution n'ont pas été correctement chargés. Pour plus d'informations, consultez la fenêtre de Sortie. »<br /><br /> La fenêtre Sortie affiche le message suivant :<br /><br /> «*Nomfichieretcheminduprojetdemodélisation*. modelproj : erreur : format GUID non reconnu. »|Un projet de modélisation possède des références aux projets qui ont le même nom et qui sont dans la même solution.<br /><br /> Par exemple, une couche est liée aux projets qui ont le même nom et qui sont dans la même solution.|Utilisez un éditeur de texte pour ouvrir le fichier du projet de modélisation, supprimez les références et réessayez d'ouvrir le projet de modélisation.<br /><br /> Pour éviter ce problème, n'ajoutez pas de références aux projets qui ont le même nom. Assurez-vous que les projets ont des noms uniques.|
-|Il manque des éléments dans les diagrammes qui sont ajoutés, copiés ou déplacés vers d'autres projets de modélisation ou d'autres emplacements de la solution.<br /><br /> ou<br /><br /> Les messages suivants s'affichent lorsque vous essayez d'ouvrir un diagramme :<br /><br /> -«Certaines formes ou connecteurs du diagramme sont manquants, car leurs définitions n’existent pas dans ce projet. Les définitions ont été supprimées du modèle pendant que le diagramme était fermé, ou le diagramme a été copié dans un projet ne contenant pas ces définitions. »<br /><br /> ou<br /><br /> -« Ce document est ouvert par un autre projet ».|Le fichier de diagramme a été ajouté, déplacé ou copié à partir d'un projet de modélisation vers un autre projet de modélisation ou vers un autre emplacement de la solution.|Pour copier un fichier de diagramme, créez un diagramme et copiez les éléments du diagramme source vers le nouveau diagramme.|
+|Le projet de modélisation ne peut pas être ouvert ou chargé dans la solution.<br /><br /> Le message suivant s’affiche :<br /><br /> « Un ou plusieurs projets de la solution n'ont pas été correctement chargés. Pour plus d'informations, consultez la fenêtre de Sortie. »<br /><br /> La fenêtre Sortie affiche le message suivant :<br /><br /> «*Nomfichieretcheminduprojetdemodélisation*. modelproj : erreur : format GUID non reconnu. »|Un projet de modélisation possède des références aux projets qui ont le même nom et qui sont dans la même solution.<br /><br /> Par exemple, une couche est liée aux projets qui ont le même nom et qui sont dans la même solution.|Utilisez un éditeur de texte pour ouvrir le fichier du projet de modélisation, supprimez les références et réessayez d'ouvrir le projet de modélisation.<br /><br /> Pour éviter ce problème, n'ajoutez pas de références aux projets qui ont le même nom. Assurez-vous que les projets ont des noms uniques.|
+|Il manque des éléments dans les diagrammes qui sont ajoutés, copiés ou déplacés vers d'autres projets de modélisation ou d'autres emplacements de la solution.<br /><br /> - ou -<br /><br /> Les messages suivants s'affichent lorsque vous essayez d'ouvrir un diagramme :<br /><br /> -«Certaines formes ou connecteurs du diagramme sont manquants, car leurs définitions n’existent pas dans ce projet. Les définitions ont été supprimées du modèle pendant que le diagramme était fermé, ou le diagramme a été copié dans un projet ne contenant pas ces définitions. »<br /><br /> - ou -<br /><br /> -« Ce document est ouvert par un autre projet ».|Le fichier de diagramme a été ajouté, déplacé ou copié à partir d'un projet de modélisation vers un autre projet de modélisation ou vers un autre emplacement de la solution.|Pour copier un fichier de diagramme, créez un diagramme et copiez les éléments du diagramme source vers le nouveau diagramme.|
 
 ## <a name="see-also"></a>Voir aussi
  [Modifier des modèles et des diagrammes UML](../modeling/edit-uml-models-and-diagrams.md) [structurer votre solution de modélisation](../modeling/structure-your-modeling-solution.md)

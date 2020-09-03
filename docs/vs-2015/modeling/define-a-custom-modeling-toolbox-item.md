@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0a038150519ea7a40a52fb1be16ed93045c09eed
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851517"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>Définir un élément de boîte à outils de modélisation personnalisé
@@ -34,7 +34,7 @@ Pour faciliter la création d'un élément ou d'un groupe d'éléments d'après 
 > [!NOTE]
 > Vous pouvez utiliser cette méthode pour créer des outils d'élément. Autrement dit, vous pouvez créer des outils que vous faites glisser de la boîte à outils vers un diagramme. Vous ne pouvez pas créer d'outils de connecteur.
 
-## <a name="DefineTool"></a>Définition d’un outil de modélisation personnalisé
+## <a name="defining-a-custom-modeling-tool"></a><a name="DefineTool"></a> Définition d’un outil de modélisation personnalisé
 
 #### <a name="to-define-a-custom-modeling-tool"></a>Pour définir un outil de modélisation personnalisé
 
@@ -58,7 +58,7 @@ Pour faciliter la création d'un élément ou d'un groupe d'éléments d'après 
 
     - Un seul fichier **. fichier tbxinfo** peut être utilisé pour définir plusieurs outils. Il peut faire référence à des fichiers de diagrammes situés dans des sous-dossiers.
 
-5. Redémarrez Visual Studio. L'outil supplémentaire apparaît dans la boîte à outils du type de diagramme approprié.
+5. Démarrez Visual Studio. L'outil supplémentaire apparaît dans la boîte à outils du type de diagramme approprié.
 
 ### <a name="what-the-custom-tool-will-replicate"></a>Que réplique l'outil personnalisé ?
  Un outil personnalisé réplique la plupart des fonctionnalités du diagramme source :
@@ -83,8 +83,8 @@ Pour faciliter la création d'un élément ou d'un groupe d'éléments d'après 
 
 - Routage de connecteur. Si vous routez des connecteurs manuellement, le routage n'est pas préservé quand votre outil est utilisé. Les positions de certaines formes imbriquées, telles que les Ports, ne sont pas conservées par rapport à leurs propriétaires.
 
-## <a name="tbxinfo"></a>Comment définir les propriétés des outils personnalisés
- Un fichier d’informations de boîte à outils ( **. fichier tbxinfo**) vous permet de spécifier un nom de boîte à outils, une icône, une info-bulle, une tabulation et un mot clé d’aide pour un ou plusieurs outils personnalisés. Donnez-lui un nom, tel que **mytools. fichier tbxinfo**.
+## <a name="how-to-define-the-properties-of-custom-tools"></a><a name="tbxinfo"></a> Comment définir les propriétés des outils personnalisés
+ Un fichier d’informations de boîte à outils (**. fichier tbxinfo**) vous permet de spécifier un nom de boîte à outils, une icône, une info-bulle, une tabulation et un mot clé d’aide pour un ou plusieurs outils personnalisés. Donnez-lui un nom, tel que **mytools. fichier tbxinfo**.
 
  Ce fichier ressemble à ce qui suit :
 
@@ -129,16 +129,16 @@ Pour faciliter la création d'un élément ou d'un groupe d'éléments d'après 
 |---------------|-------------|
 |displayName|Le nom de l'élément de boîte à outils.|
 |tabName|L'onglet de boîte à outils sous lequel l'élément doit apparaître. Vous pouvez spécifier le nom de l'onglet normal pour ce type de diagramme ou un nom distinct.|
-|image|Emplacement du fichier bitmap ( **. bmp**), qui doit avoir une hauteur et une largeur de 16, et une profondeur de couleur de 24 bits.|
+|image|Emplacement du fichier bitmap (**. bmp**), qui doit avoir une hauteur et une largeur de 16, et une profondeur de couleur de 24 bits.|
 |f1Keyword|Le mot clé qui localise une rubrique d'aide.|
-|info-bulle|Une info-bulle pour cet outil.|
+|tooltip|Une info-bulle pour cet outil.|
 
  Vous pouvez modifier le fichier bitmap dans Visual Studio et affecter la valeur 16 à sa hauteur et sa largeur dans la fenêtre Propriétés.
 
 > [!NOTE]
 > Si vous commencez à utiliser un fichier .tbxinfo après avoir utilisé des fichiers de diagrammes seuls, vous constaterez peut-être que la boîte à outils contient à la fois les anciennes et les nouvelles versions d'un élément de boîte à outils. Cela peut également se produire si le nom du fichier de diagramme a été tapé incorrectement dans le fichier .tbxinfo. Si cela se produit, dans le menu contextuel de la boîte à outils, choisissez **Réinitialiser la boîte à outils**. Les éléments de boîte à outils personnalisés disparaîtront. Redémarrez Visual Studio et les éléments personnalisés corrects apparaîtront.
 
-## <a name="Extension"></a>Comment distribuer des éléments de boîte à outils dans une extension Visual Studio
+## <a name="how-to-distribute-toolbox-items-in-a-visual-studio-extension"></a><a name="Extension"></a> Comment distribuer des éléments de boîte à outils dans une extension Visual Studio
  Vous pouvez distribuer des éléments de boîte à outils à d’autres [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] utilisateurs en les empaquetant dans une extension Visual Studio (VSIX). Vous pouvez empaqueter des commandes, des profils et d'autres extensions dans le même fichier VSIX. Pour plus d’informations, consultez [déploiement d’extensions Visual Studio](https://msdn.microsoft.com/library/dd393694(VS.100).aspx).
 
  L'approche habituelle pour créer une extension Visual Studio consiste à utiliser le modèle de projet VSIX. Pour ce faire, vous devez avoir installé [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)].
@@ -155,9 +155,9 @@ Pour faciliter la création d'un élément ou d'un groupe d'éléments d'après 
 
      Définissez un nouveau projet d'extension Visual Studio.
 
-    1. Dans le menu **Fichier** , choisissez **Nouveau**, **Projet**.
+    1. Dans le menu **Fichier**, sélectionnez **Nouveau**, **Projet**.
 
-    2. Dans la boîte de dialogue **nouveau projet** , sous **modèles installés**, **Choisissez C#visuel** , **extensibilité**, **projet VSIX**.
+    2. Dans la boîte de dialogue **nouveau projet** , sous **modèles installés**, choisissez **Visual C#**, **extensibilité**, **projet VSIX**.
 
 4. Ajoutez vos définitions de boîte à outils au projet. Incluez le fichier **. fichier tbxinfo** , les fichiers de diagramme, les fichiers bitmap et les fichiers de ressources, et assurez-vous qu’ils sont inclus dans le VSIX.
 
@@ -168,11 +168,11 @@ Pour faciliter la création d'un élément ou d'un groupe d'éléments d'après 
 
 5. Définissez les propriétés suivantes de tous les fichiers que vous venez d'ajouter. Vous pouvez définir leurs propriétés en même temps en les sélectionnant dans l'Explorateur de solutions. Veillez à ne pas modifier les propriétés des autres fichiers dans le projet.
 
-     **Copier dans le répertoire de sortie** = **toujours copier**
+     **Copier dans le répertoire**  =  de sortie **Toujours copier**
 
      **Action de génération** = **Contenu**
 
-     **Include dans VSIX** = **true**
+     **Inclure dans VSIX**  =  **true**
 
 6. Ouvrez **source.extension.vsixmanifest**. Le fichier s'ouvre dans l'éditeur de manifeste d'extension.
 
@@ -180,18 +180,18 @@ Pour faciliter la création d'un élément ou d'un groupe d'éléments d'après 
 
      Sous **ressources**, choisissez **nouveau** , puis définissez les champs dans la boîte de dialogue comme suit :
 
-    - **Type** = **type d’extension personnalisé**
+    - **Type**  =  **Type d’extension personnalisé**
 
     - Type = `Microsoft.VisualStudio.ArchitectureTools.CustomToolboxItems`
 
         > [!NOTE]
         > Cette option ne figure pas dans la liste déroulante. Vous devez l'entrer à l'aide du clavier.
 
-    - **Fichier de = source sur le système de fichiers**.
+    - **Source**  =  **Fichier sur FileSystem**.
 
     - **Path** = votre fichier **. fichier tbxinfo** , par exemple **mytools. fichier tbxinfo**
 
-8. créer le projet ;
+8. Créez le projet.
 
 9. **Pour vérifier que l’extension fonctionne**, appuyez sur F5. L'instance expérimentale de Visual Studio démarre.
 
@@ -214,7 +214,7 @@ Pour faciliter la création d'un élément ou d'un groupe d'éléments d'après 
 
 1. Créez un projet d'Extension Visual Studio qui contient un ou plusieurs outils personnalisés.
 
-    Dans le fichier **. fichier tbxinfo** , utilisez la méthode de fichier de ressources pour définir les `displayName`, la boîte à outils `tabName`et l’info-bulle de l’outil. Créez un fichier de ressources dans lequel ces chaînes sont définies, compilez-le dans un assembly et faites-y référence à partir du fichier tbxinfo.
+    Dans le fichier **. fichier tbxinfo** , utilisez la méthode de fichier de ressources pour définir les `displayName` Outils, la boîte à outils `tabName` et l’info-bulle. Créez un fichier de ressources dans lequel ces chaînes sont définies, compilez-le dans un assembly et faites-y référence à partir du fichier tbxinfo.
 
 2. Créez des assemblys supplémentaires qui contiennent des fichiers de ressources avec des chaînes dans d'autres langues.
 

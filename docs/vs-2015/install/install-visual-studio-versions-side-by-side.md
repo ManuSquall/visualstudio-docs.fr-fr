@@ -14,10 +14,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 1ef2d51e35a198dbe6da3c1a034dd7c8d1bf8922
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851028"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Installer des versions de Visual Studio côte à côte
@@ -32,7 +32,7 @@ Visual Studio peut être installé sur un ordinateur sur lequel une version ant�
 
 - Si vous utilisez Visual Studio 2015 pour ouvrir une solution créée dans [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], vous pouvez par la suite ouvrir et modifier à nouveau la solution dans la version antérieure à condition de ne pas avoir implémenté de fonctionnalités spécifiques à Visual Studio 2015.
 
-- Si vous essayez d’utiliser Visual Studio 2015 pour ouvrir une solution créée dans [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] ou une version antérieure, vous devrez peut-être modifier vos projets et fichiers pour qu’ils soient compatibles avec Visual Studio 2015. Pour plus d’informations, consultez la page [Porter, migrer et mettre à niveau des projets Visual Studio](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2015).
+- Si vous essayez d’utiliser Visual Studio 2015 pour ouvrir une solution créée dans [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] ou une version antérieure, vous devrez peut-être modifier vos projets et fichiers pour qu’ils soient compatibles avec Visual Studio 2015. Pour plus d’informations, consultez la page [port, migration et mise à niveau des projets Visual Studio](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2015) .
 
 - Si vous désinstallez une version de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sur un ordinateur ayant plusieurs versions installées, les associations de fichiers pour [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sont supprimées pour toutes les versions. Vous pouvez remapper ces associations de fichiers à l’aide du bouton **Restaurer les associations de fichiers** sous les onglets **Environnement**, **Général** de la boîte de dialogue [Options](../ide/reference/general-environment-options-dialog-box.md) .
 
@@ -46,17 +46,17 @@ Visual Studio peut être installé sur un ordinateur sur lequel une version ant�
 
      Pour des informations spécifiques au langage, consultez la rubrique appropriée dans le tableau suivant.
 
-    |Langue|Rubrique|
+    |Langage|Rubrique|
     |--------------|-----------|
-    |[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]|[Page Application, Concepteur de projets (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)|
-    |Visual C#|[Page Application, Concepteur de projets (C#)](../ide/reference/application-page-project-designer-csharp.md)|
-    |Visual F#|[Configuration de projets](https://msdn.microsoft.com/library/a1489abb-6294-4f8f-b71f-2cb126393526)|
-    |C++|[Guide pratique pour modifier le framework cible et l’ensemble d’outils de plateforme](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)|
+    |[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]|[Page Application, Concepteur de projet (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)|
+    |Visual C#|[Page Application, Concepteur de projet (C#)](../ide/reference/application-page-project-designer-csharp.md)|
+    |Visual F#|[Configuration de projets](https://msdn.microsoft.com/library/a1489abb-6294-4f8f-b71f-2cb126393526)|
+    |C++|[Comment : modifier le Framework cible et l’ensemble d’outils de plateforme](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)|
     |[!INCLUDE[jsprjscript](../includes/jsprjscript-md.md)]|[Exécution d’une application JScript sur une version précédente du Common Language Runtime](https://msdn.microsoft.com/bbea51b5-ac03-4e6c-b9a6-f487ef63eda5)|
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Installer Visual Studio](../install/install-visual-studio-2015.md)
 - [Porter, migrer et mettre à niveau des projets Visual Studio](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2015)
-- [Génération d’applications isolées et d’assemblys côte à côte C/C++](https://msdn.microsoft.com/library/9465904e-76f7-48bd-bb3f-c55d8f1699b6)
+- [Génération d’applications isolées C/C++ et d’assemblys côte à côte](https://msdn.microsoft.com/library/9465904e-76f7-48bd-bb3f-c55d8f1699b6)
 - [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

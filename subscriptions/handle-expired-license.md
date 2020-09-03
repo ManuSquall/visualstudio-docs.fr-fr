@@ -8,10 +8,10 @@ ms.date: 03/03/2020
 ms.topic: conceptual
 description: Découvrez comment les administrateurs peuvent gérer les abonnements Visual Studio ayant expiré
 ms.openlocfilehash: 50fffc186ab3135077418eb29f849918db664290
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80232478"
 ---
 # <a name="expired-subscriptions"></a>Abonnements arrivés à expiration
@@ -24,7 +24,7 @@ Quand l’abonnement d’un utilisateur a expiré, cela est indiqué dans le por
 Votre revendeur ou votre vendeur de Microsoft vous guidera dans le renouvellement ou l’achat d’abonnements supplémentaires. Une fois que la commande a été passée ou que le contrat a été renouvelé, les nouveaux abonnements sont disponibles et peuvent être [attribués à vos abonnés](assign-license.md).
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentation Azure](https://docs.microsoft.com/azure/)
 - [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)

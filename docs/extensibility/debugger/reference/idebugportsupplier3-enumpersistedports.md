@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier3::EnumPersistedPorts (fr) Microsoft Docs
+title: 'IDebugPortSupplier3 :: EnumPersistedPorts | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 92b31a6b6898b0031e4a01d5a6433d0ce77e64f4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80724457"
 ---
 # <a name="idebugportsupplier3enumpersistedports"></a>IDebugPortSupplier3::EnumPersistedPorts
-Cette méthode récupère un objet qui permet le recensement de la liste des ports persistants.
+Cette méthode récupère un objet qui autorise l’énumération de la liste des ports persistants.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -43,16 +43,16 @@ int EnumPersistedPorts(
 
 ## <a name="parameters"></a>Paramètres
 `PortNames`\
-[dans] Une structure [BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md) qui contient une liste de noms de ports à trouver et à retourner parmi les ports persistants. Seuls les ports persistants avec ces noms seront retournés.
+dans Structure [BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md) qui contient une liste de noms de ports à rechercher et à retourner parmi les ports persistants. Seuls les ports persistants avec ces noms sont renvoyés.
 
 `ppEnum`\
-[out] Un objet qui implémente l’interface [IEnumDebugPorts2.](../../../extensibility/debugger/reference/ienumdebugports2.md)
+à Objet qui implémente l’interface [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) .
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- Les ports persistants sont chargés lorsqu’un fournisseur portuaire est instantanément et sauvé lorsque le fournisseur du port est détruit.
+ Les ports persistants sont chargés lorsqu’un fournisseur de port est instancié, puis enregistrés lorsque le fournisseur de port est détruit.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)

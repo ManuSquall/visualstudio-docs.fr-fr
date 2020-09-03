@@ -10,22 +10,22 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cdba2105c6b8af42d51669e0d1fc8ce49085d513
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851613"
 ---
-# <a name="step-1-create-a-windows-forms-application-project"></a>Étape 1 : créer un projet d'application Windows Forms
+# <a name="step-1-create-a-windows-forms-application-project"></a>Étape 1 : créer un projet d'application Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Lorsque vous créez une visionneuse d’images, la première étape consiste à créer un projet d’application Windows Forms.
 
- ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo") Pour obtenir une version vidéo de cette rubrique, consultez [didacticiel 1 : créer une visionneuse d’images dans Visual Basic vidéo 1](https://msdn.microsoft.com/vbasic/gg315352.aspx) ou [didacticiel 1 : créer une visionneuse d’images dans C# la vidéo 1](https://msdn.microsoft.com/vcsharp/gg278409.aspx). Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d’interface utilisateur. Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.
+ ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo") Pour obtenir une version vidéo de cette rubrique, consultez [didacticiel 1 : créer une visionneuse d’images dans Visual Basic vidéo 1](https://msdn.microsoft.com/vbasic/gg315352.aspx) ou [didacticiel 1 : créer une visionneuse d’images en C#-vidéo 1](https://msdn.microsoft.com/vcsharp/gg278409.aspx). Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d’interface utilisateur. Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.
 
 ### <a name="to-create-a-windows-forms-application-project"></a>Pour créer un projet Application Windows Forms
 
-1. Dans la barre de menus, sélectionnez **Fichier**, **Nouveau**, **Projet**. La boîte de dialogue doit se présenter comme suit.
+1. Dans le menu principal, sélectionnez **Fichier**, **Nouveau**, **Projet**. La boîte de dialogue doit se présenter comme suit.
 
      ![Boîte de dialogue Nouveau projet](../ide/media/newprojectdialogcallouts.png "NewProjectDialogCallouts") Boîte de dialogue Nouveau projet
 
@@ -50,12 +50,12 @@ Lorsque vous créez une visionneuse d’images, la première étape consiste à 
 
     - **Fenêtre principale** Dans cette fenêtre, vous effectuez la majeure partie de votre travail, notamment l’utilisation des formulaires et la modification du code. Dans l'illustration, la fenêtre affiche un formulaire dans l'éditeur de formulaires. En haut de la fenêtre, les onglets **Page de démarrage** et **Form1.cs [Design]** s’affichent. (En Visual Basic, le nom d'un onglet se termine par .vb au lieu de .cs.)
 
-    - **Fenêtre Explorateur de solutions** Dans cette fenêtre, vous pouvez afficher tous les éléments de votre solution et y accéder. Si vous sélectionnez un fichier, le contenu de la fenêtre **Propriétés** est modifié. Si vous ouvrez un fichier de code (qui se termine par .cs en Visual C# et par .vb en Visual Basic), le fichier de code ou un concepteur pour le fichier de code s'affiche. Un concepteur est une surface visuelle à laquelle vous pouvez ajouter des contrôles tels que des boutons et des listes. Pour les formulaires Visual Studio, le concepteur est appelé le Concepteur Windows Forms.
+    - **Fenêtre Explorateur de solutions** Dans cette fenêtre, vous pouvez afficher et accéder à tous les éléments de votre solution. Si vous sélectionnez un fichier, le contenu de la fenêtre **Propriétés** est modifié. Si vous ouvrez un fichier de code (qui se termine par .cs en Visual C# et par .vb en Visual Basic), le fichier de code ou un concepteur pour le fichier de code s'affiche. Un concepteur est une surface visuelle à laquelle vous pouvez ajouter des contrôles tels que des boutons et des listes. Pour les formulaires Visual Studio, le concepteur est appelé le Concepteur Windows Forms.
 
-    - **Fenêtre Propriétés** Elle vous permet de modifier les propriétés des éléments que vous choisissez dans les autres fenêtres. Par exemple, si vous sélectionnez Form1, vous pouvez modifier son titre en définissant la propriété **Text**, et vous pouvez modifier la couleur d’arrière-plan en définissant la propriété **Backcolor**.
+    - **Fenêtre Propriétés** Dans cette fenêtre, vous pouvez modifier les propriétés des éléments que vous choisissez dans les autres fenêtres. Par exemple, si vous sélectionnez Form1, vous pouvez modifier son titre en définissant la propriété **Text**, et vous pouvez modifier la couleur d’arrière-plan en définissant la propriété **Backcolor**.
 
     > [!NOTE]
-    > La première ligne de l’**Explorateur de solutions** affiche **Solution « PictureViewer » (1 projet)** , ce qui signifie que Visual Studio a créé une solution pour vous. Une solution peut contenir plusieurs projets, mais, pour le moment, vous utiliserez des solutions contenant un seul projet.
+    > La première ligne de l’**Explorateur de solutions** affiche **Solution « PictureViewer » (1 projet)**, ce qui signifie que Visual Studio a créé une solution pour vous. Une solution peut contenir plusieurs projets, mais, pour le moment, vous utiliserez des solutions contenant un seul projet.
 
 6. Dans la barre de menus, sélectionnez **Fichier**, **Enregistrer tout**.
 
@@ -67,6 +67,6 @@ Lorsque vous créez une visionneuse d’images, la première étape consiste à 
 
 ### <a name="to-continue-or-review"></a>Pour continuer ou examiner
 
-- Pour passer à l’étape suivante du didacticiel, consultez [Étape 2 : exécuter votre programme](../ide/step-2-run-your-program.md).
+- Pour passer à l’étape suivante du didacticiel, consultez [étape 2 : exécuter votre programme](../ide/step-2-run-your-program.md).
 
-- Pour revenir à la rubrique de présentation, consultez [Didacticiel 1 : créer une visionneuse d’images](../ide/tutorial-1-create-a-picture-viewer.md).
+- Pour revenir à la rubrique de présentation, consultez [didacticiel 1 : créer une visionneuse d’images](../ide/tutorial-1-create-a-picture-viewer.md).

@@ -24,10 +24,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d0763f2cf86d94f96f6f9c907ee306c731994f22
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852086"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Guide pratique pour ajouter ou supprimer des références à l’aide du gestionnaire de références
@@ -54,13 +54,13 @@ Vous pouvez utiliser la boîte de dialogue **Gestionnaire de références** pour
 - Parcourir, avec le sous-groupe Récent.
 
 ## <a name="assemblies-tab"></a>Onglet Assemblys
- L’onglet **Assemblys** répertorie tous les assemblys .NET Framework qui sont disponibles pour le référencement. L’onglet **Assemblys** ne répertorie par les assemblys du Global Assembly Cache (GAC), car ils appartiennent à l’environnement d’exécution. Si vous déployez ou copiez une application qui contient une référence à un assembly enregistré dans le GAC, cet assembly ne sera ni déployé ni copié avec l'application, quelle que soit la valeur du paramètre Copie locale. Pour plus d’informations, consultez [Références de projet](https://msdn.microsoft.com/library/ez524kew.aspx).
+ L’onglet **Assemblys** répertorie tous les assemblys .NET Framework qui sont disponibles pour le référencement. L’onglet **assemblys** ne répertorie pas les assemblys du global assembly cache (GAC), car les ASSEMBLYS du GAC font partie de l’environnement d’exécution. Si vous déployez ou copiez une application qui contient une référence à un assembly enregistré dans le GAC, cet assembly ne sera ni déployé ni copié avec l'application, quelle que soit la valeur du paramètre Copie locale. Pour plus d’informations, consultez [Références de projet](https://msdn.microsoft.com/library/ez524kew.aspx).
 
  Lorsque vous ajoutez manuellement une référence à l'un des espaces de noms EnvDTE (EnvDTE, EnvDTE80, EnvDTE90, EnvDTE90a ou EnvDTE100), attribuez la valeur False à la propriété Incorporer les types interop, dans la fenêtre Propriétés. Si cette propriété a la valeur True, des problèmes de génération risquent de survenir car certaines propriétés EnvDTE ne peuvent pas être incorporées.
 
  Tous les projets du Bureau contiennent une référence implicite à mscorlib. Les projets [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] contiennent une référence implicite à Microsoft.VisualBasic. Dans [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], tous les projets contiennent une référence implicite à System.Core, même s'il est supprimé de la liste de références.
 
- Si un type de projet ne prend pas en charge les assemblys, l’onglet ne s’affiche pas dans la boîte de dialogue **Gestionnaire de références**.
+ Si un type de projet ne prend pas en charge les assemblys, l’onglet ne s’affiche pas dans la boîte de dialogue **Gestionnaire de références** .
 
  L'onglet Assemblys comprend deux sous-onglets :
 
@@ -136,7 +136,7 @@ Vous pouvez utiliser la boîte de dialogue **Gestionnaire de références** pour
 ## <a name="com-tab"></a>Onglet COM
  L'onglet COM répertorie tous les composants COM pouvant être référencés. Si vous souhaitez ajouter une référence à une DLL COM inscrite qui contient un manifeste interne, annulez d'abord l'inscription de la DLL. Sinon, Visual Studio ajoute la référence d'assembly comme contrôle ActiveX, et non comme DLL native.
 
- Si un type de projet ne prend pas en charge COM, l’onglet ne s’affiche pas dans la boîte de dialogue **Gestionnaire de références**.
+ Si un type de projet ne prend pas en charge COM, l’onglet ne s’affiche pas dans la boîte de dialogue **Gestionnaire de références** .
 
 ## <a name="solution-tab"></a>Onglet Solution
  L'onglet Solution répertorie tous les projets compatibles dans la solution actuelle, dans le sous-onglet Projets.
@@ -154,9 +154,9 @@ Vous pouvez utiliser la boîte de dialogue **Gestionnaire de références** pour
 
  Vous pouvez générer un fichier WinMD dans Visual Studio de deux façons :
 
-- **Projets managés d’application [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]**  : les projets d’application [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] peuvent générer les binaires de WinMD en définissant Propriétés de projet &#124; Type de sortie = fichier WinMD. Le nom de fichier WinMD doit être l'espace de noms du sur-ensemble de tous les espaces de noms qui existent dans celui-ci. Par exemple, si un projet comprend des espaces de noms A.B et A.B.C, les étiquettes possibles pour le WinMD généré sont A.winmd et A.B.winmd. Si un utilisateur affiche une valeur Propriétés de projet &#124; Nom d’assembly ou Propriétés de projet &#124; Espace de noms qui est disjointe de l’ensemble d’espaces de noms du projet ou s’il n’y a aucun espace de noms de sur-ensemble dans un projet, un avertissement de construction est généré : « A.winmd » n’est pas un nom de fichier de .winmd valide de cet assembly. Tous les types compris dans un fichier de métadonnées Windows doivent se trouver dans un sous-espace de noms du nom du fichier. Les types qui n'existent pas dans un sous espace de noms du nom de fichier ne peuvent pas être localisés lors de l'exécution. Dans cet assembly, le plus petit espace de noms courant est « CSWSClassLibrary1 ». Un projet Visual Basic ou Visual C# de bureau peut uniquement utiliser des WinMDs générés à l'aide des kits SDK [!INCLUDE[win8](../includes/win8-md.md)], appelés WinMDs internes, et ne peut pas générer de WinMD.
+- ** [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] projets managés d’application**: les [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] projets d’application peuvent générer des fichiers binaires WinMD en définissant des propriétés de projet &#124; type de sortie = fichier WinMD. Le nom de fichier WinMD doit être l'espace de noms du sur-ensemble de tous les espaces de noms qui existent dans celui-ci. Par exemple, si un projet comprend des espaces de noms A.B et A.B.C, les étiquettes possibles pour le WinMD généré sont A.winmd et A.B.winmd. Si un utilisateur affiche une valeur Propriétés de projet &#124; Nom d’assembly ou Propriétés de projet &#124; Espace de noms qui est disjointe de l’ensemble d’espaces de noms du projet ou s’il n’y a aucun espace de noms de sur-ensemble dans un projet, un avertissement de construction est généré : « A.winmd » n’est pas un nom de fichier de .winmd valide de cet assembly. Tous les types compris dans un fichier de métadonnées Windows doivent se trouver dans un sous-espace de noms du nom du fichier. Les types qui n'existent pas dans un sous espace de noms du nom de fichier ne peuvent pas être localisés lors de l'exécution. Dans cet assembly, le plus petit espace de noms courant est « CSWSClassLibrary1 ». Un projet Visual Basic ou Visual C# de bureau peut uniquement utiliser des WinMDs générés à l'aide des kits SDK [!INCLUDE[win8](../includes/win8-md.md)], appelés WinMDs internes, et ne peut pas générer de WinMD.
 
-- **Projets d’application au format natif [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]**  : un fichier WinMD natif comprend uniquement des métadonnées. Son implémentation existe dans un fichier DLL distinct. Il est possible de produire des binaires natifs en choisissant le modèle de projet Composant Windows Runtime dans la boîte de dialogue **Nouveau projet** ou en partant d’un projet vide et en modifiant les propriétés du projet pour générer un fichier WinMD. Si le projet se compose d'espaces de noms disjoints, une erreur de build indique à l'utilisateur de combiner les espaces de noms ou d'exécuter l'outil MSMerge.
+- ** [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] projets d’application native**: un fichier WinMD natif se compose uniquement de métadonnées. Son implémentation existe dans un fichier DLL distinct. Il est possible de produire des binaires natifs en choisissant le modèle de projet Composant Windows Runtime dans la boîte de dialogue **Nouveau projet** ou en partant d’un projet vide et en modifiant les propriétés du projet pour générer un fichier WinMD. Si le projet se compose d'espaces de noms disjoints, une erreur de build indique à l'utilisateur de combiner les espaces de noms ou d'exécuter l'outil MSMerge.
 
   L'onglet Windows comprend deux sous-groupes.
 
@@ -183,7 +183,7 @@ Vous pouvez utiliser la boîte de dialogue **Gestionnaire de références** pour
 > [!NOTE]
 > Si un projet fait référence à un kit SDK qui dépend d’un autre, Visual Studio n’utilise pas le deuxième kit à moins que l’utilisateur y ajoute manuellement une référence. Quand un utilisateur choisit un SDK sous l’onglet **Extensions**, la boîte de dialogue **Gestionnaire de références** l’aide à identifier les dépendances du SDK en répertoriant non seulement le nom et la version du SDK, mais également le nom de toutes les dépendances du SDK dans le volet d’informations. Si un utilisateur ne remarque pas les dépendances et n’ajoute pas ce kit SDK, MSBuild l’invite à ajouter les dépendances.
 
- Si un type de projet ne prend pas en charge les **Extensions**, l’onglet ne s’affiche pas dans la boîte de dialogue **Gestionnaire de références**.
+ Si un type de projet ne prend pas en charge les **Extensions**, l’onglet ne s’affiche pas dans la boîte de dialogue **Gestionnaire de références** .
 
 ## <a name="browse-button"></a>Bouton Parcourir
  Vous pouvez utiliser le bouton **Parcourir** pour rechercher un composant dans le système de fichiers.
@@ -198,7 +198,7 @@ Vous pouvez utiliser la boîte de dialogue **Gestionnaire de références** pour
 
 - **Composant natif** : un projet natif crée un fichier WinMD pour chaque ensemble d’espaces de noms disjoint et une DLL qui contient l’implémentation. Les WinMD auront des noms disparates. En faisant référence à ce fichier du composant natif, MSBuild ne sait pas que les WinMD nommés différemment constituent un composant. Ainsi, seuls les fichiers *nom_fichier*.dll et *nom_fichier*.winmd portant le même nom sont copiés, et des erreurs d’exécution se produisent. Pour contourner ce problème, créez un kit SDK d’extension. Pour plus d’informations, consultez [Création d’un SDK](../extensibility/creating-a-software-development-kit.md).
 
-- **Utilisation de contrôles** : au minimum, un contrôle XAML comprend un fichier *nom_fichier*.winmd, *nom_fichier*.dll, *nom_fichier*.pri, *nom_xaml*.xaml et *nom_image*.jpg. Quand le projet est généré, les fichiers de ressources associés à la référence de fichier ne sont pas copiés dans le répertoire de sortie du projet. Seuls les fichiers *nom_fichier*.winmd, *nom_fichier*.dll et *nom_fichier*.pri sont copiés. Une erreur de build est journalisée pour indiquer à l’utilisateur que les ressources *nom_xaml*.xaml et *nom_image*.jpg sont manquantes. Pour que l'opération réussisse, l'utilisateur doit copier manuellement les fichiers de ressources dans le répertoire de sortie du projet pour la génération et le débogage/l'exécution. Pour contourner ce problème, créez un SDK de l’extension en suivant les étapes décrites dans [Création d’un SDK](../extensibility/creating-a-software-development-kit.md), ou modifiez le fichier projet pour ajouter la propriété suivante :
+- **Utilisation de contrôles**: au minimum, un contrôle XAML se compose d’un *nom de fichier*. winmd, *nom*de fichier. dll, *nom de fichier*. PRI, *XamlName*. xaml et d' *ImageName*. jpg. Lorsque le projet est généré, les fichiers de ressources associés à la référence de fichier ne sont pas copiés dans le répertoire de sortie du projet, et seuls *filename*. Winmd, *filename*. dll et *filename*. pri sont copiés. Une erreur de build est journalisée pour informer l’utilisateur que les ressources *XamlName*. xaml et *ImageName*. jpg sont manquantes. Pour que l'opération réussisse, l'utilisateur doit copier manuellement les fichiers de ressources dans le répertoire de sortie du projet pour la génération et le débogage/l'exécution. Pour contourner ce problème, créez un SDK de l’extension en suivant les étapes décrites dans [Création d’un SDK](../extensibility/creating-a-software-development-kit.md), ou modifiez le fichier projet pour ajouter la propriété suivante :
 
     ```
     <PropertyGroup>
@@ -212,8 +212,8 @@ Vous pouvez utiliser la boîte de dialogue **Gestionnaire de références** pour
 ## <a name="recent"></a>Récent
  Les boutons Assemblys, COM, Windows et Parcourir prennent tous en charge un onglet Récent, qui énumère la liste des composants qui ont été récemment ajoutés aux projets.
 
-## <a name="search"></a>Rechercher
- La barre de recherche de la boîte de dialogue **Gestionnaire de références** fonctionne sur l’onglet situé dans le focus. Par exemple, si un utilisateur tape « système » dans la barre de recherche alors que l’onglet **Solution** est affiché, la recherche ne retourne aucun résultat à moins que la solution consiste en un nom de projet contenant « système ».
+## <a name="search"></a>Recherche
+ La barre de recherche de la boîte de dialogue **Gestionnaire de références** fonctionne sur l’onglet qui est actif. Par exemple, si un utilisateur tape « système » dans la barre de recherche alors que l’onglet **solution** est actif, la recherche ne retourne aucun résultat à moins que la solution se compose d’un nom de projet contenant « système ».
 
 ## <a name="see-also"></a>Voir aussi
  [Plume Comment : ajouter ou supprimer des références à l’aide de la boîte de dialogue Ajouter une référence](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) [gestion des références dans un projet](../ide/managing-references-in-a-project.md)

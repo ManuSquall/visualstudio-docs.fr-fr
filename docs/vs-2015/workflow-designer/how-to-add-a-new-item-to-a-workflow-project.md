@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 004f079576b792fb76d596ee8ebac3f6f96f316e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656630"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>Comment : ajouter un nouvel élément à un projet de workflow
@@ -21,7 +21,7 @@ Après avoir créé un projet de workflow, vous pouvez ajouter à votre projet d
 
  Le tableau suivant répertorie les éléments [!INCLUDE[wf](../includes/wf-md.md)] que vous pouvez ajouter à un projet de workflow.
 
-|Name|Description|
+|Nom|Description|
 |----------|-----------------|
 |Activité|Activité à composer d'autres activités. La sélection de cet élément ajoute le même fichier XAML au projet que celui obtenu lors de la sélection du modèle **bibliothèque d’activités** pour un nouveau projet. [!INCLUDE[crabout](../includes/crabout-md.md)] sur cette procédure, consultez [Comment : créer une bibliothèque d’activités](../workflow-designer/how-to-create-an-activity-library.md).|
 |Concepteur d'activités|Concepteur pour personnaliser l’expérience au moment du design d’une activité. La sélection de cet élément ajoute les mêmes fichiers au projet que ceux obtenus lors de la sélection du modèle **bibliothèque du concepteur d’activités** pour un nouveau projet. [!INCLUDE[crabout](../includes/crabout-md.md)] sur cette procédure, consultez [Comment : créer une bibliothèque de concepteur d’activités](../workflow-designer/how-to-create-an-activity-designer-library.md).|
@@ -30,7 +30,7 @@ Après avoir créé un projet de workflow, vous pouvez ajouter à votre projet d
 
 ### <a name="to-add-a-new-item-to-a-workflow-project"></a>Pour ajouter un nouvel élément à un projet de workflow
 
-1. Dans le menu **projet** , cliquez sur **Ajouter un nouvel élément...** .
+1. Dans le menu **projet** , cliquez sur **Ajouter un nouvel élément...**.
 
      La boîte de dialogue **Ajouter un nouvel élément** s’ouvre.
 
@@ -43,4 +43,4 @@ Après avoir créé un projet de workflow, vous pouvez ajouter à votre projet d
 5. Cliquez sur **Ajouter** pour ajouter l’élément au projet de workflow actuel.
 
 ## <a name="see-also"></a>Voir aussi
- [Création d’un projet de flux de travail](../workflow-designer/creating-a-workflow-project.md)
+ [Création d'un projet de workflow](../workflow-designer/creating-a-workflow-project.md)

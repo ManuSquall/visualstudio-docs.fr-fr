@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: abd8f8e9ee35c234a79af74199b11d5491e6fbee
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851634"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Lancement rapide, Environnement, boîte de dialogue Options
@@ -34,12 +34,12 @@ Vous pouvez utiliser **Lancement rapide** pour rechercher et exécuter rapidemen
 
  Vous pouvez utiliser les raccourcis suivants pour limiter votre recherche à des catégories spécifiques.
 
-|Catégorie|Raccourci|Description du raccourci|
+|Category|Raccourci|Description du raccourci|
 |--------------|--------------|--------------------------|
-|Les dernières utilisées|@mru<br /><br /> Par exemple, `@mru font`.|Affiche jusqu’à cinq des éléments que vous avez **utilisés le plus récemment**.|
-|Menus|@menu<br /><br /> Par exemple, `@menu font`.|Limite la recherche aux éléments de menu.|
-|Options|@opt<br /><br /> Par exemple, `@opt font`.|Limite la recherche aux paramètres de la boîte de dialogue **Options**.|
-|Documents|@doc<br /><br /> Par exemple, `@doc font`.|Limite la recherche aux noms et aux chemins d'accès de fichiers des documents ouverts pour les critères de recherche, mais ne recherche pas le texte dans les fichiers eux-mêmes.|
+|Les dernières utilisées|@mru<br /><br /> Par exemple : `@mru font`|Affiche jusqu’à cinq des éléments que vous avez **utilisés le plus récemment**.|
+|Menus|@menu<br /><br /> Par exemple : `@menu font`|Limite la recherche aux éléments de menu.|
+|Options|@opt<br /><br /> Par exemple : `@opt font`|Limite la recherche aux paramètres de la boîte de dialogue **Options**.|
+|Documents|@doc<br /><br /> Par exemple : `@doc font`|Limite la recherche aux noms et aux chemins d'accès de fichiers des documents ouverts pour les critères de recherche, mais ne recherche pas le texte dans les fichiers eux-mêmes.|
 
 > [!NOTE]
 > Vous pouvez changer les touches de raccourci dans la page **Général**, **Clavier** de la boîte de dialogue **Options**.

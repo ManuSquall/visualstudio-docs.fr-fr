@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 30932a6c94bc6104aeea0244f06f471d0a639b21
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533664"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window"></a>Raccourcis clavier et souris dans le diagramme de classes et dans la fenêtre Détails de classe
@@ -68,7 +68,7 @@ Les actions du clavier suivantes sont prises en charge dans les diagrammes de cl
 |**MAJ** + **Page d’hébergement**|À l'intérieur d'une forme de type|Sélectionne des éléments dans la forme, en commençant par l'élément actuel et en terminant par l'élément supérieur de cette forme.|
 |**MAJ** + **Fin**|À l'intérieur d'une forme de type|Identique à **Shift** + la**page** de décalage, mais dans la direction verticale.|
 |**Entrez**|Tous les contextes|Appelle l'action par défaut sur la forme qui est également réalisable avec un double-clic. Dans la plupart des cas, il s'agit de la commande Afficher le code, mais certains éléments définissent l'action par défaut différemment (lollipops, en-têtes de compartiment, étiquettes lollipop).|
-|**+** les**-**|Tous les contextes|Si l’élément ayant le focus peut être développé, ces touches le développent ou le réduisent.|
+|**+** les **-**|Tous les contextes|Si l’élément ayant le focus peut être développé, ces touches le développent ou le réduisent.|
 |**>**|Tous les contextes|Sur un élément ayant des enfants, cette touche développe l’élément s’il était réduit et permet de naviguer vers le premier enfant.|
 |**<**|Tous les contextes|Navigue jusqu'à l'élément parent.|
 |**ALT** + **MAJ** + **L**|À l'intérieur des formes de type + sur les formes de type|Navigue vers l'interface lollipop de la forme actuellement sélectionnée si elle est présente.|

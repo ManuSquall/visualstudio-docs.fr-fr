@@ -10,16 +10,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ea9f8a24d342668b3574c3798a32c58c124aca7b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185845"
 ---
 # <a name="init"></a>Init
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Prépare le composant dans l’application de graphics diagnostics pour capturer et enregistrer des informations graphiques dans un fichier journal de graphisme activement.  
+Prépare le composant dans l’application de Graphics Diagnostics pour capturer et enregistrer activement les informations graphiques dans un fichier journal de graphisme.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -31,12 +31,12 @@ void Init(
   
 #### <a name="parameters"></a>Paramètres  
  `vsgLogGetter`  
- Une entité pouvant être appelée, comme une fonction, un pointeur de fonction, un lambda ou un objet de fonction, qui prend comme paramètres de la longueur d’une mémoire tampon composée de `wchar_t` et un pointeur vers cette mémoire tampon et retourne `void`. Lorsqu’elle est appelée, l’entité pouvant être appelée détermine le nom de fichier qui sera utilisé pour enregistrer les informations graphiques et l’écrit dans la mémoire tampon spécifiée avant de retourner.  
+ Entité pouvant être appelée, telle qu’une fonction, un pointeur de fonction, une expression lambda ou un objet de fonction, qui prend comme paramètres la longueur d’une mémoire tampon composée de `wchar_t` et d’un pointeur vers cette mémoire tampon, et retourne `void` . Lorsqu’elle est appelée, l’entité pouvant être appelée détermine le nom du fichier qui sera utilisé pour enregistrer les informations graphiques et l’écrit dans la mémoire tampon spécifiée avant de retourner.  
   
 ## <a name="remarks"></a>Notes  
- Le `Init` fonction est appelée automatiquement lorsqu’une instance de la `VsgDbg` classe est construite en spécifiant la `bDefaultInit` paramètre de son constructeur en tant que `true`; sinon, `Init` doit être appelée explicitement avant de vous pouvez activement capturer et enregistrer des informations graphiques.  
+ La `Init` fonction est appelée automatiquement lorsqu’une instance de la `VsgDbg` classe est construite en spécifiant le `bDefaultInit` paramètre de son constructeur comme `true` ; sinon, `Init` doit être appelé explicitement pour que vous puissiez capturer et enregistrer activement les informations graphiques.  
   
- Vous pouvez finaliser et fermez l’active fichier journal de graphisme en appelant `UnInit`, puis capturer et enregistrer des informations graphiques supplémentaires à un nouveau fichier journal de graphisme en appelant `Init` à nouveau. Vous pouvez répéter cette opération autant de fois que vous souhaitez créer plusieurs graphiques indépendants des fichiers journaux à l’aide de la même `VsgDbg` instance.  
+ Vous pouvez finaliser et fermer le fichier journal de graphisme actif en appelant `UnInit` , puis capturer et enregistrer des informations graphiques supplémentaires dans un nouveau fichier journal de graphisme en rappelant `Init` . Vous pouvez répéter cette opération autant de fois que vous le souhaitez pour créer plusieurs fichiers journaux graphiques indépendants à l’aide de la même `VsgDbg` instance.  
   
 ## <a name="see-also"></a>Voir aussi  
  [UnInit](../debugger/init.md)

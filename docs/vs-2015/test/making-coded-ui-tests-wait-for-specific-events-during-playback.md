@@ -9,23 +9,23 @@ caps.latest.revision: 26
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: dbc83731cfc1c04f33fc4de05f28ffd1a54f3e4d
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851776"
 ---
 # <a name="making-coded-ui-tests-wait-for-specific-events-during-playback"></a>Suspension des tests codés de l'interface utilisateur en attendant des événements spécifiques pendant la lecture
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Dans une lecture de test codé de l'interface utilisateur, vous pouvez faire en sorte que le test attende que certains événements se produisent (par exemple qu'une fenêtre s'affiche, que la barre de progression disparaisse, et ainsi de suite). Pour cela, utilisez la méthode UITestControl.WaitForControlXXX() appropriée, comme décrit dans le tableau suivant. Pour obtenir un exemple de test codé de l’interface utilisateur qui attend l’activation d’un contrôle à l’aide de la méthode <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>, consultez [Procédure pas à pas : création, édition et gestion d’un test codé de l’interface utilisateur](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
+Dans une lecture de test codé de l'interface utilisateur, vous pouvez faire en sorte que le test attende que certains événements se produisent (par exemple qu'une fenêtre s'affiche, que la barre de progression disparaisse, et ainsi de suite). Pour cela, utilisez la méthode UITestControl.WaitForControlXXX() appropriée, comme décrit dans le tableau suivant. Pour obtenir un exemple de test codé de l’interface utilisateur qui attend l’activation d’un contrôle à l’aide de la <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A> méthode, consultez [procédure pas à pas : création, édition et gestion d’un test codé de l’interface utilisateur](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
- **Spécifications**
+ **Configuration requise**
 
  Visual Studio Enterprise
 
 > [!TIP]
-> Vous pouvez également ajouter des délais avant les actions à l'aide de l'éditeur de test codé de l'interface utilisateur. Pour plus d’informations, consultez [Guide pratique pour insérer un délai avant une action de l’interface utilisateur à l’aide de l’éditeur de test codé de l’interface utilisateur](https://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0).
+> Vous pouvez également ajouter des délais avant les actions à l'aide de l'éditeur de test codé de l'interface utilisateur. Pour plus d’informations, consultez [Comment : insérer un délai avant une action d’interface utilisateur à l’aide de l’éditeur de test codé de l’interface utilisateur](https://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0).
 
  **UITestControl.WaitForControlXXX(), méthodes**
 
@@ -35,7 +35,7 @@ Dans une lecture de test codé de l'interface utilisateur, vous pouvez faire en 
 
  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>
 
- Attend que le contrôle soit activé quand l’Assistant effectue une validation asynchrone de l’entrée via des appels au serveur. Par exemple, vous pouvez imposer à la méthode d’attendre le bouton **Suivant** de l’Assistant avant d’être activée. Pour obtenir un exemple de cette méthode, consultez [Procédures pas à pas : création, édition et gestion d’un test codé de l’interface utilisateur](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
+ Attend que le contrôle soit activé quand l’Assistant effectue une validation asynchrone de l’entrée via des appels au serveur. Par exemple, vous pouvez imposer à la méthode d’attendre le bouton **Suivant** de l’Assistant avant d’être activée. Pour obtenir un exemple de cette méthode, consultez [procédure pas à pas : création, édition et gestion d’un test codé de l’interface utilisateur](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlExist%2A>
 
@@ -107,7 +107,7 @@ UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText
 > [!TIP]
 > L'éditeur de test codé de l'interface utilisateur vous permet de modifier facilement vos tests codés de l'interface utilisateur. Grâce à lui, vous pouvez rechercher, afficher et modifier vos méthodes de test. Vous pouvez aussi modifier des actions d'interface utilisateur et leurs contrôles associés dans le mappage de contrôle d'interface utilisateur. Pour plus d’informations, consultez [Modification des tests codés de l’interface utilisateur à l’aide de l’éditeur de test codé de l’interface utilisateur](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
 
- **Aide**
+ **Assistance**
 
  Pour obtenir des informations supplémentaires, consultez [Test de la livraison continue avec Visual Studio 2012 - Chapitre 5 : Automatisation des tests système](https://msdn.microsoft.com/library/jj159335.aspx)
 

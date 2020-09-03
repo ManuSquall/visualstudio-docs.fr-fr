@@ -13,14 +13,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f3f982372f0189871c4f3d294c07a9e3cfc44391
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656618"
 ---
 # <a name="how-to-add-activities-to-the-toolbox-legacy"></a>Procédure : ajouter des activités à la boîte à outils (héritée)
-Lors de la création d’une solution de flux de travail avec le [!INCLUDE[wfd1](../includes/wfd1-md.md)] hérité qui cible le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], les activités personnalisées peuvent être ajoutées au projet de workflow et à leurs concepteurs dans la **boîte à outils** pour un accès aisé. Vous pouvez également ajouter directement des activités à la **boîte à outils** à partir d’une bibliothèque de liens dynamiques (dll).
+Lors de la génération d’une solution de flux de travail avec le hérité [!INCLUDE[wfd1](../includes/wfd1-md.md)] qui cible le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] , les activités personnalisées peuvent être ajoutées au projet de workflow et à leurs concepteurs dans la **boîte à outils** pour y accéder facilement. Vous pouvez également ajouter directement des activités à la **boîte à outils** à partir d’une bibliothèque de liens dynamiques (dll).
 
 ### <a name="to-add-an-activity-to-the-toolbox-from-a-dll"></a>Pour ajouter une activité à la boîte à outils à partir d'une DLL
 

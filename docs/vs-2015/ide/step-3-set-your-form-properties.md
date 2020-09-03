@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f05e91c13b1a9c52b5afad6942e5847643aa9490
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851554"
 ---
 # <a name="step-3-set-your-form-properties"></a>Étape 3 : définir les propriétés de votre formulaire
@@ -21,7 +21,7 @@ ms.locfileid: "75851554"
 
 Ensuite, vous utilisez la fenêtre **Propriétés** pour changer l’apparence de votre formulaire.
 
- ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo") Pour obtenir une version vidéo de cette rubrique, consultez [didacticiel 1 : créer une visionneuse d’images dans Visual Basic vidéo 1](https://msdn.microsoft.com/vbasic/gg315352.aspx) ou [didacticiel 1 : créer une visionneuse d’images dans C# la vidéo 1](https://msdn.microsoft.com/vcsharp/gg278409.aspx). Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d’interface utilisateur. Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.
+ ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo") Pour obtenir une version vidéo de cette rubrique, consultez [didacticiel 1 : créer une visionneuse d’images dans Visual Basic vidéo 1](https://msdn.microsoft.com/vbasic/gg315352.aspx) ou [didacticiel 1 : créer une visionneuse d’images en C#-vidéo 1](https://msdn.microsoft.com/vcsharp/gg278409.aspx). Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d’interface utilisateur. Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.
 
 ### <a name="to-set-your-form-properties"></a>Pour définir les propriétés de votre formulaire
 
