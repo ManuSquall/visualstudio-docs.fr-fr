@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 62a55c36cd634b9451ad3796e5866d1e3a89b6a2
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85331723"
 ---
 # <a name="collect-net-framework-memory-data-by-using-the-profiler-command-line"></a>Collecter les données mémoire du .NET Framework avec la ligne de commande du profileur
@@ -22,7 +22,7 @@ Cette section décrit les procédures et les options de collecte des données d�
 
 ## <a name="common-tasks"></a>Tâches courantes
 
-|Tâche|Contenu associé|
+|Tâche|Contenu connexe|
 |----------|---------------------|
 |**Démarrer une application et profiler la mémoire .NET**|-   [Comment : lancer une application .NET Framework avec le profileur pour collecter des données de mémoire](../profiling/how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-memory-data.md)|
 |**Attacher le profileur à une application .NET**|-   [Comment : attacher le profileur à une application de .NET Framework pour collecter des données de mémoire](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-app-to-collect-memory-data.md)|
@@ -32,7 +32,7 @@ Cette section décrit les procédures et les options de collecte des données d�
 
 ### <a name="profile-stand-alone-applications"></a>Profiler des applications autonomes
 
-|Tâche|Contenu associé|
+|Tâche|Contenu connexe|
 |----------|---------------------|
 |**Profiler à l’aide de la méthode d’échantillonnage**|-   [Collecter des statistiques d’applications en utilisant l’échantillonnage](../profiling/collecting-application-statistics-for-stand-alone-applications.md)|
 |**Profiler à l’aide de la méthode d’instrumentation**|-   [Collecter les données temporelles détaillées à l’aide de l’instrumentation](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application.md)|
@@ -41,7 +41,7 @@ Cette section décrit les procédures et les options de collecte des données d�
 
 ### <a name="profile-net-memory-data"></a>Profiler des données de mémoire .NET
 
-|Tâche|Contenu associé|
+|Tâche|Contenu connexe|
 |----------|---------------------|
 |**Profiler des applications ASP.NET**|-   [Collecter des données de mémoire](../profiling/collecting-memory-data-from-an-aspnet-web-application.md)|
 |**Profiler des services**|-   [Collecter les données de mémoire .NET](../profiling/collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md)|

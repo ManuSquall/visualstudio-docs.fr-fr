@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e0c8fe9d5ba8c096a03de7a9df85945f4aeb4a0a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656341"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>Procédure : ajouter des nœuds à l'espace de travail à partir de l'Explorateur de schémas XML
@@ -38,7 +38,7 @@ Cette rubrique explique comment ajouter des nœuds à l' [espace de travail du c
 
      Le nœud est mis en surbrillance dans l'Explorateur de schémas XML.
 
-2. Cliquez avec le bouton droit sur le nœud `PurchaseOrderType` dans l’Explorateur de schémas XML, puis sélectionnez **afficher toutes les références**.
+2. Cliquez avec le bouton droit sur le `PurchaseOrderType` nœud dans l’Explorateur de schémas XML, puis sélectionnez **afficher toutes les références**.
 
      Le nœud `purchaseOrder` est mis en surbrillance.
 
@@ -50,15 +50,15 @@ Cette rubrique explique comment ajouter des nœuds à l' [espace de travail du c
 
 1. Tapez « purchaseOrder » dans la zone de texte Rechercher de la barre d’outils de l' [Explorateur XML](../xml-tools/xml-schema-explorer.md) , puis cliquez sur le bouton Rechercher.
 
-     ![Recherche par mot clé de l’Explorateur de schémas XML](../xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")
+     ![Recherche par mot clé de l'Explorateur de schémas XML](../xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")
 
      Les résultats de la recherche sont mis en surbrillance dans l'Explorateur de schémas XML et sont marqués par des graduations dans la barre de défilement verticale.
 
 2. Ajoutez les résultats de la recherche à l’espace de travail en cliquant sur le bouton **Ajouter les nœuds en surbrillance à l’espace de travail** dans le volet de synthèse des résultats.
 
-     ![Résultat de la recherche dans l’Explorateur de schémas XML](../xml-tools/media/schemaexplorersearchresult.gif "SchemaExplorerSearchResult")
+     ![Résultat de la recherche dans l'Explorateur de schémas XML](../xml-tools/media/schemaexplorersearchresult.gif "SchemaExplorerSearchResult")
 
-     Le nœud `purchaseOrder` et le nœud `PurchaseOrderType` s’affichent à côté l’un de l’autre sur l’aire de conception de la [vue du graphique](../xml-tools/graph-view.md). Étant donné que les deux nœuds sont associés (l'élément `purchaseOrder` est du type `PurchaseOrderType`), une flèche est dessinée entre eux.
+     Le `purchaseOrder` nœud et le `PurchaseOrderType` nœud apparaissent en regard l’un de l’autre sur l’aire de conception de la [vue du graphique](../xml-tools/graph-view.md). Étant donné que les deux nœuds sont associés (l'élément `purchaseOrder` est du type `PurchaseOrderType`), une flèche est dessinée entre eux.
 
 ## <a name="see-also"></a>Voir aussi
  [Explorateur de schémas XML](../xml-tools/xml-schema-explorer.md)

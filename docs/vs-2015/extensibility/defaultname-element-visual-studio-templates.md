@@ -1,5 +1,5 @@
 ---
-title: DefaultName, élément (modèles Visual Studio) | Microsoft Docs
+title: Élément DefaultName (modèles Visual Studio) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,20 +13,20 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0bc3a18c47b78a312f3bca3762cc4ff3d658a70e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185288"
 ---
 # <a name="defaultname-element-visual-studio-templates"></a>DefaultName, élément (modèles Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Spécifie le nom que le système de projet Visual Studio génère pour le projet ou l’élément lors de sa création.  
+Spécifie le nom que le système de projet Visual Studio va générer pour le projet ou l’élément lors de sa création.  
   
  \<VSTemplate>  
- \<TemplateData >  
- \<DefaultName >  
+ \<TemplateData>  
+ \<DefaultName>  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -61,12 +61,12 @@ Spécifie le nom que le système de projet Visual Studio génère pour le projet
   
  Pour les projets, cet élément spécifie le nom du répertoire qui stocke le projet sur le disque. Pour les éléments, il spécifie le nom de fichier du fichier source.  
   
- Lorsque vous créez un projet ou un élément, vous pouvez modifier le nom par défaut à l’aide la **nom** option, qui est disponible à partir du **nouveau projet** boîte de dialogue ou **ajouter un nouvel élément** boîte de dialogue.  
+ Lorsque vous créez un projet ou un élément, vous pouvez modifier le nom par défaut à l’aide de l’option **nom** , disponible dans la boîte de dialogue **nouveau projet** ou **Ajouter un nouvel élément** .  
   
- Si vous ne souhaitez pas le système de projet pour générer le nom par défaut pour le projet ou l’élément, puis définissez le [ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md) élément à `False`.  
+ Si vous ne souhaitez pas que le système de projet génère le nom par défaut du projet ou de l’élément, définissez l’élément [ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md) sur `False` .  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant illustre les métadonnées pour le modèle d’élément standard pour une [!INCLUDE[csprcs](../includes/csprcs-md.md)] classe.  
+ L’exemple suivant illustre les métadonnées pour le modèle d’élément standard d’une [!INCLUDE[csprcs](../includes/csprcs-md.md)] classe.  
   
 ```  
 <VSTemplate Type="Item" Version="3.0.0"  

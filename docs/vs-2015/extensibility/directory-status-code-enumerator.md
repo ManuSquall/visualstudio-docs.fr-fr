@@ -1,5 +1,5 @@
 ---
-title: Énumérateur de Code de statut de répertoire | Microsoft Docs
+title: Énumérateur de code d’état de répertoire | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e082a691a389d5cb9a8fa307a627b11911e0db78
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68185254"
 ---
 # <a name="directory-status-code-enumerator"></a>Énumérateur de code d’état de répertoire
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Le `SccDirStatus` énumérateur contient des valeurs de constantes nommées qui spécifient l’état d’un répertoire dans le système de contrôle source. Cette énumération est utilisée par le [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md). Cela a été introduite dans la version 1.2 de l’API de plug-in de contrôle de Source.  
+L' `SccDirStatus` énumérateur contient des valeurs constantes nommées qui spécifient l’état d’un répertoire dans le système de contrôle de code source. Cette énumération est utilisée par [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md). Cela a été introduit dans la version 1,2 de l’API de plug-in de contrôle de code source.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -36,16 +36,16 @@ enum SccDirStatus {
   
 ## <a name="members"></a>Membres  
  SCC_DIRSTATUS_INVALID  
- État n’a pas pu être obtenu ; ne comptez pas sur celle-ci.  
+ Impossible d’obtenir l’État ; ne vous fiez pas à cette fonction.  
   
  SCC_DIRSTATUS_NOTCONTROLLED  
- Répertoire n’est pas sous contrôle de code source.  
+ Le répertoire n’est pas sous contrôle de code source.  
   
  SCC_DIRSTATUS_CONTROLLED  
- Répertoire est sous contrôle de code source.  
+ Le répertoire est sous contrôle de code source.  
   
  SCC_DIRSTATUS_EMPTYPROJ  
- Projet correspondant à ce répertoire est vide.  
+ Le projet correspondant à ce répertoire est vide.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Plug-ins de contrôle de code source](../extensibility/source-control-plug-ins.md)   

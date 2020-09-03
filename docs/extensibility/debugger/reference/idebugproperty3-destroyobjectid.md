@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::DestroyObjectID ( Microsoft Docs
+title: IDebugProperty3 ::D estroyObjectID | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f465bc06712c5032c6e90288ebd02406de4f2330
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80721203"
 ---
 # <a name="idebugproperty3destroyobjectid"></a>IDebugProperty3::DestroyObjectID
-Détruit l’ID unique associé à cette propriété, ce qui indique que l’appelant ne se soucie plus d’identifier cette propriété uniquement de toutes les autres propriétés.
+Détruit l’ID unique associé à cette propriété, indiquant que l’appelant n’est plus soucieux d’identifier cette propriété de manière unique à partir de toutes les autres propriétés.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,9 +41,9 @@ int DestroyObjectID();
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- Si le moteur de débogé n’a pas besoin de prendre en charge des pièces d’ID uniques pour une propriété (parce qu’il les suit déjà uniquement en interne), alors il peut simplement revenir `E_NOTIMPL` pour cette méthode.
+ Si le moteur de débogage n’a pas besoin de prendre en charge des ID uniques pour une propriété (parce qu’il les suit déjà de façon unique), il peut simplement retourner `E_NOTIMPL` pour cette méthode.
 
- Les pièces d’identification uniques sont créées avec un appel à la méthode [CreateObjectID](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md) lorsque l’appelant veut s’assurer que cette propriété est identifiée de façon unique parmi toutes les autres propriétés.
+ Les ID uniques sont créés avec un appel à la méthode [CreateObjectID](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md) lorsque l’appelant souhaite s’assurer que cette propriété est identifiée de manière unique parmi toutes les autres propriétés.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
