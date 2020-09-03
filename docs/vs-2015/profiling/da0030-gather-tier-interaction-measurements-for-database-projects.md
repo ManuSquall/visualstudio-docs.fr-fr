@@ -14,22 +14,22 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9a4b140c1859d3a3a17eb2f48eb02a60a3e9d50c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152626"
 ---
 # <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030 : Collecter les mesures d’interaction de couche pour les projets de base de données
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Id de règle | DA0030 |  
-| Catégorie | Utilisation des outils de profilage |  
+ID de règle | DA0030 |  
+| Catégorie | Utilisation de Outils de profilage |  
 | Méthode de profilage | Échantillonnage |  
-| Message | Collecte des mesures d’interaction pour les applications multicouches vous aident à comprendre les modèles d’utilisation de base de données et les données de clé accède à des retards. Reprofilez l’application en activant l’option Profilage d’interaction de couche.|  
+| Message | La collecte des mesures d’interaction pour les applications multicouches vous aidera à comprendre les modèles d’utilisation de base de données et les délais d’accès aux données clés. Reprofilez l’application en activant l’option Profilage d’interaction de couche.|  
 | Type de règle | Informations |  
   
-## <a name="cause"></a>Cause  
+## <a name="cause"></a>Cause :  
  Les appels aux méthodes <xref:System.Data> représentent une part importante des données de profilage et vous n’avez pas collecté de données d’interaction de couche lors de l’exécution du profilage. Effectuez un nouveau profilage et ajoutez des données d’interaction de couche.  
   
 ## <a name="rule-description"></a>Description de la règle  

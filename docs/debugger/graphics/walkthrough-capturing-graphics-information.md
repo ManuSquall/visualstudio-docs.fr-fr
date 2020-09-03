@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: aab86d42cd158ad64ebb16497b8d2d9f5a7002df
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72734724"
 ---
-# <a name="walkthrough-capturing-graphics-information"></a>Procédure pas à pas : capture d'informations Graphics
+# <a name="walkthrough-capturing-graphics-information"></a>Procédure pas à pas : Capture d'informations graphiques
 Cette procédure pas à pas montre comment utiliser Graphics Diagnostics dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pour capturer manuellement les informations graphiques d’une application Direct3D.
 
  Cette procédure pas à pas décrit les tâches suivantes :
@@ -45,9 +45,9 @@ Cette procédure pas à pas montre comment utiliser Graphics Diagnostics dans [!
 
 #### <a name="to-capture-graphics-information"></a>Pour capturer des informations graphiques
 
-- Dans la barre d’outils Graphics Diagnostics, choisissez le bouton **Capturer** . ![Icône de bouton de capture graphique](media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics")
+- Dans la barre d’outils Graphics Diagnostics, choisissez le bouton **Capturer** . ![Icône du bouton de capture de graphiques](media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics")
 
-   ou
+   -ou-
 
    Quand l’application a le focus, appuyez sur **Impr. écran**.
 
@@ -59,4 +59,4 @@ Cette procédure pas à pas montre comment utiliser Graphics Diagnostics dans [!
 - Découvrez comment analyser les informations graphiques capturées à l’aide des outils Graphics Diagnostics. Consultez [vue d’ensemble](overview-of-visual-studio-graphics-diagnostics.md).
 
 ## <a name="see-also"></a>Voir aussi
-- [Capturing Graphics Information](capturing-graphics-information.md)
+- [Capture d'informations graphiques](capturing-graphics-information.md)

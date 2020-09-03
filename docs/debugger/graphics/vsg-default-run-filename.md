@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 835e2cec19e36418091e094abd2ec76bd6403398
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72734826"
 ---
 # <a name="vsg_default_run_filename"></a>VSG_DEFAULT_RUN_FILENAME
@@ -25,9 +25,9 @@ Définit le nom de fichier par défaut du fichier journal graphique.
 ```
 
 #### <a name="parameters"></a>Paramètres
- `filename` le nom de fichier donné par défaut au fichier journal de graphisme lorsque les informations graphiques sont capturées par programme.
+ `filename` Nom de fichier donné par défaut au fichier journal de graphisme lorsque les informations graphiques sont capturées par programme.
 
-## <a name="value"></a>valeur
+## <a name="value"></a>Valeur
  Littéral de chaîne qui représente le nom de fichier du fichier journal de graphisme. Par défaut, L "default. vsglog".
 
 ```C++
@@ -35,9 +35,9 @@ Définit le nom de fichier par défaut du fichier journal graphique.
 ```
 
 ## <a name="remarks"></a>Notes
- Si le symbole de préprocesseur `DONT_SAVE_VSGLOG_TO_TEMP` est défini, le nom de fichier est relatif au répertoire actif de l’application capturée ou est un chemin d’accès absolu ; dans le cas contraire, il est relatif au répertoire des fichiers temporaires de l’utilisateur et ne peut pas être un chemin d’accès absolu.
+ Si le symbole de préprocesseur `DONT_SAVE_VSGLOG_TO_TEMP` est défini, le nom de fichier est relatif au répertoire actif de l’application capturée ou est un chemin d’accès absolu ; dans le cas contraire, il est relatif au répertoire de fichiers temporaires de l’utilisateur et ne peut pas être un chemin d’accès absolu.
 
- Pour modifier le nom de fichier défini, vous devez le redéfinir avant d’inclure `vsgcapture.h` dans votre programme.
+ Pour modifier le nom de fichier défini, vous devez le redéfinir avant `vsgcapture.h` d’inclure dans votre programme.
 
 ## <a name="example"></a>Exemple
  Cet exemple montre comment modifier le nom de fichier par défaut du fichier de capture :

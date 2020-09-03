@@ -10,10 +10,10 @@ dev_langs:
 ms.workload:
 - cplusplus
 ms.openlocfilehash: db6ea1e233d32872322926a4d75b847ee6a49ba3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77277826"
 ---
 # <a name="visual-c-code-snippets"></a>Extraits de code Visual C++
@@ -24,13 +24,13 @@ Vous pouvez ajouter un extrait de code à un emplacement particulier dans votre 
 
 ## <a name="insert-a-code-snippet"></a>Insérer un extrait de code
 
-Pour insérer un extrait de code, ouvrez un fichier de code CMD *(.cpp* ou *.h*), cliquez quelque part à l’intérieur du fichier, et faites l’un des éléments suivants :
+Pour insérer un extrait de code, ouvrez un fichier de code C++ (*. cpp* ou *. h*), cliquez n’importe où dans le fichier et effectuez l’une des opérations suivantes :
 
 - Effectuez un clic droit pour afficher le menu contextuel et sélectionnez **Insérer un extrait**
 
 - Dans le menu **Edition / IntelliSense**, sélectionnez **Insérer un extrait**
 
-- Utilisez les hotkeys: **Ctrl**+**K**+**X**
+- Utilisez les raccourcis clavier : **CTRL** + **K** + **X**
 
 Vous devez voir une liste de choix commençant par **#if**. Quand vous sélectionnez **#if**, vous devez voir le code suivant ajouté au fichier :
 
@@ -40,19 +40,19 @@ Vous devez voir une liste de choix commençant par **#if**. Quand vous sélectio
 #endif // 0
 ```
 
-Vous pouvez ensuite remplacer le **0** par la bonne condition.
+Vous pouvez alors remplacer le **0** par la condition correcte.
 
 ## <a name="use-a-code-snippet-to-surround-selected-code"></a>Utiliser un extrait de code pour entourer du code sélectionné
 
 Pour utiliser un extrait de code pour entourer du code sélectionné, sélectionnez une ligne (ou plusieurs lignes) et effectuez l'une des opérations suivantes :
 
-- Cliquez à droite pour obtenir le menu contextuelle, et **sélectionnez Surround With**
+- Cliquez avec le bouton droit pour afficher le menu contextuel, puis sélectionnez **entourer de**
 
-- À partir du menu **Edit** > **IntelliSense,** **sélectionnez Surround With**
+- Dans le menu **modifier**  >  **IntelliSense** , sélectionnez **entourer de**
 
-- À l’aide d’un clavier, appuyez sur: **Ctrl**+**K**+**S**
+- À l’aide d’un clavier, appuyez sur **CTRL** + **K** + **S** .
 
-Sélectionnez **#if**. Le résultat suivant devrait s'afficher :
+Sélectionnez **#if**. Un résultat semblable à celui-ci doit s’afficher :
 
 ```cpp
 #if 0
@@ -115,7 +115,7 @@ private:
 
 Il existe trois extraits de code **for** différents qui fournissent des types différents de boucles `for`.
 
-L’extrait **rfor** fournit une [gamme basée sur](/cpp/cpp/range-based-for-statement-cpp) la boucle (lien). Cette construction est préférable aux boucles `for` basées sur un index.
+L’extrait de code **rfor** fournit une boucle for [basée sur une plage](/cpp/cpp/range-based-for-statement-cpp) (lien). Cette construction est préférable aux boucles `for` basées sur un index.
 
 ```cpp
 for (auto& i : v)
@@ -124,7 +124,7 @@ for (auto& i : v)
 }
 ```
 
-L’extrait de **for** `for` fournit une boucle dans laquelle la `size_t`condition est basée sur la longueur (dans ) d’un objet.
+L’extrait **de code for** fournit une `for` boucle dans laquelle la condition est basée sur la longueur (en `size_t` ) d’un objet.
 
 ```cpp
 for (size_t i = 0; i < length; i++)
@@ -133,7 +133,7 @@ for (size_t i = 0; i < length; i++)
 }
 ```
 
-L’extrait **de forr** fournit `for` une boucle inverse dans laquelle la condition est basée sur la longueur (dans les intégrages) d’un objet.
+L’extrait de code **forr** fournit une `for` boucle inverse dans laquelle la condition est basée sur la longueur (en entiers) d’un objet.
 
 ```cpp
 for (int i = length - 1; i >= 0; i--)
@@ -144,7 +144,7 @@ for (int i = length - 1; i >= 0; i--)
 
 ## <a name="the-destructor-snippet-"></a>Extrait de code du destructeur (~)
 
-L’extrait destructeurs (**~**) montre un comportement différent dans différents contextes. Si vous insérez cet extrait dans une classe, il fournit un destructeur pour cette classe. Examinons, par exemple, le code suivant :
+L’extrait de code du destructeur ( **~** ) présente un comportement différent dans des contextes différents. Si vous insérez cet extrait dans une classe, il fournit un destructeur pour cette classe. Examinons, par exemple, le code suivant :
 
 ```cpp
 class SomeClass {

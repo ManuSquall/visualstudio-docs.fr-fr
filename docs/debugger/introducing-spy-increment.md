@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4d04b2e9e04e1f2b952baadbdf0cca32cc3b301b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72731820"
 ---
 # <a name="introducing-spy"></a>Présentation de Spy++
@@ -52,7 +52,7 @@ Spy++ vous permet d’effectuer les tâches suivantes :
 > Bien que le nom de fichier Spy++ (64 bits) contienne « amd », il s’exécute sur n’importe quel système d’exploitation Windows x64.
 
 ## <a name="see-also"></a>Voir aussi
-- [Guide pratique pour démarrer Spy++](../debugger/how-to-start-spy-increment.md)
-- [Utilisation de Spy++](../debugger/using-spy-increment.md)
+- [Comment : démarrer Spy++](../debugger/how-to-start-spy-increment.md)
+- [Utiliser Spy++](../debugger/using-spy-increment.md)
 - [Vues Spy++](../debugger/spy-increment-views.md)
-- [Informations de référence sur Spy++](../debugger/spy-increment-reference.md)
+- [Référence Spy++](../debugger/spy-increment-reference.md)
