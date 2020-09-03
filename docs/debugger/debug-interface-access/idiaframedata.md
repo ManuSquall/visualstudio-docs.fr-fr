@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ee2f68066de6a41e6fd6a1cf4143613a7597d6f1
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85467182"
 ---
 # <a name="idiaframedata"></a>IDiaFrameData
@@ -52,7 +52,7 @@ Le tableau suivant présente les méthodes de `IDiaFrameData` .
 |[IDiaFrameData::get_functionParent](../../debugger/debug-interface-access/idiaframedata-get-functionparent.md)|Récupère l’interface de données de frame pour la fonction englobante.|
 |[IDiaFrameData::execute](../../debugger/debug-interface-access/idiaframedata-execute.md)|Effectue le déroulement de la pile et retourne l’état actuel des registres dans une interface de frame de parcours de la pile.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Les détails disponibles pour un cadre sont ceux des points d’exécution dans la plage d’adresses indiquée par l’adresse et la longueur du bloc.
 
 ## <a name="notes-for-callers"></a>Notes pour les appelants

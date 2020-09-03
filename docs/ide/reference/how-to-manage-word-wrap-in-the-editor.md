@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c4bf76643ce1ea6e2f449c54fbc31d441418becf
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770340"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Guide pratique pour gérer le retour automatique à la ligne dans l’éditeur
@@ -28,7 +28,7 @@ Vous pouvez activer et désactiver l’option **Retour automatique à la ligne**
 
 ## <a name="to-set-word-wrap-preferences"></a>Pour définir les préférences de retour automatique à la ligne
 
-1. Dans le menu **Outils**, sélectionnez **Options**.
+1. Dans le menu **Tools** (Outils), sélectionnez **Options**.
 
 2. Dans le dossier **Éditeur de texte**, choisissez les options **Général** dans le sous-dossier **Tous les langages** pour définir cette option globalement.
 

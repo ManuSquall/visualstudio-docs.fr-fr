@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8a16be3adb799fe2b0751d6119e5a980dd1b90d4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669381"
 ---
 # <a name="xml-schema-designer-workspace"></a>Espace de travail du Concepteur de schémas XML
@@ -47,8 +47,8 @@ Le Concepteur de schémas XML (Concepteur XSD) est un outil graphique qui vous a
 
 ## <a name="in-this-section"></a>Dans cette section
 
-- [Vue Démarrage](../xml-tools/start-view.md)
+- [vue de départ](../xml-tools/start-view.md)
 
-- [Vue Graphique](../xml-tools/graph-view.md)
+- [Vue du graphique](../xml-tools/graph-view.md)
 
 - [Vue Modèle de contenu](../xml-tools/content-model-view.md)

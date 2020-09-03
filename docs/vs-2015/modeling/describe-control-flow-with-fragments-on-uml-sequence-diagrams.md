@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 40f48891107c2eb3250b6b050e00c3650812d386
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669816"
 ---
 # <a name="describe-control-flow-with-fragments-on-uml-sequence-diagrams"></a>Décrire le flux de contrôle à l'aide de fragments dans les diagrammes de séquence UML
@@ -34,7 +34,7 @@ Dans un diagramme de séquence UML, les *fragments combinés* vous permettent d�
 > [!NOTE]
 > Cette rubrique traite des fragments dans les diagrammes de séquence. Pour plus d’informations sur la lecture des diagrammes de séquence UML, consultez [diagrammes de séquence UML : référence](../modeling/uml-sequence-diagrams-reference.md). Pour plus d’informations sur le dessin des diagrammes de séquence UML, consultez [UML Sequence Diagrams: Guidelines](../modeling/uml-sequence-diagrams-guidelines.md).
 
- ![Fragment combiné avec deux opérandes d’interaction](../modeling/media/uml-seqfragments.png "UML_SeqFragments")
+ ![Fragment combiné avec deux opérandes d'interaction](../modeling/media/uml-seqfragments.png "UML_SeqFragments")
 
  Les éléments présentés dans l’illustration sont les suivants :
 
@@ -102,21 +102,21 @@ Dans un diagramme de séquence UML, les *fragments combinés* vous permettent d�
     > [!NOTE]
     > Les différents genres de fragments combinés possèdent des propriétés différentes.
 
-## <a name="KindsOfFragment"></a>Genres de fragments combinés
+## <a name="kinds-of-combined-fragment"></a><a name="KindsOfFragment"></a> Genres de fragments combinés
 
 ### <a name="fragments-describing-control-flow"></a>Fragments décrivant le flux de contrôle
  Un diagramme de séquence simple affiche une seule séquence type. Vous pouvez utiliser les types suivants de fragments combinés pour décrire des variations qui peuvent se produire en différentes occasions.
 
 |Type de fragment|Description|
 |-------------------|-----------------|
-|**Possibilité**|Optionnel. Contient une séquence qui peut ou non se produire. Dans le garde, vous pouvez spécifier la condition sous laquelle elle se produit.|
-|**Alt**|Contient une liste des fragments contenant d’autres séquences de messages. Une seule séquence peut se produire à la fois.<br /><br /> Vous pouvez insérer un garde dans chaque fragment pour indiquer la condition sous laquelle il peut s’exécuter. Un garde **else** indique un fragment qui doit s’exécuter si aucun autre garde n’a la valeur True. Si tous les gardes ont la valeur False et qu’il n’existe aucun **else**, aucun des fragments n’est exécuté.|
-|**Loop**|Le fragment est répété un certain nombre de fois. Dans le garde, vous pouvez indiquer la condition sous laquelle il doit être répété.<br /><br /> Les fragments combinés Loop possèdent des propriétés **Min** et **Max**qui indiquent les nombres minimum et maximum de fois que le fragment peut être répété. Par défaut, il n’y a aucune restriction.|
-|**Break**|Si ce fragment est exécuté, le reste de la séquence est abandonné. Vous pouvez utiliser le garde pour indiquer la condition dans laquelle l’arrêt se produit.|
+|**Possibilité**|facultatif. Contient une séquence qui peut ou non se produire. Dans le garde, vous pouvez spécifier la condition sous laquelle elle se produit.|
+|**Appuyez**|Contient une liste des fragments contenant d’autres séquences de messages. Une seule séquence peut se produire à la fois.<br /><br /> Vous pouvez insérer un garde dans chaque fragment pour indiquer la condition sous laquelle il peut s’exécuter. Un garde **else** indique un fragment qui doit s’exécuter si aucun autre garde n’a la valeur True. Si tous les gardes ont la valeur False et qu’il n’existe aucun **else**, aucun des fragments n’est exécuté.|
+|**Circuit**|Le fragment est répété un certain nombre de fois. Dans le garde, vous pouvez indiquer la condition sous laquelle il doit être répété.<br /><br /> Les fragments combinés Loop possèdent des propriétés **Min** et **Max**qui indiquent les nombres minimum et maximum de fois que le fragment peut être répété. Par défaut, il n’y a aucune restriction.|
+|**Saut**|Si ce fragment est exécuté, le reste de la séquence est abandonné. Vous pouvez utiliser le garde pour indiquer la condition dans laquelle l’arrêt se produit.|
 |**Préférez**|Parallel. Les événements des fragments peuvent être entrelacés.|
-|**Critique**|Utilisé dans un fragment Par ou Seq. Indique que les messages dans ce fragment ne doivent pas être entrelacés avec d’autres messages.|
+|**Critical**|Utilisé dans un fragment Par ou Seq. Indique que les messages dans ce fragment ne doivent pas être entrelacés avec d’autres messages.|
 |**Séquentiel**|Il existe au moins deux fragments d’opérande. Les messages impliquant la même ligne de vie doivent se produire dans l’ordre des fragments. Quand ils n’impliquent pas les mêmes lignes de vie, les messages des différents fragments peuvent être entrelacés en parallèle.|
-|**Strict**|Il existe au moins deux fragments d’opérande. Les fragments doivent se produire dans l’ordre indiqué.|
+|**Interdire**|Il existe au moins deux fragments d’opérande. Les fragments doivent se produire dans l’ordre indiqué.|
 
 ### <a name="fragments-about-how-to-interpret-the-sequence"></a>Fragments concernant l’interprétation de la séquence
  Par défaut, le diagramme de séquence déclare une série de messages qui peuvent se produire. Dans le système en cours d’exécution, d’autres messages que vous n’avez pas choisi d’afficher dans le diagramme peuvent se produire.
@@ -126,9 +126,9 @@ Dans un diagramme de séquence UML, les *fragments combinés* vous permettent d�
 |Type de fragment|Description|
 |-------------------|-----------------|
 |**Comme**|Spécifie une liste des messages que ce fragment décrit. D’autres messages peuvent se produire dans le système en cours d’exécution, mais ils ne sont pas significatifs aux fins de cette description.<br /><br /> Tapez la liste dans la propriété **Messages** .|
-|**Ignore**|Liste des messages que ce fragment ne décrit pas. Ils peuvent se produire dans le système en cours d’exécution, mais ils ne sont pas significatifs aux fins de cette description.<br /><br /> Tapez la liste dans la propriété **Messages** .|
+|**Ignorer**|Liste des messages que ce fragment ne décrit pas. Ils peuvent se produire dans le système en cours d’exécution, mais ils ne sont pas significatifs aux fins de cette description.<br /><br /> Tapez la liste dans la propriété **Messages** .|
 |**Assert**|Le fragment d’opérande spécifie les seules séquences valides. Il est généralement utilisé dans un fragment Consider ou Ignore.|
-|**Négatif**|La séquence affichée dans ce fragment ne doit pas se produire. Il est généralement utilisé dans un fragment Consider ou Ignore.|
+|**Neg**|La séquence affichée dans ce fragment ne doit pas se produire. Il est généralement utilisé dans un fragment Consider ou Ignore.|
 
 ## <a name="see-also"></a>Voir aussi
  [Diagrammes de séquence UML : indications](../modeling/uml-sequence-diagrams-guidelines.md) [diagrammes de séquence UML : référence](../modeling/uml-sequence-diagrams-reference.md) [modifier des modèles et des diagrammes UML](../modeling/edit-uml-models-and-diagrams.md)

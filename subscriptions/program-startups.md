@@ -8,14 +8,14 @@ ms.date: 03/09/2020
 ms.topic: conceptual
 description: Des détails sur les abonnements sont offerts via le programme Microsoft for Startups.
 ms.openlocfilehash: 6c2fdcfc9fa71c1906a1033ac719b07cb0b157a4
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80233255"
 ---
 # <a name="visual-studio-subscriptions-offered-to-startups"></a>Abonnements Visual Studio offerts aux startups
-Les startups qualifiées qui rejoignent le programme Microsoft for Startups peuvent obtenir 5 [abonnements cloud mensuels](https://visualstudio.microsoft.com/vs/pricing/)Visual Studio Enterprise. 
+Les démarrages qualifiés qui rejoignent le programme Microsoft for Startups peuvent gagner 5 Visual Studio Enterprise [abonnements Cloud mensuels](https://visualstudio.microsoft.com/vs/pricing/). 
 
 ## <a name="subscription-details"></a>Détails de l’abonnement 
 Il s’agit des mêmes abonnements que ceux proposés dans le commerce, sans aucune limitation ou restriction particulière. Chaque abonnement doit être affecté à un utilisateur final (qui est l’utilisateur sous licence) pour que celui-ci puisse exécuter Visual Studio et être reconnu en tant qu’abonné Visual Studio Enterprise dans Azure DevOps Services.
@@ -41,7 +41,7 @@ Avec les abonnements cloud mensuels, les annulations prennent effet le premier j
 Pour les abonnements cloud annuels, les annulations prennent effet le premier jour du mois suivant 12 mois à partir de l’achat initial, ou 12 mois à partir de la dernière facturation de renouvellement annuel. Par exemple, si vous avez acheté un abonnement cloud annuel Visual Studio Professional le 3 janvier 2018, il reste actif jusqu’au 1er février 2019, date de son renouvellement automatique pour une autre année. Si vous annulez à tout moment entre cette date et le 1er février 2020, l’abonnement expire le 1er février 2020. Aucune remise n’est accordée en cas d’annulation en cours d’année d’abonnement avec les abonnements cloud annuels.
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentation Azure](https://docs.microsoft.com/azure/)
 - [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)

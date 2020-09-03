@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f8fd8cdc8acdbf42b97e00f3c85647dd863721d5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669953"
 ---
 # <a name="ltreturnsgt-javascript"></a>&lt;returns&gt; (JavaScript)
@@ -38,17 +38,17 @@ Spécifie des informations de documentation pour le résultat d’un appel de fo
 #### <a name="parameters"></a>Paramètres
  `type` Facultatif. Type de données de la valeur de retour. Le type peut être l’un des suivants :
 
-- Type de langage ECMAScript dans la spécification ECMAScript 5, par exemple `Number` et `Object`.
+- Type de langage ECMAScript dans la spécification ECMAScript 5, tel que `Number` et `Object` .
 
 - Objet DOM, comme `HTMLElement`, `Window` et `Document`.
 
 - Fonction constructeur JavaScript.
 
-  `integer` Facultatif. Si `type` est `Number`, spécifie si la valeur de retour est un entier. Affectez la valeur `true` pour indiquer que la valeur de retour est un entier. Sinon, affectez la valeur `false`. Cet attribut n’est pas utilisé par Visual Studio pour fournir des informations IntelliSense.
+  `integer` Facultatif. Si `type` est `Number` , spécifie si la valeur de retour est un entier. Affectez `true` la valeur pour indiquer que la valeur de retour est un entier ; sinon, affectez à la valeur `false` . Cet attribut n’est pas utilisé par Visual Studio pour fournir des informations IntelliSense.
 
-  `domElement` Facultatif. Cet attribut est déprécié ; l’attribut `type` a la priorité sur cet attribut. Cet attribut spécifie si la valeur de retour documentée est un élément DOM. A la valeur `true` pour spécifier que la valeur de retour est un élément DOM ; Sinon, affectez la valeur `false`. Si l’attribut `type` n’est pas défini et `domElement` a la valeur `true`, IntelliSense traite la valeur de retour documentée comme une `HTMLElement` lors de la saisie semi-automatique des instructions.
+  `domElement` Facultatif. Cet attribut est déprécié ; l’attribut `type` a la priorité sur cet attribut. Cet attribut spécifie si la valeur de retour documentée est un élément DOM. Affectez `true` la valeur à pour spécifier que la valeur de retour est un élément DOM ; sinon, affectez à la valeur `false` . Si l' `type` attribut n’est pas défini et que `domElement` a la valeur `true` , IntelliSense traite la valeur de retour documentée comme un lors de l’exécution de la `HTMLElement` saisie semi-automatique des instructions.
 
-  `mayBeNull` Facultatif. Spécifie si la valeur de retour documentée peut être définie sur null. Affectez la valeur `true` pour indiquer que la valeur de retour peut être définie sur null. Sinon, affectez la valeur `false`. La valeur par défaut est `false`. Cet attribut n’est pas utilisé par Visual Studio pour fournir des informations IntelliSense.
+  `mayBeNull` Facultatif. Spécifie si la valeur de retour documentée peut être définie sur null. Affectez à `true` la valeur pour indiquer que la valeur de retour peut être définie sur NULL ; sinon, sur `false` . La valeur par défaut est `false`. Cet attribut n’est pas utilisé par Visual Studio pour fournir des informations IntelliSense.
 
   `elementType` Facultatif. Si `type` est `Array`, cet attribut spécifie le type des éléments contenus dans le tableau.
 
@@ -58,16 +58,16 @@ Spécifie des informations de documentation pour le résultat d’un appel de fo
 
   `elementMayBeNull` Facultatif. Si `type` est `Array`, indique si les éléments contenus dans le tableau peuvent être définis sur null. Définissez `true` pour indiquer que les éléments contenus dans le tableau peuvent être définis sur null ; sinon, définissez `false`. La valeur par défaut est `false`. Cet attribut n’est pas utilisé par Visual Studio pour fournir des informations IntelliSense.
 
-  `locid` Facultatif. Identificateur des informations de localisation relatives à la valeur de retour. L’identificateur est soit un ID de membre soit il correspond à la valeur d’attribut `name` dans un lot de messages défini par des métadonnées OpenAjax. Le type d’identificateur varie selon le format spécifié dans la balise [\<loc>](../ide/loc-javascript.md).
+  `locid` Facultatif. Identificateur des informations de localisation relatives à la valeur de retour. L’identificateur est soit un ID de membre soit il correspond à la valeur d’attribut `name` dans un lot de messages défini par des métadonnées OpenAjax. Le type d’identificateur dépend du format spécifié dans la [\<loc>](../ide/loc-javascript.md) balise.
 
-  `value` Facultatif. Spécifie le code qui doit être évalué pour être utilisé par IntelliSense au lieu du code de fonction lui-même. Par exemple, vous pouvez utiliser cet attribut pour fournir IntelliSense pour les rappels asynchrones, tels qu’un `Promise`. L’utilisation de l’attribut `value` avec l’élément `<returns>` peut améliorer les performances d’IntelliSense en ignorant l’exécution longue du code.
+  `value` Facultatif. Spécifie le code qui doit être évalué pour être utilisé par IntelliSense au lieu du code de fonction lui-même. Par exemple, vous pouvez utiliser cet attribut pour fournir IntelliSense pour les rappels asynchrones, tels qu’un `Promise` . L’utilisation de l' `value` attribut avec l' `<returns>` élément peut améliorer les performances d’IntelliSense en ignorant l’exécution longue du code.
 
   `description` Facultatif. Description de la valeur de retour.
 
-## <a name="remarks"></a>Remarques
- L’élément `<returns>` doit être placé dans le corps de la fonction avant toute instruction.
+## <a name="remarks"></a>Notes
+ L' `<returns>` élément doit être placé dans le corps de la fonction avant toute instruction.
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
  L’exemple de code suivant montre comment utiliser l'élément `<returns>`.
 
 ```javascript
@@ -102,4 +102,4 @@ calculate().  // Completion list for a Number.
 ```
 
 ## <a name="see-also"></a>Voir aussi
- [Commentaires sur la documentation XML](../ide/xml-documentation-comments-javascript.md)
+ [Commentaires de documentation XML](../ide/xml-documentation-comments-javascript.md)

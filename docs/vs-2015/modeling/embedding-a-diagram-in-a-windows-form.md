@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 487105350fe5c62a9451bccc5713c6506c76bf1f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669700"
 ---
 # <a name="embedding-a-diagram-in-a-windows-form"></a>Incorporation d'un schéma dans un Windows Form
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous pouvez incorporer un diagramme DSL dans un contrôle Windows, qui apparaît dans la fenêtre [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+Vous pouvez incorporer un diagramme DSL dans un contrôle Windows, qui s’affiche dans la [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fenêtre.
 
 ## <a name="embedding-a-diagram"></a>Incorporation d’un diagramme
 
@@ -75,7 +75,7 @@ Vous pouvez incorporer un diagramme DSL dans un contrôle Windows, qui apparaît
 
 #### <a name="updating-the-form-using-store-events"></a>Mise à jour du formulaire à l’aide des événements Store
 
-1. Dans le concepteur de formulaires, ajoutez une **zone de liste** nommée `listBox1`. Cette opération affiche une liste des éléments du modèle. Elle sera conservée synchronisée avec le modèle à l’aide d' *événements Store*. Pour plus d’informations, consultez les [gestionnaires d’événements propagent les modifications en dehors du modèle](../modeling/event-handlers-propagate-changes-outside-the-model.md).
+1. Dans le concepteur de formulaires, ajoutez une **zone de liste** nommée `listBox1` . Cette opération affiche une liste des éléments du modèle. Elle sera conservée synchronisée avec le modèle à l’aide d' *événements Store*. Pour plus d’informations, consultez les [gestionnaires d’événements propagent les modifications en dehors du modèle](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
 2. Dans le fichier de code personnalisé, remplacez les autres méthodes de la classe DocView :
 
@@ -149,7 +149,7 @@ Vous pouvez incorporer un diagramme DSL dans un contrôle Windows, qui apparaît
 
     ```
 
-4. Pour tester le DSL, appuyez sur F5 et, dans l’instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ouvrez un exemple de fichier de modèle.
+4. Pour tester le DSL, appuyez sur F5 et, dans l’instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , ouvrez un exemple de fichier de modèle.
 
      Notez que la zone de liste affiche une liste des éléments dans le modèle, et qu’elle est correcte après l’ajout ou la suppression, et après les opérations d’annulation et de rétablissement.
 

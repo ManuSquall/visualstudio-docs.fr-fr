@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: a2b94e10dd09d26a17a7574db97880567f7725cd
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282603"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Créer des requêtes TableAdapter paramétrées
@@ -40,7 +40,7 @@ Vous créez des requêtes TableAdapter paramétrées dans le **Concepteur de Dat
 
 - Créez un TableAdapter, en ajoutant une clause WHERE avec les paramètres souhaités à l'instruction SQL. Pour plus d’informations, consultez [créer et configurer des TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
-     -ou-
+     - ou -
 
 - Ajoutez une requête à un TableAdapter existant, en ajoutant une clause WHERE avec les paramètres souhaités à l'instruction SQL.
 
@@ -65,7 +65,7 @@ Vous créez des requêtes TableAdapter paramétrées dans le **Concepteur de Dat
 
 4. Tapez un nom dans la zone **Nom de la nouvelle requête** si vous créez une requête.
 
-     -ou-
+     - ou -
 
      Sélectionnez une requête dans la zone **Nom de la requête existante**.
 

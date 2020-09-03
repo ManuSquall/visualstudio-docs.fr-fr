@@ -1,4 +1,4 @@
-- name: Vue d’ensemble
+- name: Vue d'ensemble
   href: accessing-data-in-visual-studio.md
 - name: Didacticiels
   items:
@@ -211,7 +211,7 @@
       href: upgrade-dot-mdf-files.md
     - name: Résoudre des erreurs d’accès aux données
       href: additional-resources-for-troubleshooting-data-access-errors.md
-- name: Reference
+- name: Informations de référence
   items:
     - name: Concepteur O/R (Linq to SQL)
       items:

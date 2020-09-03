@@ -44,9 +44,9 @@
                   href: artboard-modifier-keys-in-blend.md
                 - name: Touches de modification de l'outil Plume
                   href: pen-tool-modifier-keys-in-blend.md
-                - name: Touches modificatrices de l'outil Sélection directe
+                - name: Touches de modification de l’outil Sélection directe
                   href: direct-selection-tool-modifier-keys-in-blend.md
-            - name: Services et produits d'accessibilité
+            - name: Produits et services d’accessibilité
               href: accessibility-products-and-services-blend.md
         - name: Raccourcis clavier pour le concepteur XAML dans Visual Studio et Blend pour Visual Studio
           href: keyboard-shortcuts-for-xaml-designer.md
@@ -96,7 +96,7 @@
                           href: elements-xelement-dynamic-property.md
                         - name: Descendants
                           href: descendants-xelement-dynamic-property.md
-                        - name: Valeur
+                        - name: Value
                           href: value-xelement-dynamic-property.md
                         - name: Xml
                           href: xml-xelement-dynamic-property.md
@@ -112,7 +112,7 @@
                           href: walkthrough-linqtoxmldatabinding-example.md
                         - name: Code source L2DBForm.xaml
                           href: l2dbform-xaml-source-code.md
-                        - name: L2DBForm.xaml.cs Source Code
+                        - name: Code source de L2DBForm.xaml.cs
                           href: l2dbform-xaml-cs-source-code.md
     - name: Utilisation de ressources 3D pour les jeux et les applications
       items:
@@ -122,7 +122,7 @@
           items:
             - name: Utilisation des textures et des images
               href: working-with-textures-and-images.md
-            - name: Éditeur d’images
+            - name: éditeur d’images
               href: image-editor.md
             - name: Exemples de l'éditeur d'images
               items:
@@ -202,7 +202,7 @@
               href: how-to-export-a-texture-that-has-premultiplied-alpha.md
             - name: Exporter une texture à utiliser avec des applications Direct2D ou JavaScript
               href: how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md
-    - name: Bibliothèque d’images Visual Studio
+    - name: "Bibliothèque d’images Visual\_Studio"
       href: the-visual-studio-image-library.md
 - name: Développement d'applications avec Workflow Designer
   href: ../workflow-designer/developing-applications-with-the-workflow-designer.md

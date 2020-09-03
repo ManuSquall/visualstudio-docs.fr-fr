@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c6c32db6dc6fbe151b9eec3cec988443ceb73fec
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669986"
 ---
 # <a name="retain-topics-for-later-use"></a>Conserver des rubriques pour une utilisation ultérieure
@@ -33,4 +33,4 @@ Quand vous trouvez une rubrique utile, vous pouvez la conserver pour y accéder 
  Sous l’onglet **Favoris**, vous pouvez ouvrir le menu contextuel d’une entrée pour la renommer, la supprimer ou organiser les entrées dans des dossiers.
 
 ## <a name="see-also"></a>Voir aussi
- [Touches de raccourci (Help Viewer)](../ide/shortcut-keys-help-viewer.md)
+ [Touches de raccourci (visionneuse d’aide)](../ide/shortcut-keys-help-viewer.md)

@@ -14,16 +14,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 14c8b88d295d1a11fd68841c45233ac7edc04c22
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669674"
 ---
 # <a name="export-diagrams-as-images"></a>Exporter des diagrammes en tant qu'images
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Dans Visual Studio, vous pouvez enregistrer des diagrammes de modélisation dans des formats en lecture seule afin de pouvoir les partager avec des parties prenantes, des utilisateurs ou des membres de l’équipe de projet qui n’utilisent pas la même version de Visual Studio.
+Dans Visual Studio, vous pouvez enregistrer des diagrammes de modélisation dans des formats en lecture seule pour pouvoir les partager avec les parties prenantes, les utilisateurs ou les membres de l'équipe de projet qui n'utilisent pas la même version de Visual Studio.
 
  Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -45,9 +45,9 @@ Dans Visual Studio, vous pouvez enregistrer des diagrammes de modélisation dans
 
 2. Dans la liste **nom** , sélectionnez **Microsoft XPS document Writer**, puis cliquez sur **OK**.
 
-3. Dans la boîte de dialogue **enregistrer le fichier sous** , enregistrez le fichier en tant que fichier **Document XPS (\*. Xps)** .
+3. Dans la boîte de dialogue **enregistrer le fichier sous** , enregistrez le fichier sous la forme d’un fichier de **document XPS ( \* . Xps)** .
 
-## <a name="net-framework-security"></a>Sécurité .NET Framework
+## <a name="net-framework-security"></a>Sécurité du .NET Framework
 
 ## <a name="see-also"></a>Voir aussi
  [Créer des modèles pour votre application](../modeling/create-models-for-your-app.md) [partager des modèles et exporter des diagrammes](../modeling/share-models-and-exporting-diagrams.md)

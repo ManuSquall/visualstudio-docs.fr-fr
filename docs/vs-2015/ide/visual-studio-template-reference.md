@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8a3e522d7c38a7f2d8b3c1614aa66bcf840e16ff
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666559"
 ---
 # <a name="visual-studio-template-reference"></a>Référence de modèles Visual Studio
@@ -31,7 +31,7 @@ Les liens suivants fournissent des informations de référence sur les différen
 
  <xref:Microsoft.VisualStudio.TemplateWizard> Décrit l’interface <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> et les types associés.
 
-## <a name="related-sections"></a>Rubriques connexes
+## <a name="related-sections"></a>Sections connexes
  [Guide pratique pour créer des modèles de projet](../ide/how-to-create-project-templates.md)
 
  [Guide pratique pour créer des modèles d’élément](../ide/how-to-create-item-templates.md)

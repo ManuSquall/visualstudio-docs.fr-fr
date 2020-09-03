@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 95476e56ceecfca84251c1b43cf0bb9ddf84f8b5
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281758"
 ---
 # <a name="create-relationships-between-datasets"></a>Créer des relations entre les datasets
@@ -94,7 +94,7 @@ Les relations entre les tables de données apparaissent sous forme de lignes dan
 
 8. Activez ou désactivez la case à cocher **relation imbriquée** . La sélection de cette option affecte la valeur <xref:System.Data.DataRelation.Nested%2A> à la propriété `true` et entraîne l’imbrication des lignes enfants de la relation dans la colonne parent lorsque ces lignes sont écrites sous forme de données XML ou synchronisées avec <xref:System.Xml.XmlDataDocument> . Pour plus d’informations, consultez [imbrication de DataRelations](/dotnet/framework/data/adonet/dataset-datatable-dataview/nesting-datarelations).
 
-9. Définissez les règles à appliquer lorsque vous apportez des modifications aux enregistrements de ces tables. Pour plus d’informations, consultez <xref:System.Data.Rule>.
+9. Définissez les règles à appliquer lorsque vous apportez des modifications aux enregistrements de ces tables. Pour plus d'informations, consultez <xref:System.Data.Rule>.
 
 10. Cliquez sur **OK** pour créer la relation. Une ligne de relation apparaît sur le concepteur entre les deux tables.
 
