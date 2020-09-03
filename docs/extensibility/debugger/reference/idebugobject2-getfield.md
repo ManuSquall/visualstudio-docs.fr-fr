@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2:GetField - France Microsoft Docs
+title: 'IDebugObject2 :: GetField | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f0cd44b655669adec6722bf85223f786210d37de
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726222"
 ---
 # <a name="idebugobject2getfield"></a>IDebugObject2::GetField
@@ -41,10 +41,10 @@ int GetField(
 
 ## <a name="parameters"></a>Paramètres
 `ppField`\
-[out] Renvoie un objet [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) si ce n’est une valeur nulle.
+à Retourne un objet [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) s’il ne s’agit pas d’une valeur null.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de succès, les retours S_OK; autrement, renvoie un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes
  Un champ décrit le type de l’objet.

@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::Enable Microsoft Docs
+title: 'IDebugPendingBreakpoint2 :: Enable | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f796aef9533e3861a870b0a0543ae6b4aeb11de1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725895"
 ---
 # <a name="idebugpendingbreakpoint2enable"></a>IDebugPendingBreakpoint2::Enable
-Bascule l’état activé du point d’arrêt en attente.
+Active/désactive l’état activé du point d’arrêt en attente.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -42,18 +42,18 @@ int Enable(
 
 ## <a name="parameters"></a>Paramètres
 `fEnable`\
-[dans] Définissez-le à`TRUE`nonzero ( ) pour permettre`FALSE`un point d’arrêt en attente, ou à zéro ( ) à désactiver.
+dans Définissez sur une valeur différente de zéro ( `TRUE` ) pour activer un point d’arrêt en attente, ou sur zéro ( `FALSE` ) pour désactiver.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Retourne `E_BP_DELETED` si le point d’arrêt a été supprimé.
 
 ## <a name="remarks"></a>Notes
-Lorsqu’un point d’arrêt en attente est activé ou désactivé, tous les points d’arrêt liés à partir de celui-ci sont réglés à l’état même.
+Lorsqu’un point d’arrêt en attente est activé ou désactivé, tous les points d’arrêt qui en dépendent sont définis sur le même État.
 
 Cette méthode peut être appelée autant de fois que nécessaire, même si le point d’arrêt est déjà activé ou désactivé.
 
 ## <a name="example"></a>Exemple
-L’exemple suivant montre comment implémenter cette méthode pour un objet simple `CPendingBreakpoint` qui expose [l’interface IDebugPendingBreakpoint2.](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
+L’exemple suivant montre comment implémenter cette méthode pour un `CPendingBreakpoint` objet simple qui expose l’interface [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) .
 
 ```cpp
 HRESULT CPendingBreakpoint::Enable(BOOL fEnable)

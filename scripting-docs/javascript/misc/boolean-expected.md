@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 4dbb7e55f6afe6d3edfe4e98749807732ffa05ac
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817669"
 ---
 # <a name="boolean-expected"></a>Booléen attendu
@@ -37,6 +37,6 @@ o.f();
 ## <a name="see-also"></a>Voir aussi
 
 - [Objet Boolean](../../javascript/reference/boolean-object-javascript.md)
-- [Types de données](../../javascript/data-types-javascript.md)
+- [Data types](../../javascript/data-types-javascript.md)
 - [Contrôle du flux de programme](../../javascript/controlling-program-flow-javascript.md)
 - [Copie, passage et comparaison de données](../../javascript/advanced/copying-passing-and-comparing-data-javascript.md)

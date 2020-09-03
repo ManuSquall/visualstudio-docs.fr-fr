@@ -1,5 +1,5 @@
 ---
-title: IDebugObject:SetValue - France Microsoft Docs
+title: 'IDebugObject :: SetValue | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 9e4652eb3c77a1871063dfa71b464fb1f7c43f94
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726357"
 ---
 # <a name="idebugobjectsetvalue"></a>IDebugObject::SetValue
@@ -43,16 +43,16 @@ int SetValue(
 
 ## <a name="parameters"></a>Paramètres
 `pValue`\
-[dans] Une gamme d’octets représentant la nouvelle valeur.
+dans Tableau d’octets représentant la nouvelle valeur.
 
 `nSize`\
-[dans] La taille de la valeur des octets.
+dans Taille de la valeur en octets.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de succès, les retours S_OK; autrement, renvoie un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes
- Les valeurs du tableau sont copiées dans cet objet [IDebugObject,](../../../extensibility/debugger/reference/idebugobject.md) remplaçant toute valeur existante. La taille de la nouvelle valeur peut être plus grande ou plus petite que la valeur existante. Il `IDebugObject` ne s’agit pas d’une référence nulle.
+ Les valeurs du tableau sont copiées dans cet objet [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) , en remplaçant toute valeur existante. La taille de la nouvelle valeur peut être supérieure ou inférieure à la valeur existante. Il `IDebugObject` ne peut pas s’agir d’une référence null.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

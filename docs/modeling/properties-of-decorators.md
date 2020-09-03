@@ -52,11 +52,11 @@ Les éléments décoratifs sont des icônes, du texte ou des chevrons de dévelo
 
 |Propriété|Description|Default|
 |-|-|-|
-|DefaultText|Texte par défaut à afficher.|Etiquette|
-|DisplayName|Nom de l’élément décoratif à afficher dans le concepteur généré.|Etiquette|
+|DefaultText|Texte par défaut à afficher.|Étiquette|
+|DisplayName|Nom de l’élément décoratif à afficher dans le concepteur généré.|Étiquette|
 |FontSize|Taille de police du texte affiché dans l’élément décoratif.|8|
 |FontStyle|Style de police du texte affiché dans l’élément décoratif.|Normal|
-|Nom|Nom de l’élément décoratif.|Etiquette|
+|Nom|Nom de l’élément décoratif.|Étiquette|
 |Notes|Notes informelles associées à l’élément décoratif.|\<none>|
 |HorizontalOffset|Décalage horizontal par rapport à la position par défaut de l’élément décoratif, en pouces. (Sur les formes uniquement.)|0|
 |VerticalOffset|Décalage vertical par rapport à la position par défaut de l’élément décoratif, en pouces. (Sur les formes uniquement.)|0|

@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6cfedaa51ef62b5a9519a7aef23b942d6c1e5f6a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665785"
 ---
 # <a name="designing-and-viewing-classes-and-types"></a>Conception et affichage des classes et des types
@@ -44,7 +44,7 @@ Concevez, visualisez et refactorisez les classes et d'autres types dans votre co
 
  [Conception des classes et des types (Concepteur de classes)](../ide/designing-classes-and-types-class-designer.md)
 
- [Affichage des types et des relations (Concepteur de classes)](../ide/viewing-types-and-relationships-class-designer.md)
+ [Affichage des types et relations (Concepteur de classes)](../ide/viewing-types-and-relationships-class-designer.md)
 
  [Refactorisation des classes et des types (Concepteur de classes)](../ide/refactoring-classes-and-types-class-designer.md)
 
@@ -52,7 +52,7 @@ Concevez, visualisez et refactorisez les classes et d'autres types dans votre co
 
  [Informations supplémentaires sur les erreurs du Concepteur de classes](../ide/additional-information-about-class-designer-errors.md)
 
-## <a name="related-sections"></a>Rubriques connexes
+## <a name="related-sections"></a>Sections connexes
  [Écriture de code](../ide/writing-code-in-the-code-and-text-editor.md)
 
  [Mapper les dépendances à travers vos solutions](../modeling/map-dependencies-across-your-solutions.md)

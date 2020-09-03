@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::EnumBoundBreakpoints (fr) Microsoft Docs
+title: 'IDebugPendingBreakpoint2 :: EnumBoundBreakpoints | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 6655b65ec2505794f29f5c6ad9142c8690ea474b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725863"
 ---
 # <a name="idebugpendingbreakpoint2enumboundbreakpoints"></a>IDebugPendingBreakpoint2::EnumBoundBreakpoints
-Énumère tous les points d’arrêt liés à partir de ce point d’arrêt en attente.
+Énumère tous les points d’arrêt liés à ce point d’arrêt en attente.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -42,13 +42,13 @@ int EnumBoundBreakpoints( 
 
 ## <a name="parameters"></a>Paramètres
 `ppEnum`\
-[out] Retourne un objet [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) qui énumère les points d’arrêt liés.
+à Retourne un objet [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) qui énumère les points d’arrêt liés.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Retourne `E_BP_DELETED` si le point d’arrêt a été supprimé.
 
 ## <a name="example"></a>Exemple
- L’exemple suivant montre comment implémenter cette méthode pour un objet simple `CPendingBreakpoint` qui expose [l’interface IDebugPendingBreakpoint2.](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
+ L’exemple suivant montre comment implémenter cette méthode pour un `CPendingBreakpoint` objet simple qui expose l’interface [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) .
 
 ```cpp
 HRESULT CPendingBreakpoint::EnumBoundBreakpoints(IEnumDebugBoundBreakpoints2** ppEnum)

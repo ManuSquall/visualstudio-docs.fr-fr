@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::Virtualize Microsoft Docs
+title: 'IDebugPendingBreakpoint2 :: virtualiser | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 7ad5aac997cf694a7cf8fa887ae63fbef54ca07f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725657"
 ---
 # <a name="idebugpendingbreakpoint2virtualize"></a>IDebugPendingBreakpoint2::Virtualize
-Toggles l’état virtualisé de ce point d’arrêt en attente. Lorsqu’un point d’arrêt en attente est virtualisé, le moteur de débogé tente de le lier chaque fois que de nouveaux codes se chargent dans le programme.
+Active/désactive l’État virtualisé de ce point d’arrêt en attente. Lorsqu’un point d’arrêt en attente est virtualisé, le moteur de débogage tente de le lier chaque fois que le nouveau code se charge dans le programme.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -42,16 +42,16 @@ int Virtualize(
 
 ## <a name="parameters"></a>Paramètres
 `fVirtualize`\
-[dans] Définissez à nonzero (`TRUE`) pour virtualiser le`FALSE`point d’arrêt en attente, ou à zéro ( ) pour désactiver la virtualisation.
+dans Définissez sur une valeur différente de zéro ( `TRUE` ) pour virtualiser le point d’arrêt en attente, ou sur zéro ( `FALSE` ) pour désactiver la virtualisation.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Retourne `E_BP_DELETED` si le point d’arrêt a été supprimé.
 
 ## <a name="remarks"></a>Notes
 Un point d’arrêt virtualisé est lié chaque fois que le code est chargé.
 
 ## <a name="example"></a>Exemple
-L’exemple suivant montre comment implémenter cette méthode pour un objet simple `CPendingBreakpoint` qui expose [l’interface IDebugPendingBreakpoint2.](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
+L’exemple suivant montre comment implémenter cette méthode pour un `CPendingBreakpoint` objet simple qui expose l’interface [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) .
 
 ```cpp
 HRESULT CPendingBreakpoint::Virtualize(BOOL fVirtualize)

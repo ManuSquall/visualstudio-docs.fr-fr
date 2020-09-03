@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: e7f79e04cc9afb4238c9f6292a99da684066a7d5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77632860"
 ---
 # <a name="register-extensions-of-the-net-framework"></a>Inscrire des extensions de .NET Framework
@@ -34,4 +34,4 @@ Vous pouvez développer un assembly qui étend une version spécifique de .NET 
 
 ### <a name="see-also"></a>Voir aussi
 
-- [Intégration Visual Studio](../msbuild/visual-studio-integration-msbuild.md)
+- [Visual Studio, intégration](../msbuild/visual-studio-integration-msbuild.md)

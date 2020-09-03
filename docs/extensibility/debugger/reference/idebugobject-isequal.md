@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::IsEqual Microsoft Docs
+title: 'IDebugObject :: IsEqual | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 13018e31fb5f8bed89a0a290d687360a605a855d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726504"
 ---
 # <a name="idebugobjectisequal"></a>IDebugObject::IsEqual
-Compare un objet avec cet objet.
+Compare un objet à cet objet.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -43,16 +43,16 @@ int IsEqual(
 
 ## <a name="parameters"></a>Paramètres
 `pObject`\
-[dans] Un objet [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) représentant l’objet à comparer.
+dans Objet [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) représentant l’objet à comparer.
 
 `pfIsEqual`\
-[out] Retourne non-zéro`TRUE`( ) si les valeurs des objets sont égales; autrement, retourne`FALSE`zéro ( ).
+à Retourne une valeur différente de zéro ( `TRUE` ) si les valeurs des objets sont égales ; sinon, retourne la valeur zéro ( `FALSE` ).
 
-## <a name="return-value"></a>Valeur de retour
- En cas de succès, les retours S_OK; autrement, renvoie un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes
- Typiquement, cette méthode peut comparer les adresses `pObject` des valeurs représentées par le paramètre et cet objet [IDebugObject;](../../../extensibility/debugger/reference/idebugobject.md) si les adresses sont égales, alors les objets peuvent être considérés comme égaux.
+ En règle générale, cette méthode peut comparer les adresses des valeurs représentées par le `pObject` paramètre et cet objet [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) ; si les adresses sont égales, les objets peuvent être considérés comme égaux.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 779d3ec1ed520d5d48043f90e7cb6272553012a6
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535042"
 ---
 # <a name="ca1405-com-visible-type-base-types-should-be-com-visible"></a>CA1405 : Les types de base type visibles par COM doivent être visibles par COM
@@ -32,7 +32,7 @@ ms.locfileid: "85535042"
 |Category|Microsoft. Interoperability|
 |Modification avec rupture|DependsOnFix|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Un type visible COM (Component Object Model) dérive d’un type qui n’est pas visible par COM.
 
 ## <a name="rule-description"></a>Description de la règle

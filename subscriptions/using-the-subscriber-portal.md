@@ -8,10 +8,10 @@ ms.date: 07/19/2019
 ms.topic: overview
 description: Découvrez plus d’informations sur la gamme complète des avantages disponibles sur le portail des abonnements Visual Studio
 ms.openlocfilehash: b2ace2416950336e7c4a872e378684d8160e2897
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85902883"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>Utilisation du portail des abonnés- my.visualstudio.com
@@ -31,7 +31,7 @@ La catégorie Outils contient les principaux outils de développement, comme l�
 ### <a name="professional-development"></a>Développement professionnel
 Cette catégorie contient des avantages tels que la formation en ligne de Microsoft et de nos partenaires, ainsi qu’un abonnement à MSDN Magazine, visant à vous aider à améliorer vos compétences en développement et à vous tenir informé de l’actualité en matière de code.
 
-### <a name="support"></a>Assistance
+### <a name="support"></a>Support
 Vous avez des questions sur Azure ?  Obtenez de l’aide auprès de la Communauté Azure à travers les forums ou tirez le meilleur parti d’Azure Advisory Chat (préversion).  Le service Concierge Chat facilite la recherche de documentation technique et d’informations sur les produits et aide à résoudre les questions relatives aux abonnements.  Certains abonnements incluent également un support technique en cas d’incidents pour vous aider à résoudre d’éventuels problèmes sur une large gamme de produits Microsoft exécutés dans des environnements de développement et de test.
 
 ## <a name="downloads"></a>[Téléchargements](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs)
@@ -45,7 +45,7 @@ Accédez à la page Clés de produit pour obtenir les clés nécessaires pour l�
 ## <a name="subscriptions"></a>[Abonnements](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)
 La page Abonnements fournit les fonctionnalités nécessaires pour afficher vos abonnements, basculer entre les différents abonnements, les renouveler et en activer de nouveaux. Vous pouvez également associer les abonnements auxquels vous accédez avec votre compte Microsoft à un autre compte déjà associé à l’environnement IDE Visual Studio, à Azure DevOps Services ou à des ressources Azure existantes.
 
-## <a name="support"></a>Assistance
+## <a name="support"></a>Support
 
 Outre les avantages individuels figurant dans la catégorie Support de la page Avantages, la page Support fournit un accès aux ressources pour vous aider à tirer le meilleur parti de votre abonnement Visual Studio. Accédez aux [ressources de support](https://visualstudio.microsoft.com/subscriptions/support/) pour résoudre d’éventuels problèmes techniques ou questions liés à la vente d’abonnements, aux comptes et à la facturation.
 

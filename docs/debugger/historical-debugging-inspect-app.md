@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: efabc8cd185daed4f018e3e4209e391b5bc39f44
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350444"
 ---
 # <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio-c-visual-basic-c"></a>Inspecter votre application avec le débogage d’historique IntelliTrace dans Visual Studio (C#, Visual Basic, C++)
@@ -51,7 +51,7 @@ private static int AddInt(int add)
 }
 ```
 
-Nous partons du principe que la valeur attendue de `resultInt` après l’appel de `AddAll()` est 20 (le résultat de 20 incrémentations de `testInt`). (Nous partons également du principe que vous ne pouvez pas voir le bogue dans `AddInt()` ). Mais le résultat est en fait 44. Comment trouver le bogue sans parcourir 10 fois `AddAll()` ? Nous pouvons utiliser le débogage d’historique pour simplifier et accélérer l’identification du bogue. Voici comment faire :
+Nous partons du principe que la valeur attendue de `resultInt` après l’appel de `AddAll()` est 20 (le résultat de 20 incrémentations de `testInt`). (Nous partons également du principe que vous ne pouvez pas voir le bogue dans `AddInt()` ). Mais le résultat est en fait 44. Comment trouver le bogue sans parcourir 10 fois `AddAll()` ? Nous pouvons utiliser le débogage d’historique pour simplifier et accélérer l’identification du bogue. Voici comment procéder :
 
 1. Dans **outils > Options > intellitrace > général**, assurez-vous qu’IntelliTrace est activé, puis sélectionnez **événements IntelliTrace et informations sur les appels**. Si vous ne sélectionnez pas cette option, vous ne verrez pas la marge de navigation (comme expliqué ci-dessous).
 

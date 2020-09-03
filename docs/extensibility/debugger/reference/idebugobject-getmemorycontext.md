@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::GetMemoryContext Microsoft Docs
+title: 'IDebugObject :: GetMemoryContext | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 16427685765c1471fba3993743efc204cb99c367
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726655"
 ---
 # <a name="idebugobjectgetmemorycontext"></a>IDebugObject::GetMemoryContext
@@ -41,13 +41,13 @@ int GetMemoryContext(
 
 ## <a name="parameters"></a>Paramètres
 `pContext`\
-[out] Renvoie un objet [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) représentant l’adresse de la valeur de l’objet.
+à Retourne un objet [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) qui représente l’adresse de la valeur de l’objet.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de succès, les retours S_OK; autrement, renvoie un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes
- Le contexte de mémoire retourné spécifie l’adresse de la valeur représentée par cet objet [IDebugObject.](../../../extensibility/debugger/reference/idebugobject.md)
+ Le contexte de mémoire retourné spécifie l’adresse de la valeur telle qu’elle est représentée par cet objet [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) .
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

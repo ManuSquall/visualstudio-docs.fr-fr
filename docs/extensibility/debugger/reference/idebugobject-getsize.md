@@ -1,5 +1,5 @@
 ---
-title: IDebugObject:GetSize Microsoft Docs
+title: 'IDebugObject :: obtient | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 8fd42abfc056c3b9e50d073ad335f72ac9022aa7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726572"
 ---
 # <a name="idebugobjectgetsize"></a>IDebugObject::GetSize
-Obtient la taille de l’objet dans les octets.
+Obtient la taille de l’objet, en octets.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,13 +41,13 @@ int GetSize(
 
 ## <a name="parameters"></a>Paramètres
 `pnSize`\
-[out] Retourne la taille dans les octets.
+à Retourne la taille en octets.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de succès, les retours S_OK; autrement, renvoie un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes
- Utilisez la méthode [GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md) pour récupérer la valeur comme une séquence d’octets.
+ Utilisez la méthode [GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md) pour récupérer la valeur sous la forme d’une séquence d’octets.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

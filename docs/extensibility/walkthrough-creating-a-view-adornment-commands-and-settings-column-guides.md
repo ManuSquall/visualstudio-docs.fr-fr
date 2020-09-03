@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 392c4be60f2285edb986d5ca7a1cf4a2202e03c7
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905039"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>Procédure pas à pas : créer un ornement, des commandes et des paramètres d’affichage (repères de colonne)
@@ -1201,7 +1201,7 @@ private int GetApplicableColumn(EventArgs e)
 
 ```
 
-`GetCurrentEditorColumn`doit approfondir un peu pour obtenir une <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> vue du code.  Si vous `GetActiveTextView` `GetActiveView` effectuez le suivi, et `GetTextViewFromVsTextView` , vous pouvez voir comment procéder. Le code suivant est le code abstrait, en commençant par la sélection actuelle, puis en obtenant le frame de la sélection, puis en obtenant le DocView du frame en tant que <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> , en obtenant un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> à partir du IVsTextView, puis en obtenant un hôte de vue et enfin le IWpfTextView :
+`GetCurrentEditorColumn` doit approfondir un peu pour obtenir une <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> vue du code.  Si vous `GetActiveTextView` `GetActiveView` effectuez le suivi, et `GetTextViewFromVsTextView` , vous pouvez voir comment procéder. Le code suivant est le code abstrait, en commençant par la sélection actuelle, puis en obtenant le frame de la sélection, puis en obtenant le DocView du frame en tant que <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> , en obtenant un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> à partir du IVsTextView, puis en obtenant un hôte de vue et enfin le IWpfTextView :
 
 ```csharp
    IVsMonitorSelection selection =

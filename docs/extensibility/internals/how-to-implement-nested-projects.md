@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3b1ac3c147962b943499172435c3f601115d36a9
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905352"
 ---
 # <a name="how-to-implement-nested-projects"></a>Comment : implémenter des projets imbriqués
@@ -37,7 +37,7 @@ Lorsque vous créez un type de projet imbriqué, plusieurs étapes supplémentai
 
 4. Le projet parent appelle la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProject%2A> méthode ou la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProjectEx%2A> méthode sur chacun de ses projets enfants.
 
-     Vous transmettez <xref:Microsoft.VisualStudio.Shell.Interop.__VSADDVPFLAGS> à la `AddVirtualProject` méthode pour indiquer que le projet virtuel (imbriqué) doit être ajouté à la fenêtre du projet, exclu de la génération, ajouté au contrôle de code source, et ainsi de suite. `VSADDVPFLAGS`vous permet de contrôler la visibilité du projet imbriqué et d’indiquer les fonctionnalités qui lui sont associées.
+     Vous transmettez <xref:Microsoft.VisualStudio.Shell.Interop.__VSADDVPFLAGS> à la `AddVirtualProject` méthode pour indiquer que le projet virtuel (imbriqué) doit être ajouté à la fenêtre du projet, exclu de la génération, ajouté au contrôle de code source, et ainsi de suite. `VSADDVPFLAGS` vous permet de contrôler la visibilité du projet imbriqué et d’indiquer les fonctionnalités qui lui sont associées.
 
      Si vous rechargez un projet enfant existant qui a un GUID de projet stocké dans le fichier projet du projet parent, le projet parent appelle `AddVirtualProjectEx` . La seule différence entre `AddVirtualProject` et `AddVirtualProjectEX` est que `AddVirtualProjectEX` a un paramètre pour permettre au projet parent de spécifier un par instance `guidProjectID` pour que le projet enfant active <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProjectOfGuid%2A> et <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProjectOfProjref%2A> fonctionne correctement.
 
@@ -45,7 +45,7 @@ Lorsque vous créez un type de projet imbriqué, plusieurs étapes supplémentai
 
 5. L’IDE appelle la <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren> méthode sur chaque projet enfant du projet parent.
 
-     Le projet parent doit implémenter `IVsParentProject` si vous souhaitez imbriquer des projets. Toutefois, le projet parent n’appelle jamais `QueryInterface` pour `IVsParentProject` , même s’il a des projets parents en dessous. La solution gère l’appel à `IVsParentProject` et, si elle est implémentée, appelle `OpenChildren` pour créer les projets imbriqués. `AddVirtualProjectEX`est toujours appelé à partir de `OpenChildren` . Elle ne doit jamais être appelée par le projet parent pour conserver les événements de création de hiérarchie dans l’ordre.
+     Le projet parent doit implémenter `IVsParentProject` si vous souhaitez imbriquer des projets. Toutefois, le projet parent n’appelle jamais `QueryInterface` pour `IVsParentProject` , même s’il a des projets parents en dessous. La solution gère l’appel à `IVsParentProject` et, si elle est implémentée, appelle `OpenChildren` pour créer les projets imbriqués. `AddVirtualProjectEX` est toujours appelé à partir de `OpenChildren` . Elle ne doit jamais être appelée par le projet parent pour conserver les événements de création de hiérarchie dans l’ordre.
 
 6. L’IDE appelle la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A> méthode sur le projet enfant.
 
@@ -56,7 +56,7 @@ Lorsque vous créez un type de projet imbriqué, plusieurs étapes supplémentai
      S’il n’existe pas déjà, le projet parent crée un GUID pour chaque projet imbriqué en appelant `CoCreateGuid` .
 
     > [!NOTE]
-    > `CoCreateGuid`est une API COM appelée lorsqu’un GUID doit être créé. Pour plus d’informations, consultez `CoCreateGuid` et GUID dans MSDN Library.
+    > `CoCreateGuid` est une API COM appelée lorsqu’un GUID doit être créé. Pour plus d’informations, consultez `CoCreateGuid` et GUID dans MSDN Library.
 
      Le projet parent stocke ce GUID dans son fichier projet à récupérer la prochaine fois qu’il est ouvert dans l’IDE. Pour plus d’informations sur l’appel de `AddVirtualProjectEX` pour récupérer le `guidProjectID` pour le projet enfant, consultez l’étape 4.
 

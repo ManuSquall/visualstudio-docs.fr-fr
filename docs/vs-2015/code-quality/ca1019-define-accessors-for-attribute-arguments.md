@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: ec9be9dae502ec48570a85576f483518ed0d75d6
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534951"
 ---
 # <a name="ca1019-define-accessors-for-attribute-arguments"></a>CA1019 : Définir des accesseurs pour les arguments d'attribut
@@ -32,7 +32,7 @@ ms.locfileid: "85534951"
 |Category|Microsoft. Design|
 |Modification avec rupture|Sans rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Dans son constructeur, un attribut définit des arguments qui n’ont pas de propriétés correspondantes.
 
 ## <a name="rule-description"></a>Description de la règle

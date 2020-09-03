@@ -65,7 +65,7 @@ Pour plus d’informations sur les classes d’assistance de paramètres, consul
 
 La **grille de paramètres** sert à configurer les paramètres de l’application. Cette grille contient les colonnes suivantes :
 
-**Name**
+**Nom**
 
 Entrez le nom du paramètre d’application dans ce champ.
 

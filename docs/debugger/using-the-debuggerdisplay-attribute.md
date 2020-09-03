@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2387c5e9a920f0811a65ca400d8da48aa81dccd3
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85418780"
 ---
 # <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Indiquez au débogueur ce qui doit être affiché à l’aide de l’attribut DebuggerDisplay (C#, Visual Basic, F #, C++/CLI)

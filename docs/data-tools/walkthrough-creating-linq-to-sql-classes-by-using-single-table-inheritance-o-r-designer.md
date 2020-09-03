@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: afe4063f2d96b2ae46664ec6642ec1a4e98ab892
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535263"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Procédure pas à pas : créer des classes LINQ to SQL à l’aide de l’héritage de table unique (Concepteur O/R)
@@ -51,10 +51,10 @@ Pour voir comment l’héritage fonctionne, créez une petite `Person` table, ut
 
     |Nom de la colonne|Type de données|Null autorisé|
     |-----------------|---------------|-----------------|
-    |**Identifiant**|**int**|**Fausses**|
+    |**Identifiant**|**int**|**False**|
     |**Type**|**int**|**True**|
-    |**FirstName**|**nvarchar(200)**|**Fausses**|
-    |**LastName**|**nvarchar(200)**|**Fausses**|
+    |**FirstName**|**nvarchar(200)**|**False**|
+    |**LastName**|**nvarchar(200)**|**False**|
     |**Manager**|**int**|**True**|
 
 3. Définissez la colonne d'ID comme clé primaire.
@@ -72,7 +72,7 @@ Pour pouvoir vérifier si l'héritage est configuré correctement, la table a be
 
     |**Identifiant**|**Type**|**FirstName**|**LastName**|**Manager**|
     |-|-|-|-|-|
-    |**1**|**1**|**Anne**|**Wallace**|**NULL**|
+    |**1**|**1**|**Ann**|**Wallace**|**NULL**|
     |**2**|**1**|**Carlos**|**Grilo**|**NULL**|
     |**3**|**1**|**Yael**|**Peled**|**NULL**|
     |**4**|**2**|**Gatis**|**Ozolins**|**1**|
@@ -173,7 +173,7 @@ Vous ajoutez à présent du code au formulaire qui interroge une classe spécifi
     }
     ```
 
-## <a name="test-the-application"></a>Test de l’application
+## <a name="test-the-application"></a>Tester l’application
 Exécutez l’application et vérifiez que les enregistrements affichés dans la zone de liste sont tous les employés (enregistrements qui ont une valeur de 2 dans leur colonne de **type** ).
 
 ### <a name="to-test-the-application"></a>Pour tester l'application

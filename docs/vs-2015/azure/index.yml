@@ -88,7 +88,7 @@ sections:
             html: <p>Déboguer des services cloud localement et dans Azure</p>
             image:
               src: 'https://docs.microsoft.com//media/common/i_debug.svg'
-            title: Déboguer
+            title: Débogage
           - href: vs-azure-tools-performance-profiling-cloud-services.md
             html: <p>Utiliser le profileur Visual Studio</p>
             image:
@@ -122,7 +122,7 @@ sections:
             html: <p>Accéder à des machines virtuelles à partir de Visual Studio</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_vmm-cloud.svg'
-            title: Machines virtuelles
+            title: Virtual Machines
   - title: Autres ressources de développement Azure
     items:
       - type: paragraph
@@ -144,5 +144,5 @@ sections:
             href: 'https://docs.microsoft.com/azure/stream-analytics/stream-analytics-quick-create-vs'
           - image:
               src: 'https://docs.microsoft.com/azure/media/index/Fabric.svg'
-            text: "Service\_Fabric"
+            text: Service Fabric
             href: 'https://docs.microsoft.com/azure/service-fabric/service-fabric-get-started'

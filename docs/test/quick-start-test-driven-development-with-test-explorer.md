@@ -8,13 +8,13 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: a264975014fea88126bbca0589fe037e629dae10
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75566278"
 ---
-# <a name="walkthrough-test-driven-development-using-test-explorer"></a>Procédure pas à pas : Développement piloté par test à l’aide de Test Explorer
+# <a name="walkthrough-test-driven-development-using-test-explorer"></a>Procédure pas à pas : développement piloté par les tests à l’aide de l’Explorateur de tests
 
 Créez des tests unitaires pour faire en sorte que votre code continue de fonctionner correctement dans le cas de modifications incrémentielles du code. Vous pouvez utiliser plusieurs Infrastructures pour écrire des tests unitaires, y compris ceux développés par des tiers. Certains frameworks de tests sont spécialisés dans les tests pour différents langages ou plateformes. L'explorateur de tests fournit une interface unique pour les tests unitaires dans l'une de ces infrastructures. Pour plus d’informations sur l’**Explorateur de tests**, consultez [Exécuter des tests unitaires avec l’Explorateur de tests](run-unit-tests-with-test-explorer.md) et [Forum aux questions sur l’Explorateur de tests](test-explorer-faq.md).
 
@@ -48,7 +48,7 @@ Cette procédure pas-à-pas montre comment développer une méthode testée en C
 
 4. Générez un type à partir du code de test.
 
-   1. Placez le `Rooter`curseur sur , puis à partir du menu ampoule, choisissez Générer type **'Rooter'** > Générer un nouveau**type**.
+   1. Placez le curseur sur `Rooter` , puis dans le menu ampoule, choisissez générer le **type’Rooter'**  >  **générer un nouveau type**.
 
       ![Action rapide Générer un nouveau type](media/test-driven-development-generate-new-type.png)
 
@@ -87,7 +87,7 @@ Cette procédure pas-à-pas montre comment développer une méthode testée en C
     }
     ```
 
-2. Dans **Test Explorer**, choisissez Run **All**.
+2. Dans l' **Explorateur de tests**, choisissez **exécuter tout**.
 
    La solution est générée, et les tests s’exécutent et réussissent.
 
@@ -124,7 +124,7 @@ Pour renforcer votre confiance dans le fonctionnement du code dans tous les cas,
     }
     ```
 
-2. Dans **Test Explorer**, choisissez Run **All**.
+2. Dans l' **Explorateur de tests**, choisissez **exécuter tout**.
 
    Le nouveau test échoue (bien que le premier test réussisse encore). Pour rechercher le point de défaillance, sélectionnez le test qui a échoué, puis examinez les détails dans le volet **Récapitulatif des détails du test**.
 
@@ -144,7 +144,7 @@ Pour renforcer votre confiance dans le fonctionnement du code dans tous les cas,
     }
     ```
 
-4. Dans **Test Explorer**, choisissez Run **All**.
+4. Dans l' **Explorateur de tests**, choisissez **exécuter tout**.
 
    Les deux tests ont réussi maintenant.
 
@@ -169,7 +169,7 @@ Pour renforcer votre confiance dans le fonctionnement du code dans tous les cas,
     }
     ```
 
-2. Dans **Test Explorer**, choisissez Run **All**.
+2. Dans l' **Explorateur de tests**, choisissez **exécuter tout**.
 
    La méthode testée s’exécute en boucle et doit être annulée manuellement.
 
@@ -189,7 +189,7 @@ Pour renforcer votre confiance dans le fonctionnement du code dans tous les cas,
         ...
     ```
 
-5. Dans **Test Explorer**, choisissez Run **All**.
+5. Dans l' **Explorateur de tests**, choisissez **exécuter tout**.
 
    Tous les tests réussissent.
 

@@ -8,13 +8,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7533c205b95b016c43bd2eef614b4c2825596e74
-ms.sourcegitcommit: 9a9c61ca115c22d33bb902153eb0853789c7be4c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85835652"
 ---
-# <a name="walkthrough-capturing-graphics-information-programmatically"></a>Procédure pas à pas : capture d'informations Graphics par programmation
+# <a name="walkthrough-capturing-graphics-information-programmatically"></a>Procédure pas à pas : capture d’informations graphiques par programmation
 Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pour capturer par programmation les informations graphiques d'une application Direct3D.
 
 La capture par programmation est particulièrement utile dans les scénarios suivants :
@@ -115,6 +115,6 @@ Cette procédure pas à pas vous a montré comment capturer des informations gra
 - Découvrez comment analyser les informations graphiques capturées à l'aide des outils Graphics Diagnostics. Consultez [vue d’ensemble](overview-of-visual-studio-graphics-diagnostics.md).
 
 ## <a name="see-also"></a>Voir aussi
-- [Procédure pas à pas : capture d'informations Graphics](walkthrough-capturing-graphics-information.md)
+- [Procédure pas à pas : Capture d'informations graphiques](walkthrough-capturing-graphics-information.md)
 - [Capture d'informations graphiques](capturing-graphics-information.md)
 - [Outil en ligne de commande de capture](command-line-capture-tool.md)

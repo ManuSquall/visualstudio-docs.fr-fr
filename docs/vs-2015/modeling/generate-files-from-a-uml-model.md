@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 832dc3f7fea959ff4d2834aba921cd16f1117b5c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666146"
 ---
 # <a name="generate-files-from-a-uml-model"></a>Générer des fichiers à partir d'un modèle UML
@@ -33,21 +33,21 @@ ms.locfileid: "72666146"
 
   Cette rubrique se termine par une discussion [sur l’utilisation de la génération de texte](#What). Pour plus d’informations, consultez [génération de code et modèles de texte T4](../modeling/code-generation-and-t4-text-templates.md).
 
-## <a name="Command"></a>Génération de fichiers à partir d’une commande de menu
+## <a name="generating-files-from-a-menu-command"></a><a name="Command"></a> Génération de fichiers à partir d’une commande de menu
  Vous pouvez utiliser des modèles de texte de prétraitement dans une commande de menu UML. Dans le code du modèle de texte, ou dans une classe partielle distincte, vous pouvez lire le modèle illustré par le diagramme.
 
  Pour plus d'informations sur ces fonctionnalités, consultez les rubriques suivantes :
 
 - [Définir une commande de menu sur un diagramme de modélisation](../modeling/define-a-menu-command-on-a-modeling-diagram.md)
 
-- [Génération de texte à l’exécution à l’aide des modèles de texte T4](../modeling/run-time-text-generation-with-t4-text-templates.md)
+- [Génération de texte durant l'exécution à l'aide des modèles de texte T4](../modeling/run-time-text-generation-with-t4-text-templates.md)
 
 - [Naviguer dans le modèle UML](../modeling/navigate-the-uml-model.md)
 
   L'approche illustrée dans l'exemple suivant convient à la génération de texte à partir d'un modèle unique, quand vous initiez l'opération à partir de l'un des diagrammes de modèles. Pour traiter un modèle dans un contexte distinct, envisagez d’utiliser [Visual Studio Modelbus](../modeling/integrate-uml-models-with-other-models-and-tools.md) pour accéder au modèle et à ses éléments.
 
 ### <a name="example"></a>Exemple
- Pour exécuter cet exemple, créez un projet d'Extension [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (VSIX). Le nom du projet utilisé dans cet exemple est `VdmGenerator`. Dans le fichier **source. extension. vsixmanifest** , cliquez sur **Ajouter du contenu** et définissez le champ type sur le **Composant MEF** et le chemin d’accès source qui référence le projet actif. Pour plus d’informations sur la façon de configurer ce type de projet, consultez [définir une commande de menu sur un diagramme de modélisation](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
+ Pour exécuter cet exemple, créez un projet d'Extension [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (VSIX). Le nom du projet utilisé dans cet exemple est `VdmGenerator` . Dans le fichier **source. extension. vsixmanifest** , cliquez sur **Ajouter du contenu** et définissez le champ type sur le **Composant MEF** et le chemin d’accès source qui référence le projet actif. Pour plus d’informations sur la façon de configurer ce type de projet, consultez [définir une commande de menu sur un diagramme de modélisation](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
 
  Ajoutez au projet un fichier C# qui contient le code suivant. Cette classe définit une commande de menu qui apparaîtra sur un diagramme de classes UML.
 
@@ -124,7 +124,7 @@ namespace VdmGenerator
 }
 ```
 
- Pour tester le projet, appuyez sur **F5**. Une nouvelle instance de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] démarre. Dans cette instance, ouvrez ou créez un modèle UML qui contient un diagramme de classes. Ajoutez des classes au diagramme et des attributs à chaque classe. Cliquez avec le bouton droit dans le diagramme, puis cliquez sur l’exemple de commande `Generate VDM`. La commande crée le fichier `C:\Generated.txt`. Inspectez ce fichier. Son contenu doit ressembler au texte suivant, mais avec vos propres classes et attributs :
+ Pour tester le projet, appuyez sur **F5**. Une nouvelle instance de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] démarre. Dans cette instance, ouvrez ou créez un modèle UML qui contient un diagramme de classes. Ajoutez des classes au diagramme et des attributs à chaque classe. Cliquez avec le bouton droit dans le diagramme, puis cliquez sur l’exemple de commande `Generate VDM` . La commande crée le fichier `C:\Generated.txt` . Inspectez ce fichier. Son contenu doit ressembler au texte suivant, mais avec vos propres classes et attributs :
 
 ```
 Type Class1 ::
@@ -134,12 +134,12 @@ Type Class2 ::
           Attribute3 : string
 ```
 
-## <a name="Application"></a>Génération de fichiers à partir d’une application
+## <a name="generating-files-from-an-application"></a><a name="Application"></a> Génération de fichiers à partir d’une application
  Vous pouvez générer des fichiers à partir d'une application qui lit un modèle UML. À cet effet, la méthode la plus souple et la plus robuste pour accéder au modèle et à ses éléments est [Visual Studio Modelbus](../modeling/integrate-uml-models-with-other-models-and-tools.md).
 
  Vous pouvez aussi utiliser l'API de base pour charger le modèle et le passer aux modèles de texte à l'aide des mêmes techniques que dans la section précédente. Pour plus d’informations sur le chargement d’un modèle, consultez [lire un modèle UML dans le code de programme](../modeling/read-a-uml-model-in-program-code.md).
 
-## <a name="Design"></a>Génération de fichiers au moment du design
+## <a name="generating-files-at-design-time"></a><a name="Design"></a> Génération de fichiers au moment du design
  Si votre projet comporte une méthode standard d'interprétation des données UML en tant que code, vous pouvez créer des modèles de texte qui vous permettent de générer du code dans votre projet à partir d'un modèle UML. En règle générale, vous auriez une solution qui contient le projet de modèle UML et un ou plusieurs projets pour le code d'application. Chaque projet de code pourrait contenir plusieurs modèles qui génèrent du code de programme, des ressources et des fichiers de configuration, en fonction du contenu du modèle. Le développeur peut exécuter tous les modèles en cliquant sur le bouton **transformer tous les modèles** dans la barre d’outils Explorateur de solutions. Le code de programme est généralement généré sous la forme de classes partielles, pour faciliter l'intégration des parties écrites manuellement.
 
  Vous pouvez distribuer un projet [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] de ce genre sous forme de modèle, pour que chaque membre de l'équipe puisse créer des projets qui génèrent du code à partir d'un modèle de la même façon. En règle générale, le modèle fait partie d'un package d'extension qui comprend des contraintes de validation sur le modèle pour s'assurer que les préconditions du code de génération sont remplies.
@@ -181,21 +181,21 @@ Type Class2 ::
 
    4. Ajoutez des classes au diagramme en faisant glisser l'outil Classe UML à partir de la boîte à outils.
 
-   5. Enregistrez le fichier.
+   5. Enregistrez le fichier .
 
 2. Créez un projet C# ou Visual Basic dans la même solution.
 
-   - Dans Explorateur de solutions, cliquez avec le bouton droit sur la solution, pointez sur **Ajouter**, puis cliquez sur **nouveau projet**. Sous **modèles installés**, cliquez sur **Visual Basic** ou  **C#visuel,** puis sélectionnez un type de projet tel que **application console**.
+   - Dans Explorateur de solutions, cliquez avec le bouton droit sur la solution, pointez sur **Ajouter**, puis cliquez sur **nouveau projet**. Sous **modèles installés**, cliquez sur **Visual Basic** ou **Visual C#,** puis sélectionnez un type de projet tel que **application console**.
 
 3. Ajoutez un fichier texte brut au projet Visual Basic ou C#. Ce fichier contiendra le code partagé si vous souhaitez écrire plusieurs modèles de texte.
 
-   - Dans Explorateur de solutions, cliquez avec le bouton droit sur le projet, pointez sur **Ajouter**, puis cliquez sur **nouvel élément**. Sélectionnez **fichier texte**.
+   - Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le projet, pointez sur **Ajouter**, puis cliquez sur **Nouvel élément**. Sélectionnez **fichier texte**.
 
      Insérez le texte affiché dans la section suivante.
 
 4. Ajoutez un fichier de modèle de texte au projet Visual Basic ou C#.
 
-   - Dans Explorateur de solutions, cliquez avec le bouton droit sur le projet, pointez sur **Ajouter**, puis cliquez sur **nouvel élément**. Sélectionnez **modèle de texte**.
+   - Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le projet, pointez sur **Ajouter**, puis cliquez sur **Nouvel élément**. Sélectionnez **modèle de texte**.
 
      Insérez le code qui suit dans le fichier de modèle de texte.
 
@@ -296,7 +296,7 @@ namespace Test{
 }
 ```
 
-## <a name="What"></a>Comment utiliser la génération de texte
+## <a name="how-to-use-text-generation"></a><a name="What"></a> Comment utiliser la génération de texte
  La véritable puissance de la modélisation est obtenue quand vous utilisez des modèles pour la conception au niveau des impératifs ou de l'architecture. Vous pouvez utiliser des modèles de texte pour effectuer une partie de la conversion des idées de haut niveau en code. Dans de nombreux cas, cela n'aboutit pas à une correspondance de un à un entre les éléments des modèles UML et les classes ou autres parties du code de programme.
 
  En outre, la transformation dépend de votre domaine qui pose problème ; il n'existe aucun mappage universel entre les modèles et le code.
@@ -307,14 +307,14 @@ namespace Test{
 
 - **Modèles**. Les développeurs de Contoso, Ltd créent souvent des sites web et conçoivent le schéma de navigation à l'aide de diagrammes de classes UML. Chaque page web est représentée par une classe et des associations représentent les liens de navigation. Les développeurs génèrent la plupart du code d'un site web à partir du modèle. Chaque page web correspond à plusieurs classes et entrées de fichiers de ressources.  Avec cette approche, la construction de chaque page est conforme à un modèle unique, ce qui la rend plus fiable et flexible que le code écrit manuellement. Le modèle est dans les modèles de génération, tandis que le modèle est utilisé pour capturer les aspects variables.
 
-- **Schémas**. Humongous Insurance possède des milliers de systèmes dans le monde entier. Ces systèmes utilisent différentes interfaces, langages et bases de données. L'équipe responsable de l'architecture centrale publie en interne des modèles de processus et de concepts d'entreprise. À partir de ces modèles, les équipes locales génèrent une partie de leurs schémas d'échange et de base de données, des déclarations dans le code de programme, et ainsi de suite. La présentation graphique des modèles aide les équipes à discuter des propositions. Les équipes créent plusieurs diagrammes qui montrent des sous-ensembles du modèle qui s'appliquent à différents domaines d'activité. Elles utilisent également la couleur pour mettre en évidence les zones susceptibles de changer.
+- **Schémas** : Humongous Insurance possède des milliers de systèmes dans le monde entier. Ces systèmes utilisent différentes interfaces, langages et bases de données. L'équipe responsable de l'architecture centrale publie en interne des modèles de processus et de concepts d'entreprise. À partir de ces modèles, les équipes locales génèrent une partie de leurs schémas d'échange et de base de données, des déclarations dans le code de programme, et ainsi de suite. La présentation graphique des modèles aide les équipes à discuter des propositions. Les équipes créent plusieurs diagrammes qui montrent des sous-ensembles du modèle qui s'appliquent à différents domaines d'activité. Elles utilisent également la couleur pour mettre en évidence les zones susceptibles de changer.
 
 ## <a name="important-techniques-for-generating-artifacts"></a>Techniques importantes pour générer des artefacts
  Dans les exemples précédents, des modèles sont utilisés à diverses fins qui dépendent de l'entreprise, et l'interprétation des éléments de modélisation tels que les classes et les activités varie d'une application à l'autre. Les techniques suivantes sont utiles quand vous générez des artefacts à partir de modèles.
 
 - **Profils**. Dans un même domaine d'activité, l'interprétation d'un type d'élément peut varier. Par exemple, dans un diagramme de site web, certaines classes peuvent représenter des pages web et d'autres des blocs de contenu. Pour que ces distinctions soient plus claires du point de vue de l'utilisateur, vous pouvez définir des stéréotypes. Les stéréotypes vous permettent également de joindre des propriétés supplémentaires qui s'appliquent aux éléments de ce genre. Les stéréotypes sont empaquetés dans des profils. Pour plus d’informations, consultez [définir un profil pour étendre UML](../modeling/define-a-profile-to-extend-uml.md).
 
-     Dans le code de modèle, il est facile d'accéder aux stéréotypes définis sur un objet. Exemple :
+     Dans le code de modèle, il est facile d'accéder aux stéréotypes définis sur un objet. Par exemple :
 
     ```
     public bool HasStereotype(IClass c, string profile, string stereo)
@@ -326,7 +326,7 @@ namespace Test{
 
 - **Conserver les modifications manuelles**. Seule une partie des fichiers de solution peuvent être générés à partir d'un modèle. Dans la plupart des cas, vous devez pouvoir ajouter ou ajuster le contenu généré manuellement. Toutefois, il est important que ces modifications manuelles soient conservées quand la transformation de modèle est réexécutée.
 
-     Là où vos modèles génèrent du code dans [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] langages, ils doivent générer des classes partielles pour que les développeurs puissent ajouter des méthodes et du code. Il est également utile de générer chaque classe en tant que paire : une classe de base abstraite qui contient les méthodes et une classe héritière qui contient uniquement le constructeur. Cela permet aux développeurs de substituer les méthodes. Pour autoriser la substitution de l'initialisation, cette opération s'effectue dans une méthode distincte plutôt que dans les constructeurs.
+     Là où vos modèles génèrent du code dans des [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] langages, ils doivent générer des classes partielles pour que les développeurs puissent ajouter des méthodes et du code. Il est également utile de générer chaque classe en tant que paire : une classe de base abstraite qui contient les méthodes et une classe héritière qui contient uniquement le constructeur. Cela permet aux développeurs de substituer les méthodes. Pour autoriser la substitution de l'initialisation, cette opération s'effectue dans une méthode distincte plutôt que dans les constructeurs.
 
      Là où un modèle génère du code XML et autres types de sorties, il peut être plus difficile de séparer le contenu manuel du contenu généré. Une approche consiste à créer dans le processus de génération une tâche qui combine deux fichiers. Une autre approche consiste, pour les développeurs, à ajuster une copie locale du modèle de génération.
 

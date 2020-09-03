@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 03fae58a902da5bc9432c9ed2ed587dd7ddb4f5a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665770"
 ---
 # <a name="designing-classes-and-types-class-designer"></a>Conception des classes et des types (Concepteur de classes)
@@ -48,8 +48,8 @@ Le **Concepteur de classes** vous permet vous non seulement d’afficher les cla
 
  Fournit des informations et des liens vers des rubriques sur la création et la configuration de membres de type avec le Concepteur de classes.
 
-## <a name="related-sections"></a>Rubriques connexes
- [Affichage des types et des relations (Concepteur de classes)](../ide/viewing-types-and-relationships-class-designer.md)
+## <a name="related-sections"></a>Sections connexes
+ [Affichage des types et relations (Concepteur de classes)](../ide/viewing-types-and-relationships-class-designer.md)
 
  [Refactorisation des classes et des types (Concepteur de classes)](../ide/refactoring-classes-and-types-class-designer.md)
 

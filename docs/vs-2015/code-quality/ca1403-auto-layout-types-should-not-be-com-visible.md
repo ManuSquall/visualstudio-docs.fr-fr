@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 1752efb5be1828f62703e1fe1a1130b37ff80503
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534925"
 ---
 # <a name="ca1403-auto-layout-types-should-not-be-com-visible"></a>CA1403 : Les types Structurer automatiquement ne doivent pas être visibles par COM
@@ -32,11 +32,11 @@ ms.locfileid: "85534925"
 |Category|Microsoft. Interoperability|
 |Modification avec rupture|Rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Un type valeur visible COM (Component Object Model) est marqué avec l' <xref:System.Runtime.InteropServices.StructLayoutAttribute?displayProperty=fullName> attribut défini sur <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=fullName> .
 
 ## <a name="rule-description"></a>Description de la règle
- <xref:System.Runtime.InteropServices.LayoutKind>les types de disposition sont gérés par le common language runtime. La disposition de ces types peut changer d’une version à l’autre de la .NET Framework, ce qui va rompre les clients COM qui attendent une disposition spécifique. Notez que si l' <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribut n’est pas spécifié, les [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] compilateurs C#, et C++ spécifient la <xref:System.Runtime.InteropServices.LayoutKind> disposition des types valeur.
+ <xref:System.Runtime.InteropServices.LayoutKind> les types de disposition sont gérés par le common language runtime. La disposition de ces types peut changer d’une version à l’autre de la .NET Framework, ce qui va rompre les clients COM qui attendent une disposition spécifique. Notez que si l' <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribut n’est pas spécifié, les [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] compilateurs C#, et C++ spécifient la <xref:System.Runtime.InteropServices.LayoutKind> disposition des types valeur.
 
  Sauf indication contraire, tous les types non génériques publics sont visibles par COM ; tous les types non publics et génériques sont invisibles pour COM. Toutefois, pour réduire les faux positifs, cette règle exige que la visibilité COM du type soit explicitement indiquée. l’assembly conteneur doit être marqué avec le <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> défini sur `false` et le type doit être marqué avec le <xref:System.Runtime.InteropServices.ComVisibleAttribute> défini sur `true` .
 
