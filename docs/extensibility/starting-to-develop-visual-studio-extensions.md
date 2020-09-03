@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8745acd9af9009a7206eada7ffb64f95759e8399
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85286191"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Lancement du développement d’extensions Visual Studio
@@ -63,7 +63,7 @@ Dans la pratique, nous avons découvert que les fonctionnalités que la plupart 
 
 - [Shell isolé Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/)
 
-## <a name="what-project-templates-are-provided-by-the-vssdk"></a><a name="BKMK_ProjectTemplate"></a>Quels modèles de projet sont fournis par le VSSDK ?
+## <a name="what-project-templates-are-provided-by-the-vssdk"></a><a name="BKMK_ProjectTemplate"></a> Quels modèles de projet sont fournis par le VSSDK ?
  Les deux principaux types d’extensions sont les VSPackages et les extensions MEF. En général, les extensions VSPackage sont utilisées pour les extensions qui utilisent ou étendent des commandes, des fenêtres outil et des projets. Les extensions MEF permettent d’étendre ou de personnaliser l’éditeur Visual Studio.
 
  Pour les extensions Visual C# et Visual Basic, le VSSDK fournit un modèle de projet VSIX vide que vous pouvez utiliser avec les nouveaux modèles d’élément qui créent des commandes de menu, des fenêtres outil et des extensions d’éditeur. Vous pouvez également utiliser ce modèle pour empaqueter des modèles de projet, des extraits de code et d’autres artefacts à distribuer à d’autres utilisateurs.

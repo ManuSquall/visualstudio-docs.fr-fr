@@ -1,5 +1,5 @@
 ---
-title: FIELD_KIND_EX Microsoft Docs
+title: FIELD_KIND_EX | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f0c13d83f80b311838eca32945462c1f17ca23f4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736878"
 ---
 # <a name="field_kind_ex"></a>FIELD_KIND_EX
-Énumère d’autres types de champs qu’un objet [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) peut contenir. Cette énumération prolonge [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) le FIELD_KIND’énumération.
+Énumère les types de champs supplémentaires qu’un objet [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) peut contenir. Cette énumération étend l’énumération [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) .
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -46,20 +46,20 @@ public enum enum_FIELD_KIND_EX
 
 ## <a name="fields"></a>Champs
 `FIELD_KIND_EX_NONE`\
-Le champ ne contient pas un type étendu.
+Le champ ne contient pas de type étendu.
 
 `FIELD_TYPE_EX_METHODVAR`\
 Le champ contient une variable de méthode.
 
 `FIELD_TYPE_EX_CLASSVAR`\
-Field contient une variable de classe.
+Le champ contient une variable de classe.
 
-## <a name="requirements"></a>Spécifications
-En-tête: Sh.h
+## <a name="requirements"></a>Configuration requise
+En-tête : SH. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Espace de noms : Microsoft. VisualStudio. Debugger. Interop
 
-Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

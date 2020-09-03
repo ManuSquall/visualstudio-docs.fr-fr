@@ -61,10 +61,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: aa647d8a8d52588481d18347cb3400141978bd20
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548029"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>Écriture de code dans l'éditeur de code et de texte
@@ -128,7 +128,7 @@ L’éditeur Visual Studio fournit de nombreuses fonctionnalités facilitant l�
 
 |Commande|Description|
 |-|-|
-|Atteindre\<line number>|(**Edition/Atteindre** ou Ctrl+G) : permet d’accéder à une ligne spécifique dans le document actif.|
+|Atteindre \<line number>|(**Edition/Atteindre** ou Ctrl+G) : permet d’accéder à une ligne spécifique dans le document actif.|
 |Naviguer vers|(**Edition/Naviguer vers** ou Ctrl+,) : recherche un symbole ou un fichier dans la solution active. Cette commande vous aide à recueillir un ensemble approprié de correspondances à partir d’une requête. Vous pouvez rechercher des mots clés contenus dans un symbole en utilisant la casse mixte et des traits de soulignement pour diviser le symbole en mots clés.|
 |Rechercher toutes les références|(menu contextuel) : recherche toutes les références à l’élément sélectionné dans la solution.|
 |Atteindre la définition|(menu contextuel ou F12) : recherche la définition de l’élément sélectionné.|
@@ -194,7 +194,7 @@ Cette fonctionnalité est particulièrement utile si votre code contient des nom
 
 - [Options, Text Editor, JavaScript, Formatting](../ide/reference/options-text-editor-javascript-formatting.md)
 
-## <a name="in-this-section"></a>Dans cette section
+## <a name="in-this-section"></a>Contenu de cette section
 
 - [Recherche et remplacement de texte](../ide/finding-and-replacing-text.md)
 
@@ -206,7 +206,7 @@ Cette fonctionnalité est particulièrement utile si votre code contient des nom
 
 - [Conseils de productivité](../ide/productivity-tips-for-visual-studio.md)
 
-- [Using IntelliSense](../ide/using-intellisense.md)
+- [Utilisation d’IntelliSense](../ide/using-intellisense.md)
 
 - [Personnalisation de l’éditeur](../ide/customizing-the-editor.md)
 

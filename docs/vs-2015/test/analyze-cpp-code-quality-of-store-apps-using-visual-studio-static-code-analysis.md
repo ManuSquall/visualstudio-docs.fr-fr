@@ -1,5 +1,5 @@
 ---
-title: C++applications du magasin d’analyse du code statique
+title: Applications du magasin d’analyse du code statique C++
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -12,23 +12,23 @@ author: alexhomer1
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c20fe8bccdf48cf307dda72a085b3c2a72f1d0cf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672707"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analyser la qualité du code C++ des applications du Windows Store à l'aide de l'analyse statique du code Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")
+S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.png « windows_and_phone_content »)
 
  L'outil d'analyse du code dans les éditions Visual Studio Express examine votre code à la recherche d'un ensemble d'erreurs courantes et du non-respect d'une bonne approche en matière de programmation. Les avertissements de l'analyse du code diffèrent des erreurs et des avertissements du compilateur, car l'analyse du code recherche des modèles de code spécifiques qui sont valides, mais qui peuvent créer des problèmes pour vous ou d'autres utilisateurs de votre code. L'analyse du code peut également trouver des erreurs dans votre code qui seraient difficiles à détecter en testant. L'exécution de l'outil d'analyse du code à intervalles réguliers pendant le processus de développement peut améliorer la qualité de votre application terminée.
 
 > [!NOTE]
 > Dans Visual Studio Ultimate, Visual Studio Premium et Visual Studio Professional, vous pouvez utiliser les fonctionnalités complètes des outils d'analyse du code. Consultez [Analyse de la qualité des applications à l’aide des outils d’analyse du code](https://msdn.microsoft.com/library/dd264897.aspx) dans MSDN Library.
 
-## <a name="BKMK_Run"></a> Exécution de l’analyse du code
+## <a name="running-code-analysis"></a><a name="BKMK_Run"></a> Exécution de l’analyse du code
  Pour exécuter l'analyse du code sur votre solution Visual Studio :
 
 - Dans le menu **Générer**, choisissez **Exécuter l’analyse du code sur la solution**.
@@ -41,12 +41,12 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 
    La solution est compilée et l'analyse du code s'exécute. Les résultats s'affichent dans la fenêtre Analyse du code.
 
-   ![Fenêtre analyse du code](../test/media/ca-cpp-collapsed.png "CA_CPP_Collapsed")
+   ![Fenêtre d'analyse du code](../test/media/ca-cpp-collapsed.png "CA_CPP_Collapsed")
 
-## <a name="BKMK_Analyze"></a> Analyse et résolution des avertissements de l’analyse du code
+## <a name="analyzing-and-resolving-code-analysis-warnings"></a><a name="BKMK_Analyze"></a> Analyse et résolution des avertissements de l’analyse du code
  Pour analyser un avertissement spécifique, choisissez le titre de l'avertissement dans la fenêtre Analyse du code. L'avertissement se développe pour afficher des informations détaillées sur le problème. Quand cela est possible, l'analyse du code affiche le numéro de la ligne et la logique de l'analyse qui a conduit à l'avertissement.
 
- ![Avertissement de l’analyse du code développé](../test/media/ca-cpp-expanded-callout.png "CA_CPP_Expanded_Callout")
+ ![Avertissements liés à l'analyse du code développé](../test/media/ca-cpp-expanded-callout.png "CA_CPP_Expanded_Callout")
 
  Quand vous développez un avertissement, les lignes de code à l’origine de l’avertissement sont mises en surbrillance dans l’éditeur de Visual Studio Code.
 
@@ -57,7 +57,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 > [!TIP]
 > Vous pouvez réexécuter l'analyse du code dans la fenêtre Analyse du code. Choisissez le bouton **Analyser**, puis choisissez la portée de l’analyse. Vous pouvez réexécuter l'analyse sur la solution complète ou sur un projet sélectionné.
 
-## <a name="BKMK_Suppress"></a> Suppression des avertissements de l’analyse du code
+## <a name="suppressing-code-analysis-warnings"></a><a name="BKMK_Suppress"></a> Suppression des avertissements d’analyse du code
  Vous pouvez décider, dans certaines situations, de ne pas corriger un avertissement de l'analyse du code. Vous pouvez décider que la résolution de l'avertissement requiert un recodage trop important par rapport à la probabilité que le problème se produise dans une implémentation réelle de votre code. Vous pouvez également estimer que l'analyse utilisée dans l'avertissement est inadéquate pour le contexte particulier. Vous pouvez supprimer des avertissements individuels afin qu'ils n'apparaissent plus dans la fenêtre Analyse du code.
 
  Pour supprimer un avertissement :
@@ -68,14 +68,14 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 
 3. Choisissez de **Supprimer le message**, puis choisissez **Dans la source**.
 
-   La suppression d’un message insère `#pragma(warning:`*WarningId*`)` qui supprime l’avertissement pour la ligne de code.
+   La suppression d’un message insère `#pragma(warning:` *warningld,* `)` qui supprime l’avertissement pour la ligne de code.
 
-## <a name="BKMK_Search"></a> Explorer et filtrer les résultats d’analyse du code
+## <a name="searching-and-filtering-code-analysis-results"></a><a name="BKMK_Search"></a> Recherche et filtrage des résultats de l’analyse du code
  Vous pouvez effectuer une recherche dans de longues listes de messages d'avertissement, et vous pouvez filtrer les avertissements dans les solutions à projets multiples.
 
- ![Rechercher et filtrer la fenêtre d’analyse du code](../test/media/ca-searchfilter.png "CA_SearchFilter")
+ ![Rechercher et filtrer la fenêtre d'analyse du code](../test/media/ca-searchfilter.png "CA_SearchFilter")
 
-## <a name="Warnings"></a> Avertissements de l’analyse du code C++
+## <a name="c-code-analysis-warnings"></a><a name="Warnings"></a> Avertissements d’analyse du code C++
  L'analyse du code génère les avertissements suivants pour le code C++ :
 
 |                                      Règle                                      |                                                  Description                                                  |

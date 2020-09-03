@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 44146613fb43b6fc4269741ba09b94629f888d5f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72673072"
 ---
 # <a name="add-new-connections"></a>Ajouter de nouvelles connexions
@@ -23,7 +23,7 @@ Vous pouvez tester votre connexion à une base de données ou à un service, et 
 
  Explorateur de serveurs installé par défaut dans Visual Studio. Peut être utilisé pour tester les connexions et afficher SQL Server bases de données, toutes les autres bases de données qui ont un fournisseur ADO.NET installé et certains services Azure. Affiche également des objets de bas niveau tels que les compteurs de performances système, les journaux des événements et les files d’attente de messages. Si une source de données n’a pas de fournisseur ADO.NET, elle n’apparaît pas ici, mais vous pouvez toujours l’utiliser à partir de Visual Studio en vous connectant par programme.
 
- Cloud Explorer installer cette fenêtre manuellement en tant qu’extension Visual Studio en sélectionnant **outils**  > **extensions et mises à jour**  > **Online**  > **Galerie Visual Studio**. Fournit des fonctionnalités spécialisées pour l’exploration et la connexion aux services Azure.
+ Cloud Explorer installer cette fenêtre manuellement en tant qu’extension Visual Studio en sélectionnant **Outils**  >  **extensions et mises à jour**dans la  >  **Online**  >  **Galerie Visual Studio**en ligne. Fournit des fonctionnalités spécialisées pour l’exploration et la connexion aux services Azure.
 
  Explorateur d’objets SQL Server installé avec SQL Server Data Tools et visible dans le menu **affichage** . Si vous ne le voyez pas, accédez à **programmes et fonctionnalités** dans le panneau de configuration, recherchez Visual Studio, puis sélectionnez **modifier** pour réexécuter le programme d’installation après avoir activé la case à cocher pour SQL Server Data Tools. Utilisez **Explorateur d’objets SQL Server** pour afficher les bases de données SQL (si elles ont un fournisseur ADO.net), créer des bases de données, modifier des schémas, créer des procédures stockées, récupérer des chaînes de connexion, afficher les données, et bien plus encore. Les bases de données SQL qui n’ont pas de fournisseur ADO.NET installé ne s’affichent pas ici, mais vous pouvez toujours vous y connecter par programmation.
 

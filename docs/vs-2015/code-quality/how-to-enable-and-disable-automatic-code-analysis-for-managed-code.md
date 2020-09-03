@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: d87cc57b31e63ae7aafa53c335df2b56f86a0409
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658099"
 ---
 # <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>Comment : activer et désactiver l'analyse du code automatique pour le code managé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous pouvez configurer l’analyse du code pour qu’elle s’exécute avant chaque génération d’un projet de code managé. Vous pouvez définir différentes propriétés d’analyse du code pour chaque configuration de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].
+Vous pouvez configurer l’analyse du code pour qu’elle s’exécute avant chaque génération d’un projet de code managé. Vous pouvez définir différentes propriétés d’analyse du code pour chaque [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] Configuration.
 
 ### <a name="to-enable-or-disable-automatic-code-analysis"></a>Pour activer ou désactiver l’analyse du code automatique
 
@@ -29,4 +29,4 @@ Vous pouvez configurer l’analyse du code pour qu’elle s’exécute avant cha
 
 3. Spécifiez le type de build dans la **configuration** et la plateforme cible dans la **plateforme**.
 
-4. Pour activer ou désactiver l’analyse du code automatique, activez ou désactivez la case à cocher **activer l’analyse du code sur la build (définit la constante CODE_ANALYSIS)** .
+4. Pour activer ou désactiver l’analyse du code automatique, activez ou désactivez la case à cocher **activer l’analyse du code sur la build (définit CODE_ANALYSIS constante)** .

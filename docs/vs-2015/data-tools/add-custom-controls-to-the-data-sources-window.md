@@ -24,10 +24,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 402e62602d99492730d3094965e76964cd5f8218
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72673094"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Ajouter des contrôles personnalisés à la fenêtre Sources de données
@@ -38,9 +38,9 @@ Quand vous faites glisser un élément de la fenêtre **sources de données** ve
  Pour plus d’informations sur la sélection des contrôles liés aux données à créer pour les éléments dans la fenêtre **sources de données** , consultez [définir le contrôle à créer lors d’une opération de glisser-déplacer à partir de la fenêtre sources de données](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
 > [!NOTE]
-> Selon vos paramètres actifs ou votre édition, les boîtes de dialogue et les commandes de menu affichées peuvent différer de celles qui sont décrites dans l'aide. Pour modifier vos paramètres, dans le menu **Outils** , sélectionnez **paramètres d’importation et d’exportation**. Pour plus d’informations, consultez [Paramètres Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Selon vos paramètres actifs ou votre édition, les boîtes de dialogue et les commandes de menu affichées peuvent différer de celles qui sont décrites dans l'aide. Pour modifier vos paramètres, dans le menu **Outils** , sélectionnez **paramètres d’importation et d’exportation**. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
-## <a name="customizinglist"></a>Personnaliser la liste des contrôles pouvant être liés pour un type de données
+## <a name="customize-the-list-of-bindable-controls-for-a-data-type"></a><a name="customizinglist"></a> Personnaliser la liste des contrôles pouvant être liés pour un type de données
  Pour ajouter ou supprimer des contrôles dans la liste des contrôles disponibles pour les éléments de la fenêtre **sources de données** qui ont un type de données spécifique, procédez comme suit.
 
 #### <a name="to-select-the-controls-to-be-listed-for-a-data-type"></a>Pour sélectionner les contrôles à répertorier pour un type de données
@@ -57,11 +57,11 @@ Quand vous faites glisser un élément de la fenêtre **sources de données** ve
 
 4. Dans la boîte de dialogue, sélectionnez un type de données dans la liste déroulante **type de données** .
 
-    - Pour personnaliser la liste des contrôles pour une table ou un objet, sélectionnez **[liste]** .
+    - Pour personnaliser la liste des contrôles pour une table ou un objet, sélectionnez **[liste]**.
 
     - Pour personnaliser la liste des contrôles d’une colonne d’une table ou d’une propriété d’un objet, sélectionnez le type de données de la colonne ou de la propriété dans le magasin de données sous-jacent.
 
-    - Pour personnaliser la liste des contrôles afin d’afficher les objets de données qui ont des formes définies par l’utilisateur, sélectionnez **[autre]** . Par exemple, sélectionnez **[autre]** si votre application possède un contrôle personnalisé qui affiche des données provenant de plusieurs propriétés d’un objet particulier.
+    - Pour personnaliser la liste des contrôles afin d’afficher les objets de données qui ont des formes définies par l’utilisateur, sélectionnez **[autre]**. Par exemple, sélectionnez **[autre]** si votre application possède un contrôle personnalisé qui affiche des données provenant de plusieurs propriétés d’un objet particulier.
 
 5. Dans la zone **contrôles associés** , sélectionnez chaque contrôle que vous souhaitez utiliser pour le type de données sélectionné, ou désactivez la sélection des contrôles que vous souhaitez supprimer de la liste.
 
@@ -74,7 +74,7 @@ Quand vous faites glisser un élément de la fenêtre **sources de données** ve
 
      Les contrôles que vous avez sélectionnés dans la zone **contrôles associés** s’affichent désormais dans le menu déroulant de l’élément.
 
-## <a name="addingcontrols"></a>Addcontrols à la liste des contrôles associés pour un type de données
+## <a name="addcontrols-to-the-list-of-associated-controls-for-a-data-type"></a><a name="addingcontrols"></a> Addcontrols à la liste des contrôles associés pour un type de données
  Si vous souhaitez associer un contrôle à un type de données, mais que le contrôle n’apparaît pas dans la zone **contrôles associés** , vous devez ajouter le contrôle à la liste. Le contrôle doit se trouver dans la solution actuelle ou dans un assembly référencé. Elle doit également être disponible dans la **boîte à outils**et avoir un attribut qui spécifie le comportement de liaison de données du contrôle.
 
 #### <a name="to-add-controls-to-the-list-of-associated-controls"></a>Pour ajouter des contrôles à la liste des contrôles associés
@@ -85,11 +85,11 @@ Quand vous faites glisser un élément de la fenêtre **sources de données** ve
 
     |Attribut|Description|
     |---------------|-----------------|
-    |<xref:System.ComponentModel.DefaultBindingPropertyAttribute>|Implémentez cet attribut sur des contrôles simples qui affichent une seule colonne (ou propriété) de données, par exemple un <xref:System.Windows.Forms.TextBox>.|
-    |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|Implémentez cet attribut sur des contrôles qui affichent des listes (ou tables) de données, telles qu’un <xref:System.Windows.Forms.DataGridView>.|
-    |<xref:System.ComponentModel.LookupBindingPropertiesAttribute>|Implémentez cet attribut sur des contrôles qui affichent des listes (ou tables) de données, mais qui doivent également présenter une seule colonne ou propriété, telle qu’une <xref:System.Windows.Forms.ComboBox>.|
+    |<xref:System.ComponentModel.DefaultBindingPropertyAttribute>|Implémentez cet attribut sur des contrôles simples qui affichent une seule colonne (ou propriété) de données, par exemple <xref:System.Windows.Forms.TextBox> .|
+    |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|Implémentez cet attribut sur des contrôles qui affichent des listes (ou tables) de données, telles qu’un <xref:System.Windows.Forms.DataGridView> .|
+    |<xref:System.ComponentModel.LookupBindingPropertiesAttribute>|Implémentez cet attribut sur des contrôles qui affichent des listes (ou tables) de données, mais qui doivent également présenter une seule colonne ou propriété, telle qu’un <xref:System.Windows.Forms.ComboBox> .|
 
-2. Par Windows Forms, dans la boîte de dialogue **options** , ouvrez la page Personnalisation de l' **interface utilisateur des données** . Ou, pour WPF, ouvrez la boîte de dialogue **personnaliser la liaison de contrôle** . Pour plus d’informations, consultez [Personnalisation de la liste des contrôles pouvant être liés pour un type de données](#customizinglist).
+2. Par Windows Forms, dans la boîte de dialogue      **options** , ouvrez la page Personnalisation de l' **interface utilisateur des données** . Ou, pour WPF, ouvrez la boîte de dialogue **personnaliser la liaison de contrôle** . Pour plus d’informations, consultez [Personnalisation de la liste des contrôles pouvant être liés pour un type de données](#customizinglist).
 
 3. Dans la zone **contrôles associés** , le contrôle que vous venez d’ajouter à la **boîte à outils** doit maintenant apparaître.
 

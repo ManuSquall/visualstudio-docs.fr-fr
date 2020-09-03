@@ -9,10 +9,10 @@ caps.latest.revision: 25
 ms.author: crdun
 manager: crdun
 ms.openlocfilehash: 27f69a3295deb8d3335878acc865314635af7c0e
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86387302"
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Résolution des problèmes liés à l’émulateur Visual Studio pour Android
@@ -59,7 +59,7 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
 
 - [Ressources de support](#Support)
 
-## <a name="before-you-start"></a><a name="BeforeYouStart"></a>Avant de commencer
+## <a name="before-you-start"></a><a name="BeforeYouStart"></a> Avant de commencer
  Avant de commencer le dépannage, il peut être utile de consulter les rubriques suivantes :
 
 - [Configuration requise pour l’émulateur Visual Studio pour Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)
@@ -115,7 +115,7 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
 
 - En règle générale, tout facteur qui contribue à de mauvaises performances sur le système. Commencez le dépannage par le composant dont le sous-score est le plus faible dans l'Indice de performance Windows, que vous trouverez dans la page Informations et outils de performances du Panneau de configuration.
 
-## <a name="emulator-fails-to-start"></a><a name="NoStart2"></a>L’émulateur ne parvient pas à démarrer
+## <a name="emulator-fails-to-start"></a><a name="NoStart2"></a> L’émulateur ne parvient pas à démarrer
  Si l’émulateur ne démarre pas alors qu’il fonctionnait auparavant, effectuez les étapes suivantes. Si vous utilisez l’émulateur pour la première fois, consultez [Emulator fails to start (first use)](#NoStart) avant d’essayer ces étapes.
 
 - Supprimez toutes les autres instances Hyper-V de l’émulateur.
@@ -267,7 +267,7 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
 
   Redémarrez l'émulateur. Il doit maintenant être connecté à ADB et aux outils Android associés.
 
-## <a name="emulator-stops-responding-because-it-couldnt-set-up-the-udp-port"></a><a name="XamarinPlayer"></a>L’émulateur ne répond plus car il n’a pas pu configurer le port UDP
+## <a name="emulator-stops-responding-because-it-couldnt-set-up-the-udp-port"></a><a name="XamarinPlayer"></a> L’émulateur ne répond plus car il n’a pas pu configurer le port UDP
  Ce problème peut se produire à cause d’une incompatibilité avec Xamarin Player. Si l’émulateur semble cesser de répondre ou si ce message d’erreur s’affiche, «l’émulateur ne peut pas se connecter au système d’exploitation de l’appareil : impossible de configurer le port UDP.  Certaines fonctionnalités peuvent être désactivées. », il peut s’agir d’un problème de compatibilité. Effectuez les étapes suivantes.
 
 1. Désinstallez Xamarin Player.
@@ -278,7 +278,7 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
 
 4. Après avoir supprimé toutes les cartes réseau (autres que les cartes réseau physiques), essayez de désinstaller/réinstaller Hyper-V.
 
-## <a name="cannot-attach-debugger-to-a-xamarin-project"></a><a name="Skylake"></a>Impossible d’attacher le débogueur à un projet Xamarin
+## <a name="cannot-attach-debugger-to-a-xamarin-project"></a><a name="Skylake"></a> Impossible d’attacher le débogueur à un projet Xamarin
  Si vous utilisez Windows 10 avec des processeurs Intel Skylake, il arrive que les applications Xamarin ne puissent pas s’exécuter dans l’émulateur ou que le débogueur Visual Studio ne puisse pas s’y attacher. Cela est dû à un problème entre Hyper-V et les processeurs Skylake. Pour résoudre le problème, procédez comme suit.
 
 1. Ouvrez le Gestionnaire Hyper-V et sélectionnez la machine virtuelle correspondant au profil d’émulateur utilisé.
@@ -293,16 +293,16 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
 
 6. Redémarrez le service (sous **Actions**), puis réessayez.
 
-## <a name="emulator-fails-to-run-app-that-uses-google-play-services"></a><a name="GooglePlay"></a>L’émulateur ne parvient pas à exécuter une application qui utilise Google Play Services
+## <a name="emulator-fails-to-run-app-that-uses-google-play-services"></a><a name="GooglePlay"></a> L’émulateur ne parvient pas à exécuter une application qui utilise Google Play Services
  L'émulateur n'est pas fourni avec les bibliothèques nécessaires pour les services Google Play. En revanche, il prend en charge l'installation par glisser-déplacer des fichiers zip pouvant être flashés.
 
-## <a name="drag-and-drop-of-a-file-apk-or-flashable-zip-file-does-not-work"></a><a name="DragAndDrop"></a>Le glisser-déplacer d’un fichier APK ou d’un fichier zip pouvant être flashé ne fonctionne pas
+## <a name="drag-and-drop-of-a-file-apk-or-flashable-zip-file-does-not-work"></a><a name="DragAndDrop"></a> Le glisser-déplacer d’un fichier APK ou d’un fichier zip pouvant être flashé ne fonctionne pas
  L'émulateur utilise ADB.exe pour faciliter le transfert de fichier quand vous glissez-déplacez un fichier à l'écran. Si vous rencontrez une erreur quand vous essayez de glisser-déplacer un fichier, cela indique probablement que l'émulateur n'est pas connecté à ADB.exe. Pour résoudre le problème, suivez les étapes décrites dans [Visual Studio se bloque en essayant de déployer l’application sur l’émulateur, ou l’émulateur n’apparaît pas comme cible de débogage dans d’autres IDE](#ADB).
 
 ## <a name="resolution-of-screenshot-is-incorrect"></a><a name="Resolution"></a> La résolution de capture d'écran est incorrecte
  Si vous prenez une capture d'écran à l'aide de l'onglet Capture d'écran de la fenêtre **Outils supplémentaires** et que l'image résultante a une taille inattendue, vous devrez peut-être ajuster le niveau de zoom de l'écran avant de choisir **Capturer**. L'émulateur prend des captures d'écran à la résolution de l'écran sur votre moniteur d'ordinateur hôte.
 
-## <a name="emulator-fails-to-render-opengl-content"></a><a name="OpenGL"></a>L’émulateur ne parvient pas à afficher le contenu OpenGL
+## <a name="emulator-fails-to-render-opengl-content"></a><a name="OpenGL"></a> L’émulateur ne parvient pas à afficher le contenu OpenGL
  L'émulateur affiche le contenu OpenGL à l'aide du GPU de votre ordinateur hôte et utilise le projet ANGLE pour convertir ces appels vers et à partir de DirectX. Si votre application s'affiche correctement sur un appareil mais de façon incorrecte sur l'émulateur, il est probable que l'appareil atténue un appel OpenGL incorrect (par exemple, à l'aide de variables de nuanceur qui ne correspondent pas).
 
 ## <a name="emulator-does-not-respond-to-multi-touch-gestures"></a><a name="Multitouch"></a> L'émulateur ne répond pas aux entrées tactiles multipoints

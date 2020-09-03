@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 49248c6209f9e56e51551f6cd3d4af66ecac8b56
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72735496"
 ---
 # <a name="graphics-frame-validation"></a>Validation des frames graphiques
@@ -28,10 +28,10 @@ Cliquez sur le bouton **exécuter la validation** dans le coin supérieur gauche
 | **Colonne** | **Description** |
 |------------| - |
 | ID d'événement | ID qui correspond à une entrée dans la fenêtre [liste des événements](graphics-event-list.md) . |
-| Gravité | Endommagement, erreur, avertissement, information ou message. |
+| severity | Endommagement, erreur, avertissement, information ou message. |
 | Category | Application définie, divers, initialisation, nettoyage, compilation, création d’État, paramètre d’État, obtention d’État, exécution, manipulation de ressources, nuanceur, redondant et inutilisé. |
-| Message | Message associé à l’événement. |
-| événement | Événement associé à l’erreur ou à l’avertissement. |
+| Message | Message associé à l'événement. |
+| Événement | Événement associé à l’erreur ou à l’avertissement. |
 
 ## <a name="see-also"></a>Voir aussi
 [Graphics Diagnostics (débogage DirectX Graphics)](visual-studio-graphics-diagnostics.md)

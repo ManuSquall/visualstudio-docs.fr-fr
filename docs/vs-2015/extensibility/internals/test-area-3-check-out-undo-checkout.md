@@ -1,5 +1,5 @@
 ---
-title: 'Zone de test 3 : Vérification-annuler l’extraction | Microsoft Docs'
+title: 'Zone de test 3 : extraire-annuler l’extraction | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,126 +14,126 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ab4389c936b71ba8ccbb21b22d0a5e533282026d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155998"
 ---
-# <a name="test-area-3-check-outundo-checkout"></a>Zone de test 3 : Découvrez / annuler l’extraction
+# <a name="test-area-3-check-outundo-checkout"></a>Zone de test 3 : extraire/annuler l’extraction
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Cette zone de test plug-in de contrôle de code source comporte articles de modification et de restauration à partir de la banque des versions via le **Check Out** et **annuler l’extraction** commandes.  
+Cette zone de test du plug-in de contrôle de code source couvre la modification et le rétablissement des éléments de la Banque des versions via les commandes **extraire** et **Annuler l’extraction** .  
   
- **Découvrez**: Marque un élément dans la banque des versions comme extrait, modifie la copie locale en lecture/écriture.  
+ **Extraire**: marque un élément de la Banque des versions comme extrait, modifie la copie locale en lecture/écriture.  
   
- **Annuler l’extraction**: Marque un élément dans la banque des versions en tant qu’archivé, rétablit une copie locale à l’état avant l’extraction (en fonction des options).  
+ **Annuler l’extraction**: marque un élément dans la Banque des versions comme archivé, restaure la copie locale à l’état antérieur à l’extraction (en fonction des options).  
   
-## <a name="command-menu-access"></a>Accès au Menu de commande  
- Ce qui suit [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] menu chemins d’environnement de développement intégré sont utilisés dans les cas de test.  
+## <a name="command-menu-access"></a>Accès au menu commande  
+ Les [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] chemins d’accès au menu de l’environnement de développement intégré suivants sont utilisés dans les cas de test.  
   
-##### <a name="check-out"></a>Vérifier :  
+##### <a name="check-out"></a>Modifier :  
   
-- **Fichier**, **contrôle de code Source**, **extraire**.  
+- **Fichier**, **contrôle de code source**, **extraire**.  
   
 - **Fichier**, **extraire**.  
   
 - Menu contextuel, **extraire**.  
   
-- Annuler l’extraction : **Fichier**, **contrôle de code Source**, **annuler l’extraction**.  
+- Annuler l’extraction : **fichier**, **contrôle de code source**, **Annuler l’extraction**.  
   
-## <a name="common-expected-behavior"></a>Comportement attendu commun  
+## <a name="common-expected-behavior"></a>Comportement attendu courant  
   
-- Après l’opération d’extraction, l’ou les fichiers cibles et/ou les dossiers sont marqués comme extrait dans la banque des versions.  
+- Après l’opération d’extraction, les fichiers et/ou dossiers cibles sont marqués comme extraits dans la Banque des versions.  
   
-- La banque des versions attributs de l’extraction à l’utilisateur approprié.  
+- La Banque des versions attribut l’extraction à l’utilisateur approprié.  
   
-- La date et heure de l’extraction sont corrects (par les paramètres de l’utilisateur).  
+- La date et l’heure de l’extraction sont correctes (selon les paramètres de l’utilisateur).  
   
 ## <a name="test-cases"></a>Cas de test  
- Voici les cas de test spécifiques pour la zone de test de validation/annulation de l’extraction.  
+ Les éléments suivants sont des cas de test spécifiques pour la zone de test extraction/annulation de l’extraction.  
   
-### <a name="case-3a-check-out"></a>Cas 3 : Extraire  
+### <a name="case-3a-check-out"></a>Cas 3a : extraire  
  Cette section se concentre sur le fonctionnement de la commande d’extraction.  
   
-|Action|Étapes de test|Résultats attendus pour vérifier|  
+|Action|Étapes de test|Résultats attendus à vérifier|  
 |------------|----------------|--------------------------------|  
-|Vérifiez Out exclusif commun un projet client|1.  Créez un projet client.<br />2.  Ajouter la solution au contrôle de code source.<br />3.  Découvrez l’ensemble du projet exclusivement (**fichier**, **Check Out**).|Extraction se produit.|  
-|Vérifiez en mode exclusif (commun), un système de fichiers ou d’un projet Web IIS local|1.  Définir la connexion du serveur Web dans le fichier de partage dans **outils**, **Options**, **projets**, **paramètres Web**.<br />2.  Créez un projet web.<br />3.  Ajouter la solution au contrôle de code source.<br />4.  Découvrez l’ensemble du projet exclusivement (**fichier**, **contrôle de code Source**, **Check Out**).|Extraction se produit.|  
-|Extraire des éléments de solution dans une solution (nouvelle méthode pour la gestion des autres fichiers)|1.  Créer une solution vide.<br />2.  Ajouter la solution au contrôle de code source.<br />3.  Découvrez la solution.<br />4.  Ajouter plusieurs éléments de solution.<br />5.  Vérifiez tous les éléments nouvellement ajouté.<br />6.  Sélectionner plusieurs éléments de solution.<br />7.  Découvrez les éléments sélectionnés (Menu contextuel, **Check Out**).|Les fichiers sélectionnés ont été extraits.|  
-|Extraire la Version locale (si le plug-in de test prend en charge cette fonctionnalité)|1.  Utilisateur 1 : Créez un projet client.<br />2.  Utilisateur 1 : Ajouter la solution au contrôle de code source.<br />3.  Utilisateur 2 : Ouvrez la solution à partir du contrôle de code source vers un autre emplacement.<br />4.  Utilisateur 2 : Extraire un fichier.<br />5.  Utilisateur 2 : Modifier le fichier.<br />6.  Utilisateur 2 : Archivez le fichier.<br />7.  Utilisateur 1 : Extraire la version locale du fichier (vérifier le **extraire la Version locale** option dans avancée **Check Out** boîte de dialogue).|Version locale du fichier est extrait.<br /><br /> Modifications apportées par l’utilisateur 2 ne sont pas appliquées au fichier de l’utilisateur 1.|  
+|Extraire un projet client en mode exclusif (COE)|1. Créez un projet client.<br />2. Ajoutez la solution au contrôle de code source.<br />3. Vérifiez l’intégralité du projet exclusivement (**fichier**, **extraire**).|L’extraction se produit.|  
+|Extraire en mode exclusif (COE) un système de fichiers ou un projet Web IIS local|1. Définissez la connexion au serveur Web sur le partage de fichiers dans **Outils**, **options**, **projets**, **paramètres Web**.<br />2. Créez un projet Web.<br />3. Ajoutez la solution au contrôle de code source.<br />4. Vérifiez l’intégralité du projet exclusivement (**fichier**, **contrôle de code source**, **extraire**).|L’extraction se produit.|  
+|Extraire les éléments de solution dans une solution (nouvelle méthode pour gérer d’autres fichiers)|1. Créez une solution vide.<br />2. Ajoutez la solution au contrôle de code source.<br />3. consultez la solution.<br />4. ajoutez plusieurs éléments de solution.<br />5. archivez tous les éléments qui viennent d’être ajoutés.<br />6. Sélectionnez plusieurs éléments de solution.<br />7. consultez les éléments sélectionnés (menu contextuel, **extraire**).|Les fichiers sélectionnés sont extraits.|  
+|Extraire la version locale (si le plug-in test prend en charge cette fonctionnalité)|1. utilisateur 1 : créer un projet client.<br />2. utilisateur 1 : ajouter la solution au contrôle de code source.<br />3. utilisateur 2 : Ouvrez la solution à partir du contrôle de code source vers un autre emplacement.<br />4. utilisateur 2 : extraire un fichier.<br />5. utilisateur 2 : modifiez le fichier.<br />6. utilisateur 2 : archiver le fichier.<br />7. utilisateur 1 : extraire la version locale du fichier (consultez l’option avancé de la **version locale** de l’extraction dans la boîte de dialogue **extraire** ).|La version locale du fichier est extraite.<br /><br /> Les modifications apportées par l’utilisateur 2 ne sont pas appliquées au fichier utilisateur 1.|  
   
-### <a name="case-3b-disconnected-check-out"></a>3 b de cas : Déconnecté d’extraction  
- Fonctionne en mode déconnecté permet aux utilisateurs un niveau de prise en charge du contrôle source continue lorsque ne pas directement attaché à une banque de versions. Pour cela, vous devez toutes les informations pertinentes sur la solution inscrite et les projets de mise en cache localement.  
+### <a name="case-3b-disconnected-check-out"></a>Cas 3b : extraction déconnectée  
+ Le fonctionnement en mode déconnecté permet aux utilisateurs d’effectuer un certain niveau de prise en charge du contrôle de code source lorsqu’ils ne sont pas attachés directement à une banque des versions. Pour ce faire, il faut mettre en cache localement toutes les informations pertinentes sur la solution et les projets inscrits.  
   
- L’extraction exclusive des opérations peut se produire uniquement lorsque vous êtes connecté dans le magasin de contrôle source. L’extraction partagée des opérations peut se produire à tout moment, si connecté ou déconnecté. Par conséquent, quand vous êtes déconnecté à partir de la banque des versions, uniquement le **vérifier partagé** (COS) commande est activée. Tout en étant déconnecté, **annuler l’extraction** est désactivée, car l’ancienne version ne peut pas être récupérée pour remplacer les modifications apportées par l’utilisateur.  
+ Les opérations d’extraction exclusive ne peuvent se produire qu’en cas de connexion au magasin de contrôle de code source. Les opérations d’extraction partagées peuvent se produire à tout moment, qu’elles soient connectées ou déconnectées. Par conséquent, une fois déconnectée de la Banque des versions, seule la commande **extraire les Télépartages** (COS) est activée. Lorsqu’elle est déconnectée, l’annulation de l' **extraction** est désactivée, car l’ancienne version ne peut pas être récupérée pour remplacer les modifications apportées par l’utilisateur.  
   
- Lorsque l’utilisateur se reconnecte à la version stocker, les États d’extraction de toutes les solutions inscrites et projets sont synchronisées. Cela effectue les mises à jour nécessaires dans le magasin des extractions effectuée par l’utilisateur a. Une fois que la synchronisation a eu lieu, l’utilisateur est en mesure de continuer à travailler comme d’habitude (connecté).  
+ Lorsque l’utilisateur se reconnecte à la Banque des versions, les États d’extraction de tous les projets et solutions inscrites sont synchronisés. Cela effectue les mises à jour nécessaires du magasin pour les extractions effectuées par l’utilisateur. Une fois la synchronisation terminée, l’utilisateur peut continuer à fonctionner normalement (connecté).  
   
 #### <a name="expected-behavior"></a>Comportement attendu  
   
-- Impossible d’utiliser **Out exclusivement** commande tout en étant déconnecté à partir de la banque des versions.  
+- Impossible d’utiliser la commande **extraire en mode exclusif** quand elle est déconnectée de la Banque des versions.  
   
-- Impossible d’utiliser **annuler l’extraction** commande tout en étant déconnecté à partir de la banque des versions.  
+- Impossible d’utiliser la commande **Annuler l’extraction** lorsqu’elle est déconnectée de la Banque des versions.  
   
-- **Partagé Check Out** commande fonctionne.  
+- La commande d’extraction **partagée** fonctionne.  
   
-|Action|Étapes de test|Résultats attendus pour vérifier|  
+|Action|Étapes de test|Résultats attendus à vérifier|  
 |------------|----------------|--------------------------------|  
-|Tout en étant déconnecté, extraire un fichier, puis se connecter pour la synchronisation|1.  Déconnecter un projet contrôlé à l’aide de la boîte de dialogue Modifier le contrôle de code Source (**fichier**, **contrôle de code Source**, **contrôle de code Source modification**l).<br />2.  Extraire un fichier.<br />3.  Cliquez sur Extraire (déconnecté) dans la boîte de dialogue d’avertissement.<br />4.  Modifiez le fichier.<br />5.  Se connecter à l’aide de la boîte de dialogue Modifier le contrôle de code Source.<br />6.  Obtenir la dernière Version du fichier modifié.|Comportement attendu commun|  
+|En cas de déconnexion, retirez un fichier, puis connectez-vous pour la synchronisation|1. Déconnectez un projet contrôlé à l’aide de la boîte de dialogue Modifier le contrôle de code source (**fichier**, **contrôle de code source**, **modifier la source code**l).<br />2. Vérifiez le fichier.<br />3. cliquez sur extraire (déconnecté) dans la boîte de dialogue d’avertissement.<br />4. modifiez le fichier.<br />5. Connectez-vous à l’aide de la boîte de dialogue Modifier le contrôle de code source.<br />6. Procurez-vous la dernière version du fichier modifié.|Comportement attendu courant|  
   
-### <a name="case-3c-query-editquery-save-qeqs"></a>Cas 3c : Modifier/la requête d’enregistrement (QEQS)  
- Éléments sous contrôle de code source sont suivis pour les modifications, les modifications, et enregistre pour aider les utilisateurs de facilement gérer leurs fichiers. Lorsque vous modifiez un article contrôlé est « activé », QEQS intercepte la modification a été lancée et demande à l’utilisateur s’il souhaite extraire le fichier pour le modifier. En fonction de **outils**, **Options** paramètres, l’utilisateur est obligé de vérifier extraire le fichier afin de modifier ou peuvent être autorisés à modifier une copie en mémoire et d’extraire plus tard. Si l’utilisateur **outils**, **Options** paramètre n’est pas défini pour afficher la boîte de dialogue d’extraction et simplement extrayez-le, puis que l’utilisateur effectue sa modification, le fichier extrait automatiquement, si possible.  
+### <a name="case-3c-query-editquery-save-qeqs"></a>Cas 3C : modification de requête/requête d’enregistrement (provenant QEQS)  
+ Les éléments sous contrôle de code source sont suivis pour les modifications, les modifications et les enregistrements pour aider les utilisateurs à gérer facilement leurs fichiers. Lorsqu’un élément contrôlé qui est « archivé » est modifié, provenant QEQS intercepte la tentative de modification et demande à l’utilisateur s’il souhaite extraire le fichier pour le modifier. En fonction des **Outils**, des paramètres d' **options** , l’utilisateur est contraint d’extraire le fichier pour le modifier ou peut être autorisé à modifier une copie en mémoire et à extraire ultérieurement. Si le paramètre **Outils**et **options** de l’utilisateur n’est pas défini pour afficher la boîte de dialogue Extraire et si vous souhaitez simplement l’extraire, lorsque l’utilisateur effectue sa modification, le fichier est automatiquement extrait chaque fois que cela est possible.  
   
 #### <a name="expected-behavior"></a>Comportement attendu  
   
-- Après l’opération d’extraction, l’ou les fichiers cibles et/ou les dossiers sont marqués comme extrait dans la banque des versions.  
+- Après l’opération d’extraction, les fichiers et/ou dossiers cibles sont marqués comme extraits dans la Banque des versions.  
   
-- La banque des versions attributs de l’extraction à l’utilisateur approprié.  
+- La Banque des versions attribut le contrôle à l’utilisateur approprié.  
   
-- La date et heure de l’extraction sont corrects (par les paramètres de l’utilisateur).  
+- L’heure et la date de l’extraction sont correctes (selon les paramètres de l’utilisateur).  
   
-- La copie locale du fichier cible ou du dossier est accessible en écriture.  
+- La copie locale du fichier ou dossier cible est accessible en écriture.  
   
-|Action|Étapes de test|Résultats attendus pour vérifier|  
+|Action|Étapes de test|Résultats attendus à vérifier|  
 |------------|----------------|--------------------------------|  
-|Modifier le fichier texte qui est archivé|1.  Créez un projet contenant un fichier texte.<br />2.  Ajouter la solution au contrôle de code source.<br />3.  Définissez **outils**, **Options**, **contrôle de code Source**, **autoriser la modification pendant qu’en lecture seule sur le disque des fichiers** à désactivé.<br />4.  Définissez **outils**, **Options**, **contrôle de code Source**, **invite pour consultez** dans le **lorsqu’elle est activée les fichiers sont modifiés** zone de liste déroulante.<br />5.  Définissez **outils**, **Options**, **contrôle de code Source**, **invite pour consultez** dans le **lorsqu’elle est activée les fichiers sont enregistrés** zone de liste déroulante.<br />6.  Ouvrez le fichier texte dans l’éditeur, essayez de taper le nouveau texte dans le fichier. Si cette étape réussit, passez à l’étape suivante.<br />7.  Cliquez sur **Annuler** dans le **extraire pour modification** boîte de dialogue. Si cette étape réussit, passez à l’étape suivante.<br />8.  Définissez **outils**, **Options**, **contrôle de code Source**, **autoriser la modification pendant qu’en lecture seule sur le disque des fichiers** cochée.<br />9. Ouvrez le fichier de projet dans l’éditeur, essayez de taper le nouveau texte dans le fichier. Si cette étape réussit, passez à l’étape suivante.<br />10. Cliquez sur **modifier** dans le **extraire pour modification** boîte de dialogue. Si cette étape réussit, passez à l’étape suivante.<br />11. Modifiez le fichier texte et tentez de l’enregistrer.|`Result of step 6:`<br /><br /> Consultez pour la boîte de dialogue Modifier s’affiche.<br /><br /> `Result of step 7:`<br /><br /> Le fichier est inchangé.<br /><br /> `Result of step 9:`<br /><br /> Consultez pour la boîte de dialogue Modifier s’affiche.<br /><br /> `Result of step 10:`<br /><br /> Vous pouvez modifier le fichier de projet en mémoire.<br /><br /> `Result of step 11:`<br /><br /> Enregistrer, l’extraction sur Enregistrer la boîte de dialogue apparaît.|  
-|Modifier un fichier de solution qui est archivé|Répétez les étapes comme décrit dans la précédente de test, mais au lieu de modifier un fichier texte, modifiez la solution en modifiant les propriétés de la solution.|Même en tant que test précédent|  
-|Modifier un fichier de projet est archivé|Répétez les étapes comme décrit dans la précédente de test, mais au lieu de modifier un fichier texte, modifiez le projet en modifiant les propriétés du projet.|Identique au test précédent.|  
+|Modifier le fichier texte archivé|1. Créez un projet contenant un fichier texte.<br />2. Ajoutez la solution au contrôle de code source.<br />3. Définissez les **Outils**, les **options**, **le contrôle de code source**, **autoriser la modification des fichiers en lecture seule sur le disque** à la désactivation.<br />4. définir les **Outils**, les **options**, **le contrôle de code source**, **demander l’extraction** dans la zone de liste déroulante quand les **fichiers archivés sont modifiés** .<br />5. Définissez les **Outils**, les **options**, **le contrôle de code source**, **invite à extraire** dans la zone de liste déroulante **quand les fichiers archivés sont enregistrés** .<br />6. Ouvrez le fichier texte dans l’éditeur, puis essayez de taper un nouveau texte dans le fichier. Si cette étape se déroule correctement, passez à l’étape suivante.<br />7. cliquez sur **Annuler** dans la boîte **de dialogue Extraire pour modification** . Si cette étape se déroule correctement, passez à l’étape suivante.<br />8. définir les **Outils**, les **options**, **le contrôle de code source**, **autoriser la modification des fichiers en lecture seule sur le disque** à la vérification.<br />9. ouvrir le fichier projet dans l’éditeur, essayer de taper un nouveau texte dans le fichier. Si cette étape se déroule correctement, passez à l’étape suivante.<br />10. cliquez sur **modifier** dans la boîte **de dialogue Extraire pour modification** . Si cette étape se déroule correctement, passez à l’étape suivante.<br />11. modifiez le fichier texte et essayez de l’enregistrer.|`Result of step 6:`<br /><br /> La boîte de dialogue Extraire pour modification s’affiche.<br /><br /> `Result of step 7:`<br /><br /> Le fichier est inchangé.<br /><br /> `Result of step 9:`<br /><br /> La boîte de dialogue Extraire pour modification s’affiche.<br /><br /> `Result of step 10:`<br /><br /> Vous pouvez modifier le fichier projet en mémoire.<br /><br /> `Result of step 11:`<br /><br /> Lors de l’enregistrement, la boîte de dialogue extraire à l’enregistrement s’affiche.|  
+|Modifier un fichier solution archivé|Répétez les étapes décrites dans la section test précédent, mais au lieu de modifier un fichier texte, modifiez la solution en modifiant les propriétés de la solution.|Identique au test précédent|  
+|Modifier un fichier projet archivé|Répétez les étapes décrites dans la section test précédent, mais au lieu de modifier un fichier texte, modifiez Project en modifiant les propriétés du projet.|Identique au test précédent.|  
   
-### <a name="case-3d-silent-check-out"></a>Cas 3d : Extraction en mode silencieux  
- Cette vérification d’arrière-plan de sous-zone des scénarios où la **Check Out** boîte de dialogue n’apparaît pas par l’utilisateur **outils**, **Options**, **des paramètres de contrôle de code Source** .  
+### <a name="case-3d-silent-check-out"></a>Cas 3D : extraction en mode silencieux  
+ Cette sous-zone aborde les scénarios d’extraction dans lesquels la boîte de dialogue **extraire** n’apparaît pas pour les **Outils**, les **options**et les paramètres de **contrôle de code source**de l’utilisateur.  
   
 #### <a name="expected-behavior"></a>Comportement attendu  
   
-- Après l’opération d’extraction, l’ou les fichiers cibles et/ou les dossiers sont marqués comme extrait dans la banque des versions.  
+- Après l’opération d’extraction, les fichiers et/ou dossiers cibles sont marqués comme extraits dans la Banque des versions.  
   
-- La banque des versions attributs de l’extraction à l’utilisateur approprié.  
+- La Banque des versions attribut le contrôle à l’utilisateur approprié.  
   
-- La date et heure de l’extraction est correct (selon les paramètres de l’utilisateur).  
+- L’heure et la date de l’extraction sont correctes (selon les paramètres de l’utilisateur).  
   
-- La copie locale du fichier cible ou du dossier est accessible en écriture.  
+- La copie locale du fichier ou dossier cible est accessible en écriture.  
   
-|Action|Étapes de test|Résultats attendus pour vérifier|  
+|Action|Étapes de test|Résultats attendus à vérifier|  
 |------------|----------------|--------------------------------|  
-|Extraction en mode silencieux pour un fichier|1.  Définissez **outils**, **Options**, **contrôle de code Source** à **extraire les fichiers automatiquement sur Modifier**.<br />2.  Créer un nouveau projet avec un fichier.<br />3.  Ajouter la solution au contrôle de code source.<br />4.  Extraire le fichier.|Fichier est extrait en mode silencieux (aucune interface utilisateur).|  
-|Extraction en mode silencieux pour un projet|1.  Définissez **outils**, **Options**, **contrôle de code Source** à **extraire les fichiers automatiquement sur Modifier**.<br />2.  Créer un nouveau projet.<br />3.  Ajouter la solution au contrôle de code source.<br />4.  Extraire le projet.|Fichier est extrait en mode silencieux (aucune interface utilisateur).|  
+|Extraction silencieuse d’un fichier|1. Définissez les **Outils**, les **options**, **le contrôle de code source** pour **valider automatiquement les fichiers lors de la modification**.<br />2. Créez un projet avec un fichier.<br />3. Ajoutez la solution au contrôle de code source.<br />4. consultez le fichier.|Le fichier est extrait en mode silencieux (aucune interface utilisateur).|  
+|Extraction silencieuse d’un projet|1. Définissez les **Outils**, les **options**, **le contrôle de code source** pour **valider automatiquement les fichiers lors de la modification**.<br />2. Créez un nouveau projet.<br />3. Ajoutez la solution au contrôle de code source.<br />4. consultez le projet.|Le fichier est extrait en mode silencieux (aucune interface utilisateur).|  
   
-### <a name="case-3e-undo-check-out"></a>3e cas : Annuler l’extraction  
- **Annuler l’extraction** est utilisé pour annuler d’un fichier d’état d’extraction et d’éviter d’archiver les modifications apportées au fichier.  
+### <a name="case-3e-undo-check-out"></a>Cas 3e : annuler l’extraction  
+ L' **option Annuler** l’extraction est utilisée pour annuler l’état d’extraction d’un fichier et éviter d’archiver les modifications apportées au fichier.  
   
 #### <a name="expected-behavior"></a>Comportement attendu  
   
-- La valeur par défaut est basé sur l’utilisateur **extraire la Version locale** paramètre. Si l’utilisateur a choisi d’extraire la version locale, la valeur par défaut pour l’annulation de l’extraction est toujours revenir à la version extraite.  
+- La valeur par défaut est basée sur le paramètre de **version locale d’extraction** de l’utilisateur. Si l’utilisateur a choisi d’extraire la version locale, la valeur par défaut pour annuler l’extraction consiste à toujours revenir à la version extraite.  
   
-- Après l’acceptation de la restauration, les icônes dans **l’Explorateur de solutions** sont mises à jour d’affectée fichiers et l’élément est supprimé de la **archivages en attente** fenêtre.  
+- Après acceptation de l’annulation, les icônes de **Explorateur de solutions** sont mises à jour pour les fichiers affectés et l’élément est supprimé de la fenêtre **archivages en attente** .  
   
-|Action|Étapes de test|Résultats attendus pour vérifier|  
+|Action|Étapes de test|Résultats attendus à vérifier|  
 |------------|----------------|--------------------------------|  
-|Annuler l’extraction d’un seul fichier qui est extrait en mode exclusif|1.  Créez un projet client.<br />2.  Ajouter la solution au contrôle de code source.<br />3.  Extraire un fichier exclusivement.<br />4.  Modifier le fichier.<br />5.  Annuler l’extraction (**fichier**, **contrôle de code Source**, **annuler l’extraction**).|Comportement attendu commun.|  
-|Annuler l’extraction d’un seul fichier qui est extrait en mode partagé|1.  Créez un projet client.<br />2.  Ajouter la solution au contrôle de code source.<br />3.  Extraire un fichier partagé.<br />4.  Modifier le fichier.<br />5.  Annuler l’extraction (**fichier**, **contrôle de code Source**, **annuler l’extraction**).|Comportement attendu commun.|  
-|Annuler l’extraction d’un projet après l’ajout de fichiers au projet|1.  Créer un nouveau projet et l’ajouter au contrôle de code source.<br />2.  Extraire le projet.<br />3.  Ajoutez un fichier au projet.<br />4.  Annuler l’extraction du projet.|Fichier ajouté est supprimé du projet dans l’Explorateur de solutions.<br /><br /> Projet est n’est plus extrait.|  
-|Annuler l’extraction d’un projet après la suppression de fichiers à partir du projet|1.  Créer un nouveau projet et l’ajouter au contrôle de code source.<br />2.  Extraire le projet.<br />3.  Supprimer un fichier à partir du projet.<br />4.  Annuler l’extraction du projet.|Fichier supprimé s’affiche sous le projet dans l’Explorateur de solutions.<br /><br /> Projet est n’est plus extrait.|  
+|Annuler l’extraction d’un seul fichier extrait en mode exclusif|1. Créez un projet client.<br />2. Ajoutez la solution au contrôle de code source.<br />3. extraire un fichier en mode exclusif.<br />4. modifiez le fichier.<br />5. annuler l’extraction (**fichier**, **contrôle de code source**, **Annuler l’extraction**).|Comportement attendu courant.|  
+|Annuler l’extraction d’un fichier unique qui est extrait partagé|1. Créez un projet client.<br />2. Ajoutez la solution au contrôle de code source.<br />3. extraire un fichier partagé.<br />4. modifiez le fichier.<br />5. annuler l’extraction (**fichier**, **contrôle de code source**, **Annuler l’extraction**).|Comportement attendu courant.|  
+|Annuler l’extraction d’un projet après l’ajout de fichier (s) au projet|1. Créez un projet et ajoutez-le au contrôle de code source.<br />2. consultez le projet.<br />3. Ajoutez un fichier au projet.<br />4. annulez l’extraction du projet.|Le fichier ajouté est supprimé du projet dans Explorateur de solutions.<br /><br /> Le projet n’est plus extrait.|  
+|Annuler l’extraction d’un projet après la suppression du ou des fichiers du projet|1. Créez un projet et ajoutez-le au contrôle de code source.<br />2. consultez le projet.<br />3. supprimer un fichier du projet.<br />4. annulez l’extraction du projet.|Le fichier supprimé apparaît sous le projet dans Explorateur de solutions.<br /><br /> Le projet n’est plus extrait.|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Guide de test pour les plug-ins de contrôle de code source](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

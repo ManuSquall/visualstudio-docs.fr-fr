@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6d9bdfdb23d199c50b8d7ec6520964043dee8aa6
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72735519"
 ---
 # <a name="graphics-log-document"></a>Document de journal Graphics
@@ -24,7 +24,7 @@ Le document journal de graphisme est l’enregistrement des événements graphiq
 
  Voici comment se présente un document journal de graphisme dans Graphics Analyzer :
 
- ![Journal de graphisme contenant deux frames capturés.](media/gfx_diag_demo_graphics_log_orientation.png "gfx_diag_demo_graphics_log_orientation")
+ ![Journal des graphiques contenant deux frames capturés.](media/gfx_diag_demo_graphics_log_orientation.png "gfx_diag_demo_graphics_log_orientation")
 
 ## <a name="understanding-graphics-log-documents"></a>Présentation des documents journaux de graphisme
  En utilisant Graphics Analyzer pour examiner un document journal de graphisme, vous pouvez visualiser les effets des événements Direct3D qui se sont produits sur la cible de rendu pendant la capture. Vous pouvez localiser avec précision les régions de la cible de rendu qui contiennent la sortie inattendue. Quand vous sélectionnez un pixel dans la région affectée, vous pouvez utiliser Graphics Diagnostics pour l'inspecter, ainsi que ses nuanceurs, les événements Direct3D qui l'ont affecté, la pile des appels de l'application qui ont conduit à ces événements, puis les objets DirectX qui prennent en charge ces événements. Vous pouvez utiliser ces informations pour diagnostiquer les problèmes de rendu dans votre jeu ou application.
@@ -49,7 +49,7 @@ Le document journal de graphisme est l’enregistrement des événements graphiq
 
  **Informations Direct3D** Répertorie des informations sur les fonctionnalités matérielles et pilotes de la carte graphique qui a été utilisée pendant la session de capture.
 
-|Property|Description|
+|Propriété|Description|
 |--------------|-----------------|
 |**Format de couleur XR 10 bits**|**True** si le format de couleur XR 10 bits est pris en charge ; sinon, **False**.|
 |**DirectCompute CS 4.x**|**True** si Compute Shader 4.0 est pris en charge ; sinon, **False**.|
@@ -61,7 +61,7 @@ Le document journal de graphisme est l’enregistrement des événements graphiq
 
  **Afficher des informations** Répertorie des informations sur la carte graphique qui a été utilisée pendant la session de capture.
 
-|Property|Description|
+|Propriété|Description|
 |--------------|-----------------|
 |**Description**|Chaîne de description de la carte vidéo.|
 |**Afficher la mémoire**|Quantité de mémoire installée sur la carte vidéo.|
@@ -71,15 +71,15 @@ Le document journal de graphisme est l’enregistrement des événements graphiq
 
  **Fichier d’expérimentation** Répertorie des informations sur le fichier d’expérimentation associé à la session de capture.
 
-|Property|Description|
+|Propriété|Description|
 |--------------|-----------------|
-|**Chemin**|Chemin d’accès du fichier .vsglog. **Remarque :**  Dans le cadre de la capture héritée, cette propriété n’est pas utilisée.|
+|**Chemin d’accès**|Chemin d’accès du fichier .vsglog. **Remarque :**  Dans le cadre de la capture héritée, cette propriété n’est pas utilisée.|
 
  **Informations sur le module** Répertorie le nom et la version des bibliothèques de liens dynamiques (dll) qui ont été chargés par l’application pendant la session de capture.
 
  **Informations système** Répertorie des informations sur le matériel et le système d’exploitation qui ont hébergé l’application pendant la session de capture.
 
-|Property|Description|
+|Propriété|Description|
 |--------------|-----------------|
 |**Mémoire**|Quantité de mémoire installée sur l'ordinateur.|
 |**Architecture du système d’exploitation**|Architecture d'UC cible du système d'exploitation.|
@@ -89,21 +89,21 @@ Le document journal de graphisme est l’enregistrement des événements graphiq
 
  **Application cible** Répertorie des informations sur l’application qui fait l’objet de la session de capture.
 
-|Property|Description|
+|Propriété|Description|
 |--------------|-----------------|
 |**Date/heure dernière modification**|Date et heure de génération de l'application.|
-|**Chemin**|Chemin d'accès de l'application.|
-|**ID du processus**|ID de processus donné à l'application.|
+|**Chemin d’accès**|Chemin d'accès de l'application.|
+|**ID de processus**|ID de processus donné à l'application.|
 |**Version**|Version de l'application.|
 
  **Fichier journal VSG** Répertorie des informations sur le document du journal de graphisme.
 
-| Property | Description |
+| Propriété | Description |
 |------------------------| - |
 | **Créé par** | Nom de l'application qui a créé le document journal de graphisme. Par exemple, si la session de capture a été initialisée à partir de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (capture manuelle), la valeur de cette propriété est [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. |
 | **Heure de début de la session** | Date et heure de début de la session de capture. |
-| **Size** | Taille du document journal de graphisme. |
+| **Taille** | Taille du document journal de graphisme. |
 
 ## <a name="see-also"></a>Voir aussi
-- [Procédure pas à pas : objets manquants en raison de l’ombrage de vertex](walkthrough-missing-objects-due-to-vertex-shading.md)
+- [Procédure pas à pas : objets manquants en raison de Vertex Shader](walkthrough-missing-objects-due-to-vertex-shading.md)
 - [Procédure pas à pas : débogage des erreurs de rendu dues à l’ombrage](walkthrough-debugging-rendering-errors-due-to-shading.md)

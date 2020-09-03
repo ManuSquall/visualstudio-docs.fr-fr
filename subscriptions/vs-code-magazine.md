@@ -8,10 +8,10 @@ ms.date: 03/25/2020
 ms.topic: how-to
 description: En savoir plus sur l’avantage CODE magazine inclus dans votre abonnement Visual Studio.
 ms.openlocfilehash: c7b56074ea9a48f4d94af5c7d79cd93dc2c4a3b8
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86387172"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>Magazine de CODE inclus dans les abonnements Visual Studio
@@ -21,7 +21,7 @@ CODE magazine est un magazine de développement de logiciels indépendant qui co
 ## <a name="activation-steps"></a>Étapes d’activation
 Le processus de configuration de votre abonnement CODE magazine est simple.  Procédez comme suit :
 
-1. Consultez[https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
+1. Consultez [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
 2. Recherchez la vignette CODE magazine dans la section développement professionnel ou éducation de votre portail, puis cliquez sur **obtenir du code**.
    > [!div class="mx-imgBorder"]
    > ![Vignette CODE magazine](_img/vs-code-magazine/vs-code-magazine-tile.png "Vignette CODE magazine")

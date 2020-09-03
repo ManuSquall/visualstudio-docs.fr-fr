@@ -1,5 +1,5 @@
 ---
-title: Types de CMD dans Le concepteur de classe
+title: Typedefs C++ dans Concepteur de classes
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,15 +14,15 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 4c57382809b7730df2d7c674c24902d70ccab647
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75590694"
 ---
-# <a name="c-typedefs-in-class-designer"></a>Types de CMD dans Class Designer
+# <a name="c-typedefs-in-class-designer"></a>Typedefs C++ dans Concepteur de classes
 
-Les déclarations [de Typedef](/cpp/cpp/aliases-and-typedefs-cpp#typedefs) créent une ou plusieurs couches d’indirection entre un nom et son type sous-jacent. Le **Concepteur de classes** prend en charge les types typedef C++ qui sont déclarés avec le mot clé `typedef`, par exemple :
+Les instructions [typedef](/cpp/cpp/aliases-and-typedefs-cpp#typedefs) créent une ou plusieurs couches d’indirection entre un nom et son type sous-jacent. Le **Concepteur de classes** prend en charge les types typedef C++ qui sont déclarés avec le mot clé `typedef`, par exemple :
 
 ```cpp
 typedef class coord
@@ -68,7 +68,7 @@ typedef struct mystructtag
 
 ## <a name="unnamed-typedefs"></a>Typedefs sans nom
 
-Bien que vous puissiez déclarer un typedef sans nom, le **Concepteur de classes** n’utilise pas le nom de la balise que vous spécifiez. Le **Concepteur de classes** utilise le nom généré par **l’affichage de classes**. Par exemple, la déclaration suivante est valide, mais elle apparaît dans **Class View** et **Class Designer** comme objet nommé **__unnamed**:
+Bien que vous puissiez déclarer un typedef sans nom, le **Concepteur de classes** n’utilise pas le nom de la balise que vous spécifiez. Le **Concepteur de classes** utilise le nom généré par **l’affichage de classes**. Par exemple, la déclaration suivante est valide, mais elle apparaît dans **affichage de classes** et **Concepteur de classes** sous la forme d’un objet nommé **__unnamed**:
 
 ```cpp
 typedef class coord
@@ -84,5 +84,5 @@ typedef class coord
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Travailler avec le code CMD](working-with-visual-cpp-code.md)
+- [Utiliser du code C++](working-with-visual-cpp-code.md)
 - [Typedefs](/cpp/cpp/aliases-and-typedefs-cpp#typedefs)

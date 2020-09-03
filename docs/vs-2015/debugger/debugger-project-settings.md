@@ -21,10 +21,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0953b68989b36dbe85466c71760f75e71498a181
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189568"
 ---
 # <a name="debugger-project-settings"></a>Paramètres du projet du débogueur
@@ -35,26 +35,26 @@ Certains paramètres de projet affectent également le débogage. Ces paramètre
  Cette section décrit les options disponibles et la manière de les définir.  
   
 ## <a name="in-this-section"></a>Dans cette section  
- [Guide pratique pour spécifier les paramètres du débogueur](../debugger/how-to-specify-debugger-settings.md)  
+ [Comment : spécifier les paramètres du débogueur](../debugger/how-to-specify-debugger-settings.md)  
  Décrit les paramètres du débogueur dans la boîte de dialogue **Options** .  
   
- [Guide pratique pour définir des configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md)  
+ [Comment : définir des configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md)  
  Décrit les paramètres **Debug** et **Release** et la manière de basculer de l'un à l'autre.  
   
  [Paramètres de projet pour une configuration Debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)  
  Répertorie les propriétés disponibles dans la boîte de dialogue **Pages de propriétés** de projets C ou C++.  
   
- [Paramètres de projet pour des configurations de débogage C#](../debugger/project-settings-for-csharp-debug-configurations.md)  
+ [Paramètres de projet pour des configurations Debug C#](../debugger/project-settings-for-csharp-debug-configurations.md)  
  Répertorie les propriétés disponibles dans la boîte de dialogue **Pages de propriétés** de projets C# .  
   
- [Paramètres des pages de propriétés pour les projets web](../debugger/property-pages-settings-for-web-projects.md)  
+ [Paramètres des pages de propriétés pour les projets Web](../debugger/property-pages-settings-for-web-projects.md)  
  Répertorie les propriétés disponibles dans la boîte de dialogue **Pages de propriétés** de projets Web.  
   
  [Paramètres de projet pour une configuration Debug Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)  
  Répertorie les propriétés disponibles dans la boîte de dialogue **Pages de propriétés** de projets [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] .  
   
-## <a name="related-sections"></a>Rubriques connexes  
- [Spécifier les fichiers de symbole (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
+## <a name="related-sections"></a>Sections connexes  
+ [Spécifier les fichiers de symboles (.pdb) et les fichiers source](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
  Indique comment le débogueur utilise des fichiers de symboles et des fichiers sources pour afficher des informations pour le débogage.  
   
  [Déboguer des applications dans Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)  

@@ -14,10 +14,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 74fed5f0dcbac45f603f16743eb2635fcf35292a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548146"
 ---
 # <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018 : application 32 bits s'exécutant aux limites de la mémoire managée du processus
@@ -32,7 +32,7 @@ ms.locfileid: "85548146"
 
  Lorsque vous effectuez un profilage à l’aide de la méthode d’échantillonnage, de mémoire .NET ou de conflit des ressources, vous devez collecter au moins 10 échantillons pour déclencher cette règle.
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Les données système collectées pendant le profilage indiquent que les tas de mémoire .NET Framework approchent de la taille maximale autorisée pour les tas managés d’un processus 32 bits. Cette taille maximale est une valeur par défaut. Elle est basée sur la quantité totale d’espace d’adressage de processus pouvant être allouée pour les octets privés. La valeur signalée correspond à la valeur maximale des tas qui a été observée quand le processus profilé était actif. Effectuez un nouveau profilage à l’aide de la méthode de profilage de mémoire .NET et optimisez la manière dont l’application utilise les ressources managées.
 
  Si la taille des tas managés approche de la limite définie par défaut, il se peut que vous deviez appeler plus fréquemment le processus de garbage collection automatique. La surcharge de la gestion de la mémoire sera ainsi augmentée.
@@ -55,7 +55,7 @@ ms.locfileid: "85548146"
 
 - Optimisez la manière dont l’application utilise les ressources de mémoire managée.
 
-   -ou-
+   - ou -
 
 - Allégez les contraintes architecturales associées à la taille maximale de la mémoire virtuelle d’un processus 32 bits.
 

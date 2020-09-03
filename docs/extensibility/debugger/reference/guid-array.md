@@ -1,5 +1,5 @@
 ---
-title: GUID_ARRAY Microsoft Docs
+title: GUID_ARRAY | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e163674b5622146ef1a270920dc7458dce2e3993
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736642"
 ---
 # <a name="guid_array"></a>GUID_ARRAY
-Décrit une gamme d’identifiants uniques pour les moteurs de débogé disponibles.
+Décrit un tableau d’identificateurs uniques pour les moteurs de débogage disponibles.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -43,20 +43,20 @@ public struct GUID_ARRAY
 
 ## <a name="members"></a>Membres
 `dwCount`\
-Nombre d’identifiants uniques dans le tableau.
+Nombre d’identificateurs uniques dans le tableau.
 
 `Members`\
-Array qui contient des identificateurs uniques.
+Tableau qui contient des identificateurs uniques.
 
 ## <a name="remarks"></a>Notes
-Cette structure est retournée par la méthode [GetEngineFilter.](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md)
+Cette structure est retournée par la méthode [GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md) .
 
-## <a name="requirements"></a>Spécifications
-En-tête: Msdbg.h
+## <a name="requirements"></a>Configuration requise
+En-tête : msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Espace de noms : Microsoft. VisualStudio. Debugger. Interop
 
-Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Structures et unions](../../../extensibility/debugger/reference/structures-and-unions.md)

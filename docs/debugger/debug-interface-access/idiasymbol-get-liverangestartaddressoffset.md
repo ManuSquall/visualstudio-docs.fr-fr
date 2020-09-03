@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2563afe5c5323415c5d4c9d7f0b0fa89583f9736
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85463035"
 ---
 # <a name="idiasymbolget_liverangestartaddressoffset"></a>IDiaSymbol::get_liveRangeStartAddressOffset
@@ -41,7 +41,7 @@ HRESULT get_liveRangeStartAddressOffset ( 
 > [!NOTE]
 > Un code d’erreur retourné signifie que le symbole n’a pas d’informations de plage active.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  L’adresse formée par la section et le décalage est le début de la plage dans laquelle le symbole est valide.
 
  Pour récupérer la partie de l’adresse de la section, utilisez [IDiaSymbol :: get_liveRangeStartAddressSection](../../debugger/debug-interface-access/idiasymbol-get-liverangestartaddresssection.md).

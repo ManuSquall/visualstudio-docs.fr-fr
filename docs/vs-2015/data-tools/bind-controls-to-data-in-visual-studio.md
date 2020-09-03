@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 31e2086126e9a17554c80b53858205e83fd504fd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72673037"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Lier des contrôles à des données dans Visual Studio
@@ -38,11 +38,11 @@ Vous pouvez afficher des données pour les utilisateurs de votre application en 
 
 |Source de données|Prise en charge du glisser-déplacer dans le **Concepteur Windows Forms**|Prise en charge du glisser-déplacer dans le **Concepteur WPF**|Prise en charge du glisser-déplacer dans le **Concepteur Silverlight**|
 |-----------------|---------------------------------------------------------------|-----------------------------------------------------|-------------------------------------------------------------|
-|Groupe de données|Oui|Oui|Non|
+|Dataset|Oui|Oui|Non|
 |Entity Data Model|Oui<sup>1</sup>|Oui|Oui|
-|Classes LINQ to SQL|Non<sup>2</sup>|Non<sup>2</sup>|Non<sup>2</sup>|
+|Classes LINQ to SQL|Non <sup>2</sup>|Non <sup>2</sup>|Non <sup>2</sup>|
 |Services (notamment [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)], les services WCF et les services web)|Oui|Oui|Oui|
-|Objet|Oui|Oui|Oui|
+|Object|Oui|Oui|Oui|
 |SharePoint|Oui|Oui|Oui|
 
  1. Générez le modèle à l’aide de l’Assistant **Entity Data Model** , puis faites glisser ces objets vers le concepteur.
@@ -59,9 +59,9 @@ Vous pouvez afficher des données pour les utilisateurs de votre application en 
 ## <a name="tasks-involved-in-binding-controls-to-data"></a>Tâches impliquées dans la liaison de contrôles à des données
  Le tableau suivant répertorie certaines des tâches les plus courantes que vous effectuez pour lier des contrôles à des données.
 
-|Tâche|Plus d'informations|
+|Tâche|Informations complémentaires|
 |----------|----------------------|
-|Ouvrez la fenêtre **Sources de données**.|Ouvrez une aire de conception dans l’éditeur, puis choisissez **afficher**  > **sources de données**.|
+|Ouvrez la fenêtre **Sources de données**.|Ouvrez une aire de conception dans l’éditeur, puis choisissez **Afficher**les  >  **sources de données**.|
 |Ajoutez une source de données à votre projet.|[Ajouter de nouvelles sources de données](../data-tools/add-new-data-sources.md)|
 |Définissez le contrôle créé lorsque vous faites glisser un élément de la fenêtre **Sources de données** vers le concepteur.|[Définir le contrôle à créer lors d’une opération de glisser-déplacer à partir de la fenêtre Sources de données](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)|
 |Modifiez la liste des contrôles associés aux éléments dans la fenêtre **Sources de données**.|[Ajouter des contrôles personnalisés à la fenêtre Sources de données](../data-tools/add-custom-controls-to-the-data-sources-window.md)|

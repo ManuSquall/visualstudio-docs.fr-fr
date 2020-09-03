@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fa808e76e6655c5d57108c923b19794d0398b80c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72735573"
 ---
 # <a name="graphics-api-and-memory-statistics"></a>Statistiques de la mémoire et de l’API Graphics
@@ -36,7 +36,7 @@ Cet outil affiche la quantité de mémoire allouée par le pilote graphique pour
 
 ![Statistiques de la mémoire](media/gfx_diag_memory_statistics.png)
 
-La colonne **allocation GPU** affiche la quantité de mémoire utilisée par l’événement affiché dans la colonne d' **événement** .  Vous pouvez également sélectionner l’icône espion ![watch icône ](media/gfx_watch.png) pour afficher l' [historique des ressources](graphics-event-list.md#resource-history) pour l’événement sélectionné.
+La colonne **allocation GPU** affiche la quantité de mémoire utilisée par l’événement affiché dans la colonne d' **événement** .  Vous pouvez également sélectionner l’icône espion icône ![ Espion ](media/gfx_watch.png) pour afficher l' [historique des ressources](graphics-event-list.md#resource-history) de l’événement sélectionné.
 
 Comme avec l’outil statistiques des API, vous pouvez cliquer avec le bouton droit dans la fenêtre pour copier toutes les données au format CSV, qui peuvent être collées dans des éléments tels qu’Excel pour une analyse plus poussée.
 
