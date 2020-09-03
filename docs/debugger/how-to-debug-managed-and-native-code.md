@@ -16,10 +16,10 @@ ms.workload:
 - dotnet
 - cplusplus
 ms.openlocfilehash: 9f3fd94f8c294dce81bc69011e7d6f5fdd505325
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84182636"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Tutoriel : Déboguer du code C# et du code C++ dans la même session de débogage
@@ -28,7 +28,7 @@ Visual Studio vous permet d’activer plusieurs types de débogueur dans une ses
 
 Ce tutoriel montre comment déboguer le code natif d’une application managée, mais vous pouvez également [déboguer le code managé d’une application native](../debugger/how-to-debug-in-mixed-mode.md). Le débogueur prend également en charge d’autres types de débogage en mode mixte, comme le débogage [de code Python et de code natif](../python/debugging-mixed-mode-c-cpp-python-in-visual-studio.md), ainsi que l’utilisation du débogueur de script dans des types d’applications comme ASP.NET.
 
-Dans ce tutoriel, vous allez :
+Ce didacticiel présente les procédures suivantes :
 
 > [!div class="checklist"]
 > * Créer une DLL native simple
@@ -41,7 +41,7 @@ Dans ce tutoriel, vous allez :
 ## <a name="prerequisites"></a>Prérequis
 
 Vous devez disposer de Visual Studio avec les charges de travail suivantes :
-- **Développement Desktop en C++**
+- **Développement Desktop en C++**
 - **Développement .NET Desktop** ou **Développement multiplateforme .NET Core**, selon le type d’application que vous voulez créer.
 
 Si vous n’avez pas Visual Studio, accédez à la page [téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/)pour l'   installer gratuitement.

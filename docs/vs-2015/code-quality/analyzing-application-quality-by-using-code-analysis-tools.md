@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: f8ec0706530cd61653d44533654cf453d25eb42e
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75919069"
 ---
 # <a name="analyzing-application-quality-by-using-code-analysis-tools"></a>Analyse de la qualité des applications à l'aide des outils d'analyse du code
@@ -27,7 +27,7 @@ ms.locfileid: "75919069"
 
 Dans cette section, analyse de la [qualité du code managé](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md) l’analyse du code Visual Studio pour le code managé fournit des informations sur les assemblys managés, notamment les violations des règles de programmation et de conception énoncées dans les règles de conception du Microsoft .NET Framework. Les messages d'avertissement identifient les problèmes de programmation et de conception pertinents et, si possible, fournissent des informations relatives à leur résolution.
 
- [Analyse de laC++ qualité c/code à l’aide](../code-quality/analyzing-c-cpp-code-quality-by-using-code-analysis.md) de l'C++ analyse du code l’outil d’analyse de code c/code fournit auxC++ développeurs des informations sur les erreurs possibles dans leur code c/source. Les erreurs de codage courantes signalées par l'outil sont les dépassements de mémoire tampon, la mémoire désinitialisée, les déréférencements du pointeur null et les fuites de mémoire et de ressources.
+ Analyse [de la qualité du code C/C++ à l’aide de l’analyse du code](../code-quality/analyzing-c-cpp-code-quality-by-using-code-analysis.md) L’outil d’analyse du code C/C++ fournit aux développeurs des informations sur les erreurs possibles dans leur code source C/C++. Les erreurs de codage courantes signalées par l'outil sont les dépassements de mémoire tampon, la mémoire désinitialisée, les déréférencements du pointeur null et les fuites de mémoire et de ressources.
 
  [Utilisation d’ensembles de règles pour regrouper des règles d’analyse du code](../code-quality/using-rule-sets-to-group-code-analysis-rules.md) Sélectionnez et créez des *ensembles de règles* à appliquer à votre projet.
 
@@ -38,11 +38,11 @@ Dans cette section, analyse de la [qualité du code managé](../code-quality/ana
 ### <a name="code-analysis-for-drivers"></a>Analyse du code pour les pilotes
  Les outils d'analyse du code peuvent vous aider à renforcer la stabilité et la fiabilité de votre pilote en analysant systématiquement son code source.
 
- [Analyse de la qualité du pilote à l’aide des outils d’analyse du code](/windows-hardware/drivers/devtest/tools-for-verifying-drivers) L’analyse du code pour les pilotes est un outil de vérification statique au moment de la compilation qui détecte les C++ erreurs de codage de base dans les programmes C et, et comprend un module spécialisé conçu pour détecter les erreurs dans le code du pilote en mode noyau (principalement). Le vérificateur de pilote statique (SDV, Static Driver Verifier) est un outil de vérification statique qui analyse systématiquement le code source des pilotes en mode noyau de Windows. SDV détermine si le pilote interagit correctement avec le noyau du système d'exploitation Windows.
+ [Analyse de la qualité du pilote à l’aide des outils d’analyse du code](/windows-hardware/drivers/devtest/tools-for-verifying-drivers) L’analyse du code pour les pilotes est un outil de vérification statique au moment de la compilation qui détecte les erreurs de codage de base dans les programmes C et C++ et comprend un module spécialisé conçu pour détecter les erreurs dans le code du pilote en mode noyau (principalement). Le vérificateur de pilote statique (SDV, Static Driver Verifier) est un outil de vérification statique qui analyse systématiquement le code source des pilotes en mode noyau de Windows. SDV détermine si le pilote interagit correctement avec le noyau du système d'exploitation Windows.
 
  [Avertissements de l’analyse du code pour les pilotes](/windows-hardware/drivers/devtest/prefast-for-drivers-warnings) Décrit les avertissements signalés par l’analyse du code pour les pilotes lorsqu’il détecte une erreur possible dans le code du pilote.
 
-## <a name="related-tasks"></a>Tâches connexes
+## <a name="related-tasks"></a>Tâches associées
  [Mesure de la complexité et de la facilité de maintenance du code managé](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md) Insérez la description ici.
 
  [Test unitaire de votre code](../test/unit-test-your-code.md) Insérez la description ici.

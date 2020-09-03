@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 693738e1751e580e32d7223d150438717fc63d27
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651040"
 ---
 # <a name="extensions-and-updates-environment-options-dialog-box"></a>Extensions et mises à jour, Environnement, boîte de dialogue Options
@@ -33,7 +33,7 @@ Utilisez cette page pour définir les options selon lesquelles Visual Studio eff
  Pour plus d’informations, consultez [Recherche et utilisation des extensions Visual Studio](../../ide/finding-and-using-visual-studio-extensions.md).
 
 ### <a name="additional-extension-galleries"></a>Galeries d'extensions supplémentaires
- Une fonctionnalité de la version Enterprise qui permet la prise en charge des galeries d'extensions propriétaires. Pour plus d’informations, consultez [Galeries privées](../../extensibility/private-galleries.md).
+ Une fonctionnalité de la version Enterprise qui permet la prise en charge des galeries d'extensions propriétaires. Pour plus d’informations, consultez [galeries privées](../../extensibility/private-galleries.md).
 
 ## <a name="see-also"></a>Voir aussi
  [Environnement, boîte de dialogue Options](../../ide/reference/environment-options-dialog-box.md)

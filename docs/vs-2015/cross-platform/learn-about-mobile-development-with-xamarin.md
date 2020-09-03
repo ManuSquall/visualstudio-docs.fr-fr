@@ -7,16 +7,16 @@ caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
 ms.openlocfilehash: a362bd4eef2a48667c67c03e940e213fc960418b
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75919001"
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>En savoir plus sur le développement pour appareils mobiles avec Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Cette rubrique vous dirige vers des supports de présentation qui vous permettent de comprendre le développement d’applications mobiles multiplateformes avec Xamarin. Si vous n’avez pas encore installé Visual Studio et Xamarin, commencez d’abord le processus [Configurer et installer](../cross-platform/setup-and-install.md) , puis revenez ici pour consulter ces ressources pendant l’exécutant des programmes d’installation.  
+Cette rubrique vous dirige vers des supports de présentation qui vous permettent de comprendre le développement d’applications mobiles multiplateformes avec Xamarin. Si vous n’avez pas encore installé Visual Studio et Xamarin, commencez d’abord le processus [Setup and install](../cross-platform/setup-and-install.md) , puis revenez ici pour consulter ces ressources pendant l’exécutant des programmes d’installation.  
   
 > [!NOTE]
 > Sauf mention contraire, nous vous suggérons de lire d’abord seulement les pages qui sont ici en lien direct, et non pas des pages accessibles indirectement. Si le processus d’installation est en cours d’exécution une fois que vous avez terminé cette liste, n’hésitez pas à revenir en arrière et à explorer d’autres rubriques.  
@@ -86,15 +86,15 @@ Cette rubrique vous dirige vers des supports de présentation qui vous permetten
   
 1. **Émulateur Android.** Selon votre version de Windows, nous vous recommandons d’utiliser l’émulateur Visual Studio pour Android de Microsoft ou l’émulateur de Xamarin. Ces deux émulateurs sont performants et prennent en charge un large éventail de fonctionnalités d’appareil :  
   
-    - **Machines avec Windows 8 ou version ultérieure** : nous vous recommandons fortement d’utiliser l’ [émulateur Visual Studio pour Android](https://www.visualstudio.com/features/msft-android-emulator-vs.aspx)de Microsoft, qui est installé avec Visual Studio.  La vidéo sur l’ [émulateur Visual Studio pour Android](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) (Channel9, 5 minutes et 55 secondes) donne une vue d’ensemble de l’émulateur et montre comment l’utiliser.  
+    - **Machines avec Windows 8 ou version ultérieure** : nous vous recommandons fortement d’utiliser l’ [émulateur Visual Studio pour Android](https://www.visualstudio.com/features/msft-android-emulator-vs.aspx)de Microsoft, qui est installé avec Visual Studio.  L' [émulateur Visual Studio pour Android](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) Video (channel9, 55 secondes) donne une vue d’ensemble et une démonstration.  
   
     - **Windows 7 ou version antérieure sur Mac OS X**: utilisez le lecteur [Xamarin Android Player](/xamarin/android/deploy-test/debugging/debug-on-emulator?tabs=windows) (xamarin.com).  
   
-2. **Simulateur iOS d’Apple.** Pour en savoir plus, consultez [Getting Started with the iOS Simulator](https://developer.apple.com/library/prerelease/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html#//apple_ref/doc/uid/TP40012848-CH5-SW1) (apple.com).  
+2. **Simulateur iOS d’Apple.** .  Pour en savoir plus, consultez [Getting Started with the iOS Simulator](https://developer.apple.com/library/prerelease/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html#//apple_ref/doc/uid/TP40012848-CH5-SW1) (apple.com).  
   
-3. **Émulateur Windows Phone de Microsoft.** Pour en savoir plus, consultez [Émulateur Windows Phone pour Windows Phone 8](https://msdn.microsoft.com/library/dn632391.aspx).  
+3. **Émulateur de Windows Phone de Microsoft.** Pour en savoir plus, consultez [Émulateur Windows Phone pour Windows Phone 8](https://msdn.microsoft.com/library/dn632391.aspx).  
   
-## <a name="components"></a> Deeper Dive: Xamarin Components  
- *10 minutes*  
+## <a name="deeper-dive-xamarin-components"></a><a name="components"></a> Approfondissement : composants Xamarin  
+ *10 minutes*  
   
- De nombreuses capacités étendues sont disponibles pour les applications Xamarin via les composants Xamarin. Vous pouvez trouver le catalogue complet disponible en téléchargement sur [http://components.xamarin.com/](/xamarin/cross-platform/troubleshooting/component-nuget?tabs=windows), qui inclut des composants pour d’autres contrôles d’interface utilisateur, pour l’authentification, pour divers services cloud comme Microsoft Azure, et bien plus encore.
+ De nombreuses capacités étendues sont disponibles pour les applications Xamarin via les composants Xamarin. Vous pouvez trouver le catalogue complet disponible en téléchargement sur [http://components.xamarin.com/](/xamarin/cross-platform/troubleshooting/component-nuget?tabs=windows) , qui comprend des composants pour d’autres contrôles d’interface utilisateur, l’authentification, une variété de services Cloud tels que Microsoft Azure, et bien plus encore.
