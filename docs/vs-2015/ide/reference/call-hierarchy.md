@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 823c61e7625850c680b52cd4ad9386ef0838d340
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660935"
 ---
 # <a name="call-hierarchy"></a>Hiérarchie d'appels
@@ -60,7 +60,7 @@ La hiérarchie d’appels vous permet de parcourir votre code en affichant tous 
 
 |Élément de menu contextuel|Description|
 |-----------------------|-----------------|
-|**Ajouter comme nouvelle racine**|Ajoute le nœud sélectionné au volet d’arborescence en tant que nouveau nœud racine. Cela vous permet de concentrer votre attention sur une sous-arborescence spécifique.|
+|**Ajouter en tant que nouvelle racine**|Ajoute le nœud sélectionné au volet d’arborescence en tant que nouveau nœud racine. Cela vous permet de concentrer votre attention sur une sous-arborescence spécifique.|
 |**Supprimer racine**|Supprime le nœud racine sélectionné du volet d’arborescence. Cette option est disponible uniquement à partir d’un nœud racine.<br /><br /> Vous pouvez également utiliser le bouton de barre d’outils **Supprimer racine** pour supprimer le nœud racine sélectionné.|
 |**Atteindre la définition**|Exécute la commande Atteindre la définition sur le nœud sélectionné. Cela permet de naviguer jusqu’à la définition d’origine pour un appel de membre ou une définition de variable.<br /><br /> Pour exécuter la commande Atteindre la définition, vous pouvez également double-cliquer sur le nœud sélectionné ou appuyer sur F12.|
 |**Rechercher toutes les références**|Exécute la commande Rechercher toutes les références sur le nœud sélectionné. Cela permet de rechercher toutes les lignes de code de votre projet qui référencent une classe ou un membre.<br /><br /> Vous pouvez également utiliser Maj+F12 pour exécuter la commande Rechercher toutes les références sur le nœud sélectionné.|

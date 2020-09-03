@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0291cfe93492c357401ce371d58683c6815aa12b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179046"
 ---
 # <a name="empty-timeline-segment"></a>Segment de chronologie vide
@@ -34,5 +34,5 @@ Dans le visualiseur concurrentiel, la raison d’un segment de chronologie vide 
 - Pour un canal de marqueur, cela signifie qu’aucun marqueur n’a été généré.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Vue Threads](../profiling/threads-view-parallel-performance.md)   
+ [Vue threads](../profiling/threads-view-parallel-performance.md)   
  [Contrôle Zoom (vue Threads)](../profiling/zoom-control-threads-view.md)

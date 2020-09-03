@@ -1,5 +1,5 @@
 ---
-title: FIELD_INFO Microsoft Docs
+title: FIELD_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 6e2089746adecc583d04176afca18ad19826ea53
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736897"
 ---
 # <a name="field_info"></a>FIELD_INFO
@@ -49,29 +49,29 @@ public struct FIELD_INFO {
 
 ## <a name="members"></a>Membres
 `dwFields`\
-Une combinaison de drapeaux de [l’FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) énumération qui précise quels membres sont remplis.
+Combinaison d’indicateurs de l’énumération [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) qui spécifie les membres qui sont remplis.
 
 `bstrFullName`\
-Le nom complet du champ.
+Nom complet du champ.
 
 `bstrName`\
-Le nom court du champ.
+Nom abrégé du champ.
 
 `bstrType`\
 Type du champ.
 
 `dwModifiers`\
-Une combinaison de drapeaux de [l’FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) énumération qui décrit le champ.
+Combinaison d’indicateurs de l’énumération [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) qui décrit le champ.
 
 ## <a name="remarks"></a>Notes
 Cette structure est transmise à la méthode [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) où elle est remplie.
 
 ## <a name="requirements"></a>Spécifications
-En-tête: sh.h
+En-tête : SH. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Espace de noms : Microsoft. VisualStudio. Debugger. Interop
 
-Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Structures et unions](../../../extensibility/debugger/reference/structures-and-unions.md)

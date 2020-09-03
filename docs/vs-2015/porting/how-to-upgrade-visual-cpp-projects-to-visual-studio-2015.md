@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Mise à niveau de projets Visual C++ vers Visual Studio 2015 | Microsoft Docs'
+title: Mise à niveau de projets Visual C++ vers Visual Studio 2015 | Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -13,13 +13,13 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 23461fb1927cfcbf738d2dbcb82e3977b3be265a
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77278729"
 ---
-# <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>Procédure : Mettre à niveau des projets Visual C++ vers Visual Studio 2015
+# <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>Mise à niveau de projets Visual C++ vers Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pour obtenir la documentation la plus récente sur Visual Studio 2017, consultez [Guide du portage et de la mise à niveau de Visual C++](/cpp/porting/visual-cpp-porting-and-upgrading-guide).

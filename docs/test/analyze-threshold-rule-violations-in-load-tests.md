@@ -16,10 +16,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0a20c5e3f30a6d006175e78fc70dab79d0b9bf8a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591279"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analyse des violations de règles de seuil dans les tests de charge dans l’analyseur de test de charge
@@ -46,7 +46,7 @@ Le tableau des violations de seuils affiche les 1 000 premières violations. L
 > [!NOTE]
 > Vous pouvez trier la table en choisissant les en-têtes de colonne.
 
-Pour plus d’informations, voir [Analyser les résultats des tests de charge et les erreurs dans la vue Des tables](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+Pour plus d’informations, consultez [analyser les résultats et les erreurs des tests de charge dans la vue tables](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 ## <a name="view-threshold-violations-in-the-counters-panel"></a>Affichage des violations de seuil dans le volet Compteurs
 
@@ -72,7 +72,7 @@ Dans l’arborescence de compteurs, l’icône de violation de seuil est propag�
 
 Vous pouvez afficher les violations de seuils sur le graphique. Comme sur le volet **Compteurs**, des icônes indiquent les violations de seuil sur le graphique. Les icônes apparaissent sur le graphique à côté du point de données où la violation de seuil s'est produite. Si une violation de seuil se produit sur un compteur qui n’apparaît pas sur le graphique, vous pouvez l’ajouter au graphique en le faisant glisser depuis le volet **Compteurs** vers le graphique.
 
-Pour plus d’informations, voir [Les résultats des tests de charge Analyse dans la vue graphiques](../test/analyze-load-test-results-in-the-graphs-view.md).
+Pour plus d’informations, consultez [analyser les résultats des tests de charge dans la vue graphiques](../test/analyze-load-test-results-in-the-graphs-view.md).
 
 ## <a name="see-also"></a>Voir aussi
 

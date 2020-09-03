@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 38f8f70cc6480554441809e33c4083735600fbbb
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539813"
 ---
 # <a name="projectitemfolder-element"></a>ProjectItemFolder (élément)
@@ -51,7 +51,7 @@ ms.locfileid: "85539813"
 |-------------|-----------------|
 |[ProjectItem](../sharepoint/projectitem-element.md)|Représente un élément de projet SharePoint. Cet élément est l’élément racine requis du fichier *. les données* .|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Pour plus d’informations sur les dossiers mappés, consultez [procédure : ajouter et supprimer des dossiers mappés](../sharepoint/how-to-add-and-remove-mapped-folders.md).
 
 ## <a name="element-information"></a>Informations sur les éléments

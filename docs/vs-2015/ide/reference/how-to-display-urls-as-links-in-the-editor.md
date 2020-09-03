@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 06da9e1a8db332f12a08c1182291c5fcfb4555de
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72602272"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>Guide pratique pour afficher des URL en tant que liens dans l'Éditeur
@@ -32,7 +32,7 @@ Vous pouvez choisir de configurer l’éditeur de code pour qu’il traite les U
 - essaient d’ouvrir le site web indiqué quand vous appuyez sur **Ctrl** et cliquez sur le lien. Par défaut, le site web apparaît dans le navigateur web interne.
 
 > [!NOTE]
-> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Les boîtes de dialogue et les commandes de menu affichées peuvent différer de celles décrites dans l'Aide selon les paramètres actifs ou le mode d'édition. Pour modifier vos paramètres, choisissez **Paramètres d'importation et d'exportation** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="procedure"></a>Procédure
 
@@ -44,11 +44,11 @@ Vous pouvez choisir de configurer l’éditeur de code pour qu’il traite les U
 
 3. Pour modifier l’option pour un seul langage, développez le dossier pour ce langage et choisissez **Général**.
 
-     - ou -
+     Ou
 
      Pour modifier l’option pour tous les langages, développez le dossier **Tous les langages** et choisissez **Général**.
 
 4. Sous **Affichage**, sélectionnez **Activer la navigation dans les URL par simple clic**.
 
 ## <a name="see-also"></a>Voir aussi
- [Personnalisation de l’éditeur ](../../ide/customizing-the-editor.md) [Text boîte de dialogue Options de l’éditeur ](../../ide/reference/text-editor-options-dialog-box.md) code de [Writing](../../ide/writing-code-in-the-code-and-text-editor.md)
+ [Personnalisation de la boîte de dialogue Options de l’éditeur de texte de l’éditeur](../../ide/customizing-the-editor.md) [Text Editor Options Dialog Box](../../ide/reference/text-editor-options-dialog-box.md) [écriture du code](../../ide/writing-code-in-the-code-and-text-editor.md)

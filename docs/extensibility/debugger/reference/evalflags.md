@@ -1,5 +1,5 @@
 ---
-title: EVALFLAGS - France Microsoft Docs
+title: EVALFLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4136726e5c8b798121dbd38975d8f2bb935ed04a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737107"
 ---
 # <a name="evalflags"></a>EVALFLAGS
-Spécifie les drapeaux qui contrôlent l’évaluation de l’expression.
+Spécifie les indicateurs qui contrôlent l’évaluation de l’expression.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -54,7 +54,7 @@ public enum enum_EVALFLAGS {
 
 ## <a name="fields"></a>Champs
 `EVAL_RETURNVALUE`\
-Précise que la valeur de rendement, le cas échéant, doit être évaluée.
+Spécifie que la valeur de retour, le cas échéant, doit être évaluée.
 
 `EVAL_NOSIDEEFFECTS`\
 Spécifie que les effets secondaires ne sont pas autorisés.
@@ -63,28 +63,28 @@ Spécifie que les effets secondaires ne sont pas autorisés.
 Spécifie l’arrêt sur les points d’arrêt.
 
 `EVAL_ALLOWERRORREPORT`\
-Spécifie l’autorisation de signaler les erreurs à l’hôte. Principalement utilisé pour l’évaluation de l’expression dans le script dans Internet Explorer.
+Spécifie les rapports d’erreurs à autoriser pour l’hôte. Principalement utilisé pour l’évaluation de l’expression dans le script dans Internet Explorer.
 
 `EVAL_FUNCTION_AS_ADDRESS`\
-Fonctions de forces à évaluer comme adresses, au lieu d’invoquer la fonction.
+Force les fonctions à être évaluées en tant qu’adresses, au lieu d’appeler la fonction.
 
 `EVAL_NOFUNCEVAL`\
-Empêche la fonction d’être évaluée. Par exemple, `int` considérez le `myExpression(int) + 10`jeton dans l’expression . Cette fonction peut être correctement évaluée comme une adresse, mais pas comme une valeur.
+Empêche l’évaluation de la fonction. Par exemple, considérez le `int` jeton dans l’expression `myExpression(int) + 10` . Cette fonction peut être correctement évaluée en tant qu’adresse, mais pas en tant que valeur.
 
 `EVAL_NOEVENTS`\
-Indicateur indiquant que les événements qui se produisent au cours de l’évaluation de l’expression ne doivent pas être envoyés au gestionnaire de débogé de session (SDM) ou à l’IIDE.
+Indicateur qui spécifie que les événements qui se produisent pendant l’évaluation de l’expression ne doivent pas être envoyés au gestionnaire de débogage de session (SDM) ou à l’IDE.
 
 ## <a name="remarks"></a>Notes
-Ces drapeaux sont adoptés comme argument aux méthodes [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) et [EvaluateSync.](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)
+Ces indicateurs sont passés comme argument aux méthodes [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) et [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) .
 
-Ces drapeaux peuvent être combinés avec un peu plus ou.
+Ces indicateurs peuvent être combinés avec une opération or au niveau du bit.
 
 ## <a name="requirements"></a>Spécifications
-En-tête: msdbg.h
+En-tête : msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Espace de noms : Microsoft. VisualStudio. Debugger. Interop
 
-Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

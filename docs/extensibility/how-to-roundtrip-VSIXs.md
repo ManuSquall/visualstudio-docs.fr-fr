@@ -9,10 +9,10 @@ manager: justinclareburt
 ms.workload:
 - willbrown
 ms.openlocfilehash: ca1f367510aa9730c1b3b212438579a8eaeb0e8f
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86387276"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-20192017-and-visual-studio-2015"></a>Comment : rendre des extensions compatibles avec Visual Studio 2019/2017 et Visual Studio 2015
@@ -74,7 +74,7 @@ Version | Outils intégrés
 Visual Studio 2015 | Microsoft. VisualStudio. Sdk. BuildTasks. 14.0
 Visual Studio 2019 ou 2017 | Microsoft. VSSDK. BuildTool
 
-Pour cela, procédez de la façon suivante :
+Pour ce faire :
 
 * Ajoutez le package NuGet Microsoft. VisualStudio. Sdk. BuildTasks. 14.0 à votre projet.
 * Si votre projet ne contient pas Microsoft. VSSDK. BuildTools, ajoutez-le.

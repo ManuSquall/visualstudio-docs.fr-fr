@@ -13,13 +13,13 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 15ac788bf81ce83c2658b8a88a68ac5281020373
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205087"
 ---
-# <a name="pendingbpstate"></a>PENDING_BP_STATE
+# <a name="pending_bp_state"></a>PENDING_BP_STATE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 Spécifie l’état d’un point d’arrêt en attente (un point d’arrêt qui n’a pas encore été lié).  
@@ -47,26 +47,26 @@ public enum enum_PENDING_BP_STATE { 
   
 ## <a name="members"></a>Membres  
  PBPS_NONE  
- Espace réservé pour un zéro. Cette valeur n’est jamais retournée.  
+ Espace réservé pour zéro. Cette valeur n’est jamais retournée.  
   
  PBPS_DELETED  
  Indique que le point d’arrêt en attente a été supprimé.  
   
  PBPS_DISABLED  
- Indique que le point d’arrêt en attente est désactivée.  
+ Indique que le point d’arrêt en attente est désactivé.  
   
  PBPS_ENABLED  
- Indique que le point d’arrêt en attente est activée.  
+ Indique que le point d’arrêt en attente est activé.  
   
 ## <a name="remarks"></a>Notes  
- Utiliser comme la `state` membre de la [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) structure.  
+ Utilisez comme `state` membre de la structure [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) .  
   
 ## <a name="requirements"></a>Configuration requise  
- En-tête : msdbg.h  
+ En-tête : msdbg. h  
   
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft. VisualStudio. Debugger. Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

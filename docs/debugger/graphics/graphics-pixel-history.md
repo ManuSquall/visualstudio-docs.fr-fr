@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8cb1b7a869915eebc561e1baf47082dd5dbc00df
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72735484"
 ---
 # <a name="graphics-pixel-history"></a>Historique des pixels Graphics
@@ -22,7 +22,7 @@ La fenêtre Historique des pixels Graphics dans Visual Studio Graphics Analyzer 
 
  Voici la fenêtre Historique des pixels :
 
- ![Un pixel avec trois événements Direct3D dans son historique.](media/gfx_diag_demo_pixel_history_orientation.png "gfx_diag_demo_pixel_history_orientation")
+ ![Pixel avec trois événements Direct3D dans son historique.](media/gfx_diag_demo_pixel_history_orientation.png "gfx_diag_demo_pixel_history_orientation")
 
 ## <a name="understanding-the-pixel-history-window"></a>Présentation de la fenêtre Historique des pixels
  À l'aide de l'Historique des pixels, vous pouvez analyser la façon dont un pixel spécifique de la cible de rendu est affecté par des événements Direct3D dans un frame. Vous pouvez identifier un problème de rendu d'un événement Direct3D spécifique, même quand d'autres évènements (ou d'autres primitives du même événement) continuent à changer la valeur de la couleur finale du pixel. Par exemple, un pixel peut être rendu de manière incorrecte et être ensuite masqué par un autre pixel, semi-transparent, ce qui entraîne un mélange de leurs couleurs dans le framebuffer. Ce genre de problème peut être difficile à diagnostiquer si vous n'avez que le contenu final de la cible de rendu comme repère.
@@ -35,14 +35,14 @@ La fenêtre Historique des pixels Graphics dans Visual Studio Graphics Analyzer 
 
  Vous pouvez développer chaque primitive pour examiner la façon dont la sortie du nuanceur de pixels a été fusionnée avec la couleur de pixel existante pour produire la couleur résultante. À ce stade, vous pouvez également examiner ou déboguer le code du nuanceur de pixels associé à la primitive. En outre, vous pouvez développer davantage le nœud du nuanceur de sommets pour examiner l'entrée du nuanceur de sommets.
 
-### <a name="exclusion"></a> Exclusion de primitive
+### <a name="primitive-exclusion"></a><a name="exclusion"></a> Exclusion de primitive
  Si une primitive ne peut pas affecter la couleur d'un pixel, l'exclusion peut se produire pour diverses raisons. Chaque raison est représentée par une icône décrite dans ce tableau :
 
 |Icône|Raison de l'exclusion|
 |----------|--------------------------|
-|![Icône d’échec du test de profondeur.](media/vsg_hist_icon_failed_depth.png "vsg_hist_icon_failed_depth")|Le pixel a été exclu parce qu'il n'a pas réussi le test Depth Test.|
-|![Icône d’échec du test de ciseaux.](media/vsg_hist_icon_failed_scissor.png "vsg_hist_icon_failed_scissor")|Le pixel a été exclu parce qu'il n'a pas réussi le test Scissor Test.|
-|![Icône d’échec du test du stencil.](media/vsg_hist_icon_failed_stencil.png "vsg_hist_icon_failed_stencil")|Le pixel a été exclu parce qu'il n'a pas réussi le test Stencil Test.|
+|![Icône d'échec au test de profondeur.](media/vsg_hist_icon_failed_depth.png "vsg_hist_icon_failed_depth")|Le pixel a été exclu parce qu'il n'a pas réussi le test Depth Test.|
+|![Icône d'échec au test Scissor.](media/vsg_hist_icon_failed_scissor.png "vsg_hist_icon_failed_scissor")|Le pixel a été exclu parce qu'il n'a pas réussi le test Scissor Test.|
+|![Icône d'échec au test Stencil.](media/vsg_hist_icon_failed_stencil.png "vsg_hist_icon_failed_stencil")|Le pixel a été exclu parce qu'il n'a pas réussi le test Stencil Test.|
 
 ### <a name="draw-call-exclusion"></a>Exclusion d'appel de dessin
  Si aucune des primitives d’un appel de dessin ne peut affecter la cible de rendu, car elles ne réussissent pas un test, l’appel de dessin ne peut pas être développé et une icône correspondant à la raison de l’exclusion s’affiche juste à côté. Les raisons de l'exclusion d'un appel de dessin ressemblent aux raisons de l'exclusion d'une primitive. En outre, leurs icônes sont similaires.
@@ -75,5 +75,5 @@ La fenêtre Historique des pixels Graphics dans Visual Studio Graphics Analyzer 
  Pour comprendre les événements graphiques de l'historique des pixels, vous pouvez avoir besoin d'informations sur l'état de l'appareil au moment de l'événement ou sur les objets Direct3D référencés par l'événement. Pour chaque événement de l’historique des pixels, l’**Historique des pixels Graphics** fournit des liens vers l’état de l’appareil actuel et les objets connexes.
 
 ## <a name="see-also"></a>Voir aussi
-- [Procédure pas à pas : objets manquants en raison de l’état de l’appareil](walkthrough-missing-objects-due-to-device-state.md)
+- [Procédure pas à pas : objets manquants en raison de l’état de l’appareil](walkthrough-missing-objects-due-to-device-state.md)
 - [Procédure pas à pas : débogage des erreurs de rendu dues à l’ombrage](walkthrough-debugging-rendering-errors-due-to-shading.md)

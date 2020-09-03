@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 18bee6cf8f47aeeadd41c7accc1f33566f564898
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189973"
 ---
 # <a name="idiaenumsectioncontribsnext"></a>IDiaEnumSectionContribs::Next
@@ -37,16 +37,16 @@ HRESULT Next( 
   
 #### <a name="parameters"></a>Paramètres  
  celt  
- [in] Le nombre de contributions de la section dans l’énumérateur à récupérer.  
+ dans Nombre de contributions de section dans l’énumérateur à récupérer.  
   
  rgelt  
- [out] Un tableau qui doit être rempli avec le [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md) objets qui représentent les contributions de la section souhaitée.  
+ à Tableau qui doit être rempli avec les objets [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md) qui représentent les contributions de section souhaitées.  
   
  pceltFetched  
- [out] Retourne le nombre de contributions de la section dans l’énumérateur extraite.  
+ à Retourne le nombre de contributions de section dans l’énumérateur extrait.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si il n’y a aucune contribution de section plus. Sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` s’il n’y a plus de contributions de section. Sinon, retourne un code d'erreur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)   
