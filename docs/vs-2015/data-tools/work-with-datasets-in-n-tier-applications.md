@@ -26,10 +26,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4f7be307ec94b15871da20ace8055fc7121d5d92
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657813"
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>Utilisation de datasets dans des applications multiniveaux
@@ -54,14 +54,14 @@ Les applications de données multicouches * sont des applications centrées sur 
 
  [Procédure pas à pas : ajout d’une validation à une application de données multicouche](https://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265) Fournit des instructions pas à pas pour ajouter une validation à l’application créée dans la procédure pas à pas de l’application de données multicouches.
 
-## <a name="reference"></a>Reference
+## <a name="reference"></a>Informations de référence
  <xref:System.Data.DataSet>
 
  <xref:System.Data.TypedTableBase%601>
 
-## <a name="related-sections"></a>Rubriques connexes
+## <a name="related-sections"></a>Sections connexes
 
-- [Vue d’ensemble des applications de données multiniveaux](../data-tools/n-tier-data-applications-overview.md)
+- [Vue d’ensemble des applications de données multicouches](../data-tools/n-tier-data-applications-overview.md)
 - [Mise à jour hiérarchique](../data-tools/hierarchical-update.md)
 - [Outils de dataset dans Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
 - [Accès aux données dans Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

@@ -11,33 +11,33 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b0f0331430a1cc625dee2a7029742fd62d67fb56
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155376"
 ---
 # <a name="enabling-a-program-to-be-debugged"></a>Activation d’un programme à déboguer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Avant votre moteur de débogage (dé) pouvez déboguer un programme, vous devez tout d’abord lancer le DE ou attacher à un programme existant.  
+Avant de pouvoir déboguer un programme par votre moteur DE débogage (DE), vous devez d’abord lancer le ou l’attacher à un programme existant.  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Obtention d’un port](../../extensibility/debugger/getting-a-port.md)  
- Explique comment obtenir un port en tant que la première étape de permettre à un programme à déboguer.  
+ Explique comment obtenir un port comme première étape pour permettre le débogage d’un programme.  
   
  [Inscription du programme](../../extensibility/debugger/registering-the-program.md)  
- Explique l’étape suivante de l’activation d’un programme à déboguer : l’inscription avec le port. Une fois inscrit, le programme peut être débogué soit par le processus d’attachement ou le débogage juste-à-temps (JIT).  
+ Explique l’étape suivante de l’activation d’un programme à déboguer : l’inscrire auprès du port. Une fois inscrit, le programme peut être débogué à l’aide du processus d’attachement ou du débogage juste-à-temps (JIT).  
   
  [Lisaison au programme](../../extensibility/debugger/attaching-to-the-program.md)  
- Explique l’étape suivante : attacher le débogueur au programme.  
+ Explique l’étape suivante : attachement du débogueur au programme.  
   
- [En fonction du lancement d’attachement](../../extensibility/debugger/launch-based-attachment.md)  
- Décrit en fonction du lancement de pièce jointe à un programme, ce qui est automatique lors de son lancement en le SDM.  
+ [Attachement basé sur le lancement](../../extensibility/debugger/launch-based-attachment.md)  
+ Décrit la pièce jointe basée sur le lancement d’un programme, qui est automatique lors du lancement par le SDM.  
   
  [Envoi des événements requis](../../extensibility/debugger/sending-the-required-events.md)  
- Vous guide à travers les événements requis lors de la création d’un moteur de débogage (DE) et en l’attachant à un programme.  
+ Vous guide tout au long des événements requis lors de la création d’un moteur de débogage (DE) et de son attachement à un programme.  
   
-## <a name="related-sections"></a>Rubriques connexes  
+## <a name="related-sections"></a>Sections connexes  
  [Création d’un moteur de débogage personnalisé](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
- Définit un moteur de débogage (DE) et décrit les services implémentés via les interfaces DE et comment ils peuvent provoquer le débogueur à la transition entre les différents modes de fonctionnement.
+ Définit un moteur DE débogage (DE) et décrit les services implémentés via les interfaces DE et la façon dont ils peuvent provoquer la transition du débogueur entre différents modes d’exploitation.

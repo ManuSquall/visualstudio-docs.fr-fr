@@ -1,5 +1,5 @@
 ---
-title: Glossaire des termes utilisés dans MSBuild
+title: Glossaire des termes MSBuild
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e84a7c3c7e402edb3c39ea247ea7efffce1b60df
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154838"
 ---
 # <a name="msbuild-glossary"></a>Glossaire MSBuild
@@ -70,17 +70,17 @@ Ces termes sont utilisés pour décrire Microsoft Build Engine (MSBuild) et ses 
 
  Voir fonction d’élément.
 
- élément
+ item
 
  Les éléments correspondent aux entrées du système de génération et sont regroupés en types d’élément basés sur leurs noms d’élément. Les éléments représentent généralement des fichiers. Comme les éléments sont nommés en fonction du type d’élément dont ils font partie, les termes *élément* et *valeur d’élément* peuvent être utilisés indifféremment. Pour plus d’informations, consultez l’article [Éléments MSBuild](../msbuild/msbuild-items.md).
 
  définition d’élément
 
- Les groupes de définitions d’élément contiennent des définitions d’élément qui ajoutent les métadonnées par défaut à tout type d’élément. À l’instar des métadonnées connues, les métadonnées par défaut sont associées à tous les éléments du type d’élément spécifié. Les métadonnées par défaut peuvent être remplacées de façon explicite dans une définition d’élément. Pour plus d’informations, consultez l’article [Item Definitions (Définitions des éléments)](../msbuild/item-definitions.md).
+ Les groupes de définitions d’élément contiennent des définitions d’élément qui ajoutent les métadonnées par défaut à tout type d’élément. À l’instar des métadonnées connues, les métadonnées par défaut sont associées à tous les éléments du type d’élément spécifié. Les métadonnées par défaut peuvent être remplacées de façon explicite dans une définition d’élément. Pour plus d’informations, consultez [définitions d’éléments](../msbuild/item-definitions.md).
 
  fonction d’élément
 
- Les fonctions d’élément obtiennent des informations sur les éléments du projet. Ces fonctions simplifient l’obtention des éléments Distinct() et sont plus rapides que l’exécution d’une boucle dans les éléments. Il existe des fonctions qui permettent de manipuler les chaînes et les chemins d’accès des éléments. Pour plus d’informations, consultez l’article [Item Functions (Fonctions des éléments)](../msbuild/item-functions.md).
+ Les fonctions d’élément obtiennent des informations sur les éléments du projet. Ces fonctions simplifient l’obtention des éléments Distinct() et sont plus rapides que l’exécution d’une boucle dans les éléments. Il existe des fonctions qui permettent de manipuler les chaînes et les chemins d’accès des éléments. Pour plus d’informations, consultez [fonctions d’élément](../msbuild/item-functions.md)
 
  métadonnées d'élément
 
@@ -112,11 +112,11 @@ Ces termes sont utilisés pour décrire Microsoft Build Engine (MSBuild) et ses 
 
  propriété
 
- Paire clé-valeur qui permet de contrôler le processus de génération. Pour plus d’informations, consultez l’article [Propriétés MSBuild](msbuild-properties1.md).
+ Paire clé-valeur qui permet de contrôler le processus de génération. Pour plus d’informations, consultez [propriétés MSBuild](msbuild-properties1.md).
 
  propriété, environnement
 
- Une propriété d’environnement est une propriété qui est initialisée automatiquement sur la valeur d’une variable d’environnement système portant le même nom. Pour plus d’informations, consultez l’article [Propriétés MSBuild](msbuild-properties1.md).
+ Une propriété d’environnement est une propriété qui est initialisée automatiquement sur la valeur d’une variable d’environnement système portant le même nom. Pour plus d’informations, consultez [propriétés MSBuild](msbuild-properties1.md).
 
  fichier de propriétés
 
@@ -124,7 +124,7 @@ Ces termes sont utilisés pour décrire Microsoft Build Engine (MSBuild) et ses 
 
  propriété, fonction
 
- Une fonction de propriété est une propriété système ou une méthode qui peut être utilisée pour évaluer des scripts MSBuild. Les méthodes de propriété permettent de lire l’heure système, de comparer des chaînes, d’établir des correspondances avec des expressions régulières et d’effectuer d’autres actions. Pour plus d’informations, consultez l’article [Fonctions de propriétés](../msbuild/property-functions.md).
+ Une fonction de propriété est une propriété système ou une méthode qui peut être utilisée pour évaluer des scripts MSBuild. Les méthodes de propriété permettent de lire l’heure système, de comparer des chaînes, d’établir des correspondances avec des expressions régulières et d’effectuer d’autres actions. Pour plus d’informations, consultez [fonctions de propriété](../msbuild/property-functions.md).
 
  fonction de propriété, imbriquée
 
@@ -132,11 +132,11 @@ Ces termes sont utilisés pour décrire Microsoft Build Engine (MSBuild) et ses 
 
  `$([MSBuild]::BitwiseAnd(32,   $([System.IO.File]::GetAttributes(tempFile))))`
 
- Pour plus d’informations, consultez l’article [Fonctions de propriétés](../msbuild/property-functions.md).
+ Pour plus d’informations, consultez [fonctions de propriété](../msbuild/property-functions.md).
 
  propriété, globale
 
- Une propriété globale est une paire clé-valeur qui permet de contrôler le processus de génération. Les propriétés globales sont définies à une invite de commandes, ou à l’aide de l’attribut `Properties` d’une [tâche MSBuild](../msbuild/msbuild-task.md), et elles ne peuvent pas être modifiées au cours de la phase d’évaluation d’une génération. Pour plus d’informations, consultez l’article [Propriétés MSBuild](msbuild-properties1.md).
+ Une propriété globale est une paire clé-valeur qui permet de contrôler le processus de génération. Les propriétés globales sont définies à une invite de commandes, ou à l’aide de l’attribut `Properties` d’une [tâche MSBuild](../msbuild/msbuild-task.md), et elles ne peuvent pas être modifiées au cours de la phase d’évaluation d’une génération. Pour plus d’informations, consultez [propriétés MSBuild](msbuild-properties1.md).
 
  propriété, locale
 
@@ -144,11 +144,11 @@ Ces termes sont utilisés pour décrire Microsoft Build Engine (MSBuild) et ses 
 
  propriété, Registre
 
- Une propriété de Registre possède une valeur qui est définie à l’aide d’une syntaxe spéciale qui lit la valeur d’une sous-clé de Registre système. Pour plus d’informations, consultez l’article [Propriétés MSBuild](msbuild-properties1.md).
+ Une propriété de Registre possède une valeur qui est définie à l’aide d’une syntaxe spéciale qui lit la valeur d’une sous-clé de Registre système. Pour plus d’informations, consultez [propriétés MSBuild](msbuild-properties1.md).
 
  propriété, réservée
 
- Une propriété réservée est une paire clé-valeur qui permet de contrôler le processus de génération. Les propriétés réservées sont automatiquement initialisées sur les valeurs prédéfinies. Pour plus d’informations, consultez l’article [Propriétés MSBuild](msbuild-properties1.md).
+ Une propriété réservée est une paire clé-valeur qui permet de contrôler le processus de génération. Les propriétés réservées sont automatiquement initialisées sur les valeurs prédéfinies. Pour plus d’informations, consultez [propriétés MSBuild](msbuild-properties1.md).
 
  étendue de projet
 
@@ -206,9 +206,9 @@ Ces termes sont utilisés pour décrire Microsoft Build Engine (MSBuild) et ses 
 
  Fichier projet qui contient principalement des cibles et des tâches qui guident la génération. Par convention, il est pourvu de l’extension de fichier .targets. Les fichiers de cibles sont généralement importés à la fin des fichiers projet associés.
 
- task
+ tâche
 
- Les tâches sont des unités de code exécutable auxquelles les projets [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ont recours pour exécuter des opérations de génération. Par exemple, une tâche peut compiler des fichiers d’entrée ou exécuter un outil externe. Pour plus d’informations, consultez l’article [Tâches MSBuild](../msbuild/msbuild-tasks.md).
+ Les tâches sont des unités de code exécutable auxquelles les projets [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ont recours pour exécuter des opérations de génération. Par exemple, une tâche peut compiler des fichiers d'entrée ou exécuter un outil externe. Pour plus d’informations, consultez l’article [Tâches MSBuild](../msbuild/msbuild-tasks.md).
 
  transformation
 

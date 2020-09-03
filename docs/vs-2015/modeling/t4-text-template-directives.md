@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6d77c7a779afcbf7bc7fc3f8fbd863aa368ee7e6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658536"
 ---
 # <a name="t4-text-template-directives"></a>Directives de modèles de texte T4
@@ -62,7 +62,7 @@ Les directives fournissent des instructions au moteur de transformation de modè
 <#@ assembly name="[assembly strong name|assembly file name]" #>
 ```
 
- [Directive d’importation T4](../modeling/t4-import-directive.md)
+ [Directive d'importation T4](../modeling/t4-import-directive.md)
 
 ```
 <#@ import namespace="namespace" #>

@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6aaddd47a20623ee21855d4c7bb86e91b2796d53
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658072"
 ---
 # <a name="measuring-complexity-and-maintainability-of-managed-code"></a>Mesures de la complexité et de la facilité de maintenance du code managé
@@ -33,7 +33,7 @@ L’augmentation de la complexité des applications logicielles modernes augment
 
  Les développeurs peuvent utiliser [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)] pour générer des données de métriques du code qui mesurent la complexité et la facilité de gestion de leur code managé. Les données de métriques du code peuvent être générées pour une solution entière ou un projet unique.
 
- Cette section décrit comment générer et utiliser les métriques du code dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+ Cette section décrit comment générer et utiliser les métriques du code dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
 ## <a name="in-this-section"></a>Dans cette section
  [Valeurs des métriques du code](../code-quality/code-metrics-values.md)

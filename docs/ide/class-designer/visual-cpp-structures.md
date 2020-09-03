@@ -1,5 +1,5 @@
 ---
-title: Structures de CMD en Designer de classe
+title: Structures C++ dans Concepteur de classes
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,13 +11,13 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 2aa8014835df2b5b2bd3dc68e2aaf0b079e001e8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75590682"
 ---
-# <a name="c-structures-in-class-designer"></a>Structures de CMD en Designer de classe
+# <a name="c-structures-in-class-designer"></a>Structures C++ dans Concepteur de classes
 
 Le **Concepteur de classes** prend en charge les structures C++ qui sont déclarées avec le mot clé `struct`. Vous trouverez ci-dessous un exemple :
 
@@ -36,10 +36,10 @@ Une forme de structure C++ dans un diagramme de classes apparaît. Elle fonctio
 
 |Élément de code|Vue Concepteur de classes|
 |------------------| - |
-|`struct StructureName {};`|**StructureName StructureName**<br /><br /> Struct|
+|`struct StructureName {};`|**StructureName**<br /><br /> Structure|
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Travailler avec le code CMD](working-with-visual-cpp-code.md)
+- [Utilisation du code C++](working-with-visual-cpp-code.md)
 - [Classes et structs](/cpp/cpp/classes-and-structs-cpp)
-- [struct](/cpp/cpp/struct-cpp)
+- [modélis](/cpp/cpp/struct-cpp)

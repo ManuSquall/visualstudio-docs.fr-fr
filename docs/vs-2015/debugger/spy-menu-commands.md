@@ -1,5 +1,5 @@
 ---
-title: Espion de commandes de Menu | Microsoft Docs
+title: Commandes du menu Spy | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,31 +12,31 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eb8ecf72e83f12900db77b912d66ff28493ca98e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68153846"
 ---
 # <a name="spy-menu-commands"></a>commandes du menu Spy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Le **Spy** menu fournit des commandes pour travailler avec Spy ++ Windows et des vues.  
+Le menu **Spy** fournit des commandes pour travailler avec les fenêtres et les vues Spy + +.  
   
  **Windows**  
- Ouvre un nouvel affichage de Windows.  
+ Ouvre une nouvelle vue Windows.  
   
  **Processus**  
- Ouvre une nouvelle vue de processus.  
+ Ouvre une nouvelle vue processus.  
   
- **Threads**  
- Ouvre une nouvelle vue Threads.  
+ **Thèmes**  
+ Ouvre une nouvelle vue threads.  
   
  **Enregistrer les messages**  
- Ouvre un nouvel affichage de Messages et ouvre le [la boîte de dialogue Options des messages](../debugger/message-options-dialog-box.md) pour la vue.  
+ Ouvre une nouvelle vue messages et ouvre la [boîte de dialogue Options des messages](../debugger/message-options-dialog-box.md) pour la vue.  
   
  **Rechercher une fenêtre**  
- Affiche le **FindWindow** boîte de dialogue pour sélectionner une fenêtre avec la souris.  
+ Affiche la boîte de dialogue **FindWindow** pour sélectionner une fenêtre à l’aide de la souris.  
   
  **Quitter**  
- Ferme l’utilitaire Spy ++.
+ Ferme l’utilitaire Spy + +.

@@ -1,5 +1,5 @@
 ---
-title: Solution (. Fichier de sln) | Microsoft Docs
+title: Solution (. Sln) fichier | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,25 +13,25 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d9e045ab707620fe985e34174238081f6168e5af
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154962"
 ---
 # <a name="solution-sln-file"></a>Fichier de solution (.Sln)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Une solution est une structure pour organiser les projets dans Visual Studio. La solution gère les informations d’état pour les projets dans .sln (textuel, partagé) et les fichiers .suo (options de la solution binaire, spécifiques à l’utilisateur). Pour plus d’informations sur les fichiers .suo, consultez [Options utilisateur de Solution (. Fichier suo)](../../extensibility/internals/solution-user-options-dot-suo-file.md).  
+Une solution est une structure d’organisation des projets dans Visual Studio. La solution conserve les informations d’état des projets dans les fichiers. sln (texte, partagé) et. suo (options de solution binaires, spécifiques à l’utilisateur). Pour plus d’informations sur les fichiers. suo, consultez Options de l' [utilisateur de la solution (. Suo)](../../extensibility/internals/solution-user-options-dot-suo-file.md).  
   
- Si votre VSPackage est chargé à la suite référencé dans le fichier .sln, l’environnement appelle <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.ReadSolutionProps%2A> pour lire le fichier .sln.  
+ Si votre VSPackage est chargé à la suite d’un référencement dans le fichier. sln, l’environnement appelle <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.ReadSolutionProps%2A> pour lire dans le fichier. sln.  
   
- Le fichier .sln contient des informations textuelles que l’environnement utilise pour rechercher et charger les paramètres nom-valeur pour les données persistantes et le projet VSPackages elle fait référence. Lorsqu’un utilisateur ouvre une solution, l’environnement parcourt le `preSolution`, `Project`, et `postSolution` informations dans le fichier .sln pour charger la solution, des projets dans la solution et toutes les informations persistantes attaché à la solution.  
+ Le fichier. sln contient des informations textuelles que l’environnement utilise pour rechercher et charger les paramètres nom-valeur pour les données persistantes et les VSPackages de projet qu’il référence. Lorsqu’un utilisateur ouvre une solution, l’environnement parcourt `preSolution` les `Project` informations, et du `postSolution` fichier. sln pour charger la solution, les projets de la solution et toutes les informations persistantes attachées à la solution.  
   
- Chaque fichier de projet contient des informations supplémentaires lues par l’environnement pour remplir la hiérarchie avec les éléments de ce projet. La persistance de données de hiérarchie est contrôlée par le projet ; les données ne sont normalement pas stockées dans le fichier .sln, bien que vous pouvez intentionnellement écrire des informations sur le projet dans le fichier .sln, si vous choisissez de faire. Pour plus d’informations relatives à la persistance, consultez [persistance d’un projet](../../extensibility/internals/project-persistence.md) et [d’ouverture et de l’enregistrement des éléments de projet](../../extensibility/internals/opening-and-saving-project-items.md).  
+ Chaque fichier de projet contient des informations supplémentaires lues par l’environnement pour remplir la hiérarchie avec les éléments de ce projet. La persistance des données de hiérarchie est contrôlée par le projet ; les données ne sont normalement pas stockées dans le fichier. sln, bien que vous puissiez écrire intentionnellement des informations de projet dans le fichier. sln si vous choisissez de le faire. Pour plus d’informations sur la persistance, consultez [persistance de projet](../../extensibility/internals/project-persistence.md) et [ouverture et enregistrement d’éléments de projet](../../extensibility/internals/opening-and-saving-project-items.md).  
   
 ## <a name="solution-file-contents"></a>Contenu du fichier solution  
- Le fichier .sln se compose de plusieurs sections, comme illustré dans le code suivant.  
+ Le fichier. sln est constitué de plusieurs sections, comme illustré dans le code suivant.  
   
 ```  
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Project1", "Project1.vbproj", "{8CDD8387-B905-44A8-B5D5-07BB50E05BEA}"  
@@ -58,9 +58,9 @@ Global
 EndGlobal  
 ```  
   
- Pour charger une solution, l’environnement exécute la séquence de tâches suivante.  
+ Pour charger une solution, l’environnement effectue la séquence de tâches suivante.  
   
-1. L’environnement lit la section globale du fichier .sln et traite toutes les sections marquées `preSolution`. Dans ce cas, il est une telle instruction :  
+1. L’environnement lit la section globale du fichier. sln et traite toutes les sections marquées `preSolution` . Dans ce cas, il existe une telle instruction :  
   
    ```  
    GlobalSection(SolutionConfiguration) = preSolution  
@@ -68,11 +68,11 @@ EndGlobal
         ConfigName.1 = Release  
    ```  
   
-    Lorsque l’environnement lit le `GlobalSection('name')` balise, il mappe le nom à un VSPackage à l’aide du Registre. Le nom de clé doit exister dans le Registre sous [HKLM\\< Registre racine de l’ID d’Application\>\SolutionPersistence\AggregateGUIDs]. Des clés par défaut est le GUID de Package (REG_SZ) du VSPackage qui a écrit les entrées.  
+    Lorsque l’environnement lit la `GlobalSection('name')` balise, il mappe le nom à un VSPackage à l’aide du Registre. Le nom de clé doit exister dans le Registre sous [HKLM \\<racine du registre de l’ID d’application \> \SolutionPersistence\AggregateGUIDs]. La valeur par défaut des clés est le GUID du package (REG_SZ) du VSPackage qui a écrit les entrées.  
   
-2. L’environnement charge le VSPackage, appels `QueryInterface` sur le VSPackage pour la <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps> interface et appelle le <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.ReadSolutionProps%2A> méthode avec les données dans la section afin que le VSPackage peut stocker les données. L’environnement répète ce processus pour chaque `preSolution` section.  
+2. L’environnement charge le VSPackage, appelle `QueryInterface` sur le VSPackage pour l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps> interface et appelle la <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.ReadSolutionProps%2A> méthode avec les données de la section afin que le VSPackage puisse stocker les données. L’environnement répète ce processus pour chaque `preSolution` section.  
   
-3. L’environnement effectue une itération dans les blocs de persistance du projet. Dans ce cas, il existe un projet.  
+3. L’environnement itère au sein des blocs de persistance du projet. Dans ce cas, il existe un projet.  
   
    ```  
    Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Project1",  
@@ -80,27 +80,27 @@ EndGlobal
    EndProject  
    ```  
   
-    Cette instruction contient le GUID du projet unique et le GUID du type de projet. Ces informations sont utilisées par l’environnement pour rechercher le fichier projet ou les fichiers appartenant à la solution, et le VSPackage est requis pour chaque projet. Le projet GUID est passé à <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> pour charger le VSPackage spécifique associé au projet, puis le projet est chargé par le VSPackage. Dans ce cas, le VSPackage est chargé pour ce projet est Visual Basic.  
+    Cette instruction contient le GUID du projet unique et le GUID du type de projet. Ces informations sont utilisées par l’environnement pour rechercher le fichier projet ou les fichiers appartenant à la solution, ainsi que le VSPackage requis pour chaque projet. Le GUID du projet est passé à <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> pour charger le VSPackage spécifique lié au projet, puis le projet est chargé par le VSPackage. Dans ce cas, le VSPackage qui est chargé pour ce projet est Visual Basic.  
   
-    Chaque projet peut conserver un ID d’instance unique du projet afin qu’il soit accessible en fonction des besoins par d’autres projets dans la solution. Dans l’idéal, si la solution et les projets sont sous contrôle de code source, le chemin d’accès au projet doit être le chemin d’accès à la solution. Lors du premier chargement de la solution, les fichiers de projet ne peut pas être sur l’ordinateur de l’utilisateur. Lorsque le fichier de projet stocké sur le serveur relatif au fichier de solution, il est relativement simple pour le fichier projet pour trouver et copiés vers l’ordinateur de l’utilisateur. Il copie et charge le reste des fichiers nécessaires pour le projet.  
+    Chaque projet peut conserver un ID d’instance de projet unique afin qu’il soit accessible en fonction des besoins d’autres projets de la solution. Dans l’idéal, si la solution et les projets sont sous contrôle de code source, le chemin d’accès au projet doit être relatif au chemin d’accès à la solution. Lorsque la solution est chargée pour la première fois, les fichiers projet ne peuvent pas se trouver sur l’ordinateur de l’utilisateur. En faisant en sorte que le fichier projet soit stocké sur le serveur par rapport au fichier solution, il est relativement simple de trouver et de copier le fichier projet sur l’ordinateur de l’utilisateur. Il copie et charge ensuite le reste des fichiers nécessaires pour le projet.  
   
-4. Selon les informations contenues dans la section de projet du fichier .sln, l’environnement charge chaque fichier de projet. Le projet lui-même est alors chargé de remplissage de la hiérarchie de projet et le chargement de tous les projets imbriqués.  
+4. En fonction des informations contenues dans la section projet du fichier. sln, l’environnement charge chaque fichier projet. Le projet lui-même est ensuite chargé de remplir la hiérarchie du projet et de charger tous les projets imbriqués.  
   
-5. Après le traitement de toutes les sections du fichier .sln, la solution s’affiche dans l’Explorateur de solutions et est prête pour la modification par l’utilisateur.  
+5. Une fois toutes les sections du fichier. sln traitées, la solution s’affiche dans Explorateur de solutions et est prête à être modifiée par l’utilisateur.  
   
-   Si un VSPackage qui implémente un projet dans la solution ne parvient pas à charger, le <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.OnProjectLoadFailure%2A> méthode est appelée et tous les autres projets dans la solution sont la possibilité d’ignorer les modifications peuvent avoir pendant le chargement. En cas d’erreurs d’analyse, autant d’informations que possible est conservé avec les fichiers solution et l’environnement affiche une boîte de dialogue avertit l’utilisateur que la solution est endommagée.  
+   Si un VSPackage qui implémente un projet dans la solution ne parvient pas à se charger, la <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.OnProjectLoadFailure%2A> méthode est appelée et chaque autre projet de la solution a la possibilité d’ignorer les modifications qu’il a pu effectuer pendant le chargement. Si des erreurs d’analyse se produisent, le plus grand nombre d’informations possible est préservé avec les fichiers de la solution et l’environnement affiche une boîte de dialogue qui avertit l’utilisateur que la solution est endommagée.  
   
-   Lorsque la solution est enregistrée ou fermée, le <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.QuerySaveSolutionProps%2A> méthode est appelée et transmise à la hiérarchie pour voir si des modifications ont été apportées à la solution qui doivent être entrés dans le fichier .sln. Une valeur null transmise à `QuerySaveSolutionProps` dans <xref:Microsoft.VisualStudio.Shell.Interop.VSQUERYSAVESLNPROPS>, indique que des informations en cours sont rendue persistante pour la solution. Si la valeur n’est pas null, les informations persistantes sont pour un projet spécifique, déterminé par le pointeur vers le <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> interface.  
+   Lorsque la solution est enregistrée ou fermée, la <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.QuerySaveSolutionProps%2A> méthode est appelée et transmise à la hiérarchie pour voir si des modifications ont été apportées à la solution qui doivent être entrées dans le fichier. sln. Une valeur null, passée à `QuerySaveSolutionProps` dans <xref:Microsoft.VisualStudio.Shell.Interop.VSQUERYSAVESLNPROPS> , indique que les informations sont conservées pour la solution. Si la valeur n’est pas null, les informations persistantes sont pour un projet spécifique, déterminé par le pointeur vers l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> interface.  
   
-   S’il existe des informations à enregistrer, le <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> interface est appelée avec un pointeur vers le <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.SaveSolutionProps%2A> (méthode). Le <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.WriteSolutionProps%2A> méthode est ensuite appelée par l’environnement pour récupérer les paires nom-valeur à partir de `IPropertyBag` interface et écrire les informations dans le fichier .sln.  
+   S’il y a des informations à enregistrer, l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> interface est appelée avec un pointeur vers la <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.SaveSolutionProps%2A> méthode. La <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.WriteSolutionProps%2A> méthode est ensuite appelée par l’environnement pour récupérer les paires nom-valeur de l' `IPropertyBag` interface et écrire les informations dans le fichier. sln.  
   
-   `SaveSolutionProps` et `WriteSolutionProps` objets sont appelées de manière récursive par l’environnement pour récupérer des informations à enregistrer à partir de la `IPropertyBag` interface jusqu'à ce que toutes les modifications ont été entrées dans le fichier .sln. De cette façon, vous pouvez vous assurer que les informations sont rendues persistantes avec la solution et la prochaine disponible, que la solution est ouverte.  
+   `SaveSolutionProps``WriteSolutionProps`les objets et sont appelés de manière récursive par l’environnement pour récupérer les informations à enregistrer à partir de l' `IPropertyBag` interface jusqu’à ce que toutes les modifications aient été entrées dans le fichier. sln. De cette façon, vous pouvez vous assurer que les informations sont conservées avec la solution et disponibles la prochaine fois que la solution est ouverte.  
   
-   Chaque VSPackage chargé est énumérée pour voir s’il n’a rien à enregistrer dans le fichier .sln. Il est uniquement au moment du chargement que les clés de Registre sont interrogées. L’environnement connaît tous les packages chargés, car elles se trouvent dans la mémoire au moment de que l’enregistrement de la solution.  
+   Chaque VSPackage chargé est énuméré pour voir s’il a quelque chose à enregistrer dans le fichier. sln. Elle est uniquement au moment du chargement où les clés de Registre sont interrogées. L’environnement connaît tous les packages chargés, car ils sont en mémoire au moment où la solution est enregistrée.  
   
-   Seul le fichier .sln contient des entrées dans le `preSolution` et `postSolution` sections. Il n’existe aucune section similaire dans le fichier .suo dans la mesure où la solution a besoin de ces informations pour charger correctement. Le fichier .suo contient les options spécifiques à l’utilisateur, telles que des notes privés, qui ne sont pas destinées à être partagés ou placés sous contrôle de code source.  
+   Seul le fichier. sln contient des entrées dans `preSolution` les `postSolution` sections et. Il n’existe pas de sections similaires dans le fichier. suo puisque la solution a besoin de ces informations pour se charger correctement. Le fichier. suo contient des options spécifiques à l’utilisateur, telles que des notes privées, qui ne sont pas destinées à être partagées ou placées sous le contrôle de code source.  
   
 ## <a name="see-also"></a>Voir aussi  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps>   
- [Options utilisateur de solution (. Fichier suo)](../../extensibility/internals/solution-user-options-dot-suo-file.md)   
+ [Options utilisateur de solution (. Suo)](../../extensibility/internals/solution-user-options-dot-suo-file.md)   
  [Solutions](../../extensibility/internals/solutions-overview.md)

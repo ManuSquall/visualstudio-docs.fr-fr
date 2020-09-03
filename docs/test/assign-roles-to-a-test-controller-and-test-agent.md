@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f0ea644294ea79f1e4c044c0cebf3f427f5b672a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591188"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Assigner des rôles à un contrôleur de test et à un agent de test
@@ -25,7 +25,7 @@ Cet article montre comment créer et configurer un paramètre de test qui utilis
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-## <a name="prerequisites"></a>Conditions préalables requises
+## <a name="prerequisites"></a>Prérequis
 
 - Créez des tests unitaires ou des tests codés de l'interface utilisateur à exécuter avec le paramètre de test.
 
@@ -33,7 +33,7 @@ Cet article montre comment créer et configurer un paramètre de test qui utilis
 
 ## <a name="to-create-and-configure-a-test-setting"></a>Pour créer et configurer un paramètre de test
 
-1. Dans **Solution Explorer**, à droite-clic Solutions **Items,** pointez **ajouter**, puis choisissez **nouvel article**.
+1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur **éléments de solution,** pointez sur **Ajouter**, puis choisissez **nouvel élément**.
 
      La boîte de dialogue **Ajouter un nouvel élément** s'affiche.
 
@@ -97,13 +97,13 @@ Cet article montre comment créer et configurer un paramètre de test qui utilis
 
 ::: moniker range="vs-2017"
 
-8. Sur le menu **Test,** sélectionnez **Paramètres de** > test **Sélectionnez le fichier Paramètres de test** et choisissez ensuite le fichier *TestSettingDistributedTestWalkthrough.testsettings.*
+8. Dans le menu **test** , sélectionnez **paramètres de test** > **Sélectionnez fichier de paramètres de test** , puis choisissez le fichier *TestSettingDistributedTestWalkthrough. testsettings* .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-8. Sur le menu **Test,** choisissez **Select Settings File**. Accédez au fichier *TestSettingDistributedTestWalkthrough.testsettings* et sélectionnez le.
+8. Dans le menu **test** , choisissez **Sélectionner le fichier de paramètres**. Accédez au fichier *TestSettingDistributedTestWalkthrough.testsettings* et sélectionnez le.
 
 ::: moniker-end
 

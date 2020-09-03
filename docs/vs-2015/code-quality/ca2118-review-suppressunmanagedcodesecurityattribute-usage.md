@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: bc0e88265245d795697d32a9e6a95909c0415259
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538656"
 ---
 # <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118 : Vérifier l'utilisation de SuppressUnmanagedCodeSecurityAttribute
@@ -32,11 +32,11 @@ ms.locfileid: "85538656"
 |Category|Microsoft.Security|
 |Modification avec rupture|Rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Un type ou un membre public ou protégé a l' <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> attribut.
 
 ## <a name="rule-description"></a>Description de la règle
- <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute>modifie le comportement par défaut du système de sécurité pour les membres qui exécutent du code non managé à l’aide d’COM Interop ou d’un appel de plateforme. En général, le système crée des [données et une modélisation](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) pour l’autorisation de code non managé. Cette demande se produit au moment de l’exécution pour chaque appel du membre et vérifie si chaque appelant dans la pile des appels a l’autorisation. Lorsque l’attribut est présent, le système effectue une [demande de liaison](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) pour l’autorisation : les autorisations de l’appelant immédiat sont vérifiées lorsque l’appelant est compilé juste-à-temps.
+ <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> modifie le comportement par défaut du système de sécurité pour les membres qui exécutent du code non managé à l’aide d’COM Interop ou d’un appel de plateforme. En général, le système crée des [données et une modélisation](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) pour l’autorisation de code non managé. Cette demande se produit au moment de l’exécution pour chaque appel du membre et vérifie si chaque appelant dans la pile des appels a l’autorisation. Lorsque l’attribut est présent, le système effectue une [demande de liaison](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) pour l’autorisation : les autorisations de l’appelant immédiat sont vérifiées lorsque l’appelant est compilé juste-à-temps.
 
  Cet attribut est essentiellement utilisé pour accroître les performances ; toutefois, les gains de performance s’accompagnent de risques substantiels pour la sécurité. Si vous placez l’attribut sur des membres publics qui appellent des méthodes natives, les appelants dans la pile des appels (à l’exception de l’appelant immédiat) n’ont pas besoin de l’autorisation de code non managé pour exécuter du code non managé. En fonction des actions du membre public et de la gestion des entrées, il peut permettre aux appelants non fiables d’accéder aux fonctionnalités normalement limitées au code fiable.
 

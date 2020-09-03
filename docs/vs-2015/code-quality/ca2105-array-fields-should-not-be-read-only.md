@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: db52bf869642a5bdcc28eeb0792b295ae314a508
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538669"
 ---
 # <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105 : Les champs de tableau ne doivent pas être en lecture seule
@@ -32,7 +32,7 @@ ms.locfileid: "85538669"
 |Category|Microsoft.Security|
 |Modification avec rupture|Rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Un champ public ou protégé qui contient un tableau est déclaré en lecture seule.
 
 ## <a name="rule-description"></a>Description de la règle
@@ -43,7 +43,7 @@ ms.locfileid: "85538669"
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger la faille de sécurité qui est identifiée par cette règle, ne comptez pas sur le contenu d’un tableau en lecture seule qui peut être accessible publiquement. Il est fortement recommandé d’utiliser l’une des procédures suivantes :
 
-- Remplacez le tableau par une collection fortement typée qui ne peut pas être modifiée. Pour plus d’informations, consultez <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>.
+- Remplacez le tableau par une collection fortement typée qui ne peut pas être modifiée. Pour plus d'informations, consultez <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>.
 
 - Remplacez le champ public par une méthode qui retourne un clone d’un tableau privé. Étant donné que votre code ne repose pas sur le clone, il n’y a aucun danger si les éléments sont modifiés.
 

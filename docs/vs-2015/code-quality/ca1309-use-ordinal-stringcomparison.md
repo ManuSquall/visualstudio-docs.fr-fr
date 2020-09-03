@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: be60d2a1dcb769a0b7a8574984de3d288bf57af4
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85538877"
 ---
 # <a name="ca1309-use-ordinal-stringcomparison"></a>CA1309 : Utiliser StringComparison avec la valeur Ordinal
@@ -32,7 +32,7 @@ ms.locfileid: "85538877"
 |Category|Microsoft. Globalization|
 |Modification avec rupture|Sans rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Une opération de comparaison de chaînes non linguistique ne définit pas le <xref:System.StringComparison> paramètre sur **ordinal** ou **OrdinalIgnoreCase**.
 
 ## <a name="rule-description"></a>Description de la règle

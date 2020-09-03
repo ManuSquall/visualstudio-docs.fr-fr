@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: d375b64bbc877cb377157f13b3e4cfa7c7cf1592
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547873"
 ---
 # <a name="ca1504-review-misleading-field-names"></a>CA1504 : Vérifier les noms de champs trompeurs
@@ -32,7 +32,7 @@ ms.locfileid: "85547873"
 |Category|Microsoft. maintenabilité|
 |Modification avec rupture|Sans rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Le nom d’un champ d’instance commence par « s_ » ou le nom d' `static` un `Shared` champ (dans [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ) commence par « m_ ».
 
 ## <a name="rule-description"></a>Description de la règle

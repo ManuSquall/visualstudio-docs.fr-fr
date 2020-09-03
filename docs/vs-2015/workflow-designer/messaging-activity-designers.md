@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a6fb06bea4cebf2558990d23f7ece5b4f8db5b95
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658932"
 ---
 # <a name="messaging-activity-designers"></a>Concepteurs d'activités de messagerie
@@ -25,13 +25,13 @@ Les concepteurs d'activités de messagerie permettent de créer et configurer de
 |----------------------|-----------------|
 |[CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)|Crée et configure une activité <xref:System.ServiceModel.Activities.CorrelationScope> qui fournit une gestion implicite des activités de messagerie enfants avec un objet <xref:System.ServiceModel.Activities.CorrelationHandle>.|
 |[InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)|Crée et configure une activité <xref:System.ServiceModel.Activities.InitializeCorrelation> utilisée pour initialiser la corrélation sans envoyer ou recevoir de message.|
-|[Receive](../workflow-designer/receive-activity-designer.md)|Crée et configure une activité <xref:System.ServiceModel.Activities.Receive> qui reçoit un message d'un service.|
+|[Çoive](../workflow-designer/receive-activity-designer.md)|Crée et configure une activité <xref:System.ServiceModel.Activities.Receive> qui reçoit un message d'un service.|
 |[ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)|Crée une paire préconfigurée d'activités <xref:System.ServiceModel.Activities.Send> et <xref:System.ServiceModel.Activities.ReceiveReply> dans une activité <xref:System.Activities.Statements.Sequence>.|
-|[Send](../workflow-designer/send-activity-designer.md)|Crée et configure une activité <xref:System.ServiceModel.Activities.Send> qui envoie un message à un service.|
+|[Envoyer](../workflow-designer/send-activity-designer.md)|Crée et configure une activité <xref:System.ServiceModel.Activities.Send> qui envoie un message à un service.|
 |[SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)|Crée une paire préconfigurée d'activités <xref:System.ServiceModel.Activities.Receive> et <xref:System.ServiceModel.Activities.SendReply> dans une activité <xref:System.Activities.Statements.Sequence>.|
 |[TransactedReceiveScope](../workflow-designer/transactedreceivescope-activity-designer.md)|Crée et configure une activité <xref:System.ServiceModel.Activities.TransactedReceiveScope> qui active le flux de transactions dans un workflow.|
 
-## <a name="reference"></a>Reference
+## <a name="reference"></a>Informations de référence
  <xref:System.Activities.Activity>
 
  <xref:System.ServiceModel.Activities.CorrelationScope>
@@ -46,12 +46,12 @@ Les concepteurs d'activités de messagerie permettent de créer et configurer de
 
  <xref:System.ServiceModel.Activities.TransactedReceiveScope>
 
-## <a name="related-sections"></a>Rubriques connexes
+## <a name="related-sections"></a>Sections connexes
  Pour les autres types de concepteurs d'activités, consultez les rubriques suivantes.
 
  [Flux de contrôle](../workflow-designer/control-flow-activity-designers.md)
 
- [Utilisation des concepteurs d’activités](../workflow-designer/using-the-activity-designers.md)
+ [Utilisation des concepteurs d'activités](../workflow-designer/using-the-activity-designers.md)
 
  [Organigramme](../workflow-designer/flowchart-activity-designers.md)
 
@@ -61,9 +61,9 @@ Les concepteurs d'activités de messagerie permettent de créer et configurer de
 
  [Transaction](../workflow-designer/transaction-activity-designers.md)
 
- [Regroupement](../workflow-designer/collection-activity-designers.md)
+ [Collection](../workflow-designer/collection-activity-designers.md)
 
  [Gestion des erreurs](../workflow-designer/error-handling-activity-designers.md)
 
 ## <a name="external-resources"></a>Ressources externes
- [Utilisation des concepteurs d’activités](../workflow-designer/using-the-activity-designers.md)
+ [Utilisation des concepteurs d'activités](../workflow-designer/using-the-activity-designers.md)

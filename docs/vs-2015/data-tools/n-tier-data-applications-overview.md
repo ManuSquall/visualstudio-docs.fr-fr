@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0f124e997669370e71819cf37423d0c2d6a414d7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658053"
 ---
 # <a name="n-tier-data-applications-overview"></a>Vue d'ensemble des applications de données multicouches
@@ -35,16 +35,16 @@ Les applications de données multicouches * sont des applications de données qu
 
  Visual Studio contient plusieurs fonctionnalités pour aider les développeurs à créer des applications multicouches :
 
-- Le concepteur de DataSet fournit une propriété de **projet DataSet** qui vous permet de séparer le DataSet (couche d’entité de données) et le `TableAdapter`s (couche d’accès aux données) en projets discrets.
+- Le concepteur de DataSet fournit une propriété de **projet DataSet** qui vous permet de séparer le DataSet (couche d’entité de données) et le `TableAdapter` s (couche d’accès aux données) en projets discrets.
 
 - Les [outils de LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) fournissent des paramètres pour générer le DataContext et les classes de données dans des espaces de noms distincts. Cela permet de séparer logiquement les niveaux d’accès aux données et d’entité de données.
 
-- [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) fournit la méthode <xref:System.Data.Linq.Table%601.Attach%2A> qui vous permet de regrouper le DataContext de différents niveaux dans une application. Pour plus d’informations, consultez [applications multicouches et distantes avec LINQ to SQL](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598).
+- [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) fournit la <xref:System.Data.Linq.Table%601.Attach%2A> méthode qui vous permet de réunir le DataContext de différents niveaux dans une application. Pour plus d’informations, consultez [applications multicouches et distantes avec LINQ to SQL](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598).
 
-## <a name="presentation-tier"></a>Niveau de présentation
+## <a name="presentation-tier"></a>Couche de présentation
  La *couche présentation* est le niveau dans lequel les utilisateurs interagissent avec une application. Elle contient souvent également une logique d’application supplémentaire. Les composants standard de la couche présentation sont les suivants :
 
-- Composants de liaison de données, tels que les <xref:System.Windows.Forms.BindingSource> et <xref:System.Windows.Forms.BindingNavigator>.
+- Composants de liaison de données, tels que <xref:System.Windows.Forms.BindingSource> et <xref:System.Windows.Forms.BindingNavigator> .
 
 - Représentations d’objets de données, telles que les [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) les classes d’entité à utiliser dans la couche de présentation.
 
@@ -70,7 +70,7 @@ Les applications de données multicouches * sont des applications de données qu
   En général, la couche intermédiaire se connecte à la couche données à l’aide d’une connexion de données. Cette connexion de données est généralement stockée dans le composant d’accès aux données.
 
 ## <a name="data-tier"></a>Couche Données
- La *couche données* est fondamentalement le serveur qui stocke les données d’une application (par exemple, un serveur exécutant [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]).
+ La *couche données* est fondamentalement le serveur qui stocke les données d’une application (par exemple, un serveur exécutant [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] ).
 
  L’illustration suivante montre les fonctionnalités et les technologies qui sont disponibles dans Visual Studio et l’endroit où elles peuvent être intégrées à la couche données d’une application multiniveau.
 
@@ -81,13 +81,13 @@ Les applications de données multicouches * sont des applications de données qu
 ## <a name="help-for-n-tier-development"></a>Aide pour le développement multiniveau
  Les rubriques suivantes fournissent des informations sur l’utilisation des applications multicouches :
 
- [Guide pratique pour séparer les datasets et les TableAdapters en différents projets](../data-tools/separate-datasets-and-tableadapters-into-different-projects.md)
+ [Séparer des DataSets et des TableAdapters dans différents projets](../data-tools/separate-datasets-and-tableadapters-into-different-projects.md)
 
  [Procédure pas à pas : création d’une application de données multiniveau](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 
- [Procédure pas à pas : ajout d’une validation à une application de données multicouche](https://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)
+ [Procédure pas à pas : ajout d'une validation à une application de données multicouche](https://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)
 
  [Applications multicouches et distantes avec LINQ to SQL](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)
 
 ## <a name="see-also"></a>Voir aussi
- <xref:System.Data.Linq.ITable.Attach%2A> [procédure pas à pas : création d’une application de données multicouche](../data-tools/walkthrough-creating-an-n-tier-data-application.md) outils de jeu de données de [mise à jour hiérarchique](../data-tools/hierarchical-update.md) [dans Visual Studio](../data-tools/dataset-tools-in-visual-studio.md) [accès aux données dans Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
+ <xref:System.Data.Linq.ITable.Attach%2A>[Procédure pas à pas : création d’une application de données multicouche](../data-tools/walkthrough-creating-an-n-tier-data-application.md) outils de jeu de données de [mise à jour hiérarchique](../data-tools/hierarchical-update.md) [dans Visual Studio](../data-tools/dataset-tools-in-visual-studio.md) [accès aux données dans Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: dd4560673259373b68b370e73a43de424fb7bdb7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658473"
 ---
 # <a name="troubleshoot-extensions-for-layer-diagrams"></a>Dépanner les extensions des diagrammes de couche
@@ -24,11 +24,11 @@ ms.locfileid: "72658473"
 
 Cette rubrique aborde certains problèmes que vous pouvez rencontrer quand vous créez des extensions de modèle de couche.
 
-#### <a name="when-i-press-f5-to-debug-my-extension-my-commands-gesture-handlers-validation-extensions-or-custom-properties-do-not-appear-on-layer-diagrams-in-the-experimental-instance-of-includevsprvsincludesvsprvs-mdmd"></a>Quand j'appuie sur F5 pour déboguer mon extension, mes commandes, gestionnaires de mouvements, extensions de validation ou propriétés personnalisées n'apparaissent pas sur les diagrammes de couche dans l'instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+#### <a name="when-i-press-f5-to-debug-my-extension-my-commands-gesture-handlers-validation-extensions-or-custom-properties-do-not-appear-on-layer-diagrams-in-the-experimental-instance-of-vsprvs"></a>Quand j'appuie sur F5 pour déboguer mon extension, mes commandes, gestionnaires de mouvements, extensions de validation ou propriétés personnalisées n'apparaissent pas sur les diagrammes de couche dans l'instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
-1. Ouvrez votre solution d’extension dans l’instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] et, dans le menu **générer** , cliquez sur **régénérer la solution**.
+1. Ouvrez votre solution d’extension dans l’instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , puis cliquez sur **régénérer la solution**dans le menu **générer** .
 
-2. Appuyez sur **F5** ou sur **CTRL + F5** pour démarrer l’instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Ouvrez un diagramme de couche et testez votre extension.
+2. Appuyez sur **F5** ou sur **CTRL + F5** pour démarrer l’instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Ouvrez un diagramme de couche et testez votre extension.
 
    Continuez avec la procédure suivante si nécessaire.
 
@@ -39,13 +39,13 @@ Cette rubrique aborde certains problèmes que vous pouvez rencontrer quand vous 
 2. Supprimez le dossier suivant :%LocalAppData%\Microsoft\VisualStudio \\ [version] \ComponentModelCache
 
    > [!NOTE]
-   > % LocalAppData% *est généralement le*nom de la \AppData\Local. : \Utilisateurs \\*nom_utilisateur*
+   > % LocalAppData% *est généralement un* \\ *nom d’utilisateur*\AppData\Local. : \Utilisateurs
 
    Continuez avec la procédure suivante si nécessaire.
 
 #### <a name="an-old-version-of-my-validation-results-appears-or-my-validation-method-is-not-called"></a>Une ancienne version de mes résultats de validation s'affiche ou ma méthode de validation n'est pas appelée.
 
-1. Dans l’instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], dans le menu **générer** , cliquez sur **nettoyer la solution**. Cette opération efface les résultats mis en cache de l'analyse de validation précédente.
+1. Dans l’instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , dans le menu **générer** , cliquez sur **nettoyer la solution**. Cette opération efface les résultats mis en cache de l'analyse de validation précédente.
 
 2. Assurez-vous que les couches dans votre modèle sont associées à des éléments de code et qu'il existe au moins un lien de dépendance dans le modèle. La validation n'est pas appelée s'il n'y a rien à valider.
 
