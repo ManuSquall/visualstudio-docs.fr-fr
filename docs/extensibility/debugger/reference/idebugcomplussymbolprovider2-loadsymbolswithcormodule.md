@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule (fr) Microsoft Docs
+title: 'IDebugComPlusSymbolProvider2 :: LoadSymbolsWithCorModule | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ef4750de223b133e30e620f5dc0eec526e98526d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733316"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolswithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule
-Charges déboquent des symboles donnés **l’objet ICorDebugModule.**
+Charge les symboles de débogage en fonction de l’objet **ICorDebugModule** .
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -52,31 +52,31 @@ int LoadSymbolsWithCorModule(
 
 ## <a name="parameters"></a>Paramètres
 `ulAppDomainID`\
-[dans] Identification du domaine de l’application.
+dans Identificateur du domaine d’application.
 
 `guidModule`\
-[dans] Identifiant unique du module.
+dans Identificateur unique du module.
 
 `baseAddress`\
-[dans] Adresse mémoire de base.
+dans Adresse mémoire de base.
 
 `pUnkMetadataImport`\
-[dans] Objet qui contient les métadonnées symbole de débogé.
+dans Objet qui contient les métadonnées de symbole de débogage.
 
 `pUnkCorDebugModule`\
-[dans] Objet qui implémente [l’interface ICorDebugModule](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
+dans Objet qui implémente l' [interface ICorDebugModule](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
 
 `bstrModuleName`\
-[dans] Nom du module.
+dans Nom du module.
 
 `bstrSymSearchPath`\
-[dans] Chemin à rechercher le fichier symbole.
+dans Chemin d’accès pour rechercher le fichier de symboles.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="example"></a>Exemple
-L’exemple suivant montre comment implémenter cette méthode pour un objet **CDebugSymbolProvider** qui expose [l’interface IDebugComPlusSymbolProvider2.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)
+L’exemple suivant montre comment implémenter cette méthode pour un objet **CDebugSymbolProvider** qui expose l’interface [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) .
 
 ```cpp
 HRESULT CDebugSymbolProvider::LoadSymbolsWithCorModule(

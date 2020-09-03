@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b4306e030c2f48d87b12ba6338a847dc9e9aa892
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68179031"
 ---
 # <a name="execution-time-threads-view"></a>Durée d’exécution (vue Threads)
@@ -32,5 +32,5 @@ Ces segments de la chronologie de la vue Threads représentent la durée d’ex�
  Pour afficher un profil d’échantillonnage classique pour tous les segments d’exécution de la vue actuelle, cliquez sur **Exécution** dans le profil de la chronologie visible.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Profil d’exécution, rapport](../profiling/execution-profile-report.md)   
- [Vue Threads](../profiling/threads-view-parallel-performance.md)
+ [Rapport du profil d’exécution](../profiling/execution-profile-report.md)   
+ [vue Threads](../profiling/threads-view-parallel-performance.md)

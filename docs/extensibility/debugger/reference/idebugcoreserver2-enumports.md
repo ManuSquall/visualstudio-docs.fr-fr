@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer2:EnumPorts Microsoft Docs
+title: 'IDebugCoreServer2 :: EnumPorts | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e72c87bfe7649b483e744cbccffa93d7ad721a9e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733202"
 ---
 # <a name="idebugcoreserver2enumports"></a>IDebugCoreServer2::EnumPorts
-Récupère une liste de tous les ports disponibles.
+Récupère la liste de tous les ports disponibles.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,9 +41,9 @@ int EnumPorts( 
 
 ## <a name="parameters"></a>Paramètres
 `ppEnum`\
-[out] Retourne un objet [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) qui contient une liste de tous les ports de tous les fournisseurs portuaires.
+à Retourne un objet [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) qui contient une liste de tous les ports de tous les fournisseurs de ports.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f8ac7beac67a2f1d0010ee64ae7af31108d7ec3b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "70107836"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Ressources pour la conception d’applications accessibles
@@ -54,9 +54,9 @@ En savoir plus sur les technologies qui prennent en charge la conception accessi
 
 ### <a name="third-party-resources"></a>Ressources tierces
 
-- **Initiative du W3C (World Wide Web Consortium) concernant l’accessibilité web** Ce site web fournit des recommandations et des techniques pour le développement de sites web accessibles. Pour plus d’informations, voir [https://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/).
+- **Initiative du W3C (World Wide Web Consortium) concernant l’accessibilité web** Ce site web fournit des recommandations et des techniques pour le développement de sites web accessibles. Pour plus d’informations, consultez [https://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/).
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Caractéristiques d’accessibilité de Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
+* [Fonctionnalités d’accessibilité de Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
 * [Accessibilité de Visual Studio pour Mac](/visualstudio/mac/accessibility/)

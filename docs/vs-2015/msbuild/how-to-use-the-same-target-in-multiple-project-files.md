@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d388d32b288e47a7e92f5d0f727230ffa00a2621
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68178323"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Guide pratique pour utiliser la même cible dans plusieurs fichiers projet
@@ -31,13 +31,13 @@ Si vous avez créé plusieurs fichiers projet [!INCLUDE[vstecmsbuild](../include
   
 1. Dans le fichier projet importateur, définissez toutes les propriétés et les éléments qui sont utilisés comme paramètres des propriétés et des éléments dans le projet importé.  
   
-2. Utilisez l’élément `Import` pour importer le projet. Par exemple :  
+2. Utilisez l’élément `Import` pour importer le projet. Par exemple :  
   
      `<Import Project="MyCommon.targets"/>`  
   
 3. Après l’élément `Import`, définissez toutes les propriétés et tous les éléments qui doivent remplacer les définitions par défaut des propriétés et des éléments dans le projet importé.  
   
-## <a name="order-of-evaluation"></a>Ordre d'évaluation  
+## <a name="order-of-evaluation"></a>Ordre d’évaluation  
  Quand [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] atteint un élément `Import`, le projet importé est inséré effectivement dans le projet importateur à l’emplacement de l’élément `Import`. Par conséquent, l’emplacement de l’élément `Import` peut affecter les valeurs des propriétés et des éléments. Il est important de comprendre les propriétés et les éléments qui sont définis par le projet importé, ainsi que les propriétés et les éléments utilisés par le projet importé.  
   
  Quand le projet est généré, toutes les propriétés sont évaluées en premier, suivies par les éléments. Par exemple, le code XML suivant définit le fichier projet importé MyCommon.targets :  
@@ -83,7 +83,7 @@ Si vous avez créé plusieurs fichiers projet [!INCLUDE[vstecmsbuild](../include
   
 3. Définissez dans le fichier projet toutes les propriétés et tous les éléments qui doivent remplacer les définitions par défaut des propriétés et des éléments dans le projet importé.  
   
-## <a name="example"></a>Exemples  
+## <a name="example"></a>Exemple  
  L’exemple de code suivant montre le fichier MyCommon.targets qui est importé par le deuxième exemple de code. Le fichier .targets évalue les propriétés du projet importateur pour configurer la build.  
   
 ```  
@@ -101,7 +101,7 @@ Si vous avez créé plusieurs fichiers projet [!INCLUDE[vstecmsbuild](../include
 </Project>  
 ```  
   
-## <a name="example"></a>Exemples  
+## <a name="example"></a>Exemple  
  L’exemple de code suivant importe le fichier MyCommon.targets.  
   
 ```  

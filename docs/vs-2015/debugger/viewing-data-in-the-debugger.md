@@ -24,10 +24,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1ade6c38a8edd73c181a3f135dd5e967901bf63f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68178929"
 ---
 # <a name="viewing-data-in-the-debugger"></a>Affichage des données dans le débogueur
@@ -42,6 +42,6 @@ Le débogueur [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fournit tout un ensem
  Les visualiseurs sont un nouveau composant du débogueur [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , qui vous permettent de voir le contenu d’un objet ou d’une variable de façon explicite. Vous pouvez, par exemple, utiliser le visualiseur HTML pour voir une chaîne HTML telle qu’elle sera interprétée et affichée dans un navigateur. Vous pouvez accéder aux visualiseurs depuis les DataTips, la fenêtre **Espion** , la fenêtre **Automatique** , la fenêtre **Variables locales** ou la boîte de dialogue **Espion express** . Pour plus d’informations, consultez [Créer des visualiseurs de données personnalisés](../debugger/create-custom-visualizers-of-data.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Principes de base du débogueur](../debugger/debugger-basics.md)   
- [Fenêtre Commande](../ide/reference/command-window.md)   
+ [Concepts de base du débogueur](../debugger/debugger-basics.md)   
+ [Fenêtre commande](../ide/reference/command-window.md)   
  [Sécurité du débogueur](../debugger/debugger-security.md)

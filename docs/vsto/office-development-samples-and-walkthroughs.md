@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a9a8e71395190647fa7a908949a186c511b24610
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "69551682"
 ---
 # <a name="office-development-samples-and-walkthroughs"></a>Exemples et procédures pas à pas relatifs au développement Office
@@ -36,7 +36,7 @@ ms.locfileid: "69551682"
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
-## <a name="in-this-section"></a>Dans cette section
+## <a name="in-this-section"></a>Contenu de cette section
 
 |Rubrique|Description|
 |-----------|-----------------|
@@ -47,11 +47,11 @@ ms.locfileid: "69551682"
 |[Procédures pas à pas de personnalisation de l’interface utilisateur Office](../vsto/office-ui-customization-walkthroughs.md)|Répertorie des guides pas à pas qui illustrent la façon dont vous pouvez personnaliser l’interface utilisateur des applications Microsoft Office.|
 |[Procédures pas à pas relatives à la sécurité et au déploiement](../vsto/security-and-deployment-walkthroughs.md)|Répertorie des guides pas à pas qui illustrent la façon dont vous pouvez définir la stratégie de sécurité pour permettre l’exécution de votre solution, et comment vous pouvez déployer votre solution.|
 
-## <a name="related-sections"></a>Rubriques connexes
+## <a name="related-sections"></a>Sections connexes
 
 |Rubrique|Description|
 |-----------|-----------------|
-|[Prise en &#40;main du développement Office dans Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)|Fournit des liens vers des informations relatives à l’installation, aux modèles de projet, aux assemblys PIA (Primary Interop Assembly) d’Office et aux nouveautés du développement Office.|
+|[Prise en main &#40;le développement Office dans Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)|Fournit des liens vers des informations relatives à l’installation, aux modèles de projet, aux assemblys PIA (Primary Interop Assembly) d’Office et aux nouveautés du développement Office.|
 |[Architecture des solutions Office dans Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)|Explique comment les solutions Office de code managé fonctionnent du point de vue du développeur et de l’utilisateur final, et contient des informations sur le fonctionnement du code managé avec les documents et les applications Office.|
 |[Tâches courantes dans la programmation Office](../vsto/common-tasks-in-office-programming.md)|Répertorie les questions fréquemment posées sur la programmation avec le développement Office dans Visual Studio et fournit des liens vers des rubriques qui peuvent aider à résoudre les problèmes courants.|
 |[Concevoir et créer des solutions Office](../vsto/designing-and-creating-office-solutions.md)|Fournit des liens vers des informations sur la création de Microsoft Office Solutions et sur le rôle des assemblys dans votre solution.|
