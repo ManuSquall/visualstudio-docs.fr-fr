@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cbfdc15b06d857b7537a4a327f3201c86d4db2d5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671777"
 ---
 # <a name="step-4-add-the-checktheanswer-method"></a>Étape 4 : ajouter la méthode CheckTheAnswer()
@@ -51,6 +51,6 @@ Dans la quatrième partie de ce didacticiel, vous allez écrire une méthode, `C
 
 ### <a name="to-continue-or-review"></a>Pour continuer ou examiner
 
-- Pour passer à l’étape suivante du didacticiel, consultez [Étape 5 : ajouter des gestionnaires d’événements d’entrée pour les contrôles NumericUpDown](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md).
+- Pour passer à l’étape suivante du didacticiel, consultez [étape 5 : ajouter des gestionnaires d’événements Enter pour les contrôles NumericUpDown](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md).
 
-- Pour revenir à l’étape précédente du didacticiel, consultez [Étape 3 : ajouter un temporisateur](../ide/step-3-add-a-countdown-timer.md).
+- Pour revenir à l’étape précédente du didacticiel, consultez [étape 3 : ajouter un minuteur de compte à rebours](../ide/step-3-add-a-countdown-timer.md).

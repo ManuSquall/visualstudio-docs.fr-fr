@@ -13,21 +13,21 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 1526a5f4137ece5b76c282255af3da4ab20ac119
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586001"
 ---
 # <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>Procédure pas à pas : création d’un DataTable dans le Concepteur de DataSet
 
-Cette procédure pas à pas explique comment créer une <xref:System.Data.DataTable> (sans TableAdapter) à l’aide de l' **Concepteur de DataSet**. Pour plus d’informations sur la création de tables de données qui incluent des TableAdapters, consultez [créer et configurer des TableAdapters](../data-tools/create-and-configure-tableadapters.md).
+Cette procédure pas à pas explique comment créer un <xref:System.Data.DataTable> (sans TableAdapter) à l’aide de l' **Concepteur de DataSet**. Pour plus d’informations sur la création de tables de données qui incluent des TableAdapters, consultez [créer et configurer des TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
 ## <a name="create-a-new-windows-forms-application"></a>Créer une application Windows Forms
 
 1. Dans Visual Studio, dans le menu **Fichier**, sélectionnez **Nouveau** > **Projet**.
 
-2. Développez **Visual C#**  ou **Visual Basic** dans le volet gauche, puis sélectionnez **Bureau Windows**.
+2. Développez **Visual C#** ou **Visual Basic** dans le volet gauche, puis sélectionnez **Bureau Windows**.
 
 3. Dans le volet central, sélectionnez le type de projet d' **application Windows Forms** .
 
@@ -39,11 +39,11 @@ Cette procédure pas à pas explique comment créer une <xref:System.Data.DataTa
 
 1. Dans le menu **Projet**, sélectionnez **Ajouter un nouvel élément**.
 
-     La boîte de dialogue **Ajouter un nouvel élément** s’affiche.
+     La boîte de dialogue **Ajouter un nouvel élément** s'affiche.
 
 2. Dans le volet gauche, sélectionnez **données**, puis sélectionnez **DataSet** dans le volet central.
 
-3. Sélectionnez **Ajouter**.
+3. Choisissez **Ajouter**.
 
      Visual Studio ajoute un fichier appelé **DataSet1. xsd** au projet et l’ouvre dans le **Concepteur de DataSet**.
 
@@ -53,13 +53,13 @@ Cette procédure pas à pas explique comment créer une <xref:System.Data.DataTa
 
      Une table nommée **DataTable1** est ajoutée au DataSet.
 
-2. Cliquez sur la barre de titre de **DataTable1** et renommez-la `Music`.
+2. Cliquez sur la barre de titre de **DataTable1** et renommez-la `Music` .
 
 ## <a name="add-columns-to-the-datatable"></a>Ajouter des colonnes au DataTable
 
 1. Cliquez avec le bouton droit sur la table **Music** . Pointez sur **Ajouter**, puis cliquez sur **colonne**.
 
-2. Nommez la colonne `SongID`.
+2. Nommez la colonne `SongID` .
 
 3. Dans la fenêtre **Propriétés** , définissez la propriété <xref:System.Data.DataColumn.DataType%2A> sur <xref:System.Int16?displayProperty=fullName>.
 

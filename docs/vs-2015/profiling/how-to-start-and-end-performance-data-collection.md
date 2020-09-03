@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Démarrer et terminer la collecte des données de performances | Microsoft Docs'
+title: Guide pratique pour démarrer et terminer la collecte des données de performances | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,13 +17,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 15c6d6c904bbab27bac541894ed6cd4f9e1f80f1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202680"
 ---
-# <a name="how-to-start-and-end-performance-data-collection"></a>Procédure : Démarrer et terminer la collecte des données de performances
+# <a name="how-to-start-and-end-performance-data-collection"></a>Guide pratique pour démarrer et terminer la collecte des données de performances
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous devez ajouter le fichier binaire cible à profiler à la session de performance avant de démarrer le profilage. Pour ajouter une cible, cliquez avec le bouton droit sur **Cibles** dans l’**Explorateur de performances**, puis cliquez sur **Ajouter un fichier binaire cible**. Dans la boîte de dialogue **Ajouter un fichier binaire cible**, sélectionnez le nom du fichier, puis cliquez sur **Ouvrir**. Un nouveau fichier binaire est ajouté.  
@@ -34,7 +34,7 @@ Vous devez ajouter le fichier binaire cible à profiler à la session de perform
   
     - **Démarrer avec le profilage** : démarre l’application et commence immédiatement le profilage.  
   
-    - **Démarrer avec le profilage suspendu** : démarre l’application sans commencer le profilage. Pour commencer le profilage, sélectionnez **Reprendre la collecte** dans la fenêtre **Contrôle de collecte de données**. Pour plus d'informations, voir [Procédure : Suspendre et reprendre la collecte de données performances](../profiling/how-to-pause-and-resume-performance-data-collection.md).  
+    - **Démarrer avec le profilage suspendu** : démarre l’application sans commencer le profilage. Pour commencer le profilage, sélectionnez **Reprendre la collecte** dans la fenêtre **Contrôle de collecte de données**. Pour plus d’informations, consultez [Comment : suspendre et reprendre la collecte des données de performances](../profiling/how-to-pause-and-resume-performance-data-collection.md).  
   
 ### <a name="to-end-profiling"></a>Pour terminer le profilage  
   
@@ -42,4 +42,4 @@ Vous devez ajouter le fichier binaire cible à profiler à la session de perform
   
 ## <a name="see-also"></a>Voir aussi  
  [Contrôle de la collecte de données](../profiling/controlling-data-collection.md)   
- [Guide pratique : suspendre et reprendre la collecte de données de performances](../profiling/how-to-pause-and-resume-performance-data-collection.md)
+ [Comment : suspendre et reprendre la collecte des données de performances](../profiling/how-to-pause-and-resume-performance-data-collection.md)

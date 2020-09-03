@@ -1,5 +1,5 @@
 ---
-title: IDebugDisassemblyStream2::Read | Microsoft Docs
+title: 'IDebugDisassemblyStream2 :: Read | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 520c801a0603f2c6d3228ae95ad144827eac0088
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203006"
 ---
 # <a name="idebugdisassemblystream2read"></a>IDebugDisassemblyStream2::Read
@@ -46,30 +46,30 @@ int Read( 
   
 #### <a name="parameters"></a>Paramètres  
  `dwInstructions`  
- [in] Le nombre d’instructions à désassembler. Cette valeur est également la longueur maximale de la `prgDisassembly` tableau.  
+ dans Nombre d’instructions à désassembler. Cette valeur est également la longueur maximale du `prgDisassembly` tableau.  
   
  `dwFields`  
- [in] Une combinaison d’indicateurs de la [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) énumération qui indiquent quels champs de `prgDisassembly` doivent être remplis.  
+ dans Combinaison d’indicateurs de l’énumération [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) qui indique les champs de `prgDisassembly` à remplir.  
   
  `pdwInstructionsRead`  
- [out] Retourne le nombre d’instructions réellement désassemblé.  
+ à Retourne le nombre d’instructions effectivement désassemblées.  
   
  `prgDisassembly`  
- [out] Un tableau de [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) structures qui contient le code désassemblé, une structure par instruction désassemblée. La longueur de ce tableau est déterminée par le `dwInstructions` paramètre.  
+ à Tableau de structures [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) qui est rempli avec le code désassemblé, une structure par instruction désassemblée. La longueur de ce tableau est dictée par le `dwInstructions` paramètre.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="remarks"></a>Notes  
- Le nombre maximal d’instructions qui sont disponibles dans l’étendue actuelle peut être obtenu en appelant le [GetSize](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md) (méthode).  
+ Le nombre maximal d’instructions disponibles dans l’étendue actuelle peut être obtenu en appelant la méthode de la [méthode de recherche](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md) .  
   
- La position actuelle où l’instruction suivante est lue à partir de peut être modifiée en appelant le [recherche](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md) (méthode).  
+ La position actuelle à partir de laquelle l’instruction suivante est lue peut être modifiée en appelant la méthode [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md) .  
   
- Le `DSF_OPERANDS_SYMBOLS` indicateur peut être ajouté à la `DSF_OPERANDS` indicateur dans le `dwFields` paramètre pour indiquer que les noms de symboles doivent être utilisés lors du désassemblage d’instructions.  
+ L' `DSF_OPERANDS_SYMBOLS` indicateur peut être ajouté à l' `DSF_OPERANDS` indicateur dans le `dwFields` paramètre pour indiquer que les noms de symboles doivent être utilisés lors du désassemblage des instructions.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)   
  [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md)   
  [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)   
- [GetSize](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md)   
+ [GetSize,](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md)   
  [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md)

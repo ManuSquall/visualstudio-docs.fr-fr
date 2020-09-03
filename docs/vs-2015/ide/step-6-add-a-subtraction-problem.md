@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8ec0bdd3ebae52158c5631a880e63ee0f3a455de
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671716"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>Étape 6 : ajouter un problème de soustraction
@@ -54,9 +54,9 @@ Dans la sixième partie de ce didacticiel, vous allez ajouter un problème de so
 
      ![Info-bulle de la fenêtre IntelliSense](../ide/media/express-overloads.png "Express_Overloads") Info-bulle de la fenêtre IntelliSense
 
-     L’info-bulle affiche **(+ 2 surcharge(s))** , ce qui signifie que vous pouvez appeler la méthode `Next()` de deux manières différentes. Les surcharges contiennent des nombres ou des types d’arguments leur permettant de fonctionner un peu différemment les unes des autres. Par exemple, une méthode peut prendre un argument entier unique, alors qu'une de ses surcharges peut prendre un entier et une chaîne. Choisissez la surcharge appropriée en fonction de ce que vous souhaitez qu'elle fasse. Lorsque vous ajoutez du code à la méthode `StartTheQuiz()`, plus d'informations apparaissent dans la fenêtre IntelliSense dès que vous entrez `randomizer.Next(`. Choisissez les flèches vers le haut et vers le bas pour parcourir les surcharges, comme indiqué dans l'illustration suivante.
+     L’info-bulle affiche **(+ 2 surcharge(s))**, ce qui signifie que vous pouvez appeler la méthode `Next()` de deux manières différentes. Les surcharges contiennent des nombres ou des types d’arguments leur permettant de fonctionner un peu différemment les unes des autres. Par exemple, une méthode peut prendre un argument entier unique, alors qu'une de ses surcharges peut prendre un entier et une chaîne. Choisissez la surcharge appropriée en fonction de ce que vous souhaitez qu'elle fasse. Lorsque vous ajoutez du code à la méthode `StartTheQuiz()`, plus d'informations apparaissent dans la fenêtre IntelliSense dès que vous entrez `randomizer.Next(`. Choisissez les flèches vers le haut et vers le bas pour parcourir les surcharges, comme indiqué dans l'illustration suivante.
 
-     ![Surcharge pour la&#40; &#41; méthode Next dans IntelliSense](../ide/media/express-nextoverload.png "Express_NextOverload") Surcharge pour la méthode Next () dans IntelliSense
+     ![Surcharge pour la méthode Next&#40;&#41; dans IntelliSense](../ide/media/express-nextoverload.png "Express_NextOverload") Surcharge pour la méthode Next() dans IntelliSense
 
      Dans ce cas, vous souhaitez choisir la dernière surcharge, car vous pouvez spécifier les valeurs minimales et maximales.
 
@@ -80,6 +80,6 @@ Dans la sixième partie de ce didacticiel, vous allez ajouter un problème de so
 
 ### <a name="to-continue-or-review"></a>Pour continuer ou examiner
 
-- Pour passer à l’étape suivante du didacticiel, consultez [Étape 7 : ajouter des problèmes de multiplication et de division](../ide/step-7-add-multiplication-and-division-problems.md).
+- Pour passer à l’étape suivante du didacticiel, consultez [étape 7 : ajouter des problèmes de multiplication et de division](../ide/step-7-add-multiplication-and-division-problems.md).
 
-- Pour revenir à l’étape précédente du didacticiel, consultez [Étape 5 : ajouter des gestionnaires d’événements Enter pour les contrôles NumericUpDown](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md).
+- Pour revenir à l’étape précédente du didacticiel, consultez [étape 5 : ajouter des gestionnaires d’événements Enter pour les contrôles NumericUpDown](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md).

@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: e2335b6d2bc3a5e99f0e6de1afefac4f42de0501
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85521301"
 ---
 # <a name="ca2102-catch-non-clscompliant-exceptions-in-general-handlers"></a>CA2102 : Interceptez les exceptions non CLSCompliant dans les gestionnaires généraux
@@ -39,7 +39,7 @@ ms.locfileid: "85521301"
 
 - C#: `catch {}`
 
-- C++ : `catch(...) {}` ou`catch(Object^) {}`
+- C++ : `catch(...) {}` ou `catch(Object^) {}`
 
   Une exception non gérée non conforme CLS devient un problème de sécurité lorsque des autorisations précédemment autorisées sont supprimées dans le bloc catch. Étant donné que les exceptions non conformes à CLS ne sont pas interceptées, une méthode malveillante qui lève une exception non conforme CLS peut s’exécuter avec des autorisations élevées.
 

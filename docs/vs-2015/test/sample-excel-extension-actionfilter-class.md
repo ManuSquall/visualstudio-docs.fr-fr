@@ -9,16 +9,16 @@ caps.latest.revision: 13
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4c286f25159f3ee1934a27d2242e97482f7ec424
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672182"
 ---
 # <a name="sample-excel-extension-actionfilter-class"></a>Exemple d'extension Excel : classe ActionFilter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Cette classe interne étend la classe [UITestActionFilter](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110)) et représente un filtre pour les actions de test sur un élément [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)].
+Cette classe interne étend la classe [UITestActionFilter](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110)) et représente un filtre pour les actions de test sur un [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] élément.
 
 ## <a name="simple-properties"></a>Propriétés simples
  Ces propriétés en lecture seule permettent au développeur de spécifier comment ce filtre d’action de test doit être exécuté par le framework de test codé de l’interface utilisateur. Par exemple, la propriété `UITestActionFilter.Name` fournit le nom du filtre d’action. D’autres propriétés obtiennent le `UITestActionFilter.Category` du filtre d’action, le `UITestActionFilter.FilterType` et le nom `UITestActionFilter.Group` pour les actions de test qui sont filtrées par ce filtre d’action de test. D’autres indiquent s’il faut `UITestActionFilter.ApplyTimeout` et également si l’action de test est `UITestActionFilter.Enabled`.
@@ -31,4 +31,4 @@ Cette classe interne étend la classe [UITestActionFilter](/previous-versions/vi
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Extension des tests codés de l’interface utilisateur et des enregistrements des actions pour prendre charge Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
+- [Extension des tests codés de l'interface utilisateur t enregistrements des actions pour prendre charge Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)

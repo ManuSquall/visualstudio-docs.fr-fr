@@ -30,10 +30,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2bb65cc70bfec5e8eafc4a823d24f609166d4327
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85771054"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Créer et configurer des membres de type dans le Concepteur de classes
@@ -186,7 +186,7 @@ Ajoutez des paramètres aux méthodes à l’aide de la fenêtre **Détails de c
 
 Les lignes de paramètres contiennent les éléments suivants :
 
-- **Nom**
+- **Name**
 
      La colonne **Nom** d’une ligne de paramètre affiche le nom du paramètre. Ce nom est également affiché dans la propriété **Nom** de la fenêtre Propriétés. Vous pouvez utiliser cette cellule pour modifier le nom d'un paramètre ayant les autorisations en lecture-écriture.
 
