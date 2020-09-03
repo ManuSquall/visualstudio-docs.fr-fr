@@ -12,16 +12,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 50e0a57c53587d56cacc91faa8bc40b9e221b318
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184670"
 ---
 # <a name="bitmaps-element"></a>Élément Bitmaps
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Groupes [élément de Bitmap](../extensibility/bitmap-element.md) éléments.  
+Regroupe les éléments d' [élément bitmap](../extensibility/bitmap-element.md) .  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -45,16 +45,16 @@ Groupes [élément de Bitmap](../extensibility/bitmap-element.md) éléments.
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[Élément Bitmaps](../extensibility/bitmaps-element.md)|Regroupe les éléments de la Bitmap.|  
+|[Élément Bitmaps](../extensibility/bitmaps-element.md)|Regroupe les éléments bitmap.|  
 |[Élément Bitmap](../extensibility/bitmap-element.md)|Définit une image bitmap.|  
   
 ### <a name="parent-elements"></a>Éléments parents  
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[Élément Commands](../extensibility/commands-element.md)|Représente la collection de commandes sur la barre d’outils de VSPackage.|  
+|[Élément Commands](../extensibility/commands-element.md)|Représente la collection de commandes dans la barre d’outils VSPackage.|  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a> Exemple  
   
 ```  
 <Bitmaps>  
@@ -65,5 +65,5 @@ Groupes [élément de Bitmap](../extensibility/bitmap-element.md) éléments.
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Comment VSPackages ajoute des éléments d’Interface utilisateur](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [Comment les VSPackages ajoutent des éléments d’interface utilisateur](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Commandes, menus et barres d’outils](../extensibility/internals/commands-menus-and-toolbars.md)

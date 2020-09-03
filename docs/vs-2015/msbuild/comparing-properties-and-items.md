@@ -12,10 +12,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 66fc8065e81b8b93e73ec034a166e3d5645d4b6b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184094"
 ---
 # <a name="comparing-properties-and-items"></a>Comparaison des propriétés et des éléments
@@ -23,9 +23,9 @@ ms.locfileid: "68184094"
 
 Les propriétés et les éléments MSBuild permettent de transmettre des informations aux tâches, d’évaluer des conditions et de stocker les valeurs qui peuvent être référencées dans le fichier projet.  
   
-- Les propriétés sont des paires nom-valeur. Pour plus d’informations, consultez l’article [Propriétés MSBuild](msbuild-properties1.md).  
+- Les propriétés sont des paires nom-valeur. Pour plus d’informations, consultez [propriétés MSBuild](msbuild-properties1.md).  
   
-- Les éléments sont des objets qui représentent généralement des fichiers. Des collections de métadonnées peuvent être associées aux objets d’élément. Les métadonnées sont des paires nom-valeur. Pour plus d’informations, consultez l’article [Éléments](../msbuild/msbuild-items.md).  
+- Les éléments sont des objets qui représentent généralement des fichiers. Des collections de métadonnées peuvent être associées aux objets d’élément. Les métadonnées sont des paires nom-valeur. Pour plus d’informations, consultez l’article [Éléments MSBuild](../msbuild/msbuild-items.md).  
   
 ## <a name="scalars-and-vectors"></a>Scalaires et vecteurs  
  Comme les propriétés MSBuild sont des paires nom-valeur qui ont seulement une valeur de chaîne, elles sont souvent décrites en tant que *scalaires*. Comme les types d’élément MSBuild sont des listes d’éléments, ils sont souvent décrits comme des *vecteurs*. Toutefois, en pratique, les propriétés peuvent représenter plusieurs valeurs, et les types d’élément peuvent posséder zéro ou un élément.  
@@ -43,7 +43,7 @@ Les propriétés et les éléments MSBuild permettent de transmettre des informa
 </PropertyGroup>  
 ```  
   
- La propriété `BuildDependsOn` est généralement utilisée comme argument d’un attribut `DependsOnTargets` cible, le convertissant effectivement en une liste d’éléments. Cette propriété peut être remplacée pour ajouter une cible ou modifier l’ordre d’exécution des cibles. Par exemple :  
+ La propriété `BuildDependsOn` est généralement utilisée comme argument d’un attribut `DependsOnTargets` cible, le convertissant effectivement en une liste d’éléments. Cette propriété peut être remplacée pour ajouter une cible ou modifier l’ordre d’exécution des cibles. Par exemple,  
   
 ```  
 <PropertyGroup>  
@@ -56,7 +56,7 @@ Les propriétés et les éléments MSBuild permettent de transmettre des informa
   
  ajoute la cible CustomBuild à la liste des cibles, donnant ainsi à la propriété `BuildDependsOn` la valeur `BeforeBuild;CoreBuild;AfterBuild;CustomBuild`.  
   
- Depuis MSBuild 4.0, l’injection de dépendances cibles est dépréciée. L’utilisation des attributs `AfterTargets` et `BeforeTargets` est préférable. Pour plus d’informations, consultez l’article [Ordre de génération des cibles](../msbuild/target-build-order.md).  
+ Depuis MSBuild 4.0, l’injection de dépendances cibles est dépréciée. L’utilisation des attributs `AfterTargets` et `BeforeTargets` est préférable. Pour plus d’informations, consultez [ordre de génération des cibles](../msbuild/target-build-order.md).  
   
 ### <a name="conversions-between-strings-and-item-lists"></a>Conversion entre des chaînes et des listes d’éléments  
  MSBuild effectue au besoin les conversions vers et depuis des types d’élément et des valeurs de chaîne. Pour voir comment une liste d’éléments peut devenir une valeur de chaîne, examinez ce qui se passe lorsqu’un type d’élément est utilisé comme valeur d’une propriété MSBuild :  

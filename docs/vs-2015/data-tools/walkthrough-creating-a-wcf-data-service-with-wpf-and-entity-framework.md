@@ -15,16 +15,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4d825e625313febfa67cfb85f6a9c6bccb7f3608
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75844275"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Procédure pas à pas : Création d’un service de données WCF avec WPF et Entity Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Cette procédure pas à pas montre comment créer un [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] simple hébergé dans une application Web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], puis y accéder à partir d’une application Windows Forms.
+Cette procédure pas à pas montre comment créer un simple [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] qui est hébergé dans une [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] application Web, puis comment y accéder à partir d’une application Windows Forms.
 
  Dans cette procédure pas à pas, vous apprendrez à :
 
@@ -40,8 +40,8 @@ Cette procédure pas à pas montre comment créer un [!INCLUDE[ss_data_service](
 
 - Ajouter éventuellement des fonctions de filtrage à l'application.
 
-## <a name="prerequisites"></a>Configuration requise
- Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :
+## <a name="prerequisites"></a>Prérequis
+ Vous devez disposer des éléments suivants pour exécuter cette procédure pas à pas :
 
 - Exemple de base de données Northwind.
 
@@ -56,7 +56,7 @@ Cette procédure pas à pas montre comment créer un [!INCLUDE[ss_data_service](
 
 #### <a name="to-create-the-web-project"></a>Pour créer le projet Web
 
-1. Dans la barre de menus, choisissez **fichier**, **nouveau**, **projet**.
+1. Dans la barre de menus, choisissez **fichier**, **nouveau**,  **projet**.
 
 2. Dans la boîte de dialogue **Nouveau projet**, développez les nœuds **Visual Basic** ou **Visual C#** et **Web**, puis choisissez le modèle **Application web ASP.NET**.
 
@@ -72,9 +72,9 @@ Cette procédure pas à pas montre comment créer un [!INCLUDE[ss_data_service](
 
 2. Dans la boîte de dialogue **Ajouter un nouvel élément**, choisissez le nœud **Données**, puis l’élément **ADO.NET Entity Data Model**.
 
-3. Dans la zone de texte **nom** , entrez `NorthwindModel`, puis cliquez sur le bouton **Ajouter** .
+3. Dans la zone de texte **nom** , entrez `NorthwindModel` , puis choisissez le bouton **Ajouter** .
 
-    L'Assistant EDM s'affiche.
+    L'Assistant Entity Data Model s'affiche.
 
 4. Dans l’Assistant EDM, dans la page **Choisir le contenu du modèle**, choisissez l’élément **Concepteur EF à partir d’une base de données**, puis cliquez sur le bouton **Suivant**.
 
@@ -82,7 +82,7 @@ Cette procédure pas à pas montre comment créer un [!INCLUDE[ss_data_service](
 
    - Si une connexion de données à l'exemple de base de données Northwind est disponible dans la liste déroulante, choisissez-la.
 
-        \- ou -
+        - ou -
 
    - Choisissez le bouton **Nouvelle connexion** pour configurer une nouvelle connexion de données. Pour plus d’informations, consultez [ajouter de nouvelles connexions](../data-tools/add-new-connections.md).
 
@@ -108,9 +108,9 @@ Cette procédure pas à pas montre comment créer un [!INCLUDE[ss_data_service](
 
 2. Dans la boîte de dialogue **Ajouter un nouvel élément**, choisissez le nœud **Web**, puis l’élément **WCF Data Service 5.6**.
 
-3. Dans la zone de texte **nom** , entrez `NorthwindCustomers`, puis cliquez sur le bouton **Ajouter** .
+3. Dans la zone de texte **nom** , entrez `NorthwindCustomers` , puis choisissez le bouton **Ajouter** .
 
-    Le fichier NorthwindCustomers. svc s’affiche dans l' **éditeur de code**.
+    Le fichier NorthwindCustomers.svc s’affiche dans l’**Éditeur de code**.
 
 4. Dans l’**Éditeur de code**, localisez le premier commentaire `TODO:` et remplacez le code par celui-ci :
 
@@ -124,7 +124,7 @@ Cette procédure pas à pas montre comment créer un [!INCLUDE[ss_data_service](
 
 6. Dans la barre de menus, choisissez **Déboguer**, exécuter **sans débogage** pour exécuter le service. Une fenêtre de navigateur s'ouvre et le schéma XML pour le service s'affiche.
 
-7. Dans la barre d' **adresses** , entrez `Customers` à la fin de l’URL pour NorthwindCustomers. svc, puis appuyez sur la touche **entrée** .
+7. Dans la barre d' **adresses** , entrez `Customers` à la fin de l’URL de NorthwindCustomers. svc, puis appuyez sur la touche **entrée** .
 
     Une représentation XML des données dans la table Customers s'affiche.
 
@@ -144,7 +144,7 @@ Cette procédure pas à pas montre comment créer un [!INCLUDE[ss_data_service](
 
 1. Dans la barre de menus, choisissez Fichier, **Ajouter**, **nouveau projet**.
 
-2. Dans la boîte de dialogue **nouveau projet** , développez le nœud **Visual Basic** ou **visuel C#**  et choisissez le nœud **Windows** , puis choisissez **Windows Forms application**.
+2. Dans la boîte de dialogue **nouveau projet** , développez le nœud **Visual Basic** ou **Visual C#** , choisissez le nœud **Windows** , puis choisissez **Windows Forms application**.
 
 3. Dans la zone de texte **Nom**, entrez `NorthwindClient`, puis choisissez le bouton **OK**.
 
@@ -219,7 +219,7 @@ Cette procédure pas à pas montre comment créer un [!INCLUDE[ss_data_service](
 
    ```
 
-6. Dans **Explorateur de solutions**, ouvrez le menu contextuel du fichier NorthwindCustomers. svc, puis choisissez **afficher dans le navigateur**. Internet Explorer s'ouvre et le schéma XML pour le service s'affiche.
+6. Dans l’**Explorateur de solutions**, ouvrez le menu contextuel du fichier NorthwindCustomers.svc et choisissez **Afficher dans le navigateur**. Internet Explorer s'ouvre et le schéma XML pour le service s'affiche.
 
 7. Copiez l'URL à partir de la barre d'adresses d'Internet Explorer.
 
@@ -240,7 +240,7 @@ Cette procédure pas à pas montre comment créer un [!INCLUDE[ss_data_service](
 
 2. Ajoutez un contrôle <xref:System.Windows.Forms.TextBox> et un contrôle <xref:System.Windows.Forms.Button> au formulaire à partir de la **Boîte à outils**.
 
-3. Ouvrez le menu contextuel du contrôle <xref:System.Windows.Forms.Button>, puis choisissez **afficher le code**, puis ajoutez le code suivant dans le gestionnaire d’événements `Button1_Click` :
+3. Ouvrez le menu contextuel du <xref:System.Windows.Forms.Button> contrôle, puis choisissez **afficher le code**, puis ajoutez le code suivant dans le `Button1_Click` Gestionnaire d’événements :
 
     ```vb
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click

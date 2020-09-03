@@ -16,13 +16,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a1dd1312fc5728fbb68994fb6e70e253fa19172e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72654802"
 ---
-# <a name="troubleshooting-broken-references"></a>Dépannage de références rompues
+# <a name="troubleshooting-broken-references"></a>Troubleshooting Broken References
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Si votre application tente d’utiliser une référence rompue, une erreur d’exception est générée. Si la première cause d’erreur est l’impossibilité de localiser le composant référencé, il existe toutefois plusieurs situations dans lesquelles une référence peut être considérée comme rompue. Ces situations sont répertoriées dans la liste suivante :
@@ -56,7 +56,7 @@ Si votre application tente d’utiliser une référence rompue, une erreur d’e
 
 1. Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur le nœud de votre projet, puis cliquez sur **Propriétés**.
 
-2. Le **Concepteur de projet** s’affiche.
+2. Le **Concepteur de projets** s’affiche.
 
 3. Si vous utilisez Visual Basic, sélectionnez la page **Références**, puis cliquez sur le bouton **Chemins d’accès des références**. Dans la boîte de dialogue **Chemins d’accès des références**, tapez le chemin du dossier contenant l’élément que vous voulez référencer dans le champ **Dossier**, puis cliquez sur le bouton **Ajouter un dossier**.
 
@@ -73,7 +73,7 @@ Si votre application tente d’utiliser une référence rompue, une erreur d’e
 
 - Si la référence existe dans un autre emplacement sur votre ordinateur, lisez-la à partir de cet emplacement.
 
-- Pour plus d’informations, consultez [NIB Comment : ajouter ou supprimer des références à l’aide de la boîte de dialogue Ajouter une référence](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
+- Pour plus d’informations, consultez [Comment : ajouter ou supprimer des références à l’aide de la boîte de dialogue Ajouter une référence](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
 
 ## <a name="referenced-file-has-been-renamed"></a>Un fichier référencé a été renommé
  Il est possible que le fichier référencé ait été renommé.
@@ -82,10 +82,10 @@ Si votre application tente d’utiliser une référence rompue, une erreur d’e
 
 - Supprimez la référence, puis ajoutez une référence au fichier renommé.
 
-- Si la référence existe dans un autre emplacement sur votre ordinateur, vous devez la lire à partir de cet emplacement. Pour plus d’informations, consultez [NIB Comment : ajouter ou supprimer des références à l’aide de la boîte de dialogue Ajouter une référence](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
+- Si la référence existe dans un autre emplacement sur votre ordinateur, vous devez la lire à partir de cet emplacement. Pour plus d’informations, consultez [Comment : ajouter ou supprimer des références à l’aide de la boîte de dialogue Ajouter une référence](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
 
 ## <a name="network-connection-or-authentication-has-failed"></a>La connexion réseau ou l’authentification a échoué
- Il peut exister quantité de raisons expliquant l’inaccessibilité des fichiers : un échec de la connexion réseau ou de l’authentification, par exemple. À chaque cause d’un problème peut être associée une solution unique ; par exemple, vous devrez peut-être contacter l’administrateur local pour qu’il vous donne accès aux ressources nécessaires. Toutefois, il est toujours possible de supprimer la référence et de réparer le code qui l’utilise. Pour plus d’informations, consultez [NIB Comment : ajouter ou supprimer des références à l’aide de la boîte de dialogue Ajouter une référence](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
+ Il peut exister quantité de raisons expliquant l’inaccessibilité des fichiers : un échec de la connexion réseau ou de l’authentification, par exemple. À chaque cause d’un problème peut être associée une solution unique ; par exemple, vous devrez peut-être contacter l’administrateur local pour qu’il vous donne accès aux ressources nécessaires. Toutefois, il est toujours possible de supprimer la référence et de réparer le code qui l’utilise. Pour plus d’informations, consultez [Comment : ajouter ou supprimer des références à l’aide de la boîte de dialogue Ajouter une référence](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
 
 ## <a name="com-component-is-not-installed-on-computer"></a>Le composant COM n’est pas installé sur l’ordinateur
  Si un utilisateur a ajouté une référence à un composant COM et qu’un second utilisateur tente d’exécuter le code sur un ordinateur sur lequel ce composant n’est pas installé, ce second utilisateur voit s’afficher un message d’erreur indiquant que la référence est rompue. Cette erreur peut être corrigée en installant le composant sur le second ordinateur. Pour plus d’informations sur l’utilisation de références aux composants COM dans vos projets, consultez [Interopérabilité COM dans les applications .NET Framework](https://msdn.microsoft.com/library/f5a72143-c268-4dff-a019-974ad940e17d).

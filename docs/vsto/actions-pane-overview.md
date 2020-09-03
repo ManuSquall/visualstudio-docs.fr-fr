@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 82bf3ac9515effaa1053a011085849f0afea67f5
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72986314"
 ---
 # <a name="actions-pane-overview"></a>Vue d’ensemble du volet Actions
@@ -41,7 +41,7 @@ ms.locfileid: "72986314"
  Le volet Actions devient visible au moment de l'exécution, dès que vous lui ajoutez explicitement un contrôle. Une fois que le volet Actions est affiché, vous pouvez dynamiquement ajouter ou supprimer des contrôles en réponse aux actions de l'utilisateur. En général, vous ajoutez le code pour afficher le volet Actions du gestionnaire d'événements `Startup` de `ThisDocument` ou `ThisWorkbook` afin que le volet Actions soit visible lorsque l'utilisateur ouvre le document pour la première fois. Toutefois, vous souhaiterez peut-être afficher le volet Actions uniquement en réponse à l'action d'un utilisateur dans le document. Par exemple, vous pouvez ajouter le code à l'événement `Click` d'un contrôle sur le document.
 
 ### <a name="add-multiple-controls-to-the-actions-pane"></a>Ajouter plusieurs contrôles au volet Actions
- Quand vous ajoutez plusieurs contrôles au volet Actions, vous devez regrouper les contrôles dans un contrôle utilisateur, puis ajouter le contrôle utilisateur à la propriété <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A>. Ce processus comprend les étapes suivantes :
+ Quand vous ajoutez plusieurs contrôles au volet Actions, vous devez regrouper les contrôles dans un contrôle utilisateur, puis ajouter le contrôle utilisateur à la <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> propriété. Ce processus comprend les étapes suivantes :
 
 1. Créez l’interface utilisateur du volet actions en ajoutant un élément de contrôle de **volet Actions** ou un élément de **contrôle utilisateur** à votre projet. Ces deux éléments incluent une classe <xref:System.Windows.Forms.UserControl> Windows Forms personnalisée. Les éléments de contrôle de **volet Actions** et de **contrôle utilisateur** sont équivalents ; la seule différence est son nom.
 
@@ -55,30 +55,30 @@ ms.locfileid: "72986314"
    Pour obtenir des exemples qui illustrent ce processus plus en détail, consultez [Comment : ajouter un volet actions à des documents Word ou à des classeurs Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).
 
 ## <a name="hide-the-actions-pane"></a>Masquer le volet Actions
- Bien que la classe <xref:Microsoft.Office.Tools.ActionsPane> ait une méthode <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> et une propriété <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A>, vous ne pouvez pas supprimer le volet Actions à partir de l'interface utilisateur à l'aide des membres de la classe <xref:Microsoft.Office.Tools.ActionsPane> elle-même. L’appel de la méthode <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> ou la définition de la propriété <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> sur **false** masque uniquement les contrôles du volet Actions ; il ne masque pas le volet de tâches.
+ Bien que la classe <xref:Microsoft.Office.Tools.ActionsPane> ait une méthode <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> et une propriété <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A>, vous ne pouvez pas supprimer le volet Actions à partir de l'interface utilisateur à l'aide des membres de la classe <xref:Microsoft.Office.Tools.ActionsPane> elle-même. L’appel de la <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> méthode ou la définition <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> de la propriété sur **false** masque uniquement les contrôles du volet Actions ; il ne masque pas le volet de tâches.
 
  Pour masquer le volet de tâches dans votre solution, vous disposez de plusieurs options :
 
-- Pour Word, affectez la valeur **false**à la propriété <xref:Microsoft.Office.Interop.Word.TaskPane.Visible%2A> de l’objet <xref:Microsoft.Office.Interop.Word.TaskPane> qui représente le volet de tâches actions de document. L'exemple de code suivant est destiné à être exécuté à partir de la classe `ThisDocument` de votre projet.
+- Pour Word, affectez la valeur <xref:Microsoft.Office.Interop.Word.TaskPane.Visible%2A> <xref:Microsoft.Office.Interop.Word.TaskPane> **false**à la propriété de l’objet qui représente le volet de tâches actions de document. L'exemple de code suivant est destiné à être exécuté à partir de la classe `ThisDocument` de votre projet.
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#34](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#34)]
      [!code-vb[Trin_VstcoreActionsPaneWord#34](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#34)]
 
-- Pour Excel, affectez la valeur **false**à la propriété <xref:Microsoft.Office.Interop.Excel._Application.DisplayDocumentActionTaskPane%2A> de l’objet <xref:Microsoft.Office.Tools.Excel.Workbook.Application%2A>. L'exemple de code suivant est destiné à être exécuté à partir de la classe `ThisWorkbook` de votre projet.
+- Pour Excel, affectez la valeur <xref:Microsoft.Office.Interop.Excel._Application.DisplayDocumentActionTaskPane%2A> <xref:Microsoft.Office.Tools.Excel.Workbook.Application%2A> **false**à la propriété de l’objet. L'exemple de code suivant est destiné à être exécuté à partir de la classe `ThisWorkbook` de votre projet.
 
      [!code-csharp[Trin_VstcoreActionsPaneExcel#11](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#11)]
      [!code-vb[Trin_VstcoreActionsPaneExcel#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#11)]
 
-- Pour Word ou Excel, vous pouvez également définir la propriété <xref:Microsoft.Office.Core.CommandBar.Visible%2A> de la barre de commandes qui représente le volet de tâches sur **false**. L'exemple de code suivant est destiné à être exécuté à partir de la classe `ThisDocument` ou `ThisWorkbook` de votre projet.
+- Pour Word ou Excel, vous pouvez également définir la <xref:Microsoft.Office.Core.CommandBar.Visible%2A> propriété de la barre de commandes qui représente le volet de tâches sur **false**. L'exemple de code suivant est destiné à être exécuté à partir de la classe `ThisDocument` ou `ThisWorkbook` de votre projet.
 
      [!code-csharp[Trin_VstcoreActionsPaneExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#9)]
      [!code-vb[Trin_VstcoreActionsPaneExcel#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#9)]
 
 ### <a name="clear-the-actions-pane-when-the-document-is-opened"></a>Effacer le volet actions lorsque le document est ouvert
- Quand un utilisateur enregistre le document alors que le volet actions est visible, le volet actions est visible à chaque fois que le document est ouvert, que le volet Actions contienne ou non des contrôles. Si vous souhaitez contrôler à quel moment il apparaît, appelez la méthode <xref:Microsoft.Office.Tools.ActionsPane.Clear%2A> du champ `ActionsPane` du gestionnaire d'événements `Startup` `ThisDocument` ou `ThisWorkbook` pour vous assurer que le volet Actions n'est pas visible lorsque le document est ouvert.
+ Quand un utilisateur enregistre le document alors que le volet actions est visible, le volet actions est visible à chaque fois que le document est ouvert, que le volet Actions contienne ou non des contrôles. Si vous souhaitez contrôler à quel moment il apparaît, appelez la méthode <xref:Microsoft.Office.Tools.ActionsPane.Clear%2A> du champ `ActionsPane` du gestionnaire d'événements `Startup``ThisDocument` ou `ThisWorkbook` pour vous assurer que le volet Actions n'est pas visible lorsque le document est ouvert.
 
 ### <a name="determine-when-the-actions-pane-is-closed"></a>Déterminer à quel moment le volet actions est fermé
- Il n'y a aucun événement déclenché lorsque le volet Actions est fermé. Bien que la <xref:Microsoft.Office.Tools.ActionsPane> classe ait un événement <xref:Microsoft.Office.Tools.ActionsPane.VisibleChanged>, celui-ci n'est pas déclenché lorsque l'utilisateur final ferme le volet Actions. Au lieu de cela, cet événement est déclenché lorsque les contrôles du volet actions sont masqués en appelant la méthode <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> ou en affectant à la propriété <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> la **valeur false**.
+ Il n'y a aucun événement déclenché lorsque le volet Actions est fermé. Bien que la <xref:Microsoft.Office.Tools.ActionsPane> classe ait un événement <xref:Microsoft.Office.Tools.ActionsPane.VisibleChanged>, celui-ci n'est pas déclenché lorsque l'utilisateur final ferme le volet Actions. Au lieu de cela, cet événement est déclenché lorsque les contrôles du volet actions sont masqués en appelant la <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> méthode ou en affectant <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> à la propriété la **valeur false**.
 
  Lorsque l’utilisateur ferme le volet Actions, il peut l’afficher à nouveau en effectuant l’une des procédures suivantes dans l’interface utilisateur (IU) de l’application.
 
@@ -112,7 +112,7 @@ ms.locfileid: "72986314"
 |FromLeft|Empilez à partir de la gauche du volet Actions.|
 |FromRight|Empilez à partir de la droite du volet Actions.|
 |FromTop|Empilez à partir du haut du volet Actions.|
-|aucune.|Aucun ordre d'empilement défini ; l'ordre est contrôlé par le développeur.|
+|None|Aucun ordre d'empilement défini ; l'ordre est contrôlé par le développeur.|
 
  Le code suivant définit la propriété <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A> de façon à empiler les contrôles utilisateur à partir du haut du volet Actions.
 
@@ -141,7 +141,7 @@ ms.locfileid: "72986314"
 > [!NOTE]
 > Les utilisateurs finaux peuvent repositionner manuellement le volet de tâches à tout moment. Il n'existe aucun moyen de garantir que le volet des tâches demeure ancré à la position indiquée par programmation. Toutefois, vous pouvez vérifier les modifications de l'orientation et vous assurer que les contrôles du volet Actions sont empilés dans le bon sens. Pour plus d’informations, consultez [Comment : gérer la disposition des contrôles dans les volets actions](../vsto/how-to-manage-control-layout-on-actions-panes.md).
 
- La définition des propriétés <xref:Microsoft.Office.Tools.ActionsPane.Top%2A> et <xref:Microsoft.Office.Tools.ActionsPane.Left%2A> de la <xref:Microsoft.Office.Tools.ActionsPane> ne modifie pas sa position, car l’objet <xref:Microsoft.Office.Tools.ActionsPane> est incorporé dans le volet des tâches.
+ La définition <xref:Microsoft.Office.Tools.ActionsPane.Top%2A> <xref:Microsoft.Office.Tools.ActionsPane.Left%2A> des propriétés et de <xref:Microsoft.Office.Tools.ActionsPane> ne modifie pas sa position, car l' <xref:Microsoft.Office.Tools.ActionsPane> objet est incorporé dans le volet des tâches.
 
  Si le volet des tâches n’est pas ancré, vous pouvez définir les propriétés <xref:Microsoft.Office.Core.CommandBar.Top%2A> et <xref:Microsoft.Office.Core.CommandBar.Left%2A> de l’objet <xref:Microsoft.Office.Core.CommandBar> qui représente le volet des tâches. Le code suivant déplace un volet des tâches non ancré vers l'angle supérieur gauche du document.
 

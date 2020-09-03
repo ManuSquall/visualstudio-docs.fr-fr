@@ -19,16 +19,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1a3c9b3a6ae2ed11e8512f8cf8857d27b3d0043b
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850073"
 ---
 # <a name="debug-layout-using-dom-explorer"></a>Déboguer la disposition avec l’Explorateur DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content. png « windows_and_phone_content »)  
+S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.png « windows_and_phone_content »)  
   
  L’onglet **Disposition** de l’Explorateur DOM affiche le [modèle de boîte CSS](https://www.w3.org/TR/CSS2/box.html) pour l’élément sélectionné dans une application [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] , une application du Windows Phone Store ou une application créée à l’aide de Visual Studio Tools pour Apache Cordova. Vous pouvez utiliser cette représentation visuelle du modèle de boîte pour identifier et modifier les valeurs relatives à la disposition qui affectent l’apparence des éléments.  
   
@@ -69,7 +69,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content. 
   
 5. Selon votre projet de démarrage, sélectionnez **Emulator 8.1 WVGA 4 pouces 512 Mo** ou **Simulateur** dans la liste déroulante de la barre d’outils Déboguer (**Ordinateur local** est la valeur par défaut).  
   
-     ![Sélection d’une cible de débogage](../debugger/media/js-dom-debug-target-emu.png "JS_DOM_Debug_Target_Emu")  
+     ![Sélection d'une cible de débogage](../debugger/media/js-dom-debug-target-emu.png "JS_DOM_Debug_Target_Emu")  
   
 6. Appuyez sur F5 pour exécuter l’application en mode débogage :  
   
@@ -87,7 +87,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content. 
   
 9. Dans le simulateur ou l’émulateur Windows Phone, sélectionnez la moitié droite grisée des images coupées en deux. La mise en surbrillance apparaît autour de l’élément sélectionné, comme illustré ici dans l’émulateur Windows Phone :  
   
-     ![Sélection d’un élément DOM](../debugger/media/js-css-layout-select.png "JS_CSS_Layout_Select")  
+     ![Sélection d'un élément DOM](../debugger/media/js-css-layout-select.png "JS_CSS_Layout_Select")  
   
     > [!TIP]
     > Le simulateur accepte que vous pointiez sur les éléments pour afficher la mise en surbrillance de la zone autour des éléments DOM avant que vous n’en sélectionniez un. L’émulateur Windows Phone ne prend pas en charge cette option.  
@@ -101,11 +101,11 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content. 
   
 10. Cliquez sur l’onglet **disposition** . Cet onglet affiche le modèle de boîte de l’élément sélectionné, comme illustré ici dans l’émulateur de Windows Phone.  
   
-     ![Onglet disposition de l’Explorateur DOM](../debugger/media/js-css-layout.png "JS_CSS_Layout")  
+     ![Onglet Disposition de l'explorateur DOM](../debugger/media/js-css-layout.png "JS_CSS_Layout")  
   
      Cette vue fournit des informations utiles sur l’élément :  
   
-    - Les couleurs correspondent à la mise en surbrillance de zone qui apparaît dans le simulateur lorsque vous pointez sur des éléments. La couleur bleue représente les dimensions de l’élément \<img >. La couleur brun tanné représente les valeurs de marge.  
+    - Les couleurs correspondent à la mise en surbrillance de zone qui apparaît dans le simulateur lorsque vous pointez sur des éléments. La couleur bleue représente les \<img> dimensions de l’élément. La couleur brun tanné représente les valeurs de marge.  
   
     - La marge de gauche (margin-left) est définie, ce qui donne une indication sur la cause du problème, car elle correspond au symptôme (couleur noire dans la partie gauche des images).  
   
@@ -114,19 +114,19 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content. 
 11. Pour voir comment la règle margin-left est appliquée, sélectionnez l’onglet **Calculé** et regardez sous la règle margin-left. Vous pouvez voir que la règle est définie avec une valeur 5em, mais la valeur calculée est égale à 66.66px ou 146.66px, en fonction de votre périphérique cible.  
   
     > [!TIP]
-    > L’onglet **calculé** montre que la règle margin-left est définie dans le sélecteur CSS `..hubpage .hub. section4 .sub-image-row img`, qui se trouve dans Hub. css. Dans cette application de démonstration, c’est là que vous devez apporter la correction.  
+    > L’onglet **calculé** montre que la règle margin-left est définie dans le `..hubpage .hub. section4 .sub-image-row img` sélecteur CSS, qui se trouve dans Hub. css. Dans cette application de démonstration, c’est là que vous devez apporter la correction.  
   
      Vous pouvez également utiliser l’onglet **Disposition** pour tester des modifications apportées aux valeurs de disposition.  
   
 12. Dans l’onglet **Disposition** , sélectionnez **66.66** ou **146.66**, qui apparaît dans la zone **Marge** , à gauche de la zone.  
   
-13. Tapez `0` et appuyez sur Entrée. (Vous pouvez également utiliser les touches haut et bas pour modifier la valeur.)  
+13. Tapez `0`, puis appuyez sur Entrée. (Vous pouvez également utiliser les touches haut et bas pour modifier la valeur.)  
   
-14. Sélectionnez les autres éléments \<img > dans l’Explorateur DOM et modifiez leurs valeurs margin-left en 0.  
+14. Sélectionnez les autres \<img> éléments dans l’Explorateur DOM et modifiez leurs valeurs margin-left en 0.  
   
 15. Basculez vers le simulateur ou l’émulateur Windows Phone. Les valeurs margin-left mises à jour ont été appliquées aux images de Section 4. Ces valeurs sont aussi mises à jour dans l’onglet **Calculé** sous la règle margin-left.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md)   
  [Déboguer les styles CSS à l’aide de l’Explorateur DOM](../debugger/debug-css-styles-using-dom-explorer.md)   
- [Afficher les écouteurs d’événements DOM](../debugger/view-dom-event-listeners.md)
+ [Afficher les écouteurs d'événements DOM](../debugger/view-dom-event-listeners.md)

@@ -1,5 +1,5 @@
 ---
-title: Élément buildProjectOnload (modèles Visual Studio) | Microsoft Docs
+title: Élément BuildProjectOnload (modèles Visual Studio) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -9,19 +9,19 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 464c427008c739f23431c58bd647aaa3b1f5609d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184649"
 ---
 # <a name="buildprojectonload-element-visual-studio-templates"></a>Élément BuildProjectOnload (modèles Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Génère les nouveaux projets uniquement quand vous créez et les ajoutez à une solution. L’ensemble de la solution n’est pas généré.  
+Génère uniquement les nouveaux projets au fur et à mesure que vous les créez et les ajoute à une solution. L’ensemble de la solution n’est pas généré.  
   
  \<VSTemplate>  
- \<TemplateData >  
+ \<TemplateData>  
  \<BuildProjectOnLoad>  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -43,7 +43,7 @@ Génère les nouveaux projets uniquement quand vous créez et les ajoutez à une
   
 |Élément|Description|  
 |-------------|-----------------|  
-|TemplateData|Définit la catégorie du modèle et comment il apparaît dans les deux le **nouveau projet** et **ajouter un nouvel élément** boîtes de dialogue.|  
+|TemplateData|Classe le modèle et définit son apparence dans les boîtes de dialogue **nouveau projet** et **Ajouter un nouvel élément** .|  
   
 ## <a name="text-value"></a>Valeur texte  
  Une valeur texte est requise.  
@@ -54,7 +54,7 @@ Génère les nouveaux projets uniquement quand vous créez et les ajoutez à une
  `BuildProjectOnLoad` est un élément facultatif. La valeur par défaut est `false`.  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant illustre les métadonnées d’un modèle Visual c#.  
+ L’exemple suivant illustre les métadonnées d’un modèle Visual C#.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  

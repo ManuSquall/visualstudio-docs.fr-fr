@@ -12,10 +12,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 70f1266581bb633086fa33a28b43e04befc7e6f9
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75844328"
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>Installer Visual C++ pour le développement mobile multiplateforme
@@ -23,13 +23,13 @@ ms.locfileid: "75844328"
 
 Visual C++ pour le développement mobile multiplateforme] (https://go.microsoft.com/fwlink/p/?LinkId=536383) est un composant installable de Visual Studio 2015. Il inclut des modèles Visual Studio multiplateformes et installe les outils multiplateformes ainsi que les Kits de développement logiciel pour une prise en main rapide, sans que vous n’ayez à effectuer les recherches, le téléchargement ni la configuration. Vous pouvez utiliser ces outils dans Visual Studio pour créer, modifier, déboguer et tester facilement des projets multiplateformes. Cette rubrique décrit comment installer les outils et les logiciels tiers requis pour développer des applications multiplateformes à l’aide de Visual Studio. Pour obtenir une vue d’ensemble du composant, consultez [Développement multiplateforme en Visual C++ pour appareils mobiles](https://go.microsoft.com/fwlink/p/?LinkId=536387)  
   
- [Spécifications](#Requirements)   
- [Se procurer les outils](#GetTheTools)   
+ [Exigences](#Requirements)   
+ [Procurez-vous les outils](#GetTheTools)   
  [Installer les outils](#InstallTheTools)   
- [Install tools for iOS](#InstallForiOS)   
+ [Installer les outils pour iOS](#InstallForiOS)   
  [Installer ou mettre à jour manuellement les dépendances](#ThirdParty)  
   
-## <a name="Requirements"></a> Configuration requise  
+## <a name="requirements"></a><a name="Requirements"></a> Spécifications  
   
 - Pour connaître la configuration requise pour l’installation, consultez [Configuration système requise pour Visual Studio 2015](https://www.visualstudio.com/visual-studio-2015-system-requirements-vs).  
   
@@ -44,10 +44,10 @@ Visual C++ pour le développement mobile multiplateforme] (https://go.microsoft.
   
 - La génération du code pour iOS nécessite un identifiant Apple, un compte iOS Developer Program et un ordinateur Mac pouvant exécuter [Xcode 6](https://go.microsoft.com/fwlink/p/?LinkId=536387) (ou ultérieur) sur OS X Mavericks (ou ultérieur). Pour obtenir une procédure d’installation simple, consultez [Install tools for iOS](#InstallForiOS).  
   
-## <a name="GetTheTools"></a> Se procurer les outils  
+## <a name="get-the-tools"></a><a name="GetTheTools"></a> Procurez-vous les outils  
  Visual C++ pour le développement mobile multiplateforme est un composant installable inclus dans les éditions Visual Studio Community, Professional et Enterprise. Pour obtenir Visual Studio, accédez à la page [Téléchargements de Visual Studio 2015](https://visualstudio.microsoft.com/downloads/) et téléchargez Visual Studio 2015 avec Update 2 ou version ultérieure.  
   
-## <a name="InstallTheTools"></a> Installer les outils  
+## <a name="install-the-tools"></a><a name="InstallTheTools"></a> Installer les outils  
  Le programme d’installation de Visual Studio 2015 comprend une option d’installation de Visual C++ pour le développement mobile multiplateforme. Cette option installe les outils, modèles et composants de langage C++ pour les ensembles d’outils Visual Studio, GCC et Clang nécessaires aux builds Android et au débogage, ainsi que les composants permettant de communiquer avec un Mac pour le développement iOS. Elle installe également tous les outils tiers et kits de développement logiciel qui sont requis pour prendre en charge le développement d’applications iOS et Android. La plupart de ces outils tiers sont des logiciels open source nécessaires pour la prise en charge de la plateforme Android.  
   
 - Android NDK (Native Development Kit) est obligatoire pour générer du code C++ qui cible la plateforme Android.  
@@ -60,11 +60,11 @@ Visual C++ pour le développement mobile multiplateforme] (https://go.microsoft.
   
 1. Exécutez le programme d’installation de Visual Studio 2015 que vous avez téléchargé en suivant le lien dans [Se procurer les outils](#GetTheTools). Pour installer les composants facultatifs, choisissez **Personnalisé** comme type d’installation. Choisissez **Suivant** pour sélectionner les composants facultatifs à installer.  
   
-2. Dans Sélectionner les fonctionnalités, développez **Développement mobile multiplateforme** et cochez **Développement mobile Visual C++** .  
+2. Dans sélectionner les fonctionnalités, développez **développement mobile multiplateforme** et cochez **Visual C++ développement mobile**.  
   
-     ![Sélectionner Visual C&#43; &#43; mobile Development](../cross-platform/media/cppmdd-install-vcmdd.png "CPPMDD_Install_VCMDD")  
+     ![Sélectionner Visual C&#43;&#43; développement mobile](../cross-platform/media/cppmdd-install-vcmdd.png "CPPMDD_Install_VCMDD")  
   
-     Par défaut, quand vous sélectionnez **Développement mobile Visual C++** , l’option **Langages de programmation** est définie pour installer **Visual C++** . De plus, l’option **Kits de développement logiciel (SDK) et outils courants** est définie pour installer les composants tiers nécessaires. Vous pouvez choisir des composants supplémentaires si vous en avez besoin. Par défaut, **Émulateur Microsoft Visual Studio pour Android** est également sélectionné. Les composants qui sont déjà installés apparaissent inactifs dans la liste.  
+     Par défaut, quand vous sélectionnez **Développement mobile Visual C++**, l’option **Langages de programmation** est définie pour installer **Visual C++**. De plus, l’option **Kits de développement logiciel (SDK) et outils courants** est définie pour installer les composants tiers nécessaires. Vous pouvez choisir des composants supplémentaires si vous en avez besoin. Par défaut, **Émulateur Microsoft Visual Studio pour Android** est également sélectionné. Les composants qui sont déjà installés apparaissent inactifs dans la liste.  
   
      Pour générer des applications Windows universelles et partager du code entre ces applications et vos projets Android et iOS, dans **Sélectionner les fonctionnalités**, développez **Développement d’applications Windows et web**, puis cochez **Outils de développement d’applications Windows universelles**. Si vous ne prévoyez pas de créer des applications Windows universelles, vous pouvez ignorer cette option.  
   
@@ -84,10 +84,10 @@ Visual C++ pour le développement mobile multiplateforme] (https://go.microsoft.
   
 5. Ouvrez Visual Studio. S’il s’agit de la première exécution de Visual Studio, la configuration et la connexion peuvent prendre un certain temps. Quand Visual Studio est prêt, dans le menu **Outils** , sélectionnez **Extensions et mises à jour**, **Mises à jour**. Si des mises à jour Visual Studio sont disponibles pour Développement multiplateforme en Visual C++ pour appareils mobiles ou pour l’émulateur Microsoft Visual Studio pour Android, installez-les.  
   
-## <a name="InstallForiOS"></a> Install tools for iOS  
- Vous pouvez utiliser Visual C++ pour le développement mobile multiplateforme pour modifier, déboguer du code iOS et ensuite le déployer dans le simulateur iOS ou sur un appareil iOS mais, en raison de restrictions de licences, le code doit être généré à distance sur un Mac. Pour générer et exécuter des applications iOS à l’aide de Visual Studio, vous devez installer et configurer l’agent distant sur votre Mac. Pour obtenir des instructions d’installation détaillées, les conditions préalables et les options de configuration, consultez [Install And Configure Tools to Build using iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md). Si vous ne générez pas pour iOS, vous pouvez ignorer cette étape.  
+## <a name="install-tools-for-ios"></a><a name="InstallForiOS"></a> Installer les outils pour iOS  
+ Vous pouvez utiliser Visual C++ pour le développement mobile multiplateforme pour modifier, déboguer du code iOS et ensuite le déployer dans le simulateur iOS ou sur un appareil iOS mais, en raison de restrictions de licences, le code doit être généré à distance sur un Mac. Pour générer et exécuter des applications iOS à l’aide de Visual Studio, vous devez installer et configurer l’agent distant sur votre Mac. Pour obtenir des instructions d’installation détaillées, les conditions préalables et les options de configuration, consultez [installer et configurer des outils de génération à l’aide d’iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md). Si vous ne générez pas pour iOS, vous pouvez ignorer cette étape.  
   
-## <a name="ThirdParty"></a> Installer ou mettre à jour manuellement les dépendances  
+## <a name="install-or-update-dependencies-manually"></a><a name="ThirdParty"></a> Installer ou mettre à jour manuellement les dépendances  
  Si vous décidez de ne pas installer une ou plusieurs dépendances tierces à l’aide du programme d’installation de Visual Studio quand vous installez l’option Développement en Visual C++ pour appareils mobiles, vous pouvez les installer ultérieurement à l’aide de la procédure décrite dans [Install the tools](#InstallTheTools). Vous pouvez également les installer ou les mettre à jour indépendamment de Visual Studio.  
   
 > [!CAUTION]
@@ -99,15 +99,15 @@ Visual C++ pour le développement mobile multiplateforme] (https://go.microsoft.
   
    Par défaut, le programme d’installation place les outils Java dans C:\Program Files (x86)\Java.  
   
-- [Kit de développement logiciel Android SDK](https://developer.android.com/sdk/index.html#Other)  
+- [Android SDK](https://developer.android.com/sdk/index.html#Other)  
   
    Lors de l’installation, mettez à jour les API comme recommandé. Vérifiez que le kit SDK pour Android 5.0 Lollipop (niveau d’API 21), ou version ultérieure, est installé. Par défaut, le programme d’installation place le SDK Android dans C:\Program Files (x86)\Android\android-sdk.  
   
-   Vous pouvez réexécuter l’application SDK Manager dans le répertoire Android SDK pour mettre à jour le kit SDK et installer des outils facultatifs, ainsi que des niveaux d’API supplémentaires. L’installation des mises à jour risque d’échouer, sauf si vous utilisez **Exécuter en tant qu’administrateur** pour exécuter l’application du Gestionnaire du SDK. Si vous rencontrez des problèmes lors de la génération d’une application Android, recherchez des mises à jour pour les kits SDK installés dans le Gestionnaire du SDK.  
+   Vous pouvez réexécuter l’application SDK Manager dans le répertoire Android SDK pour mettre à jour le kit SDK et installer des outils facultatifs, ainsi que des niveaux d’API supplémentaires. L’installation des mises à jour risque d’échouer, sauf si vous utilisez **Exécuter en tant qu’administrateur** pour exécuter l’application du Gestionnaire du SDK. Si vous rencontrez des problèmes lors de la génération d’une application Android, recherchez des mises à jour pour les Kits de développement logiciel installés dans le Gestionnaire du SDK.  
   
    Pour utiliser certains émulateurs Android fournis avec le kit SDK Android, vous devez installer les pilotes Intel HAXM facultatifs. Vous devrez peut-être supprimer la fonctionnalité Hyper-V de Windows pour installer correctement les pilotes Intel HAXM. Vous devez restaurer la fonctionnalité Hyper-V pour utiliser les émulateurs Windows Phone et l’émulateur Microsoft Visual Studio pour Android.  
   
-- [Kit de développement natif (NDK) Android](https://developer.android.com/tools/sdk/ndk/index.html)  
+- [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html)  
   
    Par défaut, le programme d’installation place le Kit de développement natif (NDK) Android dans C:\ProgramData\Microsoft\AndroidNDK. Vous pouvez retélécharger et réinstaller le Kit de développement natif (NDK) Android pour mettre à jour son installation.  
   
@@ -125,14 +125,14 @@ Visual C++ pour le développement mobile multiplateforme] (https://go.microsoft.
   
 1. Dans la barre de menus Visual Studio, choisissez **Outils**, **Options**.  
   
-2. Dans la boîte de dialogue **Options** , développez **Multiplateforme**, **C++** , puis sélectionnez **Android**.  
+2. Dans la boîte de dialogue **Options** , développez **Multiplateforme**, **C++**, puis sélectionnez **Android**.  
   
-     ![Options du chemin d’accès aux outils Android](../cross-platform/media/cppmdd-options-android.PNG "CPPMDD_Options_Android")  
+     ![Options de chemin d'accès de l'outil Android](../cross-platform/media/cppmdd-options-android.PNG "CPPMDD_Options_Android")  
   
-3. Pour modifier le chemin utilisé par un outil, cochez la case en regard du chemin et modifiez le chemin du dossier dans la zone de texte. Vous pouvez également utiliser le bouton Parcourir ( **...** ) pour ouvrir une boîte de dialogue **Sélectionner un emplacement** et choisir le dossier.  
+3. Pour modifier le chemin utilisé par un outil, cochez la case en regard du chemin et modifiez le chemin du dossier dans la zone de texte. Vous pouvez également utiliser le bouton Parcourir (**...**) pour ouvrir une boîte de dialogue **Sélectionner un emplacement** et choisir le dossier.  
   
 4. Choisissez **OK** pour enregistrer les emplacements des dossiers d’outils personnalisés.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Installer et configurer des outils de génération en utilisant iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md)   
- [Développement multiplateforme en Visual C++ pour appareils mobiles](https://www.visualstudio.com/explore/cplusplus-mdd-vs.aspx)
+ [Installer et configurer des outils de génération à l’aide d’iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md)   
+ [Visual C++ interplateforme mobile](https://www.visualstudio.com/explore/cplusplus-mdd-vs.aspx)

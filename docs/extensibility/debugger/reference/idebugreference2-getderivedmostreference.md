@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::GetDerivedMostReference (fr) Microsoft Docs
+title: 'IDebugReference2 :: GetDerivedMostReference | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 15e98884d040cfb2ebf1b33a56c7edea331fbff0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720615"
 ---
 # <a name="idebugreference2getderivedmostreference"></a>IDebugReference2::GetDerivedMostReference
-Obtient la référence la plus dérivée d’une référence. Réservé pour un usage futur.
+Obtient la référence la plus dérivée d’une référence. Réservé à un usage ultérieur.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,13 +41,13 @@ int GetDerivedMostReference( 
 
 ## <a name="parameters"></a>Paramètres
 `ppDerivedMost`\
-[out] Retourne un objet [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) qui représente la propriété la plus dérivée.
+à Retourne un objet [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) qui représente la propriété la plus dérivée.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  Retourne toujours `E_NOTIMPL`.
 
 ## <a name="remarks"></a>Notes
- Par exemple, si cette propriété décrit `ClassRoot` un objet qui implémente `ClassDerived` mais `ClassRoot`qui est en fait une instantanéisation de ce qui `ClassDerived` est dérivé , alors cette méthode renvoie un objet [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) représentant une référence à l’objet.
+ Par exemple, si cette propriété décrit un objet qui implémente `ClassRoot` , mais qui est en fait une instanciation de `ClassDerived` qui est dérivée de `ClassRoot` , cette méthode retourne un objet [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) représentant une référence à l' `ClassDerived` objet.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

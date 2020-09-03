@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f3582dd63b2324b061684f1f6ad446d84734e2d3
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850157"
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Raccourcis clavier et touches de modification dans Blend
@@ -25,13 +25,13 @@ Les raccourcis clavier peuvent accélérer votre travail en réduisant une actio
 
    Pour utiliser les touches d'accès, appuyez d'abord sur Alt ou F10 pour faire apparaître les traits de soulignement puis appuyez sur la lettre correspondante de l'élément de menu ou de boîte de dialogue spécifique. Sinon, vous pouvez naviguer dans un menu ou une boîte de dialogue en utilisant la touche Tab ou les flèches. Par exemple, si vous appuyez sur Alt dans [!INCLUDE[blend_subs](../includes/blend-subs-md.md)], un trait de soulignement apparaît sous la lettre **F** dans le menu **Fichier** pour l’identifier comme touche d’accès rapide. Pour ouvrir un projet, maintenez Alt enfoncée, appuyez sur F puis appuyez sur O.
 
-   ![](../designers/media/441d5d67-48ee-4ba3-9e55-1826167e8d64.png "441d5d67-48ee-4ba3-9e55-1826167e8d64")Touches d’accès qui s’affichent avec un trait de soulignement après avoir appuyé sur ALT
+   ![](../designers/media/441d5d67-48ee-4ba3-9e55-1826167e8d64.png "441d5d67-48EE-4ba3-9e55-1826167e8d64") Touches d’accès rapide qui apparaissent avec un trait de soulignement après que vous avez appuyé sur Alt
 
 - **Touches de raccourci** Les touches de raccourci vous permettent d’effectuer une action (sélectionner une commande de menu ou modifier le comportement d’un outil) en appuyant sur un raccourci clavier.
 
    La majorité des raccourcis clavier sont faciles à identifier dans l'interface utilisateur de [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] : ils sont affichés à droite des commandes de menu. Par exemple, dans le menu **Fichier**, la commande de menu **Ouvrir un projet** inclut le raccourci clavier Ctrl+Maj+O. Pour consulter les touches de raccourci pour un outil dans le panneau **Outils**, placez le pointeur sur l’outil.
 
-   ![](../designers/media/f147fc85-9fc5-4e8a-8039-bead80a3e595.png "f147fc85-9fc5-4e8a-8039-bead80a3e595")Touches de raccourci qui s’affichent en regard des éléments de menu qui ont des raccourcis
+   ![](../designers/media/f147fc85-9fc5-4e8a-8039-bead80a3e595.png "f147fc85-9fc5-4e8a-8039-bead80a3e595") Touches de raccourci qui apparaissant à côté des éléments de menu ayant des raccourcis
 
   Pour plus d’informations sur l’accessibilité et les fonctionnalités, consultez [Accessibilité](https://www.microsoft.com/enable).
 

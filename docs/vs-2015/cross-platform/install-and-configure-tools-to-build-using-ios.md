@@ -12,10 +12,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 7290ba820c9b678e0b87bdbeaadf9c025162e8ae
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75844477"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Install and Configure Tools to Build using iOS
@@ -36,13 +36,13 @@ Vous pouvez utiliser Visual C++ pour le développement mobile multiplateforme po
   
  [Configurer l’agent distant dans Visual Studio](#ConfigureVS)  
   
- [Generate a new security PIN](#GeneratePIN)  
+ [Générer un nouveau code PIN de sécurité](#GeneratePIN)  
   
  [Générer un nouveau certificat de serveur](#GenerateCert)  
   
- [Configure the remote agent on the Mac](#ConfigureMac)  
+ [Configurer l’agent distant sur le Mac](#ConfigureMac)  
   
-## <a name="Prerequisites"></a> Composants requis  
+## <a name="prerequisites"></a><a name="Prerequisites"></a> Conditions préalables  
  Pour installer et utiliser l’agent distant en vue de développer du code pour iOS, vous devez tout d’abord disposer des éléments suivants :  
   
 - Un ordinateur Mac exécutant OS X Mavericks ou une version ultérieure  
@@ -69,7 +69,7 @@ Vous pouvez utiliser Visual C++ pour le développement mobile multiplateforme po
   
      Pour plus d’informations sur la création de profils de mise en service, consultez le document relatif à la [création de profils de mise en service via le centre des membres](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html#//apple_ref/doc/uid/TP40012582-CH30-SW24) dans la bibliothèque du développeur iOS.  
   
-- [Node.js](https://nodejs.org/en/)  
+- [Node.JS](https://nodejs.org/en/)  
   
 - Une version mise à jour de npm  
   
@@ -77,18 +77,18 @@ Vous pouvez utiliser Visual C++ pour le développement mobile multiplateforme po
   
      `sudo npm install -g npm@latest`  
   
-## <a name="Install"></a> Installer l’agent distant pour iOS  
+## <a name="install-the-remote-agent-for-ios"></a><a name="Install"></a> Installer l’agent distant pour iOS  
  Quand vous installez Visual C++ pour le développement mobile multiplateforme, Visual Studio peut communiquer avec [vcremote](https://www.npmjs.com/package/vcremote). Cet agent distant s’exécutant sur votre Mac permet de transférer des fichiers, de générer et exécuter votre application iOS et d’envoyer des commandes de débogage.  
   
- Avant d’installer l’agent distant, assurez-vous que vous disposez bien des [Composants requis](#Prerequisites) et que vous avez installé [Visual C++ pour le développement mobile multiplateforme](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#InstallTheTools).  
+ Avant d’installer l’agent distant, assurez-vous que vous avez satisfait les [conditions préalables](#Prerequisites) et que vous avez installé [Visual C++ pour le développement mobile multiplateforme](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#InstallTheTools).  
   
-### <a name="DownloadInstall"></a> Pour télécharger et installer l’agent distant  
+### <a name="to-download-and-install-the-remote-agent"></a><a name="DownloadInstall"></a> Pour télécharger et installer l’agent distant  
   
 - Dans l’application Terminal de votre Mac, entrez :  
   
    `sudo npm install -g --unsafe-perm vcremote`  
   
-   Le commutateur d’installation globale ( **-g**) est recommandé, mais pas obligatoire.  
+   Le commutateur d’installation globale (**-g**) est recommandé, mais pas obligatoire.  
   
    Pendant l’installation, vcremote est installé et le mode développeur est activé sur votre Mac. [Homebrew](https://brew.sh/) et deux packages npm, vcremote-lib et vcremote-utils, sont aussi installés.  
   
@@ -97,10 +97,10 @@ Vous pouvez utiliser Visual C++ pour le développement mobile multiplateforme po
   
   Si vous avez mis à jour Visual Studio vers une nouvelle version, vous devez aussi mettre à jour l’agent distant vers la version actuelle. Pour mettre à jour l’agent distant, répétez la procédure de téléchargement et d’installation de l’agent à distance.  
   
-## <a name="Start"></a> Démarrer l’agent distant  
+## <a name="start-the-remote-agent"></a><a name="Start"></a> Démarrer l’agent distant  
  L’agent distant doit s’exécuter pour permettre à Visual Studio de générer et exécuter votre code iOS. Pour pouvoir communiquer, Visual Studio doit être couplé à l’agent distant. Par défaut, l’agent distant s’exécute en mode de connexion sécurisée, ce qui nécessite qu’un code confidentiel soit couplé à Visual Studio.  
   
-### <a name="RemoteAgentStartServer"></a> Pour démarrer l’agent distant  
+### <a name="to-start-the-remote-agent"></a><a name="RemoteAgentStartServer"></a> Pour démarrer l’agent distant  
   
 - Dans l’application Terminal de votre Mac, entrez :  
   
@@ -110,7 +110,7 @@ Vous pouvez utiliser Visual C++ pour le développement mobile multiplateforme po
   
   La première fois que vous démarrez l’agent et à chaque fois que vous créez un certificat client, les informations nécessaires à la configuration de l’agent dans Visual Studio vous sont fournies, notamment le nom d’hôte, le port et le code confidentiel.  
   
-  ![Utiliser vcremote pour générer un code confidentiel sécurisé](../cross-platform/media/cppmdd-vcremote-generateclientcert.png "CPPMDD_vcremote_generateClientCert")  
+  ![Utiliser Vcremote pour générer un code PIN sécurisé](../cross-platform/media/cppmdd-vcremote-generateclientcert.png "CPPMDD_vcremote_generateClientCert")  
   
   Si vous envisagez de configurer l’agent distant dans Visual Studio en utilisant le nom d’hôte, envoyez une requête ping au Mac à partir de Windows en utilisant le nom d’hôte pour vérifier qu’il est accessible. Dans le cas contraire, vous serez peut-être amené à utiliser l’adresse IP à la place.  
   
@@ -136,7 +136,7 @@ Vous pouvez utiliser Visual C++ pour le développement mobile multiplateforme po
   
 - Dans la fenêtre Terminal où s’exécute vcremote, entrez `Control+C`  
   
-## <a name="ConfigureVS"></a> Configurer l’agent distant dans Visual Studio  
+## <a name="configure-the-remote-agent-in-visual-studio"></a><a name="ConfigureVS"></a> Configurer l’agent distant dans Visual Studio  
  Pour vous connecter à l’agent distant dans Visual Studio, vous devez spécifier la configuration à distance dans les options Visual Studio.  
   
 #### <a name="to-configure-the-remote-agent-from-visual-studio"></a>Pour configurer l’agent distant dans Visual Studio  
@@ -149,7 +149,7 @@ Vous pouvez utiliser Visual C++ pour le développement mobile multiplateforme po
   
 3. Dans la barre de menus Visual Studio, choisissez **Outils**, **Options**.  
   
-4. Dans la boîte de dialogue **Options** , développez **Multiplateforme**, **C++** , **iOS**.  
+4. Dans la boîte de dialogue **Options** , développez **Multiplateforme**, **C++**, **iOS**.  
   
 5. Dans les champs **Nom d’hôte** et **Port** , entrez les valeurs spécifiées par l’agent distant au moment où vous l’avez démarré. Le nom d’hôte peut être le nom DNS ou l’adresse IP de votre Mac. Le numéro de port par défaut est 3030.  
   
@@ -158,7 +158,7 @@ Vous pouvez utiliser Visual C++ pour le développement mobile multiplateforme po
   
 6. Si vous utilisez l’agent distant en mode de connexion sécurisée par défaut, cochez la case **Sécuriser** , puis entrez la valeur de code confidentiel spécifiée par l’agent distant dans le champ **Code confidentiel** . Si vous utilisez l’agent distant en mode de connexion non sécurisée, décochez la case **Sécuriser** et laisser le champ **Code confidentiel** vide.  
   
-7. Choisissez **Coupler** pour activer le jumelage.  
+7. Choisissez **Coupler** pour activer le couplage.  
   
     ![Configurer la connexion vcremote pour les builds iOS](../cross-platform/media/cppmdd-options-ios.PNG "CPPMDD_Options_iOS")  
   
@@ -166,13 +166,13 @@ Vous pouvez utiliser Visual C++ pour le développement mobile multiplateforme po
   
     Si le couplage n’aboutit pas, vérifiez que l’agent distant s’exécute en suivant les étapes décrites dans [Start the remote agent](#Start). Si trop de temps s’est écoulé après la génération du code confidentiel de l’agent, suivez les étapes décrites dans [Generate a new security PIN](#GeneratePIN) sur le Mac, puis réessayez. Si vous utilisez le nom d’hôte de votre Mac, essayez plutôt d’utiliser l’adresse IP qui figure dans le champ **Nom d’hôte** .  
   
-8. Mettez à jour le nom de dossier dans le champ **Racine distante** pour spécifier le dossier utilisé par l’agent distant dans le répertoire de base (~) du Mac. Par défaut, l’agent distant utilise /Users/`username`/vcremote comme racine distante.  
+8. Mettez à jour le nom du dossier dans le champ **racine distante** pour spécifier le dossier utilisé par l’agent distant dans votre répertoire d’origine (~) sur le Mac. Par défaut, l’agent distant utilise /Users/`username`/vcremote comme racine distante.  
   
 9. Choisissez **OK** pour enregistrer les paramètres de connexion de couplage à distance.  
   
    Visual Studio utilise les mêmes informations pour se connecter à l’agent distant sur votre Mac chaque fois que vous l’utilisez. Vous n’avez pas besoin de coupler à nouveau Visual Studio à l’agent distant, sauf si vous générez un nouveau certificat de sécurité sur votre Mac ou que son nom d’hôte ou son adresse IP est modifié.  
   
-## <a name="GeneratePIN"></a> Generate a new security PIN  
+## <a name="generate-a-new-security-pin"></a><a name="GeneratePIN"></a> Generate a new security PIN  
  Quand vous démarrez l’agent distant pour la première fois, le code confidentiel généré est valide pendant une période limitée (par défaut, 10 minutes). Si vous ne couplez pas Visual Studio à l’agent distant avant l’expiration de ce délai, vous devez générer un nouveau code confidentiel.  
   
 #### <a name="to-generate-a-new-pin"></a>Pour générer un nouveau code confidentiel  
@@ -185,7 +185,7 @@ Vous pouvez utiliser Visual C++ pour le développement mobile multiplateforme po
   
      L’agent distant génère un nouveau code confidentiel temporaire. Pour coupler Visual Studio à l’aide du nouveau code confidentiel, répétez les étapes décrites dans [Configurer l’agent distant dans Visual Studio](#ConfigureVS).  
   
-## <a name="GenerateCert"></a> Générer un nouveau certificat de serveur  
+## <a name="generate-a-new-server-certificate"></a><a name="GenerateCert"></a> Générer un nouveau certificat de serveur  
  Pour des raisons de sécurité, les certificats de serveur qui couplent Visual Studio à l’agent distant sont liés à l’adresse IP ou au nom d’hôte de votre Mac. Si ces valeurs changent, vous devez générer un nouveau certificat de serveur et reconfigurer Visual Studio avec les nouvelles valeurs.  
   
 #### <a name="to-generate-a-new-server-certificate"></a>Pour générer un nouveau certificat de serveur  
@@ -206,7 +206,7 @@ Vous pouvez utiliser Visual C++ pour le développement mobile multiplateforme po
   
 5. Pour coupler Visual Studio à l’aide du nouveau code confidentiel, répétez les étapes décrites dans [Configurer l’agent distant dans Visual Studio](#ConfigureVS).  
   
-## <a name="ConfigureMac"></a> Configure the remote agent on the Mac  
+## <a name="configure-the-remote-agent-on-the-mac"></a><a name="ConfigureMac"></a> Configure the remote agent on the Mac  
  Vous pouvez configurer l’agent distant en utilisant diverses options de ligne de commande. Par exemple, vous pouvez spécifier le port à écouter pour les demandes de génération et spécifier le nombre maximal de builds à conserver sur le système de fichiers. Par défaut, cette limite est de 10 builds. Au moment de l’arrêt, l’agent supprime les builds qui dépassent ce nombre maximal.  
   
 #### <a name="to-configure-the-remote-agent"></a>Pour configurer l’agent distant  
@@ -225,7 +225,7 @@ Vous pouvez utiliser Visual C++ pour le développement mobile multiplateforme po
   
      `vcremote --serverDir directory_path`  
   
-     où *chemin_répertoire* est l’emplacement sur votre Mac où seront placés les fichiers journaux, les builds et les certificats de serveur. Par défaut, cet emplacement est /Users/*nom_utilisateur*/vcremote. Les builds sont organisées par numéro de build à cet emplacement.  
+     où *chemin_répertoire* est l’emplacement sur votre Mac où seront placés les fichiers journaux, les builds et les certificats de serveur. Par défaut, cet emplacement est/Users/*nom_utilisateur*/vcremote. Les builds sont organisées par numéro de build à cet emplacement.  
   
 - Pour utiliser un processus en arrière-plan pour capturer `stdout` et `stderr` dans un fichier nommé serveur.log, entrez :  
   
@@ -240,4 +240,4 @@ Vous pouvez utiliser Visual C++ pour le développement mobile multiplateforme po
      où *chemin_fichier_config* est le chemin d’accès à un fichier de configuration au format JSON. Les options de démarrage et leurs valeurs ne doivent pas inclure de tirets.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Install Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)
+ [Installer Visual C++ pour le développement mobile multiplateforme](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)

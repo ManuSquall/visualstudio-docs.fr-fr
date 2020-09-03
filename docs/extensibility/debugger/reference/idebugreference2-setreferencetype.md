@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::SetReferenceType ( Microsoft Docs
+title: 'IDebugReference2 :: SetReferenceType | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 346a95f553b8bb7f246a37555dc191b0fb22ac9b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720356"
 ---
 # <a name="idebugreference2setreferencetype"></a>IDebugReference2::SetReferenceType
-Définit le type de référence. Réservé pour un usage futur.
+Définit le type de référence. Réservé à un usage ultérieur.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,9 +41,9 @@ int SetReferenceType ( 
 
 ## <a name="parameters"></a>Paramètres
 `dwRefType`\
-[dans] Une valeur de [l’énumération REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md) qui spécifie le type de référence.
+dans Valeur de l’énumération [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md) qui spécifie le type de référence.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  Retourne toujours `E_NOTIMPL`.
 
 ## <a name="see-also"></a>Voir aussi

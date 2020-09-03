@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::GetSize Microsoft Docs
+title: 'IDebugReference2 :: obtient | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d7ea57467c6bcc716226ac7075976a0fb9daf5f8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720365"
 ---
 # <a name="idebugreference2getsize"></a>IDebugReference2::GetSize
-Obtient la taille, dans les octets, de la valeur de la référence. Réservé pour un usage futur.
+Obtient la taille, en octets, de la valeur de la référence. Réservé à un usage ultérieur.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,9 +41,9 @@ int GetSize ( 
 
 ## <a name="parameters"></a>Paramètres
 `pdwSize`\
-[out] Retourne la taille, dans les octets, de la valeur de la référence.
+à Retourne la taille, en octets, de la valeur de la référence.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  Retourne toujours `E_NOTIMPL`.
 
 ## <a name="see-also"></a>Voir aussi

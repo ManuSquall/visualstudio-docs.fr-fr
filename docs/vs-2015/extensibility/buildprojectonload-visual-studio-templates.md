@@ -14,10 +14,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 209f015103a291940f2d43ccdbfd140d71c9e8ce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184614"
 ---
 # <a name="buildprojectonload-visual-studio-templates"></a>BuildProjectOnLoad (modèles Visual Studio)
@@ -26,7 +26,7 @@ ms.locfileid: "68184614"
 Spécifie s’il faut générer le projet immédiatement après sa création.  
   
  \<VSTemplate>  
- \<TemplateData >  
+ \<TemplateData>  
  \<BuildProjectOnLoad>  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -53,7 +53,7 @@ Spécifie s’il faut générer le projet immédiatement après sa création.
 ## <a name="text-value"></a>Valeur texte  
  Une valeur texte est requise.  
   
- Le texte doit être `true` ou `false`, indiquant s’il faut générer le projet immédiatement après sa création.  
+ Le texte doit être `true` ou `false` , indiquant s’il faut générer le projet immédiatement après sa création.  
   
 ## <a name="remarks"></a>Notes  
  `BuildProjectOnLoad` est un attribut facultatif. La valeur par défaut est `false`.  

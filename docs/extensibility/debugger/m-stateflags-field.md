@@ -1,5 +1,5 @@
 ---
-title: M_stateFlags Field ( Microsoft Docs
+title: Champ m_stateFlags | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,20 +11,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b504d134c8951072795dc2e202cf05082b12cb64
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738388"
 ---
 # <a name="m_stateflags-field"></a>champ m_stateFlags
-Stocke des informations sur <xref:System.Threading.Tasks.Task> l’état actuel de l’objet.
+Stocke les informations sur l’état actuel de l' <xref:System.Threading.Tasks.Task> objet.
 
- **Espace nom:**<xref:System.Threading.Tasks?displayProperty=fullName>
+ **Espace de noms :** <xref:System.Threading.Tasks?displayProperty=fullName>
 
- **Assemblée:** mscorlib (en *mscorlib.dll*)
+ **Assembly :** mscorlib (en *mscorlib.dll*)
 
- Parce que vous ne pouvez pas accéder à ce membre interne à partir du cadre .NET, la syntaxe suivante est fournie dans common Intermediate Language (CIL).
+ Étant donné que vous ne pouvez pas accéder à ce membre interne à partir de la .NET Framework, la syntaxe suivante est fournie en Common Intermediate Language (CIL).
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,9 +33,9 @@ Stocke des informations sur <xref:System.Threading.Tasks.Task> l’état actuel 
 ```
 
 ## <a name="remarks"></a>Notes
- Vous utilisez <xref:System.Threading.Tasks.Task.Status%2A?displayProperty=fullName> généralement la propriété pour accéder à cette valeur.
+ En général, vous utilisez la <xref:System.Threading.Tasks.Task.Status%2A?displayProperty=fullName> propriété pour accéder à cette valeur.
 
- Ce membre peut être n’importe quelle combinaison des valeurs suivantes :
+ Ce membre peut être n’importe quelle combinaison des valeurs suivantes :
 
 - [TASK_STATE_EXECUTED](../../extensibility/debugger/task-state-executed-field.md)
 

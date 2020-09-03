@@ -14,14 +14,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 00df917b05f5073634b0956a0b44e5b0fc6026a6
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75846329"
 ---
 # <a name="rule-condition-editor-dialog-box-legacy"></a>Éditeur de conditions de règle, boîte de dialogue (héritée)
-Cette rubrique décrit comment utiliser la boîte de dialogue **éditeur de conditions de règle** dans le [!INCLUDE[wfd1](../includes/wfd1-md.md)]hérité. Utilisez le [!INCLUDE[wfd2](../includes/wfd2-md.md)] hérité lorsque vous devez cibler le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+Cette rubrique décrit comment utiliser la boîte de dialogue **éditeur de conditions de règle** dans le hérité [!INCLUDE[wfd1](../includes/wfd1-md.md)] . Utilisez le [!INCLUDE[wfd2](../includes/wfd2-md.md)] hérité lorsque vous devez cibler le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
  Vous créez et modifiez des conditions de règle déclaratives à l’aide de la boîte de dialogue **éditeur de conditions de règle** . Ces conditions de règle sont exposées comme propriétés pour les activités prédéfinies Windows Workflow Foundation suivantes :
 
@@ -41,13 +41,13 @@ Cette rubrique décrit comment utiliser la boîte de dialogue **éditeur de cond
 
   Le tableau suivant décrit les éléments d’interface utilisateur de la boîte de dialogue **éditeur de conditions de règle** .
 
-|Élément de l'interface utilisateur|Description|
+|Élément de l’interface utilisateur|Description|
 |----------------|-----------------|
-|**Condition :**|Entrez l'expression applicable à la condition de règle.|
+|**Etat**|Entrez l'expression applicable à la condition de règle.|
 |**OK**|Cliquez pour enregistrer la condition de règle.|
 
 ## <a name="entering-condition-expressions"></a>Entrée d'expressions de condition
- Les expressions de condition sont entrées sous forme de texte. Vous pouvez taper **cette.** dans l’éditeur pour référencer les champs, les propriétés et les méthodes utilisés dans le workflow, à l’aide d’un menu similaire à IntelliSense. Vous pouvez également taper directement un nom de membre de workflow. Vous pouvez ajouter des opérateurs logiques à la condition, tels que les opérateurs AND, OR ou NOT. Vous pouvez également ajouter des prédicats. Un prédicat se compose d’un opérateur binaire et de deux opérandes. Les opérateurs binaires pris en charge sont **==** , **>** , **\<** , **>=** et **<=** . Les opérandes pris en charge sont à valeur de constante, à fonction arithmétique et à portée publique.
+ Les expressions de condition sont entrées sous forme de texte. Vous pouvez taper **cette.** dans l’éditeur pour référencer les champs, les propriétés et les méthodes utilisés dans le workflow, à l’aide d’un menu similaire à IntelliSense. Vous pouvez également taper directement un nom de membre de workflow. Vous pouvez ajouter des opérateurs logiques à la condition, tels que les opérateurs AND, OR ou NOT. Vous pouvez également ajouter des prédicats. Un prédicat se compose d’un opérateur binaire et de deux opérandes. Les opérateurs binaires pris en charge sont **==** ,, **>** **\<**, **>=** et **<=** . Les opérandes pris en charge sont à valeur de constante, à fonction arithmétique et à portée publique.
 
  Vous pouvez spécifier le type de comparaison, et vous pouvez comparer à une **valeur null** ou à une chaîne vide. Vous pouvez imbriquer des appels à des membres sur une variable qui contient un type complexe, par exemple `this.Address.State == "WA"`.
 
@@ -55,13 +55,13 @@ Cette rubrique décrit comment utiliser la boîte de dialogue **éditeur de cond
 
 - Opérateurs relationnels: ==, =, !=
 
-- Opérateurs de comparaison : <, \<=, >, > =
+- Opérateurs de comparaison : <, \<=, > , >=
 
 - Opérateurs arithmétiques: +, - , *, /, MOD
 
-- Opérateurs logiques : and, & &, or &#124; &#124;, not, !
+- Opérateurs logiques : AND,  && ou,  &#124;&#124;, NOT, !
 
-- Opérateurs au niveau du bit : &,&#124;
+- Opérateurs au niveau du bit : &, &#124;
 
   La priorité des opérateurs d'expression suit les règles de priorité des opérateurs C#.
 

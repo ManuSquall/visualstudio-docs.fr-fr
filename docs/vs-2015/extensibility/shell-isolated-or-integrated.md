@@ -15,16 +15,16 @@ caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: aa346ebfe321e4672ea3fa71a4dcc872ebf22cda
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850232"
 ---
 # <a name="shell-isolated-or-integrated"></a>Shell (isolé ou intégré)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous pouvez créer votre propre application basée sur Visual Studio en mode intégré ou isolé. En mode intégré, de nombreuses fonctionnalités de Visual Studio sont disponibles en plus de votre application. En mode isolé, vous choisissez un sous-ensemble de fonctionnalités de Visual Studio que vous souhaitez distribuer avec votre propre extension.  
+Vous pouvez créer votre propre application basée sur Visual Studio en mode intégré ou isolé. En mode intégré, de nombreuses fonctionnalités de Visual Studio sont disponibles en plus de votre application. En mode isolé, vous choisissez un sous-ensemble de fonctionnalités Visual Studio que vous souhaitez distribuer avec votre propre extension.  
   
 ## <a name="integrated-mode"></a>Mode intégré  
  Le mode intégré permet à vos utilisateurs d’utiliser les fonctionnalités Visual Studio standard, ainsi que vos outils personnalisés. L’interpréteur de commandes intégré est principalement destiné à l’hébergement des langages de programmation et des outils de développement de logiciels.  

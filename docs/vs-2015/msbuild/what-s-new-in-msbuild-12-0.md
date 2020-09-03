@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ba733b7ef20c9a03ad19d9847a4046e4d72ebdef
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75844454"
 ---
 # <a name="what39s-new-in-msbuild-120"></a>Nouveautés de MSBuild 12.0
@@ -22,7 +22,7 @@ ms.locfileid: "75844454"
 MSBuild est désormais installé dans le cadre de Visual Studio et non dans celui de .NET Framework. La version actuelle de MSBuild porte le numéro 12.0. Si vous souhaitez installer MSBuild séparément, téléchargez le package d’installation à partir de [MSBuild Download (Téléchargement de MSBuild)](https://www.microsoft.com/download/details.aspx?id=40760).  
   
 ## <a name="changed-path"></a>Chemin d’accès modifié  
- MSBuild est désormais installé directement sous *%ProgramFiles%* , par exemple, dans C:\Program Files\MSBuild\\.  
+ MSBuild est désormais installé directement sous *%ProgramFiles%*, par exemple, dans C:\Program Files\MSBuild\\.  
   
 ## <a name="changed-properties"></a>Propriétés modifiées  
  Les propriétés MSBuild suivantes sont modifiées à la suite du nouveau numéro de version :  

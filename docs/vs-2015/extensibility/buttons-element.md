@@ -1,5 +1,5 @@
 ---
-title: Boutons d’élément | Microsoft Docs
+title: Button, élément | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e8e0a17e3580b238c63a23e5943e98afbbb9268b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68184550"
 ---
 # <a name="buttons-element"></a>Élément Buttons
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Groupes [bouton](../extensibility/button-element.md) éléments, qui représentent des commandes individuelles.  
+Regroupe les éléments de [bouton](../extensibility/button-element.md) , qui représentent des commandes individuelles.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -45,16 +45,16 @@ Groupes [bouton](../extensibility/button-element.md) éléments, qui représente
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[Élément Buttons](../extensibility/buttons-element.md)|Regroupe les éléments de bouton.|  
-|[Élément Button](../extensibility/button-element.md)|Définit une commande de l’utilisateur peut interagir avec.|  
+|[Élément Buttons](../extensibility/buttons-element.md)|Éléments du bouton groupes.|  
+|[Élément Button](../extensibility/button-element.md)|Définit une commande avec laquelle l’utilisateur peut interagir.|  
   
 ### <a name="parent-elements"></a>Éléments parents  
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[Élément Commands](../extensibility/commands-element.md)|Représente la collection de commandes sur la barre d’outils de VSPackage.|  
+|[Élément Commands](../extensibility/commands-element.md)|Représente la collection de commandes dans la barre d’outils VSPackage.|  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a> Exemple  
   
 ```  
 <Buttons>  
@@ -69,5 +69,5 @@ Groupes [bouton](../extensibility/button-element.md) éléments, qui représente
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Comment VSPackages ajoute des éléments d’Interface utilisateur](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [Comment les VSPackages ajoutent des éléments d’interface utilisateur](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Commandes, menus et barres d’outils](../extensibility/internals/commands-menus-and-toolbars.md)

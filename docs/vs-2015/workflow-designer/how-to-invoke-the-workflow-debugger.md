@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e702b402d5350641aa01d341106634efe5f6c6c4
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75849267"
 ---
 # <a name="how-to-invoke-the-workflow-debugger"></a>Procédure : appeler le débogueur de workflow
@@ -26,7 +26,7 @@ En général, vous déboguez des workflows comme vous déboguez des programmes �
 - Utilisez le débogage distant. Pour plus d’informations sur l’utilisation du débogage à distance, consultez [Comment : activer le débogage distant](https://msdn.microsoft.com/library/febz73k0.aspx).
 
     > [!NOTE]
-    > Si l’application de workflow cible l’architecture x86 et est hébergée sur un ordinateur exécutant un système d’exploitation 64 bits, le débogage à distance ne fonctionnera pas, sauf si [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] est installé sur l’ordinateur distant ou si la cible de l’application de workflow est remplacée par **n’importe quel processeur**.
+    > Si l’application de workflow cible l’architecture x86 et est hébergée sur un ordinateur exécutant un système d’exploitation 64 bits, le débogage à distance ne fonctionnera pas à moins que [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] ne soit installé sur l’ordinateur distant ou que la cible de l’application de workflow soit remplacée par **Any CPU**.
 
 ### <a name="stepping-through-code"></a>Exécution du code pas à pas
 

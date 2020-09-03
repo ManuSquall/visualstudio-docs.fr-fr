@@ -1,5 +1,5 @@
 ---
-title: m_parent Field ( Microsoft Docs
+title: Champ m_parent | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,21 +11,21 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2d9d21cdd7fd89e075d15c0db1b0696deaa5cb46
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738398"
 ---
 # <a name="m_parent-field"></a>champ m_parent
 
-Le champ d’appui pour <xref:System.Threading.Tasks.Task>le parent de la tâche .
+Champ de stockage pour le parent de la tâche <xref:System.Threading.Tasks.Task> .
 
-**Espace nom:**<xref:System.Threading.Tasks?displayProperty=fullName>
+**Espace de noms :** <xref:System.Threading.Tasks?displayProperty=fullName>
 
-**Assemblée:** mscorlib (en *mscorlib.dll*)
+**Assembly :** mscorlib (en *mscorlib.dll*)
 
-Parce que vous ne pouvez pas accéder à ce membre interne à partir du cadre .NET, la syntaxe suivante est fournie dans common Intermediate Language (CIL).
+Étant donné que vous ne pouvez pas accéder à ce membre interne à partir de la .NET Framework, la syntaxe suivante est fournie en Common Intermediate Language (CIL).
 
 ## <a name="syntax"></a>Syntaxe
 

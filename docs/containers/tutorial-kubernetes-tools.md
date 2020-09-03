@@ -9,10 +9,10 @@ ms.technology: vs-azure
 ms.workload:
 - azure
 ms.openlocfilehash: 7778019e73119a4b8b1a5842bb7a8c04ef017143
-ms.sourcegitcommit: 50bbb62525c91c5a31bab57e1caf37c5638872c8
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87913301"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Prise en main des outils Kubernetes de Visual Studio
@@ -165,7 +165,7 @@ Pour ce faire, vous devez d’abord vérifier que vous avez installé tout ce qu
 
 ::: moniker-end
 
-Félicitations ! Vous pouvez maintenant utiliser toute la puissance de Visual Studio pour l’ensemble de votre développement d’applications Kubernetes.
+Félicitations ! Vous pouvez maintenant utiliser toute la puissance de Visual Studio pour l’ensemble de votre développement d’applications Kubernetes.
 
 ## <a name="remove-kubernetes-support"></a>Supprimer la prise en charge de Kubernetes
 

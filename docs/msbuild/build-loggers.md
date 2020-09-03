@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a00bbb8ce239275ff140dbedf2157e4cdc41d44c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77634524"
 ---
 # <a name="build-loggers"></a>Enregistreurs d’événements de génération
@@ -44,15 +44,15 @@ Maintenant que l’enregistreur d’événements est inscrit pour des événemen
 
 ## <a name="respond-to-logger-verbosity-values"></a>Répondre aux valeurs de détails de l’enregistreur d’événements
 
-Dans certains cas, vous pouvez ne enregistrer les informations d’un **-verbosity** événement si le commutateur MSBuild.exe-verbosity contient une certaine valeur. Dans cet <xref:Microsoft.Build.Framework.IEventSource.TargetStarted> exemple, le gestionnaire d’événements <xref:Microsoft.Build.Utilities.Logger.Verbosity%2A> enregistre seulement un message si la propriété, <xref:Microsoft.Build.Framework.LoggerVerbosity> `Detailed`qui est définie par le commutateur **-verbosité,** est égale à .
+Dans certains cas, vous souhaiterez peut-être enregistrer uniquement les informations d’un événement si le commutateur MSBuild.exe **-verbosity** contient une certaine valeur. Dans cet exemple, le <xref:Microsoft.Build.Framework.IEventSource.TargetStarted> Gestionnaire d’événements enregistre un message uniquement si la <xref:Microsoft.Build.Utilities.Logger.Verbosity%2A> propriété, définie par le commutateur **-verbosity** , est égale à <xref:Microsoft.Build.Framework.LoggerVerbosity> `Detailed` .
 
 [!code-csharp[msbuild_SimpleConsoleLogger#4](../msbuild/codesnippet/CSharp/build-loggers_3.cs)]
 
 ## <a name="specify-a-logger"></a>Spécifier un enregistreur d’événements
 
-Une fois que le bûcheron est compilé dans un assemblage, vous devez dire MSBuild d’utiliser ce bûcheron pendant les constructions. Ceci est fait en utilisant le commutateur **de -logger** avec *MSBuild.exe*. Pour plus d’informations sur les commutateurs disponibles pour *MSBuild.exe*, consultez [Informations de référence sur la ligne de commande](../msbuild/msbuild-command-line-reference.md).
+Une fois l’enregistreur d’événements compilé dans un assembly, vous devez indiquer à MSBuild d’utiliser cet enregistreur d’événements pendant les builds. Pour ce faire, utilisez le commutateur **-logger** avec *MSBuild.exe*. Pour plus d’informations sur les commutateurs disponibles pour *MSBuild.exe*, consultez [Informations de référence sur la ligne de commande](../msbuild/msbuild-command-line-reference.md).
 
-La ligne de commande suivante génère le projet *MyProject.csproj* et utilise la classe d’enregistreur d’événements implémentée dans *SimpleLogger.dll*. Le commutateur **-nologo** cache la bannière et le message de copyright et le commutateur **-noconsolelogger** désactive le bûcheron de console MSBuild par défaut.
+La ligne de commande suivante génère le projet *MyProject.csproj* et utilise la classe d’enregistreur d’événements implémentée dans *SimpleLogger.dll*. Le commutateur **-nologo** masque la bannière et le message de copyright, et le commutateur **-noconsolelogger** désactive l’enregistreur d’événements de console MSBuild par défaut.
 
 ```cmd
 MSBuild -nologo -noconsolelogger -logger:SimpleLogger.dll
@@ -64,7 +64,7 @@ La ligne de commande suivante génère le projet avec le même enregistreur d’
 MSBuild -nologo -noconsolelogger -logger:SimpleLogger.dll -verbosity:Detailed
 ```
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 
 ### <a name="description"></a>Description
 
@@ -74,7 +74,7 @@ L’exemple suivant contient le code complet pour l’enregistreur d’événeme
 
 [!code-csharp[msbuild_SimpleConsoleLogger#1](../msbuild/codesnippet/CSharp/build-loggers_4.cs)]
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 
 ### <a name="description"></a>Description
 

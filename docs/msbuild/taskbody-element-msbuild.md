@@ -1,5 +1,5 @@
 ---
-title: Élément de tâche de l’utilisation de l’alosk (MSBuild) Microsoft Docs
+title: Élément Task de UsingTask (MSBuild) | Microsoft Docs
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -17,17 +17,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 36644a6b21092361d92dba5f0886eb4198884995
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "78263186"
 ---
-# <a name="task-element-of-usingtask-msbuild"></a>Élément de tâche de UsingTask (MSBuild)
+# <a name="task-element-of-usingtask-msbuild"></a>Élément Task de UsingTask (MSBuild)
 
 Contient les données transmises à un élément `UsingTask` `TaskFactory`. Pour plus d’informations, voir [Élément UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).
 
- \<Projet> \<Utilisation de> \<> de travail
+ \<Project> \<UsingTask>
+ \<Task>
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -55,9 +56,9 @@ Contient les données transmises à un élément `UsingTask` `TaskFactory`. Pour
 
 | Élément | Description |
 | - | - |
-| [UsingTask](../msbuild/usingtask-element-msbuild.md) | Fournit un moyen d’enregistrer les tâches dans MSBuild. Un projet peut ne contenir aucun élément `UsingTask` ou en contenir plusieurs. |
+| [UsingTask](../msbuild/usingtask-element-msbuild.md) | Fournit un moyen d’inscrire des tâches dans MSBuild. Un projet peut ne contenir aucun élément `UsingTask` ou en contenir plusieurs. |
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 
  L'exemple suivant montre comment utiliser l'élément `Task` avec un attribut `Evaluate`.
 
@@ -78,4 +79,4 @@ Contient les données transmises à un élément `UsingTask` `TaskFactory`. Pour
 
 - [Tâches](../msbuild/msbuild-tasks.md)
 - [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)
-- [Référence du schéma de fichier de projet](../msbuild/msbuild-project-file-schema-reference.md)
+- [Référence du schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)

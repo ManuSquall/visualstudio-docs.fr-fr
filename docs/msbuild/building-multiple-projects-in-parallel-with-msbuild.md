@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1723fba810450fe5e31a43d63f3704ab74f455f4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77634498"
 ---
 # <a name="build-multiple-projects-in-parallel-with-msbuild"></a>Générer plusieurs projets en parallèle avec MSBuild
@@ -46,7 +46,7 @@ msbuild.exe myproj.proj -maxcpucount:3
 
 ## <a name="buildinparallel-task-parameter"></a>Paramètre de tâche BuildInParallel
 
-`BuildInParallel`est un paramètre boolean optionnel sur une tâche MSBuild. Quand `BuildInParallel` a la valeur `true` (sa valeur par défaut est `true`), plusieurs processus de travail sont créés pour générer le plus de projets possible simultanément. Pour que cela fonctionne correctement, vous devez affecter une valeur supérieure à 1 au commutateur `-maxcpucount`, et le système doit avoir au moins deux cœurs ou deux processeurs.
+`BuildInParallel` est un paramètre booléen facultatif sur une tâche MSBuild. Quand `BuildInParallel` a la valeur `true` (sa valeur par défaut est `true`), plusieurs processus de travail sont créés pour générer le plus de projets possible simultanément. Pour que cela fonctionne correctement, vous devez affecter une valeur supérieure à 1 au commutateur `-maxcpucount`, et le système doit avoir au moins deux cœurs ou deux processeurs.
 
 Voici un exemple tiré de *microsoft.common.targets* qui décrit comment définir le paramètre `BuildInParallel`.
 
