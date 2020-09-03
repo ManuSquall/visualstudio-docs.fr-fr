@@ -1,5 +1,5 @@
 ---
-title: Commande, fenêtre | Microsoft Docs
+title: Commande, fenêtre | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -18,13 +18,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0c3bcac9f320840faaed32d0622f30e4cbd288ea
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660841"
 ---
-# <a name="command-window"></a>Commande, fenêtre
+# <a name="command-window"></a>Fenêtre Commande
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 La fenêtre **Commande** est utilisée pour exécuter des commandes ou des alias directement dans l’environnement de développement intégré (IDE) [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Vous pouvez exécuter à la fois les commandes de menu et les commandes qui n’apparaissent dans aucun menu. Pour afficher la fenêtre **Commande**, sélectionnez **Autres fenêtres** dans le menu **Affichage** et choisissez **Fenêtre Commande**.
@@ -47,7 +47,7 @@ La fenêtre **Commande** est utilisée pour exécuter des commandes ou des alias
 ## <a name="entering-commands"></a>Entrée de commandes
  Le symbole supérieur à (`>`) apparaît à gauche de la fenêtre Commande comme une invite pour les nouvelles lignes. Utilisez les touches de direction HAUT et BAS pour faire défiler les commandes précédemment émises.
 
-|Tâche|Solution|Exemples|
+|Tâche|Solution|Exemple|
 |----------|--------------|-------------|
 |Évaluer une expression.|Faites précéder l’expression d’un point d’interrogation (`?`).|`? myvar`|
 |Basculer vers une fenêtre Exécution.|Entrez `immed` dans la fenêtre sans le signe supérieur à (>)|`immed`|
@@ -58,7 +58,7 @@ La fenêtre **Commande** est utilisée pour exécuter des commandes ou des alias
 |Action|Emplacement du curseur|Combinaison de touches|
 |------------|---------------------|----------------|
 |Parcourir la liste des commandes précédemment entrées.|Ligne d’entrée|HAUT et BAS|
-|Faire défiler le contenu de la fenêtre vers le haut.|Contenu de la fenêtre Commande|CTRL+HAUT|
+|Faire défiler le contenu de la fenêtre vers le haut.|Contenu de la fenêtre Commande|Ctrl+Haut|
 |Faire défiler le contenu de la fenêtre vers le bas.|Contenu de la fenêtre Commande|BAS ou CTRL+BAS|
 
 > [!TIP]
@@ -93,7 +93,7 @@ La fenêtre **Commande** est utilisée pour exécuter des commandes ou des alias
 Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 ```
 
- Dans cet exemple :
+ Dans cet exemple,
 
 - `Edit.ReplaceInFiles` est la commande
 
@@ -113,7 +113,7 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
   Quand une valeur est attribuée à un groupe de commutateurs de forme abrégée, cette valeur s’applique à chacun des commutateurs. Par exemple, `/pgm:123` équivaut à `/p:123 /g:123 /m:123`. Si l’un des commutateurs du groupe n’accepte pas la valeur spécifiée, une erreur se produit.
 
 ## <a name="escape-characters"></a>Caractères d’échappement
- La présence d’un signe d’insertion (^) dans une ligne de commande signifie que le caractère situé juste après ce signe est interprété littéralement, et non comme un caractère de contrôle. Ceci permet d’incorporer des guillemets ("), des espaces, des barres obliques, des accents circonflexes ou tout autre caractère littéral dans une valeur de paramètre ou de commutateur, à l’exception des noms de commutateur. Par exemple :
+ La présence d’un signe d’insertion (^) dans une ligne de commande signifie que le caractère situé juste après ce signe est interprété littéralement, et non comme un caractère de contrôle. Ceci permet d’incorporer des guillemets ("), des espaces, des barres obliques, des accents circonflexes ou tout autre caractère littéral dans une valeur de paramètre ou de commutateur, à l’exception des noms de commutateur. Par exemple,
 
 ```
 >Edit.Find ^^t /regex
@@ -122,7 +122,7 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
  Un accent circonflexe fonctionne de la même façon, qu’il soit à l’intérieur ou en dehors des guillemets. Si un accent circonflexe est le dernier caractère de la ligne, il est ignoré. L’exemple illustré ici montre comment rechercher le modèle « ^t ».
 
 ## <a name="use-quotes-for-path-names-with-spaces"></a>Utiliser des guillemets pour les noms de chemin avec des espaces
- Si, par exemple, vous souhaitez ouvrir un fichier qui possède un chemin contenant des espaces, vous devez placer des guillemets doubles autour du chemin ou du segment de chemin contenant des espaces : **C:\\"Program Files"** ou **"C:\Program Files"** .
+ Si, par exemple, vous souhaitez ouvrir un fichier qui possède un chemin contenant des espaces, vous devez placer des guillemets doubles autour du chemin ou du segment de chemin contenant des espaces : **C:\\"Program Files"** ou **"C:\Program Files"**.
 
 ## <a name="see-also"></a>Voir aussi
  [Alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md) , [commandes Visual Studio](../../ide/reference/visual-studio-commands.md)

@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 20c22e0ea2ef05c108ebe564b186ede2a02f9dfe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68162428"
 ---
 # <a name="itemgroup-element-msbuild"></a>Élément ItemGroup (MSBuild)
@@ -62,12 +62,12 @@ Contient un ensemble d’éléments [Item](../msbuild/item-element-msbuild.md) d
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[Projet](../msbuild/project-element-msbuild.md)|Élément racine requis d'un fichier projet [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].|  
-|[Target](../msbuild/target-element-msbuild.md)|Depuis .NET Framework 3.5, l’élément `ItemGroup` peut apparaître dans un élément `Target`. Pour plus d’informations, consultez l’article [Targets (Cibles MSBuild)](../msbuild/msbuild-targets.md).|  
+|[Projet](../msbuild/project-element-msbuild.md)|Élément racine requis d'un fichier projet [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] .|  
+|[Cible](../msbuild/target-element-msbuild.md)|Depuis .NET Framework 3.5, l’élément `ItemGroup` peut apparaître dans un élément `Target`. Pour plus d’informations, consultez l’article [Targets (Cibles MSBuild)](../msbuild/msbuild-targets.md).|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
   
-## <a name="example"></a>Exemples  
+## <a name="example"></a>Exemple  
  L’exemple de code suivant illustre les collections d’éléments définis par l’utilisateur `Res` et `CodeFiles` déclarés dans un élément `ItemGroup`. Chacun des éléments de la collection d’éléments `Res` contient un élément [ItemMetadata](../msbuild/itemmetadata-element-msbuild.md) enfant défini par l’utilisateur.  
   
 ```  
@@ -89,5 +89,5 @@ Contient un ensemble d’éléments [Item](../msbuild/item-element-msbuild.md) d
   
 ## <a name="see-also"></a>Voir aussi  
  [Référence du schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)   
- [Éléments](../msbuild/msbuild-items.md)   
+ [Contenus](../msbuild/msbuild-items.md)   
  [Éléments communs des projets MSBuild](../msbuild/common-msbuild-project-items.md)

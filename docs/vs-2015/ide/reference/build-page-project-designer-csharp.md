@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 21b572e99d23c882f90a1e9218e7a52fb94aedb8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660909"
 ---
 # <a name="build-page-project-designer-c"></a>Générer, page du Concepteur de projets (C#)
@@ -38,7 +38,7 @@ Utilisez la page **Générer** du **Concepteur de projet** pour spécifier les p
 
  **Configuration** Spécifie les paramètres de configuration à afficher ou à modifier. Les paramètres peuvent être **Active (Debug)** (valeur par défaut), **Debug**, **Release** ou **Toutes les configurations**.
 
- **Plateforme** Spécifie les paramètres de plateforme à afficher ou à modifier. Le paramètre par défaut est **Active (Any CPU)** . Vous pouvez modifier la plateforme active à l’aide du **Gestionnaire de configurations**. Pour plus d’informations, consultez [Guide pratique pour créer et modifier des configurations](../../ide/how-to-create-and-edit-configurations.md).
+ **Plateforme** Spécifie les paramètres de plateforme à afficher ou à modifier. Le paramètre par défaut est **Active (Any CPU)**. Vous pouvez modifier la plateforme active à l’aide du **Gestionnaire de configurations**. Pour plus d’informations, consultez [Comment : créer et modifier des configurations](../../ide/how-to-create-and-edit-configurations.md).
 
 ## <a name="general"></a>Général
  Les options suivantes vous permettent de configurer plusieurs paramètres du compilateur C#.
@@ -85,7 +85,7 @@ Utilisez la page **Générer** du **Concepteur de projet** pour spécifier les p
 
  **Tous** Traite tous les avertissements comme des erreurs.
 
-## <a name="output"></a>Sortie
+## <a name="output"></a>Output
  Les paramètres suivants sont utilisés pour configurer les options de sortie pour le processus de génération.
 
  **Chemin de sortie** Spécifie l’emplacement des fichiers de sortie pour cette configuration de projet. Entrez le chemin de la sortie de la génération dans cette zone ou choisissez sur le bouton **Parcourir** pour spécifier un chemin. Notez que ce chemin est relatif ; si vous entrez un chemin absolu, il sera enregistré comme relatif. Le chemin par défaut est bin\Debug ou bin\Release\\. Pour plus d’informations, consultez [Configurations de projet Debug et Release](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).
@@ -101,4 +101,4 @@ Utilisez la page **Générer** du **Concepteur de projet** pour spécifier les p
  **Avancé** Cliquez pour afficher la [boîte de dialogue Paramètres de génération avancés (C#)](../../ide/reference/advanced-build-settings-dialog-box-csharp.md).
 
 ## <a name="see-also"></a>Voir aussi
- Informations de [référence](../../ide/reference/project-properties-reference.md) [ C# sur les propriétés de projet options du compilateur](https://msdn.microsoft.com/library/d3403556-1816-4546-a782-e8223a772e44)
+ [Référence des propriétés de projet](../../ide/reference/project-properties-reference.md) ( [Options du compilateur C#](https://msdn.microsoft.com/library/d3403556-1816-4546-a782-e8223a772e44) )

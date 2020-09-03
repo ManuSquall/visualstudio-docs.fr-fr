@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5d48dfab18ec2165753ac19330f7fbe18c923da9
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71256002"
 ---
 # <a name="persist-dynamic-controls-in-office-documents"></a>Rendre des contrôles dynamiques persistants dans des documents Office
@@ -51,7 +51,7 @@ Le tableau suivant répertorie l’objet Office natif laissé en arrière-plan d
 
 Vous pouvez recréer des contrôles hôtes dynamiques à la place des contrôles natifs existants chaque fois qu’un utilisateur ouvre le document. Créer des contrôles hôtes de cette manière lors de l’ouverture d’un document simule l’expérience que les utilisateurs peuvent attendre.
 
-Pour recréer un <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle hôte pour Word, ou un contrôle hôte ou <xref:Microsoft.Office.Tools.Excel.ListObject> pour Excel, utilisez une \< <xref:Microsoft.Office.Tools.Excel.ControlCollection?displayProperty=fullName> `Add` *classe de contrôle*> méthode d’un objet <xref:Microsoft.Office.Tools.Word.ControlCollection?displayProperty=fullName> ou. Utilisez une méthode qui a un paramètre pour l’objet Office natif.
+Pour recréer un contrôle hôte pour Word, ou un <xref:Microsoft.Office.Tools.Excel.NamedRange> <xref:Microsoft.Office.Tools.Excel.ListObject> contrôle hôte ou pour Excel, utilisez une `Add` \<*control class*> méthode d’un <xref:Microsoft.Office.Tools.Excel.ControlCollection?displayProperty=fullName> objet ou <xref:Microsoft.Office.Tools.Word.ControlCollection?displayProperty=fullName> . Utilisez une méthode qui a un paramètre pour l’objet Office natif.
 
 Par exemple, si vous souhaitez créer un contrôle hôte <xref:Microsoft.Office.Tools.Excel.ListObject?displayProperty=fullName> à partir d’un <xref:Microsoft.Office.Interop.Excel.ListObject?displayProperty=fullName> natif existant lors de l’ouverture du document, utilisez la méthode <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddListObject%2A> et transmettez le <xref:Microsoft.Office.Interop.Excel.ListObject>existant. L’exemple de code suivant montre cette opération dans un projet au niveau du document pour Excel. Le code recrée un <xref:Microsoft.Office.Tools.Excel.ListObject> dynamique qui est basé sur un <xref:Microsoft.Office.Interop.Excel.ListObject> existant nommé `MyListObject` dans la classe `Sheet1` .
 
@@ -60,9 +60,9 @@ Par exemple, si vous souhaitez créer un contrôle hôte <xref:Microsoft.Office.
 
 ### <a name="re-create-chart"></a>Recréer le graphique
 
-Pour recréer un <xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName> contrôle hôte, vous devez d’abord supprimer le natif <xref:Microsoft.Office.Interop.Excel.Chart?displayProperty=fullName>, puis recréer le <xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName> à l’aide de la <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddChart%2A> méthode. Il n’existe `Add` \<aucune *classe de contrôle*> méthode qui vous permet de créer <xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName> un nouveau basé sur <xref:Microsoft.Office.Interop.Excel.Chart?displayProperty=fullName>un existant.
+Pour recréer un <xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName> contrôle hôte, vous devez d’abord supprimer le natif <xref:Microsoft.Office.Interop.Excel.Chart?displayProperty=fullName> , puis recréer le à l' <xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName> aide de la <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddChart%2A> méthode. Il n’existe aucune `Add` \<*control class*> méthode vous permettant de créer un nouveau <xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName> basé sur un existant <xref:Microsoft.Office.Interop.Excel.Chart?displayProperty=fullName> .
 
-Si vous ne supprimez pas d’abord <xref:Microsoft.Office.Interop.Excel.Chart>le natif, vous créerez un deuxième graphique dupliqué lorsque vous recréerez le <xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName>.
+Si vous ne supprimez pas d’abord le natif <xref:Microsoft.Office.Interop.Excel.Chart> , vous créerez un deuxième graphique dupliqué lorsque vous recréerez le <xref:Microsoft.Office.Tools.Excel.Chart?displayProperty=fullName> .
 
 ## <a name="persist-windows-forms-controls-in-documents"></a>Conserver les contrôles de Windows Forms dans les documents
 
@@ -78,9 +78,9 @@ Vous pouvez recréer des contrôles Windows Forms supprimés lorsque l’utilisa
 
 1. Stocker des informations sur la taille, l’emplacement et l’état des contrôles lorsque le document est enregistré ou fermé. Dans une personnalisation au niveau du document, vous pouvez enregistrer les données dans le cache de données dans le document. Dans un complément VSTO, vous pouvez enregistrer les données dans une partie XML personnalisée dans le document.
 
-2. Recréez les contrôles dans un événement qui est déclenché lors de l’ouverture du document. Dans les projets au niveau du document, vous pouvez le faire dans les gestionnaires d’évènements `Sheet`*n*`_Startup` ou `ThisDocument_Startup` . Dans les projets de complément VSTO, vous pouvez le faire dans les gestionnaires d’événements pour les événements <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> ou <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> .
+2. Recréez les contrôles dans un événement qui est déclenché lors de l’ouverture du document. Dans les projets au niveau du document, vous pouvez le faire dans les `Sheet` *n* `_Startup` gestionnaires d’événements n ou `ThisDocument_Startup` . Dans les projets de complément VSTO, vous pouvez le faire dans les gestionnaires d’événements pour les événements <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> ou <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> .
 
-### <a name="removingActiveX"></a>Supprimer des wrappers ActiveX dans un complément
+### <a name="remove-activex-wrappers-in-an-add-in"></a><a name="removingActiveX"></a> Supprimer des wrappers ActiveX dans un complément
 
 Lorsque vous ajoutez des contrôles de Windows Forms dynamiques à des documents à l’aide d’un complément VSTO, vous pouvez empêcher les wrappers ActiveX des contrôles d’apparaître dans le document la prochaine fois qu’ils sont ouverts de l’une des manières suivantes.
 
@@ -95,7 +95,7 @@ L’exemple de code suivant montre comment appeler la méthode `GetVstoObject` l
 [!code-vb[Trin_WordAddInDynamicControls#11](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#11)]
 [!code-csharp[Trin_WordAddInDynamicControls#11](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#11)]
 
-Bien que la méthode `GetVstoObject` soit principalement utilisée pour générer un nouvel élément hôte au moment de l’exécution, elle efface également tous les wrappers ActiveX du document la première fois qu’elle est appelée pour un document spécifique. Pour plus d’informations sur l’utilisation de `GetVstoObject` la méthode, consultez [extension de documents Word et de classeurs Excel dans des compléments VSTO au moment](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)de l’exécution.
+Bien que la `GetVstoObject` méthode soit principalement utilisée pour générer un nouvel élément hôte au moment de l’exécution, cette méthode efface également tous les wrappers ActiveX du document la première fois qu’elle est appelée pour un document spécifique. Pour plus d’informations sur l’utilisation de la `GetVstoObject` méthode, consultez [extension de documents Word et de classeurs Excel dans des compléments VSTO au moment](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)de l’exécution.
 
 Si votre complément VSTO crée des contrôles dynamiques lorsque le document est ouvert, votre complément VSTO appellera déjà la `GetVstoObject` méthode dans le cadre du processus de création des contrôles. Vous n’avez pas besoin d’ajouter un appel séparé à la méthode `GetVstoObject` pour supprimer les wrappers ActiveX dans ce scénario.
 

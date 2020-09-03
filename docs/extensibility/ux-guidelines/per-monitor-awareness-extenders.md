@@ -15,15 +15,15 @@ dev_langs:
 - CSharp
 - CPP
 ms.openlocfilehash: 09ec5d82251fa4598096fca8a59c9a1fd29e3f27
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "69585370"
 ---
 # <a name="per-monitor-awareness-support-for-visual-studio-extenders"></a>Prise en charge de la sensibilisation par moniteur pour les extendeurs Visual Studio
 
-Les versions antérieures à Visual Studio 2019 avaient un contexte de reconnaissance PPP défini sur la prise en charge du système, plutôt que sur la prise en charge de la résolution par moniteur (PMA). L’exécution dans la sensibilisation du système a entraîné une dégradation de l’expérience visuelle (par exemple, des polices ou des icônes floues) à chaque fois que Visual Studio devait effectuer un rendu sur des moniteurs avec des facteurs d’échelle différents ou à distance sur des machines avec différentes configurations d’affichage (par exemple, différentes Mise à l’échelle Windows).
+Les versions antérieures à Visual Studio 2019 avaient un contexte de reconnaissance PPP défini sur la prise en charge du système, plutôt que sur la prise en charge de la résolution par moniteur (PMA). L’exécution dans la reconnaissance du système a entraîné une dégradation de l’expérience visuelle (par exemple, des polices ou des icônes floues) à chaque fois que Visual Studio devait effectuer un rendu sur des moniteurs avec des facteurs d’échelle différents ou à distance sur des ordinateurs avec différentes configurations d’affichage (par exemple, une mise à l’échelle de Windows).
 
 Le contexte de détection PPP de Visual Studio 2019 est défini comme AVM, lorsque l’environnement le prend en charge, ce qui permet à Visual Studio de s’afficher en fonction de la configuration de l’affichage où il est hébergé plutôt que d’une configuration définie par le système. À la fin de la traduction en une interface utilisateur toujours nette pour les zones de surface qui prennent en charge le mode PMA.
 
@@ -39,11 +39,11 @@ Pour plus d’informations sur les conditions générales et le scénario global
 
 ## <a name="enable-pma"></a>Activer AVM
 
-Pour activer l’AVM dans Visual Studio, les conditions suivantes doivent être remplies:
+Pour activer l’AVM dans Visual Studio, les conditions suivantes doivent être remplies :
 
 - Mise à jour 2018 de Windows 10 avril (v1803, RS4) ou version ultérieure
 - .NET Framework 4,8 RTM ou version ultérieure
-- L’option [«optimiser le rendu pour les écrans avec des densités de pixels différentes»](../../ide/reference/general-environment-options-dialog-box.md) est activée pour Visual Studio 2019
+- L’option [« optimiser le rendu pour les écrans avec des densités de pixels différentes »](../../ide/reference/general-environment-options-dialog-box.md) est activée pour Visual Studio 2019
 
 Une fois ces conditions satisfaites, Visual Studio active automatiquement le mode PMA à travers le processus.
 
@@ -54,7 +54,7 @@ Une fois ces conditions satisfaites, Visual Studio active automatiquement le mod
 
 Visual Studio prend officiellement en charge les infrastructures d’interface utilisateur WPF, Windows Forms, Win32 et HTML/JS. Lorsque Visual Studio est placé en mode PMA, chaque pile d’interface utilisateur se comporte différemment. Par conséquent, quelle que soit l’infrastructure de l’interface utilisateur, il est recommandé d’effectuer un test pour vérifier que toute l’interface utilisateur est conforme au mode PMA.
 
-Il est recommandé de valider les scénarios courants suivants:
+Il est recommandé de valider les scénarios courants suivants :
 
 - Modification du facteur d’échelle d’un seul environnement d’analyse pendant l’exécution de l’application.
 
@@ -72,9 +72,9 @@ Il est recommandé de valider les scénarios courants suivants:
 
   Ce scénario permet de vérifier que l’interface utilisateur répond au changement de PPP Windows dynamique.
 
-Un bon test préliminaire indiquant si votre interface utilisateur peut rencontrer des problèmes est que le code utilise les classes *Microsoft. VisualStudio. Utilities. dpi. DpiHelper*, *Microsoft. VisualStudio. PlatformUI. DpiHelper*ou *vsui:: CDpiHelper* . Ces anciennes classes DpiHelper prennent uniquement en charge la prise en charge DPI du système et ne fonctionnent pas toujours correctement lorsque le processus est AVM.
+Un bon test préliminaire indiquant si votre interface utilisateur peut rencontrer des problèmes est que le code utilise les classes *Microsoft. VisualStudio. Utilities. dpi. DpiHelper*, *Microsoft. VisualStudio. PlatformUI. DpiHelper*ou *vsui :: CDpiHelper* . Ces anciennes classes DpiHelper prennent uniquement en charge la prise en charge DPI du système et ne fonctionnent pas toujours correctement lorsque le processus est AVM.
 
-L’utilisation classique de ces DpiHelpers se présente comme suit:
+L’utilisation classique de ces DpiHelpers se présente comme suit :
 
 ```cs
 Point screenTopRight = logicalBounds.TopRight.LogicalToDeviceUnits();
@@ -116,39 +116,39 @@ Comme pour le problème de mise à l’échelle, les éléments d’interface ut
 Une interface utilisateur est créée hors processus et si le processus de création externe est dans un mode de reconnaissance PPP différent de Visual Studio, cela peut introduire l’un des problèmes de rendu précédents.
 
 #### <a name="windows-forms-controls-images-or-layouts-rendered-incorrectly"></a>Les contrôles, les images ou les dispositions de Windows Forms restitués de manière incorrecte
-Tout le contenu Windows Forms prend pas en charge le mode PMA. Par conséquent, vous pouvez voir un problème de rendu avec des dispositions incorrectes ou une mise à l’échelle. Dans ce cas, une solution possible est de restituer explicitement le contenu Windows Forms dans le DpiAwarenessContext «sensible au système» (consultez [forcer un contrôle dans un DpiAwarenessContext spécifique](#force-a-control-into-a-specific-dpiawarenesscontext)).
+Tout le contenu Windows Forms prend pas en charge le mode PMA. Par conséquent, vous pouvez voir un problème de rendu avec des dispositions incorrectes ou une mise à l’échelle. Dans ce cas, une solution possible est de restituer explicitement le contenu Windows Forms dans le DpiAwarenessContext « sensible au système » (consultez [forcer un contrôle dans un DpiAwarenessContext spécifique](#force-a-control-into-a-specific-dpiawarenesscontext)).
 
 #### <a name="windows-forms-controls-or-windows-not-displaying"></a>Contrôles de Windows Forms ou fenêtres non affichées
 L’une des principales causes de ce problème est que les développeurs essaient de redéfinir la parente d’un contrôle ou d’une fenêtre avec une DpiAwarenessContext à une fenêtre avec un DpiAwarenessContext différent.
 
-Les images suivantes montrent les restrictions actuelles du système d’exploitation Windows **par défaut** dans les fenêtres de parentage:
+Les images suivantes montrent les restrictions actuelles du système d’exploitation Windows **par défaut** dans les fenêtres de parentage :
 
 ![Capture d’écran du comportement de parent correct](media/PMA-parenting-behavior.PNG)
 
 > [!Note]
-> Vous pouvez modifier ce comportement en définissant le comportement d’hébergement du thread (reportez-vous à l' [énumération Dpi_Hosting_Behavior](/windows/desktop/api/windef/ne-windef-dpi_hosting_behavior)).
+> Vous pouvez modifier ce comportement en définissant le comportement d’hébergement des threads (reportez-vous à [Dpi_Hosting_Behavior énumération](/windows/desktop/api/windef/ne-windef-dpi_hosting_behavior)).
 
 Par conséquent, si vous définissez une relation parent-enfant entre des modes non pris en charge, elle échoue et le contrôle ou la fenêtre peut ne pas être rendu comme prévu.
 
 ### <a name="diagnose-issues"></a>Diagnostiquer les problèmes
 
-Il existe de nombreux facteurs à prendre en compte lors de l’identification des problèmes liés à PMA: 
+Il existe de nombreux facteurs à prendre en compte lors de l’identification des problèmes liés à PMA : 
 
-- L’interface utilisateur ou l’API attend-t-elle des valeurs logiques ou d’appareil?
+- L’interface utilisateur ou l’API attend-t-elle des valeurs logiques ou d’appareil ?
     - L’interface utilisateur et les API WPF utilisent généralement des valeurs logiques (mais pas toujours)
     - L’interface utilisateur et les API Win32 utilisent généralement des valeurs d’appareil
 
-- Où les valeurs proviennent-elles?
+- Où les valeurs proviennent-elles ?
     - Si vous recevez des valeurs à partir d’une autre interface utilisateur ou API, c’est qu’il passe des valeurs d’appareil ou logique.
-    - Si vous recevez des valeurs à partir de plusieurs sources, les mêmes types de valeurs sont-ils utilisés/attendus, ou les conversions doivent être mélangées et mises en correspondance?
+    - Si vous recevez des valeurs à partir de plusieurs sources, les mêmes types de valeurs sont-ils utilisés/attendus, ou les conversions doivent être mélangées et mises en correspondance ?
 
-- Les constantes d’interface utilisateur sont-elles en cours d’utilisation?
+- Les constantes d’interface utilisateur sont-elles en cours d’utilisation ?
 
-- Le thread se trouve-t-il dans le contexte PPP approprié pour les valeurs qu’il reçoit?
+- Le thread se trouve-t-il dans le contexte PPP approprié pour les valeurs qu’il reçoit ?
 
   Les modifications apportées à activer l’hébergement PPP mixte doivent généralement placer les chemins de code dans le contexte approprié, mais le travail effectué en dehors de la boucle de message principale ou du workflow peut s’exécuter dans un contexte PPP incorrect.
 
-- Les valeurs sont-elles des limites de contexte croisées PPP?
+- Les valeurs sont-elles des limites de contexte croisées PPP ?
 
   Faire glisser & déplacement est une situation courante dans laquelle les coordonnées peuvent traverser des contextes PPP. La fenêtre tente d’effectuer la bonne chose, mais dans certains cas, l’interface utilisateur de l’hôte peut nécessiter un travail de conversion pour garantir la correspondance des limites de contexte.
 
@@ -168,7 +168,7 @@ Comme Snoop, les outils XAML de Visual Studio peuvent vous aider à diagnostique
 
 ### <a name="replace-dpihelper-calls"></a>Remplacer les appels DpiHelper
 
-Dans la plupart des cas, la résolution des problèmes d’interface utilisateur en mode PMA revient au remplacement des appels dans le code managé par les anciennes classes *Microsoft. VisualStudio. Utilities. dpi. DpiHelper* et *Microsoft. VisualStudio. PlatformUI. DpiHelper* , avec des appels au nouveau  *Classe d’assistance Microsoft. VisualStudio. Utilities. DpiAwareness* . 
+Dans la plupart des cas, la résolution des problèmes d’interface utilisateur en mode PMA revient au remplacement des appels dans le code managé par les anciennes classes *Microsoft. VisualStudio. Utilities. dpi. DpiHelper* et *Microsoft. VisualStudio. PlatformUI. DpiHelper* , avec des appels à la nouvelle classe d’assistance *Microsoft. VisualStudio. Utilities. DpiAwareness* . 
 
 ```cs
 // Remove this kind of use:
@@ -178,7 +178,7 @@ Point deviceTopLeft = new Point(window.Left, window.Top).LogicalToDeviceUnits();
 Point deviceTopLeft = window.LogicalToDevicePoint(new Point(window.Left, window.Top));
 ```
 
-Pour le code natif, elle implique le remplacement des appels à l’ancienne classe *vsui:: CDpiHelper* par des appels à la nouvelle classe *vsui:: CDpiAwareness* . 
+Pour le code natif, elle implique le remplacement des appels à l’ancienne classe *vsui :: CDpiHelper* par des appels à la nouvelle classe *vsui :: CDpiAwareness* . 
 
 ```cpp
 // Remove this kind of use:
@@ -192,7 +192,7 @@ VsUI::CDpiAwareness::LogicalToDeviceUnitsX(m_hwnd, &cx);
 VsUI::CDpiAwareness::LogicalToDeviceUnitsY(m_hwnd, &cy);
 ```
 
-Les nouvelles classes DpiAwareness et CDpiAwareness offrent les mêmes assistances de conversion d’unités que les classes DpiHelper, mais requièrent un paramètre d’entrée supplémentaire: l’élément d’interface utilisateur à utiliser comme référence pour l’opération de conversion. Il est important de noter que les assistances de mise à l’échelle des images n’existent pas dans les nouvelles applications d’assistance DpiAwareness/CDpiAwareness, et si nécessaire, le [ImageService](../image-service-and-catalog.md) doit être utilisé à la place.
+Les nouvelles classes DpiAwareness et CDpiAwareness offrent les mêmes assistances de conversion d’unités que les classes DpiHelper, mais requièrent un paramètre d’entrée supplémentaire : l’élément d’interface utilisateur à utiliser comme référence pour l’opération de conversion. Il est important de noter que les assistances de mise à l’échelle des images n’existent pas dans les nouvelles applications d’assistance DpiAwareness/CDpiAwareness, et si nécessaire, le [ImageService](../image-service-and-catalog.md) doit être utilisé à la place.
 
 La classe managée DpiAwareness offre des assistances pour les visuels WPF, les contrôles de Windows Forms et les HWND Win32 et HMONITORs (sous la forme de IntPtrs), tandis que la classe CDpiAwareness Native offre des applications auxiliaires HWND et HMONITOR.
 
@@ -211,7 +211,7 @@ Par défaut, les fenêtres enfants reçoivent le contexte de détection PPP du t
 La majeure partie du travail de calcul de l’interface utilisateur qui se produit dans le cadre de la boucle de messagerie principale ou de la chaîne d’événements doit déjà s’exécuter dans le contexte de détection DPI approprié. Toutefois, si les calculs de coordonnées ou de redimensionnement sont effectués en dehors de ces flux de travail principaux (par exemple, pendant une tâche de temps d’inactivité ou en dehors du thread d’interface utilisateur), le contexte de détection PPP actuel peut être incorrect, entraînant des problèmes de mauvais positionnement ou de dimensionnement de l’interface utilisateur. Le fait de placer le thread dans un état correct pour le travail de l’interface utilisateur résout généralement le problème.
  
 #### <a name="opt-out-of-clmm"></a>Refuser CLMM
-Si une fenêtre outil non WPF est migrée pour prendre entièrement en charge AVM, elle doit refuser l’CLMM. Pour ce faire, une nouvelle interface doit être implémentée: IVsDpiAware.
+Si une fenêtre outil non WPF est migrée pour prendre entièrement en charge AVM, elle doit refuser l’CLMM. Pour ce faire, une nouvelle interface doit être implémentée : IVsDpiAware.
 
 ```cs
 [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
@@ -232,7 +232,7 @@ IVsDpiAware : public IUnknown
 
 Pour les langages managés, le meilleur endroit pour implémenter cette interface se trouve dans la même classe qui dérive de *Microsoft. VisualStudio. Shell. ToolWindowPane*. Pour C++, le meilleur emplacement pour implémenter cette interface se trouve dans la même classe qui implémente *IVsWindowPane* à partir de vsshell. h.
 
-La valeur retournée par la propriété mode de l’interface est un __VSDPIMODE (et casté en uint en managé):
+La valeur retournée par la propriété mode sur l’interface est une __VSDPIMODE (et castée en uint en managé) :
 
 ```cs
 enum __VSDPIMODE
@@ -248,11 +248,11 @@ enum __VSDPIMODE
 - Permonitor signifie que la fenêtre outil doit gérer toutes les DPI sur tous les affichages et chaque fois que la valeur PPP change.
 
 > [!NOTE]
-> Visual Studio ne prend en charge que la reconnaissance PerMonitorV2, donc la valeur de l’énumération permonitor se traduit par la valeur Windows de DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE_V2.
+> Visual Studio ne prend en charge que la reconnaissance de PerMonitorV2, donc la valeur de l’enum de persurveillance se traduit par la valeur Windows de DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE_V2.
 
 #### <a name="force-a-control-into-a-specific-dpiawarenesscontext"></a>Forcer un contrôle dans un DpiAwarenessContext spécifique
 
-L’interface utilisateur héritée qui n’est pas mise à jour pour prendre en charge le mode PMA peut encore nécessiter des ajustements mineurs pour fonctionner pendant que Visual Studio s’exécute en mode AVM. L’un de ces correctifs consiste à s’assurer que l’interface utilisateur est créée dans le bon DpiAwarenessContext. Pour forcer votre interface utilisateur dans un DpiAwarenessContext particulier, vous pouvez entrer une étendue ppp avec le code suivant:
+L’interface utilisateur héritée qui n’est pas mise à jour pour prendre en charge le mode PMA peut encore nécessiter des ajustements mineurs pour fonctionner pendant que Visual Studio s’exécute en mode AVM. L’un de ces correctifs consiste à s’assurer que l’interface utilisateur est créée dans le bon DpiAwarenessContext. Pour forcer votre interface utilisateur dans un DpiAwarenessContext particulier, vous pouvez entrer une étendue ppp avec le code suivant :
 
 ```cs
 using (DpiAwareness.EnterDpiScope(DpiAwarenessContext.SystemAware))
@@ -277,8 +277,8 @@ void MyClass::ShowDialog()
 
 ### <a name="windows-forms"></a>Windows Forms
 
-Pour optimiser les nouveaux scénarios en mode mixte, Windows Forms modifié la manière dont il crée les contrôles et Windows chaque fois que leur parent n’a pas été défini explicitement. Précédemment, les contrôles sans parent explicite utilisaient une «fenêtre de parking» interne en tant que parent temporaire du contrôle ou de la fenêtre en cours de création. 
+Pour optimiser les nouveaux scénarios en mode mixte, Windows Forms modifié la manière dont il crée les contrôles et Windows chaque fois que leur parent n’a pas été défini explicitement. Précédemment, les contrôles sans parent explicite utilisaient une « fenêtre de parking » interne en tant que parent temporaire du contrôle ou de la fenêtre en cours de création. 
 
-Avant .NET 4,8, il existait une seule «fenêtre de parking» qui obtient son DpiAwarenessContext à partir du contexte de détection de la résolution des PPP du thread en cours au moment de la création de la fenêtre. Tout contrôle non apparenté hérite du même DpiAwarenessContext que la fenêtre de parking lorsque le handle du contrôle est créé et est reapparenté au parent final/attendu par le développeur de l’application. Cela entraînerait des échecs basés sur la temporisation si la «fenêtre de parking» avait un DpiAwarenessContext plus élevé que la fenêtre parente finale.
+Avant .NET 4,8, il existait une seule « fenêtre de parking » qui obtient son DpiAwarenessContext à partir du contexte de détection de la résolution des PPP du thread en cours au moment de la création de la fenêtre. Tout contrôle non apparenté hérite du même DpiAwarenessContext que la fenêtre de parking lorsque le handle du contrôle est créé et est reapparenté au parent final/attendu par le développeur de l’application. Cela entraînerait des échecs basés sur la temporisation si la « fenêtre de parking » avait un DpiAwarenessContext plus élevé que la fenêtre parente finale.
 
-À compter de .NET 4,8, il existe désormais une «fenêtre de parking» pour chaque DpiAwarenessContext rencontrée. L’autre différence majeure réside dans le fait que le DpiAwarenessContext utilisé pour le contrôle est mis en cache lorsque le contrôle est créé, et non lors de la création du handle. Cela signifie que le comportement final global est le même, mais peut transformer ce qui était un problème basé sur le minutage en un problème cohérent. Il donne également au développeur d’applications un comportement plus déterministe pour l’écriture de son code d’interface utilisateur et son étendue correcte.
+À compter de .NET 4,8, il existe désormais une « fenêtre de parking » pour chaque DpiAwarenessContext rencontrée. L’autre différence majeure réside dans le fait que le DpiAwarenessContext utilisé pour le contrôle est mis en cache lorsque le contrôle est créé, et non lors de la création du handle. Cela signifie que le comportement final global est le même, mais peut transformer ce qui était un problème basé sur le minutage en un problème cohérent. Il donne également au développeur d’applications un comportement plus déterministe pour l’écriture de son code d’interface utilisateur et son étendue correcte.

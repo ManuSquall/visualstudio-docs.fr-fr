@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 0842cab03ba92568b0b672e2b8d257af4b6aa490
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "69551878"
 ---
 # <a name="architecture-of-office-solutions-in-visual-studio"></a>Architecture des solutions Office dans Visual Studio
@@ -27,13 +27,13 @@ ms.locfileid: "69551878"
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
-## <a name="in-this-section"></a>Dans cette section
+## <a name="in-this-section"></a>Contenu de cette section
 
 [Architecture des personnalisations au niveau du document](../vsto/architecture-of-document-level-customizations.md)
 
 Décrit le fonctionnement des personnalisations au niveau du document et la façon dont elles sont perçues par le développeur et par l'utilisateur final.
 
-[Architecture des compléments VSTO](../vsto/architecture-of-vsto-add-ins.md)
+[Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)
 
 Décrit les composants des compléments VSTO et la façon dont ils sont chargés par les applications.
 
@@ -49,13 +49,13 @@ Décrit les clés de Registre requises sur les ordinateurs des utilisateurs fina
 
 Explique comment les propriétés de document personnalisées fonctionnent dans les personnalisations au niveau du document.
 
-## <a name="related-sections"></a>Rubriques connexes
+## <a name="related-sections"></a>Sections connexes
 
-[Vue d’ensemble du &#40;développement des solutions Office VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+[Vue d’ensemble du développement de solutions Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 
 Fournit une introduction à l'utilisation de Microsoft Office comme plateforme pour le développement de solutions d'entreprise.
 
-[Prise en &#40;main du développement Office dans Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+[Prise en main &#40;le développement Office dans Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 
 Fournit des liens vers les informations relatives à la configuration d'un ordinateur de développement pour créer des solutions Office, indiquant comment commencer à créer des solutions et mentionnant ce qui a changé depuis les précédentes versions des outils de développement Office dans Visual Studio.
 
@@ -63,6 +63,6 @@ Fournit des liens vers les informations relatives à la configuration d'un ordin
 
 Fournit des liens vers des informations relatives à la création de solutions Office.
 
-[Référence &#40;générale du développement Office dans Visual Studio&#41;](../vsto/general-reference-office-development-in-visual-studio.md)
+[Référence générale &#40;le développement Office dans Visual Studio&#41;](../vsto/general-reference-office-development-in-visual-studio.md)
 
 Fournit des liens vers les informations relatives aux éléments d'interface utilisateur dans les projets Office, aux manifestes de déploiement et d'application pour les projets Office et aux API dans [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].

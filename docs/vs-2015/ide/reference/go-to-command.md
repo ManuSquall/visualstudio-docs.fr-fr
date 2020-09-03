@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 454b51b6939a78cdaab8d29f51d30910024adbe3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72661201"
 ---
 # <a name="go-to-command"></a>Atteindre, commande
@@ -35,14 +35,14 @@ Edit.GoTo [linenumber]
 ## <a name="arguments"></a>Arguments
  `linenumber` Facultatif. Nombre entier représentant le numéro de la ligne à atteindre.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  La numérotation des lignes débute à 1. Si la valeur de `linenumber` est inférieure à 1, la première ligne est affichée. Si la valeur de `linenumber` est supérieure au numéro de la dernière ligne, la dernière ligne est affichée.
 
  Si aucune valeur n’est spécifiée pour `linenumber`, la boîte de dialogue **Atteindre la ligne** s’affiche.
 
  L’alias de cette commande est GoToLn.
 
-## <a name="example"></a>Exemples
+## <a name="example"></a> Exemple
 
 ```
 >Edit.GoTo 125

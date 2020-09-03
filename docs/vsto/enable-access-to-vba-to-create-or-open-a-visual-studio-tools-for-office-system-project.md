@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3199b23f7ad1bb45fd509d2a9b5cd21da1a49971
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "69551547"
 ---
 # <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>Activer l’accès à VBA pour créer ou ouvrir un Visual Studio Tools pour le projet Microsoft Office système
@@ -55,7 +55,7 @@ Vous devez activer explicitement l’accès au système de projet Visual Basic p
 
 3. Cliquez sur Centre de gestion de la **confidentialité**, puis sur paramètres du centre de gestion de la **confidentialité**.
 
-4. Dans le **Centre**de gestion de la confidentialité, cliquez sur **paramètres**des macros.
+4. Dans le **Centre**de gestion de la confidentialité, cliquez sur **paramètres des macros**.
 
 5. Cochez ou décochez **l’option approuver l’accès au modèle objet de projet VBA** pour activer ou désactiver l’accès aux projets Visual Basic.
 
@@ -79,7 +79,7 @@ Vous devez activer explicitement l’accès au système de projet Visual Basic p
 
 3. Cliquez sur Centre de gestion de la **confidentialité**, puis sur paramètres du centre de gestion de la **confidentialité**.
 
-4. Dans le **Centre**de gestion de la confidentialité, cliquez sur **paramètres**des macros.
+4. Dans le **Centre**de gestion de la confidentialité, cliquez sur **paramètres des macros**.
 
 5. Dans la section paramètres de la **macro** , sélectionnez le paramètre souhaité.
 

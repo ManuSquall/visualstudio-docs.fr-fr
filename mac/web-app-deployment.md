@@ -7,10 +7,10 @@ ms.author: sayedha
 ms.date: 01/25/2019
 ms.assetid: d746292d-0570-424a-bf43-e16ab85bbf0d
 ms.openlocfilehash: 98169016921df5397fafb5a77c214357c18a0ae8
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "70107987"
 ---
 # <a name="aspnet-core-web-app-deployment"></a>Déploiement d’applications web ASP.NET Core

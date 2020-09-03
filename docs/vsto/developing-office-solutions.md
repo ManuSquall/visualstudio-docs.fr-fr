@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8ede09f18808eda22c747ac28e3c279fc43266bc
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "69551576"
 ---
 # <a name="develop-office-solutions"></a>Développer des solutions Office
@@ -59,13 +59,13 @@ ms.locfileid: "69551576"
 |[Accessibilité dans les projets Office](../vsto/accessibility-in-office-projects.md)|Décrit les fonctionnalités d'accessibilité disponibles dans les solutions Office.|
 
 ## <a name="see-also"></a>Voir aussi
-- [Guide pratique pour Créer et modifier des propriétés de document personnalisées](../vsto/how-to-create-and-modify-custom-document-properties.md)
-- [Guide pratique : Lire et écrire dans les propriétés du document](../vsto/how-to-read-from-and-write-to-document-properties.md)
-- [Guide pratique pour Cibler l’interface utilisateur multilingue d’Office](../vsto/how-to-target-the-office-multilingual-user-interface.md)
-- [Procédure pas à pas : Créer votre premier complément VSTO pour Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)
-- [Procédure pas à pas : Créer votre première personnalisation au niveau du document pour Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)
-- [Procédure pas à pas : Créer votre premier complément VSTO pour Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)
-- [Procédure pas à pas : Créer votre premier complément VSTO pour PowerPoint](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)
-- [Procédure pas à pas : Créer votre premier complément VSTO pour Project](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)
-- [Procédure pas à pas : Créer votre premier complément VSTO pour Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)
-- [Procédure pas à pas : Créer votre première personnalisation au niveau du document pour Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)
+- [Comment : créer et modifier des propriétés de document personnalisées](../vsto/how-to-create-and-modify-custom-document-properties.md)
+- [Comment : lire et écrire dans les propriétés d’un document](../vsto/how-to-read-from-and-write-to-document-properties.md)
+- [Comment : cibler l’interface utilisateur multilingue d’Office](../vsto/how-to-target-the-office-multilingual-user-interface.md)
+- [Procédure pas à pas : créer votre premier complément VSTO pour Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)
+- [Procédure pas à pas : création de votre première personnalisation au niveau du document pour Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)
+- [Procédure pas à pas : créer votre premier complément VSTO pour Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)
+- [Procédure pas à pas : créer votre premier complément VSTO pour PowerPoint](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)
+- [Procédure pas à pas : créer votre premier complément VSTO pour Project](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)
+- [Procédure pas à pas : créer votre premier complément VSTO pour Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)
+- [Procédure pas à pas : création de votre première personnalisation au niveau du document pour Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)

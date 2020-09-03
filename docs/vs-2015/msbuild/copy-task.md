@@ -23,10 +23,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 08442d6044ca978e69f199e76c4668db63c319da
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196590"
 ---
 # <a name="copy-task"></a>Copy, tâche
@@ -68,12 +68,12 @@ Copie les fichiers à un nouvel emplacement du système de fichiers.
   
 - `Copy.RemovingReadOnlyAttribute`  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Le paramètre `DestinationFolder` ou `DestinationFiles` doit être spécifié, mais pas les deux. Si les deux paramètres sont spécifiés, la tâche échoue, et une erreur est enregistrée.  
   
- En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+ En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension> , qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task> . Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
   
-## <a name="example"></a>Exemples  
+## <a name="example"></a>Exemple  
  L’exemple suivant copie les éléments de la collection d’éléments `MySourceFiles` dans le dossier c:\MyProject\Destination.  
   
 ```  
@@ -93,7 +93,7 @@ Copie les fichiers à un nouvel emplacement du système de fichiers.
 </Project>  
 ```  
   
-## <a name="example"></a>Exemples  
+## <a name="example"></a>Exemple  
  L’exemple suivant illustre la procédure à suivre pour effectuer une copie récursive. Ce projet copie tous les fichiers de manière récursive depuis c:\MySourceTree vers c:\MyDestinationTree, tout en conservant la structure de répertoire.  
   
 ```  
@@ -114,5 +114,5 @@ Copie les fichiers à un nouvel emplacement du système de fichiers.
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Tâches](../msbuild/msbuild-tasks.md)   
- [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)
+ [Décrites](../msbuild/msbuild-tasks.md)   
+ [Référence de tâche](../msbuild/msbuild-task-reference.md)

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4ff23e07bd6e81b11d94a8256c33b57b4b0c558c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531389"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Ajouter des commandes et des mouvements aux diagrammes de dépendance
@@ -26,7 +26,7 @@ Si vous le souhaitez, vous pouvez définir plusieurs commandes et gestionnaires 
 > [!NOTE]
 > Vous pouvez également personnaliser la validation de l’architecture, dans laquelle le code source des utilisateurs est comparé aux diagrammes de dépendance. Vous devez définir la validation de l’architecture dans un projet Visual Studio distinct. Vous pouvez l’ajouter à la même extension VSIX que d’autres extensions. Pour plus d’informations, consultez [Ajouter une validation d’architecture personnalisée aux diagrammes de dépendance](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 
 Consultez [Spécifications](../modeling/extend-layer-diagrams.md#requirements).
 

@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0839adcf0e6c61141d2a14ad8903c532af76804c
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85418897"
 ---
 # <a name="security-page-project-designer"></a>Page Sécurité, Concepteur de projets
@@ -68,7 +68,7 @@ Par défaut, cette option a la valeur **Internet** pour les projets d’applicat
 
 Ouvre le modèle de manifeste de l’application (app.manifest) pour configurer les autorisations pour l’ensemble d’autorisations **(Personnalisé)**.
 
- **Avancé**
+ **Avancée**
 
 Ouvre la [boîte de dialogue Paramètres de sécurité avancés](../../ide/reference/advanced-security-settings-dialog-box.md) qui permet de configurer les paramètres pour déboguer les applications avec des autorisations restreintes. Ces paramètres sont vérifiés pendant le débogage et les exceptions d’autorisation indiquent que votre application peut avoir besoin de plus d’autorisations que défini dans une zone.
 

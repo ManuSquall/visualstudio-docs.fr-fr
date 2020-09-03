@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 32e309497a90622f0091d13f6619ac9527d4cfa9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72661277"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Comment : générer les données de la métrique du code
@@ -25,7 +25,7 @@ ms.locfileid: "72661277"
 
 Vous pouvez décider de générer des résultats de métrique du code pour une solution complète ou un projet sélectionné.
 
- **Prérequis**
+ **Configuration requise**
 
  Visual Studio Enterprise
 

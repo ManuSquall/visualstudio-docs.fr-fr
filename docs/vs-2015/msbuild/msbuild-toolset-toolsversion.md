@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cf22fdf3d0cd9196794aa3929e9952f57bbfa2f0
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68871999"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Ensemble d'outils MSBuild (ToolsVersion)
@@ -38,7 +38,7 @@ MSBuild utilise un ensemble d’outils de tâches, de cibles et d’outils pour 
 
  Quand une valeur pour `ToolsVersion` est définie dans un fichier projet, MSBuild utilise cette valeur pour déterminer les valeurs des propriétés de l'ensemble d'outils qui sont disponibles pour le projet. Une des propriétés de l'ensemble d'outils est `$(MSBuildToolsPath)`, qui spécifie le chemin d'accès aux outils .NET Framework. Cette propriété de l'ensemble d'outils (ou `$(MSBuildBinPath)`) est la seule propriété obligatoire.
 
- Depuis Visual Studio 2013, la version de l'ensemble d'outils MSBuild est identique au numéro de version de Visual Studio. MSBuild utilise par défaut cet ensemble d'outils dans Visual Studio et sur la ligne de commande, quelle que soit la version de l'ensemble d'outils spécifiée dans le fichier projet.  Ce comportement peut être remplacé à l'aide de l'indicateur /ToolsVersion. Pour plus d’informations, consultez [Substitution des paramètres ToolsVersion](../msbuild/overriding-toolsversion-settings.md).
+ Depuis Visual Studio 2013, la version de l'ensemble d'outils MSBuild est identique au numéro de version de Visual Studio. MSBuild utilise par défaut cet ensemble d'outils dans Visual Studio et sur la ligne de commande, quelle que soit la version de l'ensemble d'outils spécifiée dans le fichier projet.  Ce comportement peut être remplacé à l'aide de l'indicateur /ToolsVersion. Pour plus d’informations, consultez [substitution des paramètres ToolsVersion](../msbuild/overriding-toolsversion-settings.md).
 
  Dans l'exemple suivant, MSBuild trouve le fichier Microsoft.CSharp.targets en utilisant la propriété réservée `MSBuildToolsPath`.
 
@@ -46,9 +46,9 @@ MSBuild utilise un ensemble d’outils de tâches, de cibles et d’outils pour 
 <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 ```
 
- Vous pouvez modifier la valeur de `MSBuildToolsPath` en définissant un ensemble d'outils personnalisé. Pour plus d’informations, consultez [Configurations standard et personnalisée de l’ensemble d’outils](../msbuild/standard-and-custom-toolset-configurations.md).
+ Vous pouvez modifier la valeur de `MSBuildToolsPath` en définissant un ensemble d'outils personnalisé. Pour plus d’informations, consultez [configurations standard et personnalisée](../msbuild/standard-and-custom-toolset-configurations.md) de l’ensemble d’outils.
 
- Quand vous générez une solution sur la ligne de commande et que vous spécifiez `ToolsVersion` pour msbuild.exe, tous les projets et leurs dépendances de projet à projet sont créés conformément à `ToolsVersion`, même si chaque projet de la solution spécifie son propre attribut `ToolsVersion`. Pour définir la valeur `ToolsVersion` par projet, consultez [Substitution des paramètres ToolsVersion](../msbuild/overriding-toolsversion-settings.md).
+ Quand vous générez une solution sur la ligne de commande et que vous spécifiez `ToolsVersion` pour msbuild.exe, tous les projets et leurs dépendances de projet à projet sont créés conformément à `ToolsVersion`, même si chaque projet de la solution spécifie son propre attribut `ToolsVersion`. Pour définir la `ToolsVersion` valeur par projet, consultez [substitution des paramètres ToolsVersion](../msbuild/overriding-toolsversion-settings.md).
 
  L'attribut `ToolsVersion` est également utilisé pour la migration de projet. Par exemple, si vous ouvrez un projet Visual Studio 2008 dans Visual Studio 2010, le fichier projet est mis à jour de façon à inclure ToolsVersion="4.0". Si vous essayez ensuite d'ouvrir ce projet dans Visual Studio 2008, il ne reconnaît pas l'attribut `ToolsVersion` mis à niveau et génère donc le projet comme si l'attribut était toujours défini à 3.5.
 
@@ -91,7 +91,7 @@ MSBuild utilise un ensemble d’outils de tâches, de cibles et d’outils pour 
 
 - <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdkFile%2A> retourne le chemin d'accès à un fichier qui se trouve généralement dans le dossier des outils managés.
 
-- [GetPathToBuildTools](/previous-versions/visualstudio/visual-studio-2013/dn251121(v=vs.121)) retourne le chemin d’accès des outils de génération.
+- [GetPathToBuildTools](/previous-versions/visualstudio/visual-studio-2013/dn251121(v=vs.121)) retourne le chemin d'accès des outils de génération.
 
 ### <a name="sub-toolsets"></a>Sous-ensembles d'outils
  Comme décrit plus haut dans cette rubrique, MSBuild utilise une clé de Registre pour spécifier le chemin d'accès des outils de base. Si la clé a une sous-clé, MSBuild l'utilise pour spécifier le chemin d'accès d'un sous-ensemble d'outils qui contient des outils supplémentaires. Dans ce cas, l'ensemble d'outils est défini en combinant les définitions des propriétés qui sont définies dans les deux clés.
@@ -118,4 +118,4 @@ MSBuild utilise un ensemble d’outils de tâches, de cibles et d’outils pour 
 ## <a name="see-also"></a>Voir aussi
 
 - [Configurations standard et personnalisée de l’ensemble d’outils](../msbuild/standard-and-custom-toolset-configurations.md)
-- [Multiciblage](../msbuild/msbuild-multitargeting-overview.md)
+- [MULTICIBLAGE](../msbuild/msbuild-multitargeting-overview.md)

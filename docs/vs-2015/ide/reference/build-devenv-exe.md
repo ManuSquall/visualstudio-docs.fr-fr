@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 419716d750771908a43318d051cb0b4681d35149
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660983"
 ---
 # <a name="build-devenvexe"></a>/Build (devenv.exe)
@@ -41,7 +41,7 @@ Devenv SolutionName /build SolnConfigName [/project ProjName [/projectconfig Pro
 
  /projectconfig `ProjConfigName` (facultatif). Nom d’une configuration de génération de projet à utiliser lors de la génération du `/project` nommé.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Ce commutateur exécute la même fonction que la commande de menu **Générer la solution** dans l’environnement de développement intégré (IDE).
 
  Placez entre guillemets doubles les chaînes contenant des espaces.
@@ -50,7 +50,7 @@ Devenv SolutionName /build SolnConfigName [/project ProjName [/projectconfig Pro
 
  Cette commande génère uniquement des projets qui ont été modifiés depuis la dernière génération. Pour générer tous les projets dans une solution, utilisez [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md).
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
  Cet exemple génère le projet `CSharpConsoleApp` en utilisant la configuration de génération de projet `Debug` présente dans la configuration de solution `Debug` de `MySolution`.
 
 ```
@@ -58,4 +58,4 @@ devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\M
 ```
 
 ## <a name="see-also"></a>Voir aussi
- [Génération et nettoyage de solutions et de projets dans Visual Studio](../../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md) [commutateurs de ligne de commande devenv](../../ide/reference/devenv-command-line-switches.md) [/Rebuild (devenv. exe)](../../ide/reference/rebuild-devenv-exe.md) [/Clean (devenv. exe)](../../ide/reference/clean-devenv-exe.md) [/out (devenv. exe)](../../ide/reference/out-devenv-exe.md)
+ [Génération et nettoyage de projets et de solutions dans Visual Studio](../../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md) [devenv, commutateurs de ligne de commande](../../ide/reference/devenv-command-line-switches.md) , [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md) [/Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md) [/out (devenv.exe)](../../ide/reference/out-devenv-exe.md)

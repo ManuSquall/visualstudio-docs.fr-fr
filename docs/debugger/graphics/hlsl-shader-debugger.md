@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 164c404f3bce6b8216092635e3489843039fb1eb
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72735302"
 ---
 # <a name="hlsl-shader-debugger"></a>Débogueur du nuanceur HLSL
@@ -22,7 +22,7 @@ Le débogueur HLSL de Visual Studio Graphics Analyzer vous aide à comprendre co
 
  Il se présente comme suit :
 
- ![Débogage HLSL à l’aide des fenêtres espion et pile des appels.](media/gfx_diag_demo_hlsl_debugger_orientation.png "gfx_diag_demo_hlsl_debugger_orientation")
+ ![Débogage HLSL utilisant la fenêtre de la pile des appels et la fenêtre espion.](media/gfx_diag_demo_hlsl_debugger_orientation.png "gfx_diag_demo_hlsl_debugger_orientation")
 
 ## <a name="understanding-the-hlsl-debugger"></a>Présentation du débogueur HLSL
  Le débogueur HLSL peut vous aider à comprendre les problèmes qui surviennent dans votre code de nuanceur. Le débogage du code HLSL dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ressemble au débogage du code écrit dans un autre langage, par exemple, C++, C# ou Visual Basic. Vous pouvez examiner le contenu des variables, définir des points d'arrêt, parcourir le code, et remonter la pile d'appels, comme lorsque vous déboguez d'autres langages.
@@ -73,6 +73,6 @@ Le débogueur HLSL de Visual Studio Graphics Analyzer vous aide à comprendre co
    Pour obtenir des exemples sur l’utilisation du débogueur HLSL pour déboguer les erreurs de nuanceur, consultez les [exemples](graphics-diagnostics-examples.md) ou les procédures pas à pas liées à dans la section Voir aussi.
 
 ## <a name="see-also"></a>Voir aussi
-- [Procédure pas à pas : objets manquants en raison de l’ombrage de vertex](walkthrough-missing-objects-due-to-vertex-shading.md)
+- [Procédure pas à pas : objets manquants en raison de Vertex Shader](walkthrough-missing-objects-due-to-vertex-shading.md)
 - [Procédure pas à pas : débogage des erreurs de rendu dues à l’ombrage](walkthrough-debugging-rendering-errors-due-to-shading.md)
 - [Procédure pas à pas : utilisation de Graphics Diagnostics pour déboguer un nuanceur de calcul](walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md)

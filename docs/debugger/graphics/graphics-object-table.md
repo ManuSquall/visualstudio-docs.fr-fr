@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ea80420b2146bd8c604a95d71012009dcb940ef5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72735450"
 ---
 # <a name="graphics-object-table"></a>Table des objets Graphics
@@ -24,7 +24,7 @@ La Table des objets Graphics dans Visual Studio Graphics Analysis vous permet d'
 
  Voici la Table des objets :
 
- ![Objets Direct3D qui ont été créés par une application.](media/gfx_diag_demo_object_table_orientation.png "gfx_diag_demo_object_table_orientation")
+ ![Objets Direct3D ayant été créés par une application.](media/gfx_diag_demo_object_table_orientation.png "gfx_diag_demo_object_table_orientation")
 
 ## <a name="understanding-the-graphics-object-table"></a>Présentation de la Table des objets Graphics
  À l'aide de la Table des objets, vous pouvez analyser les objets Direct3D qui prennent en charge le rendu d'un frame particulier. Vous pouvez identifier un problème de rendu pour un objet spécifique en examinant ses propriétés et ses données (à l’aide d’autres outils de Graphics Diagnostics précédemment dans votre diagnostic, vous pouvez limiter la liste des objets qui ne sont pas conformes à vos attentes). Une fois que vous avez trouvé l’objet incriminé, vous pouvez utiliser une visualisation spécifique à son type pour l’examiner (par exemple, vous pouvez utiliser l’éditeur d’images pour afficher des textures ou le *visualiseur de mémoire tampon* pour afficher le contenu de la mémoire tampon).
@@ -41,12 +41,12 @@ La Table des objets Graphics dans Visual Studio Graphics Analysis vous permet d'
 |**Identificateur**|ID de l'objet.|
 |**Nom**|Informations spécifiques à l'application, qui ont été définies sur l'objet à l'aide de la fonction Direct3D `SetPrivateData` (en règle générale, pour fournir des informations d'identification supplémentaires sur un objet).|
 |**Type**|Type d'objet.|
-|**Active**|Affiche « * » pour un objet défini sur D3D10Device ou D3D11DeviceContext dans le frame capturé.<br /><br /> Cela correspond aux objets affichés sous forme de texte grisé. Une entrée de colonne est fournie pour vous permettre de trier la table d'objets.|
-|**Size**|Taille de l'objet en octets.|
+|**Actif**|Affiche « * » pour un objet défini sur D3D10Device ou D3D11DeviceContext dans le frame capturé.<br /><br /> Cela correspond aux objets affichés sous forme de texte grisé. Une entrée de colonne est fournie pour vous permettre de trier la table d'objets.|
+|**Taille**|Taille de l'objet en octets.|
 |**Format**|Format de l'objet. Par exemple, format d'un objet de texture ou modèle de nuanceur d'un objet de nuanceur.|
 |**Width**|Largeur d'un objet de texture. Ne s'applique pas aux autres types d'objet.|
 |**Height**|Hauteur d'un objet de texture. Ne s'applique pas aux autres types d'objet.|
-|**Depth**|Profondeur d'un objet de texture 3D. Si une texture n'est pas 3D, la valeur est 0. Ne s'applique pas aux autres types d'objet.|
+|**Profondeur**|Profondeur d'un objet de texture 3D. Si une texture n'est pas 3D, la valeur est 0. Ne s'applique pas aux autres types d'objet.|
 |**Mips**|Nombre de niveaux MIP d'un objet de texture. Ne s'applique pas aux autres types d'objet.|
 |**ArraySize**|Nombre de textures dans un tableau de textures. La plage va de 1 à une limite supérieure définie par le niveau de fonctionnalité actuel. Pour un mappage de cube, cette valeur représente 6 fois le nombre de mappages de cube dans le tableau.|
 |**Exemples**|Nombre d'échantillons multiples par pixel.|
@@ -56,7 +56,7 @@ La Table des objets Graphics dans Visual Studio Graphics Analysis vous permet d'
 
  Voici la visionneuse de textures affichant le contenu de l'étape de canalisation Fusion de sortie.
 
- ![Aperçu de la texture affichant la fusion de sortie](media/gfx_diag_texture_preview.png "gfx_diag_texture_preview")
+ ![Aperçu de texture affichant la fusion de sortie](media/gfx_diag_texture_preview.png "gfx_diag_texture_preview")
 
 ### <a name="d3d12-command-list"></a>Liste des commandes D3D12
  Dans Direct3D 12, une liste de commandes est un objet qui enregistre les commandes dans un allocateur de commandes pour qu'elles puissent être envoyées au GPU sous forme de requête unique. Les listes de commandes effectuent généralement une série de commandes de définition d'état, de dessin, d'effacement et de copie. Elles sont particulièrement importantes, car elles représentent la méthode de rendu par défaut dans Direct3D 12. En outre, elles peuvent être réutilisées entre les frames pour contribuer à l'amélioration des performances. Les détails spécifiques aux listes de commandes sont affichés dans une nouvelle fenêtre de document, avec les informations relatives à chaque étape de canalisation présentées sous leur propre onglet.
@@ -78,7 +78,7 @@ La Table des objets Graphics dans Visual Studio Graphics Analysis vous permet d'
 
  Vous pouvez également cocher ou décocher la case **Afficher les offsets** pour masquer ou afficher le décalage de chaque élément en mémoire tampon.
 
-|Tapez|Description|
+|Type|Description|
 |----------|-----------------|
 |**float**|Valeur à virgule flottante 32 bits.|
 |**float2**|Vecteur qui contient deux valeurs à virgule flottante 32 bits.|
@@ -96,7 +96,7 @@ La Table des objets Graphics dans Visual Studio Graphics Analysis vous permet d'
 |**u2byte**|Valeur entière non signée 16 bits.|
 |**u4byte**|Valeur entière non signée 32 bits. Identique à **uint**.|
 |**u8byte**|Valeur entière non signée 64 bits. Identique à **uint64**.|
-|**half**|Valeur à virgule flottante 16 bits.|
+|**caractères**|Valeur à virgule flottante 16 bits.|
 |**half2**|Vecteur qui contient deux valeurs à virgule flottante 16 bits.|
 |**half3**|Vecteur qui contient trois valeurs à virgule flottante 16 bits.|
 |**half4**|Vecteur qui contient quatre valeurs à virgule flottante 16 bits.|
@@ -111,4 +111,4 @@ La Table des objets Graphics dans Visual Studio Graphics Analysis vous permet d'
 
 ## <a name="see-also"></a>Voir aussi
 - [Graphics Diagnostics (débogage DirectX Graphics)](visual-studio-graphics-diagnostics.md)
-- [Procédure pas à pas : objets manquants en raison de l’état de l’appareil](walkthrough-missing-objects-due-to-device-state.md)
+- [Procédure pas à pas : objets manquants en raison de l’état de l’appareil](walkthrough-missing-objects-due-to-device-state.md)

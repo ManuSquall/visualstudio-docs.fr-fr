@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f472add6b821693d1d48397e878db19e707e2868
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660805"
 ---
 # <a name="debugexe-devenvexe"></a>/DebugExe (devenv.exe)
@@ -36,10 +36,10 @@ Devenv /debugexe ExecutableFile
 
  Si le fichier .exe est introuvable ou n’existe pas, aucun avertissement ni erreur ne s’affiche et [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] démarre normalement.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Toute chaîne qui suit le paramètre `ExecutableFile` est passée à ce fichier comme argument.
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
  L’exemple suivant ouvre le fichier `MyApplication.exe` pour débogage.
 
 ```
@@ -47,4 +47,4 @@ Devenv.exe /debugexe MyApplication.exe
 ```
 
 ## <a name="see-also"></a>Voir aussi
- [Commutateurs de la ligne de commande Devenv](../../ide/reference/devenv-command-line-switches.md)
+ [Commutateurs de ligne de commande devenv](../../ide/reference/devenv-command-line-switches.md)

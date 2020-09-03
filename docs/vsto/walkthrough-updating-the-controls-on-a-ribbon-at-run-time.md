@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Mettre à jour les contrôles sur un ruban au moment de l’exécution'
+title: 'Procédure pas à pas : mettre à jour les contrôles sur un ruban au moment de l’exécution'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,13 +18,13 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 425918ea32c14e6ba905d6b32864a2844d2b5a90
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71255338"
 ---
-# <a name="walkthrough-update-the-controls-on-a-ribbon-at-run-time"></a>Procédure pas à pas : Mettre à jour les contrôles sur un ruban au moment de l’exécution
+# <a name="walkthrough-update-the-controls-on-a-ribbon-at-run-time"></a>Procédure pas à pas : mettre à jour les contrôles sur un ruban au moment de l’exécution
 
 Cette procédure pas à pas montre comment utiliser le modèle objet de ruban pour mettre à jour les contrôles sur un ruban après le chargement du ruban dans l’application Office.
 
@@ -32,7 +32,7 @@ Cette procédure pas à pas montre comment utiliser le modèle objet de ruban po
 
 L'exemple extrait des données de l'exemple de base de données Northwind pour remplir une zone de liste modifiable et un menu dans Microsoft Office Outlook. Les éléments que vous sélectionnez dans ces contrôles remplissent automatiquement les champs tels que **à** et **objet** dans un message électronique.
 
-Cette procédure pas à pas décrit les tâches suivantes :
+Cette procédure pas à pas décrit les tâches suivantes :
 
 - Créez un projet de complément VSTO Outlook.
 
@@ -43,11 +43,11 @@ Cette procédure pas à pas décrit les tâches suivantes :
 - Met à jour les contrôles sur le ruban au moment de l’exécution.
 
 > [!NOTE]
-> Il est possible que pour certains des éléments de l’interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L’édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Il est possible que pour certains des éléments de l'interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L'édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Prérequis
 
-Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :
+Vous devez disposer des éléments suivants pour exécuter cette procédure pas à pas :
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -59,13 +59,13 @@ Commencez par créer un projet de complément VSTO Outlook.
 
 ### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>Pour créer un projet de complément VSTO Outlook
 
-1. Dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], créez un projet de complément VSTO Outlook portant le nom **Ribbon_Update_At_Runtime**.
+1. Dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , créez un projet de complément VSTO Outlook portant le nom **Ribbon_Update_At_Runtime**.
 
 2. Dans la boîte de dialogue **Nouveau projet** , sélectionnez **Créer le répertoire pour la solution**.
 
 3. Enregistrez le projet dans le répertoire de projet par défaut.
 
-     Pour plus d'informations, voir [Procédure : Créer des projets Office dans Visual](../vsto/how-to-create-office-projects-in-visual-studio.md)Studio.
+     Pour plus d’informations, consultez [Comment : créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
 ## <a name="design-a-custom-ribbon-group"></a>Concevoir un groupe de ruban personnalisé
 
@@ -75,7 +75,7 @@ Le ruban de cet exemple s’affiche lorsqu’un utilisateur compose un nouveau m
 
 1. Dans le menu **Projet** , cliquez sur **Ajouter un nouvel élément**.
 
-2. Dans la boîte de dialogue **Ajouter un nouvel élément** , sélectionnez **Ruban (Concepteur visuel)** .
+2. Dans la boîte de dialogue **Ajouter un nouvel élément** , sélectionnez **Ruban (Concepteur visuel)**.
 
 3. Remplacez le nom du nouveau ruban par **CustomerRibbon**, puis cliquez sur **Ajouter**.
 
@@ -149,11 +149,11 @@ Utilisez la fenêtre **Sources de données** pour ajouter un dataset typé à vo
 
 8. Cochez la case située en regard de chacune des tables suivantes :
 
-    1. **Acheteurs**
+    1. **Clients**
 
     2. **Détails de la commande**
 
-    3. **O.f.**
+    3. **Orders (Commandes)**
 
     4. **Produits**
 
@@ -179,7 +179,7 @@ Utilisez le modèle objet de ruban pour effectuer les tâches suivantes :
 
 3. Dans **Explorateur de solutions**, cliquez sur **CustomerRibbon.cs** ou **CustomerRibbon. vb** pour le sélectionner.
 
-4. Dans le menu **affichage** , cliquez sur **code**.
+4. Dans le menu **Affichage** , cliquez sur **Code**.
 
     Le fichier de code du ruban s'ouvre dans l'éditeur de code.
 
@@ -188,7 +188,7 @@ Utilisez le modèle objet de ruban pour effectuer les tâches suivantes :
     [!code-csharp[Trin_Ribbon_Update_At_Runtime#1](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#1)]
     [!code-vb[Trin_Ribbon_Update_At_Runtime#1](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#1)]
 
-6. Ajoutez le code suivant à l' `CustomerRibbon` intérieur de la classe. Ce code déclare les adaptateurs de table et de table de données que vous utiliserez pour stocker les informations des tables Customer, Orders, Order Details et Product de la base de données Northwind.
+6. Ajoutez le code suivant à l’intérieur de la `CustomerRibbon` classe. Ce code déclare les adaptateurs de table et de table de données que vous utiliserez pour stocker les informations des tables Customer, Orders, Order Details et Product de la base de données Northwind.
 
     [!code-csharp[Trin_Ribbon_Update_At_Runtime#2](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#2)]
     [!code-vb[Trin_Ribbon_Update_At_Runtime#2](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#2)]
@@ -226,7 +226,7 @@ Utilisez le modèle objet de ruban pour effectuer les tâches suivantes :
 
      Le fichier de code du ruban s'ouvre dans l'éditeur de code, et le gestionnaire d'événements `ComboBox1_TextChanged` s'affiche.
 
-12. Remplacez le gestionnaire d'événements `ComboBox1_TextChanged` par le code suivant. Ce code exécute les tâches suivantes :
+12. Remplacez le gestionnaire d'événements `ComboBox1_TextChanged` par le code suivant. Ce code effectue les tâches suivantes :
 
     - Appeler la méthode d'assistance `PopulateSalesOrderInfo`. Cette méthode met à jour le menu **Products Purchased** avec les commandes client associées au client sélectionné.
 
@@ -240,7 +240,7 @@ Utilisez le modèle objet de ruban pour effectuer les tâches suivantes :
      [!code-csharp[Trin_Ribbon_Update_At_Runtime#8](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#8)]
      [!code-vb[Trin_Ribbon_Update_At_Runtime#8](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#8)]
 
-14. Ajoutez le code suivant à la classe `CustomerRibbon` . Ce code exécute les tâches suivantes :
+14. Ajoutez le code suivant à la classe `CustomerRibbon` . Ce code effectue les tâches suivantes :
 
     - Remplit la ligne à des nouveaux messages électroniques à l’aide de l’adresse de messagerie du client actuellement sélectionné.
 
@@ -263,7 +263,7 @@ Pour créer un message électronique de suivi des clients, sélectionnez un clie
 
 2. Dans Outlook, dans le menu **fichier** , pointez sur **nouveau**, puis cliquez sur **message électronique**.
 
-     Procédez aux étapes suivantes :
+     Les actions suivantes se produisent :
 
     - Une nouvelle fenêtre de l'inspecteur de message électronique s'affiche.
 
@@ -273,7 +273,7 @@ Pour créer un message électronique de suivi des clients, sélectionnez un clie
 
 3. Sous l’onglet **message** du ruban, dans le groupe **Customer Purchases** , sélectionnez un client à partir de la zone de liste déroulante **Customers** .
 
-     Procédez aux étapes suivantes :
+     Les actions suivantes se produisent :
 
     - Le menu **produits achetés** est mis à jour pour afficher chaque commande client pour le client sélectionné.
 
@@ -291,7 +291,7 @@ Pour plus d'informations sur la personnalisation de l'interface utilisateur d'Of
 
 - Ajouter une interface utilisateur contextuelle à une personnalisation au niveau du document. Pour plus d’informations, consultez [vue d’ensemble du volet Actions](../vsto/actions-pane-overview.md).
 
-- Étendre un formulaire Microsoft Office standard ou personnalisé. Pour plus d’informations, consultez [Procédure pas à pas : Concevoir une zone](../vsto/walkthrough-designing-an-outlook-form-region.md)de formulaire Outlook.
+- Étendre un formulaire Microsoft Office standard ou personnalisé. Pour plus d’informations, consultez [procédure pas à pas : concevoir une zone de formulaire Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).
 
 - Ajouter un volet de tâches personnalisé dans Outlook. Pour plus d’informations, consultez [volets de tâches personnalisés](../vsto/custom-task-panes.md).
 
@@ -299,14 +299,14 @@ Pour plus d'informations sur la personnalisation de l'interface utilisateur d'Of
 
 - [Accéder au ruban au moment de l’exécution](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Vue d’ensemble du ruban](../vsto/ribbon-overview.md)
-- [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/index)
-- [Guide pratique pour Prise en main de la personnalisation du ruban](../vsto/how-to-get-started-customizing-the-ribbon.md)
+- [LINQ (Language Integrated Query)](/dotnet/csharp/linq/index)
+- [Comment : prendre en main la personnalisation du ruban](../vsto/how-to-get-started-customizing-the-ribbon.md)
 - [Concepteur de ruban](../vsto/ribbon-designer.md)
-- [Procédure pas à pas : Créer un onglet personnalisé à l’aide du concepteur de ruban](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
+- [Procédure pas à pas : création d’un onglet personnalisé à l’aide du concepteur de ruban](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
 - [Vue d’ensemble du modèle objet de ruban](../vsto/ribbon-object-model-overview.md)
 - [Personnaliser un ruban pour Outlook](../vsto/customizing-a-ribbon-for-outlook.md)
-- [Guide pratique pour Modifier la position d’un onglet sur le ruban](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
-- [Guide pratique pour Personnaliser un onglet intégré](../vsto/how-to-customize-a-built-in-tab.md)
-- [Guide pratique pour Ajouter des contrôles au mode Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)
-- [Guide pratique pour Exporter un ruban à partir du concepteur de ruban vers le ruban XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)
-- [Guide pratique pour Afficher les erreurs d’interface utilisateur du complément](../vsto/how-to-show-add-in-user-interface-errors.md)
+- [Comment : modifier la position d’un onglet sur le ruban](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
+- [Comment : personnaliser un onglet intégré](../vsto/how-to-customize-a-built-in-tab.md)
+- [Comment : ajouter des contrôles au mode Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)
+- [Comment : exporter un ruban à partir du concepteur de ruban vers le ruban XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)
+- [Comment : afficher les erreurs d’interface utilisateur du complément](../vsto/how-to-show-add-in-user-interface-errors.md)

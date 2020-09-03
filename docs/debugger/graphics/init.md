@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0b2ed132e072d9ca8a0b9c98bfc5be6e25931805
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72735003"
 ---
 # <a name="init"></a>Init
@@ -27,12 +27,12 @@ void Init(
 ```
 
 #### <a name="parameters"></a>Paramètres
- `vsgLogGetter` une entité pouvant être appelée, telle qu’une fonction, un pointeur de fonction, une expression lambda ou un objet de fonction, qui prend comme paramètres la longueur d’une mémoire tampon composée de `wchar_t` et un pointeur vers cette mémoire tampon, et retourne `void`. Lorsqu’elle est appelée, l’entité pouvant être appelée détermine le nom du fichier qui sera utilisé pour enregistrer les informations graphiques et l’écrit dans la mémoire tampon spécifiée avant de retourner.
+ `vsgLogGetter` Entité pouvant être appelée, telle qu’une fonction, un pointeur de fonction, une expression lambda ou un objet de fonction, qui prend comme paramètres la longueur d’une mémoire tampon composée de `wchar_t` et d’un pointeur vers cette mémoire tampon, et retourne `void` . Lorsqu’elle est appelée, l’entité pouvant être appelée détermine le nom du fichier qui sera utilisé pour enregistrer les informations graphiques et l’écrit dans la mémoire tampon spécifiée avant de retourner.
 
 ## <a name="remarks"></a>Notes
- La fonction `Init` est appelée automatiquement lorsqu’une instance de la classe `VsgDbg` est construite en spécifiant le paramètre `bDefaultInit` de son constructeur en tant que `true` ; dans le cas contraire, `Init` doit être appelé explicitement pour que vous puissiez capturer et enregistrer activement les informations graphiques.
+ La `Init` fonction est appelée automatiquement lorsqu’une instance de la `VsgDbg` classe est construite en spécifiant le `bDefaultInit` paramètre de son constructeur comme `true` ; sinon, `Init` doit être appelé explicitement pour que vous puissiez capturer et enregistrer activement les informations graphiques.
 
- Vous pouvez finaliser et fermer le fichier journal de graphisme actif en appelant `UnInit`, puis capturer et enregistrer des informations graphiques supplémentaires dans un nouveau fichier journal de graphisme en appelant à nouveau `Init`. Vous pouvez répéter cette opération autant de fois que vous le souhaitez pour créer plusieurs fichiers journaux graphiques indépendants à l’aide de la même instance de `VsgDbg`.
+ Vous pouvez finaliser et fermer le fichier journal de graphisme actif en appelant `UnInit` , puis capturer et enregistrer des informations graphiques supplémentaires dans un nouveau fichier journal de graphisme en rappelant `Init` . Vous pouvez répéter cette opération autant de fois que vous le souhaitez pour créer plusieurs fichiers journaux graphiques indépendants à l’aide de la même `VsgDbg` instance.
 
 ## <a name="see-also"></a>Voir aussi
 - [UnInit](init.md)

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7c11741cb9bb9a0b0c64b9452b54daa6ac226b92
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72535935"
 ---
 # <a name="troubleshoot-breakpoints-in-the-visual-studio-debugger"></a>Résoudre les problèmes de points d’arrêt dans le débogueur Visual Studio
@@ -25,7 +25,7 @@ Les deux sections suivantes décrivent les avertissements importants et comment 
 
 ### <a name="no-symbols-have-been-loaded-for-this-document"></a>« Aucun symbole n’a été chargé pour ce document »
 
-Accédez à la fenêtre **modules** (**déboguer**  > **modules** **Windows**  > ) et vérifiez si votre module est chargé.
+Accédez à la fenêtre **modules** (**Déboguer**les  >  **Windows**  >  **modules**Windows) et vérifiez si votre module est chargé.
 * Si votre module est chargé, consultez la colonne **État du symbole** pour voir si les symboles ont été chargés.
   * Si les symboles ne sont pas chargés, vérifiez l’état du symbole pour diagnostiquer le problème. Dans le menu contextuel d’un module de la fenêtre **modules** , cliquez sur informations sur le **chargement des symboles...** pour voir où le débogueur a essayé de charger les symboles. Pour plus d’informations sur le chargement de symboles, consultez [spécifier les fichiers de symboles (. pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
   * Si les symboles sont chargés, le fichier PDB ne contient pas d’informations sur vos fichiers sources. Voici quelques causes possibles :
@@ -35,7 +35,7 @@ Accédez à la fenêtre **modules** (**déboguer**  > **modules** **Windows**  >
 
 * Si votre module n’est pas chargé, vérifiez les éléments suivants pour trouver la cause :
   * Vérifiez que vous déboguez le processus correct.
-  * Vérifiez que vous déboguez le type de code approprié. Vous pouvez déterminer le type de code que le débogueur est configuré pour déboguer dans la fenêtre **processus** (**déboguer**  > **processus** **Windows**  > ). Par exemple, si vous essayez de déboguer C# du code, assurez-vous que votre débogueur est configuré pour le type et la version appropriés de .net (par exemple, managé (v4 \*) et managé (v2 \*/v3 \*) par rapport à Managed (CoreCLR)).
+  * Vérifiez que vous déboguez le type de code approprié. Vous pouvez déterminer le type de code que le débogueur est configuré pour déboguer dans la fenêtre **processus** (**Déboguer**les  >  **Windows**  >  **processus**Windows). Par exemple, si vous essayez de déboguer du code C#, vérifiez que votre débogueur est configuré pour le type et la version appropriés de .NET (par exemple, managé (v4 \* ) et managé (v2 \* /v3 \* ) par rapport à managé (CoreCLR)).
 
 ### <a name="-the-current-source-code-is-different-from-the-version-built-into"></a>"… le code source actuel est différent de la version intégrée à...»
 
@@ -45,7 +45,7 @@ Dans de rares scénarios, vous souhaiterez peut-être déboguer sans avoir le co
 
 Pour désactiver ces vérifications de sécurité, effectuez l’une des opérations suivantes :
 * Pour modifier un point d’arrêt unique, pointez sur l’icône du point d’arrêt dans l’éditeur, puis cliquez sur l’icône Paramètres (engrenage). Une fenêtre d’aperçu est ajoutée à l’éditeur. En haut de la fenêtre d’aperçu, un lien hypertexte indique l’emplacement du point d’arrêt. Cliquez sur le lien hypertexte pour autoriser la modification de l’emplacement du point d’arrêt et cochez **la case permettre que le code source soit différent de celui d’origine**.
-* Pour modifier ce paramètre pour tous les points d’arrêt, accédez à **Déboguer**  > **options et paramètres**. Dans la page **Débogage/Général** , désactivez l’option **Les fichiers sources doivent correspondre exactement à la version d’origine** . Veillez à réactiver cette option lorsque vous avez terminé le débogage.
+* Pour modifier ce paramètre pour tous les points d’arrêt, accédez à options de **débogage**  >  **et paramètres**. Dans la page **Débogage/Général** , désactivez l’option **Les fichiers sources doivent correspondre exactement à la version d’origine** . Veillez à réactiver cette option lorsque vous avez terminé le débogage.
 
 ## <a name="the-breakpoint-was-successfully-set-no-warning-but-didnt-hit"></a>Le point d’arrêt a été correctement défini (aucun avertissement), mais n’a pas été atteint
 
@@ -53,8 +53,8 @@ Cette section fournit des informations pour résoudre les problèmes lorsque le 
 
 Voici quelques éléments à vérifier :
 1. Si votre code s’exécute dans plusieurs processus ou sur plusieurs ordinateurs, assurez-vous que vous déboguez le processus ou l’ordinateur approprié.
-2. Vérifiez que votre code est en cours d’exécution. Pour vérifier que votre code est en cours d’exécution, ajoutez un appelC#à `System.Diagnostics.Debugger.Break` (/VB)C++ou `__debugbreak` () à la ligne de code où vous essayez de définir le point d’arrêt, puis régénérez votre projet.
-3. Si vous déboguez du code optimisé, assurez-vous que la fonction dans laquelle le point d’arrêt est défini n’est pas insérée dans une autre fonction. Le test de `Debugger.Break` décrit dans la vérification précédente peut également fonctionner pour tester ce problème.
+2. Vérifiez que votre code est en cours d’exécution. Pour vérifier que votre code est en cours d’exécution, ajoutez un appel à `System.Diagnostics.Debugger.Break` (C#/VB) ou `__debugbreak` (C++) à la ligne de code où vous essayez de définir le point d’arrêt, puis régénérez votre projet.
+3. Si vous déboguez du code optimisé, assurez-vous que la fonction dans laquelle le point d’arrêt est défini n’est pas insérée dans une autre fonction. Le `Debugger.Break` test décrit dans la vérification précédente peut également fonctionner pour tester ce problème.
 
 ## <a name="i-deleted-a-breakpoint-but-i-continue-to-hit-it-when-i-start-debugging-again"></a>J’ai supprimé un point d’arrêt, mais je continue de l’atteindre quand je relance le débogage
 

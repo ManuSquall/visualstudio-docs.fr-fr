@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9fa3b4365f49d172e077ca132b26a49580228c25
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660956"
 ---
 # <a name="build-events-dialog-box-visual-basic"></a>Événements de build, boîte de dialogue (Visual Basic)
@@ -37,11 +37,11 @@ Utilisez la boîte de dialogue **Événements de build** pour spécifier des ins
  **Ligne de commande de l’événement post-build** Spécifie les commandes à exécuter à l’issue de la génération. Pour taper de longues commandes, cliquez sur **Modifier post-build** pour afficher la **boîte de dialogue Ligne de commande de l’événement pré-build/post-build**.
 
 > [!NOTE]
-> Ajoutez une instruction `call` avant toutes les commandes post-build qui exécutent des fichiers .bat. Par exemple, `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.
+> Ajoutez une instruction `call` avant toutes les commandes post-build qui exécutent des fichiers .bat.  Par exemple, `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.
 
  **Exécuter l’événement post-build** Spécifie les conditions pour l’événement post-build à exécuter, comme indiqué dans le tableau ci-dessous.
 
-|Option|Résultat|
+|Option|Résultats|
 |------------|------------|
 |**Toujours**|L’événement post-build est exécuté, que la build ait abouti ou échoué.|
 |**En cas de build réussie**|L’événement post-build est exécuté si la build réussit. L’événement est exécuté même pour un projet à jour, à condition que la build soit un succès. Il s'agit du paramètre par défaut.|

@@ -18,15 +18,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8f9ab4ef453a921371ab7ef4f272cd0e38f4108a
-ms.sourcegitcommit: 4d2620bee4688fb881e09a07ea4a264b99f0743e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71322535"
 ---
 # <a name="stop-statements-in-visual-basic"></a>Instructions Stop en Visual Basic
 
-L'instruction Stop de Visual Basic fournit une alternative de programmation à la définition d'un point d'arrêt. Lorsque le débogueur rencontre une instruction Stop, il interrompt l'exécution du programme (passe en mode arrêt). C#les programmeurs peuvent obtenir le même effet à l’aide <xref:System.Diagnostics.Debugger.Break%2A?displayProperty=nameWithType>d’un appel à.
+L'instruction Stop de Visual Basic fournit une alternative de programmation à la définition d'un point d'arrêt. Lorsque le débogueur rencontre une instruction Stop, il interrompt l'exécution du programme (passe en mode arrêt). Les programmeurs C# peuvent obtenir le même effet à l’aide d’un appel à <xref:System.Diagnostics.Debugger.Break%2A?displayProperty=nameWithType> .
 
 Vous définissez ou supprimez une instruction Stop en modifiant votre code source. Vous ne pouvez pas définir ou supprimer des instructions Stop en utilisant des commandes du débogueur, comme pour un point d'arrêt.
 
@@ -44,7 +44,7 @@ Quand vous exécutez une Visual Basic application en dehors du débogueur, une i
 #End If
 ```
 
-Une autre solution consiste à utiliser <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType> une instruction au lieu de l’instruction Stop. Une <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType> instruction interrompt l’exécution uniquement lorsqu’une condition spécifiée n’est pas remplie. <xref:System.Diagnostics.Debug.Assert%2A>les instructions sont automatiquement supprimées lorsque vous générez une version Release. Pour plus d’informations, consultez [Assertions dans du code managé](assertions-in-managed-code.md). Si vous souhaitez une <xref:System.Diagnostics.Debug.Assert%2A> instruction qui interrompt toujours l’exécution dans la version de débogage, procédez comme suit :
+Une autre solution consiste à utiliser une <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType> instruction au lieu de l’instruction Stop. Une <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType> instruction interrompt l’exécution uniquement lorsqu’une condition spécifiée n’est pas remplie. <xref:System.Diagnostics.Debug.Assert%2A> les instructions sont automatiquement supprimées lorsque vous générez une version Release. Pour plus d’informations, consultez [assertions dans du code managé](assertions-in-managed-code.md). Si vous souhaitez une <xref:System.Diagnostics.Debug.Assert%2A> instruction qui interrompt toujours l’exécution dans la version de débogage, procédez comme suit :
 
 ```csharp
 Debug.Assert(false);
@@ -67,5 +67,5 @@ Debug.Fail("a clever output string goes here")
 ## <a name="see-also"></a>Voir aussi
 
 - [Sécurité du débogueur](debugger-security.md)
-- [Types de projets C#, F# et Visual Basic](debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
+- [Types de projets C#, F# et Visual Basic](debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
 - [Débogage du code managé](debugging-managed-code.md)

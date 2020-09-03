@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f4c82836f5a80fae421a30721d8c3ee4c3d6893d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72735391"
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>Variante de dimensions de la texture moitié/un quart
@@ -41,7 +41,7 @@ Réduit les dimensions des textures qui ne sont pas des cibles de rendu.
   Si les mipmaps sont activés pour la texture, la variante réduit le nombre de niveaux MIP en conséquence (un de moins pour une taille réduite de moitié ou deux de moins pour une taille réduite au quart).
 
 ## <a name="example"></a>Exemple
- Cette variante redimensionne les textures au moment de l’exécution avant l’appel à `CreateTexture2D`. Nous déconseillons cette approche pour le code de production, car les textures de taille réelle consomment plus d'espace disque et cette étape supplémentaire peut allonger sensiblement les temps de chargement dans votre application (surtout dans le cas des textures compressées, qui nécessitent des ressources de calcul importantes pour l'encodage). Nous vous recommandons plutôt de redimensionner vos textures hors connexion en utilisant un éditeur ou un processeur d'images intégré à votre pipeline de génération. Ces approches réduisent les besoins en espace disque, éliminent les surcharges au moment de l'exécution de votre application et autorisent un temps de traitement supérieur, ce qui vous permet de conserver une qualité d'image optimale lors de la réduction ou de la compression de vos textures.
+ Cette variante redimensionne les textures au moment de l’exécution avant l’appel à `CreateTexture2D` . Nous déconseillons cette approche pour le code de production, car les textures de taille réelle consomment plus d'espace disque et cette étape supplémentaire peut allonger sensiblement les temps de chargement dans votre application (surtout dans le cas des textures compressées, qui nécessitent des ressources de calcul importantes pour l'encodage). Nous vous recommandons plutôt de redimensionner vos textures hors connexion en utilisant un éditeur ou un processeur d'images intégré à votre pipeline de génération. Ces approches réduisent les besoins en espace disque, éliminent les surcharges au moment de l'exécution de votre application et autorisent un temps de traitement supérieur, ce qui vous permet de conserver une qualité d'image optimale lors de la réduction ou de la compression de vos textures.
 
 ## <a name="see-also"></a>Voir aussi
 - [Variante de génération mipmap](mip-map-generation-variant.md)

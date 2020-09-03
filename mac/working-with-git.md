@@ -7,10 +7,10 @@ ms.date: 05/06/2018
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
 ms.custom: video
 ms.openlocfilehash: 767c08505877391d71ca085097a0464d516f4f24
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "70108022"
 ---
 # <a name="working-with-git"></a>Utilisation de Git
@@ -91,7 +91,7 @@ Examinez toutes les modifications d’un projet en accédant à l’élément de
 
 Ce menu permet d’afficher toutes les modifications de chaque fichier d’un projet avec les options Restaurer, Créer un correctif ou Valider.
 
-Pour valider un fichier au référentiel à distance, appuyez sur **Commit,** entrez un message de validation et confirmez avec le bouton Commit :
+Pour valider un fichier dans le référentiel distant, appuyez sur **valider**, entrez un message de validation et confirmez avec le bouton valider :
 
 ![Validation d’un fichier](media/version-control-gitCommit.png)
 
