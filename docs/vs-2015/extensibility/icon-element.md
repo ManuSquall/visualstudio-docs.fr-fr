@@ -1,5 +1,5 @@
 ---
-title: Élément Icon | Microsoft Docs
+title: Icon, élément | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ca5ced87596b5e40ae70e3faa06e58493da3d8ab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203990"
 ---
 # <a name="icon-element"></a>Élément Icon
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-L’attribut guid de la balise de l’icône est le guid d’une image bitmap définis.  L’attribut id sélectionne l’emplacement de la bande de bitmaps. Cet élément est facultatif.  Si cet élément est omis la valeur de **guidOfficeIcon:msotcidNoIcon** est implicite.  
+L’attribut Guid de la balise Icon est le GUID d’une image bitmap définie.  L’attribut ID sélectionne l’emplacement dans la bande bitmap. Cet élément est facultatif.  Si cet élément est omis, la valeur de **guidOfficeIcon : msotcidNoIcon** sera implicite.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -36,14 +36,14 @@ L’attribut guid de la balise de l’icône est le guid d’une image bitmap d�
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|GUID|Requis. Le guid d’une image bitmap définis.|  
-|id|Requis. Sélectionne l’emplacement de la bande de bitmaps.|  
+|guid|Obligatoire. GUID d’une image bitmap définie.|  
+|id|Obligatoire. Sélectionne l’emplacement dans la bande bitmap.|  
   
 ### <a name="child-elements"></a>Éléments enfants  
   
 |Élément|Description|  
 |-------------|-----------------|  
-|Aucune.|Aucune.|  
+|Aucun.|Aucun.|  
   
 ### <a name="parent-elements"></a>Éléments parents  
   

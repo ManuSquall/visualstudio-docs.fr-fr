@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 218a1df4f700ad33aa0af0aa453de84cbdae1752
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203637"
 ---
-# <a name="idiaframedatagetfunctionparent"></a>IDiaFrameData::get_functionParent
+# <a name="idiaframedataget_functionparent"></a>IDiaFrameData::get_functionParent
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Extrait une interface de données de frame de la fonction englobante.  
+Récupère une interface de données de frame pour la fonction englobante.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -35,10 +35,10 @@ HRESULT get_functionParent ( 
   
 #### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- [out] Retourne un [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) objet pour la fonction englobante.  
+ à Retourne un objet [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) pour la fonction englobante.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

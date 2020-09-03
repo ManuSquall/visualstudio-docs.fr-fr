@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 20b8438243382b28cccb510894d1674aa5872946
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74779868"
 ---
 # <a name="add-tier-interaction-data-from-the-command-line"></a>Ajouter des données d’interaction de couche à partir de la ligne de commande
@@ -32,7 +32,7 @@ Pour collecter des données de profilage d’interaction de couche, vous pouvez 
 
 **Collecter des données TIP sur un ordinateur distant**
 
-Pour collecter des données d’interaction de niveau sur une machine distante, vous devez copier le dossier **vs_profiler\_**_\<Platform>_ **\_** _ \<Language>_ **.exe** à partir du _fichier %VSInstallDir%_**'Team Tools’Performance Tools’Setups** d’une machine Visual Studio à l’ordinateur distant et l’installer. Vous ne pouvez pas utiliser les outils de profilage contenus dans le package de téléchargement [Débogage à distance](../debugger/remote-debugging.md).
+Pour collecter les données d’interaction de couche sur un ordinateur distant, vous devez copier le fichier ** \_ vs_profiler** _\<Platform>_ **\_** _\<Language>_ **. exe** du dossier _% VSInstallDir%_**\Team Tools\Performance Tools\Setups** d’un ordinateur Visual Studio sur l’ordinateur distant et l’installer. Vous ne pouvez pas utiliser les outils de profilage contenus dans le package de téléchargement [Débogage à distance](../debugger/remote-debugging.md).
 
 **Rapports TIP**
 
@@ -141,7 +141,7 @@ Dans l’exemple suivant, un service Windows est profilé suivant la méthode pa
 
 Pour plus d’informations, consultez l’une des rubriques suivantes :
 
-[Profil ASP.NET applications Web](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+[Profiler des applications Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 
 [Profiler des services](../profiling/command-line-profiling-of-services.md)
 
@@ -155,4 +155,4 @@ Pour ajouter les données d’interaction de couche aux données de profilage co
 vsperfaspnetcmd /tip /trace http://localhost/MyWebApp
 ```
 
-Pour plus d’informations sur VSPerfASPNETCmd, voir [profilage du site Web Rapid avec VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).
+Pour plus d’informations sur VSPerfASPNETCmd, consultez [profilage de site Web rapide avec VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).

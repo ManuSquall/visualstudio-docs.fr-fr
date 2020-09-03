@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eaba2f099f2a4d04574acd5bcdd2ba8f8f44b4ce
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852362"
 ---
 # <a name="da0006-override-equals-for-value-types"></a>DA0006 : Remplacer Equals() pour les types valeur
@@ -30,7 +30,7 @@ ID de règle | DA0006 |
 | Message | Remplacez Equals et l’opérateur d’égalité sur les types valeur. |  
 | Messages, type | AVERTISSEMENT |  
   
-## <a name="cause"></a>Cause  
+## <a name="cause"></a>Cause :  
  Les appels à la méthode Equals ou aux opérateurs d’égalité d’un type valeur public représentent une part importante des données de profilage. Implémentez une méthode plus efficace.  
   
 ## <a name="rule-description"></a>Description de la règle  

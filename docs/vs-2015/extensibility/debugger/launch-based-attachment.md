@@ -12,27 +12,27 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 09a6b39bef9ba6af098bf92d779a490e22492209
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203165"
 ---
 # <a name="launch-based-attachment"></a>Pièce jointe basée sur le lancement
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-En fonction du lancement de pièce jointe à un programme est automatique. Lorsque le processus qui héberge le programme est lancé par le SDM, basée sur le lancement de pièce jointe suit un chemin d’accès semblable à celle de la méthode manuelle de pièce jointe. Pour plus d’informations, consultez [attacher au programme](../../extensibility/debugger/attaching-to-the-program.md).  
+La pièce jointe basée sur le lancement d’un programme est automatique. Lorsque le processus hébergeant le programme est lancé par le SDM, la pièce jointe basée sur le lancement suit un chemin d’accès similaire à celui de la méthode manuelle des pièces jointes. Pour plus d’informations, consultez [attachement au programme](../../extensibility/debugger/attaching-to-the-program.md).  
   
-## <a name="the-attaching-process"></a>Le processus d’attachement  
- La principale différence est la séquence d’événements suivant le **attacher** appeler, comme suit :  
+## <a name="the-attaching-process"></a>Processus d’attachement  
+ La principale différence est la séquence d’événements qui suivent l’appel d' **attachement** , comme suit :  
   
-1. Envoyer un **IDebugEngineCreateEvent2** objet d’événement pour le SDM. Pour plus d’informations, consultez [envoi des événements](../../extensibility/debugger/sending-events.md).  
+1. Envoie un objet d’événement **IDebugEngineCreateEvent2** au SDM. Pour plus d’informations, consultez [envoi d’événements](../../extensibility/debugger/sending-events.md).  
   
-2. Appelez le `IDebugProgram2::GetProgramId` méthode sur le **IDebugProgram2** interface passé à la **attacher** (méthode).  
+2. Appelez la `IDebugProgram2::GetProgramId` méthode sur l’interface **IDebugProgram2** transmise à la méthode **Attach** .  
   
-3. Envoyer un **IDebugProgramCreateEvent2** objet d’événement pour avertir le SDM qui local **IDebugProgram2** objet a été créé pour représenter le programme pour l’Allemagne.  
+3. Envoie un objet d’événement **IDebugProgramCreateEvent2** pour notifier au SDM que l’objet **IDebugProgram2** local a été créé pour représenter le programme au de.  
   
-4. Envoyer un [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) objet d’événement pour avertir le SDM qu’un nouveau thread est créé pour le processus lancé.  
+4. Envoie un objet d’événement [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) pour notifier au SDM qu’un nouveau thread est créé pour le processus qui a été lancé.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Envoi des événements requis](../../extensibility/debugger/sending-the-required-events.md)   

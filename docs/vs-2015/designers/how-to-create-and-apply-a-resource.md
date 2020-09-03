@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7d1fba3b956a492740171bf2ad747e980b41df29
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851977"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Guide pratique pour créer et appliquer une ressource
@@ -34,9 +34,9 @@ Les styles et les modèles des éléments du concepteur XAML sont stockés dans 
 
      La boîte de dialogue appropriée pour la création d'une ressource s'affiche. Cette boîte de dialogue apparaît quand vous créez une ressource à partir d'un pinceau :
 
-     ![Create Resource Dialog Box](../designers/media/xaml-create-resource.png "xaml_create_resource")
+     ![Boîte de dialogue Créer une ressource](../designers/media/xaml-create-resource.png "xaml_create_resource")
 
-3. Dans la zone **Nom (Clé)** , entrez un nom de clé. C'est le nom que vous pouvez utiliser pour que d'autres éléments fassent référence à la ressource.
+3. Dans la zone **Nom (Clé)**, entrez un nom de clé. C'est le nom que vous pouvez utiliser pour que d'autres éléments fassent référence à la ressource.
 
 4. Sous **Définir dans**, choisissez l’option qui spécifie où vous voulez définir la ressource :
 
@@ -54,7 +54,7 @@ Les styles et les modèles des éléments du concepteur XAML sont stockés dans 
 
 1. Dans la fenêtre Structure du document, choisissez l'élément auquel vous souhaitez appliquer une ressource.
 
-2. Effectuez l'une des actions suivantes :
+2. Effectuez l’une des actions suivantes :
 
    - Appliquer une ressource à une propriété. Dans la fenêtre Propriétés, cliquez sur le marqueur de propriété en regard de la valeur de propriété, choisissez **Ressource locale** ou **Ressource système**, puis sélectionnez une ressource disponible dans la liste qui apparaît.
 
@@ -65,7 +65,7 @@ Les styles et les modèles des éléments du concepteur XAML sont stockés dans 
      > [!NOTE]
      > **Modifier un modèle** est utilisé pour appliquer des modèles de contrôle. **Modifier d’autres modèles** est utilisé pour appliquer d’autres types de modèle.
 
-     Les ressources sont applicables si elles sont compatibles. Par exemple, une ressource de pinceau peut être appliquée à la propriété **Foreground<xref:Windows.UI.Xaml.Controls.TextBox> d’un contrôle** .
+     Les ressources sont applicables si elles sont compatibles. Par exemple, une ressource de pinceau peut être appliquée à la propriété **Foreground<xref:Windows.UI.Xaml.Controls.TextBox> d’un contrôle **.
 
 ### <a name="to-edit-a-resource"></a>Pour modifier une ressource
 

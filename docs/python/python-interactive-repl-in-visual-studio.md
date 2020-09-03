@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 9608f273683865be767a44dd8f1d66106b97b7e0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533547"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Utiliser la fenêtre interactive Python
@@ -71,7 +71,7 @@ L’exception se produit quand des lignes de code supplémentaires sont nécessa
 > [!Tip]
 > La fenêtre **interactive** améliore l’expérience de réplication de ligne de commande python habituelle en mettant automatiquement en retrait les instructions qui appartiennent à une portée environnante. Son historique (rappelé avec la flèche vers le haut) fournit également des éléments multilignes, tandis que la fonctionnalité REPL de la ligne de commande fournit uniquement des lignes uniques.
 
-<a name="meta-commands"></a>La fenêtre **interactive** prend également en charge plusieurs commandes meta. Toutes les métacommandes commencent par `$` ; vous pouvez taper `$help` pour obtenir la liste des métacommandes et `$help <command>` pour obtenir des détails relatifs à l’utilisation d’une commande spécifique.
+<a name="meta-commands"></a> La fenêtre **interactive** prend également en charge plusieurs commandes meta. Toutes les métacommandes commencent par `$` ; vous pouvez taper `$help` pour obtenir la liste des métacommandes et `$help <command>` pour obtenir des détails relatifs à l’utilisation d’une commande spécifique.
 
 | Métacommande | Description |
 | --- | --- |

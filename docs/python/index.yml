@@ -12,10 +12,10 @@ metadata:
   ms.author: joshuapa
   ms.date: 09/23/2019
   ms.openlocfilehash: e85bdedfc91c949213528718d147a7f1890964ce
-  ms.sourcegitcommit: f8e3715c64255b476520bfa9267ceaf766bde3b0
+  ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 03/21/2020
+  ms.lasthandoff: 09/02/2020
   ms.locfileid: "71322485"
 landingContent:
 - title: À propos de la prise en charge de Python dans Visual Studio
@@ -48,7 +48,7 @@ landingContent:
     links:
     - text: Utilisation de Python dans Visual Studio
       url: tutorial-working-with-python-in-visual-studio-step-00-installation.md
-- title: Bien démarrer avec le développement web
+- title: Bien démarrer avec le développement web
   linkLists:
   - linkListType: tutorial
     links:

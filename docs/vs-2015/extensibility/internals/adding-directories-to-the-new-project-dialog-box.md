@@ -11,22 +11,22 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a8a9eeca4dc455c4f16e3551541454483138a993
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203880"
 ---
 # <a name="adding-directories-to-the-new-project-dialog-box"></a>Ajout de répertoires à la boîte de dialogue Nouveau projet
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Lorsque vous créez de nouveaux types de projet, vous pouvez également inscrire un nouveau répertoire dans le **nouveau projet** boîte de dialogue pour les afficher pour une utilisation en tant que modèles. L’exemple de code suivant explique comment inscrire un nouveau répertoire, également appelé un nœud. Dans l’exemple, les modèles exposés par le VSPackage CLSID_Package sont enregistrés. Par conséquent, le côté gauche de la **nouveau projet** boîte de dialogue offre le nœud ajouté, avec un nom déterminé par la ressource Folder_Label_ResID. Cette ressource est chargée à partir de la DLL satellite de VSPackage.  
+Lorsque vous créez de nouveaux types de projets, vous pouvez également inscrire un nouveau répertoire dans la boîte de dialogue **nouveau projet** pour les afficher pour les utiliser comme modèles. L’exemple de code suivant explique comment inscrire un nouveau répertoire, également appelé nœud. Dans l’exemple, les modèles exposés par VSPackage CLSID_Package sont inscrits. Par conséquent, le côté gauche de la boîte de dialogue **nouveau projet** propose le nœud ajouté, avec un nom déterminé par la ressource Folder_Label_ResID. Cette ressource est chargée à partir de la DLL satellite du VSPackage.  
   
- Le **dossier** valeur représente un GUID d’un dossier sous lequel le nœud Folder_Label_ResID s’affiche. Dans l’exemple, le GUID représente le **autres projets** dossier dans le **Types de projets** volet de la **nouveau projet** boîte de dialogue. Si le **autres projets** valeur est absente, l’étiquette est positionnée au niveau supérieur.  
+ La valeur de **dossier** représente un GUID d’un dossier sous lequel le nœud Folder_Label_ResID s’affiche. Dans l’exemple, le GUID représente le dossier **autres projets** dans le volet **types de projets** de la boîte de dialogue **nouveau projet** . Si la valeur **other Projects** est absente, l’étiquette est positionnée au niveau supérieur.  
   
- La valeur TemplatesDir Spécifie le chemin d’accès complet du répertoire qui contient les modèles de projet. Ces fichiers peuvent être des fichiers .vsz ou des fichiers de modèle standard à cloner.  
+ La valeur TemplatesDir spécifie le chemin d’accès complet du répertoire qui contient les modèles de projet. Il peut s’agir de fichiers. vsz ou de fichiers modèles standard à cloner.  
   
- Si vous spécifiez TemplatesLocalizedSubDir, il doit être l’ID de ressource d’une chaîne qui nomme le sous-répertoire de TemplatesDir qui contient des modèles localisés. Étant donné que [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] charge la ressource de chaîne à partir d’une DLL satellite si vous en avez pas, chaque DLL satellite peut contenir un nom de sous-répertoire différents. La valeur SortPriority spécifie un ordre de priorité.  
+ Si vous spécifiez TemplatesLocalizedSubDir, il doit s’agir de l’ID de ressource d’une chaîne qui nomme le sous-répertoire de TemplatesDir qui contient les modèles localisés. Étant donné que [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] charge la ressource de type chaîne à partir d’une DLL satellite, si vous en avez une, chaque DLL satellite peut contenir un nom de sous-répertoire différent. La valeur SortPriority spécifie une priorité de tri.  
   
 ```  
 NoRemove NewProjectTemplates  
@@ -48,6 +48,6 @@ NoRemove NewProjectTemplates
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [L’inscription de projet et modèles d’élément](../../extensibility/internals/registering-project-and-item-templates.md)   
- [Ajout d’éléments à l’ajouter un nouvel élément boîtes de dialogue](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
+ [Inscription de modèles de projet et d’élément](../../extensibility/internals/registering-project-and-item-templates.md)   
+ [Ajout d’éléments aux boîtes de dialogue Ajouter un nouvel élément](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
  [Ajout de répertoires à la boîte de dialogue Ajouter un élément](../../extensibility/internals/adding-directories-to-the-add-new-item-dialog-box.md)

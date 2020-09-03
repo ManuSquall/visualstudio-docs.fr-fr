@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 1dfcdf67c897c0c1565e536a69cc940b9df83390
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778594"
 ---
 # <a name="lines-view---contention-data"></a>Lignes, vue - données de conflit
@@ -46,25 +46,25 @@ La vue Lignes des données de conflit répertorie les données de performance po
 |**Conflits exclusifs**|Nombre de fois où cette instruction n’a pas pu exécuter le code qu’elle contient en raison d’un événement de conflit. Les événements de conflit dans les fonctions que l’instruction a appelées ne sont pas inclus.|
 |**% de conflits exclusifs**|Pourcentage de tous les événements de conflit dans le processus qui étaient des conflits exclusifs de cette instruction.|
 |**Adresse de la fonction**|Adresse de la fonction qui contient cette instruction.|
-|**Nom de fonction**|Nom complet de la fonction qui contient cette instruction.|
+|**Nom de la fonction**|Nom complet de la fonction qui contient cette instruction.|
 |**Temps bloqué inclusif**|Temps bloqué dans cette instruction et fonctions appelées dans cette dernière.|
 |**% de temps bloqué inclusif**|Pourcentage du temps bloqué total dans le processus qui était un temps bloqué inclusif de l’instruction.|
 |**Conflits inclusifs**|Nombre de fois où l’exécution de cette instruction et des fonctions appelées dans cette dernière a été bloquée.|
 |**% de conflits inclusifs**|Pourcentage de tous les événements de conflit dans le processus qui étaient des conflits inclusifs de cette instruction.|
-|**Nom de ligne**|Identificateur généré par le profileur de la ligne. L’identifiant utilise la`SourceFile`syntaxe suivante :**;[** `LineNumberStart` **,**,`CharacterStart`**]->; [**`LineNumberEnd`**,**`CharacterEnd`**]**|
+|**Nom de ligne**|Identificateur généré par le profileur de la ligne. L’identificateur utilise la syntaxe suivante : `SourceFile` **; [** `LineNumberStart` **,**`CharacterStart` **]-> ; [**`LineNumberEnd`**,**`CharacterEnd`**]**|
 |**Numéro de ligne de fonction**|Numéro de ligne du début de cette fonction dans le fichier source.|
 |**Nom du module**|Nom du module qui contient l’instruction.|
 |**Chemin du module**|Chemin du module qui contient l’instruction.|
-|**ID du processus**|ID de processus (PID) du processus profilé.|
+|**ID de processus**|ID de processus (PID) du processus profilé.|
 |**Nom du processus**|Nom du processus.|
 |**Début caractère source**|Décalage du caractère de début dans la ligne de fichier source au niveau de laquelle cette instruction commence.|
 |**Fin du caractère source**|Décalage du caractère de fin dans la ligne de fichier source au niveau de laquelle cette instruction se termine.|
-|**Fichier source**|Nom du fichier source contenant l’instruction de fonction.|
+|**Source File**|Nom du fichier source contenant l’instruction de fonction.|
 |**Début ligne source**|Numéro de ligne dans le fichier source au niveau duquel l’instruction commence.|
 |**Fin ligne source**|Numéro de ligne dans le fichier source au niveau duquel l’instruction se termine.|
 
 ## <a name="see-also"></a>Voir aussi
 - [Guide pratique pour personnaliser les colonnes de la vue de rapport](../profiling/how-to-customize-report-view-columns.md)
-- [Vue Lignes](../profiling/lines-view.md)
-- [Lines View - échantillonnage](../profiling/lines-view-dotnet-memory-sampling-data.md)
-- [Vue Lignes](../profiling/lines-view-sampling-data.md)
+- [Lignes, vue](../profiling/lines-view.md)
+- [Vue lignes-échantillonnage](../profiling/lines-view-dotnet-memory-sampling-data.md)
+- [Lignes, vue](../profiling/lines-view-sampling-data.md)

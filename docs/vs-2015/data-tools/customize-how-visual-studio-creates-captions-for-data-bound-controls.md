@@ -21,10 +21,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c0e54f68ab7e34f1cfb6abb228f552cc3792a8b7
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77476917"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personnaliser la façon dont Visual Studio crée des légendes pour les contrôles liés aux données
@@ -49,12 +49,12 @@ Lorsque vous faites glisser des éléments depuis la [fenêtre sources de donné
 
 |Élément de Registre|Valeur par défaut|Explication|
 |-------------------|-------------------|-----------------|
-|**SmartCaptionExpression**|(\\\p{Ll}) (\\\p{Lu}) &#124;_+|Correspond à un caractère minuscule suivi d’un caractère majuscule ou un trait de soulignement.|
+|**SmartCaptionExpression**|( \\ \p{ll}) ( \\ \p{Lu}) &#124;_ +|Correspond à un caractère minuscule suivi d’un caractère majuscule ou un trait de soulignement.|
 |**SmartCaptionReplacement**|$1 $2|$1 représente tous les caractères correspondants dans les premières parenthèses de l’expression, et $2 représente tous les caractères correspondants dans les secondes. Le remplacement correspond à la première correspondance, à un espace, puis à la deuxième correspondance.|
-|**SmartCaptionSuffix**|:|Représente un caractère ajouté à la chaîne retournée. Par exemple, si la légende est `Company Name`, le suffixe le rend `Company Name:`|
+|**SmartCaptionSuffix**|:|Représente un caractère ajouté à la chaîne retournée. Par exemple, si la légende est `Company Name` , le suffixe le fait `Company Name:`|
 
 > [!CAUTION]
-> Vous devez être très prudent lorsque vous faites quoi que ce soit dans l’éditeur du Registre. Sauvegardez le registre avant de le modifier. Si vous utilisez l’éditeur du registre de façon incorrecte, vous risquez de provoquer de sérieux problèmes pouvant vous obliger à réinstaller votre système d’exploitation. Microsoft ne garantit pas que les problèmes que vous provoquez à l’aide de l’éditeur du Registre peuvent être résolus de manière incorrecte. Les opérations exécutées dans l'Éditeur du Registre le sont à vos propres risques.
+> Vous devez être très prudent lorsque vous faites quoi que ce soit dans l’éditeur du Registre. Sauvegardez le registre avant de le modifier. Si vous utilisez l’éditeur du registre de façon incorrecte, vous risquez de provoquer de sérieux problèmes pouvant vous obliger à réinstaller votre système d’exploitation. Microsoft ne garantit pas que les problèmes que vous provoquez à l’aide de l’éditeur du Registre peuvent être résolus de manière incorrecte. Utilisez l’Éditeur du Registre à vos propres risques.
 
 ### <a name="to-modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Pour modifier le comportement de la légende intelligente de la fenêtre sources de données
 
@@ -70,13 +70,13 @@ Lorsque vous faites glisser des éléments depuis la [fenêtre sources de donné
 
 6. Développez le nœud **VisualStudio** .
 
-7. Cliquez avec le bouton droit sur le nœud **10,0** , puis créez une nouvelle **clé** nommée `Data Designers`.
+7. Cliquez avec le bouton droit sur le nœud **10,0** , puis créez une nouvelle **clé** nommée `Data Designers` .
 
-8. Cliquez avec le bouton droit sur le nœud **concepteurs de données** et créez une **valeur de chaîne** nommée `SmartCaptionExpression`.
+8. Cliquez avec le bouton droit sur le nœud **concepteurs de données** et créez une **valeur de chaîne** nommée `SmartCaptionExpression` .
 
-9. Cliquez avec le bouton droit sur le nœud **concepteurs de données** et créez une **valeur de chaîne** nommée `SmartCaptionReplacement`.
+9. Cliquez avec le bouton droit sur le nœud **concepteurs de données** et créez une **valeur de chaîne** nommée `SmartCaptionReplacement` .
 
-10. Cliquez avec le bouton droit sur le nœud **concepteurs de données** et créez une **valeur de chaîne** nommée `SmartCaptionSuffix`.
+10. Cliquez avec le bouton droit sur le nœud **concepteurs de données** et créez une **valeur de chaîne** nommée `SmartCaptionSuffix` .
 
 11. Cliquez avec le bouton droit sur l’élément **SmartCaptionExpression** , puis sélectionnez **modifier**.
 
@@ -106,13 +106,13 @@ Lorsque vous faites glisser des éléments depuis la [fenêtre sources de donné
 
 6. Développez le nœud **VisualStudio** .
 
-7. Cliquez avec le bouton droit sur le nœud **10,0** , puis créez une nouvelle **clé** nommée `Data Designers`.
+7. Cliquez avec le bouton droit sur le nœud **10,0** , puis créez une nouvelle **clé** nommée `Data Designers` .
 
-8. Cliquez avec le bouton droit sur le nœud **concepteurs de données** et créez une **valeur de chaîne** nommée `SmartCaptionExpression`.
+8. Cliquez avec le bouton droit sur le nœud **concepteurs de données** et créez une **valeur de chaîne** nommée `SmartCaptionExpression` .
 
-9. Cliquez avec le bouton droit sur le nœud **concepteurs de données** et créez une **valeur de chaîne** nommée `SmartCaptionReplacement`.
+9. Cliquez avec le bouton droit sur le nœud **concepteurs de données** et créez une **valeur de chaîne** nommée `SmartCaptionReplacement` .
 
-10. Cliquez avec le bouton droit sur le nœud **concepteurs de données** et créez une **valeur de chaîne** nommée `SmartCaptionSuffix`.
+10. Cliquez avec le bouton droit sur le nœud **concepteurs de données** et créez une **valeur de chaîne** nommée `SmartCaptionSuffix` .
 
 11. Cliquez avec le bouton droit sur l’élément **SmartCaptionExpression** , puis sélectionnez **modifier**.
 

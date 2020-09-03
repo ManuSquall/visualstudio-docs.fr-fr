@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d09a251dc5f98080b317e1560423dcb7c8bf0805
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72619314"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Configuration d'avertissements en Visual Basic
@@ -32,13 +32,13 @@ Le compilateur [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] inclut un ensemble d
 ## <a name="turning-warnings-off-and-on"></a>Activation et désactivation des avertissements
  Il existe deux façons de configurer les avertissements : vous pouvez utiliser le **Concepteur de projet**, ou vous pouvez utiliser les options **/warnaserror** et **/nowarn** du compilateur.
 
- L’onglet **Compiler** de la page **Concepteur de projet** permet d’activer et de désactiver les avertissements. Cochez la case **Désactiver tous les avertissements**  pour désactiver tous les avertissements. Cochez la case **Considérer tous les avertissements comme des erreurs** pour traiter tous les avertissements comme des erreurs. Vous pouvez attribuer le statut d’erreur à certains avertissements (et inversement) dans le tableau affiché.
+ L’onglet **Compiler** de la page **Concepteur de projet** permet d’activer et de désactiver les avertissements. Cochez la case **Désactiver tous les avertissements ** pour désactiver tous les avertissements. Cochez la case **Considérer tous les avertissements comme des erreurs** pour traiter tous les avertissements comme des erreurs. Vous pouvez attribuer le statut d’erreur à certains avertissements (et inversement) dans le tableau affiché.
 
  Si **Option Strict** est **Off**, les avertissements relatifs à **Option Strict** ne peuvent pas être traités indépendamment les uns des autres. Si **Option Strict** est **On**, les avertissements qui lui sont associés sont traités comme des erreurs, quel que soit leur état. Si **Option Strict** est défini sur **Custom** en spécifiant `/optionstrict:custom` dans le compilateur de ligne de commande, les avertissements **Option Strict** peuvent être activés ou désactivés indépendamment les uns des autres.
 
  L’option de ligne de commande **/warnaserror** du compilateur peut également être utilisée pour spécifier si les avertissements doivent être traités comme des erreurs. Vous pouvez ajouter une liste séparée par des virgules à cette option pour spécifier que les avertissements doivent être traités comme des erreurs ou des avertissements à l’aide des touches + et -. Le tableau suivant présente les options possibles.
 
-|Option de ligne de commande|Informations fournies|
+|Option de ligne de commande|Spécifie|
 |--------------------------|---------------|
 |`/warnaserror+`|Considérer tous les avertissements comme des erreurs|
 |`/warnsaserror`-|Ne considère pas les avertissements comme des erreurs. Il s'agit de la valeur par défaut.|
@@ -90,7 +90,7 @@ Le compilateur [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] inclut un ensemble d
  ID : 42104, 42030
 
 ### <a name="unused-local-variable-warning"></a>Avertissement concernant une variable locale non utilisée
- Généré lorsqu’une variable locale est déclarée, mais non référencée. La valeur par défaut est On (activé).
+ Généré lorsqu’une variable locale est déclarée, mais non référencée. Par défaut, cette option est activée.
 
  ID : 42024
 

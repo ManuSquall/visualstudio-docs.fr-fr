@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ee23e15e6cc389ea5a8bdcdd793648365d08c30d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532300"
 ---
 # <a name="properties-of-a-dsl-definition"></a>Propriétés d'une définition DSL
@@ -35,7 +35,7 @@ Les propriétés DslDefinition définissent des propriétés de définition du *
 |Nom du produit|Nom du produit qui sera enregistré pour le package Visual Studio généré pour ce langage spécifique à un domaine.|\<none>|
 |Notes|Notes associées à cette classe de domaine.|\<none>|
 |Description|Description de cette classe de domaine.|\<none>|
-|Nom complet|Nom qui sera affiché dans le concepteur généré pour cette classe de domaine.|\<none>|
+|Nom d’affichage|Nom qui sera affiché dans le concepteur généré pour cette classe de domaine.|\<none>|
 |Help Keyword|Mot clé d’aide associé à cette classe de domaine.|\<none>|
 |Build|Numéro de build incrémentiel pour cette définition de langage spécifique à un domaine.|0|
 |Version majeure|Numéro de build majeur incrémentiel pour cette définition de langage spécifique à un domaine.|1|

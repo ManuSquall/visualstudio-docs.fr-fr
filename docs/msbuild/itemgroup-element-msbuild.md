@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a62b4df06d1c180a6a6d62b0231dce1136fb8059
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288973"
 ---
 # <a name="itemgroup-element-msbuild"></a>ItemGroup, élément (MSBuild)
@@ -32,7 +32,7 @@ Contient un ensemble d’éléments [Item](../msbuild/item-element-msbuild.md) d
 \<Project>
 \<ItemGroup>
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Syntaxe
 
 ```xml
 <ItemGroup Condition="'String A' == 'String B'"

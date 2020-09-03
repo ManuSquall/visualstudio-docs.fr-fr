@@ -14,17 +14,17 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 8c525d55de16e859005b9746eb52e5516928b9e6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586027"
 ---
 # <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>Procédure pas à pas : création d’un DataSet avec le Concepteur de DataSet
 
 Dans cette procédure pas à pas, vous créez un DataSet à l’aide de l' **Concepteur de DataSet**. L’article vous guide tout au long du processus de création d’un nouveau projet et d’ajout d’un nouvel élément de **jeu de données** . Vous allez apprendre à créer des tables basées sur des tables dans une base de données sans utiliser d’Assistant.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Prérequis
 
 Cette procédure pas à pas utilise SQL Server Express base de données locale et l’exemple de base de données Northwind.
 
@@ -46,7 +46,7 @@ Cette procédure pas à pas utilise SQL Server Express base de données locale e
 
 1. Dans Visual Studio, dans le menu **Fichier**, sélectionnez **Nouveau** > **Projet**.
 
-2. Développez **Visual C#**  ou **Visual Basic** dans le volet gauche, puis sélectionnez **Bureau Windows**.
+2. Développez **Visual C#** ou **Visual Basic** dans le volet gauche, puis sélectionnez **Bureau Windows**.
 
 3. Dans le volet central, sélectionnez le type de projet d' **application Windows Forms** .
 
@@ -58,7 +58,7 @@ Cette procédure pas à pas utilise SQL Server Express base de données locale e
 
 1. Dans le menu **Projet**, sélectionnez **Ajouter un nouvel élément**.
 
-     La boîte de dialogue **Ajouter un nouvel élément** s’affiche.
+     La boîte de dialogue **Ajouter un nouvel élément** s'affiche.
 
 2. Dans le volet gauche, sélectionnez **données**, puis sélectionnez **DataSet** dans le volet central.
 
@@ -106,7 +106,7 @@ Cette section explique comment ajouter des tables au jeu de données.
 
 - Ajoutez des requêtes supplémentaires aux TableAdapters.
 
-- Ajoutez une logique de validation aux événements <xref:System.Data.DataTable.ColumnChanging> ou <xref:System.Data.DataTable.RowChanging> des tables de données dans le DataSet. Pour plus d’informations, consultez [valider des données dans des datasets](../data-tools/validate-data-in-datasets.md).
+- Ajoutez une logique de validation <xref:System.Data.DataTable.ColumnChanging> aux <xref:System.Data.DataTable.RowChanging> événements ou des tables de données dans le DataSet. Pour plus d’informations, consultez [valider des données dans des datasets](../data-tools/validate-data-in-datasets.md).
 
 ## <a name="see-also"></a>Voir aussi
 

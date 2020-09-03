@@ -11,13 +11,13 @@ caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e2f4926a503304491164635b983353ba7f3bb0f6
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75915982"
 ---
-# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Comment : migrer des projets d’extensibilité vers Visual Studio 2015
+# <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Guide pratique pour migrer les projets d’extensibilité vers Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Voici comment mettre à niveau votre extension.  
@@ -29,15 +29,15 @@ Voici comment mettre à niveau votre extension.
   
 1. À l’aide de la copie que vous souhaitez mettre à niveau, ouvrez-la dans la nouvelle version. Vous serez informé que la mise à niveau n’est pas réversible.  
   
-2. Une fois la mise à niveau terminée, remplacez le chemin d’accès du programme externe par la nouvelle version de devenv. exe. Cliquez avec le bouton droit sur le nœud du projet dans le **Explorateur de solutions**, puis choisissez **Propriétés**. Dans l’onglet **Déboguer** , recherchez la zone de texte par **Démarrer le programme externe** et remplacez le chemin de devenv. exe par le chemin d’accès Visual Studio 2015, qui doit ressembler à ceci :  
+2. Une fois la mise à niveau terminée, remplacez le chemin d’accès du programme externe par la nouvelle version de devenv.exe. Cliquez avec le bouton droit sur le nœud du projet dans le **Explorateur de solutions**, puis choisissez **Propriétés**. Dans l’onglet **Déboguer** , recherchez la zone de texte par **Démarrer le programme externe** et remplacez le chemin d’accès de devenv.exe par le chemin d’accès Visual Studio 2015, qui doit ressembler à ceci :  
   
-     **%ProgramFiles%\Microsoft Visual Studio 14.0 \ Common7\IDE\devenv.exe**  
+     **%ProgramFiles%\Microsoft Visual Studio 14.0\Common7\IDE\devenv.exe**  
   
-3. Ajoutez une référence à Microsoft. VisualStudio. Shell. 14.0. dll. (Cliquez avec le bouton droit sur le nœud du projet dans le **Explorateur de solutions** puis sélectionnez **Ajouter/référencer**. Sélectionnez l’onglet **Extensions** , puis vérifiez **Microsoft. VisualStudio. Shell. 14.0**.)  
+3. Ajoutez une référence à Microsoft.VisualStudio.Shell.14.0.dll. (Cliquez avec le bouton droit sur le nœud du projet dans le **Explorateur de solutions** puis sélectionnez **Ajouter/référencer**. Sélectionnez l’onglet **Extensions** , puis vérifiez **Microsoft. VisualStudio. Shell. 14.0**.)  
   
 4. Générez la solution. Les fichiers générés sont déployés dans :  
   
-     **%LOCALAPPDATA%\Microsoft\VisualStudio.14.0Exp\Extensions\\< nom de l’auteur\>\\< nom du projet** \>\\\>\\.  
+     **%LOCALAPPDATA%\Microsoft\VisualStudio.14.0Exp\Extensions \\<nom de l’auteur \> \\<nom du projet \> \\<version \> \\ du projet**.  
   
 #### <a name="to-update-an-extensibility-project-to-nuget-vs-sdk-reference-assemblies"></a>Pour mettre à jour un projet d’extensibilité dans des assemblys de référence NuGet VS SDK  
   

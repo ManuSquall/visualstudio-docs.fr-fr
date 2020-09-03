@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::GetSymUnmanmanagedReader (fr) Microsoft Docs
+title: 'IDebugComPlusSymbolProvider :: GetSymUnmanagedReader | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 9b17479868b3f394c4e55aa9d04d92fd87e59aa3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733749"
 ---
 # <a name="idebugcomplussymbolprovidergetsymunmanagedreader"></a>IDebugComPlusSymbolProvider::GetSymUnmanagedReader
-Récupère le lecteur de symbole pour être utilisé par le code non menté.
+Récupère le lecteur de symboles à utiliser par le code non managé.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -44,19 +44,19 @@ int GetSymUnmanagedReader(
 
 ## <a name="parameters"></a>Paramètres
 `ulAppDomainID`\
-[dans] Identification du domaine de l’application.
+dans Identificateur du domaine d’application.
 
 `guidModule`\
-[dans] Identifiant unique du module.
+dans Identificateur unique du module.
 
 `ppSymUnmanagedReader`\
-[out] Retourne l’objet qui représente le lecteur de symbole.
+à Retourne l’objet qui représente le lecteur de symboles.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="example"></a>Exemple
-L’exemple suivant montre comment implémenter cette méthode pour un objet **CDebugSymbolProvider** qui expose [l’interface IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+L’exemple suivant montre comment implémenter cette méthode pour un objet **CDebugSymbolProvider** qui expose l’interface [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) .
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetSymUnmanagedReader(

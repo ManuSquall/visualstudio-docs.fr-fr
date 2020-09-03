@@ -10,10 +10,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: b71af98c7d72e0b3a510f3968f3d0770cd5401df
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284410"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Guide pratique pour créer des modèles à plusieurs projets
@@ -46,14 +46,14 @@ Par exemple, le fichier *.zip* d’un modèle à plusieurs projets contenant deu
 
 Le fichier *VSTemplate* racine d’un modèle à plusieurs projets diffère d’un modèle à projet unique des manières suivantes :
 
-- L’attribut **Type** de l’élément **VSTemplate** a la valeur **ProjectGroup** au lieu de **Project**. Par exemple :
+- L’attribut **Type** de l’élément **VSTemplate** a la valeur **ProjectGroup** au lieu de **Project**. Par exemple :
 
     ```xml
     <VSTemplate Version="2.0.0" Type="ProjectGroup"
         xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     ```
 
-- L’élément **TemplateContent** contient un élément **ProjectCollection** ayant un ou plusieurs éléments **ProjectTemplateLink** qui définissent les chemins des fichiers *vstemplate* des projets inclus. Par exemple :
+- L’élément **TemplateContent** contient un élément **ProjectCollection** ayant un ou plusieurs éléments **ProjectTemplateLink** qui définissent les chemins des fichiers *vstemplate* des projets inclus. Par exemple :
 
     ```xml
     <TemplateContent>
@@ -69,7 +69,7 @@ Le fichier *VSTemplate* racine d’un modèle à plusieurs projets diffère d’
     ```
 
 > [!TIP]
-> Si vous souhaitez que seul le modèle à plusieurs projets s’affiche dans la boîte de dialogue du nouveau projet et pas les projets individuels qu’il contient, marquez les modèles internes comme [masqués](../extensibility/hidden-element-visual-studio-templates.md). Par exemple :
+> Si vous souhaitez que seul le modèle à plusieurs projets s’affiche dans la boîte de dialogue du nouveau projet et pas les projets individuels qu’il contient, marquez les modèles internes comme [masqués](../extensibility/hidden-element-visual-studio-templates.md). Par exemple :
 >
 > ```xml
 > <VSTemplate Type="Project" ... >

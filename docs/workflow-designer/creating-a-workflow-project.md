@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f8c3e4930376d2d2f9a6ee3334d8b164279d5ac2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75597072"
 ---
 # <a name="workflow-project-templates"></a>Modèles de projet de workflow
@@ -36,14 +36,14 @@ Visual Studio fournit quatre modèles de projet de flux de travail différents 
 
 Pour accéder à ces modèles, installez d’abord le composant **Windows Workflow Foundation** de Visual Studio. Pour obtenir des instructions détaillées, consultez [installer Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
-1. Une fois que vous avez installé le composant **Windows Workflow Foundation** , sélectionnez **fichier** > **nouveau** > **projet**.
+1. Une fois que vous avez installé le composant **Windows Workflow Foundation** , sélectionnez **fichier**  >  **nouveau**  >  **projet**.
 
 1. Recherchez et sélectionnez un modèle de projet de flux de travail, par exemple, le modèle **application console de workflow** .
 
 1. Passez à la création du projet.
 
    > [!NOTE]
-   > Si vous souhaitez ajouter un nouveau projet à une solution existante, ouvrez cette solution dans Visual Studio, cliquez avec le bouton droit sur la solution dans **Explorateur de solutions**, puis sélectionnez **Ajouter** > **nouveau projet**.
+   > Si vous souhaitez ajouter un nouveau projet à une solution existante, ouvrez cette solution dans Visual Studio, cliquez avec le bouton droit sur la solution dans **Explorateur de solutions**, puis sélectionnez **Ajouter**  >  **nouveau projet**.
 
 ## <a name="workflow-console-app"></a>Application console de workflow
 
@@ -51,14 +51,14 @@ Si vous choisissez le modèle **application console de flux de travail** , Visua
 
 ## <a name="wcf-workflow-service-app"></a>Application de service de flux de travail WCF
 
-Si vous choisissez le modèle **application de service de flux de travail WCF** , Visual Studio crée une définition de service en tant que code XAML. Le Concepteur de flux de travail s’ouvre en mode création avec une activité <xref:System.Activities.Statements.Sequence> qui contient un ensemble d’activités de <xref:System.ServiceModel.Activities.Receive> et de <xref:System.ServiceModel.Activities.SendReply>.
+Si vous choisissez le modèle **application de service de flux de travail WCF** , Visual Studio crée une définition de service en tant que code XAML. Le Concepteur de flux de travail s’ouvre en mode conception avec une <xref:System.Activities.Statements.Sequence> activité qui contient un ensemble d' <xref:System.ServiceModel.Activities.Receive> <xref:System.ServiceModel.Activities.SendReply> activités et.
 
 ## <a name="activity-library"></a>Bibliothèque d’activités
 
 Si vous choisissez le modèle **bibliothèque d’activités** , Visual Studio crée une définition d’activité en XAML. Concepteur de flux de travail s’ouvre et affiche la zone de dessin de votre activité personnalisée. Faites glisser une activité de la **boîte à outils** vers l’aire de conception pour l’inclure dans votre activité personnalisée.
 
 > [!NOTE]
-> Vous n’avez autorisé qu’une seule activité enfant dans le corps de votre activité personnalisée. Toutefois, cette activité enfant peut être une activité composite, telle qu’une activité <xref:System.Activities.Statements.Sequence> ou <xref:System.Activities.Statements.Flowchart> activité.
+> Vous n’avez autorisé qu’une seule activité enfant dans le corps de votre activité personnalisée. Toutefois, cette activité enfant peut être une activité composite, telle qu’une activité ou une activité <xref:System.Activities.Statements.Sequence> <xref:System.Activities.Statements.Flowchart> .
 
 ## <a name="activity-designer-library"></a>Bibliothèque du concepteur d’activités
 
@@ -71,5 +71,5 @@ Pour obtenir un exemple d’implémentation d’un concepteur d’activités per
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Utilisez la Concepteur de flux de travail](developing-applications-with-the-workflow-designer.md)
+- [Utiliser le concepteur de workflow](developing-applications-with-the-workflow-designer.md)
 - [Concevoir des flux de travail (.NET Framework)](/dotnet/framework/windows-workflow-foundation/designing-workflows)

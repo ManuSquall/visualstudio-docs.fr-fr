@@ -43,13 +43,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9815bdec94ce32a3bfcc170dd95d834bc43ea58f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75566876"
 ---
-# <a name="options-dialog-box-text-editor--all-languages"></a>Boîte de dialogue d’options : Éditeur de \> texte toutes les langues
+# <a name="options-dialog-box-text-editor--all-languages"></a>Options, boîte de dialogue : éditeur de texte \> tous les langages
 
 Cette boîte de dialogue vous permet de modifier le comportement par défaut de l’éditeur de code. Ces paramètres s’appliquent également à d’autres éditeurs basés sur l’éditeur de code, tels que le mode Source du concepteur HTML. Pour ouvrir cette boîte de dialogue, sélectionnez **Options** dans le menu **Outils**. Dans le dossier **Éditeur de texte**, développez le sous-dossier **Tous les langages**, puis choisissez **Général**.
 
@@ -127,5 +127,5 @@ Ce paramètre n’a aucun effet sur les actions Copier ni Couper lorsqu’une li
 ## <a name="see-also"></a>Voir aussi
 
 - [Options, Éditeur de texte, Tous les langages, Tabulations](../../ide/reference/options-text-editor-all-languages-tabs.md)
-- [Général, Environnement, Options Dialog Box](../../ide/reference/general-environment-options-dialog-box.md)
-- [Using IntelliSense](../../ide/using-intellisense.md)
+- [Général, environnement, boîte de dialogue Options](../../ide/reference/general-environment-options-dialog-box.md)
+- [Utilisation d’IntelliSense](../../ide/using-intellisense.md)

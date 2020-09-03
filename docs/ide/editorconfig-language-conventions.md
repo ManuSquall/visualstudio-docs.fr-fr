@@ -14,10 +14,10 @@ ms.workload:
 - dotnet
 - dotnetcore
 ms.openlocfilehash: 3fa32e6155959df6e665a807af3b364923ba3f54
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533456"
 ---
 # <a name="language-conventions"></a>Conventions de langage
@@ -1047,7 +1047,7 @@ Dim v = If(o IsNot Nothing, o.ToString(), Nothing)
 | **Nom de la règle** | dotnet_style_prefer_is_null_check_over_reference_equality_method |
 | **Identificateur de la règle** | IDE0041 |
 | **Langues applicables** | C# 6.0+ et Visual Basic 14+ |
-| **Valeurs** | `true`-Préférer est une vérification de la valeur NULL sur la méthode d’égalité des références<br /><br />`false`-Préférer la méthode d’égalité de référence sur is Check null |
+| **Valeurs** | `true` -Préférer est une vérification de la valeur NULL sur la méthode d’égalité des références<br /><br />`false` -Préférer la méthode d’égalité de référence sur is Check null |
 | **Valeur par défaut de Visual Studio** | `true:silent` |
 
 ## <a name="net-code-quality-settings"></a>Paramètres de qualité de code .NET
@@ -1607,7 +1607,7 @@ csharp_prefer_braces = true:silent
 | **Nom de la règle** | csharp_prefer_braces |
 | **Identificateur de la règle** | IDE0011 |
 | **Langues applicables** | C# |
-| **Valeurs** | `true` - Préférer les accolades même pour une seule ligne de code<br /><br />`false` - Préférer n’avoir aucune accolade si cela est autorisé<br /><br />`when_multiline`-Préférer des accolades sur plusieurs lignes |
+| **Valeurs** | `true` - Préférer les accolades même pour une seule ligne de code<br /><br />`false` - Préférer n’avoir aucune accolade si cela est autorisé<br /><br />`when_multiline` -Préférer des accolades sur plusieurs lignes |
 | **Valeur par défaut de Visual Studio** | `true:silent` |
 
 Exemples de code :
@@ -1937,5 +1937,5 @@ switch (x)
 ## <a name="see-also"></a>Voir aussi
 
 - [Conventions de mise en forme](editorconfig-formatting-conventions.md)
-- [Conventions d'attribution d'un nom](editorconfig-naming-conventions.md)
+- [Conventions d’affectation des noms](editorconfig-naming-conventions.md)
 - [Paramètres de Convention de codage .NET pour EditorConfig](editorconfig-code-style-settings-reference.md)

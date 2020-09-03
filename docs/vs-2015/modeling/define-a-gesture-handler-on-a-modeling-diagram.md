@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: af4123b24ab9286e306a1034de4416a31ae76f2b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533066"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Définir un gestionnaire de mouvements sur un diagramme de modélisation
@@ -26,7 +26,7 @@ Dans Visual Studio,vous pouvez définir des commandes qui sont exécutées quand
 
  Si un comportement intégré existe déjà pour le type de diagramme et le type d’élément que vous souhaitez faire glisser, il se peut que vous ne puissiez pas effectuer d’ajouts à ce comportement ni le substituer.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  Consultez [Spécifications](../modeling/extend-uml-models-and-diagrams.md#Requirements).
 
  Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
@@ -230,7 +230,7 @@ Dans Visual Studio,vous pouvez définir des commandes qui sont exécutées quand
 
          **Projet**  =  *Votre projet de bibliothèque de classes*
 
-## <a name="executing-the-gesture-handler"></a><a name="Executing"></a>Exécution du gestionnaire de mouvements
+## <a name="executing-the-gesture-handler"></a><a name="Executing"></a> Exécution du gestionnaire de mouvements
  À des fins de test, exécutez votre gestionnaire de mouvements en mode débogage.
 
 #### <a name="to-test-the-gesture-handler"></a>Pour tester le gestionnaire de mouvements
@@ -265,7 +265,7 @@ Dans Visual Studio,vous pouvez définir des commandes qui sont exécutées quand
 
 - Aucune fonctionnalité intégrée n’est déjà définie pour ce type de cible et d’élément déposé.
 
-## <a name="implementing-the-gesture-handler"></a><a name="Implementing"></a>Implémentation du gestionnaire de mouvements
+## <a name="implementing-the-gesture-handler"></a><a name="Implementing"></a> Implémentation du gestionnaire de mouvements
 
 ### <a name="the-gesture-handler-methods"></a>Méthodes du gestionnaire de mouvements
  La classe du gestionnaire de mouvements implémente et exporte <xref:Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement.IGestureExtension>. Les méthodes que vous devez définir sont les suivantes :
@@ -348,7 +348,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
 
  Pour plus d’informations, consultez [naviguer dans le modèle UML](../modeling/navigate-the-uml-model.md).
 
-## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a>Installation et désinstallation d’une extension
+## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a> Installation et désinstallation d’une extension
  Vous pouvez installer une extension [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] sur votre propre ordinateur et sur d’autres ordinateurs.
 
 #### <a name="to-install-an-extension"></a>Pour installer une extension

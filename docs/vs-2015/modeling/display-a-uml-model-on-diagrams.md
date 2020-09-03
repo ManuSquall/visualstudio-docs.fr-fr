@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 06a22161068dd7604fe7bb4153e322c0954b89d2
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533016"
 ---
 # <a name="display-a-uml-model-on-diagrams"></a>Afficher un modèle UML sur des diagrammes
@@ -36,7 +36,7 @@ Dans cette rubrique :
 
 - [Exemple : commande pour aligner des formes](#AlignCommand)
 
-## <a name="to-display-an-element-on-a-diagram"></a><a name="Display"></a>Pour afficher un élément dans un diagramme
+## <a name="to-display-an-element-on-a-diagram"></a><a name="Display"></a> Pour afficher un élément dans un diagramme
  Quand vous créez un élément tel qu'un cas d'usage ou une action, l'utilisateur peut le voir dans l'Explorateur de modèles UML, mais il n'apparaît pas toujours automatiquement dans un diagramme. Dans certains cas, vous devez écrire du code pour l'afficher. Le tableau suivant récapitule les alternatives.
 
 |Type d'élément|Par exemple|Pour l'afficher, votre code doit|
@@ -47,7 +47,7 @@ Dans cette rubrique :
 |Enfant de comportement|Lignes de vie, messages, actions, nœuds d'objets|Automatique : aucun code nécessaire.<br /><br /> Il est affiché si le parent est lié à un diagramme.|
 |Relation|Association, généralisation, flux, dépendance|Automatique : aucun code nécessaire.<br /><br /> Il est affiché dans chaque diagramme où les deux extrémités sont affichées.|
 
-## <a name="accessing-the-shapes-that-represent-an-element"></a><a name="GetShapes"></a>Accès aux formes qui représentent un élément
+## <a name="accessing-the-shapes-that-represent-an-element"></a><a name="GetShapes"></a> Accès aux formes qui représentent un élément
  La forme qui représente un élément appartient aux types :
 
  `IShape`
@@ -68,7 +68,7 @@ Dans cette rubrique :
 |`IShape iShape = ...;`<br /><br /> `IShape<IClass> classShape = iShape.ToIShape<IClass>();`<br /><br /> `IClass aClass = classShape.Element;`|Effectuez un cast d'un `IShape` générique en un `IShape<IElement>` fortement typé.|
 |`IShape<IClassifier> classifierShape;`<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `classifierShape.ToIShape<IUseCase>();`|Effectuez un cast de forme d'un type de forme paramétrable vers un autre.|
 
-## <a name="moving-and-resizing-shapes"></a><a name="Moving"></a>Déplacer et redimensionner des formes
+## <a name="moving-and-resizing-shapes"></a><a name="Moving"></a> Déplacer et redimensionner des formes
 
 |Syntaxe|Description|
 |-|-|
@@ -77,7 +77,7 @@ Dans cette rubrique :
 
  Pour obtenir un exemple, consultez [définition d’une commande d’alignement](#AlignCommand).
 
-## <a name="to-remove-a-shape-from-a-diagram"></a><a name="Removing"></a>Pour supprimer une forme d’un diagramme
+## <a name="to-remove-a-shape-from-a-diagram"></a><a name="Removing"></a> Pour supprimer une forme d’un diagramme
  Vous pouvez supprimer des formes de certains types d'éléments sans supprimer l'élément.
 
 |Élément de modèle|Pour supprimer la forme|
@@ -86,7 +86,7 @@ Dans cette rubrique :
 |Un comportement : interaction ou activité|Vous pouvez supprimer le diagramme du projet. Utilisez `IDiagram.FileName` pour obtenir le chemin d'accès.<br /><br /> Cela ne supprime pas le comportement du modèle.|
 |Toute autre forme|Vous ne pouvez pas supprimer explicitement d'autres formes d'un diagramme. La forme disparaît automatiquement si l'élément est supprimé du modèle ou si la forme parente est supprimée du diagramme.|
 
-## <a name="opening-and-creating-diagrams"></a><a name="Opening"></a>Ouverture et création de diagrammes
+## <a name="opening-and-creating-diagrams"></a><a name="Opening"></a> Ouverture et création de diagrammes
 
 ### <a name="to-access-the-users-current-diagram-from-a-command-or-gesture-extension"></a>Pour accéder au diagramme actuel de l'utilisateur à partir d'une commande ou d'une extension de mouvement
  Déclarez cette propriété importée dans votre classe :
@@ -162,7 +162,7 @@ foreach (ProjectItem item in project.ProjectItems)
 IModelStore modelStore = (project as IModelingProject).Store;
 ```
 
-## <a name="example-command-for-aligning-shapes"></a><a name="AlignCommand"></a>Exemple : commande pour aligner des formes
+## <a name="example-command-for-aligning-shapes"></a><a name="AlignCommand"></a> Exemple : commande pour aligner des formes
  Le code suivant implémente une commande de menu qui aligne correctement les formes. Vous devez d'abord placer plusieurs formes avec un alignement approximatif, verticalement ou horizontalement. Vous pouvez ensuite utiliser la commande Aligner pour aligner leur centre.
 
  Pour rendre la commande accessible, ajoutez ce code à un projet de commande de menu, puis déployez l'extension résultante pour vos utilisateurs. Pour plus d’informations, consultez [définir une commande de menu sur un diagramme de modélisation](../modeling/define-a-menu-command-on-a-modeling-diagram.md).

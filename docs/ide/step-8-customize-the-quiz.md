@@ -1,5 +1,5 @@
 ---
-title: 'Étape 8 : personnaliser le questionnaire'
+title: 'Étape 8 : Personnaliser le questionnaire'
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -14,22 +14,22 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e568a9fa844802ddab934264cbc316d3514fe577
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77579371"
 ---
-# <a name="step-8-customize-the-quiz"></a>Étape 8 : personnaliser le questionnaire
+# <a name="step-8-customize-the-quiz"></a>Étape 8 : Personnaliser le questionnaire
 
 Dans la dernière partie du didacticiel, vous allez découvrir quelques méthodes permettant de personnaliser le questionnaire et développer ce que vous avez déjà appris. Par exemple, pensez à la façon dont le programme crée des problèmes de division aléatoire pour laquelle la réponse n’est jamais une fraction. Pour en savoir plus, définissez le contrôle `timeLabel` sur une couleur différente et donnez un indice à la personne interrogée.
 
 > [!NOTE]
-> Cette rubrique fait partie d'une série de didacticiels sur les concepts de codage de base. Pour un aperçu du tutoriel, voir [Tutorial 2: Créer un quiz de mathématiques chronométrés](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Cette rubrique fait partie d'une série de didacticiels sur les concepts de codage de base. Pour obtenir une vue d’ensemble du didacticiel, consultez [didacticiel 2 : créer un questionnaire mathématique chronométré](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 ## <a name="to-customize-the-quiz"></a>Pour personnaliser le questionnaire
 
-- Quand il ne reste que cinq secondes dans un quiz, tournez le **tempsLabel** contrôle rouge en fixant sa propriété **BackColor.**
+- Lorsque seulement cinq secondes sont conservées dans un quiz, désactivez le contrôle **timeLabel** en définissant sa propriété **BackColor** .
 
   ```csharp
   timeLabel.BackColor = Color.Red;
@@ -47,6 +47,6 @@ Dans la dernière partie du didacticiel, vous allez découvrir quelques méthode
 
 ## <a name="to-continue-or-review"></a>Pour continuer ou examiner
 
-- Pour aller au tutoriel suivant, voir **[Tutorial 3: Créer un jeu correspondant](../ide/tutorial-3-create-a-matching-game.md)**.
+- Pour passer au didacticiel suivant, consultez **[didacticiel 3 : créer un jeu de combinaisons](../ide/tutorial-3-create-a-matching-game.md)**.
 
-- Pour revenir à l’étape tutoriel précédente, voir [Étape 7: Ajouter la multiplication et les problèmes de division](../ide/step-7-add-multiplication-and-division-problems.md).
+- Pour revenir à l’étape précédente du didacticiel, consultez [étape 7 : ajouter des problèmes de multiplication et de division](../ide/step-7-add-multiplication-and-division-problems.md).

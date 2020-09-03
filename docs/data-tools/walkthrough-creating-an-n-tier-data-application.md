@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: a88f0382a93027cc952dfe44f0027e6ab1076a45
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75916493"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>Procédure pas à pas : création d’une application de données multicouches
@@ -50,7 +50,7 @@ Au cours de cette procédure pas à pas, vous effectuez les étapes suivantes :
 
 ![lien vers la vidéo](../data-tools/media/playvideo.gif) pour obtenir une version vidéo de cette rubrique, consultez [Video How to : Création d’une application de données multiniveaux](/previous-versions/visualstudio/visual-studio-2008/cc178916(v=vs.90)).
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Prérequis
 Cette procédure pas à pas utilise SQL Server Express base de données locale et l’exemple de base de données Northwind.
 
 1. Si vous n’avez pas SQL Server Express base de données locale, installez-la à partir de la [page de téléchargement SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)ou via le **Visual Studio installer**. Dans le **Visual Studio installer**, vous pouvez installer SQL Server Express base de données locale dans le cadre de la charge de travail **développement .net Desktop** , ou en tant que composant individuel.
@@ -68,7 +68,7 @@ Cette procédure pas à pas utilise SQL Server Express base de données locale e
        Après un bref laps de temps, l’exécution de la requête se termine et la base de données Northwind est créée.
 
 ## <a name="create-the-n-tier-solution-and-class-library-to-hold-the-dataset-dataentitytier"></a>Créer la solution multicouche et la bibliothèque de classes pour contenir le jeu de données (DataEntityTier)
-La première étape de cette procédure pas à pas consiste à créer une solution et deux projets de bibliothèque de classes. La première bibliothèque de classes contient le jeu de données (la classe de `DataSet` typée générée et les DataTables qui contiennent les données de l’application). Ce projet est utilisé comme couche d'entité de données de l'application et figure généralement dans la couche intermédiaire. Le DataSet crée le jeu de données initial et sépare automatiquement le code en deux bibliothèques de classes.
+La première étape de cette procédure pas à pas consiste à créer une solution et deux projets de bibliothèque de classes. La première bibliothèque de classes contient le DataSet (la classe typée générée `DataSet` et les DataTables qui contiennent les données de l’application). Ce projet est utilisé comme couche d'entité de données de l'application et figure généralement dans la couche intermédiaire. Le DataSet crée le jeu de données initial et sépare automatiquement le code en deux bibliothèques de classes.
 
 > [!NOTE]
 > Nommez correctement le projet et la solution avant de cliquer sur **OK**. Il vous sera alors plus facile de terminer cette procédure pas à pas.
@@ -77,7 +77,7 @@ La première étape de cette procédure pas à pas consiste à créer une soluti
 
 1. Dans Visual Studio, dans le menu **Fichier**, sélectionnez **Nouveau** > **Projet**.
 
-2. Développez **Visual C#**  ou **Visual Basic** dans le volet gauche, puis sélectionnez **Bureau Windows**.
+2. Développez **Visual C#** ou **Visual Basic** dans le volet gauche, puis sélectionnez **Bureau Windows**.
 
 3. Dans le volet central, sélectionnez le type de projet **bibliothèque de classes** .
 
@@ -101,12 +101,12 @@ L'étape qui suit la création du projet DataEntityTier est la création d'un au
      Le projet DataAccessTier est créé et ajouté à la solution NTierWalkthrough.
 
 ## <a name="create-the-dataset"></a>Créer le DataSet
-L'étape qui suit consiste à créer le dataset typé. Les datasets typés sont créés avec la classe DataSet (y compris les classes `DataTables`) et les classes `TableAdapter` dans un projet unique. (Toutes les classes sont générées dans un seul fichier.) Lorsque vous séparez le DataSet et les TableAdapters dans des projets différents, il s’agit de la classe DataSet qui est déplacée vers l’autre projet, en laissant les classes `TableAdapter` dans le projet d’origine. Par conséquent, créez le DataSet dans le projet qui contiendra finalement les TableAdapters (le projet DataAccessTier). Vous créez le DataSet à l’aide de l **'Assistant Configuration de source de données**.
+L'étape qui suit consiste à créer le dataset typé. Les datasets typés sont créés avec la classe DataSet (y compris les `DataTables` classes) et les `TableAdapter` classes dans un projet unique. (Toutes les classes sont générées dans un seul fichier.) Lorsque vous séparez le DataSet et les TableAdapters dans des projets différents, il s’agit de la classe DataSet qui est déplacée vers l’autre projet, en laissant les `TableAdapter` classes dans le projet d’origine. Par conséquent, créez le DataSet dans le projet qui contiendra finalement les TableAdapters (le projet DataAccessTier). Vous créez le DataSet à l’aide de l **'Assistant Configuration de source de données**.
 
 > [!NOTE]
 > Vous devez avoir accès à l'exemple de base de données Northwind pour créer la connexion. Pour plus d’informations sur la configuration de l’exemple de base de données Northwind, consultez [Comment : installer des exemples de bases de données](../data-tools/installing-database-systems-tools-and-samples.md).
 
-### <a name="to-create-the-dataset"></a>Pour créer le groupe de données
+### <a name="to-create-the-dataset"></a>Pour créer le dataset
 
 1. Sélectionnez le **DataAccessTier** dans **Explorateur de solutions**.
 
@@ -122,7 +122,7 @@ L'étape qui suit consiste à créer le dataset typé. Les datasets typés sont 
 
      Si une connexion de données à l’exemple de base de données Northwind est disponible dans la liste déroulante, sélectionnez-la.
 
-     \- ou -
+     - ou -
 
      Sélectionnez **nouvelle connexion** pour ouvrir la boîte de dialogue **Ajouter une connexion** .
 
@@ -154,7 +154,7 @@ Une fois que vous avez créé le dataset, séparez la classe DataSet générée 
 
 5. Dans le menu **Générer**, sélectionnez **Générer la solution**.
 
-   Le dataset et les TableAdapters sont divisés entre les deux projets de bibliothèque de classes. Le projet qui contenait initialement le DataSet entier (`DataAccessTier`) contient désormais uniquement les TableAdapters. Le projet désigné dans la propriété de **projet DataSet** (`DataEntityTier`) contient le DataSet typé : *NorthwindDataSet. DataSet. Designer. vb* (ou *NorthwindDataSet.DataSet.Designer.cs*).
+   Le dataset et les TableAdapters sont divisés entre les deux projets de bibliothèque de classes. Le projet qui contenait initialement le DataSet entier ( `DataAccessTier` ) contient désormais uniquement les TableAdapters. Le projet désigné dans la propriété de **projet DataSet** ( `DataEntityTier` ) contient le DataSet typé : *NorthwindDataSet. DataSet. Designer. vb* (ou *NorthwindDataSet.DataSet.Designer.cs*).
 
 > [!NOTE]
 > Quand vous séparez les datasets et les TableAdapters (en définissant la propriété **Projet DataSet**), les classes DataSet partielles existantes dans le projet ne sont pas déplacées automatiquement. Les classes DataSet partielles existantes doivent être manuellement déplacées dans le projet DataSet.
@@ -173,7 +173,7 @@ Cette procédure pas à pas montre comment accéder à la couche d’accès aux 
      Le projet DataService est créé et ajouté à la solution NTierWalkthrough.
 
 ## <a name="create-methods-in-the-data-access-tier-to-return-the-customers-and-orders-data"></a>Créer des méthodes dans la couche d’accès aux données pour retourner les données Customers et Orders
-Le service de données doit appeler deux méthodes dans la couche d’accès aux données : `GetCustomers` et `GetOrders`. Ces méthodes retournent les tables `Customers` et `Orders` de Northwind. Créez les méthodes `GetCustomers` et `GetOrders` dans le projet `DataAccessTier`.
+Le service de données doit appeler deux méthodes dans la couche d’accès aux données : `GetCustomers` et `GetOrders` . Ces méthodes retournent `Customers` les `Orders` tables Northwind et. Créez les `GetCustomers` `GetOrders` méthodes et dans le `DataAccessTier` projet.
 
 ### <a name="to-create-a-method-in-the-data-access-tier-that-returns-the-customers-table"></a>Pour créer une méthode dans la couche d'accès aux données qui retourne la table Customers
 
@@ -189,7 +189,7 @@ Le service de données doit appeler deux méthodes dans la couche d’accès aux
 
 6. Dans la page **Choisir les méthodes à générer**, tapez **GetCustomers** dans le champ **Nom de la méthode** de la section **Retourner un DataTable**.
 
-7. Cliquez sur **Finish**.
+7. Cliquez sur **Terminer**.
 
 ### <a name="to-create-a-method-in-the-data-access-tier-that-returns-the-orders-table"></a>Pour créer une méthode dans la couche d'accès aux données qui retourne la table Orders
 
@@ -203,9 +203,9 @@ Le service de données doit appeler deux méthodes dans la couche d’accès aux
 
 5. Dans la page **Choisir les méthodes à générer**, tapez **GetOrders** dans le champ **Nom de la méthode** de la section **Retourner un DataTable**.
 
-6. Cliquez sur **Finish**.
+6. Cliquez sur **Terminer**.
 
-7. Dans le menu **Générer** , cliquez sur **Générer la solution**.
+7. Dans le menu **Générer**, cliquez sur **Générer la solution**.
 
 ## <a name="add-a-reference-to-the-data-entity-and-data-access-tiers-to-the-data-service"></a>Ajouter une référence à l’entité de données et aux niveaux d’accès aux données dans le service de données
 Le service de données nécessitant des informations du dataset et des TableAdapters, ajoutez des références aux projets **DataEntityTier** et **DataAccessTier**.
@@ -248,9 +248,9 @@ Maintenant que la couche d'accès aux données contient les méthodes permettant
     DataEntityTier.NorthwindDataSet.OrdersDataTable GetOrders();
     ```
 
-3. Dans le projet DataService, double-cliquez sur **Service1.vb** (ou sur **Service1.cs**).
+3. Dans le projet DataService, double-cliquez sur **Service1. vb** (ou **Service1.cs**).
 
-4. Ajoutez le code suivant à la classe **Service1** :
+4. Ajoutez le code suivant à la classe **Service1** :
 
     ```vb
     Public Function GetCustomers() As DataEntityTier.NorthwindDataSet.CustomersDataTable Implements IService1.GetCustomers
@@ -281,7 +281,7 @@ Maintenant que la couche d'accès aux données contient les méthodes permettant
     }
     ```
 
-5. Dans le menu **Générer** , cliquez sur **Générer la solution**.
+5. Dans le menu **Générer**, cliquez sur **Générer la solution**.
 
 ## <a name="create-a-presentation-tier-to-display-data-from-the-data-service"></a>Créer une couche de présentation pour afficher des données à partir du service de données
 Maintenant que la solution contient le service de données qui a des méthodes, qui appellent la couche d’accès aux données, créez un autre projet qui appelle le service de données et présentez les données aux utilisateurs. Pour cette procédure pas à pas, créez une application Windows Forms. Il s’agit de la couche Présentation de l’application multicouche.
@@ -323,7 +323,7 @@ L’application cliente PresentationTier nécessite une référence de service a
 3. Sélectionnez **Service1** et choisissez **OK**.
 
     > [!NOTE]
-    > Si vous avez plusieurs services sur l’ordinateur actuel, sélectionnez le service que vous avez créé précédemment dans cette procédure pas à pas (le service qui contient les méthodes `GetCustomers` et `GetOrders`).
+    > Si vous avez plusieurs services sur l’ordinateur actuel, sélectionnez le service que vous avez créé précédemment dans cette procédure pas à pas (le service qui contient les `GetCustomers` `GetOrders` méthodes et).
 
 ## <a name="add-datagridviews-to-the-form-to-display-the-data-returned-by-the-data-service"></a>Ajouter des DataGridViews au formulaire pour afficher les données retournées par le service de données
 Une fois que vous avez ajouté la référence de service au service de données, la fenêtre **Sources de données** est automatiquement remplie avec les données retournées par le service.
@@ -358,7 +358,7 @@ Une fois que vous avez ajouté la référence de service au service de données,
     ```
 
 ## <a name="increase-the-maximum-message-size-allowed-by-the-service"></a>Augmentez la taille maximale autorisée pour le message par le service
-La valeur par défaut de `maxReceivedMessageSize` n’est pas assez grande pour contenir les données extraites des tables `Customers` et `Orders`. Dans les étapes suivantes, vous allez augmenter la valeur à 6553600. Vous modifiez la valeur sur le client, ce qui met automatiquement à jour la référence de service.
+La valeur par défaut de `maxReceivedMessageSize` n’est pas assez grande pour contenir les données extraites des `Customers` `Orders` tables et. Dans les étapes suivantes, vous allez augmenter la valeur à 6553600. Vous modifiez la valeur sur le client, ce qui met automatiquement à jour la référence de service.
 
 > [!NOTE]
 > La taille inférieure par défaut est destinée à limiter l'exposition aux attaques par déni de service. Pour plus d'informations, consultez <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>.
@@ -369,10 +369,10 @@ La valeur par défaut de `maxReceivedMessageSize` n’est pas assez grande pour 
 
 2. Accédez à l’attribut de taille **maxReceivedMessage** et changez la valeur en `6553600`.
 
-## <a name="test-the-application"></a>Tester l'application
-Exécutez l’application en appuyant sur **F5**. Les données des tables `Customers` et `Orders` sont récupérées à partir du service de données et affichées sur le formulaire.
+## <a name="test-the-application"></a>Tester l’application
+Exécutez l’application en appuyant sur **F5**. Les données des `Customers` tables et `Orders` sont récupérées à partir du service de données et affichées sur le formulaire.
 
-## <a name="next-steps"></a>Étapes suivantes :
+## <a name="next-steps"></a>Étapes suivantes
 Selon les spécifications de votre application, vous pouvez exécuter différentes étapes après avoir enregistré les données associées dans l'application Windows. Par exemple, vous pouvez apporter les améliorations suivantes à cette application :
 
 - Ajouter une validation au dataset.
@@ -381,6 +381,6 @@ Selon les spécifications de votre application, vous pouvez exécuter différent
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Utilisation de datasets dans des applications multiniveaux](../data-tools/work-with-datasets-in-n-tier-applications.md)
+- [Utiliser des jeux de données dans des applications multicouches](../data-tools/work-with-datasets-in-n-tier-applications.md)
 - [Mise à jour hiérarchique](../data-tools/hierarchical-update.md)
 - [Accès aux données dans Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

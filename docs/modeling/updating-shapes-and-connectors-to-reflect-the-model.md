@@ -8,17 +8,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 83a43e8570ea65373b8cac0bd3e3e7a8dc1f5791
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76115025"
 ---
 # <a name="update-shapes-and-connectors-to-reflect-the-model"></a>Mettre à jour les formes et les connecteurs pour refléter le modèle
 
 Dans un langage spécifique à un domaine dans Visual Studio, vous pouvez faire en sorte que l’apparence d’une forme reflète l’état du modèle sous-jacent.
 
-Les exemples de code de cette rubrique doivent être ajoutés à un fichier `.cs` dans votre projet `Dsl`. Vous avez besoin de ces directives dans chaque fichier :
+Les exemples de code de cette rubrique doivent être ajoutés à un `.cs` fichier dans votre `Dsl` projet. Vous avez besoin de ces directives dans chaque fichier :
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
@@ -37,14 +37,14 @@ La forme a maintenant une propriété de domaine que vous pouvez définir dans l
 
 `shape.FillColor = System.Drawing.Color.Red;`
 
-Si vous souhaitez que la variable de propriété soit uniquement sous contrôle du programme, et non par l’utilisateur, sélectionnez la nouvelle propriété de domaine comme **couleur de remplissage** dans le diagramme de définition DSL. Ensuite, dans la Fenêtre Propriétés, Set **peut être exploré** pour `false` ou définir **is UI ReadOnly** pour `true`.
+Si vous souhaitez que la variable de propriété soit uniquement sous contrôle du programme, et non par l’utilisateur, sélectionnez la nouvelle propriété de domaine comme **couleur de remplissage** dans le diagramme de définition DSL. Ensuite, dans la Fenêtre Propriétés, Set **peut être exploré** `false` ou défini comme **UI ReadOnly** to `true` .
 
 ## <a name="define-change-rules-to-make-color-style-or-location-depend-on-model-element-properties"></a>Définir des règles de modification pour définir la couleur, le style ou l’emplacement en fonction des propriétés de l’élément de modèle
  Vous pouvez définir des règles qui mettent à jour l’apparence de la forme en fonction des autres parties du modèle. Par exemple, vous pouvez définir une règle de modification sur un élément de modèle qui met à jour la couleur de sa forme en fonction des propriétés de l’élément de modèle. Pour plus d’informations sur les règles de modification, consultez [règles de propagation des modifications dans le modèle](../modeling/rules-propagate-changes-within-the-model.md).
 
  Vous devez utiliser des règles uniquement pour mettre à jour les propriétés qui sont conservées dans le magasin, car les règles ne sont pas appelées lors de l’exécution de la commande Annuler. Cela n’inclut pas certaines fonctionnalités graphiques telles que la taille et la visibilité d’une forme. Pour mettre à jour ces fonctionnalités d’une forme, consultez [mise à jour des fonctionnalités graphiques de non-stockage](#OnAssociatedProperty).
 
- L’exemple suivant suppose que vous avez exposé `FillColor` en tant que propriété de domaine, comme décrit dans la section précédente.
+ L’exemple suivant suppose que vous avez exposé `FillColor` en tant que propriété de domaine comme décrit dans la section précédente.
 
 ```csharp
 [RuleOn(typeof(ExampleElement))]
@@ -84,7 +84,7 @@ Si vous souhaitez que la variable de propriété soit uniquement sous contrôle 
 
 ## <a name="use-onchildconfigured-to-initialize-a-shapes-properties"></a>Utiliser OnChildConfigured pour initialiser les propriétés d’une forme
 
-Pour définir les propriétés d’une forme lors de sa création, la substitution `OnChildConfigured()` dans une définition partielle de la classe Diagram. La classe Diagram est spécifiée dans votre définition DSL et le code généré se trouve dans **Dsl\Generated Code\Diagram.cs**. Par exemple :
+Pour définir les propriétés d’une forme lorsqu’elle est créée pour la première fois, remplacez `OnChildConfigured()` dans une définition partielle de la classe Diagram. La classe Diagram est spécifiée dans votre définition DSL et le code généré se trouve dans **Dsl\Generated Code\Diagram.cs**. Par exemple :
 
 ```csharp
 partial class MyLanguageDiagram
@@ -108,11 +108,11 @@ partial class MyLanguageDiagram
 
 Cette méthode peut être utilisée à la fois pour les propriétés de domaine et les fonctionnalités de non-stockage, telles que la taille de la forme.
 
-## <a name="OnAssociatedProperty"></a>Utiliser AssociateValueWith () pour mettre à jour d’autres fonctionnalités d’une forme
+## <a name="use-associatevaluewith-to-update-other-features-of-a-shape"></a><a name="OnAssociatedProperty"></a> Utiliser AssociateValueWith () pour mettre à jour d’autres fonctionnalités d’une forme
 
 Pour certaines fonctionnalités d’une forme, par exemple si elle a une ombre, ou le style de flèche d’un connecteur, il n’existe aucune méthode intégrée pour exposer la fonctionnalité en tant que propriété de domaine.  Les modifications apportées à ces fonctionnalités ne sont pas sous le contrôle du système de transactions. Par conséquent, il n’est pas approprié de les mettre à jour à l’aide de règles, car les règles ne sont pas appelées lorsque l’utilisateur exécute la commande Annuler.
 
-Au lieu de cela, vous pouvez mettre à jour ces fonctionnalités à l’aide de <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A>. Dans l’exemple suivant, le style de flèche d’un connecteur est contrôlé par la valeur d’une propriété de domaine dans la relation que le connecteur affiche :
+Au lieu de cela, vous pouvez mettre à jour ces fonctionnalités à l’aide de <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A> . Dans l’exemple suivant, le style de flèche d’un connecteur est contrôlé par la valeur d’une propriété de domaine dans la relation que le connecteur affiche :
 
 ```csharp
 public partial class ArrowConnector // My connector class.

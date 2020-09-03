@@ -1,4 +1,4 @@
-- name: Kit de développement logiciel Visual Studio
+- name: "Kit de développement logiciel Visual\_Studio"
   href: visual-studio-sdk.md
 - name: "Installer le SDK Visual\_Studio"
   href: installing-the-visual-studio-sdk.md
@@ -40,7 +40,7 @@
   items:
     - name: Ouvrir un dossier
       href: open-folder.md
-    - name: Espaces de travail
+    - name: Workspaces
       href: workspaces.md
     - name: Contextes de fichier
       href: workspace-file-contexts.md
