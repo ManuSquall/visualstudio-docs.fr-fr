@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4455f850ad533f17cd9f6cb33e7e874621d0bb2c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205888"
 ---
 # <a name="modules-view---instrumentation-data"></a>Modules, vue - Données d’instrumentation
@@ -31,10 +31,10 @@ La vue Modules affiche les données de performances regroupées selon les module
 |**Name**|Nom de la fonction ou du module.|  
 |**Numéro de ligne de fonction**|Numéro de ligne du début de cette fonction dans le fichier source.|  
 |**Nombre d’appels**|Nombre total d’appels effectués à cette fonction ou à ce module.|  
-|**Fichier source**|Fichier source contenant la définition pour cette fonction.|  
+|**Source File**|Fichier source contenant la définition pour cette fonction.|  
 |**Nom du module**|Nom du module qui contient la fonction.|  
-|**Chemin de module**|Chemin d’accès du module qui contient la fonction.|  
-|**ID du processus**|ID du processus (PID) de l'exécution du profilage.|  
+|**Chemin du module**|Chemin d’accès du module qui contient la fonction.|  
+|**ID de processus**|ID du processus (PID) de l'exécution du profilage.|  
 |**Nom du processus**|Nom du processus dans lequel le module ou la fonction s’exécutait.|  
 |**Traitement de sondes du temps exclusif**|Surcharge de temps pour cette fonction ou ce module en raison de l’instrumentation.|  
 |**Traitement des sondes temps inclus**|Surcharge de temps pour cette fonction ou ce module et ses fonctions enfants en raison de l’instrumentation.|  
@@ -84,6 +84,6 @@ La vue Modules affiche les données de performances regroupées selon les module
 |**Temps exclusif d’application min.**|-   Pour une fonction, temps exclusif d’application minimal d’un appel à ce module ou à cette fonction.<br />-   Pour un module, temps exclusif d’application minimal de tous les appels aux fonctions du module.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Vue Modules - Données d’instrumentation](../profiling/modules-view-sampling-data.md)   
- [Modules, vue - Instrumentation](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
- [Modules, vue - Échantillonnage](../profiling/modules-view-dotnet-memory-sampling-data.md)
+ [Modules, vue](../profiling/modules-view-sampling-data.md)   
+ [Vue modules-Instrumentation](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
+ [Vue Modules - Échantillonnage](../profiling/modules-view-dotnet-memory-sampling-data.md)

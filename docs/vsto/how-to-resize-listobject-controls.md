@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 68a9841d8471189538959a311bf9349199d55f78
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545832"
 ---
 # <a name="how-to-resize-listobject-controls"></a>Comment : redimensionner des contrôles ListObject
@@ -37,12 +37,12 @@ ms.locfileid: "85545832"
 
   Pour plus d’informations sur les <xref:Microsoft.Office.Tools.Excel.ListObject> contrôles, consultez [ListObject, contrôle](../vsto/listobject-control.md).
 
-## <a name="resize-a-listobject-control-at-design-time"></a><a name="designtime"></a>Redimensionner un contrôle ListObject au moment du design
+## <a name="resize-a-listobject-control-at-design-time"></a><a name="designtime"></a> Redimensionner un contrôle ListObject au moment du design
  Pour redimensionner une liste, vous pouvez cliquer sur l’une des poignées de redimensionnement et la faire glisser, ou vous pouvez redéfinir sa taille dans la boîte de dialogue **Redimensionner la liste** .
 
 ### <a name="to-resize-a-list-by-using-the-resize-list-dialog-box"></a>Pour redimensionner une liste à l’aide de la boîte de dialogue Redimensionner la liste
 
-1. Cliquez n’importe où dans le <xref:Microsoft.Office.Tools.Excel.ListObject> tableau. L' **Table Tools**  >  onglet**conception** des outils de table du ruban s’affiche.
+1. Cliquez n’importe où dans le  <xref:Microsoft.Office.Tools.Excel.ListObject> tableau. L' **Table Tools**  >  onglet**conception** des outils de table du ruban s’affiche.
 
 2. Dans la section Propriétés, cliquez sur **redimensionner la table**.
 
@@ -52,7 +52,7 @@ ms.locfileid: "85545832"
 
 4. Cliquez sur **OK**.
 
-## <a name="resize-a-listobject-control-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a>Redimensionner un contrôle ListObject au moment de l’exécution dans un projet au niveau du document
+## <a name="resize-a-listobject-control-at-run-time-in-a-document-level-project"></a><a name="runtimedoclevel"></a> Redimensionner un contrôle ListObject au moment de l’exécution dans un projet au niveau du document
  Vous pouvez redimensionner un contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> au moment de l’exécution à l’aide de la méthode <xref:Microsoft.Office.Tools.Excel.ListObject.Resize%2A> . Vous ne pouvez pas utiliser cette méthode pour déplacer le contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> vers un nouvel emplacement sur la feuille de calcul. Les en-têtes doivent rester sur la même ligne et le contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> redimensionné doit chevaucher l’objet de liste d’origine. Le contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> redimensionné doit contenir une ligne d’en-tête et au moins une ligne de données.
 
 ### <a name="to-resize-a-list-object-programmatically"></a>Pour redimensionner un objet de liste par programmation
@@ -67,7 +67,7 @@ ms.locfileid: "85545832"
      [!code-csharp[Trin_VstcoreHostControlsExcel#7](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#7)]
      [!code-vb[Trin_VstcoreHostControlsExcel#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#7)]
 
-## <a name="resize-a-listobject-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a>Redimensionner un ListObject au moment de l’exécution dans un projet de complément VSTO
+## <a name="resize-a-listobject-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a> Redimensionner un ListObject au moment de l’exécution dans un projet de complément VSTO
  Vous pouvez redimensionner un contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> sur n’importe quelle feuille de calcul ouverte au moment de l’exécution. Pour plus d’informations sur l’ajout d’un <xref:Microsoft.Office.Tools.Excel.ListObject> contrôle à une feuille de calcul à l’aide d’un complément VSTO, consultez [Comment : ajouter des contrôles ListObject à des feuilles de calcul](../vsto/how-to-add-listobject-controls-to-worksheets.md).
 
 ### <a name="to-resize-a-list-object-programmatically"></a>Pour redimensionner un objet de liste par programmation

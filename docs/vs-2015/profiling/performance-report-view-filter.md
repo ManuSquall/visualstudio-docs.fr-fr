@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8620e5a372d764fef3a75126af52a6212ecc6cd8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161974"
 ---
 # <a name="performance-report-view-filter"></a>Filtre de la vue Rapport de performances
@@ -28,10 +28,10 @@ La fenêtre de filtre de la vue Rapport du profileur se trouve en haut de la fen
   
 |Élément de filtre|Description|  
 |-----------------|-----------------|  
-|Et/ou|Choisissez **Et** si cette clause et la suivante doivent être vraies pour correspondre à un résultat. Choisissez **Ou** si cette clause ou la suivante peut être vraie pour correspondre à un résultat.|  
+|et/ou|Choisissez **Et** si cette clause et la suivante doivent être vraies pour correspondre à un résultat. Choisissez **Ou** si cette clause ou la suivante peut être vraie pour correspondre à un résultat.|  
 |Champ|Sélectionnez le champ à utiliser dans la clause de filtre dans la liste des champs de données disponibles dans le fichier de rapport actuel.|  
 |Opérateur|Sélectionnez l’opérateur qui spécifie la relation qui doit exister entre le champ et la valeur.<br /><br /> =    Égal<br /><br /> <>  Différent de<br /><br /> <    Inférieur à<br /><br /> >    Supérieur à<br /><br /> <=  Inférieur ou égal à<br /><br /> >=  Supérieur ou égal à|  
-|Value|Sélectionnez ou entrez la valeur à rechercher. Certains champs répertorient les valeurs disponibles.|  
+|Valeur|Sélectionnez ou entrez la valeur à rechercher. Certains champs répertorient les valeurs disponibles.|  
   
  Vous pouvez ajouter des clauses jusqu’à ce que le filtre soit susceptible de fournir les meilleurs résultats possibles. Cliquez sur **Exécuter le filtre** pour appliquer le filtre au fichier de données.  
   

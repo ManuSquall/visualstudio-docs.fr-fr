@@ -1,5 +1,5 @@
 ---
-title: Faire référence à l’élément (modèles Visual Studio) | Microsoft Docs
+title: Reference, élément (modèles Visual Studio) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,10 +14,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c3d67fd19122e160159a6f636516dbca582fe31d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193832"
 ---
 # <a name="reference-element-visual-studio-templates"></a>Reference, élément (modèles Visual Studio)
@@ -27,8 +27,8 @@ Spécifie la référence d’assembly à ajouter quand l’élément est ajouté
   
  \<VSTemplate>  
  \<TemplateContent>  
- \<Références >  
- \<Référence >  
+ \<References>  
+ \<Reference>  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -48,7 +48,7 @@ Spécifie la référence d’assembly à ajouter quand l’élément est ajouté
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[Assembly](../extensibility/assembly-element-visual-studio-templates.md)|Élément requis.<br /><br /> Spécifie les informations relatives à un assembly, le modèle utilise pour ajouter une référence de cet assembly aux projets. Il doit y avoir une `Assembly` élément dans chaque `Reference` élément.|  
+|[Assembly](../extensibility/assembly-element-visual-studio-templates.md)|Élément requis.<br /><br /> Spécifie des informations sur un assembly, que le modèle utilise pour ajouter une référence de cet assembly aux projets. Il doit y avoir un `Assembly` élément dans chaque `Reference` élément.|  
   
 ### <a name="parent-elements"></a>Éléments parents  
   
@@ -59,10 +59,10 @@ Spécifie la référence d’assembly à ajouter quand l’élément est ajouté
 ## <a name="remarks"></a>Notes  
  `Reference` est un élément enfant obligatoire de `References`.  
   
- Le `Reference` et `References` éléments peuvent uniquement être utilisés dans les fichiers .vstemplate ayant un `Type` valeur d’attribut `Item`.  
+ Les `Reference` `References` éléments et peuvent uniquement être utilisés dans les fichiers. vstemplate qui ont une `Type` valeur d’attribut de `Item` .  
   
-## <a name="example"></a>Exemples  
- L’exemple suivant illustre la `TemplateContent` élément d’un modèle d’élément. Ce code XML ajoute des références aux assemblys System.dll et System.Data.dll.  
+## <a name="example"></a>Exemple  
+ L’exemple suivant illustre l' `TemplateContent` élément d’un modèle d’élément. Ce code XML ajoute des références aux assemblys System.dll et System.Data.dll.  
   
 ```  
 <TemplateContent>  

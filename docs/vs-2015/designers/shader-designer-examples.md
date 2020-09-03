@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e182d921e8ffb019d2044699e3a9c333492497b0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531559"
 ---
 # <a name="shader-designer-examples"></a>Exemples du concepteur Shader
@@ -23,7 +23,7 @@ Les articles de cette section de la documentation contiennent des exemples qui i
 
 ## <a name="related-topics"></a>Rubriques connexes
 
-|Intitulé|Description|
+|Titre|Description|
 |-|-|
 |[Guide pratique pour créer un nuanceur de couleur de base](../designers/how-to-create-a-basic-color-shader.md)|Illustre un nuanceur qui applique une couleur constante à un objet.|
 |[Procédure : créer un nuanceur Lambert de base](../designers/how-to-create-a-basic-lambert-shader.md)|Illustre un nuanceur qui applique le modèle d’éclairage Lambert classique à un objet.|

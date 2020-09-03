@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Automatiser une application à partir d’un volet de tâches personnalisé'
+title: 'Procédure pas à pas : automatiser une application à partir d’un volet de tâches personnalisé'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,20 +18,20 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f5135e96125192d7ed125287aa47c839031824fe
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68871938"
 ---
-# <a name="walkthrough-automate-an-application-from-a-custom-task-pane"></a>Procédure pas à pas : Automatiser une application à partir d’un volet de tâches personnalisé
+# <a name="walkthrough-automate-an-application-from-a-custom-task-pane"></a>Procédure pas à pas : automatiser une application à partir d’un volet de tâches personnalisé
   Cette procédure pas à pas montre comment créer un volet Office personnalisé qui automatise PowerPoint. Le volet Office personnalisé insère des dates dans une diapositive quand l’utilisateur clique sur un contrôle <xref:System.Windows.Forms.MonthCalendar> dans le volet Office personnalisé.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
  Bien que cette procédure pas à pas utilise spécifiquement PowerPoint, les concepts présentés ici s’appliquent aux applications listées ci-dessus.
 
- Cette procédure pas à pas décrit les tâches suivantes :
+ Cette procédure pas à pas décrit les tâches suivantes :
 
 - Conception de l’interface utilisateur du volet Office personnalisé.
 
@@ -40,10 +40,10 @@ ms.locfileid: "68871938"
 - Affichage du volet Office personnalisé dans PowerPoint.
 
 > [!NOTE]
-> Il est possible que pour certains des éléments de l’interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L’édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Il est possible que pour certains des éléments de l'interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L'édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Prérequis
- Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :
+ Vous devez disposer des éléments suivants pour exécuter cette procédure pas à pas :
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -54,14 +54,14 @@ ms.locfileid: "68871938"
 
 ### <a name="to-create-a-new-project"></a>Pour créer un projet
 
-1. Créez un projet de complément PowerPoint VSTO nommé **MyAddIn**, en utilisant le modèle de projet de complément PowerPoint. Pour plus d'informations, voir [Procédure : Créer des projets Office dans Visual](../vsto/how-to-create-office-projects-in-visual-studio.md)Studio.
+1. Créez un projet de complément PowerPoint VSTO nommé **MyAddIn**, en utilisant le modèle de projet de complément PowerPoint. Pour plus d’informations, consultez [Comment : créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ouvre le fichier de code **ThisAddIn.cs** ou **ThisAddIn.vb** , et ajoute le projet **MyAddIn** à l’ **Explorateur de solutions**.
 
 ## <a name="design-the-user-interface-of-the-custom-task-pane"></a>Concevoir l’interface utilisateur du volet Office personnalisé
- Il n’existe aucun concepteur visuel pour les volets Office personnalisés. Toutefois, vous pouvez concevoir un contrôle utilisateur avec la disposition de votre choix. Ultérieurement dans cette procédure, vous ajouterez le contrôle utilisateur au volet Office personnalisé.
+ Il n’existe aucun concepteur visuel pour les volets Office personnalisés. Toutefois, vous pouvez concevoir un contrôle utilisateur avec la disposition de votre choix. À une étape ultérieure de cette procédure, vous ajouterez le contrôle utilisateur au volet des tâches personnalisé.
 
-#### <a name="to-design-the-user-interface-of-the-custom-task-pane"></a>Pour concevoir l’interface utilisateur du volet Office personnalisé
+#### <a name="to-design-the-user-interface-of-the-custom-task-pane"></a>Pour concevoir l’interface utilisateur du volet des tâches personnalisé
 
 1. Dans le menu **Projet** , cliquez sur **Ajouter un contrôle utilisateur**.
 
@@ -82,12 +82,12 @@ ms.locfileid: "68871938"
 
      Le fichier **MyUserControl.cs** ou **MyUserControl.vb** s’ouvre, et un gestionnaire d’événements est créé pour l’événement <xref:System.Windows.Forms.MonthCalendar.DateChanged> .
 
-2. Ajoutez le code suivant en haut du fichier. Ce code crée des alias pour les <xref:Microsoft.Office.Core> espaces de noms et [PowerPoint](/previous-versions/office/developer/office-2010/ff763170%28v%3doffice.14%29) .
+2. Ajoutez le code suivant au début du fichier. Ce code crée des alias pour les <xref:Microsoft.Office.Core> espaces de noms et [PowerPoint](/previous-versions/office/developer/office-2010/ff763170%28v%3doffice.14%29) .
 
      [!code-csharp[Trin_TaskPaneMonthCalendar#1](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs#1)]
      [!code-vb[Trin_TaskPaneMonthCalendar#1](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb#1)]
 
-3. Ajoutez le code suivant à la classe `MyUserControl` . Ce code déclare un objet [Shape](/previous-versions/office/developer/office-2010/ff760244(v=office.14)) en tant que membre de `MyUserControl`. À l’étape suivante, vous allez utiliser cette [forme](/previous-versions/office/developer/office-2010/ff760244(v=office.14)) pour ajouter une zone de texte à une diapositive de la présentation active.
+3. Ajoutez le code suivant à la classe `MyUserControl` . Ce code déclare un objet [Shape](/previous-versions/office/developer/office-2010/ff760244(v=office.14)) en tant que membre de `MyUserControl` . À l’étape suivante, vous allez utiliser cette [forme](/previous-versions/office/developer/office-2010/ff760244(v=office.14)) pour ajouter une zone de texte à une diapositive de la présentation active.
 
      [!code-csharp[Trin_TaskPaneMonthCalendar#2](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs#2)]
      [!code-vb[Trin_TaskPaneMonthCalendar#2](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb#2)]
@@ -132,16 +132,16 @@ ms.locfileid: "68871938"
      La date est insérée dans la première diapositive de la présentation active.
 
 ## <a name="next-steps"></a>Étapes suivantes
- Pour en savoir plus sur la création de volets Office personnalisés, consultez les rubriques suivantes :
+ Pour plus d’informations sur la création de volets Office personnalisés, consultez les rubriques suivantes :
 
-- Créez un volet de tâches personnalisé dans un complément VSTO pour une autre application. Pour plus d’informations sur les applications qui prennent en charge les volets de tâches personnalisés, consultez volets de [tâches personnalisés](../vsto/custom-task-panes.md).
+- Créez un volet de tâches personnalisé dans un complément VSTO pour une autre application. Pour plus d’informations sur les applications qui prennent en charge les volets de tâches personnalisés, consultez [volets de tâches personnalisés](../vsto/custom-task-panes.md).
 
-- Créer un bouton de ruban qui permet de masquer ou d’afficher un volet Office personnalisé. Pour plus d’informations, consultez [Procédure pas à pas : Synchroniser un volet de tâches personnalisé avec un](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)bouton de ruban.
+- Créer un bouton de ruban qui permet de masquer ou d’afficher un volet Office personnalisé. Pour plus d’informations, consultez [procédure pas à pas : synchroniser un volet de tâches personnalisé avec un bouton de ruban](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).
 
-- Créer un volet Office personnalisé pour chaque message électronique ouvert dans Outlook. Pour plus d’informations, consultez [Procédure pas à pas : Affichez les volets des tâches personnalisés avec des](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)messages électroniques dans Outlook.
+- Créer un volet Office personnalisé pour chaque message électronique ouvert dans Outlook. Pour plus d’informations, consultez [procédure pas à pas : affichage de volets de tâches personnalisés avec des messages électroniques dans Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).
 
 ## <a name="see-also"></a>Voir aussi
 - [Volets des tâches personnalisés](../vsto/custom-task-panes.md)
-- [Guide pratique : Ajouter un volet de tâches personnalisé à une application](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
-- [Procédure pas à pas : Synchroniser un volet de tâches personnalisé avec un bouton de ruban](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)
-- [Procédure pas à pas : Afficher des volets de tâches personnalisés avec des messages électroniques dans Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)
+- [Comment : ajouter un volet de tâches personnalisé à une application](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
+- [Procédure pas à pas : synchroniser un volet de tâches personnalisé avec un bouton de ruban](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)
+- [Procédure pas à pas : affichage de volets de tâches personnalisés avec des messages électroniques dans Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)

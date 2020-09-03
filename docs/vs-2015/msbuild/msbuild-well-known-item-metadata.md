@@ -18,10 +18,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1bb2e53102221194dc829df162c44bbf04378b28
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154083"
 ---
 # <a name="msbuild-well-known-item-metadata"></a>Métadonnées d'éléments connus MSBuild
@@ -43,13 +43,13 @@ Le tableau suivant décrit les métadonnées assignées à chaque élément lors
 |%(Extension)|Contient l’extension de nom de fichier de l’élément. Par exemple :<br /><br /> `.cs`|  
 |%(RelativeDir)|Contient le chemin spécifié dans l’attribut `Include`, jusqu’à la dernière barre oblique inverse (\\). Par exemple :<br /><br /> `Source\`|  
 |%(Directory)|Contient le répertoire de l’élément, sans le répertoire racine. Par exemple :<br /><br /> `MyProject\Source\`|  
-|%(RecursiveDir)|Si l’attribut `Include` contient le caractère générique \*\*, ces métadonnées spécifient la partie du chemin qui remplace le caractère générique. Pour plus d’informations sur les caractères génériques, consultez [Procédure : Sélectionnez les fichiers dans une Build](../msbuild/how-to-select-the-files-to-build.md).<br /><br /> Si le dossier *C:\MySolution\MyProject\Source\\* contient le fichier Program.cs, et si le fichier projet contient cet élément :<br /><br /> `<ItemGroup>`<br /><br /> `<MyItem Include="C:\**\Program.cs" />`<br /><br /> `</ItemGroup>`<br /><br /> la valeur de `%(MyItem.RecursiveDir)` est *MySolution\MyProject\Source\\* .|  
+|%(RecursiveDir)|Si l’attribut `Include` contient le caractère générique \*\*, ces métadonnées spécifient la partie du chemin qui remplace le caractère générique. Pour plus d’informations, consultez [Guide pratique pour sélectionner les fichiers pour la build](../msbuild/how-to-select-the-files-to-build.md).<br /><br /> Si le dossier *C:\MySolution\MyProject\Source\\* contient le fichier Program.cs, et si le fichier projet contient cet élément :<br /><br /> `<ItemGroup>`<br /><br /> `<MyItem Include="C:\**\Program.cs" />`<br /><br /> `</ItemGroup>`<br /><br /> la valeur de `%(MyItem.RecursiveDir)` est *MySolution\MyProject\Source\\*.|  
 |%(Identity)|Élément spécifié dans l’attribut `Include`. Par exemple :<br /><br /> `Source\Program.cs`|  
 |%(ModifiedTime)|Contient l’horodatage de la dernière modification de l’élément. Par exemple :<br /><br /> `2004-07-01 00:21:31.5073316`|  
 |%(CreatedTime)|Contient l’horodatage de création de l’élément. Par exemple :<br /><br /> `2004-06-25 09:26:45.8237425`|  
 |%(AccessedTime)|Contient l’horodatage du dernier accès à l’élément.<br /><br /> `2004-08-14 16:52:36.3168743`|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Éléments](../msbuild/msbuild-items.md)   
- [Traitement par lot MSBuild](../msbuild/msbuild-batching.md)   
- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)
+ [Contenus](../msbuild/msbuild-items.md)   
+ [Traitement par lot](../msbuild/msbuild-batching.md)   
+ [Référence MSBuild](../msbuild/msbuild-reference.md)

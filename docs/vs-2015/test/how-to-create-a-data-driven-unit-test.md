@@ -16,13 +16,13 @@ caps.latest.revision: 35
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b9dc5ad44a73f517b91562209abfab8b0b3e8d4a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660534"
 ---
-# <a name="how-to-create-a-data-driven-unit-test"></a>Comment : créer un test unitaire piloté par des données
+# <a name="how-to-create-a-data-driven-unit-test"></a>Comment : créer un test unitaire piloté par des données
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 À l’aide du framework de test unitaire Microsoft pour le code managé, vous pouvez configurer une méthode de test unitaire permettant de récupérer les valeurs utilisées dans la méthode de test à partir d’une source de données. La méthode est exécutée successivement pour chaque ligne de la source de données, ce qui permet de tester facilement diverses entrées à l’aide d’une seule méthode.
@@ -33,13 +33,13 @@ ms.locfileid: "72660534"
 
 - [Création d’une source de données](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Creating_a_data_source)
 
-- [Ajout de TestContext à la classe de test](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Adding_a_TestContext_to_the_test_class)
+- [Ajout d’un TestContext à la classe de test](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Adding_a_TestContext_to_the_test_class)
 
 - [Écriture de la méthode de test](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Writing_the_test_method)
 
   - [Spécification de DataSourceAttribute](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Specifying_the_DataSourceAttribute)
 
-  - [Utilisation de TestContext.DataRow pour accéder aux données](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Using_TestContext_DataRow_to_access_the_data)
+  - [Utilisation de TestContext. DataRow pour accéder aux données](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Using_TestContext_DataRow_to_access_the_data)
 
 - [Exécution du test et affichage des résultats](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Running_the_test_and_viewing_results)
 
@@ -53,7 +53,7 @@ ms.locfileid: "72660534"
 
 4. Utilisez la propriété d’indexeur <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A> pour récupérer les valeurs que vous utilisez dans un test.
 
-## <a name="BKMK_The_method_under_test"></a> Méthode testée
+## <a name="the-method-under-test"></a><a name="BKMK_The_method_under_test"></a> Méthode testée
  Par exemple, nous avons créé :
 
 1. Une solution appelée `MyBank`, qui accepte et traite les transactions de différents types de compte.
@@ -80,16 +80,16 @@ public int AddIntegers(int first, int second)
 }
 ```
 
-## <a name="BKMK_Creating_a_data_source"></a> Création d’une source de données
+## <a name="creating-a-data-source"></a><a name="BKMK_Creating_a_data_source"></a> Création d’une source de données
  Pour tester la méthode `AddIntegers`, nous créons une source de données qui spécifie une plage de valeurs pour les paramètres et la somme à retourner. Dans notre exemple, nous créons une base de données Sql Compact nommée `MathsData` et une table nommée `AddIntegersData`, qui contient les noms et valeurs de colonnes suivants
 
-|FirstNumber|SecondNumber|Sum|
+|FirstNumber|SecondNumber|SUM|
 |-----------------|------------------|---------|
 |0|1|1|
 |1|1|2|
 |2|-3|-1|
 
-## <a name="BKMK_Adding_a_TestContext_to_the_test_class"></a> Ajout de TestContext à la classe de test
+## <a name="adding-a-testcontext-to-the-test-class"></a><a name="BKMK_Adding_a_TestContext_to_the_test_class"></a> Ajout de TestContext à la classe de test
  Le framework de tests unitaires crée un objet `TestContext` pour stocker les informations de source de données d’un test piloté par les données. Le framework définit ensuite cet objet en tant que valeur de la propriété `TestContext` que nous créons.
 
 ```
@@ -105,7 +105,7 @@ public TestContext TestContext
 
  Dans votre méthode de test, vous accédez aux données via la propriété d’indexeur `DataRow` de `TestContext`.
 
-## <a name="BKMK_Writing_the_test_method"></a> Écriture de la méthode de test
+## <a name="writing-the-test-method"></a><a name="BKMK_Writing_the_test_method"></a> Écriture de la méthode de test
  La méthode de test de `AddIntegers` est relativement simple. Pour chaque ligne de la source de données, nous appelons `AddIntegers` avec les valeurs de colonne **FirstNumber** et **SecondNumber** en tant que paramètres, puis nous vérifions la valeur de retour par rapport à la valeur de colonne **Sum** :
 
 ```
@@ -131,7 +131,7 @@ public void AddIntegers_FromDataSourceTest()
 
  Notez que la méthode `Assert` inclut un message qui affiche les valeurs `x` et `y` d’une itération non réussie. Par défaut, les valeurs ayant fait l’objet d’une assertion, `expected` et `actual`, sont déjà incluses dans les détails d’un test non réussi.
 
-### <a name="BKMK_Specifying_the_DataSourceAttribute"></a> Spécification de DataSourceAttribute
+### <a name="specifying-the-datasourceattribute"></a><a name="BKMK_Specifying_the_DataSourceAttribute"></a> Spécification de DataSourceAttribute
  L’attribut `DataSource` spécifie la chaîne de connexion de la source de données et le nom de la table que vous utilisez dans la méthode de test. Les informations exactes de la chaîne de connexion varient selon le genre de source de données que vous utilisez. Dans cet exemple, nous avons utilisé une base de données SqlServerCe.
 
 ```
@@ -146,7 +146,7 @@ public void AddIntegers_FromDataSourceTest()
 
  Un constructeur avec un seul paramètre utilise les informations de connexion stockées dans le fichier app.config de la solution. *dataSourceSettingsName* est le nom de l’élément XML contenu dans le fichier config, qui spécifie les informations de connexion.
 
- L’utilisation d’un fichier app.config vous permet de changer l’emplacement de la source de données sans changer le test unitaire lui-même. Pour plus d’informations sur la création et l’utilisation d’un fichier app.config, consultez [Procédure pas à pas : utilisation d’un fichier de configuration pour définir une source de données](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)
+ L’utilisation d’un fichier app.config vous permet de changer l’emplacement de la source de données sans changer le test unitaire lui-même. Pour plus d’informations sur la création et l’utilisation d’un fichier app.config, consultez [Procédure pas à pas : utilisation d’un fichier de configuration pour définir une source de données](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)
 
 ```
 [DataSource(connectionString, tableName)]
@@ -165,7 +165,7 @@ public void AddIntegers_FromDataSourceTest()
     )]
 ```
 
-### <a name="BKMK_Using_TestContext_DataRow_to_access_the_data"></a> Utilisation de TestContext.DataRow pour accéder aux données
+### <a name="using-testcontextdatarow-to-access-the-data"></a><a name="BKMK_Using_TestContext_DataRow_to_access_the_data"></a> Utilisation de TestContext.DataRow pour accéder aux données
  Pour accéder aux données de la table `AddIntegersData`, utilisez l’indexeur `TestContext.DataRow`. Comme `DataRow` est un objet <xref:System.Data.DataRow>, nous récupérons les valeurs de colonne par noms d’index ou de colonnes. Dans la mesure où les valeurs sont retournées en tant qu’objets, nous devons les convertir en un type approprié :
 
 ```
@@ -173,8 +173,8 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 
 ```
 
-## <a name="BKMK_Running_the_test_and_viewing_results"></a> Exécution du test et affichage des résultats
- Une fois que vous avez fini d’écrire une méthode de test, générez le projet de test. La méthode de test apparaît dans la fenêtre de l’Explorateur de tests, dans le groupe **Tests non exécutés**. Tandis que vous exécutez, écrivez et réexécutez vos tests, l’Explorateur de tests affiche les résultats dans les groupes **Échecs de tests**, **Tests réussis** et **Tests non exécutés**. Vous pouvez choisir **Exécuter tout** pour exécuter tous vos tests ou **Exécuter** pour exécuter une partie des tests.
+## <a name="running-the-test-and-viewing-results"></a><a name="BKMK_Running_the_test_and_viewing_results"></a> Exécution du test et affichage des résultats
+ Une fois que vous avez fini d’écrire une méthode de test, générez le projet de test. La méthode de test apparaît dans la fenêtre Explorateur de tests, dans le groupe **Tests non exécutés**. Tandis que vous exécutez, écrivez et réexécutez vos tests, l’Explorateur de tests affiche les résultats dans les groupes **Échecs de tests**, **Tests réussis** et **Tests non exécutés**. Vous pouvez choisir **Exécuter tout** pour exécuter tous vos tests ou **Exécuter** pour exécuter une partie des tests.
 
  La barre des résultats des tests en haut de l’Explorateur s’anime durant l’exécution de votre test. À la fin de la série de tests, la barre est verte en cas de réussite de tous les tests, ou rouge en cas d’échec de l’un des tests. Un résumé de la série de tests s’affiche dans le volet d’informations, en bas de la fenêtre Explorateur de tests. Sélectionnez un test pour en afficher les détails dans le volet inférieur.
 

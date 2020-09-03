@@ -12,10 +12,10 @@ ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
 ms.openlocfilehash: 6913ec4c80b5cb87cf6cd980ff2da73fab309a02
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84184014"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Utilisation de scripts Windows PowerShell pour publier des environnements de développement et de test
@@ -252,7 +252,7 @@ Pour automatiser la création de votre projet, ajoutez le code appelant MSBuild 
         #Write a function to build and package your web application
     ```
 
-    Pour générer votre application web, utilisez MsBuild.exe. Pour obtenir de l’aide, consultez Référence de la ligne de commande MSBuild à l’adresse suivante :[http://go.microsoft.com/fwlink/?LinkId=391339](https://msdn.microsoft.com/library/ms164311.aspx)
+    Pour générer votre application web, utilisez MsBuild.exe. Pour obtenir de l’aide, consultez Référence de la ligne de commande MSBuild à l’adresse suivante : [http://go.microsoft.com/fwlink/?LinkId=391339](https://msdn.microsoft.com/library/ms164311.aspx)
 
     ```powershell
     Write-VerboseWithTime 'Build-WebDeployPackage: Start'
@@ -308,7 +308,7 @@ return $WebDeployPackage
     Pour automatiser le test de votre application, ajoutez le code à `Test-WebApplication`. Veillez à supprimer les marques de commentaire des lignes dans **Publish-WebApplication.ps1** où ces fonctions sont appelées. Si vous ne fournissez pas d’implémentation, vous pouvez créer votre projet manuellement avec Visual Studio, puis exécuter le script de publication pour publier dans Azure.
 
 ## <a name="publishing-function-summary"></a>Résumé de la fonction de publication
-Pour obtenir de l’aide pour les fonctions que vous pouvez utiliser à l’invite de commande Windows PowerShell, utilisez la commande `Get-Help function-name`. L’aide inclut de l’aide sur les paramètres et des exemples. Le même texte d’aide se trouve également dans les fichiers sources du script **AzureWebAppPublishModule. psm1** et **Publish-WebApplication. ps1**. Le script et l’aide sont localisés dans votre langue Visual Studio.
+Pour obtenir de l’aide pour les fonctions que vous pouvez utiliser à l’invite de commande Windows PowerShell, utilisez la commande `Get-Help function-name`. L’aide inclut de l’aide sur les paramètres et des exemples. Le même texte d’aide se trouve également dans les fichiers sources du script **AzureWebAppPublishModule. psm1** et **Publish-WebApplication.ps1**. Le script et l’aide sont localisés dans votre langue Visual Studio.
 
 **AzureWebAppPublishModule**
 
@@ -334,7 +334,7 @@ Pour obtenir de l’aide pour les fonctions que vous pouvez utiliser à l’invi
 | Test-AzureModule |Renvoie `$true` si la version du module Azure installé est 0.7.4 ou une version ultérieure. Renvoie `$false` si le module n’est pas installé ou s’il s’agit d’une version antérieure. Cette fonction n’a pas de paramètres. |
 | Test-AzureModuleVersion |Renvoie `$true` si la version du module Azure est 0.7.4 ou une version ultérieure. Renvoie `$false` si le module n’est pas installé ou s’il s’agit d’une version antérieure. Cette fonction n’a pas de paramètres. |
 | Test-HttpsUrl |Convertit l’URL d’entrée en un objet System.Uri. Renvoie `$True` si l’URL est absolue et que son schéma est https. Renvoie `$false` si l’URL est relative, que son schéma n’est pas HTTPS ou que la chaîne d’entrée ne peut pas être convertie en URL. |
-| Test-Member |Renvoie `$true` si une propriété ou méthode est un membre de l’objet. Sinon, renvoie `$false`. |
+| Test-Member |Renvoie `$true` si une propriété ou méthode est un membre de l’objet. Sinon, retourne `$false`. |
 | Write-ErrorWithTime |Écrit un message d’erreur préfixé avec l’heure actuelle. Cette fonction appelle la fonction **Format-DevTestMessageWithTime** à indiquer l’heure avant d’écrire le message dans le flux Error. |
 | Write-HostWithTime |Écrit un message dans le programme hôte (**Write-Host**) préfixé avec l’heure actuelle. L’effet de l’écriture dans le programme hôte varie. La plupart des programmes qui hébergent Windows PowerShell écrivent ces messages dans la sortie standard. |
 | Write-VerboseWithTime |Écrit un message détaillé préfixé avec l’heure actuelle. Comme il appelle **Write-Verbose**, le message s’affiche uniquement lorsque le script est exécuté avec le paramètre **Verbose** ou lorsque la préférence **VerbosePreference** est définie sur **Continue**. |

@@ -11,22 +11,22 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 995bf40669a4480f6f1ddfe8071a7885a4659c9f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68152721"
 ---
 # <a name="gettaskschedulersfordebugger-method"></a>Méthode GetTaskSchedulersForDebugger
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Récupère un tableau de tous les <xref:System.Threading.Tasks.TaskScheduler> les objets qui sont actuellement actives.  
+Récupère un tableau de tous les <xref:System.Threading.Tasks.TaskScheduler> objets qui sont actuellement actifs.  
   
- **Espace de noms :** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **Espace de noms :** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Assembly :** mscorlib (dans mscorlib.dll)  
+ **Assembly :** mscorlib (en mscorlib.dll)  
   
- Étant donné que vous ne pouvez pas accéder à ce membre interne du .NET Framework, la syntaxe suivante est fournie en commun Intermediate Language (CIL).  
+ Étant donné que vous ne pouvez pas accéder à ce membre interne à partir de la .NET Framework, la syntaxe suivante est fournie en Common Intermediate Language (CIL).  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -35,10 +35,10 @@ Récupère un tableau de tous les <xref:System.Threading.Tasks.TaskScheduler> le
 ```  
   
 ## <a name="return-value"></a>Valeur de retour  
- Un tableau de tous les <xref:System.Threading.Tasks.TaskScheduler> les objets qui sont actuellement actives dans ce <xref:System.AppDomain>.  
+ Tableau de tous les <xref:System.Threading.Tasks.TaskScheduler> objets actuellement actifs dans ce <xref:System.AppDomain> .  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode n’est pas thread-safe et ne doit pas être utilisée en même temps que d’autres instances de <xref:System.Threading.Tasks.TaskScheduler>. Elle doit être appelée à partir d’un débogueur uniquement lorsque le débogueur a suspendu tous les autres threads.  
+ Cette méthode n’est pas thread-safe et ne doit pas être utilisée simultanément avec d’autres instances de <xref:System.Threading.Tasks.TaskScheduler> . Elle doit être appelée à partir d’un débogueur uniquement lorsque le débogueur a suspendu tous les autres threads.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Classe TaskScheduler](../../extensibility/debugger/taskscheduler-class-internal-members.md)

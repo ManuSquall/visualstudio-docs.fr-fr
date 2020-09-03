@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5e2e52b0688f69fd154425887077c40fc3e6c265
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531402"
 ---
 # <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001 : Utiliser StringBuilder pour les concaténations
@@ -34,7 +34,7 @@ Pour obtenir la documentation la plus récente sur Visual Studio, consultez [DA0
 |Message|Utilisez StringBuilder pour les concaténations de chaînes|  
 |type de message|Avertissement|  
   
-## <a name="cause"></a>Cause  
+## <a name="cause"></a>Cause :  
  Les appels à System.String.Concat représentent une part importante des données de profilage. Envisagez l’utilisation de la classe <xref:System.Text.StringBuilder> pour construire des chaînes à partir de plusieurs segments.  
   
 ## <a name="rule-description"></a>Description de la règle  

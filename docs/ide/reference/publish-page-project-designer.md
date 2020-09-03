@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6bbb43408dc12c55b72eb0ca0909d8b261198a5b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68926171"
 ---
 # <a name="publish-page-project-designer"></a>Page Publier, Concepteur de projets
@@ -83,17 +83,17 @@ Publie l’application à l’aide des paramètres actuels. Équivaut au bouton 
 
 - [Publication d’applications ClickOnce](../../deployment/publishing-clickonce-applications.md)
 - [Comment : publier une application ClickOnce à l'aide de l'Assistant Publication](../../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
-- [Comment : Spécifier où Visual Studio copie les fichiers](../../deployment/how-to-specify-where-visual-studio-copies-the-files.md)
-- [Comment : spécifier l’endroit où les utilisateurs finaux installeront à partir](../../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)
-- [Comment : Spécifier un lien pour le support technique](../../deployment/how-to-specify-a-link-for-technical-support.md)
-- [Comment : Spécifier le mode ClickOnce Hors ligne ou Installation en ligne](../../deployment/how-to-specify-the-clickonce-offline-or-online-install-mode.md)
+- [Comment : spécifier l’emplacement où Visual Studio copie les fichiers](../../deployment/how-to-specify-where-visual-studio-copies-the-files.md)
+- [Procédure : spécifier l’emplacement à partir duquel les utilisateurs finaux effectueront l’installation](../../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)
+- [Procédure : spécifier un lien pour le support technique](../../deployment/how-to-specify-a-link-for-technical-support.md)
+- [Comment : spécifier le mode d’installation en ligne ou hors connexion ClickOnce](../../deployment/how-to-specify-the-clickonce-offline-or-online-install-mode.md)
 - [Comment : activer le démarrage automatique pour les installations depuis un CD-ROM](../../deployment/how-to-enable-autostart-for-cd-installations.md)
-- [Comment : Définir la version ClickOnce Publish](../../deployment/how-to-set-the-clickonce-publish-version.md)
-- [Comment: Incrément automatique de la version ClickOnce Publish](../../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)
-- [Comment: Spécifier quels fichiers sont publiés par ClickOnce](../../deployment/how-to-specify-which-files-are-published-by-clickonce.md)
-- [Comment: Installer des conditions préalables avec une application ClickOnce](../../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
-- [Comment : Gérer les mises à jour pour une application ClickOnce](../../deployment/how-to-manage-updates-for-a-clickonce-application.md)
-- [Comment : Modifier la langue de publication pour une application ClickOnce](../../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md)
-- [Comment : Spécifiez un nom de menu de démarrage pour une application ClickOnce](../../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)
-- [Comment : Spécifier une page de publication pour une application ClickOnce](../../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)
-- [ClickOnce Sécurité et déploiement](../../deployment/clickonce-security-and-deployment.md)
+- [Comment : définir la version de publication ClickOnce](../../deployment/how-to-set-the-clickonce-publish-version.md)
+- [Comment : incrémenter automatiquement la version de publication ClickOnce](../../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)
+- [Comment : spécifier les fichiers publiés par ClickOnce](../../deployment/how-to-specify-which-files-are-published-by-clickonce.md)
+- [Comment : installer les composants requis avec une application ClickOnce](../../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
+- [Comment : gérer des mises à jour pour une application ClickOnce](../../deployment/how-to-manage-updates-for-a-clickonce-application.md)
+- [Comment : modifier la langue de publication pour une application ClickOnce](../../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md)
+- [Comment : spécifier un nom de menu Démarrer pour une application ClickOnce](../../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)
+- [Comment : spécifier une page de publication pour une application ClickOnce](../../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)
+- [Sécurité et déploiement ClickOnce](../../deployment/clickonce-security-and-deployment.md)

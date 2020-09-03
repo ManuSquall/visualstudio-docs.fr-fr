@@ -12,16 +12,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2086473bc484fed4e8e351f0c3838074557586c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194075"
 ---
-# <a name="parent-element"></a>Parent, élément
+# <a name="parent-element"></a>Élément parent
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Le parent d’un bouton ou une zone peut être uniquement un groupe. Le parent d’un menu ou un groupe peut être n’importe quel autre menu ou un groupe. Dans un [CommandPlacement élément](../extensibility/commandplacement-element.md), cet élément est requis ; il est facultatif dans toutes les autres instances. Si cet élément est omis, le parent de `Group_Undefined:0` est implicite.  
+Le parent d’un bouton ou d’une zone de liste déroulante ne peut être qu’un groupe. Le parent d’un menu ou d’un groupe peut être n’importe quel autre menu ou groupe. Dans un [élément commandplacement ayant](../extensibility/commandplacement-element.md), cet élément est obligatoire. dans toutes les autres instances, il est facultatif. Si cet élément est omis, le parent de `Group_Undefined:0` est implicite.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -36,19 +36,19 @@ Le parent d’un bouton ou une zone peut être uniquement un groupe. Le parent d
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|GUID|Requis. Identificateur de commande de GUID/ID GUID.|  
-|id|Requis. Identificateur de commande d’ID de/ID GUID.|  
+|guid|Obligatoire. GUID de l’identificateur de commande GUID/ID.|  
+|id|Obligatoire. ID de l’identificateur de la commande GUID/ID.|  
   
 ### <a name="child-elements"></a>Éléments enfants  
- Aucun  
+ None  
   
 ### <a name="parent-elements"></a>Éléments parents  
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[Élément CommandTable](../extensibility/commandtable-element.md)|Définit tous les éléments qui représentent des commandes qu’un VSPackage fournit à l’environnement de développement intégré (IDE). Par exemple, les éléments de menu, menus, barres d’outils et zones de liste déroulante.|  
-|[Élément Buttons](../extensibility/buttons-element.md)|Groupes [élément Button](../extensibility/button-element.md) éléments.|  
-|[Élément Menus](../extensibility/menus-element.md)|Définit tous les menus qui implémente un VSPackage.|  
+|[Élément CommandTable](../extensibility/commandtable-element.md)|Définit tous les éléments qui représentent les commandes qu’un VSPackage fournit à l’environnement de développement intégré (IDE). Par exemple, les éléments de menu, les menus, les barres d’outils et les zones de liste modifiable.|  
+|[Élément Buttons](../extensibility/buttons-element.md)|Éléments du [bouton](../extensibility/button-element.md) groupes.|  
+|[Élément Menus](../extensibility/menus-element.md)|Définit tous les menus qu’un VSPackage implémente.|  
 |[Élément Groups](../extensibility/groups-element.md)|Contient des entrées qui définissent les groupes de commandes d’un VSPackage.|  
   
 ## <a name="see-also"></a>Voir aussi  

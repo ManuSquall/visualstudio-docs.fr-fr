@@ -10,10 +10,10 @@ author: alexhomer1
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9d5f86eb40e1401f98a4c66d0b971fb006762cc1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659694"
 ---
 # <a name="unit-testing-a-visual-c-dll-for-store-apps"></a>Test unitaire d’une DLL Visual C++ pour les applications du Windows Store
@@ -25,7 +25,7 @@ Cette rubrique décrit une méthode permettant de créer des tests unitaires pou
 
  Cette rubrique crée également une solution Visual Studio unique et des projets distincts pour les tests unitaires et la DLL que vous souhaitez tester. Vous pouvez également inclure les tests unitaires directement dans le projet DLL, ou vous pouvez créer des solutions distinctes pour les tests unitaires et la DLL. Consultez la page [Ajout de tests unitaires aux applications C++ existantes](../test/unit-testing-existing-cpp-applications-with-test-explorer.md) pour obtenir des conseils sur la structure à utiliser.
 
-## <a name="BKMK_In_this_topic"></a> Dans cette rubrique
+## <a name="in-this-topic"></a><a name="BKMK_In_this_topic"></a> Dans cette rubrique
  Cette rubrique contient les tâches suivantes :
 
  [Créer la solution et le projet de test unitaire](#BKMK_Create_the_solution_and_the_unit_test_project)
@@ -34,7 +34,7 @@ Cette rubrique décrit une méthode permettant de créer des tests unitaires pou
 
  [Ajouter le projet DLL à la solution](#BKMK_Add_the_DLL_project_to_the_solution)
 
- [Associer le projet de test au projet DLL](#BKMK_Couple_the_test_project_to_the_dll_project)
+ [Associer le projet de test au projet dll](#BKMK_Couple_the_test_project_to_the_dll_project)
 
  [Augmenter itérativement les tests et les faire réussir](#BKMK_Iteratively_augment_the_tests_and_make_them_pass)
 
@@ -42,21 +42,21 @@ Cette rubrique décrit une méthode permettant de créer des tests unitaires pou
 
  [Refactoriser le code sans modifier les tests](#BKMK_Refactor_the_code_without_changing_tests)
 
-## <a name="BKMK_Create_the_solution_and_the_unit_test_project"></a> Créer la solution et le projet de test unitaire
+## <a name="create-the-solution-and-the-unit-test-project"></a><a name="BKMK_Create_the_solution_and_the_unit_test_project"></a> Créer la solution et le projet de test unitaire
 
 1. Dans le menu **Fichier**, choisissez **Nouveau**, puis **Nouveau projet**.
 
-2. Dans la boîte de dialogue Nouveau projet, développez **Installé**, **Visual C++** , puis choisissez **Windows Store**. Choisissez ensuite **Bibliothèque de tests unitaires (applications du Windows Store)** dans la liste des modèles de projet.
+2. Dans la boîte de dialogue Nouveau projet, développez **Installé**, **Visual C++**, puis choisissez **Windows Store**. Choisissez ensuite **Bibliothèque de tests unitaires (applications du Windows Store)** dans la liste des modèles de projet.
 
-     ![Créer une bibliothèque&#43; &#43; de tests unitaires C](../test/media/ute-cpp-windows-unittestlib-create.png "UTE_Cpp_windows_UnitTestLib_Create")
+     ![Créer une bibliothèque de tests unitaires C&#43;&#43; ](../test/media/ute-cpp-windows-unittestlib-create.png "UTE_Cpp_windows_UnitTestLib_Create")
 
 3. Nommez le projet `RooterLibTests`, spécifiez l’emplacement, nommez la solution `RooterLib`, puis vérifiez que la case **Créer le répertoire pour la solution** est cochée.
 
-     ![Spécifier le nom et l’emplacement de la solution et du projet](../test/media/ute-cpp-windows-unittestlib-createspecs.png "UTE_Cpp_windows_UnitTestLib_CreateSpecs")
+     ![Spécifier la solution, le nom du projet et l'emplacement](../test/media/ute-cpp-windows-unittestlib-createspecs.png "UTE_Cpp_windows_UnitTestLib_CreateSpecs")
 
 4. Dans le nouveau projet, ouvrez **unittest1.cpp**.
 
-     ![UnitTest1. cpp](../test/media/ute-cpp-windows-unittest1-cpp.png "UTE_Cpp_windows_unittest1_cpp")
+     ![unittest1.cpp](../test/media/ute-cpp-windows-unittest1-cpp.png "UTE_Cpp_windows_unittest1_cpp")
 
      Sachez que :
 
@@ -68,7 +68,7 @@ Cette rubrique décrit une méthode permettant de créer des tests unitaires pou
 
          Lorsque les tests sont exécutés, une instance de chaque classe de test est créée. Les méthodes de test sont appelées dans un ordre non défini. Vous pouvez définir des méthodes spéciales qui sont appelées avant et après chaque module, classe ou méthode. Pour plus d’informations, consultez [Utilisation de Microsoft.VisualStudio.TestTools.CppUnitTestFramework](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md) dans MSDN Library.
 
-## <a name="BKMK_Verify_that_the_tests_run_in_Test_Explorer"></a> Vérifier que les tests s’exécutent dans l’Explorateur de tests
+## <a name="verify-that-the-tests-run-in-test-explorer"></a><a name="BKMK_Verify_that_the_tests_run_in_Test_Explorer"></a> Vérifier que les tests s’exécutent dans l’Explorateur de tests
 
 1. Insérez le code de test :
 
@@ -87,13 +87,13 @@ Cette rubrique décrit une méthode permettant de créer des tests unitaires pou
 
      ![Explorateur de tests](../test/media/ute-cpp-testexplorer-testmethod1.png "UTE_Cpp_TestExplorer_TestMethod1")
 
-## <a name="BKMK_Add_the_DLL_project_to_the_solution"></a> Ajouter le projet DLL à la solution
+## <a name="add-the-dll-project-to-the-solution"></a><a name="BKMK_Add_the_DLL_project_to_the_solution"></a> Ajouter le projet DLL à la solution
 
 1. Dans l'Explorateur de solutions, choisissez le nom de la solution. Dans le menu contextuel, choisissez **Ajouter**, puis **Ajouter un nouveau projet**.
 
      ![Créer le projet RooterLib](../test/media/ute-cpp-windows-rooterlib-create.png "UTE_Cpp_windows_RooterLib_Create")
 
-2. Dans la boîte de dialogue **Ajouter un nouveau projet**, choisissez **DLL (applications du Windows Store)** .
+2. Dans la boîte de dialogue **Ajouter un nouveau projet**, choisissez **DLL (applications du Windows Store)**.
 
 3. Ajoutez le code suivant au fichier **RooterLib.h** :
 
@@ -123,13 +123,13 @@ Cette rubrique décrit une méthode permettant de créer des tests unitaires pou
 
 4. Ajoutez le symbole ROOTERLIB_EXPORTS à la ligne de commande.
 
-    1. Dans l’Explorateur de solutions, choisissez le projet **RooterLib**, puis **Propriétés** dans le menu contextuel.
+    1. Dans Explorateur de solutions, choisissez le projet **RooterLib** , puis choisissez **Propriétés** dans le menu contextuel.
 
-         ![Ajouter une définition de symbole de préprocesseur](../test/media/ute-cpp-windows-addpreprocessorsymbol.png "UTE_Cpp_windows_AddPreprocessorSymbol")
+         ![Ajouter la définition d'un symbole de préprocesseur](../test/media/ute-cpp-windows-addpreprocessorsymbol.png "UTE_Cpp_windows_AddPreprocessorSymbol")
 
-    2. Dans la boîte de dialogue Page de propriétés de RooterLib, développez **Propriétés de configuration**, **C++** , puis choisissez **Préprocesseur**.
+    2. Dans la boîte de dialogue Page de propriétés de RooterLib, développez **Propriétés de configuration**, **C++**, puis choisissez **Préprocesseur**.
 
-    3. Choisissez **\<Modifier>** dans la liste **Définitions de préprocesseur**, puis ajoutez `ROOTERLIB_EXPORTS` dans la boîte de dialogue Définitions de préprocesseur.
+    3. Choisissez dans **\<Edit...>** la liste **définitions de préprocesseur** , puis ajoutez `ROOTERLIB_EXPORTS` dans la boîte de dialogue Définitions de préprocesseur.
 
 5. Ajoutez des implémentations minimales des fonctions déclarées. Ouvrez **RooterLib.cpp**, puis ajoutez le code suivant :
 
@@ -147,15 +147,15 @@ Cette rubrique décrit une méthode permettant de créer des tests unitaires pou
 
     ```
 
-## <a name="BKMK_Couple_the_test_project_to_the_dll_project"></a> Associer le projet de test au projet DLL
+## <a name="couple-the-test-project-to-the-dll-project"></a><a name="BKMK_Couple_the_test_project_to_the_dll_project"></a> Associer le projet de test au projet dll
 
 1. Ajoutez RooterLib au projet RooterLibTests.
 
-   1. Dans l’Explorateur de solutions, choisissez le projet **RooterLibTests**, puis **Références** dans le menu contextuel.
+   1. Dans Explorateur de solutions, choisissez le projet **RooterLibTests** , puis choisissez **références..** . dans le menu contextuel.
 
    2. Dans la boîte de dialogue Propriétés du projet RooterLib, développez **Propriétés communes**, puis choisissez **Framework et références**.
 
-   3. Choisissez **Ajouter une nouvelle référence**.
+   3. Choisissez **Ajouter une nouvelle référence....**
 
    4. Dans la boîte de dialogue **Ajouter une référence**, développez **Solution**, puis choisissez **Projets**. Sélectionnez ensuite l’élément **RouterLib**.
 
@@ -169,7 +169,7 @@ Cette rubrique décrit une méthode permettant de créer des tests unitaires pou
        #include "..\RooterLib\RooterLib.h"
        ```
 
-3. Ajoutez un test qui utilise la fonction importée. Ajoutez le code suivant à **unittest1.cpp** :
+3. Ajoutez un test qui utilise la fonction importée. Ajoutez le code suivant à **UnitTest1. cpp**:
 
    ```
    TEST_METHOD(BasicTest)
@@ -200,7 +200,7 @@ Cette rubrique décrit une méthode permettant de créer des tests unitaires pou
 
    Vous avez configuré le test et les projets de code, et vérifié que vous pouviez exécuter des tests exécutant les fonctions du projet de code. Maintenant, vous pouvez commencer à écrire le code et les tests réels.
 
-## <a name="BKMK_Iteratively_augment_the_tests_and_make_them_pass"></a> Augmenter itérativement les tests et les faire réussir
+## <a name="iteratively-augment-the-tests-and-make-them-pass"></a><a name="BKMK_Iteratively_augment_the_tests_and_make_them_pass"></a> Augmenter itérativement les tests et les faire passer
 
 1. Ajoutez un nouveau test :
 
@@ -228,7 +228,7 @@ Cette rubrique décrit une méthode permettant de créer des tests unitaires pou
 
 3. Le test échoue.
 
-     ![Échec de Rangetest a échoué](../test/media/ute-cpp-testexplorer-rangetest-fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")
+     ![RangeTest a échoué](../test/media/ute-cpp-testexplorer-rangetest-fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")
 
     > [!TIP]
     > Vérifiez que chaque test échoue immédiatement après que vous l'avez écrit. Vous évitez ainsi de commettre l'erreur d'écrire un test qui n'échoue jamais.
@@ -254,14 +254,14 @@ Cette rubrique décrit une méthode permettant de créer des tests unitaires pou
 
     ```
 
-5. Générez la solution, puis, dans l'Explorateur de tests, choisissez **Exécuter tout**.
+5. Générez la solution, puis, dans l’Explorateur de tests, choisissez **exécuter tout**.
 
      Les deux tests réussissent.
 
 > [!TIP]
 > Développez le code en ajoutant les tests individuellement. Assurez-vous que tous les tests réussissent après chaque itération.
 
-## <a name="BKMK_Debug_a_failing_test"></a> Déboguer un test ayant échoué
+## <a name="debug-a-failing-test"></a><a name="BKMK_Debug_a_failing_test"></a> Déboguer un test ayant échoué
 
 1. Ajoutez un autre test à **unittest1.cpp** :
 
@@ -299,7 +299,7 @@ Cette rubrique décrit une méthode permettant de créer des tests unitaires pou
 
     Le test échoue. Sélectionnez le nom du test dans l'explorateur de tests. L'échec d'assertion est mis en surbrillance. Le message d'échec est visible dans le volet de détails de l'Explorateur de tests.
 
-    ![Échec de Negativerangetests,](../test/media/ute-cpp-testexplorer-negativerangetest-fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")
+    ![NegativeRangeTests, échec](../test/media/ute-cpp-testexplorer-negativerangetest-fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")
 
 3. Pour voir pourquoi le test échoue, parcourez la fonction :
 
@@ -331,7 +331,7 @@ Cette rubrique décrit une méthode permettant de créer des tests unitaires pou
 
    ![Réussite de tous les tests](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")
 
-## <a name="BKMK_Refactor_the_code_without_changing_tests"></a> Refactoriser le code sans modifier les tests
+## <a name="refactor-the-code-without-changing-tests"></a><a name="BKMK_Refactor_the_code_without_changing_tests"></a> Refactoriser le code sans modifier les tests
 
 1. Simplifiez le calcul central dans la fonction `SquareRoot` :
 

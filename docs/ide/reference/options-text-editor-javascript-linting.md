@@ -14,15 +14,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1f8a194f3848b0737fc33af2b9948102987a5923
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68605968"
 ---
-# <a name="options-dialog-box-text-editor--javascripttypescript--linting"></a>Boîte de dialogue d’options : Éditeur de \> texte JavaScript/TypeScript \> Linting
+# <a name="options-dialog-box-text-editor--javascripttypescript--linting"></a>Boîte de dialogue Options : éditeur de texte JavaScript/de la machine à inverser \> \>
 
-Utilisez la page **Linting** de la boîte de dialogue **Options** pour définir les options d’analyse du code dans l’éditeur de code. Pour accéder à cette page, sur la barre de menu, choisissez **Tools** > **Options**, puis développez Text **Editor** > **JavaScript/TypeScript** > **Linting**.
+Utilisez la page **Linting** de la boîte de dialogue **Options** pour définir les options d’analyse du code dans l’éditeur de code. Pour accéder à cette page, dans la barre de menus, choisissez **Outils**  >  **options**, puis développez **éditeur de texte**  >  **JavaScript/machine**à  >  **enpelucher**.
 
 ## <a name="eslint-settings"></a>Paramètres d’ESLint
 
@@ -41,4 +41,4 @@ Cette option vous permet de copier l’emplacement du fichier de configuration E
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Général, Environnement, Options Dialog Box](../../ide/reference/general-environment-options-dialog-box.md)
+- [Général, environnement, boîte de dialogue Options](../../ide/reference/general-environment-options-dialog-box.md)

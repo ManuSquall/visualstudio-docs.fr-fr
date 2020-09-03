@@ -1,5 +1,5 @@
 ---
-title: LocationField, élément (modèles de projet Visual Studio) | Microsoft Docs
+title: Élément LocationField (modèles de projet Visual Studio) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,19 +13,19 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b28fe0e696b23724758bd877b6031287290f879e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194459"
 ---
 # <a name="locationfield-element-visual-studio-project-templates"></a>LocationField, élément (modèles de projet Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Spécifie si le **emplacement** zone de texte dans le **nouveau projet** boîte de dialogue est activée, désactivée ou masquée pour le modèle de projet.  
+Spécifie si la zone de texte **emplacement** dans la boîte de dialogue **nouveau projet** est activée, désactivée ou masquée pour le modèle de projet.  
   
  \<VSTemplate>  
- \<TemplateData >  
+ \<TemplateData>  
  \<LocationField>  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -47,27 +47,27 @@ Spécifie si le **emplacement** zone de texte dans le **nouveau projet** boîte 
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Élément requis.<br /><br /> Définit la catégorie du modèle et comment il s’affiche dans le **nouveau projet**.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Élément requis.<br /><br /> Classe le modèle dans une catégorie et définit la manière dont il s’affiche dans le **nouveau projet**.|  
   
 ## <a name="text-value"></a>Valeur texte  
  Une valeur texte est requise.  
   
- Valeurs texte valides sont :  
+ Les valeurs de texte valides sont :  
   
-- `Enabled`, qui spécifie que le **emplacement** zone de la **nouveau projet** boîte de dialogue est activée.  
+- `Enabled`, qui spécifie que la zone **emplacement** de la boîte de dialogue **nouveau projet** est activée.  
   
-- `Disabled`, qui spécifie que le **emplacement** zone de la **nouveau projet** boîte de dialogue est désactivée.  
+- `Disabled`, qui spécifie que la zone **emplacement** de la boîte de dialogue **nouveau projet** est désactivée.  
   
-- `Hidden`, qui spécifie que le **emplacement** zone de la **nouveau projet** boîte de dialogue est masquée.  
+- `Hidden`, qui spécifie que la zone **emplacement** de la boîte de dialogue **nouveau projet** est masquée.  
   
 ## <a name="remarks"></a>Notes  
  La valeur par défaut est `Enabled`.  
   
- Le **emplacement** zone de texte dans le **nouveau projet** boîte de dialogue permet aux utilisateurs de modifier le répertoire par défaut dans lequel les nouveaux projets sont enregistrés.  
+ La zone de texte **emplacement** dans la boîte de dialogue **nouveau projet** permet aux utilisateurs de modifier le répertoire par défaut dans lequel les nouveaux projets sont enregistrés.  
   
- La valeur spécifiée dans le `Location` élément est respecté par la boîte de dialogue uniquement si le système de projet sous-jacent la prend en charge.  
+ La valeur spécifiée dans l' `Location` élément est honorée uniquement par la boîte de dialogue si le système de projet sous-jacent le prend en charge.  
   
-## <a name="example"></a>Exemples  
+## <a name="example"></a>Exemple  
  L'exemple suivant illustre les métadonnées d'un modèle [!INCLUDE[csprcs](../includes/csprcs-md.md)].  
   
 ```  

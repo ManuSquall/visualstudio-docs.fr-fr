@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a66f160d25ccacbdaaaf2238dfc738ade4a4200f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531467"
 ---
 # <a name="access-models-from-text-templates"></a>Accéder à des modèles à partir de modèles de texte
@@ -61,7 +61,7 @@ Here is a list of elements in the model:
 
 - Bien que le langage dans lequel les fragments de code sont écrits est C#, vous pouvez générer du texte de n’importe quel type. Vous pouvez également écrire le code dans [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] en ajoutant la propriété `language="VB"` à la `template` directive.
 
-- Pour déboguer le modèle, ajoutez `debug="true"` à la `template` directive. Le modèle s’ouvre dans une autre instance de Visual Studio si une exception se produit. Si vous souhaitez vous arrêter dans le débogueur à un point spécifique dans le code, insérez l’instruction`System.Diagnostics.Debugger.Break();`
+- Pour déboguer le modèle, ajoutez `debug="true"` à la `template` directive. Le modèle s’ouvre dans une autre instance de Visual Studio si une exception se produit. Si vous souhaitez vous arrêter dans le débogueur à un point spécifique dans le code, insérez l’instruction `System.Diagnostics.Debugger.Break();`
 
    Pour plus d’informations, consultez [débogage d’un modèle de texte T4](../modeling/debugging-a-t4-text-template.md).
 
@@ -95,7 +95,7 @@ Here is a list of elements in the model:
 
    Si une erreur est détectée, elle est signalée dans la fenêtre Erreurs et le fichier de résultats contient un message d’erreur.
 
-## <a name="accessing-multiple-models-from-a-text-template"></a><a name="Multiple"></a>Accès à plusieurs modèles à partir d’un modèle de texte
+## <a name="accessing-multiple-models-from-a-text-template"></a><a name="Multiple"></a> Accès à plusieurs modèles à partir d’un modèle de texte
 
 > [!NOTE]
 > Cette méthode vous permet de lire plusieurs modèles dans le même modèle, mais ne prend pas en charge les références ModelBus. Pour lire les modèles qui sont liés par des références ModelBus, consultez [utilisation de Visual Studio Modelbus dans un modèle de texte](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
@@ -172,7 +172,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 #>
 ```
 
- `LoopSplitter.tt`appelle `LoopTemplate.t4` , puis divise le fichier résultant en ses segments. Notez que ce modèle n’a pas besoin d’être un modèle de modélisation, car il ne lit pas le modèle.
+ `LoopSplitter.tt` appelle `LoopTemplate.t4` , puis divise le fichier résultant en ses segments. Notez que ce modèle n’a pas besoin d’être un modèle de modélisation, car il ne lit pas le modèle.
 
 ```
 <#@ template hostspecific="true" language="C#" #>

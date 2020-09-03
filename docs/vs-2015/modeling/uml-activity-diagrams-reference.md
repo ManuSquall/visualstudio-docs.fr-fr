@@ -21,10 +21,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 960e9469290bca42abd252d497c2ce72e62e41a4
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531532"
 ---
 # <a name="uml-activity-diagrams-reference"></a>Diagrammes d'activités UML : référence
@@ -56,10 +56,10 @@ Un *diagramme d’activités* montre un processus d’entreprise ou un processus
 
  ![Flux de contrôle simple](../modeling/media/uml-actovsimple.png "UML_ActOvSimple")
 
-|**Automatiques**|**Élément**|**Description et principales propriétés**|
+|**Forme**|**Element**|**Description et principales propriétés**|
 |-|-|-|
 |1|**Action**|Une étape dans l'activité, dans laquelle les utilisateurs ou les logiciels effectuent une tâche.<br /><br /> L'action peut démarrer quand un jeton est arrivé à tous ses flux entrants. Quand elle se termine, les jetons sont envoyés à tous les flux sortants.<br /><br /> -   **Corps** : spécifie l’action en détail.<br />-   **Language** : langage de l’expression dans le corps.<br />-   **Post-conditions locales** : contraintes qui doivent être satisfaites lorsque l’exécution se termine. Objectif atteint par l'action.<br />-   **Conditions** préalables locales : contraintes qui doivent être satisfaites avant le début de l’exécution.|
-|2|**Workflow de contrôle**|Connecteur qui montre le flux de contrôle entre des actions. Pour interpréter le diagramme, imaginez qu'un jeton s'écoule d'une action à la suivante.<br /><br /> Pour créer un workflow de contrôle, utilisez l’outil **connecteur** .|
+|2|**Flux de contrôle**|Connecteur qui montre le flux de contrôle entre des actions. Pour interpréter le diagramme, imaginez qu'un jeton s'écoule d'une action à la suivante.<br /><br /> Pour créer un workflow de contrôle, utilisez l’outil **connecteur** .|
 |3|**Nœud initial**|Indique la ou les premières actions dans l'activité. Quand l'activité démarre, un jeton s'écoule à partir du nœud initial.|
 |4|**Nœud final de l'activité**|Fin de l'activité. Quand un jeton arrive, l'activité se termine.|
 |5|**Nœud de décision**|Branche conditionnelle dans un flux. Possède une entrée et plusieurs sorties. Un jeton entrant émerge d'une seule des sorties.|
@@ -76,19 +76,19 @@ Un *diagramme d’activités* montre un processus d’entreprise ou un processus
 
  ![Diagramme d'activités montrant le flux simultané](../modeling/media/uml-actovconcurrent.png "UML_ActovConcurrent")
 
-|**Automatiques**|**Élément**|**Description**|
+|**Forme**|**Element**|**Description**|
 |-|-|-|
 |11|**Nœud de bifurcation**|Divise un flux unique en flux simultanés. Chaque jeton entrant produit un jeton sur chaque connecteur sortant.|
 |12|**Nœud de jointure**|Combine des flux simultanés en un flux unique. Quand chaque flux entrant a un jeton en attente, un jeton est produit sur la sortie.|
 |13|**Action Envoyer un signal**|Action qui envoie un message ou un signal à une autre activité ou à un thread simultané dans la même activité. Le type et le contenu du message sont déduits du titre de l'action ou spécifiés dans des commentaires supplémentaires.<br /><br /> L'action peut envoyer des données dans le signal, qui peuvent être passées à l'action dans un flux d'objet ou une broche d'entrée (16).|
 |14|**Action Accepter un événement**|Action qui attend la réception d'un message ou d'un signal pour continuer l'action. Le type du message que l'action peut recevoir est déduit du titre ou spécifié dans des commentaires supplémentaires.<br /><br /> Si l'action n'a aucun flux de contrôle entrant, elle produit un jeton chaque fois qu'elle reçoit un message.<br /><br /> L'action peut recevoir des données dans le signal, qui peuvent être passées dans un flux d'objet ou une broche d'entrée (17).<br /><br /> -   **IsUnmarshall** : si la valeur est true, il peut y avoir plusieurs broches de sortie typées et les données sont démarshalées sur elles. Si la valeur est false, toutes les données apparaissent sur une seule broche.|
 
-### <a name="data-flows"></a><a name="DataFlow"></a>Flux de données
+### <a name="data-flows"></a><a name="DataFlow"></a> Flux de données
  Vous pouvez décrire le flux de données d'une action à une autre. Pour plus d'informations sur les éléments utilisés dans cette section, consultez la section Dessin de flux de données de la rubrique Instructions pour dessiner un diagramme d'activités.
 
  ![Diagramme d'activités montrant le flux de données](../modeling/media/uml-actovdata.png "UML_ActOvData")
 
-|**Automatiques**|**Élément**|**Description**|
+|**Forme**|**Element**|**Description**|
 |-|-|-|
 |15|**Nœud d’objet**|Représente des données qui passent le long d'un flux.<br /><br /> -   **Classement** : comment plusieurs jetons sont stockés.<br />-   **Selection** : appelle un processus, qui peut être défini dans un autre diagramme, qui filtre les données.<br />-   Limite **supérieure** -0 indique que les données doivent passer directement le long du fluide ; \*indique que les données peuvent être stockées dans le Flow.<br />-   **Type** : type des objets stockés et transmis.|
 |16|**Broche d'entrée**|Représente des données qu'une action peut recevoir quand elle s'exécute.<br /><br /> -   **Type** : type des objets transmis.|

@@ -1,5 +1,5 @@
 ---
-title: Pile des appels événement Graphics | Microsoft Docs
+title: Pile des appels des événements Graphics | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8344050d26286263e0c33974b976e4ae25ff18de
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192758"
 ---
 # <a name="graphics-event-call-stack"></a>Pile des appels des événements Graphics
@@ -25,7 +25,7 @@ La pile des appels des événements Graphics dans Visual Studio Graphics Analyze
   
  Voici la fenêtre Pile des appels des événements :  
   
- ![Pile des appels précédents un événement DrawIndexed. ](../debugger/media/gfx-diag-demo-graphics-event-call-stack-orientation.png "gfx_diag_demo_graphics_event_call_stack_orientation")  
+ ![Pile des appels précédents un événement DrawIndexed.](../debugger/media/gfx-diag-demo-graphics-event-call-stack-orientation.png "gfx_diag_demo_graphics_event_call_stack_orientation")  
   
 ## <a name="understanding-the-graphics-event-call-stack"></a>Présentation de la pile des appels des événements Graphics  
  Vous pouvez utiliser la fenêtre Pile des appels des événements pour comprendre le flux d'exécution qui a conduit à un événement Direct3D particulier. Elle ressemble à la fenêtre de pile des appels de Visual Studio. Toutefois, au lieu d'afficher la pile des appels du thread actif dans une application en cours d'exécution, elle affiche la pile des appels telle qu'elle existait quand l'événement Direct3D sélectionné s'est produit. À partir de la pile des appels des événements, vous pouvez accéder au site d'appel de l'événement Direct3D sélectionné pour inspecter le code environnant.  
@@ -38,7 +38,7 @@ La pile des appels des événements Graphics dans Visual Studio Graphics Analyze
 |Colonne|Description|  
 |------------|-----------------|  
 |**Name**|Symbole qui identifie de manière unique la fonction qui contient le site d'appel. Le symbole de débogage de la fonction est affiché quand il est disponible. Par ailleurs, le décalage de fonction est affiché.|  
-|**File**|Nom de fichier du fichier de code source ou du fichier bibliothèque qui contient le site d'appel.|  
+|**Fichier**|Nom de fichier du fichier de code source ou du fichier bibliothèque qui contient le site d'appel.|  
 |**Lieu**|Numéro de ligne du site d'appel.|  
   
 ### <a name="links-to-graphics-objects"></a>Liens vers les objets graphiques  

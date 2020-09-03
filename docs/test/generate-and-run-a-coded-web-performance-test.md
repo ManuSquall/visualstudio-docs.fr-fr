@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4297f60c74e32b904d7c36912a8377d33f23ebdf
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75589576"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Générer et exécuter un test de performances de site Web codé
@@ -82,17 +82,17 @@ Les tests de performances web sont enregistrés lors de la navigation au sein de
 
      ![Résultats du test de performances web codé](../test/media/web_test_coded_generate_results.png)
 
-## <a name="qa"></a>Questions et réponses  
+## <a name="qa"></a>Questions et réponses
 
 ### <a name="q-can-i-run-more-than-one-test-at-a-time"></a>Q : Puis-je exécuter plusieurs tests simultanément ?
-**R:** Oui, utilisez le menu de clic droit (contexte) dans **Solution Explorer**.
+**R :** Oui, utilisez le menu contextuel en cliquant avec le bouton droit dans **Explorateur de solutions**.
 
 ### <a name="q-should-i-add-a-data-source-before-or-after-i-generate-a-coded-test"></a>Q : Dois-je ajouter une source de données avant ou après la génération d'un test codé ?
 **R :** Il est plus facile d’ajouter une [source de données](../test/add-a-data-source-to-a-web-performance-test.md) avant de générer le test codé, car le code sera généré automatiquement pour vous.
 
 Lorsque vous exécutez un test codé avec une source de données, le message d'erreur suivant peut s'afficher :
 
-**Impossible d’exécuter le test \<nom du test> sur l’agent de \<nom de l’ordinateur> : référence d’objet non définie sur une instance d’un objet.**
+**Impossible d’exécuter \<Test Name> le test sur l’agent \<Computer Name> : la référence d’objet n’est pas définie sur une instance d’un objet.**
 
 Cette erreur peut se produire parce qu'un DataSourceAttribute a été défini pour la classe de test, sans DataBindingAttribute correspondant. Pour résoudre cette erreur, ajoutez un DataBindingAttribute approprié, supprimez-le ou commentez-le hors du code.
 
