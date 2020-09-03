@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7f9c54691ed343493ef1e43798faf4d2ab6f60fb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662114"
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
@@ -37,11 +37,11 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName
 ```
 
 ## <a name="arguments"></a>Arguments
- /Build génère le projet spécifié par `/project` `ProjName`.
+ /Build génère le projet spécifié par `/project` `ProjName` .
 
  /Clean nettoie tous les fichiers intermédiaires et les répertoires de sortie créés pendant une génération.
 
- /Rebuild nettoie puis génère le projet spécifié par `/project` `ProjName`.
+ /Rebuild nettoie puis génère le projet spécifié par `/project` `ProjName` .
 
  /deploy spécifie que le projet doit être déployé après une génération ou une régénération.
 
@@ -53,15 +53,15 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName
 
  /projectconfig `ProjConfigName` (facultatif). Nom d’une configuration de build de projet à appliquer au `/project` nommé.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
 - Doit être utilisé dans le cadre d’une commande `devenv /build`, /`clean`, `/rebuild` ou `/deploy`.
 
 - Placez entre guillemets doubles les chaînes contenant des espaces.
 
-- Vous pouvez afficher des informations récapitulatives sur les builds, y compris sur les erreurs, dans la fenêtre **Commande** ou dans tout fichier journal spécifié avec le commutateur `/out`.
+- Vous pouvez afficher des informations récapitulatives sur les générations, notamment sur les erreurs, dans la fenêtre **Commande** ou dans tout fichier journal spécifié avec le commutateur `/out`.
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
  Cet exemple génère le projet `CSharpConsoleApp` en utilisant la configuration de génération de projet `Debug` présente dans la configuration de solution `Debug` de `MySolution`.
 
 ```
@@ -69,4 +69,4 @@ devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\M
 ```
 
 ## <a name="see-also"></a>Voir aussi
- [Commutateurs de ligne de commande devenv](../../ide/reference/devenv-command-line-switches.md) [(devenv. exe)](../../ide/reference/projectconfig-devenv-exe.md) [/Build (devenv. exe)](../../ide/reference/build-devenv-exe.md) [/Clean (devenv. exe)](../../ide/reference/clean-devenv-exe.md) [/Rebuild (devenv. exe)](../../ide/reference/rebuild-devenv-exe.md) [/Deploy (devenv. exe)](../../ide/reference/deploy-devenv-exe.md) [/out (devenv. exe)](../../ide/reference/out-devenv-exe.md)
+ [Commutateurs de ligne de commande devenv](../../ide/reference/devenv-command-line-switches.md) [/ProjectConfig (devenv.exe)](../../ide/reference/projectconfig-devenv-exe.md) [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md) [/Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md) [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md) [/Deploy (devenv.exe)](../../ide/reference/deploy-devenv-exe.md) [/out (devenv.exe)](../../ide/reference/out-devenv-exe.md)

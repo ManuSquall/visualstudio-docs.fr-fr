@@ -1,5 +1,5 @@
 ---
-title: Programme d'amélioration du produit
+title: Programme d'amélioration de l'expérience utilisateur
 description: Découvrez comment gérer les paramètres de confidentialité dans Visual Studio.
 ms.date: 05/21/2018
 ms.topic: conceptual
@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b6c785b755b64f0dd7e367a01d9c05c1981ea558
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71693011"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Programme d’amélioration du produit Visual Studio
@@ -21,13 +21,13 @@ Le programme VSCEIP (Programme d’amélioration du produit Visual Studio) est c
 
 [!INCLUDE [gdpr-hybrid-note](../misc/includes/gdpr-hybrid-note.md)]
 > [!NOTE]
-> La télémétrie VSCEIP opte dans ou hors des paramètres ne s’appliquent pas à 'Report a Problem' dans Visual Studio. Lorsque vous signalez qu’un problème, les journaux sont collectés et envoyés à Microsoft uniquement lorsque vous fournissez la permission en cliquant sur 'Submit'. Si vous êtes intéressé à gérer les journaux avant de vous soumettre à «Signaler un problème», veuillez consulter [la confidentialité des données de rétroaction](./developer-community-privacy.md) pour plus de détails.
+> Les paramètres d’acceptation ou de sortie de la télémétrie VSCEIP ne s’appliquent pas à « signaler un problème » dans Visual Studio. Lorsque vous signalez un problème, les journaux sont collectés et envoyés à Microsoft uniquement lorsque vous accordez une autorisation en cliquant sur « Envoyer ». Si vous souhaitez gérer les journaux avant de soumettre à « signaler un problème », consultez [confidentialité des données de commentaires](./developer-community-privacy.md) pour plus d’informations.
 
 ## <a name="opt-in-or-out"></a>Accepter ou refuser de participer
 
 Le programme VSCEIP est activé par défaut. Vous pouvez le désactiver ou le réactiver en suivant les instructions ci-après :
 
-1. Dans Visual Studio, choisissez **Help** > **Send Feedback,** puis sélectionnez **Paramètres**.
+1. Dans Visual Studio, choisissez **aide**  >  **Envoyer des commentaires**, puis sélectionnez **paramètres**.
 
    La boîte de dialogue **Programme d’amélioration de l’expérience utilisateur Visual Studio** s’ouvre.
 
@@ -45,7 +45,7 @@ La clé de Registre et les paramètres pertinents se présentent comme suit :
 
 - Sur un OS 64 bits, clé = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\15.0\SQM**
 - Sur un OS 32 bits, clé = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\15.0\SQM**
-- Lorsque la politique de groupe est activée, La clé **HKEY_LOCAL_MACHINE-Software-Policies-Microsoft-VisualStudio-SQM**
+- Lorsque stratégie de groupe est activé, Key = **HKEY_LOCAL_MACHINE \software\policies\microsoft\visualstudio\sqm**
 
 ::: moniker-end
 
@@ -53,19 +53,19 @@ La clé de Registre et les paramètres pertinents se présentent comme suit :
 
 - Sur un système d’exploitation 64 bits, clé = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\16.0\SQM**
 - Sur un système d’exploitation 32 bits, clé = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\16.0\SQM**
-- Lorsque la politique de groupe est activée, La clé **HKEY_LOCAL_MACHINE-Software-Policies-Microsoft-VisualStudio-SQM**
+- Lorsque stratégie de groupe est activé, Key = **HKEY_LOCAL_MACHINE \software\policies\microsoft\visualstudio\sqm**
 
 ::: moniker-end
 
-Entrée et **OptIn**
+Entrée = **optin**
 
 Valeur = (DWORD)
 
-- **0** est désinvolté (éteindre le VSCEIP)
-- **1** est opté (activer le VSCEIP)
+- **0** est choisi (désactiver le VSCEIP)
+- **1** est choisi (activer VSCEIP)
 
 > [!CAUTION]
-> Une modification incorrecte du Registre peut sérieusement endommager votre système. Avant d'apporter des modifications au Registre, il convient de sauvegarder les données importantes qui se trouvent sur l'ordinateur. Vous pouvez également utiliser **l’option de** démarrage Last Known Good Configuration si vous rencontrez des problèmes après l’application de modifications manuelles.
+> Une modification incorrecte du Registre peut endommager gravement votre système. Avant toute modification du registre, il est conseillé de sauvegarder toutes les données importantes de votre ordinateur. Vous pouvez également utiliser l’option de démarrage **dernière configuration correcte connue** si vous rencontrez des problèmes après l’application de modifications manuelles.
 
 Pour plus d’informations sur les informations collectées, traitées ou transmises par le programme VSCEIP, consultez la [Déclaration de confidentialité Microsoft](https://privacy.microsoft.com/privacystatement).
 

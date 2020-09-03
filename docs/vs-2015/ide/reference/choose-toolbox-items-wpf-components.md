@@ -15,16 +15,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5c7967635d8e5d64907587fcd1a9b4d84a31d569
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660913"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Choisir des éléments de boîte à outils, Composants WPF
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Cet onglet de la boîte de dialogue **Choisir des éléments de boîte à outils** affiche la liste des contrôles Windows Presentation Foundation (WPF) disponibles sur votre ordinateur local. Pour afficher la liste, sélectionnez **Choisir des éléments de boîte à outils** dans le menu **Outils** pour afficher la boîte de dialogue **Choisir des éléments de boîte à outils**, puis sélectionnez l’onglet **Composants WPF**. Pour trier la liste des composants, cliquez sur un en-tête de colonne.
+Cet onglet de la boîte de dialogue **Choisir des éléments de boîte à outils** affiche la liste des contrôles Windows Presentation Foundation (WPF) disponibles sur votre ordinateur local. Pour afficher cette liste, sélectionnez **choisir des éléments de boîte à outils** dans le menu **Outils** pour afficher la boîte de dialogue choisir des **éléments de boîte à outils** , puis sélectionnez l’onglet **Composants WPF** . Pour trier les composants listés, sélectionnez n’importe quel en-tête de colonne.
 
 - Lorsque la case en regard d’un composant est cochée, une icône de ce composant s’affiche dans la **boîte à outils**.
 
@@ -46,7 +46,7 @@ Cet onglet de la boîte de dialogue **Choisir des éléments de boîte à outils
 
   Répertoire affiche l’emplacement de l’assembly de .NET Framework. L'emplacement par défaut de tous les assemblys est le Global Assembly Cache. Pour plus d’informations sur le Global Assembly Cache, consultez [Utilisation d’assemblys et du Global Assembly Cache](https://msdn.microsoft.com/library/8a18e5c2-d41d-49ef-abcb-7c27e2469433).
 
-## <a name="uielement-list"></a>Liste des éléments d’interface
+## <a name="uielement-list"></a>Liste des éléments de l'interface utilisateur
  **Filtre** Filtre la liste des contrôles WPF en fonction de la chaîne que vous fournissez dans la zone de texte. Toutes les correspondances des quatre colonnes sont affichées.
 
  **Effacer** Efface la chaîne de filtrage.
@@ -55,14 +55,14 @@ Cet onglet de la boîte de dialogue **Choisir des éléments de boîte à outils
 
  **Langue** Affiche la langue localisée de l’assembly qui contient le contrôle WPF sélectionné.
 
-## <a name="limitations"></a>Limitations
+## <a name="limitations"></a>Limites
  L’ajout d’un contrôle personnalisé ou d’un <xref:System.Windows.Controls.UserControl> à la boîte à outils présente les limitations suivantes.
 
 - Cela fonctionne uniquement pour les contrôles personnalisés définis en dehors du projet actuel.
 
 - Cela ne permet pas une mise à jour correcte lorsque vous passez d’une configuration de solution Debug à une configuration Release, et inversement. Cela est dû au fait que la référence n’est pas une référence de projet, mais une référence à l’assembly sur disque. Si le contrôle fait partie de la solution actuelle, lorsque vous passez de Debug à Release, votre projet continue à référencer la version Debug du contrôle.
 
-  En outre, si les métadonnées au moment du design sont appliquées au contrôle personnalisé et si ces métadonnées spécifient que le [ToolboxBrowsableAttribute](/previous-versions/visualstudio/visual-studio-2010/bb547991(v=vs.100)) est défini sur `false`, le contrôle n’apparaît pas dans la boîte à outils.
+  En outre, si les métadonnées au moment du design sont appliquées au contrôle personnalisé et si ces métadonnées spécifient que [ToolboxBrowsableAttribute](/previous-versions/visualstudio/visual-studio-2010/bb547991(v=vs.100)) a la valeur `false` , le contrôle n’apparaît pas dans la boîte à outils.
 
   Vous pouvez référencer directement vos contrôles dans la vue XAML en mappant l’espace de noms et l’assembly de votre contrôle. Pour plus d’informations, consultez [Comment : importer un espace de noms en XAML](https://msdn.microsoft.com/6cda7c7a-369c-47dd-9c2d-13a35dcf737c).
 
@@ -71,4 +71,4 @@ Cet onglet de la boîte de dialogue **Choisir des éléments de boîte à outils
 - [Choisir des éléments de boîte à outils, boîte de dialogue (Visual Studio)](https://msdn.microsoft.com/bd07835f-18a8-433e-bccc-7141f65263bb)
 - [Boîte à outils](../../ide/reference/toolbox.md)
 - [Comment : utiliser un contrôle WPF tiers dans une application WPF](https://msdn.microsoft.com/f4c0b601-3818-4f9f-85e5-77905f3b427f)
-- [Concepteur WPF](https://msdn.microsoft.com/c6c65214-8411-4e16-b254-163ed4099c26)
+- [Concepteur WPF](https://msdn.microsoft.com/c6c65214-8411-4e16-b254-163ed4099c26)

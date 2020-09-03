@@ -11,10 +11,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c885c0c983e6fafd69d55b3d68f8ed6e8ff2628c
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86387263"
 ---
 # <a name="control-of-execution"></a>Contrôle de l’exécution
@@ -41,11 +41,11 @@ Le moteur de débogage (DE) envoie généralement l’un des événements suivan
   
 5. Si l’utilisateur choisit d’effectuer un pas à pas détaillé, au-dessus ou à l’extérieur d’une fonction, l’IDE invite la session de débogage à appeler la méthode du programme `Step` , en lui transmettant l’unité de l’étape (instruction, instruction ou ligne) et le type d’étape, c’est-à-dire, s’il faut effectuer un pas à pas détaillé, supérieur ou sortant de la fonction. Lorsque l’étape est terminée, le DE envoie un événement étape terminer à la session de débogage, qui est un événement d’arrêt.  
   
-    -ou-  
+    - ou -  
   
     Si l’utilisateur choisit de continuer l’exécution à partir du pointeur d’instruction actuel, l’IDE invite la session de débogage à appeler la méthode **Execute** du programme. Le programme reprend l’exécution jusqu’à ce qu’il rencontre la prochaine condition d’arrêt.  
   
-    -ou-  
+    - ou -  
   
     Si la session de débogage doit ignorer un événement d’arrêt particulier, la session de débogage appelle la méthode **continue** du programme. Si le programme a effectué un pas à pas détaillé, dépassé ou sortant d’une fonction lorsqu’il a rencontré la condition d’arrêt, il continue l’étape.  
   

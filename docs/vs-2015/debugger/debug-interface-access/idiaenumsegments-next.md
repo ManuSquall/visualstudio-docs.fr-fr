@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e00f85d4b3a111f3a68b934006a32197245d4d6e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189876"
 ---
 # <a name="idiaenumsegmentsnext"></a>IDiaEnumSegments::Next
@@ -37,16 +37,16 @@ HRESULT Next ( 
   
 #### <a name="parameters"></a>Paramètres  
  celt  
- [in] Le nombre de segments dans l’énumérateur à récupérer.  
+ dans Nombre de segments dans l’énumérateur à récupérer.  
   
  rgelt  
- [out] Un tableau qui doit être renseigné avec le texte souhaité [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) objets qui représentent les segments.  
+ à Tableau à remplir avec les objets [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) souhaités qui représentent les segments.  
   
  pceltFetched  
- [out] Retourne le nombre de segments dans l’énumérateur extraite.  
+ à Retourne le nombre de segments dans l’énumérateur extrait.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si aucun segment plus. Sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` s’il n’y a plus de segments. Sinon, retourne un code d'erreur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)   

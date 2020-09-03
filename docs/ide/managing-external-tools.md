@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0f22c687f88c7736d5c088ebc28ff490c4c16b8f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75591292"
 ---
 # <a name="manage-external-tools"></a>Gérer les outils externes
@@ -49,7 +49,7 @@ Vous pouvez ajouter un outil externe pour qu’il s’affiche dans le menu **Out
 
 1. Ouvrez la boîte de dialogue **Outils externes** en choisissant **Outils** > **Outils externes**.
 
-1. Cliquez sur **Ajouter** et renseignez les informations. Par exemple, l’entrée suivante provoque l’ouverture de **Windows Explorer** à l’annuaire du fichier que vous avez actuellement ouvert dans Visual Studio :
+1. Cliquez sur **Ajouter** et renseignez les informations. Par exemple, l’entrée suivante entraîne l’ouverture de l' **Explorateur Windows** dans le répertoire du fichier que vous avez actuellement ouvert dans Visual Studio :
 
    * Titre : `Open File Location`
 
@@ -81,8 +81,8 @@ Voici une liste complète des arguments qui peuvent être utilisés lors de la d
 |Nom du fichier solution|$(SolutionFileName)|Nom de fichier de la solution active (lecteur + chemin d’accès + nom de fichier).|
 
 > [!NOTE]
-> La barre d’état IDE affiche les variables de la **ligne actuelle** et de la **colonne actuelle** pour indiquer où se trouve le point d’insertion dans **l’éditeur**de code actif . La variable **texte actuelle** renvoie le texte ou le code sélectionné à cet endroit.
+> La barre d’État IDE affiche les variables **ligne active** et **colonne actuelle** pour indiquer où se trouve le point d’insertion dans l' **éditeur de code**actif. La variable **Text actuelle** retourne le texte ou le code sélectionné à cet emplacement.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Outils de construction C/CMD](/cpp/build/reference/c-cpp-build-tools)
+- [Outils de génération C/C++](/cpp/build/reference/c-cpp-build-tools)

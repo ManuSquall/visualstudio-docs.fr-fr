@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 182f28a2b21ae3129ce0d34fae97280ba0a07218
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72603594"
 ---
 # <a name="how-to-set-breakpoints-in-workflows-legacy"></a>Procédure : définir des points d'arrêt dans les workflows (héritée)
@@ -49,10 +49,10 @@ Cette rubrique décrit comment définir des points d'arrêt dans les application
 
      La boîte **de dialogue Nouveau point d’arrêt** s’ouvre.
 
-3. Spécifiez le nom d’une activité dans la zone de texte **fonction** à l’aide de la syntaxe suivante : `QualifiedActivityId[:[FullClassName][:InstanceId]]`.
+3. Spécifiez le nom d’une activité dans la zone de texte **fonction** à l’aide de la syntaxe suivante : `QualifiedActivityId[:[FullClassName][:InstanceId]]` .
 
     > [!NOTE]
-    > Si vous le souhaitez, au lieu d’utiliser le nom de l’activité dans la zone de texte **fonction** , vous pouvez définir un point d’arrêt en spécifiant le chemin d’accès absolu de l’activité de flux de travail. Par exemple, supposons que vous disposiez d’une solution de flux de travail nommée **WorkflowConsoleApplication1** et d’un flux de travail dans la solution nommée **Workflow1** qui utilise une activité appelée **Delay1**. Vous pouvez utiliser le nom d’activité **Delay1** ou spécifier le chemin d’accès en tant que **Delay1 : WorkflowConsoleApplication1. Workflow1** ou **Delay1 : WorkflowConsoleApplication1. Workflow1 : {6614886A-608E-412B-BF98-99FF1559DDDF}** .
+    > Si vous le souhaitez, au lieu d’utiliser le nom de l’activité dans la zone de texte **fonction** , vous pouvez définir un point d’arrêt en spécifiant le chemin d’accès absolu de l’activité de flux de travail. Par exemple, supposons que vous disposiez d’une solution de flux de travail nommée **WorkflowConsoleApplication1** et d’un flux de travail dans la solution nommée **Workflow1** qui utilise une activité appelée **Delay1**. Vous pouvez utiliser le nom d’activité **Delay1** ou spécifier le chemin d’accès en tant que **Delay1 : WorkflowConsoleApplication1. Workflow1** ou **Delay1 : WorkflowConsoleApplication1. Workflow1 : {6614886A-608E-412B-BF98-99FF1559DDDF}**.
 
 4. Activez la case à cocher **utiliser IntelliSense** pour vérifier le nom de la fonction.
 

@@ -27,7 +27,7 @@ Les configurations de solution stockent les propriétés au niveau de la solutio
 
  Voici comment vous pouvez implémenter les configurations de solutions prises en charge par votre type de projet :
 
-- Projet
+- Project
 
    Affiche les noms des projets trouvés dans la solution actuelle.
 

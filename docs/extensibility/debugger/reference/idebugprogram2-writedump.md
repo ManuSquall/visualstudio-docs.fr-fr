@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::WriteDump Microsoft Docs
+title: 'IDebugProgram2 :: WriteDump | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 333535a727d88f66346ba4c94cb08b4917b8acfd
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80722736"
 ---
 # <a name="idebugprogram2writedump"></a>IDebugProgram2::WriteDump
-Écrit une décharge à un fichier.
+Écrit un dump dans un fichier.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -43,16 +43,16 @@ int WriteDump( 
 
 ## <a name="parameters"></a>Paramètres
 `DumpType`\
-[dans] Une valeur de l’énumération [DUMPTYPE](../../../extensibility/debugger/reference/dumptype.md) qui spécifie le type de décharge, par exemple, courte ou longue.
+dans Valeur de l’énumération [DUMPTYPE](../../../extensibility/debugger/reference/dumptype.md) qui spécifie le type de vidage, par exemple short ou long.
 
 `pszDumpUrl`\
-[dans] L’URL pour écrire le dépotoir à. Typiquement, c’est sous `file://c:\path\filename.ext`la forme de , mais peut être toute URL valide.
+dans URL vers laquelle écrire le vidage. En général, il se présente sous la forme de `file://c:\path\filename.ext` , mais peut être une URL valide.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- Un vidage de programme inclurait typiquement le cadre actuel de pile, la pile elle-même, une liste des fils exécutant dans le programme, et peut-être n’importe quel mémoire que le programme possède.
+ Un vidage de programme inclut généralement le frame de pile actuel, la pile elle-même, une liste des threads en cours d’exécution dans le programme et éventuellement la mémoire dont le programme est propriétaire.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

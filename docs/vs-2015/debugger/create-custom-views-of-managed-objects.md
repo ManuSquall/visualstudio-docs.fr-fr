@@ -25,10 +25,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cb5b56404c7ddc99b7999b47cf3c2a899f915efd
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/18/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72578054"
 ---
 # <a name="create-custom-views-of-managed-objects"></a>Créer des vues personnalisées d’objets gérés
@@ -55,5 +55,5 @@ Vous pouvez personnaliser la façon dont Visual Studio affiche les types de donn
 ## <a name="see-also"></a>Voir aussi  
  [Utilisation de l’attribut DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)   
  [Utilisation de l’attribut DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)   
- [Espion et Espion express, fenêtres](../debugger/watch-and-quickwatch-windows.md)   
- [Amélioration du débogage avec les attributs d’affichage de débogueur](https://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)
+ [Fenêtres espion et espion Express](../debugger/watch-and-quickwatch-windows.md)   
+ [Amélioration du débogage avec les attributs d'affichage de débogueur](https://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)

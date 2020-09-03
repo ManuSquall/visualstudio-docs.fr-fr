@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1f8f816ef374c827e35b7c208e237b2dbd9384bb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189854"
 ---
 # <a name="idiaenumsegmentsskip"></a>IDiaEnumSegments::Skip
@@ -35,10 +35,10 @@ HRESULT Skip ( 
   
 #### <a name="parameters"></a>Paramètres  
  celt  
- [in] Le nombre de segments dans la séquence d’énumération à ignorer.  
+ dans Nombre de segments dans la séquence d’énumération à ignorer.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` si aucun segment plus à ignorer.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` s’il n’y a plus de segments à ignorer.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)

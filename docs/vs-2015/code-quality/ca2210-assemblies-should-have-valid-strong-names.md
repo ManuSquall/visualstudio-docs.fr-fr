@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 8f800a550717abfabdfb9296fc8f6de49d127d73
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548198"
 ---
 # <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210 : Les assemblys doivent porter des noms forts valides
@@ -32,7 +32,7 @@ ms.locfileid: "85548198"
 |Category|Microsoft. Design|
 |Modification avec rupture|Sans rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Un assembly n’est pas signé avec un nom fort, le nom fort n’a pas pu être vérifié ou le nom fort n’est pas valide sans les paramètres de registre actuels de l’ordinateur.
 
 ## <a name="rule-description"></a>Description de la règle

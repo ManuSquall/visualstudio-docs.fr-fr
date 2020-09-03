@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 483023fbd28da26d9967dd2d88bc37748d00f088
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663989"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Working with elements in XAML Designer
@@ -22,7 +22,7 @@ ms.locfileid: "72663989"
 Vous pouvez ajouter des éléments (contrôles, dispositions et formes) à votre application en XAML, en code ou en utilisant le concepteur XAML. Cette rubrique décrit comment utiliser des éléments dans le concepteur XAML dans Visual Studio ou Blend pour Visual Studio.
 
 ## <a name="adding-an-element-to-a-layout"></a>Ajout d'un élément à une disposition
- La *disposition* est le processus de dimensionnement et de positionnement des éléments dans une interface utilisateur. Pour positionner des éléments visuels, vous devez les placer dans un élément [Panel](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.panel.aspx) de disposition. Un `Panel` a une propriété enfant qui est une collection de types [FrameworkElement](https://msdn.microsoft.com/library/windows/apps/br208706.aspx). Vous pouvez utiliser différents éléments enfants de `Panel`, tels que [Canvas](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.canvas.aspx), [StackPanel](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.stackpanel.aspx) et [Grid](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx), pour servir de conteneurs de disposition, et positionner et organiser les éléments dans une page.
+ La *disposition* est le processus de dimensionnement et de positionnement des éléments dans une interface utilisateur. Pour positionner des éléments visuels, vous devez les placer dans un élément [Panel](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.panel.aspx) de disposition. Un `Panel` a une propriété enfant qui est une collection de types [FrameworkElement](https://msdn.microsoft.com/library/windows/apps/br208706.aspx). Vous pouvez utiliser différents  `Panel` éléments enfants, tels que [Canvas](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.canvas.aspx), [StackPanel](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.stackpanel.aspx)et [Grid](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx), pour servir de conteneurs de disposition et pour positionner et organiser les éléments sur une page.
 
  Par défaut, un panneau `Grid` est utilisé comme conteneur de disposition de niveau supérieur dans un formulaire ou une page. Vous pouvez ajouter des panneaux de disposition, des contrôles ou d'autres éléments dans la mise en page de niveau supérieur.
 
@@ -30,18 +30,18 @@ Vous pouvez ajouter des éléments (contrôles, dispositions et formes) à votre
 
 - Dans le concepteur XAML, effectuez l'une des opérations suivantes :
 
-  - Double-cliquez sur un élément dans la **boîte à outils** (ou sélectionnez un élément dans la boîte à outils et appuyez sur Entrée).
+  - Double-cliquez sur un élément dans la **boîte à outils** (ou sélectionnez un élément dans la boîte à outils, puis appuyez sur entrée).
 
   - Faites glisser un élément depuis la **boîte à outils** vers la planche graphique.
 
   - Dans la **boîte à outils**, sélectionnez l’un des outils de dessin (par exemple, [Ellipse](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.ellipse.aspx) ou [Rectangle](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.rectangle.aspx)), puis dessinez un élément dans le panneau actif.
 
 ## <a name="changing-the-layering-order-of-elements"></a>Modification de l'ordre de superposition des éléments
- Lorsque deux éléments de la planche graphique sont dans le concepteur XAML, un élément apparaît devant l'autre dans l'ordre de superposition. Sauf si la propriété **ZIndex** d’un élément est définie, l’élément au premier plan se trouve en bas de la liste des éléments dans la fenêtre Structure du document. Quand vous insérez un élément dans une page, un formulaire ou un conteneur de disposition, l'élément est automatiquement placé devant les autres éléments dans l'élément de conteneur actif. Pour modifier l’ordre des éléments, vous pouvez utiliser les commandes **Ordre** ou faire glisser les éléments dans l’arborescence d’objets de la fenêtre Structure du document.
+ Lorsque deux éléments de la planche graphique sont dans le concepteur XAML, un élément apparaît devant l'autre dans l'ordre de superposition. En bas de la liste d’éléments dans la fenêtre structure du document se trouve l’élément le plus à l’avant (sauf lorsque la propriété **ZIndex** d’un élément est définie). Quand vous insérez un élément dans une page, un formulaire ou un conteneur de disposition, l'élément est automatiquement placé devant les autres éléments dans l'élément de conteneur actif. Pour modifier l’ordre des éléments, vous pouvez utiliser les commandes **Ordre** ou faire glisser les éléments dans l’arborescence d’objets de la fenêtre Structure du document.
 
 #### <a name="to-change-the-layering-order"></a>Pour changer l'ordre de superposition
 
-- Effectuez l’une des opérations suivantes :
+- Effectuez l’une des actions suivantes :
 
   - Dans la fenêtre **Structure du document**, faites glisser les éléments vers le haut ou le bas pour créer l’ordre de superposition souhaité.
 
@@ -60,7 +60,7 @@ Vous pouvez ajouter des éléments (contrôles, dispositions et formes) à votre
 ## <a name="changing-the-alignment-of-an-element"></a>Modification de l'alignement d'un élément
  Vous pouvez aligner des éléments dans la planche graphique à l'aide de commandes de menu ou en faisant glisser les éléments vers des lignes d'alignement.
 
- Une *ligne d’alignement* est un repère visuel qui vous aide à aligner un élément par rapport à d’autres éléments dans l’application.
+ Une *ligne d’alignement (SnapLine* ) est un signal visuel qui vous aide à aligner un élément par rapport à d’autres éléments de l’application.
 
 #### <a name="to-align-two-or-more-elements-by-using-menu-commands"></a>Pour aligner plusieurs éléments à l'aide de commandes de menu
 

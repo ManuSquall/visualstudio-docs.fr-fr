@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: eebcf2c6796723e51c3aefdb12575aa89779429f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75593861"
 ---
 # <a name="resetsettings-devenvexe"></a>/ResetSettings (devenv.exe)
@@ -48,18 +48,18 @@ devenv /ResetSettings [SettingsFile|DefaultCollectionSpecifier]
   | Nom de collection par défaut | Spécificateur de collection |
   | --- | --- |
   | **Général** | `General` |
-  | **Javascript** | `JavaScript` |
-  | **Base visuelle** | `VB` |
-  | **Visuel C #** | `CSharp` |
-  | **Visuel C** | `VC` |
+  | **JavaScript** | `JavaScript` |
+  | **Visual Basic** | `VB` |
+  | **Visual C #** | `CSharp` |
+  | **Visual C++** | `VC` |
   | **Développement Web** | `Web` |
   | **Développement web (code uniquement)** | `WebCode` |
 
-## <a name="remarks"></a>Notes 
+## <a name="remarks"></a>Notes
 
 Si *SettingsFile* n’est pas spécifié, l’environnement IDE s’ouvre avec les paramètres existants.
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 
 Le premier exemple applique les paramètres stockés dans le fichier `MySettings.vssettings`.
 

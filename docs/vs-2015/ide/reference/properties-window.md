@@ -22,23 +22,23 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 959bd36995ca4086bf64020816b00aee6f777fbe
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662070"
 ---
-# <a name="properties-window"></a>Propriétés (fenêtre)
+# <a name="properties-window"></a>Fenêtre Propriétés
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Utilisez cette fenêtre pour afficher et modifier les événements et propriétés au moment du design des objets sélectionnés qui sont situés dans les éditeurs et les concepteurs. Vous pouvez également utiliser la fenêtre **Propriétés** pour afficher et modifier les propriétés des fichiers, des projets et des solutions. Vous trouverez la fenêtre **Propriétés** dans le menu **Affichage**. Vous pouvez également l’ouvrir en appuyant sur F4 ou en tapant **Propriétés** dans la fenêtre **Lancement rapide**.
 
  La fenêtre **Propriétés** affiche différents types de champs d’édition, en fonction des besoins d’une propriété particulière. Ces champs d’édition sont notamment des zones d’édition, des listes déroulantes et des liens vers des boîtes de dialogue d’éditeur personnalisé. Les propriétés affichées en gris sont en lecture seule.
 
-## <a name="uielement-list"></a>Liste des éléments d’interface
- Nom de l’objet répertorie les objets actuellement sélectionnés. Seuls les objets de l’éditeur ou du concepteur actif sont visibles. Quand vous sélectionnez plusieurs objets, seules les propriétés communes à tous les objets sélectionnés s’affichent.
+## <a name="uielement-list"></a>Liste des éléments de l'interface utilisateur
+ Nom de l’objet répertorie les objets actuellement sélectionnés. Seuls les objets de l'éditeur ou du générateur actif sont visibles. Quand vous sélectionnez plusieurs objets, seules les propriétés communes à tous les objets sélectionnés s’affichent.
 
- Catégoriséd répertorie toutes les propriétés et les valeurs de propriété pour l’objet sélectionné, par catégorie. Vous pouvez réduire une catégorie afin de limiter le nombre de propriétés visibles. Quand vous développez ou réduisez une catégorie, un signe plus (+) ou moins (-) s’affiche à gauche du nom de la catégorie. Les catégories sont répertoriées par ordre alphabétique.
+ Catégoriséd répertorie toutes les propriétés et les valeurs de propriété pour l’objet sélectionné, par catégorie. Vous pouvez réduire une catégorie afin de diminuer le nombre de propriétés visibles. Quand vous développez ou réduisez une catégorie, un signe plus (+) ou moins (-) s’affiche à gauche du nom de la catégorie. Les catégories s'affichent par ordre alphabétique.
 
  Alphabétique trie par ordre alphabétique tous les événements et propriétés au moment du design pour les objets sélectionnés. Pour modifier une propriété non estompée, cliquez dans la cellule située à sa droite et entrez les modifications souhaitées.
 

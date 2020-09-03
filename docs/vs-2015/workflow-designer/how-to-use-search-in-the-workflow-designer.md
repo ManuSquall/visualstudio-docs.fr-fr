@@ -10,10 +10,10 @@ author: steved0x
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 84f74b4718a7f976b386197a79692256ab49caa4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659120"
 ---
 # <a name="how-to-use-search-in-the-workflow-designer"></a>Procédure : utiliser la fonction de recherche dans le Concepteur de flux de travail
@@ -38,7 +38,7 @@ Pour faciliter la création de workflows de plus grande taille et plus complexes
 
 3. Le terme de recherche se trouve dans le workflow actif. La capture d'écran suivante affiche le nom complet de l'activité qui se trouve dans le concepteur.
 
-     ![Résultats de la recherche dans le Concepteur de flux de travail](../workflow-designer/media/designersearch.png "DesignerSearch")
+     ![Résultats de la recherche dans le concepteur de flux de travail](../workflow-designer/media/designersearch.png "DesignerSearch")
 
 ## <a name="find-in-files"></a>Rechercher dans les fichiers
  Utilisez Rechercher dans les fichiers pour localiser des chaînes dans les fichiers de workflow, notamment les fichiers XAML.
@@ -49,4 +49,4 @@ Pour faciliter la création de workflows de plus grande taille et plus complexes
 
 2. Entrez l’élément de recherche dans la zone de texte **Rechercher** , puis cliquez sur **Rechercher tout** .
 
-3. Le résultat de la recherche sera affiché dans la vue résultat de la**recherche** [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Double-cliquez sur un élément de résultat pour accéder à l'activité qui contient la correspondance dans le concepteur de workflow.
+3. Le résultat de la recherche sera affiché dans la vue résultat de la [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **recherche** . Double-cliquez sur un élément de résultat pour accéder à l'activité qui contient la correspondance dans le concepteur de workflow.

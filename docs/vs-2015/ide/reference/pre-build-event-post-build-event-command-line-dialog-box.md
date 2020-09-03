@@ -35,10 +35,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b42c219620a669a8fa27a7ce847dc571a4075288
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662168"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Ligne de commande de l’événement pré-build/post-build, boîte de dialogue
@@ -53,7 +53,7 @@ Vous pouvez taper des événements pré-build ou post-build pour la [page Évén
  **Zone d’édition de la ligne de commande** Contient les événements à exécuter pour pre-build ou postérieurs à la génération.
 
 > [!NOTE]
-> Ajoutez une instruction `call` avant toutes les commandes post-build qui exécutent des fichiers .bat. Par exemple, `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.
+> Ajoutez une instruction `call` avant toutes les commandes post-build qui exécutent des fichiers .bat.  Par exemple, `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.
 
  **Macros** Développe la zone d’édition pour afficher une liste de macros à insérer dans la zone d’édition de la ligne de commande.
 
@@ -87,4 +87,4 @@ Vous pouvez taper des événements pré-build ou post-build pour la [page Évén
 |`$(TargetExt)`|L’extension de fichier du fichier de sortie principal pour la build. Elle inclut le point (« . ») avant l’extension de fichier.|
 
 ## <a name="see-also"></a>Voir aussi
- [Spécification d’événements de build personnalisés dans](../../ide/specifying-custom-build-events-in-visual-studio.md) la [page événements de build Visual StudioC#, concepteur de projets ()](../../ide/reference/build-events-page-project-designer-csharp.md) [Comment : spécifier des événements de build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md) [commentC#: spécifier des événements de build ()](../../ide/how-to-specify-build-events-csharp.md)
+ [Spécification d’événements de build personnalisés dans](../../ide/specifying-custom-build-events-in-visual-studio.md) la [page événements de build Visual Studio, concepteur de projets (c#)](../../ide/reference/build-events-page-project-designer-csharp.md) [Comment : spécifier des événements de build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md) [Comment : spécifier des événements de build (c#)](../../ide/how-to-specify-build-events-csharp.md)

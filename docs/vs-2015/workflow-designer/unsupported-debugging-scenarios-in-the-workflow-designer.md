@@ -10,10 +10,10 @@ author: steved0x
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fdbe68b416560b85580e3dd30e5f8138b7cd08fe
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72606937"
 ---
 # <a name="unsupported-debugging-scenarios-in-the-workflow-designer"></a>Scénarios de débogage non pris en charge dans le Concepteur de workflow
@@ -43,7 +43,7 @@ Le Concepteur de workflow du [!INCLUDE[netfx40_short](../includes/netfx40-short-
 
   - Condition
 
-  - Nombre d’accès
+  - Nombre d'accès
 
   - Lorsqu'il est atteint
 
@@ -51,6 +51,6 @@ Le Concepteur de workflow du [!INCLUDE[netfx40_short](../includes/netfx40-short-
 
   - Données
 
-  - Processus
+  - Process
 
   - Atteindre le code machine

@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 910b3b5491660cbcd6132aff68ebeabafaeea0d5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85540645"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Guide pratique pour installer la prise en charge de Python dans Visual Studio sur Windows
@@ -22,7 +22,7 @@ ms.locfileid: "85540645"
 Pour installer la prise en charge de Python pour Visual Studio (également appelé Python Tools pour Visual Studio ou PTVS), suivez les instructions de la section qui correspond à votre version de Visual Studio :
 
 - [Visual Studio 2017 et Visual Studio 2019](#visual-studio-2017-and-2019)
-- [Visual Studio 2015](#visual-studio-2015)
+- [Visual Studio 2015](#visual-studio-2015)
 - [Visual Studio 2013 et versions antérieures](#visual-studio-2013-and-earlier)
 
 Pour tester rapidement la prise en charge de Python après avoir suivi les étapes d’installation, ouvrez la fenêtre **interactive Python** en appuyant sur **ALT** + **I** et en entrant `2+2` . Si vous n’obtenez pas la sortie `4`, passez en revue la procédure que vous avez suivie.

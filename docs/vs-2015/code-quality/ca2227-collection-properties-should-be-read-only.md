@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 17c4e2336a5c8bd8905d857dc8189a11f9fb6181
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85540528"
 ---
 # <a name="ca2227-collection-properties-should-be-read-only"></a>CA2227 : Les propriétés de collection doivent être en lecture seule
@@ -32,7 +32,7 @@ ms.locfileid: "85540528"
 |Category|Microsoft. usage|
 |Modification avec rupture|Rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Une propriété accessible en écriture de manière externe est un type qui implémente <xref:System.Collections.ICollection?displayProperty=fullName> . Les tableaux, les indexeurs (propriétés portant le nom « Item ») et les jeux d’autorisations sont ignorés par la règle.
 
 ## <a name="rule-description"></a>Description de la règle

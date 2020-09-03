@@ -7,10 +7,10 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: ebe96ec84d957c5ac8dcb6bad0a388ba3318c0fb
-ms.sourcegitcommit: 1fcdb5dae881a1c3a93413bb940d63c232bf96f3
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86459292"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Organiser les objets en conteneurs de disposition dans le concepteur XAML
@@ -33,7 +33,7 @@ Les panneaux de disposition suivants sont les plus couramment utilisés, mais il
 
 Permet de disposer les objets dans des lignes et des colonnes.
 
-![Panneau de disposition de grille](../designers/media/98b234b2-ac3b-441f-9136-98375fee87b7.png)
+![Panneau de disposition de la grille](../designers/media/98b234b2-ac3b-441f-9136-98375fee87b7.png)
 
 ### <a name="uniformgrid"></a>UniformGrid
 
@@ -43,11 +43,11 @@ Permet de disposer les objets dans des régions de grille égales ou uniformes. 
 
 ![Panneau de disposition UniformGrid](../designers/media/928b9284-a7e8-4678-875a-656b80b78076.png)
 
-### <a name="canvas"></a>Canvas
+### <a name="canvas"></a>Canevas
 
 Permet de disposer les objets librement. Quand les utilisateurs exécutent votre application, ces éléments ont des positions fixes sur l'écran.
 
-![Panneau de disposition de canevas](../designers/media/e1ae27f0-3a57-454e-b580-877dcea8836d.png)
+![Panneau de disposition de la zone de dessin](../designers/media/e1ae27f0-3a57-454e-b580-877dcea8836d.png)
 
 ### <a name="stackpanel"></a>StackPanel
 

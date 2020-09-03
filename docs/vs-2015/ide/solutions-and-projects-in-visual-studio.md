@@ -1,5 +1,5 @@
 ---
-title: Projets et solutions
+title: Solutions et projets
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -51,10 +51,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0b1783adadd1bfab32bfbbdcfb5ae28df7c0aae4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72661197"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Solutions et projets dans Visual Studio
@@ -70,7 +70,7 @@ Quand vous créez une application pour mobile, une application, un site web, une
 
  Le diagramme suivant montre la relation entre les projets et les solutions, ainsi que les éléments qu'ils contiennent au sens logique.
 
- ![Projets et solutions Visual Studio](../ide/media/vs2015-project-diagram.png "|::ref1::|")
+ ![Projets et solutions Visual Studio](../ide/media/vs2015-project-diagram.png "vs2015_project_diagram")
 
  Vous pouvez aussi créer des modèles de projets et d'éléments personnalisés. Pour plus d’informations, consultez [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md).
 
@@ -80,7 +80,7 @@ Quand vous créez une application pour mobile, une application, un site web, une
 ## <a name="managing-projects-in-solution-explorer"></a>Gestion de projets dans l'Explorateur de solutions
  Après avoir créé un nouveau projet, vous utilisez **l'Explorateur de solutions** pour afficher et gérer des projets et des solutions, ainsi que leurs éléments associés. L'illustration suivante montre l'Explorateur de serveurs avec une solution C# qui contient deux projets.
 
- ![Explorateur de solutions](../ide/media/vs2015-solution-explorer.png "|::ref2::|")
+ ![Explorateur de solutions](../ide/media/vs2015-solution-explorer.png "vs2015_solution_explorer")
 
 ## <a name="in-this-section"></a>Dans cette section
 
@@ -92,11 +92,11 @@ Quand vous créez une application pour mobile, une application, un site web, une
 
 - [Gestion des références dans un projet](../ide/managing-references-in-a-project.md)
 
-- [Propriétés d’une application](../ide/application-properties.md)
+- [Propriétés de l’application](../ide/application-properties.md)
 
 - [Gestion d’assembly et signature de manifeste](../ide/managing-assembly-and-manifest-signing.md)
 
-- [Guide pratique pour spécifier une icône d’application (Visual Basic, C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)
+- [Comment : spécifier une icône d’application (Visual Basic, C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)
 
 - [Cibler une version spécifique du .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)
 

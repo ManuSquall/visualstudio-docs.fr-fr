@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 18e585064bb50db7a0497c6b96e428a662e953ab
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72604835"
 ---
 # <a name="watch-command"></a>Espion, commande
@@ -35,10 +35,10 @@ Debug.Watch[index]
 ## <a name="arguments"></a>Arguments
  `index` Obligatoire. Numéro d’instance de la fenêtre Espion.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  La valeur d’`index` doit être un entier. Les valeurs valides sont 1, 2, 3 ou 4.
 
-## <a name="example"></a>Exemples
+## <a name="example"></a> Exemple
 
 ```
 >Debug.Watch1

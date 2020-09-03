@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2918826d6923efa3db42f4f572c416b9668513a9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660899"
 ---
 # <a name="code-snippet-picker"></a>Sélecteur d'extraits de code
@@ -37,7 +37,7 @@ L’éditeur de code [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] fournit un 
 
 - Visual F# : le **sélecteur d’extraits de code** n’est pas disponible.
 
-- [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)] : cliquez avec le bouton droit à l’emplacement voulu dans l’éditeur de code pour afficher le menu contextuel, puis cliquez sur **Insérer un extrait** ou **Entourer de**.
+- [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)] --Cliquez avec le bouton droit à l’emplacement de votre choix dans l’éditeur de code pour afficher le menu contextuel, puis cliquez sur **Insérer un extrait** ou **entourer de**.
 
 - XML : cliquez avec le bouton droit à l’emplacement voulu dans l’éditeur de code pour afficher le menu contextuel, puis cliquez sur **Insérer un extrait** ou **Entourer de**.
 
@@ -47,7 +47,7 @@ L’éditeur de code [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] fournit un 
 
   Dans la plupart des langages de développement Visual Studio, vous pouvez utiliser le **Gestionnaire des extraits de code** pour ajouter des dossiers à la **Liste des dossiers** dans laquelle le **sélecteur d’extraits de code** recherche les fichiers d’extraits XML. Vous pouvez également créer vos propres extraits à ajouter à la liste. Pour plus d’informations, consultez [Procédure pas à pas : création d’un extrait de code](../../ide/walkthrough-creating-a-code-snippet.md).
 
-## <a name="uielement-list"></a>Liste des éléments d’interface
+## <a name="uielement-list"></a>Liste des éléments de l'interface utilisateur
  Nom d’élément champ de texte modifiable qui affiche le nom de l’élément sélectionné dans la **liste d’éléments**. Pour effectuer une recherche incrémentielle de l’élément souhaité, commencez à taper son nom dans ce champ. Continuez d’ajouter des lettres jusqu’à ce que l’élément voulu soit sélectionné dans la **liste d’éléments**.
 
  Liste d’éléments liste des extraits de code disponibles pour l’insertion, ou liste de dossiers contenant des extraits de code. Pour insérer un extrait ou développer un dossier, sélectionnez l’élément voulu et appuyez sur Entrée.

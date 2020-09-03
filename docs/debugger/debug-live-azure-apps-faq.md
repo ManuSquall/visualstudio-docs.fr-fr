@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5e0d8839daac2d470f4275257bfcfbc83fc7a62f
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72911408"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Questions fréquentes sur le débogage d’instantané dans Visual Studio
@@ -99,7 +99,7 @@ Pour les machines virtuelles/groupes identiques de machines virtuelles, supprime
          - Désinstallation de l’extension Microsoft. VisualStudio. Azure. RemoteDebug. VSRemoteDebugger
 
          > [!NOTE]
-         > Groupes de machines virtuelles identiques : le portail n’autorise pas la suppression des ports DebuggerListener. Vous devrez utiliser Azure PowerShell. Pour plus d'informations, consultez ce qui suit.
+         > Groupes de machines virtuelles identiques : le portail n’autorise pas la suppression des ports DebuggerListener. Vous devrez utiliser Azure PowerShell. Voir les détails ci-dessous.
 
 2. Supprimer des certificats et Azure Key Vault
 
@@ -125,7 +125,7 @@ Pour les machines virtuelles/groupes identiques de machines virtuelles, supprime
 
    - Certificat de serveur
       - L’empreinte de certificat de serveur correspondante est déployée en tant que secret dans Azure Key Vault. VS va tenter de trouver ou de créer un coffre de sauvegarde avec le préfixe MSVSAZ * dans la région correspondant à la ressource machine virtuelle ou groupes de machines virtuelles identiques. Toutes les ressources de machines virtuelles ou de groupes identiques de machines virtuelles déployées dans cette région partageront donc le même coffre de stockage.
-      - Pour supprimer le secret de l’empreinte numérique du certificat de serveur, accédez au Portail Azure et recherchez le MSVSAZ * Key Vault dans la même région que celle qui héberge votre ressource. Supprimez la clé secrète qui doit être étiquetée `remotedebugcert<<ResourceName>>`
+      - Pour supprimer le secret de l’empreinte numérique du certificat de serveur, accédez au Portail Azure et recherchez le MSVSAZ * Key Vault dans la même région que celle qui héberge votre ressource. Supprimer la clé secrète qui doit être étiquetée `remotedebugcert<<ResourceName>>`
       - Vous devrez également supprimer le secret du serveur de votre ressource via PowerShell.
 
       Pour les machines virtuelles :
@@ -179,11 +179,11 @@ Pour les machines virtuelles/groupes identiques de machines virtuelles :
 Il existe plusieurs façons de désactiver les Débogueur de capture instantanée :
 - Cloud Explorer > la ressource de votre machine virtuelle/groupe de machines virtuelles identiques > désactiver les Diagnostics
 
-- Portail Azure > le panneau de ressources de votre machine virtuelle/groupe de machines virtuelles identiques > Extensions > désinstaller Microsoft. Insights. Vmdiagnosticssettings lui extension
+- Portail Azure > le panneau de ressources de votre machine virtuelle/groupe de machines virtuelles identiques > extensions > désinstaller Microsoft. Insights. Vmdiagnosticssettings lui extension
 
 - Applets de commande PowerShell à partir de [AZ PowerShell](/powershell/azure/overview)
 
-   Ordinateur virtuel :
+   Machine virtuelle :
 
    ```powershell
       Remove-AzVMExtension -ResourceGroupName $rgName -VMName $vmName -Name Microsoft.Insights.VMDiagnosticsSettings
@@ -199,7 +199,7 @@ Il existe plusieurs façons de désactiver les Débogueur de capture instantané
 ## <a name="see-also"></a>Voir aussi
 
 - [Débogage dans Visual Studio](../debugger/index.yml)
-- [Déboguer des applications ASP.NET en direct à l’aide du Débogueur de capture instantanée](../debugger/debug-live-azure-applications.md)
+- [Déboguer des applications ASP.NET en production avec le Débogueur de capture instantanée](../debugger/debug-live-azure-applications.md)
 - [Déboguer des groupes de machines virtuelles Azure Machines\Virtual ASP.NET en direct à l’aide du Débogueur de capture instantanée](../debugger/debug-live-azure-virtual-machines.md)
-- [Déboguer en direct ASP.NET Azure Kubernetes à l’aide de l’Débogueur de capture instantanée](../debugger/debug-live-azure-kubernetes.md)
-- [Dépannage et problèmes connus liés au débogage d’instantanés](../debugger/debug-live-azure-apps-troubleshooting.md)
+- [Déboguer Azure Kubernetes ASP.NET en production avec le Débogueur de capture instantanée](../debugger/debug-live-azure-kubernetes.md)
+- [Résolution des problèmes et problèmes connus du débogage d’instantané](../debugger/debug-live-azure-apps-troubleshooting.md)

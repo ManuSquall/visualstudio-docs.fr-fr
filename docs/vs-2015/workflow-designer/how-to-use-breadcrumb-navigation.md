@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1c01e48e6aa34513e57b373150c605cb0a7f5b18
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659156"
 ---
 # <a name="how-to-use-breadcrumb-navigation"></a>Procédure : utiliser l'exploration à l'aide de la barre de navigation
@@ -47,7 +47,7 @@ Il existe trois méthodes principales pour modifier l'ensemble des activités af
 2. Une fois que vous avez appliqué un état développer tout ou réduire tout, vous pouvez cliquer sur le bouton **restaurer** qui s’affiche pour revenir à l’état précédemment appliqué à chaque activité.
 
     > [!WARNING]
-    > Si une activité, telle que <xref:System.Activities.Statements.Flowchart>, est désactivée sur place, les fonctionnalités associées aux boutons **développer tout** et **réduire tout** sont désactivées sur le concepteur d' **organigrammes** . [!INCLUDE[crabout](../includes/crabout-md.md)] le concepteur d' **organigrammes** , consultez la rubrique [organigramme](../workflow-designer/flowchart-activity-designer.md) .
+    > Si une activité, telle que <xref:System.Activities.Statements.Flowchart> , a désactivé l’expansion sur place, les fonctionnalités associées aux boutons **développer tout** et **réduire tout** sont désactivées sur le concepteur d' **organigrammes** . [!INCLUDE[crabout](../includes/crabout-md.md)] le concepteur d' **organigrammes** , consultez la rubrique [organigramme](../workflow-designer/flowchart-activity-designer.md) .
 
     > [!WARNING]
     > L’option développer tout a également un effet spécial dans les concepteurs d’activités **switch** et **TryCatch** . Quand vous cliquez sur **développer tout**, tous les cas de basculement et tous les blocs try/catch/finally s’affichent. Si vous cliquez sur **restaurer** ou **réduire tout** , ces concepteurs sont rétablis à leur état par défaut, à partir duquel vous pouvez cliquer sur un bloc/cas individuel pour afficher son contenu.

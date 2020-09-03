@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9bf941babd943c6856809a13de847b62745b2056
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72605012"
 ---
 # <a name="how-to-create-a-wcf-workflow-service-application"></a>Procédure : créer une application de service de workflow WCF
@@ -23,11 +23,11 @@ Les applications de service de workflow [!INCLUDE[indigo1](../includes/indigo1-m
 
 1. Démarrez [!INCLUDE[vs2010](../includes/vs2010-md.md)].
 
-2. Dans le menu **fichier** , pointez sur **nouveau**, puis sélectionnez **projet...** .
+2. Dans le menu **fichier** , pointez sur **nouveau**, puis sélectionnez **projet...**.
 
-     La boîte de dialogue **Nouveau projet** s'affiche.
+     La boîte de dialogue **Nouveau projet** s’affiche.
 
-3. Dans le volet **modèles installés** , sélectionnez **WCF** ou **Workflow** dans les regroupements  **C# visuel** ou **Visual Basic** en fonction de la langue de votre choix.
+3. Dans le volet **modèles installés** , sélectionnez **WCF** ou **Workflow** dans les regroupements **Visual C#** ou **Visual Basic** selon le langage de votre choix.
 
 4. Dans le volet central, sélectionnez **application de service de flux de travail WCF**.
 
@@ -38,7 +38,7 @@ Les applications de service de workflow [!INCLUDE[indigo1](../includes/indigo1-m
 7. Dans la zone **solution** , sélectionnez créer une solution, puis cliquez sur **OK**.
 
     > [!NOTE]
-    > Si vous souhaitez ajouter une application console de workflow à une solution existante, ouvrez cette solution dans [!INCLUDE[vs2010](../includes/vs2010-md.md)], cliquez avec le bouton droit sur la solution dans **Explorateur de solutions**, puis sélectionnez **Ajouter**, puis **nouveau projet...** pour ouvrir la boîte de dialogue **nouveau projet** . Procédez comme décrit ci-dessus dans cette procédure.
+    > Si vous souhaitez ajouter une application console de workflow à une solution existante, ouvrez cette solution dans [!INCLUDE[vs2010](../includes/vs2010-md.md)] , cliquez avec le bouton droit sur la solution dans **Explorateur de solutions**, puis sélectionnez **Ajouter**, puis **nouveau projet...** pour ouvrir la boîte de dialogue **nouveau projet** . Procédez comme décrit ci-dessus dans cette procédure.
 
 8. Le modèle de projet crée une définition de service au format XAML. [!INCLUDE[wfd1](../includes/wfd1-md.md)] s'ouvre en mode Design avec une activité <xref:System.Activities.Statements.Sequence> qui contient un ensemble d'activités <xref:System.ServiceModel.Activities.Receive> et <xref:System.ServiceModel.Activities.SendReply>.
 

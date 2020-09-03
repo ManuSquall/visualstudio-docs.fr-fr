@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: dcc993ab7c127b16fda206047a1a985d1e003123
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663180"
 ---
 # <a name="viewing-types-and-relationships-class-designer"></a>Affichage des types et relations (Concepteur de classes)
@@ -45,7 +45,7 @@ Le Concepteur de classes utilise des diagrammes de classes pour afficher des inf
 
  Décrit comment passer de la notation membre à la notation association.
 
-## <a name="related-sections"></a>Rubriques connexes
+## <a name="related-sections"></a>Sections connexes
  [Conception des classes et des types (Concepteur de classes)](../ide/designing-classes-and-types-class-designer.md)
 
  [Refactorisation des classes et des types (Concepteur de classes)](../ide/refactoring-classes-and-types-class-designer.md)

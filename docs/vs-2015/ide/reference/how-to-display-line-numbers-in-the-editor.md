@@ -15,13 +15,13 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0f093cf93c2f67c91fa9eee0085a566a15289684
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72602352"
 ---
-# <a name="how-to-display-line-numbers-in-the-editor"></a>Guide pratique pour afficher les numéros de ligne dans l’Éditeur
+# <a name="how-to-display-line-numbers-in-the-editor"></a>Comment : afficher les numéros de ligne dans l’Éditeur
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Vous pouvez afficher ou masquer la numérotation des lignes dans votre code.
@@ -34,12 +34,12 @@ Vous pouvez afficher ou masquer la numérotation des lignes dans votre code.
 
 #### <a name="to-display-line-numbers-in-code"></a>Pour afficher les numéros de ligne dans le code
 
-1. Dans la barre de menus, sélectionnez **Outils**, **Options**. Développez le nœud **Éditeur de texte**, puis sélectionnez le nœud du langage que vous utilisez ou **Tous les langages** pour activer les numéros de ligne dans tous les langages. Vous pouvez également taper le **numéro de ligne** dans la zone **Lancement rapide**.
+1. Dans la barre de menus, choisissez **Outils**, **options**. Développez le nœud **Éditeur de texte**, puis sélectionnez le nœud du langage que vous utilisez ou **Tous les langages** pour activer les numéros de ligne dans tous les langages. Vous pouvez également taper le **numéro de ligne** dans la zone **Lancement rapide**.
 
-2. ![Options d’affichage des numéros de ligne dans l’éditeur](../../ide/reference/media/vs-displaylinenumbers.png "|::ref1::|")
+2. ![Options d’affichage des numéros de ligne dans l’éditeur](../../ide/reference/media/vs-displaylinenumbers.png "VS_DisplayLineNumbers")
 
 > [!NOTE]
 > Selon votre langage ou vos paramètres, vous devez peut-être cocher la case **Afficher tous les paramètres** dans la boîte de dialogue **Options** pour afficher le sous-nœud **Tous les langages**.
 
 ## <a name="see-also"></a>Voir aussi
- [Personnalisation de l’éditeur ](../../ide/customizing-the-editor.md) [Text boîte de dialogue Options de l’éditeur ](../../ide/reference/text-editor-options-dialog-box.md) code de [Writing](../../ide/writing-code-in-the-code-and-text-editor.md)
+ [Personnalisation de la boîte de dialogue Options de l’éditeur de texte de l’éditeur](../../ide/customizing-the-editor.md) [Text Editor Options Dialog Box](../../ide/reference/text-editor-options-dialog-box.md) [écriture du code](../../ide/writing-code-in-the-code-and-text-editor.md)

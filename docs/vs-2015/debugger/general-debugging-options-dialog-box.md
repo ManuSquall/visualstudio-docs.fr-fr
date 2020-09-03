@@ -23,10 +23,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6c53af4a8e0f42708ab94d7206a9c0cc54819798
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/18/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72573549"
 ---
 # <a name="general-debugging-options-dialog-box"></a>Général, Débogage, boîte de dialogue Options
@@ -45,9 +45,9 @@ La page**Outils/Options/débogage/général** vous permet de définir les option
   
  1 \) lorsque le code natif appelle du code managé à l’aide de COM Interop et que le code managé lève une exception. Consultez [Introduction à COM Interop](https://msdn.microsoft.com/library/8bd62e68-383d-407f-998b-29aa0ce0fd67).  
   
- 2 \) lorsque le code managé s’exécutant dans le domaine d’application 1 appelle du code managé dans le domaine d’application 2 et que le code dans le domaine d’application 2 lève une exception. Consultez [programmation avec des domaines d’application](https://msdn.microsoft.com/bd36055b-56bd-43eb-b4d8-820c37172131).  
+ 2 \) lorsque le code managé qui s’exécute dans le domaine d’application 1 appelle le code managé dans le domaine d’application 2 et que le code dans le domaine d’application 2 lève une exception. Consultez [programmation avec des domaines d’application](https://msdn.microsoft.com/bd36055b-56bd-43eb-b4d8-820c37172131).  
   
- 3 \) lorsque le code appelle une fonction à l’aide de la réflexion et que la fonction lève une exception. Consultez [réflexion](https://msdn.microsoft.com/library/d1a58e7f-fb39-4d50-bf84-e3b8f9bf9775).  
+ 3 \) lorsque le code appelle une fonction à l’aide de la réflexion, et que la fonction lève une exception. Consultez [réflexion](https://msdn.microsoft.com/library/d1a58e7f-fb39-4d50-bf84-e3b8f9bf9775).  
   
  Dans les conditions 2) et 3), l'exception est quelquefois interceptée par le code managé dans `mscorlib` au lieu du Common Language Runtime. Cette option n'a aucune incidence sur l'arrêt sur les exceptions interceptées par `mscorlib`.  
   
@@ -69,10 +69,10 @@ La page**Outils/Options/débogage/général** vous permet de définir les option
  **Activer Uniquement mon code**  
  Le débogueur affiche et exécute pas à pas le code utilisateur (« Mon code ») uniquement et il ignore le code système et tout autre code optimisé ou ne possédant pas de symboles de débogage.  
   
- **Afficher tous les membres pour les objets non-utilisateur dans les fenêtres de variables (Visual Basic uniquement)**  
+ **Afficher tous les membres pour les objets non-utilisateur dans des fenêtres de variables (Visual Basic uniquement)**  
  Active l'affichage des membres non publics dans les objets qui sont en code non-utilisateur (pas « Mon code »).  
   
- **Avertir s’il n’y a pas de code utilisateur au lancement**  
+ **Avertir s'il n'y a pas de code utilisateur au lancement**  
  Lorsque le débogage commence et que l'option Uniquement mon code est activée, cette option vous avertit en cas d'absence de code utilisateur (« Mon code »).  
   
  **Activer l’exécution pas à pas de la source .NET Framework**  
@@ -84,7 +84,7 @@ La page**Outils/Options/débogage/général** vous permet de définir les option
  **Activer l’évaluation de la propriété et d’autres appels de fonction implicite**  
  Active l'évaluation automatique des propriétés et des appels de fonction implicites dans les fenêtres de variables et la boîte de dialogue **QuickWatch**.  
   
- **Appeler une fonction de conversion de chaînes sur des objetsC# dans des fenêtres de variables (et JavaScript uniquement)**  
+ **Appeler une fonction de conversion de chaînes sur des objets dans des fenêtres de variables (C# et JavaScript uniquement)**  
  Exécute un appel de conversion de chaînes implicite lors de l'évaluation d'objets dans des fenêtres de variables. Par conséquent, ce résultat est affiché sous forme de chaîne plutôt que sous forme de nom de type. S'applique uniquement lors du débogage en code C#. Ce paramètre peut être substitué par l’attribut DebuggerDisplay (consultez [utilisation de l’attribut DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)).  
   
  **Activer la prise en charge du serveur source**  
@@ -99,7 +99,7 @@ La page**Outils/Options/débogage/général** vous permet de définir les option
  **Autoriser le serveur source pour les assemblys de confiance partielle (managé uniquement)**  
  Lorsque la prise en charge du serveur source est activée, ce paramètre remplace le comportement par défaut qui consiste à ne pas récupérer les sources des assemblys de confiance partielle.  
   
- **Mettre en surbrillance la ligne entière pour les points d’arrêt et l’instruction actuelle**  
+ **Mettre en surbrillance l'intégralité de la ligne pour les points d'arrêt et l'instruction actuelle**  
  Lorsque le débogueur met en surbrillance un point d'arrêt ou l'instruction actuelle, il met en surbrillance la ligne entière.  
   
  **Les fichiers sources doivent correspondre exactement à la version d’origine**  
@@ -145,7 +145,7 @@ La page**Outils/Options/débogage/général** vous permet de définir les option
   
   Vous devez utiliser cette option quand vous déboguez le code .NET C++, car le nouveau moteur de débogage ne prend pas en charge l’évaluation des expressions .NET C++. Toutefois, l’activation du mode de compatibilité natif désactive de nombreuses fonctionnalités qui dépendent de l’implémentation du débogueur actuel pour fonctionner. Par exemple, le moteur hérité ne dispose pas de nombreux visualiseurs pour les types intégrés comme `std::string` dans les projets Visual Studio 2015.  Utilisez des projets Visual Studio 2013 pour une expérience de débogage optimale dans ces cas.  
   
-  **Utiliser les évaluateurs d’expression hérités C# et VB**  
+  **Utiliser les évaluateurs d’expressions C# et VB hérités**  
   Le débogueur utilisera les évaluateurs d’expression Visual Studio 2013 C#/Visual Basic au lieu des évaluateurs d’expression Roslyn de Visual Studio 2015.  
   
   **Avertir lors de l’utilisation de visualiseurs de débogueur personnalisés avec des processus potentiellement dangereux (managé uniquement)**  
@@ -173,9 +173,9 @@ La page**Outils/Options/débogage/général** vous permet de définir les option
   Vous pouvez utiliser la fonctionnalité Modifier &amp; Continuer pendant le débogage.  
   
   **Activer la modification et la poursuite natives**  
-  Vous pouvez utiliser la fonctionnalité Modifier &amp; Continuer pendant le débogage du code C++ natif. Pour plus d’informations, consultez [modifier & continuer ( C++visuel)](../debugger/edit-and-continue-visual-cpp.md).  
+  Vous pouvez utiliser la fonctionnalité Modifier &amp; Continuer pendant le débogage du code C++ natif. Pour plus d’informations, consultez [modifier & continuer (Visual C++)](../debugger/edit-and-continue-visual-cpp.md).  
   
-  **Appliquer les changements en continuant (natif uniquement)**  
+  **Appliquer les modifications à la poursuite de l’application (natif uniquement)**  
   Visual Studio compile et applique automatiquement les modifications de code en attente apportées lors de la poursuite du processus après un arrêt. Si cette option n’est pas sélectionnée, vous pouvez choisir d’appliquer les modifications à l’aide de l’élément « Appliquer les modifications du code » dans le menu Déboguer.  
   
   **Signaler le code périmé (natif uniquement)**  

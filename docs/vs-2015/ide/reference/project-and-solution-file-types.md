@@ -31,10 +31,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 59f9fb1f628da6bc4d958fdca3843adebe61b798
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662140"
 ---
 # <a name="project-and-solution-file-types"></a>Types de fichiers projet et solution
@@ -45,7 +45,7 @@ ms.locfileid: "72662140"
 ## <a name="solution-files-sln-and-suo"></a>Fichiers solution (.sln et .suo)
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] utilise deux types de fichiers (.sln et .suo) pour stocker des paramètres spécifiques à des solutions. Ces fichiers, appelés collectivement fichiers solution, fournissent à l'Explorateur de solutions les informations dont il a besoin pour afficher une interface graphique de gestion de vos fichiers. Ils vous permettent de vous concentrer sur vos projets et objectifs finaux plutôt que sur l'environnement lui-même chaque fois que vous retournez à vos tâches de développement.
 
-|Extension|Name|Description|
+|Extension|Nom|Description|
 |---------------|----------|-----------------|
 |.sln|Solution [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]|Organise les projets, les éléments de projet et les éléments de solution dans la solution.|
 |.suo|Options utilisateur de solution|Assure le suivi des personnalisations au niveau de l'utilisateur que vous avez effectuées dans Visual Studio, telles que les points d'arrêt.|
@@ -56,9 +56,9 @@ ms.locfileid: "72662140"
  [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]
  [Types de fichiers créés pour les projets Visual C++](https://msdn.microsoft.com/library/2b0ee2e0-ae81-4185-9bb9-11da3c99a283)
 
- [Création et gestion de projets Visual C++](https://msdn.microsoft.com/library/11003cd8-9046-4630-a189-a32bf3b88047)
+ [Création et gestion de projets Visual C++](https://msdn.microsoft.com/library/11003cd8-9046-4630-a189-a32bf3b88047)
 
  [Unicode](https://msdn.microsoft.com/library/1002004b-4113-4380-bf63-e1570934b793)
 
 ## <a name="see-also"></a>Voir aussi
- [Projets et solutions](../../ide/solutions-and-projects-in-visual-studio.md)
+ [Solutions et projets](../../ide/solutions-and-projects-in-visual-studio.md)

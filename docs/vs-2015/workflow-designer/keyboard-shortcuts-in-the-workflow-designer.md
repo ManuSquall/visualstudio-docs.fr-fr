@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6f7bc701c4a7009d402c778356a290ce4e129bb3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658975"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Raccourcis clavier dans Workflow Designer
@@ -27,7 +27,7 @@ Les fonctionnalités de base de [!INCLUDE[wfd1](../includes/wfd1-md.md)] sont ac
 ### <a name="workflow-designer-keyboard-shortcuts"></a>Raccourcis clavier de Workflow Designer
  Le tableau suivant récapitule les raccourcis clavier par défaut affectés aux commandes de [!INCLUDE[wfd2](../includes/wfd2-md.md)].
 
-|Raccourci|Fonction|
+|Raccourci|Objectif|
 |--------------|-------------|
 |CTRL+E, A|Affiche ou masque le concepteur d’arguments.|
 |CTRL+E, C|Réduit l'activité sélectionnée sur place.|
@@ -41,7 +41,7 @@ Les fonctionnalités de base de [!INCLUDE[wfd1](../includes/wfd1-md.md)] sont ac
 |CTRL+E, S|Ajoute l'élément avec le focus clavier à la sélection actuelle.|
 |CTRL+E, V|Affiche ou masque le concepteur de variables.|
 |CTRL+E, X|Développe toutes les activités dans le flux de travail.|
-|CTRL+ALT+F6|Déplace le focus clavier de la zone actuelle de l'interface utilisateur vers la zone suivante dans la séquence. L'ordre suivi est le suivant :<br /><br /> 1. barre de navigation de navigation.<br />2. surface du concepteur<br />3. arguments/variables/concepteur d’importations s’il est ouvert<br />4. Shell|
+|CTRL+ALT+F6|Déplace le focus clavier de la zone actuelle de l'interface utilisateur vers la zone suivante dans la séquence. L'ordre est le suivant :<br /><br /> 1. barre de navigation de navigation.<br />2. surface du concepteur<br />3. arguments/variables/concepteur d’importations s’il est ouvert<br />4. Shell|
 
 ### <a name="flowchart"></a>Organigramme
  La liste suivante affiche les mouvements utilisés pour construire un organigramme à l'aide du clavier. Comme dans le reste de [!INCLUDE[wfd2](../includes/wfd2-md.md)], les activités sont ajoutées à l'aire du concepteur à l'aide des raccourcis de boîte à outils globaux fournis avec [!INCLUDE[vs2010](../includes/vs2010-md.md)].
@@ -81,7 +81,7 @@ Les fonctionnalités de base de [!INCLUDE[wfd1](../includes/wfd1-md.md)] sont ac
 
     3. Coller
 
-    4. Tout Sélectionner
+    4. Tout sélectionner
 
     5. Annuler
 

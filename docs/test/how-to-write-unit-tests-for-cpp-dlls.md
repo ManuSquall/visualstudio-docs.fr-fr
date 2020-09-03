@@ -8,10 +8,10 @@ ms.workload:
 - cplusplus
 author: corob-msft
 ms.openlocfilehash: 3bfbe5fd0147a04d6fc6142fd1d722f8f2304586
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85287036"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Écrire des tests unitaires pour des DLL C++ dans Visual Studio
@@ -141,7 +141,7 @@ Passez à la procédure [Pour ajouter des tests unitaires dans le même projet](
 
 1. Dans chaque fichier de code de test unitaire, ajoutez une instruction `#include` pour les en-têtes du projet testé.
 
-2. Ajoutez les classes et les méthodes de test aux fichiers de code de test unitaire. Par exemple :
+2. Ajoutez les classes et les méthodes de test aux fichiers de code de test unitaire. Par exemple :
 
     ```cpp
     #include "stdafx.h"

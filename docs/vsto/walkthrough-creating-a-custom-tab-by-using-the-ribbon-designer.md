@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Créer un onglet personnalisé à l’aide du concepteur de ruban'
+title: 'Procédure pas à pas : création d’un onglet personnalisé à l’aide du concepteur de ruban'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,18 +18,18 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5a32cfc84aa9bc93761dc8b57c13651eb04031a2
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71255523"
 ---
-# <a name="walkthrough-create-a-custom-tab-by-using-the-ribbon-designer"></a>Procédure pas à pas : Créer un onglet personnalisé à l’aide du concepteur de ruban
+# <a name="walkthrough-create-a-custom-tab-by-using-the-ribbon-designer"></a>Procédure pas à pas : création d’un onglet personnalisé à l’aide du concepteur de ruban
   Le Concepteur de ruban vous permet de créer un onglet personnalisé puis d'ajouter et de positionner des contrôles dessus.
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
- Cette procédure pas à pas décrit les tâches suivantes :
+ Cette procédure pas à pas décrit les tâches suivantes :
 
 - [Créer des volets actions](#BKMK_CreateActionsPanes).
 
@@ -38,10 +38,10 @@ ms.locfileid: "71255523"
 - [Masquer et afficher les volets actions à l’aide des boutons de l’onglet personnalisé](#BKMK_HideShowActionsPane).
 
 > [!NOTE]
-> Il est possible que pour certains des éléments de l’interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L’édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Il est possible que pour certains des éléments de l'interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L'édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Prérequis
- Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :
+ Vous devez disposer des éléments suivants pour exécuter cette procédure pas à pas :
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
@@ -52,11 +52,11 @@ ms.locfileid: "71255523"
 
 ### <a name="to-create-an-excel-workbook-project"></a>Pour créer un projet de classeur Excel
 
-- Créez un projet de classeur Excel portant le nom **MyExcelRibbon**. Pour plus d'informations, voir [Procédure : Créer des projets Office dans Visual](../vsto/how-to-create-office-projects-in-visual-studio.md)Studio.
+- Créez un projet de classeur Excel portant le nom **MyExcelRibbon**. Pour plus d'informations, consultez [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      Visual Studio ouvre le nouveau classeur dans le concepteur et ajoute le projet **MyExcelRibbon** à **Explorateur de solutions**.
 
-## <a name="BKMK_CreateActionsPanes"></a>Créer des volets actions
+## <a name="create-actions-panes"></a><a name="BKMK_CreateActionsPanes"></a> Créer des volets actions
  Ajoutez deux volets Actions personnalisés au projet. Vous ajouterez ultérieurement à l'onglet personnalisé des boutons qui affichent et masquent ces volets Actions.
 
 ### <a name="to-create-actions-panes"></a>Pour créer des volets Actions
@@ -73,14 +73,14 @@ ms.locfileid: "71255523"
 
 5. Répétez les étapes 1 à 5 pour créer un deuxième volet Actions et une deuxième étiquette. Affectez à la propriété **Text** de la deuxième étiquette la valeur **volet Actions 2**.
 
-## <a name="BKMK_CreateCustomTab"></a>Créer un onglet personnalisé
+## <a name="create-a-custom-tab"></a><a name="BKMK_CreateCustomTab"></a> Créer un onglet personnalisé
  L'une des règles de conception d'une application Office stipule que les utilisateurs doivent toujours avoir le contrôle de l'interface utilisateur de l'application Office. Pour ajouter cette fonction pour les volets Actions, vous pouvez ajouter des boutons qui affichent et masquent chaque volet Actions à partir d'un onglet personnalisé sur le ruban. Pour créer un onglet personnalisé, ajoutez un élément **Ruban (concepteur visuel)** au projet. Le concepteur vous permet d'ajouter et de position des contrôles, de définir les propriétés des contrôles et de gérer les événements de contrôle.
 
 ### <a name="to-create-a-custom-tab"></a>Pour créer un onglet personnalisé
 
 1. Dans le menu **Projet** , choisissez **Ajouter un nouvel élément**.
 
-2. Dans la boîte de dialogue **Ajouter un nouvel élément** , sélectionnez **Ruban (Concepteur visuel)** .
+2. Dans la boîte de dialogue **Ajouter un nouvel élément** , sélectionnez **Ruban (Concepteur visuel)**.
 
 3. Remplacez le nom du nouveau ruban par **MyRibbon**, puis cliquez sur **Ajouter**.
 
@@ -108,7 +108,7 @@ ms.locfileid: "71255523"
 
 14. Définissez la propriété **étiquette** sur **masquer le volet Actions**.
 
-## <a name="BKMK_HideShowActionsPane"></a>Masquer et afficher les volets actions à l’aide des boutons de l’onglet personnalisé
+## <a name="hide-and-show-actions-panes-by-using-buttons-on-the-custom-tab"></a><a name="BKMK_HideShowActionsPane"></a> Masquer et afficher les volets actions à l’aide des boutons de l’onglet personnalisé
  La dernière étape consiste à ajouter le code qui répond à l'utilisateur. Ajoutez les gestionnaires d'événements pour les événements <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> des deux boutons et l'événement <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> du bouton bascule. Ajoutez le code aux gestionnaires d'événements pour permettre de masquer et d'afficher les volets Actions.
 
 ### <a name="to-hide-and-show-actions-panes-by-using-buttons-in-the-custom-tab"></a>Pour masquer et afficher des volets Actions à l'aide de boutons dans l'onglet personnalisé
@@ -156,15 +156,15 @@ ms.locfileid: "71255523"
 
 - Ajouter une interface utilisateur contextuelle à une personnalisation au niveau du document. Pour plus d’informations, consultez [vue d’ensemble du volet Actions](../vsto/actions-pane-overview.md).
 
-- Étendre un formulaire Microsoft Office standard ou personnalisé. Pour plus d’informations, consultez [Procédure pas à pas : Concevoir une zone](../vsto/walkthrough-designing-an-outlook-form-region.md)de formulaire Outlook.
+- Étendre un formulaire Microsoft Office standard ou personnalisé. Pour plus d’informations, consultez [procédure pas à pas : concevoir une zone de formulaire Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).
 
 ## <a name="see-also"></a>Voir aussi
 - [Accéder au ruban au moment de l’exécution](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Vue d’ensemble du ruban](../vsto/ribbon-overview.md)
 - [Concepteur de ruban](../vsto/ribbon-designer.md)
 - [Personnaliser un ruban pour Outlook](../vsto/customizing-a-ribbon-for-outlook.md)
-- [Guide pratique pour Prise en main de la personnalisation du ruban](../vsto/how-to-get-started-customizing-the-ribbon.md)
-- [Guide pratique pour Modifier la position d’un onglet sur le ruban](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
-- [Guide pratique pour Personnaliser un onglet intégré](../vsto/how-to-customize-a-built-in-tab.md)
-- [Guide pratique pour Ajouter des contrôles au mode Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)
+- [Comment : prendre en main la personnalisation du ruban](../vsto/how-to-get-started-customizing-the-ribbon.md)
+- [Comment : modifier la position d’un onglet sur le ruban](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
+- [Comment : personnaliser un onglet intégré](../vsto/how-to-customize-a-built-in-tab.md)
+- [Comment : ajouter des contrôles au mode Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)
 - [Vue d’ensemble du modèle objet de ruban](../vsto/ribbon-object-model-overview.md)

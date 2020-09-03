@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8ff5e620d4c53889afe17274364d6f92936025d3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672738"
 ---
 # <a name="list-disassembly-command"></a>Afficher le code machine, commande
@@ -41,15 +41,15 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
 
  /EndAddress : `expression` [ou]/e : `expression` facultatif. Adresse à laquelle le code machine doit s’arrêter.
 
- /codebytes : `yes`&#124; `no` [ou]/bytes : `yes`&#124; `no` [ou]/B : `yes`&#124; `no` facultatif. Spécifie si les octets de code doivent être affichés. La valeur par défaut est `no`.
+ /codebytes : `yes`&#124;`no` [ou]/bytes : `yes`&#124;`no` [ou]/b : `yes`&#124;`no` facultatif. Spécifie si les octets de code doivent être affichés. La valeur par défaut est `no`.
 
- /Source : `yes`&#124; `no` [ou]/s : `yes`&#124; `no` facultatif. Spécifie si le code source doit être affiché. La valeur par défaut est `no`.
+ /Source : `yes`&#124;`no` [ou]/s : `yes`&#124;`no` facultatif. Spécifie si le code source doit être affiché. La valeur par défaut est `no`.
 
- /symbolnames : `yes`&#124; `no` [ou]/names : `yes`&#124; `no` [ou]/N : `yes`&#124; `no` facultatif. Spécifie si les noms de symbole doivent être affichés. La valeur par défaut est `yes`.
+ /symbolnames : `yes`&#124;`no` [ou]/names : `yes`&#124;`no` [ou]/n : `yes`&#124;`no` facultatif. Spécifie si les noms de symbole doivent être affichés. La valeur par défaut est `yes`.
 
- [/linenumbers : `yes`&#124; `no`] Facultatif. Active l’affichage des numéros de ligne associés au code source. Le commutateur /source doit avoir la valeur `yes` pour utiliser le commutateur /linenumbers.
+ [/linenumbers : `yes`&#124;`no` ] facultatif. Active l’affichage des numéros de ligne associés au code source. Le commutateur /source doit avoir la valeur `yes` pour utiliser le commutateur /linenumbers.
 
-## <a name="example"></a>Exemples
+## <a name="example"></a> Exemple
 
 ```
 >Debug.ListDisassembly

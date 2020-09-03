@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d8b20552d29f5d649ddf669187632814986a388b
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85464106"
 ---
 # <a name="idiasymbolget_classparent"></a>IDiaSymbol::get_classParent
@@ -48,7 +48,7 @@ HRESULT get_classParent ( 
 |En-tête :|dia2.h|
 |Version :|DIA SDK v 7.0|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Les types de symboles qui peuvent être des parents de classe sont documentés dans la [hiérarchie de classes des types de symboles](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md).
 
 ## <a name="see-also"></a>Voir aussi
