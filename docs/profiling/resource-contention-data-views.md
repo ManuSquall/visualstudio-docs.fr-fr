@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: e30589a7c58a756a981ed8a690afe4b052aeaf0b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74771528"
 ---
 # <a name="resource-contention-data-views"></a>Vues de données de conflit de ressources
@@ -27,7 +27,7 @@ Cette section contient des informations de référence sur les vues et les rappo
 
  Affiche une chronologie graphique des données de profilage et liste les fonctions et les ressources qui ont participé aux événements les plus bloquants.
 
-- [Afficher l’arbre d’appel](../profiling/call-tree-view-contention-data.md)
+- [Vue Arborescence des appels](../profiling/call-tree-view-contention-data.md)
 
  Affiche une arborescence hiérarchique qui représente les chemins d’exécution et les données des conflits de ressources des fonctions lors de l’exécution du profilage.
 
@@ -35,7 +35,7 @@ Cette section contient des informations de référence sur les vues et les rappo
 
  Organise les données des conflits de threads et de ressources par module et liste les fonctions, les lignes de code source et les instructions qui étaient en cours d’exécution quand des événements bloquants se sont produits.
 
-- [Vue Appelant/Appelé - Données de conflit](../profiling/caller-callee-view-contention-data.md)
+- [Vue appelant/appelé-données de conflit](../profiling/caller-callee-view-contention-data.md)
 
  Liste les données de conflits de threads et de ressources d’une fonction sélectionnée, et des fonctions qui l’ont appelée et qui ont été appelées par celle-ci.
 
@@ -55,11 +55,11 @@ Cette section contient des informations de référence sur les vues et les rappo
 
  Liste les données de conflits de ressources par ressource bloquée.
 
-- [Vue Lignes](../profiling/lines-view-contention-data.md)
+- [Lignes, vue](../profiling/lines-view-contention-data.md)
 
  Liste les données de conflits de ressources par ligne de code source.
 
-- [Pointeurs d’instruction (IP), vue](../profiling/instruction-pointers-ips-view-contention-data.md)
+- [Pointeurs d'instruction (IP), vue](../profiling/instruction-pointers-ips-view-contention-data.md)
 
  Liste les conflits de ressources par instruction.
 

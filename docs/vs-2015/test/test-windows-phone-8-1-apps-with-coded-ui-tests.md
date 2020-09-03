@@ -9,10 +9,10 @@ caps.latest.revision: 31
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1f2ac13b62dcc522626fde92b1b29cac9873edec
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74301837"
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>Tester des applications Windows UWP et des applications Windows Phone 8.1 avec des tests codés de l’interface utilisateur
@@ -24,15 +24,15 @@ Utilisez cette procédure pas à pas afin de créer des tests de l’interface u
 
 1. Créer un projet pour une application Windows Phone vide à l’aide d’un modèle Visual C# ou Visual Basic.
 
-     ![Créer une application de Windows Phone](../test/media/cuit-phone-app-newproject.png "CUIT_Phone_App_NewProject")
+     ![Créer une application Windows Phone](../test/media/cuit-phone-app-newproject.png "CUIT_Phone_App_NewProject")
 
 2. Dans l’Explorateur de solutions, ouvrez MainPage.xaml. Dans la barre d’outils, faites glisser un contrôle bouton et un contrôle textbox sur l’aire de conception.
 
-     ![Ajouter contrôles à MainPage. Xaml](../test/media/cuit-phone-app-addcontrols.png "CUIT_Phone_App_AddControls")
+     ![Ajouter des contrôles à MainPage.xaml](../test/media/cuit-phone-app-addcontrols.png "CUIT_Phone_App_AddControls")
 
 3. Dans la fenêtre Propriétés, nommez le contrôle bouton.
 
-     ![Nommer le contrôle Button](../test/media/cuit-phone-namebutton.png "CUIT_Phone_NameButton")
+     ![Nom du contrôle button](../test/media/cuit-phone-namebutton.png "CUIT_Phone_NameButton")
 
 4. Nommez le contrôle textbox.
 
@@ -60,7 +60,7 @@ Utilisez cette procédure pas à pas afin de créer des tests de l’interface u
 
 6. Appuyez sur F5 pour exécuter votre application Windows Phone dans l’émulateur et vérifier si elle fonctionne.
 
-     ![Exécuter l’application Windows Phone](../test/media/cuit-phone-runapp.png "CUIt_Phone_RunApp")
+     ![Exécuter l'application Windows Phone](../test/media/cuit-phone-runapp.png "CUIt_Phone_RunApp")
 
 7. Quittez l’émulateur.
 
@@ -70,9 +70,9 @@ Utilisez cette procédure pas à pas afin de créer des tests de l’interface u
 
      ![Déployer l’application Windows Phone](../test/media/cuit-phone-deploy.png "CUIT_Phone_Deploy")
 
-     L'émulateur démarre. L’application est maintenant disponible pour les tests.
+     L’émulateur démarre. L’application est maintenant disponible pour les tests.
 
-     ![Application déployée sur l’émulateur](../test/media/cuit-phone-deployed.png "CUIT_Phone_Deployed")
+     ![Application déployée dans l'émulateur](../test/media/cuit-phone-deployed.png "CUIT_Phone_Deployed")
 
      Laissez l’émulateur en cours d’exécution pendant que vous créez votre test codé de l’interface utilisateur.
 
@@ -82,29 +82,29 @@ Utilisez cette procédure pas à pas afin de créer des tests de l’interface u
 
 1. Ajoutez un nouveau projet de test codé de l’interface utilisateur à la solution avec l’application Windows Phone.
 
-    ![Créer un test codé de l’interface utilisateur pour Windows Phone](../test/media/cuit-phone-newproject.png "CUIT_Phone_NewProject")
+    ![Créer un test codé d'interface utilisateur pour Windows Phone](../test/media/cuit-phone-newproject.png "CUIT_Phone_NewProject")
 
 2. Choisissez de modifier le mappage d’IU à l’aide de la croix.
 
-    ![Générer un test codé de l'&#45;interface utilisateur à l’aide de l’outil réticule.](../test/media/cuit-phone-howgencodedialog.png "CUIT_Phone_HowGenCodeDialog")
+    ![Générez un test codé de l’interface utilisateur à l’aide de Cross&#45;capillaire Tool.](../test/media/cuit-phone-howgencodedialog.png "CUIT_Phone_HowGenCodeDialog")
 
 3. Utilisez la croix pour sélectionner l’application, puis copiez la valeur de la propriété **AutomationId** de l’application, qui sera utilisée ultérieurement pour démarrer l’application lors du test.
 
-    ![Copier la valeur de AutomationId de l’application](../test/media/cuit-phone-getautomationid.png "CUIT_Phone_GetAutomationId")
+    ![Copier la valeur AutomationId de l'application](../test/media/cuit-phone-getautomationid.png "CUIT_Phone_GetAutomationId")
 
 4. Dans l’émulateur, démarrez l’application et utilisez la croix pour sélectionner le contrôle bouton. Ensuite, ajoutez le contrôle bouton au mappage de contrôle d’IU.
 
-    ![Utiliser l’outil&#45;réticule pour mapper les contrôles](../test/media/cuit-phone-mapbuttoncontrol.png "CUIT_Phone_MapButtonControl")
+    ![Utiliser l’outil réticule&#45;pour mapper les contrôles](../test/media/cuit-phone-mapbuttoncontrol.png "CUIT_Phone_MapButtonControl")
 
 5. Pour ajouter le contrôle textbox au mappage de contrôle d’interface utilisateur, répétez l’étape précédente.
 
-    ![Utiliser l’outil&#45;réticule et le contrôle TextBox de la carte](../test/media/cuit-phone-maptextboxcontrol.png "CUIT_Phone_MapTextBoxControl")
+    ![Utiliser l’outil réticule&#45;et le contrôle TextBox de la carte](../test/media/cuit-phone-maptextboxcontrol.png "CUIT_Phone_MapTextBoxControl")
 
 6. Générez le code pour créer le code pour les modifications apportées au mappage de contrôle d’interface utilisateur.
 
     ![Générer du code à partir du générateur](../test/media/cuit-phone-generatecode.png "CUIT_Phone_GenerateCode")
 
-7. Utilisez la croix pour sélectionner le contrôle textbox, puis sélectionnez la propriété **Texte**.
+7. Utilisez la croix pour sélectionner le contrôle textbox, puis sélectionnez la propriété **Texte** .
 
     ![Sélectionner la propriété Text](../test/media/cuit-phone-textproperty.png "CUIT_Phone_TextProperty")
 
@@ -114,9 +114,9 @@ Utilisez cette procédure pas à pas afin de créer des tests de l’interface u
 
 9. Ajoutez et générez le code pour la méthode assert.
 
-     ![Générer le code pour l’assertion](../test/media/cuit-phone-generatecodeassertion.png "CUIT_Phone_GenerateCodeAssertion")
+     ![Générer du code pour l'assertion](../test/media/cuit-phone-generatecodeassertion.png "CUIT_Phone_GenerateCodeAssertion")
 
-10. **Visual C#**
+10. **Visual C #**
 
      Dans l’Explorateur de solutions, ouvrez le fichier UIMap.Designer.cs pour afficher le code que vous venez d’ajouter pour la méthode assert et les contrôles.
 
@@ -127,7 +127,7 @@ Utilisez cette procédure pas à pas afin de créer des tests de l’interface u
     > [!WARNING]
     > Ne modifiez pas le fichier UIMap.Designer.cs ou UIMap.Designer.vb directement. Si vous le faites, les modifications apportées au fichier seront remplacées à chaque génération du test.
 
-     **Assert, méthode**
+     **Méthode Assert**
 
     ```csharp
     public void AssertMethod1()
@@ -289,17 +289,17 @@ Utilisez cette procédure pas à pas afin de créer des tests de l’interface u
 
 1. Générez votre test et exécutez-le à l’aide de l’Explorateur de tests.
 
-     ![Générer et exécuter le test à l’aide de l’Explorateur de tests](../test/media/cuit-phone-runtestexplorer.png "CUIT_Phone_RunTestExplorer")
+     ![Générer et exécuter le test à l'aide de l'Explorateur de tests](../test/media/cuit-phone-runtestexplorer.png "CUIT_Phone_RunTestExplorer")
 
      L’application Windows Phone démarre, l’action d’appui sur le bouton est exécutée et la propriété Texte du contrôle textbox est remplie et validée à l’aide de la méthode assert.
 
-     ![Exécution du test RDMA Phone](../test/media/cuit-phone-runtestexplorerrunning.png "CUIT_Phone_RunTestExplorerRunning")
+     ![Exécution d'un test Windows Phone](../test/media/cuit-phone-runtestexplorerrunning.png "CUIT_Phone_RunTestExplorerRunning")
 
      Une fois le test terminé, l’Explorateur de tests confirme que le test a réussi.
 
-     ![Résultats de l’Explorateur de tests](../test/media/cuit-phone-runtestexplorerresults.png "CUIT_Phone_RunTestExplorerResults")
+     ![Résultats de l'Explorateur de tests](../test/media/cuit-phone-runtestexplorerresults.png "CUIT_Phone_RunTestExplorerResults")
 
-## <a name="TestingPhoneAppsCodedUI_DataDriven"></a> Utiliser les tests codés de l’interface utilisateur pilotés par les données sur des applications Windows Phone
+## <a name="use-data-driven-coded-ui-tests-on-windows-phone-apps"></a><a name="TestingPhoneAppsCodedUI_DataDriven"></a> Utiliser des tests codés de l’interface utilisateur pilotés par les données sur les applications Windows Phone
  Pour tester différentes conditions, un test codé de l’interface utilisateur peut être exécuté plusieurs fois avec différents jeux de données.
 
  Les tests codés de l’interface utilisateur pilotés par les données pour Windows Phone sont définis à l’aide de l’attribut DataRow sur une méthode de test. Dans l’exemple suivant, x et y utilisent les valeurs 1 et 2 pour la première itération et -1 et -2 pour la seconde itération du test.
@@ -312,15 +312,15 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 
 ```
 
-## <a name="q--a"></a>Q et R
+## <a name="q--a"></a>Questions et réponses
 
 ### <a name="q-do-i-have-to-deploy-the-windows-phone-app-in-the-emulator-in-order-to-map-ui-controls"></a>Q : suis-je obligé de déployer l’application Windows Phone dans l’émulateur pour mapper des contrôles d’interface utilisateur ?
  **R**: oui, le générateur de test codé de l’interface utilisateur exige qu’un émulateur soit en cours d’exécution et que l’application soit déployée dessus. Sinon, il génère un message d’erreur signalant qu’aucun émulateur en cours d’exécution n’a été détecté.
 
-### <a name="TestingPhoneAppsCodedUI_EmulatorDevice"></a> Q : les tests peuvent-ils être exécutés uniquement sur l’émulateur, ou puis-je aussi utiliser un appareil physique ?
- **R**: les deux options sont prises en charge. Vous pouvez modifier la cible d’exécution des tests en changeant le type d’émulateur ou en sélectionnant Périphérique dans la barre d’outils Périphérique. Si vous sélectionnez Périphérique, un périphérique Phone Blue doit être connecté à l’un des ports USB de l’ordinateur.
+### <a name="q-can-tests-be-executed-on-the-emulator-only-or-can-i-also-use-a-physical-device"></a><a name="TestingPhoneAppsCodedUI_EmulatorDevice"></a> Q : les tests peuvent-ils être exécutés uniquement sur l’émulateur, ou puis-je aussi utiliser un appareil physique ?
+ **R**: les deux options sont prises en charge. Vous pouvez modifier la cible d’exécution des tests en changeant le type d’émulateur ou en sélectionnant Périphérique dans la barre d’outils Périphérique. Si vous sélectionnez Périphérique, un appareil Phone Blue doit être connecté à l’un des ports USB de l’ordinateur.
 
- ![Sélectionnez la version de l’émulateur ou l’appareil physique](../test/media/cuit-phone-testtarget.png "CUIT_Phone_TestTarget")
+ ![Sélectionner la version de l'émulateur ou l'appareil physique](../test/media/cuit-phone-testtarget.png "CUIT_Phone_TestTarget")
 
 ### <a name="q-why-dont-i-see-the-option-to-record-my-coded-ui-test-in-the-generate-code-for-a-coded-ui-test-dialog"></a>Q : pourquoi l’option d’enregistrement de mon test codé de l’interface utilisateur ne figure-t-elle pas dans la boîte de dialogue Générer le code pour le test codé de l’interface utilisateur ?
  **R**: l’option d’enregistrement n’est pas prise en charge pour les applications Windows Phone.
@@ -348,10 +348,10 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
  **R**: non, le générateur ne peut mapper des éléments d’interface utilisateur que si votre application a été déployée sur l’émulateur.
 
 ### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>Q : pourquoi ne puis-je pas modifier le code du fichier UIMap.Designer ?
- **R**: toutes les modifications de code que vous effectuez dans le fichier UIMapDesigner.cs sont remplacées chaque fois que vous générez du code dans UIMap - Générateur de test codé de l’interface utilisateur. Si vous devez modifier une méthode enregistrée, vous devez la copier dans le fichier UIMap.cs et la renommer. Le fichier UIMap.cs peut être utilisé pour remplacer les méthodes et les propriétés dans le fichier UIMapDesigner.cs. Vous devez supprimer la référence à la méthode d’origine dans le fichier Coded UITest.cs et la remplacer par le nom de la méthode renommée.
+ **R**: Toutes les modifications de code que vous effectuez dans le fichier UIMapDesigner.cs sont remplacées chaque fois que vous générez du code dans UIMap - Générateur de test codé de l’interface utilisateur. Si vous devez modifier une méthode enregistrée, vous devez la copier dans le fichier UIMap.cs et la renommer. Le fichier UIMap.cs peut être utilisé pour remplacer les méthodes et les propriétés dans le fichier UIMapDesigner.cs. Vous devez supprimer la référence à la méthode d’origine dans le fichier Coded UITest.cs et la remplacer par le nom de la méthode renommée.
 
 ### <a name="q-can-i-run-a-coded-ui-test-on-my-windows-phone-app-from-the-command-line"></a>Q : puis-je exécuter un test codé de l’interface utilisateur sur mon application Windows Phone à partir de la ligne de commande ?
- **R**: Oui, vous pouvez utiliser un fichier runsettings visant à spécifier l’appareil cible pour l’exécution du test. Exemple :
+ **R**: Oui, vous pouvez utiliser un fichier runsettings pour spécifier le périphérique cible pour l’exécution du test. Par exemple :
 
  **vstest.console.exe "pathToYourCodedUITestDll" /settings:devicetarget.runsettings**
 
@@ -372,13 +372,13 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 ### <a name="q-what-are-the-differences-between-coded-ui-tests-for-xaml-based-windows-store-apps-and-windows-phone-apps"></a>Q : quelles sont les différences entre les tests codés de l’interface utilisateur pour applications du Windows Store en XAML et les applications Windows Phone ?
  **R**: Il existe quelques différences majeures :
 
-|Composant|Applications du Windows Store|Applications Windows Phone|
+|Fonctionnalité|Applications du Windows Store|Applications Windows Phone|
 |-------------|------------------------|------------------------|
-|Cible d’exécution des tests|Ordinateur local ou distant. Vous pouvez spécifier des ordinateurs distants quand vous utilisez un cas de test automatisé pour exécuter des tests. Consultez [Automatiser un cas de test dans Microsoft Test Manager](https://msdn.microsoft.com/library/4e02568b-9cde-47cc-b41c-82726c177e42).|Émulateur ou périphérique. Voir [Q : les tests peuvent-ils être exécutés uniquement sur l’émulateur, ou puis-je aussi utiliser un appareil physique ?](#TestingPhoneAppsCodedUI_EmulatorDevice) dans cette rubrique.|
+|Cible d’exécution des tests|Ordinateur local ou distant. Vous pouvez spécifier des ordinateurs distants quand vous utilisez un cas de test automatisé pour exécuter des tests. Consultez [Automatiser un cas de test dans Microsoft Test Manager](https://msdn.microsoft.com/library/4e02568b-9cde-47cc-b41c-82726c177e42).|Émulateur ou périphérique. Voir [Q : les tests peuvent-ils être exécutés uniquement sur l’émulateur, ou puis-je aussi utiliser un périphérique physique ?](#TestingPhoneAppsCodedUI_EmulatorDevice) dans cette rubrique.|
 |Exécution à partir de la ligne de commande|Fichier de paramètres non nécessaire pour spécifier la cible.|Fichier runsettings nécessaire pour spécifier la cible.|
 |Classes spécialisées pour les contrôles d’environnement|[DirectUIControl](/previous-versions/dn248208(v=vs.140))|<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl>|
-|Contrôle WebView dans une application XAML|Pris en charge si vous utilisez des classes spécialisées HTML* pour interagir avec des éléments HTML. Consultez <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>.|Non prise en charge.|
-|Exécution de tests automatisés à partir de MTM|Pris en charge.|Non prise en charge.|
+|Contrôle WebView dans une application XAML|Pris en charge si vous utilisez des classes spécialisées HTML* pour interagir avec des éléments HTML. Consultez <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>.|Non pris en charge.|
+|Exécution de tests automatisés à partir de MTM|Pris en charge.|Non pris en charge.|
 |Tests pilotés par les données|Pour plus d’informations sur l’utilisation de sources de données externes et l’utilisation de l’attribut DataSource sur une méthode de test, voir [Tests pilotés par les données](../test/creating-a-data-driven-coded-ui-test.md) .|Les données sont spécifiées inline, à l’aide de l’attribut DataRow sur une méthode de test. Consultez [Utiliser les tests codés de l’interface utilisateur pilotés par les données sur des applications Windows Phone](#TestingPhoneAppsCodedUI_DataDriven) dans cette rubrique.|
 
 ## <a name="external-resources"></a>Ressources externes

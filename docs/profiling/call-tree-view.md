@@ -17,10 +17,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 0b932d5f9e4a178c94f3e490c66cec64648ce4f6
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74773333"
 ---
 # <a name="call-tree-view"></a>Mode Arborescence des appels
@@ -41,15 +41,15 @@ La vue Arborescence des appels affiche les chemins d’exécution de la fonction
 
  Pour plus d’informations sur les définitions des colonnes dans la vue Arborescence des appels, consultez les rubriques suivantes :
 
-- [Mode Arborescence des appels](../profiling/call-tree-view-sampling-data.md)
+- [Vue arborescence des appels](../profiling/call-tree-view-sampling-data.md)
 
-- [Mode Arborescence des appels](../profiling/call-tree-view-instrumentation-data.md)
+- [Vue arborescence des appels](../profiling/call-tree-view-instrumentation-data.md)
 
-- [Vue d’arbre d’appel - échantillonnage](../profiling/call-tree-view-dotnet-memory-sampling-data.md)
+- [Vue arborescence des appels-échantillonnage](../profiling/call-tree-view-dotnet-memory-sampling-data.md)
 
-- [Mode Arborescence des appels](../profiling/call-tree-view-contention-data.md)
+- [Vue arborescence des appels](../profiling/call-tree-view-contention-data.md)
 
 ## <a name="see-also"></a>Voir aussi
-- [Vues du rapport des performances](../profiling/performance-report-views.md)
-- [Comprendre les valeurs de données d’instrumentation](../profiling/understanding-instrumentation-data-values.md)
-- [Comprendre les valeurs des données d’échantillonnage](../profiling/understanding-sampling-data-values.md)
+- [Vues des rapports de performances](../profiling/performance-report-views.md)
+- [Présentation des valeurs de données d’instrumentation](../profiling/understanding-instrumentation-data-values.md)
+- [Présentation des valeurs de données d’échantillonnage](../profiling/understanding-sampling-data-values.md)

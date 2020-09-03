@@ -13,10 +13,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: e7f331536de264186bc2977cc4acaaab02147e13
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76115220"
 ---
 # <a name="automatically-apply-product-keys-when-deploying-visual-studio"></a>Appliquer automatiquement des clés de produit lors du déploiement de Visual Studio
@@ -100,11 +100,11 @@ Si `StorePID.exe` a correctement appliqué la clé de produit, la valeur 0 est 
 | `PID_ACTION_NOUPGRADE`    | 6    |
 
 > [!NOTE]
-> Lorsque vous exécutez une instance virtuelle de Visual Studio, assurez-vous que vous virtualisez également le dossier AppData local et le registre. Pour dépanner les `C:\Program Files (x86)\Microsoft Visual Studio\<version>\Common7\IDE\DDConfigCA.exe`instances virtuelles, exécutez .  
+> Quand vous exécutez une instance virtuelle de Visual Studio, assurez-vous également de virtualiser le dossier AppData Local et le registre. Pour résoudre les problèmes liés aux instances virtuelles, exécutez `C:\Program Files (x86)\Microsoft Visual Studio\<version>\Common7\IDE\DDConfigCA.exe` .  
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Voir aussi
 
 * [Installer Visual Studio](../install/install-visual-studio.md)
-* [Créer une installation hors ligne de Visual Studio](../install/create-an-offline-installation-of-visual-studio.md)
+* [Créer une installation hors connexion de Visual Studio](../install/create-an-offline-installation-of-visual-studio.md)

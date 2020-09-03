@@ -16,10 +16,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 25dbb0beb600f7f043ae006e09ac48b9b64d613b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74773979"
 ---
 # <a name="lines-view"></a>Lignes, vue
@@ -44,6 +44,6 @@ La vue Lignes est disponible uniquement pour les données du profileur collecté
 - Le caractère de la ligne source au niveau duquel l’instruction se termine.
 
 ## <a name="see-also"></a>Voir aussi
-- [Vue Lignes](../profiling/lines-view-sampling-data.md)
-- [Lines View - échantillonnage](../profiling/lines-view-dotnet-memory-sampling-data.md)
-- [Vue Lignes](../profiling/lines-view-contention-data.md)
+- [Lignes, vue](../profiling/lines-view-sampling-data.md)
+- [Vue lignes-échantillonnage](../profiling/lines-view-dotnet-memory-sampling-data.md)
+- [Lignes, vue](../profiling/lines-view-contention-data.md)

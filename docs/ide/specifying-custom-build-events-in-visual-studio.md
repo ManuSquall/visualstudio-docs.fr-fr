@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fda60ffb97ecb44bd4a881cb42e4d9199cc958b8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76115343"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>Spécifier des événements de build personnalisés
@@ -26,7 +26,7 @@ Pour obtenir des informations spécifiques sur le langage de programmation que v
 
 - Visual Basic--[Guide pratique pour spécifier des événements de build (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
 
-- C et F---[Comment : Spécifier les événements de construction (C)](../ide/how-to-specify-build-events-csharp.md).
+- C# et F #--[Guide pratique pour spécifier des événements de build (c#)](../ide/how-to-specify-build-events-csharp.md).
 
 - Visual C++--[Spécifier des événements de build](/cpp/build/specifying-build-events).
 
@@ -50,14 +50,14 @@ Pour de meilleurs résultats, suivez ces conseils de mise en forme :
 
 - Incluez des caractères génériques si nécessaire.
 
-   Exemple `for %I in (*.txt *.doc *.html) do copy %I c:\`: *mydirectoire*`\`
+   Exemple : `for %I in (*.txt *.doc *.html) do copy %I c:\` *mydirectory*`\`
 
   > [!NOTE]
   > `%I` dans le code ci-dessus doit être `%%I` dans les scripts de commandes.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Compilation et génération](../ide/compiling-and-building-in-visual-studio.md)
-- [Boîte de dialogue de ligne de commande événement/post-construction d’événement](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
-- [Personnages spéciaux MSBuild](../msbuild/msbuild-special-characters.md)
-- [Procédure pas à pas : générer une application](../ide/walkthrough-building-an-application.md)
+- [Compiler et générer](../ide/compiling-and-building-in-visual-studio.md)
+- [Ligne de commande de l’événement pré-build/après génération (boîte de dialogue)](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
+- [Caractères spéciaux MSBuild](../msbuild/msbuild-special-characters.md)
+- [Procédure pas à pas : Générer une application](../ide/walkthrough-building-an-application.md)

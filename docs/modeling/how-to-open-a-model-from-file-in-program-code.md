@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 19cec066d66b08d3f02f3885908722aad047172b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532481"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Comment : ouvrir un modèle depuis un fichier dans le code de programme
@@ -33,7 +33,7 @@ Définissez la version **cible de .NET Framework** de votre projet d’applicati
 > [!NOTE]
 > La version cible de .NET Framework ne doit pas être **.NET Framework 4 profil client**.
 
-## <a name="references"></a>Références
+## <a name="references"></a>References
 
 Ajoutez ces références à votre projet d’application Visual Studio :
 

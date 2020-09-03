@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 52915f0bac2bd172daf909541ecfa86396d90a5d
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76115198"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Propriétés de stockage calculées et personnalisées
@@ -25,8 +25,8 @@ Toutes les propriétés de domaine dans un langage spécifique à un domaine (DS
 |Genre de propriété de domaine|Description|
 |-|-|
 |**Standard** (par défaut)|Propriété de domaine enregistrée dans le *magasin* et sérialisée dans un fichier.|
-|**Calculé**|Propriété de domaine en lecture seule qui n’est pas enregistrée dans le magasin, mais qui est calculée à partir d’autres valeurs.<br /><br /> Par exemple, `Person.Age` peut être calculé à partir de `Person.BirthDate`.<br /><br /> Vous devez fournir le code qui effectue le calcul. En règle générale, vous calculez la valeur à partir d’autres propriétés de domaine. Toutefois, vous pouvez également utiliser des ressources externes.|
-|**Stockage personnalisé**|Propriété de domaine qui n’est pas enregistrée directement dans le magasin, mais qui peut être à la fois obtenue et définie.<br /><br /> Vous devez fournir les méthodes qui obtiennent et définissent la valeur.<br /><br /> Par exemple, `Person.FullAddress` peut être stocké dans `Person.StreetAddress`, `Person.City`et `Person.PostalCode`.<br /><br /> Vous pouvez également accéder à des ressources externes, par exemple pour obtenir et définir des valeurs à partir d’une base de données.<br /><br /> Votre code ne doit pas définir de valeurs dans le magasin lorsque `Store.InUndoRedoOrRollback` a la valeur true. Consultez [transactions et méthodes setter personnalisées](#setters).|
+|**Calculées**|Propriété de domaine en lecture seule qui n’est pas enregistrée dans le magasin, mais qui est calculée à partir d’autres valeurs.<br /><br /> Par exemple, `Person.Age` peut être calculé à partir de `Person.BirthDate` .<br /><br /> Vous devez fournir le code qui effectue le calcul. En règle générale, vous calculez la valeur à partir d’autres propriétés de domaine. Toutefois, vous pouvez également utiliser des ressources externes.|
+|**Stockage personnalisé**|Propriété de domaine qui n’est pas enregistrée directement dans le magasin, mais qui peut être à la fois obtenue et définie.<br /><br /> Vous devez fournir les méthodes qui obtiennent et définissent la valeur.<br /><br /> Par exemple, `Person.FullAddress` peut être stocké dans `Person.StreetAddress` , `Person.City` et `Person.PostalCode` .<br /><br /> Vous pouvez également accéder à des ressources externes, par exemple pour obtenir et définir des valeurs à partir d’une base de données.<br /><br /> Votre code ne doit pas définir de valeurs dans le magasin lorsque la `Store.InUndoRedoOrRollback` propriété a la valeur true. Consultez [transactions et méthodes setter personnalisées](#setters).|
 
 ## <a name="providing-the-code-for-a-calculated-or-custom-storage-property"></a>Fourniture du code pour une propriété de stockage calculée ou personnalisée
  Si vous définissez le type d’une propriété de domaine sur stockage calculé ou personnalisé, vous devez fournir des méthodes d’accès. Lorsque vous générez votre solution, un rapport d’erreurs vous indique ce qui est requis.
@@ -41,7 +41,7 @@ Toutes les propriétés de domaine dans un langage spécifique à un domaine (DS
 
 3. Cliquez sur **transformer tous les modèles** dans la barre d’outils de **Explorateur de solutions**.
 
-4. Dans le menu **Générer** , cliquez sur **Générer la solution**.
+4. Dans le menu **Générer**, cliquez sur **Générer la solution**.
 
      Vous recevez le message d’erreur suivant : «*YourClass* ne contient pas de définition pour obtenir*YourProperty*».
 
@@ -52,11 +52,11 @@ Toutes les propriétés de domaine dans un langage spécifique à un domaine (DS
     > [!NOTE]
     > Ce fichier est généré à partir de DslDefinition. DSL. Si vous modifiez ce fichier, vos modifications seront perdues la prochaine fois que vous cliquerez sur **transformer tous les modèles**. Au lieu de cela, ajoutez la méthode requise dans un fichier séparé.
 
-6. Créez ou ouvrez un fichier de classe dans un dossier séparé, par exemple CustomCode\\*YourDomainClass*. cs.
+6. Créez ou ouvrez un fichier de classe dans un dossier séparé, par exemple CustomCode \\ *YourDomainClass*. cs.
 
      Assurez-vous que l’espace de noms est le même que dans le code généré.
 
-7. Dans le fichier de classe, écrivez une implémentation partielle de la classe de domaine. Dans la classe, écrivez une définition pour la méthode `Get` manquante qui ressemble à l’exemple suivant :
+7. Dans le fichier de classe, écrivez une implémentation partielle de la classe de domaine. Dans la classe, écrivez une définition pour la méthode manquante `Get` qui ressemble à l’exemple suivant :
 
     ```
     namespace Company.FamilyTree
@@ -66,7 +66,7 @@ Toutes les propriétés de domaine dans un langage spécifique à un domaine (DS
     }  }
     ```
 
-8. Si vous définissez **type** sur **stockage personnalisé**, vous devrez également fournir une méthode de `Set`. Par exemple :
+8. Si vous définissez **type** sur **stockage personnalisé**, vous devrez également fournir une `Set` méthode. Par exemple :
 
     ```
     void SetAgeValue(int value)
@@ -75,13 +75,13 @@ Toutes les propriétés de domaine dans un langage spécifique à un domaine (DS
             System.DateTime.Today.Year - value; }
     ```
 
-     Votre code ne doit pas définir de valeurs dans le magasin lorsque `Store.InUndoRedoOrRollback` a la valeur true. Consultez [transactions et méthodes setter personnalisées](#setters).
+     Votre code ne doit pas définir de valeurs dans le magasin lorsque la `Store.InUndoRedoOrRollback` propriété a la valeur true. Consultez [transactions et méthodes setter personnalisées](#setters).
 
-9. Générez et exécutez la solution.
+9. Créez et exécutez la solution.
 
 10. Testez la propriété. Veillez à essayer les opérations d' **annulation** et de **rétablissement**.
 
-## <a name="setters"></a>Transactions et méthodes setter personnalisées
+## <a name="transactions-and-custom-setters"></a><a name="setters"></a> Transactions et méthodes setter personnalisées
  Dans la méthode Set de la propriété de stockage personnalisé, il n’est pas nécessaire d’ouvrir une transaction, car la méthode est généralement appelée à l’intérieur d’une transaction active.
 
  Toutefois, la méthode Set peut également être appelée si l’utilisateur appelle Undo ou Redo, ou si une transaction est en cours de restauration. Lorsque <xref:Microsoft.VisualStudio.Modeling.Store.InUndoRedoOrRollback%2A> a la valeur true, votre méthode Set doit se comporter comme suit :

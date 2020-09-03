@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointRequest3::GetRequestInfo2 Microsoft Docs
+title: 'IDebugBreakpointRequest3 :: GetRequestInfo2 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f5febf664da9cd69dbd88b70056d9eac953bf581
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734839"
 ---
 # <a name="idebugbreakpointrequest3getrequestinfo2"></a>IDebugBreakpointRequest3::GetRequestInfo2
-Cette méthode obtient les informations de demande de point d’arrêt qui décrit cette demande de point d’arrêt.
+Cette méthode obtient les informations de demande de point d’arrêt qui décrivent cette demande de point d’arrêt.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -43,16 +43,16 @@ int GetRequestInfo2(
 
 ## <a name="parameters"></a>Paramètres
 `dwFields`\
-[dans] Une combinaison de drapeaux de [l’BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) énumération qui `pBPRequestInfo` déterminent quels champs de sont à remplir.
+dans Combinaison d’indicateurs de l’énumération [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) qui détermine les champs de `pBPRequestInfo` à remplir.
 
 `bBPRequestInfo`\
-[out] La [structure BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) à remplir.
+à Structure [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) à remplir.
 
-## <a name="return-value"></a>Valeur de retour
- En cas `S_OK`de succès, les retours; autrement, renvoie le code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` ; sinon, retourne le code d’erreur.
 
 ## <a name="remarks"></a>Notes
- Il y a plus d’informations dans cette demande que ce qui est retourné de la méthode [GetRequestInfo.](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)
+ Cette demande contient plus d’informations que celles retournées par la méthode [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) .
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugBreakpointRequest3](../../../extensibility/debugger/reference/idebugbreakpointrequest3.md)

@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 824feee64f928dc837a379aeb539daaa5ba0d1db
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905588"
 ---
 # <a name="how-to-use-the-activity-log"></a>Procédure : utiliser le journal d’activité
@@ -38,7 +38,7 @@ Les VSPackages peuvent écrire des messages dans le journal d’activité. Cette
         "Called for: {0}", this.ToString()));
     ```
 
-     Ce code obtient le <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> service et le convertit en une <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interface. <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog.LogEntry%2A>écrit une entrée d’information dans le journal d’activité à l’aide du contexte culturel actuel.
+     Ce code obtient le <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> service et le convertit en une <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interface. <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog.LogEntry%2A> écrit une entrée d’information dans le journal d’activité à l’aide du contexte culturel actuel.
 
 2. Lorsque le VSPackage est chargé (généralement lorsqu’une commande est appelée ou qu’une fenêtre est ouverte), le texte est écrit dans le journal d’activité.
 

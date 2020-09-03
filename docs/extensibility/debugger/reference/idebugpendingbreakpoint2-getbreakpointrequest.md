@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::GetBreakpointRequest ( Microsoft Docs
+title: 'IDebugPendingBreakpoint2 :: GetBreakpointRequest | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5440db69a3ceb763fb3e64e07d04a1e4f67f822a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725817"
 ---
 # <a name="idebugpendingbreakpoint2getbreakpointrequest"></a>IDebugPendingBreakpoint2::GetBreakpointRequest
-Obtient la demande de point d’arrêt qui a été utilisé pour créer ce point d’arrêt en attente.
+Obtient la demande de point d’arrêt qui a été utilisée pour créer ce point d’arrêt en attente.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -42,9 +42,9 @@ int GetBreakpointRequest( 
 
 ## <a name="parameters"></a>Paramètres
 `ppBPRequest`\
-[out] Retourne un objet [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) représentant la demande de point d’arrêt qui a été utilisée pour créer ce point d’arrêt en attente.
+à Retourne un objet [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) représentant la demande de point d’arrêt qui a été utilisée pour créer ce point d’arrêt en attente.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Retourne `E_BP_DELETED` si le point d’arrêt a été supprimé.
 
 ## <a name="see-also"></a>Voir aussi

@@ -9,10 +9,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 64b69ba926e3c978efa60bd9946da94d846c383f
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288401"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Guide pratique pour analyser l’activité des utilisateurs virtuels lors d’un test de charge à l’aide du graphique d’activités des utilisateurs virtuels
@@ -57,7 +57,7 @@ Les procédures suivantes montrent comment consulter le **graphique d'activités
 
    - **Réseau**
 
-   - **Heure de Début**
+   - **Start Time**
 
    - **Durée**
 
@@ -99,7 +99,7 @@ Les procédures suivantes montrent comment consulter le **graphique d'activités
    - **Afficher les résultats avec des erreurs** Affiche les résultats comportant des erreurs pouvant être utiles au débogage.
 
      > [!NOTE]
-     > La liste des types d’erreurs répertoriés sous le nœud **afficher les résultats avec des erreurs** peut être examinée en cliquant sur le bouton **tables** dans la barre d’outils de la **visionneuse de résultats des tests performances de site Web** . Pour plus d’informations, consultez [analyser les résultats et les erreurs des tests de charge dans la vue tables](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+     > La liste des types d’erreurs répertoriés sous le nœud **afficher les résultats avec des erreurs** peut être examinée en cliquant sur le bouton **tables** dans la barre d’outils de la **visionneuse de résultats des tests performances de site Web** . Pour plus d’informations, consultez  [analyser les résultats et les erreurs des tests de charge dans la vue tables](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
      Le **graphique d'activités des utilisateurs virtuels** est mis à jour en conséquence.
 

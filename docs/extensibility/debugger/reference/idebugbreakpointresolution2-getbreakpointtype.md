@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointResolution2::GetBreakpointType ( Microsoft Docs
+title: 'IDebugBreakpointResolution2 :: GetBreakpointType | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 2949366eeb3e79a732e94a4a8f8e9912048c6452
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734808"
 ---
 # <a name="idebugbreakpointresolution2getbreakpointtype"></a>IDebugBreakpointResolution2::GetBreakpointType
-Obtient le type de point d’arrêt représenté par cette résolution.
+Obtient le type du point d’arrêt représenté par cette résolution.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,16 +41,16 @@ int GetBreakpointType( 
 
 ## <a name="parameters"></a>Paramètres
 `pBPType`\
-[out] Retourne une valeur de [l’énumération BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) qui spécifie le type de ce point d’arrêt.
+à Retourne une valeur de l’énumération [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) qui spécifie le type de ce point d’arrêt.
 
-## <a name="return-value"></a>Valeur de retour
-En cas `S_OK`de succès, les retours; renvoie autrement un code d’erreur. Retourne E_FAIL si le `bpResLocation` champ dans la structure [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) associée n’est pas valide.
+## <a name="return-value"></a>Valeur renvoyée
+En cas de réussite, retourne `S_OK` ; sinon, retourne un code d’erreur. Retourne E_FAIL si le `bpResLocation` champ de la structure de [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) associée n’est pas valide.
 
 ## <a name="remarks"></a>Notes
 Le point d’arrêt peut être un code ou un point d’arrêt de données, par exemple.
 
 ## <a name="example"></a>Exemple
-L’exemple suivant montre comment implémenter cette méthode pour un objet simple `CDebugBreakpointResolution` qui expose [l’interface IDebugBreakpointResolution2.](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)
+L’exemple suivant montre comment implémenter cette méthode pour un `CDebugBreakpointResolution` objet simple qui expose l’interface [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) .
 
 ```
 HRESULT CDebugBreakpointResolution::GetBreakpointType(BP_TYPE* pBPType)

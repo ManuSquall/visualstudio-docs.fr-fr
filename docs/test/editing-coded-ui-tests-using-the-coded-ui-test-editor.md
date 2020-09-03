@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: d6c2fcf3d8807e9095abc9546e8bf1e39aecb8ea
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288726"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>Modifier des tests codés de l’interface utilisateur à l’aide de l’éditeur de test codé de l’interface utilisateur
@@ -125,7 +125,7 @@ Une fois que vous avez terminé de fractionner la méthode, enregistrez les modi
 
 - Vous pouvez renommer la nouvelle méthode. Sélectionnez-le dans le volet **actions d’interface utilisateur** et choisissez le bouton **Renommer** dans la barre d’outils de l’éditeur de test codé de l’interface utilisateur.
 
-   -ou-
+   - ou -
 
    Ouvrez le menu contextuel de la nouvelle méthode de test et choisissez **Renommer**.
 

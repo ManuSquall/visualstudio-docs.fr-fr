@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5d9e22200a63544b4539f7bf78c48d5711974776
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85287491"
 ---
 # <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>Guide pratique pour spécifier les agents de test à utiliser dans les scénarios de test de charge
@@ -39,7 +39,7 @@ Pour plus d’informations, consultez [Contrôleurs de test et agents de test](c
 
 Il existe une autre raison selon laquelle une partie des agents peuvent comporter des logiciels installés dont la présence est obligatoire pour un scénario particulier.
 
-Vous pouvez contrôler la sélection des agents pour une série de tests donnée à l'aide de rôles dans les paramètres de test. Pour plus d’informations, consultez [collecter des informations de diagnostic à l’aide de paramètres de test](../test/collect-diagnostic-information-using-test-settings.md).
+Vous pouvez contrôler la sélection des agents pour une série de tests donnée à l'aide de rôles dans les paramètres de test. Pour plus d’informations, consultez  [collecter des informations de diagnostic à l’aide de paramètres de test](../test/collect-diagnostic-information-using-test-settings.md).
 
 Si l'utilisation de l'UC d'un ordinateur agent de test est supérieure à 75 % ou si la mémoire physique disponible de cet ordinateur est inférieure à 10 %, ajoutez des agents à votre test de charge afin de garantir que l'ordinateur agent ne se transforme pas en goulot d'étranglement dans votre test de charge.
 

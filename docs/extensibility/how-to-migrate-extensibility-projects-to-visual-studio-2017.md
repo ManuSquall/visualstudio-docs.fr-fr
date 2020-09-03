@@ -10,10 +10,10 @@ ms.workload:
 - vssdk
 monikerRange: vs-2017
 ms.openlocfilehash: 37f7259c1133ea51e004b5f6b2061427ff71dea0
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905842"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Comment : migrer des projets d’extensibilité vers Visual Studio 2017
@@ -170,7 +170,7 @@ Lorsque vous recherchez vos dépendances, vous constaterez qu’une dépendance 
 
 Pour obtenir de l’aide, nous avons identifié quelques types d’extension courants et leurs conditions préalables recommandées :
 
-Type d'extension | Nom complet | id
+Type d'extension | Nom d’affichage | ID
 --- | --- | ---
 Éditeur | Éditeur de base de Visual Studio | Microsoft.VisualStudio.Component.CoreEditor
 Roslyn | C# et Visual Basic | Microsoft.VisualStudio.Component.Roslyn.LanguageServices

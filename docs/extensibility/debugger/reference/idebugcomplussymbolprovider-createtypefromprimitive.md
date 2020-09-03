@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::CreateTypeFromPrimitive ( Microsoft Docs
+title: 'IDebugComPlusSymbolProvider :: CreateTypeFromPrimitive | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,10 +15,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5b5759110c60bf25c0197c370bebdd45f71c2a22
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734147"
 ---
 # <a name="idebugcomplussymbolprovidercreatetypefromprimitive"></a>IDebugComPlusSymbolProvider::CreateTypeFromPrimitive
@@ -44,19 +44,19 @@ int CreateTypeFromPrimitive(
 
 ## <a name="parameters"></a>Paramètres
 `dwPrimType`\
-[dans] Valeur de [l’énumération CorElementType](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration) qui représente le type primitif.
+dans Valeur de l' [énumération CorElementType](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration) qui représente le type primitif.
 
 `pAddress`\
-[dans] Un objet d’adresse représenté par une interface [IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md)
+dans Objet d’adresse représenté par une interface [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) .
 
 `ppType`\
-[dans] Retourne un objet [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) qui décrit le type.
+dans Retourne un objet [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) qui décrit le type.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="example"></a>Exemple
-L’exemple suivant montre comment implémenter cette méthode pour un objet **CDebugSymbolProvider** qui expose [l’interface IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+L’exemple suivant montre comment implémenter cette méthode pour un objet **CDebugSymbolProvider** qui expose l’interface [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) .
 
 ```cpp
 HRESULT CDebugSymbolProvider::CreateTypeFromPrimitive(

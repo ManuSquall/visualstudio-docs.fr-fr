@@ -1,5 +1,5 @@
 ---
-title: BP_STATE Microsoft Docs
+title: BP_STATE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 2721028c0635af274174574e4a264546c1909778
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737799"
 ---
 # <a name="bp_state"></a>BP_STATE
-Spécifie l’existence d’un point d’arrêt lié et précise également s’il est activé.
+Spécifie l’existence d’un point d’arrêt lié et spécifie également s’il est activé.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -48,7 +48,7 @@ public enum enum_BP_STATE {
 
 ## <a name="fields"></a>Champs
 `BPS_NONE`\
-Précise qu’il n’existe pas de point de rupture.
+Spécifie qu’il n’existe aucun point d’arrêt.
 
 `BPS_DELETED`\
 Spécifie que le point d’arrêt a été supprimé.
@@ -60,15 +60,15 @@ Spécifie que le point d’arrêt est désactivé.
 Spécifie que le point d’arrêt est activé.
 
 ## <a name="remarks"></a>Notes
-De retour de la méthode [GetState.](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)
+Retourné par la méthode [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md) .
 
-## <a name="requirements"></a>Spécifications
-En-tête: msdbg.h
+## <a name="requirements"></a>Configuration requise
+En-tête : msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Espace de noms : Microsoft. VisualStudio. Debugger. Interop
 
-Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
-- [GetState (en)](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)
+- [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)

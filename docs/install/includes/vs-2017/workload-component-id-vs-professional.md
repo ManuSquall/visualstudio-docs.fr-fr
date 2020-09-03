@@ -11,10 +11,10 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
 ms.openlocfilehash: 118c818c194b50d8eabbd0139e29c15dafd90708
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76159403"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-professional-2017"></a>Éditeur de base de Visual Studio (inclus avec Visual Studio Professional 2017)
@@ -124,7 +124,7 @@ Microsoft.NetCore.ComponentGroup.Web | Outils de développement .NET Core 2.0 |
 Microsoft.VisualStudio.Component.Azure.Storage.AzCopy | Stockage Azure AzCopy | 15.0.26906.1 | Facultatif
 Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation | 15.8.27924.0 | Facultatif
 
-## <a name="data-storage-and-processing"></a>Traitement et stockage de données
+## <a name="data-storage-and-processing"></a>Stockage et traitement des données
 
 **ID :** Microsoft.VisualStudio.Workload.Data
 
@@ -185,7 +185,7 @@ Microsoft.VisualStudio.ComponentGroup.Web | Prérequis des outils de développem
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | Développement web et ASP.NET | 15.8.27825.0 | Recommandé
 Microsoft.VisualStudio.Component.FSharp.Desktop | Prise en charge du langage F# pour poste de travail | 15.8.27825.0 | Facultatif
 
-## <a name="data-science-and-analytical-applications"></a>Applications de science des données et analytiques
+## <a name="data-science-and-analytical-applications"></a>Applications de science et analyse des données
 
 **ID :** Microsoft.VisualStudio.Workload.DataScience
 
@@ -864,7 +864,7 @@ Microsoft.VisualStudio.Component.Windows10SDK.17763 | SDK Windows 10 (10.0.17763
 Microsoft.VisualStudio.Component.Windows81SDK | SDK Windows 8.1 | 15.6.27406.0 | Facultatif
 Microsoft.VisualStudio.ComponentGroup.Web | Prérequis des outils de développement web et ASP.NET | 15.9.28219.51 | Facultatif
 
-## <a name="universal-windows-platform-development"></a>Développement de la plateforme universelle Windows
+## <a name="universal-windows-platform-development"></a>Développement pour la plateforme Windows universelle
 
 **ID :** Microsoft.VisualStudio.Workload.Universal
 

@@ -1,5 +1,5 @@
 ---
-title: 'Zone de test 8 : Plug-in de commutation | Microsoft Docs'
+title: 'Zone de test 8 : commutation de plug-in | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,47 +12,47 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 90650b8b3c3432fce05b03a25033977e68f60fca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203125"
 ---
 # <a name="test-area-8-plug-in-switching"></a>Zone de test 8 : Commutation de plug-in
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] l’environnement de développement intégré (IDE) a l’interface utilisateur (IU) pour modifier le plug-in du contrôle de source en cours. Cette zone de test fournit un cas de test pour le processus de sélection du plug-in à utiliser pour le contrôle de code source de solution qui.  
+L' [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] environnement de développement intégré (IDE) dispose de l’interface utilisateur pour modifier le plug-in de contrôle de code source actuel. Cette zone de test fournit des cas de test pour le processus de sélection du plug-in à utiliser pour le contrôle de code source de la solution.  
   
-## <a name="command-menu-access"></a>Accès au Menu de commande  
- Ce qui suit [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] menu chemins d’environnement de développement intégré sont utilisés dans les cas de test.  
+## <a name="command-menu-access"></a>Accès au menu commande  
+ Les [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] chemins d’accès au menu de l’environnement de développement intégré suivants sont utilisés dans les cas de test.  
   
-- Contrôle de code source en cours plug-in : **Outils** -> **Options** -> **contrôle de code Source** -> **sélection du plug-in**.  
+- Plug-in de contrôle de code source actuel : **Outils**  ->  **options**  ->  **Source Control**  ->  **sélection du plug-in de contrôle de**code source.  
   
-- Modifier la source de liaison de contrôle : **Fichier** -> **contrôle de code Source** -> **modifier le contrôle de code Source**...  
+- Modifier la liaison de contrôle de code source : contrôle de source de **fichier**  ->  **Source Control**  ->  **modifier le contrôle**de code source...  
   
-## <a name="common-expected-behavior"></a>Comportement attendu commun  
- Il est possible de modifier le plug-in pour une solution de contrôle de code source sans quitter Visual Studio ou de recharger la solution. En outre, le plug-in de contrôle source actuel change automatiquement celle utilisée par une solution quand cette solution est chargée.  
+## <a name="common-expected-behavior"></a>Comportement attendu courant  
+ La modification du plug-in de contrôle de code source pour une solution est possible sans quitter Visual Studio ou recharger la solution. En outre, le plug-in de contrôle de code source actuel devient automatiquement celui utilisé par une solution lorsque cette solution est chargée.  
   
 ## <a name="test-cases"></a>Cas de test  
- Voici les cas de test spécifiques pour la zone de test de basculement plug-in.  
+ Les éléments suivants sont des cas de test spécifiques pour la zone de test de basculement de plug-in.  
   
-### <a name="case-8a-automatic-change"></a>8 a case : Modification automatique  
-  
-#### <a name="expected-behavior"></a>Comportement attendu  
- Lorsqu’un utilisateur charge une solution qui est sous contrôle de code source, la solution est automatiquement chargée et le plug-in de contrôle de code source approprié est sélectionné comme en cours.  
-  
-|Action|Étapes de test|Résultats attendus pour vérifier|  
-|------------|----------------|--------------------------------|  
-|Modification de plug-in de contrôle de source automatique|1.  Sélectionnez plug-in sous test autant à jour (**outils** -> **Options** -> **contrôle de code Source** -> **plug-in Sélection**.)<br />2.  Créer un nouveau projet.<br />3.  Ajouter la solution au contrôle de code source.<br />4.  Sélectionner un autre plug-in (par exemple, [!INCLUDE[vsvss](../../includes/vsvss-md.md)]).<br />5.  Accepter l’invite déchargement de solution.<br />6.  Rouvrez la solution à partir du disque.|Solution est ouverte.<br /><br /> Plug-in de test est le plug-in du contrôle de source en cours.|  
-  
-### <a name="case-8b-solution-based-change"></a>8 b de cas : Modification sur les solutions  
+### <a name="case-8a-automatic-change"></a>Cas 8A : modification automatique  
   
 #### <a name="expected-behavior"></a>Comportement attendu  
- La solution peut avoir son plug-in de contrôle de code source associé modifié.  
+ Lorsqu’un utilisateur charge une solution sous contrôle de code source, la solution est automatiquement chargée et le plug-in de contrôle de code source approprié est sélectionné comme étant en cours.  
   
-|Action|Étapes de test|Résultats attendus pour vérifier|  
+|Action|Étapes de test|Résultats attendus à vérifier|  
 |------------|----------------|--------------------------------|  
-|Modification de plug-in pour une solution|1.  Sélectionnez plug-in sous test autant à jour (**outils** -> **Options** -> **contrôle de code Source** -> **plug-in Sélection**).<br />2.  Créer un nouveau projet et solution.<br />3.  Ajouter la solution au contrôle de code source.<br />4.  Déconnectez la solution de contrôle de code source (à l’aide de la **modifier le contrôle de Source** boîte de dialogue).<br />5.  Sélectionner un autre plug-in (par exemple, [!INCLUDE[vsvss](../../includes/vsvss-md.md)]).<br />6.  Recharger la solution à partir du disque si déchargé.<br />7.  Ajouter la solution au contrôle de code source.<br />8.  Déconnectez la solution de contrôle de code source (à l’aide de **modifier le contrôle de Source** boîte de dialogue).<br />9. Sélectionnez le plug-in de test à nouveau.<br />10. Rechargez la solution à partir du disque si déchargé.<br />11. Lier la solution à l’emplacement d’origine (à l’aide de la **modifier le contrôle de Source** boîte de dialogue).|Solution est ajoutée au contrôle de code source à l’aide du plug-in.|  
+|Modification du plug-in de contrôle de code source automatique|1. Sélectionnez le plug-in sous test en tant que actuel (**Outils**  ->  **options**  ->  **Source Control**  ->  **sélection du plug-in de contrôle de**code source.)<br />2. Créez un nouveau projet.<br />3. Ajoutez la solution au contrôle de code source.<br />4. Sélectionnez un autre plug-in (par exemple, [!INCLUDE[vsvss](../../includes/vsvss-md.md)] ).<br />5. acceptez l’invite de déchargement de la solution.<br />6. rouvrez la solution à partir du disque.|La solution est ouverte.<br /><br /> Le plug-in testé est le plug-in de contrôle de code source actuel.|  
+  
+### <a name="case-8b-solution-based-change"></a>Cas 8B : modification basée sur la solution  
+  
+#### <a name="expected-behavior"></a>Comportement attendu  
+ Le plug-in du contrôle de code source associé à la solution peut être modifié.  
+  
+|Action|Étapes de test|Résultats attendus à vérifier|  
+|------------|----------------|--------------------------------|  
+|Modification du plug-in pour une solution|1. Sélectionnez le plug-in sous test en tant que actuel (**Outils**  ->  **options**  ->  **Source Control**  ->  **sélection du plug-in de contrôle de**code source).<br />2. Créez un projet et une solution.<br />3. Ajoutez la solution au contrôle de code source.<br />4. dissociez la solution du contrôle de code source (à l’aide de la boîte de dialogue **modifier le contrôle de code source** ).<br />5. Sélectionnez un autre plug-in (par exemple, [!INCLUDE[vsvss](../../includes/vsvss-md.md)] ).<br />6. Rechargez la solution à partir du disque si elle est déchargée.<br />7. Ajoutez la solution au contrôle de code source.<br />8. dissociez la solution du contrôle de code source (à l’aide de la boîte de dialogue **modifier le contrôle de code source** ).<br />9. Sélectionnez le plug-in sous test.<br />10. recharger la solution à partir du disque si elle est déchargée.<br />11. liez la solution à l’emplacement d’origine (à l’aide de la boîte de dialogue **modifier le contrôle de code source** ).|La solution est ajoutée au contrôle de code source à l’aide du plug-in sélectionné.|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Guide de test pour les plug-ins de contrôle de code source](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

@@ -14,10 +14,10 @@ dev_langs:
 - CSharp
 - VB
 ms.openlocfilehash: 4efe12b9871dc07bd7427e1567973701d3c6c527
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532234"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>Procédure pas à pas : créer un processeur de directive personnalisé
@@ -668,7 +668,7 @@ Dans cette section, vous ajoutez au Registre une clé pour votre processeur de d
    | Classe | REG_SZ | CustomDP.CustomDirectiveProcessor |
    | Assembly | REG_SZ | CustomDP.dll |
 
-6. Redémarrez Visual Studio.
+6. Démarrez Visual Studio.
 
 ## <a name="test-the-directive-processor"></a>Tester le processeur de directive
 

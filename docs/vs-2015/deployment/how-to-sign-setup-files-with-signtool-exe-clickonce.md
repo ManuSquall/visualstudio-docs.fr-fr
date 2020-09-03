@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Connexion fichiers d’installation avec SignTool.exe (ClickOnce) | Microsoft Docs'
+title: 'Comment : signer des fichiers d’installation avec SignTool.exe (ClickOnce) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -20,13 +20,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 67dc8e858a8ee87ee9e1fef9d99bf24ea4994960
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202179"
 ---
-# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Procédure : Signer des fichiers d’installation avec SignTool.exe (ClickOnce)
+# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Comment : signer des fichiers d'installation avec SignTool.exe (ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez utiliser SignTool.exe pour signer un programme d'installation (setup.exe). Ce processus aide à garantir que les fichiers falsifiés ne sont pas installés sur les ordinateurs des utilisateurs finaux.  
@@ -41,7 +41,7 @@ Vous pouvez utiliser SignTool.exe pour signer un programme d'installation (setup
   
 2. Sélectionnez le projet dans **l’Explorateur de solutions**.  
   
-3. Dans le menu **Projet**, cliquez sur **Propriétés** de *NomProjet*.  
+3. Dans le menu **projet** , cliquez sur **Propriétés**de *NomProjet* .  
   
 4. Dans la page **Connexion**, décochez **Signer les manifestes ClickOnce**.  
   
@@ -80,4 +80,4 @@ Vous pouvez utiliser SignTool.exe pour signer un programme d'installation (setup
     ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour re-signer des manifestes d’application et de déploiement](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
+ [Comment : signer à nouveau les manifestes d’application et de déploiement](../deployment/how-to-re-sign-application-and-deployment-manifests.md)

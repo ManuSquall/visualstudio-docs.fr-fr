@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2a69fc64c3371a2970c03ec0129d4c733f5ae9cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68201757"
 ---
 # <a name="exec-task"></a>Exec, tâche
@@ -47,14 +47,14 @@ Exécute la commande ou le programme spécifié en utilisant les arguments spéc
 |`StdOutEncoding`|Paramètre de sortie `String` facultatif.<br /><br /> Spécifie l’encodage du flux de sortie standard de tâche capturé. La valeur par défaut est l’encodage de sortie de la console actuelle.|  
 |`WorkingDirectory`|Paramètre `String` facultatif.<br /><br /> Spécifie le répertoire dans lequel la commande sera exécutée.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cette tâche est utile quand une tâche [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] spécifique pour le travail que vous voulez effectuer n’est pas disponible. Toutefois, la tâche `Exec`, contrairement à une tâche plus spécifique, ne peut pas recueillir la sortie de l’outil ou de la commande qu’elle exécute.  
   
  La tâche `Exec` appelle cmd.exe au lieu d’appeler directement un processus.  
   
  En plus des paramètres énumérés dans ce document, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.ToolTask>. Pour obtenir la liste de ces paramètres supplémentaires et de leurs descriptions, consultez l’article [ToolTaskExtension Base Class (Classe de base ToolTaskExtension)](../msbuild/tooltaskextension-base-class.md).  
   
-## <a name="example"></a>Exemples  
+## <a name="example"></a>Exemple  
  L’exemple suivant utilise la tâche `Exec` pour exécuter une commande.  
   
 ```  
@@ -72,5 +72,5 @@ Exécute la commande ou le programme spécifié en utilisant les arguments spéc
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Tâches](../msbuild/msbuild-tasks.md)   
- [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)
+ [Décrites](../msbuild/msbuild-tasks.md)   
+ [Référence de tâche](../msbuild/msbuild-task-reference.md)

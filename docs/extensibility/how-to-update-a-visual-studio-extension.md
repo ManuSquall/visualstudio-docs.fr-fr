@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ee81fe30e10253239bc51dd9d2f199340debc65a
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905619"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>Comment : mettre à jour une extension Visual Studio
@@ -28,7 +28,7 @@ Vous pouvez mettre à jour une extension Visual Studio sur votre système en uti
 
 ## <a name="to-update-an-extension-on-your-system"></a>Pour mettre à jour une extension sur votre système
 
-1. Dans le menu **Outils** , choisissez **Extensions et mises à jour**.
+1. Dans le menu **Outils**, cliquez sur **Extensions et mises à jour**.
 
 2. Dans le volet gauche, cliquez sur **mises à jour**.
 

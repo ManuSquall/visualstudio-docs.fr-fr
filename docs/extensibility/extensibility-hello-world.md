@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 796cb53ea5124662c695cce55241794802f042c0
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905935"
 ---
 # <a name="tutorial---create-your-first-extension-hello-world"></a>Didacticiel-créer votre première extension : Hello World
@@ -76,7 +76,7 @@ Vous devez maintenant voir le projet HelloWorld dans **Explorateur de solutions*
 
 Étape 3. Sélectionnez la section **extensibilité** , puis choisissez **commande**.
 
-Étape 4. Dans le champ **nom** en bas, entrez un nom de fichier tel que *Command.cs*.
+Étape 4. Dans le champ **nom** en bas, entrez un nom de fichier tel que *Command.cs*.
 
 ![commande personnalisée](media/hello-world-vsix-command.png)
 

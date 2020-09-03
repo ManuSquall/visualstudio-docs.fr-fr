@@ -1,5 +1,5 @@
 ---
-title: BPERESI_FIELDS Microsoft Docs
+title: BPERESI_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: af2f20e7d3abd79261dc18753a7eb940666fc186
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737769"
 ---
 # <a name="bperesi_fields"></a>BPERESI_FIELDS
-Spécifie les informations à récupérer au sujet d’une résolution ratée d’un point d’arrêt.
+Spécifie les informations à récupérer à propos d’un échec de résolution d’un point d’arrêt.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -52,36 +52,36 @@ public enum enum_BPERESI_FIELDS {
 
 ## <a name="fields"></a>Champs
 `PERESI_BPRESLOCATION`\
-Initialiser/utiliser `bpResLocation` le champ (emplacement de résolution de point de rupture) de la structure [BP_ERROR_RESOLUTION_INFO.](../../../extensibility/debugger/reference/bp-error-resolution-info.md)
+Initialisez/utilisez le `bpResLocation` champ (emplacement de résolution des points d’arrêt) de la structure [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) .
 
 `BPERESI_PROGRAM`\
-Initialiser/utiliser `pProgram` le champ `BP_ERROR_RESOLUTION_INFO` de la structure.
+Initialisez/utilisez le `pProgram` champ de la `BP_ERROR_RESOLUTION_INFO` structure.
 
 `BPERESI_THREAD`\
-Initialiser/utiliser `pThread` le champ `BP_ERROR_RESOLUTION_INFO` de la structure.
+Initialisez/utilisez le `pThread` champ de la `BP_ERROR_RESOLUTION_INFO` structure.
 
 `BPERESI_MESSAGE`\
-Initialiser/utiliser `bstrMessage` le champ `BP_ERROR_RESOLUTION_INFO` de la structure.
+Initialisez/utilisez le `bstrMessage` champ de la `BP_ERROR_RESOLUTION_INFO` structure.
 
 `BPERESI_TYPE`\
-Initialiser/utiliser `dwType` le champ (type de `BP_ERROR_RESOLUTION_INFO` point d’arrêt) de la structure.
+Initialisez/utilisez le `dwType` champ (type de point d’arrêt) de la `BP_ERROR_RESOLUTION_INFO` structure.
 
 `BPERESI_ALLFIELDS`\
-Initialiser/utiliser tous les `BP_ERROR_RESOLUTION_INFO` champs de la structure.
+Initialisez/Utilisez tous les champs de la `BP_ERROR_RESOLUTION_INFO` structure.
 
 ## <a name="remarks"></a>Notes
-Passé comme paramètre à la méthode [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) pour indiquer quels champs de la structure [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) doivent être parasélisés.
+Passé en tant que paramètre à la méthode [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) pour indiquer les champs de la structure [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) qui doivent être initialisés.
 
-Ces valeurs sont également utilisées pour `BP_ERROR_RESOLUTION_INFO` indiquer quels champs de la structure sont utilisés et valides lorsque cette structure est retournée.
+Ces valeurs sont également utilisées pour indiquer les champs de la `BP_ERROR_RESOLUTION_INFO` structure qui sont utilisés et valides lorsque cette structure est retournée.
 
-Ces valeurs peuvent être combinées avec un peu plus. `OR`
+Ces valeurs peuvent être combinées avec une opération de bits `OR` .
 
-## <a name="requirements"></a>Spécifications
-En-tête: msdbg.h
+## <a name="requirements"></a>Configuration requise
+En-tête : msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Espace de noms : Microsoft. VisualStudio. Debugger. Interop
 
-Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

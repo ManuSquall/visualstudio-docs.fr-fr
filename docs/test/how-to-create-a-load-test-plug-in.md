@@ -13,15 +13,15 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0abcc3865c21a4f4673331377af8d17b223c7875
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288024"
 ---
 # <a name="how-to-create-a-load-test-plug-in"></a>Guide pratique pour créer un plug-in de test de charge
 
-Vous pouvez créer un plug-in de test de charge pour exécuter du code à différents stades de l'exécution du test de charge. Vous pouvez créer un plug-in pour développer ou modifier la fonctionnalité intégrée du test de charge. Par exemple, vous pouvez coder un plug-in de test de charge pour définir ou modifier le modèle de test de charge pendant l’exécution du test de charge. Pour cela, vous devez créer une classe qui hérite de l'interface de <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>. Cette classe doit implémenter la méthode <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin.Initialize*> de cette interface. Pour plus d’informations, consultez <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>.
+Vous pouvez créer un plug-in de test de charge pour exécuter du code à différents stades de l'exécution du test de charge. Vous pouvez créer un plug-in pour développer ou modifier la fonctionnalité intégrée du test de charge. Par exemple, vous pouvez coder un plug-in de test de charge pour définir ou modifier le modèle de test de charge pendant l’exécution du test de charge. Pour cela, vous devez créer une classe qui hérite de l'interface de <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>. Cette classe doit implémenter la méthode <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin.Initialize*> de cette interface. Pour plus d'informations, consultez <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>.
 
 > [!TIP]
 > Vous pouvez également créer des plug-ins pour les tests de performances web. Pour plus d’informations, consultez [Comment : créer un plug-in de test de performances de site Web](../test/how-to-create-a-web-performance-test-plug-in.md).

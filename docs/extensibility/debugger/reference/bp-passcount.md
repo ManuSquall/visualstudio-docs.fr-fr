@@ -1,5 +1,5 @@
 ---
-title: BP_PASSCOUNT Microsoft Docs
+title: BP_PASSCOUNT | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 0e3177ff093aea9a6f52465bd606b22883249d6b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737900"
 ---
 # <a name="bp_passcount"></a>BP_PASSCOUNT
-Décrit le nombre et les conditions auxquelles un point d’arrêt conditionnel est tiré.
+Décrit le nombre et les conditions sur lesquelles un point d’arrêt conditionnel est déclenché.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -43,22 +43,22 @@ public struct BP_PASSCOUNT {
 
 ## <a name="members"></a>Membres
 `dwPassCount`\
-Le nombre de fois pour passer au-dessus du point d’arrêt avant de le tirer.
+Nombre de fois où passer le point d’arrêt avant de le déclencher.
 
 `stylePassCount`\
-Une valeur de [l’énumération BP_PASSCOUNT_STYLE](../../../extensibility/debugger/reference/bp-passcount-style.md) qui spécifie le style du nombre de laissez-passer de point d’arrêt.
+Valeur de l’énumération [BP_PASSCOUNT_STYLE](../../../extensibility/debugger/reference/bp-passcount-style.md) qui spécifie le style du nombre de passes de point d’arrêt.
 
 ## <a name="remarks"></a>Notes
-Cette structure est membre de la structure [BP_REQUEST_INFO.](../../../extensibility/debugger/reference/bp-request-info.md)
+Cette structure est un membre de la structure [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) .
 
-Cette structure est également transmise comme paramètre aux méthodes[SetPassCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setpasscount.md) et[SetPassCount.](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md)
+Cette structure est également transmise en tant que paramètre aux méthodes[SetPassCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setpasscount.md) et[SetPassCount](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md) .
 
-## <a name="requirements"></a>Spécifications
-En-tête: msdbg.h
+## <a name="requirements"></a>Configuration requise
+En-tête : msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Espace de noms : Microsoft. VisualStudio. Debugger. Interop
 
-Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Structures et unions](../../../extensibility/debugger/reference/structures-and-unions.md)

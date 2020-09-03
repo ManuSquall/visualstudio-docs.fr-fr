@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointBoundEvent2::GetPendingBreakpoint (fr) Microsoft Docs
+title: 'IDebugBreakpointBoundEvent2 :: GetPendingBreakpoint | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 85c137445e2255a76f7fa3be2fb56e2579e578c6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735257"
 ---
 # <a name="idebugbreakpointboundevent2getpendingbreakpoint"></a>IDebugBreakpointBoundEvent2::GetPendingBreakpoint
-Obtient le point d’arrêt en attente qui est lié.
+Obtient le point d’arrêt en cours de liaison.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,13 +41,13 @@ int GetPendingBreakpoint(
 
 ## <a name="parameters"></a>Paramètres
 `ppPendingBP`\
-[out] Retourne [l’objet IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) qui représente le point d’arrêt en attente étant lié.
+à Retourne l’objet [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) qui représente le point d’arrêt en cours de liaison.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="example"></a>Exemple
-L’exemple suivant montre comment implémenter cette méthode pour un objet **CBreakpointSetDebugEventBase** qui expose [l’interface IDebugBreakpointBoundEvent2.](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)
+L’exemple suivant montre comment implémenter cette méthode pour un objet **CBreakpointSetDebugEventBase** qui expose l’interface [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) .
 
 ```cpp
 STDMETHODIMP CBreakpointSetDebugEventBase::GetPendingBreakpoint(

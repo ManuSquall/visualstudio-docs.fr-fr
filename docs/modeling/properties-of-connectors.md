@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a7bf5492d7da845b65904959cb57737fd438c28b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532273"
 ---
 # <a name="properties-of-connectors"></a>Propriétés des connecteurs
@@ -33,8 +33,8 @@ Les connecteurs représentent les relations de domaine dans un concepteur géné
 |Thickness|Épaisseur de la ligne de ce connecteur, mesurée en pouces.|0,03125|
 |Modificateur d'accès|Niveau d’accès de la classe ( `public` ou `internal` ).|Public|
 |Attributs personnalisés|Utilisé pour ajouter des attributs à la classe de code source qui est générée à partir de ce connecteur.|\<none>|
-|Génère un doublon dérivé|Si `True` la valeur est, une classe de base et une classe partielle (pour prendre en charge la personnalisation via des substitutions) sont générées. Pour plus d’informations, consultez [substitution et extension des classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|False|
-|A un constructeur personnalisé|Si `True` , un constructeur personnalisé est fourni dans le code source. Pour plus d’informations, consultez [substitution et extension des classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|False|
+|Génère un doublon dérivé|Si `True` la valeur est, une classe de base et une classe partielle (pour prendre en charge la personnalisation via des substitutions) sont générées. Pour plus d’informations, consultez [substitution et extension des classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|Faux|
+|A un constructeur personnalisé|Si `True` , un constructeur personnalisé est fourni dans le code source. Pour plus d’informations, consultez [substitution et extension des classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|Faux|
 |Modificateur d’héritage|Décrit le type d’héritage de la classe de code source qui est généré à partir du connecteur ( `none` , `abstract` ou `sealed` ).|Aucun|
 |Connecteur de base|Classe de base de ce connecteur.|(aucun)|
 |Nom|Nom de ce connecteur.|Nom actuel|
@@ -42,9 +42,9 @@ Les connecteurs représentent les relations de domaine dans un concepteur géné
 |Type d’info-bulle|Comment l’info-bulle est définie (Fixed, variable ou None). Si elle est fixe, la valeur de la `Fixed Tooltip Text` propriété est utilisée comme info-bulle ; si la variable est, l’info-bulle est définie dans le code personnalisé.|\<none>|
 |Notes|Notes informelles associées à ce connecteur.|\<none>|
 |Style de routage|Style utilisé pour router le connecteur. Un `Rectilinear` connecteur fait en sorte que les virages à angle droit s’effectuent comme requis ; un `Straight` connecteur ne le fait pas.|Rectilinear|
-|Couleur exposée en tant que propriété<br /><br /> Style de tiret exposé en tant que propriété<br /><br /> Epaisseur exposée en tant que propriété<br /><br /> Expose la couleur de texte|Si `True` la valeur est, l’utilisateur peut définir la propriété déclarée d’une forme. Pour ce faire, cliquez avec le bouton droit sur la définition de la forme, puis cliquez sur **Ajouter exposé**.|False|
+|Couleur exposée en tant que propriété<br /><br /> Style de tiret exposé en tant que propriété<br /><br /> Epaisseur exposée en tant que propriété<br /><br /> Expose la couleur de texte|Si `True` la valeur est, l’utilisateur peut définir la propriété déclarée d’une forme. Pour ce faire, cliquez avec le bouton droit sur la définition de la forme, puis cliquez sur **Ajouter exposé**.|Faux|
 |Description|Utilisé pour documenter le concepteur généré.|\<none>|
-|Nom complet|Nom qui sera affiché dans le concepteur généré pour ce connecteur.|\<none>|
+|Nom d’affichage|Nom qui sera affiché dans le concepteur généré pour ce connecteur.|\<none>|
 |Texte d’info-bulle fixe|Texte utilisé pour une info-bulle fixe.|\<none>|
 |Help Keyword|Mot clé utilisé pour indexer l’aide F1 pour cet élément.|\<none>|
 

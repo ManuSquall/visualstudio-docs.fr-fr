@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 3c8f72d4e1d1caeacd5dfefef5310dc2cef83b92
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77173089"
 ---
 # <a name="application-property-page-uwp-projects"></a>Page de propriétés de l’application (projets UWP)
@@ -24,21 +24,21 @@ Utilisez la page de propriétés **Application** pour spécifier l’assembly du
 
 ![Page de propriétés de l'application](media/application-page-uwp.png)
 
-Pour accéder à la page **Application**, choisissez le nœud du projet dans **l’Explorateur de solutions**. Choisissez ensuite **Project** > **Properties** sur la barre de menu. Les pages de propriétés s’ouvrent sous l’onglet **Application**.
+Pour accéder à la page **Application**, choisissez le nœud du projet dans **l’Explorateur de solutions**. Choisissez ensuite **Project**  >  **Propriétés** du projet dans la barre de menus. Les pages de propriétés s’ouvrent sous l’onglet **Application**.
 
 ## <a name="general-section"></a>Section Général
 
-**Nom de l’Assemblée**&mdash;Précise le nom du fichier de sortie qui tiendra le manifeste de l’assemblage.
+Nom de l' **assembly** &mdash; Spécifie le nom du fichier de sortie qui contiendra le manifeste de l’assembly.
 
 Pour accéder à cette propriété par programmation, consultez <xref:VSLangProj.ProjectProperties.AssemblyName%2A>.
 
-**L’espace nom par**&mdash;défaut précise l’espace nom de base pour les fichiers ajoutés au projet. Pour plus d’informations sur les espaces de noms, consultez [Espaces de noms (Guide de programmation C#)](/dotnet/csharp/programming-guide/namespaces/), [Espaces de noms (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/namespaces) ou [Espaces de noms (C++)](/cpp/cpp/namespaces-cpp).
+**Espace de noms** &mdash; par défaut Spécifie l’espace de noms de base pour les fichiers ajoutés au projet. Pour plus d’informations sur les espaces de noms, consultez [Espaces de noms (Guide de programmation C#)](/dotnet/csharp/programming-guide/namespaces/), [Espaces de noms (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/namespaces) ou [Espaces de noms (C++)](/cpp/cpp/namespaces-cpp).
 
 Pour accéder à cette propriété par programmation, consultez <xref:VSLangProj.ProjectProperties.RootNamespace%2A>.
 
-**Informations d’assemblage**&mdash;Choisir ce bouton affiche la [boîte de dialogue d’information de l’Assemblée](../../ide/reference/assembly-information-dialog-box.md).
+**Informations sur** &mdash; l’assembly Le choix de ce bouton permet d’afficher la [boîte de dialogue informations de l’assembly](../../ide/reference/assembly-information-dialog-box.md).
 
-**Paquet Manifeste**&mdash;Choisir ce bouton ouvre le concepteur manifeste. Le concepteur de manifeste est également accessible en cliquant sur le fichier _Package.appxmanifest_ dans **l’Explorateur de solutions**. Pour plus d'informations, consultez [Configurer un package avec le concepteur de manifeste](/windows/msix/package/packaging-uwp-apps#configure-your-project).
+**Manifeste** &mdash; du package Le choix de ce bouton ouvre le concepteur de manifeste. Le concepteur de manifeste est également accessible en cliquant sur le fichier _Package.appxmanifest_ dans **l’Explorateur de solutions**. Pour plus d'informations, consultez [Configurer un package avec le concepteur de manifeste](/windows/msix/package/packaging-uwp-apps#configure-your-project).
 
 ## <a name="targeting-section"></a>Section Ciblage
 

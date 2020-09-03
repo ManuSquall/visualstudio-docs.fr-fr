@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointChecksumRequest2::GetChecksum - France Microsoft Docs
+title: 'IDebugBreakpointChecksumRequest2 :: GetChecksum | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 6fe1d2828f15b295f42c7fd756f2ffc407a632c9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735171"
 ---
 # <a name="idebugbreakpointchecksumrequest2getchecksum"></a>IDebugBreakpointChecksumRequest2::GetChecksum
-Récupère le document checksum pour une demande de point d’arrêt étant donné l’identifiant unique de l’algorithme de checksum à utiliser.
+Récupère la somme de contrôle du document pour une demande de point d’arrêt en fonction de l’identificateur unique de l’algorithme de somme de contrôle à utiliser.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,16 +41,16 @@ public int GetChecksum(
 
 ## <a name="parameters"></a>Paramètres
 `guidAlgorithm`\
-[dans] Identifiant unique de l’algorithme checksum.
+dans Identificateur unique de l’algorithme de somme de contrôle.
 
 `pChecksumData`\
-[out] Vérifications de documents pour la demande de point d’arrêt.
+à Somme de contrôle du document pour la demande de point d’arrêt.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="example"></a>Exemple
-L’exemple suivant montre une fonction qui vérifie si le chèque d’un document, qui est sur le point d’être lié, correspond à un de l’interface utilisateur.
+L’exemple suivant montre une fonction qui vérifie si la somme de contrôle d’un document, qui est sur le paragraphe de la liaison, correspond à une valeur de l’interface utilisateur.
 
 ```cpp
 bool CDebugProgram::DoChecksumsMatch(CDebugPendingBreakpoint *pPending, CDebugCodeContext *pContext)

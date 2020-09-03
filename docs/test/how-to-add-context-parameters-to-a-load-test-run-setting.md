@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 10a410b18391b3fbaee98f10be56cdc70c0f3562
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288414"
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Guide pratique : Ajouter des paramètres de contexte à un paramètre de série de tests de charge
@@ -60,7 +60,7 @@ En outre, en assignant des valeurs différentes à un paramètre de contexte en 
 
      Un nouveau paramètre de contexte est ajouté au dossier **Paramètres de contexte** dans le dossier **Paramètres d’exécution** de l’arborescence du test de charge.
 
-     -ou-
+     - ou -
 
      Si le paramètre d’exécution contient déjà un dossier **Paramètres de contexte**, vous pouvez cliquer dessus avec le bouton droit, puis choisir **Ajouter un paramètre de contexte**.
 

@@ -14,13 +14,13 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: a365892f606da90c608e43b7ccce73b902ec0e98
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74772437"
 ---
-# <a name="performance-explorer-window"></a>Fenêtre Explorateur de performances
+# <a name="performance-explorer-window"></a>Explorateur de performances, fenêtre
 
 La fenêtre **Explorateur de performances** de l’IDE de Visual Studio permet de configurer et de démarrer des sessions de performance à l’aide des Outils de profilage de Visual Studio. Si vous avez besoin d’ouvrir la fenêtre, suivez les instructions indiquées dans [Guide du débutant en profilage des performances](../profiling/beginners-guide-to-cpu-sampling.md).
 
@@ -40,7 +40,7 @@ Vous trouverez les options suivantes dans la barre d’outils de l’**Explorate
 
 - **Attacher/Détacher** : affiche la boîte de dialogue **Attacher le profileur au processus** pour un processus en cours d’exécution auquel attacher le profileur.
 
-## <a name="performance-explorer-window"></a>Fenêtre Explorateur de performances
+## <a name="performance-explorer-window"></a>Explorateur de performances, fenêtre
 
 La fenêtre **Explorateur de performances** contient un contrôle d’arborescence qui affiche les fichiers binaires et les fichiers de données des rapports d’une ou de plusieurs sessions de performance.
 
@@ -52,6 +52,6 @@ La fenêtre **Explorateur de performances** contient un contrôle d’arborescen
 
 ## <a name="see-also"></a>Voir aussi
 
-[Aperçus](../profiling/overviews-performance-tools.md)
-[Configuring Performance Sessions](../profiling/configuring-performance-sessions.md)
-[Controlling Data Collection](../profiling/controlling-data-collection.md)
+[Vues d’ensemble](../profiling/overviews-performance-tools.md) 
+ [Configuration des sessions](../profiling/configuring-performance-sessions.md) 
+ de performance [Contrôle](../profiling/controlling-data-collection.md) de la collecte de données
