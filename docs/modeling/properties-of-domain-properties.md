@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0342146f604d86dd93ce25ed20e6ab393c581ea9
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544168"
 ---
 # <a name="properties-of-domain-properties"></a>Propriétés des propriétés de domaine
@@ -43,7 +43,7 @@ Une *propriété de domaine* est une fonctionnalité d’un élément de modèle
 |**Is Element Name**|Si `True`, cette propriété de domaine est affichée comme nom de son élément de modèle dans l'Explorateur DSL.<br /><br /> Les nouveaux éléments de modèle reçoivent une valeur par défaut unique pour cette propriété. Si vous souhaitez contrôler la façon dont ces valeurs sont générées, définissez le **fournisseur de nom d’élément**.|`False`|
 |**Is UI Read Only**|Si `True`, la valeur de la propriété de domaine ne peut pas être modifiée à l'aide de l'interface utilisateur. Elle peut quand même être définie par des programmes et sera visible dans la fenêtre Propriétés.<br /><br /> Si vous souhaitez masquer la propriété de domaine de l’utilisateur, Set **peut être exploré**. Si vous souhaitez contrôler l’accès par les programmes, définissez le **modificateur d’accès Setter**.|`False`|
 |**Type**|Genre de propriété de domaine (`Normal`, `Calculated` ou `CustomStorage`). Pour plus d’informations, consultez [Propriétés de stockage calculées et personnalisées](../modeling/calculated-and-custom-storage-properties.md).|`Normal`|
-|**Nom**|Nom de cette propriété de domaine. Il doit s’agir d’un identificateur valide, par exemple **titremorceau**.|\<none>|
+|**Name**|Nom de cette propriété de domaine. Il doit s’agir d’un identificateur valide, par exemple **titremorceau**.|\<none>|
 |**Notes**|Remarques informelles associées à cette propriété de domaine.|\<none>|
 |**Setter Access Modifier**|Modificateur d'accès pour la méthode Setter. Contrôle l'étendue selon laquelle le code de programme peut définir la propriété.|`public`|
 |**Type**|Type de propriété. Pour ajouter à la liste des types disponibles, cliquez avec le bouton droit sur la racine du DSL dans l’Explorateur DSL, puis cliquez sur **Ajouter un type externe**.|`String`|

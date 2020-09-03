@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 98e825fd5543b928569b99218c9054aff666e0fe
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545143"
 ---
 # <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238 : Implémentez les méthodes de sérialisation comme il se doit
@@ -34,7 +34,7 @@ Pour obtenir la documentation la plus récente sur Visual Studio, consultez [CA2
 |Category|Microsoft. usage|
 |Modification avec rupture|Avec rupture : si la méthode est visible à l’extérieur de l’assembly.<br /><br /> Sans rupture : si la méthode n’est pas visible à l’extérieur de l’assembly.|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Une méthode qui gère un événement de sérialisation n’a pas la signature, le type de retour ou la visibilité appropriée.
 
 ## <a name="rule-description"></a>Description de la règle

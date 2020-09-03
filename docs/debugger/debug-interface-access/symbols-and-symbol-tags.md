@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: acef0d6809e33b969e1b6ecd874a842f0da32ae5
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85461062"
 ---
 # <a name="symbols-and-symbol-tags"></a>Balises Symbols et Symbol
@@ -42,4 +42,4 @@ Décrit les types de symboles qui correspondent à des éléments de langage dif
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Kit de développement logiciel de Debug Interface Access](../../debugger/debug-interface-access/debug-interface-access-sdk.md)
+- [SDK Debug Interface Access](../../debugger/debug-interface-access/debug-interface-access-sdk.md)

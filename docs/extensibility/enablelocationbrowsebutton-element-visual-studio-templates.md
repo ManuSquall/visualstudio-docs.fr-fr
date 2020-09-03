@@ -1,5 +1,5 @@
 ---
-title: EnableLocationBrowseButton Element (Visual Studio Templates) Microsoft Docs
+title: Élément EnableLocationBrowseButton (modèles Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,16 +14,17 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 263157d5c6fefc208f28caa55475ba329a0d230f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80711989"
 ---
 # <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>Élément EnableLocationBrowseButton (modèles Visual Studio)
-Précise si le bouton **Browse** est disponible dans la boîte de dialogue **Du nouveau projet,** afin que les utilisateurs puissent facilement modifier l’annuaire par défaut où un nouveau projet est enregistré.
+Spécifie si le bouton **Parcourir** est disponible dans la boîte de dialogue **nouveau projet** , afin que les utilisateurs puissent facilement modifier le répertoire par défaut où un nouveau projet est enregistré.
 
- \<VSTemplate> \<TemplateData> \<EnableLocationBrowseButton>
+ \<VSTemplate> \<TemplateData>
+ \<EnableLocationBrowseButton>
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -49,12 +50,12 @@ Précise si le bouton **Browse** est disponible dans la boîte de dialogue **Du 
 ## <a name="text-value"></a>Valeur texte
  Une valeur texte est requise.
 
- Le texte doit `true` `false`être soit ou , indiquant si oui ou non d’afficher le bouton **Parcourir** sur la boîte de dialogue **Du nouveau projet.**
+ Le texte doit être `true` ou `false` , indiquant s’il faut ou non afficher le bouton **Parcourir** dans la boîte de dialogue **nouveau projet** .
 
 ## <a name="remarks"></a>Notes
- `EnableLocationBrowseButton` est un élément facultatif. La valeur `true`par défaut est , qui affiche le bouton **Parcourir** dans la boîte de dialogue **New Project.**
+ `EnableLocationBrowseButton` est un élément facultatif. La valeur par défaut est `true` , qui affiche le bouton **Parcourir** dans la boîte de dialogue **nouveau projet** .
 
- Dans la boîte de dialogue **New Project,** la boîte de texte **De localisation** spécifie l’annuaire où un nouveau projet est sauvegardé. Le bouton **Parcourir** vous aide à modifier ce répertoire en affichant la boîte de dialogue **Project Location,** qui vous permet de naviguer facilement vers un répertoire différent qui est disponible à partir de votre ordinateur, puis de le choisir comme répertoire où le nouveau projet est enregistré.
+ Dans la boîte de dialogue **nouveau projet** , la zone de texte **emplacement** spécifie le répertoire dans lequel un nouveau projet est enregistré. Le bouton **Parcourir** vous permet de modifier ce répertoire en affichant la boîte de dialogue **emplacement du projet** , qui vous permet de naviguer facilement vers un autre répertoire disponible à partir de votre ordinateur, puis de le choisir comme répertoire dans lequel le nouveau projet est enregistré.
 
 ## <a name="example"></a>Exemple
  L’exemple suivant illustre les métadonnées d’une [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] application Windows.
@@ -85,5 +86,5 @@ Précise si le bouton **Browse** est disponible dans la boîte de dialogue **Du 
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Référence de schéma de modèle de studio visuel](../extensibility/visual-studio-template-schema-reference.md)
-- [Création de modèles de projets et d’objets](../ide/creating-project-and-item-templates.md)
+- [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)

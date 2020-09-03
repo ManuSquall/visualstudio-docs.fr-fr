@@ -24,10 +24,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b1cf71abb19f6d4a3a459b4e5559e536f18f41c8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76114559"
 ---
 # <a name="build-and-clean-projects-and-solutions-in-visual-studio"></a>Générer et nettoyer des projets et des solutions dans Visual Studio
@@ -67,25 +67,25 @@ En appliquant les procédures décrites dans cette rubrique, vous pouvez génér
 
 ## <a name="to-build-only-the-startup-project-and-its-dependencies"></a>Pour générer uniquement le projet de démarrage et ses dépendances
 
-1. Sur la barre de menu, choisissez **Tools** > **Options**.
+1. Dans la barre de menus, choisissez **Outils**  >  **options**.
 
 2. Dans la boîte de dialogue **Options**, développez le nœud **Projets et solutions**, puis choisissez la page **Générer et exécuter**.
 
-     La boîte de dialogue **Build and Run** > **Projects and Solutions** > **Options** s’ouvre.
+     La boîte de dialogue **générer et exécuter**des  >  **projets et des solutions**  >  **Options** s’ouvre.
 
 3. Cochez la case **Générer des projets de démarrage et des dépendances à l’exécution**.
 
      Quand cette case est cochée, seuls le projet de démarrage actuel et ses dépendances sont générés quand vous effectuez l’une des opérations suivantes :
 
-    - Au menu bar, choisissez **Debug** > **Start** (**F5**).
+    - Dans la barre de menus, choisissez **Déboguer**  >  **Démarrer** (**F5**).
 
-    - Sur la barre de menu, choisissez **Build** > **Build Solution** (**Ctrl**+**Shift**+**B**).
+    - Dans la barre de menus, choisissez **générer**  >  **générer la solution** (**CTRL** + **MAJ** + **B**).
 
-    Quand cette case est décochée, tous les projets, leurs dépendances et les fichiers solution sont générés quand vous exécutez l’une des commandes précédentes. Par défaut, cette case est décochée.
+    Quand cette case est décochée, tous les projets, leurs dépendances et les fichiers solution sont générés quand vous exécutez l’une des commandes précédentes. Par défaut, cette case à cocher est désactivée.
 
 ## <a name="to-build-only-the-selected-visual-c-project"></a>Pour générer uniquement le projet Visual C++ sélectionné
 
-Choisissez [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] un projet, puis, sur la barre de menu, choisissez **Build** > **Project Only,** et l’une des commandes suivantes:
+Choisissez un [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] projet, puis, dans la barre de menus, choisissez **générer**le  >  **projet uniquement**et l’une des commandes suivantes :
 
 - **Générer uniquement** *nom_projet*
 
@@ -107,18 +107,18 @@ Si les fichiers ont des dépendances, ils seront compilés par ordre de dépenda
 
 Effectuez l'une des étapes suivantes :
 
-- Sur la barre de menu, sélectionnez **Build** > **Cancel**.
+- Dans la barre de menus, sélectionnez **générer**  >  **Annuler**.
 
-- Appuyez **sur Ctrl**+**Break**.
+- Appuyez sur **CTRL** + **Pause**.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Comment : Afficher, enregistrer et configurer des fichiers journaux de construction](../ide/how-to-view-save-and-configure-build-log-files.md)
-- [Obtenir des journaux de construction](../msbuild/obtaining-build-logs-with-msbuild.md)
+- [Comment : afficher, enregistrer et configurer des fichiers journaux de génération](../ide/how-to-view-save-and-configure-build-log-files.md)
+- [Obtention des journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md)
 - [Compilation et génération](../ide/compiling-and-building-in-visual-studio.md)
-- [Comprendre les configurations de construction](../ide/understanding-build-configurations.md)
+- [Présentation des configurations de build](../ide/understanding-build-configurations.md)
 - [Guide pratique pour définir des configurations de débogage et des configurations Release](../debugger/how-to-set-debug-and-release-configurations.md)
-- [Référence de construction C/C](/cpp/build/reference/c-cpp-building-reference)
+- [Informations de référence sur la génération C/C++](/cpp/build/reference/c-cpp-building-reference)
 - [Devenv command line switches](../ide/reference/devenv-command-line-switches.md)
 - [Solutions et projets](../ide/solutions-and-projects-in-visual-studio.md)
 - [Générer et nettoyer des projets et des solutions (Visual Studio pour Mac)](/visualstudio/mac/building-and-cleaning-projects-and-solutions)

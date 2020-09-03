@@ -11,15 +11,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3cb73a674e702d54f970c5dea7ec051f100382c9
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76114754"
 ---
 # <a name="rethrow-activity-designer"></a>Concepteur d'activités Rethrow
 
-Le concepteur d’activités **Rethrow** est utilisé pour créer et configurer une activité <xref:System.Activities.Statements.Rethrow>.
+Le concepteur d’activités **Rethrow** est utilisé pour créer et configurer une <xref:System.Activities.Statements.Rethrow> activité.
 
 ## <a name="the-rethrow-activity"></a>Activité de nouvelle levée
 
@@ -27,18 +27,18 @@ L'activité <xref:System.Activities.Statements.Rethrow> lève une exception pré
 
 ### <a name="use-the-rethrow-activity-designer"></a>Utiliser le concepteur d’activités Rethrow
 
-Accédez au concepteur d’activités **Rethrow** dans la catégorie **gestion des erreurs** de la **boîte à outils**. Le concepteur d’activités **Rethrow** peut être déplacé de la **boîte à outils** et déposé dans l’aire de concepteur de flux de travail, là où les activités sont généralement placées, par exemple dans une <xref:System.Activities.Statements.Sequence>. La suppression du concepteur d’activités crée une activité <xref:System.Activities.Statements.Rethrow> avec un **DisplayName** par défaut de throw. La valeur <xref:System.Activities.Activity.DisplayName%2A> peut être modifiée dans l’en-tête du concepteur d’activités **Rethrow** ou dans la zone **DisplayName** de la grille des propriétés.
+Accédez au concepteur d’activités **Rethrow** dans la catégorie **gestion des erreurs** de la **boîte à outils**. Le concepteur d’activités **Rethrow** peut être déplacé de la **boîte à outils** et déposé dans l’aire de concepteur de flux de travail, là où les activités sont généralement placées, par exemple dans un <xref:System.Activities.Statements.Sequence> . La suppression du concepteur d’activités crée une <xref:System.Activities.Statements.Rethrow> activité avec un **DisplayName** par défaut de throw. La <xref:System.Activities.Activity.DisplayName%2A> valeur peut être modifiée dans l’en-tête du concepteur d’activités **Rethrow** ou dans la zone **DisplayName** de la grille des propriétés.
 
 ### <a name="the-rethrow-properties"></a>Propriétés de nouvelle levée
 
-Le tableau suivant présente les propriétés de <xref:System.Activities.Statements.Rethrow> et décrit comment elles sont utilisées dans le concepteur :
+Le tableau suivant présente les <xref:System.Activities.Statements.Rethrow> Propriétés et décrit comment elles sont utilisées dans le concepteur :
 
-|Nom de propriété|Obligatoire|Contrôle|
+|Nom de la propriété|Obligatoire|Usage|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Spécifie le nom convivial facultatif de l'activité <xref:System.Activities.Statements.Rethrow>. La valeur par défaut est Rethrow.|
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Regroupement](../workflow-designer/collection-activity-designers.md)
-- [Throw](../workflow-designer/throw-activity-designer.md)
+- [Collection](../workflow-designer/collection-activity-designers.md)
+- [Lever](../workflow-designer/throw-activity-designer.md)
 - [TryCatch](../workflow-designer/trycatch-activity-designer.md)

@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: bc57e3d104d7f8427e97eb6b3dd97ca3e89bc49e
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85419209"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Didacticiel : créer une application simple avec Visual Basic
@@ -265,7 +265,7 @@ Vous pouvez tester le code pendant le débogage en ajoutant des points d’arrê
 
 #### <a name="add-breakpoints"></a>Ajouter des points d’arrêt
 
-1. Ouvrez *Greetings. Xaml. vb*, puis sélectionnez la ligne suivante :`MessageBox.Show("Hello.")`
+1. Ouvrez *Greetings. Xaml. vb*, puis sélectionnez la ligne suivante : `MessageBox.Show("Hello.")`
 
 2. Ajoutez un point d’arrêt en appuyant sur **F9** ou à partir du menu en sélectionnant **Déboguer**, puis **Basculer le point d’arrêt**.
 

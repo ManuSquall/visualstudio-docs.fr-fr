@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3be233ce8730879c2f0406ec9cc180685992c6bf
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544935"
 ---
 # <a name="supported-visual-studio-editions-for-visualization--modeling-sdk"></a>Éditions de Visual Studio prises en charge pour le SDK de visualisation et de modélisation
@@ -35,7 +35,7 @@ Pour définir un DSL, vous devez avoir installé les composants suivants :
 
 ## <a name="deployment-editions"></a>Éditions de déploiement
 
-[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]prend en charge les configurations suivantes pour déployer les langages spécifiques à un domaine que vous générez :
+[!INCLUDE[dsl](../modeling/includes/dsl_md.md)] prend en charge les configurations suivantes pour déployer les langages spécifiques à un domaine que vous générez :
 
 - Visual Studio Enterprise
 

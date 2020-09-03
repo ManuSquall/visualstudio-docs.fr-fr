@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b003fcbd1b38eb5dc919b7f4f361e0b56b585f08
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85461223"
 ---
 # <a name="lexical-hierarchy-of-symbol-types"></a>Hiérarchie lexicale des types de symboles
@@ -26,14 +26,14 @@ Le tableau suivant présente les types de symboles dans la hiérarchie lexicale.
 
 |Type de symbole|Description|
 |-----------------|-----------------|
-|[Commentaire](../../debugger/debug-interface-access/annotation.md)|Spécifie un emplacement annoté dans le code de programme.|
+|[Annotation](../../debugger/debug-interface-access/annotation.md)|Spécifie un emplacement annoté dans le code de programme.|
 |[Bloquer](../../debugger/debug-interface-access/block.md)|Spécifie des portées imbriquées dans les fonctions.|
 |`Compiland`|Spécifie un `compiland` lié au fichier. exe.|
 |[CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)|Spécifie les données du compiland qui peuvent nécessiter le chargement de détails supplémentaires sur le module de la mémoire et, par conséquent, entraîner une surcharge d’exécution.|
 |[CompilandEnv](../../debugger/debug-interface-access/compilandenv.md)|Spécifie toutes les variables d’environnement supplémentaires significatives pour la compilation du compiland.|
 |[Personnalisé (Kit de développement logiciel de Debug Interface Access)](../../debugger/debug-interface-access/custom-debug-interface-access-sdk.md)|Spécifie un symbole défini par l’utilisateur.|
 |[Données (SDK Debug Interface Access)](../../debugger/debug-interface-access/data-debug-interface-access-sdk.md)|Spécifie des variables telles que les paramètres, les variables locales, les variables globales et les membres de classe.|
-|[Exécutable](../../debugger/debug-interface-access/exe.md)|Spécifie l’étendue globale des données ; correspond à un fichier. exe ou. dll entier.|
+|[Exe](../../debugger/debug-interface-access/exe.md)|Spécifie l’étendue globale des données ; correspond à un fichier. exe ou. dll entier.|
 |[FuncDebugEnd](../../debugger/debug-interface-access/funcdebugend.md)|Spécifie une fonction qui a un point défini auquel le débogage doit se terminer.|
 |[FuncDebugStart](../../debugger/debug-interface-access/funcdebugstart.md)|Spécifie une fonction qui a un point défini à partir duquel le débogage doit commencer.|
 |[Fonction (SDK Debug Interface Access)](../../debugger/debug-interface-access/function-debug-interface-access-sdk.md)|Spécifie une fonction.|
@@ -48,5 +48,5 @@ Le tableau suivant présente les types de symboles dans la hiérarchie lexicale.
 ## <a name="see-also"></a>Voir aussi
 - [Hiérarchie de classes des types de symboles](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)
 - [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)
-- [Balises Symbols et Symbol](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)
+- [Symboles et étiquettes de symbole](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)
 - [SymTagEnum, énumération](../../debugger/debug-interface-access/symtagenum.md)

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b2fafbb25d52df6082736431727222c788d73476
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85461216"
 ---
 # <a name="locationtype"></a>LocationType
@@ -42,31 +42,31 @@ enum LocationType {
 ```
 
 ## <a name="elements"></a>Éléments
-`LocIsNull`Les informations d’emplacement ne sont pas disponibles.
+`LocIsNull` Les informations d’emplacement ne sont pas disponibles.
 
-`LocIsStatic`L’emplacement est statique.
+`LocIsStatic` L’emplacement est statique.
 
-`LocIsTLS`L’emplacement se trouve dans le stockage local des threads.
+`LocIsTLS` L’emplacement se trouve dans le stockage local des threads.
 
-`LocIsRegRel`L’emplacement est Register-relative.
+`LocIsRegRel` L’emplacement est Register-relative.
 
-`LocIsThisRel`L’emplacement est `this` -relative.
+`LocIsThisRel` L’emplacement est `this` -relative.
 
-`LocIsEnregistered`L’emplacement se trouve dans un registre.
+`LocIsEnregistered` L’emplacement se trouve dans un registre.
 
-`LocIsBitField`L’emplacement est un champ de bits.
+`LocIsBitField` L’emplacement est un champ de bits.
 
-`LocIsSlot`L’emplacement est un emplacement MSIL (Microsoft Intermediate Language).
+`LocIsSlot` L’emplacement est un emplacement MSIL (Microsoft Intermediate Language).
 
-`LocIsIlRel`L’emplacement est relatif à MSIL.
+`LocIsIlRel` L’emplacement est relatif à MSIL.
 
-`LocInMetaData`L’emplacement se trouve dans les métadonnées.
+`LocInMetaData` L’emplacement se trouve dans les métadonnées.
 
-`LocIsConstant`L’emplacement est dans une valeur constante.
+`LocIsConstant` L’emplacement est dans une valeur constante.
 
-`LocTypeMax`Nombre de types d’emplacement dans cette énumération.
+`LocTypeMax` Nombre de types d’emplacement dans cette énumération.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Les propriétés disponibles pour l’interface [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) dépendent de l’emplacement du symbole dans le fichier image. Pour plus d’informations, consultez [emplacements des symboles](../../debugger/debug-interface-access/symbol-locations.md).
 
 Les valeurs de cette énumération sont retournées par un appel à la méthode [IDiaSymbol :: get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md) .

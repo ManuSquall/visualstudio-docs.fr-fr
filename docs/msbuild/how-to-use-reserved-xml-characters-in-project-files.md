@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a041802af1c2fe8cfa195990e6eda3e9b49d773a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633770"
 ---
 # <a name="how-to-use-reserved-xml-characters-in-project-files"></a>Guide pratique pour utiliser des caractères XML réservés dans les fichiers projet
@@ -42,7 +42,7 @@ Lorsque vous créez des fichiers projet, vous devrez peut-être utiliser des car
     <Message Text="The output file is &quot;@(EXEFile)&quot;."/>
     ```
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 
  Dans l’exemple de code suivant, des guillemets doubles sont utilisés pour mettre en surbrillance le nom de fichier dans le message qui est sorti par le fichier projet.
 
@@ -75,5 +75,5 @@ Lorsque vous créez des fichiers projet, vous devrez peut-être utiliser des car
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Référence MSBuild](../msbuild/msbuild-reference.md)
+- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)
 - [MSBuild](../msbuild/msbuild.md)

@@ -1,5 +1,5 @@
 ---
-title: TEXT_POSITION Microsoft Docs
+title: TEXT_POSITION | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1a36c585a09afbd1dec60e1d4399dca258399ae3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713408"
 ---
 # <a name="text_position"></a>TEXT_POSITION
@@ -47,13 +47,13 @@ public struct TEXT_POSITION { 
 Index de la ligne dans le fichier source.
 
 `dwColumn`\
-Caractère décalé en ligne.
+Offset de caractère dans la ligne.
 
 ## <a name="remarks"></a>Notes
 
-Cette structure est utilisée dans les structures [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) et [de démontageData.](../../../extensibility/debugger/reference/disassemblydata.md)
+Cette structure est utilisée dans les structures [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) et [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) .
 
-Cette structure est remplie par un appel aux méthodes suivantes :
+Cette structure est remplie par un appel aux méthodes suivantes :
 
 - [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)
 
@@ -63,7 +63,7 @@ Cette structure est remplie par un appel aux méthodes suivantes :
 
 - [GetOffset](../../../extensibility/debugger/reference/idebugfunctionposition2-getoffset.md)
 
-Cette structure est transmise comme un paramètre aux méthodes suivantes :
+Cette structure est passée en tant que paramètre aux méthodes suivantes :
 
 - [GetText](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)
 
@@ -77,11 +77,11 @@ Cette structure est transmise comme un paramètre aux méthodes suivantes :
 
 ## <a name="requirements"></a>Spécifications
 
- En-tête: msdbg.h
+ En-tête : msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Espace de noms : Microsoft. VisualStudio. Debugger. Interop
 
- Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 

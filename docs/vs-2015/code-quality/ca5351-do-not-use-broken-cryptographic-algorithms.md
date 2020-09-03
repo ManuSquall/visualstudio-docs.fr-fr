@@ -9,10 +9,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: ad4698fe469176ae8ed590c44b4efbb4ccf39de2
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545052"
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351 N’utilisez pas les algorithmes de chiffrement cassés
@@ -28,7 +28,7 @@ ms.locfileid: "85545052"
 > [!NOTE]
 > Cet avertissement a été mis à jour pour la dernière fois en novembre 2015.
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Les fonctions de hachage telles que <xref:System.Security.Cryptography.MD5> et les algorithmes de chiffrement tels que <xref:System.Security.Cryptography.DES> et <xref:System.Security.Cryptography.RC2> peuvent présenter un risque substantiel et provoquer l’exposition d’informations sensibles au moyen de techniques d’attaque triviales telles que les collisions de hachage et les attaques par force brute.
 
  Les algorithmes de chiffrement répertoriés ci-dessous sont soumise aux attaques cryptographiques. L’algorithme de hachage de chiffrement <xref:System.Security.Cryptography.MD5> est soumis aux attaques par collision de hachage.  En fonction de l’utilisation, une collision de hachage peut entraîner un emprunt d’identité, une falsification ou d’autres types d’attaques sur les systèmes qui reposent sur la sortie de chiffrement unique d’une fonction de hachage. Les algorithmes de chiffrement <xref:System.Security.Cryptography.DES> et <xref:System.Security.Cryptography.RC2> sont soumis aux attaques de chiffrement qui peuvent entraîner une divulgation involontaire de données chiffrées.

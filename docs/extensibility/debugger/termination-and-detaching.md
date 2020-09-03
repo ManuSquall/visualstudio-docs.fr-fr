@@ -1,5 +1,5 @@
 ---
-title: Termination et détachement Microsoft Docs
+title: Terminaison et détachement | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,19 +12,19 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0b88255d618ce42fa55d878f192d31523ba3f83b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712489"
 ---
-# <a name="termination-and-detaching"></a>Termination et détachement
-La section suivante décrit la résiliation normale.
+# <a name="termination-and-detaching"></a>Arrêt et détachement
+La section suivante décrit l’arrêt normal.
 
-## <a name="discussion"></a>Discussions
- Après la poursuite de [l’interface IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) ou [IDebugEntryPointEvent2,](../../extensibility/debugger/reference/idebugentrypointevent2.md) s’il n’y a pas de points d’arrêt, d’exceptions, d’erreurs de temps d’exécution ou de boucles infinies dans l’application à déboguer, le programme étant débbugged s’exécute à son terme. Ce processus est la résiliation normale.
+## <a name="discussion"></a>Discussion
+ Après la poursuite de l’interface [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) ou [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) , s’il n’y a pas de points d’arrêt, d’exceptions, d’erreurs d’exécution ou de boucles infinies dans l’application à déboguer, le programme en cours de débogage s’exécute jusqu’à son achèvement. Ce processus est un arrêt normal.
 
- Vous devez envoyer un [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) pour implémenter la résiliation normale. La terminaison normale nécessite l’exécution de la méthode [IDebugProgramDestroyEvent2::GetExitCode](../../extensibility/debugger/reference/idebugprogramdestroyevent2-getexitcode.md) méthode.
+ Vous devez envoyer un [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) pour implémenter l’arrêt normal. L’arrêt normal requiert l’exécution de la méthode [IDebugProgramDestroyEvent2 :: GetExitCode](../../extensibility/debugger/reference/idebugprogramdestroyevent2-getexitcode.md) .
 
 ## <a name="see-also"></a>Voir aussi
-- [Création d’un moteur de débogé personnalisé](../../extensibility/debugger/creating-a-custom-debug-engine.md)
+- [Création d’un moteur de débogage personnalisé](../../extensibility/debugger/creating-a-custom-debug-engine.md)

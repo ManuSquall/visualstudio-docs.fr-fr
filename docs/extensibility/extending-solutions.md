@@ -1,5 +1,5 @@
 ---
-title: Élargir les solutions (en anglais seulement) Microsoft Docs
+title: Extension des solutions | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 5cb60183-2a87-4551-a19f-c7c4e65d60c0
@@ -9,18 +9,18 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 40a9591418dd3d2fb53bee29dfb8192a368e4047
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80711726"
 ---
 # <a name="extend-solutions"></a>Étendre les solutions
-Une solution est un regroupement d’un ou plusieurs projets qui travaillent ensemble pour créer une application.
+Une solution est un regroupement d’un ou de plusieurs projets qui fonctionnent ensemble pour créer une application.
 
 ## <a name="in-this-section"></a>Contenu de cette section
- Les procédures à pas suivantes montrent certaines façons d’étendre les solutions.
+ Les procédures pas à pas suivantes montrent comment vous pouvez étendre des solutions.
 
-1. [Extend the Solution Explorer filter](../extensibility/extending-the-solution-explorer-filter.md) explique comment filtrer ce que la Solution Explorer affiche.
+1. [Étendre le filtre de Explorateur de solutions](../extensibility/extending-the-solution-explorer-filter.md) explique comment filtrer ce que l’Explorateur de solutions affiche.
 
-2. [Gérer le chargement de projet dans une solution](../extensibility/managing-project-loading-in-a-solution.md) explique comment gérer le chargement du projet pour améliorer les performances lorsqu’un utilisateur charge une solution.
+2. [Gérer le chargement du projet dans une solution](../extensibility/managing-project-loading-in-a-solution.md) explique comment gérer le chargement du projet pour améliorer les performances quand un utilisateur charge une solution.

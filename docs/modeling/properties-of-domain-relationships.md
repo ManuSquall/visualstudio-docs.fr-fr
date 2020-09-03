@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2de06e33b26f7af66dc0670193561758c5fa5896
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544155"
 ---
 # <a name="properties-of-domain-relationships"></a>Propriétés des relations de domaine
@@ -33,7 +33,7 @@ Les propriétés du tableau suivant sont associées à une relation de domaine. 
 |Espace de noms|Espace de noms affilié à la relation de domaine.|Espace de noms actuel|
 |Notes|Notes informelles associées à la relation de domaine.|\<none>|
 |Description|Description utilisée pour documenter le code et utilisée dans l’interface utilisateur du concepteur généré.|\<none>|
-|Nom complet|Nom affiché dans le concepteur généré pour la relation de domaine.|\<none>|
+|Nom d’affichage|Nom affiché dans le concepteur généré pour la relation de domaine.|\<none>|
 |Help Keyword|Mot clé facultatif utilisé pour indexer l’aide F1 pour la relation de domaine.|\<none>|
 
 ## <a name="see-also"></a>Voir aussi

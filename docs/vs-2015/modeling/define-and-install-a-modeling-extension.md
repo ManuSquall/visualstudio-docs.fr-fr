@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ef79d1be0b88ecdafa8691189bbc95291a6417ed
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544987"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>Définir et installer une extension de modélisation
@@ -109,7 +109,7 @@ Dans Visual Studio, vous pouvez définir des extensions de diagrammes de modéli
 
 3. Si vous avez utilisé l’option **Exécuter sans débogage** mais que vous souhaitez utiliser le débogueur, revenez à l’instance principale de Visual Studio. Dans le menu **Déboguer** , cliquez sur **Attacher au processus**. Dans la boîte de dialogue, sélectionnez l’instance expérimentale de Visual Studio, dont le nom de programme est **devenv**.
 
-## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a>Installation et désinstallation d’une extension
+## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a> Installation et désinstallation d’une extension
  Procédez comme suit pour exécuter votre extension dans l’instance principale de Visual Studio sur votre ordinateur ou sur d’autres ordinateurs.
 
 1. Sur votre ordinateur, recherchez le fichier **.vsix** généré par votre projet d’extension.
@@ -130,7 +130,7 @@ Dans Visual Studio, vous pouvez définir des extensions de diagrammes de modéli
 
 #### <a name="to-uninstall-an-extension"></a>Pour désinstaller une extension
 
-1. Dans le menu **Outils** , choisissez **Extensions et mises à jour**.
+1. Dans le menu **Outils**, cliquez sur **Extensions et mises à jour**.
 
 2. Développez **Extensions installées**.
 

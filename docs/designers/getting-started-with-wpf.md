@@ -9,15 +9,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 350b43741ec7e5646eefce225ecd157b6781ada1
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85328432"
 ---
 # <a name="get-started-with-wpf"></a>Bien démarrer avec WPF
 
-Windows Presentation Foundation (WPF) est une infrastructure d’interface utilisateur qui permet de créer des applications de bureau clientes. La plateforme de développement WPF prend en charge un large éventail de fonctionnalités de développement d’applications, notamment un modèle d’application, des ressources, des contrôles, des graphiques, une disposition, la liaison de données, des documents et la sécurité. Le Framework fait partie de .NET : ainsi, si vous avez déjà créé des applications avec .NET en utilisant ASP.NET ou Windows Forms, l’environnement de programmation doit vous être familier. WPF utilise le langage XAML (Extensible Application Markup Language) pour fournir un modèle déclaratif à des fins de programmation d’applications.
+Windows Presentation Foundation (WPF) est une infrastructure d’interface utilisateur qui permet de créer des applications de bureau clientes. La plateforme de développement WPF prend en charge un large éventail de fonctionnalités de développement d’applications, notamment un modèle d’application, des ressources, des contrôles, des graphiques, la disposition, la liaison de données, les documents et la sécurité. Le Framework fait partie de .NET : ainsi, si vous avez déjà créé des applications avec .NET en utilisant ASP.NET ou Windows Forms, l’environnement de programmation doit vous être familier. WPF utilise le langage XAML (Extensible Application Markup Language) pour fournir un modèle déclaratif utilisé pour la programmation d’applications.
 
 Cette section contient des rubriques de présentation et d’aide à la prise en main de WPF.
 
@@ -25,7 +25,7 @@ Cette section contient des rubriques de présentation et d’aide à la prise en
 
 |Objet|Articles|
 |-|-|
-|Je veux rentrer dans le vif du sujet...|[Procédure pas à pas : ma première application de bureau WPF](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)|
+|Je veux rentrer dans le vif du sujet...|[Procédure pas à pas : Ma première application de bureau WPF](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)|
 |Je souhaite comparer les outils de conception XAML...|[Concevoir du code XAML dans Visual Studio et Blend pour Visual Studio](../xaml-tools/designing-xaml-in-visual-studio.md)|
 |Vous débutez avec .NET ?|[Guide .NET](/dotnet/standard/)<br /><br />[Application Essentials](/dotnet/standard/application-essentials)<br /><br />[Prise en main de Visual C #](../ide/quickstart-csharp-console.md)|
 |En savoir plus sur WPF...|[Vue d’ensemble de WPF](/dotnet/framework/wpf/introduction-to-wpf)<br /><br />[Vue d’ensemble du langage XAML (WPF)](/dotnet/framework/wpf/advanced/xaml-overview-wpf)<br /><br />[Contrôles](/dotnet/framework/wpf/controls/)<br /><br />[Vue d’ensemble de la liaison de données](/dotnet/desktop-wpf/data/data-binding-overview)<br /><br />[Liaison de données WPF avec LINQ to XML](/dotnet/framework/wpf/data/wpf-data-binding-with-linq-to-xml-overview)|

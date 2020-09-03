@@ -1,5 +1,5 @@
 ---
-title: Fournisseur de symboles (en anglais seulement) Microsoft Docs
+title: Fournisseur de symboles | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,21 +12,21 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 31b90846d9494ee046cf9dc4a3e5de9ff033ea3f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712818"
 ---
 # <a name="symbol-provider"></a>Fournisseur de symboles
-Une mise en œuvre d’évaluateur d’expression doit accéder aux informations symboliques de débagé générées par le compilateur linguistique afin d’évaluer les variables et les expressions. Il le fait en consommant les interfaces d’un fournisseur de symboles (SP), également appelé un gestionnaire de symbole.
+Une implémentation de l’évaluateur d’expression doit accéder aux informations de débogage symboliques générées par le compilateur de langage pour évaluer des variables et des expressions. Pour ce faire, il utilise les interfaces d’un fournisseur de symboles (SP), également appelé gestionnaire de symboles.
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]fournit des SPs pour le code géré ainsi que le code natif à l’aide du format de fichier symbole Program DataBase (PDB). À moins qu’il n’y ait un fort besoin pour votre programme d’utiliser [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]des symboles stockés dans un format personnalisé, il est recommandé que vous utilisiez les SPs fournis par .
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fournit des SPs pour le code managé, ainsi que du code natif utilisant le format de fichier de symboles de base de données du programme (PDB). À moins qu’il soit nécessaire que votre programme utilise des symboles stockés dans un format personnalisé, il est recommandé d’utiliser les SPs fournis par [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
 ## <a name="implementation-notes"></a>Remarques relatives à l’implémentation
- Les [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] moteurs de déboguer s’attendent à parler avec les SPs en utilisant les interfaces Common Language Runtime (CLR). En conséquence, un SP qui travaillera avec les moteurs de déboiffés Visual Studio doit prendre en charge le CLR. Une liste complète de toutes les interfaces de débogage CLR peut être [!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)]trouvé dans debugref.doc, qui fait partie de la .
+ Les [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] moteurs de débogage s’attendent à communiquer avec les SPS à l’aide d’interfaces CLR (Common Language Runtime). Par conséquent, un processeur de stockage qui fonctionne avec les moteurs de débogage Visual Studio doit prendre en charge le CLR. Une liste complète de toutes les interfaces de débogage CLR se trouve dans debugref.doc, qui fait partie de [!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)] .
 
- Si votre SP ne fonctionne qu’avec votre moteur de débogé personnalisé, vous pouvez implémenter le SP comme bon vous semble en fonction des besoins de votre moteur de débogé.
+ Si votre SP ne fonctionne que avec votre moteur de débogage personnalisé, vous pouvez implémenter le SP comme vous le voyez en fonction des besoins de votre moteur de débogage.
 
 ## <a name="see-also"></a>Voir aussi
-- [Composants Debugger](../../extensibility/debugger/debugger-components.md)
+- [Composants du débogueur](../../extensibility/debugger/debugger-components.md)

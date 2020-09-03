@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1914f709a69dbb120e4439ddceeda8b70ad570b4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633861"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>Guide pratique pour exclure des fichiers de la build
@@ -36,7 +36,7 @@ Dans un fichier projet, vous pouvez utiliser des caractères génériques pour i
 
  Si vous avez utilisé des caractères génériques pour inclure tous les fichiers d’un répertoire ou un ensemble imbriqué de répertoires comme entrées d’une génération, il se peut que vous ne vouliez pas inclure un ou plusieurs fichiers du répertoire ou un répertoire de l’ensemble imbriqué des répertoires. Pour exclure un élément de la liste d’éléments, utilisez l’attribut `Exclude`.
 
-#### <a name="to-include-all-cs-or-vb-files-except-form2"></a>Pour inclure tous les fichiers *.cs* ou *.vb* sauf *Form2*
+#### <a name="to-include-all-cs-or-vb-files-except-form2"></a>Pour inclure tous les fichiers *. cs* ou *. vb* à l’exception de *Form2*
 
 - Utilisez l’un des attributs `Include` et `Exclude` suivants :
 
@@ -44,13 +44,13 @@ Dans un fichier projet, vous pouvez utiliser des caractères génériques pour i
     <CSFile Include="*.cs" Exclude="Form2.cs"/>
     ```
 
-    or
+    ou
 
     ```xml
     <VBFile Include="*.vb" Exclude="Form2.vb"/>
     ```
 
-#### <a name="to-include-all-cs-or-vb-files-except-form2-and-form3"></a>Pour inclure tous les fichiers *.cs* ou *.vb* sauf *Form2* et *Form3*
+#### <a name="to-include-all-cs-or-vb-files-except-form2-and-form3"></a>Pour inclure tous les fichiers *. cs* ou *. vb* à l’exception de *Form2* et *Form3*
 
 - Utilisez l’un des attributs `Include` et `Exclude` suivants :
 
@@ -58,13 +58,13 @@ Dans un fichier projet, vous pouvez utiliser des caractères génériques pour i
     <CSFile Include="*.cs" Exclude="Form2.cs;Form3.cs"/>
     ```
 
-    or
+    ou
 
     ```xml
     <VBFile Include="*.vb" Exclude="Form2.vb;Form3.vb"/>
     ```
 
-#### <a name="to-include-all-jpg-files-in-subdirectories-of-the-images-directory-except-those-in-the-version2-directory"></a>Pour inclure tous les fichiers *.jpg* dans les sous-directeurs de l’annuaire *Images* sauf ceux de l’annuaire *Version2*
+#### <a name="to-include-all-jpg-files-in-subdirectories-of-the-images-directory-except-those-in-the-version2-directory"></a>Pour inclure tous les fichiers *. jpg* dans les sous-répertoires du répertoire *images* , à l’exception de ceux du répertoire *version2*
 
 - Utilisez les attributs `Include` et `Exclude` suivants :
 
@@ -81,7 +81,7 @@ Dans un fichier projet, vous pouvez utiliser des caractères génériques pour i
 
  Si vous souhaitez inclure des éléments, par exemple, dans une version Debug, mais pas dans une version Release, vous pouvez utiliser l’attribut `Condition` pour spécifier les conditions dans lesquelles inclure l’élément.
 
-#### <a name="to-include-the-file-formulavb-only-in-release-builds"></a>Pour inclure le fichier *Formula.vb* uniquement dans Release construit
+#### <a name="to-include-the-file-formulavb-only-in-release-builds"></a>Pour inclure le fichier *Formula. vb* uniquement dans les versions release
 
 - Utilisez un attribut `Condition` semblable à ce qui suit :
 
@@ -91,9 +91,9 @@ Dans un fichier projet, vous pouvez utiliser des caractères génériques pour i
         Condition=" '$(Configuration)' == 'Release' " />
     ```
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 
- L’exemple de code suivant construit un projet avec tous les fichiers *.cs* dans l’annuaire, sauf *Form2.cs*.
+ L’exemple de code suivant génère un projet avec tous les fichiers *. cs* du répertoire, à l’exception de *Form2.cs*.
 
 ```xml
 <Project DefaultTargets="Compile"

@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 67bc1a18b4e4cbfdf69fe917c0d0fdff09832983
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545026"
 ---
 # <a name="code-snippets-schema-reference"></a>Référence de schéma des extraits de code
@@ -41,7 +41,7 @@ Les extraits de code IntelliSense sont des parties de code précréées et prêt
 |[Function, élément](../ide/code-snippets-schema-reference.md#function)|[Object, élément](../ide/code-snippets-schema-reference.md#object)|[Élément URL](../ide/code-snippets-schema-reference.md#url)|
 |[Header, élément](../ide/code-snippets-schema-reference.md#header)|[Reference, élément](../ide/code-snippets-schema-reference.md#reference)||
 
-## <a name="assembly-element"></a><a name="assembly"></a>Assembly (élément)
+## <a name="assembly-element"></a><a name="assembly"></a> Assembly (élément)
  Spécifie le nom de l'assembly référencé par l'extrait de code.
 
 > [!NOTE]
@@ -146,7 +146,7 @@ is a great color. I love Blue.
 
  Une valeur texte est requise. Ce texte spécifie le code, avec les littéraux et les objets, que vous pouvez utiliser lorsque cet extrait de code est inséré dans un projet.
 
-## <a name="codesnippet-element"></a><a name="codesnippet"></a>Élément CodeSnippet
+## <a name="codesnippet-element"></a><a name="codesnippet"></a> Élément CodeSnippet
  Vous permet de spécifier un titre et plusieurs extraits de code IntelliSense que vous pouvez insérer dans des fichiers de Visual Studio Code.
 
 ```xml
@@ -170,7 +170,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|
 |[Élément CodeSnippets,](../ide/code-snippets-schema-reference.md#codesnippets)|Élément racine du schéma XML de l'extrait de code.|
 
-## <a name="codesnippets-element"></a><a name="codesnippets"></a>Élément CodeSnippets,
+## <a name="codesnippets-element"></a><a name="codesnippets"></a> Élément CodeSnippets,
  Regroupe les éléments [CodeSnippet](../ide/code-snippets-schema-reference.md#codesnippet). L'élément `CodeSnippets` est l'élément racine du schéma XML de l'extrait de code.
 
 ```xml
@@ -184,7 +184,7 @@ is a great color. I love Blue.
 |-------------------|-----------------|
 |[CodeSnippet, élément](../ide/code-snippets-schema-reference.md#codesnippet)|Élément facultatif. Élément parent pour toutes les données d'extrait de code. Un élément `CodeSnippet` peut ne contenir aucun élément `CodeSnippets` ou en contenir plusieurs.|
 
-## <a name="declarations-element"></a><a name="declarations"></a>Declarations, élément
+## <a name="declarations-element"></a><a name="declarations"></a> Declarations, élément
  Spécifie les littéraux et les objets qui composent un extrait de code que vous pouvez modifier.
 
 ```xml
@@ -204,7 +204,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|
 |[Élément Snippet](../ide/code-snippets-schema-reference.md#snippet)|Contient les références, importations, déclarations et code de l'extrait de code.|
 
-## <a name="default-element"></a><a name="default"></a>Élément par défaut
+## <a name="default-element"></a><a name="default"></a> Élément par défaut
  Spécifie la valeur par défaut du littéral ou de l'objet d'un extrait de code IntelliSense.
 
 ```xml
@@ -221,7 +221,7 @@ is a great color. I love Blue.
 
  Une valeur texte est requise. Ce texte spécifie la valeur par défaut du littéral ou de l'objet qui remplit les champs de l'extrait de code que vous pouvez modifier.
 
-## <a name="description-element"></a><a name="description"></a>Description, élément
+## <a name="description-element"></a><a name="description"></a> Description, élément
  Spécifie des informations relatives à la description du contenu d'un extrait de code IntelliSense.
 
 ```xml
@@ -236,7 +236,7 @@ is a great color. I love Blue.
 
  Une valeur texte est requise. Ce texte décrit l'extrait de code.
 
-## <a name="function-element"></a><a name="function"></a>Function, élément
+## <a name="function-element"></a><a name="function"></a> Function, élément
  Spécifie une fonction à exécuter lorsque le littéral ou l'objet reçoit le focus dans Visual Studio.
 
 > [!NOTE]
@@ -255,7 +255,7 @@ is a great color. I love Blue.
 
  Une valeur texte est requise. Ce texte spécifie une fonction à exécuter lorsque le littéral ou le champ objet reçoit le focus dans Visual Studio.
 
-## <a name="header-element"></a><a name="header"></a>Header, élément
+## <a name="header-element"></a><a name="header"></a> Header, élément
  Spécifie des informations d'ordre général sur l'extrait de code IntelliSense.
 
 ```xml
@@ -285,7 +285,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|
 |[CodeSnippet, élément](../ide/code-snippets-schema-reference.md#codesnippet)|Élément parent pour toutes les données d'extrait de code.|
 
-## <a name="helpurl-element"></a><a name="helpurl"></a>Élément HelpUrl,
+## <a name="helpurl-element"></a><a name="helpurl"></a> Élément HelpUrl,
  Spécifie une URL qui fournit des informations supplémentaires sur un extrait de code.
 
 > [!NOTE]
@@ -304,7 +304,7 @@ is a great color. I love Blue.
 
  Une valeur texte est facultative. Ce texte spécifie l'URL à visiter pour plus d'informations sur un extrait de code.
 
-## <a name="id-element"></a><a name="id"></a>ID, élément
+## <a name="id-element"></a><a name="id"></a> ID, élément
  Spécifie l'identificateur unique d'un élément `Literal` ou `Object`. Deux objets ou littéraux d'un même extrait de code ne peuvent avoir la même valeur texte dans leurs éléments `ID`. Les littéraux et objets ne peuvent pas contenir d'élément `ID` avec une valeur de fin. La valeur `$end$` est réservée et utilisée pour marquer l'emplacement du curseur après que l'extrait de code a été inséré.
 
 ```xml
@@ -321,7 +321,7 @@ is a great color. I love Blue.
 
  Une valeur texte est requise. Ce texte spécifie l'identificateur unique de l'objet ou du littéral.
 
-## <a name="import-element"></a><a name="import"></a>Élément Import
+## <a name="import-element"></a><a name="import"></a> Élément Import
  Spécifie les espaces de noms importés et utilisés par un extrait de code IntelliSense.
 
 > [!NOTE]
@@ -342,7 +342,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|
 |[Imports, élément](../ide/code-snippets-schema-reference.md#imports)|Élément grouping pour les éléments **Import**.|
 
-## <a name="imports-element"></a><a name="imports"></a>Élément Imports
+## <a name="imports-element"></a><a name="imports"></a> Élément Imports
  Groupe des éléments `Import` individuels.
 
 > [!NOTE]
@@ -377,7 +377,7 @@ is a great color. I love Blue.
 
  Une valeur texte est requise. Mot clé pour l'extrait de code.
 
-## <a name="keywords-element"></a><a name="keywords"></a>Keywords, élément
+## <a name="keywords-element"></a><a name="keywords"></a> Keywords, élément
  Groupe des éléments `Keyword` individuels. Les mots clés d'extrait de code sont utilisés par Visual Studio et représentent une manière standard pour les fournisseurs de contenu en ligne d'ajouter des mots clés personnalisés pour les recherches ou la catégorisation.
 
 ```xml
@@ -395,7 +395,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|
 |[Header, élément](../ide/code-snippets-schema-reference.md#header)|Contient des informations générales sur l'extrait de code.|
 
-## <a name="literal-element"></a><a name="literal"></a>Élément Literal
+## <a name="literal-element"></a><a name="literal"></a> Élément Literal
  Définit les littéraux de l'extrait de code que vous pouvez modifier. L'élément `Literal` est utilisé pour identifier le remplacement d'une partie de code entièrement contenue dans l'extrait de code, mais qui sera probablement personnalisée après avoir été insérée dans le code. Par exemple, les chaînes littérales, les valeurs numériques et certains noms de variables doivent être déclarés comme des littéraux.
 
  Les littéraux et les objets ne peuvent pas contenir d’élément **ID** avec la valeur selected ou end. La valeur `$selected$` représente le texte sélectionné dans le document qui sera inséré dans l'extrait de code lorsqu'il est appelé. `$end$` marque l'emplacement pour placer le curseur après insertion de l'extrait de code.
@@ -424,7 +424,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|
 |[Declarations, élément](../ide/code-snippets-schema-reference.md#declarations)|Contient les littéraux et les objets d'un extrait de code que vous pouvez modifier.|
 
-## <a name="namespace-element"></a><a name="namespace"></a>Namespace, élément
+## <a name="namespace-element"></a><a name="namespace"></a> Namespace, élément
  Spécifie l'espace de noms qui doit être importé pour compiler l'extrait de code et l'exécuter. L'espace de noms spécifié dans l'élément `Namespace` est ajouté automatiquement au début du code à une instruction `Imports`, s'il n'y figure pas déjà.
 
 > [!NOTE]
@@ -442,7 +442,7 @@ is a great color. I love Blue.
 
  Une valeur texte est requise. Ce texte spécifie un espace de noms que l'extrait de code considère comme importé.
 
-## <a name="object-element"></a><a name="object"></a>Élément Object
+## <a name="object-element"></a><a name="object"></a> Élément Object
  Définit les objets de l'extrait de code que vous pouvez modifier. L'élément `Object` est utilisé pour identifier un élément qui est requis par l'extrait de code, mais qui est vraisemblablement en dehors de l'extrait de code lui-même. Par exemple, les contrôles Windows Forms, les contrôles ASP.NET, les instances d'objet et les instances de type doivent être déclarées comme objets. Les déclarations d'objet requièrent qu'un type soit spécifié, ce qui est fait avec l'élément `Type`.
 
 ```xml
@@ -493,7 +493,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|
 |[References, élément](../ide/code-snippets-schema-reference.md#references)|Élément de regroupement pour les éléments `Reference`.|
 
-## <a name="references-element"></a><a name="references"></a>References, élément
+## <a name="references-element"></a><a name="references"></a> References, élément
  Groupe des éléments `Reference` individuels.
 
 > [!NOTE]
@@ -513,7 +513,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|
 |[Élément Snippet](../ide/code-snippets-schema-reference.md#snippet)|Contient les références, importations, déclarations et code de l'extrait de code.|
 
-## <a name="shortcut-element"></a><a name="shortcut"></a>Shortcut, élément
+## <a name="shortcut-element"></a><a name="shortcut"></a> Shortcut, élément
  Spécifie le texte de raccourci utilisé pour insérer l'extrait de code. La valeur texte d'un élément `Shortcut` peut contenir uniquement des signes alphanumériques, des traits d'union (-) et des traits de soulignement (_).
 
 > [!CAUTION]
@@ -531,7 +531,7 @@ is a great color. I love Blue.
 
  Une valeur texte est facultative. Ce texte est utilisé comme raccourci pour insérer l'extrait de code.
 
-## <a name="snippet-element"></a><a name="snippet"></a>Élément Snippet
+## <a name="snippet-element"></a><a name="snippet"></a> Élément Snippet
  Spécifie les références, les importations, les déclarations et le code de l'extrait de code.
 
 ```xml
@@ -555,7 +555,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|
 |[CodeSnippet, élément](../ide/code-snippets-schema-reference.md#codesnippet)|Vous permet de spécifier un titre et plusieurs extraits de code IntelliSense que vous pouvez insérer dans des fichiers de Visual Studio Code.|
 
-## <a name="snippettype-element"></a><a name="snippettype"></a>SnippetType, élément
+## <a name="snippettype-element"></a><a name="snippettype"></a> SnippetType, élément
  Spécifie la manière dont Visual Studio insère l'extrait de code.
 
 ```xml
@@ -594,7 +594,7 @@ is a great color. I love Blue.
 |--------------------|-----------------|
 |[Header, élément](../ide/code-snippets-schema-reference.md#header)|Spécifie des informations générales sur l'extrait de code.|
 
-## <a name="title-element"></a><a name="title"></a>Title, élément
+## <a name="title-element"></a><a name="title"></a> Title, élément
  Spécifie le titre de l'extrait de code. Le titre stocké dans l’élément `Title` de l’extrait de code apparaît dans le **Sélecteur d’extraits de code**, ainsi que dans la description de l’extrait de code située dans le **Gestionnaire des extraits de code**.
 
 ```xml
@@ -609,7 +609,7 @@ is a great color. I love Blue.
 
  Une valeur texte est requise. Ce texte spécifie le titre de l'extrait de code.
 
-## <a name="tooltip-element"></a><a name="tooltip"></a>ToolTip, élément
+## <a name="tooltip-element"></a><a name="tooltip"></a> ToolTip, élément
  Décrit la valeur attendue et l'utilisation d'un littéral ou d'un objet d'extrait de code que Visual Studio affiche dans une info-bulle lorsqu'il insère l'extrait de code dans un projet. Le texte d'Info-bulle est affiché lorsque la souris pointe sur le littéral ou sur l'objet après que l'extrait de code a été inséré.
 
 ```xml
@@ -625,7 +625,7 @@ is a great color. I love Blue.
 
  Une valeur texte est requise. Ce texte spécifie la description de l'info-bulle à associer à l'objet ou au littéral dans l'extrait de code.
 
-## <a name="type-element"></a><a name="type"></a>Élément type
+## <a name="type-element"></a><a name="type"></a> Élément type
  Spécifie le type de l'objet. L'élément `Object` est utilisé pour identifier un élément qui est requis par l'extrait de code, mais qui est vraisemblablement en dehors de l'extrait de code lui-même. Par exemple, les contrôles Windows Forms, les contrôles ASP.NET, les instances d'objet et les instances de type doivent être déclarées comme objets. Les déclarations d'objet requièrent qu'un type soit spécifié, ce qui est fait avec l'élément `Type`.
 
 ```xml
@@ -640,7 +640,7 @@ is a great color. I love Blue.
 
  Une valeur texte est requise. Ce texte spécifie le type de l'objet.
 
-## <a name="url-element"></a><a name="url"></a>Élément URL
+## <a name="url-element"></a><a name="url"></a> Élément URL
  Spécifie une URL qui fournit des informations supplémentaires sur l'assembly référencé.
 
 > [!NOTE]

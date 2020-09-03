@@ -9,16 +9,16 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3e88f314ccdf2b91215fdfe579741591c7eb724d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544207"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Polices et mise en forme pour Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-## <a name="the-environment-font"></a><a name="BKMK_TheEnvironmentFont"></a>Police de l’environnement
+## <a name="the-environment-font"></a><a name="BKMK_TheEnvironmentFont"></a> Police de l’environnement
  Toutes les polices dans Visual Studio doivent être exposées à l’utilisateur pour la personnalisation. Cela s’effectue principalement via la page **polices et couleurs** de la boîte de dialogue **Outils > options** . Les trois principales catégories de paramètres de police sont les suivantes :
 
 - **Police d’environnement** : police principale de l’environnement de développement intégré (IDE), utilisée pour tous les éléments d’interface, y compris les boîtes de dialogue, les menus, les fenêtres outil et les fenêtres de document. Par défaut, la police d’environnement est liée à une police système qui s’affiche sous la forme 9 PT Segoe UI dans les versions actuelles de Windows. L’utilisation d’une police pour tous les éléments d’interface permet de garantir un aspect cohérent des polices dans l’IDE.
@@ -34,7 +34,7 @@ ms.locfileid: "85544207"
 
 1. Pour le texte de code dans l’éditeur, redimensionnez avec le paramètre de police de texte du code et répondez au niveau de zoom du texte de l’éditeur.
 
-2. Tous les autres éléments de l’interface doivent être liés au paramètre de police d’environnement et répondre à toutes les modifications globales dans l’environnement. Cela comprend (mais n’est pas limité à) :
+2. Tous les autres éléments de l’interface doivent être liés au paramètre de police d’environnement et répondre à toutes les modifications globales dans l’environnement. Ce sont notamment les suivantes :
 
     - Texte dans les menus contextuels
 
@@ -90,7 +90,7 @@ window.ShowModal()
 
 ```
 
-### <a name="formatting-scalingbolding-reference"></a><a name="BKMK_Formatting"></a>Référence de mise en forme (mise à l’échelle/mise en gras)
+### <a name="formatting-scalingbolding-reference"></a><a name="BKMK_Formatting"></a> Référence de mise en forme (mise à l’échelle/mise en gras)
  Certaines boîtes de dialogue nécessitent un texte en gras ou une taille différente de la police de l’environnement. Auparavant, les polices plus volumineuses que la police de l’environnement étaient codées en tant que « police d’environnement + 2 » ou similaire. L’utilisation des extraits de code fournis prend en charge les moniteurs haute résolution et garantit que le texte affiché apparaît toujours à la taille et au poids corrects (par exemple, Light ou Semilight).
 
 > **Remarque : avant d’appliquer la mise en forme, vérifiez que vous suivez les instructions fournies dans [style de texte](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).**
@@ -323,7 +323,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
  Pour réinitialiser la police, cliquez sur « utiliser les valeurs par défaut » sous **outils > Options > environnement > polices et couleurs**.
 
-## <a name="text-style"></a><a name="BKMK_TextStyle"></a>Style de texte
+## <a name="text-style"></a><a name="BKMK_TextStyle"></a> Style de texte
  Le style texte fait référence à la taille de police, au poids et à la casse. Pour obtenir des conseils d’implémentation, consultez [la police de l’environnement](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont).
 
 ### <a name="text-casing"></a>Casse du texte
@@ -436,49 +436,49 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 #### <a name="375-environment-font--light"></a>police d’environnement 375% + clair
 
-|Utilisation|Apparence|
+|Usage|Apparence|
 |-|-|
-|**Utilisation :** Rares. Interface utilisateur personnalisée uniquement.<br /><br /> **À faire :**<br /><br /> -Utiliser la casse en majuscules<br />-Toujours utiliser l’épaisseur légère<br /><br /> **Ne pas :**<br /><br /> -À utiliser pour l’interface utilisateur autre que la signature (page de démarrage)<br />-Gras, italique ou italique gras<br />-À utiliser pour le corps du texte<br />-À utiliser dans les fenêtres outil|**Apparaît comme suit :** 34 PT Segoe UI clair<br /><br /> **Exemple visuel :**<br /><br /> *Actuellement non utilisé. Peut être utilisé dans la page de démarrage.*|
+|**Utilisation :** Rares. Interface utilisateur personnalisée uniquement.<br /><br /> **Ne**<br /><br /> -Utiliser la casse en majuscules<br />-Toujours utiliser l’épaisseur légère<br /><br /> **Ne pas :**<br /><br /> -À utiliser pour l’interface utilisateur autre que la signature (page de démarrage)<br />-Gras, italique ou italique gras<br />-À utiliser pour le corps du texte<br />-À utiliser dans les fenêtres outil|**Apparaît comme suit :** 34 PT Segoe UI clair<br /><br /> **Exemple visuel :**<br /><br /> *Actuellement non utilisé. Peut être utilisé dans la page de démarrage.*|
 
 #### <a name="310-environment-font--light"></a>police d’environnement 310% + clair
 
-|Utilisation|Apparence|
+|Usage|Apparence|
 |-|-|
-|**Utilisation :**<br /><br /> -Plus grand en-tête dans les boîtes de dialogue de signature<br />-Titre du rapport principal<br /><br /> **À faire :**<br /><br /> -Utiliser la casse en majuscules<br />-Toujours utiliser l’épaisseur légère<br /><br /> **Ne pas :**<br /><br /> -À utiliser pour l’interface utilisateur autre que la signature (page de démarrage)<br />-Gras, italique ou italique gras<br />-À utiliser pour le corps du texte<br />-À utiliser dans les fenêtres outil|**Apparaît comme :** 28 PT Segoe UI clair<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de police d’environnement de 310% &#43; en-tête clair](../../extensibility/ux-guidelines/media/0202-a-ef310.png "0202-a_EF310")|
+|**Utilisation :**<br /><br /> -Plus grand en-tête dans les boîtes de dialogue de signature<br />-Titre du rapport principal<br /><br /> **Ne**<br /><br /> -Utiliser la casse en majuscules<br />-Toujours utiliser l’épaisseur légère<br /><br /> **Ne pas :**<br /><br /> -À utiliser pour l’interface utilisateur autre que la signature (page de démarrage)<br />-Gras, italique ou italique gras<br />-À utiliser pour le corps du texte<br />-À utiliser dans les fenêtres outil|**Apparaît comme :** 28 PT Segoe UI clair<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de police d’environnement de 310% &#43; en-tête clair](../../extensibility/ux-guidelines/media/0202-a-ef310.png "0202-a_EF310")|
 
 #### <a name="200-environment-font--semilight"></a>200% police d’environnement + Semilight
 
-|Utilisation|Apparence|
+|Usage|Apparence|
 |-|-|
-|**Utilisation :**<br /><br /> -En-têtes<br />-Titres dans les boîtes de dialogue petites et moyennes<br /><br /> **À faire :**<br /><br /> -Utiliser la casse en majuscules<br />-Toujours utiliser le poids de Semilight<br /><br /> **Ne pas :**<br /><br /> -Gras, italique ou italique gras<br />-À utiliser pour le corps du texte<br />-À utiliser dans les fenêtres outil|**S’affiche sous la forme :** 18 PT Segoe UI Semillight<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de police d’environnement 200% &#43; Semilight](../../extensibility/ux-guidelines/media/0202-b-ef200.png "0202-b_EF200")|
+|**Utilisation :**<br /><br /> -En-têtes<br />-Titres dans les boîtes de dialogue petites et moyennes<br /><br /> **Ne**<br /><br /> -Utiliser la casse en majuscules<br />-Toujours utiliser le poids de Semilight<br /><br /> **Ne pas :**<br /><br /> -Gras, italique ou italique gras<br />-À utiliser pour le corps du texte<br />-À utiliser dans les fenêtres outil|**S’affiche sous la forme :** 18 PT Segoe UI Semillight<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de police d’environnement 200% &#43; Semilight](../../extensibility/ux-guidelines/media/0202-b-ef200.png "0202-b_EF200")|
 
 #### <a name="155-environment-font"></a>police d’environnement 155%
 
-|Utilisation|Apparence|
+|Usage|Apparence|
 |-|-|
 |**Utilisation :**<br /><br /> -En-têtes de section dans l’interface utilisateur du document<br />-Rapports<br /><br /> **Procédez comme suit :** Utiliser la casse des phrases<br /><br /> **Ne pas :**<br /><br /> -Gras, italique ou italique gras<br />-À utiliser pour le corps du texte<br />-À utiliser dans les contrôles Visual Studio standard<br />-À utiliser dans les fenêtres outil|**S’affiche sous la forme :** 14 PT Segoe UI<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de titre de police d'environnement 155 %](../../extensibility/ux-guidelines/media/0202-c-ef155.png "0202-c_EF155")|
 
 #### <a name="133-environment-font"></a>police d’environnement 133%
 
-|Utilisation|Apparence|
+|Usage|Apparence|
 |-|-|
 |**Utilisation :**<br /><br /> -Sous-titres plus petits dans les boîtes de dialogue de signature<br />-Sous-titres plus petits dans l’interface utilisateur du document<br /><br /> **Procédez comme suit :** Utiliser la casse des phrases<br /><br /> **Ne pas :**<br /><br /> -Gras, italique ou italique gras<br />-À utiliser pour le corps du texte<br />-À utiliser dans les contrôles Visual Studio standard<br />-À utiliser dans les fenêtres outil|**S’affiche sous la forme :** 12 pt Segoe UI<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de titre de police d'environnement 133 %](../../extensibility/ux-guidelines/media/0202-d-ef133.png "0202-d_EF133")|
 
 #### <a name="122-environment-font"></a>police d’environnement 122%
 
-|Utilisation|Apparence|
+|Usage|Apparence|
 |-|-|
 |**Utilisation :**<br /><br /> -En-têtes de section dans les boîtes de dialogue de signature<br />-Nœuds supérieurs en mode arborescence<br />-Navigation de tabulation verticale<br /><br /> **Procédez comme suit :** Utiliser la casse des phrases<br /><br /> **Ne pas :**<br /><br /> -Gras, italique ou italique gras<br />-À utiliser pour le corps du texte<br />-À utiliser dans les contrôles Visual Studio standard<br />-À utiliser dans les fenêtres outil|**S’affiche sous la forme :** 11 PT Segoe UI<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de titre de police d'environnement 122 %](../../extensibility/ux-guidelines/media/0202-e-ef122.png "0202-e_EF122")|
 
 #### <a name="environment-font--bold"></a>Police d’environnement + gras
 
-|Utilisation|Apparence|
+|Usage|Apparence|
 |-|-|
-|**Utilisation :**<br /><br /> -Étiquettes et sous-titres dans les boîtes de dialogue de signature<br />-Étiquettes et sous-titres dans les rapports<br />-Étiquettes et sous-titres dans l’interface utilisateur du document<br /><br /> **À faire :**<br /><br /> -Utiliser la casse en majuscules<br />-Utiliser le poids gras<br /><br /> **Ne pas :**<br /><br /> -Italique ou italique gras<br />-À utiliser pour le corps du texte<br />-À utiliser dans les contrôles Visual Studio standard<br />-À utiliser dans les fenêtres outil|**S’affiche sous la forme :** 9 PT en gras Segoe UI<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de police d’environnement &#43; en-tête en gras](../../extensibility/ux-guidelines/media/0202-f-efb.png "0202-f_EFB")|
+|**Utilisation :**<br /><br /> -Étiquettes et sous-titres dans les boîtes de dialogue de signature<br />-Étiquettes et sous-titres dans les rapports<br />-Étiquettes et sous-titres dans l’interface utilisateur du document<br /><br /> **Ne**<br /><br /> -Utiliser la casse en majuscules<br />-Utiliser le poids gras<br /><br /> **Ne pas :**<br /><br /> -Italique ou italique gras<br />-À utiliser pour le corps du texte<br />-À utiliser dans les contrôles Visual Studio standard<br />-À utiliser dans les fenêtres outil|**S’affiche sous la forme :** 9 PT en gras Segoe UI<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de police d’environnement &#43; en-tête en gras](../../extensibility/ux-guidelines/media/0202-f-efb.png "0202-f_EFB")|
 
 #### <a name="environment-font"></a>Police d’environnement
 
-|Utilisation|Apparence|
+|Usage|Apparence|
 |-|-|
 |**Utilisation :** Tout le reste du texte<br /><br /> **Procédez comme suit :** Utiliser la casse des phrases<br /><br /> **Ne pas :** Italique ou italique gras|**S’affiche sous la forme :** 9 PT Segoe UI<br /><br /> **Exemple visuel :**<br /><br /> ![Exemple de police d'environnement](../../extensibility/ux-guidelines/media/0202-g-ef.png "0202-g_EF")|
 

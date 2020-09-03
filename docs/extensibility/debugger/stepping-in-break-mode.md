@@ -1,5 +1,5 @@
 ---
-title: Passer en mode Pause (fr) Microsoft Docs
+title: Pas à pas détaillé en mode arrêt | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,20 +13,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3161fc1c1ec8b44d96b3793198ac630ba2e32d67
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712855"
 ---
-# <a name="stepping-in-break-mode"></a>Passer en mode pause
-La section suivante décrit le processus qui se produit lorsque le débbuggeur est en mode pause et doit passer par le code :
+# <a name="stepping-in-break-mode"></a>Exécution pas à pas en mode arrêt
+La section suivante décrit le processus qui se produit lorsque le débogueur est en mode arrêt et doit exécuter le code pas à pas :
 
-## <a name="stepping-process"></a>Processus d’étape
+## <a name="stepping-process"></a>Processus d’exécution pas à pas
 
-1. Appelez [IDebugProgram2::Step](../../extensibility/debugger/reference/idebugprogram2-step.md) with [STEPKIND](../../extensibility/debugger/reference/stepkind.md) et [STEPUNIT](../../extensibility/debugger/reference/stepunit.md) arguments to execute a step.
+1. Appelez [IDebugProgram2 :: Step](../../extensibility/debugger/reference/idebugprogram2-step.md) avec [STEPKIND](../../extensibility/debugger/reference/stepkind.md) et [STEPUNIT](../../extensibility/debugger/reference/stepunit.md) arguments pour exécuter une étape.
 
-2. Lorsque l’étape est terminée, envoyez un [IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md) comme un événement d’arrêt.
+2. Lorsque l’étape est terminée, envoyez un [IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md) en tant qu’événement d’arrêt.
 
 ## <a name="see-also"></a>Voir aussi
-- [Appel d’événements débbugger](../../extensibility/debugger/calling-debugger-events.md)
+- [Appel des événements du débogueur](../../extensibility/debugger/calling-debugger-events.md)

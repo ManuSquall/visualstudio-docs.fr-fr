@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 2416eb24c21ef0e61bdb6db3de66c892e1eb699f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545338"
 ---
 # <a name="ca1822-mark-members-as-static"></a>CA1822 : Marquez les membres comme static
@@ -34,7 +34,7 @@ Pour obtenir la documentation la plus récente sur Visual Studio, consultez [CA1
 |Category|Microsoft. performance|
 |Modification avec rupture|Sans rupture : si le membre n’est pas visible à l’extérieur de l’assembly, quelle que soit la modification que vous apportez.<br /><br /> Sans rupture : Si vous changez simplement le membre en membre d’instance avec le `this` mot clé.<br /><br /> Avec rupture : Si vous remplacez le membre d’un membre d’instance par un membre statique et qu’il est visible à l’extérieur de l’assembly.|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Un membre qui n’accède pas aux données d’instance n’est pas marqué comme static (Shared in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ).
 
 ## <a name="rule-description"></a>Description de la règle

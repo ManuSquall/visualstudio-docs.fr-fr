@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 15e8be092a8e1e065f2aa1a80be7447a370974b0
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85331870"
 ---
 # <a name="collect-concurrency-data-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Collecter des données concurrentielles pour les applications autonomes en utilisant la ligne de commande du profileur
@@ -24,7 +24,7 @@ La méthode d’accès concurrentiel des outils de profilage [!INCLUDE[vsprvs](.
 
 ## <a name="common-tasks"></a>Tâches courantes
 
-|Tâche|Contenu associé|
+|Tâche|Contenu connexe|
 |----------|---------------------|
 |**Démarrer une application .NET Framework et profiler des données concurrentielles**|-   [Comment : lancer une application de .NET Framework pour collecter des données d’accès concurrentiel](../profiling/how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-concurrency-data.md)|
 |**Démarrer une application C/C++ et profiler des données concurrentielles**|-   [Comment : lancer une application native pour collecter des données d’accès concurrentiel](../profiling/how-to-launch-a-stand-alone-native-application-to-collect-concurrency-data.md)|
@@ -35,7 +35,7 @@ La méthode d’accès concurrentiel des outils de profilage [!INCLUDE[vsprvs](.
 
 ### <a name="profile-stand-alone-applications"></a>Profiler des applications autonomes
 
-|Tâche|Contenu associé|
+|Tâche|Contenu connexe|
 |----------|---------------------|
 |**Profiler à l’aide de la méthode d’échantillonnage**|-   [Collecter des statistiques d’applications en utilisant l’échantillonnage](../profiling/collecting-application-statistics-for-stand-alone-applications.md)|
 |**Profiler à l’aide de la méthode d’instrumentation**|-   [Collecter les données temporelles détaillées à l’aide de l’instrumentation](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application.md)|
@@ -44,7 +44,7 @@ La méthode d’accès concurrentiel des outils de profilage [!INCLUDE[vsprvs](.
 
 ### <a name="profile-concurrency-issues"></a>Profiler des problèmes de concurrence
 
-|Tâche|Contenu associé|
+|Tâche|Contenu connexe|
 |----------|---------------------|
 |**Profiler des applications ASP.NET**|-   [Collecter les données d’accès concurrentiel](../profiling/collecting-concurrency-data-for-an-aspnet-web-application.md)|
 |**Profiler des services**|-   [Collecter les données d’accès concurrentiel](../profiling/collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md)|

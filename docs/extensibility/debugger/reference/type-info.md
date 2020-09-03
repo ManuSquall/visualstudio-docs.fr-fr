@@ -1,5 +1,5 @@
 ---
-title: TYPE_INFO Microsoft Docs
+title: TYPE_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 82796c1d82dc3ca77151abcec3e1dd6ce13ac59d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713327"
 ---
 # <a name="type_info"></a>TYPE_INFO
-Cette structure spécifie divers types d’informations sur le type d’un champ.
+Cette structure spécifie différents genres d’informations sur le type d’un champ.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -48,42 +48,42 @@ public struct TYPE_INFO {
 
 ## <a name="members"></a>Membres
  `dwKind`\
- Une valeur du [recensement dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) qui détermine comment interpréter le syndicat.
+ Valeur de l’énumération [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) qui détermine comment interpréter l’Union.
 
  `type.typeMeta`\
- [C seulement] Contient [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md) une structure METADATA_TYPE `dwKind` `TYPE_KIND_METADATA`si elle est .
+ [C++ uniquement] Contient une structure [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md) si `dwKind` est `TYPE_KIND_METADATA` .
 
  `type.typePdb`\
- [C seulement] Contient une structure [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md) `dwKind` si `TYPE_KIND_PDB`elle est .
+ [C++ uniquement] Contient une structure [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md) si `dwKind` est `TYPE_KIND_PDB` .
 
  `type.typeBuilt`\
- [C seulement] Contient une structure [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md) `dwKind` si `TYPE_KIND_BUILT`elle est .
+ [C++ uniquement] Contient une structure [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md) si `dwKind` est `TYPE_KIND_BUILT` .
 
  `type.unused`\
- Rembourrage inutilisé.
+ Remplissage inutilisé.
 
  `type`\
- Nom du syndicat.
+ Nom de l’Union.
 
  `unionmember`\
- [C seulement] Enchôte ceci au `dwKind`type de structure approprié basé sur .
+ [C# uniquement] Marshalez-le vers le type de structure approprié en fonction de `dwKind` .
 
 ## <a name="remarks"></a>Notes
- Cette structure est transmise à la méthode [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) où elle est remplie. La façon dont le contenu de `dwKind` la structure est interprété est basée sur le terrain.
+ Cette structure est transmise à la méthode [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) où elle est remplie. La façon dont le contenu de la structure est interprété est basée sur le `dwKind` champ.
 
 > [!NOTE]
-> [C seulement] Si `dwKind` elle `TYPE_KIND_BUILT`est égale, alors il est nécessaire de libérer l’objet sous-jacent [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) lors de la destruction de la `TYPE_INFO` structure. Pour ce faire, il suffit d'appeler `typeInfo.type.typeBuilt.pUnderlyingField->Release()`.
+> [C++ uniquement] Si est `dwKind` égal `TYPE_KIND_BUILT` à, il est nécessaire de libérer l’objet [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) sous-jacent lors de la destruction de la `TYPE_INFO` structure. Pour ce faire, il suffit d'appeler `typeInfo.type.typeBuilt.pUnderlyingField->Release()`.
 
- [C seulement] Le tableau suivant montre `unionmember` comment interpréter le membre pour chaque type de type. L’exemple montre comment cela se fait pour un type de type.
+ [C# uniquement] Le tableau suivant indique comment interpréter le `unionmember` membre pour chaque genre de type. L’exemple montre comment effectuer cette opération pour un genre de type.
 
-|`dwKind`|`unionmember`interprété comme|
+|`dwKind`|`unionmember` interprété comme|
 |--------------|----------------------------------|
 |`TYPE_KIND_METADATA`|[METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md)|
 |`TYPE_KIND_PDB`|[PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md)|
 |`TYPE_KIND_BUILT`|[BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md)|
 
 ## <a name="example"></a>Exemple
- Cet exemple montre comment `unionmember` interpréter `TYPE_INFO` le membre de la structure dans le C. Cet exemple montre l’interprétation`TYPE_KIND_METADATA`d’un seul type () mais les autres sont interprétés exactement de la même manière.
+ Cet exemple montre comment interpréter le `unionmember` membre de la `TYPE_INFO` structure en C#. Cet exemple illustre l’interprétation d’un seul type ( `TYPE_KIND_METADATA` ), mais les autres sont interprétés exactement de la même façon.
 
 ```csharp
 using System;
@@ -106,17 +106,17 @@ namespace MyPackage
 }
 ```
 
-## <a name="requirements"></a>Spécifications
- En-tête: sh.h
+## <a name="requirements"></a>Configuration requise
+ En-tête : SH. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Espace de noms : Microsoft. VisualStudio. Debugger. Interop
 
- Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Structures et unions](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)
-- [GetTypeInfo (en anglais)](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)
+- [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)
 - [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md)
 - [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md)
 - [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md)

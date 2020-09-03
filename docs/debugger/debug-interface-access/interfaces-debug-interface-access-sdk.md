@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 902a3d361eb06288a0e50e9f384b67a2a8c61aa1
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85461272"
 ---
 # <a name="interfaces-debug-interface-access-sdk"></a>Interfaces (Kit de développement logiciel Debug Interface Access)
@@ -162,7 +162,7 @@ Décrit les propriétés d’une instance de symbole.
 
 Décrit les énumérations et les structures utilisées par les différentes interfaces du kit de développement logiciel (SDK) DIA.
 
-[Constantes (Kit de développement logiciel Debug Interface Access)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)
+[Constantes (Kit de développement logiciel Debug Interface Access)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)
 
 Décrit les constantes disponibles dans le kit de développement logiciel (SDK) DIA.
 

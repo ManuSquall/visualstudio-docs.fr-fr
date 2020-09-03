@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d2fe7c62ce04e61a8476731ed14ee14f60e2b044
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85461041"
 ---
 # <a name="thunk_ordinal"></a>THUNK_ORDINAL
@@ -53,7 +53,7 @@ THUNK_ORDINAL_TRAMP_INCREMENTAL thunk trampoline incrémentiel (un thunk trampol
 
 THUNK_ORDINAL_TRAMP_BRANCHISLAND thunk point de branche trampoline.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Les valeurs de cette énumération sont retournées à partir d’un appel à la méthode [IDiaSymbol :: get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md) .
 
 ## <a name="requirements"></a>Configuration requise

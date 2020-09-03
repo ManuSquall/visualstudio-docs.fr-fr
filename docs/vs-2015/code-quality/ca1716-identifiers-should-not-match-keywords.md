@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 67a3588a857a0eea7d338217f975ed593dfdad52
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543700"
 ---
 # <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716 : Les identificateurs ne doivent pas correspondre à des mots clés
@@ -32,7 +32,7 @@ ms.locfileid: "85543700"
 |Category|Microsoft. Naming|
 |Modification avec rupture|Rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Le nom d’un espace de noms, d’un type, d’un viritual ou d’un membre d’interface correspond à un mot clé réservé dans un langage de programmation.
 
 ## <a name="rule-description"></a>Description de la règle

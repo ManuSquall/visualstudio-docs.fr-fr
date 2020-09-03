@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 33302a4a686d80621cc64ee018371a2d03ea30ee
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76114728"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Configurer les avertissements en Visual Basic
@@ -39,7 +39,7 @@ L’option de ligne de commande **/warnaserror** du compilateur peut également 
 |Option de ligne de commande|Spécifie|
 | - |---------------|
 |`/warnaserror+`|Considérer tous les avertissements comme des erreurs|
-|`/warnsaserror`-|Ne considère pas les avertissements comme des erreurs. Il s’agit de la valeur par défaut.|
+|`/warnsaserror`-|Ne considère pas les avertissements comme des erreurs. Il s'agit de la valeur par défaut.|
 |`/warnaserror+:<warning list` `>`|Considère certains avertissements comme des erreurs. Ces avertissements sont répertoriés par numéro d’erreur dans une liste séparée par des virgules.|
 |`/warnaserror-:<warning list>`|Ne considère pas certains avertissements comme des erreurs. Ces avertissements sont répertoriés par numéro d’erreur dans une liste séparée par des virgules.|
 |`/nowarn`|N’affiche pas d’avertissement.|
@@ -120,8 +120,8 @@ ID : 42029, 42031
 ## <a name="see-also"></a>Voir aussi
 
 - [Types d’erreurs](/dotnet/visual-basic/programming-guide/language-features/error-types)
-- [Essayer... catch... Enfin déclaration](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)
+- [Essayer... Catch... Finally, instruction](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)
 - [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn)
 - [/warnaserror (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror)
-- [Page Compile, Concepteur de projet (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)
-- [Avertissements compilateur qui sont éteints par défaut](/cpp/preprocessor/compiler-warnings-that-are-off-by-default)
+- [Page compiler, concepteur de projets (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)
+- [Avertissements du compilateur désactivés par défaut](/cpp/preprocessor/compiler-warnings-that-are-off-by-default)

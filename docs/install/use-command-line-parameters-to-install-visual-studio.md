@@ -18,10 +18,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 7210a2834dda749cfe1d89b9093cd627b7c0ae1b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76114358"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>Utiliser les paramètres de ligne de commande pour installer Visual Studio
@@ -32,11 +32,11 @@ Lorsque vous installez Visual Studio à partir d’une invite de commandes, vous
 - Automatiser le processus d’installation.
 - Créer un cache (disposition) des fichiers d’installation pour une utilisation ultérieure.
 
-Les options de ligne de commande sont utilisées en conjonction avec le bootstrapper d’installation, qui est le petit fichier (1 Mo) qui initie le processus de téléchargement. Le programme d’amorçage est le premier exécutable qui est lancé quand vous effectuez un téléchargement à partir du site Visual Studio.
+Les options de ligne de commande sont utilisées conjointement avec le programme d’amorçage du programme d’installation, qui est le petit fichier (1 Mo) qui initie le processus de téléchargement. Le programme d’amorçage est le premier exécutable qui est lancé quand vous effectuez un téléchargement à partir du site Visual Studio.
 
 ::: moniker range="vs-2017"
 
-Pour obtenir un bootstrapper pour Visual Studio 2017, consultez la page de téléchargement [**des versions précédentes de Visual Studio**](https://visualstudio.microsoft.com/vs/older-downloads/) pour plus de détails sur la façon de le faire.
+Pour obtenir un programme d’amorçage pour Visual Studio 2017, consultez la page de téléchargement des [**versions précédentes de Visual Studio**](https://visualstudio.microsoft.com/vs/older-downloads/) pour plus d’informations sur la façon de procéder.
 
 ::: moniker-end
 
@@ -51,14 +51,14 @@ Utilisez les liens suivants pour obtenir un lien direct vers le programme d’am
 ::: moniker-end
 
 
-Votre fichier bootstrapper doit correspondre ou être similaire à l’un des noms de fichiers suivants :
+Votre fichier de programme d’amorçage doit correspondre ou être similaire à l’un des noms de fichiers suivants :
 
 * vs_enterprise.exe
 * vs_professional.exe
 * vs_community.exe
 
 >[!TIP]
->Si vous avez déjà téléchargé un fichier bootstrapper et que vous souhaitez vérifier sa version, voici comment. Dans Windows, ouvrez File Explorer, cliquez à droite sur le fichier bootstrapper, choisissez **les propriétés,** choisissez l’onglet **Détails,** puis consultez le numéro **de version produit.** Pour correspondre à ce nombre à une sortie de Visual Studio, voir le [Visual Studio construire des numéros et la](visual-studio-build-numbers-and-release-dates.md) page de dates de sortie.
+>Si vous avez précédemment téléchargé un fichier de programme d’amorçage et que vous souhaitez vérifier sa version, voici comment procéder. Dans Windows, ouvrez l’Explorateur de fichiers, cliquez avec le bouton droit sur le fichier du programme d’amorçage, choisissez **Propriétés**, cliquez sur l’onglet **Détails** , puis affichez le numéro de **version du produit** . Pour faire correspondre ce nombre à une version de Visual Studio, consultez la page [numéros de build et dates de publication de Visual Studio](visual-studio-build-numbers-and-release-dates.md) .
 
 ## <a name="command-line-parameters"></a>Paramètres de ligne de commande
 
@@ -66,7 +66,7 @@ Votre fichier bootstrapper doit correspondre ou être similaire à l’un des no
 
 > Syntaxe : `vs_enterprise.exe [command] <options>...`
 
-Remplacez le `vs_enterprise.exe` cas échéant pour l’édition produit que vous installez. (Alternativement, vous `vs_installer.exe`pouvez utiliser .)
+Remplacez `vs_enterprise.exe` le cas échéant par l’édition du produit que vous installez. (Vous pouvez également utiliser `vs_installer.exe` .)
 
 >[!TIP]
 > Pour obtenir des exemples supplémentaires sur l’utilisation de la ligne de commande afin d’installer Visual Studio, consultez la page [Exemples de paramètres de ligne de commande](command-line-parameter-examples.md).
@@ -80,7 +80,7 @@ Remplacez le `vs_enterprise.exe` cas échéant pour l’édition produit que vou
 | `update` | Met à jour un produit installé. |
 | `repair` | Répare un produit installé. |
 | `uninstall` | Désinstalle un produit installé. |
-| `export` | **Nouveau dans la version 15.9**: Sélection d’installation d’exportations vers un fichier de configuration d’installation. **Remarque**: Ne peut être utilisé qu’avec vs_installer.exe. |
+| `export` | **Nouveauté de la version 15,9**: exporte la sélection de l’installation vers un fichier de configuration d’installation. **Remarque**: ne peut être utilisé qu’avec vs_installer.exe. |
 
 ::: moniker-end
 
@@ -93,7 +93,7 @@ Remplacez le `vs_enterprise.exe` cas échéant pour l’édition produit que vou
 | `update` | Met à jour un produit installé. |
 | `repair` | Répare un produit installé. |
 | `uninstall` | Désinstalle un produit installé. |
-| `export` | Exporte la sélection de l’installation dans un fichier de configuration d’installation. **Remarque**: Ne peut être utilisé qu’avec vs_installer.exe. |
+| `export` | Exporte la sélection de l’installation dans un fichier de configuration d’installation. **Remarque**: ne peut être utilisé qu’avec vs_installer.exe. |
 
 ::: moniker-end
 
@@ -107,19 +107,19 @@ Remplacez le `vs_enterprise.exe` cas échéant pour l’édition produit que vou
 | `--addProductLang <language-locale>` | **Facultatif** : lors d’une installation ou d’une modification, cette option détermine les modules linguistiques de l’interface utilisateur qui sont installés sur le produit. Elle peut apparaître plusieurs fois sur la ligne de commande pour ajouter plusieurs modules linguistiques. Si elle est absente, l’installation utilise les paramètres régionaux de l’ordinateur. Pour plus d’informations, consultez la section [Liste des paramètres régionaux de langue](#list-of-language-locales) de cette page.|
 | `--removeProductLang <language-locale>` | **Facultatif** : lors d’une installation ou d’une modification, cette option détermine les modules linguistiques de l’interface utilisateur qui doivent être supprimés du produit. Elle peut apparaître plusieurs fois sur la ligne de commande pour ajouter plusieurs modules linguistiques. Pour plus d’informations, consultez la section [Liste des paramètres régionaux de langue](#list-of-language-locales) de cette page.|
 | `--add <one or more workload or component IDs>` | **Facultatif** : un ou plusieurs ID de charge de travail ou composant à ajouter. Les composants obligatoires de l’artefact sont installés, mais pas les composants recommandés ni facultatifs. Vous pouvez contrôler globalement les autres composants à l’aide des options `--includeRecommended` et/ou `--includeOptional`. Pour inclure plusieurs charges de travail ou composants, répétez la commande `--add` (par exemple, `--add Workload1 --add Workload2`). Pour un contrôle plus précis, vous pouvez ajouter `;includeRecommended` ou `;includeOptional` à l’ID (par exemple, `--add Workload1;includeRecommended` ou `--add Workload2;includeRecommended;includeOptional`). Pour plus d’informations, consultez la page [ID de charge de travail et de composant](workload-and-component-ids.md). Vous pouvez répéter cette option si nécessaire.|
-| `--remove <one or more workload or component IDs>` | **Optionnel**: Une ou plusieurs charges de travail ou composants à supprimer. Pour plus d’informations, consultez notre page [ID de charge de travail et de composant](workload-and-component-ids.md). Vous pouvez répéter cette option si nécessaire.|
-| `--in <path>` | **Facultatif**: L’URI ou le chemin vers un fichier de réponse.  |
+| `--remove <one or more workload or component IDs>` | **Facultatif**: un ou plusieurs ID de charge de travail ou de composant à supprimer. Pour plus d’informations, consultez notre page [ID de charge de travail et de composant](workload-and-component-ids.md). Vous pouvez répéter cette option si nécessaire.|
+| `--in <path>` | **Facultatif**: URI ou chemin d’accès à un fichier réponse.  |
 | `--all` | **Facultatif** : indique s’il faut installer tous les composants et charges de travail d’un produit. |
 | `--allWorkloads` | **Facultatif** : installe toutes les charges de travail et tous les composants, mais n’installe pas les composants recommandés ou facultatifs. |
-| `--includeRecommended` | **Optionnel**: Inclut les composants recommandés pour toute charge de travail qui est installée, mais pas les composants optionnels. Les charges de travail sont spécifiées avec `--allWorkloads` ou `--add`. |
-| `--includeOptional` | **Optionnel**: Inclut les composants optionnels pour toute charge de travail qui est installée, mais pas les composants recommandés. Les charges de travail sont spécifiées avec `--allWorkloads` ou `--add`.  |
-| `--quiet, -q` | **Optionnel**: N’affichez aucune interface utilisateur lors de l’exécution de l’installation. |
-| `--passive, -p` | **Optionnel**: Affichez l’interface utilisateur, mais ne demandez aucune interaction de l’utilisateur. |
-| `--norestart` | **Facultatif**: Si `--passive` vous `--quiet` êtes présent, les commandes avec ou ne redémarreront pas automatiquement la machine (si nécessaire).  Option ignorée si ni `--passive` ni `--quiet` ne sont spécifiés.  |
-| `--nickname <name>` | **Optionnel**: Cela définit le surnom à attribuer à un produit installé. Le surnom ne peut pas être plus de 10 caractères.  |
-| `--productKey` | **Facultatif**: Cela définit la clé du produit à utiliser pour un produit installé. Il est composé de 25 caractères alphanumériques soit dans le format `xxxxx-xxxxx-xxxxx-xxxxx-xxxxx` ou `xxxxxxxxxxxxxxxxxxxxxxxxx`. |
+| `--includeRecommended` | **Facultatif**: comprend les composants recommandés pour toutes les charges de travail installées, mais pas les composants facultatifs. Les charges de travail sont spécifiées avec `--allWorkloads` ou `--add`. |
+| `--includeOptional` | **Facultatif**: comprend les composants facultatifs pour toutes les charges de travail installées, mais pas les composants recommandés. Les charges de travail sont spécifiées avec `--allWorkloads` ou `--add`.  |
+| `--quiet, -q` | **Facultatif**: n’affiche pas d’interface utilisateur lors de l’installation. |
+| `--passive, -p` | **Facultatif**: afficher l’interface utilisateur, mais ne pas demander d’interaction avec l’utilisateur. |
+| `--norestart` | **Facultatif**: s’il est présent, `--passive` les commandes avec ou `--quiet` ne redémarrent pas automatiquement l’ordinateur (si nécessaire).  Option ignorée si ni `--passive` ni `--quiet` ne sont spécifiés.  |
+| `--nickname <name>` | **Facultatif**: définit le surnom à attribuer à un produit installé. Le surnom ne peut pas comporter plus de 10 caractères.  |
+| `--productKey` | **Facultatif**: définit la clé de produit à utiliser pour un produit installé. Elle est composée de 25 caractères alphanumériques au format `xxxxx-xxxxx-xxxxx-xxxxx-xxxxx` ou `xxxxxxxxxxxxxxxxxxxxxxxxx` . |
 | `--help, --?, -h, -?` | Permet d’afficher une version hors connexion de cette page. |
-| `--config <path>` | **Facultatif** et **nouveauté de la version 15.9** : pendant une opération d’installation ou de modification, cette option détermine les charges de travail et composants à ajouter en fonction d’un fichier de configuration d’installation déjà enregistré. Cette opération est additive et elle n’enlèvera aucune charge de travail ou composant si elle n’est pas présente dans le fichier. En outre, les articles qui ne s’appliquent pas au produit ne seront pas ajoutés. Pendant une opération d’exportation, cette option détermine l’emplacement auquel enregistrer le fichier de configuration d’installation. |
+| `--config <path>` | **Facultatif** et **nouveauté de la version 15.9** : pendant une opération d’installation ou de modification, cette option détermine les charges de travail et composants à ajouter en fonction d’un fichier de configuration d’installation déjà enregistré. Cette opération est additive et ne supprime aucune charge de travail ou composant s’ils ne sont pas présents dans le fichier. En outre, les éléments qui ne s’appliquent pas au produit ne sont pas ajoutés. Pendant une opération d’exportation, cette option détermine l’emplacement auquel enregistrer le fichier de configuration d’installation. |
 
 ::: moniker-end
 
@@ -131,19 +131,19 @@ Remplacez le `vs_enterprise.exe` cas échéant pour l’édition produit que vou
 | `--addProductLang <language-locale>` | **Facultatif** : lors d’une installation ou d’une modification, cette option détermine les modules linguistiques de l’interface utilisateur qui sont installés sur le produit. Elle peut apparaître plusieurs fois sur la ligne de commande pour ajouter plusieurs modules linguistiques. Si elle est absente, l’installation utilise les paramètres régionaux de l’ordinateur. Pour plus d’informations, consultez la section [Liste des paramètres régionaux de langue](#list-of-language-locales) de cette page.|
 | `--removeProductLang <language-locale>` | **Facultatif** : lors d’une installation ou d’une modification, cette option détermine les modules linguistiques de l’interface utilisateur qui doivent être supprimés du produit. Elle peut apparaître plusieurs fois sur la ligne de commande pour ajouter plusieurs modules linguistiques. Pour plus d’informations, consultez la section [Liste des paramètres régionaux de langue](#list-of-language-locales) de cette page.|
 | `--add <one or more workload or component IDs>` | **Facultatif** : un ou plusieurs ID de charge de travail ou composant à ajouter. Les composants obligatoires de l’artefact sont installés, mais pas les composants recommandés ni facultatifs. Vous pouvez contrôler globalement les autres composants à l’aide des options `--includeRecommended` et/ou `--includeOptional`. Pour inclure plusieurs charges de travail ou composants, répétez la commande `--add` (par exemple, `--add Workload1 --add Workload2`). Pour un contrôle plus précis, vous pouvez ajouter `;includeRecommended` ou `;includeOptional` à l’ID (par exemple, `--add Workload1;includeRecommended` ou `--add Workload2;includeRecommended;includeOptional`). Pour plus d’informations, consultez la page [ID de charge de travail et de composant](workload-and-component-ids.md). Vous pouvez répéter cette option si nécessaire.|
-| `--remove <one or more workload or component IDs>` | **Optionnel**: Une ou plusieurs charges de travail ou composants à supprimer. Pour plus d’informations, consultez notre page [ID de charge de travail et de composant](workload-and-component-ids.md). Vous pouvez répéter cette option si nécessaire.|
-| `--in <path>` | **Facultatif**: L’URI ou le chemin vers un fichier de réponse.  |
+| `--remove <one or more workload or component IDs>` | **Facultatif**: un ou plusieurs ID de charge de travail ou de composant à supprimer. Pour plus d’informations, consultez notre page [ID de charge de travail et de composant](workload-and-component-ids.md). Vous pouvez répéter cette option si nécessaire.|
+| `--in <path>` | **Facultatif**: URI ou chemin d’accès à un fichier réponse.  |
 | `--all` | **Facultatif** : indique s’il faut installer tous les composants et charges de travail d’un produit. |
 | `--allWorkloads` | **Facultatif** : installe toutes les charges de travail et tous les composants, mais n’installe pas les composants recommandés ou facultatifs. |
-| `--includeRecommended` | **Optionnel**: Inclut les composants recommandés pour toute charge de travail qui est installée, mais pas les composants optionnels. Les charges de travail sont spécifiées avec `--allWorkloads` ou `--add`. |
-| `--includeOptional` | **Optionnel**: Inclut les composants optionnels pour toute charge de travail qui est installée, mais pas les composants recommandés. Les charges de travail sont spécifiées avec `--allWorkloads` ou `--add`.  |
-| `--quiet, -q` | **Optionnel**: N’affichez aucune interface utilisateur lors de l’exécution de l’installation. |
-| `--passive, -p` | **Optionnel**: Affichez l’interface utilisateur, mais ne demandez aucune interaction de l’utilisateur. |
-| `--norestart` | **Facultatif**: Si `--passive` vous `--quiet` êtes présent, les commandes avec ou ne redémarreront pas automatiquement la machine (si nécessaire).  Option ignorée si ni `--passive` ni `--quiet` ne sont spécifiés.  |
-| `--nickname <name>` | **Optionnel**: Cela définit le surnom à attribuer à un produit installé. Le surnom ne peut pas être plus de 10 caractères.  |
-| `--productKey` | **Facultatif**: Cela définit la clé du produit à utiliser pour un produit installé. Il est composé de 25 caractères alphanumériques soit dans le format `xxxxx-xxxxx-xxxxx-xxxxx-xxxxx` ou `xxxxxxxxxxxxxxxxxxxxxxxxx`. |
+| `--includeRecommended` | **Facultatif**: comprend les composants recommandés pour toutes les charges de travail installées, mais pas les composants facultatifs. Les charges de travail sont spécifiées avec `--allWorkloads` ou `--add`. |
+| `--includeOptional` | **Facultatif**: comprend les composants facultatifs pour toutes les charges de travail installées, mais pas les composants recommandés. Les charges de travail sont spécifiées avec `--allWorkloads` ou `--add`.  |
+| `--quiet, -q` | **Facultatif**: n’affiche pas d’interface utilisateur lors de l’installation. |
+| `--passive, -p` | **Facultatif**: afficher l’interface utilisateur, mais ne pas demander d’interaction avec l’utilisateur. |
+| `--norestart` | **Facultatif**: s’il est présent, `--passive` les commandes avec ou `--quiet` ne redémarrent pas automatiquement l’ordinateur (si nécessaire).  Option ignorée si ni `--passive` ni `--quiet` ne sont spécifiés.  |
+| `--nickname <name>` | **Facultatif**: définit le surnom à attribuer à un produit installé. Le surnom ne peut pas comporter plus de 10 caractères.  |
+| `--productKey` | **Facultatif**: définit la clé de produit à utiliser pour un produit installé. Elle est composée de 25 caractères alphanumériques au format `xxxxx-xxxxx-xxxxx-xxxxx-xxxxx` ou `xxxxxxxxxxxxxxxxxxxxxxxxx` . |
 | `--help, --?, -h, -?` | Permet d’afficher une version hors connexion de cette page. |
-| `--config <path>` | **Optionnel**: Lors d’une opération d’installation ou de modification, cela détermine les charges de travail et les composants à ajouter en fonction d’un fichier de configuration d’installation précédemment enregistré. Cette opération est additive et elle n’enlèvera aucune charge de travail ou composant si elle n’est pas présente dans le fichier. En outre, les articles qui ne s’appliquent pas au produit ne seront pas ajoutés. Pendant une opération d’exportation, cette option détermine l’emplacement auquel enregistrer le fichier de configuration d’installation. |
+| `--config <path>` | **Facultatif**: lors d’une opération d’installation ou de modification, cela détermine les charges de travail et les composants à ajouter en fonction d’un fichier de configuration d’installation précédemment enregistré. Cette opération est additive et ne supprime aucune charge de travail ou composant s’ils ne sont pas présents dans le fichier. En outre, les éléments qui ne s’appliquent pas au produit ne sont pas ajoutés. Pendant une opération d’exportation, cette option détermine l’emplacement auquel enregistrer le fichier de configuration d’installation. |
 
 ::: moniker-end
 
@@ -154,69 +154,69 @@ Remplacez le `vs_enterprise.exe` cas échéant pour l’édition produit que vou
 
 ::: moniker range="vs-2017"
 
-| **Options de mise en page** | **Description** |
+| **Options de disposition** | **Description** |
 | ----------------------- | --------------- |
 | `--layout <dir>` | Spécifie un répertoire pour créer un cache d’installation hors connexion. Pour plus d’informations, consultez [Créer une installation réseau de Visual Studio](create-a-network-installation-of-visual-studio.md).|
 | `--lang <one or more language-locales>` | **Facultatif** : utilisé avec `--layout` pour préparer un cache d’installation hors connexion avec des packages de ressources correspondant à la langue ou aux langues spécifiées. Pour plus d’informations, consultez la section [Liste des paramètres régionaux de langue](#list-of-language-locales) de cette page.|
-| `--add <one or more workload or component IDs>` | **Facultatif** : un ou plusieurs ID de charge de travail ou composant à ajouter. Les composants obligatoires de l’artefact sont installés, mais pas les composants recommandés ni facultatifs. Vous pouvez contrôler globalement les autres composants à l’aide des options `--includeRecommended` et/ou `--includeOptional`. Pour un contrôle plus précis, vous pouvez ajouter `;includeRecommended` ou `;includeOptional` à l’ID (par exemple, `--add Workload1;includeRecommended` ou `--add Workload2;includeOptional`). Pour plus d’informations, consultez la page [ID de charge de travail et de composant](workload-and-component-ids.md). <br/>**Remarque** : Si `--add` est utilisé, seuls les composants et les charges de travail spécifiés ainsi que leurs dépendances sont téléchargés. Si `--add` elle n’est pas spécifiée, toutes les charges de travail et les composants sont téléchargés sur la mise en page.|
-| `--includeRecommended` | **Optionnel**: Inclut les composants recommandés pour toute charge de travail qui est installée, mais pas les composants optionnels. Les charges de travail sont spécifiées avec `--allWorkloads` ou `--add`. |
+| `--add <one or more workload or component IDs>` | **Facultatif** : un ou plusieurs ID de charge de travail ou composant à ajouter. Les composants obligatoires de l’artefact sont installés, mais pas les composants recommandés ni facultatifs. Vous pouvez contrôler globalement les autres composants à l’aide des options `--includeRecommended` et/ou `--includeOptional`. Pour un contrôle plus précis, vous pouvez ajouter `;includeRecommended` ou `;includeOptional` à l’ID (par exemple, `--add Workload1;includeRecommended` ou `--add Workload2;includeOptional`). Pour plus d’informations, consultez la page [ID de charge de travail et de composant](workload-and-component-ids.md). <br/>**Remarque** : Si `--add` est utilisé, seuls les composants et les charges de travail spécifiés ainsi que leurs dépendances sont téléchargés. Si `--add` n’est pas spécifié, tous les composants et charges de travail sont téléchargés vers la disposition.|
+| `--includeRecommended` | **Facultatif**: comprend les composants recommandés pour toutes les charges de travail installées, mais pas les composants facultatifs. Les charges de travail sont spécifiées avec `--allWorkloads` ou `--add`. |
 | `--includeOptional` | **Facultatif** : inclut les composants recommandés *et* facultatifs pour toutes les charges de travail contenues dans la disposition. Les charges de travail sont spécifiées avec `--add`.  |
 | `--keepLayoutVersion` | **Nouveautés de la version 15.3, facultatif** : application des modifications à la disposition sans mettre à jour la version de la disposition. |
 | `--verify` | **Nouveautés de la version 15.3, facultatif** : vérification du contenu d’une disposition. Tous les fichiers endommagés ou manquants sont listés. |
-| `--fix` | **Nouveautés de la version 15.3, facultatif** : vérification du contenu d’une disposition. Si des fichiers sont corrompus ou manquants, ils sont rechargés. Un accès à Internet est obligatoire pour corriger une disposition. |
+| `--fix` | **Nouveautés de la version 15.3, facultatif** : vérification du contenu d’une disposition. Si des fichiers sont endommagés ou manquants, ils sont retéléchargés. Un accès à Internet est obligatoire pour corriger une disposition. |
 | `--clean <one or more paths to catalogs>` | **Nouveautés de la version 15.3, facultatif** : suppression des anciennes versions des composants d’une disposition qui a été mise à jour vers une version plus récente. |
 
 | **Options d’installation avancées** | **Description** |
 | ----------------------- | --------------- |
-| `--channelId <id>` | **Facultatif** : ID de canal pour l’instance à installer. Ceci est nécessaire pour la commande d’installation, et ignoré pour d’autres commandes si `--installPath` elle est spécifiée. |
-| `--channelUri <uri>` | **Optionnel**: L’URI du manifeste de canal. Si les mises à `--channelUri` jour ne sont pas souhaitées, peut indiquer un fichier inexistant (par exemple, --channelUri C: 'doesntExist.chman). Cela peut être utilisé pour la commande d’installation; il est ignoré pour d’autres commandes. |
-| `--installChannelUri <uri>` | **Optionnel**: L’URI du canal manifeste à utiliser pour l’installation. L’URI spécifié par `--channelUri` (qui doit être spécifié en même temps que `--installChannelUri`) est utilisé pour détecter les mises à jour. Cela peut être utilisé pour la commande d’installation; il est ignoré pour d’autres commandes. |
-| `--installCatalogUri <uri>` | **Optionnel**: L’URI du catalogue manifeste à utiliser pour l’installation. Si spécifié, le gestionnaire de canal tente de télécharger le manifeste de catalogue à partir de cet URI avant d’utiliser l’URI du manifeste de canal d’installation. Ce paramètre est utilisé pour prendre en charge l’installation hors connexion, où le cache de disposition est créé avec le catalogue de produits déjà téléchargé. Cela peut être utilisé pour la commande d’installation; il est ignoré pour d’autres commandes. |
-| `--productId <id>` | **Facultatif** : ID de produit pour l’instance à installer. Ceci est pré-peuplé dans des conditions normales d’installation. |
+| `--channelId <id>` | **Facultatif** : ID de canal pour l’instance à installer. Cette option est requise pour la commande d’installation et est ignorée pour les autres commandes si `--installPath` est spécifié. |
+| `--channelUri <uri>` | **Facultatif**: URI du manifeste de canal. Si les mises à jour ne sont pas souhaitées, `--channelUri` peut pointer vers un fichier inexistant (par exemple,--channelUri C:\doesntExist.chman). Cela peut être utilisé pour la commande d’installation. elle est ignorée pour les autres commandes. |
+| `--installChannelUri <uri>` | **Facultatif**: URI du manifeste de canal à utiliser pour l’installation. L’URI spécifié par `--channelUri` (qui doit être spécifié en même temps que `--installChannelUri`) est utilisé pour détecter les mises à jour. Cela peut être utilisé pour la commande d’installation. elle est ignorée pour les autres commandes. |
+| `--installCatalogUri <uri>` | **Facultatif**: URI du manifeste de catalogue à utiliser pour l’installation. Si spécifié, le gestionnaire de canal tente de télécharger le manifeste de catalogue à partir de cet URI avant d’utiliser l’URI du manifeste de canal d’installation. Ce paramètre est utilisé pour prendre en charge l’installation hors connexion, où le cache de disposition est créé avec le catalogue de produits déjà téléchargé. Cela peut être utilisé pour la commande d’installation. elle est ignorée pour les autres commandes. |
+| `--productId <id>` | **Facultatif** : ID de produit pour l’instance à installer. Cette préproduction est préremplie dans des conditions d’installation normales. |
 | `--wait` | **Facultatif** : le processus attend la fin de l’installation pour retourner un code de sortie. Cela est utile lorsque vous automatisez des installations et que vous devez attendre la fin de l’installation pour gérer le code de retour de cette installation. |
 | `--locale <language-locale>` | **Facultatif** : permet de changer la langue d’affichage de l’interface utilisateur pour le programme d’installation proprement dit. Ce paramètre est conservé. Pour plus d’informations, consultez la section [Liste des paramètres régionaux de langue](#list-of-language-locales) de cette page.|
 | `--cache` | **Nouveauté de la version 15.2, facultatif** : le cas échéant, les packages sont conservés après leur installation pour les réparations ultérieures. Cela remplace le paramètre de stratégie globale à utiliser pour les installations, réparations ou modifications ultérieures. La stratégie par défaut consiste à mettre les packages en cache. Option ignorée pour la commande de désinstallation. Pour plus d’informations, consultez [Désactiver ou déplacer le cache du package](disable-or-move-the-package-cache.md). |
-| `--nocache` | **Nouveautés de la version 15.2, facultatif** : le cas échéant, les packages sont supprimés après avoir été installés ou réparés. Ils ne seront téléchargés à nouveau que si nécessaire et supprimés à nouveau après utilisation. Cela remplace le paramètre de stratégie globale à utiliser pour les installations, réparations ou modifications ultérieures. La stratégie par défaut consiste à mettre les packages en cache. Option ignorée pour la commande de désinstallation. Pour plus d’informations, consultez [Désactiver ou déplacer le cache du package](disable-or-move-the-package-cache.md). |
+| `--nocache` | **Nouveautés de la version 15.2, facultatif** : le cas échéant, les packages sont supprimés après avoir été installés ou réparés. Ils seront téléchargés à nouveau uniquement si nécessaire, puis supprimés après utilisation. Cela remplace le paramètre de stratégie globale à utiliser pour les installations, réparations ou modifications ultérieures. La stratégie par défaut consiste à mettre les packages en cache. Option ignorée pour la commande de désinstallation. Pour plus d’informations, consultez [Désactiver ou déplacer le cache du package](disable-or-move-the-package-cache.md). |
 | `--noUpdateInstaller` | **Nouveautés de la version 15.2, facultatif** : Le cas échéant, empêche le programme d’installation de se mettre à jour quand le mode silencieux est spécifié. Le programme d’installation ne parvient pas à exécuter la commande et retourne un code de sortie différent de zéro si noUpdateInstaller est spécifié avec le mode silencieux quand une mise à jour du programme d’installation est obligatoire. |
-| `--noWeb` | **Nouveau en 15.3, facultatif**: Si présent, visual Studio configure utilise les fichiers de votre répertoire de mise en page pour installer Visual Studio. Si un utilisateur tente d’installer des composants qui ne sont pas dans la mise en page, la configuration échoue.  Pour plus d’informations, consultez [Déploiement à partir d’une installation réseau](create-a-network-installation-of-visual-studio.md). <br/><br/> **Important**: Ce commutateur n’empêche pas la configuration Visual Studio de vérifier les mises à jour. Pour plus d’informations, consultez [Contrôler les mises à jour applicables aux déploiements de Visual Studio à partir du réseau](controlling-updates-to-visual-studio-deployments.md). |
+| `--noWeb` | **Nouveauté de 15,3, facultatif**: le cas échéant, le programme d’installation de Visual Studio utilise les fichiers de votre répertoire de disposition pour installer Visual Studio. Si un utilisateur tente d’installer des composants qui ne sont pas dans la disposition, le programme d’installation échoue.  Pour plus d’informations, consultez [Déploiement à partir d’une installation réseau](create-a-network-installation-of-visual-studio.md). <br/><br/> **Important**: ce commutateur n’empêche pas le programme d’installation de Visual Studio de vérifier la présence de mises à jour. Pour plus d’informations, consultez [Contrôler les mises à jour applicables aux déploiements de Visual Studio à partir du réseau](controlling-updates-to-visual-studio-deployments.md). |
 | `--path <name>=<path>` | **Nouveautés de la version 15.7, facultatif** : permet de spécifier des chemins d’installation personnalisés pour l’installation. Les noms de chemin pris en charge sont shared, cache et install. |
 | `--path cache=<path>` | **Nouveautés de la version 15.7, facultatif** : utilise l’emplacement que vous spécifiez pour télécharger les fichiers d’installation. Cet emplacement peut être défini uniquement pendant la première installation de Visual Studio. Exemple : `--path cache="C:\VS\cache"` |
 | `--path shared=<path>` | **Nouveautés de la version 15.7, facultatif** : contient des fichiers partagés pour les installations de Visual Studio côte à côte. Certains outils et kits SDK effectuent l’installation à un emplacement sur ce lecteur, tandis que d’autres peuvent l’effectuer sur un autre lecteur en passant outre ce paramétrage. Exemple : `--path shared="C:\VS\shared"` <br><br>Important : Ceci ne peut être défini qu’une seule fois, lors de la première installation de Visual Studio. |
-| `--path install=<path>` | **Nouveautés de la version 15.7, facultatif** : équivaut à `–-installPath`. En particulier, les options `--installPath "C:\VS"` et `--path install="C:\VS"` sont équivalentes. Une seule de ces commandes peut être utilisée à la fois. |
+| `--path install=<path>` | **Nouveautés de la version 15.7, facultatif** : équivaut à `–-installPath`. En particulier, les options `--installPath "C:\VS"` et `--path install="C:\VS"` sont équivalentes. Seule une de ces commandes peut être utilisée à la fois. |
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-| **Options de mise en page** | **Description** |
+| **Options de disposition** | **Description** |
 | ----------------------- | --------------- |
 | `--layout <dir>` | Spécifie un répertoire pour créer un cache d’installation hors connexion. Pour plus d’informations, consultez [Créer une installation réseau de Visual Studio](create-a-network-installation-of-visual-studio.md).|
 | `--lang <one or more language-locales>` | **Facultatif** : utilisé avec `--layout` pour préparer un cache d’installation hors connexion avec des packages de ressources correspondant à la langue ou aux langues spécifiées. Pour plus d’informations, consultez la section [Liste des paramètres régionaux de langue](#list-of-language-locales) de cette page.|
-| `--add <one or more workload or component IDs>` | **Facultatif** : un ou plusieurs ID de charge de travail ou composant à ajouter. Les composants obligatoires de l’artefact sont installés, mais pas les composants recommandés ni facultatifs. Vous pouvez contrôler globalement les autres composants à l’aide des options `--includeRecommended` et/ou `--includeOptional`. Pour un contrôle plus précis, vous pouvez ajouter `;includeRecommended` ou `;includeOptional` à l’ID (par exemple, `--add Workload1;includeRecommended` ou `--add Workload2;includeOptional`). Pour plus d’informations, consultez la page [ID de charge de travail et de composant](workload-and-component-ids.md). <br/>**Remarque** : Si `--add` est utilisé, seuls les composants et les charges de travail spécifiés ainsi que leurs dépendances sont téléchargés. Si `--add` elle n’est pas spécifiée, toutes les charges de travail et les composants sont téléchargés sur la mise en page.|
-| `--includeRecommended` | **Optionnel**: Inclut les composants recommandés pour toute charge de travail qui est installée, mais pas les composants optionnels. Les charges de travail sont spécifiées avec `--allWorkloads` ou `--add`. |
+| `--add <one or more workload or component IDs>` | **Facultatif** : un ou plusieurs ID de charge de travail ou composant à ajouter. Les composants obligatoires de l’artefact sont installés, mais pas les composants recommandés ni facultatifs. Vous pouvez contrôler globalement les autres composants à l’aide des options `--includeRecommended` et/ou `--includeOptional`. Pour un contrôle plus précis, vous pouvez ajouter `;includeRecommended` ou `;includeOptional` à l’ID (par exemple, `--add Workload1;includeRecommended` ou `--add Workload2;includeOptional`). Pour plus d’informations, consultez la page [ID de charge de travail et de composant](workload-and-component-ids.md). <br/>**Remarque** : Si `--add` est utilisé, seuls les composants et les charges de travail spécifiés ainsi que leurs dépendances sont téléchargés. Si `--add` n’est pas spécifié, tous les composants et charges de travail sont téléchargés vers la disposition.|
+| `--includeRecommended` | **Facultatif**: comprend les composants recommandés pour toutes les charges de travail installées, mais pas les composants facultatifs. Les charges de travail sont spécifiées avec `--allWorkloads` ou `--add`. |
 | `--includeOptional` | **Facultatif** : inclut les composants recommandés *et* facultatifs pour toutes les charges de travail contenues dans la disposition. Les charges de travail sont spécifiées avec `--add`.  |
-| `--keepLayoutVersion` | **Optionnel**: Appliquer des modifications à la mise en page sans mettre à jour la version de la mise en page. |
-| `--verify` | **Optionnel**: Vérifier le contenu d’une mise en page. Tous les fichiers endommagés ou manquants sont listés. |
-| `--fix` | **Optionnel**: Vérifier le contenu d’une mise en page.  Si des fichiers sont corrompus ou manquants, ils sont rechargés. Un accès à Internet est obligatoire pour corriger une disposition. |
-| `--clean <one or more paths to catalogs>` | **Optionnel**: Supprime les anciennes versions des composants d’une mise en page qui a été mise à jour à une version plus récente. |
+| `--keepLayoutVersion` | **Facultatif**: appliquez les modifications à la disposition sans mettre à jour la version de la disposition. |
+| `--verify` | **Facultatif**: Vérifiez le contenu d’une disposition. Tous les fichiers endommagés ou manquants sont listés. |
+| `--fix` | **Facultatif**: Vérifiez le contenu d’une disposition.  Si des fichiers sont endommagés ou manquants, ils sont retéléchargés. Un accès à Internet est obligatoire pour corriger une disposition. |
+| `--clean <one or more paths to catalogs>` | **Facultatif**: supprime les anciennes versions des composants d’une mise en page qui a été mise à jour vers une version plus récente. |
 
 | **Options d’installation avancées** | **Description** |
 | ----------------------- | --------------- |
-| `--channelId <id>` | **Facultatif** : ID de canal pour l’instance à installer. Ceci est nécessaire pour la commande d’installation, et ignoré pour d’autres commandes si `--installPath` elle est spécifiée. |
-| `--channelUri <uri>` | **Optionnel**: L’URI du manifeste de canal. Si les mises à `--channelUri` jour ne sont pas souhaitées, peut indiquer un fichier inexistant (par exemple, --channelUri C: 'doesntExist.chman). Cela peut être utilisé pour la commande d’installation; il est ignoré pour d’autres commandes. |
-| `--installChannelUri <uri>` | **Optionnel**: L’URI du canal manifeste à utiliser pour l’installation. L’URI spécifié par `--channelUri` (qui doit être spécifié en même temps que `--installChannelUri`) est utilisé pour détecter les mises à jour. Cela peut être utilisé pour la commande d’installation; il est ignoré pour d’autres commandes. |
-| `--installCatalogUri <uri>` | **Optionnel**: L’URI du catalogue manifeste à utiliser pour l’installation. Si spécifié, le gestionnaire de canal tente de télécharger le manifeste de catalogue à partir de cet URI avant d’utiliser l’URI du manifeste de canal d’installation. Ce paramètre est utilisé pour prendre en charge l’installation hors connexion, où le cache de disposition est créé avec le catalogue de produits déjà téléchargé. Cela peut être utilisé pour la commande d’installation; il est ignoré pour d’autres commandes. |
-| `--productId <id>` | **Facultatif** : ID de produit pour l’instance à installer. Ceci est pré-peuplé dans des conditions normales d’installation. |
+| `--channelId <id>` | **Facultatif** : ID de canal pour l’instance à installer. Cette option est requise pour la commande d’installation et est ignorée pour les autres commandes si `--installPath` est spécifié. |
+| `--channelUri <uri>` | **Facultatif**: URI du manifeste de canal. Si les mises à jour ne sont pas souhaitées, `--channelUri` peut pointer vers un fichier inexistant (par exemple,--channelUri C:\doesntExist.chman). Cela peut être utilisé pour la commande d’installation. elle est ignorée pour les autres commandes. |
+| `--installChannelUri <uri>` | **Facultatif**: URI du manifeste de canal à utiliser pour l’installation. L’URI spécifié par `--channelUri` (qui doit être spécifié en même temps que `--installChannelUri`) est utilisé pour détecter les mises à jour. Cela peut être utilisé pour la commande d’installation. elle est ignorée pour les autres commandes. |
+| `--installCatalogUri <uri>` | **Facultatif**: URI du manifeste de catalogue à utiliser pour l’installation. Si spécifié, le gestionnaire de canal tente de télécharger le manifeste de catalogue à partir de cet URI avant d’utiliser l’URI du manifeste de canal d’installation. Ce paramètre est utilisé pour prendre en charge l’installation hors connexion, où le cache de disposition est créé avec le catalogue de produits déjà téléchargé. Cela peut être utilisé pour la commande d’installation. elle est ignorée pour les autres commandes. |
+| `--productId <id>` | **Facultatif** : ID de produit pour l’instance à installer. Cette préproduction est préremplie dans des conditions d’installation normales. |
 | `--wait` | **Facultatif** : le processus attend la fin de l’installation pour retourner un code de sortie. Cela est utile lorsque vous automatisez des installations et que vous devez attendre la fin de l’installation pour gérer le code de retour de cette installation. |
 | `--locale <language-locale>` | **Facultatif** : permet de changer la langue d’affichage de l’interface utilisateur pour le programme d’installation proprement dit. Ce paramètre est conservé. Pour plus d’informations, consultez la section [Liste des paramètres régionaux de langue](#list-of-language-locales) de cette page.|
-| `--cache` | **Facultatif**: Si vous êtes présent, les colis seront conservés après avoir été installés pour des réparations ultérieures. Cela remplace le paramètre de stratégie globale à utiliser pour les installations, réparations ou modifications ultérieures. La stratégie par défaut consiste à mettre les packages en cache. Option ignorée pour la commande de désinstallation. Pour plus d’informations, consultez [Désactiver ou déplacer le cache du package](disable-or-move-the-package-cache.md). |
-| `--nocache` | **Optionnel**: Si vous êtes présent, les paquets seront supprimés après avoir été installés ou réparés. Ils ne seront téléchargés à nouveau que si nécessaire et supprimés à nouveau après utilisation. Cela remplace le paramètre de stratégie globale à utiliser pour les installations, réparations ou modifications ultérieures. La stratégie par défaut consiste à mettre les packages en cache. Option ignorée pour la commande de désinstallation. Pour plus d’informations, consultez [Désactiver ou déplacer le cache du package](disable-or-move-the-package-cache.md). |
-| `--noUpdateInstaller` | **Optionnel**: Si présent, empêche l’installateur de se mettre à jour lorsqu’il est calme. Le programme d’installation ne parvient pas à exécuter la commande et retourne un code de sortie différent de zéro si noUpdateInstaller est spécifié avec le mode silencieux quand une mise à jour du programme d’installation est obligatoire. |
-| `--noWeb` | **Optionnel**: Si vous êtes présent, visual Studio configure utilise les fichiers de votre répertoire de mise en page pour installer Visual Studio. Si un utilisateur tente d’installer des composants qui ne sont pas dans la mise en page, la configuration échoue.  Pour plus d’informations, consultez [Déploiement à partir d’une installation réseau](create-a-network-installation-of-visual-studio.md). <br/><br/> **Important**: Ce commutateur n’empêche pas la configuration Visual Studio de vérifier les mises à jour. Pour plus d’informations, consultez [Contrôler les mises à jour applicables aux déploiements de Visual Studio à partir du réseau](controlling-updates-to-visual-studio-deployments.md). **Nouveau en 16.3.5**: Ce commutateur prévient les erreurs et améliore les performances avec des installations et des mises à jour hors ligne.|
-| `--path <name>=<path>` | **Optionnel**: Utilisé pour spécifier des voies d’installation personnalisées pour l’installation. Les noms de chemin pris en charge sont shared, cache et install. |
-| `--path cache=<path>` | **Optionnel**: Utilise l’emplacement que vous spécifiez pour télécharger des fichiers d’installation. Cet emplacement peut être défini uniquement pendant la première installation de Visual Studio. Exemple : `--path cache="C:\VS\cache"` |
-| `--path shared=<path>` | **Optionnel**: Contient des fichiers partagés pour des installations de Visual Studio côte à côte. Certains outils et kits SDK effectuent l’installation à un emplacement sur ce lecteur, tandis que d’autres peuvent l’effectuer sur un autre lecteur en passant outre ce paramétrage. Exemple : `--path shared="C:\VS\shared"` <br><br>Important : Ceci ne peut être défini qu’une seule fois, lors de la première installation de Visual Studio. |
-| `--path install=<path>` | **Optionnel**: `–-installPath`Équivalent à . En particulier, les options `--installPath "C:\VS"` et `--path install="C:\VS"` sont équivalentes. Une seule de ces commandes peut être utilisée à la fois. |
+| `--cache` | **Facultatif**: le cas échéant, les packages sont conservés après leur installation pour les réparations suivantes. Cela remplace le paramètre de stratégie globale à utiliser pour les installations, réparations ou modifications ultérieures. La stratégie par défaut consiste à mettre les packages en cache. Option ignorée pour la commande de désinstallation. Pour plus d’informations, consultez [Désactiver ou déplacer le cache du package](disable-or-move-the-package-cache.md). |
+| `--nocache` | **Facultatif**: le cas échéant, les packages sont supprimés après avoir été installés ou réparés. Ils seront téléchargés à nouveau uniquement si nécessaire, puis supprimés après utilisation. Cela remplace le paramètre de stratégie globale à utiliser pour les installations, réparations ou modifications ultérieures. La stratégie par défaut consiste à mettre les packages en cache. Option ignorée pour la commande de désinstallation. Pour plus d’informations, consultez [Désactiver ou déplacer le cache du package](disable-or-move-the-package-cache.md). |
+| `--noUpdateInstaller` | **Facultatif**: le cas échéant, empêche le programme d’installation de se mettre à jour lorsque le mode silencieux est spécifié. Le programme d’installation ne parvient pas à exécuter la commande et retourne un code de sortie différent de zéro si noUpdateInstaller est spécifié avec le mode silencieux quand une mise à jour du programme d’installation est obligatoire. |
+| `--noWeb` | **Facultatif**: si elle est présente, le programme d’installation de Visual Studio utilise les fichiers de votre répertoire de disposition pour installer Visual Studio. Si un utilisateur tente d’installer des composants qui ne sont pas dans la disposition, le programme d’installation échoue.  Pour plus d’informations, consultez [Déploiement à partir d’une installation réseau](create-a-network-installation-of-visual-studio.md). <br/><br/> **Important**: ce commutateur n’empêche pas le programme d’installation de Visual Studio de vérifier la présence de mises à jour. Pour plus d’informations, consultez [Contrôler les mises à jour applicables aux déploiements de Visual Studio à partir du réseau](controlling-updates-to-visual-studio-deployments.md). **Nouveauté de 16.3.5**: ce commutateur empêche les erreurs et améliore les performances avec les installations et les mises à jour hors connexion.|
+| `--path <name>=<path>` | **Facultatif**: utilisé pour spécifier les chemins d’installation personnalisés pour l’installation. Les noms de chemin pris en charge sont shared, cache et install. |
+| `--path cache=<path>` | **Facultatif**: utilise l’emplacement que vous spécifiez pour télécharger les fichiers d’installation. Cet emplacement peut être défini uniquement pendant la première installation de Visual Studio. Exemple : `--path cache="C:\VS\cache"` |
+| `--path shared=<path>` | **Facultatif**: contient des fichiers partagés pour les installations côte à côte de Visual Studio. Certains outils et kits SDK effectuent l’installation à un emplacement sur ce lecteur, tandis que d’autres peuvent l’effectuer sur un autre lecteur en passant outre ce paramétrage. Exemple : `--path shared="C:\VS\shared"` <br><br>Important : Ceci ne peut être défini qu’une seule fois, lors de la première installation de Visual Studio. |
+| `--path install=<path>` | **Facultatif**: équivalent à `–-installPath` . En particulier, les options `--installPath "C:\VS"` et `--path install="C:\VS"` sont équivalentes. Seule une de ces commandes peut être utilisée à la fois. |
 
 ::: moniker-end
 
@@ -226,7 +226,7 @@ Pour obtenir la liste des ID de charge de travail et de composant triés par pro
 
 ## <a name="list-of-language-locales"></a>Liste des paramètres régionaux de langue
 
-| **Paramètres régionaux de langue** | **Langue** |
+| **Paramètres régionaux de langue** | **Langage** |
 | ----------------------- | --------------- |
 | Cs-cz | Tchèque |
 | De-de | Allemand |
@@ -256,6 +256,6 @@ Chaque opération génère plusieurs fichiers journaux dans le répertoire `%TEM
 ## <a name="see-also"></a>Voir aussi
 
 - [Exemples de paramètres de ligne de commande pour l’installation de Visual Studio](command-line-parameter-examples.md)
-- [Créer une installation hors ligne de Visual Studio](create-an-offline-installation-of-visual-studio.md)
+- [Créer une installation hors connexion de Visual Studio](create-an-offline-installation-of-visual-studio.md)
 - [Automatiser l’installation de Visual Studio avec un fichier réponse](automated-installation-with-response-file.md)
 - [ID de charge de travail et de composant Visual Studio](workload-and-component-ids.md)
