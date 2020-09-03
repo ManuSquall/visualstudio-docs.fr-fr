@@ -22,10 +22,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8dc11714fc8b2d5a345d94ddfe4c5de2c2cd7fe5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666851"
 ---
 # <a name="miscellaneous-files"></a>Fichiers divers
@@ -35,7 +35,7 @@ Vous pouvez utiliser les éditeurs [!INCLUDE[vsprvs](../../includes/vsprvs-md.md
 
  L’ouverture de fichiers indépendamment d’un conteneur est utile pour diverses raisons. Par exemple, vous voulez afficher un fichier pendant le développement d’une solution basée sur un projet, qui ne fait pas partie du développement de la solution. Il s’agit souvent de remarques ou d’instructions concernant le développement, de schéma de base de données et d’extraits de code. Autre exemple, vous voulez créer un fichier autonome.
 
- ![Projets de solutions](../../ide/reference/media/projects-solutions-misc.gif "|::ref1::|")
+ ![Projets de solutions](../../ide/reference/media/projects-solutions-misc.gif "Projects_Solutions_Misc")
 
  L’Explorateur de solutions peut afficher un dossier Fichiers divers si les options du dossier sont activées. Les options peuvent être définies dans [Documents, Environnement, boîte de dialogue Options](../../ide/reference/documents-environment-options-dialog-box.md). Une fois que vous fermez un fichier divers, il n’est associé à aucune solution ou projet particulier, sauf si une option est activée dans ce but.
 

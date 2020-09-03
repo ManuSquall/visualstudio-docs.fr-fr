@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 589dae38917e43f9b832fb2d3475bf63546a2e31
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85331881"
 ---
 # <a name="collect-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Collecter des statistiques d’applications pour des applications autonomes en utilisant la ligne de commande du profileur
@@ -27,7 +27,7 @@ Cette section décrit les procédures et les options de collecte des statistique
 
 ## <a name="common-tasks"></a>Tâches courantes
 
-|Tâche|Contenu associé|
+|Tâche|Contenu connexe|
 |----------|---------------------|
 |**Démarrer une application à l’aide du profilage**|-   [Comment : lancer une application autonome et collecter des statistiques d’applications](../profiling/how-to-launch-a-stand-alone-app-and-collect-application-statistics.md)|
 |**Attacher le profileur à une application .NET Framework en cours d’exécution**|-   [Comment : attacher le profileur à une application de .NET Framework et collecter des statistiques d’applications](../profiling/how-to-attach-the-profiler-to-a-dotnet-app-and-collect-application-statistics.md)|
@@ -38,7 +38,7 @@ Cette section décrit les procédures et les options de collecte des statistique
 
 ### <a name="profile-stand-alone-applications"></a>Profiler des applications autonomes
 
-|Tâche|Contenu associé|
+|Tâche|Contenu connexe|
 |----------|---------------------|
 |**Instrumenter une application**|-   [Collecter les données temporelles détaillées à l’aide de l’instrumentation](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application.md)|
 |**Collecter des données relatives à l’allocation de mémoire .NET et au garbage collection**|-   [Collecter des données de mémoire .NET Framework](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications.md)|
@@ -46,7 +46,7 @@ Cette section décrit les procédures et les options de collecte des statistique
 
 ### <a name="profile-by-using-the-sampling-method"></a>Profiler à l’aide de la méthode d’échantillonnage
 
-|Tâche|Contenu associé|
+|Tâche|Contenu connexe|
 |----------|---------------------|
 |**Profiler des applications Web ASP.NET**|-   [Collecter des statistiques d’applications en utilisant l’échantillonnage](../profiling/collecting-application-statistics-for-aspnet-using-the-profiler-sampling-method.md)|
 |**Profiler des services**|-   [Collecter des statistiques d’applications à l’aide de l’échantillonnage](../profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md). Explique comment collecter les statistiques de performances à partir des services de Windows à l’aide de la méthode d’échantillonnage.|

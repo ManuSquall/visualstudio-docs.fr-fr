@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 321d61175068f135aae87bff73f13ac800f4793c
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905154"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Guide de test pour les plug-ins de contrôle de code source
@@ -59,7 +59,7 @@ Cette section fournit des conseils sur le test de votre plug-in de contrôle de 
 
   - Cas 1C : ajouter la solution à partir du contrôle de code source
 
-- [Zone de test 2 : Obtenir à partir du contrôle de code source](../../extensibility/internals/test-area-2-get-from-source-control.md)
+- [Zone de test 2 : Obtenir à partir du contrôle de code source](../../extensibility/internals/test-area-2-get-from-source-control.md)
 
 - [Zone de test 3 : extraire/annuler l’extraction](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)
 
@@ -75,7 +75,7 @@ Cette section fournit des conseils sur le test de votre plug-in de contrôle de 
 
   - Cas 3e : annuler l’extraction
 
-- [Zone de test 4 : Archiver](../../extensibility/internals/test-area-4-check-in.md)
+- [Zone de test 4 : Archiver](../../extensibility/internals/test-area-4-check-in.md)
 
   - Cas 4a : éléments modifiés
 
@@ -83,7 +83,7 @@ Cette section fournit des conseils sur le test de votre plug-in de contrôle de 
 
   - Cas 4C : ajout de projets
 
-- [Zone de test 5 : Modifier le contrôle de code source](../../extensibility/internals/test-area-5-change-source-control.md)
+- [Zone de test 5 : Changer le contrôle de code source](../../extensibility/internals/test-area-5-change-source-control.md)
 
   - Cas 5A : lier
 
@@ -91,11 +91,11 @@ Cette section fournit des conseils sur le test de votre plug-in de contrôle de 
 
   - Cas 5C : relier
 
-- [Zone de test 6 : Supprimer](../../extensibility/internals/test-area-6-delete.md)
+- [Zone de test 6 : Supprimer](../../extensibility/internals/test-area-6-delete.md)
 
-- [Zone de test 7 : Partager](../../extensibility/internals/test-area-7-share.md)
+- [Zone de test 7 : Partager](../../extensibility/internals/test-area-7-share.md)
 
-- [Zone de test 8 : Commutation de plug-in](../../extensibility/internals/test-area-8-plug-in-switching.md)
+- [Zone de test 8 : Commutation de plug-in](../../extensibility/internals/test-area-8-plug-in-switching.md)
 
   - Cas 8A : modification automatique
 

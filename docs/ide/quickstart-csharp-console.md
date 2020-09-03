@@ -16,10 +16,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 20b2cf2bf12e9b24ca12d0a73b43e4a56e8246f4
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77579490"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>Démarrage rapide : Utiliser Visual Studio pour créer une première application console C#
@@ -66,7 +66,7 @@ Vous allez d’abord créer un projet d’application C#. Le type de projet incl
 
 1. Ouvrez Visual Studio 2019.
 
-1. Sur la fenêtre de départ, choisissez **Créer un nouveau projet**.
+1. Dans la fenêtre Démarrer, choisissez **créer un nouveau projet**.
 
    ![Fenêtre « Créer un projet »](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
@@ -87,7 +87,7 @@ Vous allez d’abord créer un projet d’application C#. Le type de projet incl
    >
    > Après cela, choisissez le bouton **Modifier** dans Visual Studio Installer. Vous pouvez être invité à enregistrer votre travail ; le cas échéant, faites-le. Ensuite, choisissez **Continuer** pour installer la charge de travail. Ensuite, revenez à l’étape 2 de cette procédure « [Créer un projet](#create-a-project) ».
 
-1. Dans la fenêtre **Configurer votre nouveau projet**, tapez ou entrez *HelloWorld* dans la zone **Nom du projet**. Ensuite, choisissez **Créer**.
+1. Dans la fenêtre **Configurer votre nouveau projet**, tapez ou entrez *HelloWorld* dans la zone **Nom du projet**. Ensuite, choisissez **créer**.
 
    ![Dans la fenêtre « Configurer votre nouveau projet », nommez votre projet « HelloWorld »](../get-started/csharp/media/vs-2019/csharp-name-your-helloworld-project.png)
 
@@ -131,7 +131,7 @@ Nous allons ajouter du code pour suspendre l’application afin que la fenêtre 
 
    ![Ajouter du code pour suspendre l’application Hello World](../ide/media/csharp-console-helloworld-add-code.png)
 
-## <a name="run-the-application"></a>Exécuter l’application
+## <a name="run-the-application"></a>Exécution de l'application
 
 1. Cliquez sur le bouton **HelloWorld** dans la barre d’outils pour exécuter l’application en mode débogage. (Ou, vous pouvez appuyer sur **F5**.)
 
@@ -145,7 +145,7 @@ Nous allons ajouter du code pour suspendre l’application afin que la fenêtre 
 
 1. Appuyez sur **Entrée** pour fermer la fenêtre de console.
 
-1. Fermez la vitre **de sortie** dans Visual Studio.
+1. Fermez le volet de **sortie** dans Visual Studio.
 
    ![Fermer le volet Sortie dans Visual Studio](../ide/media/csharp-hello-world-close-output-pane.png)
 

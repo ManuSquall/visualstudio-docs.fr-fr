@@ -1,4 +1,4 @@
-- name: Kit de développement logiciel Visual Studio
+- name: "Kit de développement logiciel Visual\_Studio"
   href: visual-studio-sdk.md
 - name: Installation du Kit de développement logiciel (SDK) Visual Studio
   href: installing-the-visual-studio-sdk.md
@@ -124,7 +124,7 @@
           href: walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md
         - name: Mettre du texte en surbrillance
           href: walkthrough-highlighting-text.md
-        - name: Mode Plan
+        - name: mode Plan
           href: walkthrough-outlining.md
         - name: Affichage d'accolades correspondantes
           href: walkthrough-displaying-matching-braces.md
@@ -898,7 +898,7 @@
   items:
     - name: Création d’un Kit de développement logiciel (SDK)
       href: creating-a-software-development-kit.md
-    - name: 'Création d’un Kit de développement logiciel (SDK) à l’aide de C# ou de Visual Basic'
+    - name: Création d’un Kit de développement logiciel (SDK) à l’aide de C# ou de Visual Basic
       href: walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md
     - name: Création d’un Kit de développement logiciel (SDK) à l’aide de C++
       href: walkthrough-creating-an-sdk-using-cpp.md

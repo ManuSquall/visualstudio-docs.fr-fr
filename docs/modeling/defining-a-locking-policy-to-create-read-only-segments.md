@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0778df98ff5f9665da7220fe40972c9a8f8d8e1d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536082"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Définition d'une stratégie de verrouillage pour créer des segments en lecture seule
@@ -81,7 +81,7 @@ partition.SetLocks(Locks.Delete);
 |Propriété|Les propriétés de domaine des éléments ne peuvent pas être modifiées. Cela ne s’applique pas aux propriétés générées par le rôle d’une classe de domaine dans une relation.|
 |Ajouter|Impossible de créer des éléments et des liens dans une partition ou un magasin.<br /><br /> Non applicable à `ModelElement` .|
 |Déplacer|L’élément ne peut pas être déplacé entre des partitions si `element.IsLocked(Move)` a la valeur true, ou si `targetPartition.IsLocked(Move)` a la valeur true.|
-|DELETE|Un élément ne peut pas être supprimé si ce verrou est défini sur l’élément lui-même, ou sur l’un des éléments dans lequel la suppression se propage, comme des éléments et des formes incorporés.<br /><br /> Vous pouvez utiliser `element.CanDelete()` pour déterminer si un élément peut être supprimé.|
+|Supprimer|Un élément ne peut pas être supprimé si ce verrou est défini sur l’élément lui-même, ou sur l’un des éléments dans lequel la suppression se propage, comme des éléments et des formes incorporés.<br /><br /> Vous pouvez utiliser `element.CanDelete()` pour déterminer si un élément peut être supprimé.|
 |Réorganiser|L’ordre des liens au niveau d’un rolePlayer ne peut pas être modifié.|
 |RolePlayer|L’ensemble de liens qui sont associés à cet élément ne peut pas être modifié. Par exemple, les nouveaux éléments ne peuvent pas être incorporés sous cet élément. Cela n’affecte pas les liens pour lesquels cet élément est la cible.<br /><br /> Si cet élément est un lien, sa source et sa cible ne sont pas affectées.|
 |Tous|Or au niveau du bit des autres valeurs.|
@@ -100,7 +100,7 @@ partition.SetLocks(Locks.Delete);
 - Ajoutez cette classe aux services disponibles via le DocData de votre DSL.
 
 ### <a name="to-define-a-locking-policy"></a>Pour définir une stratégie de verrouillage
- <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy>a la définition suivante :
+ <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> a la définition suivante :
 
 ```csharp
 public interface ILockingPolicy
@@ -142,7 +142,7 @@ namespace Company.YourDsl.DslPackage // Change
     }
 ```
 
- Pour vous assurer que les utilisateurs peuvent toujours supprimer des éléments, même si d’autres appels de code`SetLocks(Lock.Delete):`
+ Pour vous assurer que les utilisateurs peuvent toujours supprimer des éléments, même si d’autres appels de code `SetLocks(Lock.Delete):`
 
  `return proposedLocks & (Locks.All ^ Locks.Delete);`
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugMethodField::EnumLocals Microsoft Docs
+title: 'IDebugMethodField :: EnumLocals | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 08872160860d0d442f9807705dea70190dff9b28
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727208"
 ---
 # <a name="idebugmethodfieldenumlocals"></a>IDebugMethodField::EnumLocals
-Crée un enumérateur pour certaines variables locales de la méthode.
+Crée un énumérateur pour les variables locales sélectionnées de la méthode.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -43,18 +43,18 @@ int EnumLocals(
 
 ## <a name="parameters"></a>Paramètres
 `pAddress`\
-[dans] Un objet [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) représentant l’adresse de débogé qui sélectionne le contexte ou la portée à partir de laquelle obtenir les habitants.
+dans Objet [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) qui représente l’adresse de débogage qui sélectionne le contexte ou la portée à partir duquel les variables locales doivent être extraites.
 
 `ppLocals`\
-[out] Retourne un objet [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) représentant une liste des habitants; autrement, retourne une valeur nulle s’il n’y a pas d’habitants.
+à Retourne un objet [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) représentant une liste de variables locales ; Sinon, retourne une valeur null s’il n’y a pas de variables locales.
 
-## <a name="return-value"></a>Valeur de retour
-En cas de succès, les retours S_OK ou retournent S_FALSE s’il n’y a pas d’habitants. Sinon, retourne un code d'erreur.
+## <a name="return-value"></a>Valeur renvoyée
+En cas de réussite, retourne S_OK ou retourne S_FALSE s’il n’y a pas de variables locales. Sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
-Seules les variables définies dans le bloc qui contient l’adresse de débaillement donnée sont énumérées. Si tous les habitants, y compris les habitants générés par les compilateur, sont nécessaires, appelez la méthode [EnumAllLocals.](../../../extensibility/debugger/reference/idebugmethodfield-enumalllocals.md)
+Seules les variables définies dans le bloc qui contient l’adresse de débogage donnée sont énumérées. Si tous les paramètres régionaux, y compris les variables locales générées par le compilateur, sont nécessaires, appelez la méthode [EnumAllLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumalllocals.md) .
 
-Une méthode peut contenir plusieurs contextes ou blocs d’établissement de la portée. Par exemple, la méthode artificielle suivante contient trois portées, les deux blocs intérieurs et le corps de méthode lui-même.
+Une méthode peut contenir plusieurs contextes ou blocs d’étendue. Par exemple, la méthode fictif suivante contient trois portées, les deux blocs internes et le corps de méthode lui-même.
 
 ```csharp
 public void func(int index)
@@ -74,7 +74,7 @@ public void func(int index)
 }
 ```
 
-[L’objet IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) représente la `func` méthode elle-même. Appeler `EnumLocals` la méthode avec un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) réglé à l’adresse `Inner Scope 1` retourne un recensement contenant la `temp1` variable, par exemple.
+L’objet [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) représente la `func` méthode elle-même. L’appel de la `EnumLocals` méthode avec un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) défini sur l' `Inner Scope 1` adresse retourne une énumération contenant la `temp1` variable, par exemple.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)

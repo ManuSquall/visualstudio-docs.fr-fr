@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: b6ab93c24cd97d498ae886c7a9184fd4a5f111f1
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534912"
 ---
 # <a name="ca1406-avoid-int64-arguments-for-visual-basic-6-clients"></a>CA1406 : Éviter les arguments Int64 pour les clients Visual Basic 6
@@ -32,7 +32,7 @@ ms.locfileid: "85534912"
 |Category|Microsoft. Interoperability|
 |Modification avec rupture|Rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Un type qui est spécifiquement marqué comme visible par le modèle COM (Component Object Model) déclare un membre qui accepte un <xref:System.Int64?displayProperty=fullName> argument.
 
 ## <a name="rule-description"></a>Description de la règle

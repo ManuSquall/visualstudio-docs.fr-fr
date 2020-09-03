@@ -1,5 +1,5 @@
 ---
-title: Évaluation des expressions (en anglais) Microsoft Docs
+title: Évaluation des expressions | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,25 +13,25 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 18e342704cbb4abd7de9667576ce331ef8fbf60a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738831"
 ---
 # <a name="evaluate-expressions"></a>Évaluer les expressions
-Les expressions sont créées à partir de cordes transmises par les **Autos**, **Watch**, **QuickWatch,** ou **fenêtres immédiates.** Lorsqu’une expression est évaluée, elle génère une chaîne imprimable qui contient le nom et le type de variable ou d’argument et sa valeur. Cette chaîne est affichée dans la fenêtre IDE correspondante.
+Les expressions sont créées à partir de chaînes transmises à partir des fenêtres **automatique**, **Espion**, **Espion express**ou **immédiat** . Lorsqu’une expression est évaluée, elle génère une chaîne imprimable qui contient le nom et le type de variable ou d’argument et sa valeur. Cette chaîne s’affiche dans la fenêtre IDE correspondante.
 
 ## <a name="implementation"></a>Implémentation
- Les expressions sont évaluées lorsqu’un programme s’arrête à un point d’arrêt. L’expression elle-même est représentée par une interface [IDebugExpression2,](../../extensibility/debugger/reference/idebugexpression2.md) qui représente une expression analysée qui est prête pour la liaison et l’évaluation dans le contexte d’évaluation d’expression donnée. Le cadre de pile détermine le contexte d’évaluation d’expression, que le moteur de débogé (DE) fournit en mettant en œuvre [l’interface IDebugExpressionContext2.](../../extensibility/debugger/reference/idebugexpressioncontext2.md)
+ Les expressions sont évaluées lorsqu’un programme s’est arrêté à un point d’arrêt. L’expression elle-même est représentée par une interface [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) , qui représente une expression analysée prête pour la liaison et l’évaluation dans le contexte d’évaluation de l’expression donné. Le frame DE pile détermine le contexte d’évaluation d’expression, fourni par le moteur DE débogage en implémentant l’interface [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) .
 
- Compte tenu d’une chaîne utilisateur et d’une interface [IDebugExpressionContext2,](../../extensibility/debugger/reference/idebugexpressioncontext2.md) un moteur de débogé (DE) peut obtenir une interface [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) en passant la chaîne utilisateur à la méthode [IDebugExpressionContext2::ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) méthode. L’interface IDebugExpression2 qui est retournée contient l’expression analysée prête à être évaluation.
+ Étant donné une chaîne utilisateur et une interface [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) , un moteur de débogage (de) peut obtenir une interface [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) en passant la chaîne utilisateur à la méthode [IDebugExpressionContext2 ::P arsetext](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) . L’interface IDebugExpression2 qui est retournée contient l’expression analysée prête pour l’évaluation.
 
- Avec `IDebugExpression2` l’interface, le DE peut obtenir la valeur de l’expression par l’évaluation d’expression synchrone ou asynchrone, en utilisant [IDebugExpression2::EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) ou [IDebugExpression2::EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md). Cette valeur, ainsi que le nom et le type de la variable ou de l’argumentation, est envoyé à l’IDE pour l’affichage. La valeur, le nom et le type sont représentés par une interface [IDebugProperty2.](../../extensibility/debugger/reference/idebugproperty2.md)
+ Avec l' `IDebugExpression2` interface, le peut récupérer la valeur de l’expression par le biais de l’évaluation d’expression synchrone ou asynchrone, à l’aide de [IDebugExpression2 :: EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) ou [IDebugExpression2 :: EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md). Cette valeur, ainsi que le nom et le type de la variable ou de l’argument, sont envoyés à l’environnement de développement intégré (IDE) pour l’affichage. La valeur, le nom et le type sont représentés par une interface [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) .
 
- Pour permettre l’évaluation de l’expression, un DE doit implémenter les interfaces [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) et [IDebugExpressionContext2.](../../extensibility/debugger/reference/idebugexpressioncontext2.md) L’évaluation synchrone et asynchrone exigent la mise en œuvre de la méthode [IDebugProperty2::GetPropertyInfo.](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)
+ Pour activer l’évaluation d’expression, un DE doit implémenter les interfaces [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) et [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) . Les évaluations synchrones et asynchrones requièrent l’implémentation de la méthode [IDebugProperty2 :: GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) .
 
 ## <a name="see-also"></a>Voir aussi
-- [Piles de cadres](../../extensibility/debugger/stack-frames.md)
+- [Frames de pile](../../extensibility/debugger/stack-frames.md)
 - [Contexte d’évaluation de l’expression](../../extensibility/debugger/expression-evaluation-context.md)
-- [Tâches de débogé](../../extensibility/debugger/debugging-tasks.md)
+- [Tâches de débogage](../../extensibility/debugger/debugging-tasks.md)

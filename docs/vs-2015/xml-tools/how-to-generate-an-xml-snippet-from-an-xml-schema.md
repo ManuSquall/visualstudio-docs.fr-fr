@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e3d90185180cac5f526594650bde0a8f380c7668
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666525"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Procédure : générer un extrait XML à partir d'un schéma XML
@@ -57,11 +57,11 @@ L'éditeur XML permet de générer des extraits XML à partir d'un schéma de la
 
      Un nouveau fichier s'ouvre dans l'éditeur. Il contient une déclaration XML par défaut, `<?xml version="1.0" encoding="utf-8">`.
 
-3. Dans la fenêtre Propriétés du document, cliquez sur le bouton Parcourir ( **...** ) du champ **schémas** .
+3. Dans la fenêtre Propriétés du document, cliquez sur le bouton Parcourir (**...**) du champ **schémas** .
 
      La boîte de dialogue **schémas XSD** s’affiche.
 
-4. Cliquez sur **Ajouter**.
+4. Cliquez sur **Add**.
 
      La boîte de dialogue **ouvrir le schéma XSD** s’affiche.
 
@@ -139,8 +139,8 @@ L'éditeur XML permet de générer des extraits XML à partir d'un schéma de la
 </xs:schema>
 ```
 
-### <a name="output"></a>Sortie
- Voici les données XML générées sur la base des informations de schéma associées à l'élément `Contact`. Les éléments marqués comme `bold` désigner les champs modifiables dans l’extrait XML.
+### <a name="output"></a>Output
+ Voici les données XML générées sur la base des informations de schéma associées à l'élément `Contact`. Les éléments marqués comme `bold` désignent des champs modifiables dans l’extrait XML.
 
 ```
 <Contact>

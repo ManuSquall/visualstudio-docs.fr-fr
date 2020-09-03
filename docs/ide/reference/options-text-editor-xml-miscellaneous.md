@@ -9,15 +9,15 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: dd468945b1ab9ac83b219b9c8c396f017065e2be
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75568124"
 ---
 # <a name="options-text-editor-xml-miscellaneous"></a>Options, Éditeur de texte, XML, Divers
 
-Utilisez la page d’options **Divers** pour modifier les paramètres de saisie semi-automatique et de schéma pour l’éditeur XML. Pour accéder à des options XML diverses, choisissez **Tools** > **Options** > **Text Editor** > **XML**, puis choisissez **Miscellaneous**.
+Utilisez la page d’options **Divers** pour modifier les paramètres de saisie semi-automatique et de schéma pour l’éditeur XML. Pour accéder aux diverses options XML, choisissez **Outils**  >  **options**  >  **éditeur de texte**  >  **XML**, puis choisissez **divers**.
 
 ## <a name="auto-insert"></a>Insertion automatique
 
@@ -27,7 +27,7 @@ L’éditeur de texte ajoute des balises de fermeture lors de la création des �
 
 **Guillemets d'attribut**
 
-Lors de la rédaction des attributs `="` XML, l’éditeur insère le et `"` les personnages et positionne le caret (**^**) à l’intérieur des guillemets. Cette case à cocher est activée par défaut.
+Lors de la création d’attributs XML, l’éditeur insère `="` les `"` caractères et et positionne le signe insertion ( **^** ) à l’intérieur des guillemets. Cette case à cocher est activée par défaut.
 
 **Déclarations d'espace de noms**
 
@@ -43,7 +43,7 @@ Les éléments CDATA, DOCTYPE, les commentaires, les instructions de traitement 
 
 Les schémas et les définitions de type de document (DTD) sont automatiquement téléchargés à partir d'emplacements HTTP. Cette fonctionnalité utilise System.Net avec détection de serveur de proxy automatique. Cette case à cocher est activée par défaut.
 
-## <a name="outlining"></a>Mode Plan
+## <a name="outlining"></a>mode Plan
 
 **Passer en mode Plan à l'ouverture des fichiers**
 

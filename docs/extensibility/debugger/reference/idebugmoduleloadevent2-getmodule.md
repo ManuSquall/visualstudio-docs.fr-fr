@@ -1,5 +1,5 @@
 ---
-title: IDebugModuleLoadEvent2::GetModule ( Microsoft Docs
+title: 'IDebugModuleLoadEvent2 :: GetModule | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b90547709e5524ce005b0598b0b8d482cfecf173
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726726"
 ---
 # <a name="idebugmoduleloadevent2getmodule"></a>IDebugModuleLoadEvent2::GetModule
-Obtient le module qui est chargé ou déchargé.
+Obtient le module en cours de chargement ou de déchargement.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -45,15 +45,15 @@ int GetModule( 
 
 ## <a name="parameters"></a>Paramètres
 `pModule`\
-[out] Retourne un objet [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) qui représente le module qui est le chargement ou le déchargement.
+à Retourne un objet [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) qui représente le module en cours de chargement ou de déchargement.
 
 `pbstrDebugMessage`\
-[dans, dehors] Retourne un message facultatif décrivant cet événement. Si ce paramètre est une valeur nulle, aucun message n’est demandé.
+[in, out] Retourne un message facultatif qui décrit cet événement. Si ce paramètre est une valeur null, aucun message n’est demandé.
 
 `pbLoad`\
-[dans, dehors] Nonzero`TRUE`( ) si le module`FALSE`est de chargement et zéro ( ) si le module est déchargeur. Si ce paramètre est une valeur nulle, aucun statut n’est demandé.
+[in, out] Différent de zéro ( `TRUE` ) si le module est en cours de chargement et zéro ( `FALSE` ) si le module est en cours de déchargement. Si ce paramètre est une valeur null, aucun État n’est demandé.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

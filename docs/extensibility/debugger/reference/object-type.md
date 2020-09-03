@@ -1,5 +1,5 @@
 ---
-title: OBJECT_TYPE Microsoft Docs
+title: OBJECT_TYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4ffb85a14e42dd57c345481285eb1f776b3866d3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714129"
 ---
 # <a name="object_type"></a>Object_Type
-Spécifie le type d’objet de l’évaluateur d’expression.
+Spécifie le type d’un objet de l’évaluateur d’expression.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -70,59 +70,59 @@ public enum enum_OBJECT_TYPE { 
 
 ## <a name="fields"></a>Champs
  `OBJECT_TYPE_BOOLEAN`\
- Indique que l’objet est un Boolean.
+ Indique que l’objet est une valeur booléenne.
 
  `OBJECT_TYPE_CHAR`\
- Indique que l’objet est un personnage.
+ Indique que l’objet est un caractère.
 
  `OBJECT_TYPE_I1`\
- Indique que l’objet est un intégrer signé un par un.
+ Indique que l’objet est un entier signé d’un octet.
 
  `OBJECT_TYPE_U1`\
- Indique que l’objet est un insigné one-byte.
+ Indique que l’objet est un entier non signé sur un octet.
 
  `OBJECT_TYPE_I2`\
- Indique que l’objet est un intégrer signé à deux parse.
+ Indique que l’objet est un entier signé de 2 octets.
 
  `OBJECT_TYPE_U2`\
- Indique que l’objet est un integer non signé à deux étages.
+ Indique que l’objet est un entier non signé de 2 octets.
 
  `OBJECT_TYPE_I4`\
- Indique que l’objet est un intégrer signé à quatre byte.
+ Indique que l’objet est un entier signé de 4 octets.
 
  `OBJECT_TYPE_U4`\
- Indique que l’objet est un intégré non signé à quatre.
+ Indique que l’objet est un entier non signé de 4 octets.
 
  `OBJECT_TYPE_I8`\
- Indique que l’objet est un intégrer signé à huit.
+ Indique que l’objet est un entier signé de 8 octets.
 
  `OBJECT_TYPE_U8`\
- Indique que l’objet est un intégré non signé à huit.
+ Indique que l’objet est un entier non signé de 8 octets.
 
  `OBJECT_TYPE_R4`\
- Indique que l’objet est un numéro de quatre points flottants.
+ Indique que l’objet est un nombre à virgule flottante de 4 octets.
 
  `OBJECT_TYPE_R8`\
- Indique que l’objet est un numéro flottant de huit points.
+ Indique que l’objet est un nombre à virgule flottante de 8 octets.
 
  `OBJECT_TYPE_OBJECT`\
  Indique que l’objet est un objet.
 
  `OBJECT_TYPE_NULL`\
- Indique que l’objet est NULL.
+ Indique que l’objet a la valeur NULL.
 
  `OBJECT_TYPE_CLASS`\
  Indique que l’objet est une classe.
 
 ## <a name="remarks"></a>Notes
- Passé comme un argument aux méthodes [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) et [CreateArrayObject.](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md)
+ Passé comme argument aux méthodes [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) et [CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md) .
 
-## <a name="requirements"></a>Spécifications
- En-tête: ee.h
+## <a name="requirements"></a>Configuration requise
+ En-tête : EE. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Espace de noms : Microsoft. VisualStudio. Debugger. Interop
 
- Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

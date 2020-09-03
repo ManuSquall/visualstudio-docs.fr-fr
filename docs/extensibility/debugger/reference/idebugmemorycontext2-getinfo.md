@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryContext2::GetInfo - France Microsoft Docs
+title: 'IDebugMemoryContext2 :: GetInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,10 +17,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c190710afc9231662fa12c5552d6f73e0268b643
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727464"
 ---
 # <a name="idebugmemorycontext2getinfo"></a>IDebugMemoryContext2::GetInfo
@@ -44,12 +44,12 @@ int GetInfo(
 
 ## <a name="parameters"></a>Paramètres
 `dwFields`\
-[dans] Une combinaison de drapeaux de [l’CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) énumération qui indiquent quels champs de la structure [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) doivent être remplis.
+dans Combinaison d’indicateurs de l’énumération [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) qui indiquent les champs de la structure [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) à remplir.
 
 `pInfo`\
-[dans, dehors] La `CONTEXT_INFO` structure qui est remplie.
+[in, out] `CONTEXT_INFO` Structure qui est remplie.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 281a0c43c0163d158151683e9fdc483dfc1709f5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75567214"
 ---
 # <a name="customize-startup"></a>Personnaliser le démarrage
@@ -32,7 +32,7 @@ Vous pouvez également afficher une page de démarrage personnalisée, qui est u
 
 ## <a name="to-change-the-startup-item"></a>Pour modifier l’élément de démarrage
 
-1. Sur la barre de menu, choisissez **Tools** > **Options**.
+1. Dans la barre de menus, choisissez **Outils**  >  **options**.
 
 2. Développez **Environnement**, puis choisissez **Démarrage**.
 

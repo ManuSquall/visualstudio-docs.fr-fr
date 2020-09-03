@@ -12,10 +12,10 @@ dev_langs:
 - CSharp
 - VB
 ms.openlocfilehash: 73cd76445adb798be078461e5b209e35f8b8163c
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904966"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>Procédure pas à pas : création d’un kit de développement logiciel à l’aide de C# ou Visual Basic
@@ -29,7 +29,7 @@ Dans cette procédure pas à pas, vous allez apprendre à créer un kit de déve
 ## <a name="prerequisites"></a>Prérequis
  Pour suivre cette procédure pas à pas, vous devez installer le Kit de développement logiciel (SDK) Visual Studio. Pour plus d’informations, consultez [Kit de développement logiciel (SDK) Visual Studio](../extensibility/visual-studio-sdk.md).
 
-## <a name="to-create-the-simplemath-windows-runtime-component"></a><a name="createClassLibrary"></a>Pour créer le composant Windows Runtime SimpleMath
+## <a name="to-create-the-simplemath-windows-runtime-component"></a><a name="createClassLibrary"></a> Pour créer le composant Windows Runtime SimpleMath
 
 1. Dans la barre de menus, choisissez **fichier**  >  **nouveau**  >  **projet**.
 
@@ -57,7 +57,7 @@ Dans cette procédure pas à pas, vous allez apprendre à créer un kit de déve
 
 9. Dans **Explorateur de solutions**, ouvrez le menu contextuel du nœud de projet **SimpleMath** , puis choisissez **générer**.
 
-## <a name="to-create-the-simplemathvsix-extension-project"></a><a name="createVSIX"></a>Pour créer le projet d’extension SimpleMathVSIX
+## <a name="to-create-the-simplemathvsix-extension-project"></a><a name="createVSIX"></a> Pour créer le projet d’extension SimpleMathVSIX
 
 1. Dans le menu contextuel du nœud **« SimpleMath »** de la solution, choisissez **Ajouter**  >  **nouveau projet**.
 
@@ -154,7 +154,7 @@ Dans cette procédure pas à pas, vous allez apprendre à créer un kit de déve
 
 30. Choisissez le bouton **installer** , attendez que l’installation se termine, puis redémarrez Visual Studio.
 
-## <a name="to-create-a-sample-app-that-uses-the-class-library"></a><a name="createSample"></a>Pour créer un exemple d’application qui utilise la bibliothèque de classes
+## <a name="to-create-a-sample-app-that-uses-the-class-library"></a><a name="createSample"></a> Pour créer un exemple d’application qui utilise la bibliothèque de classes
 
 1. Dans la barre de menus, choisissez **fichier**  >  **nouveau**  >  **projet**.
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::IsUserData ( Microsoft Docs
+title: 'IDebugObject2 :: IsUserData | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ce4a7035ac3786f0cc1644e2ebbb0c142167e2b0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726090"
 ---
 # <a name="idebugobject2isuserdata"></a>IDebugObject2::IsUserData
-Détermine si l’objet représente les données utilisateur.
+Détermine si l’objet représente des données utilisateur.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,13 +41,13 @@ int IsUserData(
 
 ## <a name="parameters"></a>Paramètres
 `pfUser`\
-[out] Retourne nonzero`TRUE`( ) si l’objet représente les données de l’utilisateur; zéro`FALSE`( ) si ce n’est pas le cas.
+à Retourne une valeur différente de zéro ( `TRUE` ) si l’objet représente des données utilisateur ; zéro ( `FALSE` ) si ce n’est pas le cas.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de succès, les retours S_OK; autrement, renvoie un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes
- Les données utilisateur sont tout objet qui fait partie d’un module désigné comme JustMyCode (une option configurable utilisateur qui marque un module comme code utilisateur et donc visible dans une trace de pile).
+ Les données utilisateur sont des objets qui font partie d’un module désigné comme JustMyCode (option configurable par l’utilisateur qui marque un module en tant que code utilisateur et qui est donc visible dans une trace de la pile).
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

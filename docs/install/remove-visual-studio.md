@@ -23,10 +23,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: b26e837ec2c4155c1be0b3639368c4315d2aecd3
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85418923"
 ---
 # <a name="remove-visual-studio"></a>Supprimer Visual Studio
@@ -40,7 +40,7 @@ Si vous rencontrez une erreur catastrophique et que vous ne pouvez pas réparer 
 
 Vous pouvez utiliser l’un des commutateurs de ligne de commande suivants avec l' `InstallCleanup.exe` outil :
 
-| Basculer | Comportement |
+| Commutateur | Comportement |
 | ------ | -------- |
 | `-i`   | Ce commutateur est la valeur par défaut si aucun autre commutateur n’est passé. Il supprime uniquement le répertoire d’installation principal et les informations sur le produit. Utilisez ce commutateur si vous envisagez de réinstaller la même version de Visual Studio après l’exécution de l' `InstallCleanup.exe` outil. |
 | `-f`   | Ce commutateur supprime le répertoire d’installation principal, les informations sur le produit et la plupart des autres fonctionnalités installées en dehors du répertoire d’installation, qui peuvent également être partagées avec d’autres installations de Visual Studio ou d’autres produits. Utilisez ce commutateur si vous envisagez de supprimer Visual Studio sans le réinstaller ultérieurement. |

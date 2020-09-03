@@ -30,10 +30,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: d340a3b9468ea23c4cab23aabe19a7c1390955a3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75568241"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>Options, Éditeur de texte, XAML, Mise en forme
@@ -62,7 +62,7 @@ La mise en forme automatique se produit quand vous finissez de taper une balise 
 
 La mise en forme automatique se produit quand vous avez fini de taper une balise de début.
 
-**Sur la pâte du presse-papiers**
+**Lors du collage à partir du presse-papiers**
 
 La mise en forme automatique se produit quand vous collez du XAML à partir du Presse-papiers dans la vue XAML.
 
@@ -90,7 +90,7 @@ Vous pouvez spécifier une longueur de ligne pour la balise de renvoi à la lign
 
 Spécifie si les lignes sont renvoyées à la longueur de ligne spécifiée par **Longueur**.
 
-**Length**
+**Longueur**
 
 Nombre de caractères qu’une ligne peut contenir. Si nécessaire, certaines lignes XAML peuvent dépasser la longueur spécifiée.
 

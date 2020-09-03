@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1196faa5831ae44a93f21ab1808915357690a0ac
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75565940"
 ---
 # <a name="understanding-the-dsl-code"></a>Fonctionnement du code DSL
@@ -39,7 +39,7 @@ Appuyez sur **F5** et expérimentez si vous n’êtes pas familiarisé avec ce m
 
  Nous vous recommandons d'inspecter le code généré pour mieux comprendre le DSL. Pour afficher les fichiers générés, développez les fichiers *.tt dans l'Explorateur de solutions.
 
- Les fichiers \*. TT contiennent très peu de code de génération. Au lieu de cela, ils utilisent des directives `<#include>` pour inclure des fichiers de modèles partagés. Les fichiers partagés se trouvent dans **\Program Files\Microsoft Visual Studio 10.0 \ COMMON7\IDE\EXTENSIONS\MICROSOFT\DSL SDK\DSL Designer\11.0\TextTemplates**
+ Les \* fichiers. TT contiennent très peu de code de génération. Au lieu de cela, ils utilisent des directives `<#include>` pour inclure des fichiers de modèles partagés. Les fichiers partagés se trouvent dans **\Program Files\Microsoft Visual Studio 10.0 \ COMMON7\IDE\EXTENSIONS\MICROSOFT\DSL SDK\DSL Designer\11.0\TextTemplates**
 
  Quand vous ajoutez votre propre code de programme à la solution DSL, ajoutez-le dans un fichier distinct, en dehors du dossier Generated Code. Vous souhaiterez peut-être créer un dossier de **code personnalisé** . (Quand vous ajoutez un nouveau fichier de code à un dossier personnalisé, n'oubliez pas de corriger l'espace de noms dans le squelette de code initial.)
 
@@ -58,7 +58,7 @@ Appuyez sur **F5** et expérimentez si vous n’êtes pas familiarisé avec ce m
 ## <a name="generated-files-in-dsl"></a>Fichiers générés dans la solution DSL
  Les fichiers générés suivants apparaissent dans le projet **DSL** .
 
- *YourDsl* `Schema.xsd`
+ *YourDsl*`Schema.xsd`
 
  Schéma pour les fichiers qui contient les instances de votre DSL. Ce fichier est copié dans le répertoire de compilation (**bin**). Lorsque vous installez votre DSL, vous pouvez copier ce fichier dans **\Program Files\Microsoft Visual Studio 11.0 \ Xml\Schemas** pour que les fichiers de modèle puissent être validés. Pour plus d’informations, consultez [Déploiement de solutions de langage spécifique à un domaine](msi-and-vsix-deployment-of-a-dsl.md).
 
@@ -70,7 +70,7 @@ Appuyez sur **F5** et expérimentez si vous n’êtes pas familiarisé avec ce m
 
  (Dans l'exemple de solution de composant, l'un des générateurs de connexions se nomme ConnectionBuilder. Il s'agit d'une coïncidence, car la relation de domaine se nomme Connection.)
 
- La relation est créée dans la méthode *relationship*`Builder.Connect()`. La version par défaut vérifie que les éléments de modèle cibles et sources sont acceptables, puis elle instancie la relation. Par exemple :
+ La relation est créée dans la méthode *Relationship* `Builder.Connect()` . La version par défaut vérifie que les éléments de modèle cibles et sources sont acceptables, puis elle instancie la relation. Par exemple :
 
  `CommentReferencesSubject(sourceAccepted, targetAccepted);`
 
@@ -118,11 +118,11 @@ Appuyez sur **F5** et expérimentez si vous n’êtes pas familiarisé avec ce m
 
    Dans l'exemple de DSL, la classe `Comment` à des accesseurs qui accèdent à son modèle parent par l'intermédiaire de la relation d'incorporation `ComponentModelHasComments`.
 
-- Constructeurs. Si vous souhaitez les remplacer, définissez a un **constructeur personnalisé** sur la classe de domaine.
+- Des constructeurs. Si vous souhaitez les remplacer, définissez a un **constructeur personnalisé** sur la classe de domaine.
 
 - Des méthodes de gestionnaire EGP (Element Group Prototype). Ils sont nécessaires si l’utilisateur peut *fusionner* (ajouter) un autre élément sur des instances de cette classe. En général, l'utilisateur effectue pour cela une opération glisser-déplacer à partir d'un outil d'élément ou d'une autre forme, ou une opération de collage.
 
-   Dans l'exemple de DSL, un port d'entrée ou un port de sortie peuvent être fusionnés sur un composant. De plus, des composants et des commentaires peuvent être fusionnés sur le modèle. Le paramètre
+   Dans l'exemple de DSL, un port d'entrée ou un port de sortie peuvent être fusionnés sur un composant. De plus, des composants et des commentaires peuvent être fusionnés sur le modèle. Les
 
    Les méthodes de gestionnaire EGP dans la classe Components autorisent un composant à accepter des ports, mais pas des commentaires. Le gestionnaire EGP dans la classe de modèle racine accepte des commentaires et des composants, mais pas des ports.
 
@@ -340,7 +340,7 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
  Pour personnaliser ce fichier, modifiez le fichier `.tt`.
 
 > [!WARNING]
-> Si vous modifiez le fichier .tt pour inclure des ressources telles que des icônes et des images, assurez-vous que la ressource est incluse dans la build VSIX. Dans Explorateur de solutions, sélectionnez le fichier et assurez-vous que la propriété **inclure dans VSIX** est `True`.
+> Si vous modifiez le fichier .tt pour inclure des ressources telles que des icônes et des images, assurez-vous que la ressource est incluse dans la build VSIX. Dans Explorateur de solutions, sélectionnez le fichier et assurez-vous que la propriété **inclure dans VSIX** est `True` .
 
  Ce fichier contrôle comment la solution DSL est empaquetée dans un fichier VSIX (Visual Studio Integration Extension). Pour plus d’informations, consultez [Déploiement de solutions de langage spécifique à un domaine](msi-and-vsix-deployment-of-a-dsl.md).
 

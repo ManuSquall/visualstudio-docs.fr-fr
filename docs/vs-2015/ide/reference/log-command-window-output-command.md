@@ -15,16 +15,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d9a5a29cd63f9d51f86d41d2f0f5986a77666318
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666861"
 ---
 # <a name="log-command-window-output-command"></a>Enregistrer la sortie de la fenêtre de commande, commande
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Copie toutes les entrées et sorties de la fenêtre **Commande** dans un fichier.
+Copie toutes les entrées et sorties de la fenêtre **commande** dans un fichier.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -45,7 +45,7 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 
  /Overwrite facultatif. Si le fichier spécifié dans l’argument `filename` est identique à un fichier existant, celui-ci est remplacé.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Si aucun fichier n’est spécifié, le fichier cmdline.log est créé par défaut. L’alias par défaut de cette commande est Log.
 
 ## <a name="examples"></a>Exemples

@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e9d36ae9b3a4a4fbbb3c54cc3f3320e9878b6745
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905518"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Comment : utiliser des assistants avec des modèles de projet
@@ -242,7 +242,7 @@ Pour que votre modèle de projet personnalisé utilise votre Assistant personnal
 
      Encore une fois, n’oubliez pas les guillemets. Vous devez voir une ligne dans la sortie comme suit
 
-     **Le jeton de clé publique est\<token>**
+     **Le jeton de clé publique est \<token>**
 
      Notez cette valeur.
 

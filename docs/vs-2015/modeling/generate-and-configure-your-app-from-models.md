@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2ea9e28c55b608235d49096e4ef99cd30081eda0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666176"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Générer et configurer votre application à partir de modèles
@@ -24,9 +24,9 @@ Vous pouvez générer ou configurer certaines parties de votre application à pa
  Il représente les impératifs plus directement que le code. En dérivant le comportement de l'application directement à partir du modèle, vous pouvez répondre aux changements d'impératifs avec beaucoup plus de rapidité et de fiabilité que par la mise à jour du code. Bien qu'un travail initial soit nécessaire pour configurer la dérivation, cet investissement est rentable si vous prévoyez que les impératifs changeront ou si vous envisagez de créer plusieurs variantes du produit.
 
 ## <a name="generating-the-code-of-your-application-from-a-model"></a>Génération du code de votre application à partir d'un modèle
- Pour générer du code, le plus simple consiste à utiliser des modèles de texte. Vous pouvez générer du code dans la même solution [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dans laquelle vous conservez le modèle. Pour plus d'informations, voir :
+ Pour générer du code, le plus simple consiste à utiliser des modèles de texte. Vous pouvez générer du code dans la même [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solution que celle dans laquelle vous conservez le modèle. Pour plus d'informations, consultez les pages suivantes :
 
-- [Génération de code au moment du design à l’aide de modèles de texte T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
+- [Génération de code durant la conception à l'aide de modèles de texte T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 
 - [Générer des fichiers à partir d’un modèle UML](../modeling/generate-files-from-a-uml-model.md)
 
@@ -41,11 +41,11 @@ Vous pouvez générer ou configurer certaines parties de votre application à pa
   Toutefois, si vous commencez avec une application existante, vous constaterez peut-être que de nombreuses opérations de refactorisation sont nécessaires pour séparer les différents comportements régis par le modèle, pour qu'ils puissent varier indépendamment. Nous vous recommandons d'évaluer cet aspect de l'application lors de l'estimation du coût de votre projet.
 
 ## <a name="configuring-your-application-from-a-model"></a>Configuration de votre application à partir d'un modèle
- Si vous souhaitez faire varier le comportement de votre application au moment de l'exécution, vous ne pouvez pas utiliser la génération de code, qui génère le code source avant que l'application soit compilée. Au lieu de cela, vous pouvez concevoir votre application pour qu'elle lise le modèle UML ou DSL et que son comportement change en conséquence. Pour plus d'informations, voir :
+ Si vous souhaitez faire varier le comportement de votre application au moment de l'exécution, vous ne pouvez pas utiliser la génération de code, qui génère le code source avant que l'application soit compilée. Au lieu de cela, vous pouvez concevoir votre application pour qu'elle lise le modèle UML ou DSL et que son comportement change en conséquence. Pour plus d'informations, consultez les pages suivantes :
 
 - [Lire un modèle UML dans le code de programme](../modeling/read-a-uml-model-in-program-code.md)
 
-- [Guide pratique pour ouvrir un modèle depuis un fichier dans le code du programme](../modeling/how-to-open-a-model-from-file-in-program-code.md)
+- [Comment : ouvrir un modèle depuis un fichier dans le code de programme](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 
   Vous pouvez aussi appliquer cette méthode de façon incrémentielle, mais davantage de travail est nécessaire au début. Vous devez écrire le code qui lit le modèle et configurer une infrastructure qui permet à ses valeurs d'être accessibles aux parties variables. Le fait de rendre les parties variables génériques est plus coûteux que la génération de code.
 
@@ -66,7 +66,7 @@ Vous pouvez générer ou configurer certaines parties de votre application à pa
 
      Par exemple, utilisez un modèle pour définir la navigation entre les pages web et un autre modèle pour définir la disposition des pages. Pour plus d’informations, consultez [intégrer des modèles UML à d’autres modèles et outils](../modeling/integrate-uml-models-with-other-models-and-tools.md).
 
-- **Modélisez l’exigence, pas la solution.** Concevez le code DSL ou adaptez le code UML pour qu'il décrive les impératifs des utilisateurs. En revanche, ne concevez pas la notation en fonction des aspects variables de l'implémentation.
+- **Modélisez les impératifs, et non la solution.** Concevez le code DSL ou adaptez le code UML pour qu'il décrive les impératifs des utilisateurs. En revanche, ne concevez pas la notation en fonction des aspects variables de l'implémentation.
 
      Par exemple, le modèle de navigation web doit représenter des pages web et des liens hypertexte entre elles. Le modèle de navigation web ne doit pas représenter des fragments de code HTML ou des classes de votre application.
 

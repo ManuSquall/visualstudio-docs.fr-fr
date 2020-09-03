@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c481b2b9c90b15f4cbc709cad89e5b772ad95cee
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77477083"
 ---
 # <a name="how-to-troubleshoot-templates"></a>Comment : dépanner des modèles
@@ -41,7 +41,7 @@ Si le chargement d’un modèle dans l’environnement de développement échoue
     > [!NOTE]
     > Pour obtenir une prise en charge d’IntelliSense quand vous créez le fichier .vstemplate, ajoutez un attribut `xmlns` à l’élément `VSTemplate`, puis affectez-lui la valeur `http://schemas.microsoft.com/developer/vstemplate/2005`.
 
-6. Enregistrez et fermez le fichier .vstemplate.
+6. Enregistrez et fermez le fichier .vstemplate. 
 
 7. Sélectionnez les fichiers inclus dans votre modèle, cliquez avec le bouton droit, sélectionnez **Envoyer vers**, puis cliquez sur **Dossier compressé**. Les fichiers que vous avez sélectionnés sont compressés dans un fichier .zip.
 

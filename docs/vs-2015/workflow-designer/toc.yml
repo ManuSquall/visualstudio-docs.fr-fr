@@ -56,13 +56,13 @@
               href: parallel-activity-designer.md
             - name: ParallelForEach\<T>
               href: parallelforeach-t-activity-designer.md
-            - name: Pick
+            - name: Choisir
               href: pick-activity-designer.md
             - name: PickBranch
               href: pickbranch-activity-designer.md
             - name: Séquence
               href: sequence-activity-designer.md
-            - name: Switch\<T>
+            - name: Commutateur\<T>
               href: switch-t-activity-designer.md
             - name: While
               href: while-activity-designer.md
@@ -96,7 +96,7 @@
               href: correlationscope-activity-designer.md
             - name: InitializeCorrelation
               href: initializecorrelation-activity-designer.md
-            - name: Receive
+            - name: Recevoir
               href: receive-activity-designer.md
             - name: ReceiveAndSendReply
               href: receiveandsendreply-template-designer.md
@@ -110,7 +110,7 @@
           items:
             - name: Runtime
               href: runtime-activity-designers.md
-            - name: Persister
+            - name: Conserver
               href: persist-activity-designer.md
             - name: TerminateWorkflow
               href: terminateworkflow-activity-designer.md
@@ -118,9 +118,9 @@
           items:
             - name: Primitives
               href: primitives-activity-designers.md
-            - name: Assigner
+            - name: Affecter
               href: assign-activity-designer.md
-            - name: Délai
+            - name: Retarder
               href: delay-activity-designer.md
             - name: InvokeDelegate
               href: invokedelegate.md
@@ -206,7 +206,7 @@
           href: workflow-designer-shell-features.md
         - name: Raccourcis clavier
           href: keyboard-shortcuts-in-the-workflow-designer.md
-        - name: messages d'erreur
+        - name: Messages d'erreur
           href: error-messages-in-workflow-designer.md
     - name: "Développement d'applications de workflow qui ciblent le .NET\_3.0 ou .NET\_3.5 Framework"
       items:
@@ -286,7 +286,7 @@
               items:
                 - name: Aide de l'interface utilisateur du concepteur hérité pour Windows Workflow Foundation
                   href: legacy-designer-for-windows-workflow-foundation-ui-help.md
-                - name: 'Lier à la propriété d''une activité, boîte de dialogue (héritée)'
+                - name: Lier à la boîte de dialogue des propriétés d’une activité (héritée)
                   href: bind-to-an-activity-s-property-dialog-box-legacy.md
                 - name: 'Rechercher et sélectionner un type .NET, boîte de dialogue (héritée)'
                   href: browse-and-select-a-dotnet-type-dialog-box-legacy.md

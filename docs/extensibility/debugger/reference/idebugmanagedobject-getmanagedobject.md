@@ -1,5 +1,5 @@
 ---
-title: IDebugManagedObject::GetManagedObject (fr) Microsoft Docs
+title: 'IDebugManagedObject :: GetManagedObject | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b7080760b174c51d62c44cd2757944948e0104ca
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727739"
 ---
 # <a name="idebugmanagedobjectgetmanagedobject"></a>IDebugManagedObject::GetManagedObject
-Retourne une interface qui représente l’objet géré.
+Retourne une interface qui représente l’objet managé.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,13 +41,13 @@ int GetManagedObject(
 
 ## <a name="parameters"></a>Paramètres
 `ppManagedObject`\
-[out] Retourne une interface qui représente l’objet géré.
+à Retourne une interface qui représente l’objet managé.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de succès, les retours S_OK; autrement, renvoie un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes
- L’interface restituée de cette méthode peut être demandée pour n’importe quelle interface implémentée par la classe gérée, permettant à ses méthodes d’être appelées.
+ L’interface retournée par cette méthode peut être interrogée pour toute interface implémentée par la classe managée, ce qui permet d’appeler ses méthodes.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)

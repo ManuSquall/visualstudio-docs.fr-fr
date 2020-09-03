@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8589be1bd1c1e9ad86a412d4f8bd2630c93a42ac
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535991"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Génération de code durant la conception à l'aide de modèles de texte T4
@@ -117,7 +117,7 @@ Les modèles de texte vous permettent d'utiliser du code de programme pour varie
 
    Notez que les instructions sont placées entre des signes `<#...#>` et les expressions uniques entre des signes `<#=...#>`. Pour plus d’informations, consultez [écriture d’un modèle de texte T4](../modeling/writing-a-t4-text-template.md).
 
-   Si vous écrivez le code généré en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], la directive `template` doit contenir `language="VB"`. La valeur par défaut est `"C#"`.
+   Si vous écrivez le code généré en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], la directive `template` doit contenir `language="VB"`. `"C#"` est la valeur par défaut.
 
 ## <a name="debugging-a-design-time-t4-text-template"></a>Débogage d'un modèle de texte T4 au moment de la conception
 
@@ -134,7 +134,7 @@ Pour déboguer un modèle de texte
    Le modèle s’exécute et s’arrête aux points d’arrêt. Vous pouvez examiner les variables et parcourir le code de manière normale.
 
 > [!TIP]
-> `debug="true"`rend le mappage du code généré plus précisément pour le modèle de texte, en insérant plus de directives de numérotation de ligne dans le code généré. Si vous ne le spécifiez pas, les points d'arrêt risquent d'arrêter l'exécution dans l'état incorrect.
+> `debug="true"` rend le mappage du code généré plus précisément pour le modèle de texte, en insérant plus de directives de numérotation de ligne dans le code généré. Si vous ne le spécifiez pas, les points d'arrêt risquent d'arrêter l'exécution dans l'état incorrect.
 >
 > Mais vous pouvez laisser la clause dans la directive de modèle même quand vous ne déboguez pas. Cela ne provoque qu'une très faible dégradation des performances.
 
@@ -290,7 +290,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 > [!TIP]
 > Un modèle de texte s'exécute dans son propre domaine d'application et les services sont accessibles par le marshaling. Dans cette circonstance, GetCOMService() est plus fiable que GetService().
 
-## <a name="regenerating-the-code-automatically"></a><a name="Regenerating"></a>Régénération automatique du code
+## <a name="regenerating-the-code-automatically"></a><a name="Regenerating"></a> Régénération automatique du code
 
 En général, plusieurs fichiers dans une solution Visual Studio sont générés avec un modèle d’entrée. Chaque fichier est généré à partir de son propre modèle, mais les modèles font tous référence au même modèle.
 
@@ -336,7 +336,7 @@ Error("An error message");
 Warning("A warning message");
 ```
 
-## <a name="converting-an-existing-file-to-a-template"></a><a name="Converting"></a>Conversion d’un fichier existant en modèle
+## <a name="converting-an-existing-file-to-a-template"></a><a name="Converting"></a> Conversion d’un fichier existant en modèle
 
 L'un des avantages des modèles, c'est que leur apparence se rapproche des fichiers qu'ils génèrent, avec en plus du code de programme inséré. Cela nous suggère une méthode utile pour créer un modèle. Commencez par créer un fichier ordinaire en tant que prototype, tel qu’un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] fichier, puis introduisez progressivement du code de génération qui fait varier le fichier résultant.
 

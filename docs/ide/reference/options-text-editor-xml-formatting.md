@@ -9,15 +9,15 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: b5dabfbc4f705d7de9fa881f373994714e43d26a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75568137"
 ---
 # <a name="options-text-editor-xml-formatting"></a>Options, Éditeur de texte, XML, Mise en forme
 
-Utilisez la page d’options **Mise en forme** pour spécifier la mise en forme des éléments et des attributs dans vos documents XML. Pour accéder aux options de formatage XML, choisissez **Tools** > **Options** > **Text Editor** > **XML**, puis choisissez **Formatting**.
+Utilisez la page d’options **Mise en forme** pour spécifier la mise en forme des éléments et des attributs dans vos documents XML. Pour accéder aux options de mise en forme XML, choisissez **Outils**  >  **options**  >  **éditeur de texte**  >  **XML**, puis **mise en forme**.
 
 ## <a name="attributes"></a>Attributs
 
@@ -41,7 +41,7 @@ Aligne verticalement le deuxième attribut et les attributs suivants de façon �
 
 ## <a name="auto-reformat"></a>Remise en forme automatique
 
-**Sur la pâte du presse-papiers**
+**Lors du collage à partir du presse-papiers**
 
 Remet en forme le texte XML collé à partir du Presse-papiers.
 

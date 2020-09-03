@@ -1,5 +1,5 @@
 ---
-title: Permettre la débrille d’un programme . Microsoft Docs
+title: Activation d’un programme à déboguer | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,25 +11,25 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 17c6218cd0b25c0cf0134351fd5efd7490b6a1f3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738893"
 ---
-# <a name="enable-a-program-to-be-debugged"></a>Permettre la déboiffée d’un programme
-Avant que votre moteur de débogé (DE) puisse déboiffer un programme, vous devez d’abord lancer le DE ou l’attacher à un programme existant.
+# <a name="enable-a-program-to-be-debugged"></a>Activer un programme à déboguer
+Avant de pouvoir déboguer un programme par votre moteur DE débogage (DE), vous devez d’abord lancer le ou l’attacher à un programme existant.
 
 ## <a name="in-this-section"></a>Contenu de cette section
- [Obtenir un port](../../extensibility/debugger/getting-a-port.md) Discute de la façon d’obtenir un port comme première étape pour permettre la débâmation d’un programme.
+ [Obtenir un port](../../extensibility/debugger/getting-a-port.md) Explique comment obtenir un port comme première étape pour permettre le débogage d’un programme.
 
- [Enregistrer le programme](../../extensibility/debugger/registering-the-program.md) Explique la prochaine étape pour permettre la déboissailler d’un programme : l’enregistrer au port. Une fois inscrit, le programme peut être déboglé soit par le processus d’attachement ou de débogage juste à temps (JIT).
+ [Inscrire le programme](../../extensibility/debugger/registering-the-program.md) Explique l’étape suivante de l’activation d’un programme à déboguer : l’inscrire auprès du port. Une fois inscrit, le programme peut être débogué à l’aide du processus d’attachement ou du débogage juste-à-temps (JIT).
 
- [Joindre au programme](../../extensibility/debugger/attaching-to-the-program.md) Explique l’étape suivante : attacher le débbuggeur au programme.
+ [Attacher au programme](../../extensibility/debugger/attaching-to-the-program.md) Explique l’étape suivante : attachement du débogueur au programme.
 
- [Fixation basée sur le lancement](../../extensibility/debugger/launch-based-attachment.md) Décrit la pièce jointe basée sur le lancement à un programme, qui est automatique lors du lancement par le SDM.
+ [Attachement basé sur le lancement](../../extensibility/debugger/launch-based-attachment.md) Décrit la pièce jointe basée sur le lancement d’un programme, qui est automatique lors du lancement par le SDM.
 
- [Envoyer les événements requis](../../extensibility/debugger/sending-the-required-events.md) Vous étapes à travers les événements requis lors de la création d’un moteur de débogé (DE) et de l’attacher à un programme.
+ [Envoyer les événements requis](../../extensibility/debugger/sending-the-required-events.md) Vous guide tout au long des événements requis lors de la création d’un moteur de débogage (DE) et de son attachement à un programme.
 
 ## <a name="related-sections"></a>Sections connexes
- [Création d’un moteur de débogé personnalisé](../../extensibility/debugger/creating-a-custom-debug-engine.md) Définit un moteur de débogé (DE), et décrit les services mis en œuvre à travers les interfaces DE et comment ils peuvent provoquer la transition du débbuggeur entre les différents modes opérationnels.
+ [Création d’un moteur de débogage personnalisé](../../extensibility/debugger/creating-a-custom-debug-engine.md) Définit un moteur DE débogage (DE) et décrit les services implémentés via les interfaces DE et la façon dont ils peuvent provoquer la transition du débogueur entre différents modes d’exploitation.

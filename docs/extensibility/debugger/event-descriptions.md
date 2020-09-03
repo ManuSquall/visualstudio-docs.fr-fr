@@ -1,5 +1,5 @@
 ---
-title: Descriptions de l’événement Microsoft Docs
+title: Descriptions des événements | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,38 +11,38 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3c2582717fd4da3b833da90a951f9b8f72a59f71
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738785"
 ---
-# <a name="event-descriptions"></a>Descriptions d’événements
+# <a name="event-descriptions"></a>Descriptions des événements
 Chaque type d’événement a un but spécifique.
 
-## <a name="events-and-the-reasons-for-their-use"></a>Événements et les raisons de leur utilisation
+## <a name="events-and-the-reasons-for-their-use"></a>Événements et raisons de leur utilisation
 
 |Événement|Description|
 |-----------|-----------------|
-|Activer les événements documentaires|Se produire lorsque le moteur de débogé (DE) veut que l’IDE s’ouvre ou apporte un document au premier plan.|
-|Événements d’erreur liés au point de rupture ou de point de rupture|Envoyé lorsqu’un point d’arrêt est lié ou lorsqu’un point d’arrêt ne peut pas se lier et qu’une erreur est retournée.|
-|Événements non liés de point de rupture|Se produire lorsqu’un point d’arrêt lié se détache du code.|
-|Peut arrêter les événements|Envoyé à l’IDE pour déterminer si l’utilisateur souhaite s’arrêter à un point précis dans le code.|
-|Événements breakpoint|Se produire lorsqu’un code ou un point d’arrêt de données est touché.|
-|Événements texte documentaire|Se produire lorsque le texte d’un document est modifié. Ces événements ne sont `IDebugEventCallBack2::Event` pas envoyés par la méthode.|
-|Le moteur crée des événements|Envoyé lorsqu’un moteur est créé pour la première fois.|
-|Événements de point d’entrée|Envoyé lorsque le programme étant déboché a exécuté son code d’initialisation et atteint son premier point d’entrée utilisateur.|
-|Événements d’exception|Envoyé quand un programme en cours d’exécution atteint une exception.|
-|Évaluation de l’expression des événements complets|Envoyé lorsque l’évaluation d’expression asynchrone est terminée.|
-|Trouver des événements Symbol|Envoyé chaque fois que le DE a besoin de demander à l’utilisateur de trouver des symboles pour un module.|
-|Charger des événements complets|Envoyé seulement lorsque la charge initiale du programme est terminée et que le premier code est sur le point de s’exécuter dans le programme.|
-|Événements de messages|Envoyé lorsque des messages sont envoyés aux utilisateurs.|
+|Activer les événements de document|Se produit lorsque le moteur DE débogage (DE) souhaite que l’IDE ouvre ou place un document au premier plan.|
+|Événements d’erreur liés à un point d’arrêt ou point d’arrêt|Envoyé lorsqu’un point d’arrêt est lié ou lorsqu’un point d’arrêt ne peut pas être lié et qu’une erreur est retournée.|
+|Événements indépendants des points d’arrêt|Se produit lorsqu’un point d’arrêt lié dissocie du code.|
+|Peut arrêter des événements|Envoyé à l’IDE pour déterminer si l’utilisateur souhaite s’arrêter à un point spécifié dans le code.|
+|Événements de point d’arrêt|Se produit lorsqu’un point d’arrêt de code ou de données est atteint.|
+|Événements de texte de document|Se produit lorsque le texte d’un document est modifié. Ces événements ne sont pas envoyés par le biais de la `IDebugEventCallBack2::Event` méthode.|
+|Événements de création de moteur|Envoyé lors de la création initiale d’un moteur.|
+|Événements de point d’entrée|Envoyé lorsque le programme en cours de débogage a exécuté son code d’initialisation et a atteint son premier point d’entrée utilisateur.|
+|Événements d’exception|Envoyé lorsqu’un programme en cours d’exécution a atteint une exception.|
+|Événements de fin d’évaluation d’expression|Envoyé lorsque l’évaluation de l’expression asynchrone est terminée.|
+|Rechercher des événements de symboles|Envoyé chaque fois que le DE doit demander à l’utilisateur de rechercher des symboles pour un module.|
+|Événements de chargement complet|Envoyé uniquement lorsque la charge initiale du programme est terminée et que le premier code est sur le paragraphe de s’exécuter dans le programme.|
+|Événements de message|Envoyé lorsque des messages sont envoyés aux utilisateurs.|
 |Événements de chargement de module|Envoyé lorsqu’un nouveau module est chargé ou déchargé.|
-|Événements de chaîne de sortie|Envoyé lorsque le programme écrit la sortie de déboiffé.|
-|Créer et détruire des événements|Envoyé pour annoncer la création ou la destruction de processus, programmes, propriétés, sessions et fils afin que le Visual Studio IDE puisse garder une trace de l’état des programmes en cours de déboisation.|
-|Étape des événements complets|Envoyé quand une étape est terminée.|
-|Événements de changement de nom de fil|Envoyé lorsque l’utilisateur change le nom d’un thread.|
-|Événements de changement de nom du programme|Envoyé lorsque l’utilisateur change le nom d’un programme.|
+|Événements de chaîne de sortie|Envoyé lorsque le programme écrit la sortie de débogage.|
+|Créer et détruire des événements|Envoyé pour annoncer la création ou la destruction de processus, programmes, propriétés, sessions et threads afin que l’IDE de Visual Studio puisse effectuer le suivi de l’état des programmes en cours de débogage.|
+|Événements de fin d’étape|Envoyé lorsqu’une étape est terminée.|
+|Événements de changement de nom de thread|Envoyé lorsque l’utilisateur modifie le nom d’un thread.|
+|Événements de changement de nom de programme|Envoyé lorsque l’utilisateur modifie le nom d’un programme.|
 
 ## <a name="see-also"></a>Voir aussi
 - [Envoi des événements](../../extensibility/debugger/sending-events.md)

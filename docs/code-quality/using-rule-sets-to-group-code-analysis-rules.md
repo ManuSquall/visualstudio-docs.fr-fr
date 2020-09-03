@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ca48d0cad8ad6e22aa2264390d230590438e8579
-ms.sourcegitcommit: 260d093d2287ba791f28bdc7103493beabf80b2e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77506470"
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>Utiliser des ensembles de règles pour regrouper des règles d’analyse du code
@@ -24,7 +24,7 @@ Quand vous configurez l’analyse du code dans Visual Studio, vous pouvez choisi
 
 Vous pouvez personnaliser un ensemble de règles en ajoutant ou en supprimant des règles ou en modifiant les gravités de la règle pour qu’elles apparaissent sous la forme d’avertissements ou d’erreurs dans le **liste d’erreurs**. Les ensembles de règles personnalisés peuvent satisfaire un besoin pour votre environnement de développement particulier. Lorsque vous personnalisez un ensemble de règles, l’éditeur d’ensembles de règles fournit des outils de recherche et de filtrage pour vous aider dans le processus.
 
-Les ensembles de règles sont disponibles pour l’analyse du [code managé](analyzer-rule-sets.md), l' [analyse héritée du code managé](how-to-configure-code-analysis-for-a-managed-code-project.md)et [ C++ l’analyse du code](/cpp/code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run).
+Les ensembles de règles sont disponibles pour l’analyse du [code managé](analyzer-rule-sets.md), l' [analyse héritée du code managé](how-to-configure-code-analysis-for-a-managed-code-project.md)et l' [analyse du code C++](/cpp/code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run).
 
 ## <a name="rule-set-format"></a>Format de l’ensemble de règles
 
@@ -69,4 +69,4 @@ L’ensemble de règles d’un projet est spécifié par la propriété **CodeAn
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Informations de référence sur l’ensemble de règles d’analyse du code](../code-quality/rule-set-reference.md)
+- [Référence d’ensemble de règles d’analyse du code](../code-quality/rule-set-reference.md)

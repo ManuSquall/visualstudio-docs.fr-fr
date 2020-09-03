@@ -14,7 +14,7 @@
           href: verify-your-xamarin-environment.md
         - name: Principes fondamentaux de la création d’applications avec Xamarin.Forms dans Visual Studio
           href: learn-app-building-basics-with-xamarin-forms-in-visual-studio.md
-        - name: Créer des applications Xamarin avec une interface utilisateur native dans Visual Studio
+        - name: Générer des applications Xamarin avec une interface utilisateur native dans Visual Studio
           href: build-apps-with-native-ui-using-xamarin-in-visual-studio.md
         - name: Application Lifecycle Management (ALM) avec les applications Xamarin
           href: application-lifecycle-management-alm-with-xamarin-apps.md
@@ -28,7 +28,7 @@
           href: visual-studio-tools-for-unity.md
         - name: Vue d’ensemble
           href: overview-of-visual-studio-tools-for-unity.md
-        - name: Mise en route
+        - name: Prise en main
           href: getting-started-with-visual-studio-tools-for-unity.md
         - name: Utilisation de Visual Studio Tools pour Unity
           href: using-visual-studio-tools-for-unity.md
@@ -40,21 +40,21 @@
               href: customize-project-files-created-by-vstu.md
             - name: "Exemple\_: rappel de journal"
               href: share-the-unity-log-callback-with-vstu.md
-        - name: Problèmes connus et dépannage
+        - name: Problèmes connus et résolution
           href: troubleshooting-and-known-issues-visual-studio-tools-for-unity.md
         - name: Journal des modifications
           href: change-log-visual-studio-tools-for-unity.md
         - name: Application Lifecycle Management (ALM) avec les applications Unity
           href: application-lifecycle-management-alm-with-unity-apps.md
-    - name: "Visual\_C++ pour le développement mobile multiplateforme"
+    - name: Visual C++ pour le développement mobile multiplateforme
       items:
-        - name: "Visual\_C++ pour le développement mobile multiplateforme"
+        - name: Visual C++ pour le développement mobile multiplateforme
           href: visual-cpp-for-cross-platform-mobile-development.md
-        - name: Installer Visual C++ pour le développement mobile multiplateforme
+        - name: "Installer Visual\_C++ pour le développement mobile multiplateforme"
           items:
-            - name: Installer Visual C++ pour le développement mobile multiplateforme
+            - name: "Installer Visual\_C++ pour le développement mobile multiplateforme"
               href: install-visual-cpp-for-cross-platform-mobile-development.md
-            - name: Installer et configurer des outils de génération en utilisant iOS
+            - name: Install and Configure Tools to Build using iOS
               href: install-and-configure-tools-to-build-using-ios.md
         - name: Créer une application Android Native Activity
           href: create-an-android-native-activity-app.md
@@ -64,7 +64,7 @@
           href: import-an-xcode-project.md
         - name: Synchroniser les modifications entre Xcode et Visual Studio
           href: sync-changes-between-xcode-and-visual-studio.md
-        - name: Cross-Platform Mobile Development Examples
+        - name: Exemples de développement mobile multiplateforme
           href: cross-platform-mobile-development-examples.md
     - name: Développer des applications pour la plateforme Windows universelle (UWP)
       href: develop-apps-for-the-universal-windows-platform-uwp.md

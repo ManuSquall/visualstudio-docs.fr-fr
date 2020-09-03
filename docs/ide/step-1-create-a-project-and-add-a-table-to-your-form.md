@@ -1,5 +1,5 @@
 ---
-title: 'Étape 1 : créer un projet et ajouter une table à votre formulaire'
+title: 'Étape 1 : Créer un projet et ajouter une table à votre formulaire'
 ms.date: 10/15/2019
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -11,13 +11,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c1134fb5bb02bd8c78f347ef582f12da35074c36
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77579922"
 ---
-# <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Étape 1 : créer un projet et ajouter une table à votre formulaire
+# <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Étape 1 : Créer un projet et ajouter une table à votre formulaire
 
 La première étape pour créer un jeu de combinaisons consiste à créer le projet et à ajouter une table à votre formulaire. La table permet d'aligner les icônes dans une grille 4x4, de façon ordonnée. Vous définissez également plusieurs propriétés pour améliorer l'apparence de la grille de jeu.
 
@@ -25,7 +25,7 @@ La première étape pour créer un jeu de combinaisons consiste à créer le pro
 
 ::: moniker range="vs-2017"
 
-1. Sur la barre de menu, choisissez **File** > **New** > **Project**.
+1. Dans la barre de menus, choisissez **fichier** > **nouveau** > **projet**.
 
 1. Choisissez **Visual C#** ou **Visual Basic** dans la partie gauche de la boîte de dialogue **Nouveau projet**, puis, choisissez **Windows Desktop**.
 
@@ -40,15 +40,15 @@ La première étape pour créer un jeu de combinaisons consiste à créer le pro
 
 ::: moniker range="vs-2019"
 
-1. Sur la fenêtre de départ, choisissez **Créer un nouveau projet**.
+1. Dans la fenêtre Démarrer, choisissez **créer un nouveau projet**.
 
    ![Afficher la fenêtre « Créer un projet »](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. Dans la fenêtre **Créer un projet**, entrez ou tapez *Windows Forms* dans la zone de recherche. Ensuite, choisissez **Desktop** parmi la liste **de type Projet.**
+1. Dans la fenêtre **Créer un projet**, entrez ou tapez *Windows Forms* dans la zone de recherche. Ensuite, choisissez **Bureau** dans la liste **type de projet** .
 
-   Après avoir appliqué le filtre **de type Projet,** choisissez le modèle **Windows Forms App (.NET Framework)** pour C ou Visual Basic, puis choisissez **Next**.
+   Après avoir appliqué le filtre de **type de projet** , choisissez le modèle d' **application Windows Forms (.NET Framework)** pour C# ou Visual Basic, puis choisissez **suivant**.
 
-   ![Choisissez le modèle de base visuel ou Cmd pour l’application formulaires Windows (.NET Framework)](./media/create-new-project-search-winforms-filtered.png)
+   ![Choisir le modèle C# ou Visual Basic pour l’application Windows Forms (.NET Framework)](./media/create-new-project-search-winforms-filtered.png)
 
    > [!NOTE]
    > Si vous ne voyez pas le modèle **Windows Forms (.NET Framework)**, vous pouvez l’installer à partir de la fenêtre **Créer un projet**. Dans le **Vous ne trouvez pas ce que vous cherchez ?**, choisissez le lien **Installer plus d’outils et de fonctionnalités**.
@@ -61,7 +61,7 @@ La première étape pour créer un jeu de combinaisons consiste à créer le pro
    >
    > Après cela, choisissez le bouton **Modifier** dans Visual Studio Installer. Vous pouvez être invité à enregistrer votre travail ; le cas échéant, faites-le. Ensuite, choisissez **Continuer** pour installer la charge de travail.
 
-1. Dans la fenêtre **Configurer votre nouveau projet**, saisissez ou entrez *MatchingGame* dans la boîte **Nom du projet**. Ensuite, choisissez **Créer**.
+1. Dans la fenêtre **Configurer votre nouveau projet**, saisissez ou entrez *MatchingGame* dans la boîte **Nom du projet**. Ensuite, choisissez **créer**.
 
 ::: moniker-end
 
@@ -117,12 +117,12 @@ La première étape pour créer un jeu de combinaisons consiste à créer le pro
        > [!NOTE]
        > La police Webdings est une police d'icônes fournie avec le système d'exploitation Windows. Dans votre jeu de combinaisons, cette police vous permet d'afficher les icônes que le joueur doit associer par paires. Au lieu de mettre **c** dans la propriété **Text**, essayez d’entrer des lettres différentes pour voir quelles icônes sont affichées. Un point d'exclamation est une araignée, un N majuscule est un œil et une virgule un piment rouge.
 
-5. Choisissez le contrôle d’étiquette et copiez-le dans la cellule suivante du TableLayoutPanel. (Choisissez les touches **Ctrl**+**C,** ou sur la barre de menu, choisissez **Edit** > **Copy**.) Alors collez-le. (Choisissez les touches **Ctrl**+**V,** ou sur la barre de menu, choisissez **Edit** > **Paste**.) Une copie du premier label apparaît dans la deuxième cellule de la TableLayoutPanel. Collez-le à nouveau, et une autre étiquette s'affiche dans la troisième cellule. Continuez à coller des contrôles d’étiquette jusqu'à ce que toutes les cellules soient remplies.
+5. Choisissez le contrôle d’étiquette et copiez-le dans la cellule suivante du TableLayoutPanel. (Appuyez sur **CTRL** + Touches **C** , ou dans la barre de menus, choisissez **modifier**la  >  **copie**.) Puis collez-le. (Appuyez sur **CTRL** + Touches **V** , ou dans la barre de menus, choisissez **Edition**  >  **coller**.) Une copie de la première étiquette apparaît dans la deuxième cellule du TableLayoutPanel. Collez-le à nouveau, et une autre étiquette s'affiche dans la troisième cellule. Continuez à coller des contrôles d’étiquette jusqu'à ce que toutes les cellules soient remplies.
 
    > [!NOTE]
-   > Si vous effectuez un trop grand nombre de collages, l'IDE ajoute une nouvelle ligne au TableLayoutPanel pour fournir la place nécessaire à l'ajout de votre nouveau contrôle d’étiquette. Vous pouvez l'annuler. Pour supprimer la nouvelle cellule, choisissez les touches **Ctrl**+**Z,** ou sur la barre du menu, choisissez **Edit** > **Undo**.
+   > Si vous effectuez un trop grand nombre de collages, l'IDE ajoute une nouvelle ligne au TableLayoutPanel pour fournir la place nécessaire à l'ajout de votre nouveau contrôle d’étiquette. Vous pouvez l'annuler. Pour supprimer la nouvelle cellule, choisissez les touches **CTRL** + **Z** , ou dans la barre de menus, choisissez **modifier**  >  **Annuler**.
 
-    Maintenant, votre formulaire est exposé. Il devrait ressembler à l’image suivante.
+    Votre formulaire est maintenant disposé. Elle doit ressembler à l’image suivante.
 
     ![Formulaire de jeu de combinaisons initial](../ide/media/express_tut4step1.png)<br/>*Formulaire de jeu de combinaisons initial*
 

@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: ccd556a5929e56597de678ad4ad8ea6c101b7c7f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535887"
 ---
 # <a name="ca2131-security-critical-types-may-not-participate-in-type-equivalence"></a>CA2131 : Les types critiques de sécurité ne peuvent pas participer à l'équivalence des types
@@ -28,7 +28,7 @@ ms.locfileid: "85535887"
 |Category|Microsoft.Security|
 |Modification avec rupture|Rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Un type participe à l’équivalence de type et un type lui-même, ou un membre ou champ du type, est marqué avec l' <xref:System.Security.SecurityCriticalAttribute> attribut.
 
 ## <a name="rule-description"></a>Description de la règle

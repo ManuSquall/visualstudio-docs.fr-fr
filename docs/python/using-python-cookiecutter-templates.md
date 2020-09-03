@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 2d58462b90039e14ae98fe450812ca4cfdb6cbbd
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88801579"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Utiliser l’extension Cookiecutter
@@ -99,7 +99,7 @@ Il est possible d’améliorer ce rendu en spécifiant des métadonnées supplé
 | --- | --- |
 | Étiquette | Spécifie ce qui apparaît au-dessus de l’éditeur pour la variable, au lieu du nom de la variable. |
 | Description | Spécifie l’info-bulle qui apparaît sur le contrôle d’édition, au lieu de la valeur par défaut de cette variable. |
-| Adresse URL | Transforme l’étiquette en lien hypertexte, avec une info-bulle qui affiche l’URL. Le fait de sélectionner le lien hypertexte ouvre le navigateur par défaut de l’utilisateur sur cette URL. |
+| URL | Transforme l’étiquette en lien hypertexte, avec une info-bulle qui affiche l’URL. Le fait de sélectionner le lien hypertexte ouvre le navigateur par défaut de l’utilisateur sur cette URL. |
 | Sélecteur | Autorise la personnalisation de l’éditeur pour une variable. Les sélecteurs suivants sont actuellement pris en charge :<ul><li>`string` : zone de texte standard, valeur par défaut pour les chaînes.</li><li>`list` : zone de liste modifiable, valeur par défaut pour les listes.</li><li>`yesno` : zone de liste modifiable permettant de choisir entre `y` et `n`, pour les chaînes.</li><li>`odbcConnection`: Zone de texte avec un bouton **...** qui affiche une boîte de dialogue de connexion à la base de données.</li></ul> |
 
 Exemple :

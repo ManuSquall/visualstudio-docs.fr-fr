@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f232446ed699bd7cc034e4b6d6148b665830cf2d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535523"
 ---
 # <a name="configure-the-windows-firewall-for-remote-debugging"></a>Configurer le Pare-feu Windows pour le débogage distant
@@ -21,11 +21,11 @@ ms.locfileid: "85535523"
 
 Cette rubrique explique comment configurer le pare-feu pour activer le débogage distant sur des ordinateurs qui exécutent les systèmes d’exploitation suivants :  
   
-- Windows 7  
+- Windows 7  
   
 - Windows 8/8.1  
   
-- Windows 10  
+- Windows 10  
   
 - Windows Server 2008 (R2)  
   

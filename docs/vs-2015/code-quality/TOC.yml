@@ -8,15 +8,15 @@
           href: analyzing-managed-code-quality-by-using-code-analysis.md
         - name: Vue d’ensemble de l’analyse du code managé
           href: code-analysis-for-managed-code-overview.md
-        - name: "Procédure\_: Activer et désactiver l'analyse du code automatique"
+        - name: "Comment\_: activer et désactiver l'analyse du code automatique"
           href: how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md
-        - name: "Procédure\_: Activer et désactiver l’analyse de solution complète"
+        - name: Guide pratique pour activer et désactiver l’analyse de solution complète
           href: how-to-enable-and-disable-full-solution-analysis-for-managed-code.md
         - name: Suspension automatique de fonctionnalités
           href: automatic-feature-suspension.md
-        - name: "Procédure\_: Exécuter l’analyse du code manuellement"
+        - name: "Comment\_: exécuter l'analyse du code manuellement"
           href: how-to-run-code-analysis-manually-for-managed-code.md
-        - name: "Procédure pas à pas\_: Analyse du code géré pour la recherche des défaillances du code"
+        - name: "Procédure pas à pas\_: analyse du code managé pour les erreurs de code"
           href: walkthrough-analyzing-managed-code-for-code-defects.md
         - name: Supprimer des avertissements à l'aide de l'attribut SuppressMessage
           items:
@@ -24,17 +24,17 @@
               href: suppress-warnings-by-using-the-suppressmessage-attribute.md
             - name: Vue d’ensemble de la suppression à la source
               href: in-source-suppression-overview.md
-            - name: "Procédure\_: Supprimer des avertissements à l’aide de l’élément de menu"
+            - name: 'Comment : supprimer des avertissements à l’aide de l’élément de menu'
               href: how-to-suppress-warnings-by-using-the-menu-item.md
-            - name: "Procédure\_: Supprimer les avertissements pour du code généré"
+            - name: "Comment\_: supprimer les avertissements pour du code généré"
               href: how-to-suppress-code-analysis-warnings-for-generated-code.md
-            - name: "Procédure\_: Personnaliser le dictionnaire d’analyse du code"
+            - name: 'Comment : personnaliser le dictionnaire d’analyse du code'
               href: how-to-customize-the-code-analysis-dictionary.md
             - name: Méthodes anonymes et analyse du code
               href: anonymous-methods-and-code-analysis.md
-            - name: "Procédure\_: Afficher les défauts du code managé"
+            - name: 'Procédure : afficher les défauts du code managé'
               href: how-to-view-managed-code-defects.md
-            - name: "Procédure\_: Créer un élément de travail pour une erreur de code managé"
+            - name: 'Comment : créer un élément de travail pour une erreur de code managé'
               href: how-to-create-a-work-item-for-a-managed-code-defect.md
             - name: Analyse du code pour les avertissements liés au code managé
               items:
@@ -164,7 +164,7 @@
                   href: ca1058-types-should-not-extend-certain-base-types.md
                 - name: 'CA1059 : Les membres ne doivent pas exposer certains types concrets'
                   href: ca1059-members-should-not-expose-certain-concrete-types.md
-                - name: 'CA1060 : Déplacer les P/Invoke vers une classe NativeMethods'
+                - name: "CA1060\_: Déplacer les P/Invoke vers une classe NativeMethods"
                   href: ca1060-move-p-invokes-to-nativemethods-class.md
                 - name: 'CA1061 : Ne pas masquer les méthodes de la classe de base'
                   href: ca1061-do-not-hide-base-class-methods.md
@@ -256,9 +256,9 @@
                       href: ca1505-avoid-unmaintainable-code.md
                     - name: 'CA1506 : Éviter les couplages de classe excessifs'
                       href: ca1506-avoid-excessive-class-coupling.md
-                    - name: avertissements liés à la mobilité
+                    - name: Mobility Warnings
                       items:
-                        - name: avertissements liés à la mobilité
+                        - name: Mobility Warnings
                           href: mobility-warnings.md
                         - name: 'CA1600 : Ne pas utiliser de priorité de processus inactif'
                           href: ca1600-do-not-use-idle-process-priority.md
@@ -350,9 +350,9 @@
                           href: ca1823-avoid-unused-private-fields.md
                         - name: 'CA1824 : Marquer les assemblys avec NeutralResourcesLanguageAttribute'
                           href: ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md
-                    - name: avertissements liés à la portabilité
+                    - name: Portability Warnings
                       items:
-                        - name: avertissements liés à la portabilité
+                        - name: Portability Warnings
                           href: portability-warnings.md
                         - name: 'CA1900 : Les champs de type valeur doivent être portables'
                           href: ca1900-value-type-fields-should-be-portable.md
@@ -566,13 +566,13 @@
                           href: ca2242-test-for-nan-correctly.md
                         - name: 'CA2243 : Les littéraux de chaîne d''attribut doivent être analysés correctement'
                           href: ca2243-attribute-string-literals-should-parse-correctly.md
-                - name: Erreurs de stratégie d’analyse du code
+                - name: Code Analysis Policy Errors
                   href: code-analysis-policy-errors.md
 - name: Analyse de la qualité du code C/C++
   items:
     - name: Analyse de la qualité du code C/C++
       href: analyzing-c-cpp-code-quality-by-using-code-analysis.md
-    - name: "Démarrage rapide\_: Analyse du code pour C/C++"
+    - name: "Démarrage rapide\_: analyse du code pour C/C++"
       href: quick-start-code-analysis-for-c-cpp.md
     - name: Utilisation des ensembles de règles pour spécifier les règles C++ à exécuter
       href: using-rule-sets-to-specify-the-cpp-rules-to-run.md
@@ -580,11 +580,11 @@
       href: using-the-cpp-core-guidelines-checkers.md
     - name: "Vue d'ensemble de l'analyse du code\_C/C++"
       href: code-analysis-for-c-cpp-overview.md
-    - name: "Procédure\_: Définir les propriétés d’analyse du code pour les projets C/C++"
+    - name: "Comment\_: définir les propriétés d'analyse du code pour les projets C/C++"
       href: how-to-set-code-analysis-properties-for-c-cpp-projects.md
-    - name: "Procédure pas à pas\_: Analyse du code C/C++ pour détecter les erreurs"
+    - name: "Procédure pas à pas\_: analyse du code C/C++ pour rechercher les erreurs"
       items:
-        - name: "Procédure pas à pas\_: Analyse du code C/C++ pour détecter les erreurs"
+        - name: "Procédure pas à pas\_: analyse du code C/C++ pour rechercher les erreurs"
           href: walkthrough-analyzing-c-cpp-code-for-defects.md
         - name: Exemple de démonstration
           href: demo-sample.md
@@ -608,7 +608,7 @@
           href: intrinsic-functions.md
         - name: Meilleures pratiques et exemples
           href: best-practices-and-examples-sal.md
-        - name: "Procédure\_: Spécifier des informations de code supplémentaire en utilisant __analysis_assume"
+        - name: "Comment\_: spécifier des informations de code supplémentaire en utilisant __analysis_assume"
           href: how-to-specify-additional-code-information-by-using-analysis-assume.md
         - name: Analyse de code pour les avertissements C/C++
           items:
@@ -1190,21 +1190,21 @@
           items:
             - name: Utilisation d'ensembles de règles pour regrouper des règles d'analyse du code
               href: using-rule-sets-to-group-code-analysis-rules.md
-            - name: "Procédure pas à pas\_: Configuration et utilisation d’un ensemble de règles personnalisé"
+            - name: 'Procédure pas à pas : configuration et utilisation d’un ensemble de règles personnalisé'
               href: walkthrough-configuring-and-using-a-custom-rule-set.md
-            - name: "Procédure\_: Configurer l’analyse du code pour un projet de code managé"
+            - name: 'Procédure : configurer l’analyse du code pour un projet de code managé'
               href: how-to-configure-code-analysis-for-a-managed-code-project.md
-            - name: "Procédure\_: Configurer l’analyse du code pour une application web ASP.NET"
+            - name: 'Comment : configurer l''analyse du code pour une application Web ASP.NET'
               href: how-to-configure-code-analysis-for-an-aspnet-web-application.md
-            - name: "Procédure\_: Synchroniser des ensembles de règles applicables à des projets de code avec la stratégie d'archivage du projet d'équipe"
+            - name: 'Comment : synchroniser des ensembles de règles applicables à des projets de code avec la stratégie d''archivage du projet d''équipe'
               href: how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy.md
-            - name: "Procédure\_: Spécifier des ensembles de règles pour plusieurs projets dans une solution"
+            - name: "Comment\_: spécifier des ensembles de règles pour plusieurs projets dans une solution"
               href: how-to-specify-managed-code-rule-sets-for-multiple-projects-in-a-solution.md
             - name: Création d'ensembles de règles personnalisés
               items:
                 - name: Création d'ensembles de règles personnalisés
                   href: creating-custom-code-analysis-rule-sets.md
-                - name: "Procédure\_: Créer un ensemble de règles personnalisé"
+                - name: 'Comment : créer un ensemble de règles personnalisé'
                   href: how-to-create-a-custom-rule-set.md
                 - name: Utilisation de l'Éditeur d'ensembles de règles
                   href: working-in-the-code-analysis-rule-set-editor.md
@@ -1304,11 +1304,11 @@
               items:
                 - name: Création et utilisation de stratégies d’archivage de l’analyse du code
                   href: creating-and-using-code-analysis-check-in-policies.md
-                - name: "Procédure\_: Créer ou mettre à jour des stratégies d’archivage d’analyse du code standard"
+                - name: "Comment\_: créer ou mettre à jour des stratégies d’archivage d’analyse du code standard"
                   href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
                 - name: Implémentation de stratégies d’archivage personnalisées pour le code managé
                   href: implementing-custom-code-analysis-check-in-policies-for-managed-code.md
-                - name: "Procédure\_: Appliquer du code facile à maintenir avec une stratégie d’archivage d’analyse du code"
+                - name: 'Comment : appliquer du code facile à maintenir avec une stratégie d’archivage de l’analyse du code'
                   href: how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy.md
                 - name: Compatibilité des versions des stratégies d'archivage de l'analyse du code
                   href: version-compatibility-for-code-analysis-check-in-policies.md
@@ -1318,7 +1318,7 @@
       href: measuring-complexity-and-maintainability-of-managed-code.md
     - name: Valeurs de la métrique du code
       href: code-metrics-values.md
-    - name: "Procédure\_: Générer les données de métrique du code"
+    - name: "Comment\_: générer les données de la métrique du code"
       href: how-to-generate-code-metrics-data.md
     - name: Utiliser des données de la métrique du code
       href: working-with-code-metrics-data.md

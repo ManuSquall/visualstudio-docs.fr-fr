@@ -1,5 +1,5 @@
 ---
-title: Mode d’entrée de rupture (fr) Microsoft Docs
+title: Passage en mode arrêt | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,20 +12,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4bbcec8adf6468f70d95df5f291ce1e5540406cf
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738879"
 ---
-# <a name="enter-break-mode"></a>Entrez en mode pause
-Les informations suivantes décrivent le processus qui se produit lorsqu’un point d’arrêt est rencontré après être entré dans une fonction, en cours d’exécution à la ligne de code source qui a le curseur en elle, ou en cours d’exécution à un point d’arrêt.
+# <a name="enter-break-mode"></a>Passer en mode arrêt
+Les informations suivantes décrivent le processus qui se produit lorsqu’un point d’arrêt est rencontré après un pas à pas détaillé dans une fonction, en cours d’exécution jusqu’à la ligne de code source qui contient le curseur, ou en cours d’exécution jusqu’à un point d’arrêt.
 
-## <a name="break-mode-process"></a>Processus de mode de rupture
+## <a name="break-mode-process"></a>Processus en mode arrêt
 
-1. Le moteur de débogé (DE) envoie [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md), [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md), ou tout autre événement d’arrêt pour provoquer l’IDE à entrer en mode pause.
+1. Le moteur DE débogage (DE) envoie [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md), [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md)ou tout autre événement d’arrêt pour faire en sorte que l’IDE passe en mode arrêt.
 
-2. Le SDM obtient les informations de pile d’appels à partir du fil, comme suit:
+2. Le SDM obtient les informations de la pile des appels à partir du thread, comme suit :
 
     - [IDebugThread2::EnumFrameInfo](../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)
 
@@ -33,13 +33,13 @@ Les informations suivantes décrivent le processus qui se produit lorsqu’un po
 
     - [IEnumDebugFrameInfo2::Next](../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md)
 
-    - [IDebugStackFrame2::GetDocumentContext](../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md) pour obtenir les informations de code source
+    - [IDebugStackFrame2 :: GetDocumentContext](../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md) pour récupérer les informations de code source
 
-    - [IDebugDocumentContext2::GetName](../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md) pour obtenir le nom du fichier
+    - [IDebugDocumentContext2 :: GetName](../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md) pour récupérer le nom de fichier
 
-    - [IDebugDocumentContext2::GetStatementRange](../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md) pour obtenir la plage de déclaration
+    - [IDebugDocumentContext2 :: GetStatementRange](../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md) pour récupérer la plage d’instructions
 
-    - [IDebugStackFrame2::GetCodeContext](../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md) pour obtenir des informations de mémoire
+    - [IDebugStackFrame2 :: GetCodeContext](../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md) pour recevoir des informations sur la mémoire
 
 ## <a name="see-also"></a>Voir aussi
-- [Appel d’événements débbugger](../../extensibility/debugger/calling-debugger-events.md)
+- [Appel des événements du débogueur](../../extensibility/debugger/calling-debugger-events.md)

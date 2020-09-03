@@ -14,10 +14,10 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bb2b874f7bbe94e383e9e7fba755dcc373a93150
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77477049"
 ---
 # <a name="commandtable-element"></a>Élément CommandTable
@@ -49,7 +49,7 @@ CommandTable est l’élément racine du fichier. vsct. Il s’agit du fichier q
 | Attribut |                                                                                                                   Description                                                                                                                   |
 |-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |   xmlns   |                                   Obligatoire. Espaces de noms XML :<br /><br /> `xmlns="<http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable>"`<br /><br /> `xmlns:xs="<http://www.w3.org/2001/XMLSchema>"`                                   |
-| langage  | facultatif. L’attribut Language peut être utilisé pour spécifier la langue par défaut de toutes les chaînes de \<> éléments dans la table de commandes.  Si la langue n’est pas spécifiée, la langue du processus en cours sera utilisée :<br /><br /> Language = "en-US" |
+| langage  | facultatif. L’attribut Language peut être utilisé pour spécifier la langue par défaut de tous les \<Strings> éléments de la table Command.  Si la langue n’est pas spécifiée, la langue du processus en cours sera utilisée :<br /><br /> Language = "en-US" |
   
 ### <a name="child-elements"></a>Éléments enfants  
   
@@ -58,7 +58,7 @@ CommandTable est l’élément racine du fichier. vsct. Il s’agit du fichier q
 |[Élément Extern](../extensibility/extern-element.md)|facultatif. Contient des directives de préprocesseur pour le compilateur.|  
 |[Élément Include](../extensibility/include-element.md)|facultatif. Contient les chemins d’accès à tous les fichiers à inclure dans la compilation.|  
 |[Élément Define](../extensibility/define-element.md)|facultatif. Définit un symbole en fonction de son nom et de sa valeur.|  
-|[Commands, élément](../extensibility/commands-element.md)|facultatif. Élément parent qui définit toutes les commandes pour le VSPackage qui contient tous les autres éléments.|  
+|[Élément Commands](../extensibility/commands-element.md)|facultatif. Élément parent qui définit toutes les commandes pour le VSPackage qui contient tous les autres éléments.|  
 |[Élément CommandPlacements](../extensibility/commandplacements-element.md)|facultatif. Définit l’emplacement où les commandes doivent être placées dans la barre de commandes.|  
 |[Élément VisibilityConstraints](../extensibility/visibilityconstraints-element.md)|facultatif. Détermine la visibilité statique des commandes et des barres d’outils.|  
 |[Élément KeyBindings](../extensibility/keybindings-element.md)|facultatif. Spécifie les combinaisons de touches de raccourci, le cas échéant, pour les commandes.|  

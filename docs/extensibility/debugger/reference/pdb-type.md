@@ -1,5 +1,5 @@
 ---
-title: PDB_TYPE Microsoft Docs
+title: PDB_TYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,15 +16,15 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1f736d7d9b190fc46945e2f4f7c309b88c3e851f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714106"
 ---
 # <a name="pdb_type"></a>PDB_TYPE
 
-Cette structure spécifie des informations sur un type de champ tiré d’un symbole PDB.
+Cette structure spécifie des informations sur un type de champ issu d’un symbole PDB.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -47,25 +47,25 @@ public struct PDB_TYPE {
 ## <a name="members"></a>Membres
 
 `ulAppDomainID`\
-ID de l’application à partir de laquelle le symbole est venu. Ceci est utilisé pour identifier de façon unique un exemple de l’application.
+ID de l’application à partir de laquelle le symbole a été obtenu. Cela permet d’identifier de manière unique une instance de l’application.
 
 `guidModule`\
-Le GUID du module qui contient ce champ.
+GUID du module qui contient ce champ.
 
 `symid`\
-L’ID du symbole qui correspond à ce champ.
+ID du symbole qui correspond à ce champ.
 
 ## <a name="remarks"></a>Notes
 
-Cette structure fait partie du [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) syndicat dans la structure `dwKind` TYPE_INFO `TYPE_INFO` lorsque le `TYPE_KIND_PDB` champ de la structure est fixé à (une valeur de [l’dwTYPE_KIND’énumération).](../../../extensibility/debugger/reference/dwtype-kind.md)
+Cette structure apparaît dans le cadre de l’Union dans la structure [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) lorsque le `dwKind` champ de la `TYPE_INFO` structure a la valeur `TYPE_KIND_PDB` (une valeur de l’énumération [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) ).
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 
-En-tête: sh.h
+En-tête : SH. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Espace de noms : Microsoft. VisualStudio. Debugger. Interop
 
-Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 
