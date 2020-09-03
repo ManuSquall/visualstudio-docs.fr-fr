@@ -29,10 +29,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 20aeee220bec600c2232286d18600b04201ad03b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72745607"
 ---
 # <a name="crt-debug-library-use"></a>Utilisation de la bibliothèque de débogage CRT
@@ -48,4 +48,4 @@ La bibliothèque Runtime C assure une prise en charge complète du débogage. P
 ## <a name="see-also"></a>Voir aussi
 
 - [Techniques de débogage CRT](../debugger/crt-debugging-techniques.md)
-- [/MD, /MT, /LD (Utiliser la bibliothèque Runtime)](/cpp/build/reference/md-mt-ld-use-run-time-library)
+- [/MD,/MT,/LD (utiliser la bibliothèque Runtime)](/cpp/build/reference/md-mt-ld-use-run-time-library)

@@ -20,10 +20,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1e215d4a52965b4e89bc3a01b15da57fc8919437
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72745600"
 ---
 # <a name="dataset-visualizer-dialog-box"></a>Visualiseur DataSet (boîte de dialogue)
@@ -31,7 +31,7 @@ Le Visualiseur DataSet vous permet d'afficher le contenu d'un objet DataSet, Dat
 
  Vous pouvez apporter des modifications aux objets dans ce visualiseur. Les modifications sont enregistrées dès que vous validez une ligne.
 
-## <a name="uielement-list"></a>Liste des éléments d’interface
+## <a name="uielement-list"></a>Liste des éléments de l'interface utilisateur
  Table Utilisez cette zone de liste déroulante pour sélectionner une table dans le jeu de données que vous souhaitez visualiser.
 
 ## <a name="see-also"></a>Voir aussi
@@ -39,4 +39,4 @@ Le Visualiseur DataSet vous permet d'afficher le contenu d'un objet DataSet, Dat
 - [Sécurité du débogueur](../debugger/debugger-security.md)
 - [Créer des visualiseurs personnalisés](../debugger/create-custom-visualizers-of-data.md)
 - [Fenêtres du débogueur](../debugger/debugger-windows.md)
-- [Afficher les valeurs des données dans les conseils de données](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)
+- [Afficher les valeurs de données dans les info-bulles](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)

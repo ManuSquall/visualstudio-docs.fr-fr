@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::CreatePendingBreakpoint | Microsoft Docs
+title: 'IDebugEngine2 :: CreatePendingBreakpoint | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 84c36d08c7ad907006eb9f41d2f6e2c9cd77e7bf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196041"
 ---
 # <a name="idebugengine2creatependingbreakpoint"></a>IDebugEngine2::CreatePendingBreakpoint
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Crée un point d’arrêt en attente dans le moteur de débogage (dé).  
+Crée un point d’arrêt en attente dans le moteur de débogage (DE).  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -42,23 +42,23 @@ int CreatePendingBreakpoint( 
   
 #### <a name="parameters"></a>Paramètres  
  `pBPRequest`  
- [in] Un [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) objet qui décrit le point d’arrêt en attente à créer.  
+ dans Objet [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) qui décrit le point d’arrêt en attente à créer.  
   
  `ppPendingBP`  
- [out] Retourne un [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) objet qui représente le point d’arrêt en attente.  
+ à Retourne un objet [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) qui représente le point d’arrêt en attente.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Retourne généralement `E_FAIL` si le `pBPRequest` paramètre ne correspond pas à n’importe quel langage pris en charge par le DE if le `pBPRequest` paramètre est non valide ou incomplète.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Retourne généralement `E_FAIL` la valeur si le `pBPRequest` paramètre ne correspond à aucun langage pris en charge par le de si le `pBPRequest` paramètre n’est pas valide ou est incomplet.  
   
 ## <a name="remarks"></a>Notes  
- Un point d’arrêt en attente est essentiellement une collection de toutes les informations nécessaires pour lier un point d’arrêt au code. Le point d’arrêt en attente retourné par cette méthode n’est pas lié au code jusqu'à ce que le [lier](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) méthode est appelée.  
+ Un point d’arrêt en attente est essentiellement une collection de toutes les informations nécessaires pour lier un point d’arrêt au code. Le point d’arrêt en attente retourné par cette méthode n’est pas lié au code tant que la méthode de [liaison](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) n’est pas appelée.  
   
- Pour chaque point d’arrêt en attente de l’utilisateur définit le Gestionnaire de session de débogage (SDM) appelle cette méthode dans chaque attaché DE. C’est à la DE pour vérifier que le point d’arrêt est valide pour les programmes en cours d’exécution dans cette DE.  
+ Pour chaque point d’arrêt en attente défini par l’utilisateur, le gestionnaire de débogage de session appelle cette méthode dans chaque attachement DE. C’est à la valeur de de vérifier que le point d’arrêt est valide pour les programmes en cours d’exécution dans ce.  
   
- Lorsque l’utilisateur définit un point d’arrêt sur une ligne de code, l’Allemagne est gratuite lier le point d’arrêt à la ligne la plus proche dans le document qui correspond à ce code. Cela rend possible pour l’utilisateur définir un point d’arrêt sur la première ligne d’une instruction multiligne, mais liez-le sur la dernière ligne (où tout le code est attribué dans les informations de débogage).  
+ Lorsque l’utilisateur définit un point d’arrêt sur une ligne de code, le DE est libre de lier le point d’arrêt à la ligne la plus proche dans le document qui correspond à ce code. Cela permet à l’utilisateur de définir un point d’arrêt sur la première ligne d’une instruction multiligne, mais de le lier à la dernière ligne (où tout le code est attribué dans les informations de débogage).  
   
-## <a name="example"></a>Exemples  
- L’exemple suivant montre comment implémenter cette méthode pour une simple `CProgram` objet. Implémentation de l’Allemagne de le `IDebugEngine2::CreatePendingBreakpoint` puis de transférer tous les appels à cette implémentation de la méthode dans chaque programme.  
+## <a name="example"></a>Exemple  
+ L’exemple suivant montre comment implémenter cette méthode pour un `CProgram` objet simple. L’implémentation de de l' `IDebugEngine2::CreatePendingBreakpoint` peut ensuite transférer tous les appels à cette implémentation de la méthode dans chaque programme.  
   
 ```  
 HRESULT CProgram::CreatePendingBreakpoint(IDebugBreakpointRequest2* pBPRequest, IDebugPendingBreakpoint2** ppPendingBP)     
@@ -74,6 +74,6 @@ HRESULT CProgram::CreatePendingBreakpoint(IDebugBreakpointRequest2* pBPRequest, 
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
- [Lier](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)   
+ [Établis](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)   
  [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)   
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

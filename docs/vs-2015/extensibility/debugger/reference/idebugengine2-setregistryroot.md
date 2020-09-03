@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::SetRegistryRoot | Microsoft Docs
+title: 'IDebugEngine2 :: SetRegistryRoot | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 39bb532301d34a3abf9988cfa909e1606c3c73e8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195945"
 ---
 # <a name="idebugengine2setregistryroot"></a>IDebugEngine2::SetRegistryRoot
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Définit la racine du Registre pour le moteur de débogage (dé).  
+Définit la racine du Registre pour le moteur de débogage (DE).  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -40,13 +40,13 @@ int SetRegistryRoot( 
   
 #### <a name="parameters"></a>Paramètres  
  `pszRegistryRoot`  
- [in] La racine de Registre à utiliser.  
+ dans Racine du Registre à utiliser.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode permet de [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] pour spécifier une racine de Registre autre que l’Allemagne doit utiliser pour obtenir les paramètres de Registre ; par exemple, « HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp ».  
+ Cette méthode permet [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] de spécifier une racine de registre de remplacement que le de doit utiliser pour obtenir des paramètres de Registre, par exemple « HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\8.0exp ».  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

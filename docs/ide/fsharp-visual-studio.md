@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: c0ce6e68fa36f3b13474306ddd1d8304d640c0ec
-ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87507974"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>Développer avec Visual F# dans Visual Studio
@@ -63,7 +63,7 @@ Le **Concepteur de projet** se compose de plusieurs pages de propriétés de pro
 |Page du Concepteur de projet|Liens connexes|Description|
 | - |-------------|-----------|
 |Application|[Page Application, Concepteur de projet](reference/application-page-project-designer-csharp.md)|Permet de spécifier des paramètres et des propriétés au niveau de l’application, par exemple si vous créez une bibliothèque ou un fichier exécutable, quelle est la version de .NET ciblée par l’application ainsi que des informations sur l’emplacement où sont stockés les fichiers de ressources utilisés par cette application.|
-|Générer|[Page Générer, Concepteur de projets](reference/build-page-project-designer-csharp.md)|Permet de contrôler comment le code est compilé.|
+|Build|[Page Générer, Concepteur de projets](reference/build-page-project-designer-csharp.md)|Permet de contrôler comment le code est compilé.|
 |Événements de build|[Page Événements de build, Concepteur de projet](reference/build-events-page-project-designer-csharp.md)|Permet de spécifier des commandes à exécuter avant ou après la compilation.|
 |Débogage|[Page Déboguer, Concepteur de projets](reference/debug-page-project-designer.md)|Permet de contrôler comment l’application s’exécute pendant le débogage. Cela comprend les commandes à utiliser et l’identification du répertoire de départ de votre application, ainsi que tout mode de débogage spécial que vous souhaitez activer, tel que le code natif et SQL.|
 |Package (.NET SDK uniquement)|N/A|Permet de définir les métadonnées de package NuGetlors de la publication en tant que package NuGet.|
@@ -76,8 +76,8 @@ Le tableau suivant récapitule les paramètres qui sont propres à F# :
 
 |Page du Concepteur de projet|Paramètre|Description|
 | - |-------|-----------|
-|Générer|Générer des appels tail|Permet d’utiliser l’instruction tail MSIL (Microsoft Intermediate Language). Cela entraîne la réutilisation du frame de pile pour les fonctions récursives tail. Équivalent à l’option du compilateur `--tailcalls`.|
-|Générer|Autres indicateurs|Permet de spécifier d’autres options de ligne de commande du compilateur.|
+|Build|Générer des appels tail|Permet d’utiliser l’instruction tail MSIL (Microsoft Intermediate Language). Cela entraîne la réutilisation du frame de pile pour les fonctions récursives tail. Équivalent à l’option du compilateur `--tailcalls`.|
+|Build|Autres indicateurs|Permet de spécifier d’autres options de ligne de commande du compilateur.|
 
 ## <a name="code-and-text-editor-features"></a>Fonctionnalités d’éditeur de code et de texte
 

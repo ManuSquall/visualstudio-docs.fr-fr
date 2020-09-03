@@ -1,5 +1,5 @@
 ---
-title: Features1 de Service de langage hérité | Microsoft Docs
+title: Service de langage hérité Features1 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,72 +11,72 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9506c6756c785741c40f86ae5839101bf0079854
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196127"
 ---
-# <a name="legacy-language-service-features"></a>Fonctionnalités de Service de langage hérité
+# <a name="legacy-language-service-features"></a>Fonctionnalités du service de langage hérité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Un service de langage de framework (MPF) package managé peut prendre en charge un ou plusieurs [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] fonctionnalités, telles que la coloration syntaxique, IntelliSense et validation de point d’arrêt. Chaque fonctionnalité peut être implémentée indépendant des autres, mais requièrent tous un analyseur et un analyseur à l’exception de la coloration syntaxique, ce qui nécessite uniquement un scanneur.  
+Un service de langage MPF (Managed package Framework) peut prendre en charge une ou plusieurs [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] fonctionnalités, telles que la mise en surbrillance syntaxique, IntelliSense et la validation de point d’arrêt. Chaque fonctionnalité peut être implémentée indépendamment des autres, mais tous requièrent un analyseur et un scanneur, à l’exception de la mise en surbrillance syntaxique, qui requiert uniquement un scanneur.  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Accolades correspondantes dans un service de langage hérité](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)  
- Décrit ce qui est nécessaire pour prendre en charge de langage appariement, également appelé correspondance des accolades.  
+ Décrit ce qui est requis pour prendre en charge la correspondance de paires de langues, également appelée correspondance d’accolades.  
   
  [Commentaire du code dans un service de langage hérité](../../extensibility/internals/commenting-code-in-a-legacy-language-service.md)  
- Décrit ce qui est nécessaire pour prendre en charge les commentaires et supprimant des commentaires de code sélectionné.  
+ Décrit ce qui est requis pour prendre en charge les commentaires et supprimer les marques de commentaire du code sélectionné.  
   
  [Propriétés de document personnalisé dans un service de langage hérité](../../extensibility/internals/custom-document-properties-in-a-legacy-language-service.md)  
- Décrit ce qui est nécessaire pour prendre en charge les propriétés de document qui sont incorporées dans un fichier source.  
+ Décrit ce qui est requis pour prendre en charge les propriétés de document incorporées dans un fichier source.  
   
  [Mode Plan dans un service de langage hérité](../../extensibility/internals/outlining-in-a-legacy-language-service.md)  
- Décrit ce qui est nécessaire pour prendre en charge le mode plan via l’implémentation de zones masquées.  
+ Décrit ce qui est requis pour prendre en charge le mode plan à l’aide de l’implémentation de zones masquées.  
   
  [Reformatage du code dans un service de langage hérité](../../extensibility/internals/reformatting-code-in-a-legacy-language-service.md)  
- Décrit ce qui est nécessaire pour prendre en charge le reformatage de code.  
+ Décrit ce qui est requis pour prendre en charge le reformatage du code.  
   
  [Prise en charge des extraits de code dans un service de langage hérité](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md)  
- Décrit ce qui est nécessaire pour prendre en charge des extraits de code, qui sont des segments de code qui sont insérés et peuvent être modifiées.  
+ Décrit ce qui est requis pour prendre en charge les extraits de code, qui sont des segments de code qui sont insérés et qui peuvent être modifiés.  
   
  [Informations sur les paramètres dans un service de langage hérité](../../extensibility/internals/parameter-info-in-a-legacy-language-service2.md)  
- Décrit ce qui est nécessaire pour prendre en charge l’opération d’informations sur les paramètres IntelliSense pour l’affichage d’une signature de méthode comme la méthode est de type.  
+ Décrit ce qui est requis pour prendre en charge l’opération informations sur les paramètres IntelliSense pour afficher une signature de méthode lorsque la méthode est tapée.  
   
  [Informations rapides dans un service de langage hérité](../../extensibility/internals/quick-info-in-a-legacy-language-service.md)  
- Décrit ce qui est nécessaire pour prendre en charge l’opération d’Info express IntelliSense pour afficher des informations sur un identificateur.  
+ Décrit ce qui est requis pour prendre en charge l’opération Info Express IntelliSense pour afficher des informations sur un identificateur.  
   
  [Saisie semi-automatique de membre dans un service de langage hérité](../../extensibility/internals/member-completion-in-a-legacy-language-service.md)  
- Décrit ce qui est requis pour prendre en charge l’opération de saisie semi-automatique de membres IntelliSense pour la sélection d’un membre d’un espace de noms à partir d’une liste.  
+ Décrit ce qui est requis pour prendre en charge l’opération d’achèvement de membre IntelliSense pour la sélection d’un membre d’un espace de noms dans une liste.  
   
  [Saisie semi-automatique de mot dans un service de langage hérité](../../extensibility/internals/word-completion-in-a-legacy-language-service.md)  
- Décrit ce qui est nécessaire pour prendre en charge l’opération IntelliSense compléter le mot pour terminer les mots partiellement typés.  
+ Décrit ce qui est requis pour prendre en charge l’opération compléter le mot IntelliSense pour l’exécution de mots partiellement typés.  
   
  [Prise en charge de Fenêtre Automatique dans un service de langage hérité](../../extensibility/internals/support-for-the-autos-window-in-a-legacy-language-service.md)  
- Décrit ce que peut faire un service de langage pour prendre en charge la **automatique** fenêtre pendant le débogage.  
+ Décrit ce qu’un service de langage peut effectuer pour prendre en charge la fenêtre **automatique** pendant le débogage.  
   
  [Prise en charge de la barre de navigation dans un service de langage hérité](../../extensibility/internals/support-for-the-navigation-bar-in-a-legacy-language-service.md)  
- Décrit comment utiliser le **barre de Navigation** dans la partie supérieure de l’affichage de l’éditeur pour fournir une navigation rapide à n’importe quel type ou un membre dans le fichier indiqué dans cette vue...  
+ Décrit comment utiliser la **barre de navigation** en haut de la vue de l’éditeur pour permettre une navigation rapide vers n’importe quel type ou membre du fichier affiché dans cette vue.  
   
  [Couleurs de syntaxe dans un service de langage hérité](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)  
- Décrit ce qui est nécessaire pour prendre en charge la coloration syntaxique du code source.  
+ Décrit ce qui est requis pour prendre en charge la mise en surbrillance syntaxique du code source.  
   
  [Validation des points d’arrêt dans un service de langage hérité](../../extensibility/internals/validating-breakpoints-in-a-legacy-language-service.md)  
- Décrit ce que peut faire un service de langage pour prendre en charge des points d’arrêt lors de la validation en dehors d’un débogueur.  
+ Décrit ce qu’un service de langage peut effectuer pour prendre en charge la validation de points d’arrêt en dehors d’un débogueur.  
   
-## <a name="related-sections"></a>Rubriques connexes  
+## <a name="related-sections"></a>Sections connexes  
  [Scanneur et analyseur du service de langage hérité](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)  
- Décrit l’analyseur et l’analyseur qui sont requis pour implémenter toutes les fonctionnalités d’un service de langage qui utilise l’infrastructure de package gérée.  
+ Décrit l’analyseur et le scanneur requis pour implémenter toutes les fonctionnalités d’un service de langage qui utilise l’infrastructure de package gérée.  
   
  [Implémentation d’un service de langage hérité](../../extensibility/internals/implementing-a-legacy-language-service2.md)  
- Décrit ce qui est nécessaire pour implémenter un service de langage à l’aide du MPF.  
+ Décrit ce qui est requis pour implémenter un service de langage à l’aide du MPF.  
   
  [Inscription d’un service de langage hérité](../../extensibility/internals/registering-a-legacy-language-service1.md)  
- Décrit les étapes qui sont requises pour l’inscription à un service de langage MPF [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
+ Décrit les étapes nécessaires pour inscrire un service de langage basé sur MPF avec [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] .  
   
- [Utilisation de la fonctionnalité IntelliSense](../../ide/using-intellisense.md)  
- Explique comment IntelliSense rend facile d’accéder aux références du langage.  
+ [Utilisation d’IntelliSense](../../ide/using-intellisense.md)  
+ Explique comment IntelliSense facilite l’accès aux références du langage.  
   
  [Implémentation d’un service de langage hérité](../../extensibility/internals/implementing-a-legacy-language-service1.md)  
- Fournit des informations sur l’utilisation de l’infrastructure de package managé (MPF) pour implémenter un service de langage complet dans le code managé.
+ Fournit des informations sur l’utilisation de Managed package Framework (MPF) pour implémenter un service de langage complet dans du code managé.

@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4bc8f3c95c687244162cb3bd977ca40031cd8f39
-ms.sourcegitcommit: ddd99f64a3f86508892a6d61e8a33c88fb911cc4
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82255576"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Guide pratique pour utiliser la même cible dans plusieurs fichiers projet
@@ -24,7 +24,7 @@ Si vous avez créé plusieurs fichiers projet MSBuild, vous avez peut-être déc
 
 ## <a name="use-the-import-element"></a>Utiliser l’élément Import
 
-L’élément `Import` est utilisé pour insérer un fichier projet dans un autre fichier projet. Le fichier projet en cours d’importation doit être un fichier projet MSBuild valide et contenir du code XML correct. L’attribut `Project` spécifie le chemin du fichier projet importé. Pour plus d’informations sur `Import` l’élément, consultez [import, élément (MSBuild)](../msbuild/import-element-msbuild.md).
+L’élément `Import` est utilisé pour insérer un fichier projet dans un autre fichier projet. Le fichier projet en cours d’importation doit être un fichier projet MSBuild valide et contenir du code XML correct. L’attribut `Project` spécifie le chemin du fichier projet importé. Pour plus d’informations sur l' `Import` élément, consultez [import, élément (MSBuild)](../msbuild/import-element-msbuild.md).
 
 #### <a name="to-import-a-project"></a>Pour importer un projet
 
@@ -38,7 +38,7 @@ L’élément `Import` est utilisé pour insérer un fichier projet dans un autr
 
 ## <a name="order-of-evaluation"></a>Ordre d’évaluation
 
- Quand MSBuild atteint un `Import` élément, le projet importé est effectivement inséré dans le projet d’importation à l’emplacement de `Import` l’élément. Par conséquent, l’emplacement de l’élément `Import` peut affecter les valeurs des propriétés et des éléments. Il est important de comprendre les propriétés et les éléments qui sont définis par le projet importé, ainsi que les propriétés et les éléments utilisés par le projet importé.
+ Quand MSBuild atteint un `Import` élément, le projet importé est effectivement inséré dans le projet d’importation à l’emplacement de l' `Import` élément. Par conséquent, l’emplacement de l’élément `Import` peut affecter les valeurs des propriétés et des éléments. Il est important de comprendre les propriétés et les éléments qui sont définis par le projet importé, ainsi que les propriétés et les éléments utilisés par le projet importé.
 
  Quand le projet est généré, toutes les propriétés sont évaluées en premier, suivies par les éléments. Par exemple, le code XML suivant définit le fichier projet importé *MyCommon. targets*:
 
@@ -71,7 +71,7 @@ L’élément `Import` est utilisé pour insérer un fichier projet dans un autr
 
  `Name="MyCommon"`
 
- Étant donné que le projet est importé après `Name` que la propriété a été définie dans *MyApp. proj*, `Name` la définition de dans *MyCommon. targets* se substitue à la définition dans *MyApp. proj*. Si le projet est importé avant la définition de la propriété Name, la génération affiche le message suivant :
+ Étant donné que le projet est importé après que la propriété `Name` a été définie dans *MyApp. proj*, la définition de `Name` dans *MyCommon. targets* se substitue à la définition dans *MyApp. proj*. Si le projet est importé avant la définition de la propriété Name, la génération affiche le message suivant :
 
  `Name="MyApp"`
 

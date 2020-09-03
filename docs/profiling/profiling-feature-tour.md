@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e890a3d595b98276883c7e75547bb7edb338ca55
-ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87507987"
 ---
 # <a name="first-look-at-profiling-tools"></a>Découvrir les outils de profilage
@@ -89,7 +89,7 @@ Lorsque vous sélectionnez l’un des liens de direction, vous recevez une vue d
 
 Par contre, si vous cliquez sur le lien sur la gauche dans la vue **Utilisation de la mémoire**, la vue du tas est organisée par nombre d’objets ; les objets d’un type particulier dont le nombre a le plus augmenté sont affichés en haut (en fonction de la colonne **Différence de nombre**).
 
-## <a name="profile-release-builds-without-the-debugger"></a><a name="post_mortem"></a>Créer des versions de version de profil sans le débogueur
+## <a name="profile-release-builds-without-the-debugger"></a><a name="post_mortem"></a> Créer des versions de version de profil sans le débogueur
 
 Vous pouvez utiliser les Outils de profilage, par exemple Utilisation de l’UC et Utilisation de la mémoire, avec le débogueur (consultez les sections précédentes), ou vous pouvez exécuter les Outils de profilage post mortem à l’aide du profileur de performances, qui vise à fournir une analyse des builds de version **Release**. Dans le profileur de performances, vous pouvez collecter des informations de diagnostic pendant l’exécution de l’application, puis examiner ces informations après l’arrêt de l’application. Pour plus d’informations sur ces différentes approches, consultez [Exécuter les Outils de profilage avec ou sans le débogueur](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Des outils supplémentaires, tels que l' [outil d’allocation d’objets .net](../profiling/dotnet-alloc-tool.md) , sont également disponibles dans le profileur de performances.
 
@@ -206,12 +206,12 @@ Voici un tableau qui recense les différents outils proposés par Visual Studio,
 |[Utilisation du processeur](../profiling/cpu-usage.md)|Oui|Oui|Oui|
 |[Utilisation de la mémoire](../profiling/memory-usage.md)|Oui|Oui|Oui|
 |[Allocation d’objets .NET](../profiling/dotnet-alloc-tool.md)|Oui (.NET uniquement)|Oui|Oui|
-|[Utilisation du GPU](/visualstudio/debugger/graphics/gpu-usage)|Oui|Oui|non|
-|[Chronologie de l'application](../profiling/application-timeline.md)|Oui|Oui|non|
+|[Utilisation du GPU](/visualstudio/debugger/graphics/gpu-usage)|Oui|Oui|Non|
+|[Chronologie de l'application](../profiling/application-timeline.md)|Oui|Oui|Non|
 |[Observateur d’événements](../profiling/events-viewer.md)|Oui|Oui|Oui|
 |[.NET Async](../profiling/analyze-async.md)|Oui (.NET uniquement)|Oui|Oui|
-|[Sauvegarde de la base de données](../profiling/analyze-database.md)|Oui (.NET Core uniquement)|non|Oui (ASP.NET Core uniquement)|
-|[Explorateur de performances](../profiling/performance-explorer.md)|non|non|non|
+|[Base de données](../profiling/analyze-database.md)|Oui (.NET Core uniquement)|Non|Oui (ASP.NET Core uniquement)|
+|[Explorateur de performances](../profiling/performance-explorer.md)|Non|Non|Non|
 |[IntelliTrace](../debugger/intellitrace.md)|.NET avec Visual Studio Enterprise uniquement|.NET avec Visual Studio Enterprise uniquement|.NET avec Visual Studio Enterprise uniquement|
 ::: moniker-end
 
@@ -220,14 +220,14 @@ Voici un tableau qui recense les différents outils proposés par Visual Studio,
 |----------------------|---------------------|-------------|-------------|
 |[Utilisation du processeur](../profiling/cpu-usage.md)|Oui|Oui|Oui|
 |[Utilisation de la mémoire](../profiling/memory-usage.md)|Oui|Oui|Oui|
-|[Utilisation du GPU](/visualstudio/debugger/graphics/gpu-usage)|Oui|Oui|non|
-|[Chronologie de l'application](../profiling/application-timeline.md)|Oui|Oui|non|
+|[Utilisation du GPU](/visualstudio/debugger/graphics/gpu-usage)|Oui|Oui|Non|
+|[Chronologie de l'application](../profiling/application-timeline.md)|Oui|Oui|Non|
 |[Conseils sur les performances](../profiling/perftips.md)|Oui|oui pour XAML, non pour HTML|Oui|
-|[Explorateur de performances](../profiling/performance-explorer.md)|Oui|non|Oui|
+|[Explorateur de performances](../profiling/performance-explorer.md)|Oui|Non|Oui|
 |[IntelliTrace](../debugger/intellitrace.md)|.NET avec Visual Studio Enterprise uniquement|.NET avec Visual Studio Enterprise uniquement|.NET avec Visual Studio Enterprise uniquement|
-|[Utilisation du réseau](../profiling/network-usage.md)|non|Oui|non|
-|[Réactivité de l’interface utilisateur HTML](../profiling/html-ui-responsiveness.md)|non|oui pour HTML, non pour XAML|non|
-|[Mémoire JavaScript](../profiling/javascript-memory.md)|non|oui pour HTML, non pour XAML|non|
+|[Utilisation du réseau](../profiling/network-usage.md)|Non|Oui|Non|
+|[Réactivité de l’interface utilisateur HTML](../profiling/html-ui-responsiveness.md)|Non|oui pour HTML, non pour XAML|Non|
+|[Mémoire JavaScript](../profiling/javascript-memory.md)|Non|oui pour HTML, non pour XAML|Non|
 ::: moniker-end
 
 

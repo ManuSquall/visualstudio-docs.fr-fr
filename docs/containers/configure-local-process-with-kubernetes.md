@@ -10,13 +10,13 @@ author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.openlocfilehash: 234eacedbc08007ede6bb5745a1a289aa838cccb
-ms.sourcegitcommit: e359b93c93c6ca316c0d8b86c2b6e566171fd1ea
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87508302"
 ---
-# <a name="configure-local-process-with-kubernetes"></a>Configurer le processus local avec Kubernetes
+# <a name="configure-local-process-with-kubernetes"></a>Configurer un processus local avec Kubernetes
 
 Le `KubernetesLocalProcessConfig.yaml` fichier vous permet de répliquer des variables d’environnement et des fichiers montés disponibles pour vos Pod dans votre cluster AKS. Vous pouvez spécifier les actions suivantes dans un `KubernetesLocalProcessConfig.yaml` fichier :
 
