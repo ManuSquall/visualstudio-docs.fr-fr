@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f607d500bfcb8a745bfb129490d2c2b09c6b105c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666507"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>Procédure : sélectionner les schémas XML à utiliser
@@ -34,13 +34,13 @@ L'Éditeur XML fournit un cache de schéma dans le répertoire %InstallDir%\Xml\
 
 2. Dans la fenêtre Propriétés du document, cliquez sur le bouton dans le champ **schémas** .
 
-    La boîte de dialogue **schémas XML** s’affiche. La boîte de dialogue répertorie tous les schémas dotés d’une extension. xsd dans le cache de schéma (y compris les schémas référencés dans le fichier catalog. Xml), ainsi que tous les schémas de la solution actuelle, ouverts dans Visual Studio, référencés dans un attribut `xsd:schemaLocation`, ou référencés dans le Propriété **schemas** .
+    La boîte de dialogue **schémas XML** s’affiche. La boîte de dialogue répertorie tous les schémas avec une extension. xsd dans le cache de schéma (y compris les schémas référencés dans le fichier catalog.xml), ainsi que tous les schémas de la solution actuelle, ouverts dans Visual Studio, référencés dans un `xsd:schemaLocation` attribut ou référencés dans la propriété **schemas** .
 
 3. Sélectionnez les schémas à utiliser pour la validation en effectuant l'une des opérations suivantes :
 
    - Sélectionnez un schéma listé dans la boîte de dialogue **schémas XML** , cliquez sur la colonne **utiliser** , puis sélectionnez **utiliser ce schéma**.
 
-     ou
+     - ou -
 
    - Sélectionnez plusieurs schémas listés dans la boîte de dialogue **schémas XML** , cliquez avec le bouton droit et sélectionnez **utiliser ce schéma**.
 
@@ -52,7 +52,7 @@ L'Éditeur XML fournit un cache de schéma dans le répertoire %InstallDir%\Xml\
 
 1. Dans la fenêtre Propriétés du document, cliquez sur le bouton dans le champ **schémas** .
 
-2. Cliquez sur **Ajouter**.
+2. Cliquez sur **Add**.
 
      La boîte de dialogue **ouvrir le schéma XSD** s’ouvre.
 
@@ -71,7 +71,7 @@ L'Éditeur XML fournit un cache de schéma dans le répertoire %InstallDir%\Xml\
      Le schéma est supprimé du cache de schéma en mémoire, mais pas du système de fichiers.
 
     > [!NOTE]
-    > Si vous avez toujours une référence au schéma via un attribut `schemaLocation`, ou un `targetNamespace` de correspondance, la **suppression** ne fonctionnera pas dans cette situation en raison d’une association automatique. Dans ce cas, il est recommandé de marquer le schéma comme **n’utilisez pas les schémas sélectionnés** dans la colonne **use** .
+    > Si vous disposez toujours d’une référence au schéma via un `schemaLocation` attribut, ou si une correspondance `targetNamespace` est **supprimée** , la suppression ne fonctionnera pas dans cette situation en raison d’une association automatique. Dans ce cas, il est recommandé de marquer le schéma comme **n’utilisez pas les schémas sélectionnés** dans la colonne **use** .
 
 ## <a name="see-also"></a>Voir aussi
  [Éditeur XML](../xml-tools/xml-editor.md) de [la boîte de dialogue schémas XML](../xml-tools/xml-schemas-dialog-box.md) [du cache de schéma](../xml-tools/schema-cache.md)

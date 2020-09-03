@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1e4ee5de3c27d1ba16aed25c59555880901c010b
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85467371"
 ---
 # <a name="idiaframedataget_functionstart"></a>IDiaFrameData::get_functionStart
@@ -38,7 +38,7 @@ HRESULT get_functionStart ( 
 ## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Il est possible qu’un frame de pile ne soit pas le début d’une fonction, car le frame représente une méthode ou une fonction inline insérée dans une fonction.
 
 ## <a name="see-also"></a>Voir aussi

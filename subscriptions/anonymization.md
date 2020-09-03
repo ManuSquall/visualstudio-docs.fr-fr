@@ -8,10 +8,10 @@ ms.date: 02/20/2020
 ms.topic: conceptual
 description: Découvrez comment les données des abonnés sont anonymisées quand l’accès aux abonnements est perdu.
 ms.openlocfilehash: b65673d2fe61f62bf9e7731d20763bcd8c6f74bf
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80232740"
 ---
 # <a name="anonymization-of-visual-studio-subscriber-information"></a>Anonymisation des informations sur les abonnés Visual Studio
@@ -37,18 +37,18 @@ R : Non.  L’anonymisation a lieu en réponse à un événement qui entraîne 
 ### <a name="q--im-an-administrator-for-my-organizations-subscriptions--if-one-of-my-subscribers-information-is-anonymized-can-that-subscription-be-reassigned-to-another-user"></a>Q : Je suis chargé de l’administration des abonnements de mon organisation.  Si les informations de l’un de mes abonnés sont anonymisées, cet abonnement peut-il être réaffecté à un autre utilisateur ?
 R : Oui. Tant que l’abonnement n’a pas expiré, il peut être réaffecté à un autre abonné.
 
-### <a name="q-how-can-i-prevent-anonymization-caused-by-deleting-a-sign-in-email-address"></a>Q: Comment puis-je prévenir l’anonymisation causée par la suppression d’une adresse e-mail de connexion?
-R : Il y a deux façons d’éviter le problème :
+### <a name="q-how-can-i-prevent-anonymization-caused-by-deleting-a-sign-in-email-address"></a>Q : Comment puis-je empêcher l’anonymisation due à la suppression d’une adresse de messagerie de connexion ?
+R : il existe deux façons d’éviter ce problème :
 - Déployez un système de gestion d’identité unique, AAD ou MSA mais pas les deux  
 - Associez les identités AAD et MSA par le biais du locataire. 
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentation Azure](https://docs.microsoft.com/azure/)
 - [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
-Apprenez à prévenir l’anonymisation [en associant les identités MSA et AAD](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).
+Découvrez comment empêcher l’anonymisation en [associant les identités MSA et AAD](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).
 
 

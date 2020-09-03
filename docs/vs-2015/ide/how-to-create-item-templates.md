@@ -15,16 +15,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c9edc79002a4a2d7c2fe135d7eb4669f5f010599
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668078"
 ---
 # <a name="how-to-create-item-templates"></a>Guide pratique pour créer des modèles d’élément
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Les étapes de la [première procédure](#to-add-a-custom-project-item-template-to-the-add-new-item-dialog-box) de cette rubrique montrent comment créer un modèle d’élément à l’aide de l’Assistant **Exportation de modèle**. Si votre modèle se compose de plusieurs fichiers, consultez [Guide pratique pour créer des modèles d’élément multifichier](../ide/how-to-create-multi-file-item-templates.md).
+Les étapes de la [première procédure](#to-add-a-custom-project-item-template-to-the-add-new-item-dialog-box) de cette rubrique montrent comment créer un modèle d’élément à l’aide de l’Assistant **Exportation de modèle**. Si votre modèle se compose de plusieurs fichiers, consultez [Comment : créer des modèles d’élément multifichiers](../ide/how-to-create-multi-file-item-templates.md).
 
  L'Assistant exécute de nombreuses tâches à votre place pour créer le modèle de base mais, dans de nombreux cas, vous devez modifier manuellement le fichier .vstemplate après avoir exporté le modèle. Par exemple, si vous souhaitez que l’élément s’affiche dans la boîte de dialogue **Ajouter un nouvel élément** pour un projet d’application [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], vous devez effectuer quelques étapes supplémentaires. La [deuxième procédure](#to-enable-the-item-template-to-be-used-in-a-store-project) de cette rubrique vous aide à accomplir cette tâche.
 
@@ -38,7 +38,7 @@ Les étapes de la [première procédure](#to-add-a-custom-project-item-template-
 
 2. Ajoutez un élément au projet et modifiez-le si vous le souhaitez.
 
-3. Modifiez le fichier de code pour indiquer où le remplacement de paramètres doit avoir lieu. Pour plus d’informations, consultez [Guide pratique pour substituer des paramètres dans un modèle](../ide/how-to-substitute-parameters-in-a-template.md).
+3. Modifiez le fichier de code pour indiquer où le remplacement de paramètres doit avoir lieu. Pour plus d’informations, consultez [Comment : substituer des paramètres dans un modèle](../ide/how-to-substitute-parameters-in-a-template.md).
 
 4. Dans le menu **Fichier**, cliquez sur **Exporter le modèle**.
 
@@ -50,10 +50,10 @@ Les étapes de la [première procédure](#to-add-a-custom-project-item-template-
 
 8. Tapez le nom du fichier icône, le nom de l’image d’aperçu, le nom du modèle et la description du modèle, puis cliquez sur **Terminer**.
 
-     Les fichiers du modèle sont ajoutés à un fichier .zip et copiés dans le répertoire que vous spécifiez dans la boîte de dialogue. L’emplacement par défaut est le dossier **..\Users\\<nom_utilisateur\>\Documents\Visual Studio \<version>\My Exported Templates\\** .
+     Les fichiers du modèle sont ajoutés à un fichier .zip et copiés dans le répertoire que vous spécifiez dans la boîte de dialogue. L’emplacement par défaut est **.. \Users \\<nom_utilisateur \> \Documents\Visual Studio \<Version> \Mes exportationd \\ Templates** Folder.
 
     > [!WARNING]
-    > Dans les versions antérieures de Visual Studio, l’emplacement par défaut est **..\Users\\<nom_utilisateur\>\Documents\Visual Studio \<version>\Templates\ItemTemplates**.
+    > Dans les versions antérieures de Visual Studio, l’emplacement par défaut est **.. \Users \\<nom_utilisateur \> \Documents\Visual Studio \<Version> \Templates\ItemTemplates**.
 
 ### <a name="to-enable-the-item-template-to-be-used-in-a-store-project"></a>Pour permettre l'utilisation du modèle d'élément dans un projet Windows Store
 
@@ -67,7 +67,7 @@ Les étapes de la [première procédure](#to-add-a-custom-project-item-template-
 
     Un projet C++ Windows Store pour Windows 8.1 utilise la valeur `WinRT-Native-6.3`. Pour Windows 10 et d’autres types de projets, consultez [TemplateGroupID, élément (modèles Visual Studio)](../extensibility/templategroupid-element-visual-studio-templates.md).
 
-    L'exemple suivant illustre le contenu complet d'un fichier .vstemplate après l'ajout de la ligne XML `<TemplateGroupID>WinRT-Managed</TemplateGroupID>`. Cet exemple est spécifique aux projets C#. Vous pouvez modifier les éléments \<ProjectType > et \< [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)> pour spécifier d’autres types de langages et de projets.
+    L'exemple suivant illustre le contenu complet d'un fichier .vstemplate après l'ajout de la ligne XML `<TemplateGroupID>WinRT-Managed</TemplateGroupID>`. Cet exemple est spécifique aux projets C#. Vous pouvez modifier les \<ProjectType> \< [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)> éléments et pour spécifier d’autres types de langages et de projets.
 
    ```xml
    <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
@@ -118,7 +118,7 @@ Les étapes de la [première procédure](#to-add-a-custom-project-item-template-
 
    4. Web
 
-      Par exemple : `<ProjectSubType>Database</ProjectSubType>`.
+      Par exemple : `<ProjectSubType>Database</ProjectSubType>`.
 
       L'exemple suivant affiche un modèle d'élément disponible pour les projets Office.
 

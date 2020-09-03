@@ -19,16 +19,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a1403beccdb6bf9b938787f62cb3da2e5bb5c259
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668134"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>Comment : créer et supprimer les dépendances d'un projet
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Quand vous générez une solution qui contient plusieurs projets, vous pouvez être amené à générer d’abord certains projets pour générer le code utilisé par les autres projets. Quand un projet utilise un code exécutable généré par un autre projet, le projet qui génère le code une dépendance du projet qui utilise le code. Vous pouvez définir ces relations de dépendance dans la boîte de dialogue **Dépendances du projet**.
+Quand vous générez une solution qui contient plusieurs projets, vous pouvez être amené à générer d’abord certains projets pour générer le code utilisé par les autres projets. Quand un projet utilise un code exécutable généré par un autre projet, le projet qui génère le code une dépendance du projet qui utilise le code. Ces relations de dépendance peuvent être définies dans la boîte de dialogue **dépendances du projet** .
 
 ### <a name="to-assign-dependencies-to-projects"></a>Pour assigner des dépendances à des projets
 

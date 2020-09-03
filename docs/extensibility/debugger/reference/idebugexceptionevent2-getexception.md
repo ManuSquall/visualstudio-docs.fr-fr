@@ -1,5 +1,5 @@
 ---
-title: IDebugExceptionEvent2::GetException (fr) Microsoft Docs
+title: 'IDebugExceptionEvent2 :: GetException | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 332cbb28bd175aa5c3b4187ae735a479ba9de6b0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729860"
 ---
 # <a name="idebugexceptionevent2getexception"></a>IDebugExceptionEvent2::GetException
@@ -41,14 +41,14 @@ int GetException( 
 
 ## <a name="parameters"></a>Paramètres
 `pExceptionInfo`\
-[dans, dehors] Une structure [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) qui est remplie avec la description de l’exception.
+[in, out] Structure [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) qui est remplie avec la description de l’exception.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
 
- [C seulement] L’appelant est responsable de libérer toutes les chaînes de la structure [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) ainsi que de libérer [l’objet IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) dans la structure.
+ [C++ uniquement] L’appelant est chargé de libérer des chaînes dans la structure [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) , ainsi que de libérer l’objet [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) dans la structure.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)

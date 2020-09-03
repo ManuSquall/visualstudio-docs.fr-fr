@@ -8,10 +8,10 @@ ms.date: 03/26/2020
 ms.topic: how-to
 description: Découvrez l’abonnement Power BI Pro inclus dans certains abonnements Visual Studio.
 ms.openlocfilehash: 9a16e827c45e600ff3b5edc8579b5941aa80ca90
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88801683"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro dans les abonnements Visual Studio
@@ -65,11 +65,11 @@ Pour utiliser Power BI Pro, vous devez créer un compte ou vous connecter à l
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, vente au détail, NFR sélectionnés<sup>1</sup> | Disponible       |  Oui|
 | Visual Studio Enterprise avec GitHub Enterprise  | LV | Disponible       |  Oui|
-| Visual Studio Professional (Standard, cloud mensuel) | Licences en volume, Azure, Détail                                       | Non disponible                                                            |NA         |
-| Visual Studio Professional avec GitHub Enterprise | LV                                      | Non disponible                                                            |NA         |
-| Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Non disponible                                                            |NA         |
+| Visual Studio Professional (Standard, cloud mensuel) | Licences en volume, Azure, Détail                                       | Non disponible                                                            |N/D         |
+| Visual Studio Professional avec GitHub Enterprise | LV                                      | Non disponible                                                            |N/D         |
+| Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Non disponible                                                            |N/D         |
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Disponible       |  Oui|
-| Visual Studio Enterprise (cloud mensuel) | Azure                                       | Non disponible                                  |NA|
+| Visual Studio Enterprise (cloud mensuel) | Azure                                       | Non disponible                                  |N/D|
 ||
 
 <sup>1</sup>  *comprend : non pour la revente (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer, MCT Software & service, MVP (Most Valuable Professional), Bureau régional.  Exclut : Microsoft Partner Network (MPN), FTE, imagine.*

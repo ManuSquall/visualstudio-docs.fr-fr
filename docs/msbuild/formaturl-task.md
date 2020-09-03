@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5fcd4ed0c60d615f0c213e1af5099c5e94a9b485
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77634121"
 ---
 # <a name="formaturl-task"></a>FormatUrl (tâche)
@@ -36,9 +36,9 @@ Convertit une URL en URL au format correct.
 |`InputUrl`|Paramètre `String` facultatif.<br /><br /> Spécifie l’URL à mettre en forme.|
 |`OutputUrl`|Paramètre de sortie `String` facultatif.<br /><br /> Spécifie l’URL mise en forme.|
 
-## <a name="remarks"></a>Notes 
+## <a name="remarks"></a>Notes
 
- En plus des paramètres répertoriés dans le tableau, cette tâche comprend des paramètres qu’elle hérite de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour une liste de ces paramètres supplémentaires et leurs descriptions, voir [TaskExtension classe de base](../msbuild/taskextension-base-class.md).
+ En plus des paramètres répertoriés dans le tableau, cette tâche comprend des paramètres qu’elle hérite de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [classe de base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="see-also"></a>Voir aussi
 

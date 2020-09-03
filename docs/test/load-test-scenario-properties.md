@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c2011438f1fcb0230cde0de527216456553e7c64
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75584437"
 ---
 # <a name="load-test-scenario-properties"></a>Propriétés des scénarios de test de charge
@@ -26,7 +26,7 @@ Changez les paramètres des propriétés de votre scénario de test de charge da
 
 |Propriété|Définition|
 |-|----------------|
-|**Nom   **|Nom du scénario.|
+|**Name**|Nom du scénario.|
 
 ## <a name="mix"></a>Combinaison
 
@@ -53,7 +53,7 @@ Changez les paramètres des propriétés de votre scénario de test de charge da
 |Propriété|Définition|
 |-|----------------|
 |**Retarder l’heure de début**|Valeur de temps indiquant le délai en nombre d'heures, de minutes et de secondes à l'issue duquel le scénario démarre après le démarrage du test de charge. Si la propriété **Désactiver pendant le préchauffage** a la valeur **True**, le délai d’attente s’applique à l’issue de la période de préparation.<br /><br />Pour plus d’informations, consultez [Configurer les délais de démarrage des scénarios](../test/configure-scenario-start-delays.md).|
-|**Désactiver pendant le préchauffage**|Valeur booléenne utilisée pour indiquer si le scénario doit être exécuté conformément à la durée de la propriété **Durée de préchauffage** spécifiée dans le paramètre d’exécution du test de charge.<br /><br />Pour plus d’informations sur les propriétés de réglage de l’exécution de test de charge, voir [propriétés de réglages d’exécution de test de charge](../test/load-test-run-settings-properties.md).<br /><br />Pour plus d’informations, consultez [Configurer les délais de démarrage des scénarios](../test/configure-scenario-start-delays.md).|
+|**Désactiver pendant le préchauffage**|Valeur booléenne utilisée pour indiquer si le scénario doit être exécuté conformément à la durée de la propriété **Durée de préchauffage** spécifiée dans le paramètre d’exécution du test de charge.<br /><br />Pour plus d’informations sur les propriétés des paramètres de série de tests de charge, consultez [Propriétés des paramètres d’exécution du test de charge](../test/load-test-run-settings-properties.md).<br /><br />Pour plus d’informations, consultez [Configurer les délais de démarrage des scénarios](../test/configure-scenario-start-delays.md).|
 |**Temps de réflexion entre les itérations de test**|Valeur numérique utilisée pour spécifier le délai d'attente exprimé en secondes entre les itérations de test.<br /><br />Pour plus d’informations, consultez [Modifier les temps de réflexion pour simuler les délais d’interaction humaine avec un site web](../test/edit-think-times-in-load-test-scenarios.md).|
 
 ## <a name="see-also"></a>Voir aussi

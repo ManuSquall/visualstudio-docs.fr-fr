@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3eebefeab6b78955b03d4546a60dd811f5e9ae4e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547652"
 ---
 # <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>Éditions de Visual Studio prises en charge pour le &amp; Kit de développement logiciel de modélisation de visualisation
@@ -32,7 +32,7 @@ Les listes suivantes répertorient les éditions de Visual Studio prises en char
 |[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[SDK Visual Studio](../extensibility/visual-studio-sdk.md)|
 |Kit de développement logiciel (SDK) Visual Studio Visualization and Modeling|[Téléchargement du SDK Modeling](https://www.microsoft.com/download/details.aspx?id=48148)|
 ## <a name="deployment-editions"></a>Éditions de déploiement
- [!INCLUDE[dsl](../includes/dsl-md.md)]prend en charge les configurations suivantes pour déployer les langages spécifiques à un domaine que vous générez :
+ [!INCLUDE[dsl](../includes/dsl-md.md)] prend en charge les configurations suivantes pour déployer les langages spécifiques à un domaine que vous générez :
 
 - Visual Studio Enterprise
 

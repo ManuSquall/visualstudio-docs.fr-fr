@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ffa2b0fd8cab35fc73031d3ead8a5803558c2c07
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667943"
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>Guide pratique pour exclure des projets d'une build
@@ -43,7 +43,7 @@ Vous pouvez générer une solution sans générer tous les projets qu'elle conti
 
 1. Dans la barre de menus, choisissez **Générer**, puis **Gestionnaire de configurations**.
 
-2. Dans la liste **Configuration de la solution active**, choisissez **\<Nouveau>** .
+2. Dans la liste Configuration de la **solution active** , choisissez **\<New>** .
 
 3. Dans la zone **Nom**, entrez un nom pour la configuration de solution.
 

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7a0304c217599e790b8cfa9e738245927336470e
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88801839"
 ---
 # <a name="configure-a-computer-to-develop-office-solutions"></a>Configurer un ordinateur pour développer des solutions Office
@@ -25,7 +25,7 @@ Pour créer des compléments VSTO et des personnalisations pour Microsoft Office
 
 |Logiciel|Versions prises en charge|
 |--------------|------------------------|
-|Visual Studio 2017| Toute édition avec la charge de travail **développement Office/SharePoint** .|
+|Visual Studio 2017| Toute édition avec la charge de travail **développement Office/SharePoint** .|
 |.NET Framework|-Le .NET Framework 4 ou version ultérieure.|
 |Microsoft Office|<ul><li>Toute édition de la suite d’Office, y compris les applications Microsoft 365 pour l’entreprise.</li><li>N'importe laquelle des applications autonomes suivantes :<br /><br /> <ul><li>Excel</li><li>InfoPath (Office 2013 et Office 2010 uniquement)</li><li>Outlook</li><li>PowerPoint</li><li>Project</li><li>Visio</li><li>Word</li></ul></li></ul><br /> Visual Basic pour Applications (VBA) doit être installé dans le cadre d'Office. **Important :** Les versions « démarrer en un clic » des applications Office 2010 ne sont pas prises en charge.|
 

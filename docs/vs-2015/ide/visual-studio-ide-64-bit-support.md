@@ -14,16 +14,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7d457af78a23d03b4d87de6dd226cf55e8a191f8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667119"
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Prise en charge de l'IDE de Visual Studio 64 bits
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] vous permet de configurer vos applications pour cibler différentes plateformes (y compris des plateformes 64 bits). Pour plus d’informations sur la prise en charge des plateformes 64 bits dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], consultez [Applications 64 bits](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181).
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] vous permet de configurer vos applications pour cibler différentes plateformes (y compris des plateformes 64 bits). Pour plus d’informations sur la prise en charge de la plateforme 64 bits dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , consultez [applications 64 bits](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181).
 
 ## <a name="deploying-a-64-bit-application"></a>Déploiement d’une application 64 bits
  Les rubriques suivantes traitent du déploiement d’applications 64 bits.
@@ -35,16 +35,16 @@ ms.locfileid: "72667119"
 ## <a name="configuring-projects-as-64-bit-applications"></a>Configuration de projets en tant qu’applications 64 bits
  Les rubriques suivantes abordent la configuration de projets d’applications 64 bits.
 
-- [Guide pratique pour configurer des projets pour des plateformes cibles](../ide/how-to-configure-projects-to-target-platforms.md)
+- [Comment : configurer des projets pour cibler des plateformes](../ide/how-to-configure-projects-to-target-platforms.md)
 
 ## <a name="debugging-a-64-bit-application"></a>Débogage d’une application 64 bits
  La fonctionnalité Modifier & Continuer ne fonctionne pas lorsque [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)] est exécuté sur un système d’exploitation Windows 64 bits. Les rubriques suivantes traitent du débogage d’applications 64 bits.
 
 - [Comment : déboguer sur des plateformes 64 bits](https://msdn.microsoft.com/27495e23-a624-46fb-996f-043d0a816dd5)
 
-- [Déboguer des applications 64 bits](../debugger/debug-64-bit-applications.md)
+- [Déboguer des applications 64 bits](../debugger/debug-64-bit-applications.md)
 
-- [Utilisation des fichiers de vidage](../debugger/using-dump-files.md)
+- [Utilisation de fichiers dump](../debugger/using-dump-files.md)
 
 ## <a name="see-also"></a>Voir aussi
- [Guide pratique pour configurer des projets pour des plateformes cibles](../ide/how-to-configure-projects-to-target-platforms.md)
+ [Comment : configurer des projets pour cibler des plateformes](../ide/how-to-configure-projects-to-target-platforms.md)

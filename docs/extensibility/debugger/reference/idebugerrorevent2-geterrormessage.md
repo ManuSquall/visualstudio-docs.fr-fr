@@ -1,5 +1,5 @@
 ---
-title: IDebugErrorEvent2::GetErrorMessage - France Microsoft Docs
+title: 'IDebugErrorEvent2 :: GetErrorMessage | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1ff1da2f2a2d24b958a613e6fe5cb58c0081ed3e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730047"
 ---
 # <a name="idebugerrorevent2geterrormessage"></a>IDebugErrorEvent2::GetErrorMessage
-Renvoie les informations qui permettent la construction d’un message d’erreur lisible par l’homme.
+Retourne des informations qui autorisent la construction d’un message d’erreur explicite.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -51,29 +51,29 @@ int GetErrorMessage(
 
 ## <a name="parameters"></a>Paramètres
 `pMessageType`\
-[out] Renvoie une valeur de l’énumération [MESSAGETYPE,](../../../extensibility/debugger/reference/messagetype.md) décrivant le type de message.
+à Retourne une valeur de l’énumération [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) , décrivant le type de message.
 
 `pbstrErrorFormat`\
-[out] Le format du message final à l’utilisateur (voir "Remarques" pour plus de détails).
+à Format du message final à l’utilisateur (pour plus d’informations, consultez « Remarques »).
 
 `hrErrorReason`\
-[out] Le code d’erreur du message est d’environ.
+à Code d’erreur du message.
 
 `pdwType`\
-[out] Sévérité de l’erreur (utiliser `MessageBox`les constantes MB_XXX pour ; par exemple, `MB_EXCLAMATION` ou `MB_WARNING`).
+à Gravité de l’erreur (utilisez les constantes MB_XXX pour `MessageBox` , par exemple, `MB_EXCLAMATION` ou `MB_WARNING` ).
 
 `pbstrHelpFileName`\
-[out] Chemin vers un fichier d’aide (réglé à une valeur nulle s’il n’y a pas de fichier d’aide).
+à Chemin d’accès à un fichier d’aide (défini sur une valeur null s’il n’y a aucun fichier d’aide).
 
 `pdwHelpId`\
-[out] ID du sujet d’aide à afficher (réglé à 0 s’il n’y a pas de sujet d’aide).
+à ID de la rubrique d’aide à afficher (défini à 0 s’il n’y a aucune rubrique d’aide).
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- Le message d’erreur doit être `"What I was doing.  %1"`formaté le long des lignes de . Le `"%1"` serait alors remplacé par l’appelant avec le message d’erreur `hrErrorReason`dérivé du code d’erreur (qui est retourné dans ). Le `pMessageType` paramètre indique à l’appelant comment le message d’erreur final doit être affiché.
+ Le message d’erreur doit être mis en forme le long des lignes de `"What I was doing.  %1"` . Le `"%1"` serait ensuite remplacé par l’appelant par le message d’erreur dérivé du code d’erreur (qui est retourné dans `hrErrorReason` ). Le `pMessageType` paramètre indique à l’appelant comment le dernier message d’erreur doit être affiché.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md)
-- [Messagetype](../../../extensibility/debugger/reference/messagetype.md)
+- [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md)

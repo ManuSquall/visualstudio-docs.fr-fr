@@ -122,7 +122,7 @@
           href: processes.md
         - name: Nœuds de programme
           href: program-nodes.md
-        - name: Programs
+        - name: Programmes
           href: programs.md
         - name: Threads
           href: threads.md

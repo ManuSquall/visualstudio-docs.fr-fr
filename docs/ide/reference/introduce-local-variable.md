@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 0fbd5ed752b28cc3f8c0dd734ed2b3ce09e80b78
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75568813"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Introduire une variable locale dans Visual Studio
@@ -44,10 +44,10 @@ Cette génération de code s’applique à :
 2. Effectuez ensuite l'une des opérations suivantes :
 
    - **Clavier**
-      - Appuyez **sur Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
+      - Appuyez sur **CTRL** + **.** pour afficher le menu **Actions rapides et refactorisations**.
    - **Souris**
       - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
-      - Cliquez sur le bouton ![Tournevis](media/screwdriver.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne avec l’expression en surbrillance.
+      - Cliquez sur l’icône ![Tournevis](media/screwdriver.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne avec l’expression en surbrillance.
 
    ![Introduire un aperçu local](media/local-preview-cs.png)
 
@@ -71,5 +71,5 @@ Cette génération de code s’applique à :
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Génération de codes](../code-generation-in-visual-studio.md)
+- [Génération de code](../code-generation-in-visual-studio.md)
 - [Aperçu des modifications](../../ide/preview-changes.md)

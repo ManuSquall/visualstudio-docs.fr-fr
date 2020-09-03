@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ac184f25d79a47814fee52b99bce1cddce247fc5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75570464"
 ---
 # <a name="clean-devenvexe"></a>/Clean (devenv.exe)
@@ -40,7 +40,7 @@ devenv SolutionName /Clean [Config [/Project ProjName [/ProjectConfig ProjConfig
 
   facultatif. Configuration (par exemple, `Debug` ou `Release`) à appliquer pour nettoyer les fichiers intermédiaires de la solution nommée dans *SolutionName*. Si plusieurs plateformes de solution sont disponibles, vous devez également en spécifier une (par exemple, `Debug|Win32`). Si cet argument n’est pas spécifié ou consiste en une chaîne vide (`""`), l’outil utilise la configuration active de la solution.
 
-- `/Project`*ProjName ProjName*
+- `/Project` *NomProjet*
 
   facultatif. Chemin et nom d’un fichier projet dans la solution. Vous pouvez entrer le nom d’affichage du projet ou un chemin d’accès relatif du dossier *SolutionName* au fichier projet. Vous pouvez également saisir le chemin d’accès complet et le nom du fichier projet.
 
@@ -48,11 +48,11 @@ devenv SolutionName /Clean [Config [/Project ProjName [/ProjectConfig ProjConfig
 
   facultatif. Nom de la configuration de build du projet (par exemple, `Debug` ou `Release`) à utiliser lors du nettoyage du `/Project` nommé. Si plusieurs plateformes de solution sont disponibles, vous devez également en spécifier une (par exemple, `Debug|Win32`). Si ce commutateur est spécifié, il remplace l’argument *Config*.
 
-- `/Out`*OutputFilename (en)*
+- `/Out`*OutputFileName*
 
   facultatif. Nom du fichier auquel vous souhaitez envoyer la sortie de l’outil. Si le fichier existe déjà, l’outil ajoute la sortie à la fin du fichier.
 
-## <a name="remarks"></a>Notes 
+## <a name="remarks"></a>Notes
 
 Ce commutateur a la même fonction que la commande de menu **Nettoyer la Solution** dans l’environnement IDE.
 
@@ -62,7 +62,7 @@ Il est possible d’afficher une synthèse des informations de nettoyage et de b
 
 Si le commutateur `/Project` n’est pas spécifié, l’action de nettoyage est effectuée sur tous les projets de la solution, même si *FileName* a été spécifié comme fichier projet.
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 
 Le premier exemple nettoie la solution `MySolution` à l’aide de la configuration par défaut spécifiée dans le fichier solution.
 
@@ -78,5 +78,5 @@ devenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /Clean "Debug" /pr
 
 - [Commutateurs de ligne de commande Devenv](../../ide/reference/devenv-command-line-switches.md)
 - [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)
-- [/Reconstruire (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)
+- [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)
 - [/Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)

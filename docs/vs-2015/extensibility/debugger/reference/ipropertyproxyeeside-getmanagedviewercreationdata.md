@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEESide::GetManagedViewerCreationData | Microsoft Docs
+title: 'IPropertyProxyEESide :: GetManagedViewerCreationData | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b5161894875ac683e5a6e49ae623bd6025531006
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199535"
 ---
 # <a name="ipropertyproxyeesidegetmanagedviewercreationdata"></a>IPropertyProxyEESide::GetManagedViewerCreationData
@@ -50,28 +50,28 @@ int GetManagedViewerCreationData(
   
 #### <a name="parameters"></a>Paramètres  
  `assemName`  
- [out] Retourne le nom de l’assembly contenant cet objet.  
+ à Retourne le nom de l’assembly contenant cet objet.  
   
  `assemBytes`  
- [out] Retourne un [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) objet contenant les octets de l’assembly de cet objet (Ceci est une valeur null si aucun octet n’est disponible).  
+ à Retourne un objet [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) contenant les octets de l’assembly de cet objet (il s’agit d’une valeur null si aucun octet n’est disponible).  
   
  `assemPdb`  
- [out] Retourne un `IEEDataStorage` objet contenant le symbole de stocker des informations pour cet objet (une valeur null si aucun magasin de symboles n’est disponible).  
+ à Retourne un `IEEDataStorage` objet contenant les informations du magasin de symboles pour cet objet (il s’agit d’une valeur null si aucun magasin de symboles n’est disponible).  
   
  `className`  
- [out] Retourne le nom de classe qui contient cet objet.  
+ à Retourne le nom de la classe contenant cet objet.  
   
  `alr`  
- [out] Retourne une valeur de la [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) énumération indiquant l’emplacement de l’assembly.  
+ à Retourne une valeur de l’énumération [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) indiquant l’emplacement de l’assembly.  
   
  `replacementOk`  
- [out] Retourne la valeur différente de zéro (`TRUE`) si la valeur de cet objet peut être modifiée ; zéro (`FALSE`) si l’objet est en lecture seule.  
+ à Retourne une valeur différente `TRUE` de zéro () si la valeur de cet objet peut être modifiée ; zéro ( `FALSE` ) si l’objet est en lecture seule.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode est utilisée par les visualiseurs de type pour instancier une visionneuse gérée.  
+ Cette méthode est utilisée par les visualiseurs de type pour instancier une visionneuse managée.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   

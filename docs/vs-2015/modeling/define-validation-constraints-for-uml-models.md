@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 258fc138f032d34e57df69386b6849fc3a0650a0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547587"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Définir des contraintes de validation pour les modèles UML
@@ -27,7 +27,7 @@ Vous pouvez définir des contraintes de validation qui vérifient si le modèle 
 
  Pour connaître les versions de Visual Studio qui prennent en charge les modèles UML, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  Consultez [Spécifications](../modeling/extend-uml-models-and-diagrams.md#Requirements).
 
  Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
@@ -178,7 +178,7 @@ using Microsoft.VisualStudio.Uml.Classes;
     }
     ```
 
-## <a name="executing-a-validation-constraint"></a><a name="Executing"></a>Exécution d’une contrainte de validation
+## <a name="executing-a-validation-constraint"></a><a name="Executing"></a> Exécution d’une contrainte de validation
  À des fins de test, exécutez vos méthodes de validation en mode débogage.
 
 #### <a name="to-test-the-validation-constraint"></a>Pour tester la contrainte de validation
@@ -215,11 +215,11 @@ using Microsoft.VisualStudio.Uml.Classes;
 
     - les attributs `Export` et `ValidationMethod` corrects sont associés aux méthodes de validation ;
 
-    - `ValidationCategories.Menu`est inclus dans l’argument pour l' `ValidationMethod` attribut et il est composé avec d’autres valeurs à l’aide de l’opérateur logique or (&#124;).
+    - `ValidationCategories.Menu` est inclus dans l’argument pour l' `ValidationMethod` attribut et il est composé avec d’autres valeurs à l’aide de l’opérateur logique or (&#124;).
 
     - les paramètres de tous les attributs `Import` et `Export` sont valides.
 
-## <a name="evaluating-the-constraint"></a><a name="Implementing"></a>Évaluation de la contrainte
+## <a name="evaluating-the-constraint"></a><a name="Implementing"></a> Évaluation de la contrainte
  La méthode de validation doit déterminer si la contrainte de validation que vous souhaitez appliquer est true ou false. Si la valeur est true, elle ne doit rien faire. Si la valeur est false, elle doit signaler une erreur à l’aide des méthodes fournies par le paramètre `ValidationContext` .
 
 > [!NOTE]
@@ -349,7 +349,7 @@ IUseCase useCase = useCaseShape.Element;
 context.LogError(... , usecase);
 ```
 
-### <a name="coordinating-multiple-validations"></a><a name="ContextCache"></a>Coordination de plusieurs validations
+### <a name="coordinating-multiple-validations"></a><a name="ContextCache"></a> Coordination de plusieurs validations
  Quand la validation est appelée, par exemple par l’utilisateur à partir d’un menu de diagramme, chaque méthode de validation est appliquée à chaque élément de modèle. Cela signifie que, dans un appel unique à l’infrastructure de validation, la même méthode peut être appliquée plusieurs fois à différents éléments.
 
  Cela pose un problème pour les validations associées aux relations entre les éléments. Par exemple, vous pouvez écrire une validation qui commence à un cas d’usage et qui traverse les relations **include** pour vérifier qu’il n’y a pas de boucle. Mais quand la méthode est appliquée à chaque cas d’usage dans un modèle comportant de nombreux liens **include** , il est probable qu’elle traite à répétition les mêmes zones du modèle.
@@ -363,7 +363,7 @@ context.LogError(... , usecase);
 |`context.GetValue<T>(name)`|Obtenir une valeur.|
 |`Context.GetValue<T>()`|Obtenir une valeur du type spécifié.|
 
-## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a>Installation et désinstallation d’une extension
+## <a name="installing-and-uninstalling-an-extension"></a><a name="Installing"></a> Installation et désinstallation d’une extension
  Vous pouvez installer une extension [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] sur votre propre ordinateur et sur d’autres ordinateurs.
 
 #### <a name="to-install-an-extension"></a>Pour installer une extension

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7ae7095d2be479c5e7789a478b8d27632a1d2faa
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85467007"
 ---
 # <a name="idiainjectedsource"></a>IDiaInjectedSource
@@ -41,7 +41,7 @@ Le tableau suivant présente les méthodes de `IDiaInjectedSource` .
 |[IDiaInjectedSource::get_sourceCompression](../../debugger/debug-interface-access/idiainjectedsource-get-sourcecompression.md)|Récupère l’indicateur de la compression source utilisé.|
 |[IDiaInjectedSource::get_source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md)|Récupère les octets de code source.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 La source injectée est le texte injecté pendant la compilation. Cela ne signifie pas que le préprocesseur est `#include` utilisé en C++.
 
 ## <a name="notes-for-callers"></a>Notes pour les appelants

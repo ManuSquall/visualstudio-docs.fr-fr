@@ -8,10 +8,10 @@ ms.date: 03/24/2020
 ms.topic: conceptual
 description: Découvrir l’avantage CloudPilot disponible dans certains abonnements Visual Studio
 ms.openlocfilehash: bebffb505f5c2b0fff7167ed2cccf629be1e7543
-ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80274035"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Avantage CloudPilot dans les abonnements Visual Studio
@@ -48,7 +48,7 @@ Proposé par UnifyCloud, CloudPilot est conçu pour aider les développeurs à m
     > [!div class="mx-imgBorder"]
     > ![Page produit CloudPilot](_img/vs-cloudpilot/vs-cloudpilot-navigate.png)
 
-0. Et voilà !  Dans le portail CloudPilot qui s’affiche, vous pouvez commencer à utiliser votre abonnement CloudPilot pour migrer vos applications vers Microsoft Azure.
+0. C’est tout !  Dans le portail CloudPilot qui s’affiche, vous pouvez commencer à utiliser votre abonnement CloudPilot pour migrer vos applications vers Microsoft Azure.
 
 0. Dès que votre compte est créé, vous recevez un e-mail du support VSS d’UnifyCloud confirmant la création de votre compte.
 
@@ -60,35 +60,35 @@ Proposé par UnifyCloud, CloudPilot est conçu pour aider les développeurs à m
 | Niveau de l’abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | Licences en volume, Azure, Détail, | 2 licences, 90 jours, analyses illimitées       |  Non.  Disponible pour les nouveaux abonnés uniquement          |
-| Visual Studio Enterprise avec GitHub Enterprise   | Vl | 2 licences, 90 jours, analyses illimitées       |  Non.  Disponible pour les nouveaux abonnés uniquement          |
+| Visual Studio Enterprise avec GitHub Enterprise   | LV | 2 licences, 90 jours, analyses illimitées       |  Non.  Disponible pour les nouveaux abonnés uniquement          |
 | Visual Studio Professional (Standard) | Licences en volume, Azure, Détail                                       | 1 licence, 30 jours, une analyse                                                            |  Non.  Disponible pour les nouveaux abonnés uniquement           |
-| Visual Studio Professional avec GitHub Enterprise | Vl | 1 licence, 30 jours, une analyse                                                            |  Non.  Disponible pour les nouveaux abonnés uniquement           |
+| Visual Studio Professional avec GitHub Enterprise | LV | 1 licence, 30 jours, une analyse                                                            |  Non.  Disponible pour les nouveaux abonnés uniquement           |
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Non disponible                                             |  N/A           |
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Non disponible                                              |  N/A          |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Non disponible  | N/A |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure | Non disponible | N/A |
 
-<sup>1</sup>  *Comprend: Pas pour la revente (NFR), FTE, Most Valuable Professional (MVP), Directeur régional (RD), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
+<sup>1</sup>  *comprend : la revente interdite (NFR), FTE, MVP (Most Valuable Professional), les services Bureau à distance, les Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, imagine*
 
 > [!NOTE]
-> Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Les nouveaux clients sont [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) encouragés à aller explorer différentes options pour acheter Visual Studio.
+> Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Les nouveaux clients sont encouragés à accéder à [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
 
-Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
+Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour afficher tous les abonnements attribués à votre adresse de messagerie. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 
 ## <a name="support-resources"></a>Ressources de support
-- Besoin d’aide pour utiliser CloudPilot ?  Consultez les ressources suivantes :
+- Besoin d’aide pour utiliser CloudPilot ?  Consultez les ressources suivantes :
   - [Contactez UnifyCloud](https://www.unifycloud.com/contacts/) pour toute demande de renseignements sur les produits UnifyCloud.
   - [Manuel de l’utilisateur de CloudPilot](https://www.cloudatlasinc.com/cloudpilot/doc/CloudPilot-User-Manual.pdf )
   - [envoyer une demande de support ;](https://support.datacamp.com/hc/requests/new)
 
-- Pour obtenir de l’aide pour les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez Visual Studio [Subscriptions Support](https://visualstudio.microsoft.com/subscriptions/support/).
+- Pour obtenir de l’aide sur les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/)Visual Studio.
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentation Azure](https://docs.microsoft.com/azure/)
 - [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
-Si vous n’avez pas déjà activé l’avantage de crédit individuel [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) Azure DevTest qui vient avec votre abonnement, visitez et cliquez sur la tuile Azure dans la catégorie Outils pour configurer votre abonnement Azure et échanger votre crédit individuel Azure DevTest.
+Si vous n’avez pas encore activé l’avantage de crédit DevTest Azure fourni avec votre abonnement, accédez à [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) la vignette Azure et cliquez dessus dans la catégorie outils pour configurer votre abonnement Azure et échanger votre crédit Azure DevTest individuel.

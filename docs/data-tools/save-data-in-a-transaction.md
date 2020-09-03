@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: caeb06ac3f38293b493463ff456e222f148ef93a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281628"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>Procédure pas à pas : enregistrer des données dans une transaction
@@ -74,7 +74,7 @@ Cette étape utilise l' **Assistant Configuration de source de données** pour c
 
     - Si une connexion de données à l’exemple de base de données Northwind est disponible dans la liste déroulante, sélectionnez-la.
 
-         -ou-
+         - ou -
 
     - Sélectionnez **Nouvelle connexion** pour lancer la boîte de dialogue **Ajouter/Modifier une connexion** et créez une connexion à la base de données Northwind.
 
@@ -165,7 +165,7 @@ L'ordre de rapprochement des modifications des données associées est comme sui
      [!code-vb[VbRaddataSaving#8](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_5.vb)]
      [!code-csharp[VbRaddataSaving#8](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_5.cs)]
 
-## <a name="run-the-application"></a>Exécuter l’application
+## <a name="run-the-application"></a>Exécution de l'application
 
 Appuyez sur **F5** pour exécuter l'application.
 

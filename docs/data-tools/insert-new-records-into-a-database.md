@@ -18,17 +18,17 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: b703d3ccc6ffbd5e2449a1768071b930f606f37f
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281992"
 ---
 # <a name="insert-new-records-into-a-database"></a>Insérer de nouveaux enregistrements dans une base de données
 
 Pour insérer de nouveaux enregistrements dans une base de données, vous pouvez utiliser la `TableAdapter.Update` méthode ou l’une des méthodes DBDirect du TableAdapter (en particulier la `TableAdapter.Insert` méthode). Pour plus d’informations, consultez [TableAdapter](../data-tools/create-and-configure-tableadapters.md).
 
-Si votre application n’utilise pas de TableAdapters, vous pouvez utiliser des objets de commande (par exemple, <xref:System.Data.SqlClient.SqlCommand> ) pour insérer de nouveaux enregistrements dans votre base de données.
+Si votre application n’utilise pas de TableAdapters, vous pouvez utiliser des objets de commande (par exemple,  <xref:System.Data.SqlClient.SqlCommand> ) pour insérer de nouveaux enregistrements dans votre base de données.
 
 Si votre application utilise des jeux de données pour stocker des données, utilisez la `TableAdapter.Update` méthode. La `Update` méthode envoie toutes les modifications (mises à jour, insertions et suppressions) à la base de données.
 

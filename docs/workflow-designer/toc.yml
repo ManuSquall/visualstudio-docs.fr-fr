@@ -164,7 +164,7 @@
           href: migration-activity-designers.md
         - name: Concepteur d'activités Interop
           href: interop-activity-designer.md
-- name: Déboguer
+- name: Débogage
   items:
     - name: Déboguer des workflows
       href: debugging-workflows-with-the-workflow-designer.md
@@ -196,5 +196,5 @@
       href: workflow-designer-shell-features.md
     - name: Raccourcis clavier
       href: keyboard-shortcuts-in-the-workflow-designer.md
-    - name: messages d'erreur
+    - name: Messages d'erreur
       href: error-messages-in-workflow-designer.md

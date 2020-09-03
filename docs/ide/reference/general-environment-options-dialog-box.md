@@ -21,13 +21,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 973e08ca6555f7da7873d3068e2794b8d34e3640
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75569437"
 ---
-# <a name="options-dialog-box-environment--general"></a>Boîte de dialogue \> d’options : Environnement général
+# <a name="options-dialog-box-environment--general"></a>Boîte de dialogue Options : environnement \> général
 
 Utilisez cette page pour modifier les thèmes de couleurs, les paramètres de la barre d'état et les associations d'extensions de fichier, entre autres options, pour l'environnement de développement intégré (IDE). Vous pouvez accéder à la boîte de dialogue **Options** en ouvrant le menu **Outils**, en choisissant **Options**, en ouvrant le dossier **Environnement**, puis en choisissant la page **Général**. Si cette page n’apparaît pas dans la liste, cochez la case **Afficher tous les paramètres** dans la boîte de dialogue **Options**.
 
@@ -74,7 +74,7 @@ Active l'expérience visuelle complète de Visual Studio, y compris les dégrad�
 
 Utilise l'accélération graphique matérielle si elle est disponible, au lieu de l'accélération logicielle.
 
-## <a name="other"></a>Autres
+## <a name="other"></a>Autre
 
 **Éléments à afficher dans le menu Fenêtre**
 
@@ -90,7 +90,7 @@ Affiche la barre d'état. La barre d'état se trouve en bas de la fenêtre de l'
 
 **Le bouton Fermer affecte uniquement la fenêtre Outil**
 
-Spécifie que quand l’utilisateur clique sur le bouton **Fermer**, seule la fenêtre Outil qui a le focus est fermée et non pas toutes les fenêtres Outil de l’ensemble ancré. Cette option est sélectionnée par défaut.
+Spécifie que quand l’utilisateur clique sur le bouton **Fermer**, seule la fenêtre Outil qui a le focus est fermée et non pas toutes les fenêtres Outil de l’ensemble ancré. Cette option est activée par défaut.
 
 **Le bouton Masquer automatiquement affecte uniquement la fenêtre Outil**
 

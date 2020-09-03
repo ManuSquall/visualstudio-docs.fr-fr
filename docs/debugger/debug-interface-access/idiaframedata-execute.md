@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2587d10b613200b1bf850636f613abbb497e04de
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85467448"
 ---
 # <a name="idiaframedataexecute"></a>IDiaFrameData::execute
@@ -45,7 +45,7 @@ dans Objet [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackw
 |E_DIA_FRAME_ACCESS|Impossible d’accéder aux registres ou à la mémoire.|
 |E_DIA_VALUE|Erreur dans le calcul d’une valeur (par exemple, Division par zéro).|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Cette méthode est appelée pendant le débogage pour dérouler la pile. L’objet [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md) est implémenté par l’application cliente pour recevoir des mises à jour des registres et pour fournir les méthodes utilisées par la `execute` méthode.
 
 ## <a name="see-also"></a>Voir aussi

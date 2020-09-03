@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bb03da430f43bbfd5c7398c147560a9c823f8811
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75570490"
 ---
 # <a name="code-snippet-picker"></a>Sélecteur d'extraits de code
@@ -42,7 +42,7 @@ La procédure d’affichage du **sélecteur d’extraits de code** varie en fonc
 
 - SQL : cliquez avec le bouton droit à l’emplacement voulu dans l’éditeur de code pour afficher le menu contextuel, puis cliquez sur **Insérer un extrait**.
 
-Dans la plupart des langages de développement Visual Studio, vous pouvez utiliser le **Code Snippets Manager** pour ajouter des dossiers à la liste des dossiers que le **Code Snippet Picker** scanne pour les fichiers extraits XML. Vous pouvez également créer vos propres extraits à ajouter à la liste. Pour plus d’informations, voir [Procédure pas à pas: Création d’un extrait de code](../../ide/walkthrough-creating-a-code-snippet.md).
+Dans la plupart des langages de développement Visual Studio, vous pouvez utiliser le **Gestionnaire des extraits de code** pour ajouter des dossiers à la liste des dossiers dans laquelle le sélecteur d’extraits de **code** recherche les fichiers d’extraits XML. Vous pouvez également créer vos propres extraits à ajouter à la liste. Pour plus d’informations, consultez [procédure pas à pas : création d’un extrait de code](../../ide/walkthrough-creating-a-code-snippet.md).
 
 ## <a name="uielement-list"></a>Liste des éléments de l'interface utilisateur
 
@@ -58,5 +58,5 @@ Une liste d’extraits de code disponibles pour être insérés, ou une liste de
 
 - [Bonnes pratiques pour l’utilisation des extraits de code](../../ide/best-practices-for-using-code-snippets.md)
 - [Extraits de code IntelliSense Visual Basic](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)
-- [Définir des signets dans le code](../../ide/setting-bookmarks-in-code.md)
+- [Définition de signets dans le code](../../ide/setting-bookmarks-in-code.md)
 - [Guide pratique pour utiliser des extraits de code Entourer de](../../ide/how-to-use-surround-with-code-snippets.md)

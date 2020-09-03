@@ -1,5 +1,5 @@
 ---
-title: IDebugEngineProgram2::WatchForExpressionEvaluationOnThread Microsoft Docs
+title: 'IDebugEngineProgram2 :: WatchForExpressionEvaluationOnThread | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e988e1d64af38a55f5d946f704e1edb4df29b1d5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730366"
 ---
 # <a name="idebugengineprogram2watchforexpressionevaluationonthread"></a>IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
-Permet à l’évaluation d’expression (ou de refuser) de se produire sur le thread donné, même si le programme a cessé.
+Autorise (ou interdit) l’évaluation d’une expression sur le thread donné, même si le programme s’est arrêté.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -49,27 +49,27 @@ int WatchForExpressionEvaluationOnThread( 
 
 ## <a name="parameters"></a>Paramètres
 `pOriginatingProgram`\
-[dans] Un objet [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) représentant le programme qui évalue une expression.
+dans Objet [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) qui représente le programme qui évalue une expression.
 
 `dwTid`\
-[dans] Spécifie l’identifiant du fil.
+dans Spécifie l’identificateur du thread.
 
 `dwEvalFlags`\
-[dans] Une combinaison de drapeaux du recensement [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) qui précisent comment l’évaluation doit être effectuée.
+dans Combinaison d’indicateurs de l’énumération [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) qui spécifie le mode d’exécution de l’évaluation.
 
 `pExprCallback`\
-[dans] Un objet [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) à utiliser pour envoyer des événements de débog qui se produisent lors de l’évaluation de l’expression.
+dans Objet [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) à utiliser pour envoyer les événements de débogage qui se produisent pendant l’évaluation de l’expression.
 
 `fWatch`\
-[dans] Si non-zéro`TRUE`( ), permet l’évaluation de l’expression sur le fil identifié par `dwTid`; autrement, zéro`FALSE`( ) interdit l’évaluation d’expression sur ce fil.
+dans Si différent de zéro ( `TRUE` ), autorise l’évaluation de l’expression sur le thread identifié par `dwTid` ; sinon, zéro ( `FALSE` ) interdit l’évaluation de l’expression sur ce thread.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- Lorsque le gestionnaire de déboiffés de session (SDM) demande à un programme, identifié par le `pOriginatingProgram` paramètre, d’évaluer une expression, il informe tous les autres programmes ci-joints en appelant cette méthode.
+ Quand le gestionnaire de débogage de session (SDM) demande à un programme, identifié par le `pOriginatingProgram` paramètre, d’évaluer une expression, il avertit tous les autres programmes attachés en appelant cette méthode.
 
- L’évaluation de l’expression dans un programme peut faire fonctionner `IDispatch` le code dans un autre, en raison de l’évaluation ou de l’évaluation des fonctions de toutes les propriétés. Pour cette raison, cette méthode permet à l’évaluation d’expression de s’exécuter et de terminer même si le fil peut être arrêté dans ce programme.
+ L’évaluation d’une expression dans un programme peut entraîner l’exécution du code dans un autre programme, en raison de l’évaluation de la fonction ou de l’évaluation de toutes les `IDispatch` Propriétés. Pour cette raison, cette méthode permet l’exécution et la finalisation de l’évaluation des expressions même si le thread peut être arrêté dans ce programme.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 085542f912cc5747c2012adb05e6097b5891ed60
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282577"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personnaliser la façon dont Visual Studio crée des légendes pour les contrôles liés aux données
@@ -55,7 +55,7 @@ Le tableau suivant répertorie les paramètres par défaut internes pour ces val
 |-------------------|-------------------|-----------------|
 |**SmartCaptionExpression**|**( \\ \p{ll}) ( \\ \p{Lu}) &#124;_ +**|Correspond à un caractère minuscule suivi d’un caractère majuscule ou un trait de soulignement.|
 |**SmartCaptionReplacement**|**$1 $2**|**$1** représente tous les caractères correspondants dans les premières parenthèses de l’expression, et **$2** représente tous les caractères correspondants dans les secondes. Le remplacement correspond à la première correspondance, à un espace, puis à la deuxième correspondance.|
-|**SmartCaptionSuffix**|**:**|Représente un caractère ajouté à la chaîne retournée. Par exemple, si la légende est `Company Name` , le suffixe le fait`Company Name:`|
+|**SmartCaptionSuffix**|**:**|Représente un caractère ajouté à la chaîne retournée. Par exemple, si la légende est `Company Name` , le suffixe le fait `Company Name:`|
 
 > [!CAUTION]
 > Soyez très prudent lorsque vous faites quoi que ce soit dans l’éditeur du Registre. Sauvegardez le registre avant de le modifier. Si vous utilisez l’éditeur du registre de façon incorrecte, vous risquez de provoquer de sérieux problèmes pouvant vous obliger à réinstaller votre système d’exploitation. Microsoft ne garantit pas que les problèmes que vous provoquez à l’aide de l’éditeur du Registre peuvent être résolus de manière incorrecte. Utilisez l’Éditeur du Registre à vos propres risques.

@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e70039f361ac3410a8ddcccb0f139d8bdcb32ed9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668093"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Comment : créer des modèles d'élément multifichier
@@ -37,7 +37,7 @@ Il arrive que les modèles d’élément spécifient un seul élément, mais cet
 
 1. Créez le modèle d’élément de la même manière qu’un modèle d’élément à fichier unique. Pour plus d’informations, consultez [Guide pratique pour créer des modèles d’élément](../ide/how-to-create-item-templates.md).
 
-2. Ajoutez des attributs `TargetFileName` à chaque élément `ProjectItem`. Affectez aux attributs `TargetFileName` la valeur $fileinputname$.*FileExtension*, où *FileExtension* est l’extension du nom du fichier qui est inclut dans le modèle. Exemple :
+2. Ajoutez des attributs `TargetFileName` à chaque élément `ProjectItem`. Affectez aux attributs `TargetFileName` la valeur $fileinputname$.*FileExtension*, où *FileExtension* est l’extension du nom du fichier qui est inclut dans le modèle. Par exemple :
 
     ```
     <ProjectItem TargetFileName="$fileinputname$.vb">

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cf16fe7453388e19308ed603ee9dbbac207cec41
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667255"
 ---
 # <a name="the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods"></a>Impossible de supprimer la classe sélectionnée car elle est utilisée comme type de retour pour une ou plusieurs méthodes DataContext
@@ -21,11 +21,11 @@ ms.locfileid: "72667255"
 
 Le type de retour d’une ou plusieurs méthodes <xref:System.Data.Linq.DataContext> est la classe d’entité sélectionnée. La suppression d’une classe d’entité utilisée comme type de retour pour une méthode <xref:System.Data.Linq.DataContext> fait échouer la compilation du projet. Pour supprimer la classe d'entité sélectionnée, identifiez les méthodes <xref:System.Data.Linq.DataContext> qui l'utilisent et affectez à leurs types de retour une classe d'entité différente.
 
- Pour rétablir les types de retour des méthodes <xref:System.Data.Linq.DataContext> à leurs types générés automatiquement d’origine, supprimez d’abord la méthode <xref:System.Data.Linq.DataContext> du volet méthodes, puis faites glisser l’objet de **Explorateur de serveurs** /**Explorateur de base de données** vers le Concepteur O/R.
+ Pour rétablir les types de retour des <xref:System.Data.Linq.DataContext> méthodes à leurs types générés automatiquement d’origine, supprimez <xref:System.Data.Linq.DataContext> d’abord la méthode du volet de méthodes, puis faites glisser l’objet de **Explorateur de serveurs** / **Explorateur de base de données** vers le Concepteur O/R.
 
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur
 
-1. Identifiez <xref:System.Data.Linq.DataContext> méthodes qui utilisent la classe d’entité comme type de retour en sélectionnant une méthode de <xref:System.Data.Linq.DataContext> dans le volet de méthodes et en inspectant la propriété **type de retour** dans la fenêtre **Propriétés** .
+1. Identifiez les <xref:System.Data.Linq.DataContext> méthodes qui utilisent la classe d’entité comme type de retour en sélectionnant une <xref:System.Data.Linq.DataContext> méthode dans le volet de méthodes et en inspectant la propriété **type de retour** dans la fenêtre **Propriétés** .
 
 2. Affectez au **Type de retour** une classe d’entité différente ou supprimez la méthode <xref:System.Data.Linq.DataContext> du volet de méthodes.
 

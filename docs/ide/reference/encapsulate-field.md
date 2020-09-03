@@ -13,10 +13,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: db0bd17cd0bead3807f857b2198b8d4ea4c72ffb
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75569710"
 ---
 # <a name="encapsulate-a-field-refactoring"></a>Encapsuler un champ (refactorisation)
@@ -49,7 +49,7 @@ Cette refactorisation s’applique à :
 
    - **Clavier**
       - Appuyez sur **Ctrl+R**, puis **Ctrl+E**.  (Notez que le raccourci clavier peut varier en fonction du profil que vous avez sélectionné.)
-      - Appuyez **sur Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**, puis sélectionnez l’entrée **Encapsuler le champ** dans la fenêtre contextuelle d’aperçu.
+      - Appuyez sur **CTRL** + **.** pour afficher le menu **Actions rapides et refactorisations**, puis sélectionnez l’entrée **Encapsuler le champ** dans la fenêtre contextuelle d’aperçu.
    - **Souris**
       - Sélectionnez **Modifier > Refactoriser > Encapsuler le champ**.
       - Cliquez avec le bouton droit sur le code et choisissez le menu **Actions rapides et refactorisations**, puis sélectionnez l’entrée **Encapsuler le champ** dans la fenêtre contextuelle d’aperçu.
@@ -62,7 +62,7 @@ Cette refactorisation s’applique à :
    La propriété est créée et les références au champ sont mises à jour, le cas échéant.
 
    > [!TIP]
-   > Utilisez le lien **de modifications d’aperçu** dans la fenêtre popup [pour voir quel sera le résultat](../../ide/preview-changes.md) avant de s’y engager.
+   > Utilisez le lien **aperçu des modifications** dans la fenêtre contextuelle [pour voir le résultat](../../ide/preview-changes.md) avant de le valider.
 
    - C# :
 

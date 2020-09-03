@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6da773fdf6cd84819ea0e73083995f60e3c17e2d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77634082"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper (tâche)
@@ -78,7 +78,7 @@ Le tableau ci-dessous décrit les paramètres de la tâche `GenerateBootstrapper
   </BootstrapperItem>
   ```
 
-   L’attribut `Include` représente le nom d’un composant requis qui doit être installé. Les métadonnées de l’élément `ProductName` sont facultatives et sont utilisées par le moteur de génération comme nom convivial si le package est introuvable. Ces éléments ne sont pas requis paramètres d’entrée MSBuild, sauf si aucun n’est `ApplicationFile` spécifié. Vous devez inclure un élément pour chaque composant requis qui doit être installé pour votre application.
+   L’attribut `Include` représente le nom d’un composant requis qui doit être installé. Les métadonnées de l’élément `ProductName` sont facultatives et sont utilisées par le moteur de génération comme nom convivial si le package est introuvable. Ces éléments ne sont pas des paramètres d’entrée MSBuild requis, sauf si aucun `ApplicationFile` n’est spécifié. Vous devez inclure un élément pour chaque composant requis qui doit être installé pour votre application.
 
    Une erreur de build se produit si ni le paramètre `BootstrapperItems` ni le paramètre `ApplicationFile` ne sont spécifiés.
 
@@ -150,11 +150,11 @@ Le tableau ci-dessous décrit les paramètres de la tâche `GenerateBootstrapper
 
    Si `true`, le programme d’amorçage exécute la validation XSD sur les éléments de programme d’amorçage d’entrée spécifiés. La valeur par défaut de ce paramètre est `false`.
 
-## <a name="remarks"></a>Notes 
+## <a name="remarks"></a>Notes
 
-En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension> , qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task> . Pour une liste de ces paramètres supplémentaires et leurs descriptions, voir [TaskExtension classe de base](../msbuild/taskextension-base-class.md).
+En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension> , qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task> . Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [classe de base TaskExtension](../msbuild/taskextension-base-class.md).
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 
 L’exemple suivant utilise la tâche `GenerateBootstrapper` pour installer une application qui doit avoir le composant .NET Framework 2.0 installé au titre de prérequis.
 

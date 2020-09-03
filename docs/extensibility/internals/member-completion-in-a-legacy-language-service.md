@@ -1,5 +1,5 @@
 ---
-title: Achèvement des membres dans un service de langue héritée (fr) Microsoft Docs
+title: Saisie semi-automatique des membres dans un service de langage hérité | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,58 +13,58 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b6445aec4954590e4d361189f053592eebe7767e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80707199"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>Saisie semi-automatique de membre dans un service de langage hérité
 
-L’achèvement des membres IntelliSense est un conseil d’outil qui affiche une liste de membres possibles d’une portée particulière comme une classe, une structure, un recensement ou un espace de nom. Par exemple, dans le C, si l’utilisateur tape « ceci » suivi d’une période, une liste de tous les membres de la classe ou de la structure à la portée actuelle est présentée dans une liste à partir de laquelle l’utilisateur peut sélectionner.
+La saisie semi-automatique des membres IntelliSense est une info-bulle qui affiche la liste des membres possibles d’une étendue particulière, comme une classe, une structure, une énumération ou un espace de noms. Par exemple, en C#, si l’utilisateur tape « This » suivi d’un point, une liste de tous les membres de la classe ou de la structure au niveau de la portée actuelle est présentée dans une liste à partir de laquelle l’utilisateur peut sélectionner.
 
-Le cadre de paquet géré (MPF) fournit un soutien à la pointe de l’outil et la gestion de la liste dans la pointe de l’outil; tout ce qu’il faut, c’est la coopération du parse-à-dire pour fournir les données qui apparaissent dans la liste.
+Managed package Framework (MPF) assure la prise en charge de l’info-bulle et de la gestion de la liste dans l’info-bulle. tout ce qui est nécessaire, c’est la coopération de l’analyseur pour fournir les données qui s’affichent dans la liste.
 
-Les services linguistiques hérités sont mis en œuvre dans le cadre d’un VSPackage, mais la nouvelle façon de mettre en œuvre des fonctionnalités de service linguistique est d’utiliser des extensions MEF. Pour en savoir plus, voir [Extending the Editor and Language Services](../../extensibility/extending-the-editor-and-language-services.md).
+Les services de langage hérités sont implémentés dans le cadre d’un VSPackage, mais la meilleure façon d’implémenter les fonctionnalités du service de langage consiste à utiliser les extensions MEF. Pour en savoir plus, consultez [extension de l’éditeur et des services de langage](../../extensibility/extending-the-editor-and-language-services.md).
 
 > [!NOTE]
-> Nous vous recommandons de commencer à utiliser le nouvel éditeur API dès que possible. Cela améliorera les performances de votre service linguistique et vous permettra de profiter des nouvelles fonctionnalités de l’éditeur.
+> Nous vous recommandons de commencer à utiliser la nouvelle API Editor dès que possible. Cela améliore les performances de votre service de langage et vous permet de tirer parti des nouvelles fonctionnalités de l’éditeur.
 
 ## <a name="how-it-works"></a>Fonctionnement
 
-Voici les deux façons dont une liste de membres est affichée à l’aide des classes MPF :
+Voici les deux façons dont une liste de membres est affichée à l’aide des classes MPF :
 
-- Positionnement de la caret sur un identifiant ou après un personnage d’achèvement du membre et sélection des **membres de** liste du menu **IntelliSense.**
+- Positionnement du signe insertion sur un identificateur ou après un caractère de fin de membre et sélection des membres de la **liste** dans le menu **IntelliSense** .
 
-- Le <xref:Microsoft.VisualStudio.Package.IScanner> scanner détecte un caractère d’achèvement du membre et définit un déclencheur symbolique de [TokenTriggers.MemberSelect](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MemberSelect>) pour ce personnage.
+- L' <xref:Microsoft.VisualStudio.Package.IScanner> analyseur détecte un caractère de fin de membre et définit un déclencheur de jeton de [TokenTriggers. MemberSelect](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MemberSelect>) pour ce caractère.
 
-Un caractère d’achèvement des membres indique qu’un membre d’une classe, d’une structure ou d’un recensement doit suivre. Par exemple, dans C ou Visual Basic, `.`le personnage d’achèvement du `.` membre `->`est un , tandis que dans C , le personnage est soit a ou a . La valeur de déclenchement est définie lorsque le personnage choisi par le membre est numérisé.
+Un caractère d’achèvement de membre indique qu’un membre d’une classe, d’une structure ou d’une énumération doit suivre. Par exemple, en C# ou Visual Basic le caractère de fin de membre est un `.` , alors que en C++ le caractère est un `.` ou un `->` . La valeur du déclencheur est définie lorsque le caractère sélectionné du membre est analysé.
 
-### <a name="the-intellisense-member-list-command"></a>Le Commandement de la liste des membres d’IntelliSense
+### <a name="the-intellisense-member-list-command"></a>Commande IntelliSense de la liste des membres
 
-La <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> commande lance un <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> appel à <xref:Microsoft.VisualStudio.Package.Source> la <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> méthode sur la classe <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> et la méthode, à son tour, appelle le analyseur de méthode avec la raison d’analyse de [ParseReason.DisplayMemberList](<xref:Microsoft.VisualStudio.Package.ParseReason.DisplayMemberList>).
+La <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> commande lance un appel à la <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> méthode sur la <xref:Microsoft.VisualStudio.Package.Source> classe et la <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> méthode appelle, à son tour, l' <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Analyseur de méthode avec la raison de l’analyse de [ParseReason. DisplayMemberList](<xref:Microsoft.VisualStudio.Package.ParseReason.DisplayMemberList>).
 
-Le parseur détermine le contexte de la position actuelle ainsi que le jeton sous ou immédiatement avant la position actuelle. Sur la base de ce jeton, une liste de déclarations est présentée. Par exemple, en C, si vous placez le caret sur un membre de la classe et sélectionnez **les membres de la Liste,** vous obtenez une liste de tous les membres de la classe. Si vous positionnez le caret après une période qui suit une variable d’objet, vous obtenez une liste de tous les membres de la classe que représente l’objet. Notez que si le caret est placé sur un membre lorsque la liste des membres est affichée, la sélection d’un membre de la liste remplace le membre, le caret est sur celui de la liste.
+L’analyseur détermine le contexte de la position actuelle, ainsi que le jeton sous ou juste avant la position actuelle. Sur la base de ce jeton, une liste de déclarations est présentée. Par exemple, en C#, si vous placez le signe insertion sur un membre de classe et que vous sélectionnez membres de la **liste**, vous recevez une liste de tous les membres de la classe. Si vous placez le signe insertion après un point qui suit une variable objet, vous recevez une liste de tous les membres de la classe que l’objet représente. Notez que si le signe insertion est positionné sur un membre lorsque la liste des membres est affichée, la sélection d’un membre de la liste remplace le membre sur lequel figure le signe insertion par celui de la liste.
 
-### <a name="the-token-trigger"></a>Le déclencheur symbolique
+### <a name="the-token-trigger"></a>Déclencheur de jeton
 
-Le [déclencheur TokenTriggers.MemberSelect](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MemberSelect>) lance un <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> appel <xref:Microsoft.VisualStudio.Package.Source> à la <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> méthode sur la classe et la méthode, à son tour, appelle le parser avec la raison de parse de [ParseReason.MemberSelect](<xref:Microsoft.VisualStudio.Package.ParseReason.MemberSelect>). Si le déclencheur symbolique comprenait également le drapeau [TokenTriggers.MatchBraces,](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MatchBraces>) la raison de l’analyse est [ParseReason.MemberSelectAndHighlightBraces](<xref:Microsoft.VisualStudio.Package.ParseReason.MemberSelectAndHighlightBraces>), qui combine la sélection des membres et la mise en évidence accolade.
+Le déclencheur [TokenTriggers. MemberSelect](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MemberSelect>) lance un appel à la <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> méthode sur la <xref:Microsoft.VisualStudio.Package.Source> classe et la <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> méthode appelle, à son tour, l’analyseur avec la raison de l’analyse de [ParseReason. MemberSelect](<xref:Microsoft.VisualStudio.Package.ParseReason.MemberSelect>). Si le déclencheur de jeton inclut également l’indicateur [TokenTriggers. MatchBraces](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MatchBraces>) , la raison de l’analyse est [ParseReason. MemberSelectAndHighlightBraces](<xref:Microsoft.VisualStudio.Package.ParseReason.MemberSelectAndHighlightBraces>), qui combine la sélection des membres et la mise en surbrillance des accolades.
 
-Le analyseur détermine le contexte de la position actuelle ainsi que ce qui a été tapé avant que le personnage choisi par le membre ne s’adresse. À partir de ces informations, le parseur crée une liste de tous les membres de la portée demandée. Cette liste de déclarations <xref:Microsoft.VisualStudio.Package.AuthoringScope> est stockée dans <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> l’objet qui est retourné de la méthode. Si des déclarations sont retournées, le conseil de l’outil d’achèvement du membre est affiché. La pointe de l’outil <xref:Microsoft.VisualStudio.Package.CompletionSet> est gérée par un exemple de la classe.
+L’analyseur détermine le contexte de la position actuelle, ainsi que ce qui a été tapé avant le caractère Select du membre. À partir de ces informations, l’analyseur crée une liste de tous les membres de l’étendue demandée. Cette liste de déclarations est stockée dans l' <xref:Microsoft.VisualStudio.Package.AuthoringScope> objet retourné par la <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> méthode. Si des déclarations sont retournées, l’info-bulle de l’outil de saisie semi-automatique des membres s’affiche. L’info-bulle est gérée par une instance de la <xref:Microsoft.VisualStudio.Package.CompletionSet> classe.
 
-## <a name="enable-support-for-member-completion"></a>Permettre le soutien à l’achèvement des membres
+## <a name="enable-support-for-member-completion"></a>Activer la prise en charge de l’achèvement des membres
 
-Vous devez `CodeSense` avoir l’entrée de registre réglée à 1 pour soutenir toute opération IntelliSense. Cette inscription au registre peut être définie <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> avec un paramètre désigné transmis à l’attribut utilisateur associé à l’ensemble de langue. Les cours de service linguistique lisent <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> la valeur <xref:Microsoft.VisualStudio.Package.LanguagePreferences> de cette entrée de registre à partir de la propriété sur la classe.
+L' `CodeSense` entrée de registre doit être définie sur 1 pour prendre en charge toute opération IntelliSense. Cette entrée de Registre peut être définie à l’aide d’un paramètre nommé passé à l' <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> attribut User associé au package de langue. Les classes du service de langage lisent la valeur de cette entrée de Registre à partir de la <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> propriété de la <xref:Microsoft.VisualStudio.Package.LanguagePreferences> classe.
 
-Si votre scanner renvoie le déclencheur symbolique de [TokenTriggers.MemberSelect](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MemberSelect>), et votre analyseur renvoie une liste de déclarations, alors la liste d’achèvement des membres est affichée.
+Si votre scanneur retourne le déclencheur de jeton de [TokenTriggers. MemberSelect](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MemberSelect>)et que votre analyseur renvoie une liste de déclarations, la liste de saisie semi-automatique des membres s’affiche.
 
-## <a name="support-member-completion-in-the-scanner"></a>Soutenir l’achèvement des membres dans le scanner
+## <a name="support-member-completion-in-the-scanner"></a>Saisie semi-automatique des membres dans le scanneur
 
-Le scanner doit être en mesure de détecter un personnage d’achèvement du membre et de définir le déclencheur symbolique de [TokenTriggers.MemberSelect](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MemberSelect>) lorsque ce personnage est analysé.
+Le scanneur doit être en mesure de détecter un caractère de fin de membre et de définir le déclencheur de jeton de [TokenTriggers. MemberSelect](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MemberSelect>) lorsque ce caractère est analysé.
 
-### <a name="scanner-example"></a>Exemple de scanner
+### <a name="scanner-example"></a>Exemple de scanneur
 
-Voici un exemple simplifié de détection du caractère <xref:Microsoft.VisualStudio.Package.TokenTriggers> d’achèvement du membre et de réglage du drapeau approprié. Cet exemple n’est qu’à des fins illustratives. Il suppose que votre scanner `GetNextToken` contient une méthode qui identifie et renvoie les jetons à partir d’une ligne de texte. Le code d’exemple définit simplement la gâchette chaque fois qu’il voit le bon type de caractère.
+Voici un exemple simplifié de détection du caractère de fin de membre et de la définition de l' <xref:Microsoft.VisualStudio.Package.TokenTriggers> indicateur approprié. Cet exemple est fourni à titre d’illustration uniquement. Elle suppose que votre scanneur contient une méthode `GetNextToken` qui identifie et retourne des jetons à partir d’une ligne de texte. L’exemple de code définit simplement le déclencheur à chaque fois qu’il voit le type de caractère approprié.
 
 ```csharp
 using Microsoft.VisualStudio.Package;
@@ -97,17 +97,17 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="support-member-completion-in-the-parser"></a>Soutien à l’achèvement des membres dans le Parser
+## <a name="support-member-completion-in-the-parser"></a>Terminer la saisie semi-automatique des membres dans l’analyseur
 
-Pour l’achèvement <xref:Microsoft.VisualStudio.Package.Source> des <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDeclarations%2A> membres, le groupe appelle la méthode. Vous devez implémenter la liste <xref:Microsoft.VisualStudio.Package.Declarations> dans une classe dérivée de la classe. Consultez <xref:Microsoft.VisualStudio.Package.Declarations> le cours pour plus de détails sur les méthodes que vous devez mettre en œuvre.
+Pour la saisie semi-automatique des membres, la <xref:Microsoft.VisualStudio.Package.Source> classe appelle la <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDeclarations%2A> méthode. Vous devez implémenter la liste dans une classe dérivée de la <xref:Microsoft.VisualStudio.Package.Declarations> classe. <xref:Microsoft.VisualStudio.Package.Declarations>Pour plus d’informations sur les méthodes que vous devez implémenter, consultez la classe.
 
-Le parser est appelé avec [ParseReason.MemberSelect](<xref:Microsoft.VisualStudio.Package.ParseReason.MemberSelect>) ou [ParseReason.MemberSelectAndHighlightBraces](<xref:Microsoft.VisualStudio.Package.ParseReason.MemberSelectAndHighlightBraces>) quand un personnage choisi par membre est tapé. L’emplacement donné <xref:Microsoft.VisualStudio.Package.ParseRequest> dans l’objet est immédiatement après que le personnage choisi par le membre. Le parseur doit recueillir les noms de tous les membres qui peuvent apparaître dans une liste de membres à ce point particulier dans le code source. Ensuite, le parseur doit analyser la ligne actuelle pour déterminer la portée que l’utilisateur veut associée au personnage choisi par le membre.
+L’analyseur est appelé avec [ParseReason. MemberSelect](<xref:Microsoft.VisualStudio.Package.ParseReason.MemberSelect>) ou [ParseReason. MemberSelectAndHighlightBraces](<xref:Microsoft.VisualStudio.Package.ParseReason.MemberSelectAndHighlightBraces>) lorsqu’un caractère SELECT de membre est tapé. L’emplacement donné dans l' <xref:Microsoft.VisualStudio.Package.ParseRequest> objet est immédiatement après le caractère Select du membre. L’analyseur doit collecter les noms de tous les membres qui peuvent apparaître dans une liste de membres à ce moment précis dans le code source. L’analyseur doit ensuite analyser la ligne active pour déterminer l’étendue que l’utilisateur souhaite associer au caractère Select du membre.
 
-Cette portée est basée sur le type d’identifiant avant que le personnage choisi par le membre. Par exemple, dans C, étant `languageService` donné la `LanguageService`variable du membre qui a un type de , tapant **languageService.** produit une liste de tous `LanguageService` les membres de la classe. Également en C, en tapant **ceci.** produit une liste de tous les membres de la classe dans la portée actuelle.
+Cette portée est basée sur le type de l’identificateur avant le caractère Select du membre. Par exemple, en C#, étant donné la variable membre `languageService` qui a un type `LanguageService` , tapez **LanguageService.** produit une liste de tous les membres de la `LanguageService` classe. Également en C#, en tapant **this.** produit une liste de tous les membres de la classe dans la portée actuelle.
 
-### <a name="parser-example"></a>Exemple de Parser
+### <a name="parser-example"></a>Exemple d’analyseur
 
-L’exemple suivant montre une <xref:Microsoft.VisualStudio.Package.Declarations> façon de remplir une liste. Ce code suppose que le parseur construit une déclaration et `AddDeclaration` l’ajoute `TestAuthoringScope` à la liste en appelant une méthode sur la classe.
+L’exemple suivant montre une façon de remplir une <xref:Microsoft.VisualStudio.Package.Declarations> liste. Ce code suppose que l’analyseur construit une déclaration et l’ajoute à la liste en appelant une `AddDeclaration` méthode sur la `TestAuthoringScope` classe.
 
 ```csharp
 using System.Collections;

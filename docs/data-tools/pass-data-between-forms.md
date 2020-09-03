@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 198eb09cabe16c72415520aa493a3395cdbf6d48
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281875"
 ---
 # <a name="pass-data-between-forms"></a>Passer des données entre des formulaires

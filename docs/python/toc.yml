@@ -1,6 +1,6 @@
 - name: Python dans Visual Studio
   href: index.yml
-- name: Vue d'ensemble
+- name: Vue d’ensemble
   items:
     - name: Vue d’ensemble de la prise en charge de Python
       href: overview-of-python-tools-for-visual-studio.md
