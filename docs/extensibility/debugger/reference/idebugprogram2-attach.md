@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::Attach Microsoft Docs
+title: 'IDebugProgram2 :: Attach | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 7d0b182ba7a873816e3a7aa32d39beb2c63cc5ce
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723140"
 ---
 # <a name="idebugprogram2attach"></a>IDebugProgram2::Attach
@@ -41,22 +41,22 @@ int Attach( 
 
 ## <a name="parameters"></a>Paramètres
 `pCallback`\
-[dans] Un objet [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) à utiliser pour la notification de l’événement de débogé.
+dans Objet [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) à utiliser pour la notification d’événements de débogage.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Le tableau suivant montre certains codes d’erreur possibles.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Le tableau suivant présente certains codes d’erreur possibles.
 
 |Valeur|Description|
 |-----------|-----------------|
-|`E_ATTACH_DEBUGGER_ALREADY_ATTACHED`|Le programme spécifié est déjà attaché au débbuggeur.|
-|`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|Une violation de la sécurité s’est produite pendant la procédure d’attachement.|
-|`E_ATTACH_CANNOT_ATTACH_TO_DESKTOP`|Un programme de bureau ne peut pas être attaché au débbugger.|
+|`E_ATTACH_DEBUGGER_ALREADY_ATTACHED`|Le programme spécifié est déjà attaché au débogueur.|
+|`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|Une violation de sécurité s’est produite pendant la procédure d’attachement.|
+|`E_ATTACH_CANNOT_ATTACH_TO_DESKTOP`|Un programme de bureau ne peut pas être attaché au débogueur.|
 
 ## <a name="remarks"></a>Notes
- Un moteur de débogé (DE) n’appelle jamais cette méthode à attacher à un programme. Si le DE s’exécute dans l’espace d’adresse du programme, la méthode [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) est appelée. Si le DE fonctionne dans l’espace d’adresse du gestionnaire de débogé de session (SDM), la méthode [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) est appelée.
+ Un moteur de débogage (DE) n’appelle jamais cette méthode pour effectuer un attachement à un programme. Si le DE s’exécute dans l’espace d’adressage du programme, la méthode [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) est appelée. Si le DE s’exécute dans l’espace d’adressage du gestionnaire de débogage de session (SDM), la méthode d' [attachement](../../../extensibility/debugger/reference/idebugengine2-attach.md) est appelée.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)
 - [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)
-- [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)
+- [Attacher](../../../extensibility/debugger/reference/idebugengine2-attach.md)

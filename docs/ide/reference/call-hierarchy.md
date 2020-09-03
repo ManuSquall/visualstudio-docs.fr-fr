@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dcedc6a49c0df84b4482f8030524d59d4336bcc8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595798"
 ---
 # <a name="view-call-hierarchy"></a>Afficher la hiérarchie d'appels
@@ -54,10 +54,10 @@ Quand vous sélectionnez un membre enfant dans le volet d’arborescence **Hiér
 
 - Le volet d’informations **Hiérarchie d’appels** affiche toutes les lignes de code dans lesquelles ce membre enfant est appelé à partir du membre parent.
 
-- La fenêtre **de définition de code,** si elle est ouverte, affiche le code pour le membre sélectionné (C seulement). Pour plus d’informations sur cette fenêtre, consultez [Afficher la structure du code](../../ide/viewing-the-structure-of-code.md).
+- La fenêtre **définition de code** , si elle est ouverte, affiche le code du membre sélectionné (C++ uniquement). Pour plus d’informations sur cette fenêtre, consultez [Afficher la structure du code](../../ide/viewing-the-structure-of-code.md).
 
 > [!NOTE]
-> La fonction **Call Hierarchy** ne trouve pas de références de groupe de méthode, ce qui comprend les endroits où une méthode est ajoutée en tant que gestionnaire d’événements ou est attribuée à un délégué. Pour rechercher toutes les références à une méthode, vous pouvez utiliser la commande **Rechercher toutes les références**.
+> La fonctionnalité **hiérarchie d’appels** ne trouve pas de références de groupe de méthodes, qui incluent des emplacements où une méthode est ajoutée en tant que gestionnaire d’événements ou qui est assignée à un délégué. Pour rechercher toutes les références à une méthode, vous pouvez utiliser la commande **Rechercher toutes les références**.
 
 ## <a name="shortcut-menu-items"></a>Éléments de menu contextuel
 
@@ -65,9 +65,9 @@ Le tableau suivant décrit plusieurs options de menu contextuel qui sont disponi
 
 |Élément de menu contextuel|Description|
 | - |-----------------|
-|**Ajouter comme nouvelle racine**|Ajoute le nœud sélectionné au volet d’arborescence en tant que nouveau nœud racine. Cela vous permet de concentrer votre attention sur une sous-arborescence spécifique.|
+|**Ajouter en tant que nouvelle racine**|Ajoute le nœud sélectionné au volet d’arborescence en tant que nouveau nœud racine. Cela vous permet de concentrer votre attention sur une sous-arborescence spécifique.|
 |**Supprimer racine**|Supprime le nœud racine sélectionné du volet d’arborescence. Cette option est disponible uniquement à partir d’un nœud racine.<br /><br /> Vous pouvez également utiliser le bouton de barre d’outils **Supprimer racine** pour supprimer le nœud racine sélectionné.|
 |**Atteindre la définition**|Exécute la commande Atteindre la définition sur le nœud sélectionné. Cela permet de naviguer jusqu’à la définition d’origine pour un appel de membre ou une définition de variable.<br /><br /> Pour exécuter la commande Atteindre la définition, vous pouvez également double-cliquer sur le nœud sélectionné ou appuyer sur F12.|
 |**Rechercher toutes les références**|Exécute la commande Rechercher toutes les références sur le nœud sélectionné. Cela permet de rechercher toutes les lignes de code de votre projet qui référencent une classe ou un membre.<br /><br /> Vous pouvez également utiliser Maj+F12 pour exécuter la commande Rechercher toutes les références sur le nœud sélectionné.|
 |**Copier**|Copie le contenu du nœud sélectionné (mais pas ses sous-nœuds).|
-|**Actualisation**|Réduit le nœud sélectionné afin qu’il puisse être redéveloppé pour afficher des informations actualisées.|
+|**Actualiser**|Réduit le nœud sélectionné afin qu’il puisse être redéveloppé pour afficher des informations actualisées.|

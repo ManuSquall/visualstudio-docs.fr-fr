@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessEx2::Detach Microsoft Docs
+title: IDebugProcessEx2 ::D Etach | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 7379436ae0da57d7f8c47ce8484c810a53a0a453
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723358"
 ---
 # <a name="idebugprocessex2detach"></a>IDebugProcessEx2::Detach
@@ -41,13 +41,13 @@ int Detach(
 
 ## <a name="parameters"></a>Paramètres
 `pSession`\
-[dans] Une valeur qui identifie de façon unique la session pour détacher ce processus.
+dans Valeur qui identifie de façon unique la session à partir de laquelle détacher ce processus.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- L’interface `pSession` passée est d’être traitée uniquement comme un cookie, une valeur qui identifie uniquement le gestionnaire de débogé de session qui à l’origine attaché à ce processus; aucune des méthodes sur l’interface fournie n’est fonctionnelle.
+ L’interface passée `pSession` est traitée uniquement comme un cookie, valeur qui identifie de façon unique le gestionnaire de débogage de session qui a été attaché à l’origine à ce processus ; aucune des méthodes sur l’interface fournie n’est fonctionnelle.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)

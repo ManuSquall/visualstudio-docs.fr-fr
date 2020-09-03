@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: d79c9d0d1b9c62d5afd78696ee2654c4eecdbe57
-ms.sourcegitcommit: cb0c6e55ae560960a493df9ab56e3e9d9bc50100
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86972359"
 ---
 # <a name="create-a-c-extension-for-python"></a>Créer une extension C++ pour Python
@@ -131,7 +131,7 @@ Suivez les instructions de cette section pour créer deux projets C++ identiques
     | **Éditeur de liens**  >  **Général** | **Répertoires de bibliothèques supplémentaires** | Ajoutez le dossier *libs* Python contenant des fichiers *.lib* en fonction de votre installation, par exemple `c:\Python36\libs`. (Veillez à pointer vers le dossier *libs* qui contient des fichiers *.lib*, et *non* vers le dossier *Lib* qui contient des fichiers *.py*.) |
 
     > [!Tip]
-    > Si vous ne voyez pas l’onglet C/C++ dans les propriétés du projet, cela signifie que le projet ne contient aucun fichier qu’il identifie en tant que fichier source C/C++. Cette situation peut se produire si vous créez un fichier source sans extension *.c* ou *.cpp*. Par exemple, si vous avez accidentellement entré `module.coo` plutôt que `module.cpp` dans la boîte de dialogue Nouvel élément, Visual Studio crée le fichier mais ne définit pas le type de fichier sur « C/c + code », ce qui active l’onglet Propriétés c/C++. Ce type d’inversion reste le cas même si vous renommez le fichier avec `.cpp` . Pour définir correctement le type de fichier, cliquez avec le bouton droit sur le fichier dans **Explorateur de solutions**, sélectionnez **Propriétés**, puis définissez **type de fichier** sur **code C/C++**.
+    > Si vous ne voyez pas l’onglet C/C++ dans les propriétés du projet, cela signifie que le projet ne contient aucun fichier qu’il identifie en tant que fichier source C/C++. Cette situation peut se produire si vous créez un fichier source sans extension *.c* ou *.cpp*. Par exemple, si vous avez accidentellement entré `module.coo` plutôt que `module.cpp` dans la boîte de dialogue Nouvel élément, Visual Studio crée le fichier mais ne définit pas le type de fichier sur « C/c + code », ce qui active l’onglet Propriétés c/C++. Ce type d’inversion reste le cas même si vous renommez le fichier avec `.cpp` . Pour définir correctement le type de fichier, cliquez avec le bouton droit sur le fichier dans **Explorateur de solutions**, sélectionnez **Propriétés**, puis définissez  **type de fichier** sur **code C/C++**.
 
     > [!Warning]
     > Définissez toujours l' **C/C++**  >  **Code Generation**  >  option de**bibliothèque Runtime** de génération de code C/C++ sur **DLL multithread (/MD)**, même pour une configuration Debug, car ce paramètre est celui avec lequel les binaires python non débogués sont générés. Avec CPython, si vous définissez l’option **dll de débogage multithread (/MDD)** , la génération d’une configuration **Debug** génère une erreur **C1189 : Py_LIMITED_API est incompatible avec Py_DEBUG, Py_TRACE_REFS et Py_REF_DEBUG**. En outre, si vous supprimez `Py_LIMITED_API` (requis avec CPython, mais pas avec PyBind11) pour éviter l’erreur de build, Python se bloque en tentant d’importer le module. (L’incident se produit dans l’appel de la DLL à `PyModule_Create` comme décrit plus loin, avec le message de sortie du type **Erreur de Python irrécupérable : PyThreadState_Get : aucun thread actuel**.)

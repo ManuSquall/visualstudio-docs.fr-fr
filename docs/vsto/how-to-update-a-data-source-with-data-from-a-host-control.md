@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8384b35583517a832763f5229d2b526ca10190ad
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541243"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Comment : mettre à jour une source de données avec les données d’un contrôle hôte
@@ -90,7 +90,7 @@ ms.locfileid: "85541243"
 6. Fermez la boîte de dialogue **Mise en forme et liaison avancée** .
 
 ## <a name="update-the-database"></a>Mettre à jour la base de données
- Si la source de données en mémoire est associée à une base de données, vous devez mettre celle-ci à jour avec les modifications apportées à la source de données. Pour plus d’informations sur la mise à jour d’une base de données, consultez [enregistrer des données dans la base de données](../data-tools/save-data-back-to-the-database.md) et [mettre à jour des données à l’aide d’un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md) .
+ Si la source de données en mémoire est associée à une base de données, vous devez mettre celle-ci à jour avec les modifications apportées à la source de données. Pour plus d’informations sur la mise à jour d’une base de données, consultez [enregistrer des données dans la base de données](../data-tools/save-data-back-to-the-database.md)  et [mettre à jour des données à l’aide d’un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md) .
 
 ### <a name="to-update-the-database"></a>Pour mettre à jour la base de données
 

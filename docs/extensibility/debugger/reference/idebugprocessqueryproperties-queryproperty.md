@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessQueryProperties::QueryProperty (en anglais seulement) Microsoft Docs
+title: 'IDebugProcessQueryProperties :: QueryProperty | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b190d7ed1d3690be898334270bbd1d16584b81a7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723297"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperty"></a>IDebugProcessQueryProperties::QueryProperty
-Cette méthode demande une valeur de propriété spécifiée du processus de débogage.
+Cette méthode recherche une valeur de propriété spécifiée du processus de débogage.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -39,18 +39,18 @@ int QueryProperty(
 
 ## <a name="parameters"></a>Paramètres
 `dwPropType`\
-[dans] Définition de la propriété interrogée. Les valeurs sont :
+dans Définition de la propriété interrogée. Les valeurs sont :
 
-- PROCESS_PROPERTY_COMMAND_LINE 1
+- PROCESS_PROPERTY_COMMAND_LINE = 1
 
-- PROCESS_PROPERTY_CURRENT_DIRECTORY 2
+- PROCESS_PROPERTY_CURRENT_DIRECTORY = 2
 
-- PROCESS_PROPERTY_ENVIRONMENT_VARIABLES 3
+- PROCESS_PROPERTY_ENVIRONMENT_VARIABLES = 3
 
 `pvarPropValue`\
 [out] Valeur de la propriété.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes

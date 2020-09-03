@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::EnumCodePaths ( Microsoft Docs
+title: 'IDebugProgram2 :: EnumCodePaths | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b99651811cedbdb8ec0eca5b766e6d75651dd5d7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723036"
 ---
 # <a name="idebugprogram2enumcodepaths"></a>IDebugProgram2::EnumCodePaths
@@ -51,28 +51,28 @@ int EnumCodePaths( 
 
 ## <a name="parameters"></a>Paramètres
 `pszHint`\
-[dans] Le mot sous le curseur dans la **vue source** ou **démontage** dans l’IDE.
+dans Mot situé sous le curseur dans la vue **source ou code** **machine** de l’IDE.
 
 `pStart`\
-[dans] Un objet [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) représentant le contexte code actuel.
+dans Objet [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) qui représente le contexte de code actuel.
 
 `pFrame`\
-[dans] Un objet [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) représentant le cadre de pile associé au point d’arrêt actuel.
+dans Objet [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) qui représente le frame de pile associé au point d’arrêt actuel.
 
 `fSource`\
-[dans] Nonzero`TRUE`( ) si dans la`FALSE`vue **source,** ou zéro ( ) si dans la vue **démontée.**
+dans Valeur différente de zéro ( `TRUE` ) si dans la vue **source** , ou zéro ( `FALSE` ) dans la vue code **machine** .
 
 `ppEnum`\
-[out] Retourne un objet [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md) contenant une liste des chemins de code.
+à Retourne un objet [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md) contenant une liste des chemins de code.
 
 `ppSafety`\
-[out] Renvoie un objet [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) représentant un contexte de code supplémentaire à définir comme point d’arrêt au cas où la trajectoire de code choisie serait ignorée. Cela peut se produire dans le cas d’une expression Boolean court-circuité, par exemple.
+à Retourne un objet [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) qui représente un contexte de code supplémentaire à définir comme point d’arrêt si le chemin d’accès au code choisi est ignoré. Cela peut se produire dans le cas d’une expression booléenne de court-circuit, par exemple.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- Un chemin de code décrit le nom d’une méthode ou d’une fonction qui a été appelée pour arriver au point actuel dans l’exécution du programme. Une liste de chemins de code représente la pile d’appels.
+ Un chemin d’accès de code décrit le nom d’une méthode ou d’une fonction qui a été appelée pour atteindre le point actuel dans l’exécution du programme. Une liste de chemins de code représente la pile des appels.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

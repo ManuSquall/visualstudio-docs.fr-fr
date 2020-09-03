@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 026162a2c8334c7163f9c7853d2de30e58e5939a
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77476782"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>Comment : installer le profileur autonome
@@ -41,9 +41,9 @@ ms.locfileid: "77476782"
     > [!NOTE]
     > Si les informations d’utilisation pour vsinstr.exe s’affichent, c’est que tout est configuré correctement. Si vous voyez une erreur indiquant que vsinstr.exe ou une de ses dépendances est introuvable, vérifiez que vos chemins sont correctement configurés, comme décrit à l’étape 2.  
   
-4. Configurez le serveur de symboles en affectant à votre variable **_NT_SYMBOL_PATH** la valeur `symsrv*symsrv.dll*c:\localcache* https://msdl.microsoft.com/download/symbols`  
+4. Configurez le serveur de symboles en affectant à votre variable **_NT_SYMBOL_PATH** la valeur `symsrv*symsrv.dll*c:\localcache*https://msdl.microsoft.com/download/symbols`  
   
-5. Après avoir configuré votre serveur de symboles avec les variables d’environnement système, exécutez les outils du profileur en ligne de commande à une nouvelle invite de commandes. Les nouvelles variables d’environnement sont ainsi prises en compte. Tapez la commande suivante dans la fenêtre d'invite de commandes :  
+5. Après avoir configuré votre serveur de symboles avec les variables d’environnement système, exécutez les outils du profileur en ligne de commande à une nouvelle invite de commandes. Les nouvelles variables d’environnement sont ainsi prises en compte. Dans la fenêtre d’invite de commandes, tapez la commande suivante :  
   
      **start %COMSPEC%**  
   
@@ -54,7 +54,7 @@ ms.locfileid: "77476782"
   
 ## <a name="see-also"></a>Voir aussi  
  [Profilage à partir de la ligne de commande](../profiling/using-the-profiling-tools-from-the-command-line.md)   
- [Procédure pas à pas : profilage de la ligne de commande à l’aide de l’échantillonnage](../profiling/walkthrough-command-line-profiling-using-sampling.md)   
- [Procédure pas à pas : profilage de la ligne de commande à l’aide de l’instrumentation](../profiling/walkthrough-command-line-profiling-using-instrumentation.md)   
- [Guide pratique pour référencer les informations de symboles Windows](../profiling/how-to-reference-windows-symbol-information.md)   
+ [Procédure pas à pas : profilage de ligne de commande à l’aide de l’échantillonnage](../profiling/walkthrough-command-line-profiling-using-sampling.md)   
+ [Procédure pas à pas : profilage à partir de la ligne de commande à l’aide d’instrumentation](../profiling/walkthrough-command-line-profiling-using-instrumentation.md)   
+ [Comment : référencer les informations de symboles Windows](../profiling/how-to-reference-windows-symbol-information.md)   
  [VSPerfReport](../profiling/vsperfreport.md)

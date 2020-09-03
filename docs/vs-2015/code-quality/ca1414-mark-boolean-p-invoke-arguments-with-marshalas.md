@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 783f7fad05cad18efea2f83b6d76c4c9e644f119
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548380"
 ---
 # <a name="ca1414-mark-boolean-pinvoke-arguments-with-marshalas"></a>CA1414 : Marquer les arguments P/Invoke booléens comme MarshalAs
@@ -32,11 +32,11 @@ ms.locfileid: "85548380"
 |Category|Microsoft. Interoperability|
 |Modification avec rupture|Rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Une déclaration de méthode d’appel de code non managé comprend un <xref:System.Boolean?displayProperty=fullName> paramètre ou une valeur de retour, mais l' <xref:System.Runtime.InteropServices.MarshalAsAttribute?displayProperty=fullName> attribut n’est pas appliqué au paramètre ou à la valeur de retour.
 
 ## <a name="rule-description"></a>Description de la règle
- Une méthode d’appel de plateforme accède au code non managé et est définie à l’aide du `Declare` mot clé dans [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ou <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> . <xref:System.Runtime.InteropServices.MarshalAsAttribute>Spécifie le comportement de marshaling utilisé pour convertir les types de données entre du code managé et du code non managé. De nombreux types de données simples, tels que <xref:System.Byte?displayProperty=fullName> et <xref:System.Int32?displayProperty=fullName> , ont une représentation unique dans du code non managé et ne nécessitent pas de spécification de leur comportement de marshaling ; le Common Language Runtime fournit automatiquement le comportement correct.
+ Une méthode d’appel de plateforme accède au code non managé et est définie à l’aide du `Declare` mot clé dans [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ou <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> . <xref:System.Runtime.InteropServices.MarshalAsAttribute> Spécifie le comportement de marshaling utilisé pour convertir les types de données entre du code managé et du code non managé. De nombreux types de données simples, tels que <xref:System.Byte?displayProperty=fullName> et <xref:System.Int32?displayProperty=fullName> , ont une représentation unique dans du code non managé et ne nécessitent pas de spécification de leur comportement de marshaling ; le Common Language Runtime fournit automatiquement le comportement correct.
 
  Le <xref:System.Boolean> type de données a plusieurs représentations dans du code non managé. Lorsque <xref:System.Runtime.InteropServices.MarshalAsAttribute> n’est pas spécifié, le comportement de marshaling par défaut pour le <xref:System.Boolean> type de données est <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName> . Il s’agit d’un entier 32 bits, qui n’est pas approprié dans toutes les circonstances. La représentation booléenne requise par la méthode non managée doit être déterminée et mise en correspondance avec le approprié <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName> . UnmanagedType. bool est le type booléen Win32, qui est toujours de 4 octets. UnmanagedType. U1 doit être utilisé pour C++ `bool` ou d’autres types de 1 octet. Pour plus d’informations, consultez [marshaling par défaut pour les types booléens](https://msdn.microsoft.com/d4c00537-70f7-4ca6-8197-bfc1ec037ff9).
 
