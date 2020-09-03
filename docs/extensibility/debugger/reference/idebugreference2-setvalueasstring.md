@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::SetValueAsString (fr) Microsoft Docs
+title: 'IDebugReference2 :: SetValueAsString | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c8414ce5f53acec2a30ff681ff0bab8ddc919310
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80720294"
 ---
 # <a name="idebugreference2setvalueasstring"></a>IDebugReference2::SetValueAsString
-Définit la valeur d’une référence à partir d’une chaîne. Réservé pour un usage futur.
+Définit la valeur d’une référence à partir d’une chaîne. Réservé à un usage ultérieur.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -45,15 +45,15 @@ int SetValueAsString ( 
 
 ## <a name="parameters"></a>Paramètres
 `pszValue`\
-[dans] La valeur comme une chaîne.
+dans Valeur sous la forme d’une chaîne.
 
 `dwRadix`\
-[dans] Le radix à utiliser pour formater toute information numérique.
+dans Base à utiliser pour mettre en forme les informations numériques.
 
 `dwTimeout`\
-[dans] Temps maximum, en millisecondes, d’attendre avant de revenir de cette méthode. Utilisez-le `INFINITE` pour attendre indéfiniment.
+dans Durée d’attente maximale, en millisecondes, avant le retour de cette méthode. Utilisez `INFINITE` pour attendre indéfiniment.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  Retourne toujours `E_NOTIMPL`.
 
 ## <a name="see-also"></a>Voir aussi

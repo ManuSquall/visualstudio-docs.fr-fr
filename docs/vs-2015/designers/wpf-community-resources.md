@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 167fc2f80a8eaeddb121d208f714fe134c63a198
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75843890"
 ---
 # <a name="wpf-community-resources"></a>Ressources de la communauté WPF
@@ -24,7 +24,7 @@ Microsoft met en avant de nombreuses ressources de la communauté pour vous perm
 ## <a name="community"></a>Communauté
  [Forum WPF](https://social.msdn.microsoft.com/forums/en-US/wpf/threads/)
 
- [Dépassement de capacité de la pile](https://stackoverflow.com/questions/tagged/wpf)
+ [Stack Overflow](https://stackoverflow.com/questions/tagged/wpf)
 
  [Blog de l’équipe WPF](https://devblogs.microsoft.com/wpf/)
 
@@ -34,4 +34,4 @@ Microsoft met en avant de nombreuses ressources de la communauté pour vous perm
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Créer des applications de bureau modernes à l’aide de Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
+- [Créer des applications pour ordinateur modernes à l’aide de Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)

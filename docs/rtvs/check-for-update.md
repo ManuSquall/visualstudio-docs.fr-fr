@@ -9,15 +9,15 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: c076fb97b3574b5c710814054232b9757e7a77e3
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75843741"
 ---
 # <a name="rtvs-current-version"></a>Version actuelle de RTVS
 
-Vous pouvez vérifier votre version en allant **à Help** > **About** in Visual Studio et en faisant défiler vers le bas pour l’entrée R Tools for **Visual Studio:**
+Vous pouvez vérifier votre version en accédant à **aide**  >  **About** dans Visual Studio et en faisant défiler jusqu’à l’entrée **Outils R pour Visual Studio** :
 
 ![Vérification de la version de RTVS dans Visual Studio (VS2017)](media/current-version.png)
 

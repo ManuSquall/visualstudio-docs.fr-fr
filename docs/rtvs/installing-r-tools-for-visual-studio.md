@@ -10,10 +10,10 @@ ms.workload:
 - data-science
 monikerRange: vs-2017
 ms.openlocfilehash: 5a09b3f78b929fd60764be36f56c0b580c7a42d7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75843728"
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>Comment installer Outils R pour Visual Studio
@@ -46,7 +46,7 @@ Si vous disposez uniquement de Visual Studio Shell, qui est fourni avec des prod
 
 1. Définissez toute option supplémentaire à droite sous le même nom de charge de travail. Par défaut, cette charge de travail prend en charge F# et Python. Pour R, la configuration minimale requiert **Prise en charge du langage R**, **Prise en charge du runtime pour les outils de développement R** et **Microsoft R Client**.
 
-RTVS est installé dans : *%ProgramFiles(x86)%\Microsoft Visual Studio\<version>\<édition>Common7\IDE\Extensions\Microsoft\R Tools for Visual Studio*, où *\<version>* est généralement `2017` et *\<édition>* est `Community`, `Professional` ou `Enterprise`.
+RTVS est installé dans : *% ProgramFiles (x86)% \ Microsoft Visual Studio \<version> \<edition> Common7\IDE\Extensions\Microsoft\R Tools pour Visual Studio* où *\<version>* est généralement `2017` et *\<edition>* est `Community` , `Professional` ou `Enterprise` .
 
 ## <a name="install-rtvs-in-visual-studio-2015"></a>Installer RTVS dans Visual Studio 2015
 
@@ -64,7 +64,7 @@ Microsoft R Open et CRAN R autorisent tous deux plusieurs versions côte à c�
 
 ### <a name="install-the-r-tools"></a>Installer Outils R
 
-Téléchargez le RTVS actuel pour Visual [https://rtvs.blob.core.windows.net/download/RTVS_2017-12-18.1.exe](https://rtvs.blob.core.windows.net/download/RTVS_2017-12-18.1.exe)Studio 2015 à partir de . RTVS recherche une version appropriée de Visual Studio et vous aide à installer un interpréteur R si vous ne l’avez pas déjà fait.
+Téléchargez le RTVS actuel pour Visual Studio 2015 à partir de [https://rtvs.blob.core.windows.net/download/RTVS_2017-12-18.1.exe](https://rtvs.blob.core.windows.net/download/RTVS_2017-12-18.1.exe) . RTVS recherche une version appropriée de Visual Studio et vous aide à installer un interpréteur R si vous ne l’avez pas déjà fait.
 
 > [!Note]
 > Le programme d’installation de RTVS autonome fonctionne uniquement avec Visual Studio 2015 ; avec Visual Studio 2017. Installez la prise en charge de R via la [charge de travail Applications de science et analyse des données](#install-rtvs-in-visual-studio-2017) comme décrit précédemment.
@@ -81,7 +81,7 @@ Effectuez une installation hors connexion si les ordinateurs ne sont pas connect
 
 1. Suivez les instructions de la page web pour créer une installation hors ligne.
 
-1. Pour Visual Studio 2015, téléchargez les [https://rtvs.blob.core.windows.net/download/RTVS_2017-12-18.1.zip](https://rtvs.blob.core.windows.net/download/RTVS_2017-12-18.1.zip) installateurs RTVS hors ligne de et [https://rtvs.blob.core.windows.net/download/RTVS_Remote_2017-12-12.1.zip](https://rtvs.blob.core.windows.net/download/RTVS_Remote_2017-12-12.1.zip).
+1. Pour Visual Studio 2015, téléchargez les programmes d’installation RTVS hors connexion à partir de [https://rtvs.blob.core.windows.net/download/RTVS_2017-12-18.1.zip](https://rtvs.blob.core.windows.net/download/RTVS_2017-12-18.1.zip) et [https://rtvs.blob.core.windows.net/download/RTVS_Remote_2017-12-12.1.zip](https://rtvs.blob.core.windows.net/download/RTVS_Remote_2017-12-12.1.zip) .
 
 1. Installez Visual Studio et RTVS à partir des programmes d’installation en mode hors connexion.
 
@@ -90,5 +90,5 @@ Effectuez une installation hors connexion si les ordinateurs ne sont pas connect
 - [Bien démarrer avec R](getting-started-with-r.md)
 - [Exemples de projets Outils R](getting-started-samples.md)
 - [Aide dans Outils R](getting-started-help.md)
-- [Options R Tools](options-for-r-tools-in-visual-studio.md)
+- [Options de R Tools](options-for-r-tools-in-visual-studio.md)
 - [Microsoft Machine Learning Server (anciennement R Server)](/machine-learning-server/)

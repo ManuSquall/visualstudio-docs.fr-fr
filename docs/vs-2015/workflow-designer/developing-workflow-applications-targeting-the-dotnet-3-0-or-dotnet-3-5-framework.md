@@ -12,21 +12,21 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fcace8b2ed9576ff5c3c4f4a0c526a70b2d4228a
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75843873"
 ---
 # <a name="developing-workflow-applications-targeting-the-net-30-or-net-35-framework"></a>Développement d'applications de workflow qui ciblent le .NET 3.0 ou .NET 3.5 Framework
-[!INCLUDE[vs2010](../includes/vs2010-md.md)] fournit la [!INCLUDE[wfd1](../includes/wfd1-md.md)] pour la création d’applications [!INCLUDE[wf](../includes/wf-md.md)] qui ciblent le [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)]. Le concepteur utilise l'interface utilisateur [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que les utilisateurs connaissent bien pour la construction graphique et le débogage d'applications de workflow.
+[!INCLUDE[vs2010](../includes/vs2010-md.md)] fournit le [!INCLUDE[wfd1](../includes/wfd1-md.md)] pour créer des [!INCLUDE[wf](../includes/wf-md.md)] applications qui ciblent [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] . Le concepteur utilise l'interface utilisateur [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que les utilisateurs connaissent bien pour la construction graphique et le débogage d'applications de workflow.
 
  [!INCLUDE[vs2010](../includes/vs2010-md.md)] fournit également un accès à un concepteur de workflow hérité qui peut être utilisé pour cibler le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]. Cette section propose de l'aide relative à l'utilisation de ce concepteur hérité.
 
 ## <a name="in-this-section"></a>Dans cette section
- [Utilisation du Concepteur de flux de travail hérité](../workflow-designer/using-the-legacy-workflow-designer.md)
+ [Utilisation du Concepteur de Workflow hérité](../workflow-designer/using-the-legacy-workflow-designer.md)
 
  [Débogage de flux de travail hérités](../workflow-designer/debugging-legacy-workflows.md)
 
-## <a name="related-sections"></a>Rubriques connexes
- [Guide de programmation Windows Workflow Foundation](https://msdn2.microsoft.com/library/bb628474.aspx)
+## <a name="related-sections"></a>Sections connexes
+ [Guide de programmation de Windows Workflow Foundation](https://msdn2.microsoft.com/library/bb628474.aspx)

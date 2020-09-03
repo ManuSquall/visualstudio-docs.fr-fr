@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d230d9a4719e1757820de87b60bcc7566a785f99
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75844018"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Création d'une interface utilisateur à l'aide du concepteur XAML dans Visual Studio
@@ -34,15 +34,15 @@ Le concepteur XAML dans Visual Studio fournit une interface visuelle pour vous a
 ## <a name="authoring-views"></a>Création des vues
  Le concepteur XAML fournit un mode XAML et un mode Création synchronisé du balisage XAML rendu de votre application. Quand un fichier XAML est ouvert dans Visual Studio, vous pouvez basculer entre le mode Création et le mode XAML à l'aide des onglets **Conception** et **XAML** . Vous pouvez utiliser le bouton **Permuter les volets** pour définir la fenêtre qui doit s'afficher au premier plan : la planche graphique ou l'Éditeur XAML.
 
- En mode Création, la fenêtre contenant la *planche graphique* est la fenêtre active et vous pouvez l'utiliser comme surface de travail principale. Vous pouvez l'utiliser pour concevoir visuellement une page dans votre application en ajoutant ou en dessinant des éléments, puis en les modifiant. Pour plus d'informations, consultez [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md). Cette illustration montre la planche graphique en mode Création.
+ Dans Mode Création, la fenêtre contenant la *planche graphique* est la fenêtre active et vous pouvez l’utiliser comme surface de travail principale. Vous pouvez l'utiliser pour concevoir visuellement une page dans votre application en ajoutant ou en dessinant des éléments, puis en les modifiant. Pour plus d'informations, consultez [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md). Cette illustration montre la planche graphique en mode Création.
 
- ![Mode Création de Concepteur XAML](../designers/media/xaml-editor-design-view.png "xaml_editor_design_view")
+ ![Mode Design du concepteur XAML](../designers/media/xaml-editor-design-view.png "xaml_editor_design_view")
 
  Les fonctionnalités suivantes sont disponibles dans la planche graphique :
 
  **Lignes d’alignement** : les lignes d’alignement sont des *limites d’alignement* qui apparaissent sous forme de lignes en pointillés rouges quand les bords des contrôles sont alignés ou que les lignes de base de texte sont alignées. Les limites d'alignement n'apparaissent que si l' **alignement sur les lignes d'alignement** est activé.
 
- Des **rails de grille** `Grid` rails permettent de gérer les lignes et les colonnes dans un panneau [grille](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx) . Vous pouvez créer et supprimer des lignes et des colonnes, ainsi qu'ajuster leurs largeurs et hauteurs relatives. Le quadrillage de grille vertical, qui apparaît à gauche de la planche graphique, est utilisé pour les lignes, et la ligne horizontale, qui apparaît en haut, est utilisée pour les colonnes.
+ **Quadrillages : les quadrillages de ** `Grid` permettent de gérer les lignes et les colonnes dans un panneau [Grille](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx). Vous pouvez créer et supprimer des lignes et des colonnes, ainsi qu'ajuster leurs largeurs et hauteurs relatives. Le quadrillage de grille vertical, qui apparaît à gauche de la planche graphique, est utilisé pour les lignes, et la ligne horizontale, qui apparaît en haut, est utilisée pour les colonnes.
 
  **Ornements de grille** : un ornement de `Grid` apparaît sous la forme d’un triangle avec une ligne verticale ou horizontale qui y est rattachée sur le quadrillage de `Grid`. Quand vous faites glisser un ornement `Grid` , les largeurs ou hauteurs des lignes ou colonnes adjacentes se mettent à jour au fur et à mesure que vous déplacez la souris.
 
@@ -58,7 +58,7 @@ Le concepteur XAML dans Visual Studio fournit une interface visuelle pour vous a
 
  En mode Création, des commandes supplémentaires de la planche graphique sont disponibles dans la partie inférieure gauche de la zone de l'écran, comme indiqué ci-après :
 
- ![Commandes Mode Création](../designers/media/xaml-editor-design-controls.png "xaml_editor_design_controls")
+ ![Commandes du mode Design](../designers/media/xaml-editor-design-controls.png "xaml_editor_design_controls")
 
  Les commandes suivantes sont disponibles dans cette barre d'outils :
 
@@ -72,16 +72,16 @@ Le concepteur XAML dans Visual Studio fournit une interface visuelle pour vous a
 
  En mode XAML, la fenêtre de l'éditeur XAML est la fenêtre active, et l'éditeur XAML est votre principal outil de création. Le langage XAML (Extensible Application Markup Language) fournit un vocabulaire XML déclaratif permettant de spécifier l'interface utilisateur d'une application. Le mode XAML inclut IntelliSense, la mise en forme automatique, la mise en surbrillance de la syntaxe et la navigation de balises. Cette illustration montre le mode XAML :
 
- ![Vue XAML](../designers/media/xaml-editor.png "xaml_editor")
+ ![Mode XAML](../designers/media/xaml-editor.png "xaml_editor")
 
  **Barre Mode fractionné** : la barre Mode fractionné apparaît en haut de la vue XAML quand l’éditeur XAML se trouve dans la fenêtre du bas. La barre Mode fractionné vous permet de contrôler les tailles relatives du mode Création et du mode XAML. Vous pouvez également échanger les emplacements des vues (à l'aide du bouton **Permuter les volets** ), spécifier si les vues sont réorganisées horizontalement ou verticalement et réduire l'une ou l'autre des vues.
 
  **Zoom de balisage** : le zoom de balisage vous permet de dimensionner la vue XAML. Vous pouvez effectuer un zoom de 20 % à 400 %.
 
 ## <a name="device-window"></a>Fenêtre Périphérique
- La fenêtre Périphérique du concepteur XAML vous permet de faire des simulations à l'aide de différentes options de vues, d'écrans et d'affichage pour votre projet Windows Store ou Windows Phone. La fenêtre Périphérique est disponible dans le menu **Design** quand vous travaillez dans le concepteur XAML. Il ressemble à ceci :
+ La fenêtre Périphérique du concepteur XAML vous permet de faire des simulations à l'aide de différentes options de vues, d'écrans et d'affichage pour votre projet Windows Store ou Windows Phone. La fenêtre Appareil est disponible dans le menu **Design** quand vous travaillez dans le concepteur XAML. Voici à quoi il ressemble :
 
- ![Fenêtre de l’appareil](../designers/media/xaml-editor-device-panel.png "xaml_editor_device_panel")
+ ![Fenêtre Périphérique](../designers/media/xaml-editor-device-panel.png "xaml_editor_device_panel")
 
  Les options disponibles dans la fenêtre Périphérique sont les suivantes :
 
@@ -108,7 +108,7 @@ Le concepteur XAML dans Visual Studio fournit une interface visuelle pour vous a
 
 - Afficher la structure hiérarchique de tous les éléments de la planche graphique.
 
-- Sélectionner des éléments pour pouvoir les modifier (les déplacer dans la hiérarchie, les modifier sur la planche graphique, définir leurs propriétés dans la fenêtre Propriétés, etc.). Pour plus d'informations, consultez [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md)
+- Sélectionner des éléments pour pouvoir les modifier (les déplacer dans la hiérarchie, les modifier sur la planche graphique, définir leurs propriétés dans la fenêtre Propriétés, etc.). Pour plus d’informations, consultez [Working with Elements in concepteur XAML](../designers/working-with-elements-in-xaml-designer.md)
 
 - Créer et modifier les modèles des éléments qui sont des contrôles.
 
@@ -122,14 +122,14 @@ Le concepteur XAML dans Visual Studio fournit une interface visuelle pour vous a
 
   **Structure du document** : la vue principale de la fenêtre Structure du document affiche la hiérarchie d’un document dans une arborescence. Vous pouvez utiliser la nature hiérarchique de la structure du document pour consulter le document à des niveaux de détail différents, et pour verrouiller et masquer des éléments séparément ou en groupes.
 
-  **Afficher/masquer** : affiche ou masque les éléments de la planche graphique qui correspondent aux éléments de la structure du document. Utilisez les boutons **Afficher/Masquer** , qui affichent le symbole d'un œil en cas d'affichage, ou appuyez sur Ctrl+H pour masquer les éléments, et sur Maj+Ctrl+H pour les afficher.
+  **Afficher/masquer** : affiche ou masque les éléments de la planche graphique qui correspondent aux éléments de la structure du document. Utilisez les boutons **Afficher/masquer** , qui affichent le symbole d’un œil lorsqu’il est affiché, ou appuyez sur Ctrl + h pour masquer les éléments et sur Maj + Ctrl + h pour les afficher.
 
-  **Verrouiller/déverrouiller** : verrouille ou déverrouille les éléments de la planche graphique qui correspondent aux éléments de la structure du document. Les éléments verrouillés ne peuvent pas être modifiés. Utilisez les boutons **Verrouiller/Déverrouiller** , qui affichent un symbole de cadenas en cas de verrouillage, ou appuyez sur Ctrl+L pour verrouiller des éléments, et sur Maj+Ctrl+L pour les déverrouiller.
+  **Verrouiller/déverrouiller** : verrouille ou déverrouille les éléments de la planche graphique qui correspondent aux éléments de la structure du document. Les éléments verrouillés ne peuvent pas être modifiés. Utilisez les boutons **Verrouiller/déverrouiller** , qui affichent un symbole de cadenas en cas de verrouillage, ou appuyez sur CTRL + l pour verrouiller les éléments et sur Maj + Ctrl + l pour les déverrouiller.
 
   **Rétablir l’étendue à la racine de la page** : l’option en haut de la fenêtre Structure du document, qui présente un symbole de flèche vers le haut, rétablit la structure du document à l’étendue précédente. La portée supérieure n'est applicable que quand vous êtes dans la portée d'un style ou d'un modèle.
 
-## <a name="properties-window"></a>Propriétés (fenêtre)
- La fenêtre Propriétés vous permet de définir des valeurs de propriété sur les contrôles. Il ressemble à ceci :
+## <a name="properties-window"></a>Fenêtre Propriétés
+ La fenêtre Propriétés vous permet de définir des valeurs de propriété sur les contrôles. Voici à quoi il ressemble :
 
  ![Fenêtre Propriétés](../designers/media/xaml-editor-prop-window.png "xaml_editor_prop_window")
 

@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 195a3a36b53e5f84f6052a15e01007bb5ed77fac
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75844198"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Procédure pas à pas : création d'une application de données multicouche
@@ -55,7 +55,7 @@ Les applications de données multicouches sont des applications qui accèdent au
 
   ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo") Pour obtenir une version vidéo de cette rubrique, consultez [vidéo : création d’une application de données multicouches](https://msdn2.microsoft.com/library/cc178916.aspx).
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Prérequis
  Pour exécuter cette procédure pas à pas, vous avez besoin des éléments suivants :
 
 - avoir accès à l'exemple de base de données Northwind.
@@ -71,7 +71,7 @@ Les applications de données multicouches sont des applications qui accèdent au
 1. Dans le menu **fichier** , créez un nouveau projet.
 
     > [!NOTE]
-    > Le **Concepteur de DataSet** est pris en charge dans C# les [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] et les projets. Créez le projet dans l'un de ces langages.
+    > Le **Concepteur de DataSet** est pris en charge dans les [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] projets et C#. Créez le projet dans l'un de ces langages.
 
 2. Dans la boîte de dialogue **nouveau projet** , dans le volet **types de projets** , cliquez sur **fenêtres**.
 
@@ -86,7 +86,7 @@ Les applications de données multicouches sont des applications qui accèdent au
      Une solution NTierWalkthrough contenant le projet DataEntityTier est créée et ajoutée à l’**Explorateur de solutions**.
 
 ## <a name="creating-the-class-library-to-hold-the-tableadapters-dataaccesstier"></a>Création de la bibliothèque de classes pour contenir les TableAdapters (DataAccessTier)
- L'étape qui suit la création du projet DataEntityTier est la création d'un autre projet de bibliothèque de classes. Ce projet contiendra les `TableAdapter`générés et est appelé la *couche d’accès aux données* de l’application. La couche d'accès aux données contient les informations requises pour se connecter à la base de données et figure généralement dans la couche intermédiaire.
+ L'étape qui suit la création du projet DataEntityTier est la création d'un autre projet de bibliothèque de classes. Ce projet contiendra les s générés `TableAdapter` et est appelé la *couche d’accès aux données* de l’application. La couche d'accès aux données contient les informations requises pour se connecter à la base de données et figure généralement dans la couche intermédiaire.
 
 #### <a name="to-create-the-new-class-library-for-the-tableadapters"></a>Pour créer la bibliothèque de classes pour les TableAdapters
 
@@ -99,12 +99,12 @@ Les applications de données multicouches sont des applications qui accèdent au
      Le projet DataAccessTier est créé et ajouté à la solution NTierWalkthrough.
 
 ## <a name="creating-the-dataset"></a>Création du dataset
- L'étape qui suit consiste à créer le dataset typé. Les datasets typés sont créés avec la classe DataSet (y compris les classes DataTables) et les classes `TableAdapter` dans un projet unique. (Toutes les classes sont générées dans un seul fichier.) Lorsque vous séparez le DataSet et `TableAdapter`s dans des projets différents, il s’agit de la classe DataSet qui est déplacée vers l’autre projet, en laissant les classes `TableAdapter` dans le projet d’origine. Par conséquent, créez le dataset dans le projet qui contiendra les `TableAdapter`s (le projet DataAccessTier). Vous allez créer le DataSet à l’aide de l **'Assistant Configuration de source de données**.
+ L'étape qui suit consiste à créer le dataset typé. Les datasets typés sont créés avec la classe DataSet (y compris les classes DataTables) et les classes `TableAdapter` dans un projet unique. (Toutes les classes sont générées dans un seul fichier.) Lorsque vous séparez le DataSet et les `TableAdapter` dans différents projets, il s’agit de la classe DataSet qui est déplacée vers l’autre projet, en laissant les `TableAdapter` classes dans le projet d’origine. Par conséquent, créez le dataset dans le projet qui contiendra les `TableAdapter`s (le projet DataAccessTier). Vous allez créer le DataSet à l’aide de l **'Assistant Configuration de source de données**.
 
 > [!NOTE]
 > Vous devez avoir accès à l'exemple de base de données Northwind pour créer la connexion.
 
-#### <a name="to-create-the-dataset"></a>Pour créer le groupe de données
+#### <a name="to-create-the-dataset"></a>Pour créer le dataset
 
 1. Cliquez sur DataAccessTier dans **Explorateur de solutions**.
 
@@ -118,7 +118,7 @@ Les applications de données multicouches sont des applications qui accèdent au
 
      Si une connexion de données à l'exemple de base de données Northwind est disponible dans la liste déroulante, sélectionnez-la.
 
-     \- ou -
+     - ou -
 
      Cliquez sur **nouvelle connexion** pour ouvrir la boîte de dialogue **Ajouter une connexion** .
 
@@ -148,7 +148,7 @@ Les applications de données multicouches sont des applications qui accèdent au
 
 4. Dans la liste **projet de DataSet** , cliquez sur **DataEntityTier**.
 
-5. Dans le menu **Générer** , cliquez sur **Générer la solution**.
+5. Dans le menu **Générer**, cliquez sur **Générer la solution**.
 
    Le dataset et les TableAdapters sont divisés entre les deux projets de bibliothèque de classes. Le projet qui contenait initialement l'intégralité du dataset (DataAccessTier) ne contient désormais que les TableAdapters. Le projet désigné dans la propriété de **projet DataSet** (DataEntityTier) contient le DataSet typé : NorthwindDataSet. DataSet. Designer. vb (ou NorthwindDataSet.DataSet.Designer.cs).
 
@@ -185,7 +185,7 @@ Les applications de données multicouches sont des applications qui accèdent au
 
 6. Dans la page **Choisir les méthodes à générer**, tapez **GetCustomers** dans le champ **Nom de la méthode** de la section **Retourner un DataTable**.
 
-7. Cliquez sur **Finish**.
+7. Cliquez sur **Terminer**.
 
 #### <a name="to-create-a-method-in-the-data-access-tier-that-returns-the-orders-table"></a>Pour créer une méthode dans la couche d'accès aux données qui retourne la table Orders
 
@@ -199,16 +199,16 @@ Les applications de données multicouches sont des applications qui accèdent au
 
 5. Dans la page **Choisir les méthodes à générer**, tapez **GetOrders** dans le champ **Nom de la méthode** de la section **Retourner un DataTable**.
 
-6. Cliquez sur **Finish**.
+6. Cliquez sur **Terminer**.
 
-7. Dans le menu **Générer** , cliquez sur **Générer la solution**.
+7. Dans le menu **Générer**, cliquez sur **Générer la solution**.
 
 ## <a name="adding-a-reference-to-the-data-entity-and-data-access-tiers-to-the-data-service"></a>Ajout d'une référence vers les couches d'entité des données et d'accès aux données au service de données
  Le service de données nécessitant des informations du dataset et des TableAdapters, ajoutez des références vers les projets DataEntityTier et DataAccessTier.
 
 #### <a name="to-add-references-to-the-data-service"></a>Pour ajouter des références au service de données
 
-1. Cliquez avec le bouton droit sur DataService dans **Explorateur de solutions** , puis cliquez sur **Ajouter une référence**.
+1. Cliquez avec le bouton droit sur DataService dans l’**Explorateur de solutions**, puis cliquez sur **Ajouter une référence**.
 
 2. Cliquez sur l’onglet **Projets** de la boîte de dialogue **Ajouter une référence**.
 
@@ -280,7 +280,7 @@ Les applications de données multicouches sont des applications qui accèdent au
     }
     ```
 
-5. Dans le menu **Générer** , cliquez sur **Générer la solution**.
+5. Dans le menu **Générer**, cliquez sur **Générer la solution**.
 
 ## <a name="creating-a-presentation-tier-to-display-data-from-the-data-service"></a>Création d'une couche Présentation pour afficher les données du service de données
  Maintenant que la solution contient le service de données avec les méthodes permettant d'appeler la couche d'accès aux données, créez un autre projet pour appeler le service de données et présenter les données aux utilisateurs. Pour cette procédure pas à pas, créez une application Windows Forms. Il s’agit de la couche Présentation de l’application multicouche.
@@ -329,7 +329,7 @@ Les applications de données multicouches sont des applications qui accèdent au
 
 #### <a name="to-add-two-data-bound-datagridviews-to-the-form"></a>Pour ajouter au formulaire deux DataGridViews liés aux données
 
-1. Dans **Explorateur de solutions**, sélectionnez le projet PresentationTier.
+1. Dans l’**Explorateur de solutions**, sélectionnez le projet PresentationTier.
 
 2. Dans la fenêtre **Sources de données**, développez **NorthwindDataSet** et accédez au nœud **Customers**.
 
@@ -365,16 +365,16 @@ Les applications de données multicouches sont des applications qui accèdent au
 
 #### <a name="to-increase-the-maxreceivedmessagesize-value"></a>Pour augmenter la valeur de maxReceivedMessageSize
 
-1. Dans **Explorateur de solutions**, double-cliquez sur le fichier app. config dans le projet PresentationTier.
+1. Dans l’**Explorateur de solutions**, double-cliquez sur le fichier app.config du projet PresentationTier.
 
 2. Accédez à l’attribut de taille **maxReceivedMessage** et changez la valeur en `6553600`.
 
-## <a name="testing-the-application"></a>Test de l'application
+## <a name="testing-the-application"></a>Test de l’application
  Exécutez l'application. Les données sont récupérées à partir du service de données et affichées dans le formulaire.
 
 #### <a name="to-test-the-application"></a>Pour tester l'application
 
-1. Appuyez sur la touche F5.
+1. Appuyez sur F5.
 
 2. Les données des tables Customers et Orders sont récupérées à partir du service de données et affichées dans le formulaire.
 

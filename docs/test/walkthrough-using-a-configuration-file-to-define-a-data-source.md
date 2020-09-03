@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4a4f5731a828eb04e57f56a46fe399125b5ded2f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75776154"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Procédure pas à pas : utilisation d’un fichier de configuration pour définir une source de données
@@ -32,7 +32,7 @@ Cette procédure pas à pas illustre l’utilisation d’une source de données 
 
 - accès aux sources de données à l'aide de la classe <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>.
 
-## <a name="prerequisites"></a>Conditions préalables requises
+## <a name="prerequisites"></a>Prérequis
 
 Pour exécuter cette procédure pas à pas, vous avez besoin des éléments suivants :
 
@@ -159,7 +159,7 @@ L’élément **microsoft.visualstudio.testtools** doit être similaire à ce qu
 </microsoft.visualstudio.testtools>
 ```
 
-Le fichier *app.config* final doit ressembler à ceci :
+Le fichier de *app.config* final doit ressembler à ceci :
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
