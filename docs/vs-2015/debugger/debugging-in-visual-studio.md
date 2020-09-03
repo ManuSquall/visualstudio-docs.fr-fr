@@ -19,10 +19,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 78c80bc015ffbf39949b5295d85396dc84154208
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189584"
 ---
 # <a name="debugging-in-visual-studio"></a>Débogage dans Visual Studio
@@ -31,23 +31,23 @@ Le débogueur Visual Studio vous permet d’observer le comportement de votre pr
 
  Pour une présentation rapide du débogage et des diagnostics dans Visual Studio, consultez [Déboguer, profiler et diagnostiquer](https://www.visualstudio.com/features/debugging-and-diagnostics-vs).
 
-- [Débogueur Windows](../debugger/debugger-windows.md) répertorie les différentes fenêtres du débogueur.
+- [Fenêtres du débogueur](../debugger/debugger-windows.md) Répertorie les différentes fenêtres du débogueur.
 
-- [Principes de base du débogueur](../debugger/debugger-basics.md) évoque les principes fondamentaux de l’utilisation du débogueur Visual Studio. Ces rubriques comprennent les éléments fondamentaux du débogage, le contrôle de l’exécution, l’attachement à un programme en cours d’exécution, le débogage juste-à-temps, l’exécution automatique du débogueur, les dumps, les points d’arrêt, l’inspection de votre programme, la gestion des exceptions, Modifier & Continuer et l’utilisation d’expressions dans le débogueur.
+- [Concepts de base du débogueur](../debugger/debugger-basics.md) Décrit les notions de base de l’utilisation du débogueur Visual Studio. Ces rubriques comprennent les éléments fondamentaux du débogage, le contrôle de l’exécution, l’attachement à un programme en cours d’exécution, le débogage juste-à-temps, l’exécution automatique du débogueur, les dumps, les points d’arrêt, l’inspection de votre programme, la gestion des exceptions, Modifier & Continuer et l’utilisation d’expressions dans le débogueur.
 
-- [Fonctionnalités de débogage plus](../debugger/more-debugging-features.md) décrit les différentes fonctionnalités de débogage.
+- [Plus de fonctionnalités de débogage](../debugger/more-debugging-features.md) Décrit les différentes fonctionnalités de débogage.
 
-- [Débogage distant](../debugger/remote-debugging.md) explique comment configurer et utiliser le débogage à distance.
+- [Débogage à distance](../debugger/remote-debugging.md) Décrit comment configurer et utiliser le débogage distant.
 
-- [Déboguer les Applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md) décrit comment déboguer des applications multithread.
+- [Déboguer des applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md) Décrit comment déboguer des applications multithread.
 
-- [IntelliTrace](../debugger/intellitrace.md) décrit la fonctionnalité IntelliTrace.
+- [IntelliTrace](../debugger/intellitrace.md) Décrit la fonctionnalité IntelliTrace.
 
-- [Débogage d’Applications](../debugger/debugging-applications.md) décrit comment déboguer différents types d’applications.
+- [Débogage d’applications](../debugger/debugging-applications.md) Décrit comment déboguer différents types d’applications.
 
-- [Référence de l’Interface utilisateur de débogage](../debugger/debugging-user-interface-reference.md) fournit référence des informations sur les fenêtres et boîtes de dialogue vous utiliser lors du débogage de votre application. Ces rubriques sont également disponibles lorsque vous appuyez sur F1 pendant que vous avez le focus sur le débogage d’un élément de l’interface utilisateur, par exemple la fenêtre **Points d’arrêt** .
+- Débogage de la référence de l' [interface utilisateur](../debugger/debugging-user-interface-reference.md) Fournit des informations de référence sur les fenêtres et les boîtes de dialogue que vous utilisez lors du débogage de votre application. Ces rubriques sont également disponibles lorsque vous appuyez sur F1 pendant que vous avez le focus sur le débogage d’un élément de l’interface utilisateur, par exemple la fenêtre **Points d’arrêt** .
 
-- [SDK Debug Interface Access](../debugger/debug-interface-access/debug-interface-access-sdk.md) décrit le Kit de développement des logiciels Microsoft Debug Interface Access (DIA SDK). Ce kit fournit l’accès aux informations de débogage stockées dans les fichiers de base de données du programme (.pdb) qui sont générés par les outils de post-compilation Microsoft.
+- [Kit de développement logiciel Debug interface Access](../debugger/debug-interface-access/debug-interface-access-sdk.md) Décrit le kit de développement logiciel (SDK) Microsoft Debug interface Access (DIA SDK). Ce kit fournit l’accès aux informations de débogage stockées dans les fichiers de base de données du programme (.pdb) qui sont générés par les outils de post-compilation Microsoft.
 
 ## <a name="see-also"></a>Voir aussi
- [Outils de profilage](../profiling/profiling-tools.md) [IDE de Visual Studio](../ide/visual-studio-ide.md)
+ [Outils de profilage](../profiling/profiling-tools.md) [IDE Visual Studio](../ide/visual-studio-ide.md)

@@ -20,10 +20,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6590464b78d6b5452ce266d701aefc0f739185b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155948"
 ---
 # <a name="propertygroup-element-msbuild"></a>PropertyGroup, élément (MSBuild)
@@ -32,7 +32,7 @@ ms.locfileid: "68155948"
 Contient un ensemble d’éléments [Property](../msbuild/property-element-msbuild.md) définis par l’utilisateur. Chaque élément `Property` utilisé dans un projet [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] doit être un enfant d’un élément `PropertyGroup`.  
   
  \<Project>  
- \<PropertyGroup >  
+ \<PropertyGroup>  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -56,7 +56,7 @@ Contient un ensemble d’éléments [Property](../msbuild/property-element-msbui
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[Property](../msbuild/property-element-msbuild.md)|Élément facultatif.<br /><br /> Nom de propriété défini par l’utilisateur, qui contient la valeur de propriété. Un élément `PropertyGroup` peut ne contenir aucun élément *Property* ou en contenir plusieurs.|  
+|[Propriété](../msbuild/property-element-msbuild.md)|Élément facultatif.<br /><br /> Nom de propriété défini par l’utilisateur, qui contient la valeur de propriété. Un élément `PropertyGroup` peut ne contenir aucun élément *Property* ou en contenir plusieurs.|  
   
 ### <a name="parent-elements"></a>Éléments parents  
   
@@ -64,7 +64,7 @@ Contient un ensemble d’éléments [Property](../msbuild/property-element-msbui
 |-------------|-----------------|  
 |[Projet](../msbuild/project-element-msbuild.md)|Élément racine requis d'un fichier projet [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] .|  
   
-## <a name="example"></a>Exemples  
+## <a name="example"></a>Exemple  
  L’exemple de code suivant montre comment définir des propriétés en fonction d’une condition. Dans cet exemple, si la valeur de la propriété `CompileConfig` est `DEBUG`, les propriétés `Optimization`, `Obfuscate` et `OutputPath` contenues dans l’élément `PropertyGroup` sont définies.  
   
 ```  
@@ -76,5 +76,5 @@ Contient un ensemble d’éléments [Property](../msbuild/property-element-msbui
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence du schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)  
+ [Référence de schéma de fichier de projet](../msbuild/msbuild-project-file-schema-reference.md)  
  [Propriétés MSBuild](msbuild-properties1.md)

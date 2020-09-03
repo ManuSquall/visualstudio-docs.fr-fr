@@ -1,5 +1,5 @@
 ---
-title: 'Zone de test 4 : Archiver | Microsoft Docs'
+title: 'Zone de test 4 : archiver | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,61 +12,61 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 738b2608d5afa188cad38d92ed613307d2919ca0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155958"
 ---
 # <a name="test-area-4-check-in"></a>Zone de test 4 : Archiver
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Cette zone de test plug-in de contrôle de code source couvre l’envoi des éléments mis à jour à la banque des versions via le **archiver** commande.  
+Cette zone de test du plug-in de contrôle de code source traite de l’envoi d’éléments mis à jour à la Banque des versions via la commande **Archiver** .  
   
-## <a name="command-menu-access"></a>Accès au Menu de commande  
- Ce qui suit [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] menu chemins d’environnement de développement intégré sont utilisés dans les cas de test.  
+## <a name="command-menu-access"></a>Accès au menu commande  
+ Les [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] chemins d’accès au menu de l’environnement de développement intégré suivants sont utilisés dans les cas de test.  
   
-##### <a name="check-in"></a>Date d'arrivée :  
- **Fichier**, **contrôle de code Source**, **archiver**.  
+##### <a name="check-in"></a>Enregistrer :  
+ **Fichier**, **contrôle de code source**, **Archiver**.  
   
- **Fichier**, **archiver**.  
+ **Fichier**, **Archiver**.  
   
- Menu contextuel, **archiver**.  
+ Menu contextuel, **Archiver**.  
   
-## <a name="common-expected-behavior"></a>Comportement attendu commun  
+## <a name="common-expected-behavior"></a>Comportement attendu courant  
   
-- Projets et fichiers ajoutés à une solution ou un projet sous contrôle de code source apparaissent dans le **archiver** boîte de dialogue et le **archivages en attente** fenêtre.  
+- Les projets et les fichiers ajoutés à une solution ou à un projet sous contrôle de code source s’affichent dans la boîte de dialogue **Archiver** et la fenêtre **archivages en attente** .  
   
 - Après l’archivage, les éléments ajoutés apparaissent dans le contrôle de code source.  
   
-- Après l’archivage, les éléments mis à jour sont correctement gérées dans le magasin.  
+- Après l’archivage, les versions des éléments mis à jour sont correctement gérées dans le magasin.  
   
 ## <a name="test-cases"></a>Cas de test  
- Cas de test spécifiques pour la zone de test d’archivage sont les suivantes :  
+ Les éléments suivants sont des cas de test spécifiques pour la zone de test d’archivage.  
   
-### <a name="case-4a-modified-items"></a>4 a case : Éléments modifiés  
- Décrit l’utilisation de la vérification en action pour mettre à jour un fichier sous contrôle de code source qui a été modifié.  
+### <a name="case-4a-modified-items"></a>Cas 4a : éléments modifiés  
+ Décrit l’utilisation de l’action archiver pour mettre à jour un fichier sous contrôle de code source qui a été modifié.  
   
-|Action|Étapes de test|Résultats attendus pour vérifier|  
+|Action|Étapes de test|Résultats attendus à vérifier|  
 |------------|----------------|--------------------------------|  
-|Modifier un fichier texte qui a été extrait, archivez le fichier uniquement (**archiver** boîte de dialogue)|1.  Créer un nouveau projet avec un fichier texte.<br />2.  Ajouter la solution au contrôle de code source.<br />3.  Extraire et modifier le fichier texte.<br />4.  Archiver via la boîte de dialogue Archiver (**fichier**, **contrôle de code Source**, **archiver**).|Comportement attendu commun.|  
-|Modifier un fichier texte qui a été extrait, archivez le fichier uniquement (**archivages en attente** fenêtre)|1.  Créer un nouveau projet avec un fichier texte.<br />2.  Ajouter la solution au contrôle de code source.<br />3.  Extraire et modifier le fichier texte.<br />4.  Archiver le **archivages en attente** fenêtre.|Comportement attendu commun.|  
+|Modifier un fichier texte qui a été extrait, archiver uniquement un fichier (boîte**de dialogue Archiver** )|1. Créez un projet avec un fichier texte.<br />2. Ajoutez la solution au contrôle de code source.<br />3. extraire et modifier le fichier texte.<br />4. archiver via la boîte de dialogue Archiver (**fichier**, **contrôle de code source**, **Archiver**).|Comportement attendu courant.|  
+|Modifier un fichier texte qui a été extrait, archiver uniquement un fichier (fenêtre**archivages en attente** )|1. Créez un projet avec un fichier texte.<br />2. Ajoutez la solution au contrôle de code source.<br />3. extraire et modifier le fichier texte.<br />4. archiver via la fenêtre **archivages en attente** .|Comportement attendu courant.|  
   
-### <a name="case-4b-adding-files"></a>4 b de cas : Ajout de fichiers  
- Lorsque vous ajoutez un fichier à un projet ou un élément à une solution, le projet ou la solution doit également changer. Par conséquent, le fichier parent est également extrait et doit être archivé pour terminer l’ajout.  
+### <a name="case-4b-adding-files"></a>Cas 4b : ajout de fichiers  
+ Lorsque vous ajoutez un fichier à un projet ou à un élément dans une solution, le projet ou la solution doit également changer. Par conséquent, le fichier parent est également extrait et doit être archivé pour terminer l’addition.  
   
-|Action|Étapes de test|Résultats attendus pour vérifier|  
+|Action|Étapes de test|Résultats attendus à vérifier|  
 |------------|----------------|--------------------------------|  
-|Ajoutez un fichier texte et tout archiver (**archiver** boîte de dialogue)|1.  Créer un nouveau projet.<br />2.  Ajouter la solution au contrôle de code source.<br />3.  Ajoutez un fichier texte au projet.<br />4.  Accepter l’extraction du projet si vous y êtes invité.<br />5.  Sélectionnez la solution dans **l’Explorateur de solutions**.<br />6.  Archiver depuis le **archiver** boîte de dialogue.|Comportement attendu commun.|  
-|Ajoutez un fichier texte et tout archiver (**archivages en attente** fenêtre)|1.  Créer un nouveau projet.<br />2.  Ajouter la solution au contrôle de code source.<br />3.  Ajoutez un fichier texte au projet.<br />4.  Accepter l’extraction du projet si vous y êtes invité.<br />5.  Archiver la solution à partir de **archivages en attente** fenêtre.|Comportement attendu commun|  
+|Ajouter un fichier texte et archiver tout (boîte**de dialogue Archiver** )|1. Créez un nouveau projet.<br />2. Ajoutez la solution au contrôle de code source.<br />3. Ajoutez un fichier texte au projet.<br />4. acceptez l’extraction du projet si vous y êtes invité.<br />5. Sélectionnez la solution dans **Explorateur de solutions**.<br />6. archiver dans la boîte de dialogue **Archiver** .|Comportement attendu courant.|  
+|Ajouter un fichier texte et archiver tout (fenêtre**archivages en attente** )|1. Créez un nouveau projet.<br />2. Ajoutez la solution au contrôle de code source.<br />3. Ajoutez un fichier texte au projet.<br />4. acceptez l’extraction du projet si vous y êtes invité.<br />5. archiver la solution à partir de la fenêtre **archivages en attente** .|Comportement attendu courant|  
   
-### <a name="case-4c-adding-projects"></a>Cas 4c : Ajout de projets  
+### <a name="case-4c-adding-projects"></a>Cas 4C : ajout de projets  
  Lorsque vous ajoutez un projet à une solution, la solution doit également changer. Par conséquent, le fichier solution est également extrait et doit être archivé pour terminer l’ajout.  
   
-|Action|Étapes de test|Résultats attendus pour vérifier|  
+|Action|Étapes de test|Résultats attendus à vérifier|  
 |------------|----------------|--------------------------------|  
-|Ajouter un projet à une solution vide sous contrôle de code source (**archiver** boîte de dialogue)|1.  Créer une solution vide.<br />2.  Ajouter la solution au contrôle de code source.<br />3.  Ajouter un nouveau projet.<br />4.  Accepter l’extraction de la solution si vous y êtes invité.<br />5.  Archiver depuis le **archiver** boîte de dialogue.|Comportement attendu commun.|  
-|Ajouter un projet à une solution vide sous contrôle de code source (**archivages en attente** fenêtre)|1.  Créer une solution vide.<br />2.  Ajouter la solution au contrôle de code source.<br />3.  Ajouter un nouveau projet.<br />4.  Accepter l’extraction de la solution si vous y êtes invité.<br />5.  Archiver la solution à partir de **archivages en attente** fenêtre.|Comportement attendu commun.|  
+|Ajouter un projet à une solution vide sous contrôle de code source (boîte**de dialogue Archiver** )|1. Créez une solution vide.<br />2. Ajoutez la solution au contrôle de code source.<br />3. Ajoutez un nouveau projet.<br />4. acceptez l’extraction de la solution si vous y êtes invité.<br />5. archiver dans la boîte de dialogue **Archiver** .|Comportement attendu courant.|  
+|Ajouter un projet à une solution vide sous contrôle de code source (fenêtre**archivages en attente** )|1. Créez une solution vide.<br />2. Ajoutez la solution au contrôle de code source.<br />3. Ajoutez un nouveau projet.<br />4. acceptez l’extraction de la solution si vous y êtes invité.<br />5. archiver la solution à partir de la fenêtre **archivages en attente** .|Comportement attendu courant.|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Guide de test pour les plug-ins de contrôle de code source](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

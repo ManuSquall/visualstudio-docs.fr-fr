@@ -1,5 +1,5 @@
 ---
-title: 'Erreur : Site utilise l’adresse IP | Microsoft Docs'
+title: 'Erreur : le site utilise l’adresse IP | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,13 +19,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 46eace1c566a2810c5914a49654f8393f425fdee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155753"
 ---
-# <a name="error-site-uses-ip-address"></a>Erreur : le site utilise l’adresse IP
+# <a name="error-site-uses-ip-address"></a>Erreur : le site utilise l'adresse IP
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette erreur se produit lorsque le débogueur essaie de s'auto-attacher à une application Web qui utilise une adresse IP. C’est le cas si vous transformez **Identification de site web** en **Utiliser une adresse IP spécifique** dans IIS.  
@@ -36,9 +36,9 @@ Cette erreur se produit lorsque le débogueur essaie de s'auto-attacher à une a
   
 1. Utilisez plutôt la procédure d’attachement manuel (dans le menu Déboguer, choisissez **Attacher au processus**).  
   
-     - ou -  
+     Ou  
   
 2. Modifiez le paramètre **Identification de site web d’IIS**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Débogage d’applications web : erreurs et dépannage](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+ [Débogage d'applications Web : erreurs et dépannage](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: b3b8a67d1b01d7f3a3ada7b391423676b9294e8d
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85286302"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Procédure pas à pas : écriture d’un visualiseur en C\#
@@ -56,7 +56,7 @@ Suivez les étapes ci-dessous pour créer un visualiseur.
 2. Remplacez le nom Class1.cs par un nom explicite, tel que DebuggerSide.cs.
 
    > [!NOTE]
-   > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]modifie automatiquement la déclaration de classe dans DebuggerSide.cs pour qu’elle corresponde au nouveau nom de fichier.
+   > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] modifie automatiquement la déclaration de classe dans DebuggerSide.cs pour qu’elle corresponde au nouveau nom de fichier.
 
 3. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur **références** , puis choisissez **Ajouter une référence** dans le menu contextuel.
 
@@ -206,7 +206,7 @@ Dans le code côté débogueur, vous spécifiez le type à visualiser (la source
 2. Modifiez le nom de Program.cs pour qu’il soit plus explicite, par exemple TestConsole.cs.
 
     > [!NOTE]
-    > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]modifie automatiquement la déclaration de classe dans TestConsole.cs pour qu’elle corresponde au nouveau nom de fichier.
+    > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] modifie automatiquement la déclaration de classe dans TestConsole.cs pour qu’elle corresponde au nouveau nom de fichier.
 
 3. Dans TestConsole.cs, ajoutez le code suivant aux `using` directives :
 
@@ -231,7 +231,7 @@ Dans le code côté débogueur, vous spécifiez le type à visualiser (la source
 
     L’application console démarre et le visualiseur apparaît et affiche la chaîne « Hello, World ».
 
-   Félicitations ! Vous venez de générer et de tester votre premier visualiseur.
+   Félicitations. Vous venez de générer et de tester votre premier visualiseur.
 
    Pour utiliser votre visualiseur dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] au lieu de simplement l'appeler de l'atelier de test, vous devez l'installer. Pour plus d’informations, consultez [Comment : installer un visualiseur](../debugger/how-to-install-a-visualizer.md).
 

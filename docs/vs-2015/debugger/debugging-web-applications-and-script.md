@@ -1,5 +1,5 @@
 ---
-title: Débogage des Applications Web et scripts | Microsoft Docs
+title: Débogage d’applications et de scripts Web | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -23,10 +23,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4ca10653fd177826e2b236d432c685535993fbba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155904"
 ---
 # <a name="debugging-web-applications-and-script"></a>Débogage d'applications et de scripts Web
@@ -34,20 +34,20 @@ ms.locfileid: "68155904"
 
 Légende du tableau :  
   
- Cette section décrit des techniques de débogage courantes pour les applications Web. Pour plus d’informations, consultez [principes fondamentaux du débogueur](../debugger/debugger-basics.md).  
+ Cette section décrit des techniques de débogage courantes pour les applications Web. Pour plus d’informations, consultez [concepts de base du débogueur](../debugger/debugger-basics.md).  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Débogage d’applications ASP.NET et AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)  
  Fournit les conditions préalables et les instructions nécessaires pour déboguer une application [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] pendant le développement ou après le déploiement.  
   
- [Débogage d’applications web : erreurs et dépannage](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
+ [Débogage d'applications Web : erreurs et dépannage](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
  Répertorie les erreurs que vous pouvez rencontrer lors du débogage d'applications Web, et suggère des correctifs.  
   
- [Procédure pas à pas : Débogage d'une application parallèle](../debugger/walkthrough-debugging-a-parallel-application.md)  
+ [Procédure pas à pas : débogage d’une application parallèle](../debugger/walkthrough-debugging-a-parallel-application.md)  
  Explique comment utiliser les fenêtres **Tâches parallèles** et **Piles parallèles** pour déboguer une application parallèle.  
   
-## <a name="related-sections"></a>Rubriques connexes  
- [Applications web ASP.NET](../debugger/debugging-preparation-aspnet-web-applications.md)  
+## <a name="related-sections"></a>Sections connexes  
+ [Applications Web ASP.NET](../debugger/debugging-preparation-aspnet-web-applications.md)  
  Décrit les paramètres de projet par défaut et le comportement des projets d'application Web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], les étapes du débogage et la modification de la configuration Debug par défaut.  
   
  [Débogage dans Visual Studio](../debugger/debugging-in-visual-studio.md)  
