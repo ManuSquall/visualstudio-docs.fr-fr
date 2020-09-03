@@ -1,5 +1,5 @@
 ---
-title: 'Étape 3 : ajouter un temporisateur'
+title: 'Étape 3 : Ajouter un temporisateur'
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -14,18 +14,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6ca2dce7f6f9ddc484b67f250f34d69747c6e46e
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77579874"
 ---
-# <a name="step-3-add-a-countdown-timer"></a>Étape 3 : ajouter un temporisateur
+# <a name="step-3-add-a-countdown-timer"></a>Étape 3 : Ajouter un temporisateur
 
 Dans la troisième partie de ce didacticiel, vous allez ajouter un temporisateur pour suivre le nombre de secondes restantes avant la fin du temps imparti à la personne interrogée.
 
 > [!NOTE]
-> Cette rubrique fait partie d'une série de didacticiels sur les concepts de codage de base. Pour un aperçu du tutoriel, voir [Tutorial 2: Créer un quiz de mathématiques chronométrés](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Cette rubrique fait partie d'une série de didacticiels sur les concepts de codage de base. Pour obtenir une vue d’ensemble du didacticiel, consultez [didacticiel 2 : créer un questionnaire mathématique chronométré](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 ## <a name="to-add-a-countdown-timer"></a>Pour ajouter un temporisateur
 
@@ -62,7 +62,7 @@ Dans la troisième partie de ce didacticiel, vous allez ajouter un temporisateur
      Vous venez d'ajouter une instruction `if else` qui permet à vos programmes de prendre des décisions. Une instruction `if else` se présente comme suit.
 
     > [!NOTE]
-    > L’exemple suivant est pour la démonstration seulement - ne l’ajoutez pas à votre projet.
+    > L’exemple suivant est uniquement destiné à la démonstration : ne l’ajoutez pas à votre projet.
 
     ```vb
     If (something that your program will check) Then
@@ -112,6 +112,6 @@ Dans la troisième partie de ce didacticiel, vous allez ajouter un temporisateur
 
 ## <a name="to-continue-or-review"></a>Pour continuer ou examiner
 
-- Pour passer à l’étape suivante tutoriel, voir **[Étape 4: Ajouter la méthode CheckTheAnswer ()](../ide/step-4-add-the-checktheanswer-parens-method.md)**.
+- Pour passer à l’étape suivante du didacticiel, consultez **[étape 4 : ajouter la méthode méthode CheckTheAnswer ()](../ide/step-4-add-the-checktheanswer-parens-method.md)**.
 
 - Pour revenir à l’étape précédente du tutoriel, consultez [Étape 2 : créer un problème d’addition aléatoire](../ide/step-2-create-a-random-addition-problem.md).

@@ -1,5 +1,5 @@
 ---
-title: 'Étape 2 : Créer votre première application Web ASP.NET'
+title: 'Étape 2 : création de votre première ASP.NET Core application Web'
 description: Créez votre première application web ASP.NET Core avec ce tutoriel vidéo et des instructions détaillées.
 ms.custom: get-started
 ms.date: 03/31/2019
@@ -17,13 +17,13 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: 1d382e83aa9672cfdcbdca64b89be79d090f2aac
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77580076"
 ---
-# <a name="step-2-create-your-first-aspnet-core-web-app"></a>Étape 2 : Créez votre première application web ASP.NET Core
+# <a name="step-2-create-your-first-aspnet-core-web-app"></a>Étape 2 : créer votre première ASP.NET Core application Web
 
 Créez votre première application web ASP.NET Core avec ce tutoriel vidéo et des instructions détaillées.
 
@@ -33,12 +33,12 @@ _Regardez cette vidéo et suivez la procédure pour créer votre première appli
 
 ## <a name="start-visual-studio-2019-and-create-a-new-project"></a>Démarrer Visual Studio 2019 et créer un projet
 
-Démarrez Visual Studio 2019 et cliquez sur **Créer un projet**. Choisissez **Application web ASP.NET Core**. Choisissez le modèle **Application web** et gardez le nom et l’emplacement par défaut du projet. Dans le dropdown avec la version ASP.NET Core, choisissez **ASP.NET Core 2.1** ou **ASP.NET Core 2.2**. Cliquez sur **Créer**. Pour obtenir des instructions plus précises, reportez-vous à [la vidéo précédente de cette série de tutoriels](tutorial-aspnet-core-ef-step-01.md).
+Démarrez Visual Studio 2019 et cliquez sur **Créer un projet**. Choisissez **Application web ASP.NET Core**. Choisissez le modèle **Application web** et gardez le nom et l’emplacement par défaut du projet. Dans la liste déroulante avec la version de ASP.NET Core, choisissez **ASP.NET Core 2,1** ou **ASP.net Core 2,2**. Cliquez sur **Créer**. Pour obtenir des instructions plus précises, reportez-vous à [la vidéo précédente de cette série de tutoriels](tutorial-aspnet-core-ef-step-01.md).
 
 ![Visual Studio 2019 – Choisir les options de projet ASP.NET Core](media/vs-2019/vs2019-choose-aspnetcore-project.png)
 
 > [!WARNING]
-> Assurez-vous de choisir ASP .NET Core 2.1 ou ASP.NET Core 2.2. Ce tutoriel n’est pas compatible avec ASP.NET Core 3.x.
+> Veillez à choisir ASP .NET Core 2,1 ou ASP.NET Core 2,2. Ce didacticiel n’est pas compatible avec ASP.NET Core 3. x.
 
 ## <a name="explore-the-new-project"></a>Explorer le nouveau projet
 
@@ -68,11 +68,11 @@ L’hôte web créé dans *Program.cs* fait référence à la classe Startup et 
 
 ### <a name="indexcshtml"></a>Index.cshtml
 
-La page d’accueil du site inclut des balises HTML et du code Razor côté serveur. Elle utilise Razor pour spécifier le modèle de page, `IndexModel`, qui se trouve dans le fichier *Index.cshtml.cs* associé. Elle définit également le titre de la page en définissant une valeur dans ViewData. Cette valeur ViewData est lue dans le * \_fichier Layout.cshtml,* situé dans le dossier partagé à l’intérieur du dossier Pages. Le fichier Layout est partagé par de nombreuses Razor Pages et fournit l’aspect commun de l’application. Le contenu de chaque page est rendu dans le code HTML du fichier Layout.
+La page d’accueil du site inclut des balises HTML et du code Razor côté serveur. Elle utilise Razor pour spécifier le modèle de page, `IndexModel`, qui se trouve dans le fichier *Index.cshtml.cs* associé. Elle définit également le titre de la page en définissant une valeur dans ViewData. Cette valeur ViewData est lue dans le fichier * \_ Layout. cshtml* , situé dans le dossier partagé à l’intérieur du dossier pages. Le fichier Layout est partagé par de nombreuses Razor Pages et fournit l’aspect commun de l’application. Le contenu de chaque page est rendu dans le code HTML du fichier Layout.
 
-## <a name="run-the-application"></a>Exécuter l’application
+## <a name="run-the-application"></a>Exécution de l'application
 
-Exécutez à présent l’application pour la voir dans le navigateur. Vous pouvez exécuter l’application à l’aide **de Ctrl**+**F5** ou en choisissant **Debug** > **Start Without Debugging** dans le menu de Visual Studio.
+Exécutez à présent l’application pour la voir dans le navigateur. Vous pouvez exécuter l’application à l’aide de la **touche Ctrl** + **F5** ou en choisissant **Déboguer**exécuter  >  **sans débogage** dans le menu de Visual Studio.
 
 ## <a name="customize-the-application"></a>Personnaliser l’application
 
@@ -124,8 +124,8 @@ Vous devez maintenant voir l’heure réelle du serveur dans le navigateur quand
 
 Dans la vidéo suivante, vous allez apprendre à ajouter la prise en charge de données à votre application.
 
-[Tutorial: Travailler avec des données dans votre application de base ASP.NET](tutorial-aspnet-core-ef-step-03.md)
+[Didacticiel : utilisation des données dans votre application ASP.NET Core](tutorial-aspnet-core-ef-step-03.md)
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Tutorial: Créer une application Web Razor Pages avec ASP.NET Core](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)
+- [Didacticiel : créer une application Web Razor Pages avec ASP.NET Core](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)

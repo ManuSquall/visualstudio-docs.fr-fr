@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 24e9d76e959c0c05abe3ac48f5c4d43afecec47a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532728"
 ---
 # <a name="function-details-view"></a>Vue Informations relatives à la fonction
@@ -75,7 +75,7 @@ La fenêtre **Vue Informations relatives à la fonction** affiche les informatio
   
 |Colonne|Description|  
 |------------|-----------------|  
-|**Exclusive**|-   Part de la métrique de performances qui s’est produite dans l’exécution du corps de la fonction.|  
+|**Exclusif**|-   Part de la métrique de performances qui s’est produite dans l’exécution du corps de la fonction.|  
 |**Dans les appels**|-   Part de la métrique de performances qui s’est produite dans des fonctions appelées par la fonction sélectionnée.|  
 |**Inclusive Total**|-   Total des valeurs **Exclusif** et **Dans les appels**.|  
   

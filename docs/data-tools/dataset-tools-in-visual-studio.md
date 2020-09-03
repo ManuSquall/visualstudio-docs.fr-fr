@@ -48,10 +48,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: cb41a4e3e4ed1c0032c579779a18c7df0bc22477
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586716"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Outils de dataset dans Visual Studio
@@ -59,11 +59,11 @@ ms.locfileid: "75586716"
 > [!NOTE]
 > Les jeux de données et les classes associées sont des technologies .NET héritées des 2000 premières versions qui permettent aux applications d’utiliser des données en mémoire alors que les applications sont déconnectées de la base de données. Ils sont particulièrement utiles pour les applications qui permettent aux utilisateurs de modifier des données et de conserver les modifications dans la base de données. Bien que les jeux de données aient prouvé qu’il s’agit d’une technologie très performante, nous recommandons que les nouvelles applications .NET utilisent Entity Framework. Entity Framework offre un moyen plus naturel de travailler avec des données tabulaires en tant que modèles objet, et il dispose d’une interface de programmation plus simple.
 
-Un objet `DataSet` est un objet en mémoire qui est essentiellement une mini-base de données. Il contient des objets `DataTable`, `DataColumn`et `DataRow` dans lesquels vous pouvez stocker et modifier des données à partir d’une ou plusieurs bases de données sans avoir à maintenir une connexion ouverte. Le DataSet conserve des informations sur les modifications apportées à ses données, de sorte que les mises à jour peuvent être suivies et renvoyées à la base de données lorsque votre application est reconnectée.
+Un `DataSet` objet est un objet en mémoire qui est essentiellement une mini-base de données. Il contient `DataTable` des `DataColumn` objets, et `DataRow` dans lesquels vous pouvez stocker et modifier des données à partir d’une ou plusieurs bases de données sans avoir à maintenir une connexion ouverte. Le DataSet conserve des informations sur les modifications apportées à ses données, de sorte que les mises à jour peuvent être suivies et renvoyées à la base de données lorsque votre application est reconnectée.
 
-Les jeux de données et les classes associées sont définis dans l’espace de noms <xref:System.Data?displayProperty=fullName> dans l’API .NET. Vous pouvez créer et modifier dynamiquement des datasets dans le code à l’aide de ADO.NET. La documentation de cette section montre comment utiliser des jeux de données à l’aide de concepteurs Visual Studio. Les jeux de données créés par le biais de concepteurs utilisent des objets **TableAdapter** pour interagir avec la base de données. Les jeux de données créés par programmation utilisent des objets **DataAdapter** . Pour plus d’informations sur la création de jeux de données par programme, consultez [DataAdapters et DataReaders](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
+Les jeux de données et les classes associées sont définis dans l' <xref:System.Data?displayProperty=fullName> espace de noms de l’API .net. Vous pouvez créer et modifier dynamiquement des datasets dans le code à l’aide de ADO.NET. La documentation de cette section montre comment utiliser des jeux de données à l’aide de concepteurs Visual Studio. Les jeux de données créés par le biais de concepteurs utilisent des objets **TableAdapter** pour interagir avec la base de données. Les jeux de données créés par programmation utilisent des objets **DataAdapter** . Pour plus d’informations sur la création de jeux de données par programme, consultez [DataAdapters et DataReaders](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
 
-Si votre application doit uniquement lire les données d’une base de données et ne pas effectuer de mises à jour, d’ajouts ou de suppressions, vous pouvez généralement obtenir de meilleures performances en utilisant un objet `DataReader` pour récupérer des données dans un objet `List` générique ou un autre objet collection. Si vous affichez les données, vous pouvez lier l’interface utilisateur à la collection.
+Si votre application doit uniquement lire les données d’une base de données et ne pas effectuer de mises à jour, d’ajouts ou de suppressions, vous pouvez généralement obtenir de meilleures performances en utilisant un `DataReader` objet pour récupérer des données dans un `List` objet générique ou un autre objet de collection. Si vous affichez les données, vous pouvez lier l’interface utilisateur à la collection.
 
 ## <a name="dataset-workflow"></a>Flux de travail du DataSet
 
@@ -73,7 +73,7 @@ Visual Studio fournit des outils permettant de simplifier l’utilisation des je
 
 - Spécifiez les relations entre les tables afin que les clés étrangères soient gérées correctement. Pour plus d’informations, consultez [remplir des jeux de données à l’aide de TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md).
 
-- Utilisez l' **Assistant Configuration de TableAdapter** pour spécifier la requête ou la procédure stockée qui remplit le DataSet, ainsi que les opérations de base de données (mise à jour, suppression, etc.) à implémenter. Pour plus d'informations, voir ces rubriques :
+- Utilisez l' **Assistant Configuration de TableAdapter** pour spécifier la requête ou la procédure stockée qui remplit le DataSet, ainsi que les opérations de base de données (mise à jour, suppression, etc.) à implémenter. Pour plus d’informations, consultez les rubriques suivantes :
 
   - [Remplir des datasets à l’aide de TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)
 
@@ -83,7 +83,7 @@ Visual Studio fournit des outils permettant de simplifier l’utilisation des je
 
   - [Enregistrer les données dans la base de données](../data-tools/save-data-back-to-the-database.md)
 
-- Interrogez et recherchez les données dans le DataSet. Pour plus d’informations, consultez [requêtes datasets](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)] active [LINQ (Language-Integrated Query) sur les](/dotnet/csharp/linq/) données dans un objet <xref:System.Data.DataSet>. Pour plus d’informations, [consultez LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).
+- Interrogez et recherchez les données dans le DataSet. Pour plus d’informations, consultez [requêtes datasets](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)] active [LINQ (Language-Integrated Query) sur les](/dotnet/csharp/linq/) données dans un <xref:System.Data.DataSet> objet. Pour plus d’informations, [consultez LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).
 
 - Utilisez la fenêtre **sources de données** pour lier des contrôles d’interface utilisateur au DataSet ou à ses colonnes individuelles, et pour spécifier les colonnes qui peuvent être modifiées par l’utilisateur. Pour plus d’informations, consultez [lier des contrôles à des données dans Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).
 

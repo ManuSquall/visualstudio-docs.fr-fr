@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b94ab61f56d74537758c189adc9c104516f67f92
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905054"
 ---
 # <a name="walkthrough-create-a-margin-glyph"></a>Procédure pas à pas : créer un glyphe de marge
@@ -53,7 +53,7 @@ Vous pouvez personnaliser l’apparence des marges de l’éditeur à l’aide d
      [!code-csharp[VSSDKTodoGlyphTest#3](../extensibility/codesnippet/CSharp/walkthrough-creating-a-margin-glyph_3.cs)]
      [!code-vb[VSSDKTodoGlyphTest#3](../extensibility/codesnippet/VisualBasic/walkthrough-creating-a-margin-glyph_3.vb)]
 
-5. Implémentez `GenerateGlyph` en définissant l’élément d’interface utilisateur du glyphe. `TodoTag`est défini plus loin dans cette procédure pas à pas.
+5. Implémentez `GenerateGlyph` en définissant l’élément d’interface utilisateur du glyphe. `TodoTag` est défini plus loin dans cette procédure pas à pas.
 
      [!code-csharp[VSSDKTodoGlyphTest#4](../extensibility/codesnippet/CSharp/walkthrough-creating-a-margin-glyph_4.cs)]
      [!code-vb[VSSDKTodoGlyphTest#4](../extensibility/codesnippet/VisualBasic/walkthrough-creating-a-margin-glyph_4.vb)]

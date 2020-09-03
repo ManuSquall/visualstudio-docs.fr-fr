@@ -10,10 +10,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9639da1f735095f6d04a59d1f2302f822423e006
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77557676"
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Comment : inclure les composants requis avec une application ClickOnce
@@ -24,7 +24,7 @@ Avant de distribuer les logiciels requis avec une application [!INCLUDE[ndpteccl
 > [!NOTE]
 > Pour ajouter un package d’installation pour le .NET Framework, consultez [Guide de déploiement .NET Framework pour les développeurs](/dotnet/framework/deployment/deployment-guide-for-developers).  
   
-## <a name="Package"></a> Pour ajouter un package d’installation à l’aide de Package.xml  
+## <a name="to-add-an-installer-package-by-using-packagexml"></a><a name="Package"></a> Pour ajouter un package d’installation à l’aide de Package.xml  
   
 1. Dans l’Explorateur de fichiers, ouvrez le dossier **Packages**.  
   
@@ -34,10 +34,10 @@ Avant de distribuer les logiciels requis avec une application [!INCLUDE[ndpteccl
   
 3. Dans le Bloc-notes, ouvrez le fichier **Package.xml**.  
   
-4. Localisez l’élément **Name** qui contient `http://go.microsoft.com/fwlink`, puis copiez l’URL. Incluez la partie **LinkID**.  
+4. Localisez l’élément **Name** qui contient `http://go.microsoft.com/fwlink` et copiez l’URL. Incluez la partie **LinkID**.  
   
     > [!NOTE]
-    > Si aucun élément **Name** ne contient `http://go.microsoft.com/fwlink`, ouvrez le fichier **Product. xml** dans le dossier racine pour le composant requis et recherchez la chaîne **fwlink** .  
+    > Si aucun élément **Name** ne contient `http://go.microsoft.com/fwlink` , ouvrez le fichier **Product.xml** dans le dossier racine pour le composant requis et recherchez la chaîne **fwlink** .  
   
     > [!IMPORTANT]
     > Certains composants requis ont plusieurs packages d'installation (par exemple, pour les systèmes 32 bits ou 64 bits). Si plusieurs éléments **Name** contiennent **fwlink**, vous devez répéter les étapes restantes pour chacun d’entre eux.  
@@ -53,4 +53,4 @@ Avant de distribuer les logiciels requis avec une application [!INCLUDE[ndpteccl
      Vous pouvez maintenant distribuer le package d'installation avec votre application.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour installer des composants prérequis avec une application ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
+ [Comment : installer les composants requis avec une application ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)

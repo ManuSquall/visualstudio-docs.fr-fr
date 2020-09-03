@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - aspnet
 ms.openlocfilehash: 0871be57934b8a970efbca413fae4d1e3d90a625
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74772131"
 ---
 # <a name="profile-aspnet-load-tests"></a>Profiler des tests de charge ASP.NET
@@ -26,5 +26,5 @@ Vous pouvez collecter les données de profilage à partir de tests web [!INCLUDE
 ## <a name="see-also"></a>Voir aussi
 - [Comprendre le fonctionnement des valeurs de données d’échantillonnage](../profiling/understanding-sampling-data-values.md)
 - [Utiliser des règles de performance pour analyser des données](../profiling/using-performance-rules-to-analyze-data.md)
-- [Vues de données sur les méthodes d’échantillonnage](../profiling/profiler-sampling-method-data-views.md)
-- [Vue des interactions de niveau](../profiling/tier-interactions-view.md)
+- [Vues de données de la méthode d’échantillonnage](../profiling/profiler-sampling-method-data-views.md)
+- [Vue interactions de couche](../profiling/tier-interactions-view.md)

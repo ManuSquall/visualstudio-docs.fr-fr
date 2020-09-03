@@ -1,5 +1,5 @@
 ---
-title: IDebugModule3::IsUserCode ( Microsoft Docs
+title: 'IDebugModule3 :: IsUserCode | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 435ec50ef5437e5aca5d3722a2041115882d15f2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726833"
 ---
 # <a name="idebugmodule3isusercode"></a>IDebugModule3::IsUserCode
-Récupère des informations sur la question de savoir si le module représente ou non le code utilisateur.
+Récupère des informations indiquant si le module représente ou non le code utilisateur.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,10 +41,10 @@ int IsUserCode(
 
 ## <a name="parameters"></a>Paramètres
 `pfUser`\
-[out] Nonzero`TRUE`( ) si le module`FALSE`représente le code utilisateur, zéro ( ) si ce n’est pas le cas.
+à Différent de zéro ( `TRUE` ) si le module représente le code utilisateur, zéro ( `FALSE` ) si ce n’est pas le cas.
 
-## <a name="return-value"></a>Valeur de retour
- En cas `S_OK`de succès, les retours; autrement, renvoie le code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` ; sinon, retourne le code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)

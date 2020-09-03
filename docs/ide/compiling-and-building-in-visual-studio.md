@@ -13,22 +13,22 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8b5f00b3e71f0deb15d6266640db39751f2ae22f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76269105"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Compiler et générer dans Visual Studio
 
-Pour une première introduction à la construction au sein de l’IDE, voir [Procédure pas à pas: Construire une application](walkthrough-building-an-application.md).
+Pour une première présentation de la génération dans l’IDE, consultez [procédure pas à pas : génération d’une application](walkthrough-building-an-application.md).
 
 Il existe plusieurs méthodes permettant de générer une application : l’environnement IDE Visual Studio, les outils en ligne de commande de MSBuild et Azure Pipelines :
 
 | Méthode de génération | Avantages |
 | --- |--- | --- |
 | IDE |- Créer des builds immédiatement et les tester dans un débogueur.<br />- Exécuter des builds multiprocesseurs pour des projets C++ et C#.<br />- Personnaliser différents aspects du système de génération. |
-| CMake | - Construire des projets à l’aide de l’outil CMake<br />- Utilisez le même système de construction sur les plates-formes Linux et Windows. |
+| CMake | -Générer des projets à l’aide de l’outil CMake<br />-Utilisez le même système de génération sur les plateformes Linux et Windows. |
 | Ligne de commande MSBuild| - Générer des projets sans installer Visual Studio.<br />- Exécuter des builds multiprocesseurs pour tous les types de projets.<br />- Personnaliser la plupart des éléments du système de génération.|
 | Azure Pipelines | - Automatiser votre processus de génération dans un pipeline d’intégration continue/de livraison continue.<br />- Appliquer des tests automatisés avec chaque build.<br />- Utiliser des ressources cloud virtuellement illimitées pour les processus de génération.<br />- Modifier le flux de travail de la génération et créer des activités de génération pour effectuer des tâches fortement personnalisées.|
 
@@ -41,20 +41,20 @@ La documentation de cette section contient plus de détails sur le processus de 
 
 Quand vous créez un projet, Visual Studio crée des configurations de build par défaut pour le projet et la solution qui contient le projet.  Ces configurations définissent comment les solutions et les projets sont générés et déployés. En particulier, les configurations de projet sont uniques pour une plateforme cible (comme Windows ou Linux) et un type de build (comme Debug ou Release) donnés. Vous pouvez modifier ces configurations comme vous le souhaitez et aussi créer vos propres configurations selon vos besoins.
 
-Pour une première introduction à la construction au sein de l’IDE, voir [Procédure pas à pas: Construire une application](walkthrough-building-an-application.md).
+Pour une première présentation de la génération dans l’IDE, consultez [procédure pas à pas : génération d’une application](walkthrough-building-an-application.md).
 
 Consultez ensuite [Génération et nettoyage des solutions et de projets dans Visual Studio](building-and-cleaning-projects-and-solutions-in-visual-studio.md) pour en savoir plus sur les personnalisations des différents aspects que vous pouvez apporter au processus. Les personnalisations portent notamment sur le [changement des répertoires de sortie](how-to-change-the-build-output-directory.md), la [spécification d’événements de build personnalisés](specifying-custom-build-events-in-visual-studio.md), la [gestion des dépendances du projet](how-to-create-and-remove-project-dependencies.md), la [gestion des fichiers journaux de génération](how-to-view-save-and-configure-build-log-files.md) et la [suppression des avertissements du compilateur](how-to-suppress-compiler-warnings.md).
 
 À partir de là, vous pouvez explorer différentes autres tâches :
 - [Présentation des configurations de build](understanding-build-configurations.md)
 - [Présentation des plateformes de build](understanding-build-platforms.md)
-- [Gérer les propriétés du projet et des solutions.](managing-project-and-solution-properties.md)
+- [Gérer les propriétés de projet et de solution](managing-project-and-solution-properties.md).
 - Spécification des événements de build dans [C#](how-to-specify-build-events-csharp.md) et [Visual Basic](how-to-specify-build-events-visual-basic.md).
 - [Définition des options de génération](reference/options-dialog-box-projects-and-solutions-build-and-run.md)
-- [Construire plusieurs projets en parallèle](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md).
+- [Générez plusieurs projets en parallèle](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md).
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Génération (compilation) de projets de site web](https://msdn.microsoft.com/Library/a9cbb88c-8fff-4c67-848b-98fbfd823193)
 - [Compiler et générer (Visual Studio pour Mac)](/visualstudio/mac/compiling-and-building)
-- [Projets CMake en Studio Visuel](/cpp/build/cmake-projects-in-visual-studio)
+- [Projets CMake dans Visual Studio](/cpp/build/cmake-projects-in-visual-studio)

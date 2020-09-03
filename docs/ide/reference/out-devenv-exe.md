@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cda81d37be0246c1181b4d82cbd17c3119b94437
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75568009"
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
@@ -37,17 +37,17 @@ devenv /Out FileName
 
 ## <a name="arguments"></a>Arguments
 
-- *Fichier*
+- *FileName*
 
   Obligatoire. Chemin et nom du fichier où est enregistrée la sortie au cours de la génération d’un exécutable.
 
-## <a name="remarks"></a>Notes 
+## <a name="remarks"></a>Notes
 
 Si le nom spécifié ne correspond à aucun fichier existant, le fichier est créé automatiquement. Sinon, les résultats sont ajoutés au contenu existant du fichier.
 
 Les erreurs de build en ligne de commande s’affichent dans la fenêtre **Commande** et dans la vue Générateur de solutions de la fenêtre **Sortie**. Ce commutateur est utile pour afficher les résultats des builds sans assistance.
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 
 Cet exemple exécute `MySolution` et écrit les erreurs dans le fichier `MyErrorLog.txt`.
 
@@ -60,8 +60,8 @@ devenv /run "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /out "C:\MyEr
 - [Commutateurs de ligne de commande Devenv](../../ide/reference/devenv-command-line-switches.md)
 - [/Run (devenv.exe)](../../ide/reference/run-devenv-exe.md)
 - [/RunExit (devenv.exe)](runexit-devenv-exe.md)
-- [/Mise à niveau (devenv.exe)](upgrade-devenv-exe.md)
+- [/Upgrade (devenv.exe)](upgrade-devenv-exe.md)
 - [/Clean (devenv.exe)](clean-devenv-exe.md)
 - [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)
-- [/Reconstruire (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)
-- [/Déployez (devenv.exe)](../../ide/reference/deploy-devenv-exe.md)
+- [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)
+- [/Deploy (devenv.exe)](../../ide/reference/deploy-devenv-exe.md)

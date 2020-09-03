@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2:SetMetric (fr) Microsoft Docs
+title: 'IDebugEngine2 :: SetMetric | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: caada8db1791d94e7a9632394cd4659bf8cec3a0
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730898"
 ---
 # <a name="idebugengine2setmetric"></a>IDebugEngine2::SetMetric
-Cette méthode établit une valeur de registre connue sous le nom de mesure.
+Cette méthode définit une valeur de Registre appelée métrique.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -43,16 +43,16 @@ int SetMetric(
 
 ## <a name="parameters"></a>Paramètres
 `pszMetric`\
-[dans] Le nom métrique.
+dans Nom de la mesure.
 
 `varValue`\
-[dans] Spécifie la valeur métrique.
+dans Spécifie la valeur de la métrique.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- Une mesure est une valeur de registre utilisée pour modifier le comportement d’un moteur de débogé ou pour annoncer les fonctionnalités prises en charge. Cette méthode peut transmettre l’appel à la forme appropriée des aides `SetMetric` [SDK pour la fonction Debugging,](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) .
+ Une métrique est une valeur de Registre utilisée pour modifier le comportement d’un moteur de débogage ou pour annoncer les fonctionnalités prises en charge. Cette méthode peut transférer l’appel à la forme appropriée des [applications auxiliaires du kit de développement logiciel (SDK) pour](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) la fonction de débogage `SetMetric` .
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

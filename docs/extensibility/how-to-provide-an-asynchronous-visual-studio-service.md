@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ad178bf93e49c3d695c1ebd0a5d4f6b151175953
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905740"
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Comment : fournir un service Visual Studio asynchrone
@@ -130,7 +130,7 @@ public sealed class TestAsyncPackage : AsyncPackage
     }
 
     ```
-    Pour rendre ce service visible en dehors de ce package, définissez la valeur de l’indicateur promote sur *true* comme dernier paramètre :`this.AddService(typeof(STextWriterService), CreateTextWriterService, true);`
+    Pour rendre ce service visible en dehors de ce package, définissez la valeur de l’indicateur promote sur *true* comme dernier paramètre :  `this.AddService(typeof(STextWriterService), CreateTextWriterService, true);`
 
 2. Ajoutez une référence à *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll*.
 

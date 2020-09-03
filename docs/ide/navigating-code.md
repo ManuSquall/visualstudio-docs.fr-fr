@@ -19,10 +19,10 @@ manager: tglee
 ms.workload:
 - multiple
 ms.openlocfilehash: 0216a71b675473d54aec9738ea7bdc85b7643841
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585819"
 ---
 # <a name="navigate-code"></a>Naviguer dans le code
@@ -31,7 +31,7 @@ Visual Studio propose de nombreuses manières de parcourir le code dans l’édi
 
 ## <a name="navigate-backward-and-navigate-forward-commands"></a>Commandes Naviguer vers l’arrière et Naviguer vers l’avant
 
-Vous pouvez utiliser les boutons **Navigate Backward** (**Ctrl**+**-**) et **Navigate Forward** (**Ctrl**+**Shift**+**-**) sur la barre d’outils pour déplacer le point d’insertion vers les endroits précédents, ou pour revenir à un emplacement plus récent à partir d’un emplacement précédent. Ces boutons conservent les 20 derniers emplacements du point d’insertion. Ces commandes sont également disponibles dans le menu **Afficher**, sous **Naviguer vers l’arrière** et **Naviguer vers l’avant**.
+Vous pouvez utiliser les boutons naviguer vers l' **arrière** (**CTRL** + **-** ) et naviguer vers l' **avant** (**CTRL** + **MAJ** + **-** ) de la barre d’outils pour déplacer le point d’insertion vers des emplacements précédents ou pour revenir à un emplacement plus récent à partir d’un emplacement précédent. Ces boutons conservent les 20 derniers emplacements du point d’insertion. Ces commandes sont également disponibles dans le menu **Afficher**, sous **Naviguer vers l’arrière** et **Naviguer vers l’avant**.
 
 ![Boutons de navigation Suivant et Précédent](../ide/media/vs2017_nav_buttons.png)
 
@@ -49,7 +49,7 @@ Vous pouvez naviguer dans les zones de liste déroulante comme suit :
 
 - Pour accéder directement à une procédure ou à un autre membre d’une classe, choisissez-le dans la liste déroulante de droite.
 
-- Pour passer de la fenêtre de code à la barre de navigation, appuyez sur la combinaison de clés de raccourci **Ctrl**+**F2**.
+- Pour déplacer le focus de la fenêtre de code vers la barre de navigation, appuyez sur la combinaison de touches de raccourci **CTRL** + **F2**.
 
 - Pour déplacer le focus d’une zone à l’autre dans la barre de navigation, appuyez sur la touche **Tab**.
 
@@ -57,7 +57,7 @@ Vous pouvez naviguer dans les zones de liste déroulante comme suit :
 
 - Pour ramener le focus de la barre de navigation dans le code sans sélectionner aucun élément, appuyez sur la touche **Échap**.
 
-Pour masquer la barre de navigation, modifiez l’option **barre de navigation** dans les paramètres De **l’éditeur de texte Toutes les langues** **(Tools** > **Options** > **Text Editor** > **All Languages**), ou vous pouvez modifier les paramètres pour chaque langue.
+Pour masquer la barre de navigation, modifiez l’option **barre de navigation** dans les paramètres **tous les langages** de l’éditeur de texte (**Outils**  >  **options**  >  **éditeur de texte**  >  **tous les langages**) ou modifiez les paramètres des différentes langues.
 
 ## <a name="find-all-references"></a>Rechercher toutes les références
 
@@ -65,12 +65,12 @@ Cette option permet de rechercher toutes les références à l’élément séle
 
 Entrée | Fonction
 ------------ | ---
-**Clavier** | Placez votre curseur de texte quelque part à l’intérieur du nom de type, et appuyez sur **Shift**+**F12**
+**Clavier** | Placez le curseur de texte à l’intérieur du nom de type, puis appuyez sur **MAJ** + **F12** .
 **Souris** | Sélectionnez **Rechercher toutes les références** dans le menu contextuel (clic droit)
 
 ## <a name="reference-highlighting"></a>Mise en surbrillance des références
 
-Quand vous cliquez sur un symbole dans le code source, toutes les instances de ce symbole sont mises en surbrillance dans le document. Les symboles en surbrillance peuvent inclure des déclarations et des références, ainsi que de nombreux autres symboles pouvant être retournés par la fonctionnalité **Rechercher toutes les références** . Ceux-ci incluent les noms de classes, d’objets, de variables, de méthodes et de propriétés. Dans le code Visual Basic, les mots clés de nombreuses structures de contrôle sont également mis en surbrillance. Pour passer au symbole suivant ou précédent mis en évidence, appuyez sur **Ctrl**+**Shift**+**Down Arrow** ou **Ctrl**+**Shift**+Up**Arrow**. Vous pouvez modifier la couleur de mise en évidence dans **outils** > **Options** > **Environment** > **Fonts et Couleurs** > **Surlignée référence**.
+Quand vous cliquez sur un symbole dans le code source, toutes les instances de ce symbole sont mises en surbrillance dans le document. Les symboles en surbrillance peuvent inclure des déclarations et des références, ainsi que de nombreux autres symboles pouvant être retournés par la fonctionnalité **Rechercher toutes les références** . Ceux-ci incluent les noms de classes, d’objets, de variables, de méthodes et de propriétés. Dans le code Visual Basic, les mots clés de nombreuses structures de contrôle sont également mis en surbrillance. Pour passer au symbole en surbrillance suivant ou précédent, appuyez sur **CTRL** + **MAJ** + **flèche bas** ou **CTRL** + **MAJ** + **flèche haut**. Vous pouvez modifier la couleur de mise en surbrillance dans **Outils**  >  **options**  >  **environnement**  >  **polices et couleurs**  >  **référence en surbrillance**.
 
 ## <a name="go-to-commands"></a>Commandes Atteindre
 
@@ -78,17 +78,17 @@ L’option Atteindre propose les commandes suivantes, disponibles dans le menu *
 
 - **Atteindre la ligne** (**Ctrl**+**G**) : accéder au numéro de ligne spécifié dans le document actif.
 
-- **Go To All** (**Ctrl**+**T** ou **Ctrl**+**,**): Passez à la ligne spécifiée, type, fichier, membre, ou symbole.
+- **Atteindre tout** (**CTRL** + **T** ou **CTRL** + **,**) : accéder à la ligne, au type, au fichier, au membre ou au symbole spécifié.
 
-- **Go To File** (**Ctrl**+**1**, **Ctrl**+**F**): Passez au fichier spécifié dans la solution.
+- **Atteindre le fichier** (**CTRL** + **1**, **CTRL** + **F**) : accéder au fichier spécifié dans la solution.
 
-- **Go To Recent File** (**Ctrl**+**1**, **Ctrl**+**R**): Passez au fichier spécifié, récemment visité dans la solution.
+- **Accéder au fichier récent** (**CTRL** + **1**, **CTRL** + **R**) : accéder au fichier spécifié, visité récemment dans la solution.
 
-- **Go To Type** (**Ctrl**+**1**, **Ctrl**+**T**): Passez au type spécifié dans la solution.
+- **Atteindre le type** (**CTRL** + **1**, **CTRL** + **T**) : accéder au type spécifié dans la solution.
 
-- **Aller au membre** (**Ctrl**+**1**, **Ctrl**+**M**): Passez au membre spécifié dans la solution.
+- **Atteindre le membre** (**CTRL** + **1**, **CTRL** + **M**) : accéder au membre spécifié dans la solution.
 
-- **Go To Symbol** (**Ctrl**+**1**, **Ctrl**+**S**): Passez au symbole spécifié dans la solution.
+- **Atteindre le symbole** (**CTRL** + **1**, **CTRL** + **S**) : accéder au symbole spécifié dans la solution.
 
 Dans Visual Studio 2017 version 15.8 et les versions ultérieures, les commandes de navigation **Atteindre** suivantes sont également disponibles :
 
@@ -109,11 +109,11 @@ Entrée | Fonction
 
 ## <a name="peek-definition"></a>Aperçu de la définition
 
-L’option Aperçu de la définition affiche la définition de l’élément sélectionné dans une fenêtre sans vous obliger à quitter votre emplacement actuel dans l’éditeur de code. Pour plus d’informations, voir [Comment : Afficher et modifier le code en utilisant Peek Definition](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md) et Go To Definition et Peek [Definition](../ide/go-to-and-peek-definition.md).
+L’option Aperçu de la définition affiche la définition de l’élément sélectionné dans une fenêtre sans vous obliger à quitter votre emplacement actuel dans l’éditeur de code. Pour plus d’informations, consultez [Comment : afficher et modifier le code à l’aide de l’aperçu de définition](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md) et atteindre la définition [et aperçu de la définition](../ide/go-to-and-peek-definition.md).
 
 Entrée | Fonction
 ------------ | ---
-**Clavier** | Placez votre curseur de texte quelque part à l’intérieur du nom de type, et appuyez sur **Alt**+**F12**
+**Clavier** | Placez le curseur de texte à l’intérieur du nom de type, puis appuyez sur **ALT** + **F12** .
 **Souris** | Cliquez avec le bouton droit sur le nom de type et sélectionnez **Aperçu de la définition** OU appuyez sur **Ctrl** et cliquez sur le nom de type (si l’option **Ouvrir la définition dans l’aperçu** est sélectionnée)
 
 ## <a name="go-to-implementation"></a>Accéder à l’implémentation
@@ -122,17 +122,17 @@ L’option Accéder à l’implémentation vous permet de naviguer d’un type o
 
 Entrée | Fonction
 ------------ | ---
-**Clavier** | Placez votre curseur de texte quelque part à l’intérieur du nom de type, et appuyez sur **Ctrl**+**F12**
+**Clavier** | Placez le curseur de texte à l’intérieur du nom de type, puis appuyez sur **CTRL** + **F12**
 **Souris** | Cliquez avec le bouton droit sur le nom de type et sélectionnez **Accéder à l’implémentation**.
 
 ## <a name="go-to-base"></a>Accéder à la base
 
-En utilisant Go To Base, vous pouvez naviguer jusqu’à la chaîne d’héritage de l’élément sélectionné. S’il y a plusieurs résultats, vous les verrez répertoriés dans la fenêtre **Go To Base** :
+À l’aide de l’option atteindre la base, vous pouvez naviguer vers le haut de la chaîne d’héritage de l’élément sélectionné. S’il y a plusieurs résultats, ceux-ci sont répertoriés dans la fenêtre **atteindre la base** :
 
 Entrée | Fonction
 ------------ | ---
-**Clavier** | Placez votre curseur de texte quelque part à l’intérieur du nom de type, et appuyez sur **Alt**+**Home**
-**Souris** | Cliquez à droite sur le nom de type et sélectionnez **Go To Base**
+**Clavier** | Placez le curseur de texte à l’intérieur du nom de type, puis appuyez sur **ALT**de + **début**
+**Souris** | Cliquez avec le bouton droit sur le nom du type et sélectionnez **atteindre la base** .
 
 ## <a name="call-hierarchy"></a>Hiérarchie d'appels
 
@@ -140,24 +140,24 @@ Vous pouvez afficher les appels en provenance et à destination d’une méthode
 
 Entrée | Fonction
 ------------ | ---
-**Clavier** | Placez votre curseur de texte quelque part à l’intérieur du nom de type, et appuyez sur **Ctrl**+**K**, **Ctrl**+**T**
+**Clavier** | Placez le curseur de texte à l’intérieur du nom de type, puis appuyez sur **CTRL** + **K**, **CTRL** + **T**
 **Souris** | Cliquez avec le bouton droit sur le nom du membre, puis sélectionnez **Afficher la hiérarchie d’appels**
 
 ## <a name="next-method-and-previous-method-commands-visual-basic"></a>Commandes Méthode suivante et Méthode précédente (Visual Basic)
 
-Dans des fichiers de code Visual Basic, utilisez ces commandes pour déplacer le point d’insertion vers les différentes méthodes. Choisissez **Modifier la** > **méthode suivante** ou **modifier** > **la méthode précédente**.
+Dans des fichiers de code Visual Basic, utilisez ces commandes pour déplacer le point d’insertion vers les différentes méthodes. Choisissez **modifier**la  >  **méthode suivante** ou **modifier**la  >  **méthode précédente**.
 
 ## <a name="structure-visualizer"></a>Visualiseur de structure
 
-La fonction De visualisateur de structure dans l’éditeur de code montre des *lignes de guidage de structure* - lignes pointillées verticales qui indiquent des accolades bouclées assorties dans votre base de code. Cela permet de voir plus facilement où commencent et où se terminent les blocs logiques.
+La fonctionnalité visualiseur de structure de l’éditeur de code affiche des lignes de *repère de structure* (lignes en pointillés verticales qui indiquent les accolades correspondantes dans votre code base). Cela permet de voir plus facilement où commencent et où se terminent les blocs logiques.
 
 ![Visualiseur de structure](../ide/media/vside_structure_visualizer.png)
 
-Pour désactiver les lignes de guidage de structure, **rendez-vous** > sur Tools**Options** > **Text Editor** > **General** et dégagez la boîte de lignes **de guidage de la structure Du Salon.**
+Pour désactiver les lignes de repère de structure, accédez à **Outils**  >  **options**  >  **éditeur de texte**  >  **général** et décochez la case **afficher les lignes de repère de structure** .
 
 ## <a name="enhanced-scroll-bar"></a>Barre de défilement améliorée
 
-Vous pouvez utiliser la barre de défilement améliorée dans une fenêtre de code pour bénéficier d’une vue panoramique de votre code. En mode plan, vous pouvez afficher des aperçus du code en déplaçant le curseur vers le haut et vers le bas dans la barre de défilement. Pour plus d’informations, voir [Comment : Suivez votre code en personnalisant la barre de défilement.](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)
+Vous pouvez utiliser la barre de défilement améliorée dans une fenêtre de code pour bénéficier d’une vue panoramique de votre code. En mode plan, vous pouvez afficher des aperçus du code en déplaçant le curseur vers le haut et vers le bas dans la barre de défilement. Pour plus d’informations, consultez [Comment : suivre votre code en personnalisant la barre de défilement](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md).
 
 ## <a name="codelens-information"></a>Informations sur CodeLens
 
@@ -166,4 +166,4 @@ Vous pouvez rechercher des informations sur un code spécifique, telles que les 
 ## <a name="see-also"></a>Voir aussi
 
 - [Fonctionnalités de l’éditeur de code](../ide/writing-code-in-the-code-and-text-editor.md)
-- [Afficher la hiérarchie des appels](../ide/reference/call-hierarchy.md)
+- [Afficher la hiérarchie d’appels](../ide/reference/call-hierarchy.md)

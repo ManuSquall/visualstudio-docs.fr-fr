@@ -1,5 +1,5 @@
 ---
-title: IDebugModOpt::GetModOpts ( Microsoft Docs
+title: 'IDebugModOpt :: GetModOpts | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5ab870db3ae3517b60bebd4815e4530f6035b327
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727050"
 ---
 # <a name="idebugmodoptgetmodopts"></a>IDebugModOpt::GetModOpts
-Récupère une liste de modificateurs optionnels.
+Récupère une liste de modificateurs facultatifs.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -44,15 +44,15 @@ int GetModOpts(
 
 ## <a name="parameters"></a>Paramètres
 `celt`\
-[dans] Nombre d’éléments à retourner.
+dans Nombre d’éléments à retourner.
 
 `rgelt`\
-[out] Retourne un tableau qui contient les options.
+à Retourne un tableau qui contient les options.
 
 `pceltFetched`\
-[dans, dehors] Nombre d’éléments `rgelt` retournés dans le tableau.
+[in, out] Nombre d’éléments retournés dans le `rgelt` tableau.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

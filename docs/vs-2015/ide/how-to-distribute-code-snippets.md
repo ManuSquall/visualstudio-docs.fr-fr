@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e1a692ee29ea9d43e1a0a4fbed5c52934d69256d
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77476989"
 ---
 # <a name="how-to-distribute-code-snippets"></a>Guide pratique pour distribuer des extraits de code
@@ -58,11 +58,11 @@ Vous pouvez vous contenter de donner vos extraits de code à vos amis pour qu'il
 
 #### <a name="setting-up-the-directory-structure"></a>Configuration de la structure de répertoires
 
-1. Dans l’Explorateur de solutions, sélectionnez le nœud du projet et ajoutez un dossier portant le nom que vous souhaitez donner à l’extrait de code dans le Gestionnaire des extraits de code. Dans le cas présent, ce doit être **HelloWorldVB**.
+1. Dans l’Explorateur de solutions, sélectionnez le nœud du projet et ajoutez un dossier portant le nom que vous souhaitez donner à l’extrait de code dans le Gestionnaire des extraits de code. Dans ce cas, il doit s’agir de **HelloWorldVB**.
 
 2. Déplacez le fichier .snippet vers le dossier **HelloWorldVB**.
 
-3. Sélectionnez le fichier .snippet dans l’Explorateur de solutions et, dans la fenêtre **Propriétés**, veillez à ce que **Action de génération** ait la valeur **Contenu**, que **Copier dans le répertoire de sortie** ait la valeur **Toujours copier** et que **Inclure dans VSIX** ait la valeur **true**.
+3. Sélectionnez le fichier. snippet dans le Explorateur de solutions, puis dans la fenêtre **Propriétés** , vérifiez que **action de génération** a la valeur **contenu**, que copier dans le **Répertoire de sortie** a la valeur **toujours copier**et que **inclure dans VSIX** a la valeur **true**.
 
 #### <a name="adding-the-pkgdef-file"></a>Ajout du fichier .pkgdef
 
@@ -80,9 +80,9 @@ Vous pouvez vous contenter de donner vos extraits de code à vos amis pour qu'il
 
      Si vous examinez cette clé, vous pouvez voir comment spécifier des langues différentes.
 
-3. Sélectionnez le fichier .pkgdef dans l’Explorateur de solutions et, dans la fenêtre **Propriétés**, veillez à ce que **Action de génération** ait la valeur **Contenu**, que **Copier dans le répertoire de sortie** ait la valeur **Toujours copier** et que **Inclure dans VSIX** ait la valeur **true**.
+3. Sélectionnez le fichier. pkgdef dans le Explorateur de solutions, puis dans la fenêtre **Propriétés** , vérifiez que **action de génération** a la valeur **contenu**, que copier dans le **Répertoire de sortie** a la valeur **toujours copier**et que **inclure dans VSIX** a la valeur **true**.
 
-4. Ajoutez le fichier .pkgdef en tant que ressource dans le manifeste VSIX. Dans le fichier source.extension.vsixmanifest, affichez l’onglet **Ressources** et cliquez sur **Nouveau**.
+4. Ajoutez le fichier .pkgdef en tant que ressource dans le manifeste VSIX. Dans le fichier source.extension.vsixmanifest, accédez à l’onglet **Ressources**, puis cliquez sur **Nouveau**.
 
 5. Dans la boîte de dialogue **Ajouter un nouveau composant**, affectez à **Type** la valeur **Microsoft.VisualStudio.VsPackage**, à **Type** la valeur **Fichier sur le système de fichiers** et à **Chemin d’accès** la valeur **HelloWorldVB.pkgdef** (qui doit apparaître dans la liste déroulante).
 
@@ -92,7 +92,7 @@ Vous pouvez vous contenter de donner vos extraits de code à vos amis pour qu'il
 
 2. Générez le projet et commencez le débogage. Une seconde instance de Visual Studio doit apparaître.
 
-3. Dans l’instance expérimentale, accédez à **Outils / Gestionnaire des extraits de code** et affectez à **Langage** la valeur **Basic**. Vous devez normalement voir HelloWorldVB parmi les dossiers et vous devez être en mesure de développer ce dossier pour afficher l’extrait de code HelloWorldVB.
+3. Dans l’instance expérimentale, accédez à **Outils/gestionnaire des extraits de code** et définissez le **langage** sur de **base**. Vous devez normalement voir HelloWorldVB parmi les dossiers et vous devez être en mesure de développer ce dossier pour afficher l’extrait de code HelloWorldVB.
 
 4. Testez l'extrait de code. Dans l'instance expérimentale, ouvrez un projet Visual Basic et ouvrez l'un des fichiers de code. Placez votre curseur quelque part dans le code, effectuez un clic droit et, dans le menu contextuel, sélectionnez **Insérer un extrait**.
 

@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: fffcab1d841840c15957e8dae0ff0f87b20de28d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74771599"
 ---
 # <a name="targetclr"></a>TargetCLR
@@ -33,11 +33,11 @@ VSPerfCmd.exe {/Launch:AppName | /Attach:PID} /TargetCLR[:ClrVersion] [Options]
 ## <a name="required-options"></a>Options obligatoires
  L’option **TargetCLR** peut être utilisée seulement avec l’option **Launch** ou **Attach**.
 
- **Lancement :** `AppName` Démarre l’application spécifiée et commence à profiler.
+ **Lancer :** `AppName` Démarre l’application spécifiée et commence le profilage.
 
- **Attacher :** `PID` Commence à profiler le processus spécifié.
+ **Attacher :** `PID` Démarre le profilage du processus spécifié.
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
  Dans cet exemple, l’option TargetCLR est utilisée pour profiler la version 4.0.11003 du CLR.
 
 ```cmd

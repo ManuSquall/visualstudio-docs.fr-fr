@@ -15,10 +15,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 34f3dc8642e2cf8e965e2ad303bed79931d2645c
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77579501"
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Démarrage rapide : Créer votre première application console dans Visual Studio avec Visual Basic
@@ -68,7 +68,7 @@ Tout d’abord, vous allez créer un projet d’application Visual Basic. Le typ
 
 1. Ouvrez Visual Studio 2019.
 
-1. Sur la fenêtre de départ, choisissez **Créer un nouveau projet**.
+1. Dans la fenêtre Démarrer, choisissez **créer un nouveau projet**.
 
    ![Afficher la fenêtre « Créer un projet »](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
@@ -89,7 +89,7 @@ Tout d’abord, vous allez créer un projet d’application Visual Basic. Le typ
    >
    > Après cela, choisissez le bouton **Modifier** dans Visual Studio Installer. Vous pouvez être invité à enregistrer votre travail ; le cas échéant, faites-le. Ensuite, choisissez **Continuer** pour installer la charge de travail. Ensuite, revenez à l’étape 2 de cette procédure « [Créer un projet](#create-a-project) ».
 
-1. Dans la fenêtre **Configurer votre nouveau projet**, tapez ou entrez *WhatIsYourName* dans la zone **Nom du projet**. Ensuite, choisissez **Créer**.
+1. Dans la fenêtre **Configurer votre nouveau projet**, tapez ou entrez *WhatIsYourName* dans la zone **Nom du projet**. Ensuite, choisissez **créer**.
 
    ![Dans la fenêtre « Configurer votre nouveau projet », nommez votre projet « WhatIsYourName »](../get-started/visual-basic/media/vs-2019/vb-name-your-project-whatname.png)
 
@@ -122,11 +122,11 @@ Vous allez maintenant ajouter du code pour suspendre l’application et demander
 
     Le programme est alors suspendu jusqu’à ce que l’utilisateur appuie sur une touche.
 
-2. Sur la barre de menu, sélectionnez **Build** > **Build Solution**.
+2. Dans la barre de menus, sélectionnez **générer**  >  **générer la solution**.
 
    Ceci compile votre programme en un langage intermédiaire, qui est ensuite converti en code binaire par un compilateur juste-à-temps (JIT).
 
-## <a name="run-the-application"></a>Exécuter l’application
+## <a name="run-the-application"></a>Exécution de l'application
 
 1. Cliquez sur le bouton **HelloWorld** dans la barre d’outils.
 

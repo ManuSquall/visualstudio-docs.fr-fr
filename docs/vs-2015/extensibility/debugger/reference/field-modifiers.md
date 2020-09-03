@@ -13,16 +13,16 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bd25a3cb5b2d074e989b47f33513e05538868759
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203046"
 ---
-# <a name="fieldmodifiers"></a>FIELD_MODIFIERS
+# <a name="field_modifiers"></a>FIELD_MODIFIERS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Spécifie les modificateurs pour un type de champ.  
+Spécifie les modificateurs d’un type de champ.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -108,7 +108,7 @@ public enum enum_FIELD_MODIFIERS {
  Indique que le champ n’est pas accessible.  
   
  FIELD_MOD_ACCESS_PUBLIC  
- Indique que le champ possède un accès public.  
+ Indique que le champ a un accès public.  
   
  FIELD_MOD_ACCESS_PROTECTED  
  Indique que le champ a un accès protégé.  
@@ -117,7 +117,7 @@ public enum enum_FIELD_MODIFIERS {
  Indique que le champ a un accès privé.  
   
  FIELD_MOD_NOMODIFIERS  
- Indique que le champ possède pas de modificateur.  
+ Indique que le champ n’a pas de modificateur.  
   
  FIELD_MOD_STATIC  
  Indique que le champ est statique.  
@@ -126,10 +126,10 @@ public enum enum_FIELD_MODIFIERS {
  Indique que le champ est une constante.  
   
  FIELD_MOD_TRANSIENT  
- Indique que le champ est temporaire.  
+ Indique que le champ est transitoire.  
   
  FIELD_MOD_VOLATILE  
- Indique que le champ est volatil.  
+ Indique que le champ est volatile.  
   
  FIELD_MOD_ABSTRACT  
  Indique que le champ est abstrait.  
@@ -147,10 +147,10 @@ public enum enum_FIELD_MODIFIERS {
  Indique que le champ est une interface.  
   
  FIELD_MOD_FINAL  
- Indique que le champ est définitive.  
+ Indique que le champ est final.  
   
  FIELD_MOD_SENTINEL  
- Indique que le champ est un objet sentinel.  
+ Indique que le champ est une sentinelle.  
   
  FIELD_MOD_INNERCLASS  
  Indique que le champ est une classe interne.  
@@ -159,40 +159,40 @@ public enum enum_FIELD_MODIFIERS {
  Indique que le champ est facultatif.  
   
  FIELD_MOD_BYREF  
- Indique que le champ est un argument de référence. Il s’agit en particulier pour les arguments de méthode.  
+ Indique que le champ est un argument de référence. Cela concerne spécifiquement les arguments de méthode.  
   
  FIELD_MOD_HIDDEN  
- Indique que le champ doit être masqué ou présenté dans un autre contexte ; par exemple, [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] variables locales statiques.  
+ Indique que le champ doit être masqué ou présenté dans un autre contexte ; par exemple, les [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] variables locales statiques.  
   
  FIELD_MOD_MARSHALASOBJECT  
- Indique que le champ représente un objet avec un `IUnknown` interface.  
+ Indique que le champ représente un objet avec une `IUnknown` interface.  
   
  FIELD_MOD_SPECIAL_NAME  
- Indique que le champ a un nom spécial, par exemple, `.ctor` pour un constructeur ([!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] uniquement).  
+ Indique que le champ a un nom spécial, par exemple, `.ctor` pour un constructeur ( [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] uniquement).  
   
  FIELD_MOD_HIDEBYSIG  
- Indique que le champ a le `Overloads` mot clé appliqué à celui-ci ([!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] uniquement).  
+ Indique que le `Overloads` mot clé est appliqué au champ ( [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)] uniquement).  
   
  FIELD_MOD_WRITEONLY  
- Indique que le champ est en écriture seule. Cette valeur n’est pas incluse dans `FIELD_MOD_ALL`, comme l’utilisation seule de ces champs en écriture seule est pour l’évaluation de fonction. Un utilisateur doit demander explicitement `FIELD_MOD_WRITEONLY` champs.  
+ Indique que le champ est en écriture seule. Cette valeur n’est pas incluse dans `FIELD_MOD_ALL` , car la seule utilisation de tels champs en écriture seule est l’évaluation de la fonction. Un utilisateur doit demander explicitement des `FIELD_MOD_WRITEONLY` champs.  
   
  FIELD_MOD_ACCESS_MASK  
- Indique un masque d’accès au champ.  
+ Indique un masque pour l’accès au champ.  
   
  FIELD_MOD_MASK  
  Indique un masque pour les modificateurs de champ.  
   
 ## <a name="remarks"></a>Notes  
- Utilisé pour le `dwModifiers` membre de la [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) structure.  
+ Utilisé pour le `dwModifiers` membre de la structure [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) .  
   
- Ces valeurs sont également transmis à la [EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md) méthode pour filtrer les champs spécifiques.  
+ Ces valeurs sont également passées à la méthode [EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md) pour filtrer des champs spécifiques.  
   
 ## <a name="requirements"></a>Configuration requise  
- En-tête : sh.h  
+ En-tête : SH. h  
   
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft. VisualStudio. Debugger. Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

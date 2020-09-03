@@ -17,17 +17,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: be028af8ab9f458c1fadad6f8b2fcbd6aaa49a04
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75567981"
 ---
 # <a name="output-window"></a>Fenêtre Sortie
 
 La fenêtre **Sortie** affiche des messages d’état pour diverses fonctionnalités dans l’environnement de développement intégré (IDE). Pour ouvrir la fenêtre **Sortie**, dans la barre de menus, choisissez **Affichage** > **Sortie**, ou appuyez sur **Ctrl**+**Alt**+**O**.
 
-## <a name="toolbar"></a>Barre d'outils
+## <a name="toolbar"></a>Barre d’outils
 
 Les commandes suivantes sont affichées dans la barre d’outils de la fenêtre **Sortie**.
 
@@ -47,7 +47,7 @@ Place le focus dans la fenêtre **Sortie** sur l’erreur de build précédente 
 
 Place le focus dans la fenêtre **Sortie** sur l’erreur de build suivante et déplace le point d’insertion dans l’éditeur de code vers la ligne qui contient cette erreur de build.
 
-### <a name="clear-all"></a>Effacer tout
+### <a name="clear-all"></a>Tout effacer
 
 Efface tout le texte du volet **Sortie**.
 
@@ -71,12 +71,12 @@ En C++, vous pouvez créer des étapes de génération personnalisées et des é
 
 ## <a name="scroll-behavior"></a>Comportement de défilement
 
-Si vous utilisez le défilement automatique dans la fenêtre **Sortie**, puis que vous naviguez à l’aide de la souris ou des touches de direction, le défilement automatique s’arrête. Pour reprendre l’autoscrolling, appuyez sur **Ctrl**+**End**.
+Si vous utilisez le défilement automatique dans la fenêtre **Sortie**, puis que vous naviguez à l’aide de la souris ou des touches de direction, le défilement automatique s’arrête. Pour reprendre le défilement automatique, appuyez sur **CTRL** + **Terminer**.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Messages diagnostiques dans la fenêtre de sortie](../../debugger/diagnostic-messages-in-the-output-window.md)
+- [Messages de diagnostic dans la fenêtre sortie](../../debugger/diagnostic-messages-in-the-output-window.md)
 - [Guide pratique pour contrôler la fenêtre Sortie](https://msdn.microsoft.com/Library/91aebd15-8854-4a7a-9f7d-57376fb4e858)
-- [Compilation et génération](../../ide/compiling-and-building-in-visual-studio.md)
+- [Compiler et générer](../../ide/compiling-and-building-in-visual-studio.md)
 - [Présentation des configurations de build](../../ide/understanding-build-configurations.md)
-- [Vue d’ensemble des bibliothèques de classes .NET](/dotnet/standard/class-library-overview)
+- [Vue d'ensemble de la bibliothèque de classes](/dotnet/standard/class-library-overview)

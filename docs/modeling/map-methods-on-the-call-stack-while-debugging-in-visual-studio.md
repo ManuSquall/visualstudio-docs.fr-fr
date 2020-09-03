@@ -29,10 +29,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e1638b16eea9bfa20962359f0b63a7415915d0fc
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532702"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Mapper les méthodes sur la pile des appels tout en déboguant dans Visual Studio
@@ -140,7 +140,7 @@ Créez une carte de code pour effectuer un suivi visuel de la pile des appels pe
 
  ![Ajouter un nouvel appel de méthode à la pile d'appels sur le code de mappage](../debugger/media/debuggermap_addnewcallforrepaint.png)
 
-## <a name="q--a"></a><a name="QA"></a>Q & A
+## <a name="q--a"></a><a name="QA"></a> Q & A
 
 - **Tous les appels n’apparaissent pas sur la carte. Pourquoi?**
 

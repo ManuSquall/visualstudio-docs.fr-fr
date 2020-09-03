@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 76ea78f37cbc8c5e2b6df900aa0e3f320346300a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74779764"
 ---
 # <a name="call-tree-view---net-memory-sampling-data"></a>Vue Arborescence des appels - Données d’échantillonnage de la mémoire .NET
@@ -33,12 +33,12 @@ La vue Arborescence des appels affiche les chemins d’exécution de la fonction
 
 |Colonne|Description|
 |------------|-----------------|
-|**ID du processus**|ID du processus (PID) de l'exécution du profilage.|
+|**ID de processus**|ID du processus (PID) de l'exécution du profilage.|
 |**Nom du processus**|Nom du processus.|
 |**Nom du module**|Nom du module qui contient la fonction.|
 |**Chemin du module**|Chemin d’accès du module qui contient la fonction.|
-|**Fichier source**|Fichier source contenant la définition pour cette fonction.|
-|**Nom de fonction**|Nom complet de la fonction.|
+|**Source File**|Fichier source contenant la définition pour cette fonction.|
+|**Nom de la fonction**|Nom complet de la fonction.|
 |**Numéro de ligne de fonction**|Numéro de ligne du début de cette fonction dans le fichier source.|
 |**Adresse de la fonction**|Adresse de la fonction.|
 |**Niveau**|Profondeur de la fonction dans l’arborescence des appels.|
@@ -53,5 +53,5 @@ La vue Arborescence des appels affiche les chemins d’exécution de la fonction
 
 ## <a name="see-also"></a>Voir aussi
 - [Vue de l’arborescence des appels - Instrumentation](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)
-- [Mode Arborescence des appels](../profiling/call-tree-view-sampling-data.md)
-- [Mode Arborescence des appels](../profiling/call-tree-view-instrumentation-data.md)
+- [Vue arborescence des appels](../profiling/call-tree-view-sampling-data.md)
+- [Vue arborescence des appels](../profiling/call-tree-view-instrumentation-data.md)

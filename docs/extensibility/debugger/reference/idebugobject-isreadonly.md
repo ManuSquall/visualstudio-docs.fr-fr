@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::IsReadOnly Microsoft Docs
+title: 'IDebugObject :: IsReadOnly | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 19546550f916e9d42adf634b0d85958ce9697d28
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726411"
 ---
 # <a name="idebugobjectisreadonly"></a>IDebugObject::IsReadOnly
-Détermine si cet objet est lu uniquement.
+Détermine si cet objet est en lecture seule.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,13 +41,13 @@ int IsReadOnly(
 
 ## <a name="parameters"></a>Paramètres
 `pfIsReadOnly`\
-[out] Retourne non-zéro`TRUE`( ) si cet objet est lu seulement; autrement, retourne`FALSE`zéro ( ).
+à Retourne une valeur différente de zéro ( `TRUE` ) si cet objet est en lecture seule ; sinon, retourne la valeur zéro ( `FALSE` ).
 
-## <a name="return-value"></a>Valeur de retour
- En cas de succès, les retours S_OK; autrement, renvoie un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes
- Un objet lu uniquement ne peut pas voir sa valeur modifiée après sa création.
+ La valeur d’un objet en lecture seule ne peut pas être modifiée une fois qu’il a été créé.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

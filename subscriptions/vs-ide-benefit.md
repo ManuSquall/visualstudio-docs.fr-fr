@@ -8,10 +8,10 @@ ms.date: 04/17/2020
 ms.topic: how-to
 description: Découvrez comment télécharger et installer l’IDE de Visual Studio inclus dans votre abonnement Visual Studio.
 ms.openlocfilehash: b5c47c6b484d5b74f31ab8569f3895ae9ce0f984
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904435"
 ---
 # <a name="the-visual-studio-2019-benefit"></a>Avantage Visual Studio 2019
@@ -42,7 +42,7 @@ Pour télécharger l’IDE :
    > [!div class="mx-imgBorder"]
    > ![Personnaliser Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-customize-install-cropped.png)
 
-10. Cliquez sur **Suivant**.
+10. Cliquez sur **Installer**.
 
 11. À la fin de l’installation, vous avez le choix de modifier l’installation ou de lancer Visual Studio.  Cliquez sur **Lancer** pour démarrer.  Si plusieurs versions sont installées, elles sont listées.
     > [!div class="mx-imgBorder"]
@@ -78,7 +78,7 @@ Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à
 
 ## <a name="support-resources"></a>Ressources de support
 - Si vous avez besoin d’aide avec l’IDE Visual Studio, consultez les ressources suivantes :
-  - Support technique :[https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
+  - Support technique : [https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
   - [Documentation](/visualstudio/)
 - Pour obtenir de l’aide sur les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/)Visual Studio.
 

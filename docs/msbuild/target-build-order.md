@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 607584b4b41bdfde224bdb35d30eec1c6c8a4197
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585455"
 ---
 # <a name="target-build-order"></a>Ordre de génération des cibles
@@ -23,15 +23,15 @@ Les cibles doivent être classées si l’entrée d’une cible dépend de la so
 
 - `InitialTargets`. L’attribut `Project` spécifie les cibles qui sont exécutées en premier, même si des cibles sont spécifiées sur la ligne de commande ou dans l’attribut `DefaultTargets`.
 
-- `DefaultTargets`. Cet `Project` attribut précise quelles cibles sont exécutées si une cible n’est pas spécifiée explicitement sur la ligne de commande.
+- `DefaultTargets`. Cet `Project` attribut spécifie les cibles qui sont exécutées si aucune cible n’est spécifiée explicitement sur la ligne de commande.
 
 - `DependsOnTargets`. Cet attribut `Target` spécifie les cibles qui doivent s’exécuter avant que cette cible puisse s’exécuter.
 
-- `BeforeTargets` et `AfterTargets`. Ces attributs `Target` indiquent que cette cible doit s’exécuter avant ou après les cibles spécifiées (MSBuild 4.0).
+- Voir `BeforeTargets` et `AfterTargets`. Ces attributs `Target` indiquent que cette cible doit s’exécuter avant ou après les cibles spécifiées (MSBuild 4.0).
 
 Une cible n’est jamais exécutée deux fois pendant une génération, même si une cible suivante de la génération en dépend. Une fois qu’une cible a été exécutée, sa contribution à la génération est terminée.
 
-Les cibles peuvent posséder un attribut `Condition`. Si la condition spécifiée a la valeur `false`, la cible n’est pas exécutée et n’a aucun effet sur la génération. Pour plus d’informations sur les conditions, voir [Conditions](../msbuild/msbuild-conditions.md).
+Les cibles peuvent posséder un attribut `Condition`. Si la condition spécifiée a la valeur `false`, la cible n’est pas exécutée et n’a aucun effet sur la génération. Pour plus d’informations sur les conditions, consultez [conditions](../msbuild/msbuild-conditions.md).
 
 ## <a name="initial-targets"></a>Cibles initiales
 
