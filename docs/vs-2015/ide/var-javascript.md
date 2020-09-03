@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f72b403d4c6c9cc71bc2a3fdbff8f778a44b3b55
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663059"
 ---
 # <a name="ltvargt-javascript"></a>&lt;var&gt; (JavaScript)
@@ -60,11 +60,11 @@ Spécifie les informations de documentation pour une variable.
 
   `helpKeyword` Facultatif. Mot clé pour l’aide F1.
 
-  `locid` Facultatif. Identificateur des informations de localisation concernant la variable. L’identificateur est soit un ID de membre soit il correspond à la valeur d’attribut `name` dans un lot de messages défini par des métadonnées OpenAjax. Le type d’identificateur varie selon le format spécifié dans la balise [\<loc>](../ide/loc-javascript.md).
+  `locid` Facultatif. Identificateur des informations de localisation concernant la variable. L’identificateur est soit un ID de membre soit il correspond à la valeur d’attribut `name` dans un lot de messages défini par des métadonnées OpenAjax. Le type d’identificateur dépend du format spécifié dans la [\<loc>](../ide/loc-javascript.md) balise.
 
   `description` Facultatif. Description de la variable.
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
  L’exemple de code suivant montre comment utiliser l'élément `<var>`.
 
 ```javascript
@@ -82,4 +82,4 @@ var Rectangle = {
 ```
 
 ## <a name="see-also"></a>Voir aussi
- [Commentaires sur la documentation XML](../ide/xml-documentation-comments-javascript.md)
+ [Commentaires de documentation XML](../ide/xml-documentation-comments-javascript.md)

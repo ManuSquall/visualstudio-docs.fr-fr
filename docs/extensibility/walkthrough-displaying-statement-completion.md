@@ -14,10 +14,10 @@ dev_langs:
 ms.workload:
 - vssdk
 ms.openlocfilehash: 472ff8c10e1346f25e7bc72ed5fd4ee9f31bbafa
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904793"
 ---
 # <a name="walkthrough-display-statement-completion"></a>Procédure pas à pas : afficher la saisie semi-automatique des instructions

@@ -21,10 +21,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5707ef277892c37cab16f78ac11113194a95e190
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663512"
 ---
 # <a name="signing-page-project-designer"></a>Page Signature, Concepteur de projets
@@ -64,9 +64,9 @@ Utilisez la page **Signature** du **Concepteur de projet** pour signer les manif
 
  Cette option utilise l’outil Al.exe fourni par le [!INCLUDE[winsdklong](../../includes/winsdklong-md.md)] pour signer l’assembly. Pour plus d’informations sur Al.exe, consultez [Comment : signer un assembly avec un nom fort](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67).
 
- **La liste choisir un fichier de clé de nom fort** vous permet de spécifier un fichier de clé de nom fort nouveau ou existant qui est utilisé pour signer l’assembly. Sélectionnez **\<Parcourir...>** pour sélectionner un fichier de clé existant.
+ **La liste choisir un fichier de clé de nom fort** vous permet de spécifier un fichier de clé de nom fort nouveau ou existant qui est utilisé pour signer l’assembly. Sélectionnez **\<Browse...>** pour sélectionner un fichier de clé existant.
 
- Sélectionnez **\<Nouveau...>** pour créer un fichier de clé avec lequel signer l’assembly. La boîte de dialogue **Créer une clé de nom fort** s’ouvre. Vous pouvez l’utiliser pour spécifier un nom de fichier de clé et pour protéger le fichier de clé avec un mot de passe. Le mot de passe doit comporter au moins 6 caractères. Si vous spécifiez un mot de passe, un fichier d’échange d’informations personnelles (.pfx) est créé. Si vous ne spécifiez pas de mot de passe, un fichier de clé de nom fort (.snk) est créé.
+ Sélectionnez **\<New...>** cette option pour créer un nouveau fichier de clé avec lequel signer l’assembly. La boîte de dialogue **Créer une clé de nom fort** s’ouvre. Vous pouvez l’utiliser pour spécifier un nom de fichier de clé et pour protéger le fichier de clé avec un mot de passe. Le mot de passe doit comporter au moins 6 caractères. Si vous spécifiez un mot de passe, un fichier d’échange d’informations personnelles (.pfx) est créé. Si vous ne spécifiez pas de mot de passe, un fichier de clé de nom fort (.snk) est créé.
 
  Bouton **modifier le mot de passe** modifie le mot de passe du fichier de clé d’échange d’informations personnelles (. pfx) utilisé pour signer l’assembly.
 
@@ -80,4 +80,4 @@ Utilisez la page **Signature** du **Concepteur de projet** pour signer les manif
 > Lorsque vous signez un assembly, vous pouvez ne pas avoir accès à une clé privée. Par exemple, une entreprise peut avoir une paire de clés protégées auxquelles les développeurs n’ont pas accès tous les jours. La clé publique peut être disponible, mais l’accès à la clé privée est limité à quelques personnes. Dans ce cas, vous pouvez utiliser la *signature différée* ou la *signature partielle* pour fournir la clé publique, en différant l’ajout de la clé privée jusqu’à ce que l’assembly soit remis.
 
 ## <a name="see-also"></a>Voir aussi
- Informations de référence sur les [Propriétés de projet](../../ide/reference/project-properties-reference.md) [gestion des assemblys et des manifestes](../../ide/managing-assembly-and-manifest-signing.md) signature [avec nom fort pour les applications managées](https://msdn.microsoft.com/5fef3490-c519-4363-94fd-8b1ad260dab5) [Comment : signer des manifestes d’application et de déploiement](../../ide/how-to-sign-application-and-deployment-manifests.md) [Comment : signer un assembly (Visual Studio)](https://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564) [Comment : signer un assembly avec un nom fort assemblys avec nom](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67) [fort](https://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)
+ Informations de référence sur les [Propriétés de projet](../../ide/reference/project-properties-reference.md) [gestion des assemblys et des manifestes signature](../../ide/managing-assembly-and-manifest-signing.md) [avec nom fort pour les applications managées](https://msdn.microsoft.com/5fef3490-c519-4363-94fd-8b1ad260dab5) [Comment : signer des manifestes d’application et de déploiement](../../ide/how-to-sign-application-and-deployment-manifests.md) [Comment : signer un assembly (Visual Studio)](https://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564) [Comment : signer un assembly avec un nom fort assemblys avec nom](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67) [fort](https://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)

@@ -1,5 +1,5 @@
 ---
-title: IDebugGenericFieldDefinition::ConstructInstantiation | Microsoft Docs
+title: 'IDebugGenericFieldDefinition :: ConstructInstantiation | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 57a28cfd3b2ccd2ff37fae80d426817b664972fb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180903"
 ---
 # <a name="idebuggenericfielddefinitionconstructinstantiation"></a>IDebugGenericFieldDefinition::ConstructInstantiation
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Construit une instance du champ étant donnée un tableau d’arguments de type.  
+Construit une instance de champ en fonction d’un tableau d’arguments de type.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -43,16 +43,16 @@ int ConstructInstantiation(
   
 #### <a name="parameters"></a>Paramètres  
  `cArgs`  
- [in] Nombre d’arguments dans le `ppArgs` tableau.  
+ dans Nombre d’arguments dans le `ppArgs` tableau.  
   
  `ppArgs`  
- [in] Tableau qui contient les arguments de type. Les arguments de type doivent être de types fermés (génériques non générique ou entièrement instanciés).  
+ dans Tableau qui contient les arguments de type. Les arguments de type doivent être des types fermés (génériques non génériques ou entièrement instanciés).  
   
  `ppConstructedField`  
- [out] Retourne le [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interface qui représente le nouveau champ.  
+ à Retourne l’interface [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) qui représente le nouveau champ.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="remarks"></a>Notes  
  Les contraintes ne sont pas vérifiées.  

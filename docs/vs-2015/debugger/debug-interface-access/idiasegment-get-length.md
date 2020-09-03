@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eaf0d835e53043ebcfa78c2a1a3b00ce751179e9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68151792"
 ---
-# <a name="idiasegmentgetlength"></a>IDiaSegment::get_length
+# <a name="idiasegmentget_length"></a>IDiaSegment::get_length
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Récupère le nombre d’octets dans le segment.  
@@ -35,10 +35,10 @@ HRESULT get_ length ( 
   
 #### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- [out] Retourne le nombre d’octets dans le segment.  
+ à Retourne le nombre d’octets dans le segment.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

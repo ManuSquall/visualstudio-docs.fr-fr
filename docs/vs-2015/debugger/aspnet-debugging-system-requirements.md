@@ -1,5 +1,5 @@
 ---
-title: 'Débogage ASP.NET : Configuration système requise | Microsoft Docs'
+title: 'Débogage ASP.NET : configuration système requise | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,13 +18,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: aa8951be6da4d77ffb51b6bc8f09a796b373a944
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67826258"
 ---
-# <a name="aspnet-debugging-system-requirements"></a>Débogage ASP.NET : Configuration système requise
+# <a name="aspnet-debugging-system-requirements"></a>Débogage ASP.NET : configuration requise
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette rubrique décrit les conditions de sécurité et les logiciels requis pour les scénarios de débogage de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] :  
@@ -37,14 +37,14 @@ Cette rubrique décrit les conditions de sécurité et les logiciels requis pour
   
 - Débogage distant, dans lequel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] s'exécute sur un ordinateur client et débogue une application Web qui s'exécute sur un ordinateur de serveur distant.  
   
-## <a name="security-requirements"></a>Conditions de sécurité  
+## <a name="security-requirements"></a>Configuration de sécurité requise  
  Pour le débogage distant, les ordinateurs locaux et distants doivent être sur une installation de domaine ou une installation de groupe de travail.  
   
  Pour déboguer le processus de traitement [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] , vous devez disposer de l'autorisation pour déboguer ce processus. Par défaut, les applications [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] s'exécutent en tant qu'utilisateur **ASPNET** . Si le processus de traitement s'exécute en tant qu' **ASPNET**ou que **SERVICE RÉSEAU**, vous devez disposer de droits d'administrateur pour le déboguer.  
   
- Le nom du processus de traitement [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] varie en fonction du scénario de débogage et de la version d'IIS. Pour plus d’informations, consultez [Guide pratique pour rechercher le nom du processus ASP.NET](../debugger/how-to-find-the-name-of-the-aspnet-process.md).  
+ Le nom du processus de traitement [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] varie en fonction du scénario de débogage et de la version d'IIS. Pour plus d'informations, consultez [How to: Find the Name of the ASP.NET Process](../debugger/how-to-find-the-name-of-the-aspnet-process.md).  
   
- Vous pouvez changer le compte d'utilisateur sous lequel s'exécute le processus de travail [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] en modifiant le fichier machine.config sur le serveur qui exécute IIS. La meilleure façon de procéder consiste à utiliser le **Gestionnaire IIS**. Pour plus d'informations, voir [Procédure : exécuter le processus Worker sous un compte d’utilisateur](../debugger/how-to-run-the-worker-process-under-a-user-account.md).  
+ Vous pouvez changer le compte d'utilisateur sous lequel s'exécute le processus de travail [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] en modifiant le fichier machine.config sur le serveur qui exécute IIS. La meilleure façon de procéder consiste à utiliser le **Gestionnaire IIS**. Pour plus d’informations, consultez [Comment : exécuter le processus de travail sous un compte d’utilisateur](../debugger/how-to-run-the-worker-process-under-a-user-account.md).  
   
  Si vous modifiez le processus de traitement [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] pour qu'il s'exécute sous votre propre compte d'utilisateur, vous n'avez pas besoin d'être administrateur sur le serveur qui exécute IIS.  
   
@@ -53,4 +53,4 @@ Cette rubrique décrit les conditions de sécurité et les logiciels requis pour
   
 ## <a name="see-also"></a>Voir aussi  
  [Débogage d’applications ASP.NET et AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)   
- [Guide pratique pour exécuter le processus Worker sous un compte d’utilisateur](../debugger/how-to-run-the-worker-process-under-a-user-account.md)
+ [Procédure : exécuter le processus de travail sous un compte d’utilisateur](../debugger/how-to-run-the-worker-process-under-a-user-account.md)

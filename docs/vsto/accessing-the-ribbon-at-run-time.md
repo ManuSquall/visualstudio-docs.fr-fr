@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7c7fdda6234f1e98117cdb1bf047762ed9d4621a
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "71255742"
 ---
 # <a name="access-the-ribbon-at-run-time"></a>Accéder au ruban au moment de l’exécution
@@ -31,7 +31,7 @@ ms.locfileid: "71255742"
 ## <a name="access-the-ribbon-by-using-the-globals-class"></a>Accéder au ruban à l’aide de la classe Globals
  Vous pouvez utiliser la classe `Globals` pour accéder au ruban dans un projet au niveau du document ou un projet de complément VSTO, où que vous soyez dans le projet.
 
- Pour plus d’informations sur `Globals` la classe, consultez [accès global aux objets dans les projets Office](../vsto/global-access-to-objects-in-office-projects.md).
+ Pour plus d’informations sur la `Globals` classe, consultez [accès global aux objets dans les projets Office](../vsto/global-access-to-objects-in-office-projects.md).
 
  L'exemple suivant utilise la classe `Globals` pour accéder à un ruban personnalisé nommé `Ribbon1` et définir le texte qui apparaît dans une zone de liste modifiable du ruban sur `Hello World`.
 
@@ -59,7 +59,7 @@ ms.locfileid: "71255742"
 - [Concepteur de ruban](../vsto/ribbon-designer.md)
 - [Ribbon XML](../vsto/ribbon-xml.md)
 - [Vue d’ensemble du modèle objet de ruban](../vsto/ribbon-object-model-overview.md)
-- [Procédure pas à pas : Créer un onglet personnalisé à l’aide du concepteur de ruban](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
-- [Procédure pas à pas : Mettre à jour les contrôles sur un ruban au moment de l’exécution](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)
+- [Procédure pas à pas : création d’un onglet personnalisé à l’aide du concepteur de ruban](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
+- [Procédure pas à pas : mettre à jour les contrôles sur un ruban au moment de l’exécution](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)
 - [Personnaliser un ruban pour Outlook](../vsto/customizing-a-ribbon-for-outlook.md)
 - [Accéder à une zone de formulaire au moment de l’exécution](../vsto/accessing-a-form-region-at-run-time.md)

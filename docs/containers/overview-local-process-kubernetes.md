@@ -10,10 +10,10 @@ manager: jillfra
 author: ghogen
 ms.author: ghogen
 ms.openlocfilehash: 5b6c07d5987c52d818a35babd16681652ddf5830
-ms.sourcegitcommit: 50bbb62525c91c5a31bab57e1caf37c5638872c8
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87913264"
 ---
 # <a name="how-local-process-with-kubernetes-works"></a>Fonctionnement de Processus local avec Kubernetes
@@ -67,7 +67,7 @@ Lorsque vous activez l’isolation, le processus local avec Kubernetes effectue 
 
 * Vérifie que Azure Dev Spaces n’est pas activé pour le cluster Kubernetes.
 * Réplique le service choisi dans le cluster dans le même espace de noms et ajoute une étiquette *Routing.VisualStudio.IO/route-from=service_name* et *Routing.VisualStudio.IO/route-on-Header=kubernetes-route-As : GENERATED_NAME* annotation.
-* Configure et démarre le gestionnaire de routage dans le même espace de noms sur le cluster Kubernetes. Le gestionnaire de routage utilise un sélecteur d’étiquette pour Rechercher l’étiquette *Routing.VisualStudio.IO/route-from=service_name* et l’annotation *Routing.VisualStudio.IO/route-on-Header=kubernetes-route-As : GENERATED_NAME* lors de la configuration du routage dans votre espace de noms.
+* Configure et démarre le gestionnaire de routage dans le même espace de noms sur le cluster Kubernetes. Le gestionnaire de routage utilise un sélecteur d’étiquette pour Rechercher l’étiquette *Routing.VisualStudio.IO/route-from=service_name* et l’annotation  *Routing.VisualStudio.IO/route-on-Header=kubernetes-route-As : GENERATED_NAME* lors de la configuration du routage dans votre espace de noms.
 
 Si le processus local avec Kubernetes détecte que Azure Dev Spaces est activé sur votre cluster Kubernetes, vous êtes invité à désactiver Azure Dev Spaces pour pouvoir utiliser le processus local avec Kubernetes.
 

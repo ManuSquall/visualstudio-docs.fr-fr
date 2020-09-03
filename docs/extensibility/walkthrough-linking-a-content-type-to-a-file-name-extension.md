@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b4e5ba3cd82090b5fad76d48c4600e0814bd91eb
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904680"
 ---
 # <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>Procédure pas à pas : liaison d’un type de contenu à une extension de nom de fichier

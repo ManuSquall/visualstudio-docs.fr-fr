@@ -19,15 +19,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 97f057edefefd590c37b49d709ecf8a6e029b905
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72745738"
 ---
 # <a name="cannot-change-value-dialog-box"></a>Impossible de changer la valeur (boîte de dialogue)
-## <a name="error"></a>Erreur
- `The value of this variable cannot be changed` &#124; `The name` *nom* `does not exist in the current context` &#124; d' *autres messages*
+## <a name="error"></a>Error
+ `The value of this variable cannot be changed`Nom de &#124; `The name` *name* `does not exist in the current context` &#124; *différents autres messages*
 
  Cette boîte de message s'affiche lorsque vous essayez de remplacer le contenu d'une variable par une valeur non conforme dans une fenêtre du débogueur (Automatique, Espion ou Variables locales) ou dans la boîte de dialogue Espion express. Par exemple, cette boîte de message s'affiche si vous essayez d'attribuer à la valeur d'une variable entière une chaîne de caractères.
 

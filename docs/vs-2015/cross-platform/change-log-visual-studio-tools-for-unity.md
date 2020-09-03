@@ -10,10 +10,10 @@ author: conceptdev
 ms.author: crdun
 manager: jillfra
 ms.openlocfilehash: 751faa1d81ca93fce5f8dfa866327cc8787e27ef
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67825971"
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Journal des modifications (Visual Studio Tools pour Unity)
@@ -27,29 +27,29 @@ Publication : 14-07-2016
 
 ### <a name="new-features"></a>Nouvelles fonctionnalités
 
-- **Général :**
+- **Général**
 
   - Ajout d’une option pour désactiver les journaux de console Unity dans la liste d’erreurs de Visual Studio.
 
   - Ajout d’une option pour autoriser la modification des propriétés de projet générées.
 
-- **Débogueur :**
+- **Débogueur**
 
   - Ajout des visualiseurs de chaînes de texte, XML, HTML et JSON.
 
-- **Assistants :**
+- **Assistants**
 
   - Ajout de MonoBehaviors manquants.
 
 ### <a name="bug-fixes"></a>Résolution des bogues
 
-- **Général :**
+- **Général**
 
   - Résolution d’un conflit lié à ReSharper, qui empêchait l’affichage des contrôles dans les paramètres de Visual Studio.
 
   - Résolution d’un conflit lié à Xamarin, qui empêchait le débogage dans certaines situations.
 
-- **Débogueur :**
+- **Débogueur**
 
   - Correction d’un problème provoquant le blocage de Visual Studio pendant le débogage.
 
@@ -63,7 +63,7 @@ Publication 04-02-2016
 
 ### <a name="new-features"></a>Nouvelles fonctionnalités
 
-- **Assistants :**
+- **Assistants**
 
   - Ajout de la recherche intelligente dans l’Assistant **Implémenter MonoBehavior** .
 
@@ -71,7 +71,7 @@ Publication 04-02-2016
 
   - Prise en charge supplémentaire de messages NetworkBehavior dans les Assistants.
 
-- **Interface utilisateur :**
+- **L'**
 
   - Ajout d’une option pour configurer la visibilité des messages MonoBehavior.
 
@@ -89,17 +89,17 @@ Publication 04-02-2016
 
   - Limitation des projets générés à C# 4.
 
-- **Débogueur :**
+- **Débogueur**
 
   - Correction d’un problème d’évaluation d’expression lors du débogage au sein d’une coroutine Unity.
 
   - Correction d’un problème provoquant le blocage de Visual Studio pendant le débogage.
 
-- **Interface utilisateur :**
+- **L'**
 
   - Correction d’une incompatibilité avec l’extension [Tabs Studio](https://tabsstudio.com/) de Visual Studio.
 
-- **Programme d’installation :**
+- **Programme d’installation :**
 
   - Prise en charge de l’installation de VSTU au niveau de la machine (installation pour tous les utilisateurs) en créant des entrées de Registre HKLM.
 
@@ -119,15 +119,15 @@ Publication 08-09-2015
 
 - Un message d’erreur n’est plus affiché quand Visual Studio verrouille les fichiers XML intellisense.
 
-- Gérer les points d’arrêt conditionnels <\<When Changed>> quand l’argument conditionnel n’est pas une valeur booléenne.
+- Gérer <\<When Changed>> points d’arrêt conditionnels quand l’argument conditionnel n’est pas une valeur booléenne.
 
 - Correction des références aux assemblys UnityEngine et UnityEditor pour les applications du Windows Store.
 
-- Correction de l’erreur lors de l’exécution pas à pas dans le débogueur : Impossible de parcourir, exception générale.
+- Correction de l’erreur lors de l’exécution pas à pas dans le débogueur : impossible de parcourir, exception générale.
 
 - Correction du nombre d’accès des points d’arrêt dans Visual Studio 2015.
 
-## <a name="20"></a>2.0
+## <a name="20"></a>2,0
 
 Publication 20-07-2015
 
@@ -149,13 +149,13 @@ Publication 20-07-2015
 
   - Ajout de la prise en charge des caractères génériques (*) dans le filtre d’extension lors de la spécification des fichiers à inclure dans le projet C#.
 
-- **Intégration Visual Studio :**
+- **Intégration de Visual Studio :**
 
   - Correction d’un problème de compatibilité avec Productivity Power Tools.
 
   - Correction de la génération de MonoBehaviors autour des déclarations d’événements et de délégués.
 
-- **Débogueur :**
+- **Débogueur**
 
   - Correction d’un blocage potentiel lors du débogage.
 
@@ -180,7 +180,7 @@ Publication 02-04-2015
 
   - Adopter les icônes de Visual Studio dans le projet Unity.
 
-- **Débogueur :**
+- **Débogueur**
 
   - Sélectionner la cible de débogage active à partir d’une liste de cibles de débogage enregistrées ou récemment utilisées (voir la boîte de dialogue **Options** ).
 
@@ -198,19 +198,19 @@ Publication 02-04-2015
 
   - Filtrer les membres obsolètes dans les fenêtres Espion du débogueur.
 
-- **Programme d’installation :**
+- **Programme d’installation :**
 
   - Inscription optimisée de l’extension Visual Studio Tools pour Unity.
 
   - Installer le package Visual Studio Tools pour Unity pour Unity 5.
 
-- **Documentation :** Améliorer les performances de la génération de la documentation.
+- **Documentation :** améliorer les performances de la génération de la documentation.
 
-- **Assistants :** Prise en charge de nouvelles méthodes MonoBehavior pour Unity 4.6 et Unity 5.
+- **Assistants :** prise en charge de nouvelles méthodes MonoBehavior pour Unity 4.6 et Unity 5.
 
-- **Unity :** Indicateurs de recherche non sécurisés et définitions personnalisées dans les fichiers .rsp pendant la génération du fichier projet.
+- **Unity :** indicateurs de recherche non sécurisés et définitions personnalisées dans les fichiers .rsp pendant la génération du fichier projet.
 
-- **Interface utilisateur :** Ajout de la boîte de dialogue **Options** des Outils Visual Studio pour Unity dans Visual Studio.
+- **Interface utilisateur :** ajout de la boîte de dialogue **Options** Visual Studio Tools pour Unity dans Visual Studio.
 
 ### <a name="bug-fixes"></a>Résolution des bogues
 
@@ -224,13 +224,13 @@ Publication 02-04-2015
 
   - S’assurer que les fichiers nouvellement sélectionnés sont visibles dans l’Explorateur de projets Unity.
 
-- **Débogueur :**
+- **Débogueur**
 
   - Éviter un éventuel blocage de Visual Studio lors de l’évaluation des expressions dans le débogueur.
 
   - S’assurer que les appels de méthode s’exécutent sur le domaine approprié dans le débogueur.
 
-- **Unity :**
+- **Unité**
 
   - Corriger l’emplacement d’UnityVS.OpenFile avec Unity 5.
 
@@ -244,13 +244,13 @@ Publication 02-04-2015
 
   - Envoyer les journaux de console Unity à la liste d’erreurs Visual Studio.
 
-- **Documentation :** Corriger la génération de la documentation pour la nouvelle documentation Unity.
+- **Documentation :** corriger la génération de la documentation pour la nouvelle documentation Unity.
 
-- **Projet :** Déplacer et renommer les fichiers .meta Unity si nécessaire, même dans les dossiers.
+- **Projet :** déplacer et renommer les fichiers .meta Unity si nécessaire, même dans les dossiers.
 
-- **Assistants :** Corriger l’ordre des paramètres de la méthode MonoBehavior lors de la génération de code.
+- **Interface utilisateur :** corriger l’ordre des paramètres de la méthode MonoBehavior lors de la génération de code.
 
-- **Interface utilisateur :** Prendre en charge les thèmes Visual Studio pour les icônes et le menu contextuel.
+- **Interface utilisateur :** prendre en charge les thèmes Visual Studio pour les icônes et le menu contextuel.
 
 ## <a name="20-preview"></a>2.0 Preview
 Publication 12-11-2014
@@ -552,7 +552,7 @@ Publication 09-04-2013
 
 - Correction de la liaison des points d’arrêt dans certaines DLL externes.
 
-## <a name="12"></a>1.2
+## <a name="12"></a>1,2
 
 Publication 25-03-2013
 
@@ -604,21 +604,21 @@ Publication 25-03-2013
 
 - Correctif de bogue UVS-48 : la saisie de guillemets doubles produit parfois des erreurs et arrête toutes les fonctions (exécution de code, mise en surbrillance de la syntaxe, etc.).
 
-- Résolution de bogue UVS-46 : Duplication du fichier de script ouvert (UnityScript) quand vous cliquez sur la liste d’erreurs de Visual Studio.
+- Résolution de bogue UVS-46 : ouverture de fichier de script dupliqué (UnityScript) quand vous cliquez sur la liste d’erreurs de Visual Studio.
 
-- Résolution de bogue UVS-42 : Le logo de connectivité Unity dans la barre d’état ne traite pas les événements de souris dans Visual Studio 2012.
+- Résolution de bogue UVS-42 : le logo de connectivité Unity dans la barre d’état ne traite pas les événements de souris dans Visual Studio 2012.
 
-- Résolution de bogue UVS-44 : La combinaison Ctrl+Maj+Q n’est pas disponible dans Visual Studio 2012 pour les MonoBehaviours rapides.
+- Résolution de bogue UVS-44 : CTRL+MAJ+Q n’est pas disponible dans Visual Studio 2012 pour les MonoBehaviours rapides.
 
-- Résolution de bogue UVS-40 : Les éléments sélectionnés dans l’Explorateur de projets Unity sont illisibles quand la fenêtre est inactive dans le thème « foncé » de Visual Studio 2012.
+- Résolution de bogue UVS-40 : les éléments sélectionnés dans l’Explorateur de projets Unity sont illisibles quand la fenêtre est inactive dans le thème « foncé » Visual Studio 2012.
 
-- Résolution de bogue UVS-39 : Problème de création de jetons pour les chaînes d’échappement.
+- Résolution de bogue UVS-39 : problème d’échappement des chaînes de création de jetons.
 
-- Résolution de bogue UVS-35 : Appel de ToString sur des objets durant l’inspection de variables.
+- Résolution de bogue UVS-35 : appel de ToString sur les objets durant l’inspection de variables.
 
-- Résolution de bogue UVS-27 : Incohérence de la fenêtre Aller au symbole avec le thème « foncé » dans Visual Studio 2012.
+- Résolution de bogue UVS-27 : incohérence de la fenêtre Aller au symbole avec le thème « foncé » dans Visual Studio 2012.
 
-- Résolution de bogue UVS-11 : Variables locales dans les coroutines.
+- Résolution de bogue UVS-11 : variables locales dans les coroutines.
 
 ## <a name="11--beta-release"></a>1.1 – Version bêta
 Publication 09-10-2014
@@ -649,7 +649,7 @@ Publication 21-01-2013
 ## <a name="1012"></a>1.0.12
 Publication 03-01-2013
 
-### <a name="bug-fixes"></a>Correctifs de bogues
+### <a name="bug-fixes"></a>Résolution des bogues
 
 - Correction du verrouillage de Visual Studio qui peut se produire lorsque Visual Studio supprime un point d’arrêt.
 
@@ -725,9 +725,9 @@ Publication 03-10-2012
 
 - Résolution de la façon dont les types sont recherchés dans les assemblys chargés pour l’évaluation d’expression.
 
-- Résolution de bogue UVS-21 : L’évaluation de l’affectation sur les objets Unity n’a aucun effet.
+- Résolution de bogue UVS-21 : l’évaluation de l’affectation sur les objets Unity n’a aucun effet.
 
-- Résolution de bogue UVS-21 : Pointeur non valide durant l’évaluation d’un appel de méthode à l’API Math Unity.
+- Résolution de bogue UVS-21 : pointeur non valide durant l’évaluation d’un appel de méthode vers l’API Math Unity.
 
 ## <a name="108"></a>1.0.8
 

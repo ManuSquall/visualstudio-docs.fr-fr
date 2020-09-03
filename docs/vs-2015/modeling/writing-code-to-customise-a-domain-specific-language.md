@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4448e9a1c65ccba4a9ae48d0271f9fd91fc011b6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662971"
 ---
 # <a name="writing-code-to-customise-a-domain-specific-language"></a>Écriture de code pour personnaliser un langage spécifique à un domaine
@@ -27,7 +27,7 @@ Cette section vous montre comment utiliser du code personnalisé pour accéder, 
 
 - **Commandes personnalisées.** Vous pouvez créer une commande que les utilisateurs peuvent appeler en cliquant avec le bouton droit sur le diagramme et en modifiant le modèle. Pour plus d’informations, consultez [Comment : ajouter une commande au menu contextuel](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
 
-- **Validation.** Vous pouvez écrire du code qui vérifie que le modèle est dans un état correct. Pour plus d’informations, consultez [validation dans un langage spécifique à un domaine](../modeling/validation-in-a-domain-specific-language.md).
+- **Métrage.** Vous pouvez écrire du code qui vérifie que le modèle est dans un état correct. Pour plus d’informations, consultez [validation dans un langage spécifique à un domaine](../modeling/validation-in-a-domain-specific-language.md).
 
 - **Substitution du comportement par défaut.** Vous pouvez modifier de nombreux aspects du code généré à partir de DslDefinition. DSL. Pour plus d’informations, consultez [substitution et extension des classes générées](../modeling/overriding-and-extending-the-generated-classes.md).
 

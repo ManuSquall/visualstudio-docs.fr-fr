@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3f88e4781115fa7a5fac54826304ab32472eeefb
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905356"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Comment : installer un plug-in de contrôle de code source
@@ -28,7 +28,7 @@ La création d’un plug-in de contrôle de code source implique trois étapes 
 3. Enregistrez la DLL en créant les entrées de Registre appropriées.
 
 ## <a name="integration-with-visual-studio"></a>Intégration à Visual Studio
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]prend en charge les plug-ins de contrôle de code source conformes à l’API de plug-in de contrôle de code source.
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prend en charge les plug-ins de contrôle de code source conformes à l’API de plug-in de contrôle de code source.
 
 ### <a name="register-the-source-control-plug-in"></a>Inscrire le plug-in de contrôle de code source
  Avant qu’un environnement de développement intégré (IDE) en cours d’exécution puisse appeler le système de contrôle de code source, il doit d’abord rechercher la DLL du plug-in de contrôle de code source qui exporte l’API.

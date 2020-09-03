@@ -19,19 +19,19 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 14e365d6bbe99634135bfad133d840b98e22e3b0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663041"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>Utilisation du schéma de définition DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Le diagramme d’une définition de [!INCLUDE[dsl](../includes/dsl-md.md)] est un outil important pour définir le langage spécifique à un domaine. Vous pouvez ajouter des éléments à votre modèle de domaine et définir des relations sur le diagramme ; vous pouvez également modifier la disposition du diagramme pour accroître sa lisibilité.
+Le diagramme d’une [!INCLUDE[dsl](../includes/dsl-md.md)] définition est un outil important pour définir le langage spécifique à un domaine. Vous pouvez ajouter des éléments à votre modèle de domaine et définir des relations sur le diagramme ; vous pouvez également modifier la disposition du diagramme pour accroître sa lisibilité.
 
 ## <a name="the-layout-of-the-diagram"></a>Disposition du diagramme
- Le diagramme de définition de [!INCLUDE[dsl](../includes/dsl-md.md)] a deux partitions : la partition **des classes et des relations** et la partition des **éléments du diagramme** . La partition **classes et relations** affiche les classes de domaine, les relations de domaine et l’héritage. La partition **éléments de diagramme** affiche les classes de forme, les classes de connecteur, les classes de couloir et le diagramme de concepteur généré.
+ Le [!INCLUDE[dsl](../includes/dsl-md.md)] diagramme de définition comporte deux partitions : la partition **classes et relations** et la partition **éléments du diagramme** . La partition **classes et relations** affiche les classes de domaine, les relations de domaine et l’héritage. La partition **éléments de diagramme** affiche les classes de forme, les classes de connecteur, les classes de couloir et le diagramme de concepteur généré.
 
  Les classes de domaine peuvent apparaître à plusieurs emplacements dans les partitions **classes et relations** . La définition d'une classe de domaine affiche une arborescence d'héritage si elle est la classe de base d'autres classes de domaine et une arborescence de relations si elle est la source des relations d'incorporation ou de référence. Les espaces réservés de classes de domaine apparaissent comme les cibles des relations d'incorporation ou de référence. Par défaut, les éléments d’espace réservé sont affichés avec le compartiment **Propriétés de domaine** réduit. Ils n'affichent ni l'héritage ni les relations d'incorporation ou de référence.
 

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 15fa0714097efda31b52f1d389d3a26cf581e506
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905005"
 ---
 # <a name="walkthrough-create-an-sdk-using-c"></a>Procédure pas à pas : création d’un SDK à l’aide de C++
@@ -27,7 +27,7 @@ Cette procédure pas à pas montre comment créer un kit de développement logic
 ## <a name="prerequisites"></a>Prérequis
  Pour suivre cette procédure pas à pas, vous devez installer le Kit de développement logiciel (SDK) Visual Studio. Pour plus d’informations, consultez [Kit de développement logiciel (SDK) Visual Studio](../extensibility/visual-studio-sdk.md).
 
-## <a name="to-create-the-native-and-windows-runtime-libraries"></a><a name="createClassLibrary"></a>Pour créer les bibliothèques natives et Windows Runtime
+## <a name="to-create-the-native-and-windows-runtime-libraries"></a><a name="createClassLibrary"></a> Pour créer les bibliothèques natives et Windows Runtime
 
 1. Dans la barre de menus, choisissez **fichier**  >  **nouveau**  >  **projet**.
 
@@ -55,7 +55,7 @@ Cette procédure pas à pas montre comment créer un kit de développement logic
 
 9. Dans la barre de menus, choisissez **générer**  >  **générer la solution**.
 
-## <a name="to-create-the-nativemathvsix-extension-project"></a><a name="createVSIX"></a>Pour créer le projet d’extension NativeMathVSIX
+## <a name="to-create-the-nativemathvsix-extension-project"></a><a name="createVSIX"></a> Pour créer le projet d’extension NativeMathVSIX
 
 1. Dans **Explorateur de solutions**, ouvrez le menu contextuel de la **solution’NativeMath'**, puis choisissez **Ajouter**  >  **un nouveau projet**.
 
@@ -137,7 +137,7 @@ Cette procédure pas à pas montre comment créer un kit de développement logic
 
 18. Choisissez le bouton **installer** , attendez que l’installation se termine, puis ouvrez Visual Studio.
 
-## <a name="to-create-a-sample-app-that-uses-the-class-library"></a><a name="createSample"></a>Pour créer un exemple d’application qui utilise la bibliothèque de classes
+## <a name="to-create-a-sample-app-that-uses-the-class-library"></a><a name="createSample"></a> Pour créer un exemple d’application qui utilise la bibliothèque de classes
 
 1. Dans la barre de menus, choisissez **fichier**  >  **nouveau**  >  **projet**.
 

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1042a1ee21a288f0e74dc881109b65a331b53c94
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663005"
 ---
 # <a name="writing-user-commands-and-actions"></a>Écriture de commandes et d'actions utilisateur
@@ -33,9 +33,9 @@ Vous pouvez personnaliser un langage spécifique à un domaine en ajoutant des c
 
 - [Comment : programmer le comportement de copier et coller-Redirect](../misc/how-to-program-copy-and-paste-behavior-redirect.md) : comment utiliser ElementOperations.
 
-- [Guide pratique pour accéder à et contraindre la sélection actuelle](../modeling/how-to-access-and-constrain-the-current-selection.md)
+- [Comment : accéder à et contraindre la sélection actuelle](../modeling/how-to-access-and-constrain-the-current-selection.md)
 
-- [Personnalisation des outils d’élément](../modeling/customizing-element-tools.md)
+- [Personnalisation des outils d'élément](../modeling/customizing-element-tools.md)
 
 ## <a name="see-also"></a>Voir aussi
  [Déploiement de solutions de langage spécifique à un domaine](../modeling/deploying-domain-specific-language-solutions.md)

@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a923d1f3532548ebc6ed651a0739e0e5792f7967
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663531"
 ---
 # <a name="setup-devenvexe"></a>/Setup (devenv.exe)
@@ -31,12 +31,12 @@ Force [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] à fusionner les métadonn
 devenv /setup
 ```
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Ce commutateur ne prend aucun argument. La commande `devenv /setup` est généralement utilisée comme dernière étape du processus d’installation. L’utilisation du commutateur `/setup` ne démarre pas [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].
 
  Vous devez exécuter `devenv` en tant qu’administrateur pour pouvoir utiliser les commutateurs [/setup (devenv.exe)](../../ide/reference/setup-devenv-exe.md) et [/InstallVSTemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md) .
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
  Cet exemple montre la dernière étape de l’installation d’une version de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] qui inclut des packages Visual Studio.
 
 ```
@@ -44,4 +44,4 @@ devenv /setup
 ```
 
 ## <a name="see-also"></a>Voir aussi
- [Commutateurs de la ligne de commande Devenv](../../ide/reference/devenv-command-line-switches.md)
+ [Commutateurs de ligne de commande devenv](../../ide/reference/devenv-command-line-switches.md)

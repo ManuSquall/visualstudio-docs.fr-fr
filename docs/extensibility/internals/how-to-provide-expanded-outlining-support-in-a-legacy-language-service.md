@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 450ef1430e86467d116cc635a27600756bc36075
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905282"
 ---
 # <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>Comment : fournir une prise en charge développée du mode plan dans un service de langage hérité
@@ -27,7 +27,7 @@ Il existe deux options pour étendre la prise en charge du mode plan à votre la
 
 ### <a name="to-implement-an-editor-controlled-outline-region"></a>Pour implémenter une région en mode plan contrôlée par l’éditeur
 
-1. Appeler `QueryService` pour<xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>
+1. Appeler `QueryService` pour <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>
 
      Cela retourne un pointeur vers <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager> .
 

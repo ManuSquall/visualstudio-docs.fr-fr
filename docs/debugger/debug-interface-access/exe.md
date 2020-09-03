@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 20daae821191bd5cf8bdb4dbe0f56935f1a85c17
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468650"
 ---
 # <a name="exe"></a>Exe
@@ -31,9 +31,9 @@ Exe est le seul symbole sans un parent lexical ou de classe, car il représente 
 |Propriété|Type de données|Description|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_age](../../debugger/debug-interface-access/idiasymbol-get-age.md)|`DWORD`|Âge de cet exécutable.|
-|[IDiaSymbol::get_guid](../../debugger/debug-interface-access/idiasymbol-get-guid.md)|`GUID`|`GUID`de cet exécutable.|
-|[IDiaSymbol::get_isCTypes](../../debugger/debug-interface-access/idiasymbol-get-isctypes.md)|`BOOL`|`TRUE`Si le fichier de symboles associé à cet exécutable contient des types C (uniquement dans DIA SDK v 8.0 ou version ultérieure).|
-|[IDiaSymbol::get_isStripped](../../debugger/debug-interface-access/idiasymbol-get-isstripped.md)|`BOOL`|`TRUE`Si des symboles privés ont été supprimés du fichier de symboles associé à cet exécutable (uniquement dans DIA SDK v 8.0 ou ultérieur).|
+|[IDiaSymbol::get_guid](../../debugger/debug-interface-access/idiasymbol-get-guid.md)|`GUID`|`GUID` de cet exécutable.|
+|[IDiaSymbol::get_isCTypes](../../debugger/debug-interface-access/idiasymbol-get-isctypes.md)|`BOOL`|`TRUE` Si le fichier de symboles associé à cet exécutable contient des types C (uniquement dans DIA SDK v 8.0 ou version ultérieure).|
+|[IDiaSymbol::get_isStripped](../../debugger/debug-interface-access/idiasymbol-get-isstripped.md)|`BOOL`|`TRUE` Si des symboles privés ont été supprimés du fichier de symboles associé à cet exécutable (uniquement dans DIA SDK v 8.0 ou ultérieur).|
 |[IDiaSymbol::get_machineType](../../debugger/debug-interface-access/idiasymbol-get-machinetype.md)|`DWORD`|Valeur indiquant l’unité centrale cible (l’une des CV_CPU_TYPE_e valeurs d' [énumération](../../debugger/debug-interface-access/cv-cpu-type-e.md) ).|
 |[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|Nom du fichier. exe.|
 |[IDiaSymbol::get_signature](../../debugger/debug-interface-access/idiasymbol-get-signature.md)|`DWORD`|Signature de l’exécutable.|

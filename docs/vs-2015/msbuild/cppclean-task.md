@@ -21,10 +21,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bddba1170cf675b5bde7ab8deed8cce1e7eb57dd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196577"
 ---
 # <a name="cppclean-task"></a>CPPClean, tâche
@@ -38,12 +38,12 @@ Supprime les fichiers temporaires créés par MSBuild quand un projet Visual C++
 |            Paramètre            |                                                                                                Description                                                                                                 |
 |---------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |        **DeletedFiles**         |                               Paramètre de sortie `ITaskItem[]` facultatif.<br /><br /> Définit un tableau d’éléments de fichier de sortie MSBuild pouvant être consommés et émis par des tâches.                                |
-|          **DoDelete**           |                                                            Paramètre **Boolean** facultatif.<br /><br /> Si `true`, nettoie les fichiers de build temporaires.                                                             |
+|          **DoDelete**           |                                                            Paramètre **booléen** facultatif.<br /><br /> Si `true`, nettoie les fichiers de build temporaires.                                                             |
 | **FilePatternsToDeleteOnClean** |                                            Paramètre `String` requis.<br /><br /> Spécifie la liste des extensions de fichiers (séparées par des points-virgules) à nettoyer.                                             |
 |   **FilesExcludedFromClean**    |                                                    Paramètre `String` facultatif.<br /><br /> Spécifie la liste des fichiers (séparés par des points-virgules) à ne pas nettoyer.                                                    |
-|       **FoldersToClean**        | Paramètre `String` requis.<br /><br /> Spécifie la liste des répertoires (séparés par des points-virgules) à nettoyer. Vous pouvez spécifier un chemin complet ou relatif comportant le caractère générique ( **\\** \*). |
+|       **FoldersToClean**        | Paramètre `String` requis.<br /><br /> Spécifie la liste des répertoires (séparés par des points-virgules) à nettoyer. Vous pouvez spécifier un chemin d’accès complet ou relatif, et le chemin d’accès peut contenir le caractère générique ( **\\** \* ). |
 
 ## <a name="remarks"></a>Notes  
 
 ## <a name="see-also"></a>Voir aussi  
- [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)
+ [Référence de tâche](../msbuild/msbuild-task-reference.md)

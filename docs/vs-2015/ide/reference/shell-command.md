@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ad49aadf6be56fb330b883050e6a6ff893cf054a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663543"
 ---
 # <a name="shell-command"></a>Shell, commande
@@ -49,7 +49,7 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
 
  /OutputWindow [ou]/output [ou]/out [ou]/o facultatif. Spécifie que la sortie pour l’exécutable doit s’afficher dans la fenêtre **Sortie**.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Les commutateurs /dir /o /c doivent être spécifiés immédiatement après `Tools.Shell`. Toute syntaxe spécifiée après le nom de l’exécutable est transmise en tant qu’argument de la ligne de commande.
 
  L’alias prédéfini `Shell` peut être utilisé à la place de `Tools.Shell`.
@@ -70,7 +70,7 @@ Tools.Shell """C:\Program Files\SomeFile.exe"""
 > [!CAUTION]
 > Si vous ne mettez pas la chaîne de chemin entre guillemets ("""), Windows utilisera uniquement la partie de la chaîne jusqu’au premier espace. Par exemple, si la chaîne de chemin ci-dessus n’a pas été correctement mise entre guillemets, Windows recherche un fichier nommé « Program » situé dans le répertoire racine C:\. Si un fichier exécutable C:\Program.exe est effectivement disponible, même installé de manière illicite, Windows essaie d’exécuter ce programme à la place du programme « C:\Program Files\SomeFile.exe » voulu.
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
  La commande suivante utilise xcopy.exe pour copier le fichier `MyText.txt` dans le dossier `Text`. La sortie de xcopy.exe s’affiche à la fois dans la fenêtre **Commande** et dans la fenêtre **Sortie**.
 
 ```

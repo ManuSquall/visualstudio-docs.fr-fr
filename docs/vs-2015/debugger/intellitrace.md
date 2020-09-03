@@ -23,10 +23,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c379054506672f36368b6da99c40a0a75a25e0ac
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543921"
 ---
 # <a name="intellitrace"></a>IntelliTrace
@@ -146,7 +146,7 @@ Vous pouvez consacrer moins de temps au débogage de votre application quand vou
   
   - [Utilisation des données IntelliTrace enregistrées](../debugger/using-saved-intellitrace-data.md)  
   
-  - [Procédure pas à pas : débogage d'une application SharePoint avec IntelliTrace](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)  
+  - [Procédure pas à pas : Débogage d'une application SharePoint avec IntelliTrace](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)  
   
   **Collecte des informations sur les appels de fonction**  
   
@@ -174,7 +174,7 @@ Vous pouvez consacrer moins de temps au débogage de votre application quand vou
   
  La collecte d'informations sur les appels peut ralentir votre application de manière significative. Cela peut également augmenter la taille des fichiers journaux IntelliTrace (.iTrace) que vous enregistrez sur le disque. Pour minimiser ces effets, collectez des informations sur les appels uniquement pour les modules qui vous intéressent.  Pour modifier la taille maximale de vos fichiers .iTrace, accédez à **Outils**, **Options**, **IntelliTrace**, **Avancé**. Consultez [configurer IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   
-## <a name="in-this-section"></a>Dans cette section  
+## <a name="in-this-section"></a>Contenu de cette section  
  [Fonctionnalités IntelliTrace](../debugger/intellitrace-features.md)  
   
  [Configurer IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e)  

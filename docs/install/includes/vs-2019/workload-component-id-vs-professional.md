@@ -11,10 +11,10 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
 ms.openlocfilehash: b9cfa5fb04f56795d2e49d98e9d43ed6a9fb8c33
-ms.sourcegitcommit: 78face15e71c305a2146358df51f8f1fefe3388f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87841852"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-professional-2019"></a>Éditeur de base de Visual Studio (inclus avec Visual Studio Professional 2019)
@@ -64,7 +64,7 @@ Microsoft.VisualStudio.Component.DockerTools | Outils de développement de conte
 Microsoft.VisualStudio.Component.FSharp | Prise en charge du langage F# | 16.0.28315.86 | Obligatoire
 Microsoft.VisualStudio.Component.FSharp.WebTemplates | Prise en charge du langage F# pour les projets web | 16.3.29207.166 | Obligatoire
 Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 16.0.28315.86 | Obligatoire
-Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0.2 | Obligatoire
+Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0,2 | Obligatoire
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | Diagnostics JavaScript | 16.0.28517.75 | Obligatoire
 Microsoft.VisualStudio.Component.JavaScript.TypeScript | Prise en charge du langage JavaScript et TypeScript | 16.7.30310.162 | Obligatoire
 Microsoft.VisualStudio.Component.ManagedDesktop.Core | Managed Desktop Workload Core | 16.4.29318.151 | Obligatoire
@@ -217,7 +217,7 @@ Microsoft. net. Component. 4.8. SDK | Kit de développement logiciel (SDK) .NET 
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Outils de développement .NET Framework 4.7.2 | 16.3.29207.166 | Obligatoire
 Microsoft. Netcore. Component. Runtime. 3.1 | Runtime .NET Core 3,1 LTS | 16.7.30310.162 | Obligatoire
 Microsoft. Netcore. Component. SDK | SDK .NET Core | 16.7.30310.162 | Obligatoire
-Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0.2 | Obligatoire
+Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0,2 | Obligatoire
 Microsoft.VisualStudio.Component.ManagedDesktop.Core | Managed Desktop Workload Core | 16.4.29318.151 | Obligatoire
 Microsoft.VisualStudio.Component.ManagedDesktop.Prerequisites | Outils de développement .NET Desktop | 16.7.30310.162 | Obligatoire
 Microsoft.VisualStudio.Component.Roslyn.Compiler | Compilateurs Roslyn C# et Visual Basic | 16.0.28714.129 | Obligatoire
@@ -304,7 +304,7 @@ Component.UnityEngine.x86 | Éditeur Unity 5.6 32 bits | 16.1.28811.260 | Reco
 ID de composant | Nom | Version | Type de dépendance
 --- | --- | --- | ---
 Component.MDD.Linux | Développement C++ pour Linux | 16.5.29515.121 | Obligatoire
-Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0.2 | Obligatoire
+Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0,2 | Obligatoire
 Microsoft.VisualStudio.Component.VC.CoreIde | Fonctionnalités C++ de base | 16.7.30310.162 | Obligatoire
 Component.Linux.CMake | Outils C++ CMake pour Linux | 16.2.29003.222 | Recommandé
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | Développement web et ASP.NET | 16.7.30310.162 | Recommandé
@@ -321,7 +321,7 @@ Component.MDD.Linux.GCC.arm | Outils de développement incorporé et IoT | 16.5.
 ID de composant | Nom | Version | Type de dépendance
 --- | --- | --- | ---
 Microsoft.Component.MSBuild | MSBuild | 16.5.29515.121 | Obligatoire
-Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0.2 | Obligatoire
+Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0,2 | Obligatoire
 Microsoft.VisualStudio.Component.Roslyn.Compiler | Compilateurs Roslyn C# et Visual Basic | 16.0.28714.129 | Obligatoire
 Microsoft.VisualStudio.Component.TextTemplating | Transformation de modèle de texte | 16.0.28625.61 | Obligatoire
 Microsoft.VisualStudio.Component.VC.CoreIde | Fonctionnalités C++ de base | 16.7.30310.162 | Obligatoire
@@ -368,7 +368,7 @@ Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Llvm.Clang | Outils C++ Clan
 
 ID de composant | Nom | Version | Type de dépendance
 --- | --- | --- | ---
-Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0.2 | Obligatoire
+Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0,2 | Obligatoire
 Microsoft.VisualStudio.Component.VC.CoreIde | Fonctionnalités C++ de base | 16.7.30310.162 | Obligatoire
 Microsoft.VisualStudio.Component.VC.Redist.14.Latest | Mise à jour de Redistributable C++ 2019 | 16.5.29515.121 | Obligatoire
 Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC V142-VS 2019 C++ x64/x86 Build Tools (v 14.27) | 16.7.30310.162 | Obligatoire
@@ -416,7 +416,7 @@ ID de composant | Nom | Version | Type de dépendance
 --- | --- | --- | ---
 Component.Android.SDK25.Private | Installation du kit Android SDK (niveau d’API 25) (installation locale pour le développement mobile en C++) | 16.0.28625.61 | Obligatoire
 Component.OpenJDK | OpenJDK (distribution Microsoft) | 16.1.28811.260 | Obligatoire
-Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0.2 | Obligatoire
+Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0,2 | Obligatoire
 Microsoft.VisualStudio.Component.VC.CoreIde | Fonctionnalités C++ de base | 16.7.30310.162 | Obligatoire
 Component.Android.NDK.R16B | Kit Android NDK (R16B) | 16.7.30316.201 | Recommandé
 Component.Ant | Apache Ant (1.9.3) | 1.9.3.8 | Recommandé
@@ -456,7 +456,7 @@ Microsoft.VisualStudio.Component.DockerTools | Outils de développement de conte
 Microsoft.VisualStudio.Component.FSharp | Prise en charge du langage F# | 16.0.28315.86 | Obligatoire
 Microsoft.VisualStudio.Component.FSharp.WebTemplates | Prise en charge du langage F# pour les projets web | 16.3.29207.166 | Obligatoire
 Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 16.0.28315.86 | Obligatoire
-Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0.2 | Obligatoire
+Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0,2 | Obligatoire
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | Diagnostics JavaScript | 16.0.28517.75 | Obligatoire
 Microsoft.VisualStudio.Component.JavaScript.TypeScript | Prise en charge du langage JavaScript et TypeScript | 16.7.30310.162 | Obligatoire
 Microsoft.VisualStudio.Component.ManagedDesktop.Core | Managed Desktop Workload Core | 16.4.29318.151 | Obligatoire
@@ -515,7 +515,7 @@ Microsoft. Netcore. Component. DevelopmentTools | Outils de développement .NET 
 Microsoft. Netcore. Component. Runtime. 3.1 | Runtime .NET Core 3,1 LTS | 16.7.30310.162 | Obligatoire
 Microsoft. Netcore. Component. SDK | SDK .NET Core | 16.7.30310.162 | Obligatoire
 Microsoft.VisualStudio.Component.FSharp | Prise en charge du langage F# | 16.0.28315.86 | Obligatoire
-Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0.2 | Obligatoire
+Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0,2 | Obligatoire
 Microsoft.VisualStudio.Component.Merq | Outils communs internes Xamarin | 16.2.29012.281 | Obligatoire
 Microsoft.VisualStudio.Component.MonoDebugger | Débogueur mono | 16.0.28517.75 | Obligatoire
 Microsoft.VisualStudio.Component.NuGet | Gestionnaire de package NuGet | 16.1.28829.92 | Obligatoire
@@ -552,7 +552,7 @@ Microsoft.VisualStudio.Component.DockerTools | Outils de développement de conte
 Microsoft.VisualStudio.Component.FSharp | Prise en charge du langage F# | 16.0.28315.86 | Obligatoire
 Microsoft.VisualStudio.Component.FSharp.WebTemplates | Prise en charge du langage F# pour les projets web | 16.3.29207.166 | Obligatoire
 Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 16.0.28315.86 | Obligatoire
-Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0.2 | Obligatoire
+Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0,2 | Obligatoire
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | Diagnostics JavaScript | 16.0.28517.75 | Obligatoire
 Microsoft.VisualStudio.Component.JavaScript.TypeScript | Prise en charge du langage JavaScript et TypeScript | 16.7.30310.162 | Obligatoire
 Microsoft.VisualStudio.Component.ManagedDesktop.Core | Managed Desktop Workload Core | 16.4.29318.151 | Obligatoire
@@ -619,7 +619,7 @@ Microsoft.VisualStudio.Component.Node.Tools | Outils de développement Node.js |
 Microsoft. VisualStudio. Component. dactylographié. 3.9 | Kit de développement de machine 3,9 | 16.0.30310.162 | Obligatoire
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | Développement web et ASP.NET | 16.7.30310.162 | Obligatoire
 Component.Microsoft.VisualStudio.LiveShare | Live Share | 1.0.2517 | Recommandé
-Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0.2 | Recommandé
+Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0,2 | Recommandé
 Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 16.0.28517.75 | Recommandé
 Microsoft.VisualStudio.Component.AppInsights.Tools | Developer Analytics Tools | 16.5.29515.121 | Facultatif
 Microsoft.VisualStudio.Component.Common.Azure.Tools | Outils de connectivité et de publication | 16.4.29409.204 | Facultatif
@@ -652,7 +652,7 @@ Microsoft.VisualStudio.Component.AppInsights.Tools | Developer Analytics Tools |
 Microsoft.VisualStudio.Component.Common.Azure.Tools | Outils de connectivité et de publication | 16.4.29409.204 | Obligatoire
 Microsoft.VisualStudio.Component.DockerTools | Outils de développement de conteneur | 16.4.29409.204 | Obligatoire
 Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 16.0.28315.86 | Obligatoire
-Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0.2 | Obligatoire
+Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0,2 | Obligatoire
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | Diagnostics JavaScript | 16.0.28517.75 | Obligatoire
 Microsoft.VisualStudio.Component.JavaScript.TypeScript | Prise en charge du langage JavaScript et TypeScript | 16.7.30310.162 | Obligatoire
 Microsoft.VisualStudio.Component.ManagedDesktop.Core | Managed Desktop Workload Core | 16.4.29318.151 | Obligatoire
@@ -770,7 +770,7 @@ Microsoft. Netcore. Component. SDK | SDK .NET Core | 16.7.30310.162 | Obligatoir
 Microsoft.VisualStudio.Component.AppInsights.Tools | Developer Analytics Tools | 16.5.29515.121 | Obligatoire
 Microsoft.VisualStudio.Component.DiagnosticTools | Outils de profilage .NET | 16.7.30310.162 | Obligatoire
 Microsoft.VisualStudio.Component.Graphics | Éditeurs d’images et de modèles 3D | 16.0.28517.75 | Obligatoire
-Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0.2 | Obligatoire
+Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0,2 | Obligatoire
 Microsoft.VisualStudio.Component.NuGet | Gestionnaire de package NuGet | 16.1.28829.92 | Obligatoire
 Microsoft.VisualStudio.Component.Roslyn.Compiler | Compilateurs Roslyn C# et Visual Basic | 16.0.28714.129 | Obligatoire
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# et Visual Basic | 16.7.30310.162 | Obligatoire
@@ -813,7 +813,7 @@ Microsoft.Net.Component.4.6.TargetingPack | Pack de ciblage .NET Framework 4.6 
 Microsoft.Net.Component.4.7.2.TargetingPack | Pack de ciblage .NET Framework 4.7.2 | 16.7.30310.162 | Obligatoire
 Microsoft. net. Component. 4.8. SDK | Kit de développement logiciel (SDK) .NET Framework 4,8 | 16.4.29313.120 | Obligatoire
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Outils de développement .NET Framework 4.7.2 | 16.3.29207.166 | Obligatoire
-Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0.2 | Obligatoire
+Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0,2 | Obligatoire
 Microsoft.VisualStudio.Component.NuGet | Gestionnaire de package NuGet | 16.1.28829.92 | Obligatoire
 Microsoft.VisualStudio.Component.Roslyn.Compiler | Compilateurs Roslyn C# et Visual Basic | 16.0.28714.129 | Obligatoire
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# et Visual Basic | 16.7.30310.162 | Obligatoire

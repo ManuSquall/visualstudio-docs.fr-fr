@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 814381cb4792d9c21825ab1be5ebc4da415bc974
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468587"
 ---
 # <a name="idiaaddressmapget_imagealign"></a>IDiaAddressMap::get_imageAlign
@@ -38,7 +38,7 @@ HRESULT get_imageAlign ( 
 ## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Les images sont alignées sur des limites de mémoire spécifiques, en fonction de la façon dont l’image a été chargée et créée. L’alignement s’effectue généralement sur des limites de 1, 2, 4, 8, 16, 32 ou 64 octets. L’alignement de l’image peut être défini à l’aide d’un appel à la méthode [IDiaAddressMap ::p ut_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-put-imagealign.md) .
 
 ## <a name="see-also"></a>Voir aussi

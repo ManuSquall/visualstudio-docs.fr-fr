@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4db3506ca21289c8ffda8582337cd8027a261438
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586360"
 ---
 # <a name="use-models-in-your-development-process"></a>Utiliser des modèles dans votre processus de développement
@@ -122,7 +122,7 @@ Dans Visual Studio, vous pouvez utiliser un modèle pour vous aider à comprendr
 
 |Niveau de conception|Types de diagrammes|
 |------------------|-------------------|
-|Processus d'entreprise<br /><br /> Comprendre le contexte dans lequel votre système sera utilisé vous aide à comprendre les besoins des utilisateurs.|-Les diagrammes d’activités décrivent le déroulement du travail entre les personnes et les systèmes pour atteindre les objectifs de l’entreprise.<br />-Les diagrammes de classes conceptuelles décrivent les concepts métier utilisés dans le processus d’entreprise.|
+|Processus métier<br /><br /> Comprendre le contexte dans lequel votre système sera utilisé vous aide à comprendre les besoins des utilisateurs.|-Les diagrammes d’activités décrivent le déroulement du travail entre les personnes et les systèmes pour atteindre les objectifs de l’entreprise.<br />-Les diagrammes de classes conceptuelles décrivent les concepts métier utilisés dans le processus d’entreprise.|
 |Besoins des utilisateurs<br /><br /> Définition de ce que votre système doit apporter aux utilisateurs.|-Les diagrammes de cas d’usage résument les interactions entre les utilisateurs et les autres systèmes externes et le système que vous développez. Vous pouvez joindre d'autres documents à chaque cas d'usage pour le décrire en détail.<br />-Les diagrammes de classes UML décrivent les types d’informations à propos desquels les utilisateurs et le système communiquent.<br />-Les règles métier et les exigences de qualité de service peuvent être décrites dans des documents distincts.|
 |Conception de haut niveau<br /><br /> Structure globale du système : composants principaux et comment ils s'imbriquent les uns aux autres.|-Les diagrammes de couche décrivent comment le système est structuré en parties interdépendantes. Vous pouvez valider le code de programme par rapport aux diagrammes de couche pour vérifier qu'il adhère à l'architecture.<br />-Les diagrammes de composant montrent les interfaces des parties, en spécifiant les messages et les services fournis et requis par chaque composant.<br />-Les diagrammes de séquence montrent comment les composants communiquent pour implémenter chaque cas d’usage.<br />-Les diagrammes de classes UML décrivent les interfaces des composants et les types de données passées entre les composants.|
 |Modèles de conception<br /><br /> Conventions et méthodes de résolution des problèmes de conception utilisées dans toutes les parties de la conception|-Les diagrammes de classes UML décrivent les structures d’un modèle<br />-Les diagrammes de séquence ou d’activités affichent les interactions et les algorithmes|
@@ -137,5 +137,5 @@ Dans Visual Studio, vous pouvez utiliser un modèle pour vous aider à comprendr
 |**Blogs**|[Blog Visual Studio ALM + Team Foundation Server](https://devblogs.microsoft.com/devops/welcome-to-the-visual-studio-alm-team-foundation-server-blog/)|
 |**Articles et journaux techniques**|[Centre d’architecture MSDN](https://msdn.microsoft.com/architecture/default.aspx)<br /><br /> [Guide des outils d'architecture Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md)|
 
-## <a name="see-also"></a> Voir aussi
+## <a name="see-also"></a>Voir aussi
  [Utiliser des modèles dans le développement Agile](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f) [créer des modèles pour votre](../modeling/create-models-for-your-app.md) modèle d’application modèles d' [impératifs de l’utilisateur](../modeling/model-user-requirements.md) [l’architecture de votre application](../modeling/model-your-app-s-architecture.md) [développer des tests à partir d’une](../modeling/develop-tests-from-a-model.md) [structure de modèle votre solution de modélisation](../modeling/structure-your-modeling-solution.md)

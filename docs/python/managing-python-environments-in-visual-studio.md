@@ -10,10 +10,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 1b6782a95793f222ba15fe8f928ecd9d7337c90f
-ms.sourcegitcommit: 50bbb62525c91c5a31bab57e1caf37c5638872c8
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "87913309"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Comment créer et gérer des environnements Python dans Visual Studio
@@ -225,7 +225,7 @@ Suivez les étapes ci-dessous pour identifier un environnement installé à un e
 
 1. Dès que les champs contiennent les valeurs souhaitées, sélectionnez **Appliquer** pour enregistrer la configuration. Vous pouvez maintenant utiliser l’environnement comme n’importe quel autre environnement au sein de Visual Studio.
 
-1. Si vous devez supprimer un environnement identifié manuellement, sélectionnez la commande **supprimer** sous l’onglet **configurer** . les environnements détectés automatiquement ne fournissent pas cette option. Pour plus d’informations, consultez la section [Onglet Configurer](python-environments-window-tab-reference.md#configure-tab).
+1. Si vous devez supprimer un environnement identifié manuellement, sélectionnez la commande **supprimer** sous l’onglet **configurer** . Les environnements détectés automatiquement ne fournissent pas cette option. Pour plus d’informations, consultez la section [Onglet Configurer](python-environments-window-tab-reference.md#configure-tab).
 
 ::: moniker-end
 

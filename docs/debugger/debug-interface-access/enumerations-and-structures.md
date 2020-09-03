@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5c7441e25533ca29f84d55779942b0bfb785dd9f
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468657"
 ---
 # <a name="enumerations-and-structures"></a>Énumérations et structures
@@ -98,7 +98,7 @@ Décrit une entrée dans une table d’adresses.
 
 Spécifie les interfaces fournies par le kit de développement logiciel (SDK) DIA.
 
-[Constantes (Kit de développement logiciel Debug Interface Access)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)
+[Constantes (Kit de développement logiciel Debug Interface Access)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)
 
 Spécifie les constantes qui sont disponibles dans le kit de développement DIA (SDK).
 

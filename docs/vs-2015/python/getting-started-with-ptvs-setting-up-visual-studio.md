@@ -11,10 +11,10 @@ author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.openlocfilehash: cf841c181b3a7e0b378e53e3901a079b7136b32c
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586985"
 ---
 # <a name="getting-started-with-ptvs-setting-up-visual-studio"></a>Prise en main de PTVS : configuration de Visual Studio
@@ -39,6 +39,6 @@ Si vous voulez utiliser IPython avec PTVS, suivez ces [instructions](https://arc
 
 Vous pouvez obtenir ces instructions en regardant cette courte [vidéo YouTube](https://www.youtube.com/watch?v=_okUV47eM5c&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=1).
 
-## <a name="see-also"></a> Voir aussi
+## <a name="see-also"></a>Voir aussi
 
 [Vidéos sur le démarrage et l’exploration de PTVS](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)

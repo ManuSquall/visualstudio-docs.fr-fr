@@ -12,22 +12,22 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3f1a7030b6c351407814314ccd41e0e2ed6a880e
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75593107"
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>System. Activities, onglet de la boîte de dialogue choisir des éléments de boîte à outils
 
-Cet onglet de la boîte de dialogue **choisir des éléments de boîte à outils** affiche la liste des activités, modèles et éléments de Windows Workflow Foundation (WF) à votre disposition. Pour afficher cette liste, sélectionnez **choisir des éléments de boîte à outils** dans le menu **Outils** ou cliquez avec le bouton droit sur la boîte **à outils** et sélectionnez **choisir les éléments** pour afficher la boîte de dialogue choisir des **éléments de boîte à outils** , puis sélectionnez son onglet **System. Activities** . la liste contient les activités de flux de travail des assemblys System. Activities, System. ServiceModel. Activities Toutefois, seules les activités fournies par le système affichées et celles ajoutées par le biais d’autres assemblys affichés dans la **boîte à outils** sont activées par défaut. Les activités ajoutées récemment sont automatiquement vérifiées et s’affichent dans la boîte **à outils** lorsque vous cliquez sur **OK** dans la boîte de dialogue. En outre, ces éléments apparaissent dans la **boîte à outils** sous une nouvelle catégorie qui correspond à l’espace de noms où réside l’activité/l’élément/modèle.
+Cet onglet de la boîte de dialogue **choisir des éléments de boîte à outils** affiche la liste des activités, modèles et éléments de Windows Workflow Foundation (WF) à votre disposition. Pour afficher cette liste, sélectionnez **choisir des éléments de boîte à outils** dans le menu **Outils** ou cliquez avec le bouton droit sur la boîte **à outils** et sélectionnez **choisir les éléments** pour afficher la boîte de dialogue choisir des **éléments de boîte à outils** , puis sélectionnez son onglet **System. Activities** . La liste est prête à l’emploi et contient les activités de flux de travail des assemblys System. Activities, System. ServiceModel. Activities et System. Activities. Core. Presentation. Toutefois, seules les activités fournies par le système affichées et celles ajoutées par le biais d’autres assemblys affichés dans la **boîte à outils** sont activées par défaut. Les activités ajoutées récemment sont automatiquement vérifiées et s’affichent dans la boîte **à outils** lorsque vous cliquez sur **OK** dans la boîte de dialogue. En outre, ces éléments apparaissent dans la **boîte à outils** sous une nouvelle catégorie qui correspond à l’espace de noms où réside l’activité/l’élément/modèle.
 
 > [!WARNING]
 > Si vous essayez d'ajouter un assembly qui ne contient pas d'activités de workflow, un boîte de dialogue d'erreur s'affiche pour expliquer que l'assembly ne contient pas d'activités.
 
 Cette boîte de dialogue est indépendante du projet et, par conséquent, l’onglet **System. Activities** continue à s’afficher en XAML autonome ou en tant que type de projet non Workflow.
 
-Le filtrage est effectué sur chaque onglet et il n’est pas possible d’ajouter des activités de flux de travail via l’onglet **composant .net** . Ajoutez-les via l’onglet **System. Activities** lui-même.
+Le filtrage est effectué sur chaque onglet et il n’est pas possible d’ajouter des activités de flux de travail via l’onglet **composant .net** . Ajoutez-les par le biais de l’onglet **System. Activities** lui-même.
 
 Vous pouvez désélectionner tous les éléments que vous ne souhaitez pas afficher dans la **boîte à outils** à partir de cet onglet de boîte de dialogue. vous pouvez également le faire à l’aide de l’option de menu **supprimer** avec le bouton droit dans la **boîte à outils** et en déréférençant un assembly ne supprime pas l’élément de la **boîte à outils**.
 

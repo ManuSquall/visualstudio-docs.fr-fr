@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c6895abd85a4394e4ddcaebcd6f09bc0a39936cb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72663027"
 ---
 # <a name="visual-basic-specific-intellisense"></a>Options IntelliSense spécifiques à Visual Basic
@@ -49,7 +49,7 @@ L’éditeur de code source de Visual Basic propose les fonctionnalités Intelli
 
 - affiche les API dans la Zone choisie comme disponibles dans la Liste des membres, et les API nécessitant des autorisations supplémentaires comme non disponibles.
 
-  Pour plus d’informations, consultez [Sécurité d’accès du code pour les applications ClickOnce](../deployment/code-access-security-for-clickonce-applications.md).
+  Pour plus d’informations, consultez [sécurité d’accès du code pour les applications ClickOnce](../deployment/code-access-security-for-clickonce-applications.md).
 
 ## <a name="see-also"></a>Voir aussi
- [Utilisation de la fonctionnalité IntelliSense](../ide/using-intellisense.md)
+ [Utilisation d’IntelliSense](../ide/using-intellisense.md)

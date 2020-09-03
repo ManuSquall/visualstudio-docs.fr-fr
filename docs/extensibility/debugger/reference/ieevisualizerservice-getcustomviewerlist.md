@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerService::GetCustomViewerList (fr) Microsoft Docs
+title: 'IEEVisualizerService :: GetCustomViewerList | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f3808ad6fb511270ee3825601c476f10a8b77124
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718016"
 ---
 # <a name="ieevisualizerservicegetcustomviewerlist"></a>IEEVisualizerService::GetCustomViewerList
-Cette méthode renvoie une liste de visualisateurs de type que ce service connaît.
+Cette méthode retourne une liste des visualiseurs de types que ce service connaît.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -47,24 +47,24 @@ int GetCustomViewerList(
 
 ## <a name="parameters"></a>Paramètres
 `celtSkip`\
-[dans] Nombre de visualisateurs à sauter.
+dans Nombre de visualiseurs à ignorer.
 
 `celRequested`\
-[dans] Nombre de visualisateurs à récupérer (précise `rgViewers` également la taille du tableau).
+dans Nombre de visualiseurs à récupérer (spécifie également la taille du `rgViewers` tableau).
 
 `rgViewers`\
-[dans, dehors] Array de [structures DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) à remplir.
+[in, out] Tableau de structures de [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) à remplir.
 
 `pceltFetched`\
-[out] Nombre de visualisateurs effectivement récupérés.
+à Nombre de visualiseurs réellement récupérés.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
-- [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) transmet la demande à cette méthode dans le cadre de son support pour les visualisateurs de type. Si l’évaluateur d’expression fournit également des téléspectateurs personnalisés pour le même type, il peut annexer correctement rempli [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) structures pour ces téléspectateurs personnalisés à la liste. Assurez-vous que [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) reflète ces téléspectateurs supplémentaires.
+- [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) transmet la requête à cette méthode dans le cadre de sa prise en charge des visualiseurs de type. Si l’évaluateur d’expression fournit également des visionneuses personnalisées pour le même type, il peut ajouter à la liste des structures [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) remplies de manière appropriée pour ces visionneuses personnalisées. Assurez-vous que [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) reflète ces visionneuses supplémentaires.
 
- Consultez [Type Visualizer et Custom Viewer](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) pour plus de détails sur les différences entre les visualisateurs et les téléspectateurs.
+ Pour plus d’informations sur les différences entre les visualiseurs et les visionneuses, consultez [visualiseur de type et visionneuse personnalisée](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) .
 
 ## <a name="see-also"></a>Voir aussi
 - [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)
