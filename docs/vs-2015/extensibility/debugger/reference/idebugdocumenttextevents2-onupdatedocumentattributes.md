@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents2::onUpdateDocumentAttributes | Microsoft Docs
+title: 'IDebugDocumentTextEvents2 :: onUpdateDocumentAttributes | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 21d0a0f7edb669610e48d16f72ec730b3d204889
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148763"
 ---
 # <a name="idebugdocumenttextevents2onupdatedocumentattributes"></a>IDebugDocumentTextEvents2::onUpdateDocumentAttributes
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Notifie le récepteur de l’événement que les attributs de document ont été mis à jour.  
+Avertit le destinataire de l’événement que les attributs du document ont été mis à jour.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -40,10 +40,10 @@ int onUpdateDocumentAttributes( 
   
 #### <a name="parameters"></a>Paramètres  
  `textdocattr`  
- [in] Une combinaison d’indicateurs de la [TEXT_DOC_ATTR_2](../../../extensibility/debugger/reference/text-doc-attr-2.md) énumération qui spécifie les attributs de mise à jour du document.  
+ dans Combinaison d’indicateurs de l’énumération [TEXT_DOC_ATTR_2](../../../extensibility/debugger/reference/text-doc-attr-2.md) qui spécifie les attributs mis à jour du document.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)   

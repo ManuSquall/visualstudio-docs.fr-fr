@@ -1,5 +1,5 @@
 ---
-title: Fonction SccCloseProject (fr) Microsoft Docs
+title: SccCloseProject fonction) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 71df385bc0cf42c2437abfd117c2f84bda5b5432
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701047"
 ---
-# <a name="scccloseproject-function"></a>Fonction SccCloseProject
-Cette fonction clôt un projet, marquant la fin d’une session particulière.
+# <a name="scccloseproject-function"></a>SccCloseProject fonction)
+Cette fonction ferme un projet et marque la fin d’une session particulière.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -31,22 +31,22 @@ SCCRTN SccCloseProject (
 ```
 
 ### <a name="parameters"></a>Paramètres
- pvContext La structure de contexte plug-in de contrôle source.
+ pvContext la structure du contexte du plug-in de contrôle de code source.
 
 ## <a name="return-value"></a>Valeur retournée
- La mise en œuvre plug-in de cette fonction de contrôle source devrait renvoyer l’une des valeurs suivantes :
+ L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
 |Valeur|Description|
 |-----------|-----------------|
-|SCC_OK|Le projet a été fermé avec succès.|
+|SCC_OK|Le projet a été correctement fermé.|
 |SCC_E_PROJNOTOPEN|Aucun projet n’est actuellement ouvert.|
 |SCC_E_NOTAUTHORIZED|L’utilisateur n’est pas autorisé à effectuer cette opération.|
-|SCC_E_NONSPECIFICERROR|Défaillance non spécifique.|
+|SCC_E_NONSPECIFICERROR|Échec non spécifique.|
 
 ## <a name="remarks"></a>Notes
- Le [SccOpenProject](../extensibility/sccopenproject-function.md) est toujours appelé avant cette fonction. Un appel à cette fonction est ensuite `SccOpenProject` suivi d’un appel à la fonction ou à la [SccUninitialize](../extensibility/sccuninitialize-function.md), qui met fin à la connexion au système de contrôle source complètement.
+ Le [SccOpenProject](../extensibility/sccopenproject-function.md) est toujours appelé avant cette fonction. Un appel à cette fonction est ensuite suivi d’un appel à la `SccOpenProject` fonction ou à [SccUninitialize](../extensibility/sccuninitialize-function.md), qui met complètement fin à la connexion au système de contrôle de code source.
 
 ## <a name="see-also"></a>Voir aussi
-- [Fonctions d’API plug-in de contrôle des sources](../extensibility/source-control-plug-in-api-functions.md)
+- [Fonctions de l’API du plug-in de contrôle de code source](../extensibility/source-control-plug-in-api-functions.md)
 - [SccOpenProject](../extensibility/sccopenproject-function.md)
 - [SccInitialize](../extensibility/sccinitialize-function.md)

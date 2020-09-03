@@ -1,5 +1,5 @@
 ---
-title: Variante de Dimensions de Texture de moitié / un quart | Microsoft Docs
+title: Variante de dimensions de texture demi-trimestre | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 03485a3b9df9c06b1ef4755a5758cf2c8c997d1e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161157"
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>Variante de dimensions de la texture moitié/un quart
@@ -47,5 +47,5 @@ Réduit les dimensions des textures qui ne sont pas des cibles de rendu.
  Cette variante redimensionne les textures au moment de l'exécution avant l'appel à `CreateTexture2D`. Nous déconseillons cette approche pour le code de production, car les textures de taille réelle consomment plus d'espace disque et cette étape supplémentaire peut allonger sensiblement les temps de chargement dans votre application (surtout dans le cas des textures compressées, qui nécessitent des ressources de calcul importantes pour l'encodage). Nous vous recommandons plutôt de redimensionner vos textures hors connexion en utilisant un éditeur ou un processeur d'images intégré à votre pipeline de génération. Ces approches réduisent les besoins en espace disque, éliminent les surcharges au moment de l'exécution de votre application et autorisent un temps de traitement supérieur, ce qui vous permet de conserver une qualité d'image optimale lors de la réduction ou de la compression de vos textures.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Variante de génération mipmap](../debugger/mip-map-generation-variant.md)   
+ [Variante de génération de mappage MIP](../debugger/mip-map-generation-variant.md)   
  [Variante de compression de texture BC](../debugger/bc-texture-compression-variant.md)

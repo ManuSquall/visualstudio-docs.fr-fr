@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 61fe8735511e9830542ce8622a6d984a0a817671
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161217"
 ---
 # <a name="idiaenumframedatanext"></a>IDiaEnumFrameData::Next
@@ -37,16 +37,16 @@ HRESULT Next ( 
   
 #### <a name="parameters"></a>Paramètres  
  celt  
- [in] Le nombre d’éléments de données de frame dans l’énumérateur à récupérer.  
+ dans Nombre d’éléments de données de frame dans l’énumérateur à récupérer.  
   
  rgelt  
- [out] Un tableau de [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) objets à remplir avec les éléments de données de frame demandé.  
+ à Tableau d’objets [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) à remplir avec les éléments de données de frame demandés.  
   
  pceltFetched  
- [out] Retourne le nombre d’éléments de données de frame dans l’énumérateur extraite.  
+ à Retourne le nombre d’éléments de données de frame dans l’énumérateur extrait.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` s’il n’existe plus aucun enregistrement. Sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` s’il n’y a plus d’enregistrements. Sinon, retourne un code d'erreur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)   

@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramProvider2::GetProviderProcessData | Microsoft Docs
+title: 'IDebugProgramProvider2 :: GetProviderProcessData | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a50faf4531a098dde544adcffe535ed26e9c5cd8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148517"
 ---
 # <a name="idebugprogramprovider2getproviderprocessdata"></a>IDebugProgramProvider2::GetProviderProcessData
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Récupère une liste de programmes en cours d’exécution à partir d’un processus spécifié.  
+Récupère une liste des programmes en cours d’exécution à partir d’un processus spécifié.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -48,32 +48,32 @@ int GetProviderProcessData(
   
 #### <a name="parameters"></a>Paramètres  
  `Flags`  
- [in] Une combinaison d’indicateurs de la [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) énumération. Les indicateurs suivants sont généralement utilisés pour cet appel :  
+ dans Combinaison d’indicateurs de l’énumération [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) . Les indicateurs suivants sont typiques pour cet appel :  
   
 |Indicateur|Description|  
 |----------|-----------------|  
 |`PFLAG_REMOTE_PORT`|L’appelant est en cours d’exécution sur l’ordinateur distant.|  
-|`PFLAG_DEBUGGEE`|L’appelant est en cours de débogage (informations supplémentaires sur le marshaling seront retournées pour chaque nœud).|  
-|`PFLAG_ATTACHED_TO_DEBUGGEE`|L’appelant a été attaché à mais pas lancé par le débogueur.|  
+|`PFLAG_DEBUGGEE`|L’appelant est actuellement en cours de débogage (des informations supplémentaires sur le marshaling seront retournées pour chaque nœud).|  
+|`PFLAG_ATTACHED_TO_DEBUGGEE`|L’appelant a été attaché à, mais il n’a pas été lancé par le débogueur.|  
 |`PFLAG_GET_PROGRAM_NODES`|L’appelant demande une liste de nœuds de programme à retourner.|  
   
  `pPort`  
- [in] Le port, le processus appelant s’exécute sur.  
+ dans Port sur lequel le processus appelant s’exécute.  
   
  `processId`  
- [in] Un [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) structure qui contient l’ID du processus qui contient le programme en question.  
+ dans Structure [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) contenant l’ID du processus qui contient le programme en question.  
   
  `EngineFilter`  
- [in] Un tableau de GUID pour les moteurs de débogage affecté pour déboguer ce processus (ces seront utilisés pour filtrer les programmes qui sont en réalité retournées selon ce que les moteurs fournis en charge ; si aucun moteur n’est spécifié, tous les programmes seront retourné).  
+ dans Tableau de GUID pour les moteurs de débogage affectés au débogage de ce processus (ceux-ci sont utilisés pour filtrer les programmes qui sont réellement retournés en fonction de ce que les moteurs fournis prennent en charge ; si aucun moteur n’est spécifié, tous les programmes sont retournés).  
   
  `pProcess`  
- [out] Un [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) structure est remplie avec les informations demandées.  
+ à Structure [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) qui est renseignée avec les informations demandées.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode est généralement appelée par un processus pour obtenir une liste des programmes en cours d’exécution dans ce processus. Les informations retournées sont une liste de [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objets.  
+ Cette méthode est normalement appelée par un processus pour obtenir une liste de programmes en cours d’exécution dans ce processus. Les informations retournées sont une liste d’objets [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) .  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)   

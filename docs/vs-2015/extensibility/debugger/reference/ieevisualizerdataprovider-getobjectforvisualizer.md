@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerDataProvider::GetObjectForVisualizer | Microsoft Docs
+title: 'IEEVisualizerDataProvider :: GetObjectForVisualizer | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 88562ae2238f33f1f46913a42df44fcb482cc8fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68192082"
 ---
 # <a name="ieevisualizerdataprovidergetobjectforvisualizer"></a>IEEVisualizerDataProvider::GetObjectForVisualizer
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Cette méthode obtient l’objet qui représente ce visualiseur.  
+Cette méthode obtient l’objet représenté par ce visualiseur.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -40,13 +40,13 @@ int GetObjectForVisualizer(
   
 #### <a name="parameters"></a>Paramètres  
  `ppObject`  
- [out] L’objet représenté par ce visualiseur  
+ à Objet représenté par ce visualiseur  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="remarks"></a>Notes  
- `GetObjectForVisualizer` est autorisé à retourner une version mise en cache de l’objet. Si l’appelant veut s’assurer que l’objet est à jour, puis il appellera [GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md).  
+ `GetObjectForVisualizer` est autorisé à retourner une version mise en cache de l’objet. Si l’appelant souhaite s’assurer que l’objet est à jour, il appellera [GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)   

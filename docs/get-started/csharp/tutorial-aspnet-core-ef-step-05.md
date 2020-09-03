@@ -17,10 +17,10 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: 55dd48ed2c319984fcc96e806c97a7ae24ce7170
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88248672"
 ---
 # <a name="step-5-deploy-your-aspnet-core-app-to-azure"></a>Étape 5 : déploiement de votre application ASP.NET Core sur Azure
@@ -101,7 +101,7 @@ Par défaut, Azure s’attend que la connexion d’une nouvelle application à s
 
 Accédez au chemin */Games* : vous devriez pouvoir ajouter un nouveau jeu et le voir apparaître. Ensuite, dans le chemin */swagger*, utilisez les points de terminaison d’API web pour vérifier que l’API de l’application fonctionne également.
 
-Félicitations ! Vous avez terminé cette série de tutoriels vidéo.
+Félicitations ! Vous avez terminé cette série de tutoriels vidéo.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

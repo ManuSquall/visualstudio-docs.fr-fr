@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::GetProgramId | Microsoft Docs
+title: 'IDebugProgram2 :: GetProgramId | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 19c29b5cec555f9e3ad5157d7b4581777be42c98
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68148676"
 ---
 # <a name="idebugprogram2getprogramid"></a>IDebugProgram2::GetProgramId
@@ -40,13 +40,13 @@ int GetProgramId( 
   
 #### <a name="parameters"></a>Paramètres  
  `pguidProgramId`  
- [out] Retourne le `GUID` pour ce programme.  
+ à Retourne le `GUID` pour ce programme.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="remarks"></a>Notes  
- Un moteur de débogage (dé) doit retourner l’identificateur de programme à l’origine passé à la [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) ou [attacher](../../../extensibility/debugger/reference/idebugengine2-attach.md) méthodes. Ainsi, l’identification du programme sur le débogueur composants.  
+ Un moteur DE débogage (DE) doit retourner l’identificateur de programme initialement passé aux méthodes [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) ou [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) . Cela permet d’identifier le programme parmi les composants du débogueur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   

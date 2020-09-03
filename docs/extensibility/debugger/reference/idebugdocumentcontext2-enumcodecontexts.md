@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext2::EnumCodeContexts (fr) Microsoft Docs
+title: 'IDebugDocumentContext2 :: EnumCodeContexts | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 1a12e0ebbbf5c964da69c6bf6b1e7233487d6528
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731851"
 ---
 # <a name="idebugdocumentcontext2enumcodecontexts"></a>IDebugDocumentContext2::EnumCodeContexts
@@ -42,14 +42,14 @@ int EnumCodeContexts(
 ## <a name="parameters"></a>Paramètres
 `ppEnumCodeCxts`\
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
-Un seul contexte de document peut générer plusieurs contextes de code lorsque le document utilise des modèles ou inclut des fichiers.
+Un contexte de document unique peut générer plusieurs contextes de code lorsque le document utilise des modèles ou des fichiers include.
 
 ## <a name="example"></a>Exemple
-L’exemple suivant montre comment implémenter cette méthode pour un objet simple `CDebugContext` qui expose [l’interface IDebugDocumentContext2.](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
+L’exemple suivant montre comment implémenter cette méthode pour un `CDebugContext` objet simple qui expose l’interface [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) .
 
 ```cpp
 HRESULT CDebugContext::EnumCodeContexts(IEnumDebugCodeContexts2 **ppEnumCodeCxts)
