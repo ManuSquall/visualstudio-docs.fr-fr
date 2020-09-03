@@ -12,10 +12,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 48b3f2c9aae099e3ae5f2cf2d8c438fb0f9062a2
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75590213"
 ---
 # <a name="learn-about-projects-and-solutions-using-visual-basic"></a>Découvrir les projets et les solutions avec Visual Basic
@@ -53,7 +53,7 @@ Nous allons commencer notre exploration en créant une solution vide. Une fois q
 
 1. Ouvrez Visual Studio.
 
-1. Sur la barre de menu, choisissez **File** > **New** > **Project**.
+1. Dans la barre de menus, choisissez **fichier** > **nouveau** > **projet**.
 
    La boîte de dialogue **Nouveau projet** s’affiche.
 
@@ -69,7 +69,7 @@ Nous allons commencer notre exploration en créant une solution vide. Une fois q
 
 1. Ouvrez Visual Studio.
 
-2. Sur la fenêtre de départ, choisissez **Créer un nouveau projet**.
+2. Dans la fenêtre Démarrer, choisissez **créer un nouveau projet**.
 
 3. Sur la page **Créer un projet**, entrez **nouvelle solution** dans la zone de recherche, sélectionnez le modèle **Nouvelle solution**, puis choisissez **Suivant**.
 
@@ -229,7 +229,7 @@ Dans le fichier *Calendar.vb*, la ligne qui contient l’attribut <xref:System.R
 
 1. Dans **l’Explorateur de solutions**, sélectionnez le projet **QuickTest**. Dans le menu contextuel (clic droit), sélectionnez **Propriétés**, ou appuyez simplement sur **Alt**+**Entrée**. (Vous pouvez également double-cliquer sur **Mon Projet** dans **l’Explorateur de solutions**.)
 
-   Les *pages de propriété* du projet s’ouvrent sur l’onglet **Application.** Les pages de propriété contiennent différents paramètres pour le projet. Notez que le nom de l’assembly du projet **QuickTest** est bien « QuickTest ». Vous pouvez le changer à cet endroit si vous le souhaitez. Quand vous générez le projet de test, le nom du fichier binaire obtenu a le nouveau nom choisi à la place de *QuickTest.dll*.
+   Les *pages de propriétés* du projet sont ouvertes sous l’onglet **application** . Les pages de propriétés contiennent différents paramètres pour le projet. Notez que le nom de l’assembly du projet **QuickTest** est bien « QuickTest ». Vous pouvez le changer à cet endroit si vous le souhaitez. Quand vous générez le projet de test, le nom du fichier binaire obtenu a le nouveau nom choisi à la place de *QuickTest.dll*.
 
    ![Propriétés d’un projet](../media/tutorial-projects-properties.png)
 
@@ -237,7 +237,7 @@ Dans le fichier *Calendar.vb*, la ligne qui contient l’attribut <xref:System.R
 
 ## <a name="optional-run-the-test"></a>(Facultatif) Exécuter le test
 
-Si vous souhaitez vérifier que votre test unitaire fonctionne, choisissez **Test** > **Run** > **All Tests** à partir de la barre de menu. Une fenêtre intitulée **Explorateur de tests** s’ouvre. Vérifiez que le résultat du test **TestGetCurrentDate** est correct.
+Si vous souhaitez vérifier que votre test unitaire fonctionne, choisissez **tester**  >  **exécuter**  >  **tous les tests** dans la barre de menus. Une fenêtre intitulée **Explorateur de tests** s’ouvre. Vérifiez que le résultat du test **TestGetCurrentDate** est correct.
 
 ![Team Explorer dans Visual Studio affichant le test réussi](../media/tutorial-projects-test-explorer.png)
 

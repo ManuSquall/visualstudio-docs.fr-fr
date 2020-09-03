@@ -11,22 +11,22 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 749b7a8da2cbdf8377e7f2e1fcb39787e2f42303
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149059"
 ---
-# <a name="mchildren-field"></a>Champ m_children
+# <a name="m_children-field"></a>Champ m_children
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La liste des tâches enfants qui sont inscrits auprès de cette tâche.  
+Liste des tâches enfants inscrites avec cette tâche.  
   
- **Espace de noms :** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **Espace de noms :** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Assembly :** mscorlib (dans mscorlib.dll)  
+ **Assembly :** mscorlib (en mscorlib.dll)  
   
- Étant donné que vous ne pouvez pas accéder à ce membre interne du .NET Framework, la syntaxe suivante est fournie en commun Intermediate Language (CIL).  
+ Étant donné que vous ne pouvez pas accéder à ce membre interne à partir de la .NET Framework, la syntaxe suivante est fournie en Common Intermediate Language (CIL).  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -35,9 +35,9 @@ La liste des tâches enfants qui sont inscrits auprès de cette tâche.
 ```  
   
 ## <a name="remarks"></a>Notes  
- Alors que la tâche est en cours d’exécution, seul le thread qui exécute la tâche doit accéder à ce tableau.  
+ Pendant que la tâche est en cours d’exécution, seul le thread qui exécute la tâche doit accéder à ce tableau.  
   
- Si la tâche est terminée, autres threads peuvent accéder à ce champ tant qu’ils n’ajoutent rien à celui-ci ou ne supprimez quoi que ce soit à partir de celui-ci.  
+ Si la tâche est terminée, les autres threads peuvent accéder à ce champ tant qu’ils n’y ajoutent rien ou n’en suppriment rien.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Classe ContingentProperties](../../extensibility/debugger/contingentproperties-class-internal-members.md)

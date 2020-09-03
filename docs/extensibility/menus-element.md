@@ -1,5 +1,5 @@
 ---
-title: Menus Élément Microsoft Docs
+title: Élément menus | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a6382abed36aba66087066bf5664ae55682e39e2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80702588"
 ---
 # <a name="menus-element"></a>Élément menus
-Définit tous les menus et barres d’outils qu’un VSPackage met en œuvre.
+Définit tous les menus et barres d’outils qu’un VSPackage implémente.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -37,20 +37,20 @@ Définit tous les menus et barres d’outils qu’un VSPackage met en œuvre.
 
 |Attribut|Description|
 |---------------|-----------------|
-|Condition|facultatif. Voir [Attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condition|facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Éléments enfants
 
 |Élément|Description|
 |-------------|-----------------|
-|[Élément menus](../extensibility/menus-element.md)|Définit tous les menus et barres d’outils qu’un VSPackage met en œuvre.|
-|[Élément de menu](../extensibility/menu-element.md)|Représente un menu ou une barre d’outils unique.|
+|[Élément menus](../extensibility/menus-element.md)|Définit tous les menus et barres d’outils qu’un VSPackage implémente.|
+|[Élément menu](../extensibility/menu-element.md)|Représente un menu ou une barre d’outils unique.|
 
 ### <a name="parent-elements"></a>Éléments parents
 
 |Élément|Description|
 |-------------|-----------------|
-|[Élément de commande](../extensibility/commands-element.md)|Représente la collection de commandes dans le VSPackage.|
+|[Élément Commands](../extensibility/commands-element.md)|Représente la collection de commandes dans le VSPackage.|
 
 ## <a name="example"></a>Exemple
 
@@ -78,5 +78,5 @@ Définit tous les menus et barres d’outils qu’un VSPackage met en œuvre.
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Comment VSPackages ajoute des éléments d’interface utilisateur](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Comment les VSPackages ajoutent des éléments d’interface utilisateur](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Commandes, menus et barres d’outils](../extensibility/internals/commands-menus-and-toolbars.md)

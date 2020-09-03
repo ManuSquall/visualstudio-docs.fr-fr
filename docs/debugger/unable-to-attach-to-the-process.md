@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 22d798d30d09cb509f53d093ae61bb1a02b414ec
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72728873"
 ---
 # <a name="unable-to-attach-to-the-process"></a>Impossible de s'attacher au processus
@@ -46,7 +46,7 @@ Impossible de s'attacher au processus Le composant Débogueur sur le serveur s'e
 
 2. Dans le Panneau de configuration, double-cliquez sur **Outils d’administration**.
 
-3. Dans la fenêtre Outils d’administration, double-cliquez sur **Stratégie de sécurité locale**.
+3. Dans la fenêtre outils d’administration, double-cliquez sur **stratégie de sécurité locale**.
 
 4. Dans la fenêtre Stratégie de sécurité locale, sélectionnez **Stratégies locales**.
 

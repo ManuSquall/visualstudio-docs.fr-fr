@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3390a2b38e82fc89a73a5ced82ef96d7c638a95a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161987"
 ---
 # <a name="performance-report-views"></a>Vues du rapport de performances
@@ -32,10 +32,10 @@ Cette section fournit des informations de référence pour les rapports et les v
  [Vues de données de la méthode d’échantillonnage](../profiling/profiler-sampling-method-data-views.md)  
  Informations de référence sur les vues et rapports des fichiers de données de profilage générés à l’aide de la méthode d’échantillonnage.  
   
- [Vues de données de la méthode d’instrumentation](../profiling/instrumentation-method-data-views.md)  
+ [Vues de données de la méthode d'instrumentation](../profiling/instrumentation-method-data-views.md)  
  Informations de référence pour les vues et rapports des fichiers de données de profilage générés à l’aide de la méthode d’instrumentation.  
   
- [Vues de données de mémoire .NET](../profiling/dotnet-memory-data-views.md)  
+ [Vues de données de mémoire .NET](../profiling/dotnet-memory-data-views.md)  
  Informations de référence pour les vues et rapports des fichiers de données de profilage qui incluent les données de mémoire .NET.  
   
  [Vues de données de conflit de ressources](../profiling/resource-contention-data-views.md)  
@@ -44,7 +44,7 @@ Cette section fournit des informations de référence pour les rapports et les v
  [Visualiseur concurrentiel](../profiling/concurrency-visualizer.md)  
  Informations de référence sur les vues et rapports des fichiers de données de profilage générés à l’aide de la méthode de concurrence et qui incluent des données d’exécution des threads.  
   
- [Interactions de couche, vue](../profiling/tier-interactions-view.md)  
+ [Interactions de couche (vue)](../profiling/tier-interactions-view.md)  
  Informations de référence pour la vue et le rapport d’interaction des fichiers de données de profilage qui incluent des données d’interaction de couche.  
   
 ## <a name="see-also"></a>Voir aussi  

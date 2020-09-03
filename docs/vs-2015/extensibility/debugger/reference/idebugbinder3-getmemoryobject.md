@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetMemoryObject | Microsoft Docs
+title: 'IDebugBinder3 :: GetMemoryObject | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0019b1691cb36b9d23be546cdfdb0e061779647d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68193027"
 ---
 # <a name="idebugbinder3getmemoryobject"></a>IDebugBinder3::GetMemoryObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Cette méthode récupère un objet de mémoire qui représente cet objet est lié à la mémoire.  
+Cette méthode récupère un objet de mémoire qui représente la mémoire à laquelle cet objet est lié.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -44,16 +44,16 @@ int GetMemoryObject(
   
 #### <a name="parameters"></a>Paramètres  
  `pField`  
- [in] Spécifie le champ pour obtenir l’objet de mémoire pour.  
+ dans Spécifie le champ pour lequel obtenir l’objet mémoire.  
   
  `uConstant`  
- [in] Représente une adresse mémoire ou une valeur pour une valeur constante.  
+ dans Représente une adresse mémoire ou une valeur pour une valeur constante.  
   
  `ppObject`  
- [out] Un [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) représentant cet objet est lié à la mémoire.  
+ à [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) représentant la mémoire à laquelle cet objet est lié.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)   

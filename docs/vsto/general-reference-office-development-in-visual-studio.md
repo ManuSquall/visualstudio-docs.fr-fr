@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8e8b8dee20b67338bbe1c8c78ebe1d8bcc730175
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "69551504"
 ---
 # <a name="general-reference-office-development-in-visual-studio"></a>Référence générale (développement Office dans Visual Studio)
@@ -26,8 +26,8 @@ ms.locfileid: "69551504"
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
-## <a name="in-this-section"></a>Dans cette section
-- [Assemblys PIA (Primary Interop Assembly) Office](../vsto/office-primary-interop-assemblies.md)
+## <a name="in-this-section"></a>Contenu de cette section
+- [assemblys PIA (Primary Interop Assembly) Office](../vsto/office-primary-interop-assemblies.md)
 
  Répertorie les assemblys PIA qui peuvent être installés avec Office et fournit une brève description de chacun d’eux.
 
@@ -39,16 +39,16 @@ ms.locfileid: "69551504"
 
  Décrit comment les manifestes de déploiement sont utilisés dans les solutions Office.
 
-- [Référence &#40;de l’interface utilisateur développement Office dans Visual Studio&#41;](../vsto/user-interface-reference-office-development-in-visual-studio.md)
+- [Référence de l’interface utilisateur &#40;le développement Office dans Visual Studio&#41;](../vsto/user-interface-reference-office-development-in-visual-studio.md)
 
  Répertorie des rubriques qui expliquent les options qui s’affichent dans différentes boîtes de dialogue, fenêtres et autres interfaces utilisateur.
 
-- [Messages &#40;d’erreur pour le développement Office dans Visual Studio&#41;](../vsto/error-messages-office-development-in-visual-studio.md)
+- [Messages d’erreur &#40;le développement Office dans Visual Studio&#41;](../vsto/error-messages-office-development-in-visual-studio.md)
 
  Répertorie les rubriques qui expliquent les messages d’erreur pour les projets Office.
 
-## <a name="related-sections"></a>Rubriques connexes
-- [Prise en &#40;main du développement Office dans Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+## <a name="related-sections"></a>Sections connexes
+- [Prise en main &#40;le développement Office dans Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 
  Fournit des liens vers des informations relatives à l’installation, aux modèles de projet, aux assemblys PIA (Primary Interop Assembly) d’Office et aux nouveautés du développement Office.
 

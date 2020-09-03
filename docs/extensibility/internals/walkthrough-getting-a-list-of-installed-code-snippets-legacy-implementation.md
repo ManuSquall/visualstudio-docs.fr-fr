@@ -1,5 +1,5 @@
 ---
-title: Obtenir une liste de Snippets de code installés (Héritage) Microsoft Docs
+title: Obtention d’une liste d’extraits de code installés (hérité) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,22 +13,22 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d3d5ef857973555c4b2d201f98957bd2c39328b5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80703652"
 ---
 # <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>Procédure pas à pas : obtention d’une liste d’extraits de code installés (implémentation héritée)
-Un extrait de code est un morceau de code qui peut être inséré dans le tampon source soit avec une commande de menu (qui permet de choisir parmi une liste de extraits de code installés) ou en sélectionnant un raccourci extrait d’une liste d’achèvement IntelliSense.
+Un extrait de code est un morceau de code qui peut être inséré dans la mémoire tampon source à l’aide d’une commande de menu (qui permet de choisir parmi une liste d’extraits de code installés) ou en sélectionnant un raccourci d’extrait dans une liste de saisie semi-automatique IntelliSense.
 
- La <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.EnumerateExpansions%2A> méthode obtient tous les extraits de code pour une langue spécifique GUID. Les raccourcis pour ces extraits peuvent être insérés dans une liste d’achèvement IntelliSense.
+ La <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.EnumerateExpansions%2A> méthode obtient tous les extraits de code pour un GUID de langage spécifique. Les raccourcis de ces extraits de code peuvent être insérés dans une liste de saisie semi-automatique IntelliSense.
 
- Consultez [Support for Code Snippets in a Legacy Language Service](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md) pour plus de détails sur la mise en œuvre de extraits de code dans un cadre de forfait géré (MPF) service linguistique.
+ Pour plus d’informations sur l’implémentation des extraits de code dans un service de langage Managed package Framework (MPF), consultez [prise en charge des extraits de code dans un service de langage hérité](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md) .
 
-### <a name="to-retrieve-a-list-of-code-snippets"></a>Pour récupérer une liste de extraits de code
+### <a name="to-retrieve-a-list-of-code-snippets"></a>Pour récupérer une liste d’extraits de code
 
-1. Le code suivant montre comment obtenir une liste de extraits de code pour une langue donnée. Les résultats sont stockés <xref:Microsoft.VisualStudio.TextManager.Interop.VsExpansion> dans un éventail de structures. Cette méthode utilise <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> la méthode <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> statique <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> pour obtenir l’interface du service. Toutefois, vous pouvez également utiliser le fournisseur de services <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> donné à votre VSPackage et appeler la méthode.
+1. Le code suivant montre comment obtenir la liste des extraits de code pour un langage donné. Les résultats sont stockés dans un tableau de <xref:Microsoft.VisualStudio.TextManager.Interop.VsExpansion> structures. Cette méthode utilise la <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> méthode statique pour récupérer l' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> interface à partir du <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> service. Toutefois, vous pouvez également utiliser le fournisseur de services donné à votre VSPackage et appeler la <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> méthode.
 
     ```csharp
     using System;
@@ -103,10 +103,10 @@ Un extrait de code est un morceau de code qui peut être inséré dans le tampon
 
 ### <a name="to-call-the-getsnippets-method"></a>Pour appeler la méthode GetSnippets
 
-1. La méthode suivante montre `GetSnippets` comment appeler la méthode à l’achèvement d’une opération d’analyse. La <xref:Microsoft.VisualStudio.Package.LanguageService.OnParseComplete%2A> méthode est appelée après une opération d’analyse qui a été commencée avec la raison <xref:Microsoft.VisualStudio.Package.ParseReason>.
+1. La méthode suivante montre comment appeler la `GetSnippets` méthode à la fin d’une opération d’analyse. La <xref:Microsoft.VisualStudio.Package.LanguageService.OnParseComplete%2A> méthode est appelée après une opération d’analyse qui a été démarrée avec la raison <xref:Microsoft.VisualStudio.Package.ParseReason> .
 
 > [!NOTE]
-> La `expansionsList` liste de tableau est mise en cache pour des raisons de performance. Les modifications apportées aux extraits ne sont pas reflétées dans la liste tant que le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]service linguistique n’est pas arrêté et rechargé (par exemple, en s’arrêtant et en redémarrant).
+> La `expansionsList` liste de tableaux est mise en cache pour des raisons de performances. Les modifications apportées aux extraits de code ne sont pas reflétées dans la liste tant que le service de langage n’est pas arrêté et rechargé (par exemple, en arrêtant et en redémarrant [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ).
 
 ```csharp
 class TestLanguageService : LanguageService
@@ -125,13 +125,13 @@ class TestLanguageService : LanguageService
 }
 ```
 
-### <a name="to-use-the-snippet-information"></a>Pour utiliser les informations d’extrait
+### <a name="to-use-the-snippet-information"></a>Pour utiliser les informations d’extrait de code
 
-1. Le code suivant montre comment utiliser les informations `GetSnippets` d’extrait retournées par la méthode. La `AddSnippets` méthode est appelée à partir du parseur en réponse à toute raison d’analyse qui est utilisé pour remplir une liste de extraits de code. Cela devrait avoir lieu après que l’analyse complète a été faite pour la première fois.
+1. Le code suivant montre comment utiliser les informations d’extrait de code retournées par la `GetSnippets` méthode. La `AddSnippets` méthode est appelée à partir de l’analyseur en réponse à toute raison d’analyse utilisée pour remplir une liste d’extraits de code. Cela doit être effectué une fois l’analyse complète effectuée pour la première fois.
 
-     La `AddDeclaration` méthode dresse une liste de déclarations qui est plus tard affichée dans une liste d’achèvement.
+     La `AddDeclaration` méthode génère une liste de déclarations qui est affichée ultérieurement dans une liste de saisie semi-automatique.
 
-     La `TestDeclaration` classe contient toutes les informations qui peuvent être affichées dans une liste d’achèvement ainsi que le type de déclaration.
+     La `TestDeclaration` classe contient toutes les informations qui peuvent être affichées dans une liste de saisie semi-automatique, ainsi que le type de déclaration.
 
     ```csharp
     class TestAuthoringScope : AuthoringScope

@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetLanguage ( Microsoft Docs
+title: 'IDebugSymbolProvider :: GetLanguage | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 876466d3617131815f6aa48b8b7dfb68b645ecb2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719243"
 ---
 # <a name="idebugsymbolprovidergetlanguage"></a>IDebugSymbolProvider::GetLanguage
-Cette méthode obtient le langage qui a été utilisé pour compiler le code à l’adresse de déboiffé.
+Cette méthode obtient le langage utilisé pour compiler le code à l’adresse de débogage.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -45,19 +45,19 @@ int GetLanguage(
 
 ## <a name="parameters"></a>Paramètres
 `pAddress`\
-[dans] Un objet d’adresse représenté par une interface [IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md)
+dans Objet d’adresse représenté par une interface [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) .
 
 `pguidLanguage`\
-[out] Retourne `GUID` un qui spécifie la langue.
+à Retourne un `GUID` qui spécifie le langage.
 
 `pguidLanguageVendor`\
-[out] Retourne `GUID` un qui spécifie le vendeur de langue.
+à Retourne un `GUID` qui spécifie le fournisseur de langage.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- Le moteur de débogé appelle cette méthode pour obtenir l’information dont il a besoin pour sélectionner l’évaluateur d’expression correcte.
+ Le moteur de débogage appelle cette méthode pour obtenir les informations dont il a besoin pour sélectionner l’évaluateur d’expression approprié.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

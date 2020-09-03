@@ -16,10 +16,10 @@ ms.author: mikejo
 manager: jillfra
 robots: noindex,nofollow
 ms.openlocfilehash: def581f547db19a8db4cebc4d63739ff09bb5fab
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531662"
 ---
 # <a name="analyze-cpu-usage-in-a-windows-universal-app"></a>Analyser l’utilisation du processeur dans une application universelle Windows
@@ -47,7 +47,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
 4. Générez l’application et essayez-la. L’application est suffisamment simple pour vous montrer certains cas courants d’analyse des données d’utilisation de l’UC.  
   
-## <a name="collect-cpu-usage-data"></a><a name="BKMK_Collect_CPU_usage_data"></a>Collecter les données d’utilisation de l’UC  
+## <a name="collect-cpu-usage-data"></a><a name="BKMK_Collect_CPU_usage_data"></a> Collecter les données d’utilisation de l’UC  
  ![Exécuter une version release de l’application dans le simulateur](../profiling/media/cpu-use-wt-setsimulatorandretail.png "CPU_USE_WT_SetSimulatorAndRetail")  
   
 1. Dans Visual Studio, définissez la cible de déploiement sur **Simulateur**, et la configuration de la solution sur **Mise en production**.  
@@ -105,7 +105,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 |![Étape 3](../profiling/media/procguid-3.png "ProcGuid_3")|Les enfants du nœud de deuxième niveau sont les méthodes en code utilisateur et des routines asynchrones appelées ou créées par le code système et d'infrastructure de deuxième niveau.|  
 |![Étape 4](../profiling/media/procguid-4.png "ProcGuid_4")|Les nœuds enfants d'une méthode contiennent des données seulement pour les appels de la méthode parente. Lorsque l'option **Afficher le Code externe** est désactivée, les méthodes d'application peuvent également contenir un nœud **[Code externe]** .|  
   
-#### <a name="external-code"></a><a name="BKMK_External_Code"></a>Code externe  
+#### <a name="external-code"></a><a name="BKMK_External_Code"></a> Code externe  
  Le code externe est constitué des fonctions des composants système et framework exécutés par le code que vous écrivez. Le code externe comprend des fonctions qui démarrent et arrêtent l’application, dessinent l’interface utilisateur, contrôlent les threads et fournissent d’autres services de bas niveau à l’application. Dans la plupart des cas, vous ne serez pas intéressé par le code externe ; par conséquent, l'arborescence des appels de l'utilisation du processeur regroupe les fonctions externes d'une méthode utilisateur en un seul nœud **[Code externe]** .  
   
  Quand vous voulez afficher les chemins d'appel du code externe, choisissez **Afficher le code externe** dans la liste **Filtrer la vue** , puis **Appliquer**.  
@@ -156,7 +156,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
      Créez une session dans le hub Performances et diagnostics et ajoutez les outils Réactivité de l'interface utilisateur XAML et Utilisation de l'UC. Exécutez le scénario de collection. Si vous avez lu cela, le rapport ne vous dit probablement rien que vous n’avez pas déjà fait, mais les différences dans le graphique de chronologie de l' **utilisation des threads de l’interface utilisateur** pour les deux méthodes sont saisissantes. Dans les applications complexes du monde réel, la combinaison des outils peut être très utile.  
   
-## <a name="mainpagexaml"></a><a name="BKMK_MainPage_xaml"></a>MainPage. Xaml  
+## <a name="mainpagexaml"></a><a name="BKMK_MainPage_xaml"></a> MainPage. Xaml  
   
 ```csharp  
 <Page  
@@ -191,7 +191,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
 ```  
   
-## <a name="mainpagexamlcs"></a><a name="BKMK_MainPage_xaml_cs"></a>MainPage.xaml.cs  
+## <a name="mainpagexamlcs"></a><a name="BKMK_MainPage_xaml_cs"></a> MainPage.xaml.cs  
   
 ```csharp  
 using System;  

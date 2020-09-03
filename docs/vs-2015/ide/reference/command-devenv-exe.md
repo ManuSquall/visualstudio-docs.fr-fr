@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9083d14c82eb2d283431e28d03bbbf96c14258cc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660854"
 ---
 # <a name="command-devenvexe"></a>/Command (devenv.exe)
@@ -33,12 +33,12 @@ devenv /command CommandName
 ## <a name="arguments"></a>Arguments
  `CommandName` Obligatoire. Nom complet d’une commande [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ou de son alias, entouré de guillemets doubles. Pour plus d’informations sur la syntaxe des commandes et des alias, consultez [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md).
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Une fois le démarrage terminé, l’IDE exécute la commande nommée. Si vous utilisez ce commutateur, l’IDE n’affiche pas la page de démarrage de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] lors du démarrage.
 
  Si un complément expose une commande, vous pouvez utiliser ce commutateur pour lancer le complément à partir de la ligne de commande. Pour plus d’informations, consultez [Comment : contrôler des compléments avec le Gestionnaire de compléments](https://msdn.microsoft.com/library/4f60444a-cb48-4cdb-8df4-941f6419aeeb).
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
  Cet exemple lance [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] et exécute automatiquement la macro Open Favorite Files.
 
 ```

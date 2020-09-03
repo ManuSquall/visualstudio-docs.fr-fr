@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::AreSymbolsLoaded | Microsoft Docs
+title: 'IDebugComPlusSymbolProvider :: AreSymbolsLoaded | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7a0e8930dfa38554f2f09e59753abc7845477171
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194814"
 ---
 # <a name="idebugcomplussymbolprovideraresymbolsloaded"></a>IDebugComPlusSymbolProvider::AreSymbolsLoaded
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Détermine si les symboles de débogage sont chargées pour le module spécifié, étant donné l’identificateur de domaine d’application.  
+Détermine si les symboles de débogage sont chargés pour le module spécifié en fonction de l’identificateur de domaine d’application.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -41,16 +41,16 @@ int AreSymbolsLoaded (
   
 #### <a name="parameters"></a>Paramètres  
  `ulAppDomainID`  
- [in] Identificateur du domaine d’application.  
+ dans Identificateur du domaine d’application.  
   
  `guidModule`  
- [in] Identificateur unique pour le module.  
+ dans Identificateur unique du module.  
   
-## <a name="return-value"></a>Valeur de retour  
- Si les symboles de débogage sont chargés, retourne `S_OK`; sinon, retourne `S_FALSE`.  
+## <a name="return-value"></a>Valeur renvoyée  
+ Si les symboles de débogage sont chargés, retourne `S_OK` ; sinon, retourne `S_FALSE` .  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant montre comment implémenter cette méthode pour un **CDebugSymbolProvider** objet qui expose le [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface.  
+ L’exemple suivant montre comment implémenter cette méthode pour un objet **CDebugSymbolProvider** qui expose l’interface [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) .  
   
 ```cpp#  
 HRESULT CDebugSymbolProvider::AreSymbolsLoaded(  

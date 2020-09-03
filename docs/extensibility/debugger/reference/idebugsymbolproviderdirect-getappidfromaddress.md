@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProviderDirect::GetAppIDDeAddress (fr) Microsoft Docs
+title: 'IDebugSymbolProviderDirect :: GetAppIDFromAddress | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: df1dbea23cf29809c5f504359ebf02b40c14e6e2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719155"
 ---
 # <a name="idebugsymbolproviderdirectgetappidfromaddress"></a>IDebugSymbolProviderDirect::GetAppIDFromAddress
-Récupère l’identifiant de domaine d’application compte tenu de l’adresse de débogé.
+Récupère l’identificateur de domaine d’application en fonction de l’adresse de débogage.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -42,12 +42,12 @@ int GetAppIDFromAddress(
 
 ## <a name="parameters"></a>Paramètres
 `pAddress`\
-[dans] Adresse Debug qui est représentée par l’interface [IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md)
+dans Adresse de débogage qui est représentée par l’interface [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) .
 
 `pAppID`\
-[out] Identification du domaine de l’application.
+à Identificateur du domaine d’application.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

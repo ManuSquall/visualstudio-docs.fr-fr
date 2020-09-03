@@ -14,13 +14,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e3d030e028332bd57afe66eee31c888713721212
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68605978"
 ---
-# <a name="options-dialog-box-text-editor--javascript--intellisense"></a>Boîte de dialogue d’options : Éditeur de \> texte JavaScript \> IntelliSense
+# <a name="options-dialog-box-text-editor--javascript--intellisense"></a>Boîte de dialogue Options : éditeur de texte \> JavaScript \> IntelliSense
 
 Utilisez la page **IntelliSense** de la boîte de dialogue **Options** pour modifier les paramètres qui affectent le comportement d'IntelliSense pour JavaScript. Vous pouvez accéder à la page **IntelliSense** en choisissant **Outils** > **Options** dans la barre de menus, puis en développant **Éditeur de texte** > **JavaScript/TypeScript** > **IntelliSense**.
 
@@ -34,7 +34,7 @@ Vous pouvez utiliser ces options pour modifier le comportement de la saisie semi
 
 ### <a name="uielement-list"></a>Liste des éléments de l'interface utilisateur
 
-**Utilisez uniquement Tab ou Enter pour commettre**
+**Utiliser uniquement la touche Tab ou entrée pour valider**
 
 Quand vous cochez cette case, l’éditeur de code JavaScript ajoute des instructions avec les éléments sélectionnés dans la liste de complétion seulement quand vous appuyez sur la touche **Tab** ou **Entrée**. Quand vous décochez cette case, d’autres caractères, comme un point, une virgule, deux-points, une parenthèse ouvrante et une accolade ouvrante ({), peuvent également ajouter des instructions avec les éléments sélectionnés.
 
@@ -78,4 +78,4 @@ Quand cette case est cochée, et si vous avez un fichier JavaScript ouvert en de
 
 ## <a name="see-also"></a>Voir aussi
 
-- [JavaScript IntelliSense](../../ide/javascript-intellisense.md)
+- [IntelliSense JavaScript](../../ide/javascript-intellisense.md)

@@ -17,10 +17,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e78f3c1174d2a288a9ffc432f0206aed4956fe8f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531818"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks &gt; , élément (programme d’amorçage)
@@ -85,9 +85,9 @@ L' `InstallChecks` élément prend en charge le démarrage d’un grand nombre d
 |`ProcessorArchitecture`|facultatif. Processeur de l’ordinateur ciblé par cette installation. La valeur par défaut est `msil`.|  
   
 ## <a name="externalcheck"></a>ExternalCheck  
- Cet élément est un élément enfant facultatif de `InstallChecks` . Pour chaque instance de `ExternalCheck` , le programme d’amorçage exécute le programme externe nommé dans un processus distinct et stocke son code de sortie dans la propriété indiquée par `Property` . `ExternalCheck`est utile pour implémenter des contrôles de dépendance complexes, ou lorsque la seule façon de vérifier l’existence d’un composant consiste à l’instancier.  
+ Cet élément est un élément enfant facultatif de `InstallChecks` . Pour chaque instance de `ExternalCheck` , le programme d’amorçage exécute le programme externe nommé dans un processus distinct et stocke son code de sortie dans la propriété indiquée par `Property` . `ExternalCheck` est utile pour implémenter des contrôles de dépendance complexes, ou lorsque la seule façon de vérifier l’existence d’un composant consiste à l’instancier.  
   
- `ExternalCheck`ne contient aucun élément et a les attributs suivants.  
+ `ExternalCheck` ne contient aucun élément et a les attributs suivants.  
   
 |Attribut|Description|  
 |---------------|-----------------|  
@@ -98,7 +98,7 @@ L' `InstallChecks` élément prend en charge le démarrage d’un grand nombre d
 ## <a name="filecheck"></a>FileCheck  
  Cet élément est un élément enfant facultatif de `InstallChecks` . Pour chaque instance de `FileCheck` , le programme d’amorçage détermine si le fichier nommé existe et retourne le numéro de version du fichier. Si le fichier n’a pas de numéro de version, le programme d’amorçage définit la propriété nommée par `Property` sur 0. Si le fichier n’existe pas, `Property` n’est pas défini sur une valeur.  
   
- `FileCheck`ne contient aucun élément et a les attributs suivants.  
+ `FileCheck` ne contient aucun élément et a les attributs suivants.  
   
 |Attribut|Description|  
 |---------------|-----------------|  
@@ -111,7 +111,7 @@ L' `InstallChecks` élément prend en charge le démarrage d’un grand nombre d
 ## <a name="msiproductcheck"></a>MsiProductCheck  
  Cet élément est un élément enfant facultatif de `InstallChecks` . Pour chaque instance de `MsiProductCheck` , le programme d’amorçage vérifie si l’installation de Microsoft Windows Installer spécifiée s’est exécutée jusqu’à ce qu’elle soit terminée. La valeur de la propriété est définie en fonction de l’état de ce produit installé. Une valeur positive indique que le produit est installé, 0 ou-1 indique qu’il n’est pas installé. (Pour plus d’informations, consultez la fonction Windows Installer SDK MsiQueryFeatureState.) . Si Windows Installer n’est pas installé sur l’ordinateur, `Property` n’est pas défini.  
   
- `MsiProductCheck`ne contient aucun élément et a les attributs suivants.  
+ `MsiProductCheck` ne contient aucun élément et a les attributs suivants.  
   
 |Attribut|Description|  
 |---------------|-----------------|  
@@ -122,28 +122,28 @@ L' `InstallChecks` élément prend en charge le démarrage d’un grand nombre d
 ## <a name="registrycheck"></a>RegistryCheck  
  Cet élément est un élément enfant facultatif de `InstallChecks` . Pour chaque instance de `RegistryCheck` , le programme d’amorçage vérifie si la clé de Registre spécifiée existe, ou s’il a la valeur indiquée.  
   
- `RegistryCheck`ne contient aucun élément et a les attributs suivants.  
+ `RegistryCheck` ne contient aucun élément et a les attributs suivants.  
   
 |Attribut|Description|  
 |---------------|-----------------|  
 |`Property`|Obligatoire. Nom de la propriété pour stocker le résultat. Cette propriété peut être référencée à partir d’un test sous l' `InstallConditions` élément, qui est un enfant de l' `Command` élément. Pour plus d’informations, consultez [ \<Commands> élément](../deployment/commands-element-bootstrapper.md).|  
 |`Key`|Obligatoire. Nom de la clé de Registre.|  
-|`Value`|facultatif. Nom de la valeur de Registre à récupérer. La valeur par défaut consiste à retourner le texte de la valeur par défaut. `Value`il doit s’agir d’une chaîne ou d’une valeur DWORD.|  
+|`Value`|facultatif. Nom de la valeur de Registre à récupérer. La valeur par défaut consiste à retourner le texte de la valeur par défaut. `Value` il doit s’agir d’une chaîne ou d’une valeur DWORD.|  
   
 ## <a name="registryfilecheck"></a>RegistryFileCheck  
  Cet élément est un élément enfant facultatif de `InstallChecks` . Pour chaque instance de `RegistryFileCheck` , le programme d’amorçage récupère la version du fichier spécifié, en essayant d’abord de récupérer le chemin d’accès au fichier à partir de la clé de Registre spécifiée. Cela s’avère particulièrement utile si vous souhaitez rechercher un fichier dans un répertoire spécifié comme valeur dans le registre.  
   
- `RegistryFileCheck`ne contient aucun élément et a les attributs suivants.  
+ `RegistryFileCheck` ne contient aucun élément et a les attributs suivants.  
   
 |Attribut|Description|  
 |---------------|-----------------|  
 |`Property`|Obligatoire. Nom de la propriété pour stocker le résultat. Cette propriété peut être référencée à partir d’un test sous l' `InstallConditions` élément, qui est un enfant de l' `Command` élément. Pour plus d’informations, consultez [ \<Commands> élément](../deployment/commands-element-bootstrapper.md).|  
 |`Key`|Obligatoire. Nom de la clé de Registre. Sa valeur est interprétée comme le chemin d’accès à un fichier, à moins que l' `File` attribut ne soit défini. Si cette clé n’existe pas, `Property` n’est pas défini.|  
-|`Value`|facultatif. Nom de la valeur de Registre à récupérer. La valeur par défaut consiste à retourner le texte de la valeur par défaut. `Value`doit être une chaîne.|  
+|`Value`|facultatif. Nom de la valeur de Registre à récupérer. La valeur par défaut consiste à retourner le texte de la valeur par défaut. `Value` doit être une chaîne.|  
 |`FileName`|facultatif. Nom d’un fichier. S’il est spécifié, la valeur obtenue à partir de la clé de Registre est supposée être un chemin d’accès de répertoire, et ce nom est ajouté à celui-ci. S’il n’est pas spécifié, la valeur retournée par le Registre est supposée être le chemin d’accès complet à un fichier.|  
 |`SearchDepth`|facultatif. Profondeur à laquelle rechercher les sous-dossiers pour le fichier nommé. La recherche est prioritaire. La valeur par défaut est 0, ce qui limite la recherche au dossier de niveau supérieur spécifié par la valeur de la clé de registre.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Tandis que les éléments sous `InstallChecks` définissent les tests à exécuter, ils ne les exécutent pas. Pour exécuter les tests, vous devez créer des `Command` éléments sous l' `Commands` élément.  
   
 ## <a name="example"></a>Exemple  
@@ -183,5 +183,5 @@ L' `InstallChecks` élément prend en charge le démarrage d’un grand nombre d
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [\<Commands>Appartient](../deployment/commands-element-bootstrapper.md)   
+ [\<Commands> Appartient](../deployment/commands-element-bootstrapper.md)   
  [Référence du schéma de produit et de package](../deployment/product-and-package-schema-reference.md)

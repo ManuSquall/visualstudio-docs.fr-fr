@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: db830e04388b7465c941e2fdf069b49f98951a1f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660827"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Page Compiler, Concepteur de projets (Visual Basic)
@@ -82,7 +82,7 @@ La page **Compiler** du Concepteur de projets vous permet de spécifier les inst
 
   Quand vous créez un projet, le paramètre **Option Strict** de la **page Compiler** prend la valeur du paramètre **Option Strict** dans la boîte de dialogue **Options**. Pour afficher ou modifier le paramètre dans cette boîte de dialogue, cliquez sur **Options** dans le menu **Outils**. Dans la boîte de dialogue **Options**, développez **Projets et solutions**, puis cliquez sur **Valeurs par défaut VB**. Le paramètre par défaut initial **Option Strict** dans **Valeurs par défaut VB** a la valeur **Off**.
 
-  **Avertissements individuels Option Strict.** La section **Configurations des avertissements** de la **page Compiler** contient des paramètres qui correspondent aux trois conditions qui provoquent une erreur de compilation quand `Option Strict` a la valeur On. Voici ces paramètres :
+  **Avertissements individuels option strict.** La section **Configurations des avertissements** de la **page Compiler** contient des paramètres qui correspondent aux trois conditions qui provoquent une erreur de compilation quand `Option Strict` a la valeur On. Voici ces paramètres :
 
 - **Conversion implicite**
 
@@ -92,7 +92,7 @@ La page **Compiler** du Concepteur de projets vous permet de spécifier les inst
 
   Quand vous affectez la valeur **On** à **Option Strict**, chacun de ces trois paramètres de configuration d’avertissement prend la valeur **Erreur**. Quand vous affectez la valeur **Off** à **Option Strict**, chacun des trois paramètres prend la valeur **Aucun**.
 
-  Vous pouvez remplacer individuellement chaque paramètre de configuration d’avertissement par **Aucun**, **Avertissement** ou **Erreur**. Si les trois paramètres de configuration d’avertissement ont la valeur **Erreur**, `On` s’affiche dans la zone `Option strict`. Si les trois ont la valeur **Aucun**, `Off` apparaît dans cette zone. Pour toute autre combinaison de ces paramètres, **(personnalisé)** s’affiche.
+  Vous pouvez remplacer individuellement chaque paramètre de configuration d’avertissement par **Aucun**, **Avertissement** ou **Erreur**. Si les trois paramètres de configuration d’avertissement sont définis sur **erreur**, `On` apparaît dans la `Option strict` zone. Si les trois sont définis sur **aucun**, `Off` s’affiche dans cette zone. Pour toute autre combinaison de ces paramètres, **(personnalisé)** s’affiche.
 
   **Option compare** Spécifie le type de comparaison de chaîne à utiliser. Sélectionnez **Binary** pour indiquer au compilateur d’utiliser des comparaisons de chaînes binaires respectant la casse. Sélectionnez **Text** pour utiliser des comparaisons de chaînes de texte spécifiques aux paramètres régionaux, qui ne respectent pas la casse.
 

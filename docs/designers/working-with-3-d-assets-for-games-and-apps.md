@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: aa9fc04df3e817730492353e54d74c1e46c3775e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75589797"
 ---
 # <a name="work-with-3d-assets-for-games-and-apps"></a>Utiliser des composants 3D pour les jeux et les applications
@@ -35,7 +35,7 @@ Vous pouvez utiliser l’éditeur d’images Visual Studio pour travailler avec 
 
 ### <a name="3d-models"></a>Modèles 3D
 
-Les modèles 3D créent des espaces et des formes dans les jeux et les applications. Au minimum, les modèles codent la position des points dans l’espace 3D, qui sont appelés *vertices,* ainsi que les données d’indexation pour définir les lignes ou les triangles qui représentent la forme du modèle. Des données supplémentaires peuvent être associées à ces sommets, par exemple les informations de couleur, les vecteurs normaux ou les attributs spécifiques à l’application. Chaque modèle peut également définir des attributs spécifiques à l’objet, comme le nuanceur utilisé pour calculer l’apparence de la surface de l’objet ou la texture appliquée à celui-ci.
+Les modèles 3D créent des espaces et des formes dans les jeux et les applications. Au minimum, les modèles encodent la position des points dans l’espace 3D, appelés *sommets*, en même temps que les données d’indexation pour définir des lignes ou des triangles qui représentent la forme du modèle. Des données supplémentaires peuvent être associées à ces sommets, par exemple les informations de couleur, les vecteurs normaux ou les attributs spécifiques à l’application. Chaque modèle peut également définir des attributs spécifiques à l’objet, comme le nuanceur utilisé pour calculer l’apparence de la surface de l’objet ou la texture appliquée à celui-ci.
 
 Vous pouvez utiliser l’éditeur de modèle Visual Studio pour travailler avec des modèles 3D dans plusieurs formats courants.
 
@@ -46,17 +46,17 @@ Les nuanceurs sont de petits programmes spécifiques au domaine qui s’exécute
 Vous pouvez utiliser le concepteur Shader Visual Studio, qui est un outil de conception de nuanceur graphique, pour créer des effets visuels personnalisés sans connaître la programmation HLSL.
 
 > [!NOTE]
-> Pour plus d’informations sur la façon de démarrer avec la programmation DirectX, consultez [DirectX](/windows/win32/directx). Pour plus d’informations sur la façon de déboguer une application basée sur DirectX, voir [diagnostics graphiques (déboggging graphiques DirectX)](../debugger/graphics/visual-studio-graphics-diagnostics.md).
+> Pour plus d’informations sur la façon de démarrer avec la programmation DirectX, consultez [DirectX](/windows/win32/directx). Pour plus d’informations sur le débogage d’une application DirectX, consultez [Graphics Diagnostics (débogage DirectX Graphics) (](../debugger/graphics/visual-studio-graphics-diagnostics.md)en anglais).
 
 ## <a name="directx-version-compatibility"></a>Compatibilité des versions DirectX
 
-Visual Studio utilise DirectX pour restituer les composants 2D et 3D. Vous pouvez sélectionner le renderer DirectX 11 ou le renderer logiciel de la plateforme WARP (Windows Advanced Rasterization Platform). Le renderer DirectX 11 fournit un rendu à accélération matérielle, hautes performances sur les GPU DirectX 11 et DirectX 10. Le renderer WARP aide à garantir que vos ressources s’exécutent avec une large gamme d’ordinateurs, dont les ordinateurs qui ne disposent pas de matériel graphique moderne et ceux qui disposent de matériel graphique intégré. Pour plus d’informations sur WARP, voir [Windows Advanced Rasterization Platform (WARP) guide](/windows/win32/direct3darticles/directx-warp).
+Visual Studio utilise DirectX pour restituer les composants 2D et 3D. Vous pouvez sélectionner le renderer DirectX 11 ou le renderer logiciel de la plateforme WARP (Windows Advanced Rasterization Platform). Le renderer DirectX 11 fournit un rendu à accélération matérielle, hautes performances sur les GPU DirectX 11 et DirectX 10. Le renderer WARP aide à garantir que vos ressources s’exécutent avec une large gamme d’ordinateurs, dont les ordinateurs qui ne disposent pas de matériel graphique moderne et ceux qui disposent de matériel graphique intégré. Pour plus d’informations sur WARP, consultez le Guide de la [plateforme Windows Advanced rastérisation (Warp)](/windows/win32/direct3darticles/directx-warp).
 
 ## <a name="related-topics"></a>Rubriques connexes
 
 |Intitulé|Description|
 |-----------|-----------------|
-|[Travailler avec des textures et des images](../designers/working-with-textures-and-images.md)|Décrit comment utiliser Visual Studio pour travailler avec des images et des textures.|
-|[Travailler avec des modèles 3D](../designers/working-with-3-d-models.md)|Décrit comment utiliser Visual Studio pour travailler avec des modèles 3D.|
-|[Travailler avec des ombrageurs](../designers/working-with-shaders.md)|Décrit comment utiliser le concepteur Shader Visual Studio pour créer et modifier des effets de nuanceur personnalisés.|
-|[Utilisation d’actifs 3D dans votre jeu ou application](../designers/using-3-d-assets-in-your-game-or-app.md)|Décrit comment utiliser les ressources que vous avez créées à l’aide de l’éditeur d’images, l’éditeur de modèle ou le concepteur Shader dans votre jeu ou application.|
+|[Utilisation des textures et des images](../designers/working-with-textures-and-images.md)|Décrit comment utiliser Visual Studio pour travailler avec des images et des textures.|
+|[Utilisation des modèles 3D](../designers/working-with-3-d-models.md)|Décrit comment utiliser Visual Studio pour travailler avec des modèles 3D.|
+|[Utilisation des nuanceurs](../designers/working-with-shaders.md)|Décrit comment utiliser le concepteur Shader Visual Studio pour créer et modifier des effets de nuanceur personnalisés.|
+|[Utilisation de composants 3D dans votre jeu ou votre application](../designers/using-3-d-assets-in-your-game-or-app.md)|Décrit comment utiliser les ressources que vous avez créées à l’aide de l’éditeur d’images, l’éditeur de modèle ou le concepteur Shader dans votre jeu ou application.|

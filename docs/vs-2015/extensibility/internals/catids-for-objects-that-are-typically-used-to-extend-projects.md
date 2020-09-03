@@ -13,26 +13,26 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1cf5bd504bb5f7090dc07bea32e73333c0f182d0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68162087"
 ---
 # <a name="catids-for-objects-that-are-typically-used-to-extend-projects"></a>CATID des objets qui sont généralement utilisés pour étendre des projets
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Le tableau suivant répertorie les CATID qui sont utilisés pour étendre `Project` et `ProjectItem` objets automation [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)], [!INCLUDE[csprcs](../../includes/csprcs-md.md)], et [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] projets. Ces CATID est définis dans VSLangProj.olb.  
+Le tableau suivant répertorie les CATID utilisés pour étendre `Project` et des `ProjectItem` objets Automation pour les [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] [!INCLUDE[csprcs](../../includes/csprcs-md.md)] projets, et [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] . Ces CATID sont définis dans VSLangProj. olb.  
   
 ## <a name="listing-of-catids"></a>Liste des CATID  
   
-|Name|GUID|  
+|Nom|GUID|  
 |----------|----------|  
 |<xref:VSLangProj.PrjCATID.prjCATIDProject>|{610D4614-D0D5-11D2-8599-006097C68E81}|  
 |<xref:VSLangProj.PrjCATID.prjCATIDProjectItem>|{610D4615-D0D5-11D2-8599-006097C68E81}|  
   
-## <a name="visual-basic-catids"></a>CATID de Visual Basic  
- Le tableau suivant répertorie les CATID qui sont utilisés pour étendre [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] parcourir les objets. Elles sont toutes définies dans VSLangProj.olb.  
+## <a name="visual-basic-catids"></a>CATID Visual Basic  
+ Le tableau suivant répertorie les CATID utilisés pour étendre les [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] objets de navigation. Elles sont toutes définies dans VSLangProj. olb.  
   
 |Nom|GUID|  
 |----------|----------|  
@@ -42,8 +42,8 @@ Le tableau suivant répertorie les CATID qui sont utilisés pour étendre `Proje
 |<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDVBFolderBrowseObject>|{932DC619-2EAA-4192-B7E6-3D15AD31DF49}|  
 |<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDVBReferenceBrowseObject>|{2289B812-8191-4e81-B7B3-174045AB0CB5}|  
   
-## <a name="visual-c-catids"></a>CATID Visual c#  
- Le CATID suivantes peut être utilisées pour étendre [!INCLUDE[csprcs](../../includes/csprcs-md.md)] parcourir les objets. Elles sont toutes définies dans VSLangProj.olb.  
+## <a name="visual-c-catids"></a>CATID Visual C#  
+ Les CATID suivants peuvent être utilisés pour étendre des [!INCLUDE[csprcs](../../includes/csprcs-md.md)] objets de navigation. Elles sont toutes définies dans VSLangProj. olb.  
   
 |Nom|GUID|  
 |----------|----------|  
@@ -53,10 +53,10 @@ Le tableau suivant répertorie les CATID qui sont utilisés pour étendre `Proje
 |<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDCSharpFolderBrowseObject>|{914FE278-054A-45DB-BF9E-5F22484CC84C}|  
 |<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDCSharpReferenceBrowseObject>|{2F0FA3B8-C855-4a4e-95A5-CB45C67D6C27}|  
   
-## <a name="c-catids"></a>CATID de C++  
- Ce qui suit [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] CATID n’est pas exposées dans les bibliothèques de types dans système de projet [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] .NET 2003 et doit être incluse dans votre code chaque fois que vous souhaitez étendre ces objets du projet. Ces CATID est incluses dans les bibliothèques de types dans les versions ultérieures de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
+## <a name="c-catids"></a>CATID C++  
+ Les CATID de système de projet suivants ne [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] sont pas exposés dans les bibliothèques de types dans [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] .NET 2003 et doivent être inclus dans votre code chaque fois que vous souhaitez étendre ces objets de projet. Ces CATID seront inclus dans les bibliothèques de types dans les versions ultérieures de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] .  
   
-|Name|GUID|  
+|Nom|GUID|  
 |----------|----------|  
 |`CVCProjectNode`|{EE8299CB-19B6-4f20-ABEA-E1FD9A33B683}|  
 |`CVCFolderNode`|{EE8299CA-19B6-4f20-ABEA-E1FD9A33B683}|  
@@ -70,9 +70,9 @@ const LPOLESTR CVCFolderNode::s_wszCATID = L"{EE8299CA-19B6-4f20-ABEA-E1FD9A33B6
 const LPOLESTR CVCFileNode::s_wszCATID = L"{EE8299C9-19B6-4f20-ABEA-E1FD9A33B683}";  
 ```  
   
- Ce qui suit [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] CATID n’est pas également exposées dans les bibliothèques de types dans système de projet [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] .NET 2003 et doit être incluse dans votre code chaque fois que vous souhaitez étendre ces objets du projet. Ces CATID est uniquement disponibles dans [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] .NET 2003 et ne sera pas disponible dans les versions ultérieures de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
+ Les CATID de système de projet suivants ne [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] sont pas non plus exposés dans les bibliothèques de types de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] .NET 2003 et doivent être inclus dans votre code chaque fois que vous souhaitez étendre ces objets de projet. Ces CATID sont disponibles uniquement dans [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] .net 2003 et ne seront pas disponibles dans les versions ultérieures de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] .  
   
-|Name|GUID|  
+|Nom|GUID|  
 |----------|----------|  
 |`CVCAssemblyReferenceNode` **:**|{FE8299C9-19B6-4f20-ABEA-E1FD9A33B683}|  
 |`CVCProjectReferenceNode`|{593DCFCE-20A7-48e4-ACA1-49ADE9049887}|  
@@ -88,7 +88,7 @@ const LPOLESTR CVCActiveXReferenceNode::s_wszCATID = L"{9E8182D3-C60A-44f4-A74B-
 const LPOLESTR CVCReferences::s_wszCATID = L"{FE8299CA-19B6-4f20-ABEA-E1FD9A33B683}";  
 ```  
   
- Les GUID pour le [!INCLUDE[csprcs](../../includes/csprcs-md.md)] et [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] les types de projet sont affichés dans le tableau suivant.  
+ Les GUID pour les [!INCLUDE[csprcs](../../includes/csprcs-md.md)] types de [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] projet et sont présentés dans le tableau suivant.  
   
 |Type de projet|GUID|  
 |------------------|----------|  
@@ -96,5 +96,5 @@ const LPOLESTR CVCReferences::s_wszCATID = L"{FE8299CA-19B6-4f20-ABEA-E1FD9A33B6
 |[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]|{F184B08F-C81C-45F6-A57F-5ABD9991F28F}|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Ajout de projet et modèles d’élément de projet](../../extensibility/internals/adding-project-and-project-item-templates.md)   
+ [Ajout de modèles de projet et d’élément de projet](../../extensibility/internals/adding-project-and-project-item-templates.md)   
  [Inscription de modèles de projet et d’élément](../../extensibility/internals/registering-project-and-item-templates.md)

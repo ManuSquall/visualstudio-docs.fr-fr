@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c27ec66c8165995c6877b9a9e65802813140c7f2
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72731610"
 ---
 # <a name="just-in-time-debugging-options-dialog-box"></a>Juste-à-temps, Débogage, boîte de dialogue Options
@@ -32,7 +32,7 @@ Pour accéder à la page **Juste-à-temps**, dans le menu **Outils**, cliquez su
 
  Vous pouvez activer le débogage juste-à-temps pour les types de programmes suivants :
 
-- Managé
+- Géré
 
 - Natif
 
@@ -57,4 +57,4 @@ Pour accéder à la page **Juste-à-temps**, dans le menu **Outils**, cliquez su
 
 ## <a name="see-also"></a>Voir aussi
 - [Débogage, boîte de dialogue Options](../debugger/debugging-options-dialog-box.md)
-- [Guide pratique pour spécifier les paramètres du débogueur](../debugger/how-to-specify-debugger-settings.md)
+- [Comment : spécifier les paramètres du débogueur](../debugger/how-to-specify-debugger-settings.md)

@@ -1,5 +1,5 @@
 ---
-title: Achèvement des mots dans un service de langue héritée (fr) Microsoft Docs
+title: Saisie semi-automatique des mots dans un service de langage hérité | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,40 +13,40 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 948751cde5b6b710d911a30ca26a61e5411bba4d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80703176"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>Saisie semi-automatique de mot dans un service de langage hérité
-L’achèvement des mots remplit les caractères manquants sur un mot partiellement tapé. S’il n’y a qu’un seul achèvement possible, le mot est terminé lorsque le caractère d’achèvement est entré. Si le mot partiel correspond à plus d’une possibilité, une liste d’achèvements possibles est affichée. Un personnage d’achèvement peut être n’importe quel personnage qui n’est pas utilisé pour les identifiants.
+La saisie semi-automatique des mots remplit les caractères manquants sur un mot partiellement typé. S’il n’existe qu’une seule exécution possible, le mot est terminé lorsque vous entrez le caractère de fin. Si le mot partiel correspond à plusieurs possibilités, une liste des saisies semi-automatiques possibles s’affiche. Un caractère de fin peut être n’importe quel caractère qui n’est pas utilisé pour les identificateurs.
 
- Les services linguistiques hérités sont mis en œuvre dans le cadre d’un VSPackage, mais la nouvelle façon de mettre en œuvre des fonctionnalités de service linguistique est d’utiliser des extensions MEF. Pour en savoir plus, voir [Extending the Editor and Language Services](../../extensibility/extending-the-editor-and-language-services.md).
+ Les services de langage hérités sont implémentés dans le cadre d’un VSPackage, mais la meilleure façon d’implémenter les fonctionnalités du service de langage consiste à utiliser les extensions MEF. Pour en savoir plus, consultez [extension de l’éditeur et des services de langage](../../extensibility/extending-the-editor-and-language-services.md).
 
 > [!NOTE]
-> Nous vous recommandons de commencer à utiliser le nouvel éditeur API dès que possible. Cela améliorera les performances de votre service linguistique et vous permettra de profiter des nouvelles fonctionnalités de l’éditeur.
+> Nous vous recommandons de commencer à utiliser la nouvelle API Editor dès que possible. Cela améliore les performances de votre service de langage et vous permet de tirer parti des nouvelles fonctionnalités de l’éditeur.
 
-## <a name="implementation-steps"></a>Étapes de mise en œuvre
+## <a name="implementation-steps"></a>Étapes d’implémentation
 
-1. Lorsque l’utilisateur sélectionne **Le mot complet** dans le menu **IntelliSense,** la <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> commande est envoyée au service linguistique.
+1. Quand l’utilisateur sélectionne **compléter le mot** dans le menu **IntelliSense** , la <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> commande est envoyée au service de langage.
 
-2. La <xref:Microsoft.VisualStudio.Package.ViewFilter> classe attrape la <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> commande et appelle la <xref:Microsoft.VisualStudio.Package.ParseReason>méthode avec la raison d’analyse de .
+2. La <xref:Microsoft.VisualStudio.Package.ViewFilter> classe intercepte la commande et appelle la <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> méthode avec la raison de l’analyse de <xref:Microsoft.VisualStudio.Package.ParseReason> .
 
-3. La <xref:Microsoft.VisualStudio.Package.Source> classe appelle <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> alors la méthode pour obtenir la liste des achèvements de <xref:Microsoft.VisualStudio.Package.CompletionSet> mots possibles, puis affiche les mots dans une liste de conseils d’outil en utilisant la classe.
+3. La <xref:Microsoft.VisualStudio.Package.Source> classe appelle ensuite la <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> méthode pour obtenir la liste des saisies semi-automatiques de mots possibles, puis affiche les mots dans une liste d’info-bulle à l’aide de la <xref:Microsoft.VisualStudio.Package.CompletionSet> classe.
 
-    S’il n’y a <xref:Microsoft.VisualStudio.Package.Source> qu’un seul mot correspondant, la classe complète le mot.
+    S’il n’existe qu’un seul mot correspondant, la <xref:Microsoft.VisualStudio.Package.Source> classe termine le mot.
 
-   Alternativement, si le scanner <xref:Microsoft.VisualStudio.Package.TokenTriggers> retourne la valeur de déclenchement lorsque <xref:Microsoft.VisualStudio.Package.Source> le premier caractère d’un identifiant est tapé, la classe détecte cela et appelle la <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> méthode avec la raison d’analyse de <xref:Microsoft.VisualStudio.Package.ParseReason>. Dans ce cas, le parseur doit détecter la présence d’un personnage de sélection des membres et fournir une liste de membres.
+   Sinon, si le scanneur retourne la valeur du déclencheur <xref:Microsoft.VisualStudio.Package.TokenTriggers> lorsque le premier caractère d’un identificateur est tapé, la <xref:Microsoft.VisualStudio.Package.Source> classe détecte cela et appelle la <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> méthode avec la raison de l’analyse de <xref:Microsoft.VisualStudio.Package.ParseReason> . Dans ce cas, l’analyseur doit détecter la présence d’un caractère de sélection de membre et fournir une liste de membres.
 
-## <a name="enabling-support-for-the-complete-word"></a>Permettre le soutien au mot complet
- Pour permettre le support `CodeSense` pour l’achèvement <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> des mots définir le paramètre nommé passé à l’attribut utilisateur associé à l’ensemble de langue. Cela place <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> la <xref:Microsoft.VisualStudio.Package.LanguagePreferences> propriété sur la classe.
+## <a name="enabling-support-for-the-complete-word"></a>Activation de la prise en charge du mot complet
+ Pour activer la prise en charge de la saisie semi-automatique des mots, définissez le `CodeSense` paramètre nommé passé à l' <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> attribut User associé au package de langage. Cela définit la <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> propriété sur la <xref:Microsoft.VisualStudio.Package.LanguagePreferences> classe.
 
- Votre analyseur doit retourner une liste de déclarations en <xref:Microsoft.VisualStudio.Package.ParseReason>réponse à la valeur de raison d’analyse, pour l’achèvement des mots d’exploitation.
+ Votre analyseur doit retourner une liste de déclarations en réponse à la valeur de la raison de l’analyse <xref:Microsoft.VisualStudio.Package.ParseReason> , pour que la saisie de mot aboutisse.
 
-## <a name="implementing-complete-word-in-the-parsesource-method"></a>Mise en œuvre du mot complet dans la méthode ParseSource
- Pour l’achèvement <xref:Microsoft.VisualStudio.Package.Source> des <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDeclarations%2A> mots, <xref:Microsoft.VisualStudio.Package.AuthoringScope> la classe appelle la méthode sur la classe pour obtenir une liste de correspondances de mots possibles. Vous devez implémenter la liste <xref:Microsoft.VisualStudio.Package.Declarations> dans une classe dérivée de la classe. Consultez <xref:Microsoft.VisualStudio.Package.Declarations> le cours pour plus de détails sur les méthodes que vous devez mettre en œuvre.
+## <a name="implementing-complete-word-in-the-parsesource-method"></a>Implémentation du mot complet dans la méthode ParseSource
+ Pour la saisie semi-automatique des mots, la <xref:Microsoft.VisualStudio.Package.Source> classe appelle la <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDeclarations%2A> méthode sur la <xref:Microsoft.VisualStudio.Package.AuthoringScope> classe pour obtenir une liste des correspondances de mots possibles. Vous devez implémenter la liste dans une classe dérivée de la <xref:Microsoft.VisualStudio.Package.Declarations> classe. <xref:Microsoft.VisualStudio.Package.Declarations>Pour plus d’informations sur les méthodes que vous devez implémenter, consultez la classe.
 
- Si la liste ne contient qu’un seul mot, la <xref:Microsoft.VisualStudio.Package.Source> classe insère automatiquement ce mot à la place du mot partiel. Si la liste contient plus <xref:Microsoft.VisualStudio.Package.Source> d’un mot, la classe présente une liste d’outils à partir de laquelle l’utilisateur peut choisir le choix approprié.
+ Si la liste ne contient qu’un seul mot, la <xref:Microsoft.VisualStudio.Package.Source> classe insère automatiquement ce mot à la place du mot partiel. Si la liste contient plusieurs mots, la <xref:Microsoft.VisualStudio.Package.Source> classe affiche une liste d’info-bulle dans laquelle l’utilisateur peut sélectionner le choix approprié.
 
- Regardez également l’exemple <xref:Microsoft.VisualStudio.Package.Declarations> d’une mise en œuvre de classe dans [l’achèvement des membres dans un service de langue héritée](../../extensibility/internals/member-completion-in-a-legacy-language-service.md).
+ Examinez également l’exemple d' <xref:Microsoft.VisualStudio.Package.Declarations> implémentation de classe en cours d' [exécution de membre dans un service de langage hérité](../../extensibility/internals/member-completion-in-a-legacy-language-service.md).

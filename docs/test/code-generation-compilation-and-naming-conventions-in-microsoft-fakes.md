@@ -1,5 +1,5 @@
 ---
-title: 'Microsoft Fakes: Générer & compiler le code; conventions de nommage'
+title: 'Substituts Microsoft : générer & code de compilation ; conventions d’affectation des noms'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.author: mikejo
@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: 155caf50e82f56c1db0b0b0a65a640f252f44063
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75589329"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Génération et compilation de code et conventions de nommage dans Microsoft Fakes
@@ -44,7 +44,7 @@ L’exemple suivant montre des types stub définis dans *FileSystem.dll* :
 
 Les filtres peuvent être définis dans le fichier *.fakes* pour restreindre les types à extraire. Vous pouvez ajouter un nombre illimité d'éléments Clear, Add, Remove sous l'élément StubGeneration pour générer la liste des types sélectionnés.
 
-Par exemple, le fichier *.fakes* suivant génère des talons pour les types sous le système et System.IO les espaces de noms, mais exclut tout type contenant "Handle" dans le système:
+Par exemple, le fichier *. substituts* suivant génère des stubs pour les types sous les espaces de noms System et System.IO, mais exclut tout type contenant « handle » dans System :
 
 ```xml
 <Fakes xmlns="http://schemas.microsoft.com/fakes/2011/">
@@ -126,7 +126,7 @@ Si l’assembly ayant fait l’objet d’un shim a un nom fort et que vous voule
         PublicKey=<Test_assembly_public_key>)]
     ```
 
-Si l’assembly ayant fait l’objet d’un shim porte un nom fort, le framework Fakes signe automatiquement fortement l’assembly Fakes généré. Vous devez signer avec un nom fort l'assembly de test. Voir [Strong-Named assemblies](/dotnet/framework/app-domains/strong-named-assemblies).
+Si l’assembly ayant fait l’objet d’un shim porte un nom fort, le framework Fakes signe automatiquement fortement l’assembly Fakes généré. Vous devez signer avec un nom fort l'assembly de test. Consultez [assemblys avec nom fort](/dotnet/framework/app-domains/strong-named-assemblies).
 
 Le framework Fakes utilise la même clé pour signer tous les assemblys générés. Ainsi, vous pouvez utiliser cet extrait de code comme point de départ pour ajouter l’attribut **InternalsVisibleTo** de l’assembly Fakes à votre code assembleur ayant fait l’objet d’un shim.
 
@@ -134,7 +134,7 @@ Le framework Fakes utilise la même clé pour signer tous les assemblys génér�
 [assembly: InternalsVisibleTo("FileSystem.Fakes, PublicKey=0024000004800000940000000602000000240000525341310004000001000100e92decb949446f688ab9f6973436c535bf50acd1fd580495aae3f875aa4e4f663ca77908c63b7f0996977cb98fcfdb35e05aa2c842002703cad835473caac5ef14107e3a7fae01120a96558785f48319f66daabc862872b2c53f5ac11fa335c0165e202b4c011334c7bc8f4c4e570cf255190f4e3e2cbc9137ca57cb687947bc")]
 ```
 
-Vous pouvez spécifier une clé publique différente pour l’assemblage Fakes, comme une clé que vous avez créée pour l’assemblage shimmed, en spécifiant le chemin complet vers le fichier *.snk* qui contient la clé alternative comme `KeyFile` la valeur d’attribut dans l’élément `Fakes` \\ `Compilation` du fichier *.fakes.* Par exemple :
+Vous pouvez spécifier une autre clé publique pour l’assembly de simulation, telle qu’une clé que vous avez créée pour l’assembly corrigé, en spécifiant le chemin d’accès complet au fichier *. snk* qui contient l’autre clé comme `KeyFile` valeur d’attribut dans l' `Fakes` \\ `Compilation` élément du fichier *. resubstitut* . Par exemple :
 
 ```xml
 <-- FileSystem.Fakes.fakes -->
@@ -161,7 +161,7 @@ La compilation des assemblys Fakes peut augmenter considérablement la durée de
 
 Dans vos projets de test unitaire, ajoutez une référence aux assemblys Fakes compilés qui sont placés sous FakesAssemblies dans le dossier du projet.
 
-1. Créez une bibliothèque de classes avec la version du runtime .NET. correspondant à vos projets de test. Appelons-la Fakes.Prebuild. Supprimer le *fichier class1.cs* du projet, pas nécessaire.
+1. Créez une bibliothèque de classes avec la version du runtime .NET. correspondant à vos projets de test. Appelons-la Fakes.Prebuild. Supprimez le fichier *Class1.cs* du projet, qui n’est pas nécessaire.
 
 2. Ajoutez la référence à tous les assemblys système et tiers pour lesquels vous avez besoin de Fakes.
 
@@ -233,7 +233,7 @@ attribute of the Assembly element in the .fakes:
 
   Les **noms des méthodes spéciales**, comme les méthodes getter et setter de propriétés, sont traitées comme décrit dans le tableau suivant :
 
-|Si la méthode est...| Exemple|Nom de la méthode ajoutée|
+|Si la méthode est...|Exemple|Nom de la méthode ajoutée|
 |-|-|-|
 |Un **constructeur**|`.ctor`|`Constructor`|
 |Un **constructeur** statique|`.cctor`|`StaticConstructor`|
@@ -249,22 +249,22 @@ attribute of the Assembly element in the .fakes:
 > [!NOTE]
 > - Les **accesseurs Get et Set des indexeurs** sont traités de la même façon que la propriété. Le nom par défaut pour un indexeur est `Item`.
 > - Les noms de **type de paramètre** sont transformés et concaténés.
-> - **Le type de retour** est ignoré à moins qu’il n’y ait une ambiguïté de surcharge. Dans le cas d’une ambiguïté de surcharge, le type de retour est ajouté à la fin du nom.
+> - Le **type de retour** est ignoré à moins qu’il y ait une ambiguïté de surcharge. Dans le cas d’une ambiguïté de surcharge, le type de retour est ajouté à la fin du nom.
 
 ### <a name="parameter-type-naming-conventions"></a>Conventions d'affectation de nom de type de paramètre
 
 |Étant donné|La chaîne ajoutée est...|
 |-|-|
 |Un **type**`T`|T<br /><br /> L’espace de noms, la structure imbriquée et les tics génériques sont supprimés.|
-|Un **paramètre à l’extérieur**`out T`|`TOut`|
+|Un **paramètre de sortie**`out T`|`TOut`|
 |Un **paramètre de référence** `ref T`|`TRef`|
-|Un **type de tableau**`T[]`|`TArray`|
+|**Type tableau**`T[]`|`TArray`|
 |Un type **tableau multidimensionnel**`T[ , , ]`|`T3`|
 |Un type **pointeur**`T*`|`TPtr`|
-|Un **type générique**`T<R1, ...>`|`TOfR1`|
-|Un **argument** `!i` de type générique de type`C<TType>`|`Ti`|
-|Un **argument** `!!i` de méthode générique`M<MMethod>`|`Mi`|
-|Un **type imbriqué**`N.T`|`N` est ajouté, puis `T`|
+|**Type générique**`T<R1, ...>`|`TOfR1`|
+|**Argument de type générique** `!i` de type`C<TType>`|`Ti`|
+|**Argument de méthode générique** `!!i` de méthode`M<MMethod>`|`Mi`|
+|**Type imbriqué**`N.T`|`N` est ajouté, puis `T`|
 
 ### <a name="recursive-rules"></a>Règles récursives
 
@@ -276,4 +276,4 @@ Les règles suivantes s'appliquent de manière récursive :
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Code d’isolement à l’essai avec Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)
+- [Isolation du code testé avec les substituts Microsoft](../test/isolating-code-under-test-with-microsoft-fakes.md)

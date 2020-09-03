@@ -1,5 +1,5 @@
 ---
-title: Élément deplatformversion requis (modèles de studio visuel) Microsoft Docs
+title: Élément RequiredPlatformVersion (modèles Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -10,20 +10,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3bc22f97401fe5e3724f2e44c873c72acbf65be1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80701499"
 ---
-# <a name="requiredplatformversion-element-visual-studio-templates"></a>Élément Deplatformversion requis (modèles Visual Studio)
-Spécifie la version minimale du système d’exploitation dont le modèle de projet nécessite pour fonctionner correctement. Cet élément est utilisé pour les [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] modèles de projet qui créent des applications.
+# <a name="requiredplatformversion-element-visual-studio-templates"></a>Élément RequiredPlatformVersion (modèles Visual Studio)
+Spécifie la version minimale du système d’exploitation requise par le modèle de projet pour fonctionner correctement. Cet élément est utilisé pour les modèles de projet qui créent des [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] applications.
 
- La `RequiredPlatformVersion` valeur est comparée directement à la version du système d’exploitation. Si `RequiredPlatformVersion` le modèle est plus élevé que la version du système d’exploitation, le modèle n’apparaît pas dans la boîte de dialogue **Du nouveau projet.** Pour spécifier un modèle pour [!INCLUDE[win8](../debugger/includes/win8_md.md)] ou plus, définissez `RequiredPlatformVersion` 6.2.0. Pour spécifier un modèle pour [!INCLUDE[win81](../debugger/includes/win81_md.md)] ou plus, définissez `RequiredPlatformVersion` 6.3.0.
+ La `RequiredPlatformVersion` valeur est comparée directement à la version du système d’exploitation. Si le `RequiredPlatformVersion` est supérieur à la version du système d’exploitation, le modèle n’apparaît pas dans la boîte de dialogue **nouveau projet** . Pour spécifier un modèle pour [!INCLUDE[win8](../debugger/includes/win8_md.md)] ou version ultérieure, définissez `RequiredPlatformVersion` sur 6.2.0. Pour spécifier un modèle pour [!INCLUDE[win81](../debugger/includes/win81_md.md)] ou version ultérieure, définissez `RequiredPlatformVersion` sur 6.3.0.
 
- Les modèles `RequiredPlatformVersion`qui spécifient [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] le numéro 8 sont compatibles avec les modèles clients précédents.
+ Les modèles qui spécifient `RequiredPlatformVersion` = 8 sont compatibles avec les modèles de client précédents [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] .
 
- VSTemplate TemplateData ..... TargetPlatformName RequiredPlatformVersion
+ TemplateData VSTemplate..... TargetPlatformName RequiredPlatformVersion
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -44,7 +44,7 @@ Spécifie la version minimale du système d’exploitation dont le modèle de pr
 
 |Élément|Description|
 |-------------|-----------------|
-|[TemplatePlatformName (en)](../extensibility/templatedata-element-visual-studio-templates.md)|Spécifie la plateforme ciblée par le modèle de projet.|
+|[TemplatePlatformName](../extensibility/templatedata-element-visual-studio-templates.md)|Spécifie la plateforme ciblée par le modèle de projet.|
 
 ## <a name="text-value"></a>Valeur texte
  Une valeur texte est requise.
@@ -71,4 +71,4 @@ Spécifie la version minimale du système d’exploitation dont le modèle de pr
 ## <a name="see-also"></a>Voir aussi
 - [Élément TargetPlatformName (modèles Visual Studio)](../extensibility/targetplatformname-element-visual-studio-templates.md)
 - [Créer des modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)
-- [Référence de schéma de modèle de studio visuel](../extensibility/visual-studio-template-schema-reference.md)
+- [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

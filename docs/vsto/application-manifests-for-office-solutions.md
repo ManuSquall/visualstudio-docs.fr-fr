@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a6272f145ee2c7ef2a91cc635112e440e6404457
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531506"
 ---
 # <a name="application-manifests-for-office-solutions"></a>Manifestes d’application pour les solutions Office
@@ -27,7 +27,7 @@ ms.locfileid: "85531506"
 |Élément|Description|Attributs|
 |-------------|-----------------|----------------|
 |[&#60;élément&#62; de l’assembly &#40;application ClickOnce&#41;](../deployment/assembly-element-clickonce-deployment.md)|Obligatoire. Élément de niveau supérieur.|**manifestVersion**|
-|[&#60;élément assemblyIdentity&#62; &#40;application ClickOnce&#41;](../deployment/assemblyidentity-element-clickonce-deployment.md)|Obligatoire. Identifie l’assembly principal de l’application [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] .|**name**<br /><br /> **version**<br /><br /> **publicKeyToken**<br /><br /> **processorArchitecture**<br /><br /> **langue**|
+|[&#60;élément assemblyIdentity&#62; &#40;application ClickOnce&#41;](../deployment/assemblyidentity-element-clickonce-deployment.md)|Obligatoire. Identifie l’assembly principal de l’application [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] .|**name**<br /><br /> **version**<br /><br /> **publicKeyToken**<br /><br /> **processorArchitecture**<br /><br /> **language**|
 |[&#60;élément trustInfo&#62; &#40;application ClickOnce&#41;](../deployment/trustinfo-element-clickonce-application.md)|Identifie les exigences de sécurité de l’application.|None|
 |[&#60;élément entryPoint&#62; &#40;application ClickOnce&#41;](../deployment/entrypoint-element-clickonce-application.md)|Obligatoire. Identifie le point d’entrée de code d’application pour l’exécution.|**name**<br /><br /> **dependencyName**<br /><br /> **customHostSpecified**|
 |[&#60;élément de&#62; de dépendance &#40;application ClickOnce&#41;](../deployment/dependency-element-clickonce-deployment.md)|Obligatoire. Identifie chaque dépendance requise pour l’exécution de l’application. Identifie éventuellement les assemblys qui doivent être préinstallés.|None|
@@ -73,8 +73,8 @@ ms.locfileid: "85531506"
 |[&#60;élément AddIn&#62; &#40;développement Office dans Visual Studio&#41;](../vsto/addin-element-office-development-in-visual-studio.md)|Obligatoire. Stocke les points d’entrée dans un espace de noms unique.|None|
 |[&#60;élément entryPointsCollection&#62; &#40;développement Office dans Visual Studio&#41;](../vsto/entrypointscollection-element-office-development-in-visual-studio.md)|Obligatoire. Regroupe tous les assemblys pour une ou plusieurs solutions Office.|**id**|
 |[&#60;élément entryPoints&#62; &#40;développement Office dans Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md)|Obligatoire. Regroupe tous les assemblys pour exécuter une solution Office.|None|
-|[&#60;élément entryPoint&#62; &#40;développement Office dans Visual Studio&#41;](../vsto/entrypoint-element-office-development-in-visual-studio.md)|Obligatoire. Identifie l’assembly à exécuter dans une solution Office.|**type**<br /><br /> **façon**|
-|[&#60;mettre à jour&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/update-element-office-development-in-visual-studio.md)|Obligatoire. Configure les mises à jour pour la solution.|**désactivé**<br /><br /> **expiration**|
+|[&#60;élément entryPoint&#62; &#40;développement Office dans Visual Studio&#41;](../vsto/entrypoint-element-office-development-in-visual-studio.md)|Obligatoire. Identifie l’assembly à exécuter dans une solution Office.|**class**<br /><br /> **façon**|
+|[&#60;mettre à jour&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/update-element-office-development-in-visual-studio.md)|Obligatoire. Configure les mises à jour pour la solution.|**activé**<br /><br /> **expiration**|
 |[&#60;élément postActions&#62; &#40;développement Office dans Visual Studio&#41;](../vsto/postactions-element-office-development-in-visual-studio.md)|facultatif. Regroupe toutes les actions de post-déploiement qui s’exécutent après l’installation des solutions Office.|None|
 |[&#60;élément postAction&#62; &#40;développement Office dans Visual Studio&#41;](../vsto/postaction-element-office-development-in-visual-studio.md)|facultatif. Identifie une action de post-déploiement.|None|
 |[&#60;élément postActionData&#62; &#40;développement Office dans Visual Studio&#41;](../vsto/postactiondata-element-office-development-in-visual-studio.md)|facultatif. Configure les données pour une action de post-déploiement.|None|
@@ -84,16 +84,16 @@ ms.locfileid: "85531506"
 |[&#60;document&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/document-element-office-development-in-visual-studio.md)|Obligatoire uniquement pour les solutions au niveau du document. Stocke les informations spécifiques à la personnalisation.|**solutionId**|
 |[&#60;élément appAddin&#62; &#40;développement Office dans Visual Studio&#41;](../vsto/appaddin-element-office-development-in-visual-studio.md)|Obligatoire uniquement pour les solutions au niveau de l’application. Stocke les informations spécifiques à la personnalisation.|**application**<br /><br /> **loadBehavior**<br /><br /> **keyName**|
 |[&#60;l’élément&#62; friendlyName &#40;développement Office dans Visual Studio&#41;](../vsto/friendlyname-element-office-development-in-visual-studio.md)|facultatif. Stocke le nom du complément VSTO qui figure dans la liste des compléments VSTO installés.|None|
-|[&#60;Description&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/description-element-office-development-in-visual-studio.md)|Obligatoire uniquement pour les compléments VSTO. stocke la description qui s’affiche dans la liste des programmes installés.|None|
+|[&#60;Description&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/description-element-office-development-in-visual-studio.md)|Obligatoire uniquement pour les compléments VSTO. Stocke la description qui s’affiche dans la liste des programmes installés.|None|
 |[&#60;formRegions&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/formregions-element-office-development-in-visual-studio.md)|Obligatoire uniquement pour les compléments VSTO Outlook qui comprennent des zones de formulaire.|None|
 |[&#60;formRegion&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/formregion-element-office-development-in-visual-studio.md)|Obligatoire uniquement pour les compléments VSTO Outlook qui comprennent des zones de formulaire.|**Nom**|
 |[&#60;élément vstoRuntime&#62; &#40;développement Office dans Visual Studio&#41;](../vsto/vstoruntime-element-office-development-in-visual-studio.md)|Obligatoire. Décrit la version spécifique de Visual Studio Tools pour Office Runtime qui est prise en charge par la solution Office.|**3/05**<br /><br /> **version**<br /><br /> **supportUrl**|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Vous pouvez modifier manuellement les manifestes d’application et de déploiement dans les solutions Office. Ensuite, vous devez signer à nouveau les manifestes d’application et de déploiement à l’aide de l’Outil Manifest Generation and Editing (*mage.exe* et *mageui.exe*). Pour plus d’informations, consultez [Comment : signer à nouveau les manifestes d’application et de déploiement](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
 
 ## <a name="file-location"></a>Emplacement du fichier
- Un manifeste d’application est propre à une seule version d’une solution. Pour cette raison, les manifestes d’application doivent être stockés à l’écart des manifestes de déploiement. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]place les fichiers spécifiques à la version dans un sous-répertoire nommé d’après la version associée dans le sous-répertoire des *fichiers d’application* du dossier de publication.
+ Un manifeste d’application est propre à une seule version d’une solution. Pour cette raison, les manifestes d’application doivent être stockés à l’écart des manifestes de déploiement. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] place les fichiers spécifiques à la version dans un sous-répertoire nommé d’après la version associée dans le sous-répertoire des *fichiers d’application* du dossier de publication.
 
 ## <a name="file-name-syntax"></a>Syntaxe du nom de fichier
  Le nom d’un fichier manifeste d’application doit être le nom complet et l’extension de l’application, tel qu’il est identifié dans l’élément **assemblyIdentity** , suivi de l’extension *. manifest*. Par exemple, un manifeste d’application qui fait référence à la personnalisation de *OutlookAddIn1.dll* utilise la syntaxe de nom de fichier suivante.

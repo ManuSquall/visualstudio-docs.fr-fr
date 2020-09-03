@@ -1,5 +1,5 @@
 ---
-title: KeyBindings Element - France Microsoft Docs
+title: KeyBindings, élément | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,14 +14,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: df1720286007d8f6acf073c21f5b2dcc8486782c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80703126"
 ---
-# <a name="keybindings-element"></a>Élément KeyBindings
-L’élément KeyBindings regroupe les éléments KeyBinding et d’autres groupes KeyBindings.
+# <a name="keybindings-element"></a>KeyBindings (élément)
+L’élément KeyBindings groupe les éléments KeyBinding et d’autres regroupements de combinaisons de touches.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -39,20 +39,20 @@ L’élément KeyBindings regroupe les éléments KeyBinding et d’autres group
 
 |Attribut|Description|
 |---------------|-----------------|
-|Condition|facultatif. Voir [Attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condition|facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Éléments enfants
 
 |Élément|Description|
 |-------------|-----------------|
-|[Élément KeyBinding](../extensibility/keybinding-element.md)|Spécifie les raccourcis clavier pour les commandes.|
-|[KeyBindings (keyBindings)](../extensibility/keybindings-element.md)|Groupes Éléments KeyBinding et autres groupes KeyBindings.|
+|[KeyBinding (élément)](../extensibility/keybinding-element.md)|Spécifie les raccourcis clavier pour les commandes.|
+|[Combinaisons](../extensibility/keybindings-element.md)|Groupe les éléments KeyBinding et d’autres regroupements de combinaisons de touches.|
 
 ### <a name="parent-elements"></a>Éléments parents
 
 |Élément|Description|
 |-------------|-----------------|
-|[Élément CommandTable](../extensibility/commandtable-element.md)|Définit tous les éléments qui représentent les commandes.|
+|[Élément CommandTable](../extensibility/commandtable-element.md)|Définit tous les éléments qui représentent des commandes.|
 
 ## <a name="example"></a>Exemple
 
@@ -66,5 +66,5 @@ L’élément KeyBindings regroupe les éléments KeyBinding et d’autres group
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Élément KeyBinding](../extensibility/keybinding-element.md)
-- [Fichiers visualister de table de commande de studio (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [KeyBinding (élément)](../extensibility/keybinding-element.md)
+- [Fichiers de table de commandes Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

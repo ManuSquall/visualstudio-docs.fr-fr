@@ -7,10 +7,10 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6f6423c569fd1909539de9460ab3dcde0bcf753c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532026"
 ---
 # <a name="image-library-viewer"></a>Visionneuse de bibliothèque d’images
@@ -55,7 +55,7 @@ L’outil visionneuse d’images Visual Studio peut charger et Rechercher des ma
 </ImageManifest>  
 ```  
   
- **symboles**  
+ **Symboles**  
   
  Pour faciliter la lecture et l’aide à la maintenance, le manifeste d’image peut utiliser des symboles pour les valeurs d’attribut. Les symboles sont définis comme suit :  
   
@@ -68,7 +68,7 @@ L’outil visionneuse d’images Visual Studio peut charger et Rechercher des ma
 </Symbols>  
 ```  
   
-|**Sous-élément**|**Définition**|  
+|**Sous-élément**|**Definition**|  
 |-|-|  
 |Importer|Importe les symboles du fichier manifeste donné pour une utilisation dans le manifeste actuel.|  
 |Guid|Le symbole représente un GUID et doit correspondre à la mise en forme du GUID.|  
@@ -108,7 +108,7 @@ L’outil visionneuse d’images Visual Studio peut charger et Rechercher des ma
 </Image>  
 ```  
     
-|**Attribut**|**Définition**|  
+|**Attribut**|**Definition**|  
 |-|-|
 |Guid|Souhaitée La partie GUID du moniker d’image|  
 |id|Souhaitée La partie ID du moniker d’image|  
@@ -124,14 +124,14 @@ L’outil visionneuse d’images Visual Studio peut charger et Rechercher des ma
  </Source>  
 ```  
   
-|**Attribut**|**Définition**|  
+|**Attribut**|**Definition**|  
 |-|-|  
 |Uri|Souhaitée URI qui définit l’emplacement à partir duquel l’image peut être chargée. Les valeurs possibles sont les suivantes :<br /><br /> -Un URI à en- [tête pack](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) à l’aide de l’autorité application:///<br /><br /> -Référence de ressource de composant absolue<br /><br /> -Chemin d’accès à un fichier contenant une ressource native|  
 |Arrière-plan|Facultatif Indique le type d’arrière-plan auquel la source est destinée à être utilisée.<br /><br /> Les valeurs possibles sont les suivantes :<br /><br /> - *Clair*: la source peut être utilisée sur un arrière-plan clair.<br /><br /> - *Dark*: la source peut être utilisée sur un arrière-plan sombre.<br /><br /> - *HighContrast*: la source peut être utilisée sur n’importe quel arrière-plan en mode contraste élevé.<br /><br /> - *HighContrastLight*: la source peut être utilisée sur un arrière-plan clair en mode contraste élevé.<br /><br /> -*HighContrastDark*: la source peut être utilisée sur un arrière-plan sombre en mode contraste élevé.<br /><br /> Si l’attribut **Background** est omis, la source peut être utilisée sur n’importe quel arrière-plan.<br /><br /> Si **Background** est *clair*, *Dark*, *HighContrastLight*ou *HighContrastDark*, les couleurs de la source ne sont jamais inversées. Si **Background** est omis ou défini sur *HighContrast*, l’inversion des couleurs de la source est contrôlée par l’attribut **AllowColorInversion** de l’image.|  
   
  Un \<Source> élément peut avoir exactement l’un des sous-éléments facultatifs suivants :  
   
-|**Élément**|**Attributs (tous obligatoires)**|**Définition**|  
+|**Element**|**Attributs (tous obligatoires)**|**Definition**|  
 |-|-|-|  
 |\<Size>|Valeur|La source sera utilisée pour les images de la taille donnée (en unités de périphérique). L’image sera carrée.|  
 |\<SizeRange>|MinSize, MaxSize|La source sera utilisée pour les images comprises entre MinSize et MaxSize (en unités de périphérique). L’image sera carrée.|  
@@ -144,7 +144,7 @@ L’outil visionneuse d’images Visual Studio peut charger et Rechercher des ma
 <NativeResource Type="type" ID="int" />  
 ```  
   
-|**Attribut**|**Définition**|  
+|**Attribut**|**Definition**|  
 |-|-|  
 |Type|Souhaitée Type de la ressource native (XAML ou PNG)|  
 |id|Souhaitée La partie ID d’entier de la ressource native|  
@@ -160,7 +160,7 @@ L’outil visionneuse d’images Visual Studio peut charger et Rechercher des ma
  </ImageList>  
 ```  
   
-|**Attribut**|**Définition**|  
+|**Attribut**|**Definition**|  
 |-|-|  
 |Guid|Souhaitée La partie GUID du moniker d’image|  
 |id|Souhaitée La partie ID du moniker d’image|  

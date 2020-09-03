@@ -14,9 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ebd7d500767e896ce9576a3d007a4357b9c5281c
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86014631"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Procédure pas à pas : appel du modèle d’objet client SharePoint dans une extension de Explorateur de serveurs
@@ -78,13 +79,13 @@ La connaissance des concepts suivants est utile, mais pas obligatoire, pour effe
 
 6. Dans la zone **nom** , tapez **WebPartNode**, puis choisissez le bouton **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Ajoute le projet **WebPartNode** à **Explorateur de solutions**.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Ajoute le projet **WebPartNode** à **Explorateur de solutions**.
 
 #### <a name="to-create-the-extension-project"></a>Pour créer le projet d’extension
 
 1. Dans **Explorateur de solutions**, ouvrez le menu contextuel du nœud solution, choisissez **Ajouter**, puis **nouveau projet**.
 
-2. Dans la boîte de dialogue **nouveau projet** , développez les nœuds **Visual C#** ou **Visual Basic** , puis choisissez **Windows**.
+2. Dans la boîte de dialogue  **nouveau projet** , développez les nœuds **Visual C#** ou **Visual Basic** , puis choisissez **Windows**.
 
 3. En haut de la boîte de dialogue, choisissez **.NET Framework 4,5** dans la liste des versions du .NET Framework.
 
@@ -92,7 +93,7 @@ La connaissance des concepts suivants est utile, mais pas obligatoire, pour effe
 
 5. Dans la zone **nom** , entrez **WebPartNodeExtension**, puis choisissez le bouton **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Ajoute le projet **WebPartNodeExtension** à la solution et ouvre le fichier de code Class1 par défaut.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Ajoute le projet **WebPartNodeExtension** à la solution et ouvre le fichier de code Class1 par défaut.
 
 6. Supprimez le fichier de code Class1 du projet.
 

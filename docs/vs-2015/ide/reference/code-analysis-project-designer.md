@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7c14396c8ebaba2b45587d70e44fa41ba8f2742b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660866"
 ---
 # <a name="code-analysis-project-designer"></a>Analyse du code, page du Concepteur de projets
@@ -26,7 +26,7 @@ ms.locfileid: "72660866"
 
 Contient l’outil d’analyse de code que vous pouvez choisir d’exécuter sur votre code. L’outil rapporte des informations relatives à vos assemblys, notamment les éventuelles violations des règles de programmation et de conception présentées plus avant dans le cadre des règles de conception de Microsoft .NET Framework.
 
-## <a name="uielement-list"></a>Liste des éléments d’interface
+## <a name="uielement-list"></a>Liste des éléments de l'interface utilisateur
  Activer l’analyse du code active ou désactive l’analyse du code pour votre projet.
 
  Règles de conception active ou désactive les règles de conception. Vous pouvez également développer cette entrée pour activer ou désactiver des règles particulières.

@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6aa4cce032a5eb80a11568a83c1166b5690bd688
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85279876"
 ---
 # <a name="gpu-usage"></a>Utilisation du GPU
@@ -108,7 +108,7 @@ La liste des événements dans la partie inférieure du rapport utilisation du G
 
 |Colonne|Description|
 |------------|-----------------|
-|**Nom de l’événement**|Nom de l'événement graphique. Un événement correspond généralement à un événement dans une chronologie de threads de l’UC et à un événement d’une chronologie du GPU. Les noms d’événements peuvent être *désattributés* si l’utilisation du GPU ne peut pas déterminer le nom d’un événement. Pour plus d’informations, consultez la remarque qui suit ce tableau.|
+|**Nom de l'événement**|Nom de l'événement graphique. Un événement correspond généralement à un événement dans une chronologie de threads de l’UC et à un événement d’une chronologie du GPU. Les noms d’événements peuvent être *désattributés* si l’utilisation du GPU ne peut pas déterminer le nom d’un événement. Pour plus d’informations, consultez la remarque qui suit ce tableau.|
 |**Début UC (ns)**|Heure à laquelle l'événement a débuté sur l'UC en appelant une API Direct3D. Le temps est mesuré en nanosecondes, par rapport au moment où l'application a démarré.|
 |**Début GPU (ns)**|Heure à laquelle l'événement a débuté sur le GPU. Le temps est mesuré en nanosecondes, par rapport au moment où l'application a démarré.|
 |**Durée GPU (ns)**|Durée, en nanosecondes, nécessaire pour terminer l’événement sur le GPU.|

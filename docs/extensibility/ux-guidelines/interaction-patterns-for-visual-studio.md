@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5cbfeef3352e4abd03e12cc6b228cea8a8c124a6
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84184404"
 ---
 # <a name="interaction-patterns-for-visual-studio"></a>Modèles d’interaction pour Visual Studio
@@ -46,7 +46,7 @@ ms.locfileid: "84184404"
 
   - [Dialogues](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Dialogs)
 
-  - [Projet](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Projects)
+  - [Projets](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Projects)
 
 ## <a name="common-control-patterns"></a>Modèles de contrôle communs
  Les modèles de contrôle concernent principalement la manière dont les contrôles individuels sont censés se comporter. Il s’agit d’une zone dans laquelle la cohérence est la plus importante.

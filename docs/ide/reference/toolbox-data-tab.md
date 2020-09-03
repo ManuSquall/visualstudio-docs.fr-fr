@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e79b80890925bdf4d6d191db759516b5545fc403
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75590252"
 ---
 # <a name="toolbox-data-tab"></a>Boîte à outils, onglet Données
@@ -44,5 +44,5 @@ Pour accéder directement à la page de référence .NET d’un composant, appuy
 - [Outils de dataset dans Visual Studio](../../data-tools/dataset-tools-in-visual-studio.md)
 - [Lier des contrôles à des données dans Visual Studio](../../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [Lier des contrôles Windows Forms à des données dans Visual Studio](../../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-- [Modifier les données dans les ensembles de données](../../data-tools/edit-data-in-datasets.md)
+- [Modifier des données dans des datasets](../../data-tools/edit-data-in-datasets.md)
 - [Valider les données dans des datasets](../../data-tools/validate-data-in-datasets.md)

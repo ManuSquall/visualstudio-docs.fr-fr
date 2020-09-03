@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ce7d30b66106b8d0d861fcf782a77ee7f461196b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532039"
 ---
 # <a name="memory-usage-without-debugging"></a>Utilisation de la mémoire sans débogage
@@ -34,7 +34,7 @@ Vous pouvez utiliser l’outil **Utilisation de la mémoire** sans débogage pou
   
   Cette rubrique explique comment utiliser l’outil Utilisation de la mémoire pour analyser une application XAML universelle Windows. Si vous voulez analyser l’utilisation de la mémoire dans des applications universelles Windows qui utilisent JavaScript et HTML, consultez [Analyser l’utilisation de la mémoire (JavaScript)](https://msdn.microsoft.com/library/windows/apps/jj819176.aspx).  
   
-## <a name="start-a-memory-usage-diagnostic-session"></a><a name="BKMK_Start_a_Memory_Usage_diagnostic_session"></a>Démarrer une session de diagnostic d’utilisation de la mémoire  
+## <a name="start-a-memory-usage-diagnostic-session"></a><a name="BKMK_Start_a_Memory_Usage_diagnostic_session"></a> Démarrer une session de diagnostic d’utilisation de la mémoire  
   
 1. Ouvrez un projet Windows universel C# dans Visual Studio.  
   
@@ -44,7 +44,7 @@ Vous pouvez utiliser l’outil **Utilisation de la mémoire** sans débogage pou
   
      ![Commencer une session de diagnostic de l'utilisation de la mémoire](../profiling/media/memuse-start-diagnosticssession.png "MEMUSE_Start_DiagnosticsSession")  
   
-## <a name="monitor-memory-use"></a><a name="BKMK_Monitor_memory_use"></a>Surveiller l’utilisation de la mémoire  
+## <a name="monitor-memory-use"></a><a name="BKMK_Monitor_memory_use"></a> Surveiller l’utilisation de la mémoire  
  Même si vous pouvez utiliser l’outil **Utilisation de la mémoire** pour générer des rapports détaillés permettant d’identifier et de corriger des problèmes, il permet également d’étudier les effets en temps réel sur la mémoire d’un scénario que vous développez activement.  
   
  Quand vous démarrez une session de diagnostic, votre application démarre et la page **Outils de diagnostic** affiche un graphique chronologique de l’utilisation de la mémoire par votre application.  
@@ -63,7 +63,7 @@ Vous pouvez utiliser l’outil **Utilisation de la mémoire** sans débogage pou
   
  Pour collecter des instantanés, démarrez une nouvelle session de diagnostic. Choisissez **Prendre un instantané** quand vous voulez capturer les données de mémoire. Pour générer un rapport, choisissez **Arrêter**.  
   
-## <a name="memory-usage-overview-page"></a><a name="BKMK_Memory_Usage_overview_page"></a>Page vue d’ensemble de l’utilisation de la mémoire  
+## <a name="memory-usage-overview-page"></a><a name="BKMK_Memory_Usage_overview_page"></a> Page vue d’ensemble de l’utilisation de la mémoire  
  Une fois que vous avez arrêté la collection des données, l’outil Utilisation de la mémoire arrête l’application et affiche le rapport de vue d’ensemble.  
   
  ![Page de vue d'ensemble de l'utilisation de la mémoire](../profiling/media/memuse-reportoverview.png "MEMUSE__ReportOverview")  
@@ -94,7 +94,7 @@ Vous pouvez utiliser l’outil **Utilisation de la mémoire** sans débogage pou
 #### <a name="managed-heap"></a><a name="BKMK_Managed_Heap"></a> Tas managé  
  Les arborescences de tas managé [Arborescence Tas managé (détails de l’instantané)](../profiling/memory-usage-without-debugging2.md#BKMK_Managed_Heap_tree__Snapshot_details_) et [Arborescence Tas managé (comparaison d’instantanés)](../profiling/memory-usage-without-debugging2.md#BKMK_Managed_Heap_tree__Snapshot_diff_) indiquent les types et instances présents dans le rapport. La sélection d’un type ou d’une instance affiche les arborescences **Chemins d’accès à la racine** et **Objets référencés** pour l’élément sélectionné.  
   
-#### <a name="paths-to-root"></a><a name="BKMK_Paths_to_Root"></a>Chemins d’accès à la racine  
+#### <a name="paths-to-root"></a><a name="BKMK_Paths_to_Root"></a> Chemins d’accès à la racine  
  L’[arborescence Chemins d’accès à la racine (détails de l’instantané)](../profiling/memory-usage-without-debugging2.md#BKMK_Paths_to_Root_tree__Snapshot_details_) et l’[arborescence Chemins d’accès à la racine (comparaison d’instantanés)](../profiling/memory-usage-without-debugging2.md#BKMK_Paths_to_Root_tree__Snapshot_diff_) affichent la chaîne d’objets qui font référence au type ou à l’instance. Le récupérateur de mémoire .NET Framework nettoie la mémoire d’un objet uniquement quand toutes les références à cet objet ont été libérées.  
   
 #### <a name="referenced-objects"></a><a name="BKMK_Referenced_Objects"></a> Objets référencés  
@@ -112,13 +112,13 @@ Vous pouvez utiliser l’outil **Utilisation de la mémoire** sans débogage pou
   
  ![Options de tri et de filtre](../profiling/media/memuse-sortandfilter.png "MEMUSE_SortAndFilter")  
   
-#### <a name="filter"></a><a name="BKMK_Filter"></a>Filtres  
+#### <a name="filter"></a><a name="BKMK_Filter"></a> Filtres  
  Entrez une chaîne dans la zone **Filtre** pour restreindre l’affichage des arborescences aux types qui contiennent le texte spécifié. Le filtre n'est pas sensible à la casse et reconnaît la chaîne spécifiée dans toutes les parties des noms de type.  
   
 #### <a name="collapse-small-objects"></a><a name="BKMK_Collapse_Small_Objects"></a> Réduire les petits objets  
  Quand ce filtre est appliqué, les types dont la **Taille (octets)** est inférieure à 0,5 % de la taille totale de la mémoire de l’instantané sont masqués dans la liste **Tas managé**.  
   
-#### <a name="just-my-code"></a><a name="BKMK_Just_My_Code"></a>Uniquement mon code  
+#### <a name="just-my-code"></a><a name="BKMK_Just_My_Code"></a> Uniquement mon code  
  Le filtre **Uniquement mon code** masque la plupart des instances générées par du code externe. Les types externes sont détenus par le système d'exploitation ou les composants Framework. Ils peuvent aussi être générés par le compilateur.  
   
 ## <a name="snapshot-details-reports"></a><a name="BKMK_Snapshot_details_reports"></a> Rapports détaillés d’instantané  

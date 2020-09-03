@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c71586c43fa1a71205d61ae21fb94c267daf497d
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85381910"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Guide pratique pour spécifier un autre emplacement pour les mises à jour du déploiement
@@ -50,7 +50,7 @@ Vous pouvez installer votre [!INCLUDE[ndptecclick](../deployment/includes/ndptec
 
     **Mage-Update HelloWorld.exe. application-ProviderUrl http : \/ /adatum.com/Update/Path**
 
-3. Enregistrez le fichier.
+3. Enregistrez le fichier .
 
    > [!NOTE]
    > Vous devez à présent signer à nouveau le fichier avec *Mage.exe*. Pour plus d’informations, consultez [procédure pas à pas : déploiement manuel d’une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).

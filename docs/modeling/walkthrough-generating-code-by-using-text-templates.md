@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 181c1ccbeaff0aadee1b3d5ebd255b854b915277
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532058"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>Procédure pas à pas : générer du code à l’aide de modèles de texte

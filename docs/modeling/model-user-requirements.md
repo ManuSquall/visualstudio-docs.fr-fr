@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0c09e45250ad95d50d5d2cd0ca2753a70bb95748
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75590239"
 ---
 # <a name="model-user-requirements"></a>Modéliser les besoins des utilisateurs
@@ -56,7 +56,7 @@ Vous pouvez créer plusieurs vues différentes des impératifs des utilisateurs.
 
 Notez que la plupart des types de diagrammes peuvent être utilisés à d’autres fins. Pour obtenir une vue d’ensemble des types de diagrammes, consultez [créer des modèles pour votre application](../modeling/create-models-for-your-app.md).
 
-## <a name="BusinessRules"></a> Showing Business Rules
+## <a name="showing-business-rules"></a><a name="BusinessRules"></a> Indication des règles d’entreprise
 
 Une règle métier est un impératif qui n’est associé à aucun cas d’usage particulier et doit être respecté à l’échelle du système.
 
@@ -70,15 +70,15 @@ Toutefois, vous pouvez exprimer de nombreuses règles dynamiques plus efficaceme
 
 Notez qu’ici le choix porte sur la façon dont vous définissez les impératifs et que cette décision est indépendante de la façon dont vous implémentez les impératifs dans le code du programme.
 
-Les rubriques suivantes fournissent des informations supplémentaires :
+Les rubriques suivantes fournissent plus d'informations :
 
-|Pour en savoir plus sur|Lecture|
+|Pour en savoir plus sur|Lire|
 |-|-|
 |Comment développer du code qui respecte des règles métier|[Modéliser l’architecture de votre application](../modeling/model-your-app-s-architecture.md)|
 
-## <a name="QoSRequirements"></a> Describing Quality of Service Requirements
+## <a name="describing-quality-of-service-requirements"></a><a name="QoSRequirements"></a> Describing Quality of Service Requirements
 
-Il existe plusieurs catégories d’impératifs de qualité de service. Il s'agit des dossiers suivants :
+Il existe plusieurs catégories d’impératifs de qualité de service. Il s'agit des dossiers suivants :
 
 - Performances
 

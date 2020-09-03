@@ -12,16 +12,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0711c95310d4d3613d8b82bccbecab122bf19ef8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68196359"
 ---
 # <a name="idiasessionfindsymbolsbyrvaforacceleratorpointertag"></a>IDiaSession::findSymbolsByRVAForAcceleratorPointerTag
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Étant donné une valeur de balise correspondante, cette méthode retourne une énumération de symboles qui sont contenus dans une fonction de stub d’accélérateur parent spécifié à une adresse virtuelle relative spécifiée.  
+Pour une valeur de balise correspondante donnée, cette méthode retourne une énumération des symboles contenus dans une fonction stub d’accélérateur parente spécifiée à une adresse virtuelle relative spécifiée.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -36,22 +36,22 @@ HRESULT findSymbolsByRVAForAcceleratorPointerTag ( 
   
 #### <a name="parameters"></a>Paramètres  
  `parent`  
- [in] Un `IDiaSymbol` qui correspond à la fonction de stub accélérateur à rechercher.  
+ dans `IDiaSymbol` Qui correspond à la fonction stub d’accélérateur dans laquelle effectuer la recherche.  
   
  `tagValue`  
- [in] La valeur de balise de pointeur.  
+ dans Valeur de balise de pointeur.  
   
  `rva`  
- [in] L’adresse virtuelle relative.  
+ dans Adresse virtuelle relative.  
   
  `ppResult`  
- [out] Un pointeur vers un `IDiaEnumSymbols` pointeur d’interface qui est initialisé avec le résultat.  
+ à Pointeur vers un `IDiaEnumSymbols` pointeur d’interface qui est initialisé avec le résultat.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="remarks"></a>Notes  
- Appelez cette méthode uniquement sur un `IDiaSymbol` interface qui correspond à une fonction de stub accélérateur.  
+ Appelez cette méthode uniquement sur une `IDiaSymbol` interface qui correspond à une fonction stub d’accélérateur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   

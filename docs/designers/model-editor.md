@@ -12,29 +12,29 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7adee409ff6bb5721724b9acc2e76a11d32a4f54
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75589849"
 ---
 # <a name="model-editor"></a>Éditeur de modèle
 
-Ce document décrit comment travailler avec **l’éditeur de modèles** Visual Studio pour visualiser, créer et modifier les modèles 3D.
+Ce document explique comment utiliser l' **éditeur de modèle** Visual Studio pour afficher, créer et modifier des modèles 3D.
 
 Vous pouvez utiliser **l’Éditeur de modèle** pour créer des modèles 3D de base à partir de zéro, ou pour afficher et modifier des modèles 3D plus complexes, créés à l’aide d’outils de modélisation 3D riches en fonctionnalités.
 
 ## <a name="supported-formats"></a>Formats pris en charge
 
-**L’éditeur modèle** prend en charge plusieurs formats de modèles 3D qui sont utilisés dans le développement de l’application DirectX :
+L' **éditeur de modèle** prend en charge plusieurs formats de modèle 3D qui sont utilisés dans le développement d’applications DirectX :
 
 |Nom de format|Extension de fichier|Opérations prises en charge (Afficher, Modifier, Créer)|
 |-----------------| - | - |
-|Fichier d'échange AutoDesk FBX|*.fbx*|Afficher, Modifier, Créer|
+|Fichier d'échange AutoDesk FBX|*. FBX*|Afficher, Modifier, Créer|
 |Fichier Collada DAE|*.dae*|Afficher, Modifier (Les modifications apportées aux fichiers Collada DAE sont enregistrées au format FBX.)|
-|Fichier OBJ|*.obj (obj)*|Afficher, Modifier (Les modifications apportées aux fichiers OBJ sont enregistrées au format FBX.)|
+|Fichier OBJ|*. obj*|Afficher, Modifier (Les modifications apportées aux fichiers OBJ sont enregistrées au format FBX.)|
 
-## <a name="get-started"></a>Prise en main
+## <a name="get-started"></a>Bien démarrer
 
 Cette section explique comment ajouter un modèle 3D à un projet C++ Visual Studio et donne d’autres informations de base pour commencer.
 
@@ -45,7 +45,7 @@ Cette section explique comment ajouter un modèle 3D à un projet C++ Visual Stu
 
 1. Vérifiez que le composant Visual Studio dont vous avez besoin pour travailler avec les graphismes est installé. Il s’appelle **Éditeurs d’images et de modèles 3D**.
 
-   Pour l’installer, ouvrez Visual Studio Install en sélectionnant **tools** > **Get Tools and Features** à partir de la barre de menu, puis sélectionnez **l’onglet Composants individuels.** Sélectionnez le composant **d’éditeurs d’images et de modèles 3D** dans la catégorie Jeux et **Graphiques,** puis **sélectionnez Modifier**.
+   Pour l’installer, ouvrez Visual Studio installer en sélectionnant **Outils**  >  **afficher les outils et fonctionnalités** dans la barre de menus, puis sélectionnez l’onglet **composants individuels** . Sélectionnez le composant **éditeurs d’images et de modèles 3D** sous la catégorie **jeux et graphismes** , puis sélectionnez **modifier**.
 
    ![Composant Éditeurs d’images et de modèles 3D](media/image-3d-model-editors-component.png)
 
@@ -88,25 +88,25 @@ Le tableau ci-dessous décrit les éléments de la barre d’outils **Mode de l�
 
 |Élément de la barre d'outils|Description|
 |------------------|-----------------|
-|**Sélectionnez**|Permet de sélectionner des points, des arêtes, des faces ou des objets dans la scène, en fonction du mode de sélection actif.|
-|**Pan**|Permet de déplacer une scène 3D par rapport au cadre de la fenêtre. Pour effectuer un mouvement panoramique, sélectionnez un point dans la scène et déplacez-le.<br /><br /> En mode **Select,** vous pouvez appuyer et tenir **Ctrl** pour activer temporairement le mode **Pan.**|
-|**Zoom**|Permet l'affichage d'une scène avec plus ou moins de détails par rapport au cadre de la fenêtre. En mode **Zoom**, sélectionnez un point dans la scène et déplacez-le vers la droite ou le bas pour effectuer un zoom avant, ou vers la gauche ou le haut pour effectuer un zoom arrière.<br /><br /> En mode **Select,** vous pouvez zoomer ou faire un zoom arrière en utilisant la roue de la souris pendant que vous appuyez et maintenez **Ctrl**.|
+|**Select**|Permet de sélectionner des points, des arêtes, des faces ou des objets dans la scène, en fonction du mode de sélection actif.|
+|**Panoramique**|Permet de déplacer une scène 3D par rapport au cadre de la fenêtre. Pour effectuer un mouvement panoramique, sélectionnez un point dans la scène et déplacez-le.<br /><br /> En mode **sélection** , vous pouvez appuyer sur la **touche Ctrl** et la maintenir enfoncée pour activer temporairement le mode **panoramique** .|
+|**Zoom**|Permet l'affichage d'une scène avec plus ou moins de détails par rapport au cadre de la fenêtre. En mode **Zoom**, sélectionnez un point dans la scène et déplacez-le vers la droite ou le bas pour effectuer un zoom avant, ou vers la gauche ou le haut pour effectuer un zoom arrière.<br /><br /> En mode **sélection** , vous pouvez effectuer un zoom avant ou arrière à l’aide de la roulette de la souris tout en maintenant la **touche Ctrl**enfoncée.|
 |**Orbite**|Positionne la vue sur un chemin circulaire autour de l'objet sélectionné. Si aucun objet n'est sélectionné, le chemin est centré sur l'origine de la scène. **Remarque :** Ce mode n’a aucun effet quand la projection **Orthographique** est activée.|
 |**Locale universelle**|Lorsque cet élément est activé, les transformations appliquées à l'objet sélectionné se produisent dans l'espace universel. Sinon, les transformations appliquées à l'objet sélectionné se produisent dans l'espace local.|
-|**Pivot Mode**|Lorsque cet élément est activé, les transformations affectent l’emplacement et l’orientation du *point pivot* de l’objet sélectionné (le point pivot définit le centre de traduction, d’échelle et d’opérations de rotation.) Dans le cas contraire, les transformations affectent l’emplacement et l’orientation de la géométrie de l’objet, par rapport au point pivot.|
+|**Mode pivot**|Lorsque cet élément est activé, les transformations affectent l’emplacement et l’orientation du *point pivot* de l’objet sélectionné (le point pivot définit le Centre des opérations de translation, de mise à l’échelle et de rotation.) Sinon, les transformations affectent l’emplacement et l’orientation de la géométrie de l’objet, par rapport au point pivot.|
 |**Verrouiller l'axe X**|Limite la manipulation des objets à l'axe X. S'applique uniquement lorsque vous utilisez la partie centrale du widget du manipulateur.|
 |**Verrouiller l’axe Y**|Limite la manipulation des objets à l'axe Y. S'applique uniquement lorsque vous utilisez la partie centrale du widget du manipulateur.|
 |**Verrouiller l’axe Z**|Limite la manipulation des objets à l'axe Z. S'applique uniquement lorsque vous utilisez la partie centrale du widget du manipulateur.|
 |**Cadrer sur l’objet**|Cadre la vue sur l'objet sélectionné afin qu'il se trouve au centre de la vue.|
-|**View**|Définit l'orientation de la vue. Les orientations possibles sont les suivantes :<br /><br /> **Front**<br /> Positionne la vue en face de la scène.<br /><br /> **Précédent**<br /> Positionne la vue derrière la scène.<br /><br /> **Gauche**<br /> Positionne la vue à gauche de la scène.<br /><br /> **Oui**<br /> Positionne la vue à droite de la scène.<br /><br /> **Retour au début**<br /> Positionne la vue au-dessus de la scène.<br /><br /> **Bas**<br /> Positionne la vue au-dessous de la scène. **Remarque :** Il s’agit de la seule façon de modifier la direction de la vue quand la projection **Orthographique** est activée.|
+|**Visualiser**|Définit l'orientation de la vue. Les orientations possibles sont les suivantes :<br /><br /> **Front**<br /> Positionne la vue en face de la scène.<br /><br /> **Précédent**<br /> Positionne la vue derrière la scène.<br /><br /> **Left**<br /> Positionne la vue à gauche de la scène.<br /><br /> **Right**<br /> Positionne la vue à droite de la scène.<br /><br /> **Top**<br /> Positionne la vue au-dessus de la scène.<br /><br /> **Bas**<br /> Positionne la vue au-dessous de la scène. **Remarque :** Il s’agit de la seule façon de modifier la direction de la vue quand la projection **Orthographique** est activée.|
 |**Projection**|Définit le type de projection utilisé pour dessiner la scène. Les projections possibles sont les suivantes :<br /><br /> **Perspective**<br /> Dans la projection en perspective, les objets éloignés du point de vue apparaissent de taille réduite et convergent finalement vers un point à l'horizon.<br /><br /> **Orthographique**<br /> Dans la projection orthographique, les objets apparaissent de même taille, quelle que soit leur distance par rapport au point de vue. Aucune convergence n'est affichée. Quand la projection **Orthographique** est activée, vous ne pouvez pas utiliser le mode **Orbite** pour positionner la vue.|
 |**Style de dessin**|Définit la façon dont les objets de la scène sont affichés. Les styles disponibles sont les suivants :<br /><br /> **Maquette**<br /> Si cette option est activée, les objets sont affichés sous forme de maquettes.<br /><br /> **Superposer**<br /> Si cette option est activée, les objets sont affichés au moyen d'une fusion additive. Vous pouvez l'utiliser pour visualiser le degré de superposition obtenu dans la scène.<br /><br /> **Ombrage constant**<br /> Si cette option est activée, les objets sont affichés à l'aide d'un modèle d'éclairage élémentaire à ombrage constant. Vous pouvez l'utiliser pour afficher les faces d'un objet plus facilement.<br /><br /> Si aucune de ces options n'est activée, chaque objet est affiché en fonction du matériau qui lui est appliqué.|
 |**Mode de rendu en temps réel**|Quand le rendu en temps réel est activé, Visual Studio redessine l’aire de conception, même quand aucune action utilisateur n’est effectuée. Ce mode est utile lorsque vous travaillez avec des nuanceurs qui évoluent avec le temps.|
 |**Activer/Désactiver la grille**|Lorsque cet élément est activé, une grille s'affiche. Dans le cas contraire, la grille ne s'affiche pas.|
-|**Toolbox**|Affiche ou masque la **Boîte à outils**.|
-|**Aperçu du document**|Affiche ou masque la fenêtre **Structure du document**.|
+|**Boîte à outils**|Affiche ou masque la **Boîte à outils**.|
+|**Structure du document**|Affiche ou masque la fenêtre **Structure du document**.|
 |**Propriétés**|Affiche ou masque la fenêtre **Propriétés**.|
-|**Avancé**|Contient des commandes et des options avancées.<br /><br /> **Moteurs graphiques**<br /><br /> **Afficher avec D3D11**<br /> Utilise Direct3D 11 pour afficher l'aire de conception de l'éditeur de modèle.<br /><br /> **Afficher avec D3D11WARP**<br /> Utilise la plateforme WARP (Windows Advanced Rasterization Platform) Direct3D 11 pour afficher l'aire de conception de l'éditeur de modèle.<br /><br /> **Gestion de la scène**<br /><br /> **Importer**<br /> Importe des objets dans la scène actuelle depuis un autre fichier de modèle 3D.<br /><br /> **Attacher au parent**<br /> Définit le premier objet parmi les objets sélectionnés comme parent des autres objets sélectionnés.<br /><br /> **Détacher du parent**<br /> Détache l'objet sélectionné de son parent. L’objet sélectionné devient un *objet racine* dans la scène. Un objet racine ne possède pas d'objet parent.<br /><br /> **Créer un groupe**<br /> Regroupe les objets sélectionnés en tant qu'objets frères.<br /><br /> **Fusionner les objets**<br /> Associe les objets sélectionnés en un seul objet.<br /><br /> **Créer un objet à partir de la sélection de polygones**<br /> Supprime les faces sélectionnées à partir de l'objet actif et ajoute à la scène un nouvel objet qui contient ces faces.<br /><br /> **Outils**<br /><br /> **Retourner l’enroulement de polygone**<br /> Retourne les polygones sélectionnés afin que l'ordre d'enroulement et la normale de surface soient inversés.<br /><br /> **Supprimer toutes les animations**<br /> Supprime les données d'animation des objets.<br /><br /> **Effectuer une triangulation**<br /> Convertit l'objet sélectionné en triangles.<br /><br /> **View**<br /><br /> Élimination face arrière<br /> Active ou désactive l'élimination face arrière.<br /><br /> **Taux d’image**<br /> Affiche la fréquence d'images dans l'angle supérieur droit de l'aire de conception. La fréquence d'images est le nombre d'images dessinées par seconde.<br /><br /> Cette option est utile lorsque vous activez l’option **Mode de rendu en temps réel**.<br /><br /> **Afficher tous les**<br /> Affiche tous les objets de la scène. Réinitialise la propriété **Masqué** de chaque objet sur **False**.<br /><br /> **Afficher les normales de face**<br /> Affiche la normale de chaque face.<br /><br /> **Afficher les matériaux manquants**<br /> Affiche une texture spéciale sur les objets auxquels aucun matériau n'est assigné.<br /><br /> **Afficher le pivot**<br /> Active ou désactive l’affichage d’un marqueur d’axe 3D au point pivot de la sélection active.<br /><br /> **Afficher les nœuds d’espace réservé**<br /> Affiche les nœuds d'espace réservé. Un nœud d'espace réservé est créé lorsque vous regroupez des objets.<br /><br /> **Afficher les normales des sommets**<br /> Affiche la normale de chaque sommet. **Conseil :** Vous pouvez choisir le bouton **Scripts** pour réexécuter le dernier script.|
+|**Avancée**|Contient des commandes et des options avancées.<br /><br /> **Moteurs graphiques**<br /><br /> **Afficher avec D3D11**<br /> Utilise Direct3D 11 pour afficher l'aire de conception de l'éditeur de modèle.<br /><br /> **Afficher avec D3D11WARP**<br /> Utilise la plateforme WARP (Windows Advanced Rasterization Platform) Direct3D 11 pour afficher l'aire de conception de l'éditeur de modèle.<br /><br /> **Gestion des scènes**<br /><br /> **Importer**<br /> Importe des objets dans la scène actuelle depuis un autre fichier de modèle 3D.<br /><br /> **Attacher au parent**<br /> Définit le premier objet parmi les objets sélectionnés comme parent des autres objets sélectionnés.<br /><br /> **Détacher du parent**<br /> Détache l'objet sélectionné de son parent. L’objet sélectionné devient un *objet racine* dans la scène. Un objet racine ne possède pas d'objet parent.<br /><br /> **Créer un groupe**<br /> Regroupe les objets sélectionnés en tant qu'objets frères.<br /><br /> **Fusionner les objets**<br /> Associe les objets sélectionnés en un seul objet.<br /><br /> **Créer un objet à partir de la sélection de polygones**<br /> Supprime les faces sélectionnées à partir de l'objet actif et ajoute à la scène un nouvel objet qui contient ces faces.<br /><br /> **outils**<br /><br /> **Retourner l’enroulement de polygone**<br /> Retourne les polygones sélectionnés afin que l'ordre d'enroulement et la normale de surface soient inversés.<br /><br /> **Supprimer toutes les animations**<br /> Supprime les données d'animation des objets.<br /><br /> **Effectuer une triangulation**<br /> Convertit l'objet sélectionné en triangles.<br /><br /> **Visualiser**<br /><br /> Élimination face arrière<br /> Active ou désactive l'élimination face arrière.<br /><br /> **Fréquence d’images**<br /> Affiche la fréquence d'images dans l'angle supérieur droit de l'aire de conception. La fréquence d'images est le nombre d'images dessinées par seconde.<br /><br /> Cette option est utile lorsque vous activez l’option **Mode de rendu en temps réel**.<br /><br /> **Afficher tout**<br /> Affiche tous les objets de la scène. Réinitialise la propriété **Masqué** de chaque objet sur **False**.<br /><br /> **Afficher les normales de face**<br /> Affiche la normale de chaque face.<br /><br /> **Afficher les matériaux manquants**<br /> Affiche une texture spéciale sur les objets auxquels aucun matériau n'est assigné.<br /><br /> **Afficher le pivot**<br /> Active ou désactive l’affichage d’un marqueur d’axe 3D au point pivot de la sélection active.<br /><br /> **Afficher les nœuds d’espace réservé**<br /> Affiche les nœuds d'espace réservé. Un nœud d'espace réservé est créé lorsque vous regroupez des objets.<br /><br /> **Afficher les normales des sommets**<br /> Affiche la normale de chaque sommet. **Conseil :** Vous pouvez choisir le bouton **Scripts** pour réexécuter le dernier script.|
 
 Voici la barre d’outils **Éditeur de modèle** :
 
@@ -116,11 +116,11 @@ Le prochain tableau décrit les éléments de la barre d’outils **Éditeur de 
 
 |Élément de la barre d'outils|Description|
 |------------------|-----------------|
-|**Traduire**|Déplace la sélection.|
-|**Échelle**|Modifie la taille de la sélection.|
-|**Tourner**|Fait pivoter la sélection.|
+|**Translate**|Déplace la sélection.|
+|**Mettre à l'échelle**|Modifie la taille de la sélection.|
+|**Faire pivoter**|Fait pivoter la sélection.|
 |**Sélectionner le point**|Définit le **Mode de sélection** pour sélectionner des points spécifiques sur un objet.|
-|**Sélectionnez Edge**|Définit le **Mode de sélection** pour sélectionner une arête (segment reliant deux sommets) sur un objet.|
+|**Sélectionner un bord**|Définit le **Mode de sélection** pour sélectionner une arête (segment reliant deux sommets) sur un objet.|
 |**Sélectionner la face**|Définit le **Mode de sélection** pour sélectionner une face d’un objet.|
 |**Sélectionner un objet**|Définit le **Mode de sélection** pour sélectionner un objet entier.|
 |**Extruder**|Crée une face supplémentaire et la connecte à la face sélectionnée.|
@@ -134,8 +134,8 @@ Le tableau ci-dessous décrit les principaux contrôles d'affichage.
 
 |Contrôle d'affichage|Description|
 |------------------|-----------------|
-|**Pan**|Permet de déplacer une scène 3D par rapport au cadre de la fenêtre. Pour effectuer un mouvement panoramique, sélectionnez un point dans la scène et déplacez-le.<br /><br /> En mode **Select,** vous pouvez appuyer et tenir **Ctrl** pour activer temporairement le mode **Pan.**|
-|**Zoom**|Permet l'affichage d'une scène avec plus ou moins de détails par rapport au cadre de la fenêtre. En mode **Zoom**, sélectionnez un point dans la scène et déplacez-le vers la droite ou le bas pour effectuer un zoom avant, ou vers la gauche ou le haut pour effectuer un zoom arrière.<br /><br /> En mode **Select,** vous pouvez zoomer ou faire un zoom arrière en utilisant la roue de la souris pendant que vous appuyez et maintenez **Ctrl**.|
+|**Panoramique**|Permet de déplacer une scène 3D par rapport au cadre de la fenêtre. Pour effectuer un mouvement panoramique, sélectionnez un point dans la scène et déplacez-le.<br /><br /> En mode **sélection** , vous pouvez appuyer sur la **touche Ctrl** et la maintenir enfoncée pour activer temporairement le mode **panoramique** .|
+|**Zoom**|Permet l'affichage d'une scène avec plus ou moins de détails par rapport au cadre de la fenêtre. En mode **Zoom**, sélectionnez un point dans la scène et déplacez-le vers la droite ou le bas pour effectuer un zoom avant, ou vers la gauche ou le haut pour effectuer un zoom arrière.<br /><br /> En mode **sélection** , vous pouvez effectuer un zoom avant ou arrière à l’aide de la roulette de la souris tout en maintenant la **touche Ctrl**enfoncée.|
 |**Orbite**|Positionne la vue sur un chemin circulaire autour de l'objet sélectionné. Si aucun objet n'est sélectionné, le chemin est centré sur l'origine de la scène. **Remarque :** Ce mode n’a aucun effet quand la projection **Orthographique** est activée.|
 |**Cadrer sur l’objet**|Cadre la vue sur l'objet sélectionné afin qu'il se trouve au centre de la vue.|
 
@@ -152,7 +152,7 @@ Il peut être utile d’afficher une scène 3D à partir d’une position et d�
 
 Pour mieux comprendre un objet ou une scène 3D, vous pouvez afficher des détails géométriques supplémentaires, comme les normales aux sommets, les normales aux faces, les points pivot de la sélection active, ainsi que d’autres détails. Pour les activer ou les désactiver, dans la barre d’outils **Éditeur de modèle**, choisissez **Scripts** > **Affichage**, puis celui de votre choix.
 
-### <a name="create-and-import-3d-objects"></a>Créer et importer des objets 3D<a name="Adding3DObjects"></a>
+### <a name="create-and-import-3d-objects"></a>Créer et importer des objets 3D <a name="Adding3DObjects"></a>
 
 Pour ajouter une forme 3D prédéfinie à la scène, dans la **Boîte à outils**, sélectionnez celle de votre choix, puis déplacez-la dans l’aire de conception. Les nouvelles formes sont placées à l'origine de la scène. L’éditeur de modèle propose sept formes : **Cône**, **Cube**, **Cylindre**, **Disque**, **Plan**, **Sphère** et **Théière (Teapot)**.
 
@@ -191,13 +191,13 @@ Il peut être utile d'utiliser l'alignement sur la grille pour travailler avec l
 
 Le point pivot d'un objet définit son centre de rotation et sa mise à l'échelle. Vous pouvez modifier le point pivot d'un objet pour changer la manière dont il est affecté par les transformations de rotation et de mise à l'échelle. Dans la barre d’outils **Mode de l’éditeur de modèle**, choisissez **Mode Pivot** pour activer (ou désactiver) le mode Pivot. Lorsque le mode Pivot est activé, un petit indicateur d'axe apparaît au niveau du point pivot de l'objet sélectionné. Vous pouvez alors utiliser les outils **Translation** et **Rotation** pour manipuler le point pivot.
 
-Pour une démonstration qui montre comment utiliser le point pivot, voir [Comment: Modifier le point pivot d’un modèle 3D](../designers/how-to-modify-the-pivot-point-of-a-3-d-model.md).
+Pour obtenir une démonstration qui montre comment utiliser le point pivot, consultez [Comment : modifier le point pivot d’un modèle 3D](../designers/how-to-modify-the-pivot-point-of-a-3-d-model.md).
 
 ### <a name="world-and-local-modes"></a>Modes local et universel
 
 La translation et la rotation peuvent être réalisées dans le système de coordonnées local (ou *cadre de référence local*) de l’objet ou dans le système de coordonnées universel (ou *cadre de référence universel*). Le cadre de référence mondial est indépendant de la rotation de l'objet. Le mode local est l'option par défaut. Pour activer (ou désactiver) le mode universel, dans la barre d’outils **Mode de l’éditeur de modèle**, choisissez le bouton **WorldLocal**.
 
-### <a name="modify-objects"></a>Modifier les objets<a name="ModifyingObjects"></a>
+### <a name="modify-objects"></a>Modifier des objets <a name="ModifyingObjects"></a>
 
 Vous pouvez modifier la forme d’un objet 3D en déplaçant ou en supprimant ses sommets, ses arêtes ou ses faces. Par défaut, l’éditeur de modèle est en *mode objet*, ce qui vous permet de sélectionner et de transformer des objets entiers. Pour sélectionner des points, des arêtes ou des faces, choisissez le mode de sélection approprié. Dans la barre d’outils **Mode de l’éditeur de modèle**, choisissez **Modes de sélection**, puis le mode voulu.
 
@@ -263,7 +263,7 @@ Selon ce qu'un matériau prend en charge, vous pouvez modifier ses propriétés 
 
 Pour supprimer tous les matériaux d’un objet, dans la barre d’outils **Éditeur de modèle**, choisissez **Scripts** > **Matériaux** > **Supprimer les matériaux**.
 
-Vous pouvez utiliser le **concepteur Shader** pour créer des matériaux de nuanceur personnalisés et les appliquer à des objets de votre scène 3D. Pour plus d’informations sur la façon de créer des matériaux de nuanceur personnalisés, consultez [Concepteur Shader](../designers/shader-designer.md). Pour plus d’informations sur la façon d’appliquer un matériau d’ombre personnalisé à un objet, voir [Comment : Appliquer un ombrageur sur un modèle 3D.](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+Vous pouvez utiliser le **concepteur Shader** pour créer des matériaux de nuanceur personnalisés et les appliquer à des objets de votre scène 3D. Pour plus d’informations sur la façon de créer des matériaux de nuanceur personnalisés, consultez [Concepteur Shader](../designers/shader-designer.md). Pour plus d’informations sur l’application d’un matériau de nuanceur personnalisé à un objet, consultez [Comment : appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
 ### <a name="scene-management"></a>Gestion des scènes
 
@@ -293,49 +293,49 @@ Pour supprimer l’association parent-enfant entre deux objets, sélectionnez l�
 
 |Commande|Raccourcis clavier|
 |-------------| - |
-|Passer en mode **Sélection**|**Ctrl**+**G**, **Ctrl**+**Q**<br /><br /> **S**|
-|Passer en mode **Zoom**|**Ctrl**+**G**, **Ctrl**+**Z**<br /><br /> **Z**|
-|Passer en mode **Panoramique**|**Ctrl**+**G**, **Ctrl**+**P**<br /><br /> **K**|
-|Sélectionner tout|**Ctrl**+**A**|
+|Passer en mode **Sélection**|**CTRL** + **G**, **CTRL** + **Q**<br /><br /> **S**|
+|Passer en mode **Zoom**|**CTRL** + **G**, **CTRL** + **Z**<br /><br /> **Z**|
+|Passer en mode **Panoramique**|**CTRL** + **G**, **CTRL** + **P**<br /><br /> **K**|
+|Sélectionner tout|**CTRL** + **Un**|
 |Supprimer la sélection actuelle|**Supprimer**|
 |Annuler la sélection actuelle|**Séquence d’échappement** (**Échap**)|
-|Faire un zoom avant|**Roulette de la souris vers l’avant**<br /><br /> **Roue de souris de Ctrl**+**vers l’avant**<br /><br /> **Déplacer la**+**roue de la souris vers l’avant**<br /><br /> **PageUp Ctrl**+**PageUp**<br /><br /> Signe plus**+**( )|
-|Faire un zoom arrière|**Roulette de la souris vers l’arrière**<br /><br /> **Roue de souris de Ctrl**+**vers l’arrière**<br /><br /> **Déplacer la**+**roue de la souris vers l’arrière**<br /><br /> **Pagedown Ctrl**+**PageDown**<br /><br /> Signe de**-** moins ( )|
+|Faire un zoom avant|**Roulette de la souris vers l’avant**<br /><br /> **CTRL** + **Roulette de la souris vers l’avant**<br /><br /> **MAJ** + **Roulette de la souris vers l’avant**<br /><br /> **CTRL** + **PG PRÉC**<br /><br /> Signe plus ( **+** )|
+|Faire un zoom arrière|**Roulette de la souris vers l’arrière**<br /><br /> **CTRL** + **Roulette de la souris** vers l’arrière<br /><br /> **MAJ** + **Roulette de la souris** vers l’arrière<br /><br /> **CTRL** + **PG SUIV**<br /><br /> Signe moins ( **-** )|
 |Mouvement panoramique de la caméra vers le haut|**Pg suiv**|
 |Mouvement panoramique de la caméra vers le bas|**Pg préc**|
-|Mouvement panoramique de la caméra vers la gauche|**Roulette de la souris vers la gauche**<br /><br /> **Pagedown Ctrl**+**PageDown**|
-|Mouvement panoramique de la caméra vers la droite|**Roulette de la souris vers la droite**<br /><br /> **Pagedown Ctrl**+**PageDown**|
-|Afficher le haut du modèle|**Ctrl**+**L**, **Ctrl**+**T**<br /><br /> **T**|
-|Afficher le bas du modèle|**Ctrl**+**L**, **Ctrl**+**U**|
-|Afficher le côté gauche du modèle|**Ctrl**+**L**, **Ctrl**+**L**|
-|Afficher le côté droit du modèle|**Ctrl**+**L**, **Ctrl**+**R**|
-|Afficher l'avant du modèle|**Ctrl**+**L**, **Ctrl**+**F**|
-|Afficher l'arrière du modèle|**Ctrl**+**L**, **Ctrl**+**B**|
-|Cadrer la fenêtre sur l'objet|**F**|
-|Activer/Désactiver le mode Maquette|**Ctrl**+**L**, **Ctrl**+**W**|
-|Activer/Désactiver l'alignement sur la grille|**Ctrl**+**G**, **Ctrl**+**N**|
-|Activer/Désactiver le mode Pivot|**Ctrl**+**G**, **Ctrl**+**V**|
-|Activer/Désactiver la restriction de l'axe X|**Ctrl**+**L**, **Ctrl**+**X**|
-|Activer/Désactiver la restriction de l'axe Y|**Ctrl**+**L**, **Ctrl**+**Y**|
-|Activer/Désactiver la restriction de l'axe Z|**Ctrl**+**L**, **Ctrl**+**Z**|
-|Passer en mode de translation|**Ctrl**+**G**, **Ctrl**+**W**<br /><br /> **W**|
-|Passer en mode de mise à l'échelle|**Ctrl**+**G**, **Ctrl**+**E**<br /><br /> **E**|
-|Passer en mode de rotation|**Ctrl**+**G**, **Ctrl**+**R**<br /><br /> **R**|
-|Passer en mode de sélection de point|**Ctrl**+**L**, **Ctrl**+**1**|
-|Passer en mode de sélection d'arête|**Ctrl**+**L**, **Ctrl**+**2**|
-|Passer en mode de sélection de face|**Ctrl**+**L**, **Ctrl**+**3**|
-|Passer en mode de sélection d'objet|**Ctrl**+**L**, **Ctrl**+**4**|
-|Passer en mode Orbite (caméra)|**Ctrl**+**G**, **Ctrl**+**O**|
+|Mouvement panoramique de la caméra vers la gauche|**Roulette de la souris vers la gauche**<br /><br /> **CTRL** + **PG SUIV**|
+|Mouvement panoramique de la caméra vers la droite|**Roulette de la souris vers la droite**<br /><br /> **CTRL** + **PG SUIV**|
+|Afficher le haut du modèle|**CTRL** + **L**, **CTRL** + **T**<br /><br /> **T**|
+|Afficher le bas du modèle|**CTRL** + **L**, **CTRL** + **U**|
+|Afficher le côté gauche du modèle|**CTRL** + **L**, **CTRL** + **l**|
+|Afficher le côté droit du modèle|**CTRL** + **L**, **CTRL** + **R**|
+|Afficher l'avant du modèle|**CTRL** + **L**, **CTRL** + **F**|
+|Afficher l'arrière du modèle|**CTRL** + **L**, **CTRL** + **B**|
+|Cadrer la fenêtre sur l'objet|**FA**|
+|Activer/Désactiver le mode Maquette|**CTRL** + **L**, **CTRL** + **W**|
+|Activer/Désactiver l'alignement sur la grille|**CTRL** + **G**, **CTRL** + **N**|
+|Activer/Désactiver le mode Pivot|**CTRL** + **G**, **CTRL** + **V**|
+|Activer/Désactiver la restriction de l'axe X|**CTRL** + **L**, **CTRL** + **X**|
+|Activer/Désactiver la restriction de l'axe Y|**CTRL** + **L**, **CTRL** + **Y**|
+|Activer/Désactiver la restriction de l'axe Z|**CTRL** + **L**, **CTRL** + **Z**|
+|Passer en mode de translation|**CTRL** + **G**, **CTRL** + **W**<br /><br /> **W**|
+|Passer en mode de mise à l'échelle|**CTRL** + **G**, **CTRL** + **E**<br /><br /> **Envoyer**|
+|Passer en mode de rotation|**CTRL** + **G**, **CTRL** + **R**<br /><br /> **R**|
+|Passer en mode de sélection de point|**CTRL** + **L**, **CTRL** + **1**|
+|Passer en mode de sélection d'arête|**CTRL** + **L**, **CTRL** + **2**|
+|Passer en mode de sélection de face|**CTRL** + **L**, **CTRL** + **3**|
+|Passer en mode de sélection d'objet|**CTRL** + **L**, **CTRL** + **4**|
+|Passer en mode Orbite (caméra)|**CTRL** + **G**, **CTRL** + **O**|
 |Sélectionner l'objet suivant dans la scène|**Onglet**|
-|Sélectionner l'objet précédent dans la scène|**Onglet de décalage**+**Tab**|
+|Sélectionner l'objet précédent dans la scène|**MAJ** + **Onglet**|
 |Manipuler l'objet sélectionné en fonction de l'outil actif|**Touches de direction**|
-|Désactiver le manipulateur actuel|**Q**|
-|Faire pivoter la caméra|**Alt**+**Drag** avec le bouton de souris gauche|
+|Désactiver le manipulateur actuel|**Question**|
+|Faire pivoter la caméra|**ALT** + **Faire glisser** avec le bouton gauche de la souris|
 
 ## <a name="related-topics"></a>Rubriques connexes
 
 |Intitulé|Description|
 |-----------|-----------------|
-|[Travailler avec des actifs 3D pour les jeux et les applications](../designers/working-with-3-d-assets-for-games-and-apps.md)|Fournit une vue d’ensemble des outils Visual Studio que vous pouvez utiliser pour travailler sur des composants graphiques, comme des textures et des images, des modèles 3D et des effets de nuanceur.|
-|[Image Editor](../designers/image-editor.md)|Décrit comment utiliser l’éditeur d’images Visual Studio pour travailler avec des textures et des images.|
-|[Concepteur de nuanceur](../designers/shader-designer.md)|Explique comment utiliser le concepteur Shader de Visual Studio pour travailler avec des nuanceurs.|
+|[Utilisation des ressources 3D pour les jeux et les applications](../designers/working-with-3-d-assets-for-games-and-apps.md)|Fournit une vue d’ensemble des outils Visual Studio que vous pouvez utiliser pour travailler sur des composants graphiques, comme des textures et des images, des modèles 3D et des effets de nuanceur.|
+|[Éditeur d’images](../designers/image-editor.md)|Décrit comment utiliser l’éditeur d’images Visual Studio pour travailler avec des textures et des images.|
+|[Concepteur Shader](../designers/shader-designer.md)|Explique comment utiliser le concepteur Shader de Visual Studio pour travailler avec des nuanceurs.|

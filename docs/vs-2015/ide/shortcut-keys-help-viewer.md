@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c04ef8f015b081e29891d7439b783e3851376210
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85531546"
 ---
 # <a name="shortcut-keys-help-viewer"></a>Touches de raccourci (Visionneuse d'aide)
@@ -76,7 +76,7 @@ Vous pouvez naviguer dans la visionneuse d’aide Microsoft à l’aide des touc
 |Contenu, Index, Recherche et Favoris|Ctrl+P|Imprimer la rubrique spécifiée.|
 |Contenu, Index, Recherche et Favoris|Ctrl+F2|Afficher un aperçu avant impression de la rubrique spécifiée.|
 |Contenu, Index, Recherche et Favoris|Ctrl+Clic|Ouvrir la rubrique dans un nouvel onglet.|
-|Rechercher|Échap|Effacer la zone de texte de recherche.|
+|Recherche|Échap|Effacer la zone de texte de recherche.|
 |Options de la visionneuse|Alt+T|Définir le focus sur la liste **Taille du texte**.|
 |Options de la visionneuse|Alt+S|Définir le focus sur la liste **Nombre maximal de résultats de recherche**.|
 |Options de la visionneuse|Alt+H|Définir le focus sur la liste **Nombre maximal d’entrées d’historique enregistrées**.|

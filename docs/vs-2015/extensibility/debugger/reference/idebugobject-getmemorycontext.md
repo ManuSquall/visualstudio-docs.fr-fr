@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::GetMemoryContext | Microsoft Docs
+title: 'IDebugObject :: GetMemoryContext | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5e69e5a77e93df2d338eb7d2e7114129ea9ac8d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68162459"
 ---
 # <a name="idebugobjectgetmemorycontext"></a>IDebugObject::GetMemoryContext
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Obtient le contexte de la mémoire qui représente l’adresse de la valeur de l’objet.  
+Obtient le contexte de mémoire qui représente l’adresse de la valeur de l’objet.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -40,13 +40,13 @@ int GetMemoryContext(
   
 #### <a name="parameters"></a>Paramètres  
  `pContext`  
- [out] Retourne un [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) objet représentant l’adresse de la valeur de l’objet.  
+ à Retourne un objet [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) qui représente l’adresse de la valeur de l’objet.  
   
-## <a name="return-value"></a>Valeur de retour  
+## <a name="return-value"></a>Valeur renvoyée  
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Le contexte de la mémoire retournée Spécifie l’adresse de la valeur telle que représentée par ce [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objet.  
+ Le contexte de mémoire retourné spécifie l’adresse de la valeur telle qu’elle est représentée par cet objet [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) .  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)
