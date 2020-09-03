@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c5088fc04f4440260bdb9d3f040d99061c05d243
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72620336"
 ---
 # <a name="advanced-search-operators-in-search-expressions"></a>Opérateurs de recherche avancée dans les expressions de recherche
@@ -31,16 +31,16 @@ En utilisant des opérateurs de recherche avancée, vous pouvez affiner votre re
 > [!WARNING]
 > Vous devez entrer les opérateurs de recherche avancée avec un signe deux-points final et sans espace avant ce signe pour que le moteur de recherche les identifie.
 
-|Pour rechercher|Utilisez|Exemple|Résultat|
+|Pour rechercher|Utiliser|Exemple|Résultats|
 |-------------------|---------|-------------|------------|
-|Un terme dans le titre de la rubrique|title:|title:binaryreader|Rubriques qui contiennent « binaryreader » dans leur titre.|
+|Un terme dans le titre de la rubrique|titre :|title:binaryreader|Rubriques qui contiennent « binaryreader » dans leur titre.|
 |Un terme dans un exemple de code|code:|code:readdouble|Rubriques qui contiennent « readdouble » dans un exemple de code.|
 |Un terme dans un exemple de langage de programmation spécifique|code:vb:|code:vb:string|Rubriques qui contiennent « string » dans un exemple Visual Basic.|
 |Une rubrique qui est associée à un mot clé d’index spécifique|keyword:|keyword:readbyte|Rubriques associées au mot clé d’index « readbyte ».|
 
  Vous pouvez utiliser l’opérateur code: pour rechercher du contenu sur l’un des différents langages de programmation, mais il ne retourne des résultats que pour le contenu marqué avec un langage de programmation spécifique. Le tableau suivant liste les langages de programmation pris en charge par cet opérateur :
 
-|Langage de programmation|Utilisez|
+|Langage de programmation|Utilisation|
 |--------------------------|---------|
 |Visual Basic|code:vb<br /><br /> or<br /><br /> code:visualbasic|
 |C#|code:c#<br /><br /> or<br /><br /> code:csharp|

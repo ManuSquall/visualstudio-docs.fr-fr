@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cabbf36adb5019543b3cfb72b0b0e56976517d2d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77557937"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
@@ -37,19 +37,19 @@ devenv {/LCID|/L} LocaleID
 
 ## <a name="arguments"></a>Arguments
 
-- *LocalID (en)*
+- *LocaleID*
 
   Obligatoire. Identificateur de paramètres régionaux (LCID) de la langue spécifiée.
 
-## <a name="remarks"></a>Notes 
+## <a name="remarks"></a>Notes
 
-Charge l’IDE et définit le langage naturel par défaut pour l’environnement. Ce changement persiste entre les sessions, et l’IDE montre ce changement dans la boîte**de langue** **Tools** > **Options** > **Environment** > **International Settings.** > 
+Charge l’IDE et définit le langage naturel par défaut pour l’environnement. Cette modification est conservée entre les sessions, et l’IDE affiche cette modification dans la zone de langue **Outils**  >  **options**  >  **environnement**  >  **paramètres internationaux**  >  **Language** .
 
 Si la langue spécifiée n’est pas disponible sur le système, le commutateur `/LCID` est ignoré.
 
 Le tableau suivant indique les identificateurs LCID des langues prises en charge par Visual Studio.
 
-|Langage|LCID|
+|Language|LCID|
 |--------------|----------|
 |Chinois (simplifié)|2052|
 |Chinois (traditionnel)|1028|
@@ -66,7 +66,7 @@ Le tableau suivant indique les identificateurs LCID des langues prises en charge
 |Espagnol|3082|
 |Turc|1055
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 
 Cet exemple charge l’IDE avec des chaînes de ressources en anglais.
 

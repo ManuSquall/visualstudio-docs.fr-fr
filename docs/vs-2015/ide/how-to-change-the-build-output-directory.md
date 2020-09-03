@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b665f5788d12c294e8ab7f55ecc63d183030a0ca
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645434"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>Guide pratique pour modifier le répertoire de sortie de la génération
@@ -32,7 +32,7 @@ Vous pouvez spécifier l’emplacement de sortie en fonction de la configuration
 
 1. Dans la barre de menus, choisissez **Projet**, *Propriétés* **nom_application**. Vous pouvez également cliquer avec le bouton droit sur le nœud du projet dans l' **Explorateur de solutions** , puis sélectionner **Propriétés**.
 
-2. Si vous avez un projet Visual Basic, sélectionnez l'onglet **Compiler** . Si vous avez un projet Visual C#, sélectionnez l'onglet **Générer** . Si vous avez un projet C++ ou un projet JavaScript, sélectionnez l'onglet **Général** .
+2. Si vous avez un projet Visual Basic, sélectionnez l’onglet **compiler** . Si vous avez un projet Visual C#, sélectionnez l’onglet **générer** . Si vous avez un projet C++ ou un projet JavaScript, sélectionnez l’onglet **général** .
 
 3. Dans la liste déroulante de configuration située dans la partie supérieure, choisissez la configuration pour laquelle vous voulez modifier l’emplacement du fichier de sortie (débogage, version ou tout).
 
@@ -42,4 +42,4 @@ Vous pouvez spécifier l’emplacement de sortie en fonction de la configuration
 > Dans un projet d’installation, la zone **Nom du fichier de sortie** permet uniquement de modifier l’emplacement du fichier Setup.exe, et non l’emplacement des fichiers du projet. Pour plus d'informations, consultez **Build, propriétés de configuration, boîte de dialogue Propriétés du projet de déploiement**.
 
 ## <a name="see-also"></a>Voir aussi
- [Page générer, concepteur de projetsC#() général,](../ide/reference/build-page-project-designer-csharp.md) [page de propriétés (projet)](https://msdn.microsoft.com/library/593b383c-cd0f-4dcd-ad65-9ec9b4b19c45) [compilation et génération](../ide/compiling-and-building-in-visual-studio.md)
+ [Page générer, concepteur de projets (C#)](../ide/reference/build-page-project-designer-csharp.md) [général, page de propriétés (projet)](https://msdn.microsoft.com/library/593b383c-cd0f-4dcd-ad65-9ec9b4b19c45) [compilation et génération](../ide/compiling-and-building-in-visual-studio.md)

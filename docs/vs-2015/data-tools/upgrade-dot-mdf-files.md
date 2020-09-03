@@ -23,10 +23,10 @@ ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
 ms.openlocfilehash: 5b26b8cd9d955309e3be0e17e975bfdeb242e475
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72621409"
 ---
 # <a name="upgrade-mdf-files"></a>Mettre à jour des fichiers .mdf
@@ -70,25 +70,25 @@ Cette rubrique décrit les options de mise à niveau de votre fichier de base de
 
 2. Dans la boîte de dialogue **Ajouter une connexion** , spécifiez les informations suivantes :
 
-   - **Source de données** : `Microsoft SQL Server (SqlClient)`
+   - **Source de données**: `Microsoft SQL Server (SqlClient)`
 
    - **Nom du serveur** :
 
-       - Pour utiliser la version par défaut : `(localdb)\MSSQLLocalDB`.  Cela permet de spécifier ProjectV12 ou ProjectV13, selon la version de Visual Studio installée et la première instance de base de données locale créée. Le nœud **MSSQLLocalDB** dans **Explorateur d’objets SQL Server** indique la version vers laquelle il pointe.
+       - Pour utiliser la version par défaut : `(localdb)\MSSQLLocalDB` .  Cela permet de spécifier ProjectV12 ou ProjectV13, selon la version de Visual Studio installée et la première instance de base de données locale créée. Le nœud **MSSQLLocalDB** dans **Explorateur d’objets SQL Server** indique la version vers laquelle il pointe.
 
-       - Pour utiliser une version spécifique : `(localdb)\ProjectsV12` ou `(localdb)\ProjectsV13`, où V12 est la base de données locale 2014 et v13 est la base de données locale 2016.
+       - Pour utiliser une version spécifique : `(localdb)\ProjectsV12` ou, où V12 est la base de données locale 2014 et v13 est la base de données locale `(localdb)\ProjectsV13` 2016.
 
    - **Attacher un fichier de base de données**: chemin d’accès physique du fichier. mdf principal.
 
    - **Nom logique**: le nom que vous souhaitez utiliser avec le fichier.
 
-3. Sélectionnez le bouton **OK**.
+3. Cliquez sur le bouton **OK**.
 
 4. Lorsque vous y êtes invité, sélectionnez le bouton **Oui** pour mettre à niveau le fichier.
 
    La base de données est mise à niveau, est attachée au moteur de base de données de base de données locale et n’est plus compatible avec la version antérieure de la base de données locale.
 
-   Vous pouvez également modifier une connexion SQL Server Express pour utiliser la base de données locale en ouvrant le menu contextuel de la connexion, puis en sélectionnant **modifier la connexion**. Dans la boîte de dialogue **modifier la connexion** , remplacez le nom du serveur par `(LocalDB)\MSSQLLocalDB`. Dans la boîte de dialogue **Propriétés avancées** , assurez-vous que l' **instance utilisateur** est définie sur **false**.
+   Vous pouvez également modifier une connexion SQL Server Express pour utiliser la base de données locale en ouvrant le menu contextuel de la connexion, puis en sélectionnant **modifier la connexion**. Dans la boîte de dialogue **modifier la connexion** , remplacez le nom du serveur par `(LocalDB)\MSSQLLocalDB` . Dans la boîte de dialogue **Propriétés avancées** , assurez-vous que l' **instance utilisateur** est définie sur **false**.
 
 ### <a name="to-upgrade-to-a-newer-version-of-sql-server-express"></a>Pour effectuer une mise à niveau vers une version plus récente de SQL Server Express
 
@@ -110,12 +110,12 @@ Cette rubrique décrit les options de mise à niveau de votre fichier de base de
 
 ### <a name="to-make-sql-server-express-the-default-database-engine"></a>Pour rendre SQL Server Express le moteur de base de données par défaut
 
-1. Dans la barre de menus, sélectionnez **outils**  > **options**.
+1. Dans la barre de menus, sélectionnez **Outils** > **Options**.
 
 2. Dans la boîte de dialogue **options** , développez les options **outils de données** , puis sélectionnez le nœud **connexions de données** .
 
-3. Dans la zone de texte nom de l' **instance SQL Server** , spécifiez le nom de l’instance de SQL Server Express ou de la base de données locale que vous souhaitez utiliser. Si l’instance n’est pas nommée, spécifiez `.\SQLEXPRESS or (localdb)\MSSQLLocalDB`.
+3. Dans la zone de texte nom de l' **instance SQL Server** , spécifiez le nom de l’instance de SQL Server Express ou de la base de données locale que vous souhaitez utiliser. Si l’instance n’est pas nommée, spécifiez `.\SQLEXPRESS or (localdb)\MSSQLLocalDB` .
 
-4. Sélectionnez le bouton **OK**.
+4. Cliquez sur le bouton **OK**.
 
    SQL Server Express sera le moteur de base de données par défaut pour vos applications.

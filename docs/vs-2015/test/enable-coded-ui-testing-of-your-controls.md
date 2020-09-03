@@ -9,10 +9,10 @@ caps.latest.revision: 24
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7190a7f698868642c58d1de2ff801e328859b9db
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851808"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Activer le test codé de l'interface utilisateur de vos contrôles
@@ -20,9 +20,9 @@ ms.locfileid: "75851808"
 
 Vous pouvez tester votre contrôle plus facilement si vous implémentez la prise en charge du framework de test codé de l'interface utilisateur. Vous pouvez ajouter des niveaux croissants de prise en charge de manière incrémentielle. Vous pouvez commencer en prenant en charge l'enregistrement et la lecture, ainsi que la validation de propriété. Cette option vous permet d'autoriser le générateur de test codé de l'interface utilisateur à reconnaître les propriétés personnalisées de votre contrôle et de fournir aux classes personnalisées l'accès à ces propriétés à partir du code généré. Vous pouvez également aider à ce que les actions de capture du générateur de test codé de l'interface utilisateur soient plus proches de l'objectif de l'action en cours d'enregistrement.
 
- **Dans cette rubrique :**
+ **Dans cette rubrique :**
 
-1. [Prendre en charge l’enregistrement et la lecture, ainsi que la validation de propriété, en implémentant l’accessibilité](../test/enable-coded-ui-testing-of-your-controls.md#recordandplayback)
+1. [Prendre en charge l’enregistrement et la lecture et la validation de propriété en implémentant l’accessibilité](../test/enable-coded-ui-testing-of-your-controls.md#recordandplayback)
 
 2. [Prendre en charge la validation de propriété personnalisée en implémentant un fournisseur de propriétés](../test/enable-coded-ui-testing-of-your-controls.md#customproprties)
 
@@ -32,14 +32,14 @@ Vous pouvez tester votre contrôle plus facilement si vous implémentez la prise
 
    ![CUIT&#95;Full](../test/media/cuit-full.png "CUIT_Full")
 
-## <a name="recordandplayback"></a>Prendre en charge l’enregistrement et la lecture, ainsi que la validation de propriété, en implémentant l’accessibilité
+## <a name="support-record-and-playback-and-property-validation-by-implementing-accessibility"></a><a name="recordandplayback"></a> Prendre en charge l’enregistrement et la lecture et la validation de propriété en implémentant l’accessibilité
  Le générateur de test codé de l'interface utilisateur capture des informations sur les contrôles qu'il rencontre lors d'un enregistrement et génère ensuite le code pour relire la session. Si votre contrôle ne prend pas en charge l'accessibilité, le générateur de test codé de l'interface utilisateur capture les actions (telles que les clics de souris) à l'aide des coordonnées d'écran. Lorsque le test est lu, le code généré émet les clics de souris dans ces mêmes coordonnées d'écran. Si votre contrôle s'affiche à un autre emplacement de l'écran lors de la lecture du test, le code généré échoue à effectuer cette action sur votre contrôle. Il peut en résulter un échec si le test est lu sur d'autres configurations d'écran, dans des environnements différents ou après que des modifications ont été apportées à la disposition de l'interface utilisateur.
 
  ![CUIT&#95;RecordNoSupport](../test/media/cuit-recordnosupport.png "CUIT_RecordNoSupport")
 
  Si vous implémentez l'accessibilité, toutefois, le générateur de test codé de l'interface utilisateur s'en sert pour capturer les informations sur votre contrôle lorsqu'il enregistre un test et génère le code. Ensuite, lorsque vous exécutez le test, le code généré relit les événements par rapport à votre contrôle, même s'il se trouve à un autre emplacement de l'interface utilisateur. Les auteurs de test sont également en mesure de créer des assertions à l'aide des propriétés de base de votre contrôle.
 
- ![Enregistrement&#95;cuit](../test/media/cuit-record.png "CUIT_Record")
+ ![Enregistrement&#95;CUIT](../test/media/cuit-record.png "CUIT_Record")
 
 ### <a name="to-support-record-and-playback-property-validation-and-navigation-for-a-windows-forms-control"></a>Pour prendre en charge l’enregistrement et la lecture, la validation de propriété et la navigation d’un contrôle Windows Forms
  Implémentez l'accessibilité de votre contrôle, comme indiqué dans la procédure suivante et expliqué en détail dans <xref:System.Windows.Forms.AccessibleObject>.
@@ -78,9 +78,9 @@ Vous pouvez tester votre contrôle plus facilement si vous implémentez la prise
 4. Remplacez les propriétés et méthodes <xref:System.Windows.Forms.AccessibleObject.Bounds%2A>, <xref:System.Windows.Forms.AccessibleObject.Name%2A>, <xref:System.Windows.Forms.AccessibleObject.Parent%2A>, <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.Navigate%2A> et <xref:System.Windows.Forms.AccessibleObject.Select%2A> de l'objet d'accessibilité du contrôle enfant.
 
 > [!NOTE]
-> Cette rubrique commence par l'exemple d'accessibilité de <xref:System.Windows.Forms.AccessibleObject> dans la procédure, puis se base dessus dans les procédures suivantes. Si vous souhaitez créer une version opérationnelle de l'exemple d'accessibilité, créez une application console et remplacez le code du fichier Program.cs par celui de l'exemple. Vous devez ajouter des références à Accessibility, System.Drawing et System.Windows.Forms. Vous devez modifier la propriété **Incorporer les types d’interopérabilité** d’Accessibility et lui attribuer la valeur **False** afin de prévenir un avertissement de build. Vous pouvez modifier le type de sortie du projet et remplacer **Application Console** par **Application Windows** afin qu’une fenêtre de console n’apparaisse pas lorsque vous exécutez l’application.
+> Cette rubrique commence par l'exemple d'accessibilité de <xref:System.Windows.Forms.AccessibleObject> dans la procédure, puis se base dessus dans les procédures suivantes. Si vous souhaitez créer une version opérationnelle de l'exemple d'accessibilité, créez une application console et remplacez le code du fichier Program.cs par celui de l'exemple. Vous devez ajouter des références à Accessibility, System.Drawing et System.Windows.Forms. Vous devez modifier la propriété **Incorporer les types d’interopérabilité** d’Accessibility et lui attribuer la valeur **False** afin de prévenir un avertissement de build. Vous pouvez remplacer le type de sortie du projet par l’application **console** par **application Windows** afin qu’une fenêtre de console n’apparaisse pas lorsque vous exécutez l’application.
 
-## <a name="customproprties"></a> Prendre en charge la validation de propriété personnalisée en implémentant un fournisseur de propriétés
+## <a name="support-custom-property-validation-by-implementing-a-property-provider"></a><a name="customproprties"></a> Prendre en charge la validation de propriété personnalisée en implémentant un fournisseur de propriétés
  Une fois que vous avez implémenté la prise en charge de base pour l'enregistrement et la lecture, ainsi que pour la validation de propriété, vous pouvez rendre les propriétés personnalisées de votre contrôle accessibles aux tests codés de l'interface utilisateur en implémentant un plug-in <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>. Par exemple, la procédure suivante crée un fournisseur de propriétés qui permet aux tests codés de l'interface utilisateur d'accéder à la propriété State des contrôles enfants CurveLegend du contrôle de graphique.
 
  ![CUIT&#95;CustomProps](../test/media/cuit-customprops.png "CUIT_CustomProps")
@@ -326,7 +326,7 @@ Vous pouvez tester votre contrôle plus facilement si vous implémentez la prise
 > [!NOTE]
 > Ce package d’extension sera appliqué à tout contrôle de type « Texte ». Si vous testez plusieurs contrôles du même type, vous devez les tester séparément et gérer les packages d’extension qui sont déployés lorsque vous enregistrez les tests.
 
-## <a name="codegeneration"></a>Prendre en charge la génération de code en implémentant une classe pour accéder aux propriétés personnalisées
+## <a name="support-code-generation-by-implementing-a-class-to-access-custom-properties"></a><a name="codegeneration"></a> Prendre en charge la génération de code en implémentant une classe pour accéder aux propriétés personnalisées
  Lorsque le générateur de test codé de l'interface utilisateur génère le code à partir d'un enregistrement de session, il utilise la classe <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl> pour accéder à vos contrôles.
 
 ```csharp
@@ -344,7 +344,7 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
 ```
 
 ### <a name="to-add-a-specialized-class-to-access-your-control"></a>Pour ajouter une classe spécialisée pour accéder à votre contrôle
- ![CodeGen&#95;cuit](../test/media/cuit-codegen.png "CUIT_CodeGen")
+ ![CUIT&#95;CodeGen](../test/media/cuit-codegen.png "CUIT_CodeGen")
 
 1. Implémentez une classe dérivée de <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinControl> et ajoutez le type de contrôle à la collection de propriétés de recherche du constructeur.
 
@@ -406,11 +406,11 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
     }
     ```
 
-## <a name="intentawareactions"></a> Prendre en charge les actions avec intention en implémentant un filtre d’action
+## <a name="support-intent-aware-actions-by-implementing-an-action-filter"></a><a name="intentawareactions"></a> Prendre en charge les actions avec intention en implémentant un filtre d’action
  Lorsque Visual Studio enregistre un test, il capture chaque événement de souris et de clavier. Toutefois, dans certains cas, l'objectif de l'action peut se perdre dans la série d'événements de souris et de clavier. Par exemple, si votre contrôle prend en charge la saisie semi-automatique, le même jeu d'événements de souris et de clavier peut entraîner une valeur différente lorsque le test est lu dans un environnement différent. Vous pouvez ajouter un plug-in de filtre d'action qui remplace la série d'événements de clavier et de souris par une seule action. De cette façon, vous pouvez remplacer la série d'événements de clavier et de souris qui résulte de la sélection d'une valeur par une action unique qui définit la valeur. Ce remplacement permet de protéger les tests codés de l'interface utilisateur contre les différences de saisie semi-automatique d'un environnement à un autre.
 
 ### <a name="to-support-intent-aware-actions"></a>Pour prendre en charge les actions avec intention
- ![Actions&#95;cuit](../test/media/cuit-actions.png "CUIT_Actions")
+ ![Actions de&#95;CUIT](../test/media/cuit-actions.png "CUIT_Actions")
 
 1. Implémentez une classe de filtre d’action dérivée de [UITestActionFilter](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110)), en remplaçant les propriétés [ApplyTimeout](/previous-versions/visualstudio/visual-studio-2012/dd984649%28v%3dvs.110%29), [Category](/previous-versions/visualstudio/visual-studio-2012/dd986905(v=vs.110)), [Enabled](/previous-versions/visualstudio/visual-studio-2012/dd985633(v=vs.110)), [FilterType](/previous-versions/visualstudio/visual-studio-2012/dd778726(v=vs.110)), [Group](/previous-versions/visualstudio/visual-studio-2012/dd779219(v=vs.110)) et [Name](/previous-versions/visualstudio/visual-studio-2012/dd998334(v=vs.110)).
 
@@ -457,7 +457,7 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
        }
     ```
 
-2. Substituez `UITestActionFilter.ProcessRule` L’exemple remplace ici une action de double-clic par une action de simple clic.
+2. Remplacez `UITestActionFilter.ProcessRule`. L’exemple remplace ici une action de double-clic par une action de simple clic.
 
     ```csharp
     public override bool ProcessRule(IUITestActionStack actionStack)
@@ -519,7 +519,7 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
 
 #### <a name="to-debug-your-property-provider-or-action-filter"></a>Pour déboguer votre fournisseur de propriétés ou filtre d'action
 
-1. Générez la version debug de votre package d'extension, puis copiez les fichiers .dll et .pdb sur % ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages.
+1. Générez la version debug de votre package d’extension, puis copiez les fichiers .dll et .pdb dans % ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages.
 
 2. Exécutez votre application (pas dans le débogueur).
 
@@ -535,7 +535,7 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
 
 ## <a name="external-resources"></a>Ressources externes
 
-### <a name="guidance"></a>Aide
+### <a name="guidance"></a>Guidance
  [Tester la livraison continue avec Visual Studio 2012 - Chapitre 2 : Tests unitaires : tester l’intérieur](https://msdn.microsoft.com/library/jj159340.aspx)
 
 ## <a name="see-also"></a>Voir aussi

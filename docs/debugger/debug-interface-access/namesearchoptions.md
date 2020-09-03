@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 696ad3e659b503b27da73056dafb57c5852d5133
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85461174"
 ---
 # <a name="namesearchoptions"></a>NameSearchOptions
@@ -45,17 +45,17 @@ enum NameSearchOptions {
 ## <a name="elements"></a>Éléments
 `nsNone` Aucune option n’est spécifiée.
 
-`nsfCaseSensitive`Applique une correspondance de nom respectant la casse.
+`nsfCaseSensitive` Applique une correspondance de nom respectant la casse.
 
-`nsfCaseInsensitive`Applique une correspondance de nom ne respectant pas la casse.
+`nsfCaseInsensitive` Applique une correspondance de nom ne respectant pas la casse.
 
-`nsfFNameExt`Traite les noms comme des chemins d’accès et applique une correspondance de nom de nom de fichier. ext.
+`nsfFNameExt` Traite les noms comme des chemins d’accès et applique une correspondance de nom de nom de fichier. ext.
 
-`nsfRegularExpression`Applique une correspondance de nom respectant la casse à l’aide d’astérisques (*) et de points d’interrogation ( ?) comme caractères génériques. (Les autres caractères d’expressions régulières courantes ne sont pas pris en charge.)
+`nsfRegularExpression` Applique une correspondance de nom respectant la casse à l’aide d’astérisques (*) et de points d’interrogation ( ?) comme caractères génériques. (Les autres caractères d’expressions régulières courantes ne sont pas pris en charge.)
 
-`nsfUndecoratedName`S’applique uniquement aux symboles qui ont des noms non décorés et décorés.
+`nsfUndecoratedName` S’applique uniquement aux symboles qui ont des noms non décorés et décorés.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Les valeurs de cette énumération sont passées aux méthodes suivantes :
 
 - [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)

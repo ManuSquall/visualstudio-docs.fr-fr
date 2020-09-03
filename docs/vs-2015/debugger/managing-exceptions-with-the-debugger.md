@@ -34,10 +34,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 45b681b8d146fcc4ca8b056cd94bb0ef65cae826
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918957"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>Gestion des exceptions avec le débogueur
@@ -69,7 +69,7 @@ Une exception est une indication d'un état d'erreur qui se produit pendant qu'u
   
  Dans la fenêtre **Paramètres d'exception** , développez le nœud d'une catégorie d'exceptions (par exemple, **Exceptions Common Language Runtime**, c'est-à-dire les exceptions .NET), puis cochez la case correspondant à une exception spécifique de cette catégorie (par exemple, **System.AccessViolationException**). Vous pouvez également sélectionner une catégorie entière d'exceptions.  
   
- ![AccessViolationException activé](../debugger/media/exceptionsettingscheckaccess.png "ExceptionSettingsCheckAccess")  
+ ![Exception AccessViolationException vérifiée](../debugger/media/exceptionsettingscheckaccess.png "ExceptionSettingsCheckAccess")  
   
  Si vous vérifiez une exception donnée, l'exécution du débogueur sera interrompue partout où l'exception est levée, qu'elle soit gérée ou non gérée. À ce stade, l'exception est appelée « exception de première chance ». Voici, par exemple, quelques scénarios :  
   
@@ -135,13 +135,13 @@ Une exception est une indication d'un état d'erreur qui se produit pendant qu'u
    }  
    ```  
   
-    Si **AccessViolationException** est cochée dans **Paramètres d'exception**, lorsque vous exécutez ce code dans le débogueur, l’exécution s’arrête à la ligne `throw` dans **ThrowHandledException()** et dans **ThrowUnhandledException()** .  
+    Si **AccessViolationException** est cochée dans **Paramètres d'exception**, lorsque vous exécutez ce code dans le débogueur, l’exécution s’arrête à la ligne `throw` dans **ThrowHandledException()** et dans **ThrowUnhandledException()**.  
   
    Si vous souhaitez rétablir les paramètres d'exceptions par défaut, vous pouvez cliquer sur le bouton **Restaurer** de la barre d'outils :  
   
-   ![Restaurer les valeurs par défaut dans les paramètres d’exception](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
+   ![Restaurer les valeurs par défaut dans les paramètres des exceptions](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
   
-### <a name="BKMK_UserUnhandled"></a>Configuration du débogueur pour continuer sur les exceptions non gérées par l’utilisateur  
+### <a name="setting-the-debugger-to-continue-on-user-unhandled-exceptions"></a><a name="BKMK_UserUnhandled"></a> Configuration du débogueur pour continuer sur les exceptions non gérées par l’utilisateur  
  Si vous déboguez du code .NET ou JavaScript avec [Just My Code](../debugger/just-my-code.md), vous pouvez demander au débogueur de ne pas s’arrêter sur les exceptions qui ne sont pas gérées dans le code utilisateur, mais qui sont gérées ailleurs.  
   
 1. Dans la fenêtre **Paramètres d'exception** , ouvrez le menu contextuel en cliquant avec le bouton droit dans la fenêtre, puis en sélectionnant **Afficher les colonnes**. (Si vous avez désactivé **Uniquement mon code**, cette commande n'est pas visible.)  
@@ -152,7 +152,7 @@ Une exception est une indication d'un état d'erreur qui se produit pendant qu'u
   
    Par exemple, les applications web ASP.NET gèrent les exceptions en les convertissant en code d’état HTTP 500 ([Gestion des exceptions dans l’API ASP.NET](/aspnet/web-api/overview/error-handling/exception-handling)), ce qui peut compliquer l’identification de la source de l’exception. Dans l'exemple ci-dessous, le code utilisateur appelle `String.Format()` qui lève une exception <xref:System.FormatException>. L'exécution s'interrompt de la façon suivante :  
   
-   ![interruptions sur&#45;l’exception unhanlded de l’utilisateur](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
+   ![interruptions sur l’exception de l’utilisateur&#45;unhanlded](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
   
 ### <a name="adding-and-deleting-exceptions"></a>Ajout et suppression d'exceptions  
  Vous pouvez ajouter et supprimer des exceptions. Vous pouvez supprimer n'importe quel type d'exception de n'importe quelle catégorie en sélectionnant l'exception et en cliquant sur le bouton **Supprimer** (signe moins) de la barre d'outils **Paramètres d'exception** , ou en cliquant avec le bouton droit sur l'exception et en sélectionnant **Supprimer** dans le menu contextuel. La suppression d'une exception a le même effet que si l'exception est désactivée, c'est-à-dire que le débogueur ne s'arrête pas lorsqu'elle est levée.  
@@ -179,11 +179,11 @@ public class GenericException<T> : Exception
   
  Vous pouvez ajouter l'exception à **Paramètres d'exception** comme suit :  
   
- ![Ajout d’une exception générique](../debugger/media/addgenericexception.png "AddGenericException")  
+ ![ajout d'une exception générique](../debugger/media/addgenericexception.png "AddGenericException")  
   
 ## <a name="see-also"></a>Voir aussi  
- [Poursuite de l’exécution après une Exception](../debugger/continuing-execution-after-an-exception.md)   
- [Comment : examiner le code système après une Exception](../debugger/how-to-examine-system-code-after-an-exception.md)   
+ [Poursuite de l’exécution après une exception](../debugger/continuing-execution-after-an-exception.md)   
+ [Comment : examiner du code système après une exception](../debugger/how-to-examine-system-code-after-an-exception.md)   
  [Comment : utiliser les contrôles natifs au moment de l’exécution](../debugger/how-to-use-native-run-time-checks.md)   
  [Utilisation de contrôles d’exécution sans la bibliothèque Runtime C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)   
  [Assistant Exception](https://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)   

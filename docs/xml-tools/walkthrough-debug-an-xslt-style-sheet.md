@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8c75d3cae07101363f6c986a1defb375f602f466
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815121"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>Procédure pas à pas : déboguer une feuille de style XSLT
@@ -70,7 +70,7 @@ Nous allons ajouter deux variables à la fenêtre **Espion 1** afin que nous pui
 
 3. Sur la ligne suivante, tapez `self::node()` dans le champ **nom** , puis appuyez sur **entrée**.
 
-   `self::node()`expression XPath qui prend la valeur du nœud de contexte actuel. La valeur de l'expression XPath `self::node()` est le premier nœud book. Cette valeur change à mesure que la transformation progresse.
+   `self::node()` expression XPath qui prend la valeur du nœud de contexte actuel. La valeur de l'expression XPath `self::node()` est le premier nœud book. Cette valeur change à mesure que la transformation progresse.
 
 4. Développez le `self::node()` nœud, puis développez le nœud dont la valeur est `price` .
 

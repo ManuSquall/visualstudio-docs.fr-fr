@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0214d3e8d097efa31b3f8b02e67f419226a093a4
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85461342"
 ---
 # <a name="idiasymbol"></a>IDiaSymbol
@@ -220,7 +220,7 @@ Le tableau suivant présente les méthodes de `IDiaSymbol` .
 |[IDiaSymbol::get_virtualTableShapeId](../../debugger/debug-interface-access/idiasymbol-get-virtualtableshapeid.md)|Récupère l’identificateur de forme de la table virtuelle du symbole.|
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|Récupère un indicateur qui spécifie si le type de données défini par l’utilisateur est volatile.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
 ## <a name="notes-for-callers"></a>Notes pour les appelants
 Obtenez cette interface en appelant l’une des méthodes suivantes :
@@ -261,7 +261,7 @@ Obtenez cette interface en appelant l’une des méthodes suivantes :
 Cet exemple montre comment afficher les variables locales pour une fonction à une adresse virtuelle relative donnée. Il montre également comment les symboles de différents types sont liés les uns aux autres.
 
 > [!NOTE]
-> `CDiaBSTR`est une classe qui encapsule un `BSTR` et gère automatiquement la libération de la chaîne lorsque l’instanciation est hors de portée.
+> `CDiaBSTR` est une classe qui encapsule un `BSTR` et gère automatiquement la libération de la chaîne lorsque l’instanciation est hors de portée.
 
 ```C++
 void DumpLocalVars( DWORD rva, IDiaSession *pSession )
@@ -335,7 +335,7 @@ void DumpLocalVars( DWORD rva, IDiaSession *pSession )
 }
 ```
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
 `Header:` Dia2.h
 
 Bibliothèque : diaguids. lib
@@ -348,5 +348,5 @@ DLL : msdia80.dll
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)
 - [Hiérarchie de classes des types de symboles](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)
-- [Balises Symbols et Symbol](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)
+- [Symboles et étiquettes de symbole](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)
 - [Compiland](../../debugger/debug-interface-access/compiland.md)

@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 1c496fd457e80220bb2ea4a2f032cef9508d9dcb
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77631599"
 ---
 # <a name="troubleshoot-net-framework-targeting-errors"></a>Résoudre les erreurs de ciblage de .NET Framework
@@ -34,7 +34,7 @@ Cette rubrique décrit les erreurs MSBuild qui peuvent se produire en raison de 
 
 ## <a name="you-have-re-targeted-a-project-to-a-different-version-of-the-net-framework"></a>Vous avez reciblé un projet vers une autre version de .NET Framework
 
- Si vous changez la version cible du .NET Framework pour votre application, Visual Studio change certaines des références, mais vous devrez peut-être en modifier d’autres manuellement. Par exemple, l’une des erreurs mentionnées précédemment peut se produire si vous modifiez une application pour cibler le pack de service .NET Framework 3.5 et que l’application dispose de ressources ou de paramètres qui reposent sur le profil du client pour le cadre .NET 4.
+ Si vous changez la version cible du .NET Framework pour votre application, Visual Studio change certaines des références, mais vous devrez peut-être en modifier d’autres manuellement. Par exemple, l’une des erreurs mentionnées précédemment peut se produire si vous modifiez une application pour cibler le .NET Framework 3,5 Service Pack 1 et que cette application possède des ressources ou des paramètres qui reposent sur le profil client pour le .NET Framework 4.
 
  Pour contourner les paramètres d’application, ouvrez **l’Explorateur de solutions**, choisissez **Afficher tous les fichiers**, puis modifiez le fichier *app.config* dans l’éditeur XML de Visual Studio. Modifiez la version dans les paramètres pour la faire correspondre à celle du .NET Framework. Par exemple, vous pouvez remplacer le paramètre de version 4.0.0.0 par 2.0.0.0. De même, pour une application comportant des ressources supplémentaires, ouvrez **l’Explorateur de solutions**, choisissez le bouton **Afficher tous les fichiers**, développez **Mon projet** (Visual Basic) ou **Propriétés** (C#), puis modifiez le fichier *Resources.resx* dans l’éditeur XML de Visual Studio. Remplacez le paramètre de version 4.0.0.0 par 2.0.0.0.
 
@@ -60,6 +60,6 @@ Cette rubrique décrit les erreurs MSBuild qui peuvent se produire en raison de 
 ## <a name="see-also"></a>Voir aussi
 
 - [Guide pratique : Cibler une version de .NET Framework](../ide/visual-studio-multi-targeting-overview.md)
-- [profil client cadre (NET)](/dotnet/framework/deployment/client-profile)
+- [Profil client .NET Framework](/dotnet/framework/deployment/client-profile)
 - [Vue d’ensemble du ciblage des frameworks](../ide/visual-studio-multi-targeting-overview.md)
-- [Multitargeting](../msbuild/msbuild-multitargeting-overview.md)
+- [MULTICIBLAGE](../msbuild/msbuild-multitargeting-overview.md)

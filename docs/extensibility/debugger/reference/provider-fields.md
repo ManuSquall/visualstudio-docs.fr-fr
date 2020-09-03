@@ -1,5 +1,5 @@
 ---
-title: PROVIDER_FIELDS Microsoft Docs
+title: PROVIDER_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 37f64b455ab0331f9b8f08da1f29a3e2c1b82fdf
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713786"
 ---
 # <a name="provider_fields"></a>PROVIDER_FIELDS
-Spécifie les propriétés associées à un fournisseur de programme.
+Spécifie les propriétés associées à un fournisseur de programmes.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -50,16 +50,16 @@ public enum enum_PROVIDER_FIELDS {
  Le `fIsDebuggerPresent` champ est valide.
 
 ## <a name="remarks"></a>Notes
- Ces valeurs sont `Fields` retournées dans le membre de la structure [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) pour indiquer quels champs de la structure ont été explicitement remplis.
+ Ces valeurs sont retournées dans le `Fields` membre de la structure [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) pour indiquer les champs de la structure qui ont été remplis explicitement.
 
- Ces valeurs peuvent être combinées avec un peu plus. `OR`
+ Ces valeurs peuvent être combinées avec une opération de bits `OR` .
 
-## <a name="requirements"></a>Spécifications
- En-tête: msdbg.h
+## <a name="requirements"></a>Configuration requise
+ En-tête : msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Espace de noms : Microsoft. VisualStudio. Debugger. Interop
 
- Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

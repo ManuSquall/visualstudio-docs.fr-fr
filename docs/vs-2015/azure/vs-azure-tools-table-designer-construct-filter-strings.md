@@ -12,32 +12,32 @@ ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
 ms.openlocfilehash: 571f7bf825583b3094e07ea4404437f2fb2d62de
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75917600"
 ---
-# <a name="constructing-filter-strings-for-the-table-designer"></a>Construction de chaînes de filtre pour le Concepteur de tables
-## <a name="overview"></a>Vue d'ensemble de
+# <a name="constructing-filter-strings-for-the-table-designer"></a>Construction de chaînes de filtrage pour le Concepteur de tables
+## <a name="overview"></a>Vue d’ensemble
 Pour filtrer les données d’une table Azure affichée dans le **Concepteur de tables** Visual Studio, vous devez créer une chaîne de filtrage, puis entrer celle-ci dans le champ de filtre. La syntaxe de la chaîne de filtrage est définie par les services de données WCF et est similaire à une clause SQL WHERE. Cependant, elle est envoyée au service de Table via une demande HTTP. Le **Concepteur de tables** est chargé de l’encodage. Si vous voulez filtrer les données à l’aide d’une valeur de propriété, il vous suffit donc de taper dans le champ de filtrage le nom de la propriété, l’opérateur de comparaison, la valeur des critères et éventuellement, l’opérateur booléen. Il n’est pas nécessaire d’inclure l’option de requête $filter comme vous le feriez pour créer une URL dans le but d’interroger la table via les [informations de référence de l’API REST Storage Services](/rest/api/storageservices).
 
-Les services de données WCF sont basés sur le protocole OData ( [Open Data Protocol](https://www.odata.org/) ). Pour plus d’informations sur l’option de requête du système de filtrage ( **$filter**), consultez les [spécifications des conventions d’URI OData](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/).
+Les services de données WCF sont basés sur le protocole OData ( [Open Data Protocol](https://www.odata.org/) ). Pour plus d’informations sur l’option de requête du système de filtrage (**$filter**), consultez les [spécifications des conventions d’URI OData](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/).
 
 ## <a name="comparison-operators"></a>Opérateurs de comparaison
 Les opérateurs logiques suivants sont pris en charge par tous les types de propriétés :
 
 | Opérateur logique | Description | Exemple de chaîne de filtrage |
 | --- | --- | --- |
-| eq |Égal |Ville eq 'Redmond' |
+| eq |Égal à |Ville eq 'Redmond' |
 | gt |Supérieur à |Prix gt 20 |
 | ge |Supérieur ou égal à |Prix ge 10 |
 | lt |Inférieur à |Prix lt 20 |
 | le |Inférieur ou égal à |Prix le 100 |
-| ne |Différence |Ville ne 'Londres' |
-| et |Et |Prix le 200 and prix gt 3,5 |
-| ou |Ou |Prix le 3,5 or prix gt 200 |
-| not |not |not isAvailable |
+| ne |Non égal à |Ville ne 'Londres' |
+| and |and |Prix le 200 and prix gt 3,5 |
+| or |ou |Prix le 3,5 or prix gt 200 |
+| not |Not |not isAvailable |
 
 Quand vous créez une chaîne de filtrage, il est important de suivre les règles suivantes :
 

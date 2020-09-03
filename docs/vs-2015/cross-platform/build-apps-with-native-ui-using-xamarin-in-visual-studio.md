@@ -9,10 +9,10 @@ caps.latest.revision: 33
 ms.author: crdun
 manager: crdun
 ms.openlocfilehash: 204d3ee68aace07ed19e5913309a122d6d775a0e
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918346"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Générer des applications Xamarin avec une interface utilisateur native dans Visual Studio
@@ -54,7 +54,7 @@ Une fois que vous avez effectué les étapes dans [Configurer et installer](../c
 >   - [Hello, Xamarin.Forms](https://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/hello-xamarin-forms/quickstart/)
 >   - [Hello, Xamarin.Forms Multiscreen](https://developer.xamarin.com/guides/cross-platform/xamarin-forms/getting-started/hello-xamarin-forms-multiscreen/)
 
-## <a name="solution"></a> Configurer votre solution
+## <a name="set-up-your-solution"></a><a name="solution"></a> Configurer votre solution
  Les étapes suivantes permettent de créer une solution Xamarin avec une IU native, qui contient une bibliothèque PCL pour le code partagé et deux packages NuGet ajoutés.
 
 1. Dans Visual Studio, créez une solution **Application vide (native portable)** et nommez-la **WeatherApp**. Vous pouvez trouver plus facilement ce modèle en entrant **native portable** dans le champ de recherche.
@@ -63,19 +63,19 @@ Une fois que vous avez effectué les étapes dans [Configurer et installer](../c
 
 2. Après avoir cliqué sur OK pour créer la solution, vous avez un certain nombre de projets individuels :
 
-   - **WeatherApp (Portable)** : bibliothèque PCL où vous allez écrire du code qui est partagé entre les plateformes, notamment une logique métier commune et le code de l’interface utilisateur à l’aide de Xamarin.Forms.
+   - **WeatherApp (Portable)**: bibliothèque PCL où vous allez écrire du code qui est partagé entre les plateformes, notamment une logique métier commune et le code de l’interface utilisateur à l’aide de Xamarin.Forms.
 
    - **WeatherApp.Droid**: projet qui contient le code Android natif. Ce projet est défini comme projet de démarrage par défaut.
 
    - **WeatherApp.iOS**: projet qui contient le code iOS natif.
 
-   - **WeatherApp.WinPhone (Windows Phone 8.1)** : le projet qui contient le code Windows Phone natif.
+   - **WeatherApp.WinPhone (Windows Phone 8.1)**: le projet qui contient le code Windows Phone natif.
 
      Dans chaque projet natif, vous avez accès au concepteur natif pour la plateforme correspondante. Vous pouvez implémenter des écrans spécifiques à la plateforme.
 
-3. Ajoutez les packages NuGet et **Newtonsoft.Json** au projet de bibliothèque PCL, que vous allez utiliser pour traiter les informations récupérées à partir d’un service de données météo :
+3. Ajoutez le **Newtonsoft.Jssur** et le package NuGet au projet PCL, que vous utiliserez pour traiter les informations récupérées à partir d’un service de données météo :
 
-   - Dans l’Explorateur de solutions, cliquez avec le bouton droit sur **Solution ‘WeatherApp’** , puis sélectionnez **Gérer les packages NuGet pour la solution**.
+   - Dans l’Explorateur de solutions, cliquez avec le bouton droit sur **Solution ‘WeatherApp’**, puis sélectionnez **Gérer les packages NuGet pour la solution**.
 
         Dans la fenêtre NuGet, sélectionnez l’onglet **Parcourir**, puis recherchez **Newtonsoft**.
 
@@ -85,22 +85,22 @@ Une fois que vous avez effectué les étapes dans [Configurer et installer](../c
 
    - Vérifiez que la valeur définie pour le champ **Version** est **Dernière stable** .
 
-   - Cliquez sur **Suivant**.
+   - Cliquez sur **Installer**.
 
-   - ![Recherche et installation du package NuGet Newtonsoft. JSON](../cross-platform/media/crossplat-xamarin-formsguide-5.png "CrossPlat Xamarin FormsGuide 5")
+   - ![Recherche et installation du Newtonsoft.Jssur le package NuGet](../cross-platform/media/crossplat-xamarin-formsguide-5.png "CrossPlat Xamarin FormsGuide 5")
 
 4. Répétez l’étape 3 ci-dessus pour rechercher et installer le package **Microsoft.Net.Http**.
 
 5. Générez votre solution et vérifiez l’absence d’erreur de génération.
 
-## <a name="dataservice"></a> Écrire le code de service de données partagé
- Le projet **WeatherApp (Portable)** est l’emplacement où vous allez écrire du code pour la bibliothèque PCL partagée entre les plateformes. La bibliothèque PCL est automatiquement incluse dans les packages d’application générés par les projets iOS, Android et Windows Phone.
+## <a name="write-shared-data-service-code"></a><a name="dataservice"></a> Écrire du code de service de données partagé
+ Le projet **WeatherApp (portable)** est l’emplacement où vous allez écrire du code pour la bibliothèque de classes portables (PCL) qui est partagé entre toutes les plateformes. La bibliothèque PCL est automatiquement incluse dans les packages d’application générés par les projets iOS, Android et Windows Phone.
 
  Les étapes suivantes permettent d’ajouter du code à la bibliothèque PCL pour accéder aux données de ce service météo et stocker ces données :
 
-1. Pour exécuter cet exemple, vous devez tout d’abord vous inscrire pour obtenir une clé API gratuite à l’adresse [http://openweathermap.org/appid](https://openweathermap.org/appid).
+1. Pour exécuter cet exemple, vous devez d’abord vous inscrire pour obtenir une clé API gratuite à l’adresse [http://openweathermap.org/appid](https://openweathermap.org/appid) .
 
-2. Cliquez avec le bouton droit sur le projet **WeatherApp** et sélectionnez **Ajouter > Classe**. Dans la boîte de dialogue **Ajouter un nouvel élément** , nommez le fichier **Weather.cs**. Vous utiliserez cette classe pour stocker les données du service de données météo.
+2. Cliquez avec le bouton droit sur le projet **WeatherApp** et sélectionnez **Ajouter > classe...**. Dans la boîte de dialogue **Ajouter un nouvel élément** , nommez le fichier **Weather.cs**. Vous utiliserez cette classe pour stocker les données du service de données météo.
 
 3. Remplacez l’intégralité du contenu de **Weather.cs** par le code suivant :
 
@@ -222,7 +222,7 @@ Une fois que vous avez effectué les étapes dans [Configurer et installer](../c
 
 10. Générez le projet de bibliothèque PCL **WeatherApp** pour vérifier que le code est correct.
 
-## <a name="Android"></a> Concevoir une IU pour Android
+## <a name="design-ui-for-android"></a><a name="Android"></a> Concevoir l’interface utilisateur pour Android
  À présent, vous allez concevoir l’interface utilisateur, la connecter à votre code partagé, puis exécuter l’application.
 
 ### <a name="design-the-look-and-feel-of-your-app"></a>Concevoir l'apparence de votre application
@@ -247,10 +247,10 @@ Une fois que vous avez effectué les étapes dans [Configurer et installer](../c
 
 7. Dans la fenêtre **Propriétés**, définissez les propriétés suivantes (vous pouvez éventuellement trier la liste par ordre alphabétique à l’aide du bouton de tri situé dans la barre d’outils de la fenêtre Propriétés) :
 
-    |Les|Value|
+    |Propriété|Valeur|
     |--------------|-----------|
-    |**texte**|**Search by Zip Code**|
-    |**ID**|`@+id/ZipCodeSearchLabel`|
+    |**text**|**Search by Zip Code**|
+    |**id**|`@+id/ZipCodeSearchLabel`|
     |**layout_marginLeft**|`10dp`|
     |**textColor**|`@android:color/white`|
     |**textStyle**|`bold`|
@@ -258,7 +258,7 @@ Une fois que vous avez effectué les étapes dans [Configurer et installer](../c
     > [!TIP]
     > Notez que de nombreuses propriétés ne contiennent pas de liste déroulante de valeurs sélectionnables.  Il peut être difficile d’évaluer la valeur de chaîne à utiliser pour une propriété donnée. Pour obtenir des suggestions, essayez de rechercher le nom d’une propriété dans la page de la classe [R.attr](https://developer.android.com/reference/android/R.attr.html) .
     >
-    >  De plus, une recherche rapide sur le web permet souvent d’accéder à une page à l’adresse [http://stackoverflow.com/](https://stackoverflow.com/) où d’autres personnes ont utilisé la même propriété.
+    >  En outre, une recherche rapide sur le Web amène souvent sur une page [http://stackoverflow.com/](https://stackoverflow.com/) où d’autres personnes ont utilisé la même propriété.
 
      À titre de référence, si vous passez en mode **Source**, vous devez voir le code suivant pour cet élément :
 
@@ -279,10 +279,10 @@ Une fois que vous avez effectué les étapes dans [Configurer et installer](../c
 
 9. Dans la fenêtre **Propriétés** , définissez les propriétés suivantes :
 
-    |Les|Value|
+    |Propriété|Valeur|
     |--------------|-----------|
-    |**texte**|**Code postal**|
-    |**ID**|`@+id/ZipCodeLabel`|
+    |**text**|**Code postal**|
+    |**id**|`@+id/ZipCodeLabel`|
     |**layout_marginLeft**|`10dp`|
     |**layout_marginTop**|`5dp`|
 
@@ -301,9 +301,9 @@ Une fois que vous avez effectué les étapes dans [Configurer et installer](../c
 
 10. À partir de la **Boîte à outils**, faites glisser un contrôle **Number** sur **RelativeLayout**, placez-le sous l’étiquette **Zip Code**. Définissez ensuite les propriétés suivantes :
 
-    |Les|Value|
+    |Propriété|Valeur|
     |--------------|-----------|
-    |**ID**|`@+id/zipCodeEntry`|
+    |**id**|`@+id/zipCodeEntry`|
     |**layout_marginLeft**|`10dp`|
     |**layout_marginBottom**|`10dp`|
     |**width**|`165dp`|
@@ -324,10 +324,10 @@ Une fois que vous avez effectué les étapes dans [Configurer et installer](../c
 
 11. À partir de la **Boîte à outils**, faites glisser un contrôle **Button** sur le contrôle **RelativeLayout**, puis placez-le à droite du contrôle zipCodeEntry. Définissez ensuite ces propriétés :
 
-    |Les|Value|
+    |Propriété|Valeur|
     |--------------|-----------|
-    |**ID**|`@+id/weatherBtn`|
-    |**texte**|**Obtenir la météo**|
+    |**id**|`@+id/weatherBtn`|
+    |**text**|**Obtenir la météo**|
     |**layout_marginLeft**|`20dp`|
     |**layout_alignBottom**|`@id/zipCodeEntry`|
     |**width**|`165dp`|
@@ -450,7 +450,7 @@ Une fois que vous avez effectué les étapes dans [Configurer et installer](../c
 
 13. Enregistrez le fichier, puis passez en mode **Design**. Votre interface utilisateur doit s'afficher comme suit :
 
-     ![Interface utilisateur pour l’application Android](../cross-platform/media/xamarin-androidui.png "Xamarin_AndroidUI")
+     ![Interface utilisateur pour application Android](../cross-platform/media/xamarin-androidui.png "Xamarin_AndroidUI")
 
 14. Ouvrez **MainActivity.cs**, puis supprimez les lignes de la méthode *OnCreate* qui référencent le bouton par défaut supprimé précédemment. Une fois que vous avez terminé, le code doit ressembler à ceci :
 
@@ -525,7 +525,7 @@ Une fois que vous avez effectué les étapes dans [Configurer et installer](../c
 > [!TIP]
 > Le code source complet de ce projet se trouve dans le [dépôt mobile-samples sur GitHub](https://github.com/xamarin/mobile-samples/tree/master/Weather).
 
-## <a name="Windows"></a> Concevoir une IU pour Windows Phone
+## <a name="design-ui-for-windows-phone"></a><a name="Windows"></a> Concevoir l’interface utilisateur pour Windows Phone
  À présent, nous allons concevoir l’interface utilisateur pour Windows Phone, la connecter à votre code partagé, puis exécuter l’application.
 
 ### <a name="design-the-look-and-feel-of-your-app"></a>Concevoir l'apparence de votre application
@@ -579,7 +579,7 @@ Une fois que vous avez effectué les étapes dans [Configurer et installer](../c
 
  Dans la vue de conception, votre interface utilisateur doit ressembler à ce qui suit :
 
- ![Interface utilisateur de l’application Windows Phone](../cross-platform/media/xamarin-winphone-finalui.png "Xamarin_WinPhone_FinalUI")
+ ![Interface utilisateur d’application Windows Phone](../cross-platform/media/xamarin-winphone-finalui.png "Xamarin_WinPhone_FinalUI")
 
 ### <a name="consume-your-shared-code"></a>Consommer votre code partagé
 
@@ -626,12 +626,12 @@ Une fois que vous avez effectué les étapes dans [Configurer et installer](../c
 
 3. Dans l’émulateur Windows Phone, dans la zone d’édition, tapez un code postal valide pour les États-Unis (par exemple 60601), puis appuyez sur **Get Weather**. Les données météorologiques de cette région apparaissent ensuite dans les contrôles.
 
-     ![Version Windows de l’application en cours d’exécution](../cross-platform/media/xamarin-getstarted-results-windows.png "Xamarin_GetStarted_Results_Windows")
+     ![Version Windows de l'application en cours d'exécution](../cross-platform/media/xamarin-getstarted-results-windows.png "Xamarin_GetStarted_Results_Windows")
 
 > [!TIP]
 > Le code source complet de ce projet se trouve dans le [dépôt mobile-samples sur GitHub](https://github.com/xamarin/mobile-samples/tree/master/Weather).
 
-## <a name="next"></a> Étapes suivantes
+## <a name="next-steps"></a><a name="next"></a>Étapes suivantes
  **Ajouter une IU pour iOS à la solution**
 
  Étendez cet exemple en ajoutant une IU native pour iOS. Pour cela, vous devez vous connecter à un Mac sur votre réseau local, où sont installés Xcode et Xamarin. Vous pourrez ensuite utiliser le concepteur iOS directement dans Visual Studio. Consultez le [dépôt mobile-samples sur GitHub](https://github.com/xamarin/mobile-samples/tree/master/Weather) pour obtenir une application complète.
@@ -643,4 +643,4 @@ Une fois que vous avez effectué les étapes dans [Configurer et installer](../c
  Le code partagé d’une bibliothèque PCL est indépendant de la plateforme, car la bibliothèque PCL est compilée une seule fois et incluse dans chaque package de l’application spécifique à la plateforme. Si vous souhaitez écrire du code partagé qui utilise la compilation conditionnelle pour isoler le code spécifique à la plateforme, vous pouvez utiliser un projet *partagé*. Pour plus d’informations, consultez [Options de partage du code](/xamarin/cross-platform/app-fundamentals/code-sharing) (xamarin.com).
 
 ## <a name="see-also"></a>Voir aussi
- [Site de développement Xamarin](/xamarin/) [fenêtre](https://dev.windows.com/en-us) [de référence rapide C# et rapide](https://aka.ms/scposter) du centre de développement Windows
+ [Site de développement Xamarin](/xamarin/) [Aperçu du centre de développement Windows](https://dev.windows.com/en-us) [Swift and C# poster](https://aka.ms/scposter) aide-mémoire

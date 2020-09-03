@@ -1,5 +1,5 @@
 ---
-title: Designer Initialisation et Configuration des métadonnées Microsoft Docs
+title: Initialisation du concepteur et configuration des métadonnées | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,94 +12,94 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e876dd9e6fa95bbe180d1737bc8c4911f16e1e9a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712212"
 ---
-# <a name="designer-initialization-and-metadata-configuration"></a>Initialisation et configuration de métadonnées de concepteur
+# <a name="designer-initialization-and-metadata-configuration"></a>Initialisation du concepteur et configuration des métadonnées
 
-La manipulation des métadonnées et des attributs de filtre associés à un composant de concepteur ou <xref:System.Type> de concepteur fournit un mécanisme pour les applications pour définir quels outils sont utilisés par un concepteur particulier pour manipuler différents objets (tels que les structures de données, les classes ou les entités graphiques), quand le concepteur est disponible, et comment le Visual Studio IDE est configuré pour prendre en charge le concepteur (par exemple quelle catégorie ou onglet **de boîte** à outils est disponible).
+La manipulation des métadonnées et des attributs de filtre associés à un concepteur ou à un composant de concepteur fournit un mécanisme permettant aux applications de définir les outils utilisés par un concepteur particulier pour gérer différents <xref:System.Type> objets (tels que des structures de données, des classes ou des entités graphiques), lorsque le concepteur est disponible et comment l’IDE Visual Studio est configuré **Toolbox** pour prendre en charge le concepteur (par exemple, la catégorie
 
-Le [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] fournit plusieurs mécanismes pour faciliter le contrôle de l’initialisation d’un concepteur ou d’un composant de concepteur et la manipulation de ses métadonnées par un VSPackage.
+Le [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] fournit plusieurs mécanismes pour faciliter le contrôle de l’initialisation d’un concepteur ou d’un composant de concepteur, ainsi que la manipulation de ses métadonnées par un VSPackage.
 
 ## <a name="initialize-metadata-and-configuration-information"></a>Initialiser les métadonnées et les informations de configuration
- Parce qu’ils sont chargés sur demande, VSPackages peut ne pas avoir été chargé par l’environnement Visual Studio avant l’instantanéisation d’un concepteur. Par conséquent, VSPackages ne peut pas utiliser le mécanisme standard pour configurer <xref:System.ComponentModel.Design.IDesignerEventService.DesignerCreated> un composant de concepteur ou de concepteur sur la création, qui est de gérer un événement. Au lieu de cela, un VSPackage implémente une instance de l’interface <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> et s’enregistre pour fournir des personnalisations, appelées extensions de surface de conception.
+ Étant donné qu’ils sont chargés à la demande, les VSPackages n’ont peut-être pas été chargés par l’environnement Visual Studio avant l’instanciation d’un concepteur. Par conséquent, les VSPackages ne peuvent pas utiliser le mécanisme standard pour configurer un concepteur ou un composant de concepteur lors de la création, qui consiste à gérer un <xref:System.ComponentModel.Design.IDesignerEventService.DesignerCreated> événement. Au lieu de cela, un VSPackage implémente une instance de l' <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> interface et s’inscrit lui-même pour fournir des personnalisations, appelées extensions de l’aire de conception.
 
 ### <a name="customize-initialization"></a>Personnaliser l’initialisation
 
-Personnaliser un concepteur, un composant ou une surface de concepteur implique :
+La personnalisation d’un concepteur, d’un composant ou d’une aire de conception implique les opérations suivantes :
 
-1. Modification des métadonnées du concepteur <xref:System.Type> et modification efficace de la façon dont un certain est accessible ou converti.
+1. Modification des métadonnées du concepteur et modification efficace de l’accès ou de la conversion d’un certain <xref:System.Type> .
 
-    Cela se fait <xref:System.Drawing.Design.UITypeEditor> généralement <xref:System.ComponentModel.TypeConverter> par le biais de l’ou des mécanismes.
+    Cela s’effectue généralement par le biais des <xref:System.Drawing.Design.UITypeEditor> <xref:System.ComponentModel.TypeConverter> mécanismes ou.
 
-    Par exemple, <xref:System.Windows.Forms>lorsque les concepteurs basés sont parasés, l’environnement Visual Studio modifie le <xref:System.Drawing.Design.UITypeEditor> pour <xref:System.Web.UI.WebControls.Image> les objets utilisés avec le concepteur pour utiliser le gestionnaire de ressources pour obtenir des bitmaps plutôt que le système de fichiers.
+    Par exemple, lorsque des <xref:System.Windows.Forms> concepteurs basés sur sont initialisés, l’environnement Visual Studio modifie le <xref:System.Drawing.Design.UITypeEditor> pour les <xref:System.Web.UI.WebControls.Image> objets utilisés avec le concepteur afin d’utiliser le gestionnaire de ressources pour obtenir des bitmaps au lieu du système de fichiers.
 
-2. S’intégrer à l’environnement, par exemple, en s’abonnant à des événements ou en obtenant des informations sur la configuration du projet. Vous pouvez obtenir des informations de configuration <xref:System.ComponentModel.Design.ITypeResolutionService> de projet et vous abonner aux événements en obtenant l’interface.
+2. Intégration à l’environnement, par exemple, en s’abonnant à des événements ou en obtenant des informations de configuration de projet. Vous pouvez obtenir des informations sur la configuration du projet et vous abonner aux événements en obtenant l' <xref:System.ComponentModel.Design.ITypeResolutionService> interface.
 
-3. Modification de l’environnement utilisateur en activant les catégories appropriées **de boîte à** outils <xref:System.ComponentModel.ToolboxItemFilterAttribute> ou en limitant l’applicabilité du concepteur en appliquant une instance de la classe au concepteur.
+3. Modification de l’environnement utilisateur en activant les catégories appropriées de la **boîte à outils** ou en restreignant l’applicabilité du concepteur en appliquant une instance de la <xref:System.ComponentModel.ToolboxItemFilterAttribute> classe au concepteur.
 
 ### <a name="designer-initialization-by-a-vspackage"></a>Initialisation du concepteur par un VSPackage
 
-Un VSPackage doit gérer l’initialisation du concepteur en :
+Un VSPackage doit gérer l’initialisation du concepteur de la façon suivante :
 
-1. Création d’un <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> objet mettant en œuvre la classe.
+1. Création d’un objet qui implémente la <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> classe.
 
    > [!NOTE]
-   > La <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> classe ne doit jamais être <xref:Microsoft.VisualStudio.Shell.Package> mise en œuvre sur le même objet que la classe.
+   > La <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> classe ne doit jamais être implémentée sur le même objet que la <xref:Microsoft.VisualStudio.Shell.Package> classe.
 
-2. Enregistrement de la classe <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> qui met en œuvre comme fournissant un soutien pour les extensions de concepteur de la VSPackage. Enregistrez la classe <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>en <xref:Microsoft.VisualStudio.Shell.ProvideObjectAttribute>appliquant des instances de , , <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> et <xref:Microsoft.VisualStudio.Shell.Package>à la classe qui fournit la mise en œuvre du VSPackage de .
+2. Inscription de la classe qui implémente <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> comme assurant la prise en charge des extensions de concepteur du VSPackage. Inscrivez la classe en appliquant des instances de  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute> , <xref:Microsoft.VisualStudio.Shell.ProvideObjectAttribute> et <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> à la classe qui fournit l’implémentation du VSPackage de <xref:Microsoft.VisualStudio.Shell.Package> .
 
-Chaque fois qu’un composant designer ou designer est créé, l’environnement Visual Studio :
+Chaque fois qu’un concepteur ou un composant de concepteur est créé, l’environnement Visual Studio :
 
-- Accès à chaque fournisseur d’extension de surface de conception enregistré.
+- Accède à chaque fournisseur d’extension de l’aire de conception inscrite.
 
-- Instantiates et initialise une instance de l’objet de chaque fournisseur d’extension de surface de <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> conception.
+- Instancie et Initialise une instance de chaque objet du fournisseur d’extensions de l’aire de conception <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> .
 
-- Appelle la méthode ou <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension.OnDesignerCreated%2A> la <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension.OnComponentCreated%2A> méthode de chaque fournisseur d’extension de surface de conception (le cas échéant).
+- Appelle la méthode ou la méthode de chaque fournisseur d’extension de l’aire de conception <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension.OnDesignerCreated%2A> <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension.OnComponentCreated%2A> (selon le cas).
 
-Lors de <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> la mise en œuvre de l’objet en tant que membre d’un VSPackage, il est important de comprendre que:
+Lors de l’implémentation <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> de l’objet en tant que membre d’un VSPackage, il est important de comprendre ce qui suit :
 
-- L’environnement Visual Studio ne donne aucun contrôle sur les `DesignSurfaceExtension` métadonnées ou autres paramètres de configuration modifiés par un fournisseur particulier. Il est possible pour `DesignSurfaceExtension` deux fournisseurs ou plus de modifier la même fonctionnalité de concepteur de manière contradictoire, avec la modification finale étant définitive. Il est indéterminé quelle modification est appliquée pour la dernière fois.
+- L’environnement Visual Studio ne fournit aucun contrôle sur les métadonnées ou autres paramètres de configuration qu’un `DesignSurfaceExtension` fournisseur particulier modifie. Il est possible que deux fournisseurs ou plus `DesignSurfaceExtension` modifient la même fonctionnalité de concepteur de manière contradictoire, avec la modification finale définitive. La dernière modification appliquée est indéterminée.
 
-- Il est possible de limiter explicitement <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> la mise en œuvre de l’objet à des concepteurs spécifiques en appliquant des <xref:System.ComponentModel.ToolboxItemFilterAttribute> instances à cette implémentation. Pour plus d’informations sur le filtrage de l’élément **Toolbox,** voir le <xref:System.ComponentModel.ToolboxItemFilterAttribute> et <xref:System.ComponentModel.ToolboxItemFilterType>.
+- Il est possible de limiter explicitement une implémentation de l' <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> objet à des concepteurs spécifiques en appliquant des instances de <xref:System.ComponentModel.ToolboxItemFilterAttribute> à cette implémentation. Pour plus d’informations sur le filtrage des éléments de **boîte à outils** , consultez <xref:System.ComponentModel.ToolboxItemFilterAttribute> et <xref:System.ComponentModel.ToolboxItemFilterType> .
 
-## <a name="additional-metadata-provisioning"></a>Fourniture de métadonnées supplémentaires
+## <a name="additional-metadata-provisioning"></a>Approvisionnement de métadonnées supplémentaires
 
-Un VSPackage peut modifier la configuration d’un composant de concepteur ou de concepteur autre qu’au moment de la conception.
+Un VSPackage peut modifier la configuration d’un concepteur ou d’un composant de concepteur autre qu’au moment de la conception.
 
-La <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> classe peut être utilisée de façon programmatique ou appliquée à un VSPackage qui fournit un concepteur.
+La <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> classe peut être utilisée par programmation ou appliquée à un VSPackage qui fournit un concepteur.
 
-Une instance <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> de la classe est utilisée pour modifier les métadonnées des composants créés sur une surface de conception. Par exemple, on pourrait remplacer un <xref:System.Windows.Forms.CommonDialog> navigateur de propriété par défaut utilisé par des objets par un navigateur de propriété personnalisé.
+Une instance de la <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> classe est utilisée pour modifier les métadonnées des composants créés sur une aire de conception. Par exemple, il est possible de remplacer un Explorateur de propriétés par défaut utilisé par des <xref:System.Windows.Forms.CommonDialog> objets avec un Explorateur de propriétés personnalisé.
 
-Les modifications fournies <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> par une instance d’application <xref:Microsoft.VisualStudio.Shell.Package> à la mise en œuvre d’un VSPackage peuvent avoir l’une des deux portées :
+Les modifications fournies par une instance de <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> appliquée à l’implémentation d’un VSPackage de <xref:Microsoft.VisualStudio.Shell.Package> peuvent avoir l’une des deux étendues suivantes :
 
-- Global -- pour tous les nouveaux cas d’un composant donné
+- Global--pour toutes les nouvelles instances d’un composant donné
 
-- Local -- se rapportant uniquement à l’exemple du composant créé sur une surface de conception fournie par le VSPackage actuel.
+- Local : se rapportant uniquement à l’instance du composant créé sur une aire de conception fournie par le VSPackage actuel.
 
-La `IsGlobal` propriété <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> de l’instance s’appliquait <xref:Microsoft.VisualStudio.Shell.Package> à la mise en œuvre d’un VSPackage de détermine cette portée.
+La `IsGlobal` propriété de l' <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> instance appliquée à l’implémentation d’un VSPackage <xref:Microsoft.VisualStudio.Shell.Package> détermine cette portée.
 
-L’application de l’attribut <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute.IsGlobal%2A> à <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> une implémentation de <xref:Microsoft.VisualStudio.Shell.Package> la propriété de l’objet réglé à `true`, comme ci-dessous, change le navigateur pour l’ensemble de l’environnement Visual Studio:
+L’application de l’attribut à une implémentation de <xref:Microsoft.VisualStudio.Shell.Package> avec la <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute.IsGlobal%2A> propriété de l’objet ayant la <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> valeur `true` , comme ci-dessous, modifie le navigateur pour l’ensemble de l’environnement Visual Studio :
 
 `[ProvideDesignerMetadata(typeof(Color), typeof(CustomBrowser),`   `IsGlobal=true`  `)]`
 
 `internal class MyPackage : Package {}`
 
-Si le drapeau mondial `false`a été fixé à , puis le changement de métadonnées est local pour le concepteur actuel soutenu par l’actuel VSPackage:
+Si l’indicateur global a la valeur `false` , la modification des métadonnées est locale par le concepteur actuel pris en charge par le VSPackage actuel :
 
 `[ProvideDesignerMetadata(typeof(Color), typeof(CustomBrowser),`   `IsGlobal=false`  `)]`
 
 `internal class MyPackage : Package {}`
 
 > [!NOTE]
-> La surface de conception ne prend en charge la création de composants, et donc seuls les composants peuvent avoir des métadonnées locales. Dans l’exemple ci-dessus, nous tentions `Color` de modifier une propriété, comme la propriété d’un objet. Si `false` a été passé pour `CustomBrowser` le drapeau mondial, n’apparaîtrait `Color`jamais parce que le concepteur ne crée jamais réellement un exemple de . La mise en `false` place du drapeau mondial est utile pour les composants, tels que les commandes, les minuteries et les boîtes de dialogue.
+> L’aire de conception ne prend en charge que la création de composants et, par conséquent, seuls les composants peuvent avoir des métadonnées locales. Dans l’exemple ci-dessus, nous avons tenté de modifier une propriété, telle que la `Color` propriété d’un objet. Si `false` a été passé pour l’indicateur global, n' `CustomBrowser` apparaîtrait jamais, car le concepteur ne crée jamais d’instance de `Color` . La définition de l’indicateur global sur `false` est utile pour les composants, tels que les contrôles, les minuteurs et les boîtes de dialogue.
 
 ## <a name="see-also"></a>Voir aussi
 
 - <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>
 - <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>
 - <xref:System.ComponentModel.ToolboxItemFilterType>
-- [Étendre le support de conception-temps](https://msdn.microsoft.com/Library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)
+- [Étendre la prise en charge au moment du design](https://msdn.microsoft.com/Library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)

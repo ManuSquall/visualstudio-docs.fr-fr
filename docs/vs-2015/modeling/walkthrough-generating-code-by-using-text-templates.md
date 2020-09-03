@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 43b9d201a146538cd74e9528340845fd9fd92597
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918577"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>Procédure pas à pas : génération de code à l'aide de modèles de texte
@@ -86,7 +86,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
 
 ##### <a name="to-create-the-project"></a>Pour créer le projet
 
-1. Dans le menu **Fichier** , cliquez sur **Nouveau** , puis sur **Projet**.
+1. Dans le menu **fichier** , cliquez sur **nouveau** , puis sur **projet**.
 
 2. Cliquez sur le nœud **Visual C#** puis, dans le volet **Modèles** , cliquez sur **Application console**.
 
@@ -97,7 +97,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
 
 ##### <a name="to-add-an-xml-file"></a>Pour ajouter un fichier XML
 
-1. Dans l’ **Explorateur de solutions**, cliquez avec le bouton droit sur le projet, cliquez sur **Ajouter** , puis sur **Nouvel élément**.
+1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le projet, cliquez sur **Ajouter** , puis sur **nouvel élément**.
 
 2. Dans la boîte de dialogue **Ajouter un nouvel élément** , sélectionnez **Fichier XML** dans le volet **Modèles** .
 
@@ -105,7 +105,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
 
 4. Pour cette procédure pas à pas, nommez le fichier `exampleXml.xml`. Définissez le code XML fourni dans la section précédente comme contenu du fichier.
 
-   .
+   ..
 
 ### <a name="add-a-test-code-file"></a>Ajouter un fichier de code de test
  Ajoutez un fichier C# à votre projet et placez-y un exemple du code que vous souhaitez pouvoir écrire. Par exemple :
@@ -150,7 +150,7 @@ namespace MyProject
 
 4. Dans la directive de sortie, affectez « .cs » comme attribut d’extension, pour que le modèle génère un fichier C#. Dans un projet Visual Basic, vous choisiriez « .vb ».
 
-5. Enregistrez le fichier. À ce stade, le fichier de modèle de texte doit contenir ces lignes :
+5. Enregistrez le fichier . À ce stade, le fichier de modèle de texte doit contenir ces lignes :
 
    ```
    <#@ template debug="false" hostspecific="true" language="C#" #>
