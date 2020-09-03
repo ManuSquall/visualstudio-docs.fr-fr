@@ -13,16 +13,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 23a2f7f59ed3565a23d878858c55da4c4a7e4d85
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659286"
 ---
 # <a name="walkthrough-creating-a-custom-text-template-host"></a>Procédure pas à pas : création d'un hôte de modèle de texte personnalisé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Un<em>hôte</em> de modèle de texte fournit un environnement qui permet à l’exécution du *moteur de transformation de modèle de texte* . L'hôte est chargé de gérer l'interaction du moteur avec le système de fichiers. Le moteur ou le *processeur de directive* qui a besoin d’un fichier ou d’un assembly peut demander une ressource à l’hôte. L'hôte peut ensuite effectuer des recherches dans les répertoires et le Global Assembly Cache pour trouver la ressource demandée. Pour plus d’informations, consultez [processus de transformation de modèle de texte](../modeling/the-text-template-transformation-process.md).
+Un *text template*<em>hôte</em> de modèle de texte fournit un environnement qui permet à l’exécution du *moteur de transformation de modèle de texte* . L'hôte est chargé de gérer l'interaction du moteur avec le système de fichiers. Le moteur ou le *processeur de directive* qui a besoin d’un fichier ou d’un assembly peut demander une ressource à l’hôte. L'hôte peut ensuite effectuer des recherches dans les répertoires et le Global Assembly Cache pour trouver la ressource demandée. Pour plus d’informations, consultez [processus de transformation de modèle de texte](../modeling/the-text-template-transformation-process.md).
 
  Vous pouvez écrire un hôte personnalisé si vous souhaitez utiliser la fonctionnalité de *transformation de modèle de texte* en dehors de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ou si vous souhaitez intégrer cette fonctionnalité dans des outils personnalisés. Pour créer un hôte personnalisé, vous devez créer une classe qui hérite de [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). Pour obtenir la documentation des différentes méthodes, consultez [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)).
 
@@ -35,12 +35,12 @@ Un<em>hôte</em> de modèle de texte fournit un environnement qui permet à l’
 
 - Test de l'hôte personnalisé.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Prérequis
  Pour effectuer cette procédure pas à pas, vous devez disposer des éléments suivants :
 
 - Visual Studio 2010 ou version ultérieure
 
-- SDK Visual Studio
+- Kit de développement logiciel Visual Studio
 
 ## <a name="creating-a-custom-text-template-host"></a>Création d'un hôte de modèle de texte personnalisé
  Dans cette procédure pas à pas, vous allez créer un hôte personnalisé dans une application exécutable qui peut être appelée à partir de la ligne de commande. L’application accepte un fichier modèle de texte comme argument, lit le modèle, appelle le moteur pour transformer le modèle et affiche toutes les erreurs qui se produisent dans la fenêtre d’invite de commandes.
@@ -51,9 +51,9 @@ Un<em>hôte</em> de modèle de texte fournit un environnement qui permet à l’
 
 2. Ajoutez des références aux assemblys suivants :
 
-    - **Microsoft. VisualStudio. TextTemplating. \*.0**
+    - **Microsoft. VisualStudio. TextTemplating. \* . entre**
 
-    - **Microsoft. VisualStudio. TextTemplating. interfaces. 10.0 et versions ultérieures**
+    - **Microsoft.VisualStudio.TextTemplating.Interfaces.10.0 et versions ultérieures**
 
 3. Remplacez le code du fichier Program.cs ou Module1.vb par le code suivant :
 
@@ -716,16 +716,16 @@ Un<em>hôte</em> de modèle de texte fournit un environnement qui permet à l’
 
 4. Pour [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] uniquement, ouvrez le menu **projet** , puis cliquez sur **Propriétés de CustomHost**. Dans la liste **objet de démarrage** , cliquez sur **CustomHost. Program**.
 
-5. Dans le menu **Fichier**, cliquez sur **Enregistrer tout**.
+5. Dans le menu **Fichier** , cliquez sur **Enregistrer tout**.
 
-6. Dans le menu **Générer** , cliquez sur **Générer la solution**.
+6. Dans le menu **Générer**, cliquez sur **Générer la solution**.
 
 ## <a name="testing-the-custom-host"></a>Test de l'hôte personnalisé
  Pour tester l'hôte personnalisé, vous allez écrire un modèle de texte, puis exécuter l'hôte personnalisé, lui passer le nom du modèle de texte et vérifier que le modèle est transformé.
 
 #### <a name="to-create-a-text-template-to-test-the-custom-host"></a>Pour créer un modèle de texte pour tester l'hôte personnalisé
 
-1. Créez un fichier texte et nommez-le `TestTemplate.tt`.
+1. Créez un fichier texte et nommez-le `TestTemplate.tt` .
 
      Vous pouvez utiliser n'importe quel éditeur de texte (tel que le Bloc-notes) pour créer le fichier.
 
@@ -776,22 +776,22 @@ Un<em>hôte</em> de modèle de texte fournit un environnement qui permet à l’
 
 #### <a name="to-test-the-custom-host"></a>Pour tester l'hôte personnalisé
 
-1. Ouvrez la fenêtre Invite de commandes.
+1. Ouvrez la fenêtre d'invite de commandes.
 
 2. Tapez le chemin d’accès du fichier exécutable de l’hôte personnalisé, mais n’appuyez pas encore sur ENTRÉE.
 
-     Par exemple, tapez :
+     Par exemple, entrez :
 
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`
 
     > [!NOTE]
-    > Au lieu de taper l’adresse, vous pouvez accéder au fichier CustomHost. exe dans l' **Explorateur Windows** , puis faire glisser le fichier dans la fenêtre d’invite de commandes.
+    > Au lieu de taper l’adresse, vous pouvez accéder au fichier CustomHost.exe dans l' **Explorateur Windows** , puis faire glisser le fichier dans la fenêtre d’invite de commandes.
 
 3. Tapez un espace.
 
 4. Tapez le chemin d'accès du fichier modèle de texte, puis appuyez sur ENTRÉE.
 
-     Par exemple, tapez :
+     Par exemple, entrez :
 
      `C:\<YOUR PATH>TestTemplate.tt`
 

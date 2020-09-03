@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: ace5f9dd2781697525e7041be6cbd8df050bca97
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75586821"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Créer un contrôle utilisateur Windows Forms prenant en charge la liaison de données simples
@@ -35,11 +35,11 @@ Quand vous créez des contrôles à utiliser dans des scénarios de liaison de d
 |Implémentez <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> sur des contrôles, comme <xref:System.Windows.Forms.DataGridView>, qui affichent des listes (ou tables) de données. Pour plus d’informations, consultez [créer un Windows Forms contrôle utilisateur qui prend en charge la liaison de données complexe](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md).|
 |Implémentez l'objet <xref:System.ComponentModel.LookupBindingPropertiesAttribute> sur des contrôles, comme <xref:System.Windows.Forms.ComboBox>, qui affichent des listes (ou tables) de données, mais doivent également présenter une seule colonne ou propriété. Pour plus d’informations, consultez [créer un Windows Forms contrôle utilisateur qui prend en charge la liaison de données de recherche](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).|
 
-Cette procédure pas à pas crée un contrôle simple qui affiche les données d'une seule colonne dans une table. Cet exemple utilise la colonne `Phone` de la table `Customers` de l'exemple de base de données Northwind. Le contrôle utilisateur simple affiche les numéros de téléphone des clients dans un format de numéro de téléphone standard, à l’aide d’un <xref:System.Windows.Forms.MaskedTextBox> et en définissant le masque sur un numéro de téléphone.
+Cette procédure pas à pas crée un contrôle simple qui affiche les données d'une seule colonne dans une table. Cet exemple utilise la colonne `Phone` de la table `Customers` de l'exemple de base de données Northwind. Le contrôle utilisateur simple affiche les numéros de téléphone des clients dans un format de numéro de téléphone standard, en utilisant un <xref:System.Windows.Forms.MaskedTextBox> et en définissant le masque sur un numéro de téléphone.
 
 Pendant cette procédure pas à pas, vous allez apprendre à :
 
-- Créer une **application Windows Forms**.
+- Créez une **application de Windows Forms**.
 
 - Ajouter un nouveau **Contrôle utilisateur** à votre projet.
 
@@ -53,7 +53,7 @@ Pendant cette procédure pas à pas, vous allez apprendre à :
 
 - Créer un formulaire pour afficher des données dans le nouveau contrôle.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Prérequis
 
 Cette procédure pas à pas utilise SQL Server Express base de données locale et l’exemple de base de données Northwind.
 
@@ -77,7 +77,7 @@ La première étape consiste à créer une **Application Windows Forms**:
 
 1. Dans Visual Studio, dans le menu **Fichier**, sélectionnez **Nouveau** > **Projet**.
 
-2. Développez **Visual C#**  ou **Visual Basic** dans le volet gauche, puis sélectionnez **Bureau Windows**.
+2. Développez **Visual C#** ou **Visual Basic** dans le volet gauche, puis sélectionnez **Bureau Windows**.
 
 3. Dans le volet central, sélectionnez le type de projet d' **application Windows Forms** .
 
@@ -97,7 +97,7 @@ Cette procédure pas à pas crée un contrôle simple pouvant être lié aux don
 
 ## <a name="design-the-phonenumberbox-control"></a>Concevoir le contrôle PhoneNumberBox
 
-Cette procédure pas à pas se développe sur le <xref:System.Windows.Forms.MaskedTextBox> existant pour créer le contrôle **PhoneNumberBox** :
+Cette procédure pas à pas se développe sur le existant <xref:System.Windows.Forms.MaskedTextBox> pour créer le contrôle **PhoneNumberBox** :
 
 1. Faites glisser un <xref:System.Windows.Forms.MaskedTextBox> depuis la **Boîte à outils** vers l’aire de conception du contrôle utilisateur.
 
@@ -116,19 +116,19 @@ Pour des contrôles simples prenant en charge la liaison de données, implément
      [!code-csharp[VbRaddataDisplaying#3](../data-tools/codesnippet/CSharp/create-a-windows-forms-user-control-that-supports-simple-data-binding_1.cs)]
      [!code-vb[VbRaddataDisplaying#3](../data-tools/codesnippet/VisualBasic/create-a-windows-forms-user-control-that-supports-simple-data-binding_1.vb)]
 
-3. Dans le menu **Générer** , cliquez sur **Générer la solution**.
+3. Dans le menu **générer** , choisissez **générer la solution**.
 
 ## <a name="create-a-data-source-from-your-database"></a>Créer une source de données à partir de votre base de données
 
-Cette étape utilise l’Assistant **Configuration de source de données** pour créer une source de données basée sur la table `Customers` de l’exemple de base de données Northwind. Vous devez avoir accès à l'exemple de base de données Northwind pour créer la connexion. Pour plus d’informations sur la configuration de l’exemple de base de données Northwind, consultez [Comment : installer des exemples de bases de données](../data-tools/installing-database-systems-tools-and-samples.md).
+Cette étape utilise l’Assistant **configuration de source de données** pour créer une source de données basée sur la `Customers` table dans l’exemple de base de données Northwind. Vous devez avoir accès à l'exemple de base de données Northwind pour créer la connexion. Pour plus d’informations sur la configuration de l’exemple de base de données Northwind, consultez [Comment : installer des exemples de bases de données](../data-tools/installing-database-systems-tools-and-samples.md).
 
 1. Pour ouvrir la fenêtre **sources de données** , dans le menu **données** , cliquez sur Afficher les **sources de données**.
 
-2. Dans la fenêtre **Sources de données**, sélectionnez **Ajouter une nouvelle source de données** pour démarrer l’Assistant **Configuration de source de données**.
+2. Dans la fenêtre **sources de données** , sélectionnez Ajouter une **nouvelle source de données** pour démarrer l’Assistant Configuration de source de **données** .
 
 3. Dans la page **Choisir un type de source de données**, sélectionnez **Base de données**, puis cliquez sur **Suivant**.
 
-4. Dans la page **Choisir votre connexion de données**, effectuez l’une des opérations suivantes :
+4. Dans la page **choisir votre connexion de données** , effectuez l’une des opérations suivantes :
 
     - Si une connexion de données à l’exemple de base de données Northwind est disponible dans la liste déroulante, sélectionnez-la.
 
@@ -142,11 +142,11 @@ Cette étape utilise l’Assistant **Configuration de source de données** pour 
 
 8. Sélectionnez la table `Customers`, puis cliquez sur **Terminer**.
 
-     **NorthwindDataSet** est ajouté à votre projet et la table `Customers` apparaît dans la fenêtre **Sources de données**.
+     **NorthwindDataSet** est ajouté à votre projet et la `Customers` table s’affiche dans la fenêtre **sources de données** .
 
 ## <a name="set-the-phone-column-to-use-the-phonenumberbox-control"></a>Définir la colonne Phone pour qu’elle utilise le contrôle PhoneNumberBox
 
-Dans la fenêtre **Sources de données**, vous pouvez définir le contrôle à créer avant de faire glisser des éléments vers votre formulaire :
+Dans la fenêtre **sources de données** , vous pouvez définir le contrôle à créer avant de faire glisser des éléments dans votre formulaire :
 
 1. Ouvrez **Form1** dans le concepteur.
 
@@ -168,11 +168,11 @@ Pour créer des contrôles liés aux données sur le formulaire, faites glisser 
 
 Les contrôles liés aux données assortis d'étiquettes descriptives apparaissent dans le formulaire, ainsi qu'une barre d'outils (<xref:System.Windows.Forms.BindingNavigator>) pour parcourir les enregistrements. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource> et <xref:System.Windows.Forms.BindingNavigator> s’affichent dans la barre d’état des composants.
 
-## <a name="run-the-application"></a>Exécuter l'application
+## <a name="run-the-application"></a>Exécution de l'application
 
-Appuyez sur **F5** pour exécuter l’application.
+Appuyez sur **F5** pour exécuter l'application.
 
-## <a name="next-steps"></a>Étapes suivantes :
+## <a name="next-steps"></a>Étapes suivantes
 
 Selon les spécifications de votre application, vous pouvez exécuter différentes étapes après la création d'un contrôle prenant en charge la liaison de données. Les étapes ultérieures sont habituellement celles-ci :
 

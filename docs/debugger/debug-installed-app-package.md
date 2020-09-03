@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: eabc694665bede7d193a360a01c42366568e33c5
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350730"
 ---
 # <a name="debug-an-installed-uwp-app-package-in-visual-studio"></a>Déboguer un package d’application UWP installé dans Visual Studio
@@ -54,7 +54,7 @@ Pour plus d’informations sur le débogage des applications UWP, consultez les 
 > [!NOTE]
 > Vous pouvez également effectuer l’attachement à n’importe quel processus d’application UWP ou autre en sélectionnant **Déboguer**  >  **attacher au processus** dans Visual Studio. Vous n’avez pas besoin du projet Visual Studio d’origine à attacher à un processus en cours d’exécution, mais le chargement des symboles de l’application peut être utile lors du débogage d’un processus pour lequel vous n’avez pas le code d’origine. Consultez [spécifier les fichiers de symboles et sources dans le débogueur](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
-## <a name="debug-an-installed-uwp-app-on-a-remote-computer-or-device"></a><a name="remote"></a>Déboguer une application UWP installée sur un ordinateur ou un appareil distant
+## <a name="debug-an-installed-uwp-app-on-a-remote-computer-or-device"></a><a name="remote"></a> Déboguer une application UWP installée sur un ordinateur ou un appareil distant
 
 La première fois que Visual Studio débogue une application UWP installée sur un appareil Windows 10 ou un ordinateur Windows 10 mis à jour à distance, il installe les outils de débogage à distance sur l’appareil cible.
 

@@ -16,10 +16,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 418cc9f75842cb4f3e9d8c0c0753084e2f0633c2
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350808"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Résolution des problèmes d’installation et de mise à niveau de Visual Studio
@@ -120,9 +120,9 @@ Si aucune des étapes précédentes ne vous permet d’installer ou de mettre à
 
 Voici un tableau des problèmes connus et des solutions de contournement qui peuvent vous aider lors de la création d’une [installation hors connexion](create-an-offline-installation-of-visual-studio.md) , puis l’installation à partir d’une disposition locale.
 
-| Problème       | Article                   | Solution |
+| Problème       | Élément                   | Solution |
 | ----------- | ---------------------- | -------- |
-| Les utilisateurs n’ont pas accès aux fichiers. | autorisations (ACL) | Veillez à ajuster les autorisations (ACL) afin qu’elles accordent un accès en lecture à d’autres utilisateurs *avant* de partager l’installation hors connexion. |
+| Les utilisateurs n’ont pas accès aux fichiers. | autorisations (ACL) | Veillez à ajuster les autorisations (ACL) afin qu’elles accordent un accès en lecture à d’autres utilisateurs  *avant* de partager l’installation hors connexion. |
 | L’installation des nouvelles charges de travail, langues et des nouveaux composants a échoué.  | `--layout`  | Assurez-vous d’avoir un accès Internet si vous installez depuis une disposition partielle et sélectionnez des charges de travail, composants ou langues non téléchargés préalablement dans cette disposition partielle. |
 
 Pour plus d’informations sur la résolution des problèmes liés à une [installation réseau](create-a-network-installation-of-visual-studio.md), consultez [résoudre les erreurs liées au réseau lorsque vous installez ou utilisez Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md).

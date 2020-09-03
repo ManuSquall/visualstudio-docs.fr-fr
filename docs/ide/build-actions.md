@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 35136ac0b7b0104f1812df7a9bf8ba81f6907374
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "79301985"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89315107"
 ---
 # <a name="build-actions"></a>Actions de génération
 
@@ -36,7 +36,7 @@ Voici certaines des actions de génération les plus courantes pour les fichiers
 |-|-|
 | **AdditionalFiles** | C#, Visual Basic | Fichier texte non-source passé au compilateur C# ou Visual Basic en tant qu’entrée. Cette action de génération est principalement utilisée pour fournir des entrées aux [analyseurs](../code-quality/roslyn-analyzers-overview.md) qui sont référencés par un projet pour vérifier la qualité du code. Pour plus d’informations, consultez [Utiliser des fichiers supplémentaires](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Using%20Additional%20Files.md).|
 | **ApplicationDefinition** | WPF | Fichier qui définit votre application. Quand vous créez un projet pour la première fois, il s’agit de *App.xaml*. |
-| **CodeAnalysisDictionary** | .NET | Dictionnaire de mots personnalisés, utilisé par l’analyse du code pour la vérification orthographique. Voir [comment : Personnaliser le dictionnaire d’analyse de code](../code-quality/how-to-customize-the-code-analysis-dictionary.md)|
+| **CodeAnalysisDictionary** | .NET | Dictionnaire de mots personnalisés, utilisé par l’analyse du code pour la vérification orthographique. Consultez [Comment : personnaliser le dictionnaire d’analyse du code](../code-quality/how-to-customize-the-code-analysis-dictionary.md)|
 | **Compiler** | n'importe laquelle | Le fichier est passé comme fichier source au compilateur.|
 | **Contenu** | .NET | Un fichier marqué comme **Contenu** peut être récupéré sous la forme d’un flux par le biais d’un appel à <xref:System.Windows.Application.GetContentStream%2A?displayProperty=nameWithType>. Pour les projets ASP.NET, ces fichiers sont ajoutés pour faire partie du site au moment de son déploiement.|
 | **DesignData** | WPF | Utilisé pour les fichiers ViewModel XAML, pour permettre l’affichage des contrôles utilisateur au moment du design, avec des types factices et des exemples de données. |
@@ -45,10 +45,10 @@ Voici certaines des actions de génération les plus courantes pour les fichiers
 | **EntityDeploy** | .NET | Pour les fichiers .edmx Entity Framework (EF) qui spécifient le déploiement des artefacts EF. |
 | **Fakes** | .NET | Utilisé pour l’infrastructure de test Microsoft Fakes. Voir [Isoler du code testé avec Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) |
 | **Aucun** | n'importe laquelle | Le fichier ne fait pas du tout partie de la build. Cette valeur peut être utilisée pour les fichiers de documentation tels que les fichiers « Lisez-moi ».|
-| **Page** | WPF | Compilez un fichier XAML à un fichier binaire .baml pour un chargement plus rapide au moment de l’exécution. |
+| **Page** | WPF | Compilez un fichier XAML dans un fichier. BAML binaire pour accélérer le chargement au moment de l’exécution. |
 | **Ressource** | WPF | Spécifie que le fichier doit être incorporé dans un fichier de ressources de manifeste d’assembly avec l’extension *.g.resources*. |
-| **Ombre** | .NET | Utilisé pour un fichier .accessor qui contient une liste de noms de fichiers d’assembly générés, un par ligne. Pour chaque assembly de la liste, générez des classes publiques avec des noms `ClassName_Accessor` semblables aux originaux, mais avec des méthodes publiques au lieu de méthodes privées. Utilisé pour des tests unitaires. |
-| **Écran d’éclaboussure** | WPF | Spécifie un fichier d’image à afficher au moment de la mise en place de l’application. |
+| **Shadow** | .NET | Utilisé pour un fichier .accessor qui contient une liste de noms de fichiers d’assembly générés, un par ligne. Pour chaque assembly de la liste, générez des classes publiques avec des noms `ClassName_Accessor` semblables aux originaux, mais avec des méthodes publiques au lieu de méthodes privées. Utilisé pour des tests unitaires. |
+| **Écran de démarrage** | WPF | Spécifie un fichier image à afficher au moment de l’exécution lorsque l’application démarre. |
 | **XamlAppDef** | Windows Workflow Foundation | Indique à la build de générer un fichier XAML de workflow dans un assembly avec un flux de travail incorporé. |
 
 > [!NOTE]
@@ -56,6 +56,6 @@ Voici certaines des actions de génération les plus courantes pour les fichiers
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Options de compilateur C](/dotnet/csharp/language-reference/compiler-options/listed-alphabetically)
+- [Options du compilateur C#](/dotnet/csharp/language-reference/compiler-options/listed-alphabetically)
 - [Options du compilateur Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/compiler-options-listed-alphabetically)
 - [Actions de génération (Visual Studio pour Mac)](/visualstudio/mac/build-actions)

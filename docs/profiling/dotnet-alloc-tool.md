@@ -10,10 +10,10 @@ manager: AndSter
 ms.workload:
 - multiple
 ms.openlocfilehash: 81c15753b083256b97c9f67219b64565a8db8736
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88247799"
 ---
 # <a name="analyze-memory-usage-by-using-the-net-object-allocation-tool"></a>Analyser l’utilisation de la mémoire à l’aide de l’outil d’allocation d’objets .NET
@@ -22,7 +22,7 @@ Vous pouvez voir la quantité de mémoire utilisée par votre application et les
 
 Après avoir exécuté l’outil, vous pouvez voir les chemins d’exécution des fonctions où les objets sont alloués. Vous pouvez ensuite effectuer le suivi jusqu’à la racine de l’arborescence des appels qui occupe la plus grande partie de la mémoire.
 
-## <a name="setup"></a>Configuration
+## <a name="setup"></a>Installation
 
 1. Appuyez sur **ALT + F2** pour ouvrir le profileur de performances dans Visual Studio.
 
@@ -36,7 +36,7 @@ Après avoir exécuté l’outil, vous pouvez voir les chemins d’exécution de
 
    ![Fenêtre d’arrêt de la collecte](../profiling/media/stopcollectionlighttheme.png "Fenêtre d’arrêt de la collecte")
 
-1. Sélectionnez l’onglet **allocation** . le contenu de la fenêtre ressemble à la capture d’écran suivante.
+1. Sélectionnez l’onglet **allocation** . Le contenu de la fenêtre ressemble à la capture d’écran suivante.
 
    ![Onglet allocation](../profiling/media/allocationview.png "Onglet allocation")
 

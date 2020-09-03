@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d0560965858bd6d9ee823a6056332bdd9a7b654a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68146500"
 ---
 # <a name="idiaenumframedataframebyva"></a>IDiaEnumFrameData::frameByVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Retourne un cadre par adresse virtuelle (VA).  
+Retourne un frame par adresse virtuelle (VA).  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -36,13 +36,13 @@ HRESULT frameByVA( 
   
 #### <a name="parameters"></a>Paramètres  
  virtualAddress  
- [in] Évaluation des vulnérabilités de l’image qui vous intéresse.  
+ dans VA du cadre qui vous intéresse.  
   
  frame  
- [out] Retourne un [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) objet qui représente le frame qui contient l’adresse fournie.  
+ à Retourne un objet [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) qui représente le frame contenant l’adresse fournie.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si aucune donnée de frame correspond à l’adresse spécifiée. Sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si aucune donnée de frame ne correspond à l’adresse spécifiée. Sinon, retourne un code d'erreur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)   

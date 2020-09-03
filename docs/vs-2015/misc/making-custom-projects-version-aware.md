@@ -1,5 +1,5 @@
 ---
-title: Rendre les projets personnalisés prenant en charge les Version | Microsoft Docs
+title: Prise en charge des versions des projets personnalisés | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -8,10 +8,10 @@ ms.assetid: 5233d3ff-6e89-4401-b449-51b4686becca
 caps.latest.revision: 33
 manager: jillfra
 ms.openlocfilehash: 0b29728cffc962b5d09a5adc45f8cac2093b020a
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67825684"
 ---
 # <a name="making-custom-projects-version-aware"></a>Prise en charge des versions dans les projets personnalisés
@@ -24,17 +24,17 @@ Dans votre système de projet personnalisé, vous pouvez faire en sorte que les 
   
  En tant qu’auteur d’un système de projet, vous devez implémenter `UpgradeProject_CheckOnly` (à partir de l’interface `IVsProjectUpgradeViaFactory4` ) pour permettre aux utilisateurs de votre système de projet de vérifier les possibilités de mise à niveau. Quand les utilisateurs ouvrent un projet, cette méthode est appelée pour déterminer si un projet doit être réparé avant d’être chargé. Les conditions possibles de mise à niveau sont énumérées dans `VSPUVF_REPAIRFLAGS`; voici les différentes possibilités :  
   
-1. `SPUVF_PROJECT_NOREPAIR`: Aucune réparation n’est nécessaire.  
+1. `SPUVF_PROJECT_NOREPAIR` : aucune réparation n’est nécessaire.  
   
-2. `VSPUVF_PROJECT_SAFEREPAIR`: Rend le projet compatible avec une version antérieure sans les problèmes que vous pouvez être exposé avec les versions précédentes du produit.  
+2. `VSPUVF_PROJECT_SAFEREPAIR` : rend le projet compatible avec une version antérieure sans les problèmes auxquels vous auriez pu être exposé avec les versions précédentes du produit.  
   
-3. `VSPUVF_PROJECT_UNSAFEREPAIR`: Rend le projet rétrocompatible tout à certains des problèmes que vous auriez pu rencontrer avec les versions précédentes du produit. Par exemple, le projet ne sera pas compatible s’il dépend de différentes versions de Kit de développement logiciel (SDK).  
+3. `VSPUVF_PROJECT_UNSAFEREPAIR` : rend le projet rétrocompatible tout en vous exposant à certains problèmes que vous auriez pu rencontrer avec les versions précédentes du produit. Par exemple, le projet ne sera pas compatible s’il dépend de différentes versions de Kit de développement logiciel (SDK).  
   
-4. `VSPUVF_PROJECT_ONEWAYUPGRADE`: Rend le projet incompatible avec une version antérieure.  
+4. `VSPUVF_PROJECT_ONEWAYUPGRADE` : rend le projet incompatible avec une version antérieure.  
   
-5. `VSPUVF_PROJECT_INCOMPATIBLE`: Indique que la version actuelle ne prend en charge ce projet.  
+5. `VSPUVF_PROJECT_INCOMPATIBLE` : indique que la version actuelle ne prend pas en charge ce projet.  
   
-6. `VSPUVF_PROJECT_DEPRECATED`: Indique que ce projet n’est plus pris en charge.  
+6. `VSPUVF_PROJECT_DEPRECATED` : indique que ce projet n’est plus pris en charge.  
   
 > [!NOTE]
 > Pour éviter toute confusion, ne définissez pas plusieurs indicateurs de mise à niveau. Par exemple, ne créez pas un état de mise à niveau ambigu tel que `VSPUVF_PROJECT_SAFEREPAIR | VSPUVF_PROJECT_DEPRECATED`.  
@@ -49,7 +49,7 @@ Dans votre système de projet personnalisé, vous pouvez faire en sorte que les 
   
  Voici un exemple qui résume l’expérience utilisateur de la boîte de dialogue de compatibilité. Si un projet a été créé dans une version antérieure et que la version actuelle détermine qu’une mise à niveau est nécessaire, Visual Studio affiche une boîte de dialogue pour demander à l’utilisateur l’autorisation d’apporter les modifications. Si l’utilisateur accepte, le projet est modifié puis chargé. Si la solution est ensuite fermée et rouverte dans une version antérieure, le projet ayant fait l’objet d’une mise à niveau définitive devient incompatible et ne se charge pas. Si le projet nécessite seulement une réparation (et non une mise à niveau), le projet réparé continue de s’ouvrir dans les deux versions.  
   
-## <a name="BKMK_Incompat"></a> Marquage d’un projet comme étant Incompatible  
+## <a name="marking-a-project-as-incompatible"></a><a name="BKMK_Incompat"></a> Marquage d’un projet comme étant incompatible  
  Vous pouvez marquer un projet comme étant incompatible avec les versions antérieures de Visual Studio.  Par exemple, supposons que vous créez un projet qui utilise une fonctionnalité de .NET Framework 4.5. Comme ce projet ne peut pas être généré dans [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)], vous pouvez le marquer comme étant incompatibles pour empêcher cette version de le charger.  
   
  Le composant qui ajoute la fonctionnalité incompatible est chargé de marquer le projet comme étant incompatible. Le composant doit avoir accès à l’interface <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> qui représente les projets qui présentent un intérêt.  
@@ -133,7 +133,7 @@ IVsProjectUpgradeViaFactory::UpgradeProject_CheckOnly(
   
  Par exemple, si les méthodes `UpgradeProject_CheckOnly` et `CreateProject` qui sont écrites pour un système de projet [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] avec SP1 examinent un fichier projet et déterminent que la propriété de build `<MinimumVisualStudioVersion>` a la valeur « 11.0 », Visual Studio 2010 SP1 ne charge pas le projet. De plus, **Solution Navigator** indique que le projet est « incompatible » et ne le charge pas.  
   
-## <a name="BKMK_UpgradeLogger"></a> Le journal de mise à niveau  
+## <a name="the-upgrade-logger"></a><a name="BKMK_UpgradeLogger"></a> Enregistreur d’événements de mise à niveau  
  L’appel à `IVsProjectUpgradeViaFactory::UpgradeProject` contient un enregistreur d’événements `IVsUpgradeLogger` que les systèmes et versions de projet doivent utiliser pour fournir un suivi de mise à niveau détaillé à des fins de dépannage. Si un avertissement ou une erreur est consigné, Visual Studio affiche le rapport de mise à niveau.  
   
  Quand vous écrivez dans l’enregistreur d’événements de mise à niveau, tenez compte des indications suivantes :  

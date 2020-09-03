@@ -1,5 +1,5 @@
 ---
-title: 'Débogage d’applications web : Erreurs et dépannage | Microsoft Docs'
+title: 'Débogage d’applications Web : erreurs et résolution des problèmes | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -28,13 +28,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c452ad86fc5c09048ae1fae56630309e661ac78c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68141914"
 ---
-# <a name="debugging-web-applications-errors-and-troubleshooting"></a>Débogage d’applications web : erreurs et dépannage
+# <a name="debugging-web-applications-errors-and-troubleshooting"></a>Débogage d'applications Web : erreurs et dépannage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Les erreurs suivantes peuvent se produire lors d'une tentative de débogage d'applications Web.  
@@ -43,20 +43,20 @@ Les erreurs suivantes peuvent se produire lors d'une tentative de débogage d'ap
   
 - [Erreur : le site utilise l’adresse IP](../debugger/error-site-uses-ip-address.md)  
   
-- [Erreur : une vérification de la sécurité a échoué, car le service de l’administration IIS n’a pas répondu](../debugger/error-a-security-check-failed-because-the-iis-admin-service-did-not-respond.md)  
+- [Erreur : une vérification de la sécurité a échoué, car le service d’administration IIS n’a pas répondu](../debugger/error-a-security-check-failed-because-the-iis-admin-service-did-not-respond.md)  
   
 - [Erreur : ASP.NET n’est pas installé](../debugger/error-aspnet-not-installed.md)  
   
 - [Erreur : le débogage a échoué, car l’authentification Windows intégrée n’est pas activée](../debugger/error-debugging-failed-because-integrated-windows-authentication-is-not-enabled.md)  
   
-- [Erreur : le serveur web n’est pas configuré correctement](../debugger/error-the-web-server-is-not-configured-correctly.md)  
+- [Erreur : le serveur Web n'est pas configuré correctement](../debugger/error-the-web-server-is-not-configured-correctly.md)  
   
-- [Erreur : le serveur web est verrouillé et bloque l’exécution du verbe DEBUG](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)  
+- [Erreur : le serveur Web a été verrouillé et bloque le verbe de débogage](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)  
   
-- [Erreur : expiration du délai d’attente lors du débogage de services web](../debugger/error-timeout-while-debugging-web-services.md)  
+- [Erreur : Expiration du délai d’attente lors du débogage de services web](../debugger/error-timeout-while-debugging-web-services.md)  
   
-- [Erreur : impossible de démarrer le débogage sur le serveur web](../debugger/error-unable-to-start-debugging-on-the-web-server.md)  
+- [Erreur : impossible de démarrer le débogage sur le serveur Web](../debugger/error-unable-to-start-debugging-on-the-web-server.md)  
   
 ## <a name="see-also"></a>Voir aussi  
  [Sécurité du débogueur](../debugger/debugger-security.md)   
- [Débogage d’applications et de scripts web](../debugger/debugging-web-applications-and-script.md)
+ [Débogage d'applications et de scripts Web](../debugger/debugging-web-applications-and-script.md)

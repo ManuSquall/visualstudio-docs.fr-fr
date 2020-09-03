@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7dc591451b314d5ebac10d30cc89d9498d70f96b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72659270"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Procédure pas à pas : débogage d'un modèle de texte accédant à un modèle
@@ -46,7 +46,7 @@ Lorsque vous modifiez ou ajoutez des modèles de texte dans une solution de lang
 
 2. Ajoutez un fichier texte nommé `DebugTest.tt` au projet de débogage.
 
-3. Assurez-vous que la propriété **outil personnalisé** de DebugTest.TT est définie sur `TextTemplatingFileGenerator`.
+3. Assurez-vous que la propriété **outil personnalisé** de DebugTest.TT a la valeur `TextTemplatingFileGenerator` .
 
 ## <a name="debugging-directives-that-access-a-model-from-a-text-template"></a>Directives de débogage qui accèdent à un modèle à partir d’un modèle de texte
  Avant de pouvoir accéder à un modèle à partir des instructions et des expressions d’un modèle de texte, vous devez d’abord appeler un processeur de directive généré. L’appel du processeur de directive généré rend les classes de votre modèle disponibles pour le code de modèle de texte sous forme de propriétés. Pour plus d’informations, consultez [accès aux modèles à partir de modèles de texte](../modeling/accessing-models-from-text-templates.md).
@@ -97,11 +97,11 @@ Lorsque vous modifiez ou ajoutez des modèles de texte dans une solution de lang
 
      **Le processeur nommé « DebuggingTestLanguageDirectiveProcessor » ne prend pas en charge la directive nommée « modelRoot ». La transformation ne sera pas exécutée.**
 
-     Dans ce cas, l’appel de directive contient un nom de directive incorrect. Vous avez spécifié `modelRoot` comme nom de directive, mais le nom de directive correct est `DebuggingTestLanguage`.
+     Dans ce cas, l’appel de directive contient un nom de directive incorrect. Vous avez spécifié `modelRoot` comme nom de directive, mais le nom de directive correct est `DebuggingTestLanguage` .
 
 3. Double-cliquez sur l’erreur dans la fenêtre **liste d’erreurs** pour accéder au code.
 
-4. Pour corriger le code, remplacez le nom de la directive par `DebuggingTestLanguage`.
+4. Pour corriger le code, remplacez le nom de la directive par `DebuggingTestLanguage` .
 
      La modification est mise en surbrillance.
 
@@ -161,13 +161,13 @@ Lorsque vous modifiez ou ajoutez des modèles de texte dans une solution de lang
 
      (C#)
 
-     **Compilation de la transformation : Microsoft. VisualStudio. TextTemplating \<GUID >. GeneratedTextTransformation’ne contient pas de définition pour’ExampleModel'**
+     **Compilation de la transformation : Microsoft. VisualStudio. TextTemplating \<GUID> . GeneratedTextTransformation’ne contient pas de définition pour’ExampleModel'**
 
      (Visual Basic)
 
-     **Compilation de la transformation : 'ExampleModel’n’est pas un membre de’Microsoft. VisualStudio. TextTemplating \<GUID >. GeneratedTextTransformation'.**
+     **Compilation de la transformation : 'ExampleModel’n’est pas un membre de’Microsoft. VisualStudio. TextTemplating \<GUID> . GeneratedTextTransformation'.**
 
-     Dans ce cas, le code de modèle de texte contient un nom de propriété incorrect. Vous avez spécifié `ExampleModel` comme nom de propriété, mais le nom de propriété correct est `LibraryModel`. Vous pouvez trouver le nom de propriété correct dans le paramètre fournit, comme indiqué dans le code suivant :
+     Dans ce cas, le code de modèle de texte contient un nom de propriété incorrect. Vous avez spécifié `ExampleModel` en tant que nom de propriété, mais le nom de propriété correct est `LibraryModel` . Vous pouvez trouver le nom de propriété correct dans le paramètre fournit, comme indiqué dans le code suivant :
 
     ```
     <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=LibraryModel" #>

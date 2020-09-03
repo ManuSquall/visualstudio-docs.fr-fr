@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8bc5d08e8b0ae71acb846e1e863e24e8b8def0ee
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84183559"
 ---
 # <a name="debug-at-design-time-in-visual-studio-c-ccli-visual-basic-f"></a>Débogage au moment du design dans Visual Studio (C#, C++/CLI, Visual Basic, F #)
@@ -83,13 +83,13 @@ L’exemple suivant se trouve dans Visual Basic. Vous pouvez également utiliser
 
 1. Ouvrez la page XAML contenant le contrôle personnalisé que vous souhaitez déboguer.
 
-   Pour les projets UWP ciblant Windows Build 16299 ou version ultérieure, cette étape permet de démarrer le processus *UwpSurface. exe* . Pour les projets WPF ciblant Windows Build 16299 ou version ultérieure, cette étape démarre le processus *WpfSurface. exe* . Pour les versions WPF ou UWP antérieures à la version 16299 de Windows, cette étape va démarrer le processus *XDesProc. exe* . 
+   Pour les projets UWP ciblant Windows Build 16299 ou version ultérieure, cette étape permet de démarrer le processus de *UwpSurface.exe* . Pour les projets WPF ciblant Windows Build 16299 ou version ultérieure, cette étape permet de démarrer le processus de *WpfSurface.exe* . Pour les versions WPF ou UWP antérieures à la version 16299 de Windows, cette étape permet de démarrer le processus de *XDesProc.exe* . 
 
 1. Ouvrez une deuxième instance de Visual Studio. N’ouvrez pas une solution ou un projet dans la deuxième instance.
 
 1. Dans la deuxième instance de Visual Studio, ouvrez le menu **Déboguer** , puis choisissez **attacher au processus...**.
 
-1. Selon le type de votre projet (voir les étapes précédentes), sélectionnez le processus *UwpSurface. exe*, *WpfSurface. exe*ou *XDesProc. exe* dans la liste des processus disponibles.
+1. Selon le type de projet (voir les étapes précédentes), sélectionnez le *UwpSurface.exe*, *WpfSurface.exe*ou le processus *XDesProc.exe* dans la liste des processus disponibles.
 
 1. Dans le champ **attacher à** de la boîte de dialogue **attacher au processus** , choisissez le type de code approprié pour le contrôle personnalisé que vous souhaitez déboguer.
 

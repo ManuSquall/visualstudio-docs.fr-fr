@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext2::GetSourceRange ( Microsoft Docs
+title: 'IDebugDocumentContext2 :: GetSourceRange, | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 782cf230c38af77da09b49f69c093e2e95bf7199
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80731798"
 ---
 # <a name="idebugdocumentcontext2getsourcerange"></a>IDebugDocumentContext2::GetSourceRange
-Obtient la plage de code source de ce contexte de document.
+Obtient la plage de codes source de ce contexte de document.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -43,18 +43,18 @@ int GetSourceRange( 
 
 ## <a name="parameters"></a>Paramètres
 `pBegPosition`\
-[dans, dehors] Une structure [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) qui est remplie avec le poste de départ. Définissez cet argument à une valeur nulle si cette information n’est pas nécessaire.
+[in, out] Structure [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) qui est remplie avec la position de départ. Définissez cet argument sur une valeur null si cette information n’est pas nécessaire.
 
 `pEndPosition`\
-[dans, dehors] Une structure [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) qui est remplie avec la position de fin. Définissez cet argument à une valeur nulle si cette information n’est pas nécessaire.
+[in, out] Structure [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) qui est remplie avec la position de fin. Définissez cet argument sur une valeur null si cette information n’est pas nécessaire.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- Une plage source est toute la gamme de code source, de l’énoncé actuel à juste après la déclaration précédente qui a contribué au code. La plage source est généralement utilisée pour mélanger les relevés de source, y compris les commentaires, avec du code dans la fenêtre de démontage.
+ Une plage source est la plage entière du code source, de l’instruction actuelle jusqu’à juste après l’instruction précédente qui a contribué au code. La plage source est généralement utilisée pour mélanger des instructions sources, y compris des commentaires, avec du code dans la fenêtre Code machine.
 
- Pour obtenir la plage pour seulement les instructions de code contenues dans ce contexte de document, appelez la méthode [GetStatementRange.](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)
+ Pour obtenir la plage uniquement pour les instructions de code contenues dans ce contexte de document, appelez la méthode [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md) .
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

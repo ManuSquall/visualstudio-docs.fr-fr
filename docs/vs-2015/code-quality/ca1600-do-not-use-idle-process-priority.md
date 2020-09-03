@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 3f6233136dcf7f1db5d622a02419d33e0eedacf5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545676"
 ---
 # <a name="ca1600-do-not-use-idle-process-priority"></a>CA1600 : Ne pas utiliser de priorité de processus inactif
@@ -32,7 +32,7 @@ ms.locfileid: "85545676"
 |Category|Microsoft. Mobility|
 |Modification avec rupture|Rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Cette règle se produit lorsque les processus ont la valeur `ProcessPriorityClass.Idle` .
 
 ## <a name="rule-description"></a>Description de la règle

@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: aed37ee9cdd8c221fcfb114db426a6286ee8ad6f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72673116"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>Ajouter du code à des datasets dans des applications multiniveaux
@@ -28,13 +28,13 @@ Vous pouvez étendre les fonctionnalités d’un jeu de données en créant un f
 
 Le code qui définit un DataSet est généré chaque fois que des modifications sont apportées à la définition du jeu de données. Ce code est également généré lorsque vous apportez des modifications au cours de l’exécution d’un assistant qui modifie la configuration d’un jeu de données. Pour empêcher la suppression de votre code pendant la régénération d’un DataSet, ajoutez du code au fichier de classe partielle du DataSet.
 
-Par défaut, après avoir séparé le jeu de données et `TableAdapter` code, le résultat est un fichier de classe discret dans chaque projet. Le projet d’origine a un nom de fichier *NomGroupeDonnées*. Designer. vb (ou *NomGroupeDonnées*. Designer.cs) qui contient le code `TableAdapter`. Le projet désigné dans la propriété de **projet DataSet** a un fichier nommé *NomGroupeDonnées*. DataSet. Designer. vb (ou *NomGroupeDonnées*. DataSet.Designer.cs). Ce fichier contient le code du DataSet.
+Par défaut, après avoir séparé le jeu de données et le `TableAdapter` code, le résultat est un fichier de classe discret dans chaque projet. Le projet d’origine a un nom de fichier *NomGroupeDonnées*. Designer. vb (ou *NomGroupeDonnées*. Designer.cs) qui contient le `TableAdapter` code. Le projet désigné dans la propriété de **projet DataSet** a un fichier nommé *NomGroupeDonnées*. DataSet. Designer. vb (ou *NomGroupeDonnées*. DataSet.Designer.cs). Ce fichier contient le code du DataSet.
 
 > [!NOTE]
-> Lorsque vous séparez des DataSets et des `TableAdapter`s (en définissant la propriété **DataSet Project** ), les classes DataSet partielles existantes dans le projet ne sont pas déplacées automatiquement. Les classes partielles de DataSet existantes doivent être déplacées manuellement vers le projet de DataSet.
+> Lorsque vous séparez des DataSets et des `TableAdapter` s (en définissant la propriété **DataSet Project** ), les classes DataSet partielles existantes dans le projet ne sont pas déplacées automatiquement. Les classes partielles de DataSet existantes doivent être déplacées manuellement vers le projet de DataSet.
 
 > [!NOTE]
-> Quand le code de validation doit être ajouté, le concepteur de DataSet fournit des fonctionnalités permettant de générer des gestionnaires d’événements <xref:System.Data.DataTable.ColumnChanging> et <xref:System.Data.DataTable.RowChanging>. Pour plus d’informations, consultez [Ajouter une validation à un DataSet multicouche](../data-tools/add-validation-to-an-n-tier-dataset.md).
+> Quand le code de validation doit être ajouté, le concepteur de DataSet fournit des fonctionnalités pour générer des <xref:System.Data.DataTable.ColumnChanging> <xref:System.Data.DataTable.RowChanging> gestionnaires d’événements et. Pour plus d’informations, consultez [Ajouter une validation à un DataSet multicouche](../data-tools/add-validation-to-an-n-tier-dataset.md).
 
 ## <a name="add-code-to-datasets-in-n-tier-applications"></a>Ajouter du code à des datasets dans des applications multiniveaux
 
@@ -67,9 +67,9 @@ Par défaut, après avoir séparé le jeu de données et `TableAdapter` code, le
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Vue d’ensemble des applications de données multiniveaux](../data-tools/n-tier-data-applications-overview.md)
+- [Vue d’ensemble des applications de données multicouches](../data-tools/n-tier-data-applications-overview.md)
 - [Guide pratique pour ajouter du code aux TableAdapters dans des applications multiniveaux](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)
 - [TableAdapters](https://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)
-- [Vue d’ensemble de TableAdapterManager](https://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650)
+- [Vue d'ensemble de TableAdapterManager](https://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650)
 - [Vue d’ensemble de la mise à jour hiérarchique](https://msdn.microsoft.com/library/c4f8e8b9-e4a5-4a02-8462-d03d1e8222d6)
 - [Outils de dataset dans Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
