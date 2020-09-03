@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1c8dcf35e4c045db0d9acd45e2eb307a31ba39f1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671936"
 ---
 # <a name="open-file-command"></a>Ouvrir un fichier, commande
@@ -47,10 +47,10 @@ File.OpenFile filename [/e:editorname]
 /e:"Source Code (text) Editor"
 ```
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  La fonctionnalité de saisie semi-automatique tente de trouver le chemin et le nom de fichier correspondant aux caractères que vous tapez.
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
  Cet exemple ouvre la feuille de style « Test1.css » dans l’éditeur de code source.
 
 ```

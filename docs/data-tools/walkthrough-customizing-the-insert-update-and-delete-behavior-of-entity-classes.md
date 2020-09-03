@@ -12,17 +12,17 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 105519153e92e3944971f60ae2ff6151fa6a3fdf
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585949"
 ---
 # <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>Procédure pas à pas : personnaliser le comportement d’insertion, de mise à jour et de suppression de classes d’entité
 
 Les [outils de LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) fournissent une aire de conception visuelle pour créer et modifier des classes LINQ to SQL (classes d’entité) basées sur des objets dans une base de données. En utilisant [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index), vous pouvez utiliser la technologie LINQ pour accéder aux bases de données SQL. Pour plus d’informations, consultez [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/).
 
-Par défaut, la logique d’exécution des mises à jour est fournie par le runtime LINQ to SQL. Le runtime crée les instructions `Insert`, `Update`et `Delete` par défaut en fonction du schéma de la table (les définitions de colonne et les informations de clé primaire). Si vous ne souhaitez pas utiliser le comportement par défaut, vous pouvez configurer le comportement de mise à jour et désigner des procédures stockées spécifiques pour exécuter les insertions, mises à jour et suppressions nécessaires à la manipulation des données dans la base de données. Vous pouvez également le faire lorsque le comportement par défaut n'est pas généré, par exemple lorsque vos classes d'entité mappent aux vues. En outre, vous pouvez substituer le comportement de mise à jour par défaut lorsque la base de données nécessite un accès aux tables via des procédures stockées. Pour plus d’informations, consultez [Personnalisation des opérations à l’aide de procédures stockées](/dotnet/framework/data/adonet/sql/linq/customizing-operations-by-using-stored-procedures).
+Par défaut, la logique d’exécution des mises à jour est fournie par le runtime LINQ to SQL. Le runtime crée les `Insert` instructions par défaut, `Update` et `Delete` en fonction du schéma de la table (les définitions de colonne et les informations de clé primaire). Si vous ne souhaitez pas utiliser le comportement par défaut, vous pouvez configurer le comportement de mise à jour et désigner des procédures stockées spécifiques pour exécuter les insertions, mises à jour et suppressions nécessaires à la manipulation des données dans la base de données. Vous pouvez également le faire lorsque le comportement par défaut n'est pas généré, par exemple lorsque vos classes d'entité mappent aux vues. En outre, vous pouvez substituer le comportement de mise à jour par défaut lorsque la base de données nécessite un accès aux tables via des procédures stockées. Pour plus d’informations, consultez [Personnalisation des opérations à l’aide de procédures stockées](/dotnet/framework/data/adonet/sql/linq/customizing-operations-by-using-stored-procedures).
 
 > [!NOTE]
 > Cette procédure pas à pas nécessite les procédures stockées **InsertCustomer**, **UpdateCustomer** et **DeleteCustomer** pour la base de données Northwind.
@@ -33,19 +33,19 @@ Au cours de cette procédure pas à pas, vous allez apprendre à effectuer les t
 
 - Créer une application de Windows Forms et y ajouter un fichier LINQ to SQL.
 
-- Créez une classe d’entité mappée à la table Northwind `Customers`.
+- Créez une classe d’entité mappée à la table Northwind `Customers` .
 
-- Créez une source de données d’objet qui fait référence à la classe LINQ to SQL `Customer`.
+- Créez une source de données d’objet qui fait référence à la `Customer` classe LINQ to SQL.
 
-- Créez un Windows Form qui contient un <xref:System.Windows.Forms.DataGridView> lié à la classe `Customer`.
+- Créez un Windows Form qui contient un <xref:System.Windows.Forms.DataGridView> lié à la `Customer` classe.
 
 - Implémenter une fonctionnalité d'enregistrement pour le formulaire.
 
-- Créez <xref:System.Data.Linq.DataContext> méthodes en ajoutant des procédures stockées au **Concepteur O/R**.
+- Créez <xref:System.Data.Linq.DataContext> des méthodes en ajoutant des procédures stockées au **Concepteur O/R**.
 
-- Configurez la classe `Customer` pour utiliser des procédures stockées afin d’effectuer des insertions, des mises à jour et des suppressions.
+- Configurez la `Customer` classe pour utiliser des procédures stockées pour effectuer des insertions, des mises à jour et des suppressions.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Prérequis
 
 Cette procédure pas à pas utilise SQL Server Express base de données locale et l’exemple de base de données Northwind.
 
@@ -73,7 +73,7 @@ Cette procédure pas à pas utilise SQL Server Express base de données locale e
 
 1. Dans Visual Studio, dans le menu **Fichier**, sélectionnez **Nouveau** > **Projet**.
 
-2. Développez **Visual C#**  ou **Visual Basic** dans le volet gauche, puis sélectionnez **Bureau Windows**.
+2. Développez **Visual C#** ou **Visual Basic** dans le volet gauche, puis sélectionnez **Bureau Windows**.
 
 3. Dans le volet central, sélectionnez le type de projet d' **application Windows Forms** .
 
@@ -85,7 +85,7 @@ Cette procédure pas à pas utilise SQL Server Express base de données locale e
 
 5. Cliquez sur le modèle **Classes LINQ to SQL** et tapez **Northwind.dbml** dans la zone **Nom**.
 
-6. Cliquez sur **Ajouter**.
+6. Cliquez sur **Add**.
 
      Un fichier de classes de LINQ to SQL vide (**Northwind. dbml**) est ajouté au projet et le **Concepteur O/R** s’ouvre.
 
@@ -133,7 +133,7 @@ Créez des contrôles liés aux classes d’entité en faisant glisser LINQ to S
 
 3. Ouvrez **Form1** dans l’éditeur de code.
 
-4. Ajoutez le code suivant au formulaire, global au formulaire, en dehors de toute méthode spécifique, mais à l’intérieur de la classe `Form1` :
+4. Ajoutez le code suivant au formulaire, global au formulaire, en dehors de toute méthode spécifique, mais à l’intérieur de la `Form1` classe :
 
     ```vb
     Private NorthwindDataContext1 As New NorthwindDataContext
@@ -195,7 +195,7 @@ Par défaut, le bouton d'enregistrement n'est pas activé et la fonctionnalité 
 
 5. Dans la fenêtre **Propriétés**, sélectionnez la propriété **Insert**.
 
-6. Cliquez sur les points de suspension ( **...** ) en regard de l’option **Utiliser le runtime** pour ouvrir la boîte de dialogue **Configurer le comportement**.
+6. Cliquez sur les points de suspension (**...**) en regard de l’option **Utiliser le runtime** pour ouvrir la boîte de dialogue **Configurer le comportement**.
 
 7. Sélectionnez **Personnaliser**.
 
@@ -214,10 +214,10 @@ Par défaut, le bouton d'enregistrement n'est pas activé et la fonctionnalité 
 
      Inspectez la liste des **Arguments de méthode** et des **Propriétés de classe** ; remarquez qu’il y a deux **Arguments de méthode** et deux **Propriétés de classe** pour certaines colonnes de la table. Cela simplifie le suivi des modifications et la création des instructions qui vérifient les violations d'accès concurrentiel.
 
-13. Mappez l’argument de méthode **Original_CustomerID** à la propriété de classe **CustomerID (Original)** .
+13. Mappez l’argument de méthode **Original_CustomerID** à la propriété de classe **CustomerID (Original)**.
 
     > [!NOTE]
-    > Par défaut, les arguments de méthode sont mappés à des propriétés de classe lorsque les noms correspondent. Si les noms de propriété sont modifiés et ne correspondent plus entre la table et la classe d’entité, vous devrez peut-être sélectionner la propriété de classe équivalente à mapper si le **Concepteur O/R** ne peut pas déterminer le mappage correct. En outre, si les arguments de méthode n’ont pas de propriétés de classe valides à mapper, vous pouvez donner à **Propriétés de classe** la valeur **(Aucune)** .
+    > Par défaut, les arguments de méthode sont mappés à des propriétés de classe lorsque les noms correspondent. Si les noms de propriété sont modifiés et ne correspondent plus entre la table et la classe d’entité, vous devrez peut-être sélectionner la propriété de classe équivalente à mapper si le **Concepteur O/R** ne peut pas déterminer le mappage correct. En outre, si les arguments de méthode n’ont pas de propriétés de classe valides à mapper, vous pouvez donner à **Propriétés de classe** la valeur **(Aucune)**.
 
 14. Cliquez sur **Appliquer** pour enregistrer la configuration de la classe et du comportement sélectionnés.
 
@@ -227,14 +227,14 @@ Par défaut, le bouton d'enregistrement n'est pas activé et la fonctionnalité 
 
 17. Sélectionnez la méthode **DeleteCustomers** dans la liste **Personnaliser**.
 
-18. Mappez l’argument de méthode **Original_CustomerID** à la propriété de classe **CustomerID (Original)** .
+18. Mappez l’argument de méthode **Original_CustomerID** à la propriété de classe **CustomerID (Original)**.
 
 19. Cliquez sur **OK**.
 
 > [!NOTE]
-> Bien qu’il ne s’agisse pas d’un problème pour cette procédure pas à pas, il est intéressant de noter que LINQ to SQL gère automatiquement les valeurs générées par la base de données pour les colonnes Identity (incrémentation automatique), rowguidcol (GUID généré par la base de données) et timestamp pendant les insertions et mises à jour. Les valeurs générées par une base de données dans les autres types de colonne entraînent une valeur null de manière inopinée. Pour retourner les valeurs générées par la base de données, vous devez définir manuellement <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> sur `true` et <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> à l’un des éléments suivants : [AutoSync. Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>), [AutoSync. OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>)ou [AutoSync. OnUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>).
+> Bien qu’il ne s’agisse pas d’un problème pour cette procédure pas à pas, il est intéressant de noter que LINQ to SQL gère automatiquement les valeurs générées par la base de données pour les colonnes Identity (incrémentation automatique), rowguidcol (GUID généré par la base de données) et timestamp pendant les insertions et les mises à jour. Les valeurs générées par une base de données dans les autres types de colonne entraînent une valeur null de manière inopinée. Pour retourner les valeurs générées par la base de données, vous devez affecter manuellement <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> à `true` et <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> à l’un des éléments suivants : [AutoSync. Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>), [AutoSync. OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>)ou [AutoSync. OnUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>).
 
-## <a name="test-the-application"></a>Tester l'application
+## <a name="test-the-application"></a>Tester l’application
 
 Exécutez une nouvelle fois l’application pour vérifier que la procédure stockée **UpdateCustomers** met à jour correctement l’enregistrement Customer dans la base de données.
 
@@ -256,18 +256,18 @@ Exécutez une nouvelle fois l’application pour vérifier que la procédure sto
 
 9. Fermez le formulaire.
 
-10. Appuyez sur **F5** et vérifiez que l’enregistrement effacé a bien été supprimé de la base de données.
+10. Appuyez sur **F5** et vérifiez que l’enregistrement supprimé a été supprimé de la base de données.
 
     > [!NOTE]
     > Si votre application utilise SQL Server Express Edition, selon la valeur de la propriété **Copier dans le répertoire de sortie** du fichier de base de données, les modifications peuvent ne pas paraître quand vous appuyez sur **F5** à l’étape 10.
 
-## <a name="next-steps"></a>Étapes suivantes :
+## <a name="next-steps"></a>Étapes suivantes
 
 Selon les spécifications de votre application, vous pouvez effectuer plusieurs étapes après avoir créé LINQ to SQL classes d’entité. Vous pouvez apporter à cette procédure pas à pas les améliorations suivantes :
 
 - Implémenter la vérification des accès concurrentiels pendant les mises à jour. Pour plus d’informations, consultez [accès concurrentiel optimiste : vue d’ensemble](/dotnet/framework/data/adonet/sql/linq/optimistic-concurrency-overview).
 
-- Ajouter des requêtes LINQ pour filtrer des données. Pour plus d’informations, consultez [Introduction aux requêtesC#LINQ ()](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries).
+- Ajouter des requêtes LINQ pour filtrer des données. Pour plus d’informations, consultez [Introduction aux requêtes LINQ (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries).
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -1,5 +1,5 @@
 ---
-title: Déterminer le statut de commande en utilisant des assemblages Interop Microsoft Docs
+title: Détermination de l’état des commandes à l’aide d’assemblys d’interopérabilité | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,27 +12,27 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 52bea32997b083cd13349a37201411e357f94a90
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80708711"
 ---
-# <a name="determine-command-status-by-using-interop-assemblies"></a>Déterminer l’état de commande en utilisant des assemblages interop
-Un VSPackage doit garder une trace de l’état des commandes qu’il peut manipuler. L’environnement ne peut pas déterminer quand une commande manipulée dans votre VSPackage devient activée ou désactivée. Il est de la responsabilité de votre VSPackage d’informer l’environnement sur les états de commandement, par exemple, l’état des commandes générales telles que **Cut**, **Copy**, et **Pâte**.
+# <a name="determine-command-status-by-using-interop-assemblies"></a>Déterminer l’état de la commande à l’aide d’assemblys d’interopérabilité
+Un VSPackage doit effectuer le suivi de l’état des commandes qu’il peut gérer. L’environnement ne peut pas déterminer quand une commande gérée dans votre VSPackage est activée ou désactivée. Il incombe à votre VSPackage d’informer l’environnement sur les États de commande, par exemple l’état des commandes générales telles que **couper**, **copier**et **coller**.
 
-## <a name="status-notification-sources"></a>Sources de notification d’état
- L’environnement reçoit des informations sur les <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> commandes par le biais de la méthode VSPackages, qui fait partie de la mise en œuvre de l’interface par le <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> VSPackage. L’environnement <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> appelle la méthode du VSPackage dans deux conditions :
+## <a name="status-notification-sources"></a>Sources de notification d’État
+ L’environnement reçoit des informations sur les commandes via la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> méthode VSPackages, qui fait partie de l’implémentation de l’interface du VSPackage <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> . L’environnement appelle la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> méthode du VSPackage dans deux conditions :
 
-- Lorsqu’un utilisateur ouvre un menu principal ou un menu contextuelle <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> (en cliquant à droite), l’environnement exécute la méthode sur toutes les commandes de ce menu pour déterminer son état.
+- Quand un utilisateur ouvre un menu principal ou un menu contextuel (en cliquant avec le bouton droit), l’environnement exécute la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> méthode sur toutes les commandes de ce menu pour déterminer son état.
 
-- Lorsque le VSPackage demande que l’environnement met à jour l’interface utilisateur actuelle (interface utilisateur). Cette mise à jour se produit lorsque les commandes qui sont actuellement visibles pour l’utilisateur, telles que le **groupement Cut,** **Copy**et **Paste** sur la barre d’outils standard, deviennent activés et désactivés en réponse aux actions contextuelles et utilisateur.
+- Lorsque le VSPackage demande que l’environnement met à jour l’interface utilisateur actuelle. Cette mise à jour se produit lorsque des commandes qui sont actuellement visibles pour l’utilisateur, telles que **couper**, **copier**et **coller** le regroupement dans la barre d’outils standard, sont activées et désactivées en réponse à des actions de contexte et utilisateur.
 
-  Étant donné que la coquille accueille plusieurs VSPackages, la performance de la coquille se dégraderait de façon inacceptable si elle était nécessaire pour sonder chaque VSPackage pour déterminer l’état de commande. Au lieu de cela, votre VSPackage devrait informer activement l’environnement lorsque son interface utilisateur change au moment du changement. Pour plus d’informations sur la notification de mise à jour, voir [Mettre à jour l’interface utilisateur](../../extensibility/updating-the-user-interface.md).
+  Étant donné que l’interpréteur de commandes héberge plusieurs VSPackages, les performances de l’interpréteur de commandes se dégradent de façon inacceptable s’il était nécessaire d’interroger chaque VSPackage pour déterminer l’état de la commande. Au lieu de cela, votre VSPackage doit informer activement l’environnement quand son interface utilisateur change au moment de la modification. Pour plus d’informations sur la notification de mise à jour, consultez [mettre à jour l’interface utilisateur](../../extensibility/updating-the-user-interface.md).
 
-## <a name="status-notification-failure"></a>Échec de la notification d’état
- L’échec de votre VSPackage pour aviser l’environnement d’un changement d’état de commande peut placer l’interface utilisateur dans un état incohérent. N’oubliez pas que n’importe laquelle de vos commandes de menu ou de menu contextuelle peut être placée sur une barre d’outils par l’utilisateur. Par conséquent, la mise à jour de l’interface utilisateur seulement lorsqu’un menu ou un menu contextuelle s’ouvre ne suffit pas.
+## <a name="status-notification-failure"></a>Échec de la notification d’État
+ L’échec de votre VSPackage pour notifier l’environnement d’un changement d’état de la commande peut placer l’interface utilisateur dans un état incohérent. N’oubliez pas que les commandes de menu ou de menu contextuel peuvent être placées dans une barre d’outils par l’utilisateur. Par conséquent, la mise à jour de l’interface utilisateur uniquement lorsqu’un menu ou un menu contextuel s’ouvre ne suffit pas.
 
 ## <a name="see-also"></a>Voir aussi
-- [Comment VSPackages ajoute des éléments d’interface utilisateur](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Comment les VSPackages ajoutent des éléments d’interface utilisateur](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Implémentation](../../extensibility/internals/command-implementation.md)

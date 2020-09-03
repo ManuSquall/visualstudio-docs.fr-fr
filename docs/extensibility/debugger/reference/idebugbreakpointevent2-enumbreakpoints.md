@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointEvent2::EnumBreakpoints Microsoft Docs
+title: 'IDebugBreakpointEvent2 :: EnumBreakpoints | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 8744ec272fa121630e67f516ef1839c70b1a2d41
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735030"
 ---
 # <a name="idebugbreakpointevent2enumbreakpoints"></a>IDebugBreakpointEvent2::EnumBreakpoints
-Crée un enumérateur pour tous les points d’arrêt qui ont tiré à l’emplacement actuel du code.
+Crée un énumérateur pour tous les points d’arrêt qui ont été déclenchés à l’emplacement de code actuel.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,13 +41,13 @@ int EnumBreakpoints(
 
 ## <a name="parameters"></a>Paramètres
 `ppEnum`\
-[out] Retourne un objet [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) qui énumère tous les points d’arrêt associés à l’emplacement actuel du code.
+à Retourne un objet [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) qui énumère tous les points d’arrêt associés à l’emplacement de code actuel.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- Tous les points d’arrêt à un endroit donné ne peuvent pas tirer à un moment donné (par exemple, un point d’arrêt avec une condition ne sera pas incendie jusqu’à ce que cette condition est remplie).
+ Tous les points d’arrêt d’un emplacement particulier ne peuvent pas être activés à un moment donné (par exemple, un point d’arrêt avec une condition ne se déclenche pas tant que cette condition n’est pas remplie).
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)

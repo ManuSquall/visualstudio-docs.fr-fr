@@ -1,5 +1,5 @@
 ---
-title: Juste-à-temps, débogage, de boîte de dialogue Options | Microsoft Docs
+title: Juste-à-temps, débogage, boîte de dialogue Options | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -25,10 +25,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9b3bd6c6ee32145a94dbc4b751834ecc003f2bdf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68201105"
 ---
 # <a name="just-in-time-debugging-options-dialog-box"></a>Juste-à-temps, Débogage, boîte de dialogue Options
@@ -38,7 +38,7 @@ Pour accéder à la page **Juste-à-temps**, dans le menu **Outils**, cliquez su
   
  Vous pouvez activer le débogage juste-à-temps pour les types de programmes suivants :  
   
-- Managé  
+- Géré  
   
 - Natif  
   
@@ -59,8 +59,8 @@ Pour accéder à la page **Juste-à-temps**, dans le menu **Outils**, cliquez su
   
  En présence de l’un ou l’autre de ces avertissements, le débogage Juste-à-temps avec [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] nécessite des droits d’administrateur jusqu’à ce que vous ayez résolu le problème. Si vous essayez de poursuivre sans disposer de droits d'administrateur dans ces conditions, vous voyez s'afficher le message d'erreur suivant :  
   
- **Accès refusé. Faites activer le débogage juste-à-temps par un administrateur ou réparez votre installation de Visual Studio.**  
+ **L’accès est refusé. Demander à un administrateur d’activer le débogage juste-à-temps, ou de réparer votre installation de Visual Studio.**  
   
 ## <a name="see-also"></a>Voir aussi  
  [Débogage, boîte de dialogue Options](../debugger/debugging-options-dialog-box.md)   
- [Guide pratique : spécifier les paramètres du débogueur](../debugger/how-to-specify-debugger-settings.md)
+ [Comment : spécifier les paramètres du débogueur](../debugger/how-to-specify-debugger-settings.md)

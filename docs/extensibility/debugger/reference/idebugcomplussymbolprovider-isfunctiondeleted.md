@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::IsFunctionDeleted Microsoft Docs
+title: 'IDebugComPlusSymbolProvider :: IsFunctionDeleted | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d7dd8b5b86b6b8c89d11326b817f2718a3ee4ad3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733708"
 ---
 # <a name="idebugcomplussymbolproviderisfunctiondeleted"></a>IDebugComPlusSymbolProvider::IsFunctionDeleted
-Détermine que la fonction à l’adresse de débogé spécifiée est supprimée.
+Détermine que la fonction à l’adresse de débogage spécifiée est supprimée.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -39,13 +39,13 @@ int IsFunctionDeleted(
 
 ## <a name="parameters"></a>Paramètres
 `pAddress`\
-[dans] L’adresse de débogé représenté par une interface [IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md) Cette adresse doit être un METHOD_ADDRESS.
+dans Adresse de débogage représentée par une interface [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) . Cette adresse doit être un METHOD_ADDRESS.
 
-## <a name="return-value"></a>Valeur de retour
-Si la fonction est `S_OK`supprimée, renvoie . Si la fonction existe, `S_FALSE`retourne .
+## <a name="return-value"></a>Valeur renvoyée
+Si la fonction est supprimée, retourne `S_OK` . Si la fonction existe, retourne `S_FALSE` .
 
 ## <a name="example"></a>Exemple
-L’exemple suivant montre comment implémenter cette méthode pour un objet **CDebugSymbolProvider** qui expose [l’interface IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+L’exemple suivant montre comment implémenter cette méthode pour un objet **CDebugSymbolProvider** qui expose l’interface [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) .
 
 ```cpp
 HRESULT CDebugSymbolProvider::IsFunctionDeleted(

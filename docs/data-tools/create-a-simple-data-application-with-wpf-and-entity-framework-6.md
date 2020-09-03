@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 4aa978098c459d9e55ef0dc1423080357e067a5b
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282759"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Créer une application de données simple avec WPF et Entity Framework 6
@@ -423,7 +423,7 @@ Ajoutez ces méthodes de gestionnaire à la classe MainWindow dans *MainWindow.X
 
 [!code-csharp[CommandHandlers#3](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#3)]
 
-## <a name="run-the-application"></a>Exécuter l’application
+## <a name="run-the-application"></a>Exécution de l'application
 
 Pour démarrer le débogage, appuyez sur **F5**. Vous devez voir les données de client et de commande renseignées dans la grille, et les boutons de navigation devraient fonctionner comme prévu. Cliquez sur **valider** pour ajouter un nouveau client ou une commande au modèle une fois que vous avez entré les données. Cliquez sur **Annuler** pour revenir en arrière d’un nouveau formulaire de client ou de commande sans enregistrer les données. Vous pouvez apporter des modifications aux clients et aux commandes existants directement dans les zones de texte, et ces modifications sont écrites automatiquement dans le modèle.
 

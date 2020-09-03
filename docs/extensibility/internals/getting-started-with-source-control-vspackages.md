@@ -1,5 +1,5 @@
 ---
-title: Démarrer avec source Control VSPackages (fr) Microsoft Docs
+title: Prise en main avec les VSPackages de contrôle de code source | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,28 +12,28 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 69245d9a5c4fb8b27e66b5f1860063756cd46520
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80708327"
 ---
-# <a name="get-started-with-source-control-vspackages"></a>Démarrer avec le contrôle source VSPackages
+# <a name="get-started-with-source-control-vspackages"></a>Prise en main des VSPackages de contrôle de code source
 
-Un VSPackage de contrôle des sources est une alternative plus avancée au plug-in de contrôle source. Pour plus d’informations sur les plug-ins de contrôle des sources, voir [Créer un plug-in de contrôle source](../../extensibility/internals/creating-a-source-control-plug-in.md). Un VSPackage à contrôle source permet un contrôle complet sur le modèle de contrôle source, les fonctionnalités et l’interface utilisateur (interface utilisateur), et il s’intègre dans l’environnement [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] comme un VSPackage.
+Un VSPackage de contrôle de code source est une alternative plus avancée au plug-in de contrôle de code source. Pour plus d’informations sur les plug-ins de contrôle de code source, consultez [créer un plug-in de contrôle de code source](../../extensibility/internals/creating-a-source-control-plug-in.md). Un VSPackage de contrôle de code source permet un contrôle total sur le modèle de contrôle de code source, les fonctionnalités et l’interface utilisateur, et il s’intègre à l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] environnement en tant que VSPackage.
 
 ## <a name="in-this-section"></a>Contenu de cette section
 
-[Déterminer s’il faut mettre en œuvre un contrôle source VSPackage](../../extensibility/internals/determining-whether-to-implement-a-source-control-vspackage.md)
+[Déterminer si un VSPackage de contrôle de code source doit être implémenté](../../extensibility/internals/determining-whether-to-implement-a-source-control-vspackage.md)
 
-Explique les choix de solutions de contrôle des sources et fournit des lignes directrices générales pour choisir une voie d’intégration appropriée.
+Explique les choix pour les solutions de contrôle de code source et fournit des instructions générales pour choisir un chemin d’intégration approprié.
 
 ## <a name="related-sections"></a>Sections connexes
 
-- [Quoi de neuf dans le contrôle des sources](../../extensibility/internals/what-s-new-in-source-control.md)
+- [Nouveautés du contrôle de code source](../../extensibility/internals/what-s-new-in-source-control.md)
 
-   Décrit les nouvelles fonctionnalités à l’aide de VSPackages avec contrôle source.
+   Décrit les nouvelles fonctionnalités qui utilisent des VSPackages avec le contrôle de code source.
 
-- [Créer un contrôle source VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)
+- [Créer un VSPackage de contrôle de code source](../../extensibility/internals/creating-a-source-control-vspackage.md)
 
-   Discute de la façon de créer un contrôle source VSPackage qui non [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] seulement fournit la fonctionnalité de contrôle des sources, mais peut être utilisé pour personnaliser l’interface utilisateur de contrôle source.
+   Explique comment créer un VSPackage de contrôle de code source qui fournit non seulement une fonctionnalité de contrôle de code source, mais qui peut être utilisé pour personnaliser l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interface utilisateur du contrôle de code source.

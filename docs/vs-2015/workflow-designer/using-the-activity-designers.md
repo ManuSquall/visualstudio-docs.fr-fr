@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1595be559f28868d0d749f6b163a63d98a9a6e45
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670138"
 ---
 # <a name="using-the-activity-designers"></a>Utilisation des concepteurs d'activités
@@ -41,14 +41,14 @@ ms.locfileid: "72670138"
 
  [Gestion des erreurs](../workflow-designer/error-handling-activity-designers.md) Concepteurs d’activités utilisés pour gérer les activités de gestion des erreurs.
 
- [Migration](../workflow-designer/migration-activity-designers.md) Les concepteurs d’activités utilisés pour interagir entre [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] / des flux de travail [!INCLUDE[netfx35_short](../includes/netfx35-short-md.md)] et [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)].
+ [Migration](../workflow-designer/migration-activity-designers.md) Concepteurs d’activités utilisés pour interagir entre [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] / [!INCLUDE[netfx35_short](../includes/netfx35-short-md.md)] et les [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] flux de travail.
 
-## <a name="reference"></a>Reference
+## <a name="reference"></a>Informations de référence
  <xref:System.Activities.Presentation.Toolbox.ToolboxCategory>
 
-## <a name="related-sections"></a>Rubriques connexes
+## <a name="related-sections"></a>Sections connexes
  [Utilisation du Concepteur de flux de travail](../workflow-designer/using-the-workflow-designer.md)
 
- [Débogage de flux de travail à l’aide du Concepteur de flux de travail](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)
+ [Débogage de workflows avec Workflow Designer](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)
 
- [Aide sur l’interface utilisateur du Concepteur de flux de travail](../workflow-designer/workflow-designer-ui-help.md)
+ [Aide sur l'interface utilisateur de Workflow Designer](../workflow-designer/workflow-designer-ui-help.md)

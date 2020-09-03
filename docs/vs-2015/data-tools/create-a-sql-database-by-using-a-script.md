@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3bef7c4be2f38d0f50b2a13c7745cb212204769b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670089"
 ---
 # <a name="create-a-sql-database-by-using-a-script"></a>Créer une base de données SQL à l’aide d’un script
@@ -34,16 +34,16 @@ Dans cette procédure pas à pas, vous utilisez Visual Studio pour créer une pe
 
 - [Déployer la base de données](../data-tools/create-a-sql-database-by-using-a-script.md#DeployDatabase)
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Prérequis
  Pour effectuer cette procédure pas à pas, vous devez disposer de SQL Server Express base de données locale ou d’une autre base de données SQL installée.
 
-## <a name="CreateScript"></a>Créer un script qui contient un schéma de base de données
+## <a name="create-a-script-that-contains-a-database-schema"></a><a name="CreateScript"></a> Créer un script qui contient un schéma de base de données
 
 #### <a name="to-create-a-script-from-which-you-can-import-a-schema"></a>Pour créer un script à partir duquel vous pouvez importer un schéma
 
-1. Dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], dans la barre de menus, sélectionnez **fichier**  > **nouveau**  > **fichier**.
+1. Dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , dans la barre de menus, sélectionnez **fichier**  >  **nouveau**  >  **fichier**.
 
-     La boîte **de dialogue nouveau fichier** s’affiche.
+     La boîte de dialogue **Nouveau fichier** s'affiche.
 
 2. Dans la liste **catégories** , sélectionnez **général**.
 
@@ -213,42 +213,42 @@ Dans cette procédure pas à pas, vous utilisez Visual Studio pour créer une pe
     GO
     ```
 
-5. Dans la barre de menus, sélectionnez **fichier**  > **Enregistrer SqlQuery_1. SQL sous**.
+5. Dans la barre de menus, sélectionnez **fichier**  >  **Enregistrer SqlQuery_1. SQL sous**.
 
      La boîte de dialogue **enregistrer le fichier sous** s’affiche.
 
-6. Dans la zone **nom de fichier** , entrez `SampleImportScript.sql`, notez l’emplacement où vous allez enregistrer le fichier, puis sélectionnez le bouton **Enregistrer** .
+6. Dans la zone **nom de fichier** , entrez `SampleImportScript.sql` , notez l’emplacement où vous allez enregistrer le fichier, puis sélectionnez le bouton **Enregistrer** .
 
-7. Dans la barre de menus, sélectionnez **fichier**  > **Fermer la solution**.
+7. Dans la barre de menus, sélectionnez **fichier**  >  **Fermer la solution**.
 
      Ensuite, créez un projet de base de données, puis importez le schéma à partir du script que vous avez créé.
 
-## <a name="CreateProject"></a>Créer un projet de base de données et importer un schéma
+## <a name="create-a-database-project-and-import-a-schema"></a><a name="CreateProject"></a> Créer un projet de base de données et importer un schéma
 
 #### <a name="to-create-a-database-project"></a>Pour créer un projet de base de données
 
-1. Dans la barre de menus, sélectionnez **Fichier** > **Nouveau** > **Projet**.
+1. Dans la barre de menus, sélectionnez **fichier**  >  **nouveau**  >  **projet**.
 
-     La boîte de dialogue **Nouveau projet** s’affiche.
+     La boîte de dialogue **Nouveau projet** apparaît.
 
 2. Sous **installé**, développez le nœud **modèles** , développez le nœud **autres langages** , sélectionnez la catégorie **SQL Server** , puis sélectionnez le modèle **de projet de base de données SQL Server** .
 
     > [!NOTE]
     > Le nœud **autres langages** n’apparaît pas dans toutes les installations de Visual Studio.
 
-3. Dans la zone **nom** , entrez `Small Database`.
+3. Dans la zone **nom** , entrez `Small Database` .
 
 4. Activez la case à cocher **créer le répertoire pour la solution** si elle n’est pas déjà sélectionnée.
 
 5. Désactivez la case à cocher **Ajouter au contrôle de code source** si elle n’est pas déjà désactivée, puis sélectionnez le bouton **OK** .
 
-     Le projet de base de données est créé et s’affiche dans **Explorateur de solutions**.
+     Le projet de base de données est créé et s'affiche dans l' **Explorateur de solutions**.
 
      Ensuite, importez le schéma de base de données à partir du script.
 
-#### <a name="to-import-a-database-schema-from-a-script"></a>Pour importer un schéma de base de données à partir d’un script
+#### <a name="to-import-a-database-schema-from-a-script"></a>Pour importer un schéma de la base de données d'un script
 
-1. Dans la barre de menus, sélectionnez **projet**  > **Importer**  > **script**.
+1. Dans la barre de menus, **Project**sélectionnez script d'  >  **importation**de projet  >  **Script**.
 
 2. Dans la page **Bienvenue** , examinez le texte, puis sélectionnez le bouton **suivant** .
 
@@ -270,5 +270,5 @@ Dans cette procédure pas à pas, vous utilisez Visual Studio pour créer une pe
 
      À ce stade, la base de données contient uniquement des objets système, tels que des tables et des procédures stockées. Une fois la base de données déployée, elle contient les tables utilisateur et les procédures stockées que les scripts définissent.
 
-## <a name="DeployDatabase"></a>Déployer la base de données
+## <a name="deploy-the-database"></a><a name="DeployDatabase"></a> Déployer la base de données
  Lorsque vous appuyez sur la touche **F5** , vous déployez (ou publiez) la base de données dans une base de données de base de données locale par défaut. Vous pouvez déployer la base de données à un autre emplacement en ouvrant la page de propriétés du projet, en sélectionnant l’onglet **Déboguer** , puis en modifiant la chaîne de connexion.

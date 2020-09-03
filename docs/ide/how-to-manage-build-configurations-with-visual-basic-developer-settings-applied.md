@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8593f32b31dc70be08c777e86ae404da0578c48d
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284228"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Guide pratique pour gérer des configurations de build en appliquant les paramètres du développeur Visual Basic
@@ -45,5 +45,5 @@ Par défaut, les paramètres de développeur Visual Basic masquent l’option pe
 ## <a name="see-also"></a>Voir aussi
 
 - [Présentation des configurations de build](../ide/understanding-build-configurations.md)
-- [Compilation et génération](../ide/compiling-and-building-in-visual-studio.md)
+- [Compiler et générer](../ide/compiling-and-building-in-visual-studio.md)
 - [Paramètres d'environnement](../ide/environment-settings.md)

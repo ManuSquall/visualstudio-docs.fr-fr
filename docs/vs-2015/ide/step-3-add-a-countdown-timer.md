@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bae5b4a81864cc591491c21218a5d8253dfc61bb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671843"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>Étape 3 : ajouter un temporisateur
@@ -33,7 +33,7 @@ Dans la troisième partie de ce didacticiel, vous allez ajouter un temporisateur
 
      À présent, vous avez besoin d'une méthode qui compte réellement les secondes, telles qu'une minuterie, et qui déclenche un événement après la durée que vous spécifiez.
 
-2. Dans la fenêtre de conception, déplacez un contrôle `Timer` de la catégorie **Composants** qui figure dans la boîte à outils vers votre formulaire.
+2. Dans la fenêtre de conception, déplacez un contrôle `Timer` de la catégorie **Composants** de la boîte à outils vers votre formulaire.
 
      Le contrôle apparaît dans la zone grise en bas de la fenêtre de conception.
 
@@ -106,6 +106,6 @@ Dans la troisième partie de ce didacticiel, vous allez ajouter un temporisateur
 
 ### <a name="to-continue-or-review"></a>Pour continuer ou examiner
 
-- Pour passer à l’étape suivante du didacticiel, consultez [Étape 4 : ajouter la méthode CheckTheAnswer()](../ide/step-4-add-the-checktheanswer-parens-method.md).
+- Pour passer à l’étape suivante du didacticiel, consultez [étape 4 : ajouter la méthode méthode CheckTheAnswer ()](../ide/step-4-add-the-checktheanswer-parens-method.md).
 
-- Pour revenir à l’étape précédente du didacticiel, consultez [Étape 2 : créer un problème d’addition aléatoire](../ide/step-2-create-a-random-addition-problem.md).
+- Pour revenir à l’étape précédente du didacticiel, consultez [étape 2 : créer un problème d’addition aléatoire](../ide/step-2-create-a-random-addition-problem.md).

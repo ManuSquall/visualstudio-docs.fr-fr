@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: dae99166b8b811df75f2e2777d176e6778b60c7d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670146"
 ---
 # <a name="type-collection-editor-dialog-box"></a>Boîte de dialogue Éditeur de collections de types
@@ -26,9 +26,9 @@ La boîte de dialogue **éditeur de collections de types** permet d’ajouter de
 
  Le tableau suivant décrit les éléments d’interface utilisateur de la boîte de dialogue **type de collection** .
 
-|Élément d'interface utilisateur|Description|
+|Élément de l’interface utilisateur|Description|
 |----------------|-----------------|
-|**Liste de types**|Liste des types qui ont été ajoutés ou supprimés.|
+|**Type List**|Liste des types qui ont été ajoutés ou supprimés.|
 
 ## <a name="to-bring-up-the-type-collection-editor"></a>Pour afficher l’Éditeur de collections de types
 

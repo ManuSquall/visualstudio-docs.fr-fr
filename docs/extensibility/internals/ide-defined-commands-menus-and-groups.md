@@ -1,5 +1,5 @@
 ---
-title: Commandes, menus et groupes définis par l’IDE Microsoft Docs
+title: Commandes, menus et groupes définis par l’IDE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,40 +13,40 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6557f49b019a6793698dabe852919ec2e9f28cfd
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80707715"
 ---
 # <a name="ide-defined-commands-menus-and-groups"></a>Commandes, menus et groupes définis par l’IDE
-De nombreux menus, commandes et groupes de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] commandement sont déjà définis pour être utilisés par l’IDE. Ces commandes sont également disponibles pour [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]votre utilisation lorsque vous prolongez .
+De nombreux menus, commandes et groupes de commandes sont déjà définis pour être utilisés par l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE. Ces commandes sont également disponibles pour votre utilisation lorsque vous étendez [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
-## <a name="finding-environment-defined-commands"></a>Trouver des commandes définies par l’environnement
- Les commandes d’environnement sont définies dans un ensemble de quatre fichiers .vsct :
+## <a name="finding-environment-defined-commands"></a>Recherche de commandes définies par l’environnement
+ Les commandes d’environnement sont définies dans un ensemble de quatre fichiers. vsct :
 
-- SharedCmdDef.vsct
+- SharedCmdDef. vsct
 
-- SharedCmdPlace.vsct
+- SharedCmdPlace. vsct
 
-- ShellCmdDef.vsct
+- ShellCmdDef. vsct
 
-- ShellCmdPlace.vsct
+- ShellCmdPlace. vsct
 
-  Ces fichiers sont situés dans\\ * \<Visual Studio SDK chemin d’installation>*'VisualStudioIntegration’Common 'Inc . Ces fichiers fournissent les définitions et les GUID des menus et des groupes que vous pouvez utiliser dans le fichier de configuration de tableau de commande (.vsct) de votre VSPackage comme conteneurs pour vos propres menus, groupes et commandes.
+  Ces fichiers se trouvent dans *\<Visual Studio SDK installation path>* \VisualStudioIntegration\Common\Inc \\ . Ces fichiers fournissent les définitions et les GUID des menus et des groupes que vous pouvez utiliser dans le fichier de configuration de la table de commandes (. vsct) de votre VSPackage en tant que conteneurs pour vos propres menus, groupes et commandes.
 
 ## <a name="in-this-section"></a>Dans cette section
 - [GUID et ID des menus Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)
 
- Donne les valeurs GUID et ID des menus sur le menu Visual Studio bar, et des groupes qu’ils contiennent.
+ Fournit les valeurs GUID et ID des menus dans la barre de menus de Visual Studio, ainsi que des groupes qu’ils contiennent.
 
 - [GUID et ID des barres d’outils Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)
 
- Donne les valeurs GUID et ID des barres d’outils dans l’IDE Visual Studio, et des groupes qu’ils contiennent.
+ Fournit les valeurs GUID et ID des barres d’outils dans l’IDE de Visual Studio et des groupes qu’ils contiennent.
 
 - [GUID et ID des commandes Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md)
 
- Donne les valeurs GUID et ID des commandes définies par l’IDE Visual Studio.
+ Fournit les valeurs GUID et ID des commandes définies par l’IDE de Visual Studio.
 
 ## <a name="see-also"></a>Voir aussi
 - [Fichiers Visual Studio Command Table (.Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

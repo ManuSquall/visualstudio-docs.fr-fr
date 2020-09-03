@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 3ad960054e0c2dfe6470c51adbd9f3675fc87952
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85282915"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Lier des contrôles WPF à un dataset
@@ -230,7 +230,7 @@ Ajoutez du code permettant aux utilisateurs d’enregistrer les modifications ap
     > [!NOTE]
     > Cet exemple utilise la méthode `Save` de `TableAdapter` pour enregistrer les modifications. Cela nous convient dans cette procédure pas à pas, car une seule table de données est modifiée. Si vous devez enregistrer des modifications dans plusieurs tables de données, utilisez plutôt la méthode `UpdateAll` de `TableAdapterManager` générée par Visual Studio avec votre dataset. Pour plus d’informations, consultez [TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
-## <a name="test-the-application"></a>Test de l’application
+## <a name="test-the-application"></a>Tester l’application
 
 Générez et exécutez l’application. Vérifiez que vous pouvez afficher et mettre à jour les enregistrements produit.
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugCodeContext2::GetLanguageInfo ( Microsoft Docs
+title: 'IDebugCodeContext2 :: GetLanguageInfo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 465cc07b3ca75835afe0737fb22ba403acc4098b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734245"
 ---
 # <a name="idebugcodecontext2getlanguageinfo"></a>IDebugCodeContext2::GetLanguageInfo
-Obtient les informations linguistiques pour ce contexte de code.
+Obtient les informations de langage pour ce contexte de code.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -43,16 +43,16 @@ int GetLanguageInfo( 
 
 ## <a name="parameters"></a>Paramètres
 `pbstrLanguage`\
-[dans, dehors] Retourne une chaîne qui contient le nom de la langue, comme « C ».
+[in, out] Retourne une chaîne qui contient le nom du langage, tel que « C++ ».
 
 `pguidLanguage`\
-[dans, dehors] Retourne le GUID pour la langue du `guidCPPLang`contexte du code, par exemple, .
+[in, out] Retourne le GUID de la langue du contexte de code, par exemple, `guidCPPLang` .
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- Au moins un des paramètres doit retourner une valeur non nulle.
+ Au moins un des paramètres doit retourner une valeur non null.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

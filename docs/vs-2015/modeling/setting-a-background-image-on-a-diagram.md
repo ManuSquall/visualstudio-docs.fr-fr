@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2b7d206852101a1d99a08eac710d88e93afe4a04
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671204"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Définition d'une image d'arrière-plan dans un schéma
@@ -21,7 +21,7 @@ ms.locfileid: "72671204"
 
 Dans le Kit de développement logiciel (SDK) de visualisation et de modélisation de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vous pouvez définir l'image d'arrière-plan d'un concepteur généré à l'aide de code personnalisé.
 
-## <a name="setting-the-background-image"></a>Définition de l'image d'arrière-plan
+## <a name="setting-the-background-image"></a>Définir l'image d'arrière-plan
 
 #### <a name="to-set-a-background-image-for-a-generated-designer"></a>Pour définir une image d'arrière-plan pour un concepteur généré
 
@@ -57,7 +57,7 @@ Dans le Kit de développement logiciel (SDK) de visualisation et de modélisatio
 
 16. Dans la boîte de dialogue **Ajouter un nouvel élément** , dans la liste **modèles** , cliquez sur **fichier de code**.
 
-17. Dans la zone **nom** , tapez `BackgroundImage.cs`, puis cliquez sur **Ajouter**.
+17. Dans la zone **nom** , tapez `BackgroundImage.cs` , puis cliquez sur **Ajouter**.
 
 18. Copiez le code suivant dans le fichier BackgroundImage.cs, en ajustant l'espace de noms, le nom de la classe de diagramme et le nom de la ressource de fichier image.
 

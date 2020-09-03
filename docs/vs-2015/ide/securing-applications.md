@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c590c88894c930f04caf0f7e8afd4eee298f077a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669949"
 ---
 # <a name="securing-applications"></a>Sécurisation des applications
@@ -29,7 +29,7 @@ Si la plupart des applications posent des défis courants en matière de sécuri
 
  [Bonnes pratiques de sécurité](https://msdn.microsoft.com/library/86acaccf-cdb4-4517-bd58-553618e3ec42) Fournit des informations sur les fonctionnalités et des pratiques de sécurité disponibles quand vous travaillez dans Visual C++.
 
- [NOT IN BUILD : Security and ProgrammingC# (et Visual Basic)](https://msdn.microsoft.com/227e2863-cf09-4c28-9611-bcd82be5e994) fournit des informations sur les trois principaux problèmes de sécurité C# pour les Visual Basic et les développeurs : les privilèges, les applications Web et le programme d’installation de Visual Studio.
+ [Not in Build : sécurité et programmation (C# et Visual Basic)](https://msdn.microsoft.com/227e2863-cf09-4c28-9611-bcd82be5e994) Fournit des informations sur les trois principaux problèmes de sécurité pour les développeurs Visual Basic et C# : privilèges, applications Web et programme d’installation de Visual Studio.
 
 ## <a name="securing-mobile-applications"></a>Sécurisation des applications mobiles
  La popularité des appareils mobiles augmentant, la sécurité des informations et des données sur ces appareils devient plus importante.
