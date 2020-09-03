@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2630402e03d1256f63e542818a9066745206d2c5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672750"
 ---
 # <a name="list-memory-command"></a>Afficher la mémoire, commande
@@ -38,7 +38,7 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
  `expression` Facultatif. Adresse mémoire à partir de laquelle la mémoire doit être affichée.
 
 ## <a name="switches"></a>Commutateurs
- Unicode&#124;/ANSI facultatif. Affiche la mémoire sous la forme de caractères ANSI ou Unicode correspondant aux octets de mémoire.
+ /ANSI&#124;Unicode facultatif. Affiche la mémoire sous la forme de caractères ANSI ou Unicode correspondant aux octets de mémoire.
 
  /Count : `number` facultatif. Détermine le nombre d’octets de mémoire à afficher, à partir de l’argument `expression`.
 
@@ -46,7 +46,7 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 
  /Hex&#124;signé&#124;non signé facultatif. Spécifie le format d’affichage des nombres : signé, non signé ou hexadécimal.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Au lieu d’écrire une commande **Debug.ListMemory** complète avec tous ses commutateurs, vous pouvez appeler la commande à l’aide d’alias préparamétrés avec certains commutateurs prédéfinis à des valeurs spécifiées. Par exemple, au lieu d’entrer :
 
 ```
@@ -65,14 +65,14 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 |-----------|--------------------------|
 |**d**|Debug.ListMemory|
 |**da**|Debug.ListMemory /Ansi|
-|**db**|Debug.ListMemory /Format:OneByte|
-|**dc**|Debug.ListMemory /Format:FourBytes /Ansi|
-|**dd**|Debug.ListMemory /Format:FourBytes|
-|**df**|Debug.ListMemory /Format:Float|
-|**dq**|Debug.ListMemory /Format:EightBytes|
+|**bases**|Debug.ListMemory /Format:OneByte|
+|**métafichier**|Debug.ListMemory /Format:FourBytes /Ansi|
+|**JJ**|Debug.ListMemory /Format:FourBytes|
+|**DL**|Debug.ListMemory /Format:Float|
+|**DQ**|Debug.ListMemory /Format:EightBytes|
 |**du**|Debug.ListMemory /Unicode|
 
-## <a name="example"></a>Exemples
+## <a name="example"></a> Exemple
 
 ```
 >Debug.ListMemory /Format:float /Count:30 /Unicode

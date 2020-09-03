@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayObject:GetElement Microsoft Docs
+title: 'IDebugArrayObject :: GetElement | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e29fe09905119057224b45b455e4f56e5ce904af
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736171"
 ---
 # <a name="idebugarrayobjectgetelement"></a>IDebugArrayObject::GetElement
@@ -43,16 +43,16 @@ int GetElement(
 
 ## <a name="parameters"></a>Paramètres
 `dwIndex`\
-[dans] L’indice d’élément.
+dans Index de l’élément.
 
 `ppElement`\
-[out] Retourne une interface [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) qui représente l’élément.
+à Retourne une interface [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) qui représente l’élément.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de succès, les retours S_OK; autrement, renvoie un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes
- Cette méthode voit tous les éléments d’un objet de tableau comme un tableau unidimensionnel, même si l’objet de tableau est multidimensionnel. Par exemple, étant `myarray[3][2][6]` donné `dwIndex` le tableau et un paramètre de `myarray[1][1][2]`20, cette méthode ren rendrait l’élément de , et un `dwIndex` paramètre de 21 retournerait l’élément de `myarray[1][1][3]`. Utilisez la méthode [GetCount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md) pour déterminer le nombre total d’éléments dans le tableau.
+ Cette méthode voit tous les éléments d’un objet tableau sous la forme d’un tableau unidimensionnel, même si l’objet tableau est multidimensionnel. Par exemple, étant donné le tableau `myarray[3][2][6]` et un `dwIndex` paramètre de 20, cette méthode retourne l’élément à partir de `myarray[1][1][2]` , et un `dwIndex` paramètre de 21 retourne l’élément à partir de `myarray[1][1][3]` . Utilisez la méthode [GetCount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md) pour déterminer le nombre total d’éléments dans le tableau.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

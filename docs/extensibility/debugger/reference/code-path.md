@@ -1,5 +1,5 @@
 ---
-title: CODE_PATH Microsoft Docs
+title: CODE_PATH | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d3148b75e56b61ee545c6bc82b972c13572199af
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737668"
 ---
 # <a name="code_path"></a>CODE_PATH
@@ -43,20 +43,20 @@ public struct CODE_PATH {
 
 ## <a name="members"></a>Membres
 `bstrName`\
-Le nom du chemin de code.
+Nom du chemin d’accès du code.
 
 `pCode`\
-[L’objet IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) qui identifie où dans le code entrer dans une fonction.
+Objet [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) qui identifie l’emplacement dans le code pour effectuer un pas à pas détaillé dans une fonction.
 
 ## <a name="remarks"></a>Notes
-Cette structure est utilisée pour implémenter l’entrée dans une fonction. [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md) renvoie tous les appels à partir de l’emplacement actuel du programme en cours de déboptation. Cette structure représente l’un de ces appels.
+Cette structure est utilisée pour implémenter le pas à pas détaillé dans une fonction. [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md) retourne tous les appels à partir de l’emplacement actuel dans le programme en cours de débogage. Cette structure représente un appel de ce type.
 
-## <a name="requirements"></a>Spécifications
-En-tête: msdbg.h
+## <a name="requirements"></a>Configuration requise
+En-tête : msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Espace de noms : Microsoft. VisualStudio. Debugger. Interop
 
-Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Structures et unions](../../../extensibility/debugger/reference/structures-and-unions.md)

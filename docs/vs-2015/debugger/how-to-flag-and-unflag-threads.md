@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Indicateur et supprimer des Threads | Microsoft Docs'
+title: 'Comment : baliser et supprimer l’indicateur de threads | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,22 +17,22 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b6d6a49dd9b90172686a90d92e6b630dd70b5cf0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189441"
 ---
-# <a name="how-to-flag-and-unflag-threads"></a>Procédure : Ajouter et supprimer les indicateurs des threads
+# <a name="how-to-flag-and-unflag-threads"></a>Comment : ajouter et supprimer les indicateurs des threads
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous pouvez signaler un thread auquel vous souhaitez accorder une attention particulière en le marquant avec une icône dans le **Threads**, **piles parallèles**, **espion parallèle**, et **GPU Threads** windows. Cette icône vous aide, ainsi que d'autres, à distinguer les threads avec indicateur des autres threads.  
+Vous pouvez marquer un thread auquel vous souhaitez accorder une attention particulière en le marquant avec une icône dans les fenêtres **Threads**, **Piles parallèles**, **Espion parallèle**et **Threads GPU** . Cette icône vous aide, ainsi que d'autres, à distinguer les threads avec indicateur des autres threads.  
   
- Threads avec indicateur bénéficient d’un traitement spécial dans le **Thread** liste sur le **emplacement de débogage** barre d’outils. Cette liste peut contenir tous les threads ou uniquement les threads avec indicateur. Lorsque vous signalez un thread, le **Thread** liste affiche automatiquement pour afficher uniquement les threads avec indicateur, mais vous pouvez afficher tous les threads comme il convient.  
+ Les threads avec indicateur reçoivent également un traitement spécial dans la liste des **Threads** de la barre d’outils **emplacement de débogage** . Cette liste peut contenir tous les threads ou uniquement les threads avec indicateur. Quand vous marquez un thread, la liste des **Threads** bascule automatiquement pour afficher uniquement les threads avec indicateur, mais vous pouvez le basculer pour afficher tous les threads comme il convient.  
   
 ### <a name="to-flag-or-unflag-a-thread-by-using-the-threads-window"></a>Pour ajouter ou supprimer l'indicateur d'un thread à l'aide de la fenêtre Threads  
   
-- Dans le **Threads** fenêtre, recherchez le thread qui vous intéresse et cliquez sur l’icône d’indicateur pour activer ou désactiver l’indicateur.  
+- Dans la fenêtre **Threads** , recherchez le thread qui vous intéresse, puis cliquez sur l’icône d’indicateur pour activer ou désactiver l’indicateur.  
   
 ### <a name="to-unflag-all-threads"></a>Pour supprimer tous les indicateurs de thread  
   
@@ -61,5 +61,5 @@ Vous pouvez signaler un thread auquel vous souhaitez accorder une attention part
 5. Cliquez sur **OK**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Déboguer les applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+ [Déboguer des applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Procédure pas à pas : débogage d’une application multithread](../debugger/walkthrough-debugging-a-multithreaded-application.md)

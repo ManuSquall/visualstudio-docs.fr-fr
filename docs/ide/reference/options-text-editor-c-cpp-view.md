@@ -12,17 +12,17 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 95963245b15828f374e9812a9bb09d015b21a94b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77278693"
 ---
 # <a name="options-text-editor-cc-view"></a>Options, Éditeur de texte, C/C++, Affichage
 
 Utilisez les pages de propriétés pour changer le comportement par défaut de l’Éditeur de code quand vous programmez en C ou C++.
 
-Pour accéder à cette page de propriété, choisissez **Tools** > **Options** et développez **l’éditeur de texte,** puis **C/C,** puis choisissez **View**.
+Pour accéder à cette page de propriétés, choisissez **Outils**  >  **options** et développez **éditeur de texte**, puis **C/C++**, puis choisissez **Afficher**.
 
 ## <a name="code-squiggles"></a>Tildes dans le code
 
@@ -46,7 +46,7 @@ Vous pouvez activer ou désactiver les paramètres suivants pour gérer la faço
 
 - **Surligner les jetons correspondants** : surligne les accolades englobantes ou la syntaxe en correspondance où le curseur est positionné.
 
-## <a name="outlining"></a>Mode Plan
+## <a name="outlining"></a>mode Plan
 
 - **Activer le mode Plan** : passe en mode Plan quand un fichier s’ouvre.
 
@@ -56,5 +56,5 @@ Vous pouvez activer ou désactiver les paramètres suivants pour gérer la faço
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Définir des options d’éditeur spécifiques à la langue](../../ide/reference/setting-language-specific-editor-options.md)
+- [Définition des options de l’éditeur spécifiques à une langue](../../ide/reference/setting-language-specific-editor-options.md)
 - [Refactorisation en C++ (blog VC)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/)

@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f7a5debb0ffccffed4077c367d5b008a2a2a7cc2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189642"
 ---
 # <a name="idiaenumsymbolsbyaddrprev"></a>IDiaEnumSymbolsByAddr::Prev
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Récupère les symboles précédentes dans l’ordre par adresse.  
+Récupère les symboles précédents dans l’ordre par adresse.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -37,19 +37,19 @@ HRESULT Prev ( 
   
 #### <a name="parameters"></a>Paramètres  
  celt  
- [in] Le nombre de symboles dans l’énumérateur à récupérer.  
+ dans Nombre de symboles dans l’énumérateur à récupérer.  
   
  rgelt  
- [out] Un tableau qui doit être rempli avec [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objets qui représentent les symboles de votre choisis.  
+ à Tableau à remplir avec les objets [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) qui représentent les symboles souhaités.  
   
  pceltFetched  
- [out] Retourne le nombre de symboles dans l’énumérateur extraite.  
+ à Retourne le nombre de symboles dans l’énumérateur extrait.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` s’il en existe aucun symbole précédent. Sinon, retourne un code d'erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` s’il n’y a pas de symboles précédents. Sinon, retourne un code d'erreur.  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode met à jour la position de l’énumérateur par le nombre d’éléments extraits.  
+ Cette méthode met à jour la position de l’énumérateur en fonction du nombre d’éléments extraits.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)   

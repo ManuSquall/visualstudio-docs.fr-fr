@@ -21,10 +21,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bcceca362f3c2a891d36f8f4e8071d0e35c8f164
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658976"
 ---
 # <a name="invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy"></a>Appel du débogueur Visual Studio pour Windows Workflow Foundation (hérité)
@@ -49,7 +49,7 @@ Cette rubrique décrit comment utiliser le débogueur [!INCLUDE[vsprvs](../inclu
  Pour déboguer un workflow en l’attachant à un processus, sélectionnez le processus disponible dans la zone de liste **processus disponibles** de la boîte de dialogue **attacher au processus** . Si **automatique : le code de workflow** n’est pas affiché dans la zone de texte **attacher à** , puis cliquez sur **Sélectionner**. Dans la boîte de dialogue **Sélectionner le type de code** , cliquez sur **Déboguer ces types de codes** et sélectionnez flux de **travail**. Cliquez ensuite sur **OK** , puis sur **attacher**.
 
 ## <a name="debugging-with-f5"></a>Débogage avec la touche F5
- Si une application hôte de workflow et une DLL de workflow se trouvent dans des projets Visual Studio différents, par exemple, lorsque vous utilisez une bibliothèque d’activité de workflow, vous devez définir le projet de DLL de workflow comme projet de démarrage de la solution Visual Studio pour déboguer le flux de travail. en appuyant sur **F5**. Vous devez également définir le chemin d’accès à l’application hôte dans la propriété **Démarrer le programme externe** du projet de dll de Workflow.
+ Si une application hôte de workflow et une DLL de workflow se trouvent dans des projets Visual Studio différents, par exemple, lorsque vous utilisez une bibliothèque d’activité de workflow, vous devez définir le projet de DLL de workflow comme projet de démarrage de la solution Visual Studio pour déboguer le workflow à l’aide de la touche **F5**. Vous devez également définir le chemin d’accès à l’application hôte dans la propriété **Démarrer le programme externe** du projet de dll de Workflow.
 
  Pour définir un projet de démarrage dans Explorateur de solutions, cliquez avec le bouton droit sur le nom du projet et sélectionnez **définir comme projet de démarrage**. Pour définir le chemin d’accès à l’ordinateur hôte dans la propriété **Démarrer le programme externe** , double-cliquez sur le nœud **Propriétés** du projet de workflow dans Explorateur de solutions puis sélectionnez l’onglet **Déboguer** . Sous **action de démarrage**, sélectionnez **Démarrer le programme externe** et entrez le chemin d’accès au fichier. exe qui héberge le workflow que vous souhaitez déboguer.
 

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9d654fdfdfeacc9071081a65f3ad94b2ad240ae5
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85466587"
 ---
 # <a name="idiapropertystoragereaddword"></a>IDiaPropertyStorage::ReadDWORD
@@ -43,7 +43,7 @@ dans Identificateur de la propriété à lire ( `PROPID` défini dans WTypes. h 
 ## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne un code d’erreur. Retourne `E_INVALIDARG` si la propriété n’est pas de type `DWORD` .
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Un `DWORD` est défini par Windows comme un entier non signé 32 bits.
 
 ## <a name="see-also"></a>Voir aussi

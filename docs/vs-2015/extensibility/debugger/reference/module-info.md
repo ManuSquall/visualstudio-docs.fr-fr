@@ -13,16 +13,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 04a8756fd7eb2a4b938ebcd2d5f4754509b704e3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205221"
 ---
-# <a name="moduleinfo"></a>MODULE_INFO
+# <a name="module_info"></a>MODULE_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Décrit un module particulier (EXE, DLL ou assembly).  
+Décrit un module particulier (DLL, EXE ou assembly).  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -62,55 +62,55 @@ public struct MODULE_INFO { 
   
 ## <a name="members"></a>Membres  
  dwValidFields  
- Une combinaison d’indicateurs de la [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) énumération qui spécifie quels champs sont renseignés.  
+ Combinaison d’indicateurs de l’énumération [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) qui spécifie les champs à remplir.  
   
  m_bstrName  
  Nom du module.  
   
  m_bstrUrl  
- L’URL de module.  
+ URL du module.  
   
  m_bstrVersion  
- La version du module.  
+ Version du module.  
   
  m_bstrDebugMessage  
- Un message facultatif sur le module, par exemple, « symboles ne peut pas être chargés. »  
+ Message facultatif concernant le module, par exemple, « les symboles ne peuvent pas être chargés ».  
   
  m_addrLoadAddress  
- L’adresse de chargement de module.  
+ Adresse de chargement du module.  
   
  m_addrPreferredLoadAddress  
- L’adresse de chargement par défaut du module.  
+ Adresse de chargement par défaut du module.  
   
  m_dwSize  
- La taille du module.  
+ Taille du module.  
   
  m_dwLoadOrder  
- L’ordre de chargement de module.  
+ Ordre de chargement du module.  
   
  m_TimeStamp  
- Heure de que dernière modification du fichier de symboles.  
+ Heure de la dernière modification du fichier de symboles.  
   
  m_bstrUrlSymbolLocation  
- L’emplacement du fichier de symboles (par exemple, «.\\») spécifié dans le module. Utilisé comme un emplacement de départ pour rechercher des symboles pour un module.  
+ Emplacement du fichier de symboles (par exemple, « . \\ ») spécifié dans le module. Utilisé comme emplacement de départ pour rechercher des symboles pour un module.  
   
  m_dwModuleFlags  
- Une combinaison d’indicateurs de la [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md) énumération qui décrit le module.  
+ Combinaison d’indicateurs de l’énumération [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md) qui décrit le module.  
   
 ## <a name="remarks"></a>Notes  
- Cette structure est passée à la [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) méthode où il est renseigné.  
+ Cette structure est transmise à la méthode [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) où elle est remplie.  
   
- Cette structure correspond à chaque module répertoriée dans le **Modules** fenêtre.  
+ Cette structure correspond à chaque module listé dans la fenêtre **modules** .  
   
 ## <a name="requirements"></a>Configuration requise  
- En-tête : msdbg.h  
+ En-tête : msdbg. h  
   
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft. VisualStudio. Debugger. Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
- [Structures et Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Structures et unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)   
  [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md)   
  [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)

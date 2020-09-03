@@ -10,10 +10,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 44906d70be05891fe52096adec2f61f2261b5db5
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "70154879"
 ---
 # <a name="install-data-science-support-in-visual-studio"></a>Installer la prise en charge de la science des données dans Visual Studio
@@ -59,7 +59,7 @@ Par défaut, la charge de travail installe les options suivantes, que vous pouve
 - Prise en charge du langage F#
 - Python :
   - Prise en charge du langage Python
-  - [Anaconda3 64 bits](https://www.continuum.io), un démon Python qui comprend de vastes bibliothèques de science des données et un interprète Python.
+  - [Anaconda3 64-bit](https://www.continuum.io), distribution Python qui comprend de nombreuses bibliothèques de science des données et un interpréteur Python.
   - Prise en charge de Python web
   - Prise en charge des modèles Cookiecutter
 - R :
@@ -80,21 +80,21 @@ SQL Server prend en charge l’utilisation de Python pour effectuer de l’analy
 
 Vous profitez des avantages suivants en exécutant votre code là où sont déjà vos données :
 
-- **Élimination du mouvement des données**: Au lieu de déplacer les données de la base de données vers votre application ou modèle, vous pouvez créer des applications dans la base de données. Cette fonctionnalité élimine les barrières en matière de sécurité, de conformité, de gouvernance, d’intégrité et de nombreux problèmes similaires liés au déplacement de quantités importantes de données. Vous pouvez aussi consommer des jeux de données qui ne tiendraient pas dans la mémoire d’un ordinateur client.
+- **Élimination du déplacement des données**: au lieu de déplacer les données de la base de données vers votre application ou modèle, vous pouvez créer des applications dans la base de données. Cette fonctionnalité élimine les barrières en matière de sécurité, de conformité, de gouvernance, d’intégrité et de nombreux problèmes similaires liés au déplacement de quantités importantes de données. Vous pouvez aussi consommer des jeux de données qui ne tiendraient pas dans la mémoire d’un ordinateur client.
 
-- **Déploiement facile**: Une fois que vous avez un modèle prêt, le déployer à la production est une simple question de l’intégrer dans un script T-SQL. Toute application cliente SQL écrite dans n’importe quel langage peut alors tirer parti des modèles et de l’analyse décisionnelle via un appel de procédure stockée. Aucune intégration spécifique au langage n’est nécessaire.
+- **Déploiement facile**: une fois que vous disposez d’un modèle prêt, le déploiement en production est un simple problème de l’incorporer dans un script T-SQL. Toute application cliente SQL écrite dans n’importe quel langage peut alors tirer parti des modèles et de l’analyse décisionnelle via un appel de procédure stockée. Aucune intégration spécifique au langage n’est nécessaire.
 
-- **Performances et échelle de qualité entreprise**: Vous pouvez utiliser les capacités avancées de SQL Server comme les index de table et de magasin de colonnes avec les API évolutives haute performance des forfaits RevoScale. L’élimination du déplacement des données signifie également que vous évitez les contraintes de mémoire des clients quand la taille de vos données augmente ou quand vous voulez accroître les performances de l’application.
+- **Performances et mise à l’échelle de classe entreprise**: vous pouvez utiliser les fonctionnalités avancées de SQL Server telles que les index de table et de stockage de colonnes en mémoire avec les API évolutives hautes performances dans les packages RevoScale. L’élimination du déplacement des données signifie également que vous évitez les contraintes de mémoire des clients quand la taille de vos données augmente ou quand vous voulez accroître les performances de l’application.
 
-- **Riche extensibility**: Vous pouvez installer et exécuter l’un des derniers paquets open source dans SQL Server pour construire des applications d’apprentissage profond et d’IA sur d’énormes quantités de données dans SQL Server. L’installation d’un package dans SQL Server est aussi simple que l’installation d’un package sur votre ordinateur local.
+- **Extensibilité riche**: vous pouvez installer et exécuter l’un des derniers packages Open source dans SQL Server pour créer des applications d’apprentissage profond et d’intelligence artificielle sur de grandes quantités de données dans SQL Server. L’installation d’un package dans SQL Server est aussi simple que l’installation d’un package sur votre ordinateur local.
 
-- **Grande disponibilité sans frais supplémentaires**: Les intégrations linguistiques sont disponibles dans toutes les éditions de SQL Server 2017 et plus tard, y compris l’édition Express.
+- **Grande disponibilité sans coût supplémentaire**: les intégrations de langage sont disponibles dans toutes les éditions de SQL Server 2017 et versions ultérieures, y compris l’édition Express.
 
 Pour tirer pleinement parti de l’intégration de SQL Server, utilisez le programme d’installation de Visual Studio pour installer la charge de travail **Stockage et traitement des données** avec l’option **SQL Server Data Tools**. Cette option active SQL IntelliSense, la mise en surbrillance de la syntaxe et le déploiement.
 
 ![Charge de travail de stockage et traitement des données](media/workload/data-storage-workload.png) &nbsp;&nbsp;&nbsp;&nbsp; ![Options de la charge de travail Stockage et traitement des données](media/workload/data-storage-workload-options.png)
 
-Pour plus d'informations :
+Pour plus d’informations :
 
 ::: moniker range="vs-2017"
 - [Utiliser SQL Server et R](../rtvs/integrating-sql-server-with-r.md)

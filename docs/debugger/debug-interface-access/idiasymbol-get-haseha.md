@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6c565a8c13b31feb78c8d60bf0b18bbc923f14f5
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85463749"
 ---
 # <a name="idiasymbolget_haseha"></a>IDiaSymbol::get_hasEHa
@@ -41,7 +41,7 @@ HRESULT get_hasEHa(
 > [!NOTE]
 > Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Il est possible de mélanger la gestion asynchrone ou structurée des exceptions avec la gestion des exceptions de style C++, mais elle nécessite un commutateur de compilateur spécifique,/EHa, pour l’activer.
 
 ## <a name="requirements"></a>Configuration requise

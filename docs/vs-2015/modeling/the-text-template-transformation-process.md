@@ -12,27 +12,27 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7322724b2118cb8b844262696a6e7cbd91a74e9b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658506"
 ---
 # <a name="the-text-template-transformation-process"></a>Processus de transformation du modèle de texte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Le processus de transformation de modèle de texte prend un fichier de modèle de texte comme entrée et génère un nouveau fichier texte comme sortie. Par exemple, vous pouvez utiliser des modèles de texte pour générer C# Visual Basic ou du code, ou vous pouvez générer un rapport HTML.
+Le processus de transformation de modèle de texte prend un fichier de modèle de texte comme entrée et génère un nouveau fichier texte comme sortie. Par exemple, vous pouvez utiliser des modèles de texte pour générer du code Visual Basic ou C#, ou vous pouvez générer un rapport HTML.
 
  Trois composants participent à ce processus : le moteur, l’hôte et les processeurs de directive. Le moteur contrôle le processus ; Il interagit avec l’hôte et le processeur de directive pour produire le fichier de sortie. L’hôte fournit toute interaction avec l’environnement, telle que la localisation des fichiers et des assemblys. Le processeur de directive ajoute des fonctionnalités, telles que la lecture de données à partir d’un fichier XML ou d’une base de données.
 
  Le processus de transformation de modèle de texte s’effectue en deux étapes. Tout d’abord, le moteur crée une classe temporaire, appelée classe de transformation générée. Cette classe contient le code généré par les directives et les blocs de contrôle. Après cela, le moteur compile et exécute la classe de transformation générée pour produire le fichier de sortie.
 
-## <a name="components"></a>Composants
+## <a name="components"></a>Components
 
 |Composant|Description|Personnalisable (oui/non)|
 |---------------|-----------------|------------------------------|
-|Rotation|Le composant moteur contrôle le processus de transformation de modèle de texte.|Non.|
-|Hôte|L’hôte est l’interface entre le moteur et l’environnement utilisateur. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] est un hôte du processus de transformation de texte.|Oui. Vous pouvez écrire un hôte personnalisé.|
+|Moteur|Le composant moteur contrôle le processus de transformation de modèle de texte.|Non.|
+|Host|L’hôte est l’interface entre le moteur et l’environnement utilisateur. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] est un hôte du processus de transformation de texte.|Oui. Vous pouvez écrire un hôte personnalisé.|
 |Processeurs de directive|Les processeurs de directive sont des classes qui gèrent les directives dans les modèles de texte. Vous pouvez utiliser des directives pour fournir des données à un modèle de texte à partir d’une source d’entrée.|Oui. Vous pouvez écrire des processeurs de directive personnalisés|
 
 ## <a name="the-engine"></a>Le moteur
@@ -51,7 +51,7 @@ Le processus de transformation de modèle de texte prend un fichier de modèle d
 
 - Définition de l’extension par défaut pour le fichier de sortie généré.
 
-- Gestion des erreurs de transformation du modèle de texte. Par exemple, l’hôte peut afficher les erreurs dans l’interface utilisateur ou les écrire dans un fichier. (Dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], les erreurs sont affichées dans la fenêtre de message d’erreur.)
+- Gestion des erreurs de transformation du modèle de texte. Par exemple, l’hôte peut afficher les erreurs dans l’interface utilisateur ou les écrire dans un fichier. (Dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , les erreurs sont affichées dans la fenêtre des messages d’erreur.)
 
 - Fournir une valeur de paramètre obligatoire si un utilisateur a appelé une directive sans fournir de valeur. Le processeur de directive peut spécifier le nom de la directive et le paramètre et demander à l’hôte de fournir une valeur par défaut s’il en a un.
 
@@ -60,8 +60,8 @@ Le processus de transformation de modèle de texte prend un fichier de modèle d
 
  Un processeur de directive peut traiter une ou plusieurs directives. Lorsque vous transformez un modèle, vous devez avoir installé un processeur de directive qui peut gérer les directives de votre modèle.
 
- Les directives fonctionnent en ajoutant du code dans la classe de transformation générée. Vous appelez des directives à partir d’un modèle de texte, et le moteur traite tous les appels de directive lorsqu’il crée la classe de transformation générée. Une fois que vous avez correctement appelé une directive, le reste du code que vous écrivez dans votre modèle de texte peut reposer sur les fonctionnalités fournies par la directive. Par exemple, vous pouvez effectuer l’appel suivant à la directive `import` dans votre modèle :
+ Les directives fonctionnent en ajoutant du code dans la classe de transformation générée. Vous appelez des directives à partir d’un modèle de texte, et le moteur traite tous les appels de directive lorsqu’il crée la classe de transformation générée. Une fois que vous avez correctement appelé une directive, le reste du code que vous écrivez dans votre modèle de texte peut reposer sur les fonctionnalités fournies par la directive. Par exemple, vous pouvez effectuer l’appel suivant à la `import` directive dans votre modèle :
 
  `<#@ import namespace="System.Text" #>`
 
- Le processeur de directive standard convertit ce en une instruction `using` dans la classe de transformation générée. Vous pouvez ensuite utiliser la classe `StringBuilder` dans le reste de votre code de modèle sans l’qualifier comme `System.Text.StringBuilder`.
+ Le processeur de directive standard convertit ce en une `using` instruction dans la classe de transformation générée. Vous pouvez ensuite utiliser la `StringBuilder` classe dans le reste de votre code de modèle sans l’qualifier comme `System.Text.StringBuilder` .

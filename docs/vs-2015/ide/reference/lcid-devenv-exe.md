@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: badb88abdf4b3ffd6140cb587b2b0add20630925
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672697"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
@@ -38,14 +38,14 @@ devenv {/LCID|/l} LocaleID
 ## <a name="arguments"></a>Arguments
  `LocaleID` Obligatoire. LCID (ID de paramètres régionaux) de la langue que vous spécifiez.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Charge l’IDE et définit le langage naturel par défaut pour l’environnement. Ce changement est persistant d’une session à une autre et est répercuté dans le volet **Paramètres internationaux** des options **Environnement** de la boîte de dialogue **Options** dans l’IDE.
 
  Si la langue spécifiée n’est pas disponible sur le système de l’utilisateur, le commutateur /LCID est ignoré.
 
  Le tableau suivant répertorie les LCID des langues prises en charge par [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].
 
-|Langue|LCID|
+|Language|LCID|
 |--------------|----------|
 |Chinois (simplifié)|2052|
 |Chinois (traditionnel)|1028|
@@ -57,7 +57,7 @@ devenv {/LCID|/l} LocaleID
 |Coréen|1042|
 |Espagnol|3082|
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
  Cet exemple charge l’IDE avec des chaînes de ressources en anglais.
 
 ```

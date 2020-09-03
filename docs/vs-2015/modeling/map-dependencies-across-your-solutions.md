@@ -30,10 +30,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d70016229ad9599c7ededbefaf08744f2bb6f351
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548081"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Mapper les dépendances dans vos solutions
@@ -51,7 +51,7 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
 
 - [Présentation du code complexe avec des cartes de code](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Understanding-complex-code-with-Code-Map-ENU)
 
-## <a name="get-started-with-code-maps"></a><a name="GetStarted"></a>Prise en main des cartes de code
+## <a name="get-started-with-code-maps"></a><a name="GetStarted"></a> Prise en main des cartes de code
  **Pour utiliser des cartes de code, il vous l’un des éléments suivants**:
 
 - Visual Studio Enterprise pour créer des cartes de code à partir de l’éditeur de code, l’Explorateur de solutions, l’affichage de classes ou l’Explorateur d’objets ;
@@ -115,9 +115,9 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
 
      Vous disposez maintenant d’une carte vide qui n’apparaît pas dans les dossiers de votre solution.
 
-## <a name="see-overall-dependencies"></a><a name="SeeOverviewSource"></a>Voir dépendances globales
+## <a name="see-overall-dependencies"></a><a name="SeeOverviewSource"></a> Voir dépendances globales
 
-### <a name="see-dependencies-across-your-solution"></a><a name="OverviewSource"></a>Voir les dépendances dans votre solution
+### <a name="see-dependencies-across-your-solution"></a><a name="OverviewSource"></a> Voir les dépendances dans votre solution
 
 1. Dans le menu **Architecture** , choisissez **Générer une carte du code pour la solution**.
 
@@ -298,7 +298,7 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
 
      ![Premier graphique de dépendance de niveau&#45;pour le fichier. h](../modeling/media/dependencygraph-native-firstlevel.png "DependencyGraph_Native_FirstLevel")
 
-### <a name="troubleshoot-maps-for-c-and-c-code"></a><a name="Troubleshooting"></a>Résoudre les problèmes liés aux mappages pour le code C et C++
+### <a name="troubleshoot-maps-for-c-and-c-code"></a><a name="Troubleshooting"></a> Résoudre les problèmes liés aux mappages pour le code C et C++
  Ces éléments ne sont pas pris en charge pour le code C et C++ :
 
 - Les types de base n’apparaissent pas sur les cartes qui incluent la hiérarchie parente.
@@ -344,7 +344,7 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
 ### <a name="share-the-map-with-other-visual-studio-users"></a>Partager la carte avec d’autres utilisateurs de Visual Studio
  Utilisez le menu **Fichier** pour enregistrer la carte.
 
- -ou-
+ - ou -
 
  Pour enregistrer la carte dans le cadre d’un projet spécifique, dans la barre d’outils de la carte, choisissez **partager**, **déplacer** \<*CodeMapName*> **. dgml dans**, puis choisissez le projet dans lequel vous souhaitez enregistrer la carte.
 

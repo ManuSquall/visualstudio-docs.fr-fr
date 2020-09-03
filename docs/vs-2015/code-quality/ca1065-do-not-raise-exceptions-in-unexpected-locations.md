@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: ddfc95d27179f48aef9444819cc0437a3143d5a0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539254"
 ---
 # <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065 : Ne pas lever d'exceptions dans les emplacements inattendus
@@ -32,7 +32,7 @@ ms.locfileid: "85539254"
 |Category|Microsoft. Design|
 |Modification avec rupture|Sans rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Une méthode dont l'objet n'est pas de lever des exceptions lève une exception.
 
 ## <a name="rule-description"></a>Description de la règle
@@ -65,24 +65,24 @@ ms.locfileid: "85539254"
 
  Les exceptions suivantes peuvent être levées à partir d’une méthode d’extraction de propriété :
 
-- <xref:System.InvalidOperationException?displayProperty=fullName>et tous les dérivés (y compris <xref:System.ObjectDisposedException?displayProperty=fullName> )
+- <xref:System.InvalidOperationException?displayProperty=fullName> et tous les dérivés (y compris <xref:System.ObjectDisposedException?displayProperty=fullName> )
 
-- <xref:System.NotSupportedException?displayProperty=fullName>et tous les dérivés
+- <xref:System.NotSupportedException?displayProperty=fullName> et tous les dérivés
 
-- <xref:System.ArgumentException?displayProperty=fullName>(uniquement à partir d’une récupération indexée)
+- <xref:System.ArgumentException?displayProperty=fullName> (uniquement à partir d’une récupération indexée)
 
-- <xref:System.Collections.Generic.KeyNotFoundException>(uniquement à partir d’une récupération indexée)
+- <xref:System.Collections.Generic.KeyNotFoundException> (uniquement à partir d’une récupération indexée)
 
 ### <a name="event-accessor-methods"></a>Méthodes d’accesseur d’événement
  Les accesseurs d’événement doivent être des opérations simples qui ne lèvent pas d’exceptions. Un événement ne doit pas lever d’exception lorsque vous essayez d’ajouter ou de supprimer un gestionnaire d’événements.
 
  Les exceptions suivantes peuvent être levées à partir d’un événement accesor :
 
-- <xref:System.InvalidOperationException?displayProperty=fullName>et tous les dérivés (y compris <xref:System.ObjectDisposedException?displayProperty=fullName> )
+- <xref:System.InvalidOperationException?displayProperty=fullName> et tous les dérivés (y compris <xref:System.ObjectDisposedException?displayProperty=fullName> )
 
-- <xref:System.NotSupportedException?displayProperty=fullName>et tous les dérivés
+- <xref:System.NotSupportedException?displayProperty=fullName> et tous les dérivés
 
-- <xref:System.ArgumentException>et dérivés
+- <xref:System.ArgumentException> et dérivés
 
 ### <a name="equals-methods"></a>Equals (méthodes)
  Les méthodes **Equals** suivantes ne doivent pas lever d’exceptions :

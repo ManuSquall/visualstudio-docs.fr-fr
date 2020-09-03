@@ -1,5 +1,5 @@
 ---
-title: EXCEPTION_STATE Microsoft Docs
+title: EXCEPTION_STATE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cd2e280cd03ae413e0853950d13fbfefb69bc15f
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80736955"
 ---
 # <a name="exception_state"></a>EXCEPTION_STATE
-Spécifie l’état d’exception.
+Spécifie l’état de l’exception.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -78,63 +78,63 @@ public enum enum_EXCEPTION_STATE {
 
 ## <a name="fields"></a>Champs
 `EXCEPTION_NONE`\
-Ne vous arrêtez pas à l’exception.
+Ne pas arrêter à l’exception.
 
 `EXCEPTION_STOP_FIRST_CHANCE`\
-Arrêtez-vous au premier tir d’exception. Lors de la description d’un événement d’exception, ce drapeau indique que l’événement d’exception est un événement d’exception de première chance.
+Arrêter au premier déclenchement de l’exception. Lors de la description d’un événement d’exception, cet indicateur indique que l’événement d’exception est un événement d’exception de première chance.
 
 `EXCEPTION_STOP_SECOND_CHANCE`\
-Arrêtez-vous au deuxième tir d’exception. Lorsque vous décrivez un événement d’exception, indique que l’événement d’exception est un événement d’exception de seconde chance.
+Arrêter au deuxième déclenchement de l’exception. Lors de la description d’un événement d’exception, indique que l’événement d’exception est un événement d’exception de deuxième chance.
 
 `EXCEPTION_STOP_USER_FIRST_CHANCE`\
-Arrêtez-vous au premier tir d’une exception de mode utilisateur. Lorsque vous décrivez un événement d’exception, indique que l’événement d’exception est un événement d’exception utilisateur de première chance.
+Arrêter au premier déclenchement d’une exception en mode utilisateur. Lors de la description d’un événement d’exception, indique que l’événement d’exception est un événement d’exception d’utilisateur de première chance.
 
 `EXCEPTION_STOP_USER_UNCAUGHT`\
-Arrêtez-vous lorsqu’une exception en mode utilisateur n’est pas détectée. Lors de la description d’un événement d’exception, indique que l’événement d’exception est un événement d’exception en mode utilisateur non prisé.
+Arrêter lorsqu’une exception de mode utilisateur n’est pas interceptée. Lors de la description d’un événement d’exception, indique que l’événement d’exception est un événement d’exception de mode utilisateur non intercepté.
 
 `EXCEPTION_STOP_ALL`\
-Arrêtez-vous à n’importe quelle exception. Non utilisé lors de la description d’un événement d’exception.
+Arrêtez sur une exception. Non utilisé lors de la description d’un événement d’exception.
 
 `EXCEPTION_CANNOT_BE_CONTINUED`\
-Lors de la description d’un événement d’exception, indique que l’exception ne peut pas être poursuivie.
+Lors de la description d’un événement d’exception, indique que l’exception ne peut pas être poursuivie à partir de.
 
 `EXCEPTION_CODE_SUPPORTED`\
-Indique que l’exception a le code qui la soutient. Utilisé dans l’affichage d’une exception
+Indique que le code de l’exception est pris en charge par l’exception. Utilisé pour afficher une exception
 
 `EXCEPTION_CODE_DISPLAY_IN_HEX`\
-Indique que le code d’exception doit être affiché dans hexadecimal. Utilisé dans l’affichage d’une exception.
+Indique que le code de l’exception doit être affiché au format hexadécimal. Utilisé pour afficher une exception.
 
 `EXCEPTION_JUST_MY_CODE_SUPPORTED`\
-Indique que le code d’exception prend en charge JustMyCode. Utilisé dans l’affichage d’une exception.
+Indique que le code d’exception prend en charge JustMyCode. Utilisé pour afficher une exception.
 
 `EXCEPTION_MANAGED_DEBUG_ASSISTANT`\
-Indique que le débbuggeur de code géré doit gérer les exceptions. S’il n’est pas défini, le débbuggeur par défaut gère les exceptions. Ceci est transmis à la méthode [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) et n’est pas utilisé dans la structure [EXCEPTION_INFO.](../../../extensibility/debugger/reference/exception-info.md)
+Indique que le débogueur de code managé doit gérer les exceptions. Si la valeur n’est pas définie, le débogueur par défaut gère les exceptions. Elle est transmise à la méthode [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) et n’est pas utilisée dans la structure [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) .
 
 `EXCEPTION_STOP_FIRST_CHANCE_USE_PARENT`\
-OBSOLÈTE, NE PAS UTILISER.
+OBSOLÈTE, N’UTILISEZ PAS.
 
 `EXCEPTION_STOP_SECOND_CHANCE_USE_PARENT`\
-OBSOLÈTE, NE PAS UTILISER.
+OBSOLÈTE, N’UTILISEZ PAS.
 
 `EXCEPTION_STOP_USER_FIRST_CHANCE_USE_PARENT`\
-OBSOLÈTE, NE PAS UTILISER.
+OBSOLÈTE, N’UTILISEZ PAS.
 
 `EXCEPTION_STOP_USER_SECOND_CHANCE_USE_PARENT`\
-OBSOLÈTE, NE PAS UTILISER.
+OBSOLÈTE, N’UTILISEZ PAS.
 
 ## <a name="remarks"></a>Notes
-Utilisé comme `dwState` membre de la structure [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) pour indiquer l’état de l’exception et ce qui peut être fait à ce sujet.
+Utilisé comme `dwState` membre de la structure [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) pour indiquer l’état de l’exception et ce qui peut être fait à son sujet.
 
-Ces valeurs sont également transmises à la méthode [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) pour définir l’état de toutes les exceptions.
+Ces valeurs sont également passées à la méthode [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) pour définir l’état de toutes les exceptions.
 
-Ces drapeaux peuvent être combinés avec un peu plus ou.
+Ces indicateurs peuvent être combinés avec une opération or au niveau du bit.
 
 ## <a name="requirements"></a>Spécifications
-En-tête: msdbg.h
+En-tête : msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Espace de noms : Microsoft. VisualStudio. Debugger. Interop
 
-Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

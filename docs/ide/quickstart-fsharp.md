@@ -12,13 +12,13 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: 990106f7f3ca97ae38a20170ca6ed2e1d699d4e4
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "70180315"
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Quickstart: Utilisez Visual Studio pour créer votre premier service web ASP.NET Core en F\#
+# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Démarrage rapide : utiliser Visual Studio pour créer votre premier service Web ASP.NET Core en F\#
 
 Dans cette présentation de 5 à 10 minutes de F# dans Visual Studio, vous allez créer une application web ASP.NET Core en F#.
 
@@ -50,7 +50,7 @@ Vous allez d’abord créer un projet d’API web ASP.NET Core. Le type de proje
 
      ![Charge de travail ASP.NET dans Visual Studio Installer](../ide/media/quickstart-aspnet-workload.png)
 
-4. Dans la boîte de dialogue **Nouvelle application web ASP.NET Core**, sélectionnez **ASP.NET Core 2.1** dans le menu déroulant supérieur. (Si vous ne voyez pas **ASP.NET Core 2.1** dans la liste, installez-le en suivant le lien **Télécharger** qui devrait apparaître dans une barre jaune près du haut de la boîte de dialogue.) Choisissez **OK**.
+4. Dans la boîte de dialogue **Nouvelle application web ASP.NET Core**, sélectionnez **ASP.NET Core 2.1** dans le menu déroulant supérieur. (Si vous ne voyez pas **ASP.NET Core 2,1** dans la liste, installez-le en suivant le lien de **Téléchargement** qui doit apparaître dans une barre jaune en haut de la boîte de dialogue.) Choisissez **OK**.
 
 ::: moniker-end
 
@@ -58,9 +58,9 @@ Vous allez d’abord créer un projet d’API web ASP.NET Core. Le type de proje
 
 1. Ouvrez Visual Studio.
 
-2. Sur la fenêtre de départ, choisissez **Créer un nouveau projet**.
+2. Dans la fenêtre Démarrer, choisissez **créer un nouveau projet**.
 
-3. Sur la page **Créer un projet**, tapez **f# web** dans la zone de recherche, puis choisissez le modèle de projet **Application web ASP.NET Core**. Choisissez **La prochaine**.
+3. Sur la page **Créer un projet**, tapez **f# web** dans la zone de recherche, puis choisissez le modèle de projet **Application web ASP.NET Core**. Choisissez **Suivant**.
 
 4. Sur la page **Configurer votre nouveau projet**, entrez un nom, puis choisissez **Créer**.
 
@@ -89,9 +89,9 @@ Le résultat doit ressembler à ceci dans l’éditeur :
 
 ![Membre Get modifié](../ide/media/hello-world-fs-get-member.png)
 
-## <a name="run-the-application"></a>Exécuter l’application
+## <a name="run-the-application"></a>Exécution de l'application
 
-1. Appuyez sur **Ctrl**+**F5** pour exécuter l’application et l’ouvrir dans un navigateur web.
+1. Appuyez sur **CTRL** + **F5** pour exécuter l’application et l’ouvrir dans un navigateur Web.
 
 2. La page doit accéder à l’itinéraire `/api/values`, mais si ce n’est pas le cas, entrez `https://localhost:44396/api/values` dans votre navigateur.
 

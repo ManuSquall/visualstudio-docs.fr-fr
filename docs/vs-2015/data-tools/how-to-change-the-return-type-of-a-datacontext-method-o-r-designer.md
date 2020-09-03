@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 351a2f53d8ad8c5f29821d905c292cd988390869
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72658838"
 ---
 # <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>Guide pratique pour changer le type de retour d’une méthode DataContext (Concepteur O/R)
@@ -38,7 +38,7 @@ Le type de retour d’une méthode <xref:System.Data.Linq.DataContext> (créée 
 
 1. Sélectionnez la méthode <xref:System.Data.Linq.DataContext> dans le volet de méthodes et supprimez-la.
 
-2. Faites glisser l’objet de base de données de **Explorateur de serveurs** /**Explorateur de base de données** dans une zone vide du Concepteur O/R.
+2. Faites glisser l’objet de base de données à partir de **Explorateur de serveurs** / **Explorateur de base de données** dans une zone vide du Concepteur O/R.
 
 3. Enregistrez le fichier .dbml.
 

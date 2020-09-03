@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 78bd0143ee2584bcabb5e8ed4946818ee2590789
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85286698"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Gérer les contrôleurs de test et les agents de test
@@ -129,7 +129,7 @@ Les statuts possibles d'un agent de test sont les suivants :
 
 |Statut|Description|
 |-|-----------------|
-|Exécution du test en cours|Exécution de tests|
+|Exécution du test en cours|Exécution des tests|
 |Ready|Disponible pour l'exécution de tests et la collecte de données et de diagnostics|
 |Hors connexion|Non disponible pour l'exécution de tests et la collecte de données et de diagnostics|
 |Déconnecté|L'agent de test n'est pas lancé|

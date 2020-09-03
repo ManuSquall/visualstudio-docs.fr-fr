@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 789c60da5be841721ab3a999120e2fe560ffd588
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156603"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Comment : étendre le processus de génération Visual Studio
@@ -37,7 +37,7 @@ Le processus de génération [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] est d�
 
 1. Identifiez la cible prédéfinie dans Microsoft.Common.targets que vous souhaitez remplacer. Consultez le tableau ci-dessous pour obtenir la liste complète des cibles que vous pouvez substituer en toute sécurité.
 
-2. Définissez la ou les cibles à la fin de votre fichier projet, juste avant la balise `</Project>`. Par exemple :
+2. Définissez la ou les cibles à la fin de votre fichier projet, juste avant la balise `</Project>`. Par exemple :
 
    ```
    <Project>
@@ -68,7 +68,7 @@ Le processus de génération [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] est d�
 ## <a name="overriding-dependson-properties"></a>Substitution des propriétés « DependsOn »
  La substitution de cibles prédéfinies est un moyen facile d’étendre le processus de génération. Toutefois, étant donné que [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] évalue la définition des cibles de manière séquentielle, il n’existe aucun moyen d’empêcher un autre projet qui importe votre projet de substituer les cibles que vous avez déjà substituées. Ainsi, par exemple, la dernière cible `AfterBuild` définie dans le fichier projet, une fois que tous les autres projets ont été importés, sera celle utilisée pour la génération.
 
- Vous pouvez empêcher la substitution involontaire des cibles en substituant les propriétés « DependsOn » qui sont utilisées dans les attributs `DependsOnTargets` du fichier Microsoft.Common.targets. Par exemple, la cible `Build` contient une valeur d’attribut `DependsOnTargets` égale à `"$(BuildDependsOn)"`. Prenez en compte ce qui suit :
+ Vous pouvez empêcher la substitution involontaire des cibles en substituant les propriétés « DependsOn » qui sont utilisées dans les attributs `DependsOnTargets` du fichier Microsoft.Common.targets. Par exemple, la cible `Build` contient une valeur d’attribut `DependsOnTargets` égale à `"$(BuildDependsOn)"`. Considérez les aspects suivants :
 
 ```
 <Target Name="Build" DependsOnTargets="$(BuildDependsOn)"/>
@@ -86,7 +86,7 @@ Le processus de génération [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] est d�
 </PropertyGroup>
 ```
 
- Vous pouvez remplacer cette valeur de propriété en déclarant une autre propriété nommée `BuildDependsOn` à la fin de votre fichier projet. En incluant la propriété `BuildDependsOn` précédente dans la nouvelle propriété, vous pouvez ajouter de nouvelles cibles au début et à la fin de la liste de cibles. Par exemple :
+ Vous pouvez remplacer cette valeur de propriété en déclarant une autre propriété nommée `BuildDependsOn` à la fin de votre fichier projet. En incluant la propriété `BuildDependsOn` précédente dans la nouvelle propriété, vous pouvez ajouter de nouvelles cibles au début et à la fin de la liste de cibles. Par exemple :
 
 ```
 <PropertyGroup>

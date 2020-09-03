@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 4adcae1c1cc616cdbcf5a7aa15342d221c2f4300
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85540580"
 ---
 # <a name="ca2228-do-not-ship-unreleased-resource-formats"></a>CA2228 : Ne distribuez pas des formats de ressources non commercialisés
@@ -32,7 +32,7 @@ ms.locfileid: "85540580"
 |Category|Microsoft. usage|
 |Modification avec rupture|Sans rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Un fichier de ressources a été créé à l’aide d’une version de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] qui n’est pas prise en charge actuellement.
 
 ## <a name="rule-description"></a>Description de la règle

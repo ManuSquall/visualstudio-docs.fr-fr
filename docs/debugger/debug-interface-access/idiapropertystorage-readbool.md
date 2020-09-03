@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7d94e38ade7b44d7458a0918080214d00e0000aa
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85466608"
 ---
 # <a name="idiapropertystoragereadbool"></a>IDiaPropertyStorage::ReadBOOL
@@ -43,7 +43,7 @@ dans Identificateur de la propriété à lire ( `PROPID` défini dans WTypes. h 
 ## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne un code d’erreur. Retourne `E_INVALIDARG` si la propriété n’est pas de type `BOOL` .
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Pour obtenir des résultats cohérents, interpréter la `BOOL` valeur de sorte que les valeurs autres que zéro soient `TRUE` et zéro est `FALSE` .
 
 ## <a name="see-also"></a>Voir aussi

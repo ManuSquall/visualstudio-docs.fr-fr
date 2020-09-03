@@ -10,28 +10,28 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3bb2cf8e85dadb6ad9391da8227508b770c39bbe
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672645"
 ---
 # <a name="migration-activity-designers"></a>Concepteurs d'activités de migration
 Les concepteurs d'activités de migration permettent d'appeler des activités de workflow 3.0/3.5 à partir d'un workflow ciblant le [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)]. Les rubriques contenues de cette section fournissent des conseils sur la façon d'utiliser les concepteurs d'activités [!INCLUDE[wfd2](../includes/wfd2-md.md)].
 
 ## <a name="in-this-section"></a>Dans cette section
- [Interopérabilité](../workflow-designer/interop-activity-designer.md) Utilisé pour créer et configurer une activité <xref:System.Activities.Statements.Interop>.
+ [Interopérabilité](../workflow-designer/interop-activity-designer.md) Utilisé pour créer et configurer une <xref:System.Activities.Statements.Interop> activité.
 
-## <a name="reference"></a>Reference
+## <a name="reference"></a>Informations de référence
 
-## <a name="related-sections"></a>Rubriques connexes
+## <a name="related-sections"></a>Sections connexes
  Pour les autres types de concepteurs d'activités, consultez les rubriques suivantes.
 
  [Flux de contrôle](../workflow-designer/control-flow-activity-designers.md)
 
  [Organigramme](../workflow-designer/flowchart-activity-designers.md)
 
- [Utilisation des concepteurs d’activités](../workflow-designer/using-the-activity-designers.md)
+ [Utilisation des concepteurs d'activités](../workflow-designer/using-the-activity-designers.md)
 
  [Messagerie](../workflow-designer/messaging-activity-designers.md)
 
@@ -41,6 +41,6 @@ Les concepteurs d'activités de migration permettent d'appeler des activités de
 
  [Transaction](../workflow-designer/transaction-activity-designers.md)
 
- [Regroupement](../workflow-designer/collection-activity-designers.md)
+ [Collection](../workflow-designer/collection-activity-designers.md)
 
  [Gestion des erreurs](../workflow-designer/error-handling-activity-designers.md)

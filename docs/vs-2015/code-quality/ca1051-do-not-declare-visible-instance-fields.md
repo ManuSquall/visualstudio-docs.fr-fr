@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 076ce3858774d44e2d6c4c25205ced74b7a41bf0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539761"
 ---
 # <a name="ca1051-do-not-declare-visible-instance-fields"></a>CA1051 : Ne pas déclarer de champs d'instances visibles
@@ -32,7 +32,7 @@ ms.locfileid: "85539761"
 |Category|Microsoft. Design|
 |Modification avec rupture|Rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Un type visible de l’extérieur contient un champ d’instance visible de l’extérieur.
 
 ## <a name="rule-description"></a>Description de la règle
@@ -47,7 +47,7 @@ ms.locfileid: "85539761"
  Ne supprimez aucun avertissement de cette règle. Les champs visibles de l’extérieur ne fournissent aucun avantage qui ne sont pas disponibles pour les propriétés. En outre, les champs publics ne peuvent pas être protégés par des [demandes de liaison](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d). Consultez [CA2112 : les types sécurisés ne doivent pas exposer de champs](../code-quality/ca2112-secured-types-should-not-expose-fields.md).
 
 ## <a name="example"></a>Exemple
- L’exemple suivant montre un type ( `BadPublicInstanceFields` ) qui enfreint cette règle. `GoodPublicInstanceFields`affiche le code corrigé.
+ L’exemple suivant montre un type ( `BadPublicInstanceFields` ) qui enfreint cette règle. `GoodPublicInstanceFields` affiche le code corrigé.
 
  [!code-csharp[FxCop.Design.TypesPublicInstanceFields#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.TypesPublicInstanceFields/cs/FxCop.Design.TypesPublicInstanceFields.cs#1)]
 

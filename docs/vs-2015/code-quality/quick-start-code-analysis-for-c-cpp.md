@@ -1,5 +1,5 @@
 ---
-title: 'Démarrage rapide : analyse du code pour CC++ -| Microsoft Docs'
+title: 'Démarrage rapide : analyse du code pour C-C++ | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -13,10 +13,10 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: e9db06ec0748ce4499afb423fac03886cd763301
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77278482"
 ---
 # <a name="quick-start-code-analysis-for-cc"></a>Démarrage rapide : analyse du code pour C/C++
@@ -28,17 +28,17 @@ Vous pouvez améliorer la qualité de votre application en exécutant l'analyse 
   
 - [Configurer des ensembles de règles pour un projet](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_ConfigureRuleSets)  
   
-- [Exécuter l’analyse du code](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Run)  
+- [Exécuter l'analyse du code](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Run)  
   
-- [Analyser et résoudre les avertissements d’analyse du code](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Analyze)  
+- [Analyser et résoudre les avertissements d'analyse du code](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Analyze)  
   
 - [Suppression des avertissements de l’analyse du code](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Suppress)  
   
-- [Créer des éléments de travail pour les avertissements d’analyse du code](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Creating_work_items_for_code_analysis_warnings)  
+- [Créer des éléments de travail pour les avertissements d'analyse du code](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Creating_work_items_for_code_analysis_warnings)  
   
 - [Explorer et filtrer les résultats d’analyse du code](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Search)  
   
-## <a name="BKMK_ConfigureRuleSets"></a>Configurer des ensembles de règles pour un projet  
+## <a name="configure-rule-sets-for-a-project"></a><a name="BKMK_ConfigureRuleSets"></a> Configurer des ensembles de règles pour un projet  
   
 1. Dans **Explorateur de solutions**, ouvrez le menu contextuel du nom du projet, puis choisissez **Propriétés**.  
   
@@ -51,13 +51,13 @@ Vous pouvez améliorer la qualité de votre application en exécutant l'analyse 
         > [!NOTE]
         > Cette option ne supprime pas les erreurs d'analyse du code et les avertissements du code généré qui apparaissent dans les formulaires et les modèles. Vous pouvez afficher et gérer le code source pour un formulaire ou un modèle.  
   
-3. Pour exécuter l’analyse du code chaque fois que le projet est généré à l’aide de la configuration sélectionnée, activez la case à cocher **activer l’analyse du code pourC++ C/on Build** . Vous pouvez également exécuter l’analyse du code manuellement en ouvrant le menu **analyser** , puis en sélectionnant **exécuter l’analyse du code sur** *ProjectName*.  
+3. Pour exécuter l’analyse du code chaque fois que le projet est généré à l’aide de la configuration sélectionnée, activez la case à cocher **activer l’analyse du code pour C/C++ sur la build** . Vous pouvez également exécuter l’analyse du code manuellement en ouvrant le menu **analyser** , puis en sélectionnant **exécuter l’analyse du code sur** *ProjectName*.  
   
 4. Dans la liste **exécuter cet ensemble de règles** , effectuez l’une des opérations suivantes :  
   
     - Choisissez l'ensemble de règles que vous souhaitez utiliser.  
   
-    - Choisir **\<parcourir... >** pour spécifier un ensemble de règles personnalisé existant qui ne figure pas dans la liste.  
+    - Choisissez **\<Browse...>** de spécifier un ensemble de règles personnalisé existant qui ne figure pas dans la liste.  
   
     - Définissez un ensemble de règles personnalisé.  
   
@@ -71,7 +71,7 @@ Vous pouvez améliorer la qualité de votre application en exécutant l'analyse 
 |Règles minimales recommandées par Microsoft pour les projets natifs|Cet ensemble de règles couvre les problèmes les plus critiques rencontrés dans votre code natif, notamment les failles de sécurité potentielles et les blocages d'application. Vous devez inclure cet ensemble de règles dans tout ensemble de règles personnalisé que vous créez pour vos projets natifs.|  
 |Règles recommandées natives Microsoft|Cet ensemble de règles couvre une large gamme de problèmes. Il inclut toutes les règles dans l'ensemble Règles minimales recommandées par Microsoft pour les projets natifs.|  
   
-## <a name="BKMK_Run"></a>Exécuter l’analyse du code  
+## <a name="run-code-analysis"></a><a name="BKMK_Run"></a> Exécuter l’analyse du code  
  Dans la page Analyse du code des pages de propriétés du projet, vous pouvez configurer l'analyse du code pour l'exécuter chaque fois que vous générez votre projet. Vous pouvez également exécuter l'analyse du code manuellement.  
   
  Pour exécuter l'analyse du code sur une solution :  
@@ -86,17 +86,17 @@ Vous pouvez améliorer la qualité de votre application en exécutant l'analyse 
   
   Le projet ou la solution est compilé et l'analyse du code est exécutée. Les résultats s'affichent dans la fenêtre Analyse du code.  
   
-## <a name="BKMK_Analyze"></a>Analyser et résoudre les avertissements d’analyse du code  
+## <a name="analyze-and-resolve-code-analysis-warnings"></a><a name="BKMK_Analyze"></a> Analyser et résoudre les avertissements d’analyse du code  
  Pour analyser un avertissement spécifique, choisissez le titre de l'avertissement dans la fenêtre Analyse du code. L'avertissement se développe pour afficher des informations supplémentaires sur le problème. Dans la mesure du possible, l'analyse du code affiche les numéros de ligne et la logique d'analyse qui a conduit à l'avertissement. Pour plus d'informations sur l'avertissement, y compris les solutions possibles au problème, choisissez l'identificateur d'avertissement pour afficher la rubrique d'aide du message dans la bibliothèque MSDN.  
   
- Quand vous développez un avertissement, la ligne de code à l'origine de l'avertissement est mise en surbrillance dans l'éditeur de code Visual Studio.  
+ Lorsque vous développez un avertissement, la ligne de code à l’origine de l’avertissement est mise en surbrillance dans l’éditeur de code Visual Studio.  
   
- Après avoir identifié le problème, vous pouvez le résoudre dans votre code. Réexécutez l'analyse du code pour vérifier que l'avertissement n'apparaît plus dans la fenêtre Analyse du code et que votre correctif n'a pas généré de nouveaux avertissements.  
+ Après avoir identifié le problème, vous pouvez le résoudre dans votre code. Relancez ensuite l'analyse du code pour vérifier que l'avertissement ne s'affiche plus dans la fenêtre Analyse du code, et que le correctif n'a pas levé de nouveaux avertissements.  
   
 > [!TIP]
 > Vous pouvez réexécuter l'analyse du code dans la fenêtre Analyse du code. Choisissez le bouton **analyser** et choisissez la portée de l’analyse. Vous pouvez réexécuter l'analyse sur la solution complète ou sur un projet sélectionné.  
   
-## <a name="BKMK_Suppress"></a> Suppression des avertissements de l’analyse du code  
+## <a name="suppressing-code-analysis-warnings"></a><a name="BKMK_Suppress"></a> Suppression des avertissements d’analyse du code  
  Vous pouvez décider, dans certaines situations, de ne pas corriger un avertissement de l'analyse du code. Vous pouvez décider que la résolution de l'avertissement requiert un recodage trop important par rapport à la probabilité que le problème se produise dans une implémentation réelle de votre code. Vous pouvez également estimer que l'analyse utilisée dans l'avertissement est inadéquate pour le contexte particulier. Vous pouvez supprimer des avertissements individuels afin qu'ils n'apparaissent plus dans la fenêtre Analyse du code.  
   
  Pour supprimer un avertissement :  
@@ -107,12 +107,12 @@ Vous pouvez améliorer la qualité de votre application en exécutant l'analyse 
   
 3. Choisissez **supprimer le message** , puis sélectionnez **dans la source**.  
   
-   La suppression d’un message insère `#pragma warning (disable:`*WarningId*`)` qui supprime l’avertissement pour la ligne de code.  
+   La suppression d’un message insère `#pragma warning (disable:` *warningld,* `)` qui supprime l’avertissement pour la ligne de code.  
   
-## <a name="BKMK_Creating_work_items_for_code_analysis_warnings"></a>Créer des éléments de travail pour les avertissements d’analyse du code  
+## <a name="creating-work-items-for-code-analysis-warnings"></a><a name="BKMK_Creating_work_items_for_code_analysis_warnings"></a> Créer des éléments de travail pour les avertissements d’analyse du code  
  Vous pouvez utiliser la fonctionnalité de suivi des éléments de travail pour enregistrer les bogues à partir de Visual Studio. Pour utiliser cette fonctionnalité, vous devez vous connecter à une instance de Team Foundation Server.  
   
- **Pour créer un élément de travail pour un ou plusieurs avertissementsC++ C/code**  
+ **Pour créer un élément de travail pour un ou plusieurs avertissements de code C/C++**  
   
 1. Dans la fenêtre Analyse du code, développez et sélectionnez les avertissements.  
   
@@ -122,8 +122,8 @@ Vous pouvez améliorer la qualité de votre application en exécutant l'analyse 
   
 4. Ajoutez des informations supplémentaires, puis choisissez **enregistrer l’élément de travail**.  
   
-## <a name="BKMK_Search"></a> Explorer et filtrer les résultats d’analyse du code  
- Vous pouvez effectuer une recherche dans de longues listes de messages d'avertissement et filtrer les avertissements dans les solutions à projets multiples.  
+## <a name="searching-and-filtering-code-analysis-results"></a><a name="BKMK_Search"></a> Recherche et filtrage des résultats de l’analyse du code  
+ Vous pouvez effectuer une recherche dans de longues listes de messages d'avertissement, et vous pouvez filtrer les avertissements dans les solutions à projets multiples.  
   
 1. **Pour filtrer les avertissements par titre ou ID d’avertissement**: entrez le mot clé dans la zone de texte **filtre** .  
   

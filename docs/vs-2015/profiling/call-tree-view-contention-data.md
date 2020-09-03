@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5d12f1a2343018f05f0e741222b844c562b50f5e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68189361"
 ---
 # <a name="call-tree-view---contention-data"></a>Vue Arborescence des appels - Données de conflit
@@ -38,27 +38,27 @@ La vue Arborescence des appels affiche les chemins d’exécution de la fonction
 |Colonne|Description|  
 |------------|-----------------|  
 |**Temps bloqué exclusif**|Durée pendant laquelle des instances de cette fonction dans ce chemin d’exécution n’ont pas pu s’exécuter au cours de l’exécution du profilage. Cette durée n’inclut pas le temps bloqué des fonctions enfants qui ont été appelées par la fonction.|  
-|**% de temps bloqué exclusif**|Pourcentage de tout le temps bloqué au cours de l’exécution de profilage qui était du temps bloqué exclusif pour cette fonction dans ce chemin d’exécution.|  
+|**% de temps bloqué exclusif**|Pourcentage de tout le temps bloqué au cours de l’exécution de profilage qui était du temps bloqué exclusif pour cette fonction dans ce chemin d’exécution.|  
 |**Conflits exclusifs**|Nombre de conflits qui se sont produits dans des instances de cette fonction dans ce chemin d’exécution. Ce nombre n’inclut pas les conflits des fonctions enfants appelées par la fonction.|  
-|**% de conflits exclusifs**|Pourcentage de tous les conflits au cours de l’exécution du profilage qui étaient des conflits exclusifs des instances de cette fonction appelées par la fonction parente dans l’arborescence des appels.|  
+|**% de conflits exclusifs**|Pourcentage de tous les conflits au cours de l’exécution du profilage qui étaient des conflits exclusifs des instances de cette fonction appelées par la fonction parente dans l’arborescence des appels.|  
 |**Adresse de la fonction**|Adresse de la fonction.|  
 |**Nom de la fonction**|Nom complet de la fonction.|  
 |**Temps bloqué inclusif**|Durée totale pendant laquelle les instances de cette fonction dans ce chemin d’exécution n’ont pas pu s’exécuter au cours de l’exécution du profilage. Cette durée inclut le temps bloqué des fonctions enfants appelées par la fonction.|  
-|**% de temps bloqué inclusif**|Pourcentage de tout le temps bloqué au cours de l’exécution de profilage qui était du temps bloqué inclusif pour les instances de cette fonction dans ce chemin d’exécution.|  
+|**% de temps bloqué inclusif**|Pourcentage de tout le temps bloqué au cours de l’exécution de profilage qui était du temps bloqué inclusif pour les instances de cette fonction dans ce chemin d’exécution.|  
 |**Conflits inclusifs**|Nombre total de conflits ayant bloqué des instances de cette fonction dans ce chemin d’exécution. Ce nombre inclut les conflits des fonctions enfants appelées par la fonction.|  
-|**% de conflits inclusifs**|Pourcentage de tous les conflits au cours de l’exécution de profilage qui étaient des conflits inclusifs des instances de cette fonction dans ce contexte d’exécution.|  
+|**% de conflits inclusifs**|Pourcentage de tous les conflits au cours de l’exécution de profilage qui étaient des conflits inclusifs des instances de cette fonction dans ce contexte d’exécution.|  
 |**Niveau**|Niveau de la fonction dans l’arborescence des appels. Uniquement dans les rapports en ligne de commande VSReport. Pour plus d’informations, consultez [VSPerfReport](../profiling/vsperfreport.md).|  
 |**Numéro de ligne de fonction**|Numéro de ligne du début de cette fonction dans le fichier source.|  
-|**Nom de module**|Nom du module qui contient la fonction.|  
-|**Chemin de module**|Chemin d’accès du module qui contient la fonction.|  
-|**ID du processus**|ID du processus (PID) de l'exécution du profilage.|  
+|**Nom du module**|Nom du module qui contient la fonction.|  
+|**Chemin du module**|Chemin d’accès du module qui contient la fonction.|  
+|**ID de processus**|ID du processus (PID) de l'exécution du profilage.|  
 |**Nom du processus**|Nom du processus.|  
-|**Fichier source**|Fichier source contenant la définition pour cette fonction.|  
+|**Source File**|Fichier source contenant la définition pour cette fonction.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour personnaliser les colonnes de la vue de rapport](../profiling/how-to-customize-report-view-columns.md)   
- [Vue Arborescence des appels](../profiling/call-tree-view.md)   
- [Vue Arborescence des appels - Instrumentation](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
- [Vue Arborescence des appels - Échantillonnage](../profiling/call-tree-view-dotnet-memory-sampling-data.md)   
- [Arborescence des appels, vue](../profiling/call-tree-view-instrumentation-data.md)   
- [Mode Arborescence des appels](../profiling/call-tree-view-sampling-data.md)
+ [Comment : personnaliser les colonnes de la vue rapport](../profiling/how-to-customize-report-view-columns.md)   
+ [Vue arborescence des appels](../profiling/call-tree-view.md)   
+ [Vue arborescence des appels-Instrumentation](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
+ [Vue arborescence des appels-échantillonnage](../profiling/call-tree-view-dotnet-memory-sampling-data.md)   
+ [Vue arborescence des appels](../profiling/call-tree-view-instrumentation-data.md)   
+ [Vue Arborescence des appels](../profiling/call-tree-view-sampling-data.md)
