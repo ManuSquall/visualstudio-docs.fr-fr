@@ -1,5 +1,5 @@
 ---
-title: Commandes définies par l’IDE pour l’extension des systèmes de projets (fr) Microsoft Docs
+title: Commandes définies par l’IDE pour l’extension des systèmes de projet | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,62 +12,62 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 61c0b2924548f50ad650389e3ad81759be1986a4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80707738"
 ---
 # <a name="ide-defined-commands-for-extending-project-systems"></a>Commandes définies par l’IDE pour l’extension des systèmes de projet
-Lorsque vous souhaitez étendre les systèmes de projet, vous [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pouvez utiliser des commandes et des groupes de commandement fournis par l’IDE.
+Lorsque vous souhaitez étendre des systèmes de projet, vous pouvez utiliser des commandes et des groupes de commandes fournis par l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.
 
- Les sections suivantes énumèrent les éléments de commande qui sont particulièrement utiles pour l’extension des systèmes de projet.
+ Les sections suivantes répertorient les éléments de commande qui sont particulièrement utiles pour l’extension des systèmes de projet.
 
 ## <a name="command-menus"></a>Menus de commande
- Le tableau suivant montre les menus de commande qui sont des emplacements utiles pour vous de mettre des commandes de haut niveau qui invoquent un prolongateur de projet.
+ Le tableau suivant présente les menus de commande qui sont des emplacements utiles pour placer des commandes de haut niveau qui appellent un extendeur de projet.
 
-|Menu de commande|Description|
+|Menu commande|Description|
 |------------------|-----------------|
-|IDM_VS_MENU_PROJECT|Le menu de haut niveau **du Projet.**|
-|IDM_VS_TOOL_PROJWIN|La barre d’outils **Solution Explorer.**|
+|IDM_VS_MENU_PROJECT|Menu de niveau supérieur du **projet** .|
+|IDM_VS_TOOL_PROJWIN|Barre d’outils **Explorateur de solutions** .|
 
 ## <a name="shortcut-menus"></a>Menus contextuels
- Le tableau suivant montre les menus raccourcis qui s’appliquent lorsqu’un seul nœud est sélectionné dans la **Solution Explorer**, ou lorsqu’il y a plusieurs sélections homogènes dans la **Solution Explorer**, qui est lorsque tous les nœuds sélectionnés sont du même type.
+ Le tableau suivant présente les menus contextuels qui s’appliquent lorsqu’un seul nœud est sélectionné dans le **Explorateur de solutions**, ou lorsqu’il y a plusieurs sélections homogènes dans le **Explorateur de solutions**, ce qui est le cas lorsque tous les nœuds sélectionnés sont du même type.
 
-|Menu raccourci|Description|
+|Menu contextuel|Description|
 |-------------------|-----------------|
-|<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_PROJNODE>|S’applique lorsque le nœud de projet est sélectionné.|
+|<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_PROJNODE>|S’applique lorsque le nœud du projet est sélectionné.|
 |<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_ITEMNODE>|S’applique lorsqu’un fichier est sélectionné.|
 |<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_FOLDERNODE>|S’applique lorsqu’un dossier est sélectionné.|
 |IDM_VS_CTXT_WEBREFFOLDER|S’applique lorsque le dossier de référence Web est sélectionné.|
-|<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_REFERENCEROOT>|S’applique lorsque le nœud racine des références appelé "Références" est sélectionné.|
-|<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_REFERENCE>|S’applique lorsque les nœuds de référence sont sélectionnés; il s’agit notamment de l’assemblage, COM, et les références de projet seulement. N’inclut pas les références Web.|
+|<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_REFERENCEROOT>|S’applique lorsque le nœud racine des références appelé « références » est sélectionné.|
+|<xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_REFERENCE>|S’applique lorsque les nœuds de référence sont sélectionnés ; Cela inclut uniquement les références d’assembly, COM et de projet. N’inclut pas les références Web.|
 
- Le tableau suivant affiche les menus raccourcis qui s’appliquent lorsque la sélection dans la **Solution Explorer** s’étend sur plusieurs hiérarchies,
+ Le tableau suivant répertorie les menus contextuels qui s’appliquent lorsque la sélection dans le **Explorateur de solutions** s’étend sur plusieurs hiérarchies.
 
-|Menu raccourci|Description|
+|Menu contextuel|Description|
 |-------------------|-----------------|
-|IDM_VS_CTXT_XPROJ_SLNPROJ|S’applique lorsque la sélection actuelle contient le nœud de solution et les nœuds de projet root.|
-|IDM_VS_CTXT_XPROJ_SLNITEM|S’applique lorsque la sélection actuelle contient le nœud de solution et les éléments du projet.|
-|IDM_VS_CTXT_XPROJ_MULTIPROJ|S’applique lorsque la sélection actuelle se compose de nœuds de projet de racine multiple seulement.|
-|IDM_VS_CTXT_XPROJ_PROJITEM|S’applique lorsque la sélection actuelle contient un mélange de nœuds de projets racinaires et d’éléments de projet. En outre, la sélection peut contenir le nœud de solution.|
-|IDM_VS_CTXT_XPROJ_MULTIITEM|S’applique lorsque la sélection actuelle contient des éléments de projet provenant de plusieurs projets dans la solution, ou lorsque des éléments de différents types sont sélectionnés dans le même projet.|
+|IDM_VS_CTXT_XPROJ_SLNPROJ|S’applique lorsque la sélection actuelle contient le nœud de la solution et les nœuds du projet racine.|
+|IDM_VS_CTXT_XPROJ_SLNITEM|S’applique lorsque la sélection actuelle contient le nœud de la solution et les éléments de projet.|
+|IDM_VS_CTXT_XPROJ_MULTIPROJ|S’applique lorsque la sélection actuelle se compose de plusieurs nœuds de projet racine uniquement.|
+|IDM_VS_CTXT_XPROJ_PROJITEM|S’applique lorsque la sélection actuelle contient une combinaison de nœuds de projet racine et d’éléments de projet. En outre, la sélection peut contenir le nœud de la solution.|
+|IDM_VS_CTXT_XPROJ_MULTIITEM|S’applique lorsque la sélection actuelle contient des éléments de projet de plusieurs projets de la solution, ou lorsque des éléments de différents types sont sélectionnés dans le même projet.|
 
-## <a name="command-groups"></a>Groupes de commandement
- Le tableau suivant montre les groupes de commande que vous pouvez utiliser <xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_PROJNODE> lorsque vous prolongez des projets, et que vous pouvez accéder par le menu raccourci.
+## <a name="command-groups"></a>Groupes de commandes
+ Le tableau suivant répertorie les groupes de commandes que vous pouvez utiliser lorsque vous étendez des projets, et que vous pouvez accéder via le <xref:Microsoft.VisualStudio.Shell.VsMenus.IDM_VS_CTXT_PROJNODE> menu contextuel.
 
-|Groupe de commandement|Description|
+|Groupe de commandes|Description|
 |-------------------|-----------------|
-|IDG_VS_CTXT_PROJECT_BUILD|Commandements pour la construction, la reconstruction et le déploiement du projet.|
-|IDG_VS_CTXT_COMPILELINK|Commandes pour la compilation et l’établissement de liens entre le projet.|
-|IDG_VS_CTXT_PROJECT_CONFIG|Commandes qui définitent la configuration du projet et construisent l’ordre.|
+|IDG_VS_CTXT_PROJECT_BUILD|Commandes pour la génération, la régénération et le déploiement du projet.|
+|IDG_VS_CTXT_COMPILELINK|Commandes pour la compilation et la liaison du projet.|
+|IDG_VS_CTXT_PROJECT_CONFIG|Commandes qui définissent la configuration du projet et l’ordre de génération.|
 |IDG_VS_CTXT_PROJECT_ADD|Commandes qui ajoutent des éléments au projet.|
-|IDG_VS_CTXT_PROJECT_START|Commandes qui fixent le projet de démarrage associé à la clé F5.|
-|IDG_VS_CTXT_PROJECT_SAVE|Commandes pour sauver les éléments du projet.|
-|IDG_VS_CTXT_PROJECT_DEBUG|Commandes pour débogage.|
-|IDG_VS_CTXT_PROJECT_SCC|Commandes pour le contrôle des sources.|
-|IDG_VS_CTXT_PROJECT_TRANSFER|Commandes pour les opérations de coupe, de copie et de pâte.|
-|IDG_VS_CTXT_PROJECT_PROPERTIES|Commandes qui donnent accès à la boîte de dialogue **Project Properties.**|
+|IDG_VS_CTXT_PROJECT_START|Commandes qui définissent le projet de démarrage associé à la touche F5.|
+|IDG_VS_CTXT_PROJECT_SAVE|Commandes pour enregistrer les éléments de projet.|
+|IDG_VS_CTXT_PROJECT_DEBUG|Commandes pour le débogage.|
+|IDG_VS_CTXT_PROJECT_SCC|Commandes pour le contrôle de code source.|
+|IDG_VS_CTXT_PROJECT_TRANSFER|Commandes pour les opérations couper, copier et coller.|
+|IDG_VS_CTXT_PROJECT_PROPERTIES|Commandes qui permettent d’accéder à la boîte de dialogue **Propriétés du projet** .|
 
 ## <a name="see-also"></a>Voir aussi
 

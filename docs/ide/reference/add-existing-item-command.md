@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4d49f0fde7bbf13a1219296420b84970f4350860
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585702"
 ---
 # <a name="add-existing-item-command"></a>Ajouter un élément existant, commande
@@ -43,10 +43,10 @@ La syntaxe de l’argument /e:`editorname` utilise les noms d’éditeur tels qu
 /e:"Source Code (text) Editor"
 ```
 
-## <a name="remarks"></a>Notes 
+## <a name="remarks"></a>Notes
 La fonctionnalité de saisie semi-automatique tente de trouver le chemin et le nom de fichier correspondant aux caractères que vous tapez.
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 Cet exemple ajoute le fichier Form1.frm à la solution actuelle.
 
 ```cmd
@@ -55,7 +55,7 @@ Cet exemple ajoute le fichier Form1.frm à la solution actuelle.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Commandes de studio visuel](../../ide/reference/visual-studio-commands.md)
-- [Commande, fenêtre](../../ide/reference/command-window.md)
-- [Boîte de recherche/commande](../../ide/find-command-box.md)
-- [Alias de commande de studio visuel](../../ide/reference/visual-studio-command-aliases.md)
+- [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)
+- [Fenêtre commande](../../ide/reference/command-window.md)
+- [Zone Rechercher/commande](../../ide/find-command-box.md)
+- [Alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

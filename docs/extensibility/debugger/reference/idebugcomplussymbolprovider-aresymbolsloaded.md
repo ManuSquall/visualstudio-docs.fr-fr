@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::AreSymbolsLoaded Microsoft Docs
+title: 'IDebugComPlusSymbolProvider :: AreSymbolsLoaded | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 44dceaa8b5cffd3bd81b7e8527368c38a6faaf18
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734162"
 ---
 # <a name="idebugcomplussymbolprovideraresymbolsloaded"></a>IDebugComPlusSymbolProvider::AreSymbolsLoaded
-Détermine si les symboles de débogé sont chargés pour le module spécifié étant donné l’identifiant de domaine d’application.
+Détermine si les symboles de débogage sont chargés pour le module spécifié en fonction de l’identificateur de domaine d’application.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -42,16 +42,16 @@ int AreSymbolsLoaded (
 
 ## <a name="parameters"></a>Paramètres
 `ulAppDomainID`\
-[dans] Identifiant pour le domaine de l’application.
+dans Identificateur du domaine d’application.
 
 `guidModule`\
-[dans] Identifiant unique pour le module.
+dans Identificateur unique du module.
 
-## <a name="return-value"></a>Valeur de retour
-Si les symboles de débogé sont chargés, retourne `S_OK`; autrement, `S_FALSE`les retours .
+## <a name="return-value"></a>Valeur renvoyée
+Si les symboles de débogage sont chargés, retourne `S_OK` ; sinon, retourne `S_FALSE` .
 
 ## <a name="example"></a>Exemple
-L’exemple suivant montre comment implémenter cette méthode pour un objet **CDebugSymbolProvider** qui expose [l’interface IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+L’exemple suivant montre comment implémenter cette méthode pour un objet **CDebugSymbolProvider** qui expose l’interface [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) .
 
 ```cpp
 HRESULT CDebugSymbolProvider::AreSymbolsLoaded(

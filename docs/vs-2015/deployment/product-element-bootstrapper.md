@@ -1,5 +1,5 @@
 ---
-title: '&lt;Produit&gt; élément (programme d’amorçage) | Microsoft Docs'
+title: '&lt;Product &gt; , élément (programme d’amorçage) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -17,16 +17,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c3c1304a0ff93c58add65f20aa417bb547f5bb31
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200642"
 ---
-# <a name="ltproductgt-element-bootstrapper"></a>&lt;Produit&gt; élément (programme d’amorçage)
+# <a name="ltproductgt-element-bootstrapper"></a>&lt;Product &gt; , élément (programme d’amorçage)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Le `Product` élément est l’élément XML de niveau supérieur à l’intérieur d’un fichier de produit.  
+L' `Product` élément est l’élément XML de niveau supérieur à l’intérieur d’un fichier produit.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -141,14 +141,14 @@ ProductCode
 ```  
   
 ## <a name="elements-and-attributes"></a>Éléments et attributs  
- Le `Product` élément est requis dans un fichier de produit. Il possède l’attribut suivant.  
+ L' `Product` élément est requis dans un fichier de produit. Il a l’attribut suivant.  
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|`ProductCode`|Un identificateur unique pour le produit.|  
+|`ProductCode`|Identificateur unique du produit.|  
   
 ## <a name="example"></a>Exemple  
- L’exemple de code suivant montre un fichier de produit complet pour l’installation de le [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  
+ L’exemple de code suivant affiche un fichier produit complet pour l’installation de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] .  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -253,4 +253,4 @@ ProductCode
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Informations de référence sur le schéma de produit et de package](../deployment/product-and-package-schema-reference.md)
+ [Référence du schéma de produit et de package](../deployment/product-and-package-schema-reference.md)

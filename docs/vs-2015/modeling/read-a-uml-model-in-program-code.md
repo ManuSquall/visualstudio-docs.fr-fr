@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bbc55204987f4b6ea0d45c4228f6c194f1ebaf64
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671311"
 ---
 # <a name="read-a-uml-model-in-program-code"></a>Lire un modèle UML dans le code de programme
@@ -23,10 +23,10 @@ ms.locfileid: "72671311"
 
 Vous pouvez charger un modèle UML et ses diagrammes à l'aide de l'API UML.
 
-## <a name="Reading"></a>Lecture d’un modèle dans le code de programme
+## <a name="reading-a-model-in-program-code"></a><a name="Reading"></a> Lecture d’un modèle dans le code de programme
  Pour accéder au contenu d'un modèle sans l'afficher dans une fenêtre [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], utilisez `ModelingProject.LoadReadOnly()`.
 
- Exemple :
+ Par exemple :
 
 ```
 using Microsoft.VisualStudio.Uml.Classes;
@@ -50,7 +50,7 @@ using (IModelingProjectReader projectReader =
 
  Si vous voulez lire les formes dans un diagramme, vous devez lire le projet, puis le diagramme.
 
- Exemple :
+ Par exemple :
 
 ```
 using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation;
@@ -70,7 +70,7 @@ foreach (string diagramFile in projectReader. DiagramFileNames)
 
  Vous pouvez aussi ouvrir des modèles et des diagrammes dans l'interface utilisateur à l'aide de l'API [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Pour plus d’informations, consultez [ouvrir un modèle UML à l’aide de l’API Visual Studio](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md).
 
-## <a name="Standalone"></a>Applications autonomes
+## <a name="stand-alone-applications"></a><a name="Standalone"></a> Applications autonomes
  L'exemple de la section précédente fonctionne dans les extensions Visual Studio. Il est possible de lire un modèle dans une application autonome, mais vous devez ajouter des références à votre projet [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
 > [!NOTE]

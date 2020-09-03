@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::GetNameFromToken ( Microsoft Docs
+title: 'IDebugComPlusSymbolProvider :: GetNameFromToken, | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 544bb2ed8a5526c04c46c6609c6bca3b6bf57bdf
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733780"
 ---
 # <a name="idebugcomplussymbolprovidergetnamefromtoken"></a>IDebugComPlusSymbolProvider::GetNameFromToken
-Retourne le nom associé au jeton spécifié compte tenu de son objet métadonnées.
+Retourne le nom associé au jeton spécifié en fonction de son objet de métadonnées.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -44,19 +44,19 @@ int GetNameFromToken (
 
 ## <a name="parameters"></a>Paramètres
 `pMetadataImport`\
-[dans] Objet contenant les informations sur les métadonnées.
+dans Objet qui contient les informations de métadonnées.
 
 `dwToken`\
-[dans] Jeton à nommer.
+dans Jeton à nommer.
 
 `pbstrName`\
-[out] Nom qui correspond au jeton.
+à Nom qui correspond au jeton.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="example"></a>Exemple
-L’exemple suivant montre comment implémenter cette méthode pour un objet **CDebugSymbolProvider** qui expose [l’interface IDebugComPlusSymbolProvider.](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+L’exemple suivant montre comment implémenter cette méthode pour un objet **CDebugSymbolProvider** qui expose l’interface [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) .
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetNameFromToken(

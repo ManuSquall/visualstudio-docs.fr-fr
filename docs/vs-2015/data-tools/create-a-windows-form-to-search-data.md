@@ -21,10 +21,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 81980f38cbd8fb595530cc52b2cf32056feb43a7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670063"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Créer un Windows Form pour rechercher des données
@@ -36,7 +36,7 @@ Un scénario d'application courant consiste à afficher les données sélectionn
 
  Vous pouvez ajouter des requêtes paramétrables à n’importe quel TableAdapter (et les contrôles pour accepter les valeurs de paramètre et exécuter la requête) à l’aide de la boîte de dialogue **Générateur de critères de recherche** . Ouvrez la boîte de dialogue en sélectionnant la commande **Ajouter une requête** dans le menu **Données** (ou dans n’importe quelle balise active TableAdapter).
 
- Cette procédure pas à pas décrit notamment les tâches suivantes :
+ Cette procédure pas à pas décrit notamment les tâches suivantes :
 
 - Création d’un projet d’application de Windows Forms.
 
@@ -52,7 +52,7 @@ Un scénario d'application courant consiste à afficher les données sélectionn
 
 - Entrée de paramètres dans le formulaire et exécution de la requête paramétrable.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Prérequis
  Pour exécuter cette procédure pas à pas, vous avez besoin des éléments suivants :
 
 - avoir accès à l'exemple de base de données Northwind.
@@ -64,7 +64,7 @@ Un scénario d'application courant consiste à afficher les données sélectionn
 
 1. Dans le menu **fichier** , créez un nouveau projet.
 
-2. Attribuez un nom au projet `WindowsSearchForm`.
+2. Nommez le projet `WindowsSearchForm`.
 
 3. Sélectionnez **application Windows** , puis cliquez sur **OK**.
 
@@ -77,7 +77,7 @@ Un scénario d'application courant consiste à afficher les données sélectionn
 
 1. Dans le menu **Données** , cliquez sur **Afficher les sources de données**.
 
-2. Dans la fenêtre **Sources de données**, sélectionnez **Ajouter une nouvelle source de données** pour démarrer l’Assistant **Configuration de source de données**.
+2. Dans la fenêtre **sources de données** , sélectionnez Ajouter une **nouvelle source de données** pour démarrer l’Assistant Configuration de source de **données** .
 
 3. Sélectionnez **Base de données** dans la page **Choisir un type de source de données** , puis cliquez sur **Suivant**.
 
@@ -98,7 +98,7 @@ Un scénario d'application courant consiste à afficher les données sélectionn
      **NorthwindDataSet** est ajouté à votre projet et la table **Customers** apparaît dans la fenêtre **Sources de données**.
 
 ## <a name="create-the-form"></a>Créer le formulaire
- Pour créer des contrôles liés aux données, vous pouvez faire glisser des éléments depuis la fenêtre **Sources de données** vers votre formulaire.
+ Vous pouvez créer les contrôles liés aux données en faisant glisser des éléments depuis la fenêtre **sources de données** vers votre formulaire.
 
 #### <a name="to-create-data-bound-controls-on-the-form"></a>Pour créer des contrôlés liés aux données dans le formulaire
 
@@ -128,13 +128,13 @@ Un scénario d'application courant consiste à afficher les données sélectionn
      `WHERE City = @City`
 
     > [!NOTE]
-    > Les sources de données Access et OLE DB utilisent le point d’interrogation («  ? ») pour désigner les paramètres, donc la clause WHERE ressemble à ceci : `WHERE City = ?`.
+    > Les sources de données Access et OLE DB utilisent le point d’interrogation («  ? ») pour désigner les paramètres, donc la clause WHERE ressemble à ceci : `WHERE City = ?` .
 
 4. Cliquez sur **OK** pour fermer la boîte de dialogue **Générateur de critères de recherche**.
 
      Un **FillByCityToolStrip** est ajouté au formulaire.
 
-## <a name="testing-the-application"></a>Test de l'application
+## <a name="testing-the-application"></a>Test de l’application
  L'exécution de l'application ouvre votre formulaire prêt à utiliser le paramètre comme entrée.
 
 #### <a name="to-test-the-application"></a>Pour tester l'application

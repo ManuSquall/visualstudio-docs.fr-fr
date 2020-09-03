@@ -1,5 +1,5 @@
 ---
-title: Legacy Language Service Extensibility (fr) Microsoft Docs
+title: Extensibilité du service de langage hérité | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,49 +12,49 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 81b5ec3de8d7b0b9466e162c3ee193c130634cd4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80707405"
 ---
 # <a name="legacy-language-service-extensibility"></a>Extensibilité du service de langage hérité
-Un service linguistique fournit un support spécifique à la langue pour l’édition du code source dans l’IDE.
+Un service de langage fournit une prise en charge spécifique à la langue pour la modification du code source dans l’IDE.
 
- Les services linguistiques hérités sont mis en œuvre dans le cadre d’un VSPackage, mais la nouvelle façon de mettre en œuvre des fonctionnalités de service linguistique est d’utiliser des extensions MEF. Pour en savoir plus sur la nouvelle façon de mettre en œuvre un service linguistique, consultez [Editor et Language Service Extensions](../../extensibility/editor-and-language-service-extensions.md).
+ Les services de langage hérités sont implémentés dans le cadre d’un VSPackage, mais la meilleure façon d’implémenter les fonctionnalités du service de langage consiste à utiliser les extensions MEF. Pour en savoir plus sur la nouvelle façon d’implémenter un service de langage, consultez [éditeur et extensions du service de langage](../../extensibility/editor-and-language-service-extensions.md).
 
- Cette section traite de la structure et de la mise en œuvre d’un service linguistique hérité.
+ Cette section décrit la structure et l’implémentation d’un service de langage hérité.
 
 ## <a name="in-this-section"></a>Dans cette section
 - [Migration d’un service de langage hérité](../../extensibility/internals/migrating-a-legacy-language-service.md)
 
- Explique comment mettre à jour un service linguistique de Visual Studio 2008 à la dernière version.
+ Explique comment mettre à jour un service de langage de Visual Studio 2008 vers la version la plus récente.
 
 - [Éléments fondamentaux du service de langage hérité](../../extensibility/internals/legacy-language-service-essentials.md)
 
- Fournit des informations importantes sur la façon de développer des services linguistiques pour intégrer un langage de programmation dans Visual Studio.
+ Fournit des informations importantes sur le développement de services de langage pour intégrer un langage de programmation dans Visual Studio.
 
 - [Développement d’un service de langage hérité](../../extensibility/internals/developing-a-legacy-language-service.md)
 
- Fournit des liens vers des sujets qui peuvent vous aider à créer un service linguistique.
+ Fournit des liens vers des rubriques qui peuvent vous aider à créer un service de langage.
 
 - [Couleurs de syntaxe dans un service de langage hérité](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)
 
- Fournit des informations sur la mise en évidence de la syntaxe à l’appui dans un service linguistique.
+ Fournit des informations sur la prise en charge de la mise en surbrillance syntaxique dans un service de langage.
 
 - [Implémentation d’un service de langage hérité](../../extensibility/internals/implementing-a-legacy-language-service1.md)
 
- Fournit des informations sur la façon d’utiliser le cadre de forfait géré (MPF) pour mettre en œuvre un service linguistique complet dans le code géré.
+ Fournit des informations sur l’utilisation de Managed package Framework (MPF) pour implémenter un service de langage complet dans du code managé.
 
 - [Prise en charge des outils de consultation de symbole](../../extensibility/internals/supporting-symbol-browsing-tools.md)
 
- Décrit les bibliothèques et les outils qui vous permettent de parcourir les vues des arbres des symboles dans l’IDE.
+ Décrit les bibliothèques et les outils qui vous permettent de parcourir les arborescences de symboles dans l’IDE.
 
 ## <a name="related-sections"></a>Sections connexes
 - [Extensions de l’éditeur et du service de langage](../../extensibility/editor-and-language-service-extensions.md)
 
- Donne un aperçu des éditeurs de Visual Studio.
+ Fournit une vue d’ensemble des éditeurs Visual Studio.
 
 - [Prise en charge du service de langage pour le débogage](../../extensibility/internals/language-service-support-for-debugging.md)
 
- Fournit des informations sur et un lien vers le Visual Studio Debugging SDK, qui contient les informations qui sont nécessaires pour créer et personnaliser les composants de débbugger utilisés pour déboguer les programmes.
+ Fournit des informations sur et un lien vers le kit de développement logiciel (SDK) de débogage Visual Studio, qui contient les informations requises pour créer et personnaliser les composants du débogueur utilisés pour déboguer des programmes.

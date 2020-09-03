@@ -14,17 +14,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fe3f92adea762058b6b4414f0bf9596d77ab698e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85521314"
 ---
 # <a name="code-analysis-application-errors"></a>Erreurs de l’application d’analyse du code
 
 Cette section est une référence des messages d’erreur générés par l’outil d’analyse du code managé.
 
-## <a name="in-this-section"></a>Dans cette section
+## <a name="in-this-section"></a>Contenu de cette section
 
 |Code|Description|
 |-|-|

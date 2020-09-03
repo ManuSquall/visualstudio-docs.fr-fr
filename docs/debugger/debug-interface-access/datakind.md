@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2423646976744da17d3e904246ac74f8b2e75f41
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85468706"
 ---
 # <a name="datakind"></a>DataKind
@@ -60,10 +60,10 @@ DataIsStaticMember Data Item est une variable statique de classe.
 
 L’élément de données DataIsConstant est une valeur constante.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Les valeurs de cette énumération sont retournées par la méthode [IDiaSymbol :: get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) .
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
 En-tête : cvconst. h
 
 ## <a name="see-also"></a>Voir aussi

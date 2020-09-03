@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f759ea679af818d85dd365f5615ce4fc664df89a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200739"
 ---
-# <a name="markerserieswritemessage-method"></a>marker_series::write_message, méthode
+# <a name="marker_serieswrite_message-method"></a>marker_series::write_message, méthode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Écrit un message dans le fichier de trace du visualiseur concurrentiel.  

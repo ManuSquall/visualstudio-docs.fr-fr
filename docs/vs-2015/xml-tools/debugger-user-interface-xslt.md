@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1d35ec92a76c9ecbf933256229b64ce06a03a4fc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670987"
 ---
 # <a name="debugger-user-interface-xslt"></a>Interface utilisateur du débogueur (XSLT)
@@ -23,7 +23,7 @@ Cette rubrique décrit les fenêtres et boîtes de dialogue du débogueur. Elle 
 
  Pour plus d’informations, consultez le Guide de référence de l' [interface utilisateur de débogage](../debugger/debugging-user-interface-reference.md).
 
-## <a name="locals-window"></a>Fenêtre Variables locales
+## <a name="locals-window"></a>Variables locales (fenêtre)
  La fenêtre Variables locales affiche des informations sur les variables définies dans la feuille de style. Elle comporte trois colonnes d'informations :
 
  **Nom** Cette colonne contient les noms de toutes les variables locales dans l’étendue actuelle. Les collections de nœuds ont un contrôle d'arborescence que vous pouvez explorer pour en voir les sous-dossiers.
@@ -34,7 +34,7 @@ Cette rubrique décrit les fenêtres et boîtes de dialogue du débogueur. Elle 
 
  La fenêtre Variables locales affiche également les variables de contexte prédéfinies qui servent au suivi du contexte de la transformation XSLT. Le tableau suivant décrit les variables de contexte prédéfinies utilisées par le débogueur XSLT.
 
-|Name|Description|
+|Nom|Description|
 |----------|-----------------|
 |`last()`|Taille du contexte.|
 |`position()`|Position (index) du nœud de contexte par rapport à la taille du contexte.|
@@ -42,7 +42,7 @@ Cette rubrique décrit les fenêtres et boîtes de dialogue du débogueur. Elle 
 
  Pour plus d’informations, consultez [Comment : modifier le contexte du débogueur](https://msdn.microsoft.com/library/8a69ea63-2ef0-4b4f-9521-cf8ad2e3ec5e).
 
-## <a name="output-window"></a>Sortie (fenêtre)
+## <a name="output-window"></a>Fenêtre Sortie
  La fenêtre Sortie affiche les messages d'erreur éventuels ou les exceptions de sécurité qui se produisent pendant le débogage.
 
  Le débogueur XSLT utilise une fenêtre séparée pour afficher la sortie du débogueur. Il s’agit de la même fenêtre que celle utilisée pour afficher la sortie d’une commande **afficher la sortie XSL** .
@@ -63,7 +63,7 @@ Cette rubrique décrit les fenêtres et boîtes de dialogue du débogueur. Elle 
 ## <a name="command-windowimmediate-window"></a>Fenêtres Commande et Immédiat
  Pas implémentées dans cette mise en production du débogueur XSLT.
 
-## <a name="watch-window"></a>Fenêtre Espion
+## <a name="watch-window"></a>Espion (fenêtre)
  La fenêtre Espion permet d'évaluer les variables. Elle permet également de modifier la valeur des variables.
 
  Les variables affichées dans la fenêtre Espion sont celles du contexte actuel (l'élément de niveau supérieur de la pile d'appels). Si vous changez de contexte, cette fenêtre se met à jour et affiche les variables définies pour ce contexte.

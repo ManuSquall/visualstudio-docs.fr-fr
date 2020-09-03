@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 967e99102f3b88e82a5466e7ce8d2cac2412d286
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585676"
 ---
 # <a name="advanced-settings-for-services-dialog-box"></a>Paramètres avancés pour les services, boîte de dialogue
@@ -45,5 +45,5 @@ Le fournisseur de rôles accède aux valeurs de rôle mises en cache ou au servi
 ## <a name="see-also"></a>Voir aussi
 
 - [Services d’application cliente](/dotnet/framework/common-client-technologies/client-application-services)
-- [Services, page du Concepteur de projet](../../ide/reference/services-page-project-designer.md)
+- [Services, page du Concepteur de projets](../../ide/reference/services-page-project-designer.md)
 - [Comment : configurer les services d'application cliente](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
