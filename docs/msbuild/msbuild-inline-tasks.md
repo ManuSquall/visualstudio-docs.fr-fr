@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ab46aef69bd6356eda0925c492a029b43cc57295
-ms.sourcegitcommit: 98421670ed0b8170aaa32d3d6f8681298f401a1d
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81638046"
 ---
 # <a name="msbuild-inline-tasks"></a>Tâches inline MSBuild
@@ -52,7 +52,7 @@ Les tâches MSBuild sont généralement créées en compilant une classe qui imp
 
 - L’attribut `TaskFactory` nomme la classe qui implémente la fabrique de tâches inline.
 
-- L’attribut `AssemblyFile` indique l’emplacement de la fabrique de tâches inline. Alternativement, vous pouvez `AssemblyName` utiliser l’attribut pour spécifier le nom entièrement `$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll`qualifié de la classe d’usine de tâches en ligne, qui est généralement situé dans .
+- L’attribut `AssemblyFile` indique l’emplacement de la fabrique de tâches inline. Vous pouvez également utiliser l' `AssemblyName` attribut pour spécifier le nom qualifié complet de la classe de fabrique de tâches Inline, qui se trouve généralement dans `$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll` .
 
 Les éléments restants de la tâche `DoNothing` sont vides et fournis pour illustrer l’ordre et la structure d’une tâche inline. Un exemple plus pertinent est présenté plus loin dans cette rubrique.
 
@@ -83,7 +83,7 @@ Les éléments `Reference` et `Using` sont indépendants du langage. Les tâches
 
 - Si la valeur de `Type` est `Fragment`, le code définit le contenu de la méthode `Execute`, mais pas la signature ou l’instruction `return`.
 
-Le code proprement dit apparaît généralement entre un marqueur `<![CDATA[` et un marqueur `]]>`. Comme le code se trouve dans une section CDATA, vous n’avez pas à vous soucier de l’échappement des caractères réservés, tels que « \< » ou « > ».
+Le code proprement dit apparaît généralement entre un marqueur `<![CDATA[` et un marqueur `]]>`. Étant donné que le code se trouve dans une section CDATA, vous n’avez pas à vous soucier de la séquence d’échappement des caractères réservés, par exemple, « \<" or "> ».
 
 Vous pouvez également utiliser l’attribut `Source` de l’élément `Code` pour spécifier l’emplacement d’un fichier qui contient le code de votre tâche. Le code dans le fichier source doit être du type spécifié par l’attribut `Type`. Si l’attribut `Source` est présent, la valeur par défaut de `Type` est `Class`. Si `Source` est absent, la valeur par défaut est `Fragment`.
 

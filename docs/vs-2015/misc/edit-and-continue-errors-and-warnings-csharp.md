@@ -1,5 +1,5 @@
 ---
-title: Erreurs et avertissements de modifier & ContinuerC#() | Microsoft Docs
+title: Erreurs et avertissements de modifier & Continuer (C#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -62,10 +62,10 @@ caps.latest.revision: 11
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eec40bc584e831f8b43b79c9bc7cee5a48a291aa
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75850971"
 ---
 # <a name="edit-and-continue-errors-and-warnings-c"></a>Erreurs et avertissements de Modifier &amp; Continuer (C#)
@@ -81,9 +81,9 @@ Vous avez modifié une section de code qui n'est pas autorisée en Visual C# dan
   
 1. Dans le menu **Déboguer** , choisissez **Annuler** pour annuler la modification.  
   
-     \- ou -  
+     - ou -  
   
 2. Arrêtez la session de débogage, procédez à vos modifications et démarrez une nouvelle session de débogage.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Modifier & Continuer (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)
+ [Modifier &amp; Continuer (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)

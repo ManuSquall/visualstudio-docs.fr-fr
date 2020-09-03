@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7546f752ef7ee1053d1b0b785334a8da814720c6
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851483"
 ---
 # <a name="activity-views-legacy"></a>Vues d'activité (héritées)
@@ -29,11 +29,11 @@ La plupart des activités fournies par [!INCLUDE[wf](../includes/wf-md.md)], et 
 
 |Option de menu/d'onglet|Description|
 |----------------------|-----------------|
-|**Vue [type d’activité]**|Sélectionnez cette option de menu ou d'onglet pour afficher la représentation graphique par défaut de l'activité sélectionnée.|
-|**Afficher le gestionnaire d’annulation**|Sélectionnez cette vue de menu ou d’onglet pour afficher le [CancellationHandlerActivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.cancellationhandleractivity.aspx) associé à l’activité sélectionnée.|
-|**Afficher le gestionnaire d’erreurs**|Sélectionnez cette vue de menu ou d’onglet pour afficher le [FaultHandlersActivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.faulthandlersactivity.aspx) associé à l’activité sélectionnée.|
+|**Vue [type d'activité]**|Sélectionnez cette option de menu ou d'onglet pour afficher la représentation graphique par défaut de l'activité sélectionnée.|
+|**Afficher le gestionnaire d'annulation**|Sélectionnez cette vue de menu ou d’onglet pour afficher le [CancellationHandlerActivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.cancellationhandleractivity.aspx) associé à l’activité sélectionnée.|
+|**Afficher le gestionnaire d'erreur**|Sélectionnez cette vue de menu ou d’onglet pour afficher le [FaultHandlersActivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.faulthandlersactivity.aspx) associé à l’activité sélectionnée.|
 |**Afficher le gestionnaire de compensation**|Sélectionnez cette vue de menu ou d’onglet pour afficher le [CompensationHandlerActivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.compensationhandleractivity.aspx) associé au [activité TransactionScopeActivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.transactionscopeactivity.aspx)sélectionné.|
-|**Gestionnaire d’événements d’affichage**|Sélectionnez cette vue de menu ou d’onglet pour afficher le [EventHandlersActivity](https://msdn2.microsoft.com/library/system.workflow.activities.eventhandlersactivity.aspx) associé au [activité EventHandlingScopeActivity](https://msdn2.microsoft.com/library/system.workflow.activities.eventhandlingscopeactivity.aspx)sélectionné.|
+|**Afficher le gestionnaire d'événements**|Sélectionnez cette vue de menu ou d’onglet pour afficher le [EventHandlersActivity](https://msdn2.microsoft.com/library/system.workflow.activities.eventhandlersactivity.aspx) associé au [activité EventHandlingScopeActivity](https://msdn2.microsoft.com/library/system.workflow.activities.eventhandlingscopeactivity.aspx)sélectionné.|
 
  Pour plus d’informations sur les vues similaires, consultez [vues de workflow séquentielles (héritées)](../workflow-designer/sequential-workflow-views-legacy.md).
 

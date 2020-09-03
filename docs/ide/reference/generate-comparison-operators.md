@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 31e33b562a5a11ff77c1d610fbce9e90506b036d
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85290335"
 ---
 # <a name="generate-comparison-operators-for-types-that-implement-icomparable"></a>Générer des opérateurs de comparaison pour les types qui implémentent IComparable
@@ -36,7 +36,7 @@ Dans les **cas suivants :** Vous disposez d’un type qui implémente IComparab
 
    - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
 
-   - Cliquez sur le bouton ![Tournevis](../media/screwdriver-icon.png) qui apparaît dans la marge de gauche.
+   - Cliquez sur l’icône ![Tournevis](../media/screwdriver-icon.png) qui apparaît dans la marge de gauche.
 
    ![Générer des opérateurs de comparaison](media/generate-comparison-operators.png)
 

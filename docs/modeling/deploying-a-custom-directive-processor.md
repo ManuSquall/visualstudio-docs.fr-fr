@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4762ad21f117bebe22ecfce1c846f15d154b1bf5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536017"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Déploiement d'un processeur de directive personnalisé
@@ -62,7 +62,7 @@ Un fichier .vsix peut être créé de plusieurs façons. La procédure suivante 
 
     1. Créez un fichier texte et nommez-le \<*assemblyName*> . pkgdef.
 
-         \<*assemblyName*>est généralement identique au nom du projet.
+         \<*assemblyName*> est généralement identique au nom du projet.
 
     2. Sélectionnez-le dans l'Explorateur de solutions et définissez ses propriétés comme suit :
 
@@ -107,7 +107,7 @@ Un fichier .vsix peut être créé de plusieurs façons. La procédure suivante 
 
 3. Double-cliquez sur le fichier .vsix. Le programme d’installation de l’extension Visual Studio s’affiche.
 
-4. Redémarrez Visual Studio. Vous pourrez désormais exécuter des modèles de texte qui contiennent des directives faisant référence au processeur de directive personnalisé. Chaque directive se présente comme suit :
+4. Démarrez Visual Studio. Vous pourrez désormais exécuter des modèles de texte qui contiennent des directives faisant référence au processeur de directive personnalisé. Chaque directive se présente comme suit :
 
      `<#@ CustomDirective Processor="CustomDirectiveProcessorName" parameter1="value1" ... #>`
 

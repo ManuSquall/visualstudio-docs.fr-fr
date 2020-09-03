@@ -12,7 +12,7 @@
   items:
     - name: Présentation du débogueur
       href: debugger-feature-tour.md
-    - name: 'Déboguer une application C# ou Visual Basic'
+    - name: Déboguer une application C# ou Visual Basic
       href: quickstart-debug-with-managed.md
     - name: Déboguer une application C++
       href: quickstart-debug-with-cplusplus.md
@@ -20,7 +20,7 @@
       href: quickstart-debug-aspnet.md
 - name: Didacticiels
   items:
-    - name: 'Apprendre à déboguer C#'
+    - name: Apprendre à déboguer C#
       href: /visualstudio/get-started/csharp/tutorial-debugger?toc=/visualstudio/debugger/toc.json
     - name: Apprendre à déboguer C++
       href: getting-started-with-the-debugger-cpp.md
@@ -30,7 +30,7 @@
       href: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
     - name: Déboguer une application Azure en direct
       href: debug-live-azure-applications.md
-    - name: 'Déboguer du code C# et C++'
+    - name: Déboguer du code C# et C++
       href: how-to-debug-managed-and-native-code.md
     - name: Inspecter les précédents états des applications
       href: view-historical-application-state.md
@@ -46,7 +46,7 @@
           href: using-breakpoints.md
         - name: Dépannage des points d’arrêt
           href: troubleshooting-breakpoints.md
-        - name: 'Dépannage des points d’arrêt de données C#'
+        - name: Dépannage des points d’arrêt de données C#
           href: troubleshoot-data-breakpoint-errors.md
     - name: Inspection des données
       items:
@@ -68,7 +68,7 @@
                   href: format-specifiers-in-cpp.md
                 - name: Opérateur de contexte (C++)
                   href: context-operator-cpp.md
-                - name: 'Spécificateurs de format en C#'
+                - name: Spécificateurs de format en C#
                   href: format-specifiers-in-csharp.md
                 - name: Pseudo-variables
                   href: pseudovariables.md
@@ -118,11 +118,11 @@
               href: edit-and-continue-visual-cpp.md
             - name: Modifications de code prises en charge (C++)
               href: supported-code-changes-cpp.md
-        - name: 'Modifier & Continuer (Visual C#)'
+        - name: Modifier & Continuer (Visual C#)
           items:
             - name: "Modifier\_&\_Continuer pour C#"
               href: edit-and-continue-visual-csharp.md
-            - name: 'Utiliser Modifier & Continuer (C#)'
+            - name: Utiliser Modifier & Continuer (C#)
               href: how-to-use-edit-and-continue-csharp.md
             - name: Modifications de code prises en charge
               href: supported-code-changes-csharp.md
@@ -138,7 +138,7 @@
               href: ../xaml-tools/xaml-hot-reload.md?toc=/visualstudio/debugger/toc.json
             - name: Résolution des problèmes de rechargement à chaud XAML
               href: ../xaml-tools/xaml-hot-reload-troubleshooting.md?toc=/visualstudio/debugger/toc.json
-        - name: 'Opération Modifier et Continuer non prise en charge pour F#'
+        - name: Opération Modifier et Continuer non prise en charge pour F#
           href: edit-and-continue-not-supported-for-f-hash.md
     - name: Journaliser dans la fenêtre Sortie
       href: using-tracepoints.md
@@ -210,7 +210,7 @@
                       href: enabling-debug-features-in-visual-cpp-d-debug.md
                 - name: Paramètres des pages de propriétés pour les projets web
                   href: property-pages-settings-for-web-projects.md
-                - name: 'Paramètres de projet pour des configurations Debug C#'
+                - name: Paramètres de projet pour des configurations Debug C#
                   href: project-settings-for-csharp-debug-configurations.md
                 - name: Paramètres de projet pour une configuration Debug Visual Basic
                   href: project-settings-for-a-visual-basic-debug-configuration.md
@@ -282,7 +282,7 @@
           href: remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md
         - name: Déboguer à distance ASP.NET Core sur Azure
           href: remote-debugging-azure.md
-        - name: 'Déboguer à distance un projet C# ou Visual Basic'
+        - name: Déboguer à distance un projet C# ou Visual Basic
           href: remote-debugging-csharp.md
         - name: "Déboguer à distance un projet\_C++"
           href: remote-debugging-cpp.md
@@ -512,7 +512,7 @@
                   href: how-to-use-the-wpf-tree-visualizer.md
                 - name: Afficher les informations de trace WPF
                   href: how-to-display-wpf-trace-information.md
-            - name: 'Déboguer F#'
+            - name: Déboguer F#
               href: debugging-f-hash.md
         - name: Code C/C++
           items:

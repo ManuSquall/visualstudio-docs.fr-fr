@@ -1,5 +1,5 @@
 ---
-title: Inclure l’élément Microsoft Docs
+title: Include, élément | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,14 +14,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7ea89185d28be2816a690d867dbb3eccbb739e04
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80710358"
 ---
-# <a name="include-element"></a>Inclure l’élément
-L’élément Inclure spécifie un fichier qui peut être situé sur le chemin fourni inclure le chemin d’insertion dans le fichier actuel.  Tous les symboles et types définis feront partie du résultat compilé.
+# <a name="include-element"></a>Élément Include
+L’élément Include spécifie un fichier qui peut se trouver dans le chemin include fourni pour insertion dans le fichier actuel.  Tous les symboles et types définis feront partie du résultat compilé.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -36,8 +36,8 @@ L’élément Inclure spécifie un fichier qui peut être situé sur le chemin f
 
 |Attribut|Description|
 |---------------|-----------------|
-|href|Obligatoire. Le chemin vers le fichier d’en-tête:<br /><br /> href "stdidcmd.h"|
-|Condition|facultatif. Voir [Attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|href|Obligatoire. Chemin d’accès au fichier d’en-tête :<br /><br /> href = "stdidcmd. h"|
+|Condition|facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Éléments enfants
 
@@ -49,7 +49,7 @@ L’élément Inclure spécifie un fichier qui peut être situé sur le chemin f
 
 |Élément|Description|
 |-------------|-----------------|
-|[Élément CommandTable](../extensibility/commandtable-element.md)|Définit tous les éléments qui représentent les commandes — c’est-à-dire les éléments de menu, les menus, les barres d’outils et les boîtes combo — qu’un VSPackage fournit à l’IDE.|
+|[Élément CommandTable](../extensibility/commandtable-element.md)|Définit tous les éléments qui représentent des commandes, c’est-à-dire des éléments de menu, des menus, des barres d’outils et des zones de liste déroulante, qu’un VSPackage fournit à l’IDE.|
 
 ## <a name="example"></a>Exemple
 
@@ -58,4 +58,4 @@ L’élément Inclure spécifie un fichier qui peut être situé sur le chemin f
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Fichiers visualister de table de commande de studio (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Fichiers de table de commandes Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -1,5 +1,5 @@
 ---
-title: Élément d’icône (en anglais) Microsoft Docs
+title: Icon, élément | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: cf4f8a69e565620007fba4b9970ce96bb1513995
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80710519"
 ---
-# <a name="icon-element"></a>Élément d’icône
-L’attribut guid de l’étiquette Icon est le guid d’une bitmap définie. L’attribut `id` sélectionne la fente dans la bande de bitmap. Cet élément est facultatif. Si cet élément n’est pas inclus la valeur de **guidOfficeIcon:msotcidNoIcon** sera implicite.
+# <a name="icon-element"></a>Icon, élément
+L’attribut Guid de la balise Icon est le GUID d’une image bitmap définie. L' `id` attribut sélectionne l’emplacement dans la bande bitmap. Cet élément est facultatif. Si cet élément n’est pas inclus, la valeur de **guidOfficeIcon : msotcidNoIcon** sera implicite.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -34,8 +34,8 @@ L’attribut guid de l’étiquette Icon est le guid d’une bitmap définie. L�
 
 |Attribut|Description|
 |---------------|-----------------|
-|guid|Obligatoire. Le guid d’un bitmap défini.|
-|id|Obligatoire. Sélectionne la fente dans la bande de bitmap.|
+|guid|Obligatoire. GUID d’une image bitmap définie.|
+|id|Obligatoire. Sélectionne l’emplacement dans la bande bitmap.|
 
 ### <a name="child-elements"></a>Éléments enfants
 
@@ -47,7 +47,7 @@ L’attribut guid de l’étiquette Icon est le guid d’une bitmap définie. L�
 
 |Élément|Description|
 |-------------|-----------------|
-|[Élément boutons](../extensibility/buttons-element.md)||
+|[Buttons, élément](../extensibility/buttons-element.md)||
 
 ## <a name="see-also"></a>Voir aussi
-- [Fichiers visualister de table de commande de studio (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Fichiers de table de commandes Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

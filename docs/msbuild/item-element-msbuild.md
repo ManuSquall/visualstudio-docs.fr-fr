@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6f235108c63eb063f0ddcd495385bd3325581332
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85289012"
 ---
 # <a name="item-element-msbuild"></a>Item, élément (MSBuild)
@@ -31,7 +31,7 @@ Contient un élément défini par l'utilisateur et ses métadonnées. Chaque él
 \<ItemGroup>
 \<Item>
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Syntaxe
 
 ```xml
 <Item Include="*.cs"
@@ -93,7 +93,7 @@ Par exemple, pour spécifier une liste de packages NuGet, vous utiliseriez norma
 |-------------|-----------------|
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Élément grouping pour d’autres éléments.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
 Les éléments `Item` définissent les entrées du système de génération et sont regroupés en collections d'éléments, selon leur nom de collection défini par l'utilisateur. Ces collections d’éléments peuvent être utilisées comme paramètres des [tâches](../msbuild/msbuild-tasks.md), lesquelles utilisent les éléments d’une collection pour exécuter les étapes du processus de génération. Pour plus d’informations, consultez l’article [Éléments MSBuild](../msbuild/msbuild-items.md).
 
@@ -128,5 +128,5 @@ L’exemple de code suivant montre comment utiliser l’attribut `Update` pour m
 
 - [Éléments](../msbuild/msbuild-items.md)
 - [Éléments communs des projets MSBuild](../msbuild/common-msbuild-project-items.md)
-- [Propriétés MSBuild](../msbuild/msbuild-properties.md)
+- [MSBuild (propriétés)](../msbuild/msbuild-properties.md)
 - [Référence du schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)

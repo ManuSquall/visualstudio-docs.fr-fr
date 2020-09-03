@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 377bf06ceffe9f4f3004be665dec1c5d3629202a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85532962"
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>Procédure pas à pas : connexion d'un hôte à un processeur de directive généré
@@ -89,7 +89,7 @@ Vous pouvez écrire votre propre hôte qui traite les modèles de texte. Un hôt
 
 1. Ouvrez la solution CustomHost.
 
-2. Dans le menu **projet** , cliquez sur **Ajouter une référence**.
+2. Dans le menu **Projet**, cliquez sur **Ajouter une référence**.
 
      La boîte de dialogue **Ajouter une référence** s’ouvre et affiche l’onglet **.net** .
 

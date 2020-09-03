@@ -24,19 +24,19 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 15f2817b6fd0aee312ff41af218d01ad80bc785e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72620557"
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Génération et nettoyage de solutions et de projets dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-En appliquant les procédures décrites dans cette rubrique, vous pouvez générer, régénérer ou nettoyer tout ou partie des projets ou éléments de projet dans une solution. Pour obtenir un didacticiel pas à pas, consultez [Procédure pas à pas : génération d’une application](../ide/walkthrough-building-an-application.md).
+En appliquant les procédures décrites dans cette rubrique, vous pouvez générer, régénérer ou nettoyer tout ou partie des projets ou éléments de projet dans une solution. Pour obtenir un didacticiel pas à pas, consultez [procédure pas à pas : génération d’une application](../ide/walkthrough-building-an-application.md).
 
 > [!NOTE]
-> En fonction de vos paramètres actifs, l’interface utilisateur dans votre édition de Visual Studio peut-être différente de celle décrite dans cette rubrique. Pour changer vos paramètres, ouvrez le menu **Outils**, puis choisissez **Importation et exportation de paramètres**. Pour plus d’informations, consultez [Paramètres Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> En fonction de vos paramètres actifs, l’interface utilisateur dans votre édition de Visual Studio peut-être différente de celle décrite dans cette rubrique. Pour changer vos paramètres, ouvrez le menu **Outils**, puis choisissez **Importation et exportation de paramètres**. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>Pour générer, régénérer ou nettoyer une solution entière
 
@@ -65,7 +65,7 @@ En appliquant les procédures décrites dans cette rubrique, vous pouvez génér
 
 ## <a name="to-build-only-the-startup-project-and-its-dependencies"></a>Pour générer uniquement le projet de démarrage et ses dépendances
 
-1. Dans la barre de menus, sélectionnez **Outils**, **Options**.
+1. Dans la barre de menus, choisissez **Outils**, **options**.
 
 2. Dans la boîte de dialogue **Options**, développez le nœud **Projets et solutions**, puis choisissez la page **Générer et exécuter**.
 
@@ -75,9 +75,9 @@ En appliquant les procédures décrites dans cette rubrique, vous pouvez génér
 
     Quand cette case est cochée, seuls le projet de démarrage actuel et ses dépendances sont générés quand vous effectuez l’une des opérations suivantes :
 
-   - Dans la barre de menus, choisissez **Déboguer**  > **Démarrer le débogage** (F5).
+   - Dans la barre de menus, choisissez **Déboguer**  >  **Démarrer le débogage** (F5).
 
-   - Dans la barre de menus, choisissez **générer**  > **générer la solution** (Ctrl + Maj + B).
+   - Dans la barre de menus, choisissez **générer**  >  **générer la solution** (Ctrl + Maj + B).
 
      Quand cette case est décochée, tous les projets, leurs dépendances et les fichiers solution sont générés quand vous exécutez l’une des commandes précédentes. Par défaut, cette case à cocher est désactivée.
 
@@ -110,4 +110,4 @@ En appliquant les procédures décrites dans cette rubrique, vous pouvez génér
     - Choisissez les touches Ctrl + Arrêt.
 
 ## <a name="see-also"></a>Voir aussi
- [Comment : afficher, enregistrer et configurer des fichiers journaux de génération](../ide/how-to-view-save-and-configure-build-log-files.md) [obtention de journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md) [compilation et génération compréhension des](../ide/compiling-and-building-in-visual-studio.md) [configurations de build](../ide/understanding-build-configurations.md) [configurations de projet Debug et Release](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [C/C++ création de références ](https://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) [Commutateurs de ligne de commande devenv](../ide/reference/devenv-command-line-switches.md) [solutions et projets](../ide/solutions-and-projects-in-visual-studio.md)
+ [Comment : afficher, enregistrer et configurer des fichiers journaux de génération](../ide/how-to-view-save-and-configure-build-log-files.md) [obtention de journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md) [compilation et génération](../ide/compiling-and-building-in-visual-studio.md) [compréhension des configurations de build](../ide/understanding-build-configurations.md) [configurations de projet de débogage et de publication](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [C/C++ création de références](https://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) [commutateurs de ligne de commande devenv](../ide/reference/devenv-command-line-switches.md) [solutions et projets](../ide/solutions-and-projects-in-visual-studio.md)

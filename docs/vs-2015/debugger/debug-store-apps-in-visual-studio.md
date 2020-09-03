@@ -15,10 +15,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6bc2d05c6b6aae4b2f33d135c6859da7b17de963
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533157"
 ---
 # <a name="debug-store-apps-in-visual-studio"></a>Déboguer des applications du Windows Store dans Visual Studio
@@ -26,9 +26,9 @@ ms.locfileid: "85533157"
 
 Le débogueur Visual Studio vous permet de contrôler l'exécution d'un programme et d'examiner son état. Vous pouvez utiliser le débogueur pour trouver la cause des défauts de votre application Windows Store et pour comprendre le fonctionnement exact de votre application. Quand vous suspendez (pause) l'exécution dans le débogueur, Visual Studio affiche le fichier source qui contient le code en cours d'exécution et met en surbrillance l'instruction en cours d'exécution. Vous pouvez observer les valeurs des variables, la pile d'appels des fonctions en cours d'exécution et d'autres aspects de l'état de votre programme. Vous pouvez continuer à exécuter (parcourir) le programme instruction par instruction pour voir comment elles modifient les valeurs du programme. Dans les applications écrites en JavaScript, vous pouvez examiner et manipuler le DOM de la page.
 
-## <a name="in-this-section"></a>Dans cette section
+## <a name="in-this-section"></a>Contenu de cette section
 
-|Intitulé|Description|
+|Titre|Description|
 |-|-|
 |[Démarrer une session de débogage (JavaScript)](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md)|La rubrique Comment démarrer une session de débogage décrit les différentes options permettant de configurer et démarrer une session de débogage pour une application JavaScript.|
 |[Contrôler l'exécution dans une session de débogage (JavaScript)](../debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript.md)|La navigation dans le débogueur vous guide à travers une application simple qui explique comment démarrer et arrêter le débogage, naviguer dans le code et afficher l'état du programme.|

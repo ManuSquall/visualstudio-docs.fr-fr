@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3c84105387c708fa16e0b1d5c3294ef909466524
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72631205"
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>Créer et configurer des datasets dans Visual Studio
@@ -29,7 +29,7 @@ ms.locfileid: "72631205"
 
 Un *jeu de données est un* ensemble d’objets qui stockent des données à partir d’une base de données en mémoire et prennent en charge le suivi des modifications pour permettre des opérations de création, de lecture, de mise à jour et de suppression sur ces données sans qu’il soit nécessaire de toujours les connecter à la base de données. Les jeux de données ont été conçus pour des *formulaires simples sur* des applications métier de données. Pour les nouvelles applications, envisagez d’utiliser Entity Framework pour stocker et modéliser des données en mémoire. Pour travailler avec des jeux de données, vous devez avoir une connaissance de base des concepts de base de données.
 
- Vous créez une classe de <xref:System.Data.DataSet> typée dans Visual Studio au moment du design à l’aide de l' **Assistant Configuration de source de données**. Pour plus d’informations sur la création de jeux de données par programme, consultez [création d’un DataSet](https://msdn.microsoft.com/library/57629d8f-393e-4677-8b83-29ffde27f5fc).
+ Vous créez une classe typée <xref:System.Data.DataSet> dans Visual Studio au moment du design à l’aide de l' **Assistant Configuration de source de données**. Pour plus d’informations sur la création de jeux de données par programme, consultez [création d’un DataSet](https://msdn.microsoft.com/library/57629d8f-393e-4677-8b83-29ffde27f5fc).
 
 ## <a name="create-a-new-dataset-by-using-the-data-source-configuration-wizard"></a>Créer un nouveau DataSet à l’aide de l’Assistant Configuration de source de données
 
@@ -47,7 +47,7 @@ Un *jeu de données est un* ensemble d’objets qui stockent des données à par
 
      ![Choisir des objets de base de données](../data-tools/media/raddata-chose-objects.png "raddata a choisi objets")
 
-5. Cliquez sur **Finish**.
+5. Cliquez sur **Terminer**.
 
 6. Le jeu de données apparaît sous la forme d’un nœud dans **Explorateur de solutions**:
 
@@ -88,8 +88,8 @@ Un *jeu de données est un* ensemble d’objets qui stockent des données à par
 
 1. Ouvrez votre dataset dans le **Concepteur de DataSet**.
 
-2. Faites glisser une classe <xref:System.Data.DataTable> de l’onglet **DataSet** de la **boîte à outils** vers le **Concepteur de DataSet**.
+2. Faites glisser une <xref:System.Data.DataTable> classe de l’onglet **DataSet** de la **boîte à outils** vers le **Concepteur de DataSet**.
 
 3. Ajoutez des colonnes pour définir votre table de données. Pour plus d’informations, consultez [Comment : ajouter des colonnes à un DataTable](https://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df).
 
-4. Les tables autonomes doivent implémenter `Fill` logique dans les tables autonomes afin que vous puissiez les remplir avec des données. Pour plus d’informations sur le remplissage de tables de données autonomes, consultez [remplissage d’un DataSet à partir d’un DataAdapter](https://msdn.microsoft.com/library/3fa0ac7d-e266-4954-bfac-3fbe2f913153).
+4. Les tables autonomes doivent implémenter `Fill` une logique dans les tables autonomes afin que vous puissiez les remplir avec des données. Pour plus d’informations sur le remplissage de tables de données autonomes, consultez [remplissage d’un DataSet à partir d’un DataAdapter](https://msdn.microsoft.com/library/3fa0ac7d-e266-4954-bfac-3fbe2f913153).

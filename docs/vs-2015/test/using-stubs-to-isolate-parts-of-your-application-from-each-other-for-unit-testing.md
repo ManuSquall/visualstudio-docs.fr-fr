@@ -9,16 +9,16 @@ caps.latest.revision: 19
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b77a088fc144df8c7305098e48c45f672733a7c9
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851189"
 ---
-# <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Utilisation de stubs pour isoler des parties de votre application les unes des autres en vue d'effectuer un test unitaire
+# <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Utilisation de stubs pour isoler des parties de votre application les unes des autres pour des tests unitaires
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Les types de stub* représentent l’une des deux technologies fournies par le framework Microsoft Fakes pour vous permettre d’isoler facilement un composant que vous testez d’autres composants appelés. Un stub est un petit élément de code qui remplace un autre composant pendant le test. L'utilisation d'un stub présente l'avantage de retourner des résultats cohérents, ce qui facilite l'écriture du test. Vous pouvez également effectuer des tests même si les autres composants ne fonctionnent pas encore.
+Les types de stub* représentent l’une des deux technologies fournies par le framework Microsoft Fakes pour vous permettre d’isoler facilement un composant que vous testez d’autres composants appelés. Un stub est une petite partie de code qui remplace un autre composant pendant les tests. L'utilisation d'un stub présente l'avantage de retourner des résultats cohérents, ce qui rend le test plus facile à écrire. Vous pouvez également effectuer des tests même si les autres composants ne fonctionnent pas encore.
 
  Pour obtenir une vue d’ensemble et un guide de démarrage rapide de Fakes, consultez [Isolation du code sous test avec Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).
 
@@ -26,18 +26,18 @@ Les types de stub* représentent l’une des deux technologies fournies par le f
 
  Dans le schéma, le composant StockAnalyzer est celui que nous souhaitons tester. Il utilise normalement un autre composant, RealStockFeed. Cependant, RealStockFeed retourne des résultats différents chaque fois que les méthodes sont appelées, ce qui rend difficile le test de StockAnalyzer.  Pendant le test, nous le remplaçons par une classe différente, StubStockFeed.
 
- ![Les classes Real et stub sont conformes à une interface.](../test/media/fakesinterfaces.png "FakesInterfaces")
+ ![Classes Real and Stub conforment à une interface.](../test/media/fakesinterfaces.png "FakesInterfaces")
 
  Les stubs comptent sur votre capacité à structurer votre code de cette manière. C'est pour cela que vous utilisez généralement les stubs pour isoler une partie de votre application des autres parties. Pour l'isoler des autres assemblys qui ne sont pas sous votre contrôle, comme System.dll, il utilise généralement des shims. Consultez [Utilisation de shims pour isoler votre application des autres assemblys pour des tests unitaires](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).
 
- **Spécifications**
+ **Configuration requise**
 
 - Visual Studio Enterprise
 
-## <a name="How"></a> Comment utiliser les stubs
+## <a name="how-to-use-stubs"></a><a name="How"></a> Comment utiliser les stubs
 
-### <a name="Dependency"></a> Concevoir l’injection de dépendance
- Pour utiliser les stubs, votre application doit être conçue afin que les différents composants ne dépendent pas des autres, mais uniquement des définitions d'interface. Au lieu d'être couplés au moment de la compilation, les composants sont connectés au moment de l'exécution. Ce modèle permet de concevoir un logiciel fiable et facile à mettre à jour, car les modifications ont tendance à ne pas se propager sur les limites de composant. Nous vous recommandons de suivre les instructions suivantes même si vous n'utilisez pas de stubs. Si vous écrivez un nouveau code, il est facile de suivre le modèle d’[injection de dépendances](https://en.wikipedia.org/wiki/Dependency_injection). Si vous écrivez des tests pour un logiciel existant, vous devrez peut-être le refactoriser. S'il s'avère peu pratique, vous pouvez envisager d'utiliser des shims.
+### <a name="design-for-dependency-injection"></a><a name="Dependency"></a> Conception pour l’injection de dépendances
+ Pour utiliser les stubs, votre application doit être conçue afin que les différents composants ne dépendent pas des autres, mais uniquement des définitions d'interface. Au lieu d'être couplés au moment de la compilation, les composants sont connectés au moment de l'exécution. Ce modèle permet de concevoir un logiciel fiable et facile à mettre à jour, car les modifications ont tendance à ne pas se propager sur les limites de composant. Nous vous recommandons de suivre les instructions suivantes même si vous n'utilisez pas de stubs. Si vous écrivez du nouveau code, il est facile de suivre le modèle d' [injection de dépendances](https://en.wikipedia.org/wiki/Dependency_injection) . Si vous écrivez des tests pour un logiciel existant, vous devrez peut-être le refactoriser. S'il s'avère peu pratique, vous pouvez envisager d'utiliser des shims.
 
  Commençons cette discussion avec un exemple motivant, celui du schéma. La classe StockAnalyzer lit le cours de l'action et génère des résultats intéressants. Elle comporte des méthodes publiques que nous souhaitons tester. Pour ne pas compliquer les choses, examinons seulement l'une de ces méthodes, une méthode très simple qui indique le prix actuel d'une action particulière. Nous souhaitons écrire un test unitaire de cette méthode. Voici la première ébauche de test :
 
@@ -144,7 +144,7 @@ analyzer = new StockAnalyzer(new StockFeed())
 
  Il existe des méthodes plus flexibles pour exécuter cette connexion. Par exemple, StockAnalyzer peut accepter un objet de fabrique qui peut instancier des implémentations différentes de IStockFeed dans différentes conditions.
 
-### <a name="GeneratingStubs"></a> Générer les stubs
+### <a name="generate-stubs"></a><a name="GeneratingStubs"></a> Générer des stubs
  Vous avez séparé la classe que vous souhaitez tester des autres composants utilisés. En plus de rendre l'application plus fiable et plus flexible, la séparation vous permet de connecter le composant testé à des implémentations de stub des interfaces à des fins de test.
 
  Vous pouvez simplement écrire les stubs en tant que classes, comme à l'accoutumée. Cependant, Microsoft Fakes vous offre un moyen plus dynamique de créer le stub le plus approprié pour chaque test.
@@ -153,7 +153,7 @@ analyzer = new StockAnalyzer(new StockFeed())
 
 ##### <a name="adding-a-fakes-assembly"></a>Ajouter un assembly Fakes
 
-1. Dans l’Explorateur de solutions, développez les **Références** de votre projet de test unitaire.
+1. Dans Explorateur de solutions, développez les **références**de votre projet de test unitaire.
 
     - Si vous utilisez Visual Basic, vous devez sélectionner **Afficher tous les fichiers** dans la barre d’outils de l’Explorateur de solutions pour afficher la liste de références.
 
@@ -161,7 +161,7 @@ analyzer = new StockAnalyzer(new StockFeed())
 
 3. Dans le menu contextuel, choisissez **Ajouter un assembly Fakes**.
 
-### <a name="WriteTest"></a> Écrire votre test avec les stubs
+### <a name="write-your-test-with-stubs"></a><a name="WriteTest"></a> Écrire votre test avec des stubs
 
 ```csharp
 [TestClass]
@@ -223,7 +223,7 @@ End Class
 
  Les stubs sont également générés pour les accesseurs Get et les méthodes setter de propriétés, les événements et les méthodes génériques.
 
-### <a name="mocks"></a> Vérifier les valeurs de paramètre
+### <a name="verifying-parameter-values"></a><a name="mocks"></a> Vérification des valeurs de paramètre
  Vous pouvez vérifier cela lorsque votre composant fait un appel à un autre composant : il passe les valeurs correctes. Vous pouvez placer une assertion dans le stub ou stocker la valeur et la vérifier dans le corps principal du test. Par exemple :
 
 ```csharp
@@ -301,9 +301,9 @@ Class TestMyComponent
 End Class
 ```
 
-## <a name="BKMK_Stub_basics"></a> Stubs pour différents types de membres de type
+## <a name="stubs-for-different-kinds-of-type-members"></a><a name="BKMK_Stub_basics"></a> Stubs pour différents types de membres de type
 
-### <a name="BKMK_Methods"></a> Méthodes
+### <a name="methods"></a><a name="BKMK_Methods"></a> Leurs
  Comme indiqué dans l'exemple, les méthodes peuvent être extraites en liant un délégué à une instance de la classe stub. Le nom du type de stub est dérivé des noms de la méthode et des paramètres. Par exemple, pour l'interface `IMyInterface` et la méthode `MyMethod`suivantes :
 
 ```csharp
@@ -325,7 +325,7 @@ interface IMyInterface
 
  Si vous ne fournissez pas de stub pour une fonction, Microsoft Fakes génère une fonction qui retourne la valeur par défaut du type de retour. Pour les nombres, la valeur par défaut est 0, et pour les types de classe cette valeur est `null` (C#) ou `Nothing` (Visual Basic).
 
-### <a name="BKMK_Properties"></a> Propriétés
+### <a name="properties"></a><a name="BKMK_Properties"></a> Propriétés
  Les accesseurs Get et Set de propriété sont exposés en tant que délégués distincts et peuvent être extraits séparément. Considérez par exemple la propriété `Value` de `IMyInterface` :
 
 ```csharp
@@ -350,7 +350,7 @@ stub.ValueSet = (value) => i = value;
 
  Si vous ne fournissez pas les méthodes stub pour l'accesseur Set ou l'accesseur Get d'une propriété, Microsoft Fakes génère un stub qui stocke les valeurs, afin que la propriété stub fonctionne comme une simple variable.
 
-### <a name="BKMK_Events"></a> Événements
+### <a name="events"></a><a name="BKMK_Events"></a> Événements
  Les événements sont exposés en tant que champs délégués. Par conséquent, tout événement extrait peut être déclenché simplement en appelant le champ de stockage d'événements. Prenons l'interface suivante pour un stub :
 
 ```csharp
@@ -371,7 +371,7 @@ interface IWithEvents
 
 ```
 
-### <a name="BKMK_Generic_methods"></a> Méthodes génériques
+### <a name="generic-methods"></a><a name="BKMK_Generic_methods"></a> Méthodes génériques
  Il est possible d'extraire des méthodes génériques en fournissant un délégué pour chaque instanciation souhaitée de la méthode. Par exemple, étant donnée l'interface suivante qui contient une méthode générique :
 
 ```csharp
@@ -399,7 +399,7 @@ public void TestGetValue()
 
  Si le code devait appeler `GetValue<T>` avec une autre instanciation, le stub appellerait simplement le comportement.
 
-### <a name="BKMK_Partial_stubs"></a> Stubs de classes virtuelles
+### <a name="stubs-of-virtual-classes"></a><a name="BKMK_Partial_stubs"></a> Stubs de classes virtuelles
  Dans les exemples précédents, les stubs ont été générés à partir d'interfaces. Vous pouvez également générer les stubs à partir d'une classe qui contient des membres virtuels ou abstraits. Par exemple :
 
 ```csharp
@@ -438,16 +438,16 @@ stub.CallBase = true;
 Assert.AreEqual(43,stub.DoVirtual(1));
 ```
 
-## <a name="BKMK_Debugging_stubs"></a> Stubs de débogage
+## <a name="debugging-stubs"></a><a name="BKMK_Debugging_stubs"></a> Stubs de débogage
  Les types de stub sont conçus pour fournir une expérience de débogage fluide. Par défaut, le débogueur est chargé d'effectuer un pas à pas principal de tout code généré. Il doit donc passer directement dans les implémentations de membres personnalisés qui ont été attachées au stub.
 
-## <a name="BKMK_Stub_limitation"></a> Limitations du stub
+## <a name="stub-limitations"></a><a name="BKMK_Stub_limitation"></a> Limitations du stub
 
 1. Les signatures de méthodes avec des pointeurs ne sont pas prises en charge.
 
 2. Les classes sealed ou les méthodes statiques ne peuvent pas être extraites car les types de stub s'appuient sur l'expédition de méthode virtuelle. Dans ces cas, utilisez des types shim comme décrit dans [Utilisation de shims pour isoler votre application des autres assemblys pour des tests unitaires](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).
 
-## <a name="BKMK_Changing_the_default_behavior_of_stubs"></a> Modification du comportement par défaut des stubs
+## <a name="changing-the-default-behavior-of-stubs"></a><a name="BKMK_Changing_the_default_behavior_of_stubs"></a> Modification du comportement par défaut des stubs
  Chaque type de stub généré contient une instance de l'interface `IStubBehavior` (via la propriété `IStub.InstanceBehavior`). Le comportement est appelé chaque fois qu'un client appelle un membre sans délégué personnalisé attaché. Si le comportement n'a pas été défini, il utilise l'instance retournée par la propriété `StubsBehaviors.Current`. Par défaut, cette propriété retourne un comportement qui lève une exception `NotImplementedException`.
 
  Le comportement peut être modifié à tout moment en affectant la propriété `InstanceBehavior` sur toute instance du stub. Par exemple, l'extrait de code suivant remplace un comportement qui ne fait rien et retourne la valeur par défaut du type de retour : `default(T)`:
@@ -471,8 +471,8 @@ StubBehaviors.Current =
 
 ## <a name="external-resources"></a>Ressources externes
 
-### <a name="guidance"></a>Aide
+### <a name="guidance"></a>Guidance
  [Tester la livraison continue avec Visual Studio 2012 - Chapitre 2 : Tests unitaires : tester l’intérieur](https://msdn.microsoft.com/library/jj159340.aspx)
 
 ## <a name="see-also"></a>Voir aussi
- [Isolation du code testé avec Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)
+ [Isolation du code sous test avec Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)

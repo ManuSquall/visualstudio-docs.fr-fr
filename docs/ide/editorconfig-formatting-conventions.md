@@ -14,10 +14,10 @@ ms.workload:
 - dotnet
 - dotnetcore
 ms.openlocfilehash: 0490912683fd683398c89e8e69b62dd3824ee04b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533469"
 ---
 # <a name="formatting-conventions"></a>Conventions de mise en forme
@@ -1193,7 +1193,7 @@ csharp_using_directive_placement = inside_namespace
 | **Nom de la règle** | csharp_using_directive_placement |
 | **Langues applicables** | C# |
 | **Version introduite** | Visual Studio 2019 version 16.1 |
-| **Valeurs** | `outside_namespace`-Laissez les directives using en dehors de l’espace de noms<br /><br />`inside_namespace`-Laissez les directives using à l’intérieur de l’espace de noms |
+| **Valeurs** | `outside_namespace` -Laissez les directives using en dehors de l’espace de noms<br /><br />`inside_namespace` -Laissez les directives using à l’intérieur de l’espace de noms |
 
 Exemples de code :
 
@@ -1216,5 +1216,5 @@ namespace Conventions
 ## <a name="see-also"></a>Voir aussi
 
 - [Conventions de langage](editorconfig-language-conventions.md)
-- [Conventions d'attribution d'un nom](editorconfig-naming-conventions.md)
+- [Conventions d’affectation des noms](editorconfig-naming-conventions.md)
 - [Paramètres de Convention de codage .NET pour EditorConfig](editorconfig-code-style-settings-reference.md)

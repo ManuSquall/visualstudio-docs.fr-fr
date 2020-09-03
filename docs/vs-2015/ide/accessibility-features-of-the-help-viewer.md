@@ -13,16 +13,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b95ed9b6473c156d1bdf8a20eb927ee044aa47cf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72621104"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>Fonctionnalités d’accessibilité de la Visionneuse d’aide
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Microsoft s’engage à faciliter l’utilisation de ses produits et services. Cette rubrique contient des informations sur les fonctionnalités, les produits et les services qui permettent d’accéder à Microsoft Help Viewer 2.2 via un large éventail de possibilités.
+Microsoft s'attache à rendre ses produits et services conviviaux. Cette rubrique contient des informations sur les fonctionnalités, les produits et les services qui permettent d’accéder à Microsoft Help Viewer 2.2 via un large éventail de possibilités.
 
 ## <a name="keyboard-access"></a>Accès par le clavier
  Vous pouvez accéder à toutes les fonctionnalités de la visionneuse d'aide à l'aide du clavier. Pour plus d’informations, consultez [Touches de raccourci (Help Viewer)](../ide/shortcut-keys-help-viewer.md).

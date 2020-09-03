@@ -36,10 +36,10 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: c4e025603fef11e278aee21b3c44f8d35d7cd34b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536550"
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app"></a>Commencer une session de débogage pour une application UWP
@@ -72,19 +72,19 @@ Le moyen le plus simple de configurer et de démarrer le débogage consiste à u
 
 Le débogage se poursuit jusqu’à ce qu’un point d’arrêt soit atteint, que vous suspendiez manuellement l’exécution, qu’une exception non gérée se produise ou que l’application se termine.
 
-### <a name="deployment-target-options"></a><a name="BKMK_Choose_the_deployment_target"></a>Options de la cible de déploiement
+### <a name="deployment-target-options"></a><a name="BKMK_Choose_the_deployment_target"></a> Options de la cible de déploiement
 
 Vous pouvez définir la cible de débogage dans la barre d’outils Visual Studio ou dans la page de propriétés débogage du projet. Sélectionnez l’une des options suivantes :
 
 |Nom|Description|
 |-|-|
 |**Ordinateur local**|Déboguez l'application dans la session active sur votre ordinateur local.|
-|**Simulator**|Déboguez l’application dans le simulateur Visual Studio pour les applications UWP. Le simulateur est une fenêtre de bureau qui simule les fonctions de l’appareil, telles que les gestes tactiles et la rotation du périphérique, qui peuvent ne pas exister sur l’ordinateur local. L’option de simulateur est disponible uniquement si la **version minimale de la plateforme cible** de votre application est inférieure ou égale au système d’exploitation sur l’ordinateur local. Pour plus d’informations, consultez [exécuter des applications UWP dans le simulateur](../debugger/run-windows-store-apps-in-the-simulator.md).|
+|**Simulateur**|Déboguez l’application dans le simulateur Visual Studio pour les applications UWP. Le simulateur est une fenêtre de bureau qui simule les fonctions de l’appareil, telles que les gestes tactiles et la rotation du périphérique, qui peuvent ne pas exister sur l’ordinateur local. L’option de simulateur est disponible uniquement si la **version minimale de la plateforme cible** de votre application est inférieure ou égale au système d’exploitation sur l’ordinateur local. Pour plus d’informations, consultez [exécuter des applications UWP dans le simulateur](../debugger/run-windows-store-apps-in-the-simulator.md).|
 |**Ordinateur distant**|Déboguez l’application sur un appareil connecté à l’ordinateur local par le biais d’un réseau ou d’un câble Ethernet. Le Outils de contrôle à distance de Visual Studio doit être installé et en cours d’exécution sur le périphérique distant. Pour plus d’informations, consultez [exécuter des applications UWP sur un ordinateur distant](../debugger/run-windows-store-apps-on-a-remote-machine.md).|
 |**Appareil**|Déboguez l’application sur un appareil connecté à USB. L’appareil doit être déverrouillé par un développeur et l’écran doit être déverrouillé.|
 |**Émulateur mobile**|Démarrez l’émulateur spécifié dans le nom de l’émulateur, déployez l’application et démarrez le débogage. Les émulateurs sont disponibles uniquement sur les ordinateurs activés pour Hyper-V.|
 
-## <a name="configure-debugging-in-the-project-property-page"></a><a name="BKMK_Open_the_debugging_property_page_for_the_project"></a>Configurer le débogage dans la page de propriétés du projet
+## <a name="configure-debugging-in-the-project-property-page"></a><a name="BKMK_Open_the_debugging_property_page_for_the_project"></a> Configurer le débogage dans la page de propriétés du projet
 
 Pour configurer des options de débogage supplémentaires, utilisez la page Propriétés de débogage du projet.
 
@@ -123,7 +123,7 @@ Dans les applications C++, Visual Studio débogue le code natif par défaut. Vou
 |**Code natif avec script**|Déboguez le code natif C/C++ et le code JavaScript dans votre application. Le code managé est ignoré. Disponible uniquement dans les projets C++ ou les tâches en arrière-plan.|
 |**GPU uniquement (C++ AMP)**|Déboguez le code C++ natif qui s'exécute sur une unité de traitement graphique (GPU). Disponible uniquement dans les projets C++.|
 
-### <a name="disable-network-loopbacks-optional"></a><a name="BKMK__Optional__Disable_network_loopbacks"></a>Désactiver les bouclages de réseau (facultatif)
+### <a name="disable-network-loopbacks-optional"></a><a name="BKMK__Optional__Disable_network_loopbacks"></a> Désactiver les bouclages de réseau (facultatif)
 
  Pour des raisons de sécurité, une application UWP installée de manière standard ne peut pas effectuer d’appels réseau vers l’appareil sur lequel elle est installée. Par défaut, Visual Studio exempte les applications déployées de cette règle, ce qui vous permet de tester les procédures de communication sur un seul ordinateur. Avant de libérer votre application, vous devez la tester sans l’exemption.
 
@@ -133,10 +133,10 @@ Dans les applications C++, Visual Studio débogue le code natif par défaut. Vou
 
 - Pour les applications C++, sélectionnez **non** dans la liste déroulante **autoriser le bouclage de réseau local** dans la page de propriétés **débogage** .
 
-### <a name="reinstall-the-app-when-you-start-debugging-optional"></a><a name="BKMK__Optional__Reinstall_the_app_when_you_start_debugging"></a>Réinstaller l’application lorsque vous démarrez le débogage (facultatif)
- Pour diagnostiquer les problèmes d’installation avec une application C# ou Visual Basic, sélectionnez **désinstaller, puis réinstallez mon package** sur la page de propriétés **Déboguer** . Cette option recrée l’installation d’origine lorsque vous démarrez le débogage. Cette option n’est pas disponible pour les projets C++.
+### <a name="reinstall-the-app-when-you-start-debugging-optional"></a><a name="BKMK__Optional__Reinstall_the_app_when_you_start_debugging"></a> Réinstaller l’application lorsque vous démarrez le débogage (facultatif)
+ Pour diagnostiquer les problèmes d’installation avec une application C# ou Visual Basic, sélectionnez **désinstaller, puis réinstallez mon package** sur la page de propriétés **Déboguer**  . Cette option recrée l’installation d’origine lorsque vous démarrez le débogage. Cette option n’est pas disponible pour les projets C++.
 
-### <a name="set-authentication-options-for-remote-debugging"></a><a name="BKMK__Optional__Disable_authentication_requirement_to_start_the_remote_debugger"></a>Définir les options d’authentification pour le débogage distant
+### <a name="set-authentication-options-for-remote-debugging"></a><a name="BKMK__Optional__Disable_authentication_requirement_to_start_the_remote_debugger"></a> Définir les options d’authentification pour le débogage distant
 
 Par défaut, vous devez fournir les informations d’identification Windows pour exécuter le débogueur distant lorsque vous sélectionnez **ordinateur distant** comme cible de déploiement. Vous pouvez modifier l’exigence d’authentification.
 
@@ -151,11 +151,11 @@ Le mode d’authentification **universel (protocole non chiffré)** est destiné
 > [!CAUTION]
 > Il n’existe pas de sécurité réseau lorsque vous exécutez le débogueur distant en mode **aucun** ou en mode **universel (protocole non chiffré)** . Choisissez ces modes uniquement sur les réseaux approuvés dont vous êtes sûr qu’ils ne sont pas exposés à un code malveillant ou à un trafic hostile.
 
-## <a name="debugging-start-options"></a><a name="BKMK_Start_the_debugging_session"></a>Options de démarrage du débogage
+## <a name="debugging-start-options"></a><a name="BKMK_Start_the_debugging_session"></a> Options de démarrage du débogage
 
 Lorsque vous sélectionnez **Déboguer**  >  **Démarrer le débogage** ou appuyez sur **F5**, Visual Studio lance l’application avec le débogueur attaché. L'exécution se poursuit jusqu'à ce qu'un point d'arrêt soit atteint, que vous suspendiez manuellement l'exécution, qu'une exception non gérée se produise ou que l'application se termine.
 
-### <a name="start-debugging-but-delay-app-start"></a><a name="BKMK_Start_debugging__F5__but_delay_the_app_start"></a>Démarrer le débogage mais retarder le démarrage de l’application
+### <a name="start-debugging-but-delay-app-start"></a><a name="BKMK_Start_debugging__F5__but_delay_the_app_start"></a> Démarrer le débogage mais retarder le démarrage de l’application
 
 Par défaut, Visual Studio démarre immédiatement l’application lorsque vous démarrez le débogage. Vous pouvez également configurer l’application pour qu’elle s’exécute en mode débogage, mais démarrer l’application en dehors du débogueur. Par exemple, vous pouvez déboguer le lancement de l’application à partir du menu **Démarrer** de Windows, ou déboguer un processus en arrière-plan dans l’application. Si vous choisissez cette option, l’application démarre dans le débogueur au lancement.
 
@@ -167,7 +167,7 @@ Par défaut, Visual Studio démarre immédiatement l’application lorsque vous 
 
 Pour plus d’informations sur le débogage des tâches en arrière-plan, consultez [déclencher des événements de suspension, de reprise et d’arrière-plan pour les applications UWP](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md).
 
-### <a name="debug-an-installed-or-running-uwp-app"></a><a name="BKMK_Start_an_installed_app_in_the_debugger"></a>Déboguer une application UWP installée ou en cours d’exécution
+### <a name="debug-an-installed-or-running-uwp-app"></a><a name="BKMK_Start_an_installed_app_in_the_debugger"></a> Déboguer une application UWP installée ou en cours d’exécution
 
 Vous pouvez utiliser le **package d’application de débogage** pour déboguer une application UWP déjà installée ou en cours d’exécution sur un appareil local ou distant. L’application a peut-être été installée à partir du Microsoft Store ou il ne s’agit peut-être pas d’un projet Visual Studio. Par exemple, l’application peut avoir un système de génération personnalisé qui n’utilise pas Visual Studio.
 
@@ -175,7 +175,7 @@ Vous pouvez démarrer l’application installée immédiatement, ou vous pouvez 
 
 Pour démarrer une application UWP installée ou en cours d’exécution dans le débogueur, sélectionnez **Déboguer**  >  **autres cibles de débogage**  >  **déboguer le package d’application installé**. Pour plus d’instructions, consultez [Déboguer un package d’application installé](../debugger/debug-installed-app-package.md).
 
-### <a name="attach-the-debugger-to-a-running-windows-8x-app"></a><a name="BKMK_Attach_the_debugger_to_a_running_app_"></a>Attacher le débogueur à une application Windows 8. x en cours d’exécution
+### <a name="attach-the-debugger-to-a-running-windows-8x-app"></a><a name="BKMK_Attach_the_debugger_to_a_running_app_"></a> Attacher le débogueur à une application Windows 8. x en cours d’exécution
 
 Pour attacher le débogueur à une application [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] , vous devez utiliser Debuggable Package Manager pour configurer l'application à exécuter en mode débogage. Le gestionnaire de package pouvant être débogué est installé avec le Outils de contrôle à distance de Visual Studio.
 
@@ -203,7 +203,7 @@ Pour attacher le débogueur à une application [!INCLUDE[win8_appname_long](../d
    - **Déterminer automatiquement le type de code à déboguer**, ou
    - **Déboguez ces types de code**, puis sélectionnez un ou plusieurs types de code dans la liste.
 
-1. Dans la liste **processus disponibles** , sélectionnez le processus d’application à déboguer.
+1. Dans la liste **processus disponibles**  , sélectionnez le processus d’application à déboguer.
 
 1. Sélectionnez **Attacher**.
 

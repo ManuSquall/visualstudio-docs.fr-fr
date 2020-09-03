@@ -8,10 +8,10 @@ ms.date: 03/09/2020
 ms.topic: conceptual
 description: Découvrez comment les partenaires gèrent les abonnements Visual Studio pour leurs clients.
 ms.openlocfilehash: 5afe34b0a28e950225e18761d22854703f466f60
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85289025"
 ---
 # <a name="partners-managing-subscriptions-on-behalf-of-customers"></a>Partenaires gérant des abonnements pour le compte de clients
@@ -72,4 +72,4 @@ Ce scénario s’applique aux nouveaux partenaires qui ont déjà placé de nouv
 
 ## <a name="next-steps"></a>Étapes suivantes
 - Visitez le [portail d’administration des abonnements](https://manage.visualstudio.com) Visual Studio pour gérer les abonnements.
-- Besoin d'aide ? Contactez le [Support technique sur l’administration et les abonnements Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).
+- Vous avez besoin d’aide ? Contactez le [Support technique sur l’administration et les abonnements Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).

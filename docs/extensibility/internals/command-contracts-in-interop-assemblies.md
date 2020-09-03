@@ -1,5 +1,5 @@
 ---
-title: Contrats de commandement dans les assemblées Interop Microsoft Docs
+title: Contrats de commande dans les assemblys d’interopérabilité | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,22 +12,22 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4f20a4f479d62cd1b64c3b13ff6e1a949656a668
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80709683"
 ---
-# <a name="command-contracts-in-interop-assemblies"></a>Contrats de commandement dans les assemblées interop
-Le contrat de base pour <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> le traitement des <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> commandes à travers l’interface est que l’environnement appelle la méthode pour déterminer si la commande est prise en charge et, si elle est prise en charge, pour déterminer son état et son texte. Ensuite, l’environnement <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> appelle la méthode pour exécuter la commande.
+# <a name="command-contracts-in-interop-assemblies"></a>Contrats de commande dans les assemblys d’interopérabilité
+Le contrat de base pour la gestion des commandes par le biais de l' <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface est que l’environnement appelle la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> méthode pour déterminer si la commande est prise en charge et, si elle est prise en charge, pour déterminer son état et son texte. L’environnement appelle ensuite la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> méthode pour exécuter la commande.
 
- La <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> méthode est manipulée de façon identique pour toutes les commandes. Une communication plus poussée, si nécessaire (par exemple, avec <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> des listes d’abandon), est gérée en appelant la méthode avec des paramètres appropriés. L’interprétation de ces paramètres dépend de la commande spécifiée.
+ La <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> méthode est gérée de façon identique pour toutes les commandes. Des communications supplémentaires, si nécessaire (par exemple, avec des listes déroulantes), sont gérées en appelant la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> méthode avec les paramètres appropriés. L’interprétation de ces paramètres dépend de la commande spécifiée.
 
- Si la cible de commande renvoie les valeurs dans le paramètre de sortie, l’appelant est toujours responsable de la libération des ressources qui ont été allouées. Parce que ce paramètre est une variante, l’effacement de la variante libère les ressources.
+ Si la cible de la commande retourne des valeurs dans le paramètre de sortie, l’appelant est toujours responsable de la libération des ressources allouées. Étant donné que ce paramètre est un variant, l’effacement de la variante libère les ressources.
 
- Dans les cas où les commandes <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> doivent fonctionner dans une fenêtre de hiérarchie, l’interface doit être utilisée. L’interface <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> a un contrat <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> similaire <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A>avec des méthodes similaires: et .
+ Dans les cas où les commandes doivent fonctionner dans une fenêtre de hiérarchie, l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> interface doit être utilisée. L' <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> interface a un contrat similaire avec des méthodes similaires : <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> et <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A> .
 
 ## <a name="see-also"></a>Voir aussi
-- [Comment VSPackages ajoute des éléments d’interface utilisateur](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
-- [Itinéraire de commande dans VSPackages](../../extensibility/internals/command-routing-in-vspackages.md)
-- [Mise en œuvre du commandement](../../extensibility/internals/command-implementation.md)
+- [Comment les VSPackages ajoutent des éléments d’interface utilisateur](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Routage des commandes dans les VSPackages](../../extensibility/internals/command-routing-in-vspackages.md)
+- [Implémentation de la commande](../../extensibility/internals/command-implementation.md)

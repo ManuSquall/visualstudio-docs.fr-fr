@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3ccb29f0ea6322a3f6bbfac5c3c0817892f74644
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85288895"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>Guide pratique pour configurer les cibles et les tâches
@@ -115,4 +115,4 @@ Les paramètres `MSBuildRuntime` et `MSBuildArchitecture` représentent le moyen
 ## <a name="see-also"></a>Voir aussi
 
 - [Configurer les cibles et les tâches](../msbuild/configuring-targets-and-tasks.md)
-- [Élément UsingTask](../msbuild/usingtask-element-msbuild.md)
+- [UsingTask, élément](../msbuild/usingtask-element-msbuild.md)

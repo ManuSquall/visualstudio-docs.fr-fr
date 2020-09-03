@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 14556467e0907818333695b3388b2d11f3467ed7
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85289155"
 ---
 # <a name="usingtask-element-msbuild"></a>Élément UsingTask (MSBuild)
@@ -31,7 +31,7 @@ Mappe la tâche référencée dans un élément [Task](../msbuild/task-element-m
 
  \<Project> \<UsingTask>
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Syntaxe
 
 ```xml
 <UsingTask TaskName="TaskName"
@@ -53,7 +53,7 @@ Mappe la tâche référencée dans un élément [Task](../msbuild/task-element-m
 |---------------|-----------------|
 |`Architecture`|Attribut facultatif.<br /><br /> Spécifie que la tâche doit s’exécuter dans un processus du nombre de bits spécifié. Si le processus actuel ne satisfait pas à la spécification, la tâche est exécutée dans un processus hôte de tâche qui le fait.<br /><br /> Les valeurs prises en charge sont `x86` (32-bit), `x64` (64 bits), `CurrentArchitecture` et `*` (n’importe quelle architecture).|  
 |`AssemblyName`|L'attribut `AssemblyName` ou `AssemblyFile` est requis.<br /><br /> Nom de l'assembly à charger. L'attribut `AssemblyName` accepte les assemblys avec nom fort, bien que les noms forts ne soient pas obligatoires. L'utilisation de cet attribut équivaut au chargement d'un assembly à l'aide de la méthode <xref:System.Reflection.Assembly.Load%2A> dans .NET.<br /><br /> Vous ne pouvez pas utiliser cet attribut si l'attribut `AssemblyFile` est utilisé.|
-|`AssemblyFile`|L'attribut `AssemblyName` ou `AssemblyFile` est requis.<br /><br /> Chemin d'accès de l'assembly. Cet attribut accepte les chemins d'accès complets ou relatifs. Les chemins d'accès relatifs sont relatifs au répertoire du fichier projet ou du fichier .targets où l'élément `UsingTask` est déclaré. L'utilisation de cet attribut équivaut au chargement d'un assembly à l'aide de la méthode <xref:System.Reflection.Assembly.LoadFrom%2A> dans .NET.<br /><br /> Vous ne pouvez pas utiliser cet attribut si l'attribut `AssemblyName` est utilisé.|
+|`AssemblyFile`|L'attribut `AssemblyName` ou `AssemblyFile` est requis.<br /><br /> Chemin d'accès du fichier de l'assembly. Cet attribut accepte les chemins d'accès complets ou relatifs. Les chemins d'accès relatifs sont relatifs au répertoire du fichier projet ou du fichier .targets où l'élément `UsingTask` est déclaré. L'utilisation de cet attribut équivaut au chargement d'un assembly à l'aide de la méthode <xref:System.Reflection.Assembly.LoadFrom%2A> dans .NET.<br /><br /> Vous ne pouvez pas utiliser cet attribut si l'attribut `AssemblyName` est utilisé.|
 |`Runtime`|Attribut facultatif.<br /><br /> Spécifie que la tâche doit s’exécuter dans un .NET Framework Runtime de la version spécifiée. Si le processus actuel ne satisfait pas à la spécification, la tâche est exécutée dans un processus hôte de tâche qui le fait. Non pris en charge dans MSBuild .NET Core.<br /><br /> Les valeurs prises en charge sont `CLR2` (.NET Framework 3,5), `CLR4` (.NET Framework 4.7.2 ou version ultérieure), `CurrentRuntime` et `*` (n’importe quel Runtime).|  
 |`TaskFactory`|Attribut facultatif.<br /><br /> Spécifie la classe incluse dans l'assembly qui est responsable de la génération des instances du nom `Task` spécifié.  L'utilisateur peut également spécifier un `Task` en tant qu'élément enfant que la fabrique de tâches reçoit et utilise pour générer la tâche. Le contenu de `Task` est propre à la fabrique de tâches.|
 |`TaskName`|Attribut requis.<br /><br /> Nom de la tâche à référencer à partir d'un assembly. Si des ambiguïtés sont possibles, cet attribut doit toujours spécifier des espaces de noms complets. S'il existe des ambiguïtés, MSBuild choisit une correspondance arbitraire, laquelle peut produire des résultats inattendus.|
@@ -72,7 +72,7 @@ Mappe la tâche référencée dans un élément [Task](../msbuild/task-element-m
 | - | - |
 | [Projet](../msbuild/project-element-msbuild.md) | Élément racine requis d’un fichier projet MSBuild. |
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
  Les variables d'environnement, propriétés de ligne de commande, propriétés au niveau du projet et éléments au niveau du projet peuvent être référencés n'importe où dans les éléments `UsingTask` inclus dans le fichier projet, directement ou via un fichier projet importé. Pour plus d’informations, consultez l’article [Tâches MSBuild](../msbuild/msbuild-tasks.md).
 

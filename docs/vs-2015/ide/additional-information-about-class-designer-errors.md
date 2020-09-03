@@ -30,10 +30,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a095cd909dcd4d378fddc91c9151cf28e34a8ee5
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852206"
 ---
 # <a name="additional-information-about-class-designer-errors"></a>Informations supplémentaires sur les erreurs du Concepteur de classes
@@ -41,9 +41,9 @@ ms.locfileid: "75852206"
 
 Le Concepteur de classes n'effectue pas le suivi de l'emplacement de vos fichiers sources ; par conséquent, si vous modifiez votre structure de projet ou si vous déplacez des fichiers sources dans votre projet, le Concepteur de classes peut perdre la trace du type (surtout le type de source d'un typedef, de classes de base ou de types d'associations). Vous pouvez recevoir une erreur telle que **Le Concepteur de classes n’est pas en mesure d’afficher ce type**. Dans ce cas, refaites glisser le code source modifié ou déplacé vers le diagramme de classes pour le réafficher.
 
- Vous pouvez obtenir de l'aide sur d'autres erreurs et avertissements dans les ressources suivantes :
+ Vous pouvez obtenir de l'aide sur d'autres erreurs et avertissements dans les ressources suivantes : 
 
- [L’utilisation du C++ code Visual (Concepteur de classes)](../ide/working-with-visual-cpp-code-class-designer.md) comprend des informations de C++ dépannage sur l’affichage dans un diagramme de classes.
+ [Utilisation du Code Visual C++ (Concepteur de classes)](../ide/working-with-visual-cpp-code-class-designer.md) Contient des informations de dépannage sur l’affichage de C++ dans un diagramme de classes.
 
  Le [Forum du Concepteur de classes Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/vsclassdesigner/threads?page=1) propose un forum de questions relatives au Concepteur de classes.
 

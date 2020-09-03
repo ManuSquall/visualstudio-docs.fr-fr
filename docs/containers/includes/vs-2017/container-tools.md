@@ -7,36 +7,36 @@ ms.date: 02/01/2019
 ms.technology: vs-azure
 ms.topic: include
 ms.openlocfilehash: 627b0b1260a3ccdd401dbb170f8e2dfffadea2dc
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81389955"
 ---
-Avec Visual Studio, vous pouvez facilement construire, déboguer et exécuter des applications ASP.NET Core conteneurisées et les publier au Registre des conteneurs Azure (ACR), Au Docker Hub, au service d’applications Azure ou à votre propre registre des conteneurs. Dans cet article, nous allons effectuer la publication sur ACR.
+Avec Visual Studio, vous pouvez facilement générer, déboguer et exécuter des applications de ASP.NET Core en conteneur et les publier sur Azure Container Registry (ACR), un hub d’ancrage, Azure App Service ou votre propre registre de conteneurs. Dans cet article, nous allons effectuer la publication sur ACR.
 
 ## <a name="prerequisites"></a>Prérequis
 
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) avec la charge de travail **Développement web**, **Azure Tools** et/ou la charge de travail **Développement multiplateforme .NET Core**
-* Pour publier sur Azure Container Registry, un abonnement Azure. [Inscrivez-vous à un essai gratuit](https://azure.microsoft.com/free/dotnet/).
+* Pour publier sur Azure Container Registry, un abonnement Azure. [Inscrivez-vous pour un essai gratuit](https://azure.microsoft.com/free/dotnet/).
 
 ## <a name="installation-and-setup"></a>Installation et configuration
 
-Pour l’installation Docker, passez d’abord en revue les informations de [Docker Desktop pour Windows: Ce qu’il faut savoir avant d’installer](https://docs.docker.com/docker-for-windows/install/#what-to-know-before-you-install). Installez ensuite [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows).
+Pour l’installation de l’ordinateur d’amarrage, commencez par examiner les informations sur le [Bureau de station d’accueil Desktop pour Windows : ce que vous devez savoir avant d’installer](https://docs.docker.com/docker-for-windows/install/#what-to-know-before-you-install). Installez ensuite [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows).
 
 ## <a name="add-a-project-to-a-docker-container"></a>Ajouter un projet à un conteneur Docker
 
 1. Dans le menu Visual Studio, sélectionnez **Fichier > Nouveau > Projet**.
 1. Sous la section **Modèles** de la boîte de dialogue **Nouveau projet**, sélectionnez **Visual C# > Web**.
-1. Sélectionnez **ASP.NET’application Web de base** ou si vous souhaitez utiliser le cadre .NET au lieu de .NET Core, sélectionnez **ASP.NET application Web**.
+1. Sélectionnez **ASP.net Core application Web** ou si vous souhaitez utiliser le .NET Framework au lieu de .net Core, sélectionnez **application Web ASP.net**.
 1. Donnez un nom à votre nouvelle application (ou utilisez la valeur par défaut) et sélectionnez **OK**.
 1. Sélectionnez **application Web**.
 1. Cochez la case **Activer la prise en charge de Docker**.
 
    ![Case Activer la prise en charge de Docker](../../media/container-tools/enable-docker-support.PNG)
 
-   La capture d’écran montre .NET Core; si vous utilisez .NET Framework, il semble un peu différent.
+   La capture d’écran montre .NET Core ; Si vous utilisez .NET Framework, cela semble un peu différent.
 
 1. Sélectionnez le type de conteneur souhaité (Windows ou Linux) et cliquez sur **OK**.
 
@@ -67,7 +67,7 @@ COPY --from=publish /app .
 ENTRYPOINT ["dotnet", "HelloDockerTools.dll"]
 ```
 
-Le *Dockerfile* précédent est basé sur l’image [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/). Il comprend des instructions pour modifier l’image de base en générant votre projet et en l’ajoutant au conteneur. Si vous utilisez le cadre .NET, l’image de base sera différente.
+Le *Dockerfile* précédent est basé sur l’image [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/). Il comprend des instructions pour modifier l’image de base en générant votre projet et en l’ajoutant au conteneur. Si vous utilisez le .NET Framework, l’image de base sera différente.
 
 Quand la case **Configurer pour HTTPS** de la boîte de dialogue du nouveau projet est cochée, le fichier *Dockerfile* expose deux ports. Un port est utilisé pour le trafic HTTP tandis que l’autre est utilisé pour HTTPS. Si la case n’est pas cochée, un seul port (80) est exposé pour le trafic HTTP.
 
@@ -112,7 +112,7 @@ Une fois le cycle de développement et de débogage de l’application effectué
     | **Préfixe DNS** | Nom globalement unique | Nom qui identifie uniquement votre registre de conteneurs. |
     | **Abonnement** | Choisir votre abonnement | Sélectionnez l’abonnement Azure à utiliser. |
     | **[Groupe de ressources](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Nom du groupe de ressources où créer votre registre de conteneurs. Choisissez **Nouveau** pour créer un groupe de ressources.|
-    | **[Sku](/azure/container-registry/container-registry-skus)** | standard | Niveau de service du registre de conteneurs  |
+    | **[PAIRE](/azure/container-registry/container-registry-skus)** | Standard | Niveau de service du registre de conteneurs  |
     | **Emplacement du registre** | Un emplacement proche de vous | Choisissez un emplacement dans une [région](https://azure.microsoft.com/regions/) près de chez vous ou près d’autres services que votre registre de conteneurs va utiliser. |
 
     ![Boîte de dialogue de création d’un registre de conteneurs Azure dans Visual Studio][0]

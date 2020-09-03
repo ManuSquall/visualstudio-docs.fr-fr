@@ -10,10 +10,10 @@ manager: AndSter
 ms.workload:
 - multiple
 ms.openlocfilehash: b369fe6998cd7ef134af765d6d849f41bc93527c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85290418"
 ---
 # <a name="analyze-database-performance-using-the-database-tool"></a>Analyser les performances de base de données à l’aide de l’outil base de données
@@ -23,7 +23,7 @@ Utilisez l’outil de base de données pour enregistrer les requêtes de base de
 > [!NOTE]
 > L’outil de base de données nécessite Visual Studio 2019 version 16,3 ou ultérieure et un projet .NET Core sur Windows à l’aide de [ADO.net]( https://docs.microsoft.com/dotnet/framework/data/adonet/ado-net-overview) ou [Entity Framework Core](https://docs.microsoft.com/ef/core/).
 
-## <a name="setup"></a>Programme d’installation
+## <a name="setup"></a>Installation
 
 1. Appuyez sur **ALT + F2** pour ouvrir le profileur de performances dans Visual Studio.
 

@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 41cd62e8831ac4edd5b37337c1e72dd0b2e662e4
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536290"
 ---
 # <a name="publish-clickonce-applications"></a>Publier des applications ClickOnce
@@ -48,7 +48,7 @@ Lorsque vous publiez une application [!INCLUDE[ndptecclick](../deployment/includ
 ## <a name="publish-page"></a>Page Publier
  La page **Publier** du **Concepteur de projets** permet de configurer les propriétés du déploiement ClickOnce. Le tableau suivant liste les rubriques.
 
-|Intitulé|Description|
+|Titre|Description|
 |-----------|-----------------|
 |[Guide pratique pour spécifier l’endroit où Visual Studio copie les fichiers](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)|Décrit comment définir l'emplacement où Visual Studio place les fichiers d'application et les manifestes.|
 |[Guide pratique pour spécifier l’emplacement à partir duquel les utilisateurs finaux effectueront l’installation](../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)|Décrit comment définir l'emplacement à partir duquel les utilisateurs téléchargent et installent l'application.|
@@ -72,7 +72,7 @@ Lorsque vous publiez une application [!INCLUDE[ndptecclick](../deployment/includ
 ### <a name="publish-options-dialog-box"></a>Boîte de dialogue Options de publication
  La boîte de dialogue Options de publication spécifie les options de déploiement d'une application.
 
-|Intitulé|Description|
+|Titre|Description|
 |-|-|
 |[Guide pratique pour changer la langue de publication pour une application ClickOnce](../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md)|Explique comment spécifier une langue et une culture correspondant à la version localisée.|
 |[Guide pratique pour spécifier un nom de menu Démarrer pour une application ClickOnce](../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)|Décrit comment modifier le nom complet d'une application ClickOnce.|
@@ -84,7 +84,7 @@ Lorsque vous publiez une application [!INCLUDE[ndptecclick](../deployment/includ
 
 ## <a name="related-topics"></a>Rubriques connexes
 
-|Intitulé|Description|
+|Titre|Description|
 |-----------|-----------------|
 |[Guide pratique pour créer des associations de fichiers pour une application ClickOnce](../deployment/how-to-create-file-associations-for-a-clickonce-application.md)|Décrit comment ajouter la prise en charge d'extension de nom de fichier à une application ClickOnce.|
 |[Guide pratique pour récupérer les informations de chaîne de requête dans une application ClickOnce en ligne](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)|Montre comment récupérer des paramètres passés dans l'URL utilisée pour exécuter une application ClickOnce.|

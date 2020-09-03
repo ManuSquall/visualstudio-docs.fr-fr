@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6d7c72d1da270220144cd5e6167ebecb66462ba9
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85289272"
 ---
 # <a name="msbuild-batching"></a>Traitement par lots MSBuild
@@ -223,5 +223,5 @@ Pour plus d’informations sur les fonctions de propriété, consultez [Fonction
 
 - [ItemMetadata, élément (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)
 - [Concepts MSBuild](../msbuild/msbuild-concepts.md)
-- [Référence MSBuild](../msbuild/msbuild-reference.md)
+- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)
 - [Concepts avancés](../msbuild/msbuild-advanced-concepts.md)

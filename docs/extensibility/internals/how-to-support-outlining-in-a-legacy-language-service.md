@@ -1,5 +1,5 @@
 ---
-title: 'Comment : Soutenir l’énoncé dans un service de langue héritée (fr) Microsoft Docs'
+title: 'Comment : prendre en charge le mode plan dans un service de langage hérité | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,38 +13,38 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 28396d513c83ed83e2769e75a6020a98b10251b4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80707916"
 ---
-# <a name="how-to-support-outlining-in-a-legacy-language-service"></a>Comment : Soutien dans un service linguistique hérité
-La description est utilisée pour étendre ou effondrer différentes régions de texte. La façon d’être utilisée peut être définie différemment par différentes langues. Pour plus d’informations, voir [Mode Plan](../../ide/outlining.md).
+# <a name="how-to-support-outlining-in-a-legacy-language-service"></a>Comment : prendre en charge le mode plan dans un service de langage hérité
+Le mode plan est utilisé pour développer ou réduire différentes zones de texte. La façon dont le mode plan est utilisé peut être définie différemment selon les différentes langues. Pour plus d’informations, voir [Mode Plan](../../ide/outlining.md).
 
- Les services linguistiques hérités sont mis en œuvre dans le cadre d’un VSPackage, mais la nouvelle façon de mettre en œuvre des fonctionnalités de service linguistique est d’utiliser des extensions MEF. Pour en savoir plus sur la nouvelle façon de mettre en œuvre la mise en œuvre de la mise en œuvre, voir [Procédure Pas à pas: Outlineing](../../extensibility/walkthrough-outlining.md).
+ Les services de langage hérités sont implémentés dans le cadre d’un VSPackage, mais la meilleure façon d’implémenter les fonctionnalités du service de langage consiste à utiliser les extensions MEF. Pour en savoir plus sur la nouvelle façon d’implémenter le mode plan, consultez [procédure pas à pas : mode plan](../../extensibility/walkthrough-outlining.md).
 
 > [!NOTE]
-> Nous vous recommandons de commencer à utiliser le nouvel éditeur API dès que possible. Cela améliorera les performances de votre service linguistique et vous permettra de profiter des nouvelles fonctionnalités de l’éditeur.
+> Nous vous recommandons de commencer à utiliser la nouvelle API Editor dès que possible. Cela améliore les performances de votre service de langage et vous permet de tirer parti des nouvelles fonctionnalités de l’éditeur.
 
- Ce qui suit montre comment soutenir cette commande pour votre service linguistique.
+ L’exemple suivant illustre la prise en charge de cette commande pour votre service de langage.
 
-## <a name="to-support-outlining"></a>Pour soutenir la mise en avant
+## <a name="to-support-outlining"></a>Pour prendre en charge le mode plan
 
-1. Implémentez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningCapableLanguage> votre objet de service linguistique.
+1. Implémentez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningCapableLanguage> sur votre objet de service de langage.
 
-2. Faites <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A> appel à l’objet actuel de la session de mise en scène pour ajouter de nouvelles régions à contours.
+2. Appelez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A> sur l’objet de session en mode plan actuel pour ajouter de nouvelles régions en mode plan.
 
 ## <a name="robust-programming"></a>Programmation fiable
- Lorsqu’un utilisateur sélectionne **Collapse To Definitions** sur le menu <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningCapableLanguage.CollapseToDefinitions%2A> **Outlining,** l’IDE fait appel à votre service linguistique.
+ Quand un utilisateur sélectionne **réduire aux définitions** dans le menu **mode plan** , l’IDE appelle <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningCapableLanguage.CollapseToDefinitions%2A> sur votre service de langage.
 
- Lorsque cette méthode est appelée, l’IDE passe dans un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> pointeur (un pointeur à un tampon de texte) et un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession> (un pointeur à la session de mise en ligne en cours).
+ Lorsque cette méthode est appelée, l’IDE passe dans un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> pointeur (pointeur vers une mémoire tampon de texte) et un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession> (pointeur vers la session en mode plan active).
 
- Vous pouvez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A> appeler la méthode pour plusieurs régions `rgOutlnReg` à contours en spécifiant ces régions dans le paramètre. Le `rgOutlnReg` paramètre <xref:Microsoft.VisualStudio.TextManager.Interop.NewOutlineRegion> est une structure. Ce processus vous permet de spécifier différentes caractéristiques de la région cachée, comme l’élargissement ou l’effondrement d’une région particulière.
+ Vous pouvez appeler la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A> méthode pour plusieurs régions en mode plan en spécifiant ces régions dans le `rgOutlnReg` paramètre. Le `rgOutlnReg` paramètre est une <xref:Microsoft.VisualStudio.TextManager.Interop.NewOutlineRegion> structure. Ce processus vous permet de spécifier différentes caractéristiques de la zone masquée, par exemple si une région particulière est développée ou réduite.
 
 > [!NOTE]
-> Faites attention à cacher des personnages de nouvelle ligne. Le texte caché doit s’étendre du début de la première ligne au dernier caractère de la dernière ligne dans une section, laissant visible le caractère final de nouvelle ligne.
+> N’oubliez pas de masquer les caractères de nouvelle ligne. Le texte masqué doit s’étendre à partir du début de la première ligne jusqu’au dernier caractère de la dernière ligne d’une section, ce qui laisse le caractère de nouvelle ligne final visible.
 
 ## <a name="see-also"></a>Voir aussi
-- [Comment : Fournir un support texte caché dans un service linguistique hérité](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)
-- [Comment : Fournir un soutien élargi dans un service linguistique hérité](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)
+- [Comment : fournir une prise en charge du texte masqué dans un service de langage hérité](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)
+- [Comment : fournir une prise en charge développée du mode plan dans un service de langage hérité](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)

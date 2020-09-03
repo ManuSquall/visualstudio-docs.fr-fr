@@ -19,15 +19,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 94f2d88aa19bf01ebe6f25c7d80772c812abcc59
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77632964"
 ---
 # <a name="projectextensions-element-msbuild"></a>Élément ProjectExtensions (MSBuild)
 
-Permet aux fichiers de projets MSBuild de contenir des informations non-MSBuild. Tout ce `ProjectExtensions` qui se cache à l’intérieur d’un élément sera ignoré par MSBuild.
+Permet aux fichiers projet MSBuild de contenir des informations non MSBuild. Tout ce qui se trouve à l’intérieur d’un `ProjectExtensions` élément sera ignoré par MSBuild.
 
  \<Project> \<ProjectExtensions>
 
@@ -55,13 +55,13 @@ Permet aux fichiers de projets MSBuild de contenir des informations non-MSBuild.
 
 | Élément | Description |
 | - | - |
-| [Projet](../msbuild/project-element-msbuild.md) | Élément racine requis d’un fichier de projet MSBuild. |
+| [Projet](../msbuild/project-element-msbuild.md) | Élément racine requis d’un fichier projet MSBuild. |
 
-## <a name="remarks"></a>Notes 
+## <a name="remarks"></a>Notes
 
- Un `ProjectExtensions` seul élément peut être utilisé dans un projet MSBuild.
+ Un seul `ProjectExtensions` élément peut être utilisé dans un projet MSBuild.
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 
  L’exemple de code suivant affiche les informations de l’environnement de développement intégré stockées dans un élément `ProjectExtensions`.
 
@@ -79,5 +79,5 @@ Permet aux fichiers de projets MSBuild de contenir des informations non-MSBuild.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Référence du schéma de fichier de projet](../msbuild/msbuild-project-file-schema-reference.md)
+- [Référence du schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)
 - [MSBuild](../msbuild/msbuild.md)

@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a66164426b760798571fc35e5288158a8dae9943
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633549"
 ---
 # <a name="logging-in-msbuild"></a>Journalisation dans MSBuild
@@ -25,13 +25,13 @@ La journalisation vous permet de surveiller la progression d’une génération.
 
 - [Obtenir des journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md)
 
- Décrit les différents aspects de l’exploitation forestière dans MSBuild.
+ Décrit les différents aspects de la journalisation dans MSBuild.
 
-- [Construire des bûcherons](../msbuild/build-loggers.md)
+- [Enregistreurs d’événements de génération](../msbuild/build-loggers.md)
 
  Décrit les étapes requises pour créer un enregistreur d’événements dans un environnement monoprocesseur.
 
-- [Enregistrement dans un environnement multi-processeur](../msbuild/logging-in-a-multi-processor-environment.md)
+- [Journalisation dans un environnement multiprocesseur](../msbuild/logging-in-a-multi-processor-environment.md)
 
  Décrit le fonctionnement de la journalisation dans un environnement multiprocesseur ainsi que les deux modèles de journalisation multiprocesseur.
 

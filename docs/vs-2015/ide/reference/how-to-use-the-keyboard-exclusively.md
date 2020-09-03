@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Utiliser uniquement le clavier | Microsoft Docs'
+title: Guide pratique pour utiliser uniquement le clavier | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -17,19 +17,19 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c9a9ec5f83a6df3dab262e24aac5c36b2d65ef00
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852376"
 ---
-# <a name="how-to-use-the-keyboard-exclusively"></a>Procédure : Utiliser uniquement le clavier
+# <a name="how-to-use-the-keyboard-exclusively"></a>Guide pratique pour utiliser uniquement le clavier
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] fournit de nombreuses combinaisons de touches de raccourci par défaut pour simplifier la navigation et l’écriture du code dans l’environnement de développement intégré (IDE). Pour obtenir la liste complète des touches de raccourci utilisées dans Visual Studio, consultez [Raccourcis clavier par défaut](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Pour plus d’informations sur les raccourcis clavier disponibles pour d’autres produits Microsoft, consultez [http://www.microsoft.com/enable/products/keyboard.aspx](https://www.microsoft.com/enable/products/keyboard.aspx).
+[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] fournit de nombreuses combinaisons de touches de raccourci par défaut pour simplifier la navigation et l’écriture du code dans l’environnement de développement intégré (IDE). Pour obtenir la liste complète des touches de raccourci utilisées dans Visual Studio, consultez [raccourcis clavier par défaut](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Pour plus d’informations sur les raccourcis clavier disponibles pour d’autres produits Microsoft, consultez [http://www.microsoft.com/enable/products/keyboard.aspx](https://www.microsoft.com/enable/products/keyboard.aspx) .
 
 > [!NOTE]
-> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Les boîtes de dialogue et les commandes de menu affichées peuvent différer de celles décrites dans l'Aide selon les paramètres actifs ou le mode d'édition. Pour modifier vos paramètres, choisissez **Paramètres d'importation et d'exportation** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="toolbox-controls"></a>Contrôles de boîte à outils
  Vous pouvez ajouter un contrôle sur la boîte à outils dans un formulaire ou un concepteur à l’aide du clavier.
@@ -59,11 +59,11 @@ ms.locfileid: "75852376"
 
     - Pour les cases à cocher, utilisez la touche **Espace** pour sélectionner ou désélectionner.
 
-    - Pour les listes déroulantes, utilisez **Alt** + **Bas** pour afficher les éléments, puis utilisez **Haut** et **Bas** pour changer l’élément sélectionné.
+    - Pour les listes déroulantes, utilisez **ALT**vers le bas  +  **DOWNARROW** pour afficher les éléments, puis utilisez les **flèches haut** et **bas** pour modifier l’élément sélectionné.
 
-    - Pour les boutons, appuyez sur **Entrée** pour les appeler.
+    - Pour les boutons, appuyez sur **entrée** pour appeler.
 
-    - Pour les grilles, utilisez les touches de direction pour naviguer. Pour les listes déroulantes, utilisez **Maj** + **Alt** + **Bas** pour afficher les éléments, puis utilisez **Haut** et **Bas** pour changer l’élément sélectionné.
+    - Pour les grilles, utilisez les touches de direction pour naviguer. Pour les listes déroulantes dans les grilles, utilisez **MAJ**  +  **ALT**  +  **flèche bas** pour afficher les éléments, puis utilisez les **flèches haut** et **bas** pour modifier l’élément sélectionné.
 
 ## <a name="window-and-file-navigation"></a>Navigation dans les fenêtres et les fichiers
  L’IDE vous fournit plusieurs méthodes pour vous déplacer entre les fenêtres ouvertes des outils et des documents à l’aide du clavier. Vous pouvez également déplacer et ancrer les fenêtres Outil dans différents emplacements à l’aide du clavier.
@@ -80,13 +80,13 @@ ms.locfileid: "75852376"
 
 2. Dans le menu **Fenêtre**, cliquez sur **Ancrable**.
 
-3. Appuyez sur **Alt** + **Espace**, puis choisissez **Déplacer**.
+3. Appuyez sur **ALT**  +  **espace** , puis sur **déplacer**.
 
      Le losange d’ancrage s’affiche.
 
 4. Utilisez les touches de **direction** pour déplacer la fenêtre vers un nouvel emplacement.
 
-     Le pointeur de la souris se déplace avec la fenêtre lorsque vous utilisez les touches de **direction**.
+     Le pointeur de la souris se déplace avec la fenêtre lorsque vous utilisez les touches de **direction** .
 
 5. Lorsque vous avez atteint le nouvel emplacement, utilisez les touches de **direction** pour placer le pointeur de la souris sur la partie appropriée du losange.
 

@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f61a308fcd68b03852176087438c22c245078693
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851548"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Étape 4 : composer votre formulaire avec un contrôle TableLayoutPanel
@@ -21,17 +21,17 @@ ms.locfileid: "75851548"
 
 Dans cette étape, vous allez ajouter un contrôle `TableLayoutPanel` à votre formulaire. Le contrôle TableLayoutPanel permet d'aligner correctement les contrôles du formulaire que vous ajouterez ultérieurement.
 
- ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo") Pour obtenir une version vidéo de cette rubrique, consultez [didacticiel 1 : créer une visionneuse d’images dans Visual Basic-vidéo 2](https://msdn.microsoft.com/vbasic/gg315945.aspx) ou [didacticiel 1 : créer une C# visionneuse d’images dans la vidéo 2](https://msdn.microsoft.com/vcsharp/gg278410.aspx). Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d’interface utilisateur. Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.
+ ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo") Pour obtenir une version vidéo de cette rubrique, consultez [didacticiel 1 : créer une visionneuse d’images dans Visual Basic-vidéo 2](https://msdn.microsoft.com/vbasic/gg315945.aspx) ou [didacticiel 1 : créer une visionneuse d’images en C#-vidéo 2](https://msdn.microsoft.com/vcsharp/gg278410.aspx). Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d’interface utilisateur. Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.
 
 ### <a name="to-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Pour composer votre formulaire avec un contrôle TableLayoutPanel
 
-1. Sur le côté gauche de l’IDE de Visual Studio, localisez l’onglet **boîte** à outils. Choisissez l’onglet **boîte à** outils et la boîte à outils s’affiche. Vous pouvez également sélectionner **Affichage**, **Boîte à outils** dans la barre de menus.
+1. Sur le côté gauche de l’IDE de Visual Studio, localisez l’onglet **boîte à outils** . Choisissez l’onglet **boîte à outils** et la boîte à outils s’affiche. Vous pouvez également sélectionner **Affichage**, **Boîte à outils** dans la barre de menus.
 
 2. Sélectionnez le petit symbole de triangle en regard du groupe **Conteneurs** pour l’ouvrir, comme indiqué dans l’image suivante.
 
      ![Groupe de conteneurs](../ide/media/express-toolbox.png "Express_Toolbox") Groupe de conteneurs
 
-3. Vous pouvez ajouter des contrôles comme des boutons, des cases à cocher et des étiquettes à votre formulaire. Double-cliquez sur le contrôle `TableLayoutPanel` dans la boîte à outils. (Ou, vous pouvez faire glisser le contrôle de la boîte à outils vers le formulaire.) Dans ce cas, l’IDE ajoute un contrôle `TableLayoutPanel` à votre formulaire, comme indiqué dans l’image suivante.
+3. Vous pouvez ajouter des contrôles comme des boutons, des cases à cocher et des étiquettes à votre formulaire. Double-cliquez sur le contrôle `TableLayoutPanel` dans la boîte à outils. (Ou, vous pouvez faire glisser le contrôle de la boîte à outils vers le formulaire.) Dans ce cas, l’IDE ajoute un `TableLayoutPanel` contrôle à votre formulaire, comme illustré dans l’image suivante.
 
      ![TableLayoutPanel, contrôle](../ide/media/express-formtablelayout.png "Express_FormTableLayout") TableLayoutPanel, contrôle
 
@@ -69,18 +69,18 @@ Dans cette étape, vous allez ajouter un contrôle `TableLayoutPanel` à votre f
 
      ![Tâches TableLayoutPanel](../ide/media/express-tablepanel.png "Express_TablePanel") Tâches TableLayoutPanel
 
-10. Sélectionnez la tâche **Modifier les lignes et les colonnes** pour afficher la fenêtre **Styles de ligne et de colonne**. Sélectionnez **Colonne1** et affectez-lui la valeur 15 pour cent en vérifiant que le bouton **Pourcentage** est sélectionné et en entrant `15` dans la zone **Pourcentage**. (Il s’agit d’un contrôle `NumericUpDown`, que vous utiliserez dans un didacticiel ultérieur.) Sélectionnez **Colonne2** et affectez-lui la valeur 85 pour cent. Ne sélectionnez pas encore le bouton **OK**, sinon la fenêtre se fermera. (Mais si vous le faites, vous pouvez la rouvrir à l’aide de la liste des tâches.)
+10. Sélectionnez la tâche **Modifier les lignes et les colonnes** pour afficher la fenêtre **Styles de ligne et de colonne**. Sélectionnez **Colonne1** et affectez-lui la valeur 15 pour cent en vérifiant que le bouton **Pourcentage** est sélectionné et en entrant `15` dans la zone **Pourcentage**. (Il s’agit d’un `NumericUpDown` contrôle, que vous utiliserez dans un didacticiel ultérieur.) Sélectionnez **Colonne2** et affectez-lui la valeur 85 pour cent. Ne sélectionnez pas encore le bouton **OK**, sinon la fenêtre se fermera. (Mais si vous le faites, vous pouvez la rouvrir à l’aide de la liste des tâches.)
 
      ![Styles de ligne et de colonne TableLayoutPanel](../ide/media/vs-tablelayoutpanel-setup.png "VS_TableLayoutPanel_Setup") Styles de ligne et de colonne TableLayoutPanel
 
 11. Dans la liste déroulante **Afficher** en haut de la fenêtre, sélectionnez **Lignes**. Affectez les valeurs 90 pour cent à **Ligne1** et 10 pour cent à **Ligne2**.
 
-12. Sélectionnez le bouton **OK** . Votre TableLayoutPanel doit maintenant avoir une grande ligne en haut, une petite ligne en bas, une petite colonne à gauche et une grande colonne à droite. Vous pouvez redimensionner les lignes et les colonnes de TableLayoutPanel en choisissant tableLayoutPanel1 dans le formulaire, puis en faisant glisser ses bordures de ligne et de colonne.
+12. Choisissez le bouton **OK**. Votre TableLayoutPanel doit maintenant avoir une grande ligne en haut, une petite ligne en bas, une petite colonne à gauche et une grande colonne à droite. Vous pouvez redimensionner les lignes et les colonnes de TableLayoutPanel en choisissant tableLayoutPanel1 dans le formulaire, puis en faisant glisser ses bordures de ligne et de colonne.
 
      ![Form1 avec TableLayoutPanel redimensionné](../ide/media/vs-formafterlayoutpanel.png "VS_FormAfterLayoutPanel") Form1 avec TableLayoutPanel redimensionné
 
 ### <a name="to-continue-or-review"></a>Pour continuer ou examiner
 
-- Pour passer à l’étape suivante du didacticiel, consultez [Étape 5 : ajouter des contrôles à votre formulaire](../ide/step-5-add-controls-to-your-form.md).
+- Pour passer à l’étape suivante du didacticiel, consultez [étape 5 : ajouter des contrôles à votre formulaire](../ide/step-5-add-controls-to-your-form.md).
 
-- Pour revenir à l’étape précédente du didacticiel, consultez [Étape 3 : définir les propriétés de votre formulaire](../ide/step-3-set-your-form-properties.md).
+- Pour revenir à l’étape précédente du didacticiel, consultez [étape 3 : définir les propriétés de votre formulaire](../ide/step-3-set-your-form-properties.md).

@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ae11860aaa64448cd4d23b5602cf4c2da1575ce3
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75916218"
 ---
 # <a name="jit-optimization-and-debugging"></a>Optimisation JIT et débogage
@@ -32,12 +32,12 @@ Si vous essayez de déboguer du code, il est plus facile de le faire lorsque ce 
 ## <a name="how-optimizations-work-in-net"></a>Fonctionnement des optimisations dans .NET 
 Normalement, la configuration de build de version crée du code optimisé et la configuration de build Debug ne le fait pas. La `Optimize` propriété MSBuild contrôle si le compilateur est invité à optimiser le code.
 
-Dans l’écosystème .NET, le code est converti des instructions source en processeur en deux étapes : tout d’abord, le C# compilateur convertit le texte que vous tapez en un format binaire intermédiaire appelé MSIL et écrit le code MSIL dans les fichiers. dll. Plus tard, le Runtime .NET convertit ce MSIL en instructions de l’UC. Les deux étapes peuvent être optimisées dans une certaine mesure, mais la deuxième étape effectuée par le Runtime .NET effectue les optimisations les plus significatives.
+Dans l’écosystème .NET, le code est converti des instructions source en processeur en deux étapes : tout d’abord, le compilateur C# convertit le texte que vous tapez en un format binaire intermédiaire appelé MSIL et écrit le code MSIL dans les fichiers. dll. Plus tard, le Runtime .NET convertit ce MSIL en instructions de l’UC. Les deux étapes peuvent être optimisées dans une certaine mesure, mais la deuxième étape effectuée par le Runtime .NET effectue les optimisations les plus significatives.
 
 ## <a name="the-suppress-jit-optimization-on-module-load-managed-only-option"></a>Option « Supprimer l’optimisation JIT lors du chargement du module (managé uniquement) »
 Le débogueur expose une option qui contrôle ce qui se produit quand une DLL compilée avec des optimisations activées est chargée au sein du processus cible. Si cette option est désactivée (État par défaut), lorsque le Runtime .NET compile le code MSIL en code UC, les optimisations sont activées. Si l’option est activée, le débogueur demande que les optimisations soient désactivées.
 
-Pour trouver l' **option Supprimer l’optimisation JIT lors du chargement du module (managé uniquement)** , sélectionnez **Outils** > **options**, puis sélectionnez la page **général** sous le nœud **débogage** .
+Pour trouver l’option **Supprimer l’optimisation JIT lors du chargement du module (managé uniquement)** , sélectionnez **Outils**  >  **options**, puis sélectionnez la page **général** sous le nœud **débogage** .
 
 ![Supprimer l’optimisation JIT](../debugger/media/suppress-jit-tool-options.png "Supprimer l’optimisation JIT")
 
@@ -53,7 +53,7 @@ Si vous êtes uniquement intéressé par le débogage du code que vous générez
 Il existe deux situations dans lesquelles l’activation de cette option ne fonctionne **pas** :
 
 1. Dans les situations où vous attachez le débogueur à un processus déjà en cours d’exécution, cette option n’a aucun effet sur les modules qui ont déjà été chargés au moment où le débogueur a été attaché.
-2. Cette option n’a aucun effet sur les dll qui ont été précompilées (a. k. a générées avec NGen) en code natif. Toutefois, vous pouvez désactiver l’utilisation du code précompilé en démarrant le processus avec la variable d’environnement **'COMPlus_ReadyToRun'** définie sur **' 0 '** . Cela indique au Runtime .NET Core de désactiver l’utilisation d’images précompilées, en forçant le runtime à compiler le code d’infrastructure juste-à-temps. 
+2. Cette option n’a aucun effet sur les dll qui ont été précompilées (a. k. a générées avec NGen) en code natif. Toutefois, vous pouvez désactiver l’utilisation du code précompilé en démarrant le processus avec la variable d’environnement **'COMPlus_ReadyToRun'** définie sur **' 0 '**. Cela indique au Runtime .NET Core de désactiver l’utilisation d’images précompilées, en forçant le runtime à compiler le code d’infrastructure juste-à-temps. 
 
     > [!IMPORTANT]
     > Si vous ciblez .NET Framework ou une version antérieure de .NET Core (2. x ou inférieure), ajoutez également la variable d’environnement « COMPlus_ZapDisable » et affectez-lui la valeur « 1 ».
@@ -69,5 +69,5 @@ Il existe deux situations dans lesquelles l’activation de cette option ne fonc
 - [Comment déboguer une source de .NET Framework](../debugger/how-to-debug-dotnet-framework-source.md)
 - [Débogage du code managé](../debugger/debugging-managed-code.md)
 - [Naviguer dans le code avec le débogueur](../debugger/navigating-through-code-with-the-debugger.md)
-- [S’attacher à des processus en cours d’exécution](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
-- [Processus d'exécution managée](/dotnet/standard/managed-execution-process)
+- [Joindre aux processus en cours d’exécution](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
+- [Processus d’exécution managée](/dotnet/standard/managed-execution-process)
