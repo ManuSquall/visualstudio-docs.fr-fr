@@ -18,20 +18,20 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8bb18ec8dd12431d650d844e3698c1986c8d8bd8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665643"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Page Références, Concepteur de projets (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Utilisez la page **Références** du **Concepteur de projet** pour gérer des références, des références web et des espaces de noms importés dans votre projet. Les projets peuvent contenir des références aux composants COM, services web XML, assemblys ou bibliothèques de classes .NET Framework, ou d’autres bibliothèques de classes. Pour plus d’informations sur l’utilisation de références, consultez [Gestion des références dans un projet](../../ide/managing-references-in-a-project.md).
+Utilisez la page **références** du **Concepteur de projet** pour gérer les références, les références Web et les espaces de noms importés dans votre projet. Les projets peuvent contenir des références aux composants COM, services web XML, assemblys ou bibliothèques de classes .NET Framework, ou d’autres bibliothèques de classes. Pour plus d’informations sur l’utilisation de références, consultez [Gestion des références dans un projet](../../ide/managing-references-in-a-project.md).
 
  Pour accéder à la page **Références**, choisissez un nœud de projet (pas le nœud **Solution**) dans l’**Explorateur de solutions**. Ensuite, choisissez **Projet**, **Propriétés** dans la barre de menus. Quand le Concepteur de projet apparaît, cliquez sur l’onglet **Références**.
 
-## <a name="uielement-list"></a>Liste des éléments d’interface
+## <a name="uielement-list"></a>Liste des éléments de l'interface utilisateur
  Les options suivantes vous permettent de sélectionner ou supprimer des références et des espaces de noms importés dans votre projet.
 
  **Références inutilisées** Cliquez sur ce bouton pour accéder à la boîte de dialogue **références inutilisées** .
@@ -52,9 +52,9 @@ Utilisez la page **Références** du **Concepteur de projet** pour gérer des r�
 
  **Ajouter** Cliquez sur ce bouton pour ajouter une référence ou une référence Web à la liste des **références** .
 
- Choisissez **Référence**  pour ajouter une référence à votre projet à l’aide de la boîte de dialogue Ajouter une référence.
+ Choisissez **Référence ** pour ajouter une référence à votre projet à l’aide de la boîte de dialogue Ajouter une référence.
 
- Choisissez **Référence web** pour ajouter une référence web à votre projet à l’aide de la boîte de dialogue Ajouter une référence web.
+ Choisissez **référence Web** pour ajouter une référence Web à votre projet à l’aide de la boîte de dialogue Ajouter une référence Web.
 
  **Supprimer** Sélectionnez une ou plusieurs références dans la liste **références** , puis cliquez sur ce bouton pour la supprimer.
 
@@ -62,7 +62,7 @@ Utilisez la page **Références** du **Concepteur de projet** pour gérer des r�
 
  **Espaces de noms importés** Vous pouvez taper votre propre espace de noms dans cette zone, puis cliquer sur **Ajouter une importation d’utilisateur** pour l’ajouter à la liste des espaces de noms.
 
- Vous pouvez créer des alias pour les espaces de noms importés par l’utilisateur. Pour ce faire, entrez l’alias et l’espace de noms au format *alias*=*espace de noms*. C’est utile si vous utilisez des espaces de noms longs, par exemple `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`.
+ Vous pouvez créer des alias pour les espaces de noms importés par l’utilisateur. Pour ce faire, entrez l’alias et l’espace de noms dans *alias*l' = *espace de noms*alias de format. C’est utile si vous utilisez des espaces de noms longs, par exemple `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`.
 
  **Ajouter une importation d’utilisateur** Cliquez sur ce bouton pour ajouter l’espace de noms spécifié dans la zone **espaces de noms importés** à la liste des espaces de noms importés. Le bouton n’est actif que si l’espace de noms spécifié ne figure pas déjà dans la liste.
 

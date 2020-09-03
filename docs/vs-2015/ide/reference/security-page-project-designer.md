@@ -20,16 +20,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 768b0d43d8e6b52781e3f2dc2029e0b96b3a6548
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665539"
 ---
 # <a name="security-page-project-designer"></a>Page Sécurité, Concepteur de projets
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La page **Sécurité** du **Concepteur de projets** permet de configurer les paramètres de sécurité d’accès du code pour les applications qui sont déployées à l’aide d’un déploiement [!INCLUDE[ndptecclick](../../includes/ndptecclick-md.md)]. Pour plus d’informations, consultez [Sécurité d’accès du code pour les applications ClickOnce](../../deployment/code-access-security-for-clickonce-applications.md).
+La page **Sécurité** du **Concepteur de projets** permet de configurer les paramètres de sécurité d’accès du code pour les applications qui sont déployées à l’aide d’un déploiement [!INCLUDE[ndptecclick](../../includes/ndptecclick-md.md)]. Pour plus d’informations, consultez [sécurité d’accès du code pour les applications ClickOnce](../../deployment/code-access-security-for-clickonce-applications.md).
 
  Pour accéder à la page **Sécurité**, cliquez sur un nœud de projet dans **l’Explorateur de solutions**, puis cliquez sur **Propriétés** dans le menu **Projet**. Quand le **Concepteur de projets** apparaît, cliquez sur l’onglet **Sécurité**.
 
@@ -66,4 +66,4 @@ La page **Sécurité** du **Concepteur de projets** permet de configurer les par
 
 ## <a name="see-also"></a>Voir aussi
  <xref:System.Security.Permissions.WebBrowserPermission> <xref:System.Security.Permissions.MediaPermission>
- [Sécurité d’accès du code pour les applications ClickOnce](../../deployment/code-access-security-for-clickonce-applications.md) [Comment : activer les paramètres de sécurité ClickOnce](../../deployment/how-to-enable-clickonce-security-settings.md) [Comment : définir une zone de sécurité pour une application ClickOnce](../../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md) [Comment : définir des autorisations personnalisées pour une application ClickOnce](../../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md) [Comment : Déboguer une application ClickOnce avec des autorisations restreintes](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md) propriétés du projet de [déploiement et de sécurité ClickOnce](../../deployment/clickonce-security-and-deployment.md) [Référence](../../ide/reference/project-properties-reference.md) des [paramètres de sécurité avancés, boîte de dialogue](../../ide/reference/advanced-security-settings-dialog-box.md)
+ [Sécurité d’accès du code pour les applications ClickOnce](../../deployment/code-access-security-for-clickonce-applications.md) [Comment : activer les paramètres de sécurité ClickOnce](../../deployment/how-to-enable-clickonce-security-settings.md) [Comment : définir une zone de sécurité pour une application ClickOnce](../../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md) [Comment : définir des autorisations personnalisées pour une application ClickOnce](../../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md) [Comment : déboguer une application ClickOnce avec des autorisations restreintes](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md) [Propriétés du projet](../../ide/reference/project-properties-reference.md) de [déploiement et de sécurité ClickOnce](../../deployment/clickonce-security-and-deployment.md) [boîte de dialogue Paramètres de sécurité avancés](../../ide/reference/advanced-security-settings-dialog-box.md)

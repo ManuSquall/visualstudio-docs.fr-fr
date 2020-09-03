@@ -1,5 +1,5 @@
 ---
-title: Instructions Stop en Visual Basic | Microsoft Docs
+title: Instructions Stop dans Visual Basic | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,10 +22,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8f2749ef9a6cfd310da5da832a283b55b6af59a6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198890"
 ---
 # <a name="stop-statements-in-visual-basic"></a>Instructions Stop en Visual Basic
@@ -49,7 +49,7 @@ L'instruction Stop de Visual Basic fournit une alternative de programmation à l
 #End If  
 ```  
   
- Vous pouvez également utiliser une instruction Assert à la place de l'instruction Stop. Une instruction Debug.Assert interrompt l'exécution uniquement lorsqu'une condition spécifique n'est pas vérifiée et est automatiquement supprimée lorsque vous compilez une version Release. Pour plus d’informations, consultez [Assertions dans du code managé](../debugger/assertions-in-managed-code.md). Si vous souhaitez utiliser une instruction Assert qui interrompt toujours l'exécution en version Debug, procédez comme suit :  
+ Vous pouvez également utiliser une instruction Assert à la place de l'instruction Stop. Une instruction Debug.Assert interrompt l'exécution uniquement lorsqu'une condition spécifique n'est pas vérifiée et est automatiquement supprimée lorsque vous compilez une version Release. Pour plus d’informations, consultez [assertions dans du code managé](../debugger/assertions-in-managed-code.md). Si vous souhaitez utiliser une instruction Assert qui interrompt toujours l'exécution en version Debug, procédez comme suit :  
   
 ```  
 Debug.Assert(false)  
@@ -63,5 +63,5 @@ Debug.Fail("a clever output string goes here")
   
 ## <a name="see-also"></a>Voir aussi  
  [Sécurité du débogueur](../debugger/debugger-security.md)   
- [Types de projets C#, F# et Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
+ [Types de projets C#, F # et Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
  [Débogage du code managé](../debugger/debugging-managed-code.md)

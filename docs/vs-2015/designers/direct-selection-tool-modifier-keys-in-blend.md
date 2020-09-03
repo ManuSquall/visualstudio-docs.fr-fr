@@ -10,18 +10,18 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9d2973f4e1d775d1b71642ea60b8cf00b1430c77
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664696"
 ---
 # <a name="direct-selection-tool-modifier-keys-in-blend"></a>Touches de modification de l’outil Sélection directe dans Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Le tableau suivant répertorie les raccourcis que vous pouvez utiliser pour modifier la forme d’un tracé existant avec l' ![ ](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png "6dd6571f-C116-451D-8dd2-1f88b8406362")outil Sélection directe. Pour ajouter ou supprimer des points sur un tracé existant, ou pour joindre deux tracés existants, utilisez l’outil **Stylet**.
+Le tableau suivant répertorie les raccourcis que vous pouvez utiliser pour modifier la forme d’un tracé existant avec l’outil **Sélection directe**![](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png "6dd6571f-C116-451D-8dd2-1f88b8406362"). Pour ajouter ou supprimer des points sur un tracé existant, ou pour joindre deux tracés existants, utilisez l’outil **Stylet**.
 
-|Pour|Faites cela|Pointeur|
+|Pour effectuer cette action|Action|Pointeur|
 |-----------------------|-------------|-------------|
 |Faire apparaître les poignées de tangente pour un point d’un tracé|Cliquez sur un point d'un tracé.|![](../designers/media/cfcc5f41-a666-4524-a958-50b9051130ca.png "cfcc5f41-a666-4524-a958-50b9051130ca")<br /><br /> Déplacer le pointeur de point|
 |Déplacer un point sur un tracé|Faire glisser un point sur un tracé|![](../designers/media/cfcc5f41-a666-4524-a958-50b9051130ca.png "cfcc5f41-a666-4524-a958-50b9051130ca")<br /><br /> Déplacer le pointeur de point|

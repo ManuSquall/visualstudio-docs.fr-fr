@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 67bf0d37e6f734fa4b3229488bc3eee2732c3063
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665442"
 ---
 # <a name="set-current-thread-command"></a>Définir le thread en cours, commande
@@ -35,7 +35,7 @@ Debug.SetCurrentThread index
 ## <a name="arguments"></a>Arguments
  `index` Obligatoire. Sélectionne un thread par son index.
 
-## <a name="example"></a>Exemples
+## <a name="example"></a> Exemple
 
 ```
 >Debug.SetCurrentThread 1

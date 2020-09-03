@@ -13,13 +13,13 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 05a073b3663ff85fe3d68878999aaf1dfa9e0017
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68198848"
 ---
-# <a name="debugrefinfoflags"></a>DEBUGREF_INFO_FLAGS
+# <a name="debugref_info_flags"></a>DEBUGREF_INFO_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 Spécifie les informations à récupérer sur un objet de référence de débogage.  
@@ -57,45 +57,45 @@ public enum enum_DEBUGREF_INFO_FLAGS { 
   
 ## <a name="members"></a>Membres  
  DEBUGREF_INFO_NAME  
- Initialize/utiliser le `bstrName` champ dans la structure.  
+ Initialisez/utilisez le `bstrName` champ de la structure.  
   
  DEBUGREF_INFO_TYPE  
- Initialize/utiliser le `bstrType` champ dans la structure.  
+ Initialisez/utilisez le `bstrType` champ de la structure.  
   
  DEBUGREF_INFO_VALUE  
- Initialize/utiliser le `bstrValue` champ dans la structure.  
+ Initialisez/utilisez le `bstrValue` champ de la structure.  
   
  DEBUGREF_INFO_ATTRIB  
- Initialize/utiliser le `dwAttrib` champ dans la structure.  
+ Initialisez/utilisez le `dwAttrib` champ de la structure.  
   
  DEBUGREF_INFO_REFTYPE  
- Initialize/utiliser le `dwRefType` champ dans la structure.  
+ Initialisez/utilisez le `dwRefType` champ de la structure.  
   
  DEBUGREF_INFO_REF  
- Initialize/utiliser le `pReference` champ dans la structure.  
+ Initialisez/utilisez le `pReference` champ de la structure.  
   
  DEBUGREF_INFO_VALUE_AUTOEXPAND  
- Le champ de valeur doit contenir la valeur auto-développé, s’il est disponible pour ce type d’objet.  
+ Le champ valeur doit contenir la valeur développée automatiquement, si elle est disponible, pour ce type d’objet.  
   
  DEBUGREF_INFO_NONE  
- Indique qu’aucun indicateur est défini.  
+ Indique qu’aucun indicateur n’est défini.  
   
  DEBUGREF_INFO_ALL  
  Indique un masque des indicateurs.  
   
 ## <a name="remarks"></a>Notes  
- Ces indicateurs sont passées à la [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) et [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) méthodes pour indiquer les champs de la [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) structure doivent être initialisées.  
+ Ces indicateurs sont passés aux méthodes [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) et [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) pour indiquer les champs de la structure [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) qui doivent être initialisés.  
   
- Utilisé pour le `dwFields` membre de la `DEBUG_REFERENCE_INFO` structure pour indiquer quels champs sont utilisés et valide lors de la structure est retournée.  
+ Utilisé pour le `dwFields` membre de la `DEBUG_REFERENCE_INFO` structure pour indiquer les champs qui sont utilisés et valides lorsque la structure est retournée.  
   
- Ces valeurs peuvent être combinées avec un opérateur de bits `OR`.  
+ Ces valeurs peuvent être combinées avec une opération de bits `OR` .  
   
 ## <a name="requirements"></a>Configuration requise  
- En-tête : msdbg.h  
+ En-tête : msdbg. h  
   
- Espace de noms : Microsoft.VisualStudio.Debugger.Interop  
+ Espace de noms : Microsoft. VisualStudio. Debugger. Interop  
   
- Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Voir aussi  
  [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

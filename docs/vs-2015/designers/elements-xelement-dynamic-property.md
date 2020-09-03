@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 383101679827f19b9a85d36f0f5a39eb772c68ec
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664695"
 ---
 # <a name="elements-xelement-dynamic-property"></a>Éléments (Propriété dynamique XElement)
@@ -42,4 +42,4 @@ elem.Elements[{namespaceName}localName]
  Cette propriété utilise l'exécution différée.
 
 ## <a name="see-also"></a>Voir aussi
- [Propriétés dynamiques de la classe XElement](../designers/xelement-class-dynamic-properties.md) [Element](../designers/element-xelement-dynamic-property.md) [Descendants](../designers/descendants-xelement-dynamic-property.md)
+ [Propriétés dynamiques de la classe XElement](../designers/xelement-class-dynamic-properties.md) [Element](../designers/element-xelement-dynamic-property.md) [descendants](../designers/descendants-xelement-dynamic-property.md) d’élément

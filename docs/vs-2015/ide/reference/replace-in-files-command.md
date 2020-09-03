@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3d5088366548c9f92d04f1b65a3afc378db29d6a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665615"
 ---
 # <a name="replace-in-files-command"></a>Remplacer dans les fichiers, commande
@@ -71,7 +71,7 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
 
  /word ou /w (facultatif). Recherche uniquement les mots entiers.
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
  Cet exemple recherche `btnCancel` et le remplace par `btnReset` dans tous les fichiers .cls situés dans le dossier « My Visual Studio Projects », puis affiche les informations de remplacement dans la fenêtre **Résultats de la recherche 2**.
 
 ```

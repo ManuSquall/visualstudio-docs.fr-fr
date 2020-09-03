@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9958e6e9a540dce1a405df8991780600b8f4a702
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665601"
 ---
 # <a name="resetaddin-devenvexe"></a>/ResetAddin (devenv.exe)
@@ -34,10 +34,10 @@ Devenv /ResetAddin AddIn
 ## <a name="arguments"></a>Arguments
  `AddIn` Facultatif. Nom de commande du complément.
 
-## <a name="remarks"></a>Remarques
- Par défaut, le nom de commande du complément est égal à *\<nom_solution_complément>* .Connect<em>.\<nom_solution_complément></em> et s’affiche dans Connect.cs en tant que paramètre `commandName` de la méthode `Exec`. Vous pouvez également vérifier le nom de la commande en tapant les premières lettres du nom du complément dans la fenêtre Commandes de Visual Studio, puis en utilisant Intellisense pour compléter la saisie.
+## <a name="remarks"></a>Notes
+ Par défaut, le nom de commande du complément est égal à *\<AddInSolutionName>* . Connect<em>. \<AddInSolutionName> </em>et apparaît dans Connect.cs comme `commandName` paramètre de la `Exec` méthode. Vous pouvez également vérifier le nom de la commande en tapant les premières lettres du nom du complément dans la fenêtre Commandes de Visual Studio, puis en utilisant Intellisense pour compléter la saisie.
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
  L’exemple suivant démarre Visual Studio et empêche le complément `MyAddin` de s’exécuter au démarrage.
 
 ```

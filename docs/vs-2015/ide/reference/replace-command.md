@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7ba633999925e86b753dbd815babe6e52c75ca53
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665627"
 ---
 # <a name="replace-command"></a>Remplacer, commande
@@ -66,7 +66,7 @@ Edit.Replace findwhat replacewith [/all] [/case]
 
  /word ou /w (facultatif). Recherche uniquement les mots entiers.
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
  Cet exemple remplace `btnSend` par `btnSubmit` dans tous les documents ouverts.
 
 ```

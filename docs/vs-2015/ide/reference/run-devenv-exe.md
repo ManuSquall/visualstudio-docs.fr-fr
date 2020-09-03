@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b2716995e8ff3a318262284b5733a471086c68c1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665522"
 ---
 # <a name="run-devenvexe"></a>/Run (devenv.exe)
@@ -39,14 +39,14 @@ devenv {/run|/r} {SolutionName|ProjectName}
 
  `ProjectName` Obligatoire. Chemin complet et nom d’un fichier projet.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Compile et exécute la solution ou le projet spécifié en fonction des paramètres spécifiés pour la configuration de la solution active. Ce commutateur lance l’environnement de développement intégré (IDE) et le maintient actif à la fin de l’exécution du projet ou de la solution.
 
 - Placez entre guillemets doubles les chaînes contenant des espaces.
 
 - Les informations résumées, notamment les erreurs, peuvent être affichées dans la fenêtre **Commande**, ou dans tout fichier journal spécifié avec le commutateur `/out`.
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
  Cet exemple exécute la solution `MySolution` en utilisant la configuration de déploiement active.
 
 ```
@@ -54,4 +54,4 @@ devenv /run "C:\Documents and Settings\someuser\My Documents\Visual Studio\Proje
 ```
 
 ## <a name="see-also"></a>Voir aussi
- [Commutateurs de ligne de commande devenv](../../ide/reference/devenv-command-line-switches.md) [/runexit (devenv. exe)](../../ide/reference/runexit-devenv-exe.md) [/Build (devenv. exe)](../../ide/reference/build-devenv-exe.md) [/Rebuild (devenv. exe)](../../ide/reference/rebuild-devenv-exe.md) [/out (devenv. exe)](../../ide/reference/out-devenv-exe.md)
+ [Commutateurs de ligne de commande devenv](../../ide/reference/devenv-command-line-switches.md) [/runexit (devenv.exe)](../../ide/reference/runexit-devenv-exe.md) [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md) [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md) [/out (devenv.exe)](../../ide/reference/out-devenv-exe.md)

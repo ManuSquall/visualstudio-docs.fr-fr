@@ -15,14 +15,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 7ff759681ca3e4f48f264e00f9e376487dfe4d24
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817305"
 ---
 # <a name="expected-end"></a>' \@ End’attendu
-Vous avez tenté de créer un bloc de code compilé de manière conditionnelle, mais n’avez pas inclus l' <strong>@end</strong> instruction à la fin. [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]les instructions peuvent être compilées de façon conditionnelle en les mettant dans un <strong>@if/@end</strong> bloc.  
+Vous avez tenté de créer un bloc de code compilé de manière conditionnelle, mais n’avez pas inclus l' <strong>@end</strong> instruction à la fin. [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] les instructions peuvent être compilées de façon conditionnelle en les mettant dans un <strong>@if/@end</strong> bloc.  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   

@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 41e402a9268acecb70c83e26bab0e682d4ec59f5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72665584"
 ---
 # <a name="resetsettings-devenvexe"></a>/ResetSettings (devenv.exe)
@@ -38,10 +38,10 @@ Devenv /ResetSettings SettingsFile
 
  Pour restaurer le profil des paramètres de développement généraux, utilisez `General`.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Si aucun `SettingsFile` n’est spécifié, vous êtes invité à sélectionner une collection de paramètres par défaut au prochain démarrage de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
  La ligne de commande suivante applique les paramètres stockés dans le fichier `MySettings.vssettings`.
 
 ```
