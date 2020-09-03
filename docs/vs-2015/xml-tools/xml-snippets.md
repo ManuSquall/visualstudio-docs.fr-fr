@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5bc8946d62f47291a6e0e3f26032589bfdf0de16
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669359"
 ---
 # <a name="xml-snippets"></a>Extraits XML
@@ -48,7 +48,7 @@ L’éditeur XML offre une fonctionnalité, appelée *extraits XML*, qui vous pe
  Pour plus d’informations, consultez [Comment : générer un extrait XML à partir d’un schéma XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md).
 
 ## <a name="create-new-xml-snippets"></a>Création de nouveaux extraits XML
- En plus des extraits de code inclus avec [!INCLUDE[msCoName](../includes/msconame-md.md)] Visual Studio par défaut, vous pouvez également créer et utiliser vos propres extraits XML.
+ En plus des extraits de code inclus dans [!INCLUDE[msCoName](../includes/msconame-md.md)] Visual Studio par défaut, vous pouvez également créer et utiliser vos propres extraits XML.
 
  Pour plus d’informations, consultez [Comment : créer des extraits XML](../xml-tools/how-to-create-xml-snippets.md).
 

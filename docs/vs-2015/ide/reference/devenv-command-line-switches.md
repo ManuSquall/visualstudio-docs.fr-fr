@@ -22,10 +22,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b8b0683024e2881f76bb6c54d9420d351fced08a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668725"
 ---
 # <a name="devenv-command-line-switches"></a>Commutateurs de la ligne de commande de Devenv
@@ -34,7 +34,7 @@ ms.locfileid: "72668725"
 Devenv vous permet de définir diverses options pour l’environnement de développement intégré (IDE) et également de créer, déboguer et déployer des projets à partir de la ligne de commande. Utilisez ces commutateurs pour exécuter l’IDE à partir d’un script ou d’un fichier .bat, par exemple, un script de génération nocturne, ou pour lancer l’IDE avec une configuration particulière.
 
 > [!NOTE]
-> Pour les tâches de génération, nous vous recommandons d’utiliser MSBuild au lieu de devenv. Pour plus d’informations, consultez [Informations de référence sur la ligne de commande](../../msbuild/msbuild-command-line-reference.md).
+> Pour les tâches de génération, nous vous recommandons d’utiliser MSBuild au lieu de devenv. Pour plus d’informations, consultez Référence de la [ligne de commande](../../msbuild/msbuild-command-line-reference.md).
 
 > [!NOTE]
 > Vous devez exécuter devenv en tant qu’administrateur pour pouvoir utiliser les commutateurs [/setup (devenv.exe)](../../ide/reference/setup-devenv-exe.md) et [/InstallVSTemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md).
@@ -76,7 +76,7 @@ Devenv vous permet de définir diverses options pour l’environnement de dével
 |[/Log (devenv.exe)](../../ide/reference/log-devenv-exe.md)|Démarre [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] et enregistre toute l’activité dans le fichier journal.|
 |[/Run (devenv.exe)](../../ide/reference/run-devenv-exe.md) ou `/r`|Compile et exécute la solution spécifiée.|
 |[/Runexit (devenv.exe)](../../ide/reference/runexit-devenv-exe.md)|Compile et exécute la solution spécifiée, réduit l’IDE pendant l’exécution de la solution et ferme l’IDE une fois la solution exécutée.|
-|[/UseEnv (devenv.exe)](../../ide/reference/useenv-devenv-exe.md)|Force l’IDE à utiliser les variables d’environnement PATH, INCLUDE et LIB pour la compilation de [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] au lieu des paramètres spécifiés dans la section Répertoires VC ++ des options de **Projets** dans la boîte de dialogue **Options**. Pour plus d’informations, consultez [Définition du chemin et des variables d’environnement pour les générations sur la ligne de commande](https://msdn.microsoft.com/library/99389528-deb5-43b9-b99a-03c8773ebaf4)|
+|[/UseEnv (devenv.exe)](../../ide/reference/useenv-devenv-exe.md)|Force l’IDE à utiliser les variables d’environnement PATH, INCLUDE et LIB pour la compilation de [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] au lieu des paramètres spécifiés dans la section Répertoires VC ++ des options de **Projets** dans la boîte de dialogue **Options**. Pour plus d’informations, consultez [définition du chemin d’accès et des variables d’environnement pour les générations à partir de la ligne de commande](https://msdn.microsoft.com/library/99389528-deb5-43b9-b99a-03c8773ebaf4)|
 |[/Edit (devenv.exe)](../../ide/reference/edit-devenv-exe.md)|Ouvre les fichiers spécifiés dans une instance en cours d’exécution de cette application. S’il n’existe aucune instance en cours d’exécution, démarre une nouvelle instance avec une disposition de fenêtre simplifiée.|
 |[/ResetAddin (devenv.exe)](../../ide/reference/resetaddin-devenv-exe.md)|Démarre une instance de l’IDE Visual Studio sans charger le complément spécifié.|
 |[/SafeMode (devenv.exe)](../../ide/reference/safemode-devenv-exe.md)|Démarre [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] en mode sans échec et charge uniquement l’environnement et les services par défaut ainsi que les versions commercialisées des packages tiers.|
@@ -92,14 +92,14 @@ Devenv vous permet de définir diverses options pour l’environnement de dével
 |[/Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md)|Supprime tous les fichiers créés par la commande build, sans affecter les fichiers sources.<br /><br /> **Devenv myproj.csproj /clean**|
 |[/Deploy (devenv.exe)](../../ide/reference/deploy-devenv-exe.md)|Génère la solution, ainsi que les fichiers nécessaires pour le déploiement, en fonction de la configuration des solutions.<br /><br /> **Devenv myproj.csproj /deploy**|
 |[/Diff](../../ide/reference/diff.md)|Compare deux fichiers.  Accepte quatre paramètres : SourceFile, TargetFile, SourceDisplayName (facultatif), TargetDisplayName (facultatif).|
-|[/InstallVSTemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md)|Enregistre les modèles de projet ou d’élément qui se trouvent dans *\<VisualStudioInstallDir>* \Common7\IDE\ProjectTemplates ou *\<VisualStudioInstallDir>* \Common7\IDE\ItemTemplates pour qu’ils soient accessibles dans les boîtes de dialogue **Nouveau projet** et **Ajouter un nouvel élément**.<br /><br /> **Devenv /InstallVSTemplates**|
+|[/InstallVSTemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md)|Inscrit les modèles de projet ou d’élément qui se trouvent dans *\<VisualStudioInstallDir>* \Common7\IDE\ProjectTemplates ou *\<VisualStudioInstallDir>* \Common7\IDE\ItemTemplates afin qu’ils soient accessibles par le biais des boîtes de dialogue **nouveau projet** et **Ajouter un nouvel élément** .<br /><br /> **Devenv /InstallVSTemplates**|
 |[/Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)|Permet de spécifier un fichier pour recevoir les erreurs pendant la génération.<br /><br /> **Devenv myproj.csproj /build /out log.txt**|
 |[/Project (devenv.exe)](../../ide/reference/project-devenv-exe.md)|Projet à générer, nettoyer ou déployer. Vous pouvez utiliser ce commutateur uniquement si vous avez également spécifié le commutateur /build, /rebuild, /clean ou /deploy.|
 |[/ProjectConfig (devenv.exe)](../../ide/reference/projectconfig-devenv-exe.md)|Spécifie la configuration de projet à générer ou déployer. Vous pouvez utiliser ce commutateur uniquement si vous avez également spécifié le commutateur /project.|
 |[/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)|Efface, puis génère la solution ou le projet spécifié en fonction de la configuration de la solution indiquée.|
 |[/ResetSettings (devenv.exe)](../../ide/reference/resetsettings-devenv-exe.md)|Restaure les paramètres par défaut de Visual Studio. Éventuellement, réinitialise les paramètres dans le fichier .vssettings spécifié.|
-|[/Updateconfiguration (devenv.exe)](../../ide/reference/updateconfiguration-devenv-exe.md)|Notifie [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] pour qu’il fusionne les packages [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] sur le système et vérifie si des modifications ont été apportées au cache MEF.|
+|[/UpdateConfiguration (devenv.exe)](../../ide/reference/updateconfiguration-devenv-exe.md)|Notifie [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] pour qu’il fusionne les packages [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] sur le système et vérifie si des modifications ont été apportées au cache MEF.|
 |[/Upgrade (devenv.exe)](../../ide/reference/upgrade-devenv-exe.md)|Met à niveau le fichier solution spécifié et tous ses fichiers projet, ou le fichier projet spécifié, vers les formats [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] actuels pour ces fichiers.|
 
 ## <a name="see-also"></a>Voir aussi
- [Général, Environnement, boîte de dialogue Options](../../ide/reference/general-environment-options-dialog-box.md)
+ [Général, environnement, boîte de dialogue Options](../../ide/reference/general-environment-options-dialog-box.md)

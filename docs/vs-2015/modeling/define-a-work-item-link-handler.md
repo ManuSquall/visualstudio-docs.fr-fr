@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 380aaa5bed1e30c549334bc004ea38e3f0bdb762
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669932"
 ---
 # <a name="define-a-work-item-link-handler"></a>Définir un gestionnaire de liens d’éléments de travail
@@ -34,9 +34,9 @@ Vous pouvez créer une extension d’intégration Visual Studio qui répond quan
 
 1. Créez un projet de bibliothèque de classes en l’ajoutant à une solution VSIX existante ou en créant une solution.
 
-    1. Dans le menu **Fichier** , choisissez **Nouveau**, **Projet**.
+    1. Dans le menu **Fichier**, sélectionnez **Nouveau**, **Projet**.
 
-    2. Sous **modèles installés**, développez **Visual C#**  ou **Visual Basic**, puis dans la colonne du milieu, cliquez sur **bibliothèque de classes**.
+    2. Sous **modèles installés**, développez **Visual C#** ou **Visual Basic**, puis dans la colonne du milieu, cliquez sur **bibliothèque de classes**.
 
     3. Définissez **Solution** pour indiquer si vous souhaitez créer une solution ou ajouter un composant à une solution VSIX déjà ouverte.
 
@@ -44,13 +44,13 @@ Vous pouvez créer une extension d’intégration Visual Studio qui répond quan
 
 2. Créez un projet VSIX, sauf si votre solution en comporte déjà un.
 
-    1. Dans l’ **Explorateur de solutions**, dans le menu contextuel de la solution, choisissez **Ajouter**, puis **Nouveau projet**.
+    1. Dans **Explorateur de solutions**, dans le menu contextuel de la solution, choisissez **Ajouter**, puis **nouveau projet**.
 
     2. Sous **Modèles installés**, développez **Visual C#** ou **Visual Basic**, puis sélectionnez **Extensibilité**. Dans la colonne du milieu, choisissez **Projet VSIX**.
 
 3. Définissez le projet VSIX comme projet de démarrage de la solution.
 
-    - Dans l’Explorateur de solutions, dans le menu contextuel du projet VSIX, choisissez **Définir comme projet de démarrage**.
+    - Dans Explorateur de solutions, dans le menu contextuel du projet VSIX, choisissez **définir comme projet de démarrage**.
 
 4. Dans **source. extension. vsixmanifest**, sous **contenu**, ajoutez le projet de bibliothèque de classes en tant que composant MEF.
 
@@ -60,11 +60,11 @@ Vous pouvez créer une extension d’intégration Visual Studio qui répond quan
 
     3. Sous l’onglet **Composants** , choisissez **Nouveau**puis, dans la boîte de dialogue, définissez :
 
-         **Type** = **Composant MEF**
+         **Type**  =  **Composant MEF**
 
-         **Source** = **Projet dans la solution actuelle**
+         **Source**  =  **Projet dans la solution actuelle**
 
-         **Projet** = *Votre projet de bibliothèque de classes*
+         **Projet**  =  *Votre projet de bibliothèque de classes*
 
 ## <a name="defining-the-work-item-link-handler"></a>Définition du gestionnaire de liens d’éléments de travail
  Effectuez toutes les tâches suivantes dans le projet de bibliothèque de classes.
@@ -82,12 +82,12 @@ Vous pouvez créer une extension d’intégration Visual Studio qui répond quan
 
  `System.ComponentModel.Composition`
 
- `System.Drawing`-utilisé par l’exemple de code
+ `System.Drawing` -utilisé par l’exemple de code
 
- Si vous ne trouvez pas l’une de ces références sous l’onglet **.net** de la boîte de dialogue **Ajouter une référence** , utilisez l’onglet Parcourir pour la Rechercher dans \Program Files\Microsoft Visual Studio [version] \Common7\IDE\PrivateAssemblies \\.
+ Si vous ne trouvez pas l’une de ces références sous l’onglet **.net** de la boîte de dialogue **Ajouter une référence** , utilisez l’onglet Parcourir pour la Rechercher dans \Program Files\Microsoft Visual Studio [version] \Common7\IDE\PrivateAssemblies \\ .
 
 ### <a name="import-the-work-item-namespace"></a>Importer l’espace de noms de l’élément de travail
- Dans vos **références**de projet [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ajoutez des références aux assemblys suivants :
+ Dans vos [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **références**de projet, ajoutez des références aux assemblys suivants :
 
 - Microsoft.TeamFoundation.WorkItemTracking.Client.dll
 
@@ -191,7 +191,7 @@ namespace WorkItems
 ## <a name="about-the-work-item-handler-code"></a>À propos du code du gestionnaire d’éléments de travail
 
 ### <a name="listening-for-new-work-items"></a>Écoute de nouveaux éléments de travail
- `OnWorkItemCreated` est appelé quand l'utilisateur choisit de créer un élément de travail à lier aux éléments de modèle. Votre code peut initialiser les champs d’éléments de travail. L'élément de travail est ensuite présenté à l'utilisateur, qui peut mettre à jour les champs et enregistrer l'élément de travail. Le lien vers un élément de modèle n’est pas créé tant que l’élément de travail n’a pas été enregistré avec succès.
+ `OnWorkItemCreated` est appelé quand l’utilisateur choisit de créer un nouvel élément de travail à lier aux éléments de modèle. Votre code peut initialiser les champs d’éléments de travail. L'élément de travail est ensuite présenté à l'utilisateur, qui peut mettre à jour les champs et enregistrer l'élément de travail. Le lien vers un élément de modèle n’est pas créé tant que l’élément de travail n’a pas été enregistré avec succès.
 
 ```
 public void OnWorkItemCreated(
@@ -206,7 +206,7 @@ public void OnWorkItemCreated(
 ```
 
 ### <a name="listening-for-link-creation"></a>Écoute de la création de liens
- `OnWorkItemLinked` est appelé juste après la création d'un lien. Il est appelé que le lien pointe vers un nouvel élément de travail ou un élément existant. Il est appelé une fois pour chaque élément de travail.
+ `OnWorkItemLinked` est appelé juste après la création d’un lien. Il est appelé que le lien pointe vers un nouvel élément de travail ou un élément existant. Il est appelé une fois pour chaque élément de travail.
 
 ```
 public void OnWorkItemLinked
@@ -224,7 +224,7 @@ public void OnWorkItemLinked
 > Pour que cet exemple fonctionne, vous devez ajouter une référence de projet à `System.Drawing.dll` et importer l'espace de noms `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation`. Toutefois, ces ajouts ne sont pas obligatoires pour d'autres implémentations d'`OnWorkItemLinked`.
 
 ### <a name="listening-for-link-removal"></a>Écoute de la suppression de liens
- `OnWorkItemRemoved` est appelé une fois juste avant la suppression de chaque lien d'élément de travail. Si un élément de modèle est supprimé, tous ses liens sont supprimés.
+ `OnWorkItemRemoved` est appelée une fois juste avant chaque lien d’élément de travail supprimé. Si un élément de modèle est supprimé, tous ses liens sont supprimés.
 
 ```
 public void OnWorkItemRemoved

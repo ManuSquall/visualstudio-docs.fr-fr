@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d3257acde8d3c62aca64e3401ec18134601973e5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669648"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Extension de votre DSL à l'aide de MEF
@@ -104,13 +104,13 @@ Vous pouvez étendre votre langage spécifique à un domaine (DSL) à l’aide d
    <Include href="MefExtension\CommandExtensionVSCT.vsct"/>
    ```
 
-    Insérez la ligne après la directive `<Include>` existante.
+    Insérez la ligne après la `<Include>` directive existante.
 
 4. `Open DslDefinition.dsl.`
 
 5. Dans l’Explorateur DSL, sélectionnez **Editor\Validation**.
 
-6. Dans le Fenêtre Propriétés, assurez-vous qu’au moins une des propriétés nommées **uses...** est `true`.
+6. Dans le Fenêtre Propriétés, assurez-vous qu’au moins une des propriétés nommées **utilise...** est `true` .
 
 7. Dans la barre d’outils Explorateur de solutions, cliquez sur **transformer tous les modèles**.
 
@@ -118,36 +118,36 @@ Vous pouvez étendre votre langage spécifique à un domaine (DSL) à l’aide d
 
 8. Générez et exécutez la solution pour vérifier qu’elle fonctionne toujours.
 
-   Votre DSL est désormais compatible MEF. Vous pouvez écrire des commandes de menu, des gestionnaires de mouvements et des contraintes de validation en tant qu’extensions MEF. Vous pouvez écrire ces extensions dans votre solution DSL avec un autre code personnalisé. En outre, vous ou d’autres développeurs pouvez écrire des extensions de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] distinctes qui étendent votre DSL.
+   Votre DSL est désormais compatible MEF. Vous pouvez écrire des commandes de menu, des gestionnaires de mouvements et des contraintes de validation en tant qu’extensions MEF. Vous pouvez écrire ces extensions dans votre solution DSL avec un autre code personnalisé. En outre, vous ou d’autres développeurs pouvez écrire des [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Extensions distinctes qui étendent votre DSL.
 
 ## <a name="creating-an-extension-for-a-mef-enabled-dsl"></a>Création d’une extension pour un DSL compatible MEF
- Si vous avez accès à un DSL compatible MEF créé par vous-même ou quelqu’un d’autre, vous pouvez écrire des extensions pour celui-ci. Les extensions peuvent être utilisées pour ajouter des commandes de menu, des gestionnaires de mouvements ou des contraintes de validation. Pour créer ces extensions, vous utilisez une solution d’extension de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (VSIX). La solution se compose de deux parties : un projet de bibliothèque de classes qui génère l’assembly de code et un projet VSIX qui empaquette l’assembly.
+ Si vous avez accès à un DSL compatible MEF créé par vous-même ou quelqu’un d’autre, vous pouvez écrire des extensions pour celui-ci. Les extensions peuvent être utilisées pour ajouter des commandes de menu, des gestionnaires de mouvements ou des contraintes de validation. Pour créer ces extensions, vous utilisez une [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solution d’extension (VSIX). La solution se compose de deux parties : un projet de bibliothèque de classes qui génère l’assembly de code et un projet VSIX qui empaquette l’assembly.
 
 #### <a name="to-create-a-dsl-extension-vsix"></a>Pour créer une extension DSL VSIX
 
-1. Créez un projet de bibliothèque de classes. Pour ce faire, dans la boîte de dialogue **nouveau projet** , sélectionnez **Visual Basic** ou  **C# visuel** , puis sélectionnez Bibliothèque de **classes**.
+1. Créez un projet de bibliothèque de classes. Pour ce faire, dans la boîte de dialogue **nouveau projet** , sélectionnez **Visual Basic** ou **Visual C#** , puis sélectionnez **bibliothèque de classes**.
 
 2. Dans le nouveau projet de bibliothèque de classes, ajoutez une référence à l’assembly du DSL.
 
-   - Cet assembly a généralement un nom qui se termine par «. DSL. dll».
+   - Cet assembly a généralement un nom qui se termine par « .Dsl.dll ».
 
-   - Si vous avez accès au projet DSL, vous pouvez trouver le fichier d’assembly sous le répertoire **dsl \\bin \\ \***
+   - Si vous avez accès au projet DSL, vous pouvez trouver le fichier d’assembly sous le **répertoire \\ DSL \\ \* bin** .
 
    - Si vous avez accès au fichier VSIX DSL, vous pouvez trouver l’assembly en remplaçant l’extension de nom de fichier du fichier VSIX par « . zip ». Décompressez le fichier. zip.
 
 3. Ajoutez des références aux assemblys .NET suivants :
 
-   - Microsoft. VisualStudio. Modeling. Sdk. 11.0. dll
+   - Microsoft.VisualStudio.Modeling.Sdk.11.0.dll
 
-   - Microsoft. VisualStudio. Modeling. Sdk. Diagrams. 11.0. dll
+   - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll
 
-   - Microsoft. VisualStudio. Modeling. Sdk. Shell. 11.0. dll
+   - Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll
 
    - System.ComponentModel.Composition.dll
 
    - System.Windows.Forms.dll
 
-4. Créez un projet VSIX dans la même solution. Pour ce faire, dans la boîte de dialogue **nouveau projet** , développez **Visual Basic** ou **visuel C#** , cliquez sur **extensibilité**, puis sélectionnez **projet VSIX**.
+4. Créez un projet VSIX dans la même solution. Pour ce faire, dans la boîte de dialogue **nouveau projet** , développez **Visual Basic** ou **Visual C#**, cliquez sur **extensibilité**, puis sélectionnez **projet VSIX**.
 
 5. Dans Explorateur de solutions, cliquez avec le bouton droit sur le projet VSIX, puis cliquez sur **définir comme projet de démarrage**.
 
@@ -159,25 +159,25 @@ Vous pouvez étendre votre langage spécifique à un domaine (DSL) à l’aide d
 
    1. Dans **source. extension. vsixmanifest**, cliquez sur **Ajouter une référence** .
 
-   2. Dans la boîte de dialogue, cliquez sur **Ajouter une charge utile** , puis recherchez le fichier VSIX du DSL. Le fichier VSIX est créé dans la solution DSL, dans **DslPackage \\bin \\ \*** .
+   2. Dans la boîte de dialogue, cliquez sur **Ajouter une charge utile** , puis recherchez le fichier VSIX du DSL. Le fichier VSIX est créé dans la solution DSL, dans **DslPackage \\ bin \\ \* **.
 
        Cela permet aux utilisateurs d’installer le DSL et votre extension en même temps. Si l’utilisateur a déjà installé le DSL, seule votre extension sera installée.
 
-9. Passez en revue et mettez à jour les autres champs de **source. extension. vsixmanifest**. Cliquez sur **Sélectionner des éditions** et vérifiez que les éditions de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] correctes sont définies.
+9. Passez en revue et mettez à jour les autres champs de **source. extension. vsixmanifest**. Cliquez sur **Sélectionner des éditions** et vérifiez que les éditions appropriées [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sont définies.
 
 10. Ajoutez du code au projet de bibliothèque de classes. Utilisez les exemples de la section suivante comme guide.
 
      Vous pouvez ajouter n’importe quel nombre de classes de commande, de mouvement et de validation.
 
-11. Pour tester l’extension, appuyez sur **F5**. Dans l’instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], créez ou ouvrez un exemple de fichier DSL.
+11. Pour tester l’extension, appuyez sur **F5**. Dans l’instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , créez ou ouvrez un exemple de fichier DSL.
 
 ## <a name="writing-mef-extensions-for-dsls"></a>Écriture d’extensions MEF pour DSL
  Vous pouvez écrire des extensions dans le projet de code de l’assembly d’une solution d’extension DSL distincte. Vous pouvez également utiliser MEF dans votre projet DslPackage, comme un moyen pratique d’écrire des commandes, des mouvements et du code de validation dans le cadre de la DSL.
 
 ### <a name="menu-commands"></a>Commandes de menu
- Pour écrire une commande de menu, définissez une classe qui implémente <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> et préfixez la classe avec l’attribut défini dans votre DSL, nommé *YourDsl* `CommandExtension`. Vous pouvez écrire plusieurs classes de commandes de menu.
+ Pour écrire une commande de menu, définissez une classe qui implémente <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> et préfixe la classe avec l’attribut défini dans votre DSL, nommé *YourDsl* `CommandExtension` . Vous pouvez écrire plusieurs classes de commandes de menu.
 
- `QueryStatus()` est appelée chaque fois que l’utilisateur clique avec le bouton droit sur le diagramme. Il doit inspecter la sélection actuelle et définir `command.Enabled` pour indiquer quand la commande est applicable.
+ `QueryStatus()` est appelé chaque fois que l’utilisateur clique avec le bouton droit sur le diagramme. Il doit inspecter la sélection actuelle et définir `command.Enabled` pour indiquer quand la commande est applicable.
 
 ```
 using System.ComponentModel.Composition;
@@ -245,7 +245,7 @@ namespace MyMefExtension
 ```
 
 ### <a name="gesture-handlers"></a>Gestionnaires de mouvements
- Un gestionnaire de mouvements peut traiter des objets glissés sur le diagramme depuis n’importe quel endroit, à l’intérieur ou à l’extérieur [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. L’exemple suivant permet à l’utilisateur de faire glisser des fichiers de l’Explorateur Windows vers le diagramme. Il crée des éléments qui contiennent les noms de fichiers.
+ Un gestionnaire de mouvements peut traiter des objets glissés sur le diagramme depuis n’importe où, à l’intérieur ou à l’extérieur [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . L’exemple suivant permet à l’utilisateur de faire glisser des fichiers de l’Explorateur Windows vers le diagramme. Il crée des éléments qui contiennent les noms de fichiers.
 
  Vous pouvez écrire des gestionnaires pour gérer les opérations de déplacement à partir d’autres modèles DSL et de modèles UML. Pour plus d’informations, consultez [Comment : ajouter un gestionnaire de glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md).
 
@@ -322,7 +322,7 @@ namespace MefExtension
 ```
 
 ### <a name="validation-constraints"></a>Contraintes de validation
- Les méthodes de validation sont marquées par l’attribut `ValidationExtension` généré par le DSL, ainsi que par <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute>. La méthode peut apparaître dans toute classe qui n’est pas marquée par un attribut.
+ Les méthodes de validation sont marquées par l' `ValidationExtension` attribut généré par le DSL, ainsi que par <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute> . La méthode peut apparaître dans toute classe qui n’est pas marquée par un attribut.
 
  Pour plus d’informations, consultez [validation dans un langage spécifique à un domaine](../modeling/validation-in-a-domain-specific-language.md).
 

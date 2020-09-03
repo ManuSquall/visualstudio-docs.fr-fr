@@ -19,10 +19,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 48891f82667270f04af49c60122c63f8d3a943f7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668775"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Créer un contrôle utilisateur Windows Forms prenant en charge la liaison de données de recherche
@@ -58,8 +58,8 @@ Pour afficher des données dans Windows Forms, vous pouvez choisir des contrôle
 
 - Créer un formulaire pour afficher des données dans le nouveau contrôle.
 
-## <a name="prerequisites"></a>Configuration requise
- Pour exécuter cette procédure pas à pas, vous avez besoin des éléments suivants :
+## <a name="prerequisites"></a>Prérequis
+ Pour réaliser cette procédure pas à pas, vous aurez besoin des éléments suivants :
 
 - avoir accès à l'exemple de base de données Northwind.
 
@@ -105,7 +105,7 @@ Pour afficher des données dans Windows Forms, vous pouvez choisir des contrôle
      [!code-csharp[VbRaddataDisplaying#5](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDisplaying/CS/LookupBox.cs#5)]
      [!code-vb[VbRaddataDisplaying#5](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDisplaying/VB/LookupBox.vb#5)]
 
-3. Dans le menu **Générer** , cliquez sur **Générer la solution**.
+3. Dans le menu **générer** , choisissez **générer la solution**.
 
 ## <a name="create-a-data-source-from-your-database"></a>Créer une source de données à partir de votre base de données
  Cette étape crée une source de données à l’aide de l’Assistant **Configuration de source de données** basée sur les tables `Customers` et `Orders` de l’exemple de base de données Northwind. Vous devez avoir accès à l'exemple de base de données Northwind pour créer la connexion. Pour plus d’informations sur la configuration de l’exemple de base de données Northwind, consultez [installer des exemples de bases de données SQL Server](../data-tools/install-sql-server-sample-databases.md).
@@ -114,7 +114,7 @@ Pour afficher des données dans Windows Forms, vous pouvez choisir des contrôle
 
 1. Dans le menu **Données** , cliquez sur **Afficher les sources de données**.
 
-2. Dans la fenêtre **Sources de données**, sélectionnez **Ajouter une nouvelle source de données** pour démarrer l’Assistant **Configuration de source de données**.
+2. Dans la fenêtre **sources de données** , sélectionnez Ajouter une **nouvelle source de données** pour démarrer l’Assistant Configuration de source de **données** .
 
 3. Sélectionnez **Base de données** dans la page **Choisir un type de source de données** , puis cliquez sur **Suivant**.
 
@@ -132,7 +132,7 @@ Pour afficher des données dans Windows Forms, vous pouvez choisir des contrôle
 
 8. Sélectionnez les tables `Customers` et `Orders`, puis cliquez sur **Terminer**.
 
-     **NorthwindDataSet** est ajouté à votre projet, et les tables `Customers` et `Orders` apparaissent dans la fenêtre **Sources de données**.
+     **NorthwindDataSet** est ajouté à votre projet et les `Customers` `Orders` tables et s’affichent dans la fenêtre sources de **données** .
 
 ## <a name="set-the-customerid-column-of-the-orders-table-to-use-the-lookupbox-control"></a>Définir la colonne CustomerID de la table Orders pour qu’elle utilise le contrôle LookupBox
  Dans la fenêtre **Sources de données**, vous pouvez définir le contrôle à créer avant de faire glisser des éléments vers votre formulaire.
@@ -160,7 +160,7 @@ Pour afficher des données dans Windows Forms, vous pouvez choisir des contrôle
 
 #### <a name="to-create-data-bound-controls-on-the-windows-form"></a>Pour créer des contrôles liés aux données dans le formulaire Windows
 
-- Faites glisser le nœud **Orders** de la fenêtre **sources de données** vers le Windows Form, puis vérifiez que le contrôle **LookupBox** est utilisé pour afficher les données dans la colonne `CustomerID`.
+- Faites glisser le nœud **Orders** de la fenêtre **sources de données** vers le Windows Form, puis vérifiez que le contrôle **LookupBox** est utilisé pour afficher les données dans la `CustomerID` colonne.
 
 ## <a name="bind-the-control-to-look-up-companyname-from-the-customers-table"></a>Lier le contrôle pour rechercher CompanyName dans la table Customers
 
@@ -170,7 +170,7 @@ Pour afficher des données dans Windows Forms, vous pouvez choisir des contrôle
 
      Ceci configure la liaison des données pour afficher le `CompanyName` de la table `Customers` tout en conservant la valeur de `CustomerID` de la table `Orders`.
 
-## <a name="running-the-application"></a>Exécution de l’application
+## <a name="running-the-application"></a>Exécution de l'application
 
 #### <a name="to-run-the-application"></a>Pour exécuter l’application
 

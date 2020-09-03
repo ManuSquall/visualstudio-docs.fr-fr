@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2b9fec6954706fcecb1281650a8db3d85f08fbd0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669787"
 ---
 # <a name="develop-tests-from-a-model"></a>Développer des tests à partir d'un modèle
@@ -147,10 +147,10 @@ Assert (countAfter == countBefore = 1);
 
  Du point de vue des tests, un modèle d'impératifs peut être considéré comme un raccourci pour les tests. Ainsi, il est important de maintenir la relation entre les tests et le modèle tout au long du projet.
 
-## <a name="Attaching"></a>Attacher des cas de test à des éléments de modèle
+## <a name="attaching-test-cases-to-model-elements"></a><a name="Attaching"></a> Attacher des cas de test à des éléments de modèle
  Si votre projet utilise [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], vous pouvez lier des tests aux éléments de votre modèle. Cela vous permet d'identifier rapidement les tests affectés par une modification des impératifs et de suivre dans quelle mesure un impératif a été satisfait.
 
- Vous pouvez lier des tests à tous les types d'éléments. Voici quelques exemples :
+ Vous pouvez lier des tests à tous les types d'éléments. Voici quelques exemples :
 
 - Lier un cas d'usage aux tests qui l'utilisent.
 

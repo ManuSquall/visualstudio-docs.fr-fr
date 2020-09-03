@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f620cc2bd189dccf067c6276f760d21cde5cf05e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669520"
 ---
 # <a name="xml-document-properties-properties-window"></a>Propriétés des documents XML, fenêtre Propriétés
@@ -26,7 +26,7 @@ La fenêtre **Propriétés** fournit des informations de base sur le document qu
 
  **Encodage** Encodage de caractères pour le fichier. La modification de cette propriété entraîne la modification de l'attribut d'encodage dans la déclaration XML et vice versa. Le nouvel encodage permet de coder le fichier lors de son enregistrement.
 
- **Entrée** Document d’entrée associé à la feuille de style XSLT. Elle est utilisée par la commande de **sortie ShowXSLT** . Un document peut être sélectionné à l’aide du bouton de navigation ( **...** ).
+ **Entrée** Document d’entrée associé à la feuille de style XSLT. Elle est utilisée par la commande de **sortie ShowXSLT** . Un document peut être sélectionné à l’aide du bouton de navigation (**...**).
 
  Cette propriété n'est visible que lorsqu'un fichier XSLT est actif dans la fenêtre de l'éditeur.
 
@@ -38,7 +38,7 @@ La fenêtre **Propriétés** fournit des informations de base sur le document qu
 
  Il permet également d’entrer le chemin des schémas. Si plusieurs schémas sont spécifiés, le chemin de chacun doit être placé entre des guillemets doubles.
 
- **Feuille de style** Fichier XSLT utilisé pour transformer le document lorsque la commande Afficher la **sortie XSLT** est utilisée. Si ce champ est vide lorsque la commande **afficher la sortie XSLT** est utilisée, l’éditeur utilise la valeur fournie dans le `xml-stylesheet` instruction de traitement du document, ou il vous invite à entrer le nom de fichier.
+ **Feuille de style** Fichier XSLT utilisé pour transformer le document lorsque la commande Afficher la **sortie XSLT** est utilisée. Si ce champ est vide lorsque la commande **afficher la sortie XSLT** est utilisée, l’éditeur utilise la valeur fournie dans l' `xml-stylesheet` instruction de traitement du document ou il vous invite à entrer le nom de fichier.
 
  Lorsque vous modifiez un fichier XSLT, cette propriété peut être utilisée pour spécifier qu’une autre feuille de style doit être utilisée lorsque la commande **afficher la sortie XSLT** ou **Déboguer XSLT** est sélectionnée. Par exemple, il se peut que vous souhaitiez utiliser cette fonction lorsque vous modifiez une feuille de style incluse dans une feuille de style parente.
 

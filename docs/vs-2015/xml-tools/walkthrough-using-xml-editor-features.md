@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fa954cfb356593a4f22a44faddd69acdcfc93e37
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669564"
 ---
 # <a name="walkthrough-using-xml-editor-features"></a>Procédure pas à pas : utilisation des fonctionnalités de l'Éditeur XML
@@ -32,11 +32,11 @@ Les étapes de cette procédure pas à pas expliquent la création d'un document
 
      Un nouveau fichier s'ouvre dans l'éditeur. Il contient une déclaration XML par défaut, `<?xml version="1.0" encoding="utf-8">`.
 
-3. Dans la fenêtre Propriétés du document, cliquez sur le bouton Parcourir ( **...** ) du champ **schémas** .
+3. Dans la fenêtre Propriétés du document, cliquez sur le bouton Parcourir (**...**) du champ **schémas** .
 
      La boîte de dialogue **schémas XSD** s’affiche.
 
-4. Cliquez sur **Ajouter**.
+4. Cliquez sur **Add**.
 
      La boîte de dialogue **ouvrir le schéma XSD** s’affiche.
 
@@ -60,13 +60,13 @@ Les étapes de cette procédure pas à pas expliquent la création d'un document
 
     - **employé** pour ajouter l’élément racine.
 
-2. Sélectionnez **\< !--** pour ajouter un nœud de commentaire et appuyez sur entrée.
+2. Sélectionnez ** \< !--** pour ajouter un nœud de commentaire et appuyez sur entrée.
 
      L'éditeur insère une balise de fin de commentaire et place le curseur entre les balises de début et de fin du commentaire.
 
 3. Tapez dans **test XML file**.
 
-4. Sur une nouvelle ligne, tapez `<`, puis sélectionnez **Employee** dans la liste des membres.
+4. Sur une nouvelle ligne, tapez `<` , puis sélectionnez **Employee** dans la liste des membres.
 
      L'éditeur ajoute le début d'un élément XML, `<employee`. À ce stade, vous pouvez ajouter des attributs à l'élément ou fermer la balise de fin en entrant `>`.
 
@@ -104,7 +104,7 @@ Les étapes de cette procédure pas à pas expliquent la création d'un document
 
 ### <a name="to-save-the-xml-document"></a>Pour enregistrer le document XML
 
-1. Dans le menu **fichier** , sélectionnez **Enregistrer sous**.
+1. Dans le menu **Fichier**, sélectionnez **Enregistrer sous**.
 
      La boîte de dialogue **enregistrer le fichier sous** s’affiche. Le nom de fichier par défaut est « XMLFile1 ».
 

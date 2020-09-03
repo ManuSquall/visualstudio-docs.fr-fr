@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 858ae1a265b577da8ad151d2cadde641a42f36ca
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669829"
 ---
 # <a name="deploying-domain-specific-language-solutions"></a>Déploiement de solutions de langage spécifique à un domaine
@@ -23,7 +23,7 @@ ms.locfileid: "72669829"
 
 Vous pouvez installer un langage spécifique à un domaine sur votre ordinateur ou sur d’autres ordinateurs. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] doit déjà être installé sur l’ordinateur cible.
 
-- [Déploiement MSI et VSIX d’un langage spécifique à un domaine](../modeling/msi-and-vsix-deployment-of-a-dsl.md)
+- [Déploiement MSI et VSIX d'un langage spécifique à un domaine](../modeling/msi-and-vsix-deployment-of-a-dsl.md)
 
 - [Plusieurs langages spécifiques à un domaine dans une même solution](../modeling/multiple-dsls-in-one-solution.md)
 

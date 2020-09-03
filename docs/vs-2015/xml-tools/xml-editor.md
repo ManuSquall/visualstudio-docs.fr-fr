@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: cc49b096bc22a7f95ee1a95e7cbd0b1f2f8603cc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669435"
 ---
 # <a name="xml-editor"></a>Éditeur XML
@@ -67,7 +67,7 @@ L'éditeur XML est basé sur l'éditeur de texte [!INCLUDE[msCoName](../includes
 
  [Composants de l’éditeur XML](../xml-tools/xml-editor-components.md) Décrit les composants de l’interface utilisateur de l’éditeur XML.
 
-## <a name="related-sections"></a>Rubriques connexes
+## <a name="related-sections"></a>Sections connexes
  [Modification du texte, du code et du balisage](https://msdn.microsoft.com/0d9c00d7-5df4-48a3-b185-2a265f055439) Fournit des informations sur l’éditeur de texte.
 
  Informations de référence sur les [normes XML](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) Fournit des informations sur les technologies XML, notamment XML, la définition de type de document (DTD), le langage XSD (XML Schema Definition) et XSLT.

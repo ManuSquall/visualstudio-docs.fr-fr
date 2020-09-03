@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9cd10f9eb0e2899394788c3b19348892837426db
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669467"
 ---
 # <a name="xml-editor-intellisense-features"></a>Fonctionnalités IntelliSense de l'Éditeur XML
@@ -22,7 +22,7 @@ ms.locfileid: "72669467"
 L’Éditeur XML offre des fonctionnalités IntelliSense complètes comparables à celles d’autres éditeurs de langage fournis dans Visual Studio. Cette section explique comment vous pouvez utiliser IntelliSense avec des documents en langage XSD (XML Schema Definition) et XSLT.
 
 ## <a name="intellisense-in-an-xsd-document"></a>IntelliSense dans un document XSD
- Une fois qu’un schéma est associé à votre document, vous recevez une liste déroulante d’éléments attendus chaque fois que vous tapez `"<"` ou que vous cliquez sur le bouton **afficher la liste des membres** de l’objet dans la barre d’outils de l’éditeur XML. Pour plus d’informations sur la façon d’associer des schémas à vos documents XML, consultez [validation de document XML](../xml-tools/xml-document-validation.md).
+ Une fois qu’un schéma est associé à votre document, vous recevez une liste déroulante d’éléments attendus chaque fois que vous tapez ou que vous `"<"` cliquez sur le bouton **afficher la liste des membres** de l’objet dans la barre d’outils de l’éditeur XML. Pour plus d’informations sur la façon d’associer des schémas à vos documents XML, consultez [validation de document XML](../xml-tools/xml-document-validation.md).
 
  Lorsque vous entrez un ESPACE dans une étiquette de début, vous obtenez également une liste déroulante de tous les attributs qui peuvent être ajoutés à l’élément actuel.
 
@@ -52,7 +52,7 @@ L’Éditeur XML offre des fonctionnalités IntelliSense complètes comparables 
 
  `<book>`
 
- L’éditeur XML insère l’étiquette de fin et place le curseur juste après l’étiquette de début. Voici un exemple (le «&#124;» note la position du curseur) :
+ L’éditeur XML insère l’étiquette de fin et place le curseur juste après l’étiquette de début. Voici un exemple (le « &#124; » note la position du curseur) :
 
  `<book>`&#124;`</book>`
 
@@ -85,26 +85,26 @@ L’Éditeur XML offre des fonctionnalités IntelliSense complètes comparables 
 
  L'éditeur XML offre cette fonctionnalité pour les éléments suivants :
 
-- Les étiquettes de début et de fin qui se correspondent.
+- Correspondance des balises de début et de fin.
 
-- Toute paire de crochets « \< » ou « > ».
+- Toute paire de crochets pointus « \<" or "> ».
 
-- Le début et la fin de commentaires
+- Début et fin des commentaires.
 
-- Le début et la fin d'instructions de traitement
+- Début et fin des instructions de traitement.
 
-- Le début et la fin de blocs CDATA
+- Début et fin des blocs CDATA.
 
-- Le début et la fin de déclarations DTD
+- Début et fin des déclarations DTD.
 
-- Les guillemets ouvrants et fermants des attributs
+- Ouverture et fermeture des guillemets sur les attributs.
 
 ## <a name="modifying-the-intellisense-options"></a>Modification des options IntelliSense
  Les fonctions IntelliSense et de saisie semi-automatique sont activées par défaut. Vous pouvez toutefois modifier cette sélection par défaut en changeant les paramètres dans Outils\Options.
 
  La section **insertion automatique** de la page **divers** contrôle le comportement suivant :
 
-|Name|Description|
+|Nom|Description|
 |----------|-----------------|
 |Balises de fermeture|Insère des étiquettes de fermeture pour les nouveaux éléments.|
 |Guillemets d'attribut|Insère les guillemets marquant une valeur d'attribut lorsque vous entrez un nouveau nom d'attribut.|

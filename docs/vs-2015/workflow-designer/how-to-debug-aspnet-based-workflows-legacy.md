@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f3bed38f5229cb489f663878759517480b48302c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668668"
 ---
 # <a name="how-to-debug-aspnet-based-workflows-legacy"></a>Procédure : déboguer des workflows basés sur ASP.NET (héritée)
@@ -28,7 +28,7 @@ Cette rubrique décrit comment déboguer des applications [!INCLUDE[vstecasp](..
 
 ### <a name="to-debug-an-aspnet-based-workflow"></a>Pour déboguer des workflows basés sur ASP.NET
 
-1. Activez le débogage pour l’application ASP.NET en définissant **Debug = true** dans le fichier Web. config.
+1. Activez le débogage pour l’application ASP.NET en définissant **Debug = true** dans le fichier web.config.
 
 2. Définissez la bibliothèque de workflow comme projet de démarrage, et définissez des points d'arrêt sur le workflow.
 

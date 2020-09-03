@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: dbbe5e1590cdc32f19c6c9131af629f97a75a6b7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669481"
 ---
 # <a name="xml-editor-components"></a>Composants de l'éditeur XML
@@ -30,7 +30,7 @@ Cette section décrit les fenêtres et boîtes de dialogue de l'éditeur XML. É
 
  [Schémas XML, boîte de dialogue](../xml-tools/xml-schemas-dialog-box.md) Décrit comment sélectionner le ou les schémas XML à associer au document XML.
 
-## <a name="related-sections"></a>Rubriques connexes
+## <a name="related-sections"></a>Sections connexes
  [Comment : définir les options générales de l’éditeur](https://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2) Décrit comment définir des paramètres généraux tels que l’affichage, la saisie semi-automatique des instructions, etc.
 
 ## <a name="see-also"></a>Voir aussi

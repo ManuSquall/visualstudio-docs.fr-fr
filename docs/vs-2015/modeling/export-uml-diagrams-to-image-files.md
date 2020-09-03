@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c095291cd02d591d9e493601b598a63c1ccb6f5b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669656"
 ---
 # <a name="export-uml-diagrams-to-image-files"></a>Exporter des diagrammes UML dans des fichiers image
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous pouvez exporter un document UML à partir de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] vers une image qui est sous contrôle du programme. par exemple dans le cadre de la génération automatique de documents.
+Vous pouvez exporter un document UML de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] vers une image qui est sous contrôle du programme. par exemple dans le cadre de la génération automatique de documents.
 
  Si vous souhaitez exporter manuellement un document vers une image, vous pouvez copier et coller les formes d'un diagramme dans d'autres programmes tels que Word. Vous pouvez aussi imprimer des documents au format XPS. Pour plus d’informations, consultez [exporter des diagrammes en tant qu’images](../modeling/export-diagrams-as-images.md).
 
@@ -29,7 +29,7 @@ Vous pouvez exporter un document UML à partir de [!INCLUDE[vsprvs](../includes/
 > [!NOTE]
 > Pour que ce code fonctionne comme une commande de menu, vous devez l'incorporer à un composant MEF. Pour plus d’informations, consultez [définir une commande de menu sur un diagramme de modélisation](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
 
- Le code First utilise [IShape. GetObject](/previous-versions/ee789371(v=vs.140)) pour récupérer les <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram> de l’implémentation sous-jacente. Ce type a une méthode <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.CreateBitmap%2A>.
+ Le code First utilise [IShape. GetObject](/previous-versions/ee789371(v=vs.140)) pour récupérer le <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram> de l’implémentation sous-jacente. Ce type a une méthode <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.CreateBitmap%2A>.
 
 ```
 namespace SaveToImage

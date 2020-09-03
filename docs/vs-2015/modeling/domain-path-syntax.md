@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4b25b47b5b711f09334501ed21abf06cb66402b1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669736"
 ---
 # <a name="domain-path-syntax"></a>Syntaxe du chemin de domaine
@@ -27,7 +27,7 @@ Les définitions DSL utilisent une syntaxe semblable à XPath pour rechercher de
 
  Un chemin d'accès de domaine prend la forme suivante :
 
- *RelationshipName. PropertyName/ ! Actif*
+ *Nom_Relation.Nom_Propriété/!Rôle*
 
  ![Relation de référence CommentReferencesSubjects](../modeling/media/dsl-reference.png "dsl_reference")
 
