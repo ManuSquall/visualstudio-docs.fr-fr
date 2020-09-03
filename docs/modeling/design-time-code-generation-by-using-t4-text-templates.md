@@ -15,12 +15,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8589be1bd1c1e9ad86a412d4f8bd2630c93a42ac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8c392862f884fd8082b30cbb673aab116756fdfe
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535991"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89426770"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Génération de code durant la conception à l'aide de modèles de texte T4
 
@@ -248,7 +248,7 @@ Pour charger un fichier à partir d'un emplacement relatif au modèle de texte, 
 Ensuite, vous pouvez par exemple écrire :
 
 ```csharp
-<# string fileName = this.Host.ResolvePath("filename.txt");
+<# string filename = this.Host.ResolvePath("filename.txt");
   string [] properties = File.ReadLines(filename);
 #>
 ...
@@ -257,7 +257,7 @@ Ensuite, vous pouvez par exemple écrire :
 ```
 
 ```vb
-<# Dim fileName = Me.Host.ResolvePath("propertyList.txt")
+<# Dim filename = Me.Host.ResolvePath("propertyList.txt")
    Dim properties = File.ReadLines(filename)
 #>
 ...

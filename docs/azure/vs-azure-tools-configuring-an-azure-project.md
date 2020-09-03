@@ -9,18 +9,18 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/06/2017
 ms.author: ghogen
-ms.openlocfilehash: 1776aebbe827295cbc7902f72417bc57e03a4196
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7f207afc600402924969e4d2eee6df229c3d6f09
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85280633"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89426718"
 ---
 # <a name="configure-an-azure-cloud-service-project-with-visual-studio"></a>Configurer un projet de service cloud Azure avec Visual Studio
 Vous pouvez configurer un projet de service cloud Azure selon vos spécifications pour ce projet. Vous pouvez définir des propriétés pour le projet pour les catégories suivantes :
 
 - **Publier un service cloud sur Azure** - Vous pouvez définir une propriété pour vous assurer qu’un service cloud existant déployé sur Azure ne puisse pas être effacé accidentellement.
-- **Exécuter ou déboguer un service cloud sur l’ordinateur local** - Vous pouvez sélectionner une configuration de service à utiliser et indiquer si vous voulez démarrer l’émulateur de stockage Azure.
+- **Exécuter ou déboguer un service Cloud sur l’ordinateur local** : vous pouvez sélectionner une configuration de service à utiliser et indiquer si vous voulez démarrer l’émulateur de stockage Azure.
 - **Valider un package de service cloud lors de sa création** - Vous pouvez décider de traiter tous les avertissements comme des erreurs, afin de vous assurer que le package de service cloud se déploie sans problèmes.
 
 ## <a name="steps-to-configure-an-azure-cloud-service-project"></a>Étapes de configuration d’un projet de service cloud Azure
@@ -36,7 +36,7 @@ Vous pouvez configurer un projet de service cloud Azure selon vos spécification
 
 1. Sélectionnez une **configuration de service** pour indiquer la configuration de service que vous souhaitez utiliser lorsque vous exécutez ou déboguez localement votre service cloud. Pour plus d’informations sur la façon de modifier une configuration de service pour un rôle, consultez [Comment configurer les rôles pour un service cloud Azure avec Visual Studio](./vs-azure-tools-configure-roles-for-cloud-service.md).
 
-1. Définissez **Démarrer l’émulateur de stockage Azure** sur **Vrai** pour démarrer l’émulateur de stockage Azure quand vous exécutez ou déboguez localement votre service cloud.
+1. Définissez **Démarrer l’émulateur de stockage Azure** sur **true** pour démarrer l’émulateur de stockage Azure lorsque vous exécutez ou déboguez votre service Cloud localement.
 
 1. Définissez **Considérer les avertissements comme des erreurs** sur **Vrai** pour vous assurer que vous ne pouvez pas publier s’il y a des erreurs de validation du package.
 

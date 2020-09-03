@@ -1,5 +1,5 @@
 ---
-title: "Procédure pas à pas : création d'une application de données multicouche"
+title: 'Procédure pas à pas : création d’une application de données multicouches'
 ms.date: 09/08/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a88f0382a93027cc952dfe44f0027e6ab1076a45
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a09ef4cec4b7c2921322b934eef39ba660d02587
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75916493"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89426653"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>Procédure pas à pas : création d’une application de données multicouches
 Les applications de données *multiniveaux* sont des applications qui accèdent aux données et sont divisées en plusieurs couches logiques, ou *niveaux*. La séparation des composants de l'application en couches distinctes favorise la possibilité de tenir à jour et de monter en charge l'application. Cela est possible grâce à une application plus facile des nouvelles technologies sur chaque couche sans avoir à reconcevoir toute la solution. L'architecture multicouche inclut une couche Présentation, une couche intermédiaire et une couche Données. La couche intermédiaire inclut généralement une couche d’accès aux données, une couche logique métier et des composants partagés tels que l’authentification et la validation. La couche Données inclut une base de données relationnelle. Les applications multicouches stockent généralement les informations sensibles dans la couche d'accès aux données de la couche intermédiaire, pour la tenir hors de portée des utilisateurs finaux qui accèdent à la couche Présentation. Pour plus d’informations, consultez [vue d’ensemble des applications de données multicouches](../data-tools/n-tier-data-applications-overview.md).
@@ -122,7 +122,7 @@ L'étape qui suit consiste à créer le dataset typé. Les datasets typés sont 
 
      Si une connexion de données à l’exemple de base de données Northwind est disponible dans la liste déroulante, sélectionnez-la.
 
-     - ou -
+     -ou-
 
      Sélectionnez **nouvelle connexion** pour ouvrir la boîte de dialogue **Ajouter une connexion** .
 

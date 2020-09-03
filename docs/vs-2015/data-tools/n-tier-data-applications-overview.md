@@ -19,17 +19,17 @@ caps.latest.revision: 29
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0f124e997669370e71819cf37423d0c2d6a414d7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7c8e0b0eb1c1016ac8e5351ff55df23b44d26824
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72658053"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89426705"
 ---
 # <a name="n-tier-data-applications-overview"></a>Vue d'ensemble des applications de données multicouches
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Les applications de données multicouches * sont des applications de données qui sont séparées en plusieurs *niveaux*. Également appelés « applications distribuées » et « applications multicouches », les applications multicouches séparent le traitement en niveaux discrets répartis entre le client et le serveur. Lorsque vous développez des applications qui accèdent à des données, vous devez disposer d’une séparation claire entre les différents niveaux qui composent l’application.
+Les applications de données *multicouches* sont des applications de données qui sont séparées en plusieurs *niveaux*. Également appelés « applications distribuées » et « applications multicouches », les applications multicouches séparent le traitement en niveaux discrets répartis entre le client et le serveur. Lorsque vous développez des applications qui accèdent à des données, vous devez disposer d’une séparation claire entre les différents niveaux qui composent l’application.
 
  Une application multiniveaux classique inclut une couche Présentation, une couche intermédiaire et une couche Données. Le moyen le plus simple de séparer les différents niveaux dans une application multiniveau consiste à créer des projets discrets pour chaque niveau que vous souhaitez inclure dans votre application. Par exemple, la couche de présentation peut être une application Windows Forms, tandis que la logique d’accès aux données peut être une bibliothèque de classes située dans la couche intermédiaire. En outre, la couche de présentation peut communiquer avec la logique d’accès aux données de la couche intermédiaire par le biais d’un service tel qu’un service. La séparation des composants d'application en couches distinctes renforce la facilité de maintenance et l'évolutivité de l'application. Pour ce faire, il facilite l’adoption de nouvelles technologies qui peuvent être appliquées à un seul niveau sans avoir à reconcevoir l’ensemble de la solution. En outre, les applications multicouches stockent généralement des informations sensibles dans la couche intermédiaire, ce qui maintient l’isolation à partir du niveau de présentation.
 

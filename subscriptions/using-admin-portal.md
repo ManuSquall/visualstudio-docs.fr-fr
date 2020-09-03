@@ -2,21 +2,23 @@
 title: Bien démarrer avec le portail d’administration des abonnements | Visual Studio Marketplace
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 4c099fe8-883e-4789-9468-387ce5697dfe
-ms.date: 03/03/2020
+ms.date: 09/03/2020
 ms.topic: overview
 description: Découvrez comment bien démarrer avec la gestion des abonnements Visual Studio de votre organisation via le portail d’administration des abonnements.
-ms.openlocfilehash: 7687a899b1c10e95ce161973c0d84701ce91fde6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d857d4a1c9bb5568a6e4330851e0cc8a21988146
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249864"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89426874"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Vue d’ensemble du portail d’administration des abonnements Visual Studio
 
 Le portail d’administration des abonnements Visual Studio vous offre les outils nécessaires pour gérer les abonnements de votre organisation dans un seul emplacement. 
+
+Découvrez le portail.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4t9aW]
 
@@ -34,15 +36,15 @@ Une fois que vous avez attribué des abonnements, l’onglet gérer les abonnés
 - Niveau d’abonnement qui leur a été attribué.
 - Date d’attribution de leur abonnement.
 - Date d’expiration de leur abonnement.
-- Texte descriptif facultatif.
-- Indication de l’activation ou de la désactivation des téléchargements pour les abonnés.
+- Champ de référence pour les remarques supplémentaires.
+- Indique si les téléchargements de l’abonné sont activés ou désactivés.
 - Pays dans lequel ils sont situés.
 - Langue choisie pour l’e-mail de communication d’attribution envoyé par le portail d’administration.
 - Champ facultatif indiquant une adresse e-mail pour les communications différente de celle pour la connexion.
 
 Sur le côté supérieur gauche de la page, vous pouvez choisir plusieurs icônes pour afficher une vue d’ensemble de l’affectation d’abonnement, les détails du contrat et le rapport d’utilisation maximal.
 
-Pour afficher des informations supplémentaires sur le nombre de licences d’abonnement achetées, affectées et toujours disponibles dans votre organisation pour chaque accord, sélectionnez l’icône supérieure pour activer le panneau coulissant.
+Pour afficher des informations supplémentaires sur le nombre de licences d’abonnement achetées, affectées et toujours disponibles dans votre organisation pour chaque contrat, cliquez sur l’icône en haut pour activer le panneau coulissant.
 > [!div class="mx-imgBorder"]
 > ![Page Abonnés dans le portail d’administration des abonnements Visual Studio](_img/using-admin-portal/subscribers-page.png)
 

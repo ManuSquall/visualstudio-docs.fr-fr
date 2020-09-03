@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: cabuschl
 manager: cabuschl
 ms.assetid: 36f0d9f1-fe28-469f-a54c-dc46638270a8
-ms.date: 06/23/2020
+ms.date: 09/03/2020
 ms.topic: how-to
 description: Découvrez comment vous venez d’acheter des abonnements Visual Studio mensuels au portail d’administration des abonnements.
-ms.openlocfilehash: 778a3adbc9ca2117b0328a10d52904921bd0b80c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 209484968e85613da7cf38af3dce6944413c678a
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904700"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89426826"
 ---
 # <a name="add-new-monthly-visual-studio-subscriptions-to-the-subscriptions-administration-portal"></a>Ajouter de nouveaux abonnements Visual Studio mensuels au portail d’administration des abonnements
 Lorsque vous achetez de nouveaux abonnements Visual Studio mensuels à l’aide d’un abonnement Azure, vous devrez peut-être les ajouter au portail d’administration des abonnements pour pouvoir les affecter aux utilisateurs.  
@@ -25,7 +25,7 @@ Les étapes à suivre pour ajouter des abonnements mensuels dépendent des types
 
 ## <a name="how-to-add-monthly-subscriptions"></a>Comment ajouter des abonnements mensuels
 1. Connectez-vous au portail d’administration des abonnements à l’adresse <https://manage.visualstudio.com>
-1. Dans l’onglet **gérer les abonnés** , choisissez la liste déroulante **nouveau contrat** . 
+1. Dans l’onglet **gérer les abonnés** , choisissez la liste déroulante Ajouter un **accord** . 
 1. Choisir les **nouveaux abonnements mensuels** dans la liste déroulante
    > [!div class="mx-imgBorder"]
    > ![Liste déroulante Ajouter de nouveaux abonnements mensuels](_img/add-monthly-subs/add-subs-drop-down.png)

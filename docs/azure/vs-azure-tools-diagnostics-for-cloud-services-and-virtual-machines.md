@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.openlocfilehash: d8da94fc7b4735198eafa33edfe72cba0eb1ea59
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2312c636f465bd39cdcbc4ca0ab63c107151c5be
+ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911856"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "89426731"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Configurer les diagnostics pour les services cloud et les machines virtuelles Azure
 Quand vous devez résoudre les problèmes d’un service cloud ou d’une machine virtuelle Azure, vous pouvez utiliser Visual Studio pour configurer plus facilement les diagnostics Azure. Les diagnostics capturent les données système et les données de journalisation sur les machines virtuelles et sur les instances de machine virtuelle qui exécutent votre service cloud. Les données de diagnostic sont transférées à un compte de stockage que vous choisissez. Pour plus d’informations sur la journalisation des diagnostics dans Azure, consultez [Activer la journalisation des diagnostics pour les applications web dans Azure App Service](/azure/app-service/web-sites-enable-diagnostic-log).
@@ -28,7 +28,7 @@ Vous pouvez utiliser une des options suivantes pour configurer les diagnostics A
 ## <a name="azure-sdk-26-diagnostics-changes"></a>Modifications apportées aux diagnostics d’Azure SDK 2.6
 Les modifications suivantes s’appliquent aux projets Azure SDK 2.6 et ultérieur dans Visual Studio :
 
-* L’émulateur local prend désormais en charge les diagnostics. Cela signifie que vous pouvez collecter les données de diagnostic et vérifier que votre application crée les traces appropriées quand vous développez et que vous testez dans Visual Studio. La chaîne de connexion `UseDevelopmentStorage=true` active la collecte des données de diagnostic pendant que vous exécutez votre projet de service cloud dans Visual Studio avec l’émulateur de stockage Azure. Toutes les données de diagnostic sont collectées dans le compte de stockage Stockage de développement.
+* L’émulateur local prend désormais en charge les diagnostics. Cela signifie que vous pouvez collecter les données de diagnostic et vérifier que votre application crée les traces appropriées quand vous développez et que vous testez dans Visual Studio. La chaîne `UseDevelopmentStorage=true` de connexion active la collecte des données de diagnostic pendant que vous exécutez votre projet de service Cloud dans Visual Studio à l’aide de l’émulateur de stockage Azure. Toutes les données de diagnostic sont collectées dans le compte de stockage Stockage de développement.
 * La chaîne de connexion de compte de stockage des diagnostics `Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString` est stockée dans le fichier de configuration (.cscfg) du service. Dans Azure SDK 2.5, le compte de stockage des diagnostics est spécifié dans le fichier diagnostics.wadcfgx.
 
 La chaîne de connexion présente certaines différences de fonctionnement importantes dans Azure SDK 2.6 et ultérieur par rapport à Azure SDK 2.4 et antérieur :
@@ -73,11 +73,11 @@ Dans Visual Studio, vous pouvez collecter les données de diagnostic pour des r�
 3. Pour spécifier le compte de stockage pour les données de diagnostic, cliquez sur le bouton avec les points de suspension (...).
 
     ![Spécifier le compte de stockage à utiliser](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796661.png)
-4. Dans la boîte de dialogue **Créer une chaîne de connexion de stockage**, spécifiez si vous voulez vous connecter en utilisant l’émulateur de stockage Azure, un abonnement Azure ou des informations d’identification entrées manuellement.
+4. Dans la boîte de dialogue **créer une chaîne de connexion de stockage** , spécifiez si vous souhaitez vous connecter à l’aide de l’émulateur de stockage Azure, d’un abonnement Azure ou d’informations d’identification entrées manuellement.
 
     ![Boîte de dialogue Compte de stockage](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796662.png)
 
-   * Si vous sélectionnez **Émulateur de stockage Microsoft Azure**, la chaîne de connexion a la valeur `UseDevelopmentStorage=true`.
+   * Si vous sélectionnez **émulateur de stockage Microsoft Azure**, la chaîne de connexion est définie sur `UseDevelopmentStorage=true` .
    * Si vous choisissez **Votre abonnement**, vous pouvez choisir l’abonnement Azure que vous voulez utiliser et entrer un nom de compte. Pour gérer vos abonnements Azure, sélectionnez **Gérer les comptes**.
    * Si vous sélectionnez **Informations d’identification entrées manuellement**, entrez le nom et la clé du compte Azure que vous voulez utiliser.
 5. Pour afficher la boîte de dialogue **Configuration des diagnostics**, sélectionnez **Configurer**. Excepté pour **Général** et **Répertoires de journaux**, chaque onglet représente une source de données de diagnostic que vous pouvez collecter. L’onglet par défaut **Général** offre les options de collecte de données de diagnostic suivantes : **Erreurs uniquement**, **Toutes les informations** et **Plan personnalisé**. L’option par défaut, **Erreurs uniquement**, utilise le plus petit volume de stockage, car elle ne transfère pas les messages d’avertissement ou de suivi. L’option **Toutes les informations** transfère le plus grand nombre d’informations, utilise le plus de stockage et est dès lors la plus coûteuse.
