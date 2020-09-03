@@ -9,16 +9,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cb2f209e212406fd9809ecb4bd30bce30d95a2bf
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544792"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Images et icônes pour Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-## <a name="image-use-in-visual-studio"></a><a name="BKMK_ImageUseInVisualStudio"></a>Utilisation d’images dans Visual Studio
+## <a name="image-use-in-visual-studio"></a><a name="BKMK_ImageUseInVisualStudio"></a> Utilisation d’images dans Visual Studio
  Avant de créer des illustrations, envisagez d’utiliser les 1 000 images dans la [bibliothèque d’images Visual Studio](https://www.microsoft.com/download/details.aspx?id=35825).
 
 ### <a name="types-of-images"></a>Types d’images
@@ -35,7 +35,7 @@ ms.locfileid: "85544792"
 
 - **Curseurs.** Permet d’indiquer si une opération est autorisée à l’aide de la souris, où un objet peut être supprimé, et ainsi de suite.
 
-## <a name="icon-design"></a><a name="BKMK_IconDesign"></a>Conception d’icône
+## <a name="icon-design"></a><a name="BKMK_IconDesign"></a> Conception d’icône
 
 ### <a name="overview"></a>Vue d’ensemble
  Visual Studio utilise des icônes de style moderne, qui ont une géométrie propre et un équilibre 50/50 positif/négatif (clair/sombre), et qui utilisent des métaphores directes et compréhensibles. Icône cruciale points de conception centrer autour de la clarté, de la simplification et du contexte.
@@ -269,7 +269,7 @@ ms.locfileid: "85544792"
 
  Pour plus d’informations sur l’utilisation des couleurs dans les icônes de Visual Studio, consultez [utilisation des couleurs dans les images](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_UsingColorInImages).
 
-## <a name="using-color-in-images"></a><a name="BKMK_UsingColorInImages"></a>Utilisation des couleurs dans les images
+## <a name="using-color-in-images"></a><a name="BKMK_UsingColorInImages"></a> Utilisation des couleurs dans les images
 
 ### <a name="overview"></a>Vue d’ensemble
  Dans Visual Studio, les icônes sont principalement monochromatiques. La couleur est réservée pour transmettre des informations spécifiques et jamais pour la décoration. La couleur est utilisée :
@@ -295,7 +295,7 @@ ms.locfileid: "85544792"
 ### <a name="base-palette"></a>Palette de base
  Toutes les icônes standard contiennent trois couleurs de base. Les icônes ne contiennent pas de dégradés ou de ombres portées, avec une ou deux exceptions pour les icônes d’outils 3D.
 
-|Utilisation|Nom|Valeur (thème clair)|Echantillon|Exemple|
+|Usage|Nom|Valeur (thème clair)|Echantillon|Exemple|
 |-----------|----------|---------------------------|------------|-------------|
 |Arrière-plan/sombre|VS BG|424242/66, 66, 66|![Échantillon 424242](../../extensibility/ux-guidelines/media/0405-424242.png "0405_424242")|![Exemple de palette de base](../../extensibility/ux-guidelines/media/0405-02-basepaletteexample.png "0405-02_BasePaletteExample")|
 |Premier plan/clair|VS FG|F0EFF1/240 239 241|![Échantillon F0EFF1](../../extensibility/ux-guidelines/media/0405-f0eff1.png "0405_F0EFF1")||
@@ -308,17 +308,17 @@ ms.locfileid: "85544792"
 #### <a name="action-modifiers"></a>Modificateurs d’action
  Les quatre couleurs ci-dessous indiquent les types d’actions requis par les modificateurs d’action :
 
-|Utilisation|Nom|Valeur (tous les thèmes)|Echantillon|
+|Usage|Nom|Valeur (tous les thèmes)|Echantillon|
 |-----------|----------|--------------------------|------------|
-|Positive|CONTRE-action en vert|388A34/56138, 52|![Échantillon 388A34](../../extensibility/ux-guidelines/media/0405-388a34.png "0405_388A34")|
-|Negative|CONTRE-action rouge|A1260D/161, 38, 13|![Échantillon A1260D](../../extensibility/ux-guidelines/media/0405-a1260d.png "0405_A1260D")|
+|Positif|CONTRE-action en vert|388A34/56138, 52|![Échantillon 388A34](../../extensibility/ux-guidelines/media/0405-388a34.png "0405_388A34")|
+|Négatif|CONTRE-action rouge|A1260D/161, 38, 13|![Échantillon A1260D](../../extensibility/ux-guidelines/media/0405-a1260d.png "0405_A1260D")|
 |Neutre|Bleu de l’action VS|00539C/0, 83156|![Échantillon 00539C](../../extensibility/ux-guidelines/media/0405-00539c.png "0405_00539C")|
 |Créer/nouveau|Action VS orange|C27D1A/194156, 26|![Échantillon C27D1A](../../extensibility/ux-guidelines/media/0405-c27d1a.png "0405_C27D1A")|
 
 ##### <a name="examples"></a>Exemples
  Le vert est utilisé pour les modificateurs d’action positifs, tels que « ajouter », « exécuter », « lire » et « valider ».
 
-|Exécutez|Exécuter la requête|Lire toutes les étapes|Ajouter un contrôle|
+|Exécuter|Exécuter la requête|Lire toutes les étapes|Ajouter un contrôle|
 |-|-|-|-|
 |![Icône d'exécution](../../extensibility/ux-guidelines/media/0405-03-actionmodifierrun.png "0405-03_ActionModifierRun")|![Icône Exécuter la requête](../../extensibility/ux-guidelines/media/0405-04-executequery.png "0405-04_ExecuteQuery")|![Icône Lire toutes les étapes](../../extensibility/ux-guidelines/media/0405-05-playallsteps.png "0405-05_PlayAllSteps")|![Icône Ajouter le contrôle](../../extensibility/ux-guidelines/media/0405-06-addcontrol.png "0405-06_AddControl")|
 
@@ -343,21 +343,21 @@ ms.locfileid: "85544792"
 #### <a name="special-cases"></a>Cas particuliers
  Dans certains cas, un modificateur d’action coloré peut être utilisé indépendamment comme icône autonome. La couleur utilisée pour l’icône reflète les actions auxquelles l’icône est associée. Cette utilisation est limitée à un petit sous-ensemble d’icônes, notamment :
 
-|Exécutez|Arrêter|DELETE|Enregistrer|Naviguer vers l'arrière|
+|Exécuter|Arrêter|DELETE|Enregistrer|Naviguer vers l'arrière|
 |-|-|-|-|-|
 |![Icône d'exécution](../../extensibility/ux-guidelines/media/0405-03-actionmodifierrun.png "0405-03_ActionModifierRun")|![Icône Arrêter](../../extensibility/ux-guidelines/media/0405-19-stop.png "0405-19_Stop")|![Icône Supprimer](../../extensibility/ux-guidelines/media/0405-20-delete.png "0405-20_Delete")|![Icône Enregistrer](../../extensibility/ux-guidelines/media/0405-21-save.png "0405-21_Save")|![Icône Naviguer vers l'arrière](../../extensibility/ux-guidelines/media/0405-22-navigateback.png "0405-22_NavigateBack")|
 ### <a name="code-hierarchy-palette"></a>Palette de la hiérarchie du code
 
 #### <a name="folder"></a>Dossier
 
-|Utilisation|Nom|Valeur (tous les thèmes)|Echantillon|Exemple|
+|Usage|Nom|Valeur (tous les thèmes)|Echantillon|Exemple|
 |-----------|----------|--------------------------|------------|-------------|
 |Dossiers|Dossier|DCB67A/220 182 122|![Échantillon DCB67A](../../extensibility/ux-guidelines/media/0405-dcb67a.png "0405_DCB67A")|![Icône de couleur de dossier](../../extensibility/ux-guidelines/media/0405-23-foldercolor.png "0405-23_FolderColor")|
 
 #### <a name="visual-studio-languages"></a>Langages Visual Studio
  Chacun des langages ou plateformes courants disponibles dans Visual Studio est associé à une couleur. Ces couleurs sont utilisées sur l’icône de base, ou sur les modificateurs de langue qui s’affichent dans le coin supérieur droit d’une icône composée.
 
-|Utilisation|Nom|Valeur (tous les thèmes)|Echantillon|
+|Usage|Nom|Valeur (tous les thèmes)|Echantillon|
 |-----------|----------|--------------------------|------------|
 |ASP, HTML, WPF|HTML HTML WPF Blue|0095D7/0149 215|![Échantillon 0095D7](../../extensibility/ux-guidelines/media/0405-0096d7.png "0405_0096D7")|
 |C++|RPC violet|9B4F96/155, 79150|![Échantillon 9B4F96](../../extensibility/ux-guidelines/media/0405-9b4f96.png "0405_9B4F96")|
@@ -382,7 +382,7 @@ ms.locfileid: "85544792"
 #### <a name="intellisense"></a>IntelliSense
  Les icônes IntelliSense utilisent une palette de couleurs exclusives. Ces couleurs permettent aux utilisateurs de faire rapidement la distinction entre les différents éléments de la liste contextuelle IntelliSense.
 
-|Utilisation|Nom|Valeur (tous les thèmes)|Echantillon|
+|Usage|Nom|Valeur (tous les thèmes)|Echantillon|
 |-----------|----------|--------------------------|------------|
 |Classe, événement|Action VS orange|C27D1A/194125, 26|![Échantillon C27D1A](../../extensibility/ux-guidelines/media/0405-c27d1a.png "0405_C27D1A")|
 |Méthode d’extension, méthode, module, délégué|VS action Violette|652D90/101, 45144|![Échantillon 652D90](../../extensibility/ux-guidelines/media/0405-652d90.png "0405_652D90")|
@@ -404,7 +404,7 @@ ms.locfileid: "85544792"
 ### <a name="notifications"></a>Notifications
  Les notifications dans Visual Studio sont utilisées pour indiquer l’État. La palette de notifications utilise les quatre couleurs suivantes, ainsi que les options de remplissage de premier plan noir ou blanc, pour définir des notifications avec les niveaux d’état suivants.
 
-|Utilisation|Nom|Valeur (tous les thèmes)|Echantillon|
+|Usage|Nom|Valeur (tous les thèmes)|Echantillon|
 |-----------|----------|--------------------------|------------|
 |État : neutre|Bleu de notification (VS Blue)|1BA1E2/27 161 226|![Échantillon 1BA1E2](../../extensibility/ux-guidelines/media/0405-1ba1e2.png "0405_1BA1E2")|
 |État : positif|Vert de notification (VS vert)|339933/51153, 51|![Échantillon 339933](../../extensibility/ux-guidelines/media/0405-339933.png "0405_339933")|
@@ -422,7 +422,7 @@ ms.locfileid: "85544792"
 ### <a name="visual-studio-online"></a>Visual Studio Online
  En général, Visual Studio Online est constitué de fonctionnalités hébergées dans un navigateur. La couleur varie dans différents environnements, mais le style reste le même.
 
-|Groupe|Utilisation|Nom|Valeur (tous les thèmes)|Echantillon|
+|Grouper|Usage|Nom|Valeur (tous les thèmes)|Echantillon|
 |-----------|-----------|----------|--------------------------|------------|
 |TFS|Arrière-plan|TFSO BG|656565/101, 101, 101|![Échantillon 656565](../../extensibility/ux-guidelines/media/0405-656565.png "0405_656565")|
 |TFS|Contour|TFSO|FFFFFF/255, 255, 255|![Échantillon FFFFFF](../../extensibility/ux-guidelines/media/0405-ffffff.png "0405_FFFFFF")|
@@ -431,7 +431,7 @@ ms.locfileid: "85544792"
 |F12|Arrière-plan|White|FFFFFF/255, 255, 255|![Échantillon FFFFFF](../../extensibility/ux-guidelines/media/0405-ffffff.png "0405_FFFFFF")|
 |F12|Normal|F12 Grey_Primary|555555/85, 85, 85|![Échantillon 555555](../../extensibility/ux-guidelines/media/0405-555555.png "0405_555555")|
 |F12|Pointage|F12 Blue_Hover|2279BF/34 121 191|![Échantillon 2279BF](../../extensibility/ux-guidelines/media/0405-2279bf.png "0405_2279BF")|
-|F12|Désactivé|F12 LtGrey_Disabled|ABABAC/171 171 172|![Échantillon ABABAC](../../extensibility/ux-guidelines/media/0405-ababac.png "0405_ABABAC")|
+|F12|Disabled|F12 LtGrey_Disabled|ABABAC/171 171 172|![Échantillon ABABAC](../../extensibility/ux-guidelines/media/0405-ababac.png "0405_ABABAC")|
 |F12|Arrière-plan de survol|BG survol|D9EBF7/217 235 247|![Échantillon D9EBF7](../../extensibility/ux-guidelines/media/0405-d9ebf7.png "0405_D9EBF7")|
 |F12|Arrière-plan enfoncé|A appuyé sur BG|B2D7F0/178 215 240|![Échantillon B2D7F0](../../extensibility/ux-guidelines/media/0405-b2d7f0.png "0405_B2D7F0")|
 |F12|Contour|DIFFÉRENCES PAR RAPPORT À|F6F6F6/246 246 246|![Échantillon F6F6F6](../../extensibility/ux-guidelines/media/0405-f6f6f6.png "0405_F6F6F6")|

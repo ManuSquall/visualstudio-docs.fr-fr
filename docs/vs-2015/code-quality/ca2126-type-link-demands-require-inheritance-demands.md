@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 051a041c245fae55e3d4759130c145c662734aa8
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544272"
 ---
 # <a name="ca2126-type-link-demands-require-inheritance-demands"></a>CA2126 : Les demandes de liaison de type exigent des demandes d'héritage
@@ -32,7 +32,7 @@ ms.locfileid: "85544272"
 |Category|Microsoft.Security|
 |Modification avec rupture|Rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Un type non scellé public est protégé par une demande de liaison, a une méthode substituable, et ni le type, ni la méthode n’est protégé par une demande d’héritage.
 
 ## <a name="rule-description"></a>Description de la règle

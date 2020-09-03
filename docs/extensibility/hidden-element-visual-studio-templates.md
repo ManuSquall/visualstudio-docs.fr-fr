@@ -1,5 +1,5 @@
 ---
-title: Élément caché (Visual Studio Templates) Microsoft Docs
+title: Hidden, élément (modèles Visual Studio) | Microsoft Docs
 ms.date: 04/17/2019
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,15 +14,15 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9943cefe2b624cede19c05eddd88f155f4aa4c5b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80711109"
 ---
-# <a name="hidden-element-visual-studio-templates"></a>Élément caché (modèles Visual Studio)
+# <a name="hidden-element-visual-studio-templates"></a>Hidden, élément (modèles Visual Studio)
 
-Précise si le modèle apparaît dans le nouveau projet ou ajouter des boîtes de dialogue **Nouvel Élément.**
+Spécifie si le modèle apparaît dans les boîtes de dialogue Nouveau projet ou **Ajouter un nouvel élément** .
 
 ```xml
 <VSTemplate>
@@ -59,17 +59,17 @@ Aucun.
 
 Une valeur texte est requise.
 
-Le texte doit `true` `false`être soit ou, indiquant si oui ou non le modèle apparaîtra dans le **nouveau projet** ou ajouter de nouvelles boîtes de dialogue **d’élément.**
+Le texte doit être `true` ou `false` , indiquant si le modèle doit apparaître ou non dans les boîtes de dialogue **nouveau projet** ou **Ajouter un nouvel élément** .
 
 ## <a name="remarks"></a>Notes
 
 `Hidden` est un élément facultatif.
 
-Si spécifié, aucun autre `TemplateData` élément enfant de l’élément n’est requis.
+S’il est spécifié, aucun autre élément enfant de l' `TemplateData` élément n’est requis.
 
 ## <a name="example"></a>Exemple
 
-L’exemple suivant illustre les métadonnées d’un modèle C.
+L’exemple suivant illustre les métadonnées d’un modèle C#.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -98,5 +98,5 @@ L’exemple suivant illustre les métadonnées d’un modèle C.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Référence de schéma de modèle](../extensibility/visual-studio-template-schema-reference.md)
+- [Référence du schéma de modèle](../extensibility/visual-studio-template-schema-reference.md)
 - [Créer des modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)

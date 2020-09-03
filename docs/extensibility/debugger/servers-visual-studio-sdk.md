@@ -1,5 +1,5 @@
 ---
-title: Serveurs (Visual Studio SDK) Microsoft Docs
+title: Serveurs (kit de développement logiciel Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,23 +12,23 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 32fdbb5afca40c3b4fced468d2f9ef0ea5226c00
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712894"
 ---
 # <a name="servers-visual-studio-sdk"></a>Serveurs (SDK Visual Studio)
-Dans l’architecture de débbugger, un *serveur*:
+Dans l’architecture du débogueur, un *serveur*:
 
-- Est un conteneur de ports et de fournisseurs portuaires et communique les ports et les fournisseurs portuaires au gestionnaire de débogé de session (SDM) et les moteurs de débogé.
+- Est un conteneur de ports et fournisseurs de ports, et communique des ports et des fournisseurs de ports aux moteurs de débogage de session (SDM) et de débogage.
 
-- Peut s’identifier par son nom et énumérer ses ports et ses fournisseurs portuaires.
+- Peut s’identifier par son nom et énumérer ses ports et fournisseurs de ports.
 
-- Est représenté par une interface [IDebugCoreServer2,](../../extensibility/debugger/reference/idebugcoreserver2.md) qui n’est implémentée que par Visual Studio (une instance d’un serveur pour chaque cas de Visual Studio en cours d’exécution).
+- Est représenté par une interface [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md) , qui est implémentée uniquement par Visual Studio (une instance d’un serveur pour chaque instance de Visual Studio en cours d’exécution).
 
 ## <a name="see-also"></a>Voir aussi
 - [Ports](../../extensibility/debugger/ports.md)
-- [Fournisseurs portuaires](../../extensibility/debugger/port-suppliers.md)
-- [Concepts Debugger](../../extensibility/debugger/debugger-concepts.md)
+- [Fournisseurs de port](../../extensibility/debugger/port-suppliers.md)
+- [Concepts du débogueur](../../extensibility/debugger/debugger-concepts.md)
 - [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md)

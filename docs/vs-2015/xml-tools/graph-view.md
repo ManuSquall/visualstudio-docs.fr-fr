@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ba58777700ba34de3dc3b7a842f26462daf08c89
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656360"
 ---
 # <a name="graph-view"></a>Vue Graphique
@@ -23,7 +23,7 @@ La vue du graphique fournit une représentation graphique des nœuds de schéma 
 
  L'image suivante montre la vue du graphique avec six nœuds globaux sur son aire de conception.
 
- ![Vue graphique du concepteur de schémas XML](../xml-tools/media/xsddesigner-graphview.gif "XSDDesigner_GraphView")
+ ![Vue Graphique du concepteur de schémas XML](../xml-tools/media/xsddesigner-graphview.gif "XSDDesigner_GraphView")
 
 ## <a name="design-surface"></a>Aire de conception
  L’aire de conception de la vue du graphique affiche le contenu de l' [espace de travail du concepteur de schémas XML](../xml-tools/xml-schema-designer-workspace.md). Si l'espace de travail contient des nœuds globaux du jeu de schémas, les nœuds sont représentés sur l'aire de conception de la vue du graphique et des flèches sont dessinées entre les nœuds qui ont des relations.
@@ -34,7 +34,7 @@ La vue du graphique fournit une représentation graphique des nœuds de schéma 
 
  Si l'aire de conception est vide, l'Éditeur XML, l'Explorateur de schémas XML et le filigrane sont affichés. Le *filigrane* est une liste de liens vers toutes les vues du concepteur XSD.
 
- ![Concepteur XSD ; Vue du graphique](../xml-tools/media/xsdgraphviewwatermark.gif "XSDGraphViewWatermark")
+ ![Concepteur XSD ; vue Graphique](../xml-tools/media/xsdgraphviewwatermark.gif "XSDGraphViewWatermark")
 
  Si le jeu de schémas comporte des erreurs, le texte suivant est affiché à la fin de la liste : « Utilisez la liste d'erreurs pour afficher et résoudre les erreurs dans le jeu ».
 
@@ -46,31 +46,31 @@ La vue du graphique fournit une représentation graphique des nœuds de schéma 
 
 |Option|Description|
 |------------|-----------------|
-|**Afficher dans l’Explorateur de schémas XML**|Met le focus sur l'Explorateur de schémas et met en surbrillance le nœud de jeu de schémas.|
+|**Afficher dans l'Explorateur de schémas XML**|Met le focus sur l'Explorateur de schémas et met en surbrillance le nœud de jeu de schémas.|
 |**Afficher dans la vue du graphique**|Bascule vers la vue du graphique (grisée).|
 |**Générer un exemple de code XML**|Disponible uniquement pour les éléments globaux. Génère un exemple de fichier XML pour l'élément global.|
-|**Effacer l’espace de travail**|Efface l'espace de travail et l'aire de conception.|
-|**Supprimer de l’espace de travail**|Supprime les nœuds sélectionnés de l'espace de travail et de l'aire de conception.|
-|**Supprimer tout sauf la sélection dans l’espace de travail**|Supprime les nœuds qui ne sont pas sélectionnés dans l'espace de travail et l'aire de conception.|
-|**Exporter le diagramme en tant qu’image...**|Enregistre l'aire de conception dans un fichier XPS.|
+|**Effacer l'espace de travail**|Efface l'espace de travail et l'aire de conception.|
+|**Supprimer de l'espace de travail**|Supprime les nœuds sélectionnés de l'espace de travail et de l'aire de conception.|
+|**Supprimer tout, sauf la sélection de l'espace de travail**|Supprime les nœuds qui ne sont pas sélectionnés dans l'espace de travail et l'aire de conception.|
+|**Exporter le diagramme en tant qu'image**|Enregistre l'aire de conception dans un fichier XPS.|
 |**Sélectionner tout**|Sélectionne tous les nœuds sur l'aire de conception.|
 |**Afficher le code**|Ouvre le fichier qui contient le nœud sélectionné dans l'Éditeur XML. L'élément sélectionné dans l'Explorateur de schémas XML est également sélectionné dans l'Éditeur XML.|
-|**Propriétés, fenêtre**|Ouvre la fenêtre **Propriétés** (si elle n’est pas déjà ouverte). Cette fenêtre affiche des informations sur le nœud.|
+|**Fenêtre Propriétés**|Ouvre la fenêtre **Propriétés** (si elle n’est pas déjà ouverte). Cette fenêtre affiche des informations sur le nœud.|
 
  En plus des options communes décrites ci-dessus, le menu contextuel pour les éléments globaux comprend les options suivantes :
 
 |Option|Description|
 |------------|-----------------|
-|**Ajouter une définition de type**|Ajoute le type de base au diagramme.|
+|**Ajouter la définition de type**|Ajoute le type de base au diagramme.|
 |**Ajouter toutes les références**|Ajoute tous les nœuds qui font référence à l'élément et dessine des flèches pour indiquer les relations entre eux.|
-|**Ajouter des membres au groupe de substitution**|Ajoute tous les membres du groupe de substitution. Cette option s'affiche dans la vue si l'élément est l'en-tête ou membre d'un groupe de substitution.|
+|**Ajouter les membres du groupe de substitution**|Ajoute tous les membres du groupe de substitution. Cette option s'affiche dans la vue si l'élément est l'en-tête ou membre d'un groupe de substitution.|
 |**Générer un exemple de code XML**|Génère un exemple de fichier XML pour l'élément global.|
 
  En plus des options communes décrites ci-dessus, le menu contextuel pour les types simples et complexes globaux comprend les options suivantes :
 
 |Option|Description|
 |------------|-----------------|
-|**Ajouter un type de base**|Si le type sélectionné est dérivé d'un type global, ajoute le type de base du type sélectionné.|
+|**Ajouter le type de base**|Si le type sélectionné est dérivé d'un type global, ajoute le type de base du type sélectionné.|
 |**Ajouter toutes les références**|Ajoute toutes les références du type sélectionné. Ceci inclut les éléments et les attributs du type sélectionné, ainsi que les types dérivés du type sélectionné.|
 |**Ajouter tous les types dérivés**|Ajoute tous les types qui sont directement et indirectement dérivés du type sélectionné.|
 |**Ajouter tous les ancêtres**|Ajoute tous les types parents (de base).|
@@ -88,22 +88,22 @@ La vue du graphique fournit une représentation graphique des nœuds de schéma 
 |------------|-----------------|
 |**Ajouter toutes les références**|Ajoute tous les nœuds qui font référence au groupe et dessine des flèches pour indiquer les relations entre eux.|
 
-## <a name="properties-window"></a>Propriétés (fenêtre)
+## <a name="properties-window"></a>Fenêtre Propriétés
  Utilisez le menu contextuel pour ouvrir initialement la fenêtre **Propriétés** . Par défaut, la fenêtre **Propriétés** s’affiche dans le coin inférieur droit de Visual Studio. Lorsque vous cliquez sur un nœud affiché dans la vue de modèle de contenu, les propriétés de ce nœud s’affichent dans la fenêtre **Propriétés** .
 
 ## <a name="xsd-toolbar"></a>Barre d'outils XSD
  Les boutons suivants de la barre d'outils XSD sont activés lorsque la vue du graphique est active.
 
- ![Barre d’outils du concepteur de schémas XML](../xml-tools/media/xsdgraphviewtoolbar.gif "XSDGraphViewToolbar")
+ ![Barre d'outils du concepteur de schémas XML](../xml-tools/media/xsdgraphviewtoolbar.gif "XSDGraphViewToolbar")
 
 |Option|Description|
 |------------|-----------------|
 |**Afficher la vue de départ**|Bascule vers la [vue de départ](../xml-tools/start-view.md). Cette vue est accessible à l’aide du raccourci clavier : **CTRL + 1**.|
 |**Afficher la vue de modèle de contenu**|Bascule vers la [vue de modèle de contenu](../xml-tools/content-model-view.md). Cette vue est accessible à l’aide du raccourci clavier : **CTRL + 2**.|
 |**Afficher la vue du graphique**|Bascule vers la [vue du graphique](../xml-tools/graph-view.md). Cette vue est accessible à l’aide du raccourci clavier : **Ctrl + 3**.|
-|**Effacer l’espace de travail**|Efface l'espace de travail et l'aire de conception.|
-|**Supprimer de l’espace de travail**|Supprime les nœuds sélectionnés de l'espace de travail et de l'aire de conception.|
-|**Supprimer tout sauf la sélection dans l’espace de travail**|Supprime les nœuds qui ne sont pas sélectionnés dans l'espace de travail et l'aire de conception. Cette option est activée dans la vue de modèle de contenu et dans la vue du graphique.|
+|**Effacer l'espace de travail**|Efface l'espace de travail et l'aire de conception.|
+|**Supprimer de l'espace de travail**|Supprime les nœuds sélectionnés de l'espace de travail et de l'aire de conception.|
+|**Supprimer tout, sauf la sélection de l'espace de travail**|Supprime les nœuds qui ne sont pas sélectionnés dans l'espace de travail et l'aire de conception. Cette option est activée dans la vue de modèle de contenu et dans la vue du graphique.|
 |**De gauche à droite**|Modifie la disposition de la vue du graphique pour représenter hiérarchiquement les nœuds de gauche à droite. Cette option est accessible à l’aide du raccourci clavier : **Alt + flèche droite**.|
 |**De droite à gauche**|Modifie la disposition de la vue du graphique pour représenter hiérarchiquement les nœuds de droite à gauche. Cette option est accessible à l’aide du raccourci clavier : **Alt + flèche gauche**.|
 |**De haut en bas**|Modifie la disposition de la vue du graphique pour représenter hiérarchiquement les nœuds de haut en bas. Cette option est accessible à l’aide du raccourci clavier : **Alt + flèche bas**.|

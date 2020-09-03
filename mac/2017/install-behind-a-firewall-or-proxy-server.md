@@ -6,10 +6,10 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 10/23/2018
 ms.openlocfilehash: d488d56bdecd2801ecd94a2551c3be0f9834d0d7
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85938681"
 ---
 # <a name="install-and-use-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Installer et utiliser Visual Studio pour Mac derrière un pare-feu ou un serveur proxy
@@ -26,7 +26,7 @@ Dans la mesure où le programme d’installation de Visual Studio pour Mac effec
 
 ### <a name="microsoft-domains"></a>Domaines Microsoft
 
-| Domaine| Objectif |
+| Domain| Objectif |
 | ----------------------------------- |---------------------------|
 | *.live.com| Gestion des informations d’identification |
 | app.vssps.visualstudio.com| Métadonnées du programme d’installation|
@@ -41,9 +41,9 @@ Dans la mesure où le programme d’installation de Visual Studio pour Mac effec
 
 ### <a name="third-party-domains"></a>Domaines tiers
 
-| Domaine| Objectif |
+| Domain| Objectif |
 | --------------------------|-------------------------|
-| dl.google.com | Kit de développement logiciel (SDK) Android |
+| dl.google.com | Kit de développement logiciel Android |
 | download.oracle.com | Kit de développement logiciel (SDK) Java|
 | api.apple-cloudkit.com| Services de sécurité Apple |
 
@@ -80,7 +80,7 @@ Nous vous recommandons, pour avoir accès à toutes les fonctionnalités dont vo
 
 ### <a name="android-projects"></a>Projets Android
 
-| Domaine| Objectif|
+| Domain| Objectif|
 | ------------------------------------|------------------------------------|
 | time.android.com| Serveur de temps pour l’Émulateur Android |
 | connectivitycheck.gstatic.com | Connectivité pour l’Émulateur Android|

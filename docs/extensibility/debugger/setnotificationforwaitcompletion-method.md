@@ -1,5 +1,5 @@
 ---
-title: SetNotificationForWaitCompletion Méthode (fr) Microsoft Docs
+title: Méthode SetNotificationForWaitCompletion | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +11,18 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 226ac41c8e3b7427ac3b9aba7bea08dbb7329d16
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712874"
 ---
 # <a name="setnotificationforwaitcompletion-method"></a>Méthode SetNotificationForWaitCompletion
-Définit ou efface le TASK_STATE_WAIT_COMPLETION_NOTIFICATION’état bit.
+Définit ou efface le bit d’État TASK_STATE_WAIT_COMPLETION_NOTIFICATION.
 
- **Espace nom:**<xref:System.Threading.Tasks?displayProperty=fullName>
+ **Espace de noms :** <xref:System.Threading.Tasks?displayProperty=fullName>
 
- **Assemblée:** mscorlib (en *mscorlib.dll*)
+ **Assembly :** mscorlib (en *mscorlib.dll*)
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,14 +33,14 @@ internal void SetNotificationForWaitCompletion(bool enabled)
 ### <a name="parameters"></a>Paramètres
  `enabled`
 
- `true`pour régler le bit; `false` pour décoller le bit.
+ `true` pour définir le bit ; `false` pour annuler l’annulation du bit.
 
 ## <a name="exceptions"></a>Exceptions
 
 ## <a name="remarks"></a>Notes
- Le débbugger définit ce bit pour aider à sortir d’un corps de méthode async. Si `enabled` `true`c’est le cas, cette méthode ne doit être appelée que sur une tâche qui n’a pas encore été accomplie. Quand `enabled` `false`est, cette méthode peut être appelée sur les tâches accomplies. Dans les deux cas, il ne doit être utilisé que pour des tâches de style promesse.
+ Le débogueur définit ce bit pour faciliter le pas à pas sortant d’un corps de méthode Async. Si `enabled` est `true` , cette méthode doit être appelée uniquement sur une tâche qui n’est pas encore terminée. Lorsque `enabled` est `false` , cette méthode peut être appelée sur les tâches terminées. Dans les deux cas, il ne doit être utilisé que pour les tâches de type promesse.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 
 ## <a name="see-also"></a>Voir aussi
 - [Classe Task](../../extensibility/debugger/task-class-internal-members.md)

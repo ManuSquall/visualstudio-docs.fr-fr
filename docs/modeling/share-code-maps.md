@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ef7f72010623d20e79a327877a512f0b7352bac5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542569"
 ---
 # <a name="share-code-maps"></a>Partager des cartes de code
@@ -22,7 +22,7 @@ Vous pouvez enregistrer des cartes de code dans le cadre d’un projet Visual St
 
 Utilisez le menu **Fichier** pour enregistrer la carte.
 
--ou-
+- ou -
 
 Pour enregistrer la carte dans le cadre d’un projet spécifique, dans la barre d’outils de la carte, choisissez **partager**  >  **déplacer Move \<CodeMapName> . dgml dans**, puis choisissez le projet dans lequel vous souhaitez enregistrer la carte.
 

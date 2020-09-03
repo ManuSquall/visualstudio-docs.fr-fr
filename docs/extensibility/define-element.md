@@ -1,5 +1,5 @@
 ---
-title: Décrivez Element (en anglais) Microsoft Docs
+title: Définir l’élément | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fc09de1d822f41b25397c7a56c7cce4449a9e551
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712274"
 ---
 # <a name="define-element"></a>Définir l’élément
-Définit un nom de symbole et une paire de valeur. Ce symbole peut être évalué par des attributs conditionnels. Pour plus d’informations, voir [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md). Voir aussi [l’élément Symboles](../extensibility/symbols-element.md).
+Définit un nom de symbole et une paire de valeurs. Ce symbole peut être évalué par des attributs conditionnels. Pour plus d’informations, consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md). Voir aussi l' [élément Symbols](../extensibility/symbols-element.md).
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -34,9 +34,9 @@ Définit un nom de symbole et une paire de valeur. Ce symbole peut être évalu�
 
 |Attribut|Description|
 |---------------|-----------------|
-|name|Obligatoire. Le nom du symbole:<br /><br /> nom "Mode"|
-|value|Obligatoire. La valeur du symbole :<br /><br /> valeur "Standard"|
-|Condition|facultatif. Pour plus d’informations, voir [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|name|Obligatoire. Nom du symbole :<br /><br /> Name = "mode"|
+|value|Obligatoire. Valeur du symbole :<br /><br /> valeur = « standard »|
+|Condition|facultatif. Pour plus d’informations, consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Éléments enfants
  Aucun.
@@ -45,7 +45,7 @@ Définit un nom de symbole et une paire de valeur. Ce symbole peut être évalu�
 
 |Élément|Description|
 |-------------|-----------------|
-|[Élément CommandTable](../extensibility/commandtable-element.md)|Définit tous les éléments qui représentent les commandes qu’un VSPackage fournit à l’environnement de développement intégré (IDE). Par exemple, les éléments de menu, les menus, les barres d’outils et les boîtes combo.|
+|[Élément CommandTable](../extensibility/commandtable-element.md)|Définit tous les éléments qui représentent les commandes qu’un VSPackage fournit à l’environnement de développement intégré (IDE). Par exemple, les éléments de menu, les menus, les barres d’outils et les zones de liste modifiable.|
 
 ## <a name="example"></a>Exemple
 
@@ -55,4 +55,4 @@ Définit un nom de symbole et une paire de valeur. Ce symbole peut être évalu�
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Fichiers visualister de table de commande de studio (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Fichiers de table de commandes Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

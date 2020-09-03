@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2a547122579da8bb19935e268a1845a8ed8d4b03
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76114216"
 ---
 # <a name="my-extensions-page-project-designer-visual-basic"></a>Extensions My, page du Concepteur de projets (Visual Basic)
@@ -44,5 +44,5 @@ Sélectionnez une ou plusieurs références dans la liste **Extensions de l’es
 
 - [Extension de l’espace de noms My dans Visual Basic](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace)
 - [Empaquetage et déploiement des extensions My personnalisées](/dotnet/visual-basic/developing-apps/customizing-extending-my/packaging-and-deploying-custom-my-extensions)
-- [Extension du modèle d’application Visual Basic](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-visual-basic-application-model)
+- [Extension du modèle d'application Visual Basic](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-visual-basic-application-model)
 - [Personnalisation de la disponibilité ou non des objets dans My](/dotnet/visual-basic/developing-apps/customizing-extending-my/customizing-which-objects-are-available-in-my)

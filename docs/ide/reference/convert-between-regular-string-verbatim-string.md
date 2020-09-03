@@ -1,5 +1,5 @@
 ---
-title: Effectuer une conversion entre une chaîne normale et des littéraux de chaîne Verbatim
+title: Convertir une chaîne normale en littéraux de chaîne verbatim
 ms.date: 06/08/2020
 ms.topic: reference
 author: mikadumont
@@ -10,10 +10,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 7e8e239f53f92727072a2fcd6573d6957b7cd3ec
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85290334"
 ---
 # <a name="convert-between-regular-string-and-verbatim-string-literals-refactoring"></a>Conversion entre une chaîne normale et des littéraux de chaîne Verbatim refactorisation

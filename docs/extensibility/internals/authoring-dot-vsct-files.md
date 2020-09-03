@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8f02c7ec0e453f0758ba2ab13145fcdff11b442a
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84173601"
 ---
 # <a name="author-vsct-files"></a>Fichiers Author. vsct
@@ -229,7 +229,7 @@ Ce document montre comment créer un fichier *. vsct* pour ajouter des élément
 
    Certains types de menu et de bouton incluent des comportements spécialisés. La liste suivante décrit quelques types de menu et de bouton spécialisés. Pour les autres types, consultez les `types` descriptions d’attribut dans le [menu](../../extensibility/menu-element.md), le [bouton](../../extensibility/button-element.md)et les éléments de [liste déroulante](../../extensibility/combo-element.md) .
 
-   - Zone de liste modifiable : une zone de liste déroulante est une liste déroulante qui peut être utilisée dans une barre d’outils. Pour ajouter des zones de liste déroulante à l’interface utilisateur, créez un élément [combos](../../extensibility/combos-element.md) dans l' `Commands` élément. Ajoutez ensuite à l' `Combos` élément un `Combo` élément pour chaque zone de liste déroulante à ajouter. `Combo`les éléments ont les mêmes attributs et enfants que les `Button` éléments et ont également des `DefaultWidth` `idCommandList` attributs et. L' `DefaultWidth` attribut définit la largeur en pixels, et l' `idCommandList` attribut pointe sur un ID de commande utilisé pour remplir la zone de liste déroulante.
+   - Zone de liste modifiable : une zone de liste déroulante est une liste déroulante qui peut être utilisée dans une barre d’outils. Pour ajouter des zones de liste déroulante à l’interface utilisateur, créez un élément [combos](../../extensibility/combos-element.md) dans l' `Commands` élément. Ajoutez ensuite à l' `Combos` élément un `Combo` élément pour chaque zone de liste déroulante à ajouter. `Combo` les éléments ont les mêmes attributs et enfants que les `Button` éléments et ont également des `DefaultWidth` `idCommandList` attributs et. L' `DefaultWidth` attribut définit la largeur en pixels, et l' `idCommandList` attribut pointe sur un ID de commande utilisé pour remplir la zone de liste déroulante.
 
    - Contrôleur de menu : un contrôleur de menu est un bouton qui contient une flèche en regard de celui-ci. Cliquez sur la flèche pour ouvrir une liste. Pour ajouter un contrôleur de menu à l’interface utilisateur, créez un `Menu` élément et affectez à son attribut la valeur `type` `MenuController` ou `MenuControllerLatched` , selon le comportement souhaité. Pour remplir un contrôleur de menu, définissez-le en tant que parent d’un `Group` élément. Le contrôleur de menu affiche tous les enfants de ce groupe dans sa liste déroulante.
 

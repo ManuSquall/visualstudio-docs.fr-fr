@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cf555a9a4b7c73e4e204bcc42e6b57d3ab96cd01
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85419170"
 ---
 # <a name="prerequisites-dialog-box"></a>Composants requis, boîte de dialogue
@@ -50,7 +50,7 @@ Les composants requis qui apparaissent dans la boîte de dialogue **Composants r
 |**Microsoft .NET Framework 4.x**|Ce package installe .NET Framework 4.x pour les plateformes x64 et x86.|
 |**Microsoft System CLR Types pour SQL Server 2014 (x64 et x86)**|Ce package installe Microsoft System CLR Types pour SQL Server 2014 pour les plateformes x64 ou x86.|
 |**SQL Server 2008 R2 Express**|Ce package installe Microsoft SQL Server 2008 R2 Express, qui est une version gratuite de Microsoft SQL Server 2008 R2, une base de données idéale pour les petites applications web, de serveur ou de poste de travail. Il peut être utilisé gratuitement pour le développement et la production.|
-|**SQL Server 2012 Express**|Ce package installe Microsoft SQL Server 2012 Express.|
+|**SQL Server 2012 Express**|Ce package installe Microsoft SQL Server 2012 Express.|
 |**SQL Server 2012 Express LocalDB**|Ce package installe SQL Server 2012 Express LocalDB.|
 |**Bibliothèques Runtime Visual C++ "14" (ARM)**|Ce package installe les bibliothèques Runtime Visual C++ pour l'architecture Intel Itanium, qui fournit des routines de programmation pour le système d'exploitation Microsoft Windows. Ces routines automatisent de nombreuses tâches de programmation courantes qui ne sont pas fournies par les langages C et C++.<br /><br /> Pour plus d’informations, consultez [Référence sur les bibliothèques Runtime C](/cpp/c-runtime-library/c-run-time-library-reference).|
 |**Bibliothèques Runtime Visual C++ "14" (x64)**|Ce package installe les bibliothèques Runtime Visual C++ pour les systèmes d'exploitation x64, qui fournissent des routines de programmation pour le système d'exploitation Microsoft Windows. Ces routines automatisent de nombreuses tâches de programmation courantes qui ne sont pas fournies par les langages C et C++.<br /><br /> Pour plus d’informations, consultez [Référence sur les bibliothèques Runtime C](/cpp/c-runtime-library/c-run-time-library-reference).|

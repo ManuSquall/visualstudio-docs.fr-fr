@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 05a7f9930dc1619d6f35a6024bd0f754f7caeeb5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72643504"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Étape 1 : créer un projet et ajouter une table au formulaire
@@ -23,7 +23,7 @@ La première étape pour créer un jeu de combinaisons consiste à créer le pro
 
 ### <a name="to-create-a-project-and-add-a-table-to-your-form"></a>Pour créer un projet et ajouter une table à votre formulaire
 
-1. Dans la barre de menus, sélectionnez **Fichier**, **Nouveau**, **Projet**.
+1. Dans le menu principal, sélectionnez **Fichier**, **Nouveau**, **Projet**.
 
 2. Si vous n'utilisez pas Visual Studio Express, vous devez d'abord sélectionner un langage de programmation. Dans la liste **Modèles installés**, choisissez **Visual C#** ou **Visual Basic**.
 
@@ -52,7 +52,7 @@ La première étape pour créer un jeu de combinaisons consiste à créer le pro
 
    5. Dans la barre des tâches, choisissez deux fois **Ajouter une ligne** pour ajouter deux lignes supplémentaires, puis choisissez deux fois **Ajouter une colonne** pour ajouter deux colonnes supplémentaires.
 
-   6. Dans la barre des tâches, choisissez **Modifier les lignes et les colonnes** pour afficher la fenêtre **Styles de ligne et de colonne**. Choisissez chacune des colonnes, choisissez la case d’option **Pour cent**, puis affectez à chaque colonne une largeur égale à 25 % de la largeur totale. Sélectionnez ensuite **Lignes** dans la zone de liste déroulante en haut de la fenêtre et affectez une hauteur de 25 pour cent à chaque ligne. Une fois terminé, choisissez le bouton **OK**.
+   6. Dans la barre des tâches, choisissez **Modifier les lignes et les colonnes** pour afficher la fenêtre **Styles de ligne et de colonne**. Choisissez chacune des colonnes, choisissez la case d’option **Pour cent**, puis affectez à chaque colonne une largeur égale à 25 % de la largeur totale. Sélectionnez ensuite **Lignes** dans la zone de liste déroulante en haut de la fenêtre et affectez une hauteur de 25 pour cent à chaque ligne. Lorsque vous avez terminé, cliquez sur le bouton **OK**.
 
       Votre TableLayoutPanel doit désormais correspondre à une grille 4x4 de seize cellules carrées de même taille. Les images des icônes apparaîtront ultérieurement dans ces lignes et colonnes.
 
@@ -90,6 +90,6 @@ La première étape pour créer un jeu de combinaisons consiste à créer le pro
 
 ### <a name="to-continue-or-review"></a>Pour continuer ou examiner
 
-- Pour passer à l’étape suivante du didacticiel, consultez [Étape 2 : ajouter un objet aléatoire et une liste d’icônes](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
+- Pour passer à l’étape suivante du didacticiel, consultez [étape 2 : ajouter un objet aléatoire et une liste d’icônes](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
 
-- Pour revenir à la rubrique de présentation, consultez [Didacticiel 3 : Créer un jeu de combinaisons](../ide/tutorial-3-create-a-matching-game.md).
+- Pour revenir à la rubrique de présentation, consultez [didacticiel 3 : créer un jeu de combinaisons](../ide/tutorial-3-create-a-matching-game.md).

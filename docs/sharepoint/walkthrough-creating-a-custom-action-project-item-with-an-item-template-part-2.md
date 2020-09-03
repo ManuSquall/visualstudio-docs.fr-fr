@@ -12,9 +12,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c96546f85b21ee0ca8a559059a16158b743cb915
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016105"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Procédure pas à pas : création d’un élément de projet d’action personnalisé avec un modèle d’élément, partie 2
@@ -65,7 +66,7 @@ ms.locfileid: "86016105"
 
 5. Choisissez le modèle de projet **bibliothèque de contrôles utilisateur WPF** , nommez le projet **ItemTemplateWizard**, puis choisissez le bouton **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Ajoute le projet **ItemTemplateWizard** à la solution.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Ajoute le projet **ItemTemplateWizard** à la solution.
 
 6. Supprimez l’élément UserControl1 du projet.
 
@@ -300,7 +301,7 @@ ms.locfileid: "86016105"
 
 12. Dans la zone **titre** , entrez **Centre de développement SharePoint**.
 
-13. Dans la zone **Description** , entrez **ouvre le site Web du centre de développement SharePoint**.
+13. Dans la zone  **Description** , entrez **ouvre le site Web du centre de développement SharePoint**.
 
 14. Dans la zone **URL** , entrez **https://docs.microsoft.com/sharepoint/dev/** , puis choisissez le bouton **Terminer** .
 

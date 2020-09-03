@@ -21,16 +21,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 676a4ef2570873998f3ebc890e06d6d5ccae4cf2
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75852425"
 ---
 # <a name="debug-css-styles-using-dom-explorer"></a>Déboguer les styles CSS avec l’explorateur DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content. png « windows_and_phone_content »)  
+S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.png « windows_and_phone_content »)  
   
  Quand vous déboguez des applications Windows Store, des applications Windows Phone Store et des applications créées avec Visual Studio Tools pour Apache Cordova, vous pouvez afficher et modifier les règles CSS pour les éléments DOM sélectionnés et leurs éléments enfants.  
   
@@ -48,7 +48,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content. 
 - Utilisez l’onglet **Modifications** (applications Windows Store et Windows Phone Store uniquement) pour identifier et suivre les styles CSS modifiés au cours d’une session de débogage.  
   
 > [!TIP]
-> Les modifications que vous effectuez sous les onglets **Styles** et **Calculé** ne sont pas définitives. Elles ne sont pas conservées quand vous arrêtez le débogage. Pour modifier le code source et recharger les pages sans arrêter ni redémarrer le débogueur, actualisez votre application à l’aide du bouton ![Actualiser l’application Windows](../debugger/media/js-refresh.png "JS_Refresh") (**Actualiser**l’application Windows) dans la barre d’outils **Déboguer** (applications du Windows Store et Windows Phone Store uniquement). Pour plus d’informations, consultez [actualiser une application (JavaScript)](../debugger/refresh-an-app-javascript.md).  
+> Les modifications que vous effectuez sous les onglets **Styles** et **Calculé** ne sont pas définitives. Elles ne sont pas conservées quand vous arrêtez le débogage. Pour modifier le code source et recharger les pages sans arrêter ni redémarrer le débogueur, actualisez votre application à l’aide du bouton  ![Actualiser l’application Windows](../debugger/media/js-refresh.png "JS_Refresh") (**Actualiser**l’application Windows) dans la barre d’outils **Déboguer** (applications du Windows Store et Windows Phone Store uniquement). Pour plus d’informations, consultez [actualiser une application (JavaScript)](../debugger/refresh-an-app-javascript.md).  
   
 ## <a name="example-of-fixing-a-css-rule"></a>Exemple de définition d’une règle CSS  
  Cet exemple montre comment examiner les règles CSS et déboguer un problème de style. Pour cet exemple, supposons que vous souhaitez modifier la couleur d’une police utilisée pour afficher les titres de groupe dans le modèle Application partagée [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] .  
@@ -91,7 +91,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content. 
   
 4. Sélectionnez **Simulateur** dans la liste déroulante de la barre d’outils **Déboguer** (**Ordinateur local** est la valeur par défaut).  
   
-     ![Sélectionner la liste de cibles de débogage](../debugger/media/js-select-target.png "JS_Select_Target")  
+     ![Sélectionner la liste cible de débogage](../debugger/media/js-select-target.png "JS_Select_Target")  
   
 5. Appuyez sur F5 pour exécuter l’application en mode débogage :  
   
@@ -100,14 +100,14 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content. 
     > [!TIP]
     > Une fois que l’application s’affiche dans le simulateur, positionnez le simulateur en regard de la fenêtre Visual Studio afin de pouvoir afficher immédiatement les résultats de vos sélections et des modifications que vous apportez aux styles CSS.  
   
-6. Passez dans Visual Studio et cliquez sur **Sélectionner un élément** dans l’explorateur DOM (ou appuyez sur Ctrl+B). Le mode de sélection est alors modifié pour vous permettre de sélectionner un élément en cliquant dessus, et l’application est mise au premier plan. Le mode est restauré à la suite d’un seul clic. Le bouton **Sélectionner un élément** se présente comme suit : ![Bouton Sélectionner un élément dans l’Explorateur DOM](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button")  
+6. Passez dans Visual Studio et cliquez sur **Sélectionner un élément** dans l’explorateur DOM (ou appuyez sur Ctrl+B). Le mode de sélection est alors modifié pour vous permettre de sélectionner un élément en cliquant dessus, et l’application est mise au premier plan. Le mode est restauré à la suite d’un seul clic. Le bouton **Sélectionner un élément** se présente comme suit : ![Bouton Sélection d'un élément dans l'explorateur DOM](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button")  
   
     > [!TIP]
     > Vous pouvez également sélectionner des éléments HTML directement dans l’explorateur DOM. Pour plus d’informations sur la sélection des éléments, consultez [démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md).  
   
 7. Dans le simulateur, amenez le pointeur au-dessus du titre du premier élément dans la liste, **Titre de groupe : 1**, dans le volet gauche de la page d’accueil. Le titre est mis en surbrillance, comme illustré ci-après :  
   
-     ![Utilisation du bouton Sélectionner un élément](../debugger/media/js-css-select-element.png "JS_CSS_Select_Element")  
+     ![Utilisation du bouton Sélection d'un élément](../debugger/media/js-css-select-element.png "JS_CSS_Select_Element")  
   
     > [!NOTE]
     > L’émulateur Windows Phone ne prend en charge que partiellement la mise en surbrillance des éléments par pointage.  
@@ -120,7 +120,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content. 
   
      Quand vous sélectionnez l’élément H4 dans l’explorateur DOM, les onglets de l’explorateur DOM affichent désormais les règles associées à ce même élément. L’onglet **Calculé** est illustré ici, avec la propriété `color` ouverte :  
   
-     ![Onglet suivi des styles dans l’Explorateur DOM](../debugger/media/js-css-styles.png "JS_CSS_Styles")  
+     ![Onglet Suivre les styles dans l'explorateur DOM](../debugger/media/js-css-styles.png "JS_CSS_Styles")  
   
      Cette vue fournit des informations utiles sur les règles associées au style `color` , notamment :  
   
@@ -136,17 +136,17 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content. 
   
 9. Décochez la case de la première occurrence du style `color` , qui se rapporte au sélecteur `.itemspage .itemslist .item .item-overlay .item-title` . Désormais, dans le simulateur, vous constatez que la couleur de tous les titres des éléments devient orange, comme nous le souhaitions, et que le sélecteur que nous avons modifié dans CSS, `.itemspage .itemslist .item`, n’est plus remplacé (autrement dit, son texte n’est plus barré). Voici l’onglet **Calculé** une fois la case décochée.  
   
-     ![Onglet calculé après la mise à jour du style CSS](../debugger/media/js-css-styles-fixed.png "JS_CSS_Styles_Fixed")  
+     ![Onglet Calculé après la mise à jour du style CSS](../debugger/media/js-css-styles-fixed.png "JS_CSS_Styles_Fixed")  
   
 10. Sélectionnez l’onglet **Modifications** .  
   
      Utilisez l’onglet **Modifications** pour identifier et suivre les modifications de style effectuées au cours d’une session de débogage. L’illustration suivante présente le sélecteur `.itemspage .itemslist .item .item-overlay .item-title` sous l’onglet **Modifications** , qui est à présent remplacé.  
   
-     ![Onglet modifications de l’Explorateur DOM](../debugger/media/js-css-styles-changes.png "JS_CSS_Styles_Changes")  
+     ![Onglet Modifications de l'explorateur DOM](../debugger/media/js-css-styles-changes.png "JS_CSS_Styles_Changes")  
   
 11. Vous pouvez également modifier manuellement des valeurs de style CSS et voir le résultat immédiat obtenu à l’aide de l’onglet **Styles** .  
   
-12. Sélectionnez l’onglet **Styles** .  
+12. Sélectionnez l’onglet **Styles**.  
   
 13. Ouvrez le sélecteur de style `.itemspage .itemslist .item .item-overlay .item-title` .  
   
@@ -154,7 +154,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content. 
   
 15. Utilisez le clavier pour modifier cette valeur. Remplacez-la par `rgb(255, 255, 0, 0.87)`et appuyez sur Entrée. Les couleurs des titres des éléments dans le simulateur deviennent jaunes.  
   
-16. Pour apporter des modifications au fichier CSS source, cliquez sur le lien **Items. CSS** sous l’onglet **styles** . Cela ouvre Items. CSS, dans lequel vous pouvez modifier la valeur du style de `color` dans le code de votre application. Pour actualiser l’application sans arrêter et redémarrer le débogueur, cliquez sur le bouton ![Actualiser l’application Windows](../debugger/media/js-refresh.png "JS_Refresh") (**Actualiser l’application Windows**) dans la barre d’outils **Déboguer** .  
+16. Pour apporter des modifications au fichier CSS source, cliquez sur le lien **Items. CSS** sous l’onglet **styles** . Cela ouvre Items. CSS, dans lequel vous pouvez modifier la valeur du `color` style dans le code de votre application. Pour actualiser l’application sans arrêter et redémarrer le débogueur, cliquez sur le bouton  ![Actualiser l’application Windows](../debugger/media/js-refresh.png "JS_Refresh") (**Actualiser l’application Windows**) dans la barre d’outils **Déboguer** .  
   
 ## <a name="see-also"></a>Voir aussi  
  [Démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md)   

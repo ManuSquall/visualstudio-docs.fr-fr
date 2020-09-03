@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f85ff51b93383d2deca409a00a3db130d52b5003
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72645414"
 ---
 # <a name="how-to-build-to-a-common-output-directory"></a>Comment : générer un répertoire de sortie commun
@@ -29,7 +29,7 @@ Par défaut, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] génère chaque projet
 
 1. Cliquez sur un projet dans la solution.
 
-2. Dans le menu **Projet**, cliquez sur **Propriétés**.
+2. Dans le menu **Projet** , cliquez sur **Propriétés**.
 
 3. En fonction du type de projet, cliquez sur l’onglet **Compiler** ou sur l’onglet **Générer**, puis définissez comme **Chemin de sortie** un dossier à utiliser pour tous les projets de la solution.
 

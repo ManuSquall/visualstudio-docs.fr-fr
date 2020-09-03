@@ -12,10 +12,10 @@ caps.latest.revision: 24
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2f6936811ea753d66d212facdda627930fb1ab10
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672127"
 ---
 # <a name="testing-a-large-application-with-multiple-ui-maps"></a>Test d'une grande application avec plusieurs mappages d'IU
@@ -23,11 +23,11 @@ ms.locfileid: "72672127"
 
 Cette rubrique explique comment utiliser des tests codés de l'interface utilisateur quand vous testez une grande application à l'aide de plusieurs mappages d'interface utilisateur.
 
- **Prérequis**
+ **Configuration requise**
 
 - Visual Studio Enterprise
 
-  Lorsque vous créez un test codé de l’interface utilisateur, l’infrastructure de test [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] génère du code pour le test par défaut dans une classe [UIMap](/previous-versions/dd580454(v=vs.140)) . Pour plus d’informations sur l’enregistrement des tests codés de l’interface utilisateur, consultez [Création de tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) et [Anatomie d’un test codé de l’interface utilisateur](../test/anatomy-of-a-coded-ui-test.md).
+  Lorsque vous créez un test codé de l’interface utilisateur, l' [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] infrastructure de test génère du code pour le test par défaut dans une classe [UIMap](/previous-versions/dd580454(v=vs.140)) . Pour plus d’informations sur l’enregistrement des tests codés de l’interface utilisateur, consultez [Création de tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) et [Anatomie d’un test codé de l’interface utilisateur](../test/anatomy-of-a-coded-ui-test.md).
 
   Le code généré pour le mappage d'IU contient une classe pour chaque objet avec lequel le test interagit. Pour chaque méthode générée, une classe compagnon pour les paramètres de méthode est générée spécifiquement pour cette méthode. S'il existe un grand nombre d'objets, de pages, de formulaires et de contrôles dans votre application, le mappage d'IU peut devenir très grand. De plus, si plusieurs personnes travaillent sur des tests, l'application devient complexe avec un seul fichier de mappage d'IU de grande taille.
 
@@ -50,7 +50,7 @@ Cette rubrique explique comment utiliser des tests codés de l'interface utilisa
 
 #### <a name="to-add-a-ui-map-to-your-coded-ui-test-project"></a>Pour ajouter un mappage d'IU à votre projet de test codé de l'interface utilisateur
 
-1. Dans l’**Explorateur de solutions**, pour créer un dossier dans votre projet de test codé de l’interface utilisateur où stocker tous les mappages d’IU, cliquez avec le bouton droit sur le fichier de projet de test codé de l’interface utilisateur, pointez sur **Ajouter**, puis choisissez **Nouveau dossier**. Par exemple, vous pourriez le nommer `UIMaps`.
+1. Dans **Explorateur de solutions**, pour créer un dossier dans votre projet de test codé de l’interface utilisateur pour stocker tous les mappages d’IU, cliquez avec le bouton droit sur le fichier projet de test codé de l’interface utilisateur, pointez sur **Ajouter** , puis choisissez **nouveau dossier**. Par exemple, vous pourriez le nommer `UIMaps`.
 
     Le nouveau dossier apparaît sous le projet de test codé de l’interface utilisateur.
 
@@ -65,7 +65,7 @@ Cette rubrique explique comment utiliser des tests codés de l'interface utilisa
 
     Dans la zone **Nom**, entrez le nom du nouveau mappage d’IU. Utilisez le nom du composant ou de la page que représentera le mappage, par exemple `HomePageMap`.
 
-4. Sélectionnez **Ajouter**.
+4. Choisissez **Ajouter**.
 
     La fenêtre [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] est réduite et la boîte de dialogue **Générateur de test codé de l’interface utilisateur** s’affiche.
 
@@ -142,6 +142,6 @@ namespace ContosoProject
 
 - [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.BrowserWindow.CopyFrom%2A>
-- [Utiliser l’automatisation de l’interface utilisateur pour tester votre code](../test/use-ui-automation-to-test-your-code.md)
+- [Utiliser UI Automation pour tester votre code](../test/use-ui-automation-to-test-your-code.md)
 - [Création de tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)
-- [Anatomie d’un test codé de l’interface utilisateur](../test/anatomy-of-a-coded-ui-test.md)
+- [Anatomie d'un test codé de l'interface utilisateur](../test/anatomy-of-a-coded-ui-test.md)
