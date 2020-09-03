@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 5685ad7a760e00392b5f9684cdf399ee320d4a0c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85540255"
 ---
 # <a name="ca1412-mark-comsource-interfaces-as-idispatch"></a>CA1412 : Marquer les interfaces ComSource comme IDispatch
@@ -32,11 +32,11 @@ ms.locfileid: "85540255"
 |Category|Microsoft. Interoperability|
 |Modification avec rupture|Rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Un type est marqué avec l' <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute> attribut et au moins une interface spécifiée n’est pas marquée avec l' <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> attribut défini sur la `InterfaceIsDispatch` valeur.
 
 ## <a name="rule-description"></a>Description de la règle
- <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute>est utilisé pour identifier les interfaces d’événement qu’une classe expose aux clients COM (Component Object Model). Ces interfaces doivent être exposées comme `InterfaceIsIDispatch` pour permettre à Visual Basic 6 clients com de recevoir des notifications d’événements. Par défaut, si une interface n’est pas marquée avec l' <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> attribut, elle est exposée en tant qu’interface double.
+ <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute> est utilisé pour identifier les interfaces d’événement qu’une classe expose aux clients COM (Component Object Model). Ces interfaces doivent être exposées comme `InterfaceIsIDispatch` pour permettre à Visual Basic 6 clients com de recevoir des notifications d’événements. Par défaut, si une interface n’est pas marquée avec l' <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> attribut, elle est exposée en tant qu’interface double.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, ajoutez ou modifiez l' <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> attribut afin que sa valeur soit définie sur InterfaceIsIDispatch pour toutes les interfaces spécifiées avec l' <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute> attribut.

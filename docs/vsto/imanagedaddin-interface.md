@@ -13,16 +13,16 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b436d76164b1744cffe16593149f64d219d04bf1
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541126"
 ---
 # <a name="imanagedaddin-interface"></a>interface IManagedAddin
   Implémentez l’interface IManagedAddin pour créer un composant qui charge les compléments VSTO managés. Cette interface a été ajoutée au système 2007 Microsoft Office.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Syntaxe
 
 ```csharp
 [
@@ -48,7 +48,7 @@ interface IManagedAddin : IUnknown
 |[IManagedAddIn::Load](../vsto/imanagedaddin-load.md)|Appelée quand une application Microsoft Office charge un complément VSTO géré.|
 |[IManagedAddin::Unload](../vsto/imanagedaddin-unload.md)|Appelée juste avant qu’une application Microsoft Office décharge un complément VSTO géré.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Microsoft Office les applications, en commençant par le système 2007 Microsoft Office, utilisez l’interface IManagedAddin pour faciliter le chargement des compléments VSTO Office. Vous pouvez implémenter l’interface IManagedAddin pour créer votre propre chargeur et Runtime de complément VSTO pour les compléments VSTO managés, au lieu d’utiliser le chargeur de complément VSTO (*VSTOLoader.dll*) et [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] . Pour plus d'informations, consultez [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).
 
 ## <a name="how-managed-add-ins-are-loaded"></a>Mode de chargement des compléments gérés

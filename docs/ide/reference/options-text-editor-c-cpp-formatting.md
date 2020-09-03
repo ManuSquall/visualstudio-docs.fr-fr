@@ -17,10 +17,10 @@ manager: markl
 ms.workload:
 - cplusplus
 ms.openlocfilehash: d7a6029058ab0bc02a623df0e1733eb8548102d5
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75596253"
 ---
 # <a name="options-text-editor-cc-formatting"></a>Options, Éditeur de texte, C/C++, Mise en forme
@@ -40,7 +40,7 @@ Cette page propose des options pour mettre en forme des instructions et des bloc
 
 ::: moniker range="vs-2017"
 
-**Visual Studio 2017 version 15.7 et plus tard**:
+**Visual Studio 2017 version 15,7 et versions ultérieures**:
 
 ::: moniker-end
 
@@ -50,7 +50,7 @@ la page comporte également des options pour la configuration de la prise en cha
 
 ::: moniker range="vs-2017"
 
-**Visual Studio 2017 version 15.7 et plus tard**:
+**Visual Studio 2017 version 15,7 et versions ultérieures**:
 
 ::: moniker-end
 
@@ -64,5 +64,5 @@ Ces pages permettent d’effectuer diverses personnalisations de mise en forme, 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Général, Environnement, Options Dialog Box](../../ide/reference/general-environment-options-dialog-box.md)
-- [Using IntelliSense](../../ide/using-intellisense.md)
+- [Général, environnement, boîte de dialogue Options](../../ide/reference/general-environment-options-dialog-box.md)
+- [Utilisation d’IntelliSense](../../ide/using-intellisense.md)

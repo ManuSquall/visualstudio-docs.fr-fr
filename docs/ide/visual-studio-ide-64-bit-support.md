@@ -12,15 +12,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e3cd670eed61f510998599276e3a44fc7647777b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75594134"
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Prise en charge de l’IDE Visual Studio 64 bits
 
-Visual Studio vous permet de configurer vos applications pour cibler différentes plateformes, notamment des plateformes 64 bits. Pour plus d’informations sur le support de la plate-forme 64 bits dans Visual Studio, voir [applications 64 bits](/dotnet/framework/64-bit-apps).
+Visual Studio vous permet de configurer vos applications pour cibler différentes plateformes, notamment des plateformes 64 bits. Pour plus d’informations sur la prise en charge de la plateforme 64 bits dans Visual Studio, consultez [applications 64 bits](/dotnet/framework/64-bit-apps).
 
 ## <a name="deploy-a-64-bit-application"></a>Déployer une application 64 bits
 
@@ -28,9 +28,9 @@ Visual Studio vous permet de configurer vos applications pour cibler différente
 
 ## <a name="configure-projects-as-64-bit-applications"></a>Configurer des projets en tant qu’applications 64 bits
 
-[Comment : Configurer des projets pour cibler les plates-formes](../ide/how-to-configure-projects-to-target-platforms.md) discute des projets configurants à construire en tant qu’applications 64 bits.
+[Comment : configurer des projets pour cibler des plateformes](../ide/how-to-configure-projects-to-target-platforms.md) traite de la configuration de projets à générer en tant qu’applications 64 bits.
 
 ## <a name="debug-a-64-bit-application"></a>Déboguer une application 64 bits
 
-- [Applications Debug 64 bits](../debugger/debug-64-bit-applications.md)
+- [Déboguer des applications 64 bits](../debugger/debug-64-bit-applications.md)
 - [Utiliser des fichiers dump](../debugger/using-dump-files.md)

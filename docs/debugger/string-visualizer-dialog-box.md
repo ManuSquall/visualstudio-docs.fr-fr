@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 10e7e50ffc0cb61bd036bef65c554e8147eecc09
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72430822"
 ---
 # <a name="string-visualizer-dialog-box"></a>Visualiseur de chaîne, boîte de dialogue
@@ -38,7 +38,7 @@ Le visualiseur de chaîne intégré comprend des options de texte brut, XML, HTM
 
 Pour ouvrir le visualiseur de chaîne, vous devez être suspendu pendant le débogage. Pointez sur une variable qui a une valeur de chaîne en texte brut, XML, HTML ou JSON, puis sélectionnez l’icône de loupe ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "Icône de visualiseur").
 
-## <a name="uielement-list"></a>Liste UIElement
+## <a name="uielement-list"></a>Liste des éléments de l'interface utilisateur
 
 Champ **expression** affiche la variable ou l’expression sur laquelle pointe le pointage.
 
@@ -64,5 +64,5 @@ Une chaîne HTML correcte s’affiche comme si elle était rendue dans un naviga
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Créer des visualiseurs personnalisésC#(, Visual Basic)](../debugger/create-custom-visualizers-of-data.md)
+- [Créer des visualiseurs personnalisés (C#, Visual Basic)](../debugger/create-custom-visualizers-of-data.md)
 - [Visualisations de données dans Visual Studio pour Mac](/visualstudio/mac/data-visualizations)

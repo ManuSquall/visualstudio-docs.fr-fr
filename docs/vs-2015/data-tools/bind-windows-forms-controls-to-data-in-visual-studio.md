@@ -24,10 +24,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8a03f4df57b216fa68e5ac24df80b67917aa3e3f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672984"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Lier des contrôles Windows Forms à des données dans Visual Studio
@@ -39,7 +39,7 @@ Vous pouvez afficher des données pour les utilisateurs de votre application en 
 
  Pour obtenir des informations générales sur la création de contrôles liés aux données dans Visual Studio, consultez [lier des contrôles à des données dans Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Pour plus d’informations sur la liaison de données dans Windows Forms, consultez [Windows Forms la liaison de données](https://msdn.microsoft.com/library/c3826d8e-ea25-4ad4-a669-45bfb19192aa).
 
-## <a name="in-this-section"></a>Dans cette section
+## <a name="in-this-section"></a>Contenu de cette section
 
 - [Lier des contrôles Windows Forms à des données](../data-tools/bind-windows-forms-controls-to-data.md)
 
@@ -58,13 +58,13 @@ Vous pouvez afficher des données pour les utilisateurs de votre application en 
 - [Passer des données entre des formulaires](../data-tools/pass-data-between-forms.md)
 
 ## <a name="bindingsource-component"></a>BindingSource (composant)
- Le composant <xref:System.Windows.Forms.BindingSource> remplit deux fonctions. Tout d’abord, il fournit une couche d’abstraction lors de la liaison des contrôles sur votre formulaire à des données. Les contrôles du formulaire sont liés au composant <xref:System.Windows.Forms.BindingSource> (au lieu d’être liés directement à une source de données).
+ Le composant <xref:System.Windows.Forms.BindingSource> remplit deux fonctions. Tout d’abord, il fournit une couche d’abstraction lors de la liaison des contrôles sur votre formulaire à des données. Les contrôles du formulaire sont liés au <xref:System.Windows.Forms.BindingSource> composant (au lieu d’être liés directement à une source de données).
 
- Deuxièmement, il peut gérer une collection d’objets. L’ajout d’un type à l' <xref:System.Windows.Forms.BindingSource> crée une liste de ce type.
+ Deuxièmement, il peut gérer une collection d’objets. L’ajout d’un type à <xref:System.Windows.Forms.BindingSource> crée une liste de ce type.
 
- Pour plus d’informations sur le composant <xref:System.Windows.Forms.BindingSource>, consultez :
+ Pour plus d’informations sur le <xref:System.Windows.Forms.BindingSource> composant, consultez :
 
-- [BindingSource, composant](https://msdn.microsoft.com/library/3e2faf4c-f5b8-4fa6-9fbc-f59c37ec2fb9)
+- [Composant BindingSource](https://msdn.microsoft.com/library/3e2faf4c-f5b8-4fa6-9fbc-f59c37ec2fb9)
 
 - [Vue d'ensemble du composant BindingSource](https://msdn.microsoft.com/library/be838caf-fcb0-4b68-827f-58b2c04b747f)
 
@@ -74,7 +74,7 @@ Vous pouvez afficher des données pour les utilisateurs de votre application en 
  Ce composant fournit une interface utilisateur permettant de parcourir les données affichées par une application Windows. Pour plus d'informations, consultez [BindingNavigator, contrôle](https://msdn.microsoft.com/library/18c1e2a5-9834-40d3-9b2e-2b545e4e769e).
 
 ## <a name="datagridview-control"></a>DataGridView (contrôle)
- Pour afficher et modifier les données tabulaires de nombreux types de sources de données différents, utilisez le contrôle <xref:System.Windows.Forms.DataGridView>. Vous pouvez lier des données à un <xref:System.Windows.Forms.DataGridView> à l’aide de la propriété <xref:System.Windows.Forms.DataGridView.DataSource%2A>. Pour plus d’informations, consultez [vue d’ensemble du contrôle DataGridView](https://msdn.microsoft.com/library/0a45c661-89dc-4390-9cc6-c47eee501488).
+ Pour afficher et modifier les données tabulaires de nombreux types de sources de données différents, utilisez le <xref:System.Windows.Forms.DataGridView> contrôle. Vous pouvez lier des données à un à <xref:System.Windows.Forms.DataGridView> l’aide de la <xref:System.Windows.Forms.DataGridView.DataSource%2A> propriété. Pour plus d’informations, consultez [vue d’ensemble du contrôle DataGridView](https://msdn.microsoft.com/library/0a45c661-89dc-4390-9cc6-c47eee501488).
 
 ## <a name="see-also"></a>Voir aussi
  [Lier des contrôles à des données dans Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

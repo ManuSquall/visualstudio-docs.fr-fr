@@ -7,10 +7,10 @@ ms.date: 05/03/2018
 ms.technology: vs-ide-general
 ms.assetid: 61432695-5B12-4257-B250-48D37EED106D
 ms.openlocfilehash: d2ce3b3cdbf1a4cf1f19956a7327d73c0bb34b62
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72807149"
 ---
 # <a name="javascript-and-typescript-support"></a>Prise en charge de JavaScript et TypeScript
@@ -35,11 +35,11 @@ Dans la boîte de dialogue **Nouveau fichier**, sélectionnez **Web > Fichier JS
 
 Visual Studio pour Mac utilise [JavaScript Language Service](/visualstudio/ide/javascript-intellisense) pour fournir IntelliSense. Vous disposez ainsi de la saisie semi-automatique du code, d’informations sur les paramètres et de listes de membres quand vous écrivez du code.
 
-JavaScript IntelliSense dans Visual Studio pour Mac peut être basé sur des déclarations de type inférence, JSDoc ou TypeScript.
+JavaScript IntelliSense dans Visual Studio pour Mac peut être basé sur des déclarations d’inférence de type, de JSDoc ou d’une machine à écrire.
 
 - **Inférence de type** : le type d’un objet est déterminé par le contexte du code. Pour plus d’informations, consultez la section [IntelliSense basé sur l’inférence de type](/visualstudio/ide/javascript-intellisense#intellisense-based-on-type-inference) propre à Visual Studio.
 - **JSDoc** : il peut arriver que l’inférence de type ne fournisse pas les bonnes informations de type. Dans ces cas, les informations de type peuvent être fournies explicitement par les annotations [JSDoc](https://jsdoc.app/about-getting-started.html). Pour plus d’informations, consultez la section [IntelliSense basé sur JSDoc](/visualstudio/ide/javascript-intellisense#intellisense-based-on-jsdoc) (Visual Studio).
-- **Fichiers de déclaration TypeScript** - `.d.ts` fichiers sont utilisés pour fournir des valeurs pour JavaScript IntelliSense. Les types déclarés dans ce fichier peuvent être utilisés comme types dans les commentaires JSDoc. Pour plus d’informations, consultez la section [IntelliSense basé sur les fichiers de déclaration TypeScript](/visualstudio/ide/javascript-intellisense#intellisense-based-on-typescript-declaration-files) dans la documentation de Visual Studio.
+- **Fichiers de déclaration de machine à écrire** : `.d.ts` les fichiers sont utilisés pour fournir des valeurs pour JavaScript IntelliSense. Les types déclarés dans ce fichier peuvent être utilisés comme types dans les commentaires JSDoc. Pour plus d’informations, consultez la section [IntelliSense basé sur les fichiers de déclaration TypeScript](/visualstudio/ide/javascript-intellisense#intellisense-based-on-typescript-declaration-files) dans la documentation de Visual Studio.
 
     ![ajout d’un fichier de définition TypeScript](media/javascript-type-intellisense-2019.gif)
 

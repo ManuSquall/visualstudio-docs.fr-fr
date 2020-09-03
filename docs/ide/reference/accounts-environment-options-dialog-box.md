@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9ff457523024db49502ae982a390d9a7be6ba9dd
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595902"
 ---
 # <a name="accounts-environment-options-dialog-box"></a>Comptes, Environnement, boîte de dialogue Options
@@ -33,7 +33,7 @@ Lorsque cette option est sélectionnée, le comportement de Visual Studio change
 
 ## <a name="registered-azure-clouds"></a>Clouds Azure inscrits
 
-Cette section montre les instances de cloud Azure auxquelles vous avez accès via un ou plusieurs des comptes que vous utilisez pour vous connecter à Visual Studio. Par exemple, vous avez peut-être accès à une instance privée d’Azure dans le centre de données de votre entreprise. Ou, vous pourriez avoir accès à un cas souverain ou gouvernemental d’Azure comme Azure China 21 Vianet ou Azure U.S. Government. L’instance de cloud Azure globale s’affiche par défaut dans la liste, et vous ne pouvez pas la supprimer.
+Cette section montre les instances de cloud Azure auxquelles vous avez accès via un ou plusieurs des comptes que vous utilisez pour vous connecter à Visual Studio. Par exemple, vous avez peut-être accès à une instance privée d’Azure dans le centre de données de votre entreprise. Ou bien, vous pouvez avoir accès à une instance souverain ou gouvernementale d’Azure, par exemple Azure China 21 VIANET ou Azure US Government. L’instance de cloud Azure globale s’affiche par défaut dans la liste, et vous ne pouvez pas la supprimer.
 
 Inscrivez un cloud Azure supplémentaire en choisissant le bouton **Ajouter**. La boîte de dialogue **Ajouter un nouveau cloud Azure** répertorie plusieurs instances de cloud Azure connues auxquelles vous pouvez vous connecter, ou vous pouvez entrer l’URL d’un point de terminaison Azure privé.
 
@@ -44,6 +44,6 @@ Après avoir inscrit un cloud Azure supplémentaire, vous pouvez choisir le clou
 ## <a name="see-also"></a>Voir aussi
 
 - [Synchroniser les paramètres sur plusieurs ordinateurs](../synchronized-settings-in-visual-studio.md)
-- [Connexion à Visual Studio](../signing-in-to-visual-studio.md)
+- [Se connecter à Visual Studio](../signing-in-to-visual-studio.md)
 - [Utiliser plusieurs comptes d’utilisateur](../work-with-multiple-user-accounts.md)
 - [Paramètres d'environnement](../environment-settings.md)

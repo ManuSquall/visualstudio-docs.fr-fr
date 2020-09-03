@@ -13,22 +13,22 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bb39f1d395e48351aeacb587556224b0f86aac3e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75593783"
 ---
 # <a name="find-code-using-go-to-commands"></a>Rechercher du code à l’aide des commandes Atteindre
 
 Les commandes **Atteindre** de Visual Studio vous permettent d’effectuer une recherche ciblée dans votre code pour trouver rapidement des éléments spécifiques. Vous pouvez atteindre une ligne, un type, un symbole, un fichier ou un membre spécifique à partir d’une interface unifiée simple.
 
-## <a name="how-to-use-it"></a>Comment l’utiliser ?
+## <a name="how-to-use-it"></a>Comment l’utiliser
 
 Entrée | Fonction
 ------------ | ---
-**Clavier** | Appuyez sur **Ctrl**+**T** ou **Ctrl**+**,**
-**Souris** | Sélectionnez **Modifier** > **Go To** > **Go To All To All**
+**Clavier** | Appuyez sur **CTRL** + **T** ou **CTRL** + **,**
+**Souris** | Sélectionnez **modifier**  >  **atteindre**atteindre  >  **tout** .
 
 Une petite fenêtre s’affiche en haut à droite de votre éditeur de code.
 
@@ -44,7 +44,7 @@ Vous pouvez aussi entrer un point d’interrogation (**?**) pour obtenir une aid
 
 ## <a name="filtered-searches"></a>Recherches filtrées
 
-Par défaut, l’élément spécifié est recherché dans tous les éléments de solution. Toutefois, vous pouvez limiter votre recherche de code à des types d’éléments spécifiques en faisant précéder les termes de recherche de certains caractères. Vous pouvez également changer rapidement le filtre de recherche en choisissant des boutons sur la barre d’outils de la boîte de dialogue **Go To.** Les boutons qui changent les filtres de type se trouvent à gauche, et les boutons qui changent l’étendue de recherche se trouvent à droite.
+Par défaut, l’élément spécifié est recherché dans tous les éléments de solution. Toutefois, vous pouvez limiter votre recherche de code à des types d’éléments spécifiques en faisant précéder les termes de recherche de certains caractères. Vous pouvez également modifier rapidement le filtre de recherche en choisissant des boutons dans la barre d’outils de la boîte **de dialogue atteindre** . Les boutons qui changent les filtres de type se trouvent à gauche, et les boutons qui changent l’étendue de recherche se trouvent à droite.
 
 ![Atteindre des membres](../ide/media/vside_navigation_toolbar.png)
 
@@ -54,12 +54,12 @@ Pour limiter votre recherche à un type spécifique d’élément de code, vous 
 
 Préfixe | Icône | Raccourci | Description
 :-: | - | - | -
-:| ![Icône de ligne](media/gotoall-line-icon.png) | **Ctrl**+**G** | Atteindre le numéro de ligne spécifié
-f| ![Icône de fichiers](media/gotoall-files-icon.png) | **Ctrl**+**1**, **Ctrl**+**F** | Atteindre le fichier spécifié
-r| ![Icône de fichiers récents](media/gotoall-recent-files-icon.png) | **Ctrl**+**1**, **Ctrl**+**R** | Atteindre le fichier spécifié, récemment ouvert
-t| ![Icône de types](media/gotoall-types-icon.png) | **Ctrl**+**1**, **Ctrl**+**T** | Atteindre le type spécifié
-m| ![Icône de membres](media/gotoall-members-icon.png) | **Ctrl**+**1**, **Ctrl**+**M** | Atteindre le membre spécifié
-\#| ![Icône de symboles](media/gotoall-symbols-icon.png) | **Ctrl**+**1**, **Ctrl**+**S** | Atteindre le symbole spécifié
+:| ![Icône de ligne](media/gotoall-line-icon.png) | **CTRL** + **G** | Atteindre le numéro de ligne spécifié
+f| ![Icône de fichiers](media/gotoall-files-icon.png) | **CTRL** + **1**, **CTRL** + **F** | Atteindre le fichier spécifié
+r| ![Icône de fichiers récents](media/gotoall-recent-files-icon.png) | **CTRL** + **1**, **CTRL** + **R** | Atteindre le fichier spécifié, récemment ouvert
+t| ![Icône de types](media/gotoall-types-icon.png) | **CTRL** + **1**, **CTRL** + **T** | Atteindre le type spécifié
+m| ![Icône de membres](media/gotoall-members-icon.png) | **CTRL** + **1**, **CTRL** + **M** | Atteindre le membre spécifié
+\#| ![Icône de symboles](media/gotoall-symbols-icon.png) | **CTRL** + **1**, **CTRL** + **S** | Atteindre le symbole spécifié
 
 ### <a name="filter-to-a-specific-location"></a>Filtrer sur un emplacement spécifique
 
@@ -72,7 +72,7 @@ Icône | Description
 
 ## <a name="camel-casing"></a>Casse mixte
 
-Si vous utilisez une [casse mixte](https://en.wikipedia.org/wiki/Camel_case) dans votre code, vous pouvez trouver plus rapidement des éléments de code en entrant uniquement les lettres majuscules de leur nom. Par exemple, si votre code `CredentialViewModel`a un type appelé , vous pouvez réduire la recherche en choisissant le`CVM`filtre **type** (**t**) et en entrant ensuite seulement les lettres majuscules du nom ( ) dans la boîte de dialogue Go To. Cette fonctionnalité peut être particulièrement utile si votre code contient des noms longs.
+Si vous utilisez une [casse mixte](https://en.wikipedia.org/wiki/Camel_case) dans votre code, vous pouvez trouver plus rapidement des éléments de code en entrant uniquement les lettres majuscules de leur nom. Par exemple, si votre code a un type appelé `CredentialViewModel` , vous pouvez affiner la recherche en choisissant le filtre de **type** (**t**), puis en entrant uniquement les majuscules du nom ( `CVM` ) dans la boîte de dialogue atteindre. Cette fonctionnalité peut être particulièrement utile si votre code contient des noms longs.
 
 ![Fenêtre Naviguer vers - recherche en lettres capitales](../ide/media/vside_capitalsearch.png)
 
@@ -89,5 +89,5 @@ Centrer la fenêtre | Déplacer cette fenêtre pour qu’elle s’affiche en hau
 ## <a name="see-also"></a>Voir aussi
 
 - [Naviguer dans le code](../ide/navigating-code.md)
-- [Boîte de dialogue Go To Line](../ide/reference/go-to-line.md)
+- [Atteindre la ligne, boîte de dialogue](../ide/reference/go-to-line.md)
 - [Atteindre la définition et Aperçu de la définition](../ide/go-to-and-peek-definition.md)

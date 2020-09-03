@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 33e1cbd4b1c754498d7e2bd6c354e874ae8cdad5
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72450394"
 ---
 # <a name="view-strings-in-a-string-visualizer-in-visual-studio"></a>Afficher des chaînes dans un visualiseur de chaîne dans Visual Studio
@@ -66,5 +66,5 @@ Une chaîne HTML correcte s’affiche comme si elle était rendue dans un naviga
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Créer des visualiseurs personnalisésC#(, Visual Basic)](../debugger/create-custom-visualizers-of-data.md)
+- [Créer des visualiseurs personnalisés (C#, Visual Basic)](../debugger/create-custom-visualizers-of-data.md)
 - [Visualisations de données dans Visual Studio pour Mac](/visualstudio/mac/data-visualizations)

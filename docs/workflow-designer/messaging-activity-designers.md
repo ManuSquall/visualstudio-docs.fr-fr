@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f1b821b4e63f82233b3c2e92fa3f5c3481cda982
-ms.sourcegitcommit: 186c0c250d85ac74274fa1e438b4c7c7108d8a36
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86876188"
 ---
 # <a name="messaging-activity-designers"></a>Concepteurs d’activités de messagerie
@@ -39,7 +39,7 @@ Les rubriques contenues dans cette section et listées dans le tableau suivant f
 
 Pour les autres types de concepteurs d’activités, consultez les rubriques suivantes :
 
-- [Workflow de contrôle](../workflow-designer/control-flow-activity-designers.md)
+- [Flux de contrôle](../workflow-designer/control-flow-activity-designers.md)
 
 - [Utilisation des concepteurs d'activités](control-flow-activity-designers.md)
 

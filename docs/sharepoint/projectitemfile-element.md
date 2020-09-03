@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: d1c9814498d74a5d1a6533576f1071b4bf7deb57
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539852"
 ---
 # <a name="projectitemfile-element"></a>ProjectItemFile (élément)
@@ -53,7 +53,7 @@ ms.locfileid: "85539852"
 |-------------|-----------------|
 |[Fichiers](../sharepoint/files-element.md)|Spécifie les fichiers à inclure dans l’élément de projet SharePoint lorsqu’il est déployé sur SharePoint.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Les fichiers SharePoint qui sont généralement référencés dans les éléments **ProjectItemFile** incluent des fichiers d’éléments de fonctionnalité (*Elements.xml*), des fichiers de schéma pour les définitions de listes (*Schema.xml*) et des fichiers de définition de composant WebPart pour composants WebPart (*. WebPart*).
 
 ## <a name="element-information"></a>Informations sur les éléments

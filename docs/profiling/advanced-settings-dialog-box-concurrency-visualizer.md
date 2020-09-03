@@ -11,16 +11,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fa9d6658ae14c4b84aae9361f73e4701e758f975
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72911220"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Paramètres avancés, boîte de dialogue (visualiseur concurrentiel)
 La boîte de dialogue **Paramètres avancés** du visualiseur concurrentiel vous permet de contrôler la façon dont les traces sont collectées.  La boîte de dialogue comprend des onglets pour les symboles, « Uniquement mon code », la mise en mémoire tampon, le filtrage, les événements du CLR, les marqueurs, les fournisseurs et les fichiers.
 
-## <a name="symbols"></a>Symboles
+## <a name="symbols"></a>symboles
  Le visualiseur concurrentiel utilise les mêmes paramètres de symboles que le débogueur Visual Studio. Le visualiseur concurrentiel utilise les paramètres pour résoudre les piles d’appels associées aux données de performance.  Quand il traite des traces, le visualiseur concurrentiel accède aux serveurs de symboles spécifiés dans la page des paramètres.  Si ces données sont accessibles sur un réseau, le traitement des traces ralentit.  Pour réduire la durée nécessaire à la résolution des symboles, vous pouvez les mettre en cache localement. Si les symboles ont été téléchargés, Visual Studio les charge à partir du cache local.
 
 ## <a name="just-my-code"></a>Uniquement mon code
@@ -58,7 +58,7 @@ La boîte de dialogue **Paramètres avancés** du visualiseur concurrentiel vous
 ### <a name="add-a-new-provider"></a>Ajouter un nouveau fournisseur
  Si votre code utilise le [SDK du visualiseur concurrentiel](../profiling/concurrency-visualizer-sdk.md) ou génère des événements ETW qui respectent la convention <xref:System.Diagnostics.Tracing.EventSource>, vous pouvez afficher ces événements dans le visualiseur concurrentiel en les inscrivant dans cette boîte de dialogue.
 
- Dans le champ **Nom,** entrez un nom qui décrit les types d’événements générés par le fournisseur.  Dans le champ **GUID**, entrez le GUID associé à ce fournisseur. (Un GUID est associé à chaque fournisseur ETW.)
+ Dans le champ **nom** , entrez un nom qui décrit les types d’événements qui sont générés par le fournisseur.  Dans le champ **GUID**, entrez le GUID associé à ce fournisseur. (Un GUID est associé à chaque fournisseur ETW.)
 
  Vous pouvez éventuellement indiquer si vous souhaitez filtrer les événements de ce fournisseur selon la catégorie ou le niveau d’importance.  Vous pouvez utiliser le champ Catégorie pour filtrer les événements en fonction des catégories du kit SDK du visualiseur concurrentiel.  Pour cela, entrez une chaîne délimitée par des virgules de catégories ou de plages de catégories.  Cela permet de spécifier les catégories d’événements dans le fournisseur actif à afficher.  Si vous ajoutez un fournisseur <xref:System.Diagnostics.Tracing.EventSource>, vous pouvez utiliser le champ Catégorie pour filtrer les événements par mot clé ETW.  Étant donné que le mot clé est un masque de bits, vous pouvez utiliser une chaîne d’entiers délimitée par des virgules pour spécifier les bits définis dans le masque. Par exemple, « 1,2 » définit les premier et deuxième bits, ce qui se traduit par 6 au format décimal.
 

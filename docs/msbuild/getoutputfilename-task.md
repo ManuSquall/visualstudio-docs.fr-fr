@@ -18,10 +18,10 @@ ms.author: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: d66a7be3751e74ff75787ef194f90da1dcd1d3ce
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75593289"
 ---
 # <a name="getoutputfilename-task"></a>Tâche GetOutputFileName
@@ -34,10 +34,10 @@ Le tableau ci-dessous décrit les paramètres de la tâche **GetOutputFileName**
 
 |Paramètre|Description|
 |---------------|-----------------|
-|**OutputExtension**|Paramètre **de chaîne** requis.|
-|**Outputfile**|Paramètre de sortie de **chaîne** facultatif.|
-|**Outputpath**|Paramètre **de chaîne** facultatif.|
-|**SourceFile (en)**|Paramètre **de chaîne** requis.|
+|**OutputExtension**|Paramètre de **chaîne** obligatoire.|
+|**OutputFile**|Paramètre de sortie de **chaîne** facultatif.|
+|**OutputPath**|Paramètre de **chaîne** facultatif.|
+|**SourceFile**|Paramètre de **chaîne** obligatoire.|
 
 ## <a name="see-also"></a>Voir aussi
 

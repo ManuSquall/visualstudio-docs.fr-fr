@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1990377bffe0c663a70520c07bd3ab60b91f8bbd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75593484"
 ---
 # <a name="writing-a-t4-text-template"></a>Écriture d'un modèle de texte T4
-Un modèle de texte contient le texte qui sera généré à partir du modèle. Par exemple, un modèle qui crée une page Web contiendra «\<> HTML... » et toutes les autres parties standard d’une page HTML. Les *blocs de contrôle*, qui sont des fragments de code de programme, sont insérés dans le modèle. Les blocs de contrôle fournissent des valeurs variables et permettent à certaines parties du texte d'être conditionnelles et répétées.
+Un modèle de texte contient le texte qui sera généré à partir du modèle. Par exemple, un modèle qui crée une page Web contiendra « \<html> ... » et toutes les autres parties standard d’une page HTML. Les *blocs de contrôle*, qui sont des fragments de code de programme, sont insérés dans le modèle. Les blocs de contrôle fournissent des valeurs variables et permettent à certaines parties du texte d'être conditionnelles et répétées.
 
  Cette structure simplifie le développement de modèle, car vous pouvez commencer avec un prototype du fichier généré et insérer de manière incrémentielle des blocs de contrôle qui font varier le résultat.
 
@@ -178,7 +178,7 @@ private void WriteSquareLine(int i)
 
 ## <a name="using-external-definitions"></a>Utilisation de définitions externes
 
-### <a name="assemblies"></a>Assemblies
+### <a name="assemblies"></a>Assemblys
  Les blocs de code de votre modèle peuvent utiliser des types définis par les assemblys .NET les plus fréquemment utilisés tels que System.dll. De plus, vous pouvez faire référence à d'autres assemblys .NET ou à vos propres assemblys. Vous pouvez fournir un nom de chemin d’accès ou le nom fort d’un assembly :
 
 ```
@@ -195,7 +195,7 @@ private void WriteSquareLine(int i)
 
  Pour plus d’informations, consultez [directive d’assembly T4](../modeling/t4-assembly-directive.md).
 
-### <a name="namespaces"></a>Espaces de noms des
+### <a name="namespaces"></a>Espaces de noms
  La directive import est identique à la clause `using` en C# ou à la clause `imports` en Visual Basic. Elle vous permet de faire référence à des types dans votre code sans utiliser de nom qualifié complet :
 
 ```
@@ -206,7 +206,7 @@ private void WriteSquareLine(int i)
 
  Pour plus d’informations, consultez [directive import T4](../modeling/t4-import-directive.md).
 
-### <a name="Include"></a>Inclusion de code et de texte
+### <a name="including-code-and-text"></a><a name="Include"></a> Inclusion de code et de texte
  La directive `include` insère du texte à partir d'un autre fichier de modèle. Par exemple, cette directive insère le contenu de `test.txt`.
 
 ```
@@ -236,12 +236,12 @@ private void WriteSquareLine(int i)
 <# string fileContent = File.ReadAllText(@"C:\myData.txt"); ...
 ```
 
- **Chargez un fichier en tant que modèle navigable**. Une méthode plus puissante consiste à lire les données en tant que modèle navigable par votre code de modèle de texte. Par exemple, vous pouvez charger un fichier XML et le parcourir avec des expressions XPath. Vous pouvez également utiliser [xsd. exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe) pour créer un ensemble de classes avec lequel vous pouvez lire les données XML.
+ **Chargez un fichier en tant que modèle navigable**. Une méthode plus puissante consiste à lire les données en tant que modèle navigable par votre code de modèle de texte. Par exemple, vous pouvez charger un fichier XML et le parcourir avec des expressions XPath. Vous pouvez également utiliser [xsd.exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe) pour créer un ensemble de classes avec lequel vous pouvez lire les données XML.
 
- **Modifiez le fichier de modèle dans un diagramme ou un formulaire.** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] fournit des outils qui vous permettent de modifier un modèle en tant que diagramme ou Windows Form. Il est ainsi plus facile de discuter du modèle avec les utilisateurs de l'application générée. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] crée également un ensemble de classes fortement typées qui reflètent la structure du modèle. Pour plus d’informations, consultez [génération de code à partir d’un langage spécifique à un domaine](../modeling/generating-code-from-a-domain-specific-language.md).
+ **Modifiez le fichier de modèle dans un diagramme ou un formulaire.** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] fournit des outils qui vous permettent de modifier un modèle en tant que diagramme ou formulaire Windows. Il est ainsi plus facile de discuter du modèle avec les utilisateurs de l'application générée. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] crée également un ensemble de classes fortement typées qui reflètent la structure du modèle. Pour plus d’informations, consultez [génération de code à partir d’un langage spécifique à un domaine](../modeling/generating-code-from-a-domain-specific-language.md).
 
 ### <a name="relative-file-paths-in-design-time-templates"></a>Chemins d’accès de fichiers relatifs dans les modèles au moment du design
- Dans un [modèle de texte au moment du design](../modeling/design-time-code-generation-by-using-t4-text-templates.md), si vous souhaitez faire référence à un fichier à un emplacement relatif au modèle de texte, utilisez `this.Host.ResolvePath()`. Vous devez aussi définir `hostspecific="true"` dans la directive `template` :
+ Dans un [modèle de texte au moment du design](../modeling/design-time-code-generation-by-using-t4-text-templates.md), si vous souhaitez faire référence à un fichier à un emplacement relatif au modèle de texte, utilisez `this.Host.ResolvePath()` . Vous devez aussi définir `hostspecific="true"` dans la directive `template` :
 
 ```
 <#@ template hostspecific="true" language="C#" #>
@@ -270,9 +270,9 @@ Vous pouvez également obtenir d'autres services fournis par l'hôte. Pour plus 
 
 |Tâche|Rubrique|
 |-|-|
-|Écrire un modèle.|[Instructions relatives à l’écriture de modèles de texte T4](../modeling/guidelines-for-writing-t4-text-templates.md)|
+|Écrire un modèle.|[Instructions relatives à l'écriture de modèles de texte T4](../modeling/guidelines-for-writing-t4-text-templates.md)|
 |Générer du texte à l'aide de code de programme.|[Structure du modèle de texte](../modeling/writing-a-t4-text-template.md)|
-|Générer des fichiers dans une solution Visual Studio.|[Génération de code au moment du design à l’aide de modèles de texte T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|
-|Exécutez la génération de texte en dehors de Visual Studio.|[Génération de fichiers avec l’utilitaire TextTransform](../modeling/generating-files-with-the-texttransform-utility.md)|
+|Générer des fichiers dans une solution Visual Studio.|[Génération de code durant la conception à l'aide de modèles de texte T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|
+|Exécutez la génération de texte en dehors de Visual Studio.|[Génération de fichiers avec l'utilitaire TextTransform](../modeling/generating-files-with-the-texttransform-utility.md)|
 |Transformer vos données sous la forme d’un langage spécifique à un domaine.|[Génération de code à partir d’un langage spécifique à un domaine](../modeling/generating-code-from-a-domain-specific-language.md)|
-|Écrire des processeurs de directive pour transformer vos propres sources de données.|[Personnalisation d’une transformation de texte T4](../modeling/customizing-t4-text-transformation.md)|
+|Écrire des processeurs de directive pour transformer vos propres sources de données.|[Personnalisation d'une transformation de texte T4](../modeling/customizing-t4-text-transformation.md)|

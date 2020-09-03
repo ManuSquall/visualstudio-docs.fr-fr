@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 56267cbbffd6b5ff123dcf08ee71200a9b343fac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190021"
 ---
 # <a name="idiaenumsectioncontribsclone"></a>IDiaEnumSectionContribs::Clone
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Crée un énumérateur qui contient le même état d’énumération que l’énumérateur en cours.  
+Crée un énumérateur qui contient le même état d’énumération que l’énumérateur actuel.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -35,10 +35,10 @@ HRESULT Clone( 
   
 #### <a name="parameters"></a>Paramètres  
  ppenum  
- [out] Retourne un [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md) objet qui contient un doublon de l’énumérateur. La section contributions ne sont pas dupliqués, uniquement l’énumérateur.  
+ à Retourne un objet [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md) qui contient un doublon de l’énumérateur. Les contributions de section ne sont pas dupliquées, mais uniquement l’énumérateur.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)

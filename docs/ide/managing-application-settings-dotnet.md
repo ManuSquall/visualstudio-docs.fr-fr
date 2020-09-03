@@ -12,15 +12,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8d792a6147795f81211203fc442539371f3caa91
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75593705"
 ---
 # <a name="manage-application-settings-net"></a>Gérer les paramètres d’application (.NET)
 
-Les paramètres d’application vous permettent de stocker des informations sur l’application de manière dynamique. Les paramètres vous permettent de stocker des informations sur l’ordinateur client qui ne doivent pas être incluses dans le code d’application (par exemple une chaîne de connexion), les préférences des utilisateurs et d’autres informations dont vous avez besoin au moment de l’exécution.
+Les paramètres d’application vous permettent de stocker des informations sur l’application de manière dynamique. Les paramètres vous permettent de stocker des informations sur l’ordinateur client qui ne doivent pas être incluses dans le code de l’application (par exemple, une chaîne de connexion), des préférences utilisateur et d’autres informations dont vous avez besoin au moment de l’exécution.
 
 Les paramètres d’application remplacent les propriétés dynamiques utilisées dans les versions antérieures de Visual Studio.
 
@@ -52,12 +52,12 @@ Notez que les modifications apportées aux paramètres utilisateur ne sont pas �
 
 Au moment du design, vous pouvez créer des paramètres d’application de deux manières : avec la page **Paramètres** du **Concepteur de projets**ou avec la fenêtre **Propriétés** pour un formulaire ou un contrôle, ce qui vous permet de lier un paramètre à une propriété.
 
-Lorsque vous créez un paramètre d’application (par exemple, une chaîne [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] de connexion de base de `<applicationSettings>` données ou une référence aux ressources du serveur), l’enregistre dans *app.config* avec le tag. (Les chaînes de connexion sont enregistrées sous la balise `<connectionStrings>` .)
+Lorsque vous créez un paramètre de portée application (par exemple, une chaîne de connexion à une base de données ou une référence aux ressources du serveur), [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] l’enregistre dans *app.config* avec la `<applicationSettings>` balise. (Les chaînes de connexion sont enregistrées sous la balise `<connectionStrings>` .)
 
-Lorsque vous créez un paramètre à portée utilisateur (par exemple, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] police par défaut, page `<userSettings>` d’accueil ou taille de fenêtre), l’enregistre dans *app.config* avec l’étiquette.
+Lorsque vous créez un paramètre de portée utilisateur (par exemple, une police par défaut, une page d’hébergement ou une taille de fenêtre), [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] l’enregistre dans *app.config* avec la `<userSettings>` balise.
 
 > [!IMPORTANT]
-> Lorsque vous stockez des chaînes de connexion dans *app.config*, vous devez prendre des précautions pour éviter de révéler des informations sensibles, telles que les mots de passe ou les trajectoires du serveur, dans la chaîne de connexion.
+> Lorsque vous stockez des chaînes de connexion dans *app.config*, vous devez prendre des précautions pour éviter de révéler des informations sensibles, telles que les mots de passe ou les chemins d’accès au serveur, dans la chaîne de connexion.
 >
 > Si vous obtenez une information de chaîne de connexion à partir d’une source externe, par exemple un utilisateur qui fournit un ID d’utilisateur et un mot de passe, vous devez veiller à ce que les valeurs utilisées pour construire votre chaîne de connexion ne contiennent pas de paramètres de chaîne de connexion supplémentaires qui modifient le comportement de votre connexion.
 >
@@ -70,19 +70,19 @@ Lorsque vous créez un paramètre à portée utilisateur (par exemple, [!INCLUDE
 
 Vous pouvez ajouter des fichiers de paramètres personnalisés à votre projet pour une gestion pratique des groupes de paramètres. Comme les paramètres contenus dans un fichier unique sont chargés et enregistrés en tant qu’unité, Stocker les paramètres dans des fichiers séparés pour les groupes utilisés fréquemment et ceux utilisés rarement peut économiser du temps en termes de chargement et d’enregistrement des paramètres.
 
-Par exemple, vous pouvez ajouter un fichier tel que *SpecialSettings.settings* à votre projet. Tandis que votre classe `SpecialSettings` n’est pas exposée dans l’espace de noms `My` , le mode **Afficher le code** peut lire le fichier des paramètres personnalisés qui contient `Partial Class SpecialSettings`.
+Par exemple, vous pouvez ajouter un fichier tel que *SpecialSettings. Settings* à votre projet. Tandis que votre classe `SpecialSettings` n’est pas exposée dans l’espace de noms `My` , le mode **Afficher le code** peut lire le fichier des paramètres personnalisés qui contient `Partial Class SpecialSettings`.
 
-Le **concepteur de paramètres** recherche d’abord le fichier *Paramètres.paramètres* que le système de projet crée ; ce fichier est le fichier par défaut que le **concepteur de projet** affiche dans [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] **l’onglet Paramètres.** *Paramètres.paramètres* est situé dans le dossier *Mon projet* pour les projets et dans le dossier *Propriétés* pour [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] les projets. Le **concepteur de projet** recherche ensuite d’autres fichiers de paramètres dans le dossier racine du projet. vous devez mettre votre fichier de paramètres personnalisés à cet emplacement. Si vous ajoutez un fichier *.paramètres ailleurs* dans votre projet, le **concepteur de projet** ne sera pas en mesure de le localiser.
+Le **Concepteur de paramètres** recherche en premier le fichier *Settings. Settings* que le système de projet crée ; ce fichier est le fichier par défaut que **le concepteur de projets** affiche dans l’onglet **paramètres** . Settings *. Settings* se trouve dans le dossier *My Project* pour les [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projets et dans le dossier *Propriétés* pour les [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] projets. Le **Concepteur de projets** recherche ensuite d’autres fichiers de paramètres dans le dossier racine du projet. vous devez mettre votre fichier de paramètres personnalisés à cet emplacement. Si vous ajoutez un fichier *. Settings* ailleurs dans votre projet, le **Concepteur de projets** ne sera pas en mesure de le localiser.
 
 ## <a name="access-or-change-application-settings-at-run-time-in-visual-basic"></a>Accéder aux paramètres d’application, ou les changer, au moment de l’exécution en Visual Basic
 
-Dans les projets Visual Basic, vous pouvez accéder aux paramètres d’application au moment de l’exécution à l’aide de l’objet `My.Settings`. Sur la page **Paramètres,** cliquez sur le bouton **Code Afficher** pour afficher le fichier *Paramètres.vb.* *Settings.vb* définit `Settings` la classe, ce qui vous permet de <xref:System.Configuration.ApplicationSettingsBase.SettingChanging> <xref:System.Configuration.ApplicationSettingsBase.PropertyChanged>gérer <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded>ces <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving>événements sur la classe des paramètres: , , et . Notez `Settings` que la classe dans *Settings.vb* est une classe partielle qui affiche uniquement le code appartenant à l’utilisateur, pas la classe générée entière. Pour plus d’informations sur l’accès aux paramètres d’application à l’aide de l’objet `My.Settings`, consultez [Accéder aux paramètres d’application (.NET Framework)](/dotnet/visual-basic/developing-apps/programming/app-settings/accessing-application-settings).
+Dans les projets Visual Basic, vous pouvez accéder aux paramètres d’application au moment de l’exécution à l’aide de l’objet `My.Settings`. Sur la page **paramètres** , cliquez sur le bouton **afficher le code** pour afficher le fichier *Settings. vb* . *Settings. vb* définit la `Settings` classe, qui vous permet de gérer ces événements sur la classe de paramètres : <xref:System.Configuration.ApplicationSettingsBase.SettingChanging> , <xref:System.Configuration.ApplicationSettingsBase.PropertyChanged> , <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded> et <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving> . Notez que la `Settings` classe dans *Settings. vb* est une classe partielle qui affiche uniquement le code appartenant à l’utilisateur, et non l’intégralité de la classe générée. Pour plus d’informations sur l’accès aux paramètres d’application à l’aide de l’objet `My.Settings`, consultez [Accéder aux paramètres d’application (.NET Framework)](/dotnet/visual-basic/developing-apps/programming/app-settings/accessing-application-settings).
 
-Les valeurs de tous les paramètres à portée utilisateur que l’utilisateur modifie au moment de l’exécution (par exemple, la position d’un formulaire) sont stockées dans un fichier *user.config.* Notez que les valeurs par défaut sont toujours enregistrées dans *app.config*.
+Les valeurs de tous les paramètres de portée utilisateur modifiés par l’utilisateur au moment de l’exécution (par exemple, la position d’un formulaire) sont stockées dans un fichier de *user.config* . Notez que les valeurs par défaut sont toujours enregistrées dans *app.config*.
 
 Si des paramètres de portée utilisateur sont changés au cours de l’exécution, à l’occasion d’un test de l’application par exemple, et que vous souhaitez réinitialiser ces paramètres à leurs valeurs par défaut, cliquez sur le bouton **Synchroniser**.
 
-Nous vous recommandons fortement `My.Settings` d’utiliser l’objet et le fichier *.paramètres* par défaut pour accéder aux paramètres. C’est parce que vous pouvez utiliser le **concepteur de paramètres** pour attribuer des propriétés aux paramètres, et, en outre, les paramètres de l’utilisateur sont automatiquement enregistrés avant l’arrêt de l’application. Toutefois, votre application Visual Basic peut accéder directement aux paramètres. Dans ce cas, vous `MySettings` devez accéder à la classe et utiliser un fichier *personnalisé .paramètres* dans la racine du projet. Vous devez enregistrer les paramètres utilisateur avant de terminer l’application, comme vous le feriez pour une application C# (voir la section suivante).
+Nous vous recommandons vivement d’utiliser l' `My.Settings` objet et le fichier *. Settings* par défaut pour accéder aux paramètres. Cela est dû au fait que vous pouvez utiliser le **Concepteur de paramètres** pour assigner des propriétés aux paramètres et, en outre, les paramètres utilisateur sont enregistrés automatiquement avant l’arrêt de l’application. Toutefois, votre application Visual Basic peut accéder directement aux paramètres. Dans ce cas, vous devez accéder à la `MySettings` classe et utiliser un fichier *. Settings* personnalisé à la racine du projet. Vous devez enregistrer les paramètres utilisateur avant de terminer l’application, comme vous le feriez pour une application C# (voir la section suivante).
 
 <!-- markdownlint-disable MD003 MD020 -->
 ## <a name="access-or-change-application-settings-at-run-time-in-c"></a>Accéder aux paramètres d’application, ou les changer, au moment de l’exécution en C#

@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7ab846d1d7121d0c36c4187d937330d2ade52eb1
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75594589"
 ---
 # <a name="invoke-text-transformation-in-a-visual-studio-extension"></a>Appeler la transformation de texte dans une extension Visual Studio
@@ -130,7 +130,7 @@ Le code peut être testé avec un fichier modèle semblable au suivant :
 Sample text.
 ```
 
-L’avertissement du compilateur apparaît dans la fenêtre d’erreur de Visual Studio et génère également un appel à `ErrorCallback`.
+L’avertissement du compilateur apparaît dans la fenêtre d’erreur de Visual Studio et génère également un appel à `ErrorCallback` .
 
 ## <a name="reference-parameters"></a>Paramètres de référence
 
@@ -138,8 +138,8 @@ Vous pouvez passer des valeurs en dehors d'un modèle de texte à l'aide d'une c
 
 ## <a name="related-articles"></a>Articles connexes
 
-Pour générer du texte à partir d’un modèle de texte prétraité : appelez la méthode `TransformText()` de la classe générée. Pour plus d’informations, consultez [génération de texte au moment de l’exécution avec des modèles de texte T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+Pour générer du texte à partir d’un modèle de texte prétraité : appelez la `TransformText()` méthode de la classe générée. Pour plus d’informations, consultez [génération de texte au moment de l’exécution avec des modèles de texte T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
-Pour générer du texte en dehors d’une extension Visual Studio : définissez un hôte personnalisé. Pour plus d’informations, consultez [de traitement des modèles de texte à l’aide d’un hôte personnalisé](../modeling/processing-text-templates-by-using-a-custom-host.md).
+Pour générer du texte en dehors d’une extension Visual Studio : définissez un hôte personnalisé. Pour plus d’informations, consultez [traitement des modèles de texte à l’aide d’un hôte personnalisé](../modeling/processing-text-templates-by-using-a-custom-host.md).
 
 Pour générer du code source qui peut être compilé et exécuté ultérieurement : appelez la méthode [PreprocessTemplate](/previous-versions/visualstudio/visual-studio-2012/ee844321(v=vs.110)) de [ITextTemplating](/previous-versions/visualstudio/visual-studio-2012/bb932392(v=vs.110)).

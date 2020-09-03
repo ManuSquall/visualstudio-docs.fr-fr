@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ee767ded0687baa09653bd82785b68bee7fa0ebd
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72981094"
 ---
 # <a name="create-an-association-between-entities"></a>Créer une association entre des entités
@@ -47,7 +47,7 @@ ms.locfileid: "72981094"
 ### <a name="foreign-key-based-association"></a>Association basée sur une clé étrangère
  Vous pouvez créer une association basée sur une clé étrangère en associant un identificateur de l’entité source aux descripteurs de type définis dans l’entité de destination. Cette relation permet aux consommateurs du modèle de fournir une interface utilisateur améliorée pour leurs utilisateurs. Par exemple, un formulaire dans Outlook qui permet à un utilisateur de créer une commande client qui peut afficher des clients dans une liste déroulante ; ou une liste de commandes dans SharePoint qui permet aux utilisateurs d’ouvrir une page de profil pour un client.
 
- Pour créer une association de clé étrangère, associez les identificateurs et les descripteurs de type qui partagent le même nom et le même type. Par exemple, vous pouvez créer une association basée sur une clé étrangère entre une entité `Contact` et une entité `SalesOrder`. L’entité `SalesOrder` retourne un descripteur de type `ContactID` dans le cadre du paramètre de retour de la recherche ou de méthodes de recherche spécifiques. Les deux descripteurs de type s’affichent dans l' **éditeur d’associations**. Pour créer une relation de clé étrangère entre l’entité `Contact` et l’entité `SalesOrder`, choisissez l’identificateur `ContactID` en regard de chacun de ces champs.
+ Pour créer une association de clé étrangère, associez les identificateurs et les descripteurs de type qui partagent le même nom et le même type. Par exemple, vous pouvez créer une association de clé étrangère entre une `Contact` entité et une `SalesOrder` entité. L' `SalesOrder` entité retourne un `ContactID` descripteur de type dans le cadre du paramètre de retour de la recherche ou de méthodes de recherche spécifiques. Les deux descripteurs de type s’affichent dans l' **éditeur d’associations**. Pour créer une relation de clé étrangère entre l' `Contact` entité et l' `SalesOrder` entité, choisissez l' `ContactID` identificateur en regard de chacun de ces champs.
 
  Ajoutez du code à la méthode du navigateur d’associations de l’entité source qui retourne une collection d’entités de destination. L’exemple suivant retourne les commandes client pour un contact.
 
@@ -60,18 +60,18 @@ ms.locfileid: "72981094"
  [!code-vb[SP_BDC#8](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderservice.vb#8)]
 
 ### <a name="foreign-keyless-association"></a>Association de clé étrangère étrangère
- Vous pouvez créer une association sans mapper d’identificateurs aux descripteurs de type de champ. Créez ce type d’association lorsque l’entité source n’a pas de relation directe avec l’entité de destination. Par exemple, une table `SalesOrderDetail` n’a pas de clé étrangère mappée à une clé primaire dans une table `Contact`.
+ Vous pouvez créer une association sans mapper d’identificateurs aux descripteurs de type de champ. Créez ce type d’association lorsque l’entité source n’a pas de relation directe avec l’entité de destination. Par exemple, une `SalesOrderDetail` table n’a pas de clé étrangère qui est mappée à une clé primaire dans une `Contact` table.
 
- Si vous souhaitez afficher des informations dans la table `SalesOrderDetail` qui se réfère à un `Contact`, vous pouvez créer une association de clé étrangère étrangère entre l’entité `Contact` et `SalesOrderDetail` entité.
+ Si vous souhaitez afficher des informations dans la `SalesOrderDetail` table qui se réfère à un `Contact` , vous pouvez créer une association de clé étrangère étrangère entre l' `Contact` entité et l' `SalesOrderDetail` entité.
 
- Dans la méthode de navigation d’association de l’entité `Contact`, retournez les entités `SalesOrderDetail` en joignant des tables ou en appelant une procédure stockée.
+ Dans la méthode de navigation d’association de l' `Contact` entité, retournez les `SalesOrderDetail` entités en joignant des tables ou en appelant une procédure stockée.
 
  L’exemple suivant retourne les détails de toutes les commandes en joignant les tables.
 
  [!code-csharp[SP_BDC#9](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#9)]
  [!code-vb[SP_BDC#9](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#9)]
 
- Dans la méthode de navigation d’association de l’entité `SalesOrderDetail`, retournez le `Contact`associé. Cela est illustré par l'exemple suivant.
+ Dans la méthode de navigation d’association de l' `SalesOrderDetail` entité, retournez le associé `Contact` . l’exemple ci-dessous illustre ce cas de figure.
 
  [!code-csharp[SP_BDC#10](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderdetailservice.cs#10)]
  [!code-vb[SP_BDC#10](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb#10)]

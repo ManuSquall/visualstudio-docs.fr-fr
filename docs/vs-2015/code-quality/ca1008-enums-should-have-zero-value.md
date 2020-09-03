@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 0ca58938a55330243315529e9c7990b59d1a6fe5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548341"
 ---
 # <a name="ca1008-enums-should-have-zero-value"></a>CA1008 : Les enums doivent avoir la valeur zéro
@@ -32,7 +32,7 @@ ms.locfileid: "85548341"
 |Category|Microsoft. Design|
 |Modification avec rupture|Sans rupture : lorsque vous êtes invité à ajouter une valeur **None** à une énumération sans indicateur. Avec rupture : lorsque vous êtes invité à renommer ou à supprimer des valeurs d’énumération.|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Une énumération sans application <xref:System.FlagsAttribute?displayProperty=fullName> ne définit pas un membre qui a une valeur égale à zéro ; ou une énumération à laquelle est appliqué <xref:System.FlagsAttribute> définit un membre dont la valeur est égale à zéro, mais dont le nom n’est pas’none', ou l’énumération définit plusieurs membres dont la valeur est zéro.
 
 ## <a name="rule-description"></a>Description de la règle

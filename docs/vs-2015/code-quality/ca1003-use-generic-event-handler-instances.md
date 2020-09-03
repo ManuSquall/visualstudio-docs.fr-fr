@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: ee0571e85a1d4ec9960e0235814fcb9d7adbd483
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85539904"
 ---
 # <a name="ca1003-use-generic-event-handler-instances"></a>CA1003 : Utiliser les instances du gestionnaire d'événements génériques
@@ -32,7 +32,7 @@ ms.locfileid: "85539904"
 |Category|Microsoft. Design|
 |Modification avec rupture|Rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Un type contient un délégué qui retourne void, dont la signature contient deux paramètres (le premier objet et le deuxième un type qui peut être assigné à EventArgs) et le conteneur cible l’assembly [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] .
 
 ## <a name="rule-description"></a>Description de la règle

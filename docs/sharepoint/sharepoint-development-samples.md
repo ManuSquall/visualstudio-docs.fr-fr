@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2a52dbb77145d1389995813d89384966fea35cec
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72984155"
 ---
 # <a name="sharepoint-development-samples"></a>Exemples de développement SharePoint
@@ -26,5 +26,5 @@ ms.locfileid: "72984155"
 
 ## <a name="see-also"></a>Voir aussi
 - [Créer des solutions SharePoint](../sharepoint/create-sharepoint-solutions.md)
-- [Exemples Visual Studio](https://code.msdn.microsoft.com/vstudio)
+- [Visual Studio Samples](https://code.msdn.microsoft.com/vstudio)
 - [Tâches courantes en matière de programmation Office](../vsto/common-tasks-in-office-programming.md)

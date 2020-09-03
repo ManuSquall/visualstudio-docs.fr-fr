@@ -23,10 +23,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 06428a633aec41489a8a77655d6ea9442ffffaa0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85540086"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Lier des contrôles WPF à des données dans Visual Studio
@@ -34,7 +34,7 @@ ms.locfileid: "85540086"
 
 Vous pouvez créer des contrôles liés aux données à [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)] l’aide de la fenêtre **sources de données** . Tout d’abord, ajoutez une source de données à la fenêtre **sources de données** . Ensuite, faites glisser des éléments de la fenêtre **sources de données** vers le**Concepteur WPF**.
 
-## <a name="add-a-data-source-to-the-data-sources-window"></a><a name="adding"></a>Ajouter une source de données à la fenêtre sources de données
+## <a name="add-a-data-source-to-the-data-sources-window"></a><a name="adding"></a> Ajouter une source de données à la fenêtre sources de données
  Avant de pouvoir créer des contrôles liés aux données, vous devez d’abord ajouter une source de données à la fenêtre **sources de données** .
 
 #### <a name="to-add-a-data-source-to-the-data-sources-window"></a>Pour ajouter une source de données à la fenêtre Sources de données
@@ -53,7 +53,7 @@ Vous pouvez créer des contrôles liés aux données à [!INCLUDE[TLA#tla_titlew
 
     - [Liaison de données à des contrôles existants dans le concepteur](#existing).
 
-## <a name="create-a-control-that-is-bound-to-a-single-field-of-data"></a><a name="simple"></a>Créer un contrôle lié à un seul champ de données
+## <a name="create-a-control-that-is-bound-to-a-single-field-of-data"></a><a name="simple"></a> Créer un contrôle lié à un seul champ de données
  Après avoir ajouté une source de données à la fenêtre **sources de données** , vous pouvez créer un contrôle lié aux données qui affiche un seul champ de données, tel que <xref:System.Windows.Controls.ComboBox> ou <xref:System.Windows.Controls.TextBox> .
 
 #### <a name="to-create-a-control-that-is-bound-to-a-single-field-of-data"></a>Pour créer un contrôle lié à un seul champ de données
@@ -66,9 +66,9 @@ Vous pouvez créer des contrôles liés aux données à [!INCLUDE[TLA#tla_titlew
 
 3. Faites glisser l’élément vers un conteneur valide dans le concepteur. Pour plus d’informations sur les conteneurs valides, consultez [lier des contrôles WPF à des données dans Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
-     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]crée le nouveau contrôle lié aux données et un intitulé approprié <xref:System.Windows.Controls.Label> dans le conteneur. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]génère également [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] et le code pour lier le contrôle aux données. Pour plus d’informations, consultez [lier des contrôles WPF à des données dans Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
+     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] crée le nouveau contrôle lié aux données et un intitulé approprié <xref:System.Windows.Controls.Label> dans le conteneur. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] génère également [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] et le code pour lier le contrôle aux données. Pour plus d’informations, consultez [lier des contrôles WPF à des données dans Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
-## <a name="create-a-control-that-is-bound-to-multiple-fields-of-data"></a><a name="complex"></a>Créer un contrôle lié à plusieurs champs de données
+## <a name="create-a-control-that-is-bound-to-multiple-fields-of-data"></a><a name="complex"></a> Créer un contrôle lié à plusieurs champs de données
  Après avoir ajouté une source de données à la fenêtre **sources de données** , vous pouvez créer un contrôle lié aux données qui affiche plusieurs champs de données, tel que <xref:System.Windows.Controls.DataGrid> ou <xref:System.Windows.Controls.ListView> .
 
 #### <a name="to-create-a-control-that-is-bound-to-multiple-fields-of-data"></a>Pour créer un contrôle lié à plusieurs champs de données
@@ -84,9 +84,9 @@ Vous pouvez créer des contrôles liés aux données à [!INCLUDE[TLA#tla_titlew
 
 3. Faites glisser l'élément vers un conteneur valide du concepteur, comme <xref:System.Windows.Controls.Grid>. Pour plus d’informations sur les conteneurs valides, consultez [lier des contrôles WPF à des données dans Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
-     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]crée le contrôle lié aux données dans le conteneur. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]génère également [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] et le code pour lier le contrôle aux données. Pour plus d’informations, consultez [lier des contrôles WPF à des données dans Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
+     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] crée le contrôle lié aux données dans le conteneur. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] génère également [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] et le code pour lier le contrôle aux données. Pour plus d’informations, consultez [lier des contrôles WPF à des données dans Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
-## <a name="create-a-set-of-controls-that-are-bound-to-multiple-fields-of-data"></a><a name="details"></a>Créer un ensemble de contrôles liés à plusieurs champs de données
+## <a name="create-a-set-of-controls-that-are-bound-to-multiple-fields-of-data"></a><a name="details"></a> Créer un ensemble de contrôles liés à plusieurs champs de données
  Après avoir ajouté une source de données à la fenêtre **sources de données** , vous pouvez lier une table de données ou un objet à un ensemble de contrôles. Un autre contrôle est créé pour chaque colonne ou propriété dans la table ou l'objet.
 
 #### <a name="to-create-a-set-of-controls-that-are-bound-to-multiple-fields-of-data"></a>Pour créer un ensemble de contrôles liés à plusieurs champs de données
@@ -100,9 +100,9 @@ Vous pouvez créer des contrôles liés aux données à [!INCLUDE[TLA#tla_titlew
 
 3. Faites glisser l'élément vers un conteneur valide du concepteur, comme <xref:System.Windows.Controls.Grid>. Pour plus d’informations sur les conteneurs valides, consultez [lier des contrôles WPF à des données dans Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
-     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]crée les nouveaux contrôles liés aux données dans le conteneur. Chaque contrôle est lié à une colonne ou propriété différente, et chaque contrôle est accompagné d’un contrôle correctement intitulé <xref:System.Windows.Controls.Label> . [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]génère également [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] et le code pour lier les contrôles aux données. Pour plus d’informations, consultez [lier des contrôles WPF à des données dans Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
+     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] crée les nouveaux contrôles liés aux données dans le conteneur. Chaque contrôle est lié à une colonne ou propriété différente, et chaque contrôle est accompagné d’un contrôle correctement intitulé <xref:System.Windows.Controls.Label> . [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] génère également [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] et le code pour lier les contrôles aux données. Pour plus d’informations, consultez [lier des contrôles WPF à des données dans Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
-## <a name="binddata-to-existing-controls-in-the-designer"></a><a name="existing"></a>BindData à des contrôles existants dans le concepteur
+## <a name="binddata-to-existing-controls-in-the-designer"></a><a name="existing"></a> BindData à des contrôles existants dans le concepteur
  Après avoir ajouté une source de données à la fenêtre **sources de données** , vous pouvez ajouter une liaison de données à un contrôle existant dans le concepteur.
 
 #### <a name="to-bind-data-to-an-existing-control-in-the-designer"></a>Pour lier des données à un contrôle existant dans le concepteur
@@ -115,7 +115,7 @@ Vous pouvez créer des contrôles liés aux données à [!INCLUDE[TLA#tla_titlew
 
 2. Faites glisser l’élément sélectionné de la fenêtre **sources de données** vers un contrôle existant dans le concepteur. Le contrôle doit être une cible de déplacement valide. Pour plus d’informations, consultez [lier des contrôles WPF à des données dans Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
-     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]génère [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] et le code pour lier le contrôle aux données. Pour plus d’informations, consultez [lier des contrôles WPF à des données dans Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
+     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] génère [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] et le code pour lier le contrôle aux données. Pour plus d’informations, consultez [lier des contrôles WPF à des données dans Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
     > [!NOTE]
     > Si le contrôle est déjà lié aux données, la liaison de données pour le contrôle est redéfinie sur l’élément qui a été le plus récemment déplacé vers le contrôle.

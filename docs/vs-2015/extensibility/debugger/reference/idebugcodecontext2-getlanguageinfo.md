@@ -1,5 +1,5 @@
 ---
-title: IDebugCodeContext2::GetLanguageInfo | Microsoft Docs
+title: 'IDebugCodeContext2 :: GetLanguageInfo | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0df2a08dd7906b9c4c0935d90150037a3bc0275a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68190936"
 ---
 # <a name="idebugcodecontext2getlanguageinfo"></a>IDebugCodeContext2::GetLanguageInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Obtient les informations de langue pour ce contexte de code.  
+Obtient les informations de langage pour ce contexte de code.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -42,13 +42,13 @@ int GetLanguageInfo( 
   
 #### <a name="parameters"></a>Paramètres  
  `pbstrLanguage`  
- [in, out] Retourne une chaîne qui contient le nom de la langue, tel que «C++. »  
+ [in, out] Retourne une chaîne qui contient le nom du langage, tel que « C++ ».  
   
  `pguidLanguage`  
- [in, out] Retourne le GUID pour le langage de contexte de code, par exemple, `guidCPPLang`.  
+ [in, out] Retourne le GUID de la langue du contexte de code, par exemple, `guidCPPLang` .  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="remarks"></a>Notes  
  Au moins un des paramètres doit retourner une valeur non null.  

@@ -8,21 +8,21 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 33d6c249845c72e25b7201bed5e640ff523c5d81
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75594602"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>Comment : utiliser des transactions pour mettre à jour le modèle
 Les transactions permettent de s’assurer que les modifications apportées au magasin sont traitées comme un groupe. Les modifications regroupées peuvent être validées ou restaurées en tant qu’unité unique.
 
- Chaque fois que le code de votre programme modifie, ajoute ou supprime un élément du magasin dans le kit de développement logiciel de visualisation et de modélisation Visual Studio, il doit le faire à l’intérieur d’une transaction. Il doit y avoir une instance active de <xref:Microsoft.VisualStudio.Modeling.Transaction> associée au magasin lorsque la modification se produit. Cela s’applique à tous les éléments de modèle, relations, formes, diagrammes et leurs propriétés.
+ Chaque fois que le code de votre programme modifie, ajoute ou supprime un élément du magasin dans le kit de développement logiciel de visualisation et de modélisation Visual Studio, il doit le faire à l’intérieur d’une transaction. Une instance active de doit être <xref:Microsoft.VisualStudio.Modeling.Transaction> associée au magasin lorsque la modification se produit. Cela s’applique à tous les éléments de modèle, relations, formes, diagrammes et leurs propriétés.
 
  Le mécanisme de transaction vous aide à éviter les États incohérents. Si une erreur se produit pendant une transaction, toutes les modifications sont annulées. Si l’utilisateur exécute une commande Undo, chaque transaction récente est traitée comme une seule étape. L’utilisateur ne peut pas annuler des parties d’une modification récente, sauf si vous les placez explicitement dans des transactions distinctes.
 
 ## <a name="opening-a-transaction"></a>Ouverture d’une transaction
- La méthode la plus pratique pour gérer une transaction consiste à utiliser une instruction `using` placée dans une instruction `try...catch` :
+ La méthode la plus pratique pour gérer une transaction consiste à utiliser une `using` instruction placée dans une `try...catch` instruction :
 
 ```csharp
 Store store; ...
@@ -48,13 +48,13 @@ catch (Exception ex)
 }
 ```
 
- Si une exception qui empêche le `Commit()` final se produit pendant les modifications, le magasin sera rétabli à son état précédent. Cela vous permet de vous assurer que les erreurs ne laissent pas le modèle dans un état incohérent.
+ Si une exception qui empêche le dernier `Commit()` se produit pendant les modifications, le magasin sera rétabli à son état précédent. Cela vous permet de vous assurer que les erreurs ne laissent pas le modèle dans un état incohérent.
 
- Vous pouvez effectuer un nombre quelconque de modifications dans une transaction. Vous pouvez ouvrir de nouvelles transactions dans une transaction active. Les transactions imbriquées doivent être validées ou restaurées avant la fin de la transaction conteneur. Pour plus d’informations, consultez l’exemple de la propriété <xref:Microsoft.VisualStudio.Modeling.Transaction.TransactionDepth%2A>.
+ Vous pouvez effectuer un nombre quelconque de modifications dans une transaction. Vous pouvez ouvrir de nouvelles transactions dans une transaction active. Les transactions imbriquées doivent être validées ou restaurées avant la fin de la transaction conteneur. Pour plus d’informations, consultez l’exemple de la <xref:Microsoft.VisualStudio.Modeling.Transaction.TransactionDepth%2A> propriété.
 
  Pour rendre vos modifications permanentes, vous devez `Commit` la transaction avant qu’elle ne soit supprimée. Si une exception qui n’est pas interceptée à l’intérieur de la transaction se produit, le magasin est rétabli à son état avant les modifications.
 
-## <a name="rolling-back-a-transaction"></a>Restauration d'une transaction
+## <a name="rolling-back-a-transaction"></a>Restauration d’une transaction
  Pour vous assurer que le magasin reste dans ou qu’il revient à son état avant la transaction, vous pouvez utiliser l’une de ces tactiques :
 
 1. Lève une exception qui n’est pas interceptée à l’intérieur de la portée de la transaction.

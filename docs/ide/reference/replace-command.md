@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 620e55938a9c96393d8cd7de6f238d3f98715d29
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75596682"
 ---
 # <a name="replace-command"></a>Remplacer, commande
@@ -93,7 +93,7 @@ facultatif. Utilise des caractères spéciaux prédéfinis dans l’argument `fi
 
 facultatif. Recherche uniquement les mots entiers.
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 Cet exemple remplace `btnSend` par `btnSubmit` dans tous les documents ouverts.
 
 ```
@@ -103,7 +103,7 @@ Cet exemple remplace `btnSend` par `btnSubmit` dans tous les documents ouverts.
 ## <a name="see-also"></a>Voir aussi
 
 - [Recherche et remplacement de texte](../../ide/finding-and-replacing-text.md)
-- [Commande, fenêtre](../../ide/reference/command-window.md)
-- [Boîte de recherche/commande](../../ide/find-command-box.md)
-- [Commandes de studio visuel](../../ide/reference/visual-studio-commands.md)
-- [Alias de commande de studio visuel](../../ide/reference/visual-studio-command-aliases.md)
+- [Fenêtre commande](../../ide/reference/command-window.md)
+- [Zone Rechercher/commande](../../ide/find-command-box.md)
+- [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)
+- [Alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

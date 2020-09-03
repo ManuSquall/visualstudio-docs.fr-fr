@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 15b63e49f89e17db631772c48765cc610f47ed29
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85548302"
 ---
 # <a name="ca1400-pinvoke-entry-points-should-exist"></a>CA1400 : Des points d'entrée P/Invoke doivent exister
@@ -32,7 +32,7 @@ ms.locfileid: "85548302"
 |Category|Microsoft. Interoperability|
 |Modification avec rupture|Sans rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Une méthode publique ou protégée est marquée avec <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> . La bibliothèque non managée n'a pas pu être localisée, ou la méthode n'a pu être mise en correspondance avec aucune fonction de la bibliothèque. Si la règle ne peut pas trouver le nom de la méthode exactement tel qu’il est spécifié, elle recherche des versions ANSI ou à caractères larges de la méthode en suffixant le nom de la méthode avec « A » ou « W ». Si aucune correspondance n’est trouvée, la règle tente de localiser une fonction en utilisant le format de nom _MyMethod@12 de __stdcall (, où 12 représente la longueur des arguments). Si aucune correspondance n’est trouvée et que le nom de la méthode commence par « # », la règle recherche la fonction en tant que référence ordinale au lieu d’une référence de nom.
 
 ## <a name="rule-description"></a>Description de la règle

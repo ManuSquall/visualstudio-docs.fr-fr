@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5025cc3e9dc0e13c3ae4658d129f5d0ac94f6fd6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156592"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>Comment : ignorer des erreurs dans des tâches
@@ -29,7 +29,7 @@ Vous souhaiterez parfois qu’une génération soit à tolérance de panne dans 
   
  L’attribut `ContinueOnError` peut contenir l’une des valeurs suivantes :  
   
-- **WarnAndContinue** ou **true**. En cas d’échec d’une tâche, l’exécution des tâches suivantes de l’élément [Target](../msbuild/target-element-msbuild.md) et de la génération se poursuit, et toutes les erreurs de la tâche sont considérées comme des avertissements.  
+- **WarnAndContinue** ou **true**. En cas d’échec d’une tâche, les tâches suivantes dans l’élément [cible](../msbuild/target-element-msbuild.md) et la build continuent à s’exécuter, et toutes les erreurs de la tâche sont traitées comme des avertissements.  
   
 - **ErrorAndContinue**. En cas d’échec d’une tâche, l’exécution des tâches suivantes de l’élément `Target` et de la génération se poursuit, et toutes les erreurs de la tâche sont considérées comme des erreurs.  
   
@@ -41,11 +41,11 @@ Vous souhaiterez parfois qu’une génération soit à tolérance de panne dans 
   
 #### <a name="to-ignore-an-error-in-a-task"></a>Pour ignorer une erreur dans une tâche  
   
-- Utilisez l’attribut `ContinueOnError` de la tâche. Par exemple :  
+- Utilisez l’attribut `ContinueOnError` de la tâche. Par exemple :  
   
      `<Delete Files="@(Files)" ContinueOnError="WarnAndContinue"/>`  
   
-## <a name="example"></a>Exemples  
+## <a name="example"></a>Exemple  
  L’exemple de code suivant montre que la cible `Build` continue de s’exécuter, et la génération est considérée comme un succès, même en cas d’échec de la tâche `Delete`.  
   
 ```  
@@ -66,5 +66,5 @@ Vous souhaiterez parfois qu’une génération soit à tolérance de panne dans 
   
 ## <a name="see-also"></a>Voir aussi
 [MSBuild](msbuild.md)  
- [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)   
+ [Référence de tâche](../msbuild/msbuild-task-reference.md)   
  [Tâches](../msbuild/msbuild-tasks.md)
