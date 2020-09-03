@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ff78bea6759359d3703f5fed6157f051c89befb0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668010"
 ---
 # <a name="how-to-customize-class-diagrams-class-designer"></a>Comment : personnaliser des diagrammes de classes (Concepteur de classes)
@@ -53,20 +53,20 @@ Vous pouvez modifier la façon dont les diagrammes de classes affichent les info
 
 - [Supprimer une forme de type et son code sous-jacent](../ide/how-to-customize-class-diagrams-class-designer.md#DeleteTypeShapeAndCode)
 
-## <a name="ZoomInOut"></a> Effectuer un zoom avant et arrière dans le diagramme de classes
+## <a name="zoom-in-and-out-of-the-class-diagram"></a><a name="ZoomInOut"></a> Effectuer un zoom avant et arrière dans le diagramme de classes
 
 1. Ouvrez et sélectionnez un fichier de diagramme de classes dans le Concepteur de classes.
 
 2. Sur la barre d’outils Concepteur de classes, cliquez sur le bouton **Zoom avant** ou**Zoom arrière** pour modifier le niveau de zoom de l’aire du concepteur.
 
-     or
+     ou
 
      Spécifiez une valeur de zoom particulière. Vous pouvez utiliser la liste déroulante **Zoom** ou taper un niveau de zoom valide (la plage valide est comprise entre 10 % et 400 %).
 
     > [!NOTE]
     > La modification du niveau de zoom n'affecte pas l'échelle d'impression de votre diagramme de classes.
 
-## <a name="CustomizeGroupingSorting"></a> Personnaliser le regroupement et le tri des membres de type
+## <a name="customize-grouping-and-sorting-of-type-members"></a><a name="CustomizeGroupingSorting"></a> Personnaliser le regroupement et le tri des membres de type
 
 1. Ouvrez et sélectionnez un fichier de diagramme de classes dans le Concepteur de classes.
 
@@ -80,7 +80,7 @@ Vous pouvez modifier la façon dont les diagrammes de classes affichent les info
 
     3. **Trier par ordre alphabétique** affiche les éléments qui composent une entité en tant que liste unique classée par ordre alphabétique. La liste est triée dans l'ordre croissant.
 
-## <a name="HideCompartments"></a> Masquer des compartiments sur un type
+## <a name="hide-compartments-on-a-type"></a><a name="HideCompartments"></a> Masquer les compartiments sur un type
 
 1. Ouvrez et sélectionnez un fichier de diagramme de classes dans le Concepteur de classes.
 
@@ -90,7 +90,7 @@ Vous pouvez modifier la façon dont les diagrammes de classes affichent les info
 
      Le compartiment sélectionné disparaît du conteneur de type.
 
-## <a name="HideMembers"></a> Masquer des membres spécifiques sur un type
+## <a name="hide-individual-members-on-a-type"></a><a name="HideMembers"></a> Masquer des membres spécifiques sur un type
 
 1. Ouvrez et sélectionnez un fichier de diagramme de classes dans le Concepteur de classes.
 
@@ -100,7 +100,7 @@ Vous pouvez modifier la façon dont les diagrammes de classes affichent les info
 
      Le membre sélectionné disparaît du conteneur de type.
 
-## <a name="DisplayHiddenCompartmentsAndMemberrs"></a> Afficher des compartiments et des membres masqués sur un type
+## <a name="show-hidden-compartments-and-members-on-a-type"></a><a name="DisplayHiddenCompartmentsAndMemberrs"></a> Afficher les compartiments et les membres masqués sur un type
 
 1. Ouvrez et sélectionnez un fichier de diagramme de classes dans le Concepteur de classes.
 
@@ -110,7 +110,7 @@ Vous pouvez modifier la façon dont les diagrammes de classes affichent les info
 
      Tous les compartiments et membres masqués s'affichent dans le conteneur de type.
 
-## <a name="HideAssociationAndInheritance"></a> Masquer les relations
+## <a name="hide-relationships"></a><a name="HideAssociationAndInheritance"></a> Masquer les relations
 
 1. Ouvrez et sélectionnez un fichier de diagramme de classes dans le Concepteur de classes.
 
@@ -122,7 +122,7 @@ Vous pouvez modifier la façon dont les diagrammes de classes affichent les info
 
      Tous les compartiments et membres masqués s'affichent dans le conteneur de type.
 
-## <a name="DisplayAssociationAndInheritance"></a> Afficher les relations masquées
+## <a name="show-hidden-relationships"></a><a name="DisplayAssociationAndInheritance"></a> Afficher les relations masquées
 
 1. Ouvrez et sélectionnez un fichier de diagramme de classes dans le Concepteur de classes.
 
@@ -130,7 +130,7 @@ Vous pouvez modifier la façon dont les diagrammes de classes affichent les info
 
    Cliquez sur **Afficher tous les membres** pour les lignes d’association et sur **Afficher la classe de base** ou **Afficher les classes dérivées** pour les lignes d’héritage.
 
-## <a name="RemoveCodeAndShape"></a> Supprimer une forme dans un diagramme de classes
+## <a name="remove-a-shape-from-a-class-diagram"></a><a name="RemoveCodeAndShape"></a> Supprimer une forme d’un diagramme de classes
  Vous pouvez supprimer une forme de type dans le diagramme de classes sans affecter le code sous-jacent du type. La suppression de formes de type d'un diagramme de classes affecte uniquement ce diagramme : le code sous-jacent qui définit le type et les autres diagrammes qui affichent le type ne sont pas affectés.
 
 1. Sur le diagramme de classes, sélectionnez la forme de type que vous souhaitez supprimer du diagramme.
@@ -139,7 +139,7 @@ Vous pouvez modifier la façon dont les diagrammes de classes affichent les info
 
      La forme de type et les lignes d'association ou d'héritage connectées à la forme n'apparaissent plus sur le diagramme.
 
-## <a name="DeleteTypeShapeAndCode"></a> Supprimer une forme de type et son code sous-jacent
+## <a name="delete-a-type-shape-and-its-underlying-code"></a><a name="DeleteTypeShapeAndCode"></a> Supprimer une forme de type et son code sous-jacent
 
 1. Cliquez avec le bouton droit sur la forme dans l'aire de conception.
 
@@ -148,4 +148,4 @@ Vous pouvez modifier la façon dont les diagrammes de classes affichent les info
      La forme est supprimée du diagramme et son code sous-jacent est supprimé du projet.
 
 ## <a name="see-also"></a>Voir aussi
- [Utilisation des diagrammes de classes (Concepteur de classes)](../ide/working-with-class-diagrams-class-designer.md) [Comment : changer la notation de membre et d’Association (Concepteur de classes)](../ide/how-to-change-between-member-notation-and-association-notation-class-designer.md) [Comment : afficher des types existants (Concepteur de classes)](../ide/how-to-view-existing-types-class-designer.md) [affichage des types et des relations (Concepteur de classes) ](../ide/viewing-types-and-relationships-class-designer.md)
+ [Utilisation des diagrammes de classes (Concepteur de classes)](../ide/working-with-class-diagrams-class-designer.md) [Comment : changer la notation de membre et d’Association (Concepteur de classes)](../ide/how-to-change-between-member-notation-and-association-notation-class-designer.md) [Comment : afficher des types existants (Concepteur de classes)](../ide/how-to-view-existing-types-class-designer.md) [affichage des types et des relations (Concepteur de classes)](../ide/viewing-types-and-relationships-class-designer.md)

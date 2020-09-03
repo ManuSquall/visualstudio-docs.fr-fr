@@ -10,15 +10,15 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: ad891030cb9cf54855e6bef69a8b6926d6ae17aa
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75568475"
 ---
 # <a name="options-text-editor-f-codelens"></a>Options, Éditeur de texte, F#, CodeLens
 
-Utilisez la page d’options **CodeLens** pour modifier les paramètres CodeLens de l’éditeur de texte pour F#. Pour accéder à cette page d’options, choisissez **Tools** > **Options,** puis choisissez **Text Editor** > F**CodeLens****F#** > .
+Utilisez la page d’options **CodeLens** pour modifier les paramètres CodeLens de l’éditeur de texte pour F#. Pour accéder à cette page d’options, choisissez **Outils**  >  **options**, puis **éditeur de texte**  >  **F #**  >  **CodeLens**.
 
 ## <a name="codelens"></a>CodeLens
 
@@ -40,5 +40,5 @@ Utilisez la page d’options **CodeLens** pour modifier les paramètres CodeLens
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Général, Environnement, Options Dialog Box](../../ide/reference/general-environment-options-dialog-box.md)
+- [Général, environnement, boîte de dialogue Options](../../ide/reference/general-environment-options-dialog-box.md)
 - [Rechercher les modifications de code et d’autres historiques avec CodeLens](../../ide/find-code-changes-and-other-history-with-codelens.md)

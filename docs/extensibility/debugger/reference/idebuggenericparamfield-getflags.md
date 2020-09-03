@@ -1,5 +1,5 @@
 ---
-title: IDebugGenericParamField::GetFlags Microsoft Docs
+title: 'IDebugGenericParamField :: GetFlags | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 8d131a5dc4a1fd64f2a82bff4f51f7cbc4a905a8
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727996"
 ---
 # <a name="idebuggenericparamfieldgetflags"></a>IDebugGenericParamField::GetFlags
-Récupère les drapeaux pour ce paramètre générique.
+Récupère les indicateurs pour ce paramètre générique.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -40,16 +40,16 @@ int GetFlags(
 
 ## <a name="parameters"></a>Paramètres
 `pdwFlags`\
-[out] Retourne les drapeaux pour ce paramètre générique.
+à Retourne les indicateurs pour ce paramètre générique.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
-Ces drapeaux contiennent des informations sur diverses contraintes spéciales.
+Ces indicateurs contiennent des informations sur différentes contraintes spéciales.
 
 ## <a name="example"></a>Exemple
-L’exemple suivant montre comment implémenter cette méthode pour un objet **CDebugGenericParamFieldType** qui expose [l’interface IDebugGenericParamField.](../../../extensibility/debugger/reference/idebuggenericparamfield.md)
+L’exemple suivant montre comment implémenter cette méthode pour un objet **CDebugGenericParamFieldType** qui expose l’interface [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) .
 
 ```cpp
 HRESULT CDebugGenericParamFieldType::GetFlags(DWORD *pdwFlags)

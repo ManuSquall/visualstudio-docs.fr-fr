@@ -1,5 +1,5 @@
 ---
-title: IDebugExceptionEvent2::GetExceptionDescription (fr) Microsoft Docs
+title: 'IDebugExceptionEvent2 :: GetExceptionDescription | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 7a6ea64540eaeef5ec258bc54b118b3a0600584c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80729852"
 ---
 # <a name="idebugexceptionevent2getexceptiondescription"></a>IDebugExceptionEvent2::GetExceptionDescription
-Obtient une description displayable de l’exception.
+Obtient une description affichable de l’exception.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,13 +41,13 @@ int GetExceptionDescription( 
 
 ## <a name="parameters"></a>Paramètres
 `pbstrDescription`\
-[out] Renvoie une description displayable de l’exception.
+à Retourne une description affichable de l’exception.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- La chaîne retournée de cette méthode est généralement le nom de l’exception et est indiquée dans la fenêtre **de sortie** lorsque l’exception se produit.
+ La chaîne retournée par cette méthode est généralement le nom de l’exception et s’affiche dans la fenêtre **sortie** lorsque l’exception se produit.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)

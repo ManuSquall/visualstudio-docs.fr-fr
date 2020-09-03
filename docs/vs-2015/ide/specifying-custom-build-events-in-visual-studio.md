@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fabbd4dc42ac4f66c7f53b639c6e7ed1f432878c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667124"
 ---
 # <a name="specifying-custom-build-events-in-visual-studio"></a>Spécification d'événements de build personnalisés dans Visual Studio
@@ -25,22 +25,22 @@ En spécifiant un événement de build personnalisé, vous pouvez automatiquemen
 
  Pour obtenir des informations spécifiques sur le langage de programmation que vous utilisez, consultez les rubriques suivantes :
 
-- Visual Basic--[Guide pratique pour spécifier des événements de build (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
+- Visual Basic--[Comment : spécifier des événements de build (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
 
 - Visual C# et F#--[Guide pratique pour spécifier des événements de build (C#)](../ide/how-to-specify-build-events-csharp.md).
 
 - Visual C++--[Spécifications d’événements de build](https://msdn.microsoft.com/library/788a6c18-2dbe-4a49-8cd6-86c1ad7a95cc).
 
 ## <a name="syntax"></a>Syntaxe
- Les événements de build suivent la même syntaxe que les commandes DOS, mais vous pouvez utiliser des macros pour créer plus facilement des événements de build. Pour obtenir la liste des macros disponibles, consultez [Ligne de commande de l’événement pré-build/post-build, boîte de dialogue](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md).
+ Les événements de build suivent la même syntaxe que les commandes DOS, mais vous pouvez utiliser des macros pour créer plus facilement des événements de build. Pour obtenir la liste des macros disponibles, consultez boîte de [dialogue ligne de commande de l’événement pré-build/après génération](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md).
 
  Pour de meilleurs résultats, suivez ces conseils de mise en forme :
 
 - Ajouter une instruction `call` avant tous les événements de build qui exécutent des fichiers .bat.
 
-     Exemple : `call C:\MyFile.bat`
+     Exemple : `call C:\MyFile.bat`
 
-     Exemple : `call C:\MyFile.bat call C:\MyFile2.bat`
+     Exemple : `call C:\MyFile.bat call C:\MyFile2.bat`
 
 - Placez les chemins d'accès de fichier entre guillemets.
 
@@ -50,7 +50,7 @@ En spécifiant un événement de build personnalisé, vous pouvez automatiquemen
 
 - Incluez des caractères génériques si nécessaire.
 
-     Exemple : `for %I in (*.txt *.doc *.html) do copy %I c:\`*mon_répertoire*`\`
+     Exemple : `for %I in (*.txt *.doc *.html) do copy %I c:\` *mydirectory*`\`
 
     > [!NOTE]
     > `%I` dans le code ci-dessus doit être `%%I` dans les scripts de commandes.

@@ -1,5 +1,5 @@
 ---
-title: IDebugManagedObject::SetFromManagedObject ( Microsoft Docs
+title: 'IDebugManagedObject :: SetFromManagedObject | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4056befa0b5b053d480983901b24feb6b25cf538
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727702"
 ---
 # <a name="idebugmanagedobjectsetfrommanagedobject"></a>IDebugManagedObject::SetFromManagedObject
-Définit la valeur de l’instance de l’objet de classe de valeur à partir de l’instance de la classe de valeur fournie comme paramètre.
+Définit la valeur de l’instance de l’objet de classe value à partir de l’instance de la classe value fournie en tant que paramètre.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,13 +41,13 @@ int SetFromManagedObject(
 
 ## <a name="parameters"></a>Paramètres
 `pManagedObject`\
-[dans] Une interface qui représente l’objet géré contenant la nouvelle valeur.
+dans Interface qui représente l’objet managé contenant la nouvelle valeur.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de succès, les retours S_OK; autrement, renvoie un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes
- Cette méthode est utilisée pour changer l’objet géré tel que représenté par [l’objet IDebugManagedObject.](../../../extensibility/debugger/reference/idebugmanagedobject.md)
+ Cette méthode est utilisée pour modifier l’objet managé comme représenté par l’objet [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md) .
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)

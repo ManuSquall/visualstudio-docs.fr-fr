@@ -19,16 +19,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e6ba899fd1b17fa5a82c64d5c5e44e67f0d5eb97
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668190"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Guide pratique pour configurer des projets afin de cibler des plateformes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] vous permet de configurer vos applications pour cibler différentes plateformes (y compris des plateformes 64 bits). Pour plus d’informations sur la prise en charge des plateformes 64 bits dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], consultez [Applications 64 bits](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181).
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] vous permet de configurer vos applications pour cibler différentes plateformes (y compris des plateformes 64 bits). Pour plus d’informations sur la prise en charge de la plateforme 64 bits dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , consultez [applications 64 bits](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181).
 
 ## <a name="targeting-platforms-with-the-configuration-manager"></a>Ciblage de plateformes avec le Gestionnaire de configurations
  Le **Gestionnaire de configurations** vous permet d’ajouter rapidement une nouvelle plateforme à cibler avec votre projet. Si vous sélectionnez l'une des plateformes incluses avec [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], les propriétés de votre projet sont modifiées afin de générer votre projet pour la plateforme sélectionnée.
@@ -55,13 +55,13 @@ ms.locfileid: "72668190"
 ## <a name="targeting-platforms-in-the-project-designer"></a>Ciblage de plateformes dans le Concepteur de projets
  Le Concepteur de projets permet également de cibler différentes plateformes avec votre projet. Si la sélection de l’une des plateformes incluses dans la liste affichée dans la boîte de dialogue **Nouvelle plateforme de solution** ne fonctionne pas pour votre solution, vous pouvez créer un nom de configuration personnalisée, puis en modifier les paramètres dans le **Concepteur de projet** pour cibler la plateforme appropriée.
 
- L’exécution de cette tâche varie suivant le langage de programmation que vous utilisez. Pour plus d'informations, consultez les liens suivants :
+ L’exécution de cette tâche varie suivant le langage de programmation que vous utilisez. Pour plus d’informations, consultez les liens suivants :
 
 - Pour les projets [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], consultez [/platform (Visual Basic)](https://msdn.microsoft.com/library/f9bc61e6-e854-4ae1-87b9-d6244de23fd1).
 
-- Pour les projets [!INCLUDE[csprcs](../includes/csprcs-md.md)], consultez [Générer, page du Concepteur de projet (C#)](../ide/reference/build-page-project-designer-csharp.md).
+- Pour les [!INCLUDE[csprcs](../includes/csprcs-md.md)] projets, consultez [Générer, page du concepteur de projets (C#)](../ide/reference/build-page-project-designer-csharp.md).
 
-- Pour les projets [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], consultez [/clr (Compilation pour le Common Language Runtime)](https://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c).
+- Pour les [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] projets, consultez [/clr (compilation pour le Common Language Runtime)](https://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c).
 
 ## <a name="see-also"></a>Voir aussi
- [Fonctionnement des plateformes de génération](../ide/understanding-build-platforms.md) [/Platform (C# Options du compilateur)](https://msdn.microsoft.com/library/c290ff5e-47f4-4a85-9bb3-9c2525b0be04) [applications 64](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181) bits [Visual Studio IDE 64](../ide/visual-studio-ide-64-bit-support.md) bits
+ [Fonctionnement des plateformes de génération](../ide/understanding-build-platforms.md) [/Platform (options du compilateur C#)](https://msdn.microsoft.com/library/c290ff5e-47f4-4a85-9bb3-9c2525b0be04) [64-bits applications](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181) [Visual Studio IDE 64 bits support](../ide/visual-studio-ide-64-bit-support.md)

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3804d018569a0b2e0ee5a11a3bb5edc8363cfffc
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85466888"
 ---
 # <a name="idialinenumberget_length"></a>IDiaLineNumber::get_length
@@ -38,7 +38,7 @@ HRESULT get_length ( 
 ## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Le bloc est la longueur du code source sur la ligne telle qu’elle est représentée par l’objet [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) .
 
 ## <a name="see-also"></a>Voir aussi

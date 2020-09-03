@@ -1,5 +1,5 @@
 ---
-title: IDebugEnumField::GetStringFromValue ( Microsoft Docs
+title: 'IDebugEnumField :: GetStringFromValue | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5de59c573f7e233ea2aacb0dfa38826051c59373
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80730290"
 ---
 # <a name="idebugenumfieldgetstringfromvalue"></a>IDebugEnumField::GetStringFromValue
-Cette méthode obtient le nom de la constante d’énumération compte tenu de sa valeur.
+Cette méthode obtient le nom de la constante d’énumération en fonction de sa valeur.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -43,16 +43,16 @@ int GetStringFromValue(
 
 ## <a name="parameters"></a>Paramètres
 `value`\
-[dans] La valeur pour laquelle obtenir le nom de la constante de recensement.
+dans Valeur pour laquelle obtenir le nom de la constante d’énumération.
 
 `pbstrValue`\
-[out] Retourne le nom de la constante de recensement.
+à Retourne le nom de la constante d’énumération.
 
-## <a name="return-value"></a>Valeur de retour
- En cas `S_OK`de succès, les retours; autrement, `S_FALSE` retourne si la valeur n’a pas de nom associé, ou retourne un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` si la valeur n’a pas de nom associé ou retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes
- S’il y a plus d’un nom associé à la même valeur, le prénom défini dans le recensement sera retourné.
+ Si plusieurs noms sont associés à la même valeur, le premier nom défini dans l’énumération est retourné.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)

@@ -104,9 +104,9 @@
       items:
         - name: Concepts avancés
           href: msbuild-advanced-concepts.md
-        - name: Traitement par lots
+        - name: Traitement par lot
           items:
-            - name: Traitement par lots
+            - name: Traitement par lot
               href: msbuild-batching.md
             - name: Métadonnées d’éléments dans le traitement par lots de tâches
               href: item-metadata-in-task-batching.md
@@ -114,19 +114,19 @@
               href: item-metadata-in-target-batching.md
         - name: Transformations
           href: msbuild-transforms.md
-        - name: Intégration Visual Studio
+        - name: Intégration à Visual Studio
           items:
-            - name: Intégration Visual Studio
+            - name: Intégration à Visual Studio
               href: visual-studio-integration-msbuild.md
             - name: Étendre le processus de génération Visual Studio
               href: how-to-extend-the-visual-studio-build-process.md
             - name: Démarrage d'une build à partir de l'IDE
               href: starting-a-build-from-within-the-ide.md
-            - name: "Inscrire des extensions du\_.NET Framework"
+            - name: Inscrire des extensions du .NET Framework
               href: registering-extensions-of-the-dotnet-framework.md
-        - name: Génération parallèle de plusieurs projets
+        - name: Génération de plusieurs projets en parallèle
           items:
-            - name: Génération parallèle de plusieurs projets
+            - name: Génération de plusieurs projets en parallèle
               href: building-multiple-projects-in-parallel-with-msbuild.md
             - name: Utilisation de plusieurs processeurs pour générer des projets
               href: using-multiple-processors-to-build-projects.md
@@ -162,7 +162,7 @@
       items:
         - name: Journalisation dans MSBuild
           href: logging-in-msbuild.md
-        - name: Obtention de journaux de génération
+        - name: Obtention des journaux de génération
           href: obtaining-build-logs-with-msbuild.md
         - name: Enregistreurs d’événements de génération
           href: build-loggers.md
@@ -180,9 +180,9 @@
       items:
         - name: Référence MSBuild
           href: msbuild-reference.md
-        - name: Référence du schéma de fichier de projet
+        - name: Référence de schéma de fichier de projet
           items:
-            - name: Référence du schéma de fichier de projet
+            - name: Référence de schéma de fichier de projet
               href: msbuild-project-file-schema-reference.md
             - name: 'Choose, élément (MSBuild)'
               href: choose-element-msbuild.md
@@ -226,13 +226,13 @@
               href: usingtask-element-msbuild.md
             - name: 'When, élément (MSBuild)'
               href: when-element-msbuild.md
-        - name: Référence des tâches
+        - name: Référence de tâche
           items:
-            - name: Référence des tâches
+            - name: Référence de tâche
               href: msbuild-task-reference.md
-            - name: "Tâches en Visual\_C++"
+            - name: Tâches Visual C++
               items:
-                - name: "Tâches en Visual\_C++"
+                - name: Tâches Visual C++
                   href: msbuild-tasks-specific-to-visual-cpp.md
                 - name: 'BscMake, tâche'
                   href: bscmake-task.md
@@ -392,7 +392,7 @@
           href: common-msbuild-project-properties.md
         - name: Éléments communs des projets MSBuild
           href: common-msbuild-project-items.md
-        - name: Référence de la ligne de commande
+        - name: Référence de ligne de commande
           href: msbuild-command-line-reference.md
         - name: Fichiers .Targets
           href: msbuild-dot-targets-files.md
@@ -408,9 +408,9 @@
               href: wpf-msbuild-reference.md
             - name: Fichiers .Targets
               href: wpf-dot-targets-files.md
-            - name: Référence des tâches
+            - name: Référence de tâche
               items:
-                - name: Référence des tâches
+                - name: Référence de tâche
                   href: wpf-msbuild-task-reference.md
                 - name: FileClassifier
                   href: fileclassifier-task.md

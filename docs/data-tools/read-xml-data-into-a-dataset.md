@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 6cceca336403bdd8907cf0e28e36387eb25a2402
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281784"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Lire les données XML dans un dataset
@@ -137,14 +137,14 @@ L’interface utilisateur de cette application se compose des éléments suivant
 
 3. Définissez les propriétés suivantes :
 
-    |Control|Propriété|Paramètre|
+    |Contrôler|Propriété|Paramètre|
     |-------------|--------------|-------------|
     |`TextBox1`|**Multiline**|`true`|
     ||**BarreDéfilement**|**Barr**|
     |`Button1`|**Nom**|`ReadXmlButton`|
-    ||**Texte**|`Read XML`|
+    ||**Text**|`Read XML`|
     |`Button2`|**Nom**|`ShowSchemaButton`|
-    ||**Texte**|`Show Schema`|
+    ||**Text**|`Show Schema`|
 
 ## <a name="create-the-dataset-that-receives-the-xml-data"></a>Créer le DataSet qui reçoit les données XML
 
@@ -210,7 +210,7 @@ Vous pouvez maintenant tester le formulaire pour vous assurer qu’il se comport
 
 Cette procédure pas à pas vous apprend les bases de la lecture d’un fichier XML dans un jeu de données, ainsi que la création d’un schéma basé sur le contenu du fichier XML. Voici quelques tâches que vous pouvez effectuer ensuite :
 
-- Modifiez les données dans le DataSet et Réécrivez-les en tant que XML. Pour plus d’informations, consultez <xref:System.Data.DataSet.WriteXml%2A>.
+- Modifiez les données dans le DataSet et Réécrivez-les en tant que XML. Pour plus d'informations, consultez <xref:System.Data.DataSet.WriteXml%2A>.
 
 - Modifiez les données dans le DataSet et écrivez-les dans une base de données.
 

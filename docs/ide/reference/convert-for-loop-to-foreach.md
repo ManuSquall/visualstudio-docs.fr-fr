@@ -11,10 +11,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: af52761f5cb199c7f842d01589c35501898b09aa
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "79094603"
 ---
 # <a name="refactoring-to-convert-between-a-for-loop-and-a-foreach-statement"></a>Refactorisation pour effectuer une conversion entre une boucle for et une instruction foreach
@@ -42,11 +42,11 @@ Les raisons pour lesquelles vous voulez convertir une boucle [for](/dotnet/cshar
 
 - Vous souhaitez simplifier votre code et réduire la probabilité d’erreurs de logique dans l’initialiseur, la condition et l’itérateur.
 
-### <a name="how-to-use-it"></a>Comment l’utiliser ?
+### <a name="how-to-use-it"></a>Comment l’utiliser
 
 1. Placez le point insertion dans le mot clé `for`.
 
-1. Appuyez **sur Ctrl**+**.** ou cliquez sur l’icône en forme de tournevis ![Icône en forme de tournevis](../media/screwdriver-icon.png) dans la marge du fichier de code.
+1. Appuyez sur **CTRL** + **.** ou cliquez sur l’icône en forme de tournevis ![Icône en forme de tournevis](../media/screwdriver-icon.png) dans la marge du fichier de code.
 
    ![Menu Convertir en 'foreach'](media/convert-to-foreach.png)
 
@@ -70,11 +70,11 @@ Les raisons pour lesquelles vous voulez convertir une instruction [foreach](/dot
 
 - Vous [itérez au sein d’un tableau multidimensionnel ](/dotnet/csharp/programming-guide/arrays/using-foreach-with-arrays) et souhaitez davantage de contrôle sur les éléments du tableau.
 
-### <a name="how-to-use-it"></a>Comment l’utiliser ?
+### <a name="how-to-use-it"></a>Comment l’utiliser
 
 1. Placez le point insertion dans le mot clé `foreach` ou `For Each`.
 
-1. Appuyez **sur Ctrl**+**.** ou cliquez sur l’icône en forme de tournevis ![Icône en forme de tournevis](../media/screwdriver-icon.png) dans la marge du fichier de code.
+1. Appuyez sur **CTRL** + **.** ou cliquez sur l’icône en forme de tournevis ![Icône en forme de tournevis](../media/screwdriver-icon.png) dans la marge du fichier de code.
 
    ![Menu Convertir en 'for'](media/convert-to-for.png)
 
@@ -83,7 +83,7 @@ Les raisons pour lesquelles vous voulez convertir une instruction [foreach](/dot
 1. Étant donné que la refactorisation introduit une nouvelle variable du nombre d’itérations, la zone **Renommer** s’affiche dans l’angle supérieur droit de l’éditeur. Si vous souhaitez choisir un autre nom pour la variable, tapez-le et appuyez sur **Entrée** ou sélectionnez **Appliquer** dans la zone **Renommer**. Si vous ne souhaitez pas choisir un nouveau nom, appuyez sur **Échap** ou sélectionnez **Appliquer** pour faire disparaître la zone **Renommer**.
 
 > [!NOTE]
-> Pour C#, le code généré par ces refactorisations utilise un type explicite ou [var](/dotnet/csharp/language-reference/keywords/var) pour le type des éléments dans la collection. Le type du code généré, explicite ou implicite, dépend des paramètres de style de code qui se trouvent dans la portée. Ces paramètres de code particuliers sont configurés au niveau de la machine sous les**\'préférences de****Options** > **l’éditeur** > de texte >  **d’outils****C'** > **Code Style** > **General** > var, ou au niveau de la solution dans un fichier [EditorConfig.](../../ide/editorconfig-language-conventions.md#implicit-and-explicit-types) Si vous modifiez un paramètre de style de code dans **Options**, rouvrez le fichier de code pour appliquer les modifications.
+> Pour C#, le code généré par ces refactorisations utilise un type explicite ou [var](/dotnet/csharp/language-reference/keywords/var) pour le type des éléments dans la collection. Le type du code généré, explicite ou implicite, dépend des paramètres de style de code qui se trouvent dans la portée. Ces paramètres de style de code particuliers sont configurés au niveau de l’ordinateur sous **Outils**  >  **options**  >  **éditeur de texte**  >  **C#**  >  **style**  >  **général**  >  ** \' var**, ou au niveau de la solution dans un fichier [EditorConfig](../../ide/editorconfig-language-conventions.md#implicit-and-explicit-types) . Si vous modifiez un paramètre de style de code dans **Options**, rouvrez le fichier de code pour appliquer les modifications.
 
 ## <a name="see-also"></a>Voir aussi
 

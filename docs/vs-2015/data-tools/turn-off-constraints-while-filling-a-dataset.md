@@ -24,10 +24,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6646f669bf2c465d8e0f705f8fba956b979952ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667169"
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>Désactiver les contraintes pendant le remplissage d’un dataset
@@ -35,10 +35,10 @@ ms.locfileid: "72667169"
 
 Si un DataSet contient des contraintes (telles que des contraintes de clé étrangère), Theycan déclenche des erreurs liées à l’ordre des opérations effectuées sur le jeu de données. Par exemple, le chargement des enregistrements enfants avant les enregistrements parents loadingrelated peut violer une contrainte et générer une erreur. Dès que vous chargez un enregistrement enfant, la contrainte vérifie l’enregistrement parent associé et génère une erreur.
 
- Si aucun mécanisme n’autorise l’interruption temporaire de contrainte, une erreur est déclenchée chaque fois que vous tentez de charger un enregistrement dans la table enfant. Une autre façon d’interrompre toutes les contraintes dans un jeu de données consiste à utiliser les propriétés <xref:System.Data.DataRow.BeginEdit%2A> et <xref:System.Data.DataRow.EndEdit%2A>.
+ Si aucun mécanisme n’autorise l’interruption temporaire de contrainte, une erreur est déclenchée chaque fois que vous tentez de charger un enregistrement dans la table enfant. Une autre façon d’interrompre toutes les contraintes dans un DataSet est d’utiliser les <xref:System.Data.DataRow.BeginEdit%2A> Propriétés, et <xref:System.Data.DataRow.EndEdit%2A> .
 
 > [!NOTE]
-> Les événements de validation (par exemple, <xref:System.Data.DataTable.ColumnChanging> et <xref:System.Data.DataTable.RowChanging>) ne sont pas déclenchés lorsque les contraintes sont désactivées.
+> Les événements de validation (par exemple <xref:System.Data.DataTable.ColumnChanging> et <xref:System.Data.DataTable.RowChanging> ) ne sont pas déclenchés lorsque les contraintes sont désactivées.
 
 ### <a name="to-suspend-update-constraints-programmatically"></a>Pour suspendre des contraintes Update par programmation
 
@@ -49,7 +49,7 @@ Si un DataSet contient des contraintes (telles que des contraintes de clé étra
 
 ### <a name="to-suspend-update-constraints-using-the-dataset-designer"></a>Pour suspendre les contraintes Update à l’aide de l’Concepteur de DataSet
 
-1. Ouvrez votre jeu de données dans le Concepteur de DataSet. Pour plus d’informations, consultez [Comment : ouvrir un DataSet dans le concepteur de DataSet](https://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).
+1. Ouvrez votre dataset dans le Concepteur de DataSet. Pour plus d’informations, consultez [Comment : ouvrir un DataSet dans le concepteur de DataSet](https://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).
 
 2. Dans la fenêtre **Propriétés** , définissez la propriété <xref:System.Data.DataSet.EnforceConstraints%2A> sur `false`.
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugGenericFieldInstance::GetTypeArguments (fr) Microsoft Docs
+title: 'IDebugGenericFieldInstance :: GetTypeArguments (| Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c41a3f314f641ed4bff116959b6d70f0a5fb9dcb
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80728182"
 ---
 # <a name="idebuggenericfieldinstancegettypearguments"></a>IDebugGenericFieldInstance::GetTypeArguments
-Récupère les arguments de paramètres de type pour cette instance.
+Récupère les arguments de paramètre de type pour cette instance.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -44,15 +44,15 @@ int GetTypeArguments(
 
 ## <a name="parameters"></a>Paramètres
 `cArgs`\
-[dans] Nombre de paramètres de type.
+dans Nombre de paramètres de type.
 
 `ppArgs`\
-[out] Retourne une gamme de paramètres de type.
+à Retourne un tableau de paramètres de type.
 
 `pcArgs`\
-[dans, dehors] Nombre de membres `ppArgs` dans le tableau.
+[in, out] Nombre de membres dans le `ppArgs` tableau.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

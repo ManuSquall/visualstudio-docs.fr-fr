@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 493637f81df15fadf65d6c7d90e980e322919b13
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281745"
 ---
 # <a name="save-data-back-to-the-database"></a>Enregistrer les données dans la base de données
@@ -162,7 +162,7 @@ Il est courant de ne pas mettre à jour chaque enregistrement dans un jeu de don
 
 Vous pouvez créer des sous-ensembles d’enregistrements modifiés à l’aide `GetChanges` de la méthode de la table de données ( <xref:System.Data.DataTable.GetChanges%2A> ) ou du jeu de données ( <xref:System.Data.DataSet.GetChanges%2A> ) lui-même. Si vous appelez la méthode pour la table de données, elle retourne une copie de la table avec uniquement les enregistrements modifiés. De même, si vous appelez la méthode sur le DataSet, vous recevez un nouveau jeu de données avec uniquement les enregistrements modifiés.
 
-`GetChanges`retourne tous les enregistrements modifiés. En revanche, en passant le souhaité <xref:System.Data.DataRowState> en tant que paramètre à la `GetChanges` méthode, vous pouvez spécifier le sous-ensemble d’enregistrements modifiés que vous souhaitez : enregistrements récemment ajoutés, enregistrements marqués pour suppression, enregistrements détachés ou enregistrements modifiés.
+`GetChanges` retourne tous les enregistrements modifiés. En revanche, en passant le souhaité <xref:System.Data.DataRowState> en tant que paramètre à la `GetChanges` méthode, vous pouvez spécifier le sous-ensemble d’enregistrements modifiés que vous souhaitez : enregistrements récemment ajoutés, enregistrements marqués pour suppression, enregistrements détachés ou enregistrements modifiés.
 
 L’obtention d’un sous-ensemble d’enregistrements modifiés est utile lorsque vous souhaitez envoyer des enregistrements à un autre composant en vue de leur traitement. Au lieu d’envoyer l’ensemble du jeu de données, vous pouvez réduire la surcharge liée à la communication avec l’autre composant en obtenant uniquement les enregistrements dont le composant a besoin.
 

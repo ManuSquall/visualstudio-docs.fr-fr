@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f427edfe294605b7b2adcbb0889e48c4f37b6ba9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72666842"
 ---
 # <a name="log-devenvexe"></a>/Log (devenv.exe)
@@ -35,10 +35,10 @@ Enregistre toute l'activité dans le fichier journal de résolution des problèm
 Devenv /log Path\NameOfLogFile
 ```
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Ce commutateur doit apparaître à la fin de la ligne de commande, après tous les autres commutateurs.
 
  Le journal est rédigé pour toutes les instances de Visual Studio que vous avez appelées avec le commutateur /log. Il ne consigne pas les instances de Visual Studio que vous avez appelées sans ce commutateur.
 
 ## <a name="see-also"></a>Voir aussi
- [Commutateurs de la ligne de commande Devenv](../../ide/reference/devenv-command-line-switches.md)
+ [Commutateurs de ligne de commande devenv](../../ide/reference/devenv-command-line-switches.md)

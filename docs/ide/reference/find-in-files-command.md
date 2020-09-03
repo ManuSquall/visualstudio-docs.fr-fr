@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 87d313c29be1d5fb4f1be1febe9b5b7cd32e7e11
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75569580"
 ---
 # <a name="find-in-files-command"></a>Rechercher dans les fichiers, commande
@@ -77,7 +77,7 @@ facultatif. Utilise des caractères spéciaux prédéfinis dans l’argument `fi
 /word ou /w\
 facultatif. Recherche uniquement les mots entiers.
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 Cet exemple recherche le texte « btnCancel » dans tous les fichiers .cls situés dans le dossier « My Visual Studio Projects » et affiche les informations de correspondance dans la fenêtre Résultats de la recherche 2.
 
 ```cmd
@@ -87,7 +87,7 @@ Cet exemple recherche le texte « btnCancel » dans tous les fichiers .cls si
 ## <a name="see-also"></a>Voir aussi
 
 - [Rechercher dans les fichiers](../../ide/find-in-files.md)
-- [Commande, fenêtre](../../ide/reference/command-window.md)
-- [Boîte de recherche/commande](../../ide/find-command-box.md)
-- [Commandes de studio visuel](../../ide/reference/visual-studio-commands.md)
-- [Alias de commande de studio visuel](../../ide/reference/visual-studio-command-aliases.md)
+- [Fenêtre commande](../../ide/reference/command-window.md)
+- [Zone Rechercher/commande](../../ide/find-command-box.md)
+- [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)
+- [Alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

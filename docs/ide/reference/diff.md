@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4bb74501c15e961d8da8e1e29dd0d9979c79a305
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75570087"
 ---
 # <a name="diff-devenvexe"></a>/Diff (devenv.exe)
@@ -31,11 +31,11 @@ devenv /Diff SourceFile TargetFile [SourceDisplayName [TargetDisplayName]]
 
 ## <a name="arguments"></a>Arguments
 
-- *SourceFile (en)*
+- *SourceFile*
 
   Obligatoire. Chemin complet et nom du premier fichier à comparer.
 
-- *TargetFile (targetFile)*
+- *TargetFile*
 
   Obligatoire. Chemin complet et nom du second fichier à comparer.
 
@@ -47,11 +47,11 @@ devenv /Diff SourceFile TargetFile [SourceDisplayName [TargetDisplayName]]
 
   facultatif. Nom d’affichage du deuxième fichier.
 
-## <a name="remarks"></a>Notes 
+## <a name="remarks"></a>Notes
 
 S’il y a déjà une instance de l’environnement IDE ouverte, la comparaison de fichiers s’affiche dans un onglet de cet environnement.
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 
 Le premier exemple compare deux fichiers sans modifier leur nom d’affichage. Le second exemple compare les fichiers en modifiant les deux noms d’affichage. Le troisième et le quatrième exemples comparent deux fichiers, mais appliquent un alias soit au premier, soit au second.
 

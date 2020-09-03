@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1de155b71e82bb7561030cae2e1d0d4d777c9586
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668057"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Comment : créer des modèles à plusieurs projets
@@ -49,14 +49,14 @@ Les modèles à plusieurs projets jouent le rôle de conteneurs pour au moins de
 
   Le fichier .vstemplate racine d’un modèle à plusieurs projets présente les différences suivantes par rapport à un modèle à projet unique :
 
-- L’attribut `Type` de l’élément `VSTemplate` a la valeur `ProjectGroup`. Exemple :
+- L’attribut `Type` de l’élément `VSTemplate` a la valeur `ProjectGroup`. Par exemple :
 
   ```
   <VSTemplate Version="2.0.0" Type="ProjectGroup"
       xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
   ```
 
-- L’élément `TemplateContent` contient un élément `ProjectCollection` avec un ou plusieurs éléments `ProjectTemplateLink` qui définissent les chemins des fichiers .vstemplate des projets inclus. Exemple :
+- L’élément `TemplateContent` contient un élément `ProjectCollection` avec un ou plusieurs éléments `ProjectTemplateLink` qui définissent les chemins des fichiers .vstemplate des projets inclus. Par exemple :
 
   ```
   <TemplateContent>
@@ -85,7 +85,7 @@ Les modèles à plusieurs projets jouent le rôle de conteneurs pour au moins de
 
 3. Créez un fichier .vstemplate racine qui contiendra les métadonnées du modèle à plusieurs projets. Pour plus d’informations, consultez le premier exemple dans la section suivante.
 
-4. Sélectionnez les fichiers et dossiers à inclure dans votre modèle, cliquez avec le bouton droit sur la sélection, cliquez sur **Envoyer vers**, puis cliquez sur **Dossier compressé (zippé)** . Les fichiers et dossiers sont compressés dans un fichier .zip.
+4. Sélectionnez les fichiers et dossiers à inclure dans votre modèle, cliquez avec le bouton droit sur la sélection, cliquez sur **Envoyer vers**, puis cliquez sur **Dossier compressé (zippé)**. Les fichiers et dossiers sont compressés dans un fichier .zip.
 
 5. Placez le fichier de modèle .zip dans le répertoire du modèle de projet [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Par défaut, ce répertoire est \My Documents\Visual Studio *Version*\Templates\ProjectTemplates\\.
 
@@ -150,4 +150,4 @@ Les modèles à plusieurs projets jouent le rôle de conteneurs pour au moins de
 ```
 
 ## <a name="see-also"></a>Voir aussi
- [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md) [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md) [Comment : créer des modèles de projet](../ide/how-to-create-project-templates.md) [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md) [élément SolutionFolder (modèles Visual Studio)](../extensibility/solutionfolder-element-visual-studio-templates.md) [ Élément ProjectTemplateLink (modèles Visual Studio)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)
+ [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md) [Guide de référence du schéma de modèle](../extensibility/visual-studio-template-schema-reference.md) Visual Studio [Comment : créer des modèles de projet](../ide/how-to-create-project-templates.md) [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md) [élément SolutionFolder (modèles Visual Studio)](../extensibility/solutionfolder-element-visual-studio-templates.md) [élément ProjectTemplateLink (modèles Visual Studio)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)

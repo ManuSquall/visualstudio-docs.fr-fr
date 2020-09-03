@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 14527e84d5bbd2d06b2d091ba7a9d4daa9763462
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281953"
 ---
 # <a name="n-tier-data-applications-overview"></a>Vue d’ensemble des applications de données multiniveaux
@@ -33,7 +33,7 @@ Visual Studio contient plusieurs fonctionnalités pour aider les développeurs �
 
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) fournit la <xref:System.Data.Linq.Table%601.Attach%2A> méthode qui vous permet de réunir le DataContext de différents niveaux dans une application. Pour plus d’informations, consultez [applications multicouches et distantes avec LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql).
 
-## <a name="presentation-tier"></a>Niveau de présentation
+## <a name="presentation-tier"></a>Niveau Présentation
 La *couche présentation* est le niveau dans lequel les utilisateurs interagissent avec une application. Elle contient souvent également une logique d’application supplémentaire. Les composants standard de la couche présentation sont les suivants :
 
 - Composants de liaison de données, tels que <xref:System.Windows.Forms.BindingSource> et <xref:System.Windows.Forms.BindingNavigator> .

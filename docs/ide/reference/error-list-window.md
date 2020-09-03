@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8c6d925f61714c524f97a57690870229b2340d21
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75569661"
 ---
 # <a name="error-list-window"></a>Fenêtre Liste d'erreurs
@@ -41,7 +41,7 @@ La fenêtre **Liste d’erreurs** vous permet d’effectuer les tâches suivante
 
 - rechercher des termes spécifiques et limiter la recherche au projet ou au document actif.
 
-Pour afficher la **liste d’erreurs**, choisissez **View** > **Error List**, ou appuyez sur **Ctrl**+**\\**+**E**.
+Pour afficher les **liste d’erreurs**, choisissez **Afficher**les  >  **liste d’erreurs**ou appuyez sur **CTRL** + **\\** + **E**.
 
 Vous pouvez choisir les onglets **Erreurs**, **Avertissements** et **Messages** pour afficher les différents niveaux d’informations.
 
@@ -96,6 +96,6 @@ Fichier
 
 Affiche le nom de fichier.
 
-Lignes
+Ligne
 
 Affiche la ligne où apparaît le problème.

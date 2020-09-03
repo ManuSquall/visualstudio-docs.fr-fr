@@ -1,5 +1,5 @@
 ---
-title: Impossible de supprimer le nom de la propriété &lt;property &gt; | Microsoft Docs
+title: Impossible de supprimer le nom de la propriété de propriété &lt; &gt; | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: aca36919cb4c82d6ca76e0f3eecbbacd48cde768
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667241"
 ---
-# <a name="the-property-ltproperty-namegt-cannot-be-deleted"></a>Impossible de supprimer la propriété &lt;property le nom &gt;
+# <a name="the-property-ltproperty-namegt-cannot-be-deleted"></a>Impossible de supprimer le nom de la propriété de propriété &lt; &gt;
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Impossible de supprimer le nom de la propriété \<property >, car il est défini en tant que propriété de discriminateur pour l’héritage entre le nom de \<class > et le nom de \<class >
+La propriété \<property name> ne peut pas être supprimée, car elle est définie en tant que propriété de discriminateur pour l’héritage entre \<class name> et \<class name>
 
  La propriété sélectionnée est définie comme **Propriété de discriminateur** pour l’héritage entre les classes indiquées dans le message d’erreur. Les propriétés ne peuvent pas être supprimées si elles participent à la configuration d'héritage entre des classes de données.
 

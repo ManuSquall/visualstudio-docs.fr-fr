@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 6fcfdc06a055df28159f9d1ddc440aaf113f3264
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75568904"
 ---
 # <a name="implement-an-abstract-class-in-visual-studio"></a>Implémenter une classe abstraite dans Visual Studio
@@ -43,11 +43,11 @@ Cette génération de code s’applique à :
 2. Effectuez ensuite l'une des opérations suivantes :
 
    - **Clavier**
-      - Appuyez **sur Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
+      - Appuyez sur **CTRL** + **.** pour afficher le menu **Actions rapides et refactorisations**.
    - **Souris**
       - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
       - Placez le curseur sur la ligne ondulée rouge, puis cliquez sur l’icône ![ampoule d’erreur](media/error-bulb.png) qui apparaît.
-      - Cliquez sur le bouton ![ampoule d’erreur](media/error-bulb.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne ondulée rouge.
+      - Cliquez sur l’icône ![ampoule d’erreur](media/error-bulb.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne ondulée rouge.
 
    ![Implémenter un aperçu de classe](media/abstract-preview-cs.png)
 
@@ -69,5 +69,5 @@ Cette génération de code s’applique à :
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Génération de codes](../code-generation-in-visual-studio.md)
+- [Génération de code](../code-generation-in-visual-studio.md)
 - [Aperçu des modifications](../../ide/preview-changes.md)

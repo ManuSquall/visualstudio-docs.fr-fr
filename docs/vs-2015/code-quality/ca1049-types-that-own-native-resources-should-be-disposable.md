@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 49c56b98e3be01675c2c21cd11c2961dd75f4877
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546807"
 ---
 # <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049 : Les types qui possèdent des ressources natives doivent être supprimables
@@ -32,7 +32,7 @@ ms.locfileid: "85546807"
 |Category|Microsoft. Design|
 |Modification avec rupture|Sans rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Un type fait référence à un <xref:System.IntPtr?displayProperty=fullName> champ, à un <xref:System.UIntPtr?displayProperty=fullName> champ ou à un <xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName> champ, mais n’implémente pas <xref:System.IDisposable?displayProperty=fullName> .
 
 ## <a name="rule-description"></a>Description de la règle

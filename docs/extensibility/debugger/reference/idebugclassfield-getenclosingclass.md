@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::GetEnclosingClass (fr) Microsoft Docs
+title: 'IDebugClassField :: GetEnclosingClass | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e5a68e32da370d6881eb2b74cbca157f7b899329
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80734397"
 ---
 # <a name="idebugclassfieldgetenclosingclass"></a>IDebugClassField::GetEnclosingClass
-Obtient la classe qui entoure cette classe.
+Obtient la classe qui englobe cette classe.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,13 +41,13 @@ int GetEnclosingClass(
 
 ## <a name="parameters"></a>Paramètres
 `ppClassField`\
-[out] Retourne un objet [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) représentant la classe d’enceinte. Renvoie une valeur nulle s’il n’y a pas de classe d’enceinte.
+à Retourne un objet [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) représentant la classe englobante. Retourne une valeur null s’il n’existe aucune classe englobante.
 
-## <a name="return-value"></a>Valeur de retour
-En cas de succès, les retours S_OK; autrement, renvoie un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes
-Si la classe représentée par cet objet [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) est `ppClassField` une `IDebugClassField` classe imbriquée, le paramètre renvoie un objet représentant la classe d’enceinte. Par exemple, compte tenu de cette définition de classe :
+Si la classe représentée par cet objet [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) est une classe imbriquée, le `ppClassField` paramètre retourne un `IDebugClassField` objet représentant la classe englobante. Par exemple, à partir de cette définition de classe :
 
 ```
 class RootClass {
@@ -55,7 +55,7 @@ class RootClass {
 };
 ```
 
-Appeler `GetEnclosingClass` la méthode `IDebugClassField` sur `NestedClass` l’objet `IDebugClassField` représentant la `RootClass`classe renvoie un objet représentant la classe .
+L’appel `GetEnclosingClass` de la méthode sur l' `IDebugClassField` objet représentant la `NestedClass` classe retourne un `IDebugClassField` objet représentant la classe `RootClass` .
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

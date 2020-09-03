@@ -372,12 +372,14 @@
                   href: ca1305.md
                 - name: 'CA1306 : Définir les paramètres régionaux pour les types de données'
                   href: ca1306.md
-                - name: 'CA1307 : Spécifier StringComparison'
+                - name: 'CA1307 : Spécifier StringComparison pour clarifier'
                   href: ca1307.md
                 - name: 'CA1308 : Normaliser les chaînes en majuscules'
                   href: ca1308.md
                 - name: 'CA1309 : Utiliser StringComparison avec la valeur Ordinal'
                   href: ca1309.md
+                - name: "CA1310\_: Spécifier StringComparison pour corriger"
+                  href: ca1310.md
                 - name: 'CA2101 : Spécifiez le marshaling pour les arguments de chaîne P-Invoke'
                   href: ca2101.md
             - name: Avertissements liés à l’interopérabilité
@@ -444,7 +446,7 @@
                   href: ca1509.md
             - name: Avertissements liés à la mobilité
               items:
-                - name: Vue d'ensemble
+                - name: Vue d’ensemble
                   displayName: mobility warnings
                   href: mobility-warnings.md
                 - name: 'CA1600 : Ne pas utiliser de priorité de processus inactif'
@@ -569,6 +571,8 @@
                   href: ca1835.md
                 - name: "CA1836\_: Préférer IsEmpty à Count si disponible"
                   href: ca1836.md
+                - name: "CA1837\_: Utiliser Environment.ProcessId à la place de Process.GetCurrentProcess().Id"
+                  href: ca1837.md
                 - name: "CA1838\_: Éviter les paramètres StringBuilder pour les P/Invoke"
                   href: ca1838.md
             - name: Avertissements liés à la portabilité
@@ -601,6 +605,8 @@
                   href: ca2006.md
                 - name: "CA2007\_: N’attendez pas directement une Tâche"
                   href: ca2007.md
+                - name: "CA2008\_: Ne pas créer de tâches sans passer TaskScheduler"
+                  href: ca2008.md
                 - name: "CA2009\_: N’appelez pas ToImmutableCollection sur une valeur ImmutableCollection"
                   href: ca2009.md
                 - name: "CA2011\_: Ne pas assigner la propriété dans son setter"
@@ -985,6 +991,8 @@
                   href: ca2247.md
                 - name: "CA2248\_: Fournir le bon argument enum à Enum.HasFlag"
                   href: ca2248.md
+                - name: "CA2249\_: Utiliser de préférence String.Contains à la place de String.IndexOf"
+                  href: ca2249.md
             - name: Suspension automatique de fonctionnalités
               href: automatic-feature-suspension.md
             - name: Publier les avertissements

@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8755b1b70051c54157fa87ee0b66dbc9340b5024
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668466"
 ---
 # <a name="properties-of-a-dsl-definition"></a>Propriétés d'une définition DSL
@@ -27,24 +27,24 @@ Les propriétés DslDefinition définissent des propriétés de définition du *
 
  DslDefinition possède les propriétés dans le tableau suivant :
 
-|Property|Description|Valeur par défaut|
+|Propriété|Description|Default|
 |--------------|-----------------|-------------|
-|Modificateur d'accès|Détermine si le modificateur d’accès pour la classe de domaine est public ou Internal.|public|
-|Attributs personnalisés|Attributs définis personnalisés pour la classe de domaine.<br /><br /> **Remarque** Utilisez le bouton Parcourir pour ajouter un attribut.|\<aucune>|
-|Nom de la société|Nom de la société actuelle dans le registre système.|Nom de la société actuelle|
-|Name|Nom de cette classe de domaine.|Nom actuel|
+|Modificateur d'accès|Détermine si le modificateur d'accès pour la classe de domaine est public ou interne.|public|
+|Attributs personnalisés|Attributs définis personnalisés pour la classe de domaine.<br /><br /> **Remarque** Utilisez le bouton Parcourir pour ajouter un attribut.|\<none>|
+|Nom de l’entreprise|Nom de la société actuelle dans le registre système.|Nom de la société actuelle|
+|Nom|Nom de cette classe de domaine.|Nom actuel|
 |Espace de noms|Espace de noms affilié à cette classe de domaine.|Espace de noms actuel|
-|GUID du package|GUID pour le package [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] généré pour ce DSL.|\<aucune>|
-|Espace de noms du package|Espace de noms pour le package [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] généré pour ce DSL.|\<aucune>|
-|Nom du produit|Nom du produit qui sera inscrit pour le package de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] généré pour ce DSL.|\<aucune>|
-|Notes|Notes associées à cette classe de domaine.|\<aucune>|
-|Description|Description de cette classe de domaine.|\<aucune>|
-|Display Name|Nom qui sera affiché dans le concepteur généré pour cette classe de domaine.|\<aucune>|
-|Help Keyword|Mot clé d’aide associé à cette classe de domaine.|\<aucune>|
-|Générer|Numéro de build incrémentiel pour cette définition de langage spécifique à un domaine.|0|
-|Version principale|Numéro de build majeur incrémentiel pour cette définition de langage spécifique à un domaine.|1|
+|GUID du package|GUID du [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] package généré pour ce DSL.|\<none>|
+|Espace de noms du package|Espace de noms pour le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] package généré pour ce DSL.|\<none>|
+|Nom du produit|Nom du produit qui sera inscrit pour le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] package généré pour ce DSL.|\<none>|
+|Notes|Notes associées à cette classe de domaine.|\<none>|
+|Description|Description de cette classe de domaine.|\<none>|
+|Nom d’affichage|Nom qui sera affiché dans le concepteur généré pour cette classe de domaine.|\<none>|
+|Help Keyword|Mot clé d’aide associé à cette classe de domaine.|\<none>|
+|Build|Numéro de build incrémentiel pour cette définition de langage spécifique à un domaine.|0|
+|Version majeure|Numéro de build majeur incrémentiel pour cette définition de langage spécifique à un domaine.|1|
 |Version mineure|Numéro de build mineure incrémentiel pour cette définition de langage spécifique à un domaine.|0|
-|Revision|Numéro de build de révision incrémentielle pour cette définition de langage spécifique à un domaine.|0|
+|Révision|Numéro de build de révision incrémentielle pour cette définition de langage spécifique à un domaine.|0|
 
 ## <a name="see-also"></a>Voir aussi
  [Glossaire des Outils Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
