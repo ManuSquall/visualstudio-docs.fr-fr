@@ -1,5 +1,5 @@
 ---
-title: IDebugMethodField::EnumAllLocals - France Microsoft Docs
+title: 'IDebugMethodField :: EnumAllLocals | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 50da5af616c56276a0299a0d08e6eeb0b88181cc
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80727332"
 ---
 # <a name="idebugmethodfieldenumalllocals"></a>IDebugMethodField::EnumAllLocals
-Crée un enumérateur pour toutes les variables locales de la méthode, y compris celles générées en interne par un compilateur.
+Crée un énumérateur pour toutes les variables locales de la méthode, y compris celles générées en interne par un compilateur.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -43,18 +43,18 @@ int EnumAllLocals(
 
 ## <a name="parameters"></a>Paramètres
 `pAddress`\
-[dans] Un objet [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) représentant une adresse de débogé dans la méthode, pointant vers une portée ou un contexte particulier.
+dans Objet [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) qui représente une adresse de débogage dans la méthode, pointant vers une portée ou un contexte particulier.
 
 `ppLocals`\
-[out] Renvoie un objet [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) représentant la liste de tous les habitants dans la portée spécifiée; autrement, retourne une valeur nulle indiquant aucun local.
+à Retourne un objet [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) représentant la liste de tous les variables locales dans l’étendue spécifiée ; Sinon, retourne une valeur null indiquant qu’il n’y a pas de variables locales.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de succès, les retours S_OK ou retournent S_FALSE s’il n’y a pas d’habitants. Sinon, retourne un code d'erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne S_OK ou retourne S_FALSE s’il n’y a pas de variables locales. Sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- Seules les variables définies dans le bloc qui contient l’adresse de débaillement donnée sont énumérées. Cette méthode comprend tous les habitants générés par les compilateurs. Si tout ce qui est nécessaire sont les habitants explicitement définis dans la source, appelez la méthode [EnumLocals.](../../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md)
+ Seules les variables définies dans le bloc qui contient l’adresse de débogage donnée sont énumérées. Cette méthode comprend les variables locales générées par le compilateur. Si tout ce qui est nécessaire est les variables locales définies explicitement dans la source, appelez la méthode [EnumLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md) .
 
- Une méthode peut contenir plusieurs contextes ou blocs d’établissement de la portée.
+ Une méthode peut contenir plusieurs contextes ou blocs d’étendue.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)

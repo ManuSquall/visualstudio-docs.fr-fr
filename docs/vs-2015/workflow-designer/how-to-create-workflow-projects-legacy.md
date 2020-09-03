@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3cf68c1a28f662bfa4e271d3c402ef1c8946b6f1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668676"
 ---
 # <a name="how-to-create-workflow-projects-legacy"></a>Procédure : créer des projets de workflow (héritée)
@@ -26,16 +26,16 @@ Suivez ces étapes pour créer un projet [!INCLUDE[wf](../includes/wf-md.md)] qu
 
 1. Démarrez [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)].
 
-2. Dans le menu **Fichier**, pointez sur **Nouveau**, puis sélectionnez **Projet**.
+2. Dans le menu **Fichier** , pointez sur **Nouveau**, puis sélectionnez **Projet**.
 
-     La boîte de dialogue **Nouveau projet** s'affiche.
+     La boîte de dialogue **Nouveau projet** s’affiche.
 
 3. Sélectionnez l’option **.NET Framework 3,0** ou l’option **.NET Framework 3,5** dans la liste déroulante en haut de la fenêtre **nouveau projet** pour accéder au concepteur hérité.
 
     > [!NOTE]
     > L’option par défaut dans [!INCLUDE[vs2010](../includes/vs2010-md.md)] est **.NET Framework 4**. Cette option permet de créer des applications [!INCLUDE[wf](../includes/wf-md.md)] qui ciblent le [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] et elle n'utilise pas le concepteur hérité.
 
-4. Dans le volet **types de projets** , sélectionnez C# projets visuels ou Visual Basic projets, puis sélectionnez **flux de travail**.
+4. Dans le volet **types de projets** , sélectionnez projets Visual C# ou Visual Basic projets, puis sélectionnez **flux de travail**.
 
 5. Dans le volet **modèles** , sélectionnez l’un des modèles de projet installés :
 
@@ -60,4 +60,4 @@ Suivez ces étapes pour créer un projet [!INCLUDE[wf](../includes/wf-md.md)] qu
 8. Cliquez sur **OK**.
 
 ## <a name="see-also"></a>Voir aussi
- [Création de projets de flux de travail hérités](../workflow-designer/creating-legacy-workflow-projects.md)
+ [Création de projets de workflows hérités](../workflow-designer/creating-legacy-workflow-projects.md)

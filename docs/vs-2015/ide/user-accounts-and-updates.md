@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f3ed1bd914655109606c1472227fb73c10d5b7a0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85547613"
 ---
 # <a name="user-accounts-and-updates"></a>Comptes d’utilisateur et mises à jour
@@ -25,9 +25,9 @@ ms.locfileid: "85547613"
 
 Visual Studio lui-même est un environnement connecté. En vous connectant, vous activez l'accès à tous les services associés à votre compte d'utilisateur, ainsi qu'à tous les comptes qui sont liés à ce compte. Les paramètres de votre compte vous suivent partout où vous utilisez Visual Studio. Vous pouvez configurer des niveaux d'autorisation sur une instance spécifique de Visual Studio pour des utilisateurs individuels. En outre, Visual Studio vous informe quand une mise à jour est disponible pour les composants de votre installation, par exemple pour un kit SDK.
 
-## <a name="in-this-section"></a>Dans cette section
+## <a name="in-this-section"></a>Contenu de cette section
 
-|Intitulé|Description|
+|Titre|Description|
 |-|-|
 |[Connexion à Visual Studio](../ide/signing-in-to-visual-studio.md)|Décrit comment et pourquoi se connecter à Visual Studio.|
 |[Utiliser plusieurs comptes d’utilisateur](../ide/work-with-multiple-user-accounts.md)|Décrit comment associer plusieurs comptes Microsoft et/ou professionnels ou d'établissement scolaire pour activer l'accès aux ressources et aux services à partir de tous vos comptes.|

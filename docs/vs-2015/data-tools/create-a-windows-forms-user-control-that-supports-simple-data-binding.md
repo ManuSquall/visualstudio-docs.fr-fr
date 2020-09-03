@@ -18,10 +18,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bf30a38384863c9ba5a8af35af3326a51058d831
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668771"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Créer un contrôle utilisateur Windows Forms prenant en charge la liaison de données simples
@@ -39,7 +39,7 @@ Pour présenter des données dans des formulaires d’applications Windows, vous
 |Implémentez <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> sur des contrôles, comme <xref:System.Windows.Forms.DataGridView>, qui affichent des listes (ou tables) de données. Pour plus d’informations, consultez [créer un Windows Forms contrôle utilisateur qui prend en charge la liaison de données complexe](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md).|
 |Implémentez l'objet <xref:System.ComponentModel.LookupBindingPropertiesAttribute> sur des contrôles, comme <xref:System.Windows.Forms.ComboBox>, qui affichent des listes (ou tables) de données, mais doivent également présenter une seule colonne ou propriété. Pour plus d’informations, consultez [créer un Windows Forms contrôle utilisateur qui prend en charge la liaison de données de recherche](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).|
 
- Cette procédure pas à pas crée un contrôle simple qui affiche les données d'une seule colonne dans une table. Cet exemple utilise la colonne `Phone` de la table `Customers` de l'exemple de base de données Northwind. Le contrôle utilisateur simple affichera les numéros de téléphone des clients dans un format de numéro de téléphone standard, à l’aide d’un <xref:System.Windows.Forms.MaskedTextBox> et en définissant le masque sur un numéro de téléphone.
+ Cette procédure pas à pas crée un contrôle simple qui affiche les données d'une seule colonne dans une table. Cet exemple utilise la colonne `Phone` de la table `Customers` de l'exemple de base de données Northwind. Le contrôle utilisateur simple affichera les numéros de téléphone des clients dans un format de numéro de téléphone standard, en utilisant un <xref:System.Windows.Forms.MaskedTextBox> et en définissant le masque sur un numéro de téléphone.
 
  Pendant cette procédure pas à pas, vous allez apprendre à :
 
@@ -57,8 +57,8 @@ Pour présenter des données dans des formulaires d’applications Windows, vous
 
 - Créer un formulaire pour afficher des données dans le nouveau contrôle.
 
-## <a name="prerequisites"></a>Configuration requise
- Pour exécuter cette procédure pas à pas, vous avez besoin des éléments suivants :
+## <a name="prerequisites"></a>Prérequis
+ Pour réaliser cette procédure pas à pas, vous aurez besoin des éléments suivants :
 
 - avoir accès à l'exemple de base de données Northwind.
 
@@ -109,20 +109,20 @@ Pour présenter des données dans des formulaires d’applications Windows, vous
      [!code-csharp[VbRaddataDisplaying#3](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDisplaying/CS/PhoneNumberBox.cs#3)]
      [!code-vb[VbRaddataDisplaying#3](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDisplaying/VB/PhoneNumberBox.vb#3)]
 
-3. Dans le menu **Générer** , cliquez sur **Générer la solution**.
+3. Dans le menu **générer** , choisissez **générer la solution**.
 
 ## <a name="create-a-data-source-from-your-database"></a>Créer une source de données à partir de votre base de données
- Cette étape utilise l’Assistant **Configuration de source de données** pour créer une source de données basée sur la table `Customers` de l’exemple de base de données Northwind. Vous devez avoir accès à l'exemple de base de données Northwind pour créer la connexion.
+ Cette étape utilise l’Assistant **configuration de source de données** pour créer une source de données basée sur la `Customers` table dans l’exemple de base de données Northwind. Vous devez avoir accès à l'exemple de base de données Northwind pour créer la connexion.
 
 #### <a name="to-create-the-data-source"></a>Pour créer la source de données
 
 1. Dans le menu **Données** , cliquez sur **Afficher les sources de données**.
 
-2. Dans la fenêtre **Sources de données**, sélectionnez **Ajouter une nouvelle source de données** pour démarrer l’Assistant **Configuration de source de données**.
+2. Dans la fenêtre **sources de données** , sélectionnez Ajouter une **nouvelle source de données** pour démarrer l’Assistant Configuration de source de **données** .
 
 3. Dans la page **Choisir un type de source de données**, sélectionnez **Base de données**, puis cliquez sur **Suivant**.
 
-4. Dans la page **Choisir votre connexion de données**, effectuez l’une des opérations suivantes :
+4. Dans la page **choisir votre connexion de données** , effectuez l’une des opérations suivantes :
 
     - Si une connexion de données à l’exemple de base de données Northwind est disponible dans la liste déroulante, sélectionnez-la.
 
@@ -136,7 +136,7 @@ Pour présenter des données dans des formulaires d’applications Windows, vous
 
 8. Sélectionnez la table `Customers`, puis cliquez sur **Terminer**.
 
-     **NorthwindDataSet** est ajouté à votre projet et la table `Customers` apparaît dans la fenêtre **Sources de données**.
+     **NorthwindDataSet** est ajouté à votre projet et la `Customers` table s’affiche dans la fenêtre **sources de données** .
 
 ## <a name="set-the-phone-column-to-use-the-phonenumberbox-control"></a>Définir la colonne Phone pour qu’elle utilise le contrôle PhoneNumberBox
  Dans la fenêtre **Sources de données**, vous pouvez définir le contrôle à créer avant de faire glisser des éléments vers votre formulaire.
@@ -160,11 +160,11 @@ Pour présenter des données dans des formulaires d’applications Windows, vous
 
 #### <a name="to-create-data-bound-controls-on-the-form"></a>Pour créer des contrôlés liés aux données dans le formulaire
 
-- Faites glisser le nœud **Customers** principal depuis la fenêtre **sources de données** vers le formulaire et vérifiez que le contrôle `PhoneNumberBox` est utilisé pour afficher les données dans la colonne `Phone`.
+- Faites glisser le nœud **Customers** principal depuis la fenêtre **sources de données** vers le formulaire et vérifiez que le `PhoneNumberBox` contrôle est utilisé pour afficher les données dans la `Phone` colonne.
 
      Les contrôles liés aux données assortis d'étiquettes descriptives apparaissent dans le formulaire, ainsi qu'une barre d'outils (<xref:System.Windows.Forms.BindingNavigator>) pour parcourir les enregistrements. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource> et <xref:System.Windows.Forms.BindingNavigator> s’affichent dans la barre d’état des composants.
 
-## <a name="run-the-application"></a>Exécuter l'application
+## <a name="run-the-application"></a>Exécution de l'application
 
 #### <a name="to-run-the-application"></a>Pour exécuter l’application
 

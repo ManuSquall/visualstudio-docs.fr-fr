@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 88ab52f1b06e6a2da94d17225bdb26ecec358a6c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668569"
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>Parcourir et mettre à jour les modèles de couche dans le code de programme
@@ -24,7 +24,7 @@ ms.locfileid: "72668569"
 
 Cette rubrique décrit les éléments et les relations au sein des modèles de couche, que vous pouvez parcourir et mettre à jour à l'aide de code de programme. Pour plus d’informations sur les diagrammes de couche du point de vue de l’utilisateur, consultez [diagrammes de couche : références](../modeling/layer-diagrams-reference.md) et [diagrammes de couche : instructions](../modeling/layer-diagrams-guidelines.md).
 
- Le modèle `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer` décrit dans cette rubrique rappelle le modèle plus général <xref:Microsoft.VisualStudio.GraphModel>. Si vous écrivez une [commande de menu ou une extension de mouvement](../modeling/add-commands-and-gestures-to-layer-diagrams.md), utilisez le modèle `Layer`. Si vous écrivez une [extension de validation de couche](../modeling/add-custom-architecture-validation-to-layer-diagrams.md), il est plus facile d’utiliser l' `GraphModel`.
+ Le modèle `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer` décrit dans cette rubrique rappelle le modèle plus général <xref:Microsoft.VisualStudio.GraphModel>. Si vous écrivez une [commande de menu ou une extension de mouvement](../modeling/add-commands-and-gestures-to-layer-diagrams.md), utilisez le `Layer` modèle. Si vous écrivez une [extension de validation de couche](../modeling/add-custom-architecture-validation-to-layer-diagrams.md), il est plus facile d’utiliser `GraphModel` .
 
 ## <a name="transactions"></a>Transactions
  Quand il s'agit de mettre à jour un modèle, enserrez les modifications dans `ILinkedUndoTransaction`. Cela permet de regrouper les modifications dans une même transaction. En cas d'échec d'une des modifications, l'ensemble de la transaction est annulée. Si l'utilisateur annule une modification, toutes les modifications sont annulées.
@@ -40,7 +40,7 @@ using (ILinkedUndoTransaction t =
 }
 ```
 
-## <a name="containment"></a>Imbrication
+## <a name="containment"></a>Containment
  ![ILayer et ILayerModel peuvent tous les deux contenir ILayers.](../modeling/media/layerapi-containment.png "LayerApi_Containment")
 
  Les couches ([ILayer](/previous-versions/ff644251(v=vs.140))) et le modèle de couche ([ILayerModel](/previous-versions/ff643069(v=vs.140))) peuvent contenir des commentaires et des couches.
@@ -56,10 +56,10 @@ using (ILinkedUndoTransaction t =
 
  Pour créer un lien de dépendance, appelez `source.CreateDependencyLink(target)`.
 
-## <a name="comments"></a>Comments
+## <a name="comments"></a>Commentaires
  Les commentaires peuvent être contenus à l'intérieur de couches ou du modèle de couche, mais aussi être liés à n'importe quel élément de couche :
 
- ![Les commentaires peuvent être attachés à n’importe quel élément de couche.](../modeling/media/layerapi-comments.png "LayerApi_Comments")
+ ![Les commentaires peuvent être attachés à tout élément de couche.](../modeling/media/layerapi-comments.png "LayerApi_Comments")
 
  Un commentaire peut être lié à autant d'éléments que nécessaire, voire à aucun.
 
@@ -83,7 +83,7 @@ IEnumerable<ILayerComment> comments =
 ## <a name="layer-elements"></a>Éléments de couche
  Tous les types d'élément qui peuvent être contenus dans un modèle sont des éléments de couche :
 
- ![Le contenu du diagramme de couche est ILayerElements.](../modeling/media/layerapi-layerelements.png "LayerApi_LayerElements")
+ ![Les ILayerElements constituent le contenu du diagramme de couche.](../modeling/media/layerapi-layerelements.png "LayerApi_LayerElements")
 
 ## <a name="properties"></a>Propriétés
  À chaque `ILayerElement` correspond un dictionnaire de chaînes nommé `Properties`. Vous pouvez utiliser ce dictionnaire pour joindre des informations arbitraires à n'importe quel élément de couche.
@@ -97,14 +97,14 @@ IEnumerable<ILayerComment> comments =
 
  [ILayerArtifactReference](/previous-versions/ff644536(v=vs.140)). La propriété Categories indique le type d’artefact référencé (par exemple, une classe, un fichier exécutable ou un assembly). Categories détermine comment Identifier identifie l’artefact cible.
 
- [ArtifactReferenceExtensions. CreateArtifactReferenceAsync](/previous-versions/ff695840(v=vs.140)) crée une référence d’artefact à partir d’une <xref:EnvDTE.Project> ou d’un <xref:EnvDTE.ProjectItem>. S'agissant d'une opération asynchrone, vous fournissez généralement un rappel qui est appelé dès que la création est terminée.
+ [ArtifactReferenceExtensions. CreateArtifactReferenceAsync](/previous-versions/ff695840(v=vs.140)) crée une référence d’artefact à partir d’un ou d’un <xref:EnvDTE.Project> <xref:EnvDTE.ProjectItem> . S'agissant d'une opération asynchrone, vous fournissez généralement un rappel qui est appelé dès que la création est terminée.
 
  Les références d’artefact de couche ne doivent pas être confondues avec les artefacts présents dans les diagrammes de cas d’usage.
 
 ## <a name="shapes-and-diagrams"></a>Formes et diagrammes
  Deux objets sont utilisés pour représenter chaque élément dans un modèle de couche : un `ILayerElement` et un [IShape](/previous-versions/ee806673(v=vs.140)). `IShape` représente la position et la taille de la forme dans le diagramme. Dans les modèles de couche, à chaque `ILayerElement` correspond un `IShape`, et à chaque `IShape` présent dans un diagramme de couche correspond un `ILayerElement`. `IShape` est aussi utilisé avec les modèles UML. Ainsi, tous les `IShape` ne possèdent pas nécessairement un élément de couche.
 
- De la même manière, le `ILayerModel` s’affiche sur un [IDiagram](/previous-versions/ee789658(v=vs.140)).
+ De la même manière, `ILayerModel` est affiché sur un [IDiagram](/previous-versions/ee789658(v=vs.140)).
 
  Dans le code d'une commande personnalisée ou d'un gestionnaire de mouvements, vous pouvez obtenir le diagramme actif et la sélection de formes active à partir de l'importation de `DiagramContext` :
 
@@ -130,7 +130,7 @@ public void ... (...)
 ## <a name="see-also"></a>Voir aussi
 
 - [Ajouter des commandes et des mouvements aux diagrammes de couche](../modeling/add-commands-and-gestures-to-layer-diagrams.md)
-- [Ajouter une validation d’architecture personnalisée aux diagrammes de couche](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)
+- [Ajouter une validation d'architecture personnalisée aux diagrammes de couche](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)
 - [Ajouter des propriétés personnalisées à des diagrammes de couche](../modeling/add-custom-properties-to-layer-diagrams.md)
 - [Informations de référence sur les diagrammes de couche](../modeling/layer-diagrams-reference.md)
 - [Diagrammes de couche : recommandations](../modeling/layer-diagrams-guidelines.md)

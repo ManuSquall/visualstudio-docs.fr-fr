@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cb855cbed67bffc5ff2fb63b1785c577dd9fea25
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75570347"
 ---
 # <a name="command-window"></a>Fenêtre Commande
@@ -44,7 +44,7 @@ Les deux versions de cette commande retournent la valeur de la variable `varA`.
 ## <a name="entering-commands"></a>Entrée de commandes
 Le symbole supérieur à (`>`) apparaît à gauche de la fenêtre Commande comme une invite pour les nouvelles lignes. Utilisez les touches de direction HAUT et BAS pour faire défiler les commandes précédemment émises.
 
-|Tâche|Solution| Exemple|
+|Tâche|Solution|Exemple|
 |----------|--------------|-------------|
 |Évaluer une expression.|Faites précéder l’expression d’un point d’interrogation (`?`).|`? myvar`|
 |Basculer vers une fenêtre Exécution.|Entrez `immed` dans la fenêtre sans le signe supérieur à (>)|`immed`|
@@ -111,5 +111,5 @@ Si, par exemple, vous souhaitez ouvrir un fichier qui possède un chemin contena
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Alias de commande de studio visuel](../../ide/reference/visual-studio-command-aliases.md)
-- [Commandes de studio visuel](../../ide/reference/visual-studio-commands.md)
+- [Alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)

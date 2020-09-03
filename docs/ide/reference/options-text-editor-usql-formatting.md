@@ -14,19 +14,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 200ec41a1295178f1127d10053985384a7813158
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75568267"
 ---
 # <a name="options-text-editor-u-sql-formatting"></a>Options, Éditeur de texte, U-SQL, Mise en forme
 
-Utilisez la page d’options **de formatage** pour définir des options de formatage du code dans l’éditeur de code. Pour accéder à cette page d’options, choisissez **Tools** > **Options**. Dans la boîte de dialogue **Options**, choisissez **Éditeur de texte** > **U-SQL** > **Mise en forme**.
+Utilisez la page Options de **mise en forme** pour définir les options de mise en forme du code dans l’éditeur de code. Pour accéder à cette page d’options, choisissez **Outils**  >  **options**. Dans la boîte de dialogue **Options**, choisissez **Éditeur de texte** > **U-SQL** > **Mise en forme**.
 
 ## <a name="general-page"></a>Page Général
 
-### <a name="general-settings"></a>Paramètres généraux :
+### <a name="general-settings"></a>Paramètres généraux :
 
 Ces paramètres affectent le *moment* où l’éditeur de code applique les options de mise en forme au code.
 
@@ -44,7 +44,7 @@ Les sous-pages **Retrait**, **Nouvelles lignes** et **Espacement** proposent tou
 
 ### <a name="indentation-remarks"></a>Notes relatives au retrait
 
-Les options d’indentation sur les pages **Onglets** pour chaque langue ne déterminent que l’endroit où l’éditeur de code place le curseur lorsque vous appuyez **sur Enter** à la fin d’une ligne. Les options de mise en retrait sous **Mise en forme** s’appliquent quand le code est mis en forme automatiquement, par exemple :
+Les options de mise en retrait dans les pages d' **onglets** pour chaque langue déterminent uniquement l’emplacement où l’éditeur de code place le curseur quand vous appuyez sur **entrée** à la fin d’une ligne. Les options de mise en retrait sous **Mise en forme** s’appliquent quand le code est mis en forme automatiquement, par exemple :
 
 - Quand vous collez du code dans le fichier alors que l’option **Mettre en forme automatiquement lors du collage** est sélectionnée.
 - Quand le bloc en cours de mise en forme est tapé manuellement.

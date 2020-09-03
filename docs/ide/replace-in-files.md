@@ -15,18 +15,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dddd55714e53516ba1ccd8a11c99761a4db7136a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585624"
 ---
 # <a name="replace-in-files"></a>Remplacer dans les fichiers
 
-**Remplacer dans les fichiers** vous permet de rechercher une chaîne ou une expression dans le code d’un ensemble défini de fichiers, et de modifier l’ensemble ou une partie des correspondances trouvées. Les correspondances trouvées et les actions prises sont répertoriées dans la fenêtre **Résultats de recherche** sélectionnée dans les options de **résultat**.
+**Remplacer dans les fichiers** vous permet de rechercher une chaîne ou une expression dans le code d’un ensemble défini de fichiers, et de modifier l’ensemble ou une partie des correspondances trouvées. Les correspondances trouvées et les actions prises sont répertoriées dans la fenêtre résultats de la **recherche** sélectionnée dans **options de résultat**.
 
 > [!NOTE]
-> Les boîtes de dialogue et les commandes de menu que vous voyez peuvent différer de celles décrites dans **Aide** en fonction de vos paramètres actifs ou de votre édition. Pour modifier vos paramètres, par exemple pour définir les paramètres **Général** ou **Visual C++**, choisissez **Outils** > **Importation et exportation de paramètres**, puis choisissez **Réinitialiser tous les paramètres**.
+> Les boîtes de dialogue et les commandes de menu affichées peuvent différer de celles décrites dans **l’aide** en fonction de vos paramètres actifs ou de l’édition. Pour modifier vos paramètres, par exemple pour définir les paramètres **Général** ou **Visual C++**, choisissez **Outils** > **Importation et exportation de paramètres**, puis choisissez **Réinitialiser tous les paramètres**.
 
 Vous pouvez utiliser l’une des méthodes suivantes pour afficher l’option **Remplacer dans les fichiers** dans la fenêtre **Rechercher et remplacer**.
 
@@ -60,7 +60,7 @@ L’option choisie dans la liste déroulante **Regarder dans** détermine si la 
 
 ## <a name="find-options"></a>Options de recherche
 
-Vous pouvez élargir ou effondrer la section **Options Trouver.** Les options suivantes peuvent être sélectionnées ou désélectionnées :
+Vous pouvez développer ou réduire la section **options de recherche** . Les options suivantes peuvent être sélectionnées ou désélectionnées :
 
 **Respecter la casse**
 
@@ -80,19 +80,19 @@ Cette liste indique les types de fichiers à examiner dans les répertoires choi
 
 ## <a name="result-options"></a>Options de résultat
 
-Vous pouvez élargir ou effondrer la section **Options de résultat.** Les options suivantes peuvent être sélectionnées ou désélectionnées :
+Vous pouvez développer ou réduire la section **options de résultat** . Les options suivantes peuvent être sélectionnées ou désélectionnées :
 
-**Trouver résultats 1** fenêtre
+Fenêtre résultats de la **recherche 1**
 
 Si cette option est sélectionnée, les résultats de la recherche actuelle remplacent le contenu de la fenêtre **Résultats de la recherche 1**. Cette fenêtre s'ouvre automatiquement pour afficher vos résultats de recherche. Pour ouvrir cette fenêtre manuellement, sélectionnez **Autres fenêtres** dans le menu **Affichage** et choisissez **Résultats de la recherche 1**.
 
-**Trouver résultats 2** fenêtre
+Fenêtre résultats de la **recherche 2**
 
 Si cette option est sélectionnée, les résultats de la recherche actuelle remplacent le contenu de la fenêtre **Résultats de la recherche 2**. Cette fenêtre s'ouvre automatiquement pour afficher vos résultats de recherche. Pour ouvrir cette fenêtre manuellement, sélectionnez **Autres fenêtres** dans le menu **Affichage** et choisissez **Résultats de la recherche 2**.
 
 **Afficher les noms des fichiers seulement**
 
-Lorsque cette case à cocher est sélectionnée, les fenêtres **Trouver des résultats** dressent la liste des noms et des chemins complets pour tous les fichiers qui contiennent la chaîne de recherche. Toutefois, les résultats ne contiennent pas la ligne de code où apparaît la chaîne. Cette case à cocher est disponible pour **Trouver dans les fichiers** seulement.
+Lorsque cette case à cocher est activée, les fenêtres résultats de la **recherche** répertorient les noms complets et les chemins d’accès de tous les fichiers qui contiennent la chaîne recherchée. Toutefois, les résultats ne contiennent pas la ligne de code où apparaît la chaîne. Cette case à cocher est disponible uniquement pour **Rechercher dans les fichiers** .
 
 **Conserver les fichiers modifiés ouverts après un remplacement global**
 
@@ -103,6 +103,6 @@ Lorsque cette option est activée, tous les fichiers dans lesquels des remplacem
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Trouver et remplacer le texte](../ide/finding-and-replacing-text.md)
-- [Trouver dans les fichiers](../ide/find-in-files.md)
+- [Rechercher et remplacer du texte](../ide/finding-and-replacing-text.md)
+- [Rechercher dans les fichiers](../ide/find-in-files.md)
 - [Commandes Visual Studio](../ide/reference/visual-studio-commands.md)

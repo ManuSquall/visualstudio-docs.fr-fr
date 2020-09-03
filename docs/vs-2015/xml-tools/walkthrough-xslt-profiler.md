@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f7ee6665aea98edf7cb701f5fdfe07d293887bac
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669522"
 ---
 # <a name="walkthrough-xslt-profiler"></a>Procédure pas à pas : Générateur de profils XSLT
@@ -21,7 +21,7 @@ ms.locfileid: "72669522"
 
 Le Générateur de profils XSLT crée des rapports de performances XSLT détaillés qui vous permettent de mesurer, d'évaluer et de cibler les problèmes liés aux performances dans le code XSLT. Le Générateur de profils XSLT inclut des conseils utiles pour les optimisations de feuille de style XSL et XSLT. Pour les applications XSLT qui demandent des performances maximales, cet outil peut être essentiel.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Prérequis
  Les procédures dans la procédure pas à pas suivante nécessitent Visual Studio 2010 et le .NET Framework version 4.0. Le Générateur de profils XSLT est uniquement disponible si Microsoft Visual Studio Team System avec les outils de profilage est installé.
 
 ### <a name="create-the-performance-report"></a>Créer le rapport de performances

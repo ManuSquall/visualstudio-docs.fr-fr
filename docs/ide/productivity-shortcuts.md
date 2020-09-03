@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 71116fbc05eade8ffb89c38a922106f375b86021
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585728"
 ---
 # <a name="shortcut-tips-for-visual-studio"></a>Conseils d’utilisation des raccourcis pour Visual Studio
@@ -28,102 +28,102 @@ Pour obtenir la liste complète des raccourcis de commande, consultez [Raccourci
 
 |Tâche|Raccourci|
 |-|-|
-|Agrandir la fenêtre flottante|**Double-clic** sur la barre de titre|
-|Agrandir/réduire les fenêtres|**Win**+**Up flèche** / **Win**+Down**flèche**|
-|Ancrer à nouveau la fenêtre flottante|**Ctrl**+**double-clic** sur la barre de titre|
-|Déplacer/ancrer les fenêtres flottantes|**Gagnez**+**la flèche** / gauche**Gagnez**+**la flèche droite**|
-|Fermer le document actif|**Ctrl**+**F4**|
-|Afficher la liste des fichiers ouverts|**Flèche de Ctrl**+**Alt**+**Down**|
-|Afficher toutes les fenêtres flottantes|**Ctrl**+**Shift**+**M**|
-|Afficher la liste des raccourcis|**Gagnez**+**Alt**+**N**|
-|Démarrer une nouvelle instance|**Win**+**Shift**+**N**|
-|Basculer entre les fenêtres|**Gagner**+**N**|
+|Agrandir la fenêtre flottante|**Double-cliquez** sur la barre de titre|
+|Agrandir/réduire les fenêtres|**Gagner** + **Flèche haut**  /  **Gagner** + **Flèche bas**|
+|Ancrer à nouveau la fenêtre flottante|**CTRL** + **double-cliquez** sur la barre de titre|
+|Déplacer/ancrer les fenêtres flottantes|**Gagner** + **Flèche gauche**  /  **Gagner** + **Flèche droite**|
+|Fermer le document actif|**CTRL** + **F4**|
+|Afficher la liste des fichiers ouverts|**CTRL** + **ALT** + **Flèche bas**|
+|Afficher toutes les fenêtres flottantes|**CTRL** + **MAJ** + **M**|
+|Afficher la liste des raccourcis|**Gagner** + **ALT** + **N**|
+|Démarrer une nouvelle instance|**Gagner** + **MAJ** + **N**|
+|Basculer entre les fenêtres|**Gagner** + **N**|
 
 ## <a name="search"></a>Recherche
 
 |Tâche|Raccourci|
 |-|-|
-|Recherche Explorateur de solutions|**Ctrl**+**;**|
-|Placer le focus dans la zone de recherche d’une fenêtre outil (à l’exception de l’éditeur)|**Alt**+ Alt**`** lorsque la fenêtre d’outil a mise au point|
-|Recherche Visual Studio|**Ctrl**+**Q**|
+|Recherche Explorateur de solutions|**CTRL** + **;**|
+|Placer le focus dans la zone de recherche d’une fenêtre outil (à l’exception de l’éditeur)|**Alt** + Alt **`** Quand la fenêtre outil a le focus|
+|Recherche Visual Studio|**CTRL** + **Q**|
 |Filtre de résultats de zone de recherche|@opt - Options<br />@cmd - Commandes<br />@mru - Les dernières utilisées<br />@doc - Documents ouverts|
-|Rechercher dans les options d'outils|**Ctrl**+**E**|
+|Rechercher dans les options d'outils|**CTRL** + **E**|
 
 ## <a name="find-in-the-editor"></a>Rechercher dans l’éditeur
 
 |Tâche|Raccourci|
 |-|-|
-|Recherche rapide|**Ctrl**+**F**|
-|Recherche rapide - Résultat suivant|**Entrer**|
-|Recherche rapide - Résultat précédent|**Entrez par**+**quarts**|
-|Recherche rapide - Zone combinée Développer|**Flèche Alt**+**Down**|
+|Recherche rapide|**CTRL** + **F**|
+|Recherche rapide - Résultat suivant|**Entrez**|
+|Recherche rapide - Résultat précédent|**MAJ** + **Entrez**|
+|Recherche rapide - Zone combinée Développer|**ALT** + **Flèche bas**|
 |Faire disparaître la recherche|**Échap**|
-|Remplacement rapide|**Ctrl**+**H**|
-|Remplacement rapide - Suivant|**Alt**+**R**|
-|Remplacement rapide - Remplacer tout|**Alt**+**A**|
-|Rechercher dans les fichiers|**Ctrl**+**Shift**+**F**|
-|Remplacer dans les fichiers|**Ctrl**+**Shift**+**H**|
+|Remplacement rapide|**CTRL** + **H**|
+|Remplacement rapide - Suivant|**ALT** + **R**|
+|Remplacement rapide - Remplacer tout|**ALT** + **Un**|
+|Rechercher dans les fichiers|**CTRL** + **MAJ** + **F**|
+|Remplacer dans les fichiers|**CTRL** + **MAJ** + **H**|
 
 ## <a name="code-editor"></a>Éditeur de code
 
 |Tâche|Raccourci|
 |-|-|
-|Atteindre tout|**Ctrl**+**T**|
-|Accéder aux fichiers récents|**Ctrl**+**T**,**R**|
-|Ajout de plusieurs signes insertion|**Ctrl**+**Alt**+**cliquez sur**|
-|Ajout de sélections correspondantes avec plusieurs signes insertion|**Shift**+**Alt**+**Ins**|
-|Mettre le document en forme|**Ctrl**+**K**,**D**|
-|Mode de suggestion IntelliSense|**Espace Ctrl**+**Alt**+**Space** (Toggle)|
-|Forcer l'affichage d'IntelliSense|**Ctrl**+**J**|
-|Actions rapides|**Ctrl**+**.**|
-|Sélecteur d'extraits|**Ctrl**+**K**,**X** ou **?**,**Tab** (Visual Basic)|
-|Entourer de|**Ctrl**+**K**,**S**|
-|Afficher les informations express|**Ctrl**+**K**,**je**|
-|Naviguer vers|**Ctrl**+**,**|
-|Parcourir les références en surbrillance|**Ctrl**+**Shift**+**Up** (Précédent)<br />**Ctrl**+**Shift**+**Down** (Suivant)|
-|Éditeur de zoom|**Ctrl**+**Shift** + **>** (Entre)<br />**Ctrl**+**Shift** + **<** (Out)|
-|Sélection de bloc|Maintenez la touche **Alt** et faites glisser la souris<br />**Clés Shift**+**Alt**+**Arrow**|
-|Déplacer la ligne vers le haut ou vers le bas|**Flèche Alt**+**Up** / **Alt**+Down**flèche**|
-|Dupliquer la ligne|**Ctrl**+**E**,**V**|
-|Développer la sélection|**Alt De décalage**+**Alt**+**=**|
-|Diminuer la sélection|**Alt De décalage**+**Alt**+**-**|
+|Atteindre tout|**CTRL** + **T**|
+|Accéder aux fichiers récents|**CTRL** + **T**,**R**|
+|Ajout de plusieurs signes insertion|**CTRL** + **ALT** + **cliquez sur**|
+|Ajout de sélections correspondantes avec plusieurs signes insertion|**MAJ** + **ALT** + **Compléments**|
+|Mettre le document en forme|**CTRL** + **K**,**D**|
+|Mode de suggestion IntelliSense|**CTRL** + **ALT** + **Espace** (bascule)|
+|Forcer l'affichage d'IntelliSense|**CTRL** + **J**|
+|Actions rapides|**CTRL** + **.**|
+|Sélecteur d'extraits|**CTRL** + **K**,**X** ou **?**,**onglet** (Visual Basic)|
+|Entourer de|**CTRL** + **K**,**S**|
+|Afficher les informations express|**CTRL** + **K**,**I**|
+|Naviguer vers|**CTRL** + **,**|
+|Parcourir les références en surbrillance|**CTRL** + **MAJ** + **Haut** (précédent)<br />**CTRL** + **MAJ** + **Vers le dessous** (suivant)|
+|Éditeur de zoom|**CTRL** + **Shift** + MAJ **>** Dans<br />**CTRL** + **Shift** + MAJ **<** À|
+|Sélection de bloc|Maintenez la touche **Alt** et faites glisser la souris<br />**MAJ** + **ALT** + **Touches de direction**|
+|Déplacer la ligne vers le haut/le bas|**ALT** + **Flèche haut**  /  **ALT** + **Flèche bas**|
+|Dupliquer la ligne|**CTRL** + **E**,**V**|
+|Développer la sélection|**MAJ** + **ALT**+**=**|
+|Diminuer la sélection|**MAJ** + **ALT**+**-**|
 |Atteindre la définition|**F12**|
-|Aperçu de la définition|**Alt**+**F12**|
-|Atteindre une pile de définitions|**Ctrl**+**Shift**+**8** (Dos)<br />**Ctrl**+**Shift**+**7** (En avant)|
+|Aperçu de la définition|**ALT** + **F12**|
+|Atteindre une pile de définitions|**CTRL** + **MAJ** + **8** (arrière)<br />**CTRL** + **MAJ** + **7** (suivant)|
 |Fermer la fenêtre Aperçu de définition|**Échap**|
-|Promouvoir la fenêtre Aperçu de définition dans un onglet de document normal|**Ctrl**+**Alt**+**Accueil**|
-|Naviguer entre plusieurs fenêtres d'aperçu de définition|**Ctrl**+**Alt** + **-** et **Ctrl**+**Alt**+**=**|
+|Promouvoir la fenêtre Aperçu de définition dans un onglet de document normal|**CTRL** + **ALT** + **Page d’hébergement**|
+|Naviguer entre plusieurs fenêtres d'aperçu de définition|**CTRL** + **Alt** + Alt **-** et **CTRL** + **ALT**+**=**|
 |Naviguer entre plusieurs résultats d'aperçu de définition|**F8** et **Maj**+**F8**|
-|Permuter entre la fenêtre de l'éditeur de code et la fenêtre Aperçu de définition|**Esc De décalage**+**Esc**|
-|Accéder à Bloc englobant|**Flèche de Ctrl**+**Alt**+**Up**|
-|Accéder au problème suivant/précédent|**Alt**+**PgUp** / **Alt**+**PgDn**|
-|Menu contextuel de navigation|**Alt**+**`**|
+|Permuter entre la fenêtre de l'éditeur de code et la fenêtre Aperçu de définition|**MAJ** + **Echap**|
+|Accéder à Bloc englobant|**CTRL** + **ALT** + **Flèche haut**|
+|Accéder au problème suivant/précédent|**ALT** + **PG PRÉC**  /  **ALT** + **PG SUIV**|
+|Menu contextuel de navigation|**Appuyez**+**`**|
 
 ## <a name="toolbars"></a>Barres d'outils
 
 |Tâche|Raccourci|
 |-|-|
 |Ajouter des boutons|Sélectionner le bouton de dépassement de capacité|
-|Rechercher le combo dans la barre d'outils Standard|**Ctrl**+**D**|
-|Mode commande de zone de texte de recherche|Type**>**|
-|Créer un alias|Saisissez **alias \<nouvel alias> \<commande>** dans la fenêtre **Commande**|
+|Rechercher le combo dans la barre d'outils Standard|**CTRL** + **D**|
+|Mode commande de zone de texte de recherche|Entrer **>**|
+|Créer un alias|Entrer **un \<new alias> \<command> alias** dans la fenêtre de **commande**|
 
 ## <a name="debugging"></a>Débogage
 
 |Tâche|Raccourci|
 |-|-|
-|Démarrer le débogage|**F5 F5**|
-|Arrêter le débogage|**Changement**+**F5**|
-|Redémarrer le débogage|**Ctrl**+**Shift**+**F5**|
+|Démarrer le débogage|**F5**|
+|Arrêter le débogage|**MAJ** + **F5**|
+|Redémarrer le débogage|**CTRL** + **MAJ** + **F5**|
 |Pas à pas principal|**F10**|
 |Pas à pas détaillé|**F11**|
-|Pas à pas sortant|**Quart de travail**+**F11**|
-|Exécuter jusqu'au curseur|**Ctrl**+**F10**|
-|Définir l'instruction suivante|**Ctrl**+**Shift**+**F10**|
+|Pas à pas sortant|**MAJ** + **F11**|
+|Exécuter jusqu'au curseur|**CTRL** + **F10**|
+|Définir l'instruction suivante|**CTRL** + **MAJ** + **F10**|
 |Définir et basculer le point d'arrêt|**F9**|
-|Désactiver le point d'arrêt|**Ctrl**+**F9**|
-|Exécution (fenêtre)|**Ctrl**+**Alt**+**I**|
-|Fenêtre Exécution - Mode Commande|Type**>**|
+|Désactiver le point d'arrêt|**CTRL** + **F9**|
+|Exécution (fenêtre)|**CTRL** + **ALT** + **Je**|
+|Fenêtre Exécution - Mode Commande|Entrer **>**|
 |Fenêtre Exécution - Vider la mémoire tampon|Saisissez **cls**|
 |Fenêtre Exécution - Valeur d'impression|Saisissez **?varname**|
 

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c344d996c70012ef1516fa2bebe52394739bea35
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85768582"
 ---
 # <a name="extend-menus-and-commands"></a>Étendre des menus et des commandes
@@ -28,7 +28,7 @@ Les commandes vous permettent d’ajouter des actions et des processus à Visual
 
  Les rubriques suivantes expliquent comment ajouter différents types de commandes, de menus et de barres d’outils.
 
-## <a name="in-this-section"></a>Dans cette section
+## <a name="in-this-section"></a>Contenu de cette section
 - [Ajouter un menu à la barre de menus de Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) Explique comment ajouter un menu à la barre de menus supérieure de Visual Studio.
 
 - [Lier des raccourcis clavier à des éléments de menu](../extensibility/binding-keyboard-shortcuts-to-menu-items.md) Explique comment ajouter un raccourci clavier (tel que CTRL + 3) à un élément de menu.

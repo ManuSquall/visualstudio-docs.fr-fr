@@ -14,23 +14,23 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 1e5045a62d0a654af968d50e0c309bcf8104b5cc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668984"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box-legacy"></a>Rechercher et sélectionner un type .NET, boîte de dialogue (héritée)
-Cette rubrique décrit comment utiliser la boîte de dialogue **Parcourir et sélectionner un type .net** dans le [!INCLUDE[wfd1](../includes/wfd1-md.md)] hérité. Utilisez le [!INCLUDE[wfd2](../includes/wfd2-md.md)] hérité lorsque vous devez cibler le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+Cette rubrique décrit comment utiliser la boîte de dialogue **Parcourir et sélectionner un type .net** dans le hérité [!INCLUDE[wfd1](../includes/wfd1-md.md)] . Utilisez le [!INCLUDE[wfd2](../includes/wfd2-md.md)] hérité lorsque vous devez cibler le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
  Dans la fenêtre **Propriétés** , lorsque vous sélectionnez des propriétés qui acceptent un type de .NET Framework dans un assembly référencé, un Ellipse **[...]** apparaît à la fin de la zone de texte de la propriété. Cliquez sur **[...]** pour ouvrir la boîte de dialogue **Parcourir et sélectionner un type .net** . Dans cette boîte de dialogue, vous pouvez choisir un type dans l’arborescence des assemblys référencés. Par exemple, lorsque vous utilisez le concepteur d’activités, dans la fenêtre **Propriétés** , cliquez sur les ellipses de la **classe de base** **[...]** pour sélectionner une autre classe de base pour une activité à partir de l’arborescence des assemblys référencés.
 
  Le tableau suivant décrit les éléments d’interface utilisateur de la boîte de dialogue **Parcourir et sélectionner un type .net** .
 
-|Élément d'interface utilisateur|Description|
+|Élément de l’interface utilisateur|Description|
 |----------------|-----------------|
 |**Nom du type :**|Nom du type actuellement sélectionné.|
 |**Type**|Le volet de gauche affiche l'arborescence des assemblys référencés. Le volet de droite affiche les types disponibles pour l'assembly référencé sélectionné dans le volet de gauche.|
 
 ## <a name="see-also"></a>Voir aussi
- [Utilisation du concepteur d’activités hérité](../workflow-designer/using-the-legacy-activity-designer.md)
+ [Utilisation du concepteur d'activités hérité](../workflow-designer/using-the-legacy-activity-designer.md)

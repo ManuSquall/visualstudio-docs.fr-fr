@@ -1,5 +1,5 @@
 ---
-title: Serveurs (Kit de développement logiciel Visual Studio) | Microsoft Docs
+title: Serveurs (kit de développement logiciel Visual Studio) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,25 +12,25 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7ed2ce924b22827a82a67664e3e473f0930a87e3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68199398"
 ---
 # <a name="servers-visual-studio-sdk"></a>Serveurs (SDK Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-En termes d’architecture du débogueur, une **server**:  
+En termes d’architecture du débogueur, un **serveur**:  
   
-- Est un conteneur de ports et les fournisseurs de port et est utilisé pour communiquer les ports et les fournisseurs de port pour le Gestionnaire de session de débogage (SDM) et de déboguer les moteurs.  
+- Est un conteneur de ports et de fournisseurs de ports, qui est utilisé pour communiquer des ports et des fournisseurs de ports aux moteurs de débogage de session (SDM) et de débogage.  
   
-- Peut s’identifier par son nom et énumérer ses ports et les fournisseurs de port.  
+- Peut s’identifier par son nom et énumérer ses ports et fournisseurs de ports.  
   
-- Est représenté par un [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md) interface, qui est implémentée uniquement par Visual Studio (une seule instance d’un serveur pour chaque instance en cours d’exécution de Visual Studio).  
+- Est représenté par une interface [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md) , qui est implémentée uniquement par Visual Studio (une instance d’un serveur pour chaque instance de Visual Studio en cours d’exécution).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Ports](../../extensibility/debugger/ports.md)   
+ [Utilis](../../extensibility/debugger/ports.md)   
  [Fournisseurs de port](../../extensibility/debugger/port-suppliers.md)   
  [Concepts du débogueur](../../extensibility/debugger/debugger-concepts.md)   
  [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md)

@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c500b1b516c2b1ab1bc66b7970fccc4ec7a85baa
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75568709"
 ---
 # <a name="list-memory-command"></a>Afficher la mémoire, commande
@@ -53,7 +53,7 @@ facultatif. Type du format selon lequel les informations sur la mémoire sont af
 
 facultatif. Spécifie le format d’affichage des nombres : signé, non signé ou hexadécimal.
 
-## <a name="remarks"></a>Notes 
+## <a name="remarks"></a>Notes
 Au lieu d’écrire une commande **Debug.ListMemory** complète avec tous ses commutateurs, vous pouvez appeler la commande à l’aide d’alias préparamétrés avec certains commutateurs prédéfinis à des valeurs spécifiées. Par exemple, au lieu d’entrer :
 
 ```cmd
@@ -70,16 +70,16 @@ Voici une liste des alias disponibles pour la commande **Debug.ListMemory** :
 
 |Alias|Commande et commutateurs|
 |-----------| - |
-|**D**|Debug.ListMemory|
+|**d**|Debug.ListMemory|
 |**da**|Debug.ListMemory /Ansi|
-|**Db**|Debug.ListMemory /Format:OneByte|
-|**Dc**|Debug.ListMemory /Format:FourBytes /Ansi|
-|**jj**|Debug.ListMemory /Format:FourBytes|
-|**Df**|Debug.ListMemory /Format:Float|
-|**Dq**|Debug.ListMemory /Format:EightBytes|
+|**bases**|Debug.ListMemory /Format:OneByte|
+|**métafichier**|Debug.ListMemory /Format:FourBytes /Ansi|
+|**JJ**|Debug.ListMemory /Format:FourBytes|
+|**DL**|Debug.ListMemory /Format:Float|
+|**DQ**|Debug.ListMemory /Format:EightBytes|
 |**du**|Debug.ListMemory /Unicode|
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 
 ```cmd
 >Debug.ListMemory /Format:float /Count:30 /Unicode
@@ -87,9 +87,9 @@ Voici une liste des alias disponibles pour la commande **Debug.ListMemory** :
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Afficher la pile d’appels, commande](../../ide/reference/list-call-stack-command.md)
-- [Répertorier les threads, commande](../../ide/reference/list-threads-command.md)
-- [Commandes de studio visuel](../../ide/reference/visual-studio-commands.md)
-- [Commande, fenêtre](../../ide/reference/command-window.md)
-- [Boîte de recherche/commande](../../ide/find-command-box.md)
-- [Alias de commande de studio visuel](../../ide/reference/visual-studio-command-aliases.md)
+- [Afficher la pile des appels, commande](../../ide/reference/list-call-stack-command.md)
+- [Liste des threads, commande](../../ide/reference/list-threads-command.md)
+- [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)
+- [Fenêtre commande](../../ide/reference/command-window.md)
+- [Zone Rechercher/commande](../../ide/find-command-box.md)
+- [Alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

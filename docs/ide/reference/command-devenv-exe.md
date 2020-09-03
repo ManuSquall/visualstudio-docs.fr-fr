@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 434b2ad0f2a6ca4d84c6d82bf9a1a85876a4d975
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75570399"
 ---
 # <a name="command-devenvexe"></a>/Command (devenv.exe)
@@ -35,7 +35,7 @@ devenv /Command CommandName
 
 Obligatoire. Nom complet d’une commande Visual Studio ou de son alias, entre guillemets doubles. Pour plus d’informations sur la syntaxe des commandes et des alias, consultez [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md).
 
-## <a name="remarks"></a>Notes 
+## <a name="remarks"></a>Notes
 
 Une fois le démarrage terminé, l’IDE exécute la commande nommée.
 
@@ -45,9 +45,9 @@ Si vous utilisez ce commutateur, l’IDE n’affiche pas la page de démarrage a
 
 ::: moniker-end
 
-Si un complément expose une commande, vous pouvez utiliser ce commutateur pour lancer le complément à partir de la ligne de commande. Pour plus d’informations, voir [Comment : Contrôler les modules add-ins en utilisant le gestionnaire add-in](/previous-versions/xwdatdwh(v=vs.140)).
+Si un complément expose une commande, vous pouvez utiliser ce commutateur pour lancer le complément à partir de la ligne de commande. Pour plus d’informations, consultez [Comment : contrôler des compléments à l’aide du gestionnaire de compléments](/previous-versions/xwdatdwh(v=vs.140)).
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 
 Le premier exemple lance Visual Studio et exécute automatiquement la macro Open Favorite Files.
 
@@ -66,5 +66,5 @@ devenv /command "nf some_file.cs"
 ## <a name="see-also"></a>Voir aussi
 
 - [Commutateurs de ligne de commande Devenv](../../ide/reference/devenv-command-line-switches.md)
-- [Alias de commande de studio visuel](../../ide/reference/visual-studio-command-aliases.md)
-- [Fenêtre de commande](command-window.md)
+- [Alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Fenêtre Commande](command-window.md)

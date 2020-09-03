@@ -14,15 +14,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b6ba8fb419726018bd089e217386ab5dbd6a9c33
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75568657"
 ---
 # <a name="log-command-window-output-command"></a>Enregistrer la sortie de la fenêtre Commande, commande
 
-Copie de toutes les entrées et sorties de la fenêtre **command** dans un fichier.
+Copie toutes les entrées et sorties de la fenêtre **commande** dans un fichier.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -49,7 +49,7 @@ facultatif. Arrête le journal pour la fenêtre **Commande**.
 /overwrite\
 facultatif. Si le fichier spécifié dans l’argument `filename` est identique à un fichier existant, celui-ci est remplacé.
 
-## <a name="remarks"></a>Notes 
+## <a name="remarks"></a>Notes
 
 Si aucun fichier n’est spécifié, le fichier cmdline.log est créé par défaut. L’alias par défaut de cette commande est Log.
 
@@ -76,6 +76,6 @@ Cet exemple reprend l’enregistrement des commandes dans le dernier fichier jou
 ## <a name="see-also"></a>Voir aussi
 
 - [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Fenêtre de commande](../../ide/reference/command-window.md)
-- [Boîte De recherche/commande](../../ide/find-command-box.md)
+- [Fenêtre Commande](../../ide/reference/command-window.md)
+- [Zone Rechercher/commande](../../ide/find-command-box.md)
 - [Alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

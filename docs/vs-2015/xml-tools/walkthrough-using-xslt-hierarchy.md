@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 46e6acc8f65a9c9589348508f57cc75b04c61ccc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669551"
 ---
 # <a name="walkthrough-using-xslt-hierarchy"></a>Procédure pas à pas : utilisation de XSLT Hierarchy
@@ -25,7 +25,7 @@ L’outil XSLT Hierarchy simplifie de nombreuses tâches de développement XML. 
 
  L'exemple dans cette rubrique illustre le débogage dans une feuille de style référencée.
 
-### <a name="procedure-title"></a>Intitulé de la procédure
+### <a name="procedure-title"></a>Titre de la procédure
 
 1. Ouvrez un document XML dans Visual Studio. Cet exemple utilise le document `collection.xml` suivant.
 

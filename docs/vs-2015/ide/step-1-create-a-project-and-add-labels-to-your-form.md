@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2a13d96d8932a3a9e4628f2d0e67a28869252c95
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72667362"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Étape 1 : créer un projet et ajouter des étiquettes à votre formulaire
@@ -26,7 +26,7 @@ Les premières étapes du développement de ce questionnaire consistent à crée
 
 ### <a name="to-create-a-project-and-set-properties-for-a-form"></a>Pour créer un projet et définir des propriétés pour un formulaire
 
-1. Dans la barre de menus, sélectionnez **Fichier**, **Nouveau**, **Projet**.
+1. Dans le menu principal, sélectionnez **Fichier**, **Nouveau**, **Projet**.
 
 2. Dans la liste **Modèles installés**, choisissez **C#** ou **Visual Basic**.
 
@@ -134,7 +134,7 @@ Les premières étapes du développement de ce questionnaire consistent à crée
 
 5. Nommez le second contrôle Label point d’interrogation **minusRightLabel**.
 
-6. Nommez le contrôle **NumericUpDown** **difference**.
+6. Nommez le contrôle **NumericUpDown****difference**.
 
 7. Collez les cinq contrôles deux fois de plus.
 

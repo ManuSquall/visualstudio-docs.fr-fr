@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a1692403d61c99febd30fe3829e5fadd7dd1c51a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669497"
 ---
 # <a name="working-with-xml-data"></a>Utilisation de données XML
@@ -24,7 +24,7 @@ XML et les technologies y associées jouent un grand rôle dans le traitement de
 ## <a name="xml-editor"></a>Éditeur XML
  L'éditeur XML est utilisé pour modifier des documents XML. Il offre une vérification complète de la syntaxe XML 1.0, une validation des schémas en cours de frappe, un codage de couleurs et IntelliSense. Si un schéma ou une définition de type de document est fournie, IntelliSense l'utilise pour répertorier les éléments et attributs possibles.
 
- Autres fonctionnalités de l’éditeur :
+ Les fonctionnalités supplémentaires sont les suivantes :
 
 - Prise en charge des extraits XML, notamment des extraits générés par schéma
 
@@ -52,7 +52,7 @@ XML et les technologies y associées jouent un grand rôle dans le traitement de
 
  [Concepteur de schémas XML](../xml-tools/xml-schema-designer.md) Décrit le concepteur de schémas XML et l’utilisation des schémas en langage XSD (XML Schema Definition).
 
-## <a name="related-sections"></a>Rubriques connexes
+## <a name="related-sections"></a>Sections connexes
  [Débogage XSLT](../xml-tools/debugging-xslt.md) Explique comment déboguer des feuilles de style à l’aide du débogueur Visual Studio.
 
  Informations de référence sur les [normes XML](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) Fournit des informations sur les technologies XML, notamment XML, la définition de type de document (DTD), le langage XSD (XML Schema Definition) et XSLT.

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 409c0f40adfd374065dedb842965d2d1237bc9a0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75568826"
 ---
 # <a name="import-and-export-settings-command"></a>Importation et exportation de paramètres (commande)
@@ -44,11 +44,11 @@ facultatif. Importe les paramètres figurant dans le fichier spécifié.
 
 facultatif. Réinitialise les paramètres actuels.
 
-## <a name="remarks"></a>Notes 
+## <a name="remarks"></a>Notes
 
 L’exécution de cette commande sans commutateur ouvre l’Assistant **Importation et exportation de paramètres**. Pour plus d’informations, consultez [Synchroniser vos paramètres](../synchronized-settings-in-visual-studio.md) et [Paramètres d’environnement](../environment-settings.md).
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 
 La commande suivante exporte les paramètres actuels dans le fichier `MyFile.vssettings` :
 

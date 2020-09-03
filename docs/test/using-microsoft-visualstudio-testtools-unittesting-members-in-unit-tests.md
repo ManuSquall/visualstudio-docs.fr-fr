@@ -8,10 +8,10 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: e45df63f36947b5f6f0aad77bb8eebcab4aca731
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75585559"
 ---
 # <a name="use-the-mstest-framework-in-unit-tests"></a>Utiliser le framework MSTest dans les tests unitaires
@@ -77,7 +77,7 @@ Chaque classe de test doit avoir l’attribut `TestClass`, et chaque méthode de
 
 ## <a name="assert-classes-and-related-exceptions"></a>Classes Assert et exceptions connexes
 
-Les tests unitaires permettent de vérifier le comportement d’une application spécifique à l’aide de différents genres d’assertions, d’exceptions et d’attributs. Pour plus d’informations, voir [Utiliser les classes d’affirmation](../test/using-the-assert-classes.md).
+Les tests unitaires permettent de vérifier le comportement d’une application spécifique à l’aide de différents genres d’assertions, d’exceptions et d’attributs. Pour plus d’informations, consultez [utilisation des classes Assert](../test/using-the-assert-classes.md).
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 

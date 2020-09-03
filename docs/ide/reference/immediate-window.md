@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b21cdb9136abe1e960e5b74bbf09e7d1694519d7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75568956"
 ---
 # <a name="immediate-window"></a>Exécution (fenêtre)
@@ -78,7 +78,7 @@ Vous pouvez utiliser la fenêtre **Exécution** pour exécuter une fonction ou u
 
     La fenêtre **Exécution** exécute `MyFunction` et affiche `4`.
 
-Si la fonction ou la sous-routine contient un point d’arrêt, Visual Studio arrête l’exécution à ce point. Vous pouvez ensuite utiliser les fenêtres du débogueur pour examiner l’état de votre programme. Pour plus d’informations, voir [Procédure pas à pas: Debugging à Design Time](../../debugger/walkthrough-debugging-at-design-time.md).
+Si la fonction ou la sous-routine contient un point d’arrêt, Visual Studio arrête l’exécution à ce point. Vous pouvez ensuite utiliser les fenêtres du débogueur pour examiner l’état de votre programme. Pour plus d’informations, consultez [procédure pas à pas : débogage au moment du design](../../debugger/walkthrough-debugging-at-design-time.md).
 
 Vous ne pouvez pas utiliser l’évaluation des expressions au moment du design dans les types de projet qui requièrent le démarrage d’un environnement d’exécution, notamment les projets Visual Studio Tools pour Office, projets web, projets Smart Device et projets SQL.
 
@@ -90,7 +90,7 @@ Lors de l’établissement du contexte pour l’évaluation des expressions au m
 
 Vous devez entrer le signe supérieur à (>) lors de l’émission de commandes Visual Studio dans la fenêtre **Exécution**. Utilisez les touches **Haut** et **Bas** pour faire défiler les commandes précédemment utilisées.
 
-|Tâche|Solution| Exemple|
+|Tâche|Solution|Exemple|
 |----------|--------------|-------------|
 |Évaluer une expression.|Faites précéder l’expression d’un point d’interrogation (?).|`? a+b`|
 |En mode Exécution, passer temporairement en mode Commande (pour exécuter une seule commande).|Entrez la commande en la faisant précéder du signe supérieur à (>).|`>alias`|
@@ -131,9 +131,9 @@ Dans certaines configurations de paramètres, les notifications d’exceptions d
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Naviguer à travers code avec le Debugger](../../debugger/navigating-through-code-with-the-debugger.md)
-- [Commande, fenêtre](../../ide/reference/command-window.md)
-- [Premier regard sur le débbugger](../../debugger/debugger-feature-tour.md)
-- [Procédure pas à pas: Debugging à Design Time](../../debugger/walkthrough-debugging-at-design-time.md)
-- [Alias de commande de studio visuel](../../ide/reference/visual-studio-command-aliases.md)
+- [Naviguer dans le code avec le débogueur](../../debugger/navigating-through-code-with-the-debugger.md)
+- [Fenêtre commande](../../ide/reference/command-window.md)
+- [Présentation du débogueur](../../debugger/debugger-feature-tour.md)
+- [Procédure pas à pas : débogage au moment du design](../../debugger/walkthrough-debugging-at-design-time.md)
+- [Alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
 - [Utilisation d’expressions régulières dans Visual Studio](../../ide/using-regular-expressions-in-visual-studio.md)

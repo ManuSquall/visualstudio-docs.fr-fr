@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 10537fb64e6ae0ebbe185024b76442704437e273
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72668839"
 ---
 # <a name="options-page-debugging-node-properties"></a>Page Options, Débogage, propriétés de nœud
@@ -24,7 +24,7 @@ Les tableaux suivants décrivent les pages (ou collections de propriétés) asso
 ## <a name="general"></a>Général
  `DTE.Properties("Debugging", "General")`
 
-|Nom de l'élément de propriété|Value|Description|
+|Nom de l'élément de propriété|Valeur|Description|
 |------------------------|-----------|-----------------|
 |PromptOnBreakpointDelete|Get/Set (booléen)|Détermine si le débogueur demande l’autorisation avant de supprimer tous les points d’arrêt dans un projet.|
 |BreakAllProcesses|Get/Set (booléen)|Détermine si le débogueur interrompt tous les processus quand un processus s’arrête.|
@@ -54,7 +54,7 @@ Les tableaux suivants décrivent les pages (ou collections de propriétés) asso
 ## <a name="edit-and-continue"></a>Modifier & Continuer
  `DTE.Properties("Debugging", "EditAndContinue")`
 
-|Nom de l'élément de propriété|Value|Description|
+|Nom de l'élément de propriété|Valeur|Description|
 |------------------------|-----------|-----------------|
 |EnableEditAndContinue|Get/Set (booléen)|Détermine si Modifier & Continuer est activé. Cette option s’applique à tous les langages qui prennent en charge Modifier & Continuer.|
 |InvokedByCommands|Get/Set (booléen)|Détermine si Modifier & Continuer applique automatiquement les modifications du code quand l’utilisateur sélectionne une commande de débogage comme **Exécuter pas à pas** ou **Continuer**. Cette option s’applique uniquement au code natif.|
@@ -66,7 +66,7 @@ Les tableaux suivants décrivent les pages (ou collections de propriétés) asso
 ## <a name="just-in-time"></a>Juste-à-temps
  `DTE.Properties("Debugging", "JustInTime")`
 
-|Nom de l'élément de propriété|Value|Description|
+|Nom de l'élément de propriété|Valeur|Description|
 |------------------------|-----------|-----------------|
 |JitManaged|Get/Set (booléen)|Détermine si le débogage juste-à-temps est activé pour le code managé.|
 |JitNative|Get/Set (booléen)|Détermine si le débogage juste-à-temps est activé pour le code natif.|
@@ -75,10 +75,10 @@ Les tableaux suivants décrivent les pages (ou collections de propriétés) asso
 ## <a name="native"></a>Natif
  `DTE.Properties("Debugging", "Native")`
 
-|Nom de l'élément de propriété|Value|Description|
+|Nom de l'élément de propriété|Valeur|Description|
 |------------------------|-----------|-----------------|
 |LoadDllExports|Get/Set (booléen)|Détermine si le débogueur charge les tables d’exportation de DLL.|
 |EnableRPC|Get/Set (booléen)|Détermine si le débogueur peut accéder aux appels de procédure distante COM.|
 
 ## <a name="see-also"></a>Voir aussi
- [Contrôle des options paramètres](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d) [détermination des noms des éléments de propriété dans les pages d’options](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa) [page Options, polices et couleurs nœud Propriétés](../../ide/reference/options-page-fonts-and-colors-node-properties.md) [options, éditeur de texte Propriétés du nœud](../../ide/reference/options-page-text-editor-node-properties.md) [général, débogage, boîte de dialogue Options ](../../debugger/general-debugging-options-dialog-box.md) [Modifier & continuer, débogage, boîte de dialogue Options, boîte de dialogue Options](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103) [juste-à-temps, débogage, boîte de dialogue Options](../../debugger/just-in-time-debugging-options-dialog-box.md)
+ [Contrôle des options paramètres](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d) [détermination des noms des éléments de propriété dans les pages d’options](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa) [page Options, polices et couleurs nœud Propriétés](../../ide/reference/options-page-fonts-and-colors-node-properties.md) [options, éditeur de texte Propriétés du nœud](../../ide/reference/options-page-text-editor-node-properties.md) [général, débogage, boîte de dialogue Options](../../debugger/general-debugging-options-dialog-box.md) [modifier et continuer, débogage, boîte de dialogue Options, boîte](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103) de dialogue Options [juste-à-temps, débogage, boîte de dialogue Options](../../debugger/just-in-time-debugging-options-dialog-box.md)

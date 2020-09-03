@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: a5d64a27759cf844550297beb19b026bbeaa0e40
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546820"
 ---
 # <a name="suppress-warnings-by-using-the-suppressmessage-attribute"></a>Supprimer des avertissements à l'aide de l'attribut SuppressMessage
@@ -33,7 +33,7 @@ Il est souvent utile d’indiquer que l’avertissement n’est pas applicable p
 
 ## <a name="in-this-section"></a>Dans cette section
 
-|Intitulé|Description|
+|Titre|Description|
 |-|-|
 |[Vue d’ensemble de la suppression à la source](../code-quality/in-source-suppression-overview.md)|Découvrez ISS et comment l’utiliser dans votre code.|
 |[Comment : supprimer des avertissements à l’aide de l’élément de menu](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)|Découvrez comment supprimer des avertissements dans l' [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE à l’aide du menu contextuel.|

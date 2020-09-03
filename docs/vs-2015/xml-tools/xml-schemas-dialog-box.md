@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d637cb3c25772685d5a782eb74bf94878ded36c2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72669423"
 ---
 # <a name="xml-schemas-dialog-box"></a>Boîte de dialogue Schémas XML
@@ -23,7 +23,7 @@ La boîte de dialogue **schémas XML** permet de sélectionner le (s) schéma (s
 
  Pour accéder à la boîte de dialogue **schémas XML** , vous pouvez soit cliquer sur le bouton **schémas** de la fenêtre Propriétés du document, soit sélectionner **schémas** dans le menu **XML** .
 
-## <a name="uielement-list"></a>Liste des éléments d’interface
+## <a name="uielement-list"></a>Liste des éléments de l'interface utilisateur
  **Utilisez** Sélectionnez le mode d’utilisation du schéma XML.
 
 - **Automatique**. Ce schéma n'est pas utilisé par le document en cours mais est disponible pour l'association automatique. Si le document XML déclare un espace de noms qui correspond au `targetNamespace` de ce schéma, le schéma sera automatiquement associé et inclus dans le jeu de schémas.
