@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 22f7da98d349da2d80019750b18c0ed5a1bbb3bc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671376"
 ---
 # <a name="properties-of-model-elements"></a>Propriétés des éléments de modèle
@@ -23,7 +23,7 @@ Cette section répertorie les propriétés que vous voyez dans le Fenêtre Propr
 
  Dans certains cas, des propriétés supplémentaires sont disponibles dans la fenêtre Détails DSL.
 
-## <a name="related-sections"></a>Rubriques connexes
+## <a name="related-sections"></a>Sections connexes
  [Personnalisation et extension d’un langage spécifique à un domaine](../modeling/customizing-and-extending-a-domain-specific-language.md)
 
  [Remplacement et extension des classes générées](../modeling/overriding-and-extending-the-generated-classes.md)

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 256fc281b27c483f1dda0317f7d2695fa36c47f8
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535055"
 ---
 # <a name="ca1018-mark-attributes-with-attributeusageattribute"></a>CA1018 : Marquer les attributs avec AttributeUsageAttribute
@@ -32,7 +32,7 @@ ms.locfileid: "85535055"
 |Category|Microsoft. Design|
 |Modification avec rupture|Rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  L' <xref:System.AttributeUsageAttribute?displayProperty=fullName> attribut n’est pas présent sur l’attribut personnalisé.
 
 ## <a name="rule-description"></a>Description de la règle
@@ -47,7 +47,7 @@ ms.locfileid: "85535055"
  Vous devez corriger une violation de cette règle au lieu d’exclure le message. Même si l’attribut hérite <xref:System.AttributeUsageAttribute> de, l’attribut doit être présent pour simplifier la maintenance du code.
 
 ## <a name="example"></a>Exemple
- L’exemple suivant définit deux attributs. `BadCodeMaintainerAttribute`omet de manière incorrecte l' <xref:System.AttributeUsageAttribute> instruction, et `GoodCodeMaintainerAttribute` implémente correctement l’attribut décrit plus haut dans cette section. Notez que la propriété `DeveloperName` est requise par la règle de conception [ca1019 : définir des accesseurs pour les arguments d’attribut](../code-quality/ca1019-define-accessors-for-attribute-arguments.md) et est incluse par exhaustivité.
+ L’exemple suivant définit deux attributs. `BadCodeMaintainerAttribute` omet de manière incorrecte l' <xref:System.AttributeUsageAttribute> instruction, et `GoodCodeMaintainerAttribute` implémente correctement l’attribut décrit plus haut dans cette section. Notez que la propriété `DeveloperName` est requise par la règle de conception [ca1019 : définir des accesseurs pour les arguments d’attribut](../code-quality/ca1019-define-accessors-for-attribute-arguments.md) et est incluse par exhaustivité.
 
  [!code-csharp[FxCop.Design.AttributeUsage#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.AttributeUsage/cs/FxCop.Design.AttributeUsage.cs#1)]
  [!code-vb[FxCop.Design.AttributeUsage#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.AttributeUsage/vb/FxCop.Design.AttributeUsage.vb#1)]

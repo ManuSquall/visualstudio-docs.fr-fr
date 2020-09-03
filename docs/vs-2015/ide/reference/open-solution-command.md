@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b9c9ab66d2885137e9c470f577996ab861b554d5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671911"
 ---
 # <a name="open-solution-command"></a>Ouvrir une solution, commande
@@ -37,10 +37,10 @@ File.OpenSolution filename
 
  La syntaxe de l’argument `filename` nécessite que les chemins contenant des espaces utilisent des guillemets.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  La saisie semi-automatique tente de deviner le chemin et le nom de fichier à mesure que vous tapez.
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
  Cet exemple ouvre la solution Test1.sln.
 
 ```

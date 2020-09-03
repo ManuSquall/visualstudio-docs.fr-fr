@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: ccc5be9debbdc2b4901d4aad15a0dc4d2bf1bb9f
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85290329"
 ---
 # <a name="generate-iequatable-operators-when-generating-equals-for-structs"></a>Générer des opérateurs IEquatable lors de la génération d’égalités pour les structs
@@ -40,7 +40,7 @@ Dans les **cas suivants :** Vous disposez d’un struct, nous ajouterons automa
 
    - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
 
-   - Cliquez sur le bouton ![Tournevis](../media/screwdriver-icon.png) qui apparaît dans la marge de gauche.
+   - Cliquez sur l’icône ![Tournevis](../media/screwdriver-icon.png) qui apparaît dans la marge de gauche.
 
    ![Générer IEquatable et égal pour les structs](media/generate-equals-structs.png)
 

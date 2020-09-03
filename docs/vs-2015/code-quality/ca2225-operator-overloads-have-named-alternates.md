@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 2dc43e92b92b6f963900057a76dfe88e38a3638f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545221"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225 : Les surcharges d'opérateur offrent d'autres méthodes nommées
@@ -32,7 +32,7 @@ ms.locfileid: "85545221"
 |Category|Microsoft. usage|
 |Modification avec rupture|Sans rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Une surcharge d'opérateur a été détectée, et la méthode de substitution nommée attendue n'a pas été trouvée.
 
 ## <a name="rule-description"></a>Description de la règle
@@ -51,13 +51,13 @@ ms.locfileid: "85545221"
 |--|N/A|--|Décrémentation|
 |/|/|/|Diviser|
 |/=|/=|/=|Diviser|
-|==|=|==|Égal à|
+|==|=|==|Equals|
 |^|Xor|^|Xor|
 |^=|XOR =|^=|Xor|
 |>|>|>|Comparer|
 |>=|>=|>=|Comparer|
 |++|N/A|++|Incrément|
-|<>|!=|Égal à|
+|<>|!=|Equals|
 |<<|<<|<<|Maj|
 |<<=|<<=|<<=|Maj|
 |<|<|<|Comparer|
@@ -77,7 +77,7 @@ ms.locfileid: "85545221"
 |true|IsTrue|N/A|IsTrue (propriété)|
 | - (unaire)   |N/A|-|Negate|
 |+ (unaire)|N/A|+|Plus|
-|false|IsFalse|False|IsTrue (propriété)|
+|false|IsFalse|Faux|IsTrue (propriété)|
 
  N/A = = ne peut pas être surchargé dans la langue sélectionnée.
 

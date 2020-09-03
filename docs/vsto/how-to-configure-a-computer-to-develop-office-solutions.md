@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3b13aa65e4dd5868a36e0dd833351b1d1751d8b0
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546170"
 ---
 # <a name="how-to-configure-a-computer-to-develop-office-solutions"></a>Comment : configurer un ordinateur pour développer des solutions Office

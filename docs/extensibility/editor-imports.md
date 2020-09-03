@@ -1,5 +1,5 @@
 ---
-title: Importations de rédacteurs en chef (fr) Microsoft Docs
+title: Importations de l’éditeur | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,114 +11,114 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c6af95b452166aa71950ac1e869d333d12d857b9
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712012"
 ---
-# <a name="editor-imports"></a>Importations de rédacteurs
-Vous pouvez importer un certain nombre de services d’éditeur, d’usines et de courtiers qui fournissent à votre extension différents types d’accès à l’éditeur de base. Par exemple, vous <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> pouvez importer le <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> pour vous fournir un pour un type de contenu donné. (Ce navigateur vous permet d’effectuer différents types de recherches sur un tampon texte.)
+# <a name="editor-imports"></a>Importations de l’éditeur
+Vous pouvez importer un certain nombre de services de l’éditeur, de fabriques et de courtiers qui fournissent votre extension avec différents types d’accès à l’éditeur principal. Par exemple, vous pouvez importer le <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> pour fournir un <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> pour un type de contenu donné. (Ce navigateur vous permet d’effectuer différents types de recherches sur une mémoire tampon de texte.)
 
- Pour utiliser une importation d’éditeur, vous l’importez comme un champ ou une propriété d’une classe qui exporte une partie de la composante Cadre d’Extégabilité gérée.
+ Pour utiliser une importation d’éditeur, importez-la sous forme de champ ou de propriété d’une classe qui exporte une partie Managed Extensibility Framework composant.
 
 > [!NOTE]
-> Pour plus d’informations sur le Cadre d’exténuabilité gérée, voir [Cadre d’exténuabilité gérée (MEF)](/dotnet/framework/mef/index).
+> Pour plus d’informations sur la Managed Extensibility Framework, consultez [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index).
 
-## <a name="import-syntax"></a>Syntaxe d’importation
- L’exemple suivant montre comment importer le service d’usine d’options d’éditeur.
+## <a name="import-syntax"></a>Importer la syntaxe
+ L’exemple suivant montre comment importer le service de fabrique des options de l’éditeur.
 
 ```
 [Import]
 internal IEditorOptionsFactoryService EditorOptions { get; set; }
 ```
 
- Si vous souhaitez importer le service comme un champ et `null` non comme une propriété, vous devez le définir dans la déclaration afin d’éviter les avertissements de compilateur de ne pas attribuer à une variable:
+ Si vous souhaitez importer le service en tant que champ et non pas en tant que propriété, vous devez lui affecter la valeur `null` dans la déclaration afin d’éviter les avertissements du compilateur relatifs à ne pas assigner à une variable :
 
 ```
 [Import]
 internal IEditorOptionsFactoryService m_editorOptions = null;
 ```
 
- Pour plus d’exemples d’utilisation des importations, voir les procédures pas à pas suivantes:
+ Pour obtenir plus d’exemples d’utilisation des importations, consultez les procédures pas à pas suivantes :
 
-- [Procédure pas à pas: Créer un glyphe de marge](../extensibility/walkthrough-creating-a-margin-glyph.md)
+- [Procédure pas à pas : créer un glyphe de marge](../extensibility/walkthrough-creating-a-margin-glyph.md)
 
-- [Procédure pas à pas : Personnalisez la vue du texte](../extensibility/walkthrough-customizing-the-text-view.md)
+- [Procédure pas à pas : personnaliser l’affichage du texte](../extensibility/walkthrough-customizing-the-text-view.md)
 
-- [Procédure pas à pas : Mettre en évidence le texte](../extensibility/walkthrough-highlighting-text.md)
+- [Procédure pas à pas : texte en surbrillance](../extensibility/walkthrough-highlighting-text.md)
 
-- [Procédure pas à pas: Afficher des outils QuickInfo](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)
+- [Procédure pas à pas : afficher les info-bulles Info Express](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)
 
-- [Procédure pas à pas : Offrez l’aide signature d’affichage](../extensibility/walkthrough-displaying-signature-help.md)
+- [Procédure pas à pas : afficher l’aide sur les signatures](../extensibility/walkthrough-displaying-signature-help.md)
 
 - [Procédure pas à pas : afficher la saisie semi-automatique des instructions](../extensibility/walkthrough-displaying-statement-completion.md)
 
-- [Procédure pas à pas : Afficher les suggestions d’ampoules](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)
+- [Procédure pas à pas : afficher les suggestions d’ampoules](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)
 
 ## <a name="import-the-service-provider"></a>Importer le fournisseur de services
- Vous pouvez également <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> importer un (trouvé dans l’assemblage Microsoft.VisualStudio.Shell.Immutable.10.0) de la même manière pour accéder aux services Visual Studio:
+ Vous pouvez également importer un <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> (trouvé dans l’assembly Microsoft. VisualStudio. Shell. immuable. 10.0) de la même façon pour accéder aux services Visual Studio :
 
 ```csharp
 [Import]
 internal SVsServiceProvider ServiceProvider = null;
 ```
 
- Voir [Procédure pas à pas : Accédez à l’objet DTE à partir d’une extension de l’éditeur](../extensibility/walkthrough-accessing-the-dte-object-from-an-editor-extension.md) pour plus d’informations.
+ Pour plus d’informations, consultez [procédure pas à pas : accès à l’objet DTE à partir d’une extension d’éditeur](../extensibility/walkthrough-accessing-the-dte-object-from-an-editor-extension.md) .
 
 ## <a name="services"></a>Services
- Les services d’éditeur sont généralement des entités uniques qui fournissent un service et sont partagées entre plusieurs composantes.
+ Les services de l’éditeur sont généralement des entités uniques qui fournissent un service et qui sont partagées entre plusieurs composants.
 
 |Importer|offre les services|
 |------------|--------------|
-|<xref:Microsoft.VisualStudio.Utilities.IFileExtensionRegistryService>|La relation entre les <xref:Microsoft.VisualStudio.Utilities.IContentType> extensions de fichiers et les objets.|
+|<xref:Microsoft.VisualStudio.Utilities.IFileExtensionRegistryService>|Relation entre les extensions de fichier et les <xref:Microsoft.VisualStudio.Utilities.IContentType> objets.|
 |<xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService>|Collection d'objets <xref:Microsoft.VisualStudio.Utilities.IContentType>.|
-|<xref:Microsoft.VisualStudio.Editor.IVsFontsAndColorsInformationService>|<xref:Microsoft.VisualStudio.Editor.IVsFontsAndColorsInformation>Objets.|
-|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>|Beaucoup d’objets adaptateurs d’éditeur :<br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>|
-|<xref:Microsoft.VisualStudio.Text.IncrementalSearch.IIncrementalSearchFactoryService>|Objet <xref:Microsoft.VisualStudio.Text.IncrementalSearch.IIncrementalSearch> pour une vue textuelle donnée.|
-|<xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>|<xref:Microsoft.VisualStudio.Text.ITextBuffer>.|
-|<xref:Microsoft.VisualStudio.Text.ITextDocumentFactoryService>|<xref:Microsoft.VisualStudio.Text.ITextDocument>.|
-|<xref:Microsoft.VisualStudio.Text.Differencing.IDifferenceService>|Une <xref:Microsoft.VisualStudio.Text.Differencing.IDifferenceCollection%601> des différences.|
-|<xref:Microsoft.VisualStudio.Text.Differencing.IHierarchicalStringDifferenceService>|Une <xref:Microsoft.VisualStudio.Text.Differencing.IHierarchicalDifferenceCollection> des différences.|
-|<xref:Microsoft.VisualStudio.Text.Projection.IProjectionBufferFactoryService>|Un <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBuffer> ou <xref:Microsoft.VisualStudio.Text.Projection.IElisionBuffer>un .|
-|<xref:Microsoft.VisualStudio.Text.Projection.IBufferGraphFactoryService>|Un <xref:Microsoft.VisualStudio.Text.Projection.IBufferGraph> pour un <xref:Microsoft.VisualStudio.Text.ITextBuffer> ensemble d’objets.|
-|<xref:Microsoft.VisualStudio.Text.Classification.IClassifierAggregatorService>|Un <xref:Microsoft.VisualStudio.Text.Classification.IClassifier> pour <xref:Microsoft.VisualStudio.Text.ITextBuffer>un .|
-|<xref:Microsoft.VisualStudio.Text.Classification.IViewClassifierAggregatorService>|Un <xref:Microsoft.VisualStudio.Text.Classification.IClassifier> pour <xref:Microsoft.VisualStudio.Text.Editor.ITextView>un .|
-|<xref:Microsoft.VisualStudio.Text.Classification.IClassificationFormatMapService>|Un <xref:Microsoft.VisualStudio.Text.Classification.IClassificationFormatMap> pour <xref:Microsoft.VisualStudio.Text.Editor.ITextView>un .|
-|<xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMapService>|Un <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap> pour <xref:Microsoft.VisualStudio.Text.Editor.ITextView>un .|
-|<xref:Microsoft.VisualStudio.Text.Classification.IClassificationTypeRegistryService>|Maintient la collection <xref:Microsoft.VisualStudio.Text.Classification.IClassificationType> d’objets.|
-|<xref:Microsoft.VisualStudio.Text.Tagging.IBufferTagAggregatorFactoryService>|Un <xref:Microsoft.VisualStudio.Text.Tagging.ITagAggregator%601> tampon de texte.|
-|<xref:Microsoft.VisualStudio.Text.Tagging.IViewTagAggregatorFactoryService>|Une <xref:Microsoft.VisualStudio.Text.Tagging.ITagAggregator%601> vue de texte.|
-|<xref:Microsoft.VisualStudio.Text.Editor.IEditorOptionsFactoryService>|Le <xref:Microsoft.VisualStudio.Text.Editor.IEditorOptions> pour la portée spécifiée.|
-|<xref:Microsoft.VisualStudio.Text.Editor.IScrollMapFactoryService>|Une <xref:Microsoft.VisualStudio.Text.Editor.IScrollMap> vue de texte.|
-|<xref:Microsoft.VisualStudio.Text.Editor.ISmartIndentationService>|Un <xref:Microsoft.VisualStudio.Text.Editor.ISmartIndent> pour <xref:Microsoft.VisualStudio.Text.Editor.ITextView>un .|
-|<xref:Microsoft.VisualStudio.Text.Editor.ISmartIndentationService>|Obtient l’indentation <xref:Microsoft.VisualStudio.Text.Editor.ISmartIndentProvider> automatique à travers les objets.|
-|<xref:Microsoft.VisualStudio.Text.Editor.ITextEditorFactoryService>|Gère <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> le <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>pour un .|
-|<xref:Microsoft.VisualStudio.Text.Formatting.IFormattedTextSourceFactoryService>|<xref:Microsoft.VisualStudio.Text.Formatting.IFormattedLineSource>.|
-|<xref:Microsoft.VisualStudio.Text.Formatting.IRtfBuilderService>|Génère du texte formaté RTF à partir d’un ensemble de travées d’instantanés.|
-|<xref:Microsoft.VisualStudio.Text.Formatting.ITextAndAdornmentSequencerFactoryService>|Un <xref:Microsoft.VisualStudio.Text.Formatting.ITextAndAdornmentSequencer> pour <xref:Microsoft.VisualStudio.Text.Editor.ITextView>un .|
-|<xref:Microsoft.VisualStudio.Text.Formatting.ITextParagraphPropertiesFactoryService>|A <xref:System.Windows.Media.TextFormatting.TextParagraphProperties> pour formater les lignes de texte en vue.|
-|<xref:Microsoft.VisualStudio.Text.Operations.IEditorOperationsFactoryService>|Un <xref:Microsoft.VisualStudio.Text.Operations.IEditorOperations> objet <xref:Microsoft.VisualStudio.Text.Editor.ITextView>pour un .|
+|<xref:Microsoft.VisualStudio.Editor.IVsFontsAndColorsInformationService>|<xref:Microsoft.VisualStudio.Editor.IVsFontsAndColorsInformation> objets.|
+|<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>|Nombreux objets d’adaptateur d’éditeur :<br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>|
+|<xref:Microsoft.VisualStudio.Text.IncrementalSearch.IIncrementalSearchFactoryService>|<xref:Microsoft.VisualStudio.Text.IncrementalSearch.IIncrementalSearch>Objet pour un affichage de texte donné.|
+|<xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>|Élément <xref:Microsoft.VisualStudio.Text.ITextBuffer>.|
+|<xref:Microsoft.VisualStudio.Text.ITextDocumentFactoryService>|Élément <xref:Microsoft.VisualStudio.Text.ITextDocument>.|
+|<xref:Microsoft.VisualStudio.Text.Differencing.IDifferenceService>|<xref:Microsoft.VisualStudio.Text.Differencing.IDifferenceCollection%601>De différences.|
+|<xref:Microsoft.VisualStudio.Text.Differencing.IHierarchicalStringDifferenceService>|<xref:Microsoft.VisualStudio.Text.Differencing.IHierarchicalDifferenceCollection>De différences.|
+|<xref:Microsoft.VisualStudio.Text.Projection.IProjectionBufferFactoryService>|<xref:Microsoft.VisualStudio.Text.Projection.IProjectionBuffer>Ou <xref:Microsoft.VisualStudio.Text.Projection.IElisionBuffer> .|
+|<xref:Microsoft.VisualStudio.Text.Projection.IBufferGraphFactoryService>|<xref:Microsoft.VisualStudio.Text.Projection.IBufferGraph>Pour un ensemble d' <xref:Microsoft.VisualStudio.Text.ITextBuffer> objets.|
+|<xref:Microsoft.VisualStudio.Text.Classification.IClassifierAggregatorService>|<xref:Microsoft.VisualStudio.Text.Classification.IClassifier>Pour un <xref:Microsoft.VisualStudio.Text.ITextBuffer> .|
+|<xref:Microsoft.VisualStudio.Text.Classification.IViewClassifierAggregatorService>|<xref:Microsoft.VisualStudio.Text.Classification.IClassifier>Pour un <xref:Microsoft.VisualStudio.Text.Editor.ITextView> .|
+|<xref:Microsoft.VisualStudio.Text.Classification.IClassificationFormatMapService>|<xref:Microsoft.VisualStudio.Text.Classification.IClassificationFormatMap>Pour un <xref:Microsoft.VisualStudio.Text.Editor.ITextView> .|
+|<xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMapService>|<xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap>Pour un <xref:Microsoft.VisualStudio.Text.Editor.ITextView> .|
+|<xref:Microsoft.VisualStudio.Text.Classification.IClassificationTypeRegistryService>|Gère la collection d' <xref:Microsoft.VisualStudio.Text.Classification.IClassificationType> objets.|
+|<xref:Microsoft.VisualStudio.Text.Tagging.IBufferTagAggregatorFactoryService>|<xref:Microsoft.VisualStudio.Text.Tagging.ITagAggregator%601>Pour une mémoire tampon de texte.|
+|<xref:Microsoft.VisualStudio.Text.Tagging.IViewTagAggregatorFactoryService>|<xref:Microsoft.VisualStudio.Text.Tagging.ITagAggregator%601>Pour un affichage de texte.|
+|<xref:Microsoft.VisualStudio.Text.Editor.IEditorOptionsFactoryService>|<xref:Microsoft.VisualStudio.Text.Editor.IEditorOptions>Pour la portée spécifiée.|
+|<xref:Microsoft.VisualStudio.Text.Editor.IScrollMapFactoryService>|<xref:Microsoft.VisualStudio.Text.Editor.IScrollMap>Pour un affichage de texte.|
+|<xref:Microsoft.VisualStudio.Text.Editor.ISmartIndentationService>|<xref:Microsoft.VisualStudio.Text.Editor.ISmartIndent>Pour un <xref:Microsoft.VisualStudio.Text.Editor.ITextView> .|
+|<xref:Microsoft.VisualStudio.Text.Editor.ISmartIndentationService>|Obtient la mise en retrait automatique via les <xref:Microsoft.VisualStudio.Text.Editor.ISmartIndentProvider> objets.|
+|<xref:Microsoft.VisualStudio.Text.Editor.ITextEditorFactoryService>|Gère le <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> pour un <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> .|
+|<xref:Microsoft.VisualStudio.Text.Formatting.IFormattedTextSourceFactoryService>|Élément <xref:Microsoft.VisualStudio.Text.Formatting.IFormattedLineSource>.|
+|<xref:Microsoft.VisualStudio.Text.Formatting.IRtfBuilderService>|Génère du texte au format RTF à partir d’un ensemble d’étendues d’instantanés.|
+|<xref:Microsoft.VisualStudio.Text.Formatting.ITextAndAdornmentSequencerFactoryService>|<xref:Microsoft.VisualStudio.Text.Formatting.ITextAndAdornmentSequencer>Pour un <xref:Microsoft.VisualStudio.Text.Editor.ITextView> .|
+|<xref:Microsoft.VisualStudio.Text.Formatting.ITextParagraphPropertiesFactoryService>|<xref:System.Windows.Media.TextFormatting.TextParagraphProperties>Pour mettre en forme des lignes de texte dans une vue.|
+|<xref:Microsoft.VisualStudio.Text.Operations.IEditorOperationsFactoryService>|<xref:Microsoft.VisualStudio.Text.Operations.IEditorOperations>Objet pour <xref:Microsoft.VisualStudio.Text.Editor.ITextView> .|
 |<xref:Microsoft.VisualStudio.Text.Operations.ITextSearchService>|Recherche un instantané de texte.|
-|<xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>|Un <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> pour <xref:Microsoft.VisualStudio.Text.ITextBuffer> <xref:Microsoft.VisualStudio.Utilities.IContentType>un par .|
-|<xref:Microsoft.VisualStudio.Text.Outlining.IOutliningManagerService>|Une <xref:Microsoft.VisualStudio.Text.Outlining.IOutliningManager> vue de texte.|
-|<xref:Microsoft.VisualStudio.Language.Intellisense.IGlyphService>|Un ensemble standard de glyphes.|
-|<xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseSessionStackMapService>|Un <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseSessionStack> pour <xref:Microsoft.VisualStudio.Text.Editor.ITextView>un .|
-|<xref:Microsoft.VisualStudio.Language.Intellisense.IWpfKeyboardTrackingService>|Suit la manipulation du clavier.|
-|<xref:Microsoft.VisualStudio.Language.StandardClassification.IStandardClassificationService>|Objets <xref:Microsoft.VisualStudio.Text.Classification.IClassificationType> standard.|
-|<xref:Microsoft.VisualStudio.Text.Operations.ITextUndoHistoryRegistry>|Maintient la relation entre les <xref:Microsoft.VisualStudio.Text.Operations.ITextUndoHistory> tampons de texte et les objets.|
+|<xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>|<xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator>Pour un <xref:Microsoft.VisualStudio.Text.ITextBuffer> par <xref:Microsoft.VisualStudio.Utilities.IContentType> .|
+|<xref:Microsoft.VisualStudio.Text.Outlining.IOutliningManagerService>|<xref:Microsoft.VisualStudio.Text.Outlining.IOutliningManager>Pour un affichage de texte.|
+|<xref:Microsoft.VisualStudio.Language.Intellisense.IGlyphService>|Ensemble standard de glyphes.|
+|<xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseSessionStackMapService>|<xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseSessionStack>Pour un <xref:Microsoft.VisualStudio.Text.Editor.ITextView> .|
+|<xref:Microsoft.VisualStudio.Language.Intellisense.IWpfKeyboardTrackingService>|Effectue le suivi de la gestion du clavier.|
+|<xref:Microsoft.VisualStudio.Language.StandardClassification.IStandardClassificationService>|<xref:Microsoft.VisualStudio.Text.Classification.IClassificationType>Objets standard.|
+|<xref:Microsoft.VisualStudio.Text.Operations.ITextUndoHistoryRegistry>|Maintient la relation entre les mémoires tampons de texte et les  <xref:Microsoft.VisualStudio.Text.Operations.ITextUndoHistory> objets.|
 
 ## <a name="other-imports"></a>Autres importations
- Les usines et les courtiers fournisseurs sont généralement des entités qui peuvent avoir plusieurs cas dans plusieurs composants.
+ Les fabriques de fournisseurs et les courtiers sont généralement des entités qui peuvent avoir plusieurs instances dans plusieurs composants.
 
 |Importer|offre les services|
 |------------|--------------|
-|<xref:Microsoft.VisualStudio.Text.Adornments.IErrorProviderFactory>|A <xref:Microsoft.VisualStudio.Text.Tagging.SimpleTagger%601> de <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag>type ) pour le tampon donné.|
-|<xref:Microsoft.VisualStudio.Text.Adornments.ITextMarkerProviderFactory>|Un tagger marqueur <xref:Microsoft.VisualStudio.Text.Tagging.SimpleTagger%601> de <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>texte (un type ).|
-|<xref:Microsoft.VisualStudio.Text.Adornments.IToolTipProviderFactory>|Un <xref:Microsoft.VisualStudio.Text.Adornments.IToolTipProvider> pour <xref:Microsoft.VisualStudio.Text.Editor.ITextView>un donné .|
-|<xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>|<xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSession>.|
-|<xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>|<xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSession>.|
-|<xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpBroker>|<xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSession>.|
+|<xref:Microsoft.VisualStudio.Text.Adornments.IErrorProviderFactory>|<xref:Microsoft.VisualStudio.Text.Tagging.SimpleTagger%601>De type <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag> ) pour la mémoire tampon donnée.|
+|<xref:Microsoft.VisualStudio.Text.Adornments.ITextMarkerProviderFactory>|Balise de marqueur de texte ( <xref:Microsoft.VisualStudio.Text.Tagging.SimpleTagger%601> de type <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag> ).|
+|<xref:Microsoft.VisualStudio.Text.Adornments.IToolTipProviderFactory>|<xref:Microsoft.VisualStudio.Text.Adornments.IToolTipProvider>Pour un donné <xref:Microsoft.VisualStudio.Text.Editor.ITextView> .|
+|<xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>|Élément <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSession>.|
+|<xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>|Élément <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSession>.|
+|<xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpBroker>|Élément <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSession>.|
 
 ## <a name="see-also"></a>Voir aussi
-- [Service linguistique et points d’extension de l’éditeur](../extensibility/language-service-and-editor-extension-points.md)
+- [Points d’extension du service de langage et de l’éditeur](../extensibility/language-service-and-editor-extension-points.md)

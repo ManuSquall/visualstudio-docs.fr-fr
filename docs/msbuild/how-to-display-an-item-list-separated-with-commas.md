@@ -12,23 +12,23 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5493d3b95f7e9c0aa08ed3b06a99108e15697349
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633900"
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>Guide pratique pour afficher une liste d’éléments séparés par des virgules
 
-Lorsque vous travaillez avec des listes d’éléments dans Microsoft Build Engine (MSBuild), il est parfois utile d’afficher le contenu de ces listes d’éléments d’une manière facile à lire. Vous pouvez également avoir une tâche qui accepte une liste d’éléments séparés par une chaîne de séparation particulière. Dans ces deux cas, vous pouvez spécifier une chaîne de séparation pour la liste d’éléments.
+Quand vous travaillez avec des listes d’éléments dans Microsoft Build Engine (MSBuild), il est parfois utile d’afficher le contenu de ces listes d’éléments d’une manière facile à lire. Vous pouvez également avoir une tâche qui accepte une liste d’éléments séparés par une chaîne de séparation particulière. Dans ces deux cas, vous pouvez spécifier une chaîne de séparation pour la liste d’éléments.
 
 ## <a name="separate-items-in-a-list-with-commas"></a>Séparer des éléments d’une liste à l’aide de virgules
 
-Par défaut, MSBuild utilise des semi-colons pour séparer les éléments d’une liste. Par exemple, imaginez un élément `Message` avec la valeur suivante :
+Par défaut, MSBuild utilise des points-virgules pour séparer les éléments d’une liste. Par exemple, imaginez un élément `Message` avec la valeur suivante :
 
 `<Message Text="This is my list of TXT files: @(TXTFile)"/>`
 
-Lorsque `@(TXTFile)` la liste d’éléments contient les éléments *App1.txt*, *App2.txt*, et *App3.txt*, le message est:
+Lorsque la `@(TXTFile)` liste d’éléments contient les éléments *App1.txt*, *App2.txt*et *App3.txt*, le message est :
 
 `This is my list of TXT files: App1.txt;App2.txt;App3.txt`
 
@@ -44,9 +44,9 @@ Le séparateur peut être un caractère unique ou une chaîne, et doit être com
 
     `@(TXTFile, ', ')`
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 
-Dans cet exemple, la tâche [Exec](../msbuild/exec-task.md) exécute l’outil findstr pour rechercher des chaînes de texte spécifiées dans le fichier *Phrases.txt*. Dans la commande findstr, les chaînes de recherche littérales sont indiquées par le **-c:** commutateur, de sorte que le séparateur d’élément, `-c:` est inséré entre les éléments de la `@(Phrase)` liste d’objets.
+Dans cet exemple, la tâche [Exec](../msbuild/exec-task.md) exécute l’outil findstr pour rechercher des chaînes de texte spécifiées dans le fichier *Phrases.txt*. Dans la commande Findstr, les chaînes de recherche littérales sont indiquées par le commutateur **-c :** , donc le séparateur `-c:` d’éléments est inséré entre les éléments de la liste d’éléments `@(Phrase)` .
 
 Pour cet exemple, la commande équivalente de ligne de commande est la suivante :
 
@@ -71,5 +71,5 @@ Pour cet exemple, la commande équivalente de ligne de commande est la suivante�
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Référence MSBuild](../msbuild/msbuild-reference.md)
+- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)
 - [Éléments](../msbuild/msbuild-items.md)

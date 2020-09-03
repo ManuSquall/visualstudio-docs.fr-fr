@@ -9,10 +9,10 @@ ms.technology: vs-unity-tools
 ms.workload:
 - unity
 ms.openlocfilehash: e824951556124f080f14cdd9f440037decf5146f
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85815134"
 ---
 # <a name="using-net-4x-in-unity"></a>Utilisation de .NET 4.x dans Unity
@@ -74,7 +74,7 @@ En plus des nouvelles fonctionnalités de syntaxe et de langage C#, le runtime 
 
 1. Parcourez NuGet pour localiser un package compatible à ajouter (.NET Standard 2.0 ou .NET 4.x). Cet exemple montre comment ajouter [Json.NET](https://www.nuget.org/packages/Newtonsoft.Json/) (package souvent utilisé avec JSON) à un projet .NET Standard 2.0.
 
-1. Cliquez sur le bouton **Télécharger** :
+1. Cliquez sur le bouton **Télécharger** :
 
     ![bouton de téléchargement](media/vstu_nuget-download.png)
 

@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2865e6a6d410d661bc628fd9c7f1947516485018
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544181"
 ---
 # <a name="properties-of-domain-classes"></a>Propriétés des classes de domaine
@@ -31,7 +31,7 @@ Les classes de domaine ont les propriétés dans le tableau suivant. Pour plus d
 |Espace de noms|Espace de noms de cette classe de domaine.|Espace de noms actuel|
 |Notes|Notes informelles associées à cette classe de domaine.|\<none>|
 |Description|Description utilisée pour documenter l’interface utilisateur du concepteur généré.|\<none>|
-|Nom complet|Nom qui sera affiché dans le concepteur généré pour cette classe de domaine.|\<none>|
+|Nom d’affichage|Nom qui sera affiché dans le concepteur généré pour cette classe de domaine.|\<none>|
 |Help Keyword|Mot clé facultatif utilisé pour indexer l’aide F1 pour cette classe de domaine.|\<none>|
 
 ## <a name="see-also"></a>Voir aussi

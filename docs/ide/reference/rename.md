@@ -13,10 +13,10 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 8d5b3d32b23b336dc86a92c33bcb97d02312f2dc
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84182953"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>Renommer un symbole de code (refactorisation)
@@ -68,7 +68,7 @@ Cette refactorisation s’applique à :
 
 4. Quand vous êtes satisfait du changement, appuyez sur le bouton **Appliquer** ou sur la touche **Entrée** pour valider les changements.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
 - À compter de Visual Studio 2019 version 16,3, lorsque vous renommez un type qui correspond au nom du fichier dans lequel il se trouve, une case à cocher s’affiche pour vous permettre de renommer le fichier en même temps. Cette option apparaît lorsque vous renommez une classe, une interface ou une énumération. Cette option n’est pas prise en charge pour les types partiels avec plusieurs définitions.
 

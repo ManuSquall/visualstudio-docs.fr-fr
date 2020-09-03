@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ee138fd361d883fb465711e679d09e6c96ddac4b
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85461580"
 ---
 # <a name="idiasymbolget_unmodifiedtype"></a>IDiaSymbol::get_unmodifiedType
@@ -41,7 +41,7 @@ HRESULT get_unmodifiedType( 
 > [!NOTE]
 > Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Le type actuel est une modification du type d’origine retourné. Le type d’origine d’un symbole peut être déterminé en obtenant tout d’abord le type du symbole, puis en interrogeant ce type retourné pour le type d’origine. Notez que certains symboles peuvent ne pas avoir de type modifié du type d’origine.
 
 ## <a name="requirements"></a>Configuration requise

@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 51512c80c96ef82835ce38c36e3643261ba84231
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671743"
 ---
 # <a name="step-5-add-label-references"></a>Étape 5 : ajouter des références de contrôles Label
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Le programme doit effectuer le suivi des contrôles d'étiquette que le joueur a choisis. Pour le moment, le programme indique l'ensemble des étiquettes choisies par le joueur. Mais nous allons changer cela. Une fois que le joueur a choisi le premier contrôle d'étiquette, le programme doit afficher son icône. Une fois que le joueur a choisi le deuxième contrôle d'étiquette, le programme doit afficher brièvement les deux icônes, puis les masquer à nouveau. Votre programme vérifiera à présent quel contrôle d'étiquette le joueur a choisi en premier et en deuxième à l'aide de *variables de référence*.
+Le programme doit effectuer le suivi des contrôles d'étiquette que le joueur a choisis. Pour le moment, le programme indique l'ensemble des étiquettes choisies par le joueur. Mais nous allons changer cela. Une fois que le joueur a choisi le premier contrôle d'étiquette, le programme doit afficher son icône. Une fois que le joueur a choisi le deuxième contrôle d'étiquette, le programme doit afficher brièvement les deux icônes, puis les masquer à nouveau. Votre programme effectue désormais le suivi du contrôle Label qui est choisi en premier et qui est choisi en second en utilisant des *variables de référence*.
 
 ### <a name="to-add-label-references"></a>Pour ajouter des références aux contrôles Label
 
@@ -47,6 +47,6 @@ Le programme doit effectuer le suivi des contrôles d'étiquette que le joueur a
 
 ### <a name="to-continue-or-review"></a>Pour continuer ou examiner
 
-- Pour passer à l’étape suivante du didacticiel, consultez [Étape 6 : ajouter une minuterie](../ide/step-6-add-a-timer.md).
+- Pour passer à l’étape suivante du didacticiel, consultez [étape 6 : ajouter une minuterie](../ide/step-6-add-a-timer.md).
 
-- Pour revenir à l'étape précédente du didacticiel, consultez [Étape 4 : ajouter un gestionnaire d'événements Click à chaque contrôle Label](../ide/step-4-add-a-click-event-handler-to-each-label.md).
+- Pour revenir à l’étape précédente du didacticiel, consultez [étape 4 : ajouter un gestionnaire d’événements Click à chaque contrôle Label](../ide/step-4-add-a-click-event-handler-to-each-label.md).

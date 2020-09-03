@@ -1,5 +1,5 @@
 ---
-title: Lorsqu’un point d’arrêt se lie ou devient inbound . Microsoft Docs
+title: Quand un point d’arrêt est lié ou devient indépendant | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,27 +12,27 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3253841778fe5a07e00b644423495b8ceee1a335
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80712330"
 ---
-# <a name="when-a-breakpoint-binds-or-becomes-unbound"></a>Lorsqu’un point d’arrêt se lie ou devient non lié
-Lorsqu’un point d’arrêt ne peut pas être lié au moment où un appel est fait à [l’IDebugPendingBreakpoint2::CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md) méthode, le temps de liaison et de créer le temps de l’arrêt sont différents.
+# <a name="when-a-breakpoint-binds-or-becomes-unbound"></a>Quand un point d’arrêt est lié ou non lié
+Lorsqu’un point d’arrêt ne peut pas être lié au moment où un appel est effectué à la méthode [IDebugPendingBreakpoint2 :: CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md) , la durée de liaison et l’heure de création du point d’arrêt sont différentes.
 
 ## <a name="methods-called"></a>Méthodes appelées
- Le gestionnaire de débogé de session (SDM) appelle les méthodes suivantes :
+ Le gestionnaire de débogage de session (SDM) appelle les méthodes suivantes :
 
-1. [IDebugEngine2::CréerPendingBreakpoint](../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md). Le DE retourne un [IDebugPendingBreakpoint2](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md).
+1. [IDebugEngine2 :: CreatePendingBreakpoint](../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md). Le DE retourne un [IDebugPendingBreakpoint2](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md).
 
-2. [IDebugPendingBreakpoint2::Enable](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md).
+2. [IDebugPendingBreakpoint2 :: Enable](../../extensibility/debugger/reference/idebugpendingbreakpoint2-enable.md).
 
-3. [IDebugPendingBreakpoint2::Virtualize](../../extensibility/debugger/reference/idebugpendingbreakpoint2-virtualize.md).
+3. [IDebugPendingBreakpoint2 :: virtualiser](../../extensibility/debugger/reference/idebugpendingbreakpoint2-virtualize.md).
 
-4. [L’IDebugPendingBreakpoint2::Bind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) méthode et retourne S_OK. Le DE envoie un [IDebugBreakpointBoundEvent2](../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) ou [IDebugBreakpointErrorEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md).
+4. La méthode [IDebugPendingBreakpoint2 :: bind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md) et retourne S_OK. Le DE envoie un [IDebugBreakpointBoundEvent2](../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) ou un [IDebugBreakpointErrorEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md).
 
-5. [IDebugBreakpointBoundEvent2::GetPendingBreakpoint](../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md) et [IDebugBreakpointBoundEvent2::EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md) méthodes pour vérifier et pour obtenir les points de rupture liés.
+5. Méthodes [IDebugBreakpointBoundEvent2 :: GetPendingBreakpoint](../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md) et [IDebugBreakpointBoundEvent2 :: EnumBoundBreakpoints](../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md) pour vérifier et atteindre les points d’arrêt liés.
 
 ## <a name="see-also"></a>Voir aussi
-- [Appel d’événements débbugger](../../extensibility/debugger/calling-debugger-events.md)
+- [Appel des événements du débogueur](../../extensibility/debugger/calling-debugger-events.md)

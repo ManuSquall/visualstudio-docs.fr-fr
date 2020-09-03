@@ -21,10 +21,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fee2244792d73924793ae82def1f533b909403c5
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85418858"
 ---
 # <a name="signing-page-project-designer"></a>Page Signature, Concepteur de projets
@@ -105,4 +105,4 @@ Notez qu’un projet à signature différée ne s’exécute pas et ne peut pas 
 - [Comment : signer des manifestes d’application et de déploiement](../../ide/how-to-sign-application-and-deployment-manifests.md)
 - [Guide pratique pour signer un assembly (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio)
 - [Comment : signer un assembly avec un nom fort](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)
-- [Assemblys avec nom fort](/dotnet/framework/app-domains/strong-named-assemblies)
+- [Assemblys avec noms forts](/dotnet/framework/app-domains/strong-named-assemblies)

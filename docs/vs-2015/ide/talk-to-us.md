@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: adfd23cfcee69ef3242545f6d0680d7316be8156
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75917692"
 ---
 # <a name="talk-to-us"></a>Nous contacter
@@ -40,7 +40,7 @@ Vos idées nous intéressent pour améliorer notre documentation. Nous ne pouvon
 ## <a name="i-need-help"></a>J’ai besoin d’aide !
  Consultez le [Support technique Microsoft](https://support.microsoft.com/) pour obtenir de l’aide en ligne.
 
- Le support hors des États-Unis et du Canada peut varier. Pour obtenir la liste des contacts régionaux, consultez les [Sites mondiaux Microsoft](https://www.microsoft.com/worldwide/).
+ Le support hors des États-Unis et du Canada peut varier. Pour obtenir la liste des contacts régionaux, consultez [sites Microsoft dans le monde](https://www.microsoft.com/worldwide/).
 
  Pour plus d’options, consultez la [vue d’ensemble du support technique](https://visualstudio.microsoft.com/support/).
 
@@ -51,4 +51,4 @@ Vos idées nous intéressent pour améliorer notre documentation. Nous ne pouvon
  Les services de support technique Microsoft sont soumis aux prix, modalités et conditions alors en vigueur. Les prix, termes et conditions peuvent faire l’objet de modifications sans préavis.
 
 ## <a name="see-also"></a>Voir aussi
- [Guide pratique pour signaler un problème avec Visual Studio 2015](../ide/how-to-report-a-problem-with-visual-studio-2015.md)
+ [Guide pratique pour signaler un problème avec Visual Studio 2015](../ide/how-to-report-a-problem-with-visual-studio-2015.md)

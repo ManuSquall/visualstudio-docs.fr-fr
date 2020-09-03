@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ba4cdb5f74cedf13cfb74b5aff6d43d24534eab9
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85466482"
 ---
 # <a name="idiapropertystorage"></a>IDiaPropertyStorage
@@ -42,7 +42,7 @@ Le tableau suivant présente les méthodes de `IDiaPropertyStorage` .
 |[IDiaPropertyStorage::ReadPropertyNames](../../debugger/debug-interface-access/idiapropertystorage-readpropertynames.md)|Obtient les noms de chaîne correspondants pour les identificateurs de propriété donnés.|
 |[IDiaPropertyStorage::ReadULONGLONG](../../debugger/debug-interface-access/idiapropertystorage-readulonglong.md)|Lit les `ULONGLONG` valeurs dans un jeu de propriétés.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Chaque propriété d’un jeu de propriétés est identifiée par un identificateur de propriété (ID), une valeur de quatre octets `ULONG` unique à ce jeu. Les propriétés exposées par le biais de l' `IDiaPropertyStorage` interface correspondent aux propriétés disponibles dans l’interface parente. Par exemple, les propriétés de l’interface [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) sont accessibles par leur nom par le biais de l' `IDiaPropertyStorage` interface (Notez, toutefois, que même si la propriété peut être accessible, cela ne signifie pas que la propriété est valide pour un `IDiaSymbol` objet particulier).
 
 ## <a name="notes-for-callers"></a>Notes pour les appelants

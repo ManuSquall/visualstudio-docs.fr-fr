@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: eff09fb8f4423560c4681c94507d909f5864c69e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545234"
 ---
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233 : Les opérations ne doivent pas déborder
@@ -32,7 +32,7 @@ ms.locfileid: "85545234"
 |Category|Microsoft. usage|
 |Modification avec rupture|Sans rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Une méthode effectue une opération arithmétique et ne valide pas les opérandes au préalable pour empêcher un dépassement de capacité.
 
 ## <a name="rule-description"></a>Description de la règle
@@ -47,7 +47,7 @@ ms.locfileid: "85545234"
 ## <a name="example-of-a-violation"></a>Exemple de violation
 
 ### <a name="description"></a>Description
- Une méthode dans l’exemple suivant manipule un entier qui enfreint cette règle. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]nécessite la désactivation de l’option **supprimer** le dépassement sur les entiers pour qu’elle soit déclenchée.
+ Une méthode dans l’exemple suivant manipule un entier qui enfreint cette règle. [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] nécessite la désactivation de l’option **supprimer** le dépassement sur les entiers pour qu’elle soit déclenchée.
 
 ### <a name="code"></a>Code
  [!code-csharp[FxCop.Usage.OperationOverflow#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OperationOverflow/cs/FxCop.Usage.OperationOverflow.cs#1)]

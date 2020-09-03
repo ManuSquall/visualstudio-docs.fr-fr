@@ -1,5 +1,5 @@
 ---
-title: BP_ERROR_RESOLUTION_INFO Microsoft Docs
+title: BP_ERROR_RESOLUTION_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d48c4bc888db0ad8be6a0d6e98eeea2223a27e8a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738089"
 ---
 # <a name="bp_error_resolution_info"></a>BP_ERROR_RESOLUTION_INFO
-Décrit la résolution d’un point d’erreur, y compris l’emplacement, le programme et le thread.
+Décrit la résolution d’un point d’arrêt d’erreur, y compris l’emplacement, le programme et le thread.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -51,32 +51,32 @@ public struct BP_ERROR_RESOLUTION_INFO {
 
 ## <a name="members"></a>Membres
 `dwFields`\
-Une combinaison de valeurs de [l’BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md) énumération précisant quels domaines de cette structure sont remplis.
+Combinaison de valeurs de l’énumération [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md) spécifiant les champs de cette structure à remplir.
 
 `bpResLocation`\
-Le [syndicat BP_RESOLUTION_LOCATION,](../../../extensibility/debugger/reference/bp-resolution-location.md) qui précise le lieu de résolution des points d’arrêt.
+[BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) Union, qui spécifie l’emplacement de résolution du point d’arrêt.
 
 `pProgram`\
-[L’objet IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) qui représente l’application dans laquelle l’erreur de point d’arrêt s’est produite.
+Objet [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) qui représente l’application dans laquelle l’erreur de point d’arrêt s’est produite.
 
 `pThread`\
-[L’objet IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) qui représente le thread sur lequel l’application qui a généré l’erreur de point d’arrêt est en cours d’exécution.
+Objet [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) qui représente le thread sur lequel l’application qui a généré l’erreur de point d’arrêt s’exécute.
 
 `bstrMessage`\
-Une chaîne contenant tout message d’avertissement ou d’erreur résultant de cette résolution d’erreurs.
+Chaîne contenant un message d’avertissement ou d’erreur résultant de la résolution de cette erreur.
 
 `dwType`\
-Une valeur de [l’énumération BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md) qui spécifie le type d’erreur de point d’arrêt.
+Valeur de l’énumération [BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md) qui spécifie le type d’erreur de point d’arrêt.
 
 ## <a name="remarks"></a>Notes
-Cette structure est revenue de la méthode [GetResolutionInfo.](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)
+Cette structure est retournée par la méthode [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) .
 
-## <a name="requirements"></a>Spécifications
-En-tête: msdbg.h
+## <a name="requirements"></a>Configuration requise
+En-tête : msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Espace de noms : Microsoft. VisualStudio. Debugger. Interop
 
-Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Structures et unions](../../../extensibility/debugger/reference/structures-and-unions.md)

@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9aa052a0fd2216d5f3d85e99794d9ac883a09e2d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77631690"
 ---
 # <a name="tooltaskextension-base-class"></a>Classe de base ToolTaskExtension
@@ -33,7 +33,7 @@ De nombreuses tâches héritent de la classe <xref:Microsoft.Build.Tasks.ToolTas
 | <xref:Microsoft.Build.Utilities.Task.BuildEngine%2A> | Paramètre <xref:Microsoft.Build.Framework.IBuildEngine> facultatif.<br /><br /> Spécifie l’interface du moteur de génération disponible pour les tâches. Le moteur de génération définit automatiquement ce paramètre pour permettre aux tâches d'être rappelées. |
 | <xref:Microsoft.Build.Utilities.Task.BuildEngine2%2A> | Paramètre <xref:Microsoft.Build.Framework.IBuildEngine2> facultatif.<br /><br /> Spécifie l’interface du moteur de génération disponible pour les tâches. Le moteur de génération définit automatiquement ce paramètre pour permettre aux tâches d'être rappelées.<br /><br /> Il s'agit d'une propriété de convenance qui permet aux auteurs de tâches qui héritent de cette classe de ne pas avoir à effectuer un cast de la valeur de `IBuildEngine` vers `IBuildEngine2`. |
 | <xref:Microsoft.Build.Utilities.Task.BuildEngine3%2A> | Paramètre <xref:Microsoft.Build.Framework.IBuildEngine3> facultatif.<br /><br /> Spécifie l'interface du moteur de génération fournie par l'hôte. |
-| <xref:Microsoft.Build.Utilities.ToolTask.EchoOff%2A> | Paramètre `bool` facultatif.<br /><br /> Lorsqu’il `true`est réglé sur , cette tâche passe **/Q** à la ligne de commande *cmd.exe* de telle sorte que la ligne de commande ne se copie pas à stdout. |
+| <xref:Microsoft.Build.Utilities.ToolTask.EchoOff%2A> | Paramètre `bool` facultatif.<br /><br /> Lorsque la valeur `true` est, cette tâche passe **/q** à la ligne de commande *cmd.exe* , de telle sorte que la ligne de commande ne soit pas copiée dans stdout. |
 | <xref:Microsoft.Build.Utilities.ToolTask.EnvironmentVariables%2A> | Paramètres de tableau `String` facultatif.<br /><br /> Tableau de paires de variables d'environnement, séparées par un signe égal. Ces variables sont transmises à l'exécutable généré en plus ou en remplacement sélectif du bloc environnement normal. |
 | <xref:Microsoft.Build.Utilities.ToolTask.ExitCode%2A> | Paramètre en lecture seule de sortie `Int32` facultatif.<br /><br /> Spécifie le code de sortie fourni par la commande exécutée. Si la tâche a journalisé des erreurs, alors que le processus avait un code de sortie de 0 (réussite), ce paramètre prend la valeur -1. |
 | <xref:Microsoft.Build.Utilities.Task.HostObject%2A> | Paramètre <xref:Microsoft.Build.Framework.ITaskHost> facultatif.<br /><br /> Spécifie l'instance de l'objet hôte (peut être null). Le moteur de génération définit cette propriété si l'IDE hôte a associé un objet hôte à cette tâche particulière. |
@@ -43,7 +43,7 @@ De nombreuses tâches héritent de la classe <xref:Microsoft.Build.Tasks.ToolTas
 | <xref:Microsoft.Build.Utilities.ToolTask.StandardOutputImportance%2A> | Paramètre `String` facultatif.<br /><br /> Importance avec laquelle le texte doit être enregistré dans le flux de sortie standard. |
 | <xref:Microsoft.Build.Utilities.ToolTask.Timeout%2A> | Paramètre `Int32` facultatif virtuel.<br /><br /> Spécifie le délai, en millisecondes, après lequel l’exécutable de la tâche est arrêté. La valeur par défaut est `Int.MaxValue`, ce qui indique qu’il n’existe aucun délai d’expiration. Délai d’expiration en millisecondes. |
 | <xref:Microsoft.Build.Utilities.ToolTask.ToolExe%2A> | Paramètre `string` facultatif virtuel.<br /><br /> Les projets peuvent l'implémenter pour remplacer un ToolName. Les tâches peuvent le remplacer pour préserver le ToolName. |
-| <xref:Microsoft.Build.Utilities.ToolTask.ToolPath%2A> | Paramètre `string` facultatif.<br /><br /> Spécifie l’emplacement à partir duquel la tâche charge le fichier exécutable sous-jacent. Si ce paramètre n’est pas spécifié, la tâche utilise le chemin d’installation SDK qui correspond à la version du cadre qui fonctionne MSBuild. |
+| <xref:Microsoft.Build.Utilities.ToolTask.ToolPath%2A> | Paramètre `string` facultatif.<br /><br /> Spécifie l’emplacement à partir duquel la tâche charge le fichier exécutable sous-jacent. Si ce paramètre n’est pas spécifié, la tâche utilise le chemin d’installation du kit de développement logiciel (SDK) qui correspond à la version du Framework qui exécute MSBuild. |
 | <xref:Microsoft.Build.Utilities.ToolTask.UseCommandProcessor%2A> | Paramètre `bool` facultatif.<br /><br /> Quand la valeur est `true`, cette tâche crée un fichier de commandes pour la ligne de commande et l'exécute à l'aide de l'interpréteur de commandes au lieu d'exécuter la commande directement. |
 | <xref:Microsoft.Build.Utilities.ToolTask.YieldDuringToolExecution%2A> | Paramètre `bool` facultatif.<br /><br /> Quand la valeur est `true`, cette tâche donne le nœud quand sa tâche s'exécute. |
 

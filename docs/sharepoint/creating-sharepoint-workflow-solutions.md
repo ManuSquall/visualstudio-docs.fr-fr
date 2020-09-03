@@ -21,14 +21,15 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2c787009577735213437140513ec095f81c3f43b
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015285"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>Créer des solutions de flux de travail SharePoint
 
-[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]fournit des outils pour vous aider à créer des flux de travail personnalisés qui gèrent le cycle de vie des documents et des éléments de liste dans un site Web SharePoint. Les éléments fournis incluent un concepteur, un ensemble de contrôles d’activité et les références d’assembly nécessaires. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]comprend également l' **Assistant Personnalisation de SharePoint**, pour faciliter la création et la configuration des flux de travail.
+[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] fournit des outils pour vous aider à créer des flux de travail personnalisés qui gèrent le cycle de vie des documents et des éléments de liste dans un site Web SharePoint. Les éléments fournis incluent un concepteur, un ensemble de contrôles d’activité et les références d’assembly nécessaires. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] comprend également l' **Assistant Personnalisation de SharePoint**, pour faciliter la création et la configuration des flux de travail.
 
 Pour plus d’informations sur SharePoint, consultez [produits et technologies Microsoft SharePoint](/sharepoint/dev/).
 
@@ -121,12 +122,12 @@ Pour plus d’informations sur SharePoint, consultez [produits et technologies M
  Vous pouvez également collecter des informations auprès des utilisateurs à l’aide des propriétés d’un élément dans la bibliothèque ou la liste SharePoint. Le fichier de code principal (Workflow1.cs ou Workflow1. vb) déclare une instance de la classe Microsoft. SharePoint. Workflow. SPWorkflowActivationProperties. WorkflowProperties nommée `workflowProperties` . Utilisez l' `workflowProperties` objet pour accéder aux propriétés de la bibliothèque ou de la liste dans le code. Pour obtenir un exemple, consultez [procédure pas à pas : créer et déboguer une solution de flux de travail SharePoint](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md).
 
 ## <a name="debug-a-sharepoint-workflow-template"></a>Déboguer un modèle de flux de travail SharePoint
- Vous pouvez déboguer un projet de flux de travail SharePoint de la même façon que vous déboguez d’autres [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projets Web. Quand vous démarrez le [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] débogueur, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] utilise les paramètres que vous spécifiez dans l' **Assistant Personnalisation de SharePoint** pour ouvrir le site Web SharePoint approprié et associer automatiquement le modèle de flux de travail à la bibliothèque ou la liste appropriée. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]attache également le [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] débogueur au [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] processus nommé *w3wp.exe*.
+ Vous pouvez déboguer un projet de flux de travail SharePoint de la même façon que vous déboguez d’autres [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projets Web. Quand vous démarrez le [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] débogueur, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] utilise les paramètres que vous spécifiez dans l' **Assistant Personnalisation de SharePoint** pour ouvrir le site Web SharePoint approprié et associer automatiquement le modèle de flux de travail à la bibliothèque ou la liste appropriée. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] attache également le [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] débogueur au [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] processus nommé *w3wp.exe*.
 
  Pour tester le flux de travail, vous devez le démarrer manuellement. Pour plus d’informations, consultez la section « débogage de flux de travail » dans [débogage de solutions SharePoint](../sharepoint/debugging-sharepoint-solutions.md). Pour plus d’informations sur le [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] débogage d’applications Web, consultez [Déboguer des applications et des scripts Web](../debugger/how-to-enable-debugging-for-aspnet-applications.md).
 
 ## <a name="deploy-a-sharepoint-workflow-template"></a>Déployer un modèle de flux de travail SharePoint
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Les projets de flux de travail SharePoint se déploient comme d’autres [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projets SharePoint. Pour plus d’informations, consultez [empaqueter et déployer des solutions SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Les projets de flux de travail SharePoint se déploient comme d’autres [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projets SharePoint. Pour plus d’informations, consultez [empaqueter et déployer des solutions SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).
 
 ## <a name="import-globally-reusable-workflows"></a>Importer des flux de travail réutilisables globalement
  Outre la création de flux de travail réutilisables spécifiques au site, SharePoint Designer vous permet de créer des flux de travail *réutilisables globalement*, qui sont des flux de travail qui peuvent être utilisés par n’importe quel site SharePoint. Le projet importer le flux de travail réutilisable dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] n’importe pas actuellement les flux de travail réutilisables globalement. Toutefois, vous pouvez utiliser SharePoint Designer pour convertir un flux de travail réutilisable globalement en flux de travail réutilisable, ou importer le flux de travail en tant que flux de travail déclaratif non converti. Pour plus d’informations, consultez [importer des éléments à partir d’un site SharePoint existant](../sharepoint/importing-items-from-an-existing-sharepoint-site.md).

@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: a2e704202773447e353f041df66b05cb5f648c00
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545351"
 ---
 # <a name="ca1821-remove-empty-finalizers"></a>CA1821 : Supprimez les finaliseurs vides
@@ -31,7 +31,7 @@ ms.locfileid: "85545351"
 |Category|Microsoft. performance|
 |Modification avec rupture|Sans rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Un type implémente un finaliseur vide, appelle uniquement le finaliseur de type de base ou appelle uniquement des méthodes émises de manière conditionnelle.
 
 ## <a name="rule-description"></a>Description de la règle

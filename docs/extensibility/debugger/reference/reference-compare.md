@@ -1,5 +1,5 @@
 ---
-title: REFERENCE_COMPARE Microsoft Docs
+title: REFERENCE_COMPARE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 2aa9e7c608c4aabdbb808629112b922a5ed3322e
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713731"
 ---
 # <a name="reference_compare"></a>REFERENCE_COMPARE
@@ -46,23 +46,23 @@ public enum enum_REFERENCE_COMPARE { 
 
 ## <a name="fields"></a>Champs
  `REF_COMPARE_EQUAL`\
- Spécifie une comparaison égale.
+ Spécifie une comparaison égal à.
 
  `REF_COMPARE_LESS_THAN`\
- Spécifie une comparaison inférieure à celle-des-deux.
+ Spécifie une comparaison d’infériorité.
 
  `REF_COMPARE_GREATER_THAN`\
- Spécifie une comparaison plus importante que la comparaison.
+ Spécifie une comparaison de plus grande taille.
 
 ## <a name="remarks"></a>Notes
- Passé comme argument à la méthode [Compare.](../../../extensibility/debugger/reference/idebugreference2-compare.md)
+ Passé comme argument à la méthode [compare](../../../extensibility/debugger/reference/idebugreference2-compare.md) .
 
-## <a name="requirements"></a>Spécifications
- En-tête: msdbg.h
+## <a name="requirements"></a>Configuration requise
+ En-tête : msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Espace de noms : Microsoft. VisualStudio. Debugger. Interop
 
- Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

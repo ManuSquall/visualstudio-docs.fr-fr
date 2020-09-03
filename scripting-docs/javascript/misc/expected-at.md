@@ -15,10 +15,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 209a8793c0940511b7ecb2abb32f537a614ebf8b
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85814822"
 ---
 # <a name="expected-"></a>' \@ 'Attendu
@@ -33,6 +33,6 @@ Vous avez tenté de créer une variable à utiliser avec des instructions de com
     ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [@setGestion](../../javascript/reference/at-set-statement-javascript.md)   
+ [@set Gestion](../../javascript/reference/at-set-statement-javascript.md)   
  [Compilation conditionnelle](../../javascript/advanced/conditional-compilation-javascript.md)   
  [Variables de compilation conditionnelle](../../javascript/advanced/conditional-compilation-variables-javascript.md)
