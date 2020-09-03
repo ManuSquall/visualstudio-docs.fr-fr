@@ -1,5 +1,5 @@
 ---
-title: PROVIDER_FLAGS Microsoft Docs
+title: PROVIDER_FLAGS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d2333b62f21aa7b2b2bc70bddb50cbb3983cedf5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713820"
 ---
 # <a name="provider_flags"></a>PROVIDER_FLAGS
-Spécifie les propriétés souhaitées à obtenir auprès d’un fournisseur de programme.
+Spécifie les propriétés souhaitées à obtenir d’un fournisseur de programme.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -54,28 +54,28 @@ public enum enum_PROVIDER_FLAGS {
 
 ## <a name="fields"></a>Champs
  `PFLAG_NONE`\
- Aucun drapeau spécifié.
+ Aucun indicateur spécifié.
 
  `PFLAG_REMOTE_PORT`\
- Caller veut une liste de programmes [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]sur une machine différente de .
+ L’appelant souhaite obtenir une liste de programmes sur un ordinateur différent de [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] .
 
  `PFLAG_DEBUGGEE`\
- Le processus est actuellement débogé par [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]cette instance de .
+ Le processus est actuellement en cours de débogage par cette instance de [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] .
 
  `PFLAG_ATTACH_TODEBUGGEE`\
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]est attaché au programme en cours de débocisation, mais ne l’a pas lancé.
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] est attaché au programme en cours de débogage, mais n’a pas été lancé.
 
  `PFLAG_REASON_WATCH`\
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]veille aux événements.
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] surveille les événements.
 
  `PFLAG_GET_PROGRAM_NODES`\
- Caller veut `ProgramNodes` le champ de la structure [PROVIDER_PROCESS_DATA.](../../../extensibility/debugger/reference/provider-process-data.md)
+ L’appelant souhaite obtenir le `ProgramNodes` champ de la structure [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) .
 
  `PFLAG_GET_IS_DEBUGGER_PRESENT`\
- L’appelant `fIsTheDebuggerPresent` veut le `PROVIDER_PROCESS_DATA` champ de la structure.
+ L’appelant souhaite obtenir le `fIsTheDebuggerPresent` champ de la `PROVIDER_PROCESS_DATA` structure.
 
 ## <a name="remarks"></a>Notes
- Ces drapeaux sont transmis aux méthodes suivantes :
+ Ces indicateurs sont passés aux méthodes suivantes :
 
 - [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)
 
@@ -83,14 +83,14 @@ public enum enum_PROVIDER_FLAGS {
 
 - [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)
 
-  Ces valeurs peuvent être combinées avec un peu plus. `OR`
+  Ces valeurs peuvent être combinées avec une opération de bits `OR` .
 
-## <a name="requirements"></a>Spécifications
- En-tête: msdbg.h
+## <a name="requirements"></a>Configuration requise
+ En-tête : msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Espace de noms : Microsoft. VisualStudio. Debugger. Interop
 
- Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

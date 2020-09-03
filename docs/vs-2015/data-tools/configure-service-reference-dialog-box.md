@@ -16,19 +16,19 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ac8f4cf619bbdd007bb7aa570f549ae3c0b50e86
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72651116"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Configurer la référence de service (boîte de dialogue)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La boîte de dialogue **configurer la référence de service** vous permet de configurer le comportement des services [!INCLUDE[vsindigo](../includes/vsindigo-md.md)].
+La boîte de dialogue **configurer la référence de service** vous permet de configurer le comportement des [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] services.
 
 > [!NOTE]
-> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez Importation et exportation de paramètres dans le menu Outils. Pour plus d’informations, consultez [Paramètres Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Les boîtes de dialogue et les commandes de menu affichées peuvent différer de celles décrites dans l'Aide selon les paramètres actifs ou le mode d'édition. Pour modifier vos paramètres, choisissez Importation et exportation de paramètres dans le menu Outils. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
  Pour accéder à la boîte de dialogue **Configurer la référence de service**, cliquez avec le bouton droit sur une référence de service dans l’**Explorateur de solutions** et choisissez **Configurer la référence de service**. Vous pouvez également accéder à la boîte de dialogue en cliquant sur le bouton **Avancé** dans la **boîte de dialogue Ajouter une référence de service**.
 
@@ -46,7 +46,7 @@ La boîte de dialogue **configurer la référence de service** vous permet de co
 
 - Pour désactiver le partage de type, décochez la case **Réutiliser les types dans les assemblys référencés**. Pour activer le partage de type d’un sous-ensemble d’assemblys référencés, cochez la case **Réutiliser les types dans les assemblys référencés**, sélectionnez **Réutiliser les types dans les assemblys référencés spécifiés**, puis sélectionnez les références souhaitées dans la **Liste des assemblys référencés**.
 
-## <a name="uielement-list"></a>Liste des éléments d’interface
+## <a name="uielement-list"></a>Liste des éléments de l'interface utilisateur
  **Adresse** Utilisé pour mettre à jour l’adresse Web à laquelle une référence de service recherche un service. Par exemple, pendant le développement, le service peut être hébergé sur un serveur de développement, puis transféré ultérieurement vers un serveur de production, ce qui nécessite un changement d'adresse.
 
 > [!NOTE]

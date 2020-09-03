@@ -15,14 +15,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 16f675cb62c0c3fd5f3aba7ba6190427fe101353
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85814800"
 ---
 # <a name="unterminated-comment"></a>Commentaire inachevé
-Vous avez commencé un bloc de commentaires sur plusieurs lignes, mais vous ne l’avez pas correctement terminé. Les commentaires sur plusieurs lignes commencent par une combinaison « /* » et se terminent par la \* combinaison « / » inverse. Voici un exemple :  
+Vous avez commencé un bloc de commentaires sur plusieurs lignes, mais vous ne l’avez pas correctement terminé. Les commentaires sur plusieurs lignes commencent par une combinaison « /* » et se terminent par la \* combinaison « / » inverse. Par exemple :  
   
 ```JavaScript  
 /* This is a comment  

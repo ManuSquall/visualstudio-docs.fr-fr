@@ -1,5 +1,5 @@
 ---
-title: PROVIDER_PROCESS_DATA Microsoft Docs
+title: PROVIDER_PROCESS_DATA | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: bdaf15d09af3199d026155cf7667f063f5bbe858
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713776"
 ---
 # <a name="provider_process_data"></a>PROVIDER_PROCESS_DATA
-Cette structure fournit des informations sur les processus fonctionnant sur une machine.
+Cette structure fournit des informations sur les processus qui s’exécutent sur un ordinateur.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -45,23 +45,23 @@ public struct PROVIDER_PROCESS_DATA {
 
 ## <a name="members"></a>Membres
  `Fields`\
- Une combinaison de drapeaux de [l’PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md) recensement, indiquant quels champs sont remplis.
+ Combinaison d’indicateurs de l’énumération [PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md) , indiquant les champs qui sont remplis.
 
  `ProgramNodes`\
- Une structure [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md) qui contient un éventail de nœuds de programme.
+ Structure [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md) qui contient un tableau de nœuds de programme.
 
  `fIsDebuggerPresent`\
- Nonzero`TRUE`( ) [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] si le débbuggeur`FALSE`est en cours d’exécution, zéro ( ) si elle n’est pas.
+ Différent de zéro ( `TRUE` ) si le [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] débogueur est en cours d’exécution, zéro ( `FALSE` ) si ce n’est pas le cas.
 
 ## <a name="remarks"></a>Notes
  Cette structure est transmise à la méthode [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) où elle est remplie.
 
-## <a name="requirements"></a>Spécifications
- En-tête: msdbg.h
+## <a name="requirements"></a>Configuration requise
+ En-tête : msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Espace de noms : Microsoft. VisualStudio. Debugger. Interop
 
- Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Structures et unions](../../../extensibility/debugger/reference/structures-and-unions.md)

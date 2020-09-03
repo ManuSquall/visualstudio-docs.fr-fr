@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2cd255ab59c9d46676ba46baddd9cee7e3ef4cc2
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85461181"
 ---
 # <a name="memorytypeenum"></a>MemoryTypeEnum
@@ -34,15 +34,15 @@ enum MemoryTypeEnum {
 ```
 
 #### <a name="parameters"></a>Paramètres
-`MemTypeCode`Accède uniquement à la mémoire de code.
+`MemTypeCode` Accède uniquement à la mémoire de code.
 
-`MemTypeData`Accède à des données ou à la mémoire de pile.
+`MemTypeData` Accède à des données ou à la mémoire de pile.
 
-`MemTypeStack`Accède uniquement à la mémoire de pile.
+`MemTypeStack` Accède uniquement à la mémoire de pile.
 
-`MemTypeAny`Accède à n’importe quel type de mémoire.
+`MemTypeAny` Accède à n’importe quel type de mémoire.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Les valeurs de cette énumération sont passées à la méthode [IDiaStackWalkHelper :: ReadMemory (](../../debugger/debug-interface-access/idiastackwalkhelper-readmemory.md) pour limiter l’accès à différents types de mémoire.
 
 ## <a name="requirements"></a>Configuration requise

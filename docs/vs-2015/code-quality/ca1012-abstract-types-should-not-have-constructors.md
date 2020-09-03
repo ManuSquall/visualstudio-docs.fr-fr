@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 2c88144e788fb35a3c330aa28b4e9d8b91ff8003
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545455"
 ---
 # <a name="ca1012-abstract-types-should-not-have-constructors"></a>CA1012 : Les types abstract ne doivent pas avoir de constructeurs
@@ -31,7 +31,7 @@ ms.locfileid: "85545455"
 |Category|Microsoft. Design|
 |Modification avec rupture|Sans rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Un type public est abstrait et a un constructeur public.
 
 ## <a name="rule-description"></a>Description de la règle

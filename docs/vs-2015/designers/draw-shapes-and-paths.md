@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e9eba4e5bfef052f7a82c3148f5628eff9413180
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542205"
 ---
 # <a name="draw-shapes-and-paths"></a>Dessiner des formes et des tracés
@@ -37,7 +37,7 @@ Dans Concepteur XAML, une *forme* correspond exactement à ce que vous attendez.
 
 - [Créer un tracé de détourage](#Clipping)
 
-## <a name="draw-a-shape"></a><a name="Shape"></a>Dessiner une forme
+## <a name="draw-a-shape"></a><a name="Shape"></a> Dessiner une forme
  Vous pouvez trouver des formes dans le panneau **Composants** .
 
  ![Catégorie Formes du volet Composants](../designers/media/b4-shapes-assetspanel.png "b4_Shapes_AssetsPanel")
@@ -96,12 +96,12 @@ Dans Concepteur XAML, une *forme* correspond exactement à ce que vous attendez.
 
  Utilisez l' **Selection** outil sélection ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4EFA-a0f7-af20851e4daa") pour sélectionner le tracé. Utilisez l' **Pen** outil plume ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84Cf-a9bc8f38fc54") pour cliquer n’importe où sur le tracé où vous souhaitez ajouter le point.
 
-## <a name="convert-a-shape-to-a-path"></a><a name="Convert"></a>Convertir une forme en tracé
+## <a name="convert-a-shape-to-a-path"></a><a name="Convert"></a> Convertir une forme en tracé
  Pour modifier une forme à la manière d’un tracé, convertissez la forme en tracé.
 
  **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.PNG "Installées bldadminconsoleinitialconfigicon") [Utilisation de tracés : convertir une forme en tracé](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).
 
-## <a name="combine-paths"></a><a name="Combine"></a>Combiner les chemins
+## <a name="combine-paths"></a><a name="Combine"></a> Combiner les chemins
  Vous pouvez combiner des tracés et des formes pour en faire un seul et même tracé.
 
  ![](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png "2df17a5d-a338-4ef4-96c5-dae51cc1ca8a")
@@ -114,7 +114,7 @@ Dans Concepteur XAML, une *forme* correspond exactement à ce que vous attendez.
 
  **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.PNG "Installées bldadminconsoleinitialconfigicon") [Utilisation de tracés : combiner des tracés](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).
 
-## <a name="create-a-compound-path"></a><a name="Compound"></a>Créer un tracé composite
+## <a name="create-a-compound-path"></a><a name="Compound"></a> Créer un tracé composite
  Quand vous créez un tracé composite, toutes les parties situées à l'intersection des tracés sont soustraites du résultat, et le tracé obtenu adopte les propriétés visuelles du tracé inférieur.
 
  Vous pouvez à tout moment dissocier un tracé composite après l’avoir créé.
@@ -123,7 +123,7 @@ Dans Concepteur XAML, une *forme* correspond exactement à ce que vous attendez.
 
  **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.PNG "Installées bldadminconsoleinitialconfigicon") [Utilisation de tracés : créer un tracé composite](https://www.youtube.com/watch?v=Io5bC0-nH6Q).
 
-## <a name="create-a-clipping-path"></a><a name="Clipping"></a>Créer un tracé de détourage
+## <a name="create-a-clipping-path"></a><a name="Clipping"></a> Créer un tracé de détourage
  Un tracé de détourage est un tracé ou une forme qui est appliqué à un autre objet ; les parties de l’objet masqué situées à l’extérieur du tracé de détourage sont masquées.
 
  ![](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png "22471e98-a841-4f39-a3ef-36090cf5a625")

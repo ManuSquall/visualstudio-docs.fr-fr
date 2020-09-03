@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 00be9f52b8cac067e1d8482fe0378737c68909c4
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85462147"
 ---
 # <a name="cv_access_e"></a>CV_access_e
@@ -39,7 +39,7 @@ CV_protected membre a accès protégé.
 
 CV_public membre a un accès public.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Le `friend` spécificateur d’accès n’est pas inclus ici, car il est généralement utilisé par les fonctions non-membres qui ont accès aux éléments privés et protégés de la classe. Utilisez la méthode [IDiaSymbol :: get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) pour rechercher des symboles avec `SymTagFriend` accès.
 
 ## <a name="requirements"></a>Configuration requise

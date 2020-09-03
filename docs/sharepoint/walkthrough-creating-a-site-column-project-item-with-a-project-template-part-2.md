@@ -12,9 +12,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c3b84d901a1fd94d72ff14ec5c481e04676c5cbc
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016397"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>Procédure pas à pas : création d’un élément de projet colonne de site avec un modèle de projet, partie 2
@@ -86,7 +87,7 @@ ms.locfileid: "86016397"
 
 5. Dans la liste des modèles de projet, choisissez **bibliothèque de contrôles utilisateur WPF**, nommez le projet **ProjectTemplateWizard**, puis choisissez le bouton **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Ajoute le projet **ProjectTemplateWizard** à la solution et ouvre le fichier UserControl1. XAML par défaut.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Ajoute le projet **ProjectTemplateWizard** à la solution et ouvre le fichier UserControl1. XAML par défaut.
 
 6. Supprimez le fichier UserControl1. xaml du projet.
 
@@ -96,11 +97,11 @@ ms.locfileid: "86016397"
 
 2. En haut de la boîte de dialogue **Ajouter un nouveau projet** , choisissez **.NET Framework 3,5** dans la liste des versions du .NET Framework.
 
-3. Développez le nœud **Visual C#** ou le nœud **Visual Basic** , puis choisissez le nœud **Windows** .
+3. Développez le nœud **Visual C#** ou le nœud  **Visual Basic** , puis choisissez le nœud **Windows** .
 
 4. Choisissez le modèle de projet **bibliothèque de classes** , nommez le projet **SharePointCommands**, puis choisissez le bouton **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Ajoute le projet **SharePointCommands** à la solution et ouvre le fichier de code Class1 par défaut.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Ajoute le projet **SharePointCommands** à la solution et ouvre le fichier de code Class1 par défaut.
 
 5. Supprimez le fichier de code Class1 du projet.
 
@@ -165,13 +166,13 @@ ms.locfileid: "86016397"
 
 1. Dans **Explorateur de solutions**, choisissez le nœud de projet **SharePointCommands** .
 
-2. Dans la barre de menus, choisissez **projet**, **Ajouter un élément existant**.
+2. Dans la barre de menus, choisissez **projet**,  **Ajouter un élément existant**.
 
 3. Dans la boîte de dialogue **Ajouter un élément existant** , accédez au dossier qui contient les fichiers de code du projet ProjectTemplateWizard, puis sélectionnez le fichier de code **ID** .
 
 4. Cliquez sur la flèche en regard du bouton **Ajouter** , puis sélectionnez l’option **Ajouter en tant que lien** dans le menu qui s’affiche.
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Ajoute le fichier de code au projet **SharePointCommands** sous forme de lien. Le fichier de code se trouve dans le projet **ProjectTemplateWizard** , mais le code du fichier est également compilé dans le projet **SharePointCommands** .
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Ajoute le fichier de code au projet **SharePointCommands** sous forme de lien. Le fichier de code se trouve dans le projet **ProjectTemplateWizard** , mais le code du fichier est également compilé dans le projet **SharePointCommands** .
 
 5. Dans le projet **SharePointCommands** , ajoutez un autre fichier de code nommé commandes.
 

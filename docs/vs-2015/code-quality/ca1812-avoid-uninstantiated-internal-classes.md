@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 401fbfbccfeeeeec5cbdc0e791b110d1b5f0201b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543973"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812 : Évitez les classes internes non instanciées
@@ -32,7 +32,7 @@ ms.locfileid: "85543973"
 |Category|Microsoft. performance|
 |Modification avec rupture|Sans rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Une instance d'un type de niveau assembly n'est pas créée par le code au sein de l'assembly.
 
 ## <a name="rule-description"></a>Description de la règle
@@ -40,7 +40,7 @@ ms.locfileid: "85543973"
 
  Les types suivants ne sont pas examinés par cette règle :
 
-- Types valeur
+- Types de valeur
 
 - Types abstraits
 

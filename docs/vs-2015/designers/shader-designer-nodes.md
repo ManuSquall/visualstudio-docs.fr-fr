@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b7526da10262003c9d086fdf1d74d065aac2d406
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664131"
 ---
 # <a name="shader-designer-nodes"></a>Nœuds du concepteur Shader
@@ -46,7 +46,7 @@ Les articles de cette section de la documentation contiennent des informations s
 
 |Titre|Description|
 |-----------|-----------------|
-|[Nœuds de constante](../designers/constant-nodes.md)|Décrit les nœuds que vous pouvez utiliser pour représenter des valeurs littérales et des informations d’état de vertex interpolées dans les calculs de nuanceurs. Comme l’état de vertex est interpolé, et donc différent pour chaque pixel, chaque instance du nuanceur de pixels reçoit une version différente de la constante.|
+|[Nœuds constants](../designers/constant-nodes.md)|Décrit les nœuds que vous pouvez utiliser pour représenter des valeurs littérales et des informations d’état de vertex interpolées dans les calculs de nuanceurs. Comme l’état de vertex est interpolé, et donc différent pour chaque pixel, chaque instance du nuanceur de pixels reçoit une version différente de la constante.|
 |[Nœuds de paramètre](../designers/parameter-nodes.md)|Décrit les nœuds que vous pouvez utiliser pour représenter la position de l’appareil-photo, les propriétés matérielles, les paramètres d’éclairage, l’heure et d’autres informations sur l’état de l’application dans les calculs de nuanceurs.|
 |[Nœuds de texture](../designers/texture-nodes.md)|Décrit les nœuds que vous pouvez utiliser pour échantillonner différents types de texture, ainsi que des géométries, et pour produire ou transformer des coordonnées de texture avec des techniques courantes.|
 |[Nœuds mathématiques](../designers/math-nodes.md)|Décrit les nœuds que vous pouvez utiliser pour effectuer des opérations d’algèbre, de logique, de trigonométrie, et d’autres opérations mathématiques qui correspondent directement aux instructions HLSL.|

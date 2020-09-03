@@ -1,5 +1,5 @@
 ---
-title: NAME_MATCH Microsoft Docs
+title: NAME_MATCH | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 66a0e725f6362034e2d1a9b1df49d2a83d154ce7
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80714289"
 ---
 # <a name="name_match"></a>NAME_MATCH
-Sélectionne l’option de cas pour l’appariement des noms.
+Sélectionne l’option case pour les noms correspondants.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -48,13 +48,13 @@ public enum NameMatchOptions { 
  Aucune option n'est spécifiée.
 
  `nmCaseSensitive`\
- Indique que les noms à apparier sont sensibles aux cas.
+ Indique que les noms à mettre en correspondance respectent la casse.
 
  `nmCaseInsensitive`\
- Indique que les noms à apparier ne sont pas sensibles aux cas.
+ Indique que les noms à mettre en correspondance ne respectent pas la casse.
 
 ## <a name="remarks"></a>Notes
- Passé comme argument aux méthodes suivantes:
+ Passé comme argument aux méthodes suivantes :
 
 - [GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)
 
@@ -65,11 +65,11 @@ public enum NameMatchOptions { 
 - [GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)
 
 ## <a name="requirements"></a>Spécifications
- En-tête: sh.h
+ En-tête : SH. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Espace de noms : Microsoft. VisualStudio. Debugger. Interop
 
- Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

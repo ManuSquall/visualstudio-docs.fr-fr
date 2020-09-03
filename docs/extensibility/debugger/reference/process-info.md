@@ -1,5 +1,5 @@
 ---
-title: PROCESS_INFO Microsoft Docs
+title: PROCESS_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ef73145fb0a2598dc5e4ee98e8652314e0bc1c89
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713882"
 ---
 # <a name="process_info"></a>PROCESS_INFO
@@ -57,41 +57,41 @@ public struct PROCESS_INFO { 
 
 ## <a name="members"></a>Membres
  `Fields`\
- Une combinaison de drapeaux de [l’PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) énumération qui précisent quels champs sont remplis.
+ Combinaison d’indicateurs de l’énumération [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) qui spécifie les champs à remplir.
 
  `bstrFileName`\
- Le nom complet du processus. Équivalent à appeler la méthode [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) avec le paramètre `GN_FILENAME`.
+ Nom de chemin d’accès complet du processus. Équivalent à l’appel de la méthode [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) avec le paramètre `GN_FILENAME` .
 
  `bstrBaseName`\
- Le nom du fichier et l’extension du processus. Équivalent à `IDebugProcess2::Getname` appeler la `GN_BASENAME`méthode avec le paramètre .
+ Nom de fichier et extension du processus. Équivalent à l’appel de la `IDebugProcess2::Getname` méthode avec le paramètre `GN_BASENAME` .
 
  `bstrTitle`\
- Le titre du processus, si l’on existe. Équivalent à `IDebugProcess2::Getname` appeler la `GN_TITLE`méthode avec le paramètre .
+ Titre du processus, s’il en existe un. Équivalent à l’appel de la `IDebugProcess2::Getname` méthode avec le paramètre `GN_TITLE` .
 
  `ProcessId`\
- La [structure AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) qui identifie le processus. Équivalent à appeler la méthode [GetPhysicalProcessId.](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)
+ Structure [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) qui identifie le processus. Équivalent à l’appel de la méthode [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md) .
 
  `dwSessionId`\
- L’identifiant de la session de déboguer que ce processus est en cours d’exécution.
+ Identificateur de la session de débogage dans laquelle ce processus s’exécute.
 
  `bstrAttachedSessionName`\
- Le nom de session ci-joint. Équivalent à appeler la méthode [GetAttachedSessionName.](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md)
+ Nom de la session jointe. Équivalent à l’appel de la méthode [GetAttachedSessionName](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md) .
 
  `CreationTime`\
- Le moment où le processus a été créé.
+ Heure à laquelle le processus a été créé.
 
  `Flags`\
- Une combinaison de drapeaux de [l’PROCESS_INFO_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md) énumération qui spécifient les propriétés du processus.
+ Combinaison d’indicateurs de l’énumération [PROCESS_INFO_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md) qui spécifient les propriétés du processus.
 
 ## <a name="remarks"></a>Notes
  Cette structure est transmise à la méthode [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) où elle est remplie.
 
-## <a name="requirements"></a>Spécifications
- En-tête: msdbg.h
+## <a name="requirements"></a>Configuration requise
+ En-tête : msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Espace de noms : Microsoft. VisualStudio. Debugger. Interop
 
- Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Structures et unions](../../../extensibility/debugger/reference/structures-and-unions.md)

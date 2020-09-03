@@ -1,5 +1,5 @@
 ---
-title: STEPUNIT - France Microsoft Docs
+title: STEPUNIT | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a87c86647407d90c9f4292b1307fd5623e85d13b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713519"
 ---
 # <a name="stepunit"></a>STEPUNIT
-Spécifie l’unité d’étape pour marcher.
+Spécifie l’unité d’étape pour l’exécution pas à pas.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -46,7 +46,7 @@ enum enum_STEPUNIT { 
 
 ## <a name="fields"></a>Champs
  `STEP_STATEMENT`\
- Étapes par déclaration.
+ Étapes par instruction.
 
  `STEP_LINE`\
  Étapes par ligne.
@@ -55,14 +55,14 @@ enum enum_STEPUNIT { 
  Étapes par instruction.
 
 ## <a name="remarks"></a>Notes
- Passé comme un argument à la méthode [Step.](../../../extensibility/debugger/reference/idebugprocess3-step.md)
+ Passé comme argument à la méthode [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md) .
 
-## <a name="requirements"></a>Spécifications
- En-tête: msdbg.h
+## <a name="requirements"></a>Configuration requise
+ En-tête : msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Espace de noms : Microsoft. VisualStudio. Debugger. Interop
 
- Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

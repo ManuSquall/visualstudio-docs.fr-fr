@@ -1,5 +1,5 @@
 ---
-title: Enregistrement du programme (en anglais seulement) Microsoft Docs
+title: Inscription du programme | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,33 +12,33 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b68fa67f784d155288482ad724b632ed5ba5fa41
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713168"
 ---
-# <a name="register-the-program"></a>Enregistrer le programme
-Après l’acquisition d’un port par le moteur de débogé, représenté par une interface [IDebugPort2,](../../extensibility/debugger/reference/idebugport2.md) la prochaine étape pour permettre au programme d’être débogé est de l’enregistrer au port. Une fois inscrit, le programme est disponible pour le débogage par l’un des moyens suivants :
+# <a name="register-the-program"></a>Inscrire le programme
+Une fois que le moteur de débogage a acquis un port, représenté par une interface [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) , l’étape suivante de l’activation du programme à déboguer consiste à l’inscrire auprès du port. Une fois inscrit, le programme est disponible pour le débogage de l’une des manières suivantes :
 
-- Le processus d’attachement, qui permet au débogage d’obtenir le contrôle complet de débogage d’une application en cours d’exécution.
+- Processus d’attachement, qui permet au débogueur d’obtenir le contrôle complet du débogage d’une application en cours d’exécution.
 
-- Juste-à-temps (JIT) débogage, qui permet de débogage après le fait d’un programme qui fonctionne indépendamment d’un débbugger. Lorsque l’architecture de temps de fonctionnement attrape un défaut, le débbuggeur est averti avant que le système d’exploitation ou l’environnement de temps d’exécution libère la mémoire et les ressources du programme de défaut.
+- Le débogage juste-à-temps (JIT, Just-in-Time), qui permet le débogage d’un programme qui s’exécute indépendamment d’un débogueur. Lorsque l’architecture d’exécution intercepte une erreur, le débogueur est notifié avant que le système d’exploitation ou l’environnement d’exécution ne libère la mémoire et les ressources du programme défaillant.
 
-## <a name="registering-procedure"></a>Procédure d’enregistrement
+## <a name="registering-procedure"></a>Procédure d’inscription
 
-### <a name="to-register-your-program"></a>Pour enregistrer votre programme
+### <a name="to-register-your-program"></a>Pour inscrire votre programme
 
-1. Appelez la méthode [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) mise en œuvre par le port.
+1. Appelez la méthode [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) implémentée par le port.
 
-     `IDebugPortNotify2::AddProgramNode`nécessite un pointeur à une interface [IDebugProgramNode2.](../../extensibility/debugger/reference/idebugprogramnode2.md)
+     `IDebugPortNotify2::AddProgramNode` requiert un pointeur vers une interface [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) .
 
-     Habituellement, lorsque le système d’exploitation ou l’environnement de temps d’exécution charge un programme, il crée le nœud de programme. Si le moteur de débogé (DE) est invité à charger le programme, le DE crée et enregistre le nœud du programme.
+     En règle générale, lorsque le système d’exploitation ou l’environnement d’exécution charge un programme, il crée le nœud de programme. Si le moteur de débogage (DE) est invité à charger le programme, le DE crée et inscrit le nœud DE programme.
 
-     L’exemple suivant montre le moteur de débogé de lancer le programme et l’enregistrer avec un port.
+     L’exemple suivant montre le moteur de débogage qui lance le programme et l’enregistre avec un port.
 
     > [!NOTE]
-    > Cet échantillon de code n’est pas la seule façon de lancer et de reprendre un processus; ce code est principalement un exemple d’enregistrement d’un programme avec un port.
+    > Cet exemple de code n’est pas le seul moyen de lancer et de reprendre un processus. Ce code est principalement un exemple d’inscription d’un programme à l’aide d’un port.
 
     ```cpp
     // This is an IDebugEngineLaunch2 method.
@@ -105,5 +105,5 @@ Après l’acquisition d’un port par le moteur de débogé, représenté par u
     ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Obtenir un port](../../extensibility/debugger/getting-a-port.md)
-- [Permettre la déboiffation d’un programme](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
+- [Obtention d’un port](../../extensibility/debugger/getting-a-port.md)
+- [Activation d’un programme à déboguer](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

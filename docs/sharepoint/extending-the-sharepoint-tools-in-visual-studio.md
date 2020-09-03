@@ -15,9 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7dc0cc0d0af73d032d870629877b62c94e6b347b
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016035"
 ---
 # <a name="extend-the-sharepoint-tools-in-visual-studio"></a>Étendre les outils SharePoint dans Visual Studio
@@ -53,6 +54,6 @@ ms.locfileid: "86016035"
 - [Étendre le système de projet SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)
 - [Étendre le nœud Connexions SharePoint dans Explorateur de serveurs](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
 - [Concepts et fonctionnalités de programmation pour les extensions des outils SharePoint](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)
-- [Référence &#40;&#41;d’extensibilité des outils SharePoint](../sharepoint/reference-sharepoint-tools-extensibility.md)
+- [Référence &#40;&#41;d’extensibilité des outils SharePoint ](../sharepoint/reference-sharepoint-tools-extensibility.md)
 - [Extensions de débogage pour les outils SharePoint dans Visual Studio](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)
 - [Déployer des extensions pour les outils SharePoint dans Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)

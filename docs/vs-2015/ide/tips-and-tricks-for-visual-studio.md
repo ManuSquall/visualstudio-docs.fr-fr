@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 53caca1d98b4074867757ae01d8cc9efa9692952
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542985"
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Conseils et astuces pour Visual Studio
@@ -49,7 +49,7 @@ Vous pouvez naviguer dans Visual Studio plus facilement en utilisant les raccour
 |Afficher la liste des fichiers ouverts|Ctrl+Alt+Bas|
 |Afficher toutes les fenêtres flottantes|Ctrl+Maj+M|
 
-## <a name="window-shortcuts"></a><a name="BKMK_WindowShortcuts"></a>Raccourcis de fenêtre
+## <a name="window-shortcuts"></a><a name="BKMK_WindowShortcuts"></a> Raccourcis de fenêtre
 
 |Commande|Raccourci|
 |-|-|
@@ -59,7 +59,7 @@ Vous pouvez naviguer dans Visual Studio plus facilement en utilisant les raccour
 |Démarrer une nouvelle instance|Win+Maj+n|
 |Basculer entre les fenêtres|Win+n|
 
-## <a name="visual-studio-search"></a><a name="BKMK_Search"></a>Recherche Visual Studio
+## <a name="visual-studio-search"></a><a name="BKMK_Search"></a> Recherche Visual Studio
 
 |Commande|Raccourci|
 |-|-|
@@ -69,7 +69,7 @@ Vous pouvez naviguer dans Visual Studio plus facilement en utilisant les raccour
 |Résultats de la portée de lancement rapide|-   @opt Options<br />-   @cmd Commandes<br />-   @mru Utilisé récemment<br />-   @doc Ouvrir les documents|
 |Rechercher dans les options d'outils|Ctrl+E|
 
-## <a name="editor-find"></a><a name="BKMK_EditorFind"></a>Rechercher dans l’éditeur
+## <a name="editor-find"></a><a name="BKMK_EditorFind"></a> Rechercher dans l’éditeur
 
 |Commande|Raccourci|
 |-|-|
@@ -84,7 +84,7 @@ Vous pouvez naviguer dans Visual Studio plus facilement en utilisant les raccour
 |Rechercher dans les fichiers|Ctrl+Maj+F|
 |Remplacer dans les fichiers|Ctrl+Maj+H|
 
-## <a name="code-editor"></a><a name="BKMK_CodeEditor"></a>Éditeur de code
+## <a name="code-editor"></a><a name="BKMK_CodeEditor"></a> Éditeur de code
 
 |Commande|Raccourci|
 |-|-|
@@ -109,7 +109,7 @@ Vous pouvez naviguer dans Visual Studio plus facilement en utilisant les raccour
 |Naviguer entre plusieurs résultats d'aperçu de définition|F8 et Maj+F8|
 |Permuter entre la fenêtre de l'éditeur de code et la fenêtre Aperçu de définition|Maj+Échap|
 
-## <a name="toolbars"></a><a name="BKMK_Toolbars"></a>Barres d’outils
+## <a name="toolbars"></a><a name="BKMK_Toolbars"></a> Barres d’outils
 
 |Commande|Raccourci|
 |-|-|
@@ -137,7 +137,7 @@ Vous pouvez naviguer dans Visual Studio plus facilement en utilisant les raccour
 |Fenêtre Exécution - Vider la mémoire tampon|>cls|
 |Fenêtre Exécution - Valeur d'impression|?varname|
 
-## <a name="application-lifecycle-management"></a><a name="BKMK_ALM"></a>Application Lifecycle Management
+## <a name="application-lifecycle-management"></a><a name="BKMK_ALM"></a> Application Lifecycle Management
 
 Consultez [Raccourcis clavier : Visual Studio Online, portail web TFS et Team Explorer](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts).
 

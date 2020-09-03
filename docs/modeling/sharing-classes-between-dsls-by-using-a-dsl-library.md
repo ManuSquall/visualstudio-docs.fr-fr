@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 38496141d6fcdd33f3bf5185c3f50b1bf961d832
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542543"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>Partage de classes entre plusieurs DSL à l'aide d'une bibliothèque DSL
@@ -41,7 +41,7 @@ Dans le kit de développement logiciel (SDK) de visualisation et de modélisatio
 
 6. Créez le projet.
 
-7. Lorsque vous distribuez le DSL pour d’autres personnes à utiliser, vous devez fournir à la fois l’assembly compilé (DLL) et le fichier `DslDefinition.dsl` . Vous pouvez trouver l’assembly compilé dans un dossier sous`Dsl\bin\*`
+7. Lorsque vous distribuez le DSL pour d’autres personnes à utiliser, vous devez fournir à la fois l’assembly compilé (DLL) et le fichier `DslDefinition.dsl` . Vous pouvez trouver l’assembly compilé dans un dossier sous `Dsl\bin\*`
 
 #### <a name="to-import-a-dsl-library"></a>Pour importer une bibliothèque DSL
 

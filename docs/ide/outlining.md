@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 07ad01726b57073cad3a5a2876a4b22667d3770a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545442"
 ---
 # <a name="outlining"></a>mode Plan
@@ -49,7 +49,7 @@ Les commandes suivantes se trouvent dans le sous **Edit**  >  -menu modifier le*
 |Arrêter le masquage actuel|(**CTRL** + **M**, **CTRL** + **U**)-supprime les informations de mode plan pour la zone définie par l’utilisateur actuellement sélectionnée. Non disponible en Visual Basic.|
 |Réduire aux définitions|(**CTRL** + **M**, **CTRL** + **O**)-réduit les membres de tous les types.|
 |Réduire le bloc :\<logical boundary>|C++ Réduit une zone dans la fonction contenant le point d’insertion. Par exemple, si le point d’insertion se trouve à l’intérieur d’une boucle, celle-ci est masquée.|
-|Réduire tout dans :\<logical structures>|C++ Réduit toutes les structures à l’intérieur de la fonction.|
+|Réduire tout dans : \<logical structures>|C++ Réduit toutes les structures à l’intérieur de la fonction.|
 
 Vous pouvez également utiliser le SDK Visual Studio pour définir les zones de texte que vous souhaitez développer ou réduire. Consultez [Procédure pas à pas : mode Plan](../extensibility/walkthrough-outlining.md).
 

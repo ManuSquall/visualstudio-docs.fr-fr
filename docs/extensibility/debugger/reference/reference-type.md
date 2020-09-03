@@ -1,5 +1,5 @@
 ---
-title: REFERENCE_TYPE Microsoft Docs
+title: REFERENCE_TYPE | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 29ce6ad17aa32b98fd28914c422a49bd8bcc14b5
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80713659"
 ---
 # <a name="reference_type"></a>REFERENCE_TYPE
@@ -44,22 +44,22 @@ public enum enum_REFERENCE_TYPE { 
 
 ## <a name="fields"></a>Champs
  `REF_TYPE_WEAK`\
- Spécifie une référence faible. Impossible de `REF_TYPE_STRONG`combiner avec .
+ Spécifie une référence faible. Ne peut pas être combiné avec `REF_TYPE_STRONG` .
 
  `REF_TYPE_STRONG`\
- Spécifie une référence forte. Impossible de `REF_TYPE_WEAK`combiner avec .
+ Spécifie une référence forte. Ne peut pas être combiné avec `REF_TYPE_WEAK` .
 
 ## <a name="remarks"></a>Notes
- Utilisé comme `dwRefType` membre de la structure [DEBUG_REFERENCE_INFO.](../../../extensibility/debugger/reference/debug-reference-info.md)
+ Utilisé comme `dwRefType` membre de la structure [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) .
 
- Passé comme paramètre à la méthode [SetReferenceType.](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md)
+ Passé en tant que paramètre à la méthode [SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md) .
 
-## <a name="requirements"></a>Spécifications
- En-tête: msdbg.h
+## <a name="requirements"></a>Configuration requise
+ En-tête : msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Espace de noms : Microsoft. VisualStudio. Debugger. Interop
 
- Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 90c1f66f36fc689ee077ec66f154487d65ee13a1
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543609"
 ---
 # <a name="ca2117-aptca-types-should-only-extend-aptca-base-types"></a>CA2117 : Les types APTCA doivent uniquement étendre des types de base APTCA
@@ -32,7 +32,7 @@ ms.locfileid: "85543609"
 |Category|Microsoft.Security|
 |Modification avec rupture|Rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Un type public ou protégé dans un assembly avec l' <xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=fullName> attribut hérite d’un type déclaré dans un assembly qui n’a pas l’attribut.
 
 ## <a name="rule-description"></a>Description de la règle
@@ -40,9 +40,9 @@ ms.locfileid: "85543609"
 
  Lorsque l’attribut APTCA est présent sur un assembly d’un niveau de confiance totale et qu’un type dans l’assembly hérite d’un type qui n’autorise pas les appelants d’un niveau de confiance partiel, une faille de sécurité est possible. Si deux types `T1` et `T2` remplissent les conditions suivantes, les appelants malveillants peuvent utiliser le type `T1` pour contourner la demande d’héritage de confiance totale implicite qui protège `T2` :
 
-- `T1`est un type public déclaré dans un assembly de confiance totale qui a l’attribut APTCA.
+- `T1` est un type public déclaré dans un assembly de confiance totale qui a l’attribut APTCA.
 
-- `T1`hérite d’un type `T2` en dehors de son assembly.
+- `T1` hérite d’un type `T2` en dehors de son assembly.
 
 - `T2`l’assembly de n’a pas l’attribut APTCA et, par conséquent, ne peut pas être hérité par les types dans les assemblys partiellement approuvés.
 

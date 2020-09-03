@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 71105c6c3f93f259bdb6ce8e5f46abe30c5953c2
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85462615"
 ---
 # <a name="idiasymbolget_offset"></a>IDiaSymbol::get_offset
@@ -41,7 +41,7 @@ HRESULT get_offset ( 
 > [!NOTE]
 > Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Le décalage provient d’un point connu précédemment déterminé. Par exemple, le décalage d’un `LocIsBitField` type d’emplacement est généralement à partir du début de la classe conteneur.
 
 ## <a name="requirements"></a>Configuration requise

@@ -24,10 +24,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: acdd5b85c77b177dfb5f6d8129594967e902337c
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85350298"
 ---
 # <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>Comment : appliquer des modifications en mode arrêt à l’aide de la fonction Modifier & Continuer (Visual Basic)
@@ -41,11 +41,11 @@ Pour connaître les limitations relatives à l’utilisation de modifier & conti
 
     - Définissez un point d’arrêt dans votre code, puis cliquez sur **Démarrer le débogage** dans le menu **Déboguer** et attendez que l’application parvienne au point d’arrêt.
 
-         -ou-
+         - ou -
 
     - Démarrez le débogage, puis sélectionnez **Interrompre tout** dans le menu **Déboguer**.
 
-         -ou-
+         - ou -
 
     - Quand une exception se produit, choisissez **activer la modification** dans l' **Assistant Exception**.
 

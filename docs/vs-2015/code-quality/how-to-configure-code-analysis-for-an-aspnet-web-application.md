@@ -12,16 +12,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 423264362118343d573b417cd055d2d722df995e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657460"
 ---
 # <a name="how-to-configure-code-analysis-for-an-aspnet-web-application"></a>Comment : configurer l'analyse du code pour une application Web ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Dans [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] et [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] vous pouvez sélectionner dans une liste d’ensembles de *règles* d’analyse du code à appliquer à [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] application Web. L’ensemble de règles par défaut est les règles recommandées par Microsoft Mininimum. Vous pouvez sélectionner un autre ensemble de règles à appliquer au site Web.
+Dans [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] et, [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] vous pouvez effectuer une sélection dans une liste d' *ensembles de règles* d’analyse du code à appliquer à l' [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] application Web. L’ensemble de règles par défaut est les règles recommandées par Microsoft Mininimum. Vous pouvez sélectionner un autre ensemble de règles à appliquer au site Web.
 
 ### <a name="to-configure-a-rule-set-for-an-aspnet-page-framework-project"></a>Pour configurer un ensemble de règles pour un projet d'infrastructure de page ASP.NET
 
@@ -43,6 +43,6 @@ Dans [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] et [!INCLUDE[vsUltShor
 
     - Sélectionnez l’ensemble de règles que vous souhaitez utiliser.
 
-    - Sélectionnez **\<Browse >** pour spécifier un ensemble de règles personnalisées existant qui ne figure pas dans la liste.
+    - Sélectionnez **\<Browse>** cette option pour spécifier un ensemble de règles personnalisées existant qui ne figure pas dans la liste.
 
     - Définissez un ensemble de règles personnalisé. Pour plus d’informations, consultez [création d’ensembles de règles personnalisées](../code-quality/creating-custom-code-analysis-rule-sets.md).

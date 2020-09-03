@@ -17,9 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: baf580ace98ab14032de1e9a3edf18af2b2cfee8
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016350"
 ---
 # <a name="browse-sharepoint-connections-by-using-server-explorer"></a>Parcourir les connexions SharePoint à l’aide de Explorateur de serveurs
@@ -37,14 +38,14 @@ ms.locfileid: "86016350"
 |Nom de la commande|Description|
 |------------------|-----------------|
 |Actualiser|Met à jour l’arborescence pour refléter toutes les modifications qui ont pu se produire depuis la dernière affichage du nœud.|
-|DELETE|Supprime le nœud sélectionné de l’arborescence. **Remarque :**  Cette commande est activée uniquement sur les connexions SharePoint listées sous le nœud **Connexions SharePoint** .|
+|Supprimer|Supprime le nœud sélectionné de l’arborescence. **Remarque :**  Cette commande est activée uniquement sur les connexions SharePoint listées sous le nœud **Connexions SharePoint** .|
 |Propriétés|Affiche les propriétés disponibles pour le nœud sélectionné dans la fenêtre **Propriétés** . Les propriétés sont en lecture seule, et tous les nœuds n’ont pas de propriétés associées.|
 |Ajouter une connexion|Vous permet de spécifier un site SharePoint que vous souhaitez parcourir. Disponible sur le nœud **Connexions SharePoint** et les nœuds de sous-site.|
 |Afficher dans le navigateur|Affiche la liste sélectionnée dans le navigateur Web. Cette commande est disponible sur certaines listes sous le nœud **listes** qui est contenu dans les **listes et les bibliothèques**.|
 
 ## <a name="related-topics"></a>Rubriques connexes
 
-|Intitulé|Description|
+|Titre|Description|
 |-----------|-----------------|
 |[Procédure : ajouter ou supprimer des connexions SharePoint](../sharepoint/how-to-add-or-remove-sharepoint-connections.md)|Décrit les étapes requises pour ajouter un nouveau site SharePoint au nœud **Connexions SharePoint** dans **Explorateur de serveurs**.|
 
