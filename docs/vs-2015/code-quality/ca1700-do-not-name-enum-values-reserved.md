@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 57f2a2e5959860a99a921101ff5782f9bce9ace3
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545650"
 ---
 # <a name="ca1700-do-not-name-enum-values-39reserved39"></a>CA1700 : ne nommez pas les valeurs enum &#39;réservé&#39;
@@ -32,7 +32,7 @@ ms.locfileid: "85545650"
 |Category|Microsoft. Naming|
 |Modification avec rupture|Rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Le nom d’un membre de l’énumération contient le mot « reserved ».
 
 ## <a name="rule-description"></a>Description de la règle

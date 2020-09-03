@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Suspendre et reprendre la collecte de données de performances | Microsoft Docs'
+title: Guide pratique pour suspendre et reprendre la collecte de données de performances | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,13 +12,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 50eedfe849de2a0fe82ee337d26a8b66a15d6764
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67826144"
 ---
-# <a name="how-to-pause-and-resume-performance-data-collection"></a>Procédure : Suspendre et reprendre la collecte des données de performances
+# <a name="how-to-pause-and-resume-performance-data-collection"></a>Guide pratique pour suspendre et reprendre la collecte de données de performances
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 À partir de la fenêtre de la page de session de profilage, vous pouvez contrôler de manière interactive la collecte des données de profilage.  
@@ -28,7 +28,7 @@ ms.locfileid: "67826144"
  ![Page de session de profilage](../profiling/media/prof-profilingsessionpage.png "PROF_ProfilingSessionPage")  
   
 > [!NOTE]
-> Vous pouvez également démarrer la session de performance avec le profilage suspendu, puis reprendre le profilage ultérieurement au cours de l’exécution du programme. Pour démarrer la session de performance avec le profilage suspendu, choisissez la commande **Démarrer l’analyse de performances avec le profilage suspendu**  dans le menu **Déboguer**.  
+> Vous pouvez également démarrer la session de performance avec le profilage suspendu, puis reprendre le profilage ultérieurement au cours de l’exécution du programme. Pour démarrer la session de performance avec le profilage suspendu, choisissez la commande **Démarrer l’analyse de performances avec le profilage suspendu ** dans le menu **Déboguer**.  
   
 ### <a name="to-pause--resume-or-stop-profiling"></a>Pour suspendre, reprendre ou arrêter le profilage  
   

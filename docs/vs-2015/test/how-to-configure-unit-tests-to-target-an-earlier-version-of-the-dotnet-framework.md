@@ -9,10 +9,10 @@ caps.latest.revision: 14
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fd212eb304e6cba022b067b8b432cf00fc3f87ba
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660537"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Comment : configurer des tests unitaires pour cibler une version antérieure du .NET Framework
@@ -52,7 +52,7 @@ Quand vous créez un projet de test dans Microsoft Visual Studio, la version la 
 
 1. Créez un projet de test unitaire Visual Basic. Dans le menu **Fichier**, choisissez **Nouveau**, puis **Projet**.
 
-     La boîte de dialogue **Nouveau projet** s’affiche.
+     La boîte de dialogue **Nouveau projet** est affichée.
 
 2. Sous **Modèles installés**, développez **Visual Basic**. Sélectionnez **Test**, puis sélectionnez le modèle **Projet de test**.
 
@@ -62,21 +62,21 @@ Quand vous créez un projet de test dans Microsoft Visual Studio, la version la 
 
      Les propriétés de votre projet de test Visual Basic s’affichent.
 
-5. Sous l’onglet **Compiler**, choisissez **Options avancées de compilation**, comme indiqué dans l’illustration suivante.
+5. Sous l’onglet **compiler** , choisissez **Options avancées de compilation** , comme indiqué dans l’illustration suivante.
 
      ![Options avancées de compilation](../test/media/howtoconfigureunittest35frameworka.png "HowToConfigureUnitTest35FrameworkA")
 
 6. Utilisez la liste déroulante **Framework cible (toutes les configurations)** pour remplacer le framework cible par **.NET Framework 3.5** ou une version ultérieure, comme indiqué dans la légende B de l’illustration suivante. Ne spécifiez pas de version client.
 
-     ![Liste déroulante&#45;de la version cible du .NET Framework](../test/media/howtoconfigureunitest35frameworkstepb.png "HowToConfigureUniTest35FrameworkStepB")
+     ![&#45;la liste déroulante du Framework cible](../test/media/howtoconfigureunitest35frameworkstepb.png "HowToConfigureUniTest35FrameworkStepB")
 
 ### <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-visual-c-unit-test-projects"></a>Reciblage vers une version spécifique du .NET Framework pour les projets de test unitaire Visual C#
 
 1. Créez un projet de test unitaire Visual C#. Dans le menu **Fichier**, choisissez **Nouveau**, puis **Projet**.
 
-     La boîte de dialogue **Nouveau projet** s’affiche.
+     La boîte de dialogue **Nouveau projet** est affichée.
 
-2. Sous **Modèles installés**, développez **Visual C#** . Sélectionnez **Test**, puis sélectionnez le modèle **Projet de test**.
+2. Sous **Modèles installés**, développez **Visual C#**. Sélectionnez **Test**, puis sélectionnez le modèle **Projet de test**.
 
 3. Dans la zone de texte **Nom**, tapez un nom pour votre projet de test Visual C#, puis choisissez **OK**.
 
@@ -86,24 +86,24 @@ Quand vous créez un projet de test dans Microsoft Visual Studio, la version la 
 
 5. Sous l’onglet **Application**, choisissez **Framework cible**, puis **.NET Framework 3.5** ou une version ultérieure dans la liste déroulante pour changer le framework cible, comme indiqué dans l’illustration suivante. Ne spécifiez pas de version client.
 
-     ![Liste déroulante&#45;de la version cible du .NET Framework](../test/media/howtoconfigureunittest35frameworkcsharp.png "HowToConfigureUnitTest35FrameworkCSharp")
+     ![&#45;la liste déroulante du Framework cible](../test/media/howtoconfigureunittest35frameworkcsharp.png "HowToConfigureUnitTest35FrameworkCSharp")
 
 ### <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-ccli-unit-test-projects"></a>Reciblage vers une version spécifique du .NET Framework pour les projets de test unitaire C++/CLI
 
 1. Créez un projet de test unitaire C++. Dans le menu **Fichier**, sélectionnez **Nouveau**, puis cliquez sur **Projet**.
 
-     La boîte de dialogue **Nouveau projet** s’affiche.
+     La boîte de dialogue **Nouveau projet** est affichée.
 
     > [!WARNING]
     > Pour créer des tests unitaires C++/CLI basés sur une version antérieure du .NET Framework pour Visual C++, vous devez utiliser la version correspondante de Visual Studio. Par exemple, pour cibler .NET Framework 3.5, vous devez installer [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] et [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] Service Pack 1.
 
-2. Sous **Modèles installés**, développez **Visual C++** . Sélectionnez **Test**, puis sélectionnez le modèle **Projet de test**.
+2. Sous **Modèles installés**, développez **Visual C++**. Sélectionnez **Test**, puis sélectionnez le modèle **Projet de test**.
 
 3. Dans la zone de texte **Nom**, tapez un nom pour votre projet de test Visual C++, puis cliquez sur **OK**.
 
 4. Dans l’Explorateur de solutions, choisissez **Décharger le projet** à partir de votre nouveau projet de test Visual C++.
 
-5. Dans l’Explorateur de solutions, choisissez le projet de test Visual C++ déchargé, puis choisissez **Modifier \<nom_projet>.vcxproj**.
+5. Dans Explorateur de solutions, choisissez le projet de test Visual C++ déchargée, puis choisissez **modifier \<project name> . vcxproj**.
 
      Le fichier .vcxproj s’ouvre dans l’éditeur.
 

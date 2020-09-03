@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::GetLocalVariablelayout | Microsoft Docs
+title: 'IDebugComPlusSymbolProvider :: GetLocalVariablelayout | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a39bd508c1c52cb24a18ba80d252798c6afee535
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194741"
 ---
 # <a name="idebugcomplussymbolprovidergetlocalvariablelayout"></a>IDebugComPlusSymbolProvider::GetLocalVariablelayout
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Récupère la structure des variables locales pour un ensemble de méthodes.  
+Récupère la disposition des variables locales pour un ensemble de méthodes.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -47,25 +47,25 @@ int GetLocalVariablelayout(
   
 #### <a name="parameters"></a>Paramètres  
  `ulAppDomainID`  
- [in] Identificateur du domaine d’application.  
+ dans Identificateur du domaine d’application.  
   
  `guidModule`  
- [in] Identificateur unique du module.  
+ dans Identificateur unique du module.  
   
  `cMethods`  
- [in] Numéro de méthode des jetons dans le `rgMethodTokens` tableau.  
+ dans Nombre de jetons de méthode dans le `rgMethodTokens` tableau.  
   
  `rgMethodTokens`  
- [in] Tableau de jetons de méthode.  
+ dans Tableau de jetons de méthode.  
   
  `pStreamLayout`  
- [out] Un flux de texte qui contient la disposition de la variable.  
+ à Flux de texte qui contient la disposition variable.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
-## <a name="example"></a>Exemples  
- L’exemple suivant montre comment implémenter cette méthode pour un **CDebugSymbolProvider** objet qui expose le [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface.  
+## <a name="example"></a>Exemple  
+ L’exemple suivant montre comment implémenter cette méthode pour un objet **CDebugSymbolProvider** qui expose l’interface [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) .  
   
 ```cpp#  
 HRESULT CDebugSymbolProvider::GetLocalVariablelayout(  

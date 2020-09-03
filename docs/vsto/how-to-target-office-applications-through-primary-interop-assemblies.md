@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 60e351a15af4994d2bf64a800e3019501cf0571d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545767"
 ---
 # <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Comment : cibler des applications Office par le biais d’assemblys PIA
@@ -38,7 +38,7 @@ ms.locfileid: "85545767"
 
 1. Ouvrez votre projet Office et sélectionnez le nom du projet dans **Explorateur de solutions**.
 
-2. Dans le menu **projet** , cliquez sur **Ajouter une référence**.
+2. Dans le menu **Projet**, cliquez sur **Ajouter une référence**.
 
 3. Sous l’onglet **Framework** , sélectionnez l’assembly PIA de votre choix dans la liste **nom du composant** . Pour plus d’informations sur les assemblys PIA (Primary Interop Assembly) Microsoft Office disponibles, consultez Assemblys PIA ( [Primary Interop Assembly) Office](../vsto/office-primary-interop-assemblies.md).
 

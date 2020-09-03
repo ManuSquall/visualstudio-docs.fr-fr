@@ -1,5 +1,5 @@
 ---
-title: Opérateur de contexte (C++) | Microsoft Docs
+title: Context, opérateur (C++) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,10 +24,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f6351dd9db7e6f8f29bdd15f376f84511c64bfe7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161528"
 ---
 # <a name="context-operator-c"></a>Opérateur de contexte (C++)
@@ -35,7 +35,7 @@ ms.locfileid: "68161528"
 
 Vous pouvez utiliser l’opérateur de contexte en C++ pour qualifier l’emplacement d’un point d’arrêt, un nom de variable ou une expression. L’opérateur de contexte est utile pour spécifier un nom issu d’une portée externe qui serait sinon masqué par un nom local.  
   
-## <a name="BKMK_Using_context_operators_to_specify_a_symbol"></a> Syntaxe  
+## <a name="syntax"></a><a name="BKMK_Using_context_operators_to_specify_a_symbol"></a> Syntaxe  
  Il existe deux façons de spécifier le contexte :  
   
 1. {,,[*module*] } *expression*  

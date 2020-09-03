@@ -1,5 +1,5 @@
 ---
-title: Simplifier l’expression LINQ
+title: Simplifier une expression LINQ
 ms.date: 08/12/2020
 ms.topic: reference
 author: m-redding
@@ -10,13 +10,13 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 04485d6ce67c822fd0620bd63f3557851db6dbb9
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88251300"
 ---
-# <a name="simplify-linq-expression"></a>Simplifier l’expression LINQ
+# <a name="simplify-linq-expression"></a>Simplifier une expression LINQ
 
 Cette refactorisation s’applique à :
 

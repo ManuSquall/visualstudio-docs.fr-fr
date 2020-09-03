@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerService::GetPropertyProxy | Microsoft Docs
+title: 'IEEVisualizerService :: GetPropertyProxy | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5d5fa9df1e0d0dea321f967a6d16971728ea2e94
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155101"
 ---
 # <a name="ieevisualizerservicegetpropertyproxy"></a>IEEVisualizerService::GetPropertyProxy
@@ -42,16 +42,16 @@ int GetPropertyProxy(
   
 #### <a name="parameters"></a>Paramètres  
  `dwID`  
- [in] ID du proxy de propriété à récupérer.  
+ dans ID du proxy de propriété à récupérer.  
   
  `proxy`  
- [out] Vous le souhaitez proxy implémentée dans un [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) interface.  
+ à Proxy souhaité implémenté dans une interface [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) .  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="remarks"></a>Notes  
- [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) transmet la demande à cette méthode dans le cadre de sa prise en charge pour les visualiseurs de type.  
+ [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) transmet la requête à cette méthode dans le cadre de sa prise en charge des visualiseurs de type.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)   

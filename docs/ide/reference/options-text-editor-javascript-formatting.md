@@ -17,15 +17,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 957dbd557a15c4c1df6028672f204a06936767c1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68605985"
 ---
-# <a name="options-dialog-box-text-editor--javascript--formatting"></a>Boîte de dialogue d’options : Éditeur de \> texte JavaScript \> Formatting
+# <a name="options-dialog-box-text-editor--javascript--formatting"></a>Boîte de dialogue Options : éditeur de texte \> \> mise en forme JavaScript
 
-Utilisez la page **Mise en forme** de la boîte de dialogue **Options** pour définir les options de mise en forme du code dans l’éditeur de code. Pour accéder à cette page, sur la barre de menu, choisissez **Tools** > **Options**, puis développez Text **Editor** > **JavaScript/TypeScript** > **Formatting**.
+Utilisez la page **Mise en forme** de la boîte de dialogue **Options** pour définir les options de mise en forme du code dans l’éditeur de code. Pour accéder à cette page, dans la barre de menus, choisissez **Outils**  >  **options**, puis développez **éditeur de texte**  >  **JavaScript/machine à écrire**  >  **Formatting**.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -71,4 +71,4 @@ Ces options déterminent la façon dont les espaces sont insérés dans la vue *
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Général, Environnement, Options Dialog Box](../../ide/reference/general-environment-options-dialog-box.md)
+- [Général, environnement, boîte de dialogue Options](../../ide/reference/general-environment-options-dialog-box.md)

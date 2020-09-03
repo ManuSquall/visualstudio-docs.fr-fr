@@ -6,10 +6,10 @@ ms.author: cobey
 ms.date: 02/07/2019
 ms.assetid: 0FE27C0C-A861-4133-A74E-8D0505CF5342
 ms.openlocfilehash: 1dacc935549d738ff1b5e84c3ac4420c343155fd
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68787698"
 ---
 # <a name="code-snippets"></a>Extraits de code
@@ -46,7 +46,7 @@ Appuyez sur le bouton **Ajouter** ou **Modifier** pour créer ou modifier des ex
 
 Une fois qu’un extrait de code est inséré dans l’éditeur, tous les mots clés définis sont mis en surbrillance et peuvent être modifiés en utilisant la tabulation pour naviguer entre eux. Les mots clés se comportent comme une « variable » dans l’extrait de code et sont définis en plaçant un signe dollar `$` avant et après le nom du mot clé. 
 
-La fenêtre **Modifier un modèle** est illustrée ci-dessous, avec la modification de l’extrait de code `prop` intégré. L’extrait contient deux mots &ndash; `$type$` `$name$` &ndash; clés et qui peuvent avoir d’autres propriétés définies (comme une valeur par défaut et une pointe d’outils) sur le côté droit de la fenêtre :
+La fenêtre **Modifier un modèle** est illustrée ci-dessous, avec la modification de l’extrait de code `prop` intégré. L’extrait de code contient deux mots clés &ndash; `$type$` `$name$` &ndash; qui peuvent avoir des propriétés supplémentaires définies (par exemple, une valeur par défaut et une info-bulle) sur le côté droit de la fenêtre :
 
 ![Fenêtre Modifier un modèle](media/source-editor-image12z.png)
 
@@ -82,7 +82,7 @@ Dans l’éditeur, la touche **Tab** permet de basculer entre le premier `i` et 
 Il existe deux mots clés réservés que vous pouvez utiliser dans un extrait de code :
 
 - `$selected$` &ndash; Si l’option **Est entouré du modèle** est activée dans l’extrait de code, ce mot clé sera remplacé par le texte qui a été mis en surbrillance dans l’éditeur lorsque l’extrait de code a été choisi.
-- `$end$`&ndash; Lorsque l’utilisateur aura fini d’éditer les mots clés dans un extrait, `$end$` le curseur sera placé à l’emplacement du mot clé.
+- `$end$`&ndash;Lorsque l’utilisateur a fini de modifier les mots clés dans un extrait de code, le curseur est placé à l’emplacement du `$end$` mot clé.
 
 L’extrait de code `for` dans la section précédente est un exemple de ces deux mots clés réservés.
 

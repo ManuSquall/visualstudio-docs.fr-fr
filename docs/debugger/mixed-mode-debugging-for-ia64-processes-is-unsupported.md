@@ -1,5 +1,5 @@
 ---
-title: Le débogage en mode mixte des processus IA64 n'est pas pris en charge. | Microsoft Docs
+title: Le débogage en mode mixte des processus IA64 n'est pas pris en charge. | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,20 +16,20 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c85c31cff5920ba3dc4b9356a1865d0db2323b2d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72731106"
 ---
 # <a name="mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>Le débogage en mode mixte des processus IA64 n'est pas pris en charge.
 Visual Studio ne prend pas en charge le débogage en mode mixte du code natif et managé dans les processus IA64. Autrement dit, vous ne pouvez pas passer du code managé au code natif, ou inversement, lorsque vous procédez au débogage.
 
-### <a name="workarounds"></a>Solutions
+### <a name="workarounds"></a>Solutions de contournement
 
 - Déboguez votre code managé et natif dans des sessions de débogage distinctes.
 
-     ou
+     - ou -
 
      Déboguez votre code mixte en tant que processus 32 bits, de la façon décrite dans les procédures suivantes.
 
@@ -47,7 +47,7 @@ Visual Studio ne prend pas en charge le débogage en mode mixte du code natif et
 
 1. Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur votre projet, puis cliquez sur **Propriétés** dans le menu contextuel.
 
-2. Dans les pages de propriétés, cliquez sur **Plateforme**, puis sélectionnez Win32 dans la liste.
+2. Dans les pages de propriétés, cliquez sur **plateforme** , puis sélectionnez Win32 dans la liste des plateformes.
 
 ## <a name="see-also"></a>Voir aussi
-- [Déboguer des applications 64 bits](../debugger/debug-64-bit-applications.md)
+- [Déboguer des applications 64 bits](../debugger/debug-64-bit-applications.md)

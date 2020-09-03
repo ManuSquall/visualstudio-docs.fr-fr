@@ -8,10 +8,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9272a530eaa15f902a2e295aeaa6d8b34c4eccdd
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545663"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Comment : ajouter un gestionnaire glisser-déplacer
@@ -50,7 +50,7 @@ Dans le nouveau fichier, définissez une classe partielle pour la forme ou la cl
         }
     ```
 
-- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A>-Cette méthode est appelée si l’utilisateur relâche le bouton de la souris alors que le pointeur de la souris se trouve sur cette forme ou ce diagramme, s’il a `OnDragOver(DiagramDragEventArgs e)` précédemment défini `e.Effect` sur une valeur autre que `None` .
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A> -Cette méthode est appelée si l’utilisateur relâche le bouton de la souris alors que le pointeur de la souris se trouve sur cette forme ou ce diagramme, s’il a `OnDragOver(DiagramDragEventArgs e)` précédemment défini `e.Effect` sur une valeur autre que `None` .
 
     ```csharp
     public override void OnDragDrop(DiagramDragEventArgs e)
@@ -66,7 +66,7 @@ Dans le nouveau fichier, définissez une classe partielle pour la forme ou la cl
     }
     ```
 
-- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A>-Cette méthode est appelée lorsque l’utilisateur double-clique sur la forme ou le diagramme.
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> -Cette méthode est appelée lorsque l’utilisateur double-clique sur la forme ou le diagramme.
 
      Pour plus d’informations, consultez [Comment : intercepter un clic sur une forme ou un Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
 
@@ -124,11 +124,11 @@ Lorsque l'utilisateur déplace un élément sur votre diagramme, ou d'une partie
 
 Pour connaître les formats dans lesquels vos informations sur la source du déplacement sont disponibles, exécutez votre code en mode débogage, en définissant un point d'arrêt à l'entrée de `OnDragOver()` ou `CanDragDrop()`. Examinez les valeurs du paramètre `DiagramDragEventArgs`. Les informations sont fournies sous deux formes :
 
-- <xref:System.Windows.Forms.IDataObject>  `Data`-Cette propriété comporte des versions sérialisées des objets source, généralement dans plusieurs formats. Ses fonctions les plus utiles sont les suivantes :
+- <xref:System.Windows.Forms.IDataObject>  `Data` -Cette propriété comporte des versions sérialisées des objets source, généralement dans plusieurs formats. Ses fonctions les plus utiles sont les suivantes :
 
   - diagramEventArgs. Data. GetDataFormats ()-répertorie les formats dans lesquels vous pouvez décoder l’objet déplacé. Par exemple, si l'utilisateur déplace un fichier à partir du Bureau, les formats disponibles incluent le nom de fichier (« `FileNameW` »).
 
-  - `diagramEventArgs.Data.GetData(format)`: Décode l’objet déplacé dans le format spécifié. Effectuez une conversion de type de l'objet dans le type approprié. Par exemple :
+  - `diagramEventArgs.Data.GetData(format)` : Décode l’objet déplacé dans le format spécifié. Effectuez une conversion de type de l'objet dans le type approprié. Par exemple :
 
     `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
 
@@ -148,7 +148,7 @@ Pour connaître les formats dans lesquels vos informations sur la source du dép
 
      Pour accepter des formes UML, déterminez les GUID des classes de formes UML par expérimentation. N'oubliez qu'il existe généralement plusieurs types d'éléments sur un diagramme. Souvenez-vous aussi qu'un objet déplacé à partir d'un diagramme DSL ou UML est la forme, et non l'élément de modèle.
 
-`DiagramDragEventArgs`possède également des propriétés qui indiquent la position actuelle du pointeur de la souris et si l’utilisateur appuie sur les touches CTRL, ALT ou Maj.
+`DiagramDragEventArgs` possède également des propriétés qui indiquent la position actuelle du pointeur de la souris et si l’utilisateur appuie sur les touches CTRL, ALT ou Maj.
 
 ## <a name="how-to-get-the-original-of-a-dragged-element"></a>Comment obtenir l'original d'un élément déplacé
 

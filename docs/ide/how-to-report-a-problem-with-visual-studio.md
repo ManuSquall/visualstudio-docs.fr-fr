@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2e5f64ebdf93384b7def728ac5d01bcbaf6b0271
-ms.sourcegitcommit: 98af63c1a53a732558f8207338dc2722abbbe49e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88584566"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Guide pratique pour signaler un problème avec Visual Studio ou Visual Studio Installer

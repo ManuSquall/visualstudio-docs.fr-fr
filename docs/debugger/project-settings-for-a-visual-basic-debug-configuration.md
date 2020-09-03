@@ -24,25 +24,25 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bcac88c2faf1af7378ce25597789700df61648a9
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72730606"
 ---
 # <a name="project-settings-for-a-visual-basic-debug-configuration"></a>Paramètres de projet pour une configuration Debug Visual Basic
 Vous pouvez modifier les paramètres de projet d’une configuration Debug [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] dans la fenêtre **Pages de propriétés**, comme indiqué dans [Configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md). Les tableaux suivants indiquent où se trouvent les paramètres du débogueur dans la fenêtre **Pages de propriétés**.
 
 > [!WARNING]
-> Cette rubrique ne s’applique pas aux applications UWP. Consultez [Démarrer une session de débogage ( C#VB C++ , et XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
+> Cette rubrique ne s’applique pas aux applications UWP. Consultez [Démarrer une session de débogage (VB, C#, C++ et XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
 
 ### <a name="debug-tab"></a>Onglet Déboguer
 
 | Paramètre | Description |
 |------------------------------| - |
-| **Configuration** | Définit le mode de compilation de l'application. Choisissez parmi **Active (Debug)** , **Debug**, **Release** ou **Toutes les configurations**. |
+| **Configuration** | Définit le mode de compilation de l'application. Choisissez parmi **Active (Debug)**, **Debug**, **Release** ou **Toutes les configurations**. |
 | **Action de démarrage** | Ce groupe de contrôles spécifie l'action exécutée lorsque vous cliquez dans le menu Déboguer sur Démarrer.<br /><br /> -   **Démarrer le projet**, qui est l’option par défaut, lance le projet de démarrage pour le débogage. <br />-   **Démarrer le programme externe** permet de démarrer et d’attacher un programme qui ne fait pas partie d’un projet [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Pour plus d’informations, consultez [attacher aux processus en cours d’exécution](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).<br />-   **Démarrer le navigateur avec l’URL** vous permet de déboguer une application web. |
-| **Arguments de la ligne de commande** | Spécifie les arguments de la ligne de commande pour le programme à déboguer. Le nom de la commande correspond au nom du programme spécifié dans Démarrer le programme externe. Si Action de démarrage prend la valeur Démarrer l’URL, les arguments de la ligne de commande sont ignorés. |
+| **Arguments de ligne de commande** | Spécifie les arguments de la ligne de commande pour le programme à déboguer. Le nom de la commande correspond au nom du programme spécifié dans Démarrer le programme externe. Si Action de démarrage prend la valeur Démarrer l’URL, les arguments de la ligne de commande sont ignorés. |
 | **Répertoire de travail** | Spécifie le répertoire de travail du programme en cours de débogage. En [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], le répertoire de travail est celui à partir duquel l'application est lancée. Le répertoire de travail par défaut est \bin\Debug ou \bin\Release, en fonction de la configuration actuelle. |
 | **Utiliser l’ordinateur distant** | Lorsque la case à cocher est activée, le débogage à distance est activé. Dans la zone de texte, vous pouvez taper le nom d’un ordinateur distant où l’application s’exécutera pour des raisons liées au débogage ou un [nom de serveur Msvsmon](../debugger/remote-debugging.md). L’emplacement du fichier EXE sur l’ordinateur distant est spécifié par la propriété chemin de sortie dans l’onglet générer. L’emplacement doit être un répertoire partageable sur l’ordinateur distant. |
 | **Débogage de code non managé** | Vous permet de déboguer les appels au code Win32 natif (non managé) à partir de votre application managée. Cette action revient à sélectionner Mixte comme Type de débogueur dans un projet [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. |

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext2::GetSourceRange | Microsoft Docs
+title: 'IDebugDocumentContext2 :: GetSourceRange, | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bcec6af2b8e7b1acfdc9c3cf38cb18654be78c53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68145004"
 ---
 # <a name="idebugdocumentcontext2getsourcerange"></a>IDebugDocumentContext2::GetSourceRange
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Obtient la plage de code source de ce contexte de document.  
+Obtient la plage de codes source de ce contexte de document.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -42,18 +42,18 @@ int GetSourceRange( 
   
 #### <a name="parameters"></a>Paramètres  
  `pBegPosition`  
- [in, out] Un [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) structure est remplie avec la position de départ. Définissez cet argument à une valeur null si cette information n’est pas nécessaire.  
+ [in, out] Structure [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) qui est remplie avec la position de départ. Définissez cet argument sur une valeur null si cette information n’est pas nécessaire.  
   
  `pEndPosition`  
- [in, out] Un [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) structure est remplie avec la position de fin. Définissez cet argument à une valeur null si cette information n’est pas nécessaire.  
+ [in, out] Structure [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) qui est remplie avec la position de fin. Définissez cet argument sur une valeur null si cette information n’est pas nécessaire.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="remarks"></a>Notes  
- Une plage source est l’ensemble du code source, à l’arrière d’instruction en cours se termine juste après l’instruction précédente qui a contribué de code. La plage source est généralement utilisée pour le mélange d’instructions de la source, y compris les commentaires, avec du code dans la fenêtre code machine.  
+ Une plage source est la plage entière du code source, de l’instruction actuelle jusqu’à juste après l’instruction précédente qui a contribué au code. La plage source est généralement utilisée pour mélanger des instructions sources, y compris des commentaires, avec du code dans la fenêtre Code machine.  
   
- Pour obtenir la plage pour simplement les instructions de code contenues dans ce contexte de document, appelez le [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md) (méthode).  
+ Pour obtenir la plage uniquement pour les instructions de code contenues dans ce contexte de document, appelez la méthode [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md) .  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)   

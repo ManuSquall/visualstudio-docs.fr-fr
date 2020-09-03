@@ -9,16 +9,16 @@ caps.latest.revision: 18
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3c272906aa402c124b98e6b9f5556d8c825ee963
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660478"
 ---
 # <a name="isolating-code-under-test-with-microsoft-fakes"></a>Isolation du code sous test avec Microsoft Fakes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Microsoft Fakes vous aide à isoler le code que vous testez en remplaçant d’autres parties de l’application par des *stubs* ou des *shims*. Ce sont de petits segments de code qui sont sous le contrôle de vos tests. En isolant votre code pour les tests, vous savez que si le test échoue, la cause réside dans le code et pas ailleurs. Les stubs et les shims vous permettent également de tester votre code même si d'autres parties de votre application ne fonctionnent pas encore.
+Les substituts Microsoft vous aident à isoler le code que vous testez en remplaçant d’autres parties de l’application par des *stubs* ou des *shims*. Ce sont de petits segments de code qui sont sous le contrôle de vos tests. En isolant votre code pour les tests, vous savez que si le test échoue, la cause réside dans le code et pas ailleurs. Les stubs et les shims vous permettent également de tester votre code même si d'autres parties de votre application ne fonctionnent pas encore.
 
  Microsoft Fakes est disponible en deux versions :
 
@@ -26,9 +26,9 @@ Microsoft Fakes vous aide à isoler le code que vous testez en remplaçant d’a
 
 - Un [shim](#shims) modifie le code compilé de votre application au moment de l’exécution pour qu’elle exécute le code shim que votre test fournit au lieu de faire un appel de méthode spécifié. Les shims peuvent être utilisés pour remplacer les appels aux assemblys que vous ne pouvez pas modifier, par exemple les assemblys .NET.
 
-  ![Les substituts remplacent d’autres composants](../test/media/fakes-2.png "Substituts-2")
+  ![Fakes remplace les autres composants](../test/media/fakes-2.png "Substituts-2")
 
-  **Prérequis**
+  **Configuration requise**
 
 - Visual Studio Enterprise
 
@@ -39,7 +39,7 @@ Microsoft Fakes vous aide à isoler le code que vous testez en remplaçant d’a
 
  Les autres éléments à prendre en compte sont :
 
- **Performances** Les shims s'exécutent plus lentement, car ils réécrivent votre code au moment de l'exécution. Les stubs ne subissent pas cette surcharge de performances et sont aussi rapides que les méthodes virtuelles.
+ **Niveau de performance.** Les shims s'exécutent plus lentement, car ils réécrivent votre code au moment de l'exécution. Les stubs ne subissent pas cette surcharge de performances et sont aussi rapides que les méthodes virtuelles.
 
  **Méthodes statiques, types sealed.** Vous pouvez uniquement utiliser les stubs pour implémenter les interfaces. Par conséquent, les types stub ne peuvent pas être utilisés pour les méthodes statiques, les méthodes non virtuelles, les méthodes virtuelles sealed, les méthodes dans les types sealed, etc.
 
@@ -51,7 +51,7 @@ Microsoft Fakes vous aide à isoler le code que vous testez en remplaçant d’a
 
  En général, nous vous conseillons d'utiliser des types stub pour isoler des dépendances dans votre base de code. Pour cela, masquez les composants derrière les interfaces. Les types shim peuvent être utilisés pour isoler des composants tiers qui ne fournissent pas d'API pouvant être testée.
 
-## <a name="stubs"></a> Démarrage avec les stubs
+## <a name="getting-started-with-stubs"></a><a name="stubs"></a> Démarrage avec les stubs
  Pour obtenir une description détaillée, consultez [Utilisation de stubs pour isoler des parties de votre application les unes des autres pour des tests unitaires](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md).
 
 1. **Injecter des interfaces**
@@ -141,11 +141,11 @@ Microsoft Fakes vous aide à isoler le code que vous testez en remplaçant d’a
 
     ```
 
-     Ici, l'aspect le plus magique est la classe `StubIStockFeed`. Pour chaque interface de l'assembly référencé, le mécanisme Microsoft Fakes génère une classe stub. Le nom de la classe stub est dérivé du nom de l’interface, avec « `Fakes.Stub` » comme préfixe, et les noms des types de paramètres ajoutés.
+     Ici, l'aspect le plus magique est la classe `StubIStockFeed`. Pour chaque interface de l'assembly référencé, le mécanisme Microsoft Fakes génère une classe stub. Le nom de la classe stub est dérivé du nom de l’interface, avec « `Fakes.Stub` » comme préfixe, et les noms des types de paramètres ajoutés.
 
      Les stubs sont également générés pour les accesseurs Get et les méthodes setter de propriétés, les événements et les méthodes génériques. Pour plus d’informations, consultez [Utilisation de stubs pour isoler des parties de votre application les unes des autres pour des tests unitaires](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md).
 
-## <a name="shims"></a> Démarrage avec les shims
+## <a name="getting-started-with-shims"></a><a name="shims"></a> Démarrage avec les shims
  (Pour obtenir une description détaillée, consultez [Utilisation de shims pour isoler votre application des autres assemblys pour des tests unitaires](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).)
 
  Supposons que votre composant contienne des appels à `DateTime.Now` :
@@ -242,7 +242,7 @@ System.IO.Fakes.ShimFile.AllInstances.ReadToEnd = ...
 
  Vous pouvez également créer des shims pour des instances spécifiques, des constructeurs et des propriétés. Pour plus d’informations, consultez [Utilisation de shims pour isoler votre application des autres assemblys pour des tests unitaires](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).
 
-## <a name="in-this-section"></a>Dans cette section
+## <a name="in-this-section"></a>Contenu de cette section
  [Utilisation de stubs pour isoler des parties de votre application les unes des autres pour des tests unitaires](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)
 
  [Utilisation de shims pour isoler votre application des autres assemblys pour des tests unitaires](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)

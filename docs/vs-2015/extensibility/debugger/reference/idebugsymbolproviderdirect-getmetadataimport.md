@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProviderDirect::GetMetaDataImport | Microsoft Docs
+title: 'IDebugSymbolProviderDirect :: GetMetaDataImport | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 738169ece185bfc4b861b8f8220199dbf3c762b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155129"
 ---
 # <a name="idebugsymbolproviderdirectgetmetadataimport"></a>IDebugSymbolProviderDirect::GetMetaDataImport
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Récupère les informations d’importation de métadonnées.  
+Récupère les informations d’importation des métadonnées.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -43,16 +43,16 @@ int GetMetaDataImport (
   
 #### <a name="parameters"></a>Paramètres  
  `guid`  
- [in] Identificateur unique pour le module.  
+ dans Identificateur unique du module.  
   
  `appID`  
- [in] Identificateur du domaine d’application.  
+ dans Identificateur du domaine d’application.  
   
  `ppImport`  
- [out] Retourne un objet qui contient les métadonnées importe des informations.  
+ à Retourne un objet qui contient les informations d’importation de métadonnées.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

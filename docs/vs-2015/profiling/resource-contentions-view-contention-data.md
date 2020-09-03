@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c6a7d4d1e80323b4d260ac558661c222f72ec3c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149264"
 ---
 # <a name="resource-contentions-view---contention-data"></a>Mode Conflits de ressources - Données de conflit
@@ -46,17 +46,17 @@ Le mode Conflits de ressources répertorie des données de conflit pour les ress
 |------------|-----------------|  
 |**Name**|Nom de la ressource ou de la fonction.|  
 |**Temps bloqué exclusif**|-   Pour une ressource, durée totale pendant laquelle l’accès à la ressource a été bloqué et a provoqué l’attente d’un thread.<br />-   Pour une fonction, durée pendant laquelle ces instances de la fonction n’ont pas pu accéder à la ressource parente quand la fonction exécutait le code dans le corps de la fonction. Le temps bloqué dans les fonctions qui ont été appelées par la fonction n’est pas inclus.|  
-|**% de temps bloqué exclusif**|-   Pour une ressource, pourcentage de tout le temps bloqué dans les données de profilage qui était du temps bloqué de cette ressource.<br />-   Pour une fonction, pourcentage de tout le temps bloqué dans les données de profilage qui était du temps bloqué exclusif de ces instances de fonction.|  
+|**% de temps bloqué exclusif**|-   Pour une ressource, pourcentage de tout le temps bloqué dans les données de profilage qui était du temps bloqué de cette ressource.<br />-   Pour une fonction, pourcentage de tout le temps bloqué dans les données de profilage qui était du temps bloqué exclusif de ces instances de fonction.|  
 |**Conflits exclusifs**|-   Pour une ressource, nombre total de fois où l’accès à la ressource a été bloqué et a provoqué l’attente d’un thread.<br />-   Pour une fonction, nombre de fois où ces instances de la fonction n’ont pas pu accéder à la ressource parente quand la fonction exécutait le code dans le corps de la fonction. Les événements bloquants dans les fonctions qui ont été appelées par la fonction ne sont pas inclus.|  
-|**% de conflits exclusifs**|-   Pour une ressource, pourcentage de tous les événements de conflit dans les données de profilage qui étaient des événements de conflit pour l’accès à cette ressource.<br />-   Pour une fonction, pourcentage de tous les événements de conflit dans les données de profilage qui étaient des événements de conflit exclusifs de ces instances de fonction pour la ressource parente.|  
+|**% de conflits exclusifs**|-   Pour une ressource, pourcentage de tous les événements de conflit dans les données de profilage qui étaient des événements de conflit pour l’accès à cette ressource.<br />-   Pour une fonction, pourcentage de tous les événements de conflit dans les données de profilage qui étaient des événements de conflit exclusifs de ces instances de fonction pour la ressource parente.|  
 |**Temps bloqué inclusif**|-   Pour une ressource, durée totale pendant laquelle l’accès à la ressource a été bloqué et a provoqué l’attente d’un thread.<br />-   Pour une fonction, durée pendant laquelle ces instances de la fonction ou de toute fonction appelée par les instances n’ont pas pu accéder à la ressource parente quand la fonction exécutait le code dans le corps de la fonction.|  
-|**% de temps bloqué inclusif**|-   Pour une ressource, pourcentage de tout le temps bloqué dans les données de profilage qui était du temps bloqué de cette ressource.<br />-   Pour une fonction, pourcentage de tout le temps bloqué au cours de l’exécution de profilage qui était du temps bloqué inclusif de ces instances de fonction.|  
+|**% de temps bloqué inclusif**|-   Pour une ressource, pourcentage de tout le temps bloqué dans les données de profilage qui était du temps bloqué de cette ressource.<br />-   Pour une fonction, pourcentage de tout le temps bloqué au cours de l’exécution de profilage qui était du temps bloqué inclusif de ces instances de fonction.|  
 |**Conflits inclusifs**|-   Pour une ressource, nombre total de fois où l’accès à la ressource a été bloqué et a provoqué l’attente d’un thread.<br />-   Pour une fonction, pourcentage de tous les événements de conflit au cours de l’exécution de profilage qui étaient des événements de conflit inclusifs de ces instances de fonction pour la ressource parente.|  
-|**% de conflits inclusifs**|-   Pour une ressource, pourcentage de tous les événements de conflit au cours de l’exécution de profilage qui étaient des événements de conflit pour l’accès à cette ressource.<br />-   Pour une fonction, nombre de fois où ces instances de la fonction n’ont pas pu accéder à la ressource parente quand la fonction exécutait le code dans le corps de la fonction. Les événements bloquants dans les fonctions qui ont été appelées par la fonction ne sont pas inclus.|  
+|**% de conflits inclusifs**|-   Pour une ressource, pourcentage de tous les événements de conflit au cours de l’exécution de profilage qui étaient des événements de conflit pour l’accès à cette ressource.<br />-   Pour une fonction, nombre de fois où ces instances de la fonction n’ont pas pu accéder à la ressource parente quand la fonction exécutait le code dans le corps de la fonction. Les événements bloquants dans les fonctions qui ont été appelées par la fonction ne sont pas inclus.|  
 |**Niveau**|Niveau d’imbrication de cette fonction dans l’arborescence des appels. Uniquement dans les rapports en ligne de commande [VSPerfReport](../profiling/vsperfreport.md).|  
 |**Numéro de ligne de fonction**|Numéro de ligne du début de cette fonction dans le fichier source.|  
-|**Nom de module**|Nom du module qui contient la fonction.|  
-|**Chemin de module**|Chemin d’accès du module qui contient la fonction.|  
-|**ID de processus**|ID du processus (PID) dans lequel la fonction s’exécutait.|  
+|**Nom du module**|Nom du module qui contient la fonction.|  
+|**Chemin du module**|Chemin d’accès du module qui contient la fonction.|  
+|**ID de processus**|ID du processus (PID) dans lequel la fonction s’exécutait.|  
 |**Nom du processus**|Nom du processus.|  
-|**Fichier source**|Fichier source contenant la définition pour cette fonction.|
+|**Source File**|Fichier source contenant la définition pour cette fonction.|

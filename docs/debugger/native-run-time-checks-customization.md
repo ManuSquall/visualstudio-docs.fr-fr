@@ -23,14 +23,14 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: db7cc513c4c96a8b60cc6471280bb837a7b9a248
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72730889"
 ---
 # <a name="native-run-time-checks-customization"></a>Personnalisation des contrôles natifs à l'exécution
-Quand vous compilez avec **/RTC** (contrôles au moment de l’exécution) ou que vous utilisez le pragma `runtime_checks`, la bibliothèque Runtime C fournit des contrôles natifs au moment de l’exécution. Dans certains cas, il est utile de personnaliser le contrôle à l'exécution :
+Quand vous compilez avec **/RTC** (vérifications au moment de l’exécution) ou utilisez le `runtime_checks` pragma, la bibliothèque Runtime C fournit des contrôles natifs à l’exécution. Dans certains cas, il est utile de personnaliser le contrôle à l'exécution :
 
 - Pour acheminer des messages de contrôle à l'exécution vers d'autres emplacements que le fichier ou la destination par défaut.
 
@@ -52,9 +52,9 @@ Quand vous compilez avec **/RTC** (contrôles au moment de l’exécution) ou qu
  Si vous utilisez une fonction personnalisée pour obtenir vos rapports, associez une erreur à un type de rapport à l'aide de `_RTC_SetErrorType`.
 
 ## <a name="query-for-information-about-run-time-checks"></a>Demander des informations sur les contrôles à l'exécution
- `_RTC_NumErrors` retourne le nombre de types d'erreurs détectés par les vérifications des erreurs au moment de l'exécution. Pour obtenir une brève description de chaque erreur, faites une boucle allant de 0 à la valeur de retour `_RTC_NumErrors`, en transmettant, à chaque boucle, la valeur de l'itération à `_RTC_GetErrDesc`. Pour plus d’informations, consultez [_RTC_NumErrors](/cpp/c-runtime-library/reference/rtc-numerrors) et [_RTC_GetErrDesc](/cpp/c-runtime-library/reference/rtc-geterrdesc).
+ `_RTC_NumErrors` retourne le nombre de types d’erreurs détectés par les vérifications des erreurs au moment de l’exécution. Pour obtenir une brève description de chaque erreur, faites une boucle allant de 0 à la valeur de retour `_RTC_NumErrors`, en transmettant, à chaque boucle, la valeur de l'itération à `_RTC_GetErrDesc`. Pour plus d’informations, consultez [_RTC_NumErrors](/cpp/c-runtime-library/reference/rtc-numerrors) et [_RTC_GetErrDesc](/cpp/c-runtime-library/reference/rtc-geterrdesc).
 
 ## <a name="see-also"></a>Voir aussi
-- [Guide pratique pour utiliser les vérifications natives à l’exécution](../debugger/how-to-use-native-run-time-checks.md)
+- [Comment : utiliser les contrôles natifs au moment de l’exécution](../debugger/how-to-use-native-run-time-checks.md)
 - [runtime_checks](/cpp/preprocessor/runtime-checks)
 - [_CrtDbgReport, _CrtDbgReportW](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw)

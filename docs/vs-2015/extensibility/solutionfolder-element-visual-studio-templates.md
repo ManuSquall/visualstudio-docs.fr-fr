@@ -1,5 +1,5 @@
 ---
-title: Élément SolutionFolder (modèles Visual Studio) | Microsoft Docs
+title: SolutionFolder, élément (modèles Visual Studio) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,10 +14,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 84d0c1765a14f60363b71fcdec182d448cb4f112
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68205540"
 ---
 # <a name="solutionfolder-element-visual-studio-templates"></a>SolutionFolder, élément (modèles Visual Studio)
@@ -62,7 +62,7 @@ Groupe des projets dans des modèles à plusieurs projets.
 |`SolutionFolder`|Groupe des projets dans des modèles à plusieurs projets.|  
   
 ## <a name="remarks"></a>Notes  
- Les modèles à plusieurs projets jouent le rôle de conteneurs pour au moins deux projets. L'élément `SolutionFolder` permet d'organiser les projets du modèle par groupes. Les dossiers spécifiés par les éléments `SolutionFolder` sont créés comme dossiers de solution du projet dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Pour plus d’informations sur les modèles à plusieurs projets, consultez [Comment : Créer des modèles à plusieurs projets](../ide/how-to-create-multi-project-templates.md).  
+ Les modèles à plusieurs projets jouent le rôle de conteneurs pour au moins deux projets. L'élément `SolutionFolder` permet d'organiser les projets du modèle par groupes. Les dossiers spécifiés par les éléments `SolutionFolder` sont créés comme dossiers de solution du projet dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Pour plus d’informations sur les modèles à plusieurs projets, consultez [Comment : créer des modèles à plusieurs projets](../ide/how-to-create-multi-project-templates.md).  
   
 ## <a name="example"></a>Exemple  
  Cet exemple utilise l'élément `SolutionFolder` pour répartir le modèle à plusieurs projets en deux groupes, `Math Classes` et `Graphics Classes`. Le modèle contient quatre projets, dont deux sont placés dans chaque dossier de solution.  
@@ -102,4 +102,4 @@ Groupe des projets dans des modèles à plusieurs projets.
 ## <a name="see-also"></a>Voir aussi  
  [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)   
- [Guide pratique : créer des modèles multiprojets](../ide/how-to-create-multi-project-templates.md)
+ [Guide pratique pour créer des modèles à plusieurs projets](../ide/how-to-create-multi-project-templates.md)

@@ -8,10 +8,10 @@ ms.technology: vs-ide-general
 ms.assetid: D07FA43B-9D18-4DFA-8343-CD538FAD84DB
 ms.topic: how-to
 ms.openlocfilehash: da9c8b3470fee406b577b136b6c55d76c9346e44
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85950654"
 ---
 # <a name="getting-started-building-games-with-unity-in-visual-studio-for-mac"></a>Bien démarrer avec la création de jeux à l’aide de Unity dans Visual Studio pour Mac

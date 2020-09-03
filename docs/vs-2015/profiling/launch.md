@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c910ef1519181f1402cbec1d31686492e30f343d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154755"
 ---
 # <a name="launch"></a>Lancer
@@ -36,13 +36,13 @@ VSPerfCmd.exe /Launch:AppName [Options]
 ## <a name="valid-options"></a>Options valides  
  Les options de VSPerfCmd peuvent être combinées avec l’option **Launch** sur une même ligne de commande.  
   
- **Start:** `Method`  
+ **Démarrer :**`Method`  
  Initialise la session de profileur en ligne de commande et définit la méthode de profilage spécifiée.  
   
- **GlobalOn** et **GlobalOff**  
+ **GlobalOn** et **globaloff**  
  Reprend (**GlobalOn**) ou interrompt (**GlobalOff**) le profilage, mais ne met pas fin à la session de profilage.  
   
- **ProcessOn:** `PID` et **ProcessOff** :`PID`  
+ **ProcessOn :** `PID` et **ProcessOff**:`PID`  
  Reprend (**ProcessOn**) ou interrompt (**ProcessOff**) le profilage pour le processus spécifié.  
   
  **TargetCLR**  
@@ -54,7 +54,7 @@ VSPerfCmd.exe /Launch:AppName [Options]
  **Console**  
  Lance l’application en ligne de commande spécifiée dans une nouvelle fenêtre.  
   
- **Args:** `ArgList`  
+ **Arguments :**`ArgList`  
  Spécifie la liste des arguments à passer à l’application.  
   
  **LineOff**  
@@ -63,7 +63,7 @@ VSPerfCmd.exe /Launch:AppName [Options]
 ## <a name="sampling-options"></a>Options d’échantillonnage  
  Une des options d’intervalle d’échantillonnage suivantes peut être spécifiée sur la ligne de commande **Launch**. L’intervalle d’échantillonnage par défaut est de 10 000 000 de cycles d’horloge du processeur.  
   
- **Timer**[ **:** `Cycles`]**PF**[ **:** `Events`]**Sys**[ **:** `Events`]**Counter**[ **:** `Name`,`Reload`,`FriendlyName`]**GC**[:**allocation**&#124;**lifetime**]  
+ **Timer**[**:** `Cycles` ]**PF**[**:** `Events` ]**sys**[**:** `Events` ]**Counter**[**:** `Name` , `Reload` , `FriendlyName` ]**GC**[ :**allocation**&#124;**durée de vie**]  
  Spécifie la valeur et le type de l’intervalle d’échantillonnage.  
   
 - **Timer** : échantillonne tous les `Cycles` cycles d’horloge du processeur sans interruption. Si `Cycles` n’est pas spécifié, la valeur utilisée est de 10 000 000 cycles.  
@@ -76,7 +76,7 @@ VSPerfCmd.exe /Launch:AppName [Options]
   
 - **GC** : collecte les données de mémoire .NET. Par défaut (**allocation**), les données sont collectées à chaque événement d’allocation de mémoire. Quand le paramètre **lifetime** est spécifié, les données sont également collectées à chaque événement de garbage collection.  
   
-## <a name="example"></a>Exemples  
+## <a name="example"></a>Exemple  
  Cet exemple montre l’utilisation de **Launch** pour démarrer une application.  
   
 ```  
@@ -85,7 +85,7 @@ VSPerfCmd.exe /Launch:TestApp.exe
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [VSPerfCmd](../profiling/vsperfcmd.md)   
+ [Option](../profiling/vsperfcmd.md)   
  [Profilage d’applications autonomes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilage d’applications web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Profilage de services](../profiling/command-line-profiling-of-services.md)
+ [Profilage d’applications Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Profilage des services](../profiling/command-line-profiling-of-services.md)

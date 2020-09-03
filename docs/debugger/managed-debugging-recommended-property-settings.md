@@ -1,5 +1,5 @@
 ---
-title: Paramètres de propriété du débogueur C#recommandés pour, VB | Microsoft Docs
+title: Paramètres de propriété du débogueur recommandés pour C#, VB | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 07c63a70de9d633ccd73d1d0d3bd23196d421543
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72731370"
 ---
 # <a name="managed-debugging-recommended-property-settings"></a>Débogage managé : paramètres de propriété recommandés
@@ -37,7 +37,7 @@ Certaines propriétés doivent être définies de la même manière pour tous le
 |-----------------------|-----------------|
 |**Définir la constante DEBUG**|C# et F# : activez la case à cocher. Cela permet à votre application d'utiliser la classe Debug.|
 |**Définir la constante TRACE**|C# et F# : activez la case à cocher. Cela permet à votre application d'utiliser la classe Trace.|
-|**Optimiser le code**|C#, F# et Visual Basic : valeur false. Le code optimisé est plus difficile à déboguer, car les instructions générées ne correspondent pas directement à votre code source. Si vous constatez que votre programme comporte un bogue visible uniquement dans le code optimisé, vous pouvez activer ce paramètre, mais rappelez-vous que le code affiché dans la fenêtre **Code machine** est généré à partir d’une source optimisée qui ne correspond peut-être pas à ce que vous voyez dans l’éditeur de code. Pour déboguer du code optimisé, vous devez désactiver l'option Uniquement mon code. (Consultez [Limiter le pas à pas à Uniquement mon code](../debugger/navigating-through-code-with-the-debugger.md#BKMK_Restrict_stepping_to_Just_My_Code)).<br /><br /> Pour plus d’informations, consultez [paramètres de C# projet pour les configurations de débogage](../debugger/project-settings-for-csharp-debug-configurations.md) ou [paramètres de projet pour une configuration de débogage Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md).|
+|**Optimiser le code**|C#, F# et Visual Basic : valeur false. Le code optimisé est plus difficile à déboguer, car les instructions générées ne correspondent pas directement à votre code source. Si vous constatez que votre programme comporte un bogue visible uniquement dans le code optimisé, vous pouvez activer ce paramètre, mais rappelez-vous que le code affiché dans la fenêtre **Code machine** est généré à partir d’une source optimisée qui ne correspond peut-être pas à ce que vous voyez dans l’éditeur de code. Pour déboguer du code optimisé, vous devez désactiver l'option Uniquement mon code. (Consultez [Limiter le pas à pas à Uniquement mon code](../debugger/navigating-through-code-with-the-debugger.md#BKMK_Restrict_stepping_to_Just_My_Code)).<br /><br /> Pour plus d’informations, consultez [paramètres du projet pour les configurations de débogage C#](../debugger/project-settings-for-csharp-debug-configurations.md) ou [paramètres de projet pour une configuration de débogage Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md).|
 |**Chemin de sortie**|Affectez la valeur bin\Debug\\.|
 |**Options avancées de compilation**|Visual Basic uniquement. Cliquez sur **Avancé** pour définir les propriétés avancées décrites dans le tableau suivant.|
 
@@ -52,4 +52,4 @@ Certaines propriétés doivent être définies de la même manière pour tous le
 
 ## <a name="see-also"></a>Voir aussi
 - [Débogage du code managé](../debugger/debugging-managed-code.md)
-- [Types de projets C#, F# et Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
+- [Types de projets C#, F# et Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)

@@ -11,30 +11,30 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 903c9fef18990be0aee78309fcdfadb80a95f384
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68194170"
 ---
 # <a name="objects"></a>Objets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Les informations de référence suivant expliquent les objets qui sont utilisés pour créer une instance de l’éditeur de texte principal.  
+Les informations de référence suivantes décrivent les objets utilisés pour créer une instance de l’éditeur de texte principal.  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Objet VSCodeWindow](../extensibility/vscodewindow-object.md)  
- Décrit l’objet de fenêtre de code, une fenêtre de document spécialisé qui peut comprendre une ou plusieurs vues de texte.  
+ Décrit l’objet de fenêtre de code, une fenêtre de document spécialisée qui peut encadrer un ou plusieurs affichages de texte.  
   
  [Objet VSCodeWindowManager](../extensibility/vscodewindowmanager-object.md)  
- Décrit l’objet de gestionnaire de fenêtre de code qui est implémentée par le service de langage et est chargé de gérer des ornements.  
+ Décrit l’objet gestionnaire de fenêtre de code qui est implémenté par le service de langage et qui est responsable de la gestion des ornements.  
   
  [Objet VSTextBuffer](../extensibility/vstextbuffer-object.md)  
  Décrit l’objet de mémoire tampon de texte, qui représente un flux de texte Unicode, les données d’un fichier.  
   
  [Objet VSTextView](../extensibility/vstextview-object.md)  
- Décrit l’affichage de texte, une fenêtre qui permet aux utilisateurs d’afficher et modifier le texte Unicode de la mémoire tampon de texte.  
+ Décrit l’affichage de texte, une fenêtre qui permet aux utilisateurs d’afficher et de modifier le texte Unicode de la mémoire tampon de texte.  
   
-## <a name="related-sections"></a>Rubriques connexes  
- [Référence du Kit de développement logiciel (SDK) Visual Studio](../extensibility/visual-studio-sdk-reference.md)  
+## <a name="related-sections"></a>Sections connexes  
+ [Informations de référence sur le SDK Visual Studio](../extensibility/visual-studio-sdk-reference.md)  
  Présente une liste de rubriques de référence.

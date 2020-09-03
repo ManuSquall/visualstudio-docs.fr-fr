@@ -9,10 +9,10 @@ ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.topic: how-to
 ms.openlocfilehash: 632ba9aa12eb1fa6550d0f9567e686366cfbcb00
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/15/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88250552"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Installer Visual Studio 2019 pour Mac
@@ -22,7 +22,7 @@ Pour commencer à développer des applications .NET natives multiplateformes sur
  > [!div class="button"]
  > [Télécharger Visual Studio pour Mac](https://visualstudio.microsoft.com/vs/mac/)
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
 
 - Mac avec macOS High Sierra 10.12 ou ultérieur.
 

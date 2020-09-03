@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d98d4069ca510cfbb288b88e0ab52b9cd1eb275d
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84183650"
 ---
 # <a name="property-functions"></a>Fonctions de propriétés
@@ -346,6 +346,6 @@ Les fonctions `Exists` et ne `HasTrailingSlash` sont pas des fonctions de propri
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Propriétés MSBuild](../msbuild/msbuild-properties.md)
+- [MSBuild (propriétés)](../msbuild/msbuild-properties.md)
 
 - [Vue d’ensemble de MSBuild](../msbuild/msbuild.md)

@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 756c19da1aeb8878c2d045f4ee471d8449d2a954
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68154816"
 ---
 # <a name="msbuild-tasks"></a>Tâches MSBuild
@@ -62,7 +62,7 @@ Une plateforme de génération doit pouvoir exécuter plusieurs actions pendant 
 ```  
   
 ## <a name="included-tasks"></a>Tâches incluses  
- [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] est fourni avec de nombreuses tâches, par exemple [Copy](../msbuild/copy-task.md), qui copie des fichiers, [MakeDir](../msbuild/makedir-task.md), qui crée des répertoires et [Csc](../msbuild/csc-task.md), qui compile des fichiers de code source [!INCLUDE[csprcs](../includes/csprcs-md.md)]. Pour obtenir la liste complète des tâches disponibles et les informations sur leur utilisation, consultez l’article [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md).  
+ [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] est fourni avec de nombreuses tâches, par exemple [Copy](../msbuild/copy-task.md), qui copie des fichiers, [MakeDir](../msbuild/makedir-task.md), qui crée des répertoires et [Csc](../msbuild/csc-task.md), qui compile des fichiers de code source [!INCLUDE[csprcs](../includes/csprcs-md.md)]. Pour obtenir la liste complète des tâches disponibles et les informations sur leur utilisation, consultez l’article [Informations de référence sur les tâches MSBuild](../msbuild/msbuild-task-reference.md).  
   
 ## <a name="overridden-tasks"></a>Tâches substituées  
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] recherche des tâches à plusieurs emplacements. Les fichiers portant l’extension .OverrideTasks, stockés dans les répertoires .NET Framework correspondent au premier emplacement. Les tâches contenues dans ces fichiers remplacent toutes les autres tâches du même nom, notamment les tâches du fichier projet. Les fichiers portant l’extension .Tasks, stockés dans les répertoires .NET Framework correspondent au second emplacement. Si la tâche est introuvable à l’un de ces emplacements, c’est celle contenue dans le fichier projet qui est utilisée.  
@@ -70,5 +70,5 @@ Une plateforme de génération doit pouvoir exécuter plusieurs actions pendant 
 ## <a name="see-also"></a>Voir aussi  
  [Concepts MSBuild](../msbuild/msbuild-concepts.md)   
  [MSBuild](msbuild.md)   
- [Task Writing (Écriture de tâches)](../msbuild/task-writing.md)   
- [Inline Tasks (Tâches inline MSBuild)](../msbuild/msbuild-inline-tasks.md)
+ [Écriture de tâches](../msbuild/task-writing.md)   
+ [Tâches Inline](../msbuild/msbuild-inline-tasks.md)

@@ -1,5 +1,5 @@
 ---
-title: Automatique et variables locales Windows | Microsoft Docs
+title: Fenêtres automatique et variables locales | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,28 +22,28 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 261c0c0bd8b48634c8d24d56ee4df7ea3bbcf135
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68161745"
 ---
 # <a name="autos-and-locals-windows"></a>Fenêtres Variables locales et Automatique
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La fenêtre **Automatique** (lors du débogage, **CTRL+ALT+V, A**, ou **Déboguer/Fenêtres/Automatique**) et la fenêtre **Variables locales** (lors du débogage, **CTRL+ALT+V, L**, ou **Déboguer/Fenêtres/Variables locales**) s’avèrent particulièrement utiles quand vous voulez voir les valeurs de variables pendant le débogage. La fenêtre **Variables locales** affiche les variables définies dans la portée locale, qui est généralement la fonction ou méthode en cours d’exécution. La fenêtre **Automatique** affiche les variables utilisées autour de la ligne actuelle (l’emplacement où le débogueur est arrêté). Les variables affichées sont différentes selon les langages. Consultez quelles variables s’affichent dans la fenêtre automatique ? ci-dessous.  
+La fenêtre **Automatique** (lors du débogage, **CTRL+ALT+V, A**, ou **Déboguer/Fenêtres/Automatique**) et la fenêtre **Variables locales** (lors du débogage, **CTRL+ALT+V, L**, ou **Déboguer/Fenêtres/Variables locales**) s’avèrent particulièrement utiles quand vous voulez voir les valeurs de variables pendant le débogage. La fenêtre **Variables locales** affiche les variables définies dans la portée locale, qui est généralement la fonction ou méthode en cours d’exécution. La fenêtre **Automatique** affiche les variables utilisées autour de la ligne actuelle (l’emplacement où le débogueur est arrêté). Les variables affichées sont différentes selon les langages. Consultez What variables appear in the Autos Window? ci-dessous.  
   
  Si vous avez besoin de plus d’informations sur le débogage de base, consultez [Getting Started with the Debugger](../debugger/getting-started-with-the-debugger.md).  
   
 ## <a name="looking-at-objects-in-the-autos-and-locals-windows"></a>Examen des objets dans les fenêtres Automatique et Variables locales  
- Les tableaux et les objets sont affichés dans les fenêtres Automatique et Variables locales en tant que contrôles d’arborescence. Cliquez sur la flèche située à gauche du nom de variable pour développer la vue et afficher les champs et propriétés. Voici un exemple d’un <xref:System.IO.FileStream> de l’objet dans le **variables locales** fenêtre :  
+ Les tableaux et les objets sont affichés dans les fenêtres Automatique et Variables locales en tant que contrôles d’arborescence. Cliquez sur la flèche située à gauche du nom de variable pour développer la vue et afficher les champs et propriétés. Voici un exemple d' <xref:System.IO.FileStream> objet dans la fenêtre **variables locales** :  
   
- ![Locals&#45;FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")  
+ ![Variables locales&#45;FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")  
   
 ## <a name="what-variables-appear-in-the-autos-window"></a>Quelles variables s’affichent dans la fenêtre Automatique ?  
  Vous pouvez utiliser la fenêtre **Automatique** dans le code C#, Visual Basic et C++. La fenêtre **Automatique** ne prend pas en charge JavaScript ni F#.  
   
- En C# et Visual Basic, la fenêtre **Automatique** affiche n’importe quelle variable utilisée sur la ligne actuelle ou précédente. Par exemple, si vous déclarez quatre variables et les définissez comme suit :  
+ En C# et Visual Basic, la fenêtre **automatique** affiche toute variable utilisée sur la ligne actuelle ou précédente. Par exemple, si vous déclarez quatre variables et les définissez comme suit :  
   
 ```csharp  
 public static void Main()  
@@ -58,7 +58,7 @@ public static void Main()
   
  Si vous définissez un point d’arrêt sur la ligne `c = 3`et exécutez le débogueur, la fenêtre **Automatique** doit ressembler à ceci quand l’exécution s’arrête :  
   
- ![Autos&#45;CSharp](../debugger/media/autos-csharp.png "Autos-CSharp")  
+ ![Automatique&#45;CSharp](../debugger/media/autos-csharp.png "Autos-CSharp")  
   
  Notez que la valeur de `c` est 0, car la ligne `c = 3` n’a pas encore été exécutée.  
   
@@ -78,13 +78,13 @@ void main() {
   
  Si vous définissez un point d’arrêt sur la ligne `e = 5;` et exécutez le débogueur, la fenêtre **Automatique** doit ressembler à ceci quand l’exécution s’arrête :  
   
- ![Autos&#45;Cplus](../debugger/media/autos-cplus.png "Autos-Cplus")  
+ ![&#45;automatique cplus](../debugger/media/autos-cplus.png "Autos-Cplus")  
   
  Notez que la variable e n’est pas initialisée, car le code de la ligne `e = 5;` n’a pas encore été exécuté.  
   
  Vous pouvez également voir les valeurs de retour des fonctions et des méthodes dans certaines circonstances. Consultez [View return values of method calls](#bkmk_returnValue) ci-dessous.  
   
-## <a name="bkmk_returnValue"></a> View return values of method calls  
+## <a name="view-return-values-of-method-calls"></a><a name="bkmk_returnValue"></a> View return values of method calls  
  Dans le code .NET et C++, vous pouvez examiner les valeurs de retour quand vous effectuez un pas à pas principal ou sortant dans un appel de méthode. Cette fonctionnalité est utile quand le résultat d’un appel de méthode n’est pas stocké dans une variable locale, par exemple quand une méthode est utilisée comme paramètre ou valeur de retour d’une autre méthode.  
   
  Le code C# suivant ajoute les valeurs de retour de deux fonctions :  
@@ -114,7 +114,7 @@ private static int subtractVars(int i, int j)
   
  Définissez un point d’arrêt sur la ligne int `x = sumVars(a, b) + subtractVars(c, d);` .  
   
- Démarrez le débogage et, quand l’exécution s’arrête au premier point d’arrêt, appuyez sur **F10 (Pas à pas principal)** . Vous devez voir les éléments suivants dans la fenêtre **Automatique** :  
+ Démarrez le débogage et, quand l’exécution s’arrête au premier point d’arrêt, appuyez sur **F10 (Pas à pas principal)**. Vous devez voir les éléments suivants dans la fenêtre **Automatique** :  
   
  ![AutosReturnValueCSharp2](../debugger/media/autosreturnvaluecsharp2.png "AutosReturnValueCSharp2")  
   

@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ffaeff850c739cd81569a88ae980acf837c413c1
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84184209"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Premier aperçu du débogueur Visual Studio
@@ -37,7 +37,7 @@ Appuyez sur **F5** (**déboguer > démarrer le débogage**) ou sur le bouton **D
 
 Les points d’arrêt sont une fonctionnalité pratique quand vous savez quelle ligne de code ou section de code vous voulez examiner en détail.
 
-## <a name="navigate-code-in-the-debugger-using-step-commands"></a><a name="navigate"></a>Parcourir le code dans le débogueur à l’aide des commandes Step
+## <a name="navigate-code-in-the-debugger-using-step-commands"></a><a name="navigate"></a> Parcourir le code dans le débogueur à l’aide des commandes Step
 
 Nous fournissons les raccourcis clavier pour la plupart des commandes, car ils rendent plus rapide la navigation dans le code de votre d’application. (Les commandes équivalentes, comme les commandes des menus, sont données entre parenthèses.)
 
@@ -206,7 +206,7 @@ Vous pouvez configurer votre projet pour qu’il soit généré comme une [confi
 
 Les propriétés de débogage sont spécifiques à chaque type de projet. Par exemple, vous pouvez spécifier un argument à passer à l’application lorsque vous la démarrez. Vous pouvez accéder aux propriétés spécifiques au projet en cliquant avec le bouton droit sur le projet dans Explorateur de solutions et en sélectionnant **Propriétés**. Les propriétés de débogage apparaissent généralement sous l’onglet **générer** ou **Déboguer** , en fonction du type de projet particulier.
 
-![Propriétés d’un projet](../debugger/media/dbg-tour-project-properties.png "Propriétés d’un projet")
+![Propriétés du projet](../debugger/media/dbg-tour-project-properties.png "Propriétés d’un projet")
 
 ## <a name="debug-live-aspnet-apps-in-azure-app-service"></a>Déboguer des applications ASP.NET en production dans Azure App Service
 

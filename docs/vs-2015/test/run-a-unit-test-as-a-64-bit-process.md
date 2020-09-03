@@ -12,10 +12,10 @@ caps.latest.revision: 27
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: fc379f522d119e76ef8be8ba60a4cc1482e57fd1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72660464"
 ---
 # <a name="run-a-unit-test-as-a-64-bit-process"></a>Exécuter un test unitaire comme processus 64 bits

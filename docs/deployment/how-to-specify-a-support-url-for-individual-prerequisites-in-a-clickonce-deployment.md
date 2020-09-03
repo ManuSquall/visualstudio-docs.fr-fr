@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bf474e4926403a9475860bfdc620ee4a6860f8aa
-ms.sourcegitcommit: 3f491903e0c10db9a3f3fc0940f7b587fcbf9530
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85381728"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Guide pratique pour spécifier une URL de prise en charge pour chaque composant requis dans un déploiement ClickOnce
@@ -84,6 +84,6 @@ Un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiemen
 ## <a name="see-also"></a>Voir aussi
 - [Mage.exe (Outil Manifest Generation and Editing)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
 - [Procédure pas à pas : Déployer manuellement une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
-- [\<compatibleFrameworks>appartient](../deployment/compatibleframeworks-element-clickonce-deployment.md)
+- [\<compatibleFrameworks> appartient](../deployment/compatibleframeworks-element-clickonce-deployment.md)
 - [ClickOnce et Authenticode](../deployment/clickonce-and-authenticode.md)
 - [Prérequis pour le déploiement d’applications](../deployment/application-deployment-prerequisites.md)
