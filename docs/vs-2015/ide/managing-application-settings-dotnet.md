@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 85cc90170b2dc665bcdd5acd97860c47ef5a14c4
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74293863"
 ---
 # <a name="managing-application-settings-net"></a>Gestion des paramètres d'une application (.NET)
@@ -70,7 +70,7 @@ Vous pouvez ajouter des fichiers de paramètres personnalisés à votre projet p
 
 Par exemple, vous pouvez ajouter un fichier tel que SpecialSettings.settings à votre projet. Tandis que votre classe `SpecialSettings` n’est pas exposée dans l’espace de noms `My` , le mode **Afficher le code** peut lire le fichier des paramètres personnalisés qui contient `Partial Class SpecialSettings`.
 
-Le Concepteur de paramètres recherche en premier le fichier Settings.settings que le système de projet crée ; il s’agit du fichier par défaut que le Concepteur de projets affiche dans l’onglet **Paramètres** . Settings.settings est localisé dans le dossier My Project pour les projets [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] et dans le dossier Propriétés pour les projets [!INCLUDE[csprcs](../includes/csprcs-md.md)] . Comme le Concepteur de projets recherche ensuite d’autres fichiers de paramètres dans le dossier racine du projet, vous devez mettre votre fichier de paramètres personnalisés à cet emplacement. Si vous ajoutez un fichier .settings ailleurs dans votre projet, le Concepteur de projets ne sera pas capable de le trouver.
+Le concepteur de paramètres recherche en premier le fichier Settings. Settings que le système de projet crée ; Il s’agit du fichier par défaut que le concepteur de projets affiche dans l’onglet **paramètres** . Settings. Settings se trouve dans le dossier My Project pour les [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] projets et dans le dossier Propriétés pour les [!INCLUDE[csprcs](../includes/csprcs-md.md)] projets. Comme le Concepteur de projets recherche ensuite d’autres fichiers de paramètres dans le dossier racine du projet, vous devez mettre votre fichier de paramètres personnalisés à cet emplacement. Si vous ajoutez un fichier .settings ailleurs dans votre projet, le Concepteur de projets ne sera pas capable de le trouver.
 
 ## <a name="accessing-or-changing-application-settings-at-run-time-in-visual-basic"></a>Accéder ou modifier les paramètres d’application au moment de l’exécution en Visual Basic
 
@@ -86,7 +86,7 @@ Nous vous recommandons fortement d’utiliser l’objet `My.Settings` et le fich
 ## <a name="accessing-or-changing-application-settings-at-run-time-in-visual-c"></a>Accéder ou modifier les paramètres d’application au moment de l’exécution en Visual C#
 <!-- markdownlint-enable MD003 MD020 -->
 
-Dans les langages autres que [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], tels que [!INCLUDE[csprcs](../includes/csprcs-md.md)], vous devez accéder directement à la classe `Settings` , comme indiqué dans l’exemple [!INCLUDE[csprcs](../includes/csprcs-md.md)] suivant.
+Dans les langages autres que [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], tels que [!INCLUDE[csprcs](../includes/csprcs-md.md)], vous devez accéder directement à la classe `Settings`, comme indiqué dans l’exemple [!INCLUDE[csprcs](../includes/csprcs-md.md)] suivant.
 
 ```csharp
 Properties.Settings.Default.FirstUserSetting = "abc";
@@ -98,8 +98,8 @@ Vous devez également appeler explicitement la méthode `Save` de cette classe w
 Properties.Settings.Default.Save();
 ```
 
-Pour obtenir des informations générales sur l’accès aux paramètres d’application à l’aide de la classe `Settings`, consultez [Vue d’ensemble des paramètres d’application](https://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc). Pour plus d’informations sur l’itération au sein de paramètres, consultez ce [message de forum](https://social.msdn.microsoft.com/Forums/en-US/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral).
+Pour obtenir des informations générales sur l’accès aux paramètres d’application à l’aide de la classe `Settings` , consultez [Application Settings Overview](https://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc). Pour plus d’informations sur l’itération au sein de paramètres, consultez ce [message de forum](https://social.msdn.microsoft.com/Forums/en-US/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral).
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Accès aux paramètres d’application](https://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e)
+- [Accessing Application Settings](https://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e)

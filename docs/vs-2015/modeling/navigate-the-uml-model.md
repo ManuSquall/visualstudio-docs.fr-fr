@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 23f87c81e43b2dfafb1c9c78c3135faff809bb9f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74289851"
 ---
 # <a name="navigate-the-uml-model"></a>Naviguer dans le modèle UML
@@ -24,7 +24,7 @@ ms.locfileid: "74289851"
 Cette rubrique présente les principaux types du modèle UML.
 
 ## <a name="the-model-elements-model-and-model-store"></a>Les éléments de modèle, le modèle et le magasin de modèles
- Les types définis dans l’assembly **Microsoft. VisualStudio. Uml. interfaces. dll** correspondent aux types définis dans la [spécification UML, version 2.1.2](https://www.omg.org/spec/UML/2.1.2/Superstructure/PDF/).
+ Les types définis dans l’assembly **Microsoft.VisualStudio.Uml.Interfaces.dll** correspondent aux types définis dans la [spécification UML, version 2.1.2](https://www.omg.org/spec/UML/2.1.2/Superstructure/PDF/).
 
  Les types de la spécification UML sont réalisés en tant qu'interfaces dans Visual Studio. La lettre « I » est ajoutée devant le nom de chaque type. Par exemple : [IElement](/previous-versions/dd516035(v=vs.140)), [IClass](/previous-versions/dd523539%28v%3dvs.140%29), [IOperation](/previous-versions/dd481186(v=vs.140)).
 
@@ -45,16 +45,16 @@ Cette rubrique présente les principaux types du modèle UML.
 
  Si vous supprimez un élément du modèle, toute relation à laquelle il participe est supprimée automatiquement et la propriété à l'autre extrémité est mise à jour.
 
- Si la spécification UML assigne une multiplicité de 0..1 à une propriété, elle peut avoir la valeur `null`. Une multiplicité avec un maximum supérieur à 1 signifie que la propriété .NET a le type : `IEnumerable<`*type*`>`.
+ Si la spécification UML assigne une multiplicité de 0..1 à une propriété, elle peut avoir la valeur `null`. Une multiplicité avec un maximum supérieur à 1 signifie que la propriété .NET a le type : `IEnumerable<` *type* `>` .
 
  Pour plus d’informations sur le parcours des relations, consultez [Parcourir les relations avec l’API UML](../modeling/navigate-relationships-with-the-uml-api.md).
 
 ### <a name="the-ownership-tree"></a>Arborescence de propriété
  Un modèle contient une arborescence d’objets [IElement](/previous-versions/dd516035(v=vs.140)) . Chaque élément a des propriétés `OwnedElements` et `Owner`.
 
- Dans la plupart des cas, les cibles des propriétés `Owner` et `OwnedElements` sont également référencées par d'autres propriétés qui ont des noms plus spécifiques. Par exemple, chaque opération UML appartient à une classe UML. Par conséquent, [IOperation](/previous-versions/dd481186(v=vs.140)) a une propriété nommée [IOperation. Class](/previous-versions/dd473473%28v%3dvs.140%29)et, dans chaque objet [IOperation](/previous-versions/dd481186(v=vs.140)) , `Class == Owner`.
+ Dans la plupart des cas, les cibles des propriétés `Owner` et `OwnedElements` sont également référencées par d'autres propriétés qui ont des noms plus spécifiques. Par exemple, chaque opération UML appartient à une classe UML. Par conséquent, [IOperation](/previous-versions/dd481186(v=vs.140)) a une propriété nommée [IOperation. Class](/previous-versions/dd473473%28v%3dvs.140%29)et, dans chaque objet [IOperation](/previous-versions/dd481186(v=vs.140)) , `Class == Owner` .
 
- L’élément le plus haut de l’arborescence, qui n’a pas de propriétaire, est un `AuxiliaryConstructs.IModel`. Le IModel est contenu dans un `IModelStore`, dans lequel il est [IModelStore. root](/previous-versions/ee789368(v=vs.140)).
+ L’élément le plus haut de l’arborescence, qui n’a pas de propriétaire, est un `AuxiliaryConstructs.IModel` . Le IModel est contenu dans un `IModelStore` , dans lequel il est [IModelStore. root](/previous-versions/ee789368(v=vs.140)).
 
  Chaque élément de modèle est créé avec un propriétaire. Pour plus d’informations, consultez [créer des éléments et des relations dans des modèles UML](../modeling/create-elements-and-relationships-in-uml-models.md).
 
@@ -72,11 +72,11 @@ Cette rubrique présente les principaux types du modèle UML.
 ## <a name="access-to-the-model-in-extensions"></a>Accès au modèle dans des extensions
  Dans les extensions [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] définies comme composants MEF, vous pouvez déclarer des propriétés qui importent les informations à partir du contexte dans lequel l'extension s'exécute.
 
-|Type d'attribut|Fournit l'accès à|Plus d'informations|
+|Type d'attribut|Fournit l'accès à|Informations complémentaires|
 |--------------------|----------------------------------|----------------------|
 |Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation<br /><br /> IDiagramContext<br /><br /> (dans Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll)|Diagramme de focus actuel.|[Définir une commande de menu sur un diagramme de modélisation](../modeling/define-a-menu-command-on-a-modeling-diagram.md)|
 |Microsoft.VisualStudio.Modeling.ExtensionEnablement<br /><br /> ILinkedUndoContext<br /><br /> (dans Microsoft.VisualStudio.Modeling.Sdk.[version].dll)|Permet de regrouper des modifications dans des transactions.|[Lier des mises à jour de modèles UML à l’aide de transactions](../modeling/link-uml-model-updates-by-using-transactions.md)|
-|Microsoft.VisualStudio.Shell .SVsServiceProvider<br /><br /> (dans Microsoft.VisualStudio.Shell.Immutable.[version].dll)|Hôte [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. À partir de là, vous pouvez accéder à des fichiers, des projets et d'autres aspects.|[Ouvrir un modèle UML à l’aide de l’API Visual Studio](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)|
+|Microsoft.VisualStudio.Shell .SVsServiceProvider<br /><br /> (dans Microsoft.VisualStudio.Shell.Immutable.[version].dll)|Hôte [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. À partir de là, vous pouvez accéder à des fichiers, des projets et d'autres aspects.|[Ouvrir un modèle UML à l'aide de l'API Visual Studio](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)|
 
 ### <a name="to-get-the-context"></a>Pour obtenir le contexte
  Déclarez l'une des interfaces suivantes, ou les deux, à l'intérieur de votre classe d'extension :
@@ -120,7 +120,7 @@ foreach (IShape<IInterface> in
 ```
 
 ## <a name="accessing-another-model-or-diagrams"></a>Accès à un autre modèle ou à d'autres diagrammes
- Vous pouvez :
+ Vous pouvez :
 
 - utiliser [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Model Bus pour créer des liens entre des éléments dans différents modèles. Pour plus d’informations, consultez [intégrer des modèles UML à d’autres modèles et outils](../modeling/integrate-uml-models-with-other-models-and-tools.md).
 

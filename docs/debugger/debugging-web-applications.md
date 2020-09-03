@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b1a7727f93e3f4fe279bb9cc009e61a3fdd70a15
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73714454"
 ---
 # <a name="debugging-web-applications"></a>Débogage d'applications Web
@@ -26,7 +26,7 @@ Cet article fournit des liens pour vous aider à déboguer différents types d�
 
 - Déboguer des applications ASP.NET
 
-  Pour connaître les étapes requises pour activer le débogage des applications [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], consultez [Déboguer des applications ASP.net](how-to-enable-debugging-for-aspnet-applications.md).
+  Pour connaître les étapes requises pour activer le débogage des [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] applications, consultez [Déboguer des applications ASP.net](how-to-enable-debugging-for-aspnet-applications.md).
 
 - Déboguer le script côté client dans ASP.NET
 

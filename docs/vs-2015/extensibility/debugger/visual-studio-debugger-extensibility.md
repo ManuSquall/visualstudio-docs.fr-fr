@@ -12,28 +12,28 @@ caps.latest.revision: 33
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0b8d37954bf238b2ed1323bf021fded94ec0c584
-ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73983669"
 ---
 # <a name="visual-studio-debugger-extensibility"></a>Extensibilité du débogueur de Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Visual Studio comprend un débogueur de code source entièrement interactif, fournissant un outil puissant et facile à utiliser pour le suivi des bogues dans votre programme. Le débogueur a une prise en charge C#complète Visual Basic,C++, C/et JavaScript. Toutefois, avec le [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)], qui est disponible à partir du [Centre de téléchargement Microsoft](https://www.microsoft.com/download/details.aspx?id=21835), d’autres langages de programmation peuvent être pris en charge dans le débogueur avec les mêmes fonctionnalités enrichies.  
+Visual Studio comprend un débogueur de code source entièrement interactif, fournissant un outil puissant et facile à utiliser pour le suivi des bogues dans votre programme. Le débogueur a une prise en charge complète Visual Basic, C#, C/C++ et JavaScript. Toutefois, avec le [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] , qui est disponible à partir du [Centre de téléchargement Microsoft](https://www.microsoft.com/download/details.aspx?id=21835), d’autres langages de programmation peuvent être pris en charge dans le débogueur avec les mêmes fonctionnalités enrichies.  
   
- Le débogueur [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] est le serveur frontal commun (autrement dit, l’interface utilisateur) aux composants de débogage qui, à leur tour, sont spécifiques au langage en cours de débogage. Pour les nouveaux langages, tout ce qui est nécessaire pour la prise en charge par le débogueur [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] consiste à créer les composants principaux nécessaires, tels qu’un moteur DE débogage (DE). C’est là qu’intervient l' [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)].  
+ Le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] débogueur est le serveur frontal commun (autrement dit, l’interface utilisateur) aux composants de débogage qui, à leur tour, sont spécifiques au langage en cours de débogage. Pour les nouveaux langages, tout ce qui est nécessaire pour la prise en charge par le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] débogueur consiste à créer les composants principaux nécessaires, tels qu’un moteur de débogage (de). C’est là qu' [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] intervient.  
   
- Le [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] comprend une référence complète à tous les éléments de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] requis pour créer un nouveau. En outre, il existe des exemples et des didacticiels qui vous aideront à démarrer.  
+ Le [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] comprend une référence complète à tous les [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] éléments requis pour créer un nouveau de. En outre, il existe des exemples et des didacticiels qui vous aideront à démarrer.  
   
  Pour obtenir un exemple de bout en bout d’un système de projet de langage avec prise en charge du débogage, consultez l' [exemple IronPython](https://msdn.microsoft.com/4c41695c-12c1-4670-b43b-d8d84c9e4089).  
   
- Les sections suivantes décrivent comment étendre le débogueur à l’aide de l' [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)].  
+ Les sections suivantes décrivent comment étendre le débogueur à l’aide de [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] .  
   
 ## <a name="in-this-section"></a>Dans cette section  
- [Bien démarrer](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)  
- Décrit ce que [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] le débogage offre et comment installer le kit de développement logiciel (SDK).  
+ [Prise en main](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)  
+ Décrit ce que [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] propose le débogage et comment installer le kit de développement logiciel (SDK).  
   
  [Création d’un moteur de débogage personnalisé](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
  Documente le processus DE détachement personnalisé, de la préparation de votre programme à un DE pour le détachement DE.  
@@ -45,7 +45,7 @@ Visual Studio comprend un débogueur de code source entièrement interactif, fou
  Explique comment implémenter votre DE.  
   
  [Référence](../../extensibility/debugger/reference/reference-visual-studio-debugging-apis.md)  
- Documente l’API de débogage [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
+ Documente l' [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] API de débogage.  
   
  [Exemples](../../extensibility/debugger/visual-studio-debugging-samples.md)  
  Contient des liens vers un exemple d’évaluateur d’expression common language runtime et un exemple de moteur de débogage.

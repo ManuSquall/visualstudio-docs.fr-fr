@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7b0c54975cdd5bc86f77dddbd5ca1a56c1896394
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655319"
 ---
 # <a name="add-commands-and-gestures-to-layer-diagrams"></a>Ajouter des commandes et des mouvements aux diagrammes de couche
@@ -29,7 +29,7 @@ Vous pouvez définir des commandes de menu contextuel et des gestionnaires de mo
 > [!NOTE]
 > Vous pouvez également personnaliser la validation de l’architecture, dans laquelle le code source des utilisateurs est comparé aux diagrammes de couche. Vous devez définir la validation de l’architecture dans un projet Visual Studio distinct. Vous pouvez l’ajouter à la même extension VSIX que d’autres extensions. Pour plus d’informations, consultez [Ajouter une validation d’architecture personnalisée aux diagrammes de couche](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
 
-## <a name="requirements"></a>spécifications
+## <a name="requirements"></a>Spécifications
  Consultez [Spécifications](../modeling/extend-layer-diagrams.md#prereqs).
 
 ## <a name="defining-a-command-or-gesture-in-a-new-vsix"></a>Définition d’une commande ou d’un mouvement dans une nouvelle extension VSIX
@@ -49,13 +49,13 @@ Vous pouvez définir des commandes de menu contextuel et des gestionnaires de mo
 
 4. Fermez l’instance expérimentale et modifiez l’exemple de code. Pour plus d’informations, consultez [naviguer et mettre à jour les modèles de couche dans le code de programme](../modeling/navigate-and-update-layer-models-in-program-code.md).
 
-5. Vous pouvez ajouter plusieurs gestionnaires de mouvements ou de commandes au même projet. Pour plus d’informations, consultez l’une des sections suivantes :
+5. Vous pouvez ajouter plusieurs gestionnaires de mouvements ou de commandes au même projet. Pour plus d’informations, consultez l’une des sections suivantes :
 
     [Définition d’une commande de menu](#command)
 
     [Définition d’un gestionnaire de mouvements](#gesture)
 
-6. Pour installer l’extension dans l’instance principale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ou sur un autre ordinateur, recherchez le fichier **.vsix** dans *bin\\* . Copiez-le sur l’ordinateur sur lequel vous souhaitez l’installer, puis double-cliquez dessus. Pour le désinstaller, utilisez **Extensions et mises à jour** dans le menu **Outils** .
+6. Pour installer l’extension dans l’instance principale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ou sur un autre ordinateur, recherchez le fichier **.vsix** dans *bin\\*. Copiez-le sur l’ordinateur sur lequel vous souhaitez l’installer, puis double-cliquez dessus. Pour le désinstaller, utilisez **Extensions et mises à jour** dans le menu **Outils** .
 
 ## <a name="adding-a-command-or-gesture-to-a-separate-vsix"></a>Ajout d’une commande ou d’un mouvement à une extension VSIX distincte
  Si vous souhaitez créer une extension VSIX qui contient des commandes, des validateurs de couche et d’autres extensions, nous vous recommandons de créer un projet pour définir l’extension VSIX et des projets distincts pour les gestionnaires. Pour plus d’informations sur les autres types d’extensions de modélisation, consultez [étendre des modèles et des diagrammes UML](../modeling/extend-uml-models-and-diagrams.md).
@@ -69,7 +69,7 @@ Vous pouvez définir des commandes de menu contextuel et des gestionnaires de mo
 
 2. Identifiez ou créez un projet VSIX dans votre solution. Un projet VSIX contient un fichier nommé **source.extension.vsixmanifest**. Pour ajouter un projet VSIX :
 
-    1. Dans la boîte de dialogue **Nouveau projet** , développez **Visual C#** , cliquez sur **Extensibilité**, puis sur **Projet VSIX**.
+    1. Dans la boîte de dialogue **Nouveau projet** , développez **Visual C#**, cliquez sur **Extensibilité**, puis sur **Projet VSIX**.
 
     2. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le projet VSIX, puis cliquez sur **Définir comme projet de démarrage**.
 
@@ -83,7 +83,7 @@ Vous pouvez définir des commandes de menu contextuel et des gestionnaires de mo
 
     3. Pour **Source**, sélectionnez **Projet dans la solution actuelle** et sélectionnez le nom de votre projet de gestionnaire de mouvements ou de commande.
 
-    4. Enregistrez le fichier.
+    4. Enregistrez le fichier .
 
 4. Revenez au projet de gestionnaire de mouvements ou de commande et ajoutez les références de projet suivantes.
 
@@ -96,7 +96,7 @@ Vous pouvez définir des commandes de menu contextuel et des gestionnaires de mo
 |Microsoft.VisualStudio.Modeling.Sdk.[version]|Définir des extensions de modélisation|
 |Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]|Mettre à jour des formes et des diagrammes|
 
-1. Modifiez le fichier de classe dans le projet de bibliothèque de classes C# pour contenir le code de votre extension. Pour plus d’informations, consultez l’une des sections suivantes :
+1. Modifiez le fichier de classe dans le projet de bibliothèque de classes C# pour contenir le code de votre extension. Pour plus d’informations, consultez l’une des sections suivantes :
 
      [Définition d’une commande de menu](#command)
 
@@ -110,7 +110,7 @@ Vous pouvez définir des commandes de menu contextuel et des gestionnaires de mo
 
      Pour le désinstaller, utilisez **Extensions et mises à jour** dans le menu **Outils** .
 
-## <a name="command"></a> Définition d’une commande de menu
+## <a name="defining-a-menu-command"></a><a name="command"></a> Définition d’une commande de menu
  Vous pouvez ajouter plusieurs définitions de commandes de menu à un projet de commande ou de mouvement existant. Chaque commande est définie par une classe dont les caractéristiques sont les suivantes :
 
 - La classe est déclarée comme suit :
@@ -215,7 +215,7 @@ namespace MyLayerExtension // Change to your preference.
 }
 ```
 
-## <a name="gesture"></a> Définition d’un gestionnaire de mouvements
+## <a name="defining-a-gesture-handler"></a><a name="gesture"></a> Définition d’un gestionnaire de mouvements
  Un gestionnaire de mouvements réagit quand l’utilisateur fait glisser des éléments sur le diagramme de couche et quand il double-clique n’importe où dans le diagramme.
 
  Vous pouvez ajouter un fichier de code qui définit un gestionnaire de mouvements à votre projet VSIX de commande ou de gestionnaire de mouvements existant :
@@ -247,7 +247,7 @@ namespace MyLayerExtensions // change to your preference
 
    **OnDragDrop** : appelée quand l’utilisateur dépose un élément sur le diagramme.
 
-- Le premier argument de chaque méthode est un `IShape`, à partir duquel vous pouvez obtenir l’élément de couche. Exemple :
+- Le premier argument de chaque méthode est un `IShape`, à partir duquel vous pouvez obtenir l’élément de couche. Par exemple :
 
   ```
   public void OnDragDrop(IShape target, IDataObject data)

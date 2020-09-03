@@ -33,7 +33,7 @@ Dans Visual Studio, les utilisateurs peuvent valider le code source dans un proj
 > [!WARNING]
 > Après avoir créé un projet de validation, copiez l’ [exemple de code](#example) à la fin de cette rubrique, puis adaptez-le à vos besoins.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  Consultez [Spécifications](../modeling/extend-layer-diagrams.md#prereqs).
 
 ## <a name="defining-a-layer-validator-in-a-new-vsix"></a>Définition d’un validateur de couche dans une nouvelle extension VSIX

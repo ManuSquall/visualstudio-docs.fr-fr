@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8a63261a4ef8a6304bec8c2bdde1d9ec9113405e
-ms.sourcegitcommit: 8530d15aa72fe058ee3a3b4714c36b8638f8b494
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74188589"
 ---
 # <a name="16-bpp-render-target-format-variant"></a>Variante de format cible de rendu de 16 bpp
@@ -36,7 +36,7 @@ Les autres stratégies permettant de réduire la bande passante de la mémoire s
 
 Comme toujours, vous devez réfléchir aux avantages et aux inconvénients qui accompagnent ces optimisations de qualité d'image.
 
-Les applications qui font partie d’une chaîne de permutation ont un format de mémoire tampon d’arrière-plan (DXGI_FORMAT_B5G6R5_UNORM) qui ne prend pas en charge 16 bpp. Ces chaînes de permutation sont créées à l’aide de `D3D11CreateDeviceAndSwapChain` ou `IDXGIFactory::CreateSwapChain`. Pour contourner cette limitation, procédez comme suit :
+Les applications qui font partie d’une chaîne de permutation ont un format de mémoire tampon d’arrière-plan (DXGI_FORMAT_B5G6R5_UNORM) qui ne prend pas en charge 16 bpp. Ces chaînes de permutation sont créées à l’aide `D3D11CreateDeviceAndSwapChain` de ou de `IDXGIFactory::CreateSwapChain` . Pour contourner cette limitation, procédez comme suit :
 1. Créez une cible de rendu de format B5G6R5_UNORM à l’aide de `CreateTexture2D` et rendez-la sur cette cible.
 2. Copiez la cible de rendu dans la mémoire tampon de la chaîne d’échange en dessinant un Quad plein écran avec la cible de rendu comme texture source.
 3. Appel présent sur votre chaîne de permutation.
@@ -54,11 +54,11 @@ Les applications qui font partie d’une chaîne de permutation ont un format de
 
 - Le membre Usage a la valeur D3D11_USAGE_DEFAULT.
 
-## <a name="restrictions-and-limitations"></a>Restrictions et limitations
+## <a name="restrictions-and-limitations"></a>Limitations et restrictions
  Sachant que le format B5G6R5 n'a pas de canal alpha, le contenu alpha n'est pas conservé par cette variante. Si le rendu de votre application nécessite la présence d'un canal alpha dans votre cible de rendu, il vous suffit de passer au format B5G6R5.
 
 ## <a name="example"></a>Exemple
- La variante de **format cible de rendu 16 bpp** peut être reproduite pour les cibles de rendu créées à l’aide de `CreateTexture2D` à l’aide d’un code similaire à celui-ci :
+ La variante de **format cible de rendu 16 bpp** peut être reproduite pour les cibles de rendu créées à l’aide de à l’aide `CreateTexture2D` d’un code similaire à celui-ci :
 
 ```cpp
 D3D11_TEXTURE2D_DESC target_description;

@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9b7eb229c5938165607b797205b94a318e3303b3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655189"
 ---
 # <a name="options-dialog-box--projects-and-solutions-build-and-run"></a>Options (boîte de dialogue), Projets et solutions, Générer et exécuter
@@ -28,8 +28,8 @@ ms.locfileid: "72655189"
 
 Dans cette boîte de dialogue, vous pouvez spécifier le nombre maximal de projets Visual C++ ou Visual C# pouvant être générés simultanément, certains comportements de génération par défaut et certains paramètres du journal de génération. Pour ouvrir la boîte de dialogue **Options**, choisissez **Outils**, **Options** dans la barre de menus. Pour accéder à ce jeu d’options, développez **Projets et solutions**, puis choisissez **Générer et exécuter**.
 
-## <a name="uielement-list"></a>Liste des éléments d’interface
- **nombre maximal de générations de projets en parallèle** Spécifie le nombre maximal de C++ projets visuels C# et visuels pouvant être générés en même temps. Pour optimiser le processus de génération, le nombre maximal de générations de projets en parallèle est automatiquement défini par rapport au nombre de processeurs équipant votre ordinateur. Le nombre maximal est 32.
+## <a name="uielement-list"></a>Liste des éléments de l'interface utilisateur
+ **nombre maximal de générations de projets en parallèle** Spécifie le nombre maximal de projets Visual C++ et Visual C# qui peuvent être générés en même temps. Pour optimiser le processus de génération, le nombre maximal de générations de projets en parallèle est automatiquement défini par rapport au nombre de processeurs équipant votre ordinateur. La valeur maximale est de 32.
 
  **Générer uniquement des projets de démarrage et des dépendances à l’exécution** Seul le projet de démarrage et ses dépendances sont générés si cette case à cocher est activée lorsque vous appuyez sur la touche F5. Choisissez **Déboguer**, **Démarrer** dans la barre de menus. ou choisissez **générer**, **générer** dans la barre de menus. Tous les projets, dépendances et fichiers solution sont générés si cette case est décochée quand vous appuyez sur la touche F5, quand vous choisissez **Déboguer**, **Démarrer** dans la barre de menus, ou quand vous choisissez **Build**, **Build** dans la barre de menus. Cette option est décochée par défaut.
 
@@ -64,7 +64,7 @@ Dans cette boîte de dialogue, vous pouvez spécifier le nombre maximal de proje
  > [!NOTE]
 > Cette option s'applique aux projets Visual C++ uniquement.
 
- Détermine quelles informations sont écrites dans le fichier journal de build, qui se trouve dans \\...\\*Nom_Projet*\Debug\\*Nom_Projet*.log.
+ Détermine la quantité d’informations qui sont écrites dans le fichier journal de génération, qui se trouve dans \\ ... \\ *NomProjet*\Debug. \\ *ProjectName*. log.
 
 ## <a name="see-also"></a>Voir aussi
  [Compilation et génération](../../ide/compiling-and-building-in-visual-studio.md)

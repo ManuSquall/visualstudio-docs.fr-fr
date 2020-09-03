@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 2ed51eaef8594695d4d594401ab9375563525b10
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74294580"
 ---
 # <a name="display-data-in-blend"></a>Afficher des données dans Blend
@@ -21,24 +21,24 @@ ms.locfileid: "74294580"
 
 Vous pouvez afficher des exemples de données dans votre concepteur à mesure que vous personnalisez la disposition de vos pages. Vous pouvez générer des exemples de données de toutes pièces ou en utilisant une classe existante. Vous pouvez aussi vous connecter à des *données en direct* qui s'affichent dans votre application au moment où vous l'exécutez.
 
- **Dans cette rubrique :**
+ **Dans cette rubrique :**
 
-- [Générer un échantillon de données](#Scratch)
+- [Générer un exemple de données](#Scratch)
 
 - [Générer des exemples de données à partir d'une classe](#Existing)
 
 - [Afficher des données en direct dans une application WPF](#LiveWPF)
 
-- [Afficher des données en direct dans une application Windows Store ou Windows Phone](#LiveStore)
+- [Afficher les données actives dans un magasin ou une application téléphonique](#LiveStore)
 
-## <a name="Scratch"></a> Générer un échantillon de données
- Pour générer des exemples de données, ouvrez un document XAML. Dans le panneau **données** , choisissez le bouton **créer des exemples de données** ![ ](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png "30540d76-7256-43CE-b5d9-4b2edf3d339f") , puis choisissez **nouvel exemple de données**.
+## <a name="generate-sample-data"></a><a name="Scratch"></a> Générer des exemples de données
+ Pour générer des exemples de données, ouvrez un document XAML. Dans le panneau **Données**, choisissez le bouton **Créer des exemples de données**![](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png "30540d76-7256-43CE-b5d9-4b2edf3d339f"), puis **Nouvel exemple de données**.
 
  Définissez la structure de vos données dans le panneau **Données** et liez-la aux éléments d'interface utilisateur d'une page.
 
  ![](../designers/media/496d7ebc-fe46-42f6-95a8-57b0e5be5d49.png "496d7ebc-fe46-42f6-95a8-57b0e5be5d49")
 
- Si vous souhaitez que vos exemples de données apparaissent dans vos pages lorsque vous exécutez l’application, choisissez **options** ![ ](../designers/media/ae1fd260-4f84-420d-b196-45fde357d81d.png "ae1fd260-4f84-420d-b196-45fde357d81d")de source de données, puis **activer lors**de l’exécution de l’application.
+ Si vous voulez que vos exemples de données apparaissent dans vos pages au moment où vous exécutez l'application, choisissez **Options de source de données** ![](../designers/media/ae1fd260-4f84-420d-b196-45fde357d81d.png "ae1fd260-4f84-420d-b196-45fde357d81d"), puis **Activer lorsque l'application est exécutée**.
 
  ![](../designers/media/05d5356d-91bb-4e6b-b3f7-29b76852c4b3.png "05d5356d-91bb-4e6b-b3f7-29b76852c4b3")
 
@@ -46,20 +46,20 @@ Vous pouvez afficher des exemples de données dans votre concepteur à mesure qu
 
  **Regardez une brève vidéo :** ![configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.PNG "Installées bldadminconsoleinitialconfigicon") [qui combinent une liaison de données avec Blend](https://www.youtube.com/watch?v=LSwPB6CAvjg).
 
-## <a name="Existing"></a> Générer des exemples de données à partir d'une classe
+## <a name="generate-sample-data-from-a-class"></a><a name="Existing"></a> Générer des exemples de données à partir d’une classe
  Si vous avez déjà créé des classes qui décrivent la structure de vos données, vous pouvez générer des exemples de données à partir de celles-ci.
 
- Pour générer des exemples de données à partir d’une classe, ouvrez un document XAML, puis dans le volet **données** , cliquez sur le bouton **créer des exemples de données** ![ ](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png "30540d76-7256-43CE-b5d9-4b2edf3d339f") , puis cliquez sur **créer un exemple de données à partir de la classe**.
+ Pour générer les exemples de données à partir d’une classe, ouvrez un document XAML, puis, dans le volet **Données** , cliquez sur le bouton **Créer des exemples de données**![](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png "30540d76-7256-43CE-b5d9-4b2edf3d339f") , puis cliquez sur **Créer un exemple de données à partir de la classe**.
 
  **Regardez une brève vidéo :** ![configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.PNG "Installées bldadminconsoleinitialconfigicon") [créer des exemples de données à partir d’une classe](https://channel9.msdn.com/Shows/Inside+Windows+Phone/IWP54--Windows-Phone-Data-Binding-and-the-Magic-of-XAML).
 
  **Regardez une brève vidéo :** ![configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.PNG "Installées bldadminconsoleinitialconfigicon") [qui combinent une liaison de données avec Blend](https://www.youtube.com/watch?v=LSwPB6CAvjg).
 
-## <a name="LiveWPF"></a> Afficher des données en direct dans une application WPF
+## <a name="show-live-data-in-a-wpf-application"></a><a name="LiveWPF"></a> Afficher les données actives dans une application WPF
  **Regardez une brève vidéo :** ![configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.PNG "Installées bldadminconsoleinitialconfigicon") [créer une source de données XML](https://www.youtube.com/watch?v=RjQueappjqk&feature=youtube_gdata).
 
-## <a name="LiveStore"></a> Afficher des données en direct dans une application Windows Store ou Windows Phone
+## <a name="show-live-data-in-a-store-or-phone-app"></a><a name="LiveStore"></a> Afficher les données actives dans un magasin ou une application téléphonique
  Consultez [Utilisation de données et de fichiers (XAML)](https://msdn.microsoft.com/library/windows/apps/xaml/br229562.aspx).
 
 ## <a name="see-also"></a>Voir aussi
- [Création d’une interface utilisateur à l’aide de Blend pour Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)
+ [Création d’une interface utilisateur à l’aide de Blend pour Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

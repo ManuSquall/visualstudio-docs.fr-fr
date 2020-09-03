@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 213f4299ac71c08118563a008abe065f2c02423e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655391"
 ---
 # <a name="visual-c-code-snippets"></a>Extraits de code Visual C++
@@ -51,7 +51,7 @@ Dans Visual Studio, vous pouvez utiliser des extraits de code pour ajouter du co
 
 3. Utilisez les touches d’accès rapide : **Ctrl + K + S**
 
-   Sélectionnez **#if**. Vous devez voir quelque chose de similaire à :
+   Sélectionnez **#if**. Un résultat semblable à celui-ci doit s’afficher :
 
 ```cpp
 #if 0
@@ -62,7 +62,7 @@ Dans Visual Studio, vous pouvez utiliser des extraits de code pour ajouter du co
  Vous pouvez alors remplacer le 0 par la condition correcte.
 
 ## <a name="where-can-i-find-a-complete-list-of-the-c-code-snippets"></a>Où puis-je trouver la liste complète des extraits de code C++ ?
- Vous pouvez trouver la liste complète des extraits de code C++ en accédant au **Gestionnaire des extraits de code** (dans le menu **Outils**) et en définissant le **langage** sur **Visual C++** . Dans la fenêtre ci-dessous, développez **Visual C++** . Vous devez voir les noms de tous les extraits de code C++ dans l'ordre alphabétique.
+ Vous pouvez trouver la liste complète des extraits de code C++ en accédant au **Gestionnaire des extraits de code** (dans le menu **Outils**) et en définissant le **langage** sur **Visual C++**. Dans la fenêtre ci-dessous, développez **Visual C++**. Vous devez voir les noms de tous les extraits de code C++ dans l'ordre alphabétique.
 
  Les noms de la plupart des extraits de code sont explicites, mais certains noms peuvent prêter à confusion.
 
@@ -148,7 +148,7 @@ for (auto& i : v)
 ```
 
 ## <a name="the-destructor-snippet-"></a>Extrait de code du destructeur (~)
- L’extrait de code destructeur ( **~** ) présente un comportement différent dans des contextes différents. Si vous insérez cet extrait dans une classe, il fournit un destructeur pour cette classe. Examinons, par exemple, le code suivant :
+ L’extrait de code du destructeur ( **~** ) présente un comportement différent dans des contextes différents. Si vous insérez cet extrait dans une classe, il fournit un destructeur pour cette classe. Examinons, par exemple, le code suivant :
 
 ```cpp
 class SomeClass {

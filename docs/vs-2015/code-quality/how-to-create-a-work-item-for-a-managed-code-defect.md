@@ -13,16 +13,16 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 8a3e9277ca29a20d817b04bf06cde120c0f073d8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655131"
 ---
 # <a name="how-to-create-a-work-item-for-a-managed-code-defect"></a>Comment : créer un élément de travail pour une erreur de code managé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous pouvez utiliser la fonctionnalité de suivi des éléments de travail pour enregistrer l’élément de travail à partir de [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]. Pour utiliser cette fonctionnalité, votre projet doit faire partie du projet d’équipe dans [!INCLUDE[esprfound](../includes/esprfound-md.md)].
+Vous pouvez utiliser la fonctionnalité de suivi des éléments de travail pour enregistrer l’élément de travail à partir de [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] . Pour utiliser cette fonctionnalité, votre projet doit faire partie du projet d’équipe dans [!INCLUDE[esprfound](../includes/esprfound-md.md)] .
 
 ### <a name="to-create-a-work-item-for-managed-code-defect"></a>Pour créer un élément de travail pour une erreur de code managé
 

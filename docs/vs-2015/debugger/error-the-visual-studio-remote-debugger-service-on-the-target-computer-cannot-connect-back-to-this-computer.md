@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 80a7de83f118b38d9a3c71f1c7e7febf48e0f5bc
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85520508"
 ---
 # <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Erreur : Le service Débogueur distant Visual Studio sur l'ordinateur cible ne peut pas se reconnecter à cet ordinateur
@@ -37,7 +37,7 @@ Cette erreur signifie que le service Débogueur distant Visual Studio s'exécute
 |Un ordinateur, ou les deux, dans un groupe de travail|Non|Non|Oui|  
 |Ordinateurs sur des domaines différents|Non|Non|Oui|  
   
- Informations supplémentaires :  
+ En outre :  
   
 - Le compte sous lequel vous exécutez le service Débogueur distant Visual Studio doit être un administrateur sur l'ordinateur distant afin qu'il puisse déboguer tout processus.  
   

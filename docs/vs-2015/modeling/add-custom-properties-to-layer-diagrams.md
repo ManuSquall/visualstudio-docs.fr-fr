@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ec1c7c94c8a0e6aa233cf21f9b57e093cc430d48
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655284"
 ---
 # <a name="add-custom-properties-to-layer-diagrams"></a>Ajouter des propriétés personnalisées à des diagrammes de couche
@@ -32,7 +32,7 @@ Quand vous écrivez du code d'extension pour des diagrammes de couche, vous pouv
 > [!IMPORTANT]
 > Pour faire apparaître les propriétés, vous devez apporter la modification suivante sur chaque ordinateur où vous souhaitez que les propriétés de couche soient visibles.
 >
->  1. Exécutez le bloc-notes en utilisant **exécuter en tant qu’administrateur**. Ouvrez `%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`.
+>  1. Exécutez le bloc-notes en utilisant **exécuter en tant qu’administrateur**. Ouvrez `%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`
 >
 >  2. Dans l'élément `Content`, ajoutez :
 >
@@ -42,15 +42,15 @@ Quand vous écrivez du code d'extension pour des diagrammes de couche, vous pouv
 >
 >  3. Dans la section **Visual Studio Tools** du menu Démarrer de l’application Visual Studio, ouvrez **invite de commandes développeur**.
 >
->     Entrez :
+>     Entrez :
 >
 >     `devenv /rootSuffix /updateConfiguration`
 >
 >     `devenv /rootSuffix Exp /updateConfiguration`
 >
->  4. Redémarrez Visual Studio.
+>  4. Démarrez Visual Studio.
 
- **Vérifier que votre code se trouve dans un projet VSIX**
+ **Vérifier que votre code se trouve dans un projet VSIX**
 
  Si votre propriété fait partie d’une commande, d’un mouvement ou d’un projet de validation, vous n’avez rien à ajouter. Le code de votre propriété personnalisée doit être défini dans un projet d'extensibilité Visual Studio défini en tant que composant MEF. Pour plus d’informations, consultez [Ajouter des commandes et des mouvements aux diagrammes de couche](../modeling/add-commands-and-gestures-to-layer-diagrams.md) ou [Ajouter une validation d’architecture personnalisée aux diagrammes de couche](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
 
@@ -69,11 +69,11 @@ public class MyProperty
 
  Vous pouvez définir des propriétés sur [ILayerElement](/previous-versions/ff644511(v=vs.140)) ou sur l’une de ses classes dérivées, notamment :
 
-- `ILayerModel`-le modèle
+- `ILayerModel` -le modèle
 
-- `ILayer`-chaque couche
+- `ILayer` -chaque couche
 
-- `ILayerDependencyLink`-les liens entre les couches
+- `ILayerDependencyLink` -les liens entre les couches
 
 - `ILayerComment`
 

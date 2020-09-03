@@ -20,16 +20,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ce987f5ef90448c41da45a39c62710b968e11199
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655419"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Enregistrer des données avec les méthodes DBDirect du TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Cette procédure pas à pas fournit des instructions détaillées pour exécuter des instructions SQL directement sur une base de données à l’aide des méthodes DBDirect d’un TableAdapter. Les méthodes DBDirect d’un TableAdapter fournissent un niveau élevé de contrôle sur vos mises à jour de base de données. Vous pouvez les utiliser pour exécuter des instructions SQL et des procédures stockées spécifiques en appelant les méthodes individuelles `Insert`, `Update` et `Delete` selon les besoins de votre application (par opposition à la méthode `Update` surchargée qui exécute la mise à jour, INSERT et les instructions DELETE dans un seul appel).
+Cette procédure pas à pas fournit des instructions détaillées pour exécuter des instructions SQL directement sur une base de données à l’aide des méthodes DBDirect d’un TableAdapter. Les méthodes DBDirect d’un TableAdapter fournissent un niveau élevé de contrôle sur vos mises à jour de base de données. Vous pouvez les utiliser pour exécuter des instructions SQL et des procédures stockées spécifiques en appelant `Insert` les `Update` méthodes individuelles, et selon les `Delete` besoins de votre application (par opposition à la méthode surchargée `Update` qui exécute les instructions Update, INSERT et Delete dans un seul appel).
 
  Pendant cette procédure pas à pas, vous allez apprendre à :
 
@@ -43,8 +43,8 @@ Cette procédure pas à pas fournit des instructions détaillées pour exécuter
 
 - Ajoutez des méthodes pour accéder directement à la base de données et effectuer des insertions, des mises à jour et des suppressions.
 
-## <a name="prerequisites"></a>Configuration requise
- Pour exécuter cette procédure pas à pas, vous avez besoin des éléments suivants :
+## <a name="prerequisites"></a>Prérequis
+ Pour réaliser cette procédure pas à pas, vous aurez besoin des éléments suivants :
 
 - avoir accès à l'exemple de base de données Northwind.
 
@@ -76,7 +76,7 @@ Cette procédure pas à pas fournit des instructions détaillées pour exécuter
 
     - Si une connexion de données à l’exemple de base de données Northwind est disponible dans la liste déroulante, sélectionnez-la.
 
-         ou
+         -ou-
 
     - Sélectionnez **Nouvelle connexion** pour afficher la boîte de dialogue **Ajouter/Modifier la connexion**.
 
@@ -86,7 +86,7 @@ Cette procédure pas à pas fournit des instructions détaillées pour exécuter
 
 7. Dans l’écran **choisir vos objets de base de données** , développez le nœud **tables** .
 
-8. Sélectionnez la table `Region`, puis sélectionnez **Terminer**.
+8. Sélectionnez la `Region` table, puis sélectionnez **Terminer**.
 
      **NorthwindDataSet** est ajouté à votre projet et la table `Region` apparaît dans la fenêtre **Sources de données**.
 
@@ -105,9 +105,9 @@ Cette procédure pas à pas fournit des instructions détaillées pour exécuter
 
 2. Définissez les propriétés **Name** et **Text** suivantes sur chaque bouton.
 
-    |Name|Texte|
+    |Nom|Texte|
     |----------|----------|
-    |`InsertButton`|**Insert**|
+    |`InsertButton`|**Insérer**|
     |`UpdateButton`|**Mettre à jour**|
     |`DeleteButton`|**Supprimer**|
 
@@ -138,7 +138,7 @@ Cette procédure pas à pas fournit des instructions détaillées pour exécuter
      [!code-csharp[VbRaddataSaving#3](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form1.cs#3)]
      [!code-vb[VbRaddataSaving#3](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form1.vb#3)]
 
-## <a name="run-the-application"></a>Exécuter l'application
+## <a name="run-the-application"></a>Exécution de l'application
 
 #### <a name="to-run-the-application"></a>Pour exécuter l’application
 

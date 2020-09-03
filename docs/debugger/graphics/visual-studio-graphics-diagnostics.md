@@ -12,16 +12,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e69d88bb5764836d82232cec26606009eaf694d7
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73187736"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Diagnostics des graphiques Visual Studio
 Visual Studio*Graphics Diagnostics* est un ensemble d’outils pour l’enregistrement, puis l’analyse des problèmes de rendu et de performances dans les applications Direct3D. Graphics Diagnostics peut être utilisé sur les applications qui s'exécutent localement sur votre PC Windows, dans un émulateur d'appareil Windows, ou sur un PC ou un appareil distant.
 
- Le flux de travail Graphics Diagnostics commence par capturer un enregistrement de la façon dont votre application utilise Direct3D (dynamiquement, durant son exécution) pour que les informations relatives au comportement puissent être analysées immédiatement, partagées ou enregistrées pour un usage différé. Les sessions de capture peuvent être lancées et contrôlées manuellement à partir de Visual Studio ou à l’aide de l’outil de capture en ligne de commande **dxcap. exe**. Les sessions de capture peuvent également être initialisées et contrôlées par programme à l’aide des API de capture Graphics Diagnostics.
+ Le flux de travail Graphics Diagnostics commence par capturer un enregistrement de la façon dont votre application utilise Direct3D (dynamiquement, durant son exécution) pour que les informations relatives au comportement puissent être analysées immédiatement, partagées ou enregistrées pour un usage différé. Les sessions de capture peuvent être lancées et contrôlées manuellement à partir de Visual Studio ou à l’aide de l’outil de capture de ligne de commande **dxcap.exe**. Les sessions de capture peuvent également être initialisées et contrôlées par programme à l’aide des API de capture Graphics Diagnostics.
 
  Une fois qu’une session de capture a été enregistrée, son contenu peut être lu par Visual Studio *Graphics Analyzer* à tout moment, en recréant les frames capturés à l’aide des ressources et des commandes de rendu utilisées par l’application. Ensuite, à l’aide des outils fournis dans la fenêtre Graphics Analyzer, tous les frames capturés peuvent être analysés en détail. Ces outils permettent d'examiner un appel d'API, une ressource, un objet État du pipeline, une étape de canalisation Direct3D, ou même l'historique complet d'un pixel dans un frame capturé. L'utilisation conjointe de ces outils permet d'explorer un problème de rendu de façon intuitive, depuis son apparition dans un frame capturé jusqu'à sa cause racine dans le code source, les nuanceurs ou les ressources graphiques de l'application.
 
@@ -62,9 +62,9 @@ Visual Studio*Graphics Diagnostics* est un ensemble d’outils pour l’enregist
 
  [Exemples](graphics-diagnostics-examples.md) Plusieurs exemples montrent comment utiliser les outils de Graphics Diagnostics ensemble pour diagnostiquer différents types de problèmes de rendu.
 
-## <a name="related-sections"></a>Rubriques connexes
+## <a name="related-sections"></a>Sections connexes
 
-| Titre | Description |
+| Intitulé | Description |
 | - | - |
 | [Visite guidée des fonctionnalités du débogueur](../debugger-feature-tour.md) | Présente la fonctionnalité de débogage de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. |
 | [Graphiques et jeux DirectX](/windows/win32/directx) | Fournit des articles ayant trait aux technologies graphiques DirectX. |

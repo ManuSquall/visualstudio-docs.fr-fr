@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2d99a1aff2c241e81e8914a247d2f6d8981ee273
-ms.sourcegitcommit: 9c7d8693108ecd2042a70c04cebe3c44af657baf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74239456"
 ---
 # <a name="remote-debugger-port-assignments"></a>Affectations de port du débogueur distant
@@ -42,7 +42,7 @@ En d’autres termes, le numéro de port attribué au débogueur distant est inc
 
  Dans la fenêtre du débogueur distant, cliquez sur **Outils/Options**, puis définissez le numéro de port TCP/IP.
 
- Sur la ligne de commande, démarrez le débogueur distant avec le commutateur **/port** : **msvsmon /port \<numéro de port>** .
+ Sur la ligne de commande, démarrez le débogueur distant avec le commutateur **/port** : **msvsmon \<port number> /port **.
 
  Tous les commutateurs de ligne de commande du débogueur distant sont disponibles dans l’aide du débogage distant (appuyez sur **F1** ou cliquez sur **Aide/Utilisation** dans la fenêtre du débogueur distant).
 
@@ -54,7 +54,7 @@ En d’autres termes, le numéro de port attribué au débogueur distant est inc
  Quand la version 64 bits du débogueur distant est démarrée, elle utilise le port principal (4022) par défaut.  Si vous déboguez un processus 32 bits, la version 64 bits du débogueur distant démarre une version 32 bits du débogueur distant sur le port 4023 (le numéro de port principal est incrémenté de 1). Si vous exécutez le débogueur distant 32 bits, il utilise le port 4022 et 4023 n’est pas utilisé.
 :::moniker-end
 
- Ce port est configurable à partir de la ligne de commande : **Msvsmon /wow64port \<<numéro_de_port>** .
+ Ce port est configurable à partir de la ligne de commande : **msvsmon/wow64port \<port number> **.
 
 ## <a name="the-discovery-port"></a>Port de détection
  UDP 3702 est utilisé pour rechercher des instances en cours d’exécution du débogueur distant sur le réseau (par exemple, la boîte de dialogue **Rechercher** dans la boîte de dialogue **Attacher au processus** ). Il est utilisé uniquement pour la découverte d’un ordinateur exécutant le débogueur distant ; il est facultatif si vous disposez d’une autre façon de connaître le nom ou l’adresse IP de l’ordinateur cible. Comme il s’agit d’un port standard pour la détection, le numéro de port ne peut pas être configuré.

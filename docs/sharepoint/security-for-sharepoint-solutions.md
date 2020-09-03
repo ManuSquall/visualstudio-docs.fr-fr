@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6dc1449a40528670274ea5b275cca3f0a8d2f277
-ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73983777"
 ---
 # <a name="security-for-sharepoint-solutions"></a>Sécurité pour les solutions SharePoint
@@ -28,18 +28,18 @@ ms.locfileid: "73983777"
 ## <a name="safe-control-entries"></a>Entrées de contrôle sécurisé
  Chaque élément de projet SharePoint créé dans [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] a une propriété **entrées de contrôle sécurisé** qui représente une collection de contrôles sécurisés. Sa sous-propriété **Safe** vous permet de spécifier les contrôles que vous envisagez de sécuriser. Pour plus d’informations, consultez fournir des informations sur le [package et le déploiement dans les éléments de projet](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) et [spécification de composants WebPart sécurisés](/previous-versions/office/developer/sharepoint2003/dd583154(v=office.11)#specifying-safe-web-parts).
 
-## <a name="allowpartiallytrustedcallers-attribute"></a>Attribut AllowPartiallyTrustedCallers
+## <a name="allowpartiallytrustedcallers-attribute"></a>attribut AllowPartiallyTrustedCallers
  Par défaut, seules les applications entièrement approuvées par le système de sécurité d’accès du code (CAS) du Runtime peuvent accéder à un assembly de code managé partagé. Le marquage d’un assembly avec un niveau de confiance suffisant avec l’attribut AllowPartiallyTrustedCallers permet aux assemblys de confiance partielle d’y accéder.
 
- L’attribut AllowPartiallyTrustedCallers est ajouté à toute solution SharePoint qui n’est pas déployée sur le système Global Assembly Cache ([!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). Cela comprend les solutions ou les solutions bac à sable (sandbox) déployées dans le répertoire bin de l’application SharePoint. Pour plus d’informations, consultez [modifications de sécurité de la version 1 pour le Microsoft .NET Framework](/previous-versions/msp-n-p/ff921345(v=pandp.10)) et [déploiement de composants WebPart dans SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/cc768621(v=office.14)).
+ L’attribut AllowPartiallyTrustedCallers est ajouté à toute solution SharePoint qui n’est pas déployée sur le système Global Assembly Cache ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)] ). Cela comprend les solutions ou les solutions bac à sable (sandbox) déployées dans le répertoire bin de l’application SharePoint. Pour plus d’informations, consultez [modifications de sécurité de la version 1 pour le Microsoft .NET Framework](/previous-versions/msp-n-p/ff921345(v=pandp.10)) et [déploiement de composants WebPart dans SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/cc768621(v=office.14)).
 
 ## <a name="safe-against-script-property"></a>Propriété de script sécurisée
- L' *injection de script* est l’insertion de code potentiellement malveillant dans des contrôles ou des pages Web. Pour aider à protéger les sites SharePoint 2010 contre l’injection de script, les contributeurs ne peuvent pas afficher ou modifier des composants WebPart ou leurs propriétés par défaut. Ce comportement est contrôlé par un attribut SafeControl appelé SafeAgainstScript. Dans [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)], définissez cet attribut dans le sous-ensemble d' **entrées de contrôle sécurisé** d’un élément de projet **par rapport à un script**. Pour plus d’informations, consultez fournir des informations sur le [package et le déploiement dans les éléments de projet](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) et [Comment : marquer des contrôles comme des contrôles sécurisés](../sharepoint/how-to-mark-controls-as-safe-controls.md).
+ L' *injection de script* est l’insertion de code potentiellement malveillant dans des contrôles ou des pages Web. Pour aider à protéger les sites SharePoint 2010 contre l’injection de script, les contributeurs ne peuvent pas afficher ou modifier des composants WebPart ou leurs propriétés par défaut. Ce comportement est contrôlé par un attribut SafeControl appelé SafeAgainstScript. Dans [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] , définissez cet attribut dans le sous-ensemble d' **entrées de contrôle sécurisé** d’un élément de projet **par rapport à un script**. Pour plus d’informations, consultez fournir des informations sur le [package et le déploiement dans les éléments de projet](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) et [Comment : marquer des contrôles comme des contrôles sécurisés](../sharepoint/how-to-mark-controls-as-safe-controls.md).
 
 ## <a name="vista-and-windows-7-user-account-control"></a>Contrôle de compte d’utilisateur Vista et Windows 7
- [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] et [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] incorporer une fonctionnalité de sécurité appelée contrôle de compte d’utilisateur (UAC, User Account Control). Pour développer des solutions SharePoint dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] sur des systèmes [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] et [!INCLUDE[win7](../sharepoint/includes/win7-md.md)], le contrôle de compte d’utilisateur exige que vous exécutiez [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] en tant qu’administrateur système. Dans le menu **Démarrer** , ouvrez le menu contextuel pour [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], puis choisissez **exécuter en tant qu’administrateur**.
+ [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] et [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] incorporer une fonctionnalité de sécurité connue sous le nom de contrôle de compte d’utilisateur (UAC). Pour développer des solutions SharePoint dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] sur [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] les [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] systèmes et, le contrôle de compte d’utilisateur requiert que vous exécutiez [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] en tant qu’administrateur système. Dans le menu **Démarrer** , ouvrez le menu contextuel de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , puis choisissez **exécuter en tant qu’administrateur**.
 
- Pour configurer le raccourci de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pour qu’il s’exécute toujours en tant qu’administrateur, ouvrez le menu contextuel, choisissez **Propriétés**, cliquez sur le bouton **avancé** dans la boîte de dialogue **Propriétés** , puis activez la case à cocher **exécuter en tant qu’administrateur** .
+ Pour configurer le [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] raccourci pour qu’il s’exécute toujours en tant qu’administrateur, ouvrez le menu contextuel, choisissez **Propriétés**, cliquez sur le bouton **avancé** dans la boîte de dialogue **Propriétés** , puis activez la case à cocher **exécuter en tant qu’administrateur** .
 
  Pour plus d’informations, consultez [comprendre et configurer le contrôle de compte d’utilisateur dans Windows Vista](/previous-versions/windows/it-pro/windows-vista/cc709628(v=ws.10)). et [le contrôle de compte d’utilisateur Windows 7](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731416(v=ws.10)).
 
@@ -56,14 +56,14 @@ ms.locfileid: "73983777"
 
 3. Ajoutez votre compte d’utilisateur au groupe de WSS_ADMIN_WPG.
 
-## <a name="additional-security-resources"></a>Ressources de sécurité supplémentaires
+## <a name="additional-security-resources"></a>Options de sécurité supplémentaires
  Pour plus d’informations sur les problèmes de sécurité, consultez les rubriques suivantes.
 
 ### <a name="visual-studio-security"></a>sécurité (Visual Studio)
 
 - [Sécurité et autorisations utilisateur](/previous-versions/visualstudio/visual-studio-2010/ms165099(v=vs.100))
 
-- [Sécurité dans le code natif et .NET Framework](/previous-versions/visualstudio/visual-studio-2010/1787tk12(v=vs.100))
+- [Sécurité dans le code natif et .NET Framework](/previous-versions/visualstudio/visual-studio-2010/1787tk12(v=vs.100))
 
 - [Sécurité dans le .NET Framework](/previous-versions/dotnet/netframework-4.0/fkytk30f(v=vs.100))
 
