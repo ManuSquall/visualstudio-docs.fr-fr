@@ -9,17 +9,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 037ee411c156d21145160dc95b40078fd841493c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67825124"
 ---
 # <a name="help-viewer-administrator-guide"></a>Guide de l’administrateur Help Viewer
 
 La visionneuse d’aide vous permet de gérer les installations locales d’aide pour les environnements réseau avec ou sans accès à Internet. Le contenu d’aide locale est configuré sur la base de l’ordinateur. Par défaut, les utilisateurs doivent disposer des droits d’administrateur pour mettre à jour leur installation d’aide locale.
 
-Si votre environnement réseau permet aux clients d’accéder à Internet, vous pouvez déployer le contenu de l’aide locale depuis Internet à l’aide de l’exécutable **Help Content Manager**. Pour plus d’informations sur la syntaxe de ligne de commande de *HlpCtntMgr.exe*, consultez les [Arguments de ligne de commande pour Help Content Manager](../help-viewer/command-line-arguments.md).
+Si votre environnement réseau permet aux clients d’accéder à Internet, vous pouvez utiliser l’exécutable **Help Content Manager** pour déployer le contenu de l’aide locale à partir d’Internet. Pour plus d’informations sur *HlpCtntMgr.exe* syntaxe de ligne de commande, consultez [arguments de ligne de commande pour Help Content Manager](../help-viewer/command-line-arguments.md).
 
 Pour obtenir des informations sur la création de contenu, la création d’un point de terminaison de service intranet et les types d’activités similaires, consultez [Help Viewer SDK](../extensibility/internals/microsoft-help-viewer-sdk.md).
 
@@ -41,9 +41,9 @@ Vous pouvez utiliser **Help Content Manager** (*HlpCtntMgr.exe*) pour déployer 
 \\%ProgramFiles(x86)%\Microsoft Help Viewer\v2.3\HlpCtntmgr.exe /operation \<*name*> /catalogname \<*catalog name*> /locale \<*locale*>
 ```
 
-Pour plus d’informations sur la syntaxe de ligne de commande de *HlpCtntMgr.exe*, consultez les [Arguments de ligne de commande pour Help Content Manager](../help-viewer/command-line-arguments.md).
+Pour plus d’informations sur *HlpCtntMgr.exe* syntaxe de ligne de commande, consultez [arguments de ligne de commande pour Help Content Manager](../help-viewer/command-line-arguments.md).
 
-Configuration requise :
+Conditions requises :
 
 - Les ordinateurs clients doivent avoir accès à Internet.
 
@@ -53,7 +53,7 @@ Avertissements :
 
 - La source par défaut de l’aide sera toujours en ligne.
 
-### <a name="example"></a>Exemples
+### <a name="example"></a>Exemple
 
 L’exemple suivant installe le contenu en anglais pour Visual Studio sur un ordinateur client.
 
@@ -71,14 +71,14 @@ L’exemple suivant installe le contenu en anglais pour Visual Studio sur un ord
 
 Vous pouvez installer un ensemble de contenu à partir d’une source en ligne sur un ordinateur, puis copier cet ensemble de contenu installé sur d’autres ordinateurs.
 
-Configuration requise :
+Conditions requises :
 
 - L’ordinateur sur lequel vous installez l’ensemble du contenu doit avoir accès à Internet.
 
 - Les utilisateurs doivent disposer des droits d’administrateur pour mettre à jour, ajouter ou supprimer le contenu d’aide locale une fois celui-ci installé.
 
     > [!TIP]
-    > Si les utilisateurs ne disposent pas de droits d’administrateur, nous vous recommandons de désactiver l’onglet **Gérer le contenu** dans Help Viewer. Pour plus d’informations, consultez [Substitutions dans Help Content Manager](../help-viewer/behavior-overrides.md).
+    > Si les utilisateurs ne disposent pas de droits d’administrateur, nous vous recommandons de désactiver l’onglet **Gérer le contenu** dans Help Viewer. Pour plus d’informations, consultez [l’aide sur les remplacements du gestionnaire de contenu](../help-viewer/behavior-overrides.md).
 
 Avertissements :
 
@@ -114,9 +114,9 @@ Vous devez ensuite créer un package du contenu pour qu’il puisse être déplo
 
 #### <a name="to-package-the-content"></a>Pour créer un package du contenu
 
-1. Créez un répertoire pour copier le contenu en vue d’un déploiement ultérieur. Par exemple : *C:\VSHelp*.
+1. Créez un répertoire pour copier le contenu en vue d’un déploiement ultérieur. Par exemple : *C:\VSHelp*.
 
-2. Ouvrez *cmd.exe* avec des autorisations d’administrateur.
+2. Ouvrez *cmd.exe* avec les autorisations d’administrateur.
 
 3. Accédez au dossier créé à l’étape 1.
 
@@ -124,15 +124,15 @@ Vous devez ensuite créer un package du contenu pour qu’il puisse être déplo
 
      `Xcopy %ProgramData%\Microsoft\HelpLibrary2 \<*foldername*>\ /y /e /k /o`
 
-     Exemple : `Xcopy %ProgramData%\Microsoft\HelpLibrary2 c:\VSHelp\ /y /e /k /o`.
+     Par exemple : `Xcopy %ProgramData%\Microsoft\HelpLibrary2 c:\VSHelp\ /y /e /k /o`
 
 ### <a name="deploy-the-content"></a>Déployer le contenu
 
 1. Créez un partage réseau et copiez le contenu d’aide à cet emplacement.
 
-     Par exemple, copiez le contenu du dossier *C:\VSHelp* dans *\\\myserver\VSHelp*.
+     Par exemple, copiez le contenu dans *C:\VSHelp* dans * \\ \myserver\VSHelp*.
 
-2. Créez un fichier *.bat* qui va contenir le script de déploiement du contenu d’aide. Comme le client est susceptible de ne pas pouvoir lire les fichiers en cours de suppression dans le cadre de l’émission, vous devez désactiver le client avant d’émettre des mises à jour. Par exemple :
+2. Créez un fichier *.bat* qui va contenir le script de déploiement du contenu d’aide. Comme le client est susceptible de ne pas pouvoir lire les fichiers en cours de suppression dans le cadre de l’émission, vous devez désactiver le client avant d’émettre des mises à jour. Par exemple :
 
     ```cmd
     REM - copy pre-ripped content to ProgramData
@@ -140,11 +140,11 @@ Vous devez ensuite créer un package du contenu pour qu’il puisse être déplo
     if ERRORLEVEL 1 ECHO *** ERROR COPYING Help Library files to ProgramData (%ERRORLEVEL%)
     ```
 
-3. Exécutez le fichier *.bat* sur les machines locales où le contenu d’aide doit être installé.
+3. Exécutez le fichier *. bat* sur les ordinateurs locaux sur lesquels vous souhaitez installer le contenu de l’aide.
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Arguments de ligne de commande pour Help Content Manager](../help-viewer/command-line-arguments.md)
-- [Substitutions dans Help Content Manager](../help-viewer/behavior-overrides.md)
+- [Remplacements de Help Content Manager](../help-viewer/behavior-overrides.md)
 - [Microsoft Help Viewer](../help-viewer/overview.md)
 - [Help Viewer SDK](../extensibility/internals/microsoft-help-viewer-sdk.md)

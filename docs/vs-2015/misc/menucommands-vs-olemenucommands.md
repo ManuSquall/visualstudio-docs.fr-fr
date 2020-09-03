@@ -1,5 +1,5 @@
 ---
-title: MenuCommands Vs. OleMenuCommands | Microsoft Docs
+title: MenuCommands et OleMenuCommands | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -12,19 +12,19 @@ ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
 caps.latest.revision: 46
 manager: jillfra
 ms.openlocfilehash: 42c471ca924bfded62db32a956a26c07240459eb
-ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/08/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67624450"
 ---
-# <a name="menucommands-vs-olemenucommands"></a>MenuCommands Vs. OleMenuCommands
-Vous pouvez créer des commandes de menu en dérivant de <xref:System.ComponentModel.Design.MenuCommand> ou à partir de <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> de l’objet et l’implémentation de gestionnaires d’événements appropriés. Dans la plupart des cas, vous pouvez utiliser <xref:System.ComponentModel.Design.MenuCommand>, à l’instar du modèle de projet VSPackage, mais vous pouvez parfois être amené à utiliser <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>.  
+# <a name="menucommands-vs-olemenucommands"></a>MenuCommands et OleMenuCommands
+Vous pouvez créer des commandes de menu en dérivant de <xref:System.ComponentModel.Design.MenuCommand> ou à partir d’un <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> objet et en implémentant les gestionnaires d’événements appropriés. Dans la plupart des cas, vous pouvez utiliser <xref:System.ComponentModel.Design.MenuCommand>, à l’instar du modèle de projet VSPackage, mais vous pouvez parfois être amené à utiliser <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>.  
   
- Les commandes qu’un VSPackage met à la disposition de l’IDE doivent être visibles et activées avant qu’un utilisateur puisse les utiliser. Quand elles sont créées dans un fichier .vsct à l’aide du modèle de projet de package Visual Studio, les commandes sont visibles et activées par défaut. Le fait de définir des indicateurs de commande, tels que `DynamicItemStart`, peut modifier le comportement par défaut. La visibilité, l’état activé et les autres propriétés d’une commande peuvent aussi être modifiés dans le code au moment de l’exécution en accédant à l’objet <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> associé à la commande.  
+ Les commandes qu’un VSPackage met à la disposition de l’IDE doivent être visibles et activés avant qu’un utilisateur puisse les utiliser. Quand elles sont créées dans un fichier .vsct à l’aide du modèle de projet de package Visual Studio, les commandes sont visibles et activées par défaut. Le fait de définir des indicateurs de commande, tels que `DynamicItemStart`, peut modifier le comportement par défaut. La visibilité, l’état activé et les autres propriétés d’une commande peuvent aussi être modifiés dans le code au moment de l’exécution en accédant à l’objet <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> associé à la commande.  
   
 ## <a name="prerequisites"></a>Prérequis  
- Pour suivre cette procédure pas à pas, vous devez installer le Kit de développement logiciel (SDK) Visual Studio. Pour plus d’informations, consultez [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
+ Pour suivre cette procédure pas à pas, vous devez installer le Kit de développement logiciel (SDK) Visual Studio. Pour plus d’informations, consultez [Kit de développement logiciel (SDK) Visual Studio](../extensibility/visual-studio-sdk.md).  
   
 ## <a name="template-locations-for-the-visual-studio-package-template"></a>Emplacements du modèle de projet de package Visual Studio  
  Vous pouvez trouver le modèle de package Visual Studio dans la boîte de dialogue **Nouveau projet** sous **Visual Basic / Extensibilité**, **C# / Extensibilité**ou **Autres types de projets / Extensibilité**.  
@@ -32,7 +32,7 @@ Vous pouvez créer des commandes de menu en dérivant de <xref:System.ComponentM
 ## <a name="creating-a-command"></a>Création d’une commande  
  L’ensemble des commandes, groupes de commandes, menus, barres d’outils et fenêtres Outil sont définis dans le fichier .vsct. Pour plus d'informations, consultez [Visual Studio Command Table (.Vsct) Files](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
   
- Si vous créez un VSPackage à l’aide du modèle de package, sélectionnez **Commande de menu** pour créer un fichier .vsct et définir une commande de menu par défaut. Pour plus d’informations, consultez [création d’une Extension avec une commande de Menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
+ Si vous créez un VSPackage à l’aide du modèle de package, sélectionnez **Commande de menu** pour créer un fichier .vsct et définir une commande de menu par défaut. Pour plus d’informations, consultez [création d’une extension à l’aide d’une commande de menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
 #### <a name="to-add-a-command-to-the-ide"></a>Pour ajouter une commande à l’IDE  
   
@@ -115,9 +115,9 @@ Vous pouvez créer des commandes de menu en dérivant de <xref:System.ComponentM
    </CommandPlacements>
    ```
       
-      Si vous créez plusieurs placements de commandes et que leur paire GUID:ID est identique mais pas les parents, le menu apparaît à plusieurs endroits. Pour plus d’informations, consultez l’élément [CommandPlacements](../extensibility/commandplacements-element.md) .  
+      Si vous créez plusieurs placements de commandes et que leur paire GUID:ID est identique mais pas leurs parents, le menu apparaît à plusieurs endroits. Pour plus d’informations, consultez l’élément [CommandPlacements](../extensibility/commandplacements-element.md) .  
   
-    Pour plus d’informations sur les groupes de commandes et le parentage, consultez [création de groupes réutilisable de boutons](../extensibility/creating-reusable-groups-of-buttons.md).  
+    Pour plus d’informations sur les groupes de commandes et le parent, consultez [création de groupes de boutons réutilisables](../extensibility/creating-reusable-groups-of-buttons.md).  
   
    À ce stade, la commande est visible dans l’IDE, mais elle n’a aucune fonctionnalité. Si la commande a été créée par le modèle de package, par défaut, elle a un gestionnaire de clics qui affiche un message.  
   
@@ -179,7 +179,7 @@ Vous pouvez créer des commandes de menu en dérivant de <xref:System.ComponentM
   
     L’objet `EventHandler` se voit attribuer le nom d’une méthode qui est appelée quand l’état de la commande de menu est demandé.  
   
-2. Implémentez la méthode de gestionnaire de demande d’état pour la commande. Le paramètre `object` `sender` peut faire l’objet d’une conversion de type (transtypage) et être converti en objet <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> , qui sert à définir les différents attributs de la commande de menu, y compris le texte. Le tableau suivant présente les propriétés de la classe <xref:System.ComponentModel.Design.MenuCommand> (dont est dérivée la classe MPF <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> ) qui correspondent aux indicateurs <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> .  
+2. Implémentez la méthode de gestionnaire de demande d’état pour la commande. Le `object` `sender` paramètre peut être casté en un <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> objet, qui est utilisé pour définir les différents attributs de la commande de menu, y compris le texte. Le tableau suivant présente les propriétés de la classe <xref:System.ComponentModel.Design.MenuCommand> (dont est dérivée la classe MPF <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> ) qui correspondent aux indicateurs <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> .  
   
    |Propriété MenuCommand|Indicateur OLECMDF|  
    |--------------------------|------------------|  

@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5c03d631be1bc4a38e514e1019fa230775427a53
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67825091"
 ---
 # <a name="help-content-manager-overrides"></a>Remplacements dans Help Content Manager
@@ -33,9 +33,9 @@ Vous pouvez changer le comportement par défaut de Help Viewer et des fonctionna
 
 |Valeur de la clé de Registre|Type|Données|Description|
 |------------------|----|----|-----------|
-|NewContentAndUpdateService|string|\<URL HTTP du point de terminaison de service\>|Définir un point de terminaison de service unique|
+|NewContentAndUpdateService|string|\<http URL for service endpoint\>|Définir un point de terminaison de service unique|
 |UseOnlineHelp|dword|`0` pour spécifier l’aide locale, `1` pour spécifier l’aide en ligne|Définir l’aide en ligne ou l’aide locale comme option par défaut|
-|OnlineBaseUrl|string|\<URL HTTP du point de terminaison de service\>|Définir un point de terminaison unique F1|
+|OnlineBaseUrl|string|\<http URL for service endpoint\>|Définir un point de terminaison unique F1|
 |OnlineHelpPreferenceDisabled|dword|`0` pour activer ou `1` pour désactiver l’option de préférence d’aide en ligne|Désactiver l’option de préférence d’aide en ligne|
 |DisableManageContent|dword|`0` pour activer ou `1` pour désactiver l’onglet **Gérer le contenu** dans Help Viewer|Désactiver l’onglet **Gérer le contenu**|
 |DisableFirstRunHelpSelection|dword|`0` pour activer ou `1` pour désactiver les fonctionnalités d’aide configurées au premier démarrage de Visual Studio.|Désactiver l’installation du contenu au premier démarrage de Visual Studio|
@@ -56,7 +56,7 @@ Vous pouvez changer le comportement par défaut de Help Viewer et des fonctionna
 
 Les deux comportements suivants peuvent être contrôlés en définissant des valeurs de clé de Registre dans l’Éditeur du Registre.
 
-|Tâche|Clé de Registre|Value|Données|
+|Tâche|Clé de Registre|Valeur|Données|
 |----------|-----|------|----|
 |Substituer la priorité des travaux BITS|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node (sur un ordinateur 64 bits)\Microsoft\Help\v2.3|BITSPriority|**premier plan**, **haute**, **normale** ou **faible**|
 |Pointer vers le magasin de contenu local sur un partage réseau|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\ v2.3\Catalogs\VisualStudio15|LocationPath|"*ContentStoreNetworkShare*"|

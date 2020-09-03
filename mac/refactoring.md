@@ -7,10 +7,10 @@ ms.date: 03/29/2019
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
 ms.custom: video
 ms.openlocfilehash: 5a87b87f3a14462daec1e069fe222164818d2a19
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67691298"
 ---
 # <a name="refactoring"></a>Refactorisation
@@ -42,7 +42,7 @@ Les actions rapides peuvent servir à :
 * Appliquer une refactorisation (par exemple, rendre inline une variable temporaire)
 * Générer du code (par exemple, introduire une variable locale)
 
-Actions rapides peuvent être appliquées ![en](media/quick-actions-light-bulb-icon.png) utilisant l’icône de](media/quick-actions-screwdriver-icon.png) l’ampoule ou des icônes d’icônes de tournevis tournevis, ![ou en appuyant sur **Option ()**+**Entrez** lorsque votre curseur est sur une ligne de code pour laquelle une action est disponible. Vous voyez une ampoule d’erreur ![icône en forme d’ampoule d’erreur](media/quick-actions-error-light-bulb-icon.png) s’il existe une ligne ondulée rouge indiquant une erreur, pour laquelle Visual Studio met à disposition un correctif.
+Les actions rapides peuvent être appliquées à l’aide de l’icône d’ampoule de l’ampoule ![ ](media/quick-actions-light-bulb-icon.png) ou des icônes de ![ l’icône du tournevis Tournevis ](media/quick-actions-screwdriver-icon.png) , ou en appuyant sur **option (⌥)** + **entrée** lorsque le curseur se trouve sur une ligne de code pour laquelle une action est disponible. Vous voyez une ampoule d’erreur ![icône en forme d’ampoule d’erreur](media/quick-actions-error-light-bulb-icon.png) s’il existe une ligne ondulée rouge indiquant une erreur, pour laquelle Visual Studio met à disposition un correctif.
 
 Des éditeurs tiers peuvent fournir des diagnostics et des suggestions personnalisés pour n’importe quel langage, par exemple dans le cadre d’un Kit de développement logiciel (SDK). Dans ce cas, les ampoules Visual Studio s’allument en fonction des règles établies.
 
@@ -57,7 +57,7 @@ L’icône qui s’affiche quand une action rapide est disponible donne une indi
 
 - Les ampoules et tournevis apparaissent dans la marge de gauche de l’éditeur quand vous déplacez le signe insertion dans une ligne de code pour lequel une action rapide est disponible.
 
-- Option de presse ()+**Entrez** **n’importe**où sur une ligne pour voir une liste d’actions rapides et de refactorations disponibles.
+- Appuyez sur l' **option (⌥)** + **Entrez** n’importe où sur une ligne pour afficher la liste des actions rapides et des refactorisations disponibles.
 
 ![Afficher les éléments contextuels](media/refactoring-context-action.png)
 

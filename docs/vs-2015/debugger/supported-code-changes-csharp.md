@@ -1,5 +1,5 @@
 ---
-title: Prise en charge des modifications de Code (c#) | Microsoft Docs
+title: Modifications du code prises en charge (C#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,10 +17,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6fc02c11a4ebceea431fc06a1bd1cfdb1063097d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67823539"
 ---
 # <a name="supported-code-changes-c"></a>Modifications de code prises en charge (C#)
@@ -47,7 +47,7 @@ Modifier &amp; Continuer gère la plupart des types de modifications du code d
 - Ajout d'un `foreach`, d'un `using` ou d'un `lock` autour de l'instruction active.  
   
 ## <a name="unsafe-code"></a>Code unsafe  
- Les modifications apportées à du code unsafe présentent les mêmes restrictions que celles qui portent sur du code sécurisé, avec une restriction supplémentaire : Modifier & Continuer ne prend pas en charge les modifications apportées au code unsafe dans une méthode qui contient le `stackalloc` opérateur.  
+ Les modifications apportées à du code unsafe présentent les mêmes restrictions que celles qui portent sur du code sécurisé, avec une restriction supplémentaire : Modifier &amp; Continuer ne prend pas en charge les modifications de code unsafe dans une méthode qui contient l'opérateur `stackalloc`.  
   
 ## <a name="exceptions"></a>Exceptions  
  Modifier &amp; Continuer prend en charge les modifications apportées aux blocs `catch` et `finally`, à l'exception de l'ajout d'un bloc `catch` ou `finally` autour de l'instruction active, qui n'est pas autorisé.  
@@ -59,7 +59,7 @@ Modifier &amp; Continuer gère la plupart des types de modifications du code d
   
   - Capture d'une variable qui n'a pas été capturée auparavant.  
 
-  - Modification du type d’expression de requête (par exemple, select a = > sélectionner Nouveau {A = un} ;)  
+  - Modification du type d’expression de requête (par exemple, sélectionnez a => sélectionnez Nouveau {A = a};)  
 
   - Suppression d'un `where` qui contient une instruction active.  
 
@@ -73,13 +73,13 @@ Modifier &amp; Continuer gère la plupart des types de modifications du code d
   
 - Débogage SQL.  
   
-- Débogage d’un dump Dr. Watson.  
+- Débogage d’un vidage Dr. Watson.  
   
-- Modification de code après une exception non gérée, lorsque la «**dérouler la pile des appels sur les exceptions non gérées**« option n’est pas sélectionnée.  
+- Modification du code après une exception non gérée, lorsque l’option «**dérouler la pile des appels sur les exceptions non gérées**» n’est pas sélectionnée.  
   
 - Débogage d'une application runtime incorporée.  
   
-- Débogage d’une application qui a **attacher à** au lieu d’exécuter l’application en choisissant **Démarrer** à partir de la **déboguer** menu.  
+- Débogage d’une application qui a un **attachement à** au lieu d’exécuter l’application en choisissant **Démarrer** dans le menu **Déboguer** .  
   
 - Débogage de code optimisé.  
   
@@ -87,4 +87,4 @@ Modifier &amp; Continuer gère la plupart des types de modifications du code d
   
 ## <a name="see-also"></a>Voir aussi  
  [Modifier & Continuer (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)   
- [Guide pratique pour utiliser Modifier et Continuer (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
+ [Guide pratique pour utiliser Modifier & Continuer (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)

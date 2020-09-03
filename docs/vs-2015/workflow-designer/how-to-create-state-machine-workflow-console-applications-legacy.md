@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 48c7e06c2cb0e59de754b1ab36b693c4c9872985
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72662717"
 ---
 # <a name="how-to-create-state-machine-workflow-console-applications-legacy"></a>Procédure : créer des applications console de workflow d'ordinateur d'état (héritée)
@@ -27,16 +27,16 @@ Suivez ces étapes pour créer un projet d'application console de workflow d'ord
 
 1. Démarrez Visual Studio.
 
-2. Dans le menu **Fichier**, pointez sur **Nouveau**, puis sélectionnez **Projet**.
+2. Dans le menu **Fichier** , pointez sur **Nouveau**, puis sélectionnez **Projet**.
 
-     La boîte de dialogue **Nouveau projet** s'affiche.
+     La boîte de dialogue **Nouveau projet** s’affiche.
 
 3. Sélectionnez l’option **.NET Framework 3,0** ou l’option **.NET Framework 3,5** dans la liste déroulante en haut de la fenêtre **nouveau projet** pour accéder au concepteur hérité.
 
     > [!NOTE]
     > L’option par défaut dans [!INCLUDE[vs2010](../includes/vs2010-md.md)] est **.NET Framework 4**. Cette option permet de créer des applications [!INCLUDE[wf](../includes/wf-md.md)] qui ciblent le [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] et elle n'utilise pas le concepteur hérité.
 
-4. Dans le **volet types de projets** , sélectionnez C# Visual ou Visual Basic (dans **autres langages**), puis sélectionnez **flux de travail**.
+4. Dans le volet **types de projets** , sélectionnez Visual C# ou Visual Basic (dans **autres langages**), puis sélectionnez **flux de travail**.
 
 5. Dans le volet **modèles** , sélectionnez **application console de workflow**de l’ordinateur d’État.
 

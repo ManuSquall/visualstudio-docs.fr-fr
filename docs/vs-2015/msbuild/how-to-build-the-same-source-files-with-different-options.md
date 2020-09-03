@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Générer les mêmes fichiers sources avec des options différentes | Microsoft Docs'
+title: 'Comment : générer les mêmes fichiers sources avec des options différentes | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -15,19 +15,19 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8bf76967363f4c0d97d93c895fbeb6209c8503f0
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67821680"
 ---
-# <a name="how-to-build-the-same-source-files-with-different-options"></a>Procédure : Générer les mêmes fichiers sources avec des options différentes
+# <a name="how-to-build-the-same-source-files-with-different-options"></a>Comment : générer les mêmes fichiers sources avec des options différentes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Lorsque vous générez des projets, vous compilez fréquemment les mêmes composants avec des options de génération différentes. Par exemple, vous pouvez créer une version Debug avec des informations de symbole ou une version Release sans informations de symbole, mais avec les optimisations activées. Vous pouvez également générer un projet pour qu’il s’exécute sur une plateforme spécifique, par exemple x86 ou [!INCLUDE[vcprx64](../includes/vcprx64-md.md)]. Dans toutes ces situations, la plupart des options de génération restent identiques ; seules quelques options sont modifiées pour contrôler la configuration de build. Avec [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], vous utiliser des propriétés et des conditions pour créer les différentes configurations de build.  
   
 ## <a name="using-properties-to-modify-projects"></a>Utilisation des propriétés pour modifier des projets  
- L’élément `Property` définit une variable qui est référencée plusieurs fois dans un fichier projet, par exemple l’emplacement d’un répertoire temporaire, ou définit les valeurs des propriétés qui sont utilisées dans plusieurs configurations, comme une version Debug et une version Release. Pour plus d’informations sur les propriétés, consultez l’article [Propriétés MSBuild](msbuild-properties1.md).  
+ L’élément `Property` définit une variable qui est référencée plusieurs fois dans un fichier projet, par exemple l’emplacement d’un répertoire temporaire, ou définit les valeurs des propriétés qui sont utilisées dans plusieurs configurations, comme une version Debug et une version Release. Pour plus d’informations sur les propriétés, consultez [propriétés MSBuild](msbuild-properties1.md).  
   
  Les propriétés permettent de modifier la configuration de votre build sans avoir à modifier le fichier projet. L’attribut `Condition` des éléments `Property` et `PropertyGroup` vous permet de modifier la valeur des propriétés. Pour plus d’informations sur les conditions [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], consultez l’article [Conditions (Conditions MSBuild)](../msbuild/msbuild-conditions.md).  
   
@@ -75,13 +75,13 @@ Lorsque vous générez des projets, vous compilez fréquemment les mêmes compos
   msbuild file.proj /p:Flavor=Debug;Platform=x86  
   ```  
   
-   \- ou -  
+   \- - ou -  
   
   ```  
   msbuild file.proj /p:Flavor=Debug /p:Platform=x86  
   ```  
   
-  Les variables d’environnement sont également considérées comme des propriétés et sont automatiquement intégrées par [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Pour plus d’informations sur l’utilisation des variables d’environnement, consultez [Guide pratique pour Utiliser des Variables d’environnement dans une génération](../msbuild/how-to-use-environment-variables-in-a-build.md).  
+  Les variables d’environnement sont également considérées comme des propriétés et sont automatiquement intégrées par [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Pour plus d’informations sur l’utilisation des variables d’environnement, consultez l’article [Comment : utiliser des variables d’environnement dans une génération](../msbuild/how-to-use-environment-variables-in-a-build.md).  
   
   La valeur de propriété spécifiée sur la ligne de commande est prioritaire sur toute valeur qui est définie pour la même propriété dans le fichier projet, et cette valeur du fichier projet est prioritaire sur la valeur d’une variable d’environnement.  
   

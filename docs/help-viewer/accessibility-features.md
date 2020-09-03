@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 34a5a2f07d17c2ebd607bfe102cc7e3db92d014a
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "67825133"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>Fonctionnalités d’accessibilité Help Viewer
-Microsoft s’engage à faciliter l’utilisation de ses produits et services. Cette rubrique contient des informations sur les fonctionnalités, les produits et les services qui permettent d’accéder à Microsoft Help Viewer via un large éventail de possibilités.
+Microsoft s'attache à rendre ses produits et services conviviaux. Cette rubrique contient des informations sur les fonctionnalités, les produits et les services qui permettent d’accéder à Microsoft Help Viewer via un large éventail de possibilités.
 
 ## <a name="keyboard-access"></a>Accès par le clavier
 Vous pouvez accéder à toutes les fonctionnalités de la visionneuse d'aide à l'aide du clavier. Pour plus d’informations, consultez [Touches de raccourci (Help Viewer)](../help-viewer/shortcut-keys.md).
@@ -36,4 +36,4 @@ Vous pouvez repositionner la visionneuse d'aide en faisant glisser sa barre de t
 ## <a name="see-also"></a>Voir aussi
 
 - [Microsoft Help Viewer](../help-viewer/overview.md)
-- [Touches de raccourci (Help Viewer)](../help-viewer/shortcut-keys.md)
+- [Touches de raccourci (visionneuse d’aide)](../help-viewer/shortcut-keys.md)

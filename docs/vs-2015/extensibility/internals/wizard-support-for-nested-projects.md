@@ -13,22 +13,22 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 206fd12ea8f198e1659a49ed566e726e49878c53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68180340"
 ---
 # <a name="wizard-support-for-nested-projects"></a>Prise en charge de l’Assistant pour les projets imbriqués
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-L’IDE exécute deux Assistants projet parent pour les projets imbriqués peut implémenter : le **nouveau projet** Assistant et le **ajouter un élément** Assistant.  
+L’IDE exécute deux assistants que le projet parent pour les projets imbriqués peut implémenter : l’Assistant **nouveau projet** et l’Assistant **Ajout d’élément** .  
   
- Si un utilisateur démarre la **nouveau projet** Assistant en sélectionnant **ajouter un projet** et en cliquant sur **nouveau projet** dans le menu fichier ou en sélectionnant **ajouter** et cliquant **nouveau projet** dans l’Explorateur de solutions, l’IDE exécute la **ajouter** commande et l’implémentation du projet parent de la **ajouter**renvoie un fichier de projet de modèle ou un fichier de l’Assistant (.vsz) qui dispose d’un ensemble de paramètres de contexte.  
+ Si un utilisateur démarre l’Assistant **nouveau projet** en sélectionnant **Ajouter un projet** et en cliquant sur **nouveau** projet dans le menu fichier ou en sélectionnant **Ajouter** et en cliquant avec le bouton droit sur **nouveau projet** dans Explorateur de solutions, l’IDE exécute la commande **AddProject** et l’implémentation du projet parent de la commande **AddProject** retourne un fichier projet de modèle ou un fichier Assistant (.  
   
- De même, d’un projet parent mise en œuvre de **AddItem** Assistants retourne un fichier .vsz qui possède un ensemble différent de paramètres de contexte.  
+ De même, l’implémentation d’un projet parent d’assistants **AddItem** retourne un fichier. vsz qui a un ensemble différent de paramètres de contexte.  
   
- Pour plus d’informations sur les Assistants, consultez [Assistant (. Fichier vsz)](../../extensibility/internals/wizard-dot-vsz-file.md), [paramètres de contexte](../../extensibility/internals/context-parameters.md) et [inscription Project and Item Templates](../../extensibility/internals/registering-project-and-item-templates.md).  
+ Pour plus d’informations sur les assistants, consultez [Assistant (. Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md), les [paramètres de contexte](../../extensibility/internals/context-parameters.md) et l' [inscription des modèles de projet et d’élément](../../extensibility/internals/registering-project-and-item-templates.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>   

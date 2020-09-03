@@ -1,5 +1,5 @@
 ---
-title: IDebugEngineCreateEvent2::GetEngine | Microsoft Docs
+title: 'IDebugEngineCreateEvent2 :: GetEngine | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 714aadbcdaf84f0d971fc499be8339234471b24f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68195761"
 ---
 # <a name="idebugenginecreateevent2getengine"></a>IDebugEngineCreateEvent2::GetEngine
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Récupère l’objet qui représente le moteur de débogage qui vient d’être créé (dé).  
+Récupère l’objet qui représente le moteur DE débogage nouvellement créé (DE).  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -40,10 +40,10 @@ int GetEngine( 
   
 #### <a name="parameters"></a>Paramètres  
  `pEngine`  
- [out] Retourne un [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) objet qui représente le DE nouvellement créé.  
+ à Retourne un objet [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) qui représente le nouvellement créé.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md)   

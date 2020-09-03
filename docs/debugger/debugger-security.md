@@ -1,5 +1,5 @@
 ---
-title: Sécurité de Debugger (fr) Microsoft Docs
+title: Sécurité du débogueur | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a89e60a47e5bab6580c78275357234bb9d3f1c56
-ms.sourcegitcommit: 334024a43477290ecc610e70c80a0f772787a7d6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80527927"
 ---
 # <a name="debugger-security"></a>Sécurité du débogueur
@@ -50,11 +50,11 @@ La possibilité de déboguer un autre processus vous donne des pouvoirs extrême
 
  ![Boîte de dialogue d'erreur](../debugger/media/dbg_err_remotepermissionschanged.png "DBG_ERR_RemotePermissionsChanged")
 
- Lorsque vous utilisez le mode d’authentification Windows, sachez qu’accorder à un utilisateur non fiable la permission de se connecter à msvsmon est dangereux, car l’utilisateur reçoit toutes vos autorisations sur l’ordinateur hébergeant msvsmon.
+ Lorsque vous utilisez le mode d’authentification Windows, sachez que l’octroi d’une autorisation utilisateur non fiable pour se connecter à msvsmon est dangereux, car l’utilisateur reçoit toutes vos autorisations sur l’ordinateur qui héberge msvsmon.
 
- Ne débaillez pas un processus inconnu sur une machine à distance : il y a des exploits potentiels qui pourraient affecter la machine qui fait fonctionner le débbuggeur, ou qui pourraient compromettre le msvsmon. Si vous devez absolument déboguer un processus inconnu, essayez de le déboguer localement et utilisez un pare-feu pour que toutes les menaces potentielles restent localisées.
+ Ne déboguez pas un processus inconnu sur un ordinateur distant : il existe des exploits potentiels qui peuvent affecter l’ordinateur exécutant le débogueur, ou qui peut compromettre msvsmon. Si vous devez absolument déboguer un processus inconnu, essayez de le déboguer localement et utilisez un pare-feu pour que toutes les menaces potentielles restent localisées.
 
- Pour plus d’informations sur la configuration msvsmon, voir [Configurez le débbuggeur à distance](../debugger/remote-debugging.md#bkmk_setup).
+ Pour plus d’informations sur la configuration de msvsmon, consultez [configurer le débogueur distant](../debugger/remote-debugging.md#bkmk_setup).
 
 ### <a name="web-services-debugging-security"></a>Sécurité de débogage Web Services
  Il est plus sûr de déboguer localement, mais puisque [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] n'est probablement pas installé sur le serveur web, le débogage local peut ne pas être pratique. En général, le débogage de services web s'effectue à distance, sauf pendant le développement, ce qui fait que les recommandations pour la sécurité de débogage distant s'appliquent également au débogage de services web. Voici quelques meilleures pratiques supplémentaires. Pour plus d'informations, consultez [Debugging XML Web Services](https://msdn.microsoft.com/library/c900b137-9fbd-4f59-91b5-9c2c6ce06f00).
@@ -71,7 +71,7 @@ La possibilité de déboguer un autre processus vous donne des pouvoirs extrême
 ### <a name="symbols-and-source-code"></a>Symboles et code source
  Deux outils [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] qui requièrent une réflexion à propos de la sécurité sont les éléments suivants :
 
-- Le serveur source, qui fournit des versions de code source d'un référentiel de code source. Ceci est utile lorsque vous n'avez pas la version actuelle du code source d'un programme. [Avertissement de sécurité: Debugger doit exécuter le commandement non fiable](../debugger/security-warning-debugger-must-execute-untrusted-command.md).
+- Le serveur source, qui fournit des versions de code source d'un référentiel de code source. Ceci est utile lorsque vous n'avez pas la version actuelle du code source d'un programme. [Avertissement de sécurité : le débogueur doit exécuter une commande non approuvée](../debugger/security-warning-debugger-must-execute-untrusted-command.md).
 
 - Le serveur de symboles, qui est utilisé pour fournir les symboles nécessaires pour déboguer un incident pendant un appel système.
 
@@ -79,6 +79,6 @@ La possibilité de déboguer un autre processus vous donne des pouvoirs extrême
 
 ## <a name="see-also"></a>Voir aussi
 - [Paramètres et préparation du débogueur](../debugger/debugger-settings-and-preparation.md)
-- [Premier regard sur le débbugger](../debugger/debugger-feature-tour.md)
+- [Présentation du débogueur](../debugger/debugger-feature-tour.md)
 - [Avertissement de sécurité Attachement à un processus appartenant à un utilisateur non fiable peut être dangereux. Si les informations suivantes semblent suspectes ou si vous avez des doutes, ne faites pas d’attachement à ce processus](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
-- [Avertissement de sécurité: Debugger doit exécuter le commandement non fiable](../debugger/security-warning-debugger-must-execute-untrusted-command.md)
+- [Avertissement de sécurité : le débogueur doit exécuter une commande non approuvée](../debugger/security-warning-debugger-must-execute-untrusted-command.md)
