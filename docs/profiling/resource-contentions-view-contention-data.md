@@ -14,10 +14,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 1607e594b6456d4da4396069d589160230b39680
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74778334"
 ---
 # <a name="resource-contentions-view---contention-data"></a>Mode Conflits de ressources - Données de conflit
@@ -42,7 +42,7 @@ Le mode Conflits de ressources répertorie des données de conflit pour les ress
 
 |Colonne|Description|
 |------------|-----------------|
-|**Nom   **|Nom de la ressource ou de la fonction.|
+|**Name**|Nom de la ressource ou de la fonction.|
 |**Temps bloqué exclusif**|-   Pour une ressource, durée totale pendant laquelle l’accès à la ressource a été bloqué et a provoqué l’attente d’un thread.<br />-   Pour une fonction, durée pendant laquelle ces instances de la fonction n’ont pas pu accéder à la ressource parente quand la fonction exécutait le code dans le corps de la fonction. Le temps bloqué dans les fonctions qui ont été appelées par la fonction n’est pas inclus.|
 |**% de temps bloqué exclusif**|-   Pour une ressource, pourcentage de tout le temps bloqué dans les données de profilage qui était du temps bloqué de cette ressource.<br />-   Pour une fonction, pourcentage de tout le temps bloqué dans les données de profilage qui était du temps bloqué exclusif de ces instances de fonction.|
 |**Conflits exclusifs**|-   Pour une ressource, nombre total de fois où l’accès à la ressource a été bloqué et a provoqué l’attente d’un thread.<br />-   Pour une fonction, nombre de fois où ces instances de la fonction n’ont pas pu accéder à la ressource parente quand la fonction exécutait le code dans le corps de la fonction. Les événements bloquants dans les fonctions qui ont été appelées par la fonction ne sont pas inclus.|
@@ -55,6 +55,6 @@ Le mode Conflits de ressources répertorie des données de conflit pour les ress
 |**Numéro de ligne de fonction**|Numéro de ligne du début de cette fonction dans le fichier source.|
 |**Nom du module**|Nom du module qui contient la fonction.|
 |**Chemin du module**|Chemin d’accès du module qui contient la fonction.|
-|**ID du processus**|ID du processus (PID) dans lequel la fonction s’exécutait.|
+|**ID de processus**|ID du processus (PID) dans lequel la fonction s’exécutait.|
 |**Nom du processus**|Nom du processus.|
-|**Fichier source**|Fichier source contenant la définition pour cette fonction.|
+|**Source File**|Fichier source contenant la définition pour cette fonction.|

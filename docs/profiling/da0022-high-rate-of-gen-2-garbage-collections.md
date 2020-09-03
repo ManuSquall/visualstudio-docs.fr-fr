@@ -14,10 +14,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: c17c27c8827c8612f08298667f09eda89f90f8d9
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544675"
 ---
 # <a name="da0022-high-rate-of-gen-2-garbage-collections"></a>DA0022 : Taux élevé de garbage collection Gen 2
@@ -32,7 +32,7 @@ ms.locfileid: "85544675"
 
  Lorsque vous effectuez un profilage à l’aide de la méthode d’échantillonnage, de mémoire .NET ou de conflit des ressources, vous devez collecter au moins 10 échantillons pour déclencher cette règle.
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Les données relatives aux performances système qui ont été collectées pendant le profilage indiquent qu’une importante quantité de mémoire allouée aux objets .NET Framework a été récupérée dans la génération 2 du garbage collection, par rapport aux garbage collections de génération 0 et 1.
 
 ## <a name="rule-description"></a>Description de la règle

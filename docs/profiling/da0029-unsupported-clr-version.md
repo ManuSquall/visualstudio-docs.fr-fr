@@ -17,10 +17,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 14e0bb4290ad155b7094c0f60810df4f86cb8d65
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544636"
 ---
 # <a name="da0029-unsupported-clr-version"></a>DA0029 : version CLR non prise en charge
@@ -33,7 +33,7 @@ ms.locfileid: "85544636"
 |Message|Une version CLR non prise en charge a été détectée lors de la collection. Les symboles managés peuvent ne pas être résolus correctement.|
 |Type de règle|Information.|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Vous essayez de profiler une application qui utilise le [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)], qui n’est pas pris en charge par les Outils de profilage.
 
 ## <a name="rule-description"></a>Description de la règle

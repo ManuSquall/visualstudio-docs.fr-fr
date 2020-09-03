@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9a1f606ed9e3d42d9f57cb941ee9518c1abfbc47
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85289207"
 ---
 # <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>Tâches inline MSBuild avec RoslynCodeTaskFactory
@@ -261,7 +261,7 @@ Ces tâches inline peuvent combiner des chemins et obtenir le nom de fichier.
 
 ## <a name="provide-backward-compatibility"></a>Fournir une compatibilité descendante
 
-`RoslynCodeTaskFactory`est d’abord disponible dans MSBuild version 15,8. Supposons que vous ayez besoin de prendre en charge les versions antérieures de Visual Studio et de MSBuild, lorsque n' `RoslynCodeTaskFactory` était pas disponible, mais que `CodeTaskFactory` était, mais que vous souhaitez utiliser le même script de compilation. Vous pouvez utiliser une `Choose` construction qui utilise la `$(MSBuildVersion)` propriété pour déterminer au moment de la génération s’il faut utiliser `RoslynCodeTaskFactory` ou revenir à `CodeTaskFactory` , comme dans l’exemple suivant :
+`RoslynCodeTaskFactory` est d’abord disponible dans MSBuild version 15,8. Supposons que vous ayez besoin de prendre en charge les versions antérieures de Visual Studio et de MSBuild, lorsque n' `RoslynCodeTaskFactory` était pas disponible, mais que `CodeTaskFactory` était, mais que vous souhaitez utiliser le même script de compilation. Vous pouvez utiliser une `Choose` construction qui utilise la `$(MSBuildVersion)` propriété pour déterminer au moment de la génération s’il faut utiliser `RoslynCodeTaskFactory` ou revenir à `CodeTaskFactory` , comme dans l’exemple suivant :
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">

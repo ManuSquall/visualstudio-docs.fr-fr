@@ -9,10 +9,10 @@ caps.latest.revision: 34
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3f7cbe9606b73741e1e59eb14f40cb277052944a
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545078"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Kit SDK de Microsoft Help Viewer
@@ -132,17 +132,17 @@ Cet article contient les tâches suivantes pour les intégrateurs de la visionne
 
  Le corps (à l’exclusion de l’en-tête et du pied de page) de la rubrique contient des liens de page, une section de note, une zone réductible, un extrait de code et une section de texte spécifique à la langue.  Pour plus d’informations sur les zones de la rubrique présentée, consultez la section relative à la personnalisation.
 
-1. Ajoutez une balise de titre de rubrique :`<div class="title">Contoso Topic 4</div>`
+1. Ajoutez une balise de titre de rubrique :  `<div class="title">Contoso Topic 4</div>`
 
-2. Ajoutez une section Note :`<div class="alert"> add your table tag and text </div>`
+2. Ajoutez une section Note : `<div class="alert"> add your table tag and text </div>`
 
-3. Ajouter une zone réductible :`<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`
+3. Ajouter une zone réductible :  `<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`
 
-4. Ajoutez un extrait de code :`<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
+4. Ajoutez un extrait de code :  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
 
-5. Ajoutez un texte spécifique au langage `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` du code : Notez que devLangnu = vous permet d’entrer d’autres langues. Par exemple, devLangnu = "Fortran" affiche Fortran lorsque l’extrait de code DisplayLanguage = Fortran
+5. Ajoutez un texte spécifique au langage  `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` du code : Notez que devLangnu = vous permet d’entrer d’autres langues. Par exemple, devLangnu = "Fortran" affiche Fortran lorsque l’extrait de code DisplayLanguage = Fortran
 
-6. Ajouter des liens de page :`<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
+6. Ajouter des liens de page : `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
 
 > [!NOTE]
 > Remarque : pour une nouvelle « langue d’affichage » non prise en charge (par exemple, F #, COBOL, Fortran), colorisation de code dans l’extrait de code est monochrome.
@@ -436,24 +436,24 @@ some F# code
 
 Fonctionnalité : **CollapsibleArea** use : Expand réduit le texte de contrôle de contenu
 
-|**Élément**|**Valeur**|
+|**Element**|**Valeur**|
 |-|-|
 |ExpandText|Développez|
 |CollapseText|Réduire|
 
 Fonctionnalité :**CodeSnippet** use : texte du contrôle d’extrait de code.  Remarque : le contenu de l’extrait de code avec un espace insécable sera remplacé par espace.
 
-|**Élément**|**Valeur**|
+|**Element**|**Valeur**|
 |-|-|
 |CopyToClipboard|Copier dans le Presse-papiers|
 |ViewColorizedText|Afficher les couleurs|
 |CombinedVBTabDisplayLanguage|Visual Basic (exemple)|
 |VBDeclaration|Déclaration|
-|VBUsage|Utilisation|
+|VBUsage|Usage|
 
 Fonctionnalité : **commentaires, pied de page et logo** : utilisez un contrôle de commentaires pour que le client fournisse des commentaires sur la rubrique actuelle par courrier électronique.  Texte de copyright du contenu.  Définition du logo.
 
-|**Élément**|**Valeur (ces chaînes peuvent être modifiées pour répondre aux besoins de l’adoption de contenu.)**|
+|**Element**|**Valeur (ces chaînes peuvent être modifiées pour répondre aux besoins de l’adoption de contenu.)**|
 |-|-|
 |Intellectuelle|© 2013 Microsoft Corporation. Tous droits réservés.|
 |SendFeedback|\<a href="{0}" {1}>Envoyer \</a> des commentaires sur cette rubrique à Microsoft.|
@@ -464,7 +464,7 @@ Fonctionnalité : **commentaires, pied de page et logo** : utilisez un contrôl
 
 Fonctionnalité : utilisation de l' **exclusion de responsabilité** : ensemble de rejets spécifiques à un cas pour le contenu traduit par machine.
 
-|**Élément**|**Valeur**|
+|**Element**|**Valeur**|
 |-|-|
 |MT_Editable|Cet article a été traduit par une machine. Si vous disposez d’une connexion Internet, sélectionnez Afficher cette rubrique en ligne pour afficher cette page en mode modifiable avec le contenu original en anglais en même temps.|
 |MT_NonEditable|Cet article a été traduit par une machine. Si vous disposez d’une connexion Internet, sélectionnez Afficher cette rubrique en ligne pour afficher cette page en mode modifiable avec le contenu original en anglais en même temps.|
@@ -475,7 +475,7 @@ Fonctionnalité : utilisation de l' **exclusion de responsabilité** : ensemble
 
 Fonctionnalité : utilisation de **élément LinkTable** : prise en charge des liens de rubriques en ligne
 
-|**Élément**|**Valeur**|
+|**Element**|**Valeur**|
 |-|-|
 |LinkTableTitle|Lier une table|
 |TopicEnuLinkText|Affichez la version anglaise \</a> de cette rubrique qui est disponible sur votre ordinateur.|
@@ -484,7 +484,7 @@ Fonctionnalité : utilisation de **élément LinkTable** : prise en charge des 
 
 Fonctionnalité : **contrôle audio vidéo** utilisé : éléments d’affichage et texte pour le contenu vidéo
 
-|**Élément**|**Valeur**|
+|**Element**|**Valeur**|
 |-|-|
 |MultiMediaNotSupported|Internet Explorer 9 ou version ultérieure doit être installé pour prendre en charge le {0} contenu.|
 |VideoText|affichage de la vidéo|
@@ -494,7 +494,7 @@ Fonctionnalité : **contrôle audio vidéo** utilisé : éléments d’afficha
 
 Fonctionnalité : le **contenu n’est pas installé** utiliser le contrôle : éléments de texte (chaînes) utilisés pour le rendu des contentnotinstalled.htm
 
-|**Élément**|**Valeur**|
+|**Element**|**Valeur**|
 |-|-|
 |ContentNotInstalledTitle|Aucun contenu n’a été trouvé sur votre ordinateur.|
 |ContentNotInstalledDownloadContentText|\<p>Pour télécharger du contenu sur votre ordinateur, \<a href="{0}" {1}> cliquez sur l’onglet gérer \</a> .\</p>|
@@ -502,7 +502,7 @@ Fonctionnalité : le **contenu n’est pas installé** utiliser le contrôle :
 
 Fonctionnalité : **rubrique introuvable** utilisation du contrôle : éléments de texte (chaînes) utilisés pour le rendu des topicnotfound.htm
 
-|**Élément**|**Valeur**|
+|**Element**|**Valeur**|
 |-|-|
 |TopicNotFoundTitle|Impossible de trouver la rubrique demandée sur votre ordinateur.|
 |TopicNotFoundViewOnlineText|\<p>La rubrique que vous avez demandée est introuvable sur votre ordinateur, mais vous pouvez \<a href="{0}" {1}> afficher la rubrique en ligne \</a> .\</p>|
@@ -511,14 +511,14 @@ Fonctionnalité : **rubrique introuvable** utilisation du contrôle : élémen
 
 Fonctionnalité : **rubrique utilisation de contrôle endommagée** : éléments de texte (chaînes) utilisés pour le rendu des topiccorrupted.htm
 
-|**Élément**|**Valeur**|
+|**Element**|**Valeur**|
 |-|-|
 |TopicCorruptedTitle|Impossible d’afficher la rubrique demandée.|
 |TopicCorruptedViewOnlineText|\<p>La visionneuse d’aide ne peut pas afficher la rubrique demandée. Il peut y avoir une erreur dans le contenu de la rubrique ou une dépendance du système sous-jacent.\</p>|
 
 Fonctionnalité : **contrôle de page d’hébergement** utiliser : texte prenant en charge l’affichage du contenu du nœud de niveau supérieur de la visionneuse d’aide.
 
-|**Élément**|**Valeur**|
+|**Element**|**Valeur**|
 |-|-|
 |HomePageTitle|Page d’affichage de Help Viewer|
 |HomePageIntroduction|\<p>Bienvenue dans le Microsoft Help Viewer, une source d’informations essentielle pour tous ceux qui utilisent les outils, produits, technologies et services de Microsoft. La visionneuse d’aide vous permet d’accéder à des informations de référence, des exemples de code, des articles techniques et bien plus encore. Pour trouver le contenu dont vous avez besoin, parcourez la table des matières, utilisez la recherche en texte intégral ou parcourez le contenu à l’aide de l’index de mots clés.\</p>|
@@ -569,25 +569,25 @@ Fonctionnalité : **contrôle de page d’hébergement** utiliser : texte pren
 
  Le package de personnalisation contient un ensemble de fichiers HTM qui prennent en charge des scénarios de communication des informations clés pour aider les utilisateurs du contenu, par exemple une page d’accueil contenant une section décrivant les jeux de contenu installés et des pages indiquant à l’utilisateur quand les rubriques sont introuvables dans l’ensemble de rubriques local. Ces fichiers HTM peuvent être modifiés par produit.  Les fournisseurs de l’interpréteur de commandes ISO sont en mesure de prendre le package de personnalisation par défaut et de modifier le comportement et le contenu de ces pages en fonction de leurs besoins.  Ces fichiers font référence à leur package de personnalisation respectif pour que les balises de personnalisation obtiennent le contenu correspondant à partir du fichier branding.xml.
 
-|**File**|**Utilisation**|**Source de contenu affichée**|
+|**Fichier**|**Utilisation**|**Source de contenu affichée**|
 |-|-|-|
 |homepage.htm|Il s’agit d’une page qui affiche le contenu actuellement installé et tout autre message approprié à présenter à l’utilisateur sur son contenu.  Ce fichier contient l’attribut de métadonnées supplémentaire « Microsoft.Help.Id » content = « -1 » qui place ce contenu en haut de la table des matières locale.||
-||<META_HOME_PAGE_TITLE_ADD/>|Branding.xml, balise\<HomePageTitle>|
-||<HOME_PAGE_INTRODUCTION_SECTION_ADD/>|Branding.xml, balise\<HomePageIntroduction>|
-||<HOME_PAGE_CONTENT_INSTALL_SECTION_ADD/>|Branding.xml, balise\<HomePageContentInstallText>|
-||<HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD/>|Section de titre Branding.xml balise \<HomePageInstalledBooks> , les données générées à partir de l’application, \<HomePageNoBooksInstalled> quand aucun livre n’est installé.|
+||<META_HOME_PAGE_TITLE_ADD/>|Branding.xml, balise \<HomePageTitle>|
+||<HOME_PAGE_INTRODUCTION_SECTION_ADD/>|Branding.xml, balise \<HomePageIntroduction>|
+||<HOME_PAGE_CONTENT_INSTALL_SECTION_ADD/>|Branding.xml, balise \<HomePageContentInstallText>|
+||<HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD/>|Section de titre Branding.xml balise \<HomePageInstalledBooks> , les données générées à partir de l’application,  \<HomePageNoBooksInstalled> quand aucun livre n’est installé.|
 ||<HOME_PAGE_SETTINGS_SECTION_ADD/>|Section de titre Branding.xml balise \<HomePageHelpSettings> , texte de la section \<HomePageHelpSettingsText> .|
 |topiccorrupted.htm|Lorsqu’une rubrique existe dans le jeu local, mais pour une raison quelconque, ne peut pas être affichée (contenu endommagé).||
-||<META_TOPIC_CORRUPTED_TITLE_ADD/>|Branding.xml, balise\<TopicCorruptedTitle>|
-||<TOPIC_CORRUPTED_SECTION_ADD/>|Branding.xml, balise\<TopicCorruptedViewOnlineText>|
+||<META_TOPIC_CORRUPTED_TITLE_ADD/>|Branding.xml, balise \<TopicCorruptedTitle>|
+||<TOPIC_CORRUPTED_SECTION_ADD/>|Branding.xml, balise \<TopicCorruptedViewOnlineText>|
 |topicnotfound.htm|Lorsqu’une rubrique est introuvable dans le jeu de contenu local, ni disponible en ligne||
-||<META_TOPIC_NOT_FOUND_TITLE_ADD/>|Branding.xml, balise\<TopicNotFoundTitle>|
-||<META_TOPIC_NOT_FOUND_ID_ADD/>|Branding.xml, balise\<TopicNotFoundViewOnlineText> + \<TopicNotFoundDownloadContentText>|
-||<TOPIC_NOT_FOUND_SECTION_ADD/>|Branding.xml, balise\<TopicNotFoundText>|
+||<META_TOPIC_NOT_FOUND_TITLE_ADD/>|Branding.xml, balise \<TopicNotFoundTitle>|
+||<META_TOPIC_NOT_FOUND_ID_ADD/>|Branding.xml, balise \<TopicNotFoundViewOnlineText> + \<TopicNotFoundDownloadContentText>|
+||<TOPIC_NOT_FOUND_SECTION_ADD/>|Branding.xml, balise \<TopicNotFoundText>|
 |contentnotinstalled.htm|Lorsqu’aucun contenu local n’est installé pour le produit.||
-||<META_CONTENT_NOT_INSTALLED_TITLE_ADD/>|Branding.xml, balise\<ContentNotInstalledTitle>|
-||<META_CONTENT_NOT_INSTALLED_ID_ADD/>|Branding.xml, balise\<ContentNotInstalledDownloadContentText>|
-||<CONTENT_NOT_INSTALLED_SECTION_ADD/>|Branding.xml, balise\<ContentNotInstalledText>|
+||<META_CONTENT_NOT_INSTALLED_TITLE_ADD/>|Branding.xml, balise \<ContentNotInstalledTitle>|
+||<META_CONTENT_NOT_INSTALLED_ID_ADD/>|Branding.xml, balise \<ContentNotInstalledDownloadContentText>|
+||<CONTENT_NOT_INSTALLED_SECTION_ADD/>|Branding.xml, balise \<ContentNotInstalledText>|
 
  **Fichiers CSS**
 
@@ -603,7 +603,7 @@ Fonctionnalité : **contrôle de page d’hébergement** utiliser : texte pren
 
   Le contenu Visual Studio affiche un logo Visual Studio, ainsi que d’autres graphiques.  La liste complète des fichiers graphiques dans le package de personnalisation de la visionneuse d’aide Visual Studio est indiquée ci-dessous.
 
-|**File**|**Utilisation**|**Exemples**|
+|**Fichier**|**Utilisation**|**Exemples**|
 |-|-|-|
 |clear.gif|Utilisé pour restituer la zone réductible||
 |footer_slice.gif|Présentation du pied de page||
@@ -710,7 +710,7 @@ Fonctionnalité : **contrôle de page d’hébergement** utiliser : texte pren
 
 2. [Redistribution de Shell isolé Visual Studio 2013](https://aka.ms/VS2013/IsoShell-LP/all)
 
-   **Vue d’ensemble**
+   **Vue d'ensemble**
 
    L' [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] interpréteur de commandes est une version de l' [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] IDE sur laquelle vous pouvez baser une application. De telles applications contiennent l’interpréteur de commandes isolé avec les extensions que vous créez. Utilisez les modèles de projet Shell isolé, inclus dans le [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] Kit de développement logiciel (SDK), pour générer des extensions.
 
@@ -747,9 +747,9 @@ Fonctionnalité : **contrôle de page d’hébergement** utiliser : texte pren
 
   Pour créer une extension de Shell isolée :
 
-1. Dans Visual Studio, sous **fichier**, choisissez **nouveau projet**, sous **autres types de projets** , choisissez **extensibilité**, puis sélectionnez **Visual Studio Shell isolé**. Nommez le projet `ContosoHelpShell` ) pour créer un projet d’extensibilité basé sur le modèle Visual Studio isolated Shell.
+1. Dans Visual Studio, sous **fichier**, choisissez **nouveau projet**, sous **autres types de projets** , choisissez **extensibilité**, puis sélectionnez  **Visual Studio Shell isolé**. Nommez le projet `ContosoHelpShell` ) pour créer un projet d’extensibilité basé sur le modèle Visual Studio isolated Shell.
 
-2. Dans Explorateur de solutions, dans le projet ContosoHelpShellUI, dans le dossier fichiers de ressources, ouvrez ApplicationCommands. vsct. Assurez-vous que cette ligne est commentée (recherchez « No_Help ») :`<!-- <define name=“No_HelpMenuCommands”/> -->`
+2. Dans Explorateur de solutions, dans le projet ContosoHelpShellUI, dans le dossier fichiers de ressources, ouvrez ApplicationCommands. vsct. Assurez-vous que cette ligne est commentée (recherchez « No_Help ») : `<!-- <define name=“No_HelpMenuCommands”/> -->`
 
 3. Appuyez sur la touche F5 pour compiler et exécuter **Debug**. Dans l’instance expérimentale de l’IDE de l’interpréteur de commandes isolé, choisissez le menu **aide** . Assurez-vous que les commandes **afficher l’aide**, **Ajouter et supprimer le contenu d’aide**et **définir les préférences d’aide** s’affichent.
 
@@ -791,7 +791,7 @@ Fonctionnalité : **contrôle de page d’hébergement** utiliser : texte pren
 
 10. Copiez le contenu du dossier ContosoHelpShell Release dans le \\ dossier \Program Files (x86) \Contoso\.
 
-11. Démarrez l’éditeur du registre en sélectionnant **exécuter** dans le menu **Démarrer** et en entrant `Regedit` . Dans l’éditeur du Registre, choisissez **fichier**, puis **Importer**. Accédez au dossier du projet ContosoHelpShell. Dans le sous-dossier ContosoHelpShell, choisissez ContosoHelpShell. reg.
+11. Démarrez l’éditeur du registre en sélectionnant  **exécuter** dans le menu **Démarrer** et en entrant `Regedit` . Dans l’éditeur du Registre, choisissez **fichier**, puis **Importer**. Accédez au dossier du projet ContosoHelpShell. Dans le sous-dossier ContosoHelpShell, choisissez ContosoHelpShell. reg.
 
 12. Créer un magasin de contenu :
 
@@ -814,7 +814,7 @@ Fonctionnalité : **contrôle de page d’hébergement** utiliser : texte pren
 
      C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio12
 
-     [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)]Interpréteur de commandes intégré :
+     [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)] Interpréteur de commandes intégré :
 
      C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio12en-US
 

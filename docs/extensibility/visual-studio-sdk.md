@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 67ba3664ee9ea3e349aa4e5e9c01eed04ecddb45
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84173563"
 ---
 # <a name="visual-studio-sdk"></a>Kit de développement logiciel Visual Studio
@@ -69,7 +69,7 @@ Le kit de développement logiciel (SDK) Visual Studio vous aide à étendre les 
 
 - [Extensions Visual Studio favorites](https://scottdorman.blog/2014/10/05/favorite-visual-studio-extensions/)
 
-- [Extensibilité de Visual Studio](http://www.visualstudioextensibility.com/overview/vs/)
+- [Extensibilité de Visual Studio](http://www.visualstudioextensibility.com/overview/vs/)
 
 - [Extension de Visual Studio](https://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)
 

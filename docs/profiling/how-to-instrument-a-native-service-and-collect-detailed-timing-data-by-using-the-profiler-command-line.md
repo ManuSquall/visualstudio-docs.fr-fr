@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 123c9af48d93e23d4f582575848d981f57abd2f9
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85327896"
 ---
 # <a name="how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>Guide pratique pour instrumenter un service natif et collecter des données temporelles détaillées en utilisant la ligne de commande du profileur
@@ -46,7 +46,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
    - L’option **/Start : trace** Initialise le profileur.
 
-   - L’option **/Output :** `OutputFile` est requise avec **/Start**. `OutputFile`Spécifie le nom et l’emplacement des données de profilage (.* vsp*).
+   - L’option **/Output :** `OutputFile` est requise avec **/Start**. `OutputFile` Spécifie le nom et l’emplacement des données de profilage (.* vsp*).
 
      Vous pouvez utiliser l’une des options suivantes avec l’option **/start:trace**.
 

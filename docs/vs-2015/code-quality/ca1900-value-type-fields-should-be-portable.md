@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 2ece4788a277bfc4d16568d4014f9eae2ed4de33
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545273"
 ---
 # <a name="ca1900-value-type-fields-should-be-portable"></a>CA1900 : Les champs de type valeur doivent être portables
@@ -34,7 +34,7 @@ Pour obtenir la documentation la plus récente sur Visual Studio, consultez [ca1
 |Category|Microsoft. Portability|
 |Modification avec rupture|Avec rupture : si le champ peut être consulté à l’extérieur de l’assembly.<br /><br /> Sans rupture : si le champ n’est pas visible à l’extérieur de l’assembly.|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Cette règle vérifie que les structures déclarées avec une disposition explicite s’aligneront correctement lorsqu’elles sont marshalées vers du code non managé sur les systèmes d’exploitation 64 bits. IA-64 n’autorise pas les accès à la mémoire non alignée et le processus se bloquera si cette violation n’est pas résolue.
 
 ## <a name="rule-description"></a>Description de la règle

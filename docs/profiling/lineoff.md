@@ -10,10 +10,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: ac671c3b0ba40c462403b2afa850c3936156d6d2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74774124"
 ---
 # <a name="lineoff"></a>LineOff
@@ -33,9 +33,9 @@ VSPerfCmd.exe /Launch:AppName /LineOff [Options]
 ## <a name="required-options"></a>Options obligatoires
  L’option **LineOff** peut être utilisée seulement sur une ligne de commande qui contient l’option **Launch**.
 
- **Lancement :** `AppName` Démarre l’application spécifiée et commence à profiler avec la méthode d’échantillonnage.
+ **Lancer :** `AppName` Démarre l’application spécifiée et commence le profilage à l’aide de la méthode d’échantillonnage.
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
  Cet exemple démarre l’application et le profileur, et désactive l’échantillonnage au niveau des lignes.
 
 ```cmd
@@ -44,7 +44,7 @@ VSPerfCmd.exe /Launch:TestApp.exe /LineOff
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Vsperfcmd](../profiling/vsperfcmd.md)
+- [VSPerfCmd](../profiling/vsperfcmd.md)
 - [Profiler des applications autonomes](../profiling/command-line-profiling-of-stand-alone-applications.md)
-- [Profil ASP.NET applications Web](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+- [Profiler des applications Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [Profiler des services](../profiling/command-line-profiling-of-services.md)

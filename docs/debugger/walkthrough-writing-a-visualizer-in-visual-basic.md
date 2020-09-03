@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 25720f31c721cae44ed5425631a86b3a41bf475e
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84180530"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Procédure pas à pas : écriture d'un visualiseur en Visual Basic
@@ -57,11 +57,11 @@ Le code du visualiseur doit être placé dans une DLL qui sera lue par le débog
 2. Remplacez le nom Class1.vb par un nom explicite, par exemple DebuggerSide.vb.
 
    > [!NOTE]
-   > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]modifie automatiquement la déclaration de classe dans DebuggerSide. vb pour qu’elle corresponde au nouveau nom de fichier.
+   > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] modifie automatiquement la déclaration de classe dans DebuggerSide. vb pour qu’elle corresponde au nouveau nom de fichier.
 
 3. Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur **My First Visualizer**, puis cliquez dans le menu contextuel sur **Ajouter une référence**.
 
-4. Dans la boîte de dialogue **Ajouter une référence** , sous l’onglet **Parcourir** , sélectionnez **Parcourir** et recherchez Microsoft. VisualStudio. DebuggerVisualizers. dll.
+4. Dans la boîte de dialogue **Ajouter une référence** , sous l’onglet **Parcourir** , sélectionnez **Parcourir** et recherchez le Microsoft.VisualStudio.DebuggerVisualizers.DLL.
 
     Vous pouvez trouver la DLL dans le sous-répertoire * \<Visual Studio Install Directory> \Common7\IDE\PublicAssemblies* du répertoire d’installation de Visual Studio.
 
@@ -91,7 +91,7 @@ Le code du visualiseur doit être placé dans une DLL qui sera lue par le débog
    Inherits DialogDebuggerVisualizer
    ```
 
-   `DialogDebuggerVisualizer`a une méthode abstraite, `Show` , que vous devez substituer.
+   `DialogDebuggerVisualizer` a une méthode abstraite, `Show` , que vous devez substituer.
 
 ### <a name="to-override-the-dialogdebuggervisualizershow-method"></a>Pour substituer la méthode DialogDebuggerVisualizer.Show
 
@@ -109,7 +109,7 @@ Le code du visualiseur doit être placé dans une DLL qui sera lue par le débog
 
 1. Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur **Références**, puis cliquez dans le menu contextuel sur **Ajouter une référence**.
 
-2. Dans la boîte de dialogue **Ajouter une référence** , sous l’onglet **Parcourir** , sélectionnez **Parcourir**, puis recherchez System. Windows. Forms. dll.
+2. Dans la boîte de dialogue **Ajouter une référence** , sous l’onglet **Parcourir** , sélectionnez **parcourir**, puis recherchez le System.Windows.Forms.DLL.
 
     Vous pouvez trouver la DLL dans *C:\Windows\Microsoft.NET\Framework\v4.0.30319*.
 
@@ -232,7 +232,7 @@ Dans le code côté débogueur, vous spécifiez le type à visualiser (la source
 
     L'application console démarre. Le visualiseur apparaît et affiche la chaîne « Hello, World ».
 
-   Félicitations ! Vous venez de générer et de tester votre premier visualiseur.
+   Félicitations. Vous venez de générer et de tester votre premier visualiseur.
 
    Pour utiliser votre visualiseur dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] au lieu de simplement l'appeler de l'atelier de test, vous devez l'installer. Pour plus d’informations, consultez [Comment : installer un visualiseur](../debugger/how-to-install-a-visualizer.md).
 

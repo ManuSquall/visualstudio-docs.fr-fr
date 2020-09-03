@@ -9,10 +9,10 @@ monikerRange: vs-2017
 ms.workload:
 - aspnet
 ms.openlocfilehash: f510878c3952cb98bcbee3bfecedf05b87b2658f
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85327974"
 ---
 # <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line"></a>Guide pratique pour instrumenter une application web ASP.NET compilée dynamiquement et collecter des données temporelles détaillées avec le profileur en utilisant la ligne de commande
@@ -50,7 +50,7 @@ Démarrez le profileur, puis exécutez l’application cible. Lorsque le profile
 
    - L’option **/Start : trace** Initialise le profileur.
 
-   - L’option **/Output :** `OutputFile` est requise avec **/Start**. `OutputFile`Spécifie le nom et l’emplacement des données de profilage (.* vsp*).
+   - L’option **/Output :** `OutputFile` est requise avec **/Start**. `OutputFile` Spécifie le nom et l’emplacement des données de profilage (.* vsp*).
 
      Vous pouvez utiliser l’une des options suivantes avec l’option **/start:trace**.
 

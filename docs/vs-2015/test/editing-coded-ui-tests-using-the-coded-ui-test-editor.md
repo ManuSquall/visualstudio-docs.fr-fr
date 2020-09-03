@@ -13,10 +13,10 @@ caps.latest.revision: 42
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: c070f1bafb157e3979eb9c1f49b317b17807f1e7
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586999"
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>Modification des tests codés de l'interface utilisateur à l'aide de l'éditeur de test codé de l'interface utilisateur
@@ -85,7 +85,7 @@ Vous utilisez peut-être une version de Visual Studio Enterprise antérieure à 
  Après avoir effectué vos modifications, enregistrez-les dans le fichier UIMap.Designer en choisissant **Enregistrer** dans la barre d’outils [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
  *Que dois-je savoir de plus ?*
- **Conseils**
+ **Conseil**
 
 - ![Conseil](../test/media/tip.png "Conseil") Si la Fenêtre Propriétés n’est pas affichée, maintenez la **touche Alt** enfoncée et appuyez sur **entrée**, ou appuyez sur **F4**.
 
@@ -104,7 +104,7 @@ Vous utilisez peut-être une version de Visual Studio Enterprise antérieure à 
 
  Dans le volet **Action d'interface utilisateur** , développez la méthode de test qui contient l'action d'interface utilisateur à supprimer. Ouvrez le menu contextuel de l'action d'interface utilisateur et choisissez **Supprimer**.
 
-## <a name="split-a-test-method-into-two-separate-methods"></a><a name="CodedUITestEditor_SplitMethods"></a>Fractionner une méthode de test en deux méthodes distinctes
+## <a name="split-a-test-method-into-two-separate-methods"></a><a name="CodedUITestEditor_SplitMethods"></a> Fractionner une méthode de test en deux méthodes distinctes
  Vous pouvez fractionner une méthode de test pour affiner ou modulariser les actions d'interface utilisateur. Par exemple, votre test peut avoir une seule méthode de test avec des actions d'interface utilisateur dans deux contrôles conteneur. Les actions d'interface utilisateur peuvent être mieux modularisées dans deux méthodes qui correspondent à un seul conteneur.
 
  ![Fractionner une méthode de test](../test/media/codeduitestsplitmethod1.png "CodedUITestSplitMethod1")
@@ -120,19 +120,19 @@ Vous utilisez peut-être une version de Visual Studio Enterprise antérieure à 
 
 - ![Icône](../test/media/caution.gif "attention") **AVERTISSEMENT AVERTISSEMENT :** si vous fractionnez une méthode, vous devez modifier tout code qui appelle la méthode existante pour appeler également la nouvelle méthode que vous êtes sur le bouton de créer si vous souhaitez toujours inclure ces actions d’interface utilisateur. Quand vous fractionnez une méthode, une boîte de dialogue Microsoft Visual Studio s'affiche. Elle vous avertit que vous devez modifier tout code qui appelle la méthode existante de sorte à appeler également la nouvelle méthode que vous êtes sur le point de créer. Cliquez sur **Oui**.
 
-  **Conseils**
+  **Conseil**
 
 - ![Conseil](../test/media/tip.png "Conseil") Pour annuler le fractionnement, choisissez **Annuler** dans le menu **Edition** ou appuyez sur Ctrl + Z.
 
 - ![Conseil](../test/media/tip.png "Conseil") Vous pouvez renommer la nouvelle méthode. Sélectionnez-la dans le volet Actions d'interface utilisateur et choisissez le bouton **Renommer** dans la barre d'outils de l'éditeur de test codé de l'interface utilisateur.
 
-   -ou-
+   - ou -
 
    Ouvrez le menu contextuel de la nouvelle méthode de test et choisissez **Renommer**.
 
    Une boîte de dialogue Microsoft Visual Studio s'affiche. Elle vous avertit que vous devez modifier tout code qui fait référence à la méthode. Cliquez sur **Oui**.
 
-## <a name="move-a-test-method-to-the-uimap-file-to-facilitate-customization"></a><a name="CodedUITestEditor_MoveMethods"></a>Déplacer une méthode de test vers le fichier UIMap pour faciliter la personnalisation
+## <a name="move-a-test-method-to-the-uimap-file-to-facilitate-customization"></a><a name="CodedUITestEditor_MoveMethods"></a> Déplacer une méthode de test vers le fichier UIMap pour faciliter la personnalisation
  Si vous déterminez qu'une de vos méthodes de test dans votre test codé de l'interface utilisateur requiert du code personnalisé, vous devez la déplacer vers le fichier UIMap.cs ou UIMap.vb. Sinon, votre code sera remplacé chaque fois que le test codé de l'interface utilisateur sera recompilé. Si vous ne déplacez pas la méthode, votre code personnalisé sera remplacé à chaque nouvelle compilation du test.
 
  Dans le volet **action d’interface utilisateur** , sélectionnez la méthode de test que vous souhaitez déplacer vers le fichier UIMap.cs ou UIMap. vb pour faciliter la fonctionnalité de code personnalisé qui ne sera pas remplacée lorsque le code de test sera recompilé. Ensuite, choisissez le bouton **Déplacer le code** dans la barre d'outils de l'éditeur de test codé de l'interface utilisateur ou ouvrez le menu contextuel de la méthode de test et choisissez **Déplacer le code**. La méthode de test est supprimée du fichier UIMap.uitest et n'apparaît plus dans le volet Actions d'interface utilisateur. Pour modifier le fichier de test que vous avez déplacé, ouvrez le fichier UIMap.cs ou UIMap.vb depuis l'Explorateur de solutions.
@@ -144,11 +144,11 @@ Vous utilisez peut-être une version de Visual Studio Enterprise antérieure à 
 
 - ![Icône attention](../test/media/caution.gif "attention") **Avertissement :** une fois que vous avez déplacé une méthode, vous ne pouvez plus la modifier à l’aide de l’éditeur de test codé de l’interface utilisateur. Vous devez ajouter le code personnalisé et le gérer à l'aide de l'éditeur de code. Quand vous déplacez une méthode, une boîte de dialogue Microsoft Visual Studio s'affiche. Elle vous informe que la méthode sera déplacée du fichier UIMap.uitest vers le fichier UIMap.cs ou UIMap.vb et que vous ne pourrez plus la modifier à l'aide de l'éditeur de test codé de l'interface utilisateur. Cliquez sur **Oui**.
 
-  **Conseils**
+  **Conseil**
 
 - ![Conseil](../test/media/tip.png "Conseil") Pour annuler le déplacement, sélectionnez **Annuler** dans le menu **Edition** ou appuyez sur Ctrl + Z. Toutefois, vous devez ensuite supprimer manuellement le code du fichier UIMap.cs ou UIMap.vb.
 
-## <a name="locating-a-ui-control-in-the-application-under-test"></a><a name="CodedUITestEditor_LocateUIControl"></a>Localisation d’un contrôle d’interface utilisateur dans l’application testée
+## <a name="locating-a-ui-control-in-the-application-under-test"></a><a name="CodedUITestEditor_LocateUIControl"></a> Localisation d’un contrôle d’interface utilisateur dans l’application testée
  Parfois, il peut être difficile de visualiser l’emplacement des contrôles dans l’interface utilisateur de l’application testée. L'une des fonctionnalités de l'éditeur de test codé de l'interface utilisateur vous permet de sélectionner un contrôle répertorié dans le mappage de contrôle d'interface utilisateur et d'afficher son emplacement dans l'application testée. L'utilisation de la fonctionnalité **Localiser le contrôle IU** dans l'application testée peut également servir à vérifier les modifications de propriété de recherche que vous avez apportées à un contrôle.
 
  ![Trouver un contrôle d'IU](../test/media/codeduilocatecontrol.png "CodedUILocateControl")
@@ -162,11 +162,11 @@ Vous utilisez peut-être une version de Visual Studio Enterprise antérieure à 
 
 - ![Icône attention](../test/media/caution.gif "attention") **Avertissement :** avant de localiser un contrôle d’interface utilisateur, vérifiez que l’application associée au test est en cours d’exécution.
 
-  **Conseils**
+  **Conseil**
 
 - ![Conseil](../test/media/tip.png "Conseil") Vous pouvez également utiliser l’option **Localiser tout** pour vérifier que tous les contrôles sous un conteneur peuvent être correctement localisés. Cette option est décrite dans la section suivante.
 
-## <a name="locating-a-control-and-its-descendants"></a><a name="CodedUITestEditor_LocateDecendants"></a>Localisation d’un contrôle et de ses descendants
+## <a name="locating-a-control-and-its-descendants"></a><a name="CodedUITestEditor_LocateDecendants"></a> Localisation d’un contrôle et de ses descendants
  Vous pouvez vérifier que tous les contrôles inclus dans un conteneur peuvent être correctement localisés dans l'interface utilisateur de l'application testée. Cela peut s'avérer utile pour vérifier les modifications de propriété de recherche apportées au conteneur. De plus, si des modifications importantes ont été apportées à l'interface utilisateur de l'application testée, vous pouvez vous assurer que les propriétés de recherche des contrôles existants sont toujours correctes.
 
  ![Trouver tous les contrôles descendants](../test/media/codeduilocateall.png "CodedUILocateAll")
@@ -180,7 +180,7 @@ Vous utilisez peut-être une version de Visual Studio Enterprise antérieure à 
 
 - ![Icône attention](../test/media/caution.gif "attention") **Avertissement :** avant de localiser les contrôles d’interface utilisateur, vérifiez que l’application associée au test est en cours d’exécution.
 
-## <a name="inserting-a-delay-before-a-ui-action"></a><a name="CodedUITestEditor_InsertDelay"></a>Insertion d’un délai avant une action d’interface utilisateur
+## <a name="inserting-a-delay-before-a-ui-action"></a><a name="CodedUITestEditor_InsertDelay"></a> Insertion d’un délai avant une action d’interface utilisateur
  Parfois, vous pouvez avoir besoin que le test attende que certains événements se produisent, notamment qu'une fenêtre s'affiche, que la barre de progression disparaisse, etc. À l'aide de l'éditeur de test codé de l'interface utilisateur, vous pouvez définir cette attente en insérant un délai avant une action d'interface utilisateur. Vous pouvez indiquer le nombre de secondes du délai.
 
  ![Insérer un retard avant une action d'IU](../test/media/codeduidelay.png "CodedUIDelay")
@@ -192,17 +192,17 @@ Vous utilisez peut-être une version de Visual Studio Enterprise antérieure à 
  Une fois que vous avez terminé d'insérer le délai, enregistrez les modifications dans le fichier UIMap.Designer en choisissant **Enregistrer** dans la barre d'outils [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
  *Que dois-je savoir de plus ?*
- **Remarques**
+ **Notes**
 
 - ![Prérequis](../test/media/prereq.png "PREREQ") Si vous devez vous assurer qu’un contrôle spécifique est disponible avant une action d’interface utilisateur, vous devez envisager d’ajouter du code personnalisé à votre méthode de test à l’aide de la méthode UITestControl. WaitForControlXXX () appropriée. [!INCLUDE[crdefault](../includes/crdefault-md.md)][L’exécution de tests codés de l’interface utilisateur attend des événements spécifiques pendant la lecture](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).
 
-  **Conseils**
+  **Conseil**
 
 - ![Conseil](../test/media/tip.png "Conseil") Si la Fenêtre Propriétés n’est pas affichée, maintenez la touche Alt enfoncée tout en appuyant sur entrée, ou appuyez sur F4.
 
 ## <a name="external-resources"></a>Ressources externes
 
-### <a name="guidance"></a>Assistance
+### <a name="guidance"></a>Guidance
  [Tester la livraison continue avec Visual Studio 2012 - Chapitre 2 : Tests unitaires : tester l’intérieur](https://msdn.microsoft.com/library/jj159340.aspx)
 
 ### <a name="faq"></a>Questions fréquentes (FAQ)
@@ -213,5 +213,5 @@ Vous utilisez peut-être une version de Visual Studio Enterprise antérieure à 
 ### <a name="forum"></a>Forum
  [Tests d’automation de l’interface utilisateur de Visual Studio (inclut CodedUI)](https://social.msdn.microsoft.com/Forums/en-US/vsautotest)
 
-## <a name="see-also"></a> Voir aussi
+## <a name="see-also"></a>Voir aussi
  [Utiliser UI Automation pour tester votre code](../test/use-ui-automation-to-test-your-code.md) [création de tests codés](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) de l’interface utilisateur [création d’un test codé de l’interface utilisateur piloté par les données](../test/creating-a-data-driven-coded-ui-test.md) [génération d’un test codé de l’interface utilisateur à partir d’une](https://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497) [procédure pas à pas : création, édition et gestion d’un test codé de l’interface utilisateur](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)

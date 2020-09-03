@@ -23,10 +23,10 @@ ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
 ms.openlocfilehash: 78d950b777d866835ef516c4910180b21de295e9
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545000"
 ---
 # <a name="accessing-data-in-visual-studio"></a>Accès aux données dans Visual Studio
@@ -86,7 +86,7 @@ Dans Visual Studio, vous pouvez créer des applications qui se connectent à des
 ### <a name="net-languages"></a>Langages .NET
  Tous les accès aux données .NET, y compris dans .NET Core, sont basés sur ADO.NET, un ensemble de classes qui définit une interface pour accéder à n’importe quel type de source de données, à la fois relationnelles et non relationnelles. Visual Studio propose plusieurs outils et concepteurs qui fonctionnent avec ADO.NET pour vous aider à vous connecter aux bases de données, à manipuler les données et à présenter les données à l’utilisateur. La documentation de cette section décrit comment utiliser ces outils. Vous pouvez également programmer directement par rapport aux objets de commande ADO.NET. Pour plus d’informations sur l’appel direct des API ADO.NET, consultez [ADO.net](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx) dans MSDN Library.
 
- Pour obtenir une documentation sur l’accès aux données spécifiquement liée à ASP.NET, consultez [utilisation des données](/aspnet/web-forms/overview/presenting-and-managing-data/) sur le site ASP.net. Pour obtenir un didacticiel sur l’utilisation de Entity Framework avec ASP.NET MVC, consultez [prise en main avec Entity Framework 6 Code First à l’aide de MVC 5](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
+ Pour obtenir une documentation sur l’accès aux données spécifiquement liée à ASP.NET, consultez  [utilisation des données](/aspnet/web-forms/overview/presenting-and-managing-data/) sur le site ASP.net. Pour obtenir un didacticiel sur l’utilisation de Entity Framework avec ASP.NET MVC, consultez [prise en main avec Entity Framework 6 Code First à l’aide de MVC 5](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
 
  Les applications plateforme Windows universelle (UWP) en C# ou Visual Basic peuvent utiliser le kit de développement logiciel Microsoft Azure SDK pour .NET pour accéder à Azure Storage et à d’autres services Azure. La classe Windows. Web. HttpClient permet la communication avec n’importe quel service RESTful. Pour plus d’informations, consultez [Comment se connecter à un serveur http à l’aide de Windows. Web. http](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx).
 
@@ -118,15 +118,15 @@ Dans Visual Studio, vous pouvez créer des applications qui se connectent à des
 #### <a name="data-modeling"></a>Modélisation de données
  Visual Studio ne fournit pas de couche ORM pour C++.  [ODB](https://www.codesynthesis.com/products/odb/) est un ORM Open source populaire pour C++.
 
- Pour plus d’informations sur les technologies d’accès aux données héritées Visual C++, consultez [accès aux données](https://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b)
+ Pour plus d’informations sur les technologies d’accès aux données héritées Visual C++, consultez  [accès aux données](https://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b)
 
 ### <a name="javascript"></a>JavaScript
  [JavaScript dans Visual Studio](https://msdn.microsoft.com/library/hh334522.aspx) est un langage de premier ordre pour la création d’applications multiplateformes, d’applications UWP, de services Cloud, de sites Web et d’applications Web. Vous pouvez utiliser Bower, Grunt, Gulp, NPM et NuGet à partir de Visual Studio pour installer vos bibliothèques et vos produits de base de données JavaScript préférés. Connectez-vous à Azure Storage et aux services en téléchargeant les kits de développement logiciel à partir du [site Web Azure](https://azure.microsoft.com/).  Edge.js est une bibliothèque qui connecte le JavaScript côté serveur (Node.js) à des sources de données ADO.NET.
 
 ### <a name="python"></a>Python
- Installez [python Tools pour Visual Studio](http://microsoft.github.io/PTVS/) avec votre infrastructure python favorite pour créer des applications CPython ou IronPython (.net).  Le site Web Python Tools pour Visual Studio propose plusieurs didacticiels sur la connexion aux données, notamment [Django et SQL Database sur Azure](https://github.com/Microsoft/PTVS/wiki/Django-and-SQL-Database-on-Azure), [Django et MySQL sur Azure](https://github.com/Microsoft/PTVS/wiki/Django-and-MySQL-on-Azure) et [bouteille et MongoDB sur Azure](https://github.com/Microsoft/PTVS/wiki/Bottle-and-MongoDB-on-Azure).
+ Installez  [python Tools pour Visual Studio](http://microsoft.github.io/PTVS/) avec votre infrastructure python favorite pour créer des applications CPython ou IronPython (.net).  Le site Web Python Tools pour Visual Studio propose plusieurs didacticiels sur la connexion aux données, notamment [Django et SQL Database sur Azure](https://github.com/Microsoft/PTVS/wiki/Django-and-SQL-Database-on-Azure), [Django et MySQL sur Azure](https://github.com/Microsoft/PTVS/wiki/Django-and-MySQL-on-Azure) et [bouteille et MongoDB sur Azure](https://github.com/Microsoft/PTVS/wiki/Bottle-and-MongoDB-on-Azure).
 
-## <a name="in-this-section"></a>Dans cette section
+## <a name="in-this-section"></a>Contenu de cette section
  [Installation des systèmes de base de données, des outils et des exemples](../data-tools/installing-database-systems-tools-and-samples.md) Explique comment obtenir des produits de base de données et les extensions ou pilotes Visual Studio qui les prennent en charge, et où trouver des exemples de bases de données à des fins d’expérimentation et d’apprentissage.
 
  [Outils de données Visual Studio pour .net](https://msdn.microsoft.com/6b145922-2f00-47db-befc-bf351b4809a1) Décrit comment utiliser les fenêtres Outil Visual Studio pour se connecter à des sources de données, créer des jeux de données ou des modèles de Entity Framework, et lier les données aux contrôles d’interface utilisateur.

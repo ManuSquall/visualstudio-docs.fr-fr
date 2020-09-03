@@ -9,10 +9,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: d8cd78b529618504b5f14905a764c369da249fe2
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545169"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075 : Traitement DTD non sécurisé
@@ -25,7 +25,7 @@ ms.locfileid: "85545169"
 |Category|Microsoft.Security|
 |Modification avec rupture|Sans rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Si vous utilisez des instances de <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> non sécurisées ou référencez des sources d’entités externes, l’analyseur peut accepter une entrée non fiable et divulguer des informations sensibles à des personnes malveillantes.
 
 ## <a name="rule-description"></a>Description de la règle
@@ -35,13 +35,13 @@ ms.locfileid: "85545169"
 
 - La propriété <xref:System.Xml.XmlNode.InnerXml%2A> dans le code XML est définie.
 
-- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>la propriété a la valeur parse.
+- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> la propriété a la valeur parse.
 
 - L’entrée non fiable est traitée avec <xref:System.Xml.XmlResolver> au lieu de <xref:System.Xml.XmlSecureResolver> .
 
 - XmlReader.<xref:System.Xml.XmlReader.Create%2A> la méthode est appelée avec une instance non sécurisée <xref:System.Xml.XmlReaderSettings> ou aucune instance.
 
-- <xref:System.Xml.XmlReader>est créé avec des valeurs ou des paramètres par défaut non sécurisés.
+- <xref:System.Xml.XmlReader> est créé avec des valeurs ou des paramètres par défaut non sécurisés.
 
   Dans chacun de ces cas, le résultat est le même : le contenu du système de fichiers ou des partages réseau de l’ordinateur où le code XML est traité sera exposé à la personne malveillante et peut ensuite être utilisé comme un vecteur d’attaque par déni de service.
 

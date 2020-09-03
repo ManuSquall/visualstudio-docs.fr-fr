@@ -28,7 +28,7 @@
                   href: format-specifiers-in-cpp.md
                 - name: Opérateur de contexte (C++)
                   href: context-operator-cpp.md
-                - name: 'Spécificateurs de format en C#'
+                - name: Spécificateurs de format en C#
                   href: format-specifiers-in-csharp.md
                 - name: Pseudo-variables
                   href: pseudovariables.md
@@ -170,7 +170,7 @@
                   href: how-to-write-a-visualizer.md
                 - name: Architecture d'un visualiseur
                   href: visualizer-architecture.md
-                - name: 'Écriture d’un visualiseur dans C#'
+                - name: Écriture d’un visualiseur dans C#
                   href: walkthrough-writing-a-visualizer-in-csharp.md
                 - name: Écriture d’un visualiseur en Visual Basic
                   href: walkthrough-writing-a-visualizer-in-visual-basic.md
@@ -204,13 +204,13 @@
               href: edit-and-continue-visual-cpp.md
             - name: Modifications de code prises en charge (C++)
               href: supported-code-changes-cpp.md
-        - name: 'Modifier & Continuer (Visual C#)'
+        - name: Modifier & Continuer (Visual C#)
           items:
-            - name: 'Modifier & Continuer (Visual C#)'
+            - name: Modifier & Continuer (Visual C#)
               href: edit-and-continue-visual-csharp.md
-            - name: 'Utiliser Modifier & Continuer (C#)'
+            - name: Utiliser Modifier & Continuer (C#)
               href: how-to-use-edit-and-continue-csharp.md
-            - name: 'Modifications de code prises en charge (C#)'
+            - name: Modifications de code prises en charge (C#)
               href: supported-code-changes-csharp.md
         - name: Modifier & Continuer (Visual Basic)
           items:
@@ -220,7 +220,7 @@
               href: how-to-apply-edits-in-break-mode-with-edit-and-continue.md
             - name: Modifications non prises en charge dans Modifier &amp; Continuer (Visual Basic)
               href: unsupported-edits-in-visual-basic-edit-and-continue.md
-        - name: 'Opération Modifier &amp; Continuer non prise en charge pour F#'
+        - name: Opération Modifier &amp; Continuer non prise en charge pour F#
           href: edit-and-continue-not-supported-for-f-hash.md
     - name: Utilisation de fichiers dump
       items:
@@ -400,11 +400,11 @@
               href: start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md
             - name: Déboguer XAML dans Blend pour Visual Studio
               href: debug-xaml-in-blend.md
-            - name: 'Parcourir une session de débogage (XAML et C#)'
+            - name: Parcourir une session de débogage (XAML et C#)
               items:
-                - name: 'Parcourir une session de débogage (Xaml et C#)'
+                - name: Parcourir une session de débogage (Xaml et C#)
                   href: navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md
-                - name: 'Exemple de code de navigation du débogueur (XAML et C#)'
+                - name: Exemple de code de navigation du débogueur (XAML et C#)
                   href: debugger-navigation-sample-code-xaml-and-csharp.md
             - name: 'Déclencher des événements de suspension, reprise et en arrière-plan pour Windows Store)'
               href: how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md
@@ -454,7 +454,7 @@
               href: how-to-use-the-wpf-tree-visualizer.md
             - name: Afficher les informations de trace WPF
               href: how-to-display-wpf-trace-information.md
-        - name: 'Débogage de F#'
+        - name: Débogage de F#
           href: debugging-f-hash.md
     - name: Débogage du code natif
       items:

@@ -9,10 +9,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 2b3e06bb7a150c4bb07eefc0571818f1127fe460
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545117"
 ---
 # <a name="ca3076-insecure-xslt-script-execution"></a>CA3076 : Exécution non sécurisée de script XSLT
@@ -25,7 +25,7 @@ ms.locfileid: "85545117"
 |Category|Microsoft.Security|
 |Modification avec rupture|Sans rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Si vous exécutez le [langage XSLT (Extensible Stylesheet Language Transformations)](https://support.microsoft.com/kb/313997) dans les applications .net de manière non sécurisée, le processeur peut [résoudre les références URI non fiables](https://msdn.microsoft.com/ba3e4d4f-1ee7-4226-a51a-78a1f1b5bd8a) qui pourraient divulguer des informations sensibles aux attaquants, entraînant des attaques par déni de service et intersites.
 
 ## <a name="rule-description"></a>Description de la règle

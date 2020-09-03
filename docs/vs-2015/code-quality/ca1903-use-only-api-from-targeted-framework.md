@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 10649b4106a280089fd6b086167c7e92bff1300b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85545247"
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903 : Utiliser uniquement l'API à partir du Framework cible
@@ -34,7 +34,7 @@ Pour obtenir la documentation la plus récente sur Visual Studio, consultez [CA1
 |Category|Microsoft. Portability|
 |Modification avec rupture|Rupture : lorsqu’elle est déclenchée par rapport à la signature d’un membre ou d’un type visible de l’extérieur.<br /><br /> Sans rupture : lorsqu’elle est déclenchée dans le corps d’une méthode.|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Un membre ou un type utilise un membre ou un type qui a été introduit dans un Service Pack qui n’était pas inclus dans le Framework ciblé du projet.
 
 ## <a name="rule-description"></a>Description de la règle

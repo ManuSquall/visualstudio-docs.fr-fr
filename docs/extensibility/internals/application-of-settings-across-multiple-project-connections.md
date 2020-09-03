@@ -1,5 +1,5 @@
 ---
-title: Application des paramètres à travers plusieurs connexions de projets (fr) Microsoft Docs
+title: Application de paramètres sur plusieurs connexions de projet | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,28 +11,28 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bcaed0f7f2380dd36bcbffd776839025fe9efa16
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80710061"
 ---
-# <a name="application-of-settings-across-multiple-project-connections"></a>Application des paramètres entre plusieurs connexions de projet
-Un plug-in de contrôle source intégré à l’aide de la version API 1.2 de contrôle source peut utiliser une opération de lot pour exécuter la même opération de contrôle source sur plusieurs projets ou plusieurs contextes de connexion. Les lots peuvent être utilisés pour éliminer les boîtes de dialogue redondantes par projet de l’expérience utilisateur.
+# <a name="application-of-settings-across-multiple-project-connections"></a>Application de paramètres sur plusieurs connexions de projet
+Un plug-in de contrôle de code source créé à l’aide de la version 1,2 de l’API de plug-in de contrôle de code source peut utiliser une opération de traitement par lot pour exécuter la même opération de contrôle de code source sur plusieurs projets ou plusieurs contextes de connexion. Les lots peuvent être utilisés pour éliminer les boîtes de dialogue redondantes et par projet de l’expérience utilisateur.
 
- Si un utilisateur sélectionne plusieurs éléments appartenant à plus d’une connexion dans un plug-in de contrôle source intégré à l’aide de la version API 1.1 de contrôle source (par exemple, deux projets Web sur différentes machines de partage de fichiers) et les vérifie, l’utilisateur voit la même boîte de dialogue à plusieurs reprises. Ce scénario se produit même si l’utilisateur clique sur la case à cocher **Apply to All** dans la case de dialogue, car l’IDE réinitialise son état pour chaque contexte de connexion.
+ Si un utilisateur sélectionne plusieurs éléments appartenant à plusieurs connexions dans un plug-in de contrôle de code source créé à l’aide de la version 1,1 de l’API de plug-in de contrôle de code source (par exemple, deux projets Web sur différents ordinateurs de partage de fichiers) et les extrait, l’utilisateur voit la même boîte de dialogue de façon répétée. Ce scénario se produit même si l’utilisateur clique sur la case à cocher **appliquer à tous** dans la boîte de dialogue, car l’environnement de développement intégré (IDE) réinitialise son état pour chaque contexte de connexion.
 
-## <a name="new-capability-flag"></a>Nouveau drapeau de capacité
- La `SccBeginBatch` fonction `SCC_CAP_BATCH` définit le drapeau pour indiquer qu’une opération de lot est en cours.
+## <a name="new-capability-flag"></a>Nouvel indicateur de fonctionnalité
+ La `SccBeginBatch` fonction définit l' `SCC_CAP_BATCH` indicateur pour indiquer qu’une opération de traitement par lot est en cours.
 
 ## <a name="new-functions"></a>Nouvelles fonctions
-Les nouvelles fonctions suivantes prennent en charge l’opération de lot :
+Les nouvelles fonctions suivantes prennent en charge l’opération de traitement par lots :
 
 - [SccBeginBatch](../../extensibility/sccbeginbatch-function.md)
 
 - [SccEndBatch](../../extensibility/sccendbatch-function.md)
 
-La `SCCBeginBatch` fonction démarre un groupe d’opérations de contrôle des sources. La `SccEndBatch` fonction ferme le groupe. Les groupes ne peuvent pas être imbriqués.
+La `SCCBeginBatch` fonction démarre un groupe d’opérations de contrôle de code source. La `SccEndBatch` fonction ferme le groupe. Les groupes ne peuvent pas être imbriqués.
 
 ## <a name="see-also"></a>Voir aussi
-- [Nouveauté dans la version API 1.2 du contrôle source](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
+- [Nouveautés de l’API de plug-in de contrôle de code source version 1,2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
