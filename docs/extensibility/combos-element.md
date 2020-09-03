@@ -1,5 +1,5 @@
 ---
-title: Élément Combos (fr) Microsoft Docs
+title: Élément combos | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d005ea69aea7f0331877326abe4087fcff403553
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739803"
 ---
-# <a name="combos-element"></a>Élément Combos
-Éléments [d’élément Combo](../extensibility/combo-element.md) de groupes.
+# <a name="combos-element"></a>Élément combos
+Groupe les éléments de l' [élément de liste déroulante](../extensibility/combo-element.md) .
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -37,20 +37,20 @@ ms.locfileid: "80739803"
 
 |Attribut|Description|
 |---------------|-----------------|
-|Condition|facultatif. Voir [Attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condition|facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Éléments enfants
 
 |Élément|Description|
 |-------------|-----------------|
-|[Élément Combos](../extensibility/combos-element.md)|Groupes Éléments Combo.|
-|[Élément Combo](../extensibility/combo-element.md)|Définit les commandes qui apparaissent dans une boîte combo.|
+|[Élément combos](../extensibility/combos-element.md)|Regroupe les éléments de liste.|
+|[Élément combo](../extensibility/combo-element.md)|Définit les commandes qui s’affichent dans une zone de liste déroulante.|
 
 ### <a name="parent-elements"></a>Éléments parents
 
 |Élément|Description|
 |-------------|-----------------|
-|[Élément de commande](../extensibility/commands-element.md)|Représente la collection de commandes sur la barre d’outils VSPackage.|
+|[Élément Commands](../extensibility/commands-element.md)|Représente la collection de commandes dans la barre d’outils VSPackage.|
 
 ## <a name="example"></a>Exemple
 
@@ -77,5 +77,5 @@ ms.locfileid: "80739803"
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Comment VSPackages ajoute des éléments d’interface utilisateur](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Comment les VSPackages ajoutent des éléments d’interface utilisateur](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Commandes, menus et barres d’outils](../extensibility/internals/commands-menus-and-toolbars.md)

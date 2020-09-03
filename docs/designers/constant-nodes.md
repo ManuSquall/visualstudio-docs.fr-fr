@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6868a5dc7cbace1d061c43cd507d32c271436a26
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85769313"
 ---
 # <a name="constant-nodes"></a>Nœuds de constantes
@@ -44,4 +44,4 @@ Même si chaque instance de nuanceur de pixels ne reçoit qu’un ensemble de va
 |**Vecteur d’appareil photo de l’espace tangent**|Vecteur qui s’étend du pixel actuel à l’appareil photo dans l’espace tangent.<br /><br /> Vous pouvez l’utiliser pour calculer les réflexions dans l’espace tangent.<br /><br /> **Sortie**<br /><br /> `Output`: `float3`<br /> Vecteur du pixel actuel à l’appareil photo.|None|
 |**Direction de la lumière de l’espace tangent**|Vecteur qui définit la direction dans laquelle la lumière est diffusée depuis une source de lumière dans l’espace tangent du pixel actuel.<br /><br /> Vous pouvez l’utiliser pour calculer les contributions spéculaires et d’éclairage dans l’espace tangent.<br /><br /> **Output:**<br /><br /> `Output`: `float3`<br /> Vecteur du pixel actuel à une source de lumière.|None|
 |**Normale universelle**|Normale de surface du pixel actuel dans l’espace universel.<br /><br /> Vous pouvez l’utiliser pour calculer les contributions de l’éclairage et les réflexions dans l’espace universel.<br /><br /> **Sortie**<br /><br /> `Output`: `float3`<br /> Normale de surface du pixel actuel.|None|
-|**Position universelle**|Position du pixel actuel dans l'espace universel.<br /><br /> **Sortie**<br /><br /> `Output`: `float4`<br /> Position du pixel actuel.|Aucune|
+|**Position universelle**|Position du pixel actuel dans l'espace universel.<br /><br /> **Sortie**<br /><br /> `Output`: `float4`<br /> Position du pixel actuel.|None|

@@ -19,15 +19,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 472d4c9c4c44176048a1bfd8c0791a1a406b95bd
-ms.sourcegitcommit: 8ff6c6975148ce43bdac21c8995fbab910c312fe
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80375551"
 ---
 # <a name="target-element-msbuild"></a>Élément Target (MSBuild)
 
-Contient un ensemble de tâches pour MSBuild à exécuter séquentiellement.
+Contient un ensemble de tâches que MSBuild doit exécuter séquentiellement.
 
  \<Project> \<Target>
 
@@ -59,8 +59,8 @@ Contient un ensemble de tâches pour MSBuild à exécuter séquentiellement.
 
 |Attribut|Description|
 |---------------|-----------------|
-|`Name`|Attribut requis.<br /><br /> Nom de la cible. Un nom cible peut `$@()%*?.`contenir n’importe quel personnage sauf .|
-|`Condition`|Attribut facultatif.<br /><br /> Condition à évaluer. Si la condition a la valeur `false`, la cible n’exécute pas le corps de la cible ni les cibles définies dans l’attribut `DependsOnTargets`. Pour plus d’informations sur les conditions, voir [Conditions](../msbuild/msbuild-conditions.md).|
+|`Name`|Attribut requis.<br /><br /> Nom de la cible. Un nom de cible peut contenir n’importe quel caractère sauf `$@()%*?.` .|
+|`Condition`|Attribut facultatif.<br /><br /> Condition à évaluer. Si la condition a la valeur `false`, la cible n’exécute pas le corps de la cible ni les cibles définies dans l’attribut `DependsOnTargets`. Pour plus d’informations sur les conditions, consultez [conditions](../msbuild/msbuild-conditions.md).|
 |`Inputs`|Attribut facultatif.<br /><br /> Fichiers qui constituent les entrées dans cette cible. Plusieurs fichiers sont séparés par des points-virgules. Les horodateurs des fichiers doivent être comparés à ceux des fichiers dans `Outputs` pour déterminer si la `Target` est à jour. Pour plus d’informations, voir [Générations incrémentielles](../msbuild/incremental-builds.md), [Guide pratique : Effectuer des générations incrémentielles](../msbuild/how-to-build-incrementally.md) et [Transformations](../msbuild/msbuild-transforms.md).|
 |`Outputs`|Attribut facultatif.<br /><br /> Fichiers qui constituent les sorties dans cette cible. Plusieurs fichiers sont séparés par des points-virgules. Les horodateurs des fichiers doivent être comparés à ceux des fichiers dans `Inputs` pour déterminer si la `Target` est à jour. Pour plus d’informations, voir [Générations incrémentielles](../msbuild/incremental-builds.md), [Guide pratique : Effectuer des générations incrémentielles](../msbuild/how-to-build-incrementally.md) et [Transformations](../msbuild/msbuild-transforms.md).|
 |`Returns`|Attribut facultatif.<br /><br /> Ensemble des éléments qui seront disponibles pour les tâches qui appellent cette cible, par exemple, les tâches MSBuild. Plusieurs cibles sont séparées par des points-virgules. Si les cibles du fichier sont dépourvues d’attributs `Returns`, les attributs Output sont utilisés à la place à cet effet.|
@@ -83,11 +83,11 @@ Contient un ensemble de tâches pour MSBuild à exécuter séquentiellement.
 
 | Élément | Description |
 | - | - |
-| [Projet](../msbuild/project-element-msbuild.md) | Élément racine requis d’un fichier de projet MSBuild. |
+| [Projet](../msbuild/project-element-msbuild.md) | Élément racine requis d’un fichier projet MSBuild. |
 
-## <a name="remarks"></a>Notes 
+## <a name="remarks"></a>Notes
 
- La première cible à exécuter est spécifiée au moment de l’exécution. Les cibles peuvent avoir des relations de dépendance avec d’autres cibles. Par exemple, une cible de déploiement dépend d’une cible de compilation. Le moteur MSBuild exécute des dépendances dans l’ordre dans lequel ils apparaissent dans l’attribut, `DependsOnTargets` de gauche à droite. Pour plus d’informations, consultez l’article [Targets (Cibles MSBuild)](../msbuild/msbuild-targets.md).
+ La première cible à exécuter est spécifiée au moment de l’exécution. Les cibles peuvent avoir des relations de dépendance avec d’autres cibles. Par exemple, une cible de déploiement dépend d’une cible de compilation. Le moteur MSBuild exécute les dépendances dans l’ordre dans lequel elles apparaissent dans l' `DependsOnTargets` attribut, de gauche à droite. Pour plus d’informations, consultez l’article [Targets (Cibles MSBuild)](../msbuild/msbuild-targets.md).
 
  MSBuild est dépend de l’ordre d’importation, et la dernière définition d’une cible avec un attribut `Name` spécifique est la définition utilisée.
 
@@ -124,4 +124,4 @@ Contient un ensemble de tâches pour MSBuild à exécuter séquentiellement.
 ## <a name="see-also"></a>Voir aussi
 
 - [Cibles](../msbuild/msbuild-targets.md)
-- [Référence du schéma de fichier de projet](../msbuild/msbuild-project-file-schema-reference.md)
+- [Référence du schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)

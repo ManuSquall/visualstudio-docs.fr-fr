@@ -11,10 +11,10 @@ caps.latest.revision: 38
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 737311167fc1f444d5c0f8a5d2c27e2fe321da75
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851250"
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>Utilisation de la couverture du code pour déterminer la quantité de code testé
@@ -26,9 +26,9 @@ Pour déterminer la proportion de code de votre projet qui sera réellement test
 
  Vous pouvez avoir recours à la couverture du code lorsque vous exécutez des méthodes de test à l'aide de l'Explorateur de tests. La table des résultats affiche le pourcentage de code exécuté dans chaque assembly, classe et méthode. En outre, l'éditeur de code source vous indique quel code a été testé.
 
- ![Résultats de couverture du code avec coloration](../test/media/codecoverage1.png "CodeCoverage1")
+ ![Résultats de la couverture du code avec coloration](../test/media/codecoverage1.png "CodeCoverage1")
 
- **Spécifications**
+ **Configuration requise**
 
 - Visual Studio Enterprise
 
@@ -36,7 +36,7 @@ Pour déterminer la proportion de code de votre projet qui sera réellement test
 
 1. Dans le menu **Test**, choisissez **Analyser la couverture du code**.
 
-2. Pour voir les lignes qui ont été exécutées, choisissez ![Icône Afficher la coloration de la couverture du code](../test/media/codecoverage-showcoloringicon.png "CodeCoverage-ShowColoringIcon")**Afficher la coloration de la couverture du code**.
+2. Pour afficher les lignes qui ont été exécutées, choisissez afficher l’icône de coloration de la ![couverture du](../test/media/codecoverage-showcoloringicon.png "CodeCoverage-ShowColoringIcon")code afficher la coloration de la**couverture du code**.
 
      Pour modifier les couleurs ou utiliser des caractères gras, choisissez **Outils**, **Options**, **Environnement**, **Polices et couleurs**, **Afficher les paramètres de : Éditeur de texte**. Sous **Éléments affichés**, ajustez les éléments de couverture.
 
@@ -50,7 +50,7 @@ Pour déterminer la proportion de code de votre projet qui sera réellement test
 >   Si vous travaillez avec le code non managé (natif), utilisez une version Debug.
 >   - Assurez-vous que vous générez des fichiers de symboles (.pdb) pour chaque assembly.
 >
->   Si vous n’obtenez pas les résultats escomptés, consultez [Résolution des problèmes liés à la couverture du code](../test/troubleshooting-code-coverage.md). . N'oubliez pas d'exécuter à nouveau la couverture du code après la mise à jour votre code. Les résultats de couverture et la coloration du code ne sont pas automatiquement mis à jour après avoir la modification de votre code ou lorsque vous exécutez des tests.
+>   Si vous n’obtenez pas les résultats attendus, consultez Dépannage de la [couverture du code](../test/troubleshooting-code-coverage.md). . N'oubliez pas d'exécuter à nouveau la couverture du code après la mise à jour votre code. Les résultats de couverture et la coloration du code ne sont pas automatiquement mis à jour après avoir la modification de votre code ou lorsque vous exécutez des tests.
 
 ## <a name="reporting-in-blocks-or-lines"></a>Rapport dans les blocs ou les lignes
  La couverture du code est mesurée en *blocs*. Un bloc est un fragment de code avec un seul point d'entrée et de sortie.  Si le flux de contrôle du programme traverse un bloc pendant une série de tests, ce bloc est considéré comme couvert. Le nombre de fois où le bloc est utilisé n'a aucun effet sur le résultat.
@@ -221,9 +221,9 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
  Utilisez les macros suivante :
 
- `ExcludeFromCodeCoverage(` *nomexclusion* `, L"` *nomfonction* `");`
+ `ExcludeFromCodeCoverage(` *NomExclusion* `, L"` *NomFonction* `");`
 
- `ExcludeSourceFromCodeCoverage(` *nomexclusion* `, L"` *cheminfichiersource* `");`
+ `ExcludeSourceFromCodeCoverage(` *NomExclusion* `, L"` *CheminFichierSource* `");`
 
 - *NomExclusion* est un nom unique.
 
@@ -256,11 +256,11 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
     Si vous avez plusieurs définitions de source de test, répétez cette étape pour chaque définition.
 
-   - <em>Mais aucun champ n’est nommé **Type de fichier des paramètres d’exécution</em>* .*
+   - <em>Mais il n’existe aucun champ nommé **type de fichier de paramètres d’exécution</em>*. *
 
       Sous **Tests automatisés**, sélectionnez **Assembly de test**, puis choisissez le bouton de sélection **[...]** situé à la fin de la ligne. Dans la boîte de dialogue **Ajouter/Modifier une série de tests**, sous **Test Runner**, choisissez **Visual Studio Test Runner**.
 
-   ![Définition de la définition de build pour la couverture du code](../test/media/codecoverage-plaincc.png "CodeCoverage-plainCC")
+   ![Définition de build pour la couverture du code](../test/media/codecoverage-plaincc.png "CodeCoverage-plainCC")
 
    Après l'exécution de la build, les résultats de la couverture du code sont liés à la série de tests et s'affichent dans le résumé de la build.
 
@@ -271,16 +271,16 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
      Dans le menu Windows **Démarrer**, choisissez **Tous les programmes**, **Microsoft Visual Studio**, **Visual Studio Tools**, **Invite de commandes développeur**.
 
-2. Exécuter :
+2. Exécutez :
 
      `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage`
 
-## <a name="troubleshooting"></a>Résolution des problèmes
+## <a name="troubleshooting"></a>Dépannage
  Si vous ne voyez pas les résultats de couverture du code, consultez [Résolution des problèmes liés à la couverture du code](../test/troubleshooting-code-coverage.md).
 
 ## <a name="external-resources"></a>Ressources externes
 
-### <a name="guidance"></a>Aide
+### <a name="guidance"></a>Guidance
  [Tester la livraison continue avec Visual Studio 2012 - Chapitre 2 : Tests unitaires : tester l’intérieur](https://msdn.microsoft.com/library/jj159340.aspx)
 
 ## <a name="see-also"></a>Voir aussi

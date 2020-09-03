@@ -6,12 +6,12 @@ manager: lank
 ms.assetid: 3fc57f5f-2446-4774-9f8f-98ea1340f6b2
 ms.date: 03/09/2020
 ms.topic: conceptual
-description: Renseignez-vous sur la responsabilité des administrateurs de gérer les abonnements pour les grandes équipes ainsi que pour les entrepreneurs externes.
+description: En savoir plus sur la responsabilité des administrateurs pour gérer les abonnements pour les équipes de grande taille, ainsi que pour les prestataires externes.
 ms.openlocfilehash: 9753c7a69b5334abd0e4ccb299ece3a5403517bc
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80232323"
 ---
 # <a name="large-teams-and-external-contractors"></a>Grandes équipes et prestataires externes
@@ -31,11 +31,11 @@ Les prestataires externes peuvent apporter des licences pour prendre part à vot
 
 ## <a name="resources"></a>Ressources
 - [Livre blanc sur la gestion des licences Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
-- [Prise en charge des abonnements et de l’administration Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
-- [Conditions de licence de volume](https://www.microsoft.com/licensing/product-licensing/products.aspx)
+- [Prise en charge des abonnements et de l’administration de Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
+- [Termes du contrat de licence en volume](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentation Azure](https://docs.microsoft.com/azure/)
 - [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)

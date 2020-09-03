@@ -23,13 +23,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e28b3b9c3fe4d6e89228dc18ba8b98aa5e0d2e76
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80233127"
 ---
-# <a name="options-dialog-box-environment--task-list"></a>Boîte de dialogue \> d’options : Liste des tâches de l’environnement
+# <a name="options-dialog-box-environment--task-list"></a>Boîte de dialogue Options : environnement \> liste des tâches
 
 Cette page Options vous permet d’ajouter, de supprimer et de modifier les jetons de commentaire qui génèrent des rappels de la **liste des tâches**. Pour afficher ces paramètres, sélectionnez **Options** dans le menu **Outils**, développez le dossier **Environnement**, puis choisissez **Liste des tâches**.
 

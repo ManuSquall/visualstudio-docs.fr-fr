@@ -12,10 +12,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 92d0e984d4ccf595af2821dff9c02d069b16404d
-ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80273840"
 ---
 # <a name="advanced-example-for-containers"></a>Exemple avancé pour les conteneurs
@@ -174,7 +174,7 @@ docker build -t buildtools2019:16.0.28714.193 -t buildtools2019:latest -m 2GB .
 Vous pouvez éventuellement passer l’argument `FROM_IMAGE`, l’argument `CHANNEL_URL` ou les deux à la fois, à l’aide du commutateur de ligne de commande `--build-arg` pour spécifier une autre image de base ou l’emplacement d’une disposition interne pour gérer une image fixe.
 
    > [!TIP]
-   > Pour une liste de charges de travail et de composants, consultez le [répertoire des composants Visual Studio Build Tools](workload-component-id-vs-build-tools.md).
+   > Pour obtenir la liste des charges de travail et des composants, consultez le [répertoire du composant Visual Studio Build Tools](workload-component-id-vs-build-tools.md).
    >
 
 ## <a name="diagnosing-install-failures"></a>Diagnostiquer les échecs d’installation
@@ -219,6 +219,6 @@ Une fois la dernière ligne exécutée, ouvrez « %TEMP%\vslogs.zip » sur vot
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Installer des outils de construction dans un conteneur](build-tools-container.md)
-* [Problèmes de conteneurs connus](build-tools-container-issues.md)
+* [Installer Build Tools dans un conteneur](build-tools-container.md)
+* [Problèmes connus liés aux conteneurs](build-tools-container-issues.md)
 * [ID de composant et de charge de travail de Visual Studio Build Tools](workload-component-id-vs-build-tools.md)

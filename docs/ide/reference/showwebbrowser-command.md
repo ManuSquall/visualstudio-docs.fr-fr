@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f8266a7c70544d8a320658fcd8b9f5ad249162fe
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85769571"
 ---
 # <a name="showwebbrowser-command"></a>Afficher le navigateur Web, commande
@@ -44,7 +44,7 @@ facultatif. Spécifie que la page s’affiche dans une nouvelle instance du navi
 
 facultatif. Spécifie que la page s’affiche dans le navigateur web par défaut en dehors de l’environnement IDE.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 L’alias de la commande **ShowWebBrowser** est **navigate** ou **nav**.
 
 ## <a name="example"></a>Exemple

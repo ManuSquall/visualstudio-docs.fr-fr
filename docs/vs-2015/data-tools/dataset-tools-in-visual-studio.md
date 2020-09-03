@@ -54,10 +54,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 23e4deba53288383a569f6da6e14d27f723825ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657384"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Outils de dataset dans Visual Studio
@@ -79,7 +79,7 @@ REMARQUE]
 
 - Spécifiez les relations entre les tables afin que les clés étrangères soient gérées correctement. Pour plus d’informations, consultez [remplir des jeux de données à l’aide de TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md).
 
-- Utilisez l' **Assistant Configuration de TableAdapter** pour spécifier la requête ou la procédure stockée qui remplira le DataSet, ainsi que les opérations de base de données (mise à jour, suppression, etc.) à implémenter. Pour plus d'informations, voir ces rubriques :
+- Utilisez l' **Assistant Configuration de TableAdapter** pour spécifier la requête ou la procédure stockée qui remplira le DataSet, ainsi que les opérations de base de données (mise à jour, suppression, etc.) à implémenter. Pour plus d’informations, consultez les rubriques suivantes :
 
   - [Remplir des datasets à l’aide de TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)
 
@@ -89,7 +89,7 @@ REMARQUE]
 
   - [Enregistrer les données dans la base de données](../data-tools/save-data-back-to-the-database.md)
 
-- Interrogez et recherchez les données dans le DataSet. Pour plus d’informations, consultez [requêtes datasets](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../includes/linq-dataset-md.md)] active [LINQ (Language-Integrated Query) sur les](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) données dans un objet <xref:System.Data.DataSet>. Pour plus d’informations, [consultez LINQ to DataSet](https://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17).
+- Interrogez et recherchez les données dans le DataSet. Pour plus d’informations, consultez [requêtes datasets](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../includes/linq-dataset-md.md)] active [LINQ (Language-Integrated Query) sur les](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) données dans un <xref:System.Data.DataSet> objet. Pour plus d’informations, [consultez LINQ to DataSet](https://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17).
 
 - Utilisez la fenêtre **sources de données** pour lier des contrôles d’interface utilisateur au DataSet ou à ses colonnes individuelles, et pour spécifier les colonnes qui peuvent être modifiées par l’utilisateur. Pour plus d’informations, consultez [lier des contrôles à des données dans Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).
 

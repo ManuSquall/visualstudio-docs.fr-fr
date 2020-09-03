@@ -9,18 +9,18 @@ caps.latest.revision: 35
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3a29e531ca9b2a74e67abf80a0e3017a0f5b0b07
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74298000"
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Mise à niveau de tests codés de l'interface utilisateur à partir de Visual Studio 2010
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Les projets de test contenant des tests codés de l'interface utilisateur créées dans [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 sont réparés silencieusement quand vous les ouvrez dans Visual Studio 2012. Si les projets de test sont archivés dans le contrôle de code source, les fichiers projet sont extraits pour cette réparation. Une fois réparés, ces projets de test contenant des tests codés de l'interface utilisateur peuvent alors être utilisés à la fois dans [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 et [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].
+Les projets de test contenant des tests codés de l'interface utilisateur créées dans [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 sont réparés silencieusement quand vous les ouvrez dans Visual Studio 2012. Si les projets de test sont archivés dans le contrôle de code source, les fichiers projet sont extraits pour cette réparation. Une fois réparés, ces projets de test contenant des tests codés de l'interface utilisateur peuvent alors être utilisés à la fois dans [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 et [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].
 
- **Requirements**
+ **Configuration requise**
 
 - Visual Studio Enterprise
 
@@ -43,10 +43,10 @@ Les projets de test contenant des tests codés de l'interface utilisateur créé
 |----------------------------|-----------|--------------|
 |Test de l'interface utilisateur Silverlight non pris en charge dans [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]|**Échec de la build**<br /><br /> Si vous avez [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] Feature Pack 2 et que vous avez créé des projets de test codé de l'interface utilisateur pour des applications Silverlight, ces projets ne peuvent pas être ouverts dans [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|Nous vous recommandons de gérer ces projets dans [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] Feature Pack 2 uniquement.|
 |Test de l'interface utilisateur Firefox non pris en charge dans [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]|**Réussite de la build, mais échec de la série de tests**<br /><br /> Si vous avez [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] Feature Pack 2 et que vous avez créé des projets de test codé de l'interface utilisateur pour des applications web dans Firefox, ces projets ne peuvent pas être ouverts dans [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|Nous vous recommandons de gérer ces projets dans [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] Feature Pack 2 uniquement.|
-|Nouvelles API de test de code d'interface utilisateur ajoutées dans [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]|**Échec de la build**<br /><br /> Si vous créez des tests codés de l'interface utilisateur à l'aide de la nouvelle API de test de l'interface utilisateur dans [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], ces projets ne peuvent pas être ouverts dans [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)].|Vous devez gérer les projets qui utilisent la nouvelle API uniquement dans [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] .|
+|Nouvelles API de test de code d'interface utilisateur ajoutées dans [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]|**Échec de la build**<br /><br /> Si vous créez des tests codés de l'interface utilisateur à l'aide de la nouvelle API de test de l'interface utilisateur dans [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], ces projets ne peuvent pas être ouverts dans [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)].|Vous devez gérer les projets qui utilisent la nouvelle API uniquement dans [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|
 |Dans [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)], des références ont été ajoutées à l'intérieur d'une instruction Choose dans le fichier csproj. Dans [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], nous utilisons un fichier .targets de commentaires pour inclure des références d'assembly de test codé de l'interface utilisateur.|Dans [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], un test codé de l'interface utilisateur ne peut pas être ajouté à un projet de test créé dans [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] (ou SP1) qui ne contenait pas de test codé de l'interface utilisateur.<br /><br /> Le processus de réparation ajoute le fichier .targets et l'instruction Choose. Si un test codé de l'interface utilisateur n'est pas dans le projet de test, alors le projet est marqué comme étant réparé et les références appropriées ne sont pas ajoutées lors de l'ajout du test codé de l'interface utilisateur dans [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|Vous devez créer un projet de test dans la même solution à l'aide de [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] et y ajouter votre nouveau test codé de l'interface utilisateur. Sinon, vous pouvez ajouter des tests codés de l'interface utilisateur au projet de test dans [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 et ouvrir ce projet dans [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|
 
-## <a name="UpgradingCodedUIFromVS2010_Update"></a> Mise à jour Visual Studio 2010 SP1
+## <a name="visual-studio-2010-sp1-update"></a><a name="UpgradingCodedUIFromVS2010_Update"></a> Mise à jour Visual Studio 2010 SP1
  Une mise à jour de [!INCLUDE[vs2010](../includes/vs2010-md.md)] SP1 compatible avec Visual Studio 2012 et Windows 8 est disponible en téléchargement dans le [Centre de téléchargement Microsoft](https://www.microsoft.com/download/details.aspx?id=34677) , ainsi qu’en tant que mise à jour de Visual Studio.
 
  Après avoir appliqué la mise à jour, les fonctionnalités d'outil de test codé de l'interface utilisateur [!INCLUDE[vs2010](../includes/vs2010-md.md)] SP1 suivantes sont améliorées pour Windows 8 :

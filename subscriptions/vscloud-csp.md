@@ -8,10 +8,10 @@ ms.date: 03/24/2020
 ms.topic: conceptual
 description: Informations destinées aux fournisseurs de solutions cloud concernant l’achat et la gestion d’abonnements cloud Visual Studio pour vos clients.
 ms.openlocfilehash: 76c56759fdc07104290c45d1c4fc345bf0bad8b7
-ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80273866"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Acheter et gérer des abonnements cloud Visual Studio pour vos clients
@@ -20,7 +20,7 @@ Les partenaires du programme [Fournisseur de solutions Cloud](https://partner.mi
 [Comparer les options d’abonnement cloud](https://visualstudio.microsoft.com/vs/pricing)
 
 > [!NOTE]
-> Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Les nouveaux clients sont [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) encouragés à aller explorer différentes options pour acheter Visual Studio.
+> Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Les nouveaux clients sont encouragés à accéder à [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
 
 ## <a name="prerequisites"></a>Prérequis
 Vous devez tout d’abord configurer votre locataire de clients dans l’Espace partenaires et créer un abonnement Azure pour ce locataire.
@@ -37,7 +37,7 @@ Toute personne ayant un [accès Propriétaire ou Contributeur](https://na01.safe
 0. Choisissez **Gestion des services**.
 0. Choisissez **Visual Studio Marketplace**.
 0. Vérifiez que le nom de votre client figure en haut à droite.
-0. Choisissez **les abonnements**.
+0. Choisissez **abonnements**.
 0. Choisissez Enterprise ou Professional pour Visual Studio.
 0. Choisissez **Acheter**.
 0. Choisissez l’abonnement Azure à facturer pour cet achat.
@@ -69,10 +69,10 @@ Pour voir les tarifs de Visual Studio pour les partenaires CSP, connectez-vous �
 
 Voici comment interpréter les différents éléments de cette feuille de calcul :
 
-| Catégorie du compteur    |   Nom                 |  Units                                |           De quoi s’agit-il ?                          |
+| Catégorie du compteur    |   Nom                 |  Unités                                |           De quoi s’agit-il ?                          |
 |-------------------|------------------------|---------------------------------------|-------------------------------------------------|
 | Visual Studio     | Entreprise             |  Abonnement                         | Abonnement mensuel à Visual Studio Enterprise   |
-| Visual Studio     | Professionnel           |  Abonnement                         | Abonnement mensuel à Visual Studio Professional |
+| Visual Studio     | Professional           |  Abonnement                         | Abonnement mensuel à Visual Studio Professional |
 
 Nous offrons une remise de 5 % sur la sixième unité que vous achetez (pour un client donné) chaque mois pour chaque abonnement Visual Studio. C’est pourquoi il y a deux lignes pour chaque option d’abonnement. Une ligne affiche une « Valeur minimale » de 0, ce que vous devez interpréter comme prix de base pour les unités de 1 à 5. L’autre ligne affiche une « Valeur minimale » de 5. Il s’agit de la remise de 5 % qui s’applique aux unités 6 et plus.
 
@@ -104,13 +104,13 @@ Ces remises sont reflétées dans les données tarifaires mentionnées dans l’
 R : Non, les prix pour les abonnements Visual Studio sont fixes. Le même prix est proposé pour les nouveaux abonnements et pour les abonnements existants.
 
 ### <a name="q-are-there-azure-devtest-pricing-options-for-csps"></a>Q : Existe-t-il des tarifs de développement/test Azure pour les fournisseurs de solutions Cloud ?
- R : Pas pour l’instant. Vos clients peuvent profiter des [tarifs de développement/test Azure](https://azure.microsoft.com/pricing/dev-test/), mais nous ne proposons rien de spécifique pour les fournisseurs de solutions Cloud.
+A : Pas pour l'instant. Vos clients peuvent profiter des [tarifs de développement/test Azure](https://azure.microsoft.com/pricing/dev-test/), mais nous ne proposons rien de spécifique pour les fournisseurs de solutions Cloud.
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentation Azure](https://docs.microsoft.com/azure/)
 - [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
-Voir la [FAQ de facturation cloud](vscloud-billing-faq.md) pour les réponses aux questions de facturation communes.  
+Consultez le [Forum aux](vscloud-billing-faq.md) questions sur la facturation dans le Cloud pour obtenir des réponses aux questions de facturation courantes.  

@@ -13,14 +13,14 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bf1a78148e2520478c7c6bc3e7953adccbab8c52
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657558"
 ---
 # <a name="workflow-designer-ui-help"></a>Aide sur l'interface utilisateur de Workflow Designer
-Cette section contient les rubriques d'aide contextuelle relatives à [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Lorsque vous travaillez dans [!INCLUDE[vs2010](../includes/vs2010-md.md)], vous pouvez accéder à ces rubriques à partir de l’interface utilisateur en appuyant sur **F1** lorsqu’une boîte de dialogue [!INCLUDE[wfd2](../includes/wfd2-md.md)] est ouverte.
+Cette section contient les rubriques d'aide contextuelle relatives à [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Lorsque vous travaillez dans [!INCLUDE[vs2010](../includes/vs2010-md.md)] , vous pouvez accéder à ces rubriques à partir de l’interface utilisateur en appuyant sur **F1** lorsqu’une [!INCLUDE[wfd2](../includes/wfd2-md.md)] boîte de dialogue est ouverte.
 
  Cette section contient également plusieurs rubriques concernant la navigation et les messages d'erreur.
 
@@ -29,15 +29,15 @@ Cette section contient les rubriques d'aide contextuelle relatives à [!INCLUDE[
 
  [Définition CorrelatesOn, boîte de dialogue](../workflow-designer/correlateson-definition-dialog-box.md)
 
- [Ajouter des initialiseurs de corrélation, boîte de dialogue](../workflow-designer/add-correlationinitializers-dialog-box.md)
+ [Boîte de dialogue Ajouter des initialiseurs de corrélation](../workflow-designer/add-correlationinitializers-dialog-box.md)
 
- [Ajouter des paramètres et Ajouter des arguments, boîtes de dialogue](../workflow-designer/add-parameters-and-add-arguments-dialog-boxes.md)
+ [Boîtes de dialogue Ajouter des paramètres et Ajouter des arguments](../workflow-designer/add-parameters-and-add-arguments-dialog-boxes.md)
 
- [Éditeur de collections de types, boîte de dialogue](../workflow-designer/type-collection-editor-dialog-box.md)
+ [Boîte de dialogue Éditeur de collections de types](../workflow-designer/type-collection-editor-dialog-box.md)
 
- [Définition du contenu, boîte de dialogue](../workflow-designer/content-definition-dialog-box.md)
+ [Boîte de dialogue Définition du contenu](../workflow-designer/content-definition-dialog-box.md)
 
- [Initialiser la corrélation, boîte de dialogue](../workflow-designer/initialize-correlation-dialog-box.md)
+ [Boîte de dialogue Initialiser la corrélation](../workflow-designer/initialize-correlation-dialog-box.md)
 
  [Onglet System.Activities de la boîte de dialogue Choisir des éléments de boîte à outils](../workflow-designer/system-activities-tab-choose-toolbox-items-dialog-box.md)
 

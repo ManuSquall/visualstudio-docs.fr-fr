@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - aspnet
 ms.openlocfilehash: f23f5bb2588c179f47593b1ecbcf5d6cd7fa9f0d
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85349755"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>Déboguer des applications ASP.NET ou ASP.NET Core dans Visual Studio
@@ -138,9 +138,9 @@ Les projets ASP.NET ont des fichiers *web.config* par défaut, qui contiennent d
    </configuration>
    ```
 
-[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]détecte automatiquement les modifications apportées aux fichiers *web.config* et applique les nouveaux paramètres de configuration. Vous n’êtes pas obligé de redémarrer l’ordinateur ou le serveur IIS pour que les modifications prennent effet.
+[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] détecte automatiquement les modifications apportées aux fichiers *web.config* et applique les nouveaux paramètres de configuration. Vous n’êtes pas obligé de redémarrer l’ordinateur ou le serveur IIS pour que les modifications prennent effet.
 
-Un site Web peut contenir plusieurs répertoires et sous-répertoires virtuels, avec *web.config* fichiers dans chacun d’eux. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]les applications héritent des paramètres de configuration des fichiers *web.config* à des niveaux supérieurs dans le chemin d’accès de l’URL. Les paramètres de fichier *web.config* hiérarchique s’appliquent à toutes les [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] applications situées au-dessous dans la hiérarchie. La définition d’une configuration différente dans un fichier de *web.config* plus bas dans la hiérarchie remplace les paramètres dans le fichier supérieur.
+Un site Web peut contenir plusieurs répertoires et sous-répertoires virtuels, avec *web.config* fichiers dans chacun d’eux. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] les applications héritent des paramètres de configuration des fichiers *web.config* à des niveaux supérieurs dans le chemin d’accès de l’URL. Les paramètres de fichier *web.config* hiérarchique s’appliquent à toutes les [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] applications situées au-dessous dans la hiérarchie. La définition d’une configuration différente dans un fichier de *web.config* plus bas dans la hiérarchie remplace les paramètres dans le fichier supérieur.
 
 Par exemple, si vous spécifiez `debug="true"` dans <em>www.Microsoft.com/AAA/web.config</em>, toute application dans le dossier *AAA* ou dans un sous-dossier de *AAA* hérite de ce paramètre, sauf si l’une de ces applications remplace le paramètre par son propre fichier *web.config* .
 

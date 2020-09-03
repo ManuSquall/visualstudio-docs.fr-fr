@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 46f6e9daafc2688b9bea75cba9eddd8c8a53c9bb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656671"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project-legacy"></a>Procédure : ajouter un nouvel élément à un projet de workflow (héritée)
@@ -48,4 +48,4 @@ Après avoir créé un projet de workflow à l'aide du [!INCLUDE[wfd1](../includ
 3. Cliquez sur **Ajouter** pour ajouter l’élément au projet de Workflow.
 
 ## <a name="see-also"></a>Voir aussi
- [Création de projets de flux de travail hérités](../workflow-designer/creating-legacy-workflow-projects.md)
+ [Création de projets de workflows hérités](../workflow-designer/creating-legacy-workflow-projects.md)

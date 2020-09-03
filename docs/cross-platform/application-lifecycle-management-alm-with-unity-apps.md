@@ -10,10 +10,10 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: 17bdd86829da199e01a527aa382b8ed3bdfade17
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80232946"
 ---
 # <a name="devops-with-unity-apps"></a>DevOps avec les applications Unity
@@ -46,14 +46,14 @@ Commentaire général : bien que ces fonctionnalités de conception soient ind�
 
 |Fonctionnalité|Prise en charge avec Unity|Commentaires supplémentaires|
 |-------------|--------------------------|-------------------------|
-|Diagrammes de séquence|Non ||
-|Graphiques de dépendance|Non ||
-|Hiérarchie d'appels|Non ||
-|Concepteur de classes|Non ||
-|Navigateur de l'architecture|Non ||
-|Diagrammes UML (cas d'usage, activité, classe, composant, séquence et DSL)|Non ||
-|Diagrammes de couche|Non ||
-|Validation de couche|Non ||
+|Diagrammes de séquence|Non||
+|Graphiques de dépendance|Non||
+|Hiérarchie d'appels|Non||
+|Concepteur de classes|Non||
+|Navigateur de l'architecture|Non||
+|Diagrammes UML (cas d'usage, activité, classe, composant, séquence et DSL)|Non||
+|Diagrammes de couche|Non||
+|Validation de couche|Non||
 
 ## <a name="code"></a>Code
 
@@ -80,8 +80,8 @@ Lien de référence : **[Azure Pipelines](/azure/devops/pipelines/index?view=vst
 |Fonctionnalité|Prise en charge avec Unity|Commentaires supplémentaires|
 |-------------|--------------------------|-------------------------|
 |Version locale de Team Foundation Server (TFS)|Possible|Les projets Unity sont créés via l'environnement Unity et non via le système de génération de Visual Studio (la génération dans Visual Studio Tools pour Unity entraîne la compilation des scripts, mais ne produit pas de fichier exécutable). Comme il est possible de [générer des projets Unity à partir de la ligne de commande](https://docs.unity3d.com/Manual/CommandLineArguments.html) (documentation Unity), il est possible de configurer un processus MSBuild sur un serveur TFS pour exécuter les commandes Unity appropriées, à condition que Unity lui-même soit installé sur cet ordinateur.<br /><br /> Unity propose également [Unity Cloud Build](https://build.cloud.unity3d.com/landing/), qui surveille un dépôt Git ou SVN, et exécute des builds périodiques. Pour l’instant, il ne fonctionne pas avec TFVC ou Azure DevOps Services.|
-|Serveur de builds local lié à Azure DevOps Services|Possible|Dans les mêmes conditions que ci-dessus, il est également possible de diriger des builds déclenchées via Azure DevOps Services pour utiliser un ordinateur TFS local. Voir [les agents de construction et de libération](/azure/devops/pipelines/agents/agents?view=vsts) pour les instructions.|
-|Service de contrôleur hébergé d’Azure DevOps Services|Non |Les builds Unity ne sont pas prises en charge.|
+|Serveur de builds local lié à Azure DevOps Services|Possible|Dans les mêmes conditions que ci-dessus, il est également possible de diriger des builds déclenchées via Azure DevOps Services pour utiliser un ordinateur TFS local. Pour obtenir des instructions, consultez [agents de build et de mise en version](/azure/devops/pipelines/agents/agents?view=vsts) .|
+|Service de contrôleur hébergé d’Azure DevOps Services|Non|Les builds Unity ne sont pas prises en charge.|
 |Définitions de builds avec des pré-scripts et des post-scripts|Oui|Une définition de build personnalisée qui utilise la ligne de commande Unity pour exécuter une build peut également être configurée pour des scripts de pré- ou post-compilation.|
 |Intégration continue, y compris les archivages contrôlés|Oui|Archivages contrôlés pour TFVC uniquement si Git utilise un modèle de requête d'extraction plutôt que des archivages.|
 
@@ -93,22 +93,22 @@ Lien de référence : **[Azure Pipelines](/azure/devops/pipelines/index?view=vst
 |Test manuel|Oui||
 |Gestionnaire de tests (enregistrer et rejouer des tests)|Appareils Windows et émulateurs Android uniquement||
 |Couverture du code|n/a|Non applicable car le test unitaire se produit dans Unity et non dans Visual Studio. Voir ci-dessous.|
-|[Test unitaire de votre code](../test/unit-test-your-code.md)|Dans Unity, mais pas dans Visual Studio|Unity fournit son propre cadre de test unitaire dans le cadre des outils de [test Unity](https://assetstore.unity.com/packages/tools/utilities/unity-test-tools-13802) (Unity Asset Store). Les résultats des tests unitaires sont signalés dans Unity et ne seront pas visibles dans Visual Studio.|
-|[Utilisez l’automatisation de l’interface utilisateur pour tester votre code](../test/use-ui-automation-to-test-your-code.md)|Non |Les tests codés de l’interface utilisateur s’appuient sur des contrôles lisibles dans l’interface utilisateur de l’application. Les applications Unity sont graphiques par nature et le contenu n’est donc pas lisible par les outils de test codés de l’interface utilisateur.|
+|[Test unitaire de votre code](../test/unit-test-your-code.md)|Dans Unity, mais pas dans Visual Studio|Unity fournit sa propre infrastructure de tests unitaires dans le cadre des [outils de test Unity](https://assetstore.unity.com/packages/tools/utilities/unity-test-tools-13802) (magasin d’actifs Unity). Les résultats des tests unitaires sont signalés dans Unity et ne seront pas visibles dans Visual Studio.|
+|[Utiliser UI Automation pour tester votre code](../test/use-ui-automation-to-test-your-code.md)|Non|Les tests codés de l’interface utilisateur s’appuient sur des contrôles lisibles dans l’interface utilisateur de l’application. Les applications Unity sont graphiques par nature et le contenu n’est donc pas lisible par les outils de test codés de l’interface utilisateur.|
 
 ## <a name="improve-code-quality"></a>Améliorer la qualité du code
 
-Lien de référence : ** [Améliorer la qualité du code](../test/improve-code-quality.md)**
+Lien de référence : ** [améliorer la qualité du code](../test/improve-code-quality.md)**
 
 |Fonctionnalité|Prise en charge avec Unity|Commentaires supplémentaires|
 |-------------|--------------------------|-------------------------|
 |[Analyser la qualité du code managé](../code-quality/code-analysis-for-managed-code-overview.md)|Oui|Permet d’analyser le code de script C# dans Visual Studio.|
 |[Rechercher du code dupliqué à l’aide de la détection de clone de code](https://msdn.microsoft.com/library/hh205279.aspx)|Oui|Permet d’analyser le code de script C# dans Visual Studio.|
 |[Mesurer la complexité et la facilité de maintenance du code managé](../code-quality/code-metrics-values.md)|Oui|Permet d’analyser le code de script C# dans Visual Studio.|
-|[Outils d’analyse des performances](../profiling/performance-explorer.md)|Non |Utilisez le [profileur Unity](https://docs.unity3d.com/Manual/Profiler.html) (site web Unity).|
-|[Analyser des problèmes de mémoire liés à .NET Framework](https://msdn.microsoft.com/library/dn342825.aspx)|Non |Visual Studio Tools n’a pas de hook au framework Mono (tels qu'ils sont utilisés par Unity) pour le profilage. Utilisez le [profileur Unity](http://docs.unity3d.com/Manual/Profiler.html) (documentation Unity).|
+|[Outils d'analyse des performances](../profiling/performance-explorer.md)|Non|Utilisez le [profileur Unity](https://docs.unity3d.com/Manual/Profiler.html) (site web Unity).|
+|[Analyser des problèmes de mémoire liés à .NET Framework](https://msdn.microsoft.com/library/dn342825.aspx)|Non|Visual Studio Tools n’a pas de hook au framework Mono (tels qu'ils sont utilisés par Unity) pour le profilage. Utilisez le [profileur Unity](http://docs.unity3d.com/Manual/Profiler.html) (documentation Unity).|
 
-## <a name="release-management"></a>Gestion des versions
+## <a name="release-management"></a>Gestion des mises en production
 
 Lien de référence : [Générer et mettre en production dans Azure Pipelines et TFS](/azure/devops/pipelines/overview?view=vsts)
 
@@ -116,7 +116,7 @@ Lien de référence : [Générer et mettre en production dans Azure Pipelines et
 |-------------|--------------------------|-------------------------|
 |Gérer les processus de publication des versions|Oui||
 |Déploiement sur des serveurs pour le chargement de version test via des scripts|Oui||
-|Télécharger vers le magasin d'applications|Partiel|Il existe des extensions qui peuvent automatiser ce processus pour certains magasins d’applications. Consultez [Extensions pour Azure DevOps Services](https://marketplace.visualstudio.com/VSTS), par exemple [l’extension pour Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|
+|Télécharger vers le magasin d'applications|Partial|Il existe des extensions qui peuvent automatiser ce processus pour certains magasins d’applications. Consultez [Extensions pour Azure DevOps Services](https://marketplace.visualstudio.com/VSTS), par exemple [l’extension pour Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|
 
 ## <a name="monitor-with-hockeyapp"></a>Analyser avec HockeyApp
 

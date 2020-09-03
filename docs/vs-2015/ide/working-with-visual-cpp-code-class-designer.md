@@ -20,10 +20,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 020535ac73c48be74e56100c7b6f9c49b69e50dc
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851313"
 ---
 # <a name="working-with-visual-c-code-class-designer"></a>Utilisation du code Visual C++ (Concepteur de classes)
@@ -39,16 +39,16 @@ Le Concepteur de classes affiche une aire de conception visuelle appelée *diagr
 
 - Classe de modèle
 
-- Struct
+- Structure
 
-- Enum
+- Énumération
 
 - Macro (montre l'affichage post-traité de la macro)
 
-- TypeDef
+- Typedef
 
 > [!NOTE]
-> Cela est différent du diagramme de classes UML, que vous pouvez créer dans un projet de modélisation. Pour plus d'informations, consultez [Diagrammes de classes UML : Référence](../modeling/uml-class-diagrams-reference.md).
+> Cela est différent du diagramme de classes UML, que vous pouvez créer dans un projet de modélisation. Pour plus d’informations, consultez [Diagrammes de classes UML : indications](../modeling/uml-class-diagrams-reference.md).
 
 ## <a name="troubleshooting-type-resolution-and-display-issues"></a>Résolution des problèmes de résolution de type et d’affichage
 
@@ -56,14 +56,14 @@ Le Concepteur de classes affiche une aire de conception visuelle appelée *diagr
  Le Concepteur de classes n'effectue pas un suivi de l'emplacement des fichiers sources. Par conséquent, si vous modifiez votre structure de projet ou si vous déplacez des fichiers sources dans votre projet, le Concepteur de classes peut perdre la trace du type (surtout le type source d'un typedef, de classes de base ou de types d'associations). Vous pouvez recevoir une erreur telle que **Le Concepteur de classes n’est pas en mesure d’afficher ce type**. Dans ce cas, refaites glisser le code source modifié ou déplacé vers le diagramme de classes pour le réafficher.
 
 ### <a name="update-and-performance-issues"></a>Problèmes de mise à jour et de performances
- Pour les projets Visual C++, la modification dans le fichier source peut prendre 30 à 60 secondes avant d'apparaître dans le diagramme de classes. Ce délai peut entraîner la génération de l’erreur **Aucun type n’a été trouvé dans la sélection** par le Concepteur de classes. Si vous obtenez une telle erreur, cliquez sur **Annuler** dans le message d’erreur et attendez que l’élément de code apparaisse dans l’Affichage de classes. Le Concepteur de classes devrait ensuite être en mesure d'afficher le type.
+ Pour les projets Visual C++, la modification dans le fichier source peut prendre 30 à 60 secondes avant d'apparaître dans le diagramme de classes. Ce délai peut également forcer le Concepteur de classes à générer l’erreur **Aucun type n’a été trouvé dans la sélection**. Si vous recevez une erreur telle que celle-ci, cliquez sur **Annuler** dans le message d’erreur et attendez que l’élément de code apparaisse dans affichage de classes. Le Concepteur de classes devrait ensuite être en mesure d'afficher le type.
 
  En cas d'échec de la mise à jour d'un diagramme de classes suite à la modification du code, il peut s'avérer nécessaire de fermer le diagramme, puis de le rouvrir.
 
 ### <a name="type-resolution-issues"></a>Problèmes de résolution de type
  Le Concepteur de classes peut ne pas être en mesure de résoudre des types pour les raisons suivantes :
 
-- Le type se trouve dans un projet ou un assembly non référencé à partir du projet qui contient le diagramme de classes. Pour corriger cette erreur, ajoutez une référence au projet ou à l'assembly qui contient le type. Pour plus d'informations, voir [NIB Guide pratique pour ajouter ou supprimer des références à l’aide de la boîte de dialogue Ajouter une référence](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
+- Le type se trouve dans un projet ou un assembly non référencé à partir du projet qui contient le diagramme de classes. Pour corriger cette erreur, ajoutez une référence au projet ou à l'assembly qui contient le type. Pour plus d’informations, consultez [Comment : ajouter ou supprimer des références à l’aide de la boîte de dialogue Ajouter une référence](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
 
 - Le type ne se trouve pas dans la portée correcte ; le Concepteur de classes ne peut donc pas le localiser. Vérifiez qu'il ne manque pas une instruction `using`, `imports` ou `#include` au code. Assurez-vous également que vous n'avez pas déplacé le type (ou un type connexe) hors de l'espace de noms dans lequel il a été initialement localisé.
 
@@ -71,20 +71,20 @@ Le Concepteur de classes affiche une aire de conception visuelle appelée *diagr
 
 - Le type se trouve dans une bibliothèque référencée par une directive #import. Une solution de contournement possible consiste à ajouter manuellement le code généré (le fichier .tlh) à une directive #include dans le fichier d'en-tête.
 
-  L’erreur que vous allez probablement voir en cas de problème de résolution de type est la suivante : **Code introuvable pour une ou plusieurs formes dans le diagramme de classes ’\<élément>’** . Ce message d'erreur n'indique pas nécessairement que votre code est erroné. Il indique seulement que le Concepteur de classes n'a pas pu afficher votre code. Essayez les actions suivantes.
+  L’erreur que vous êtes le plus susceptible de voir pour un problème de résolution de type est du **code est introuvable pour une ou plusieurs formes dans le diagramme de classes « \<element> »**. Ce message d'erreur n'indique pas nécessairement que votre code est erroné. Il indique seulement que le Concepteur de classes n'a pas pu afficher votre code. Essayez les actions suivantes.
 
 - Assurez-vous que le type existe. Vérifiez que vous n'avez pas involontairement commenté ni supprimé le code source.
 
 - Assurez-vous que le Concepteur de classes prend en charge le type que vous avez entré. Consultez [Limitations pour les éléments de code C++](#limitations).
 
-- Essayez de résoudre le type. Le type se trouve peut-être dans un projet ou un assembly non référencé à partir du projet qui contient le diagramme de classes. Pour corriger cette erreur, ajoutez une référence au projet ou à l'assembly qui contient le type. Pour plus d'informations, voir [NIB Guide pratique pour ajouter ou supprimer des références à l’aide de la boîte de dialogue Ajouter une référence](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
+- Essayez de résoudre le type. Le type se trouve peut-être dans un projet ou un assembly non référencé à partir du projet qui contient le diagramme de classes. Pour corriger cette erreur, ajoutez une référence au projet ou à l'assembly qui contient le type. Pour plus d’informations, consultez [Comment : ajouter ou supprimer des références à l’aide de la boîte de dialogue Ajouter une référence](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
 
 - Assurez-vous que le type se trouve dans la portée correcte afin que le Concepteur de classes puisse le localiser. Vérifiez qu'il ne manque pas une instruction `using`, `imports` ou `#include` au code. Assurez-vous également que vous n'avez pas déplacé le type (ou un type connexe) hors de l'espace de noms dans lequel il a été initialement localisé.
 
 ### <a name="troubleshooting-other-error-messages"></a>Résolution d'autres messages d'erreur
  Vous pouvez trouver de l'aide sur la résolution des erreurs et des avertissements dans les forums publics Microsoft Developer Network (MSDN). Consultez le [Forum du Concepteur de classes Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/vsclassdesigner/threads?page=1).
 
-## <a name="limitations"></a> Limitations pour les éléments de code C++
+## <a name="limitations-for-c-code-elements"></a><a name="limitations"></a> Limitations pour les éléments de code C++
 
 - Quand un projet Visual C++ est chargé, le Concepteur de classes fonctionne en lecture seule. Vous pouvez modifier le diagramme de classes, mais vous ne pouvez pas réenregistrer les modifications du diagramme de classes dans le code source.
 
@@ -107,4 +107,4 @@ Le Concepteur de classes affiche une aire de conception visuelle appelée *diagr
 - Le Concepteur de classes ne peut pas afficher les types void ou dérivés d'un type void.
 
 ## <a name="see-also"></a>Voir aussi
- [Conception et affichage des classes et des types](../ide/designing-and-viewing-classes-and-types.md) [utilisation des classes et d’autres types (Concepteur de classes)](../ide/working-with-classes-and-other-types-class-designer.md) [utilisation des diagrammes de classes (Concepteur de classes)](../ide/working-with-class-diagrams-class-designer.md) [conception de classes et de types (Concepteur de classes)](../ide/designing-classes-and-types-class-designer.md) [informations supplémentaires sur les erreurs](../ide/additional-information-about-class-designer-errors.md) [de concepteur de classes classes Visual C++ dans](../ide/visual-cpp-classes-in-class-designer.md) concepteur de classes [structures visuelles C++ dans Concepteur de classes](../ide/visual-cpp-structures-in-class-designer.md) les [ C++ énumérations](../ide/visual-cpp-enumerations-in-class-designer.md) visuelles dans Concepteur de classes des [typedefs visuels C++ ](../ide/visual-cpp-typedefs-in-class-designer.md) dans Concepteur de classes
+ [Conception et affichage des classes et des types](../ide/designing-and-viewing-classes-and-types.md) [utilisation des classes et d’autres types (Concepteur de classes)](../ide/working-with-classes-and-other-types-class-designer.md) [utilisation des diagrammes de classes (Concepteur de classes)](../ide/working-with-class-diagrams-class-designer.md) [conception de classes et de types (Concepteur de classes)](../ide/designing-classes-and-types-class-designer.md) [informations supplémentaires sur les erreurs de concepteur de classes](../ide/additional-information-about-class-designer-errors.md) [Visual C++ classes dans](../ide/visual-cpp-classes-in-class-designer.md) concepteur de classes [structures de Visual C++](../ide/visual-cpp-structures-in-class-designer.md) dans Concepteur de classes les [énumérations](../ide/visual-cpp-enumerations-in-class-designer.md) Visual C++ dans Concepteur de classes les [typedefs](../ide/visual-cpp-typedefs-in-class-designer.md) Visual C++ dans Concepteur de classes

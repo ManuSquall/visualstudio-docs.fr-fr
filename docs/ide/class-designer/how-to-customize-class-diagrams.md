@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4e8e4665790aa228bb30aac05ea4782cfe4a62f1
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770173"
 ---
 # <a name="how-to-customize-class-diagrams"></a>Guide pratique pour personnaliser des diagrammes de classes
@@ -37,7 +37,7 @@ Les sections qui contiennent des membres de type, telles que la section **Propri
 
 2. Dans la barre d’outils **Concepteur de classes** , cliquez sur le bouton **Zoom avant** ou **Zoom arrière** pour modifier le niveau de zoom de l’aire du concepteur.
 
-     ou
+     or
 
      Spécifiez une valeur de zoom particulière. Vous pouvez utiliser la liste déroulante **Zoom** ou taper un niveau de zoom valide (la plage valide est comprise entre 10 % et 400 %).
 

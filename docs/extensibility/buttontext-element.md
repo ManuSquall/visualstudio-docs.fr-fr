@@ -1,5 +1,5 @@
 ---
-title: Élément ButtonText (fr) Microsoft Docs
+title: ButtonText, élément | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 59308feea2002a18662a7c04b95a92a920f934c4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80739910"
 ---
 # <a name="buttontext-element"></a>Élément ButtonText
-Ce champ vous permet de spécifier le texte qui apparaît dans différents menus. Par défaut, `ButtonText` l’élément apparaît dans les contrôleurs de menu. L’élément `ButtonText` devient également par défaut si les autres champs de texte sont vides. L’élément `ButtonText` ne peut pas être vide même si les autres champs de texte sont spécifiés.
+Ce champ vous permet de spécifier le texte qui apparaît dans différents menus. Par défaut, l' `ButtonText` élément apparaît dans les contrôleurs de menu. L' `ButtonText` élément devient également la valeur par défaut si les autres champs de texte sont vides. L' `ButtonText` élément ne peut pas être vide même si les autres champs de texte sont spécifiés.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -40,10 +40,10 @@ Ce champ vous permet de spécifier le texte qui apparaît dans différents menus
 
 |Élément|Description|
 |-------------|-----------------|
-|[Élément cordes](../extensibility/strings-element.md)|Groupes éléments de `ButtonText` texte, tels que et `CommandName`.|
+|[Élément Strings](../extensibility/strings-element.md)|Groupe des éléments de texte, tels que `ButtonText` et `CommandName` .|
 
 ## <a name="text-value"></a>Valeur texte
- La valeur textuelle de l’élément `ButtonText` fournit le texte qui s’affiche pour les éléments de menu, les combos et autres éléments de l’interface utilisateur (interface utilisateur) qui ont du texte visible.
+ La valeur texte de l' `ButtonText` élément fournit le texte affiché pour les éléments de menu, les combos et d’autres éléments de l’interface utilisateur qui ont du texte visible.
 
 ## <a name="see-also"></a>Voir aussi
-- [Fichiers visualister de table de commande de studio (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Fichiers de table de commandes Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

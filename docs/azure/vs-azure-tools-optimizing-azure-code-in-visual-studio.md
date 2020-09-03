@@ -10,10 +10,10 @@ ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: ghogen
 ms.openlocfilehash: e42a746761b09e99e158ecef8e9054bc0049c03d
-ms.sourcegitcommit: 59a8732dc563242590f7c6ccf4ced6c6d195533c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "81489634"
 ---
 # <a name="optimizing-your-azure-code"></a>Optimisation de votre code Azure
@@ -108,7 +108,7 @@ BrokeredMessage receivedMessage = sc.Receive();
 Pour plus d’informations, consultez les rubriques suivantes.
 
 * Pour une vue d’ensemble, consultez [Authentification de signature d’accès partagé avec Service Bus](https://msdn.microsoft.com/library/dn170477.aspx)
-* [Comment utiliser l’authentification de signature d’accès partagé avec Le bus de service](https://msdn.microsoft.com/library/dn205161.aspx)
+* [Comment utiliser l’authentification par signature d’accès partagé avec Service Bus](https://msdn.microsoft.com/library/dn205161.aspx)
 * Pour un exemple de projet, consultez [Utilisation de l’authentification de signature d’accès partagé avec des abonnements Service Bus](https://code.msdn.microsoft.com/windowsapps/Shared-Access-Signature-0a88adf8)
 
 ## <a name="consider-using-onmessage-method-to-avoid-receive-loop"></a>Envisagez d'utiliser la méthode OnMessage pour éviter l’erreur de « boucle de réception »

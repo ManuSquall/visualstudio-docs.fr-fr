@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ffd0f7378893b52e93480272c73acc2aa413320d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85533717"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Personnaliser des tâches de génération et de débogage pour le développement « Ouvrir le dossier »
@@ -311,7 +311,7 @@ Les paramètres lus à partir du fichier *.gitignore* sont appliqués à son ré
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Développer du code sans projet ou solution](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
+- [Développer du code sans projets ni solutions](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
 - [Projets Dossier ouvert pour C++](/cpp/build/open-folder-projects-cpp)
 - [Projets CMake pour C++](/cpp/build/cmake-projects-in-visual-studio)
 - [Informations de référence sur NMAKE](/cpp/build/reference/nmake-reference)

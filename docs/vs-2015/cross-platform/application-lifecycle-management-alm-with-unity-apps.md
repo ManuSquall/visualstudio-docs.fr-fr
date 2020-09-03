@@ -10,10 +10,10 @@ author: conceptdev
 ms.author: crdun
 manager: jillfra
 ms.openlocfilehash: 90efd4e72ea172822e0bcc424bdbbc4bc7589098
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80233281"
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>Application Lifecycle Management (ALM) avec les applications Unity
@@ -45,14 +45,14 @@ Le développement d'applications pour des plateformes modernes implique de nombr
   
 |Fonctionnalité|Prise en charge avec Unity|Commentaires supplémentaires|  
 |-------------|--------------------------|-------------------------|  
-|Diagrammes de séquence|Non ||  
-|Graphiques de dépendance|Non ||  
-|Hiérarchie d'appels|Non ||  
-|Concepteur de classes|Non ||  
-|Navigateur de l'architecture|Non ||  
-|Diagrammes UML (cas d'usage, activité, classe, composant, séquence et DSL)|Non ||  
-|Diagrammes de couche|Non ||  
-|Validation de couche|Non ||  
+|Diagrammes de séquence|Non||  
+|Graphiques de dépendance|Non||  
+|Hiérarchie d'appels|Non||  
+|Concepteur de classes|Non||  
+|Navigateur de l'architecture|Non||  
+|Diagrammes UML (cas d'usage, activité, classe, composant, séquence et DSL)|Non||  
+|Diagrammes de couche|Non||  
+|Validation de couche|Non||  
   
 ## <a name="code"></a>Code  
   
@@ -79,7 +79,7 @@ Le développement d'applications pour des plateformes modernes implique de nombr
 |-------------|--------------------------|-------------------------|  
 |Serveur TFS local|Possible|Les projets Unity sont créés via l'environnement Unity et non via le système de génération de Visual Studio (la génération dans Visual Studio Tools pour Unity entraîne la compilation des scripts, mais ne produit pas de fichier exécutable). Comme il est possible de [générer des projets Unity à partir de la ligne de commande](https://docs.unity3d.com/Manual/CommandLineArguments.html) (documentation Unity), il est possible de configurer un processus MSBuild sur un serveur TFS pour exécuter les commandes Unity appropriées, à condition que Unity lui-même soit installé sur cet ordinateur.<br /><br /> Unity propose également [Unity Cloud Build](https://build.cloud.unity3d.com/landing/), qui surveille un dépôt Git ou SVN, et exécute des builds périodiques. Actuellement, il ne fonctionne pas avec Team Foundation Version Control, ni avec Visual Studio Team Services.|  
 |Serveur de builds local lié à Visual Studio Team Services|Possible|Dans les mêmes conditions que ci-dessus, il est également possible de diriger des builds déclenchées via Visual Studio Team Services pour utiliser un ordinateur TFS local.  Consultez la rubrique [Serveur de builds](https://msdn.microsoft.com/library/2d258a0a-f178-4e93-9da1-eba61151af3c) pour obtenir des instructions.|  
-|Service de contrôleur hébergé de Visual Studio Team Services|Non |Les builds Unity ne sont pas prises en charge.|  
+|Service de contrôleur hébergé de Visual Studio Team Services|Non|Les builds Unity ne sont pas prises en charge.|  
 |Définitions de builds avec des pré-scripts et des post-scripts|Oui|Une définition de build personnalisée qui utilise la ligne de commande Unity pour exécuter une build peut également être configurée pour des scripts de pré- ou post-compilation.|  
 |Intégration continue, y compris les archivages contrôlés|Oui|Archivages contrôlés pour TFVC uniquement si Git utilise un modèle de requête d'extraction plutôt que des archivages.|  
   
@@ -93,7 +93,7 @@ Le développement d'applications pour des plateformes modernes implique de nombr
 |Gestionnaire de tests (enregistrer et rejouer des tests)|Appareils Windows et émulateurs Android uniquement||  
 |Couverture du code|n/a|Non applicable car le test unitaire se produit dans Unity et non dans Visual Studio. Voir ci-dessous.|  
 |[Tests unitaires sur votre code](../test/unit-test-your-code.md)|Dans Unity, mais pas dans Visual Studio|Unity fournit son propre framework de tests unitaires dans le cadre de [Unity Test Tools](https://assetstore.unity.com/packages/tools/utilities/unity-test-tools-13802) (Unity Asset Store). Les résultats des tests unitaires sont signalés dans Unity et ne seront pas visibles dans Visual Studio.|  
-|[Utiliser UI Automation pour tester votre code](../test/use-ui-automation-to-test-your-code.md)|Non |Les tests codés de l’interface utilisateur s’appuient sur des contrôles lisibles dans l’interface utilisateur de l’application. Les applications Unity sont graphiques par nature et le contenu n’est donc pas lisible par les outils de test codés de l’interface utilisateur.|  
+|[Utiliser UI Automation pour tester votre code](../test/use-ui-automation-to-test-your-code.md)|Non|Les tests codés de l’interface utilisateur s’appuient sur des contrôles lisibles dans l’interface utilisateur de l’application. Les applications Unity sont graphiques par nature et le contenu n’est donc pas lisible par les outils de test codés de l’interface utilisateur.|  
   
 ## <a name="improve-code-quality"></a>Améliorer la qualité du code  
  Lien de référence : **[Améliorer la qualité du code](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
@@ -103,17 +103,17 @@ Le développement d'applications pour des plateformes modernes implique de nombr
 |[Analyse de la qualité d’un code managé](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|Oui|Permet d’analyser le code de script C# dans Visual Studio.|  
 |[Recherche du code dupliqué à l’aide de la détection de clone de code](https://msdn.microsoft.com/library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|Oui|Permet d’analyser le code de script C# dans Visual Studio.|  
 |[Mesures de la complexité et de la facilité de maintenance du code managé](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|Oui|Permet d’analyser le code de script C# dans Visual Studio.|  
-|[Explorateur de performances](../profiling/performance-explorer.md)|Non |Utilisez le [profileur Unity](https://docs.unity3d.com/Manual/Profiler.html) (site web Unity).|  
-|[Analyser des problèmes de mémoire liés à .NET Framework](../misc/analyze-dotnet-framework-memory-issues.md)|Non |Visual Studio Tools n’a pas de hook au framework Mono (tels qu'ils sont utilisés par Unity) pour le profilage. Utilisez le [profileur Unity](https://docs.unity3d.com/Manual/Profiler.html) (documentation Unity).|  
+|[Explorateur de performances](../profiling/performance-explorer.md)|Non|Utilisez le [profileur Unity](https://docs.unity3d.com/Manual/Profiler.html) (site web Unity).|  
+|[Analyser des problèmes de mémoire liés à .NET Framework](../misc/analyze-dotnet-framework-memory-issues.md)|Non|Visual Studio Tools n’a pas de hook au framework Mono (tels qu'ils sont utilisés par Unity) pour le profilage. Utilisez le [profileur Unity](https://docs.unity3d.com/Manual/Profiler.html) (documentation Unity).|  
   
-## <a name="release-management"></a>Gestion des versions  
+## <a name="release-management"></a>Gestion des mises en production  
  Lien de référence : **[Automatiser les déploiements avec Release Management](https://msdn.microsoft.com/library/vs/alm/release/overview)**  
   
 |Fonctionnalité|Prise en charge avec Unity|Commentaires supplémentaires|  
 |-------------|--------------------------|-------------------------|  
 |Gérer les processus de publication des versions|Oui||  
 |Déploiement sur des serveurs pour le chargement de version test via des scripts|Oui||  
-|Télécharger vers le magasin d'applications|Partiel|Il existe des extensions qui peuvent automatiser ce processus pour certains magasins d’applications.  Consultez [Extensions pour Visual Studio Team Services](https://marketplace.visualstudio.com/VSTS), par exemple l’[extension pour Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|  
+|Télécharger vers le magasin d'applications|Partial|Il existe des extensions qui peuvent automatiser ce processus pour certains magasins d’applications.  Consultez [Extensions pour Visual Studio Team Services](https://marketplace.visualstudio.com/VSTS), par exemple l’[extension pour Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|  
   
 ## <a name="monitor-with-hockeyapp"></a>Analyser avec HockeyApp  
  Lien de référence : **[Analyser avec HockeyApp](https://www.hockeyapp.net/features/)**  

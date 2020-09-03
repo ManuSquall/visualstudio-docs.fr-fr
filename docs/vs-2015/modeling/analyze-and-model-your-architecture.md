@@ -33,10 +33,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 3e00735a180ec951a8afced0f5c74f7a9466e50b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534093"
 ---
 # <a name="analyze-and-model-your-architecture"></a>Analyser et modéliser votre architecture
@@ -48,7 +48,7 @@ Faites-en sorte que votre application respecte les spécifications de l’utilis
 
  Pour connaître les versions de Visual Studio qui prennent en charge chaque fonctionnalité, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-## <a name="to"></a>À
+## <a name="to"></a>Pour
 
 |Scénario|Articles|
 |-|-|

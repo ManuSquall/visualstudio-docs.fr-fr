@@ -35,10 +35,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 57b2ea6a0c69387043057bc07957a757ed351f99
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85769402"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Utiliser des points d’arrêt dans le débogueur Visual Studio
@@ -48,7 +48,7 @@ Les points d’arrêt constituent l’une des techniques de débogage les plus i
 > [!NOTE]
 > Si vous connaissez la tâche ou le problème que vous tentez de résoudre, mais que vous devez connaître le type de point d’arrêt à utiliser, consultez [Rechercher votre tâche de débogage](../debugger/find-your-debugging-task.md#pause-running-code).
 
-## <a name="set-breakpoints-in-source-code"></a><a name="BKMK_Overview"></a>Définir des points d’arrêt dans le code source
+## <a name="set-breakpoints-in-source-code"></a><a name="BKMK_Overview"></a> Définir des points d’arrêt dans le code source
 
 Vous pouvez définir un point d’arrêt sur n’importe quelle ligne de code exécutable. Par exemple, dans le code C# suivant, vous pouvez définir un point d’arrêt sur la ligne de code avec l’assignation de variable ( `int testInt = 1` ), la `for` boucle ou tout code à l’intérieur de la `for` boucle. Vous ne pouvez pas définir un point d’arrêt sur les signatures de méthode, les déclarations pour un espace de noms ou une classe, ou les déclarations de variable s’il n’y a aucune assignation et aucune méthode Getter/Setter.
 
@@ -74,7 +74,7 @@ Voici quelques instructions générales sur l’utilisation des points d’arrê
 
 - Définissez des conditions et des actions, ajoutez et modifiez des étiquettes, ou exportez un point d’arrêt en cliquant dessus avec le bouton droit et en sélectionnant la commande appropriée, ou en pointant dessus et en sélectionnant l’icône **paramètres** .
 
-## <a name="breakpoint-actions-and-tracepoints"></a><a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a>Actions de point d’arrêt et points de trace
+## <a name="breakpoint-actions-and-tracepoints"></a><a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a> Actions de point d’arrêt et points de trace
 
 Un point de *trace* est un point d’arrêt qui affiche un message dans la fenêtre **sortie** . Un point de trace peut agir comme une instruction de trace temporaire dans le langage de programmation et n’interrompt pas l’exécution du code. Pour créer un point de trace, vous devez définir une action spéciale dans la fenêtre **paramètres de point d’arrêt** . Pour obtenir des instructions détaillées, consultez [utiliser des points de trace dans le débogueur Visual Studio](../debugger/using-tracepoints.md).
 
@@ -164,7 +164,7 @@ Sous **conditions** dans la fenêtre **paramètres de point d’arrêt** , séle
 
 Placez les valeurs de chaîne entre guillemets doubles. Vous pouvez combiner des clauses à l’aide de `&` (AND), `||` (OR), `!` (NOT) et de parenthèses.
 
-## <a name="set-function-breakpoints"></a><a name="BKMK_Set_a_breakpoint_in_a_source_file"></a>Définir des points d’arrêt sur fonction
+## <a name="set-function-breakpoints"></a><a name="BKMK_Set_a_breakpoint_in_a_source_file"></a> Définir des points d’arrêt sur fonction
 
 Vous pouvez arrêter l’exécution lorsqu’une fonction est appelée. Cela est utile, par exemple, lorsque vous connaissez le nom de la fonction, mais pas son emplacement. Elle est également utile si vous avez des fonctions portant le même nom et que vous souhaitez les arrêter toutes (telles que des fonctions surchargées ou des fonctions dans différents projets).
 
@@ -289,7 +289,7 @@ Vous pouvez utiliser des étiquettes pour trier et filtrer la liste des points d
 - Pour exporter tous les points d’arrêt, désélectionnez toutes les zones et laissez le champ de **recherche** vide. Sélectionnez l’icône **exporter tous les points d’arrêt correspondant aux critères de recherche actuels** , puis enregistrez le fichier.
 - Pour importer des points d’arrêt, dans la fenêtre **points d’arrêt** , sélectionnez l’icône **Importer les points d’arrêt à partir d’un fichier** , accédez à l’emplacement du fichier XML, puis sélectionnez **ouvrir**.
 
-## <a name="set-breakpoints-from-debugger-windows"></a><a name="BKMK_Set_a_breakpoint_from_debugger_windows"></a>Définir des points d’arrêt à partir des fenêtres du débogueur
+## <a name="set-breakpoints-from-debugger-windows"></a><a name="BKMK_Set_a_breakpoint_from_debugger_windows"></a> Définir des points d’arrêt à partir des fenêtres du débogueur
 
 Vous pouvez également définir des points d’arrêt à partir des fenêtres **pile des appels** et débogueur du **code machine** .
 

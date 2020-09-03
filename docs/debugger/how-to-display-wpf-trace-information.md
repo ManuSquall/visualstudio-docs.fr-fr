@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 362376176cfb95c4e285f6837c53d277110e3439
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85349781"
 ---
 # <a name="how-to-display-wpf-trace-information"></a>Comment : afficher les informations de trace WPF
@@ -30,7 +30,7 @@ ms.locfileid: "85349781"
 
 ### <a name="to-enable-or-customize-wpf-trace-information"></a>Pour activer ou personnaliser les informations de trace WPF
 
-1. Dans le menu **Outils**, sélectionnez **Options**.
+1. Dans le menu **Tools** (Outils), sélectionnez **Options**.
 
 2. Dans la boîte de dialogue **Options**, ouvrez le nœud **Débogage** dans la zone située à gauche.
 
@@ -66,7 +66,7 @@ ms.locfileid: "85349781"
 
 ### <a name="to-disable-wpf-trace-information"></a>Pour désactiver les informations de trace WPF
 
-1. Dans le menu **Outils**, sélectionnez **Options**.
+1. Dans le menu **Tools** (Outils), sélectionnez **Options**.
 
 2. Dans la boîte de dialogue **Options**, ouvrez le nœud **Débogage** dans la zone située à gauche.
 

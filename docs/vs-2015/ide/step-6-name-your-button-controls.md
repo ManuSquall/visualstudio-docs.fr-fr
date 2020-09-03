@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 4d4d703dbe28776cd93c7a438fc457d9f50ac4f7
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75851126"
 ---
 # <a name="step-6-name-your-button-controls"></a>Étape 6 : affecter un nom à vos contrôles bouton
@@ -26,7 +26,7 @@ Votre formulaire ne contient qu’un seul PictureBox. Lorsque vous l’avez ajou
 
  Il existe quatre boutons dans votre formulaire, et l’IDE les a nommés **button1**, **button2**, **button3**et **button4**. Leurs noms actuels ne vous permettent pas de savoir s’il s’agit du bouton **Fermer** ou du bouton **Afficher une image** . C’est pourquoi il est utile de donner à vos contrôles bouton des noms plus informatifs.
 
- ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo") Pour obtenir une version vidéo de cette rubrique, consultez [didacticiel 1 : créer une visionneuse d’images dans Visual Basic vidéo 3](https://msdn.microsoft.com/vbasic/gg315354.aspx) ou [didacticiel 1 : créer une visionneuse d' C# images vidéo 3](https://msdn.microsoft.com/vcsharp/gg278411.aspx). Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d’interface utilisateur. Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.
+ ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo") Pour obtenir une version vidéo de cette rubrique, consultez [didacticiel 1 : créer une visionneuse d’images dans Visual Basic-vidéo 3](https://msdn.microsoft.com/vbasic/gg315354.aspx) ou [didacticiel 1 : créer une visionneuse d’images en C#-vidéo 3](https://msdn.microsoft.com/vcsharp/gg278411.aspx). Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d’interface utilisateur. Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.
 
 ### <a name="to-name-your-button-controls"></a>Pour nommer vos contrôles bouton
 
@@ -41,7 +41,7 @@ Votre formulaire ne contient qu’un seul PictureBox. Lorsque vous l’avez ajou
 
 3. Double-cliquez sur le bouton **Afficher une image** du formulaire. Vous pouvez également sélectionner le bouton **Afficher une image** sur le formulaire, puis appuyer sur la touche Entrée. Dans ce cas, l’IDE ouvre un onglet supplémentaire appelé **Form1.cs** (**Form1.vb** si vous utilisez Visual Basic) dans la fenêtre principale. Cet onglet affiche le fichier de code utilisé pour le formulaire, comme illustré dans l’image suivante.
 
-     ![Onglet Form1.cs avec le code&#35; visual C](../ide/media/express-showbuttoncode.png "Express_ShowButtonCode") Form1.cs onglet avec C# code visuel
+     ![Onglet Form1.cs avec code Visual C&#35;](../ide/media/express-showbuttoncode.png "Express_ShowButtonCode") Onglet Form1.cs avec code Visual C#
 
 4. Examinez attentivement cette partie du code. (Sélectionnez l’onglet **VB** ci-dessous si vous utilisez Visual Basic pour consulter la version Visual Basic du code.)
 
@@ -71,7 +71,7 @@ Votre formulaire ne contient qu’un seul PictureBox. Lorsque vous l’avez ajou
 
      Une fois que vous avez ajouté un gestionnaire d’événements pour un contrôle, vous pouvez y revenir à tout moment en double-cliquant sur le contrôle via le Concepteur Windows Forms ou, dans la barre de menus, en choisissant **Afficher**, **Code**.
 
-     Les noms sont importants lorsque vous générez des programmes, et vous pouvez nommer les méthodes (y compris les gestionnaires d’événements) comme vous le voulez. Lorsque vous ajoutez un gestionnaire d’événements avec l’IDE, il choisit un nom en fonction du nom du contrôle et de l’événement qui est géré. Par exemple, l’événement Click pour un bouton nommé **showButton** est appelé méthode du gestionnaire d’événements `showButton_Click()` . De même, des parenthèses ouvrantes et fermantes () sont généralement ajoutées après le nom de la méthode pour indiquer clairement qu’il s’agit de méthodes. Si vous décidez de modifier un nom de variable de code, cliquez avec le bouton droit sur la variable dans le code, puis choisissez **Refactoriser**, **Renommer**. Toutes les instances de cette variable dans le code sont renommées. Pour plus d’informations, consultez [refactorisation renommer (C#)](../csharp-ide/rename-refactoring-csharp.md) ou [refactorisation et renommer la boîte de dialogue](https://msdn.microsoft.com/library/001d2d81-9bb6-4e8e-ae3a-20c0daaa3959) .
+     Les noms sont importants lorsque vous générez des programmes, et vous pouvez nommer les méthodes (y compris les gestionnaires d’événements) comme vous le voulez. Lorsque vous ajoutez un gestionnaire d’événements avec l’IDE, il choisit un nom en fonction du nom du contrôle et de l’événement qui est géré. Par exemple, l’événement Click pour un bouton nommé **showButton** est appelé méthode du gestionnaire d’événements `showButton_Click()` . De même, des parenthèses ouvrantes et fermantes () sont généralement ajoutées après le nom de la méthode pour indiquer clairement qu’il s’agit de méthodes. Si vous décidez de modifier un nom de variable de code, cliquez avec le bouton droit sur la variable dans le code, puis choisissez **Refactoriser**, **Renommer**. Toutes les instances de cette variable dans le code sont renommées. Pour plus d’informations, consultez [refactorisation de changement de nom (C#)](../csharp-ide/rename-refactoring-csharp.md) ou [refactorisation et boîte de dialogue Renommer](https://msdn.microsoft.com/library/001d2d81-9bb6-4e8e-ae3a-20c0daaa3959) .
 
 ### <a name="to-continue-or-review"></a>Pour continuer ou examiner
 

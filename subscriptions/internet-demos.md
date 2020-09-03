@@ -8,10 +8,10 @@ ms.date: 03/09/2020
 ms.topic: conceptual
 description: Découvrir comment utiliser les clés de produit pour prendre en charge les démonstrations Internet via les services Terminal Server et activer l’accès des Services Bureau à distance
 ms.openlocfilehash: 2d5f23f0d161ee9f50569e0ff7f8ce585c8c49ff
-ms.sourcegitcommit: eeff6f675e7850e718911647343c5df642063d5e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80232442"
 ---
 # <a name="internet-demonstrations-via-terminal-services"></a>Démonstrations Internet via les services Terminal Server
@@ -36,8 +36,8 @@ Les utilisateurs finaux peuvent utiliser les services Bureau à distance pour se
 - Les clés de produit permettant d’activer les connexions utilisateur doivent être obtenues par un abonné Visual Studio.
 
 ## <a name="see-also"></a>Voir aussi
-- [Documenation Windows Server](https://docs.microsoft.com/windows-server/)
-- [Documentation Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentation de Windows Server](https://docs.microsoft.com/windows-server/)
+- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentation Azure](https://docs.microsoft.com/azure/)
 - [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)

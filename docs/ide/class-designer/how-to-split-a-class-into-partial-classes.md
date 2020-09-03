@@ -15,10 +15,10 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 623ac5269b78faee9f68580f0803576ad56c1233
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770036"
 ---
 # <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>Guide pratique pour diviser une classe en classes partielles dans le Concepteur de classes

@@ -32,10 +32,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 458e6cb4ebf882d2d9e331823cc4955143e7d5b7
-ms.sourcegitcommit: c076fe12e459f0dbe2cd508e1294af14cb53119f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85349157"
 ---
 # <a name="set-debug-and-release-configurations-in-visual-studio"></a>Définir des configurations Debug et Release dans Visual Studio
@@ -56,7 +56,7 @@ Pour modifier la configuration de build, effectuez l’une des opérations suiva
 
 * Dans le menu **générer** , sélectionnez **Configuration Manager**, puis sélectionnez **Debug** ou **Release**.
 
-ou
+or
 
 * Dans la barre d’outils, choisissez **Debug** ou **Release** dans la liste **Configurations de solutions**.
 

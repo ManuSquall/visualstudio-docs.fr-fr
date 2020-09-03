@@ -14,10 +14,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 61ec972bd5e361c4417e49092de5976000a6da5f
-ms.sourcegitcommit: dfa9476b69851c28b684ece66980bee735fef8fd
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80273892"
 ---
 # <a name="install-build-tools-into-a-container"></a>Installer Build Tools dans un conteneur
@@ -41,7 +41,7 @@ Enregistrez l’exemple Dockerfile suivant dans un nouveau fichier sur votre dis
 > [!WARNING]
 > Cet exemple de fichier Dockerfile exclut seulement les anciens SDK Windows qui ne peuvent pas être installés dans des conteneurs. Les versions précédentes font échouer la commande de build.
 
-1. Ouvrez une invite de commandes.
+1. Ouvrez une invite de commande.
 
 1. Créez un répertoire (recommandé) :
 
@@ -87,7 +87,7 @@ Enregistrez l’exemple Dockerfile suivant dans un nouveau fichier sur votre dis
    ```
 
    > [!TIP]
-   > Pour une liste de charges de travail et de composants, consultez le [répertoire des composants Visual Studio Build Tools](workload-component-id-vs-build-tools.md).
+   > Pour obtenir la liste des charges de travail et des composants, consultez le [répertoire du composant Visual Studio Build Tools](workload-component-id-vs-build-tools.md).
    >
 
    > [!WARNING]
@@ -129,7 +129,7 @@ Enregistrez l’exemple Dockerfile suivant dans un nouveau fichier sur votre dis
    ```
 
    > [!TIP]
-   > Pour une liste de charges de travail et de composants, consultez le [répertoire des composants Visual Studio Build Tools](workload-component-id-vs-build-tools.md).
+   > Pour obtenir la liste des charges de travail et des composants, consultez le [répertoire du composant Visual Studio Build Tools](workload-component-id-vs-build-tools.md).
    >
 
    > [!WARNING]
@@ -140,7 +140,7 @@ Enregistrez l’exemple Dockerfile suivant dans un nouveau fichier sur votre dis
    ::: moniker-end
    
    > [!NOTE]
-   > Le `3010` code d’erreur est utilisé pour indiquer le succès avec un redémarrage requis, voir [les messages d’erreur MsiExec.exe](/windows/win32/msi/error-codes) pour plus d’informations.
+   > Le code d’erreur `3010` est utilisé pour indiquer la réussite d’un redémarrage requis. pour plus d’informations, consultez [MsiExec.exe des messages d’erreur](/windows/win32/msi/error-codes) .
 
 1. Exécutez la commande suivante dans ce répertoire.
 
@@ -172,7 +172,7 @@ Enregistrez l’exemple Dockerfile suivant dans un nouveau fichier sur votre dis
 
 Maintenant que vous avez créé une image, vous pouvez l’exécuter dans un conteneur pour effectuer des générations automatisées et interactives. L’exemple utilise l’invite de commandes développeur. Votre chemin (PATH) et autres variables d’environnement sont donc déjà configurés.
 
-1. Ouvrez une invite de commandes.
+1. Ouvrez une invite de commande.
 
 1. Exécutez le conteneur pour démarrer un environnement PowerShell avec toutes les variables d’environnement développeur définies :
 
@@ -195,11 +195,11 @@ Maintenant que vous avez créé une image, vous pouvez l’exécuter dans un con
 Pour utiliser cette image pour votre workflow CI/CD, vous pouvez la publier dans votre propre instance [Azure Container Registry](https://azure.microsoft.com/services/container-registry) ou dans un autre [registre Docker](https://docs.docker.com/registry/deploying) interne, pour que les serveurs doivent seulement l’extraire.
 
    > [!NOTE]
-   > Si le conteneur Docker ne démarre pas, il y a probablement un problème d’installation Visual Studio. Vous pouvez mettre à jour le Dockerfile pour supprimer l’étape qui appelle la commande de lot Visual Studio. Cela vous permet de démarrer le conteneur Docker et de lire les journaux d’erreur d’installation.
+   > Si le conteneur d’ancrage ne parvient pas à démarrer, il s’agit probablement d’un problème d’installation de Visual Studio. Vous pouvez mettre à jour fichier dockerfile pour supprimer l’étape qui appelle la commande Batch de Visual Studio. Cela vous permet de démarrer le conteneur de l’ancrage et de lire les journaux des erreurs d’installation.
    >
-   > Dans votre fichier Dockerfile, `&&` supprimez `ENTRYPOINT` les `C:\\BuildTools\\Common7\\Tools\\VsDevCmd.bat` paramètres et les paramètres de la commande. La commande devrait `ENTRYPOINT ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]`maintenant être . Ensuite, reconstruisez le `run` Dockerfile et exécutez la commande pour accéder aux fichiers conteneurs. Pour localiser les journaux d’erreur `$env:TEMP` d’installation, `dd_setup_<timestamp>_errors.log` rendez-vous sur l’annuaire et localisez le fichier.
+   > Dans votre fichier fichier dockerfile, supprimez `C:\\BuildTools\\Common7\\Tools\\VsDevCmd.bat` les `&&` paramètres et de la `ENTRYPOINT` commande. La commande doit maintenant être `ENTRYPOINT ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]` . Ensuite, régénérez le fichier dockerfile et exécutez la `run` commande pour accéder aux fichiers de conteneur. Pour localiser les journaux des erreurs d’installation, accédez au `$env:TEMP` répertoire et localisez le `dd_setup_<timestamp>_errors.log` fichier.
    >
-   > Après avoir identifié et corrigé le problème `C:\\BuildTools\\Common7\\Tools\\VsDevCmd.bat` `&&` d’installation, `ENTRYPOINT` vous pouvez ajouter les paramètres et les paramètres de retour à la commande et reconstruire votre Dockerfile.
+   > Après avoir identifié et corrigé le problème d’installation, vous pouvez rajouter les `C:\\BuildTools\\Common7\\Tools\\VsDevCmd.bat` `&&` paramètres et à la `ENTRYPOINT` commande, puis recréer votre fichier dockerfile.
    >
    > Pour plus d’informations, consultez [Problèmes connus liés aux conteneurs](build-tools-container-issues.md).
 
@@ -208,5 +208,5 @@ Pour utiliser cette image pour votre workflow CI/CD, vous pouvez la publier dans
 ## <a name="see-also"></a>Voir aussi
 
 * [Exemple avancé pour les conteneurs](advanced-build-tools-container.md)
-* [Problèmes de conteneurs connus](build-tools-container-issues.md)
+* [Problèmes connus liés aux conteneurs](build-tools-container-issues.md)
 * [ID de composant et de charge de travail de Visual Studio Build Tools](workload-component-id-vs-build-tools.md)

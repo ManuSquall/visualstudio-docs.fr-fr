@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 236a95cd8d4af8da91199bf79e7c9fe3aa0d49af
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85769488"
 ---
 # <a name="automatic-feature-suspension"></a>Suspension automatique de fonctionnalités
@@ -48,7 +48,7 @@ Par défaut, l’analyse du code en direct s’exécute pour les documents et pr
 
 ## <a name="gc-low-latency-disabled"></a>Faible latence GC désactivée
 
-Pour réactiver le mode de faible latence GC, redémarrez Visual Studio. Par défaut, Visual Studio active le mode de faible latence GC chaque fois que vous tapez pour vous assurer que votre saisie ne bloque pas les opérations GC. Toutefois, si une condition de mémoire insuffisante entraîne l’affichage de l’avertissement de suspension automatique par Visual Studio, le mode de latence faible GC est désactivé pour cette session. Le redémarrage de Visual Studio réactive le comportement de GC par défaut. Pour plus d’informations, consultez <xref:System.Runtime.GCLatencyMode>.
+Pour réactiver le mode de faible latence GC, redémarrez Visual Studio. Par défaut, Visual Studio active le mode de faible latence GC chaque fois que vous tapez pour vous assurer que votre saisie ne bloque pas les opérations GC. Toutefois, si une condition de mémoire insuffisante entraîne l’affichage de l’avertissement de suspension automatique par Visual Studio, le mode de latence faible GC est désactivé pour cette session. Le redémarrage de Visual Studio réactive le comportement de GC par défaut. Pour plus d'informations, consultez <xref:System.Runtime.GCLatencyMode>.
 
 ## <a name="visual-studio-caches-flushed"></a>Caches Visual Studio vidés
 

@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 943f50823892e3cd942709bdcd4556b65c006b58
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770302"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>ProjectItem, élément (modèles de projet Visual Studio)
@@ -31,7 +31,7 @@ Spécifie un fichier inclus dans le modèle de projet.
  \<Project>
  \<ProjectItem>
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Syntaxe
 
 ```
 <ProjectItem
@@ -73,8 +73,8 @@ Spécifie un fichier inclus dans le modèle de projet.
 
  `string`Qui représente le nom ou le chemin d’accès à un fichier dans le fichier *. zip* du modèle.
 
-## <a name="remarks"></a>Remarques
- `ProjectItem`est un enfant facultatif de `Project` .
+## <a name="remarks"></a>Notes
+ `ProjectItem` est un enfant facultatif de `Project` .
 
  L' `TargetFileName` attribut peut être utilisé pour créer une structure de répertoires différente de la structure de répertoires dans le fichier *. zip* du modèle. Par exemple, si le fichier *MyFile. vb* existe à la racine du fichier *. zip* du modèle, mais que vous souhaitez placer le fichier dans un répertoire nommé *CustomFiles* dans tous les projets créés à partir du modèle, vous devez utiliser le code XML suivant :
 

@@ -1,5 +1,5 @@
 ---
-title: Référence de l’Interface utilisateur de débogage | Microsoft Docs
+title: Débogage de la référence de l’interface utilisateur | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -23,10 +23,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 59cc4e96630be23ee864e3d5a03cbb6dde709695
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68191231"
 ---
 # <a name="debugging-user-interface-reference"></a>Référence du débogage de l'interface utilisateur
@@ -36,18 +36,18 @@ Vous pouvez rencontrer les boîtes de dialogue suivantes à mesure que vous déb
   
  De nombreuses fonctionnalités du débogueur peuvent être automatisées à l’aide du modèle d’extensibilité Visual Studio. Pour plus d'informations, consultez le Kit de développement Visual Studio Debugging SDK.  
   
-- [Choisir les points d’arrêt, boîte de dialogue](../debugger/choose-breakpoints-dialog-box.md)  
+- [Boîte de dialogue Choisir les points d’arrêt](../debugger/choose-breakpoints-dialog-box.md)  
   
-- [Fichiers sources pour le débogage, Propriétés communes, boîte de dialogue Pages de propriétés de solution](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md)  
+- [Fichiers sources pour le débogage, Propriétés communes, boîte de dialogue Pages de propriétés de Solution](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md)  
   
 - [Débogage, boîte de dialogue Options](../debugger/debugging-options-dialog-box.md)  
   
-- [Modifier & Continuer, boîte de dialogue](../debugger/edit-and-continue-dialog-box.md)  
+- [Boîte de dialogue Modifier &amp; Continuer](../debugger/edit-and-continue-dialog-box.md)  
   
-- [Arrêt du débogage en cours, boîte de dialogue](../debugger/stop-debugging-in-progress-dialog-box.md)  
+- [Arrêt du débogage en cours (boîte de dialogue)](../debugger/stop-debugging-in-progress-dialog-box.md)  
   
 - [Erreur et avertissement, boîtes de dialogue pour le débogage](../debugger/debugging-errors-and-warning-dialog-boxes.md)  
   
 ## <a name="see-also"></a>Voir aussi  
  [Débogage dans Visual Studio](../debugger/debugging-in-visual-studio.md)   
- [Commande, fenêtre](../ide/reference/command-window.md)
+ [Fenêtre commande](../ide/reference/command-window.md)

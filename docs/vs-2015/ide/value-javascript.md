@@ -1,5 +1,5 @@
 ---
-title: '&lt;value &gt; (JavaScript) | Microsoft Docs'
+title: '&lt;valeur &gt; (JavaScript) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -13,16 +13,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: aefe710cc730d5624abc01bbdfc54d9961788787
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72656395"
 ---
 # <a name="ltvaluegt-javascript"></a>&lt;valeur&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Spécifie des informations de documentation pour les fonctions `get` et `set` pour les propriétés ECMAScript 3.
+Spécifie des informations de documentation pour les `get` `set` fonctions et pour les propriétés ECMAScript 3.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -44,11 +44,11 @@ Spécifie des informations de documentation pour les fonctions `get` et `set` po
 
 - Fonction constructeur JavaScript.
 
-  `integer` Facultatif. Si `type` est `Number`, spécifie si la propriété est un entier. Affectez la valeur `true` pour indiquer que la propriété est un entier. Sinon, affectez la valeur `false`. Cet attribut n’est pas utilisé par Visual Studio pour fournir des informations IntelliSense.
+  `integer` Facultatif. Si `type` est `Number` , spécifie si la propriété est un entier. Affectez `true` la valeur pour indiquer que la propriété est un entier ; sinon, affectez à la valeur `false` . Cet attribut n’est pas utilisé par Visual Studio pour fournir des informations IntelliSense.
 
-  `domElement` Facultatif. Cet attribut est déprécié ; l’attribut `type` a la priorité sur cet attribut. Cet attribut spécifie si la propriété documentée est un élément DOM. Affectez la valeur `true` pour spécifier que la propriété est un élément DOM ; Sinon, affectez la valeur `false`. Si l’attribut `type` n’est pas défini et `domElement` a la valeur `true`, IntelliSense traite la propriété documentée comme une `HTMLElement` lors de la saisie semi-automatique des instructions.
+  `domElement` Facultatif. Cet attribut est déprécié ; l’attribut `type` a la priorité sur cet attribut. Cet attribut spécifie si la propriété documentée est un élément DOM. Affectez `true` la valeur pour spécifier que la propriété est un élément DOM ; sinon, affectez à la valeur `false` . Si l' `type` attribut n’est pas défini et que `domElement` a la valeur `true` , IntelliSense traite la propriété documentée en tant que pour `HTMLElement` effectuer la saisie semi-automatique des instructions.
 
-  `mayBeNull` Facultatif. Spécifie si la propriété documentée peut être définie sur null. Affectez la valeur `true` pour indiquer que la propriété peut être définie sur null. Sinon, affectez la valeur `false`. La valeur par défaut est `false`. Cet attribut n’est pas utilisé par Visual Studio pour fournir des informations IntelliSense.
+  `mayBeNull` Facultatif. Spécifie si la propriété documentée peut être définie sur null. Affectez `true` la valeur pour indiquer que la propriété peut avoir la valeur NULL ; sinon, affectez à la valeur `false` . La valeur par défaut est `false`. Cet attribut n’est pas utilisé par Visual Studio pour fournir des informations IntelliSense.
 
   `elementType` Facultatif. Si `type` est `Array`, cet attribut spécifie le type des éléments contenus dans le tableau.
 
@@ -58,17 +58,17 @@ Spécifie des informations de documentation pour les fonctions `get` et `set` po
 
   `elementMayBeNull` Facultatif. Si `type` est `Array`, indique si les éléments contenus dans le tableau peuvent être définis sur null. Définissez `true` pour indiquer que les éléments contenus dans le tableau peuvent être définis sur null ; sinon, définissez `false`. La valeur par défaut est `false`. Cet attribut n’est pas utilisé par Visual Studio pour fournir des informations IntelliSense.
 
-  `locid` Facultatif. Identificateur des informations de localisation sur la propriété. L’identificateur est soit un ID de membre soit il correspond à la valeur d’attribut `name` dans un lot de messages défini par des métadonnées OpenAjax. Le type d’identificateur varie selon le format spécifié dans l’élément [\<loc>](../ide/loc-javascript.md).
+  `locid` Facultatif. Identificateur des informations de localisation sur la propriété. L’identificateur est soit un ID de membre soit il correspond à la valeur d’attribut `name` dans un lot de messages défini par des métadonnées OpenAjax. Le type d’identificateur dépend du format spécifié dans l' [\<loc>](../ide/loc-javascript.md) élément.
 
-  `description` Facultatif. Description de la propriété.
+  `description` Facultatif. Une description de la propriété.
 
-## <a name="remarks"></a>Remarques
- Les propriétés ECMAScript 5 utilisent l’élément [\<summary >](../ide/summary-javascript.md) .
+## <a name="remarks"></a>Notes
+ Les propriétés ECMAScript 5 utilisent l' [\<summary>](../ide/summary-javascript.md) élément.
 
- Utilisez l’élément `<value>` juste avant la fonction `get` ou `set`.
+ Utilisez l' `<value>` élément immédiatement avant la `get` `set` fonction ou.
 
-## <a name="example"></a>Exemples
- L’exemple de code suivant montre comment utiliser l’élément `<value>` sur une fonction `get`.
+## <a name="example"></a>Exemple
+ L’exemple de code suivant montre comment utiliser l' `<value>` élément sur une `get` fonction.
 
 ```javascript
 function Sys$CancelEventArgs$get_cancel() {
@@ -79,4 +79,4 @@ function Sys$CancelEventArgs$get_cancel() {
 ```
 
 ## <a name="see-also"></a>Voir aussi
- [Commentaires sur la documentation XML](../ide/xml-documentation-comments-javascript.md)
+ [Commentaires de documentation XML](../ide/xml-documentation-comments-javascript.md)

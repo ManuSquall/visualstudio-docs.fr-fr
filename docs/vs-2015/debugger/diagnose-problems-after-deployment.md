@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 41b24cf97ef0768ee700841aa859698cd2307710
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74298294"
 ---
 # <a name="diagnose-problems-after-deployment"></a>Diagnostiquer des problèmes après le déploiement
@@ -23,9 +23,9 @@ Si vous souhaitez utiliser IntelliTrace pour diagnostiquer les problèmes dans v
   
  Si vous utilisez Microsoft Monitoring Agent pour contrôler IntelliTrace, vous devez également configurer l’analyse des performances de l’application sur votre serveur web. Cela permet d’enregistrer des événements de diagnostic pendant l’exécution de votre application et d’enregistrer les événements dans un fichier journal IntelliTrace. Vous pouvez ensuite examiner les événements dans Visual Studio Enterprise (mais pas Professional ni Community), accéder au code où l’événement s’est produit, observer les valeurs enregistrées à cet instant donné, et avancer ou reculer dans le code qui a été exécuté. Après avoir identifié et corrigé le problème, répétez le cycle de génération, publication et surveillance de votre version, de sorte à pouvoir résoudre les éventuels problèmes futurs plus tôt et plus vite.  
   
- ![Code, Build, mise en publication, surveillance, diagnostic, correction](../debugger/media/ffr-cycle.png "FFR_Cycle")  
+ ![Code, build, publication, surveillance, diagnostic, résolution](../debugger/media/ffr-cycle.png "FFR_Cycle")  
   
- **Vous aurez besoin de :**  
+ **Vous devez disposer des éléments suivants :**  
   
 - Visual Studio 2015 ou Team Foundation Server 2015, 2013, 2012, ou 2010 pour paramétrer votre build  
   
@@ -33,22 +33,22 @@ Si vous souhaitez utiliser IntelliTrace pour diagnostiquer les problèmes dans v
   
 - Visual Studio Enterprise (mais pas Professional ni Community) pour vérifier les données de diagnostic et déboguer votre code avec IntelliTrace  
   
-## <a name="SetUpBuild"></a> Étape 1 : Ajouter les informations de build à votre version  
+## <a name="step-1-include-build-information-with-your-release"></a><a name="SetUpBuild"></a> Étape 1 : Ajouter les informations de build à votre version  
  Paramétrez votre processus de génération de sorte à créer un manifeste de build (fichier BuildInfo.config) pour votre projet web et ajoutez ce manifeste à votre version. Ce manifeste contient des informations sur le projet, le contrôle de code source et le système de génération utilisés pour créer une build spécifique. Ces informations aident Visual Studio à trouver la source et les symboles correspondants après ouverture du journal IntelliTrace pour examiner les événements enregistrés.  
   
-### <a name="AutomatedBuild"></a> Créer le manifeste de build pour une génération automatique à l’aide de Team Foundation Server  
+### <a name="create-the-build-manifest-for-an-automated-build-using-team-foundation-server"></a><a name="AutomatedBuild"></a> Créer le manifeste de build pour une génération automatique à l’aide de Team Foundation Server  
  Procédez comme suit si vous utilisez le contrôle de version ou le fournisseur Git Team Foundation.  
   
-#### <a name="TFS2013"></a> Team Foundation Server 2013  
+#### <a name="team-foundation-server-2013"></a><a name="TFS2013"></a> Team Foundation Server 2013  
  Paramétrez votre définition de build de sorte à ajouter l’emplacement de la source, de la génération et des symboles au manifeste de build (fichier BuildInfo.config). Team Foundation Build crée automatiquement ce fichier et le place dans le dossier de sortie de votre projet.  
   
-1. [Modifiez votre définition de build ou créez une nouvelle définition de Build.](https://msdn.microsoft.com/library/1c2eca2d-9a65-477e-9b23-0678ff7882ee)  
+1. [Modifiez votre définition de build ou créez une définition de build.](https://msdn.microsoft.com/library/1c2eca2d-9a65-477e-9b23-0678ff7882ee)  
   
     ![Afficher la définition de build dans TFS 2013](../debugger/media/ffr-tfs2013viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")  
   
 2. Choisissez le modèle par défaut (TfvcTemplate.12.xaml) ou votre propre modèle personnalisé.  
   
-    ![Choisir le modèle &#45; de processus de génération TFS 2013](../debugger/media/ffr-tfs2013buildprocesstemplate.png "FFR_TFS2013BuildProcessTemplate")  
+    ![Choisir un modèle de processus de génération &#45; TFS 2013](../debugger/media/ffr-tfs2013buildprocesstemplate.png "FFR_TFS2013BuildProcessTemplate")  
   
 3. Spécifiez l’emplacement où enregistrer le fichier de symboles (PDB) de sorte que votre source soit indexée automatiquement.  
   
@@ -66,9 +66,9 @@ Si vous souhaitez utiliser IntelliTrace pour diagnostiquer les problèmes dans v
   
 5. Si vous utilisez un modèle personnalisé, ajoutez l’argument MSBuild suivant pour spécifier l’emplacement où enregistrer le fichier de symboles :  
   
-    **/p:BuildSymbolStorePath=** \<*chemin vers les symboles*>  
+    **/p : BuildSymbolStorePath =**\<*path to symbols*>  
   
-    ![Inclure les informations du serveur de builds dans la définition de build TFS 2013](../debugger/media/ffr-tfs2013builddefincludeserverinfo.png "FFR_TFS2013BuildDefIncludeServerInfo")  
+    ![Inclure les informations du serveur de build dans la définition de build TFS 2013](../debugger/media/ffr-tfs2013builddefincludeserverinfo.png "FFR_TFS2013BuildDefIncludeServerInfo")  
   
     Ajoutez ces lignes à votre fichier projet web (.csproj, .vbproj) :  
   
@@ -82,7 +82,7 @@ Si vous souhaitez utiliser IntelliTrace pour diagnostiquer les problèmes dans v
   
    **Étape 2 :** [Étape 2 : Release your app](#DeployRelease)  
   
-#### <a name="TFS2012_2010"></a> Team Foundation Server 2012 ou 2010  
+#### <a name="team-foundation-server-2012-or-2010"></a><a name="TFS2012_2010"></a> Team Foundation Server 2012 ou 2010  
  Procédez comme suit pour créer automatiquement le manifeste de build (fichier BuildInfo.config) pour votre projet et le placer dans le dossier de sortie de votre projet. Le fichier s’affiche avec le nom «*Nom_projet*.BuildInfo.config » dans le dossier de sortie, mais est renommé en « BuildInfo.config » dans le dossier de déploiement une fois l’application publiée.  
   
 1. Installez Visual Studio 2013 (n’importe quelle édition) sur votre serveur Team Foundation Build.  
@@ -101,13 +101,13 @@ Si vous souhaitez utiliser IntelliTrace pour diagnostiquer les problèmes dans v
   
    - **/p:IncludeServerNameInBuildInfo=True**  
   
-   - **/p:BuildSymbolStorePath=** \<*chemin vers les symboles*>  
+   - **/p : BuildSymbolStorePath =**\<*path to symbols*>  
   
 4. Exécutez une nouvelle build.  
   
    **Étape 2 :** [Étape 2 : Release your app](#DeployRelease)  
   
-### <a name="ManualBuild"></a> Créer le manifeste de build pour une génération manuelle à l’aide de Visual Studio  
+### <a name="create-the-build-manifest-for-a-manual-build-using-visual-studio"></a><a name="ManualBuild"></a> Créer le manifeste de build pour une génération manuelle à l’aide de Visual Studio  
  Procédez comme suit pour créer automatiquement le manifeste de build (fichier BuildInfo.config) pour votre projet et le placer dans le dossier de sortie de votre projet. Le fichier s’affiche avec le nom «*Nom_projet*.BuildInfo.config » dans le dossier de sortie, mais est renommé en « BuildInfo.config » dans le dossier de déploiement une fois l’application publiée.  
   
 1. Dans l’ **Explorateur de solutions**, déchargez votre projet web.  
@@ -134,16 +134,16 @@ Si vous souhaitez utiliser IntelliTrace pour diagnostiquer les problèmes dans v
   
    **Étape 2 :** [Étape 2 : Release your app](#DeployRelease)  
   
-### <a name="MSBuild"></a> Créer le manifeste de build pour une génération manuelle à l’aide de MSBuild.exe  
+### <a name="create-the-build-manifest-for-a-manual-build-using-msbuildexe"></a><a name="MSBuild"></a> Créer le manifeste de build pour une génération manuelle à l’aide de MSBuild.exe  
  Ajoutez les arguments de build suivants quand vous exécutez une build :  
   
  **/p:GenerateBuildInfoConfigFile=True**  
   
  **/p:IncludeServerNameInBuildInfo=True**  
   
- **/p:BuildSymbolStorePath=** \<*chemin vers les symboles*>  
+ **/p : BuildSymbolStorePath =**\<*path to symbols*>  
   
-## <a name="DeployRelease"></a> Étape 2 : Déployer votre application  
+## <a name="step-2-release-your-app"></a><a name="DeployRelease"></a> Étape 2 : Déployer votre application  
  Si vous utilisez le [package Web.Deploy](https://msdn.microsoft.com/library/dd394698.aspx) créé par votre processus de génération pour déployer votre application, le manifeste de build «*Nom_projet*.BuildInfo.config » est automatiquement renommé en « BuildInfo.config » et est placé dans le même dossier que le fichier Web.config de votre application sur votre serveur web.  
   
  Si vous utilisez d’autres méthodes pour déployer votre application, assurez-vous que le manifeste de build «*Nom_projet*.BuildInfo.config » est renommé en « BuildInfo.config » et qu’il est placé dans le même dossier que le fichier Web.config de votre application sur le serveur web.  
@@ -151,7 +151,7 @@ Si vous souhaitez utiliser IntelliTrace pour diagnostiquer les problèmes dans v
 ## <a name="step-3-monitor-your-app"></a>Étape 3 : Surveiller votre application  
  Paramétrez la surveillance des performances de l’application sur votre serveur web de sorte à pouvoir surveiller si votre application rencontre des problèmes, enregistrer des événements de diagnostic et enregistrer ces événements dans un fichier journal IntelliTrace. Consultez [Surveiller votre version pour identifier les problèmes de déploiement](../debugger/using-the-intellitrace-stand-alone-collector.md).  
   
-## <a name="InvestigateEvents"></a> Étape 4 : Identifier le problème  
+## <a name="step-4-find-the-problem"></a><a name="InvestigateEvents"></a> Étape 4 : Identifier le problème  
  Vous devez installer Visual Studio Enterprise sur votre ordinateur de développement ou un autre ordinateur pour examiner les événements enregistrés et déboguer votre code à l’aide d’IntelliTrace. Vous pouvez aussi utiliser des outils comme CodeLens, les cartes de débogueur et les cartes de code pour vous aider à diagnostiquer le problème.  
   
 ### <a name="open-the-intellitrace-log-and-matching-solution"></a>Ouvrir le journal IntelliTrace et la solution correspondante  
@@ -164,29 +164,29 @@ Si vous souhaitez utiliser IntelliTrace pour diagnostiquer les problèmes dans v
   
      Avant d’effectuer des modifications, vérifiez que la source est correcte. Si vous utilisez la création de branche, vous travaillez peut-être dans une branche différente de celle dans laquelle Visual Studio trouve la source correspondante, comme votre branche de publication.  
   
-     ![Ouvrir la solution à partir du Journal IntelliTrace](../debugger/media/ffr-itsummarypageopensolution.png "FFR_ITSummaryPageOpenSolution")  
+     ![Ouvrir la solution à partir du journal IntelliTrace](../debugger/media/ffr-itsummarypageopensolution.png "FFR_ITSummaryPageOpenSolution")  
   
      Si un espace de travail existant est mappé à cette solution ou ce projet, Visual Studio le sélectionne pour y placer la source trouvée.  
   
-     ![Ouvrir depuis le contrôle de code source vers l’espace de travail mappé](../debugger/media/ffr-openprojectfromsourcecontrol-mapped.png "FFR_OpenProjectFromSourceControl_Mapped")  
+     ![Ouvrir à partir du contrôle de code source à un espace de travail mappé](../debugger/media/ffr-openprojectfromsourcecontrol-mapped.png "FFR_OpenProjectFromSourceControl_Mapped")  
   
      Sinon, choisissez un autre espace de travail ou créez-en un. Visual Studio mappera la branche entière à cet espace de travail.  
   
-     ![Ouvrir à partir du &#45; contrôle de code source créer un nouvel espace de travail](../debugger/media/ffr-openprojectfromsourcecontrol-createnewworkspace.png "FFR_OpenProjectFromSourceControl_CreateNewWorkspace")  
+     ![Ouvrir à partir du contrôle de code source &#45; créer un espace de travail](../debugger/media/ffr-openprojectfromsourcecontrol-createnewworkspace.png "FFR_OpenProjectFromSourceControl_CreateNewWorkspace")  
   
      Pour créer un espace de travail avec des mappages spécifiques ou un nom qui n’est pas celui de votre ordinateur, choisissez **Gérer**.  
   
      [Q : Pourquoi Visual Studio indique que l’espace de travail que j’ai sélectionné est inéligible ?](#IneligibleWorkspace)  
   
-     [Q : Pourquoi je ne peux pas continuer jusqu’à ce que je choisisse une collection d’équipe ou une autre collection ?](#ChooseTeamProject)  
+     [Q : pourquoi ne puis-je pas continuer jusqu’à ce que je choisisse une collection d’équipe ou une autre collection ?](#ChooseTeamProject)  
   
 ### <a name="diagnose-a-performance-problem"></a>Diagnostiquer un problème de performance  
   
 1. Sous **Violations de performances**, examinez les événements de performance enregistrés, leurs durées totales d’exécution et les autres informations associées. Approfondissez ensuite les méthodes appelées pendant un événement de performance spécifique.  
   
-     ![Afficher les détails des événements de performances](../debugger/media/ffr-itsummarypageperformance.png "FFR_ITSummaryPagePerformance")  
+     ![Afficher les détails de l'événement de performance](../debugger/media/ffr-itsummarypageperformance.png "FFR_ITSummaryPagePerformance")  
   
-     Vous pouvez aussi simplement double-cliquer sur l’événement.  
+     Vous pouvez aussi uniquement double-cliquer sur l’événement.  
   
 2. Dans la page d’événement, examinez les durées d’exécution de ces appels. Recherchez un appel lent dans l’arborescence d’exécution.  
   
@@ -194,13 +194,13 @@ Si vous souhaitez utiliser IntelliTrace pour diagnostiquer les problèmes dans v
   
      Développez cet appel pour examiner les appels imbriqués et les valeurs qui ont été enregistrés à ce moment précis. Démarrez ensuite le débogage à partir de cet appel.  
   
-     ![Démarrer le débogage à partir d’un appel de méthode](../debugger/media/ffr-itsummarypageperformancemethodscalled.png "FFR_ITSummaryPagePerformanceMethodsCalled")  
+     ![Démarrer le débogage à partir d'un appel de méthode](../debugger/media/ffr-itsummarypageperformancemethodscalled.png "FFR_ITSummaryPagePerformanceMethodsCalled")  
   
      Vous pouvez aussi simplement double-cliquer sur l’appel.  
   
      Si la méthode se trouve dans votre code d’application, Visual Studio y accède.  
   
-     ![Accéder au code de l’application à partir de l’événement de performances](../debugger/media/ffr-itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")  
+     ![Accéder au code de l'application à partir d'un événement de performance](../debugger/media/ffr-itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")  
   
      Vous pouvez maintenant examiner d’autres valeurs enregistrées, la pile des appels, parcourir votre code ou utiliser la fenêtre **IntelliTrace** pour [remonter ou avancer « dans le temps » entre d’autres méthodes](../debugger/intellitrace.md) appelées pendant cet événement de performance. [En quoi consistent tous les autres événements et informations du journal IntelliTrace ?](../debugger/using-saved-intellitrace-data.md)[What else can I do from here?](#WhatElse)[Vous voulez plus d’informations sur les événements de performances?](https://devblogs.microsoft.com/devops/performance-details-in-intellitrace/)  
   
@@ -208,17 +208,17 @@ Si vous souhaitez utiliser IntelliTrace pour diagnostiquer les problèmes dans v
   
 1. Sous **Données d’exception**, examinez les événements d’exception enregistrés, leurs types, leurs messages et à quel moment les exceptions se sont produites. Pour approfondir le code, démarrez le débogage à partir de l’événement le plus récent d’un groupe d’exceptions.  
   
-     ![Démarrer le débogage à partir d’un événement d’exception](../debugger/media/ffr-itsummarypageexception.png "FFR_ITSummaryPageException")  
+     ![Commencer le débogage à partir d'un événement d'exception](../debugger/media/ffr-itsummarypageexception.png "FFR_ITSummaryPageException")  
   
-     Vous pouvez aussi simplement double-cliquer sur l’événement.  
+     Vous pouvez aussi uniquement double-cliquer sur l’événement.  
   
      Si l’exception s’est produite dans votre code d’application, Visual Studio accède à l’emplacement où l’exception s’est produite.  
   
-     ![Accéder au code de l’application à partir d’un événement d’exception](../debugger/media/ffr-itsummarypageexceptiongotocode.png "FFR_ITSummaryPageExceptionGoToCode")  
+     ![Accéder au code de l'application à partir d'un événement d'exception](../debugger/media/ffr-itsummarypageexceptiongotocode.png "FFR_ITSummaryPageExceptionGoToCode")  
   
      Vous pouvez maintenant examiner d’autres valeurs enregistrées, la pile des appels, ou utiliser la fenêtre **IntelliTrace** pour [remonter ou avancer « dans le temps » entre les autres événements enregistrés](../debugger/intellitrace.md), le code connexe et les valeurs enregistrées à ces moments précis. [En quoi consistent tous les autres événements et informations du journal IntelliTrace ?](../debugger/using-saved-intellitrace-data.md)  
   
-### <a name="WhatElse"></a> Que puis-je faire d’autre à partir d’ici ?  
+### <a name="what-else-can-i-do-from-here"></a><a name="WhatElse"></a> Que puis-je faire d’autre à partir d’ici ?  
   
 - [Obtenez plus d’informations sur ce code](../ide/find-code-changes-and-other-history-with-codelens.md). Pour trouver des références à ce code, son historique de modification, les bogues associés, les éléments de travail, les révisions du code ou les tests unitaires, le tout sans quitter l’éditeur, utilisez les indicateurs CodeLens de l’éditeur.  
   
@@ -228,16 +228,16 @@ Si vous souhaitez utiliser IntelliTrace pour diagnostiquer les problèmes dans v
   
 - [Mappez votre emplacement dans le code pendant le débogage.](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md) Pour suivre visuellement les méthodes appelées pendant votre session de débogage, mappez la pile des appels.  
   
-     ![Mapper la pile des appels pendant le débogage](../debugger/media/ffr-itsummarypageperformancedebuggermap.png "FFR_ITSummaryPagePerformanceDebuggerMap")  
+     ![Mapper la pile d'appels pendant le débogage](../debugger/media/ffr-itsummarypageperformancedebuggermap.png "FFR_ITSummaryPagePerformanceDebuggerMap")  
   
-### <a name="FAQ"></a> Q et R  
+### <a name="q--a"></a><a name="FAQ"></a> Q & A  
   
-#### <a name="WhyInclude"></a>Q : Pourquoi ajouter des informations sur mon projet, le contrôle de code source, la build et les symboles à ma version ?  
+#### <a name="q-why-include-information-about-my-project-source-control-build-and-symbols-with-my-release"></a><a name="WhyInclude"></a>Q : Pourquoi ajouter des informations sur mon projet, le contrôle de code source, la build et les symboles à ma version ?  
  Visual Studio utilise ces informations pour trouver la solution et la source correspondant à la version que vous tentez de déboguer. Après avoir ouvert le journal IntelliTrace et sélectionné un événement pour démarrer le débogage, Visual Studio utilise des symboles pour trouver et vous indiquer le code où l’événement s’est produit. Vous pouvez alors examiner les valeurs enregistrées et avancer ou reculer dans l’exécution de votre code.  
   
  Si vous utilisez TFS et que ces informations ne figurent pas dans le manifeste de build (fichier BuildInfo.config), Visual Studio recherche la source et les symboles correspondants sur votre TFS actuellement connecté. Si Visual Studio ne peut pas trouver le TFS correct ou la source correspondante, vous êtes invité à choisir un autre TFS.  
   
-#### <a name="InvalidConfigFile"></a>Q : Le journal IntelliTrace ne comporte pas les informations relatives à mon application déployée. Pourquoi constate-t-on ce phénomène ? Que dois-je faire ?  
+#### <a name="q-the-intellitrace-log-is-missing-information-about-my-deployed-app-why-did-this-happen-what-do-i-do"></a><a name="InvalidConfigFile"></a>Q : Le journal IntelliTrace ne comporte pas les informations relatives à mon application déployée. Comment est-ce possible ? Que faire ?  
  Cela peut se produire quand vous déployez à partir de votre ordinateur de développement ou que vous n’êtes pas connecté à TFS pendant le déploiement.  
   
 1. Accédez au dossier de déploiement de votre projet.  
@@ -246,9 +246,9 @@ Si vous souhaitez utiliser IntelliTrace pour diagnostiquer les problèmes dans v
   
 3. Vérifiez que le fichier contient les informations requises :  
   
-- **ProjectName**  
+- **Nom du projet**  
   
-   Nom de votre projet dans Visual Studio. Exemple :  
+   Nom de votre projet dans Visual Studio. Par exemple :  
   
   ```  
   <ProjectName>FabrikamFiber.Extranet.Web</ProjectName>  
@@ -266,7 +266,7 @@ Si vous souhaitez utiliser IntelliTrace pour diagnostiquer les problèmes dans v
   
     - **ProjectVersionSpec**: version de votre projet  
   
-      Exemple :  
+      Par exemple :  
   
     ```  
     <SourceControl type="TFS">  
@@ -288,7 +288,7 @@ Si vous souhaitez utiliser IntelliTrace pour diagnostiquer les problèmes dans v
   
     - **CommitId**: ID de votre validation  
   
-      Exemple :  
+      Par exemple :  
   
     ```  
     <SourceControl type="Git">   
@@ -300,7 +300,7 @@ Si vous souhaitez utiliser IntelliTrace pour diagnostiquer les problèmes dans v
     </SourceControl>  
     ```  
   
-- **Générer**  
+- **Créer**  
   
    Informations sur votre système de génération, `"TeamBuild"` ou `"MSBuild"`, et les propriétés requises suivantes :  
   
@@ -314,7 +314,7 @@ Si vous souhaitez utiliser IntelliTrace pour diagnostiquer les problèmes dans v
   
   - **BuiltSolution**: chemin d’accès au fichier de la solution, utilisé par Visual Studio pour rechercher et ouvrir la solution correspondante. Contenu de la propriété MSBuild **SolutionPath** .  
   
-    Exemple :  
+    Par exemple :  
   
   - **TFS**  
   
@@ -341,32 +341,32 @@ Si vous souhaitez utiliser IntelliTrace pour diagnostiquer les problèmes dans v
     </Build>  
     ```  
   
-#### <a name="IneligibleWorkspace"></a>Q : Pourquoi Visual Studio indique que l’espace de travail que j’ai sélectionné est inéligible ?  
+#### <a name="q-why-does-visual-studio-say-my-selected-workspace-is-ineligible"></a><a name="IneligibleWorkspace"></a> Q : pourquoi Visual Studio indique-t-il que mon espace de travail sélectionné est inéligible ?  
  **R :** L’espace de travail sélectionné ne possède aucun mappage entre le dossier de contrôle de code source et un dossier local. Pour créer un mappage de cet espace de travail, choisissez **Gérer**. Sinon, choisissez un espace de travail déjà mappé ou créez-en un.  
   
  ![Ouvrir à partir du contrôle de code source sans espace de travail mappé](../debugger/media/ffr-openprojectfromsourcecontrol-notmapped.png "FFR_OpenProjectFromSourceControl_NotMapped")  
   
-#### <a name="ChooseTeamProject"></a>Q : Pourquoi je ne peux pas continuer jusqu’à ce que je choisisse une collection d’équipe ou une autre collection ?  
+#### <a name="q-why-cant-i-continue-until-i-choose-a-team-collection-or-a-different-collection"></a><a name="ChooseTeamProject"></a>Q : Pourquoi je ne peux pas continuer jusqu’à ce que je choisisse une collection d’équipe ou une autre collection ?  
  **R :** Cela peut se produire pour l’une des raisons suivantes :  
   
 - Visual Studio n’est pas connecté à TFS.  
   
-     ![Ouvrir à partir du &#45; contrôle de code source non connecté](../debugger/media/ffr-openprojectfromsourcecontrol-notconnected.png "FFR_OpenProjectFromSourceControl_NotConnected")  
+     ![Ouvrir à partir du contrôle de code source &#45; pas connecté](../debugger/media/ffr-openprojectfromsourcecontrol-notconnected.png "FFR_OpenProjectFromSourceControl_NotConnected")  
   
 - Visual Studio n’a pas trouvé la solution ou le projet dans votre collection d’équipe actuelle.  
   
-     Quand le fichier manifeste de la build (\<*Nom_projet*>.BuildInfo.config) ne spécifie pas l’emplacement où Visual Studio peut trouver la source correspondante, Visual Studio utilise votre TFS actuellement connecté pour rechercher la solution ou le projet correspondant. Si votre collection d’équipe actuelle ne dispose pas de la source correspondante, Visual Studio vous invite à vous connecter à une autre collection d’équipe.  
+     Quand le fichier manifeste de la build ( \<*ProjectName*>.BuildInfo.config) ne spécifie pas où Visual Studio peut trouver la source correspondante, Visual Studio utilise votre TFS actuellement connecté pour rechercher la solution ou le projet correspondant. Si votre collection d’équipe actuelle ne dispose pas de la source correspondante, Visual Studio vous invite à vous connecter à une autre collection d’équipe.  
   
-- Visual Studio n’a pas trouvé la solution ou le projet dans la collection spécifiée par le fichier manifeste de la build (\<*Nom_projet*>.BuildInfo.config).  
+- Visual Studio n’a pas trouvé la solution ou le projet dans la collection spécifiée par le fichier manifeste de la build ( \<*ProjectName*>.BuildInfo.config).  
   
      Il est possible que le TFS spécifié ne dispose plus de la source correspondante ou qu’il n’existe plus, par exemple si vous avez migré vers un nouveau TFS. Si le TFS spécifié n’existe pas, Visual Studio peut expirer après environ une minute et vous inviter à vous connecter à une autre collection. Pour continuer, connectez-vous au serveur TFS approprié.  
   
-     ![Ouvrir à partir du &#45; contrôle de code source migré](../debugger/media/ffr-openprojectfromsourcecontrol-migrated.png "FFR_OpenProjectFromSourceControl_Migrated")  
+     ![Ouvrir à partir du contrôle de code source &#45; migré](../debugger/media/ffr-openprojectfromsourcecontrol-migrated.png "FFR_OpenProjectFromSourceControl_Migrated")  
   
-#### <a name="WhatWorkspace"></a> Q : Qu’est-ce qu’un espace de travail ?  
+#### <a name="q-whats-a-workspace"></a><a name="WhatWorkspace"></a> Q : Qu’est-ce qu’un espace de travail ?  
  **R :** Votre [espace de travail stocke une copie de la source](https://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a) pour que vous puissiez le développer et le tester séparément avant d’archiver votre travail. Si vous ne disposez pas déjà d’un espace de travail spécialement mappé à la solution ou au projet trouvé, Visual Studio vous invite à choisir un espace de travail disponible ou à en créer un avec le nom de votre ordinateur comme nom d’espace de travail par défaut.  
   
-#### <a name="UntrustedSymbols"></a>Q : Pourquoi je reçois ce message sur les symboles non fiables ?  
- ![Déboguer avec un chemin d’accès aux symboles non fiables ?](../debugger/media/ffr-ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")  
+#### <a name="q-why-do-i-get-this-message-about-untrusted-symbols"></a><a name="UntrustedSymbols"></a>Q : Pourquoi je reçois ce message sur les symboles non fiables ?  
+ ![Déboguer avec des chemins d’accès aux symboles non fiables ?](../debugger/media/ffr-ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")  
   
- **R :** Ce message apparaît quand le chemin des symboles dans le fichier manifeste de la build (\<*Nom_projet*>.BuildInfo.config) n’est pas inclus dans la liste des chemins des symboles approuvés. Vous pouvez ajouter le chemin d’accès à la liste des chemins de symboles dans les options du débogueur.
+ **R :** Ce message apparaît lorsque le chemin d’accès aux symboles dans le fichier manifeste de la build ( \<*ProjectName*>.BuildInfo.config) n’est pas inclus dans la liste des chemins d’accès aux symboles approuvés. Vous pouvez ajouter le chemin d’accès à la liste des chemins de symboles dans les options du débogueur.

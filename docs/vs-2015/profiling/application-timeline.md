@@ -10,10 +10,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0f899e081377ecc1a56e141f8793d6f707df2b69
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85534080"
 ---
 # <a name="application-timeline"></a>Chronologie de l'application
@@ -35,7 +35,7 @@ Utilisez le profileur **Chronologie de l'application** pour rechercher et corrig
   
 4. Windows Presentation Foundation (.Net 4.0 et ultérieur)  
   
-5. Windows 7  
+5. Windows 7  
   
 > [!NOTE]
 > Vous pouvez collecter et analyser les données d'utilisation de l'UC et les données de consommation d'énergie en même temps que les données de **Chronologie de l'application** . Consultez [exécuter les outils de profilage sans débogage](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
@@ -109,7 +109,7 @@ Utilisez le profileur **Chronologie de l'application** pour rechercher et corrig
 > [!TIP]
 > Choisissez l'outil **Utilisation de l'UC** ainsi que l'outil **Chronologie de l'application** quand vous démarrez le profilage pour afficher les méthodes de l'application qui s'exécutent sur le thread d'interface utilisateur. Le déplacement d'un code d'application de longue durée vers un thread d'arrière-plan peut améliorer la réactivité de l'interface utilisateur.  
   
-#### <a name="customizing-timeline-details"></a><a name="BKMK_Customizing_Timeline_details_"></a>Personnalisation des détails de la chronologie  
+#### <a name="customizing-timeline-details"></a><a name="BKMK_Customizing_Timeline_details_"></a> Personnalisation des détails de la chronologie  
  Utilisez la barre à outils **Détails de la chronologie** pour trier, filtrer et spécifier les annotations des entrées de la vue **Détails de la chronologie** .  
   
 |Nom|Description|  

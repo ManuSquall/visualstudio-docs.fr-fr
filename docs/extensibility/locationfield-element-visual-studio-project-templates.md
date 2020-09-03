@@ -14,10 +14,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8a5f2f47eef9c3cb047b5550e466585ef70e8f4e
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85770017"
 ---
 # <a name="locationfield-element-visual-studio-project-templates"></a>Élément LocationField (modèles de projet Visual Studio)
@@ -26,7 +26,7 @@ Spécifie si la zone de texte **emplacement** dans la boîte de dialogue **nouve
  \<VSTemplate> \<TemplateData>
  \<LocationField>
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Syntaxe
 
 ```
 <LocationField> Enabled/Disabled/Hidden </LocationField>
@@ -58,7 +58,7 @@ Spécifie si la zone de texte **emplacement** dans la boîte de dialogue **nouve
 
 - `Hidden`, qui spécifie que la zone **emplacement** de la boîte de dialogue **nouveau projet** est masquée.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  La valeur par défaut est `Enabled`.
 
  La zone de texte **emplacement** dans la boîte de dialogue **nouveau projet** permet aux utilisateurs de modifier le répertoire par défaut dans lequel les nouveaux projets sont enregistrés.

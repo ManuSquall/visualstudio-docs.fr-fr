@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d5c35279421ad17e62afe707d62dbc879d03b384
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85769900"
 ---
 # <a name="how-to-view-inheritance-between-types-in-class-designer"></a>Guide pratique pour afficher l’héritage entre les types dans le Concepteur de classes
