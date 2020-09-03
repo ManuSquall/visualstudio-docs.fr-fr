@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9d0dcfc5724e87d57d2803b9b64a6eb121314b99
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655048"
 ---
 # <a name="customizing-deletion-behavior"></a>Personnalisation du comportement de la commande de suppression
@@ -25,11 +25,11 @@ ms.locfileid: "72655048"
 
 La suppression d'un élément provoque généralement aussi la suppression des éléments associés. Toutes les relations qui y sont connectées et tous les éléments enfants sont supprimés. Ce comportement est appelé « suppression de la *propagation*». Vous pouvez personnaliser la propagation de la suppression, par exemple pour que des éléments associés supplémentaires soient supprimés. En écrivant du code de programme, vous pouvez faire en sorte que la propagation de la suppression dépende de l'état du modèle. Vous pouvez aussi provoquer d'autres modifications en réponse à une suppression.
 
- Cette rubrique comporte les sections suivantes :
+ Cette rubrique contient les sections suivantes :
 
 - [Comportement de suppression par défaut](#default)
 
-- [Définition de l’option propager la suppression d’un rôle](#property)
+- [Définition de l'option Propagation de la suppression d'un rôle](#property)
 
 - [Remplacement de la fermeture de suppression](#closure) : utilisez cette technique lorsque la suppression peut entraîner la suppression des éléments voisins.
 
@@ -37,11 +37,11 @@ La suppression d'un élément provoque généralement aussi la suppression des �
 
 - [Règles de suppression](#rules) : utilisez des règles pour propager les mises à jour de tout type dans le magasin, où une modification peut entraîner des tiers.
 
-- [Événements de suppression](#rules) : utilisez les événements de stockage pour propager les mises à jour en dehors du magasin, par exemple vers d’autres documents de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+- [Événements de suppression](#rules) : utilisez les événements de stockage pour propager les mises à jour en dehors du magasin, par exemple vers d’autres [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] documents.
 
 - [Unmerge](#unmerge) : utilisez l’opération d’annulation de fusion pour annuler l’opération de fusion qui a attaché un élément enfant à son parent.
 
-## <a name="default"></a>Comportement de suppression par défaut
+## <a name="default-deletion-behavior"></a><a name="default"></a> Comportement de suppression par défaut
  Par défaut, les règles suivantes régissent la propagation de la suppression :
 
 - Si un élément est supprimé, tous les éléments incorporés sont également supprimés. Les éléments incorporés sont ceux qui sont les cibles de relations d'incorporation pour lesquelles cet élément est la source. Par exemple, s’il existe une relation d’incorporation de l' **album** à la **chanson**, quand un album particulier est supprimé, toutes ses chansons sont également supprimées.
@@ -54,7 +54,7 @@ La suppression d'un élément provoque généralement aussi la suppression des �
 
 - Chaque relation qui est connectée à l'élément, au rôle source ou cible, est supprimée. La propriété de rôle de l'élément au niveau du rôle opposé ne contient plus l'élément supprimé.
 
-## <a name="property"></a>Définition de l’option propager la suppression d’un rôle
+## <a name="setting-the-propagate-delete-option-of-a-role"></a><a name="property"></a> Définition de l’option propager la suppression d’un rôle
  Vous pouvez faire en sorte que la suppression soit propagée le long d'une relation de référence ou d'un enfant incorporé vers son parent.
 
 #### <a name="to-set-delete-propagation"></a>Pour définir la propagation de suppression
@@ -79,7 +79,7 @@ La suppression d'un élément provoque généralement aussi la suppression des �
 > [!NOTE]
 > Pour ajouter du code de programme à votre définition DSL, créez un fichier de code distinct dans le projet **DSL** et écrivez des définitions partielles pour augmenter les classes dans le dossier de code généré. Pour plus d’informations, consultez [écriture de code pour personnaliser un langage spécifique à un domaine](../modeling/writing-code-to-customise-a-domain-specific-language.md).
 
-## <a name="closure"></a>Définition d’une fermeture de suppression
+## <a name="defining-a-delete-closure"></a><a name="closure"></a> Définition d’une fermeture de suppression
  L’opération de suppression utilise la classe _YourModel_**DeleteClosure** pour déterminer les éléments à supprimer, étant donné une sélection initiale. Elle appelle `ShouldVisitRelationship()` et `ShouldVisitRolePlayer()` de manière répétée, en parcourant le graphique des relations. Vous pouvez substituer ces méthodes. Méthode shouldvisitroleplayer est fourni avec l’identité d’un lien et l’élément à l’un des rôles du lien. Elle doit retourner l'une des valeurs suivantes :
 
 - **VisitorFilterResult. Yes**: l’élément doit être supprimé et l’Explorateur doit se poursuivre pour essayer les autres liens de l’élément.
@@ -132,16 +132,16 @@ partial class MusicLibDeleteClosure
 
  Toutefois, cette technique part du principe que la suppression affecte uniquement ses voisins dans le graphique des relations : vous ne pouvez pas appliquer cette méthode pour supprimer un élément dans une autre partie du modèle. Vous ne pouvez pas l'appliquer si vous souhaitez ajouter des éléments ou apporter d'autres modifications en réponse à une suppression.
 
-## <a name="ondeleting"></a>Utilisation de OnDeleting et OnDeleted
+## <a name="using-ondeleting-and-ondeleted"></a><a name="ondeleting"></a> Utilisation de OnDeleting et OnDeleted
  Vous pouvez substituer `OnDeleting()` ou `OnDeleted()` dans une classe de domaine ou dans une relation de domaine.
 
-1. La méthode <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting%2A> est appelée quand un élément est sur le point d'être supprimé, mais avant que ses relations aient été déconnectées. Il est encore accessible à partir d'autres éléments et se trouve toujours dans `store.ElementDirectory`.
+1. <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting%2A> est appelé lorsqu’un élément est sur le paragraphe d’être supprimé, mais avant que ses relations aient été déconnectées. Il est encore accessible à partir d'autres éléments et se trouve toujours dans `store.ElementDirectory`.
 
     Si plusieurs éléments sont supprimés en même temps, OnDeleting est appelée pour tous ces éléments avant d'effectuer les suppressions.
 
-    `IsDeleting` a la valeur True.
+    `IsDeleting` a la valeur true.
 
-2. La méthode <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted%2A> est appelée quand l'élément a été supprimé. Il reste dans le tas CLR pour qu'une opération d'annulation puisse être effectuée si nécessaire, mais il n'est plus lié aux autres éléments et est supprimé de `store.ElementDirectory`. Pour les relations, les rôles référencent toujours les anciens acteurs de rôle. `IsDeleted` a la valeur true.
+2. <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted%2A> est appelé lorsque l’élément a été supprimé. Il reste dans le tas CLR pour qu'une opération d'annulation puisse être effectuée si nécessaire, mais il n'est plus lié aux autres éléments et est supprimé de `store.ElementDirectory`. Pour les relations, les rôles référencent toujours les anciens acteurs de rôle.`IsDeleted` est true.
 
 3. Les méthode OnDeleting et OnDeleted sont appelées quand l'utilisateur appelle l'opération Annuler après avoir créé un élément et quand une suppression précédente est répétée dans Rétablir. Utilisez `this.Store.InUndoRedoOrRollback` pour éviter de mettre à jour les éléments du magasin dans ces cas-là. Pour plus d’informations, consultez [Comment : utiliser des transactions pour mettre à jour le modèle](../modeling/how-to-use-transactions-to-update-the-model.md).
 
@@ -199,7 +199,7 @@ partial class Artist
 
  Quand vous exécutez <xref:Microsoft.VisualStudio.Modeling.ModelElement.Delete%2A> sur un élément, OnDeleting et OnDeleted sont appelées. Ces méthodes sont toujours exécutées inline, autrement dit juste avant et après la suppression. Si votre code supprime plusieurs éléments, OnDeleting et OnDeleted sont appelées en alternance sur tous ces éléments les uns après les autres.
 
-## <a name="rules"></a>Règles et événements de suppression
+## <a name="deletion-rules-and-events"></a><a name="rules"></a> Règles et événements de suppression
  En guise d'alternative aux gestionnaires OnDelete, vous pouvez définir des règles de suppression des événements de suppression.
 
 1. Les règles de **suppression** et **de suppression ne** sont déclenchées que dans une transaction, et non dans une opération d’annulation ou de rétablissement. Vous pouvez les configurer pour être mises en file d'attente pour s'exécuter à la fin de la transaction dans laquelle la suppression est effectuée. Les règles Deleting sont toujours exécutées avant toute règle Deleted qui se trouve dans la file d'attente.
@@ -289,10 +289,10 @@ partial class NestedShapesSampleDocData
 
 ```
 
-## <a name="unmerge"></a>UnMerge
+## <a name="unmerge"></a><a name="unmerge"></a> UnMerge
  L’opération qui attache un élément enfant à son parent est appelée *Merge*. Elle a lieu quand un nouvel élément ou groupe d'éléments est créé à partir de la boîte à outils, déplacé à partir d'une autre partie du modèle ou copié à partir du Presse-papiers. En plus de créer une relation d'incorporation entre le parent et son nouvel enfant, l'opération de fusion peut aussi configurer des relations supplémentaires, créer des éléments auxiliaires et définir des valeurs de propriétés dans les éléments. L'opération de fusion est encapsulée dans une directive EMD (Element Merge Directive).
 
- Un EMD encapsule également l’opération de `MergeDisconnect` ou non *Merge* complémentaire. Si vous avez un cluster d'éléments qui a été construit à l'aide d'une fusion, nous vous recommandons d'utiliser l'opération unmerge associée pour supprimer un élément de ce cluster si vous souhaitez conserver les éléments restants dans un état cohérent. L'opération unmerge applique en général les techniques décrites dans les sections précédentes.
+ Un EMD encapsule également l’opération ou la non- *fusion* complémentaire `MergeDisconnect` . Si vous avez un cluster d'éléments qui a été construit à l'aide d'une fusion, nous vous recommandons d'utiliser l'opération unmerge associée pour supprimer un élément de ce cluster si vous souhaitez conserver les éléments restants dans un état cohérent. L'opération unmerge applique en général les techniques décrites dans les sections précédentes.
 
  Pour plus d’informations, consultez Personnalisation de la [création et du déplacement d’éléments](../modeling/customizing-element-creation-and-movement.md).
 

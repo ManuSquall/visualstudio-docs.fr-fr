@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 61eeea33c6941624ed18a00db482590590a44a8f
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85546521"
 ---
 # <a name="featureproperty-element"></a>FeatureProperty (élément)
@@ -37,7 +37,7 @@ ms.locfileid: "85546521"
 |Attribut|Description|
 |---------------|-----------------|
 |**Clé**|Attribut **XS : String** requis.<br /><br /> Clé utilisée pour stocker et récupérer la valeur de la propriété. Chaque propriété doit avoir une clé qui est unique dans la fonctionnalité.|
-|**Valeur**|Attribut **XS : String** requis.<br /><br /> Valeur de propriété.|
+|**Valeur**|Attribut **XS : String** requis.<br /><br /> Valeur de la propriété.|
 
 ### <a name="child-elements"></a>Éléments enfants
  Aucun.
@@ -48,7 +48,7 @@ ms.locfileid: "85546521"
 |-------------|-----------------|
 |[FeatureProperties](../sharepoint/featureproperties-element.md)|Représente une collection de valeurs de propriétés qui sont incluses avec une fonctionnalité lorsqu’elle est déployée sur SharePoint.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Pour plus d’informations sur les propriétés de fonctionnalité, consultez [fourniture d’informations de package et de déploiement dans les éléments de projet](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).
 
 ## <a name="element-information"></a>Informations sur les éléments

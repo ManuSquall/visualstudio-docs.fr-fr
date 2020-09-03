@@ -8,10 +8,10 @@ ms.date: 04/20/2020
 ms.topic: conceptual
 description: Découvrez comment vous pouvez tirer parti du bureau virtuel Microsoft Windows via votre abonnement Visual Studio
 ms.openlocfilehash: 865e18d7b8672520fcb771a1db56141fb6fd9f0a
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "88800604"
 ---
 # <a name="access-windows-virtual-desktop-in-subscriptions"></a>Accéder au bureau virtuel Windows dans les abonnements 
@@ -31,7 +31,7 @@ Les abonnés Visual Studio disposent désormais de plusieurs façons d’utilise
 - [Abonnements Azure DevTest avec paiement à l’accès](vs-azure-payg.md).  Vous pouvez créer des abonnements Azure et associer un mode de paiement pour avoir un moyen transparent de payer l’utilisation de votre bureau virtuel Windows. 
 - [Offre Azure accord entreprise DevTest](azure-ea-devtest.md).  Grâce à cette offre, les abonnés disposant d’un contrat entreprise peuvent payer pour le bureau virtuel Windows avec Azure à prix réduit. 
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
 Le bureau virtuel Windows requiert une Azure Active Directory (Azure AD) à laquelle les machines virtuelles seront jointes.  Les utilisateurs doivent être membres de ce Azure AD.  Il existe deux options pour implémenter l’Azure AD :
 - Services d’annuaire Azure AD.  Pour la plupart des utilisateurs, il s’agit de l’option la plus simple à implémenter.
 - Une machine virtuelle exécutant une promotion de contrôleur de domaine.  Cette option nécessite plus de travail pour la configuration, mais offre aux utilisateurs un coût d’exploitation inférieur.

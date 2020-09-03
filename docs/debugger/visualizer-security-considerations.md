@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c1c18ec84a6a62da6cd564c69ef4b83ea76bcfd6
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "73187150"
 ---
 # <a name="visualizer-security-considerations"></a>Considérations sur la sécurité du visualiseur
@@ -38,7 +38,7 @@ L'écriture d'un visualiseur implique d'éventuelles menaces pour la sécurité.
  Afin d'atténuer cette vulnérabilité, faites attention aux interfaces exposées par votre visualiseur.
 
 ## <a name="see-also"></a>Voir aussi
-- [Architecture d’un visualiseur](../debugger/visualizer-architecture.md)
-- [Guide pratique pour écrire un visualiseur](create-custom-visualizers-of-data.md)
+- [Architecture d'un visualiseur](../debugger/visualizer-architecture.md)
+- [Comment : écrire un visualiseur](create-custom-visualizers-of-data.md)
 - [Créer des visualiseurs personnalisés](../debugger/create-custom-visualizers-of-data.md)
 - [Affichage des données dans le débogueur](../debugger/viewing-data-in-the-debugger.md)

@@ -12,16 +12,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f628cdecbebbb10b7bb2709a2022297e1171a427
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72654944"
 ---
 # <a name="customizing-the-properties-window"></a>Personnalisation de la fenêtre Propriétés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous pouvez personnaliser l’apparence et le comportement de la fenêtre Propriétés dans votre langage spécifique à un domaine (DSL) dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Dans votre définition DSL, vous définissez des propriétés de domaine sur chaque classe de domaine. Par défaut, lorsque vous sélectionnez une instance de la classe, sur un diagramme ou dans l’Explorateur de modèles, chaque propriété de domaine est listée dans la fenêtre Propriétés. Cela vous permet d’afficher et de modifier les valeurs des propriétés de domaine, même si vous ne les avez pas mappées à des champs de forme sur le diagramme.
+Vous pouvez personnaliser l’apparence et le comportement de la fenêtre Propriétés dans votre langage spécifique à un domaine (DSL) dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Dans votre définition DSL, vous définissez des propriétés de domaine sur chaque classe de domaine. Par défaut, lorsque vous sélectionnez une instance de la classe, sur un diagramme ou dans l’Explorateur de modèles, chaque propriété de domaine est listée dans la fenêtre Propriétés. Cela vous permet d’afficher et de modifier les valeurs des propriétés de domaine, même si vous ne les avez pas mappées à des champs de forme sur le diagramme.
 
 ## <a name="names-descriptions-and-categories"></a>Noms, descriptions et catégories
  **Nom et nom complet**. Dans la définition d’une propriété de domaine, le nom complet de la propriété est le nom qui apparaît au moment de l’exécution dans la fenêtre Propriétés. En revanche, le nom est utilisé lorsque vous écrivez du code de programme pour mettre à jour la propriété. Le nom doit être un nom alphanumérique correct, mais le nom d’affichage peut contenir des espaces.
@@ -34,14 +34,14 @@ Vous pouvez personnaliser l’apparence et le comportement de la fenêtre Propri
 
 - Dans le code du programme généré. Si vous utilisez les fonctionnalités de la documentation pour extraire la documentation de l’API, celle-ci s’affiche comme description de cette propriété dans l’API.
 
-  **Catégorie** : Une catégorie est un titre dans la Fenêtre Propriétés.
+  **Catégorie**. Une catégorie est un titre dans la Fenêtre Propriétés.
 
 ## <a name="exposing-style-features"></a>Exposer des fonctionnalités de style
  Certaines des fonctionnalités dynamiques des éléments graphiques peuvent être représentées ou *exposées* en tant que propriétés de domaine. Une fonctionnalité qui a été exposée de cette manière peut être mise à jour par l’utilisateur et peut être plus facilement mise à jour par le code de programme.
 
  Cliquez avec le bouton droit sur une classe de forme dans la définition DSL, pointez sur **Ajouter exposé**, puis choisissez une fonctionnalité.
 
- Sur les formes, vous pouvez exposer les propriétés **FillColor**, **OutlineColor**, **TextColor**, **OutlineDashStyle**, **OutlineThickness** et **FillGradientMode** . Sur les connecteurs, vous pouvez exposer la **couleur** `,` propriétés**TextColor**, **DashStyle**et **Thickness** . Sur les diagrammes, vous pouvez exposer les propriétés **FillColor** et **TextColor** .
+ Sur les formes, vous pouvez exposer les propriétés **FillColor**, **OutlineColor**, **TextColor**, **OutlineDashStyle**, **OutlineThickness** et **FillGradientMode** . Sur les connecteurs, vous pouvez exposer les propriétés **Color** `,` **TextColor**, **DashStyle**et **Thickness** . Sur les diagrammes, vous pouvez exposer les propriétés **FillColor** et **TextColor** .
 
 ## <a name="forwarding-displaying-properties-of-related-elements"></a>Transfert : affichage des propriétés d’éléments associés
  Lorsque l’utilisateur de votre DSL sélectionne un élément dans un modèle, les propriétés de cet élément s’affichent dans la fenêtre Propriétés. Toutefois, vous pouvez également afficher les propriétés des éléments associés spécifiés. Cela est utile si vous avez défini un groupe d’éléments qui fonctionne ensemble. Par exemple, vous pouvez définir un élément principal et un élément de plug-in facultatif. Si l’élément principal est mappé à une forme et que l’autre ne l’est pas, il est utile de voir toutes leurs propriétés comme si elles se trouvaient sur un élément.
@@ -51,7 +51,7 @@ Vous pouvez personnaliser l’apparence et le comportement de la fenêtre Propri
 ### <a name="default-property-forwarding-cases"></a>Cas de transfert de propriété par défaut
  Lorsque l’utilisateur sélectionne une forme ou un connecteur, ou un élément dans l’Explorateur, les propriétés suivantes s’affichent dans la Fenêtre Propriétés :
 
-- Propriétés de domaine qui sont définies sur la classe de domaine de l’élément de modèle, y compris celles qui sont définies dans les classes de base. Une exception est que les propriétés de domaine pour lesquelles vous avez défini peuvent être **explorées** pour `False`.
+- Propriétés de domaine qui sont définies sur la classe de domaine de l’élément de modèle, y compris celles qui sont définies dans les classes de base. Une exception est que les propriétés de domaine pour lesquelles vous avez défini peuvent être **explorables** `False` .
 
 - Noms des éléments qui sont liés par des relations qui ont une multiplicité de 0.. 1. Cela offre une méthode pratique pour voir les éléments liés éventuellement, même si vous n’avez pas défini de mappage de connecteur pour la relation.
 
@@ -69,7 +69,7 @@ Vous pouvez personnaliser l’apparence et le comportement de la fenêtre Propri
 
 ##### <a name="to-forward-a-property-from-another-element"></a>Pour transférer une propriété à partir d’un autre élément
 
-1. Créez une solution [!INCLUDE[dsl](../includes/dsl-md.md)] qui contient au moins deux classes qui, dans cet exemple, sont appelées **Book** et **Author**. Il doit y avoir une relation entre le **livre** et l' **auteur**.
+1. Créez une [!INCLUDE[dsl](../includes/dsl-md.md)] solution qui contient au moins deux classes qui, dans cet exemple, sont appelées **Book** et **Author**. Il doit y avoir une relation entre le **livre** et l' **auteur**.
 
      La multiplicité du rôle source (le rôle du côté **livre** ) doit être 0.. 1 ou 1.. 1, de sorte que chaque **livre** ait un **auteur**.
 
@@ -129,7 +129,7 @@ Vous pouvez personnaliser l’apparence et le comportement de la fenêtre Propri
 
     Dans la Fenêtre Propriétés, sélectionnez le type externe dans la liste déroulante du champ **type** .
 
-   À ce niveau, les utilisateurs peuvent afficher les valeurs de la propriété, mais elles ne peuvent pas la modifier. Les valeurs affichées sont obtenues à partir de la fonction `ToString()`. Vous pouvez écrire du code de programme qui définit la valeur de la propriété, par exemple dans une commande ou une règle.
+   À ce niveau, les utilisateurs peuvent afficher les valeurs de la propriété, mais elles ne peuvent pas la modifier. Les valeurs affichées sont obtenues à partir de la `ToString()` fonction. Vous pouvez écrire du code de programme qui définit la valeur de la propriété, par exemple dans une commande ou une règle.
 
 ### <a name="setting-a-property-editor"></a>Définition d’un éditeur de propriétés
  Ajoutez un attribut CLR à la propriété de domaine, sous la forme suivante :
@@ -143,9 +143,9 @@ Vous pouvez personnaliser l’apparence et le comportement de la fenêtre Propri
 
  Vous pouvez définir l’attribut sur une propriété à l’aide de l’entrée **attribut personnalisé** dans la fenêtre Propriétés.
 
- Le type de `AnEditor` doit être dérivé du type spécifié dans le deuxième paramètre. Le deuxième paramètre doit être <xref:System.Drawing.Design.UITypeEditor> ou <xref:System.ComponentModel.ComponentEditor>. Pour plus d'informations, consultez <xref:System.ComponentModel.EditorAttribute>.
+ Le type de `AnEditor` doit être dérivé du type spécifié dans le deuxième paramètre. Le deuxième paramètre doit avoir la valeur <xref:System.Drawing.Design.UITypeEditor> ou <xref:System.ComponentModel.ComponentEditor> . Pour plus d'informations, consultez <xref:System.ComponentModel.EditorAttribute>.
 
- Vous pouvez spécifier votre propre éditeur ou un éditeur fourni dans le [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], tel que <xref:System.Windows.Forms.Design.FileNameEditor> ou <xref:System.Drawing.Design.ImageEditor>. Par exemple, utilisez la procédure suivante pour avoir une propriété dans laquelle l’utilisateur peut entrer un nom de fichier.
+ Vous pouvez spécifier votre propre éditeur ou un éditeur fourni dans le [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] , tel que <xref:System.Windows.Forms.Design.FileNameEditor> ou <xref:System.Drawing.Design.ImageEditor> . Par exemple, utilisez la procédure suivante pour avoir une propriété dans laquelle l’utilisateur peut entrer un nom de fichier.
 
 ##### <a name="to-define-a-file-name-domain-property"></a>Pour définir une propriété de domaine nom de fichier
 
@@ -166,25 +166,25 @@ Vous pouvez personnaliser l’apparence et le comportement de la fenêtre Propri
 
     1. Appuyez sur CTRL + F5 ou F5. Dans la solution de débogage, ouvrez un fichier de test. Créez un élément de la classe de domaine et sélectionnez-le.
 
-    2. Dans le Fenêtre Propriétés, sélectionnez la propriété de domaine. Le champ valeur affiche des points de suspension **[...]** .
+    2. Dans le Fenêtre Propriétés, sélectionnez la propriété de domaine. Le champ valeur affiche des points de suspension **[...]**.
 
     3. Cliquez sur les points de suspension. Une boîte de dialogue fichier s’affiche. Sélectionnez un fichier et fermez la boîte de dialogue. Le chemin d’accès du fichier est maintenant la valeur de la propriété de domaine.
 
 ### <a name="defining-your-own-property-editor"></a>Définition de votre propre éditeur de propriétés
  Vous pouvez définir votre propre éditeur. Vous pouvez le faire pour permettre à l’utilisateur de modifier un type que vous avez défini ou de modifier un type standard d’une façon spéciale. Par exemple, vous pouvez autoriser l’utilisateur à entrer une chaîne qui représente une formule.
 
- Vous définissez un éditeur en écrivant une classe dérivée de <xref:System.Drawing.Design.UITypeEditor>. Votre classe doit remplacer :
+ Vous définissez un éditeur en écrivant une classe dérivée de <xref:System.Drawing.Design.UITypeEditor> . Votre classe doit remplacer :
 
 - <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>, pour interagir avec l’utilisateur et mettre à jour la valeur de la propriété.
 
 - <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>, pour spécifier si votre éditeur doit ouvrir une boîte de dialogue ou fournir un menu déroulant.
 
-  Vous pouvez également fournir une représentation graphique de la valeur de la propriété qui sera affichée dans la grille des propriétés. Pour ce faire, remplacez `GetPaintValueSupported` et `PaintValue`.  Pour plus d'informations, consultez <xref:System.Drawing.Design.UITypeEditor>.
+  Vous pouvez également fournir une représentation graphique de la valeur de la propriété qui sera affichée dans la grille des propriétés. Pour ce faire, substituez `GetPaintValueSupported` et `PaintValue` .  Pour plus d'informations, consultez <xref:System.Drawing.Design.UITypeEditor>.
 
 > [!NOTE]
 > Ajoutez le code dans un fichier de code séparé dans le projet **DSL** .
 
- Exemple :
+ Par exemple :
 
 ```
 internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
@@ -224,7 +224,7 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
 
 ```
 
- Définissez une classe qui dérive de <xref:System.ComponentModel.TypeConverter>. Ajoutez le code dans un fichier distinct dans le projet **DSL** . Exemple :
+ Définissez une classe qui dérive de <xref:System.ComponentModel.TypeConverter>. Ajoutez le code dans un fichier distinct dans le projet **DSL** . Par exemple :
 
 ```csharp
 /// <summary>

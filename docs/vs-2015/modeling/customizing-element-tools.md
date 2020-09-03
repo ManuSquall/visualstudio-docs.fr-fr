@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: b6b35bbb0592f7ec9f8defcd9d78dbba5a6a47a5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72655020"
 ---
 # <a name="customizing-element-tools"></a>Personnalisation des outils d'élément
@@ -24,7 +24,7 @@ Dans certaines définitions DSL, vous représentez un concept unique sous la for
  Vous pouvez également remplacer ce qui se passe lorsque l’outil est glissé sur le diagramme ou sur un élément.
 
 ## <a name="customizing-the-content-of-an-element-tool"></a>Personnalisation du contenu d’un outil d’élément
- Chaque outil d’élément stocke une instance d’un <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP), qui contient une version sérialisée d’un ou plusieurs éléments et liens de modèle. Par défaut, le EGP d’un outil d’élément contient une instance de la classe que vous spécifiez pour l’outil. Vous pouvez modifier cela en remplaçant *YourLanguage* `ToolboxHelper.CreateElementToolPrototype`. Cette méthode est appelée lorsque le package DSL est chargé.
+ Chaque outil d’élément stocke une instance d’un <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP), qui contient une version sérialisée d’un ou plusieurs éléments de modèle et liens. Par défaut, le EGP d’un outil d’élément contient une instance de la classe que vous spécifiez pour l’outil. Vous pouvez modifier cela en remplaçant *YourLanguage* `ToolboxHelper.CreateElementToolPrototype` . Cette méthode est appelée lorsque le package DSL est chargé.
 
  Un paramètre de la méthode est l’ID de la classe que vous avez spécifié dans la définition DSL. Lorsque la méthode est appelée avec la classe qui vous intéresse, vous pouvez ajouter des éléments supplémentaires dans le EGP.
 

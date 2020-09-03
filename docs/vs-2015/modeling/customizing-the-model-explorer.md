@@ -14,10 +14,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ce96f2a3df901c1fea0aa4caa97d29c07db5e681
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72654954"
 ---
 # <a name="customizing-the-model-explorer"></a>Personnalisation de l'Explorateur de modèles
@@ -37,14 +37,14 @@ Vous pouvez modifier l’apparence et le comportement de l’Explorateur pour vo
  Pour modifier le titre de la fenêtre de l’Explorateur généré, sélectionnez comportement de l' **Explorateur** dans l' **Explorateur DSL**, puis, dans la fenêtre **Propriétés** , définissez la propriété **titre** sur le titre de votre choix.
 
 ## <a name="changing-the-tab-icon"></a>Modification de l’icône d’onglet
- Pour modifier l’icône d’onglet de l’Explorateur, utilisez une icône de 16x16 pixels dans un fichier. bmp. Placez le fichier d’icône dans le dossier \DslPackage\Resources\, puis remplacez le nom de fichier par **ModelExplorerToolWindowBitmaps. bmp**. Par exemple, vous pouvez remplacer le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fichier icône Setup. ico par format. bmp et le renommer en **DSLLanguageName\DslPackage\Resources\ModelExplorerToolWindowBitmaps.bmp**. Le concepteur généré affiche cette icône sous l’onglet de votre explorateur lorsqu’il est ancré avec **Explorateur de solutions**.
+ Pour modifier l’icône d’onglet de l’Explorateur, utilisez une icône de 16x16 pixels dans un fichier. bmp. Placez le fichier d’icône dans le dossier \DslPackage\Resources\, puis remplacez le nom de fichier par **ModelExplorerToolWindowBitmaps.bmp**. Par exemple, vous pouvez modifier le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fichier icône Setup. ico au format. bmp et le renommer en **DSLLanguageName\DslPackage\Resources\ModelExplorerToolWindowBitmaps.bmp**. Le concepteur généré affiche cette icône sous l’onglet de votre explorateur lorsqu’il est ancré avec **Explorateur de solutions**.
 
 ## <a name="setting-custom-icons-on-explorer-nodes"></a>Définition des icônes personnalisées sur les nœuds de l’Explorateur
  Vous pouvez personnaliser des nœuds dans votre explorateur à l’aide des paramètres de nœud de l’Explorateur. La procédure suivante montre comment ajouter une icône à un nœud.
 
 #### <a name="to-add-an-icon-to-an-explorer-node"></a>Pour ajouter une icône à un nœud Explorer
 
-1. Créez une solution [!INCLUDE[dsl](../includes/dsl-md.md)] à l’aide du modèle de solution de déroulement des tâches.
+1. Créez une [!INCLUDE[dsl](../includes/dsl-md.md)] solution à l’aide du modèle de solution de déroulement des tâches.
 
 2. Placez un fichier. bmp contenant une icône de 16 x 16 pixels dans le dossier **Dsl\Resources** de la solution.
 

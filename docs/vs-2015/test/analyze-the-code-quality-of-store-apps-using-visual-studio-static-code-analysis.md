@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: f837822e47c911e3c27d9d41e31ae9cd448d4fc5
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85520495"
 ---
 # <a name="analyze-the-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analyser la qualité du code des applications du Windows Store à l'aide de l'analyse statique du code Visual Studio
@@ -24,7 +24,7 @@ L'outil d'analyse du code dans Visual Studio examine votre code à la recherche 
 > [!NOTE]
 > L'analyse du code n'est pas disponible pour le code JavaScript.
 
-## <a name="in-this-section"></a>Dans cette section
+## <a name="in-this-section"></a>Contenu de cette section
 
 |Intitulé|Description|
 |-|-|
