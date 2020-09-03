@@ -13,16 +13,16 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bb3f26f59d7cbc994da1d2537e0ab352ce12205e
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905202"
 ---
 # <a name="implementing-syntax-coloring"></a>Implémentation de la coloration de syntaxe
-Lorsque le service de langage fournit la colorisation de syntaxe, l’analyseur convertit une ligne de texte en un tableau d’éléments coloriables et retourne des types de jetons correspondant à ces éléments coloriables. L’analyseur doit retourner les types de jetons qui appartiennent à une liste d’éléments coloriables. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]affiche chaque élément coloriable dans la fenêtre de code en fonction des attributs assignés par l’objet Coloriseur au type de jeton approprié.
+Lorsque le service de langage fournit la colorisation de syntaxe, l’analyseur convertit une ligne de texte en un tableau d’éléments coloriables et retourne des types de jetons correspondant à ces éléments coloriables. L’analyseur doit retourner les types de jetons qui appartiennent à une liste d’éléments coloriables. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] affiche chaque élément coloriable dans la fenêtre de code en fonction des attributs assignés par l’objet Coloriseur au type de jeton approprié.
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]ne spécifie pas d’interface d’analyseur, et l’implémentation de l’analyseur vous revient entièrement. Toutefois, une implémentation de l’analyseur par défaut est fournie dans le projet de package de langage Visual Studio. Pour le code managé, Managed package Framework (MPF) fournit une prise en charge complète pour la coloration du texte.
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ne spécifie pas d’interface d’analyseur, et l’implémentation de l’analyseur vous revient entièrement. Toutefois, une implémentation de l’analyseur par défaut est fournie dans le projet de package de langage Visual Studio. Pour le code managé, Managed package Framework (MPF) fournit une prise en charge complète pour la coloration du texte.
 
  Les services de langage hérités sont implémentés dans le cadre d’un VSPackage, mais la meilleure façon d’implémenter les fonctionnalités du service de langage consiste à utiliser les extensions MEF. Pour en savoir plus sur la nouvelle façon d’implémenter la coloration de la syntaxe, consultez [procédure pas à pas : mise en surbrillance du texte](../../extensibility/walkthrough-highlighting-text.md).
 

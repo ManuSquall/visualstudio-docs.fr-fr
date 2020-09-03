@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerField::GetDereferencedField | Microsoft Docs
+title: 'IDebugPointerField :: GetDereferencedField | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 02197f660189d4caf374fc5927f349fd5fc6b8b5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68201017"
 ---
 # <a name="idebugpointerfieldgetdereferencedfield"></a>IDebugPointerField::GetDereferencedField
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Cette méthode retourne le type d’objet vers lequel pointe cet objet de pointeur.  
+Cette méthode retourne le type d’objet vers lequel pointe cet objet pointeur.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -40,13 +40,13 @@ int GetDereferencedField(
   
 #### <a name="parameters"></a>Paramètres  
  `ppField`  
- [out] Retourne un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) décrivant le type d’objet cible.  
+ à Retourne un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) décrivant le type d’objet cible.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="remarks"></a>Notes  
- Par exemple, si le [IDebugPointerField](../../../extensibility/debugger/reference/idebugpointerfield.md) objet pointe vers un entier, le [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) type retourné par cette méthode décrit ce type d’entier.  
+ Si, par exemple, l’objet [IDebugPointerField](../../../extensibility/debugger/reference/idebugpointerfield.md) pointe vers un entier, le type [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) retourné par cette méthode décrit ce type entier.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugPointerField](../../../extensibility/debugger/reference/idebugpointerfield.md)   

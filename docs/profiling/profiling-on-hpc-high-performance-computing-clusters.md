@@ -21,17 +21,17 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f2d3949194dedab6d7e7ea2faa1aea304d889bc4
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74772118"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>Profiler sur des clusters HPC (High Performance Computing)
 
 Vous pouvez effectuer un profilage sur des nœuds de calcul de clusters HPC Microsoft Windows suivant la méthode par échantillonnage des Outils de profilage de Visual Studio. Pour plus d’informations sur HPC, consultez [Windows HPC](https://azure.microsoft.com/solutions/big-compute/) sur le site web de Microsoft.
 
-## <a name="prerequisites"></a>Conditions préalables requises
+## <a name="prerequisites"></a>Prérequis
 
 Pour effectuer un profilage sur un nœud de calcul HPC, vous devez effectuer les opérations suivantes :
 
@@ -47,13 +47,13 @@ Pour effectuer un profilage sur un nœud de calcul HPC, vous devez effectuer les
 
     1. `clusrun /all /scheduler:` *%HeadNode% %FxPath%* `/q /norestart`
 
-    2. `clusrun /all /scheduler:`*%HeadNode%*`shutdown /r /t 0 /d u:4:2 /c "Microsoft .NET Framework install required restart"`
+    2. `clusrun /all /scheduler:`*% Nœud principal%*`shutdown /r /t 0 /d u:4:2 /c "Microsoft .NET Framework install required restart"`
 
     3. `clusrun /all /scheduler:` *%HeadNode% %ProfilerPath%* `/q /norestart`
 
 | | |
 |------------------| - |
-| *%HeadNode%* | Nom du nœud principal du cluster. |
+| *Nœud principal* | Nom du nœud principal du cluster. |
 | *%FxPath%* | Chemin du programme d’installation du .NET Framework 4. Sur le support d’installation de Visual Studio, le chemin d’accès est le suivant : WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe. |
 | *%ProfilerPath%* | Chemin de la version autonome du programme d’installation des outils de profilage. Sur le support d’installation de Visual Studio, le chemin d’accès est le suivant : Standalone Profiler\x64\vs_profiler.exe. |
 
@@ -127,12 +127,12 @@ Pour modifier les propriétés de session de performance définies dans l’Assi
 
 |Propriété|Description|
 |--------------|-----------------|
-|**Nœud de tête**|Spécifie l’ordinateur qui joue le rôle du nœud principal HPC dans l’exécution du profilage.|
+|**Nœud principal**|Spécifie l’ordinateur qui joue le rôle du nœud principal HPC dans l’exécution du profilage.|
 |**Nombre de processus**|Spécifie le nombre d’instances de l’application à exécuter dans l’application profilée.|
 |**Profil sur le rang**|Pour profiler un processus spécifique dans le cluster, sélectionnez l’option **Profil sur le rang**, puis sélectionnez le rang du processus dans la liste déroulante.|
 |**Profil sur le nœud**|Pour profiler le ou les processus exécutés sur un nœud spécifique du cluster HPC, sélectionnez l’option **Profil sur le nœud**, puis sélectionnez le nœud dans la liste déroulante.|
 |**Répertoire de travail distant**|Spécifie le chemin du dossier utilisé par les instances de processus sur chacun des nœuds de calcul.|
-|**Emplacement de déploiement**|Spécifie le chemin du répertoire utilisé par le serveur HPC pour organiser des images pour le déploiement.|
+|**Emplacement du déploiement**|Spécifie le chemin du répertoire utilisé par le serveur HPC pour organiser des images pour le déploiement.|
 
 ### <a name="advanced-properties"></a>Propriétés avancées
 

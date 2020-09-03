@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 2066959578987e358f8c1c91dcbda1eeb6f79f26
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74773595"
 ---
 # <a name="call-tree-view---net-memory-instrumentation-data"></a>Vue Arborescence des appels - Données d’instrumentation de la mémoire .NET
@@ -35,18 +35,18 @@ La vue Arborescence des appels des données de profilage pour l’allocation de 
 
 |Colonne|Description|
 |------------|-----------------|
-|**Nom de fonction**|Nom de la fonction.|
+|**Nom de la fonction**|Nom de la fonction.|
 |**Adresse de la fonction**|Adresse de la fonction.|
 |**Numéro de ligne de fonction**|Numéro de ligne du début de cette fonction dans le fichier source.|
 |**Nombre d’appels**|Nombre total d’appels émis vers cette fonction.|
-|**Fichier source**|Fichier source contenant la définition pour cette fonction.|
+|**Source File**|Fichier source contenant la définition pour cette fonction.|
 |**Nom du module**|Nom du module qui contient la fonction.|
 |**Chemin du module**|Chemin d’accès du module qui contient la fonction.|
-|**ID du processus**|ID du processus (PID) de l'exécution du profilage.|
+|**ID de processus**|ID du processus (PID) de l'exécution du profilage.|
 |**Nom du processus**|Nom assigné au processus.|
 |**Traitement de sondes du temps exclusif**|Surcharge de temps pour cette fonction qui est provoquée par l'instrumentation. Le traitement de sondes a été soustrait de tous les temps exclusifs.|
 |**Traitement des sondes temps inclus**|Surcharge de temps pour cette fonction et ses fonctions enfants qui est provoquée par l'instrumentation. Le traitement de sondes a été soustrait de tous les temps inclusifs.|
-|**Type**|Contexte de la fonction :<br /><br /> -   **0** - la fonction actuelle<br />-   **1** - une fonction qui appelle la fonction actuelle<br />-   **2** - une fonction qui est appelée par la fonction actuelle<br /><br /> Uniquement dans les rapports en ligne de commande [VSPerfReport](../profiling/vsperfreport.md).|
+|**Type**|Contexte de la fonction :<br /><br /> -   **0** -la fonction active<br />-   **1** -fonction qui appelle la fonction active<br />-   **2** -fonction appelée par la fonction active<br /><br /> Uniquement dans les rapports en ligne de commande [VSPerfReport](../profiling/vsperfreport.md).|
 |**Nom de fonction racine**|Nom de la fonction actuelle. Uniquement dans les rapports en ligne de commande [VSPerfReport](../profiling/vsperfreport.md).|
 
 ## <a name="net-memory-values"></a>Valeurs de mémoire .NET

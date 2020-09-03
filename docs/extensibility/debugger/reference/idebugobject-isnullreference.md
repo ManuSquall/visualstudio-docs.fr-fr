@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::IsNullReference ( Microsoft Docs
+title: 'IDebugObject :: IsNullReference | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e4b6e5f2d28d27deb5e4e1ff8278a071ff9110fd
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80726516"
 ---
 # <a name="idebugobjectisnullreference"></a>IDebugObject::IsNullReference
-Teste si cet objet est une référence nulle.
+Teste si cet objet est une référence null.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,13 +41,13 @@ int IsNullReference(
 
 ## <a name="parameters"></a>Paramètres
 `pfIsNull`\
-[out] Retourne non-zéro`TRUE`( ) si cet objet est une référence nulle; autrement, retourne`FALSE`zéro ( ).
+à Retourne une valeur différente de zéro ( `TRUE` ) si cet objet est une référence null ; sinon, retourne zéro ( `FALSE` ).
 
-## <a name="return-value"></a>Valeur de retour
- En cas de succès, les retours S_OK; autrement, renvoie un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes
- Une référence nulle signifie un objet vide ou un objet qui n’a pas été assigné à.
+ Une référence null signifie un objet vide ou un objet qui n’a pas été assigné à.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

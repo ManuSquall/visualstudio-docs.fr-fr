@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerObject::Dereference Microsoft Docs
+title: IDebugPointerObject ::D votre | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: fe87d5db40ce663d84c9561e89a84e6fcb1684ed
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725565"
 ---
 # <a name="idebugpointerobjectdereference"></a>IDebugPointerObject::Dereference
-Obtient l’objet pointé vers.
+Obtient l’objet vers lequel pointe.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -43,16 +43,16 @@ int Dereference(
 
 ## <a name="parameters"></a>Paramètres
 `dwIndex`\
-[dans] Un simple byte décalé dès le début de l’objet pointé du doigt.
+dans Offset d’octet simple à partir du début de l’objet vers lequel pointe.
 
 `ppObject`\
-[out] Renvoie un objet [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) représentant l’objet pointé, plus décalage, le cas échéant.
+à Retourne un objet [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) représentant l’objet vers lequel pointe, le décalage, le cas échéant.
 
-## <a name="return-value"></a>Valeur de retour
- En cas de succès, les retours S_OK; autrement, renvoie un code d’erreur. Retourne E_FAIL si cet objet ne pointe pas vers un autre objet.
+## <a name="return-value"></a>Valeur renvoyée
+ En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur. Retourne E_FAIL si cet objet ne pointe pas vers un autre objet.
 
 ## <a name="remarks"></a>Notes
- L’objet pointé vers lui peut être un type primitif ou plus complexe comme une classe ou une structure.
+ L’objet pointé peut être un type primitif ou plus complexe, tel qu’une classe ou une structure.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)

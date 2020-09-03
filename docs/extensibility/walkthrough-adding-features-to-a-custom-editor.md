@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d7605307d24aa320d2f892dc332f9ff78e14114e
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85905949"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>Procédure pas à pas : ajouter des fonctionnalités à un éditeur personnalisé
@@ -142,7 +142,7 @@ Après avoir créé un éditeur personnalisé, vous pouvez lui ajouter d’autre
 
 - Pour empêcher la foule de commandes de menu dans l’interface utilisateur, vous devez utiliser les commandes existantes dans l’IDE avant d’inventer de nouvelles commandes. Les commandes partagées sont définies dans *SharedCmdDef. vsct* et *ShellCmdDef. vsct*. Ces fichiers sont installés par défaut dans le sous-répertoire VisualStudioIntegration\Common\Inc de votre [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] installation.
 
-- `ISelectionContainer`peut exprimer à la fois des sélections uniques et multiples. Chaque objet sélectionné est implémenté en tant qu' `IDispatch` objet.
+- `ISelectionContainer` peut exprimer à la fois des sélections uniques et multiples. Chaque objet sélectionné est implémenté en tant qu' `IDispatch` objet.
 
 - L’IDE implémente `IOleUndoManager` en tant que service accessible à partir d’un <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> ou en tant qu’objet pouvant être instancié par le biais de <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> . Votre éditeur implémente l' `IOleUndoUnit` interface pour chaque `Undo` action.
 

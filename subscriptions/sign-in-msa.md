@@ -8,10 +8,10 @@ ms.date: 03/11/2020
 ms.topic: how-to
 description: Guide pratique pour vous connecter à votre abonnement Visual Studio avec votre compte Microsoft (MSA)
 ms.openlocfilehash: 566829318404b4231b37e53ae7ec34500a3a7838
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85906143"
 ---
 # <a name="signing-in-to-your-visual-studio-subscriptions-with-your-microsoft-account-msa"></a>Connexion à vos abonnements Visual Studio avec votre compte Microsoft (MSA)

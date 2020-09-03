@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessEx2::AddImplicitProgramNodes | Microsoft Docs
+title: 'IDebugProcessEx2 :: AddImplicitProgramNodes | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: faca728144bde572d8a1d3424fbfcf908403d679
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202822"
 ---
 # <a name="idebugprocessex2addimplicitprogramnodes"></a>IDebugProcessEx2::AddImplicitProgramNodes
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Cette méthode ajoute un nœud de programme pour chaque moteur de débogage (dé) spécifié.  
+Cette méthode ajoute un nœud de programme pour chaque moteur de débogage (DE) spécifié.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -44,19 +44,19 @@ int AddImplicitProgramNodes(
   
 #### <a name="parameters"></a>Paramètres  
  `guidLaunchingEngine`  
- [in] Le `GUID` d’un type de données DE qui doit être utilisée pour lancer des programmes (et est supposé pour ajouter des nœuds de son propre programme).  
+ dans `GUID` D’un de qui doit être utilisé pour lancer des programmes (et est supposé ajouter ses propres nœuds de programme).  
   
  `rgguidSpecificEngines`  
- [in] Tableau de `GUID`s DEs quel programme nœuds seront ajoutés.  
+ dans Tableau des ( `GUID` s) pour les nœuds de programme à ajouter.  
   
  `celtSpecificEngines`  
- [in] Le nombre de `GUID`s dans le `rgguidSpecificEngines` tableau.  
+ dans Nombre de `GUID` s dans le `rgguidSpecificEngines` tableau.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="remarks"></a>Notes  
- [Programmer des nœuds](../../../extensibility/debugger/program-nodes.md) sera ajouté pour chaque dé répertoriées dans `rgguidSpecificEngines`, à l’exclusion du moteur de lancement (selon les indications dans `guidLaunchingEngine`), qui est censé pour ajouter son propre nœud de programme lors du lancement d’un programme.  
+ Des [nœuds de programme](../../../extensibility/debugger/program-nodes.md) sont ajoutés pour chaque liste dans, à `rgguidSpecificEngines` l’exclusion du moteur de lancement (comme indiqué dans `guidLaunchingEngine` ), qui est supposé ajouter son propre nœud de programme lorsqu’il lance un programme.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)   

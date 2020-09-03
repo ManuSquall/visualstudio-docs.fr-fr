@@ -8,10 +8,10 @@ ms.date: 04/17/2020
 ms.topic: how-to
 description: Découvrez l’abonnement DataCamp Training inclus dans certains abonnements Visual Studio.
 ms.openlocfilehash: 49370b4b3425effc4b8eeef704684420edfd3d41
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85904518"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Avantage DataCamp Training dans les abonnements Visual Studio
@@ -76,7 +76,7 @@ Vous pouvez arrêter à tout moment et reprendre votre formation à la prochaine
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour afficher tous les abonnements attribués à votre adresse de messagerie. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 
 ## <a name="support-resources"></a>Ressources de support
-- Besoin d’aide pour utiliser DataCamp ?  Consultez les ressources suivantes :
+- Besoin d’aide pour utiliser DataCamp ?  Consultez les ressources suivantes :
   - [Communauté DataCamp](https://www.datacamp.com/community/tutorials), avec des forums et des didacticiels.
   - [Centre d’aide DataCamp](https://support.datacamp.com/hc), qui vous permet de rechercher des rubriques d’aide et de consulter les questions des utilisateurs.
   - [envoyer une demande de support ;](https://support.datacamp.com/hc/requests/new)

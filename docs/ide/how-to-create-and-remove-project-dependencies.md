@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ad21aeae2d348f56cb722365cd1e2ded249bbefe
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284462"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>Guide pratique pour créer et supprimer les dépendances d’un projet
@@ -64,6 +64,6 @@ Quand vous générez une solution qui contient plusieurs projets, vous pouvez ê
 ## <a name="see-also"></a>Voir aussi
 
 - [Générer et nettoyer des solutions et des projets dans Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
-- [Compilation et génération](../ide/compiling-and-building-in-visual-studio.md)
+- [Compiler et générer](../ide/compiling-and-building-in-visual-studio.md)
 - [Présentation des configurations de build](../ide/understanding-build-configurations.md)
 - [Gérer les propriétés des projets et des solutions](managing-project-and-solution-properties.md)

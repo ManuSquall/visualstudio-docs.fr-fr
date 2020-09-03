@@ -21,10 +21,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: af2b71dd2169500b1c4a75ed59292779959d31a0
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74299673"
 ---
 # <a name="html-ui-responsiveness"></a>Réactivité de l'interface utilisateur HTML
@@ -40,16 +40,16 @@ Cette rubrique explique comment isoler les problèmes de performances dans vos a
   
 - Les mises à jour visuelles qui sont moins fréquentes que prévu. Cela se produit si le thread d'interface utilisateur est trop occupé pour assurer une fréquence d'images lisse. Par exemple, si le thread d'interface utilisateur est occupé, des images peuvent être supprimées. Un travail thread qui n'est pas une interface utilisateur, par exemple les demandes réseau, le décodage d'image et les peintures, peut également limiter la fréquence des mises à jour visuelles. (Les peintures ne sont pas toutes exécutées sur le thread d'interface utilisateur.)  
   
-## <a name="RunningProfiler"></a> Exécuter l’outil de réactivité de l’interface utilisateur HTML  
+## <a name="run-the-html-ui-responsiveness-tool"></a><a name="RunningProfiler"></a> Exécuter l’outil de réactivité de l’interface utilisateur HTML  
  Vous pouvez utiliser l’outil de réactivité de l’interface utilisateur HTML quand vous avez une application universelle Windows ou une application Windows Store opérationnelle ouverte dans Visual Studio ou installée sur un ordinateur exécutant Windows 8 ou version ultérieure.  
   
 1. Si vous exécutez l'application à partir de Visual Studio, sur la barre d'outils **Standard** , dans la liste **Démarrer le débogage** , sélectionnez une cible de déploiement comme l'une des émulateurs Windows Phone, **Ordinateur local**, **Simulateur**ou **Ordinateur distant**.  
   
-2. Dans le menu **Déboguer** , choisissez **Profileur de performances**.  
+2. Dans le menu **Déboguer** , choisissez **profileur de performances...**.  
   
      Pour modifier la cible d’analyse du profileur, sélectionnez**Modifier la cible**.  
   
-     ![Changer la cible de l'analyse](../profiling/media/js-tools-target.png "|::ref1::|")  
+     ![Changer la cible de l'analyse](../profiling/media/js-tools-target.png "JS_Tools_Target")  
   
      Les options suivantes sont disponibles pour la cible d'analyse :  
   
@@ -73,10 +73,10 @@ Cette rubrique explique comment isoler les problèmes de performances dans vos a
   
 6. Pour arrêter le profilage de l'application et afficher les données que le profileur a rassemblées, sélectionnez **Arrêter la collecte**.  
   
-## <a name="IsolateAnIssue"></a> Isoler un problème  
+## <a name="isolate-an-issue"></a><a name="IsolateAnIssue"></a> Isoler un problème  
  La section suivante propose des solutions pour vous aider à isoler les problèmes de performances. Pour obtenir une explication pas à pas de l’identification et de la correction des problèmes de performances à l’aide d’un exemple d’application de test de performances, consultez [Procédure pas à pas : amélioration de la réactivité de l’interface utilisateur (HTML)](../profiling/walkthrough-improving-ui-responsiveness-html.md).  
   
-### <a name="Workflow"></a> Isoler un problème de réactivité de l’interface utilisateur  
+### <a name="isolate-a-ui-responsiveness-problem"></a><a name="Workflow"></a> Isoler un problème de réactivité de l’interface utilisateur  
  La procédure suivante constitue une proposition de flux de travail qui peut vous aider à utiliser le profileur de réactivité de l'interface utilisateur plus efficacement :  
   
 1. Ouvrez votre application dans Visual Studio.  
@@ -100,7 +100,7 @@ Cette rubrique explique comment isoler les problèmes de performances dans vos a
   
 8. Si vous avez ajouté des marques utilisateur, elles s'afficheront dans la [Visualiser la chronologie de la session de diagnostic](#Ruler) du profileur. L'illustration suivante montre une marque utilisateur unique utilisée pour spécifier une opération spécifique dans votre code.  
   
-     ![Règle de diagnostics affichant une marque utilisateur](../profiling/media/js-htmlvizprofiler-usermark.png "|::ref2::|")  
+     ![Règle de diagnostics affichant une marque utilisateur](../profiling/media/js-htmlvizprofiler-usermark.png "JS_HTMLVizProfiler_UserMark")  
   
 9. Identifiez une zone d'intérêt dans la chronologie et dans les graphiques du profileur à l'aide des marques utilisateur, des événements du cycle de vie de l'application ou des données visibles dans les graphiques. Voici quelques indications pour vous aider à analyser et utiliser les données dans les graphiques :  
   
@@ -114,7 +114,7 @@ Cette rubrique explique comment isoler les problèmes de performances dans vos a
   
      L'illustration suivante montre le graphique d'utilisation de l'UC. Une zone d'intérêt est mise en surbrillance.  
   
-     ![Graphe d’utilisation du processeur](../profiling/media/js-htmlvizprof-cpu-util.png "|::ref3::|")  
+     ![Graphique d’utilisation de l’UC](../profiling/media/js-htmlvizprof-cpu-util.png "JS_HTMLVizProf_CPU_Util")  
   
 11. Utilisez la [Visualiser les détails de la chronologie](#TimelineDetails) pour obtenir des informations détaillées sur les événements qui s'exécutent trop souvent ou qui durent trop longtemps. Recherchez par exemple les éléments suivants :  
   
@@ -133,12 +133,12 @@ Cette rubrique explique comment isoler les problèmes de performances dans vos a
   
 13. Une fois le zoom avant effectué, sélectionnez une partie du graphique de l'utilisation de l'UC ou du graphique visuel de débit. Lorsque vous effectuez une sélection, le graphique des détails de chronologie dans le volet inférieur du profileur change pour n'afficher que la période sélectionnée.  
   
-### <a name="IsolateVisualThroughput"></a> Isolate a visual throughput problem  
+### <a name="isolate-a-visual-throughput-problem"></a><a name="IsolateVisualThroughput"></a> Isolate a visual throughput problem  
  Les périodes d'utilisation excessive de l'UC peuvent entraîner des fréquences d'images faibles ou incohérentes. Si vous développez des applications multimédias élaborées et des jeux, le graphique visuel de débit peut fournir des données plus importantes que le graphique d'utilisation de l'UC.  
   
  Pour isoler un problème de débit visuel, suivez les étapes décrites dans la section précédente, mais utilisez le graphique visuel de débit comme l'un des points de données clés.  
   
-### <a name="ProfileMark"></a> Marquer du code pour l'analyser  
+### <a name="mark-code-for-analysis"></a><a name="ProfileMark"></a> Marquer du code pour l'analyser  
  Pour aider à isoler une section de code d'application associé à des données affichées dans les graphiques, vous pouvez ajouter un appel de fonction dans votre application. Cet appel de fonction indique au profileur d'insérer une marque de profil (un triangle inversé) dans la chronologie lors de l'exécution de la fonction. Toute marque utilisateur ajoutée s'affiche dans la chronologie du graphique d'utilisation de l'UC, du graphique visuel de débit et dans celui des détails de chronologie.  
   
  Pour ajouter une marque utilisateur, ajoutez le code suivant à votre application. Dans cet exemple, la description de l'événement est « obtention de données ».  
@@ -157,7 +157,7 @@ if (performance && performance.mark) {
   
  L'illustration suivante montre la règle de diagnostic avec une seule marque utilisateur et son info-bulle.  
   
- ![Règle de diagnostics affichant une marque utilisateur](../profiling/media/js-htmlvizprofiler-usermark.png "|::ref4::|")  
+ ![Règle de diagnostics affichant une marque utilisateur](../profiling/media/js-htmlvizprofiler-usermark.png "JS_HTMLVizProfiler_UserMark")  
   
  Vous pouvez également créer des événements générés par un outil dans l'affichage des détails de la chronologie pour afficher le temps entre deux marques utilisateur. Le code suivant ajoute une seconde marque utilisateur et une mesure du temps entre l'exécution de deux marques utilisateur (le code précédent montre la première marque utilisateur).  
   
@@ -172,17 +172,17 @@ if (performance.mark && performance.measure) {
   
  La mesure du temps s'affiche en tant qu'événement **Mesure de l'utilisateur** dans l'affichage détaillé de la chronologie, et donne des informations détaillées quand elle est sélectionnée.  
   
- ![Événement de mesure utilisateur dans le panneau des détails de la chronologie](../profiling/media/js-htmlvizprofiler-user-measure.png "|::ref5::|")  
+ ![Événement de mesure utilisateur dans le panneau des détails de la chronologie](../profiling/media/js-htmlvizprofiler-user-measure.png "JS_HTMLVizProfiler_User_Measure")  
   
-## <a name="AnalyzeData"></a> Analyser des données  
+## <a name="analyze-data"></a><a name="AnalyzeData"></a> Analyser les données  
  Les sections suivantes fournissent des informations pour aider à interpréter les données qui s'affichent dans le profileur.  
   
-### <a name="Ruler"></a> Visualiser la chronologie de la session de diagnostic  
+### <a name="view-the-diagnostic-session-timeline"></a><a name="Ruler"></a> Visualiser la chronologie de la session de diagnostic  
  La règle en haut du profileur montre la chronologie correspondant aux informations profilées. Cette chronologie s'applique au graphique d'utilisation de l'UC et au graphique visuel de débit.  
   
  Voici à quoi ressemble la chronologie de la session de diagnostic avec une info-bulle pour plusieurs événements du cycle de vie de l'application :  
   
- ![Règle de session de diagnostic](../profiling/media/js-htmlvizprof-ruler.png "|::ref6::|")  
+ ![Règle de session de diagnostic](../profiling/media/js-htmlvizprof-ruler.png "JS_HTMLVizProf_Ruler")  
   
  La chronologie indique le moment où se produisent les événements du cycle de vie d'une application, comme l'événement d'activation, et indique les marques utilisateur (les triangles Marque utilisateur) que vous pouvez ajouter à votre code. Vous pouvez sélectionner les événements pour afficher des info-bulles contenant plus d’informations. Pour plus d'informations sur les marques utilisateur, consultez [Marquer du code pour l'analyser](#ProfileMark) dans cette rubrique.  
   
@@ -192,7 +192,7 @@ if (performance.mark && performance.measure) {
   
 - Un événement de navigation, qui se produit lorsque vous accédez à une autre page. L'info-bulle de cet événement indique l'URL de la page de destination.  
   
-### <a name="CPUUtilization"></a> Visualiser l'utilisation de l'UC  
+### <a name="view-cpu-utilization"></a><a name="CPUUtilization"></a> Visualiser l'utilisation de l'UC  
  Le graphique d'utilisation de l'UC vous permet d'identifier les périodes pour lesquelles il existe une activité excessive du processeur. Il fournit des informations sur l'utilisation moyenne du processeur par l'application sur une période donnée. Les informations sont colorées pour représenter les catégories spécifiques suivantes : **Chargement en cours**, **Scripts**, garbage collection (**GC**), **Styles**, **Rendu**et **Décodage d'image**. Pour plus d'informations sur ces catégories, consultez [Profiler event reference](#ProfilerEvents) plus loin dans cette rubrique.  
   
  Le graphique d'utilisation de l'UC illustre le temps passé sur tous les threads d'application, en combinant les valeurs d'utilisation de l'UC pour un ou plusieurs processeurs en une seule valeur de pourcentage. La valeur d'utilisation de l'UC peut dépasser 100 % lorsque plusieurs processeurs sont en cours d'utilisation.  
@@ -202,7 +202,7 @@ if (performance.mark && performance.measure) {
   
  Cet exemple montre à quoi ressemble le graphique d'utilisation de l'UC :  
   
- ![Graphe d’utilisation du processeur](../profiling/media/js-htmlvizprof-cpu-util.png "|::ref7::|")  
+ ![Graphique d’utilisation de l’UC](../profiling/media/js-htmlvizprof-cpu-util.png "JS_HTMLVizProf_CPU_Util")  
   
  Utilisez ce graphique pour :  
   
@@ -214,7 +214,7 @@ if (performance.mark && performance.measure) {
   
   Pour plus d'informations sur l'utilisation du graphique, voir [Isolate a UI responsiveness problem](#Workflow) dans cette rubrique.  
   
-### <a name="VisualThroughput"></a> Visualiser le débit visuel (i/s)  
+### <a name="view-visual-throughput-fps"></a><a name="VisualThroughput"></a> Visualiser le débit visuel (i/s)  
  Le graphique visuel de débit vous permet d'identifier les périodes durant lesquelles la fréquence d'images a été supprimée. Il indique les images par seconde (i/s) pour l'application. Ce graphique est très utile pour le développement de jeux et d'applications multimédias élaborées.  
   
  La fréquence d'images affichée peut différer de la fréquence d'images réelle. Gardez les informations ci-dessous à l'esprit lorsque vous examinez les données de ce graphique.  
@@ -227,7 +227,7 @@ if (performance.mark && performance.measure) {
   
   L'exemple suivant montre à quoi ressemble le graphique visuel de débit :  
   
-  ![Graphe visuel de débit](../profiling/media/js-htmlvizprof-vizthru.png "|::ref8::|")  
+  ![Graphe visuel de débit](../profiling/media/js-htmlvizprof-vizthru.png "JS_HTMLVizProf_VizThru")  
   
   Utilisez le graphique visuel de débit pour :  
   
@@ -237,7 +237,7 @@ if (performance.mark && performance.measure) {
   
 - Obtenez une vue plus détaillée d'une période sélectionnée en sélectionnant le bouton **Zoom avant** .  
   
-### <a name="TimelineDetails"></a> Visualiser les détails de la chronologie  
+### <a name="view-timeline-details"></a><a name="TimelineDetails"></a> Visualiser les détails de la chronologie  
  Le graphique des détails de chronologie s'affiche dans le volet inférieur du profileur de réactivité de l'interface utilisateur. Il fournit des informations séquentielles et hiérarchiques sur les événements qui ont consommé le plus de temps processeur pendant les périodes sélectionnées. Ce graphique peut vous aider à déterminer ce qui a déclenché un événement particulier et, pour certains événements, comment l'événement est mappé en retour au code source. Ce graphique vous aide également à déterminer le temps nécessaire pour peindre des mises à jour visuelles sur l'écran.  
   
  Le graphique montre le travail du thread d'interface utilisateur et le travail sur les threads d'arrière-plan qui peuvent contribuer à ralentir les mises à jour visuelles. Le graphique n'affiche pas le travail JIT JavaScript, le travail GPU asynchrone, le travail effectué en dehors du processus hôte (tel que le travail RuntimeBroker.exe et dwm.exe) ou le travail pour les zones du Windows Runtime qui n'a pas été instrumenté pour le profilage (telles que les E/S de disque).  
@@ -247,7 +247,7 @@ if (performance.mark && performance.measure) {
   
  Cet exemple montre à quoi ressemble le graphique des détails de chronologie lorsque l'écouteur d'événements est sélectionné pour un événement de clic DOM :  
   
- ![Graphe des détails de la chronologie](../profiling/media/js-htmlvizprof-timelinedet.png "|::ref9::|")  
+ ![Graphe des détails de la chronologie](../profiling/media/js-htmlvizprof-timelinedet.png "JS_HTMLVizProf_TimelineDet")  
   
  Dans cette illustration, le gestionnaire d'événements **spinAction** dans la colonne **Nom de l'événement** est un lien qui, lorsqu'il est sélectionné, vous amène au gestionnaire d'événements dans le code source. Dans le volet de droite, la propriété **Fonction de rappel** fournit le même lien vers le code source. D'autres propriétés fournissent également des informations sur l'événement, par exemple l'élément DOM associé.  
   
@@ -276,17 +276,17 @@ if (performance.mark && performance.measure) {
   > [!TIP]
   > Le graphique des détails de la chronologie et **Résumé du temps inclusif** peuvent vous aider à identifier des zones pour l'optimisation. Si l'une de ces vues affiche un grand nombre de petites tâches, l'événement peut être un candidat à l'optimisation. Par exemple, une application peut actualiser souvent les éléments DOM, ce qui provoque de grandes quantités d'événements de disposition et d'analyse HTML. Vous pouvez optimiser les performances lors du traitement par lots de ce travail.  
 
-### <a name="FilterTimelineDetails"></a> Filtrer les détails de la chronologie  
+### <a name="filter-timeline-details"></a><a name="FilterTimelineDetails"></a> Filtrer les détails de la chronologie  
  Vous pouvez filtrer l'affichage des détails de la chronologie pour un événement particulier en sélectionnant **Filtrer jusqu'à l'événement** à partir du menu contextuel d'un événement spécifique. Lorsque vous choisissez cette option, la chronologie et l'affichage de la grille s'étendent sur l'événement sélectionné. La sélection dans le graphique d'utilisation de l'UC s'étend également sur l'événement spécifique.  
   
- ![Filtrage de la chronologie en fonction d'un événement](../profiling/media/js-htmlvizprofiler-filtertoevent.png "|::ref10::|")  
+ ![Filtrage de la chronologie en fonction d'un événement](../profiling/media/js-htmlvizprofiler-filtertoevent.png "JS_HTMLVizProfiler_FilterToEvent")  
   
-### <a name="FilterEvents"></a> Filtrer des événements  
+### <a name="filter-events"></a><a name="FilterEvents"></a> Filtrer les événements  
  Vous pouvez exclure des événements du graphique des détails de chronologie pour éliminer le bruit dans les données, ou pour éliminer des données sans intérêt pour votre scénario d'analyse de performances. Vous pouvez filtrer par nom d'événement ou durée de l'événement, ou en utilisant des filtres spécifiques décrits ci-après.  
   
  Pour exclure le décodage d'image, le téléchargement spéculatif et les événements de GC, désactivez l'option **Activité en arrière-plan** à partir de l'icône de filtre dans le volet inférieur. Comme ces événements ne font l'objet que de peu d'actions, ils sont masqués par défaut.  
   
- ![Filtrage des événements dans la chronologie](../profiling/media/js-htmlvizprofiler-event-filter.png "|::ref11::|")  
+ ![Filtrage des événements dans la chronologie](../profiling/media/js-htmlvizprofiler-event-filter.png "JS_HTMLVizProfiler_Event_Filter")  
   
  Pour exclure les événements de requête HTTP, désactivez l'option **Trafic réseau** à partir de l'icône de filtre dans le volet inférieur. Par défaut, ces événements sont affichés dans le graphique des détails de chronologie.  
   
@@ -297,24 +297,24 @@ if (performance.mark && performance.measure) {
   
  Pour exclure des mesures de l'utilisateur, désactivez l'option **Mesures de l'utilisateur** . Les mesures de l'utilisateur sont des événements de niveau supérieur sans enfant.  
   
-### <a name="GroupFrames"></a> Regrouper les événements par frame  
+### <a name="group-events-by-frame"></a><a name="GroupFrames"></a> Regrouper les événements par frame  
  Vous pouvez regrouper les événements qui s'affichent dans l'affichage des détails de la chronologie afin d'afficher des frames individuels. Ces événements de frame sont des événements générés par des outils qui représentent les conteneurs d'événements pour tout le travail de thread d'interface utilisateur qui se produit entre les événements de dessin. Pour activer cet affichage, sélectionnez **Regrouper les événements de niveau supérieur par frames**.  
   
- ![Regrouper les événements de niveau supérieur par frame](../profiling/media/js-htmlvizprofiler-frame-grouping-button.png "|::ref12::|")  
+ ![Regrouper les événements de niveau supérieur par frame](../profiling/media/js-htmlvizprofiler-frame-grouping-button.png "JS_HTMLVizProfiler_Frame_Grouping_Button")  
   
  Quand vous regroupez les événements par frame, les événements de niveau supérieur dans l'affichage des détails de la chronologie représentent chacun un frame.  
   
- ![Événements de la chronologie regroupés par frame](../profiling/media/js-htmlvizprofiler-frame-grouping.png "|::ref13::|")  
+ ![Événements de la chronologie regroupés par frame](../profiling/media/js-htmlvizprofiler-frame-grouping.png "JS_HTMLVizProfiler_Frame_Grouping")  
   
-## <a name="SaveSession"></a> Enregistrer une session de diagnostic  
+## <a name="save-a-diagnostic-session"></a><a name="SaveSession"></a> Enregistrer une session de diagnostic  
  Dans Visual Studio, vous pouvez enregistrer une session en fermant l'onglet associé à celle-ci. Les sessions enregistrées peuvent être rouvertes ultérieurement.  
   
-## <a name="ProfilerEvents"></a> Profiler event reference  
+## <a name="profiler-event-reference"></a><a name="ProfilerEvents"></a> Profiler event reference  
  Les événements du profileur sont classés et colorés dans le profileur de réactivité de l'interface utilisateur. Voici les catégories d'événements :  
   
-- **Chargement en cours.** Indique le temps passé à la récupération des ressources d'application et à l'analyse du code HTML et CSS lors du premier chargement de l'application. Les demandes réseau peuvent être incluses.  
+- **Cours.** Indique le temps passé à la récupération des ressources d'application et à l'analyse du code HTML et CSS lors du premier chargement de l'application. Les demandes réseau peuvent être incluses.  
   
-- **Scripts.** Indique le temps passé à l'analyse et à l'exécution du code JavaScript. Sont inclus les événements DOM, les minuteries, l'évaluation des scripts et le framework d'animation. Sont compris le code utilisateur et le code de bibliothèque.  
+- **Script.** Indique le temps passé à l'analyse et à l'exécution du code JavaScript. Sont inclus les événements DOM, les minuteries, l'évaluation des scripts et le framework d'animation. Sont compris le code utilisateur et le code de bibliothèque.  
   
 - **GC.** Indique le temps passé à effectuer le garbage collection.  
   
@@ -330,31 +330,31 @@ if (performance.mark && performance.measure) {
   
   Ce tableau affiche les événements et leurs descriptions :  
   
-|événement|Catégorie d'événement|Se produit lorsque|  
+|Événement|Catégorie d'événements|Survient lorsque|  
 |-----------|--------------------|-----------------|  
-|Analyse de code CSS|Chargement en cours|Un nouveau contenu CSS a été rencontré et il a été tenté d'analyser le contenu CSS.|  
-|Analyse de code HTML|Chargement en cours|Un nouveau contenu HTML a été rencontré et il a été tenté d'analyser le contenu dans des nœuds et d'insérer le contenu dans l'arborescence DOM.|  
-|Requête HTTP|Chargement en cours|Une ressource distante a été trouvée dans le DOM ou un XMLHttpRequest a été créé qui a provoqué une requête HTTP.|  
-|Téléchargement spéculatif|Chargement en cours|Les ressources requises ont été recherchées dans le contenu HTML de la page de sorte que les requêtes HTTP suivantes concernant les ressources ont pu être planifiées rapidement.|  
+|Analyse de code CSS|Chargement|Un nouveau contenu CSS a été rencontré et il a été tenté d'analyser le contenu CSS.|  
+|Analyse de code HTML|Chargement|Un nouveau contenu HTML a été rencontré et il a été tenté d'analyser le contenu dans des nœuds et d'insérer le contenu dans l'arborescence DOM.|  
+|Demande HTTP|Chargement|Une ressource distante a été trouvée dans le DOM ou un XMLHttpRequest a été créé qui a provoqué une requête HTTP.|  
+|Téléchargement spéculatif|Chargement|Les ressources requises ont été recherchées dans le contenu HTML de la page de sorte que les requêtes HTTP suivantes concernant les ressources ont pu être planifiées rapidement.|  
 |Fonction de rappel d'image d'animation|Scripts|Le navigateur allait afficher une autre image et cela a déclenché une fonction de rappel fournie par l'application.|  
 |Événement DOM|Scripts|Un événement DOM s'est produit et a été exécuté.<br /><br /> La propriété `context` de l'événement DOM, par exemple  `DOMContentLoaded` ou `click`, est affichée entre parenthèses.|  
 |Écouteur d'événements|Scripts|Un écouteur d'événements a été appelé et exécuté.|  
 |Écouteur de requête multimédia|Scripts|Une requête multimédia inscrite a été annulée, ce qui a entraîné l'exécution de ses écouteurs associés.|  
 |Observateur de mutations|Scripts|Un ou plusieurs éléments DOM observés ont été modifiés, ce qui a entraîné l'exécution du rappel associé à MutationObserver.|  
 |Évaluation des scripts|Scripts|Un nouvel élément SCRIPT a été trouvé dans le DOM et il a été tenté d'analyser et d'exécuter le script.|  
-|Minuterie|Scripts|Une minuterie planifiée s'est écoulée et a provoqué l'exécution de sa fonction de rappel associée.|  
+|Minuteur|Scripts|Une minuterie planifiée s'est écoulée et a provoqué l'exécution de sa fonction de rappel associée.|  
 |Fonction de rappel asynchrone Windows Runtime|Scripts|Une opération asynchrone qui a déclenché une fonction de rappel `Promise` a été effectuée par un objet Runtime Windows.|  
 |Événement Windows Runtime|Scripts|Un événement qui s'est produit sur un objet Windows Runtime a déclenché un écouteur inscrit.|  
-|Garbage collection|GC|Du temps a été passé à collecter de la mémoire pour des objets qui n'étaient plus utilisés.|  
+|Nettoyage de la mémoire|GC|Du temps a été passé à collecter de la mémoire pour des objets qui n'étaient plus utilisés.|  
 |Calcul du code CSS|Styles|Des modifications ont été apportées au DOM qui ont nécessité de recalculer les propriétés de style de tous les éléments affectés.|  
-|Mise en page|Styles|Des modifications ont été apportées au DOM qui ont nécessité de recalculer la taille et/ou la position de tous les éléments affectés.|  
+|Layout|Styles|Des modifications ont été apportées au DOM qui ont nécessité de recalculer la taille et/ou la position de tous les éléments affectés.|  
 |Peinture|Rendu|Des modifications visuelles ont été apportées au DOM et il a été tenté d'effectuer un nouveau rendu de parties de la page.|  
 |Couche de rendu|Rendu|Des modifications visuelles ont été apportées à un fragment du DOM (appelé une couche) rendu indépendamment et ces modifications ont nécessité le rendu d'une partie de la page.|  
 |Décodage d'image|Décodage d'image|Une image a été incluse dans le DOM et il a été tenté de décompresser et décoder le format initial de l'image en bitmap.|  
 |Frame|N/A|Les modifications visuelles ont été apportées au DOM, c'est pourquoi toutes les parties concernées dans la page ont été redessinées. Il s'agit d'un événement généré par un outil qui est utilisé pour le regroupement.|  
 |Mesure de l'utilisateur|N/A|Un scénario spécifique à une application a été mesuré à l'aide de la méthode `performance.measure` . Il s'agit d'un événement généré par un outil qui est utilisé pour analyser le code.|  
   
-## <a name="Tips"></a> Informations supplémentaires  
+## <a name="additional-information"></a><a name="Tips"></a> Informations supplémentaires  
   
 - Visionnez [cette vidéo](https://channel9.msdn.com/Events/Build/2013/3-316) de la conférence Build 2013 sur le profileur de réactivité de l’interface utilisateur.  
   
@@ -363,4 +363,4 @@ if (performance.mark && performance.measure) {
 - Pour plus d’informations sur le modèle et les performances d’exécution de code monothread, consultez [Exécution du code](https://msdn.microsoft.com/library/windows/apps/hh781217.aspx).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Analyser les performances des applications](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)
+ [Analyser le niveau de performance de l’application](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)

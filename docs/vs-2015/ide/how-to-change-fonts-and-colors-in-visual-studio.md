@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0312846431f670ae136fdadfc8647c4096348941
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74300133"
 ---
 # <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Comment : modifier les polices et les couleurs dans Visual Studio
@@ -25,15 +25,15 @@ ms.locfileid: "74300133"
 Vous pouvez personnaliser la couleur des fenêtres d'outils et du cadre de l'environnement IDE de Visual Studio de différentes façons.
 
 > [!TIP]
-> Pour plus d’informations sur la façon de modifier les couleurs de l’éditeur de code, consultez [Guide pratique pour modifier les polices et les couleurs utilisées dans l’éditeur](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+> Pour plus d’informations sur la modification des couleurs de l’éditeur de code, consultez [Comment : modifier les polices et les couleurs dans l’éditeur](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
 ### <a name="change-the-color-theme-of-the-ide"></a>Modifier le thème de couleur de l'environnement IDE
 
-1. Dans la barre de menus, sélectionnez **Outils**, **Options**.
+1. Dans la barre de menus, choisissez **Outils**, **options**.
 
 2. Dans la liste d’options, choisissez **Environnement**, **Général**.
 
-3. Dans la liste **Thème de couleur**, choisissez le thème **Bleu** par défaut, **Sombre** ou **Clair**.
+3. Dans la liste **thème de couleur** , choisissez le thème **bleu** par défaut, **sombre** ou **clair**.
 
     > [!IMPORTANT]
     > Lorsque vous modifiez un thème de couleur, le texte dans l'environnement IDE est rétabli à la valeur par défaut ou aux tailles et polices précédemment personnalisées.
@@ -52,18 +52,18 @@ Vous pouvez personnaliser la couleur des fenêtres d'outils et du cadre de l'env
 
 #### <a name="to-change-the-font-and-size-of-all-text-in-the-ide"></a>Pour modifier la police et la taille de tout le texte dans l'environnement IDE
 
-1. Dans la barre de menus, sélectionnez **Outils**, **Options**.
+1. Dans la barre de menus, choisissez **Outils**, **options**.
 
 2. Dans la liste d’options, choisissez **Environnement**, **Polices et couleurs**.
 
 3. Dans la liste **Afficher les paramètres de**, choisissez **Police d’environnement**.
 
     > [!TIP]
-    > Pour changer la police des fenêtres Outil uniquement, dans la liste **Afficher les paramètres de**, choisissez **[Toutes les fenêtres Outil de texte]** .
+    > Si vous souhaitez modifier la police des fenêtres outil uniquement, dans la liste **afficher les paramètres de** , choisissez **[toutes les fenêtres outil de texte]**.
 
 4. Dans la liste **Police**, choisissez une police.
 
 5. Dans la liste **Taille**, choisissez une taille de texte, puis choisissez le bouton **OK**.
 
 ## <a name="see-also"></a>Voir aussi
- [Fonctionnalités d’accessibilité de Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md) [Comment : modifier les polices et les couleurs dans l’éditeur](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
+ [Fonctionnalités d’accessibilité de Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md) [Guide pratique pour changer les polices et les couleurs utilisées dans l’Éditeur](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)

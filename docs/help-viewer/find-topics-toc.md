@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f9bd332b5767dbfffcfbaa44637e0cc92051f7b1
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85284930"
 ---
 # Guide pratique pour rechercher des rubriques dans la table des matières
@@ -31,7 +31,7 @@ Sous l’onglet **Sommaire**, vous pouvez utiliser la table des matières pour r
 
 ## Filtrer la table des matières
 
-Vous pouvez filtrer la table des matières pour limiter l’étendue des rubriques qui s’affichent sous l’onglet **Sommaire** . les titres apparaissent dans la liste uniquement s’ils contiennent la racine du terme que vous spécifiez. Par exemple, si vous spécifiez le filtre « configurer », seuls les titres qui contiennent « configure » ou « configurer » s'affichent. Les nœuds dont les titres ne contiennent pas le terme sont réduits à un seul nœud avec des points de suspension (**...**).
+Vous pouvez filtrer la table des matières pour limiter l’étendue des rubriques qui s’affichent sous l’onglet **Sommaire** . Les titres apparaissent dans la liste uniquement s’ils contiennent la racine du terme que vous spécifiez. Par exemple, si vous spécifiez le filtre « configurer », seuls les titres qui contiennent « configure » ou « configurer » s'affichent. Les nœuds dont les titres ne contiennent pas le terme sont réduits à un seul nœud avec des points de suspension (**...**).
 
 1. Choisissez l’onglet **Sommaire**.
 

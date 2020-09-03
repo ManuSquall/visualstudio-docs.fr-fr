@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - dotnet
 ms.openlocfilehash: 9d0d9b7ab681a266115673b48f2c2604c5ff869c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74772725"
 ---
 # <a name="modules-view---net-memory-sampling-data"></a>Modules, vue - données d’échantillonnage de la mémoire .NET
@@ -25,12 +25,12 @@ La vue Modules des données d’allocation de mémoire .NET collectées à l’
 
 |Colonne|Description|
 |------------|-----------------|
-|**Nom   **|Nom du module, de la fonction, du numéro de ligne ou de l’adresse d’instruction.|
-|**ID du processus**|ID du processus (PID) de l'exécution du profilage.|
+|**Name**|Nom du module, de la fonction, du numéro de ligne ou de l’adresse d’instruction.|
+|**ID de processus**|ID du processus (PID) de l'exécution du profilage.|
 |**Nom du processus**|Nom du processus.|
 |**Nom du module**|Nom du module qui contient la fonction.|
 |**Chemin du module**|Chemin du module.|
-|**Fichier source**|Fichier source contenant la définition pour cette fonction.|
+|**Source File**|Fichier source contenant la définition pour cette fonction.|
 |**Numéro de ligne de fonction**|Numéro de ligne du début de cette fonction dans le fichier source.|
 |**Allocations inclusives**|-   Pour une fonction, nombre total d’objets créés par la fonction. Ce nombre inclut les objets créés dans les fonctions appelées par cette fonction.<br />-   Pour un module, nombre d’objets d’une exécution du profilage alloués alors qu’au moins une fonction du module s’exécutait. Ce nombre inclut les objets créés dans les fonctions appelées par les fonctions de module.<br />-   Pour une ligne ou une instruction, nombre total d’objets alloués par la ligne ou l’instruction.|
 |**% d’allocations inclusives**|Pourcentage de tous les objets alloués dans le cadre de l’exécution du profilage qui étaient des allocations inclusives du module, de la fonction, de la ligne ou de l’instruction.|
@@ -43,6 +43,6 @@ La vue Modules des données d’allocation de mémoire .NET collectées à l’
 
 ## <a name="see-also"></a>Voir aussi
 - [Guide pratique pour personnaliser les colonnes de la vue de rapport](../profiling/how-to-customize-report-view-columns.md)
-- [Modules Vue - instrumentation](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
+- [Vue modules-Instrumentation](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
 - [Vue Modules](../profiling/modules-view-sampling-data.md)
 - [Vue Modules](../profiling/modules-view-instrumentation-data.md)

@@ -18,13 +18,13 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 0e127006976c484d1e4fc2fe011af979af7eb7a9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76114988"
 ---
-# <a name="troubleshoot-network-related-errors-when-you-install-or-use-visual-studio"></a>Erreurs liées au réseau lorsque vous installez ou utilisez Visual Studio
+# <a name="troubleshoot-network-related-errors-when-you-install-or-use-visual-studio"></a>Résoudre les erreurs liées au réseau lorsque vous installez ou utilisez Visual Studio
 
 Nous avons des solutions pour résoudre les erreurs liées au réseau ou au proxy les plus fréquemment rencontrées lorsque vous installez ou utilisez Visual Studio derrière un pare-feu ou un serveur proxy.
 
@@ -34,7 +34,7 @@ Cette erreur se produit généralement quand les utilisateurs sont connectés à
 
 ### <a name="to-fix-this-proxy-error"></a>Pour corriger cette erreur de proxy
 
-- Redémarrez Visual Studio. Une boîte de dialogue d'authentification du proxy doit s'afficher. Entrez vos informations d'identification dans la boîte de dialogue lorsque vous y êtes invité.
+- Démarrez Visual Studio. Une boîte de dialogue d'authentification du proxy doit s'afficher. Entrez vos informations d'identification dans la boîte de dialogue lorsque vous y êtes invité.
 
 - Si le redémarrage de Visual Studio ne résout pas le problème, cela est peut-être dû au fait que votre serveur proxy ne demande pas d’informations d’identification pour les adresses http:&#47;&#47;go.microsoft.com, mais uniquement pour les adresses &#42;.visualStudio.microsoft.com. Pour ces serveurs, envisagez d’ajouter les URL suivantes à une liste verte pour débloquer tous les scénarios de connexion dans Visual Studio :
 
@@ -69,7 +69,7 @@ Cette erreur se produit généralement quand les utilisateurs sont connectés à
       Vous devez insérer l'adresse proxy correcte de votre réseau dans `proxyaddress="<http://<yourproxy:port#>`.
 
      > [!NOTE]
-     > Pour plus d’informations, consultez les [ &lt;pages Par défautProxy&gt; Element (Network Settings)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/) et [ &lt;proxy&gt; Element (Network Settings).](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings)
+     > Pour plus d’informations, consultez les pages [ &lt; &gt; élément defaultProxy (paramètres réseau)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/) et [ &lt; &gt; élément proxy (paramètres réseau)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings) .
 
 ::: moniker-end
 
@@ -88,7 +88,7 @@ Cette erreur se produit généralement quand les utilisateurs sont connectés à
       Vous devez insérer l'adresse proxy correcte de votre réseau dans `proxyaddress="<http://<yourproxy:port#>`.
 
      > [!NOTE]
-     > Pour plus d’informations, consultez les [ &lt;pages Par défautProxy&gt; Element (Network Settings)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/) et [ &lt;proxy&gt; Element (Network Settings).](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings)
+     > Pour plus d’informations, consultez les pages [ &lt; &gt; élément defaultProxy (paramètres réseau)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/) et [ &lt; &gt; élément proxy (paramètres réseau)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings) .
 
 ::: moniker-end
 
@@ -133,18 +133,18 @@ Activez les connexions pour les URL suivantes :
   > [!NOTE]
   > Les URL des serveurs NuGet dont la propriété est privée peuvent ne pas figurer dans cette liste. Vous pouvez vérifier les serveurs NuGet que vous utilisez dans %APPData%\Nuget\NuGet.Config.
 
-## <a name="error-failed-to-parse-id-from-parent-process"></a>Erreur : « Échec à analyser l’ID du processus parent »
+## <a name="error-failed-to-parse-id-from-parent-process"></a>Erreur : « échec de l’analyse de l’ID du processus parent »
 
-Vous pouvez rencontrer ce message d’erreur lorsque vous utilisez un bootstrapper Visual Studio et un fichier response.json sur un lecteur réseau. La source de l’erreur est le contrôle du compte utilisateur (UAC) dans Windows.
+Vous pouvez rencontrer ce message d’erreur lorsque vous utilisez un programme d’amorçage Visual Studio et un response.jssur un lecteur réseau. La source de l’erreur est le contrôle de compte d’utilisateur (UAC) dans Windows.
 
-Voici pourquoi cette erreur peut se produire : un lecteur réseau cartographié ou une part [unC](/dotnet/standard/io/file-path-formats#unc-paths) est lié au jeton d’accès d’un utilisateur. Lorsque l’UAC est activé, deux [jetons d’accès à l’utilisateur](/windows/win32/secauthz/access-tokens) sont créés : l’un *avec* accès à l’administrateur et l’autre *sans* accès à l’administrateur. Lorsqu’un lecteur ou une part réseau est créé, le jeton d’accès actuel de l’utilisateur y est lié. Étant donné que le bootstrapper doit être exécuté en tant qu’administrateur, il ne sera pas en mesure d’accéder au lecteur réseau ou de partager si le lecteur ou la part n’est pas lié à un jeton d’accès de l’utilisateur qui a accès à l’administrateur.
+Voici pourquoi cette erreur peut se produire : un lecteur réseau mappé ou un partage [UNC](/dotnet/standard/io/file-path-formats#unc-paths) est lié au jeton d’accès d’un utilisateur. Lorsque le contrôle de compte d’utilisateur est activé, deux [jetons d’accès](/windows/win32/secauthz/access-tokens) utilisateur sont créés : un *avec* un accès administrateur et un autre *sans* accès administrateur. Lorsqu’un lecteur réseau ou un partage est créé, le jeton d’accès actuel de l’utilisateur est lié à celui-ci. Étant donné que le programme d’amorçage doit être exécuté en tant qu’administrateur, il ne peut pas accéder au lecteur réseau ou au partage si le lecteur ou le partage n’est pas lié à un jeton d’accès utilisateur disposant d’un accès administrateur.
 
 ### <a name="to-fix-this-error"></a>Pour corriger cette erreur
 
-Vous pouvez `net use` utiliser la commande ou modifier le paramètre de la politique du Groupe UAC. Pour plus d’informations sur ces solutions de contournement et comment les mettre en œuvre, voir les articles de support Microsoft suivants:
+Vous pouvez utiliser la `net use` commande ou vous pouvez modifier le paramètre de stratégie de groupe du contrôle de compte d’utilisateur. Pour plus d’informations sur ces solutions de contournement et la façon de les implémenter, consultez les articles du support technique Microsoft suivants :
 
-* [Les lecteurs cartographiés ne sont pas disponibles à partir d’une invite élevée lorsque UAC est configuré à "Prompt pour les informations d’identification" dans Windows](https://support.microsoft.com/help/3035277/mapped-drives-are-not-available-from-an-elevated-prompt-when-uac-is-co)
-* [Les programmes peuvent être incapables d’accéder à certains emplacements réseau après avoir allumé le contrôle des comptes utilisateur dans les systèmes d’exploitation Windows](https://support.microsoft.com/en-us/help/937624/programs-may-be-unable-to-access-some-network-locations-after-you-turn)
+* [Les lecteurs mappés ne sont pas disponibles à partir d’une invite avec élévation de privilèges lorsque le contrôle de compte d’utilisateur est configuré pour « demander des informations d’identification » dans Windows](https://support.microsoft.com/help/3035277/mapped-drives-are-not-available-from-an-elevated-prompt-when-uac-is-co)
+* [Les programmes peuvent ne pas pouvoir accéder à certains emplacements réseau après l’activation du contrôle de compte d’utilisateur dans les systèmes d’exploitation Windows](https://support.microsoft.com/en-us/help/937624/programs-may-be-unable-to-access-some-network-locations-after-you-turn)
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

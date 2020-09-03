@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerField::GetDereferencedField - France Microsoft Docs
+title: 'IDebugPointerField :: GetDereferencedField | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 617711a611e6eb1ea162c3abd8ad2b793b4756cb
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725627"
 ---
 # <a name="idebugpointerfieldgetdereferencedfield"></a>IDebugPointerField::GetDereferencedField
-Cette méthode renvoie le type d’objet auquel cet objet pointeur pointe.
+Cette méthode retourne le type d’objet vers lequel pointe cet objet pointeur.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,13 +41,13 @@ int GetDereferencedField(
 
 ## <a name="parameters"></a>Paramètres
 `ppField`\
-[out] Retourne un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) décrivant le type d’objet cible.
+à Retourne un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) décrivant le type d’objet cible.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- Si, par exemple, l’objet [IDebugPointerField](../../../extensibility/debugger/reference/idebugpointerfield.md) indique un intégrateur, le type [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) retourné par cette méthode décrit ce type d’intégrateur.
+ Si, par exemple, l’objet [IDebugPointerField](../../../extensibility/debugger/reference/idebugpointerfield.md) pointe vers un entier, le type [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) retourné par cette méthode décrit ce type entier.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugPointerField](../../../extensibility/debugger/reference/idebugpointerfield.md)

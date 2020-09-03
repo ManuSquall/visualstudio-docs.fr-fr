@@ -1,5 +1,5 @@
 ---
-title: Fonction SccAddFilesFromSCC | Microsoft Docs
+title: SccAddFilesFromSCC fonction) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d5af748c9180644cae928d1b6db3a3f880b6b286
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68200911"
 ---
 # <a name="sccaddfilesfromscc-function"></a>Fonction SccAddFilesFromSCC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Cette fonction ajoute une liste de fichiers à partir du contrôle de code source au projet actuellement ouvert.  
+Cette fonction ajoute une liste de fichiers du contrôle de code source au projet actuellement ouvert.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -42,40 +42,40 @@ SCCRTN SccAddFilesFromSCC(
   
 #### <a name="parameters"></a>Paramètres  
  pContext  
- [in] Le pointeur de contexte de plug-in de contrôle de code source.  
+ dans Pointeur de contexte du plug-in de contrôle de code source.  
   
  hWnd  
- [in] Handle vers la fenêtre de l’IDE que le plug-in de contrôle de code source peut utiliser en tant que parent pour les boîtes de dialogue qu’il fournit.  
+ dans Handle de la fenêtre IDE que le plug-in de contrôle de code source peut utiliser comme parent pour toutes les boîtes de dialogue qu’il fournit.  
   
  lpUser  
- [in, out] Le nom d’utilisateur (jusqu'à SCC_USER_SIZE, y compris le terminateur null).  
+ [in, out] Nom d’utilisateur (jusqu’à SCC_USER_SIZE, y compris la marque de fin null).  
   
  lpAuxProjPath  
- [in, out] Auxiliaire chaîne identifiant le projet (jusqu'à `SCC_PRJPATH_`taille, y compris le terminateur null).  
+ [in, out] Chaîne auxiliaire identifiant le projet ( `SCC_PRJPATH_` taille maximale, y compris la marque de fin null).  
   
  cFiles  
- [in] Nombre de fichiers donné par `lpFilePaths`.  
+ dans Nombre de fichiers spécifiés par `lpFilePaths` .  
   
  lpFilePaths  
- [in, out] Tableau de noms de fichiers à ajouter au projet actuel.  
+ [in, out] Tableau de noms de fichiers à ajouter au projet en cours.  
   
  lpDestination  
- [in] Le chemin d’accès de destination où les fichiers doivent être écrites.  
+ dans Chemin d’accès de destination où les fichiers doivent être écrits.  
   
  lpComment  
- [in] Le commentaire à appliquer à chacun des fichiers en cours d’ajout.  
+ dans Commentaire à appliquer à chacun des fichiers ajoutés.  
   
  pbResults  
- [in, out] Tableau d’indicateurs qui sont le jeu pour indiquer la réussite (différente de zéro ou TRUE) ou l’échec (zéro ou FALSE) pour chaque fichier (taille du tableau doit être au moins `cFiles` long).  
+ [in, out] Tableau d’indicateurs qui sont définis pour indiquer la réussite (valeur différente de zéro ou TRUE) ou l’échec (zéro ou FALSe) pour chaque fichier (la taille du tableau doit être au moins `cFiles` longue).  
   
-## <a name="return-value"></a>Valeur de retour  
- L’implémentation de plug-in de contrôle de source de cette fonction est censée retourner l’une des valeurs suivantes :  
+## <a name="return-value"></a>Valeur renvoyée  
+ L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :  
   
 |Valeur|Description|  
 |-----------|-----------------|  
-|SCC_E_PROJNOTOPEN|Projet n’est pas ouvert.|  
-|SCC_E_OPNOTPERFORMED|Connexion n’est pas le même projet, tel que spécifié par `lpAuxProjPath.`|  
-|SCC_E_NOTAUTHORIZED|Utilisateur n’est pas autorisé à mettre à jour de la base de données.|  
+|SCC_E_PROJNOTOPEN|Le projet n’est pas ouvert.|  
+|SCC_E_OPNOTPERFORMED|La connexion n’est pas vers le même projet que celui spécifié par `lpAuxProjPath.`|  
+|SCC_E_NOTAUTHORIZED|L’utilisateur n’est pas autorisé à mettre à jour la base de données.|  
 |SCC_E_NONSPECIFICERROR|Erreur inconnue.|  
 |SCC_I_RELOADFILE|Un fichier ou un projet doit être rechargé.|  
   

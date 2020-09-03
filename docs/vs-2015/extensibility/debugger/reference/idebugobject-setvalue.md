@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::SetValue | Microsoft Docs
+title: 'IDebugObject :: SetValue | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a7d898852c6bcca42cb0df1e7fab1597df74427a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203262"
 ---
 # <a name="idebugobjectsetvalue"></a>IDebugObject::SetValue
@@ -42,16 +42,16 @@ int SetValue(
   
 #### <a name="parameters"></a>Paramètres  
  `pValue`  
- [in] Un tableau d’octets représentant la nouvelle valeur.  
+ dans Tableau d’octets représentant la nouvelle valeur.  
   
  `nSize`  
- [in] La taille de la valeur en octets.  
+ dans Taille de la valeur en octets.  
   
-## <a name="return-value"></a>Valeur de retour  
+## <a name="return-value"></a>Valeur renvoyée  
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Les valeurs du tableau sont copiées dans la collection [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objet, en remplaçant toute valeur existante. La taille de la nouvelle valeur peut être supérieure ou inférieure à la valeur existante. Cela `IDebugObject` ne peut pas être une référence null.  
+ Les valeurs du tableau sont copiées dans cet objet [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) , en remplaçant toute valeur existante. La taille de la nouvelle valeur peut être supérieure ou inférieure à la valeur existante. Il `IDebugObject` ne peut pas s’agir d’une référence null.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   

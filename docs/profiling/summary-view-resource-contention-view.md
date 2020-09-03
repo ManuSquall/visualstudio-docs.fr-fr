@@ -12,10 +12,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 185345c13134f4d2ec6086e6a66183e044c577ba
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74771446"
 ---
 # <a name="summary-view---resource-contention-view"></a>Vue Résumé - Vue Conflit de ressources
@@ -33,7 +33,7 @@ La vue Résumé affiche des informations sur les événements de votre applicati
 
 |Colonne|Description|
 |------------|-----------------|
-|**Nom   **|Nom de la ressource.|
+|**Name**|Nom de la ressource.|
 |**% de conflits**|Pourcentage de tous les événements de conflit dans les données de profilage qui étaient des conflits sur cette ressource.|
 
 ## <a name="most-contended-thread"></a>Thread présentant le plus de conflits
@@ -43,6 +43,6 @@ La vue Résumé affiche des informations sur les événements de votre applicati
 
 |Colonne|Description|
 |------------|-----------------|
-|**Id**|Identificateur du thread.|
-|**Nom   **|Nom du processus propriétaire du thread.|
+|**Identifiant**|Identificateur du thread.|
+|**Name**|Nom du processus propriétaire du thread.|
 |**% de conflits**|Pourcentage de tous les événements de conflit dans les données de profilage qui étaient des conflits sur cette ressource.|

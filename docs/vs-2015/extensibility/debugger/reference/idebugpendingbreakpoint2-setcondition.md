@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::SetCondition | Microsoft Docs
+title: 'IDebugPendingBreakpoint2 :: SetCondition | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,10 +14,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d9db02ada04b236ec190d11568eb1f4f35db6244
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68201044"
 ---
 # <a name="idebugpendingbreakpoint2setcondition"></a>IDebugPendingBreakpoint2::SetCondition
@@ -41,13 +41,13 @@ int SetCondition( 
   
 #### <a name="parameters"></a>Paramètres  
  `bpCondition`  
- [in] Un [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) structure qui spécifie la condition à définir.  
+ dans Structure [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) qui spécifie la condition à définir.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="remarks"></a>Notes  
- Toute condition qui a été précédemment associée avec le point d’arrêt en attente est perdue. Tous les points d’arrêt liés à partir de ce point d’arrêt dans l’attente sont appelées pour définir leur condition à la valeur spécifiée dans le `bpCondition` paramètre.  
+ Toute condition précédemment associée au point d’arrêt en attente est perdue. Tous les points d’arrêt liés à ce point d’arrêt en attente sont appelés pour définir leur condition à la valeur spécifiée dans le `bpCondition` paramètre.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   

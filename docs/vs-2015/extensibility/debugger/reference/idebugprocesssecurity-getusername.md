@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessSecurity::GetUserName | Microsoft Docs
+title: 'IDebugProcessSecurity :: GetUserName | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,10 +11,10 @@ caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 17a6ef52d7df1c60b0cb6581a7e15eeaf67e7875
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202788"
 ---
 # <a name="idebugprocesssecuritygetusername"></a>IDebugProcessSecurity::GetUserName
@@ -38,13 +38,13 @@ int GetUserName (
   
 #### <a name="parameters"></a>Paramètres  
  `pbstrUserName`  
- [out] Chaîne contenant le nom d’utilisateur.  
+ à Chaîne contenant le nom d’utilisateur.  
   
-## <a name="return-value"></a>Valeur de retour  
- Si la méthode réussit, elle retourne `S_OK`. Sinon, elle retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ Si la méthode réussit, retourne `S_OK`. Sinon, elle retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- `GetUserName` Retourne le nom d’utilisateur qui s’affiche dans le **nom d’utilisateur** colonne de la **attacher au processus** boîte de dialogue. Pour afficher le **attacher au processus** boîte de dialogue, cliquez sur **attacher au processus** sur le **outils** menu dans le [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] l’environnement de développement intégré (IDE).  
+ `GetUserName` retourne le nom d’utilisateur affiché dans la colonne **nom d’utilisateur** de la boîte de dialogue **attacher au processus** . Pour afficher la boîte de dialogue **attacher au processus** , cliquez sur **attacher au processus** dans le menu **Outils** de l' [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] environnement de développement intégré (IDE).  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugProcessSecurity](../../../extensibility/debugger/reference/idebugprocesssecurity.md)

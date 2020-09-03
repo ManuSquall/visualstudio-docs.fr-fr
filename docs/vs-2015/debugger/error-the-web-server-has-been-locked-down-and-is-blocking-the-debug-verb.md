@@ -1,5 +1,5 @@
 ---
-title: 'Erreur : Le serveur Web a été verrouillé et bloque l’exécution du verbe DEBUG | Microsoft Docs'
+title: 'Erreur : le serveur Web a été verrouillé et bloque le verbe de débogage | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,13 +19,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b85efc44b39485476154d0f41f3261b2aeb1ea7c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203207"
 ---
-# <a name="error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb"></a>Erreur : le serveur web est verrouillé et bloque l’exécution du verbe DEBUG
+# <a name="error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb"></a>Erreur : le serveur Web est verrouillé et bloque l'exécution du verbe DEBUG
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 L’exécution pas à pas d’une application Web ou d’un service web XML a échoué, car l’outil de verrouillage IIS a été exécuté et URLScan a été installé et activé. Cette condition empêche IIS de recevoir le verbe DEBUG.  
@@ -48,10 +48,10 @@ L’exécution pas à pas d’une application Web ou d’un service web XML a é
   
 5. Recherchez la section [DenyVerbs]. Si DEBUG apparaît dans la section [DenyVerbs], supprimez-le.  
   
-6. Enregistrez le fichier.  
+6. Enregistrez le fichier .  
   
 7. Redémarrez le serveur ou redémarrez IIS.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Débogage d’applications web : erreurs et dépannage](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
- [Erreur : le serveur web n’a pas trouvé la ressource demandée](../debugger/error-the-web-server-could-not-find-the-requested-resource.md)
+ [Débogage d’applications Web : erreurs et dépannage](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
+ [Erreur : le serveur Web n’a pas pu trouver la ressource demandée](../debugger/error-the-web-server-could-not-find-the-requested-resource.md)

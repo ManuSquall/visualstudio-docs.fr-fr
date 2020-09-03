@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 601a49126dd266b6c080b4d79cd215616321837a
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76115056"
 ---
 # <a name="use-models-in-your-development-process"></a>Utiliser des modèles dans votre processus de développement
@@ -86,7 +86,7 @@ Les suggestions suivantes peuvent vous aider à tirer parti des avantages offert
 
 - À l'approche de la fin de chaque itération, organisez un atelier de spécifications pour définir en détail les spécifications ou les récits utilisateur qui seront développés dans l'itération suivante. Invitez les utilisateurs et les parties prenantes qui peuvent décider des priorités, ainsi que les développeurs et les testeurs système. Trois heures seront généralement nécessaires pour définir les spécifications pour une itération de deux semaines.
 
-- L'objectif de cet atelier est que tout le monde s'entende sur ce qui doit être accompli à la fin de l'itération suivante. Utilisez des modèles comme outil pour aider à clarifier les spécifications. La sortie de l’atelier est un backlog d’itération : autrement dit, une liste de tâches de développement dans Team Foundation et des suites de tests dans [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)].
+- L'objectif de cet atelier est que tout le monde s'entende sur ce qui doit être accompli à la fin de l'itération suivante. Utilisez des modèles comme outil pour aider à clarifier les spécifications. La sortie de l’atelier est un backlog d’itération : autrement dit, une liste de tâches de développement dans Team Foundation et des suites de tests dans [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] .
 
 - Lors de l'atelier de spécifications, discutez de la conception  uniquement dans le cadre de la détermination des estimations pour les tâches de développement. Autrement, ne discutez que du comportement du système avec lequel les utilisateurs auront une interaction directe. Séparez le modèle d'impératifs du modèle d'architecture.
 
@@ -122,19 +122,19 @@ Différents genres de diagrammes sont utiles pour décrire la conception à diff
 
 |Niveau de conception|Types de diagrammes|
 |-|-|
-|Processus d'entreprise<br /><br /> Comprendre le contexte dans lequel votre système sera utilisé vous aide à comprendre les besoins des utilisateurs.|-Les diagrammes de classes conceptuelles décrivent les concepts métier utilisés dans le processus d’entreprise.|
+|Processus métier<br /><br /> Comprendre le contexte dans lequel votre système sera utilisé vous aide à comprendre les besoins des utilisateurs.|-Les diagrammes de classes conceptuelles décrivent les concepts métier utilisés dans le processus d’entreprise.|
 |Besoins des utilisateurs<br /><br /> Définition de ce que votre système doit apporter aux utilisateurs.|-Les règles métier et les exigences de qualité de service peuvent être décrites dans des documents distincts.|
 |Conception de haut niveau<br /><br /> Structure globale du système : composants principaux et comment ils s'imbriquent les uns aux autres.|-Les diagrammes de dépendance décrivent comment le système est structuré en parties interdépendantes. Vous pouvez valider le code de programme par rapport aux diagrammes de dépendance pour vous assurer qu’il adhère à l’architecture.|
 |Analyse du code<br /><br /> Les diagrammes peuvent être générés à partir du code.|-Les diagrammes de dépendances montrent les dépendances entre les classes. Le code mis à jour peut être validé par rapport à un diagramme de dépendance.<br />-Les diagrammes de classes affichent les classes dans le code.|
 
 ## <a name="external-resources"></a>Ressources externes
 
-|**Catégorie**|**Links**|
+|**Catégorie**|**Liens**|
 |-|-|
-|**Vidéos**|![lien vers la vidéo](../data-tools/media/playvideo.gif) [MSDN comment faire : comment créer et utiliser des diagrammes et des modèles UML (Visual Studio 2010 Ultimate)](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))<br /><br /> ![un lien vers la vidéo](../data-tools/media/playvideo.gif) [Channel 9 : UML avec Visual Studio 2010](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-1-brainstorming-a-project)<br /><br /> ![lien vers la vidéo](../data-tools/media/playvideo.gif) [MSDN comment faire : série de procédures : outils UML et extensibilité (Visual Studio 2010 Ultimate)](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))|
+|**Vidéos**|![lien vers ](../data-tools/media/playvideo.gif) [la vidéo MSDN comment faire : comment créer et utiliser des diagrammes et des modèles UML (Visual Studio 2010 Ultimate)](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))<br /><br /> ![lien vers la vidéo ](../data-tools/media/playvideo.gif) [Channel 9 : UML avec Visual Studio 2010](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-1-brainstorming-a-project)<br /><br /> ![lien vers la vidéo de ](../data-tools/media/playvideo.gif) [la série de procédures MSDN : outils UML et extensibilité (Visual Studio 2010 Ultimate)](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))|
 |**Forums**|- [Outils de visualisation et de modélisation Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />- [Kit de développement logiciel (SDK) Visual Studio Visualization and Modeling (outils DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
 |**Blogs**|[Microsoft DevOps](https://devblogs.microsoft.com/devops/)|
-|**Articles et journaux techniques**|[Centre d’architecture MSDN](/previous-versions/dn630665(v=msdn.10))<br /><br /> [Guide des outils d’architecture Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md)|
+|**Articles et journaux techniques**|[Centre d’architecture MSDN](/previous-versions/dn630665(v=msdn.10))<br /><br /> [Guide des outils d'architecture Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md)|
 
 ## <a name="see-also"></a>Voir aussi
 

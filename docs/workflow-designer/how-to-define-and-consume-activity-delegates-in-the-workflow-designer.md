@@ -9,10 +9,10 @@ ms.workload:
 - multiple
 author: TerryGLee
 ms.openlocfilehash: 41271266793927f6029f50c0411bb9a150f5a64a
-ms.sourcegitcommit: ca777040ca372014b9af5e188d9b60bf56e3e36f
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85817500"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Procédure : définir et utiliser des délégués d'activité dans le Concepteur de flux de travail
@@ -62,7 +62,7 @@ ms.locfileid: "85817500"
 
 19. Dans la colonne **valeur** de l' **argument nommé argument**, entrez **Items [index]**. Cliquez sur **OK** pour fermer la boîte de dialogue **DelegateArguments** .
 
-20. Faites glisser une activité <xref:System.Activities.Statements.Assign> sur la ligne horizontale sous l'activité <xref:System.Activities.Statements.InvokeDelegate>. L' <xref:System.Activities.Statements.Assign> activité est créée, et une <xref:System.Activities.Statements.Sequence> activité est créée automatiquement pour contenir les deux activités dans la section **Body** de l’activité **MyForEach** . La séquence est nécessaire, car la section du **corps** ne peut contenir qu’une seule activité. La création automatique d’une nouvelle <xref:System.Activities.Statements.Sequence> activité est une nouvelle fonctionnalité de .NET Framework 4,5.
+20. Faites glisser une activité <xref:System.Activities.Statements.Assign> sur la ligne horizontale sous l'activité <xref:System.Activities.Statements.InvokeDelegate>. L'  <xref:System.Activities.Statements.Assign> activité est créée, et une <xref:System.Activities.Statements.Sequence> activité est créée automatiquement pour contenir les deux activités dans la section **Body** de l’activité **MyForEach** . La séquence est nécessaire, car la section du **corps** ne peut contenir qu’une seule activité. La création automatique d’une nouvelle <xref:System.Activities.Statements.Sequence> activité est une nouvelle fonctionnalité de .NET Framework 4,5.
 
 21. Affectez la valeur index à la propriété **to** de l' <xref:System.Activities.Statements.Assign> activité. **index** Affectez à la propriété **value** de l’activité **Assign** la valeur **index + 1**.
 

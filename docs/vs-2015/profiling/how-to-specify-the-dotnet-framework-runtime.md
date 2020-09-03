@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Spécifier le runtime .NET Framework | Microsoft Docs'
+title: Guide pratique pour spécifier le runtime .NET Framework | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,18 +13,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2f631e8639c1004fa2cb005da3b6c8bcb27f1a9b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68203410"
 ---
-# <a name="how-to-specify-the-net-framework-runtime"></a>Procédure : Spécifier le runtime .NET Framework
+# <a name="how-to-specify-the-net-framework-runtime"></a>Guide pratique pour spécifier le runtime .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Avec la version de [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)], les applications peuvent être composées de modules conçus à l’aide de versions différentes du runtime [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Par défaut, les outils de profilage [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] profilent le premier runtime chargé par l’application. Vous pouvez spécifier le runtime à profiler quand vous démarrez une application avec le profileur et quand vous attachez le profileur à une application en cours d’exécution.  
   
- **Spécifications**  
+ **Configuration requise**  
   
 - [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   

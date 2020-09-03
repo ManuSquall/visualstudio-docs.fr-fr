@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessEx2::Attach | Microsoft Docs
+title: 'IDebugProcessEx2 :: Attach | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1a62f21a6606466d5a5976a031b3c4cb6452206f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68202807"
 ---
 # <a name="idebugprocessex2attach"></a>IDebugProcessEx2::Attach
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Cette méthode informe le processus qu’une session est débogage maintenant le processus.  
+Cette méthode informe le processus qu’une session est en train de déboguer le processus.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -40,13 +40,13 @@ int Attach(
   
 #### <a name="parameters"></a>Paramètres  
  `pSession`  
- [in] Une valeur qui identifie de façon unique la session attachement à ce processus.  
+ dans Valeur qui identifie de façon unique la session attachée à ce processus.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="remarks"></a>Notes  
- L’interface passée dans `pSession` doit être traité uniquement en tant que cookie, une valeur qui identifie de façon unique le Gestionnaire de débogage de session attachement à ce processus ; aucune des méthodes sur l’interface fournie sont fonctionnels.  
+ L’interface passée `pSession` est traitée uniquement comme un cookie, valeur qui identifie de façon unique le gestionnaire de débogage de session attaché à ce processus ; aucune des méthodes sur l’interface fournie n’est fonctionnelle.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)

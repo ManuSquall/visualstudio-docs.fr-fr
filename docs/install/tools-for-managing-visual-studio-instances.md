@@ -17,10 +17,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: d6e46c95584cb3732d6339a02f6098976f2bab85
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76115034"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Outils de détection et de gestion des instances de Visual Studio
@@ -31,7 +31,7 @@ Il existe plusieurs outils qui vous permettent de détecter et gérer les instal
 
 Nous avons mis à disposition plusieurs outils qui vous aideront à détecter et à gérer les instances de Visual Studio installées sur les ordinateurs clients :
 
-* [vswhere](https://github.com/microsoft/vswhere): un outil exécutable intégré dans Visual Studio ou disponible pour une distribution séparée qui vous aide à trouver l’emplacement de toutes les instances Visual Studio sur une machine particulière.
+* [vswhere](https://github.com/microsoft/vswhere): fichier exécutable intégré à Visual Studio ou disponible pour une distribution distincte qui vous permet de trouver l’emplacement de toutes les instances de Visual Studio sur un ordinateur particulier.
 * [VSSetup.PowerShell](https://github.com/microsoft/vssetup.powershell) : scripts PowerShell qui utilisent l’API de configuration de l’installation pour identifier les instances installées de Visual Studio.
 * [VS-Setup-Samples](https://github.com/microsoft/vs-setup-samples) : exemples C# et C++ qui montrent comment utiliser l’API de configuration de l’installation pour interroger une installation existante.
 
@@ -39,7 +39,7 @@ De plus, l’[API de configuration de l’installation](<xref:Microsoft.VisualSt
 
 ## <a name="using-vswhereexe"></a>Utilisation de vswhere.exe
 
-`vswhere.exe`est automatiquement inclus dans Visual Studio (à partir de Visual Studio 2017 version 15.2 et versions ultérieures), ou vous pouvez le télécharger à partir de [la page de versions vswhere](https://github.com/Microsoft/vswhere/releases). Utilisez `vswhere -?` pour obtenir des informations d’aide sur l’outil. Par exemple, cette commande affiche toutes les versions de Visual Studio, y compris les anciennes versions du produit et les préversions, et retourne les résultats au format JSON :
+`vswhere.exe` est inclus automatiquement dans Visual Studio (à partir de Visual Studio 2017 version 15,2 et versions ultérieures), ou vous pouvez le télécharger à partir de [la page des versions de vswhere](https://github.com/Microsoft/vswhere/releases). Utilisez `vswhere -?` pour obtenir des informations d’aide sur l’outil. Par exemple, cette commande affiche toutes les versions de Visual Studio, y compris les anciennes versions du produit et les préversions, et retourne les résultats au format JSON :
 
 ```cmd
 C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -prerelease -format json
@@ -64,7 +64,7 @@ Comme ces entrées ne sont pas stockées dans le Registre global, il existe des 
 
 1. Sélectionnez le nœud `HKEY_LOCAL_MACHINE`.
 
-1. Dans le menu principal Regedit, sélectionnez **File** > **Load Hive...** puis sélectionnez le fichier d’enregistrement privé, qui est stocké dans le dossier **AppData-Local.** Par exemple :
+1. Dans le menu principal de regedit, sélectionnez **fichier**  >  **charger la ruche...** , puis sélectionnez le fichier de Registre privé, qui est stocké dans le dossier **AppData\Local** . Par exemple :
 
    ```
    %localappdata%\Microsoft\VisualStudio\<config>\privateregistry.bin
@@ -76,7 +76,7 @@ Comme ces entrées ne sont pas stockées dans le Registre global, il existe des 
 Vous êtes invité à fournir un nom de ruche, qui devient le nom de votre ruche isolée. Après cela, vous devez être en mesure de parcourir le Registre sous la ruche isolée que vous avez créée.
 
 > [!IMPORTANT]
-> Avant de redémarrer Visual Studio, vous devez décharger la ruche isolée que vous avez créée. Pour ce faire, sélectionnez **File** > **Unload Hive** dans le menu principal Regedit. (Si vous ne le faites pas, le fichier reste verrouillé et Visual Studio n’est pas en mesure de démarrer.)
+> Avant de redémarrer Visual Studio, vous devez décharger la ruche isolée que vous avez créée. Pour ce faire, sélectionnez **fichier**  >  **décharger Hive** dans le menu principal de Regedit. (Si vous ne le faites pas, le fichier reste verrouillé et Visual Studio n’est pas en mesure de démarrer.)
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

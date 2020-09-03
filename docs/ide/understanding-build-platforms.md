@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 996c863612907593ce2c198d4910cda150737c3c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76115062"
 ---
 # <a name="understand-build-platforms"></a>Présentation des plateformes de build
@@ -30,14 +30,14 @@ Vous pouvez stocker différentes versions de propriétés de solution et de proj
 
 ## <a name="in-this-section"></a>Contenu de cette section
 
-[Comment : Configurer des projets pour cibler les plates-formes](../ide/how-to-configure-projects-to-target-platforms.md)\
+[Comment : configurer des projets pour cibler des plateformes](../ide/how-to-configure-projects-to-target-platforms.md)\
 Explique comment configurer un projet pour cibler une plateforme spécifique.
 
-[Comment configurer les projets pour cibler plusieurs plates-formes](../ide/how-to-configure-projects-to-target-multiple-platforms.md)\
+[Comment : configurer des projets pour cibler plusieurs plateformes](../ide/how-to-configure-projects-to-target-multiple-platforms.md)\
 Explique comment configurer un projet pour cibler plusieurs plateformes.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Procédure pas à pas : générer une application](../ide/walkthrough-building-an-application.md)
+- [Procédure pas à pas : Générer une application](../ide/walkthrough-building-an-application.md)
 - [Générer et nettoyer des solutions et des projets dans Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
-- [Compilation et génération](../ide/compiling-and-building-in-visual-studio.md)
+- [Compiler et générer](../ide/compiling-and-building-in-visual-studio.md)

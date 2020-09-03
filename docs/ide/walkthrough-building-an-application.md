@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : générer une application'
+title: 'Procédure pas à pas : Générer une application'
 ms.date: 09/25/2017
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d94a525f9938b6845584b6d5872bd486e947025d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76115398"
 ---
-# <a name="walkthrough-build-an-application"></a>Procédure pas à pas : générer une application
+# <a name="walkthrough-build-an-application"></a>Procédure pas à pas : Générer une application
 
 Avec cette procédure pas à pas, vous allez vous familiariser avec plusieurs options qu’il est possible de configurer lors de la génération d’applications avec Visual Studio. Vous allez créer une configuration de build personnalisée, masquer certains messages d’avertissement et afficher davantage d’informations de sortie de build dans un exemple d’application.
 
@@ -35,15 +35,15 @@ Vous pouvez modifier ou créer des configurations et des paramètres de platefor
 
    ![Menu Générer, commande Gestionnaire de configurations](../ide/media/buildwalk_configurationmanagerdialogbox.png)
 
-1. Dans la liste **de configuration de solution Active,** ** \<choisissez... \>**.
+1. Dans la liste Configuration de la **solution active** , choisissez **\<New...\>** .
 
 1. Dans la boîte de dialogue **Nouvelle configuration de solution**, nommez la nouvelle configuration `Test`, copiez les paramètres de la configuration **Debug** existante, puis cliquez sur le bouton **OK**.
 
    ![Boîte de dialogue Nouvelle configuration de solution](../ide/media/buildwalk_newsolutionconfigdlgbox.png)
 
-1. Dans la liste **de la plate-forme de solutions Active,** ** \<choisissez... \>**.
+1. Dans la liste plateforme de la **solution active** , choisissez **\<New...\>** .
 
-1. Dans la nouvelle boîte de dialogue **de plate-forme de solution,** choisissez **x64**et ne copiez pas les paramètres de la plate-forme x86.
+1. Dans la boîte de dialogue **nouvelle plateforme de solution** , choisissez **x64**et ne copiez pas les paramètres de la plateforme x86.
 
    ![Boîte de dialogue Nouvelle plateforme de solution](../ide/media/buildwalk_newsolutionplatform.png)
 
@@ -65,7 +65,7 @@ Ensuite, vous allez générer la solution avec la configuration de build personn
 
 ### <a name="build-the-solution"></a>Générez la solution.
 
-- Sur la barre de menu, choisissez **Build** > **Build Solution**, ou appuyez sur **Ctrl**+**Shift**+**B**.
+- Dans la barre de menus, choisissez **générer**  >  **générer la solution**, ou appuyez sur **CTRL** + **MAJ** + **B**.
 
     La fenêtre **Sortie** affiche les résultats de la génération. La génération a réussi.
 
@@ -93,7 +93,7 @@ Vous pouvez temporairement masquer certains messages d’avertissement pendant l
 
 1. Dans l’**Explorateur de solutions**, choisissez le premier nœud de projet.
 
-1. Sur la barre de menu, choisissez **Voir les** > **pages de propriété**.
+1. Dans la barre de menus, choisissez **Afficher**les  >  **pages de propriétés**.
 
      Le **Concepteur de projets** s’ouvre.
 
@@ -113,7 +113,7 @@ Vous pouvez temporairement masquer certains messages d’avertissement pendant l
 
 1. Dans l’**Explorateur de solutions**, choisissez le premier nœud de projet.
 
-2. Sur la barre de menu, choisissez **Voir les** > **pages de propriété**.
+2. Dans la barre de menus, choisissez **Afficher**les  >  **pages de propriétés**.
 
      Le **Concepteur de projets** s’ouvre.
 
@@ -148,13 +148,13 @@ Vous pouvez modifier la quantité d’informations relatives au processus de gé
 
 1. Dans la liste **Commentaires relatifs à la sortie de génération du projet MSBuild**, choisissez **Normal**, puis cliquez sur le bouton **OK**.
 
-1. Sur la barre de menu, choisissez **Build** > **Clean Solution**.
+1. Dans la barre de menus, choisissez **générer**une  >  **solution propre**.
 
 1. Générez la solution, puis passez en revue les informations contenues dans la fenêtre **Sortie**.
 
      Les informations de build comprennent l’heure à laquelle la génération a commencé (située au début), et l’ordre dans lequel les fichiers ont été traités. Ces informations comprennent également la syntaxe de compilateur que Visual Studio exécute pendant la génération.
 
-     Par exemple, dans la version C, [l’option /nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) répertorie le code d’avertissement, **0168**, que vous avez spécifié plus tôt dans ce sujet, ainsi que trois autres avertissements.
+     Par exemple, dans la build C#, l’option [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) répertorie le code d’avertissement **0168**que vous avez spécifié précédemment dans cette rubrique, ainsi que trois autres avertissements.
 
      Dans la build Visual Basic, comme [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) n’inclut pas d’avertissements à exclure, aucun avertissement ne s’affiche.
 
@@ -223,6 +223,6 @@ Félicitations ! La procédure pas à pas est terminée.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Procédure pas à pas : générer un projet (C++)](/cpp/ide/walkthrough-building-a-project-cpp)
+- [Procédure pas à pas : générer un projet (C++)](/cpp/ide/walkthrough-building-a-project-cpp)
 - [Présentation de la précompilation de projets d’application web ASP.NET](/previous-versions/aspnet/aa983464\(v\=vs.110\))
 - [Procédure pas à pas : utiliser MSBuild](../msbuild/walkthrough-using-msbuild.md)

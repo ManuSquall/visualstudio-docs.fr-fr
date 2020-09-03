@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: d8ec7d6508ec025a2b2005754da03bdd4db38943
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74300263"
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>Compilation et génération dans Visual Studio
@@ -29,18 +29,18 @@ Vous pouvez utiliser Visual Studio pour générer des applications et créer des
 ## <a name="choosing-a-build-method"></a>Choix d'une méthode de génération
  Vous pouvez générer une application à l'aide des options de build par défaut dans l'IDE, à l'invite de commandes ou à l'aide de Team Foundation Build. Chacune de ces options utilise MSBuild comme technologie sous-jacente, et chaque approche présente des avantages spécifiques, comme indiqué dans le tableau suivant.
 
-|Méthode de génération|Avantages|Pour plus d'informations|
+|Méthode de génération|Avantages|Informations supplémentaires|
 |------------------|--------------|--------------------------|
 |Utilisation de l'IDE|-   Vous pouvez créer plus facilement des builds et les exécuter immédiatement.<br />-   Vous pouvez exécuter des builds multiprocesseurs pour les projets C++ et C#.<br />-   Vous pouvez personnaliser certains aspects du système de génération.|[Génération et nettoyage de solutions et de projets dans Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)|
 |Exécution d'une ligne de commande MSBuild|-   Vous pouvez générer des projets sans installer Visual Studio.<br />-   Vous pouvez exécuter des builds multiprocesseurs pour tous les types de projets.<br />-   Vous pouvez personnaliser la plupart des zones du système de génération.|[MSBuild](../msbuild/msbuild.md)|
-|Utilisation de Team Foundation Build|-   Vous pouvez automatiser votre processus de génération. Par exemple, vous pouvez générer un ou plusieurs projets la nuit ou chaque fois le code est archivé. Vous pouvez également générer des projets sur les serveurs de build partagés plutôt que sur votre ordinateur de développement.<br />-   Vous pouvez spécifier rapidement le code que vous souhaitez générer, les tests à exécuter et d’autres options courantes.<br />-   Vous pouvez modifier le flux de travail de build et, si nécessaire, créer des activités de build pour effectuer des tâches profondément personnalisées.|[Générer l’application](/azure/devops/pipelines/index)|
+|Utilisation de Team Foundation Build|-   Vous pouvez automatiser votre processus de génération. Par exemple, vous pouvez générer un ou plusieurs projets la nuit ou chaque fois le code est archivé. Vous pouvez également générer des projets sur les serveurs de build partagés plutôt que sur votre ordinateur de développement.<br />-   Vous pouvez spécifier rapidement le code que vous souhaitez générer, les tests à exécuter et d’autres options courantes.<br />-   Vous pouvez modifier le flux de travail de build et, si nécessaire, créer des activités de build pour effectuer des tâches profondément personnalisées.|[Créer l’application](/azure/devops/pipelines/index)|
 
 ## <a name="building-from-the-ide"></a>Génération à partir de l'IDE
  Lorsque vous créez un projet, les configurations de build par défaut sont définies pour ce projet, et une configuration de build de solution par défaut lui est assignée pour fournir un contexte aux builds. Les configurations de solution définissent comment les projets de la solution sont générés et déployés. Les configurations de projet sont un jeu de propriétés de projet qui sont uniques pour un type de plateforme et de build (par exemple, Release Win32). Vous pouvez modifier ces configurations par défaut, et créer vos propres configurations. Pour plus d’informations, consultez [Introduction au Concepteur de projets](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7) et [NIB Guide pratique pour modifier des propriétés de projet et des paramètres de configuration](https://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67).
 
  Dans l’IDE, vous pouvez effectuer les tâches additionnelles suivantes :
 
-- [Modifier le répertoire de sortie de génération](../ide/how-to-change-the-build-output-directory.md).
+- [Modifiez le répertoire de sortie de la génération](../ide/how-to-change-the-build-output-directory.md).
 
 - [Identifier les projets qui dépendent de la sortie d’un autre projet pour effectuer une génération correcte](../ide/how-to-create-and-remove-project-dependencies.md).
 

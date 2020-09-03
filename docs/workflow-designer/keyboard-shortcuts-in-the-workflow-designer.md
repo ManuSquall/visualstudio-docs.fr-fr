@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a8892f46585179ae5857d48deffd982e1cfc0dee
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76115384"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Raccourcis clavier dans Workflow Designer
@@ -29,7 +29,7 @@ Dans Visual Studio, les raccourcis globaux et les raccourcis de débogage s’ap
 
 Le tableau suivant récapitule les raccourcis clavier par défaut affectés aux commandes Concepteur de flux de travail.
 
-|Raccourci|Fonction|
+|Raccourci|Objectif|
 |-|-------------|
 |CTRL+E, A|Affiche ou masque le concepteur d’arguments.|
 |CTRL+E, C|Réduit l'activité sélectionnée sur place.|
@@ -43,7 +43,7 @@ Le tableau suivant récapitule les raccourcis clavier par défaut affectés aux 
 |CTRL+E, S|Ajoute l'élément avec le focus clavier à la sélection actuelle.|
 |CTRL+E, V|Affiche ou masque le concepteur de variables.|
 |CTRL+E, X|Développe toutes les activités dans le flux de travail.|
-|CTRL+ALT+F6|Déplace le focus clavier de la zone actuelle de l'interface utilisateur vers la zone suivante dans la séquence. L'ordre suivi est le suivant :<br /><br /> 1. barre de navigation de navigation.<br />2. surface du concepteur<br />3. arguments/variables/concepteur d’importations s’il est ouvert<br />4. Shell|
+|CTRL+ALT+F6|Déplace le focus clavier de la zone actuelle de l'interface utilisateur vers la zone suivante dans la séquence. L'ordre est le suivant :<br /><br /> 1. barre de navigation de navigation.<br />2. surface du concepteur<br />3. arguments/variables/concepteur d’importations s’il est ouvert<br />4. Shell|
 
 ### <a name="flowchart"></a>Organigramme
 
@@ -82,7 +82,7 @@ Par défaut, les raccourcis clavier par défaut pour la modification de texte Vi
   - Couper
   - Copier
   - Coller
-  - Sélectionner tout
+  - Tout sélectionner
   - Annuler
   - Rétablir
 

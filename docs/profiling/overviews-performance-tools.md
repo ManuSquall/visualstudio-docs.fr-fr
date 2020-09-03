@@ -10,17 +10,17 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: d284ffc6b850a9746cf1442f35400a18045bbe18
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "74772665"
 ---
 # <a name="overviews-performance-tools"></a>Présentations (outils d’analyse des performances)
 Cette section fournit des vues d’ensemble conceptuelles et terminologiques des outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], que vous pouvez utiliser pour mesurer les caractéristiques de performances d’une application en cours de développement.
 
 ## <a name="in-this-section"></a>Contenu de cette section
-- [Aperçu de la séance de performance](../profiling/performance-session-overview.md)
+- [Vue d’ensemble de la session de performance](../profiling/performance-session-overview.md)
 
  Découvrez les principes de base du profilage de performance à l’aide des outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
@@ -44,7 +44,7 @@ Cette section fournit des vues d’ensemble conceptuelles et terminologiques des
 
  Découvrez les valeurs de données signalées quand vous utilisez la méthode de profilage d’accès concurrentiel.
 
-- [Explorateur de performances, fenêtre](../profiling/performance-explorer-window.md)
+- [Fenêtre Explorateur de performances](../profiling/performance-explorer-window.md)
 
  Décrit la fenêtre servant à configurer et à démarrer des sessions de performance.
 
@@ -58,5 +58,5 @@ Cette section fournit des vues d’ensemble conceptuelles et terminologiques des
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Commencer](../profiling/getting-started-with-performance-tools.md)
+- [Bien démarrer](../profiling/getting-started-with-performance-tools.md)
 - [Explorateur de performances](../profiling/performance-explorer.md)

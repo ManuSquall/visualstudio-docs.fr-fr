@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::Delete Microsoft Docs
+title: IDebugPendingBreakpoint2 ::D supprim | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: fd6e2d61eb7a7ce927a966281bba2f0cbf470dc6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80725902"
 ---
 # <a name="idebugpendingbreakpoint2delete"></a>IDebugPendingBreakpoint2::Delete
-Supprime ce point d’arrêt en attente et tous les points d’arrêt liés à partir de lui.
+Supprime ce point d’arrêt en attente et tous les points d’arrêt liés à celui-ci.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -42,7 +42,7 @@ int Delete();
 En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur. Retourne `E_BP_DELETED` si le point d’arrêt a été supprimé.
 
 ## <a name="example"></a>Exemple
-L’exemple suivant montre comment implémenter cette méthode pour un objet simple `CPendingBreakpoint` qui implémente [l’interface IDebugPendingBreakpoint2.](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
+L’exemple suivant montre comment implémenter cette méthode pour un `CPendingBreakpoint` objet simple qui implémente l’interface [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) .
 
 ```cpp
 HRESULT CPendingBreakpoint::Delete(void)

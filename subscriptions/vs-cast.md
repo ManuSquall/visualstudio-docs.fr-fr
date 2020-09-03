@@ -8,10 +8,10 @@ ms.date: 03/02/2020
 ms.topic: how-to
 description: Découvrir l’avantage CAST Highlight disponible dans certains abonnements Visual Studio
 ms.openlocfilehash: 565dd9326447757cd2af23e83dfcf7f2d4553054
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85906063"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Avantage CAST Highlight dans les abonnements Visual Studio
@@ -94,7 +94,7 @@ Si votre demande est approuvée, vous recevrez un deuxième e-mail confirmant la
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour afficher tous les abonnements attribués à votre adresse de messagerie. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 
 ## <a name="support-resources"></a>Ressources de support
-- Besoin d’aide concernant l’utilisation de CAST Highlight ?  Consultez les ressources suivantes :
+- Besoin d’aide concernant l’utilisation de CAST Highlight ?  Consultez les ressources suivantes :
   - [envoyer une demande de support ;](https://casthighlight.com/support/)
   - [Guide de démarrage (PDF)](https://casthighlight.com/Getting-Started-Guide.pdf)
 
