@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1ae9ce8d655d9229b5e9c9f547b0dade6ad503e6
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85462685"
 ---
 # <a name="idiasymbolget_objectpointertype"></a>IDiaSymbol::get_objectPointerType
@@ -41,7 +41,7 @@ HRESULT get_objectPointerType ( 
 > [!NOTE]
 > Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Cette propriété s’applique uniquement aux symboles dont le type d' [énumération SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) est `SymTagFunctionType` .
 
 ## <a name="see-also"></a>Voir aussi

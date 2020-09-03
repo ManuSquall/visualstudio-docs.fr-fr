@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b03521023ea0b4d92bd3125f256d2230de9bba03
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541347"
 ---
 # <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Comment : protéger des parties de documents à l’aide de contrôles de contenu
@@ -34,7 +34,7 @@ ms.locfileid: "85541347"
 
   [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
-## <a name="protect-a-content-control"></a><a name="EditDeleteControl"></a>Protéger un contrôle de contenu
+## <a name="protect-a-content-control"></a><a name="EditDeleteControl"></a> Protéger un contrôle de contenu
  Vous pouvez empêcher les utilisateurs de modifier ou supprimer un contrôle de contenu en définissant les propriétés du contrôle dans un projet au niveau du document, au moment du design ou au moment de l'exécution.
 
  Vous pouvez également protéger les contrôles de contenu que vous ajoutez à un document au moment de l'exécution à l'aide d'un projet de complément VSTO. Pour plus d’informations, consultez [Comment : ajouter des contrôles de contenu à des documents Word](../vsto/how-to-add-content-controls-to-word-documents.md).

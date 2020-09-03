@@ -10,18 +10,18 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5f69969ac60e7476e2d9430266acca41c0745f3a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664179"
 ---
 # <a name="pen-tool-modifier-keys-in-blend"></a>Touches de modification de l’outil Plume dans Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Le tableau suivant répertorie les raccourcis que vous pouvez utiliser pour modifier un tracé lors de sa création à l’aide ![ ](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png "d514358f-185a-412f-a55d-36633b25dc8a")de l’outil plume. Vous pouvez aussi utiliser l’outil **Plume** pour ajouter ou supprimer des points sur un tracé existant, ou pour joindre deux tracés existants.
+Le tableau suivant répertorie les raccourcis que vous pouvez utiliser pour modifier un tracé lors de sa création avec l’outil **Plume**![](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png "d514358f-185a-412f-a55d-36633b25dc8a"). Vous pouvez aussi utiliser l’outil **Plume** pour ajouter ou supprimer des points sur un tracé existant, ou pour joindre deux tracés existants.
 
-|Pour|Faites cela|Pointeur|
+|Pour effectuer cette action|Action|Pointeur|
 |-----------------------|-------------|-------------|
 |Créer un point pour commencer un segment de ligne droite|Cliquez pour créer le nouveau point.|![](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png "0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8")<br /><br /> Pointeur du stylet|
 |Créer un point pour commencer un segment de ligne courbe|Cliquez pour créer le point, puis faites glisser pour ajuster les poignées de tangente, avant de relâcher le bouton de la souris.|![](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png "0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8")<br /><br /> Pointeur du stylet|

@@ -10,16 +10,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 093cc277fa1cbe1915099fd9663fc1ccb797ca3a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671179"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>Partage de classes entre plusieurs DSL à l'aide d'une bibliothèque DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Dans le kit de développement logiciel (SDK) de visualisation et de modélisation [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vous pouvez créer une définition DSL incomplète que vous pouvez importer dans un autre langage DSL. Cela vous permet de factoriser des parties courantes de modèles similaires.
+Dans le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Kit de développement logiciel de visualisation et de modélisation, vous pouvez créer une définition DSL incomplète que vous pouvez importer dans un autre langage DSL. Cela vous permet de factoriser des parties courantes de modèles similaires.
 
 ## <a name="creating-and-using-dsl-libraries"></a>Création et utilisation de bibliothèques DSL
 
@@ -35,7 +35,7 @@ Dans le kit de développement logiciel (SDK) de visualisation et de modélisatio
 
      Pour définir une relation que les importateurs peuvent utiliser, créez deux classes de domaine et créez la relation entre elles.
 
-     Envisagez de définir le **modificateur d’héritage** des classes de domaine sur `Abstract`.
+     Envisagez de définir le **modificateur d’héritage** des classes de domaine sur `Abstract` .
 
 3. Vous pouvez ajouter des éléments que vous définissez dans l’Explorateur DSL, tels que les générateurs de connexions.
 
@@ -43,9 +43,9 @@ Dans le kit de développement logiciel (SDK) de visualisation et de modélisatio
 
 5. Cliquez sur **transformer tous les modèles**.
 
-6. Générez le projet.
+6. Créez le projet.
 
-7. Lorsque vous distribuez le DSL pour d’autres personnes à utiliser, vous devez fournir à la fois l’assembly compilé (DLL) et le `DslDefinition.dsl` de fichiers. Vous pouvez trouver l’assembly compilé dans un dossier sous `Dsl\bin\*`
+7. Lorsque vous distribuez le DSL pour d’autres personnes à utiliser, vous devez fournir à la fois l’assembly compilé (DLL) et le fichier `DslDefinition.dsl` . Vous pouvez trouver l’assembly compilé dans un dossier sous `Dsl\bin\*`
 
 #### <a name="to-import-a-dsl-library"></a>Pour importer une bibliothèque DSL
 
@@ -57,7 +57,7 @@ Dans le kit de développement logiciel (SDK) de visualisation et de modélisatio
 
 3. Vous pouvez utiliser les classes importées comme classes de base. Créez une classe de domaine dans le DSL d’importation et, dans le Fenêtre Propriétés, définissez **classe de base** sur une classe importée.
 
-4. Cliquez sur transformer tous les modèles.
+4. Cliquez sur Transformer tous les modèles.
 
 5. Ajoutez au projet DSL une référence à l’assembly (DLL) qui a été généré par le projet de bibliothèque DSL.
 

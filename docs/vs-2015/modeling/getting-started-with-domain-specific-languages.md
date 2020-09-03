@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6fe720b380133d15f9bc60485896d4b7acbf2c4b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543193"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Mise en route des langages spécifiques à un domaine
@@ -94,7 +94,7 @@ Cette rubrique explique les concepts de base de la définition et de l’utilisa
 
 - **Projet DslPackage** Ce projet contient du code qui permet d’ouvrir et de modifier des instances du DSL dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
-## <a name="running-the-dsl"></a><a name="Debugging"></a>Exécution du DSL
+## <a name="running-the-dsl"></a><a name="Debugging"></a> Exécution du DSL
  Vous pouvez exécuter la solution DSL dès que vous l’avez créée. Ultérieurement, vous pouvez modifier la définition de la DSL progressivement, en réexécutant la solution après chaque modification.
 
 #### <a name="to-experiment-with-the-dsl"></a>Pour expérimenter le DSL
@@ -383,7 +383,7 @@ Cette rubrique explique les concepts de base de la définition et de l’utilisa
 
  Pour plus d’informations, consultez [Déploiement de solutions de langage spécifique à un domaine](../modeling/deploying-domain-specific-language-solutions.md).
 
-## <a name="removing-old-experimental-dsls"></a><a name="Reset"></a>Suppression des anciens DSL expérimentaux
+## <a name="removing-old-experimental-dsls"></a><a name="Reset"></a> Suppression des anciens DSL expérimentaux
  Si vous avez créé des DSL expérimentaux que vous ne voulez plus, vous pouvez les supprimer de votre ordinateur en réinitialisant l' [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] instance expérimentale.
 
  Cette opération supprime de votre ordinateur tous les DSL expérimentaux et d’autres extensions expérimentales [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Il s’agit des extensions qui ont été exécutées en mode débogage.

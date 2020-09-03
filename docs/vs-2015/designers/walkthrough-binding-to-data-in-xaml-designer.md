@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 38434d89544ed290f9adfd077593d7de9bdc1231
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664016"
 ---
 # <a name="walkthrough-binding-to-data-in-xaml-designer"></a>Procédure pas à pas : liaison aux données dans le concepteur XAML
@@ -25,7 +25,7 @@ Dans le concepteur XAML, vous pouvez définir des propriétés de liaison de don
 
 ### <a name="to-create-a-class-to-use-as-a-data-source"></a>Pour créer une classe à utiliser comme source de données
 
-1. Dans le menu **Fichier** , choisissez **Nouveau**, **Projet**.
+1. Dans le menu **Fichier**, sélectionnez **Nouveau**, **Projet**.
 
 2. Dans la boîte de dialogue **Nouveau projet**, choisissez le nœud **Visual C#** ou **Visual Basic**, développez le nœud **Bureau Windows**, puis choisissez le modèle **Application WPF**.
 
@@ -88,13 +88,13 @@ Dans le concepteur XAML, vous pouvez définir des propriétés de liaison de don
 
 6. Une fois le contrôle `TextBlock` sélectionné, dans la fenêtre Propriétés, choisissez le marqueur de propriété à droite de la propriété **Text**, puis **Créer une liaison de données**. (Le marqueur de propriété se présente comme une petite case.)
 
-7. Dans la boîte de dialogue Créer une liaison de données, dans la zone **Chemin d’accès**, choisissez la propriété **ItemCount : (int32)** , puis le bouton **OK**.
+7. Dans la boîte de dialogue Créer une liaison de données, dans la zone **Chemin d’accès**, choisissez la propriété **ItemCount : (int32)**, puis le bouton **OK**.
 
      L’illustration suivante montre la boîte de dialogue **Créer une liaison de données** avec la propriété **ItemCount** sélectionnée.
 
-     ![Boîte de dialogue créer une liaison de données](../designers/media/xaml-create-data-binding.png "xaml_create_data_binding")
+     ![Boîte de dialogue Créer une liaison de données](../designers/media/xaml-create-data-binding.png "xaml_create_data_binding")
 
-8. Appuyez sur F5 pour exécuter l'application.
+8. Appuyez sur F5 pour exécuter l’application.
 
      Le contrôle `TextBlock` doit afficher la valeur par défaut 0 sous forme de texte.
 

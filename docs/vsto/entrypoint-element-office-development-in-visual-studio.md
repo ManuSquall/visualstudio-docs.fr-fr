@@ -17,16 +17,16 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 17f57b90b7c6aa4c254b2b55ee838a3086193ef7
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543596"
 ---
 # <a name="ltentrypointgt-element-office-development-in-visual-studio"></a>&lt;entryPoint &gt; , élément (développement Office dans Visual Studio)
   Chaque élément `entryPoint` de l’espace de noms `vstav3` identifie un assembly de personnalisation qui doit être exécuté lorsque cette application [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] est installée.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Syntaxe
 
 ```xml
 <entryPoint class>

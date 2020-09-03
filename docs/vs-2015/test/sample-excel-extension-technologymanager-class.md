@@ -9,13 +9,13 @@ caps.latest.revision: 11
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: ac9a4517fcf13dbb0e1d7a6f994092168723e660
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672148"
 ---
-# <a name="sample-excel-extension-technologymanager-class"></a>Exemple d'extension Excel : classe TechnologyManager
+# <a name="sample-excel-extension-technologymanager-class"></a>Exemple d’extension Excel : classe TechnologyManager
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette classe étend la classe <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager>. Elle est chargée de fournir des services principaux pour l’extension [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)]. Bien que la classe de base dispose de nombreuses méthodes, seule une partie d’entre elles est utilisée dans cet exemple.
@@ -32,7 +32,7 @@ Cette classe étend la classe <xref:Microsoft.VisualStudio.TestTools.UITest.Exte
 ## <a name="technologyname-property"></a>TechnologyName, propriété
  Cette substitution de la propriété <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.TechnologyName%2A?displayProperty=fullName> doit fournir un nom unique et significatif qui identifie la technologie sous-jacente pour tous les autres composants de l’extension. Pour cette extension, la valeur est « Excel ».
 
-## <a name="getcontrolsupportlevel-method"></a>GetControlSupportLevel, méthode
+## <a name="getcontrolsupportlevel-method"></a>Méthode GetControlSupportLevel
  Cette substitution de la méthode <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetControlSupportLevel%2A?displayProperty=fullName> retourne un nombre qui indique le niveau de prise en charge que le Gestionnaire de technologies peut offrir pour le contrôle représenté par le handle fourni. Plus la valeur retournée est élevée, plus le gestionnaire de technologies peut prendre en charge le contrôle. Dans ce cas, la méthode vérifie la fenêtre qui contient le contrôle. S’il s’agit d’une feuille de calcul Excel, la méthode retourne la valeur la plus élevée. Sinon, elle retourne zéro, ce qui indique qu’aucune prise en charge n’est possible.
 
 ## <a name="methods-to-get-an-element"></a>Méthodes d’obtention d’un élément
@@ -65,4 +65,4 @@ Cette classe étend la classe <xref:Microsoft.VisualStudio.TestTools.UITest.Exte
  <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>
  <xref:System.Runtime.InteropServices.ComVisibleAttribute>
  <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement.QueryId%2A>
- [Extension des tests codés de l’interface utilisateur et des enregistrements des actions pour prendre charge Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
+ [Extension des tests codés de l'interface utilisateur t enregistrements des actions pour prendre charge Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)

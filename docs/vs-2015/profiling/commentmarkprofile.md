@@ -13,10 +13,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 750ce3cbcae593aee315998ec8b205a71e004d41
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543042"
 ---
 # <a name="commentmarkprofile"></a>CommentMarkProfile
@@ -54,7 +54,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
 |MARK_TEXTTOOLONG|La chaîne dépasse le maximum de 256 caractères. La chaîne de commentaire est tronquée, et la marque et le commentaire sont enregistrés.|  
 |MARK_OK|MARK_OK est retourné pour indiquer la réussite.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  L’état du profilage du thread qui contient la fonction de profil de marque doit être Activé lors de l’insertion de marques et de commentaires avec la commande VSInstr Mark ou avec des fonctions (CommentMarkAtProfile, CommentMarkProfile ou MarkProfile).  
   
  Les marques de profil sont globales dans l’étendue. Par exemple, une marque de profil insérée dans un thread peut être utilisée pour marquer le début ou la fin d’un segment de données dans n’importe quel thread dans le fichier .vsp.  

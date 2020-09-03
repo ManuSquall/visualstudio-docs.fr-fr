@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 0b78a1757586dfaf6087711eaf1ed6001155a3b7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671804"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>Étape 4 : ajouter un gestionnaire d'événements Click à chaque contrôle Label
@@ -50,14 +50,14 @@ Le jeu de combinaisons fonctionne comme suit :
     > Si vous effectuez un copier-coller du bloc de code `label_Click()` au lieu d'écrire le code manuellement, veillez à remplacer le code `label_Click()` existant. Sinon, vous obtiendrez au final un bloc de code en double.
 
     > [!NOTE]
-    > Vous pouvez reconnaître `object sender` en haut du gestionnaire d’événements comme étant le même que celui utilisé dans le [Didacticiel 2 : créer un questionnaire mathématique chronométré](../ide/tutorial-2-create-a-timed-math-quiz.md). Comme vous avez raccordé plusieurs événements Click de contrôle Label à une seule méthode de gestionnaire d'événements, la même méthode est appelée quel que soit le contrôle Label choisi par l'utilisateur. La méthode de gestionnaire d’événements doit savoir quel contrôle Label a été choisi. Elle utilise donc le nom **sender** pour identifier le contrôle Label. La première ligne de la méthode indique au programme qu’il ne s’agit pas uniquement d’un objet générique, mais plus précisément d’un contrôle Label, et qu’il utilise le nom **clickedLabel** pour accéder aux propriétés et méthodes du contrôle Label.
+    > Vous pouvez reconnaître en `object sender` haut du gestionnaire d’événements comme étant le même que celui utilisé dans le didacticiel [2 : créer un questionnaire mathématique chronométré](../ide/tutorial-2-create-a-timed-math-quiz.md) . Comme vous avez raccordé plusieurs événements Click de contrôle Label à une seule méthode de gestionnaire d'événements, la même méthode est appelée quel que soit le contrôle Label choisi par l'utilisateur. La méthode de gestionnaire d’événements doit savoir quel contrôle Label a été choisi. Elle utilise donc le nom **sender** pour identifier le contrôle Label. La première ligne de la méthode indique au programme qu’il ne s’agit pas uniquement d’un objet générique, mais plus précisément d’un contrôle Label, et qu’il utilise le nom **clickedLabel** pour accéder aux propriétés et méthodes du contrôle Label.
 
-     Cette méthode vérifie d’abord si un objet **clickedLabel** a été correctement converti (cast) en contrôle Label. Dans le cas contraire, il a une valeur `null` (C#) ou `Nothing` (Visual Basic), et vous ne voudrez pas exécuter le reste du code dans la méthode. Ensuite, la méthode vérifie la couleur de texte du contrôle Label choisi en utilisant la propriété **ForeColor** de ce dernier. Si la couleur du texte du contrôle Label est noire, cela signifie que l'icône a déjà été choisie et la méthode est terminée. (C’est ce que fait l’instruction `return` : elle indique au programme d’arrêter l’exécution de la méthode.) Dans le cas contraire, l’icône n’a pas été choisie et le programme modifie la couleur du texte de l’étiquette en noir.
+     Cette méthode vérifie d’abord si un objet **clickedLabel** a été correctement converti (cast) en contrôle Label. Dans le cas contraire, il a une valeur `null` (C#) ou `Nothing` (Visual Basic), et vous ne voudrez pas exécuter le reste du code dans la méthode. Ensuite, la méthode vérifie la couleur de texte du contrôle Label choisi en utilisant la propriété **ForeColor** de ce dernier. Si la couleur du texte du contrôle Label est noire, cela signifie que l'icône a déjà été choisie et la méthode est terminée. (C’est ce que `return` fait l’instruction : elle indique au programme d’arrêter l’exécution de la méthode.) Dans le cas contraire, l’icône n’a pas été choisie et le programme modifie la couleur du texte de l’étiquette en noir.
 
 6. Dans la barre de menus, choisissez **Fichier**, **Enregistrer tout** pour enregistrer votre progression, puis, dans la barre de menus, choisissez **Déboguer**, **Démarrer le débogage** pour exécuter votre programme. Un formulaire vierge doit s'afficher avec un arrière-plan bleu. Choisissez l'une des cellules du formulaire et l'une des icônes doit apparaître. Continuez à choisir des emplacements différents dans le formulaire. Chaque fois que vous choisissez une icône, elle doit s'afficher.
 
 ### <a name="to-continue-or-review"></a>Pour continuer ou examiner
 
-- Pour passer à l’étape suivante du didacticiel, consultez [Étape 5 : ajouter des références de contrôles Label](../ide/step-5-add-label-references.md).
+- Pour passer à l’étape suivante du didacticiel, consultez [étape 5 : ajouter des références aux étiquettes](../ide/step-5-add-label-references.md).
 
-- Pour revenir à l’étape précédente du didacticiel, consultez [Étape 3 : affecter une icône aléatoire à chaque contrôle Label](../ide/step-3-assign-a-random-icon-to-each-label.md).
+- Pour revenir à l’étape précédente du didacticiel, consultez [étape 3 : affecter une icône aléatoire à chaque étiquette](../ide/step-3-assign-a-random-icon-to-each-label.md).

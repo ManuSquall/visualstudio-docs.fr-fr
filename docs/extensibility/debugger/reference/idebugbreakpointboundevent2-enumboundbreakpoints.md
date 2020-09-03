@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointBoundEvent2::EnumBoundBreakpoints (fr) Microsoft Docs
+title: 'IDebugBreakpointBoundEvent2 :: EnumBoundBreakpoints | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 2f208c52bd45953aaad9efab9b6b65b15b3b759c
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80735357"
 ---
 # <a name="idebugbreakpointboundevent2enumboundbreakpoints"></a>IDebugBreakpointBoundEvent2::EnumBoundBreakpoints
-Crée un enumérateur de points d’arrêt qui ont été liés sur cet événement.
+Crée un énumérateur des points d’arrêt qui étaient liés sur cet événement.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,16 +41,16 @@ int EnumBoundBreakpoints( 
 
 ## <a name="parameters"></a>Paramètres
 `ppEnum`\
-[out] Retourne un objet [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) qui énumère tous les points d’arrêt liés à cet événement.
+à Retourne un objet [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) qui énumère tous les points d’arrêt liés à partir de cet événement.
 
-## <a name="return-value"></a>Valeur de retour
-En cas de réussite, retourne `S_OK`. Retours `S_FALSE` s’il n’y a pas de points d’arrêt consolidés; autrement, renvoie un code d’erreur.
+## <a name="return-value"></a>Valeur renvoyée
+En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` s’il n’y a pas de points d’arrêt liés ; sinon, retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes
-La liste des points d’arrêt liés est pour ceux liés à cet événement et pourrait ne pas être la liste complète des points de rupture liés à partir d’un point d’arrêt en attente. Pour obtenir une liste de tous les points d’arrêt liés à un point d’arrêt en attente, appelez la méthode [GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md) pour obtenir l’objet [IDebugPendingBreakpoint2 associé,](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) puis appelez la méthode [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) pour obtenir un objet [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) qui contient tous les points de rupture liés pour le point d’arrêt en attente.
+La liste des points d’arrêt liés concerne ceux qui sont liés à cet événement et peut ne pas être la liste entière des points d’arrêt liés à partir d’un point d’arrêt en attente. Pour obtenir une liste de tous les points d’arrêt liés à un point d’arrêt en attente, appelez la méthode [GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md) pour obtenir l’objet [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) associé, puis appelez la méthode [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) pour obtenir un objet [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) qui contient tous les points d’arrêt liés pour le point d’arrêt en attente.
 
 ## <a name="example"></a>Exemple
-L’exemple suivant montre comment implémenter cette méthode pour un objet **CBreakpointSetDebugEventBase** qui expose [l’interface IDebugBreakpointBoundEvent2.](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)
+L’exemple suivant montre comment implémenter cette méthode pour un objet **CBreakpointSetDebugEventBase** qui expose l’interface [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) .
 
 ```cpp
 STDMETHODIMP CBreakpointSetDebugEventBase::EnumBoundBreakpoints(

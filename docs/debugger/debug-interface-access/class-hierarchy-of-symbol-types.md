@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ed6817c5c01b66143739b2f81899f2b58886d8e8
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85462272"
 ---
 # <a name="class-hierarchy-of-symbol-types"></a>Hiérarchie de classes des types de symboles
@@ -26,12 +26,12 @@ Le tableau suivant décrit les types de symboles dans la hiérarchie de classes.
 
 |Type de symbole|Description|
 |-----------------|-----------------|
-|[ASSORTI](../../debugger/debug-interface-access/udt.md)|Symbole utilisé pour représenter chaque classe, structure et Union.|
+|[UDT](../../debugger/debug-interface-access/udt.md)|Symbole utilisé pour représenter chaque classe, structure et Union.|
 |[Énumération (Kit de développement logiciel SDK de Debug Interface Access)](../../debugger/debug-interface-access/enum-debug-interface-access-sdk.md)|Symbole pour les types énumérés.|
 |[PointerType](../../debugger/debug-interface-access/pointertype.md)|Symbole des types pointeur.|
 |[ArrayType](../../debugger/debug-interface-access/arraytype.md)|Symbole pour les types tableau.|
 |[BaseType](../../debugger/debug-interface-access/basetype.md)|Symbole pour les types de base|
-|[Typedef (Kit de développement logiciel de Debug Interface Access)](../../debugger/debug-interface-access/typedef-debug-interface-access-sdk.md)|Symbole qui introduit des noms pour d’autres types.|
+|[Typedef (Kit de développement logiciel de Debug Interface Access)](../../debugger/debug-interface-access/typedef-debug-interface-access-sdk.md)|Symbole qui introduit des noms pour d’autres types.|
 |[BaseClass](../../debugger/debug-interface-access/baseclass.md)|Symbole utilisé pour chaque classe de base d’un type défini par l’utilisateur (UDT).|
 |[Friend (SDK Debug Interface Access)](../../debugger/debug-interface-access/friend-debug-interface-access-sdk.md)|Symbole pour les classes Friend et les fonctions Friend.|
 |[FunctionType](../../debugger/debug-interface-access/functiontype.md)|Symbole pour chaque signature de fonction unique.|
@@ -48,4 +48,4 @@ Le tableau suivant décrit les types de symboles dans la hiérarchie de classes.
 ## <a name="see-also"></a>Voir aussi
 - [CV_access_e, énumération](../../debugger/debug-interface-access/cv-access-e.md)
 - [Hiérarchie lexicale des types de symboles](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)
-- [Balises Symbols et Symbol](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)
+- [Symboles et étiquettes de symbole](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)

@@ -15,9 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 732bd9fe3d34a768e0c6f71315f212c49bdf02af
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016388"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>Procédure pas à pas : créer un composant WebPart pour SharePoint à l’aide d’un concepteur

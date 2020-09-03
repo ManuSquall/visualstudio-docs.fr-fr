@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 248e73d9a17ed8baab1bcaf583e71cf02f821bfe
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85466615"
 ---
 # <a name="idialoadcallback2"></a>IDiaLoadCallback2
@@ -38,7 +38,7 @@ IDiaLoadCallback2 : IDiaLoadCallback
 |[IDiaLoadCallback2::RestrictDBGAccess](../../debugger/debug-interface-access/idialoadcallback2-restrictdbgaccess.md)|Détermine si la recherche d’informations de débogage est autorisée à partir des fichiers. dbg.|
 |[IDiaLoadCallback2::RestrictSystemRootAccess](../../debugger/debug-interface-access/idialoadcallback2-restrictsystemrootaccess.md)|Détermine si la recherche de fichiers. pdb est autorisée dans le répertoire racine système.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  L’application cliente implémente cette interface et fournit une référence à celle-ci dans l’appel à la méthode [IDiaDataSource :: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) . N’oubliez pas d’implémenter toutes les méthodes dans l’interface [IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md) également.
 
 ## <a name="requirements"></a>Configuration requise

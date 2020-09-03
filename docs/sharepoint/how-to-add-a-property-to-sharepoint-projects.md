@@ -15,9 +15,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: eb72b0546b504e2df1a7e93ea9d4def350143d1d
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015916"
 ---
 # <a name="how-to-add-a-property-to-sharepoint-projects"></a>Comment : ajouter une propriété à des projets SharePoint
@@ -44,9 +45,9 @@ ms.locfileid: "86015916"
 
  Pour conserver les modifications apportées aux valeurs de propriété, les accesseurs **Set** des propriétés utilisent les API suivantes :
 
-- `CustomUserFileProperty`utilise la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectUserFileData%2A> propriété pour enregistrer sa valeur dans le fichier d’options utilisateur du projet.
+- `CustomUserFileProperty` utilise la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectUserFileData%2A> propriété pour enregistrer sa valeur dans le fichier d’options utilisateur du projet.
 
-- `CustomProjectFileProperty`utilise la <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> méthode pour enregistrer sa valeur dans le fichier projet.
+- `CustomProjectFileProperty` utilise la <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> méthode pour enregistrer sa valeur dans le fichier projet.
 
   Pour plus d’informations sur la persistance des données dans ces fichiers, consultez [enregistrer des données dans les extensions du système de projet SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).
 

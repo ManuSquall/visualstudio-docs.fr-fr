@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e5ab97f3db8e5d44aa649455c313a5681ed93c8c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543388"
 ---
 # <a name="analyze-cpu-usage"></a>Analyser l’utilisation de l’UC
@@ -87,7 +87,7 @@ Pour afficher l’arborescence des appels, sélectionnez le nœud parent dans le
 |![Étape 3](../profiling/media/procguid_3.png "ProcGuid_3")|Les enfants du nœud de deuxième niveau sont les méthodes en code utilisateur et des routines asynchrones appelées ou créées par le code système et d'infrastructure de deuxième niveau.|
 |![Étape 4](../profiling/media/procguid_4.png "ProcGuid_4")|Les nœuds enfants d’une méthode ont des données seulement pour les appels de la méthode parente. Lorsque l'option **Afficher le Code externe** est désactivée, les méthodes d'application peuvent également contenir un nœud **[Code externe]** .|
 
-#### <a name="external-code"></a><a name="BKMK_External_Code"></a>Code externe
+#### <a name="external-code"></a><a name="BKMK_External_Code"></a> Code externe
 
 Les fonctions système et framework qui sont exécutées par votre code sont appelées *code externe*. Les fonctions de code externe démarrent et arrêtent l’application, dessinent l’interface utilisateur, contrôlent les threads et fournissent d’autres services de bas niveau à l’application. Dans la plupart des cas, vous ne serez pas intéressé par le code externe ; par conséquent, l’arborescence des appels de l’utilisation de l’UC regroupe les fonctions externes d’une méthode utilisateur en un seul nœud **[Code externe]** .
 
@@ -108,7 +108,7 @@ Pour rechercher un nom de fonction, utilisez la zone de recherche. Placez le cur
 ![Rechercher du code externe imbriqué](../profiling/media/cpu_use_wt_showexternalcodetoowide_found.png "Rechercher du code externe imbriqué")
 ::: moniker-end
 
-### <a name="asynchronous-functions-in-the-cpu-usage-call-tree"></a><a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a>Fonctions asynchrones dans l’arborescence des appels de l’utilisation de l’UC
+### <a name="asynchronous-functions-in-the-cpu-usage-call-tree"></a><a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Fonctions asynchrones dans l’arborescence des appels de l’utilisation de l’UC
 
  Quand le compilateur rencontre une méthode asynchrone, il crée une classe masquée pour contrôler l’exécution de la méthode. Conceptuellement, la classe est une machine à états. Elle a des fonctions générées par le compilateur qui appellent de façon asynchrone les méthodes d’origine ainsi que les rappels, le planificateur et les itérateurs nécessaires pour les exécuter. Quand une méthode parente appelle la méthode d’origine, le compilateur supprime la méthode du contexte d’exécution du parent et exécute les méthodes de la classe masquée dans le contexte du code système et framework qui contrôle l’exécution de l’application. Les méthodes asynchrones sont souvent, mais pas toujours, exécutées sur un ou plusieurs threads différents. Ce code est affiché dans l’arborescence des appels **Utilisation de l’UC** en tant qu’enfants du nœud **[Code externe]** situé immédiatement sous le nœud supérieur de l’arborescence.
 

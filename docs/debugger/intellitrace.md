@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4cbe14e1bf8c3a5e010e3c9e887a208b7e045b4c
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85536511"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>IntelliTrace pour Visual Studio Enterprise (C#, Visual Basic, C++)
@@ -132,7 +132,7 @@ Par défaut, IntelliTrace enregistre uniquement les événements IntelliTrace :
 
   - [Utilisation des données IntelliTrace enregistrées](../debugger/using-saved-intellitrace-data.md)
 
-  - [Procédure pas à pas : débogage d'une application SharePoint avec IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)
+  - [Procédure pas à pas : Débogage d'une application SharePoint avec IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)
 
 **Capturer des instantanés**
 

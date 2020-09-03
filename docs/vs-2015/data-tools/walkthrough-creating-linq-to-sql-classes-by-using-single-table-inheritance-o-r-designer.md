@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9cf95bd2095d9713d498ddccf68fd1e81e1b1e64
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85535705"
 ---
 # <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Procédure pas à pas : création de classes LINQ to SQL à l'aide d'un héritage de table individuelle (Concepteur O/R)
@@ -51,10 +51,10 @@ Les [outils de LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-i
 
     |Nom de la colonne|Type de données|Null autorisé|
     |-----------------|---------------|-----------------|
-    |**Identifiant**|**int**|**Fausses**|
+    |**Identifiant**|**int**|**False**|
     |**Type**|**int**|**True**|
-    |**FirstName**|**nvarchar(200)**|**Fausses**|
-    |**LastName**|**nvarchar(200)**|**Fausses**|
+    |**FirstName**|**nvarchar(200)**|**False**|
+    |**LastName**|**nvarchar(200)**|**False**|
     |**Manager**|**int**|**True**|
 
 3. Définissez la colonne d'ID comme clé primaire.
@@ -72,7 +72,7 @@ Les [outils de LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-i
 
     |**Identifiant**|**Type**|**FirstName**|**LastName**|**Manager**|
     |-|-|-|-|-|
-    |**1**|**1**|**Anne**|**Wallace**|**NULL**|
+    |**1**|**1**|**Ann**|**Wallace**|**NULL**|
     |**2**|**1**|**Carlos**|**Grilo**|**NULL**|
     |**3**|**1**|**Yael**|**Peled**|**NULL**|
     |**4**|**2**|**Gatis**|**Ozolins**|**1**|

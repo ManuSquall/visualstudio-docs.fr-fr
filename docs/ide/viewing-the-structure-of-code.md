@@ -26,10 +26,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 210606af0f200d49b639d323456f85e0a7becd06
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543674"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>Afficher la structure du code à l’aide de différentes fenêtres d’outils
@@ -119,7 +119,7 @@ Le menu contextuel de la fenêtre **hiérarchie d’appels** contient les comman
 |**Atteindre la définition**|Navigue jusqu'à la définition d'origine d'une méthode.|
 |**Rechercher toutes les références**|Recherche dans le projet toutes les références à la méthode sélectionnée.|
 |**Copier**|Copie le nœud sélectionné (mais pas ses sous-nœuds).|
-|**Actualisation**|Actualise les informations.|
+|**Actualiser**|Actualise les informations.|
 
 ## <a name="object-browser"></a><a name="BKMK_ObjectBrowser"></a> Explorateur d’objets
 
@@ -174,7 +174,7 @@ Le menu contextuel (ou clic droit) dans l' **Explorateur d’objets** peut conte
 |**Rechercher toutes les références**|Recherche l’élément de l’objet actuellement sélectionné et affiche les résultats dans une fenêtre **Résultats de la recherche**.|
 |**Appliquer le filtre au type**|Affiche uniquement le type ou l'espace de noms sélectionné. Vous pouvez supprimer le filtre en choisissant le bouton **Effacer la recherche**.|
 |**Copier**|Copie le nom qualifié complet de l'élément.|
-|**Supprimer**|Si la portée est un jeu personnalisé de composants, supprime le composant sélectionné de la portée.|
+|**Remove**|Si la portée est un jeu personnalisé de composants, supprime le composant sélectionné de la portée.|
 |**Trier par ordre alphabétique**|Répertorie les types et les membres dans l'ordre alphabétique par nom.|
 |**Trier par type d’objet**|Répertorie les types et les membres dans l'ordre par type (de sorte que les classes précèdent les interfaces, les interfaces précèdent les délégués et les méthodes précèdent les propriétés).|
 |**Trier les objets par accès**|Répertorie les types et les membres dans l'ordre par type d'accès, tel que public ou privé.|
@@ -214,7 +214,7 @@ Le menu contextuel (ou clic droit) dans la fenêtre **définition de code** peut
 |**Exécuter jusqu’au curseur**|Exécute le programme en mode débogage jusqu'à l'emplacement du curseur.|
 |**Extrait**||
 |**Cut**, **Copy**, **Paste**||
-|**Commentaire**||
+|**Annotation**||
 |**mode Plan**|Commandes de mode Plan standard.|
 |**Relancer**||
 |**Modifier la définition**|Déplace le point d'insertion vers la définition dans la fenêtre de code.|

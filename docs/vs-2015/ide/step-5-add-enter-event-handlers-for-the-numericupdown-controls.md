@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 566bcf10d681b9ea81ee78601bf8536e9e6d9985
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72671750"
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Étape 5 : ajouter des gestionnaires d'événements Enter pour les contrôles NumericUpDown
@@ -40,17 +40,17 @@ Dans la cinquième partie de ce didacticiel, vous allez ajouter des gestionnaire
 
 ### <a name="to-add-an-enter-event-handler-for-a-numericupdown-control"></a>Pour ajouter un gestionnaire d'événements Enter pour un contrôle NumericUpDown
 
-1. Sélectionnez le premier contrôle NumericUpDown (nommé « somme ») du formulaire puis, dans la boîte de dialogue **Propriétés**, sélectionnez l’icône **Événements** de la barre d’outils.
+1. Sélectionnez le premier contrôle NumericUpDown (nommé « somme ») du formulaire, puis, dans la boîte de dialogue **Propriétés**, sélectionnez l’icône **Événements** de la barre d’outils.
 
      L’onglet **Événements** de la boîte de dialogue **Propriétés** affiche tous les événements auxquels vous pouvez répondre (que vous pouvez gérer) pour l’élément que vous sélectionnez sur le formulaire. Comme vous avez choisi le contrôle NumericUpDown, tous les événements répertoriés s'y appliquent.
 
-2. Sélectionnez l’événement **Enter**, entrez `answer_Enter`answer_Enter, puis choisissez la touche Entrée.
+2. Sélectionnez l’événement **Enter**, entrez `answer_Enter`, puis choisissez la touche Entrée.
 
      ![Boîte de dialogue Propriétés](../ide/media/express-answerenter.png "Express_AnswerEnter") Boîte de dialogue Propriétés
 
      Vous venez d’ajouter un gestionnaire d’événements Enter pour le contrôle NumericUpDown de somme et vous avez nommé le gestionnaire **answer_Enter**.
 
-3. Dans la méthode du gestionnaire d’événements **answer_Enter**, ajoutez le code suivant.
+3. Dans la méthode du gestionnaire d’événements **answer_Enter** , ajoutez le code suivant.
 
      [!code-csharp[VbExpressTutorial3Step5_6#11](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/cs/form1.cs#11)]
      [!code-vb[VbExpressTutorial3Step5_6#11](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/vb/form1.vb#11)]
@@ -71,6 +71,6 @@ Dans la cinquième partie de ce didacticiel, vous allez ajouter des gestionnaire
 
 ### <a name="to-continue-or-review"></a>Pour continuer ou examiner
 
-- Pour passer à l’étape suivante du didacticiel, consultez [Étape 6 : ajouter un problème de soustraction](../ide/step-6-add-a-subtraction-problem.md).
+- Pour passer à l’étape suivante du didacticiel, consultez [étape 6 : ajouter un problème de soustraction](../ide/step-6-add-a-subtraction-problem.md).
 
-- Pour revenir à l’étape précédente du didacticiel, consultez [Étape 4 : ajouter la méthode CheckTheAnswer()](../ide/step-4-add-the-checktheanswer-parens-method.md).
+- Pour revenir à l’étape précédente du didacticiel, consultez [étape 4 : ajouter la méthode méthode CheckTheAnswer ()](../ide/step-4-add-the-checktheanswer-parens-method.md).

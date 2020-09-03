@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 7c1c3b0fd6cf3a25d5db9e3039d4dc5d8364a18e
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85544103"
 ---
 # <a name="ca1701-resource-string-compound-words-should-be-cased-correctly"></a>CA1701 : La casse des mots composés de la chaîne de ressources doit être correcte
@@ -32,7 +32,7 @@ ms.locfileid: "85544103"
 |Category|Microsoft. Naming|
 |Modification avec rupture|Sans rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Une chaîne de ressource contient un mot composé qui ne semble pas avoir une casse correcte.
 
 ## <a name="rule-description"></a>Description de la règle

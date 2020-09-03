@@ -19,10 +19,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7924201f4cf58e1066434707a8453b0fe1913bc6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72670721"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Guide pratique pour signer des manifestes d’application et de déploiement
@@ -30,7 +30,7 @@ ms.locfileid: "72670721"
 
 Si vous souhaitez publier une application à l’aide du déploiement ClickOnce, vous devez signer les manifestes d’application et de déploiement avec une paire de clés publique/privée et à l’aide de la technologie Authenticode. Vous pouvez signer les manifestes à l’aide d’un certificat à partir du magasin de certificats Windows ou d’un fichier de clé.
 
- Pour plus d’informations sur le déploiement ClickOnce, consultez [Sécurité et déploiement ClickOnce](../deployment/clickonce-security-and-deployment.md).
+ Pour plus d’informations sur le déploiement ClickOnce, consultez [sécurité et déploiement ClickOnce](../deployment/clickonce-security-and-deployment.md).
 
  La signature des manifestes ClickOnce est facultative pour les applications .exe. Pour plus d’informations, consultez la section « Génération de manifestes non signés » de ce document.
 
@@ -48,7 +48,7 @@ Si vous souhaitez publier une application à l’aide du déploiement ClickOnce,
      La boîte de dialogue **Sélectionner un certificat** apparaît et affiche le contenu du magasin de certificats Windows.
 
     > [!TIP]
-    > Si vous cliquez sur **Cliquez ici pour afficher les propriétés du certificat**, la boîte de dialogue **Détails du certificat** s’affiche. Cette boîte de dialogue inclut des informations détaillées sur le certificat et des options supplémentaires. Vous pouvez cliquer sur **Certificats** pour afficher des informations d’aide supplémentaires.
+    > Si vous cliquez sur **Cliquez ici pour afficher les propriétés du certificat**, la boîte de dialogue **Détails du certificat** s’affiche. Cette boîte de dialogue inclut des informations détaillées sur le certificat et des options supplémentaires. Vous pouvez cliquer sur **certificats** pour afficher des informations d’aide supplémentaires.
 
 3. Sélectionnez le certificat que vous souhaitez utiliser pour signer les manifestes.
 
@@ -62,7 +62,7 @@ Si vous souhaitez publier une application à l’aide du déploiement ClickOnce,
 
      La boîte de dialogue **Sélectionner le fichier** s’affiche.
 
-3. Dans la boîte de dialogue **Sélectionner le fichier**, recherchez l’emplacement du fichier de clé (.pfx) que vous souhaitez utiliser, puis cliquez sur **Ouvrir**.
+3. Dans la boîte de **dialogue Sélectionner un fichier** , accédez à l’emplacement du fichier de clé (. pfx) que vous souhaitez utiliser, puis cliquez sur **ouvrir**.
 
     > [!NOTE]
     > Cette option prend uniquement en charge les fichiers ayant l’extension .pfx. Si vous avez un fichier de clé ou un certificat dans un autre format, stockez-le dans le magasin de certificats Windows et sélectionnez le certificat, comme indiqué dans la procédure précédente. L’objet du certificat sélectionné doit inclure la signature de code.
@@ -93,7 +93,7 @@ Si vous souhaitez publier une application à l’aide du déploiement ClickOnce,
 
 2. Dans la page **Signature**, décochez la case **Signer les manifestes ClickOnce**.
 
-3. Redéfinissez la version de publication afin qu’une seule version de votre application soit disponible. Par défaut, Visual Studio incrémente automatiquement le numéro de révision de la version de publication chaque fois que vous publiez une application. Pour plus d’informations, consultez [Guide pratique pour définir la version de publication ClickOnce](../deployment/how-to-set-the-clickonce-publish-version.md).
+3. Redéfinissez la version de publication afin qu’une seule version de votre application soit disponible. Par défaut, Visual Studio incrémente automatiquement le numéro de révision de la version de publication chaque fois que vous publiez une application. Pour plus d’informations, consultez [Comment : définir la version de publication ClickOnce](../deployment/how-to-set-the-clickonce-publish-version.md).
 
 4. Publiez l'application.
 

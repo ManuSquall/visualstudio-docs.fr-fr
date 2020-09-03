@@ -27,10 +27,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 719a956558141684c7d755aafb6929f4368482f7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72657722"
 ---
 # <a name="file-properties-javascript"></a>Propriétés des fichiers, JavaScript
@@ -68,16 +68,16 @@ Vous pouvez utiliser les propriétés de fichier pour indiquer les actions que l
 ## <a name="reference-file-properties"></a>Propriétés de fichier de référence
  Cette section décrit les propriétés communes aux fichiers référencés à partir d’une [!INCLUDE[win8_app_js](../../includes/win8-app-js-md.md)]. Lorsque vous sélectionnez une référence telle qu’un fichier .winmd, une référence SDK, une référence de projet à projet ou une référence d’assembly dans l’Explorateur de solutions, d’autres propriétés peuvent afficher dans la fenêtre Propriétés, en fonction du type de fichier.
 
-### <a name="culture"></a>culture
+### <a name="culture"></a>Culture
  Affiche la langue associée à la référence.
 
 ### <a name="file-type"></a>Type de fichier
  Type le type de fichier de la référence.
 
-### <a name="file-version"></a>Version du fichier
+### <a name="file-version"></a>Version de fichier
  Affiche la version de fichier de la référence.
 
-### <a name="identity"></a>identité
+### <a name="identity"></a>Identité
  Affiche l’identité de la référence utilisée dans le projet, qui est stockée dans le fichier projet.
 
 ### <a name="package"></a>Package
@@ -89,7 +89,7 @@ Vous pouvez utiliser les propriétés de fichier pour indiquer les actions que l
 ### <a name="sdk-path"></a>Chemin du SDK
  Affiche le chemin du fichier du kit SDK référencé.
 
-### <a name="uri"></a>URI
+### <a name="uri"></a>Uri
  Affiche l’URI qui doit être inclus dans les fichiers HTML ou JavaScript du projet pour inclure le fichier comme fichier source.
 
 ### <a name="version"></a>Version

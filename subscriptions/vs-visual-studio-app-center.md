@@ -8,10 +8,10 @@ ms.date: 04/20/2020
 ms.topic: how-to
 description: Découvrez l’avantage Visual Studio App Center inclus dans les abonnements Visual Studio.
 ms.openlocfilehash: 27d2e060cf3f4ab1aad8b81c39a5cef52ac0e770
-ms.sourcegitcommit: 05487d286ed891a04196aacd965870e2ceaadb68
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85906039"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio App Center dans les abonnements Visual Studio
@@ -34,7 +34,7 @@ La mise en route de Visual Studio App Center est simple.
     > [!div class="mx-imgBorder"]
     > ![VS App Center, Créer un compte](_img/vs-app-center/vs-app-center-create-account.png)
 
-4. C’est aussi simple que cela.  Cliquez simplement sur **Ajouter une nouvelle organisation** ou sur **Ajouter une nouvelle application** pour commencer.
+4. C’est tout.  Cliquez simplement sur **Ajouter une nouvelle organisation** ou sur **Ajouter une nouvelle application** pour commencer.
     > [!div class="mx-imgBorder"]
     > ![Portail de VS App Center](_img/vs-app-center/vs-app-center-portal.png)
 

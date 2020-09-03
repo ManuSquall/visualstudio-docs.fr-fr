@@ -16,10 +16,10 @@ author: jillre
 ms.author: jillfra
 manager: wpickett
 ms.openlocfilehash: 520c9a066a4a902d5e9243baf1a8d8dec1b78e29
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85542400"
 ---
 # <a name="ca1031-do-not-catch-general-exception-types"></a>CA1031 : Ne pas intercepter des types d'exception générale
@@ -32,7 +32,7 @@ ms.locfileid: "85542400"
 |Category|Microsoft. Design|
 |Modification avec rupture|Sans rupture|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Une exception générale, telle que <xref:System.Exception?displayProperty=fullName> ou <xref:System.SystemException?displayProperty=fullName> , est interceptée dans une `catch` instruction, ou une clause catch générale telle que `catch()` est utilisée.
 
 ## <a name="rule-description"></a>Description de la règle

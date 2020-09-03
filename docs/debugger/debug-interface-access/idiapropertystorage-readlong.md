@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 697d93af1256d76e5448de5cbc34e04ffc26927f
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85466580"
 ---
 # <a name="idiapropertystoragereadlong"></a>IDiaPropertyStorage::ReadLONG
@@ -43,7 +43,7 @@ dans Identificateur de la propriété à lire ( `PROPID` défini dans WTypes. h 
 ## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` ; sinon, retourne un code d’erreur. Retourne `E_INVALIDARG` si la propriété n’est pas de type `LONG` .
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Un `LONG` est défini par Windows comme un entier signé 32 bits.
 
 ## <a name="see-also"></a>Voir aussi
