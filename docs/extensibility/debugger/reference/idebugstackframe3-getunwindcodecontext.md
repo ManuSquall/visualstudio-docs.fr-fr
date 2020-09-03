@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame3::GetUnwindCodeContext (fr) Microsoft Docs
+title: 'IDebugStackFrame3 :: GetUnwindCodeContext | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 488f675c39bb01c87aca13a9bef8cc4a715ecf18
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719498"
 ---
 # <a name="idebugstackframe3getunwindcodecontext"></a>IDebugStackFrame3::GetUnwindCodeContext
-Renvoie le contexte du code représentant un emplacement si une opération de détendez-vous de pile s’est produite.
+Retourne le contexte de code représentant un emplacement si une opération de déroulement de la pile s’est produite.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,13 +41,13 @@ int GetUnwindCodeContext(
 
 ## <a name="parameters"></a>Paramètres
 `ppCodeContext`\
-[out] Renvoie un objet [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) qui représente l’emplacement du contexte du code en cas de détendez-vous.
+à Retourne un objet [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) qui représente l’emplacement du contexte de code si un déroulement de la pile s’est produit.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- Même si cette méthode peut retourner un contexte de code pour l’emplacement après un détendez-vous pile, cela ne signifie pas nécessairement que la pile se détendre peut effectivement se produire dans le cadre de pile actuelle.
+ Même si cette méthode peut retourner un contexte de code pour l’emplacement après un déroulement de pile, cela ne signifie pas nécessairement que le déroulement de la pile peut réellement se produire dans le frame de pile actuel.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)

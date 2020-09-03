@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetPhysicalStackRange (fr) Microsoft Docs
+title: 'IDebugStackFrame2 :: GetPhysicalStackRange | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 3df924c6c8a4373082d61575e4ad8a7ec3f161d1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719673"
 ---
 # <a name="idebugstackframe2getphysicalstackrange"></a>IDebugStackFrame2::GetPhysicalStackRange
-Obtient une représentation dépendante de la machine de la gamme d’adresses physiques associées à un cadre de pile.
+Obtient une représentation dépendante de l’ordinateur de la plage d’adresses physiques associée à un frame de pile.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -43,18 +43,18 @@ int GetPhysicalStackRange ( 
 
 ## <a name="parameters"></a>Paramètres
 `paddrMin`\
-[out] Retourne l’adresse physique la plus basse associée à ce cadre de pile.
+à Retourne l’adresse physique la plus basse associée à ce frame de pile.
 
 `paddrMax`\
-[out] Retourne l’adresse physique la plus élevée associée à ce cadre de pile.
+à Retourne l’adresse physique la plus élevée associée à ce frame de pile.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- L’information retournée par cette méthode est utilisée par le gestionnaire de déboiffage de session (SDM) pour trier les cadres de pile.
+ Les informations retournées par cette méthode sont utilisées par le gestionnaire de débogage de session (SDM) pour trier les frames de pile.
 
- On suppose que la pile d’appel se développe vers le bas, c’est-à-dire que de nouveaux cadres de pile sont ajoutés à des adresses de mémoire de plus en plus inférieures. Une architecture de temps de course doit fournir des plages de pile physique qui correspondent à cette hypothèse.
+ Il est supposé que la pile des appels augmente, c’est-à-dire que les nouveaux frames de pile sont ajoutés à des adresses mémoire plus basses. Une architecture au moment de l’exécution doit fournir des plages de piles physiques qui correspondent à cette hypothèse.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

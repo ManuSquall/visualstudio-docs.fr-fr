@@ -14,10 +14,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: 5556dcd9e3ad69cd22c000060b328d82925cb984
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68143277"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "89323567"
 ---
-SDK Visual Studio
+Kit de développement logiciel Visual Studio

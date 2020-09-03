@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentChecksum2::GetChecksumAndAlgorithmId | Microsoft Docs
+title: 'IDebugDocumentChecksum2 :: GetChecksumAndAlgorithmId | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,16 +12,16 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a8a603a025d6a9b5b2ba4f0418807666bba4d8b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156492"
 ---
 # <a name="idebugdocumentchecksum2getchecksumandalgorithmid"></a>IDebugDocumentChecksum2::GetChecksumAndAlgorithmId
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Récupère l’identificateur de somme de contrôle et l’algorithme de document étant donné le nombre maximal d’octets à utiliser.  
+Récupère la somme de contrôle de document et l’identificateur d’algorithme en fonction du nombre maximal d’octets à utiliser.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -45,22 +45,22 @@ public int GetChecksumAndAlgorithmId(
   
 #### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- [out] Identificateur unique de l’algorithme de somme de contrôle.  
+ à Identificateur unique de l’algorithme de somme de contrôle.  
   
  `cMaxBytes`  
- [in] Nombre maximal d’octets à utiliser pour la somme de contrôle.  
+ dans Nombre maximal d’octets à utiliser pour la somme de contrôle.  
   
  `pChecksum`  
- [out] Valeur de la somme de contrôle.  
+ à Valeur de la somme de contrôle.  
   
  `pcNumBytes`  
- [out] Nombre réel d’octets utilisés pour la somme de contrôle.  
+ à Nombre réel d’octets utilisés pour la somme de contrôle.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant utilise cette méthode pour obtenir la somme de contrôle et l’algorithme pour un document.  
+ L’exemple suivant utilise cette méthode pour obtenir la somme de contrôle et l’algorithme d’un document.  
   
 ```cpp#  
 HRESULT CDebugCodeContext::GetDocumentChecksumAndAlgorithmId(GUID *pguidAlgorithm, BYTE **ppChecksum, ULONG *pcNumBytes)  

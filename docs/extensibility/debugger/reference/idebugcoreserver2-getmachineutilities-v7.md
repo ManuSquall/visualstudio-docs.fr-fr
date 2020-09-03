@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer2::GetMachineUtilities_V7 Microsoft Docs
+title: 'IDebugCoreServer2 :: GetMachineUtilities_V7 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,17 +16,17 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 79eba6889583f1dfa482dab107ad31eaaacdbcc2
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733154"
 ---
 # <a name="idebugcoreserver2getmachineutilities_v7"></a>IDebugCoreServer2::GetMachineUtilities_V7
-Cette méthode obtient les utilitaires de la machine pour un serveur.
+Cette méthode obtient les utilitaires d’ordinateur pour un serveur.
 
 > [!NOTE]
-> Cette méthode est obsolète :[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] ne `E_NOTIMPL` pas utiliser (retourne toujours si cette méthode est appelée). Il est conservé pour des raisons historiques.
+> Cette méthode est obsolète : n’utilisez pas ( [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] retourne toujours `E_NOTIMPL` la valeur si cette méthode est appelée). Elle est conservée pour des raisons historiques.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -44,13 +44,13 @@ int GetMachineUtilities_V7(
 
 ## <a name="parameters"></a>Paramètres
 `ppUtil`\
-[out] Retourne `IDebugMDMUtil2_V7` une interface qui représente les informations sur les utilitaires de la machine.
+à Retourne une `IDebugMDMUtil2_V7` interface qui représente les informations sur les utilitaires de l’ordinateur.
 
-## <a name="return-value"></a>Valeur de retour
- Retourne `E_NOTIMPL`toujours, indiquant que la méthode n’est pas implémentée.
+## <a name="return-value"></a>Valeur renvoyée
+ Retourne toujours `E_NOTIMPL` , indiquant que la méthode n’est pas implémentée.
 
 ## <a name="remarks"></a>Notes
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]retourne `E_NOTIMPL` toujours si cette méthode est appelée.
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] retourne toujours `E_NOTIMPL` la valeur si cette méthode est appelée.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)

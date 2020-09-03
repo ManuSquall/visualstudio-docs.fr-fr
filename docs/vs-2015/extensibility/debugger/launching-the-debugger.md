@@ -12,47 +12,47 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e9c57079246dd52bd7fb44371999d0c3747dad40
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68149128"
 ---
 # <a name="launching-the-debugger"></a>Lancement du débogueur
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Lancement du débogueur nécessite l’envoi de la séquence des méthodes et des événements avec leurs attributs corrects.  
+Le lancement du débogueur nécessite l’envoi de la séquence correcte des méthodes et des événements avec leurs attributs appropriés.  
   
-## <a name="sequences-of-methods-and-events"></a>Séquences de méthodes et événements  
+## <a name="sequences-of-methods-and-events"></a>Séquences de méthodes et d’événements  
   
-1. Le Gestionnaire de session de débogage (SDM) est appelé en choisissant le **déboguer** menu, puis en choisissant **Démarrer**. Consultez [lancement d’un programme](../../extensibility/debugger/launching-a-program.md) pour plus d’informations.  
+1. Le gestionnaire de débogage de session (SDM) est appelé en choisissant le menu **Déboguer** , puis en sélectionnant **Démarrer**. Pour plus d’informations, consultez [lancement d’un programme](../../extensibility/debugger/launching-a-program.md) .  
   
-2. Les appels SDM [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) (méthode).  
+2. Le SDM appelle la méthode [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) .  
   
-3. Selon le modèle de processus de moteur (dé) de débogage, le `IDebugProgramNodeAttach2::OnAttach` méthode retourne une des méthodes suivantes, qui détermine ce qui se passe ensuite.  
+3. Selon le modèle DE processus du moteur DE débogage (DE), la `IDebugProgramNodeAttach2::OnAttach` méthode retourne l’une des méthodes suivantes, qui détermine ce qui se passe ensuite.  
   
-     Si `S_FALSE` est retourné, le moteur de débogage (dé) doit être chargé en cours de la machine virtuelle.  
+     Si `S_FALSE` est retourné, le moteur de débogage doit être chargé en cours de traitement de l’ordinateur virtuel.  
   
-     ou  
+     - ou -  
   
-     Si `S_OK` est retourné, l’Allemagne est chargé dans le processus du SDM. Le SDM effectue ensuite les tâches suivantes :  
+     Si `S_OK` est retourné, le de doit être chargé dans le processus du SDM. Le SDM effectue ensuite les tâches suivantes :  
   
-    1. Appels [GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md) pour obtenir les informations du moteur de l’Allemagne.  
+    1. Appelle [GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md) pour récupérer les informations du moteur de.  
   
-    2. Crée l’Allemagne.  
+    2. Co-crée le DE.  
   
-    3. Appels [attacher](../../extensibility/debugger/reference/idebugengine2-attach.md).  
+    3. Appelle [Attach](../../extensibility/debugger/reference/idebugengine2-attach.md).  
   
-4. L’envoie DE un [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) pour le SDM avec un `EVENT_SYNC` attribut.  
+4. Le DE envoie un [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) au SDM avec un `EVENT_SYNC` attribut.  
   
-5. L’envoie DE un [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) pour le SDM avec un `EVENT_SYNC` attribut.  
+5. Le DE envoie un [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) au SDM avec un `EVENT_SYNC` attribut.  
   
-6. L’envoie DE un [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) pour le SDM avec un `EVENT_SYNC` attribut.  
+6. Le DE envoie un [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) au SDM avec un `EVENT_SYNC` attribut.  
   
-7. L’envoie DE un [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) pour le SDM avec un `EVENT_SYNC` attribut.  
+7. Le DE envoie un [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) au SDM avec un `EVENT_SYNC` attribut.  
   
-8. L’envoie DE un [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) pour le SDM avec un `EVENT_SYNC` attribut.  
+8. Le DE envoie un [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) au SDM avec un `EVENT_SYNC` attribut.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Appeler les événements de débogueur](../../extensibility/debugger/calling-debugger-events.md)   
+ [Appel des événements du débogueur](../../extensibility/debugger/calling-debugger-events.md)   
  [Lancement d’un programme](../../extensibility/debugger/launching-a-program.md)

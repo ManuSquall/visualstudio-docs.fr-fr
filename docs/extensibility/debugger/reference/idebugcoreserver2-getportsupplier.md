@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer2::GetPortSupplier ( Microsoft Docs
+title: 'IDebugCoreServer2 :: GetPortSupplier | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a33fafae142ef0628130d48a9a84d10b408924c1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80733073"
 ---
 # <a name="idebugcoreserver2getportsupplier"></a>IDebugCoreServer2::GetPortSupplier
@@ -43,12 +43,12 @@ int GetPortSupplier( 
 
 ## <a name="parameters"></a>Paramètres
 `guidPortSupplier`\
-[dans] GUID du fournisseur de port à récupérer.
+dans GUID du fournisseur de ports à récupérer.
 
 `ppPortSupplier`\
-[out] Renvoie un objet [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) représentant le fournisseur portuaire souhaité.
+à Retourne un objet [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) représentant le fournisseur de ports souhaité.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

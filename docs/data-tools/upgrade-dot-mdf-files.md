@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: d35611dcc7b6067cf6d6166aff521ef291b8dfcd
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85281121"
 ---
 # <a name="upgrade-mdf-files"></a>Mettre à jour des fichiers .mdf
@@ -61,7 +61,7 @@ Avant de mettre à niveau une base de données, tenez compte des critères suiva
 
 2. Dans la boîte de dialogue **Ajouter une connexion** , spécifiez les informations suivantes :
 
-    - **Source de données**:`Microsoft SQL Server (SqlClient)`
+    - **Source de données**: `Microsoft SQL Server (SqlClient)`
 
     - **Nom du serveur** :
 
@@ -73,7 +73,7 @@ Avant de mettre à niveau une base de données, tenez compte des critères suiva
 
     - **Nom logique**: le nom que vous souhaitez utiliser avec le fichier.
 
-3. Sélectionnez le bouton **OK** .
+3. Cliquez sur le bouton **OK**.
 
 4. Lorsque vous y êtes invité, sélectionnez le bouton **Oui** pour mettre à niveau le fichier.
 
@@ -101,13 +101,13 @@ Vous pouvez également modifier une connexion SQL Server Express pour utiliser l
 
 ### <a name="to-make-sql-server-express-the-default-database-engine"></a>Pour rendre SQL Server Express le moteur de base de données par défaut
 
-1. Dans la barre de menus, sélectionnez **Outils**  >  **options**.
+1. Dans la barre de menus, sélectionnez **Outils** > **Options**.
 
 2. Dans la boîte de dialogue **options** , développez les options **outils de base de données** , puis sélectionnez **connexions de données**.
 
 3. Dans la zone de texte nom de l' **instance SQL Server** , spécifiez le nom de l’instance de SQL Server Express ou de la base de données locale que vous souhaitez utiliser. Si l’instance n’est pas nommée, spécifiez `.\SQLEXPRESS or (LocalDB)\MSSQLLocalDB` .
 
-4. Sélectionnez le bouton **OK** .
+4. Cliquez sur le bouton **OK**.
 
     SQL Server Express sera le moteur de base de données par défaut pour vos applications.
 

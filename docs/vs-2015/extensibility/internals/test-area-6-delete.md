@@ -1,5 +1,5 @@
 ---
-title: 'Zone de test 6 : Supprimer | Microsoft Docs'
+title: 'Zone de test 6 : supprimer | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,47 +12,47 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3ffe786b5bc5f6d0bb0233fbb431988e0145611d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155932"
 ---
 # <a name="test-area-6-delete"></a>Zone de test 6 : Supprimer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Cette zone de test plug-in de contrôle de code source couvre les actions de suppression.  
+Cette zone de test du plug-in de contrôle de code source couvre les actions de suppression.  
   
- Contrôle de code source répond pour supprimer des actions dans **l’Explorateur de solutions**.  
+ Le contrôle de code source répond aux actions de suppression dans **Explorateur de solutions**.  
   
- Voici une liste d’éléments qui peuvent être supprimées :  
+ Voici une liste des éléments qui peuvent être supprimés :  
   
-- Fichiers  
+- Files  
   
 - Dossiers  
   
-- Projet  
+- Project  
   
-  Selon le type de projet peut avoir la possibilité **supprimer** le projet (laisse les fichiers sur le disque) ou **supprimer** le projet (supprime les fichiers sur disque). L’action supprime le projet ou l’élément à partir de **l’Explorateur de solutions**.  
+  Selon le type de projet, vous pouvez avoir la possibilité de **supprimer** le projet (en laissant les fichiers sur le disque) ou de **supprimer** le projet (supprime les fichiers sur le disque). L’une ou l’autre action supprime le projet ou l’élément de **Explorateur de solutions**.  
   
 ## <a name="expected-behavior"></a>Comportement attendu  
- Le comportement attendu pour les cas de test dans la zone de test delete est :  
+ Le comportement attendu pour les cas de test dans la zone de test de suppression est le suivant :  
   
-- Élément supprimé n’est plus visible dans **l’Explorateur de solutions**.  
+- L’élément supprimé n’est plus visible dans **Explorateur de solutions**.  
   
-- Le parent du projet supprimé ou de l’élément est extrait en fonction des besoins (et éventuellement avec une invite de commandes.)  
+- Le parent du projet ou de l’élément supprimé est extrait en fonction des besoins (éventuellement à l’aide d’une invite).  
   
-- Une fois que vous supprimez un checked out ou élément ajouté, il n’apparaît pas dans le **archivages en attente** fenêtre.  
+- Une fois que vous avez supprimé un élément extrait ou ajouté, il n’apparaît pas dans la fenêtre **archivages en attente** .  
   
-- L’élément existe dans le magasin de contrôle source, même après la suppression, toujours et doit être purgée manuellement.  
+- L’élément existe toujours dans le magasin de contrôle de code source, même après la suppression, et doit être purgé manuellement.  
   
-|Action|Étapes de test|Résultats attendus pour vérifier|  
+|Action|Étapes de test|Résultats attendus à vérifier|  
 |------------|----------------|--------------------------------|  
-|Supprimer un projet de client|1.  Créez un projet client.<br />2.  Ajouter la solution au contrôle de code source.<br />3.  Supprimer l’ensemble du projet de solution|Comportement attendu commun.|  
-|Supprimer un fichier vide|1.  Créez un projet client.<br />2.  Ajouter un fichier de zéro octet au projet.<br />3.  Ajouter la solution au contrôle de code source.<br />4.  Sélectionnez le fichier, supprimez-le.|Comportement attendu commun.|  
-|Supprimer un dossier avec un fichier|1.  Créer la solution de projet unique.<br />2.  Ajouter un dossier.<br />3.  Ajouter un fichier dans le dossier.<br />4.  Ajouter la solution au contrôle de code source.<br />5.  Extraire le projet pour éviter les invites.<br />6.  Supprimez le dossier.|Comportement attendu commun.|  
-|Supprimer un projet Web de système de fichiers|1.  Créez un projet Web de système de fichiers (utilisez le bouton Parcourir pour spécifier un chemin d’accès UNC).<br />2.  Ajouter la solution au contrôle de code source.<br />3.  Supprimer l’ensemble du projet à partir de la solution.<br />4.  Répétez les étapes 1 à 3 pour un projet Web local (différents chemins d’accès via le code mais a la même interface externe et le comportement).|Comportement attendu commun.|  
-|Supprimer un fichier à partir d’un projet Web de système de fichiers|1.  Créer un projet Web de système de fichiers.<br />2.  Ajouter la solution au contrôle de code source.<br />3.  Supprimer un fichier à partir du projet.<br />4.  Répétez les étapes 1 à 3 pour un projet Web local (différents chemins d’accès via le code mais a la même interface externe et le comportement).|Comportement attendu commun.|  
+|Supprimer un projet client|1. Créez un projet client.<br />2. Ajoutez la solution au contrôle de code source.<br />3. supprimer l’intégralité du projet de la solution|Comportement attendu courant.|  
+|Supprimer un fichier vide|1. Créez un projet client.<br />2. Ajoutez un fichier de zéro octet au projet.<br />3. Ajoutez la solution au contrôle de code source.<br />4. Sélectionnez le fichier, supprimez-le.|Comportement attendu courant.|  
+|Supprimer un dossier avec un fichier|1. Créez une solution de projet unique.<br />2. Ajoutez un dossier.<br />3. Ajoutez un fichier au dossier.<br />4. Ajoutez la solution au contrôle de code source.<br />5. consultez le projet pour éviter les invites.<br />6. Supprimez le dossier.|Comportement attendu courant.|  
+|Supprimer un projet Web de système de fichiers|1. Créez un projet Web de système de fichiers (utilisez le bouton Parcourir pour spécifier un chemin d’accès UNC).<br />2. Ajoutez la solution au contrôle de code source.<br />3. Supprimez l’intégralité du projet de la solution.<br />4. Répétez les étapes 1 à 3 pour un projet Web local (teste différents chemins d’accès à travers le code, mais ayant la même interface et le même comportement externes).|Comportement attendu courant.|  
+|Supprimer un fichier d’un projet Web de système de fichiers|1. Créez un projet Web de système de fichiers.<br />2. Ajoutez la solution au contrôle de code source.<br />3. supprimer un fichier du projet.<br />4. Répétez les étapes 1 à 3 pour un projet Web local (teste différents chemins d’accès à travers le code, mais ayant la même interface et le même comportement externes).|Comportement attendu courant.|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Guide de test pour les plug-ins de contrôle de code source](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

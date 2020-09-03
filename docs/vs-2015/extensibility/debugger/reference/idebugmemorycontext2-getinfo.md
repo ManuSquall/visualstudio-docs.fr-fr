@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryContext2::GetInfo | Microsoft Docs
+title: 'IDebugMemoryContext2 :: GetInfo | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e46af3af34a31a1c13c89482b62f319591e483cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68164067"
 ---
 # <a name="idebugmemorycontext2getinfo"></a>IDebugMemoryContext2::GetInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Récupère un [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) structure qui décrit le contexte.  
+Récupère une structure [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) qui décrit le contexte.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -43,13 +43,13 @@ int GetInfo(
   
 #### <a name="parameters"></a>Paramètres  
  `dwFields`  
- [in] Une combinaison d’indicateurs de la [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) énumération qui indiquent les champs de la [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) structure doivent être renseigner.  
+ dans Combinaison d’indicateurs de l’énumération [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) qui indiquent les champs de la structure [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) à remplir.  
   
  `pInfo`  
- [in, out] Le `CONTEXT_INFO` structure est renseigné.  
+ [in, out] `CONTEXT_INFO` Structure qui est remplie.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)   

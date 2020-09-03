@@ -8,10 +8,10 @@ author: conceptdev
 ms.author: crdun
 manager: jillfra
 ms.openlocfilehash: 0d0903db05b193b3318dc30c250bfdb21e76b093
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155283"
 ---
 # <a name="visual-studio-tools-for-apache-cordova"></a>Visual Studio Tools pour Apache Cordova
@@ -31,4 +31,4 @@ Créez des applications pour les appareils iOS, Android et Windows, et partagez 
   
 Si vous envisagez d’utiliser ces outils, mais que vous n’êtes pas encore prêt à les essayer, consultez notre page sur les différentes [fonctionnalités](https://www.visualstudio.com/explore/cordova-vs) pour en savoir plus à leur sujet.  
   
-Si vous êtes prêt à commencer, consultez [développement Mobile avec JavaScript](/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017).
+Si vous êtes prêt à commencer, consultez [développement mobile avec JavaScript](/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017).

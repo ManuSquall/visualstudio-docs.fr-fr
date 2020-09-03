@@ -10,13 +10,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 449c6c1ecdb0644b9b52b6ec12ce867dc34d66c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68156098"
 ---
-# <a name="dontsavevsglogtotemp"></a>DONT_SAVE_VSGLOG_TO_TEMP
+# <a name="dont_save_vsglog_to_temp"></a>DONT_SAVE_VSGLOG_TO_TEMP
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Définit par sa présence si le fichier journal graphique est enregistré dans le répertoire des fichiers temporaires de l'utilisateur.  
@@ -28,15 +28,15 @@ Définit par sa présence si le fichier journal graphique est enregistré dans l
 ```  
   
 ## <a name="value"></a>Valeur  
- Un symbole de préprocesseur qui détermine si du fichier journal des graphiques par sa présence ou l’absence est enregistré dans le répertoire des fichiers temporaires de l’utilisateur. Si ce symbole est défini, le nom de fichier défini par `VSG_DEFAULT_RUN_FILENAME` est relatif au répertoire actif de l’application capturée, soit un chemin d’accès absolu ; sinon, le nom de fichier défini par `VSG_DEFAULT_RUN_FILENAME` est relatif au répertoire des fichiers temporaires de l’utilisateur et ne peut pas être un chemin d’accès absolu.  
+ Symbole de préprocesseur dont la présence ou l’absence détermine si le fichier journal de graphisme est enregistré dans le répertoire des fichiers temporaires de l’utilisateur. Si ce symbole est défini, le nom de fichier défini par `VSG_DEFAULT_RUN_FILENAME` est relatif au répertoire actif de l’application capturée, ou est un chemin d’accès absolu ; sinon, le nom de fichier défini par `VSG_DEFAULT_RUN_FILENAME` est relatif au répertoire de fichiers temporaires de l’utilisateur et ne peut pas être un chemin d’accès absolu.  
   
 ## <a name="remarks"></a>Notes  
- En fonction des privilèges de l’utilisateur, le fichier journal de graphisme n’est peut-être pas pu être enregistrés dans un emplacement arbitraire. Nous recommandons que vous préférez enregistrer des journaux de graphisme au répertoire des fichiers temporaires de l’utilisateur ou un autre emplacement correct, si vous ne savez pas si l’emplacement que vous choisiriez peut être écrites dans par l’utilisateur.  
+ En fonction des privilèges de l’utilisateur, il se peut que le fichier journal de graphisme ne puisse pas être enregistré dans un emplacement arbitraire. Nous vous recommandons d’enregistrer les journaux de graphisme dans le répertoire des fichiers temporaires de l’utilisateur, ou un autre emplacement connu, si vous ne savez pas si l’utilisateur peut écrire l’emplacement que vous choisissez.  
   
- Pour empêcher le fichier journal de graphisme ne sont pas enregistrées dans le répertoire de fichiers temporaires, vous devez défini `DONT_SAVE_VSGLOG_TO_TEMP` avant d’inclure `vsgcapture.h`.  
+ Pour empêcher l’enregistrement du fichier journal de graphisme dans le répertoire de fichiers temporaires, vous devez définir `DONT_SAVE_VSGLOG_TO_TEMP` avant d’inclure `vsgcapture.h` .  
   
 ## <a name="example"></a>Exemple  
- Cet exemple montre comment enregistrer le fichier journal de graphisme à un chemin d’accès absolu sur l’ordinateur hôte.  
+ Cet exemple montre comment enregistrer le fichier journal de graphisme dans un chemin d’accès absolu sur l’ordinateur hôte.  
   
 ```  
 // Define DONT_SAVE_VSGLOG_TO_TEMP and VSG_DEFAULT_RUN_FILENAME before including vsgcapture.h  

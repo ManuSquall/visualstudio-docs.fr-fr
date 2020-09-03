@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetMethodFieldsByName (fr) Microsoft Docs
+title: 'IDebugSymbolProvider :: GetMethodFieldsByName | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cf123c1e7e83264a2ae4a8ef8c2b4b3207a62a5d
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719220"
 ---
 # <a name="idebugsymbolprovidergetmethodfieldsbyname"></a>IDebugSymbolProvider::GetMethodFieldsByName
-Cette méthode obtient le champ représentant un nom de méthode entièrement qualifié.
+Cette méthode obtient le champ représentant un nom de méthode complet.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -45,15 +45,15 @@ int GetMethodFieldsByName(
 
 ## <a name="parameters"></a>Paramètres
 `pszFullName`\
-[dans] Le nom de la méthode.
+dans Nom de la méthode.
 
 `nameMatch`\
-[dans] Sélectionne le type de correspondance, par exemple, sensible aux cas.
+dans Sélectionne le type de correspondance, par exemple en respectant la casse.
 
 `ppEnum`\
-[out] Retourne un enumérateur [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) pour les champs associés à cette méthode.
+à Retourne un énumérateur [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) pour les champs associés à cette méthode.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes

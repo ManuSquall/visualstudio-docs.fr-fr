@@ -14,9 +14,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 0f1a512218c3c1b7af179cfaba3e231a90941fe0
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015059"
 ---
 # <a name="create-site-definitions-for-sharepoint"></a>Créer des définitions de site pour SharePoint
@@ -43,9 +44,9 @@ ms.locfileid: "86015059"
 
 ## <a name="related-topics"></a>Rubriques connexes
 
-|Intitulé|Description|
+|Titre|Description|
 |-----------|-----------------|
-|[Procédure pas à pas : création d'un projet de définition de site de base](../sharepoint/walkthrough-create-a-basic-site-definition-project.md)|Vous guide pas à pas dans la création d’un projet de définition de site de base dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .|
+|[Procédure pas à pas : Création d'un projet de définition de site de base](../sharepoint/walkthrough-create-a-basic-site-definition-project.md)|Vous guide pas à pas dans la création d’un projet de définition de site de base dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .|
 |[Comment : créer une définition de site personnalisée et une configuration](/previous-versions/office/developer/sharepoint-2010/ms454677(v=office.14))|Décrit comment créer une définition de site personnalisée dans SharePoint en copiant une définition de site existante, puis en modifiant la copie.|
 |[*WebTemp.xml*](/previous-versions/office/developer/sharepoint-2010/ms447717(v=office.14))|Décrit le fichier d’origine qui spécifie les définitions de site disponibles dans la section **sélection du modèle** de la page **nouveau site SharePoint** .|
 |[Localiser des solutions SharePoint](../sharepoint/localizing-sharepoint-solutions.md)|Décrit comment préparer vos solutions SharePoint pour une utilisation globale.|

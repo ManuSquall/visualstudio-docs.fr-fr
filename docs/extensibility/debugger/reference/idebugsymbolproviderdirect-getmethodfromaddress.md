@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProviderDirect::GetMethodDeAddress ( Microsoft Docs
+title: 'IDebugSymbolProviderDirect :: GetMethodFromAddress | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,14 +15,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4a062056f4a61521966417e9923a17f6d85b991a
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80718937"
 ---
 # <a name="idebugsymbolproviderdirectgetmethodfromaddress"></a>IDebugSymbolProviderDirect::GetMethodFromAddress
-Récupère des informations sur la méthode à l’adresse de débogé spécifiée.
+Récupère des informations sur la méthode à l’adresse de débogage spécifiée.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -52,27 +52,27 @@ int GetMethodFromAddress(
 
 ## <a name="parameters"></a>Paramètres
 `pAddress`\
-[dans] Adresse Debug qui est représentée par l’interface [IDebugAddress.](../../../extensibility/debugger/reference/idebugaddress.md)
+dans Adresse de débogage qui est représentée par l’interface [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) .
 
 `pGuid`\
-[out] Identifiant unique du module.
+à Identificateur unique du module.
 
 `pAppID`\
-[out] Identification du domaine de l’application.
+à Identificateur du domaine d’application.
 
 `pTokenClass`\
-[out] Jeton qui représente la classe contenant.
+à Jeton qui représente la classe conteneur.
 
 `pTokenMethod`\
-[out] Jeton qui représente le module.
+à Jeton qui représente le module.
 
 `pdwOffset`\
-[out] Un décalage dans les octets `pAddress` dès le début du paramètre.
+à Offset, en octets, à partir du début du `pAddress` paramètre.
 
 `pdwVersion`\
-[out] Numéro de version de la méthode.
+à Numéro de version de la méthode.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi

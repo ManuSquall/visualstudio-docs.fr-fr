@@ -1,5 +1,5 @@
 ---
-title: 'DA0501 : Consommation UC moyenne par le processus en cours de profilage. | Microsoft Docs'
+title: 'DA0501 : consommation processeur moyenne par le processus en cours de profilage. | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,19 +14,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1462ac73e599b870f015a02998c069f7613be0ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68155776"
 ---
-# <a name="da0501-average-cpu-consumption-by-the-process-being-profiled"></a>DA0501 : Consommation UC moyenne par le processus en cours de profilage.
+# <a name="da0501-average-cpu-consumption-by-the-process-being-profiled"></a>DA0501 : consommation processeur moyenne par le processus en cours de profilage.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Id de règle | DA501 |  
+ID de règle | DA501 |  
 | Catégorie | Surveillance des ressources |  
-| Méthode de profilage | Tous les |  
-| Message | Nombre moyen de consommation d’UC par le processus profilé. |  
+| Méthode de profilage | Tout |  
+| Message | Consommation processeur moyenne par le processus en cours de profilage. |  
 | Type de règle | Informations |  
   
  Lorsque vous effectuez un profilage à l’aide de la méthode d’échantillonnage, de mémoire .NET ou de conflit des ressources, vous devez collecter au moins 10 échantillons pour déclencher cette règle.  

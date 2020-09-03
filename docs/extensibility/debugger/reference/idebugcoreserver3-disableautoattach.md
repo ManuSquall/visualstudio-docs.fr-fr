@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::DIsableAutoAttach - France Microsoft Docs
+title: IDebugCoreServer3 ::D isableAutoAttach | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: bd4f874a2a144ec050d0b018ba78ee3e42d70bad
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80732933"
 ---
 # <a name="idebugcoreserver3disableautoattach"></a>IDebugCoreServer3::DisableAutoAttach
-Désactive l’attachement automatique pour tous les moteurs de débogés associés à ce serveur.
+Désactive l’attachement automatique pour tous les moteurs de débogage associés à ce serveur.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -38,7 +38,7 @@ int DisableAutoAttach();
 ```
 
 ## <a name="return-value"></a>Valeur de retour
- En cas `S_OK`de succès, les retours; autrement, renvoie le code d’erreur.
+ En cas de réussite, retourne `S_OK` ; sinon, retourne le code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

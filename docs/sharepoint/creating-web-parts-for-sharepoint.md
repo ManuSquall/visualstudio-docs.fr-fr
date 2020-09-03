@@ -24,9 +24,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3825ef7d2c1c90f63a90f5028063c74332543841
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015045"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>Créer des composants WebPart pour SharePoint
@@ -99,7 +100,7 @@ ms.locfileid: "86015045"
   Pour plus d’informations sur les solutions bac à sable (sandbox), consultez [différences entre les solutions sandbox et les solutions de batterie de serveurs](../sharepoint/differences-between-sandboxed-and-farm-solutions.md).
 
 ## <a name="create-older-style-sharepoint-based-web-parts"></a>Créer des composants WebPart SharePoint de type ancien
- Vous pouvez utiliser les modèles dans Visual Studio pour créer [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] des composants WebPart personnalisés pour SharePoint. [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)]les composants WebPart sont basés sur l' [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] infrastructure de composants WebPart et sont le type recommandé pour les nouveaux projets.
+ Vous pouvez utiliser les modèles dans Visual Studio pour créer [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] des composants WebPart personnalisés pour SharePoint. [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] les composants WebPart sont basés sur l' [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] infrastructure de composants WebPart et sont le type recommandé pour les nouveaux projets.
 
  Dans très rares cas, vous devrez peut-être créer un composant WebPart à l’aide de l’ancien composant WebPart SharePoint. Vous pouvez utiliser Visual Studio pour créer ces types de composants WebPart, mais Visual Studio ne fournit pas de modèles conçus spécifiquement pour vous aider à les créer.
 
@@ -107,7 +108,7 @@ ms.locfileid: "86015045"
 
 ## <a name="related-topics"></a>Rubriques connexes
 
-|Intitulé|Description|
+|Titre|Description|
 |-----------|-----------------|
 |[Comment : créer un composant WebPart SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)|Montre comment créer des composants WebPart pour les pages SharePoint.|
 |[Comment : créer un composant WebPart SharePoint à l’aide d’un concepteur](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)|Montre comment créer des composants WebPart pour SharePoint à l’aide d’une aire de conception visuelle.|

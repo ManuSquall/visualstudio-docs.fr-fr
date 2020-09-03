@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetTypeByName (fr) Microsoft Docs
+title: 'IDebugSymbolProvider :: GetTypeByName | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ce4dfab898190eb89c58503e378b410ddfc240de
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80719184"
 ---
 # <a name="idebugsymbolprovidergettypebyname"></a>IDebugSymbolProvider::GetTypeByName
-Cette méthode cartographie un nom de symbole à un type de symbole.
+Cette méthode mappe un nom de symbole à un type de symbole.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -45,15 +45,15 @@ int GetTypeByName(
 
 ## <a name="parameters"></a>Paramètres
 `pszClassName`\
-[dans] Le nom du symbole.
+dans Nom du symbole.
 
 `nameMatch`\
-[dans] Sélectionne le type de correspondance, par exemple, sensible aux cas. Une valeur de [l’énumération NAME_MATCH.](../../../extensibility/debugger/reference/name-match.md)
+dans Sélectionne le type de correspondance, par exemple en respectant la casse. Valeur de l’énumération [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) .
 
 `ppField`\
-[out] Retourne le type de symbole comme un objet [IDebugField.](../../../extensibility/debugger/reference/idebugfield.md)
+à Retourne le type de symbole sous la forme d’un objet [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) .
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
