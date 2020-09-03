@@ -1,5 +1,5 @@
 ---
-title: Types de projets (en anglais seulement) Microsoft Docs
+title: Types de projets | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,51 +12,51 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6b343eeeee0912a6e9cad57ca6d35c33845e4dd4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80706267"
 ---
 # <a name="project-types"></a>Types de projet
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]comprend plusieurs types de [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] projets pour des langues telles que et [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]vous permet également de créer vos propres types de projets.
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] comprend plusieurs types de projets pour les langages tels que [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] et [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] . [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] vous permet également de créer vos propres types de projets.
 
 ## <a name="in-this-section"></a>Dans cette section
 - [Bases](../../extensibility/internals/project-type-essentials.md)
 
- Présente l’information importante que vous devez commencer à travailler avec les types de projets.
+ Présente les informations importantes dont vous devez disposer pour commencer à utiliser les types de projets.
 
 - [Création de types de projets](../../extensibility/internals/creating-project-types.md)
 
- Discute de la conception des types de projets.
+ Décrit la conception des types de projet.
 
 - [Ajout d’une commande à la barre d’outils de l’Explorateur de solutions](../../extensibility/adding-a-command-to-the-solution-explorer-toolbar.md)
 
- Détaillez les étapes que vous devez [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] suivre pour ajouter un bouton à la barre d’outils **Solution Explorer.**
+ Détaille les étapes que vous devez suivre pour ajouter un bouton à la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] barre d’outils **Explorateur de solutions** .
 
 - [Ajout d’un projet et de modèles d’élément de projet](../../extensibility/internals/adding-project-and-project-item-templates.md)
 
- Discute de la façon dont vous pouvez ajouter des modèles à vos types de projet afin que les utilisateurs puissent créer de nouveaux projets et des éléments de projet selon un modèle.
+ Explique comment vous pouvez ajouter des modèles à vos types de projets afin que les utilisateurs puissent créer des projets et des éléments de projet en fonction d’un modèle.
 
 - [Ouverture et enregistrement d’éléments de projet](../../extensibility/internals/opening-and-saving-project-items.md)
 
- Fournit des informations sur la façon de gérer les éléments que votre type de projet prend en charge.
+ Fournit des informations sur la gestion des éléments que votre type de projet prend en charge.
 
 - [Gestion des options de configuration](../../extensibility/internals/managing-configuration-options.md)
 
- Discute de la façon dont vos types de projets peuvent prendre en charge les options de configuration comme Debug et Release qui contrôlent la façon dont les projets sont construits, débogés, et ainsi de suite.
+ Explique comment vos types de projet peuvent prendre en charge des options de configuration telles que Debug et Release qui contrôlent la façon dont les projets sont générés, débogués, et ainsi de suite.
 
 - [Prise en charge du contrôle de code source](../../extensibility/internals/supporting-source-control.md)
 
- Fournit des informations sur la façon d’ajouter la prise en charge des systèmes de contrôle des sources à vos types de projets.
+ Fournit des informations sur l’ajout de la prise en charge des systèmes de contrôle de code source à vos types de projets.
 
 - [Imbriquer des projets](../../extensibility/internals/nesting-projects.md)
 
- Explique comment vos types de projets peuvent soutenir *la nidification*, de sorte que les projets peuvent être regroupés dans **Solution Explorer**.
+ Explique comment vos types de projet peuvent prendre en charge l' *imbrication*, afin que les projets puissent être regroupés dans **Explorateur de solutions**.
 
 - [Mise à niveau des projets](../../extensibility/internals/upgrading-projects.md)
 
- Décrit comment votre type de projet peut participer à l’Assistant [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]De mise à niveau pour mettre à niveau les fichiers de projet à partir d’une version antérieure de .
+ Décrit comment votre type de projet peut participer à l’Assistant Mise à niveau pour mettre à niveau les fichiers projet d’une version antérieure de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] .
 
 - [Architecture](../../extensibility/internals/project-types-architecture.md)
 
@@ -65,12 +65,12 @@ ms.locfileid: "80706267"
 ## <a name="related-sections"></a>Sections connexes
 - [Hiérarchies et sélection](../../extensibility/internals/hierarchies-and-selection.md)
 
- Fournit un aperçu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] de la façon dont l’environnement de développement intégré (IDE) affiche un projet comme une hiérarchie.
+ Fournit une vue d’ensemble de la façon dont l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] environnement de développement intégré (IDE) affiche un projet sous la forme d’une hiérarchie.
 
 - [Sous-types de projets](../../extensibility/internals/project-subtypes.md)
 
- Fournit des liens vers des sujets de sous-type de projet. Les sous-types de projet permettent d’étendre la plupart des types de types de projets, y compris le vôtre.
+ Fournit des liens vers les rubriques relatives au sous-type de projet. Les sous-types de projet activent l’extension de la plupart des types de projets, y compris les vôtres.
 
 - [Projets](../../extensibility/internals/projects.md)
 
- Décrit comment étendre [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] le système de projet.
+ Décrit comment étendre le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] système de projet.

@@ -8,10 +8,10 @@ ms.author: anthc
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4ee29937b11110ee6aae65628b81ea49588fdd22
-ms.sourcegitcommit: cb0c6e55ae560960a493df9ab56e3e9d9bc50100
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86972307"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Comment : utiliser le contexte de l’interface utilisateur basé sur des règles pour les extensions Visual Studio

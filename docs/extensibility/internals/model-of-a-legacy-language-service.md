@@ -1,5 +1,5 @@
 ---
-title: Modèle d’un service de langue héritée (fr) Microsoft Docs
+title: Modèle d’un service de langage hérité | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,41 +11,41 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7f024a02641902843f673ce3ff8583a4bce3b135
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80707048"
 ---
 # <a name="model-of-a-legacy-language-service"></a>Modèle d’un service de langage hérité
-Un service linguistique définit les éléments et les caractéristiques d’une langue spécifique et est utilisé pour fournir à l’éditeur des informations spécifiques à cette langue. Par exemple, l’éditeur doit connaître les éléments et les mots clés de la langue afin de prendre en charge la coloration syntaxe.
+Un service de langage définit les éléments et les fonctionnalités d’un langage spécifique, et est utilisé pour fournir à l’éditeur des informations spécifiques à ce langage. Par exemple, l’éditeur doit connaître les éléments et les mots clés du langage afin de prendre en charge la coloration syntaxique.
 
- Le service linguistique travaille en étroite collaboration avec le tampon de texte géré par l’éditeur et le point de vue qui contient l’éditeur. L’option Microsoft IntelliSense **Quick Info** est un exemple d’une fonctionnalité fournie par un service linguistique.
+ Le service de langage fonctionne étroitement avec la mémoire tampon de texte gérée par l’éditeur et la vue qui contient l’éditeur. L’option **Info Express** de Microsoft IntelliSense est un exemple de fonctionnalité fournie par un service de langage.
 
-## <a name="a-minimal-language-service"></a>Un service de langue minimal
- Le service linguistique le plus basique contient les deux objets suivants :
+## <a name="a-minimal-language-service"></a>Service de langage minimal
+ Le service de langage le plus basique contient les deux objets suivants :
 
-- Le *service linguistique* <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> implémente l’interface. Un service de langue a des informations sur la langue, y compris son nom, extensions de nom de fichier, gestionnaire de fenêtre de code, et colorier.
+- Le *service de langage* implémente l' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> interface. Un service de langage contient des informations sur la langue, notamment son nom, son extension de nom de fichier, son gestionnaire de fenêtre de code et Coloriseur.
 
-- Le *coloriste* implémente l’interface. <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>
+- *Coloriseur* implémente l' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> interface.
 
-  Le dessin conceptuel suivant montre un modèle d’un service linguistique de base.
+  Le dessin conceptuel suivant illustre un modèle de service de langage de base.
 
-  ![Graphique du modèle de service linguistique](../../extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel") Modèle de service linguistique de base
+  ![Graphique du modèle de service de langage](../../extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel") Modèle de service de langage de base
 
-  La fenêtre de document héberge la *vue* de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] document de l’éditeur, dans ce cas, l’éditeur de base. La vue de document et le tampon de texte sont la propriété de l’éditeur. Ces objets [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fonctionnent avec à travers une fenêtre de document spécialisée appelée *une fenêtre de code*. La fenêtre de code <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> est contenue dans un objet qui est créé et contrôlé par l’IDE.
+  La fenêtre de document héberge la *vue de document* de l’éditeur, dans ce cas l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] éditeur principal. La vue de document et la mémoire tampon de texte sont détenues par l’éditeur. Ces objets fonctionnent avec [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] une fenêtre de document spécialisée appelée *fenêtre de code*. La fenêtre de code est contenue dans un <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> objet qui est créé et contrôlé par l’IDE.
 
-  Lorsqu’un fichier avec une extension donnée est chargé, l’éditeur localise le service linguistique <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> associé à cette extension et lui transmet la fenêtre de code en appelant la méthode. Le service de langue renvoie un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> gestionnaire de fenêtre de *code*, qui implémente l’interface.
+  Lorsqu’un fichier avec une extension donnée est chargé, l’éditeur localise le service de langage associé à cette extension et lui passe la fenêtre de code en appelant la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> méthode. Le service de langage retourne un *Gestionnaire de fenêtre de code*qui implémente l' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> interface.
 
-  Le tableau suivant donne un aperçu des objets du modèle.
+  Le tableau suivant fournit une vue d’ensemble des objets dans le modèle.
 
-| Composant | Object | Fonction |
+| Composant | Objet | Fonction |
 |------------------| - | - |
-| Tampon de texte | <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> | Un flux de texte Unicode lu/écrire. Il est possible pour le texte d’utiliser d’autres codages. |
-| Fenêtre de code | <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow> | Une fenêtre de document qui contient une ou plusieurs vues de texte. Lorsqu’elle [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] est en mode interface multi-documents (MDI), la fenêtre de code est un enfant MDI. |
-| Vue de texte | <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> | Une fenêtre qui permet à l’utilisateur de naviguer et de visualiser le texte en utilisant le clavier et la souris. Une vue de texte apparaît à l’utilisateur en tant qu’éditeur. Vous pouvez utiliser des vues de texte dans les fenêtres ordinaires de l’éditeur, la fenêtre de sortie et la fenêtre immédiate. En outre, vous pouvez configurer une ou plusieurs vues de texte dans une fenêtre de code. |
-| Gestionnaire de texte | Géré par <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> le service, à <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> partir duquel vous obtenez un pointeur | Un composant qui conserve les informations communes partagées par tous les composants décrits précédemment. |
-| Service linguistique | Mise en œuvre dépendante; Implémente<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> | Un objet qui fournit à l’éditeur des informations spécifiques à la langue telles que la mise en évidence de la syntaxe, l’achèvement des relevés et l’appariement des accolades. |
+| Mémoire tampon de texte | <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> | Flux de texte en lecture/écriture Unicode. Il est possible que du texte utilise d’autres encodages. |
+| Fenêtre de code | <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow> | Fenêtre de document qui contient un ou plusieurs affichages de texte. Lorsque [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] est en mode d’interface multidocument (MDI, multiple-document interface), la fenêtre de code est un enfant MDI. |
+| Affichage de texte | <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> | Fenêtre qui permet à l’utilisateur de parcourir et d’afficher du texte à l’aide du clavier et de la souris. Un affichage de texte apparaît pour l’utilisateur en tant qu’éditeur. Vous pouvez utiliser des affichages de texte dans des fenêtres d’éditeur ordinaires, dans la fenêtre sortie et dans la fenêtre exécution. En outre, vous pouvez configurer un ou plusieurs affichages de texte dans une fenêtre de code. |
+| Gestionnaire de texte | Géré par le <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> service, à partir duquel vous obtenez un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> pointeur | Composant qui gère les informations communes partagées par tous les composants décrits précédemment. |
+| Service de langage | Implémentation dépendante ; implémente <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> | Objet qui fournit à l’éditeur des informations spécifiques au langage, telles que la mise en surbrillance de la syntaxe, la saisie semi-automatique des instructions et la correspondance des accolades. |
 
 ## <a name="see-also"></a>Voir aussi
 - [Données de documents et affichage de documents dans les éditeurs personnalisés](../../extensibility/document-data-and-document-view-in-custom-editors.md)

@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1307d720e005855770ee68659374dbbfae247d65
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541035"
 ---
 # <a name="imanagedaddinload"></a>IManagedAddIn::Load
@@ -38,7 +38,7 @@ HRESULT Load([in] BSTR bstrManifestURL,
 ## <a name="return-value"></a>Valeur renvoyée
  Valeur HRESULT qui indique si la méthode a réussi.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Un manifeste est un fichier (en général, un fichier XML) qui fournit des informations qui sont utilisées pour charger le complément VSTO. Par exemple, un manifeste peut spécifier l’emplacement de l’assembly du complément VSTO et la classe de point d’entrée à instancier lors du chargement du complément VSTO.
 
  Le paramètre *bstrManifestURL* contient la valeur de l' `Manifest` entrée sous la clé de Registre **HKEY_CURRENT_USER \software\microsoft\office \\ _\<application name>_ \\ _\<add-in ID>_ \Addins** pour le complément VSTO. Pour plus d’informations, consultez [IManagedAddin interface](../vsto/imanagedaddin-interface.md).

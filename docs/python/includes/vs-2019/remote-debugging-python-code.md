@@ -11,10 +11,10 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 5307684bde56955f2a4ed77d2ac66b6b30cb1c1d
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85541069"
 ---
 Visual Studio peut lancer et déboguer des applications python localement et à distance sur un ordinateur Windows (consultez [débogage distant](../../../debugger/remote-debugging.md)). Il peut également déboguer à distance sur un système d’exploitation, un appareil ou une implémentation python autre que CPython à l’aide de la [bibliothèque debugpy](https://pypi.org/project/debugpy/).
@@ -118,7 +118,7 @@ Dans ces étapes, nous allons définir un point d’arrêt simple pour arrêter 
     - Si vous devez utiliser un port différent, vous pouvez le spécifier dans le `listen` , comme dans `debugpy.listen((host, port))` . Dans ce cas, ouvrez ce port spécifique dans le pare-feu.
 1. Vérifiez que la version de debugpy installée sur l’ordinateur distant, telle qu’elle est retournée par, correspond à celle `pip3 list` utilisée par la version des outils python que vous utilisez dans Visual Studio dans le tableau ci-dessous. Si nécessaire, mettez à jour debugpy sur l’ordinateur distant.
 
-    | Version de Visual Studio | Python Tools/debugpy version |
+    | Version Visual Studio | Python Tools/debugpy version |
     | --- | --- |
     | 2019 16,6 | 1.0.0 B5 |
     | 2019 16,5 | 1.0.0 B1 |

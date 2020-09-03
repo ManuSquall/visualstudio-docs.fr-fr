@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2:EnumModules Microsoft Docs
+title: 'IDebugProgram2 :: EnumModules | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 967b9b4a06f382e5da2ee2422dd48209184e474b
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80723016"
 ---
 # <a name="idebugprogram2enummodules"></a>IDebugProgram2::EnumModules
-Récupère une liste des modules que ce programme a chargés et exécute.
+Récupère la liste des modules chargés et exécutés par ce programme.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,13 +41,13 @@ int EnumModules( 
 
 ## <a name="parameters"></a>Paramètres
 `ppEnum`\
-[out] Retourne un objet [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md) qui contient une liste des modules.
+à Retourne un objet [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md) qui contient une liste des modules.
 
-## <a name="return-value"></a>Valeur de retour
+## <a name="return-value"></a>Valeur renvoyée
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- Un module est un DLL ou un assemblage et est généralement répertorié dans la fenêtre de déboise **modules.**
+ Un module est une DLL ou un assembly et est généralement listé dans la fenêtre de débogage des **modules** .
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

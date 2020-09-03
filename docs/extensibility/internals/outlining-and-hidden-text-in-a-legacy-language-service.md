@@ -1,5 +1,5 @@
 ---
-title: Décrivant et caché le texte dans un service de langue héritée (fr) Microsoft Docs
+title: Mode plan et texte masqué dans un service de langage hérité | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,24 +11,24 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b1f05d42de0201a7556046d19baf55830fa62c22
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80706825"
 ---
 # <a name="outlining-and-hidden-text-in-a-legacy-language-service"></a>Mode Plan et texte masqué dans un service de langage hérité
-L’affichage permet d’effondrer une séquence de lignes de texte en une seule ligne. Par exemple, dans le C, toutes les méthodes peuvent être effondrées en une seule ligne, ne montrant que la signature de la méthode. Le texte caché est la séquence de lignes de texte qui peuvent être affichées ou cachées.
+Le mode plan permet de réduire une séquence de lignes de texte en une seule ligne. Par exemple, dans C++, toutes les méthodes peuvent être réduites sur une seule ligne, ce qui indique uniquement la signature de la méthode. Le texte masqué est la séquence de lignes de texte qui peut être affichée ou masquée.
 
 ## <a name="in-this-section"></a>Dans cette section
 - [Guide pratique pour prendre en charge le Mode Plan dans un service de langage hérité](../../extensibility/internals/how-to-support-outlining-in-a-legacy-language-service.md)
 
- Explique comment mettre en œuvre
+ Explique comment implémenter
 
 - [Guide pratique pour fournir la prise en charge de texte masqué dans un service de langage hérité](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)
 
- Explique le but d’une région de texte caché et fournit des instructions sur la façon de mettre en œuvre une région de texte caché.
+ Explique l’objectif d’une zone de texte masquée et fournit des instructions sur la façon d’implémenter une zone de texte masquée.
 
 - [Guide pratique pour fournir la prise en charge étendue du Mode Plan dans un service de langage hérité](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)
 
- Explique les deux options qui étendent le soutien à votre langue au-delà de l’appui de la commande *Collapse to Definitions.*
+ Explique les deux options qui étendent la prise en charge du mode plan à votre langage au-delà de la prise en charge de la commande *réduire aux définitions* .

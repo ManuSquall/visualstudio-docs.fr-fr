@@ -14,17 +14,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fe303f86b282e7e803dacc1dd8f4d3c1d6b72121
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75595811"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Page Application, Concepteur de projet (Visual Basic)
 
 Utilisez la page **Application** du Concepteur de projet pour spécifier les paramètres d’application et les propriétés du projet.
 
-Pour accéder à la page **Application**, choisissez un nœud de projet (pas le nœud **Solution**) dans l’**Explorateur de solutions**. Choisissez ensuite **Project** > **Properties** sur la barre de menu. Quand le **Concepteur de projet** apparaît, sélectionnez l’onglet **Application**.
+Pour accéder à la page **Application**, choisissez un nœud de projet (pas le nœud **Solution**) dans l’**Explorateur de solutions**. Choisissez ensuite **Project**  >  **Propriétés** du projet dans la barre de menus. Quand le **Concepteur de projet** apparaît, sélectionnez l’onglet **Application**.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -47,7 +47,7 @@ Spécifie l’espace de noms de base pour tous les fichiers du projet. Par exemp
 Si vous effacez l’**espace de noms racine**, vous pouvez spécifier la structure de l’espace de noms de votre projet dans le code.
 
 > [!NOTE]
-> Si vous utilisez le mot clé `Global` dans une [instruction Namespace](/dotnet/visual-basic/language-reference/statements/namespace-statement), vous pouvez définir un espace de noms en dehors de l’espace de noms racine de votre projet. Si vous effacez le `Global` **Root Namespace**, devient l’espace de `Global` nom `Namespace` de haut niveau, ce qui supprime le besoin pour le mot clé dans une déclaration. Pour plus d’informations, consultez « Mot clé Global dans les instructions Namespace » dans [Espaces de noms dans Visual Basic](/dotnet/visual-basic/programming-guide/program-structure/namespaces).
+> Si vous utilisez le mot clé `Global` dans une [instruction Namespace](/dotnet/visual-basic/language-reference/statements/namespace-statement), vous pouvez définir un espace de noms en dehors de l’espace de noms racine de votre projet. Si vous effacez l' **espace de noms racine**, `Global` devient l’espace de noms de niveau supérieur, ce qui supprime le recours au `Global` mot clé dans une `Namespace` instruction. Pour plus d’informations, consultez « Mot clé Global dans les instructions Namespace » dans [Espaces de noms dans Visual Basic](/dotnet/visual-basic/programming-guide/program-structure/namespaces).
 
 Pour plus d’informations sur la création d’espaces de noms dans votre code, consultez [Instruction Namespace](/dotnet/visual-basic/language-reference/statements/namespace-statement).
 
@@ -86,7 +86,7 @@ Spécifie le formulaire de démarrage ou le point d’entrée de l’application
 
 Si **Activer l’infrastructure de l’application** est sélectionné (par défaut), cette liste est intitulée **Formulaire de démarrage** et affiche uniquement des formulaires, car le framework d’application ne prend en charge que les formulaires de démarrage, et non les objets.
 
-Si le projet est une application de navigateur WPF, cette liste est intitulée **URI de démarrage** et la valeur par défaut est **Page1.xaml**. La liste **URI de démarrage** permet de spécifier la ressource d’interface utilisateur (un élément XAML) que l’application affiche au démarrage. Pour plus d’informations, consultez <xref:System.Windows.Application.StartupUri%2A>.
+Si le projet est une application de navigateur WPF, cette liste est intitulée **URI de démarrage** et la valeur par défaut est **Page1.xaml**. La liste **URI de démarrage** permet de spécifier la ressource d’interface utilisateur (un élément XAML) que l’application affiche au démarrage. Pour plus d'informations, consultez <xref:System.Windows.Application.StartupUri%2A>.
 
 Si **Activer l’infrastructure de l’application** n’est pas sélectionné, cette liste devient **Objet de démarrage**, et affiche des formulaires et des classes ou des modules avec un `Sub Main`.
 
@@ -94,7 +94,7 @@ L’**objet de démarrage** définit le point d’entrée à appeler quand l’a
 
 ### <a name="icon"></a>Icône
 
-Définit le fichier .ico à utiliser comme icône de votre programme. Sélectionnez Parcourir ** \<... >** à parcourir pour un graphique existant. Pour plus d’informations, consultez [/win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) (ou [/win32icon (Options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option). Pour accéder à cette propriété par programmation, consultez <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.
+Définit le fichier .ico à utiliser comme icône de votre programme. Sélectionnez cette option **\<Browse...>** pour rechercher un graphique existant. Pour plus d’informations, consultez [/win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) (ou [/win32icon (Options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option). Pour accéder à cette propriété par programmation, consultez <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.
 
 ### <a name="assembly-information"></a>Informations de l’assembly
 
@@ -102,7 +102,7 @@ Cliquez sur ce bouton pour afficher la [boîte de dialogue Informations de l’a
 
 ### <a name="enable-application-framework"></a>Activer l’infrastructure d’application
 
-Spécifie si un projet utilise le framework d’application. Le paramètre de cette option affecte les options disponibles sous **forme**/startup**Objet Startup**.
+Spécifie si un projet utilise le framework d’application. La valeur de cette option affecte les options disponibles dans l’objet de démarrage du formulaire de **démarrage** / **Startup object**.
 
 Si cette case est cochée, votre application utilise le `Sub Main` standard. En cochant cette case, vous activez les fonctionnalités de la section **Propriétés de l’infrastructure d’application Windows** et vous êtes invité à sélectionner un formulaire de démarrage.
 
@@ -110,7 +110,7 @@ Si cette case est décochée, votre application utilise le `Sub Main` personnali
 
 ### <a name="view-windows-settings"></a>Afficher les paramètres Windows
 
-Cliquez sur ce bouton pour générer et ouvrir le fichier *app.manifest.* Visual Studio utilise ce fichier pour générer des données de manifeste pour l’application. Ensuite, définissez le niveau d’exécution demandé par l’UAC en modifiant l’étiquette `<requestedExecutionLevel>` dans *app.manifest* comme suit :
+Cliquez sur ce bouton pour générer et ouvrir le fichier *app. manifest* . Visual Studio utilise ce fichier pour générer des données de manifeste pour l’application. Définissez ensuite le niveau d’exécution demandé du contrôle de compte d’utilisateur en modifiant la `<requestedExecutionLevel>` balise dans *app. manifest* comme suit :
 
 `<requestedExecutionLevel level="asInvoker" />`
 
@@ -153,7 +153,7 @@ Sélectionnez **Lors de la fermeture de la fenêtre principale** pour spécifier
 
 ### <a name="splash-screen"></a>Écran de démarrage
 
-Sélectionnez le formulaire à utiliser comme écran de démarrage. Vous devez déjà avoir créé un écran de démarrage à l’aide d’un formulaire ou d’un modèle. La valeur par défaut est **(Aucun)**.
+Sélectionnez le formulaire à utiliser comme écran de démarrage. Vous devez déjà avoir créé un écran de démarrage à l’aide d’un formulaire ou d’un modèle. La valeur par défaut est **(aucune)**.
 
 ### <a name="view-application-events"></a>Afficher les événements de l’application
 
@@ -177,7 +177,7 @@ Pour plus d’informations sur l’utilisation de ce paramètre, consultez <xref
 
 ### <a name="edit-xaml"></a>Modifier XAML
 
-Ce bouton permet d’ouvrir le fichier de définition d’application (Application.xaml) dans l’éditeur XAML. Lorsque vous cliquez sur ce bouton, *Application.xaml* s’ouvre sur le nœud de définition d’application. Vous devez peut-être modifier ce fichier pour effectuer certaines tâches, comme la définition des ressources. Si le fichier de définition d’application n’existe pas, le Concepteur de projet en crée un.
+Ce bouton permet d’ouvrir le fichier de définition d’application (Application.xaml) dans l’éditeur XAML. Lorsque vous cliquez sur ce bouton, *application. Xaml* s’ouvre au niveau du nœud de définition d’application. Vous devez peut-être modifier ce fichier pour effectuer certaines tâches, comme la définition des ressources. Si le fichier de définition d’application n’existe pas, le Concepteur de projet en crée un.
 
 ### <a name="view-application-events"></a>Afficher les événements de l’application
 

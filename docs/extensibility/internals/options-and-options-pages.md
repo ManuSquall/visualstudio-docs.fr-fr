@@ -1,5 +1,5 @@
 ---
-title: Pages d’options et d’options Microsoft Docs
+title: Options et pages Options | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,73 +15,73 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7d21bf6d5ab7e23047a02e1188fff9a47d0cbd58
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80706838"
 ---
 # <a name="options-and-options-pages"></a>Options et pages Options
-Cliquer sur **options** sur le menu **Tools** ouvre la boîte de dialogue **Options.** Les options dans cette boîte de dialogue sont collectivement appelées pages d’options. Le contrôle des arbres dans le volet de navigation comprend des catégories d’options, et chaque catégorie a des pages d’options. Lorsque vous sélectionnez une page, ses options apparaissent dans le bon volet. Ces pages vous permettent de modifier les valeurs des options qui déterminent l’état d’un VSPackage.
+Cliquez sur **options** dans le menu **Outils** pour ouvrir la boîte de dialogue **options** . Les options de cette boîte de dialogue sont collectivement appelées pages d’options. Le contrôle d’arborescence dans le volet de navigation inclut des catégories d’options, et chaque catégorie possède des pages d’options. Lorsque vous sélectionnez une page, ses options s’affichent dans le volet droit. Ces pages vous permettent de modifier les valeurs des options qui déterminent l’état d’un VSPackage.
 
-## <a name="support-for-options-pages"></a>Prise en charge des pages Options
- La <xref:Microsoft.VisualStudio.Shell.Package> classe fournit un soutien pour la création de pages d’options et de catégories d’options. La <xref:Microsoft.VisualStudio.Shell.DialogPage> classe implémente une page d’options.
+## <a name="support-for-options-pages"></a>Prise en charge des pages d’options
+ La <xref:Microsoft.VisualStudio.Shell.Package> classe fournit la prise en charge de la création des pages Options et des catégories d’options. La <xref:Microsoft.VisualStudio.Shell.DialogPage> classe implémente une page d’options.
 
- La mise <xref:Microsoft.VisualStudio.Shell.DialogPage> en œuvre par défaut des offres de ses propriétés publiques à un utilisateur dans une grille générique de propriétés. Vous pouvez personnaliser ce comportement en prépondant diverses méthodes sur la page pour créer une page d’options personnalisées qui a sa propre interface utilisateur (interface utilisateur). Pour plus d’informations, voir [Créer une page d’options](../../extensibility/creating-an-options-page.md).
+ L’implémentation par défaut de <xref:Microsoft.VisualStudio.Shell.DialogPage> offre ses propriétés publiques à un utilisateur dans une grille générique de propriétés. Vous pouvez personnaliser ce comportement en remplaçant différentes méthodes sur la page pour créer une page d’options personnalisée qui possède sa propre interface utilisateur. Pour plus d’informations, consultez [création d’une page d’options](../../extensibility/creating-an-options-page.md).
 
- La <xref:Microsoft.VisualStudio.Shell.DialogPage> classe <xref:Microsoft.VisualStudio.Shell.IProfileManager>implémente , ce qui fournit la persistance pour les pages d’options et aussi pour les paramètres de l’utilisateur. Les implémentations <xref:Microsoft.VisualStudio.Shell.IProfileManager.SaveSettingsToStorage%2A> par défaut de la propriété et les <xref:Microsoft.VisualStudio.Shell.IProfileManager.LoadSettingsFromStorage%2A> méthodes persistent changements de propriété dans une section utilisateur du registre si la propriété peut être convertie à et à partir d’une chaîne.
+ La <xref:Microsoft.VisualStudio.Shell.DialogPage> classe implémente <xref:Microsoft.VisualStudio.Shell.IProfileManager> , qui fournit la persistance pour les pages d’options et également pour les paramètres utilisateur. Les implémentations par défaut des <xref:Microsoft.VisualStudio.Shell.IProfileManager.LoadSettingsFromStorage%2A> <xref:Microsoft.VisualStudio.Shell.IProfileManager.SaveSettingsToStorage%2A> méthodes et persistent les modifications de propriété dans une section utilisateur du Registre si la propriété peut être convertie vers et à partir d’une chaîne.
 
-## <a name="options-page-registry-path"></a>Options Page Registry Path
- Par défaut, la trajectoire de registre des propriétés <xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A>gérées par une page d’options est déterminée en combinant, le mot DialogPage, et le nom type de la classe de page d’options. Par exemple, un cours de page d’options peut être défini comme suit.
+## <a name="options-page-registry-path"></a>Page d’options chemin du Registre
+ Par défaut, le chemin d’accès au registre des propriétés gérées par une page Options est déterminé par la combinaison <xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A> , le mot DialogPage et le nom de type de la classe de la page Options. Par exemple, une classe de page Options peut être définie comme suit.
 
  [!code-csharp[VSSDKSupportForOptionsPages#1](../../extensibility/internals/codesnippet/CSharp/options-and-options-pages_1.cs)]
  [!code-vb[VSSDKSupportForOptionsPages#1](../../extensibility/internals/codesnippet/VisualBasic/options-and-options-pages_1.vb)]
 
- Si <xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A> le nom de propriété et les paires de valeur sont HKEY_CURRENT_USER-Software-Microsoft-VisualStudio-8.0Exp, alors les paires de noms et de valeurs de la propriété sont des sous-clés de HKEY_CURRENT_USER-Software-Microsoft-VisualStudio-8.0Exp-DialogPage-Company.OptionsPage.OptionsPageGeneral.
+ Si le <xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A> est HKEY_CURRENT_USER \software\microsoft\visualstudio\8.0exp, les paires nom de la propriété et valeur sont des sous-clés de HKEY_CURRENT_USER \software\microsoft\visualstudio\8.0exp\dialogpage\company.OptionsPage.OptionsPageGeneral.
 
- Le parcours de registre de la <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>page d’options elle-même est déterminé en combinant, le mot, ToolsOptionsPages, et la catégorie de page d’options et le nom. Par exemple, si la page d’options personnalisées <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A> a la catégorie, Mes pages d’option, et l’est HKEY_LOCAL_MACHINE-SOFTWARE-Microsoft-VisualStudio-8.0Exp, alors la page d’options a la clé de registre, HKEY_LOCAL_MACHINE-SOFTWARE-Microsoft-VisualStudio -8.0Exp-ToolsOptionsPagesPages-My Options-Custom.
+ Le chemin d’accès au registre de la page Options elle-même est déterminé par la combinaison <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A> , le mot, ToolsOptionsPages et la catégorie et le nom de la page Options. Par exemple, si la page Options personnalisées contient la catégorie, mes pages d’options et que <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A> est HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\8.0exp, la page Options contient la clé de registre HKEY_LOCAL_MACHINE option \Software\microsoft\visualstudio\8.0exp\toolsoptionspages\my Pages\Custom.
 
-## <a name="toolsoptions-page-attributes-and-layout"></a>Attributs et mise en page Outils/Options
- L’attribut <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> détermine le regroupement des pages d’options personnalisées en catégories dans l’arbre de navigation de la boîte de dialogue **Options.** L’attribut <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> associe une page d’options à l’emballage VS qui fournit l’interface. Prenons le fragment de code suivant :
+## <a name="toolsoptions-page-attributes-and-layout"></a>Mise en page et attributs des pages outils/options
+ L' <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> attribut détermine le regroupement des pages d’options personnalisées en catégories dans l’arborescence de navigation de la boîte de dialogue **options** . L' <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> attribut associe une page d’options au VSPackage qui fournit l’interface. Prenons le fragment de code suivant :
 
  [!code-csharp[VSSDKSupportForOptionsPages#2](../../extensibility/internals/codesnippet/CSharp/options-and-options-pages_2.cs)]
  [!code-vb[VSSDKSupportForOptionsPages#2](../../extensibility/internals/codesnippet/VisualBasic/options-and-options-pages_2.vb)]
 
- Cela déclare que MyPackage fournit deux pages d’options, OptionsPageGeneral et OptionsPageCustom. Dans la boîte de dialogue **Options,** les deux pages d’options apparaissent dans la catégorie **Pages Mes options** en tant que **générale** et **personnalisée,** respectivement.
+ Cela déclare que MyPackage fournit deux pages d’options, OptionsPageGeneral et OptionsPageCustom. Dans la boîte de dialogue **options** , les deux pages options s’affichent dans la catégorie **mes pages** d’options comme **général** et **personnalisé**, respectivement.
 
-## <a name="option-attributes-and-layout"></a>Attributs et mise en page d’options
- L’interface utilisateur (interface utilisateur) que la page fournit détermine l’apparence des options dans une page d’options personnalisées. La mise en page, l’étiquetage et la description des options dans une page d’options génériques sont déterminés par les attributs suivants :
+## <a name="option-attributes-and-layout"></a>Attributs et disposition des options
+ L’interface utilisateur (IU) fournie par la page détermine l’apparence des options dans une page d’options personnalisée. La disposition, l’étiquetage et la description des options d’une page d’options générique sont déterminés par les attributs suivants :
 
-- <xref:System.ComponentModel.CategoryAttribute>détermine la catégorie de l’option.
+- <xref:System.ComponentModel.CategoryAttribute> détermine la catégorie de l’option.
 
-- <xref:System.ComponentModel.DisplayNameAttribute>détermine le nom d’affichage de l’option.
+- <xref:System.ComponentModel.DisplayNameAttribute> détermine le nom complet de l’option.
 
-- <xref:System.ComponentModel.DescriptionAttribute>détermine la description de l’option.
+- <xref:System.ComponentModel.DescriptionAttribute> détermine la description de l’option.
 
   > [!NOTE]
-  > Attributs équivalents, SRCategory, LocDisplayName et SRDescription, utilisent les ressources de chaîne pour la localisation et sont définis dans [l’échantillon de projet géré.](/azure/devops/integrate/index)
+  > Les attributs équivalents, SRCategory, LocDisplayName et SRDescription, utilisent des ressources de type chaîne pour la localisation et sont définis dans l' [exemple de projet managé](/azure/devops/integrate/index).
 
   Prenons le fragment de code suivant :
 
   [!code-csharp[VSSDKSupportForOptionsPages#3](../../extensibility/internals/codesnippet/CSharp/options-and-options-pages_3.cs)]
   [!code-vb[VSSDKSupportForOptionsPages#3](../../extensibility/internals/codesnippet/VisualBasic/options-and-options-pages_3.vb)]
 
-  L’option OptionInteger apparaît sur la page d’options sous le titre **Integer Option** dans la catégorie **Mes options.** Si l’option est sélectionnée, la description, **Mon option d’intégration**, apparaît dans la boîte de description.
+  L’option OptionInteger s’affiche sur la page options sous forme d' **entier** dans la catégorie **mes options** . Si l’option est sélectionnée, l’option Description, **mon entier**, s’affiche dans la zone Description.
 
-## <a name="accessing-options-pages-from-another-vspackage"></a>Accès aux pages Options d’un autre VSPackage
- Un VSPackage qui héberge et gère une page d’options peut être programmée à partir d’un autre VSPackage en utilisant le modèle d’automatisation. Par exemple, dans le code suivant, un VSPackage est enregistré comme hébergeant une page d’option.
+## <a name="accessing-options-pages-from-another-vspackage"></a>Accès aux pages d’options à partir d’un autre VSPackage
+ Un VSPackage qui héberge et gère une page d’options peut être accessible par programmation à partir d’un autre VSPackage à l’aide du modèle Automation. Par exemple, dans le code suivant, un VSPackage est inscrit comme hébergeant une page d’options.
 
  [!code-csharp[VSSDKSupportForOptionsPages#4](../../extensibility/internals/codesnippet/CSharp/options-and-options-pages_4.cs)]
  [!code-vb[VSSDKSupportForOptionsPages#4](../../extensibility/internals/codesnippet/VisualBasic/options-and-options-pages_4.vb)]
 
- Le fragment de code suivant obtient la valeur d’OptionInteger de MyOptionPage :
+ Le fragment de code suivant obtient la valeur de OptionInteger à partir de MyOptionPage :
 
  [!code-csharp[VSSDKSupportForOptionsPages#5](../../extensibility/internals/codesnippet/CSharp/options-and-options-pages_5.cs)]
  [!code-vb[VSSDKSupportForOptionsPages#5](../../extensibility/internals/codesnippet/VisualBasic/options-and-options-pages_5.vb)]
 
- Lorsque <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> l’attribut enregistre une page d’options, la page est `SupportsAutomation` enregistrée sous `true`la clé AutomationProperties si l’argument de l’attribut est . Automation examine cette entrée de registre pour trouver le VSPackage associé, et l’automatisation accède ensuite à la propriété via la page d’options hébergée, dans ce cas, My Grid Page.
+ Lorsque l' <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> attribut inscrit une page d’options, la page est inscrite sous la clé AutomationProperties si l' `SupportsAutomation` argument de l’attribut est `true` . Automation examine cette entrée du Registre pour trouver le VSPackage associé et l’automatisation accède ensuite à la propriété via la page Options hébergées, dans le cas présent, ma page de grille.
 
- Le chemin de registre de la <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>propriété d’automatisation est déterminé en combinant, le mot, AutomationProperties, et la catégorie de page d’options et le nom. Par exemple, si la page d’options a la catégorie <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>Ma catégorie, le nom My Grid Page, et le , HKEY_LOCAL_MACHINE-MICROSOFT-Microsoft-VisualStudio-8.0Exp, alors la propriété d’automatisation a la clé de registre, HKEY_LOCAL_MACHINE-SOFTWARE-Microsoft-VisualStudio-8.0Exp-AutomationProperties-My Category-My Grid Page.
+ Le chemin d’accès au registre de la propriété Automation est déterminé par la combinaison <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A> , le mot, AutomationProperties et la catégorie et le nom de la page Options. Par exemple, si la page Options contient la catégorie ma catégorie, le nom de la page mon grille et le <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A> , HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\8.0exp, la propriété Automation a la clé de Registre, HKEY_LOCAL_MACHINE page de grille Category\My \software\microsoft\visualstudio\8.0exp\automationproperties\my.
 
 > [!NOTE]
-> Le nom canonique, My Category.My Grid Page, est la valeur de la sous-clé nom de cette clé.
+> Le nom canonique, ma page de grille Category.My, est la valeur de la sous-clé Name de cette clé.

@@ -1,5 +1,5 @@
 ---
-title: CONTEXT_INFO Microsoft Docs
+title: CONTEXT_INFO | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,10 +16,10 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4838df34c14b936af15b8a7a582a6d30ea12bee1
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737569"
 ---
 # <a name="context_info"></a>CONTEXT_INFO
@@ -53,37 +53,37 @@ public struct CONTEXT_INFO {
 
 ## <a name="members"></a>Membres
 `dwFields`\
-Une combinaison de drapeaux de lui [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) énumération qui spécifie quels champs sont remplis<strong>.</strong>
+Combinaison d’indicateurs de l’énumération [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) qui spécifie les champs à remplir<strong>.</strong>
 
 `bstrModuleUrl`\
-Le nom du module où se trouve le contexte.
+Nom du module dans lequel se trouve le contexte.
 
 `bstrFunction`\
-Le nom de fonction où se trouve le contexte.
+Nom de la fonction dans laquelle se trouve le contexte.
 
 `posFunctionOffset`\
-Une structure [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) qui identifie la ligne et la colonne offset de la fonction associée au contexte du code.
+Structure [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) qui identifie le décalage de ligne et de colonne de la fonction associée au contexte de code.
 
 `bstrAddress`\
-L’adresse dans le code où se trouve le contexte donné.
+Adresse dans le code où se trouve le contexte donné.
 
 `bstrAddressOffset`\
-La compensation de l’adresse dans le code où se trouve le contexte donné.
+Offset de l’adresse dans le code où se trouve le contexte donné.
 
 `bstrAddressAbsolute`\
-L’adresse absolue dans la mémoire où se trouve le contexte donné.
+Adresse absolue dans la mémoire où se trouve le contexte donné.
 
 ## <a name="remarks"></a>Notes
-Cette structure est revenue d’un appel à la méthode [GetInfo.](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)
+Cette structure est retournée à partir d’un appel à la méthode [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) .
 
-Une utilisation typique pour cette structure est à l’appui d’une fenêtre de débogé de **mémoire.**
+Une utilisation classique de cette structure est la prise en charge d’une fenêtre de débogage de la **mémoire** .
 
 ## <a name="requirements"></a>Spécifications
-En-tête: msdbg.h
+En-tête : msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Espace de noms : Microsoft. VisualStudio. Debugger. Interop
 
-Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Structures et unions](../../../extensibility/debugger/reference/structures-and-unions.md)

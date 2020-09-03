@@ -18,10 +18,10 @@ ms.author: corob
 ms.workload:
 - multiple
 ms.openlocfilehash: 0d8a171d393f629d0b6ab3a7fc61ad37862b0da1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77279266"
 ---
 # <a name="parallelcustombuild-task"></a>Tâche ParallelCustomBuild
@@ -36,8 +36,8 @@ Le tableau ci-dessous décrit les paramètres de la tâche **ParallelCustomBuild
 |---------------|-----------------|
 |**BreakOnFirstFailure**|Paramètre **booléen** facultatif.|
 |**MaxItemsInBatch**|Paramètre **Entier** facultatif.|
-|**MaxProcesses (en)**|Paramètre **Entier** facultatif.|
-|**récentes**|Paramètre **ITaskItem[]** requis.|
+|**MaxProcesses**|Paramètre **Entier** facultatif.|
+|**Sources**|Paramètre **ITaskItem []** obligatoire.|
 
 ## <a name="see-also"></a>Voir aussi
 

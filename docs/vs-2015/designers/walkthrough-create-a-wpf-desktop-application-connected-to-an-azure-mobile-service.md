@@ -10,10 +10,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 624fffb9c86a7ad874f27797dfd5251c8585870f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72664024"
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Procédure pas à pas : création d’une application de bureau WPF connectée à un service mobile Azure
@@ -21,7 +21,7 @@ ms.locfileid: "72664024"
 
 Vous pouvez utiliser Windows Presentation Foundation (WPF) pour créer rapidement une application de bureau moderne qui utilise un service mobile Azure pour stocker et fournir des données.
 
-## <a name="Requirements"></a> Composants requis
+## <a name="prerequisites"></a><a name="Requirements"></a> Conditions préalables
  Les éléments suivants sont nécessaires pour effectuer cette procédure pas à pas :
 
 - Visual Studio 2015 – toute version prenant en charge le développement WPF.
@@ -30,14 +30,14 @@ Vous pouvez utiliser Windows Presentation Foundation (WPF) pour créer rapidemen
 
   - Vous pouvez créer un compte d’évaluation gratuit [ici](https://azure.microsoft.com/pricing/free-trial/).
 
-  - Vous pouvez activer les [avantages pour les abonné MSDN](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F). Votre abonnement MSDN vous donne des crédits chaque mois utilisables pour les services Azure payants.
+  - Vous pouvez activer les [avantages pour les abonné MSDN](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F). Votre abonnement MSDN vous donne droit chaque mois à des crédits dont vous pouvez vous servir pour les services Azure payants.
 
 ## <a name="create-a-project-and-add-references"></a>Créer un projet et ajouter des références
  La première étape consiste à créer un projet WPF et ajouter un package NuGet permettant de se connecter à Azure Mobile Services.
 
 #### <a name="to-create-the-project"></a>Pour créer le projet
 
-1. Dans la barre de menus, sélectionnez **Fichier**, **Nouveau**, **Projet**.
+1. Dans le menu principal, sélectionnez **Fichier**, **Nouveau**, **Projet**.
 
 2. Dans la boîte de dialogue **Nouveau projet** , développez le nœud **Visual C#** ou **Visual Basic** et choisissez le nœud **Windows** , puis développez le nœud **Windows** et choisissez le nœud **Bureau classique** .
 
@@ -49,7 +49,7 @@ Vous pouvez utiliser Windows Presentation Foundation (WPF) pour créer rapidemen
 
 #### <a name="to-add-a-reference-to-the-windows-azure-mobile-services-sdk"></a>Pour ajouter une référence au kit de développement logiciel (SDK) Microsoft Azure Mobile Services
 
-1. Dans l’ **Explorateur de solutions**, ouvrez le menu contextuel du nœud **Références** et choisissez **Gérer les packages NuGet**.
+1. Dans **Explorateur de solutions**, ouvrez le menu contextuel du nœud **références** et choisissez **gérer les packages NuGet**.
 
 2. Dans la boîte de dialogue **Gestionnaire de package NuGet**, choisissez le champ **Rechercher** et entrez `mobileservices`.
 
@@ -204,7 +204,7 @@ Vous pouvez utiliser Windows Presentation Foundation (WPF) pour créer rapidemen
 
 #### <a name="to-create-and-modify-the-main-window"></a>Pour créer et modifier la fenêtre principale
 
-1. Dans l’ **Explorateur de solutions**, ouvrez le fichier **MainWindow.xaml** .
+1. Dans l’**Explorateur de solutions**, ouvrez le fichier **MainWindow.xaml**.
 
 2. **Important**. Cette étape concerne uniquement C#. Si vous utilisez Visual Basic, passez à l’étape suivante. Dans le volet inférieur du concepteur, recherchez la ligne `xmlns:local=”clr-namespace:WPFQuickStart”` et remplacez-la par le code XAML suivant :
 
@@ -285,7 +285,7 @@ Vous pouvez utiliser Windows Presentation Foundation (WPF) pour créer rapidemen
 
      À ce stade, la conception doit ressembler à l’illustration suivante :
 
-     ![MainWindow dans le concepteur](../designers/media/wpfquickstart2.PNG "WPFQuickStart2")
+     ![MainWindow dans le Concepteur](../designers/media/wpfquickstart2.PNG "WPFQuickStart2")
 
     > [!NOTE]
     > Pendant l’application des procédures suivantes, vous pouvez observer des erreurs dans la **Liste d’erreurs** , si elle est ouverte. Ne vous inquiétez pas, ces erreurs disparaissent à la fin des procédures restantes.
@@ -484,7 +484,7 @@ Vous pouvez utiliser Windows Presentation Foundation (WPF) pour créer rapidemen
     > [!NOTE]
     > Vous devez peut-être modifier la partie numérique de l’URL. Microsoft Azure nécessite une URL unique pour chaque service mobile.
 
-     Cela permet de définir l’URL du service sur `https://wpfquickstart01.azure-mobile.net/`.
+     Cela affecte à l’URL du service la valeur `https://wpfquickstart01.azure-mobile.net/` .
 
 4. Dans la liste **Base de données** , choisissez une option de base de données. Comme il s’agit d’une application qui ne sera probablement pas beaucoup utilisée, choisissez l’option **Créer une base de données SQL gratuite de 20 Mo** , ou choisissez la base de données gratuite déjà associée à votre abonnement.
 
@@ -555,7 +555,7 @@ Vous pouvez utiliser Windows Presentation Foundation (WPF) pour créer rapidemen
 
      Notez que les deux entrées sont ajoutées à la liste **Query and Update Data** , comme indiqué dans l’illustration suivante.
 
-     ![Les éléments todo sont ajoutés à la liste.](../designers/media/wpfquickstart3.PNG "WPFQuickStart3")
+     ![Les éléments TODO sont ajoutés à la liste.](../designers/media/wpfquickstart3.PNG "WPFQuickStart3")
 
 4. Cochez la case de l’entrée **Do something else** dans la liste.
 

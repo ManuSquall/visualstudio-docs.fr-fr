@@ -1,5 +1,5 @@
 ---
-title: BSTR_ARRAY Microsoft Docs
+title: BSTR_ARRAY | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 7e9859267cc26ec012852a1150e458c81383dfd3
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737710"
 ---
 # <a name="bstr_array"></a>BSTR_ARRAY
-Une structure qui décrit un tableau de cordes.
+Structure qui décrit un tableau de chaînes.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -43,22 +43,22 @@ struct BSTR_ARRAY {
 
 ## <a name="members"></a>Membres
 `dwCount`\
-Nombre de cordes `Members` dans le tableau.
+Nombre de chaînes dans le `Members` tableau.
 
 `Members`\
-Array de cordes.
+Tableau de chaînes.
 
 ## <a name="remarks"></a>Notes
-Cette structure est revenue de la méthode [EnumPersistedPorts.](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)
+Cette structure est retournée par la méthode [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md) .
 
- [C seulement] Chaque chaîne individuelle doit `SysFreeString`être `Members` libérée à l’aide, et le tableau doit être libéré avec `CoTaskMemFree`.
+ [C++ uniquement] Chaque chaîne individuelle doit être libérée à l’aide de `SysFreeString` , et le `Members` tableau doit être libéré avec `CoTaskMemFree` .
 
-## <a name="requirements"></a>Spécifications
-En-tête: msdbg.h
+## <a name="requirements"></a>Configuration requise
+En-tête : msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Espace de noms : Microsoft. VisualStudio. Debugger. Interop
 
-Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Structures et unions](../../../extensibility/debugger/reference/structures-and-unions.md)

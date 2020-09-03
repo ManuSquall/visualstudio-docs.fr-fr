@@ -1,5 +1,5 @@
 ---
-title: BP_UNBOUND_REASON Microsoft Docs
+title: BP_UNBOUND_REASON | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b0ee695e1108bf9f1c6069084a0826ee23bf37d4
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737774"
 ---
 # <a name="bp_unbound_reason"></a>BP_UNBOUND_REASON
-Donne la raison pour laquelle un point d’arrêt n’était pas lié.
+Indique la raison pour laquelle un point d’arrêt a été indépendant.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -54,20 +54,20 @@ La raison est inconnue.
 Le code qui contient le point d’arrêt a été déchargé.
 
 `BPUR_BREAKPOINT_REBIND`\
-Le point d’arrêt a été rebondir à un endroit différent. Cela peut se produire après modifier et poursuivre les opérations lorsque le point d’arrêt se déplace, ou lorsque le point d’arrêt est lié à un fichier avec un chemin qui n’est plus valide.
+Le point d’arrêt a été relié à un autre emplacement. Cela peut se produire après les opérations Modifier & Continuer au déplacement du point d’arrêt ou lorsque le point d’arrêt est lié à un fichier avec un chemin d’accès qui n’est plus valide.
 
 `BPUR_ BREAKPOINT_ERROR`\
-Le point d’arrêt est déterminé à être dans l’erreur après qu’il soit lié. Il arrive que les points d’arrêt gérés dont les conditions ne soient plus valables.
+Le point d’arrêt est déterminé comme étant une erreur une fois qu’il est lié. Cela se produit dans les points d’arrêt gérés dont les conditions ne sont plus valides.
 
 ## <a name="remarks"></a>Notes
-Retourné par la méthode [GetReason.](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)
+Retourné par la méthode [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) .
 
-## <a name="requirements"></a>Spécifications
-En-tête: msdbg.h
+## <a name="requirements"></a>Configuration requise
+En-tête : msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Espace de noms : Microsoft. VisualStudio. Debugger. Interop
 
-Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

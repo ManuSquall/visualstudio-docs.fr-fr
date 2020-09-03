@@ -1,5 +1,5 @@
 ---
-title: BPREQI_FIELDS Microsoft Docs
+title: BPREQI_FIELDS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4c0e10b6c253c61a9e68e0cf161201f7d2520ae6
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737751"
 ---
 # <a name="bpreqi_fields"></a>BPREQI_FIELDS
-Spécifie les informations à récupérer au sujet d’une demande de point d’arrêt.
+Spécifie les informations à récupérer sur une demande de point d’arrêt.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -68,60 +68,60 @@ public enum enum_BPREQI_FIELDS {
 
 ## <a name="fields"></a>Champs
 `BPREQI_BPLOCATION`\
-Initialiser/utiliser `bpLocation` le champ (emplacement de point d’arrêt) de la structure [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) ou [BP_REQUEST_INFO2.](../../../extensibility/debugger/reference/bp-request-info2.md)
+Initialisez/utilisez le `bpLocation` champ (emplacement du point d’arrêt) de la structure [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) ou [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) .
 
 `BPREQI_LANGUAGE`\
-Initialiser/utiliser `guidLanguage` le champ `BP_REQUEST_INFO` `BP_REQUEST_INFO2` de la structure ou de la structure.
+Initialisez/utilisez le `guidLanguage` champ de la `BP_REQUEST_INFO` `BP_REQUEST_INFO2` structure ou.
 
 `BPREQI_PROGRAM`\
-Initialiser/utiliser `pProgram` le champ `BP_REQUEST_INFO` `BP_REQUEST_INFO2` de la structure ou de la structure.
+Initialisez/utilisez le `pProgram` champ de la `BP_REQUEST_INFO` `BP_REQUEST_INFO2` structure ou.
 
 `BPREQI_PROGRAMNAME`\
-Initialiser/utiliser `bstrProgramName` le champ `BP_REQUEST_INFO` `BP_REQUEST_INFO2` de la structure ou de la structure.
+Initialisez/utilisez le `bstrProgramName` champ de la `BP_REQUEST_INFO` `BP_REQUEST_INFO2` structure ou.
 
 `BPREQI_THREAD`\
-Initialiser/utiliser `pThread` le champ `BP_REQUEST_INFO` `BP_REQUEST_INFO2` de la structure ou de la structure.
+Initialisez/utilisez le `pThread` champ de la `BP_REQUEST_INFO` `BP_REQUEST_INFO2` structure ou.
 
 `BPREQI_THREADNAME`\
-Initialiser/utiliser `bstrThreadName` le champ `BP_REQUEST_INFO` `BP_REQUEST_INFO2` de la structure ou de la structure.
+Initialisez/utilisez le `bstrThreadName` champ de la `BP_REQUEST_INFO` `BP_REQUEST_INFO2` structure ou.
 
 `BPREQI_PASSCOUNT`\
-Initialiser/utiliser `bpPassCount` le champ `BP_REQUEST_INFO` `BP_REQUEST_INFO2` de la structure ou de la structure.
+Initialisez/utilisez le `bpPassCount` champ de la `BP_REQUEST_INFO` `BP_REQUEST_INFO2` structure ou.
 
 `BPREQI_CONDITION`\
-Initialiser/utiliser `bpCondition` le champ (état de `BP_REQUEST_INFO` `BP_REQUEST_INFO2` rupture) de la structure ou.
+Initialisez/utilisez le `bpCondition` champ (condition de point d’arrêt) de la `BP_REQUEST_INFO` `BP_REQUEST_INFO2` structure ou.
 
 `BPREQI_FLAGS`\
-Initialiser/utiliser `dwFlags` le champ `BP_REQUEST_INFO` `BP_REQUEST_INFO2` de la structure ou de la structure.
+Initialisez/utilisez le `dwFlags` champ de la `BP_REQUEST_INFO` `BP_REQUEST_INFO2` structure ou.
 
 `BPREQI_ALLOLDFIELDS`\
-Initialiser/utiliser tous les champs `BP_REQUEST_INFO` pour la structure.
+Initialisez/Utilisez tous les champs pour le de la `BP_REQUEST_INFO` structure.
 
 `BPREQI_VENDOR`\
-Initialiser/utiliser `guidVendor` le `BP_REQUEST_INFO2` champ de structure.
+Initialisez/utilisez le `guidVendor` champ de la `BP_REQUEST_INFO2` structure.
 
 `BPREQI_CONSTRAINT`\
-Initialiser/utiliser `bstrConstraint` le `BP_REQUEST_INFO2` champ de structure.
+Initialisez/utilisez le `bstrConstraint` champ de la `BP_REQUEST_INFO2` structure.
 
 `BPREQI_TRACEPOINT`\
-Initialiser/utiliser `bstrTracepoint` le `BP_REQUEST_INFO2` champ de structure.
+Initialisez/utilisez le `bstrTracepoint` champ de la `BP_REQUEST_INFO2` structure.
 
 `BPREQI_ALLFIELDS`\
-Spécifie tous `BP_REQUEST_INFO2` les champs pour la structure.
+Spécifie tous les champs de la `BP_REQUEST_INFO2` structure.
 
 ## <a name="remarks"></a>Notes
-Passé comme argument au [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) et [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) méthodes pour préciser quels domaines des structures [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) et [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) doivent être paralés.
+Passé comme argument aux méthodes [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) et [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) pour spécifier les champs des structures [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) et [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) à initialiser.
 
-Ces drapeaux sont également utilisés pour `BP_REQUEST_INFO` `BP_REQUEST_INFO2` indiquer quels champs de la structure et les structures sont utilisés et valides lorsque chaque structure est retournée.
+Ces indicateurs sont également utilisés pour indiquer les champs des `BP_REQUEST_INFO` structures et qui `BP_REQUEST_INFO2` sont utilisés et valides lorsque chaque structure est retournée.
 
-Ces valeurs peuvent être combinées avec un peu plus. `OR`
+Ces valeurs peuvent être combinées avec une opération de bits `OR` .
 
-## <a name="requirements"></a>Spécifications
-En-tête: msdbg.h
+## <a name="requirements"></a>Configuration requise
+En-tête : msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Espace de noms : Microsoft. VisualStudio. Debugger. Interop
 
-Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

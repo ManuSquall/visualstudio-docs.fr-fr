@@ -1,5 +1,5 @@
 ---
-title: CONST_GUID_ARRAY Microsoft Docs
+title: CONST_GUID_ARRAY | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c0021ef24e0cafec0119263d2c74175f0d38d784
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80737634"
 ---
 # <a name="const_guid_array"></a>CONST_GUID_ARRAY
-Une structure qui contient `GUID`une liste de s.
+Structure qui contient une liste de `GUID` s.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -43,22 +43,22 @@ public struct CONST_GUID_ARRAY {
 
 ## <a name="members"></a>Membres
 `dwCount`\
-Nombre `GUID`de s `Members` dans le tableau.
+Nombre de `GUID` s dans le `Members` tableau.
 
 `Members`\
-Array `GUID`de s.
+Tableau de `GUID` .
 
 ## <a name="remarks"></a>Notes
-Cette structure est transmise à la méthode [PublishProgram,](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) et est retournée des méthodes [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) et [WatchForProviderEvents.](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)
+Cette structure est transmise à la méthode [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) et est retournée par les méthodes [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) et [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md) .
 
-Le propriétaire d’une instance de cette structure est responsable de la libération de toute mémoire allouée.
+Le propriétaire d’une instance de cette structure est responsable de la libération de la mémoire allouée.
 
-## <a name="requirements"></a>Spécifications
-En-tête: msdbg.h
+## <a name="requirements"></a>Configuration requise
+En-tête : msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Espace de noms : Microsoft. VisualStudio. Debugger. Interop
 
-Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Structures et unions](../../../extensibility/debugger/reference/structures-and-unions.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::Compare | Microsoft Docs
+title: 'IDebugReference2 :: compare | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 41b183baa00f86c7a6e54d35b6188cd8c04946b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "68182495"
 ---
 # <a name="idebugreference2compare"></a>IDebugReference2::Compare
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Compare une référence à un autre. Réservé à un usage ultérieur.  
+Compare une référence à une autre. Réservé à un usage ultérieur.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -42,12 +42,12 @@ int Compare ( 
   
 #### <a name="parameters"></a>Paramètres  
  `dwCompare`  
- [in] Une valeur comprise entre le [REFERENCE_COMPARE](../../../extensibility/debugger/reference/reference-compare.md) énumération qui spécifie l’opération de comparaison, par exemple, égale à, inférieur à ou supérieure à.  
+ dans Valeur de l’énumération [REFERENCE_COMPARE](../../../extensibility/debugger/reference/reference-compare.md) qui spécifie l’opération de comparaison, par exemple, égal à, inférieur à ou supérieur à.  
   
  `pReference`  
- [in] Un [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objet représentant la référence à comparer.  
+ dans Objet [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) représentant la référence à comparer à.  
   
-## <a name="return-value"></a>Valeur de retour  
+## <a name="return-value"></a>Valeur renvoyée  
  Retourne toujours `E_NOTIMPL`.  
   
 ## <a name="see-also"></a>Voir aussi  
