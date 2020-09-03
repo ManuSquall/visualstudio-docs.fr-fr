@@ -9,13 +9,13 @@ caps.latest.revision: 11
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a1c1f4c746fa505b50bab9caa7a516a2abc77f69
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672210"
 ---
-# <a name="sample-excel-extension-extensionpackage-class"></a>Exemple d'extension Excel : classe ExtensionPackage
+# <a name="sample-excel-extension-extensionpackage-class"></a>Exemple d’extension Excel : classe ExtensionPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette classe étend la classe <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage> et fournit le point d’entrée pour un test codé de l’interface utilisateur qui teste une feuille de calcul [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)].
@@ -39,4 +39,4 @@ Cette classe étend la classe <xref:Microsoft.VisualStudio.TestTools.UITest.Exte
  La méthode <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage.GetService%2A> est le point d’entrée unique utilisé par le framework de test codé de l’interface utilisateur pour accéder au gestionnaire de technologies, au fournisseur de propriétés et au filtre d’action, tels qu’ils sont identifiés par la classe de base de chaque objet.
 
 ## <a name="see-also"></a>Voir aussi
- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage> [l’extension des tests codés de l’interface utilisateur et des enregistrements des actions pour prendre en charge Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
+ <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage> [Extension des tests codés de l'interface utilisateur t enregistrements des actions pour prendre charge Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)

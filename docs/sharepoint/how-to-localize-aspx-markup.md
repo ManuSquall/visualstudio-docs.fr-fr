@@ -14,13 +14,14 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 63bd8ee614a78752069002820689a2cc6c0be783
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016283"
 ---
 # <a name="how-to-localize-aspx-markup"></a>Comment : localiser le balisage ASPX
-  [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]les pages (. aspx) utilisent généralement des valeurs de chaîne codées en dur. Pour localiser ces chaînes, remplacez-les par des expressions qui référencent des ressources localisées.
+  [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] les pages (. aspx) utilisent généralement des valeurs de chaîne codées en dur. Pour localiser ces chaînes, remplacez-les par des expressions qui référencent des ressources localisées.
 
 ## <a name="localize-aspx-markup"></a>Localiser le balisage ASPX
 
@@ -59,7 +60,7 @@ ms.locfileid: "86016283"
     </asp:Content>
     ```
 
-     to
+     par celle-ci :
 
     ```aspx-csharp
     <asp:Content ID="Main" ContentPlaceHolderID="PlaceHolderMain" runat="server">

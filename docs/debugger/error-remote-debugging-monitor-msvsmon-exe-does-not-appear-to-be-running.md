@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6ba7fb30bcb5ac04a823b4ba654382ac23a966fe
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85460609"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>Erreur : Microsoft Visual Studio Remote Debugging Monitor (MSVSMON.EXE) ne semble pas s’exécuter sur l’ordinateur distant
@@ -70,7 +70,7 @@ Ce message d’erreur indique que Visual Studio n’a pas pu trouver l’instanc
  Dans ce cas, vous devrez peut-être procéder au débogage distant ultérieurement ou replanifier le travail sur le réseau à une heure différente.
 
 ## <a name="more-help"></a>Aide supplémentaire
- Pour obtenir de l’aide sur le débogueur distant, y compris sur les commutateurs de ligne de commande, cliquez sur **aide > l’utilisation** dans la fenêtre du débogueur distant. Si vous ne l’avez pas ouvert, vous pouvez voir la page Web en copiant la ligne suivante dans une fenêtre de l' **Explorateur de fichiers** . (Vous devez remplacer \<Visual Studio installation directory> par l’emplacement de votre installation de Visual Studio.)
+ Pour obtenir de l’aide sur le débogueur distant, y compris sur les commutateurs de ligne de commande, cliquez sur **aide > l’utilisation** dans la fenêtre du débogueur distant. Si vous ne l’avez pas ouvert, vous pouvez voir la page Web en copiant la ligne suivante dans une fenêtre de l'  **Explorateur de fichiers** . (Vous devez remplacer \<Visual Studio installation directory> par l’emplacement de votre installation de Visual Studio.)
 
  res:// *\<Visual Studio installation directory>* \Common7\IDE\Remote% 20Debugger\x64\msvsmon.exe/help.htm
 

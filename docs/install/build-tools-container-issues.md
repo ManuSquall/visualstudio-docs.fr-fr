@@ -13,10 +13,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: a864f1ef623197a44c7d816b051efd0106e86ece
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77611127"
 ---
 # <a name="known-issues-for-containers"></a>Problèmes connus liés aux conteneurs
@@ -54,7 +54,7 @@ Les problèmes connus suivants peuvent se produire lorsque vous utilisez un cont
 
 * L’utilisation d’IntelliTrace au sein d’un conteneur peut ne pas fonctionner dans [certains scénarios](https://github.com/Microsoft/vstest/issues/940).
 * Dans les versions antérieures de Docker pour Windows, la taille des images du conteneur par défaut est de seulement 20 Go et n’ajuste pas Build Tools. Suivez [instructions pour modifier la taille des images](/virtualization/windowscontainers/manage-containers/container-storage#storage-limits) à 127 Go ou plus.
-Pour confirmer un problème d’espace de disque, vérifiez les fichiers journal pour plus d’informations. Votre `vslogs\dd_setup_<timestamp>_errors.log` fichier inclura ce qui suit si vous n’avez plus d’espace disque : 
+Pour confirmer un problème d’espace disque, consultez les fichiers journaux pour plus d’informations. Votre `vslogs\dd_setup_<timestamp>_errors.log` fichier inclut les éléments suivants si l’espace disque est insuffisant : 
 ```
 Pre-check verification: Visual Studio needs at least 91.99 GB of disk space. Try to free up space on C:\ or change your target drive.
 Pre-check verification failed with error(s) :  SizePreCheckEvaluator.
@@ -63,6 +63,6 @@ Pre-check verification failed with error(s) :  SizePreCheckEvaluator.
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Installer des outils de construction dans un conteneur](build-tools-container.md)
+* [Installer Build Tools dans un conteneur](build-tools-container.md)
 * [Exemple avancé pour les conteneurs](advanced-build-tools-container.md)
 * [ID de composant et de charge de travail de Visual Studio Build Tools](workload-component-id-vs-build-tools.md)

@@ -12,19 +12,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 34394ba35a349a1564f6c3fdd43052be3e1fdf03
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "77633107"
 ---
 # <a name="msbuild-transforms"></a>Transformations MSBuild
 
-Une transformation est une conversion de type un-à-un d’une liste d’éléments en une autre. En plus de permettre à un projet de convertir des listes d’éléments, une transformation permet à une cible d’identifier un mappage direct entre ses entrées et ses sorties. Ce sujet explique les transformations et la façon dont MSBuild les utilise pour construire des projets plus efficacement.
+Une transformation est une conversion de type un-à-un d’une liste d’éléments en une autre. En plus de permettre à un projet de convertir des listes d’éléments, une transformation permet à une cible d’identifier un mappage direct entre ses entrées et ses sorties. Cette rubrique explique les transformations et la façon dont MSBuild les utilise pour générer des projets plus efficacement.
 
 ## <a name="transform-modifiers"></a>Modificateurs de transformation
 
-Les transformations ne sont pas arbitraires, mais elles sont limitées par une syntaxe spéciale dans laquelle tous les modificateurs de transformation doivent être au format %(\<ItemMetaDataName>). Toutes les métadonnées d’élément peuvent être utilisées comme modificateurs de transformation, y compris les métadonnées d’élément connues affectées à chaque élément lors de sa création. Pour une liste de métadonnées d’objets bien connues, voir [métadonnées d’objets bien connues](../msbuild/msbuild-well-known-item-metadata.md).
+Les transformations ne sont pas arbitraires, mais sont limitées par une syntaxe spéciale dans laquelle tous les modificateurs de transformation doivent être au format%( \<ItemMetaDataName> ). Toutes les métadonnées d’élément peuvent être utilisées comme modificateurs de transformation, y compris les métadonnées d’élément connues affectées à chaque élément lors de sa création. Pour obtenir la liste des métadonnées d’éléments connus, consultez [métadonnées d’éléments connus](../msbuild/msbuild-well-known-item-metadata.md).
 
 Dans l’exemple suivant, une liste de fichiers *.resx* est transformée en liste de fichiers *.resources*. Le modificateur de transformation %(filename) spécifie que chaque fichier *.resources* a le même nom de fichier que le fichier *.resx* correspondant.
 
@@ -49,9 +49,9 @@ Par exemple, si les éléments de la liste d’éléments @(RESXFile) sont *Form
 
 ## <a name="dependency-analysis"></a>Analyse des dépendances
 
- Les transformations garantissent un mappage de type un-à-un entre la liste d’éléments transformée et la liste d’éléments d’origine. Par conséquent, si une cible crée des extrants qui transforment les entrées, MSBuild peut analyser les délais des entrées et des sorties, et décider s’il faut sauter, construire ou reconstruire partiellement une cible.
+ Les transformations garantissent un mappage de type un-à-un entre la liste d’éléments transformée et la liste d’éléments d’origine. Par conséquent, si une cible crée des sorties qui sont des transformations des entrées, MSBuild peut analyser les horodateurs des entrées et des sorties, et décider s’il faut ignorer, générer ou regénérer partiellement une cible.
 
- Dans la [tâche De copie](../msbuild/copy-task.md) dans l’exemple suivant, chaque fichier dans les `BuiltAssemblies` cartes de liste d’éléments à un fichier dans le dossier de destination de la tâche, spécifié en utilisant une transformation de l’attribut. `Outputs` Si un fichier de la liste d’éléments `BuiltAssemblies` change, la tâche `Copy` s’exécute uniquement pour le fichier modifié. Tous les autres fichiers sont ignorés. Pour plus d’informations sur l’analyse de la dépendance et la façon d’utiliser les transformations, voir [Comment: Construire progressivement](../msbuild/how-to-build-incrementally.md).
+ Dans l’exemple suivant, dans la [tâche de copie](../msbuild/copy-task.md) , chaque fichier de la liste d' `BuiltAssemblies` éléments est mappé à un fichier dans le dossier de destination de la tâche, spécifié à l’aide d’une transformation dans l' `Outputs` attribut. Si un fichier de la liste d’éléments `BuiltAssemblies` change, la tâche `Copy` s’exécute uniquement pour le fichier modifié. Tous les autres fichiers sont ignorés. Pour plus d’informations sur l’analyse des dépendances et sur l’utilisation des transformations, consultez [Comment : générer de façon incrémentielle](../msbuild/how-to-build-incrementally.md).
 
 ```xml
 <Target Name="CopyOutputs"
@@ -65,11 +65,11 @@ Par exemple, si les éléments de la liste d’éléments @(RESXFile) sont *Form
 </Target>
 ```
 
-## <a name="example"></a> Exemple
+## <a name="example"></a>Exemple
 
 ### <a name="description"></a>Description
 
- L’exemple suivant montre un fichier de projet MSBuild qui utilise des transformations. Cet exemple suppose qu’il n’y a qu’un seul fichier *.xsd* dans *l’annuaire c:-sub1-sub2-sub2,3,* et que l’annuaire de travail est *c:-sub0*.
+ L’exemple suivant montre un fichier projet MSBuild qui utilise des transformations. Cet exemple suppose qu’il n’existe qu’un seul fichier *. xsd* dans le répertoire *c:\sub0\sub1\sub2\sub3* et que le répertoire de travail est *c:\sub0*.
 
 ### <a name="code"></a>Code
 
@@ -110,5 +110,5 @@ extension: .xsd
 ## <a name="see-also"></a>Voir aussi
 
 - [Concepts MSBuild](../msbuild/msbuild-concepts.md)
-- [Référence MSBuild](../msbuild/msbuild-reference.md)
-- [Comment : Construire progressivement](../msbuild/how-to-build-incrementally.md)
+- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)
+- [Comment : générer de façon incrémentielle](../msbuild/how-to-build-incrementally.md)

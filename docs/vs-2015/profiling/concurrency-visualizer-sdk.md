@@ -12,10 +12,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ed93d852e385a6130cd37b0f66c99b4f0ab467bc
-ms.sourcegitcommit: da5ebc29544fdbdf625ab4922c9777faf2bcae4a
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "82586801"
 ---
 # <a name="concurrency-visualizer-sdk"></a>Kit de développement logiciel (SDK) du visualiseur concurrentiel
@@ -84,7 +84,7 @@ En C#, en Visual Basic et dans tout autre code managé, utilisez le fournisseur 
 
 #### <a name="to-use-a-new-marker-provider-in-a-c-or-c-project"></a>Pour utiliser un nouveau fournisseur de marqueurs dans un projet C++ ou C
 
-1. Utilisez la fonction `CvInitProvider` pour initialiser un PCV_PROVIDER. Le constructeur prend un GUID * et PCV_PROVIDER\*.
+1. Utilisez la fonction `CvInitProvider` pour initialiser un PCV_PROVIDER. Le constructeur prend un GUID * et PCV_PROVIDER \* .
 
 2. Pour inscrire le fournisseur, ouvrez la boîte de dialogue [Paramètres avancés](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md). Sélectionnez l’onglet **Marqueurs**, puis cliquez sur le bouton **Ajouter un nouveau fournisseur**. Dans la boîte de dialogue, entrez le GUID qui a été utilisé pour créer le fournisseur, ainsi que la description du fournisseur.
 
@@ -123,7 +123,7 @@ En C#, en Visual Basic et dans tout autre code managé, utilisez le fournisseur 
 
 ## <a name="related-topics"></a>Rubriques connexes
 
-|Intitulé|Description|
+|Titre|Description|
 |-----------|-----------------|
 |[Informations de référence sur la bibliothèque C++](../profiling/cpp-library-reference.md)|Décrit l’API du visualiseur concurrentiel pour le langage C++.|
 |[Informations de référence sur la bibliothèque C](../profiling/c-library-reference.md)|Décrit l’API du visualiseur concurrentiel pour le langage C.|

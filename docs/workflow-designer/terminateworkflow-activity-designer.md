@@ -11,15 +11,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 078dfb43b5960580327448627a30eec20297d9f3
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76111778"
 ---
 # <a name="terminateworkflow-activity-designer"></a>Concepteur d'activités TerminateWorkflow
 
-Le concepteur d’activités **TerminateWorkflow** permet de créer et de configurer une activité <xref:System.Activities.Statements.TerminateWorkflow>.
+Le concepteur d’activités **TerminateWorkflow** permet de créer et de configurer une <xref:System.Activities.Statements.TerminateWorkflow> activité.
 
 ## <a name="the-terminateworkflow-activity"></a>Activité TerminateWorkflow
 
@@ -29,13 +29,13 @@ L'activité <xref:System.Activities.Statements.TerminateWorkflow> termine l'exé
 
 Le concepteur d’activités **TerminateWorkflow** se trouve dans la catégorie **Runtime** de la **boîte à outils**, accessible en cliquant sur l’onglet **boîte à outils** (ou en sélectionnant **boîte à outils** dans le menu **affichage** , ou encore en appuyant sur CTRL + ALT + X).
 
-Le concepteur d’activités **TerminateWorkflow** peut être déplacé de la **boîte à outils** et déposé dans l’aire de concepteur de flux de travail, là où les activités sont généralement placées, par exemple dans une <xref:System.Activities.Statements.Sequence>. Cela crée une activité <xref:System.Activities.Statements.TerminateWorkflow> avec un **DisplayName** par défaut de TerminateWorkflow. La <xref:System.Activities.Activity.DisplayName%2A> peut être modifiée dans l’en-tête du concepteur d’activités **TerminateWorkflow** ou dans la zone **DisplayName** de la grille des propriétés.
+Le concepteur d’activités **TerminateWorkflow** peut être déplacé de la **boîte à outils** et déposé dans l’aire de concepteur de flux de travail, là où les activités sont généralement placées, par exemple dans un <xref:System.Activities.Statements.Sequence> . Cette opération crée une <xref:System.Activities.Statements.TerminateWorkflow> activité avec un **DisplayName** par défaut de TerminateWorkflow. La <xref:System.Activities.Activity.DisplayName%2A> propriété peut être modifiée dans l’en-tête du concepteur d’activités **TerminateWorkflow** ou dans la zone **DisplayName** de la grille des propriétés.
 
 ### <a name="the-terminateworkflow-properties"></a>Propriétés de TerminateWorkflow
 
 Le tableau suivant présente les propriétés de <xref:System.Activities.Statements.TerminateWorkflow> et décrit comment elles sont utilisées dans le concepteur. Ces propriétés peuvent être modifiées dans la grille des propriétés et certaines d’entre elles peuvent être modifiées sur Concepteur de flux de travail surface.
 
-|Nom de propriété|Obligatoire|Contrôle|
+|Nom de la propriété|Obligatoire|Usage|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Nom convivial de l'activité <xref:System.Activities.Statements.TerminateWorkflow>. La valeur par défaut est TerminateWorkflow. Bien que le nom complet ne soit pas strictement obligatoire, la meilleure pratique consiste à l'utiliser.|
 |<xref:System.Activities.Statements.TerminateWorkflow.Exception%2A>|False|Exception à lever lorsque le workflow est terminé. Définissez cette propriété dans la grille des propriétés.|
@@ -44,4 +44,4 @@ Le tableau suivant présente les propriétés de <xref:System.Activities.Stateme
 ## <a name="see-also"></a>Voir aussi
 
 - [Runtime](../workflow-designer/runtime-activity-designers.md)
-- [Persist](../workflow-designer/persist-activity-designer.md)
+- [Conserver](../workflow-designer/persist-activity-designer.md)

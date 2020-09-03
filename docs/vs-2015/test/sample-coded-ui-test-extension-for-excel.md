@@ -11,13 +11,13 @@ caps.latest.revision: 15
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: e0c6075f9f95f7dc1d21db91936cf35c76f9b2e5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672230"
 ---
-# <a name="sample-coded-ui-test-extension-for-excel"></a>Exemple d’extension du test codé de l’interface utilisateur pour Excel
+# <a name="sample-coded-ui-test-extension-for-excel"></a>Exemple d’extension du test codé de l’interface utilisateur pur Excel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Le composant d’extension de l’exemple s’exécute dans le processus de test codé de l’interface utilisateur [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] et entretient une sorte de lien hiérarchique avec la classe `ExtensionPackage` située à la base. Les classes `TechnologyManager`, `ActionFilter` et `PropertyProvider` sont au niveau suivant, les éléments de contrôle étant au niveau supérieur.
@@ -47,8 +47,8 @@ Le composant d’extension de l’exemple s’exécute dans le processus de test
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>
-- [ExtensionPackage, classe](../test/sample-excel-extension-extensionpackage-class.md)
-- [TechnologyManager, classe](../test/sample-excel-extension-technologymanager-class.md)
-- [ActionFilter, classe](../test/sample-excel-extension-actionfilter-class.md)
+- [Classe ExtensionPackage](../test/sample-excel-extension-extensionpackage-class.md)
+- [Classe TechnologyManager](../test/sample-excel-extension-technologymanager-class.md)
+- [Classe ActionFilter](../test/sample-excel-extension-actionfilter-class.md)
 - [Classes d’éléments](../test/sample-excel-extension-element-classes.md)
-- [PropertyProvider, classe](../test/sample-excel-extension-propertyprovider-class.md)
+- [Classe PropertyProvider](../test/sample-excel-extension-propertyprovider-class.md)

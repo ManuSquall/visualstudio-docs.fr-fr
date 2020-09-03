@@ -17,10 +17,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3d7abeeec4a640119e3089c795ac529a10f8dc09
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "84182623"
 ---
 # <a name="clickonce-cache-overview"></a>Vue d’ensemble du cache ClickOnce
@@ -29,7 +29,7 @@ Toutes les [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] app
  En fournissant un emplacement unique pour le stockage des applications, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] prend la tâche de gérer l’installation physique d’une application à partir de l’utilisateur. Le cache permet également d’isoler les applications en conservant les assemblys et les fichiers de données pour toutes les applications et leurs versions distinctes séparément les unes des autres. Par exemple, lorsque vous mettez à niveau une [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application, cette version et ses ressources de données sont fournies avec leurs propres répertoires dans le cache.
 
 ## <a name="cache-storage-quota"></a>Quota de stockage de cache
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]les applications hébergées en ligne sont limitées dans la quantité d’espace qu’ils peuvent occuper par un quota qui limite la taille du [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] cache. La taille du cache s’applique à toutes les applications en ligne de l’utilisateur. une seule application en ligne de confiance partielle est limitée à la moitié de l’espace de quota. Les applications installées ne sont pas limitées par la taille du cache et ne sont pas comptabilisées par rapport à la limite du cache. Pour toutes les [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applications, le cache conserve uniquement la version actuelle et la version installée précédemment.
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] les applications hébergées en ligne sont limitées dans la quantité d’espace qu’ils peuvent occuper par un quota qui limite la taille du [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] cache. La taille du cache s’applique à toutes les applications en ligne de l’utilisateur. une seule application en ligne de confiance partielle est limitée à la moitié de l’espace de quota. Les applications installées ne sont pas limitées par la taille du cache et ne sont pas comptabilisées par rapport à la limite du cache. Pour toutes les [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applications, le cache conserve uniquement la version actuelle et la version installée précédemment.
 
  Par défaut, les ordinateurs clients disposent de 250 Mo de stockage pour les applications en ligne [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . Les fichiers de données ne sont pas comptabilisés dans cette limite. Un administrateur système peut agrandir ou réduire ce quota sur un ordinateur client particulier en modifiant la clé de Registre **HKEY_CURRENT_USER \software\classes\software\microsoft\windows\currentversion\deployment\onlineappquotainkb**, qui est une valeur DWORD qui exprime la taille du cache en kilo-octets. Par exemple, pour réduire la taille du cache à 50 Mo, vous devez remplacer cette valeur par 51200.
 

@@ -11,10 +11,10 @@ dev_langs:
 - CSharp
 - VB
 ms.openlocfilehash: 1d66dcd0a59edfbfb199a68f81ecebe608afccb1
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85289051"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Utiliser des stubs pour isoler des parties de votre application les unes des autres pour des tests unitaires
@@ -218,7 +218,7 @@ Les stubs sont également générés pour les accesseurs Get et les méthodes se
 
 ### <a name="verify-parameter-values"></a>Vérifier les valeurs de paramètre
 
-Vous pouvez vérifier cela lorsque votre composant fait un appel à un autre composant : il passe les valeurs correctes. Vous pouvez placer une assertion dans le stub ou stocker la valeur et la vérifier dans le corps principal du test. Par exemple :
+Vous pouvez vérifier cela lorsque votre composant fait un appel à un autre composant : il passe les valeurs correctes. Vous pouvez placer une assertion dans le stub ou stocker la valeur et la vérifier dans le corps principal du test. Par exemple :
 
 ```csharp
 [TestClass]
@@ -390,7 +390,7 @@ Si le code devait appeler `GetValue<T>` avec une autre instanciation, le stub ap
 
 ### <a name="stubs-of-virtual-classes"></a>Stubs de classes virtuelles
 
-Dans les exemples précédents, les stubs ont été générés à partir d'interfaces. Vous pouvez également générer les stubs à partir d'une classe qui contient des membres virtuels ou abstraits. Par exemple :
+Dans les exemples précédents, les stubs ont été générés à partir d'interfaces. Vous pouvez également générer les stubs à partir d'une classe qui contient des membres virtuels ou abstraits. Par exemple :
 
 ```csharp
 // Base class in application under test

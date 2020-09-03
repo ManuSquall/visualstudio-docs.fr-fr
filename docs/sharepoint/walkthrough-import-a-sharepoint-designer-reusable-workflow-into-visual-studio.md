@@ -16,9 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6a589f14ea60d50c0062d85be81523f27c81b455
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86015695"
 ---
 # <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio"></a>Procédure pas à pas : importer un flux de travail réutilisable SharePoint Designer dans Visual Studio
@@ -185,7 +186,7 @@ ms.locfileid: "86015695"
 
      La liste s’affiche immédiatement lorsque vous déboguez le projet.
 
-11. Étant donné que le modèle de **flux de travail SharePoint 2010 d’importation réutilisable** n’importe pas les valeurs de propriété d’association pour le flux de travail importé, vous devez les entrer. Pour ce faire :
+11. Étant donné que le modèle de **flux de travail SharePoint 2010 d’importation réutilisable** n’importe pas les valeurs de propriété d’association pour le flux de travail importé, vous devez les entrer. Pour cela :
 
     1. Dans **Explorateur de solutions**, choisissez le nœud **SPD_Workflow_TestFT** .
 

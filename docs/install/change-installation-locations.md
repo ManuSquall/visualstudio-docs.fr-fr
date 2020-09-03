@@ -17,10 +17,10 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 5751ddeca2ba690ec29ff905ec7e8330a7199eab
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85419118"
 ---
 # <a name="select-the-installation-locations-in-visual-studio"></a>Sélectionner les emplacements d’installation dans Visual Studio
@@ -40,7 +40,7 @@ Vous pouvez réduire l’empreinte de l’installation de Visual Studio sur votr
    > [!NOTE]
    > L’emplacement d’installation de certains outils et SDK est régi par des règles différentes. Ces outils et SDK sont toujours installés sur votre lecteur système, même si vous choisissez un autre emplacement.
 
-Vous êtes prêt à commencer ? Voici comment faire.
+Prêt à vous lancer ? Voici comment faire.
 
 ::: moniker range="vs-2017"
 

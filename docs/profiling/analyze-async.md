@@ -10,10 +10,10 @@ manager: AndSter
 ms.workload:
 - multiple
 ms.openlocfilehash: 49091ba472637d480c04c39f0170c2aee00595d2
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85290419"
 ---
 # <a name="analyze-performance-of-net-asynchronous-code"></a>Analyser les performances du code asynchrone .NET
@@ -23,7 +23,7 @@ Utilisez l’outil .NET Async pour analyser les performances du code asynchrone 
 > [!NOTE]
 > L’outil .NET Async nécessite Visual Studio 2019 version 16,7 ou ultérieure et un projet .NET qui utilise **Async** et **await**.
 
-## <a name="setup"></a>Programme d’installation
+## <a name="setup"></a>Installation
 
 1. Appuyez sur **ALT + F2** pour ouvrir le profileur de performances dans Visual Studio.
 

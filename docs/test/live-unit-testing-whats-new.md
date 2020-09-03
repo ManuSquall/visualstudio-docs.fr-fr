@@ -12,10 +12,10 @@ ms.workload:
 - dotnet
 monikerRange: vs-2017
 ms.openlocfilehash: 7f7ab0c257bfed4521e95d9da12eaa0b9e25a71e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76114273"
 ---
 # <a name="whats-new-in-live-unit-testing-for-visual-studio-2017"></a>Nouveautés de Live Unit Testing pour Visual Studio 2017
@@ -38,7 +38,7 @@ Cette rubrique liste les nouvelles fonctionnalités ajoutées à Live Unit Testi
 
 - **Fiabilité et performances** : Live Unit Testing garantit maintenant que le système peut mieux détecter quand les projets ne sont pas complètement chargés et ne se bloque donc plus dans ces circonstances. Des améliorations des performances de la génération évitent aussi la réévaluation des projets MSBuild quand le système détecte que rien n’a changé dans le fichier projet.
 
-- **Différentes améliorations de l’interface utilisateur** : l’option **Live Test Set – Inclure/Exclure** accessible d’un clic droit prêtait à confusion, elle a donc été renommée **Live Unit Testing Inclure/Exclure**. L’option **Réinitialiser** du menu **Test** > **Live Unit Testing** a été supprimée. Il est maintenant accessible en sélectionnant **outils** > **Options** > **Live Unit Testing** et en sélectionnant Delete **Persisted Data**.
+- **Différentes améliorations de l’interface utilisateur** : l’option **Live Test Set – Inclure/Exclure** accessible d’un clic droit prêtait à confusion, elle a donc été renommée **Live Unit Testing Inclure/Exclure**. L’option **Réinitialiser** du menu **Test** > **Live Unit Testing** a été supprimée. Il est désormais accessible en sélectionnant **Outils**  >  **options**  >  **Live Unit testing** et en sélectionnant **Supprimer les données persistantes**.
 
 ## <a name="version-153"></a>Version 15.3
 

@@ -15,10 +15,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 5865059e60907397ae7d69b230676ac63a5c3386
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/30/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85543115"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer"></a>Raccourcis clavier et souris dans le diagramme de classes et dans la fenêtre Détails de classe(Concepteur de classes)
@@ -36,7 +36,7 @@ Vous pouvez utiliser le clavier en plus de la souris pour naviguer dans le Conce
 
 - [Utilisation du clavier dans le fenêtre Détails de classe](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDetails)
 
-## <a name="using-the-mouse-in-class-designer"></a><a name="MouseClassDesigner"></a>Utilisation de la souris dans Concepteur de classes
+## <a name="using-the-mouse-in-class-designer"></a><a name="MouseClassDesigner"></a> Utilisation de la souris dans Concepteur de classes
  Les actions de la souris suivantes sont prises en charge dans les diagrammes de classes :
 
 |Combinaison avec la souris|Context|Description|
@@ -62,7 +62,7 @@ Vous pouvez utiliser le clavier en plus de la souris pour naviguer dans le Conce
 
 - La fenêtre Détails de classe comporte plusieurs boutons permettant d'ajouter de nouveaux membres à la classe actuelle et de naviguer entre les compartiments des membres dans la grille de la fenêtre Détails de classe. Pour plus d'informations, consultez la section sur les boutons de la fenêtre Détails de classe.
 
-## <a name="using-the-keyboard-in-class-designer"></a><a name="KeyboardClassDesigner"></a>Utilisation du clavier dans Concepteur de classes
+## <a name="using-the-keyboard-in-class-designer"></a><a name="KeyboardClassDesigner"></a> Utilisation du clavier dans Concepteur de classes
  Les actions du clavier suivantes sont prises en charge dans les diagrammes de classes :
 
 |Clé|Context|Description|
@@ -74,8 +74,8 @@ Vous pouvez utiliser le clavier en plus de la souris pour naviguer dans le Conce
 ||Formes de niveau supérieur|Permet d'atteindre la première forme dans le diagramme.|
 |FIN|À l'intérieur des formes de type|Permet d'atteindre le dernier élément visible à l'intérieur de la forme.|
 ||Formes de niveau supérieur|Permet d'atteindre la dernière forme dans le diagramme.|
-|Maj+Début|À l'intérieur d'une forme de type|Sélectionne des éléments dans la forme, en commençant par l'élément actuel et en terminant par l'élément supérieur de cette forme.|
-|Maj+Fin|À l'intérieur d'une forme de type|Identique à Maj+Origine, mais du haut vers le bas.|
+|MAJ+ORIGNE|À l'intérieur d'une forme de type|Sélectionne des éléments dans la forme, en commençant par l'élément actuel et en terminant par l'élément supérieur de cette forme.|
+|MAJ+FIN|À l'intérieur d'une forme de type|Identique à Maj+Origine, mais du haut vers le bas.|
 |ENTRÉE|Tous les contextes|Appelle l'action par défaut sur la forme qui est également réalisable avec un double-clic. Dans la plupart des cas, il s'agit de la commande Afficher le code, mais certains éléments définissent l'action par défaut différemment (lollipops, en-têtes de compartiment, étiquettes lollipop).|
 |+/-|Tous les contextes|Si l’élément ayant le focus peut être développé, ces touches le développent/réduisent.|
 |>|Tous les contextes|Sur un élément ayant des enfants, cette touche développe l’élément s’il était réduit et permet de naviguer vers le premier enfant.|
@@ -99,7 +99,7 @@ Vous pouvez utiliser le clavier en plus de la souris pour naviguer dans le Conce
 |Clé|Résultats|
 |-|-|
 |, (virgule)|Si le curseur se trouve dans une ligne de paramètre, la saisie d'une virgule déplace le curseur dans le champ Nom du paramètre suivant. Si le curseur se trouve dans la dernière ligne de paramètre d’une méthode, il déplace le curseur vers le \<add parameter> champ, que vous pouvez utiliser pour créer un nouveau paramètre.<br /><br /> Si le curseur se trouve ailleurs dans la fenêtre Détails de classe, la saisie d'une virgule ajoute simplement une virgule dans le champ actuel.|
-|; (point-virgule)<br /><br /> ou<br /><br /> ) (parenthèse fermante)|Déplace le curseur dans le champ Nom de la ligne de membre suivante dans la grille de la fenêtre Détails de classe.|
+|; (point-virgule)<br /><br /> or<br /><br /> ) (parenthèse fermante)|Déplace le curseur dans le champ Nom de la ligne de membre suivante dans la grille de la fenêtre Détails de classe.|
 |Onglet|Déplace le curseur dans le champ suivant (de gauche à droite, puis de haut en bas). Si le curseur quitte un champ dans lequel vous avez tapé du texte, la fenêtre Détails de classe traite ce texte et le stocke, sous réserve qu'aucune erreur n'ait été détectée.<br /><br /> Si le curseur se trouve dans un champ vide, tel que \<add parameter> , la touche Table déplace vers le premier champ de la ligne suivante.|
 |\<space>|Déplace le curseur dans le champ suivant (de gauche à droite, puis de haut en bas). Si le curseur se trouve dans un champ vide, tel que \<add parameter> , il se déplace vers le premier champ de la ligne suivante. Notez que l' \<space> entrée juste après une virgule est ignorée.<br /><br /> Si le curseur se trouve dans le champ Résumé, la saisie d'un espace ajoute un caractère espace.<br /><br /> Si le curseur se trouve dans la colonne Masquer d'une ligne, la saisie d'un espace inverse la valeur de la case à cocher Masquer.|
 |Ctrl+Tab|Bascule vers une autre fenêtre de document, par exemple, de la fenêtre Détails de classe vers un fichier de code ouvert.|

@@ -17,10 +17,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: a495a566f78ceb2b89f8e2070837f038da352a4d
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918880"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>Définir un profil pour étendre UML
@@ -41,11 +41,11 @@ Vous pouvez définir un *profil UML* pour personnaliser les éléments de modèl
 > [!NOTE]
 > Si vous appliquez les stéréotypes d'un profil dans un modèle que vous modifiez et que vous partagez ensuite le modèle avec d'autres personnes, elles doivent installer le même profil sur leurs propres ordinateurs. Dans le cas contraire, elles ne pourront pas voir les stéréotypes que vous avez utilisés.
 
- Un profil fait souvent partie d’une extension de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] plus grande. Par exemple, vous pouvez définir une commande qui traduit certaines parties d'un modèle en code. Vous pouvez définir un profil que les utilisateurs doivent appliquer aux packages qu'ils souhaitent traduire. Vous devez dans ce cas distribuer votre nouvelle commande avec le profil dans une extension [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] unique.
+ Un profil fait souvent partie d’une extension plus grande [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] . Par exemple, vous pouvez définir une commande qui traduit certaines parties d'un modèle en code. Vous pouvez définir un profil que les utilisateurs doivent appliquer aux packages qu'ils souhaitent traduire. Vous devez dans ce cas distribuer votre nouvelle commande avec le profil dans une extension [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] unique.
 
  Vous pouvez aussi définir des variantes localisées d'un profil. Les utilisateurs chargeant votre extension voient la variante correspondant à leur propre culture.
 
-## <a name="DefineProfile"></a>Comment définir un profil
+## <a name="how-to-define-a-profile"></a><a name="DefineProfile"></a> Comment définir un profil
 
 #### <a name="to-define-a-uml-profile"></a>Pour définir un profil UML
 
@@ -61,7 +61,7 @@ Vous pouvez définir un *profil UML* pour personnaliser les éléments de modèl
 
     1. Double-cliquez sur le fichier d'extension, dont l'extension de nom de fichier est `.vsix`.
 
-    2. Redémarrez Visual Studio.
+    2. Démarrez Visual Studio.
 
 5. Vérifiez que le profil a été installé.
 
@@ -75,7 +75,7 @@ Vous pouvez définir un *profil UML* pour personnaliser les éléments de modèl
 
 6. Envoyez le fichier d'extension à d'autres utilisateurs de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour qu'ils l'installent sur leurs ordinateurs.
 
-## <a name="AddProfile"></a>Comment ajouter un profil à une extension Visual Studio
+## <a name="how-to-add-a-profile-to-a-visual-studio-extension"></a><a name="AddProfile"></a> Comment ajouter un profil à une extension Visual Studio
  Pour installer un profil et pouvoir l'envoyer à d'autres utilisateurs, vous devez ajouter le profil à une Extension Visual Studio. Pour plus d’informations, consultez [déploiement d’extensions Visual Studio](https://msdn.microsoft.com/library/dd393694(VS.100).aspx).
 
 #### <a name="to-define-a-profile-in-a-new-visual-studio-extension"></a>Pour définir un profil dans une nouvelle Extension Visual Studio
@@ -87,7 +87,7 @@ Vous pouvez définir un *profil UML* pour personnaliser les éléments de modèl
 
    1. Dans le menu **Fichier** , pointez sur **Nouveau**, puis cliquez sur **Projet**.
 
-   2. Dans la boîte de dialogue **nouveau projet** , sous **modèles installés**, développez **Visual C#** , cliquez sur **extensibilité**, puis sur **projet VSIX**. Définissez le nom du projet et cliquez sur **OK**.
+   2. Dans la boîte de dialogue **nouveau projet** , sous **modèles installés**, développez **Visual C#**, cliquez sur **extensibilité**, puis sur **projet VSIX**. Définissez le nom du projet et cliquez sur **OK**.
 
 2. Ajoutez votre profil au projet.
 
@@ -111,19 +111,19 @@ Vous pouvez définir un *profil UML* pour personnaliser les éléments de modèl
 
         Cette option ne figure pas dans la liste déroulante. Vous devez entrer ce nom au clavier.
 
-   - Cliquez sur **fichier sur le système de fichiers** , puis sélectionnez le nom de votre fichier de profil, par exemple `MyProfile.profile`
+   - Cliquez sur **fichier sur le système de fichiers** et sélectionnez le nom de votre fichier de profil, par exemple `MyProfile.profile`
 
-6. créer le projet ;
+6. Créez le projet.
 
 7. **Pour déboguer le profil**, appuyez sur F5.
 
     Une instance expérimentale de Visual Studio s’ouvre. Dans cette instance, ouvrez un projet de modélisation. Dans l'Explorateur UML, sélectionnez l'élément racine du modèle et, dans la fenêtre Propriétés, sélectionnez votre profil. Ensuite, sélectionnez les éléments à l'intérieur du modèle et définissez les stéréotypes que vous avez définis pour eux.
 
-8. **Pour extraire le VSIX en vue de son déploiement**
+8. **Pour extraire l'extension VSIX pour le déploiement**
 
    1. Dans l’Explorateur Windows, ouvrez le dossier **.\bin\debug** ou **.\bin\release** pour rechercher le fichier **. vsix** . Il s'agit d'un fichier d'Extension [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Vous pouvez l'installer sur votre ordinateur et l'envoyer à d'autres utilisateurs de Visual Studio.
 
-   2. Pour installer l'extension
+   2. Pour installer l’extension :
 
        1. Double-cliquez sur le fichier `.vsix`. Le Programme d'installation des extensions Visual Studio démarre.
 
@@ -135,11 +135,11 @@ Vous pouvez définir un *profil UML* pour personnaliser les éléments de modèl
 
 1. Créez un répertoire Windows qui contient les trois fichiers suivants :
 
-    - *YourProfile* `.profile`
+    - *YourProfile*`.profile`
 
     - `extension.vsixmanifest`
 
-    - `[Content_Types].xml`-tapez ce nom comme indiqué ici, avec les crochets
+    - `[Content_Types].xml` -tapez ce nom comme indiqué ici, avec les crochets
 
 2. Modifiez `[Content_Types].xml` pour qu'il contienne le texte suivant. Notez qu'il contient une entrée pour chaque extension de nom de fichier.
 
@@ -168,7 +168,7 @@ Vous pouvez définir un *profil UML* pour personnaliser les éléments de modèl
 
 4. Placez les trois fichiers dans un fichier compressé.
 
-     Dans l’Explorateur Windows, sélectionnez les trois fichiers, cliquez avec le bouton droit, pointez sur **Envoyer vers**, puis cliquez sur **dossier compressé (zippé)** .
+     Dans l’Explorateur Windows, sélectionnez les trois fichiers, cliquez avec le bouton droit, pointez sur **Envoyer vers**, puis cliquez sur **dossier compressé (zippé)**.
 
 5. Renommez le fichier compressé et remplacez son extension de nom de fichier `.zip` par `.vsix`.
 
@@ -182,7 +182,7 @@ Vous pouvez définir un *profil UML* pour personnaliser les éléments de modèl
 
 3. Pour désinstaller ou désactiver temporairement l’extension, ouvrez **extensions et mises à jour** dans le menu **Outils** .
 
-## <a name="Localized"></a>Comment définir des profils localisés
+## <a name="how-to-define-localized-profiles"></a><a name="Localized"></a> Comment définir des profils localisés
  Vous pouvez définir différents profils pour différentes cultures ou langues, et tous les empaqueter dans la même extension. Quand un utilisateur chargera votre extension, ils verra le profil que vous avez défini pour sa culture.
 
  Vous devez toujours fournir un profil par défaut. Si vous n'avez pas défini de profil pour la culture de l'utilisateur, il verra le profil par défaut.
@@ -200,7 +200,7 @@ Vous pouvez définir un *profil UML* pour personnaliser les éléments de modèl
 
 4. Ajoutez une copie de votre profil par défaut au nouveau répertoire. Ne modifiez pas son nom de fichier.
 
-     Un exemple de dossier d’extension [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], avant qu’il ne soit créé ou compressé dans un fichier `.vsix`, contient les dossiers et fichiers suivants :
+     Un exemple de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] dossier d’extension, avant qu’il ne soit créé ou compressé dans un `.vsix` fichier, contient les dossiers et fichiers suivants :
 
      `extension.vsixmanifest`
 
@@ -219,7 +219,7 @@ Vous pouvez définir un *profil UML* pour personnaliser les éléments de modèl
 
 7. Générez l'Extension Visual Studio en créant le projet d'extension ou en compressant tous les fichiers, comme décrit dans les sections précédentes.
 
-## <a name="Schema"></a>Structure d’un profil
+## <a name="the-structure-of-a-profile"></a><a name="Schema"></a> Structure d’un profil
 
  Pour vous aider à modifier les fichiers de profils, installez le fichier `.xsd` dans :
 
@@ -252,14 +252,14 @@ Vous pouvez définir un *profil UML* pour personnaliser les éléments de modèl
 
  Chaque profil contient trois sections principales. Dans l'ordre inverse, il s'agit des suivantes :
 
-- `<propertyTypes>` : liste des types utilisés pour les propriétés définies dans la section stéréotypes.
+- `<propertyTypes>` : liste des types utilisés pour les propriétés définies dans la section stéréotypes.
 
-- `<metaclasses>` : liste des types d’éléments de modèle auxquels s’appliquent les stéréotypes de ce profil, par exemple IClass, IInterface, IOperation, IDependency.
+- `<metaclasses>` : liste des types d’éléments de modèle auxquels s’appliquent les stéréotypes de ce profil, par exemple IClass, IInterface, IOperation, IDependency.
 
-- `<stereotypes>`-les définitions de stéréotype. Chaque définition comprend les noms et les types de propriétés qui sont ajoutés à l'élément de modèle cible.
+- `<stereotypes>` -les définitions de stéréotype. Chaque définition comprend les noms et les types de propriétés qui sont ajoutés à l'élément de modèle cible.
 
-#### <a name="property-types"></a>Types de propriété
- La section `<propertyTypes>` déclare une liste de types utilisés pour les propriétés dans la section `<stereotypes>`. Il existe deux genres de types de propriétés : externe et énumération.
+#### <a name="property-types"></a>Types de propriétés
+ La `<propertyTypes>` section déclare une liste de types utilisés pour les propriétés dans la `<stereotypes>` section. Il existe deux genres de types de propriétés : externe et énumération.
 
  Un type externe déclare le nom qualifié complet d'un type .NET standard :
 
@@ -313,7 +313,7 @@ Vous pouvez définir un *profil UML* pour personnaliser les éléments de modèl
 > [!NOTE]
 > Le nom du moniker doit commencer par `/yourProfileName/`, où `yourProfileName` est défini dans l'attribut `name` du profil (« CSharpProfile » dans cet exemple). Le moniker se termine par le nom de l'une des entrées dans la section des métaclasses.
 
- Chaque stéréotype peut répertorier zéro, une ou plusieurs propriétés qu'il ajoute à tout élément de modèle auquel il est appliqué. Le `<propertyType>` contient un lien vers l’un des types définis dans la section `<propertyTypes>`. Le lien doit être un `<externalTypeMoniker>` pour faire référence à un `<externalType>,` ou un `<enumerationTypeMoniker>` pour faire référence à un `<enumerationType>`. Là encore, le lien commence par le nom de votre profil.
+ Chaque stéréotype peut répertorier zéro, une ou plusieurs propriétés qu'il ajoute à tout élément de modèle auquel il est appliqué. `<propertyType>`Contient un lien vers l’un des types définis dans la `<propertyTypes>` section. Le lien doit être un `<externalTypeMoniker>` pour faire référence à un `<externalType>,` ou un `<enumerationTypeMoniker>` pour faire référence à un `<enumerationType>`. Là encore, le lien commence par le nom de votre profil.
 
 ```
   <properties>
@@ -336,10 +336,10 @@ Vous pouvez définir un *profil UML* pour personnaliser les éléments de modèl
 </stereotype>
 ```
 
-## <a name="Elements"></a>Types d’éléments de modèle
+## <a name="model-element-types"></a><a name="Elements"></a> Types d’éléments de modèle
  L’ensemble des types pour lesquels vous pouvez définir des stéréotypes est listé dans les [types d’éléments de modèle UML](../modeling/uml-model-element-types.md).
 
-## <a name="troubleshooting"></a>Résolution des problèmes
+## <a name="troubleshooting"></a>Dépannage
  Mes stéréotypes n'apparaissent pas dans mes modèles UML.
 Vous devez sélectionner votre profil dans un package ou un modèle. Les stéréotypes apparaîtront alors sur les éléments dans le package ou le modèle. Pour plus d’informations, consultez [Ajouter des stéréotypes à des éléments de modèle UML](../modeling/add-stereotypes-to-uml-model-elements.md).
 
@@ -348,20 +348,20 @@ Vous devez sélectionner votre profil dans un package ou un modèle. Les stéré
 
 2. Vérifiez que le nom de chaque Moniker respecte le format /nom_profil/nom_nœud. nom_profil correspond à la valeur de l'attribut name dans le nœud racine du profil. nom_nœud correspond à la valeur de l'attribut name d'une métaclasse, d'un externalType ou d'un enumerationType.
 
-3. Vérifiez que la syntaxe est décrite ici et, comme illustré dans _lecteur_ **: \Program Files\Microsoft Visual Studio [version] \Common7\IDE\Extensions\Microsoft\Architecture Tools\UmlProfiles\\** .
+3. Vérifiez que la syntaxe est décrite ici et, comme illustré dans _lecteur_**: \Program Files\Microsoft Visual Studio [version] \Common7\IDE\Extensions\Microsoft\Architecture Tools\UmlProfiles \\ **.
 
-4. Désinstallez l'extension défectueuse. Dans le menu **Outils** , choisissez **Extensions et mises à jour**.
+4. Désinstallez l'extension défectueuse. Dans le menu **Outils**, cliquez sur **Extensions et mises à jour**.
 
    - Si l'extension n'apparaît pas, consultez le paragraphe suivant.
 
 5. Régénérez le fichier VSIX et ouvrez-le dans l'Explorateur Windows pour le réinstaller. Redémarrez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
    L’extension n’apparaît pas dans le gestionnaire d’extensions, mais lorsque vous essayez de la réinstaller, le message suivant s’affiche : **l’extension est déjà installée pour tous les produits applicables.**
-   1. Supprimez le fichier d’extension d’un sous-dossier de *LocalAppData*\Microsoft\VisualStudio\\[version] \Extensions\
+   1. Supprimez le fichier d’extension d’un sous-dossier de *LocalAppData*\Microsoft\VisualStudio \\ [version] \Extensions\
 
    - Pour voir *LocalAppData*, vous devez définir afficher les fichiers et les dossiers masqués sous l’onglet Affichage des options des dossiers de l’Explorateur Windows.
 
-   - *LocalAppData* se trouve généralement dans C:\Users\\*nom_utilisateur*\AppData\Local\
+   - *LocalAppData* se trouve généralement dans C:\Users \\ *nom_utilisateur*\AppData\Local\
 
 6. Redémarrez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 

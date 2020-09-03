@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: a292b37a50bbf667fa5b23f18879cd79c3f76805
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85292058"
 ---
 Web Deploy 3.6 for Hosting Servers fournit des fonctionnalités de configuration supplémentaires qui permettent de créer le fichier de paramètres de publication à partir de l’IU.
@@ -24,7 +24,7 @@ Web Deploy 3.6 for Hosting Servers fournit des fonctionnalités de configuratio
 
     Les scripts et les outils sont nécessaires pour permettre la génération du fichier de paramètres de publication.
 
-4. Facultatif Vérifiez que Web Deploy s’exécute correctement en ouvrant **le panneau de configuration > système et sécurité > outils d’administration > services**, puis assurez-vous que :
+4. Facultatif Vérifiez que Web Deploy s’exécute correctement en ouvrant  **le panneau de configuration > système et sécurité > outils d’administration > services**, puis assurez-vous que :
 
     * Le **service Web Deployment agent** est en cours d’exécution (le nom du service est différent dans les versions antérieures).
 

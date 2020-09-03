@@ -13,10 +13,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 7d0fccb5694e538cdf71844d2cc18640114ec735
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672310"
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Procédure pas à pas : création d'un environnement de build sur plusieurs ordinateurs
@@ -28,7 +28,7 @@ Vous pouvez créer un environnement de build dans votre organisation en installa
 
 ||
 |-|
-|Exclusion de responsabilité<br /><br /> Ce document est fourni "en l’état". Nous avons testé les étapes décrites, mais nous ne pouvons pas tester exhaustivement chaque configuration. Nous tenterons de maintenir le document à jour avec toute information supplémentaire obtenue. Les informations et opinions présentées dans ce document, notamment les URL et autres références à des sites web Internet, peuvent être modifiées sans information préalable. Microsoft n’offre aucune garantie, expresse ou implicite, concernant les informations fournies ici. Vous assumez tous les risques liés à leur utilisation.<br /><br /> Ce document ne vous donne aucun droit légal de propriété intellectuelle quant aux produits Microsoft. Vous pouvez copier et utiliser ce document à titre de référence interne.<br /><br /> Vous n’avez aucune obligation de faire à Microsoft des suggestions, commentaires ou autre retour concernant ce document. Toutefois, tout commentaire que vous fournissez volontairement peut être utilisé dans des produits Microsoft et les spécifications liées ou dans une autre documentation (collectivement, les "Offres Microsoft") qui peuvent elles-mêmes être utilisées par des tiers pour développer leurs propres produits. Par conséquent, si vous envoyez des retours sous forme de commentaires à Microsoft concernant n’importe quelle version de ce document ou les Offres Microsoft auxquelles ils s’appliquent, vous acceptez les points suivants : (a) Microsoft peut librement utiliser, reproduire, autoriser, distribuer et commercialiser vos commentaires dans toute Offre Microsoft ; (b) vous n’accorderez également aux tiers, sans frais, que les droits de brevet nécessaires pour permettre à d’autres produits d’utiliser ou d’interagir avec toutes les parties spécifiques d’un produit Microsoft qui incorporent vos commentaires ; et (c) vous n’enverrez à Microsoft aucun commentaire (i) pour lequel vous avez une raison de croire qu’il est soumis à un brevet, un copyright ou une autre revendication de propriété intellectuelle ou un autre droit envers un tiers ; ou (ii) qui soit soumis aux termes d’un contrat de licence exigeant que toute Offre Microsoft intégrant ou dérivée de ces commentaires, ou d’une autre propriété intellectuelle Microsoft, soit fournie sous licence à tout tiers ou partagée avec celui-ci.|
+|Clause d'exclusion de responsabilité<br /><br /> Ce document est fourni "en l’état". Nous avons testé les étapes décrites, mais nous ne pouvons pas tester exhaustivement chaque configuration. Nous tenterons de maintenir le document à jour avec toute information supplémentaire obtenue. Les informations et les points de vue exprimés dans ce document, y compris les URL et autres références à des sites web, peuvent être modifiés sans préavis. Microsoft exclut toute garantie, expresse ou implicite, concernant les informations fournies ici. Vous assumez les risques liés à leur utilisation.<br /><br /> Ce document ne vous fournit aucun droit légal de propriété intellectuelle de tout produit Microsoft. Vous pouvez copier le présent document pour une utilisation interne à des fins de référence.<br /><br /> Vous n’avez aucune obligation de faire à Microsoft des suggestions, commentaires ou autre retour concernant ce document. Toutefois, tout commentaire que vous fournissez volontairement peut être utilisé dans des produits Microsoft et les spécifications liées ou dans une autre documentation (collectivement, les "Offres Microsoft") qui peuvent elles-mêmes être utilisées par des tiers pour développer leurs propres produits. Par conséquent, si vous envoyez des retours sous forme de commentaires à Microsoft concernant n’importe quelle version de ce document ou les Offres Microsoft auxquelles ils s’appliquent, vous acceptez les points suivants : (a) Microsoft peut librement utiliser, reproduire, autoriser, distribuer et commercialiser vos commentaires dans toute Offre Microsoft ; (b) vous n’accorderez également aux tiers, sans frais, que les droits de brevet nécessaires pour permettre à d’autres produits d’utiliser ou d’interagir avec toutes les parties spécifiques d’un produit Microsoft qui incorporent vos commentaires ; et (c) vous n’enverrez à Microsoft aucun commentaire (i) pour lequel vous avez une raison de croire qu’il est soumis à un brevet, un copyright ou une autre revendication de propriété intellectuelle ou un autre droit envers un tiers ; ou (ii) qui soit soumis aux termes d’un contrat de licence exigeant que toute Offre Microsoft intégrant ou dérivée de ces commentaires, ou d’une autre propriété intellectuelle Microsoft, soit fournie sous licence à tout tiers ou partagée avec celui-ci.|
 
  Cette procédure pas à pas a été validée par rapport aux systèmes d’exploitation suivants, en exécutant MSBuild à partir de la ligne de commande et en utilisant Team Foundation Build.
 
@@ -36,7 +36,7 @@ Vous pouvez créer un environnement de build dans votre organisation en installa
 
 - Windows 7 Édition Intégrale
 
-- Windows Server 2008 R2 Standard
+- Windows Server 2008 R2 Standard
 
   Après avoir effectué les étapes de cette procédure, vous pouvez utiliser l’environnement à plusieurs ordinateurs pour générer les types d’applications suivants :
 
@@ -56,11 +56,11 @@ Vous pouvez créer un environnement de build dans votre organisation en installa
 
 - [Copie de fichiers de l’ordinateur hôte vers l’ordinateur de build](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles)
 
-- [Création de paramètres du Registre](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CreatingRegistry)
+- [Création des paramètres du Registre](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CreatingRegistry)
 
 - [Définition de variables d’environnement sur l’ordinateur de build](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#SettingEnvVariables)
 
-- [Installation d’assemblys MSBuild dans le GAC (Global Assembly Cache) sur l’ordinateur de build](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC)
+- [Installation d’assemblys MSBuild dans le global assembly cache (GAC) sur l’ordinateur de build](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC)
 
 - [Génération de projets](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#BuildingProjects)
 
@@ -72,7 +72,7 @@ Vous pouvez créer un environnement de build dans votre organisation en installa
 
 - Une copie de .NET Framework 4.5.1, que vous pouvez télécharger à partir du site web [Microsoft](https://www.microsoft.com/download/details.aspx?id=40779).
 
-## <a name="InstallingSoftware"></a> Installation du logiciel sur les ordinateurs
+## <a name="installing-software-on-the-computers"></a><a name="InstallingSoftware"></a> Installation d’un logiciel sur les ordinateurs
  Configurez tout d’abord l’ordinateur hôte, puis l’ordinateur de build.
 
  En installant Visual Studio sur l’ordinateur hôte, vous créez des fichiers et des paramètres que vous copierez ultérieurement sur l’ordinateur de build. Vous pouvez installer Visual Studio sur un ordinateur x86 ou x64, mais l’architecture de l’ordinateur de build doit correspondre à l’architecture de l’ordinateur hôte.
@@ -83,7 +83,7 @@ Vous pouvez créer un environnement de build dans votre organisation en installa
 
 2. Sur l’ordinateur de build, installez .NET Framework 4.5. Pour vérifier qu’il est installé, assurez-vous que la valeur de la clé de Registre HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full@Version commence par "4.5".
 
-## <a name="CopyingFiles"></a> Copie de fichiers de l’ordinateur hôte vers l’ordinateur de build
+## <a name="copying-files-from-the-host-computer-to-the-build-computer"></a><a name="CopyingFiles"></a> Copie de fichiers de l’ordinateur hôte vers l’ordinateur de build
  Cette section décrit la copie de fichiers, compilateurs, outils de génération, composants MSBuild et paramètres de Registre spécifiques à partir de l’ordinateur hôte vers l’ordinateur de build. Ces instructions supposent que vous avez installé Visual Studio à l’emplacement par défaut sur l’ordinateur hôte ; si vous l’avez installé à un autre emplacement, ajustez les étapes en conséquence.
 
 - Sur un ordinateur x86, l’emplacement par défaut est C:\Program Files\Microsoft Visual Studio 11.0\
@@ -215,7 +215,7 @@ Vous pouvez créer un environnement de build dans votre organisation en installa
 
    - \Microsoft.VC110.DebugOpenMP\vcomp110d.dll
 
-## <a name="CreatingRegistry"></a> Création de paramètres du Registre
+## <a name="creating-registry-settings"></a><a name="CreatingRegistry"></a> Création de paramètres du Registre
  Vous devez créer des entrées de Registre pour configurer des paramètres pour MSBuild.
 
 #### <a name="to-create-registry-settings"></a>Pour créer des paramètres du Registre
@@ -277,7 +277,7 @@ Vous pouvez créer un environnement de build dans votre organisation en installa
 
    - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11
 
-## <a name="SettingEnvVariables"></a> Définition de variables d’environnement sur l’ordinateur de build
+## <a name="setting-environment-variables-on-the-build-computer"></a><a name="SettingEnvVariables"></a> Définition de variables d’environnement sur l’ordinateur de build
  Pour utiliser MSBuild sur l’ordinateur de build, vous devez définir les variables d’environnement PATH. Pour ce faire, vous pouvez utiliser vcvarsall.bat, ou vous pouvez les configurer manuellement.
 
 #### <a name="to-use-vcvarsallbat-to-set-environment-variables"></a>Pour définir des variables d’environnement à l’aide de vcvarsall.bat
@@ -289,8 +289,8 @@ Vous pouvez créer un environnement de build dans votre organisation en installa
     |Argument Vcvarsall.bat|Compilateur|Architecture de l’ordinateur de build|Architecture de sortie de génération|
     |----------------------------|--------------|---------------------------------|-------------------------------|
     |x86 (valeur par défaut)|Natif 32 bits|x86, x64|x86|
-    |x86_amd64|x64 croisé|x86, x64|X64|
-    |amd64|x64 natif|X64|X64|
+    |x86_amd64|x64 croisé|x86, x64|x64|
+    |amd64|x64 natif|x64|x64|
 
      Si vcvarsall.bat s’exécute correctement, autrement dit, si aucun message d’erreur ne s’affiche, vous pouvez ignorer l’étape suivante et passer à la section [Installation d’assemblys MSBuild dans le GAC (Global Assembly Cache) sur l’ordinateur de build](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC) de ce document.
 
@@ -314,7 +314,7 @@ Vous pouvez créer un environnement de build dans votre organisation en installa
 
    - %windir%\Microsoft.NET\Framework64\v4.0.30319
 
-## <a name="InstallingMSBuildToGAC"></a> Installation d’assemblys de MSBuild dans le GAC (Global Assembly Cache) sur l’ordinateur de build
+## <a name="installing-msbuild-assemblies-to-the-global-assembly-cache-gac-on-the-build-computer"></a><a name="InstallingMSBuildToGAC"></a> Installation d’assemblys de MSBuild dans le GAC (Global Assembly Cache) sur l’ordinateur de build
  MSBuild exige que certains assemblys supplémentaires soient installés dans le GAC sur l’ordinateur de build.
 
 #### <a name="to-copy-assemblies-from-the-host-computer-and-install-them-on-the-build-computer"></a>Pour copier des assemblys à partir de l’ordinateur hôte et les installer sur l’ordinateur de build
@@ -331,26 +331,26 @@ Vous pouvez créer un environnement de build dans votre organisation en installa
 
      Ouvrez une fenêtre d’invite de commandes disposant de droits d’administration, puis exécutez la commande suivante pour chaque fichier :
 
-     **gacutil -i \<fichier>**
+     **gacutil-i \<file>**
 
     > [!NOTE]
     > Pour qu’un assembly s’installe totalement dans le GAC, un redémarrage peut être nécessaire.
 
-## <a name="BuildingProjects"></a> Génération de projets
+## <a name="building-projects"></a><a name="BuildingProjects"></a> Génération de projets
  Vous pouvez utiliser Team Foundation Build pour générer des projets et des solutions [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]. Vous pouvez également les générer sur la ligne de commande. Quand vous utilisez Team Foundation Build pour générer des projets, il appelle l’exécutable MSBuild correspondant à l’architecture système.  Sur la ligne de commande, vous pouvez utiliser MSBuild 32 bits ou MSBuild 64 bits, et vous pouvez choisir l’architecture de MSBuild en définissant la variable d’environnement PATH ou en appelant directement l’exécutable MSBuild spécifique à l’architecture.
 
  Pour utiliser msbuild.exe à l’invite de commandes, exécutez la commande suivante, dans laquelle *solution.sln* est un espace réservé pour le nom de votre solution.
 
  **msbuild** *solution.sln*
 
- Pour plus d’informations sur l’utilisation de MSBuild sur la ligne de commande, consultez [Informations de référence sur la ligne de commande](../msbuild/msbuild-command-line-reference.md).
+ Pour plus d’informations sur l’utilisation de MSBuild sur la ligne de commande, consultez [référence de la ligne de commande](../msbuild/msbuild-command-line-reference.md).
 
 > [!NOTE]
 > Pour générer des projets [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], vous devez utiliser l’ensemble d’outils de plateforme "v110". Si vous ne souhaitez pas modifier les fichiers projet [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], vous pouvez définir l’ensemble d’outils de plateforme en utilisant l’argument de ligne de commande suivant :
 >
 > **msbuild** *solution.sln* **/p:PlatformToolset=v110**
 
-## <a name="CreatingForSourceControl"></a> Création de l’environnement de build afin qu’il puisse être archivé dans le contrôle de code source
+## <a name="creating-the-build-environment-so-that-it-can-be-checked-into-source-control"></a><a name="CreatingForSourceControl"></a> Création de l’environnement de build pour qu’il puisse être archivé dans le contrôle de code source
  Vous pouvez créer un environnement de build qui peut être déployé sur plusieurs ordinateurs et qui ne nécessite pas d’installer des fichiers dans le GAC ou de modifier des paramètres du Registre. Les étapes suivantes sont juste une manière d’accomplir cette opération. Adaptez ces étapes aux caractéristiques propres à votre environnement de build.
 
 > [!NOTE]
@@ -372,7 +372,7 @@ Vous pouvez créer un environnement de build dans votre organisation en installa
 
          AssemblyName="Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
 
-         par celle-ci :
+         par celle-ci :
 
          AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll”.
 
@@ -382,7 +382,7 @@ Vous pouvez créer un environnement de build dans votre organisation en installa
 
          AssemblyName="Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
 
-         par celle-ci :
+         par celle-ci :
 
          AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll”.
 

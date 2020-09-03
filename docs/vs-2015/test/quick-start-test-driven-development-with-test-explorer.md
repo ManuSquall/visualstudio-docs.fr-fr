@@ -9,10 +9,10 @@ caps.latest.revision: 17
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: eae08427e9ec61c34a98f3581355909317b69559
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72672261"
 ---
 # <a name="quick-start-test-driven-development-with-test-explorer"></a>Démarrage rapide : développement piloté avec l’Explorateur de tests
@@ -29,7 +29,7 @@ Nous vous recommandons de créer des tests unitaires pour que votre code continu
 - Consultez dans une seule fenêtre toutes les informations dont vous avez besoin.
 
 ## <a name="using-test-explorer"></a>Utilisation de l'Explorateur de tests
- ![Explorateur de tests unitaires avec le bouton exécuter tout](../test/media/unittestexplorer-beta.png "UnitTestExplorer (bêta)")
+ ![Explorateur de tests unitaires indiquant le bouton Exécuter tout](../test/media/unittestexplorer-beta.png "UnitTestExplorer (bêta)")
 
 #### <a name="to-run-unit-tests-by-using-test-explorer"></a>Pour exécuter des tests unitaires à l'aide de l'Explorateur de tests
 
@@ -39,7 +39,7 @@ Nous vous recommandons de créer des tests unitaires pour que votre code continu
 
    1. Créez un projet de test.
 
-        Dans la boîte de dialogue **Nouveau projet** , développez **Visual Basic**, **Visual C#** , ou **Visual C++** , puis choisissez **Test**.
+        Dans la boîte de dialogue **Nouveau projet** , développez **Visual Basic**, **Visual C#**, ou **Visual C++**, puis choisissez **Test**.
 
         Sélectionnez **Projet de test unitaire**.
 
@@ -67,7 +67,7 @@ Nous vous recommandons de créer des tests unitaires pour que votre code continu
 > [!NOTE]
 > Si aucun test n'apparaît, vérifiez que vous avez installé un adaptateur pour connecter l'Explorateur de tests à l'infrastructure de test que vous utilisez. Pour plus d’informations, consultez [utiliser une infrastructure de test différente](/visualstudio/test/getting-started-with-unit-testing#use-a-third-party-test-framework).
 
-## <a name="walkthrough"></a> Procédure pas à pas : Utilisation de tests unitaires pour développer une méthode
+## <a name="walkthrough-using-unit-tests-to-develop-a-method"></a><a name="walkthrough"></a> Procédure pas à pas : utilisation de tests unitaires pour développer une méthode
  Cette procédure pas-à-pas montre comment développer une méthode testée en C# à l'aide de l'infrastructure des tests unitaires Microsoft. Vous pouvez facilement l'adapter à d'autres langages et utiliser d'autres infrastructures de tests comme NUnit. Pour plus d’informations, consultez [utiliser une infrastructure de test différente](/visualstudio/test/getting-started-with-unit-testing#use-a-third-party-test-framework).
 
 #### <a name="creating-the-test-and-method"></a>Créer le test et la méthode
@@ -76,9 +76,9 @@ Nous vous recommandons de créer des tests unitaires pour que votre code continu
 
 2. Créez un projet de test.
 
-   - Dans la boîte de dialogue **Nouveau projet** , choisissez **Visual C#** , **Test** puis **Projet de test unitaire**.
+   - Dans la boîte de dialogue **Nouveau projet** , choisissez **Visual C#**, **Test** puis **Projet de test unitaire**.
 
-        ![Nouveaux projets de code et de test](../test/media/unittestexplorerwalk1.png "UnitTestExplorerWalk1")
+        ![Nouveaux codes et projets de test](../test/media/unittestexplorerwalk1.png "UnitTestExplorerWalk1")
 
 3. Écrivez une méthode de test de base. Vérifiez le résultat obtenu pour une entrée spécifique :
 
@@ -124,7 +124,7 @@ Nous vous recommandons de créer des tests unitaires pour que votre code continu
 
 7. Sélectionnez les éléments sous **Trace de la pile** pour voir où le test a échoué.
 
-   ![Explorateur de tests unitaires présentant un échec de test.](../test/media/unittestexplorerwalkthrough2.png "UnitTestExplorerWalkthrough2")
+   ![Explorateur de tests unitaires indiquant un échec de test.](../test/media/unittestexplorerwalkthrough2.png "UnitTestExplorerWalkthrough2")
 
    À ce stade, vous avez créé un test et un stub que vous avez modifié afin que le test réussisse.
 
@@ -143,9 +143,9 @@ Nous vous recommandons de créer des tests unitaires pour que votre code continu
 
      Le code se génère et le test s'exécute.
 
-     Le test est réussi.
+     Le test réussit.
 
-     ![Explorateur de tests unitaires présentant un test de réussite.](../test/media/unittestexplorerwalkthrough3.png "UnitTestExplorerWalkthrough3")
+     ![Explorateur de tests unitaires indiquant un test réussi.](../test/media/unittestexplorerwalkthrough3.png "UnitTestExplorerWalkthrough3")
 
 #### <a name="add-tests-to-extend-the-range-of-inputs"></a>Ajouter des tests pour étendre la plage d'entrées
 
@@ -287,4 +287,4 @@ Nous vous recommandons de créer des tests unitaires pour que votre code continu
 
      Tous les tests réussissent encore.
 
-     ![Explorateur de tests unitaires avec 3 tests réussis.](../test/media/unittestexplorerwalkthrough4.png "UnitTestExplorerWalkthrough4")
+     ![Explorateur de tests unitaires indiquant 3 tests réussis.](../test/media/unittestexplorerwalkthrough4.png "UnitTestExplorerWalkthrough4")

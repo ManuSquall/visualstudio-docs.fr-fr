@@ -10,10 +10,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c3c1cdc4738f60301435932b3700f14377f12172
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85290430"
 ---
 # <a name="how-msbuild-builds-projects"></a>Comment MSBuild génère des projets
@@ -95,7 +95,7 @@ Au cours de cette phase, les éléments [UsingTask](usingtask-element-msbuild.md
 
 Dans cette phase, toutes les structures d’objets cibles sont créées en mémoire, en vue de leur exécution. Aucune exécution réelle n’a lieu. 
 
-## <a name="execution-phase"></a>Phase d'exécution
+## <a name="execution-phase"></a>Phase d’exécution
 
 Pendant la phase d’exécution, les cibles sont triées et exécutées, et toutes les tâches sont exécutées. Mais tout d’abord, les propriétés et les éléments qui sont définis dans des cibles sont évalués ensemble en une seule phase, dans l’ordre dans lequel ils apparaissent. L’ordre de traitement diffère notamment de la façon dont les propriétés et les éléments qui ne sont pas dans une cible sont traités : toutes les propriétés en premier, puis tous les éléments, dans des passes distinctes. Les modifications apportées aux propriétés et aux éléments d’une cible peuvent être observées après la cible où elles ont été modifiées.
 
@@ -113,7 +113,7 @@ MSBuild peut prendre deux chemins de code, le mode normal, décrit ici et l’op
 
 Les projets individuels spécifient leur dépendance vis-à-vis d’autres projets par le biais d' `ProjectReference` éléments. Lorsqu’un projet situé en haut de la pile commence à être généré, il atteint le point d’exécution de la `ResolveProjectReferences` cible, une cible standard définie dans les fichiers cibles communs.
 
-`ResolveProjectReferences`appelle la tâche MSBuild avec les entrées des `ProjectReference` éléments pour récupérer les sorties. Les `ProjectReference` éléments sont transformés en éléments locaux tels que `Reference` . La phase d’exécution MSBuild pour le projet actuel est suspendue pendant que la phase d’exécution commence à traiter le projet référencé (la phase d’évaluation est effectuée en premier si nécessaire). Le projet référencé est généré uniquement une fois que vous avez commencé à générer le projet dépendant, ce qui crée une arborescence de projets en génération.
+`ResolveProjectReferences` appelle la tâche MSBuild avec les entrées des `ProjectReference` éléments pour récupérer les sorties. Les `ProjectReference` éléments sont transformés en éléments locaux tels que `Reference` . La phase d’exécution MSBuild pour le projet actuel est suspendue pendant que la phase d’exécution commence à traiter le projet référencé (la phase d’évaluation est effectuée en premier si nécessaire). Le projet référencé est généré uniquement une fois que vous avez commencé à générer le projet dépendant, ce qui crée une arborescence de projets en génération.
 
 Visual Studio permet de créer des dépendances de projet dans des fichiers solution (. sln). Les dépendances sont spécifiées dans le fichier solution et sont uniquement respectées lors de la génération d’une solution ou lors de la génération dans Visual Studio. Si vous générez un seul projet, ce type de dépendance est ignoré. Les références de solution sont transformées par MSBuild en `ProjectReference` éléments et sont ensuite traitées de la même manière.
 
@@ -155,7 +155,7 @@ Dans l’implémentation, *Microsoft. Common. targets* est un wrapper léger qui
       Returns="@(TargetPathWithTargetPlatformMoniker)" />
 ```
 
-`BeforeBuild`et `AfterBuild` sont des points d’extension. Elles sont vides dans le fichier *Microsoft. Common. CurrentVersion. targets* , mais les projets peuvent fournir leurs propres `BeforeBuild` et `AfterBuild` cibles avec des tâches qui doivent être effectuées avant ou après le processus de génération principal. `AfterBuild`est exécuté avant la cible de non-opération, `Build` , car `AfterBuild` apparaît dans l' `DependsOn` attribut sur la `Build` cible, mais il se produit après `CoreBuild` .
+`BeforeBuild` et `AfterBuild` sont des points d’extension. Elles sont vides dans le fichier *Microsoft. Common. CurrentVersion. targets* , mais les projets peuvent fournir leurs propres `BeforeBuild` et `AfterBuild` cibles avec des tâches qui doivent être effectuées avant ou après le processus de génération principal. `AfterBuild` est exécuté avant la cible de non-opération, `Build` , car `AfterBuild` apparaît dans l' `DependsOn` attribut sur la `Build` cible, mais il se produit après `CoreBuild` .
 
 La `CoreBuild` cible contient les appels aux outils de génération, comme suit :
 

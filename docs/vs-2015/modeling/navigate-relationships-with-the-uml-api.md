@@ -12,10 +12,10 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 8d54964cc74422d34ae6c6df489d02768e6d4bbd
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918257"
 ---
 # <a name="navigate-relationships-with-the-uml-api"></a>Naviguer parmi les relations avec l'API UML
@@ -152,7 +152,7 @@ IEnumerable<IUseCase>GetIncludingCases(this IUseCase usecase);
 ```
 
 ## <a name="enumerating-relationships"></a>Énumération de relations
- Toutes les propriétés du modèle UML qui retournent plusieurs valeurs sont conformes à l’interface IEnumerable < >. Cela signifie que vous pouvez utiliser des [expressions de requête LINQ](/dotnet/csharp/linq/index) et les méthodes d’extension définies dans l’espace de noms **System. Linq** .
+ Toutes les propriétés du modèle UML qui retournent plusieurs valeurs sont conformes à l’interface IEnumerable<> . Cela signifie que vous pouvez utiliser des [expressions de requête LINQ](/dotnet/csharp/linq/index) et les méthodes d’extension définies dans l’espace de noms **System. Linq** .
 
  Par exemple :
 

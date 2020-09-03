@@ -16,9 +16,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: fea425da8a6e49643997151c6273fbbffc7033db
-ms.sourcegitcommit: f9e44f5ab6a1dfb56c945c9986730465e1adb6fc
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "86016506"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>Procédure pas à pas : création d’un élément de projet colonne de site avec un modèle de projet, partie 1
@@ -44,7 +45,7 @@ ms.locfileid: "86016506"
 
 - Éditions prises en charge de Microsoft Windows, SharePoint et [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
 
-- Le [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. Cette procédure pas à pas utilise le modèle de **projet VSIX** dans le kit de développement logiciel (SDK) pour créer un package VSIX afin de déployer l’élément de projet. Pour plus d’informations, consultez [étendre les outils SharePoint dans Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).
+- L’[!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]opérateur Cette procédure pas à pas utilise le modèle de **projet VSIX** dans le kit de développement logiciel (SDK) pour créer un package VSIX afin de déployer l’élément de projet. Pour plus d’informations, consultez [étendre les outils SharePoint dans Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).
 
   La connaissance du concept suivant est utile, mais pas obligatoire, pour effectuer la procédure pas à pas :
 
@@ -80,7 +81,7 @@ ms.locfileid: "86016506"
 
 6. Dans la zone **nom** , entrez **SiteColumnProjectItem**, puis choisissez le bouton **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Ajoute le projet **SiteColumnProjectItem** à **Explorateur de solutions**.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Ajoute le projet **SiteColumnProjectItem** à **Explorateur de solutions**.
 
 #### <a name="to-create-the-project-template-project"></a>Pour créer le projet de modèle de projet
 
@@ -94,7 +95,7 @@ ms.locfileid: "86016506"
 
 5. Dans la zone **nom** , entrez **SiteColumnProjectTemplate**, puis choisissez le bouton **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Ajoute le projet **SiteColumnProjectTemplate** à la solution.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Ajoute le projet **SiteColumnProjectTemplate** à la solution.
 
 6. Supprimez le fichier de code Class1 du projet.
 
@@ -122,7 +123,7 @@ ms.locfileid: "86016506"
 
 4. Dans la zone **nom** , entrez **projectItemTypeDefinition** , puis choisissez le bouton **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Ajoute le projet **projectItemTypeDefinition** à la solution et ouvre le fichier de code Class1 par défaut.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Ajoute le projet **projectItemTypeDefinition** à la solution et ouvre le fichier de code Class1 par défaut.
 
 5. Supprimez le fichier de code Class1 du projet.
 

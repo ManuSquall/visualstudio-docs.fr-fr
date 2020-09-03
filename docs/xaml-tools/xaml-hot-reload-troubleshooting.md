@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 447725fd27ab81b85890d37a8f0df8a35ad5fbee
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85328471"
 ---
 # <a name="troubleshooting-xaml-hot-reload"></a>Résolution des problèmes de rechargement à chaud XAML
@@ -51,7 +51,7 @@ Le rechargement à chaud XAML nécessite que la variable `ENABLE_XAML_DIAGNOSTIC
 
 ## <a name="verify-that-your-msbuild-properties-are-correct"></a>Vérifier que vos propriétés MSBuild sont correctes
 
-Par défaut, les informations sur la source sont incluses dans une configuration de débogage. Il est contrôlé par les propriétés MSBuild dans vos fichiers projet (tels que *. csproj). Pour WPF, la propriété est `XamlDebuggingInformation` , qui doit avoir la valeur `True` . Pour UWP, la propriété est `DisableXbfLineInfo` , qui doit avoir la valeur `False` . Par exemple :
+Par défaut, les informations sur la source sont incluses dans une configuration de débogage. Il est contrôlé par les propriétés MSBuild dans vos fichiers projet (tels que *. csproj). Pour WPF, la propriété est `XamlDebuggingInformation` , qui doit avoir la valeur `True` . Pour UWP, la propriété est `DisableXbfLineInfo` , qui doit avoir la valeur `False` . Par exemple :
 
 WPF :
 

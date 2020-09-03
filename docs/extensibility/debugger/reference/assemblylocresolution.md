@@ -1,5 +1,5 @@
 ---
-title: ASSEMBLYLOCRESOLUTION ( Microsoft Docs
+title: ASSEMBLYLOCRESOLUTION | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cbd015408cbefd1861f6e795447a5302efabb0dc
-ms.sourcegitcommit: 16a4a5da4a4fd795b46a0869ca2152f2d36e6db2
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "80738140"
 ---
 # <a name="assemblylocresolution"></a>ASSEMBLYLOCRESOLUTION
-Précise où se trouve un assemblage.
+Spécifie l’emplacement d’un assembly.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -48,28 +48,28 @@ public enum enum_ASSEMBLYLOCRESOLUTION {
 
 ## <a name="fields"></a>Champs
 `ALR_NAME`\
-L’assemblage est situé dans l’espace nom actuel.
+L’assembly se trouve dans l’espace de noms actuel.
 
 `ALR_USERDIR`\
-L’assemblage est situé dans un répertoire d’utilisateurs.
+L’assembly se trouve dans un répertoire utilisateur.
 
 `ALR_SHAREDDIR`\
-L’assemblage est situé dans un répertoire partagé.
+L’assembly se trouve dans le répertoire partagé.
 
 `ALR_REMOTEDIR`\
-L’assemblage est situé dans un répertoire distant.
+L’assembly se trouve dans un répertoire distant.
 
 ## <a name="remarks"></a>Notes
-Ces valeurs sont retournées par les méthodes [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md) et [GetManagedViewerCreationData.](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md)
+Ces valeurs sont retournées par les méthodes [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md) et [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md) .
 
-Ces valeurs peuvent être `OR` combinées avec l’opération.
+Ces valeurs peuvent être combinées avec l' `OR` opération.
 
-## <a name="requirements"></a>Spécifications
-En-tête: msdbg.h
+## <a name="requirements"></a>Configuration requise
+En-tête : msdbg. h
 
-Namespace: Microsoft.VisualStudio.Debugger.Interop
+Espace de noms : Microsoft. VisualStudio. Debugger. Interop
 
-Assemblage: Microsoft.VisualStudio.Debugger.Interop.dll
+Assembly : Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Énumérations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

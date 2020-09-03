@@ -13,10 +13,10 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: f088a0da0e8525189e4e2addf1464b30e1e98d06
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/24/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85331829"
 ---
 # <a name="collect-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>Collecter des données de temporisation détaillées pour une application autonome en utilisant la ligne de commande du profileur
@@ -24,7 +24,7 @@ Cette section décrit les procédures et les options de collecte des données de
 
 ## <a name="common-tasks"></a>Tâches courantes
 
-|Tâche|Contenu associé|
+|Tâche|Contenu connexe|
 |----------|---------------------|
 |**Profiler une application .NET Framework à l’aide de l’instrumentation**|-   [Comment : instrumenter un composant .NET et collecter des données de temporisation détaillées](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md)|
 |**Profiler une application C/C++ à l’aide de l’instrumentation**|-   [Comment : instrumenter un composant natif et collecter des données de temporisation détaillées](../profiling/how-to-instrument-a-native-component-and-collect-timing-data.md)|

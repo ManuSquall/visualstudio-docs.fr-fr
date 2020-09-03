@@ -1,5 +1,5 @@
 ---
-title: Énumérations de CMD en Designer de classe
+title: Énumérations C++ dans Concepteur de classes
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,15 +11,15 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: ee56850c05e4b06ea4325ec238e56e99b38978d0
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/18/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "76114197"
 ---
-# <a name="c-enumerations-in-class-designer"></a>Énumérations de CMD dans Class Designer
+# <a name="c-enumerations-in-class-designer"></a>Énumérations C++ dans Concepteur de classes
 
-**Class Designer** prend `enum` en charge `enum class` les types C et scoped. Vous trouverez ci-dessous un exemple :
+**Concepteur de classes** prend en charge C++ `enum` et les types délimités `enum class` . Vous trouverez ci-dessous un exemple :
 
 ```cpp
 enum CardSuit {
@@ -44,5 +44,5 @@ Pour plus d’informations sur l’utilisation du type `enum`, consultez [Énum�
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Travailler avec le code CMD](working-with-visual-cpp-code.md)
+- [Utilisation du code C++](working-with-visual-cpp-code.md)
 - [Énumérations](/cpp/cpp/enumerations-cpp)

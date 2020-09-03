@@ -15,23 +15,23 @@ caps.latest.revision: 36
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ef2d1cbffab5e38e603b0e50beb896f1c6efa23d
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75919207"
 ---
 # <a name="visual-studio-isolated-shell"></a>Shell isolé Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-L’interpréteur de commandes isolé de Visual Studio vous permet de créer des applications autonomes qui peuvent s'exécuter côte à côte avec d’autres versions de Visual Studio. Il est principalement utilisé pour héberger des outils spécialisés qui peuvent utiliser les services Visual Studio, mais également personnaliser l’apparence et la personnalisation. Les fonctionnalités de Visual Studio et les groupes de commandes de menu peuvent être facilement activés et désactivés. Les noms d’application, les icônes d’application et les écrans de démarrage sont entièrement personnalisables. Pour obtenir la liste des fonctionnalités personnalisables, consultez [Personnalisation de l’interpréteur de commandes isolé](../extensibility/customizing-the-isolated-shell.md).  
+Le shell isolé Visual Studio vous permet de créer des applications autonomes qui peuvent s’exécuter côte à côte avec d’autres versions de Visual Studio. Il est principalement utilisé pour héberger des outils spécialisés qui peuvent utiliser les services Visual Studio, mais également personnaliser l’apparence et la personnalisation. Les fonctionnalités de Visual Studio et les groupes de commandes de menu peuvent être facilement activés et désactivés. Les noms d’application, les icônes d’application et les écrans de démarrage sont entièrement personnalisables. Pour obtenir la liste des fonctionnalités personnalisables, consultez [Personnalisation de l’interpréteur de commandes isolé](../extensibility/customizing-the-isolated-shell.md).  
   
  Pour utiliser un projet Shell isolé, vous devez installer le kit de développement logiciel (SDK) Visual Studio. À compter de Visual Studio 2015, vous n’installez pas le kit de développement logiciel (SDK) Visual Studio à partir du centre de téléchargement. Il est inclus en tant que fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le kit de développement logiciel (SDK) Visual Studio plus tard. Pour plus d’informations, consultez [installation du kit de développement logiciel (SDK) Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
   
  Pour créer une application Shell isolée, démarrez avec un projet isolé Visual Studio Shell. Ce projet contient tout ce dont vous avez besoin pour développer et tester votre propre application d’interpréteur de commandes isolé. Lorsque vous êtes prêt à écrire le programme d’installation qui déploie votre application, vous devez récupérer le package redistribuable Shell isolé à partir de [Microsoft Visual Studio Shell (isolé) package redistribuable](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/).  
   
 > [!NOTE]
-> Avant de pouvoir accéder au package redistribuable de l’interpréteur de commandes isolé, vous serez invité à fournir une brève enquête client.  Une fois le questionnaire rempli, vous serez redirigé vers une page Visual Studio Connect avec des liens de téléchargement de packages redistribuables.  Vous trouverez les liens de téléchargement lors des visites suivantes sur le site Visual Studio Connect sous l’onglet  **&#124; programmes Visual Studio 2015 intégré et environnement isolé** .  
+> Avant de pouvoir accéder au package redistribuable de l’interpréteur de commandes isolé, vous serez invité à fournir une brève enquête client.  Après avoir complété l’enquête, vous serez redirigé vers une page de connexion à Visual Studio avec des liens de téléchargement de packages redistribuables.  Vous trouverez les liens de téléchargement lors des visites suivantes sur le site Visual Studio Connect sous l’onglet **programmes &#124; Visual studio 2015 intégré et Shell isolé** .  
   
 > [!NOTE]
 > Pour plus d’informations sur le déploiement d’une application basée sur un interpréteur de commandes isolé, consultez [procédure pas à pas : création d’une application Shell isolée de base](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
@@ -47,18 +47,18 @@ L’interpréteur de commandes isolé de Visual Studio vous permet de créer de
   
 - Pour modifier d’autres aspects de l’apparence ou du comportement de l’interpréteur de commandes, mettez à jour le fichier. pkgdef de l’application.  
   
-- Certains aspects de l’interpréteur de commandes peuvent également être spécifiés au démarrage de l’application. Pour ce faire, mettez à jour les paramètres dans l’appel au point d’entrée de début de appenvstub. dll.  
+- Certains aspects de l’interpréteur de commandes peuvent également être spécifiés au démarrage de l’application. Pour ce faire, mettez à jour les paramètres dans l’appel au point d’entrée de début de la appenvstub.dll.  
   
   Pour plus d’informations sur les différents éléments que vous pouvez personnaliser, consultez [éléments de l’interpréteur de commandes isolé](../extensibility/elements-of-the-isolated-shell.md).  
   
 ## <a name="standard-features-of-the-isolated-shell"></a>Fonctionnalités standard de l’interpréteur de commandes isolé  
  Les fonctionnalités suivantes sont standard pour toutes les éditions de Visual Studio.  
   
-|Catégorie de fonctionnalité|Composant|  
+|Catégorie de fonctionnalité|Fonctionnalité|  
 |----------------------|-------------|  
-|Fonctionnalités de l’IDE|Importer/exporter des paramètres<br /><br /> Programme d’installation du contrôle de boîte à outils<br /><br /> Liste des tâches & Liste d’erreurs<br /><br /> Sortie (fenêtre)<br /><br /> Page de démarrage<br /><br /> Propriétés (fenêtre)<br /><br /> Boîte à outils<br /><br /> l’Explorateur de solutions<br /><br /> Fenêtre Signet<br /><br /> Affichage Classe<br /><br /> Explorateur d'objets<br /><br /> Commande, fenêtre<br /><br /> Structure du document<br /><br /> Affichage des ressources<br /><br /> Outil externe<br /><br /> Ajouter une référence de service Windows Communication Foundation (WCF)<br /><br /> Prise en charge de LINQ (Language Integrated Query)|  
-|Éditeur/concepteur|Outils de navigation du code (recherche unifiée, définition de la source, héritage)<br /><br /> IntelliSense<br /><br /> SmartTags<br /><br /> Gestionnaire des extraits de code<br /><br /> Extraits de code<br /><br /> Refactoring<br /><br /> Listing convivial<br /><br /> Filtrage IntelliSense<br /><br /> Fenêtre Définition de code<br /><br /> Concepteur d'applications<br /><br /> Concepteur Windows Forms<br /><br /> Concepteur Windows Presentation Foundation (WPF)|  
-|débogage|C#Évaluateur d’expression<br /><br /> Débogage local<br /><br /> Débogage managé<br /><br /> Modifier & Continuer<br /><br /> Débogage inter-threads<br /><br /> Visualisations<br /><br /> DataTips<br /><br /> Débogage natif<br /><br /> Débogage de script<br /><br /> Débogage d’interopérabilité<br /><br /> Débogage juste-à-temps (JIT)<br /><br /> Débogage multiprocessus<br /><br /> Débogage XSLT<br /><br /> Attacher au processus local<br /><br /> Points de trace<br /><br /> Contraintes de point d’arrêt|  
+|Fonctionnalités de l’IDE|Paramètres d’importation/exportation<br /><br /> Programme d’installation du contrôle de boîte à outils<br /><br /> Liste des tâches & Liste d’erreurs<br /><br /> Fenêtre Sortie<br /><br /> Page de démarrage<br /><br /> Fenêtre Propriétés<br /><br /> Boîte à outils<br /><br /> Explorateur de solutions<br /><br /> Fenêtre Signet<br /><br /> Affichage de classes<br /><br /> Explorateur d'objets<br /><br /> Fenêtre Commande<br /><br /> Structure du document<br /><br /> Affichage des ressources<br /><br /> Outil externe<br /><br /> Ajouter une référence de service Windows Communication Foundation (WCF)<br /><br /> Prise en charge de LINQ (Language Integrated Query)|  
+|Éditeur/concepteur|Outils de navigation du code (recherche unifiée, définition de la source, héritage)<br /><br /> IntelliSense<br /><br /> SmartTag<br /><br /> Gestionnaire des extraits de code<br /><br /> Extraits de code<br /><br /> Refactorisation<br /><br /> Listing convivial<br /><br /> Filtrage IntelliSense<br /><br /> Fenêtre Définition de code<br /><br /> Concepteur d'applications<br /><br /> Concepteur Windows Forms<br /><br /> Concepteur Windows Presentation Foundation (WPF)|  
+|Débogage|Évaluateur d’expression C#<br /><br /> Débogage local<br /><br /> Débogage managé<br /><br /> Modifier & Continuer<br /><br /> Débogage inter-threads<br /><br /> Visualisations<br /><br /> DataTips<br /><br /> Débogage natif<br /><br /> Débogage de script<br /><br /> Débogage d’interopérabilité<br /><br /> Débogage juste-à-temps (JIT)<br /><br /> Débogage multiprocessus<br /><br /> Débogage XSLT<br /><br /> Attacher au processus local<br /><br /> Points de trace<br /><br /> Contraintes de point d’arrêt|  
 |Données|Explorateur de serveurs (simplifié-données uniquement)<br /><br /> Liaison de données aux données locales (. MDF ou. MDB<br /><br /> Liaison de données à un objet<br /><br /> Liaison de données au service Web<br /><br /> Ensemble complet de contrôles de données<br /><br /> Éditeur XML<br /><br /> Liaison de données au serveur de base de données local<br /><br /> Fenêtre Sources de données|  
 |Web|Éditeur HTML<br /><br /> Navigateur web<br /><br /> Concepteur Web Forms<br /><br /> Projet de site Web<br /><br /> Projet d’application Web|  
 |Extensibilité|Utilise les VSPackages et les composants MEF|  

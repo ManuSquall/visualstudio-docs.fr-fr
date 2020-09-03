@@ -12,10 +12,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c1bd4c4ab15364e9e2ac8e189fcde01f65244b7a
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/23/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85289194"
 ---
 # <a name="msbuild"></a>MSBuild
@@ -70,7 +70,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
  Les sections suivantes décrivent certains des éléments de base du format de fichier projet MSBuild. Pour obtenir un didacticiel sur la création d’un fichier projet de base, consultez [procédure pas à pas : création d’un fichier projet MSBuild en partant de zéro](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).
 
-### <a name="properties"></a>Propriétés de <a name="BKMK_Properties"></a>
+### <a name="properties"></a><a name="BKMK_Properties"></a> Propriétés
 
  Les propriétés sont des paires clé/valeur qui peuvent être utilisées pour configurer les générations. Les propriétés sont déclarées en créant un élément portant le nom de la propriété comme enfant d’un élément [PropertyGroup](../msbuild/propertygroup-element-msbuild.md). Par exemple, le code suivant crée une propriété nommée `BuildDir` avec la valeur `Build`.
 
@@ -90,7 +90,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
  Pour plus d’informations sur les propriétés, consultez [Propriétés MSBuild](../msbuild/msbuild-properties.md).
 
-### <a name="items"></a><a name="BKMK_Items"></a>Contenus
+### <a name="items"></a><a name="BKMK_Items"></a> Contenus
 
  Les éléments sont des entrées du système de génération qui représentent généralement des fichiers. Les éléments sont regroupés en types d’éléments en fonction des noms d’élément définis par l’utilisateur. Ces types d’éléments peuvent être utilisés comme paramètres des tâches, lesquelles utilisent les éléments pour exécuter les étapes du processus de génération.
 
@@ -116,7 +116,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
  Les éléments peuvent être déclarés à l'aide de caractères génériques et peuvent contenir des métadonnées supplémentaires dans le cas de scénarios de génération plus avancés. Pour plus d’informations sur les éléments, consultez l’article [Éléments MSBuild](../msbuild/msbuild-items.md).
 
-### <a name="tasks"></a><a name="BKMK_Tasks"></a>Décrites
+### <a name="tasks"></a><a name="BKMK_Tasks"></a> Tâches
 
  Les tâches sont des unités de code exécutable que les projets MSBuild utilisent pour effectuer des opérations de génération. Par exemple, une tâche peut compiler des fichiers d'entrée ou exécuter un outil externe. Les tâches peuvent être réutilisées et partagées par plusieurs développeurs dans différents projets.
 
@@ -134,7 +134,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
  Pour plus d’informations sur les tâches, consultez l’article [Tâches MSBuild](../msbuild/msbuild-tasks.md).
 
-### <a name="targets"></a><a name="BKMK_Targets"></a>Compilé
+### <a name="targets"></a><a name="BKMK_Targets"></a> Compilé
 
  Les cibles regroupent les tâches selon un ordre particulier et exposent les sections du fichier projet comme points d’entrée du processus de génération. Les cibles sont souvent groupées en sections logiques afin d'accroître la lisibilité et de permettre une expansion. L'éclatement des étapes de génération en plusieurs cibles permet d'appeler une partie du processus de génération à partir d'autres cibles sans copier cette section de code dans chaque cible. Par exemple, si plusieurs points d'entrée du processus de génération requièrent la génération de références, vous pouvez créer une cible qui génère les références et exécuter cette cible à partir de chaque point d'entrée nécessaire.
 
@@ -158,7 +158,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
  Pour suivre un didacticiel sur l’utilisation de MSBuild dans Visual Studio, consultez la [Procédure pas à pas : utilisation de MSBuild](../msbuild/walkthrough-using-msbuild.md).
 
-## <a name="multitargeting"></a><a name="BKMK_Multitargeting"></a>MULTICIBLAGE
+## <a name="multitargeting"></a><a name="BKMK_Multitargeting"></a> MULTICIBLAGE
 
  À l’aide de Visual Studio, vous pouvez compiler une application pour qu’elle s’exécute sur n’importe quelle version de .NET Framework. Par exemple, vous pouvez compiler une application pour qu’elle s’exécute sur .NET Framework 2,0 sur une plateforme 32 bits, et vous pouvez compiler la même application pour qu’elle s’exécute sur .NET Framework 4,5 sur une plateforme 64 bits. Le multi-ciblage désigne la possibilité de compiler en plusieurs Frameworks.
 
@@ -178,13 +178,13 @@ Pour plus d’informations, consultez l’article [Multiciblage de MSBuild](../m
 
 ## <a name="see-also"></a>Voir aussi
 
-| Intitulé | Description |
+| Titre | Description |
 | - | - |
-| [Procédure pas à pas : création d’un fichier projet MSBuild en partant de zéro](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md) | Indique comment créer de façon incrémentielle un fichier projet de base, en utilisant uniquement un éditeur de texte. |
-| [Procédures pas à pas : utilisation de MSBuild](../msbuild/walkthrough-using-msbuild.md) | Présente les composantes de MSBuild et indique comment écrire, manipuler et déboguer des projets MSBuild sans fermer l'IDE de Visual Studio. |
+| [Procédure pas à pas : Créer un fichier projet MSBuild à partir de zéro](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md) | Indique comment créer de façon incrémentielle un fichier projet de base, en utilisant uniquement un éditeur de texte. |
+| [Procédure pas à pas : Utilisation de MSBuild](../msbuild/walkthrough-using-msbuild.md) | Présente les composantes de MSBuild et indique comment écrire, manipuler et déboguer des projets MSBuild sans fermer l'IDE de Visual Studio. |
 | [Concepts MSBuild](../msbuild/msbuild-concepts.md) | Présente les quatre composantes de MSBuild : propriétés, éléments, cibles et tâches. |
 | [Éléments](../msbuild/msbuild-items.md) | Décrit les concepts généraux sous-jacents au format de fichier MSBuild et la façon dont les éléments s’imbriquent. |
-| [Propriétés MSBuild](../msbuild/msbuild-properties.md) | Présente les propriétés et les collections de propriétés. Les propriétés sont des paires clé/valeur qui peuvent être utilisées pour configurer les générations. |
+| [MSBuild (propriétés)](../msbuild/msbuild-properties.md) | Présente les propriétés et les collections de propriétés. Les propriétés sont des paires clé/valeur qui peuvent être utilisées pour configurer les générations. |
 | [Cibles](../msbuild/msbuild-targets.md) | Explique comment grouper les tâches dans un ordre particulier et autoriser des sections du processus de génération à être appelées sur la ligne de commande. |
 | [Tâches](../msbuild/msbuild-tasks.md) | Montre comment créer une unité de code exécutable qui peut être utilisée par MSBuild pour effectuer des opérations de génération atomiques. |
 | [Conditions](../msbuild/msbuild-conditions.md) | Explique comment utiliser l'attribut `Condition` dans un élément MSBuild. |

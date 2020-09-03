@@ -35,10 +35,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 594d885228de68ecf34e0644cbbe6c6899397fad
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85419196"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Ligne de commande de l’événement pré-build/post-build, boîte de dialogue
@@ -55,7 +55,7 @@ Vous pouvez taper des événements pré-build ou post-build pour la [page Évén
 Contient les événements à exécuter avant ou après la génération.
 
 > [!NOTE]
-> Ajoutez une instruction `call` avant toutes les commandes post-build qui exécutent des fichiers .bat. Par exemple, `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.
+> Ajoutez une instruction `call` avant toutes les commandes post-build qui exécutent des fichiers .bat.  Par exemple, `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.
 
 **Macros**
 

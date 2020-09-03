@@ -15,10 +15,10 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a4efaaa78ce593d8b97d1df454a9c30c2e62d9f8
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "75918738"
 ---
 # <a name="signing-vsix-packages"></a>Signature de packages VSIX
@@ -42,11 +42,11 @@ Les assemblys d’extension n’ont pas besoin d’être signés pour pouvoir s�
   
 3. Recherchez VSIXSignTool à partir de VisualStudioExtensibility et installez le package NuGet.  
   
-4. Vous pouvez maintenant exécuter le VSIXSignTool à partir de l’emplacement des packages locaux du projet. Consultez l’aide de la ligne de commande de l’outil pour votre scénario de signature (VSIXSignTool. exe/ ?).  
+4. Vous pouvez maintenant exécuter le VSIXSignTool à partir de l’emplacement des packages locaux du projet. Consultez l’aide de la ligne de commande de l’outil pour votre scénario de signature (VSIXSignTool.exe/ ?).  
   
    Par exemple, pour vous connecter avec un fichier de certificat protégé par mot de passe :  
   
-   VSIXSignTool. exe Sign/f \<CertFile >/p \<mot de passe > \<VSIXfile >  
+   VSIXSignTool.exe la signature/f \<certfile> /p \<password>\<VSIXfile>  
   
 ## <a name="see-also"></a>Voir aussi  
  [Publication d’extensions Visual Studio](../extensibility/shipping-visual-studio-extensions.md)

@@ -21,16 +21,16 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 9a2136960dfcbbbcf63fbefeb16d527793d4b939
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "72631040"
 ---
 # <a name="create-and-configure-tableadapters"></a>Créer et configurer des TableAdapters
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Les TableAdapters assurent la communication entre votre application et une base de données. Ils se connectent à la base de données, exécutent des requêtes ou des procédures stockées, puis renvoient une nouvelle table de données ou remplissent un <xref:System.Data.DataTable> existant avec les données retournées. Les TableAdapters peuvent également renvoyer des données mises à jour de votre application vers la base de données.
+Les TableAdapters assurent la communication entre votre application et une base de données. Ils se connectent à la base de données, exécutent des requêtes ou des procédures stockées, puis renvoient une nouvelle table de données ou remplissent un existant <xref:System.Data.DataTable> avec les données retournées. Les TableAdapters peuvent également renvoyer des données mises à jour de votre application vers la base de données.
 
  Les TableAdapters sont créés pour vous lorsque vous effectuez l’une des actions suivantes :
 
@@ -49,35 +49,35 @@ Les TableAdapters assurent la communication entre votre application et une base 
 
  ![Assistant Configuration de l’adaptateur de table raddata](../data-tools/media/raddata-table-adapter-configuration-wizard.png "Assistant Configuration de l’adaptateur de table raddata")
 
- Si vous faites glisser un nouveau TableAdapter à partir de la boîte à outils lorsque le **Concepteur de DataSet** est activé, l’Assistant vous invite à spécifier la source de données à laquelle le TableAdapter doit se connecter, ainsi que le type de commandes qu’il doit utiliser pour communiquer avec la base de données, SQL des instructions ou des procédures stockées. Vous ne le verrez pas si vous configurez un TableAdapter qui est déjà associé à une source de données.
+ Si vous faites glisser un nouveau TableAdapter à partir de la boîte à outils lorsque le **Concepteur de DataSet** est activé, l’Assistant vous invite à spécifier la source de données à laquelle le TableAdapter doit se connecter, ainsi que le type de commandes qu’il doit utiliser pour communiquer avec la base de données, les instructions SQL ou les procédures stockées. Vous ne le verrez pas si vous configurez un TableAdapter qui est déjà associé à une source de données.
 
-- L’utilisation des **méthodes Create pour envoyer des mises à jour directement à l’option de base de données** revient à affecter la valeur true à la propriété `GenerateDBDirectMethods`. L’option n’est pas disponible quand l’instruction SQL d’origine ne fournit pas assez d’informations ou que la requête ne peut pas être mise à jour. Cette situation peut se produire, par exemple, dans les requêtes **join** et les requêtes qui retournent une valeur unique (scalaire).
+- L’utilisation des **méthodes Create pour envoyer des mises à jour directement à l’option de base de données** revient à affecter la `GenerateDBDirectMethods` valeur true à la propriété. L’option n’est pas disponible quand l’instruction SQL d’origine ne fournit pas assez d’informations ou que la requête ne peut pas être mise à jour. Cette situation peut se produire, par exemple, dans les requêtes **join** et les requêtes qui retournent une valeur unique (scalaire).
 
 - Vous avez la possibilité de créer une procédure stockée dans la base de données sous-jacente si vous disposez des autorisations appropriées pour la base de données. Si vous ne disposez pas de ces autorisations, ce n’est pas une option.
 
-- Vous pouvez également choisir d’exécuter des procédures stockées existantes pour les commandes **Select**, **Insert**, **Update**et **Delete** du TableAdapter. La procédure stockée qui est assignée à la commande **Update** , par exemple, est exécutée lorsque la méthode `TableAdapter.Update()` est appelée.
+- Vous pouvez également choisir d’exécuter des procédures stockées existantes pour les commandes **Select**, **Insert**, **Update**et **Delete** du TableAdapter. La procédure stockée qui est assignée à la commande **Update** , par exemple, est exécutée lorsque la `TableAdapter.Update()` méthode est appelée.
 
-     Mappez les paramètres de la procédure stockée sélectionnée aux colonnes correspondantes de la table de données. Par exemple, si votre procédure stockée accepte un paramètre nommé `@CompanyName` qu’elle passe à la colonne `CompanyName` de la table, définissez la **colonne source** du paramètre `@CompanyName` sur `CompanyName`.
+     Mappez les paramètres de la procédure stockée sélectionnée aux colonnes correspondantes de la table de données. Par exemple, si votre procédure stockée accepte un paramètre nommé `@CompanyName` qu’elle transmet à la `CompanyName` colonne de la table, définissez la **colonne source** du `@CompanyName` paramètre sur `CompanyName` .
 
     > [!NOTE]
-    > La procédure stockée qui est assignée à la commande SELECT est exécutée en appelant la méthode du TableAdapter que vous nommez à l’étape suivante de l’Assistant. La méthode par défaut est `Fill`. le code généralement utilisé pour exécuter la procédure SELECT est donc `TableAdapter.Fill(tableName)`. Si vous remplacez le nom par défaut `Fill`, remplacez `Fill` par le nom que vous attribuez, et remplacez « TableAdapter » par le nom réel du TableAdapter (par exemple, `CustomersTableAdapter`).
+    > La procédure stockée qui est assignée à la commande SELECT est exécutée en appelant la méthode du TableAdapter que vous nommez à l’étape suivante de l’Assistant. La méthode par défaut est `Fill` , de sorte que le code généralement utilisé pour exécuter la procédure Select est `TableAdapter.Fill(tableName)` . Si vous modifiez le nom par défaut de `Fill` , remplacez `Fill` par le nom que vous attribuez et remplacez « TableAdapter » par le nom réel du TableAdapter (par exemple, `CustomersTableAdapter` ).
 
 - Les **Options avancées** de l’Assistant vous permettent de générer des instructions INSERT, Update et Delete en fonction de l’instruction SELECT définie dans la page **générer des instructions SQL** . Utilisez l’accès concurrentiel optimiste et spécifiez s’il faut actualiser la table de données après l’exécution des instructions INSERT et UPDATE.
 
 ## <a name="configure-a-tableadapters-fill-method"></a>Configurer la méthode Fill d’un TableAdapter
- Parfois, vous souhaiterez peut-être modifier le schéma de la table du TableAdapter. Pour ce faire, vous devez modifier la méthode `Fill` principale du TableAdapter. Les TableAdapters sont créés avec une méthode de `Fill` primaire qui définit le schéma de la table de données associée. La méthode de `Fill` primaire est basée sur la requête ou la procédure stockée que vous avez entrée lors de la configuration initiale du TableAdapter. Il s’agit de la première méthode (la plus en haut) sous la table de données dans le concepteur de DataSet.
+ Parfois, vous souhaiterez peut-être modifier le schéma de la table du TableAdapter. Pour ce faire, vous devez modifier la méthode principale du TableAdapter `Fill` . Les TableAdapters sont créés avec une `Fill` méthode principale qui définit le schéma de la table de données associée. La `Fill` méthode principale est basée sur la requête ou la procédure stockée que vous avez entrée lors de la configuration initiale du TableAdapter. Il s’agit de la première méthode (la plus en haut) sous la table de données dans le concepteur de DataSet.
 
  ![TableAdapter avec plusieurs requêtes](../data-tools/media/tableadapter.gif "TableAdapter")
 
- Toutes les modifications que vous apportez à la méthode principale de `Fill` du TableAdapter sont reflétées dans le schéma de la table de données associée. Par exemple, la suppression d’une colonne de la requête dans la méthode principale `Fill` supprime également la colonne de la table de données associée. En outre, la suppression de la colonne de la méthode main `Fill` supprime la colonne de toutes les requêtes supplémentaires pour ce TableAdapter.
+ Toutes les modifications que vous apportez à la méthode main du TableAdapter `Fill` sont reflétées dans le schéma de la table de données associée. Par exemple, la suppression d’une colonne de la requête dans la `Fill` méthode main supprime également la colonne de la table de données associée. En outre, la suppression de la colonne de la `Fill` méthode main supprime la colonne de toutes les requêtes supplémentaires pour ce TableAdapter.
 
- Vous pouvez utiliser l’Assistant Configuration de requêtes TableAdapter pour créer et modifier des requêtes supplémentaires pour le TableAdapter. Ces requêtes supplémentaires doivent être conformes au schéma de la table, à moins qu’elles ne retournent une valeur scalaire.  Les requêtes supplémentaires ont un nom que vous spécifiez (par exemple, `CustomersTableAdapter.FillByCity(NorthwindDataSet.Customers, "Seattle")`.)
+ Vous pouvez utiliser l’Assistant Configuration de requêtes TableAdapter pour créer et modifier des requêtes supplémentaires pour le TableAdapter. Ces requêtes supplémentaires doivent être conformes au schéma de la table, à moins qu’elles ne retournent une valeur scalaire.  Les requêtes supplémentaires ont un nom que vous spécifiez (par exemple, `CustomersTableAdapter.FillByCity(NorthwindDataSet.Customers, "Seattle")` ).
 
 #### <a name="to-start-the-tableadapter-query-configuration-wizard-with-a-new-query"></a>Pour démarrer l’Assistant Configuration de requêtes TableAdapter avec une nouvelle requête
 
 1. Ouvrez votre dataset dans le **Concepteur de DataSet**.
 
-2. Si vous créez une nouvelle requête, faites glisser un objet **requête** de l’onglet **DataSet** de la **boîte à outils** vers un <xref:System.Data.DataTable> ou sélectionnez Ajouter une **requête** dans le menu contextuel du TableAdapter. Vous pouvez également faire glisser un objet de **requête** dans une zone vide du **Concepteur de DataSet**, ce qui crée un TableAdapter sans <xref:System.Data.DataTable> associé. Ces requêtes peuvent retourner des valeurs uniques (scalaires) ou exécuter des commandes UPDATE, INSERT ou DELETE sur la base de données.
+2. Si vous créez une nouvelle requête, faites glisser un objet **requête** de l’onglet **DataSet** de la **boîte à outils** vers <xref:System.Data.DataTable> ou sélectionnez **Ajouter une requête** dans le menu contextuel du TableAdapter. Vous pouvez également faire glisser un objet de **requête** dans une zone vide du **Concepteur de DataSet**, ce qui crée un TableAdapter sans associé <xref:System.Data.DataTable> . Ces requêtes peuvent retourner des valeurs uniques (scalaires) ou exécuter des commandes UPDATE, INSERT ou DELETE sur la base de données.
 
 3. Dans l’écran **choisir votre connexion de données** , sélectionnez ou créez la connexion que la requête doit utiliser.
 
@@ -97,7 +97,7 @@ Les TableAdapters assurent la communication entre votre application et une base 
 - Si vous modifiez une requête TableAdapter existante, cliquez avec le bouton droit sur la requête, puis choisissez **configurer** dans le menu contextuel.
 
     > [!NOTE]
-    > Cliquez avec le bouton droit sur la requête principale d’un TableAdapter pour reconfigurer le schéma du TableAdapter et du <xref:System.Data.DataTable>. Toutefois, si vous cliquez avec le bouton droit sur une requête supplémentaire sur un TableAdapter, cela ne configure que la requête sélectionnée. L' **Assistant Configuration de TableAdapter** reconfigure la définition de TableAdapter, tandis que l’Assistant Configuration de requêtes TableAdapter reconfigure la requête sélectionnée uniquement.
+    > Cliquer avec le bouton droit sur la requête principale d’un TableAdapter reconfigure le TableAdapter et le <xref:System.Data.DataTable> schéma. Toutefois, si vous cliquez avec le bouton droit sur une requête supplémentaire sur un TableAdapter, cela ne configure que la requête sélectionnée. L' **Assistant Configuration de TableAdapter** reconfigure la définition de TableAdapter, tandis que l’Assistant Configuration de requêtes TableAdapter reconfigure la requête sélectionnée uniquement.
 
 #### <a name="to-add-a-global--query-to-a-tableadapter"></a>Pour ajouter une requête globale à un TableAdapter
 
@@ -105,7 +105,7 @@ Les TableAdapters assurent la communication entre votre application et une base 
 
      Pour ajouter des requêtes globales, faites glisser un objet de **requête** de l’onglet **DataSet** de la **boîte à outils** vers une zone vide du **Concepteur de DataSet**.
 
-- Fournissez une requête qui effectue la tâche souhaitée, par exemple, `SELECT COUNT(*) AS CustomerCount FROM Customers`.
+- Fournissez une requête qui effectue la tâche souhaitée, par exemple `SELECT COUNT(*) AS CustomerCount FROM Customers` .
 
     > [!NOTE]
     > Le fait de faire glisser un objet de **requête** directement sur le **Concepteur de DataSet** crée une méthode qui retourne uniquement une valeur scalaire (unique). Alors que la requête ou la procédure stockée que vous sélectionnez peut retourner plus d’une valeur unique, la méthode créée par l’Assistant ne retourne qu’une seule valeur. Par exemple, la requête peut retourner la première colonne de la première ligne des données retournées.

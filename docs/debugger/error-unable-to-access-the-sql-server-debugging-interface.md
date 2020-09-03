@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d0c0c61fce7f20ea49547bc63a6e70eed284b016
-ms.sourcegitcommit: 66f31cc4ce1236e638ab58d2f70d3646206386fa
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2020
+ms.lasthandoff: 09/02/2020
 ms.locfileid: "85460206"
 ---
 # <a name="error-unable-to-access-the-sql-server-debugging-interface"></a>Erreur : Impossible d'accéder à l'interface de débogage SQL Server
