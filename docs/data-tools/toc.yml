@@ -132,7 +132,7 @@
               href: save-a-dataset-as-xml.md
         - name: Interroger des DataSets
           href: query-datasets.md
-        - name: applications multiniveaux
+        - name: Applications multiniveau
           items:
             - name: Ajouter une validation à un DataSet multiniveau
               href: add-validation-to-an-n-tier-dataset.md
