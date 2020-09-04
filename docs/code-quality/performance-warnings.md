@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 974b98408d7c88bd437439d10c2cf3b1711a339c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13cb3e83b06b3533d1feb1e683fb246f238da732
+ms.sourcegitcommit: 6a43ace7b84c401ebd03f65abc17ae1d2a21a130
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89219632"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89471477"
 ---
 # <a name="performance-warnings"></a>avertissements liés aux performances
 Les avertissements de performances prennent en charge les bibliothèques et les applications à hautes performances.
@@ -58,6 +58,7 @@ Les avertissements de performances prennent en charge les bibliothèques et les 
 | [CA1831 : Utiliser AsSpan à la place d’indexeurs basés sur Range pour une chaîne si approprié](../code-quality/ca1831.md) | Lors de l’utilisation d’un indexeur de plages sur une chaîne et de l’assignation implicite de la valeur à un &lt; type char ReadOnlySpan &gt; , la méthode <xref:System.String.Substring%2A?#System_String_Substring_System_Int32_System_Int32_> est utilisée à la place de <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , ce qui génère une copie de la partie demandée de la chaîne. |
 | [CA1832 : Utiliser AsSpan ou AsMemory à la place d’indexeurs basés sur Range pour obtenir la partie ReadOnlySpan ou ReadOnlyMemory d’un tableau](../code-quality/ca1832.md) | Lors de l’utilisation d’un indexeur de plages sur un tableau et de l’assignation implicite de la valeur à un <xref:System.ReadOnlySpan%601> <xref:System.ReadOnlyMemory%601> type ou, la méthode <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> est utilisée à la place de <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , ce qui produit une copie de la partie demandée du tableau. |
 | [CA1833 : Utiliser AsSpan ou AsMemory à la place d’indexeurs basés sur Range pour obtenir la partie Span ou Memory d’un tableau](../code-quality/ca1833.md) | Lors de l’utilisation d’un indexeur de plages sur un tableau et de l’assignation implicite de la valeur à un <xref:System.Span%601> <xref:System.Memory%601> type ou, la méthode <xref:System.Runtime.CompilerServices.RuntimeHelpers.GetSubArray%2A> est utilisée à la place de <xref:System.Span%601.Slice%2A?#System_Span_1_Slice_System_Int32_System_Int32_> , ce qui produit une copie de la partie demandée du tableau. |
+| [CA1834 : utiliser StringBuilder. Append (Char) pour les chaînes de caractères uniques](../code-quality/ca1834.md) | <xref:System.Text.StringBuilder> a une `Append` surcharge qui prend un `char` comme argument. Préférez l’appel `char` de la surcharge pour améliorer les performances. |
 | [CA1835 : préférer les surcharges « Memory' » pour « ReadAsync » et « WriteAsync »](../code-quality/ca1835.md) | 'Stream’a une surcharge’ReadAsync’qui accepte’Memory &lt; Byte &gt; 'comme premier argument et une surcharge’WriteAsync’qui prend un’ReadOnlyMemory &lt; Byte &gt; 'comme premier argument. Préférez appeler les surcharges basées sur la mémoire, qui sont plus efficaces. |
 | [CA1836 : préférer `IsEmpty` le `Count` cas échéant](../code-quality/ca1836.md) | Préférer `IsEmpty` la propriété qui est plus efficace `Count` que `Length` , <xref:System.Linq.Enumerable.Count%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> ou <xref:System.Linq.Enumerable.LongCount%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%29> pour déterminer si l’objet contient ou non des éléments. |
 | [CA1837 : utilisez à la `Environment.ProcessId` place de `Process.GetCurrentProcess().Id`](../code-quality/ca1837.md) | `Environment.ProcessId` est plus simple et plus rapide que `Process.GetCurrentProcess().Id` . |
