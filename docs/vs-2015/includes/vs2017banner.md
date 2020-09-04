@@ -1,6 +1,6 @@
 ---
-title: Fichier include
-description: Fichier include
+title: Fichier Include
+description: Fichier Include
 ms.custom: include file
 author: ghogen
 ms.author: ghogen
