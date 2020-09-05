@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 34b3cb9465c1efb946260917d755729e25c4e259
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9a4eb5062f8f1b01e8ad5e5165d7ec9ede636124
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89178290"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89485584"
 ---
 # <a name="persist-your-data"></a> Rendre vos données persistantes
 
@@ -86,7 +86,7 @@ Comme nous l’avons vu, vous allez utiliser un **volume nommé**. Imaginez un v
     docker volume create todo-db
     ```
 
-1. Arrêtez à nouveau le conteneur d’application todo dans le tableau de bord (ou avec `docker rm -f <id>` ), car il est toujours en cours d’exécution sans utiliser le volume persistant.
+1. Arrêtez le conteneur d’application todo une fois de plus dans la vue d’ancrage (ou avec `docker rm -f <id>` ), car il est toujours en cours d’exécution sans utiliser le volume persistant.
 
 1. Démarrez le conteneur d’application TODO, mais ajoutez l' `-v` indicateur pour spécifier un montage de volume. vous allez utiliser le volume nommé et le monter sur `/etc/todos` , ce qui capture tous les fichiers créés dans le chemin d’accès.
 
@@ -98,7 +98,7 @@ Comme nous l’avons vu, vous allez utiliser un **volume nommé**. Imaginez un v
 
     ![Éléments ajoutés à la liste de tâches](media/items-added.png)
 
-1. Supprimez le conteneur de l’application todo. Utilisez le tableau de bord ou `docker ps` pour récupérer l’ID, puis `docker rm -f <id>` pour le supprimer.
+1. Supprimez le conteneur de l’application todo. Utilisez la vue d’ancrage ou `docker ps` pour obtenir l’ID, puis `docker rm -f <id>` pour le supprimer.
 
 1. Démarrez un nouveau conteneur à l’aide de la même commande que ci-dessus.
 

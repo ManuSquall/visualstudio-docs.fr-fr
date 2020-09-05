@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e20427ae3d64a485bb25da2f4482bbbec51e3dda
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ac5103b15cee6e44650d9b8aef6fdf755874b2d2
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89219775"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89490285"
 ---
 # <a name="use-code-analyzers"></a>Utiliser des analyseurs de code
 
@@ -62,12 +62,12 @@ Le tableau suivant présente les différentes options de gravité :
 
 | Gravité (Explorateur de solutions) | Gravité (fichier EditorConfig) | Comportement au moment de la génération | Comportement de l’éditeur |
 |-|-|-|
-| Error | `error` | Les violations apparaissent comme des *Erreurs* dans les liste d’erreurs et dans la sortie de la génération en ligne de commande, et entraînent l’échec des builds.| Le code incriminé est souligné d’un tilde rouge et marqué d’une petite zone rouge dans la barre de défilement. |
+| Erreur | `error` | Les violations apparaissent comme des *Erreurs* dans les liste d’erreurs et dans la sortie de la génération en ligne de commande, et entraînent l’échec des builds.| Le code incriminé est souligné d’un tilde rouge et marqué d’une petite zone rouge dans la barre de défilement. |
 | Avertissement | `warning` | Les violations apparaissent en tant qu' *avertissements* dans le liste d’erreurs et dans la sortie de la génération en ligne de commande, mais ne provoquent pas l’échec des builds. | Le code incriminé est souligné d’un tilde vert et est marqué d’un petit cadre vert dans la barre de défilement. |
 | Info | `suggestion` | Les violations apparaissent sous la forme de *messages* dans le liste d’erreurs, et pas du tout dans la sortie de la génération de la ligne de commande. | Le code incriminé est souligné d’un tilde gris et marqué d’une petite zone grise dans la barre de défilement. |
 | Hidden | `silent` | Non visible par l’utilisateur. | Non visible par l’utilisateur. Toutefois, le diagnostic est signalé au moteur de diagnostic IDE. |
-| None | `none` | Entièrement supprimée. | Entièrement supprimée. |
-| Default | `default` | Correspond à la gravité par défaut de la règle. Pour déterminer la valeur par défaut d’une règle, recherchez dans la Fenêtre Propriétés. | Correspond à la gravité par défaut de la règle. |
+| Aucune | `none` | Entièrement supprimée. | Entièrement supprimée. |
+| Par défaut | `default` | Correspond à la gravité par défaut de la règle. Pour déterminer la valeur par défaut d’une règle, recherchez dans la Fenêtre Propriétés. | Correspond à la gravité par défaut de la règle. |
 
 La capture d’écran suivante de l’éditeur de code montre trois violations différentes avec des gravités différentes. Notez la couleur du tilde et le petit carré de couleur de la barre de défilement à droite.
 
@@ -76,6 +76,13 @@ La capture d’écran suivante de l’éditeur de code montre trois violations d
 La capture d’écran suivante montre les trois mêmes violations qui apparaissent dans le Liste d’erreurs :
 
 ![Erreur, avertissement et violation d’informations dans Liste d’erreurs](media/diagnostics-severities-in-error-list.png)
+
+### <a name="hidden-severity-versus-none-severity"></a>Gravité « masqué » par rapport à la gravité « aucun »
+
+`Hidden` les règles de gravité qui sont activées par défaut sont différentes des règles de gravité ou de désactivation `None` de deux façons.
+
+- Si un correctif de code a été enregistré pour une `Hidden` règle de gravité, le correctif est proposé en tant qu’action de refactorisation du code de l’ampoule légère dans Visual Studio, même si le diagnostic masqué n’est pas visible pour l’utilisateur. Ce n’est pas le cas pour les règles de gravité désactivée `None` .
+- `Hidden` les règles de gravité peuvent être configurées en bloc par des entrées qui [définissent une gravité de règle pour plusieurs règles d’analyseur à la fois dans un fichier EditorConfig](#set-rule-severity-of-multiple-analyzer-rules-at-once-in-an-editorconfig-file). `None` les règles de gravité ne peuvent pas être configurées de cette manière. Au lieu de cela, ils doivent être configurés via des entrées qui [définissent la gravité de la règle dans un fichier EditorConfig pour chaque ID de règle](#set-rule-severity-in-an-editorconfig-file).
 
 ::: moniker range=">=vs-2019"
 

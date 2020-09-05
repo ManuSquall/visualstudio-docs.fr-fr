@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 05/14/2020
 ms.technology: vs-azure
 ms.topic: quickstart
-ms.openlocfilehash: 321d85537f210d17414be115b8f6b3f8b8d5b3c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d92d3a22570fb21381f18f2ce353dbc2d999893b
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249194"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "89485396"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>Démarrage rapide : utiliser l’amarrage avec une application à page unique REACT dans Visual Studio
 
@@ -231,7 +231,7 @@ Une fois le cycle de développement et de débogage de l’application effectué
     | **Préfixe DNS** | Nom globalement unique | Nom qui identifie uniquement votre registre de conteneurs. |
     | **Abonnement** | Choisir votre abonnement | Sélectionnez l’abonnement Azure à utiliser. |
     | **[Groupe de ressources](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Nom du groupe de ressources où créer votre registre de conteneurs. Choisissez **Nouveau** pour créer un groupe de ressources.|
-    | **[PAIRE](/azure/container-registry/container-registry-skus)** | Standard | Niveau de service du registre de conteneurs  |
+    | **[PAIRE](/azure/container-registry/container-registry-skus)** | standard | Niveau de service du registre de conteneurs  |
     | **Emplacement du registre** | Un emplacement proche de vous | Choisissez un emplacement dans une [région](https://azure.microsoft.com/regions/) près de chez vous ou près d’autres services que votre registre de conteneurs va utiliser. |
 
     ![Boîte de dialogue de création d’un registre de conteneurs Azure dans Visual Studio][0]
@@ -246,7 +246,7 @@ Vous pouvez désormais extraire le conteneur à partir du registre sur tout hôt
 
 ## <a name="additional-resources"></a>Ressources supplémentaires
 
-* [Développement de conteneurs avec Visual Studio](/visualstudio/containers)
+* [Développement de conteneurs avec Visual Studio](./index.yml)
 * [Détecter un problème de développement Visual Studio avec Docker](troubleshooting-docker-errors.md)
 * [Référentiel GitHub des outils de conteneur Visual Studio](https://github.com/Microsoft/DockerTools)
 
