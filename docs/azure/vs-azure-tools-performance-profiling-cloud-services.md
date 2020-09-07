@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
-ms.openlocfilehash: 04e3ee89498447f7743fc1b5119e129f046b4fcc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5c92a2bb2349f1b5543672d7ecd944e3d82bb500
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911776"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508429"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>Test des performances d’un service cloud
 ## <a name="overview"></a>Vue d’ensemble
@@ -54,7 +54,7 @@ Vous simulez généralement une charge pour tester des services cloud dans des c
 ## <a name="profiling-a-cloud-service-in-azure"></a>Profilage d’un service cloud dans Azure
 Quand vous publiez votre service cloud à partir de Visual Studio, profilez le service et spécifiez les paramètres de profilage appropriés pour obtenir les informations dont vous avez besoin. Une session de profilage est démarrée pour chaque instance d’un rôle. Pour plus d’informations sur la publication de votre service à partir de Visual Studio, consultez [Publication d’un service cloud Azure depuis Visual Studio](vs-azure-tools-publishing-a-cloud-service.md).
 
-Pour mieux comprendre le fonctionnement du profilage des performances dans Visual Studio, consultez le [Guide du débutant en profilage des performances](https://msdn.microsoft.com/library/azure/ms182372.aspx) et la rubrique [Analyse des performances de l’application à l’aide des outils de profilage](https://msdn.microsoft.com/library/azure/z9z62c29.aspx).
+Pour mieux comprendre le fonctionnement du profilage des performances dans Visual Studio, consultez le [Guide du débutant en profilage des performances](../profiling/beginners-guide-to-performance-profiling.md) et la rubrique [Analyse des performances de l’application à l’aide des outils de profilage](../profiling/performance-explorer.md).
 
 > [!NOTE]
 > Quand vous publiez votre service cloud, activez IntelliTrace ou le profilage. Vous ne pouvez pas activer les deux méthodes.
@@ -68,7 +68,7 @@ Vous avez le choix entre plusieurs méthodes de collecte pour le profilage, selo
 * **Instrumentation** : cette méthode collecte des données de temporisation détaillées qui sont utiles pour l’analyse ciblée et l’analyse des problèmes de performances des entrées/sorties. La méthode d’instrumentation enregistre chaque entrée, sortie et appel de fonction des fonctions d’un module pendant l’exécution d’un profilage. Cette méthode permet de collecter des informations de temporisation détaillées à propos d’une partie précise de votre code. Elle vous aide à comprendre l’impact des opérations d’entrée et de sortie sur les performances de l’application. Cette méthode est désactivée sur un ordinateur exécutant un système d’exploitation 32 bits. Cette option est disponible uniquement si vous exécutez le service cloud dans Azure, et pas localement dans l’émulateur de calcul.
 * **Allocation de mémoire .NET** : cette méthode collecte des données d’allocation de mémoire .NET Framework à l’aide de la méthode de profilage par échantillonnage. Les données collectées incluent le nombre et la taille des objets alloués.
 * **Accès concurrentiel** : cette méthode collecte des données sur la contention de ressources, ainsi que des données sur l’exécution des threads et processus qui sont utiles pour analyser les applications multithread et multiprocessus. La méthode d’accès concurrentiel collecte des données pour chaque événement qui bloque l’exécution de votre code, par exemple quand un thread attend la libération d’un verrou d’accès à une ressource d’application. Cette méthode est utile pour l’analyse des applications multithread.
-* Vous pouvez également activer le **profilage d’interaction de couche**, qui fournit des informations supplémentaires sur les temps d’exécution des appels ADO.NET synchrones dans les fonctions des applications multicouches qui communiquent avec une ou plusieurs bases de données. Vous pouvez collecter des données d’interaction de couche à l’aide de n’importe quelle méthode de profilage. Pour plus d’informations sur le profilage d’interaction de couche, consultez [Vue Interactions de couche](https://msdn.microsoft.com/library/azure/dd557764.aspx).
+* Vous pouvez également activer le **profilage d’interaction de couche**, qui fournit des informations supplémentaires sur les temps d’exécution des appels ADO.NET synchrones dans les fonctions des applications multicouches qui communiquent avec une ou plusieurs bases de données. Vous pouvez collecter des données d’interaction de couche à l’aide de n’importe quelle méthode de profilage. Pour plus d’informations sur le profilage d’interaction de couche, consultez [Vue Interactions de couche](../profiling/tier-interactions-view.md).
 
 ## <a name="configuring-profiling-settings"></a>Configuration des paramètres de profilage
 L’illustration suivante montre comment configurer vos paramètres de profilage à partir de la boîte de dialogue Publication d’application Azure.
@@ -102,7 +102,7 @@ Une session de profilage est créée pour chaque instance de rôle dans votre se
 3. Pour consulter des rapports de profilage pour une instance, choisissez le rôle dans le service, puis ouvrez le menu contextuel pour une instance spécifique et choisissez **Afficher le rapport de profilage**.
 
     Le rapport, un fichier .vsp, est maintenant téléchargé à partir d’Azure, et l’état du téléchargement apparaît dans le journal des activités Azure. À la fin du téléchargement, le rapport de profilage s’affiche dans un onglet de l’éditeur pour Visual Studio nommé <nom_rôle\>*<numéro_instance\>*<identificateur\>.vsp. Une synthèse du rapport est présentée.
-4. Pour afficher différentes vues du rapport, dans la liste Affichage actuel, choisissez le type de vue souhaité. Pour plus d’informations, consultez [Vues des rapports d’outils de profilage](https://msdn.microsoft.com/library/azure/bb385755.aspx).
+4. Pour afficher différentes vues du rapport, dans la liste Affichage actuel, choisissez le type de vue souhaité. Pour plus d’informations, consultez [Vues des rapports d’outils de profilage](../profiling/performance-report-views.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 [Débogage de Cloud Services](vs-azure-tools-debug-cloud-services-virtual-machines.md)

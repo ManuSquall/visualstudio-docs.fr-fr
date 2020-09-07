@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: 1a36dc743108d2cfbf9e5405af727b79aeda4808
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8702b9814214a902a644cc5854250b600c301caa
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800474"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508442"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Consulter et gérer les ressources de stockage à l’aide de l’Explorateur de serveurs
 
@@ -126,7 +126,7 @@ Vous pouvez choisir un ou plusieurs fichiers à charger, et vous pouvez charger 
 
 Si vous utilisez les diagnostics Azure pour enregistrer des données à partir de votre application Azure et si vous avez transféré des journaux d’activité vers votre compte de stockage, vous verrez les conteneurs qu’Azure a créés pour ces journaux d’activité. L’affichage de ces journaux d’activité dans l’Explorateur de serveurs permet d’identifier facilement les problèmes de votre application, en particulier si elle est déployée sur Azure.
 
-Pour plus d’informations sur les diagnostics Azure, consultez [Collecte des données de journalisation avec les diagnostics Azure](https://msdn.microsoft.com/library/azure/gg433048.aspx).
+Pour plus d’informations sur les diagnostics Azure, consultez [Collecte des données de journalisation avec les diagnostics Azure](/azure/cloud-services/cloud-services-dotnet-diagnostics).
 
 ### <a name="to-get-the-url-for-a-blob"></a>Pour obtenir l’URL d’un objet blob
 
@@ -275,7 +275,7 @@ Le nouveau compte de stockage s’affiche dans la liste **Stockage** de l’Expl
 
    * Le nom du compte de stockage existant que vous voulez attacher.
    * La clé du compte de stockage sélectionné. Cette valeur est généralement fournie quand vous sélectionnez un compte de stockage. Si vous voulez que Visual Studio se souvienne de la clé du compte de stockage, cochez la case **Mémoriser la clé du compte**.
-   * Le protocole à utiliser pour se connecter au compte de stockage, par exemple HTTP, HTTPS ou un point de terminaison personnalisé. Pour plus d’informations sur les points de terminaison personnalisés, consultez [Configuration de chaînes de connexion](https://msdn.microsoft.com/library/azure/ee758697.aspx).
+   * Le protocole à utiliser pour se connecter au compte de stockage, par exemple HTTP, HTTPS ou un point de terminaison personnalisé. Pour plus d’informations sur les points de terminaison personnalisés, consultez [Configuration de chaînes de connexion](/azure/storage/common/storage-configure-connection-string).
 
 ### <a name="to-view-the-secondary-endpoints"></a>Pour afficher les points de terminaison secondaires
 

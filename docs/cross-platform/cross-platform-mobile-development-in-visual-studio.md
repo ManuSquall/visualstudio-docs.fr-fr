@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e0f589ae3c6daa48a9bea6d8a0b561d7b8de337
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 19e1a968af60b76d07e24af1d86c74e427a3cd52
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801592"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509053"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Développement mobile multiplateforme dans Visual Studio
 
@@ -82,7 +82,6 @@ Avec Visual Studio Tools pour Xamarin, vous pouvez cibler Android, iOS et Window
 |[Introduction à la plateforme Windows universelle](/windows/uwp/get-started/universal-application-platform-guide)|
 |[Créer votre première application](/windows/uwp/get-started/your-first-app)|
 |[Développer des applications pour la plateforme Windows universelle (UWP)](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md)|
-|[Migrer des applications vers la plateforme Windows universelle (UWP)](https://msdn.microsoft.com/library/mt148501.aspx)|
 
 ::: moniker range="vs-2017"
 

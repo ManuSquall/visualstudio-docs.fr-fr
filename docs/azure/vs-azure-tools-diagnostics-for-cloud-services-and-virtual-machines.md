@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.openlocfilehash: 2312c636f465bd39cdcbc4ca0ab63c107151c5be
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: 9912a7fa0e83c5433e0eba1c7ffa23763331af6b
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426731"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508494"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Configurer les diagnostics pour les services cloud et les machines virtuelles Azure
 Quand vous devez résoudre les problèmes d’un service cloud ou d’une machine virtuelle Azure, vous pouvez utiliser Visual Studio pour configurer plus facilement les diagnostics Azure. Les diagnostics capturent les données système et les données de journalisation sur les machines virtuelles et sur les instances de machine virtuelle qui exécutent votre service cloud. Les données de diagnostic sont transférées à un compte de stockage que vous choisissez. Pour plus d’informations sur la journalisation des diagnostics dans Azure, consultez [Activer la journalisation des diagnostics pour les applications web dans Azure App Service](/azure/app-service/web-sites-enable-diagnostic-log).
@@ -156,18 +156,18 @@ Si vous utilisez Azure SDK 2.5 et que vous voulez spécifier une source de donn�
 ```
 
 ### <a name="performance-counters"></a>Compteurs de performance
-Les informations d’un compteur de performances peuvent vous aider à localiser des goulets d’étranglement système et à affiner les performances des applications et du système. Pour plus d’informations, consultez [Créer et utiliser des compteurs de performances dans une application Azure](https://msdn.microsoft.com/library/azure/hh411542.aspx) . Pour capturer des compteurs de performances, cochez la case **Activer le transfert des compteurs de performances**. Pour augmenter ou diminuer l’intervalle entre les transferts des journaux des événements vers votre compte de stockage, changez la valeur de **Période de transfert (min)**. Activez les cases à cocher correspondant aux compteurs de performances que vous voulez suivre.
+Les informations d’un compteur de performances peuvent vous aider à localiser des goulets d’étranglement système et à affiner les performances des applications et du système. Pour plus d’informations, consultez [Créer et utiliser des compteurs de performances dans une application Azure](/azure/cloud-services/diagnostics-performance-counters) . Pour capturer des compteurs de performances, cochez la case **Activer le transfert des compteurs de performances**. Pour augmenter ou diminuer l’intervalle entre les transferts des journaux des événements vers votre compte de stockage, changez la valeur de **Période de transfert (min)**. Activez les cases à cocher correspondant aux compteurs de performances que vous voulez suivre.
 
 ![Compteurs de performance](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758147.png)
 
-Pour suivre un compteur de performances qui n’est pas répertorié, entrez-le en utilisant la syntaxe suggérée. Sélectionnez ensuite **Ajouter**. Le système d’exploitation de la machine virtuelle détermine les compteurs de performances que vous pouvez suivre. Pour plus d’informations sur la syntaxe, consultez [spécifier un chemin d’accès de compteur](https://msdn.microsoft.com/library/windows/desktop/aa373193.aspx).
+Pour suivre un compteur de performances qui n’est pas répertorié, entrez-le en utilisant la syntaxe suggérée. Sélectionnez ensuite **Ajouter**. Le système d’exploitation de la machine virtuelle détermine les compteurs de performances que vous pouvez suivre. Pour plus d’informations sur la syntaxe, consultez [spécifier un chemin d’accès de compteur](/windows/win32/perfctrs/specifying-a-counter-path).
 
 ### <a name="infrastructure-logs"></a>Journaux d’activité d’infrastructure
 Les journaux d’activité d’infrastructure contiennent des informations sur l’infrastructure de diagnostic Azure, le module RemoteAccess et le module RemoteForwarder. Pour collecter des informations sur les journaux d’activité d’infrastructure, cochez la case **Activer le transfert des journaux d’activité d’infrastructure**. Pour augmenter ou diminuer l’intervalle entre les transferts des journaux d’activité d’infrastructure vers votre compte de stockage, changez la valeur de **Période de transfert (min)**.
 
 ![Journaux d’activité d’infrastructure de diagnostics](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758148.png)
 
-Pour plus d’informations, consultez [Collecter des données de journalisation avec les diagnostics Azure](https://msdn.microsoft.com/library/azure/gg433048.aspx).
+Pour plus d’informations, consultez [Collecter des données de journalisation avec les diagnostics Azure](/azure/cloud-services/cloud-services-dotnet-diagnostics).
 
 ### <a name="log-directories"></a>Répertoires de journaux
 Les répertoires de journaux contiennent des données collectées à partir de répertoires de journaux pour les demandes, les demandes ayant échoué ou les dossiers IIS que vous choisissez. Pour capturer les répertoires de journaux, cochez la case **Activer le transfert des répertoires de journaux**. Pour augmenter ou diminuer l’intervalle entre les transferts des journaux d’activité vers votre compte de stockage, changez la valeur de **Période de transfert (min)**.
@@ -185,7 +185,7 @@ Les événements sont capturés à partir de sources d’événements et de fich
 
 ![Journaux d’activité de suivi des événements ETW](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC766025.png)
 
-L’infrastructure ETW est prise en charge dans ASP.NET via des classes de l’espace de noms [System.Diagnostics.aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110)). L’espace de noms Microsoft.WindowsAzure.Diagnostics, qui hérite des classes [System.Diagnostics.aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110)), permet d’utiliser [System.Diagnostics.aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110)) comme infrastructure de journalisation dans l’environnement Azure. Pour plus d’informations, consultez [Contrôler la journalisation et le suivi dans Microsoft Azure](https://msdn.microsoft.com/magazine/ff714589.aspx) et [Activer les diagnostics dans les services cloud et les machines virtuelles Azure](/azure/cloud-services/cloud-services-dotnet-diagnostics).
+L’infrastructure ETW est prise en charge dans ASP.NET via des classes de l’espace de noms [System.Diagnostics.aspx](/dotnet/api/system.diagnostics). L’espace de noms Microsoft.WindowsAzure.Diagnostics, qui hérite des classes [System.Diagnostics.aspx](/dotnet/api/system.diagnostics), permet d’utiliser [System.Diagnostics.aspx](/dotnet/api/system.diagnostics) comme infrastructure de journalisation dans l’environnement Azure. Pour plus d’informations, consultez [Contrôler la journalisation et le suivi dans Microsoft Azure](/archive/msdn-magazine/2010/june/msdn-magazine-cloud-diagnostics-take-control-of-logging-and-tracing-in-windows-azure) et [Activer les diagnostics dans les services cloud et les machines virtuelles Azure](/azure/cloud-services/cloud-services-dotnet-diagnostics).
 
 ### <a name="crash-dumps"></a>Vidages sur incident
 Pour capturer des informations sur le moment où une instance de rôle se bloque, cochez la case **Activer le transfert de vidages sur incident**. (Étant donné que ASP.NET gère la plupart des exceptions, cela n’est généralement utile que pour les rôles de travail.) Pour augmenter ou diminuer le pourcentage d’espace de stockage dédié aux vidages sur incident, modifiez la valeur **quota de répertoire (%)** . Vous pouvez changer le conteneur de stockage où les vidages sur incident sont stockés et choisir de capturer un vidage **Complet** ou **Mini**.
@@ -194,7 +194,7 @@ Les processus actuellement suivis sont répertoriés dans la capture d’écran 
 
 ![Vidages sur incident](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC766026.png)
 
-Pour plus d’informations, consultez [Contrôler la journalisation et le suivi dans Microsoft Azure](https://msdn.microsoft.com/magazine/ff714589.aspx) et [Microsoft Azure Diagnostics Part 4: Custom Logging Components and Azure Diagnostics 1.3 Changes](https://www.red-gate.com/simple-talk/cloud/platform-as-a-service/microsoft-azure-diagnostics-part-4-custom-logging-components-and-azure-diagnostics-1.3-changes/).
+Pour plus d’informations, consultez [Contrôler la journalisation et le suivi dans Microsoft Azure](/archive/msdn-magazine/2010/june/msdn-magazine-cloud-diagnostics-take-control-of-logging-and-tracing-in-windows-azure) et [Microsoft Azure Diagnostics Part 4: Custom Logging Components and Azure Diagnostics 1.3 Changes](https://www.red-gate.com/simple-talk/cloud/platform-as-a-service/microsoft-azure-diagnostics-part-4-custom-logging-components-and-azure-diagnostics-1.3-changes/).
 
 ## <a name="view-the-diagnostics-data"></a>Affichage des données de diagnostic
 Après avoir collecté les données de diagnostic pour un service cloud ou une machine virtuelle, vous pouvez les visualiser.
@@ -256,7 +256,7 @@ Si vous recherchez des informations sur un problème dans un service cloud en co
     Si vous modifiez la collecte de données dans l’Explorateur de serveurs, les modifications continuent à s’appliquer jusqu’au redéploiement complet de votre service cloud. Si vous utilisez les paramètres de publication par défaut, les modifications ne sont pas remplacées. Le paramètre de publication par défaut provoque la mise à jour du déploiement existant, et non pas un redéploiement complet. Pour garantir l’effacement des paramètres au moment du déploiement, accédez à l’onglet **Paramètres avancés** dans l’Assistant Publication, puis décochez la case **Mise à jour du déploiement**. Quand vous redéployez après avoir désactivé cette case à cocher, les paramètres sont rétablis avec les valeurs du fichier .wadcfgx (ou .wadcfg) tels que définis dans l’éditeur de **Propriétés** pour le rôle. Si vous mettez à jour votre déploiement, Azure conserve les paramètres précédents.
 
 ## <a name="troubleshoot-azure-cloud-service-issues"></a>Dépannage de problèmes de service cloud Azure
-Si vous rencontrez des problèmes avec vos projets de service cloud, par exemple si un rôle reste bloqué à l’état « occupé », s’il exécute un cycle en boucle ou s’il lève une erreur interne du serveur, il existe des outils et des techniques permettant de diagnostiquer et de corriger le problème. Pour des exemples spécifiques de problèmes courants et de solutions, et pour une vue d’ensemble des concepts et des outils que vous pouvez utiliser pour diagnostiquer et corriger ces erreurs, consultez [Azure PaaS compute diagnostics data](https://blogs.msdn.microsoft.com/kwill/2013/08/09/windows-azure-paas-compute-diagnostics-data/).
+Si vous rencontrez des problèmes avec vos projets de service cloud, par exemple si un rôle reste bloqué à l’état « occupé », s’il exécute un cycle en boucle ou s’il lève une erreur interne du serveur, il existe des outils et des techniques permettant de diagnostiquer et de corriger le problème. Pour des exemples spécifiques de problèmes courants et de solutions, et pour une vue d’ensemble des concepts et des outils que vous pouvez utiliser pour diagnostiquer et corriger ces erreurs, consultez [Azure PaaS compute diagnostics data](/archive/blogs/kwill/windows-azure-paas-compute-diagnostics-data).
 
 ## <a name="q--a"></a>Questions et réponses
 **Qu’est-ce que la taille de la mémoire tampon et quelle doit-elle être ?**

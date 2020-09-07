@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 57841baaf147c2aae02ac89a8401c46d3bd64ca3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 42d1f394cb4e65a3794e3e869f182ba81237eeef
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911678"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508390"
 ---
 # <a name="set-up-named-authentication-credentials"></a>Configurer les informations d’authentification nommées
 
@@ -33,7 +33,7 @@ Dans l’Explorateur de serveurs, cliquez avec le bouton droit sur le nœud **Az
 - Choisissez un abonnement actif puis sélectionnez **Modifier** afin d'ouvrir une boîte de dialogue dans laquelle vous pouvez modifier un abonnement existant à utiliser pour l'authentification.
 - Sélectionnez **Nouveau** pour ouvrir la boîte de dialogue **Nouvel abonnement** puis fournissez les informations requises. Pour télécharger le certificat sur votre service cloud, connectez-vous au portail Azure, accédez à votre service cloud, sélectionnez **Paramètres > Certificats de gestion**, sélectionnez **Charger**, puis spécifiez le chemin d'accès au fichier `.cer`.
 
-Si vous souhaitez créer vous-même un certificat, vous pouvez consulter les instructions fournies dans [Créer et charger un certificat de gestion pour Azure](https://msdn.microsoft.com/library/windowsazure/gg551722.aspx), puis charger manuellement le certificat sur le [portail Azure](https://portal.azure.com/).
+Si vous souhaitez créer vous-même un certificat, vous pouvez consulter les instructions fournies dans [Créer et charger un certificat de gestion pour Azure](/azure/cloud-services/cloud-services-certs-create), puis charger manuellement le certificat sur le [portail Azure](https://portal.azure.com/).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

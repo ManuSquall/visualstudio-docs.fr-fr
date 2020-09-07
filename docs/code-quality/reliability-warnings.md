@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db99a9628992c40ef65699fee72d65b891ed1e24
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6350c98f5fb4bfab5cfd7d70a5d509d3098b15f
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89219606"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508533"
 ---
 # <a name="reliability-warnings"></a>Avertissements liés à la fiabilité
 
@@ -28,11 +28,7 @@ Les avertissements de fiabilité prennent en charge la fiabilité des bibliothè
 |Règle|Description|
 |----------|-----------------|
 |[CA2000 : Supprimer les objets avant la mise hors de portée](../code-quality/ca2000.md)|Sachant qu'un événement exceptionnel peut se produire et empêcher l'exécution du finaliseur d'un objet, ce dernier doit plutôt être supprimé explicitement avant que toutes les références à lui soient hors de portée.|
-|[CA2001 : Évitez d'appeler des méthodes susceptibles de poser des problèmes](../code-quality/ca2001.md)|Un membre appelle une méthode potentiellement dangereuse ou problématique.|
 |[CA2002 : Ne définissez pas un verrou sur des objets à identité faible](../code-quality/ca2002.md)|Un objet est dit d'identité faible lorsqu'il est accessible directement au-delà des limites d'un domaine d'application. Un thread qui essaie d'acquérir un verrou sur un objet qui affiche une identité faible peut être bloqué par un deuxième thread dans un domaine d'application différent qui dispose d'un verrou sur le même objet.|
-|[CA2003 : Ne traitez pas les fibres comme des threads](../code-quality/ca2003.md)|Un thread managé est traité comme un thread Win32.|
-|[CA2004 : Supprimez les appels à GC.KeepAlive](../code-quality/ca2004.md)|Si vous effectuez une conversion en utilisation SafeHandle, supprimez tous les appels à GC. KeepAlive (objet). Dans ce cas, les classes n’ont pas besoin d’appeler GC. KeepAlive, en supposant qu’ils n’ont pas de finaliseur, mais qu’ils reposent sur SafeHandle pour finaliser le handle du système d’exploitation.|
-|[CA2006 : Utilisez SafeHandle pour encapsuler les ressources natives](../code-quality/ca2006.md)|L'utilisation de IntPtr dans du code managé peut être le signe d'un problème potentiel de sécurité et de fiabilité. Toute utilisation de IntPtr doit être passée en revue pour déterminer s’il est nécessaire de recourir à un SafeHandle ou une technologie similaire à la place.|
 |[CA2007 : N’attendez pas directement une Tâche](../code-quality/ca2007.md)|Une méthode asynchrone [attend](/dotnet/csharp/language-reference/keywords/await) directement un <xref:System.Threading.Tasks.Task> .|
 |[CA2008 : Ne pas créer de tâches sans passer TaskScheduler](../code-quality/ca2008.md)|Une opération de création de tâche ou de continuation utilise une surcharge de méthode qui ne spécifie pas de <xref:System.Threading.Tasks.TaskScheduler> paramètre.|
 |[CA2009 : N’appelez pas ToImmutableCollection sur une valeur ImmutableCollection](../code-quality/ca2009.md)|`ToImmutable` la méthode était inutilement appelée sur une collection immuable de l' <xref:System.Collections.Immutable> espace de noms.|

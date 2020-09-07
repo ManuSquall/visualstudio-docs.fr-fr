@@ -8,12 +8,12 @@ ms.assetid: E2C9420F-A5D5-4472-9020-2B63FB27A133
 ms.technology: vs-unity-tools
 ms.workload:
 - unity
-ms.openlocfilehash: e824951556124f080f14cdd9f440037decf5146f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9a53db2d7cb73fbbb8ea694386dbada3186957ee
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815134"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508975"
 ---
 # <a name="using-net-4x-in-unity"></a>Utilisation de .NET 4.x dans Unity
 
@@ -233,7 +233,7 @@ Ces conseils peuvent vous aider à bien démarrer avec TAP dans Unity :
 * Les fonctions asynchrones qui retournent une tâche doivent avoir le suffixe **« Async »** accolé à leurs noms. Le suffixe « Async » permet d’indiquer qu’une fonction doit toujours être attendue.
 * Utilisez uniquement le type de retour `async void` pour les fonctions qui déclenchent des fonctions asynchrones à partir du code synchrone classique. De telles fonctions ne peuvent pas être attendues et ne doivent pas comporter le suffixe « Async » dans leurs noms.
 * Unity utilise UnitySynchronizationContext pour garantir l’exécution des fonctions asynchrones sur le thread principal par défaut. L’API Unity n’est pas accessible en dehors du thread principal.
-* Il est possible d’exécuter des tâches sur des threads d’arrière-plan avec des méthodes telles que [`Task.Run`](https://msdn.microsoft.com/library/hh195051.aspx) et [`Task.ConfigureAwait(false)`](https://msdn.microsoft.com/library/system.threading.tasks.task.configureawait.aspx) . Cette technique permet de décharger les opérations coûteuses du thread principal pour améliorer les performances. Toutefois, l’utilisation de threads d’arrière-plan peut entraîner des problèmes difficiles à déboguer, par exemple les [conditions de concurrence](https://wikipedia.org/wiki/Race_condition).
+* Il est possible d’exécuter des tâches sur des threads d’arrière-plan avec des méthodes telles que [`Task.Run`](/dotnet/api/system.threading.tasks.task.run) et [`Task.ConfigureAwait(false)`](/dotnet/api/system.threading.tasks.task.configureawait) . Cette technique permet de décharger les opérations coûteuses du thread principal pour améliorer les performances. Toutefois, l’utilisation de threads d’arrière-plan peut entraîner des problèmes difficiles à déboguer, par exemple les [conditions de concurrence](https://wikipedia.org/wiki/Race_condition).
 * L’API Unity n’est pas accessible en dehors du thread principal.
 * Les tâches qui utilisent des threads ne sont pas prises en charge sur les builds Unity WebGL.
 

@@ -10,12 +10,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb338803d50b2ecc9af8c8db6a6b6dc2f3631161
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+dev_langs:
+- csharp
+- vb
+ms.openlocfilehash: 6e3e60fe873d7bcb512e56c844e76fcbef037d42
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85906180"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508923"
 ---
 # <a name="walkthrough-outlining"></a>Procédure pas à pas : mode Plan
 Configurez des fonctionnalités basées sur le langage, telles que le mode plan, en définissant les genres de zones de texte que vous souhaitez développer ou réduire. Vous pouvez définir des régions dans le contexte d’un service de langage, ou définir votre propre extension de nom de fichier et type de contenu, appliquer la définition de région à ce type uniquement ou appliquer les définitions de régions à un type de contenu existant (tel que « texte »). Cette procédure pas à pas montre comment définir et afficher des régions en mode plan.

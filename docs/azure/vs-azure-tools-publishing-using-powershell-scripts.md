@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 25943a6b3edc1a55c6d27d3c2737a9893edf5032
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f7e2f79b5e7daea577693bc0fd54cef70bb7e4a
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84179958"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508403"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Utilisation de scripts Windows PowerShell pour publier des environnements de développement et de test
 
@@ -154,7 +154,7 @@ Si vous n’avez jamais exécuté de script Windows PowerShell auparavant, vous
 
    ![Créer un package Web Deploy](./media/vs-azure-tools-publishing-using-powershell-scripts/IC767885.png)
 
-   Pour plus d’informations, consultez [Comment : créer un package de déploiement web dans Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx). Vous pouvez également automatiser la création de votre package Web Deploy, comme indiqué dans la section [Personnalisation et extension des scripts de publication](#customizing-and-extending-the-publish-scripts).
+   Pour plus d’informations, consultez [Comment : créer un package de déploiement web dans Visual Studio](/previous-versions/aspnet/dd465323(v=vs.110)). Vous pouvez également automatiser la création de votre package Web Deploy, comme indiqué dans la section [Personnalisation et extension des scripts de publication](#customizing-and-extending-the-publish-scripts).
 
 1. Dans l’**Explorateur de solutions**, ouvrez le menu contextuel du script, puis choisissez **Ouvrir avec PowerShell ISE**.
 1. Si vous exécutez des scripts Windows PowerShell sur cet ordinateur pour la première fois, ouvrez une fenêtre d’invite de commandes avec des privilèges d’administrateur et tapez la commande suivante :

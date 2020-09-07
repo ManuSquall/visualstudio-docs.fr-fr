@@ -10,12 +10,12 @@ ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: 68b64b3097d2b26d30593ac63de5e531d6cc7736
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 00b6d001a8764d3519f0584de88a55a000447054
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800487"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508481"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Débogage d'un service cloud ou d'une machine virtuelle Azure dans Visual Studio
 
@@ -75,7 +75,7 @@ L’activation du débogage distant pour un service cloud n’entraîne pas de b
 
     ![Attacher le débogueur](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746719.gif)
 
-3. Une fois que le débogueur est joint à une instance, déboguez comme vous le feriez normalement. Le débogueur se joint automatiquement au processus hôte approprié pour votre rôle. Selon le rôle, le débogueur est attaché à w3wp.exe, WaWorkerHost.exe ou WaIISHost.exe. Pour identifier le processus auquel le débogueur est attaché, développez le nœud de l’instance dans l’Explorateur de serveurs. Pour plus d’informations sur les processus Azure, consultez [Architecture de rôle Azure](https://blogs.msdn.microsoft.com/kwill/2011/05/05/windows-azure-role-architecture/).
+3. Une fois que le débogueur est joint à une instance, déboguez comme vous le feriez normalement. Le débogueur se joint automatiquement au processus hôte approprié pour votre rôle. Selon le rôle, le débogueur est attaché à w3wp.exe, WaWorkerHost.exe ou WaIISHost.exe. Pour identifier le processus auquel le débogueur est attaché, développez le nœud de l’instance dans l’Explorateur de serveurs. Pour plus d’informations sur les processus Azure, consultez [Architecture de rôle Azure](/archive/blogs/kwill/windows-azure-role-architecture).
 
     ![Boîte de dialogue Sélectionner le type de code](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
@@ -128,7 +128,7 @@ Vous pouvez déboguer des programmes exécutés sur des machines virtuelles Azur
 
     ![Boîte de dialogue Sélectionner le type de code](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
-5. Choisissez les processus que vous souhaitez déboguer sur la machine virtuelle, puis cliquez sur **attacher**. Par exemple, vous pouvez choisir le processus w3wp.exe pour déboguer une application web sur la machine virtuelle. Pour plus d’informations, consultez [Déboguer un ou plusieurs processus dans Visual Studio](https://msdn.microsoft.com/library/jj919165.aspx) et [Architecture de rôle Azure](https://blogs.msdn.microsoft.com/kwill/2011/05/05/windows-azure-role-architecture/).
+5. Choisissez les processus que vous souhaitez déboguer sur la machine virtuelle, puis cliquez sur **attacher**. Par exemple, vous pouvez choisir le processus w3wp.exe pour déboguer une application web sur la machine virtuelle. Pour plus d’informations, consultez [Déboguer un ou plusieurs processus dans Visual Studio](../debugger/debug-multiple-processes.md) et [Architecture de rôle Azure](/archive/blogs/kwill/windows-azure-role-architecture).
 
 ## <a name="create-a-web-project-and-a-virtual-machine-for-debugging"></a>Créer un projet web et une machine virtuelle pour le débogage
 
@@ -167,7 +167,7 @@ Les projets Visual Studio ASP.NET permettent de créer une machine virtuelle que
 
     ![Journal des activités Azure](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746721.png)
 
-6. Publiez votre projet comme décrit dans la rubrique [Déploiement d’un projet web à l’aide de la publication en un clic dans Visual Studio](https://msdn.microsoft.com/library/dd465337.aspx). Comme vous voulez effectuer le débogage sur la machine virtuelle, sur la page **Paramètres** de l’Assistant **Publier le site web**, sélectionnez la configuration **Débogage**. Ceci permet de s’assurer que les symboles de code sont disponibles pendant le débogage.
+6. Publiez votre projet comme décrit dans la rubrique [Déploiement d’un projet web à l’aide de la publication en un clic dans Visual Studio](/previous-versions/aspnet/dd465337(v=vs.110)). Comme vous voulez effectuer le débogage sur la machine virtuelle, sur la page **Paramètres** de l’Assistant **Publier le site web**, sélectionnez la configuration **Débogage**. Ceci permet de s’assurer que les symboles de code sont disponibles pendant le débogage.
 
     ![Paramètres de publication](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718349.png)
 
@@ -183,7 +183,7 @@ Les projets Visual Studio ASP.NET permettent de créer une machine virtuelle que
 
     ![Boîte de dialogue Sélectionner le type de code](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
-10. Choisissez les processus que vous souhaitez déboguer sur la machine virtuelle, puis cliquez sur **attacher**. Par exemple, vous pouvez choisir le processus w3wp.exe pour déboguer une application web sur la machine virtuelle. Pour plus d’informations, consultez [Déboguer un ou plusieurs processus dans Visual Studio](https://msdn.microsoft.com/library/jj919165.aspx) .
+10. Choisissez les processus que vous souhaitez déboguer sur la machine virtuelle, puis cliquez sur **attacher**. Par exemple, vous pouvez choisir le processus w3wp.exe pour déboguer une application web sur la machine virtuelle. Pour plus d’informations, consultez [Déboguer un ou plusieurs processus dans Visual Studio](../debugger/debug-multiple-processes.md) .
 
 ## <a name="next-steps"></a>Étapes suivantes
 

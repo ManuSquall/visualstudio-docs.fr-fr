@@ -7,12 +7,12 @@ ms.assetid: 2e0fd8bb-8f20-487c-b350-b8fde405ea5e
 ms.date: 09/02/2020
 ms.topic: how-to
 description: Découvrez comment activer l’avantage Support technique inclus dans votre abonnement Visual Studio.
-ms.openlocfilehash: 3081836b94fbc5fdda277d694086acc18db6eb44
-ms.sourcegitcommit: 1d74273a50ede5a90d9d64372d93aad357daef42
+ms.openlocfilehash: ba4a80f604116a10901d98229980f2732956c0df
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89365844"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508936"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Activer et utiliser l’avantage Support technique dans les abonnements Visual Studio
 L’avantage Support technique dans les abonnements Visual Studio permet de résoudre les problèmes couverts par la garantie de réparation et d’assistance dans les **environnements hors production** pour les produits se trouvant toujours dans la phase de support standard du [cycle de vie du support](https://support.microsoft.com/lifecycle/search). Les abonnements standard et cloud annuels Visual Studio Enterprise acceptent quatre incidents, tandis que les abonnements standard et cloud annuels Visual Studio Professional en acceptent deux (pendant un an à compter de l’activation de l’avantage). L’avantage doit être activé quand l’abonnement est actif.
@@ -33,7 +33,13 @@ Les produits non-développeur (tels que SQL, Windows, SharePoint) téléchargés
 Descriptions des niveaux de produit : développer les **plans de support non disponibles**. Si vous voyez **le plan de support ne peut pas être utilisé pour la prise en charge du produit spécifié (code : 8)**, votre contrat de support ne peut pas être utilisé pour la version du produit que vous avez sélectionnée.
 
 > [!IMPORTANT]
-> Les incidents de support fournis concernent la prise en charge des correctifs de réparation.  Ils ne peuvent pas être utilisés pour obtenir de l’aide sur les problèmes de codage/développement impliquant Microsoft Teams, Microsoft Office, Microsoft SharePoint ou Microsoft Outlook
+> Les incidents de support fournis concernent la prise en charge des correctifs de réparation.  Ils ne peuvent pas être utilisés pour obtenir de l’aide sur les problèmes de codage/développement impliquant les produits suivants :
+> - Microsoft Teams
+> - Microsoft Office
+> - Microsoft SharePoint
+> - Microsoft Exchange
+> - Microsoft Graph
+> - Microsoft Outlook
 
 ## <a name="how-to-activate-the-benefit"></a>Comment activer l’avantage
 1. Accédez à <https://my.visualstudio.com/Benefits>, faites défiler la page jusqu’à la section Support et, dans la vignette Support technique, cliquez sur **Activer par chat**.

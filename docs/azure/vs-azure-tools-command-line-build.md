@@ -9,17 +9,17 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/05/2017
 ms.author: ghogen
-ms.openlocfilehash: 179737f7a4a55fd6111338363ad6668a43689205
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9ed5e9635cbe088773336a29bc9a8853d7e0a5db
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85280763"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89508468"
 ---
 # <a name="building-azure-projects-from-the-command-line"></a>Génération de projets Azure à partir de la ligne de commande
 À l’aide de Microsoft Build Engine (MSBuild), vous pouvez générer des produits dans des environnements de laboratoire-génération où Visual Studio n’est pas installé. MSBuild utilise pour les fichiers projet un format XML extensible et entièrement pris en charge par Microsoft. En utilisant le format de fichier MSBuild, vous pouvez décrire quels éléments doivent être générés pour une ou plusieurs plateformes et configurations.
 
-Vous pouvez également exécuter MSBuild dans une ligne de commande, et cette rubrique décrit cette approche. En définissant des propriétés dans la ligne de commandes, vous pouvez créer des configurations propres à un projet. De même, vous pouvez également définir les cibles que MSBuild va générer. Pour plus d’informations sur les paramètres de ligne de commande et MSBuild, consultez la page [Référence de la ligne de commande MSBuild](https://msdn.microsoft.com/library/ms164311.aspx).
+Vous pouvez également exécuter MSBuild dans une ligne de commande, et cette rubrique décrit cette approche. En définissant des propriétés dans la ligne de commandes, vous pouvez créer des configurations propres à un projet. De même, vous pouvez également définir les cibles que MSBuild va générer. Pour plus d’informations sur les paramètres de ligne de commande et MSBuild, consultez la page [Référence de la ligne de commande MSBuild](../msbuild/msbuild-command-line-reference.md).
 
 ## <a name="msbuild-parameters"></a>Paramètres MSBuild
 La façon la plus simple de créer un package consiste à exécuter MSBuild avec l’option `/t:Publish` . Par défaut, cette commande crée un répertoire en relation avec le dossier racine du projet, par exemple `<ProjectDirectory>\bin\Configuration\app.publish\`. Lorsque vous générez un projet Azure, deux fichiers sont générés : le fichier de package et le fichier de configuration qui l'accompagne :

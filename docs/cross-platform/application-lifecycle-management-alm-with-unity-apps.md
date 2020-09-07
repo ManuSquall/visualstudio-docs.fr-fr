@@ -9,12 +9,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 17bdd86829da199e01a527aa382b8ed3bdfade17
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be42bf1498746ce57f662f43c12ece80ac6ca9be
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80232946"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509040"
 ---
 # <a name="devops-with-unity-apps"></a>DevOps avec les applications Unity
 
@@ -103,10 +103,10 @@ Lien de référence : ** [améliorer la qualité du code](../test/improve-code-
 |Fonctionnalité|Prise en charge avec Unity|Commentaires supplémentaires|
 |-------------|--------------------------|-------------------------|
 |[Analyser la qualité du code managé](../code-quality/code-analysis-for-managed-code-overview.md)|Oui|Permet d’analyser le code de script C# dans Visual Studio.|
-|[Rechercher du code dupliqué à l’aide de la détection de clone de code](https://msdn.microsoft.com/library/hh205279.aspx)|Oui|Permet d’analyser le code de script C# dans Visual Studio.|
+|[Rechercher du code dupliqué à l’aide de la détection de clone de code](/previous-versions/hh205279(v=vs.140))|Oui|Permet d’analyser le code de script C# dans Visual Studio.|
 |[Mesurer la complexité et la facilité de maintenance du code managé](../code-quality/code-metrics-values.md)|Oui|Permet d’analyser le code de script C# dans Visual Studio.|
 |[Outils d'analyse des performances](../profiling/performance-explorer.md)|Non|Utilisez le [profileur Unity](https://docs.unity3d.com/Manual/Profiler.html) (site web Unity).|
-|[Analyser des problèmes de mémoire liés à .NET Framework](https://msdn.microsoft.com/library/dn342825.aspx)|Non|Visual Studio Tools n’a pas de hook au framework Mono (tels qu'ils sont utilisés par Unity) pour le profilage. Utilisez le [profileur Unity](http://docs.unity3d.com/Manual/Profiler.html) (documentation Unity).|
+|[Analyser des problèmes de mémoire liés à .NET Framework](../vs-2015/misc/analyze-dotnet-framework-memory-issues.md)|Non|Visual Studio Tools n’a pas de hook au framework Mono (tels qu'ils sont utilisés par Unity) pour le profilage. Utilisez le [profileur Unity](http://docs.unity3d.com/Manual/Profiler.html) (documentation Unity).|
 
 ## <a name="release-management"></a>Gestion des mises en production
 
