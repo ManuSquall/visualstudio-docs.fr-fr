@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 44881035da14483c3ddf1f4c48cb3957a1ce8b50
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c480fad064cad602ea3fd19153d53f0276815d30
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72729087"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509417"
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>Modifications de code prises en charge (C# et Visual Basic)
 Modifier &amp; Continuer gère la plupart des types de modifications du code dans le corps des méthodes. Toutefois, la plupart des modifications en dehors du corps des méthodes et quelques autres à l'intérieur ne peuvent pas s'appliquer pendant le débogage. Pour appliquer ces modifications non prises en charge, vous devez arrêter le débogage et redémarrer avec une version nouvelle du code.
@@ -32,15 +32,15 @@ Le tableau ci-dessous montre les modifications qui peuvent être apportées à C
 
 |Élément ou fonctionnalité de langage|Opération de modification prise en charge|Limites|
 |-|-|-|
-|Types|Ajouter des méthodes, des champs, des constructeurs, et al|[Oui](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
+|Types|Ajouter des méthodes, des champs, des constructeurs, et al|[Oui](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md)|
 |Iterators|Ajouter ou modifier|Non|
-|expressions Async/await|Ajouter ou modifier|[Oui](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
+|expressions Async/await|Ajouter ou modifier|[Oui](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md)|
 |Objets dynamiques|Ajouter ou modifier|Non|
-|expressions lambda|Ajouter ou modifier|[Oui](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
-|Expressions LINQ|Ajouter ou modifier|[Identique aux expressions lambda](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
+|expressions lambda|Ajouter ou modifier|[Oui](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md)|
+|Expressions LINQ|Ajouter ou modifier|[Identique aux expressions lambda](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md)|
 
 > [!NOTE]
-> Les nouvelles fonctionnalités de langage telles que l’interpolation de chaîne et les opérateurs conditionnels NULL sont généralement prises en charge par modifier & continuer. Pour obtenir les informations les plus récentes, consultez la page [modifications prises en charge par enc](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits) .
+> Les nouvelles fonctionnalités de langage telles que l’interpolation de chaîne et les opérateurs conditionnels NULL sont généralement prises en charge par modifier & continuer. Pour obtenir les informations les plus récentes, consultez la page [modifications prises en charge par enc](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md) .
 
 ## <a name="unsupported-changes-to-code"></a>Modifications du code non prises en charge
  Les modifications suivantes ne peuvent pas être appliquées à C# et Visual Basic code pendant une session de débogage :
@@ -60,7 +60,7 @@ Le tableau ci-dessous montre les modifications qui peuvent être apportées à C
 |Espaces de noms, types, membres|Supprimer|
 |Génériques|Ajouter ou modifier|
 |Interfaces|Modifier|
-|Types|Ajouter un membre abstrait ou virtuel, ajouter un remplacement (voir les [Détails](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
+|Types|Ajouter un membre abstrait ou virtuel, ajouter un remplacement (voir les [Détails](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md))|
 |Types|Ajouter un destructeur|
 |Membres|Modifier un membre référençant un type Interop incorporé|
 |Membres|Modifier un membre statique après qu’il a déjà été accédé en exécutant du code|
@@ -75,8 +75,8 @@ Le tableau ci-dessous montre les modifications qui peuvent être apportées à C
 |catch (blocs)|Modifier le moment où il contient une instruction active|
 |blocs try-catch-finally|Modifier le moment où il contient une instruction active|
 |instructions Using|Ajouter|
-|Méthodes Async/expressions lambda|Modifier une méthode Async/lambda dans un projet ciblant .NET Framework 4 et versions antérieures (voir les [Détails](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
-|Iterators|Modifier un itérateur dans un projet ciblant .NET Framework 4 et versions antérieures (voir les [Détails](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
+|Méthodes Async/expressions lambda|Modifier une méthode Async/lambda dans un projet ciblant .NET Framework 4 et versions antérieures (voir les [Détails](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md))|
+|Iterators|Modifier un itérateur dans un projet ciblant .NET Framework 4 et versions antérieures (voir les [Détails](https://github.com/dotnet/roslyn/blob/master/docs/wiki/EnC-Supported-Edits.md))|
 
 ## <a name="unsafe-code"></a>Code unsafe
  Les modifications apportées à du code unsafe présentent les mêmes restrictions que celles qui portent sur du code sécurisé, avec une restriction supplémentaire : Modifier &amp; Continuer ne prend pas en charge les modifications de code unsafe dans une méthode qui contient l'opérateur `stackalloc`.

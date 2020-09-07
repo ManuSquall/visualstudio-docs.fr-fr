@@ -7,12 +7,12 @@ ms.assetid: bc8b526c-2fed-4ac8-aaa2-73d2495256fd
 ms.date: 08/04/2020
 ms.topic: how-to
 description: Apprenez-en davantage sur l’abonnement de formation Pluralsight inclus dans certains abonnements Visual Studio.
-ms.openlocfilehash: 85001d4473e504bd149a1cd1402a9f4dd01f2a13
-ms.sourcegitcommit: 1d74273a50ede5a90d9d64372d93aad357daef42
+ms.openlocfilehash: 87cc42e2a0d4c8c95c771a88413b4a8af70bdc14
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89365876"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509755"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Avantage Pluralsight dans les abonnements Visual Studio
 
@@ -27,6 +27,7 @@ Le tableau ci-dessous présente les avantages de l’abonnement Pluralsight offe
    > [!div class="mx-imgBorder"]
    > ![Vignette de l’avantage Pluralsight](_img/vs-pluralsight/vs-pluralsight-tile.png "Cliquez sur Activer pour revendiquer votre avantage")
 
+(La vignette ci-dessus est un exemple de ce qu’un abonné Visual Studio Enterprise verra.  Si vous utilisez un autre abonnement Visual Studio, la durée de votre avantage Pluralsight variera.  Pour plus d’informations, consultez la table éligibilité.)
 1. Vous êtes ensuite redirigé vers la page Pluralsight correspondant à l’avantage inclus dans votre abonnement Visual Studio.
    - Entrez les coordonnées demandées dans le formulaire.
    - Cochez la case pour accepter les conditions d’utilisation

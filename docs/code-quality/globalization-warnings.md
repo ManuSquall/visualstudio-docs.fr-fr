@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ff17a56be7d7908ced0e37d1b13e8296ffc2c3d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd215a8b5c8dfb5905117638883d94d09268ce3d
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89219684"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509846"
 ---
 # <a name="globalization-warnings"></a>Avertissements liés à la globalisation
 Les avertissements de globalisation prennent en charge des bibliothèques et des applications mondialisables.
@@ -29,9 +29,6 @@ Les avertissements de globalisation prennent en charge des bibliothèques et des
 
 |Règle|Description|
 |----------|-----------------|
-|[CA1300 : Spécifier MessageBoxOptions](../code-quality/ca1300.md)|Pour afficher correctement une boîte de message pour les cultures qui utilisent un sens de lecture de droite à gauche, les membres RightAlign et RtlReading de l'énumération MessageBoxOptions doivent être passés à la méthode Show.|
-|[CA1301 : Éviter les accélérateurs en double](../code-quality/ca1301.md)|Une touche d'accès rapide, également connue sous le nom d'accélérateur, autorise l'accès à un contrôle par le biais du clavier, à l'aide de la touche ALT. Lorsque plusieurs contrôles ont des clés d’accès en double, le comportement de la clé d’accès n’est pas bien défini.|
-|[CA1302 : Ne pas coder en dur les chaînes spécifiques aux paramètres régionaux](../code-quality/ca1302.md)|L'énumération System.Environment.SpecialFolder contient des membres qui font référence à des dossiers système spéciaux. Les emplacements de ces dossiers peuvent avoir des valeurs distinctes selon le système d’exploitation ; l’utilisateur peut modifier certains des emplacements, et ces derniers sont localisés. La méthode Environment. GetFolderPath retourne les emplacements associés à l’énumération Environment. SpecialFolder, localisés et appropriés pour l’ordinateur en cours d’exécution.|
 |[CA1303 : Ne pas passer de littéraux en paramètres localisés](../code-quality/ca1303.md)|Une méthode visible de l’extérieur passe un littéral de chaîne en tant que paramètre à une méthode ou un constructeur .NET, et cette chaîne doit être localisable.|
 |[CA1304 : Spécifier CultureInfo](../code-quality/ca1304.md)|Une méthode ou un constructeur appelle un membre présentant une surcharge qui accepte un paramètre System.Globalization.CultureInfo, et la méthode ou le constructeur n'appelle pas la surcharge qui prend le paramètre CultureInfo. Lorsqu'un objet CultureInfo ou System.IFormatProvider n'est pas fourni, la valeur par défaut fournie par le membre surchargé peut ne pas avoir l'effet escompté selon les différents paramètres régionaux.|
 |[CA1305 : Spécifier IFormatProvider](../code-quality/ca1305.md)|Une méthode ou un constructeur appelle un ou plusieurs membres présentant des surcharges qui acceptent un paramètre System.IFormatProvider, et la méthode ou le constructeur n'appelle pas la surcharge qui prend le paramètre IFormatProvider. Lorsqu'un objet System.Globalization.CultureInfo ou IFormatProvider n'est pas fourni, la valeur par défaut fournie par le membre surchargé peut ne pas avoir l'effet escompté selon les différents paramètres régionaux.|

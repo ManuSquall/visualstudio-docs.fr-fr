@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 03bd4d286ab0bcba37c9c1761c0331ce1347f313
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2af6126c751d03968dc7ecd87693e3546376c12a
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89219671"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509859"
 ---
 # <a name="globalization-rules-rule-set-for-managed-code"></a>Ensemble de règles des règles de globalisation pour le code managé
 
@@ -21,13 +21,9 @@ Utilisez l’ensemble de règles des règles de globalisation Microsoft pour vou
 
 |Règle|Description|
 |----------|-----------------|
-|[CA1300](../code-quality/ca1300.md)|Spécifier MessageBoxOptions|
-|[CA1301](../code-quality/ca1301.md)|Éviter les accélérateurs en double|
-|[CA1302](../code-quality/ca1302.md)|Ne pas coder en dur les chaînes spécifiques aux paramètres régionaux|
 |[CA1303](../code-quality/ca1303.md)|Ne pas passer de littéraux en paramètres localisés|
 |[CA1304](../code-quality/ca1304.md)|Spécifier CultureInfo|
 |[CA1305](../code-quality/ca1305.md)|Spécifier IFormatProvider|
-|[CA1306](../code-quality/ca1306.md)|Définir les paramètres régionaux pour les types de données|
 |[CA1307](../code-quality/ca1307.md)|Spécifier StringComparison pour plus de clarté|
 |[CA1308](../code-quality/ca1308.md)|Normaliser les chaînes en majuscules|
 |[CA1309](../code-quality/ca1309.md)|Utiliser StringComparison avec la valeur Ordinal|

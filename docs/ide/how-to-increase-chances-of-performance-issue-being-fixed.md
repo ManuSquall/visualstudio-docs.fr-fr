@@ -5,12 +5,12 @@ author: madskristensen
 ms.author: madsk
 ms.date: 11/19/2019
 ms.topic: conceptual
-ms.openlocfilehash: 50d1ed4edd2e1fa52661995f4d72466646dfd879
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9fc83ac1be1a6c1db7b46845c74a4b0e7bf6017f
+ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250507"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "89509924"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>Comment augmenter les chances de résolution d’un problème de performances
 
@@ -171,7 +171,7 @@ N’attachez pas directement les traces de performances aux éléments de commen
 
 **Suivis de performances avancés**
 
-Les fonctionnalités de collecte de trace de l’outil rapport-a-problem sont suffisantes pour la plupart des scénarios. Toutefois, il existe des cas où un plus grand contrôle de la collection de suivis est nécessaire (par exemple, trace avec une plus grande taille de mémoire tampon), auquel cas PerfView est un excellent outil à utiliser. Les étapes pour l’enregistrement manuel des traces de performances à l’aide de l’outil PerfView se trouvent dans la page [enregistrement des traces de performances avec PerfView](https://github.com/dotnet/roslyn/wiki/Recording-performance-traces-with-PerfView) .
+Les fonctionnalités de collecte de trace de l’outil rapport-a-problem sont suffisantes pour la plupart des scénarios. Toutefois, il existe des cas où un plus grand contrôle de la collection de suivis est nécessaire (par exemple, trace avec une plus grande taille de mémoire tampon), auquel cas PerfView est un excellent outil à utiliser. Les étapes pour l’enregistrement manuel des traces de performances à l’aide de l’outil PerfView se trouvent dans la page [enregistrement des traces de performances avec PerfView](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Recording-performance-traces-with-PerfView.md) .
 
 ## <a name="out-of-process-issues"></a>Problèmes hors processus
 
