@@ -248,9 +248,9 @@
           items:
             - name: Création et gestion de bases de données et d’applications de couche Données dans Visual Studio
               href: creating-and-managing-databases-and-data-tier-applications-in-visual-studio.md
-            - name: Création d’une application de données multiniveaux
+            - name: Création d’une application de données multiniveau
               href: walkthrough-creating-an-n-tier-data-application.md
-            - name: Vue d'ensemble des applications de données multicouches
+            - name: Vue d’ensemble des applications de données multiniveaux
               href: n-tier-data-applications-overview.md
         - name: Ressources supplémentaires pour le dépannage des erreurs d’accès aux données
           href: additional-resources-for-troubleshooting-data-access-errors.md

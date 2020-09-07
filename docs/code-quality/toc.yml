@@ -567,6 +567,8 @@
                   href: ca1832.md
                 - name: "CA1833\_: Utiliser AsSpan ou AsMemory à la place d’indexeurs basés sur Range pour obtenir la partie Span ou Memory d’un tableau"
                   href: ca1833.md
+                - name: "CA1834\_: Utiliser StringBuilder.Append (char) pour les chaînes de caractères uniques"
+                  href: ca1834.md
                 - name: "CA1835\_: Préférer les surcharges mémoire des méthodes Stream ReadAsync/WriteAsync"
                   href: ca1835.md
                 - name: "CA1836\_: Préférer IsEmpty à Count si disponible"
