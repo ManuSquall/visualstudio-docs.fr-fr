@@ -1,18 +1,18 @@
 ---
-title: Gérer les abonnements Visual Studio offerts par le réseau MPN (Microsoft Partner Network) | Microsoft Docs
+title: Gérer les abonnements Visual Studio à partir de Microsoft Partner Network | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 83efe4ee-9a9d-4776-b27c-852d89dadafd
-ms.date: 03/09/2020
+ms.date: 09/08/2020
 ms.topic: how-to
 description: Comment attribuer des abonnements Visual Studio à vos utilisateurs finaux, pour les partenaires du réseau MPN.
-ms.openlocfilehash: e6e15ed5893ce15d162d69b3bff4471c01633065
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ecd85967c0d58166da17025bc7b2246b335a5736
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250715"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561375"
 ---
 # <a name="manage-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Gérer les abonnements Visual Studio offerts via le réseau MPN
 Les partenaires qui acquièrent une compétence ou qui achètent l’Action Pack MPN sont éligibles aux abonnements Visual Studio. Ces abonnements sont concédés sous licence par utilisateur et sont valides uniquement quand ils sont attribués à un utilisateur nommé spécifique qui travaille pour la société partenaire.

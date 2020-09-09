@@ -1,18 +1,18 @@
 ---
-title: Supprimer des attributions d’abonnements dans le portail d’administration des abonnements Visual Studio | Microsoft Docs
+title: Supprimer des affectations dans le portail d’administration des abonnements | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: e49242bc-e9f2-49e8-8caa-f574d508aba6
 ms.date: 06/16/2020
 ms.topic: how-to
-description: Découvrez comment les administrateurs peuvent supprimer des attributions d’abonnement
-ms.openlocfilehash: 4f952f574132afbd405c82c75fcddfc952bffb48
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+description: Découvrez comment les administrateurs peuvent supprimer des affectations d’abonnements dans le portail d’administration des abonnements Visual Studio
+ms.openlocfilehash: c4e55a18bb172588bf1daf777aeee8fee1dca02b
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87434271"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561349"
 ---
 # <a name="delete-assignments-in-visual-studio-subscriptions"></a>Supprimer des attributions dans les abonnements Visual Studio
 Quand un abonné n’a plus besoin d’un abonnement Visual Studio, par exemple quand il quitte l’entreprise, termine un projet ou change de fonction, vous pouvez supprimer son abonnement et l’attribuer à une autre personne. Notez que lorsque vous réattribuez un abonnement, tous les avantages de l’abonné ne sont pas réinitialisés.  Le nouvel utilisateur peut demander les clés non demandées et afficher celles précédemment demandées, mais le nombre maximal de demandes autorisées n’est **pas** réinitialisé.  Pour les organisations qui ont des contrats Entreprise, les avantages qui ont été utilisés par l’utilisateur initial, comme une formation Pluralsight, seront réinitialisés. 

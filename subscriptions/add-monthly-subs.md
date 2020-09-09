@@ -1,5 +1,5 @@
 ---
-title: Ajouter de nouveaux abonnements Visual Studio mensuels au portail d’administration des abonnements | Microsoft Docs
+title: Ajouter de nouveaux abonnements mensuels au portail d’administration des abonnements | Microsoft Docs
 author: evanwindom
 ms.author: cabuschl
 manager: cabuschl
@@ -7,12 +7,12 @@ ms.assetid: 36f0d9f1-fe28-469f-a54c-dc46638270a8
 ms.date: 09/03/2020
 ms.topic: how-to
 description: Découvrez comment vous venez d’acheter des abonnements Visual Studio mensuels au portail d’administration des abonnements.
-ms.openlocfilehash: 209484968e85613da7cf38af3dce6944413c678a
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: d765e03d2c499c8e96bb97fc532596b7cfd0b903
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426826"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561401"
 ---
 # <a name="add-new-monthly-visual-studio-subscriptions-to-the-subscriptions-administration-portal"></a>Ajouter de nouveaux abonnements Visual Studio mensuels au portail d’administration des abonnements
 Lorsque vous achetez de nouveaux abonnements Visual Studio mensuels à l’aide d’un abonnement Azure, vous devrez peut-être les ajouter au portail d’administration des abonnements pour pouvoir les affecter aux utilisateurs.  
@@ -28,14 +28,14 @@ Les étapes à suivre pour ajouter des abonnements mensuels dépendent des types
 1. Dans l’onglet **gérer les abonnés** , choisissez la liste déroulante Ajouter un **accord** . 
 1. Choisir les **nouveaux abonnements mensuels** dans la liste déroulante
    > [!div class="mx-imgBorder"]
-   > ![Liste déroulante Ajouter de nouveaux abonnements mensuels](_img/add-monthly-subs/add-subs-drop-down.png)
+   > ![Liste déroulante Ajouter de nouveaux abonnements mensuels](_img/add-monthly-subs/add-subs-drop-down.png "Choisissez « Ajouter un contrat », puis « nouveaux abonnements mensuels ».")
 1. Le système recherche tous les abonnements Azure pour lesquels vous disposez de droits d’administrateur d’accès utilisateur, et importe tous les abonnements Visual Studio achetés avec ces abonnements Azure.
 1. Si aucun abonnement Azure sur lequel vous disposez des droits d’administrateur d’accès utilisateur n’est trouvé ou si des abonnements Azure éligibles sont détectés, mais qu’aucun abonnement Visual Studio n’est trouvé, vous recevrez le message suivant :
    > [!div class="mx-imgBorder"]
-   > ![Aucun nouvel abonnement mensuel trouvé](_img/add-monthly-subs/no-subs-found.png)
+   > ![Aucun nouvel abonnement mensuel trouvé](_img/add-monthly-subs/no-subs-found.png "Message d’erreur indiquant qu’il n’y a pas d’abonnement Azure ou d’abonnements Visual Studio à votre disposition.")
 1. Si de nouveaux abonnements mensuels sont trouvés, vous recevrez un message de confirmation
    > [!div class="mx-imgBorder"]
-   > ![Message de confirmation de l’ajout d’abonnements](_img/add-monthly-subs/subs-added-confirmation.png)
+   > ![Message de confirmation de l’ajout d’abonnements](_img/add-monthly-subs/subs-added-confirmation.png "Un message de confirmation affiche les abonnements que vous avez ajoutés.")
 
 ## <a name="things-to-keep-in-mind"></a>Points à prendre en compte
 - L’option permettant d’ajouter de nouveaux abonnements mensuels sera disponible la première fois que vous les achetez.  Une fois que vous avez ajouté des abonnements mensuels, nous vérifions les nouveaux abonnements à chaque fois que vous vous connectez au portail. 

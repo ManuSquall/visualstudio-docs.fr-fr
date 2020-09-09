@@ -1,18 +1,18 @@
 ---
-title: Abonnements Visual Studio offerts aux startups par le biais du programme Microsoft for Startups
+title: Abonnements Visual Studio proposés aux démarrages via le programme Microsoft for Startups | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 71af88da-b9fa-4d12-999c-7d461f3df0ec
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Des détails sur les abonnements sont offerts via le programme Microsoft for Startups.
-ms.openlocfilehash: 6c2fdcfc9fa71c1906a1033ac719b07cb0b157a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 600f2e92843ee734766ea5e2d797620cd622892b
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80233255"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561453"
 ---
 # <a name="visual-studio-subscriptions-offered-to-startups"></a>Abonnements Visual Studio offerts aux startups
 Les démarrages qualifiés qui rejoignent le programme Microsoft for Startups peuvent gagner 5 Visual Studio Enterprise [abonnements Cloud mensuels](https://visualstudio.microsoft.com/vs/pricing/). 

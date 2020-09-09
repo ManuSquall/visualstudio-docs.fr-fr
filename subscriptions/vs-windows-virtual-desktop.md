@@ -1,18 +1,18 @@
 ---
-title: Avantage des bureaux virtuels Microsoft Windows dans les abonnements Visual Studio | Microsoft Docs
+title: Microsoft Windows Virtual Desktop dans les abonnements Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 04/20/2020
+ms.date: 09/08/2020
 ms.topic: conceptual
 description: Découvrez comment vous pouvez tirer parti du bureau virtuel Microsoft Windows via votre abonnement Visual Studio
-ms.openlocfilehash: 865e18d7b8672520fcb771a1db56141fb6fd9f0a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f598aca8d277ca443b10dac289fae756ccd95432
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800604"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561362"
 ---
 # <a name="access-windows-virtual-desktop-in-subscriptions"></a>Accéder au bureau virtuel Windows dans les abonnements 
 Les abonnés Visual Studio peuvent désormais utiliser leur crédit Azure dev/test pour les services de bureau virtuel Microsoft Windows.  
@@ -64,7 +64,7 @@ Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à
 
 ## <a name="see-also"></a>Voir aussi
 - [Documentation Azure](https://docs.microsoft.com/azure/)
-- [Documentation Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/)
+- [Documentation sur les bureaux virtuels Windows](https://docs.microsoft.com/azure/virtual-desktop/)
 
 ## <a name="next-steps"></a>Étapes suivantes
 -   Si vous avez besoin d’acheter des abonnements Visual Studio, consultez :

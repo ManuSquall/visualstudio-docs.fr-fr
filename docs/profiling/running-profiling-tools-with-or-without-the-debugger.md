@@ -8,16 +8,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b3d50f8fcad0294adec032322229e9dd6cedac2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 147a7dbc029ae894a0054837e92feb0108dc19b4
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88508078"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561586"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Exécuter des outils de profilage avec ou sans le débogueur
 
-Visual Studio propose un choix d’outils de mesure et de profilage des performances. Certains outils, tels que l’utilisation de l’UC et l’utilisation de la mémoire, peuvent s’exécuter avec ou sans le débogueur, ainsi que pour les configurations de build de mise en version ou de débogage. Les outils du profileur de performances comme chronologie de l’application peuvent s’exécuter sur des versions Debug ou Release. Les outils intégrés au débogueur, comme la fenêtre Outils de diagnostic et l’onglet événements, s’exécutent uniquement pendant les sessions de débogage.
+Visual Studio propose un choix d’outils de mesure et de profilage des performances. Certains outils, tels que l’utilisation de l’UC et l’utilisation de la mémoire, peuvent s’exécuter avec ou sans le débogueur, ainsi que pour les configurations de build de mise en version ou de débogage. Les outils qui s’affichent dans la [fenêtre outils de diagnostic](../profiling/profiling-feature-tour.md#view-performance-while-debugging) s’exécutent uniquement pendant une session de débogage. Les outils qui s’affichent dans le [profileur de performances](../profiling/profiling-feature-tour.md#post_mortem) s’exécutent sans le débogueur et vous analysez les résultats une fois que vous avez choisi d’arrêter et de collecter des données (pour l’analyse après mortem).
 
 >[!NOTE]
 >Vous pouvez utiliser les outils de performances non intégrés au débogueur avec Windows 7 et ultérieur. Windows 8 ou ultérieur est nécessaire pour exécuter les outils de profilage intégrés au débogueur.
@@ -46,6 +46,11 @@ Quand vous démarrez le débogage dans Visual Studio en sélectionnant **Débogu
 - Si vous exécutez Visual Studio Enterprise, vous pouvez activer ou désactiver IntelliTrace en accédant à **Outils**  >  **options**  >  **IntelliTrace**.
 
 La session de diagnostic se termine quand vous arrêtez le débogage.
+
+Pour plus d'informations, consultez les pages suivantes :
+
+- [Mesurer les performances d’application en analysant l’utilisation de l’UC](../profiling/beginners-guide-to-performance-profiling.md)
+- [Mesurer l’utilisation de la mémoire dans Visual Studio](../profiling/memory-usage.md)
 
 ### <a name="the-events-tab"></a>Onglet Événements
 
@@ -86,6 +91,15 @@ Pour recueillir des données de performances sans débogage, vous pouvez exécut
 Vous pouvez enregistrer les rapports et les ouvrir à partir de la liste **sessions récemment ouvertes** sur la page de lancement de outils de diagnostic.
 
 ![Capture d’écran de Outils de diagnostic liste des sessions récemment ouvertes](../profiling/media/diaghubopenexistingdiagsession.png "PDHUB_OpenExistingDiagSession")
+
+Pour plus d'informations, consultez les pages suivantes :
+
+- [Analyser l’utilisation de l’UC](../profiling/cpu-usage.md)
+- [Analyser l’utilisation de la mémoire pour le code .NET](../profiling/dotnet-alloc-tool.md)
+- [Analyser l’utilisation de la mémoire](../profiling/analyze-memory-usage.md)
+- [Analyser les performances du code asynchrone .NET](../profiling/analyze-async.md)
+- [Analyser les performances de la base de données](../profiling/analyze-database.md)
+- [Analyser l’utilisation du GPU](../profiling/gpu-usage.md)
 
 ## <a name="collect-profiling-data-from-the-command-line"></a>Collecter les données de profilage à partir de la ligne de commande
 

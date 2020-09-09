@@ -1,18 +1,18 @@
 ---
-title: Utilisation de clés de produit pour la prise en charge des démonstrations Internet via les services Terminal Server | Microsoft Docs
+title: Utilisation des clés de produit pour prendre en charge les démonstrations Internet via les services Terminal Server | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 1c5ede60-cb5a-4d5f-a6a2-a1f536f6c4ad
-ms.date: 03/09/2020
+ms.date: 09/08/2020
 ms.topic: conceptual
 description: Découvrir comment utiliser les clés de produit pour prendre en charge les démonstrations Internet via les services Terminal Server et activer l’accès des Services Bureau à distance
-ms.openlocfilehash: 2d5f23f0d161ee9f50569e0ff7f8ce585c8c49ff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 35cda937aac7282756a1d6397b914c03e16b14fe
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80232442"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561310"
 ---
 # <a name="internet-demonstrations-via-terminal-services"></a>Démonstrations Internet via les services Terminal Server
 Avec un abonnement Visual Studio, vous pouvez fournir un accès aux démonstrations Internet de vos programmes aux utilisateurs finaux par le biais des services Terminal Server (Windows Server 2003 ou Windows Server 2008) ou des services Bureau à distance (Windows Server 2008 R2 ou versions ultérieures). Jusqu’à 200 utilisateurs anonymes peuvent ainsi accéder simultanément à votre démonstration. Votre démonstration ne doit pas utiliser de données de production. Les abonnés Visual Studio sont autorisés à démontrer leurs applications aux utilisateurs finaux. Les services Terminal Server ou Bureau à distance sont les seuls moyens pour les utilisateurs finaux sans abonnement Visual Studio d’interagir avec l’application démontrée quand le logiciel est concédé sous licence par le biais d’abonnements Visual Studio.

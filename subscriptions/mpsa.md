@@ -1,18 +1,18 @@
 ---
-title: Abonnements Visual Studio dans un programme MPSA (Microsoft Products and Services Agreement) | Microsoft Docs
+title: Abonnements Visual Studio dans MPSA | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: b331c837-3524-42b7-820e-b4fdd5e12793
 ms.date: 09/03/2020
 ms.topic: conceptual
-description: Abonnements Visual Studio dans un programme MPSA (Microsoft Products and Services Agreement)
-ms.openlocfilehash: c5ba75038c1e87415eecdcb669698cfe5bbcacd2
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+description: En savoir plus sur la gestion des abonnements Visual Studio dans un contrat Microsoft Products and services (MPSA)
+ms.openlocfilehash: 9d26bccebb11a59933c37ec0f29a9b6e30e86c5b
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426744"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561388"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Abonnements Visual Studio dans un programme MPSA (Microsoft Products and Services Agreement)
 Si vous avez acheté des abonnements Visual Studio via le programme MPSA, il existe quelques éléments à connaître avant de devenir administrateur des abonnements Visual Studio et d’attribuer des abonnements à vos utilisateurs. Si vous avez déjà été configuré comme administrateur, vous pouvez accéder directement au [portail d’administration](https://manage.visualstudio.com/) des abonnements Visual Studio.

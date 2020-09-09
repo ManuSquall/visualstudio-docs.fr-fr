@@ -1,18 +1,18 @@
 ---
-title: Questions fréquentes (FAQ) sur la facturation des abonnements cloud Visual Studio Enterprise et Visual Studio Professional
+title: FAQ sur la facturation des abonnements Visual Studio Visual Cloud | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
-ms.date: 03/24/2020
+ms.date: 09/08/2020
 ms.topic: conceptual
 description: Questions relatives à la facturation pour les abonnements cloud.
-ms.openlocfilehash: d09d9d4a3b21d0b96f0664451323dcc523d73cb3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8ef98fc3c6e81071984cdc0fb8ef6f6dab626b48
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249376"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561323"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>FAQ sur la facturation des abonnements cloud Visual Studio
 [Comparez les avantages des abonnements cloud et les prix](https://visualstudio.microsoft.com/vs/pricing/) afin de bien comprendre les avantages offerts par chaque abonnement Visual Studio. Découvrez les différences entre les abonnements standard et cloud de Visual Studio, obtenez des détails sur les avantages offerts aux abonnés et bien plus encore.

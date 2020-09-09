@@ -1,18 +1,18 @@
 ---
-title: Contacter l’administrateur de votre abonnement à partir du portail des abonnés
+title: Contactez votre administrateur d’abonnement sur le portail de l’abonné | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 64455e79-229a-42f0-9d65-c2cca8ab8513
-ms.date: 03/07/2020
+ms.date: 09/08/2020
 ms.topic: how-to
 description: Découvrez comment contacter l’administrateur de votre abonnement pour obtenir de l’aide concernant sur des questions ou des problèmes.
-ms.openlocfilehash: d3469fa5c8ba69cf5a4d4dab6d5c4b6be070f4d8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 43a0c4ac090331bb9e9c65c232f5277aaee890a7
+ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88247429"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89561414"
 ---
 # <a name="get-assistance-from-your-subscriptions-administrator"></a>Obtenir de l’aide auprès de votre administrateur d’abonnements
 Si votre abonnement Visual Studio vous est fourni par votre entreprise ou votre établissement scolaire, il est probable qu’il vous a été attribué par un administrateur d’abonnements.  Les administrateurs peuvent attribuer ou supprimer des abonnements, changer les adresses e-mail de connexion, déterminer si vous avez la possibilité de télécharger des logiciels et remplir d’autres fonctions liées à votre abonnement.
