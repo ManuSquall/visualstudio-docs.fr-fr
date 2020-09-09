@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b060ae550fd0188728c827cac01c12d51930b57
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6109c1becfae51ebf3824b5683bc66a5d89b74a0
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88711545"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599609"
 ---
 # <a name="code-analysis-faq"></a>FAQ sur l’analyse du code
 
@@ -92,7 +92,7 @@ Les [analyseurs StyleCop](https://github.com/DotNetAnalyzers/StyleCopAnalyzers) 
 
 **Q**: où se trouve la page de propriétés analyse du code pour la solution ?
 
-**R**: la page de propriétés analyse du code au niveau de la solution a été supprimée au profit du groupe de propriétés partagées plus fiable. Pour la gestion de l’analyse du code au niveau du projet, la page de propriétés analyse du code est toujours disponible. (Pour les projets managés, nous vous recommandons également de migrer des ensembles de règles vers EditorConfig pour la configuration des règles.)  Pour partager des groupes de règles sur plusieurs projets dans une solution ou un référentiel, nous vous recommandons de définir un groupe de propriétés avec la propriété CodeAnalysisRuleSet dans un fichier Shared/Targets ou Directory. props/Directory. targets. Si vous n’avez pas de propriétés ou de cibles courantes que tous vos projets importent, vous devez envisager [d’ajouter ce type de groupe de propriétés à un répertoire. props ou à un répertoire. targets dans un répertoire de solution de niveau supérieur, qui est importé automatiquement dans tous les fichiers projet définis dans le répertoire ou ses sous-répertoires](https://docs.microsoft.com/visualstudio/msbuild/customize-your-build?directorybuildprops-and-directorybuildtargets).
+**R**: la page de propriétés analyse du code au niveau de la solution a été supprimée au profit du groupe de propriétés partagées plus fiable. Pour la gestion de l’analyse du code au niveau du projet, la page de propriétés analyse du code est toujours disponible. (Pour les projets managés, nous vous recommandons également de migrer des ensembles de règles vers EditorConfig pour la configuration des règles.)  Pour partager des groupes de règles sur plusieurs projets dans une solution ou un référentiel, nous vous recommandons de définir un groupe de propriétés avec la propriété CodeAnalysisRuleSet dans un fichier Shared/Targets ou Directory. props/Directory. targets. Si vous n’avez pas de propriétés ou de cibles courantes que tous vos projets importent, vous devez envisager [d’ajouter ce type de groupe de propriétés à un répertoire. props ou à un répertoire. targets dans un répertoire de solution de niveau supérieur, qui est importé automatiquement dans tous les fichiers projet définis dans le répertoire ou ses sous-répertoires](../msbuild/customize-your-build.md).
 
 ## <a name="see-also"></a>Voir aussi
 

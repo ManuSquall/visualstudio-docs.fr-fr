@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c1208db68f2ae65775c6e0a5b6cf4bda0fb35d8
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: a40273c3230854e4b1d1a11a3fd02de54d5df745
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509456"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599967"
 ---
 # <a name="security-warnings"></a>Avertissements liés à la sécurité
 
@@ -33,7 +33,7 @@ Les avertissements de sécurité prennent en charge des bibliothèques et des ap
 |[CA2100 : Vérifier si les requêtes SQL présentent des failles de sécurité](../code-quality/ca2100.md)|Une méthode définit la propriété System.Data.IDbCommand.CommandText à l’aide d’une chaîne générée à partir d’un argument de chaîne à la méthode. Cette règle suppose que l’argument de chaîne contient des entrées d’utilisateur. Une chaîne de commande SQL construite à partir d’entrées d’utilisateur est vulnérable aux attaques d’injection SQL.|
 |[CA2109 : Passez en revue les gestionnaires d'événements visibles](../code-quality/ca2109.md)|Une méthode de gestion d’événements publique ou protégée a été détectée. Les méthodes de gestion d’événements ne doivent pas être exposées sauf nécessité absolue.|
 |[CA2119 : Scellez les méthodes qui satisfont les interfaces privées](../code-quality/ca2119.md)|Un type public pouvant être hérité fournit une implémentation de méthode substituable d’une interface interne (Friend en Visual Basic). Pour corriger une violation de cette règle, empêchez la méthode d’être substituée en dehors de l’assembly.|
-|[CA2153 : Éviter la gestion des exceptions d’état endommagé](../code-quality/ca2153.md)|Les[exceptions d’état endommagé (CSE, Corrupted State Exceptions)](https://msdn.microsoft.com/magazine/dd419661.aspx) indiquent une altération de la mémoire dans votre processus. Le fait d’intercepter ces exceptions au lieu d’autoriser le processus à se bloquer peut engendrer des failles de sécurité si une personne malveillante réussit à placer une attaque dans la région de la mémoire endommagée.|
+|[CA2153 : Éviter la gestion des exceptions d’état endommagé](../code-quality/ca2153.md)|Les[exceptions d’état endommagé (CSE, Corrupted State Exceptions)](/archive/msdn-magazine/2009/february/clr-inside-out-handling-corrupted-state-exceptions) indiquent une altération de la mémoire dans votre processus. Le fait d’intercepter ces exceptions au lieu d’autoriser le processus à se bloquer peut engendrer des failles de sécurité si une personne malveillante réussit à placer une attaque dans la région de la mémoire endommagée.|
 |[CA2300 : N’utilisez pas le désérialiseur non sécurisé BinaryFormatter](../code-quality/ca2300.md)|Les désérialiseurs non sécurisés sont vulnérables lors de la désérialisation des données non approuvées. Une personne malveillante peut modifier les données sérialisées pour inclure des types inattendus afin d’injecter des objets avec des effets secondaires malveillants.|
 |[CA2301 : N’appelez pas BinaryFormatter.Deserialize sans définir BinaryFormatter.Binder au préalable](../code-quality/ca2301.md)|Les désérialiseurs non sécurisés sont vulnérables lors de la désérialisation des données non approuvées. Une personne malveillante peut modifier les données sérialisées pour inclure des types inattendus afin d’injecter des objets avec des effets secondaires malveillants.|
 |[CA2302 : Vérifiez que BinaryFormatter.Binder est défini avant d’appeler BinaryFormatter.Deserialize](../code-quality/ca2302.md)|Les désérialiseurs non sécurisés sont vulnérables lors de la désérialisation des données non approuvées. Une personne malveillante peut modifier les données sérialisées pour inclure des types inattendus afin d’injecter des objets avec des effets secondaires malveillants.|

@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fab5627f3d467c0df289969e4fee010dd3ea78b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f7b293270facbbfa0d2174121ff6a3ac736b75a
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350392"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599887"
 ---
 # <a name="how-can-i-debug-windows-api-functions"></a>Comment puis-je déboguer des fonctions API Windows ?
 Si vous voulez déboguer une fonction API Windows qui a chargé les symboles NT, vous devez effectuer les opérations suivantes.
@@ -40,7 +40,7 @@ Si vous voulez déboguer une fonction API Windows qui a chargé les symboles NT
     {,,USER32.DLL}_MessageBeep@4
     ```
 
-     Pour obtenir le nom décoré, consultez [affichage des noms décorés](https://msdn.microsoft.com/library/f79e2717-a4db-4d12-a689-69830cce2be0).
+     Pour obtenir le nom décoré, consultez [affichage des noms décorés](/previous-versions/5x49w699(v=vs.140)).
 
      Vous pouvez tester le nom décoré et l’afficher dans le code machine. Pendant la suspension de la fonction dans le débogueur Visual Studio, cliquez avec le bouton droit sur la fonction dans l’éditeur de code ou dans la fenêtre pile des appels, puis sélectionnez atteindre le code **machine**.
 

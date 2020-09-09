@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1a7727f93e3f4fe279bb9cc009e61a3fdd70a15
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e2f54e80059896345abb00e955a827a00b5a35a5
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73714454"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600125"
 ---
 # <a name="debugging-web-applications"></a>Débogage d'applications Web
 
@@ -42,7 +42,7 @@ Cet article fournit des liens pour vous aider à déboguer différents types d�
 
 - Débogage d'applications de script AJAX
 
-  Les applications Web AJAX ont un usage intensif du code de script et représentent un sérieux défi pour le débogage. Pour plus d’informations sur les techniques de débogage AJAX, consultez [vue d’ensemble du débogage et du suivi des applications Ajax](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375).
+  Les applications Web AJAX ont un usage intensif du code de script et représentent un sérieux défi pour le débogage. Pour plus d’informations sur les techniques de débogage AJAX, consultez [vue d’ensemble du débogage et du suivi des applications Ajax](/previous-versions/bb398817(v=vs.140)).
 
 ## <a name="see-also"></a>Voir aussi
 

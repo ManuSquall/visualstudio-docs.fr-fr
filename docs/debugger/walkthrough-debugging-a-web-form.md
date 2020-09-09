@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f884206ecafebbe26bfdadfaa7e95f3dbd0f389f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fa2632e7d9b8103b5a89c49e5f44464a658fadc3
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62901629"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599486"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>Procédure pas à pas : Débogage d’un formulaire web
 Les étapes de cette procédure pas à pas vous expliquent comment déboguer une application Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], également connue sous le nom de Web Form. Elle vous explique également comment démarrer et arrêter l’exécution, définir des points d’arrêt et examiner des variables dans la fenêtre **Espion**.
@@ -98,7 +98,7 @@ Selon vos paramètres actifs ou votre édition, les boîtes de dialogue et les c
    textBox1.Text = "Button was clicked!";
    ```
 
-    Un point rouge s'affiche et le texte de la ligne est surligné en rouge. Le point rouge représente un point d'arrêt. Lorsque vous exécutez l'application dans le débogueur, le débogueur interrompt l'exécution à l'emplacement du code où se trouve ce point d'arrêt. Vous pouvez afficher l'état de votre application et la déboguer. Pour plus d’informations, consultez [Points d’arrêt](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583).
+    Un point rouge s'affiche et le texte de la ligne est surligné en rouge. Le point rouge représente un point d'arrêt. Lorsque vous exécutez l'application dans le débogueur, le débogueur interrompt l'exécution à l'emplacement du code où se trouve ce point d'arrêt. Vous pouvez afficher l'état de votre application et la déboguer. Pour plus d’informations, consultez [Points d’arrêt](/previous-versions/ktf38f66(v=vs.100)).
 
 2. Dans le menu **Déboguer** , cliquez sur **Démarrer le débogage**.
 

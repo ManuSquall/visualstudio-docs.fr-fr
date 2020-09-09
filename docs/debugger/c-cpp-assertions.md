@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f7ac27b46252582b3982082a2a9a90a09223574f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: abea0f45609c74e02cd95d6c21bbe8879d46eea1
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911604"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600218"
 ---
 # <a name="cc-assertions"></a>Assertions C/C++
 Une instruction d’assertion spécifie une condition qui devrait être vraie à un point de votre programme. Si cette condition n’est pas remplie, l’assertion échoue, l’exécution de votre programme est interrompue et la [boîte de dialogue échec](../debugger/assertion-failed-dialog-box.md) de l’assertion s’affiche.
@@ -156,7 +156,7 @@ _ASSERTE(_CrtIsMemoryBlock (myData, size, &requestNumber, &filename, &linenumber
 [Dans cette rubrique](#BKMK_In_this_topic)
 
 ## <a name="mfc-assertions"></a><a name="BKMK_MFC_assertions"></a> Assertions MFC
-MFC définit la macro Assert pour la vérification des [assertions](https://msdn.microsoft.com/Library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c) . Il définit également les `MFC ASSERT_VALID` `CObject::AssertValid` méthodes et pour vérifier l’état interne d’un `CObject` objet dérivé de.
+MFC définit la macro Assert pour la vérification des [assertions](/previous-versions/ew16s3zc(v=vs.140)) . Il définit également les `MFC ASSERT_VALID` `CObject::AssertValid` méthodes et pour vérifier l’état interne d’un `CObject` objet dérivé de.
 
 Si l’argument de la macro MFC prend la valeur `ASSERT` zéro ou false, la macro interrompt l’exécution du programme et avertit l’utilisateur ; dans le cas contraire, l’exécution continue.
 
@@ -175,7 +175,7 @@ Vous pouvez utiliser Assert avec la fonction [IsKindOf](/cpp/mfc/reference/cobje
 ASSERT( pObject1->IsKindOf( RUNTIME_CLASS( CPerson ) ) );
 ```
 
-La `ASSERT` macro ne produit aucun code dans la version Release. Si vous devez évaluer l’expression dans la version Release, utilisez la macro [verify](https://msdn.microsoft.com/library/s8c29sw2.aspx#verify) au lieu de la méthode Assert.
+La `ASSERT` macro ne produit aucun code dans la version Release. Si vous devez évaluer l’expression dans la version Release, utilisez la macro [verify](/cpp/mfc/reference/diagnostic-services#verify) au lieu de la méthode Assert.
 
 ### <a name="mfc-assert_valid-and-cobjectassertvalid"></a><a name="BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid"></a> MFC ASSERT_VALID et CObject :: AssertValid
 La méthode [CObject :: AssertValid](/cpp/mfc/reference/cobject-class#assertvalid) fournit des contrôles au moment de l’exécution de l’état interne d’un objet. Même si vous n’êtes pas obligé de substituer `AssertValid` lorsque vous dérivez votre classe de `CObject` , vous pouvez rendre votre classe plus fiable en procédant ainsi. `AssertValid` doit effectuer des assertions sur toutes les variables membres de l’objet pour vérifier qu’elles contiennent des valeurs valides. Par exemple, il doit vérifier que les variables de membre de pointeur ne sont pas NULL.

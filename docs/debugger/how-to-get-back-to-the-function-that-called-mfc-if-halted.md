@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef96bab28b1a17d4f20728a393511720fd10c624
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b05e703958fe7a1c630b542522f1f33b0fe5981
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349469"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600273"
 ---
 # <a name="how-to-get-back-to-the-function-that-called-mfc-if-halted"></a>Comment : retourner à la fonction qui a appelé l'application MFC en cas d'arrêt
 
@@ -38,7 +38,7 @@ ms.locfileid: "85349469"
 
 Si vous avez utilisé la commande **Arrêter** du menu **Déboguer** pour arrêter le programme, que vous vous trouvez dans la bibliothèque MFC et que vous êtes certain que le problème se trouve dans votre code, vous pouvez utiliser la fenêtre Pile des appels pour revenir à votre fonction. Pour plus d’informations, consultez [Comment : utiliser la fenêtre pile des appels](../debugger/how-to-use-the-call-stack-window.md).
 
-Il peut arriver que votre code se trouve dans la pompe de messages. Dans ce cas, il n'y a aucun code utilisateur dans la pile des appels. Pour éviter ce problème, vous pouvez utiliser des points d’arrêt (avec des conditions et des nombres d’accès, éventuellement) au lieu de la commande **Arrêter**. Pour plus d'informations, consultez [Breakpoints and Tracepoints](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583).
+Il peut arriver que votre code se trouve dans la pompe de messages. Dans ce cas, il n'y a aucun code utilisateur dans la pile des appels. Pour éviter ce problème, vous pouvez utiliser des points d’arrêt (avec des conditions et des nombres d’accès, éventuellement) au lieu de la commande **Arrêter**. Pour plus d'informations, consultez [Breakpoints and Tracepoints](/previous-versions/ktf38f66(v=vs.100)).
 
 ## <a name="navigate-to-the-function-from-which-mfc-was-called"></a>Naviguer jusqu’à la fonction à partir de laquelle MFC a été appelé
 

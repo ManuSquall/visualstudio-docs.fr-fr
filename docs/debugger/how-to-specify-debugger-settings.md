@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e39ae29e94ff28ce10daf36e3970273d8e34e9e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aa88d941950cdabe0da873f9184b420c81d5a348
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349105"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599863"
 ---
 # <a name="how-to-specify-debugger-settings"></a>Comment : spécifier les paramètres du débogueur
 Dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], vous pouvez utiliser divers paramètres pour spécifier le comportement du débogueur, notamment le mode d'affichage des variables, la présentation ou non des avertissements, la définition des points d'arrêt, ainsi que la manière dont les programmes sont affectés par les interruptions. Vous indiquez les paramètres du débogueur dans la boîte de dialogue **Options**.
@@ -43,6 +43,6 @@ Dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], vous pouvez util
 
 ## <a name="see-also"></a>Voir aussi
 - [Général, Débogage, boîte de dialogue Options](../debugger/general-debugging-options-dialog-box.md)
-- [Modifier & Continuer, Débogage, Boîte de dialogue Options](https://msdn.microsoft.com/library/bcew296c.aspx)
+- [Modifier & Continuer, Débogage, Boîte de dialogue Options](./edit-and-continue.md)
 - [Paramètres et préparation du débogueur](../debugger/debugger-settings-and-preparation.md)
 - [Macros courantes pour les propriétés et les commandes de génération](/cpp/build/reference/common-macros-for-build-commands-and-properties)

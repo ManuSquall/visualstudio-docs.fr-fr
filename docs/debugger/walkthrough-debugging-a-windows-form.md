@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 701d156d5fdc23a5e98ac1de43c1882f3065171e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6cec7b9bc2c56e16d1a5d59701d0953797ae00f4
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72728335"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599471"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Procédure pas à pas : débogage d’un Windows Form
 Un Windows Form est l’une des applications gérées les plus courantes. Un Windows Form crée une application Windows standard. Vous pouvez effectuer cette procédure pas à pas à l’aide de Visual Basic, C# ou C++.
@@ -109,7 +109,7 @@ Un Windows Form est l’une des applications gérées les plus courantes. Un Win
     textBox1->Text = "Button was clicked!";
     ```
 
-     Un point rouge s'affiche et le texte de la ligne est surligné en rouge. Le point rouge représente un point d'arrêt. Pour plus d’informations, consultez [Points d’arrêt](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583). Lorsque vous exécutez l'application dans le débogueur, le débogueur interrompt l'exécution à l'emplacement du code où se trouve ce point d'arrêt. Vous pouvez afficher l'état de votre application et la déboguer.
+     Un point rouge s'affiche et le texte de la ligne est surligné en rouge. Le point rouge représente un point d'arrêt. Pour plus d’informations, consultez [Points d’arrêt](/previous-versions/ktf38f66(v=vs.100)). Lorsque vous exécutez l'application dans le débogueur, le débogueur interrompt l'exécution à l'emplacement du code où se trouve ce point d'arrêt. Vous pouvez afficher l'état de votre application et la déboguer.
 
     > [!NOTE]
     > Vous pouvez également cliquer avec le bouton droit sur n’importe quelle ligne de code, pointer sur **point d’arrêt**, puis cliquer sur Insérer un **point d’arrêt** pour ajouter un point d’arrêt sur cette ligne.

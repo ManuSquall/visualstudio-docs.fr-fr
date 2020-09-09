@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9de4e43346c0c7261bbd834349f09619b262e17
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 824ee989f17b6a341679f541f95906056cf6f8de
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72737942"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599542"
 ---
 # <a name="edit-and-continue-dialog-box"></a>Boîte de dialogue Modifier & Continuer
 (Natif uniquement) Cette boîte de dialogue s’affiche lorsque vous avez modifié du code pendant le débogage et que **Modifier & Continuer** reconnaît pouvoir appliquer ces modifications. Pour plus d’informations, consultez [Modifier et Continuer](../debugger/edit-and-continue.md).
@@ -31,4 +31,4 @@ ms.locfileid: "72737942"
 
 ## <a name="see-also"></a>Voir aussi
 - [Sécurité du débogueur](../debugger/debugger-security.md)
-- [Modifier & Continuer, Débogage, Boîte de dialogue Options](https://msdn.microsoft.com/library/bcew296c.aspx)
+- [Modifier & Continuer, Débogage, Boîte de dialogue Options](./edit-and-continue.md)

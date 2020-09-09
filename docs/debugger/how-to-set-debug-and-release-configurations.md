@@ -31,12 +31,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 458e6cb4ebf882d2d9e331823cc4955143e7d5b7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e85f7c67f8dc25bb69f7de07a19286b5c63e938a
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349157"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599904"
 ---
 # <a name="set-debug-and-release-configurations-in-visual-studio"></a>Définir des configurations Debug et Release dans Visual Studio
 
@@ -56,7 +56,7 @@ Pour modifier la configuration de build, effectuez l’une des opérations suiva
 
 * Dans le menu **générer** , sélectionnez **Configuration Manager**, puis sélectionnez **Debug** ou **Release**.
 
-or
+ou
 
 * Dans la barre d’outils, choisissez **Debug** ou **Release** dans la liste **Configurations de solutions**.
 
@@ -67,7 +67,7 @@ or
 Vous pouvez choisir de générer des fichiers de symboles (. pdb) et les informations de débogage à inclure. Pour la plupart des types de projets, le compilateur génère des fichiers de symboles par défaut pour les versions Debug et Release, tandis que les autres paramètres par défaut diffèrent selon le type de projet et la version de Visual Studio.
 
 > [!IMPORTANT]
-> Le débogueur chargera uniquement un fichier .pdb pour un fichier exécutable qui correspond exactement au fichier .pdb créé lors de la génération du fichier exécutable (autrement dit, le fichier .pdb doit être le fichier d'origine ou une copie du fichier .pdb d'origine). Pour plus d’informations, consultez [raisons pour lesquelles Visual Studio requiert que les fichiers de symboles du débogueur correspondent exactement aux fichiers binaires avec lesquels ils ont été générés](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/).
+> Le débogueur chargera uniquement un fichier .pdb pour un fichier exécutable qui correspond exactement au fichier .pdb créé lors de la génération du fichier exécutable (autrement dit, le fichier .pdb doit être le fichier d'origine ou une copie du fichier .pdb d'origine). Pour plus d’informations, consultez [raisons pour lesquelles Visual Studio requiert que les fichiers de symboles du débogueur correspondent exactement aux fichiers binaires avec lesquels ils ont été générés](/archive/blogs/jimgries/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with).
 
 Chaque type de projet peut avoir une façon différente de définir ces options.
 

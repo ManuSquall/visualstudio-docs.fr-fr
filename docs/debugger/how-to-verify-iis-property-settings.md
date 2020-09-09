@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f37a1ee196b14ec1f8c7b03ffc6e6d826ced02d8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 87fdd6064492c4043723ddff960685a50f8bcb2b
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348468"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600260"
 ---
 # <a name="how-to-verify-iis-property-settings"></a>Comment : vérifier les paramètres des propriétés IIS
 
@@ -59,7 +59,7 @@ Vous pouvez définir les propriétés d'une application Web à l'aide de l'outil
 
    3. Cliquez sur **OK** pour fermer la boîte de dialogue **Méthodes d’authentification**.
 
-5. Pour une application ATL Server, vérifiez que le verbe DEBUG est associé à votre extension ISAPI. Pour plus d’informations, consultez [Comment : associer le verbe Debug avec l’extension](https://msdn.microsoft.com/library/50d261d3-4bd4-41c0-b44e-3591086f121e).
+5. Pour une application ATL Server, vérifiez que le verbe DEBUG est associé à votre extension ISAPI. Pour plus d’informations, consultez [Comment : associer le verbe Debug avec l’extension](/previous-versions/ms165022(v=vs.100)).
 
 6. Pour une application [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], vérifiez que le dossier virtuel de l’application comporte un nom d’application défini dans le **Gestionnaire des services Internet (IIS)**, le **Gestionnaire des services Internet** ou les **Services IIS (Internet Information Services)**.
 

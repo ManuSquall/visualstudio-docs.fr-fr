@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 1c208e435e63891c71fe47ebd64c5fe1307e0c82
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9b46abc4d22ddfdc551669d3bcd4cba5acf7cce4
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348139"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599518"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Exécuter des applications UWP dans le simulateur
 
@@ -115,7 +115,7 @@ Le bouton **Émulation de tactile : pivoter** définit le mode d’interaction s
 
 ## <a name="simulate-network-connection-properties"></a><a name="BKMK_Simulate_network_connection_properties"></a> Simuler des propriétés de connexion réseau
 
-Vous pouvez aider les utilisateurs de votre application à gérer le coût des connexions réseau limitées en faisant bien comprendre le coût des connexions réseau ou les modifications de l'état du forfait données et en permettant à votre application d'utiliser ces informations pour éviter de subir des frais d'itinérance supplémentaires ou de dépasser la limite de transfert de données spécifiée. Les API [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) vous permettent de répondre aux événements [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) et [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) qui assurent la connexion. Consultez [Comment gérer les contraintes liées au coût des connexions réseau limitées (HTML)](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).
+Vous pouvez aider les utilisateurs de votre application à gérer le coût des connexions réseau limitées en faisant bien comprendre le coût des connexions réseau ou les modifications de l'état du forfait données et en permettant à votre application d'utiliser ces informations pour éviter de subir des frais d'itinérance supplémentaires ou de dépasser la limite de transfert de données spécifiée. Les API [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) vous permettent de répondre aux événements [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) et [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) qui assurent la connexion. Consultez [Comment gérer les contraintes liées au coût des connexions réseau limitées (HTML)](/previous-versions/windows/apps/hh750310(v=win.10)).
 
 Pour déboguer ou tester votre code réseau sensible au coût, le simulateur peut simuler les propriétés d’un réseau qui sont exposées par l’objet [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) retourné par [GetInternetConnectionProfile](/uwp/api/windows.networking.connectivity.networkinformation).
 
@@ -139,7 +139,7 @@ Pour simuler les propriétés d'un réseau :
 
 Pour plus d’informations sur la gestion des connexions réseau, consultez :
 
-[Comment gérer les contraintes liées au coût des connexions réseau limitées (HTML)](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)
+[Comment gérer les contraintes liées au coût des connexions réseau limitées (HTML)](/previous-versions/windows/apps/hh750310(v=win.10))
 
 [Exemple d’informations réseau](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)
 

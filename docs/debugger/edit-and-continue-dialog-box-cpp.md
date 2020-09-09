@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d708b4f74777fb40eccc2fef9b782689f830e092
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba7b133594d016d1a80efae4d18d1fb55a96398d
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72737969"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599551"
 ---
 # <a name="edit-and-continue-dialog-box-c"></a>Modifier et continuer, boîte de dialogue (C++)
 Modifier &amp; Continuer n'a pas pu appliquer les modifications que vous avez apportées au code natif. Il peut d'agit d'une condition temporaire. Parfois, Modifier &amp; Continuer ne peut pas appliquer immédiatement les modifications du code natif, mais peut le faire plus tard au cours de la session de débogage (par exemple, après avoir terminé l'appel à la procédure en cours d'exécution). Pour plus d’informations, consultez [Modifier et Continuer](../debugger/edit-and-continue.md).
@@ -32,4 +32,4 @@ Modifier &amp; Continuer n'a pas pu appliquer les modifications que vous avez 
  Vous pouvez modifier le code pour corriger l'erreur pendant le débogage arrêter le débogage et corriger le code, ou ignorer l'erreur et continuer le débogage. Si vous continuez sans effectuer la correction, vos modifications du code ne seront pas appliquées immédiatement.
 
 ## <a name="see-also"></a>Voir aussi
-- [Modifier & Continuer, Débogage, Boîte de dialogue Options](https://msdn.microsoft.com/library/bcew296c.aspx)
+- [Modifier & Continuer, Débogage, Boîte de dialogue Options](./edit-and-continue.md)

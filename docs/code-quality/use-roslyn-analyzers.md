@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ac5103b15cee6e44650d9b8aef6fdf755874b2d2
-ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.openlocfilehash: 22a82abab6b0c11ed57780ac69b4af9e1290ac2d
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89490285"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599983"
 ---
 # <a name="use-code-analyzers"></a>Utiliser des analyseurs de code
 
@@ -62,12 +62,12 @@ Le tableau suivant présente les différentes options de gravité :
 
 | Gravité (Explorateur de solutions) | Gravité (fichier EditorConfig) | Comportement au moment de la génération | Comportement de l’éditeur |
 |-|-|-|
-| Erreur | `error` | Les violations apparaissent comme des *Erreurs* dans les liste d’erreurs et dans la sortie de la génération en ligne de commande, et entraînent l’échec des builds.| Le code incriminé est souligné d’un tilde rouge et marqué d’une petite zone rouge dans la barre de défilement. |
+| Error | `error` | Les violations apparaissent comme des *Erreurs* dans les liste d’erreurs et dans la sortie de la génération en ligne de commande, et entraînent l’échec des builds.| Le code incriminé est souligné d’un tilde rouge et marqué d’une petite zone rouge dans la barre de défilement. |
 | Avertissement | `warning` | Les violations apparaissent en tant qu' *avertissements* dans le liste d’erreurs et dans la sortie de la génération en ligne de commande, mais ne provoquent pas l’échec des builds. | Le code incriminé est souligné d’un tilde vert et est marqué d’un petit cadre vert dans la barre de défilement. |
 | Info | `suggestion` | Les violations apparaissent sous la forme de *messages* dans le liste d’erreurs, et pas du tout dans la sortie de la génération de la ligne de commande. | Le code incriminé est souligné d’un tilde gris et marqué d’une petite zone grise dans la barre de défilement. |
 | Hidden | `silent` | Non visible par l’utilisateur. | Non visible par l’utilisateur. Toutefois, le diagnostic est signalé au moteur de diagnostic IDE. |
-| Aucune | `none` | Entièrement supprimée. | Entièrement supprimée. |
-| Par défaut | `default` | Correspond à la gravité par défaut de la règle. Pour déterminer la valeur par défaut d’une règle, recherchez dans la Fenêtre Propriétés. | Correspond à la gravité par défaut de la règle. |
+| Aucun | `none` | Entièrement supprimée. | Entièrement supprimée. |
+| Default | `default` | Correspond à la gravité par défaut de la règle. Pour déterminer la valeur par défaut d’une règle, recherchez dans la Fenêtre Propriétés. | Correspond à la gravité par défaut de la règle. |
 
 La capture d’écran suivante de l’éditeur de code montre trois violations différentes avec des gravités différentes. Notez la couleur du tilde et le petit carré de couleur de la barre de défilement à droite.
 
@@ -118,7 +118,7 @@ Si vous avez plusieurs entrées applicables à un ID de règle spécifique, voic
 - L’entrée de gravité pour une règle individuelle par ID est prioritaire sur l’entrée de gravité pour une catégorie.
 - L’entrée de gravité pour une catégorie est prioritaire sur l’entrée de gravité pour toutes les règles de l’analyseur.
 
-Prenons l’exemple de EditorConfig suivant, où [CA1822](https://docs.microsoft.com/visualstudio/code-quality/ca1822) a la catégorie « performance » :
+Prenons l’exemple de EditorConfig suivant, où [CA1822](./ca1822.md) a la catégorie « performance » :
 
    ```ini
    [*.cs]

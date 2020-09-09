@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e141fac7fba1939811c722d8e08f49531111ff7e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f3aa2de2f9e1bc0c5f92d13b159bfc268a25b059
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85460245"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599923"
 ---
 # <a name="error-transact-sql-execution-ended-without-debugging"></a>Erreur : L'exécution de Transact-SQL s'est terminée sans débogage
 
@@ -40,7 +40,7 @@ Deux comptes sont concernés :
 
   Pour corriger cette erreur, vous pouvez avoir besoin de :
 
-  - Vérifier vos paramètres d'autorisation. Pour plus d’informations, consultez [Comment : définir des autorisations de SQL Server pour le débogage](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414).
+  - Vérifier vos paramètres d'autorisation. Pour plus d’informations, consultez [Comment : définir des autorisations de SQL Server pour le débogage](/previous-versions/w1bhybwz(v=vs.100)).
 
   - Vérifier que le débogage SQL est correctement configuré.
 
@@ -49,6 +49,6 @@ Deux comptes sont concernés :
 ## <a name="see-also"></a>Voir aussi
 
 - [Configuration du débogage SQL](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))
-- [Comment : définir des autorisations de SQL Server pour le débogage](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)
+- [Comment : définir des autorisations de SQL Server pour le débogage](/previous-versions/w1bhybwz(v=vs.100))
 - [Paramètres et préparation du débogueur](../debugger/debugger-settings-and-preparation.md)
 - [Débogage à distance](../debugger/remote-debugging.md)

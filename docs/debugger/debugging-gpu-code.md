@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b1e2739532512bde5edeed4facc92b807187293
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 02900bc7e0d3746e465c8e4741036605a76190d4
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77144797"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599948"
 ---
 # <a name="debugging-gpu-code"></a>Débogage du code GPU
 Vous pouvez déboguer du code C++ qui s'exécute sur l'unité de traitement graphique (GPU). La prise en charge du débogage GPU dans Visual Studio inclut la détection de concurrence, les processus de lancement et leur attachement, ainsi que l'intégration dans les fenêtres de débogage.
@@ -77,9 +77,9 @@ Vous pouvez déboguer du code C++ qui s'exécute sur l'unité de traitement grap
  Cette erreur se produit si vous effectuez un débogage sur un ordinateur distant. Le débogueur ne peut pas déterminer avant l'exécution si les pilotes sont installés sur l'ordinateur distant. Les pilotes sont disponibles auprès du fabricant de la carte graphique.
 
 ### <a name="error-timeout-detection-and-recovery-tdr-must-be-disabled-at-the-remote-site"></a>Erreur : la fonctionnalité TDR (Timeout Detection and Recovery) doit être désactivée sur le site distant.
- Les calculs C++ AMP peuvent dépasser l'intervalle de temps par défaut qui est défini par le processus Windows TDR. Lorsque cela se produit, le calcul est annulé et les données sont perdues. Pour plus d’informations, consultez [Handling TDRs in C++ AMP](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/03/06/handling-tdrs-in-c-amp/).
+ Les calculs C++ AMP peuvent dépasser l'intervalle de temps par défaut qui est défini par le processus Windows TDR. Lorsque cela se produit, le calcul est annulé et les données sont perdues. Pour plus d’informations, consultez [Handling TDRs in C++ AMP](/archive/blogs/nativeconcurrency/handling-tdrs-in-c-amp).
 
 ## <a name="see-also"></a>Voir aussi
 - [Procédure pas à pas : débogage d’une application C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)
 - [Paramètres de projet pour une configuration Debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
-- [Start GPU Debugging in Visual Studio](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/03/17/start-gpu-debugging-in-visual-studio-2012/)
+- [Start GPU Debugging in Visual Studio](/archive/blogs/nativeconcurrency/start-gpu-debugging-in-visual-studio-2012)

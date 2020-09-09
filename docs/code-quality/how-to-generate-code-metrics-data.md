@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 145525dc12070d98dae83d592ae86a675bb605d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1b254cb2077b748f34958e33dbc456f17df530ce
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88893409"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600226"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Comment : générer des données de métriques du code
 
@@ -32,7 +32,7 @@ Vous pouvez générer des données de métriques du code de trois façons :
 
 Les analyseurs de qualité du code .NET incluent plusieurs règles de l' [analyseur](roslyn-analyzers-overview.md) de métrique du code :
 
-- [CA1501](ca1501-avoid-excessive-inheritance.md)
+- [CA1501](./ca1501.md)
 - [CA1502](ca1502.md)
 - [CA1505](ca1505.md)
 - [CA1506](ca1506.md)

@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: b7d9ed2f2ceeae21b85fdb8227e65715cb07bc8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 87f8fbec389e3735b6f1c39cdd671a391c7334d7
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350561"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600104"
 ---
 # <a name="generate-source-code-from-net-assemblies-while-debugging"></a>Générer du code source à partir d’assemblys .NET pendant le débogage
 
@@ -27,7 +27,7 @@ Lors du débogage d’une application .NET, il se peut que vous souhaitiez affic
 > [!NOTE]
 > * La génération de code source (décompilation) est uniquement disponible pour les applications .NET et est basée sur le projet [ILSpy](https://github.com/icsharpcode/ILSpy) Open source.
 > * La décompilation est disponible uniquement dans Visual Studio 2019 16,5 et versions ultérieures.
-> * L’application de l’attribut [SuppressIldasmAttribute](https://docs.microsoft.com/dotnet/api/system.runtime.compilerservices.suppressildasmattribute) à un assembly ou à un module empêche Visual Studio de tenter une décompilation.
+> * L’application de l’attribut [SuppressIldasmAttribute](/dotnet/api/system.runtime.compilerservices.suppressildasmattribute) à un assembly ou à un module empêche Visual Studio de tenter une décompilation.
 
 ## <a name="generate-source-code"></a>Générer le code source
 
@@ -99,7 +99,7 @@ Pour plus d’informations, consultez le problème GitHub : [État du générat
 
 ### <a name="just-my-code"></a>Uniquement mon code
 
-Les paramètres [uniquement mon code (uniquement mon code)](https://docs.microsoft.com/visualstudio/debugger/just-my-code) permettent à Visual Studio d’effectuer un pas à pas principal dans le système, l’infrastructure, la bibliothèque et d’autres appels non utilisateur. Pendant une session de débogage, la fenêtre **modules** affiche les modules de code que le débogueur traite comme mon code (code utilisateur).
+Les paramètres [uniquement mon code (uniquement mon code)](./just-my-code.md) permettent à Visual Studio d’effectuer un pas à pas principal dans le système, l’infrastructure, la bibliothèque et d’autres appels non utilisateur. Pendant une session de débogage, la fenêtre **modules** affiche les modules de code que le débogueur traite comme mon code (code utilisateur).
 
 La décompilation des modules optimisés ou de version génère du code non-utilisateur. Si le débogueur s’arrête dans votre code non-utilisateur décompilé, par exemple, la fenêtre **aucune source** s’affiche. Pour désactiver uniquement mon code, accédez à **Outils**  >  **options** (ou options de **débogage**  >  **Options**) > **débogage**  >  **général**, **Enable Just My Code**puis désactivez uniquement mon code.
 

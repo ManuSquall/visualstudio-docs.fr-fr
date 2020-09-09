@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a4ae5e4f6f21208f02cbfd6513b3c5eb28124a8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 659167b02703cd3a51751fbe90fbd9408b5e623d
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350587"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599562"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>Diagnostiquer des problèmes après le déploiement à l’aide d’IntelliTrace (C#, Visual Basic)
 
@@ -153,7 +153,7 @@ Visual Studio 2017 et les versions ultérieures n’incluent pas le fichier *Bui
  **/p : BuildSymbolStorePath =**\<*path to symbols*>
 
 ## <a name="step-2-release-your-app"></a><a name="DeployRelease"></a> Étape 2 : Déployer votre application
- Si vous utilisez le [package Web.Deploy](https://msdn.microsoft.com/library/dd394698.aspx) créé par votre processus de génération pour déployer votre application, le manifeste de build «*Nom_projet*.BuildInfo.config » est automatiquement renommé en « BuildInfo.config » et est placé dans le même dossier que le fichier Web.config de votre application sur votre serveur web.
+ Si vous utilisez le [package Web.Deploy](/previous-versions/aspnet/dd394698(v=vs.110)) créé par votre processus de génération pour déployer votre application, le manifeste de build «*Nom_projet*.BuildInfo.config » est automatiquement renommé en « BuildInfo.config » et est placé dans le même dossier que le fichier Web.config de votre application sur votre serveur web.
 
  Si vous utilisez d’autres méthodes pour déployer votre application, assurez-vous que le manifeste de build «*Nom_projet*.BuildInfo.config » est renommé en « BuildInfo.config » et qu’il est placé dans le même dossier que le fichier Web.config de votre application sur le serveur web.
 

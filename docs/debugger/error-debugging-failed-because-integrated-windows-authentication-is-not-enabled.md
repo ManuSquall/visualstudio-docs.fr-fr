@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9c4f0e25449b0e108ac39662ec52a0ba9abc217
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6f2ac131599d6d94a2a64945e62da93bacd5e12a
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85460836"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599632"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Erreur : le débogage a échoué, car l'authentification intégrée de Windows n'est pas activée
 L'authentification de l'utilisateur qui a demandé le débogage a été empêchée en raison d'une erreur d'authentification. Cette erreur peut se produire lorsque vous essayez d’accéder à une application web ou à un service web XML. Cette erreur peut provenir, par exemple, du fait que l'authentification Windows intégrée n'est pas activée. Pour l'activer, suivez les étapes décrites dans Activer l'authentification Windows intégrée.
@@ -116,4 +116,4 @@ L'authentification de l'utilisateur qui a demandé le débogage a été empêch�
 ## <a name="see-also"></a>Voir aussi
 - [Débogage d'applications Web : erreurs et dépannage](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
 - [Microsoft Digest Authentication](/windows/win32/secauthn/microsoft-digest-authentication)
-- [Exécution d’applications Web sur Windows Vista avec IIS 7,0 et Visual Studio](https://msdn.microsoft.com/Library/262a82ac-dd0e-4096-86c6-fb463e88be66)
+- [Exécution d’applications Web sur Windows Vista avec IIS 7,0 et Visual Studio](/previous-versions/aa964620(v=vs.140))

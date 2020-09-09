@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b7b0ef177922f09239c8925ced1ca013e966c0e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 881809dda7e8254f9d337b68f0c317eccfd9093d
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72745721"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600199"
 ---
 # <a name="client-block-hook-functions"></a>Fonctions de raccordement de bloc client
 Si vous voulez valider ou reporter le contenu des données stockées dans des blocs `_CLIENT_BLOCK`, vous pouvez écrire une fonction spécialement dans ce but. Cette fonction doit avoir un prototype similaire au suivant, défini dans CRTDBG.H :
@@ -49,5 +49,5 @@ typedef void (__cdecl *_CRT_DUMP_CLIENT)
 ## <a name="see-also"></a>Voir aussi
 
 - [Écriture de fonctions de raccordement de débogage](../debugger/debug-hook-function-writing.md)
-- [Exemple de crt_dbg2](https://msdn.microsoft.com/library/21e1346a-6a17-4f57-b275-c76813089167)
+- [Exemple de crt_dbg2](/previous-versions/b31tft51(v=vs.100))
 - [_CrtReportBlockType](/cpp/c-runtime-library/reference/crtreportblocktype)

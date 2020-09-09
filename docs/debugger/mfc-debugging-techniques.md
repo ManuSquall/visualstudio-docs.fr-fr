@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd4a481a8d4f283204b99cfef4a07106d3e479cb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 06b42dbf31a8b5f4cb66de047bc1e08a4f840353
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72731282"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600235"
 ---
 # <a name="mfc-debugging-techniques"></a>Techniques de débogage MFC
 Si vous déboguez un programme MFC, les techniques de débogage suivantes peuvent vous être utiles.
@@ -80,7 +80,7 @@ Veillez à supprimer les instructions `AfxDebugBreak` lorsque vous créez une ve
 [Dans cette rubrique](#BKMK_In_this_topic)
 
 ## <a name="the-trace-macro"></a><a name="BKMK_The_TRACE_macro"></a> La macro TRACE
-Pour afficher les messages de votre programme dans la [fenêtre Sortie](../ide/reference/output-window.md)du débogueur, vous pouvez utiliser la macro [ATLTRACE](https://msdn.microsoft.com/Library/c796baa5-e2b9-4814-a27d-d800590b102e) ou la macro MFC [TRACE](https://msdn.microsoft.com/Library/7b6f42d8-b55a-4bba-ab04-c46251778e6f) . De même que les [assertions](../debugger/c-cpp-assertions.md), les macros trace sont actives uniquement dans la version Debug de votre programme et disparaissent après la compilation dans la version Release.
+Pour afficher les messages de votre programme dans la [fenêtre Sortie](../ide/reference/output-window.md)du débogueur, vous pouvez utiliser la macro [ATLTRACE](/previous-versions/6xkxyz08(v=vs.140)) ou la macro MFC [TRACE](/previous-versions/6w95a4ha(v=vs.140)) . De même que les [assertions](../debugger/c-cpp-assertions.md), les macros trace sont actives uniquement dans la version Debug de votre programme et disparaissent après la compilation dans la version Release.
 
 Les exemples suivants présentent certaines utilisations possibles de la macro **TRACE** . À l'instar de `printf`, la macro **TRACE** peut gérer un certain nombre d'arguments.
 
@@ -115,7 +115,7 @@ Pour plus d'informations sur la macro **TRACE** , consultez [Services de diagnos
 Les MFC fournissent des classes et des fonctions pour détecter la mémoire qui est allouée, mais jamais désallouée.
 
 ### <a name="tracking-memory-allocations"></a><a name="BKMK_Tracking_memory_allocations"></a> Suivi des allocations de mémoire
-Dans les MFC, vous pouvez utiliser la macro [DEBUG_NEW](https://msdn.microsoft.com/Library/9b379344-4093-4bec-a3eb-e0d8a63ada9d) à la place de l'opérateur **new** pour faciliter la localisation des fuites de mémoire. Dans la version Debug de votre programme, `DEBUG_NEW` assure le suivi du nom du fichier et du numéro de ligne pour chaque objet alloué. Lorsque vous compilez une version Release de votre programme, `DEBUG_NEW` est traduit en une opération **new** simple sans les informations de nom de fichier et de numéro de ligne. Ainsi, la vitesse n'est pas pénalisée dans la version Release de votre programme.
+Dans les MFC, vous pouvez utiliser la macro [DEBUG_NEW](/previous-versions/tz7sxz99(v=vs.140)) à la place de l'opérateur **new** pour faciliter la localisation des fuites de mémoire. Dans la version Debug de votre programme, `DEBUG_NEW` assure le suivi du nom du fichier et du numéro de ligne pour chaque objet alloué. Lorsque vous compilez une version Release de votre programme, `DEBUG_NEW` est traduit en une opération **new** simple sans les informations de nom de fichier et de numéro de ligne. Ainsi, la vitesse n'est pas pénalisée dans la version Release de votre programme.
 
 Si vous voulez éviter de réécrire le programme entier pour utiliser `DEBUG_NEW` à la place de **new**, vous pouvez définir la macro suivante dans vos fichiers sources :
 
@@ -134,13 +134,13 @@ Avant d'utiliser les fonctions de diagnostic de la mémoire, vous devez activer 
 
 **Pour activer ou désactiver les diagnostics de la mémoire**
 
-- Appelez la fonction globale [AfxEnableMemoryTracking](https://msdn.microsoft.com/Library/0a40e0c4-855d-46e2-9577-a8f2346f47db) pour activer ou désactiver l'allocateur de mémoire de diagnostic. Étant donné que les diagnostics de la mémoire se trouvent par défaut dans la bibliothèque de débogage, vous utiliserez normalement cette fonction pour les désactiver provisoirement, ce qui vous permettra d'augmenter la vitesse d'exécution du programme et de réduire la sortie des diagnostics.
+- Appelez la fonction globale [AfxEnableMemoryTracking](/previous-versions/hzsxb6e8(v=vs.140)) pour activer ou désactiver l'allocateur de mémoire de diagnostic. Étant donné que les diagnostics de la mémoire se trouvent par défaut dans la bibliothèque de débogage, vous utiliserez normalement cette fonction pour les désactiver provisoirement, ce qui vous permettra d'augmenter la vitesse d'exécution du programme et de réduire la sortie des diagnostics.
 
   **Pour sélectionner des fonctionnalités de diagnostic de la mémoire spécifiques avec afxMemDF**
 
-- Si vous voulez contrôler plus précisément les fonctionnalités de diagnostic de la mémoire, vous pouvez les activer et les désactiver individuellement, de façon sélective, en définissant la valeur de la variable globale MFC [afxMemDF](https://msdn.microsoft.com/Library/cf117501-5446-4fce-81b3-f7194bc95086). Cette variable peut prendre les valeurs suivantes, comme spécifié par le type énuméré **afxMemDF**:
+- Si vous voulez contrôler plus précisément les fonctionnalités de diagnostic de la mémoire, vous pouvez les activer et les désactiver individuellement, de façon sélective, en définissant la valeur de la variable globale MFC [afxMemDF](/previous-versions/ahe4a83t(v=vs.140)). Cette variable peut prendre les valeurs suivantes, comme spécifié par le type énuméré **afxMemDF**:
 
-  |Valeur|Description|
+  |Value|Description|
   |-----------|-----------------|
   |**allocMemDF**|Activer l'allocateur de mémoire de diagnostic (par défaut).|
   |**delayFreeMemDF**|Différer la libération de la mémoire lors des appels à `delete` ou `free` jusqu'à ce que le programme s'arrête. Votre programme allouera alors la quantité maximale de mémoire possible.|

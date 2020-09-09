@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19eed30074215b64301d7227e93ba6bf5b438d78
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eceffab5b8c179734b1abb5f1005c240912115f1
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183777"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599586"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Spécifier des fichiers de symboles (. pdb) et sources dans le débogueur Visual Studio (C#, C++, Visual Basic, F #)
 
@@ -46,7 +46,7 @@ Pour obtenir une explication détaillée des fichiers de symboles, consultez les
 
 - [Présentation des fichiers de symboles et des paramètres de symboles Visual Studio](https://devblogs.microsoft.com/devops/understanding-symbol-files-and-visual-studios-symbol-settings/)
 
-- [Pourquoi Visual Studio exige-t-il que les fichiers de symboles du débogueur correspondent exactement aux fichiers binaires avec lesquels ils ont été générés ?](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/)
+- [Pourquoi Visual Studio exige-t-il que les fichiers de symboles du débogueur correspondent exactement aux fichiers binaires avec lesquels ils ont été générés ?](/archive/blogs/jimgries/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with)
 
 ## <a name="how-symbol-files-work"></a>Fonctionnement des fichiers de symboles
 
@@ -57,7 +57,7 @@ Le fichier *. pdb* contient des informations sur l’état du projet et le débo
 
 Les fichiers de symboles affichent également l’emplacement des fichiers sources et, éventuellement, le serveur à partir duquel ils doivent être récupérés.
 
-Le débogueur charge uniquement les fichiers *. pdb* qui correspondent exactement aux fichiers *. pdb* créés lors de la génération d’une application (autrement dit, les fichiers *. pdb* d’origine ou les copies). Cette [duplication exacte](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/) est nécessaire, car la disposition des applications peut changer même si le code lui-même n’a pas changé.
+Le débogueur charge uniquement les fichiers *. pdb* qui correspondent exactement aux fichiers *. pdb* créés lors de la génération d’une application (autrement dit, les fichiers *. pdb* d’origine ou les copies). Cette [duplication exacte](/archive/blogs/jimgries/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with) est nécessaire, car la disposition des applications peut changer même si le code lui-même n’a pas changé.
 
 > [!TIP]
 > Pour déboguer du code en dehors du code source de votre projet, tel que le code Windows ou le code tiers que votre projet appelle, vous devez spécifier l’emplacement des fichiers *. pdb* du code externe (et éventuellement des fichiers sources), qui doivent correspondre exactement aux builds de votre application.

@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9c52c76bbd8623f9ec9b0ce8f3e5463c638d8f7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: beeba55c873e008b3e096da66f888695d719c882
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75916448"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599938"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Erreur et avertissement, boîtes de dialogue pour le débogage
 Vous trouverez ci-après la liste des boîtes de dialogue d'erreur et d'avertissement que vous pouvez rencontrer lors du débogage de votre application.
@@ -48,7 +48,7 @@ Vous trouverez ci-après la liste des boîtes de dialogue d'erreur et d'avertiss
 
  [Il n’y a pas de code source disponible pour l’emplacement en cours (boîte de dialogue)](../debugger/no-source-available.md)
 
- [Aucune information symbolique, boîte de dialogue](https://msdn.microsoft.com/library/18de4888-9cca-4059-a165-48b135fee4c9)
+ [Aucune information symbolique, boîte de dialogue](/previous-versions/d493t3ew(v=vs.100))
 
  [Résoudre une ambiguïté (boîte de dialogue)](../debugger/resolve-ambiguity-dialog-box.md)
 

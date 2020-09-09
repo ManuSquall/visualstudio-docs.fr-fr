@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a89e60a47e5bab6580c78275357234bb9d3f1c56
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d8b7ac2aed43bcb39b4bb5924ad6f1cf2c438b64
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80527927"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600088"
 ---
 # <a name="debugger-security"></a>Sécurité du débogueur
 La possibilité de déboguer un autre processus vous donne des pouvoirs extrêmement larges que vous n'auriez pas autrement, surtout lors du débogage à distance. Un débogueur malveillant pourrait infliger des dommages étendus sur l'ordinateur qui est débogué.
@@ -57,7 +57,7 @@ La possibilité de déboguer un autre processus vous donne des pouvoirs extrême
  Pour plus d’informations sur la configuration de msvsmon, consultez [configurer le débogueur distant](../debugger/remote-debugging.md#bkmk_setup).
 
 ### <a name="web-services-debugging-security"></a>Sécurité de débogage Web Services
- Il est plus sûr de déboguer localement, mais puisque [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] n'est probablement pas installé sur le serveur web, le débogage local peut ne pas être pratique. En général, le débogage de services web s'effectue à distance, sauf pendant le développement, ce qui fait que les recommandations pour la sécurité de débogage distant s'appliquent également au débogage de services web. Voici quelques meilleures pratiques supplémentaires. Pour plus d'informations, consultez [Debugging XML Web Services](https://msdn.microsoft.com/library/c900b137-9fbd-4f59-91b5-9c2c6ce06f00).
+ Il est plus sûr de déboguer localement, mais puisque [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] n'est probablement pas installé sur le serveur web, le débogage local peut ne pas être pratique. En général, le débogage de services web s'effectue à distance, sauf pendant le développement, ce qui fait que les recommandations pour la sécurité de débogage distant s'appliquent également au débogage de services web. Voici quelques meilleures pratiques supplémentaires. Pour plus d'informations, consultez [Debugging XML Web Services](/previous-versions/ms241873(v=vs.100)).
 
 - N’activez pas le débogage sur un serveur web qui a été compromis.
 

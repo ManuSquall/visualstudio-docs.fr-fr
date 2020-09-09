@@ -17,18 +17,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4deaf03013b6e28ea02e6ec7412bd23a05f1b87e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 10b370b653590dd5061dc98d31d74d3351180dc6
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72738251"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600320"
 ---
 # <a name="about-the-registers-window-in-visual-studio-c-c-visual-basic-f"></a>À propos de la fenêtre registres dans Visual Studio (C#, C++, Visual Basic, F #)
 
 La fenêtre **Registres** est disponible uniquement si le débogage au niveau des adresses est activé dans la boîte de dialogue **Options**, nœud **Débogage**.
 
- Les registres sont des emplacements particuliers dans un processeur (UC) qui sont utilisés pour stocker de petits fragments de données sur lesquels le processeur travaille activement. La compilation ou l'interprétation du code source génère des instructions qui déplacent des données de la mémoire vers des registres et vice versa, en fonction des besoins. L'accès aux données stockées dans les registres est très rapide comparé à l'accès aux données stockées en mémoire. De ce fait, le code autorisant le processeur à stocker des données dans un Registre et à y accéder à maintes reprises tend à s'exécuter plus rapidement que le code exigeant que le processeur charge et décharge constamment les registres. Pour que le compilateur puisse plus facilement conserver des données dans des registres et réaliser d'autres optimisations, vous devez éviter d'utiliser des variables globales et utiliser autant que possible des variables locales. Le code écrit de cette manière est réputé avoir une bonne localité de référence. Dans certains langages, tels que C/C++, le programmeur peut déclarer une variable de Registre qui demande au compilateur de faire de son mieux pour essayer de toujours conserver la variable dans un Registre. Pour plus d'informations, consultez [Mot-clé du registre](https://msdn.microsoft.com/library/5b66905a-2f7f-4918-bb55-5e66d4bc50f9).
+ Les registres sont des emplacements particuliers dans un processeur (UC) qui sont utilisés pour stocker de petits fragments de données sur lesquels le processeur travaille activement. La compilation ou l'interprétation du code source génère des instructions qui déplacent des données de la mémoire vers des registres et vice versa, en fonction des besoins. L'accès aux données stockées dans les registres est très rapide comparé à l'accès aux données stockées en mémoire. De ce fait, le code autorisant le processeur à stocker des données dans un Registre et à y accéder à maintes reprises tend à s'exécuter plus rapidement que le code exigeant que le processeur charge et décharge constamment les registres. Pour que le compilateur puisse plus facilement conserver des données dans des registres et réaliser d'autres optimisations, vous devez éviter d'utiliser des variables globales et utiliser autant que possible des variables locales. Le code écrit de cette manière est réputé avoir une bonne localité de référence. Dans certains langages, tels que C/C++, le programmeur peut déclarer une variable de Registre qui demande au compilateur de faire de son mieux pour essayer de toujours conserver la variable dans un Registre. Pour plus d'informations, consultez [Mot-clé du registre](/previous-versions/482s4fy9(v=vs.140)).
 
  Les registres peuvent être divisés en deux types : les registres génériques et les registres spéciaux. Les registres à caractère général contiennent des données relatives à des opérations générales telles que l'ajout de deux nombres ou la référence d'un élément dans un tableau. Les registres spéciaux ont des buts spécifiques et une signification particulière. Le Registre de pointeur de pile en est un bon exemple ; il est utilisé par le processeur pour conserver une trace de la pile des appels du programme. En tant que programmeur, vous ne manipulerez probablement pas directement le pointeur de pile. Il est néanmoins essentiel au bon fonctionnement de votre programme, car en son absence, le processeur ne sait pas où revenir à l'issue d'un appel de fonction.
 
@@ -57,7 +57,7 @@ Pour les processeurs Intel x86, les indicateurs suivants peuvent s’afficher da
 |Indicateur|Définir la valeur|
 |-|-|
 |Dépassement|OV = 1|
-|Direction|HAUT = 1|
+|Sens|HAUT = 1|
 |Suspendre|AE = 1|
 |Signer|PL = 1|
 |Zéro|ZR = 1|

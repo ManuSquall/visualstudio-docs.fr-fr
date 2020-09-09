@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75d044ed5ddaf4b7eb7a66bc09c8b3de3502a50f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7e2157b55915f82e79dfdac5d300046850a93879
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350496"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600304"
 ---
 # <a name="inspect-an-exception-using-the-exception-helper"></a>Inspecter une exception à l’aide de l’assistance d’exception 
 
@@ -50,7 +50,7 @@ Vous pouvez lire instantanément le type d’exception et le message d’excepti
 Vous pouvez configurer le débogueur pour qu’il s’arrête lorsqu’une exception du type actuel est levée à partir de la section des **paramètres d’exception** du programme d’assistance de l’exception. Si le débogueur est suspendu à une exception levée, vous pouvez utiliser la case à cocher pour désactiver l’interruption sur ce type d’exception lorsqu’il est levé à l’avenir. Si vous ne souhaitez pas arrêter cette exception particulière quand elle est levée dans ce module particulier, cochez la case en regard du nom du module sous **sauf si elle est levée à partir de :** dans la fenêtre **paramètres d’exception** . 
 
 ## <a name="inspect-inner-exceptions"></a>Inspecter les exceptions internes 
-Si l’exception contient des exceptions internes ([innerException](https://docs.microsoft.com/dotnet/api/system.exception.innerexception), vous pouvez les afficher dans le programme d’assistance de l’exception. Si plusieurs exceptions sont présentes, vous pouvez naviguer entre elles à l’aide des flèches gauche et droite affichées au-dessus de la pile des appels.
+Si l’exception contient des exceptions internes ([innerException](/dotnet/api/system.exception.innerexception), vous pouvez les afficher dans le programme d’assistance de l’exception. Si plusieurs exceptions sont présentes, vous pouvez naviguer entre elles à l’aide des flèches gauche et droite affichées au-dessus de la pile des appels.
 
 ![Assistance d’exception avec l’exception interne](media/debugger-exception-helper-innerexception.png)
 
@@ -60,4 +60,4 @@ Dans les cas où une exception s’est produite, `thrown` l’assistance d’exc
 ![Exception Helper avec exceptions levées à nouveau](media/debugger-exception-helper-innerexception.png)
 
 ## <a name="share-a-debug-session-with-live-share"></a>Partager une session de débogage avec Live Share
-À partir de l’assistance d’exception, vous pouvez démarrer une session de [Live share](https://docs.microsoft.com/visualstudio/liveshare/) en utilisant le lien **démarrer la session Live share...**. Toute personne qui rejoint la session de Live Share peut voir l’assistance de l’exception, ainsi que toutes les autres informations de débogage.
+À partir de l’assistance d’exception, vous pouvez démarrer une session de [Live share](/visualstudio/liveshare/) en utilisant le lien **démarrer la session Live share...**. Toute personne qui rejoint la session de Live Share peut voir l’assistance de l’exception, ainsi que toutes les autres informations de débogage.

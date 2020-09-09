@@ -8,17 +8,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68cbd19b65eb25405dc994100baf4fddeef9479d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 00a802c0083a9e67a145077ff8ec5842b30eb607
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350457"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600097"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Prise en main de Visual Studio Graphics Diagnostics
 Dans cette section, vous allez vous préparer à utiliser Graphics Diagnostics pour la première fois, puis vous allez capturer des frames à partir d’une application Direct3D et les examiner dans Graphics Analyzer.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  Pour utiliser Graphics Diagnostics dans Visual Studio, vous devez utiliser Visual Studio Enterprise, Visual Studio Professional ou Visual Studio Community.  D’autres éditions, y compris les Visual Studio Code, ne contiennent pas cette fonctionnalité.
 
  [!INCLUDE[downloadvs](../includes/downloadvs_md.md)]
@@ -56,7 +56,7 @@ Dans cette section, vous allez vous préparer à utiliser Graphics Diagnostics p
 Si vous avez déjà votre propre application Direct3D pour explorer Graphics Diagnostics avec, c’est génial ! Dans le cas contraire, utilisez l’une des options suivantes :
 
 ::: moniker range=">=vs-2019"
-Téléchargez un exemple à partir de l' [exemple de jeu Direct3D](https://docs.microsoft.com/samples/microsoft/windows-universal-samples/simple3dgamedx/).
+Téléchargez un exemple à partir de l' [exemple de jeu Direct3D](/samples/microsoft/windows-universal-samples/simple3dgamedx/).
 ::: moniker-end
 ::: moniker range="vs-2017"
 - Les modèles de projet **application DirectX 11 (Windows universel)** ou **application DirectX 12 (Windows universel)** pour Windows 10.

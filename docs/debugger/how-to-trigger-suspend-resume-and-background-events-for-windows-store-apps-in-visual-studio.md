@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 83b4bea32f642cbf48acb01831bd4bccc2bb15a0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e401dd55588228a98242e08d16e227b10b162418
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348936"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89600166"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Comment déclencher des événements de suspension, de reprise et d’arrière-plan lors du débogage d’applications UWP dans Visual Studio
 
@@ -48,7 +48,7 @@ Pour plus d’informations sur la gestion de la durée de vie des processus et l
      **Suspend et Terminate** ferme l’application et met fin à la session de débogage.
 
 ## <a name="trigger-background-tasks"></a><a name="BKMK_Trigger_background_tasks"></a> Déclencher des tâches en arrière-plan
- Une application peut enregistrer une tâche en arrière-plan pour répondre à certains événements système, même si l'application n'est pas en cours d'exécution. Les tâches en arrière-plan ne peuvent pas exécuter le code qui met à jour directement l'interface utilisateur; En fait, elles affichent des informations à l'utilisateur avec des mises à jour de mosaïque, des mises à jour de badge et des notifications contextuelles. Pour plus d’informations, consultez [prise en charge de votre application avec des tâches en arrière-plan](https://msdn.microsoft.com/library/4c7bb148-eb1f-4640-865e-41f627a46e8e).
+ Une application peut enregistrer une tâche en arrière-plan pour répondre à certains événements système, même si l'application n'est pas en cours d'exécution. Les tâches en arrière-plan ne peuvent pas exécuter le code qui met à jour directement l'interface utilisateur; En fait, elles affichent des informations à l'utilisateur avec des mises à jour de mosaïque, des mises à jour de badge et des notifications contextuelles. Pour plus d’informations, consultez [prise en charge de votre application avec des tâches en arrière-plan](/previous-versions/windows/apps/hh977046(v=win.10)).
 
  Déclenchez les événements qui démarrent les tâches en arrière-plan pour votre application à partir du débogueur.
 
@@ -110,7 +110,7 @@ Pour plus d’informations sur la gestion de la durée de vie des processus et l
 4. Choisissez le journal **Diagnostic** .
 
 ## <a name="see-also"></a>Voir aussi
-- [Test d’applications UWP avec Visual Studio](/visualstudio/test/create-and-run-unit-tests-for-a-store-app-in-visual-studio)
+- [Test d’applications UWP avec Visual Studio](../test/unit-test-your-code.md)
 - [Déboguer des applications dans Visual Studio](debugging-windows-store-and-windows-universal-apps.md)
 - [Cycle de vie des applications](/windows/uwp/launch-resume/app-lifecycle)
 - [Launching, resuming, and multitasking](/windows/uwp/launch-resume/index)

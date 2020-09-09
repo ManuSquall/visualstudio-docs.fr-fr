@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db6d4e8bc5b2f09194e03bbadc8f49b773d24f1e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dbfd8ac877fce4b1808a76e3bb2a66ac595693de
+ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86386951"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "89599494"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>Fichiers dump dans le débogueur Visual Studio
 
@@ -74,7 +74,7 @@ Lorsque le [débogage juste-à-temps](../debugger/just-in-time-debugging-in-visu
 1. Accédez à un chemin d’accès et sélectionnez un nom pour le fichier dump, puis sélectionnez **Enregistrer**.
 
 >[!NOTE]
->Vous pouvez créer des fichiers dump avec n’importe quel programme qui prend en charge le format minidump Windows. Par exemple, l’utilitaire en ligne de commande **Procdump** de [Windows Sysinternals](https://technet.microsoft.com/sysinternals/default) peut créer des fichiers de processus de vidage sur incident sur des déclencheurs ou à la demande. Consultez [Configuration requise et limitations](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) pour plus d’informations sur l’utilisation d’autres outils pour créer des fichiers dump.
+>Vous pouvez créer des fichiers dump avec n’importe quel programme qui prend en charge le format minidump Windows. Par exemple, l’utilitaire en ligne de commande **Procdump** de [Windows Sysinternals](/sysinternals/) peut créer des fichiers de processus de vidage sur incident sur des déclencheurs ou à la demande. Consultez [Configuration requise et limitations](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) pour plus d’informations sur l’utilisation d’autres outils pour créer des fichiers dump.
 
 ## <a name="open-a-dump-file"></a><a name="BKMK_Open_a_dump_file"></a> Ouvrir un fichier dump
 
