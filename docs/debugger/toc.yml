@@ -1,6 +1,6 @@
 - name: Documentation sur le débogueur
   href: index.yml
-- name: Vue d'ensemble
+- name: Vue d’ensemble
   items:
     - name: "Qu’est-ce que le débogage\_?"
       href: what-is-debugging.md
@@ -21,11 +21,11 @@
 - name: Didacticiels
   items:
     - name: Apprendre à déboguer C#
-      href: /visualstudio/get-started/csharp/tutorial-debugger?toc=/visualstudio/debugger/toc.json
+      href: ../get-started/csharp/tutorial-debugger.md?toc=%252fvisualstudio%252fdebugger%252ftoc.json
     - name: Apprendre à déboguer C++
       href: getting-started-with-the-debugger-cpp.md
     - name: Apprendre à déboguer Visual Basic
-      href: /visualstudio/get-started/visual-basic/tutorial-debugger?toc=/visualstudio/debugger/toc.json
+      href: ../get-started/visual-basic/tutorial-debugger.md?toc=%252fvisualstudio%252fdebugger%252ftoc.json
     - name: Exécution de code Python dans le débogueur...
       href: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
     - name: Déboguer une application Azure en direct
@@ -313,7 +313,7 @@
             - name: Assurez-vous que DNS est correctement configuré sur l’ordinateur cible
               href: error-ensure-that-dns-is-correctly-configured-on-the-target-computer.md
             - name: Microsoft Visual Studio Remote Debugging Monitor (MSVSMON.EXE) ne semble pas s’exécuter sur l’ordinateur distant
-              href: /visualstudio/debugger/error-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running
+              href: ./error-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running.md
             - name: Impossible de se connecter à Microsoft Visual Studio Remote Debugging Monitor
               href: unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md
             - name: Impossible de lancer les communications DCOM
@@ -445,7 +445,7 @@
             - name: Déboguer un package d’application installé
               href: debug-installed-app-package.md
             - name: Inspecter les propriétés XAML en phase de débogage
-              href: inspect-xaml-properties-while-debugging.md
+              href: ../xaml-tools/inspect-xaml-properties-while-debugging.md
             - name: Écrire et déboguer du code XAML en cours d’exécution
               href: ../xaml-tools/xaml-hot-reload.md
             - name: Déboguer XAML dans Blend
@@ -505,7 +505,7 @@
                 - name: Déboguer WPF
                   href: debugging-wpf.md
                 - name: Inspecter les propriétés XAML en phase de débogage
-                  href: inspect-xaml-properties-while-debugging.md
+                  href: ../xaml-tools/inspect-xaml-properties-while-debugging.md
                 - name: Écrire et déboguer du code XAML en cours d’exécution
                   href: ../xaml-tools/xaml-hot-reload.md
                 - name: Utiliser le visualiseur de l’arborescence WPF
