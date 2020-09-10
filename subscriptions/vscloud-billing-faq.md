@@ -7,12 +7,12 @@ ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
 ms.date: 09/08/2020
 ms.topic: conceptual
 description: Questions relatives à la facturation pour les abonnements cloud.
-ms.openlocfilehash: 8ef98fc3c6e81071984cdc0fb8ef6f6dab626b48
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 987dddcf54f218d63580995b363ad838f2de83b4
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561323"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641446"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>FAQ sur la facturation des abonnements cloud Visual Studio
 [Comparez les avantages des abonnements cloud et les prix](https://visualstudio.microsoft.com/vs/pricing/) afin de bien comprendre les avantages offerts par chaque abonnement Visual Studio. Découvrez les différences entre les abonnements standard et cloud de Visual Studio, obtenez des détails sur les avantages offerts aux abonnés et bien plus encore.
@@ -31,7 +31,7 @@ R : Pas du tout. Si vous souhaitez uniquement acheter des abonnements cloud Vis
 
 ## <a name="enterprise-agreement-ea-customers"></a>Clients Contrat Entreprise
 ### <a name="q-can-i-use-an-enterprise-agreement-to-buy-visual-studio-cloud-subscriptions"></a>Q : Puis-je utiliser un contrat Entreprise pour acheter des abonnements cloud Visual Studio ?
-R : Oui, c’est possible. Vous devez être propriétaire ou collaborateur d’un abonnement Azure qui a été créé pour votre contrat Entreprise. Veillez à effectuer vos achats d’abonnements cloud Visual Studio directement sur Visual Studio Marketplace. Vous ne pouvez pas acheter des abonnements cloud Visual Studio à l’aide d’un bon de commande.
+R : Oui, c’est possible. Vous devez être un contributeur ou un rôle supérieur pour un abonnement Azure qui a été créé pour votre contrat entreprise. Veillez à effectuer vos achats d’abonnements cloud Visual Studio directement sur Visual Studio Marketplace. Vous ne pouvez pas acheter des abonnements cloud Visual Studio à l’aide d’un bon de commande.
 
 ### <a name="q-how-can-i-tell-whether-i-have-the-necessary-privileges-to-buy-services-in-the-visual-studio-marketplace-through-my-organizations-enterprise-agreement"></a>Q : Comment puis-je savoir si je dispose des privilèges nécessaires pour acheter des services sur Visual Studio Marketplace avec le contrat Entreprise de mon organisation ?
 R : l’approche la plus simple pour déterminer si vous disposez des privilèges appropriés consiste à sélectionner le bouton **acheter** pour un service proposé dans le Visual Studio Marketplace.

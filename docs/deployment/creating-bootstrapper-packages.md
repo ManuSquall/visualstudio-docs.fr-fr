@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f84f91ebedd47df8c0804adee35dcbec18d8551
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 17ac6fdb6b2eaf80d927407e717954842f6e6b1b
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89314860"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641662"
 ---
 # <a name="create-bootstrapper-packages"></a>Créer des packages de programme d’amorçage
 Le programme d’installation est un programme d’installation générique qui peut être configuré pour détecter et installer les composants redistribuables, comme les fichiers Windows Installer (*.msi*) et les programmes exécutables. Le programme d'installation est également appelé programme d'amorçage. Il est programmé via un ensemble de manifestes XML qui spécifient les métadonnées permettant de gérer l'installation du composant.  Chaque composant redistribuable, ou condition préalable, qui apparaît dans la boîte de dialogue **composants requis** pour ClickOnce est un package du programme d’amorçage. Un package de programme d'amorçage est un groupe de répertoires et de fichiers qui contiennent des fichiers manifeste qui décrivent la façon dont le composant requis doit être installé.
@@ -70,7 +70,7 @@ ou, pour les versions antérieures de Visual Studio
 *\Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
 ```
 
-ou
+or
 
 ```
 *\Program Files (x86)\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
@@ -122,4 +122,4 @@ La liste redistribuable est un fichier XML que vous devez nommer en utilisant le
 - [Guide pratique pour installer les composants requis avec une application ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
 - [Boîte de dialogue composants requis](../ide/reference/prerequisites-dialog-box.md)
 - [Référence du schéma de produit et de package](../deployment/product-and-package-schema-reference.md)
-- [Utiliser le programme d’amorçage de Visual Studio 2005 pour lancer votre installation](https://msdn.microsoft.com/magazine/cc163899.aspx)
+- [Utiliser le programme d’amorçage de Visual Studio 2005 pour lancer votre installation](/archive/msdn-magazine/2004/october/visual-studio-2005-bootstrapper-start-kick-your-installation)

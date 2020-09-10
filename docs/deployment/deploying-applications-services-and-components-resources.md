@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7125be46a894072f034bf1fce3060d2bda564aff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 20524a02cf6ff38e8336ae715162f9f197d46590
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800829"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641649"
 ---
 # <a name="deploy-your-app-to-a-folder-iis-azure-or-another-destination"></a>Déployer votre application dans un dossier, IIS, Azure ou une autre destination
 
@@ -84,7 +84,7 @@ Le service [Machines virtuelles Azure](https://azure.microsoft.com/documentation
 
 La mise à l’échelle d’une application hébergée sur des machines virtuelles implique l’ajout de machines virtuelles supplémentaires en fonction de la demande et le déploiement des logiciels nécessaires. Ce niveau de contrôle supplémentaire vous permet de moduler la mise à l’échelle selon la région globale. Par exemple, si votre application est utilisée par les employés de différents bureaux régionaux, vous pouvez mettre à l’échelle vos machines virtuelles en fonction du nombre d’employés dans ces régions et ainsi potentiellement réduire les coûts.
 
-Pour plus d’informations, reportez-vous à la [comparaison détaillée](https://azure.microsoft.com/documentation/articles/choose-web-site-cloud-service-vm/) d’Azure App Service, Machines virtuelles Azure et d’autres services Azure que vous pouvez utiliser comme cible de déploiement à l’aide de l’option Personnalisé dans Visual Studio.
+Pour plus d’informations, reportez-vous à la [comparaison détaillée](/azure/architecture/guide/technology-choices/compute-decision-tree) d’Azure App Service, Machines virtuelles Azure et d’autres services Azure que vous pouvez utiliser comme cible de déploiement à l’aide de l’option Personnalisé dans Visual Studio.
 
 #### <a name="when-to-choose-azure-virtual-machines"></a>Quand choisir des machines virtuelles Azure
 

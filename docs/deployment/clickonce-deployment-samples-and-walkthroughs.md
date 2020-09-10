@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 651f981117cdd9b9cfb26aae61bbd4e2747e921d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8083ed11537975bfd05f546843264881fe7a7aa0
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900384"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641469"
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>Exemples et procédures pas à pas relatifs au déploiement ClickOnce
 Cette section contient des exemples d’applications, un exemple de code et des procédures pas à pas qui illustrent la syntaxe, la structure et les techniques utilisées pour déployer des applications de Windows Forms, WPF et console.
@@ -39,4 +39,4 @@ Cette section contient des exemples d’applications, un exemple de code et des 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Procédures pas à pas Visual Studio](https://msdn.microsoft.com/library/f5399a1f-2d3d-42fb-b989-134ccda2159f)
+- [Procédures pas à pas Visual Studio](/previous-versions/szatc41e(v=vs.110))

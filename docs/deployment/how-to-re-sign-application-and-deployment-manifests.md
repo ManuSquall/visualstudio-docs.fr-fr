@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1905ea32a9899a1262e146f264e0a1179f0e8c6e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9c8c76a789ac4a50e1128dc0897b9a08a185117a
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382196"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641608"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>Guide pratique pour resigner des manifestes d’application et de déploiement
 Après avoir apporté des modifications aux propriétés de déploiement dans le manifeste d’application pour les applications Windows Forms, les applications Windows Presentation Foundation (XBAP) ou les solutions Office, vous devez signer à nouveau les manifestes d’application et de déploiement avec un certificat. Ce processus aide à garantir que des fichiers falsifiés ne sont pas installés sur les ordinateurs des utilisateurs finaux.
@@ -31,7 +31,7 @@ Après avoir apporté des modifications aux propriétés de déploiement dans le
  Un autre scénario dans lequel vous pouvez signer à nouveau les manifestes est lorsque vos clients souhaitent signer les manifestes d’application et de déploiement avec leur propre certificat.
 
 ## <a name="re-sign-the-application-and-deployment-manifests"></a>Resigner les manifestes d’application et de déploiement
- Cette procédure suppose que vous avez déjà apporté des modifications à votre fichier de manifeste d’application (*. manifest*). Pour plus d’informations, consultez [Comment : modifier les propriétés de déploiement](https://msdn.microsoft.com/library/66052a3a-8127-4964-8147-2477ef5d1472).
+ Cette procédure suppose que vous avez déjà apporté des modifications à votre fichier de manifeste d’application (*. manifest*). Pour plus d’informations, consultez [Comment : modifier les propriétés de déploiement](/previous-versions/cc442869(v=vs.110)).
 
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Pour signer à nouveau les manifestes d’application et de déploiement avec Mage.exe
 

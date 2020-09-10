@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41cd62e8831ac4edd5b37337c1e72dd0b2e662e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 41f8a790decbd3af20141c1c95fcaed678a2ec6a
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536290"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641539"
 ---
 # <a name="publish-clickonce-applications"></a>Publier des applications ClickOnce
 Lorsque vous publiez une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pour la première fois, les propriétés de publication peuvent être définies à l'aide de l'Assistant Publication. Seules quelques-unes des propriétés sont disponibles dans l'Assistant ; toutes les autres sont définies à leurs valeurs par défaut.
@@ -48,7 +48,7 @@ Lorsque vous publiez une application [!INCLUDE[ndptecclick](../deployment/includ
 ## <a name="publish-page"></a>Page Publier
  La page **Publier** du **Concepteur de projets** permet de configurer les propriétés du déploiement ClickOnce. Le tableau suivant liste les rubriques.
 
-|Titre|Description|
+|Intitulé|Description|
 |-----------|-----------------|
 |[Guide pratique pour spécifier l’endroit où Visual Studio copie les fichiers](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)|Décrit comment définir l'emplacement où Visual Studio place les fichiers d'application et les manifestes.|
 |[Guide pratique pour spécifier l’emplacement à partir duquel les utilisateurs finaux effectueront l’installation](../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)|Décrit comment définir l'emplacement à partir duquel les utilisateurs téléchargent et installent l'application.|
@@ -72,7 +72,7 @@ Lorsque vous publiez une application [!INCLUDE[ndptecclick](../deployment/includ
 ### <a name="publish-options-dialog-box"></a>Boîte de dialogue Options de publication
  La boîte de dialogue Options de publication spécifie les options de déploiement d'une application.
 
-|Titre|Description|
+|Intitulé|Description|
 |-|-|
 |[Guide pratique pour changer la langue de publication pour une application ClickOnce](../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md)|Explique comment spécifier une langue et une culture correspondant à la version localisée.|
 |[Guide pratique pour spécifier un nom de menu Démarrer pour une application ClickOnce](../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)|Décrit comment modifier le nom complet d'une application ClickOnce.|
@@ -84,7 +84,7 @@ Lorsque vous publiez une application [!INCLUDE[ndptecclick](../deployment/includ
 
 ## <a name="related-topics"></a>Rubriques connexes
 
-|Titre|Description|
+|Intitulé|Description|
 |-----------|-----------------|
 |[Guide pratique pour créer des associations de fichiers pour une application ClickOnce](../deployment/how-to-create-file-associations-for-a-clickonce-application.md)|Décrit comment ajouter la prise en charge d'extension de nom de fichier à une application ClickOnce.|
 |[Guide pratique pour récupérer les informations de chaîne de requête dans une application ClickOnce en ligne](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)|Montre comment récupérer des paramètres passés dans l'URL utilisée pour exécuter une application ClickOnce.|
@@ -96,7 +96,7 @@ Lorsque vous publiez une application [!INCLUDE[ndptecclick](../deployment/includ
 |[Procédure pas à pas : Déployer manuellement une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)|Explique comment utiliser les outils du .NET Framework pour déployer votre application ClickOnce.|
 |[Procédure pas à pas : déployer manuellement une application ClickOnce qui ne nécessite pas de nouvelle signature et qui conserve les informations de personnalisation](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)|Explique comment utiliser les outils du .NET Framework pour déployer votre application ClickOnce sans signer à nouveau les manifestes.|
 |[Guide pratique pour configurer des projets et cibler des plateformes](../ide/how-to-configure-projects-to-target-platforms.md)|Explique comment publier pour un processeur 64 bits en modifiant la propriété **UC cible** ou **Plateforme cible** de votre projet.|
-|[Procédure pas à pas : permettre à une application ClickOnce de s’exécuter sur plusieurs versions de .NET Framework](https://msdn.microsoft.com/library/7f4383af-ed87-4853-b4d4-02a3967a5fd9)|Explique comment permettre à une application ClickOnce de s'installer et de s'exécuter sur plusieurs versions du .NET Framework.|
+|[Procédure pas à pas : permettre à une application ClickOnce de s’exécuter sur plusieurs versions de .NET Framework](/previous-versions/dd996998(v=vs.100))|Explique comment permettre à une application ClickOnce de s'installer et de s'exécuter sur plusieurs versions du .NET Framework.|
 |[Procédure pas à pas : créer un programme d’installation personnalisé pour une application ClickOnce](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md)|Explique comment créer un programme d'installation personnalisé pour installer une application ClickOnce.|
 |[Guide pratique pour publier une application WPF avec les styles visuels activés](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)|Fournit les instructions pas à pas pour résoudre une erreur qui s'affiche lorsque vous essayez de publier une application WPF pour laquelle les styles visuels sont activés.|
 

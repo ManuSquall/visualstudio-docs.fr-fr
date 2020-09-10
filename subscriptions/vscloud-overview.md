@@ -7,12 +7,12 @@ ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
 ms.date: 03/24/2020
 ms.topic: overview
 description: Louez Visual Studio Professional ou Visual Studio Enterprise sur une base mensuelle ou annuelle, sans contrat à long terme.
-ms.openlocfilehash: 5f289c5eb51ccaf95c88bc7e2d66a4be5e904e03
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1ea727572fc5c6aeb09f23594de54a08adbacc90
+ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88248339"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89641570"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Acheter des abonnements cloud Visual Studio Enterprise et Visual Studio Professional
 Vous pouvez acheter des [abonnements Visual Studio Professional et Visual Studio Enterprise](https://visualstudio.microsoft.com/subscriptions/) à partir du [Visual Studio Marketplace](https://marketplace.visualstudio.com). On les appelle des **« abonnements cloud »**.
@@ -26,7 +26,7 @@ Vous pouvez acheter des [abonnements Visual Studio Professional et Visual Studio
 Pour payer vos achats, vous avez besoin d’un [abonnement Azure](https://azure.microsoft.com/pricing/purchase-options/). Vous pouvez vous [inscrire](https://portal.azure.com) avant votre premier achat ou lors de votre premier achat dans Visual Studio Marketplace.
 
 ## <a name="who-can-buy-visual-studio-cloud-subscriptions"></a>Qui peut acheter des abonnements cloud Visual Studio ?
-Toute personne disposant d’un accès [propriétaire](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner), [administrateur de service ou coadministrateur](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#assign-a-subscription-administrator) à l’abonnement Azure peut acheter des abonnements Cloud.
+Vous devez être un contributeur ou un niveau supérieur pour un abonnement Azure créé pour votre abonnement EA afin d’acheter des abonnements Cloud.
 
 ## <a name="how-to-buy-cloud-subscriptions"></a>Comment acheter des abonnements cloud ?
 
