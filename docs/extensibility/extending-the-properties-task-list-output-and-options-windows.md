@@ -1,5 +1,5 @@
 ---
-title: Étendre les fenêtres propriétés, Liste des tâches, sortie, options
+title: Étendre les propriétés, Liste des tâches, sortie, fenêtres d’options
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db14068c97ff6868f5fb73c9ddd790020e99e7c8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3059dbe1c28f0fd598e1a711952fa0bce8c4edde
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711636"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743341"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>Étendre les fenêtres propriétés, Liste des tâches, sortie et options
 Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Cette procédure pas à pas montre comment intégrer des informations sur votre fenêtre outil dans une nouvelle page d' **options** et un nouveau paramètre dans la page **Propriétés** , et comment écrire dans les fenêtres de **liste des tâches** et de **sortie** .
@@ -478,7 +478,7 @@ Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Ce
     }
     ```
 
-## <a name="try-it-out"></a>Essayez
+## <a name="try-it-out"></a>Faîtes un essai
 
 1. Générez le projet et commencez le débogage. L’instance expérimentale s’affiche.
 

@@ -1,5 +1,5 @@
 ---
-title: Utilisation de tables de choix dans des contrôles de liaison de données-Windows Forms | Microsoft Docs
+title: Utilisation de tables de recherche dans la liaison de données-Windows Forms
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a5d6309818c251b9101b1345450ef66f3fc8f1f8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a68121cc98a1bdbc1f7f1bfa69ce8ee0d1d797bb
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586794"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743357"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Créer un contrôle utilisateur Windows Forms prenant en charge la liaison de données de recherche
 

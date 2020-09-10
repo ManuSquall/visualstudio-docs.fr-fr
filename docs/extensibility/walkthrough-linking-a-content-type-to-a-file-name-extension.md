@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : liaison d’un type de contenu à une extension de nom de fichier | Microsoft Docs'
+title: Lier un type de contenu à une extension de nom de fichier
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4e5ba3cd82090b5fad76d48c4600e0814bd91eb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7224c98c55567ed091b09c1a69e630573eb34be8
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904680"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743211"
 ---
 # <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>Procédure pas à pas : liaison d’un type de contenu à une extension de nom de fichier
 Vous pouvez définir votre propre type de contenu et y associer une extension de nom de fichier à l’aide des extensions Managed Extensibility Framework (MEF) de l’éditeur. Dans certains cas, l’extension de nom de fichier est déjà définie par un service de langage. Toutefois, pour l’utiliser avec MEF, vous devez toujours le lier à un type de contenu.

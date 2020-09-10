@@ -1,5 +1,5 @@
 ---
-title: Considérations sur le déchargement et le rechargement des projets imbriqués | Microsoft Docs
+title: Déchargement et rechargement des projets imbriqués
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ab705953eea1fcac99883bb4f88c0e95eced108
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 86f8f2f02258bc55f3221635fddab8ecdaaa3cf7
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709292"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743243"
 ---
 # <a name="considerations-for-unloading-and-reloading-nested-projects"></a>Considérations sur le déchargement et le rechargement des projets imbriqués
 

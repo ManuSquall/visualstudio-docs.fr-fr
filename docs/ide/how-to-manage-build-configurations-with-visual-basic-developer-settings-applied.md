@@ -1,5 +1,6 @@
 ---
 title: Gérer des configurations de build avec les paramètres développeur Visual Basic
+titleSuffix: ''
 ms.date: 11/21/2018
 ms.technology: vs-ide-compile
 ms.topic: how-to
@@ -14,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8593f32b31dc70be08c777e86ae404da0578c48d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b3feaf36cb250339bd94e0d80a152a8104e75680
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284228"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743233"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Guide pratique pour gérer des configurations de build en appliquant les paramètres du développeur Visual Basic
 
@@ -46,4 +47,4 @@ Par défaut, les paramètres de développeur Visual Basic masquent l’option pe
 
 - [Présentation des configurations de build](../ide/understanding-build-configurations.md)
 - [Compiler et générer](../ide/compiling-and-building-in-visual-studio.md)
-- [Paramètres d'environnement](../ide/environment-settings.md)
+- [Paramètres d’environnement](../ide/environment-settings.md)

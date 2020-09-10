@@ -1,5 +1,6 @@
 ---
-title: Séparer les datasets et les TableAdapters en différents projets
+title: Erreur d’utilisation de projets distincts
+description: Séparer les datasets et les TableAdapters en différents projets
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 504e2411d20a85c85047e4827d613bf4f48034e9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0e54a28a7d5c5dc9ae8353266f49234ef8468410
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281550"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743110"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Séparer les datasets et les TableAdapters en différents projets
 Les datasets typés ont été améliorés afin que les classes de datasets et de [TableAdapters](create-and-configure-tableadapters.md) puissent être générées dans des projets distincts. Cela vous permet de séparer rapidement les couches d’application et de générer des applications de données multicouches.

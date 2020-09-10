@@ -10,12 +10,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d540339ca25fc42fc05df4818a6d05204ccae0e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4faeff1e60fa77e3bf9e995c61c841f626468a1b
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89312585"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743332"
 ---
 # <a name="code-style-preferences"></a>Préférences de style de code
 
@@ -59,6 +59,14 @@ Les options définies dans cette fenêtre sont applicables à votre compte de pe
 ### <a name="preference-and-severity"></a>Préférence et gravité
 
 Pour chaque paramètre de style de code de cette page, vous pouvez définir les valeurs **Préférence** et **Gravité** en utilisant les listes déroulantes sur chaque ligne. L’option Gravité peut avoir la valeur **Refactorisation uniquement**, **Suggestion**, **Avertissement** ou **Erreur**. Si vous souhaitez activer les [actions rapides](../ide/quick-actions.md) pour un style de code, vérifiez que la valeur de l’option **Gravité** n’est pas **Refactorisation uniquement**. L’ampoule **actions rapides** , l’ampoule ![ d’erreur d’ampoule ou l’icône du tournevis Tournevis ](media/light-bulb-dropdown.png) ![ ](media/error-bulb.png) ![ ](media/screwdriver.png) apparaît lorsqu’un style non préféré est utilisé, et vous pouvez choisir une option dans la liste **actions rapides** pour réécrire automatiquement le code dans le style par défaut.
+
+::: moniker range=">=vs-2019"
+
+## <a name="enforce-code-styles-on-build"></a>Appliquer des styles de code sur la Build
+
+À compter de Visual Studio 2019 version 16,8, qui comprend le kit de développement logiciel (SDK) .NET 5,0 RC2, vous pouvez [appliquer les conventions de codage .net sur la build](/dotnet/fundamentals/productivity/code-analysis.md#code-style-analysis) pour tous les projets .net. Au moment de la génération, les violations de style de code .NET s’affichent sous la forme d’avertissements ou d’erreurs avec un préfixe « IDE ». Cela vous permet d’appliquer rigoureusement des styles de code cohérents dans votre base de code.
+
+::: moniker-end
 
 ## <a name="apply-code-styles"></a>Appliquer des styles de code
 

@@ -1,5 +1,6 @@
 ---
-title: Impossible de créer une association, propriété listée deux fois
+title: Propriété listée deux fois
+description: Impossible de créer une association, propriété listée deux fois
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.technology: vs-data-tools
@@ -9,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 50c9311ef09172ea082d2419495f26b51ff1d6a4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c496a25b093c88cca68d31bd22ccc6deca9a33a
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536797"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743196"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-listed-twice"></a>Impossible de créer une association &lt;nom de l’association&gt;. La propriété est listée deux fois
 
@@ -36,5 +37,5 @@ La propriété dans le message apparaît plusieurs fois dans les **Propriétés 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Outils de LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Comment : créer une association entre des classes LINQ to SQL (Concepteur O/R)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)

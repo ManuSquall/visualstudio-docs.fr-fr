@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Créer un environnement de build sur plusieurs ordinateurs'
+title: Créer un environnement de build sur plusieurs ordinateurs
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11b158854a0026de28cb2fb0a582bbaf764eeaa4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bec0ada652da4ac02c457cdc280778487e4b27a1
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68461535"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743130"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Procédure pas à pas : Créer un environnement de build sur plusieurs ordinateurs
 
@@ -339,7 +339,7 @@ Vous pouvez créer un environnement de build qui peut être déployé sur plusie
 
          AssemblyName="Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
 
-         par celle-ci :
+         par
 
          AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll".
 
@@ -349,7 +349,7 @@ Vous pouvez créer un environnement de build qui peut être déployé sur plusie
 
          AssemblyName="Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
 
-         par celle-ci :
+         par
 
          AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll".
 

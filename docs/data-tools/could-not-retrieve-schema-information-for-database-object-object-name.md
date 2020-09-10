@@ -1,5 +1,6 @@
 ---
-title: Impossible d’extraire les informations de schéma pour l’objet de base de données
+title: Impossible de récupérer les informations de schéma
+description: Impossible d’extraire les informations de schéma pour l’objet de base de données
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.assetid: a1c8f833-c918-4a86-9679-d2a791f938a9
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f730484ade07689f2a50e19a263adbcd10693151
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 45b0f359366351519fa5ac44fb19a81ef6f26779
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282694"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743366"
 ---
 # <a name="could-not-retrieve-schema-information-for-database-object-object-name"></a>Impossible d’extraire les informations de schéma pour l’objet de base de données \<object name>
 
@@ -21,4 +22,4 @@ Ce message apparaît généralement quand un objet dans l’**Explorateur de ser
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Outils de LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
