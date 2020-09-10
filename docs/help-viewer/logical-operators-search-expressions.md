@@ -1,5 +1,5 @@
 ---
-title: Opérateurs logiques/avancés dans les expressions de recherche (Help Viewer)
+title: Opérateurs logiques dans les expressions de recherche (visionneuse d’aide)
 ms.date: 11/02/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e241df6c32fc1b0a8e88942fe5d0d178c37b9bf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a5d17d40a34835c1c8f99f4ad446de747771fa4a
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67824896"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741657"
 ---
 # <a name="logical-and-advanced-operators-in-search-expressions"></a>Opérateurs logiques et opérateurs avancés dans les expressions de recherche
 
