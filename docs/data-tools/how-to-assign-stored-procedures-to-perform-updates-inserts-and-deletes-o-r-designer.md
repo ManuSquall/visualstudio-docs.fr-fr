@@ -1,5 +1,5 @@
 ---
-title: Utiliser des procédures stockées dans LINQ to SQL pour mettre à jour des données (Concepteur O/R)
+title: Utiliser des procédures stockées dans LINQ to SQL pour mettre à jour des données
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: e88224ab-ff61-4a3a-b6b8-6f3694546cac
@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e657de71fbf1e7c29074a09f5c51211be7b4395f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba6ee706a7c18545a17683233e30283559542890
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282317"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89743013"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Guide pratique pour affecter des procédures stockées pour effectuer des mises à jour, des insertions et des suppressions (Concepteur O/R)
 
@@ -65,7 +65,7 @@ Pour rétablir l’utilisation de la logique runtime par défaut pour les mises 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Outils de LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Méthodes DataContext](../data-tools/datacontext-methods-o-r-designer.md)
 - [LINQ to SQL (.NET Framework)](/dotnet/framework/data/adonet/sql/linq/index)
 - [Opérations d’insertion, de mise à jour et de suppression (.NET Framework)](/dotnet/framework/data/adonet/sql/linq/insert-update-and-delete-operations)

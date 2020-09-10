@@ -1,5 +1,5 @@
 ---
-title: Créer un contrôle utilisateur prenant en charge la liaison de données simples
+title: Créer des contrôles utilisateur qui prennent en charge la liaison de données simple
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ace5f9dd2781697525e7041be6cbd8df050bca97
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6b1e8540a33dc5ddbead5debcbfb2cd4ddc8d9de
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586821"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742820"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Créer un contrôle utilisateur Windows Forms prenant en charge la liaison de données simples
 

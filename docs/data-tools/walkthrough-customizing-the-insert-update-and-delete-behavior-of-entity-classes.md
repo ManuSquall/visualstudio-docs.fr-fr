@@ -1,5 +1,5 @@
 ---
-title: Personnaliser le comportement d’insertion/mise à jour/suppression des classes d’entité
+title: Personnaliser le comportement d’insertion/mise à jour/suppression
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 105519153e92e3944971f60ae2ff6151fa6a3fdf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 01fe4cf160ed3a7548fd8b8bed003838abee3d04
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585949"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741824"
 ---
 # <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>Procédure pas à pas : personnaliser le comportement d’insertion, de mise à jour et de suppression de classes d’entité
 
@@ -271,7 +271,7 @@ Selon les spécifications de votre application, vous pouvez effectuer plusieurs 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Outils de LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Méthodes DataContext](../data-tools/datacontext-methods-o-r-designer.md)
 - [Comment : assigner des procédures stockées pour effectuer des mises à jour, des insertions et des suppressions](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)

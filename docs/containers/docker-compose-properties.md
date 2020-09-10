@@ -1,17 +1,17 @@
 ---
-title: Outils de conteneur Visual Studio Docker Compose les paramètres de build
+title: Docker Compose les paramètres de build
 author: ghogen
 description: Vue d’ensemble du processus de génération des outils de conteneur
 ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: reference
-ms.openlocfilehash: 6d352461fd6ad96ae40d9c38a250c93018b1cd9a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: deed01e2aa719df7ffeb038f022ef9d6d4b8cc71
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283149"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741857"
 ---
 # <a name="docker-compose-build-properties"></a>Docker Compose les propriétés de build
 
@@ -43,7 +43,7 @@ Le tableau suivant présente les propriétés MSBuild disponibles pour les proje
 |DockerComposeUpArguments|dcproj|Spécifie les paramètres supplémentaires à passer à la `docker-compose up` commande. Par exemple : `--timeout 500`|-|
 |DockerDevelopmentMode|dcproj| Contrôle si l’optimisation « génération sur hôte » (débogage « mode rapide ») est activée.  Les valeurs autorisées sont **rapide** et **normale**. | Rapide |
 |DockerLaunchAction| dcproj | Spécifie l’action de lancement à exécuter sur F5 ou CTRL + F5.  Les valeurs autorisées sont None, LaunchBrowser et LaunchWCFTestClient|None|
-|DockerLaunchBrowser| dcproj | Indique s’il faut lancer le navigateur. Ignoré si DockerLaunchAction est spécifié. | Faux |
+|DockerLaunchBrowser| dcproj | Indique s’il faut lancer le navigateur. Ignoré si DockerLaunchAction est spécifié. | False |
 |DockerServiceName| dcproj|Si DockerLaunchAction ou DockerLaunchBrowser sont spécifiés, DockerServiceName est le nom du service qui doit être lancé.  Utilisez cette propriété pour déterminer lequel des projets potentiellement référencés par un fichier d’ancrage-compose sera lancé.|-|
 |DockerServiceUrl| dcproj | URL à utiliser lors du lancement du navigateur.  Les jetons de remplacement valides sont « {ServiceIPAddress} », « {ServicePort} » et « {Scheme} ».  Par exemple : {Scheme}://{ServiceIPAddress} : {ServicePort}|-|
 |DockerTargetOS| dcproj | Le système d’exploitation cible utilisé lors de la génération de l’image de l’ancrage.|-|

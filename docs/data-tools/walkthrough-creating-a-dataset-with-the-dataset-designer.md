@@ -1,5 +1,5 @@
 ---
-title: "Procédure pas à pas : création d'un groupe de données avec le Concepteur de DataSet"
+title: Créer un DataSet avec le Concepteur de DataSet
 ms.date: 09/11/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8c525d55de16e859005b9746eb52e5516928b9e6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07d61ec32d48e5cb9b5421e397d743cd8c95b523
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586027"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742930"
 ---
 # <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>Procédure pas à pas : création d’un DataSet avec le Concepteur de DataSet
 

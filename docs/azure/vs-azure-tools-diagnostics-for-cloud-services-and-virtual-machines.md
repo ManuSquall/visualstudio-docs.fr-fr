@@ -1,5 +1,5 @@
 ---
-title: Diagnostics pour Azure Cloud Services et les machines virtuelles Azure
+title: Diagnostics pour les machines virtuelles et services Cloud Azure
 description: Découvrez comment configurer les diagnostics pour le débogage des services cloud et des machines virtuelles Azure dans Visual Studio.
 author: ghogen
 manager: jillfra
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.openlocfilehash: 9912a7fa0e83c5433e0eba1c7ffa23763331af6b
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 7e0d261edfd946aed5d459ec732f652448fc46c0
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508494"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89740128"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Configurer les diagnostics pour les services cloud et les machines virtuelles Azure
 Quand vous devez résoudre les problèmes d’un service cloud ou d’une machine virtuelle Azure, vous pouvez utiliser Visual Studio pour configurer plus facilement les diagnostics Azure. Les diagnostics capturent les données système et les données de journalisation sur les machines virtuelles et sur les instances de machine virtuelle qui exécutent votre service cloud. Les données de diagnostic sont transférées à un compte de stockage que vous choisissez. Pour plus d’informations sur la journalisation des diagnostics dans Azure, consultez [Activer la journalisation des diagnostics pour les applications web dans Azure App Service](/azure/app-service/web-sites-enable-diagnostic-log).
@@ -139,7 +139,7 @@ Les journaux d’activité d’application contiennent des informations de diagn
 
 Pour plus d’informations sur les journaux d’activité d’application, consultez [Activer la journalisation des diagnostics pour les applications web dans Azure App Service](/azure/app-service/web-sites-enable-diagnostic-log).
 
-### <a name="windows-event-logs"></a>Journaux d’événements Windows
+### <a name="windows-event-logs"></a>Journaux des événements Windows
 Pour capturer les journaux des événements Windows, cochez la case **Activer le transfert des journaux des événements Windows**. Pour augmenter ou diminuer l’intervalle entre les transferts des journaux des événements vers votre compte de stockage, changez la valeur de **Période de transfert (min)**. Activez les cases à cocher correspondant aux types d’événements que vous voulez suivre.
 
 ![Journaux d’événements](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796664.png)

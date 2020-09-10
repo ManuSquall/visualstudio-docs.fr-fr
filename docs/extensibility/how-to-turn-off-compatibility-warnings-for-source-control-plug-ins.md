@@ -1,5 +1,5 @@
 ---
-title: Désactiver les avertissements de compatibilité pour les plug-ins de contrôle de code source | Microsoft Docs
+title: Désactiver les avertissements pour les plug-ins de contrôle de code source
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,15 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22dd3821426aa1dae6265c520ddac60dd93e1c5e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 33cf57aa86608cca96924faa2caeb9eec7fbdc0e
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80710726"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742773"
 ---
 # <a name="how-to-turn-off-compatibility-warnings-for-source-control-plug-ins"></a>Comment : désactiver les avertissements de compatibilité pour les plug-ins de contrôle de code source
+
 Un utilisateur peut voir plusieurs avertissements de compatibilité lors de l’utilisation du contrôle de code source dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Les avertissements présentés dépendent des fonctionnalités du plug-in de contrôle de code source et peuvent être désactivés comme indiqué ici.
 
 ### <a name="to-disable-the-warning-to-ensure-optimal-source-control-integration-with-visual-studio"></a>Pour désactiver l’avertissement : « pour garantir une intégration optimale du contrôle de code source à Visual Studio »
@@ -42,4 +43,5 @@ Un utilisateur peut voir plusieurs avertissements de compatibilité lors de l’
      Il est préférable de prendre en charge la réentrance ( `SCC_CAP_REENTRANT` fonctionnalité). cette opération supprime cet avertissement. Toutefois, si cette prise en charge n’est pas possible, ces entrées de Registre peuvent être définies.
 
 ## <a name="see-also"></a>Voir aussi
+
 - [Indicateurs de capacité](../extensibility/capability-flags.md)

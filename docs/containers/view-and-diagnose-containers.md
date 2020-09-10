@@ -1,5 +1,5 @@
 ---
-title: Journaux de conteneurs, variables d’environnement et accès au système de fichiers de l’ancrage
+title: Afficher et diagnostiquer les conteneurs et les images de l’ancrage
 description: Décrit comment améliorer votre capacité à déboguer et à diagnostiquer vos applications basées sur des conteneurs dans Visual Studio à l’aide d’une fenêtre outil pour voir ce qui se passe dans les conteneurs qui hébergent votre application.
 author: ghogen
 ms.author: ghogen
@@ -7,12 +7,12 @@ ms.topic: how-to
 ms.date: 01/20/2020
 ms.technology: vs-azure
 monikerRange: vs-2019
-ms.openlocfilehash: 45ef2d8f68ac951cc58040abb72e136b42f3b49c
-ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.openlocfilehash: 626666fc912fcff85fcfcc49425d59018778d1f6
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89490298"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742787"
 ---
 # <a name="how-to-view-and-diagnose-containers-and-images-in-visual-studio"></a>Comment afficher et diagnostiquer des conteneurs et des images dans Visual Studio
 

@@ -1,5 +1,6 @@
 ---
-title: Créer un pack d’extension avec le modèle d’élément de Pack d’extension | Microsoft Docs
+title: Créer un pack d’extensions
+description: Découvrez comment créer un pack d’extension avec le modèle d’élément extension Pack
 ms.date: 07/27/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: Meng
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa1c141e18a3870eaad4b155d816e30ee207f45d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b5a0021061aefceafc2b048a3e231d9c0300db7b
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80697746"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742915"
 ---
 # <a name="walkthrough-create-an-extension-pack"></a>Procédure pas à pas : créer un pack d'extensions
 

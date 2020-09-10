@@ -1,5 +1,5 @@
 ---
-title: Publish-WebApplicationWebSite (script Windows PowerShell) | Microsoft Docs
+title: Publier une application Web à l’aide d’un script PowerShell
 description: Découvrez comment publier un projet web sur un site web Azure. Ce script crée les ressources requises dans votre abonnement Azure si elles n’existent pas.
 author: ghogen
 manager: jillfra
@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: c5eff35247c85783659f66b13d03c3a5f781df07
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d8a6a73f50c331c516f1e433d7d9b1104731380
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911767"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89739890"
 ---
 # <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publish-WebApplicationWebSite (script Windows PowerShell)
 ## <a name="syntax"></a>Syntaxe
@@ -35,10 +35,10 @@ Le chemin d'accès au fichier de configuration JSON qui décrit les détails du 
 
 | Paramètre | Valeur par défaut |
 | --- | --- |
-| Alias |Aucun |
+| Alias |aucun |
 | Requis ? |true |
 | Position |nommée |
-| Valeur par défaut |Aucun |
+| Valeur par défaut |aucun |
 | Accepter l'entrée de pipeline ? |false |
 | Accepter les caractères génériques ? |false |
 
@@ -47,10 +47,10 @@ Nom de l’abonnement Azure dans lequel vous souhaitez créer le site web.
 
 | Paramètre | Valeur par défaut |
 | --- | --- |
-| Alias |Aucun |
+| Alias |aucun |
 | Requis ? |false |
 | Position |nommée |
-| Valeur par défaut |Aucun |
+| Valeur par défaut |aucun |
 | Accepter l'entrée de pipeline ? |false |
 | Accepter les caractères génériques ? |false |
 
@@ -59,10 +59,10 @@ Le chemin d'accès au package de déploiement web à publier sur le site web. Vo
 
 | Paramètre | Valeur par défaut |
 | --- | --- |
-| Alias |Aucun |
+| Alias |aucun |
 | Requis ? |false |
 | Position |nommée |
-| Valeur par défaut |Aucun |
+| Valeur par défaut |aucun |
 | Accepter l'entrée de pipeline ? |false |
 | Accepter les caractères génériques ? |false |
 
@@ -71,10 +71,10 @@ Le nom d’utilisateur et le mot de passe pour la base de données SQL dans Azur
 
 | Paramètre | Valeur par défaut |
 | --- | --- |
-| Alias |Aucun |
+| Alias |aucun |
 | Requis ? |false |
 | Position |nommée |
-| Valeur par défaut |Aucun |
+| Valeur par défaut |aucun |
 | Accepter l'entrée de pipeline ? |false |
 | Accepter les caractères génériques ? |false |
 
@@ -83,7 +83,7 @@ Si true, imprime des messages à partir du script dans le flux de sortie.
 
 | Paramètre | Valeur par défaut |
 | --- | --- |
-| Alias |Aucun |
+| Alias |aucun |
 | Requis ? |false |
 | Position |nommée |
 | Valeur par défaut |false |

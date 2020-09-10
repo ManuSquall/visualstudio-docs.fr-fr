@@ -1,5 +1,6 @@
 ---
-title: Élément EnableLocationBrowseButton (modèles Visual Studio) | Microsoft Docs
+title: EnableLocationBrowseButton, élément (modèles Visual Studio)
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 263157d5c6fefc208f28caa55475ba329a0d230f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1b04152864b77c33e3821e4e1ba415cc4fa9f502
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80711989"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742995"
 ---
 # <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>Élément EnableLocationBrowseButton (modèles Visual Studio)
 Spécifie si le bouton **Parcourir** est disponible dans la boîte de dialogue **nouveau projet** , afin que les utilisateurs puissent facilement modifier le répertoire par défaut où un nouveau projet est enregistré.
@@ -28,7 +29,7 @@ Spécifie si le bouton **Parcourir** est disponible dans la boîte de dialogue *
 
 ## <a name="syntax"></a>Syntaxe
 
-```
+```xml
 <EnableLocationBrowseButton> true/false </EnableLocationBrowseButton>
 ```
 
@@ -60,7 +61,7 @@ Spécifie si le bouton **Parcourir** est disponible dans la boîte de dialogue *
 ## <a name="example"></a>Exemple
  L’exemple suivant illustre les métadonnées d’une [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] application Windows.
 
-```
+```xml
 <VSTemplate Type="Project" Version="3.0.0"
     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     <TemplateData>

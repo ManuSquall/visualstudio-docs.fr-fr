@@ -1,5 +1,5 @@
 ---
-title: Propriétés de document personnalisées dans un service de langage hérité | Microsoft Docs
+title: Propriétés de document personnalisées dans les services de langage hérité
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b3db7f4cfa45ea96e3da3056f39c2a5c78a25ed
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e3605658dc7baa45579cc47ccfbf824c3099aa63
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708967"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741804"
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>Propriétés de document personnalisées dans un service de langage hérité
 Les propriétés du document peuvent être affichées dans la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fenêtre **Propriétés** . Les langages de programmation n’ont généralement pas de propriétés associées à des fichiers sources individuels. Toutefois, XML prend en charge les propriétés de document qui affectent l’encodage, le schéma et la feuille de style.

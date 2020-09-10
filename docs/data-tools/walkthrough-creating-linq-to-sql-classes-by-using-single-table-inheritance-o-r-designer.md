@@ -1,5 +1,5 @@
 ---
-title: Classes LINQ to SQL avec héritage de table unique (Concepteur O-R)
+title: Classes LINQ to SQL avec héritage d’une seule table
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: afe4063f2d96b2ae46664ec6642ec1a4e98ab892
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0c76818f7cd70077996370cf5ffe930ef78f9acb
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535263"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741829"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Procédure pas à pas : créer des classes LINQ to SQL à l’aide de l’héritage de table unique (Concepteur O/R)
 Les [outils de LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) prennent en charge l’héritage d’une seule table, car il est généralement implémenté dans les systèmes relationnels. Cette procédure pas à pas s’appuie sur les étapes génériques fournies dans la rubrique [Comment : configurer l’héritage à l’aide du Concepteur O/R](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) et fournit des données réelles pour illustrer l’utilisation de l’héritage dans le [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] .
@@ -85,7 +85,7 @@ Pour pouvoir vérifier si l'héritage est configuré correctement, la table a be
     |**11**|**2**|**Mindy**|**Martin**|**3**|
     |**12**|**2**|**Ken**|**Kwok**|**3**|
 
-## <a name="create-a-new-project"></a>Création d'un projet
+## <a name="create-a-new-project"></a>Créer un projet
 Maintenant que vous avez créé la table, créez un nouveau projet pour voir la configuration de l'héritage.
 
 ### <a name="to-create-the-new-windows-forms-application"></a>Pour créer l’application de Windows Forms
@@ -186,7 +186,7 @@ Exécutez l’application et vérifiez que les enregistrements affichés dans la
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Outils de LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Procédure pas à pas : Création de classes LINQ to SQL (Concepteur O/R)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [Guide pratique pour affecter des procédures stockées pour effectuer des mises à jour, des insertions et des suppressions (Concepteur O/R)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)

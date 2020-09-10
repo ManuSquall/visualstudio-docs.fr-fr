@@ -1,5 +1,5 @@
 ---
-title: Consulter et gérer les ressources de stockage à l’aide de l’Explorateur de serveurs | Microsoft Docs
+title: Parcourir et gérer les ressources de stockage
 description: Consultation et gestion des ressources de stockage à l’aide de l’Explorateur de serveurs
 author: ghogen
 manager: jillfra
@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: 8702b9814214a902a644cc5854250b600c301caa
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 6e75a3822df6a5867e48693024637b901d40282b
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508442"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89739999"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Consulter et gérer les ressources de stockage à l’aide de l’Explorateur de serveurs
 

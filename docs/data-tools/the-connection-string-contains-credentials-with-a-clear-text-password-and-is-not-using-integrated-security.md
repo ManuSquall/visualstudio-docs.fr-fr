@@ -1,5 +1,6 @@
 ---
-title: La chaîne de connexion contient des informations d'identification comprenant un mot de passe en texte clair et n'utilise pas la sécurité intégrée
+title: La chaîne de connexion contient le mot de passe
+description: La chaîne de connexion contient des informations d'identification comprenant un mot de passe en texte clair et n'utilise pas la sécurité intégrée
 ms.date: 11/04/2016
 ms.topic: error-reference
 ms.assetid: 501d85af-92e0-4471-b280-8a59c0688575
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 201d01d5891b1d788245b2ce61b09f43a50731b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a928a5a223ca4f9599bf174bedff4ebc754b9619
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85281472"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89739214"
 ---
 # <a name="the-connection-string-contains-credentials-with-a-clear-text-password-and-is-not-using-integrated-security"></a>La chaîne de connexion contient des informations d'identification comprenant un mot de passe en texte clair et n'utilise pas la sécurité intégrée
 
@@ -36,4 +37,4 @@ Lorsque vous travaillez avec des connexions de données qui incluent des informa
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Outils de LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

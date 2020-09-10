@@ -1,5 +1,5 @@
 ---
-title: Prise en charge de la barre de navigation dans un service de langage hérité | Microsoft Docs
+title: Barre de navigation de prise en charge dans un service de langage hérité
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f86dabb0594b1e33c45808efb387fcbe313e3de3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f22aaf552cc69074c500508621ab4d9e288ef449
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704865"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741903"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Prise en charge de la barre de navigation dans un service de langage hérité
 La barre de navigation en haut de la vue de l’éditeur affiche les types et les membres dans le fichier. Les types sont affichés dans la liste déroulante de gauche, et les membres s’affichent dans la liste déroulante de droite. Lorsque l’utilisateur sélectionne un type, le signe insertion est placé sur la première ligne du type. Lorsque l’utilisateur sélectionne un membre, le signe insertion est placé sur la définition du membre. Les zones de liste déroulante sont mises à jour pour refléter l’emplacement actuel du signe insertion.

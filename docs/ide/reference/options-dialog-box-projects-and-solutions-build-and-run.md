@@ -1,5 +1,5 @@
 ---
-title: Boîte de dialogue Options, Projets et solutions, Générer et exécuter
+title: Boîte de dialogue Options, projets et solutions, générer et exécuter
 ms.date: 07/14/2017
 ms.technology: vs-ide-compile
 ms.topic: reference
@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24ba5bbf34ecc12c2508c538e74909ee0a10aef4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5b4bcc033ba80778f3446b3089972c63006508ca
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68461394"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742758"
 ---
 # <a name="options-dialog-box-projects-and-solutions--build-and-run"></a>Boîte de dialogue Options : projets et solutions \> générer et exécuter
 

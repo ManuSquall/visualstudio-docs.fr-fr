@@ -1,5 +1,5 @@
 ---
-title: Chaînes utilisées comme clés pour la recherche d’un plug-in de contrôle de code source | Microsoft Docs
+title: Chaînes utilisées comme clés pour rechercher un plug-in de contrôle de code source
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f9333ff1b6742ca14dc5541bd15e92b2eb39085
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 038441f7bcea9fa1dafdd61505d4150ecf28a966
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699718"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741778"
 ---
 # <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>Chaînes utilisées comme clés pour rechercher un plug-in de contrôle de code source
 Les chaînes suivantes sont les clés permettant d’accéder au registre pour rechercher des informations sur le plug-in de contrôle de code source.

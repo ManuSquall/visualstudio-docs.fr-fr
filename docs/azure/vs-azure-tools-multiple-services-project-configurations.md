@@ -1,5 +1,5 @@
 ---
-title: Configurer un projet Azure avec plusieurs configurations de service
+title: Configurer le service Cloud avec plusieurs configurations
 description: Découvrez comment configurer un projet de service cloud Azure en modifiant les fichiers ServiceDefinition.csdef, ServiceConfiguration.Local.cscfg et ServiceConfiguration.Cloud.cscfg.
 author: ghogen
 manager: jillfra
@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 8c9f65291d43a55ee75840591698c26fdde6e967
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 790d0090bd5f4c24303afbb72082a05702064071
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85280542"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89739960"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Configuration de votre projet Azure dans Visual Studio pour utiliser plusieurs configurations de service
 
@@ -53,7 +53,7 @@ Si vous avez déjà ajouté un point de terminaison HTTPS, l'option point de ter
 
 Par défaut, les diagnostics sont activés pour le rôle web. Le projet de service cloud Azure et le compte de stockage sont configurés pour utiliser l'émulateur de stockage local. Lorsque vous êtes prêt à déployer sur Azure, vous pouvez sélectionner le bouton de génération (**...**) pour utiliser plutôt Stockage Azure. Vous pouvez transférer les données de diagnostic au compte de stockage à la demande ou à intervalles planifiés automatiquement. Pour plus d'informations sur les diagnostics Azure, consultez la page [Activation de Diagnostics dans Azure Cloud Services et Azure Virtual Machines](/azure/cloud-services/cloud-services-dotnet-diagnostics).
 
-## <a name="settings-page"></a>Page de paramètres
+## <a name="settings-page"></a>Page Paramètres
 
 Sur la page **Paramètres**, vous pouvez ajouter des paramètres à une configuration sous la forme de paires nom-valeur. Le code qui s’exécute dans le rôle peut lire les valeurs de vos paramètres de configuration au moment de l’exécution à l’aide des classes fournies par la [bibliothèque managée Azure](/previous-versions/azure/dn602775(v=azure.11)), en particulier la méthode [GetConfigurationSettingValue](/previous-versions/azure/reference/ee772857(v=azure.100)) .
 

@@ -1,5 +1,6 @@
 ---
-title: Valider les modifications in-process sur les contrôles liés aux données avant d’enregistrer
+title: Modifications non validées
+description: Valider les modifications in-process sur les contrôles liés aux données avant d’enregistrer
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f0369f4410c1eaf5a168a5291feebf64dbc9ee65
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: accf31187318c70ded0cc347763664b8fd51d479
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282707"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89739270"
 ---
 # <a name="commit-in-process-edits-on-data-bound-controls-before-saving-data"></a>Valider des modifications in-process sur des contrôles liés aux données avant d’enregistrer des données
 

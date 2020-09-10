@@ -1,5 +1,5 @@
 ---
-title: Détermination de la nécessité d’implémenter un VSPackage de contrôle de code source | Microsoft Docs
+title: Quand implémenter un VSPackage de contrôle de code source
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,20 +10,23 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8707f3c1ced1cc2df9d3ae77280fc8779874a837
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: abb7ce1c737f9299ba345d5e33b98e6b6947a6e4
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708724"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741798"
 ---
 # <a name="determine-whether-to-implement-a-source-control-vspackage"></a>Déterminer si un VSPackage de contrôle de code source doit être implémenté
+
 Cette section décrit les choix des plug-ins de contrôle de code source et des packages de contrôle de code source pour étendre les solutions de contrôle de code source et fournit des instructions générales sur le choix d’un chemin d’intégration approprié.
 
 ## <a name="small-source-control-solution-with-limited-resources"></a>Petite solution de contrôle de code source avec des ressources limitées
+
  Si vous avez des ressources limitées et que vous ne pouvez pas vous occuper de la surcharge liée à l’écriture d’un package de contrôle de code source, vous pouvez créer des plug-ins basés sur des API de plug-in de contrôle de code source. Vous pouvez ainsi travailler côte à côte avec les packages de contrôle de code source et basculer entre les plug-ins de contrôle de code source et les packages à la demande. Pour plus d’informations, consultez [inscription et sélection](../../extensibility/internals/registration-and-selection-source-control-vspackage.md).
 
 ## <a name="large-source-control-solution-with-a-rich-feature-set"></a>Solution de contrôle de code source importante avec un ensemble de fonctionnalités enrichi
+
  Si vous souhaitez implémenter une solution de contrôle de code source qui fournit un modèle de contrôle de code source riche qui n’est pas capturé correctement à l’aide de l’API de plug-in de contrôle de code source, vous pouvez considérer un package de contrôle de code source comme le chemin d’intégration. Cela s’applique surtout si vous préférez remplacer le package de l’adaptateur de contrôle de code source (qui communique avec les plug-ins de contrôle de code source et fournit une interface utilisateur de contrôle de code source de base) avec les vôtres afin que vous puissiez gérer les événements de contrôle de code source de manière personnalisée. Si vous disposez déjà d’une interface utilisateur de contrôle de code source satisfaisante et que vous souhaitez conserver cette expérience dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , l’option de package de contrôle de code source vous permet de le faire. Le package de contrôle de code source n’est pas générique et est conçu uniquement pour être utilisé avec l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.
 
  Si vous souhaitez implémenter une solution de contrôle de code source qui offre une flexibilité et un contrôle plus riche de la logique et de l’interface utilisateur du contrôle de code source, vous préférerez peut-être l’itinéraire d’intégration du package de contrôle de code source. Vous pouvez :
@@ -37,4 +40,5 @@ Cette section décrit les choix des plug-ins de contrôle de code source et des 
 4. Gérez les événements de modification de requête et d’enregistrement des requêtes (voir [requête modifier la requête enregistrer](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)).
 
 ## <a name="see-also"></a>Voir aussi
+
 - [Créer un plug-in de contrôle de code source](../../extensibility/internals/creating-a-source-control-plug-in.md)

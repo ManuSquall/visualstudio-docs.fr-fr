@@ -1,5 +1,5 @@
 ---
-title: Guide pratique pour configurer l’héritage à l’aide du Concepteur O/R
+title: configurer l’héritage à l’aide du Concepteur O-R
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: e594af12-e777-434a-bc08-7dd2dac84cdc
@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e31e5e78d5c72167f9d1c1eaab974155a4c369f3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f9ae6d1bd7048ad9e6dc974bca67e6de15ba5fa
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282239"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89742956"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Guide pratique pour configurer l’héritage à l’aide du Concepteur O/R
 Le **Concepteur Objet Relationnel** (**Concepteur O/R**) prend en charge le concept d’héritage de table unique, car il est souvent implémenté dans les systèmes relationnels. L'héritage à table unique fait appel à une seule table de base de données qui contient des champs pour les informations parent et enfant. Avec les données relationnelles, une colonne de discriminateur contient la valeur qui détermine à quelle classe tout enregistrement appartient.
@@ -52,7 +52,7 @@ La création d'un modèle objet qui utilise l'héritage (et correspond aux donn�
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Outils de LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Procédure pas à pas : Création de classes LINQ to SQL (Concepteur O/R)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [Accès aux données dans Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)

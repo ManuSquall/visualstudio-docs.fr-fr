@@ -1,5 +1,5 @@
 ---
-title: Ligne de commande de l’événement pré-build/post-build, boîte de dialogue
+title: Boîte de dialogue ligne de commande de l’événement pré-build-après génération
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: reference
@@ -34,12 +34,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 594d885228de68ecf34e0644cbbe6c6899397fad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4a2c2b191c4c50fd89936a798a704844b20aa0d3
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85419196"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741511"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Ligne de commande de l’événement pré-build/post-build, boîte de dialogue
 

@@ -1,5 +1,5 @@
 ---
-title: Modifier le type de retour de la méthode DataContext (Concepteur O-R)
+title: Modifier le type de retour de la méthode DataContext
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: c5b66bff-6dbb-43c0-bffa-317133ca5b9e
@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c232e3e4261008fa736377801183d92420ffbf4c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b40851323efdf3c2cbf0900ae323f3c9c0a1ec17
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282265"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89737047"
 ---
 # <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>Guide pratique pour changer le type de retour d’une méthode DataContext (Concepteur O/R)
 Le type de retour d’une <xref:System.Data.Linq.DataContext> méthode (créée selon une procédure stockée ou une fonction) diffère selon l’endroit où vous déposez la procédure stockée ou la fonction dans le **Concepteur O/R**. Si vous déposez directement un élément sur une classe d'entité existante, une méthode <xref:System.Data.Linq.DataContext> ayant le type de retour de la classe d'entité est créée (si le schéma des données a été retourné par la procédure stockée ou si la fonction correspond à la forme de la classe d'entité). Si vous déposez un élément dans une zone vide du **Concepteur O/R**, une <xref:System.Data.Linq.DataContext> méthode qui retourne un type généré automatiquement est créée. Vous pouvez modifier le type de retour d’une méthode <xref:System.Data.Linq.DataContext> après l’avoir ajoutée au volet de méthodes. Pour inspecter ou modifier le type de retour d’une méthode <xref:System.Data.Linq.DataContext>, sélectionnez-la et cliquez sur la propriété **Type de retour** dans la fenêtre **Propriétés**.
@@ -41,7 +41,7 @@ Le type de retour d’une <xref:System.Data.Linq.DataContext> méthode (créée 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Outils de LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
-- [DataContext, méthodes (Concepteur O/R)](../data-tools/datacontext-methods-o-r-designer.md)
+- [Méthode DataContext (Concepteur O/R)](../data-tools/datacontext-methods-o-r-designer.md)
 - [Guide pratique pour créer des méthodes DataContext mappées à des procédures stockées et à des fonctions (Concepteur O/R)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)

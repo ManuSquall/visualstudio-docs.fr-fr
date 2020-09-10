@@ -1,5 +1,5 @@
 ---
-title: Nouveautés &apos; de l’API de plug-in de contrôle de code source Version 1,3 | Microsoft Docs
+title: Nouveautés &apos; de l’API de plug-in de contrôle de code source 1,3
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec24e9ee3079d3b02ac13759b6ab5bdee8c07a84
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0eb580d018bbb858cd0214970bdba3d4ab4f391c
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88706449"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741535"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-13"></a>&#39;nouveautés de l’API de plug-in de contrôle de code source version 1,3
 La version 1,3 de l’API de plug-in de contrôle de code source introduit les nouvelles fonctions suivantes pour fournir un contrôle plus avancé.

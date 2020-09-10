@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : création d’un service WPF simple dans Windows Forms'
+title: Créer un service WCF simple dans Windows Forms
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3d3f2e80ff3e2b94c46d1e2658c40bccf2e6c365
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 697e7b36b1b83987450a25e3cf8b717218bff5c9
+ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75586014"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "89741928"
 ---
 # <a name="walkthrough-create-a-simple-wcf-service-in-windows-forms"></a>Procédure pas à pas : création d’un service WCF simple dans Windows Forms
 
@@ -93,7 +93,7 @@ Cette procédure pas à pas montre comment créer un service simple Windows Comm
    [!code-csharp[WCFWalkthrough#2](../data-tools/codesnippet/CSharp/walkthrough-creating-a-simple-wcf-service-in-windows-forms_4.cs)]
    [!code-vb[WCFWalkthrough#2](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-simple-wcf-service-in-windows-forms_4.vb)]
 
-## <a name="test-the-service"></a>Testez le service
+## <a name="test-the-service"></a>Tester le service
 
 1. Appuyez sur **F5** pour exécuter le service. Un formulaire de **client test WCF** s’affiche et charge le service.
 
