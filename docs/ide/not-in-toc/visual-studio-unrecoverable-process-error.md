@@ -1,6 +1,6 @@
 ---
 title: Un processus a rencontré une erreur irrécupérable
-ms.date: 06/22/2018
+ms.date: 09/10/2020
 ms.topic: troubleshooting
 helpviewer_keywords:
 - unrecoverable error
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c30ac5950ca9bf775b05e9f77867c119b7c7565d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e1c9dc5053e2168482f4463f805bdc5e724ef6b0
+ms.sourcegitcommit: d9dd86c421532cfca6c0c5761d160f35829419c6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81544339"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90025563"
 ---
 # <a name="visual-studio-unrecoverable-process-error"></a>Erreur de processus irrécupérable Visual Studio
 
@@ -51,3 +51,6 @@ Voici une liste des processus hors processus utilisés par Visual Studio. Cette 
 - WindowsAzureTelemetryService.exe
 
 Si l’un de ces processus s’arrête de façon inattendue, certaines fonctionnalités dans Visual Studio cessent de fonctionner. Pour certains processus, la perte de fonctionnalité peut être négligeable. Pour d’autres, la stabilité de Visual Studio est affectée et un message d’erreur s’affiche.
+
+> [!NOTE]
+> Si vous rencontrez un problème qui n’est pas référencé sur cette page, veuillez nous le signaler via l’outil [signaler un problème](../../ide/how-to-report-a-problem-with-visual-studio.md) qui s’affiche à la fois dans le Visual Studio installer et dans l’IDE de Visual Studio.
