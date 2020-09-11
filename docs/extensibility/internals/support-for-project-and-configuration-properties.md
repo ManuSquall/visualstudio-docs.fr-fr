@@ -11,17 +11,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c21d552e26add3a5159febd666c1f60573697535
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be9d9a6e0976ab1ff336fc6754fa44d26c031378
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704902"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012020"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Prise en charge des propriétés de configuration et de projet
 La fenêtre **Propriétés** dans l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] environnement de développement intégré (IDE) peut afficher les propriétés de projet et de configuration. Vous pouvez fournir une page de propriétés pour votre propre type de projet afin que l’utilisateur puisse définir des propriétés pour votre application.
 
- En sélectionnant un nœud de projet dans **Explorateur de solutions** puis en cliquant sur **Propriétés** dans le menu **projet** , vous pouvez ouvrir une boîte de dialogue qui comprend les propriétés du projet et de la configuration. Dans [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] et [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] , et les types de projets dérivés de ces langages, cette boîte de dialogue apparaît sous la forme d’une page à onglets dans la boîte de [dialogue général, environnement, options](../../ide/reference/general-environment-options-dialog-box.md). Pour plus d’informations, consultez [not in Build : procédure pas à pas : exposition des propriétés de projet et de configuration (C#)](https://msdn.microsoft.com/library/d850d63b-25e2-4505-9f3d-eb038d7c1d0e).
+ En sélectionnant un nœud de projet dans **Explorateur de solutions** puis en cliquant sur **Propriétés** dans le menu **projet** , vous pouvez ouvrir une boîte de dialogue qui comprend les propriétés du projet et de la configuration. Dans [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] et [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] , et les types de projets dérivés de ces langages, cette boîte de dialogue apparaît sous la forme d’une page à onglets dans la boîte de [dialogue général, environnement, options](../../ide/reference/general-environment-options-dialog-box.md). Pour plus d’informations, consultez [not in Build : procédure pas à pas : exposition des propriétés de projet et de configuration (C#)](/previous-versions/bb166517(v=vs.100)).
 
  Managed package Framework for Projects (MPFProj) fournit des classes d’assistance pour la création et la gestion d’un nouveau système de projet. Vous pouvez trouver le code source et les instructions de compilation dans [MPF pour les projets-Visual Studio 2013](https://github.com/tunnelvisionlabs/MPFProj10).
 

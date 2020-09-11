@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c7d8a02de9331f268cd06ad35e19faab6494fe0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f1ba6e9af922a7a7ab4dffe555aa55d3ab7bb9dd
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80699854"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012098"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Couleurs et styles pour Visual Studio
 
@@ -283,7 +283,7 @@ Seules quelques couleurs système peuvent être utilisées pour contraste élev�
 
 ### <a name="system-color-set"></a>Jeu de couleurs système
 
-Le tableau sur le blog de l' [équipe WPF : la référence SystemColors](https://blogs.msdn.microsoft.com/wpf/2010/11/30/systemcolors-reference/) indique l’ensemble complet des noms de couleurs système et les teintes correspondantes affichées dans chaque thème.
+Le tableau sur le blog de l' [équipe WPF : la référence SystemColors](/archive/blogs/wpf/systemcolors-reference) indique l’ensemble complet des noms de couleurs système et les teintes correspondantes affichées dans chaque thème.
 
 Lors de l’application de ce jeu limité de couleurs à votre interface utilisateur, *il est prévu que vous perdiez des détails subtils qui étaient présents dans les thèmes « normaux »*. Voici un exemple d’interface utilisateur avec des couleurs grises subtiles utilisées pour distinguer les zones dans une fenêtre outil. Lorsqu’ils sont associés à la même fenêtre affichée en mode contraste élevé, vous pouvez voir que tous les arrière-plans sont identiques et que les bordures de ces zones sont indiquées par la bordure seule :
 
@@ -307,11 +307,11 @@ Exemples de la surface de l’éditeur dans le thème bleu :
 
 De nombreux éléments d’interface utilisateur communs ont déjà des couleurs de contraste élevé définies. Vous pouvez référencer ces modèles d’utilisation lorsque vous choisissez vos propres noms de couleurs système, afin que vos éléments d’interface utilisateur soient cohérents avec des composants similaires.
 
-| Couleur système | Usage |
+| Couleur système | Utilisation |
 | --- | --- |
 | LégendeActive | -L’IDE actif et les glyphes de boutons de fenêtre volés au survol et à la pression<br />-Arrière-plan de la barre de titre pour les fenêtres de l’IDE et les fenêtres à Raft<br />-Arrière-plan de la barre d’État par défaut |
 | TexteLégendeActive | -IDE actif et fenêtres avec des rafts pour le premier plan de la barre de titre (texte et glyphes)<br />-Arrière-plan et bordure des boutons de la fenêtre active au pointage et appuyez sur |
-| Contrôler | -Zone de liste déroulante, liste déroulante et arrière-plan par défaut et désactivés du contrôle de recherche, y compris le bouton de liste déroulante<br />-Arrière-plan du bouton de cible d’ancrage<br />-Arrière-plan de barre de commandes<br />-Arrière-plan de fenêtre outil |
+| Control | -Zone de liste déroulante, liste déroulante et arrière-plan par défaut et désactivés du contrôle de recherche, y compris le bouton de liste déroulante<br />-Arrière-plan du bouton de cible d’ancrage<br />-Arrière-plan de barre de commandes<br />-Arrière-plan de fenêtre outil |
 | ControlDark | -Arrière-plan IDE<br />-Menus et séparateurs de barre de commandes<br />-Bordure de barre de commandes<br />-Shadows de menu<br />-Onglet de fenêtre outil bordure et séparateur par défaut<br />-Arrière-plan du bouton de dépassement de capacité de document<br />: Bordure du glyphe cible de l’ancrage |
 | ContrôleFoncéFoncé |-Inactif, fenêtre d’onglet de document sélectionnée |
 | ContrôleClair |-Masquer automatiquement la bordure de l’onglet<br />-Zone de liste déroulante et bordure de liste déroulante<br />-Arrière-plan et bordure de la cible d’ancrage |
@@ -340,7 +340,7 @@ Il peut arriver que vous souhaitiez autoriser l’utilisateur final à personnal
 
 Un VSPackage peut contrôler les polices et les couleurs via des catégories personnalisées et afficher des éléments dans la page de propriétés polices et couleurs. Lors de l’utilisation de ce mécanisme, les VSPackages doivent implémenter l’interface [IVsFontAndColorDefaultsProvider](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider) et ses interfaces associées.
 
-En principe, ce mécanisme peut être utilisé pour modifier tous les éléments d’affichage existants et les catégories qui les contiennent. Toutefois, il ne doit pas être utilisé pour modifier la catégorie éditeur de texte ou ses éléments d’affichage. Pour plus d’informations sur la catégorie éditeur de texte, consultez [vue d’ensemble des polices et des couleurs](/visualstudio/extensibility/font-and-color-overview?view=vs-2015).
+En principe, ce mécanisme peut être utilisé pour modifier tous les éléments d’affichage existants et les catégories qui les contiennent. Toutefois, il ne doit pas être utilisé pour modifier la catégorie éditeur de texte ou ses éléments d’affichage. Pour plus d’informations sur la catégorie éditeur de texte, consultez [vue d’ensemble des polices et des couleurs](../../vs-2015/extensibility/font-and-color-overview.md?view=vs-2015).
 
 Pour implémenter des catégories personnalisées ou des éléments d’affichage, un VSPackage doit :
 
@@ -361,7 +361,7 @@ Remplissez le Registre avec deux valeurs :
 | Nom | Type | Données | Description |
 | --- | --- | --- | --- |
 | Category | REG_SZ | GUID | GUID créé pour identifier la catégorie |
-| Package | REG_SZ | GUID | GUID du service VSPackage qui prend en charge la catégorie |
+| Paquet | REG_SZ | GUID | GUID du service VSPackage qui prend en charge la catégorie |
 
  Le service spécifié dans le registre doit fournir une implémentation de [IVsFontAndColorDefaults](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults) pour la catégorie correspondante.
 
@@ -374,7 +374,7 @@ Remplissez le Registre avec deux valeurs :
 | Nom | Type | Données | Description |
 |--- | --- | --- | --- |
 | Category | REG_SZ | GUID | GUID créé pour identifier la catégorie |
-| Package | REG_SZ | GUID | GUID du service VSPackage qui prend en charge la catégorie |
+| Paquet | REG_SZ | GUID | GUID du service VSPackage qui prend en charge la catégorie |
 
 Le service spécifié dans le registre doit fournir une implémentation de <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> pour le groupe correspondant.
 
@@ -423,7 +423,7 @@ Pour ce faire, un VSPackage doit :
 
   **OR**
 
-- **interroger l’IDE pour les modifications**. Cela peut être effectué par le biais de l’interface [IVsFontAndColorStorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) implémentée par le système. Bien qu’principalement pour la prise en charge de la persistance, la méthode [GetItem](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem) peut obtenir des informations sur la police et la couleur pour les éléments affichés. Pour plus d’informations sur les paramètres de police et de couleur, consultez l’article MSDN [accès aux paramètres de police et de couleur stockés](/visualstudio/extensibility/accessing-stored-font-and-color-settings?view=vs-2015).
+- **interroger l’IDE pour les modifications**. Cela peut être effectué par le biais de l’interface [IVsFontAndColorStorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) implémentée par le système. Bien qu’principalement pour la prise en charge de la persistance, la méthode [GetItem](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem) peut obtenir des informations sur la police et la couleur pour les éléments affichés. Pour plus d’informations sur les paramètres de police et de couleur, consultez l’article MSDN [accès aux paramètres de police et de couleur stockés](../../vs-2015/extensibility/accessing-stored-font-and-color-settings.md?view=vs-2015).
 
 > [!NOTE]
 > Pour vous assurer que les résultats de l’interrogation sont corrects, utilisez l’interface [IVsFontAndColorCacheManager](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager) pour déterminer si un vidage et une mise à jour du cache sont nécessaires avant d’appeler les méthodes de récupération de l’interface [IVsFontAndColorStorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) .

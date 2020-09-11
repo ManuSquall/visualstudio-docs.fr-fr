@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 8000c6cc067f61a64c71b8c8ac4f5c0176504cd4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1d093ecc8afd9fe822c19c2c1f2ceb5765208865
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903390"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011994"
 ---
 # <a name="add-user-control-to-the-start-page"></a>Ajouter un contrôle utilisateur à la page de démarrage
 
@@ -191,5 +191,5 @@ Pour rendre ce contrôle disponible pour le projet de page de démarrage, dans l
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Contrôles de conteneur WPF](https://msdn.microsoft.com/library/a0177167-d7db-4205-9607-8ae316952566)
+- [Contrôles de conteneur WPF](/previous-versions/bb675291(v=vs.110))
 - [Procédure pas à pas : ajouter du code XAML personnalisé à la page de démarrage](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

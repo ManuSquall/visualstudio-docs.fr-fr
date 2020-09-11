@@ -10,18 +10,18 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe6fb916810bc8a7e960a4723a6a7c7a6f0c1410
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a664385594f139e2c3c5a18a0d8a59e23c13df0a
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713225"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011838"
 ---
 # <a name="register-a-custom-debug-engine"></a>Inscrire un moteur de débogage personnalisé
 Le moteur de débogage doit s’inscrire en tant que fabrique de classe, en suivant les conventions COM et s’inscrire auprès de Visual Studio via la sous-clé de Registre Visual Studio.
 
 > [!NOTE]
-> Vous trouverez un exemple de la procédure d’inscription d’un moteur de débogage dans l’exemple TextInterpreter, qui est généré dans le cadre du [Didacticiel : génération d’un moteur de débogage à l’aide d’ATL com](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24).
+> Vous trouverez un exemple de la procédure d’inscription d’un moteur de débogage dans l’exemple TextInterpreter, qui est généré dans le cadre du [Didacticiel : génération d’un moteur de débogage à l’aide d’ATL com](/previous-versions/bb147024(v=vs.90)).
 
 ## <a name="dll-server-process"></a>Processus serveur DLL
  Un moteur de débogage est généralement configuré dans sa propre DLL en tant que serveur COM. Par conséquent, le moteur de débogage doit inscrire le CLSID de sa fabrique de classe avec COM avant que Visual Studio puisse y accéder. Ensuite, le moteur de débogage doit s’inscrire auprès de Visual Studio pour établir toutes les propriétés (également appelées métriques) prises en charge par le moteur de débogage. Le choix des métriques écrites dans la sous-clé de Registre Visual Studio dépend des fonctionnalités prises en charge par le moteur de débogage.
@@ -51,4 +51,4 @@ HRESULT CTextInterpreterModule::RegisterServer(BOOL bRegTypeLib, const CLSID * p
 ## <a name="see-also"></a>Voir aussi
 - [Création d’un moteur de débogage personnalisé](../../extensibility/debugger/creating-a-custom-debug-engine.md)
 - [Applications auxiliaires du kit de développement logiciel pour le débogage](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
-- [Didacticiel : création d’un moteur de débogage à l’aide d’ATL COM](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)
+- [Didacticiel : création d’un moteur de débogage à l’aide d’ATL COM](/previous-versions/bb147024(v=vs.90))

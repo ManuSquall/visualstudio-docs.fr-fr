@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2589ec24f230287306e0ff7e802d381fb6ab18b7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 91cb06a5ba0890f89a9016447066eb1196ae9e8b
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704758"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012371"
 ---
 # <a name="syntax-coloring-in-a-legacy-language-service"></a>Couleurs de syntaxe dans un service de langage hérité
 
@@ -28,7 +28,7 @@ Visual Studio utilise un service de coloration pour identifier les éléments du
  ![Graphique Coloriseur SVC](../../extensibility/internals/media/figlgsvccolorizer.gif)
 
 > [!NOTE]
-> Le service de coloration de syntaxe est distinct du mécanisme général Visual Studio pour coloriser le texte. Pour plus d’informations sur le [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] mécanisme général de prise en charge de la coloration, consultez [utilisation des polices et des couleurs](/visualstudio/extensibility/using-fonts-and-colors?view=vs-2015).
+> Le service de coloration de syntaxe est distinct du mécanisme général Visual Studio pour coloriser le texte. Pour plus d’informations sur le [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] mécanisme général de prise en charge de la coloration, consultez [utilisation des polices et des couleurs](../../vs-2015/extensibility/using-fonts-and-colors.md?view=vs-2015).
 
  Outre le Coloriseur, le service de langage peut fournir des éléments coloriables personnalisés qui sont utilisés par l’éditeur, en annonçant qu’il fournit des éléments coloriables personnalisés. Pour ce faire, vous pouvez implémenter l' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> interface sur le même objet qui implémente l' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> interface. Elle retourne le nombre d’éléments coloriables personnalisés lorsque l’éditeur appelle la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> méthode et retourne un élément coloriable personnalisé individuel lorsque l’éditeur appelle la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> méthode.
 
@@ -60,7 +60,7 @@ Visual Studio utilise un service de coloration pour identifier les éléments du
     3. Utilisez les informations de colorisation retournées par la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> méthode pour afficher le texte sélectionné.
 
 > [!NOTE]
-> Outre l’utilisation d’un service de langage Coloriseur, un VSPackage peut également utiliser le mécanisme de coloration de texte de Visual Studio à usage général. Pour plus d’informations sur ce mécanisme, consultez [utilisation des polices et des couleurs](/visualstudio/extensibility/using-fonts-and-colors?view=vs-2015).
+> Outre l’utilisation d’un service de langage Coloriseur, un VSPackage peut également utiliser le mécanisme de coloration de texte de Visual Studio à usage général. Pour plus d’informations sur ce mécanisme, consultez [utilisation des polices et des couleurs](../../vs-2015/extensibility/using-fonts-and-colors.md?view=vs-2015).
 
 ## <a name="in-this-section"></a>Dans cette section
 - [Implémentation de la coloration de syntaxe](../../extensibility/internals/implementing-syntax-coloring.md)

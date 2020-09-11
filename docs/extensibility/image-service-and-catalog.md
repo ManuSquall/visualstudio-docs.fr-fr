@@ -8,19 +8,19 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7df93a801b5ec34a433849baa41f2fd255790c86
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 26d8a3c4f3458c3659ccdd3a4cde802293342e5c
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85536329"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011955"
 ---
 # <a name="image-service-and-catalog"></a>Service d’images et catalogue
 Ce livre de recettes contient des conseils et des pratiques recommandées pour l’adoption du service d’images Visual Studio et du catalogue d’images introduit dans Visual Studio 2015.
 
  Le service d’images introduit dans Visual Studio 2015 permet aux développeurs d’obtenir les images les plus appropriées pour l’appareil et le thème choisi par l’utilisateur pour afficher l’image, y compris des corrections pour le contexte dans lequel elles sont affichées. L’adoption du service d’images permet d’éliminer les principales difficultés liées à la maintenance des actifs, à la mise à l’échelle des HDPI et à leur gestion.
 
-|**Problèmes aujourd’hui**|**Solutions**|
+|**Problèmes aujourd’hui**|**Elles**|
 |-|-|
 |Fusion des couleurs d’arrière-plan|Fusion alpha intégrée|
 |Thèmes (certaines) images|Métadonnées du thème|
@@ -101,12 +101,12 @@ Ce livre de recettes contient des conseils et des pratiques recommandées pour l
 </Symbols>
 ```
 
-|**Sous-élément**|**Definition**|
+|**Sous-élément**|**Définition**|
 |-|-|
 |Importer|Importe les symboles du fichier manifeste donné pour une utilisation dans le manifeste actuel|
 |Guid|Le symbole représente un GUID et doit correspondre à la mise en forme du GUID|
 |ID|Le symbole représente un ID et doit être un entier non négatif|
-|Chaîne|Le symbole représente une valeur de chaîne arbitraire|
+|String|Le symbole représente une valeur de chaîne arbitraire|
 
  Les symboles respectent la casse et sont référencés à l’aide de la syntaxe $ (Symbol-Name) :
 
@@ -141,7 +141,7 @@ Ce livre de recettes contient des conseils et des pratiques recommandées pour l
 </Image>
 ```
 
-|**Attribut**|**Definition**|
+|**Attribut**|**Définition**|
 |-|-|
 |Guid|Souhaitée La partie GUID du moniker d’image|
 |ID|Souhaitée La partie ID du moniker d’image|
@@ -157,14 +157,14 @@ Ce livre de recettes contient des conseils et des pratiques recommandées pour l
  </Source>
 ```
 
-|**Attribut**|**Definition**|
+|**Attribut**|**Définition**|
 |-|-|
 |Uri|Souhaitée URI qui définit l’emplacement à partir duquel l’image peut être chargée. Les valeurs possibles sont les suivantes :<br /><br /> -Un URI à en- [tête pack](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) à l’aide de l’autorité application:///<br />-Référence de ressource de composant absolue<br />-Chemin d’accès à un fichier contenant une ressource native|
 |Arrière-plan|Facultatif Indique le type d’arrière-plan auquel la source est destinée à être utilisée.<br /><br /> Les valeurs possibles sont les suivantes :<br /><br /> *Clair :* La source peut être utilisée sur un arrière-plan clair.<br /><br /> *Foncé :* La source peut être utilisée sur un arrière-plan sombre.<br /><br /> *Contraste élevé :* La source peut être utilisée sur n’importe quel arrière-plan en mode contraste élevé.<br /><br /> *HighContrastLight :* La source peut être utilisée sur un arrière-plan clair en mode contraste élevé.<br /><br /> *HighContrastDark :* La source peut être utilisée sur un arrière-plan sombre en mode contraste élevé.<br /><br /> Si l’attribut Background est omis, la source peut être utilisée sur n’importe quel arrière-plan.<br /><br /> Si Background est *clair*, *Dark*, *HighContrastLight*ou *HighContrastDark*, les couleurs de la source ne sont jamais inversées. Si Background est omis ou défini sur *HighContrast*, l’inversion des couleurs de la source est contrôlée par l’attribut **AllowColorInversion** de l’image.|
 
 Un \<Source> élément peut avoir exactement l’un des sous-éléments facultatifs suivants :
 
-|**Element**|**Attributs (tous obligatoires)**|**Definition**|
+|**Element**|**Attributs (tous obligatoires)**|**Définition**|
 |-|-|-|
 |\<Size>|Valeur|La source sera utilisée pour les images de la taille donnée (en unités de périphérique). L’image sera carrée.|
 |\<SizeRange>|MinSize, MaxSize|La source sera utilisée pour les images comprises entre MinSize et MaxSize (en unités de périphérique). L’image sera carrée.|
@@ -177,7 +177,7 @@ Un \<Source> élément peut avoir exactement l’un des sous-éléments facultat
 <NativeResource Type="type" ID="int" />
 ```
 
-|**Attribut**|**Definition**|
+|**Attribut**|**Définition**|
 |-|-|
 |Type|Souhaitée Type de la ressource native (XAML ou PNG)|
 |ID|Souhaitée La partie ID d’entier de la ressource native|
@@ -193,7 +193,7 @@ Un \<Source> élément peut avoir exactement l’un des sous-éléments facultat
  </ImageList>
 ```
 
-|**Attribut**|**Definition**|
+|**Attribut**|**Définition**|
 |-|-|
 |Guid|Souhaitée La partie GUID du moniker d’image|
 |ID|Souhaitée La partie ID du moniker d’image|
@@ -712,7 +712,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 3. Mettez à jour votre code pour utiliser le service d’images pour demander des monikers via le mappage mis à jour. (Cela peut signifier la mise à jour vers **CrispImages** pour le code managé, ou la demande de HBITMAPs ou de HICONs à partir du service d’image et leur transmission pour du code natif.)
 
 ## <a name="testing-your-images"></a>Test de vos images
- Vous pouvez utiliser l’outil visionneuse de la bibliothèque d’images pour tester vos manifestes d’image afin de vérifier que tout est correctement créé. Vous pouvez trouver cet outil dans le [Kit de développement logiciel (SDK) Visual Studio 2015](visual-studio-sdk.md). Vous trouverez la documentation de cet outil et d’autres informations [ici](/visualstudio/extensibility/internals/vssdk-utilities?view=vs-2015).
+ Vous pouvez utiliser l’outil visionneuse de la bibliothèque d’images pour tester vos manifestes d’image afin de vérifier que tout est correctement créé. Vous pouvez trouver cet outil dans le [Kit de développement logiciel (SDK) Visual Studio 2015](visual-studio-sdk.md). Vous trouverez la documentation de cet outil et d’autres informations [ici](./internals/vssdk-utilities.md?view=vs-2015).
 
 ## <a name="additional-resources"></a>Ressources supplémentaires
 

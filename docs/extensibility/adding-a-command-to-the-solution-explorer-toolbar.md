@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fbb84dd8c8a8240e4fec7791305029304ccce8f7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 08513ef67dfdffbf70b5ce2ff449a9ceb4250c37
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183728"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012293"
 ---
 # <a name="add-a-command-to-the-solution-explorer-toolbar"></a>Ajouter une commande à la barre d’outils Explorateur de solutions
 Cette procédure pas à pas montre comment ajouter un bouton à la barre d’outils **Explorateur de solutions** .
@@ -114,7 +114,7 @@ Cette procédure pas à pas montre comment ajouter un bouton à la barre d’out
 
 5. Dans le menu **Fichier** , cliquez sur **Fermer la solution**. Le bouton disparaît de la barre d’outils.
 
-   La visibilité du bouton est contrôlée par [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] jusqu’au chargement du VSPackage. Une fois le VSPackage chargé, la visibilité du bouton est contrôlée par le VSPackage.  Pour plus d’informations, consultez [MenuCommands et OleMenuCommands](/visualstudio/misc/menucommands-vs-olemenucommands?view=vs-2015).
+   La visibilité du bouton est contrôlée par [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] jusqu’au chargement du VSPackage. Une fois le VSPackage chargé, la visibilité du bouton est contrôlée par le VSPackage.  Pour plus d’informations, consultez [MenuCommands et OleMenuCommands](../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015).
 
 ## <a name="see-also"></a>Voir aussi
 - [Commandes, menus et barres d’outils](../extensibility/internals/commands-menus-and-toolbars.md)

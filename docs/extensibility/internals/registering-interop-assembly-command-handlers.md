@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e2ab6389f1e0d369dd095290d12c97431c44155
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dfff8e4e6cc8ba3974ec70e6466b25e9ff7432e4
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705860"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012046"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>Inscription des gestionnaires de commandes d’assemblys d’interopérabilité
 Un VSPackage doit s’inscrire auprès de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] afin que l’environnement de développement intégré (IDE) achemine correctement ses commandes.
@@ -25,7 +25,7 @@ Un VSPackage doit s’inscrire auprès de [!INCLUDE[vsprvs](../../code-quality/i
 
  Managed package Framework (MPF) fournit cette fonctionnalité par le biais de la <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> classe.
 
-- Les ressources de [référence de format de table de commandes](https://msdn.microsoft.com/library/09e9c6ef-9863-48de-9483-d45b7b7c798f) se trouvent dans des dll d’interface utilisateur satellite non managées.
+- Les ressources de [référence de format de table de commandes](/previous-versions/bb164647(v=vs.100)) se trouvent dans des dll d’interface utilisateur satellite non managées.
 
 ## <a name="command-handler-registration-of-a-vspackage"></a>Inscription du gestionnaire de commandes d’un VSPackage
  Un VSPackage agissant comme gestionnaire pour les commandes basées sur l’interface utilisateur requiert une entrée de Registre nommée après le VSPackage `GUID` . Cette entrée de Registre spécifie l’emplacement du fichier de ressources d’interface utilisateur du VSPackage et la ressource de menu dans ce fichier. L’entrée de Registre elle-même se trouve sous HKEY_LOCAL_MACHINE \Software\Microsoft\VisualStudio \\ *\<Version>* \Menus, où *\<Version>* est la version de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , par exemple 9,0.

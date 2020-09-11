@@ -9,12 +9,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b3a04c925ef897171de51c73c90973a12c3b17d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d872003b319773401ef4da72c1fac8dc177ecbdb
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739973"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011786"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Modifications de l’extensibilité de Visual Studio 2017
 
@@ -97,7 +97,7 @@ La plupart des assemblys principaux de Visual Studio ne sont plus installés dan
 
 ### <a name="global-com-registration"></a>Inscription COM globale
 
-* Précédemment, Visual Studio a installé de nombreuses clés de Registre dans le HKEY_CLASSES_ROOT et HKEY_LOCAL_MACHINE Hive pour prendre en charge l’inscription COM native. Pour éliminer cet impact, Visual Studio utilise désormais l' [activation sans inscription pour les composants com](https://msdn.microsoft.com/library/ms973913.aspx).
+* Précédemment, Visual Studio a installé de nombreuses clés de Registre dans le HKEY_CLASSES_ROOT et HKEY_LOCAL_MACHINE Hive pour prendre en charge l’inscription COM native. Pour éliminer cet impact, Visual Studio utilise désormais l' [activation sans inscription pour les composants com](/previous-versions/dotnet/articles/ms973913(v=msdn.10)).
 * En conséquence, la plupart des fichiers TLB/OLB/DLL sous% ProgramFiles (x86)% \ Common Files\Microsoft Shared\MSEnv ne sont plus installés par défaut par Visual Studio. Ces fichiers sont maintenant installés sous [INSTALLDIR] avec les manifestes COM sans inscription correspondants utilisés par le processus hôte Visual Studio.
 * Par conséquent, le code externe qui s’appuie sur l’inscription COM globale pour les interfaces COM de Visual Studio ne trouvera plus ces inscriptions. Le code qui s’exécute dans le processus Visual Studio ne voit pas de différence.
 

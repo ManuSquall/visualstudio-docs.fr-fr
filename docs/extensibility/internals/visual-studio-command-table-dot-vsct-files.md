@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d18367436d1ee1b889558a35723e4e3cec865945
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 24ebac7aee2294d2ad8cee06cd88102bb8d3fd78
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80704026"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012345"
 ---
 # <a name="visual-studio-command-table-vsct-files"></a>Fichiers Visual Studio Command Table (.Vsct)
 Un fichier de configuration de table de commandes est un fichier texte qui décrit l’ensemble de commandes contenu dans un VSPackage. Le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] compilateur de table de commandes (vsct) compile les fichiers de configuration XML (fichiers. vsct) en fichiers de sortie de table de commandes binaires (. directeur). Les fichiers. directeur technique résultants sont les mêmes que ceux créés à l’aide du compilateur de table de commandes (CTC) pour compiler les fichiers de configuration. CTC. Toutefois, les fichiers. vsct basés sur XML présentent certains avantages, tels qu’un éditeur XML et XML IntelliSense.
@@ -37,7 +37,7 @@ Un fichier de configuration de table de commandes est un fichier texte qui décr
 
  Fournit des détails sur chaque section du fichier de configuration XML de la table de commandes.
 
- [Configuration de la table de commandes (. CTC)](https://msdn.microsoft.com/library/3413dda1-f372-4669-bcf0-c64d3463842c) présente une vue d’ensemble du format de fichier. CTC déconseillé.
+ [Configuration de la table de commandes (. CTC)](/previous-versions/bb165153(v=vs.100)) présente une vue d’ensemble du format de fichier. CTC déconseillé.
 
  [Comment VSPackages ajoute des éléments de l’interface utilisateur](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 

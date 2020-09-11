@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21fefb776fceeeef4db6997a5bd12a8b987af7d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 96386c2d3b7d1e822fdd1dd6632d754740f86301
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739886"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011929"
 ---
 # <a name="choose-between-shared-and-versioned-vspackages"></a>Choisir entre des VSPackages partagés et avec version
 Différentes versions de Visual Studio peuvent coexister sur le même ordinateur. Les VSPackages peuvent prendre en charge n’importe quelle combinaison de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] versions.
@@ -35,7 +35,7 @@ Différentes versions de Visual Studio peuvent coexister sur le même ordinateur
 
   - Programmez votre VSPackage pour l’adapter à la version de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dans laquelle il s’exécute. Ensuite, si les requêtes pour les services plus récents échouent, votre VSPackage peut proposer d’autres services pris en charge dans les versions antérieures de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
 
-- Inscrivez votre VSPackage de manière appropriée. Pour plus d’informations, consultez [inscription du VSPackage](../extensibility/internals/vspackage-registration.md) et inscription du [VSPackage géré](https://msdn.microsoft.com/library/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1).
+- Inscrivez votre VSPackage de manière appropriée. Pour plus d’informations, consultez [inscription du VSPackage](../extensibility/internals/vspackage-registration.md) et inscription du [VSPackage géré](/previous-versions/bb166783(v=vs.100)).
 
 - Inscrire correctement les extensions de fichier. Pour plus d’informations, consultez [inscription d’extensions de nom de fichier pour les déploiements côte à côte](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md).
 

@@ -9,23 +9,23 @@ ms.author: heaths
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a7187fbcc3e3aca990846176676a47f5d17aaf00
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 93a6f39a9240002cd8008c9368799e10ab63b78d
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "64878142"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012475"
 ---
 # <a name="locate-visual-studio"></a>Localiser Visual Studio
 
-À compter de Visual Studio 2017, vous pouvez installer plusieurs instances de la même version ou même édition. Cela est utile lorsque vous souhaitez afficher un aperçu de nouvelles fonctionnalités sur votre ordinateur de développement principal tout en conservant votre installation précédente. En raison de ces modifications, il n’existe pas de variable d’environnement ou de valeur de Registre unique que vous pouvez utiliser pour localiser une instance. Au lieu de cela, vous pouvez utiliser une [API de requête com](https://msdn.microsoft.com/library/microsoft.visualstudio.setup.configuration.aspx) pour rechercher des instances en fonction de critères relatifs à votre extension.
+À compter de Visual Studio 2017, vous pouvez installer plusieurs instances de la même version ou même édition. Cela est utile lorsque vous souhaitez afficher un aperçu de nouvelles fonctionnalités sur votre ordinateur de développement principal tout en conservant votre installation précédente. En raison de ces modifications, il n’existe pas de variable d’environnement ou de valeur de Registre unique que vous pouvez utiliser pour localiser une instance. Au lieu de cela, vous pouvez utiliser une [API de requête com](/dotnet/api/microsoft.visualstudio.setup.configuration) pour rechercher des instances en fonction de critères relatifs à votre extension.
 
 Il s’agit d’une API rapide en lecture seule avec des packages NuGet disponibles pour du code natif et managé.
 
-| Code | Package |
+| Code | Paquet |
 | ---- | --- |
 | Natif | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Native |
-| Géré | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop |
+| Adresses IP gérées | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop |
 
 Vous pouvez rechercher une seule instance en fonction d’un chemin d’accès ou du processus en cours, ou d’énumérer toutes les instances. Consultez [nos exemples](https://github.com/Microsoft/vs-setup-samples) pour obtenir des exemples complets sur la façon de localiser Visual Studio.
 

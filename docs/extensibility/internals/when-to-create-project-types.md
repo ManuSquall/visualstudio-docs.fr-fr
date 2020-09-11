@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 861250dac25288f353cbd5c57f510bf67dadce70
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd5caea4d07ff34af8c8cee83c24ae20e8b8f108
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703429"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012007"
 ---
 # <a name="when-to-create-project-types"></a>Quand créer des types de projets
 La création d’un nouveau type de projet fournit une base de personnalisation [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pour vos utilisateurs. Toutefois, la création d’un nouveau type de projet n’est pas obligatoire pour toutes les [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] personnalisations. Les instructions suivantes doivent vous aider à déterminer si un nouveau type de projet est requis pour votre scénario.
@@ -50,7 +50,7 @@ La création d’un nouveau type de projet fournit une base de personnalisation 
 |Tâche|Description|
 |----------|-----------------|
 |Gestion des commandes|N’importe quel VSPackage peut gérer des commandes.|
-|Génération d’un éditeur|Les éditeurs personnalisés peuvent être inscrits. Pour plus d’informations, consultez [fenêtres de document et éditeurs](https://msdn.microsoft.com/library/603625e1-62b6-413a-bc44-089346e166bc).|
+|Génération d’un éditeur|Les éditeurs personnalisés peuvent être inscrits. Pour plus d’informations, consultez [fenêtres de document et éditeurs](/previous-versions/bb165691(v=vs.100)).|
 |Fenêtres propriétaires|Vous pouvez créer des fenêtres d’outils et de documents sans ajouter un nouveau type de projet.|
 |Exposition des propriétés dans le Fenêtre Propriétés|Tous les objets peuvent exposer des propriétés.|
 
@@ -58,6 +58,6 @@ La création d’un nouveau type de projet fournit une base de personnalisation 
  Vous pouvez utiliser des sous-types de projet pour étendre un type de projet managé sans avoir à créer un nouveau type de projet. Les sous-types de projet utilisent l’agrégation COM pour étendre les projets managés écrits dans Microsoft [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] ou [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] . Avec l’agrégation COM, vous pouvez réutiliser la majeure partie de l’implémentation du système de projet géré et toujours personnaliser pour un scénario particulier par le biais de l’agrégation et de l’utilisation des interfaces de prise en charge. Pour plus d’informations sur les sous-types de projet, consultez sous- [types de projet](../../extensibility/internals/project-subtypes.md).
 
 ## <a name="see-also"></a>Voir aussi
-- [Fenêtres de document et éditeurs](https://msdn.microsoft.com/library/603625e1-62b6-413a-bc44-089346e166bc)
+- [Fenêtres de document et éditeurs](/previous-versions/bb165691(v=vs.100))
 - [Checklist : création de types de projets](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Hiérarchies dans Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)

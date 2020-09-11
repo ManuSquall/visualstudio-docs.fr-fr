@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1cea2ebba4739695393447a36e9842ade1670954
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 185e60daac2aef2c8aeeb4f087547984e6fcf510
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80705809"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012033"
 ---
 # <a name="registering-single-file-generators"></a>Inscription de générateurs de fichier unique
 Pour rendre un outil personnalisé disponible dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , vous devez l’inscrire afin qu’il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] puisse l’instancier et l’associe à un type de projet particulier.
@@ -71,4 +71,4 @@ Pour rendre un outil personnalisé disponible dans [!INCLUDE[vsprvs](../../code-
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>
 - [Implémentation de générateurs de fichier unique](../../extensibility/internals/implementing-single-file-generators.md)
 - [Exposition des types aux concepteurs visuels](../../extensibility/internals/exposing-types-to-visual-designers.md)
-- [Introduction à l'objet BuildManager](https://msdn.microsoft.com/library/50080ec2-c1c9-412c-98ef-18d7f895e7fa)
+- [Introduction à l'objet BuildManager](/previous-versions/8f9kffa8(v=vs.140))

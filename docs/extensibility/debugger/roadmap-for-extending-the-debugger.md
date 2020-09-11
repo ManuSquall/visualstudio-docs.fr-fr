@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e809eeb6a1a5d2c24368932713d69c7199b5af38
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d97a7edd62540d12a0a60d15b3179ca0a623c26
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713146"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011825"
 ---
 # <a name="roadmap-for-extending-the-debugger"></a>Feuille de route pour l’extension du débogueur
 Cette documentation fournit des informations de référence et de guide pour l’extension du [!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)] débogueur avec le [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] .
@@ -31,7 +31,7 @@ Cette documentation fournit des informations de référence et de guide pour l�
 
    [Évaluation d’expression](../../extensibility/debugger/expression-evaluation-visual-studio-debugging-sdk.md)
 
-   [Évaluation des expressions](../../extensibility/debugger/evaluating-expressions.md)
+   [Évaluer des expressions](../../extensibility/debugger/evaluating-expressions.md)
 
    [Contexte d’évaluation de l’expression](../../extensibility/debugger/expression-evaluation-context.md)
 
@@ -43,7 +43,7 @@ Cette documentation fournit des informations de référence et de guide pour l�
 
    [Créer un moteur de débogage personnalisé](../../extensibility/debugger/creating-a-custom-debug-engine.md)
 
-   [Didacticiel : créer un moteur de débogage à l’aide d’ATL COM](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)
+   [Didacticiel : créer un moteur de débogage à l’aide d’ATL COM](/previous-versions/bb147024(v=vs.90))
 
    [Implémenter un fournisseur de port](../../extensibility/debugger/implementing-a-port-supplier.md)
 

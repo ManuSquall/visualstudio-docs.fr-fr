@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf847e35878dc84bb32fe81053c01c23e565fc4c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5cafc167eac28b7560287c6de88ee8c490196007
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708524"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011773"
 ---
 # <a name="elements-of-a-project-model"></a>Éléments d’un modèle de projet
 Les interfaces et les implémentations de tous les projets dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] partagent une structure de base : le modèle de projet pour votre type de projet. Dans votre modèle de projet, qui est le VSPackage que vous développez, vous créez des objets conformes à vos décisions de conception et travaillez conjointement avec les fonctionnalités globales fournies par l’IDE. Même si vous contrôlez la façon dont un élément de projet est rendu persistant, par exemple, vous ne contrôlez pas la notification qu’un fichier doit être rendu persistant. Lorsqu’un utilisateur place le focus sur un élément de projet ouvert et choisit **Enregistrer** dans le menu **fichier** de la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] barre de menus, votre code de type de projet doit intercepter la commande de l’IDE, conserver le fichier et renvoyer la notification à l’IDE pour que le fichier ne soit plus modifié.
@@ -32,7 +32,7 @@ Les interfaces et les implémentations de tous les projets dans [!INCLUDE[vsprvs
 
 - Chaque projet doit avoir un fichier de modèle ou un Assistant pour initialiser le nouveau fichier projet lorsqu’un utilisateur crée un nouveau projet par le biais de l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interface utilisateur. Par exemple, les [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] modèles initialisent ce qui finit par devenir des fichiers. vcproj.
 
-  L’illustration suivante montre les interfaces, les services et les objets principaux qui composent une implémentation de projet typique. Vous pouvez utiliser l’application auxiliaire, `HierUtil7` , pour créer les objets sous-jacents et d’autres programmations réutilisables. Pour plus d’informations sur l' `HierUtil7` application d’assistance, consultez [utiliser des classes de projet HierUtil7 pour implémenter un type de projet (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346).
+  L’illustration suivante montre les interfaces, les services et les objets principaux qui composent une implémentation de projet typique. Vous pouvez utiliser l’application auxiliaire, `HierUtil7` , pour créer les objets sous-jacents et d’autres programmations réutilisables. Pour plus d’informations sur l' `HierUtil7` application d’assistance, consultez [utiliser des classes de projet HierUtil7 pour implémenter un type de projet (C++)](/previous-versions/bb166212(v=vs.100)).
 
   ![Graphique du modèle de projet Visual Studio](../../extensibility/internals/media/vsprojectmodel.gif "vsProjectModel") Modèle de projet
 
@@ -42,7 +42,7 @@ Les interfaces et les implémentations de tous les projets dans [!INCLUDE[vsprvs
 
 ## <a name="see-also"></a>Voir aussi
 - [Liste de vérification : créer des types de projets](../../extensibility/internals/checklist-creating-new-project-types.md)
-- [Utiliser des classes de projet HierUtil7 pour implémenter un type de projet (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)
+- [Utiliser des classes de projet HierUtil7 pour implémenter un type de projet (C++)](/previous-versions/bb166212(v=vs.100))
 - [Composants de base du modèle de projet](../../extensibility/internals/project-model-core-components.md)
 - [Créer des instances de projet à l’aide de fabriques de projets](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)
 - [Comment : obtenir un service](../../extensibility/how-to-get-a-service.md)

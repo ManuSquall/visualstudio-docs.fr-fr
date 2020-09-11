@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 2b239059f445d92a5be6709ee7b7a26cb8bb7164
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2d1eb4cc53b6123acbba9741d33d3401d44cf6d7
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88144712"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011877"
 ---
 # <a name="work-with-sql-server-and-r"></a>Utiliser SQL Server et R
 
@@ -50,7 +50,7 @@ Une fois qu’une connexion est établie, vous pouvez exécuter des requêtes et
 ![Résultats de requête SQL](media/sql-query-results.png)
 
 L’Éditeur Transact-SQL prend en charge de nombreuses autres fonctionnalités, telles que l’affichage du plan d’exécution de la requête et un débogueur de requête.
-Pour plus d’informations, consultez [Utiliser l'Éditeur Transact-SQL pour modifier et exécuter des scripts](https://msdn.microsoft.com/library/hh272706.aspx).
+Pour plus d’informations, consultez [Utiliser l'Éditeur Transact-SQL pour modifier et exécuter des scripts](/previous-versions/sql/sql-server-data-tools/hh272706(v=vs.103)).
 
 ## <a name="work-with-sql-server-stored-procedures"></a>Utiliser des procédures stockées SQL Server
 

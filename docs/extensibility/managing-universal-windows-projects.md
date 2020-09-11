@@ -8,16 +8,16 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc6894bcfe3bfab3b0246d716b0bd85152ad17e2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 83e3b07bc3373070953709ffe913f37529e74bc7
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81744934"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012306"
 ---
 # <a name="manage-universal-windows-projects"></a>Gérer les projets Windows universels
 
-Les applications Windows universelles sont des applications qui ciblent à la fois Windows 8.1 et Windows Phone 8,1, ce qui permet aux développeurs d’utiliser du code et d’autres ressources sur les deux plateformes. Le code et les ressources partagés sont conservés dans un projet partagé, tandis que le code et les ressources spécifiques à la plateforme sont conservés dans des projets distincts, un pour Windows et l’autre pour Windows Phone. Pour plus d’informations sur les applications Windows universelles, consultez [applications Windows universelles](https://msdn.microsoft.com/library/windows/apps/dn609832.aspx). Les extensions Visual Studio qui gèrent des projets doivent savoir que les projets d’application Windows universelle ont une structure qui diffère des applications à plateforme unique. Cette procédure pas à pas vous montre comment naviguer dans le projet partagé et gérer les éléments partagés.
+Les applications Windows universelles sont des applications qui ciblent à la fois Windows 8.1 et Windows Phone 8,1, ce qui permet aux développeurs d’utiliser du code et d’autres ressources sur les deux plateformes. Le code et les ressources partagés sont conservés dans un projet partagé, tandis que le code et les ressources spécifiques à la plateforme sont conservés dans des projets distincts, un pour Windows et l’autre pour Windows Phone. Pour plus d’informations sur les applications Windows universelles, consultez [applications Windows universelles](/windows/uwp/get-started/create-uwp-apps). Les extensions Visual Studio qui gèrent des projets doivent savoir que les projets d’application Windows universelle ont une structure qui diffère des applications à plateforme unique. Cette procédure pas à pas vous montre comment naviguer dans le projet partagé et gérer les éléments partagés.
 
 ## <a name="prerequisites"></a>Prérequis
 

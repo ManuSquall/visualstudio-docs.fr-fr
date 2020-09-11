@@ -9,12 +9,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 01279666642adb729d4350b8a497c42d78159120
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2095087451ded8858382323aabc4048582a6db43
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80703972"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012111"
 ---
 # <a name="vspackage-setup-scenarios"></a>Scénarios d’installation de VSPackage
 
@@ -74,7 +74,7 @@ Dans ce cas, le VSPackage est un VSPackage géré installé dans le Global Assem
 
 ![Programme d’installation de la mise à jour du package vs côte à côte VS](../../extensibility/internals/media/vs_sbys_packageupdate.gif "VS_SbyS_PackageUpdate")
 
-Pour plus d’informations sur le déploiement d’assemblys côte à côte, consultez [simplification du déploiement et résolution de l’enfer des dll avec l' .NET Framework](https://msdn.microsoft.com/library/ms973843.aspx).
+Pour plus d’informations sur le déploiement d’assemblys côte à côte, consultez [simplification du déploiement et résolution de l’enfer des dll avec l' .NET Framework](/previous-versions/dotnet/articles/ms973843(v=msdn.10)).
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -11,17 +11,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2eb90dbffa9f04cd17afa70d2bdfc59205bc99cb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a7ace9203cd8f21a9e9ab5dc525bf604aeff678
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80707463"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012202"
 ---
 # <a name="installing-vspackages-with-windows-installer"></a>Installation de VSPackages avec Windows Installer
 L’intégration de votre VSPackage dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nécessite plus qu’une simple copie de fichiers sur l’ordinateur d’un utilisateur. Le programme d’installation de votre VSPackage doit installer le VSPackage et ses fichiers dépendants, puis l’inscrire et l’intégrer dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Votre VSPackage peut tirer parti des fonctionnalités d’intégration, telles que l’affichage d’une icône sur l' [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] écran de démarrage et la boîte de dialogue à propos de.
 
- Microsoft Windows Installer fichiers sont la méthode recommandée pour distribuer vos VSPackages. Les packages Windows Installer faciles à utiliser peuvent s’exécuter sur n’importe quel système d’exploitation Windows pris en charge par [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Pour plus d’informations, consultez [Windows Installer](https://msdn.microsoft.com/library/121be21b-b916-43e2-8f10-8b080516d2a0).
+ Microsoft Windows Installer fichiers sont la méthode recommandée pour distribuer vos VSPackages. Les packages Windows Installer faciles à utiliser peuvent s’exécuter sur n’importe quel système d’exploitation Windows pris en charge par [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] . Pour plus d’informations, consultez [Windows Installer](/previous-versions/2kt85ked(v=vs.120)).
 
 ## <a name="in-this-section"></a>Dans cette section
 - [Éléments de base de Windows Installer](../../extensibility/internals/windows-installer-basics.md)

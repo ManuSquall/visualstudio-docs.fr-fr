@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4634eb5edaab16752bc5df82d70371a580845d28
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f15895a7dab5c57d8312787b1276acac89c28796
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80706394"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011851"
 ---
 # <a name="project-property-user-interface"></a>Interface utilisateur des propriétés du projet
 
@@ -55,7 +55,7 @@ Pour déterminer les CATID de la portée du projet, le sous-type de projet récu
 
 Étant donné que le sous-type de projet agrège l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> objet, il peut remplacer la définition de ces propriétés pour contrôler les boîtes de dialogue des **pages de propriétés** qui sont affichées. Le sous-type de projet peut récupérer ces propriétés à partir du projet de base interne, puis ajouter ou supprimer des CLSID selon les besoins.
 
-Les nouvelles pages de propriétés ajoutées par un sous-type de projet sont transmises à un objet de recherche de configuration de projet à partir de l’implémentation de projet de base. Cet objet de recherche de configuration de projet prend en charge les extendeurs Automation. Pour plus d’informations sur AutomationExtenders, consultez [implémentation et utilisation d’extendeurs Automation](https://msdn.microsoft.com/Library/0d5c218c-f412-4b28-ab0c-33a611f62356). Les pages de propriétés implémentées par le sous-type de projet appellent <xref:EnvDTE.Project.Extender%2A> pour récupérer leur propre objet de recherche de configuration de sous-type de projet qui étend l’objet de recherche de configuration du projet de base.
+Les nouvelles pages de propriétés ajoutées par un sous-type de projet sont transmises à un objet de recherche de configuration de projet à partir de l’implémentation de projet de base. Cet objet de recherche de configuration de projet prend en charge les extendeurs Automation. Pour plus d’informations sur AutomationExtenders, consultez [implémentation et utilisation d’extendeurs Automation](/previous-versions/0y92k2w2(v=vs.140)). Les pages de propriétés implémentées par le sous-type de projet appellent <xref:EnvDTE.Project.Extender%2A> pour récupérer leur propre objet de recherche de configuration de sous-type de projet qui étend l’objet de recherche de configuration du projet de base.
 
 ## <a name="see-also"></a>Voir aussi
 

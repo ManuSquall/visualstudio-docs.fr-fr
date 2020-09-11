@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f02c7ec0e453f0758ba2ab13145fcdff11b442a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a4a3dba370594397d2f247de90063f69c4195cb6
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84173601"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012150"
 ---
 # <a name="author-vsct-files"></a>Fichiers Author. vsct
 Ce document montre comment créer un fichier *. vsct* pour ajouter des éléments de menu, des barres d’outils et d’autres éléments d’interface utilisateur à l’environnement de développement intégré (IDE) de Visual Studio. Utilisez ces étapes Lorsque vous ajoutez des éléments d’interface utilisateur à un package Visual Studio (VSPackage) qui n’a pas encore de fichier *. vsct* .
@@ -108,7 +108,7 @@ Ce document montre comment créer un fichier *. vsct* pour ajouter des élément
        > [!NOTE]
        > Les boutons de la barre d’outils doivent avoir des icônes.
 
-   Pour plus d’informations, consultez [MenuCommands et OleMenuCommands](/visualstudio/misc/menucommands-vs-olemenucommands?view=vs-2015).
+   Pour plus d’informations, consultez [MenuCommands et OleMenuCommands](../../vs-2015/misc/menucommands-vs-olemenucommands.md?view=vs-2015).
 
 4. Si l’une de vos commandes nécessite des icônes, ajoutez un élément [bitmaps](../../extensibility/bitmaps-element.md) à l' `Commands` élément. Puis, pour chaque icône, ajoutez un élément [bitmap](../../extensibility/bitmap-element.md) à l' `Bitmaps` élément. C’est ici que vous spécifiez l’emplacement de la ressource bitmap. Pour plus d’informations, consultez [Ajouter des icônes à des commandes de menu](../../extensibility/adding-icons-to-menu-commands.md).
 

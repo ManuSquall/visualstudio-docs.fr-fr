@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4309feeed3233d2149586afb1bf4efafacb21ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e73be2af3d24a6a719f353fbd0ab25dbdf86fe09
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709906"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012137"
 ---
 # <a name="best-practices-for-security-in-vspackages"></a>Meilleures pratiques pour la sécurité dans les VSPackages
 Pour installer le [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] sur votre ordinateur, vous devez être en cours d’exécution dans un contexte avec des informations d’identification d’administration. Le VSPackage est l’unité de base de sécurité et de déploiement d’une [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] application. [VSPackage](../../extensibility/internals/vspackages.md) Un VSPackage doit être inscrit à l’aide de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , qui requiert également des informations d’identification d’administration.
@@ -31,5 +31,5 @@ Pour installer le [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)
  Pour plus d’informations, consultez [recommandations en matière de codage sécurisé pour le .NET Framework](/previous-versions/visualstudio/visual-studio-2008/d55zzx87(v=vs.90)).
 
 ## <a name="see-also"></a>Voir aussi
-- [Sécurité des compléments](https://msdn.microsoft.com/Library/44a5c651-6246-4310-b371-65378917c799)
-- [Sécurité de DDEX](https://msdn.microsoft.com/library/44a52a70-5c98-450e-993d-4a3b32f69ba8)
+- [Sécurité des compléments](/previous-versions/1326zbk3(v=vs.140))
+- [Sécurité de DDEX](/previous-versions/bb163703(v=vs.140))

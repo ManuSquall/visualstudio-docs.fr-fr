@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b8391cbdd3a857ea4ebaf3a36655520935f1a128
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ead19e9f50201ab795e3c3f68b661037d309d98d
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80709759"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90011903"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>Choisir le répertoire d’installation d’un VSPackage
 Un VSPackage et ses fichiers de prise en charge doivent se trouver dans le système de fichiers d’un utilisateur. L’emplacement varie selon que le VSPackage est géré ou non, à votre schéma de contrôle de version côte à côte et au choix de l’utilisateur.
@@ -62,4 +62,4 @@ Si votre DLL VSPackage contient des ressources et que l’entrée de Registre **
 ## <a name="see-also"></a>Voir aussi
 - [Choisir entre des VSPackages partagés et avec version](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)
 - [Gérer VSPackages](../../extensibility/managing-vspackages.md)
-- [Gérer l’inscription des packages](https://msdn.microsoft.com/library/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)
+- [Gérer l’inscription des packages](/previous-versions/bb166783(v=vs.100))

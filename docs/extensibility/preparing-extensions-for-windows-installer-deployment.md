@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 74cfdcaf5b9f9babe9eefed59f1ea62478434e66
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0084cfc6c08db1c1d15013362a186fec175b4ee4
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85906150"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012215"
 ---
 # <a name="prepare-extensions-for-windows-installer-deployment"></a>Préparer les extensions pour le déploiement de Windows Installer
 Vous ne pouvez pas utiliser un package de Windows Installer (MSI) pour déployer un package VSIX. Toutefois, vous pouvez extraire le contenu d’un package VSIX pour le déploiement MSI. Ce document montre comment préparer un projet dont la sortie par défaut est un package VSIX à inclure dans un projet d’installation.
@@ -55,5 +55,5 @@ Vous ne pouvez pas utiliser un package de Windows Installer (MSI) pour déployer
 5. Ajoutez les fichiers restants à votre projet d’installation.
 
 ## <a name="see-also"></a>Voir aussi
-- [Déploiement du programme d’installation de Visual Studio](https://msdn.microsoft.com/library/121be21b-b916-43e2-8f10-8b080516d2a0)
+- [Déploiement du programme d’installation de Visual Studio](/previous-versions/2kt85ked(v=vs.120))
 - [Procédure pas à pas : créer une action personnalisée](/previous-versions/visualstudio/visual-studio-2010/d9k65z2d(v=vs.100))
