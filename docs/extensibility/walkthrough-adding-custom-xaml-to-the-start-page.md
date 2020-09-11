@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: a13aada6cca9b54d8469885ab4c314a89cd06d6c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 85cc6520ea86db664de676232e8d61a643483ca4
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85905955"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012072"
 ---
 # <a name="walkthrough-add-custom-xaml-to-the-start-page"></a>Procédure pas à pas : ajouter du code XAML personnalisé à la page de démarrage
 
@@ -90,4 +90,4 @@ La page de démarrage de Visual Studio contient désormais un onglet qui affiche
 ## <a name="see-also"></a>Voir aussi
 
 - [Personnaliser la page de démarrage](../ide/customizing-the-start-page-for-visual-studio.md)
-- [Contrôles de conteneur WPF](https://msdn.microsoft.com/library/a0177167-d7db-4205-9607-8ae316952566)
+- [Contrôles de conteneur WPF](/previous-versions/bb675291(v=vs.110))

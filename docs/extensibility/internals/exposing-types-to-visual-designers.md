@@ -12,12 +12,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9067f88b4bf1334e23a548bc6a2cbeb3eac6ad33
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 48aa8a729b5cc38d3cee08a7f5ec143d5e84931a
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80708438"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012528"
 ---
 # <a name="expose-types-to-visual-designers"></a>Exposer des types à des concepteurs visuels
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] doit avoir accès aux définitions de classe et de type au moment du design pour afficher un concepteur visuel. Les classes sont chargées à partir d’un ensemble prédéfini d’assemblys qui incluent l’ensemble de dépendances complet du projet actuel (références et leurs dépendances). Il peut également être nécessaire pour les concepteurs visuels d’accéder aux classes et aux types définis dans les fichiers générés par les outils personnalisés.
@@ -44,6 +44,6 @@ ms.locfileid: "80708438"
      Lorsqu’un PE temporaire est compilé, le seul fichier source fourni au compilateur est la sortie de l’outil personnalisé. Par conséquent, un outil personnalisé qui utilise un PE temporaire doit générer des fichiers de sortie qui peuvent être compilés indépendamment des autres fichiers dans le projet.
 
 ## <a name="see-also"></a>Voir aussi
-- [Introduction à l’objet BuildManager](https://msdn.microsoft.com/library/50080ec2-c1c9-412c-98ef-18d7f895e7fa)
+- [Introduction à l’objet BuildManager](/previous-versions/8f9kffa8(v=vs.140))
 - [Implémenter des générateurs de fichiers uniques](../../extensibility/internals/implementing-single-file-generators.md)
 - [Inscrire des générateurs de fichiers uniques](../../extensibility/internals/registering-single-file-generators.md)

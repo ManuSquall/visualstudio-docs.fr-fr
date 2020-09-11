@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 3cd21242bd4b5a3bdb0da9691d6efb32288d3444
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: a3c4470ea1e54178ea9104af2645c3766d79f18a
+ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89742883"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90012280"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Comment : migrer des projets d’extensibilité vers Visual Studio 2017
 
@@ -180,7 +180,7 @@ Débogueur | Débogueur juste-à-temps | Microsoft.VisualStudio.Component.Debugg
 
 ## <a name="find-component-ids"></a>Rechercher des ID de composant
 
-La liste des composants triés par produit Visual Studio est celle des [ID de composant et de charge de travail de Visual studio 2017](/visualstudio/install/workload-and-component-ids?view=vs-2019). Utilisez ces ID de composant pour vos ID de composants requis dans votre manifeste.
+La liste des composants triés par produit Visual Studio est celle des [ID de composant et de charge de travail de Visual studio 2017](../install/workload-and-component-ids.md?view=vs-2019). Utilisez ces ID de composant pour vos ID de composants requis dans votre manifeste.
 
 Si vous ne savez pas quel composant contient un fichier binaire spécifique, téléchargez la [feuille de calcul Component-> binaire Mapping](https://aka.ms/vs2017componentid-binaries).
 
