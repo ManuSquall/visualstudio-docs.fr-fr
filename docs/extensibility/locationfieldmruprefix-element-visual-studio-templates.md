@@ -1,6 +1,7 @@
 ---
 title: LocationFieldMRUPrefix, élément (modèles Visual Studio)
 titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28ad23961ba9cd9b8bcdb0467f061353fe0ecdb5
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: af2c295fa1a69d7815d117a99506a91f08c29aae
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741350"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90034050"
 ---
 # <a name="locationfieldmruprefix-element-visual-studio-templates"></a>Élément LocationFieldMRUPrefix (modèles Visual Studio)
 
@@ -50,7 +51,7 @@ Spécifie les derniers chemins d’accès utilisés dans la boîte de dialogue *
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Définit la catégorie du modèle et comment il s’affiche dans la boîte de dialogue **Nouveau projet** ou **Ajouter un nouvel élément** .|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
  Cet élément doit être utilisé uniquement pour les modèles produits par le biais de [!INCLUDE[vsipprvsip](../extensibility/includes/vsipprvsip_md.md)] .
 

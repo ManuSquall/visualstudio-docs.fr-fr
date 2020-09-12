@@ -14,39 +14,67 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20524a02cf6ff38e8336ae715162f9f197d46590
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: cccba4c299d5b12bdc00666a0b00f073fba12278
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641649"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036684"
 ---
 # <a name="deploy-your-app-to-a-folder-iis-azure-or-another-destination"></a>Déployer votre application dans un dossier, IIS, Azure ou une autre destination
 
 En déployant une application, un service ou un composant, vous le distribuez pour l'installation sur d'autres ordinateurs, périphériques, serveurs ou dans le cloud. Vous choisissez la méthode appropriée dans Visual Studio pour le type de déploiement dont vous avez besoin.
 
-Pour de nombreux types d’application courants, vous pouvez déployer votre application directement à partir de l’Explorateur de solutions dans Visual Studio. Pour une présentation rapide de cette fonctionnalité, consultez [Présentation du déploiement](../deployment/deploying-applications-services-and-components.md).
+Obtenir de l’aide pour votre tâche de déploiement :
 
-![Choisir une option de publication](../deployment/media/quickstart-publish-dialog.png)
+- Vous n’êtes pas sûr de l’option de déploiement à choisir ? [Quelles sont les options de publication qui me conviennent ?](#what-publishing-options-are-right-for-me)
+- Pour obtenir de l’aide sur les problèmes de déploiement de Azure App Service ou IIS, consultez [résoudre les problèmes de ASP.net Core sur Azure App service et IIS](/aspnet/core/test/troubleshoot-azure-iis).
+- Pour obtenir de l’aide sur la configuration des paramètres de déploiement .NET, consultez [configurer les paramètres de déploiement .net](#configure-net-deployment-settings).
+- Pour effectuer un déploiement vers une nouvelle cible, si vous avez déjà créé un profil de publication, sélectionnez **nouveau** dans la fenêtre **publier** pour un profil configuré.
+
+   ![Créer un profil de publication](../deployment/media/create-a-new-publish-profile.png)
+
+   Ensuite, choisissez une option de déploiement dans la fenêtre publier. Pour plus d’informations sur vos options de publication, consultez les sections suivantes.
 
 ## <a name="what-publishing-options-are-right-for-me"></a>Quelles options de publication choisir ?
 
 À partir de Visual Studio, les applications peuvent être publiées directement sur les cibles suivantes :
 
+::: moniker range=">=vs-2019"
 - [Microsoft Azure](#azure)
 - [Container Registry d’ancrage](#docker-container-registry)
 - [Folder](#folder)
 - [Serveur FTP/FTPS](#ftpftps-server)
 - [Serveur Web (IIS)](#web-server-iis)
 - [Importer le profil](#import-profile)
+::: moniker-end
+::: moniker range="vs-2017"
+- [App Service](#azure-app-service)
+- [App Service Linux](#azure-app-service)
+- [IIS (choisissez IIS, FTP, etc.)](#web-server-iis)
+- [FTP/FTPS (choisissez IIS, FTP, etc.)](#ftpftps-server)
+- [Folder](#folder)
+- [Importer le profil](#import-profile)
+::: moniker-end
+
+Les options précédentes apparaissent comme indiqué dans l’illustration suivante lorsque vous créez un profil de publication.
+
+::: moniker range=">=vs-2019"
+![Choisir une option de publication](../deployment/media/quickstart-publish-dialog.png)
+::: moniker-end
+::: moniker range="vs-2017"
+![Choisir une option de publication](../deployment/media/quickstart-publish-dialog-vs-2017.png)
+::: moniker-end
+
+Pour une présentation rapide des options de déploiement d’applications plus générales, consultez [premier aperçu du déploiement](../deployment/deploying-applications-services-and-components.md).
 
 ## <a name="azure"></a>Azure 
 
 Lorsque vous choisissez Azure, vous pouvez choisir entre les éléments suivants :
 
-- Azure App Service s’exécutant sur Windows, Linux ou en tant qu’image de l’arrimeur
-- Une image d’ancrage déployée sur Azure Container Registry
-- Une machine virtuelle Azure
+- [Azure App service](#azure-app-service) s’exécutant sur Windows, Linux ou en tant qu’image de l’arrimeur
+- Une image d’ancrage déployée sur [Azure Container Registry](#azure-container-registry)
+- Une [machine virtuelle Azure](#azure-virtual-machine)
 
 ![Choisir un service Azure](../deployment/media/quickstart-choose-azure-service.png)
 
@@ -66,7 +94,9 @@ Vous déterminez la puissance de calcul d’un service d’applications en chois
 > Si vous voulez utiliser Azure App Service dans votre centre de données ou sur d’autres ordinateurs locaux, vous pouvez le faire à l’aide d’[Azure Stack](https://azure.microsoft.com/overview/azure-stack/).
 
 Pour plus d’informations sur la publication sur App Service, consultez :
-- [Démarrage rapide : publier sur Azure App service](quickstart-deploy-to-azure.md) et [démarrage rapide-publier des ASP.net Core sur Linux](quickstart-deploy-to-linux.md).
+- [Démarrage rapide-publier sur Azure App Service](quickstart-deploy-to-azure.md)
+- [Démarrage rapide : publiez des ASP.net Core sur Linux](quickstart-deploy-to-linux.md).
+- [Publier une application ASP.NET Core sur Azure App Service](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)
 - [Résolvez les problèmes de ASP.net Core sur Azure App service et IIS](/aspnet/core/test/troubleshoot-azure-iis).
 
 ### <a name="azure-container-registry"></a>Azure Container Registry
@@ -78,7 +108,11 @@ Pour plus d’informations sur la publication sur App Service, consultez :
 - Lorsque vous disposez d’un pipeline de développement et de déploiement de conteneur d’ancrage.
 - Lorsque vous souhaitez créer des images de conteneur d’ancrage dans Azure.
 
-### <a name="azure-virtual-machines"></a>Machines virtuelles Azure
+Pour plus d'informations :
+
+- [Déployer un conteneur ASP.NET dans un registre de conteneurs](../containers/hosting-web-apps-in-docker.md)
+
+### <a name="azure-virtual-machine"></a>Machine virtuelle Azure
 
 Le service [Machines virtuelles Azure](https://azure.microsoft.com/documentation/services/virtual-machines/) permet de créer et gérer des ressources informatiques dans le cloud. Si vous prenez en charge tous les logiciels et mises à jour sur les machines virtuelles, vous pouvez les personnaliser comme vous le souhaitez en fonction des besoins de votre application. Vous pouvez également accéder aux machines virtuelles directement via le Bureau à distance, chaque machine conservant son adresse IP aussi longtemps que vous le souhaitez.
 
@@ -95,13 +129,18 @@ Pour plus d’informations, reportez-vous à la [comparaison détaillée](/azure
 
 > Si vous voulez utiliser le service Machines virtuelles Azure dans votre centre de données ou sur d’autres ordinateurs locaux, vous pouvez le faire à l’aide d’[Azure Stack](https://azure.microsoft.com/overview/azure-stack/).
 
-## <a name="docker-container-registry"></a>Container Registry d’ancrage
+## <a name="docker-container-registry"></a>Registre de conteneurs Docker
 
-Si votre application utilise la station d’accueil, vous pouvez publier votre application en conteneur sur un Container Registry d’ancrage.
+Si votre application utilise la station d’accueil, vous pouvez publier votre application en conteneur dans un registre de conteneurs de l’ancrage.
 
 ### <a name="when-to-choose-docker-container-registry"></a>Quand choisir l’Ancreur Container Registry
 
 - Vous souhaitez déployer une application en conteneur
+
+Pour plus d’informations, consultez les rubriques suivantes :
+
+- [Déployer un conteneur ASP.NET dans un registre de conteneurs](../containers/hosting-web-apps-in-docker.md)
+- [Déployer sur Docker Hub](../containers/deploy-docker-hub.md)
 
 ## <a name="folder"></a>Dossier
 
@@ -117,7 +156,13 @@ Notez que, si pour une raison quelconque (par exemple, l’accès à l’ordinat
 - Vous avez besoin d’un déploiement de test local uniquement.
 - Vous voulez examiner et éventuellement modifier les fichiers d’application indépendamment avant de les envoyer vers une autre cible de déploiement.
 
-Pour plus d’informations, consultez [Démarrage rapide - Déployer dans un dossier local](quickstart-deploy-to-local-folder.md)
+Pour plus d’informations, consultez [démarrage rapide-déployer dans un dossier local](quickstart-deploy-to-local-folder.md).
+
+Pour obtenir une aide supplémentaire pour choisir vos paramètres, consultez les rubriques suivantes :
+
+- [Déploiement dépendant du Framework et déploiement autonome](/dotnet/core/deploying/)
+- [Identificateurs du runtime cible (RID portable, et al)](/dotnet/core/rid-catalog)
+- [Configurations Debug et Release](../ide/understanding-build-configurations.md)
 
 ## <a name="ftpftps-server"></a>Serveur FTP/FTPS
 
@@ -157,7 +202,9 @@ Vous pouvez créer un nombre quelconque de profils de déploiement de serveur We
 - Vous voulez effectuer le déploiement à l’aide d’autres informations d’identification que celles que vous utilisez dans Visual Studio ou que celles directement liées à vos comptes Azure.
 - Vous voulez supprimer les fichiers de la cible à chaque déploiement.
 
-Pour plus d’informations, consultez [démarrage rapide-déployer sur un site Web](quickstart-deploy-to-a-web-site.md). Pour obtenir de l’aide sur la résolution des ASP.NET Core sur IIS, consultez [résoudre les problèmes ASP.net Core sur Azure App service et IIS](/aspnet/core/test/troubleshoot-azure-iis).
+Pour plus d’informations, consultez [démarrage rapide-déployer sur un site Web](quickstart-deploy-to-a-web-site.md).
+
+Pour obtenir de l’aide sur la résolution des ASP.NET Core sur IIS, consultez [résoudre les problèmes ASP.net Core sur Azure App service et IIS](/aspnet/core/test/troubleshoot-azure-iis).
 
 ## <a name="import-profile"></a>Profil d’importation
 
@@ -174,6 +221,14 @@ Pour plus d’informations, consultez les rubriques suivantes :
 
 - [Importer des paramètres de publication et déployer sur IIS](tutorial-import-publish-settings-iis.md)
 - [Importer des paramètres de publication et déployer sur Azure](tutorial-import-publish-settings-azure.md)
+
+## <a name="configure-net-deployment-settings"></a>Configurer les paramètres de déploiement .NET
+
+Pour obtenir une aide supplémentaire pour choisir vos paramètres, consultez les rubriques suivantes :
+
+- [Déploiement dépendant du Framework et déploiement autonome](/dotnet/core/deploying/)
+- [Identificateurs du runtime cible (RID portable, et al)](/dotnet/core/rid-catalog)
+- [Configurations Debug et Release](../ide/understanding-build-configurations.md)
 
 ## <a name="next-steps"></a>Étapes suivantes
 

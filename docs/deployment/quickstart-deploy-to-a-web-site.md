@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ec5ea0b52c5d0708630a30b7d2b80be2275f3a9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 89d8acfa4bf0f5dd9f1f387389b9f7f523c153a7
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84173681"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036403"
 ---
 # <a name="publish-a-web-app-to-a-web-site-using-visual-studio"></a>Publier une application web sur un site web à l’aide de Visual Studio
 
@@ -32,9 +32,9 @@ Vous pouvez utiliser l’outil **Publier** pour publier des applications ASP.NET
 
     ![Commande publier dans le menu contextuel du projet dans Explorateur de solutions](../deployment/media/quickstart-publish.png "Choisir Publier")
 
-1. Si vous avez déjà configuré des profils de publication, le volet **Publier** s’affiche. Cliquez sur **Créer un profil**.
+1. Si vous avez déjà configuré des profils de publication, le volet **Publier** s’affiche. Sélectionnez **Nouveau**.
 
-1. Dans la boîte de dialogue **publier** , choisissez **serveur Web (IIS)**.
+1. Dans la fenêtre **publier** , choisissez **serveur Web (IIS)**.
 
     ![Choisir la cible de publication](../deployment/media/quickstart-publish-iis.png "Choisissez IIS, FTP, etc.")
 
@@ -47,6 +47,8 @@ Vous pouvez utiliser l’outil **Publier** pour publier des applications ASP.NET
     ![Détails de la connexion Web Deploy](../deployment/media/quickstart-publish-iis-web-deploy-connection-details.png)
 
 1. Pour publier, sélectionnez **publier** dans la page Résumé. La fenêtre Sortie affiche la progression du déploiement et les résultats.
+
+   Si vous avez besoin d’aide pour la résolution des problèmes ASP.NET Core sur IIS, consultez [résoudre les problèmes ASP.net Core sur Azure App service et IIS](/aspnet/core/test/troubleshoot-azure-iis).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

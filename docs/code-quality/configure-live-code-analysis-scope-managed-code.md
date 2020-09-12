@@ -1,34 +1,34 @@
 ---
-title: Configurer l’étendue de l’analyse du code en temps réel pour le code managé
-ms.date: 03/23/2018
+title: Configurer l’étendue de l’analyse du code en temps réel pour .NET
+ms.date: 09/01/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - live code analysis
 - background analysis
 - analysis scope
 - full solution analysis
-author: Mikejo5000
-ms.author: mikejo
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6df882d50d0c1d052191246605af856743ffdf3d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 57ff963de193360712e92b76f3cafd7a75ee6b89
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249188"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90035415"
 ---
-# <a name="how-to-configure-live-code-analysis-scope-for-managed-code"></a>Comment : configurer l’étendue de l’analyse du code en temps réel pour le code managé
+# <a name="configure-live-code-analysis-for-net"></a>Configurer l’analyse du code en temps réel pour .NET
 
-## <a name="what-is-live-code-analysis-for-managed-code"></a>Qu’est-ce que l’analyse de code en direct pour le code managé ?
 Visual Studio exécute une série d’analyses de code en direct, également appelées *analyse d’arrière-plan*, pendant que vous modifiez des fichiers sources dans l’éditeur. Une analyse minimale est nécessaire pour une expérience de modification de l’IDE de Visual Studio acceptable. Certaines d’entre elles sont destinées à améliorer la réactivité des fonctionnalités de l’IDE. Bien qu’il s’agit d’activer des fonctionnalités IDE supplémentaires, telles que les diagnostics et les correctifs de code des analyseurs Roslyn. Selon les fonctionnalités, ces analyses peuvent être regroupées comme suit :
 
 - **Calcul en arrière-plan des diagnostics**: analyse pour calculer les erreurs, les avertissements et les suggestions dans les fichiers sources. Ces diagnostics s’affichent sous la forme d’entrées dans la liste d’erreurs et de tildes dans l’éditeur. Elles peuvent être classées en deux catégories :
   - Diagnostics du compilateur C# et Visual Basic
   - Diagnostics de l’analyseur Roslyn, notamment :
 
-    - Analyseurs IDE intégrés pour les suggestions de style de code et
+    - Analyseurs IDE intégrés pour les suggestions de style de code
+    - Analyseurs de l’autorité de certification intégrés pour les suggestions de qualité du code
     - Packages de l’analyseur tiers [installés](./install-roslyn-analyzers.md) pour les projets de la solution actuelle.
 
 - **Autres analyses en arrière-plan**: analyse pour améliorer la réactivité et l’interaction de Visual Studio pour les fonctionnalités IDE. Voici quelques exemples de ces analyses :

@@ -15,17 +15,17 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8238de0760f300b6fa418a5e3eb47eac3db77272
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 77428bfc815a963e8fae4ddae5e5e7a7b7d991fe
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509014"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90034102"
 ---
 # <a name="net-code-analysis-rules"></a>Règles d’analyse du code .NET
-L’outil Analyse du code managé fournit des avertissements qui indiquent des violations de règle dans les bibliothèques de code managé. Les avertissements sont organisés en domaines de règles, tels que la conception, la localisation, les performances et la sécurité. Chaque avertissement indique une violation d’une règle d’analyse du code managé. Cette section fournit des explications et des exemples détaillés de chaque avertissement d’analyse du code managé.
+L’analyse du code .NET fournit des règles qui indiquent des violations de la qualité du code ou des suggestions pour améliorer la qualité du code. Les règles sont organisées dans des zones de règles telles que la conception, la localisation, les performances et la sécurité. Certaines règles sont spécifiques à l’utilisation de l’API .NET, tandis que les règles restantes concernent la qualité du code générique. Cette section fournit des discussions et des exemples détaillés pour chaque règle.
 
- Le tableau suivant indique le type d’informations fourni pour chaque avertissement.
+ Le tableau suivant indique le type d’informations fourni pour chaque diagnostic.
 
 |Élément|Description|
 |----------|-----------------|

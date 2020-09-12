@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f333cc3409056739cef7c378d9815f10439ab37e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d18282cf0fbd8782eb7abce05794e0b2eb1c5c1
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80880362"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90035740"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>Utiliser un test codé de l’interface utilisateur pour tester votre code
 
@@ -33,7 +33,7 @@ Le **Générateur de test codé de l’interface utilisateur** et l’éditeur s
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 
 - Visual Studio Enterprise
 - Composant Test codé de l’interface utilisateur
@@ -446,7 +446,7 @@ Vous pouvez analyser les tests codés de l’interface utilisateur à l’aide d
 
 - [Exécuter des tests dans le processus de build](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
 
-- [Guide pratique pour configurer votre agent de test afin d’exécuter des tests qui interagissent avec le Bureau](https://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
+- [Guide pratique pour configurer votre agent de test afin d’exécuter des tests qui interagissent avec le Bureau](/previous-versions/ee291332(v=vs.140))
 
 **Ajout de la prise en charge des contrôles personnalisés :**  L’infrastructure de test codé de l’interface utilisateur ne prend pas en charge toutes les interfaces utilisateur possibles et peut ne pas prendre en charge l’interface utilisateur que vous souhaitez tester. Par exemple, vous ne pouvez pas créer immédiatement un test codé de l’interface utilisateur de Microsoft Excel. Cependant, vous pouvez créer une extension au framework de tests codés de l’interface utilisateur qui prend en charge un contrôle personnalisé.
 

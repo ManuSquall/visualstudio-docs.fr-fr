@@ -12,12 +12,12 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9157d47278f835232308dc497965afebb294f8fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 76f8da407c0917a3f974a55fd02a1227db5b5d63
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "78937580"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036572"
 ---
 # <a name="migrate-from-legacy-analysis-fxcop-to-source-analysis-fxcop-analyzers"></a>Migrer de l’analyse héritée (FxCop) vers l’analyse source (FxCop Analyzer)
 
@@ -27,11 +27,11 @@ La plupart des règles d’analyse héritée (FxCop) ont déjà été réécrite
 
 Pour plus d’informations sur les différences entre l’analyse héritée et l’analyse de la source, consultez les rubriques suivantes :
 
-- [Analyse du code source et analyse héritée](../code-quality/roslyn-analyzers-overview.md#source-code-analysis-versus-legacy-analysis)
+- [Analyse du code source et analyse héritée](../code-quality/fxcop-analyzers-faq.md#whats-the-difference-between-legacy-fxcop-and-fxcop-analyzers)
 
 - [FAQ sur les analyseurs FxCop](../code-quality/fxcop-analyzers-faq.md)
 
-Pour migrer vers l’analyse de la source, [Installez les analyseurs FxCop](../code-quality/install-fxcop-analyzers.md). À l’instar des violations des règles d’analyse héritées, les violations de l’analyse du code source s’affichent dans la fenêtre Liste d’erreurs dans Visual Studio. En outre, les violations de l’analyse du code source s’affichent également dans l’éditeur de code sous forme de *tildes* sous le code incriminé. La couleur de la ligne ondulée dépend du [paramètre de gravité](../code-quality/use-roslyn-analyzers.md#rule-severity) de la règle. Pour afficher l’état des règles portées vers les nouveaux analyseurs FxCop, consultez [règles portées et](../code-quality/fxcop-rule-port-status.md)déplacées.
+Pour migrer vers l’analyse de la source, [Installez les analyseurs FxCop](../code-quality/install-fxcop-analyzers.md). À l’instar des violations des règles d’analyse héritées, les violations de l’analyse du code source s’affichent dans la fenêtre Liste d’erreurs dans Visual Studio. En outre, les violations de l’analyse du code source s’affichent également dans l’éditeur de code sous forme de *tildes* sous le code incriminé. La couleur de la ligne ondulée dépend du [paramètre de gravité](../code-quality/use-roslyn-analyzers.md#configure-severity-levels) de la règle. Pour afficher l’état des règles portées vers les nouveaux analyseurs FxCop, consultez [règles portées et](../code-quality/fxcop-rule-port-status.md)déplacées.
 
 Pour en savoir plus sur la configuration des analyseurs FxCop :
 

@@ -1,6 +1,7 @@
 ---
 title: EnableLocationBrowseButton, élément (modèles Visual Studio)
 titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b04152864b77c33e3821e4e1ba415cc4fa9f502
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 952053add77de99baeb1a39ede6315604cf6ee06
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89742995"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036650"
 ---
 # <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>Élément EnableLocationBrowseButton (modèles Visual Studio)
 Spécifie si le bouton **Parcourir** est disponible dans la boîte de dialogue **nouveau projet** , afin que les utilisateurs puissent facilement modifier le répertoire par défaut où un nouveau projet est enregistré.
@@ -53,7 +54,7 @@ Spécifie si le bouton **Parcourir** est disponible dans la boîte de dialogue *
 
  Le texte doit être `true` ou `false` , indiquant s’il faut ou non afficher le bouton **Parcourir** dans la boîte de dialogue **nouveau projet** .
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  `EnableLocationBrowseButton` est un élément facultatif. La valeur par défaut est `true` , qui affiche le bouton **Parcourir** dans la boîte de dialogue **nouveau projet** .
 
  Dans la boîte de dialogue **nouveau projet** , la zone de texte **emplacement** spécifie le répertoire dans lequel un nouveau projet est enregistré. Le bouton **Parcourir** vous permet de modifier ce répertoire en affichant la boîte de dialogue **emplacement du projet** , qui vous permet de naviguer facilement vers un autre répertoire disponible à partir de votre ordinateur, puis de le choisir comme répertoire dans lequel le nouveau projet est enregistré.

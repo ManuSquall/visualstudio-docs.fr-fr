@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ce8ce85e027a7ed7f78d0da1f68f328c1ca103d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bfafcca1cddcaa216b8a9e12dd7d961949afa2bb
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75596955"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036520"
 ---
 # <a name="quick-actions"></a>Actions rapides
 
@@ -27,7 +27,7 @@ Les actions rapides peuvent servir à :
 
 ::: moniker range=">=vs-2019"
 
-- [Supprimer](../code-quality/use-roslyn-analyzers.md#suppress-violations) une violation de règle de l’analyseur de code ou [configurer](../code-quality/use-roslyn-analyzers.md#automatically-configure-rule-severity) sa gravité
+- [Supprimer](../code-quality/use-roslyn-analyzers.md#suppress-violations) une violation de règle de l’analyseur de code ou [configurer](../code-quality/use-roslyn-analyzers.md#set-rule-severity-from-the-light-bulb-menu) sa gravité
 
 ::: moniker-end
 
