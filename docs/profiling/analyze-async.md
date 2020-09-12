@@ -9,12 +9,12 @@ ms.author: esherrer
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 49091ba472637d480c04c39f0170c2aee00595d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e6f690b77b7e573fdf1c54fdaeca6237c6bbc146
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85290419"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037541"
 ---
 # <a name="analyze-performance-of-net-asynchronous-code"></a>Analyser les performances du code asynchrone .NET
 
@@ -23,7 +23,7 @@ Utilisez l’outil .NET Async pour analyser les performances du code asynchrone 
 > [!NOTE]
 > L’outil .NET Async nécessite Visual Studio 2019 version 16,7 ou ultérieure et un projet .NET qui utilise **Async** et **await**.
 
-## <a name="setup"></a>Installation
+## <a name="setup"></a>Programme d’installation
 
 1. Appuyez sur **ALT + F2** pour ouvrir le profileur de performances dans Visual Studio.
 
@@ -41,7 +41,7 @@ Utilisez l’outil .NET Async pour analyser les performances du code asynchrone 
 
 Les événements asynchrones sont organisés par ordre chronologique. Chaque affiche l’heure de début, l’heure de fin et la durée.
 
-Chaque ligne qui correspond à une [tâche](https://docs.microsoft.com/dotnet/api/system.threading.tasks) est étiquetée dans la colonne **nom** . Pour tout nom de tâche qui ne peut pas être résolu, une **tâche dans** étiquette s’affiche. Il est suivi du nom de la méthode dans laquelle la tâche se produit. Si une activité asynchrone ne se termine pas dans la session de collecte, une étiquette **incomplète** apparaît dans la colonne **heure de fin** .
+Chaque ligne qui correspond à une [tâche](/dotnet/api/system.threading.tasks) est étiquetée dans la colonne **nom** . Pour tout nom de tâche qui ne peut pas être résolu, une **tâche dans** étiquette s’affiche. Il est suivi du nom de la méthode dans laquelle la tâche se produit. Si une activité asynchrone ne se termine pas dans la session de collecte, une étiquette **incomplète** apparaît dans la colonne **heure de fin** .
 
 Pour approfondir l’étude d’une tâche ou d’une activité spécifique, cliquez avec le bouton droit sur la ligne. Sélectionnez ensuite **atteindre le fichier source** pour voir à quel endroit de votre code l’activité s’est produite.
 

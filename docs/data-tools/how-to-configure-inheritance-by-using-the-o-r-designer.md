@@ -1,5 +1,6 @@
 ---
 title: configurer l’héritage à l’aide du Concepteur O-R
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: e594af12-e777-434a-bc08-7dd2dac84cdc
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5f9ae6d1bd7048ad9e6dc974bca67e6de15ba5fa
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: a0f56d7b123571e9a65d5bb2baa99a8d7dac2461
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89742956"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037053"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Guide pratique pour configurer l’héritage à l’aide du Concepteur O/R
 Le **Concepteur Objet Relationnel** (**Concepteur O/R**) prend en charge le concept d’héritage de table unique, car il est souvent implémenté dans les systèmes relationnels. L'héritage à table unique fait appel à une seule table de base de données qui contient des champs pour les informations parent et enfant. Avec les données relationnelles, une colonne de discriminateur contient la valeur qui détermine à quelle classe tout enregistrement appartient.

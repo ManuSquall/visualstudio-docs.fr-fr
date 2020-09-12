@@ -1,6 +1,7 @@
 ---
 title: Modifications non validées
 description: Valider les modifications in-process sur les contrôles liés aux données avant d’enregistrer
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -19,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: accf31187318c70ded0cc347763664b8fd51d479
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 4e2188e20b2ba36a6ef3805faab9f80c4379f1f7
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89739270"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038372"
 ---
 # <a name="commit-in-process-edits-on-data-bound-controls-before-saving-data"></a>Valider des modifications in-process sur des contrôles liés aux données avant d’enregistrer des données
 

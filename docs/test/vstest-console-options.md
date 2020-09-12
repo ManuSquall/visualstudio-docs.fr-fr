@@ -10,12 +10,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8264aebcbced16f95c177d255e226cfffdbee0ce
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 875af363cbd85f8667d56a33cf7646ac2a9da429
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86869592"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037014"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Options de ligne de commande VSTest.Console.exe
 
@@ -43,7 +43,7 @@ Le tableau suivant répertorie toutes les options de *VSTest.Console.exe*, ainsi
 |**/UseVsixExtensions**|Grâce à cette option, le processus *vstest.console.exe* utilise ou ignore les extensions VSIX installées (le cas échéant) dans la série de tests.<br />Cette fonction est déconseillée. À compter de la prochaine version majeure de Visual Studio, cette option peut être supprimée. Envisagez d’utiliser des extensions disponibles en tant que package NuGet.<br />Exemple : `/UseVsixExtensions:true`|
 |**/TestAdapterPath:[*chemin*]**|Force le processus *vstest.console.exe* à utiliser des adaptateurs de test personnalisés à partir d’un chemin spécifié (le cas échéant) dans la série de tests.<br />Exemple : `/TestAdapterPath:[pathToCustomAdapters]`|
 |**/Platform:[*type de plateforme*]**|Architecture de plateforme cible à utiliser pour l'exécution des tests.<br />Les valeurs valides sont x86, x64 et ARM.|
-|**/Framework: [*version de .Net Framework*]**|Version de .NET cible à utiliser pour l’exécution des tests.<br />Les valeurs possibles sont `Framework35`, `Framework40`, `Framework45`, `FrameworkUap10` et `.NETCoreApp,Version=v1.1`.<br />TargetFrameworkAttribute est utilisé pour détecter automatiquement cette option à partir de votre assembly, et prend la valeur par défaut `Framework40` lorsque l’attribut n’est pas présent. Vous devez spécifier cette option explicitement si vous supprimez le [TargetFrameworkAttribute](https://docs.microsoft.com/dotnet/api/system.runtime.versioning.targetframeworkattribute) de vos assemblys .net core.<br />Si la version cible du .NET Framework est spécifiée en tant que **Framework35**, les tests s’exécutent en mode de compatibilité CLR 4,0.<br />Exemple : `/Framework:framework40`|
+|**/Framework: [*version de .Net Framework*]**|Version de .NET cible à utiliser pour l’exécution des tests.<br />Les valeurs possibles sont `Framework35`, `Framework40`, `Framework45`, `FrameworkUap10` et `.NETCoreApp,Version=v1.1`.<br />TargetFrameworkAttribute est utilisé pour détecter automatiquement cette option à partir de votre assembly, et prend la valeur par défaut `Framework40` lorsque l’attribut n’est pas présent. Vous devez spécifier cette option explicitement si vous supprimez le [TargetFrameworkAttribute](/dotnet/api/system.runtime.versioning.targetframeworkattribute) de vos assemblys .net core.<br />Si la version cible du .NET Framework est spécifiée en tant que **Framework35**, les tests s’exécutent en mode de compatibilité CLR 4,0.<br />Exemple : `/Framework:framework40`|
 |**/TestCaseFilter:[*expression*]**|Exécutez les tests qui correspondent à l'expression donnée.<br /><Expression\> est au format <propriété\>=<valeur\>[\|<Expression\>].<br />Exemple : `/TestCaseFilter:"Priority=1"`<br />Exemple : `/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />L’option de ligne de commande **/TestCaseFilter** ne peut pas être utilisée avec l’option de ligne de commande **/Tests**. <br />Pour plus d’informations sur la création et l’utilisation d’expressions, consultez [Filtre TestCase](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).|
 |**/?**|Affiche des informations sur l’utilisation.|
 |**/Logger:[*uri/nom_convivial*]**|Spécifiez un journal pour les résultats de tests. Spécifiez le paramètre plusieurs fois pour activer plusieurs enregistreurs d’événements.<br />Exemple : pour enregistrer les résultats dans un fichier de Résultats des tests Visual Studio (TRX), utilisez<br />**/Logger : trx**<br />**[; LogFileName = \<Defaults to unique file name> ]**|

@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c9a0537e146ead1c163941a0f552bdea7a28b89c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4d7483f309a3d7edb92d25c34e9665a6212c8038
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74773966"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037515"
 ---
 # <a name="marks-view"></a>Marques, vue
 La vue Marques affiche l’échantillonnage et les événements ETW qui ont été insérés dans l’application.
@@ -43,4 +43,4 @@ La vue Marques affiche l’échantillonnage et les événements ETW qui ont ét�
 ## <a name="see-also"></a>Voir aussi
 - [Présentation du rapport de performances](../profiling/performance-report-overview.md)
 - [Comment : collecter les données des compteurs Windows](../profiling/how-to-collect-windows-counter-data.md)
-- [&#91;fenêtre de contrôle de la collecte de données&#93; de plume](https://msdn.microsoft.com/98d740d8-459f-4605-bf04-fb17aafaaa8f)
+- [&#91;fenêtre de contrôle de la collecte de données&#93; de plume](/previous-versions/bb385767(v=vs.110))

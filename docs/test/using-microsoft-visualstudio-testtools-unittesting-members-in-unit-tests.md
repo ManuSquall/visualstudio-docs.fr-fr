@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e45df63f36947b5f6f0aad77bb8eebcab4aca731
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d68e26e8503fb450d6b163ecec31c0cb6485f6c
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75585559"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038619"
 ---
 # <a name="use-the-mstest-framework-in-unit-tests"></a>Utiliser le framework MSTest dans les tests unitaires
 
@@ -43,7 +43,7 @@ Utilisez les éléments suivants pour configurer des tests unitaires pilotés pa
 
 ## <a name="attributes-used-to-establish-a-calling-order"></a>Attributs utilisés pour établir un ordre d’appel
 
-Un élément de code décoré avec l’un des attributs suivants est appelé au moment spécifié. Pour plus d’informations, consultez [Anatomie d’un test unitaire](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+Un élément de code décoré avec l’un des attributs suivants est appelé au moment spécifié. Pour plus d’informations, consultez [Anatomie d’un test unitaire](/previous-versions/ms182517(v=vs.110)).
 
 ### <a name="attributes-for-assemblies"></a>Attributs pour les assemblys
 
@@ -69,7 +69,7 @@ ClassInitialize et ClassCleanup sont appelés juste après le chargement de votr
 
 ## <a name="attributes-used-to-identify-test-classes-and-methods"></a>Attributs utilisés pour identifier les classes et méthodes de test
 
-Chaque classe de test doit avoir l’attribut `TestClass`, et chaque méthode de test doit avoir l’attribut `TestMethod`. Pour plus d’informations, consultez [Anatomie d’un test unitaire](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+Chaque classe de test doit avoir l’attribut `TestClass`, et chaque méthode de test doit avoir l’attribut `TestMethod`. Pour plus d’informations, consultez [Anatomie d’un test unitaire](/previous-versions/ms182517(v=vs.110)).
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute>
 

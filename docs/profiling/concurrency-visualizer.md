@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3b4e151db08ad5490ed6238223d553f9e76aa0f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a955304e1a0939bbe7398b48a5e9ff30461d8745
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77192401"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037339"
 ---
 # <a name="concurrency-visualizer"></a>Visualiseur concurrentiel
 
@@ -49,7 +49,7 @@ Le visualiseur concurrentiel s’appuie sur la fonctionnalité [Suivi d’évén
 |[vue Threads](../profiling/threads-view-parallel-performance.md)|Explique comment analyser les interactions entre les threads dans votre programme.|
 |[Affichage Cœurs](../profiling/cores-view.md)|Explique comment analyser la migration de threads entre les cœurs.|
 |[Modèles courants pour des applications multithread au comportement médiocre](../profiling/common-patterns-for-poorly-behaved-multithreaded-applications.md)|Décrit plusieurs modèles courants et indique comment ils apparaissent dans le visualiseur concurrentiel.|
-|[Blog Parallel Development in Visual Studio](https://blogs.msdn.microsoft.com/visualizeparallel/)|Fournit des conseils et les meilleures pratiques pour le visualiseur concurrentiel.|
+|[Blog Parallel Development in Visual Studio](/archive/blogs/visualizeparallel/)|Fournit des conseils et les meilleures pratiques pour le visualiseur concurrentiel.|
 |[Vues du rapport de performances](../profiling/performance-report-views.md)|Cette section fournit des informations de référence pour les rapports et les vues des outils de profilage de Visual Studio.|
 |[Kit de développement logiciel (SDK) du visualiseur concurrentiel](../profiling/concurrency-visualizer-sdk.md)|Décrit comment instrumenter votre code source pour afficher des informations supplémentaires dans le visualiseur concurrentiel.|
 |[Utilitaire de ligne de commande du visualiseur concurrentiel (CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md)|Décrit comment utiliser l’utilitaire de ligne de commande du visualiseur concurrentiel (CVCollectionCmd.exe) pour collecter et traiter les traces sur les ordinateurs qui n’ont pas Visual Studio.|

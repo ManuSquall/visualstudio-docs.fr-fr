@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: f638d60b7bd4416bb7a19cc960cac1159c755ab3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 38e542fed0f26422a88644577ec864ef006855c5
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86972294"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038437"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurer des tests unitaires à l’aide d’un fichier *. RunSettings*
 
@@ -107,7 +107,7 @@ Ajoutez une propriété de build à un projet par le biais du fichier projet ou 
 
 - Les paramètres d’exécution au niveau du projet sont actuellement pris en charge dans les projets C#, VB, C++ et F #.
 - Un fichier spécifié pour un projet remplace tout autre fichier de paramètres d’exécution spécifié dans la solution.
-- [Ces propriétés MSBuild](https://docs.microsoft.com/visualstudio/msbuild/msbuild-reserved-and-well-known-properties?view=vs-2019) peuvent être utilisées pour spécifier le chemin d’accès au fichier RunSettings. 
+- [Ces propriétés MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md) peuvent être utilisées pour spécifier le chemin d’accès au fichier RunSettings. 
 
 Exemple de spécification d’un fichier *. RunSettings* pour un projet :
     
@@ -307,7 +307,7 @@ Ces paramètres sont spécifiques à l’adaptateur de test qui exécute les mé
 |Configuration|Default|Valeurs|
 |-|-|-|
 |**ForcedLegacyMode**|false|Dans Visual Studio 2012, l’adaptateur MSTest a été optimisé afin d’être plus rapide et plus scalable. Un comportement, tel que l’ordre dans lequel les tests sont exécutés, peut ne pas être exactement identique à celui d’éditions précédentes de Visual Studio. Définissez cette valeur sur **true** pour utiliser l’adaptateur de test le plus ancien.<br /><br />Par exemple, vous pouvez utiliser ce paramètre si un fichier *app.config* est spécifié pour un test unitaire.<br /><br />Il est recommandé d’envisager de refactoriser vos tests pour vous permettre d’utiliser le nouvel adaptateur.|
-|**IgnoreTestImpact**|false|La fonctionnalité d’impact de test hiérarchise les tests affectés par les modifications récentes, lorsqu’elles sont exécutées dans MSTest ou à partir de Microsoft Test Manager (déconseillé dans Visual Studio 2017). Ce paramètre désactive la fonctionnalité. Pour plus d’informations, consultez [Quels tests doivent être exécutés depuis une version antérieure ?](https://msdn.microsoft.com/library/dd286589).|
+|**IgnoreTestImpact**|false|La fonctionnalité d’impact de test hiérarchise les tests affectés par les modifications récentes, lorsqu’elles sont exécutées dans MSTest ou à partir de Microsoft Test Manager (déconseillé dans Visual Studio 2017). Ce paramètre désactive la fonctionnalité. Pour plus d’informations, consultez [Quels tests doivent être exécutés depuis une version antérieure ?](/previous-versions/dd286589(v=vs.140)).|
 |**SettingsFile**||Vous pouvez spécifier un fichier de paramètres de test à utiliser avec l’adaptateur MSTest ici. Vous pouvez également spécifier un fichier de paramètres de test à partir du [menu de paramètres](#specify-a-run-settings-file-in-the-ide).<br /><br />Si vous spécifiez cette valeur, vous devez également affecter à **ForcedlegacyMode** la valeur **true**.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|
 |**KeepExecutorAliveAfterLegacyRun**|false|Une fois qu’une série de tests est terminée, MSTest est arrêté. Tout processus qui est lancé dans le cadre du test est également terminé. Si vous souhaitez conserver l’exécuteur de test actif, définissez la valeur sur **true**. Par exemple, vous pouvez utiliser ce paramètre pour que le navigateur continue à s’exécuter entre des tests codés de l’interface utilisateur.|
 |**DeploymentEnabled**|true|Si vous définissez cette valeur sur **false**, les éléments de déploiement que vous avez spécifiés dans votre méthode de test ne sont pas copiés dans le répertoire de déploiement.|
@@ -463,4 +463,3 @@ Le nœud **RunConfiguration** doit contenir un nœud **EnvironmentVariables** . 
 - [Configurer une série de tests](https://github.com/microsoft/vstest-docs/blob/master/docs/configure.md)
 - [Personnaliser l’analyse de la couverture du code](../test/customizing-code-coverage-analysis.md)
 - [Tâche de test Visual Studio (Azure Test Plans)](/azure/devops/pipelines/tasks/test/vstest?view=vsts)
-

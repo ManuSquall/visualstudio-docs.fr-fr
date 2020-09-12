@@ -1,6 +1,8 @@
 ---
-title: "Étape 8 : écrire du code pour le gestionnaire d'événements du bouton Afficher une image"
+title: Écrire du code pour le gestionnaire d’événements du bouton Afficher une image
+description: Écrivez du code pour le gestionnaire d’événements du bouton afficher une image dans le didacticiel créer une visionneuse d’images.
 ms.date: 08/30/2019
+ms.custom: SEO-VS-2020
 ms.assetid: 07f4ec00-cda4-42f4-98bb-37edc7167de7
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,12 +15,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d74c9ecda0e3ab23c1f2ab1cb2180a60701c069a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5718bd976952557d9ff5f92a0522a672757a54e8
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579810"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038658"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Étape 8 : écrire du code pour le gestionnaire d'événements du bouton Afficher une image
 

@@ -1,6 +1,6 @@
 ---
 title: Vue d’ensemble des règles de la qualité du code
-ms.date: 08/27/2020
+ms.date: 09/01/2020
 ms.topic: reference
 f1_keywords:
 - CA1000
@@ -253,16 +253,16 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8e4b728fab6eb47501bb0d1bb752d22c0c29a8b4
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: a298ab142ae6a44c1fb24b2cb1b752f6beb4a68e
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509443"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037235"
 ---
-# <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Avertissements d’analyse du code pour le code managé par CheckId
+# <a name="code-quality-analysis-rules-by-rule-id"></a>Règles d’analyse de la qualité du code par ID de règle
 
-Le tableau suivant répertorie les avertissements d'analyse du code pour le code managé par l'identificateur CheckId de l'avertissement.
+Le tableau suivant répertorie les règles d’analyse de la qualité du code par identificateur de règle.
 
 | CheckId | Avertissement | Description |
 |---------| - | - |
@@ -466,7 +466,7 @@ Le tableau suivant répertorie les avertissements d'analyse du code pour le code
 | CA5358 | [CA5358 : Ne pas utiliser de modes de chiffrement non sécurisés](../code-quality/ca5358.md) | Ne pas utiliser de modes de chiffrement non sécurisés |
 | CA5359 | [CA5359 ne pas désactiver la validation de certificat](../code-quality/ca5359.md) | Un certificat peut aider à authentifier l’identité du serveur. Les clients doivent valider le certificat de serveur pour s’assurer que les demandes sont envoyées au serveur souhaité. Si le ServerCertificateValidationCallback retourne toujours `true` , les certificats sont validés. |
 | CA5360 | [Les CA5360 n’appellent pas de méthodes dangereuses dans la désérialisation](../code-quality/ca5360.md) | Une désérialisation non sécurisée est une vulnérabilité qui se produit lorsque des données non approuvées sont utilisées pour abuser de la logique d’une application, provoquer une attaque par déni de service (DoS) ou même exécuter du code arbitraire sur la désérialisation. Il est souvent possible pour les utilisateurs malveillants d’abuser de ces fonctionnalités de désérialisation lorsque l’application désérialise des données non approuvées qui sont sous leur contrôle. Plus précisément, appelez des méthodes dangereuses dans le processus de désérialisation. Des attaques de désérialisation non sécurisées pourraient permettre à une personne malveillante d’effectuer des attaques telles que les attaques par déni de l’authentification, les contournements d’authentification et l’exécution de code à distance. |
-| CA5361 | [CA5361 : Ne pas désactiver l’utilisation du chiffrement fort par SChannel](../code-quality/ca5361.md) | `Switch.System.Net.DontEnableSchUseStrongCrypto`Le paramètre pour `true` assouplit le chiffrement utilisé dans les connexions TLS (Transport Layer Security) sortantes. Un chiffrement plus faible peut compromettre la confidentialité de la communication entre votre application et le serveur, ce qui permet aux attaquants d’espionner facilement les données sensibles. |
+| CA5361 | [CA5361 : ne pas désactiver l’utilisation de Schannel de chiffrement fort](../code-quality/ca5361.md) | `Switch.System.Net.DontEnableSchUseStrongCrypto`Le paramètre pour `true` assouplit le chiffrement utilisé dans les connexions TLS (Transport Layer Security) sortantes. Un chiffrement plus faible peut compromettre la confidentialité de la communication entre votre application et le serveur, ce qui permet aux attaquants d’espionner facilement les données sensibles. |
 | CA5362 | [CA5362 cycle de référence potentiel dans le graphique d’objets désérialisé](../code-quality/ca5362.md) | En cas de désérialisation de données non fiables, tout code qui traite le graphique d’objets désérialisé doit gérer les cycles de référence sans passer par des boucles infinies. Cela comprend à la fois le code qui fait partie d’un rappel de désérialisation et le code qui traite le graphique d’objet une fois la désérialisation terminée. Dans le cas contraire, une personne malveillante pourrait effectuer une attaque par déni de service avec des données malveillantes contenant un cycle de référence. |
 | CA5363 | [CA5363 : Ne pas désactiver la validation de demandes](../code-quality/ca5363.md) | La validation de la demande est une fonctionnalité de ASP.NET qui examine les requêtes HTTP et détermine si elles contiennent du contenu potentiellement dangereux pouvant entraîner des attaques par injection, y compris des scripts inter-sites. |
 | CA5364 | [CA5364 : Ne pas utiliser de protocoles de sécurité dépréciés](../code-quality/ca5364.md) | TLS (Transport Layer Security) sécurise la communication entre les ordinateurs, le plus souvent avec le protocole HTTPs (Hypertext Transfer Protocol Secure). Les anciennes versions de protocole TLS sont moins sécurisées que TLS 1,2 et TLS 1,3 et sont plus susceptibles d’avoir de nouvelles vulnérabilités. Évitez les anciennes versions de protocole pour réduire les risques. |

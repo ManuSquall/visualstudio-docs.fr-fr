@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 0bb76de0d62ab504090d9ac1864ba7ee5627f69d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6d7f3d943d621708efab8df1e2f69402a0c5f26c
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537278"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038346"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Analyser la consommation des ressources et l’activité des threads de l’interface utilisateur (XAML)
 
@@ -29,7 +29,7 @@ Vous pouvez utiliser cet outil sur les plateformes suivantes :
 - Applications universelles Windows (sur Windows 10)
 - Windows 8.1
 - Windows Presentation Foundation (.Net 4.0 et ultérieur)
-- Windows 7
+- Windows 7
 
 > [!NOTE]
 > Vous pouvez collecter et analyser les données d'utilisation de l'UC et les données de consommation d'énergie en même temps que les données de **Chronologie de l'application** . Consultez [exécuter les outils de profilage avec ou sans le débogueur](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
@@ -106,7 +106,7 @@ Les événements suivants sont pris en charge :
 |**Disposition**|Dans les grandes applications, des milliers d'éléments peuvent s'afficher en même temps sur l'écran. Ceci peut aboutir à un débit faible des images de l’interface utilisateur et à la faible réactivité de l’application qui en découle. L’événement Layout détermine avec précision le coût de la disposition de chaque élément (c’est-à-dire le temps passé dans Arrange, Measure, ApplyTemplate, ArrangeOverride et MeasureOverride). Il génère également les arborescences d’éléments visuels qui ont participé à une passe de disposition. Vous pouvez utiliser cette visualisation pour déterminer les arborescences logiques à élaguer, ou pour évaluer d’autres mécanismes de report pour optimiser votre passe de disposition.|
 |**Render**|Temps passé à dessiner les éléments XAML à l'écran.|
 |**E/S**|Durée de récupération de données à partir du disque local ou à partir des ressources réseau qui sont accessibles par le biais de l’ [API Microsoft Windows Internet (WinINet)](/windows/desktop/WinInet/portal).|
-|**Code d'application**|Indique le temps passé à l’exécution du code de l’application (utilisateur) qui n’est pas lié à l’analyse ou à la disposition.|
+|**Code de l’application**|Indique le temps passé à l’exécution du code de l’application (utilisateur) qui n’est pas lié à l’analyse ou à la disposition.|
 |**Autres Xaml**|Temps passé à exécuter le code du runtime XAML.|
 
 > [!TIP]
@@ -125,7 +125,7 @@ Utilisez la barre à outils **Détails de la chronologie** pour trier, filtrer e
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Blog de l’équipe WPF : nouvel outil d’analyse des performances de l’interface utilisateur pour les applications WPF](https://blogs.msdn.microsoft.com/wpf/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications/)
+- [Blog de l’équipe WPF : nouvel outil d’analyse des performances de l’interface utilisateur pour les applications WPF](/archive/blogs/wpf/new-ui-performance-analysis-tool-for-wpf-applications)
 - [Bonnes pratiques pour les performances des applications UWP en C++, C# et Visual Basic](/previous-versions/windows/apps/hh750313\(v\=win.10\))
 - [Optimiser les performances des applications WPF](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)
 - [Profilage dans Visual Studio](../profiling/index.yml)

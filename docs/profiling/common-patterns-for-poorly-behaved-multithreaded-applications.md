@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4aec033266ccb2a6e6dcd0342669b7c31082488a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6a70e77b63aa923aa51188c3db8cb0feaaf6daf0
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62788903"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038502"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Modèles courants pour des applications multithread au comportement médiocre
 
@@ -30,7 +30,7 @@ Parfois, une application parallélisée continue de s’exécuter de façon sér
 
 Comme le montre l’illustration suivante, le visualiseur concurrentiel peut également exposer ce symptôme dans la vue Utilisation de l’UC, où vous voyez que, malgré la présence de plusieurs threads, l’application n’utilise qu’un seul cœur logique.
 
-Pour plus d’informations, consultez la section « Démarrer avec le problème » dans l’article de MSDN Magazine [Performances des threads - Profilage de simultanéité des contentions de ressources dans Visual Studio 2010](https://msdn.microsoft.com/magazine/ff714587.aspx).
+Pour plus d’informations, consultez la section « Démarrer avec le problème » dans l’article de MSDN Magazine [Performances des threads - Profilage de simultanéité des contentions de ressources dans Visual Studio 2010](/archive/msdn-magazine/2010/june/msdn-magazine-thread-performance-resource-contention-concurrency-profiling-in-visual-studio-2010).
 
 ![Contention de verrouillage](../profiling/media/lockcontention_2.png "LockContention_2")
 

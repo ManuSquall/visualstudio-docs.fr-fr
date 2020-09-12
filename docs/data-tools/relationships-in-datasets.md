@@ -1,5 +1,6 @@
 ---
 title: Créer des relations entre les datasets
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6c30fb068a9a25c3cd8a6b6237aefbccc666e49e
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 93575cb299513dbb0616f3c7ed6f1c7db6d65bb5
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89739230"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037684"
 ---
 # <a name="create-relationships-between-datasets"></a>Créer des relations entre les datasets
 Les jeux de données qui contiennent des tables de données associées utilisent des <xref:System.Data.DataRelation> objets pour représenter une relation parent/enfant entre les tables et pour retourner les enregistrements associés les uns des autres. L’ajout de tables associées à des jeux de données à l’aide de l' **Assistant Configuration de source de données**, ou du **Concepteur de DataSet**, crée et configure l' <xref:System.Data.DataRelation> objet pour vous.

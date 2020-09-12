@@ -1,6 +1,7 @@
 ---
-title: Utiliser des comptes qui demandent une authentification multifacteur
+title: Utiliser des comptes qui requièrent l’authentification multifacteur
 ms.date: 05/27/2020
+ms.custom: SEO-VS-2020
 ms.topic: conceptual
 description: Découvrez comment utiliser Visual Studio avec des comptes qui requièrent l’authentification multifacteur.
 author: ornellaalt
@@ -9,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 699580689bcf00d00d2a6e07f814be4d1265bb1d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 914acae2f5fbb9bd3f47669eea699935fcfa5e4d
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85283544"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038385"
 ---
 # <a name="how-to-use-visual-studio-with-accounts-that-require-multi-factor-authentication"></a>Comment utiliser Visual Studio avec des comptes qui requièrent l’authentification multifacteur
 

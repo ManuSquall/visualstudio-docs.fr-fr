@@ -1,6 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition
 titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5c8d2f8cb5591c789b55b5c04fffb024c4442398
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 63ae51defe1ed93c889b9ad401e013b9110d9fc7
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743305"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037001"
 ---
 # <a name="idebugcomplussymbolprovidergetaddressesinmodulefromposition"></a>IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition
 Mappe une position de document dans le module spécifié à un tableau d’adresses de débogage.
@@ -68,7 +69,7 @@ dans Si `TRUE` la valeur est, limite les adresses de débogage à une seule inst
 `ppEnumEndAddresses`\
 à Retourne un énumérateur pour les adresses de fin de débogage associées à cette instruction ou ligne.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 ## <a name="example"></a>Exemple

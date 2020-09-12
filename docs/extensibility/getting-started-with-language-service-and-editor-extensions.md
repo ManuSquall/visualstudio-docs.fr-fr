@@ -1,5 +1,6 @@
 ---
 title: Prise en main du service de langage et des extensions de l’éditeur
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94ccda92a0ad5508b8e14ec267f32c50b64e55c0
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 55d9f018324c32a8b39c96037058593cebf52bc2
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89742887"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037762"
 ---
 # <a name="get-started-with-language-service-and-editor-extensions"></a>Prise en main du service de langage et des extensions de l’éditeur
 
@@ -47,7 +48,7 @@ Vous pouvez utiliser les extensions de l’éditeur pour ajouter des fonctionnal
 
 - Marges et barres de défilement
 
-- Étiquettes
+- Balises
 
 - Ornements
 

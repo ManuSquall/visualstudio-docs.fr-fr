@@ -1,8 +1,8 @@
 ---
-title: Créer une application de plateforme Windows universelle (UWP) avec Visual Studio et C#
+title: 'Créer une application UWP avec Visual Studio et C #'
 description: Créer une application UWP dans Visual Studio avec XAML et C#
 titleSuffix: ''
-ms.custom: seodec18, get-started
+ms.custom: seodec18, get-started, SEO-VS-2020
 ms.date: 09/20/2019
 ms.technology: vs-ide-general
 ms.topic: tutorial
@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: aec4b72e8393e241039e8c005d05275ab61111bb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c1f541c94804f8f5f454f6299a116a8bd1386e7
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249250"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037274"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Didacticiel : créer votre première plateforme Windows universelle application dans Visual Studio avec XAML et C&#35;
 
@@ -72,7 +72,7 @@ Créez tout d’abord un projet de plateforme Windows universelle. Le type de pr
 
 1. Acceptez les paramètres par défaut pour **Version cible** et **Version minimale** dans la boîte de dialogue **Nouveau projet de plateforme Windows universelle**.
 
-   ![Accepter les paramètres par défaut pour Version cible et Version minimale dans la boîte de dialogue Nouveau projet de plateforme Windows universelle](media/vs-2019/new-uwp-project-target-minver-dialog.png)
+   ![Accepter la version cible par défaut et les paramètres de version minimale dans la boîte de dialogue Nouveau projet de plateforme Windows universelle](media/vs-2019/new-uwp-project-target-minver-dialog.png)
 ::: moniker-end
 
    > [!NOTE]
@@ -114,7 +114,7 @@ Il est temps de commencer à développer. Vous allez ajouter un contrôle bouton
 
    Si vous examinez le code dans l' **éditeur XAML**, vous verrez que le bouton y a également été ajouté :
 
-   ![Cliquer sur le contrôle Button, puis le faire glisser dans la zone de conception](media/uwp-xaml-control-code-window.png)
+   ![Afficher le bouton dans l’éditeur XAML](media/uwp-xaml-control-code-window.png)
 
 ### <a name="add-a-label-to-the-button"></a>Ajouter une étiquette au bouton
 
@@ -192,7 +192,7 @@ Il est temps de générer, déployer et lancer l’application UWP « Hello Worl
 
 1. Examinez votre application, qui apparaît vite après la disparition d’un écran de démarrage. L’application doit ressembler à ceci :
 
-   ![Application UWP « Hello World »](media/vs-2019/uwp-hello-world-app.png)
+   ![Application « Hello World » UWP](media/vs-2019/uwp-hello-world-app.png)
 
 1. Cliquez sur le bouton **Hello World**.
 

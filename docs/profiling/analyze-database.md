@@ -9,21 +9,21 @@ ms.author: esherrer
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: b369fe6998cd7ef134af765d6d849f41bc93527c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4ea74fd587119105577062f571b4ec8e3de76a4f
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85290418"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037528"
 ---
 # <a name="analyze-database-performance-using-the-database-tool"></a>Analyser les performances de base de données à l’aide de l’outil base de données
 
 Utilisez l’outil de base de données pour enregistrer les requêtes de base de données que votre application effectue pendant une session de diagnostic. Vous pouvez ensuite analyser des informations sur des requêtes individuelles pour trouver des emplacements afin d’améliorer les performances de votre application.
 
 > [!NOTE]
-> L’outil de base de données nécessite Visual Studio 2019 version 16,3 ou ultérieure et un projet .NET Core sur Windows à l’aide de [ADO.net]( https://docs.microsoft.com/dotnet/framework/data/adonet/ado-net-overview) ou [Entity Framework Core](https://docs.microsoft.com/ef/core/).
+> L’outil de base de données nécessite Visual Studio 2019 version 16,3 ou ultérieure et un projet .NET Core sur Windows à l’aide de [ADO.net]( https://docs.microsoft.com/dotnet/framework/data/adonet/ado-net-overview) ou [Entity Framework Core](/ef/core/).
 
-## <a name="setup"></a>Installation
+## <a name="setup"></a>Programme d’installation
 
 1. Appuyez sur **ALT + F2** pour ouvrir le profileur de performances dans Visual Studio.
 
@@ -50,7 +50,7 @@ Une fois que vous avez trouvé une requête que vous souhaitez examiner, cliquez
 
 ![Atteindre le fichier source sélectionné](./media/db-gotosource.png "Atteindre le fichier source sélectionné")
 
-Si vous sélectionnez une plage de temps sur un graphique, la table de requête affiche uniquement les requêtes qui se sont produites pendant cette période. Ce comportement est particulièrement utile lorsque vous exécutez également l' [outil utilisation](https://docs.microsoft.com/visualstudio/profiling/cpu-usage?view=vs-2019)de l’UC.
+Si vous sélectionnez une plage de temps sur un graphique, la table de requête affiche uniquement les requêtes qui se sont produites pendant cette période. Ce comportement est particulièrement utile lorsque vous exécutez également l' [outil utilisation](./cpu-usage.md?view=vs-2019)de l’UC.
 
 ## <a name="see-also"></a>Voir aussi
 

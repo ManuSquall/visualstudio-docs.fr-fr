@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6109c1becfae51ebf3824b5683bc66a5d89b74a0
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 9408e8615e2a3591a5e93f569546b6161fe40e4c
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599609"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037248"
 ---
 # <a name="code-analysis-faq"></a>FAQ sur l’analyse du code
 
@@ -61,7 +61,7 @@ Les [analyseurs StyleCop](https://github.com/DotNetAnalyzers/StyleCopAnalyzers) 
 
 **Q**: quelle est la différence entre l’analyse héritée et l’analyse du code basé sur .NET Compiler Platform ?
 
-**R**: l’analyse du code basé sur le .NET Compiler Platform analyse le code source en temps réel et Pendant la compilation, tandis que l’analyse héritée analyse les fichiers binaires une fois la génération terminée. Pour plus d’informations, consultez [analyse basée sur les .NET Compiler Platform plutôt que analyse héritée](roslyn-analyzers-overview.md#source-code-analysis-versus-legacy-analysis) et [FAQ sur les analyseurs FxCop](fxcop-analyzers-faq.md).
+**R**: l’analyse du code basé sur le .NET Compiler Platform analyse le code source en temps réel et Pendant la compilation, tandis que l’analyse héritée analyse les fichiers binaires une fois la génération terminée. Pour plus d’informations, consultez [analyse basée sur les .NET Compiler Platform et analyse héritée](../code-quality/fxcop-analyzers-faq.md#whats-the-difference-between-legacy-fxcop-and-fxcop-analyzers).
 
 ## <a name="treat-warnings-as-errors"></a>Considérer les avertissements comme des erreurs
 

@@ -8,12 +8,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3938e7dc1b3ec33c8a4cf74b6957067bbdfd6185
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 03c5897f4cbf06ad7c9dc7541a032f5b86e45d4c
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74778425"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90038606"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Outils d’analyse des performances sur les applications Windows 8 et Windows Server 2012
 
@@ -42,9 +42,9 @@ Pour plus d’informations sur le profilage d’applications UWP, consultez les 
 - [Exécuter des applications UWP sur un ordinateur distant](../debugger/run-windows-store-apps-on-a-remote-machine.md)
 - [Découvrir les outils de profilage](profiling-feature-tour.md)
 - [Mémoire JavaScript](../profiling/javascript-memory.md)
-- [Profiler du code Visual C++, Visual C# et Visual Basic dans des applications UWP sur un ordinateur local](https://msdn.microsoft.com/2d0c939e-0bac-48c5-b727-46f6c6113060)
-- [Profiler du code Visual C++, Visual C# et Visual Basic dans des applications UWP sur un appareil distant](https://msdn.microsoft.com/b932a2be-11b0-40fd-b996-75c6b6a79d22)
-- [Analyser les données de performances du code Visual C++, Visual C# et Visual Basic dans des applications UWP](https://msdn.microsoft.com/5de4a413-d924-425f-afc4-e1ecfb0fca18)
+- [Profiler du code Visual C++, Visual C# et Visual Basic dans des applications UWP sur un ordinateur local](/previous-versions/hh696631(v=vs.140))
+- [Profiler du code Visual C++, Visual C# et Visual Basic dans des applications UWP sur un appareil distant](/previous-versions/hh972878(v=vs.140))
+- [Analyser les données de performances du code Visual C++, Visual C# et Visual Basic dans des applications UWP](/previous-versions/hh780914(v=vs.140))
 
 ## <a name="collect-data-on-apps-running-on-the-windows-8-desktop-or-on-windows-server-2012-from-the-visual-studio-ide"></a>Collecter des données sur des applications qui s’exécutent sur un poste de travail Windows 8 ou sur Windows Server 2012 à partir de l’IDE Visual Studio
 

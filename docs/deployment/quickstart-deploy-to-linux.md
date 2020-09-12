@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: c58e1400c043cf3d15bf204fc8648ab32b33f706
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: 8130608f7f94efa279775f532e0022df2f2a7f1a
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641556"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037671"
 ---
 # <a name="publish-an-aspnet-core-app-to-app-service-on-linux-using-visual-studio"></a>Publier une application web ASP.NET Core sur App Service sur Linux à l’aide de Visual Studio
 
@@ -34,7 +34,9 @@ Cet article décrit comment utiliser l’outil **Publier** pour un déploiement 
 
     ![Commande publier dans le menu contextuel du projet dans Explorateur de solutions](../deployment/media/quickstart-publish.png "Choisir Publier")
 
-1. Dans la boîte de dialogue **publier** , sélectionnez **Azure**.
+1. Si vous avez déjà configuré des profils de publication, la fenêtre **publier** s’affiche. Sélectionnez **Nouveau**.
+
+1. Dans la fenêtre **publier** , sélectionnez **Azure**.
 
     ![Choisir la cible de publication](../deployment/media/quickstart-publish-azure-new.png)
 

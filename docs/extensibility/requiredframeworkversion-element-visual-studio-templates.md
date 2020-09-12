@@ -1,6 +1,7 @@
 ---
 title: Élément RequiredFrameworkVersion (modèles Visual Studio)
 titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ce8a342f7b3582fb8b2b3839a44e545071b7177
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 552efae54a3c8346c7a259fb36e0ed0f8084be3e
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741692"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037723"
 ---
 # <a name="requiredframeworkversion-element-visual-studio-templates"></a>Élément RequiredFrameworkVersion (modèles Visual Studio)
 
@@ -56,7 +57,7 @@ Spécifie la version minimale du .NET Framework requis par le modèle. Cela entr
 
  Le texte doit être le numéro de version minimal du .NET Framework requis pour le modèle.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 `RequiredFrameworkVersion` est un élément facultatif. Utilisez cet élément uniquement si le modèle prend en charge une version minimale spécifique (et les versions ultérieures, le cas échéant) du .NET Framework. Si vous spécifiez l' `RequiredFrameworkVersion` élément et que votre modèle ne prend pas en charge une version minimale spécifique du .NET Framework, la liste déroulante **version du Framework cible** s’affiche lorsqu’elle n’est pas applicable.
 

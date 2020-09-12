@@ -1,5 +1,6 @@
 ---
 title: Relations entre les classes LINQ to SQL
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 56133e65-81f3-44c3-bc28-ffdd0671a0d2
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8a45b93ffe1621b5cd56578fc4969a4f14b28355
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 5c8872a7dc18829ca9a0b4328c58498352385ce6
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89742936"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037066"
 ---
 # <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>Comment : créer une association entre des classes LINQ to SQL (Concepteur O/R)
 Les associations entre classes d'entité dans [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] sont analogues aux relations entre les tables dans une base de données. Vous pouvez créer des associations entre des classes d’entité en utilisant la boîte de dialogue **Éditeur d’associations**.
@@ -26,7 +27,7 @@ Vous devez sélectionner une classe parente et une classe enfant quand vous util
 ## <a name="association-properties"></a>Propriétés d’association
 Après avoir créé une association, quand vous sélectionnez l’association dans le **Concepteur O/R**, la fenêtre **Propriétés** contient des propriétés configurables. (L’Association est la ligne entre les classes connexes.) Le tableau suivant fournit des descriptions pour les propriétés d’une association.
 
-|Propriété|Description|
+|Property|Description|
 |--------------|-----------------|
 |**Cardinalité**|Détermine s'il s'agit d'une l'association est un-à-plusieurs ou un-à-un.|
 |**Propriété enfant**|Spécifie s’il faut créer, dans le parent, une propriété qui est une collection ou une référence aux enregistrements enfants sur le côté clé étrangère de l’association. Par exemple, dans l’association entre `Customer` et `Order` , si la **propriété enfant** a la valeur **true**, une propriété nommée `Orders` est créée sur la classe parente.|
