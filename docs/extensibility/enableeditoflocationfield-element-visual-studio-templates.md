@@ -1,6 +1,7 @@
 ---
 title: Élément EnableEditOfLocationField (modèles Visual Studio)
 titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9baee9e7497f5b65022b8a0b938f4a8a63140ab2
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 0fdc6398a5130c2f537c2f1ad6b12f484add42b3
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741719"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90037404"
 ---
 # <a name="enableeditoflocationfield-element-visual-studio-templates"></a>Élément EnableEditOfLocationField (modèles Visual Studio)
 Spécifie si l’utilisateur peut modifier le champ d’emplacement.
@@ -35,10 +36,10 @@ Spécifie si l’utilisateur peut modifier le champ d’emplacement.
  Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.
 
 ### <a name="attributes"></a>Attributs
- None
+ Aucun
 
 ### <a name="child-elements"></a>Éléments enfants
- None
+ Aucun
 
 ### <a name="parent-elements"></a>Éléments parents
 
@@ -51,7 +52,7 @@ Spécifie si l’utilisateur peut modifier le champ d’emplacement.
 
  Le texte doit être `true` ou `false` , indiquant si l’utilisateur peut modifier la zone de texte **emplacement** dans la boîte de dialogue **nouveau projet** .
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  `EnableEditOfLocationField` est un élément facultatif. La valeur par défaut est `true` , ce qui permet à l’utilisateur de modifier la valeur de la zone de texte **emplacement** dans la boîte de dialogue **nouveau projet** .
 
  Dans la boîte de dialogue **nouveau projet** , la zone de texte **emplacement** spécifie le répertoire dans lequel un nouveau projet est enregistré.

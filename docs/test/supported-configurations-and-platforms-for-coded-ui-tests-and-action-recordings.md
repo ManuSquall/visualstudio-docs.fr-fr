@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e18e50537f35080f9796f4a090b3806953ae5170
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3636f87db5c395f1660d9271d0eed5cacec99161
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75845807"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036897"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Plateformes et configurations prises en charge pour les tests codés de l’interface utilisateur et les enregistrements des actions
 
@@ -31,7 +31,7 @@ Les plateformes et configurations prises en charge pour les tests codés de l’
 
 ## <a name="supported-configurations"></a>Configurations prises en charge
 
-| Configuration | Pris en charge |
+| Configuration | Prise en charge |
 |-| - |
 | Systèmes d'exploitation | [!INCLUDE[win7](../debugger/includes/win7_md.md)]<br /><br /> [!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)]<br /><br /> [!INCLUDE[win8](../debugger/includes/win8_md.md)]<br /><br /> Windows 10 |
 | Prise en charge des éditions 32 bits et 64 bits | Windows 32 bits exécutant [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] 32 bits permet de tester les applications 32 bits.<br /><br /> Windows 64 bits exécutant [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] 32 bits permet de tester les applications WOW 32 bits qui sont dotées de la fonctionnalité de synchronisation d’interface utilisateur.<br /><br /> Windows 64 bits exécutant [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] 32 bits permet de tester les applications Windows Forms et WPF 64 bits qui ne sont pas dotées de la fonctionnalité de synchronisation d’interface utilisateur. |
@@ -59,11 +59,11 @@ Les plateformes et configurations prises en charge pour les tests codés de l’
 | Windows Forms 2.0 et versions ultérieures | Entièrement pris en charge. **Remarque :** Les contrôles NetFx sont entièrement pris en charge. En revanche, certains contrôles tiers ne sont pas pris en charge. |
 | WPF 3.5 et versions ultérieures | Entièrement pris en charge.<br /><br /> **Remarque** Les contrôles NetFx sont entièrement pris en charge, mais tous les contrôles tiers ne sont pas pris en charge. |
 | Windows Win32 | Peut fonctionner en générant des problèmes connus, mais n’est pas officiellement pris en charge. |
-| MFC | Prise en charge partielle. Consultez [Infrastructure UITest](https://blogs.msdn.microsoft.com/vstsqualitytools/2010/04/15/uitest-framework-mfc-support-in-vs-2010/) pour plus d’informations sur les fonctionnalités prises en charge. |
+| MFC | Prise en charge partielle. Consultez [Infrastructure UITest](/archive/blogs/vstsqualitytools/uitest-framework-mfc-support-in-vs-2010) pour plus d’informations sur les fonctionnalités prises en charge. |
 | SharePoint | Entièrement pris en charge. |
 | Applications clientes Office | Non pris en charge. |
 | Client web Dynamics CRM | Entièrement pris en charge. |
-| Client Dynamics (Ax) 2012 | L’enregistrement et la lecture des actions sont partiellement pris en charge. Pour plus d’informations, consultez [Interface utilisateur codée Visual Studio 10/Prise en charge de l’enregistrement pour Microsoft Dynamics](https://blogs.msdn.microsoft.com/dave_froslie/2011/09/01/visual-studio-10-coded-ui-action-recordings-support-for-microsoft-dynamics-ax-2012/). |
+| Client Dynamics (Ax) 2012 | L’enregistrement et la lecture des actions sont partiellement pris en charge. Pour plus d’informations, consultez [Interface utilisateur codée Visual Studio 10/Prise en charge de l’enregistrement pour Microsoft Dynamics](/archive/blogs/dave_froslie/visual-studio-10-coded-ui-action-recordings-support-for-microsoft-dynamics-ax-2012). |
 | SAP | Non pris en charge. |
 | Citrix/Services Terminal Server | Nous vous déconseillons d’enregistrer des actions sur un serveur Terminal Server. L’enregistreur ne prend pas en charge l’exécution simultanée de plusieurs instances. |
 | PowerBuilder | Prise en charge partielle.<br /><br /> La prise en charge de l’accessibilité étendue est activée pour les contrôles PowerBuilder. |

@@ -21,7 +21,7 @@ ms.locfileid: "90037645"
 
 Le [.NET Compiler Platform](https://github.com/dotnet/roslyn) (« Roslyn ») vous aide à générer des bibliothèques prenant en charge le code. Une bibliothèque de prise en charge du code fournit des fonctionnalités que vous pouvez utiliser et outils (analyseurs Roslyn) pour vous aider à utiliser la bibliothèque de la manière la plus appropriée ou pour éviter les erreurs. Cette rubrique vous montre comment créer un analyseur Roslyn réel pour intercepter les erreurs courantes lors de l’utilisation du package NuGet [System. Collections. immuable](https://www.nuget.org/packages/System.Collections.Immutable) . L’exemple montre également comment fournir un correctif de code pour un problème de code trouvé par l’analyseur. Les utilisateurs voient les corrections de code dans l’interface utilisateur de l’ampoule Visual Studio et peuvent appliquer automatiquement un correctif pour le code.
 
-## <a name="get-started"></a>Bien démarrer
+## <a name="get-started"></a>Prise en main
 
 Pour générer cet exemple, vous avez besoin des éléments suivants :
 

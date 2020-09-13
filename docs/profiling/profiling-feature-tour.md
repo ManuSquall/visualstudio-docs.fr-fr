@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e890a3d595b98276883c7e75547bb7edb338ca55
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 268273b39db83a831a65805a8cc1cafc28a103ec
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87507987"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036923"
 ---
 # <a name="first-look-at-profiling-tools"></a>Découvrir les outils de profilage
 
@@ -147,7 +147,7 @@ Dans vos applications UWP, vous pouvez activer l’analyse de l' **interface uti
 
 ## <a name="analyze-gpu-usage-direct3d"></a>Analyser l’utilisation du GPU (Direct3D)
 
-Dans les applications Direct3D (les composants Direct3D doivent être en C++), vous pouvez examiner l’activité sur le GPU et analyser les problèmes de performances. Pour plus d’informations, consultez [Utilisation du GPU](/visualstudio/debugger/graphics/gpu-usage). Pour utiliser l’outil, choisissez **Utilisation du GPU** dans le profileur de performances, puis choisissez **Démarrer**. Dans votre application, effectuez le scénario à profiler, puis choisissez **Arrêter la collecte** pour générer un rapport.
+Dans les applications Direct3D (les composants Direct3D doivent être en C++), vous pouvez examiner l’activité sur le GPU et analyser les problèmes de performances. Pour plus d’informations, consultez [Utilisation du GPU](./gpu-usage.md). Pour utiliser l’outil, choisissez **Utilisation du GPU** dans le profileur de performances, puis choisissez **Démarrer**. Dans votre application, effectuez le scénario à profiler, puis choisissez **Arrêter la collecte** pour générer un rapport.
 
 Quand vous sélectionnez une période de temps dans les graphiques et que vous choisissez **Afficher les détails**, une vue détaillée s’affiche dans le volet inférieur. Dans la vue détaillée, vous pouvez consulter le volume d’activité qui se produit sur chaque UC et GPU. Sélectionnez les événements dans le volet inférieur pour afficher des fenêtres contextuelles dans la chronologie. Par exemple, sélectionnez l’événement **Présent** pour afficher les fenêtres contextuelles des appels **Présent**. (Vous pouvez utiliser les lignes Vsync verticales gris clair pour déterminer si certains appels **Présent** ont manqué le Vsync. Il doit y avoir un appel **Présent** entre chaque paire de Vsyncs pour que l’application atteigne régulièrement 60 i/s.)
 
@@ -206,12 +206,12 @@ Voici un tableau qui recense les différents outils proposés par Visual Studio,
 |[Utilisation du processeur](../profiling/cpu-usage.md)|Oui|Oui|Oui|
 |[Utilisation de la mémoire](../profiling/memory-usage.md)|Oui|Oui|Oui|
 |[Allocation d’objets .NET](../profiling/dotnet-alloc-tool.md)|Oui (.NET uniquement)|Oui|Oui|
-|[Utilisation du GPU](/visualstudio/debugger/graphics/gpu-usage)|Oui|Oui|Non|
-|[Chronologie de l'application](../profiling/application-timeline.md)|Oui|Oui|Non|
+|[Utilisation du GPU](./gpu-usage.md)|Oui|Oui|non|
+|[Chronologie de l'application](../profiling/application-timeline.md)|Oui|Oui|non|
 |[Observateur d’événements](../profiling/events-viewer.md)|Oui|Oui|Oui|
 |[.NET Async](../profiling/analyze-async.md)|Oui (.NET uniquement)|Oui|Oui|
-|[Base de données](../profiling/analyze-database.md)|Oui (.NET Core uniquement)|Non|Oui (ASP.NET Core uniquement)|
-|[Explorateur de performances](../profiling/performance-explorer.md)|Non|Non|Non|
+|[Sauvegarde de la base de données](../profiling/analyze-database.md)|Oui (.NET Core uniquement)|non|Oui (ASP.NET Core uniquement)|
+|[Explorateur de performances](../profiling/performance-explorer.md)|non|non|non|
 |[IntelliTrace](../debugger/intellitrace.md)|.NET avec Visual Studio Enterprise uniquement|.NET avec Visual Studio Enterprise uniquement|.NET avec Visual Studio Enterprise uniquement|
 ::: moniker-end
 
@@ -220,14 +220,14 @@ Voici un tableau qui recense les différents outils proposés par Visual Studio,
 |----------------------|---------------------|-------------|-------------|
 |[Utilisation du processeur](../profiling/cpu-usage.md)|Oui|Oui|Oui|
 |[Utilisation de la mémoire](../profiling/memory-usage.md)|Oui|Oui|Oui|
-|[Utilisation du GPU](/visualstudio/debugger/graphics/gpu-usage)|Oui|Oui|Non|
-|[Chronologie de l'application](../profiling/application-timeline.md)|Oui|Oui|Non|
+|[Utilisation du GPU](./gpu-usage.md)|Oui|Oui|non|
+|[Chronologie de l'application](../profiling/application-timeline.md)|Oui|Oui|non|
 |[Conseils sur les performances](../profiling/perftips.md)|Oui|oui pour XAML, non pour HTML|Oui|
-|[Explorateur de performances](../profiling/performance-explorer.md)|Oui|Non|Oui|
+|[Explorateur de performances](../profiling/performance-explorer.md)|Oui|non|Oui|
 |[IntelliTrace](../debugger/intellitrace.md)|.NET avec Visual Studio Enterprise uniquement|.NET avec Visual Studio Enterprise uniquement|.NET avec Visual Studio Enterprise uniquement|
-|[Utilisation du réseau](../profiling/network-usage.md)|Non|Oui|Non|
-|[Réactivité de l’interface utilisateur HTML](../profiling/html-ui-responsiveness.md)|Non|oui pour HTML, non pour XAML|Non|
-|[Mémoire JavaScript](../profiling/javascript-memory.md)|Non|oui pour HTML, non pour XAML|Non|
+|[Utilisation du réseau](../profiling/network-usage.md)|non|Oui|non|
+|[Réactivité de l’interface utilisateur HTML](../profiling/html-ui-responsiveness.md)|non|oui pour HTML, non pour XAML|non|
+|[Mémoire JavaScript](../profiling/javascript-memory.md)|non|oui pour HTML, non pour XAML|non|
 ::: moniker-end
 
 

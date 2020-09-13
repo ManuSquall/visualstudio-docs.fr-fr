@@ -10,21 +10,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da13cb2b249146c7a29abbab03b66f77594abf4b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 800059dc8d5a3e6ccfb72c588fbb61423a338cba
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285402"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036390"
 ---
-# <a name="deploy-an-app-to-a-local-folder-using-visual-studio"></a>Déployer une application dans un dossier local à l’aide de Visual Studio
+# <a name="deploy-an-app-to-a-folder-using-visual-studio"></a>Déployer une application dans un dossier à l’aide de Visual Studio
 
-Vous pouvez utiliser l’outil **Publier** pour publier des applications ASP.NET, ASP.NET Core, .NET Core et Python dans un dossier local à partir de Visual Studio. Pour Node.js, les étapes sont prises en charge, mais l’interface utilisateur est différente.
+Vous pouvez utiliser l’outil de **publication** pour publier des applications ASP.NET, ASP.net Core, .net Core et Python dans un dossier à partir de Visual Studio. Pour Node.js, les étapes sont prises en charge, mais l’interface utilisateur est différente.
 
 [!INCLUDE [quickstart-prereqs](includes/quickstart-prereqs.md)]
 
 > [!NOTE]
-> Si vous devez publier une application de poste de travail Windows sur un dossier local, consultez [Déployer une application de poste de travail avec ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# ou Visual Basic). Pour C++/ CLR, consultez [Déployer une application native avec ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) ou, pour C/C++, consultez [Déployer une application native avec un projet d’installation](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+> Si vous devez publier une application de bureau Windows dans un dossier, consultez [déployer une application de bureau à l’aide de ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# ou Visual Basic). Pour C++/ CLR, consultez [Déployer une application native avec ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) ou, pour C/C++, consultez [Déployer une application native avec un projet d’installation](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="deploy-to-a-local-folder"></a>Déployer sur un dossier local
 
@@ -32,7 +32,9 @@ Vous pouvez utiliser l’outil **Publier** pour publier des applications ASP.NET
 
     ![Commande publier dans le menu contextuel du projet dans Explorateur de solutions](../deployment/media/quickstart-publish.png "Choisir Publier")
 
-1. Dans la boîte de dialogue **publier** , sélectionnez **dossier**.
+1. Si vous avez déjà configuré des profils de publication, la fenêtre **publier** s’affiche. Sélectionnez **Nouveau**.
+
+1. Dans la fenêtre **publier** , sélectionnez **dossier**.
 
     ![Choisir un dossier en tant que cible de publication](../deployment/media/quickstart-publish-folder-new.png "Choisir un dossier")
 
@@ -46,7 +48,15 @@ Vous pouvez utiliser l’outil **Publier** pour publier des applications ASP.NET
 
 1. Pour configurer les paramètres de déploiement, sélectionnez **modifier** dans le résumé du profil de publication et sélectionnez l’onglet **paramètres** .
 
-    ![Paramètres de profil](../deployment/media/quickstart-profile-settings.png "Paramètres de profil")
+   Les paramètres que vous voyez dépendent du type de votre application. L’illustration suivante montre des exemples de paramètres pour une application ASP.NET Core.
+
+    ![Paramètres du profil](../deployment/media/quickstart-profile-settings.png "Paramètres du profil")
+
+    Pour obtenir une aide supplémentaire pour choisir des paramètres dans .NET, consultez les rubriques suivantes :
+
+    - [Déploiement dépendant du Framework et déploiement autonome](/dotnet/core/deploying/)
+    - [Identificateurs du runtime cible (RID portable, et al)](/dotnet/core/rid-catalog)
+    - [Configurations Debug et Release](../ide/understanding-build-configurations.md)
 
 1. Configurez les options qui permettent de définir s’il faut déployer une configuration Debug ou Release, puis sélectionnez **Enregistrer**.
 
@@ -56,6 +66,8 @@ Déployez les fichiers publiés de la façon qui vous convient. Par exemple, vou
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-- [Déployer une application .NET Core avec l’outil de publication](/dotnet/core/deploying/deploy-with-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
-- [Empaqueter une application de bureau pour Microsoft Store (pont de bureau)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
-- (.NET) [Déployer le .NET Framework et des applications](/dotnet/framework/deployment/)
+Pour les applications .NET :
+
+- [Déployer une application .NET Core avec l’outil de publication](/dotnet/core/deploying/deploy-with-vs)
+- [Publication d’applications .NET Core (déploiements dépendants du Framework et déploiements autonomes)](/dotnet/core/deploying/)
+- [Déployer les applications .NET Framework et](/dotnet/framework/deployment/)

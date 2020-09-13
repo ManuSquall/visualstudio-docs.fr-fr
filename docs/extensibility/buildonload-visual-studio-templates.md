@@ -1,6 +1,7 @@
 ---
 title: Attribut et élément BuildOnLoad (modèles Visual Studio)
 titleSuffix: ''
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 077724bf7038a3ca7010de730993b0f290a66ca4
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 5f411f918352391387e5c3b34eafeb209df3118b
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89739145"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "90036858"
 ---
 # <a name="buildonload-attribute-and-element"></a>Élément et attribut BuildOnLoad
 
@@ -50,7 +51,7 @@ Hiérarchie d’éléments :
 
 Une valeur de texte est requise pour l’élément **BuildOnLoad** . Le texte doit être `true` ou `false` , indiquant s’il faut générer le projet immédiatement après sa création.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 **BuildOnLoad** est un attribut facultatif. La valeur par défaut est `false`.
 
