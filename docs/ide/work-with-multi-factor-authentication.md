@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 914acae2f5fbb9bd3f47669eea699935fcfa5e4d
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: ebacdd78cbb72bbd1cb90a0b5c719d0c753a95ca
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038385"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90093344"
 ---
 # <a name="how-to-use-visual-studio-with-accounts-that-require-multi-factor-authentication"></a>Comment utiliser Visual Studio avec des comptes qui requièrent l’authentification multifacteur
 
@@ -50,10 +50,11 @@ Une fois le flux de travail du navigateur Web système activé, vous pouvez vous
 
 Cette action ouvre le navigateur Web par défaut de votre système, vous demande de vous connecter à votre compte et de valider toute stratégie d’authentification MFA requise.
 
-En fonction de vos activités de développement et de la configuration des ressources, vous pouvez être invité à entrer à nouveau vos informations d’identification au cours de votre session. Cela peut se produire lorsque vous ajoutez une nouvelle ressource ou essayez d’accéder à une ressource sans avoir préalablement rempli ses exigences d’autorisation d’autorité de certification/authentification MFA.
+Pendant le processus de connexion, vous pouvez recevoir une invite supplémentaire vous invitant à rester connecté. Cette invite s’affichera probablement la deuxième fois qu’un compte sera utilisé pour se connecter. Pour éviter de devoir entrer à nouveau vos informations d’identification, nous vous recommandons de sélectionner **Oui**, car cela garantit que vos informations d’identification sont conservées entre les sessions de navigateur.
 
-> [!NOTE] 
-> Pour une expérience optimale, gardez votre navigateur ouvert jusqu’à ce que toutes les stratégies d’autorité de certification/MFA soient validées pour vos ressources. La fermeture du navigateur peut entraîner la perte de l’État MFA précédemment créé et peut demander des invites d’autorisation supplémentaires.
+:::image type="content" source="media/kmsi.png" alt-text="Rester connecté ?":::
+
+En fonction de vos activités de développement et de la configuration des ressources, vous pouvez toujours être invité à entrer à nouveau vos informations d’identification pendant votre session. Cela peut se produire lorsque vous ajoutez une nouvelle ressource ou essayez d’accéder à une ressource sans avoir préalablement rempli ses exigences d’autorisation d’autorité de certification/authentification MFA.
 
 ## <a name="reauthenticating-an-account"></a>Réauthentification d’un compte  
 En cas de problème avec votre compte, Visual Studio peut vous demander de saisir à nouveau vos informations d’identification de compte.  
