@@ -7,16 +7,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6aa4cce032a5eb80a11568a83c1166b5690bd688
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a738490933c6f2d1cdf89e7e974a268540af991
+ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85279876"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90074967"
 ---
 # <a name="gpu-usage"></a>Utilisation du GPU
 
-Utilisez l’outil utilisation du GPU dans le Hub performances et diagnostics de Visual Studio pour mieux comprendre l’utilisation du matériel de haut niveau de votre application Direct3D. Elle vous permet de déterminer si les performances de votre application sont liées à l’UC ou au GPU, et d’obtenir des informations sur la façon dont vous pouvez utiliser le matériel de la plateforme de manière plus efficace. L’utilisation du GPU prend en charge les applications qui utilisent Direct3D 12, Direct3D 11 et Direct3D 10. Elle ne prend pas en charge les autres API graphiques, telles que Direct2D ou OpenGL.
+Utilisez l’outil utilisation du GPU dans le profileur de performances pour mieux comprendre l’utilisation du matériel de haut niveau de votre application Direct3D. Elle vous permet de déterminer si les performances de votre application sont liées à l’UC ou au GPU, et d’obtenir des informations sur la façon dont vous pouvez utiliser le matériel de la plateforme de manière plus efficace. L’utilisation du GPU prend en charge les applications qui utilisent Direct3D 12, Direct3D 11 et Direct3D 10. Elle ne prend pas en charge les autres API graphiques, telles que Direct2D ou OpenGL.
 
 Voici à quoi ressemble la fenêtre **rapport d’utilisation du GPU** :
 
@@ -43,7 +43,7 @@ Pour démarrer l'outil Utilisation du GPU :
 
 2. Dans le Hub **performances et diagnostics** , activez la case à cocher en regard de **utilisation du GPU**. Vous pouvez éventuellement cocher les cases en regard des autres outils qui vous intéressent. Vous pouvez exécuter simultanément plusieurs outils de diagnostic et de performances pour obtenir une image plus complète des performances de votre application.
 
-    ![Capture d’écran du Hub performances et diagnostics, avec l’option utilisation du GPU sélectionnée](media/gpuusageselected.png "Utilisation du GPU sélectionnée")
+    ![Capture d’écran du profileur de performances, avec l’utilisation de GPU sélectionnée](media/gpuusageselected.png "Utilisation du GPU sélectionnée")
 
    > [!NOTE]
    > Les outils de performances et de diagnostics ne peuvent pas tous être utilisés en même temps.
@@ -108,7 +108,7 @@ La liste des événements dans la partie inférieure du rapport utilisation du G
 
 |Colonne|Description|
 |------------|-----------------|
-|**Nom de l'événement**|Nom de l'événement graphique. Un événement correspond généralement à un événement dans une chronologie de threads de l’UC et à un événement d’une chronologie du GPU. Les noms d’événements peuvent être *désattributés* si l’utilisation du GPU ne peut pas déterminer le nom d’un événement. Pour plus d’informations, consultez la remarque qui suit ce tableau.|
+|**Nom de l’événement**|Nom de l'événement graphique. Un événement correspond généralement à un événement dans une chronologie de threads de l’UC et à un événement d’une chronologie du GPU. Les noms d’événements peuvent être *désattributés* si l’utilisation du GPU ne peut pas déterminer le nom d’un événement. Pour plus d’informations, consultez la remarque qui suit ce tableau.|
 |**Début UC (ns)**|Heure à laquelle l'événement a débuté sur l'UC en appelant une API Direct3D. Le temps est mesuré en nanosecondes, par rapport au moment où l'application a démarré.|
 |**Début GPU (ns)**|Heure à laquelle l'événement a débuté sur le GPU. Le temps est mesuré en nanosecondes, par rapport au moment où l'application a démarré.|
 |**Durée GPU (ns)**|Durée, en nanosecondes, nécessaire pour terminer l’événement sur le GPU.|

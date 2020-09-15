@@ -9,35 +9,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc0d97b1e2b2e27ebc8ddb898795c1767155c1cb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3e1e6951aebac63494aada4e64c5c072eb79c6a9
+ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80256190"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90074980"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Mesurer l’utilisation de la mémoire dans Visual Studio
 
-Recherchez les fuites de mémoire et les utilisations inefficaces de la mémoire durant le débogage avec l’outil de diagnostic **Utilisation de la mémoire** intégré au débogueur. L’outil Utilisation de la mémoire vous permet de prendre un ou plusieurs *instantanés* du tas de mémoire managée et native afin de mieux comprendre l’impact de l’utilisation de la mémoire des types d’objets. Vous pouvez collecter des instantanés d’applications .NET, natives ou en mode mixte (.NET et native).
-
-L’illustration suivante montre la fenêtre **Outils de diagnostic** (disponible dans Visual Studio 2015 Update 1 et ultérieur) :
-
-![Outils&#45;Update 1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")
+Recherchez les fuites de mémoire et les utilisations inefficaces de la mémoire durant le débogage avec l’outil de diagnostic **Utilisation de la mémoire** intégré au débogueur. L’outil Utilisation de la mémoire vous permet de prendre un ou plusieurs *instantanés* du tas de mémoire managée et native afin de mieux comprendre l’impact de l’utilisation de la mémoire des types d’objets. Vous pouvez également analyser l’utilisation de la mémoire sans débogueur attaché ou en ciblant une application en cours d’exécution. Pour plus d’informations, consultez [exécuter les outils de profilage avec ou sans le débogueur](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
 Bien que vous puissiez collecter des instantanés de la mémoire à tout moment dans l’outil **Utilisation de la mémoire** , vous pouvez utiliser le débogueur Visual Studio pour contrôler la façon dont votre application s’exécute lors de l’examen des problèmes de performances. La définition de points d’arrêt, l’exécution pas à pas, Interrompre tout et d’autres actions du débogueur peuvent vous aider à concentrer vos investigations en matière de performances sur les chemins du code qui sont les plus pertinents. Le fait d’effectuer ces actions pendant l’exécution de votre application peut éliminer le bruit du code qui ne vous intéresse pas et réduire considérablement le temps nécessaire pour diagnostiquer un problème.
 
-Vous pouvez également utiliser l’outil Utilisation de la mémoire en dehors du débogueur. Consultez [utilisation de la mémoire sans débogage](../profiling/memory-usage-without-debugging2.md). Vous pouvez utiliser les Outils de profilage sans débogueur attaché avec Windows 7 et les versions ultérieures. Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Outils de profilage avec le débogueur (fenêtre **Outils de diagnostic**).
-
-> [!NOTE]
-> **Prise en charge de l’allocateur personnalisé** Le profileur de mémoire Native fonctionne en collectant des données d’événement [ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) d’allocation émises au moment de l’exécution.  Les allocateurs dans le CRT et le Kit de développement logiciel (SDK) Windows ont été annotés au niveau de la source afin que leurs données d’allocation puissent être capturées. Si vous écrivez vos propres allocateurs, toutes les fonctions qui retournent un pointeur vers la mémoire du tas nouvellement allouée peuvent être décorées avec [__declspec](/cpp/cpp/declspec)(allocator), comme l’illustre cet exemple pour myMalloc :
->
-> `__declspec(allocator) void* myMalloc(size_t size)`
+> [!Important]
+> Les outils de diagnostic intégrés au débogueur sont pris en charge pour le développement .NET dans Visual Studio, notamment ASP.NET, les ASP.NET Core, le développement natif/C++ et les applications en mode mixte (.NET et natif). Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Outils de profilage avec le débogueur (fenêtre **Outils de diagnostic**).
 
 Ce didacticiel présente les procédures suivantes :
 
 > [!div class="checklist"]
 > * Réaliser des instantanés de la mémoire
 > * Analyser l’utilisation de la mémoire
+
+Si l’utilisation de la **mémoire** ne vous donne pas les données dont vous avez besoin, les autres outils de profilage du [profileur de performances](../profiling/profiling-feature-tour.md#post_mortem) fournissent différents genres d’informations qui peuvent vous être utiles. Dans de nombreux cas, le goulot d’étranglement des performances de votre application peut être causé par un autre type de mémoire, par exemple le processeur, l’interface utilisateur de rendu ou le temps de demande réseau.
+
+> [!NOTE]
+> **Prise en charge de l’allocateur personnalisé** Le profileur de mémoire Native fonctionne en collectant des données d’événement [ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) d’allocation émises au moment de l’exécution.  Les allocateurs dans le CRT et le Kit de développement logiciel (SDK) Windows ont été annotés au niveau de la source afin que leurs données d’allocation puissent être capturées. Si vous écrivez vos propres allocateurs, toutes les fonctions qui retournent un pointeur vers la mémoire du tas nouvellement allouée peuvent être décorées avec [__declspec](/cpp/cpp/declspec)(allocator), comme l’illustre cet exemple pour myMalloc :
+>
+> `__declspec(allocator) void* myMalloc(size_t size)`
 
 ## <a name="collect-memory-usage-data"></a>Collecter les données d’utilisation de la mémoire
 

@@ -9,12 +9,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 81c15753b083256b97c9f67219b64565a8db8736
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 563531b6dfbf59e33b63dcb4561612d86cd39acc
+ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88247799"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90075416"
 ---
 # <a name="analyze-memory-usage-by-using-the-net-object-allocation-tool"></a>Analyser l’utilisation de la mémoire à l’aide de l’outil d’allocation d’objets .NET
 
@@ -22,7 +22,7 @@ Vous pouvez voir la quantité de mémoire utilisée par votre application et les
 
 Après avoir exécuté l’outil, vous pouvez voir les chemins d’exécution des fonctions où les objets sont alloués. Vous pouvez ensuite effectuer le suivi jusqu’à la racine de l’arborescence des appels qui occupe la plus grande partie de la mémoire.
 
-## <a name="setup"></a>Installation
+## <a name="setup"></a>Programme d’installation
 
 1. Appuyez sur **ALT + F2** pour ouvrir le profileur de performances dans Visual Studio.
 

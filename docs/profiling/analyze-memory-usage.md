@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c3a072408fd8f166475919d988766fb42fa7c54
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f77fa9087673ff8e9a429caa27318a60f21d4a60
+ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285944"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90075442"
 ---
 # <a name="analyze-memory-usage"></a>Analyser l’utilisation de la mémoire
 
@@ -35,6 +35,6 @@ Vous pouvez utiliser les Outils de profilage sans débogueur avec Windows 7 et 
 
 ## <a name="see-also"></a>Voir aussi
 
+- [Analyser l’utilisation de la mémoire sans débogage](../profiling/memory-usage-without-debugging2.md)
 - [Profilage dans Visual Studio](../profiling/index.yml)
 - [Découvrir les outils de profilage](../profiling/profiling-feature-tour.md)
-- [Analyser l’utilisation de la mémoire sans débogage](../profiling/memory-usage-without-debugging2.md)

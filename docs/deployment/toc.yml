@@ -14,7 +14,7 @@
       href: quickstart-deploy-to-linux.md
     - name: Déployer sur un site web
       href: quickstart-deploy-to-a-web-site.md
-    - name: Déployer sur un dossier local
+    - name: Déployer sur un dossier
       href: quickstart-deploy-to-local-folder.md
 - name: Tutoriels
   items:

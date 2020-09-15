@@ -8,30 +8,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 147a7dbc029ae894a0054837e92feb0108dc19b4
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 7db7e704eab7f5d00b20051811c503b143608e2f
+ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561586"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90074954"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Exécuter des outils de profilage avec ou sans le débogueur
 
-Visual Studio propose un choix d’outils de mesure et de profilage des performances. Certains outils, tels que l’utilisation de l’UC et l’utilisation de la mémoire, peuvent s’exécuter avec ou sans le débogueur, ainsi que pour les configurations de build de mise en version ou de débogage. Les outils qui s’affichent dans la [fenêtre outils de diagnostic](../profiling/profiling-feature-tour.md#view-performance-while-debugging) s’exécutent uniquement pendant une session de débogage. Les outils qui s’affichent dans le [profileur de performances](../profiling/profiling-feature-tour.md#post_mortem) s’exécutent sans le débogueur et vous analysez les résultats une fois que vous avez choisi d’arrêter et de collecter des données (pour l’analyse après mortem).
+Visual Studio propose un choix d’outils de mesure et de profilage des performances. Certains outils, tels que l’utilisation de l’UC et l’utilisation de la mémoire, peuvent s’exécuter avec ou sans le débogueur, ainsi que pour les configurations de build de mise en version ou de débogage. Les outils qui s’affichent dans la [fenêtre outils de diagnostic](../profiling/profiling-feature-tour.md#measure-performance-while-debugging) s’exécutent uniquement pendant une session de débogage. Les outils qui s’affichent dans le [profileur de performances](../profiling/profiling-feature-tour.md#post_mortem) s’exécutent sans le débogueur et vous analysez les résultats une fois que vous avez choisi d’arrêter et de collecter des données (pour l’analyse après mortem).
 
 >[!NOTE]
 >Vous pouvez utiliser les outils de performances non intégrés au débogueur avec Windows 7 et ultérieur. Windows 8 ou ultérieur est nécessaire pour exécuter les outils de profilage intégrés au débogueur.
 
-Le Profileur de performances non intégré au débogueur et les Outils de diagnostic intégrés au débogueur fournissent des informations et des expériences différentes. Les outils intégrés au débogueur montrent les points d’arrêt et les valeurs des variables. Les outils non intégrés au débogueur offrent des résultats plus proches de l’expérience des utilisateurs finaux.
+Le Profileur de performances non intégré au débogueur et les Outils de diagnostic intégrés au débogueur fournissent des informations et des expériences différentes. Les outils intégrés au débogueur affichent des valeurs de variables et vous permettent d’utiliser des points d’arrêt. Les outils non intégrés au débogueur offrent des résultats plus proches de l’expérience des utilisateurs finaux.
 
 Pour déterminer les outils et les résultats à utiliser, prenez en compte les éléments suivants :
 
-- Les problèmes de performances externes, comme les problèmes de réactivité du réseau ou d’E/S de fichier, se ressembleront dans tous les outils, qu’ils soient intégrés ou non au débogueur.
-- Pour les problèmes provoqués par les appels nécessitant une utilisation intensive du processeur, il peut y avoir des différences de performances considérables entre les versions release et Debug. Vérifiez si le problème existe dans les versions release.
-- Si le problème se produit uniquement pendant les versions de débogage, vous n’avez probablement pas besoin d’exécuter les outils de non-débogage. Pour les problèmes de version Release, déterminez si les outils du débogueur vous aideront à approfondir l’investigation.
-- Les builds Release fournissent certaines optimisations comme l’incorporation des constantes et des appels de fonction, le nettoyage des chemins de code inutilisés ou encore des modes de stockage de variables inutilisables par le débogueur. Les nombres de performances dans les outils intégrés au débogueur sont moins précis, car les versions de débogage n’ont pas ces optimisations.
-- Le débogueur lui-même modifie les performances, car il effectue des opérations de débogueur telles que l’interception des événements d’exception et de chargement de module.
-- Les valeurs de performances des builds Release fournies dans les outils du Profileur de performances sont plus précises. Les résultats fournis par les outils intégrés au débogueur sont plus utiles en comparaison avec d’autres mesures liées au débogage.
+- Outil intégré au débogueur et outil non débogueur
+  - Les problèmes de performances externes, comme les problèmes de réactivité du réseau ou d’E/S de fichier, se ressembleront dans tous les outils, qu’ils soient intégrés ou non au débogueur.
+  - Le débogueur lui-même modifie les performances, car il effectue des opérations de débogueur telles que l’interception des événements d’exception et de chargement de module.
+  - Les valeurs de performances des builds Release fournies dans les outils du Profileur de performances sont plus précises. Les résultats d’outils intégrés au débogueur sont plus utiles pour la comparaison avec d’autres mesures liées au débogage, ou pour l’utilisation des fonctionnalités du débogueur.
+- Débogage et version Release
+  - Pour les problèmes provoqués par les appels nécessitant une utilisation intensive du processeur, il peut y avoir des différences de performances considérables entre les versions release et Debug. Vérifiez si le problème existe dans les versions release.
+  - Si le problème se produit uniquement pendant les versions de débogage, vous n’avez probablement pas besoin d’exécuter les outils de non-débogage. Pour les problèmes de version Release, déterminez si les fonctionnalités fournies par les outils intégrés au débogueur vous aideront à identifier le problème.
+  - Les builds Release fournissent certaines optimisations comme l’incorporation des constantes et des appels de fonction, le nettoyage des chemins de code inutilisés ou encore des modes de stockage de variables inutilisables par le débogueur. Les nombres de performances dans les versions Debug sont moins précis, car les versions Debug ne disposent pas de ces optimisations.
 
 ## <a name="collect-profiling-data-while-debugging"></a><a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Collecter les données de profilage pendant le débogage
 
@@ -82,7 +84,7 @@ Pour recueillir des données de performances sans débogage, vous pouvez exécut
 
    Pendant l’exécution de la session, certains outils affichent des graphiques de données en temps réel sur la page outils de diagnostic, ainsi que des contrôles pour suspendre et reprendre la collecte des données.
 
-    ![Capture d’écran de la collecte de données sur le Hub performances et diagnostics](../profiling/media/diaghubcollectdata.png "Collecte de données par le Hub")
+    ![Capture d’écran de la collecte de données sur le profileur de performances](../profiling/media/diaghubcollectdata.png "Collecte de données par le Hub")
 
 1. Pour terminer la session de diagnostic, sélectionnez **Arrêter la collecte**.
 

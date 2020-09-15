@@ -17,33 +17,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3a7c5eb8aa489da9ced0803e0f83855734825ff
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: caac02510d2fce95fa67340d2061341ed77ac13e
+ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537369"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90075429"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>Mesurer les performances d’application en analysant l’utilisation de l’UC
 
-Vous pouvez utiliser les outils de profilage de Visual Studio pour analyser les problèmes de performances dans votre application. Cet article explique comment utiliser l’onglet utilisation de l' **UC** des outils de diagnostic pour obtenir des données de performances pour votre application.
+Recherchez des problèmes de performances pendant le débogage avec l’outil de diagnostic utilisation de l' **UC** intégré au débogueur.  Vous pouvez également analyser l’utilisation de l’UC sans débogueur ou en ciblant une application en cours d’exécution. Pour plus d’informations, consultez [exécuter les outils de profilage avec ou sans le débogueur](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
-Quand le débogueur est suspendu, l’outil **Utilisation de l’UC** collecte les informations relatives aux fonctions qui s’exécutent dans votre application. L’outil répertorie les fonctions qui ont effectué un travail et fournit un graphique chronologique que vous pouvez utiliser pour examiner des segments spécifiques d’une session d’échantillonnage.
-
-Le hub de diagnostic propose de nombreuses autres options pour exécuter et gérer votre session de diagnostic. Si l’outil **Utilisation de l’UC** ne vous fournit pas les données dont vous avez besoin, les [autres outils de profilage](../profiling/profiling-feature-tour.md) fournissent des types d’informations différents qui peuvent vous être utiles. Dans de nombreux cas, le goulot d’étranglement des performances de votre application peut ne pas provenir de votre processeur, mais de la mémoire, de l’interface utilisateur de rendu ou du temps de requête réseau. Le hub de diagnostic vous offre de nombreuses autres options pour enregistrer et analyser ce type de données.
+Quand le débogueur est suspendu, l’outil utilisation de l' **UC** de la fenêtre outils de diagnostic collecte des informations sur les fonctions qui s’exécutent dans votre application. L’outil répertorie les fonctions qui ont effectué un travail et fournit un graphique chronologique que vous pouvez utiliser pour examiner des segments spécifiques d’une session d’échantillonnage.
 
 > [!Important]
-> Les outils de diagnostics sont pris en charge pour le développement .NET dans Visual Studio (y compris ASP.NET) et pour le développement natif/C++.
-
-Dans cet article, nous allons décrire l’analyse de l’utilisation de l’UC dans un flux de travail de débogage normal. Vous pouvez également analyser l’utilisation de l’UC sans débogueur ou en ciblant une application en cours d’exécution. Pour plus d’informations, consultez [exécuter les outils de profilage avec ou sans le débogueur](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Vous pouvez également utiliser un autre outil de profilage, [PerfTips](../profiling/perftips.md), pour effectuer un pas à pas détaillé dans le code et identifier le temps nécessaire à l’exécution de fonctions ou de blocs de code particuliers.
-
-Vous pouvez utiliser les Outils de profilage sans débogueur avec Windows 7 et les versions ultérieures. Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Outils de profilage avec le débogueur (fenêtre **Outils de diagnostic**).
+> Les outils de diagnostic intégrés au débogueur sont pris en charge pour le développement .NET dans Visual Studio, y compris ASP.NET, ASP.NET Core et pour le développement natif/C++. Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Outils de profilage avec le débogueur (fenêtre **Outils de diagnostic**).
 
 Ce didacticiel présente les procédures suivantes :
 
 > [!div class="checklist"]
 > * Collecter les données d'utilisation de l'UC
 > * Analyser les données d’utilisation de l’UC
+
+Si l' **utilisation du processeur** ne vous donne pas les données dont vous avez besoin, les autres outils de profilage du [profileur de performances](../profiling/profiling-feature-tour.md#post_mortem) fournissent différents genres d’informations qui peuvent vous être utiles. Dans de nombreux cas, le goulot d’étranglement des performances de votre application peut ne pas provenir de votre processeur, mais de la mémoire, de l’interface utilisateur de rendu ou du temps de requête réseau.
 
 ## <a name="step-1-collect-profiling-data"></a>Étape 1 : Collecter les données de profilage
 

@@ -9,18 +9,18 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cba043d8300d47ae5ffba1c175a19fcfa2e65ed
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0be00f2333a2e732d9ba4472004c383b132c0bf2
+ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330336"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90075063"
 ---
 # <a name="events-viewer"></a>Observateur d’événements
 
 La visionneuse des événements génériques montre l’activité de l’application via une liste d’événements tels que le chargement du module, le démarrage du thread et la configuration du système. Cette vue vous aide à mieux diagnostiquer le fonctionnement de votre application dans le profileur Visual Studio.
 
-## <a name="setup"></a>Installation
+## <a name="setup"></a>Programme d’installation
 
 1. Appuyez sur **ALT + F2** pour ouvrir le profileur de performances dans Visual Studio.
 
