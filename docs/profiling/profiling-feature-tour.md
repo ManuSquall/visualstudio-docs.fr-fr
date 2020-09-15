@@ -1,5 +1,5 @@
 ---
-title: Mesurer les performances avec des outils de profilage
+title: Prise en main des outils de profilage
 description: Examinez brièvement les différents outils de diagnostic disponibles dans Visual Studio.
 ms.custom: ''
 ms.date: 09/08/2020
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ebc2a2e7c4b10d835a20abcdd8392fb1851596a
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: 28f382e8d20f3aa623ea241702e4795854e12f9a
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90074911"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90100772"
 ---
 # <a name="first-look-at-profiling-tools"></a>Découvrir les outils de profilage
 
@@ -57,7 +57,7 @@ Ouvrez le profileur de performances en choisissant **Déboguer**le  >  **profile
 
 ![Profileur de performances](../profiling/media/prof-tour-performance-profiler.png "Profileur de performances")
 
-Dans certains scénarios, la fenêtre vous permet de sélectionner [plusieurs outils de profilage](../profiling/use-multiple-profiler-tools-simultaneously.md). Les outils comme Utilisation de l’UC peuvent fournir des données complémentaires que vous pouvez utiliser dans votre analyse. Vous pouvez également utiliser le [profileur de ligne de commande](../profiling/profile-apps-from-command-line.md) pour activer des scénarios impliquant plusieurs outils de profilage.
+Pour plus d’informations sur l’utilisation de l’outil utilisation de l’UC ou utilisation de la mémoire dans le profileur de performances et les outils intégrés au débogueur, consultez [exécuter les outils de profilage avec ou sans le débogueur](../profiling/running-profiling-tools-with-or-without-the-debugger.md). 
 
 Les outils disponibles dans le profileur de performances sont les suivants :
 
@@ -70,7 +70,7 @@ Les outils disponibles dans le profileur de performances sont les suivants :
 
 Pour voir la prise en charge des outils de profilage pour différents types d’applications, consultez [quel outil dois-je utiliser ?](#which-tool-should-i-use)
 
-Pour plus d’informations sur l’utilisation de l’outil utilisation de l’UC ou utilisation de la mémoire dans le profileur de performances et les outils intégrés au débogueur, consultez [exécuter les outils de profilage avec ou sans le débogueur](../profiling/running-profiling-tools-with-or-without-the-debugger.md). 
+Dans certains scénarios, la fenêtre vous permet de sélectionner [plusieurs outils de profilage](../profiling/use-multiple-profiler-tools-simultaneously.md). Les outils comme Utilisation de l’UC peuvent fournir des données complémentaires que vous pouvez utiliser dans votre analyse. Vous pouvez également utiliser le [profileur de ligne de commande](../profiling/profile-apps-from-command-line.md) pour activer des scénarios impliquant plusieurs outils de profilage.
 
 ## <a name="examine-performance-using-perftips"></a>Examiner les performances à l’aide de PerfTips
 

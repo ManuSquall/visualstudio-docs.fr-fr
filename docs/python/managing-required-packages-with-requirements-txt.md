@@ -1,21 +1,21 @@
 ---
-title: Gérer les dépendances de package à l’aide d’un fichier requirements.txt
+title: Gérer les dépendances de package avec requirements.txt
 description: Fichier requirements.txt contenant les dépendances d’un projet. Si vous recevez un projet contenant un fichier requirements.txt, vous pouvez installer ces dépendances en toute simplicité, en une seule étape.
 ms.date: 03/18/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
-ms.custom: seodec18
+ms.custom: seodec18, SEO-VS-2020
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9179ca2b77e7a6d3ae5b5dffded06524114a0f8d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b65072e7a9ffa5d3767a5ff66fda25b231c622ef
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544116"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90100537"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>Gérer les packages requis avec requirements.txt
 

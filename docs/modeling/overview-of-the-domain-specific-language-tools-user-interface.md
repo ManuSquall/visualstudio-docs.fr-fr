@@ -1,5 +1,6 @@
 ---
-title: Vue d'ensemble de l'interface utilisateur des outils de langage spécifique à un domaine
+title: Vue d’ensemble de l’interface utilisateur Outils Domain-Specific Language
+description: Fournit une vue d’ensemble de l’interface utilisateur d’une solution d’outils de langage spécifique à un domaine dans Visual Studio.
 ms.date: 11/04/2016
 ms.topic: overview
 f1_keywords:
@@ -9,14 +10,15 @@ helpviewer_keywords:
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jillfra
+ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: af28ca94639b1c6a800c0c43e41d3ccabb74d9bb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 549726d16a5fc1129f8c773ef143267e4c9bc31e
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532403"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90100720"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Vue d'ensemble de l'interface utilisateur des outils de langage spécifique à un domaine
 Lorsque vous ouvrez pour la première fois une solution Outils Domain-Specific Language (outils DSL) dans Visual Studio, l’interface utilisateur doit ressembler à l’image suivante.
@@ -25,7 +27,7 @@ Lorsque vous ouvrez pour la première fois une solution Outils Domain-Specific L
 
  Le tableau suivant explique comment les parties de l’interface utilisateur sont utilisées.
 
-|**Element**|**Definition**|
+|**Element**|**Définition**|
 |-|-|
 |Diagramme|Le diagramme affiche le modèle de domaine.<br /><br /> Le diagramme comporte deux parties. Une partie définit les types des éléments de vos modèles. L’autre partie définit comment vos modèles apparaissent à l’écran.|
 |Boîte à outils|Faites glisser les outils de la boîte à outils vers le diagramme pour ajouter des classes de domaine et des types de forme. Pour ajouter des connecteurs, des relations et des mappages de formes, cliquez sur l’outil, sur le nœud source du diagramme, puis sur le nœud cible.|
@@ -39,7 +41,7 @@ Lorsque vous ouvrez pour la première fois une solution Outils Domain-Specific L
 
  Le tableau suivant décrit certains des éléments du diagramme du modèle de domaine.
 
-|**Terme**|**Definition**|
+|**Terme**|**Définition**|
 |-|-|
 |Classe de domaine|Les classes de domaine sont les types d’éléments de vos modèles.<br /><br /> Une classe de domaine peut apparaître plusieurs fois dans un diagramme, si elle est la cible de plusieurs relations.<br /><br /> Pour ajouter une classe de domaine, faites glisser l’outil de classe de domaine depuis la **Boîte à outils** vers la partie **Classes et relations** du diagramme.|
 |Relation de domaine|Les relations de domaine sont les types de liens entre les éléments de vos modèles.<br /><br /> Une *relation d’incorporation* indique que l’élément cible est détenu ou contenu par l’élément source et apparaît sous la forme d’une ligne pleine. Chaque élément d’un modèle doit être la cible d’une relation d’incorporation afin que le modèle forme une arborescence. Une *relation de référence* indique un lien général entre les éléments de modèle et apparaît sous la forme d’une ligne en pointillés. Les éléments peuvent avoir n’importe quel nombre de liens de référence.<br /><br /> Créez une relation en cliquant sur l’outil dans la **Boîte à outils**, sur la classe de domaine source, puis sur la classe cible.|
