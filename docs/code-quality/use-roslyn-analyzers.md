@@ -1,5 +1,5 @@
 ---
-title: Analyse de la qualité du code
+title: Configuration des analyseurs
 ms.date: 09/02/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +11,16 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4cbe22571a2485d163960cc7af58975f0a299bf9
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 6a950a005a4669e74722742b23527a9e85ab5f02
+ms.sourcegitcommit: d77da260d79471ab139973c51d65b04e0f80fe2e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036361"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90560747"
 ---
-# <a name="configure-code-quality-analysis"></a>Configurer l’analyse de la qualité du code
+# <a name="overview"></a>Vue d’ensemble
 
-À compter de .NET 5,0, les analyseurs de la qualité du code sont inclus dans le kit de développement logiciel (SDK) .NET. (Auparavant, vous avez installé ces analyseurs en tant que package NuGet.) L’analyse du code est activée par défaut pour les projets qui ciblent .NET 5,0 ou une version ultérieure. Vous pouvez activer l’analyse du code sur des projets qui ciblent des versions antérieures de .NET en affectant à la propriété [EnableNETAnalyzers](/dotnet/core/project-sdk/msbuild-props#enablenetanalyzers) la valeur `true` . Vous pouvez également désactiver l’analyse du code pour votre projet en affectant à la valeur `EnableNETAnalyzers` `false` .
-
-Chaque règle ou *diagnostic* de l’analyseur de qualité du code a un état de gravité et de suppression par défaut qui peut être remplacé et personnalisé pour votre projet. Cet article traite de la définition des gravités de l’analyseur de qualité du code et de la suppression des violations de l’analyseur.
+Chaque *outil de diagnostic* ou de règle de l’analyseur Roslyn a un état de gravité et de suppression par défaut qui peut être remplacé et personnalisé pour votre projet. Cet article traite de la définition des gravités de l’analyseur et de la suppression des violations de l’analyseur.
 
 ## <a name="configure-severity-levels"></a>Configurer les niveaux de gravité
 
@@ -42,12 +40,12 @@ Le tableau suivant présente les différentes options de gravité :
 
 | Gravité (Explorateur de solutions) | Gravité (fichier EditorConfig) | Comportement au moment de la génération | Comportement de l’éditeur |
 |-|-|-|
-| Erreur | `error` | Les violations apparaissent comme des *Erreurs* dans les liste d’erreurs et dans la sortie de la génération en ligne de commande, et entraînent l’échec des builds.| Le code incriminé est souligné d’un tilde rouge et marqué d’une petite zone rouge dans la barre de défilement. |
+| Error | `error` | Les violations apparaissent comme des *Erreurs* dans les liste d’erreurs et dans la sortie de la génération en ligne de commande, et entraînent l’échec des builds.| Le code incriminé est souligné d’un tilde rouge et marqué d’une petite zone rouge dans la barre de défilement. |
 | Avertissement | `warning` | Les violations apparaissent en tant qu' *avertissements* dans le liste d’erreurs et dans la sortie de la génération en ligne de commande, mais ne provoquent pas l’échec des builds. | Le code incriminé est souligné d’un tilde vert et est marqué d’un petit cadre vert dans la barre de défilement. |
 | Info | `suggestion` | Les violations apparaissent sous la forme de *messages* dans le liste d’erreurs, et pas du tout dans la sortie de la génération de la ligne de commande. | Le code incriminé est souligné d’un tilde gris et marqué d’une petite zone grise dans la barre de défilement. |
 | Hidden | `silent` | Non visible par l’utilisateur. | Non visible par l’utilisateur. Toutefois, le diagnostic est signalé au moteur de diagnostic IDE. |
-| Aucun | `none` | Entièrement supprimée. | Entièrement supprimée. |
-| Default | `default` | Correspond à la gravité par défaut de la règle. Pour déterminer la valeur par défaut d’une règle, recherchez dans la Fenêtre Propriétés. | Correspond à la gravité par défaut de la règle. |
+| None | `none` | Entièrement supprimée. | Entièrement supprimée. |
+| Par défaut | `default` | Correspond à la gravité par défaut de la règle. Pour déterminer la valeur par défaut d’une règle, recherchez dans la Fenêtre Propriétés. | Correspond à la gravité par défaut de la règle. |
 
 Si des violations de règle sont détectées par un analyseur, elles sont signalées dans l’éditeur de code (sous forme de *tilde* sous le code incriminé) et dans la fenêtre de liste d’erreurs.
 

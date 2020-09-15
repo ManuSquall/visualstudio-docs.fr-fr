@@ -12,12 +12,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d61ebaa191e94439629d7ac5f85a6921163ed08b
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: d0489950b9132a36aef8ecb3d8374c02d1a1aee2
+ms.sourcegitcommit: d77da260d79471ab139973c51d65b04e0f80fe2e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036590"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90560734"
 ---
 # <a name="overview-of-source-code-analysis"></a>Vue d’ensemble de l’analyse du code source
 
@@ -25,9 +25,9 @@ Les analyseurs de .NET Compiler Platform (Roslyn) inspectent votre code C# ou Vi
 
 Les analyseurs peuvent être répartis dans les groupes suivants :
 
-- Les analyseurs de [style de code](https://docs.microsoft.com/visualstudio/ide/editorconfig-code-style-settings-reference?view=vs-2019#convention-categories) sont intégrés à Visual Studio. L’ID de diagnostic, ou code, de ces analyseurs est au format IDExxxx, par exemple, IDE0067. Vous pouvez configurer des préférences dans la [page Options](../ide/code-styles-and-code-cleanup.md) de l’éditeur de texte ou dans un [fichier EditorConfig](../ide/editorconfig-code-style-settings-reference.md). À compter de .NET 5,0, les analyseurs de [style de code](https://docs.microsoft.com/dotnet/fundamentals/productivity/code-analysis) sont inclus dans le kit de développement logiciel (SDK) .net.
+- Les analyseurs de [style de code](/visualstudio/ide/editorconfig-code-style-settings-reference?view=vs-2019#convention-categories) sont intégrés à Visual Studio. L’ID de diagnostic, ou code, de ces analyseurs est au format IDExxxx, par exemple, IDE0067. Vous pouvez configurer des préférences dans la [page Options](../ide/code-styles-and-code-cleanup.md) de l’éditeur de texte ou dans un [fichier EditorConfig](../ide/editorconfig-code-style-settings-reference.md). À compter de .NET 5,0, les analyseurs de style de code sont inclus dans le kit de développement logiciel (SDK) .NET et peuvent être strictement appliqués sous forme d’avertissements ou d’erreurs de génération. Vous pourrez trouver plus d’informations [ici](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis).
 
-- Les analyseurs de la [qualité du code](/code-analysis-warnings-for-managed-code-by-checkid.md) sont désormais fournis avec le kit de développement logiciel (SDK) .net 5 et sont activés par défaut. L’ID de diagnostic, ou code, de ces analyseurs est au format CAXXXX, par exemple, CA1822. Pour plus d’informations, consultez [vue d’ensemble de l’analyse du code source .net](/dotnet/fundamentals/productivity/code-analysis).
+- Les analyseurs de la [qualité du code](code-analysis-warnings-for-managed-code-by-checkid.md) sont désormais fournis avec le kit de développement logiciel (SDK) .net 5 et sont activés par défaut. L’ID de diagnostic, ou code, de ces analyseurs est au format CAXXXX, par exemple, CA1822. Pour plus d’informations, consultez [vue d’ensemble de l’analyse de la qualité du code .net](/dotnet/fundamentals/productivity/code-analysis#code-quality-analysis).
 
 - Les analyseurs tiers peuvent être installés en tant que package NuGet ou extension Visual Studio. Analyseurs tiers, tels que [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/), [Roslynator](https://www.nuget.org/packages/Roslynator.Analyzers/), les [analyseurs xUnit](https://www.nuget.org/packages/xunit.analyzers/)et l' [analyseur sonar](https://www.nuget.org/packages/SonarAnalyzer.CSharp/).
 
@@ -37,12 +37,12 @@ Chaque analyseur a l’un des niveaux de gravité suivants :
 
 | Gravité (Explorateur de solutions) | Gravité (fichier EditorConfig) | Comportement au moment de la génération | Comportement de l’éditeur |
 |-|-|-|
-| Erreur | `error` | Les violations apparaissent comme des *Erreurs* dans les liste d’erreurs et dans la sortie de la génération en ligne de commande, et entraînent l’échec des builds.| Le code incriminé est souligné d’un tilde rouge et marqué d’une petite zone rouge dans la barre de défilement. |
+| Error | `error` | Les violations apparaissent comme des *Erreurs* dans les liste d’erreurs et dans la sortie de la génération en ligne de commande, et entraînent l’échec des builds.| Le code incriminé est souligné d’un tilde rouge et marqué d’une petite zone rouge dans la barre de défilement. |
 | Avertissement | `warning` | Les violations apparaissent en tant qu' *avertissements* dans le liste d’erreurs et dans la sortie de la génération en ligne de commande, mais ne provoquent pas l’échec des builds. | Le code incriminé est souligné d’un tilde vert et est marqué d’un petit cadre vert dans la barre de défilement. |
 | Info | `suggestion` | Les violations apparaissent sous la forme de *messages* dans le liste d’erreurs, et pas du tout dans la sortie de la génération de la ligne de commande. | Le code incriminé est souligné d’un tilde gris et marqué d’une petite zone grise dans la barre de défilement. |
 | Hidden | `silent` | Non visible par l’utilisateur. | Non visible par l’utilisateur. Toutefois, le diagnostic est signalé au moteur de diagnostic IDE. |
-| Aucun | `none` | Entièrement supprimée. | Entièrement supprimée. |
-| Default | `default` | Correspond à la gravité par défaut de la règle. Pour déterminer la valeur par défaut d’une règle, recherchez dans la Fenêtre Propriétés. | Correspond à la gravité par défaut de la règle. |
+| None | `none` | Entièrement supprimée. | Entièrement supprimée. |
+| Par défaut | `default` | Correspond à la gravité par défaut de la règle. Pour déterminer la valeur par défaut d’une règle, recherchez dans la Fenêtre Propriétés. | Correspond à la gravité par défaut de la règle. |
 
 Si des violations de règle sont détectées par un analyseur, elles sont signalées dans l’éditeur de code (sous forme de *tilde* sous le code incriminé) et dans la fenêtre de liste d’erreurs.
 
@@ -77,7 +77,7 @@ Si vous installez des analyseurs en tant qu’extension Visual Studio, ils s’a
 
 Pour que les règles soient appliquées au moment de la génération, y compris via la ligne de commande ou dans le cadre d’une build d’intégration continue, vous pouvez choisir l’une des options suivantes :
 
-- Créez un projet .NET 5,0 qui comprend des analyseurs par défaut dans le kit de développement logiciel (SDK) .NET. L’analyse du code est activée par défaut pour les projets qui ciblent .NET 5,0 ou une version ultérieure. Vous pouvez activer l’analyse du code sur des projets qui ciblent des versions antérieures de .NET en affectant à la propriété [EnableNETAnalyzers](https://docs.microsoft.com/dotnet/core/project-sdk/msbuild-props#enablenetanalyzers) la valeur true.
+- Créez un projet .NET 5,0 qui comprend des analyseurs par défaut dans le kit de développement logiciel (SDK) .NET. L’analyse du code est activée par défaut pour les projets ciblant .NET 5.0 ou ultérieur. Vous pouvez activer l’analyse du code sur des projets qui ciblent des versions antérieures de .NET en affectant à la propriété [EnableNETAnalyzers](https://docs.microsoft.com/dotnet/core/project-sdk/msbuild-props#enablenetanalyzers) la valeur true.
 
 - Installer des analyseurs en tant que package NuGet. Les erreurs et avertissements d’analyseur ne s’affichent pas dans le rapport de build si vous installez les analyseurs comme une extension.
 
