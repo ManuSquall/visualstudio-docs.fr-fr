@@ -15,12 +15,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 77428bfc815a963e8fae4ddae5e5e7a7b7d991fe
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 566b9827f42f646cd9350cfc015a460485212a09
+ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90034102"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "90094328"
 ---
 # <a name="net-code-analysis-rules"></a>Règles d’analyse du code .NET
 L’analyse du code .NET fournit des règles qui indiquent des violations de la qualité du code ou des suggestions pour améliorer la qualité du code. Les règles sont organisées dans des zones de règles telles que la conception, la localisation, les performances et la sécurité. Certaines règles sont spécifiques à l’utilisation de l’API .NET, tandis que les règles restantes concernent la qualité du code générique. Cette section fournit des discussions et des exemples détaillés pour chaque règle.
@@ -30,7 +30,7 @@ L’analyse du code .NET fournit des règles qui indiquent des violations de la 
 |Élément|Description|
 |----------|-----------------|
 |Type|TypeName de la règle.|
-|CheckId|Identificateur unique de la règle. CheckId et Category sont utilisés pour la suppression à la source d’un avertissement.|
+|ID de la règle|Identificateur unique de la règle. RuleId et Category sont utilisés pour la suppression à la source d’un avertissement.|
 |Category|Catégorie de l’avertissement.|
 |Modification avec rupture|Indique si la correction d’une violation de la règle constitue une modification avec rupture. Une modification avec rupture signifie qu’un assembly qui présente une dépendance à la cible ayant provoqué la violation ne se recompile pas avec la nouvelle version corrigée ou peut échouer au moment de l’exécution en raison de la modification. Lorsque plusieurs correctifs sont disponibles et qu’au moins un correctif est une modification avec rupture et qu’un correctif n’est pas, les deux options « interruption » et « sans rupture » sont spécifiées.|
 |Cause|Code managé spécifique qui contraint la règle à générer un avertissement.|
