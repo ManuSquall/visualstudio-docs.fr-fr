@@ -10,12 +10,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 4faeff1e60fa77e3bf9e995c61c841f626468a1b
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 75b301f66f597f8b53a2561ffbbe05dfb8a4cb1c
+ms.sourcegitcommit: 5a5f31a1a91bf243852c7da872211e63ab37fdaa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89743332"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90682682"
 ---
 # <a name="code-style-preferences"></a>Préférences de style de code
 
@@ -64,7 +64,7 @@ Pour chaque paramètre de style de code de cette page, vous pouvez définir les 
 
 ## <a name="enforce-code-styles-on-build"></a>Appliquer des styles de code sur la Build
 
-À compter de Visual Studio 2019 version 16,8, qui comprend le kit de développement logiciel (SDK) .NET 5,0 RC2, vous pouvez [appliquer les conventions de codage .net sur la build](/dotnet/fundamentals/productivity/code-analysis.md#code-style-analysis) pour tous les projets .net. Au moment de la génération, les violations de style de code .NET s’affichent sous la forme d’avertissements ou d’erreurs avec un préfixe « IDE ». Cela vous permet d’appliquer rigoureusement des styles de code cohérents dans votre base de code.
+À compter de Visual Studio 2019 version 16,8, qui comprend le kit de développement logiciel (SDK) .NET 5,0 RC2, vous pouvez [appliquer les conventions de codage .net sur la build](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis) pour tous les projets .net. Au moment de la génération, les violations de style de code .NET s’affichent sous la forme d’avertissements ou d’erreurs avec un préfixe « IDE ». Cela vous permet d’appliquer rigoureusement des styles de code cohérents dans votre base de code.
 
 ::: moniker-end
 

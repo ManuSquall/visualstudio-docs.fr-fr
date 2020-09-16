@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 62709c496b9eec631a42c0e227210d3b57ecb5ef
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 67a9a6f7ec63686003f6e6535b213e9c6fa606f0
+ms.sourcegitcommit: 5a5f31a1a91bf243852c7da872211e63ab37fdaa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89741770"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90682649"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Paramètres des conventions de codage .NET pour EditorConfig
 
@@ -40,7 +40,7 @@ Trois catégories de conventions de codage .NET sont prises en charge :
 
    Règles relatives à la disposition et la structure de votre code pour en faciliter la lecture. Par exemple, vous pouvez spécifier des règles régissant les accolades Allman ou l’utilisation préférentielle d’espaces dans les blocs de contrôle.
 
-- [Conventions d’affectation des noms](../ide/editorconfig-naming-conventions.md)
+- [Conventions d'attribution d'un nom](../ide/editorconfig-naming-conventions.md)
 
    Règles régissant la façon dont les éléments de code sont nommés. Par exemple, vous pouvez spécifier que les méthodes `async` doivent se terminer par "Async".
 
@@ -48,7 +48,7 @@ Trois catégories de conventions de codage .NET sont prises en charge :
 
 ## <a name="enforce-coding-conventions-on-build"></a>Appliquer des conventions de codage sur la Build
 
-À compter de Visual Studio 2019 version 16,8, qui comprend le kit de développement logiciel (SDK) .NET 5,0 RC2, vous pouvez [appliquer les conventions de codage .net sur la build](/dotnet/fundamentals/productivity/code-analysis.md#code-style-analysis) pour tous les projets .net. Au moment de la génération, les violations de style de code .NET s’affichent sous la forme d’avertissements ou d’erreurs avec un préfixe « IDE ». Cela vous permet d’appliquer rigoureusement des styles de code cohérents dans votre base de code.
+À compter de Visual Studio 2019 version 16,8, qui comprend le kit de développement logiciel (SDK) .NET 5,0 RC2, vous pouvez [appliquer les conventions de codage .net sur la build](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis) pour tous les projets .net. Au moment de la génération, les violations de style de code .NET s’affichent sous la forme d’avertissements ou d’erreurs avec un préfixe « IDE ». Cela vous permet d’appliquer rigoureusement des styles de code cohérents dans votre base de code.
 
 ::: moniker-end
 
