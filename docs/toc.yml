@@ -509,6 +509,8 @@
             - name: Utiliser les fichiers EditorConfig pour le style de code
               displayName: Configure code style analyzers
               href: ide/create-portable-custom-editor-options.md
+            - name: Conventions de mise en forme C++ d’EditorConfig
+              href: ide/cpp-editorconfig-properties.md
             - name: Conventions de codage .NET
               items:
                 - name: Vue d'ensemble

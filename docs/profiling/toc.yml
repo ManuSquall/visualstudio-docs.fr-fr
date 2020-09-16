@@ -16,9 +16,9 @@
       href: quickstart-cpu-usage-aspnet.md
 - name: Didacticiels
   items:
-    - name: Profiler les performances de votre application dans Visual Studio
+    - name: Mesurer le niveau de performance des applications dans Visual Studio
       href: beginners-guide-to-performance-profiling.md
-    - name: Profiler l’utilisation de la mémoire dans Visual Studio
+    - name: Mesurer l’utilisation de la mémoire dans Visual Studio
       href: memory-usage.md
 - name: Concepts
   items:
