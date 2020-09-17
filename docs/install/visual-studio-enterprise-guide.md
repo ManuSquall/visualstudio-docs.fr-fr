@@ -16,17 +16,17 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 02ce09aebae0d6e5225ba1cdfa7484aa887135fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 56a6142d7217d6afa7d48ea708c642a32d8cb3c8
+ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88247641"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90713436"
 ---
 # <a name="visual-studio-enterprise-guide"></a>Guide Visual Studio Enterprise
 Si vous envisagez de gagner du temps lors de l’exécution de votre entreprise sur Visual Studio, commencez ici. Ce guide d’entreprise comprend des conseils qui peuvent vous aider à installer et à mettre à jour Visual Studio dans des scénarios d’entreprise courants, à être débloqués si vous rencontrez des problèmes et à signaler un problème si vous avez besoin d’une aide supplémentaire. 
 
-## <a name="get-started"></a>Bien démarrer 
+## <a name="get-started"></a>Prise en main 
 Découvrez comment déployer Visual Studio dans votre entreprise dans des environnements en réseau et hors connexion. 
 
 - **Découvrez les options de déploiement d’entreprise dans les environnements en réseau**. Le [Guide de l’Administrateur Visual Studio](visual-studio-administrator-guide.md) fournit des conseils basés sur des scénarios pour les administrateurs système. 
@@ -63,7 +63,7 @@ Découvrez comment mettre à jour Visual Studio avec succès et résoudre les pr
 
 - ** [Réparez Visual Studio](repair-visual-studio.md) pour résoudre les problèmes de mise à jour**. Il peut arriver que votre installation Visual Studio soit endommagée ou corrompue. Une réparation est utile pour résoudre les problèmes d’installation dans toutes les opérations d’installation, y compris les mises à jour. 
 
-- **Suivez les [lignes de base de sécurité Windows](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines)**. Microsoft s’engage à fournir à ses clients des systèmes d’exploitation sécurisés, tels que Windows 10 et Windows Server, et des applications sécurisées, telles que Microsoft Edge. Outre l’assurance de sécurité de ses produits, Microsoft vous permet également d’avoir un contrôle précis sur vos environnements en fournissant différentes fonctionnalités de configuration. 
+- **Suivez les [lignes de base de sécurité Windows](/windows/security/threat-protection/windows-security-baselines)**. Microsoft s’engage à fournir à ses clients des systèmes d’exploitation sécurisés, tels que Windows 10 et Windows Server, et des applications sécurisées, telles que Microsoft Edge. Outre l’assurance de sécurité de ses produits, Microsoft vous permet également d’avoir un contrôle précis sur vos environnements en fournissant différentes fonctionnalités de configuration. 
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

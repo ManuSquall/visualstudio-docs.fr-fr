@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eef35457b9f28864929ad42919fff4e9afdcb0d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b8f9ed7822dc231fdd4888d3e44c4e3218357f95
+ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114824"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90713475"
 ---
 # <a name="transactionscope-activity-designer"></a>Concepteur d'activités TransactionScope
 
@@ -33,13 +33,13 @@ Accédez au concepteur d’activités **TransactionScope** dans la catégorie **
 
 Le tableau suivant présente les propriétés de <xref:System.Activities.Statements.TransactionScope> et décrit comment elles sont utilisées dans le concepteur. Les <xref:System.Activities.Activity.DisplayName%2A> <xref:System.Activities.Statements.TransactionScope.Body%2A> Propriétés et peuvent être modifiées sur Concepteur de flux de travail surface. En revanche, les autres propriétés doivent être modifiées dans la grille des propriétés.
 
-|Nom de la propriété|Obligatoire|Usage|
+|Nom de la propriété|Obligatoire|Utilisation|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Nom convivial facultatif de l'activité <xref:System.Activities.Statements.TransactionScope>. La valeur par défaut est TransactionScope. Bien que la valeur de la propriété <xref:System.Activities.Activity.DisplayName%2A> ne soit pas strictement obligatoire, il est recommandé d'en utiliser une.|
-|<xref:System.Activities.Statements.TransactionScope.Body%2A>|True|Spécifie l’activité à exécuter dans une transaction unique. Pour ajouter l' <xref:System.Activities.Statements.TransactionScope.Body%2A> activité, déplacez une activité de la boîte **à outils** vers la zone **Body** du concepteur d’activités **TransactionScope** avec le texte d’indication « déposer l’activité ici ».|
-|<xref:System.Activities.Statements.TransactionScope.IsolationLevel%2A>|True|Spécifie la valeur <xref:System.Transactions.IsolationLevel> de cet objet <xref:System.Activities.Statements.TransactionScope>.|
-|<xref:System.Activities.Statements.TransactionScope.Timeout%2A>|False|Spécifie l’intervalle de temps (au format 00:00:00, qui correspond à heures:minutes:secondes) dont dispose la transaction pour se terminer. La valeur par défaut est égale à 1 minute (00:01:00).|
-|[System. Activities. Statements. TransactionScope. AbortInstanceOnTransactionFailure](https://msdn.microsoft.com/library/system.activities.statements.transactionscope.abortinstanceontransactionfailure.aspx)|True|Spécifie la valeur qui indique si le flux de travail doit être abandonné en cas d’abandon de la transaction.|
+|<xref:System.Activities.Activity.DisplayName%2A>|Faux|Nom convivial facultatif de l'activité <xref:System.Activities.Statements.TransactionScope>. La valeur par défaut est TransactionScope. Bien que la valeur de la propriété <xref:System.Activities.Activity.DisplayName%2A> ne soit pas strictement obligatoire, il est recommandé d'en utiliser une.|
+|<xref:System.Activities.Statements.TransactionScope.Body%2A>|Vrai|Spécifie l’activité à exécuter dans une transaction unique. Pour ajouter l' <xref:System.Activities.Statements.TransactionScope.Body%2A> activité, déplacez une activité de la boîte **à outils** vers la zone **Body** du concepteur d’activités **TransactionScope** avec le texte d’indication « déposer l’activité ici ».|
+|<xref:System.Activities.Statements.TransactionScope.IsolationLevel%2A>|Vrai|Spécifie la valeur <xref:System.Transactions.IsolationLevel> de cet objet <xref:System.Activities.Statements.TransactionScope>.|
+|<xref:System.Activities.Statements.TransactionScope.Timeout%2A>|Faux|Spécifie l’intervalle de temps (au format 00:00:00, qui correspond à heures:minutes:secondes) dont dispose la transaction pour se terminer. La valeur par défaut est égale à 1 minute (00:01:00).|
+|<xref:System.Activities.Statements.TransactionScope.AbortInstanceOnTransactionFailure*>|Vrai|Spécifie la valeur qui indique si le flux de travail doit être abandonné en cas d’abandon de la transaction.|
 
 ## <a name="see-also"></a>Voir aussi
 

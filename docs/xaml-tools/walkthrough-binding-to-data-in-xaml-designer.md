@@ -10,12 +10,12 @@ dev_langs:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: f57d4f24348ff805669832ce6db9e8e4e79e4569
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9cc5348004f344bd62e66aa03a20b0dd61017692
+ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330750"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90713423"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>Procédure pas à pas : effectuer une liaison de données dans le concepteur XAML
 
@@ -98,4 +98,4 @@ Dans le concepteur XAML, vous pouvez définir des propriétés de liaison de don
 ## <a name="see-also"></a>Voir aussi
 
 - [Créer une IU à l’aide du concepteur XAML](../xaml-tools/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
-- [Boîte de dialogue Ajouter un convertisseur de valeurs](https://msdn.microsoft.com/library/c5f3d110-a541-4b55-8bca-928f77778af8)
+- [Boîte de dialogue Ajouter un convertisseur de valeurs](/previous-versions/hh965588(v=vs.140))
