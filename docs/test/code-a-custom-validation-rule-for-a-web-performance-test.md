@@ -1,5 +1,6 @@
 ---
-title: Codage d'une règle de validation personnalisée pour un test de performances de site Web
+title: Créer une règle de validation personnalisée pour un test de performances Web
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -15,12 +16,12 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8bdf7f7f8f5bfcc7f8403740bea924c967bf3964
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a6222aaf6b6aeace595e12c797ead1dfb86b4931
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288869"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810612"
 ---
 # <a name="code-a-custom-validation-rule-for-a-web-performance-test"></a>Coder une règle de validation personnalisée pour un test de performances web
 
@@ -56,7 +57,7 @@ Vous pouvez créer vos propres règles de validation. Pour cela, vous dérivez v
 
 9. Exécutez votre test de performances web.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
 Le code suivant illustre une implémentation d'une règle de validation personnalisée. Cette règle de validation reproduit le comportement de la règle de validation prédéfinie Étiquette obligatoire. Utilisez cet exemple comme point de départ pour la définition de vos propres règles de validation personnalisées.
 

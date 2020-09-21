@@ -1,30 +1,30 @@
 ---
-title: Avertissements liés à la sécurité
+title: Règles de sécurité
 ms.date: 10/02/2019
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.securityrules
 helpviewer_keywords:
 - security [Visual Studio ALM], Enterprise Templates
-- security warnings
-- managed code analysis warnings, security warnings
-- warnings, security
+- security rules
+- managed code analysis rules, security rules
+- rules, security
 ms.assetid: 60d4e8ea-230a-494f-aa6a-b91db77540e4
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a40273c3230854e4b1d1a11a3fd02de54d5df745
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 2eb2356628099246aa010c0332f473955a3e976d
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599967"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90807922"
 ---
-# <a name="security-warnings"></a>Avertissements liés à la sécurité
+# <a name="security-rules"></a>Règles de sécurité
 
-Les avertissements de sécurité prennent en charge des bibliothèques et des applications plus sûres. Ces avertissements contribuent à empêcher la présence de défauts de sécurité dans votre programme. Si vous désactivez chacun de ces avertissements, vous devez indiquer clairement le motif de l’opération dans le code et également en informer le responsable de la sécurité désigné pour votre projet de développement.
+Les règles de sécurité prennent en charge des bibliothèques et des applications plus sûres. Ces règles permettent d’éviter les défauts de sécurité dans votre programme. Si vous désactivez l’une de ces règles, vous devez clairement indiquer la raison dans le code et également informer le responsable de la sécurité désigné pour votre projet de développement.
 
 ## <a name="in-this-section"></a>Contenu de cette section
 
@@ -79,7 +79,7 @@ Les avertissements de sécurité prennent en charge des bibliothèques et des ap
 |[CA5358 : Ne pas utiliser de modes de chiffrement non sécurisés](../code-quality/ca5358.md)|Ne pas utiliser de modes de chiffrement non sécurisés|
 |[CA5359 : Ne pas désactiver la validation de certificat](../code-quality/ca5359.md)|Un certificat peut aider à authentifier l’identité du serveur. Les clients doivent valider le certificat de serveur pour s’assurer que les demandes sont envoyées au serveur souhaité. Si le ServerCertificateValidationCallback retourne toujours `true` , les certificats sont validés.|
 |[CA5360 : Ne pas appeler de méthodes dangereuses dans la désérialisation](../code-quality/ca5360.md)|Une désérialisation non sécurisée est une vulnérabilité qui se produit lorsque des données non approuvées sont utilisées pour abuser de la logique d’une application, provoquer une attaque par déni de service (DoS) ou même exécuter du code arbitraire sur la désérialisation. Il est souvent possible pour les utilisateurs malveillants d’abuser de ces fonctionnalités de désérialisation lorsque l’application désérialise des données non approuvées qui sont sous leur contrôle. Plus précisément, appelez des méthodes dangereuses dans le processus de désérialisation. Des attaques de désérialisation non sécurisées pourraient permettre à une personne malveillante d’effectuer des attaques telles que les attaques par déni de l’authentification, les contournements d’authentification et l’exécution de code à distance.|
-|[CA5361 : Ne pas désactiver l’utilisation du chiffrement fort par SChannel](../code-quality/ca5361.md)|`Switch.System.Net.DontEnableSchUseStrongCrypto`Le paramètre pour `true` assouplit le chiffrement utilisé dans les connexions TLS (Transport Layer Security) sortantes. Un chiffrement plus faible peut compromettre la confidentialité de la communication entre votre application et le serveur, ce qui permet aux attaquants d’espionner facilement les données sensibles.|
+|[CA5361 : ne pas désactiver l’utilisation de SChannel de chiffrement fort](../code-quality/ca5361.md)|`Switch.System.Net.DontEnableSchUseStrongCrypto`Le paramètre pour `true` assouplit le chiffrement utilisé dans les connexions TLS (Transport Layer Security) sortantes. Un chiffrement plus faible peut compromettre la confidentialité de la communication entre votre application et le serveur, ce qui permet aux attaquants d’espionner facilement les données sensibles.|
 |[CA5362 : Cycle de référence potentiel dans le graphe d’objets désérialisé](../code-quality/ca5362.md)|En cas de désérialisation de données non fiables, tout code qui traite le graphique d’objets désérialisé doit gérer les cycles de référence sans passer par des boucles infinies. Cela comprend à la fois le code qui fait partie d’un rappel de désérialisation et le code qui traite le graphique d’objet une fois la désérialisation terminée. Dans le cas contraire, une personne malveillante pourrait effectuer une attaque par déni de service avec des données malveillantes contenant un cycle de référence.|
 |[CA5363 : Ne pas désactiver la validation de demandes](../code-quality/ca5363.md)|La validation de la demande est une fonctionnalité de ASP.NET qui examine les requêtes HTTP et détermine si elles contiennent du contenu potentiellement dangereux pouvant entraîner des attaques par injection, y compris des scripts inter-sites.|
 |[CA5364 : Ne pas utiliser de protocoles de sécurité dépréciés](../code-quality/ca5364.md)|TLS (Transport Layer Security) sécurise la communication entre les ordinateurs, le plus souvent avec le protocole HTTPs (Hypertext Transfer Protocol Secure). Les anciennes versions de protocole TLS sont moins sécurisées que TLS 1,2 et TLS 1,3 et sont plus susceptibles d’avoir de nouvelles vulnérabilités. Évitez les anciennes versions de protocole pour réduire les risques.|

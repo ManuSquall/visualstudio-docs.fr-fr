@@ -7,16 +7,16 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8793312e0ed022fc7210508efdf20a81b293f0f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f3729c09198b331728e2cc67299ffc3ad6c3d26
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535848"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809646"
 ---
 # <a name="vs-shell-deployment"></a>Déploiement du shell VS
 
-Un interpréteur de commandes isolé vous permet de déterminer les fonctionnalités Visual Studio dont vous avez besoin pour interagir avec votre langage spécifique à un domaine et comment cette solution doit s’afficher. Pour plus d’informations sur le shell isolé Visual Studio, consultez [Personnalisation de l’interpréteur de commandes isolé](https://docs.microsoft.com/visualstudio/extensibility/customizing-the-isolated-shell).
+Un interpréteur de commandes isolé vous permet de déterminer les fonctionnalités Visual Studio dont vous avez besoin pour interagir avec votre langage spécifique à un domaine et comment cette solution doit s’afficher. Pour plus d’informations sur le shell isolé Visual Studio, consultez [Personnalisation de l’interpréteur de commandes isolé](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/).
 
 Pour définir un shell Visual Studio en tant que cible de déploiement :
 

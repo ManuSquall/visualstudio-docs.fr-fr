@@ -11,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1d97cc53e55a809b9dd43d572e7395abc5a8344
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ee1b9ad1d7a75b0e4d3514bb3397f850d6704c24
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544129"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811186"
 ---
 # <a name="properties-of-geometry-shapes"></a>Propriétés des formes de géométrie
 Vous pouvez utiliser des formes géométriques pour spécifier la façon dont les instances de classes de domaine sont affichées dans un langage spécifique à un domaine. Pour plus d’informations, consultez [comment définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md). Pour plus d’informations sur l’utilisation de ces propriétés, consultez [personnalisation et extension d’un langage spécifique à un domaine](../modeling/customizing-and-extending-a-domain-specific-language.md).
@@ -25,7 +25,7 @@ Vous pouvez utiliser des formes géométriques pour spécifier la façon dont le
 
 |Propriété|Description|Default|
 |-|-|-|
-|Couleur de remplissage|Couleur de remplissage de cette forme.|White|
+|Couleur de remplissage|Couleur de remplissage de cette forme.|Blancs|
 |Mode dégradé de remplissage|Mode de remplissage dégradé de cette forme (horizontal, vertical, diagonale vers l’avant, diagonales arrière ou aucune).|Horizontal|
 |Géométrie|Géométrie de cette forme (Rectangle, Rectangle arrondi, ellipse ou cercle).|Rectangle|
 |A des points de connexion par défaut|Si `True` la forme est, la forme utilise les points de connexion du haut, du bas, de gauche et de droite dans le concepteur généré.|Faux|
@@ -37,11 +37,11 @@ Vous pouvez utiliser des formes géométriques pour spécifier la façon dont le
 |Attributs personnalisés|Utilisé pour ajouter des attributs à la classe de code source qui est générée pour cette forme.|\<none>|
 |Génère un doublon dérivé|Si `True` la valeur est, une classe de base et une classe partielle (pour prendre en charge la personnalisation via des substitutions) sont générées. Pour plus d’informations, consultez [substitution et extension des classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|Faux|
 |A un constructeur personnalisé|Si `True` , un constructeur personnalisé est fourni dans le code source. Pour plus d’informations, consultez [substitution et extension des classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|Faux|
-|Modificateur d’héritage|Décrit le type d’héritage de la classe de code source qui est généré à partir de la forme ( `none` , `abstract` ou `sealed` ).|Aucun|
+|Modificateur d’héritage|Décrit le type d’héritage de la classe de code source qui est généré à partir de la forme ( `none` , `abstract` ou `sealed` ).|aucun|
 |Forme Geometry de base|Classe de base de cette forme.|(aucun)|
-|Nom|Nom de cette forme.|Nom actuel|
+|Name|Nom de cette forme.|Nom actuel|
 |Espace de noms|Espace de noms affilié à cette forme.|Espace de noms actuel|
-|Type d’info-bulle|Comment l’info-bulle est définie (Fixed, variable ou None). Si elle est fixe, la valeur de la `Fixed Tooltip Text` propriété est utilisée comme info-bulle ; si la variable est, l’info-bulle est définie dans le code personnalisé.|None|
+|Type d’info-bulle|Comment l’info-bulle est définie (Fixed, variable ou None). Si elle est fixe, la valeur de la `Fixed Tooltip Text` propriété est utilisée comme info-bulle ; si la variable est, l’info-bulle est définie dans le code personnalisé.|Aucun|
 |Notes|Notes informelles associées à cet élément.|\<none>|
 |Hauteur initiale|Hauteur initiale de cette forme, en pouces.|1|
 |Largeur initiale|Largeur initiale de cette forme, en pouces.|1.5|
@@ -53,4 +53,4 @@ Vous pouvez utiliser des formes géométriques pour spécifier la façon dont le
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Glossaire des Outils Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glossaire des Outils Domain-Specific Language](/previous-versions/bb126564(v=vs.100))

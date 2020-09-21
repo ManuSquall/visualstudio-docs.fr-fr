@@ -10,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 58603db021d7aeebe3272711e5ba92d96eb22075
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7d70f1e95ce2dd5163eb017684620c403a77f74a
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250175"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740030"
 ---
 # <a name="compile-typescript-code-nodejs"></a>Compiler le code de la machine à écrire (Node.js)
 
@@ -27,7 +27,7 @@ Pour les projets ASP.NET Core, il est recommandé d’utiliser le [package NuGet
 
 Le [package NPM de machine à écrire](https://www.npmjs.com/package/typescript) ajoute la prise en charge de la méthode de machine lorsque le package npm pour TypeScript 2.1 (ou version ultérieure) est installé dans un projet, la version correspondante du service de langage TypeScript est chargée dans l’éditeur.
 
-1. [Suivez les instructions](/visualstudio/ide/quickstart-nodejs?toc=/visualstudio/javascript/toc.json) pour installer la charge de travail développement Node.js et le runtime Node.js.
+1. [Suivez les instructions](../ide/quickstart-nodejs.md?toc=%252fvisualstudio%252fjavascript%252ftoc.json) pour installer la charge de travail développement Node.js et le runtime Node.js.
 
    Pour l’intégration la plus simple avec Visual Studio, créez votre projet à l’aide de l’un des modèles d' Node.js, tels que le modèle d’application Web vide Node.js. Dans le cas contraire, utilisez un Node.js modèle JavaScript inclus dans Visual Studio et suivez les instructions ici, ou utilisez un projet de [dossier ouvert](../javascript/develop-javascript-code-without-solutions-projects.md) .
 

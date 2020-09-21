@@ -1,5 +1,6 @@
 ---
-title: Analyser les résultats des test de charge dans l’affichage des graphiques de l’analyseur de test de charge
+title: Analyser les résultats des tests de charge-vue graphiques (analyseur de test de charge)
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +16,12 @@ ms.assetid: 4a919cd8-541c-40ee-be3b-352fabc56140
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dac639b8513e8ef675c6246476791b9351241130
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b48162da7a753516ce0c1ae0dba4cfe1f94387e4
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591266"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810651"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>Analyser les résultats des tests de charge dans la vue Graphiques de l’analyseur de test de charge
 
@@ -62,16 +63,16 @@ La légende des compteurs affichés dans les graphiques indique plusieurs colonn
 
 La légende contient les colonnes suivantes :
 
-|Compteur|Nom du compteur|
+|Counter|Nom du compteur|
 |-|-|
 |Instance|Nom de l'instance de compteur.|
 |Category|Nom de la catégorie de compteur.|
 |Computer|Le nom de l'ordinateur sur lequel les données du compteur sont collectées.|
-|Couleur|Couleur de la ligne sur le graphique.|
+|Color|Couleur de la ligne sur le graphique.|
 |Plage|Indique le nombre représenté par 100 sur le graphique de ce compteur. Par exemple, pour une plage dont la limite supérieure est 10 000, l'étiquette 100 au sommet du graphique, représente 10 000.|
 |Min|Indique la valeur minimale du compteur en millisecondes.|
 |Max|Indique la valeur maximale du compteur en millisecondes.|
-|Avg|Indique la valeur moyenne du compteur en millisecondes.|
+|Moy|Indique la valeur moyenne du compteur en millisecondes.|
 |Dernier|Affiche la valeur du compteur pendant le dernier intervalle d'échantillonnage en millisecondes.|
 
 ## <a name="tasks"></a>Tâches

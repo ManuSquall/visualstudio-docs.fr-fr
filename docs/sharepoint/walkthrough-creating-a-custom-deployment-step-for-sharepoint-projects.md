@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 56fac2be1e73de5df9da8aa13e6631c4cc9d1022
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b739db2755336958492a0aa67c9d5f0809f74bb
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015895"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740017"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>Procédure pas à pas : création d’une étape de déploiement personnalisée pour les projets SharePoint
   Lorsque vous déployez un projet SharePoint, Visual Studio exécute une série d’étapes de déploiement dans un ordre spécifique. Visual Studio comprend de nombreuses étapes de déploiement intégrées, mais vous pouvez également créer les vôtres.
@@ -190,7 +190,7 @@ ms.locfileid: "86015895"
 
 1. Dans **Explorateur de solutions**, sous le projet **UpgradeDeploymentStep** , ouvrez le menu contextuel du fichier **source. extension. vsixmanifest** , puis choisissez **ouvrir**.
 
-     Visual Studio ouvre le fichier dans l’éditeur de manifeste. Le fichier source. extension. vsixmanifest est la base du fichier extension. vsixmanifest requis par tous les packages VSIX. Pour plus d’informations sur ce fichier, consultez [Référence du schéma d’extension VSIX 1,0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).
+     Visual Studio ouvre le fichier dans l’éditeur de manifeste. Le fichier source. extension. vsixmanifest est la base du fichier extension. vsixmanifest requis par tous les packages VSIX. Pour plus d’informations sur ce fichier, consultez [Référence du schéma d’extension VSIX 1,0](/previous-versions/dd393700(v=vs.110)).
 
 2. Dans la zone **nom du produit** , entrez **étape de déploiement de la mise à niveau pour les projets SharePoint**.
 
@@ -218,7 +218,7 @@ ms.locfileid: "86015895"
 10. Dans la liste **type** , entrez **SharePoint. Commands. v4**.
 
     > [!NOTE]
-    > Cet élément spécifie une extension personnalisée que vous souhaitez inclure dans l’extension Visual Studio. Pour plus d’informations, consultez [élément Asset (schéma VSX)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
+    > Cet élément spécifie une extension personnalisée que vous souhaitez inclure dans l’extension Visual Studio. Pour plus d’informations, consultez [élément Asset (schéma VSX)](/previous-versions/dd393737(v=vs.110)).
 
 11. Dans la liste **source** , choisissez **un projet dans la solution actuelle**.
 

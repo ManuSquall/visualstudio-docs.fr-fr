@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 86d575b254209b547504ea6d746d03853990bfb4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4dfa575bea4e629c7521cc7f4c5a79707462714c
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67329004"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810991"
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Page publier, concepteur de projets (développement Office dans Visual Studio)
   La page **Publier** du **Concepteur de projets** permet de configurer les propriétés du déploiement.
@@ -29,7 +29,7 @@ ms.locfileid: "67329004"
  Pour accéder à cette page, sélectionnez le projet dans **Explorateur de solutions**, puis, dans le menu **projet** , choisissez *Projectname* **Propriétés**ProjectName. Si la page **Publier** n’apparaît pas, choisissez l’onglet **Publier** .
 
 > [!NOTE]
-> Vous pouvez également définir l’emplacement de publication dans l’ **Assistant Publication**. Pour plus d’informations, consultez [Comment : publier une solution Office à l’aide de ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).
+> Vous pouvez également définir l’emplacement de publication dans l’ **Assistant Publication**. Pour plus d’informations, consultez [Comment : publier une solution Office à l’aide de ClickOnce](/previous-versions/bb386095(v=vs.110)).
 
 ## <a name="uielement-list"></a>Liste des éléments de l'interface utilisateur
  **Emplacement du dossier de publication (site Web, serveur FTP ou chemin d’accès du fichier)** Obligatoire.
@@ -50,7 +50,7 @@ ms.locfileid: "67329004"
 
  Si les fichiers d’installation se trouvent dans un emplacement relatif au document ou au programme d’installation, comme c’est le cas avec l’option CD, laissez cette zone vide.
 
- Cette valeur peut être assignée plus tard par un administrateur. Pour plus d’informations, consultez [Comment : modifier le chemin d’installation d’une solution Office](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).
+ Cette valeur peut être assignée plus tard par un administrateur. Pour plus d’informations, consultez [Comment : modifier le chemin d’installation d’une solution Office](/previous-versions/bb608626(v=vs.110)).
 
  **Conditions préalables** Les conditions préalables peuvent être incluses dans le programme d’installation ou téléchargées à la demande lors de l’installation.
 
@@ -102,4 +102,4 @@ ms.locfileid: "67329004"
 
 - [Déployer une solution Office](../vsto/deploying-an-office-solution.md)
 - [Déployer une solution Office à l’aide de ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)
-- [Conditions préalables pour le déploiement de solutions Office](https://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e)
+- [Conditions préalables pour le déploiement de solutions Office](/previous-versions/bb608617(v=vs.110))

@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: a8b0fd53164cb98921b111d49fa04a76c9d0d8a8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5e801d417280d5d9ce8225c2185b582544fe2cef
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79094302"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810335"
 ---
 # <a name="simplify-string-interpolation-refactoring"></a>Simplifier la refactorisation de l’interpolation de chaîne
 
@@ -25,7 +25,7 @@ Cette refactorisation s’applique à :
 
 - Visual Basic
 
-**Ce qui suit :** Vous permet de simplifier une [interpolation de chaîne](https://docs.microsoft.com/dotnet/csharp/tutorials/string-interpolation).
+**Ce qui suit :** Vous permet de simplifier une [interpolation de chaîne](/dotnet/csharp/tutorials/string-interpolation).
 
 Dans les **cas suivants :** Vous avez une interpolation de chaîne qui peut être simplifiée.
 

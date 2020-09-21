@@ -9,12 +9,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b1f3620ef462228ff6a3461f44019e9c515a1c0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 738d32186a0bb0f1d4655f9afea3d236bf53ad4c
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77579304"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810846"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Tutoriel 2 : créer un questionnaire mathématique chronométré
 
@@ -39,7 +39,7 @@ Lorsque vous avez terminé, votre quiz ressemble à la capture d’écran suivan
 
 ## <a name="tutorial-links"></a>Liens de tutoriels
 
-|Intitulé|Description|
+|Titre|Description|
 |-----------|-----------------|
 |[Étape 1 : Créer un projet et ajouter des étiquettes à votre formulaire](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)|Commencez par créer le projet, modifier ses propriétés et ajouter des contrôles `Label`.|
 |[Étape 2 : Créer un problème d’addition aléatoire](../ide/step-2-create-a-random-addition-problem.md)|Créez un problème d'addition et utilisez la classe `Random` pour générer des nombres aléatoires.|
@@ -58,6 +58,6 @@ Pour commencer le didacticiel, commencez à l' **[étape 1 : créer un projet e
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Autres didacticiels C#](/visualstudio/get-started/csharp/)
-* [Didacticiels de Visual Basic](/visualstudio/get-started/visual-basic/)
+* [Autres didacticiels C#](../get-started/csharp/index.yml)
+* [Didacticiels de Visual Basic](../get-started/visual-basic/index.yml)
 * [Didacticiels C++](/cpp/get-started/tutorial-console-cpp)

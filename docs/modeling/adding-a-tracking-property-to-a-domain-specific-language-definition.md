@@ -11,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccac40e2ff11b4da67c95fba307de97e4f72a101
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 680d64e2d2bdf02c6a1c8b8b25bdfb64cde2db8f
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238242"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810820"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>Ajouter une propriété de suivi à une définition de langage spécifique à un domaine
 
@@ -26,7 +26,7 @@ Une propriété de *domaine de suivi* est une propriété qui peut être mise à
 
 Par exemple, dans la Outils Domain-Specific Language (outils DSL), la propriété nom complet d’une classe de domaine a une valeur par défaut calculée à l’aide du nom de la classe de domaine, mais un utilisateur peut modifier la valeur au moment de la conception ou la réinitialiser à la valeur calculée.
 
-Dans cette procédure pas à pas, vous créez un langage spécifique à un domaine (DSL) qui a une propriété de suivi d’espace de noms qui a une valeur par défaut basée sur la propriété d’espace de noms par défaut du modèle. Pour plus d’informations sur les propriétés de suivi, consultez [définition des propriétés de suivi](https://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be).
+Dans cette procédure pas à pas, vous créez un langage spécifique à un domaine (DSL) qui a une propriété de suivi d’espace de noms qui a une valeur par défaut basée sur la propriété d’espace de noms par défaut du modèle. Pour plus d’informations sur les propriétés de suivi, consultez [définition des propriétés de suivi](/previous-versions/cc825929(v=vs.100)).
 
 - Les outils DSL prennent en charge les descripteurs de propriété de suivi. Toutefois, le concepteur DSL ne peut pas être utilisé pour ajouter une propriété de suivi à une langue. Par conséquent, vous devez ajouter du code personnalisé pour définir et implémenter la propriété de suivi.
 

@@ -1,18 +1,18 @@
 ---
 title: Utiliser la fonctionnalité d’utilisation maximale dans le portail d’administration
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: c473b01f-2dfe-4cc2-ad29-bb5e2a268123
-ms.date: 04/07/2020
+ms.date: 09/16/2020
 ms.topic: conceptual
 description: Découvrir comment afficher le nombre maximal d’abonnements attribués dans le portail d’administration
-ms.openlocfilehash: 0fe9dbe494867c99ba62bcb5f56c372da7ac50aa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 60f9961d400e8ce675e6cfb228f9f7bee36c74a0
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80808351"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90807935"
 ---
 # <a name="use-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>Utiliser la fonctionnalité utilisation maximale pour suivre le nombre d’abonnements affectés
 Une nouvelle fonctionnalité du portail d’administration des abonnements Visual Studio vous permet de suivre le nombre d’abonnements que vous avez achetés et attribués. Elle permet également d’identifier le nombre maximal d’abonnements de chaque niveau que vous avez attribués au cours de l’année précédente et pendant la durée de votre ou vos contrats. 
@@ -24,15 +24,17 @@ Une nouvelle fonctionnalité du portail d’administration des abonnements Visua
 Pour voir le nombre maximal d’abonnements attribués pour tout contrat et niveau d’abonnement :
 1. Sélectionnez le contrat que vous voulez voir dans la liste déroulante en haut à gauche du portail. (Si vous avez un seul contrat, celui-ci est peut-être déjà sélectionné.)
 2. Cliquez sur l’icône d' **utilisation maximale** qui est la troisième icône en haut à gauche de la grille de l’abonné.  
+
     > [!div class="mx-imgBorder"]
-    > ![Menu Maximum Usage](_img/maximum-usage/maximum-usage-menu.png)
+    > ![Utilisation maximale à la volée](_img/maximum-usage/maximum-usage-menu.png "Cliquez sur le bouton utilisation maximale pour afficher le nombre maximal de chaque type d’abonnement que vous avez affecté.")
+
 3. L' « utilisation maximale de 12 mois » s’affiche et le nombre maximal d’abonnements que vous avez affectés au cours de l’année précédente pour chaque niveau s’affiche, ainsi que le mois au cours duquel vous avez atteint ce pic.    
 
 ## <a name="view-your-assignment-history"></a>Voir votre historique d’affectations
 En plus de voir le nombre maximal d’attributions pour chaque niveau d’abonnement, vous pouvez voir un compte actuel de l’activité sur le contrat, notamment les achats et les attributions, en cliquant sur le bouton **Export full report** (Exporter le rapport complet).  (Vous devrez peut-être faire défiler la page pour voir le bouton.)  
 
 > [!div class="mx-imgBorder"]
-> ![Rapport complet sur l’utilisation maximale](_img/maximum-usage/maximum-usage-full-report.png)
+> ![Rapport complet sur l’utilisation maximale](_img/maximum-usage/maximum-usage-full-report.png "Le rapport complet comprend un enregistrement de tous vos achats et attributions d’abonnement.")
 
 Pour chaque niveau d’abonnement, le rapport affiche la date à laquelle vous avez atteint un nouveau niveau d’attribution maximal et le nombre d’abonnements que vous avez achetés à compter de cette date. Cela vous permet de voir facilement toutes les dates auxquelles vous aviez des surutilisations.  
 

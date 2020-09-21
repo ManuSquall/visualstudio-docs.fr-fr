@@ -10,18 +10,18 @@ metadata:
   author: jillre
   ms.author: jillfra
   ms.date: 10/15/2019
-  ms.openlocfilehash: 797df026fb9873c5f50e39fe281e0c9a11688b8f
-  ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+  ms.openlocfilehash: f3f122c4603cd388d5ea73d8044504daf28342d1
+  ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
   ms.translationtype: MT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "74316443"
+  ms.lasthandoff: 09/19/2020
+  ms.locfileid: "90810104"
 landingContent:
 - title: Ouvrir ou créer un projet
   linkLists:
   - linkListType: tutorial
     links:
-    - text: Création d'un projet
+    - text: Créer un projet
       url: create-new-project.md
     - text: Ouvrir un projet à partir d’un référentiel
       url: ../get-started/tutorial-open-project-from-repo.md
@@ -52,7 +52,7 @@ landingContent:
   - linkListType: tutorial
     links:
     - text: Prise en main de C# et d’ASP.NET Core dans Visual Studio
-      url: tutorial-csharp-aspnet-core.md
+      url: ../get-started/csharp/tutorial-aspnet-core.md
     - text: Créer une application console C++ dans Visual Studio
       url: /cpp/get-started/tutorial-console-cpp
     - text: Bien démarrer avec C++ dans Visual Studio

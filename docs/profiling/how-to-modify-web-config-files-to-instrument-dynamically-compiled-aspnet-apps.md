@@ -1,5 +1,6 @@
 ---
-title: Web.Config l’application Web ASP.NET compilée dynamique du profil de & d’instrumentation de fichier
+title: Web.Config l’application dynamique ASP.NET de profil de & d’instrumentation de fichier
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: a92e5692-2183-4ae3-9431-b067c6a7aab4
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 8ed2d8e8cc62d26f9d63a8a675301c78fc35c51a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9682fe820e34e8e30a3c57670f5e5fbc7eae2153
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331509"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809594"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Guide pratique pour modifier des fichiers Web.Config pour instrumenter et profiler des applications Web ASP.NET compilées dynamiquement
 Vous pouvez utiliser la méthode d’instrumentation des outils de profilage de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour collecter des données de minutage détaillées, des données d’allocation de mémoire .NET et des données de durée de vie des objets .NET à partir d’applications web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] compilées dynamiquement.
@@ -174,7 +175,7 @@ Vous pouvez utiliser la méthode d’instrumentation des outils de profilage de 
     </configuration>
 ```
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
  Voici un fichier *web.config* complet qui active l’instrumentation et le profilage d’applications Web compilées dynamiquement [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] . Cet exemple suppose qu’il n’y avait pas d’autres paramètres dans le fichier avant la modification.
 
 ```xml

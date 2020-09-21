@@ -7,12 +7,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2c69f73989e898c44bdef6cf008d48f6c918652a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 44c3b64d9fb8944a578d054b7d98d4bf39bde3bc
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801319"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810374"
 ---
 # <a name="add-file-header"></a>Ajouter un en-tête de fichier
 
@@ -22,7 +22,7 @@ Cette génération de code s’applique à :
 
 - Visual Basic
 
-**Ce qui suit :** Ajoutez des en-têtes de fichier aux fichiers, projets et solutions existants à l’aide d’un [EditorConfig](https://docs.microsoft.com/visualstudio/ide/create-portable-custom-editor-options#add-an-editorconfig-file-to-a-project).
+**Ce qui suit :** Ajoutez des en-têtes de fichier aux fichiers, projets et solutions existants à l’aide d’un [EditorConfig](../create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project).
 
 Dans les **cas suivants :** Vous souhaitez ajouter facilement un en-tête de fichier aux fichiers, projets et solutions.
 
@@ -30,7 +30,7 @@ Dans les **cas suivants :** Vous souhaitez ajouter facilement un en-tête de fi
 
 ## <a name="how-to"></a>Procédures
 
-1. Ajoutez un [EditorConfig](https://docs.microsoft.com/visualstudio/ide/create-portable-custom-editor-options#add-an-editorconfig-file-to-a-project) à un projet ou à une solution si vous n’en avez pas déjà un.
+1. Ajoutez un [EditorConfig](../create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project) à un projet ou à une solution si vous n’en avez pas déjà un.
 
 2. Ajoutez la règle suivante à votre fichier EditorConfig : *file_header_template*.
 

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 619e64dc09858b7d29e05804e3c3c353882f90ef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bd1b3b90cf4e284e558be02608cac953dc71584b
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62561743"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811004"
 ---
 # <a name="project-upgrade-options-dialog-box"></a>Mise à niveau du projet, boîte de dialogue Options
   Utilisez la page **Mise à niveau du projet** pour spécifier si Visual Studio modifie automatiquement les projets de complément VSTO pour cibler la version d’Office installée sur l’ordinateur de développement.
@@ -33,4 +33,4 @@ ms.locfileid: "62561743"
 
 ## <a name="see-also"></a>Voir aussi
 - [Mettre à niveau et migrer des solutions Office](../vsto/upgrading-and-migrating-office-solutions.md)
-- [Comment : mettre à niveau des solutions Office](https://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)
+- [Comment : mettre à niveau des solutions Office](/previous-versions/4bez6837(v=vs.140))

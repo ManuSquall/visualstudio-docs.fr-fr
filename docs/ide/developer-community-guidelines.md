@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b39b62ade75687a61981712c47e9876a0ef082fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7da5a229ec345a4f360aeb6051dc33130fa3d99a
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87972471"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810117"
 ---
 # <a name="developer-community-guidelines"></a>Consignes Developer Community
 
@@ -57,7 +57,7 @@ Même avec des problèmes incluant des détails enrichis, nous pouvons ne pas ê
 
 Le triage d’un problème est un processus à plusieurs étapes qui est réalisé de façon collaborative au sein de l’équipe des fonctionnalités. Le triage prend généralement une semaine, mais peut prendre plus de temps. L’objectif du triage est de vous permettre de comprendre clairement ce qui se passe à votre problème. Par exemple, après triage, vous savez si nous prévoyons de résoudre votre problème ou d’attendre d’autres commentaires sur la communauté.
 
-Une fois que vous signalez un problème, les états indiquent où en est votre envoi dans son cycle de vie. Au fur et à mesure que vos commentaires sont examinés par les équipes de produit Visual Studio, ils sont définis avec un état approprié. Suivez la progression de vos rapports de problèmes en référençant les [États et le Forum aux questions](https://docs.microsoft.com/visualstudio/ide/report-a-problem).
+Une fois que vous signalez un problème, les états indiquent où en est votre envoi dans son cycle de vie. Au fur et à mesure que vos commentaires sont examinés par les équipes de produit Visual Studio, ils sont définis avec un état approprié. Suivez la progression de vos rapports de problèmes en référençant les [États et le Forum aux questions](./report-a-problem.md).
 
 Lorsqu’il manque des informations importantes dans un problème, nous attribuons l’état _plus_ d’informations. Nous nous penchons sur le problème avec les informations spécifiques dont nous avons besoin et vous recevrez une notification par courrier électronique. Si nous ne recevons pas les informations dans les sept jours, nous vous enverrons un rappel. Après cela, nous fermons le ticket au bout de 14 jours d’inactivité.
 
@@ -78,8 +78,8 @@ Lorsque cela se produit, nous allons fermer le problème et vous demander de l�
 
 #### <a name="additional-information"></a>Informations supplémentaires
 
-- [Comment augmenter les chances de résolution d’un problème de performances](https://docs.microsoft.com/visualstudio/ide/how-to-increase-chances-of-performance-issue-being-fixed)
-- [Détecter un problème et créer des journaux pour les problèmes MSBuild](https://docs.microsoft.com/visualstudio/ide/msbuild-logs)
+- [Comment augmenter les chances de résolution d’un problème de performances](./how-to-increase-chances-of-performance-issue-being-fixed.md)
+- [Détecter un problème et créer des journaux pour les problèmes MSBuild](./msbuild-logs.md)
 
 ## <a name="managing-feature-suggestions"></a>Gestion des suggestions de fonctionnalités
 
@@ -91,7 +91,7 @@ Dans le processus de prise de décision, nous examinons les caractéristiques su
 
 - Correspond-il à notre orientation générale du produit ?
 - Pouvons-nous nous permettre de la générer et de la gérer ?
-- S’aligne-t-il avec notre stratégie générale de feuille de [route](https://docs.microsoft.com/visualstudio/productinfo/vs-roadmap) ?
+- S’aligne-t-il avec notre stratégie générale de feuille de [route](/visualstudio/productinfo/vs-roadmap) ?
 - Bénéficie-t-il d’un support communautaire, comme indiqué par les votes et les commentaires ?
 - Nous l’aimons, même avec une faible prise en charge de la communauté ?
 
@@ -99,7 +99,7 @@ Quand nous ne pouvons pas répondre « oui » à l’une de ces questions, nou
 
 Si une suggestion ne correspond pas à notre orientation globale du produit, nous allons la fermer en *dehors de l’étendue*. Par exemple, il peut y avoir des investissements similaires dans d’autres membres de la famille de produits Visual Studio. Ou la fonctionnalité suggérée ne peut être pertinente que pour quelques personnes, ce qui rend une extension mieux adaptée pour la fournir.
 
-Suivez la progression de votre suggestion de fonctionnalité en référençant les [États de suggestion et le Forum aux questions](https://docs.microsoft.com/visualstudio/ide/report-a-problem).
+Suivez la progression de votre suggestion de fonctionnalité en référençant les [États de suggestion et le Forum aux questions](./report-a-problem.md).
 
 ## <a name="discussion-etiquette"></a>Étiquette de discussion
 
@@ -111,7 +111,7 @@ Toute violation de l’étiquette de discussion peut entraîner la suppression d
 
 ## <a name="data-privacy"></a>Confidentialité des données
 
-Les commentaires et les réponses sont visibles publiquement, mais tous les fichiers joints sont partagés en privé avec Microsoft uniquement. Cette visibilité est avantageuse, car elle permet à la communauté entière de voir les problèmes et solutions détectés par d’autres utilisateurs. Si vous êtes préoccupé par la confidentialité de vos données ou de votre identité, vous disposez d’options. En savoir plus sur la confidentialité des données de la [communauté des développeurs](https://docs.microsoft.com/visualstudio/ide/developer-community-privacy).
+Les commentaires et les réponses sont visibles publiquement, mais tous les fichiers joints sont partagés en privé avec Microsoft uniquement. Cette visibilité est avantageuse, car elle permet à la communauté entière de voir les problèmes et solutions détectés par d’autres utilisateurs. Si vous êtes préoccupé par la confidentialité de vos données ou de votre identité, vous disposez d’options. En savoir plus sur la confidentialité des données de la [communauté des développeurs](./developer-community-privacy.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

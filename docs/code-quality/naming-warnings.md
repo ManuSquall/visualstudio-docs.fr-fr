@@ -1,29 +1,29 @@
 ---
-title: avertissements liés à l’affectation de noms
+title: Règles d’affectation des noms
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.namingrules
 helpviewer_keywords:
-- managed code analysis warnings, naming warnings
-- naming warnings
-- warnings, naming
+- managed code analysis rules, naming rules
+- naming rules
+- rules, naming
 ms.assetid: f97223ce-1d39-4134-81c9-fff2c75d979b
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45eb7442278d783b2663da2ba8587bea38632fa1
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 2032a66837ef790ce37ef178805a13841f203342
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509001"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810192"
 ---
-# <a name="naming-warnings"></a>avertissements liés à l’affectation de noms
+# <a name="naming-rules"></a>Règles d’affectation des noms
 
-Les avertissements de nommage prennent en charge l’adhésion aux conventions de nommage des règles de conception .NET.
+Les règles d’affectation de noms prennent en charge l’adhésion aux conventions de nommage des règles de conception .NET.
 
 ## <a name="in-this-section"></a>Dans cette section
 

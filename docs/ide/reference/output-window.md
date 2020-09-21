@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be028af8ab9f458c1fadad6f8b2fcbd6aaa49a04
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2f820fe2f3cca0eddb709462961f328c906f6f2d
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75567981"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810361"
 ---
 # <a name="output-window"></a>Fenêtre Sortie
 
@@ -76,7 +76,7 @@ Si vous utilisez le défilement automatique dans la fenêtre **Sortie**, puis qu
 ## <a name="see-also"></a>Voir aussi
 
 - [Messages de diagnostic dans la fenêtre sortie](../../debugger/diagnostic-messages-in-the-output-window.md)
-- [Guide pratique pour contrôler la fenêtre Sortie](https://msdn.microsoft.com/Library/91aebd15-8854-4a7a-9f7d-57376fb4e858)
+- [Guide pratique pour contrôler la fenêtre Sortie](/previous-versions/ht6z4e28(v=vs.140))
 - [Compiler et générer](../../ide/compiling-and-building-in-visual-studio.md)
 - [Présentation des configurations de build](../../ide/understanding-build-configurations.md)
 - [Vue d'ensemble de la bibliothèque de classes](/dotnet/standard/class-library-overview)

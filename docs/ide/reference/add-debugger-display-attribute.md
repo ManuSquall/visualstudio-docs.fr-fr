@@ -7,12 +7,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 611df048d4ce569c10ae933be9053acf1174c06f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: db49bfd1672866a755cce6780527520da2cad420
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85290353"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810387"
 ---
 # <a name="add-debuggerdisplay-attribute"></a>Ajouter l’attribut DebuggerDisplay
 
@@ -20,9 +20,9 @@ Cette génération de code s’applique à :
 
 - C#
 
-**Ce qui suit :** L' [attribut DebuggerDisplay](https://docs.microsoft.com/visualstudio/debugger/using-the-debuggerdisplay-attribute) contrôle le mode d’affichage d’un objet, d’une propriété ou d’un champ dans les fenêtres de variables du débogueur.
+**Ce qui suit :** L' [attribut DebuggerDisplay](../../debugger/using-the-debuggerdisplay-attribute.md) contrôle le mode d’affichage d’un objet, d’une propriété ou d’un champ dans les fenêtres de variables du débogueur.
 
-Dans les **cas suivants :** Vous souhaitez [épingler](https://docs.microsoft.com/visualstudio/debugger/view-data-values-in-data-tips-in-the-code-editor#pin-properties-in-datatips) par programme des propriétés dans le débogueur dans votre code.
+Dans les **cas suivants :** Vous souhaitez [épingler](../../debugger/view-data-values-in-data-tips-in-the-code-editor.md#pin-properties-in-datatips) par programme des propriétés dans le débogueur dans votre code.
 
 **Pourquoi :** L’épinglage de propriétés vous permet d’inspecter rapidement des objets en fonction de leurs propriétés en barbotant cette propriété en haut de la liste de propriétés de l’objet dans le débogueur. 
 

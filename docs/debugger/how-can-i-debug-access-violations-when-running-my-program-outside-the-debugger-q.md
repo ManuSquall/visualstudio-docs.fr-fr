@@ -1,6 +1,6 @@
 ---
-title: Violations d’accès de débogage lors de l’exécution d’une application en dehors du débogueur
-ms.custom: seodec18
+title: Violations d’accès de débogage lors de l’exécution d’une application en dehors de VS
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88dde869e6e9e1551459ce1171364709baf6403e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 94a905ad37bdfa42b17a54a34f6a1cde8e0b4e6e
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350431"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809529"
 ---
 # <a name="how-can-i-debug-access-violations-when-running-my-program-outside-the-debugger"></a>Comment puis-je déboguer les violations d'accès lorsque mon programme fonctionne hors du débogueur ?
 

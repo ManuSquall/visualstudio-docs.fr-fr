@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: fb92f5aae84a7c164f04145abe24eb32d7792056
-ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.openlocfilehash: d4538becdf7627cc63ac94f65ac456123c5d9c47
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89485439"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739978"
 ---
 # <a name="build-and-run-the-todo-sample-app"></a>Générer et exécuter l’exemple d’application TODO
 
@@ -28,7 +28,7 @@ Pour le reste de ce didacticiel, vous utiliserez un gestionnaire de liste de tâ
 
 Avant de pouvoir exécuter l’application, vous devez récupérer le code source de l’application sur votre ordinateur. Pour les projets réels, vous allez généralement cloner le référentiel. Toutefois, pour ce didacticiel, vous avez créé un fichier ZIP contenant l’application.
 
-1. [Téléchargez le fichier zip](/assets/app.zip). Ouvrez le fichier ZIP et veillez à extraire le contenu.
+1. [Téléchargez le fichier zip](http://localhost/assets/app.zip). Ouvrez le fichier ZIP et veillez à extraire le contenu.
 
 1. Une fois l’extraction effectuée, utilisez votre éditeur de code favori pour ouvrir le projet. Si vous avez besoin d’un éditeur, vous pouvez utiliser [Visual Studio code](https://code.visualstudio.com/). Vous devez voir le `package.json` et les deux sous-répertoires ( `src` et `spec` ).
 

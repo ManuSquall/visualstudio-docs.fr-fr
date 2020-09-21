@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5d14abdd9ba6547a3aaf131084168be2e453dd04
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be5742533280ab2ff7da04ee287b0534980d9436
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77558176"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810978"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Assistant Publication (développement Office dans Visual Studio)
   Utilisez l' **Assistant Publication** pour copier des fichiers de solution vers un emplacement spécifié, créer les fichiers manifeste et créer un programme d’installation.
@@ -49,7 +49,7 @@ ms.locfileid: "77558176"
 > Il y a plus de points à prendre en compte si l’ordinateur cible exécute Windows Vista. Pour utiliser l’option de publication locale, vous devez être administrateur sur l’ordinateur Windows Vista. En outre, l’emplacement par défaut est toujours le répertoire de *publication \\ * , qu’IIS soit installé ou non.
 
 ## <a name="what-is-the-default-installation-path-on-end-user-computers"></a>Quel est le chemin d’installation par défaut sur les ordinateurs des utilisateurs finaux ?
- Le chemin d’installation est facultatif. Vous pouvez définir le chemin d’installation ultérieurement si vous préférez. Pour plus d’informations, consultez [Comment : modifier le chemin d’installation d’une solution Office](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).
+ Le chemin d’installation est facultatif. Vous pouvez définir le chemin d’installation ultérieurement si vous préférez. Pour plus d’informations, consultez [Comment : modifier le chemin d’installation d’une solution Office](/previous-versions/bb608626(v=vs.110)).
 
  Le chemin d’installation est le répertoire à partir duquel l’utilisateur final installe la personnalisation. Il s’agit également du chemin que la solution utilise pour vérifier les mises à jour. L' **Assistant Publication** ne déploie pas la solution à cet emplacement, sauf si le chemin d’accès est identique à celui que vous avez entré dans la zone **Spécifiez l’emplacement de publication de cette application** sur la page précédente.
 
