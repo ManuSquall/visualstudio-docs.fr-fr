@@ -1,5 +1,6 @@
 ---
-title: Guide pratique pour spécifier des fichiers journaux détaillés pour les déploiements ClickOnce | Microsoft Docs
+title: Spécifier des fichiers journaux détaillés (déploiements ClickOnce)
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e1d2ca7c58d7da85ad67e56eae7713e517a1d2c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 54c90f6a544607e78dd8f294bfc307bc87377b70
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85381767"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808709"
 ---
 # <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>Guide pratique pour spécifier des fichiers journaux détaillés pour les déploiements ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] gère les fichiers journaux d’activité pour tous les déploiements. Ces journaux documentent les détails relatifs à l’installation, l’initialisation, la mise à jour et la désinstallation d’un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement. Pour augmenter les détails qui [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] écrivent dans ces fichiers journaux, utilisez l’éditeur du Registre (*regedit.exe*) pour spécifier le niveau de détail.

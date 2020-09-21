@@ -6,16 +6,16 @@ author: madskristensen
 ms.author: madsk
 ms.date: 11/19/2019
 ms.topic: conceptual
-ms.openlocfilehash: 627b597d9c8f4d68fdb90235ebf51339111374f1
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 2ae6304e206b2cfe47fa587590b740a91c7fec9f
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038593"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810859"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>Comment augmenter les chances de résolution d’un problème de performances
 
-L’outil «[signaler un problème](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019)» est largement utilisé par les utilisateurs de Visual Studio pour signaler une série de problèmes. L’équipe Visual Studio parvient à faire face aux tendances de blocage et de lenteur des commentaires des utilisateurs et à résoudre les problèmes qui ont un impact sur un large SWATH d’utilisateurs. Plus un ticket de commentaires spécifique est exploitable, plus il est probable qu’il sera diagnostiqué et résolu rapidement par l’équipe du produit. Ce document décrit les meilleures pratiques lors de la création de rapports sur les incidents ou les problèmes de lenteur afin de les rendre plus exploitables.
+L’outil «[signaler un problème](./how-to-report-a-problem-with-visual-studio.md?view=vs-2019)» est largement utilisé par les utilisateurs de Visual Studio pour signaler une série de problèmes. L’équipe Visual Studio parvient à faire face aux tendances de blocage et de lenteur des commentaires des utilisateurs et à résoudre les problèmes qui ont un impact sur un large SWATH d’utilisateurs. Plus un ticket de commentaires spécifique est exploitable, plus il est probable qu’il sera diagnostiqué et résolu rapidement par l’équipe du produit. Ce document décrit les meilleures pratiques lors de la création de rapports sur les incidents ou les problèmes de lenteur afin de les rendre plus exploitables.
 
 ## <a name="general-best-practices"></a>Bonnes pratiques générales
 
@@ -56,7 +56,7 @@ Les blocages directement reproductibles sont des cas qui présentent toutes les 
 
 - Peut être reproduit dans un exemple de code ou un projet qui peut être lié ou fourni dans le cadre des commentaires (si les étapes impliquent l’ouverture d’un projet ou d’un document)
 
-Pour ces problèmes, suivez les étapes de la section «[Comment signaler un problème](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)» et veillez à inclure les éléments suivants :
+Pour ces problèmes, suivez les étapes de la section «[Comment signaler un problème](./how-to-report-a-problem-with-visual-studio.md)» et veillez à inclure les éléments suivants :
 
 - Étapes à suivre pour reproduire le problème
 
@@ -103,7 +103,7 @@ Utilisez ensuite la section « signaler un problème... » de Visual Studio. f
 
 2. Si possible, compressez le fichier ( \* . zip) pour réduire sa taille avant de soumettre des commentaires
 
-3. Suivez les étapes décrites dans la section «[Comment signaler un problème](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)», puis attachez le dump du tas à un nouvel élément de commentaires.
+3. Suivez les étapes décrites dans la section «[Comment signaler un problème](./how-to-report-a-problem-with-visual-studio.md)», puis attachez le dump du tas à un nouvel élément de commentaires.
 
 > [!NOTE] 
 > **Commentaires les plus importants :** Dans ce cas, les commentaires les plus précieux sont le vidage du tas capturé au moment de l’incident.
@@ -118,7 +118,7 @@ Comme décrit dans la section correspondante sur les incidents, pour les problè
 **Absence de réponse inconnue**
 
 Si une absence de réponse se manifeste de manière imprévisible, à l’occurrence suivante, lancez une nouvelle instance de Visual Studio et signalez un problème à partir de cette instance.
-Dans l' [écran « enregistrement »](/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019#record-a-repro), veillez à sélectionner la session Visual Studio qui ne répond pas.
+Dans l' [écran « enregistrement »](./how-to-report-a-problem-with-visual-studio.md?view=vs-2019#record-a-repro), veillez à sélectionner la session Visual Studio qui ne répond pas.
 
 Si l’instance de Visual Studio qui ne répond pas a été lancée en mode administrateur, la deuxième instance doit également être lancée en mode administrateur.
 
@@ -145,7 +145,7 @@ Pour obtenir les meilleurs résultats lors de la capture des performances, proc�
 
 3. Dans la nouvelle copie de Visual Studio, ouvrez l’outil **signaler un problème** .
 
-4. Suivez les étapes de la section [Comment signaler un problème](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017) jusqu’à ce que vous atteigniez l’étape « fournir une trace et un dump de tas (facultatif) ».
+4. Suivez les étapes de la section [Comment signaler un problème](./how-to-report-a-problem-with-visual-studio.md) jusqu’à ce que vous atteigniez l’étape « fournir une trace et un dump de tas (facultatif) ».
 
 5. Choisissez d’enregistrer la première copie de Visual Studio (qui rencontre un problème de performances) et de démarrer l’enregistrement.
 
@@ -165,7 +165,7 @@ Pour obtenir les meilleurs résultats lors de la capture des performances, proc�
 
 Lors de l’enregistrement d’un suivi des performances, si la lenteur de l’opération ou du processeur que vous signalez est en fin de compte, arrêtez immédiatement l’enregistrement. Si un trop grand nombre d’informations sont collectées, les informations les plus anciennes sont remplacées. Si le suivi n’est pas arrêté peu de temps (en quelques secondes) après l’opération intéressante, les données de trace utiles seront remplacées.
 
-N’attachez pas directement les traces de performances aux éléments de commentaires existants sur le site Web de la communauté des développeurs. Demander/fournir des informations supplémentaires est un flux de travail pris en charge dans l’outil signaler un problème intégré de Visual Studio. Si un suivi des performances est nécessaire pour résoudre un élément de commentaires précédent, nous allons définir l’état de l’élément de commentaires sur « besoin d’informations supplémentaires », qui peut être répondu de la même façon que pour signaler un nouveau problème. Pour obtenir des instructions détaillées, reportez-vous à la [section « besoin d’informations supplémentaires »](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017?view=vs-2017#when-further-information-is-needed-need-more-info) dans le document signaler un problème de l’outil.
+N’attachez pas directement les traces de performances aux éléments de commentaires existants sur le site Web de la communauté des développeurs. Demander/fournir des informations supplémentaires est un flux de travail pris en charge dans l’outil signaler un problème intégré de Visual Studio. Si un suivi des performances est nécessaire pour résoudre un élément de commentaires précédent, nous allons définir l’état de l’élément de commentaires sur « besoin d’informations supplémentaires », qui peut être répondu de la même façon que pour signaler un nouveau problème. Pour obtenir des instructions détaillées, reportez-vous à la [section « besoin d’informations supplémentaires »](./how-to-report-a-problem-with-visual-studio.md?view=vs-2017#when-further-information-is-needed-need-more-info) dans le document signaler un problème de l’outil.
 
 > [!NOTE] 
 > **Commentaires les plus importants :** Pour presque tous les problèmes de lenteur ou de processeur, les commentaires les plus précieux sont une description de haut niveau de ce que vous tentiez de faire, ainsi que la trace de performances ( \*.etl.zip) qui capture le comportement pendant ce temps.

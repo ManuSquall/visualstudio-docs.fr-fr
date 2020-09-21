@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1b6782a95793f222ba15fe8f928ecd9d7337c90f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9416862ad18bc297696e765d6664a4d08f2cc8dc
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87913309"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809909"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Comment créer et gérer des environnements Python dans Visual Studio
 
@@ -124,7 +124,7 @@ C’est la raison pour laquelle les développeurs créent souvent un *environnem
 
 Visual Studio prend en charge directement la création d’un environnement virtuel pour un projet. Par exemple, si vous ouvrez un projet qui contient un fichier *requirements.txt*, ou si vous créez un projet à partir d’un modèle qui inclut ce fichier, Visual Studio vous invite à créer automatiquement un environnement virtuel et à installer ces dépendances.
 
-À tout moment dans un projet ouvert, vous pouvez créer un environnement virtuel. Dans l’**Explorateur de solutions**, développez le nœud de projet, cliquez avec le bouton droit sur **Environnements Python**, puis sélectionnez Ajouter un environnement virtuel. Pour plus d’informations, consultez [Créer un environnement virtuel](/visualstudio/python/selecting-a-python-environment-for-a-project?view=vs-2019#create-a-virtual-environment-1).
+À tout moment dans un projet ouvert, vous pouvez créer un environnement virtuel. Dans l’**Explorateur de solutions**, développez le nœud de projet, cliquez avec le bouton droit sur **Environnements Python**, puis sélectionnez Ajouter un environnement virtuel. Pour plus d’informations, consultez [Créer un environnement virtuel](./selecting-a-python-environment-for-a-project.md?view=vs-2019#create-a-virtual-environment-1).
 
 Visual Studio fournit également une commande qui permet de générer un fichier *requirements.txt* à partir d’un environnement virtuel, ce qui facilite la recréation de l’environnement sur d’autres ordinateurs. Pour plus d’informations, consultez [Utiliser des environnements virtuels](selecting-a-python-environment-for-a-project.md#use-virtual-environments).
 
@@ -159,8 +159,8 @@ Vous créez un environnement conda à l’aide de l’outil `conda`, ou avec la 
 
     | Champ | Description |
     | --- | --- |
-    | Projet | Projet dans lequel créer l’environnement (si vous avez plusieurs projets dans la même solution Visual Studio). |
-    | Nom | Nom de l’environnement conda. |
+    | Project | Projet dans lequel créer l’environnement (si vous avez plusieurs projets dans la même solution Visual Studio). |
+    | Name | Nom de l’environnement conda. |
     | Ajouter des packages depuis | Choisissez **Fichier d’environnement** si vous avez un fichier *environment.yml* décrivant vos dépendances de fichiers, ou choisissez **un ou plusieurs noms de packages Anaconda** et répertoriez au moins un package Python ou une version de Python dans le champ situé en dessous. La liste des packages indique à conda de créer un environnement Python. Pour installer la dernière version de Python, utilisez `python` ; pour installer une version spécifique, utilisez `python=,major>.<minor>` comme dans `python=3.7`. Vous pouvez également utiliser le bouton de package pour sélectionner des versions de Python et des packages communs à partir d’une série de menus. |
     | Définir en tant qu’environnement actuel | Active le nouvel environnement dans le projet sélectionné lorsque l’environnement est créé. |
     | Définir en tant qu’environnement par défaut pour les nouveaux projets | Définit et active automatiquement l’environnement conda dans tous les nouveaux projets créés dans Visual Studio. Cette option est identique à l’option **Définir cet environnement comme valeur par défaut pour les nouveaux projets** dans la fenêtre **Environnements Python**. |

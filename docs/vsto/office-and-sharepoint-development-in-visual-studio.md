@@ -21,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ce0084d6bf734ee8a9de63b0cf3da73504b0d4e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bc1241a39707eedc4b34e0ef3531ab65e49b8238
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800942"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811030"
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Développement Office et SharePoint dans Visual Studio
   Vous pouvez étendre Microsoft Office et SharePoint en créant une application légère ou un complément que les utilisateurs téléchargent à partir d’ [Office Store](https://store.office.com/) ou d’un catalogue d’organisation, ou en créant une solution .NET Framework que les utilisateurs installent sur un ordinateur.
@@ -59,10 +59,10 @@ ms.locfileid: "88800942"
 
  **En savoir plus**
 
-|Pour|Consultez|
+|À|Consultez|
 |--------|---------|
 |En savoir plus sur les compléments Office, puis en créer un.|[Compléments Office](/office/dev/add-ins/publish/publish)|
-|Comparez les différentes façons dont vous pouvez étendre Office et décidez si vous devez utiliser une application ou un complément Office.|[Feuille de route pour les compléments Office, VSTO et VBA](https://blogs.msdn.microsoft.com/officeapps/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba/)|
+|Comparez les différentes façons dont vous pouvez étendre Office et décidez si vous devez utiliser une application ou un complément Office.|[Feuille de route pour les compléments Office, VSTO et VBA](/archive/blogs/officeapps/roadmap-for-apps-for-office-vsto-and-vba)|
 
 ### <a name="build-a-sharepoint-add-in"></a>Créer un complément SharePoint
  Pour étendre SharePoint à vos utilisateurs, créez un complément SharePoint. Il s’agit essentiellement d’une application autonome, petite et facile à utiliser qui résout un besoin de vos utilisateurs ou de votre entreprise.
@@ -75,7 +75,7 @@ ms.locfileid: "88800942"
 
  **En savoir plus**
 
-|Pour|Consultez|
+|À|Consultez|
 |--------|---------|
 |En savoir plus sur les compléments SharePoint, puis en créer un.|[Compléments SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins)|
 |Comparer les compléments pour SharePoint avec les solutions SharePoint traditionnelles.|[Comparaison entre les compléments SharePoint et les solutions SharePoint](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|
@@ -90,9 +90,9 @@ ms.locfileid: "88800942"
 
  **En savoir plus**
 
-|Pour|Lire|
+|À|Lire|
 |--------|----------|
-|Comparer les différentes façons dont vous pouvez étendre Office et déterminer si vous devez utiliser un complément VSTO ou un complément Office.|[Feuille de route pour les compléments Office, VSTO et VBA](https://blogs.msdn.microsoft.com/officeapps/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba/)|
+|Comparer les différentes façons dont vous pouvez étendre Office et déterminer si vous devez utiliser un complément VSTO ou un complément Office.|[Feuille de route pour les compléments Office, VSTO et VBA](/archive/blogs/officeapps/roadmap-for-apps-for-office-vsto-and-vba)|
 |Créer un complément VSTO.|[Création de compléments VSTO avec Visual Studio](create-vsto-add-ins-for-office-by-using-visual-studio.md)|
 
 ## <a name="create-a-sharepoint-solution"></a><a name="Solutions"></a> Créer une solution SharePoint
@@ -102,7 +102,7 @@ ms.locfileid: "88800942"
 
  **En savoir plus**
 
-|Pour|Consultez|
+|À|Consultez|
 |--------|---------|
 |Comparer des solutions SharePoint et des compléments SharePoint.|[Comparaison entre les compléments SharePoint et les solutions SharePoint](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|
 |Créer une solution SharePoint.|[Créer des solutions SharePoint](../sharepoint/create-sharepoint-solutions.md)|

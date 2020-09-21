@@ -1,5 +1,6 @@
 ---
-title: Durée de démarrage de l’étape d’un modèle de charge par étape pour les tests de charge
+title: Durée de démarrage de l’étape pour les tests de charge
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -8,12 +9,12 @@ ms.assetid: 4a69e857-f93b-4907-9a01-fd1b66291205
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5ae00c3d9d647eff6f9df448c1681ae1d6c54bcb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 83ec0866407ef22e2f6c12e21207f8616b9a9477
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287322"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810573"
 ---
 # <a name="how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern"></a>Guide pratique pour spécifier la propriété de la durée de démarrage de l’étape dans le modèle de charge
 

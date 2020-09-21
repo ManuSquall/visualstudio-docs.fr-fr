@@ -1,5 +1,6 @@
 ---
-title: Collecte des données liées à la durée de vie des objets et à l’allocation de mémoire .NET | Microsoft Docs
+title: Collecter les données d’allocation de mémoire .NET & de durée de vie
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,16 +12,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1c256fcedf3ea1733f620a18528704fe455d1131
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1354fb95b543e73a67d19204871f3b79aec9ece9
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331714"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809425"
 ---
-# <a name="collect-net-memory-allocation-and-lifetime-data"></a>Collecter les données liées à l’allocation et à la durée de vie de la mémoire .NET
+# <a name="collect-net-framework-memory-allocation-and-lifetime-data"></a>Collecter les données d’allocation de mémoire et de durée de vie .NET Framework
 
-Les Outils de profilage de Visual Studio prennent en charge la collecte des données d’allocation de mémoire .NET et de durée de vie des objets, ce qui permet de détecter les problèmes de performances liés à la mémoire de l’application.
+Visual Studio Outils de profilage prennent en charge la collection de .NET Framework les données d’allocation de mémoire et de durée de vie des objets, ce qui vous permet de détecter les problèmes de performances liés à la mémoire dans votre application.
 
 - Les données concernant l’allocation de mémoire .NET incluent le nombre d’objets mémoire .NET Framework qui ont été alloués, ainsi que leur taille.
 

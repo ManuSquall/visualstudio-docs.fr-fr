@@ -10,12 +10,12 @@ author: mikejo5000
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: f92fe91c31f2b352d9d47a2d908a25f7bfdf2a7c
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 9ef41b8645e77a28c8422fff49111b41215ba971
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038411"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739874"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Isoler du code testé avec Microsoft Fakes
 
@@ -146,7 +146,7 @@ Pour obtenir une description détaillée, consultez [Utilisation de stubs pour i
 
     ```
 
-    Ici, l'aspect le plus magique est la classe `StubIStockFeed`. Pour chaque interface de l'assembly référencé, le mécanisme Microsoft Fakes génère une classe stub. Le nom de la classe stub est dérivé du nom de l'interface, précédé de "`Fakes.Stub`", et auquel sont ajoutés les noms de types de paramètre.
+    Ici, l'aspect le plus magique est la classe `StubIStockFeed`. Pour chaque interface de l'assembly référencé, le mécanisme Microsoft Fakes génère une classe stub. Le nom de la classe stub est dérivé du nom de l’interface, avec « `Fakes.Stub` » comme préfixe, et les noms des types de paramètres ajoutés.
 
     Les stubs sont également générés pour les accesseurs Get et les méthodes setter de propriétés, les événements et les méthodes génériques. Pour plus d’informations, consultez [Utilisation de stubs pour isoler des parties de votre application les unes des autres pour des tests unitaires](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md).
 

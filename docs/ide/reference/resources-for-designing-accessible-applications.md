@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8ac7beac67a2f1d0010ee64ae7af31108d7ec3b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 49963df35aa5bebd126aa241fca6cb1712a0b111
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "70107836"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808992"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Ressources pour la conception d’applications accessibles
 
@@ -48,9 +48,9 @@ En savoir plus sur les technologies qui prennent en charge la conception accessi
 
 ## <a name="websites"></a>Sites web
 
-- [Procédure pas à pas : directives d’accessibilité pour l’utilisation de contrôles Image, Menu et AutoPostBack](https://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) : cet article fournit des instructions détaillées pour inclure des contrôles accessibles dans un exemple de page web. Il donne également des conseils de conception de l’accessibilité pour le web.
+- [Procédure pas à pas : directives d’accessibilité pour l’utilisation de contrôles Image, Menu et AutoPostBack](/previous-versions/3has1x30(v=vs.140)) : cet article fournit des instructions détaillées pour inclure des contrôles accessibles dans un exemple de page web. Il donne également des conseils de conception de l’accessibilité pour le web.
 
-- **Création de pages web accessibles en DHTML** Cet article technique répertorie les éléments HTML 4.0 accessibles, ainsi que les conseils de design concernant l’accessibilité pour le web. Pour plus d’informations, consultez [Créer des pages web accessibles avec DHTML](https://msdn.microsoft.com/library/ms528445.aspx).
+- **Création de pages web accessibles en DHTML** Cet article technique répertorie les éléments HTML 4.0 accessibles, ainsi que les conseils de design concernant l’accessibilité pour le web. Pour plus d’informations, consultez [Créer des pages web accessibles avec DHTML](/previous-versions//ms528445(v=vs.85)).
 
 ### <a name="third-party-resources"></a>Ressources tierces
 

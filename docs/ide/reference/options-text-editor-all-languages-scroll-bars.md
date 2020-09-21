@@ -32,12 +32,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54ce07537adc436f719de8596657d1367afcb87d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c89be8a79aad9a2e3e0cdbc8601a08a99c1ad1aa
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75588796"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808088"
 ---
 # <a name="options-text-editor-all-languages-scroll-bars"></a>Options, Éditeur de texte, Tous les langages, Barres de défilement
 Cette boîte de dialogue vous permet de modifier le comportement par défaut de la barre de défilement de l’éditeur de code. Pour afficher ces options, sélectionnez **Options** dans le menu **Outils**. Dans le dossier **Éditeur de texte**, développez le sous-dossier **Tous les langages**, puis choisissez **Barres de défilement**.
@@ -69,7 +69,7 @@ Indiquez si la barre de défilement verticale doit afficher les annotations suiv
 
 Testez-la en ouvrant un long fichier de code et en remplaçant du texte qui se répète à différents endroits dans le fichier. La barre de défilement affiche l'effet de ces remplacements. Vous pouvez ainsi annuler des modifications si vous avez remplacé un élément par erreur.
 
-Consultez le billet de blog [Barre de défilement améliorée](https://blogs.msdn.microsoft.com/cdnstudents/2014/01/21/visual-studio-tips-and-tricks-enhanced-scroll-bar/) sur la signification des différentes couleurs et des divers symboles utilisés quand vous modifiez du code.
+Consultez le billet de blog [Barre de défilement améliorée](/archive/blogs/cdnstudents/visual-studio-tips-and-tricks-enhanced-scroll-bar) sur la signification des différentes couleurs et des divers symboles utilisés quand vous modifiez du code.
 
 ## <a name="behavior"></a>Comportement
 

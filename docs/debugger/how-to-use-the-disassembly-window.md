@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0570aec5e8571e75cf64418a2c8c7c95cf507d31
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 23f297aa3fc549714a9b6327232a8a0b69c6138f
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348702"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808166"
 ---
 # <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Afficher le code machine dans le débogueur Visual Studio (C#, C++, Visual Basic, F #)
 
@@ -58,7 +58,7 @@ Pour afficher les instructions de code machine sous leur forme numérique brute,
 
 ## <a name="use-the-disassembly-window"></a>Utiliser la fenêtre Code Machine
 
-Pour activer la fenêtre **code machine** , sous **Tools**  >  **options** des outils (ou options des **Outils**  >  **Options**) > **débogage**, sélectionnez **activer le débogage au niveau de l’adresse**.
+Pour activer la fenêtre **code machine** , sous **Outils**  >  **options**  >  **débogage**, sélectionnez **activer le débogage au niveau de l’adresse**.
 
 Pour ouvrir la fenêtre **code machine** pendant le débogage, sélectionnez **Windows**  >  **code machine** ou appuyez sur **ALT** + **8**.
 

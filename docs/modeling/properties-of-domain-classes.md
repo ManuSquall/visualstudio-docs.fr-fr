@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2865e6a6d410d661bc628fd9c7f1947516485018
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2b3ff1ece9e57239b49c5dcbef5091a14d8b0fa5
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85544181"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810026"
 ---
 # <a name="properties-of-domain-classes"></a>Propriétés des classes de domaine
 Les classes de domaine ont les propriétés dans le tableau suivant. Pour plus d’informations sur les classes de domaine, consultez [Présentation des modèles, des classes et des relations](../modeling/understanding-models-classes-and-relationships.md). Pour plus d’informations sur l’utilisation de ces propriétés, consultez [personnalisation et extension d’un langage spécifique à un domaine](../modeling/customizing-and-extending-a-domain-specific-language.md).
@@ -27,7 +27,7 @@ Les classes de domaine ont les propriétés dans le tableau suivant. Pour plus d
 |A un constructeur personnalisé|Si `True` , un constructeur personnalisé est fourni dans le code source. Pour plus d’informations, consultez [substitution et extension des classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|`False`|
 |Modificateur d’héritage|Décrit le type d’héritage de la classe de code source qui est généré à partir de la classe de domaine ( `none` , `abstract` ou `sealed` ).|`none`|
 |Classe de base|Si cette classe de domaine est dérivée, il s’agit du nom de la classe de base.|\<none>|
-|Nom|Nom de cette classe de domaine.|Nom actuel|
+|Name|Nom de cette classe de domaine.|Nom actuel|
 |Espace de noms|Espace de noms de cette classe de domaine.|Espace de noms actuel|
 |Notes|Notes informelles associées à cette classe de domaine.|\<none>|
 |Description|Description utilisée pour documenter l’interface utilisateur du concepteur généré.|\<none>|
@@ -36,4 +36,4 @@ Les classes de domaine ont les propriétés dans le tableau suivant. Pour plus d
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Glossaire des Outils Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glossaire des Outils Domain-Specific Language](/previous-versions/bb126564(v=vs.100))

@@ -1,5 +1,6 @@
 ---
-title: Définir l’emplacement du fichier journal personnalisé pour les erreurs de déploiement ClickOnce
+title: Définir l’emplacement du fichier journal personnalisé (erreurs de déploiement ClickOnce)
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05ffd1cf32f8c7ea93e63232f7026c6c926f9308
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d5b5cf73a685eb68e389e6531022200acbefbfd2
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382170"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809740"
 ---
 # <a name="how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors"></a>Guide pratique pour définir l’emplacement d’un fichier journal personnalisé pour les erreurs de déploiement ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] conserve les fichiers journaux d’activation pour tous les déploiements. Ces journaux documentent les erreurs relatives à l’installation et à l’initialisation d’un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement. Par défaut, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] crée un fichier journal pour chaque activation de déploiement. Il stocke ces fichiers journaux dans le dossier Temporary Internet Files. Le fichier journal d’un déploiement est présenté à l’utilisateur lorsqu’un échec d’activation se produit et que l’utilisateur clique sur **Détails** dans la boîte de dialogue d’erreur qui s’affiche.

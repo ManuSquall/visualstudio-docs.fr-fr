@@ -1,5 +1,6 @@
 ---
-title: Comment spécifier l’emplacement à partir duquel les utilisateurs finaux vont installer | Microsoft Docs
+title: Spécifier l’emplacement à partir duquel les utilisateurs finaux s’installent
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -17,14 +18,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e28ad8353858b35fc1c4e83f0511a58b4162dc9d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1ba02b1cf8947fa2d1907d6316e36af8f8f54a77
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85381936"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808722"
 ---
 # <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>Guide pratique pour spécifier l’emplacement à partir duquel les utilisateurs finaux effectueront l’installation
+
 Lors de la publication d’une [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application, l’emplacement où les utilisateurs accèdent au téléchargement et à l’installation de l’application n’est pas nécessairement l’emplacement où vous publiez initialement l’application. Par exemple, dans certaines organisations, un développeur peut publier une application sur un serveur intermédiaire, puis un administrateur déplace l’application vers un serveur Web.
 
 Dans ce cas, vous pouvez utiliser la `Installation URL` propriété pour spécifier le serveur Web sur lequel les utilisateurs doivent accéder pour télécharger l’application. Cela est nécessaire pour que le manifeste d’application sache où rechercher les mises à jour.

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: abb58d30e33ab5cfe713175b40cd32f593921ae9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5c1e9ce9ff2ab0a55de0a7e51325885d86c2fbf1
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80543946"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811017"
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Vue d’ensemble du développement des solutions Office (VSTO)
   En utilisant Microsoft Office comme partie frontale des solutions, vous pouvez tirer parti des interfaces utilisateur et outils Microsoft Office familiers tels que les fonctionnalités de traitement de texte dans Word, les fonctionnalités d'analyse des données d'Excel et les fonctionnalités de gestion de la messagerie électronique d'Outlook. Vous pouvez développer des solutions dans Visual Studio pour personnaliser des applications Office et ajouter les fonctionnalités spécifiques dont vous avez besoin pour vos processus métier. Par exemple, vous pouvez transformer Word en générateur de contrats qui assemble des contrats à partir de parties préexistantes qui peuvent être modifiables ou non. Avec Excel, vous pouvez créer une feuille de calcul de budget automatisée personnalisée pour différents projets. Vos utilisateurs peuvent aussi mettre des solutions Office hors connexion, ce qui permet de rendre des solutions complexes plus pratiques qu'elles ne le seraient en utilisant une architecture basée sur le Web.
@@ -58,7 +58,7 @@ ms.locfileid: "80543946"
 
 - [Prise en main de la programmation de compléments VSTO](../vsto/getting-started-programming-vsto-add-ins.md)
 
-- [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)
+- [Architecture des compléments VSTO](../vsto/architecture-of-vsto-add-ins.md)
 
 ## <a name="automate-office-applications-by-using-primary-interop-assemblies"></a>Automatiser des applications Office à l’aide d’assemblys PIA
  Vous pouvez incorporer par programme les fonctionnalités d'une application Office dans votre solution en écrivant du code qui accède au modèle objet de l'application. Les modèles objet sont une organisation de classes qui exposent des fonctionnalités via diverses propriétés et méthodes. Le modèle objet est différent pour chaque application Office.
@@ -71,7 +71,7 @@ ms.locfileid: "80543946"
 
 - [Écrire du code dans les solutions Office](../vsto/writing-code-in-office-solutions.md)
 
-- [assemblys PIA (Primary Interop Assembly) Office](../vsto/office-primary-interop-assemblies.md)
+- [Assemblys PIA (Primary Interop Assembly) Office](../vsto/office-primary-interop-assemblies.md)
 
 ## <a name="run-microsoft-vsto-office-solutions-on-end-user-computers"></a>Exécuter des solutions Office Microsoft VSTO sur les ordinateurs des utilisateurs finaux
  Quand vous créez une solution Office VSTO, vous devez réfléchir à la façon dont les spécifications de déploiement peuvent affecter vos choix de développement.
@@ -80,7 +80,7 @@ ms.locfileid: "80543946"
  Utilisez ClickOnce ou Windows Installer pour déployer les solutions que vous créez à l'aide des Outils de développement Office de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Le déploiement ClickOnce vous permet de créer des solutions à mise à jour automatique qui peuvent être installées et exécutées avec une intervention minimale de l'utilisateur. Les fichiers Windows Installer (*. msi*) peuvent être facilement distribués aux ordinateurs des utilisateurs finaux ou distribués à l’aide de Systems Management Server (SMS). Pour plus d’informations sur le déploiement de solutions Office VSTO, consultez [déployer une solution Office](../vsto/deploying-an-office-solution.md).
 
 ### <a name="install-prerequisites"></a>Installer les prérequis
- Avant que les utilisateurs finaux ne puissent exécuter une solution créée à l'aide des Outils de développement Office de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], certains composants doivent être installés sur leur ordinateur. Si vous déployez votre solution en utilisant ClickOnce ou en créant un fichier Windows Installer, ces composants requis peuvent être installés avec votre solution. Pour plus d’informations, consultez [Configuration requise pour la solution Office pour le déploiement](https://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e) et [procédure : installer les composants requis sur les ordinateurs des utilisateurs finaux pour exécuter des solutions Office](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).
+ Avant que les utilisateurs finaux ne puissent exécuter une solution créée à l'aide des Outils de développement Office de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], certains composants doivent être installés sur leur ordinateur. Si vous déployez votre solution en utilisant ClickOnce ou en créant un fichier Windows Installer, ces composants requis peuvent être installés avec votre solution. Pour plus d’informations, consultez [Configuration requise pour la solution Office pour le déploiement](/previous-versions/bb608617(v=vs.110)) et [procédure : installer les composants requis sur les ordinateurs des utilisateurs finaux pour exécuter des solutions Office](/previous-versions/bb608608(v=vs.110)).
 
 ### <a name="security"></a>Sécurité
  La sécurité pour les solutions Office VSTO est appliquée par une série de contrôles effectués par [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] au moment de l'installation et du chargement de la solution. Ces contrôles permettent notamment de vérifier si l'emplacement du manifeste de déploiement ou le certificat utilisé pour signer le manifeste est approuvé. Pour plus d’informations, consultez [sécuriser les solutions Office](../vsto/securing-office-solutions.md).
@@ -88,7 +88,7 @@ ms.locfileid: "80543946"
 ## <a name="see-also"></a>Voir aussi
 - [Prise en main &#40;le développement Office dans Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [Architecture des personnalisations au niveau du document](../vsto/architecture-of-document-level-customizations.md)
-- [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)
+- [Architecture des compléments VSTO](../vsto/architecture-of-vsto-add-ins.md)
 - [Prise en main de la programmation des personnalisations au niveau du document pour Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md)
 - [Prise en main de la programmation des personnalisations au niveau du document pour Word](../vsto/getting-started-programming-document-level-customizations-for-word.md)
 - [Prise en main de la programmation de compléments VSTO](../vsto/getting-started-programming-vsto-add-ins.md)

@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8e6be79bc38e9283493bf5b7428a21c17cf9d3e0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 287ef3ccfd344786bd98098c5f28d0a2bd6573f6
+ms.sourcegitcommit: 4a9689890f271f9b8b73c3333e0699cce84a95d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62896618"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90832318"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Spécificateurs de format pour C++ dans le débogueur Visual Studio
 Vous pouvez modifier le format dans lequel une valeur est affichée dans les fenêtres **Espion**, **automatique**et **variables locales** à l’aide de spécificateurs de format.
@@ -78,7 +78,7 @@ Les tableaux suivants décrivent les spécificateurs de format que vous pouvez u
 |bb|entier binaire non signé (sans 0b au début)|25|00000000000000000000000000011001|
 |e|Notation scientifique|25000000|2.500000 e + 07|
 |g|Forme courte de la notation scientifique ou virgule flottante|25000000|2,5 e + 07|
-|c|caractère unique|0x0065, c|101 ’e’|
+|c|caractère unique|0x0065|101 ’e’|
 |s|const char * chaîne (avec guillemets)|\<location> « Hello World »|« Hello World »|
 |**aspirateur**|const char* chaîne (sans guillemets)|\<location> « Hello World »|hello world|
 |s8|Chaîne UTF-8|\<location> « Il s’agit d’une tasse de café UTF-8 ̃ • »|« Il s’agit d’une ☕ de café UTF-8 »|
@@ -153,8 +153,8 @@ Les spécificateurs en **gras** sont pris en charge uniquement pour le débogage
 |**u**|entier décimal non signé|0x0065|101|
 |o|entier octal non signé|0xF065|0170145|
 |x<br /><br />X|entier hexadécimal|61541|0x0000f065|
-|**budget**<br /><br />**h**|préfixe long ou court pour : d, i, u, o, x, X|00406042|0x0c22|
-|**FA**|virgule flottante signée|(3./2.), f|1.500000|
+|**l**<br /><br />**h**|préfixe long ou court pour : d, i, u, o, x, X|00406042|0x0c22|
+|**f**|virgule flottante signée|(3./2.), f|1.500000|
 |**Envoyer**|notation scientifique signée|(3.0/2.0)|1.500000e+000|
 |**activée**|virgule flottante signée ou notation scientifique signée,<br/> selon celui qui est le plus court|(3.0/2.0)|1.5|
 |c|caractère unique|\<location>|101 ’e’|
@@ -173,7 +173,7 @@ Le tableau suivant décrit les symboles de mise en forme utilisés pour les empl
 |Symbole|Format|Valeur d’espion d’origine|Valeur affichée|
 |------------|------------|--------------------------|---------------------|
 |**maximum**|64 caractères ASCII|0x0012ffac|0x0012ffac .4...0...".0W&.......1W&.0.:W..1...."..1.JO&.1.2.."..1...0y....1|
-|**lecteur**|16 octets en hexadécimal suivis de 16 caractères ASCII|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...".0W&amp;.|
+|**m**|16 octets en hexadécimal suivis de 16 caractères ASCII|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...".0W&amp;.|
 |**Mbit**|16 octets en hexadécimal suivis de 16 caractères ASCII|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...".0W&amp;.|
 |**MW**|8 mots|0x0012ffac|0x0012ffac 34B3 00CB 3084 8094 22FF 308A 2657 0000|
 |**md**|4 mots doubles|0x0012ffac|0x0012ffac 00CB34B3 80943084 308A22FF 00002657|

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4dfb7592fb2cec05da1bd72bd69a76e9a3b270db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7b3aeee895810eed8e434fda93328e4e179c9d39
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "63007937"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740108"
 ---
 # <a name="use-the-sharepoint-project-service"></a>Utiliser le service de projet SharePoint
   Le système de projet SharePoint inclut un service de projet que vous pouvez utiliser pour effectuer des tâches liées au système de projet. Le service de projet est un objet <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService>.
@@ -47,4 +47,4 @@ ms.locfileid: "63007937"
 - [Comment : récupérer le service de projet SharePoint](../sharepoint/how-to-retrieve-the-sharepoint-project-service.md)
 - [Étendre les outils SharePoint dans Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
 - [Vue d’ensemble du modèle de programmation des extensions d’outils SharePoint](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)
-- [Guide pratique pour obtenir un service à partir de l’objet DTE](https://msdn.microsoft.com/library/bb166401.aspx)
+- [Guide pratique pour obtenir un service à partir de l’objet DTE](/previous-versions/bb166401(v=vs.140))

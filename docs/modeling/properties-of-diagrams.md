@@ -11,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 762c2acb6774d7eb4949087fdd91e85c86acd6bb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3fd1ab781fd838c8e5379e38fdcb3a6fddd65230
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595421"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810039"
 ---
 # <a name="properties-of-diagrams"></a>Propriétés des diagrammes
 Vous pouvez définir des propriétés qui spécifient le mode d’affichage des diagrammes dans le concepteur généré. Par exemple, vous pouvez spécifier une couleur par défaut pour le texte dans le diagramme.
@@ -27,15 +27,15 @@ Vous pouvez définir des propriétés qui spécifient le mode d’affichage des 
 
 |Propriété|Description|Default|
 |-|-|-|
-|Couleur de remplissage|Couleur de remplissage du diagramme.|White|
+|Couleur de remplissage|Couleur de remplissage du diagramme.|Blancs|
 |Couleur du texte|Couleur du texte affiché sur le diagramme.|Noir|
 |Modificateur d'accès|Modificateur d’accès de la classe (public ou Internal).|Public|
 |Attributs personnalisés|Utilisé pour ajouter des attributs à la classe de code générée.|\<none>|
 |Génère un doublon dérivé|Si `True` la valeur est, une classe de base et une classe partielle (pour prendre en charge la personnalisation via des substitutions) sont générées. Pour plus d’informations, consultez [remplacer et étendre les classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|Faux|
 |A un constructeur personnalisé|Si `True` , un constructeur personnalisé est fourni dans le code source. Pour plus d’informations, consultez [remplacer et étendre les classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|Faux|
-|Modificateur d’héritage|Décrit le type d’héritage de la classe de code source qui est généré à partir du diagramme ( `none` , `abstract` ou `sealed` ).|None|
+|Modificateur d’héritage|Décrit le type d’héritage de la classe de code source qui est généré à partir du diagramme ( `none` , `abstract` ou `sealed` ).|Aucun|
 |Diagramme de base|Classe de base de ce diagramme.|(aucun)|
-|Nom|Nom de ce diagramme.|Nom actuel|
+|Name|Nom de ce diagramme.|Nom actuel|
 |Espace de noms|Espace de noms affilié à ce diagramme.|Espace de noms actuel|
 |Classe représentée|Classe de domaine racine représentée par ce diagramme.|Classe racine actuelle, le cas échéant|
 |Notes|Notes informelles associées à cet élément.|\<none>|
@@ -47,4 +47,4 @@ Vous pouvez définir des propriétés qui spécifient le mode d’affichage des 
 
 ## <a name="see-also"></a>Voir aussi
 
-[Glossaire des outils de langage spécifique à un domaine](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+[Glossaire des outils de langage spécifique à un domaine](/previous-versions/bb126564(v=vs.100))

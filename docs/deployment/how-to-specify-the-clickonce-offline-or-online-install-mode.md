@@ -1,5 +1,6 @@
 ---
-title: Guide pratique pour spécifier le mode d’installation en ligne ou hors connexion ClickOnce | Microsoft Docs
+title: Spécifier le mode d’installation hors connexion ou en ligne (ClickOnce)
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dcd9eeedfdd2a4661e3744da369a6fadc11039a3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 896d2218237b884d9483496e0adac157a6e26fd3
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85381754"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808735"
 ---
 # <a name="how-to-specify-the-clickonce-offline-or-online-install-mode"></a>Guide pratique pour spécifier le mode d’installation en ligne et hors connexion ClickOnce
 `Install Mode`Pour une [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application détermine si l’application sera disponible hors connexion ou en ligne. Lorsque vous choisissez **l’application est disponible en ligne uniquement**, l’utilisateur doit avoir accès à l' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] emplacement de publication (une page Web ou un partage de fichiers) pour exécuter l’application. Lorsque vous choisissez **l’application est également disponible hors connexion**, l’application ajoute des entrées au menu **Démarrer** et à la boîte de dialogue **Ajout/suppression de programmes** . l’utilisateur peut exécuter l’application quand elle n’est pas connectée.

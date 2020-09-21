@@ -1,18 +1,18 @@
 ---
 title: Utilisation des clés de produit | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 89e3fcf9-fe5d-4266-8dd7-5567d05fe869
-ms.date: 03/09/2020
+ms.date: 09/18/2020
 ms.topic: conceptual
 description: Découvrez comment obtenir et gérer vos clés de produit dans les abonnements Visual Studio.
-ms.openlocfilehash: 10b09275dc1ba3d20e47c097888677e733e21ced
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a7a2551b98672332af88210a0347c9ee3faf2cc
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "84183923"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809157"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Utilisation de clés de produit dans les abonnements Visual Studio
 
@@ -52,12 +52,12 @@ Vous devez être connecté à votre abonnement Visual Studio pour afficher vos c
 Certains produits regroupent plusieurs éditions du produit en un seul téléchargement. Dans ces cas de figure, la clé de produit entrée détermine l’édition du produit installée.
 Certaines clés sont fournies automatiquement, comme les clés « statiques » qui peuvent être utilisées un nombre de fois illimité, car elles ne nécessitent aucune activation. D’autres clés doivent être demandées à l’aide du lien **Obtenir une clé** correspondant au produit.
 > [!div class="mx-imgBorder"]
-> ![Obtenir une clé à partir de la page Téléchargements](_img/product-keys/download-get-key.png)
+> ![Obtenir une clé à partir de la page Téléchargements](_img/product-keys/download-get-key.png "Cliquez sur obtenir une clé pour demander une clé pour le produit que vous téléchargez.")
 
 Toutes les clés disponibles sont également regroupées dans la page [Clés de produit](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs). Dans cette page, vous pouvez trouver des clés statiques qui fonctionnent pour tous les utilisateurs d’un produit, vous pouvez obtenir des clés personnalisées uniquement pour votre utilisation, vous pouvez consulter l’état de vos limites de réclamation de clé, et vous pouvez exporter toutes vos clés de produit. 
 
 > [!div class="mx-imgBorder"]
-> ![Page des clés de produit](_img/product-keys/product-keys-page.png)
+> ![Page des clés de produit](_img/product-keys/product-keys-page.png "La page clés de produit fournit des informations complètes sur la clé de produit pour votre abonnement spécifique.")
 
 Différents types de clés sont disponibles en fonction du produit.
 

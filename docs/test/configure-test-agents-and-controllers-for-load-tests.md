@@ -1,5 +1,6 @@
 ---
-title: Configurer les agents de test et les contrôleurs de test pour les tests de charge
+title: Configurer des agents de test/contrôleurs de test pour les tests de charge
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8fa44ffd75cd64f3ce745524ecdcf6ccb7b9a9b5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fe6811f4deaa5958b050a8f93f74e48e2dc73f38
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288804"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809287"
 ---
 # <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>Vue d’ensemble des agents de test et des contrôleurs de test pour l’exécution de tests de charge
 
@@ -37,7 +38,7 @@ Cette architecture offre les avantages suivants :
 
 - La possibilité de faire évoluer la génération de charge en ajoutant des agents de test supplémentaires à un contrôleur de test.
 
-- Une flexibilité pour l'installation du logiciel du client, du contrôleur de test et des agents de test sur le même ordinateur ou sur différents ordinateurs. Par exemple :
+- Une flexibilité pour l'installation du logiciel du client, du contrôleur de test et des agents de test sur le même ordinateur ou sur différents ordinateurs. Exemple :
 
    **Configuration locale :**
 

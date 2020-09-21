@@ -1,5 +1,5 @@
 ---
-title: " Guide de productivité"
+title: Guide de productivité
 ms.date: 4/29/2020
 ms.topic: conceptual
 author: ornellaalt
@@ -7,12 +7,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa4a768f8ebd8b39918fa3ba51d4eb9b3f773151
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a10b1f9b3dd6dda643a2775cf7b89221fba71d8
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89219762"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808140"
 ---
 # <a name="productivity-guide-for-visual-studio"></a>Guide de productivité pour Visual Studio
 
@@ -20,7 +20,7 @@ Si vous souhaitez gagner du temps pendant que vous écrivez du code, vous êtes 
 
 Pour plus d’informations sur les raccourcis clavier utiles, consultez [Raccourcis de productivité](../ide/productivity-shortcuts.md). Pour obtenir la liste complète des raccourcis de commande, consultez [Raccourcis clavier par défaut](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
-## <a name="get-started"></a>Bien démarrer
+## <a name="get-started"></a>Commencer
 
 Gagnez du temps dans l’exploration des menus en recherchant rapidement les éléments dont vous avez besoin, notamment les commandes, les paramètres, la documentation et les options d’installation. Consultez Raccourcis clavier pour les commandes dans les résultats de la recherche dans Visual Studio afin de pouvoir les mémoriser plus facilement. 
 
@@ -32,9 +32,9 @@ Gagnez du temps dans l’exploration des menus en recherchant rapidement les él
 
 - **Rendez Visual Studio plus accessible**. Visual Studio inclut des fonctionnalités d’accessibilité intégrées qui sont compatibles avec les lecteurs d’écran et d’autres appareils de technologie d’assistance. Pour obtenir la liste complète des fonctionnalités disponibles [, consultez conseils et astuces d’accessibilité pour Visual Studio](../ide/reference/accessibility-tips-and-tricks.md) . 
 
-- Découvrez **le cycle de vie et la maintenance du produit Visual Studio**. Pour plus d’informations sur la façon d’obtenir des mises à jour pour Visual Studio, des options de support pour les clients professionnels et professionnels, la prise en charge des versions antérieures de Visual Studio et les composants non couverts par la maintenance de Visual Studio, consultez [cycle de vie et maintenance du produit Visual Studio](https://docs.microsoft.com/visualstudio/releases/2019/servicing). 
+- Découvrez **le cycle de vie et la maintenance du produit Visual Studio**. Pour plus d’informations sur la façon d’obtenir des mises à jour pour Visual Studio, des options de support pour les clients professionnels et professionnels, la prise en charge des versions antérieures de Visual Studio et les composants non couverts par la maintenance de Visual Studio, consultez [cycle de vie et maintenance du produit Visual Studio](/visualstudio/releases/2019/servicing). 
 
-- **Installer et gérer des packages NuGet dans Visual Studio**. L’interface utilisateur du gestionnaire de package NuGet dans Visual Studio facilite l’installation, la désinstallation et la mise à jour des packages NuGet dans les projets et solutions. Pour plus d’informations, consultez [installer et gérer des packages dans Visual Studio à l’aide du gestionnaire de package NuGet](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-visual-studio).
+- **Installer et gérer des packages NuGet dans Visual Studio**. L’interface utilisateur du gestionnaire de package NuGet dans Visual Studio facilite l’installation, la désinstallation et la mise à jour des packages NuGet dans les projets et solutions. Pour plus d’informations, consultez [installer et gérer des packages dans Visual Studio à l’aide du gestionnaire de package NuGet](/nuget/consume-packages/install-use-packages-visual-studio).
 
 ## <a name="write-code"></a>Écrire du code
 
@@ -60,7 +60,7 @@ Gagnez du temps dans l’exploration des menus en recherchant rapidement les él
 
 - **Utiliser des exemples d’applications**. Vous pouvez accélérer le développement d'applications en téléchargeant et en installant des exemples d'applications à partir de [Microsoft Developer Network](https://code.msdn.microsoft.com/). Vous pouvez également apprendre une technologie ou un concept de programmation spécifiques en téléchargeant et en explorant un exemple de pack pour cette zone.
 
-- **Modifier la mise en forme des accolades avec la mise en forme/nouvelles lignes**. Utilisez la page Options de **mise en forme**  pour définir les options de mise en forme du code dans l’éditeur de code, y compris les nouvelles lignes. Pour plus d’informations sur l’utilisation de ce paramètre en C#, consultez [boîte de dialogue Options : éditeur de texte > C# > style de Code > mise en forme](../ide/reference/options-text-editor-csharp-formatting.md). Pour C++, consultez [définir vos préférences de codage C++ dans Visual Studio](https://docs.microsoft.com/cpp/ide/how-to-set-preferences). Pour Python, consultez [formater le code python](../python/formatting-python-code.md).
+- **Modifier la mise en forme des accolades avec la mise en forme/nouvelles lignes**. Utilisez la page Options de **mise en forme**  pour définir les options de mise en forme du code dans l’éditeur de code, y compris les nouvelles lignes. Pour plus d’informations sur l’utilisation de ce paramètre en C#, consultez [boîte de dialogue Options : éditeur de texte > C# > style de Code > mise en forme](../ide/reference/options-text-editor-csharp-formatting.md). Pour C++, consultez [définir vos préférences de codage C++ dans Visual Studio](/cpp/ide/how-to-set-preferences). Pour Python, consultez [formater le code python](../python/formatting-python-code.md).
 
 - **Modifiez votre mise en retrait à l’aide des onglets**. Utilisez les paramètres personnalisés de l’éditeur, adaptés à chaque code base, pour appliquer des styles de codage cohérents pour plusieurs développeurs qui travaillent sur le même projet dans différents éditeurs et IDE. Assurez-vous que toute votre équipe respecte les mêmes conventions de langage, conventions de nommage et règles de mise en forme. Étant donné que ces paramètres personnalisés sont portables et voyagent avec votre code, vous pouvez appliquer des styles de codage même en dehors de Visual Studio. Pour plus d’informations, consultez [options, éditeur de texte, tous les langages, onglets](../ide/reference/options-text-editor-all-languages-tabs.md#tabs).
 
@@ -118,7 +118,7 @@ Le débogage peut prendre beaucoup de temps, mais les conseils suivants peuvent 
 
 - **Utilisez les outils du débogueur Visual Studio**. Dans le contexte de Visual Studio, lorsque vous *déboguez votre application*, cela signifie généralement que vous exécutez l’application en mode débogueur. Le débogueur offre de nombreuses façons de voir ce que votre code effectue pendant son exécution. Consultez [tout d’abord le débogueur Visual Studio](../debugger/debugger-feature-tour.md) pour obtenir un guide de mise en route. 
 
-- **Tester la même page, la même application ou le même site dans divers navigateurs**. Quand vous déboguez votre code, vous pouvez basculer facilement entre les navigateurs web installés, notamment l’[Inspecteur de page (Visual Studio)](https://msdn.microsoft.com/Library/65880969-1ad2-47be-85b9-bb12c81bf209), sans avoir besoin d’ouvrir la boîte de dialogue **Naviguer avec**. Vous pouvez utiliser la liste **cible de débogage** , qui se trouve dans la barre d’outils **standard** en regard du bouton **Démarrer le débogage** , pour vérifier rapidement le navigateur que vous utilisez quand vous déboguez ou affichez des pages.
+- **Tester la même page, la même application ou le même site dans divers navigateurs**. Quand vous déboguez votre code, vous pouvez basculer facilement entre les navigateurs web installés, notamment l’[Inspecteur de page (Visual Studio)](/previous-versions/hh974728(v=vs.140)), sans avoir besoin d’ouvrir la boîte de dialogue **Naviguer avec**. Vous pouvez utiliser la liste **cible de débogage** , qui se trouve dans la barre d’outils **standard** en regard du bouton **Démarrer le débogage** , pour vérifier rapidement le navigateur que vous utilisez quand vous déboguez ou affichez des pages.
 
     ![Sélectionner les options de débogage de navigateur web](../ide/media/webbrowserdropdowntoolbar.png)
 
@@ -140,7 +140,7 @@ Le débogage peut prendre beaucoup de temps, mais les conseils suivants peuvent 
 
 - **[Recherchez des modifications de code et d’autres historiques avec CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md)**. CodeLens vous permet de rester concentré sur votre travail pendant que vous cherchez ce qui s’est produit dans votre code, sans quitter l’éditeur. Vous pouvez trouver les références à un morceau de code, les changements dans votre code, les bogues liés, les éléments de travail, les revues du code et les tests unitaires.
 
-- **Utilisez Live share pour déboguer en temps réel avec d’autres utilisateurs**. Live Share vous permet d’éditer et de déboguer en collaboration avec d’autres utilisateurs en temps réel, quels que soient les langages de programmation que vous utilisez ou les types d’applications que vous créez. Pour plus d’informations, consultez [qu’est-ce que Visual Studio Live share ?](https://docs.microsoft.com/visualstudio/liveshare/)
+- **Utilisez Live share pour déboguer en temps réel avec d’autres utilisateurs**. Live Share vous permet d’éditer et de déboguer en collaboration avec d’autres utilisateurs en temps réel, quels que soient les langages de programmation que vous utilisez ou les types d’applications que vous créez. Pour plus d’informations, consultez [qu’est-ce que Visual Studio Live share ?](/visualstudio/liveshare/)
 
 - **Utilisez la fenêtre interactive pour écrire et tester du code de petite taille**. Visual Studio fournit une fenêtre de boucle de lecture-évaluation-impression (REPL) interactive qui vous permet d’entrer du code arbitraire et de voir les résultats immédiats. Cette méthode de codage vous permet d’apprendre et de tester les API et les bibliothèques, et de développer de manière interactive du code opérationnel à inclure dans vos projets. Pour Python, consultez [utiliser la fenêtre interactive Python](../python/python-interactive-repl-in-visual-studio.md). La fonctionnalité de fenêtre interactive est également disponible pour C#. 
 

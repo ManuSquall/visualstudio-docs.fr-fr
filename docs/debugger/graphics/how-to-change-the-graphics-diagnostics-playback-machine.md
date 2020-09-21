@@ -1,5 +1,6 @@
 ---
-title: 'Comment : modifier l’ordinateur de lecture Graphics Diagnostics | Microsoft Docs'
+title: Modifier l’ordinateur de lecture des diagnostics Graphics
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 1b9aa3ea-29a0-4e21-bc57-936f33537b5c
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f057e2e4f9d39fd3c5d985b3f0d19751d508614
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a7b7f3f09495b760d4ee3ab8c20781bc337b1bb2
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85769377"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810690"
 ---
 # <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>Procédure : modifier l’ordinateur de lecture Graphics Diagnostics
 Vous pouvez lire les informations graphiques à l’aide de votre ordinateur local ou à l’aide d’un ordinateur ou d’un appareil distant.

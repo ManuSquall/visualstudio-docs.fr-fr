@@ -1,29 +1,29 @@
 ---
-title: avertissements liés à la facilité de maintenance
+title: Règles de maintenabilité
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.maintainabilityrules
 helpviewer_keywords:
-- warnings, maintainability
-- managed code analysis warnings, maintainability warnings
-- maintainability warnings
+- rules, maintainability
+- managed code analysis rules, maintainability rules
+- maintainability rules
 ms.assetid: 537e70ca-a88c-49df-bfc7-0ee63bbe4f16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb985a6482b76b79604ce58f85e7f8cf3e83e97c
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 751cec177e066da1210997ef0f6f8d869ba7d0dc
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509898"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808582"
 ---
-# <a name="maintainability-warnings"></a>Avertissements liés à la maintenabilité
+# <a name="maintainability-rules"></a>Règles de maintenabilité
 
-Les avertissements de maintenabilité prennent en charge la gestion des bibliothèques et des applications.
+Les règles de maintenabilité prennent en charge la gestion des bibliothèques et des applications.
 
 ## <a name="in-this-section"></a>Contenu de cette section
 

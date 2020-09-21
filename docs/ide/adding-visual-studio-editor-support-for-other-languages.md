@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 247567030d47a55b29a3fca901e12948ddd85916
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7c6761e74e68bad1ef800246d400c79b9689a18c
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85533755"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809070"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Ajouter la prise en charge de l’éditeur Visual Studio pour d’autres langages
 
@@ -73,7 +73,7 @@ Actuellement, Visual Studio fournit la prise en charge de la coloration syntaxiq
 - TypeScript
 - YAML
 
-Outre la coloration syntaxique et la saisie semi-automatique des instructions de base, Visual Studio propose également une fonctionnalité appelée [Naviguer vers](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/). Elle permet de rechercher rapidement des fichiers de code, des chemins de fichier et des symboles de code. Visual Studio fournit la prise en charge de Naviguer vers pour les langages suivants.
+Outre la coloration syntaxique et la saisie semi-automatique des instructions de base, Visual Studio propose également une fonctionnalité appelée [Naviguer vers](/archive/blogs/benwilli/visual-studio-tip-3-use-navigate-to). Elle permet de rechercher rapidement des fichiers de code, des chemins de fichier et des symboles de code. Visual Studio fournit la prise en charge de Naviguer vers pour les langages suivants.
 
 - C#
 

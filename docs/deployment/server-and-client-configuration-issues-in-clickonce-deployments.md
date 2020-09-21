@@ -1,5 +1,6 @@
 ---
-title: Problèmes de configuration du serveur/du client dans les déploiements ClickOnce
+title: Problèmes de configuration du serveur/du client (ClickOnce)
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ec07e71e57c0b3875d690773b7ff2618269b8f4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9af8b864092f56150ff71d0e23b0bf59280aeb6c
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250004"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90811232"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problèmes de configuration de serveur et de client dans les déploiements ClickOnce
 Si vous utilisez Internet Information Services (IIS) sur Windows Server et que votre déploiement contient un type de fichier que Windows ne reconnaît pas, tel qu’un fichier Microsoft Word, IIS refusera de transmettre ce fichier, et votre déploiement échouera.

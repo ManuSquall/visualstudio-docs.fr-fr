@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f4adbd08d13d26c717beeb454bd323185bb88640
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bb495b30950105d1ff19a1f4fb13da1ee624b228
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79416560"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809347"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>Déployer une solution Office à l’aide de ClickOnce
   Vous pouvez déployer votre solution Office plus rapidement en utilisant ClickOnce. Si vous publiez des mises à jour, votre solution les détecte et les installe automatiquement. Toutefois, avec ClickOnce, vous devez installer votre solution séparément pour chaque utilisateur d'un ordinateur. Par conséquent, vous devez envisager d’utiliser Windows Installer (*. msi*) si plusieurs utilisateurs exécutent votre solution sur le même ordinateur.
@@ -358,7 +358,7 @@ ms.locfileid: "79416560"
 |Code d'erreur|Définition|
 |----------------|----------------|
 |0|La solution a été installée ou désinstallée ou l’aide de VSTOInstaller s’est affichée.|
-|-100|Une ou plusieurs options de ligne de commande ne sont pas valides ou ont été définies plusieurs fois. Pour plus d’informations, entrez « VSTOInstaller/ ? » ou consultez [créer un programme d’installation personnalisé pour une solution Office ClickOnce](https://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e).|
+|-100|Une ou plusieurs options de ligne de commande ne sont pas valides ou ont été définies plusieurs fois. Pour plus d’informations, entrez « VSTOInstaller/ ? » ou consultez [créer un programme d’installation personnalisé pour une solution Office ClickOnce](/previous-versions/bb772078(v=vs.110)).|
 |-101|Une ou plusieurs options de ligne de commande ne sont pas valides. Pour plus d'informations, entrez « vstoinstaller/? ».|
 |-200|L’URI du manifeste de déploiement n’est pas valide. Pour plus d'informations, entrez « vstoinstaller/? ».|
 |-201|Impossible d’installer la solution, car le manifeste de déploiement n’est pas valide. Consultez [manifestes de déploiement pour les solutions Office](../vsto/deployment-manifests-for-office-solutions.md).|
@@ -460,7 +460,7 @@ ms.locfileid: "79416560"
 
 - [Déployer une solution Office](../vsto/deploying-an-office-solution.md)
 - [Publier des solutions Office](../vsto/deploying-an-office-solution-by-using-clickonce.md)
-- [Comment : publier une solution Office à l’aide de ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
-- [Comment : installer une solution Office ClickOnce](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)
-- [Comment : publier une solution Office au niveau du document sur un serveur SharePoint à l’aide de ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)
-- [Créer un programme d’installation personnalisé pour une solution Office ClickOnce](https://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e)
+- [Comment : publier une solution Office à l’aide de ClickOnce](/previous-versions/bb386095(v=vs.110))
+- [Comment : installer une solution Office ClickOnce](/previous-versions/bb608592(v=vs.110))
+- [Comment : publier une solution Office au niveau du document sur un serveur SharePoint à l’aide de ClickOnce](/previous-versions/bb608595(v=vs.110))
+- [Créer un programme d’installation personnalisé pour une solution Office ClickOnce](/previous-versions/bb772078(v=vs.110))

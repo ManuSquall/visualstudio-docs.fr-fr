@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 82ae3f8a43b65e6ff617192dc38149691d229455
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 773a4dd319d00487b919721bf3390a7d58c8b03c
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66836056"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810965"
 ---
 # <a name="required-changes-to-run-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Modifications requises pour exécuter des projets Office que vous migrez vers le .NET Framework 4 ou le .NET Framework 4,5
   Si la version cible du .NET Framework d’un projet Office est remplacée par la [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] version ou ultérieure d’une version antérieure du .NET Framework, vous devez effectuer les tâches suivantes pour vous assurer que la solution peut s’exécuter sur l’ordinateur de développement et sur les ordinateurs des utilisateurs finaux :
@@ -64,7 +64,7 @@ ms.locfileid: "66836056"
 ## <a name="update-the-prerequisites-for-deployment"></a>Mettre à jour les conditions préalables pour le déploiement
  Lorsque vous reciblez un projet Office vers [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou version ultérieure, vous devez également mettre à jour la condition préalable .NET Framework correspondante dans la boîte de dialogue **composants requis** . Sinon, le déploiement ClickOnce ou le projet InstallShield Limited Edition recherche et installe une version antérieure du .NET Framework.
 
- Pour plus d’informations sur la mise à jour des composants requis pour le déploiement sur les ordinateurs des utilisateurs finaux, consultez [procédure : installer les composants requis sur les ordinateurs des utilisateurs finaux pour exécuter des solutions Office](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).
+ Pour plus d’informations sur la mise à jour des composants requis pour le déploiement sur les ordinateurs des utilisateurs finaux, consultez [procédure : installer les composants requis sur les ordinateurs des utilisateurs finaux pour exécuter des solutions Office](/previous-versions/bb608608(v=vs.110)).
 
 ## <a name="reinstall-solutions-on-end-user-computers"></a>Réinstaller des solutions sur les ordinateurs des utilisateurs finaux
  Si vous utilisez ClickOnce pour déployer une solution Office qui cible .NET Framework 3.5, puis que vous reciblez le projet vers [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou une version ultérieure, les utilisateurs finaux doivent désinstaller la solution puis la réinstaller une fois que vous l'avez republiée. Si vous republiez la solution reciblée et que la solution est mise à jour sur les ordinateurs des utilisateurs finaux, les utilisateurs finaux recevront un <xref:System.Runtime.InteropServices.COMException> lorsqu’ils exécuteront la solution mise à jour.

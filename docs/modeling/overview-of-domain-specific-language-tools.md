@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef80ac1c7e64eb3591e2e6b09de97c77a26e46f8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0d9f2446aa793fcd80c3c6786bf1b2002a7ccbc0
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85532365"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808075"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Vue d'ensemble des outils de langage spécifique à un domaine
 Outils Domain-Specific Language (outils DSL), qui sont hébergés dans Visual Studio, vous permettent de concevoir un langage spécifique à un domaine, puis de générer tout ce que les utilisateurs doivent avoir pour créer des modèles basés sur la langue.
@@ -77,4 +77,4 @@ Outils Domain-Specific Language (outils DSL), qui sont hébergés dans Visual St
 ## <a name="see-also"></a>Voir aussi
 
 - [Instance expérimentale](../extensibility/the-experimental-instance.md)
-- [Glossaire des Outils Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glossaire des Outils Domain-Specific Language](/previous-versions/bb126564(v=vs.100))

@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1222e6603ea45e1a4172af84b9062c17a407c28c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1e8cd25b8c4c70067641468dd6fa321e9e4fbe39
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986160"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809360"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Créer des compléments VSTO pour Office à l'aide de Visual Studio
   Vous pouvez utiliser les outils de développement Microsoft Office dans Visual Studio pour créer des applications .NET Framework qui étendent Office. Ces applications sont également appelées *solutions Office*.
@@ -49,11 +49,11 @@ ms.locfileid: "72986160"
 
  Fournit des informations sur l'utilisation de code managé avec les solutions Office, notamment sur la personnalisation de l'interface utilisateur Office, l'utilisation des données et la résolution des problèmes.
 
-- [solutions Excel](excel-solutions.md)
+- [Solutions Excel](excel-solutions.md)
 
  Fournit des informations sur l'automatisation d'Excel, la création de solutions Excel et la compréhension de problèmes de globalisation spécifiques à Excel.
 
-- [solutions InfoPath](infopath-solutions.md)
+- [Solutions InfoPath](infopath-solutions.md)
 
  Fournit des informations sur la création de modèles de formulaire et de compléments VSTO pour InfoPath.
 
@@ -73,7 +73,7 @@ ms.locfileid: "72986160"
 
  Fournit des informations sur l'automatisation de Visio et sur la création de compléments VSTO Visio.
 
-- [solutions Word](word-solutions.md)
+- [Solutions Word](word-solutions.md)
 
  Fournit des informations sur l'automatisation de Word et la création de solutions Word.
 
@@ -116,6 +116,6 @@ ms.locfileid: "72986160"
 
 - [Microsoft Office section développement de MSDN Library](/previous-versions/office/office-12/bb726434(v=office.12)) La zone de MSDN Library où vous pouvez trouver des articles et de la documentation de référence sur le développement de solutions pour plusieurs versions d’Office (non spécifiques au développement Office à l’aide de Visual Studio).
 
-- [Développement d’applications dans Visual Studio](https://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68) Contient des liens vers des rubriques qui expliquent comment vous pouvez utiliser Visual Studio pour concevoir, développer, déboguer et déployer des applications Web, des services Web XML et des applications clientes traditionnelles.
+- [Développement d’applications dans Visual Studio](/previous-versions/h8w79z10(v=vs.140)) Contient des liens vers des rubriques qui expliquent comment vous pouvez utiliser Visual Studio pour concevoir, développer, déboguer et déployer des applications Web, des services Web XML et des applications clientes traditionnelles.
 
 - [Programmation .NET Framework dans Visual Studio](/previous-versions/visualstudio/visual-studio-2010/k1s94fta(v=vs.100)) Décrit le développement d’applications avec le .NET Framework dans Visual Basic et Visual C#.

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5df10e2da9e6b4c31894dce0669e9aa0e580b92f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d79bf66f88a7cbaa5321887b676cc9eca798a92
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015081"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739926"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>Procédure pas à pas : créer une extension de projet SharePoint
   Cette procédure pas à pas illustre la création d’une extension pour les projets SharePoint. Vous pouvez utiliser une extension de projet pour répondre aux événements au niveau du projet, par exemple lors de l’ajout, de la suppression ou du changement de nom d’un projet. Vous pouvez également ajouter des propriétés personnalisées ou répondre en cas de modification d’une valeur de propriété. Contrairement aux extensions d’élément de projet, les extensions de projet ne peuvent pas être associées à un type de projet SharePoint particulier. Lorsque vous créez une extension de projet, l’extension est chargée lorsque l’un des types de projet SharePoint est ouvert dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .
@@ -128,7 +128,7 @@ ms.locfileid: "86015081"
 
 1. Dans **Explorateur de solutions**, ouvrez le menu contextuel du fichier source. extension. vsixmanifest, puis choisissez le bouton **ouvrir** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ouvre le fichier dans le concepteur de manifeste. Les informations qui s’affichent sous l’onglet **métadonnées** apparaissent également dans **extensions et mises à jour**. Tous les packages VSIX requièrent le fichier extension. vsixmanifest. Pour plus d’informations sur ce fichier, consultez [Référence du schéma d’extension VSIX 1,0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ouvre le fichier dans le concepteur de manifeste. Les informations qui s’affichent sous l’onglet **métadonnées** apparaissent également dans **extensions et mises à jour**. Tous les packages VSIX requièrent le fichier extension. vsixmanifest. Pour plus d’informations sur ce fichier, consultez [Référence du schéma d’extension VSIX 1,0](/previous-versions/dd393700(v=vs.110)).
 
 2. Dans la zone **nom du produit** , entrez propriété de **projet personnalisée**.
 

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5e421d6e4ee94d9974c0a0583db1fb495c72593e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 13cbf08e5767ec548b9fdba9bd0892e0cf50a63d
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "79416534"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808787"
 ---
 # <a name="upgrade-and-migrate-office-solutions"></a>Mettre à niveau et migrer des solutions Office
   Si vous disposez d'un projet Microsoft Office créé dans une version antérieure de Visual Studio, vous devez effectuer une mise à niveau du projet afin de l'utiliser dans la version actuelle de Visual Studio. Pour mettre à niveau un projet Microsoft Office, ouvrez-le dans une version de Visual Studio qui inclut les outils de développement Microsoft Office. Pour plus d’informations sur les versions de Visual Studio qui incluent les outils de développement Microsoft Office, consultez [configurer un ordinateur pour développer des solutions Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).
@@ -84,6 +84,6 @@ ms.locfileid: "79416534"
  Si vous voulez utiliser ClickOnce pour déployer votre complément VSTO, vous pouvez supprimer entièrement le projet d’installation ou InstallShield Limited Edition. Pour plus d’informations sur le déploiement de compléments VSTO à l’aide de ClickOnce, consultez [déployer une solution Office](../vsto/deploying-an-office-solution.md).
 
 ## <a name="see-also"></a>Voir aussi
-- [Comment : mettre à niveau des solutions Office](https://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)
+- [Comment : mettre à niveau des solutions Office](/previous-versions/4bez6837(v=vs.140))
 - [Migrer des solutions Office vers le .NET Framework 4 ou version ultérieure](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
 - [Mise à niveau du projet, boîte de dialogue Options](../vsto/project-upgrade-options-dialog-box.md)

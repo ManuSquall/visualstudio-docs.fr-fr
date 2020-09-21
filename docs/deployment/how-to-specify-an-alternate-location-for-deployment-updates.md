@@ -1,5 +1,6 @@
 ---
-title: Comment spécifier un autre emplacement pour les mises à jour de déploiement | Microsoft Docs
+title: Spécifier un autre emplacement pour les mises à jour de déploiement
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c71586c43fa1a71205d61ae21fb94c267daf497d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 096e962f9e334b3db9819973a0fbd82d636f7d6f
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85381910"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808748"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Guide pratique pour spécifier un autre emplacement pour les mises à jour du déploiement
 Vous pouvez installer votre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application initialement à partir d’un CD ou d’un partage de fichiers, mais l’application doit rechercher les mises à jour périodiques sur le Web. Vous pouvez spécifier un autre emplacement pour les mises à jour dans votre manifeste de déploiement afin que votre application puisse se mettre à jour à partir du Web après son installation initiale.
@@ -50,7 +51,7 @@ Vous pouvez installer votre [!INCLUDE[ndptecclick](../deployment/includes/ndptec
 
     **Mage-Update HelloWorld.exe. application-ProviderUrl http : \/ /adatum.com/Update/Path**
 
-3. Enregistrez le fichier .
+3. Enregistrez le fichier.
 
    > [!NOTE]
    > Vous devez à présent signer à nouveau le fichier avec *Mage.exe*. Pour plus d’informations, consultez [procédure pas à pas : déploiement manuel d’une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).

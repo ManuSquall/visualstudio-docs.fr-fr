@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4dfbda711c42e475af5f17c8799e53b13e26611a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd712eafb6061da89367c247475904886579d2de
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014605"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740082"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>Comment : ajouter et supprimer des fonctionnalités et des éléments dans un package à l’aide du concepteur de packages
   Lorsque vous créez une solution SharePoint, Visual Studio ajoute les fonctionnalités SharePoint par défaut au package dans la solution. Avant le déploiement final, vous pouvez ajouter et supprimer des fonctionnalités et des éléments de projet SharePoint pour modifier le package SharePoint.
@@ -59,4 +59,4 @@ ms.locfileid: "86014605"
 ## <a name="see-also"></a>Voir aussi
 - [Créer des packages de solution SharePoint](../sharepoint/creating-sharepoint-solution-packages.md)
 - [Comment : personnaliser un package de solution SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)
-- [Comment : créer un package](https://msdn.microsoft.com/b24be45c-e91d-49bb-afb0-7b265404214b)
+- [Comment : créer un package](/previous-versions/ee231585(v=vs.110))

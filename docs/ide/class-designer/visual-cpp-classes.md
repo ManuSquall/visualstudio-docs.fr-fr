@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d68391bbd4c6c873940bbc2714ee41db8309b629
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d7af49e94045e519e32aacd12ec33a4a31a4c905
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75590733"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808127"
 ---
 # <a name="c-classes-in-class-designer"></a>Classes C++ dans Concepteur de classes
 
@@ -54,7 +54,7 @@ Pour afficher les classes de base correspondant à la classe adoptée, cliquez a
 > [!NOTE]
 > La commande **Afficher les classes dérivées** n’est pas prise en charge pour le code C++. Pour afficher les classes dérivées, accédez à **affichage de classes**, développez le nœud type, développez le sous-dossier **types dérivés** , puis faites glisser ces types sur le diagramme de classes.
 
-Pour plus d’informations sur l’héritage de classes multiples, consultez [Héritage multiple](https://msdn.microsoft.com/library/6td5yws2.aspx) et [Plusieurs classes de base](/cpp/cpp/multiple-base-classes).
+Pour plus d’informations sur l’héritage de classes multiples, consultez [Héritage multiple](/previous-versions/6td5yws2(v=vs.140)) et [Plusieurs classes de base](/cpp/cpp/multiple-base-classes).
 
 ## <a name="abstract-classes"></a>Classes abstraites
 
@@ -177,6 +177,6 @@ Le tableau suivant présente des exemples de connexion de classes spécialisées
 - [Utilisation du code C++](working-with-visual-cpp-code.md)
 - [Classes et structs](/cpp/cpp/classes-and-structs-cpp)
 - [Types de classes anonymes](/cpp/cpp/anonymous-class-types)
-- [Héritage multiple](https://msdn.microsoft.com/library/6td5yws2.aspx)
+- [Héritage multiple](/previous-versions/6td5yws2(v=vs.140))
 - [Plusieurs classes de base](/cpp/cpp/multiple-base-classes)
 - [Modèles](/cpp/cpp/templates-cpp)

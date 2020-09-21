@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae70a2bf989b73dedc5becaac6f4b49bd0108730
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c1813c4e399a125aca0185436b4a7216b72b5842
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75595785"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809005"
 ---
 # <a name="assembly-information-dialog-box"></a>Informations de l’assembly (boîte de dialogue)
 
@@ -68,4 +68,4 @@ Spécifie si les types dans l’assembly seront disponibles pour COM. Correspond
 ## <a name="see-also"></a>Voir aussi
 
 - [Page Application, Concepteur de projet (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md)
-- [Attributs](https://msdn.microsoft.com/Library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)
+- [Attributs](/previous-versions/z0w1kczw(v=vs.140))
