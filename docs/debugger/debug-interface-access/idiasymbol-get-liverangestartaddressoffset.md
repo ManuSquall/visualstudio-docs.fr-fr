@@ -35,7 +35,7 @@ HRESULT get_liveRangeStartAddressOffset ( 
 
 à Retourne la partie de décalage de la plage d’adresses de début.
 
-## <a name="return-value"></a>Valeur renvoyée
+## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.
 
 > [!NOTE]
@@ -46,7 +46,7 @@ HRESULT get_liveRangeStartAddressOffset ( 
 
  Pour récupérer la partie de l’adresse de la section, utilisez [IDiaSymbol :: get_liveRangeStartAddressSection](../../debugger/debug-interface-access/idiasymbol-get-liverangestartaddresssection.md).
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : Dia2. h
 
  Bibliothèque : diaguids. lib

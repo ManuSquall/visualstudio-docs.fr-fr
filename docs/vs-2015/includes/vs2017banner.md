@@ -1,6 +1,6 @@
 ---
-title: fichier descriptif
-description: fichier descriptif
+title: Fichier include
+description: Fichier include
 ms.custom: include file
 author: ghogen
 ms.author: ghogen
