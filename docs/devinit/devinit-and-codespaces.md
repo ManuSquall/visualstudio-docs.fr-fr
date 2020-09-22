@@ -11,18 +11,18 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: a622bf3a10b47ab535a02deac35e3ed2c2b8aa4c
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: b42ce84bcb2a336e37d0ffafb2bab6c2dba9ba9d
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808701"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852208"
 ---
 # <a name="devinit-and-github-codespaces"></a>devinit et GitHub Codespaces
 
 devinit est un excellent compliment pour [GitHub Codespaces](https://github.com/features/codespaces) et devinit peut être utilisé pour obtenir une installation codeSpace afin que les contributeurs puissent générer, exécuter et déboguer immédiatement.
 
-Pour une intégration à GitHub Codespaces, `devinit` doit être appelé à partir du `postCreateCommand` défini dans un `.devcontainer.json` fichier placé dans la racine référentiel. La ou les chaînes dans `postCreateCommand` sont exécutées dans l’interpréteur de commandes par défaut, une fois que le référentiel est cloné dans le codeSpace. Pour plus d’informations sur `postCreateCommand` , consultez la documentation sur la [personnalisation](https://docs.GitHub.com/en/GitHub/developing-online-with-codespaces/configuring-codespaces-for-your-project)de GitHub Codespaces. Pour ajouter la `devinit` commande, vous pouvez ajouter `devinit init` à la, `postCreateCommand` comme indiqué dans les exemples ci-dessous.
+Pour une intégration à GitHub Codespaces, `devinit` doit être appelé à partir du `postCreateCommand` défini dans un `.devcontainer.json` fichier placé dans la racine référentiel. La ou les chaînes dans `postCreateCommand` sont exécutées dans l’interpréteur de commandes par défaut, une fois que le référentiel est cloné dans le codeSpace. Pour plus d’informations sur `postCreateCommand` , consultez la documentation sur la [personnalisation](https://docs.github.com/github/developing-online-with-codespaces/configuring-codespaces-for-your-project)de GitHub Codespaces. Pour ajouter la `devinit` commande, vous pouvez ajouter `devinit init` à la, `postCreateCommand` comme indiqué dans les exemples ci-dessous.
 
 Vous pouvez également exécuter `devinit init -f <path to .devinit.json>` à partir du terminal intégré de Visual Studio une fois connecté à votre codeSpace.
 
