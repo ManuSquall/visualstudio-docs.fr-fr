@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d96330c01ab340d4db67694f358717a2dae0bce3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439373"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839585"
 ---
 # <a name="msbuild-batching"></a>Traitement par lots de MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,10 +27,10 @@ ms.locfileid: "63439373"
 ## <a name="task-batching"></a>Traitement de tâches par lots  
  Le traitement de tâches par lots vous permet de simplifier vos fichiers projet en fournissant un moyen de diviser les listes d’éléments en différents lots et de passer chacun de ces lots dans une tâche séparément. Cela signifie qu’une tâche et ses attributs ne doivent être déclarés qu’une seule fois dans un fichier projet, même si elle peut être exécutée plusieurs fois.  
   
- Vous spécifiez ce que [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] doit effectuer comme traitement par lots avec une tâche en utilisant la notation %(*ItemMetaDataName*) dans un des attributs de la tâche. L’exemple suivant fractionne la liste d’éléments `Example` en lots en fonction de la valeur des métadonnées de l’élément `Color` et passe séparément chacun des lots à la tâche `MyTask`.  
+ Vous spécifiez que vous souhaitez [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] effectuer un traitement par lots avec une tâche à l’aide de la notation%(*ItemMetaDataName*) dans l’un des attributs de tâche. L’exemple suivant fractionne la liste d’éléments `Example` en lots en fonction de la valeur des métadonnées de l’élément `Color` et passe séparément chacun des lots à la tâche `MyTask`.  
   
 > [!NOTE]
-> Si vous ne référencez pas la liste d’éléments ailleurs dans les attributs de tâche, ou si le nom des métadonnées peut être ambigu, vous pouvez utiliser la notation %(*ItemCollection.ItemMetaDataName*) pour qualifier complètement la valeur des métadonnées de l’élément à utiliser pour le traitement par lots.  
+> Si vous ne référencez pas la liste des éléments ailleurs dans les attributs de tâche, ou si le nom de métadonnées peut être ambigu, vous pouvez utiliser la notation%(*ItemCollection. ItemMetaDataName*) pour qualifier complètement la valeur des métadonnées de l’élément à utiliser pour le traitement par lot.  
   
 ```  
 <Project  
@@ -54,12 +54,12 @@ ms.locfileid: "63439373"
 </Project>  
 ```  
   
- Pour obtenir des exemples de traitement par lots plus spécifiques, consultez [Métadonnées d’éléments dans le traitement par lots de tâches](../msbuild/item-metadata-in-task-batching.md).  
+ Pour obtenir des exemples de traitement par lot plus spécifiques, consultez [métadonnées d’éléments dans le traitement par lot des tâches](../msbuild/item-metadata-in-task-batching.md).  
   
 ## <a name="target-batching"></a>Traitement de cibles par lots  
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] vérifie si les entrées et sorties d’une cible sont à jour avant d’exécuter la cible. Si les entrées et les sorties sont à jour, la cible est ignorée. Si une tâche à l’intérieur d’une cible utilise le traitement par lots, [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] doit déterminer si les entrées et sorties de chaque lot d’éléments sont à jour. Sinon, la cible est exécutée chaque fois qu’elle est atteinte.  
   
- L’exemple suivant montre un élément `Target` contenant un attribut `Outputs` avec la notation %(*ItemMetaDataName*). [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] divise la liste d’éléments `Example` en lots en fonction des métadonnées de l’élément `Color` et analyse les horodatages des fichiers de sortie pour chaque lot. Si les sorties d’un lot ne sont pas à jour, la cible est exécutée. Sinon, la cible est ignorée.  
+ L’exemple suivant montre un `Target` élément qui contient un `Outputs` attribut avec la notation%(*ItemMetaDataName*). [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] divise la liste d’éléments `Example` en lots en fonction des métadonnées de l’élément `Color` et analyse les horodatages des fichiers de sortie pour chaque lot. Si les sorties d’un lot ne sont pas à jour, la cible est exécutée. Sinon, la cible est ignorée.  
   
 ```  
 <Project  
@@ -85,25 +85,25 @@ ms.locfileid: "63439373"
 </Project>  
 ```  
   
- Pour un autre exemple de traitement de cible par lots, consultez [Métadonnées d’éléments dans le traitement par lots de cibles](../msbuild/item-metadata-in-target-batching.md).  
+ Pour un autre exemple de traitement par lots de cibles, consultez [métadonnées d’élément dans traitement par lots de cibles](../msbuild/item-metadata-in-target-batching.md).  
   
 ## <a name="property-functions-using-metadata"></a>Fonctions de propriété utilisant des métadonnées  
- Le traitement par lots peut être contrôlé par des fonctions de propriété qui incluent des métadonnées. Par exemple :  
+ Le traitement par lots peut être contrôlé par des fonctions de propriété qui incluent des métadonnées. Par exemple,  
   
  `$([System.IO.Path]::Combine($(RootPath),%(Compile.Identity)))`  
   
  utilise <xref:System.IO.Path.Combine%2A> pour combiner un chemin de dossier racine avec un chemin d’élément de compilation.  
   
- Les fonctions de propriété ne peuvent pas apparaître dans des valeurs de métadonnées.  Par exemple :  
+ Les fonctions de propriété ne peuvent pas apparaître dans des valeurs de métadonnées.  Par exemple,  
   
  `%(Compile.FullPath.Substring(0,3))`  
   
  n’est pas autorisé.  
   
- Pour plus d’informations sur les fonctions de propriété, consultez [Fonctions de propriété](../msbuild/property-functions.md).  
+ Pour plus d’informations sur les fonctions de propriété, consultez [fonctions de propriété](../msbuild/property-functions.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [ItemMetadata, élément (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)   
+ [Élément ItemMetadata, (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)   
  [Concepts MSBuild](../msbuild/msbuild-concepts.md)   
  [Référence MSBuild](../msbuild/msbuild-reference.md)   
  [Concepts avancés](../msbuild/msbuild-advanced-concepts.md)

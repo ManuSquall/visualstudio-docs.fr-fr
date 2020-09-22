@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bab229a3246ac91eaa652be67e98a68aab40e820
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439382"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839809"
 ---
 # <a name="msbuild-targets-files"></a>Fichiers .Targets MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "63439382"
  La valeur `$(MSBuildToolsPath)` spécifie le chemin d’accès de ces fichiers .targets courants. Si la `ToolsVersion` est égale à 4.0, les fichiers se trouvent à l’emplacement suivant : `WindowsInstallationPath\Microsoft.NET\Framework\v4.0.30319\`  
   
 > [!NOTE]
-> Pour plus d’informations sur la création de vos propres cibles, consultez l’article [Targets (Cibles MSBuild)](../msbuild/msbuild-targets.md). Pour plus d’informations sur la façon d’utiliser le `Import` élément à insérer un fichier projet dans un autre fichier de projet, consultez [Import, élément (MSBuild)](../msbuild/import-element-msbuild.md) et [Comment : Utiliser la même cible dans plusieurs fichiers projet](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md).  
+> Pour plus d’informations sur la création de vos propres cibles, consultez l’article [Targets (Cibles MSBuild)](../msbuild/msbuild-targets.md). Pour plus d’informations sur l’utilisation de l’élément `Import` pour insérer un fichier projet dans un autre fichier projet, consultez les articles [Import, élément (MSBuild)](../msbuild/import-element-msbuild.md) et [Comment : utiliser la même cible dans plusieurs fichiers projet](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md).  
   
 ## <a name="common-targets-files"></a>Fichiers .targets communs  
   
@@ -46,5 +46,5 @@ ms.locfileid: "63439382"
   
 ## <a name="see-also"></a>Voir aussi  
  [Import, élément (MSBuild)](../msbuild/import-element-msbuild.md)   
- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)  
+ [Référence MSBuild](../msbuild/msbuild-reference.md)  
  [MSBuild](msbuild.md)

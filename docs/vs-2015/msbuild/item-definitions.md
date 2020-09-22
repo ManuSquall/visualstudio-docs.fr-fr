@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7097311c3d1aae718096c3bf74ec04c3e5ea8818
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433585"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839266"
 ---
 # <a name="item-definitions"></a>Définitions d'éléments
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "63433585"
   
 - Les types d’éléments peuvent avoir plusieurs définitions. Quand des spécifications de métadonnées supplémentaires sont ajoutées au type, la dernière spécification est prioritaire. \(Les métadonnées suivent le même ordre d’importation que celui des propriétés.\)  
   
-- Les métadonnées peuvent être additionnées. Par exemple, les valeurs CDefines sont cumulées conditionnellement, en fonction des propriétés qui sont définies. Par exemple, `MT;STD_CALL;DEBUG;UNICODE`.  
+- Les métadonnées peuvent être additionnées. Par exemple, les valeurs CDefines sont cumulées conditionnellement, en fonction des propriétés qui sont définies. Par exemple : `MT;STD_CALL;DEBUG;UNICODE`.  
   
 - Les métadonnées peuvent être supprimées.  
   
@@ -41,7 +41,7 @@ ms.locfileid: "63433585"
 > [!NOTE]
 > Dans la plupart des exemples de cette rubrique, un élément ItemDefinitionGroup est montré mais sa définition ItemGroup correspondante est omise par souci de clarté.  
   
- Les métadonnées explicitement définies dans un ItemGroup sont prioritaires sur les métadonnées dans ItemDefinitionGroup. Les métadonnées dans ItemDefinitionGroup sont appliquées uniquement pour les métadonnées non définies dans un ItemGroup. Par exemple :  
+ Les métadonnées explicitement définies dans un ItemGroup sont prioritaires sur les métadonnées dans ItemDefinitionGroup. Les métadonnées dans ItemDefinitionGroup sont appliquées uniquement pour les métadonnées non définies dans un ItemGroup. Par exemple :  
   
 ```  
 <ItemDefinitionGroup>  
@@ -80,7 +80,7 @@ ms.locfileid: "63433585"
   
 - Métadonnées bien connues sur un élément d’un ItemDefinitionGroup  
   
-- Section CDATA \< \! \[CDATA\[rien ici n’est pas analysé\]\]\>  
+- Section CDATA \<\!\[CDATA\[anything here is not parsed\]\]\>  
   
 > [!NOTE]
 > Les métadonnées d’élément d’un ItemGroup ne sont pas utiles dans une déclaration de métadonnées ItemDefinitionGroup, car les éléments ItemDefinitionGroup sont traités avant les éléments ItemGroup.  
@@ -92,7 +92,7 @@ ms.locfileid: "63433585"
   
 - La dernière spécification est prioritaire.  
   
-  Quand vous avez plusieurs ItemDefinitionGroup, chaque spécification ultérieure ajoute ses métadonnées à la définition précédente. Par exemple :  
+  Quand vous avez plusieurs ItemDefinitionGroup, chaque spécification ultérieure ajoute ses métadonnées à la définition précédente. Par exemple :  
   
 ```  
 <ItemDefinitionGroup>  
@@ -110,7 +110,7 @@ ms.locfileid: "63433585"
   
  Dans cet exemple, les métadonnées « o » sont ajoutées à « m » et à « n ».  
   
- En outre, les valeurs des métadonnées définies précédemment peuvent également être ajoutées. Par exemple :  
+ En outre, les valeurs des métadonnées définies précédemment peuvent également être ajoutées. Par exemple :  
   
 ```  
 <ItemDefinitionGroup>  
@@ -146,7 +146,7 @@ ms.locfileid: "63433585"
 ```  
   
 ## <a name="using-conditions-in-an-itemdefinitiongroup"></a>Utilisation de conditions dans un ItemDefinitionGroup  
- Vous pouvez utiliser des conditions dans un ItemDefinitionGroup pour contrôler l’inclusion des métadonnées. Par exemple :  
+ Vous pouvez utiliser des conditions dans un ItemDefinitionGroup pour contrôler l’inclusion des métadonnées. Par exemple :  
   
 ```  
 <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug'">  
@@ -161,7 +161,7 @@ ms.locfileid: "63433585"
 > [!NOTE]
 > Seules les références de métadonnées locales sont prises en charge dans les conditions.  
   
- Les références aux métadonnées définies dans un ItemDefinitionGroup antérieur sont locales à l’élément, et non pas au groupe de définitions. Autrement dit, l’étendue des références sont spécifiques aux éléments. Par exemple :  
+ Les références aux métadonnées définies dans un ItemDefinitionGroup antérieur sont locales à l’élément, et non pas au groupe de définitions. Autrement dit, l’étendue des références sont spécifiques aux éléments. Par exemple :  
   
 ```  
 <ItemDefinitionGroup>  
@@ -177,7 +177,7 @@ ms.locfileid: "63433585"
  Dans cet exemple, l’élément « i » fait référence à l’élément « test » dans la condition.  
   
 ## <a name="overriding-and-deleting-metadata"></a>Remplacement et suppression de métadonnées  
- Vous pouvez remplacer les métadonnées définies dans un élément ItemDefinitionGroup dans un élément ItemDefinitionGroup ultérieur en attribuant une valeur vide aux métadonnées. Vous pouvez aussi supprimer un élément de métadonnées en lui attribuant une valeur vide. Par exemple :  
+ Vous pouvez remplacer les métadonnées définies dans un élément ItemDefinitionGroup dans un élément ItemDefinitionGroup ultérieur en attribuant une valeur vide aux métadonnées. Vous pouvez aussi supprimer un élément de métadonnées en lui attribuant une valeur vide. Par exemple :  
   
 ```  
 <ItemDefinitionGroup>  
@@ -228,7 +228,7 @@ ms.locfileid: "63433585"
 </ItemDefinitionGroup>  
 ```  
   
- À compter de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 3.5, les ItemGroup peuvent également se référencer eux-mêmes. Par exemple :  
+ À compter de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 3.5, les ItemGroup peuvent également se référencer eux-mêmes. Par exemple :  
   
 ```  
 <ItemGroup>  
@@ -240,4 +240,4 @@ ms.locfileid: "63433585"
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Traitement par lots](../msbuild/msbuild-batching.md)
+ [Traitement par lot](../msbuild/msbuild-batching.md)

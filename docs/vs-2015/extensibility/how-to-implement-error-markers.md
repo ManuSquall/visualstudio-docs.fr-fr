@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Implémenter des marqueurs d’erreur | Microsoft Docs'
+title: 'Comment : implémenter des marqueurs d’erreur | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,52 +11,52 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 2af9e0765fb5bc73a35bebfc2f50f5d2a41122d3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435969"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839638"
 ---
-# <a name="how-to-implement-error-markers"></a>Procédure : Implémenter des marqueurs d’erreur
+# <a name="how-to-implement-error-markers"></a>Guide pratique pour implémenter des marqueurs d’erreur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Marqueurs d’erreur (ou des soulignements ondulés rouges) sont les personnalisations de l’éditeur de texte pour implémenter la plus difficile. Toutefois, les avantages qu’ils donnent aux utilisateurs de votre VSPackage peuvent compensent largement le coût afin de lui fournir. Marqueurs d’erreur légèrement marquer le texte que votre analyseur de langage juge incorrecte avec une ligne rouge ondulée ou ondulée. Cet indicateur permet aux programmeurs en affichant visuellement code incorrect.  
+Les marqueurs d’erreur (ou traits de soulignement ondulé rouge) sont les plus difficiles à implémenter dans l’éditeur de texte. Toutefois, les avantages qu’ils accordent aux utilisateurs de votre VSPackage peuvent être beaucoup plus importants que le coût de leur fourniture. Les marqueurs d’erreur marquent le texte que votre analyseur de langage estime incorrect avec une ligne rouge ondulée ou ondulée. Cet indicateur permet aux programmeurs d’afficher visuellement du code incorrect.  
   
- Utiliser des marqueurs de texte pour implémenter les soulignements ondulés rouges. En règle générale, services de langage ajouter des soulignements ondulés rouges à la mémoire tampon de texte comme une réussite en arrière-plan en période d’inactivité ou dans un thread d’arrière-plan.  
+ Utilisez des marqueurs de texte pour implémenter les soulignements ondulés rouges. En règle générale, les services de langage ajoutent des soulignements ondulés rouges à la mémoire tampon de texte en tant que passe en arrière-plan, soit au moment de l’inactivité, soit dans un thread d’arrière-plan.  
   
 ### <a name="to-implement-the-red-wavy-underline-feature"></a>Pour implémenter la fonctionnalité de soulignement ondulé rouge  
   
-1. Sélectionnez le texte sous lequel vous voulez placer la ligne ondulée rouge.  
+1. Sélectionnez le texte sous lequel vous souhaitez placer la ligne ondulée rouge.  
   
-2. Créer un marqueur de type `MARKER_CODESENSE_ERROR`. Pour plus d'informations, voir [Procédure : Ajouter des marqueurs de texte Standard](../extensibility/how-to-add-standard-text-markers.md).  
+2. Créez un marqueur de type `MARKER_CODESENSE_ERROR` . Pour plus d’informations, consultez [Comment : ajouter des marqueurs de texte standard](../extensibility/how-to-add-standard-text-markers.md).  
   
 3. Après cela, transmettez un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> pointeur d’interface.  
   
-   Ce processus vous permet également de vous permettent de créer le texte info-bulle ou un menu contextuel spéciaux sur un marqueur donné. Pour plus d'informations, voir [Procédure : Ajouter des marqueurs de texte Standard](../extensibility/how-to-add-standard-text-markers.md).  
+   Ce processus vous permet également de créer du texte info-bulle ou un menu contextuel spécial sur un marqueur donné. Pour plus d’informations, consultez [Comment : ajouter des marqueurs de texte standard](../extensibility/how-to-add-standard-text-markers.md).  
   
-   Les objets suivants sont nécessaires avant que les marqueurs d’erreur peuvent être affichées.  
+   Les objets suivants sont requis pour que les marqueurs d’erreur puissent être affichés.  
   
-- Un analyseur.  
+- Analyseur.  
   
-- Un fournisseur de tâches (autrement dit, une implémentation de <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider2>) qui conserve un enregistrement des modifications dans les informations de ligne afin d’identifier les lignes pour être réanalysé.  
+- Fournisseur de tâches (autrement dit, une implémentation de <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider2> ) qui gère un enregistrement des modifications apportées aux informations de ligne afin d’identifier les lignes à réanalyser.  
   
-- Événements de modification d’un filtre de vue de texte qui capture le signe insertion à partir de la vue en utilisant le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEvents.OnChangeCaretLine%2A>) méthode.  
+- Filtre de vue de texte qui capture les événements de modification du signe insertion à partir de la vue à l’aide de la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEvents.OnChangeCaretLine%2A> méthode).  
   
-  L’analyseur, le fournisseur de tâche et le filtre fournissent l’infrastructure nécessaire pour rendre les marqueurs d’erreur possible. Les étapes suivantes décrivent le processus pour l’affichage des marqueurs d’erreur.  
+  L’analyseur, le fournisseur de tâche et le filtre fournissent l’infrastructure nécessaire pour rendre possible les marqueurs d’erreur. Les étapes suivantes décrivent le processus d’affichage des marqueurs d’erreur.  
   
-1. Dans une vue filtrée, le filtre Obtient un pointeur vers le fournisseur de tâches associé aux données de cette vue.  
+1. Dans une vue filtrée, le filtre obtient un pointeur vers le fournisseur de tâches associé aux données de cette vue.  
   
     > [!NOTE]
-    > Vous pouvez utiliser le même filtre de commande pour les conseils de méthode, saisie semi-automatique des instructions, erreur marques et ainsi de suite.  
+    > Vous pouvez utiliser le même filtre de commande pour les conseils de méthode, la saisie semi-automatique des instructions, les marqueurs d’erreur, etc.  
   
-2. Lorsque le filtre reçoit un événement indiquant que vous avez déplacé vers une autre ligne, une tâche est créée pour rechercher des erreurs.  
+2. Lorsque le filtre reçoit un événement indiquant que vous avez déplacé vers une autre ligne, une tâche est créée pour rechercher les erreurs éventuelles.  
   
-3. Le Gestionnaire de tâches vérifie si la ligne a été modifiée. Dans ce cas, il analyse la ligne pour les erreurs.  
+3. Le gestionnaire de tâches vérifie si la ligne a été modifiée. Dans ce cas, la ligne est analysée pour les erreurs.  
   
-4. Si des erreurs sont détectées, le fournisseur de tâches crée une instance d’élément de tâche. Cette instance crée le marqueur de texte que l’environnement utilise en tant qu’un marqueur d’erreur dans l’affichage de texte.  
+4. Si des erreurs sont détectées, le fournisseur de tâche crée une instance d’élément de tâche. Cette instance crée le marqueur de texte que l’environnement utilise comme marqueur d’erreur dans l’affichage de texte.  
   
 ## <a name="see-also"></a>Voir aussi  
- [À l’aide de marqueurs de texte avec l’API héritée](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [Guide pratique pour Ajouter des marqueurs de texte Standard](../extensibility/how-to-add-standard-text-markers.md)   
- [Guide pratique pour Créer des marqueurs de texte personnalisé](../extensibility/how-to-create-custom-text-markers.md)   
+ [Utilisation des marqueurs de texte avec l’API héritée](../extensibility/using-text-markers-with-the-legacy-api.md)   
+ [Comment : ajouter des marqueurs de texte standard](../extensibility/how-to-add-standard-text-markers.md)   
+ [Comment : créer des marqueurs de texte personnalisés](../extensibility/how-to-create-custom-text-markers.md)   
  [Guide pratique pour utiliser des marqueurs de texte](../extensibility/how-to-use-text-markers.md)

@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a2e5511e9e2e1c863db8f696a70195573d75429f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433874"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840167"
 ---
 # <a name="lines-view---sampling-data"></a>Lignes, vue - Données d’échantillonnage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,11 +46,11 @@ La vue Lignes des données d'échantillonnage répertorie les données de perfor
   
 |Colonne|Description|  
 |------------|-----------------|  
-|**ID du processus**|ID du processus (PID) de l'exécution du profilage.|  
+|**ID de processus**|ID du processus (PID) de l'exécution du profilage.|  
 |**Nom du processus**|Nom du processus.|  
 |**Nom du module**|Nom du module qui contient la ligne de fonction.|  
 |**Chemin du module**|Chemin du module qui contient la ligne de fonction.|  
-|**Fichier source**|Fichier source qui contient la ligne de fonction.|  
+|**Source File**|Fichier source qui contient la ligne de fonction.|  
 |**Nom de la fonction**|Nom de la fonction.|  
 |**Numéro de ligne de fonction**|Numéro de ligne du début de cette fonction dans le fichier source.|  
 |**Adresse de la fonction**|Adresse de départ de la fonction.|  
@@ -58,9 +58,9 @@ La vue Lignes des données d'échantillonnage répertorie les données de perfor
 |**Fin ligne source**|Numéro de ligne de fin dans le fichier source au niveau duquel cet échantillon a été collecté.|  
 |**Début caractère source**|Décalage du caractère de début dans la ligne de fichier source au niveau de laquelle cet échantillon a été collecté.|  
 |**Fin du caractère source**|Décalage du caractère de fin dans la ligne de fichier source au niveau de laquelle cet échantillon a été collecté.|  
-|**Nom de ligne**|Identificateur généré par le profileur de la ligne avec la syntaxe suivante :`Source File`**;[**`Line Number Start`**,**`Character Start`**]->;[**`Line Number End`**,**`Character End`**]**|  
+|**Nom de ligne**|Identificateur généré par le profileur de la ligne avec la syntaxe suivante : `Source File` **; [** `Line Number Start` **,**`Character Start` **]-> ; [**`Line Number End`**,**`Character End`**]**|  
 |**Échantillons exclusifs**|Nombre total d’échantillons collectés pendant l’exécution de la ligne de fonction.|  
-|**% d’échantillons exclusifs**|Pourcentage de tous les échantillons collectés pendant l’exécution de la fonction dans le cadre de l’exécution du profilage.|  
+|**% d’échantillons exclusifs**|Pourcentage de tous les échantillons collectés pendant l’exécution de la fonction dans le cadre de l’exécution du profilage.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Lignes, vue - Échantillonnage](../profiling/lines-view-dotnet-memory-sampling-data.md)
+ [Vue Lignes - Échantillonnage](../profiling/lines-view-dotnet-memory-sampling-data.md)

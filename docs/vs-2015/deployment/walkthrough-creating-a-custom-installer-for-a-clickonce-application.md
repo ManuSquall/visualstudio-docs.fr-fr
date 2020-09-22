@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Création d’un programme d’installation personnalisé pour une Application ClickOnce | Microsoft Docs'
+title: 'Procédure pas à pas : création d’un programme d’installation personnalisé pour une application ClickOnce | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -20,26 +20,26 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9ebde75fdf36c84f40ae660a24d469c36e72ceaf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386597"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839982"
 ---
-# <a name="walkthrough-creating-a-custom-installer-for-a-clickonce-application"></a>Procédure pas à pas : Création d’un programme d’installation personnalisé pour une Application ClickOnce
+# <a name="walkthrough-creating-a-custom-installer-for-a-clickonce-application"></a>Procédure pas à pas : création d'un programme d'installation personnalisé pour une application ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-N’importe quelle application ClickOnce basée sur un fichier .exe peut être installée en mode silencieux et mis à jour par un programme d’installation personnalisé. Un programme d’installation personnalisé peut implémenter l’expérience utilisateur personnalisée pendant l’installation, y compris les boîtes de dialogue personnalisées pour les opérations de maintenance et de sécurité. Pour effectuer des opérations d’installation, le programme d’installation personnalisé utilise la <xref:System.Deployment.Application.InPlaceHostingManager> classe. Cette procédure pas à pas montre comment créer un programme d’installation personnalisé qui installe en mode silencieux une application ClickOnce.  
+Toutes les applications ClickOnce basées sur un fichier. exe peuvent être installées sans assistance et mises à jour par un programme d’installation personnalisé. Un programme d’installation personnalisé peut implémenter l’expérience utilisateur personnalisée au cours de l’installation, y compris les boîtes de dialogue personnalisées pour les opérations de sécurité et de maintenance. Pour effectuer des opérations d’installation, le programme d’installation personnalisé utilise la <xref:System.Deployment.Application.InPlaceHostingManager> classe. Cette procédure pas à pas montre comment créer un programme d’installation personnalisé qui installe silencieusement une application ClickOnce.  
   
 ## <a name="prerequisites"></a>Prérequis  
   
-### <a name="to-create-a-custom-clickonce-application-installer"></a>Pour créer un programme d’installation des applications ClickOnce personnalisé  
+### <a name="to-create-a-custom-clickonce-application-installer"></a>Pour créer un programme d’installation d’application ClickOnce personnalisé  
   
-1. Dans votre application ClickOnce, ajoutez des références à System.Deployment et System.Windows.Forms.  
+1. Dans votre application ClickOnce, ajoutez des références à System. Deployment et System. Windows. Forms.  
   
-2. Ajoutez une nouvelle classe à votre application et spécifier n’importe quel nom. Cette procédure pas à pas utilise le nom `MyInstaller`.  
+2. Ajoutez une nouvelle classe à votre application et spécifiez n’importe quel nom. Cette procédure pas à pas utilise le nom `MyInstaller`.  
   
-3. Ajoutez le code suivant `Imports` ou `using` instructions au début de votre nouvelle classe.  
+3. Ajoutez les `Imports` instructions ou suivantes `using` en haut de votre nouvelle classe.  
   
     ```vb  
     Imports System.Deployment.Application  
@@ -53,15 +53,15 @@ N’importe quelle application ClickOnce basée sur un fichier .exe peut être i
   
 4. Ajoutez les méthodes suivantes à votre classe.  
   
-     Ces méthodes appellent <xref:System.Deployment.Application.InPlaceHostingManager> méthodes pour télécharger le manifeste de déploiement, déclarer des autorisations appropriées, demandez à l’utilisateur autorisé à installer, puis téléchargez et installez l’application dans le cache ClickOnce. Un programme d’installation personnalisé peut spécifier qu’une application ClickOnce est pré-approuvée, ou différer la décision d’approbation pour le <xref:System.Deployment.Application.InPlaceHostingManager.AssertApplicationRequirements%2A> appel de méthode. Ce code préalablement fait confiance à l’application.  
+     Ces méthodes appellent des <xref:System.Deployment.Application.InPlaceHostingManager> méthodes pour télécharger le manifeste de déploiement, déclarer des autorisations appropriées, demander à l’utilisateur l’autorisation d’installer, puis télécharger et installer l’application dans le cache ClickOnce. Un programme d’installation personnalisé peut spécifier qu’une application ClickOnce est pré-approuvée ou peut reporter la décision d’approbation à l' <xref:System.Deployment.Application.InPlaceHostingManager.AssertApplicationRequirements%2A> appel de méthode. Ce code préapprouve l’application.  
   
     > [!NOTE]
-    > Les autorisations assignées en pré-approbation ne peut pas dépasser les autorisations du code de programme d’installation personnalisé.  
+    > Les autorisations affectées par l’approbation préalable ne peuvent pas dépasser les autorisations du code du programme d’installation personnalisé.  
   
      [!code-csharp[System.Deployment.Application.InPlaceHostingManager#1](../snippets/csharp/VS_Snippets_Winforms/System.Deployment.Application.InPlaceHostingManager/CS/Form1.cs#1)]
      [!code-vb[System.Deployment.Application.InPlaceHostingManager#1](../snippets/visualbasic/VS_Snippets_Winforms/System.Deployment.Application.InPlaceHostingManager/VB/Form1.vb#1)]  
   
-5. Pour tenter de l’installation à partir de votre code, appelez le `InstallApplication` (méthode). Par exemple, si vous avez nommé votre classe `MyInstaller`, vous pouvez appeler `InstallApplication` de la façon suivante.  
+5. Pour tenter une installation à partir de votre code, appelez la `InstallApplication` méthode. Par exemple, si vous avez nommé votre classe `MyInstaller` , vous pouvez appeler `InstallApplication` de la façon suivante.  
   
     ```vb  
     Dim installer As New MyInstaller()  
@@ -76,8 +76,8 @@ N’importe quelle application ClickOnce basée sur un fichier .exe peut être i
     ```  
   
 ## <a name="next-steps"></a>Étapes suivantes  
- Une application ClickOnce peut également ajouter de logique de mise à jour personnalisée, y compris une interface utilisateur personnalisée à afficher pendant le processus de mise à jour. Pour plus d'informations, consultez <xref:System.Deployment.Application.UpdateCheckInfo>. Une application ClickOnce peut également supprimer l’entrée de menu de démarrage standard, raccourci et entrée Ajout / Suppression de programmes en utilisant un `<customUX>` élément. Pour plus d’informations, consultez [ \<entryPoint > élément](../deployment/entrypoint-element-clickonce-application.md) et <xref:System.Deployment.Application.DownloadApplicationCompletedEventArgs.ShortcutAppId%2A>.  
+ Une application ClickOnce peut également ajouter une logique de mise à jour personnalisée, y compris une interface utilisateur personnalisée à afficher pendant le processus de mise à jour. Pour plus d'informations, consultez <xref:System.Deployment.Application.UpdateCheckInfo>. Une application ClickOnce peut également supprimer l’entrée de menu Démarrer standard, le raccourci et l’entrée ajout/suppression de programmes à l’aide d’un `<customUX>` élément. Pour plus d’informations, consultez [ \<entryPoint> Element](../deployment/entrypoint-element-clickonce-application.md) et <xref:System.Deployment.Application.DownloadApplicationCompletedEventArgs.ShortcutAppId%2A> .  
   
 ## <a name="see-also"></a>Voir aussi  
  [Manifeste d’application ClickOnce](../deployment/clickonce-application-manifest.md)   
- [\<entryPoint>, élément](../deployment/entrypoint-element-clickonce-application.md)
+ [\<entryPoint> Appartient](../deployment/entrypoint-element-clickonce-application.md)

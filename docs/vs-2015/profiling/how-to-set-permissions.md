@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Définir les autorisations | Microsoft Docs'
+title: Guide pratique pour définir les autorisations | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,20 +16,20 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 03991f3d5900377ceca5464bf41cfb90fcae650e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440593"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840238"
 ---
-# <a name="how-to-set-permissions"></a>Procédure : Définir des autorisations
+# <a name="how-to-set-permissions"></a>Guide pratique pour définir les autorisations
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette rubrique indique comment l’administrateur d’un ordinateur accorde les autorisations de sécurité exigées pour le profilage à un utilisateur ou un groupe qui ne dispose pas des autorisations d’administrateur sur cet ordinateur.  
   
  Selon un principe de sécurité de base, les applications ne doivent pas s’exécuter avec plus d’autorisations que nécessaire. Ce principe s’applique également aux utilisateurs. Si les utilisateurs peuvent travailler de manière pleinement efficace quand ils se connectent en tant que membres du groupe Utilisateurs et non du groupe Administrateurs, ils ne doivent pas bénéficier d’autorisations d’administrateur. La première procédure, « Pour créer un compte d’utilisateur disposant d’autorisations utilisateurs », explique comment créer un compte d’utilisateur pour un membre du groupe Utilisateurs.  
   
- **Spécifications**  
+ **Configuration requise**  
   
 - [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
@@ -42,7 +42,7 @@ Cette rubrique indique comment l’administrateur d’un ordinateur accorde les 
   
 ### <a name="to-create-a-user-account-that-has-user-permissions"></a>Pour créer un compte d’utilisateur disposant d’autorisations utilisateurs  
   
-1. Cliquez avec le bouton droit sur **Poste de travail**, puis cliquez sur **Gérer**.  
+1. Cliquez avec le bouton droit sur **poste de travail** , puis cliquez sur **gérer**.  
   
      La fenêtre **Gestion de l’ordinateur** s’ouvre.  
   
@@ -52,9 +52,9 @@ Cette rubrique indique comment l’administrateur d’un ordinateur accorde les 
   
      La boîte de dialogue **Nouvel utilisateur** s’affiche.  
   
-4. Renseignez les champs de cette boîte de dialogue avec les informations du compte d’utilisateur que vous créez. Spécifiez un mot de passe. Cochez éventuellement la case qui exige que l’utilisateur modifie le mot de passe à la prochaine connexion.  
+4. Renseignez les champs de cette boîte de dialogue avec les informations du compte d’utilisateur que vous créez. Permet de spécifier un mot de passe. Cochez éventuellement la case qui exige que l’utilisateur modifie le mot de passe à la prochaine connexion.  
   
-5. Cliquez sur **Créer**, puis sur **Fermer**.  
+5. Cliquez sur **créer** , puis sur **Fermer**.  
   
      Le nouvel utilisateur apparaît dans le groupe Utilisateurs, un groupe d’utilisateurs qui ne disposent pas d’autorisations d’administrateur.  
   
@@ -70,13 +70,13 @@ Cette rubrique indique comment l’administrateur d’un ordinateur accorde les 
   
 2. Cliquez avec le bouton droit sur le dossier, puis cliquez sur **Propriétés**.  
   
-     La boîte de dialogue**Propriétés de \<nom_dossier>** s’affiche.  
+     La boîte de dialogue ** \<folder name> Propriétés** s’affiche.  
   
-3. Cliquez sur l'onglet **Sécurité** .  
+3. Cliquez sur l’onglet **Security** .  
   
 4. Cliquez sur le nom du compte de l’utilisateur dans la zone **Noms de groupes ou d’utilisateurs**.  
   
-5. Dans la zone **Autorisations pour \<nom_utilisateur>**, cochez la case en regard de **Contrôle total**.  
+5. Dans la zone **autorisations \<user name> pour** , activez la case à cocher **contrôle total**.  
   
 6. Cliquez sur **OK**.  
   
@@ -84,7 +84,7 @@ Cette rubrique indique comment l’administrateur d’un ordinateur accorde les 
   
 ### <a name="to-grant-access-to-the-profiling-driver"></a>Pour accorder l’accès au pilote de profilage  
   
-1. Ouvrez une invite de commandes en tant qu'administrateur.  
+1. Ouvrez une invite de commandes en tant qu’administrateur.  
   
 2. Remplacez le répertoire par :  
   
@@ -92,7 +92,7 @@ Cette rubrique indique comment l’administrateur d’un ordinateur accorde les 
    <drive>:\Program Files\Microsoft Visual Studio 10\Team Tools\Performance Tools  
    ```  
   
-3. Exécutez la commande suivante :  
+3. Exécutez la commande suivante :  
   
    ```  
    vsperfcmd /admin:driver,start /admin:service,start  
@@ -110,7 +110,7 @@ Cette rubrique indique comment l’administrateur d’un ordinateur accorde les 
    vsperfcmd /admin:security,allow,<right[,right],<user name|group name>  
    ```  
   
-    Cette commande accorde au compte \<nom_utilisateur> ou \<nom_groupe> l’accès aux outils de profilage. L’option \<right> détermine les fonctionnalités de profilage accessibles à l’utilisateur. \<right> option peut avoir une ou plusieurs des valeurs suivantes :  
+    Cette commande accorde au \<user name> compte ou l' \<group name> accès aux outils de profilage. L' \<right> option détermine les fonctionnalités de profilage auxquelles l’utilisateur peut accéder. L' \<right> option peut être une ou plusieurs des valeurs suivantes :  
   
    - FullAccess : autorise l’accès à toutes les méthodes de profilage, notamment la collecte des données de performance à partir des services, l’échantillonnage et le profilage intersession.  
   
@@ -127,6 +127,6 @@ Cette rubrique indique comment l’administrateur d’un ordinateur accorde les 
    Après s’être connectés, les utilisateurs spécifiés pourront désormais utiliser les outils de profilage sans disposer d’autorisations d’administrateur.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Configuration de sessions de performance](../profiling/configuring-performance-sessions.md)   
- [VSPerfCmd](../profiling/vsperfcmd.md)   
+ [Configuration des sessions de performance](../profiling/configuring-performance-sessions.md)   
+ [Option](../profiling/vsperfcmd.md)   
  [Profilage et sécurité Windows Vista](../profiling/profiling-and-windows-vista-security.md)

@@ -1,5 +1,5 @@
 ---
-title: Outil de ligne de commande de Capture | Microsoft Docs
+title: Outil de capture en ligne de commande | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 208ff7f9bbfc2d07669a8b485edffc8dfc4cd54f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437798"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839790"
 ---
 # <a name="command-line-capture-tool"></a>Outil en ligne de commande de capture
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,39 +35,39 @@ DXCap.exe –info
   
 #### <a name="parameters"></a>Paramètres  
  `-file` `filename`  
- Mode de capture (`-c`), `filename` Spécifie le nom du fichier journal de graphisme qui les informations graphiques sont enregistrées dans. Si `filename` n’est pas spécifié, les informations graphiques sont enregistrées dans un fichier nommé `<appname>-<date>-<time>.vsglog` par défaut.  
+ En mode de capture ( `-c` ), `filename` spécifie le nom du fichier journal de graphisme dans lequel les informations graphiques sont enregistrées. Si `filename` n’est pas spécifié, les informations graphiques sont enregistrées dans un fichier nommé `<appname>-<date>-<time>.vsglog` par défaut.  
   
  En mode de validation (v), `filename` spécifie le nom du fichier journal de graphisme à valider. Si `filename` n'est pas spécifié, le journal de graphisme validé en dernier est réutilisé.  
   
  `-frame` `frames`  
- En mode de capture, `frames` spécifie les frames que vous souhaitez capturer. Le premier frame est 1. Vous pouvez spécifier plusieurs frames à l'aide de virgules et de plages. Par exemple, si `frames` est `2, 5, 7-9, 15`, frames `2`, `5`, `7`, `8`, `9`, et `15` sont capturées.  
+ En mode de capture, `frames` spécifie les frames que vous souhaitez capturer. Le premier frame est 1. Vous pouvez spécifier plusieurs frames à l'aide de virgules et de plages. Par exemple, si `frames` est `2, 5, 7-9, 15` , les frames,,,, `2` `5` `7` `8` `9` et `15` sont capturés.  
   
  `-period` `periods`  
- En mode de capture, `periods` spécifie les plages de temps, en secondes, pendant lesquelles vous souhaitez capturer des frames. Vous pouvez spécifier plusieurs périodes à l'aide de virgules et de plages. Par exemple si `periods` est `2.1-5, 7.0-9.3`, puis les frames rendus entre `2.1` et `5` secondes et entre`7` et `9.3` secondes sont capturés.  
+ En mode de capture, `periods` spécifie les plages de temps, en secondes, pendant lesquelles vous souhaitez capturer des frames. Vous pouvez spécifier plusieurs périodes à l'aide de virgules et de plages. Par exemple `periods` , si est `2.1-5, 7.0-9.3` , les frames qui sont rendus entre `2.1` et `5` secondes, et entre `7` et `9.3` secondes sont capturés.  
   
  `-manual`  
- Mode de capture, `-manual` Spécifie que les frames doivent être capturés manuellement en appuyant sur la touche Impr. écran. Les frames peuvent être capturés au démarrage de l'application. Pour arrêter la capture des frames, revenez à l'interface de ligne de commande et appuyez sur Entrée.  
+ En mode de capture, `-manual` spécifie que les frames seront capturés manuellement en appuyant sur la touche Impr. écran. Les frames peuvent être capturés au démarrage de l'application. Pour arrêter la capture des frames, revenez à l'interface de ligne de commande et appuyez sur Entrée.  
   
  `-c` `app` [`args...`]  
  Mode de capture. En mode de capture, `app` spécifie le nom de l'application dont vous souhaitez capturer les informations graphiques. `args...` spécifie des paramètres de ligne de commande supplémentaires pour cette application.  
   
  `-p` [`filename`]  
- Mode de lecture (`-p`). En mode de lecture, `filename` spécifie le nom du fichier journal de graphisme à lire. Si `filename` n'est pas spécifié, le journal de graphisme lu en dernier est réutilisé.  
+ Mode de lecture ( `-p` ). En mode de lecture, `filename` spécifie le nom du fichier journal de graphisme à lire. Si `filename` n'est pas spécifié, le journal de graphisme lu en dernier est réutilisé.  
   
  `-debug`  
- En mode de lecture, `-debug` Spécifie que la lecture doit être effectuée avec la couche de débogage Direct3D est activée.  
+ En mode de lecture, `-debug` spécifie que la lecture doit être effectuée avec la couche de débogage Direct3D activée.  
   
  `-warp`  
- En mode de lecture, `-warp` Spécifie que la lecture doit être effectuée à l’aide de l’outil de rendu logiciel WARP.  
+ En mode de lecture, `-warp` spécifie que la lecture doit être effectuée à l’aide du convertisseur de logiciel Warp.  
   
  `-hw`  
- En mode de lecture, `-hw` Spécifie que la lecture doit être effectuée à l’aide de matériel GPU.  
+ En mode de lecture, `-hw` spécifie que la lecture doit être effectuée à l’aide du matériel GPU.  
   
  `-config`  
  En mode de lecture, `-config` affiche des informations sur l’ordinateur qui a été utilisé pour capturer le fichier journal de graphisme, si ces informations ont été enregistrées dans le journal.  
   
  `-rawmode`  
- En mode de lecture, `-rawmode` Spécifie que la lecture doit être effectuée sans modification pour les événements enregistrés. En situation normale, le mode de lecture peut apporter des changements mineurs à la lecture pour simplifier le débogage et accélérer cette dernière. Par exemple, il peut simuler la sortie de chaînes d'échange au lieu d'exécuter des commandes de chaînes d'échange. Généralement, ce n'est pas un problème. Toutefois, vous pouvez souhaiter que la lecture s'effectue de manière plus fidèle aux événements enregistrés. Par exemple, vous pouvez utiliser cette option pour restaurer le comportement de rendu en plein écran d'une application capturée durant son exécution en mode plein écran.  
+ En mode de lecture, `-rawmode` spécifie que la lecture doit être effectuée sans modification des événements enregistrés. En situation normale, le mode de lecture peut apporter des changements mineurs à la lecture pour simplifier le débogage et accélérer cette dernière. Par exemple, il peut simuler la sortie de chaînes d'échange au lieu d'exécuter des commandes de chaînes d'échange. Généralement, ce n'est pas un problème. Toutefois, vous pouvez souhaiter que la lecture s'effectue de manière plus fidèle aux événements enregistrés. Par exemple, vous pouvez utiliser cette option pour restaurer le comportement de rendu en plein écran d'une application capturée durant son exécution en mode plein écran.  
   
  `-toXML` [`xml_filename`]  
  En mode de lecture, `xml_filename` spécifie le nom du fichier dans lequel une représentation XML de la lecture est écrite. Si `xml_filename` n’est pas spécifié, la représentation XML est écrite dans un fichier portant le même nom que le fichier en cours de lecture, mais avec l’extension `.xml`.  
@@ -76,19 +76,19 @@ DXCap.exe –info
  Mode de validation. En mode de validation, les frames capturés sont lus par le matériel et par WARP. Leurs résultats sont comparés à l’aide d’une fonction de comparaison d’images. Vous pouvez utiliser cette fonctionnalité pour identifier rapidement les problèmes de pilote qui affectent le rendu.  
   
  `-examine` `events`  
- En mode de validation, `events` spécifie l'ensemble des événements graphiques dont les résultats immédiats sont comparés. Par exemple, `-examine present,draw,copy,clear` limite la comparaison aux événements appartenant à ces catégories.  
+ En mode de validation, `events` spécifie l'ensemble des événements graphiques dont les résultats immédiats sont comparés. Par exemple, `-examine present,draw,copy,clear` limite la comparaison uniquement aux événements appartenant à ces catégories.  
   
 > [!TIP]
-> Nous vous recommandons de commencer avec `-examine present,draw,copy,clear` , car cela sera révéler la plupart des problèmes mais beaucoup plus rapidement qu’un ensemble plus complet d’événements. Si nécessaire, vous pouvez spécifier un ensemble distinct ou plus important d'événements pour valider ces derniers et identifier d'autres genres de problèmes.  
+> Nous vous recommandons de commencer par `-examine present,draw,copy,clear` , car cela révèle la plupart des problèmes mais prend beaucoup moins de temps qu’un ensemble plus complet d’événements. Si nécessaire, vous pouvez spécifier un ensemble distinct ou plus important d'événements pour valider ces derniers et identifier d'autres genres de problèmes.  
   
  `-haltonfail`  
- En mode de validation, `-haltonfail` arrête la validation quand des différences sont détectées entre le matériel et Warp. La validation reprend dès que l’utilisateur appuie sur une touche.  
+ En mode de validation, `-haltonfail` interrompt la validation quand des différences sont détectées entre le convertisseur matériel et Warp. La validation reprend dès que l’utilisateur appuie sur une touche.  
   
  `-exitonfail`  
- En mode de validation, `-exitonfail` quitte la validation immédiatement lorsque les différences sont détectées entre le matériel et Warp. Quand le programme s’arrête de cette façon, elle retourne `0` à l’environnement ; sinon, elle retourne `1`.  
+ En mode de validation, `-exitonfail` quitte la validation immédiatement lorsque des différences sont détectées entre le convertisseur matériel et Warp. Quand le programme se termine de cette manière, il retourne `0` à l’environnement ; sinon, il retourne `1` .  
   
  `-showprogress`  
- En mode de validation, `-showprogress` affiche des informations de progression sur la session de contrôle. La progression relative à WARP est affichée sur la gauche alors que la progression relative au matériel est affichée sur la droite.  
+ En mode de validation, `-showprogress` affiche des informations sur la progression de la session de validation. La progression relative à WARP est affichée sur la gauche alors que la progression relative au matériel est affichée sur la droite.  
   
  `-e` `search_string`  
  Énumère les applications du Windows Store qui sont installées. Vous pouvez utiliser ces informations pour effectuer des captures des applications du Windows Store à l'aide de la ligne de commande.  
@@ -96,36 +96,36 @@ DXCap.exe –info
  `-info`  
  Affiche des informations sur les machines et capture les DLL.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  DXCap.exe fonctionne en trois modes :  
   
  Mode de capture (-c)  
  Capture les informations graphiques d'une application en cours d'exécution et les enregistre dans un fichier journal de graphisme. Les fonctionnalités de capture et le format de fichier sont identiques à ceux de Visual Studio.  
   
  Mode de lecture (-p)  
- Lit les événements graphiques capturés d'un fichier journal de graphisme existant. Par défaut, la lecture s'effectue dans une fenêtre, même quand le fichier journal de graphisme a été capturé à partir d'une application en plein écran. La lecture s’effectue en plein écran uniquement quand les graphiques fichier journal a été capturé à partir d’une application en plein écran et `–rawmode` est spécifié.  
+ Lit les événements graphiques capturés d'un fichier journal de graphisme existant. Par défaut, la lecture s'effectue dans une fenêtre, même quand le fichier journal de graphisme a été capturé à partir d'une application en plein écran. La lecture s’effectue en mode plein écran uniquement lorsque le fichier journal de graphisme a été capturé à partir d’une application en plein écran et `–rawmode` est spécifié.  
   
  Mode de validation (`-v`)  
  Valide le comportement de rendu en lisant les frames capturés sur le matériel et dans WARP, puis compare leurs résultats à l'aide d'une fonction de comparaison d'images. Vous pouvez utiliser cette fonctionnalité pour identifier rapidement les problèmes de pilote qui affectent le rendu.  
   
  Outre ces modes, dxcap.exe exécute deux autres fonctions qui n'effectuent pas de capture ou de lecture des informations graphiques.  
   
- Fonction d’énumération (`-e`)  
+ Fonction d’énumération ( `-e` )  
  Affiche des informations détaillées sur les applications du Windows Store installées sur la machine. Ces détails incluent le nom et l'appid de package qui identifient le fichier exécutable dans une application du Windows Store. Pour capturer les informations graphiques d'une application du Windows Store à l'aide de DXCap.exe, servez-vous du nom et de l'appid de package à la place du nom de fichier exécutable utilisé pour la capture d'une application de bureau.  
   
- Info (fonction) (`-info)`  
+ Fonction info (`-info)`  
  Affiche des détails sur les machines et capture les DLL.  
   
 ## <a name="examples"></a>Exemples  
   
 ### <a name="capture-graphics-information-from-a-desktop-app"></a>Capturer les informations graphiques d'une application de bureau  
- Utilisez `–c` pour spécifier l’application à partir duquel vous souhaitez capturer les informations graphiques.  
+ Utilisez `–c` pour spécifier l’application à partir de laquelle vous souhaitez capturer les informations graphiques.  
   
 ```ms-dos  
 DXCap.exe –c BasicHLSL11.exe  
 ```  
   
- Par défaut, les informations graphiques sont enregistrées dans un fichier nommé `<appname>-<date>-<time>.vsglog`. Utilisez `–file` pour spécifier un autre fichier d’enregistrement.  
+ Par défaut, les informations graphiques sont enregistrées dans un fichier nommé `<appname>-<date>-<time>.vsglog` . Utilisez `–file` pour spécifier un autre fichier à enregistrer.  
   
 ```ms-dos  
 DXCap.exe –file regression_test_12.vsglog –c BasicHLSL11.exe  
@@ -149,7 +149,7 @@ DXCap.exe –c "C:\Program Files\Internet Explorer\iexplorer.exe" "www.fishgl.co
 DXCap.exe –c Microsof.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps  
 ```  
   
- La capture d'une application du Windows Store à l'aide de DXCap.exe ressemble à la capture d'une application de bureau Windows. Toutefois, au lieu d'identifier l'application de bureau par son nom de fichier, vous identifiez l'application du Windows Store par son nom de package, ainsi que par le nom ou l'ID de l'exécutable contenu dans le package à capturer. Pour le rendre plus facile de savoir comment identifier les applications du Windows Store qui sont installées sur votre ordinateur, utilisez la `–e` option avec DXCap.exe pour les énumérer :  
+ La capture d'une application du Windows Store à l'aide de DXCap.exe ressemble à la capture d'une application de bureau Windows. Toutefois, au lieu d'identifier l'application de bureau par son nom de fichier, vous identifiez l'application du Windows Store par son nom de package, ainsi que par le nom ou l'ID de l'exécutable contenu dans le package à capturer. Pour faciliter la recherche des applications du Windows Store installées sur votre ordinateur, utilisez l' `–e` option avec DXCap.exe pour les énumérer :  
   
 ```ms-dos  
 DXCap.exe -e  
@@ -164,26 +164,26 @@ DXCap.exe –e map
  La commande ci-dessus énumère les applications du Windows Store qui correspondent à « map ». Voici la sortie :  
   
  **Package "Microsoft.BingMaps" :**  
- **InstallDirectory : C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
+ **InstallDirectory : C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
  **FullName         : Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
- **UserSID : S-1-5-21-2127521184-1604012920-1887927527-5603533**  
+ **UserSID          : S-1-5-21-2127521184-1604012920-1887927527-5603533**  
  **Name             : Microsoft.BingMaps**  
  **Publisher        : CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US**  
- **Version           : 2.1.2914.1734**  
+ **Version          : 2.1.2914.1734**  
  **Applications accessibles :**  
  **Id   : AppexMaps**  
- **Exe : C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
+ **Exe  : C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
  **IsWWA: No**  
- **AppSpec (pour lancer) : DXCap.exe - c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps** la dernière ligne de sortie pour chaque application énumérée affiche la commande que vous pouvez utiliser pour capturer les informations graphiques à partir de celui-ci.  
+ **AppSpec (à lancer) : DXCap.exe-c Microsoft. BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe, AppexMaps** La dernière ligne de sortie pour chaque application énumérée affiche la commande que vous pouvez utiliser pour capturer des informations graphiques à partir de celle-ci.  
   
 ### <a name="capture-specific-frames-or-frames-between-specific-times"></a>Capturer des frames spécifiques ou des frames situés à des périodes spécifiques  
- Utilisez `–frame` pour spécifier les frames à capturer à l’aide de virgules et plages :  
+ Utilisez `–frame` pour spécifier les frames que vous souhaitez capturer à l’aide de virgules et de plages :  
   
 ```ms-dos  
 DXCap.exe –frame 2,5,7-9,15 –c SimpleBezier11.exe  
 ```  
   
- Ou, utilisez `–period` pour spécifier un ensemble d’intervalles de temps durant lesquels capturer des frames. Les intervalles de temps sont exprimés en secondes. Vous pouvez spécifier plusieurs plages :  
+ `–period`Vous pouvez utiliser pour spécifier un ensemble de périodes pendant lesquelles capturer des frames. Les intervalles de temps sont exprimés en secondes. Vous pouvez spécifier plusieurs plages :  
   
 ```ms-dos  
 DXCap.exe –period 2.1-5, 7.0-9.3 –c SimpleBezier11.exe  
@@ -210,20 +210,20 @@ DXCap.exe –p
 ```  
   
 ### <a name="play-back-in-raw-mode"></a>Lire en mode brut  
- Utilisez `-rawmode` pour lire les commandes capturées exactement comme elles se sont produites. En lecture normale, certaines commandes sont émulées. Par exemple, un fichier journal de graphisme capturé à partir d'une application en plein écran est lu dans une fenêtre. Quand le mode brut est activé, le même fichier est lu en plein écran dans la mesure du possible.  
+ Utilisez `-rawmode` pour lire les commandes capturées exactement telles qu’elles se sont produites. En lecture normale, certaines commandes sont émulées. Par exemple, un fichier journal de graphisme capturé à partir d'une application en plein écran est lu dans une fenêtre. Quand le mode brut est activé, le même fichier est lu en plein écran dans la mesure du possible.  
   
 ```ms-dos  
 DXCap.exe –p regression_test_12.vsglog -rawmode  
 ```  
   
 ### <a name="play-back-using-warp-or-a-hardware-device"></a>Lire à l'aide de WARP ou d'un périphérique matériel  
- Vous pouvez forcer la lecture d'un fichier journal de graphisme capturé sur un périphérique matériel pour utiliser WARP. De même, vous pouvez forcer la lecture d'un journal capturé sur WARP pour utiliser un périphérique matériel. Utilisez `-warp` pour lire à l’aide de WARP.  
+ Vous pouvez forcer la lecture d'un fichier journal de graphisme capturé sur un périphérique matériel pour utiliser WARP. De même, vous pouvez forcer la lecture d'un journal capturé sur WARP pour utiliser un périphérique matériel. Utilisez `-warp` pour lire à l’aide de Warp.  
   
 ```ms-dos  
 DXCap.exe –p regression_test_12.vsglog -warp  
 ```  
   
- Utilisez `-hw` pour lire à l’aide de matériel.  
+ Utilisez `-hw` pour la lecture à l’aide du matériel.  
   
 ```ms-dos  
 DXCap.exe –p regression_test_12.vsglog -hw  
@@ -243,7 +243,7 @@ DXCap.exe -v regression_test_12.vsglog –examine present,draw,copy,clear
 ```  
   
 ### <a name="convert-a-graphics-log-file-to-pngs"></a>Convertir un fichier journal de graphisme en fichiers PNG  
- Pour afficher ou analyser les frames d'un fichier journal de graphisme, DXCap.exe peut enregistrer les frames capturés sous forme de fichiers image .png (Portable Network Graphics). Utilisez `-screenshot` au mode de lecture à la sortie frames capturés en tant que fichiers .png.  
+ Pour afficher ou analyser les frames d'un fichier journal de graphisme, DXCap.exe peut enregistrer les frames capturés sous forme de fichiers image .png (Portable Network Graphics). Utilisez `-screenshot` to en mode de lecture pour sortir les frames capturés en tant que fichiers. png.  
   
 ```ms-dos  
 DXCap.exe -p BasicHLSL11.vsglog -screenshot  
@@ -256,13 +256,13 @@ DXCap.exe -p BasicHLSL11.vsglog -screenshot –frame 5, 7-9
 ```  
   
 ### <a name="convert-a-graphics-log-file-to-xml"></a>Convertir un fichier journal de graphisme au format XML  
- Pour permettre le traitement et l'analyse des journaux de graphisme à l'aide d'outils familiers tels que FindStr ou XSLT, DXCap.exe peut convertir un fichier journal de graphisme au format XML. Utilisez `-toXML` en mode de lecture pour convertir XML au lieu de lire dans le journal de sauvegarde.  
+ Pour permettre le traitement et l'analyse des journaux de graphisme à l'aide d'outils familiers tels que FindStr ou XSLT, DXCap.exe peut convertir un fichier journal de graphisme au format XML. Utilisez `-toXML` le mode de lecture pour convertir le journal au format XML au lieu de le relire.  
   
 ```ms-dos  
 DXCap.exe –p regression_test_12.vsglog –toXML  
 ```  
   
- Par défaut, la sortie XML est écrite dans un fichier qui porte le même nom que le journal de graphisme, mais dont l'extension est .xml. Dans l’exemple ci-dessus, le fichier XML est nommé **regression_test_12.xml**. Pour renommer le fichier XML en un autre nom, spécifiez-le après `-toXML`.  
+ Par défaut, la sortie XML est écrite dans un fichier qui porte le même nom que le journal de graphisme, mais dont l'extension est .xml. Dans l’exemple ci-dessus, le fichier XML est nommé **regression_test_12.xml**. Pour attribuer au fichier XML un nom différent, spécifiez-le après `-toXML` .  
   
 ```ms-dos  
 DXCap.exe –p regression_test_12.vsglog –toXML temp.xml  
@@ -296,4 +296,4 @@ DXCap.exe –p regression_test_12.vsglog –toXML temp.xml
 </Method>  
 ```  
   
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
