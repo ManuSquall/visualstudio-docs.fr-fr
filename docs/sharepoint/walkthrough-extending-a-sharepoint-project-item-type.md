@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f949329c7db71386a12c3ab8d7fccf1483b8cca2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e8186b1a1388745527fbb9f4dd37478942c36e62
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015676"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740004"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Procédure pas à pas : étendre un type d’élément de projet SharePoint
   Vous pouvez utiliser l’élément de projet **modèle de connectivité de données métiers** pour créer un modèle pour le service de connectivité de données métiers (BDC) dans SharePoint. Par défaut, lorsque vous créez un modèle à l’aide de cet élément de projet, les données du modèle ne sont pas affichées aux utilisateurs. Vous devez également créer une liste externe dans SharePoint pour permettre aux utilisateurs d’afficher les données.
@@ -161,7 +161,7 @@ ms.locfileid: "86015676"
 
 1. Dans **Explorateur de solutions**, ouvrez le menu contextuel du fichier source. extension. vsixmanifest dans le projet GenerateExternalDataLists, puis choisissez **ouvrir**.
 
-     Visual Studio ouvre le fichier dans l’éditeur de manifeste. Le fichier source. extension. vsixmanifest est la base du fichier extension. vsixmanifest est requis par tous les packages VSIX. Pour plus d’informations sur ce fichier, consultez [Référence du schéma d’extension VSIX 1,0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).
+     Visual Studio ouvre le fichier dans l’éditeur de manifeste. Le fichier source. extension. vsixmanifest est la base du fichier extension. vsixmanifest est requis par tous les packages VSIX. Pour plus d’informations sur ce fichier, consultez [Référence du schéma d’extension VSIX 1,0](/previous-versions/dd393700(v=vs.110)).
 
 2. Dans la zone **nom du produit** , entrez générateur de liste de **données externes**.
 

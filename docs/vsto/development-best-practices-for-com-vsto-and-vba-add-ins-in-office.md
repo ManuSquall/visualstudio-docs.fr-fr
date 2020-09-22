@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d5dd8864484e2b41a1146f1da495251663afdb6a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be48e7ce721c84656362a019e0cc5eec1ae2ee17
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801501"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808205"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Meilleures pratiques de développement pour les compléments COM, VSTO et VBA dans Office
   Si vous développez des compléments COM, VSTO ou VBA pour Office, suivez les meilleures pratiques de développement décrites dans cet article.   afin de garantir :
@@ -31,7 +31,7 @@ ms.locfileid: "88801501"
  Nous vous déconseillons de faire en sorte que votre complément détecte si Office est installé lors du processus d’installation du complément. Si Office n’est pas installé, vous pouvez installer le complément et l’utilisateur pourra y accéder après l’installation d’Office.
 
 ## <a name="use-embedded-interop-types-nopia"></a>Utiliser des types Interop incorporés (NoPIA)
-Si votre solution utilise .NET 4,0 ou une version ultérieure, utilisez les types Interop incorporés (NoPIA) au lieu de dépendre du package redistribuable des assemblys PIA (Primary Interop Assembly) d’Office. L’utilisation de l’incorporation de type réduit la taille d’installation de votre solution et garantit la compatibilité future. Office 2010 était la dernière version d’Office qui a fourni le package redistribuable PIA. Pour plus d’informations, consultez [procédure pas à pas : incorporation d’informations de type à partir de Microsoft Office assemblys](https://msdn.microsoft.com/library/ee317478.aspx) et de l' [équivalence de type et types Interop incorporés](/windows/uwp/porting/desktop-to-uwp-root).
+Si votre solution utilise .NET 4,0 ou une version ultérieure, utilisez les types Interop incorporés (NoPIA) au lieu de dépendre du package redistribuable des assemblys PIA (Primary Interop Assembly) d’Office. L’utilisation de l’incorporation de type réduit la taille d’installation de votre solution et garantit la compatibilité future. Office 2010 était la dernière version d’Office qui a fourni le package redistribuable PIA. Pour plus d’informations, consultez [procédure pas à pas : incorporation d’informations de type à partir de Microsoft Office assemblys](/previous-versions/ee317478(v=vs.140)) et de l' [équivalence de type et types Interop incorporés](/windows/uwp/porting/desktop-to-uwp-root).
 
 Si votre solution utilise une version antérieure de .NET, nous vous recommandons de mettre à jour votre solution pour utiliser .NET 4,0 ou une version ultérieure. L’utilisation de .NET 4,0 ou version ultérieure réduit les prérequis au moment de l’exécution sur les versions plus récentes de Windows.
 

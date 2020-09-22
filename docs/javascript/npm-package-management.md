@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 6b53fb34b3cff444e57491f878f8385bdb523c6e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1269049adad3fe2d26caa79721452f7f313e60d5
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85285047"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739900"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Gérer les packages npm dans Visual Studio
 
@@ -42,7 +42,7 @@ Ces fonctionnalités coopèrent et se synchronisent avec le système de projet e
 
 ### <a name="prerequisites"></a>Prérequis
 
-Vous avez besoin de la charge de travail de ** développementNode.js** et du runtime Node.js pour ajouter la prise en charge de NPM à votre projet. Pour obtenir des instructions détaillées, consultez [créer un projet Node.js](/visualstudio/ide/quickstart-nodejs?toc=/visualstudio/javascript/toc.json).
+Vous avez besoin de la charge de travail de ** développementNode.js** et du runtime Node.js pour ajouter la prise en charge de NPM à votre projet. Pour obtenir des instructions détaillées, consultez [créer un projet Node.js](../ide/quickstart-nodejs.md?toc=%252fvisualstudio%252fjavascript%252ftoc.json).
 
 > [!NOTE]
 > Pour les projets de Node.js existants, utilisez le modèle **de solution à partir de Node.js de code existant** ou du [dossier ouvert (Node.js)](../javascript/develop-javascript-code-without-solutions-projects.md) pour activer NPM dans votre projet.
@@ -86,7 +86,7 @@ Cliquez avec le bouton droit sur le nœud **NPM** pour effectuer l’une des act
 
 * **Installer de nouveaux packages NPM** Ouvre l’interface utilisateur pour installer de nouveaux packages.
 * **Installer les packages NPM** Exécute la commande NPM install pour installer tous les packages listés dans *package.jssur*. (S’exécute `npm install` .)
-* **Mettre à jour les packages NPM** Met à jour les packages vers les dernières versions, en fonction de la plage semver spécifiée dans *package.jssur*. (S’exécute `npm update --save` .). Les plages Semver sont généralement spécifiées à l’aide de « ~ » ou « ^ ». Pour plus d’informations, [package.jssur la configuration](../javascript/configure-packages-with-package-json.md).
+* **Mettre à jour les packages NPM** Met à jour les packages vers les versions les plus récentes, en fonction de la plage de contrôle de version sémantique (semver) spécifiée dans *package.jssur*. (S’exécute `npm update --save` .). Les plages Semver sont généralement spécifiées à l’aide de « ~ » ou « ^ ». Pour plus d’informations, [package.jssur la configuration](../javascript/configure-packages-with-package-json.md).
 
 Cliquez avec le bouton droit sur un nœud de package pour effectuer l’une des actions suivantes :
 
@@ -126,7 +126,7 @@ Pour les projets tels que les projets ASP.NET Core, vous pouvez intégrer la pri
 * [Installer des packages à l’aide d' package.jssur](#npmInstallPackage)
 
 >[!NOTE]
-> Pour les projets ASP.NET Core, vous pouvez également utiliser le [Gestionnaire de bibliothèque](https://docs.microsoft.com/aspnet/core/client-side/libman/?view=aspnetcore-3.1) ou le fil à la place de NPM pour installer des fichiers JavaScript et CSS côté client.
+> Pour les projets ASP.NET Core, vous pouvez également utiliser le [Gestionnaire de bibliothèque](/aspnet/core/client-side/libman/?view=aspnetcore-3.1) ou le fil à la place de NPM pour installer des fichiers JavaScript et CSS côté client.
 
 ### <a name="add-npm-support-to-a-project-aspnet-core"></a><a name="npmAdd"></a> Ajouter la prise en charge de NPM à un projet (ASP.NET Core)
 
@@ -181,4 +181,3 @@ L’installation d’un package peut prendre plusieurs minutes. Vérifiez la pro
 * Dans certains scénarios, Explorateur de solutions peut ne pas afficher l’état correct des packages NPM installés en raison d’un problème connu décrit [ici](https://github.com/aspnet/Tooling/issues/479). Par exemple, le package peut apparaître comme n’étant pas installé lors de son installation. Dans la plupart des cas, vous pouvez mettre à jour Explorateur de solutions en supprimant *package.jssur*, en redémarrant Visual Studio, puis en rajoutant le *package.jssur* le fichier, comme décrit précédemment dans cet article. Ou, lors de l’installation de packages, vous pouvez utiliser la fenêtre Sortie NPM pour vérifier l’état de l’installation.
 
 * Si vous constatez des erreurs lors de la génération de votre application ou du code de la machine à écrire, recherchez les incompatibilités de packages NPM comme source potentielle d’erreurs. Pour identifier les erreurs, consultez la fenêtre Sortie NPM lors de l’installation des packages, comme décrit précédemment dans cet article. Par exemple, si une ou plusieurs versions de package NPM sont dépréciées et provoquent une erreur, vous devrez peut-être installer une version plus récente pour corriger les erreurs. Pour plus d’informations sur l’utilisation de *package.json* pour gérer les versions des packages npm, consultez [Configuration de package.json](../javascript/configure-packages-with-package-json.md).
-

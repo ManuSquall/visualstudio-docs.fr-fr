@@ -11,12 +11,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 625ba0d592d0dbdaa8cb910c366852fe32c5f220
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b69748ef44ce0ca2e16f431c0d13d99bfa449411
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85548367"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90807870"
 ---
 # <a name="customizing-the-model-explorer"></a>Personnalisation de l'Explorateur de modèles
 Vous pouvez modifier l’apparence et le comportement de l’Explorateur pour votre concepteur de langage spécifique à un domaine comme suit :
@@ -113,4 +113,4 @@ Vous pouvez modifier l’apparence et le comportement de l’Explorateur pour vo
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Glossaire des Outils Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glossaire des Outils Domain-Specific Language](/previous-versions/bb126564(v=vs.100))

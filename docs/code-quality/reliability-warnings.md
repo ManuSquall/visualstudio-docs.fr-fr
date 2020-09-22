@@ -1,29 +1,29 @@
 ---
-title: avertissements liés à la fiabilité
+title: Règles de fiabilité
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.reliabilityrules
 helpviewer_keywords:
-- warnings, reliability
-- reliability warnings
-- managed code analysis warnings, reliability warnings
+- rules, reliability
+- reliability rules
+- managed code analysis rules, reliability rules
 ms.assetid: 77886846-10a2-4585-968a-7eb60ebe07e8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6350c98f5fb4bfab5cfd7d70a5d509d3098b15f
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: e0a35b9c49f2eb5655eeb67721b0fafdbbe1e087
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508533"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808270"
 ---
-# <a name="reliability-warnings"></a>Avertissements liés à la fiabilité
+# <a name="reliability-rules"></a>Règles de fiabilité
 
-Les avertissements de fiabilité prennent en charge la fiabilité des bibliothèques et des applications, telles que la mémoire et l’utilisation des threads. Les règles de fiabilité sont les suivantes :
+Les règles de fiabilité prennent en charge la fiabilité des bibliothèques et des applications, telles que la mémoire et l’utilisation des threads.
 
 |Règle|Description|
 |----------|-----------------|
