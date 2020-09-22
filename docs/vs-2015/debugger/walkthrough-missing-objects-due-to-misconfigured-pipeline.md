@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Objets manquants en raison de Pipeline mal configuré | Microsoft Docs'
+title: 'Procédure pas à pas : objets manquants en raison d’un pipeline mal configuré | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9d74006051fd39043de75cec81fdad3f1083adef
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444280"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "90840189"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Procédure pas à pas : objets manquants en raison d’un pipeline mal configuré
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,9 +36,9 @@ Cette procédure pas à pas montre comment utiliser les outils Graphics Diagnost
   
  Dans ce scénario, quand l’application est exécutée pour être testée, l’arrière-plan est affiché comme prévu, mais l’un des objets ne s’affiche pas. À l’aide de Graphics Diagnostics, vous capturez le problème dans un journal de graphisme pour déboguer l’application. Le problème se présente ainsi dans l'application :  
   
- ![L’objet ne peut pas être vu](../debugger/media/gfx-diag-demo-misconfigured-pipeline-problem.png "gfx_diag_demo_misconfigured_pipeline_problem")  
+ ![L'objet ne peut être visualisé](../debugger/media/gfx-diag-demo-misconfigured-pipeline-problem.png "gfx_diag_demo_misconfigured_pipeline_problem")  
   
-## <a name="investigation"></a>Examen  
+## <a name="investigation"></a>Investigation  
  À l'aide des outils Graphics Diagnostics, vous pouvez charger le document du journal de graphisme pour examiner les frames capturés pendant le test.  
   
 #### <a name="to-examine-a-frame-in-a-graphics-log"></a>Pour examiner un frame dans un journal de graphisme  
@@ -68,7 +68,7 @@ Cette procédure pas à pas montre comment utiliser les outils Graphics Diagnost
   
 4. Arrêtez quand vous atteignez l’appel de dessin qui correspond à l’objet manquant. Dans ce scénario, la fenêtre **Étapes de canalisation Graphics** indique que la géométrie a été émise vers le GPU (indiqué par la présence de l’étape **Assembleur d’entrée** ) et transformée (indiqué par l’étape **Nuanceur de sommets** ), mais elle n’apparaît pas dans la cible de rendu, car il ne semble pas y avoir de nuanceur de pixels actif (indiqué par l’absence de l’étape **Nuanceur de pixels** ). Dans ce scénario, vous pouvez même voir la silhouette de l'objet manquant à l’étape **Fusion de sortie** :  
   
-    ![Un événement DrawIndexed et son effet sur le pipeline](../debugger/media/gfx-diag-demo-misconfigured-pipeline-step-2.png "gfx_diag_demo_misconfigured_pipeline_step_2")  
+    ![Événement DrawIndexed et son effet sur le pipeline](../debugger/media/gfx-diag-demo-misconfigured-pipeline-step-2.png "gfx_diag_demo_misconfigured_pipeline_step_2")  
   
    Une fois que vous avez confirmé que l’application avait émis un appel de dessin pour la géométrie de l’objet manquant et que vous avez découvert que l’étape de nuanceur de pixels était inactive, vous pouvez examiner l’état du périphérique pour confirmer vos constatations. Vous pouvez utiliser la **Table des objets Graphics** pour examiner le contexte de périphérique et d’autres données d’objets Direct3D.  
   
@@ -78,7 +78,7 @@ Cette procédure pas à pas montre comment utiliser les outils Graphics Diagnost
   
 2. Examinez l’état du périphérique affiché sous l’onglet **Contexte de périphérique d3d11** pour vérifier qu’aucun nuanceur de pixels n’était actif pendant l’appel de dessin. Dans ce scénario, les **Informations générales sur le nuanceur**(affichées sous **État du nuanceur de pixels**) indiquent que le nuanceur est **NULL**:  
   
-    ![Le contexte de périphérique D3D 11 affiche l’état du nuanceur de pixels](../debugger/media/gfx-diag-demo-misconfigured-pipeline-step-4.png "gfx_diag_demo_misconfigured_pipeline_step_4")  
+    ![Le contexte de périphérique D3D 11 affiche l'état du nuanceur de pixels](../debugger/media/gfx-diag-demo-misconfigured-pipeline-step-4.png "gfx_diag_demo_misconfigured_pipeline_step_4")  
   
    Une fois que vous avez confirmé que le nuanceur de pixels avait été défini sur la valeur null par votre application, l’étape suivante consiste à trouver l’emplacement, dans le code source de votre application, où le nuanceur est défini. Vous pouvez utiliser la **Liste des événements Graphics** avec la **Pile des appels des événements Graphics** pour rechercher cet emplacement.  
   
@@ -93,15 +93,15 @@ Cette procédure pas à pas montre comment utiliser les outils Graphics Diagnost
   
 3. Utilisez la pile des appels pour rechercher l’appel `PSSetShader` dans le code source de votre application. Dans la fenêtre **Pile des appels des événements Graphics** , choisissez l’appel supérieur et examinez la valeur définie pour le nuanceur de pixels. Le nuanceur de pixels peut être directement défini comme null, ou la valeur null peut être due à un argument qui a été transmis à la fonction ou autre état. S’il n’est pas défini directement, vous pourrez peut-être trouver la source de la valeur null vers le haut de la pile des appels. Dans ce scénario, vous découvrez que le nuanceur de pixels prend directement la valeur `nullptr` dans la fonction supérieure, qui se nomme `CubeRenderer::Render`:  
   
-    ![Le code qui n’initialise pas le nuanceur de pixels](../debugger/media/gfx-diag-demo-misconfigured-pipeline-step-5.png "gfx_diag_demo_misconfigured_pipeline_step_5")  
+    ![Code qui n'initialise pas le nuanceur de pixels](../debugger/media/gfx-diag-demo-misconfigured-pipeline-step-5.png "gfx_diag_demo_misconfigured_pipeline_step_5")  
   
    > [!NOTE]
    > Si vous ne trouvez pas la source de la valeur null en examinant simplement la pile des appels, nous vous recommandons de définir un point d’arrêt conditionnel sur l’appel `PSSetShader` pour que l’exécution du programme s’arrête quand le nuanceur de pixels prend la valeur null. Ensuite, redémarrez l’application en mode débogage et appliquez des techniques de débogage traditionnelles pour rechercher la source de la valeur null.  
   
    Pour résoudre le problème, affectez le nuanceur de pixels approprié à l’aide du premier paramètre de l’appel d’API `ID3D11DeviceContext::PSSetShader` .  
   
-   ![Le C corrigé&#43; &#43; code source](../debugger/media/gfx-diag-demo-misconfigured-pipeline-step-6.png "gfx_diag_demo_misconfigured_pipeline_step_6")  
+   ![Code source du&#43;&#43; corrigé](../debugger/media/gfx-diag-demo-misconfigured-pipeline-step-6.png "gfx_diag_demo_misconfigured_pipeline_step_6")  
   
    Après avoir corrigé le code, vous pouvez le régénérer et réexécuter l’application pour vérifier que le problème d’affichage est résolu :  
   
-   ![L’objet est maintenant affiché](../debugger/media/gfx-diag-demo-misconfigured-pipeline-resolution.jpg "gfx_diag_demo_misconfigured_pipeline_resolution")
+   ![L'objet est désormais affiché](../debugger/media/gfx-diag-demo-misconfigured-pipeline-resolution.jpg "gfx_diag_demo_misconfigured_pipeline_resolution")

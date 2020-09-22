@@ -1,5 +1,5 @@
 ---
-title: Comment rechercher un message dans la vue messages | Microsoft Docs
+title: Rechercher un message dans la vue messages | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7145732ef635d550aa883603b0f56090eb6d1278
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7c4b597870d7a87b396b4c6e828da814c49f9bfb
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349313"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852007"
 ---
 # <a name="how-to-search-for-a-message-in-messages-view"></a>Comment : rechercher un message dans la vue Messages
 Vous pouvez rechercher un message spécifique dans la vue messages en utilisant son handle, son type ou son ID de message en tant que critère de recherche. L’une d’entre elles (ou une combinaison) sera un critère de recherche valide. La direction initiale de la recherche peut également être spécifiée. Les champs de la boîte de dialogue sont préchargés avec les attributs du message actuellement sélectionné.

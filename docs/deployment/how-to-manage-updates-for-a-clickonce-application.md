@@ -1,5 +1,5 @@
 ---
-title: Comment gérer des mises à jour pour une application ClickOnce | Microsoft Docs
+title: Gérer les mises à jour pour une application ClickOnce | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 534171d9145d0a21fee7f8831e9a6355e6079cbd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6f4ebe4d04aa585d9129587fe3c250c46516c824
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382352"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851604"
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>Guide pratique pour gérer les mises à jour pour une application ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] les applications peuvent rechercher des mises à jour automatiquement ou par programme. En tant que développeur, vous disposez d’une grande flexibilité pour spécifier quand et comment les vérifications de mise à jour sont effectuées, si les mises à jour sont obligatoires et si l’application doit rechercher les mises à jour.

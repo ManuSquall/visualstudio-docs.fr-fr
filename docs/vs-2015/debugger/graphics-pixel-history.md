@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 614977aef83092c64071524e33507848c34bf442
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420076"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840156"
 ---
 # <a name="graphics-pixel-history"></a>Historique des pixels Graphics
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ La fenêtre Historique des pixels Graphics dans Visual Studio Graphics Analyzer 
   
  Voici la fenêtre Historique des pixels :  
   
- ![Un pixel avec trois événements Direct3D dans son historique. ](../debugger/media/gfx-diag-demo-pixel-history-orientation.png "gfx_diag_demo_pixel_history_orientation")  
+ ![Pixel avec trois événements Direct3D dans son historique.](../debugger/media/gfx-diag-demo-pixel-history-orientation.png "gfx_diag_demo_pixel_history_orientation")  
   
 ## <a name="understanding-the-pixel-history-window"></a>Présentation de la fenêtre Historique des pixels  
  À l'aide de l'Historique des pixels, vous pouvez analyser la façon dont un pixel spécifique de la cible de rendu est affecté par des événements Direct3D dans un frame. Vous pouvez identifier un problème de rendu d'un événement Direct3D spécifique, même quand d'autres évènements (ou d'autres primitives du même événement) continuent à changer la valeur de la couleur finale du pixel. Par exemple, un pixel peut être rendu de manière incorrecte et être ensuite masqué par un autre pixel, semi-transparent, ce qui entraîne un mélange de leurs couleurs dans le framebuffer. Ce genre de problème peut être difficile à diagnostiquer si vous n'avez que le contenu final de la cible de rendu comme repère.  
@@ -38,14 +38,14 @@ La fenêtre Historique des pixels Graphics dans Visual Studio Graphics Analyzer 
   
  Vous pouvez développer chaque primitive pour examiner la façon dont la sortie du nuanceur de pixels a été fusionnée avec la couleur de pixel existante pour produire la couleur résultante. À ce stade, vous pouvez également examiner ou déboguer le code du nuanceur de pixels associé à la primitive. En outre, vous pouvez développer davantage le nœud du nuanceur de sommets pour examiner l'entrée du nuanceur de sommets.  
   
-### <a name="exclusion"></a> Exclusion de primitive  
+### <a name="primitive-exclusion"></a><a name="exclusion"></a> Exclusion de primitive  
  Si une primitive ne peut pas affecter la couleur d'un pixel, l'exclusion peut se produire pour diverses raisons. Chaque raison est représentée par une icône décrite dans ce tableau :  
   
 |Icône|Raison de l'exclusion|  
 |----------|--------------------------|  
-|![Icône d’échec au test de profondeur. ](../debugger/media/vsg-hist-icon-failed-depth.png "vsg_hist_icon_failed_depth")|Le pixel a été exclu parce qu'il n'a pas réussi le test Depth Test.|  
-|![Icône d’échec au test scissor. ](../debugger/media/vsg-hist-icon-failed-scissor.png "vsg_hist_icon_failed_scissor")|Le pixel a été exclu parce qu'il n'a pas réussi le test Scissor Test.|  
-|![Icône d’échec au test stencil. ](../debugger/media/vsg-hist-icon-failed-stencil.png "vsg_hist_icon_failed_stencil")|Le pixel a été exclu parce qu'il n'a pas réussi le test Stencil Test.|  
+|![Icône d'échec au test de profondeur.](../debugger/media/vsg-hist-icon-failed-depth.png "vsg_hist_icon_failed_depth")|Le pixel a été exclu parce qu'il n'a pas réussi le test Depth Test.|  
+|![Icône d'échec au test Scissor.](../debugger/media/vsg-hist-icon-failed-scissor.png "vsg_hist_icon_failed_scissor")|Le pixel a été exclu parce qu'il n'a pas réussi le test Scissor Test.|  
+|![Icône d'échec au test Stencil.](../debugger/media/vsg-hist-icon-failed-stencil.png "vsg_hist_icon_failed_stencil")|Le pixel a été exclu parce qu'il n'a pas réussi le test Stencil Test.|  
   
 ### <a name="draw-call-exclusion"></a>Exclusion d'appel de dessin  
  Si aucune des primitives d’un appel de dessin ne peut affecter la cible de rendu, car elles ne réussissent pas un test, l’appel de dessin ne peut pas être développé et une icône correspondant à la raison de l’exclusion s’affiche juste à côté. Les raisons de l'exclusion d'un appel de dessin ressemblent aux raisons de l'exclusion d'une primitive. En outre, leurs icônes sont similaires.  

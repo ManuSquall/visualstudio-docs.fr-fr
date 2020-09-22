@@ -1,5 +1,5 @@
 ---
-title: Comment paginer vers le haut ou vers le haut dans la mémoire | Microsoft Docs
+title: Page vers le haut ou vers le haut dans la mémoire | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79216ba29047101c9b9d2c6618cae013640542b8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ee4e4e2037e39df7ce343143ff64235f1de0364f
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349417"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852046"
 ---
 # <a name="how-to-page-up-or-down-in-memory"></a>Comment : se déplacer d'une page vers le haut ou vers le bas dans la mémoire
 

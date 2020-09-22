@@ -12,13 +12,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2aa32579b7e1f3ad1129fb4be116555b8bb5d790
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434318"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839653"
 ---
-# <a name="c-library-reference"></a>Informations de référence sur la bibliothèque C++
+# <a name="c-library-reference"></a>Référence de bibliothèque C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette section contient des informations de référence sur le kit SDK du visualiseur concurrentiel.  
@@ -30,4 +30,4 @@ Cette section contient des informations de référence sur le kit SDK du visuali
  [Concurrency, espace de noms (visualiseur concurrentiel)](../profiling/concurrency-namespace-concurrency-visualizer.md)  
   
 ## <a name="see-also"></a>Voir aussi  
- [Kit SDK du visualiseur concurrentiel](../profiling/concurrency-visualizer-sdk.md)
+ [Kit de développement logiciel (SDK) du visualiseur concurrentiel](../profiling/concurrency-visualizer-sdk.md)

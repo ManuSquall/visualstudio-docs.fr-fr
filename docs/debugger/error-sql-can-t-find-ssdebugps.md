@@ -1,5 +1,5 @@
 ---
-title: 'Erreur : SQL peut &apos; Rechercher SSDEBUGPS | Microsoft Docs'
+title: SQL peut &apos; Rechercher SSDEBUGPS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59a1a603aa44ceed46c160443508080072046e35
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 50c8b6c2385879e4cf41c8cc2aea57715050b5e2
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88706475"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851786"
 ---
 # <a name="error-sql-can39t-find-ssdebugps"></a>Erreur : SQL peut&#39;t Rechercher SSDEBUGPS
 

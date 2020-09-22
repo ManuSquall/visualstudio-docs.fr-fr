@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : spécifier des commandes de pré-instrumentation et de post-instrumentation | Microsoft Docs'
+title: Guide pratique pour spécifier des commandes de pré-instrumentation et de post-instrumentation | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,20 +16,20 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ab7ecbe97ba0b174a1cc4c0f0d169834ce25e8d8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439713"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839429"
 ---
-# <a name="how-to-specify-pre--and-post-instrument-commands"></a>Procédure : Spécifier des commandes de prétraitement et de post-instrumentation
+# <a name="how-to-specify-pre--and-post-instrument-commands"></a>Comment : spécifier des commandes de pré-instrumentation et de post-instrumentation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez spécifier des commandes qui s’exécutent avant ou après l’instrumentation des fichiers binaires d’une session de performance. Vous pouvez spécifier toute commande pouvant être émise à partir de la ligne de commande comme événement de pré-instrumentation ou de post-instrumentation. Par exemple, vous pouvez spécifier des commandes qui automatisent la nouvelle signature d’un assembly avec une clé de nom fort dans un fichier de commandes exécuté une fois les fichiers binaires instrumentés.  
   
  Vous pouvez spécifier des commandes pour tous les fichiers binaires instrumentés dans le cadre de l’exécution du profilage ou pour des fichiers binaires individuels. Toutefois, vous ne pouvez spécifier qu’une seule commande de pré-instrumentation à exécuter avant le processus d’instrumentation et une seule commande de post-instrumentation à exécuter après. Vous ne pouvez pas spécifier des commandes à la fois pour tous les fichiers binaires et pour des fichiers binaires individuels. Quand vous spécifiez des commandes pour tous les fichiers binaires, les commandes sont exécutées avant ou après l’instrumentation de chaque fichier binaire de la session.  
   
- **Requirements**  
+ **Configuration requise**  
   
 - [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
@@ -39,7 +39,7 @@ Vous pouvez spécifier des commandes qui s’exécutent avant ou après l’inst
   
   Sur les ordinateurs 32 bits, le répertoire des outils de profilage par défaut est Lecteur\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools.  
   
-  **Ordinateurs 64 bits**  
+  **Ordinateurs 64 bits**  
   
   Sur les ordinateurs 64 bits, spécifiez le chemin en fonction de la plateforme cible de l’application profilée :  
   
@@ -64,7 +64,7 @@ Vous pouvez spécifier des commandes qui s’exécutent avant ou après l’inst
 3. Tapez la commande dans la zone de texte **Ligne de commande** sous **Événements de pré-instrumentation**.  
   
     > [!NOTE]
-    > Vous pouvez cliquer sur le bouton de sélection  **(...)**  en regard de la zone **Ligne de commande** pour rechercher et sélectionner le fichier .exe, .cmd ou .bat approprié.  
+    > Vous pouvez cliquer sur le bouton de sélection  **(...) ** en regard de la zone **Ligne de commande** pour rechercher et sélectionner le fichier .exe, .cmd ou .bat approprié.  
   
 4. Cliquez sur **OK**.  
   
@@ -83,11 +83,11 @@ Vous pouvez spécifier des commandes qui s’exécutent avant ou après l’inst
 3. Tapez la commande dans la zone de texte **Ligne de commande** sous **Événements de post-instrumentation**.  
   
     > [!NOTE]
-    > Vous pouvez cliquer sur le bouton de sélection  **(...)**  en regard de la zone **Ligne de commande** pour rechercher et sélectionner le fichier .exe, .cmd ou .bat approprié.  
+    > Vous pouvez cliquer sur le bouton de sélection  **(...) ** en regard de la zone **Ligne de commande** pour rechercher et sélectionner le fichier .exe, .cmd ou .bat approprié.  
   
 4. Cliquez sur **OK**.  
   
      Pour empêcher la commande de s’exécuter sans la supprimer, cochez la case **Exclure de l’instrumentation**. Pour modifier les paramètres du compilateur ou de l’éditeur de liens, utilisez les pages de propriétés du projet.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Configuration de sessions de performances](../profiling/configuring-performance-sessions.md)
+ [Configuration des sessions de performance](../profiling/configuring-performance-sessions.md)

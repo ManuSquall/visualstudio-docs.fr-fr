@@ -1,5 +1,5 @@
 ---
-title: 'Erreur : ASP.NET n’est ne pas installé | Microsoft Docs'
+title: 'Erreur : ASP.NET n’est pas installé | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,13 +22,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2198ed401f714353be2dd18846dd527cc433e695
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447313"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840026"
 ---
-# <a name="error-aspnet-not-installed"></a>Erreur : ASP.NET n’est pas installé
+# <a name="error-aspnet-not-installed"></a>Erreur : ASP.NET n'est pas installé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette erreur se produit quand [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] n'est pas installé correctement sur l'ordinateur que vous tentez de déboguer. Cela peut signifier qu'[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] n'a jamais été installé ou qu'[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] a été installé avant les services IIS (Internet Information Services).  
@@ -41,10 +41,10 @@ Cette erreur se produit quand [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] n
     \WINDOWS\Microsoft.NET\Framework\version\aspnet_regiis -i  
     ```  
   
-     où *version* représente le numéro de version du .NET Framework installée sur votre ordinateur, par exemple v1.0.370. Vous pouvez déterminer la version du framework en consultant le `\WINDOWS\Microsoft.NET\Framework` directory.  
+     où *version* représente le numéro de version du .NET Framework installé sur votre ordinateur, par exemple v 1.0.370. Vous pouvez déterminer la version du Framework en regardant dans le `\WINDOWS\Microsoft.NET\Framework` répertoire.  
   
     > [!NOTE]
     > Sous Windows Server 2003, vous pouvez installer [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] avec **Ajout/Suppression de programmes** dans le Panneau de configuration.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Débogage d’applications web : erreurs et dépannage](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+ [Débogage d'applications Web : erreurs et dépannage](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

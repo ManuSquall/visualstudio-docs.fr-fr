@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4c1325ebb49e500c3afa40ee074be1f9b859100e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 014b59efb945f6390877a2e9764e24b6c4cd639b
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62978430"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810939"
 ---
 # <a name="security-and-deployment-walkthroughs"></a>Procédures pas à pas relatives à la sécurité et au déploiement
   Les rubriques suivantes montrent comment vous pouvez définir une stratégie de sécurité pour autoriser l’exécution de votre solution et comment déployer votre solution Office.
@@ -31,19 +31,19 @@ ms.locfileid: "62978430"
 - [Comment : configurer la sécurité de la liste d’inclusion](../vsto/how-to-configure-inclusion-list-security.md) Explique comment configurer l' [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] invite d’approbation pour contrôler si les utilisateurs finaux ont la possibilité d’installer des solutions Office.
 
 ## <a name="deployment-topics"></a>Rubriques traitant du déploiement
-- [Comment : publier une solution Office à l’aide de ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8) Fournit des informations sur l’utilisation de l' **Assistant Publication** ou de la page **publier** du concepteur de projet pour publier des solutions Office.
+- [Comment : publier une solution Office à l’aide de ClickOnce](/previous-versions/bb386095(v=vs.110)) Fournit des informations sur l’utilisation de l' **Assistant Publication** ou de la page **publier** du concepteur de projet pour publier des solutions Office.
 
-- [Comment : publier une solution Office au niveau du document sur un serveur SharePoint à l’aide de ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58) Décrit les étapes de déploiement sur un serveur SharePoint.
+- [Comment : publier une solution Office au niveau du document sur un serveur SharePoint à l’aide de ClickOnce](/previous-versions/bb608595(v=vs.110)) Décrit les étapes de déploiement sur un serveur SharePoint.
 
-- [Comment : installer une solution Office ClickOnce](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065) Fournit la procédure d’installation des solutions Office en exécutant le programme d’installation qui est généré pendant le processus de publication. ouverture du fichier manifeste de déploiement ; ou l’ouverture d’un document ou d’un classeur personnalisé.
+- [Comment : installer une solution Office ClickOnce](/previous-versions/bb608592(v=vs.110)) Fournit la procédure d’installation des solutions Office en exécutant le programme d’installation qui est généré pendant le processus de publication. ouverture du fichier manifeste de déploiement ; ou l’ouverture d’un document ou d’un classeur personnalisé.
 
-- [Procédure : installer les composants requis sur les ordinateurs des utilisateurs finaux pour exécuter des solutions Office](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98) Décrit comment vous pouvez créer un programme d’installation qui vérifie la configuration requise avant d’installer les composants de la solution.
+- [Procédure : installer les composants requis sur les ordinateurs des utilisateurs finaux pour exécuter des solutions Office](/previous-versions/bb608608(v=vs.110)) Décrit comment vous pouvez créer un programme d’installation qui vérifie la configuration requise avant d’installer les composants de la solution.
 
-- [Comment : préparer IIS pour le déploiement de solutions Office](https://msdn.microsoft.com/f62bce70-81d4-4f8b-86e6-2f2afec5d9b4) Décrit comment configurer le type MIME sur Microsoft Internet Information Services (IIS) pour le manifeste de déploiement.
+- [Comment : préparer IIS pour le déploiement de solutions Office](/previous-versions/bb608629(v=vs.110)) Décrit comment configurer le type MIME sur Microsoft Internet Information Services (IIS) pour le manifeste de déploiement.
 
-- [Comment : mettre à jour les solutions Office déployées](https://msdn.microsoft.com/be96db53-b6ea-46ab-b8d9-b76b098b3b13) Fournit des informations sur la mise à jour d’une solution Office à l’aide de l' **Assistant Publication**.
+- [Comment : mettre à jour les solutions Office déployées](/previous-versions/bb157871(v=vs.110)) Fournit des informations sur la mise à jour d’une solution Office à l’aide de l' **Assistant Publication**.
 
-- [Comment : modifier le chemin d’installation d’une solution Office](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd) Fournit des informations sur la façon de modifier le chemin d’installation d’une solution Office.
+- [Comment : modifier le chemin d’installation d’une solution Office](/previous-versions/bb608626(v=vs.110)) Fournit des informations sur la façon de modifier le chemin d’installation d’une solution Office.
 
 ## <a name="related-sections"></a>Sections connexes
 - [Procédures pas à pas utilisant Word](../vsto/walkthroughs-using-word.md) Répertorie des guides pas à pas qui fournissent une introduction aux solutions Office dans Visual Studio et vous aide à illustrer comment créer des applications qui tirent parti de Word.

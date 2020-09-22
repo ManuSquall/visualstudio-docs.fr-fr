@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5aace03631cd768566dca8e314f280e20d9de77f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432938"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839769"
 ---
 # <a name="functions-view---sampling-data"></a>Vue Fonctions - Données d’échantillonnage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,11 +29,11 @@ La vue de rapport Fonctions de la méthode de profilage par échantillonnage ré
   
 |Colonne|Description|  
 |------------|-----------------|  
-|**ID du processus**|ID du processus (PID) de l'exécution du profilage.|  
+|**ID de processus**|ID du processus (PID) de l'exécution du profilage.|  
 |**Nom du processus**|Nom du processus.|  
 |**Nom du module**|Nom du module qui contient la fonction.|  
-|**Chemin de module**|Chemin d’accès du module qui contient la fonction.|  
-|**Fichier source**|Fichier source contenant la définition pour cette fonction.|  
+|**Chemin du module**|Chemin d’accès du module qui contient la fonction.|  
+|**Source File**|Fichier source contenant la définition pour cette fonction.|  
 |**Nom de la fonction**|Nom complet de la fonction.|  
 |**Numéro de ligne de fonction**|Numéro de ligne du début de cette fonction dans le fichier source.|  
 |**Adresse de la fonction**|Adresse de la fonction.|  
@@ -43,7 +43,7 @@ La vue de rapport Fonctions de la méthode de profilage par échantillonnage ré
 |**% d’échantillons exclusifs**|Pourcentage de tous les échantillons de l’exécution du profilage qui étaient des échantillons exclusifs de cette fonction.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour personnaliser les colonnes de la vue Rapport](../profiling/how-to-customize-report-view-columns.md)   
- [Vue Fonctions - Instrumentation](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
- [Vue Fonctions - Échantillonnage](../profiling/functions-view-dotnet-memory-sampling-data.md)   
- [Mode Fonctions](../profiling/functions-view-instrumentation-data.md)
+ [Comment : personnaliser les colonnes de la vue rapport](../profiling/how-to-customize-report-view-columns.md)   
+ [Vue fonctions-Instrumentation](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
+ [Vue fonctions-échantillonnage](../profiling/functions-view-dotnet-memory-sampling-data.md)   
+ [Vue Fonctions](../profiling/functions-view-instrumentation-data.md)

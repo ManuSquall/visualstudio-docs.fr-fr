@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Référencer les informations de symboles Windows | Microsoft Docs'
+title: Guide pratique pour référencer les informations de symboles Windows | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,13 +15,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c7a123a42c1a46faf67fb5b63b1ab4ef300735f3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443458"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840018"
 ---
-# <a name="how-to-reference-windows-symbol-information"></a>Procédure : Informations de symbole de référence Windows
+# <a name="how-to-reference-windows-symbol-information"></a>Guide pratique pour référencer les informations de symboles Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Les outils de profilage Visual Studio utilisent des fichiers de symboles (.pdb) pour résoudre les noms symboliques, tels que les noms de fonctions dans les fichiers binaires d’un programme. Vous pouvez suivre les étapes suivantes pour télécharger et mettre à jour automatiquement les fichiers .pdb correspondant à la version de Windows installée sur l’ordinateur local.  
@@ -29,13 +29,13 @@ Les outils de profilage Visual Studio utilisent des fichiers de symboles (.pdb) 
 > [!NOTE]
 > Ce paramètre n’affecte pas les rapports existants. Seuls ceux créés après la spécification du serveur de symboles auront les informations de symboles.  
   
- Pour plus d’informations, consultez [Spécifier les fichiers de symboles (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
+ Pour plus d’informations, consultez [spécifier les fichiers de symboles (. pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
 ### <a name="to-use-the-microsoft-symbol-server"></a>Pour utiliser le serveur de symboles Microsoft  
   
 1. Créez un dossier destiné à contenir les informations du fichier de symboles (par exemple, C:\SymbolCache).  
   
-2. Dans le menu **Outils**, cliquez sur **Options**.  
+2. Dans le menu **Outils** , cliquez sur **Options**.  
   
      La boîte de dialogue **Options** s'affiche.  
   
@@ -50,5 +50,5 @@ Les outils de profilage Visual Studio utilisent des fichiers de symboles (.pdb) 
      Vous pouvez également cliquer sur le bouton de sélection (**...**), puis sélectionner un répertoire dans la boîte de dialogue **Rechercher un dossier**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Configuration de sessions de performance](../profiling/configuring-performance-sessions.md)   
+ [Configuration des sessions de performance](../profiling/configuring-performance-sessions.md)   
  [Guide pratique pour sérialiser les informations de symbole](../profiling/how-to-serialize-symbol-information.md)

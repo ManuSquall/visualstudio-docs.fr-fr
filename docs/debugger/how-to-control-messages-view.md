@@ -1,5 +1,5 @@
 ---
-title: Comment contrôler la vue des messages | Microsoft Docs
+title: Affichage des messages de contrôle | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a95e257950a93ff61c27f7ea599b0de12e09677d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 917fc2af5ab09544201a6aa35c34611a89d7a277
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350249"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90850967"
 ---
 # <a name="how-to-control-messages-view"></a>Comment : contrôler la vue Messages
 Avec Spy + +, vous disposez d’un contrôle considérable sur le contenu d’une fenêtre d' [affichage des messages](../debugger/messages-view.md) . Vous pouvez [Démarrer et arrêter](../debugger/how-to-start-and-stop-the-message-log-display.md) l’affichage des messages à tout moment, et vous pouvez spécifier les éléments suivants :

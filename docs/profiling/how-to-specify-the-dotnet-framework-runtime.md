@@ -1,5 +1,5 @@
 ---
-title: Guide pratique pour spécifier le Runtime .NET Framework | Microsoft Docs
+title: Spécifier le runtime .NET Framework | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2eddbe3602386e6a8f5c7e07e796b8c3b047603c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 27846b448f7e0667004bd25d24bd447fe43f8e51
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331376"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851123"
 ---
 # <a name="how-to-specify-the-net-framework-runtime"></a>Guide pratique pour spécifier le runtime .NET Framework
 

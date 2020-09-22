@@ -1,5 +1,6 @@
 ---
-title: Déployer manuellement des applications ClickOnce en préservant la personnalisation
+title: Déployer manuellement l’application ClickOnce & conserver la personnalisation
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47db202d07fd88bfb5e922964caf2cdd5008c6fd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9e3f21f9e377b7d3e2d71d499eed25079c7769c7
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66263426"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809222"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Procédure pas à pas : déployer manuellement une application ClickOnce qui ne nécessite pas de nouvelle signature et qui conserve les informations de personnalisation
 Lorsque vous créez une [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application et que vous la transmettez à un client pour la publication et le déploiement, le client a traditionnellement dû mettre à jour le manifeste de déploiement et le signer à nouveau. Bien qu’il s’agit toujours de la méthode recommandée dans la plupart des cas, le .NET Framework 3,5 vous permet de créer des [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiements qui peuvent être déployés par les clients sans avoir à régénérer un nouveau manifeste de déploiement. Pour plus d’informations, consultez [déployer des applications ClickOnce pour les serveurs de test et de production sans avoir à vous reconnecter](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).

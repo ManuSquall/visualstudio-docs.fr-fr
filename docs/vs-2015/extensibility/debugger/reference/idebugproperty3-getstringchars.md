@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::GetStringChars | Microsoft Docs
+title: 'IDebugProperty3 :: GetStringChars | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 661cf6833c292d5ff4015649d494ee3a7d04fdbb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419882"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839957"
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Récupère la chaîne associée à cette propriété et le stocke dans une mémoire tampon fournie par l’utilisateur.  
+Récupère la chaîne associée à cette propriété et la stocke dans une mémoire tampon fournie par l’utilisateur.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -44,26 +44,26 @@ int GetStringChars(
   
 #### <a name="parameters"></a>Paramètres  
  `buflen`  
- [in] Nombre maximal de caractères de que la mémoire tampon fournie par l’utilisateur peut contenir.  
+ dans Nombre maximal de caractères que la mémoire tampon fournie par l’utilisateur peut contenir.  
   
  `rgString`  
- [out] Retourne la chaîne.  
+ à Retourne la chaîne.  
   
- [C++ uniquement], `rgString` est un pointeur vers une mémoire tampon qui reçoit les caractères Unicode de la chaîne. Cette mémoire tampon doit être au moins `buflen` caractères (non en octets) la taille.  
+ [C++ uniquement], `rgString` est un pointeur vers une mémoire tampon qui reçoit les caractères Unicode de la chaîne. La taille de cette mémoire tampon doit être d’au moins `buflen` caractères (et non pas d’octets).  
   
  `pceltFetched`  
- [out] Où le nombre de caractères réellement stocké dans la mémoire tampon est retourné. (Peut être `NULL` en C++.)  
+ à Où le nombre de caractères réellement stockés dans la mémoire tampon est retourné. (Peut être `NULL` en C++.)  
   
 ## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+ En cas de réussite, retourne `S_OK` ; sinon, retourne un code d’erreur.  
   
-## <a name="remarks"></a>Notes  
- En C++, doit veiller à s’assurer que la mémoire tampon est au moins `buflen` caractères Unicode. Notez qu’un caractère Unicode est de 2 octets de long.  
+## <a name="remarks"></a>Remarques  
+ En C++, vous devez veiller à ce que la mémoire tampon soit au moins un `buflen` caractère Unicode long. Notez qu’un caractère Unicode a une longueur de 2 octets.  
   
 > [!NOTE]
-> En C++, la chaîne retournée n’inclut pas un caractère null de fin. Si spécifié, `pceltFetched` indique le nombre de caractères dans la chaîne.  
+> En C++, la chaîne retournée n’inclut pas de caractère null de fin. S’il est spécifié, `pceltFetched` spécifie le nombre de caractères dans la chaîne.  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a> Exemple  
 <!-- TODO: review snippet reference  [!CODE [[cpp]]([cpp])]  -->  
   
 ```  

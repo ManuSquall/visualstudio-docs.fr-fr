@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::GetHostMachineName_V7 | Microsoft Docs
+title: 'IDebugProgramNode2 :: GetHostMachineName_V7 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 63e4f1a3621dde3fba5e8a2dabf45eaceb5d8ea4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418057"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839753"
 ---
-# <a name="idebugprogramnode2gethostmachinenamev7"></a>IDebugProgramNode2::GetHostMachineName_V7
+# <a name="idebugprogramnode2gethostmachinename_v7"></a>IDebugProgramNode2::GetHostMachineName_V7
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-DÉCONSEILLÉ. N’UTILISEZ PAS.  
+Déconseillé. N’UTILISEZ PAS.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -41,15 +41,15 @@ int GetHostMachineName_V7 ( 
   
 #### <a name="parameters"></a>Paramètres  
  `pbstrHostMachineName`  
- [out] Retourne le nom de l’ordinateur dans lequel le programme est en cours d’exécution.  
+ à Retourne le nom de l’ordinateur sur lequel le programme est en cours d’exécution.  
   
 ## <a name="return-value"></a>Valeur de retour  
- Une implémentation doit toujours retourner `E_NOTIMPL`.  
+ Une implémentation doit toujours retourner `E_NOTIMPL` .  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
   
 > [!WARNING]
-> En tant que de [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)], cette méthode n’est plus utilisée et doit toujours retourner `E_NOTIMPL`.  
+> À partir de [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)] , cette méthode n’est plus utilisée et doit toujours retourner `E_NOTIMPL` .  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

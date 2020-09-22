@@ -1,5 +1,5 @@
 ---
-title: Définition des options de nom de fichier de données de performances | Microsoft Docs
+title: Définir les options de nom de fichier de données de profilage | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: d7a8d6b9-ab23-46fb-98ed-774781157860
@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fc548f5e051be878382d81bd040accbb13e9755
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bba5677c491e77e6f1c2758e64cec1b598c9b627
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85548120"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851565"
 ---
 # <a name="how-to-set-performance-data-file-name-options"></a>Guide pratique pour définir les options de nom de fichier des données de performance
 

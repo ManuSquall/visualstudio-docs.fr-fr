@@ -1,5 +1,5 @@
 ---
-title: Comment-développer et réduire les arborescences Spy + + | Microsoft Docs
+title: Développer et réduire les arborescences Spy + + | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f67a88c153e5bfef2644eb731d68229a54ffcbc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e9a8735613ad4f84c45190a5d0fa21b71d3a2658
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349586"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852085"
 ---
 # <a name="how-to-expand-and-collapse-spy-trees"></a>Comment : développer et réduire des arborescences Spy++
 Vous pouvez développer et réduire les vues fenêtres, processus et threads à l’aide de deux méthodes : en cliquant sur les icônes dans la fenêtre ou à l’aide du menu **arborescence** . Les icônes + et-dans l’arborescence agissent comme dans la fenêtre de projet C++.

@@ -1,5 +1,6 @@
 ---
-title: Comment signer des fichiers d’installation avec SignTool.exe (ClickOnce) | Microsoft Docs
+title: Signer des fichiers d’installation avec SignTool.exe (ClickOnce)
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9e1911b6e86058b7f078f40fa10ca5e0e4e53c0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 138e84637acb123c445839dc4810547ed8bc2ed3
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382066"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809503"
 ---
 # <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Guide pratique pour signer des fichiers avec SignTool.exe (ClickOnce)
 Vous pouvez utiliser *SignTool.exe* pour signer un programme d’installation (*setup.exe*). Ce processus aide à garantir que les fichiers falsifiés ne sont pas installés sur les ordinateurs des utilisateurs finaux.

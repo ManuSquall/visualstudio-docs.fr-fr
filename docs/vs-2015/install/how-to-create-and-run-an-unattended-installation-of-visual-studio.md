@@ -13,11 +13,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 26e059d4fdc8eadd422924dd6bbda6f7c945ccfb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433043"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840174"
 ---
 # <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>Comment : créer et exécuter une installation sans assistance de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,10 +40,10 @@ Vous pouvez exécuter l’application d’installation pour [!INCLUDE[vsprvs](..
     > [!NOTE]
     > L’installation peut échouer si la combinaison du nom du chemin d’accès et du fichier dépasse 260 caractères. La longueur maximale d’un chemin dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] est de 221 caractères.  Le nom de chemin d’accès local ne doit pas dépasser 70 caractères et le nom du chemin d’accès réseau ne doit pas dépasser 39 caractères.
 
-     L’installation peut également échouer si les noms de dossiers du chemin incluent des espaces incorporés (par exemple, "\\\\*nom_serveur*\installation IDE" ou \\\\*nom_serveur*\Visual Studio\\).
+     L’installation peut également échouer si les noms de dossier dans le chemin d’accès incluent des espaces incorporés (par exemple, « \\ \\ *ServerName*\IDE install » ou \\ \\ *ServerName*\Visual Studio \\ ).
 
 ## <a name="deploying-visual-studio-in-unattended-mode"></a>Déploiement de Visual Studio en mode sans assistance
- Pour déployer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] en mode sans assistance, vous devez modifier le fichier AdminDeployment.xml. Pour ce faire, vous devez d’abord créer le fichier AdminDeployment.xml à l’aide du paramètre de ligne de commande `/CreateAdminFile` *\<emplacement du fichier>*. Ensuite, vous pouvez utiliser ce fichier pour pousser un déploiement de Visual Studio sur votre réseau ou l’extraire dans une installation si vous placez ce fichier dans le répertoire *Lecteur*:\IDEinstall\packages. Le fichier AdminDeployment.xml n’est pas propre à un système d’exploitation, une architecture, une version de Visual Studio ou un langage de système d’exploitation.
+ Pour déployer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] en mode sans assistance, vous devez modifier le fichier AdminDeployment.xml. Pour ce faire, vous devez d’abord créer le fichier AdminDeployment.xml à l’aide du `/CreateAdminFile` *\<file location>* paramètre de ligne de commande. Ensuite, vous pouvez utiliser ce fichier pour pousser un déploiement de Visual Studio sur votre réseau ou l’extraire dans une installation si vous placez ce fichier dans le répertoire *Lecteur*:\IDEinstall\packages. Le fichier AdminDeployment.xml n’est pas propre à un système d’exploitation, une architecture, une version de Visual Studio ou un langage de système d’exploitation.
 
 > [!CAUTION]
 > Parfois, les éléments répertoriés comme étant sélectionnés dans le fichier AdminDeployment.xml ne sont pas installés. Pour résoudre ce problème, placez à la **fin** du fichier AdminDeployment.xml les éléments marqués comme suit : « Selected="yes" ».
@@ -65,7 +65,7 @@ Vous pouvez exécuter l’application d’installation pour [!INCLUDE[vsprvs](..
 |BundleCustomizations|NoWeb|oui&#124;par défaut|Si la valeur de cet élément est Oui, l’application d’installation ne tente jamais d’accéder au web lors de l’action d’installation.|
 |SelectableItemCustomization|Hidden|Oui&#124;Non|Si la valeur de cet élément est Oui, masque un élément sélectionnable dans l’arborescence de la personnalisation.|
 |SelectableItemCustomization|Selected|Oui&#124;Non|Active ou désactive un élément sélectionnable dans l’arborescence de la personnalisation.|
-|BundleCustomizations|Feed|Chemin|Emplacement du flux que l’utilisateur souhaite utiliser.  Ce flux est utilisé pour les opérations de modification ultérieures sur l’ordinateur (« Default » par défaut).|
+|BundleCustomizations|Flux|Path|Emplacement du flux que l’utilisateur souhaite utiliser.  Ce flux est utilisé pour les opérations de modification ultérieures sur l’ordinateur (« Default » par défaut).|
 |BundleCustomizations|SuppressRefreshPrompt|oui&#124;par défaut|Empêche l’envoi d’invites demandant à l’utilisateur d’actualiser le programme d’installation si une version plus récente est disponible.|
 |BundleCustomizations|NoRefresh|oui&#124;par défaut|N’actualise pas le programme d’installation si une version plus récente est disponible.|
 |BundleCustomizations|NoCacheOnlyMode|oui&#124;par défaut|Empêche le préremplissage du cache du package.|
@@ -77,7 +77,7 @@ Vous pouvez exécuter l’application d’installation pour [!INCLUDE[vsprvs](..
 
 1. Dans le fichier *Lecteur*:\IDEinstall\AdminDeployment.xml, modifiez la valeur de l’attribut NoWeb de l’élément BundleCustomizations en remplaçant « par défaut » par « oui », comme le montre l’exemple suivant :
 
-     Remplacer `<BundleCustomizations TargetDir="default" NoWeb="default"/>` par `<BundleCustomizations TargetDir="default" NoWeb="yes"/>`
+     Remplacez `<BundleCustomizations TargetDir="default" NoWeb="default"/>` par `<BundleCustomizations TargetDir="default" NoWeb="yes"/>` :
 
 2. Modifiez l’attribut SelectableItemCustomization si nécessaire pour les composants facultatifs, puis enregistrez le fichier.
 
@@ -131,14 +131,14 @@ Vous pouvez exécuter l’application d’installation pour [!INCLUDE[vsprvs](..
 
 2. Cliquez sur l’onglet **Détails** et notez la propriété **Product version**.
 
-    ![Exemple de la boîte de dialogue Propriétés dans une installation sans assistance de Visual Studio](../install/media/unattended-install-properties-dialog-box.PNG "Installation sans assistance - boîte de dialogue Propriétés")
+    ![Exemple de la boîte de dialogue Propriétés dans une installation sans assistance de Visual Studio](../install/media/unattended-install-properties-dialog-box.PNG "Installation sans assistance, boîte de dialogue Propriétés")
 
 3. ###### <a name="if-the-product-version-is-140247200-or-140247201-follow-these-steps"></a>Si la version du produit est 14.0.24720.0 ou 14.0.24720.1, procédez comme suit :
    1. Exécutez *Product.exe* /Layout *lecteur :* \IDEinstall sur un ordinateur qui a accès à Internet. (Par exemple, exécutez : `vs_enterprise.exe /Layout d:\IDEinstall`.)
 
    2. Une fois la tâche /Layout terminée, copiez la nouvelle image vers un nouvel emplacement.
 
-   3. Créez et modifiez le fichier AdminDeployment.xml. Pour ce faire, utilisez le paramètre de ligne de commande `/CreateAdminFile`*\<emplacement fichier>*. (Pour plus d’informations, consultez la section « Déploiement de Visual Studio en mode sans assistance » de cet article.)
+   3. Créez et modifiez le fichier AdminDeployment.xml. Pour ce faire, utilisez le `/CreateAdminFile` *\<file location>* paramètre de ligne de commande. (Pour plus d’informations, consultez la section « Déploiement de Visual Studio en mode sans assistance » de cet article.)
 
    4. Sur l’ordinateur client, exécutez la commande suivante pour mettre à jour la copie de Visual Studio que vous avez installée précédemment : « \\\\*server1*\IDEinstall_Updated_1\\*Product.exe* /adminfile \\\server1\ IDEinstall_Updated_1\AdminDeployment.xml /quiet /norestart ».
 
@@ -148,7 +148,7 @@ Vous pouvez exécuter l’application d’installation pour [!INCLUDE[vsprvs](..
 
    2. Une fois la tâche /Layout terminée, copiez la nouvelle image vers un nouvel emplacement. (Ou, vous pouvez remplacer l’image réseau existante à la place.)
 
-   3. Créez, puis modifiez le fichier AdminDeployment.xml. Pour ce faire, utilisez le paramètre de ligne de commande `/CreateAdminFile`*\<emplacement fichier>*. (Pour plus d’informations, consultez la section « Déploiement de Visual Studio en mode sans assistance » de cet article.)
+   3. Créez, puis modifiez le fichier AdminDeployment.xml. Pour ce faire, utilisez le `/CreateAdminFile` *\<file location>* paramètre de ligne de commande. (Pour plus d’informations, consultez la section « Déploiement de Visual Studio en mode sans assistance » de cet article.)
 
    4. Si vous copiez l’image vers un nouvel emplacement, vous devez exécuter la commande suivante sur l’ordinateur client pour mettre à jour la copie de Visual Studio que vous avez installée précédemment :  « \\\\*server1*\IDEinstall_Updated_1\\*Product.exe* /adminfile \\\server1\ IDEinstall_Updated_1\AdminDeployment.xml /quiet /norestart ».
 
@@ -166,7 +166,7 @@ Vous pouvez exécuter l’application d’installation pour [!INCLUDE[vsprvs](..
 ## <a name="registering-the-product"></a>Inscription du produit
  Une fois l’installation terminée, vous pouvez enregistrer votre copie de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] depuis [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
-#### <a name="to-register"></a>Pour inscrire
+#### <a name="to-register"></a>Pour l’inscription
 
 1. Ouvrez le menu **Aide** , puis choisissez **Inscrire le produit**.
 

@@ -1,5 +1,5 @@
 ---
-title: Comment créer un manifeste de package | Microsoft Docs
+title: Créer un manifeste de package | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc3a1263136fe4c50b2c7020e1557a7a693691b6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fe51ac8bc8af07038e6bfe6ddb2c5730485ca60b
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382521"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851708"
 ---
 # <a name="how-to-create-a-package-manifest"></a>Guide pratique pour créer un manifeste de package
 Pour déployer les composants requis pour votre application, vous pouvez utiliser un package du programme d’amorçage. Un package du programme d’amorçage contient un fichier manifeste de produit unique, mais un manifeste de package pour chaque paramètre régional. Les fonctionnalités partagées entre différentes versions localisées doivent être placées dans le manifeste du produit.
@@ -73,7 +73,7 @@ Pour déployer les composants requis pour votre application, vous pouvez utilise
 
 7. Copiez le dossier *C:\package* dans le répertoire du programme d’amorçage de Visual Studio. Pour Visual Studio 2010, il s’agit du répertoire *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages*
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
  Le manifeste du package contient des informations spécifiques aux paramètres régionaux, telles que les messages d’erreur, les termes du contrat de licence logiciel et les modules linguistiques.
 
 ```xml

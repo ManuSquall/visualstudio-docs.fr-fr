@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 389315d7ec48c85fbab96b5270cbcef54faf7e8e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5e99dc9e6a4e555d586c5007fd603350c9fa4e7c
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801059"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90850980"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Nouveautés de Visual Studio 2019
 
@@ -118,7 +118,7 @@ Pour plus d’informations, consultez le billet de blog [Better multi-monitor ex
 
 Pour plus d’informations, consultez le billet de blog [annonçant .net Core 3,0](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0/) .
 
-## <a name="collaborate"></a>Collaborer
+## <a name="collaborate"></a>Travailler en collaboration
 
 Afficher la vidéo suivante pour en savoir plus sur la façon dont vous pouvez travailler en équipe pour résoudre les problèmes. <br><br>*Longueur vidéo : 4,22 minutes*
 
@@ -214,11 +214,11 @@ Nous mettons souvent à jour Visual Studio 2019 avec de nouvelles fonctionnalit
 
 En attendant, voici quelques-unes de nos nouvelles fonctionnalités actuellement en cours d’utilisation.
 
-- **Prise en charge de Visual Studio 2019 pour Visual Studio Codespaces (version préliminaire)**
+- **Prise en charge de Visual Studio 2019 pour GitHub Codespaces (version préliminaire)**
 
-  À l’heure actuelle, les développeurs jonglent avec plusieurs projets au travail et chez eux. Les nouvelles fonctionnalités, les correctifs de bogues, &amp; les revues de RP et les prototypes sont tous en concurrence pour le temps et nécessitent un basculement de contexte constant. [Visual Studio Codespaces](https://visualstudio.microsoft.com/services/visual-studio-codespaces/) peut vous aider. Vous pouvez développer entièrement dans le Cloud et créer des environnements dédiés et personnalisés pour chacun de vos projets, en quelques secondes. Avec Visual Studio 2019, vous pouvez vous connecter à votre codeSpace et travailler de la même façon que vous le feriez localement.
+  À l’heure actuelle, les développeurs jonglent avec plusieurs projets au travail et chez eux. Les nouvelles fonctionnalités, les correctifs de bogues, &amp; les revues de RP et les prototypes sont tous en concurrence pour le temps et nécessitent un basculement de contexte constant. [GitHub Codespaces](https://github.com/features/codespaces) peut vous aider. Vous pouvez développer entièrement dans le Cloud et créer des environnements dédiés et personnalisés pour chacun de vos projets, en quelques secondes. Avec Visual Studio 2019, vous pouvez vous connecter à votre codeSpace et travailler de la même façon que vous le feriez localement.
 
-  Pour plus d’informations, consultez la page [qu’est-ce que Visual Studio Codespaces](/visualstudio/codespaces/overview/what-is-vsonline/) .
+  Pour plus d’informations, consultez la page [qu’est-ce que GitHub Codespaces](codespaces/codespaces-overview.md) .
 
 - **Amélioration de l’expérience git dans Visual Studio 2019 (version préliminaire)**
 
