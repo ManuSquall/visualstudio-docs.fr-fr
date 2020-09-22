@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Modifier une valeur de Registre | Microsoft Docs'
+title: 'Comment : modifier une valeur de Registre | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,13 +24,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7f0cd04b054d51119f6f6c1b0275c4f781656bff
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438299"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839818"
 ---
-# <a name="how-to-edit-a-register-value"></a>Procédure : Modifier une valeur de Registre
+# <a name="how-to-edit-a-register-value"></a>Comment : modifier une valeur de Registre
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La fenêtre Registres est disponible uniquement si le débogage au niveau des adresses est activé dans la boîte de dialogue **Options**, nœud **Débogage**.  
@@ -48,4 +48,4 @@ La fenêtre Registres est disponible uniquement si le débogage au niveau des ad
     > Modifier des valeurs à virgule flottante risque d’entraîner quelques légères imprécisions, dues à la conversion en binaire de la partie décimale des composants fractionnaires. Dans un Registre en virgule flottante, même une modification apparemment anodine risque d'entraîner des changements de certains bits de poids faible.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour utiliser la fenêtre Registres](../debugger/how-to-use-the-registers-window.md)
+ [Comment : utiliser la fenêtre Registres](../debugger/how-to-use-the-registers-window.md)

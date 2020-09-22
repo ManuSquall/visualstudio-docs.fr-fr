@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Attacher et détacher des outils de performances à l’exécution de processus | Microsoft Docs'
+title: Guide pratique pour attacher les outils d’analyse des performances à des processus en cours d’exécution ou les en détacher | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,13 +18,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0b8fc664ee47cd34ab984d1ac448b45c2f17c5b0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443712"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839693"
 ---
-# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Procédure : Attacher et détacher des outils de performances à l’exécution de processus
+# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Guide pratique pour attacher les outils d’analyse des performances à des processus en cours d’exécution ou les en détacher
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Le profileur peut être utilisé pour attacher ou détacher des outils du processus en cours afin de faciliter l’échantillonnage et la collecte des données de performances. Vous pouvez utiliser cette méthode pour profiler un processus lorsque vous voulez éviter de collecter des données sur le temps de chargement de l’application ou pour surveiller les performances d’un processus après qu’il a atteint un certain état.  
@@ -68,11 +68,11 @@ Le profileur peut être utilisé pour attacher ou détacher des outils du proces
   
 2. Cliquez sur le nom de l’image de laquelle se détacher.  
   
-3. Cliquez sur **Détacher**.  
+3. Cliquez sur **Dissocier**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Contrôle de la collecte de données](../profiling/controlling-data-collection.md)   
- [Vue d’ensemble des sessions de performance](../profiling/performance-session-overview.md)   
- [Guide pratique pour Démarrer et terminer la collecte de données de performances](../profiling/how-to-start-and-end-performance-data-collection.md)   
+ [Présentation de la session de performance](../profiling/performance-session-overview.md)   
+ [Guide pratique pour démarrer et terminer la collecte des données de performances](../profiling/how-to-start-and-end-performance-data-collection.md)   
  [Profilage et sécurité Windows Vista](../profiling/profiling-and-windows-vista-security.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)

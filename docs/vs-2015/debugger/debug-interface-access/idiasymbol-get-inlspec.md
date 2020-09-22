@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 99a92f134390e5d3215b1609234e643b71d93d3d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64793659"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839493"
 ---
-# <a name="idiasymbolgetinlspec"></a>IDiaSymbol::get_InlSpec
+# <a name="idiasymbolget_inlspec"></a>IDiaSymbol::get_InlSpec
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Cette fonction extrait un indicateur indiquant si la fonction a été marquée comme étant inline (à l’aide d’un de le [inline, __inline, \__forceinline](../../misc/inline-inline-forceinline.md) attributs).  
+Cette fonction récupère un indicateur qui spécifie si la fonction a été marquée comme inline (à l’aide de l’un des attributs [inline, __inline \_ _forceinline](../../misc/inline-inline-forceinline.md) ).  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -35,21 +35,21 @@ HRESULT get_inlSpec(
   
 #### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- [out] Retourne `TRUE` si la fonction a été marquée comme inline ; sinon, retourne `FALSE`.  
+ à Retourne `TRUE` si la fonction a été marquée comme Inline ; sinon, retourne `FALSE` .  
   
 ## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou code d’erreur.  
+ En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou code d’erreur.  
   
 > [!NOTE]
-> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
+> Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
   
-|Prérequis|Description|  
+|Condition requise|Description|  
 |-----------------|-----------------|  
 |En-tête :|dia2.h|  
-|Version :|DIA SDK 8.0|  
+|Version :|DIA SDK v 8.0|  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [inline, __inline, \__forceinline](../../misc/inline-inline-forceinline.md)
+ [Inline, __inline, \_ _forceinline](../../misc/inline-inline-forceinline.md)

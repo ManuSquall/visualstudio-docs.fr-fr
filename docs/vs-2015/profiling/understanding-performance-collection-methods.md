@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e398d7e5e297daa68663902efb8a9fa0775c86fa
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431641"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839398"
 ---
 # <a name="understanding-performance-collection-methods"></a>Présentation des méthodes de collecte des performances
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ Les outils de profilage Visual Studio fournissent cinq méthodes que vous pouvez
 |------------|-----------------|  
 |[Échantillonnage](#sampling)|Collecte des données statistiques sur le travail effectué par une application.|  
 |[Instrumentation](#instrumentation)|Collecte des informations de minutage détaillées sur chaque appel de fonction.|  
-|[Concurrence](#concurrency)|Collecte des informations détaillées sur les applications multithreads.|  
+|[Concurrency](#concurrency)|Collecte des informations détaillées sur les applications multithreads.|  
 |[Mémoire .NET](#net_memory)|Collecte des informations détaillées sur l’allocation et la garbage collection de la mémoire .NET.|  
 |[Interaction de couche](#tier_interaction)|Collecte des informations sur les appels de fonction ADO.NET synchrones à une base de données SQL Server.<br /><br /> Les données de profilage d’interaction de couche peuvent être collectées en utilisant [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] ou [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)]. Cependant, les données de profilage d’interaction de couche ne peuvent être affichées que dans [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] ou [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)].|  
   
  À l’aide de certaines méthodes de profilage, vous pouvez également collecter des données supplémentaires, comme les compteurs de performances matérielles et logicielles. Pour plus d’informations, consultez [Collecte de données de performances supplémentaires](../profiling/collecting-additional-performance-data.md).  
   
-## <a name="sampling"></a> Échantillonnage  
+## <a name="sampling"></a><a name="sampling"></a> Échantillonnage  
  La méthode de profilage par échantillonnage collecte des données statistiques sur le travail effectué par une application pendant l’exécution d’un profilage. La méthode d’échantillonnage est légère et a peu d’effet sur l’exécution des méthodes de l’application.  
   
  L’échantillonnage est la méthode par défaut pour les outils de profilage de Visual Studio. Il est utile dans les cas suivants :  
@@ -53,11 +53,11 @@ Les outils de profilage Visual Studio fournissent cinq méthodes que vous pouvez
   
   [Collecte de statistiques de performances à l’aide de l’échantillonnage](../profiling/collecting-performance-statistics-by-using-sampling.md)  
   
-  [Présentation des valeurs de données d’échantillonnage](../profiling/understanding-sampling-data-values.md)  
+  [Fonctionnement des valeurs de données d’échantillonnage](../profiling/understanding-sampling-data-values.md)  
   
   [Vues de données de la méthode d’échantillonnage](../profiling/profiler-sampling-method-data-views.md)  
   
-## <a name="instrumentation"></a> Instrumentation  
+## <a name="instrumentation"></a><a name="instrumentation"></a> Instrumentation  
  La méthode de profilage par instrumentation collecte le minutage détaillé pour les appels de fonctions dans une application profilée. Le profilage par instrumentation est utile pour les cas suivants :  
   
 - Examen des goulots d’étranglement d’entrée/sortie, comme les E/S de disque.  
@@ -76,28 +76,28 @@ Les outils de profilage Visual Studio fournissent cinq méthodes que vous pouvez
   
   Vous pouvez également collecter des compteurs de performances de l’UC et des logiciels à l’aide de la méthode d’instrumentation.  
   
-  [Présentation des valeurs de données d’instrumentation](../profiling/understanding-instrumentation-data-values.md)  
+  [Fonctionnement des valeurs de données d’instrumentation](../profiling/understanding-instrumentation-data-values.md)  
   
   [Collecte de données de temporisation détaillées à l’aide de l’instrumentation](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md)  
   
-  [Vues de données de la méthode d’instrumentation](../profiling/instrumentation-method-data-views.md)  
+  [Vues de données de la méthode d'instrumentation](../profiling/instrumentation-method-data-views.md)  
   
-## <a name="concurrency"></a> Accès concurrentiel  
+## <a name="concurrency"></a><a name="concurrency"></a> D’accès concurrentiel  
  Le profilage d’accès concurrentiel collecte des informations sur les applications multithreads. Le profilage de conflit de ressources collecte les informations détaillées de la pile des appels chaque fois que des threads en concurrence sont forcés d’attendre pour accéder à une ressource partagée. La visualisation concurrentielle collecte également des informations plus générales sur la façon dont votre application multithread interagit avec elle-même, avec le matériel, avec le système d’exploitation et avec d’autres processus sur l’ordinateur hôte :  
   
 - Les rapports de conflit de ressources affichent le nombre total de conflits et le temps total passé en attente d’une ressource pour les modules, les fonctions, les lignes de code source et les instructions où l’attente s’est produite. Les graphiques chronologiques affichent également les conflits au fil de leur survenance.  
   
 - Le visualiseur concurrentiel affiche des informations graphiques que vous pouvez utiliser pour localiser les goulots d’étranglement au niveau des performances, la sous-utilisation de l’UC, les conflits de threads, la migration de threads, les délais de synchronisation, les zones d’E/S avec chevauchement et d’autres informations. Quand c’est possible, la sortie graphique est en lien avec les données de la pile des appels et du code source. Les données de visualisation concurrentielle peuvent être collectées uniquement pour les applications de ligne de commande et les applications Windows.  
   
-  [Fonctionnement des valeurs des données de conflit de ressources](../profiling/understanding-resource-contention-data-values.md)  
+  [Comprendre les valeurs des données de conflit de ressources](../profiling/understanding-resource-contention-data-values.md)  
   
-  [Collecte de données concurrentielles de threads et de processus](../profiling/collecting-thread-and-process-concurrency-data.md)  
+  [Collecte de données de concurrence de threads et de processus](../profiling/collecting-thread-and-process-concurrency-data.md)  
   
   [Vues de données de conflit de ressources](../profiling/resource-contention-data-views.md)  
   
   [Visualiseur concurrentiel](../profiling/concurrency-visualizer.md)  
   
-## <a name="net_memory"></a> Mémoire .NET  
+## <a name="net-memory"></a><a name="net_memory"></a> Mémoire .NET  
  La méthode de profilage d’allocation de la mémoire .NET interrompt le processeur de l’ordinateur à chaque allocation d’un objet du .NET Framework dans une application profilée. Quand les données de durée de vie des objets sont également collectées, le profileur interrompt le processeur après chaque garbage collection du .NET Framework.  
   
  Le profileur collecte des informations sur le type, la taille et le nombre d’objets qui ont été créés dans une allocation ou détruits dans une garbage collection.  
@@ -112,13 +112,13 @@ Les outils de profilage Visual Studio fournissent cinq méthodes que vous pouvez
   
 - Quand vous exécutez le profilage de mémoire .NET en mode d’instrumentation, les informations détaillées de minutage sont collectées, ainsi que les valeurs d’allocation inclusives et exclusives.  
   
-  [Fonctionnement de l’allocation de mémoire et des informations de durée de vie des objets](../profiling/understanding-memory-allocation-and-object-lifetime-data-values.md)  
+  [Fonctionnement des valeurs de données d’allocation de mémoire et de durée de vie des objets](../profiling/understanding-memory-allocation-and-object-lifetime-data-values.md)  
   
   [Collecte de données liées à l’allocation et à la durée de vie de la mémoire .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)  
   
   [Vues de données de mémoire .NET](../profiling/dotnet-memory-data-views.md)  
   
-## <a name="tier_interaction"></a> Interaction de couche  
+## <a name="tier-interaction"></a><a name="tier_interaction"></a> Interaction de couche  
  Le profilage d’interaction de couche ajoute des informations à un fichier de données de profilage sur les appels [!INCLUDE[vstecado](../includes/vstecado-md.md)] synchrones entre une page [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] ou une autre application et une base de données [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]. Les données incluent le nombre et la durée des appels, ainsi que la durée maximale et minimale. Les données d’interaction de couche peuvent être ajoutées aux données de profilage collectées avec les méthodes d’échantillonnage, d’instrumentation, de mémoire .NET ou d’accès concurrentiel.  
   
  ![Données de profilage d’interaction de couche](../profiling/media/tierinteraction-profilingtools.png "TierInteraction_ProfilingTools")  
@@ -126,8 +126,8 @@ Données d’interaction de couche collectées par les outils de profilage
   
  [Collecte de données d’interaction de couche](../profiling/collecting-tier-interaction-data.md)  
   
- [Vues Interactions de couche](../profiling/tier-interaction-views.md)  
+ [Interaction de couche, vues](../profiling/tier-interaction-views.md)  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour Collecter des données de performances pour un Site Web](../profiling/how-to-collect-performance-data-for-a-web-site.md)   
+ [Comment : collecter les données de performances d’un site Web](../profiling/how-to-collect-performance-data-for-a-web-site.md)   
  [Guide du débutant en profilage des performances](../profiling/beginners-guide-to-performance-profiling.md)

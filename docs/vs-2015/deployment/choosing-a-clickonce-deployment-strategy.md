@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cce51860b335e16fe507b20e41a5adba0b3fa278
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418210"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839701"
 ---
 # <a name="choosing-a-clickonce-deployment-strategy"></a>Choix d'une stratégie de déploiement ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Pour déployer une application [!INCLUDE[ndptecclick](../includes/ndptecclick-md
   
  Étant donné que cette stratégie dépend de la connexion réseau, elle fonctionne de manière optimale pour les applications qui seront déployées pour les utilisateurs qui ont accès à un réseau local ou une connexion Internet rapide.  
   
- Si vous déployez l’application à partir du Web, vous pouvez passer des arguments dans l’application lorsqu’elle est activée à l’aide d’une URL. Pour plus d'informations, voir [Procédure : Récupérer les informations de chaîne de requête dans une application ClickOnce en ligne](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md). Vous ne pouvez pas passer d'arguments dans une application activée à l'aide de l'une des autres méthodes décrites dans ce document.  
+ Si vous déployez l’application à partir du Web, vous pouvez passer des arguments dans l’application lorsqu’elle est activée à l’aide d’une URL. Pour plus d’informations, consultez [Comment : récupérer des informations de chaîne de requête dans une application ClickOnce en ligne](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md). Vous ne pouvez pas passer d'arguments dans une application activée à l'aide de l'une des autres méthodes décrites dans ce document.  
   
  Pour activer cette stratégie de déploiement dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], cliquez sur **À partir d’un site Web** ou **À partir d’un chemin UNC ou d’un partage de fichiers** dans la page **Comment les utilisateurs installeront-ils l’application ?** de l’Assistant Publication.  
   
@@ -55,7 +55,7 @@ Pour déployer une application [!INCLUDE[ndptecclick](../includes/ndptecclick-md
   
  Pour activer cette stratégie de déploiement dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], cliquez sur **À partir d’un CD-ROM ou DVD-ROM** dans la page **Comment les utilisateurs installeront-ils l’application ?** de l’Assistant Publication.  
   
- Pour activer cette stratégie de déploiement manuellement, modifiez l’étiquette **deploymentProvider** dans le manifeste de déploiement. (Dans Visual Studio, cette propriété est exposée comme **URL d’installation** sur la page **Publier** du Concepteur de projets. Il s’agit de Mage.exe **Start Location**.)  
+ Pour activer cette stratégie de déploiement manuellement, modifiez l’étiquette **deploymentProvider** dans le manifeste de déploiement. (Dans Visual Studio, cette propriété est exposée comme **URL d’installation** sur la page **Publier** du Concepteur de projets. Dans Mage.exe, il s’agit de **Start Location**.)  
   
 ## <a name="start-the-application-from-the-web-or-a-network-share"></a>Démarrage de l'application à partir du Web ou d'un partage réseau  
  Cette stratégie est similaire à la première, sauf que l'application se comporte comme une application Web. Lorsque l’utilisateur clique sur un lien d’une page web (ou double-clique sur une icône du partage de fichiers), l’application est lancée. Quand les utilisateurs ferment l’application, cette dernière n’est plus disponible sur leur ordinateur local. Aucun élément n’est ajouté au menu **Démarrer** ou au groupe **Ajout/Suppression de programmes** dans le **Panneau de configuration**.  
@@ -67,7 +67,7 @@ Pour déployer une application [!INCLUDE[ndptecclick](../includes/ndptecclick-md
   
  Pour activer cette stratégie de déploiement dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], cliquez sur **Ne pas installer l’application** dans la page **Installer ou exécuter à partir d’un site web** de l’Assistant Publication.  
   
- Pour activer cette stratégie de déploiement manuellement, modifiez l’étiquette **install** dans le manifeste de déploiement. (Sa valeur peut être **true** ou **false**. Dans Mage.exe, utilisez le **en ligne uniquement** option dans le **Type d’Application** liste.)  
+ Pour activer cette stratégie de déploiement manuellement, modifiez l’étiquette **install** dans le manifeste de déploiement. (Sa valeur peut être **true** ou **false**. Dans Mage.exe, utilisez l’option **en ligne uniquement** dans la liste **type d’application** .)  
   
 ## <a name="web-browser-support"></a>Prise en charge du navigateur Web  
  Les applications destinées à .NET Framework 3.5 peuvent être installées à l'aide de n'importe quel navigateur.  
@@ -77,5 +77,5 @@ Pour déployer une application [!INCLUDE[ndptecclick](../includes/ndptecclick-md
 ## <a name="see-also"></a>Voir aussi  
  [Sécurité et déploiement ClickOnce](../deployment/clickonce-security-and-deployment.md)   
  [Choix d’une stratégie de mise à jour ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)   
- [Guide pratique pour Publier une Application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
+ [Comment : publier une application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
  [Sécurisation des applications ClickOnce](../deployment/securing-clickonce-applications.md)

@@ -14,16 +14,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eaf927b1049709a04d8a883615d1997e9316599e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445390"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839622"
 ---
 # <a name="task-writing"></a>Écriture de tâches
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Les tâches fournissent le code exécuté pendant le processus de génération. Les tâches sont contenues dans les cibles. Une bibliothèque de tâches types est incluse dans [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. De plus, vous pouvez créer vos propres tâches. Pour plus d’informations sur la bibliothèque de tâches incluse dans [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], consultez [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md).  
+Les tâches fournissent le code exécuté pendant le processus de génération. Les tâches sont contenues dans les cibles. Une bibliothèque de tâches types est incluse dans [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. De plus, vous pouvez créer vos propres tâches. Pour plus d’informations sur la bibliothèque de tâches incluse dans [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] , consultez [référence des tâches](../msbuild/msbuild-task-reference.md).  
   
 ## <a name="tasks"></a>Tâches  
  Voici quelques exemples de tâches : [Copy](../msbuild/copy-task.md), qui copie des fichiers, [MakeDir](../msbuild/makedir-task.md), qui crée des répertoires et [Csc](../msbuild/csc-task.md), qui compile des fichiers de code source [!INCLUDE[csprcs](../includes/csprcs-md.md)]. Chaque tâche est implémentée en tant que classe .NET implémentant l’interface <xref:Microsoft.Build.Framework.ITask>, définie dans l’assembly Microsoft.Build.Framework.dll.  
@@ -100,7 +100,7 @@ namespace MyTasks
 ```  
   
 ## <a name="registering-tasks"></a>Inscription de tâches  
- Si un projet va exécuter une tâche, [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] doit savoir comment localiser l’assembly qui contient la classe de tâche. Les tâches sont inscrites à l’aide de [l’élément UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
+ Si un projet va exécuter une tâche, [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] doit savoir comment localiser l’assembly qui contient la classe de tâche. Les tâches sont inscrites à l’aide de l' [élément UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
   
  Le fichier [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] Microsoft.Common.Tasks est un fichier projet qui contient une liste d’éléments `UsingTask` qui inscrivent toutes les tâches fournies avec [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Ce fichier est inclus automatiquement lors de la génération de chaque projet. Si une tâche inscrite dans Microsoft.Common.Tasks est également inscrite dans le fichier projet actuel, ce dernier est prioritaire. Autrement dit, vous pouvez remplacer une tâche par défaut par votre propre tâche de même nom.  
   
@@ -160,7 +160,7 @@ public string RequiredProperty
   
  L’attribut `[Required]` est défini par <xref:Microsoft.Build.Framework.RequiredAttribute> dans l’espace de noms <xref:Microsoft.Build.Framework>.  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a> Exemple  
   
 ### <a name="description"></a>Description  
  La classe [!INCLUDE[csprcs](../includes/csprcs-md.md)] suivante montre une tâche qui dérive de la classe d’assistance <xref:Microsoft.Build.Utilities.Task>. Cette tâche retourne `true`, ce qui indique qu’elle a réussi.  
@@ -184,7 +184,7 @@ namespace SimpleTask1
 }  
 ```  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a> Exemple  
   
 ### <a name="description"></a>Description  
  La classe [!INCLUDE[csprcs](../includes/csprcs-md.md)] suivante montre une tâche qui implémente l’interface <xref:Microsoft.Build.Framework.ITask>. Cette tâche retourne `true`, ce qui indique qu’elle a réussi.  
@@ -242,7 +242,7 @@ namespace SimpleTask2
 }  
 ```  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a> Exemple  
   
 ### <a name="description"></a>Description  
  La classe [!INCLUDE[csprcs](../includes/csprcs-md.md)] montre une tâche qui dérive de la classe d’assistance <xref:Microsoft.Build.Utilities.Task>. Elle comprend une propriété de type chaîne obligatoire, et déclenche un événement qui est affiché par tous les journaux inscrits.  
@@ -250,7 +250,7 @@ namespace SimpleTask2
 ### <a name="code"></a>Code  
  [!code-csharp[msbuild_SimpleTask3#1](../snippets/csharp/VS_Snippets_Misc/msbuild_SimpleTask3/CS/SimpleTask3.cs#1)]  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a> Exemple  
   
 ### <a name="description"></a>Description  
  L’exemple suivant montre un fichier projet qui appelle l’exemple de tâche précédent (SimpleTask3).  
@@ -269,5 +269,5 @@ namespace SimpleTask2
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)   
- [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)
+ [Référence de tâche](../msbuild/msbuild-task-reference.md)   
+ [Référence de tâche](../msbuild/msbuild-task-reference.md)

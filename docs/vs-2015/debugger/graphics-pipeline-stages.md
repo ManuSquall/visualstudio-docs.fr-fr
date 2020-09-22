@@ -1,5 +1,5 @@
 ---
-title: Canalisation Graphics | Microsoft Docs
+title: Étapes de canalisation Graphics | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9eee83ba90248c15387771f355919e345375ff05
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420161"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840053"
 ---
 # <a name="graphics-pipeline-stages"></a>Étapes de canalisation Graphics
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ La fenêtre Étapes de canalisation Graphics vous permet de comprendre comment u
   
  Voici la fenêtre Étapes de canalisation :  
   
- ![Un 3&#45;objet D traverse les étapes du pipeline. ](../debugger/media/gfx-diag-demo-pipeline-stages-orientation.png "gfx_diag_demo_pipeline_stages_orientation")  
+ ![Un objet de 3&#45;D traverse les étapes du pipeline.](../debugger/media/gfx-diag-demo-pipeline-stages-orientation.png "gfx_diag_demo_pipeline_stages_orientation")  
   
 ## <a name="understanding-the-graphics-pipeline-stages-window"></a>Présentation de la fenêtre Étapes de canalisation Graphics  
  La fenêtre Étapes de canalisation affiche le résultat de chaque étape de canalisation Graphics séparément, pour chaque appel de dessin. Normalement, les résultats des étapes de canalisation intermédiaires sont masqués, ce qui complique la tâche consistant à déterminer l'origine d'un problème de rendu. En affichant chaque étape séparément, la fenêtre Étapes de canalisation facilite l'identification de l'origine du problème. Par exemple, vous pouvez voir aisément le moment où l'étape du nuanceur de sommets provoque soudainement le dessin d'un objet hors de l'écran.  
@@ -118,14 +118,14 @@ La fenêtre Étapes de canalisation Graphics vous permet de comprendre comment u
  Dans la fenêtre Étapes de canalisation, la sortie de la fusion de sortie est affichée sous la forme d’une image raster en couleurs. Pour mieux examiner les résultats, sélectionnez **Fusion de sortie** dans la fenêtre **Étapes de canalisation Graphics** afin d’afficher le tampon de frame fusionné.  
   
 ### <a name="vertex-shader-preview"></a>Aperçu du nuanceur de sommets  
- Lorsque vous sélectionnez l’étape de nuanceur de sommets dans le **étapes de canalisation Graphics** fenêtre, le **mémoires tampons d’entrée** panneau s’affiche. Vous y trouverez des informations sur la liste des sommets fournis au nuanceur de sommets, une fois qu'ils ont été assemblés à l'étape de l'assembleur d'entrée.  
+ Lorsque vous sélectionnez l’étape nuanceur de sommets dans la fenêtre **étapes de canalisation Graphics** , le panneau **mémoires tampons d’entrée** s’affiche. Vous y trouverez des informations sur la liste des sommets fournis au nuanceur de sommets, une fois qu'ils ont été assemblés à l'étape de l'assembleur d'entrée.  
   
- ![La visionneuse de mémoire tampon d’entrée de vertex shader étape](../debugger/media/gfx-diag-vertex-shader-inbuffers.png "gfx_diag_vertex_shader_inbuffers")  
+ ![Visionneuse de mémoire tampon d'entrée de l'étape du nuanceur de sommets](../debugger/media/gfx-diag-vertex-shader-inbuffers.png "gfx_diag_vertex_shader_inbuffers")  
   
  Pour afficher le résultat de l'étape du nuanceur de sommets, choisissez la miniature de l'étape Nuanceur de sommets afin d'accéder à une image filaire rastérisée en taille réelle du maillage après sa transformation par le nuanceur de sommets.  
   
- ![L’aperçu du résultat de vertex shader étape](../debugger/media/gfx-diag-vertex-shader-preview.png "gfx_diag_vertex_shader_preview")  
+ ![Aperçu du résultat de l'étape du nuanceur de sommets](../debugger/media/gfx-diag-vertex-shader-preview.png "gfx_diag_vertex_shader_preview")  
   
 ## <a name="see-also"></a>Voir aussi  
- [Procédure pas à pas : objets manquants en raison de Vertex Shader](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)   
+ [Procédure pas à pas : objets manquants en raison de l’ombrage du vertex](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)   
  [Procédure pas à pas : débogage des erreurs de rendu dues à l’ombrage](../debugger/walkthrough-debugging-rendering-errors-due-to-shading.md)

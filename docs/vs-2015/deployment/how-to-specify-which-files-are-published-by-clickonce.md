@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Spécifier les fichiers publiés par ClickOnce | Microsoft Docs'
+title: 'Comment : spécifier les fichiers publiés par ClickOnce | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -19,103 +19,103 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e0ef4264629e40380f12fb07623bb9274547713c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441587"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839833"
 ---
-# <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Procédure : Spécifier les fichiers publiés par ClickOnce
+# <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Comment : spécifier les fichiers publiés via ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Lorsque vous publiez un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] fichiers d’application, sans code dans le projet sont déployés avec l’application. Dans certains cas, vous ne pouvez pas souhaitez ou devez publier certains fichiers, ou vous souhaiterez installer certains fichiers selon des conditions. Visual Studio fournit les fonctionnalités pour exclure des fichiers, marquer des fichiers comme fichiers de données ou des conditions préalables et créer des groupes de fichiers pour une installation conditionnelle.  
+Lors de la publication d’une [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application, tous les fichiers qui ne sont pas du code dans le projet sont déployés en même temps que l’application. Dans certains cas, il se peut que vous ne souhaitiez pas ou ayez besoin de publier certains fichiers, ou que vous souhaitiez installer certains fichiers en fonction de conditions. Visual Studio fournit les fonctionnalités permettant d’exclure des fichiers, de marquer des fichiers comme fichiers de données ou composants requis, et de créer des groupes de fichiers pour une installation conditionnelle.  
   
- Fichiers pour un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application sont gérées dans le **fichiers d’Application** boîte de dialogue, accessible à partir de la **publier** page de la **Concepteur de projet**.  
+ Les fichiers d’une [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application sont gérés dans la boîte de dialogue **fichiers d’application** , accessible à partir de la page **publier** du **Concepteur de projet**.  
   
- Initialement, il existe un seul groupe de fichiers nommé **(obligatoire)** . Vous pouvez créer des groupes de fichiers supplémentaires et leur attribuer des fichiers. Vous ne pouvez pas modifier le **groupe de téléchargement** pour les fichiers qui sont requis pour exécuter l’application. Par exemple, .exe de l’application ou les fichiers marqués comme fichiers de données doivent appartenir à la **(obligatoire)** groupe.  
+ Au départ, il existe un seul groupe de fichiers nommé **(obligatoire)**. Vous pouvez créer des groupes de fichiers supplémentaires et leur assigner des fichiers. Vous ne pouvez pas modifier le **groupe de téléchargement** pour les fichiers qui sont requis pour l’exécution de l’application. Par exemple, le fichier. exe de l’application ou les fichiers marqués comme fichiers de données doivent appartenir au groupe **(obligatoire)** .  
   
- État de publication de la valeur par défaut la valeur d’un fichier est marquée avec **(Auto)** . Par exemple, .exe l’application a un état de publication de **inclure (automatique)** par défaut.  
+ La valeur par défaut de l’état de publication d’un fichier est marquée avec **(auto)**. Par exemple, le fichier. exe de l’application a l’état de publication **include (auto)** par défaut.  
   
- Fichiers avec le **Action de génération** propriété définie sur **contenu** sont désignés en tant que fichiers d’application et seront marqués comme inclus par défaut. Elles pouvant être inclus, exclus ou marqués comme fichiers de données. Les exceptions sont les suivantes :  
+ Les fichiers dont la propriété **action de génération** a la valeur **contenu** sont désignés en tant que fichiers d’application et sont marqués comme inclus par défaut. Ils peuvent être inclus, exclus ou marqués comme fichiers de données. Les exceptions sont les suivantes :  
   
-- Fichiers de données tels que les fichiers de base de données SQL (.mdf et .mdb) et les fichiers XML seront marqués en tant que fichiers de données par défaut.  
+- Les fichiers de données tels que les fichiers SQL Database (. mdf et. mdb) et les fichiers XML sont marqués comme fichiers de données par défaut.  
   
-- Références aux assemblys (fichiers .dll) sont désignées comme suit quand vous ajoutez la référence : Si **copie locale** est **False**, il est marqué par défaut comme assembly requis (**condition préalable (Auto)** ) qui doit être présent dans le GAC avant que l’application est installée. Si **copie locale** est **True**, l’assembly est marqué par défaut comme un assembly d’application (**inclure (automatique)** ) et sera copié dans le dossier d’application lors de l’installation. Une référence COM s’affichera dans le **fichiers d’Application** boîte de dialogue case (comme un fichier .ocx) uniquement si son **isolé** propriété est définie sur **True**. Par défaut, il sera inclus.  
+- Les références aux assemblys (fichiers. dll) sont désignées comme suit quand vous ajoutez la référence : si **copie locale** a la **valeur false**, elle est marquée par défaut comme un assembly requis (**condition préalable (auto)**) qui doit être présent dans le GAC avant l’installation de l’application. Si **copie locale** a la **valeur true**, l’assembly est marqué par défaut en tant qu’assembly d’application (**include (auto)**) et sera copié dans le dossier de l’application au moment de l’installation. Une référence COM apparaîtra dans la boîte de dialogue **fichiers d’application** (sous la forme d’un fichier. ocx) uniquement si sa propriété **isolé** a la valeur **true**. Par défaut, il est inclus.  
   
-### <a name="to-add-files-to-the-application-files-dialog-box"></a>Pour ajouter des fichiers à l’Application Files Dialog Box  
+### <a name="to-add-files-to-the-application-files-dialog-box"></a>Pour ajouter des fichiers à la boîte de dialogue fichiers d’application  
   
-1. Sélectionnez un fichier de données dans **l’Explorateur de solutions**.  
+1. Sélectionnez un fichier de données dans **Explorateur de solutions**.  
   
-2. Dans la fenêtre Propriétés, modifiez le **Action de génération** propriété le **contenu** valeur.  
+2. Dans le Fenêtre Propriétés, remplacez la valeur de la propriété **action de génération** par la valeur **contenu** .  
   
-### <a name="to-exclude-files-from-clickonce-publishing"></a>Pour exclure des fichiers à partir de la publication ClickOnce  
-  
-1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.  
-  
-2. Cliquez sur l’onglet **Publier**.  
-  
-3. Cliquez sur le **fichiers d’Application** bouton pour ouvrir la **fichiers d’Application** boîte de dialogue.  
-  
-4. Dans le **fichiers d’Application** boîte de dialogue, sélectionnez le fichier que vous souhaitez exclure.  
-  
-5. Dans le **état de la publication** champ, sélectionnez **exclure** dans la liste déroulante.  
-  
-### <a name="to-mark-files-as-data-files"></a>Pour marquer les fichiers en tant que fichiers de données  
+### <a name="to-exclude-files-from-clickonce-publishing"></a>Pour exclure des fichiers de la publication ClickOnce  
   
 1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.  
   
-2. Cliquez sur l’onglet **Publier**.  
+2. Cliquez sur l'onglet **Publier**.  
   
-3. Cliquez sur le **fichiers d’Application** bouton pour ouvrir la **fichiers d’Application** boîte de dialogue.  
+3. Cliquez sur le bouton **fichiers d’application** pour ouvrir la boîte de dialogue **fichiers d’application** .  
   
-4. Dans le **fichiers d’Application** boîte de dialogue, sélectionnez le fichier que vous souhaitez marquer en tant que données.  
+4. Dans la boîte de dialogue **fichiers d’application** , sélectionnez le fichier que vous souhaitez exclure.  
   
-5. Dans le **état de la publication** champ, sélectionnez **fichier de données** dans la liste déroulante.  
+5. Dans le champ État de la **publication** , sélectionnez **exclure** dans la liste déroulante.  
+  
+### <a name="to-mark-files-as-data-files"></a>Pour marquer des fichiers en tant que fichiers de données  
+  
+1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.  
+  
+2. Cliquez sur l'onglet **Publier**.  
+  
+3. Cliquez sur le bouton **fichiers d’application** pour ouvrir la boîte de dialogue **fichiers d’application** .  
+  
+4. Dans la boîte de dialogue **fichiers d’application** , sélectionnez le fichier que vous souhaitez marquer comme données.  
+  
+5. Dans le champ État de la **publication** , sélectionnez **fichier de données** dans la liste déroulante.  
   
 ### <a name="to-mark-files-as-prerequisites"></a>Pour marquer les fichiers comme composants requis  
   
 1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.  
   
-2. Cliquez sur l’onglet **Publier**.  
+2. Cliquez sur l'onglet **Publier**.  
   
-3. Cliquez sur le **fichiers d’Application** bouton pour ouvrir la **fichiers d’Application** boîte de dialogue.  
+3. Cliquez sur le bouton **fichiers d’application** pour ouvrir la boîte de dialogue **fichiers d’application** .  
   
-4. Dans le **fichiers d’Application** boîte de dialogue, sélectionnez l’assembly d’application (fichier .dll) que vous souhaitez marquer comme composant requis. Notez que votre application doit avoir une référence à l’assembly d’application afin qu’il apparaisse dans la liste.  
+4. Dans la boîte de dialogue **fichiers d’application** , sélectionnez l’assembly d’application (fichier. dll) que vous souhaitez marquer comme composant requis. Notez que votre application doit avoir une référence à l’assembly d’application afin qu’elle s’affiche dans la liste.  
   
-5. Dans le **état de la publication** champ, sélectionnez **prérequis** dans la liste déroulante.  
+5. Dans le champ État de la **publication** , sélectionnez **composant requis** dans la liste déroulante.  
   
 ### <a name="to-add-a-new-file-group"></a>Pour ajouter un nouveau groupe de fichiers  
   
 1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.  
   
-2. Cliquez sur l’onglet **Publier**.  
+2. Cliquez sur l'onglet **Publier**.  
   
-3. Cliquez sur le **fichiers d’Application** bouton pour ouvrir la **fichiers d’Application** boîte de dialogue.  
+3. Cliquez sur le bouton **fichiers d’application** pour ouvrir la boîte de dialogue **fichiers d’application** .  
   
-4. Dans le **fichiers d’Application** boîte de dialogue, sélectionnez le **groupe** field pour un fichier que vous souhaitez inclure dans le nouveau groupe.  
+4. Dans la boîte de dialogue **fichiers d’application** , sélectionnez le champ **groupe** pour un fichier que vous souhaitez inclure dans le nouveau groupe.  
   
     > [!NOTE]
-    > Les fichiers doivent avoir le **Action de génération** propriété définie sur **contenu** avant que les noms de fichiers n’apparaissent dans le **fichiers d’Application** boîte de dialogue.  
+    > La propriété action de **génération** des fichiers doit être définie sur **contenu** avant que les noms de fichiers ne s’affichent dans la boîte de dialogue **fichiers d’application** .  
   
-5. Dans le **groupe de téléchargement** champ, sélectionnez  **\<nouveau... >** dans la liste déroulante.  
+5. Dans le champ **groupe de téléchargement** , sélectionnez **\<New...>** dans la liste déroulante.  
   
-6. Dans le **nouveau groupe** boîte de dialogue, entrez un nom pour le groupe, puis cliquez sur **OK**.  
+6. Dans la boîte de dialogue **nouveau groupe** , entrez un nom pour le groupe, puis cliquez sur **OK**.  
   
 ### <a name="to-add-a-file-to-a-group"></a>Pour ajouter un fichier à un groupe  
   
 1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.  
   
-2. Cliquez sur l’onglet **Publier**.  
+2. Cliquez sur l'onglet **Publier**.  
   
-3. Cliquez sur le **fichiers d’Application** bouton pour ouvrir la **fichiers d’Application** boîte de dialogue.  
+3. Cliquez sur le bouton **fichiers d’application** pour ouvrir la boîte de dialogue **fichiers d’application** .  
   
-4. Dans le **fichiers d’Application** boîte de dialogue, sélectionnez le **groupe** field pour un fichier que vous souhaitez inclure dans le nouveau groupe.  
+4. Dans la boîte de dialogue **fichiers d’application** , sélectionnez le champ **groupe** pour un fichier que vous souhaitez inclure dans le nouveau groupe.  
   
-5. Dans le **groupe de téléchargement** , sélectionnez un groupe dans la liste déroulante.  
+5. Dans le champ **groupe de téléchargement** , sélectionnez un groupe dans la liste déroulante.  
   
     > [!NOTE]
-    > Vous ne pouvez pas modifier le **groupe de téléchargement** pour les fichiers qui sont requis pour exécuter l’application.  
+    > Vous ne pouvez pas modifier le **groupe de téléchargement** pour les fichiers qui sont requis pour l’exécution de l’application.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Publication d’applications ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Guide pratique pour publier une application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+ [Comment : publier une application ClickOnce à l'aide de l'Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

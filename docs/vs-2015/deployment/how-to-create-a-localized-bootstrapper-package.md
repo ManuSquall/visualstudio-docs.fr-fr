@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Créer un Package de programme d’amorçage localisé | Microsoft Docs'
+title: 'Comment : créer un package de programme d’amorçage localisé | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -14,20 +14,20 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5ec3cd1365826c1a06b2d0f7bd6da377c8dc4d46
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440652"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840190"
 ---
-# <a name="how-to-create-a-localized-bootstrapper-package"></a>Procédure : Créer un Package de programme d’amorçage localisé
+# <a name="how-to-create-a-localized-bootstrapper-package"></a>Comment : créer un package du programme d'amorçage localisé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Après avoir créé un package de programme d'amorçage, vous pouvez créer des versions localisées de ce dernier en créant deux fichiers de plus pour chacun des paramètres régionaux : un fichier des termes du contrat de licence logiciel (par exemple eula.rtf) et un manifeste du package (package.xml).  
   
  Par défaut, Visual Studio 2010 inclut des packages de programme d'amorçage localisés uniquement pour .NET Framework 4, .NET Framework 4 Client Profile, F# Runtime 2.0 et F# Runtime 4.0. Vous pouvez créer des packages localisés pour d'autres programmes d'amorçage en trois étapes.  
   
-1. Créez un dossier nommé d’après le nom des paramètres régionaux dans \Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\*Nom_package_programme_amorçage*.  
+1. Créez un dossier nommé d’après le nom des paramètres régionaux dans \Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages \\ *BootstrapperPackageName*.  
   
 2. Créez un fichier qui contient les termes du contrat de licence logiciel du package du programme d’amorçage et placez-le dans le nouveau dossier.  
   
@@ -42,9 +42,9 @@ Après avoir créé un package de programme d'amorçage, vous pouvez créer des 
   
 1. Créez un dossier nommé en fonction du nom des paramètres régionaux.  
   
-     Sur les ordinateurs 32 bits, créez le dossier dans le Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\*Nom_package_programme_amorçage*\ dossier.  
+     Sur les ordinateurs 32 bits, créez le dossier dans le dossier \Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages \\ *BootstrapperPackageName*\.  
   
-     Sur les ordinateurs 64 bits, créez le dossier dans le \Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages Files (86) \Program\\*Nom_package_programme_amorçage*\ dossier.  
+     Sur les ordinateurs 64 bits, créez le dossier dans le dossier \Program Files (86) \Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages \\ *BootstrapperPackageName*\.  
   
      Le tableau suivant indique les noms de dossiers qui peuvent correspondre à des paramètres régionaux.  
   
@@ -61,13 +61,13 @@ Après avoir créé un package de programme d'amorçage, vous pouvez créer des 
     |Coréen|ko|  
     |Japonais|ja|  
     |Polonais|pl|  
-    |Portugais (Brésil)|pt-BR|  
+    |Portugais (Brésil)|pt-br|  
     |Russe|ru|  
     |Turc|tr|  
   
 2. Créez un fichier qui contient les termes du contrat de licence logiciel du package du programme d’amorçage et placez-le dans le nouveau dossier.  
   
-3. Créez un manifeste du package nommé package.xml et placez-le dans le nouveau dossier. Pour plus d'informations, voir [Procédure : Créer un manifeste de Package](../deployment/how-to-create-a-package-manifest.md).  
+3. Créez un manifeste du package nommé package.xml et placez-le dans le nouveau dossier. Pour plus d’informations, consultez [Comment : créer un manifeste de package](../deployment/how-to-create-a-package-manifest.md).  
   
 4. Mettez à jour la section `<Strings>` du manifeste du package pour que les chaînes soient dans la langue appropriée en fonction des paramètres régionaux.  
   
@@ -95,5 +95,5 @@ Après avoir créé un package de programme d'amorçage, vous pouvez créer des 
   
 ## <a name="see-also"></a>Voir aussi  
  [Création de packages de programme d’amorçage](../deployment/creating-bootstrapper-packages.md)   
- [Prérequis pour le déploiement d’applications](../deployment/application-deployment-prerequisites.md)   
- [Guide pratique pour créer un manifeste de package](../deployment/how-to-create-a-package-manifest.md)
+ [Conditions préalables pour le déploiement d’applications](../deployment/application-deployment-prerequisites.md)   
+ [Comment : créer un manifeste de package](../deployment/how-to-create-a-package-manifest.md)

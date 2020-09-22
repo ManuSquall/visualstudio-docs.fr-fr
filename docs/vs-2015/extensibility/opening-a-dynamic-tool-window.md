@@ -11,32 +11,32 @@ caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 09b81294abc708cf7616dad03b5dd7333d6a1719
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435875"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839897"
 ---
 # <a name="opening-a-dynamic-tool-window"></a>Ouverture d’une fenêtre d’outil dynamique
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Fenêtres Outil sont généralement ouverts à partir d’une commande dans un menu ou un raccourci clavier équivalent. Dans certains cas, toutefois, vous devrez peut-être une fenêtre outil qui s’ouvre chaque fois qu’un contexte d’interface utilisateur spécifique s’applique et se ferme lorsque le contexte de l’interface utilisateur ne s’applique plus. Les fenêtres Outil comme celles-ci sont appelées *dynamique* ou *visibles automatiquement*.  
+Les fenêtres outil sont généralement ouvertes à partir d’une commande dans un menu ou d’un raccourci clavier équivalent. Toutefois, il peut arriver que vous ayez besoin d’une fenêtre outil qui s’ouvre chaque fois qu’un contexte d’interface utilisateur spécifique s’applique, et se ferme lorsque le contexte de l’interface utilisateur ne s’applique plus. Les fenêtres outil comme celles-ci sont appelées *Dynamic* ou *auto-visible*.  
   
 > [!NOTE]
-> Pour obtenir la liste des contextes d’interface utilisateur prédéfinis, consultez <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT>. Pour le  
+> Pour obtenir la liste des contextes d’interface utilisateur prédéfinis, consultez <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT> . Pour le type de fichier  
   
- Si vous souhaitez ouvrir une fenêtre d’outil dynamique au démarrage et il est possible de l’échec de la création, vous devez implémenter le <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackageDynamicToolOwnerEx> d’interface et de tester les conditions d’échec dans le <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackageDynamicToolOwnerEx.QueryShowTool%2A> (méthode). Pour l’interpréteur de commandes que vous avez une fenêtre outil dynamique qui doit être ouvert au démarrage, vous devez ajouter le `SupportsDynamicToolOwner` valeur (1) pour l’inscription de votre package. Cette valeur ne fait pas partie de la norme <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>, vous devez donc créer un attribut personnalisé pour l’ajouter. Pour plus d’informations sur les attributs personnalisés, consultez [à l’aide d’un attribut d’inscription personnalisé pour inscrire une Extension](../misc/using-a-custom-registration-attribute-to-register-an-extension.md).  
+ Si vous souhaitez ouvrir une fenêtre outil dynamique au démarrage et qu’il est possible que la création échoue, vous devez implémenter l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackageDynamicToolOwnerEx> interface et tester les conditions d’échec dans la <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackageDynamicToolOwnerEx.QueryShowTool%2A> méthode. Pour que l’interpréteur de commandes sache que vous disposez d’une fenêtre outil dynamique qui doit être ouverte au démarrage, vous devez ajouter la `SupportsDynamicToolOwner` valeur (définie sur 1) à l’inscription de votre package. Cette valeur ne fait pas partie de la norme <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> . vous devez donc créer un attribut personnalisé pour l’ajouter. Pour plus d’informations sur les attributs personnalisés, consultez [utilisation d’un attribut d’inscription personnalisé pour inscrire une extension](../misc/using-a-custom-registration-attribute-to-register-an-extension.md).  
   
  Utilisez <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> pour ouvrir une fenêtre outil. La fenêtre outil est créée en fonction des besoins.  
   
 > [!NOTE]
-> Une fenêtre outil dynamique peut être fermée par l’utilisateur. Si vous souhaitez créer une commande de menu afin de l’utilisateur peut rouvrir la fenêtre outil, la commande de menu doit être activée dans le même contexte de l’interface utilisateur qui ouvre la fenêtre outil et désactivé dans le cas contraire.  
+> Une fenêtre outil dynamique peut être fermée par l’utilisateur. Si vous souhaitez créer une commande de menu afin que l’utilisateur puisse rouvrir la fenêtre outil, la commande de menu doit être activée dans le même contexte d’interface utilisateur qui ouvre la fenêtre outil, et désactivée dans le cas contraire.  
   
-### <a name="to-open-a-dynamic-tool-window"></a>Pour ouvrir une fenêtre d’outil dynamique  
+### <a name="to-open-a-dynamic-tool-window"></a>Pour ouvrir une fenêtre outil dynamique  
   
-1. Créez un projet VSIX nommé **DynamicToolWindow** et ajouter un modèle d’élément de fenêtre outil nommé **DynamicWindowPane.cs**. Pour plus d’informations, consultez [création d’une Extension avec une fenêtre outil](../extensibility/creating-an-extension-with-a-tool-window.md).  
+1. Créez un projet VSIX nommé **DynamicToolWindow** et ajoutez un modèle d’élément de fenêtre outil nommé **DynamicWindowPane.cs**. Pour plus d’informations, consultez [création d’une extension avec une fenêtre outil](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
-2. Dans le fichier de DynamicWindowPanePackage.cs, recherchez la déclaration de DynamicWindowPanePackage. Ajouter le <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> et les attributs T:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute pour inscrire la fenêtre outil.  
+2. Dans le fichier DynamicWindowPanePackage.cs, recherchez la déclaration DynamicWindowPanePackage. Ajoutez les <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> attributs et T :Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute pour inscrire la fenêtre outil.  
   
     ```vb  
     [[ProvideToolWindow(typeof(DynamicWindowPane)]  
@@ -50,8 +50,8 @@ Fenêtres Outil sont généralement ouverts à partir d’une commande dans un m
     {. . .}  
     ```  
   
-     Cela inscrit la fenêtre Outil nommée DynamicWindowPane sous forme de fenêtre temporaire qui n’est pas conservée lorsque Visual Studio est fermé et rouvert. DynamicWindowPane est ouvert chaque fois que <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_string> s’applique et fermés dans le cas contraire.  
+     Cela enregistre la fenêtre outil nommée DynamicWindowPane comme une fenêtre temporaire qui n’est pas persistante lorsque Visual Studio est fermé et rouvert. DynamicWindowPane s’ouvre chaque fois que <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_string> s’applique, et est fermé dans le cas contraire.  
   
-3. Générez le projet et commencez le débogage. L’instance expérimentale doit apparaître. Vous ne verrez pas la fenêtre outil.  
+3. Générez le projet et commencez le débogage. L’instance expérimentale doit apparaître. Vous ne devriez pas voir la fenêtre outil.  
   
-4. Ouvrez un projet dans l’instance expérimentale. La fenêtre outil doit apparaître.
+4. Ouvrez un projet dans l’instance expérimentale. La fenêtre outil doit s’afficher.

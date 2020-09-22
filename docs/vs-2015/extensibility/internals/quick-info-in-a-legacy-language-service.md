@@ -1,5 +1,5 @@
 ---
-title: Info express dans un Service de langage hérité | Microsoft Docs
+title: Info Express dans un service de langage hérité | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,34 +13,34 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cc8bfff0903d2ed1554cfd8b3d5b1dcf5cf0fa8a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436656"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839317"
 ---
 # <a name="quick-info-in-a-legacy-language-service"></a>Informations rapides dans un service de langage hérité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Info express IntelliSense affiche des informations sur un identificateur dans la source lorsque l’utilisateur place le signe insertion dans l’identificateur sélectionne **Info Express** à partir de la **IntelliSense** menu ou détient la souris curseur sur l’identificateur. Cela entraîne une info-bulle apparaisse avec des informations sur l’identificateur. Ces informations se composent généralement de type identificateur. Lorsque le moteur de débogage est actif, ces informations peuvent inclure la valeur actuelle. Le moteur de débogage fournit des valeurs de l’expression, tandis que le service de langage gère uniquement des identificateurs.  
+Info Express IntelliSense affiche des informations sur un identificateur dans la source lorsque l’utilisateur place le signe insertion dans l’identificateur et sélectionne **Info Express** dans le menu **IntelliSense** ou maintient le curseur de la souris sur l’identificateur. Cela entraîne l’affichage d’une info-bulle avec des informations sur l’identificateur. Ces informations se composent généralement du type d’identificateur. Lorsque le moteur de débogage est actif, ces informations peuvent inclure la valeur actuelle. Le moteur de débogage fournit des valeurs d’expression, tandis que le service de langage gère uniquement les identificateurs.  
   
- Services de langage hérité sont implémentés en tant que partie d’un VSPackage, mais la plus récente pour implémenter des fonctionnalités de service de langage consiste à utiliser des extensions MEF. Pour plus d’informations, consultez [procédure pas à pas : Affichage des info-bulles Info Express](../../extensibility/walkthrough-displaying-quickinfo-tooltips.md).  
+ Les services de langage hérités sont implémentés dans le cadre d’un VSPackage, mais la meilleure façon d’implémenter les fonctionnalités du service de langage consiste à utiliser les extensions MEF. Pour plus d’informations, consultez [procédure pas à pas : affichage des info-bulles Info-bulles](../../extensibility/walkthrough-displaying-quickinfo-tooltips.md).  
   
 > [!NOTE]
-> Nous vous recommandons de commencer à utiliser le nouvel éditeur API dès que possible. Cela améliorer les performances de votre service de langage et vous permettent de tirer parti des nouvelles fonctionnalités de l’éditeur.  
+> Nous vous recommandons de commencer à utiliser la nouvelle API Editor dès que possible. Cela améliore les performances de votre service de langage et vous permet de tirer parti des nouvelles fonctionnalités de l’éditeur.  
   
- Les classes de service de langage managé package framework (MPF) fournissent la prise en charge complète pour l’affichage des info-bulle Info express IntelliSense. Il vous suffit est de fournir le texte pour afficher et activer la fonctionnalité info Express.  
+ Les classes du service de langage de l’infrastructure de package managé (MPF) fournissent une prise en charge complète de l’affichage de l’info-bulle IntelliSense Info Express. Il vous suffit de fournir le texte à afficher et d’activer la fonctionnalité Info Express.  
   
- Le texte à afficher est obtenu en appelant le <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Analyseur de méthode avec une valeur de motif de l’analyse de <xref:Microsoft.VisualStudio.Package.ParseReason>. Cela indique à l’analyseur pour obtenir les informations de type (ou tout ce qui est approprié à afficher dans l’info-bulle Info express) pour l’identificateur à l’emplacement spécifié dans le <xref:Microsoft.VisualStudio.Package.ParseRequest> objet. Le <xref:Microsoft.VisualStudio.Package.ParseRequest> objet est ce qui a été passé à la <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> (méthode).  
+ Le texte à afficher est obtenu en appelant l' <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Analyseur de méthode avec une valeur de raison d’analyse de <xref:Microsoft.VisualStudio.Package.ParseReason> . Cette raison indique à l’analyseur d’obtenir les informations de type (ou tout ce qui est approprié à afficher dans l’info-bulle de l’outil Info Express) pour l’identificateur à l’emplacement spécifié dans l' <xref:Microsoft.VisualStudio.Package.ParseRequest> objet. L' <xref:Microsoft.VisualStudio.Package.ParseRequest> objet est ce qui a été passé à la <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> méthode.  
   
- L’analyseur doit analyser tous les éléments jusqu'à la position dans le <xref:Microsoft.VisualStudio.Package.ParseRequest> objet afin de déterminer les types de tous les identificateurs. Puis l’analyseur doit obtenir l’identificateur à l’emplacement de demande d’analyse. Enfin, l’analyseur doit transmettre les données d’info-bulle outil associées à cet identificateur pour le <xref:Microsoft.VisualStudio.Package.AuthoringScope> afin que cet objet puisse retourner le texte à partir de l’objet le <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDataTipText%2A> (méthode).  
+ L’analyseur doit tout analyser jusqu’à la position dans l' <xref:Microsoft.VisualStudio.Package.ParseRequest> objet afin de déterminer les types de tous les identificateurs. Ensuite, l’analyseur doit obtenir l’identificateur à l’emplacement de la demande d’analyse. Enfin, l’analyseur doit passer les données d’info-bulle associées à cet identificateur à l' <xref:Microsoft.VisualStudio.Package.AuthoringScope> objet afin que l’objet puisse retourner le texte de la <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDataTipText%2A> méthode.  
   
-## <a name="enabling-the-quick-info-feature"></a>L’activation de la fonctionnalité Info express  
- Pour activer la fonctionnalité Info express, vous devez définir le `CodeSense` et `QuickInfo` nommé des paramètres de la <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>. Ces attributs définissent la <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> et <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableQuickInfo%2A> propriétés.  
+## <a name="enabling-the-quick-info-feature"></a>Activation de la fonctionnalité Info Express  
+ Pour activer la fonctionnalité Info Express, vous devez définir les `CodeSense` `QuickInfo` paramètres nommés et de <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> . Ces attributs définissent les <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableQuickInfo%2A> Propriétés et.  
   
-## <a name="implementing-the-quick-info-feature"></a>Implémentation de la fonctionnalité Infos Express  
- Le <xref:Microsoft.VisualStudio.Package.ViewFilter> classe gère l’opération d’Info express IntelliSense. Lorsque le <xref:Microsoft.VisualStudio.Package.ViewFilter> reçoit de la classe la <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> commande, la classe appelle le <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> méthode avec le motif de l’analyse de <xref:Microsoft.VisualStudio.Package.ParseReason> et l’emplacement du signe insertion au moment le <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> commande a été envoyée. Le <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Analyseur de la méthode doit ensuite analyser la source jusqu'à l’emplacement donné, puis analyse l’identificateur à l’emplacement donné pour déterminer les éléments à afficher dans l’info-bulle Info Express.  
+## <a name="implementing-the-quick-info-feature"></a>Implémentation de la fonctionnalité Info Express  
+ La <xref:Microsoft.VisualStudio.Package.ViewFilter> classe gère l’opération Info Express IntelliSense. Lorsque la <xref:Microsoft.VisualStudio.Package.ViewFilter> classe reçoit la <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> commande, la classe appelle la <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> méthode avec la raison de l’analyse <xref:Microsoft.VisualStudio.Package.ParseReason> et l’emplacement du signe insertion au moment de l' <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> envoi de la commande. L' <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Analyseur de méthode doit ensuite analyser la source jusqu’à l’emplacement donné, puis analyser l’identificateur à l’emplacement donné pour déterminer ce qui doit être affiché dans l’info-bulle de l’outil Info Express.  
   
- La plupart des analyseurs effectuer une analyse initiale de l’intégralité du fichier source et stocker les résultats dans une arborescence d’analyse. L’analyse complète est effectuée lorsque <xref:Microsoft.VisualStudio.Package.ParseReason> est passé à <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> (méthode). Autres types d’analyse peuvent ensuite utiliser l’arborescence d’analyse pour obtenir les informations souhaitées.  
+ La plupart des analyseurs effectuent une analyse initiale de l’intégralité du fichier source et stockent les résultats dans une arborescence d’analyse. L’analyse complète est exécutée lorsque <xref:Microsoft.VisualStudio.Package.ParseReason> est passé à la <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> méthode. D’autres types d’analyse peuvent ensuite utiliser l’arborescence d’analyse pour obtenir les informations souhaitées.  
   
- Par exemple, la valeur de motif d’analyse de <xref:Microsoft.VisualStudio.Package.ParseReason> peut rechercher l’identificateur à l’emplacement source et rechercher dans l’arborescence d’analyse pour obtenir les informations de type. Ces informations de type sont ensuite passées à la <xref:Microsoft.VisualStudio.Package.AuthoringScope> classe et est retournée par la <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDataTipText%2A> (méthode).
+ Par exemple, la valeur de raison de l’analyse de <xref:Microsoft.VisualStudio.Package.ParseReason> peut trouver l’identificateur à l’emplacement source et le Rechercher dans l’arborescence d’analyse pour obtenir les informations de type. Ces informations de type sont ensuite passées à la <xref:Microsoft.VisualStudio.Package.AuthoringScope> classe et sont retournées par la <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDataTipText%2A> méthode.

@@ -1,5 +1,5 @@
 ---
-title: Personnaliser les fonctionnalités d’interface utilisateur à l’aide des interfaces d’extensibilité
+title: Personnaliser les fonctionnalités de l’interface utilisateur à l’aide des interfaces d’extensibilité
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -21,13 +21,13 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: d28c9456afdc60b1bddadf759ec3090ba37f2040
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445476"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839346"
 ---
-# <a name="customize-ui-features-by-using-extensibility-interfaces"></a>Personnaliser les fonctionnalités d’interface utilisateur à l’aide des interfaces d’extensibilité
+# <a name="customize-ui-features-by-using-extensibility-interfaces"></a>Personnaliser les fonctionnalités de l’interface utilisateur à l’aide des interfaces d’extensibilité
   Les Outils de développement Office dans Visual Studio fournissent des classes et des concepteurs qui gèrent de nombreux détails d’implémentation quand vous les utilisez pour créer des volets de tâches personnalisés, des personnalisations de ruban et des zones de formulaire Outlook dans un complément VSTO. Toutefois, vous pouvez également implémenter vous-même l' *interface d'extensibilité* pour chaque fonctionnalité si vous avez des spécifications spéciales.
 
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]
@@ -37,14 +37,14 @@ ms.locfileid: "63445476"
 
  Quand vous créez un complément VSTO en utilisant les modèles de projet Office dans Visual Studio, vous n’avez pas à implémenter les interfaces d’extensibilité pour personnaliser des fonctionnalités comme le ruban. Le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] les implémente pour vous. Vous pouvez plutôt utiliser les classes et concepteurs plus intuitifs fournis par Visual Studio. Toutefois, vous pouvez quand même implémenter directement les interfaces d’extensibilité dans votre complément VSTO si vous le souhaitez.
 
- Pour plus d’informations sur les classes et les concepteurs que Visual Studio fournit pour ces fonctionnalités, consultez [volets de tâches personnalisés](../vsto/custom-task-panes.md), [Concepteur de ruban](../vsto/ribbon-designer.md), et [zones de formulaire Outlook créer](../vsto/creating-outlook-form-regions.md).
+ Pour plus d’informations sur les classes et les concepteurs que Visual Studio fournit pour ces fonctionnalités, consultez [volets de tâches personnalisés](../vsto/custom-task-panes.md), [Concepteur de ruban](../vsto/ribbon-designer.md)et [créer des zones de formulaire Outlook](../vsto/creating-outlook-form-regions.md).
 
-## <a name="extensibility-interfaces-you-can-implement-in-a-vsto-add-in"></a>Interfaces d’extensibilité que vous pouvez implémenter dans un composant logiciel complément VSTO
+## <a name="extensibility-interfaces-you-can-implement-in-a-vsto-add-in"></a>Interfaces d’extensibilité que vous pouvez implémenter dans un complément VSTO
  Le tableau suivant répertorie les interfaces d'extensibilité que vous pouvez implémenter et les applications qui les prennent en charge.
 
 |Interface|Description|Applications|
 |---------------|-----------------|------------------|
-|<xref:Microsoft.Office.Core.IRibbonExtensibility>|Implémentez cette interface pour personnaliser l'interface utilisateur du ruban. **Remarque :**  Vous pouvez ajouter un **ruban (XML)** élément à un projet pour générer une valeur par défaut <xref:Microsoft.Office.Core.IRibbonExtensibility> mise en œuvre dans votre complément, VSTO. Pour plus d'informations, consultez [Ribbon XML](../vsto/ribbon-xml.md).|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> InfoPath 2010<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Projet<br /><br /> Visio<br /><br /> Word|
+|<xref:Microsoft.Office.Core.IRibbonExtensibility>|Implémentez cette interface pour personnaliser l'interface utilisateur du ruban. **Remarque :**  Vous pouvez ajouter un élément **Ruban (XML)** à un projet pour générer une implémentation par défaut <xref:Microsoft.Office.Core.IRibbonExtensibility> dans votre complément VSTO. Pour plus d'informations, consultez [Ribbon XML](../vsto/ribbon-xml.md).|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> InfoPath 2010<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Project<br /><br /> Visio<br /><br /> Word|
 |<xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>|Implémentez cette interface pour créer un volet de tâches personnalisé.|Excel<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Word|
 |<xref:Microsoft.Office.Interop.Outlook.FormRegionStartup>|Implémentez cette interface pour créer une zone de formulaire Outlook.|Outlook|
 
@@ -53,7 +53,7 @@ ms.locfileid: "63445476"
 ## <a name="use-extensibility-interfaces"></a>Utiliser des interfaces d’extensibilité
  Pour personnaliser une fonctionnalité d’interface utilisateur à l’aide d’une interface d’extensibilité, implémentez l’interface appropriée dans votre projet de complément VSTO. Substituez ensuite la méthode <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> pour retourner une instance de la classe qui implémente l'interface.
 
- Pour un exemple d’application qui montre comment implémenter la <xref:Microsoft.Office.Core.IRibbonExtensibility>, <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>, et <xref:Microsoft.Office.Interop.Outlook.FormRegionStartup> interfaces dans un complément VSTO pour Outlook, consultez l’exemple de gestionnaire d’interface utilisateur dans [exemples de développement Office](../vsto/office-development-samples.md).
+ Pour obtenir un exemple d’application qui montre comment implémenter les <xref:Microsoft.Office.Core.IRibbonExtensibility> <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> interfaces, et <xref:Microsoft.Office.Interop.Outlook.FormRegionStartup> dans un complément VSTO pour Outlook, consultez l’exemple de gestionnaire d’interface utilisateur dans les [exemples de développement Office](../vsto/office-development-samples.md).
 
 ### <a name="example-of-implementing-an-extensibility-interface"></a>Exemple d’implémentation d’une interface d’extensibilité
  L'exemple de code suivant présente une implémentation simple de l'interface <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> pour créer un volet de tâches personnalisé. Cet exemple définit deux classes :
@@ -68,7 +68,7 @@ ms.locfileid: "63445476"
   [!code-vb[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#1)]
   [!code-csharp[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#1)]
 
-  Pour plus d’informations sur l’implémentation <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>, consultez [créer des volets de tâches personnalisés dans Office system 2007](/previous-versions/office/developer/office-2007/aa338197(v=office.12)) dans la documentation de Microsoft Office.
+  Pour plus d’informations sur l’implémentation de <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> , consultez [créer des volets des tâches personnalisés dans le 2007 Office System](/previous-versions/office/developer/office-2007/aa338197(v=office.12)) dans la documentation Microsoft Office.
 
 ### <a name="example-of-overriding-the-requestservice-method"></a>Exemple de substitution de la méthode RequestService
  L'exemple de code suivant montre comment substituer la méthode <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> pour retourner une instance de la classe `TaskPaneHelper` de l'exemple de code précédent. Il vérifie la valeur du paramètre *serviceGuid* pour déterminer quelle interface est demandée, puis retourne un objet qui implémente cette interface.
@@ -77,9 +77,9 @@ ms.locfileid: "63445476"
  [!code-csharp[Trin_SimpleExtensibilityInterface#2](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#2)]
 
 ## <a name="see-also"></a>Voir aussi
-- [Procédures pas à pas et des exemples de développement office](../vsto/office-development-samples-and-walkthroughs.md)
-- [Programmer des Compléments VSTO](../vsto/programming-vsto-add-ins.md)
+- [Exemples et procédures pas à pas relatifs au développement Office](../vsto/office-development-samples-and-walkthroughs.md)
+- [Programmer les compléments VSTO](../vsto/programming-vsto-add-ins.md)
 - [Développer des solutions Office](../vsto/developing-office-solutions.md)
-- [Appeler du code dans des Compléments VSTO à partir d’autres solutions Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)
-- [Guide pratique pour Créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
+- [Appeler du code dans des compléments VSTO à partir d’autres solutions Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)
+- [Comment : créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Architecture des compléments VSTO](../vsto/architecture-of-vsto-add-ins.md)

@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 894378d6648139b7ec2b587eb0066a5725af7a71
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443724"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840250"
 ---
 # <a name="manage-channels"></a>Gérer les canaux
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Dans la **vue Threads** du visualiseur concurrentiel, vous pouvez organiser les 
   
 |Critères|Définition|  
 |--------------|----------------|  
-|Heure de début|Trie les threads sur leur heure de début. Il s’agit de l’ordre de tri par défaut.|  
+|Heure de Début|Trie les threads sur leur heure de début. Il s’agit de l’ordre de tri par défaut.|  
 |Heure de fin|Trie les threads sur leur heure de fin.|  
 |Exécution|Trie les threads sur le pourcentage de temps consacré à l’exécution.|  
 |Synchronisation|Trie les threads sur le pourcentage de temps consacré à la synchronisation.|  
@@ -62,6 +62,6 @@ Dans la **vue Threads** du visualiseur concurrentiel, vous pouvez organiser les 
  Si une trace contient des événements de marqueur, vous pouvez utiliser cette commande pour regrouper des canaux de marqueurs sous le thread qui a généré les événements de marqueur.  Les canaux de disques sont déplacés en haut de la liste de canaux, et les canaux GPU sont déplacés en bas.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Contrôle Zoom (vue Threads)](../profiling/zoom-control-threads-view.md)   
- [Mode Mesure activé/désactivé](../profiling/measure-mode-on-off.md)   
- [Threads, vue](../profiling/threads-view-parallel-performance.md)
+ [Contrôle zoom (vue threads)](../profiling/zoom-control-threads-view.md)   
+ [Mode mesure activé/désactivé](../profiling/measure-mode-on-off.md)   
+ [vue Threads](../profiling/threads-view-parallel-performance.md)

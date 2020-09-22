@@ -1,5 +1,5 @@
 ---
-title: 'Erreur : Échec d’ouverture de session à distance du groupe de travail | Microsoft Docs'
+title: 'Erreur : échec de l’ouverture de session à distance du groupe de travail | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -24,13 +24,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 09f018982b81535ae23eafe7158aa88c0b6b08a7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438345"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839574"
 ---
-# <a name="error-workgroup-remote-logon-failure"></a>Erreur : Échec de l’ouverture de session à distance du groupe de travail
+# <a name="error-workgroup-remote-logon-failure"></a>Erreur : Échec d'ouverture de session à distance du groupe de travail
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette erreur affiche le message suivant :  
@@ -39,7 +39,7 @@ Cette erreur affiche le message suivant :
   
  **Cause**  
   
- Cette erreur peut se produire lorsque vous déboguez à partir d'un ordinateur au sein d'un groupe de travail et que vous tentez de vous connecter à un ordinateur distant. Plusieurs causes sont possibles :  
+ Cette erreur peut se produire lorsque vous déboguez à partir d'un ordinateur au sein d'un groupe de travail et que vous tentez de vous connecter à un ordinateur distant. Les causes possibles sont les suivantes :  
   
 - Il n'existe pas de compte avec le nom et le mot de passe correspondants sur l'ordinateur distant.  
   
@@ -76,12 +76,12 @@ Cette erreur affiche le message suivant :
   
 3. Cliquez sur **Options de sécurité**.  
   
-4. Dans le **stratégie** colonne, double-cliquez sur **accès réseau : Modèle de partage et de sécurité pour les comptes locaux**.  
+4. Dans la colonne **Stratégie**, double-cliquez sur **Accès réseau : modèle de partage et de sécurité pour les comptes locaux**.  
   
-5. Dans le **accès réseau : Modèle de partage et de sécurité pour les comptes locaux** boîte de dialogue, changez la valeur à **classique - les utilisateurs locaux s’authentifient eux-mêmes** et cliquez sur le **appliquer** bouton.  
+5. Dans la boîte de dialogue **Accès réseau : modèle de partage et de sécurité pour les comptes locaux**, remplacez la valeur par **Classique - les utilisateurs locaux s’authentifient eux-mêmes** et cliquez sur le bouton **Appliquer**.  
   
      ![Options de sécurité de stratégie de sécurité locale](../debugger/media/dbg-err-localsecuritypolicy-securityoptions-networkaccess.png "DBG_ERR_LocalSecurityPolicy_SecurityOptions_NetworkAccess")  
   
 ## <a name="see-also"></a>Voir aussi  
- [Erreurs de débogage à distance et dépannage](../debugger/remote-debugging-errors-and-troubleshooting.md)   
- [Remote Debugging](../debugger/remote-debugging.md)
+ [Erreurs de débogage distant et dépannage](../debugger/remote-debugging-errors-and-troubleshooting.md)   
+ [Débogage à distance](../debugger/remote-debugging.md)

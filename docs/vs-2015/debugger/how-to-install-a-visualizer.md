@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Installer un visualiseur | Microsoft Docs'
+title: 'Comment : installer un visualiseur | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,19 +22,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5726cea8b2e81c53b5f3fff963357946f26b199f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438225"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839549"
 ---
-# <a name="how-to-install-a-visualizer"></a>Procédure : Installer un visualiseur
+# <a name="how-to-install-a-visualizer"></a>Comment : installer un visualiseur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Après avoir créé un visualiseur, vous devez l'installer de sorte qu'il soit disponible dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. L'installation d'un visualiseur est un processus simple.  
   
 > [!NOTE]
-> Dans **Store** applications, seul le texte standard, les visualiseurs HTML, XML et JSON sont pris en charge. Les visualiseurs personnalisés (créés par l'utilisateur) ne sont pas pris en charge.  
+> Dans les applications du Windows **Store** , seuls les visualiseurs de texte, html, XML et JSON standard sont pris en charge. Les visualiseurs personnalisés (créés par l'utilisateur) ne sont pas pris en charge.  
   
 ### <a name="to-install-a-visualizer"></a>Pour installer un visualiseur  
   
@@ -52,4 +52,4 @@ Après avoir créé un visualiseur, vous devez l'installer de sorte qu'il soit d
   
 ## <a name="see-also"></a>Voir aussi  
  [Créer des visualiseurs personnalisés](../debugger/create-custom-visualizers-of-data.md)   
- [Guide pratique pour écrire un visualiseur](../debugger/how-to-write-a-visualizer.md)
+ [Comment : écrire un visualiseur](../debugger/how-to-write-a-visualizer.md)

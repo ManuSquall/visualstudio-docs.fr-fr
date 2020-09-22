@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Collecter les données des compteurs UC | Microsoft Docs'
+title: Guide pratique pour collecter les données des compteurs UC | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,18 +15,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 76dac6e20cc85eeb5784b0b6e29ee8d1b23fbd92
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432811"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840022"
 ---
-# <a name="how-to-collect-cpu-counter-data"></a>Procédure : Collecter les données des compteurs UC
+# <a name="how-to-collect-cpu-counter-data"></a>Comment : collecter les données des compteurs UC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Un compteur d’événements UC sert à collecter des données de performances matérielles. Cette rubrique montre comment collecter des données de compteur d’événements lorsque vous utilisez la méthode de profilage par instrumentation.  
   
- **Spécifications**  
+ **Configuration requise**  
   
 - [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
@@ -50,7 +50,7 @@ Un compteur d’événements UC sert à collecter des données de performances 
   
 - Collecter des données à partir d’un ou plusieurs compteurs lors d’un profilage par instrumentation  
   
-- Spécifier un événement de compteur comme intervalle d’échantillonnage lors d’un profilage par échantillonnage Pour plus d'informations, voir [Procédure : Choisissez les événements d’échantillonnage](../profiling/how-to-choose-sampling-events.md).  
+- Spécifier un événement de compteur comme intervalle d’échantillonnage lors d’un profilage par échantillonnage Pour plus d’informations, consultez [Comment : choisir des événements d’échantillonnage](../profiling/how-to-choose-sampling-events.md).  
   
 ### <a name="to-collect-cpu-performance-counter-data-when-you-profile-by-instrumentation"></a>Pour collecter des données de compteur de performances UC lors d’un profilage par instrumentation  
   
@@ -66,7 +66,7 @@ Un compteur d’événements UC sert à collecter des données de performances 
     > L’option **Compteurs de performance disponibles** n’est activée que si vous cochez la case **Collecter les compteurs UC**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Configuration de sessions de performance](../profiling/configuring-performance-sessions.md)   
- [Propriétés d’une session de performance](../profiling/performance-session-properties.md)   
+ [Configuration des sessions de performance](../profiling/configuring-performance-sessions.md)   
+ [Propriétés de la session de performance](../profiling/performance-session-properties.md)   
  [Compteurs UC et Windows](../profiling/cpu-and-windows-counters.md)   
  [Guide pratique pour choisir des événements d’échantillonnage](../profiling/how-to-choose-sampling-events.md)

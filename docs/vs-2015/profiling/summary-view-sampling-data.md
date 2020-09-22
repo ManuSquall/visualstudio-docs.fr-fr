@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c759922fcd28ce0b686745fc917c02f41762cae4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447171"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839926"
 ---
 # <a name="summary-view---sampling-data"></a>Vue Résumé - Données d’échantillonnage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,8 +37,8 @@ La vue Résumé affiche des informations sur les fonctions dont le coût est le 
   
 |Colonne|Description|  
 |------------|-----------------|  
-|**Name**|Nom de la fonction.|  
-|**% d’échantillons inclusifs**|Pourcentage de tous les échantillons collectés quand cette fonction ou une fonction appelée par cette fonction s’exécutait.|  
+|**Nom**|Nom de la fonction.|  
+|**% des échantillons inclusifs**|Pourcentage de tous les échantillons collectés quand cette fonction ou une fonction appelée par cette fonction s’exécutait.|  
 |**% d’échantillons exclusifs**|Pourcentage de tous les échantillons collectés quand la fonction exécutait du code du corps de la fonction. Ce pourcentage n’inclut pas les échantillons collectés dans les fonctions appelées par cette fonction.|  
   
 ## <a name="functions-doing-most-individual-work"></a>Fonctions faisant le plus de travail individuel  
@@ -50,9 +50,9 @@ La vue Résumé affiche des informations sur les fonctions dont le coût est le 
   
 |Colonne|Description|  
 |------------|-----------------|  
-|**Name**|Nom de la fonction.|  
+|**Nom**|Nom de la fonction.|  
 |**% d’échantillons exclusifs**|Pourcentage de tous les échantillons de l’exécution de la fonction collectés quand la fonction exécutait du code du corps de la fonction. Le pourcentage ne comprend pas les échantillons collectés quand des fonctions appelées par cette fonction étaient en cours d’exécution.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Vue Résumé](../profiling/summary-view-dotnet-memory-data.md)   
- [Mode Résumé](../profiling/summary-view-instrumentation-data.md)
+ [Mode Résumé](../profiling/summary-view-dotnet-memory-data.md)   
+ [Vue Résumé](../profiling/summary-view-instrumentation-data.md)

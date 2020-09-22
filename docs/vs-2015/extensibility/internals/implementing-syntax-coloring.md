@@ -1,5 +1,5 @@
 ---
-title: Implémentation de la coloration syntaxique | Microsoft Docs
+title: Implémentation de la coloration de la syntaxe | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,59 +13,59 @@ caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 90ff340efb4cbdbe6e2ac43b5b459642120cc099
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447281"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839602"
 ---
 # <a name="implementing-syntax-coloring"></a>Implémentation de la coloration de syntaxe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Lorsque le service de langage fournit la coloration syntaxique, l’analyseur convertit une ligne de texte dans un tableau d’éléments coloriables et retourne les types de jetons correspondant à ces éléments coloriables. L’analyseur doit retourner des types de jetons qui appartiennent à une liste d’éléments coloriables. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] affiche chaque élément coloriable dans la fenêtre de code selon les attributs assignés par l’objet de Coloriseur pour le type de jeton approprié.  
+Lorsque le service de langage fournit la colorisation de syntaxe, l’analyseur convertit une ligne de texte en un tableau d’éléments coloriables et retourne des types de jetons correspondant à ces éléments coloriables. L’analyseur doit retourner les types de jetons qui appartiennent à une liste d’éléments coloriables. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] affiche chaque élément coloriable dans la fenêtre de code en fonction des attributs assignés par l’objet Coloriseur au type de jeton approprié.  
   
- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ne spécifie pas une interface de l’analyseur, et l’implémentation de l’analyseur complètement vous revient. Toutefois, une implémentation d’analyseur par défaut est fournie dans le projet de Package de langage de Visual Studio. Pour le code managé, l’infrastructure de package managé (MPF) fournit la prise en charge complète pour la colorisation de texte.  
+ [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ne spécifie pas d’interface d’analyseur, et l’implémentation de l’analyseur vous revient entièrement. Toutefois, une implémentation de l’analyseur par défaut est fournie dans le projet de package de langage Visual Studio. Pour le code managé, Managed package Framework (MPF) fournit une prise en charge complète pour la coloration du texte.  
   
- Services de langage hérité sont implémentés en tant que partie d’un VSPackage, mais la plus récente pour implémenter des fonctionnalités de service de langage consiste à utiliser des extensions MEF. Pour en savoir plus sur la nouvelle façon d’implémenter la coloration de syntaxe, consultez [procédure pas à pas : Mise en surbrillance de texte](../../extensibility/walkthrough-highlighting-text.md).  
+ Les services de langage hérités sont implémentés dans le cadre d’un VSPackage, mais la meilleure façon d’implémenter les fonctionnalités du service de langage consiste à utiliser les extensions MEF. Pour en savoir plus sur la nouvelle façon d’implémenter la coloration de la syntaxe, consultez [procédure pas à pas : mise en surbrillance du texte](../../extensibility/walkthrough-highlighting-text.md).  
   
 > [!NOTE]
-> Nous vous recommandons de commencer à utiliser le nouvel éditeur API dès que possible. Cela améliorer les performances de votre service de langage et vous permettent de tirer parti des nouvelles fonctionnalités de l’éditeur.  
+> Nous vous recommandons de commencer à utiliser la nouvelle API Editor dès que possible. Cela améliore les performances de votre service de langage et vous permet de tirer parti des nouvelles fonctionnalités de l’éditeur.  
   
-## <a name="steps-followed-by-an-editor-to-colorize-text"></a>Étapes suivies par un éditeur à mettre en couleur de texte  
+## <a name="steps-followed-by-an-editor-to-colorize-text"></a>Étapes suivies par un éditeur pour colorier le texte  
   
-1. L’éditeur Obtient le Coloriseur en appelant le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> méthode sur le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> objet.  
+1. L’éditeur obtient le Coloriseur en appelant la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> méthode sur l' <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> objet.  
   
-2. Les appels de l’éditeur le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.GetStateMaintenanceFlag%2A> méthode pour déterminer si le Coloriseur doit l’état de chaque ligne à être gérés hors du Coloriseur.  
+2. L’éditeur appelle la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.GetStateMaintenanceFlag%2A> méthode pour déterminer si le Coloriseur a besoin de l’état de chaque ligne à conserver en dehors du Coloriseur.  
   
-3. Si le Coloriseur requiert l’état soit conservé en dehors de Coloriseur, l’éditeur appelle le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.GetStartState%2A> méthode pour obtenir l’état de la première ligne.  
+3. Si le Coloriseur nécessite que l’État soit conservé en dehors du Coloriseur, l’éditeur appelle la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.GetStartState%2A> méthode pour recevoir l’état de la première ligne.  
   
-4. Pour chaque ligne dans la mémoire tampon, l’éditeur appelle le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> (méthode), qui effectue les étapes suivantes :  
+4. Pour chaque ligne de la mémoire tampon, l’éditeur appelle la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> méthode, qui effectue les étapes suivantes :  
   
-    1. La ligne de texte est transmise à un analyseur pour convertir le texte en jetons. Chaque jeton spécifie le texte du jeton et le type de jeton.  
+    1. La ligne de texte est transmise à un scanneur pour convertir le texte en jetons. Chaque jeton spécifie le texte du jeton et le type de jeton.  
   
     2. Le type de jeton est converti en un index dans une liste d’éléments coloriables.  
   
-    3. Les informations de jeton sont utilisées pour remplir un tableau où chaque élément du tableau correspond à un caractère dans la ligne. Les valeurs stockées dans le tableau sont les index dans la liste d’éléments coloriables.  
+    3. Les informations de jeton sont utilisées pour remplir un tableau de telle sorte que chaque élément du tableau corresponde à un caractère de la ligne. Les valeurs stockées dans le tableau sont les index dans la liste des éléments coloriables.  
   
-    4. L’état à la fin de la ligne est retournée pour chaque ligne.  
+    4. L’État à la fin de la ligne est retourné pour chaque ligne.  
   
-5. Si le Coloriseur requiert l’état soit conservé, l’éditeur met en cache l’état de cette ligne.  
+5. Si le Coloriseur requiert la conservation de l’État, l’éditeur met en cache l’état de cette ligne.  
   
-6. L’éditeur affiche la ligne de texte en utilisant les informations retournées par le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> (méthode). Ce processus implique les étapes suivantes :  
+6. L’éditeur restitue la ligne de texte à l’aide des informations retournées par la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> méthode. Ce processus implique les étapes suivantes :  
   
-    1. Pour chaque caractère de la ligne, obtenir l’index de l’élément coloriable.  
+    1. Pour chaque caractère de la ligne, récupérez l’index de l’élément coloriable.  
   
-    2. Si vous utilisez les éléments coloriables par défaut, accéder à liste d’éléments coloriables de l’éditeur.  
+    2. Si vous utilisez les éléments coloriables par défaut, accédez à la liste des éléments coloriés de l’éditeur.  
   
-    3. Sinon, appelez le service de langage <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> méthode pour obtenir un élément coloriable.  
+    3. Sinon, appelez la méthode du service de langage <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> pour obtenir un élément coloriable.  
   
-    4. Utilisez les informations de l’élément coloriable à restituer le texte dans l’affichage.  
+    4. Utilisez les informations de l’élément coloriable pour restituer le texte dans l’affichage.  
   
-## <a name="managed-package-framework-colorizer"></a>Managed Package Framework Coloriseur  
- L’infrastructure de package managé (MPF) fournit toutes les classes qui sont requis pour implémenter un Coloriseur. Votre classe de service de langage doit hériter la <xref:Microsoft.VisualStudio.Package.LanguageService> classe et implémenter les méthodes obligatoires. Vous devez fournir un scanneur et l’analyseur en implémentant la <xref:Microsoft.VisualStudio.Package.IScanner> interface et retourner une instance de cette interface à partir de la <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> (méthode) (une des méthodes qui doivent être implémentées dans le <xref:Microsoft.VisualStudio.Package.LanguageService> classe). Pour plus d’informations, consultez [couleurs de syntaxe dans un Service de langage hérité](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md).  
+## <a name="managed-package-framework-colorizer"></a>Managed package Framework Coloriseur  
+ Managed package Framework (MPF) fournit toutes les classes qui sont requises pour implémenter un Coloriseur. Votre classe de service de langage doit hériter de la <xref:Microsoft.VisualStudio.Package.LanguageService> classe et implémenter les méthodes requises. Vous devez fournir un scanneur et un analyseur en implémentant l' <xref:Microsoft.VisualStudio.Package.IScanner> interface et retourner une instance de cette interface à partir de la <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> méthode (l’une des méthodes qui doivent être implémentées dans la <xref:Microsoft.VisualStudio.Package.LanguageService> classe). Pour plus d’informations, consultez [colorisation de syntaxe dans un service de langage hérité](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour Utiliser des éléments Coloriables intégrés](../../extensibility/internals/how-to-use-built-in-colorable-items.md)   
- [Éléments Coloriables personnalisés](../../extensibility/internals/custom-colorable-items.md)   
- [Développement d’un Service de langage hérité](../../extensibility/internals/developing-a-legacy-language-service.md)   
+ [Comment : utiliser des éléments coloriables intégrés](../../extensibility/internals/how-to-use-built-in-colorable-items.md)   
+ [Éléments coloriables personnalisés](../../extensibility/internals/custom-colorable-items.md)   
+ [Développement d’un service de langage hérité](../../extensibility/internals/developing-a-legacy-language-service.md)   
  [Couleurs de syntaxe dans un service de langage hérité](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)

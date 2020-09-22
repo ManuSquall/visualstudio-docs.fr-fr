@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e9000a4d0a65fd450e3ef655e6b646990f682ba9
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64837922"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840225"
 ---
-# <a name="idiasymbolgetvalue"></a>IDiaSymbol::get_value
+# <a name="idiasymbolget_value"></a>IDiaSymbol::get_value
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Récupère la valeur d’une constante.  
@@ -35,18 +35,18 @@ HRESULT get_value ( 
   
 #### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- [in, out] Un `VARIANT` objet qui est rempli avec la valeur d’une constante.  
+ [in, out] `VARIANT` Objet qui est rempli avec la valeur d’une constante.  
   
 ## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  
+ En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.  
   
 > [!NOTE]
-> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
+> Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## <a name="remarks"></a>Notes  
- La variante fournie doit être initialisée avant d’être passé à cette méthode. Pour plus d’informations, consultez l’exemple.  
+## <a name="remarks"></a>Remarques  
+ La variante fournie doit être initialisée avant d’être passée à cette méthode. Pour plus d'informations, reportez-vous à l'exemple.  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a> Exemple  
   
 ```cpp#  
 void ProcessValue(IDiaSymbol *pSymbol)  

@@ -12,34 +12,34 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 9cdbba0cfa48792127accc71cba75f8542556d67
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63409382"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839498"
 ---
 # <a name="displaying-locals"></a>Affichage des variables locales
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
-> Dans Visual Studio 2015, ce moyen d’implémenter des évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateurs d’Expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple d’évaluateur d’Expression gérés](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> Dans Visual Studio 2015, cette façon d’implémenter les évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateur d’expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple évaluateur d’expression managée](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- L’exécution toujours a lieu dans le contexte d’une méthode, également appelé la méthode conteneur ou la méthode actuelle. Lors de l’exécution s’interrompt, Visual Studio appelle le moteur de débogage (dé) pour obtenir la liste des variables locales et les arguments, appelés collectivement les variables locales de la méthode. Visual Studio affiche ces variables locales et leurs valeurs dans le **variables locales** fenêtre.  
+ L’exécution a toujours lieu dans le contexte d’une méthode, également appelée méthode conteneur ou méthode actuelle. Lorsque l’exécution est suspendue, Visual Studio appelle le moteur de débogage (DE) pour obtenir une liste de variables locales et d’arguments, collectivement appelés les variables locales de la méthode. Visual Studio affiche ces variables locales et leurs valeurs dans la fenêtre **variables locales** .  
   
- Pour afficher les variables locales, appelle la DE la [GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) méthode appartenant à la EE et lui donne un contexte d’évaluation, qui est, un fournisseur de symboles (SP), l’adresse de l’exécution actuelle et un objet de classeur. Pour plus d’informations, consultez [contexte d’évaluation](../../extensibility/debugger/evaluation-context.md). Si l’appel réussit, la `IDebugExpressionEvaluator::GetMethodProperty` méthode retourne un [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) objet qui représente la méthode qui contient l’adresse de l’exécution actuelle.  
+ Pour afficher les variables locales, le paramètre DE appelle la méthode [GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) qui appartient à EE et lui donne un contexte d’évaluation, autrement dit, un fournisseur de symboles (SP), l’adresse d’exécution actuelle et un objet Binder. Pour plus d’informations, consultez la section [contexte d’évaluation](../../extensibility/debugger/evaluation-context.md). Si l’appel a échoué, la `IDebugExpressionEvaluator::GetMethodProperty` méthode retourne un objet [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) , qui représente la méthode qui contient l’adresse d’exécution actuelle.  
   
- Les appels DE [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) pour obtenir un [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) objet, qui est filtré pour retourner des variables locales uniquement et énumérée pour produire une liste de [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md)structures. Chaque structure contient le nom, le type et la valeur d’une variable locale. Le type et la valeur sont stockées sous forme de chaînes de mise en forme, qui peut s’afficher. Le nom, le type et la valeur sont généralement affichées ensemble dans une seule ligne de la **variables locales** fenêtre.  
+ L’appel DE [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) pour obtenir un objet [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) , qui est filtré pour retourner uniquement les variables locales et énumérées pour produire une liste de structures de [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) . Chaque structure contient le nom, le type et la valeur d’un local. Le type et la valeur sont stockés sous forme de chaînes mises en forme, pouvant être affichées. Le nom, le type et la valeur sont généralement affichés ensemble sur une seule ligne de la fenêtre **variables locales** .  
   
 > [!NOTE]
-> Le **Espion express** et **espion** fenêtres affichent également des variables avec le même format de nom, valeur et type. Toutefois, ces valeurs sont obtenues en appelant [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) au lieu de `IDebugProperty2::EnumChildren`.  
+> Les fenêtres **Espion express** et **Espion** affichent également des variables avec le même format de nom, de valeur et de type. Toutefois, ces valeurs sont obtenues en appelant [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) au lieu de `IDebugProperty2::EnumChildren` .  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Exemple d’implémentation de variables locales](../../extensibility/debugger/sample-implementation-of-locals.md)  
- Utilise des exemples pas à pas détaillé dans le processus d’implémentation des variables locales.  
+ Utilise des exemples pour parcourir le processus d’implémentation des variables locales.  
   
-## <a name="related-sections"></a>Rubriques connexes  
+## <a name="related-sections"></a>Sections connexes  
  [Contexte d’évaluation](../../extensibility/debugger/evaluation-context.md)  
- Explique que lorsque le moteur de débogage (dé) appelle l’évaluateur d’expression (EE), il passe trois arguments.  
+ Explique que lorsque le moteur DE débogage (DE) appelle l’évaluateur d’expression (EE), il passe trois arguments.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Écriture d’un évaluateur d’expression de CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

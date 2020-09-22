@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Fournir un Service | Microsoft Docs'
+title: 'Comment : fournir un service | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,37 +11,37 @@ caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 565a8a91797c826b6419dc5a8488d7d3baf9cddc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435909"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839649"
 ---
-# <a name="how-to-provide-a-service"></a>Procédure : Fournir un service
+# <a name="how-to-provide-a-service"></a>Guide pratique pour fournir un service
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Un VSPackage peut fournir des services qui les VSPackages autres peuvent utiliser. Pour fournir un service, un VSPackage doit inscrire le service avec Visual Studio et ajoutez le service.  
+Un VSPackage peut fournir des services que d’autres VSPackages peuvent utiliser. Pour fournir un service, un VSPackage doit inscrire le service auprès de Visual Studio et ajouter le service.  
   
- Le <xref:Microsoft.VisualStudio.Shell.Package> classe implémente à la fois <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> et <xref:System.ComponentModel.Design.IServiceContainer>. <xref:System.ComponentModel.Design.IServiceContainer> contient des méthodes de rappel qui fournissent des services à la demande.  
+ La <xref:Microsoft.VisualStudio.Shell.Package> classe implémente à la fois <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> et <xref:System.ComponentModel.Design.IServiceContainer> . <xref:System.ComponentModel.Design.IServiceContainer> contient des méthodes de rappel qui fournissent des services à la demande.  
   
- Pour plus d’informations sur les services, consultez [éléments fondamentaux du Service](../extensibility/internals/service-essentials.md) .  
+ Pour plus d’informations sur les services, consultez [service Essentials](../extensibility/internals/service-essentials.md) .  
   
 > [!NOTE]
-> Quand un VSPackage va être déchargé, Visual Studio attend jusqu'à ce que toutes les demandes pour les services fournis par un VSPackage ont été livrés. Il n’autorise pas les nouvelles demandes de ces services. Vous ne devez pas appeler explicitement la <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A> méthode révoquer un service lors du déchargement.  
+> Quand un VSPackage est sur le déchargé, Visual Studio attend que toutes les demandes de services fournies par un VSPackage aient été remises. Elle n’autorise pas les nouvelles demandes pour ces services. Vous ne devez pas appeler explicitement la <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService.RevokeService%2A> méthode pour révoquer un service lors du déchargement.  
   
 #### <a name="implementing-a-service"></a>Implémentation d’un service  
   
-1. Créez un projet VSIX (**fichier / nouveau / projet / Visual c# / extensibilité / projet VSIX**).  
+1. Créez un projet VSIX (**fichier/nouveau/projet/Visual C#/extensibilité/projet VSIX**).  
   
-2. Ajouter un VSPackage au projet. Sélectionnez le nœud de projet dans le **l’Explorateur de solutions** et cliquez sur **Ajouter / nouvel élément / éléments Visual c# / extensibilité / Package Visual Studio**.  
+2. Ajoutez un VSPackage au projet. Sélectionnez le nœud du projet dans le **Explorateur de solutions** puis cliquez sur **Ajouter/nouvel élément/éléments Visual C#/extensibilité/package Visual Studio**.  
   
 3. Pour implémenter un service, vous devez créer trois types :  
   
-   - Une interface qui décrit le service. La plupart de ces interfaces sont vides, autrement dit, elles n’ont aucuns méthodes.  
+   - Interface qui décrit le service. La plupart de ces interfaces sont vides, c’est-à-dire qu’elles n’ont aucune méthode.  
   
-   - Interface qui décrit l’interface de service. Cette interface inclut les méthodes à implémenter.  
+   - Interface qui décrit l’interface de service. Cette interface comprend les méthodes à implémenter.  
   
-   - Une classe qui implémente le service et l’interface de service.  
+   - Classe qui implémente à la fois le service et l’interface de service.  
   
      L’exemple suivant montre une implémentation très basique des trois types. Le constructeur de la classe de service doit définir le fournisseur de services.  
   
@@ -76,7 +76,7 @@ Un VSPackage peut fournir des services qui les VSPackages autres peuvent utilise
   
    ```  
   
-### <a name="registering-a-service"></a>L’inscription d’un service  
+### <a name="registering-a-service"></a>Inscription d’un service  
   
 1. Pour inscrire un service, ajoutez le <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> au VSPackage qui fournit le service. Voici un exemple :  
   
@@ -88,14 +88,14 @@ Un VSPackage peut fournir des services qui les VSPackages autres peuvent utilise
     {. . . }  
     ```  
   
-     Inscrit cet attribut `SMyService` avec Visual Studio.  
+     Cet attribut s’inscrit `SMyService` auprès de Visual Studio.  
   
     > [!NOTE]
-    > Pour inscrire un service qui remplace un autre service portant le même nom, utilisez le <xref:Microsoft.VisualStudio.Shell.ProvideServiceOverrideAttribute>. Remarque qui substituent qu’une seule d’un service est autorisée.  
+    > Pour inscrire un service qui remplace un autre service portant le même nom, utilisez le <xref:Microsoft.VisualStudio.Shell.ProvideServiceOverrideAttribute> . Notez qu’un seul remplacement d’un service est autorisé.  
   
-### <a name="adding-a-service"></a>Ajout d’un Service  
+### <a name="adding-a-service"></a>Ajout d’un service  
   
-1. 1.  Dans l’initialiseur de VSPackage, ajoutez le service et une méthode de rappel pour créer les services. Voici la modification à apporter au <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> méthode :  
+1. 1.  Dans l’initialiseur VSPackage, ajoutez le service et ajoutez une méthode de rappel pour créer les services. Voici la modification à apporter à la <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> méthode :  
   
     ```csharp  
     protected override void Initialize()  
@@ -107,7 +107,7 @@ Un VSPackage peut fournir des services qui les VSPackages autres peuvent utilise
     }  
     ```  
   
-2. Implémentez la méthode de rappel qui doit créer et retourner le service ou null s’il ne peut pas être créé.  
+2. Implémentez la méthode de rappel, qui doit créer et retourner le service, ou la valeur null si elle ne peut pas être créée.  
   
     ```  
     private object CreateService(IServiceContainer container, Type serviceType)  
@@ -119,9 +119,9 @@ Un VSPackage peut fournir des services qui les VSPackages autres peuvent utilise
     ```  
   
     > [!NOTE]
-    > Visual Studio peut rejeter une demande de fournir un service. Il le fait si un autre package Visual Studio fournit déjà le service.  
+    > Visual Studio peut rejeter une demande pour fournir un service. Il le fait si un autre VSPackage fournit déjà le service.  
   
-3. Vous pouvez maintenant obtenir le service et utiliser ses méthodes. Nous allons le montrer dans l’initialiseur, mais vous pouvez obtenir le service n’importe où que vous souhaitez utiliser le service.  
+3. Vous pouvez désormais accéder au service et utiliser ses méthodes. Nous allons l’afficher dans l’initialiseur, mais vous pouvez obtenir le service partout où vous souhaitez utiliser le service.  
   
     ```csharp  
     protected override void Initialize()  
@@ -141,6 +141,6 @@ Un VSPackage peut fournir des services qui les VSPackages autres peuvent utilise
      La valeur de `helloString` doit être « Hello ».  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour Bénéficiez d’un Service](../extensibility/how-to-get-a-service.md)   
- [À l’aide et fourniture de Services](../extensibility/using-and-providing-services.md)   
+ [Comment : obtenir un service](../extensibility/how-to-get-a-service.md)   
+ [Utilisation et fourniture de services](../extensibility/using-and-providing-services.md)   
  [Éléments fondamentaux du service](../extensibility/internals/service-essentials.md)

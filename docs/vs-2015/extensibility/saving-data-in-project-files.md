@@ -1,5 +1,5 @@
 ---
-title: L’enregistrement des données dans les fichiers projet | Microsoft Docs
+title: Enregistrement des données dans les fichiers projet | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,28 +13,28 @@ caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fc671963854e4fa0c2af763de5000fac82a839b8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432520"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839910"
 ---
 # <a name="saving-data-in-project-files"></a>Enregistrement de données dans les fichiers de projet
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Un sous-type de projet peut enregistrer et récupérer des données spécifiques au sous-type dans le fichier projet. Managed Package Framework (MPF) fournit deux interfaces pour accomplir cette tâche :  
+Un sous-type de projet peut enregistrer et récupérer des données spécifiques au sous-type dans le fichier projet. Managed package Framework (MPF) fournit deux interfaces pour accomplir cette tâche :  
   
-- Le <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> interface permet d’accéder aux valeurs de propriété à partir de la **MSBuild** section du fichier projet. Les méthodes fournies par <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> peut être appelée par n’importe quel utilisateur chaque fois que l’utilisateur doit charger ou enregistrer générez les données associées.  
+- L' <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> interface permet à d’accéder aux valeurs de propriété à partir de la section **MSBuild** du fichier projet. Les méthodes fournies par <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> peuvent être appelées par n’importe quel utilisateur chaque fois que l’utilisateur a besoin de charger ou d’enregistrer des données liées à la génération.  
   
-- Le <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> est utilisée pour conserver la build non les données associées au format XML libre. Les méthodes fournies par <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> sont appelées par [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] chaque fois que [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] doit conserver non-génération des données associées dans le fichier projet.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>Est utilisé pour rendre persistantes les données non liées à la génération au format XML libre. Les méthodes fournies par <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> sont appelées par [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] chaque fois que [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] doit rendre persistantes les données non liées à la génération dans le fichier projet.  
   
-  Pour plus d’informations sur la conservation de build et les données connexes non-build, consultez [persistance des données dans le fichier projet MSBuild](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md).  
+  Pour plus d’informations sur la façon de rendre persistants les données de build et non liées à la génération, consultez [persistance des données dans le fichier projet MSBuild](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md).  
   
-## <a name="saving-and-retrieving-build-related-data"></a>Enregistrement et génération de récupération des données liées  
+## <a name="saving-and-retrieving-build-related-data"></a>Enregistrement et récupération des données liées à la génération  
   
-#### <a name="to-save-a-build-related-data-in-the-project-file"></a>Pour enregistrer une version des données liées dans le fichier projet  
+#### <a name="to-save-a-build-related-data-in-the-project-file"></a>Pour enregistrer les données relatives à la build dans le fichier projet  
   
-- Appelez le <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> méthode pour enregistrer un chemin d’accès complet du fichier projet.  
+- Appelez la <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> méthode pour enregistrer un chemin d’accès complet au fichier projet.  
   
     ```  
     private SpecializedProject project;  
@@ -47,9 +47,9 @@ Un sous-type de projet peut enregistrer et récupérer des données spécifiques
         (uint)_PersistStorageType.PST_PROJECT_FILE, newFullPath));  
     ```  
   
-#### <a name="to-retrieve-build-related-data-from-the-project-file"></a>Pour récupérer la génération des données liées à partir du fichier de projet  
+#### <a name="to-retrieve-build-related-data-from-the-project-file"></a>Pour récupérer les données liées à la génération à partir du fichier projet  
   
-- Appelez le <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetPropertyValue%2A> méthode pour récupérer un chemin d’accès complet du fichier projet.  
+- Appelez la <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetPropertyValue%2A> méthode pour récupérer un chemin d’accès complet au fichier projet.  
   
     ```  
     private SpecializedProject project;  
@@ -62,11 +62,11 @@ Un sous-type de projet peut enregistrer et récupérer des données spécifiques
         (uint)_PersistStorageType.PST_PROJECT_FILE, out fullPath));  
     ```  
   
-## <a name="saving-and-retrieving-non-build-related-data"></a>Enregistrement et de récupération non-génération des données associées  
+## <a name="saving-and-retrieving-non-build-related-data"></a>Enregistrement et extraction de données non liées à la génération  
   
-#### <a name="to-save-non-build-related-data-in-the-project-file"></a>Pour enregistrer les non-génération des données liées dans le fichier projet  
+#### <a name="to-save-non-build-related-data-in-the-project-file"></a>Pour enregistrer les données non liées à la génération dans le fichier projet  
   
-1. Implémentez la <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.IsFragmentDirty%2A> méthode pour déterminer si un fragment XML a été modifiée depuis son dernier enregistrée dans son fichier actuel.  
+1. Implémentez la <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.IsFragmentDirty%2A> méthode pour déterminer si un fragment XML a été modifié depuis son dernier enregistrement dans son fichier actuel.  
   
     ```  
     public int IsFragmentDirty(uint storage, out int pfDirty)  
@@ -145,9 +145,9 @@ Un sous-type de projet peut enregistrer et récupérer des données spécifiques
     }  
     ```  
   
-#### <a name="to-retrieve-non-build-related-data-in-the-project-file"></a>Pour récupérer des données connexes de non-build dans le fichier projet  
+#### <a name="to-retrieve-non-build-related-data-in-the-project-file"></a>Pour récupérer les données non liées à la génération dans le fichier projet  
   
-1. Implémentez la <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.InitNew%2A> méthode pour initialiser les propriétés d’extension de projet et d’autres données indépendantes du build. Cette méthode est appelée s’il n’existe aucune donnée de configuration XML présente dans le fichier projet.  
+1. Implémentez la <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.InitNew%2A> méthode pour initialiser les propriétés d’extension de projet et d’autres données indépendantes de la génération. Cette méthode est appelée si aucune donnée de configuration XML n’est présente dans le fichier projet.  
   
     ```  
     public int InitNew(ref Guid guidFlavor, uint storage)  
@@ -208,7 +208,7 @@ Un sous-type de projet peut enregistrer et récupérer des données spécifiques
     ```  
   
 > [!NOTE]
-> Tous les exemples de code fournis dans cette rubrique font partie d’un exemple plus complet, [exemples d’extensibilité Visual Studio](../misc/vssdk-samples.md).  
+> Tous les exemples de code fournis dans cette rubrique font partie d’un exemple plus complet, [VSSDK Samples](../misc/vssdk-samples.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Données persistantes dans le fichier projet MSBuild](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)

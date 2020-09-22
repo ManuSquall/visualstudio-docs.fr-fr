@@ -11,39 +11,39 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: caf36e6713e49bb1470cd720ba2d04f689abba43
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436664"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839673"
 ---
 # <a name="sending-startup-events-after-a-launch"></a>Envoi d’événements de démarrage après un lancement
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Une fois que le moteur de débogage (dé) est attaché au programme, il renvoie une série d’événements de démarrage à la session de débogage.  
+Une fois que le moteur de débogage (DE) est attaché au programme, il envoie une série d’événements de démarrage à la session de débogage.  
   
- Événements de démarrage renvoyées à la session de débogage sont les suivants :  
+ Les événements de démarrage renvoyés à la session de débogage sont les suivants :  
   
-- Un événement de création de moteur.  
+- Événement de création de moteur.  
   
-- Un événement de création de programme.  
+- Événement de création de programme.  
   
-- Événements de chargement de module et de la création de thread.  
+- Événements de création de thread et de chargement de module.  
   
-- Un événement de fin de chargement envoyé lorsque le code est chargé et prêt à fonctionner, mais avant l’exécution de code  
+- Un événement de fin de chargement, envoyé lorsque le code est chargé et prêt à être exécuté, mais avant l’exécution de tout code  
   
   > [!NOTE]
-  > Lorsque cet événement se poursuit, les variables globales sont initialisés et exécuter des routines de démarrage.  
+  > Lorsque cet événement se poursuit, les variables globales sont initialisées et les routines de démarrage s’exécutent.  
   
-- Possible d’autres threads de la création et les événements de chargement de module.  
+- Autres événements de création de thread et de chargement de module possibles.  
   
-- Un événement de point d’entrée, qui signale que le programme a atteint son point d’entrée principal, tel que **Main** ou `WinMain`. Cet événement n’est pas envoyé en général, si le D’attache à un programme qui est déjà en cours d’exécution.  
+- Un événement de point d’entrée, qui indique que le programme a atteint son point d’entrée principal, par exemple **main** ou `WinMain` . Cet événement n’est généralement pas envoyé si le DE est attaché à un programme qui est déjà en cours d’exécution.  
   
-  Par programmation, l’Allemagne envoie d’abord le Gestionnaire de session de débogage (SDM) un [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) interface qui représente un événement de création de moteur, suivi d’un [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) , qui représente un événement de création de programme.  
+  Par programmation, la première adresse un gestionnaire DE débogage de session (SDM) à une interface [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) , qui représente un événement de création de moteur, suivi d’un [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md), qui représente un événement de création de programme.  
   
-  Cela est généralement suivi d’un ou plusieurs [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) les événements de la création de threads et [IDebugModuleLoadEvent2](../../extensibility/debugger/reference/idebugmoduleloadevent2.md) les événements de chargement de module.  
+  Il est généralement suivi d’un ou plusieurs événements de création de threads [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) et d’événements de chargement de module [IDebugModuleLoadEvent2](../../extensibility/debugger/reference/idebugmoduleloadevent2.md) .  
   
-  Lorsque le code est chargé et prêt à s’exécuter, mais avant l’exécution de n’importe quel code, l’Allemagne envoie le SDM un [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) événement de fin de charge. Pour finir, si le programme n’est pas déjà en cours d’exécution, l’Allemagne envoie un [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) événement de point d’entrée, signalant que le programme a atteint son point d’entrée principal et est prêt pour le débogage.  
+  Lorsque le code est chargé et prêt à être exécuté, mais avant l’exécution de tout code, le pour envoie un événement DE chargement [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) de l’exécution du SDM. Enfin, si le programme n’est pas déjà en cours d’exécution, le service DE envoie un événement DE point d’entrée [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) , en signalant que le programme a atteint son point d’entrée principal et est prêt pour le débogage.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Contrôle de l’exécution](../../extensibility/debugger/control-of-execution.md)   

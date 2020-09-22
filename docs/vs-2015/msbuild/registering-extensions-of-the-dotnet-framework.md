@@ -14,13 +14,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a5963faa5acb72ab0c94ca6b346456d83276e361
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445232"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "90840157"
 ---
-# <a name="registering-extensions-of-the-net-framework"></a>Inscrire des extensions du .NET Framework
+# <a name="registering-extensions-of-the-net-framework"></a>Inscrire des extensions du .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez développer un assembly qui étend une version spécifique de .NET Framework. Pour permettre l’affichage de l’assembly dans la boîte de dialogue **Ajouter des références** de Visual Studio, vous devez ajouter le dossier qui le contient dans le Registre système.  
@@ -35,4 +35,4 @@ Vous pouvez développer un assembly qui étend une version spécifique de .NET 
  Pour inscrire un assembly 32 bits sur un ordinateur 64 bits, utilisez le nœud Wow6432, par exemple : HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\v4.0.21006\AssemblyFoldersEx\TreyResearch\\.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Intégration de Visual Studio (MSBuild)](../msbuild/visual-studio-integration-msbuild.md)
+ [Intégration de Visual Studio](../msbuild/visual-studio-integration-msbuild.md)

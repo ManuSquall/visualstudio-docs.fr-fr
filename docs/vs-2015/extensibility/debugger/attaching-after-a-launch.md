@@ -11,47 +11,47 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 693cf6d746f51862415f2f30e46d48a998047f14
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437436"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840192"
 ---
 # <a name="attaching-after-a-launch"></a>Attachement après un lancement
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Une fois un programme a été lancé, la session de débogage est prête à attacher le moteur de débogage (dé) dudit programme.  
+Une fois qu’un programme a été lancé, la session de débogage est prête à attacher le moteur de débogage (DE) à ce programme.  
   
 ## <a name="design-decisions"></a>Décisions de conception  
- Étant donné que la communication est plus facile au sein d’un espace d’adressage partagé, vous devez décider s’il est plus logique pour faciliter la communication entre la session de débogage et l’Allemagne, ou entre l’Allemagne et le programme. Le choix entre les éléments suivants :  
+ Étant donné que la communication est plus facile dans un espace d’adressage partagé, vous devez décider s’il est plus logique de faciliter la communication entre la session de débogage et le ou entre le et le programme. Choisissez l’une des options suivantes :  
   
-- S’il est plus logique pour faciliter la communication entre la session de débogage et l’Allemagne, la session de débogage crée l’Allemagne et vous demande de l’Allemagne à joindre au programme. Cela laisse la session de débogage et DE ensemble dans un espace d’adressage et l’environnement d’exécution et le programme dans un autre.  
+- S’il est plus logique de faciliter la communication entre la session DE débogage et le, la session de débogage co-crée le DE et demande au DE s’attacher au programme. Cela laisse la session de débogage et regroupe dans un espace d’adressage, et l’environnement d’exécution et le programme dans un autre.  
   
-- S’il est plus logique pour faciliter la communication entre l’Allemagne et le programme, puis l’environnement d’exécution crée l’Allemagne. Cela laisse le SDM dans un espace d’adressage et l’Allemagne, environnement d’exécution et programme ensemble dans un autre. Ceci est typique d’un dé est implémentée avec un interpréteur pour exécuter des langages de script.  
+- S’il est plus logique de faciliter la communication entre le et le programme, l’environnement d’exécution co-crée le DE. Cela laisse le SDM dans un espace d’adressage, et l’environnement DE, d’exécution et le programme dans un autre. Il s’agit généralement d’un de qui est implémenté avec un interpréteur pour exécuter des langages de script.  
   
     > [!NOTE]
-    > Comment le D’attache au programme est dépend de l’implémentation. Communication entre l’Allemagne et le programme est également dépend de l’implémentation.  
+    > La façon dont le s’attache au programme dépend de l’implémentation. La communication entre le et le programme dépend également de l’implémentation.  
   
 ## <a name="implementation"></a>Implémentation  
- Par programmation, lorsque le Gestionnaire de session de débogage (SDM) reçoit d’abord le [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) objet qui représente le programme doit être lancé, il appelle le [Attach](../../extensibility/debugger/reference/idebugprogram2-attach.md) méthode, en lui transmettant un [ IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md) objet, qui est ultérieur utilisé pour transmettre des événements de débogage vers le SDM. Le `IDebugProgram2::Attach` méthode appelle ensuite la [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) (méthode). Pour plus d’informations sur la façon dont le SDM reçoit le `IDebugProgram2` l’interface, consultez [notification du Port](../../extensibility/debugger/notifying-the-port.md).  
+ Par programmation, lorsque le gestionnaire de débogage de session (SDM) reçoit d’abord l’objet [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) qui représente le programme à lancer, il appelle la méthode [Attach](../../extensibility/debugger/reference/idebugprogram2-attach.md) , en lui passant un objet [IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md) , qui est ensuite utilisé pour passer les événements de débogage au SDM. La `IDebugProgram2::Attach` méthode appelle ensuite la méthode [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) . Pour plus d’informations sur la façon dont le SDM reçoit l' `IDebugProgram2` interface, consultez [notification du port](../../extensibility/debugger/notifying-the-port.md).  
   
- Si votre dé doit s’exécuter dans le même espace d’adressage que le programme en cours de débogage, en règle générale, car le DE fait partie d’un interpréteur exécutant un script, le `IDebugProgramNodeAttach2::OnAttach` méthode retourne `S_FALSE`, indiquant qu’il terminé le processus d’attachement.  
+ Si votre DE doit s’exécuter dans le même espace d’adressage que le programme en cours de débogage, en général parce que le DE fait partie d’un interpréteur qui exécute un script, la `IDebugProgramNodeAttach2::OnAttach` méthode retourne `S_FALSE` , indiquant qu’elle a terminé le processus d’attachement.  
   
- Si, en revanche, l’Allemagne s’exécute dans l’espace d’adressage du SDM, la `IDebugProgramNodeAttach2::OnAttach` méthode retourne `S_OK` ou [IDebugProgramNodeAttach2](../../extensibility/debugger/reference/idebugprogramnodeattach2.md) interface n’est pas implémentée tout en la [IDebugProgramNode2 ](../../extensibility/debugger/reference/idebugprogramnode2.md) objet associée au programme en cours de débogage. Dans ce cas, le [attacher](../../extensibility/debugger/reference/idebugengine2-attach.md) méthode est appelée par la suite pour terminer l’opération d’attachement.  
+ Si, en revanche, le DE s’exécute dans l’espace d’adressage du SDM, la `IDebugProgramNodeAttach2::OnAttach` méthode retourne `S_OK` ou l’interface [IDebugProgramNodeAttach2](../../extensibility/debugger/reference/idebugprogramnodeattach2.md) n’est pas implémentée du tout sur l’objet [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) associé au programme en cours de débogage. Dans ce cas, la méthode d' [attachement](../../extensibility/debugger/reference/idebugengine2-attach.md) est finalement appelée pour terminer l’opération d’attachement.  
   
- Dans ce cas, vous devez appeler le [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md) méthode sur le `IDebugProgram2` objet qui a été passé à la `IDebugEngine2::Attach` (méthode), le magasin de la `GUID` dans le programme local de l’objet et retournez cette `GUID` lorsque le `IDebugProgram2::GetProgramId` méthode est appelée par la suite sur cet objet. Le `GUID` est utilisé pour identifier de manière unique le programme entre les différents composants de débogage.  
+ Dans ce dernier cas, vous devez appeler la méthode [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md) sur l' `IDebugProgram2` objet qui a été passé à la `IDebugEngine2::Attach` méthode, stocker le `GUID` dans l’objet programme local et le retourner `GUID` lorsque la `IDebugProgram2::GetProgramId` méthode est appelée par la suite sur cet objet. Le `GUID` est utilisé pour identifier le programme de manière unique parmi les différents composants de débogage.  
   
- Notez que dans le cas de la `IDebugProgramNodeAttach2::OnAttach` méthode retournant `S_FALSE`, le `GUID` à utiliser pour le programme est passé à cette méthode, il le `IDebugProgramNodeAttach2::OnAttach` méthode qui définit la `GUID` sur l’objet de programme local.  
+ Notez que, dans le cas de la `IDebugProgramNodeAttach2::OnAttach` méthode qui retourne `S_FALSE` , le `GUID` à utiliser pour le programme est passé à cette méthode et c’est la `IDebugProgramNodeAttach2::OnAttach` méthode qui définit le `GUID` sur l’objet programme local.  
   
- L’Allemagne est maintenant attaché au programme et prêt à envoyer les événements de démarrage.  
+ Le DE est maintenant attaché au programme et prêt à envoyer des événements de démarrage.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Attachement directement à un programme](../../extensibility/debugger/attaching-directly-to-a-program.md)   
- [Notification du Port](../../extensibility/debugger/notifying-the-port.md)   
+ [Attachement direct à un programme](../../extensibility/debugger/attaching-directly-to-a-program.md)   
+ [Notification du port](../../extensibility/debugger/notifying-the-port.md)   
  [Tâches de débogage](../../extensibility/debugger/debugging-tasks.md)   
  [IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md)   
  [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)   
- [Attach](../../extensibility/debugger/reference/idebugprogram2-attach.md)   
+ [Attacher](../../extensibility/debugger/reference/idebugprogram2-attach.md)   
  [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)   
  [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)   
  [IDebugProgramNodeAttach2](../../extensibility/debugger/reference/idebugprogramnodeattach2.md)   

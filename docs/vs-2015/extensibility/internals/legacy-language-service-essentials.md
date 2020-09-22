@@ -1,5 +1,5 @@
 ---
-title: Éléments fondamentaux du Service de langage ancien | Microsoft Docs
+title: Notions fondamentales du service de langage hérité | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,37 +14,37 @@ caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a3926ff84f3b2e6415df1ca7333409c05d839685
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436266"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839297"
 ---
 # <a name="legacy-language-service-essentials"></a>Éléments fondamentaux du service de langage hérité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous devez fournir un service de langage pour intégrer un langage de programmation dans Visual Studio. Cette rubrique décrit les fonctionnalités disponibles dans les services de langage hérité.  
+Vous devez fournir un service de langage pour intégrer un langage de programmation dans Visual Studio. Cette rubrique explique les fonctionnalités disponibles dans les services de langage hérités.  
   
- Services de langage hérité sont implémentés en tant que partie d’un VSPackage, mais la plus récente pour implémenter des fonctionnalités de service de langage consiste à utiliser des extensions MEF. Pour en savoir plus sur la nouvelle façon d’implémenter un service de langage, consultez [éditeur et les Extensions de Service de langage](../../extensibility/editor-and-language-service-extensions.md).  
+ Les services de langage hérités sont implémentés dans le cadre d’un VSPackage, mais la meilleure façon d’implémenter les fonctionnalités du service de langage consiste à utiliser les extensions MEF. Pour en savoir plus sur la nouvelle façon d’implémenter un service de langage, consultez [éditeur et extensions du service de langage](../../extensibility/editor-and-language-service-extensions.md).  
   
 > [!NOTE]
-> Nous vous recommandons de commencer à utiliser le nouvel éditeur API dès que possible. Cela améliorer les performances de votre service de langage et vous permettent de tirer parti des nouvelles fonctionnalités de l’éditeur.  
+> Nous vous recommandons de commencer à utiliser la nouvelle API Editor dès que possible. Cela améliore les performances de votre service de langage et vous permet de tirer parti des nouvelles fonctionnalités de l’éditeur.  
   
- Services de langage hérité fournissent les fonctionnalités suivantes :  
-  
-|Fonctionnalité|Description|  
-|-------------|-----------------|  
-|Mise en couleur de la syntaxe|Provoque l’affichage de l’éditeur pour afficher les différentes couleurs et styles de police pour différents éléments d’un langage. Cette distinction peut rendre plus facile à lire et modifier des fichiers.<br /><br /> Pour obtenir des informations générales, consultez [la coloration de syntaxe dans un Service de langage hérité](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md).<br /><br /> Pour plus d’informations sur cette fonctionnalité dans l’infrastructure de package managé (MPF), consultez [couleurs de syntaxe dans un Service de langage hérité](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md).|  
-|Compléter automatiquement les instructions|Termine une instruction ou le mot clé que l’utilisateur a commencé à taper. Saisie semi-automatique des instructions permet aux utilisateurs d’entrer des instructions difficile plus facilement, avec moins de frappe et moins de risques d’erreur.<br /><br /> Pour obtenir des informations générales, consultez [saisie semi-automatique des instructions dans un Service de langage hérité](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md).<br /><br /> Pour plus d’informations sur cette fonctionnalité dans le MPF, consultez [semi-automatique dans un Service de langage hérité](../../extensibility/internals/word-completion-in-a-legacy-language-service.md).|  
-|Accolades correspondantes|Points importants des caractères appariés telles que des accolades. Lorsque l’utilisateur tape un caractère fermant tel que «} », correspondance d’accolade met en évidence le correspondantes ouverture caractère, tel que « { ». Lorsqu’il existe plusieurs niveaux de caractères englobants, cette fonctionnalité aide les utilisateurs à confirmer que les caractères englobants sont correctement appariées.<br /><br /> Pour plus d’informations sur cette fonctionnalité dans le MPF, consultez [accolades correspondantes dans un Service de langage hérité](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md).|  
-|Info-bulles d’informations de paramètre|Affiche une liste de signatures que possible pour la méthode surchargée qui l’actuellement saisie utilisateur.<br /><br /> Pour obtenir des informations générales, consultez [informations sur les paramètres dans un Service de langage hérité](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md).<br /><br /> Pour plus d’informations sur cette fonctionnalité dans le MPF, consultez [informations sur les paramètres dans un Service de langage hérité](../../extensibility/internals/parameter-info-in-a-legacy-language-service2.md).|  
-|Marqueurs d’erreur|Affiche un soulignement ondulé rouge, également appelé une ligne ondulé, sous le texte qui a une syntaxe incorrect. Marqueurs d’erreur sont généralement utilisés pour informer les utilisateurs de mots clés mal orthographiés, des parenthèses non fermés, des caractères non valides et des erreurs similaires.<br /><br /> Dans les classes MPF, les marqueurs d’erreur sont gérées automatiquement dans le <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddError%2A> méthode de la <xref:Microsoft.VisualStudio.Package.AuthoringSink> classe.|  
-  
- La plupart de ces fonctionnalités requièrent le service de langage pour analyser le code source. Vous pouvez souvent réutiliser les jetons et l’analyse du code pour votre compilateur ou l’interpréteur.  
-  
- Les fonctionnalités suivantes sont liées à la prise en charge des langages de programmation mais ne font pas partie des services de langage :  
+ Les services de langage hérités offrent les fonctionnalités suivantes :  
   
 |Fonctionnalité|Description|  
 |-------------|-----------------|  
-|Évaluateurs d’expression|Prend en charge la [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] débogueur en validant les points d’arrêt et en fournissant une liste d’expressions à afficher dans le **automatique** fenêtre de débogage.<br /><br /> Pour plus d’informations, consultez [prise en charge du Service de langage pour le débogage](../../extensibility/internals/language-service-support-for-debugging.md).|  
-|Outils de consultation de symbole|Prend en charge **Explorateur d’objets**, **affichage de classes**, **Explorateur d’appels**, et **symbole résultats de la recherche**.|
+|Mise en couleur de la syntaxe|Fait en sorte que l’affichage de l’éditeur affiche des couleurs et des styles de police différents pour les différents éléments d’une langue. Cette différenciation peut faciliter la lecture et la modification des fichiers.<br /><br /> Pour obtenir des informations générales, consultez [coloration de la syntaxe dans un service de langage hérité](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md).<br /><br /> Pour plus d’informations sur cette fonctionnalité dans Managed package Framework (MPF), consultez [colorisation de syntaxe dans un service de langage hérité](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md).|  
+|Compléter automatiquement les instructions|Termine une instruction ou un mot clé que l’utilisateur a commencé à taper. La saisie semi-automatique des instructions aide les utilisateurs à entrer plus facilement des instructions difficiles, avec moins de frappe et moins de risques d’erreurs.<br /><br /> Pour obtenir des informations générales, consultez [saisie semi-automatique des instructions dans un service de langage hérité](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md).<br /><br /> Pour plus d’informations sur cette fonctionnalité dans le MPF, consultez [saisie semi-automatique des mots dans un service de langage hérité](../../extensibility/internals/word-completion-in-a-legacy-language-service.md).|  
+|Correspondance d’accolade|Met en surbrillance les caractères associés tels que les accolades. Lorsque l’utilisateur tape un caractère de fermeture tel que « } », la correspondance d’accolade met en surbrillance le caractère d’ouverture correspondant, tel que « { ». Lorsqu’il existe plusieurs niveaux de caractères englobants, cette fonctionnalité permet aux utilisateurs de confirmer que les caractères englobants sont correctement appariés.<br /><br /> Pour plus d’informations sur cette fonctionnalité dans le MPF, consultez [Accolades correspondantes dans un service de langage hérité](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md).|  
+|Info-bulles d’informations sur les paramètres|Affiche la liste des signatures possibles pour la méthode surchargée actuellement tapée par l’utilisateur.<br /><br /> Pour obtenir des informations générales, consultez informations sur les [paramètres dans un service de langage hérité](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md).<br /><br /> Pour plus d’informations sur cette fonctionnalité dans le MPF, consultez informations sur les [paramètres dans un service de langage hérité](../../extensibility/internals/parameter-info-in-a-legacy-language-service2.md).|  
+|Marqueurs d’erreur|Affiche une ligne ondulée rouge, également appelée trait ondulé, sous le texte dont la syntaxe est incorrecte. Les marqueurs d’erreur sont généralement utilisés pour que les utilisateurs soient informés des mots clés mal orthographiés, des parenthèses non fermées, des caractères non valides et des erreurs similaires.<br /><br /> Dans les classes MPF, les marqueurs d’erreur sont gérés automatiquement dans la <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddError%2A> méthode de la <xref:Microsoft.VisualStudio.Package.AuthoringSink> classe.|  
+  
+ La plupart de ces fonctionnalités nécessitent que le service de langage analyse le code source. Vous pouvez souvent réutiliser le code de création de jetons et d’analyse pour votre compilateur ou votre interpréteur.  
+  
+ Les fonctionnalités suivantes sont liées à la prise en charge des langages de programmation, mais ne font pas partie des services de langage :  
+  
+|Fonctionnalité|Description|  
+|-------------|-----------------|  
+|Évaluateur d’expression|Prend en charge le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] débogueur en validant des points d’arrêt et en fournissant une liste d’expressions à afficher dans la fenêtre de débogage **automatique** .<br /><br /> Pour plus d’informations, consultez [prise en charge du service de langage pour le débogage](../../extensibility/internals/language-service-support-for-debugging.md).|  
+|Outils de navigation de symboles|Prend en charge l' **Explorateur d’objets**, les **Affichage de classes**, les **Explorateur d’appels**et les résultats de **recherche de symbole**.|

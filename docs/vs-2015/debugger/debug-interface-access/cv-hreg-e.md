@@ -14,19 +14,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ace9f28c0726a762e0ffe2abcf0538c5a629b06c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443504"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840069"
 ---
-# <a name="cvhrege"></a>CV_HREG_e
+# <a name="cv_hreg_e"></a>CV_HREG_e
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Spécifie un Registre de la cible.  
+Spécifie un registre cible.  
   
 > [!NOTE]
-> Étant donné que le `CV_HREG_e` énumération est trop volumineuse pour dupliquer dans son intégralité ici, une version abrégée est fournie en tant que référence. Entrées manquantes sont indiquées en italique. L’énumération complète est disponible dans le fichier d’en-tête cvconst.h.  
+> Étant donné que l' `CV_HREG_e` énumération est trop volumineuse pour être dupliquée dans son intégralité ici, une version abrégée est fournie en tant que référence. Les entrées manquantes sont nonotées en italique. L’énumération complète est disponible dans le fichier d’en-tête cvconst. h.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -413,42 +413,42 @@ enum CV_HREG_e { 
   
 ## <a name="elements"></a>Éléments  
  CV_REG_*  
- Registres utilisés par Intel 80 x 86 et p-code ix86 processeurs.  
+ Registres utilisés par les processeurs Intel 80x86 et ix86, ainsi que p-code.  
   
  CV_R68_*  
- Registres utilisés par le processeur de 68K.  
+ Registres utilisés par le processeur 68K.  
   
  CV_M4_*  
- Registres utilisés par le processeur série MIPS 4000.  
+ Registres utilisés par le processeur de la série MIPS 4000.  
   
  CV_ALPHA_*  
- Registres utilisés par le processeur série Digital Equipment Corporation Alpha AXP.  
+ Registres utilisés par le processeur de série Digital Equipment Corporation Alpha AXP.  
   
  CV_PPC_*  
- Registres utilisés par le processeur/IBM Motorola PowerPC.  
+ Registres utilisés par le processeur Motorola/IBM PowerPC.  
   
  CV_SH3_ * et CV_SH_\*  
- Registres utilisés par Hitachi SH3 et Hitachi SH processeur série.  
+ Registres utilisés par Hitachi SH3 et le processeur de la série Hitachi SH.  
   
  CV_ARM_*  
- Registres utilisés par les processeurs de Advanced RISC Machine (ARM).  
+ Registres utilisés par les processeurs ARM (Advanced RISC machine).  
   
  CV_IA64_*  
- Registres utilisés par les processeurs de série Intel IA64.  
+ Registres utilisés par les processeurs de la série Intel IA64.  
   
  CV_TRI_*  
- Registres utilisés par le processeur Infineon Technologies TriCore.  
+ Registres utilisés par le processeur TriCore Infineon Technologies.  
   
  CV_AM33_*  
- Registres utilisées par Matsushita/Panasonic AM33 et associées aux processeurs.  
+ Registres utilisés par Matsushita/Panasonic AM33 et les processeurs associés.  
   
  CV_M32R_*  
- Registres utilisés par le processeur Mitsubishi M32R.  
+ Registres utilisés par le processeur M32R Mitsubishi.  
   
-## <a name="remarks"></a>Notes  
- Chaque type de processeur utilise son propre jeu de registres.  
+## <a name="remarks"></a>Remarques  
+ Chaque type de processeur utilise son propre ensemble unique de registres.  
   
- Les valeurs dans cette énumération sont passées aux méthodes suivantes :  
+ Les valeurs de cette énumération sont passées aux méthodes suivantes :  
   
 - [IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)  
   
@@ -460,13 +460,13 @@ enum CV_HREG_e { 
   
 - [IDiaStackFrame::get_registerValue](../../debugger/debug-interface-access/idiastackframe-get-registervalue.md)  
   
-## <a name="requirements"></a>Configuration requise :  
- En-tête : cvconst.h  
+## <a name="requirements"></a>Conditions requises :  
+ En-tête : cvconst. h  
   
 ## <a name="see-also"></a>Voir aussi  
  [Énumérations et structures](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)   
- [IDiaStackWalkFrame::put_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)   
- [IDiaStackWalkHelper::get_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-get-registervalue.md)   
- [IDiaStackWalkHelper::put_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-put-registervalue.md)   
+ [IDiaStackWalkFrame :: get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)   
+ [IDiaStackWalkFrame ::p ut_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)   
+ [IDiaStackWalkHelper :: get_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-get-registervalue.md)   
+ [IDiaStackWalkHelper ::p ut_registerValue](../../debugger/debug-interface-access/idiastackwalkhelper-put-registervalue.md)   
  [IDiaStackFrame::get_registerValue](../../debugger/debug-interface-access/idiastackframe-get-registervalue.md)

@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6821b6a6504fd82e0e6180149120b71bc2daf47c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444479"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839386"
 ---
-# <a name="cvcputypee"></a>CV_CPU_TYPE_e
+# <a name="cv_cpu_type_e"></a>CV_CPU_TYPE_e
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Spécifie le processeur cible.  
@@ -98,10 +98,10 @@ typedef enum CV_CPU_TYPE_e { 
 ```  
   
 ## <a name="remarks"></a>Notes  
- Les valeurs dans cette énumération sont retournées par un appel à la [IDiaSymbol::get_platform](../../debugger/debug-interface-access/idiasymbol-get-platform.md) (méthode).  
+ Les valeurs de cette énumération sont retournées par un appel à la méthode [IDiaSymbol :: get_Platform](../../debugger/debug-interface-access/idiasymbol-get-platform.md) .  
   
-## <a name="requirements"></a>Configuration requise  
- En-tête : cvconst.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : cvconst. h  
   
 ## <a name="see-also"></a>Voir aussi  
  [Énumérations et structures](../../debugger/debug-interface-access/enumerations-and-structures.md)   

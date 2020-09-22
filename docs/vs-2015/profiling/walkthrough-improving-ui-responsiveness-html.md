@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Amélioration de la réactivité de l’interface utilisateur (HTML) | Microsoft Docs'
+title: 'Procédure pas à pas : amélioration de la réactivité de l’interface utilisateur (HTML) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,29 +20,29 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7224dc1ddcffc203c930a3ead01c2f541af2122f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433172"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839485"
 ---
-# <a name="walkthrough-improving-ui-responsiveness-html"></a>Procédure pas à pas : Amélioration de la réactivité de l’interface utilisateur (HTML)
+# <a name="walkthrough-improving-ui-responsiveness-html"></a>Procédure pas à pas : amélioration de la réactivité de l'interface utilisateur (HTML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette procédure pas à pas vous guide dans le processus d’identification et de résolution d’un problème de performance à l’aide du [profileur de réactivité de l’interface utilisateur XAML](../profiling/html-ui-responsiveness.md). Le profileur est disponible dans Visual Studio pour les applications universelles Windows et du Windows Store en JavaScript. Dans ce scénario, vous créez une application de test de performance qui met à jour les éléments DOM trop fréquemment, et vous utilisez le profileur pour identifier et résoudre ce problème.  
   
 ### <a name="creating-and-running-the-performance-test-app"></a>Création et exécution de l'application de test de performance  
   
-1. Dans Visual Studio, créez un projet JavaScript Windows universel. (Sélectionnez **Fichier / Nouveau / Projet**. Dans le volet gauche, sélectionnez **JavaScript** , **Windows**, **Windows 10**, puis **Universel** ou **Windows Phone**.)  
+1. Dans Visual Studio, créez un projet JavaScript Windows universel. (Sélectionnez **fichier/nouveau/projet**. Dans le volet gauche, sélectionnez **JavaScript** , **Windows**, **Windows 10**, puis **Universel** ou **Windows Phone**.)  
   
 2. > [!IMPORTANT]
     > Les résultats du diagnostic présentés dans cette rubrique concernent une application Windows 8.  
   
 3. Dans le volet central, sélectionnez un des modèles de projet vide, comme **Application vide**.  
   
-4. Dans la zone **Nom**, spécifiez un nom, par exemple `JS_Perf_Tester`, puis choisissez **OK**.  
+4. Dans la zone **Nom** , spécifiez un nom, par exemple `JS_Perf_Tester`, puis choisissez **OK**.  
   
-5. Dans l’**Explorateur de solutions**, ouvrez default.html et collez le code suivant entre les balises \<body> :  
+5. Dans **Explorateur de solutions**, ouvrez default.html et collez le code suivant entre les \<body> Balises :  
   
     ```html  
     <div class="wrapper">  
@@ -150,13 +150,13 @@ Cette procédure pas à pas vous guide dans le processus d’identification et d
   
 8. Appuyez sur la touche F5 pour démarrer le débogage. Vérifiez que le bouton **En attente de valeurs** apparaît dans la page.  
   
-9. Choisissez **En attente de valeurs** et vérifiez que le texte et la couleur du bouton sont mis à jour toutes les secondes. Ceci est normal.  
+9. Choisissez **En attente de valeurs** et vérifiez que le texte et la couleur du bouton sont mis à jour toutes les secondes. C'est la procédure normale.  
   
-10. Basculez à nouveau vers Visual Studio (Alt+Tab) et appuyez sur Maj + F5 pour arrêter le débogage.  
+10. Basculez à nouveau vers Visual Studio (Alt+Tab) et appuyez sur Maj + F5 pour arrêter le débogage.  
   
      Maintenant que vous avez vérifié que l'application s'exécute, vous pouvez examiner ses performances à l'aide du profileur.  
   
-### <a name="analyzing-performance-data"></a>Analyse des données de performance  
+### <a name="analyzing-performance-data"></a>Analyse des données de performances  
   
 1. Dans la barre d’outils **Déboguer**, dans la liste **Démarrer le débogage**, sélectionnez un des Windows Phone Emulator ou **Simulateur**.  
   
@@ -184,7 +184,7 @@ Cette procédure pas à pas vous guide dans le processus d’identification et d
   
 7. Sélectionnez une seconde partie un-à-deux au milieu du graphique d'utilisation de l'UC (cliquez et faites glisser ou utilisez les touches de tabulation et les touches fléchées). L'illustration suivante montre le graphique d'utilisation de l'UC lorsqu'une sélection a été effectuée. La zone non grisée correspond à la sélection.  
   
-    ![Graphique d’utilisation du processeur](../profiling/media/js-htmlviz-app-cpu.png "JS_HTMLViz_App_CPU")  
+    ![Graphique d’utilisation de l’UC](../profiling/media/js-htmlviz-app-cpu.png "JS_HTMLViz_App_CPU")  
   
 8. Choisissez **Zoom avant**.  
   
@@ -200,9 +200,9 @@ Cette procédure pas à pas vous guide dans le processus d’identification et d
   
 9. Utilisez le menu contextuel (ou cliquez avec le bouton droit) pour sélectionner l’un des événements `Timer` dans le volet inférieur, puis sélectionnez **Filtrer jusqu’à l’événement**. L'illustration suivante présente un exemple de détails standard pour un des événements `Timer` dans l'application de tests.  
   
-     ![Événement de la minuterie](../profiling/media/js-htmlviz-app-timer.png "JS_HTMLViz_App_Timer")  
+     ![Événement de minuteur](../profiling/media/js-htmlviz-app-timer.png "JS_HTMLViz_App_Timer")  
   
-     Différentes informations peuvent être collectées à partir des données. Exemple :  
+     Différentes informations peuvent être collectées à partir des données. Par exemple :  
   
     - Chaque événement `Timer`, coloré pour être identifié comme un événement de script, inclut un appel à `document.createElement`, suivi d'un calcul de style et d'un appel à `style.backgroundColor` et `appendChild()`.  
   

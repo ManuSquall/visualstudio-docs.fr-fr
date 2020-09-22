@@ -12,13 +12,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 97705dab6f11ca0d9d51c27bfc56d315b454bc52
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64837699"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840221"
 ---
-# <a name="markers-report"></a>Marqueurs, rapport
+# <a name="markers-report"></a>Rapport des marqueurs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Le rapport Marqueurs répertorie les marqueurs dans le délai affiché.  Des marqueurs peuvent apparaître ou disparaître en fonction des mouvements panoramiques, des zooms ou des masquages de couloirs effectués. Le rapport contient les informations suivantes sur chaque marqueur :  

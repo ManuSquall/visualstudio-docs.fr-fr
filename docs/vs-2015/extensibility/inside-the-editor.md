@@ -1,5 +1,5 @@
 ---
-title: À l’intérieur de l’éditeur | Microsoft Docs
+title: Dans l’éditeur | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,105 +11,105 @@ caps.latest.revision: 32
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8dfc751b040bd775c3f55ff7db804c2a16d45d5f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63414617"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840222"
 ---
 # <a name="inside-the-editor"></a>Dans l’éditeur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-L’éditeur est composée d’un nombre de différents sous-systèmes, lesquels sont conçus pour empêcher l’éditeur de texte modèle distinct l’affichage de texte et l’interface utilisateur.  
+L’éditeur est composé d’un certain nombre de sous-systèmes différents, conçus pour conserver le modèle de texte de l’éditeur distinct de l’affichage de texte et de l’interface utilisateur.  
   
  Ces sections décrivent les différents aspects de l’éditeur :  
   
 - [Vue d’ensemble des sous-systèmes](../extensibility/inside-the-editor.md#overview)  
   
-- [Le modèle de texte](../extensibility/inside-the-editor.md#textmodel)  
+- [Modèle de texte](../extensibility/inside-the-editor.md#textmodel)  
   
-- [L’affichage de texte](../extensibility/inside-the-editor.md#textview)  
+- [Affichage de texte](../extensibility/inside-the-editor.md#textview)  
   
   Ces sections décrivent les fonctionnalités de l’éditeur :  
   
-- [Balises et les classifieurs](../extensibility/inside-the-editor.md#tagsandclassifiers)  
+- [Balises et classifieurs](../extensibility/inside-the-editor.md#tagsandclassifiers)  
   
 - [Ornements](../extensibility/inside-the-editor.md#adornments)  
   
 - [Projection](../extensibility/inside-the-editor.md#projection)  
   
-- [Mode Plan](../extensibility/inside-the-editor.md#outlining)  
+- [mode Plan](../extensibility/inside-the-editor.md#outlining)  
   
-- [Liaisons de souris](../extensibility/inside-the-editor.md#mousebindings)  
+- [Liaisons de la souris](../extensibility/inside-the-editor.md#mousebindings)  
   
 - [Opérations de l’éditeur](../extensibility/inside-the-editor.md#editoroperations)  
   
 - [IntelliSense](../extensibility/inside-the-editor.md#intellisense)  
   
-## <a name="overview"></a> Vue d’ensemble des sous-systèmes  
+## <a name="overview-of-the-subsystems"></a><a name="overview"></a> Vue d’ensemble des sous-systèmes  
   
 ### <a name="text-model-subsystem"></a>Sous-système de modèle de texte  
- Le sous-système de modèle de texte est responsable représentant le texte et l’activation de sa manipulation. Le sous-système de modèle de texte contient le <xref:Microsoft.VisualStudio.Text.ITextBuffer> interface, qui décrit la séquence de caractères qui doit être affichée par l’éditeur. Ce texte peut être modifié, suivi et manipulé à bien des égards. Le modèle de texte fournit également des types pour les aspects suivants :  
+ Le sous-système de modèle de texte est responsable de la représentation du texte et de l’activation de sa manipulation. Le sous-système de modèle de texte contient l' <xref:Microsoft.VisualStudio.Text.ITextBuffer> interface, qui décrit la séquence de caractères qui doit être affichée par l’éditeur. Ce texte peut être modifié, suivi et manipulé de nombreuses façons. Le modèle de texte fournit également des types pour les aspects suivants :  
   
-- Un service qui associe le texte avec des fichiers et gère la lecture et de les écrire dans le système de fichiers.  
+- Service qui associe du texte à des fichiers et gère la lecture et l’écriture dans le système de fichiers.  
   
-- Un service de différenciation qui recherche la grande différence entre deux séquences d’objets.  
+- Service de différenciation qui recherche les différences minimales entre deux séquences d’objets.  
   
-- Un système qui décrit le texte dans une mémoire tampon en termes de sous-ensembles du texte dans les autres mémoires tampons.  
+- Système pour décrire le texte dans une mémoire tampon en termes de sous-ensembles du texte dans d’autres mémoires tampons.  
   
-  Le sous-système de modèle de texte est libre de concepts d’interface (UI) utilisateur. Par exemple, il n’est pas responsable de la mise en forme du texte ou de la disposition du texte, et il n’a aucune connaissance des ornements visuels qui peuvent être associées à du texte.  
+  Le sous-système de modèle de texte est exempt de concepts de l’interface utilisateur. Par exemple, il n’est pas responsable de la mise en forme du texte ou de la disposition du texte, et il n’a aucune connaissance des ornements visuels qui peuvent être associés au texte.  
   
-  Les types publics du sous-système de modèle de texte sont contenus dans Microsoft.VisualStudio.Text.Data.dll et Microsoft.VisualStudio.CoreUtilitiy.dll, qui dépendent uniquement de la bibliothèque de classe de base .NET Framework et de Managed Extensibility Framework (MEF).  
+  Les types publics du sous-système de modèle de texte sont contenus dans Microsoft.VisualStudio.Text.Data.dll et Microsoft.VisualStudio.CoreUtilitiy.dll, qui dépendent uniquement de la bibliothèque de classes de base .NET Framework et de l’Managed Extensibility Framework (MEF).  
   
 ### <a name="text-view-subsystem"></a>Sous-système d’affichage de texte  
- Le sous-système d’affichage de texte est responsable de la mise en forme et l’affichage de texte. Les types dans ce sous-système sont divisées en deux couches, selon que les types s’appuient sur Windows Presentation Foundation (WPF). Les types les plus importants sont <xref:Microsoft.VisualStudio.Text.Editor.ITextView> et <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>, qui contrôle l’ensemble de lignes de texte qui doivent être affichées et également le point d’insertion, la sélection et les installations pour orner le texte à l’aide des éléments de WPF UI. Ce sous-système fournit également des marges autour du texte de zone d’affichage. Ces marges peuvent être étendus et peuvent contenir différents types de contenu et visuelle des effets. Ligne numéro affiche et barres de défilement sont des exemples de marges.  
+ Le sous-système d’affichage de texte est responsable de la mise en forme et de l’affichage du texte. Les types de ce sous-système sont divisés en deux couches, selon que les types reposent sur Windows Presentation Foundation (WPF). Les types les plus importants sont <xref:Microsoft.VisualStudio.Text.Editor.ITextView> et <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> , qui contrôlent le jeu de lignes de texte à afficher, ainsi que le signe insertion, la sélection et les fonctionnalités pour orner le texte à l’aide d’éléments d’interface utilisateur WPF. Ce sous-système fournit également des marges autour de la zone d’affichage de texte. Ces marges peuvent être étendues et peuvent contenir différents types de contenu et d’effets visuels. Les affichages de numéros de ligne et les barres de défilement sont des exemples de marges.  
   
- Les types publics du sous-système d’affichage de texte sont contenus dans Microsoft.VisualStudio.Text.UI.dll et Microsoft.VisualStudio.Text.UI.Wpf.dll. Le premier assembly contient les éléments indépendant de la plateforme, et le second contient les éléments spécifiques à WPF.  
+ Les types publics du sous-système d’affichage de texte sont contenus dans Microsoft.VisualStudio.Text.UI.dll et Microsoft.VisualStudio.Text.UI.Wpf.dll. Le premier assembly contient les éléments indépendants de la plateforme, tandis que le second contient les éléments spécifiques à WPF.  
   
 ### <a name="classification-subsystem"></a>Sous-système de classification  
- Le sous-système de classification est chargé de déterminer les propriétés de police du texte. Un classifieur fractionne le texte en différentes classes, par exemple, « keyword » ou « commentaire ». Le mappage de format de classification rapporte ces classes à des propriétés de police réelle, par exemple, « bleu Consolas 10 pt ». Ces informations sont utilisées par l’affichage de texte lorsqu’il met en forme et restitue le texte. Balisage, qui est décrite plus en détail plus loin dans cette rubrique, permet de données à associer à des étendues de texte.  
+ Le sous-système de classification est chargé de déterminer les propriétés de police du texte. Un classifieur divise le texte en différentes classes, par exemple « keyword » ou « comment ». La carte de format de classification associe ces classes à des propriétés de police réelles, par exemple, « Blue consolas 10 PT ». Ces informations sont utilisées par l’affichage de texte lorsqu’il met en forme et restitue le texte. Le balisage, qui est décrit plus en détail plus loin dans cette rubrique, permet aux données d’être associées à des étendues de texte.  
   
  Les types publics du sous-système de classification sont contenus dans Microsoft.VisualStudio.Text.Logic.dll, et ils interagissent avec les aspects visuels de la classification, qui sont contenus dans Microsoft.VisualStudio.Text.UI.Wpf.dll.  
   
 ### <a name="operations-subsystem"></a>Sous-système d’opérations  
- Le sous-système d’opérations définit le comportement de l’éditeur. Il fournit l’implémentation pour les commandes de l’éditeur Visual Studio et le système d’annulation.  
+ Le sous-système Operations définit le comportement de l’éditeur. Il fournit l’implémentation pour les commandes de l’éditeur Visual Studio et le système d’annulation.  
   
-## <a name="a-closer-look-at-the-text-model-and-the-text-view"></a>Examinez de plus près le modèle de texte et l’affichage de texte  
+## <a name="a-closer-look-at-the-text-model-and-the-text-view"></a>Examen plus approfondi du modèle de texte et de la vue de texte  
   
-### <a name="textmodel"></a> Le modèle de texte  
- Le sous-système de modèle de texte se compose de différents groupes de types de texte. Ceux-ci incluent la mémoire tampon de texte, les instantanés de texte et les étendues de texte.  
+### <a name="the-text-model"></a><a name="textmodel"></a> Modèle de texte  
+ Le sous-système de modèle de texte se compose de différents regroupements de types de texte. Il s’agit notamment de la mémoire tampon de texte, des instantanés de texte et des étendues de texte.  
   
-#### <a name="text-buffers-and-text-snapshots"></a>Mémoires tampons de texte et les instantanés de texte  
- Le <xref:Microsoft.VisualStudio.Text.ITextBuffer> interface représente une séquence de caractères Unicode qui sont codés en UTF-16, ce qui est l’encodage utilisé par le `String` type dans le .NET Framework. Une mémoire tampon de texte peut être rendu persistant comme un document de système de fichiers, mais cela n’est pas nécessaire.  
+#### <a name="text-buffers-and-text-snapshots"></a>Mémoires tampons de texte et instantanés de texte  
+ L' <xref:Microsoft.VisualStudio.Text.ITextBuffer> interface représente une séquence de caractères Unicode qui sont encodés à l’aide d’UTF-16, qui est l’encodage utilisé par le `String` type dans la .NET Framework. Une mémoire tampon de texte peut être conservée sous la forme d’un document de système de fichiers, mais cela n’est pas obligatoire.  
   
- Le <xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService> est utilisé pour créer une mémoire tampon de texte vide, ou une mémoire tampon de texte qui est initialisé à partir d’une chaîne ou de <xref:System.IO.TextReader>. La mémoire tampon de texte peut être rendu persistant dans le système de fichiers comme un <xref:Microsoft.VisualStudio.Text.ITextDocument>.  
+ <xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>Est utilisé pour créer une mémoire tampon de texte vide ou une mémoire tampon de texte qui est initialisée à partir d’une chaîne ou de <xref:System.IO.TextReader> . La mémoire tampon de texte peut être rendue persistante dans le système de fichiers en tant que <xref:Microsoft.VisualStudio.Text.ITextDocument> .  
   
- La mémoire tampon de texte peut être modifié par n’importe quel thread jusqu'à ce qu’un thread prend possession de la mémoire tampon de texte en appelant <xref:Microsoft.VisualStudio.Text.ITextBuffer.TakeThreadOwnership%2A>. Après cela, seulement ce thread peut effectuer des modifications.  
+ La mémoire tampon de texte peut être modifiée par n’importe quel thread jusqu’à ce qu’un thread prenne possession de la mémoire tampon de texte en appelant <xref:Microsoft.VisualStudio.Text.ITextBuffer.TakeThreadOwnership%2A> . Après cela, seul ce thread peut effectuer des modifications.  
   
- Une mémoire tampon de texte peut passer par le nombre de versions pendant sa durée de vie. Une nouvelle version est générée chaque fois que la mémoire tampon est modifiée et qu’un immuable <xref:Microsoft.VisualStudio.Text.ITextSnapshot> représente le contenu de cette version de la mémoire tampon. Étant donné que les instantanés de texte sont immuables, vous pouvez accéder un instantané de texte sur n’importe quel thread, sans restriction, même si la mémoire tampon de texte qu’il représente ne cesse d’évoluer.  
+ Une mémoire tampon de texte peut traverser de nombreuses versions pendant sa durée de vie. Une nouvelle version est générée chaque fois que la mémoire tampon est modifiée et une immuable <xref:Microsoft.VisualStudio.Text.ITextSnapshot> représente le contenu de cette version de la mémoire tampon. Étant donné que les instantanés de texte sont immuables, vous pouvez accéder à un instantané de texte sur n’importe quel thread, sans restrictions, même si la mémoire tampon de texte qu’il représente continue à changer.  
   
-#### <a name="text-snapshots-and-text-snapshot-lines"></a>Instantanés de texte et des lignes d’instantané de texte  
- Vous pouvez afficher le contenu d’un instantané de texte sous la forme d’une séquence de caractères ou une séquence de lignes. Caractères et les lignes sont que tous deux indexés en commençant à zéro. Un instantané de texte vide contient zéro caractère et une ligne vide. Une ligne est délimitée par une séquence de caractères de saut de ligne Unicode valide, ou par le début ou la fin de la mémoire tampon. Caractères de saut de ligne sont explicitement représentées dans l’instantané de texte et les sauts de ligne dans un instantané de texte ne sont pas nécessairement être identiques.  
+#### <a name="text-snapshots-and-text-snapshot-lines"></a>Instantanés de texte et lignes d’instantanés de texte  
+ Vous pouvez afficher le contenu d’un instantané de texte sous la forme d’une séquence de caractères ou d’une séquence de lignes. Les caractères et les lignes sont indexés à la fois à partir de zéro. Un instantané de texte vide ne contient aucun caractère et une ligne vide. Une ligne est délimitée par une séquence de caractères de saut de ligne Unicode valide ou par le début ou la fin de la mémoire tampon. Les caractères de saut de ligne sont explicitement représentés dans l’instantané de texte, et les sauts de ligne dans un instantané de texte ne doivent pas nécessairement être identiques.  
   
 > [!NOTE]
 > Pour plus d’informations sur les caractères de saut de ligne dans l’éditeur Visual Studio, consultez [encodages et sauts de ligne](../ide/encodings-and-line-breaks.md).  
   
- Une ligne de texte est représentée par un <xref:Microsoft.VisualStudio.Text.ITextSnapshotLine> objet, qui peut être obtenu à partir d’un instantané de texte pour un numéro de ligne particulier ou pour une position de caractère particulier.  
+ Une ligne de texte est représentée par un <xref:Microsoft.VisualStudio.Text.ITextSnapshotLine> objet, qui peut être obtenu à partir d’un instantané de texte pour un numéro de ligne particulier ou pour une position de caractère particulière.  
   
 #### <a name="snapshotpoints-snapshotspans-and-normalizedsnapshotspancollections"></a>SnapshotPoints, SnapshotSpans et NormalizedSnapshotSpanCollections  
- Un <xref:Microsoft.VisualStudio.Text.SnapshotPoint> représente une position de caractère dans un instantané. La position est garantie être compris entre zéro et la longueur de l’instantané. Un <xref:Microsoft.VisualStudio.Text.SnapshotSpan> représente une étendue de texte dans un instantané. Sa position de fin est garantie être compris entre zéro et la longueur de l’instantané. Le <xref:Microsoft.VisualStudio.Text.NormalizedSnapshotSpanCollection> se compose d’un ensemble de <xref:Microsoft.VisualStudio.Text.SnapshotSpan> objets à partir du même instantané.  
+ Un <xref:Microsoft.VisualStudio.Text.SnapshotPoint> représente une position de caractère dans un instantané. La position est garantie de se situer entre zéro et la longueur de l’instantané. Un <xref:Microsoft.VisualStudio.Text.SnapshotSpan> représente une étendue de texte dans un instantané. Sa position de fin est garantie de se situer entre zéro et la longueur de l’instantané. Le <xref:Microsoft.VisualStudio.Text.NormalizedSnapshotSpanCollection> se compose d’un ensemble d' <xref:Microsoft.VisualStudio.Text.SnapshotSpan> objets provenant du même instantané.  
   
 #### <a name="spans-and-normalizedspancollections"></a>Étendues et NormalizedSpanCollections  
- Un <xref:Microsoft.VisualStudio.Text.Span> représente un intervalle qui peut être appliqué à une étendue de texte dans un instantané de texte. Les positions de capture instantanée sont de base zéro, afin qu’étendues puissent commencer à n’importe quelle position zéro compris. Le `End` propriété d’une étendue est égale à la somme de ses `Start` propriété et sa `Length` propriété. Un `Span` n’inclut pas le caractère qui est indexé par le `End` propriété. Par exemple, une étendue qui a début = 5 et longueur = 3 a fin = 8, et elle inclut les caractères aux positions 5, 6 et 7. La notation pour cette étendue est 5..8).  
+ Un <xref:Microsoft.VisualStudio.Text.Span> représente un intervalle qui peut être appliqué à une étendue de texte dans un instantané de texte. Les positions des instantanés sont de base zéro, de sorte que les étendues peuvent commencer à n’importe quelle position, y compris zéro. La `End` propriété d’une étendue est égale à la somme de sa `Start` propriété et de sa `Length` propriété. `Span`N’inclut pas le caractère indexé par la `End` propriété. Par exemple, une étendue qui a Start = 5 et Length = 3 a end = 8, et inclut les caractères aux positions 5, 6 et 7. La notation de cette étendue est 5.. 8).  
   
- Deux étendues se croisent si elles ont des positions en commun, y compris la position de fin. Par conséquent, l’intersection de [3, 5) et [2, 7) est [3, 5) et l’intersection de [3, 5) et [5, 7) est [5, 5). (Notez que [5, 5) est une étendue vide.)  
+ Deux étendues se croisent si elles ont des positions en commun, y compris la position de fin. Par conséquent, l’intersection de [3, 5) et [2, 7) est [3, 5) et l’intersection de [3, 5) et [5, 7] est [5, 5). (Notez que [5, 5) est une étendue vide.)  
   
- Deux étendues se chevauchent si elles ont des positions en commun, à l’exception de la position de fin. Une étendue vide chevauche jamais d’autres étendues, et le chevauchement de deux étendues n’est jamais vide.  
+ Deux étendues se chevauchent si elles ont des positions en commun, à l’exception de la position de fin. Une étendue vide ne chevauche jamais d’autres étendues, et le chevauchement de deux étendues n’est jamais vide.  
   
- Un <xref:Microsoft.VisualStudio.Text.NormalizedSpanCollection> est une liste d’étendues dans l’ordre les propriétés de démarrage des étendues. Dans la liste, qui se chevauche ou attenants étendues sont fusionnée. Par exemple, compte tenu du jeu d’étendues [5..9), [0..1), [3..6), et [9..10), la liste normalisée d’étendues est [0..1), [3..10).  
+ Un <xref:Microsoft.VisualStudio.Text.NormalizedSpanCollection> est une liste d’étendues dans l’ordre des propriétés de démarrage des étendues. Dans la liste, les étendues chevauchées ou contiguës sont fusionnées. Par exemple, étant donné le jeu d’étendues [5.. 9), [0.. 1], [3.. 6) et [9.. 10), la liste normalisée des étendues est [0.. 1], [3.. 10].  
   
-#### <a name="itextedit-textversion-and-text-change-notifications"></a>ITextEdit, textversion n’et Notifications de modification de texte  
- Le contenu d’une mémoire tampon de texte peut être modifié en utilisant un <xref:Microsoft.VisualStudio.Text.ITextEdit> objet. Création d’un tel objet (en utilisant l’une de le `CreateEdit()` méthodes de <xref:Microsoft.VisualStudio.Text.ITextBuffer>) démarre une transaction de texte qui se compose de modifications de texte. Chaque modification est un remplacement d’une étendue de texte dans la mémoire tampon par une chaîne. Les coordonnées et le contenu de chaque modification sont exprimées par rapport à l’instantané de la mémoire tampon lors de la transaction a été démarré. Le <xref:Microsoft.VisualStudio.Text.ITextEdit> objet ajuste les coordonnées de modifications qui sont affectées par d’autres modifications dans la même transaction.  
+#### <a name="itextedit-textversion-and-text-change-notifications"></a>Notifications de modification de ITextEdit, TextVersion et Text  
+ Le contenu d’une mémoire tampon de texte peut être modifié à l’aide d’un <xref:Microsoft.VisualStudio.Text.ITextEdit> objet. La création d’un tel objet (à l’aide de l’une des `CreateEdit()` méthodes de <xref:Microsoft.VisualStudio.Text.ITextBuffer> ) démarre une transaction texte qui se compose de modifications de texte. Chaque modification est un remplacement d’une plage de texte dans la mémoire tampon par une chaîne. Les coordonnées et le contenu de chaque modification sont exprimés en fonction de l’instantané de la mémoire tampon lors du démarrage de la transaction. L' <xref:Microsoft.VisualStudio.Text.ITextEdit> objet ajuste les coordonnées des modifications affectées par d’autres modifications dans la même transaction.  
   
  Par exemple, considérez une mémoire tampon de texte qui contient cette chaîne :  
   
@@ -117,74 +117,74 @@ L’éditeur est composée d’un nombre de différents sous-systèmes, lesquels
 abcdefghij  
 ```  
   
- Appliquer une transaction qui contient deux modifications, une seule modification qui remplace l’étendue à [2..4) en utilisant le caractère `X` et une deuxième modification qui remplace l’étendue à [6..9) en utilisant le caractère `Y`. Le résultat est cette mémoire tampon :  
+ Appliquez une transaction qui contient deux modifications, une modification qui remplace l’étendue à [2.. 4) à l’aide du caractère `X` et d’une deuxième modification qui remplace l’étendue à [6.. 9) par le caractère `Y` . Le résultat est le suivant :  
   
 ```  
 abXefYj  
 ```  
   
- Les coordonnées pour la deuxième modification ont été calculées en ce qui concerne le contenu de la mémoire tampon au début de la transaction, avant la première modification a été appliquée.  
+ Les coordonnées de la deuxième modification ont été calculées par rapport au contenu de la mémoire tampon au début de la transaction, avant l’application de la première modification.  
   
- Les modifications apportées à la mémoire tampon prennent effet lors de la <xref:Microsoft.VisualStudio.Text.ITextEdit> objet est validé en appelant son `Apply()` (méthode). S’il y avait au moins une modification de non vide, un nouveau <xref:Microsoft.VisualStudio.Text.ITextVersion> est créé, un nouveau <xref:Microsoft.VisualStudio.Text.ITextSnapshot> est créé et un `Changed` événement est déclenché. Chaque version de texte associé à un autre instantané de texte. Un instantané de texte représente l’état complet de la mémoire tampon de texte après une transaction de modification, mais une version texte décrit uniquement les modifications apportées à partir d’un instantané à l’autre. En général, les instantanés de texte sont destinés à être utilisés qu’une seule fois et ensuite ignorées, tandis que les versions de texte doivent rester actives pendant un certain temps.  
+ Les modifications apportées à la mémoire tampon prennent effet lorsque l' <xref:Microsoft.VisualStudio.Text.ITextEdit> objet est validé en appelant sa `Apply()` méthode. Si au moins une modification n’est pas vide, une nouvelle <xref:Microsoft.VisualStudio.Text.ITextVersion> est créée, un nouveau <xref:Microsoft.VisualStudio.Text.ITextSnapshot> est créé et un `Changed` événement est déclenché. Chaque version texte possède un instantané de texte différent. Un instantané de texte représente l’état complet de la mémoire tampon de texte après une transaction de modification, mais une version de texte décrit uniquement les modifications d’un instantané à la suivante. En général, les instantanés de texte sont censés être utilisés une seule fois, puis ignorés, tandis que les versions de texte doivent rester actives pendant un certain temps.  
   
- Une version texte contient un <xref:Microsoft.VisualStudio.Text.INormalizedTextChangeCollection>. Cette collection décrit les modifications qui, lorsqu’il est appliqué à l’instantané, génère l’instantané suivant. Chaque <xref:Microsoft.VisualStudio.Text.ITextChange> dans la collection contient la position de caractère de la chaîne de remplacement, la modification et la chaîne remplacée. La chaîne remplacée est vide pour une insertion de base, et la chaîne de remplacement est vide pour une suppression de base. La collection normalisée est toujours `null` pour la version la plus récente de la mémoire tampon de texte.  
+ Une version texte contient un <xref:Microsoft.VisualStudio.Text.INormalizedTextChangeCollection> . Cette collection décrit les modifications qui, lorsqu’elles sont appliquées à l’instantané, produisent l’instantané suivant. Chaque <xref:Microsoft.VisualStudio.Text.ITextChange> dans la collection contient la position de caractère de la modification, la chaîne remplacée et la chaîne de remplacement. La chaîne remplacée est vide pour une insertion de base, et la chaîne de remplacement est vide pour une suppression de base. La collection normalisée est toujours `null` pour la version la plus récente de la mémoire tampon de texte.  
   
- Seul <xref:Microsoft.VisualStudio.Text.ITextEdit> objet peut être instancié une mémoire tampon de texte à tout moment, et toutes les modifications de texte doivent être effectuées sur le thread qui détient la mémoire tampon de texte (si la propriété a été demandée). Une modification de texte peut être abandonnée en appelant son `Cancel` méthode ou son `Dispose` (méthode).  
+ Un seul <xref:Microsoft.VisualStudio.Text.ITextEdit> objet peut être instancié pour une mémoire tampon de texte à tout moment, et toutes les modifications de texte doivent être effectuées sur le thread qui possède la mémoire tampon de texte (si la propriété a été revendiquée). Une modification de texte peut être abandonnée en appelant sa `Cancel` méthode ou sa `Dispose` méthode.  
   
- <xref:Microsoft.VisualStudio.Text.ITextBuffer> fournit également `Insert()`, `Delete()`, et `Replace()` méthodes qui ressemblent à celles disponibles sur le <xref:Microsoft.VisualStudio.Text.ITextEdit> interface. Appelle ces a le même effet que la création d’un <xref:Microsoft.VisualStudio.Text.ITextEdit> objet, l’appel similaire et en appliquant la modification.  
+ <xref:Microsoft.VisualStudio.Text.ITextBuffer> fournit également `Insert()` des `Delete()` méthodes, et `Replace()` qui ressemblent à celles trouvées sur l' <xref:Microsoft.VisualStudio.Text.ITextEdit> interface. L’appel de celles-ci a le même effet que la création d’un <xref:Microsoft.VisualStudio.Text.ITextEdit> objet, l’appel similaire, puis l’application de la modification.  
   
 #### <a name="tracking-points-and-tracking-spans"></a>Points de suivi et étendues de suivi  
- Un <xref:Microsoft.VisualStudio.Text.ITrackingPoint> représente une position de caractère dans une mémoire tampon de texte. Si la mémoire tampon est modifiée d’une manière qui provoque la position du caractère de décalage, le point de suivi se déplace avec lui. Par exemple, si un point de suivi fait référence à la position 10 dans une mémoire tampon et cinq caractères sont insérés au début de la mémoire tampon, le point de suivi puis désigne position 15. Si une insertion se produit à précisément la position indiquée par le point de suivi, son comportement est déterminé par ses <xref:Microsoft.VisualStudio.Text.PointTrackingMode>, qui peut être `Positive` ou `Negative`. Si le mode de suivi est positif, que le point de suivi fait référence au même caractère, qui est maintenant à la fin de l’insertion ; Si le mode de suivi est négatif, le point de suivi fait référence au premier caractère inséré à la position d’origine. Si le caractère situé à la position qui est représenté par un point de suivi est supprimé, le point de suivi se déplace vers le premier caractère qui suit la plage supprimée. Par exemple, si un point de suivi fait référence au caractère à la position 5, et les caractères aux positions 3 à 6 sont supprimées, le point de suivi fait référence au caractère à la position 3.  
+ Un <xref:Microsoft.VisualStudio.Text.ITrackingPoint> représente une position de caractère dans une mémoire tampon de texte. Si la mémoire tampon est modifiée d’une manière qui provoque le décalage de la position du caractère, le point de suivi le décale. Par exemple, si un point de suivi fait référence à la position 10 dans une mémoire tampon et que cinq caractères sont insérés au début de la mémoire tampon, le point de suivi fait alors référence à la position 15. Si une insertion se produit précisément à la position notée par le point de suivi, son comportement est déterminé par son <xref:Microsoft.VisualStudio.Text.PointTrackingMode> , qui peut être `Positive` ou `Negative` . Si le mode de suivi est positif, le point de suivi fait référence au même caractère, qui est maintenant à la fin de l’insertion ; Si le mode de suivi est négatif, le point de suivi fait référence au premier caractère inséré à la position d’origine. Si le caractère situé à la position représentée par un point de suivi est supprimé, le point de suivi se déplace vers le premier caractère qui suit la plage supprimée. Par exemple, si un point de suivi fait référence au caractère situé à la position 5 et que les caractères situés aux positions 3 à 6 sont supprimés, le point de suivi fait référence au caractère situé à la position 3.  
   
- Un <xref:Microsoft.VisualStudio.Text.ITrackingSpan> représente une plage de caractères au lieu de simplement une position. Son comportement est déterminé par ses <xref:Microsoft.VisualStudio.Text.SpanTrackingMode>. Si le mode de suivi span est <xref:Microsoft.VisualStudio.Text.SpanTrackingMode>, l’étendue de suivi s’agrandit pour incorporer le texte inséré à ses bords ; si le mode de suivi span est <xref:Microsoft.VisualStudio.Text.SpanTrackingMode>, l’étendue de suivi n’incorpore pas de texte inséré à ses bords. Toutefois, si le mode de suivi span est <xref:Microsoft.VisualStudio.Text.SpanTrackingMode>, une insertion exécute un push de la position actuelle vers le début et si le mode de suivi span <xref:Microsoft.VisualStudio.Text.SpanTrackingMode>, une insertion exécute un push de la position actuelle vers la fin.  
+ Un <xref:Microsoft.VisualStudio.Text.ITrackingSpan> représente une plage de caractères au lieu d’une seule position. Son comportement est déterminé par son <xref:Microsoft.VisualStudio.Text.SpanTrackingMode> . Si le mode de suivi d’étendue est <xref:Microsoft.VisualStudio.Text.SpanTrackingMode> , l’étendue de suivi augmente pour incorporer le texte inséré à ses bords ; si le mode de suivi d’étendue est <xref:Microsoft.VisualStudio.Text.SpanTrackingMode> , l’étendue de suivi n’incorpore pas de texte inséré à ses bords. Toutefois, si le mode de suivi span est <xref:Microsoft.VisualStudio.Text.SpanTrackingMode> , une insertion pousse la position actuelle vers le début et, si le mode de suivi span <xref:Microsoft.VisualStudio.Text.SpanTrackingMode> , une insertion pousse la position actuelle vers la fin.  
   
- Vous pouvez obtenir la position d’un point de suivi ou l’étendue d’une étendue de suivi pour tous les instantanés de la mémoire tampon de texte auquel elles appartiennent. Points de suivi et étendues de suivi peuvent être référencées en toute sécurité à partir de n’importe quel thread.  
+ Vous pouvez obtenir la position d’un point de suivi ou l’étendue d’une étendue de suivi pour tout instantané de la mémoire tampon de texte à laquelle ils appartiennent. Les points de suivi et les étendues de suivi peuvent être référencés en toute sécurité à partir de n’importe quel thread.  
   
 #### <a name="content-types"></a>Types de contenu  
- Types de contenu sont un mécanisme permettant de définir différents types de contenu. Un type de contenu peut être un type de fichier tels que « text », « code » ou « binaire », ou un type de technologie tels que « xml », « vb » ou « c# ». Par exemple, le mot « using » est un mot clé en c# et Visual Basic, mais pas dans les autres langages de programmation. Par conséquent, la définition de ce mot clé serait limitée pour les types de contenu « c# » et « vb ».  
+ Les types de contenu sont un mécanisme permettant de définir différents types de contenu. Un type de contenu peut être un type de fichier tel que « Text », « code » ou « Binary », ou un type de technologie tel que « XML », « vb » ou « c# ». Par exemple, le mot « using » est un mot clé en C# et Visual Basic, mais pas dans d’autres langages de programmation. Par conséquent, la définition de ce mot clé est limitée aux types de contenu « c# » et « VB ».  
   
- Types de contenu sont utilisés en tant que filtre pour les ornements et d’autres éléments de l’éditeur. Plusieurs fonctionnalités de l’éditeur et les points d’extension définis pour chaque type de contenu ; par exemple, la coloration du texte est différent pour les fichiers de texte brut, les fichiers XML et les fichiers de code source Visual Basic. Mémoires tampons de texte bénéficient généralement d’un type de contenu lorsqu’ils sont créés, et le type de contenu d’une mémoire tampon de texte peut être modifié.  
+ Les types de contenu sont utilisés comme filtre pour les ornements et d’autres éléments de l’éditeur. De nombreux points d’extension et fonctionnalités de l’éditeur sont définis par type de contenu ; par exemple, la coloration du texte est différente pour les fichiers texte bruts, les fichiers XML et les fichiers de code source Visual Basic. Les mémoires tampons de texte reçoivent généralement un type de contenu lors de leur création, et le type de contenu d’une mémoire tampon de texte peut être modifié.  
   
- Types de contenu peuvent multiple-hériter d’autres types de contenu. Le <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> vous permet de spécifier plusieurs types de base en tant que les parents d’un type de contenu donné.  
+ Les types de contenu peuvent hériter de plusieurs types de contenu. <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition>Vous permet de spécifier plusieurs types de base comme parents d’un type de contenu donné.  
   
- Les développeurs peuvent définir leurs propres types de contenu et les inscrire à l’aide de la <xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService>. Plusieurs fonctionnalités de l’éditeur peuvent être définies par rapport à un type de contenu spécifique à l’aide de la <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>. Par exemple, les marges de l’éditeur, les ornements et les gestionnaires de souris peuvent être définis afin qu’ils s’appliquent uniquement à des éditeurs qui affichent les types de contenu particuliers.  
+ Les développeurs peuvent définir leurs propres types de contenu et les inscrire à l’aide du <xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService> . De nombreuses fonctionnalités de l’éditeur peuvent être définies par rapport à un type de contenu spécifique à l’aide du <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> . Par exemple, les marges, les ornements et les gestionnaires de souris de l’éditeur peuvent être définis de sorte qu’ils s’appliquent uniquement aux éditeurs qui affichent des types de contenu particuliers.  
   
-### <a name="textview"></a> L’affichage de texte  
- La partie de la vue du modèle Vue contrôleur (MVC) définit l’affichage de texte, la mise en forme de la vue, les éléments graphiques tels que la barre de défilement et le signe insertion. Tous les éléments de présentation de l’éditeur Visual Studio sont basés sur WPF.  
+### <a name="the-text-view"></a><a name="textview"></a> Affichage de texte  
+ La partie vue du modèle MVC (Model View Controller) définit l’affichage de texte, la mise en forme de la vue, les éléments graphiques tels que la barre de défilement et le signe insertion. Tous les éléments de présentation de l’éditeur Visual Studio sont basés sur WPF.  
   
 #### <a name="text-views"></a>Affichages de texte  
- Le <xref:Microsoft.VisualStudio.Text.Editor.ITextView> interface est une représentation indépendante de la plateforme d’une vue de texte. Il est utilisé principalement pour afficher des documents de texte dans une fenêtre, mais il peut également être utilisé à d’autres fins, par exemple, dans une info-bulle.  
+ L' <xref:Microsoft.VisualStudio.Text.Editor.ITextView> interface est une représentation indépendante de la plateforme d’un affichage de texte. Il est principalement utilisé pour afficher des documents texte dans une fenêtre, mais il peut également être utilisé à d’autres fins, par exemple dans une info-bulle.  
   
- L’affichage de texte fait référence à différents types de mémoires tampons de texte. Le <xref:Microsoft.VisualStudio.Text.Editor.ITextView.TextViewModel%2A> propriété fait référence à un <xref:Microsoft.VisualStudio.Text.Editor.ITextViewModel> objet qui pointe vers ces trois mémoires tampons de texte différente : la mémoire tampon de données, qui est la mémoire tampon au niveau des données supérieure, la mémoire tampon d’édition, dans lequel la modification se produit et la mémoire tampon visuelle, qui est la mémoire tampon qui est affiché dans l’affichage de texte.  
+ L’affichage de texte fait référence à différents genres de mémoires tampons de texte. La <xref:Microsoft.VisualStudio.Text.Editor.ITextView.TextViewModel%2A> propriété fait référence à un <xref:Microsoft.VisualStudio.Text.Editor.ITextViewModel> objet qui pointe vers ces trois mémoires tampons de texte différentes : la mémoire tampon de données, qui est la mémoire tampon de niveau de données la plus haute, la mémoire tampon d’édition dans laquelle la modification se produit et la mémoire tampon visuelle, qui est la mémoire tampon affichée dans l’affichage de texte.  
   
- Le texte est mis en forme en fonction des classifieurs qui sont attachés à la mémoire tampon de texte sous-jacente et est orné en utilisant les fournisseurs d’ornement qui sont attachés à la vue de texte lui-même.  
+ Le texte est mis en forme en fonction des classifieurs attachés à la mémoire tampon de texte sous-jacente et est orné à l’aide des fournisseurs d’ornements attachés à l’affichage de texte lui-même.  
   
-#### <a name="the-text-view-coordinate-system"></a>Le système de coordonnées de vue de texte  
- Le système de coordonnées de vue de texte spécifie des positions dans l’affichage de texte. Dans ce système de coordonnées, la valeur de x 0,0 correspond et le bord gauche du texte qui est affiché, et la valeur y 0,0 correspond sur le bord supérieur du texte qui est affiché. La coordonnée x augmente de gauche à droite, et la coordonnée y augmente de haut en bas.  
+#### <a name="the-text-view-coordinate-system"></a>Système de coordonnées d’affichage de texte  
+ Le système de coordonnées d’affichage de texte spécifie des positions dans l’affichage de texte. Dans ce système de coordonnées, la valeur x 0,0 correspond au bord gauche du texte affiché, tandis que la valeur y 0,0 correspond au bord supérieur du texte affiché. La coordonnée x augmente de gauche à droite, et la coordonnée y s’incrémente de haut en bas.  
   
- Une fenêtre d’affichage (la partie du texte visible dans la fenêtre texte) ne peut pas faire défiler horizontalement de la même manière comme défile verticalement. Une fenêtre d’affichage est défilé horizontalement en modifiant sa coordonnée gauche afin qu’il se déplace en ce qui concerne la surface de dessin. Toutefois, une fenêtre d’affichage peut défiler verticalement qu’en modifiant le texte affiché, ce qui provoque un <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> déclenchement d’événement.  
+ Il n’est pas possible de faire défiler une fenêtre d’affichage (partie du texte visible dans la fenêtre de texte) de la même manière horizontale qu’en faisant défiler verticalement. Un Viewport défile horizontalement en modifiant sa coordonnée gauche afin qu’il se déplace par rapport à la surface de dessin. Toutefois, il est possible de faire défiler verticalement un Viewport uniquement en modifiant le texte rendu, ce qui entraîne le <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> déclenchement d’un événement.  
   
- Les distances dans le système de coordonnées correspondent aux pixels logiques. Si la surface de rendu de texte s’affiche sans une transformation de mise à l’échelle, une unité dans le système de coordonnées de rendu de texte correspond à un pixel sur l’affichage.  
+ Les distances dans le système de coordonnées correspondent aux pixels logiques. Si la surface de rendu du texte s’affiche sans transformation de mise à l’échelle, une unité dans le système de coordonnées d’affichage du texte correspond à un pixel sur l’affichage.  
   
 #### <a name="margins"></a>Marges  
- Le <xref:Microsoft.VisualStudio.Text.Editor.ITextViewMargin> interface représente une marge et permet de contrôler la visibilité de la marge et sa taille. Il existe quatre marges prédéfinies, qui sont nommés « Top », « Gauche », « Droite » et « Bottom » et sont attachés en haut, inférieure, gauche ou droite d’une vue. Ces marges sont des conteneurs dans lequel les autres marges peuvent être placés. L’interface définit des méthodes qui retournent la taille de la marge et la visibilité d’une marge. Les marges sont des éléments visuels qui fournissent des informations supplémentaires sur l’affichage de texte auquel ils sont attachés. Par exemple, la marge de numéro de ligne affiche les numéros de ligne pour l’affichage de texte. La marge de glyphe affiche les éléments d’interface utilisateur.  
+ L' <xref:Microsoft.VisualStudio.Text.Editor.ITextViewMargin> interface représente une marge et permet de contrôler la visibilité de la marge et sa taille. Quatre marges prédéfinies, appelées « Top », « Left », « Right » et « Bottom », sont attachées au bord supérieur, inférieur, gauche ou droit d’une vue. Ces marges sont des conteneurs dans lesquels d’autres marges peuvent être placées. L’interface définit des méthodes qui retournent la taille de la marge et la visibilité d’une marge. Les marges sont des éléments visuels qui fournissent des informations supplémentaires sur la vue de texte à laquelle elles sont jointes. Par exemple, la marge de nombre de lignes affiche des numéros de ligne pour l’affichage de texte. La marge de glyphe affiche des éléments d’interface utilisateur.  
   
- Le <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewMarginProvider> interface gère la création et le positionnement des marges. Marges peuvent être classées en ce qui concerne les autres marges. Marges de priorité plus élevée sont trouve plus près de l’affichage de texte. Par exemple, s’il existe deux marges gauche, marge A et B de marge et marge B a une priorité inférieure à la marge A, B de marge apparaît à gauche de marge A.  
+ L' <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewMarginProvider> interface gère la création et l’emplacement des marges. Les marges peuvent être classées par rapport à d’autres marges. Les marges de priorité supérieure sont situées plus près de l’affichage de texte. Par exemple, s’il y a deux marges gauches, les marges A et B, et la marge B a une priorité inférieure à la marge A, la marge B apparaît à gauche de la marge A.  
   
-#### <a name="the-text-view-host"></a>L’hôte d’affichage de texte  
- Le <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> interface contient l’affichage de texte et les ornements attenants qui accompagnent la vue, par exemple, les barres de défilement. L’hôte d’affichage de texte contient également les marges qui sont attachés à une bordure de la vue.  
+#### <a name="the-text-view-host"></a>Hôte d’affichage de texte  
+ L' <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> interface contient l’affichage de texte et les décorations contiguës qui accompagnent la vue, par exemple, les barres de défilement. L’hôte d’affichage de texte contient également des marges attachées à une bordure de la vue.  
   
 #### <a name="formatted-text"></a>Texte mis en forme  
- Le texte qui est affiché dans un affichage de texte est composé de <xref:Microsoft.VisualStudio.Text.Formatting.ITextViewLine> objets. Chaque ligne d’affichage de texte correspond à une seule ligne de texte dans l’affichage de texte. Longues lignes dans la mémoire tampon de texte sous-jacente peuvent être partiellement obscurcies (si le retour automatique n’est pas activé) ou répartis sur plusieurs lignes d’affichage de texte. Le <xref:Microsoft.VisualStudio.Text.Formatting.ITextViewLine> interface contient des méthodes et propriétés pour le mappage entre les coordonnées et les caractères, ainsi que pour les ornements qui peuvent être associés à la ligne.  
+ Le texte affiché dans une vue de texte est composé d' <xref:Microsoft.VisualStudio.Text.Formatting.ITextViewLine> objets. Chaque ligne de vue de texte correspond à une ligne de texte dans l’affichage de texte. Les longues lignes de la mémoire tampon de texte sous-jacente peuvent être partiellement masquées (si le retour automatique à la ligne n’est pas activé) ou être divisées en plusieurs lignes de vue de texte. L' <xref:Microsoft.VisualStudio.Text.Formatting.ITextViewLine> interface contient des méthodes et des propriétés pour le mappage entre les coordonnées et les caractères, et pour les ornements qui peuvent être associés à la ligne.  
   
- <xref:Microsoft.VisualStudio.Text.Formatting.ITextViewLine> objets sont créés en utilisant un <xref:Microsoft.VisualStudio.Text.Formatting.IFormattedLineSource> interface. Si vous craignez simplement le texte actuellement affiché dans la vue, vous pouvez ignorer la mise en forme source. Si vous êtes intéressé par le format de texte qui n’est pas affiché dans la vue (par exemple, pour prendre en charge un couper du texte enrichi et la coller), vous pouvez utiliser <xref:Microsoft.VisualStudio.Text.Formatting.IFormattedLineSource> pour formater le texte dans une mémoire tampon de texte.  
+ <xref:Microsoft.VisualStudio.Text.Formatting.ITextViewLine> les objets sont créés à l’aide d’une <xref:Microsoft.VisualStudio.Text.Formatting.IFormattedLineSource> interface. Si vous vous intéressez uniquement au texte actuellement affiché dans la vue, vous pouvez ignorer la source de mise en forme. Si le format de texte qui n’est pas affiché dans la vue vous intéresse (par exemple, pour prendre en charge une copie et un collage de texte enrichi), vous pouvez utiliser <xref:Microsoft.VisualStudio.Text.Formatting.IFormattedLineSource> pour mettre en forme le texte dans une mémoire tampon de texte.  
   
- Un des formats de l’affichage de texte <xref:Microsoft.VisualStudio.Text.ITextSnapshotLine> à la fois.  
+ Le format de l’affichage de texte est un <xref:Microsoft.VisualStudio.Text.ITextSnapshotLine> à la fois.  
   
 ## <a name="editor-features"></a>Fonctionnalités de l’éditeur  
- Les fonctionnalités de l’éditeur sont conçues pour que la définition de la fonctionnalité est distincte de son implémentation. L’éditeur inclut ces fonctionnalités :  
+ Les fonctionnalités de l’éditeur sont conçues pour que la définition de la fonctionnalité soit distincte de son implémentation. L’éditeur comprend les fonctionnalités suivantes :  
   
-- Balises et les classifieurs  
+- Balises et classifieurs  
   
 - Ornements  
   
@@ -192,101 +192,101 @@ abXefYj
   
 - mode Plan  
   
-- Liaisons de souris et la clé  
+- Combinaisons de touches et de souris  
   
-- Opérations et primitives  
+- Opérations et Primitives  
   
 - IntelliSense  
   
-### <a name="tagsandclassifiers"></a> Balises et les classifieurs  
- Les balises sont des marqueurs qui sont associés à une étendue de texte. Ils peuvent être présentées de différentes façons, par exemple, à l’aide de la coloration du texte, des traits de soulignement, des graphiques ou les fenêtres contextuelles. Les classifieurs sont un type de balise.  
+### <a name="tags-and-classifiers"></a><a name="tagsandclassifiers"></a> Balises et classifieurs  
+ Les balises sont des marqueurs qui sont associés à une étendue de texte. Elles peuvent être présentées de différentes façons, par exemple en utilisant des couleurs de texte, des soulignements, des graphiques ou des fenêtres contextuelles. Les classifieurs représentent un type de balise.  
   
- Autres types de balises sont <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag> pour mettre en surbrillance de texte, <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag> pour le mode plan, et <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag> pour les erreurs de compilation.  
+ D’autres types de balises sont <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag> pour la mise en surbrillance du texte, <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag> pour le mode plan et <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag> pour les erreurs de compilation.  
   
-#### <a name="classification-types"></a>Types de classification  
- Un <xref:Microsoft.VisualStudio.Text.Classification.IClassificationType> interface représente une classe d’équivalence, qui est une catégorie abstraite de texte. Types de classification peuvent multiple-hériter d’autres types de classification. Par exemple, classifications de langage de programmation peut inclure « keyword », « commentaire » et « identificateur », qui héritent de « code ». Les types de classification de langage naturel, citons « nom », « verbe » et « adjectif », qui héritent de « langage naturel ».  
+#### <a name="classification-types"></a>Classification Types (Types de classification)  
+ Une <xref:Microsoft.VisualStudio.Text.Classification.IClassificationType> interface représente une classe d’équivalence, qui est une catégorie abstraite de texte. Les types de classification peuvent hériter de plusieurs types de classification. Par exemple, les classifications de langage de programmation peuvent inclure « Keyword », « comment » et « identifier », qui héritent toutes de « code ». Les types de classifications de langage naturel peuvent inclure « substantif », « Verb » et « adjectif », qui héritent tous de « Natural Language ».  
   
 #### <a name="classifications"></a>Classifications  
- Une classification est une instance d’un type de classification particulier, généralement sur une étendue de texte. Un <xref:Microsoft.VisualStudio.Text.Classification.ClassificationSpan> est utilisé pour représenter une classification. Une étendue de la classification peut être considérée comme une étiquette qui couvre une étendue particulière de texte et indique au système que cette étendue de texte est d’un type de classification particulier.  
+ Une classification est une instance d’un type de classification particulier, généralement sur une étendue de texte. Un <xref:Microsoft.VisualStudio.Text.Classification.ClassificationSpan> est utilisé pour représenter une classification. Une étendue de classification peut être considérée comme une étiquette qui couvre une étendue de texte particulière et indique au système que cette étendue de texte est d’un type de classification particulier.  
   
 #### <a name="classifiers"></a>Classifieurs  
- Un <xref:Microsoft.VisualStudio.Text.Classification.IClassifier> est un mécanisme qui découpe le texte en un ensemble de classifications. Classifieurs doivent être définis pour les types de contenu spécifiques et instanciés pour les mémoires tampons de texte spécifique. Les clients doivent implémenter <xref:Microsoft.VisualStudio.Text.Classification.IClassifier> participer de classification de texte.  
+ Un <xref:Microsoft.VisualStudio.Text.Classification.IClassifier> est un mécanisme qui divise le texte en un ensemble de classifications. Les classifieurs doivent être définis pour des types de contenu spécifiques et instanciés pour des mémoires tampons de texte spécifiques. Les clients doivent implémenter <xref:Microsoft.VisualStudio.Text.Classification.IClassifier> pour participer à la classification de texte.  
   
-#### <a name="classifier-aggregators"></a>Agrégations de classifieur  
- Une agrégation du classifieur est un mécanisme qui combine tous les classifieurs pour une mémoire tampon en simplement une série de classifications. Par exemple, un classifieur c# et un classifieur en langue anglaise peut créer des classifications sur un commentaire dans un fichier c#. Prenez en compte ce commentaire :  
+#### <a name="classifier-aggregators"></a>Agrégateurs de classifieur  
+ Une agrégation de classifieur est un mécanisme qui combine tous les classifieurs d’une mémoire tampon de texte en un seul jeu de classifications. Par exemple, un classifieur C# et un classifieur de langue anglaise peuvent créer des classifications sur un commentaire dans un fichier C#. Considérez ce commentaire :  
   
 ```  
 // This method produces a classifier  
 ```  
   
- Un classifieur c# peut-être étiqueter l’étendue entière sous forme de commentaire, et le classifieur de langue anglaise peut classer « produit » en tant que « verbe » et « méthode » comme un « nom ». La fonction d’agrégation produit un ensemble de classifications sans chevauchement, et le type du jeu est basé sur toutes les contributions.  
+ Un classifieur C# peut étiqueter l’étendue entière en tant que commentaire, et le classifieur de langue anglaise peut classer « produit » comme « verbe » et « méthode » comme « substantif ». L’agrégateur produit un ensemble de classifications qui ne se chevauchent pas et le type de l’ensemble est basé sur toutes les contributions.  
   
- Une agrégation du classifieur est également un classifieur, car elle découpe le texte en un ensemble de classifications. L’agrégation du classifieur garantit également qu’il n’y a aucune classification qui se chevauche et que les classifications sont triées. Les classifieurs individuels sont libre de renvoyer n’importe quel jeu de classifications, dans n’importe quel ordre et qui se chevauchent en aucune façon.  
+ Un agrégateur de classifieur est également un classifieur, car il divise le texte en un ensemble de classifications. L’agrégation de classifieur vérifie également qu’il n’y a aucune classification qui se chevauche et que les classifications sont triées. Les classifieurs individuels sont libres de retourner tout ensemble de classifications, dans n’importe quel ordre, et de se chevaucher de quelque manière que ce soit.  
   
-#### <a name="classification-formatting-and-text-coloring"></a>Mise en forme de classification et la coloration du texte  
- Mise en forme du texte est un exemple d’une fonctionnalité qui repose sur la classification de texte. Il est utilisé par la couche de vue de texte pour déterminer l’affichage du texte dans une application. La zone de texte mise en forme dépend de WPF, mais n’est pas dans la définition logique de classifications.  
+#### <a name="classification-formatting-and-text-coloring"></a>Mise en forme de la classification et coloration du texte  
+ La mise en forme du texte est un exemple de fonctionnalité basée sur la classification de texte. Elle est utilisée par la couche d’affichage de texte pour déterminer l’affichage du texte dans une application. La zone de mise en forme du texte dépend de WPF, mais la définition logique des classifications ne l’est pas.  
   
- Un format de classification est un ensemble de propriétés pour un type de classification spécifique mise en forme. Le format du parent du type de classification héritent de ces formats.  
+ Un format de classification est un ensemble de propriétés de mise en forme pour un type de classification spécifique. Ces formats héritent du format du parent du type de classification.  
   
- Un <xref:Microsoft.VisualStudio.Text.Classification.IClassificationFormatMap> est un mappage à partir d’un type de classification à un ensemble de propriétés de mise en forme de texte. L’implémentation de la carte de format dans l’éditeur gère toutes les exportations de formats de classification.  
+ Un <xref:Microsoft.VisualStudio.Text.Classification.IClassificationFormatMap> est un mappage d’un type de classification à un ensemble de propriétés de mise en forme de texte. L’implémentation de la carte de mise en forme dans l’éditeur gère toutes les exportations des formats de classification.  
   
-### <a name="adornments"></a> Ornements  
- Ornements sont des effets graphiques qui ne sont pas directement liées à la police et la couleur des caractères dans l’affichage de texte. Par exemple, le trait de soulignement rouge ondulée qui est utilisé pour marquer le code non compilé dans de nombreux langages de programmation est un ornement incorporé et info-bulles sont les ornements contextuelles. Ornements sont dérivés de <xref:System.Windows.UIElement> et implémenter <xref:Microsoft.VisualStudio.Text.Tagging.ITag>. Deux types de balise de l’ornement spécialisés sont le <xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag>, pour les ornements occupent le même espace que le texte dans une vue, et le <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag>, pour le trait de soulignement de trait de soulignement ondulé.  
+### <a name="adornments"></a><a name="adornments"></a> Ornements  
+ Les ornements sont des effets graphiques qui ne sont pas directement liés à la police et à la couleur des caractères de l’affichage de texte. Par exemple, le trait de soulignement en tilde rouge qui est utilisé pour marquer du code non compilé dans de nombreux langages de programmation est un ornement incorporé, et les info-bulles sont des ornements contextuels. Les ornements sont dérivés de <xref:System.Windows.UIElement> et implémentent <xref:Microsoft.VisualStudio.Text.Tagging.ITag> . Les deux types spécialisés de balise d’ornement sont <xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag> , pour les ornements qui occupent le même espace que le texte d’une vue, et le <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag> , pour le trait de soulignement en tilde.  
   
- Ornements incorporées sont des graphiques qui font partie de la vue de texte mis en forme. Ils sont organisés dans les différentes couches de l’ordre de plan. Il existe trois couches intégrés, comme suit : texte, le point d’insertion et la sélection. Toutefois, les développeurs peuvent définir plusieurs couches et les placer dans l’ordre par rapport à l’autre. Les trois types d’ornements embedded sont les ornements de texte relatif (qui déplacement lorsque le texte se déplace et sont supprimés lorsque le texte est supprimé), relatifs à un affichage des ornements (dont il faut faire avec les parties non textuelles de la vue) et sous contrôle de code propriétaire ornements (les développeur doive gérer leur placement).  
+ Les ornements incorporés sont des graphiques qui font partie de la vue de texte mise en forme. Ils sont organisés dans différentes couches d’ordre de plan. Il existe trois couches intégrées, comme suit : texte, signe insertion et sélection. Toutefois, les développeurs peuvent définir plus de couches et les placer dans l’ordre des uns avec les autres. Les trois types d’ornements incorporés sont des ornements relatifs au texte (qui se déplacent lorsque le texte se déplace et sont supprimés lors de la suppression du texte), des ornements relatifs à la vue (qui doivent être associés à des parties non textuelles de la vue) et des ornements contrôlés par le propriétaire (le développeur doit gérer leur positionnement).  
   
- Ornements contextuelles sont des graphiques qui s’affichent dans une petite fenêtre au-dessus de la vue de texte, par exemple, les info-bulles.  
+ Les ornements contextuels sont des graphiques qui s’affichent dans une petite fenêtre au-dessus de l’affichage de texte, par exemple, des info-bulles.  
   
-### <a name="projection"></a> Projection  
- Projection est une technique pour la construction d’un autre type de mémoire tampon de texte qui ne stocke pas réellement de texte, mais combine à la place du texte à partir d’autres mémoires tampons de texte. Par exemple, une mémoire tampon de projection peut être utilisé pour concaténer le texte à partir de deux autres mémoires tampons et présente le résultat comme s’il se trouve dans la mémoire tampon qu’une seule, ou pour masquer des parties du texte dans une mémoire tampon. Une mémoire tampon de projection peut agir comme une mémoire tampon source à une autre mémoire tampon de projection. Un jeu de mémoires tampons qui sont liés par projection peut être construit pour réorganiser le texte de différentes manières. (Un ensemble de ce type est également appelé un *graphique de mémoire tampon*.) La fonctionnalité mode plan de texte Visual Studio est implémentée à l’aide d’une mémoire tampon de projection pour masquer le texte réduit, et l’éditeur Visual Studio pour les pages ASP.NET utilise projection pour prendre en charge des langues embedded tels que Visual Basic et c#.  
+### <a name="projection"></a><a name="projection"></a> Projection  
+ La projection est une technique permettant de construire un type différent de mémoire tampon de texte qui ne stocke pas réellement de texte, mais combine le texte d’autres mémoires tampons de texte. Par exemple, une mémoire tampon de projection peut être utilisée pour concaténer le texte de deux autres mémoires tampons et présenter le résultat comme s’il s’agissait d’une seule mémoire tampon, ou pour masquer des parties du texte dans une mémoire tampon. Une mémoire tampon de projection peut agir comme une mémoire tampon source pour une autre mémoire tampon de projection. Un ensemble de mémoires tampons liées par projection peut être construit pour réorganiser le texte de différentes façons. (Un tel ensemble est également appelé graphique de *mémoire tampon*.) La fonctionnalité de mode plan de texte de Visual Studio est implémentée à l’aide d’une mémoire tampon de projection pour masquer le texte réduit, et l’éditeur Visual Studio pour les pages ASP.NET utilise la projection pour prendre en charge des langages incorporés tels que Visual Basic et C#.  
   
- Un <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBuffer> est créé à l’aide de <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBufferFactoryService>. Une mémoire tampon de projection est représenté par une séquence ordonnée de <xref:Microsoft.VisualStudio.Text.ITrackingSpan> les objets qui sont appelées *étendues de sources*. Le contenu de ces étendues est présenté comme une séquence de caractères. Les mémoires tampons de texte à partir de laquelle les étendues de source sont dessinés sont nommés *de source de mémoires tampons*. Les clients d’une mémoire tampon de projection n’est pas ont de Sachez qu’il diffère d’une mémoire tampon de texte ordinaires.  
+ Un <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBuffer> est créé à l’aide de <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBufferFactoryService> . Une mémoire tampon de projection est représentée par une séquence ordonnée d' <xref:Microsoft.VisualStudio.Text.ITrackingSpan> objets qui sont appelés *étendues de source*. Le contenu de ces étendues est présenté sous la forme d’une séquence de caractères. Les mémoires tampons de texte à partir desquelles les étendues sources sont dessinées sont des *mémoires tampons sources*nommées. Les clients d’une mémoire tampon de projection n’ont pas besoin de savoir qu’ils diffèrent d’une mémoire tampon de texte ordinaire.  
   
- La mémoire tampon de projection écoute les événements de modification du texte sur les mémoires tampons sources. Lorsque le texte dans une source s’étendent sur les modifications, la mémoire tampon de projection mappe les coordonnées de texte modifié à son propre coordonnées et déclenche des événements de modification de texte appropriée. Par exemple, prenez en compte les mémoires tampons sources A et B qui ont ce contenu :  
+ La mémoire tampon de projection écoute les événements de modification de texte sur les mémoires tampons sources. Lorsque le texte d’une étendue source change, la mémoire tampon de projection mappe les coordonnées de texte modifiées à ses propres coordonnées et déclenche des événements de modification de texte appropriés. Par exemple, considérez les mémoires tampons sources A et B qui ont le contenu suivant :  
   
 ```  
 A: ABCDE  
 B: vwxyz  
 ```  
   
- Si la mémoire tampon de projection P est formée à partir de deux étendues de texte, un qui possède toutes les mémoires tampons A et un autre dont toutes les mémoires tampons B, P a le contenu suivant :  
+ Si la mémoire tampon de projection P est formée à partir de deux étendues de texte, une qui a la totalité de la mémoire tampon a et l’autre qui a la totalité de la mémoire tampon B, P a le contenu suivant :  
   
 ```  
 P: ABCDEvwxyz  
 ```  
   
- Si la sous-chaîne `xy` est supprimé de la mémoire tampon B, puis de la mémoire tampon P déclenche un événement qui indique que les caractères aux positions 7 et 8 ont été supprimés.  
+ Si la sous-chaîne `xy` est supprimée de la mémoire tampon B, la mémoire tampon P déclenche un événement qui indique que les caractères aux positions 7 et 8 ont été supprimés.  
   
- La mémoire tampon de projection peut également être modifiée directement. Il propage les modifications vers les mémoires tampons source appropriée. Par exemple, si une chaîne est insérée dans la mémoire tampon P à la position 6 (la position d’origine du caractère « v »), l’insertion est propagée à la mémoire tampon B à la position 1.  
+ La mémoire tampon de projection peut également être modifiée directement. Il propage les modifications aux mémoires tampons sources appropriées. Par exemple, si une chaîne est insérée dans la mémoire tampon P à la position 6 (position d’origine du caractère « v »), l’insertion est propagée vers la mémoire tampon B à la position 1.  
   
- Il existe des restrictions sur les étendues de source qui contribuent à une mémoire tampon de projection. Étendues de source ne peuvent pas se chevaucher ; un emplacement dans une mémoire tampon de projection ne peut pas mapper à plusieurs emplacements dans une mémoire tampon source, et un emplacement dans une mémoire tampon source ne peut pas mapper à plusieurs emplacements dans une mémoire tampon de projection. Aucun circularities ne sont autorisées dans la relation de la mémoire tampon source.  
+ Il existe des restrictions sur les étendues de source qui contribuent à une mémoire tampon de projection. Les étendues de source peuvent ne pas se chevaucher ; un emplacement dans une mémoire tampon de projection ne peut pas être mappé à plusieurs emplacements dans une mémoire tampon source, et un emplacement dans une mémoire tampon source ne peut pas être mappé à plusieurs emplacements dans une mémoire tampon de projection. Aucune circularité n’est autorisée dans la relation de mémoire tampon source.  
   
- Les événements sont déclenchés lors de l’ensemble de la source met en mémoire tampon pour un change de mémoire tampon de projection et lors de l’ensemble de la source s’étend sur les modifications.  
+ Les événements sont déclenchés lorsque l’ensemble de mémoires tampons sources pour une mémoire tampon de projection change et lorsque le jeu d’étendues de la source change.  
   
- Un mémoire tampon d’élision est un type spécial de la mémoire tampon de projection. Il est principalement utilisé pour le mode plan et les opérations que développer et réduire les blocs de texte. Un mémoire tampon d’élision est basé sur simplement une mémoire tampon source, et les étendues dans la mémoire tampon d’élision doivent être le même ordre comme ils sont classés dans la mémoire tampon source.  
+ Une mémoire tampon d’élision est un type spécial de mémoire tampon de projection. Il est principalement utilisé pour le mode plan et pour les opérations qui développent et réduisent des blocs de texte. Une mémoire tampon d’élision est basée sur une seule mémoire tampon source, et les étendues de la mémoire tampon d’élision doivent être ordonnées de la même façon qu’elles sont ordonnées dans la mémoire tampon source.  
   
 ##### <a name="the-buffer-graph"></a>Graphique de mémoire tampon  
- Le <xref:Microsoft.VisualStudio.Text.Projection.IBufferGraph> interface Active le mappage entre un graphique des mémoires tampons de projection. Toutes les mémoires tampons de texte et les mémoires tampons de projection sont collectés dans un graphique acyclique dirigé, comme l’arborescence de syntaxe abstraite qui est généré par un compilateur de langage. Le graphique est défini par la mémoire tampon supérieure, ce qui peut être toute mémoire tampon de texte. Graphique de mémoire tampon peut mapper à partir d’un point dans la mémoire tampon supérieure à un point dans une mémoire tampon source, ou à partir d’une étendue dans la mémoire tampon supérieure à un ensemble d’étendues dans une mémoire tampon source. De même, il peut mapper un point ou s’étendre sur à partir d’une mémoire tampon source à un point dans la mémoire tampon supérieure. Graphiques de la mémoire tampon sont créés à l’aide de la <xref:Microsoft.VisualStudio.Text.Projection.IBufferGraphFactoryService>.  
+ L' <xref:Microsoft.VisualStudio.Text.Projection.IBufferGraph> interface active le mappage sur un graphique de mémoires tampons de projection. Toutes les mémoires tampons de texte et mémoires tampons de projection sont collectées dans un graphique acycliques dirigé, de façon similaire à l’arborescence de syntaxe abstraite générée par un compilateur de langage. Le graphique est défini par la mémoire tampon supérieure, qui peut être n’importe quelle mémoire tampon de texte. Le graphique de mémoire tampon peut être mappé d’un point de la mémoire tampon supérieure à un point d’une mémoire tampon source, ou d’une étendue dans la mémoire tampon supérieure à un ensemble d’étendues dans une mémoire tampon source. De même, il peut mapper un point ou une étendue d’une mémoire tampon source à un point dans la mémoire tampon supérieure. Les graphiques de mémoire tampon sont créés à l’aide du <xref:Microsoft.VisualStudio.Text.Projection.IBufferGraphFactoryService> .  
   
-##### <a name="events-and-projection-buffers"></a>Événements et les mémoires tampons de Projection  
- Lorsqu’une mémoire tampon de projection est modifiée, les modifications sont envoyées à partir de la mémoire tampon de projection aux mémoires tampons qui en dépendent. Une fois que toutes les mémoires tampons sont modifiés, les événements de modification de mémoire tampon sont déclenchés, en commençant par la mémoire tampon plus profonde.  
+##### <a name="events-and-projection-buffers"></a>Mémoires tampons d’événements et de projection  
+ Lorsqu’une mémoire tampon de projection est modifiée, les modifications sont envoyées de la mémoire tampon de projection aux mémoires tampons qui en dépendent. Une fois que toutes les mémoires tampons ont été modifiées, les événements de modification de mémoire tampon sont déclenchés, en commençant par la mémoire tampon la plus profonde.  
   
-### <a name="outlining"></a> Le mode plan  
- Le mode plan est la possibilité de développer ou réduire différents blocs de texte dans un affichage de texte. Le mode plan est défini comme une sorte de <xref:Microsoft.VisualStudio.Text.Tagging.ITag>, dans la même façon que les ornements sont définis. Un <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag> est une balise qui définit une zone de texte qui peut être développée ou réduite. Pour utiliser le mode plan, vous devez importer le <xref:Microsoft.VisualStudio.Text.Outlining.IOutliningManagerService> pour obtenir un <xref:Microsoft.VisualStudio.Text.Outlining.IOutliningManager>. Le Gestionnaire de mode plan énumère, réduit et développe les blocs différents, qui sont représentées en tant que <xref:Microsoft.VisualStudio.Text.Outlining.ICollapsible> objets et déclenche des événements en conséquence.  
+### <a name="outlining"></a><a name="outlining"></a> Mode plan  
+ Le mode plan permet de développer ou de réduire différents blocs de texte dans une vue de texte. Le mode plan est défini comme un type de <xref:Microsoft.VisualStudio.Text.Tagging.ITag> , de la même façon que les ornements sont définis. Un <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag> est une balise qui définit une zone de texte qui peut être développée ou réduite. Pour utiliser le mode plan, vous devez importer le <xref:Microsoft.VisualStudio.Text.Outlining.IOutliningManagerService> pour récupérer un <xref:Microsoft.VisualStudio.Text.Outlining.IOutliningManager> . Le gestionnaire de mode plan énumère, réduit et développe les différents blocs, représentés sous forme d' <xref:Microsoft.VisualStudio.Text.Outlining.ICollapsible> objets, et déclenche les événements en conséquence.  
   
-### <a name="mousebindings"></a> Liaisons de souris  
- Liaisons de souris lier les mouvements de souris à des commandes différentes. Liaisons de souris sont définies en utilisant un <xref:Microsoft.VisualStudio.Text.Editor.IMouseProcessorProvider>, et combinaisons de touches sont définies en utilisant un <xref:Microsoft.VisualStudio.Text.Editor.IKeyProcessorProvider>. Le <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> automatiquement instancie toutes les liaisons et les connecte à des événements de souris dans la vue.  
+### <a name="mouse-bindings"></a><a name="mousebindings"></a> Liaisons de la souris  
+ Les liaisons de la souris lient les mouvements de la souris à différentes commandes. Les liaisons de souris sont définies à l’aide d’un <xref:Microsoft.VisualStudio.Text.Editor.IMouseProcessorProvider> , et les combinaisons de touches sont définies à l’aide d’un <xref:Microsoft.VisualStudio.Text.Editor.IKeyProcessorProvider> . <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost>Instancie automatiquement toutes les liaisons et les connecte aux événements de souris dans la vue.  
   
- Le <xref:Microsoft.VisualStudio.Text.Editor.IMouseProcessor> interface contient les gestionnaires d’événements de prétraitement et de post-traitement pour différents événements de souris. Pour gérer un des événements, vous pouvez remplacer certaines méthodes dans <xref:Microsoft.VisualStudio.Text.Editor.MouseProcessorBase>.  
+ L' <xref:Microsoft.VisualStudio.Text.Editor.IMouseProcessor> interface contient des gestionnaires d’événements de prétraitement et de prétraitement pour différents événements de souris. Pour gérer l’un des événements, vous pouvez substituer certaines des méthodes dans <xref:Microsoft.VisualStudio.Text.Editor.MouseProcessorBase> .  
   
-### <a name="editoroperations"></a> Opérations de l’éditeur  
- Opérations de l’éditeur peuvent être utilisées pour automatiser l’interaction avec l’éditeur, sous forme de scripts ou d’autres fins. Vous pouvez importer le <xref:Microsoft.VisualStudio.Text.Operations.IEditorOperationsFactoryService> aux opérations d’accès sur une donnée <xref:Microsoft.VisualStudio.Text.Editor.ITextView>. Vous pouvez ensuite utiliser ces objets pour modifier la sélection, faites défiler la vue ou déplacer le signe insertion vers différentes parties de la vue.  
+### <a name="editor-operations"></a><a name="editoroperations"></a> Opérations de l’éditeur  
+ Les opérations de l’éditeur peuvent être utilisées pour automatiser l’interaction avec l’éditeur, à des fins de script ou à d’autres fins. Vous pouvez importer le <xref:Microsoft.VisualStudio.Text.Operations.IEditorOperationsFactoryService> pour accéder aux opérations sur un donné <xref:Microsoft.VisualStudio.Text.Editor.ITextView> . Vous pouvez ensuite utiliser ces objets pour modifier la sélection, faire défiler la vue ou placer le signe insertion sur différentes parties de la vue.  
   
-### <a name="intellisense"></a> IntelliSense  
- IntelliSense prend en charge la saisie semi-automatique des instructions, pour la signature (également appelés informations sur les paramètres), Info Express et des ampoules.  
+### <a name="intellisense"></a><a name="intellisense"></a> Semi  
+ IntelliSense prend en charge la saisie semi-automatique des instructions, l’aide sur la signature (également appelée informations sur les paramètres), info Express et ampoules.  
   
- Saisie semi-automatique des instructions fournit des listes contextuelles des saisies semi-automatiques de potentiels pour les noms de méthode, les éléments XML et d’autres éléments de balisage ou de codage. En règle générale, un mouvement utilisateur appelle une session de saisie semi-automatique. La session affiche la liste des saisies semi-automatiques potentiels, et l’utilisateur peut sélectionner un ou ignorer la liste. Le <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker> est responsable de la création et en déclenchant le <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSession>. Le <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> calcule le <xref:Microsoft.VisualStudio.Language.Intellisense.CompletionSet> des éléments de saisie semi-automatique pour la session.  
+ La saisie semi-automatique des instructions fournit des listes contextuelles d’achèvement potentiel pour les noms de méthode, les éléments XML et d’autres éléments de codage ou de balisage. En général, un mouvement utilisateur appelle une session de saisie semi-automatique. La session affiche la liste des saisies semi-automatiques potentielles et l’utilisateur peut en sélectionner un ou faire disparaître la liste. La <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker> est chargée de créer et de déclencher le <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSession> . <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>Calcule le <xref:Microsoft.VisualStudio.Language.Intellisense.CompletionSet> des éléments de saisie semi-automatique pour la session.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Service de langage et les Points d’Extension Éditeur](../extensibility/language-service-and-editor-extension-points.md)   
+ [Points d’extension du service de langage et de l’éditeur](../extensibility/language-service-and-editor-extension-points.md)   
  [Importations de l’éditeur](../extensibility/editor-imports.md)

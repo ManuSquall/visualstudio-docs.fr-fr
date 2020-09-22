@@ -1,5 +1,5 @@
 ---
-title: Variante de génération de mipmap | Microsoft Docs
+title: Variante de génération de mappage MIP | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3ac567677776c225008a581cc4d5de85ec2c882d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63383956"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839985"
 ---
 # <a name="mip-map-generation-variant"></a>Variante de génération mipmap
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Active les mipmaps sur les textures qui ne sont pas des cibles de rendu.
   
  Si cette variante donne lieu à un gain de performances sensible, cela indique que vous utilisez des textures sans avoir activé les mipmaps et que donc vous ne tirez pas le meilleur parti du cache de texture.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  La génération de mipmaps est forcée à chaque appel à `ID3D11Device::CreateTexture2D`, qui est chargé de créer une texture source. Plus spécifiquement, la génération de mipmaps est forcée quand l'objet D3D11_TEXTUR2D_DESC passé dans `pDesc` décrit une ressource de nuanceur inchangé, à savoir :  
   
 - Seul l'indicateur D3D11_BIND_SHADER_RESOURCE du membre BindFlags est défini.  
@@ -45,7 +45,7 @@ Active les mipmaps sur les textures qui ne sont pas des cibles de rendu.
   
   Si des mipmaps ont été générés automatiquement pour une texture, les appels à `ID3D11Device::CreateShaderResourceView` sont modifiés pendant la lecture pour utiliser la chaîne MIP lors de l'échantillonnage de texture.  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a> Exemple  
  La variante **Génération mipmap** peut être reproduite avec un code similaire à celui-ci :  
   
 ```  
@@ -65,7 +65,7 @@ for (auto&& mip_level : initial_data)
 d3d_device->CreateTexture2D(&texture_description, initial_data.data(), &texture)  
 ```  
   
- Pour créer une texture contenant une chaîne MIP complète, affectez à `D3D11_TEXTURE2D_DESC::MipLevels` la valeur 0. Le nombre de niveaux mip dans une chaîne mip complète est floor(log2(n) + 1), où n est la plus grande dimension de la texture.  
+ Pour créer une texture contenant une chaîne MIP complète, affectez à `D3D11_TEXTURE2D_DESC::MipLevels` la valeur 0. Le nombre de niveaux MIP dans une chaîne MIP complète est Floor (Log2 (n) + 1), où n est la plus grande dimension de la texture.  
   
  Rappelez-vous qu'au moment de fournir les données initiales à `CreateTexture2D`, vous devez fournir un objet D3D11_SUBRESOURCE_DATA pour chaque niveau MIP.  
   
@@ -73,4 +73,4 @@ d3d_device->CreateTexture2D(&texture_description, initial_data.data(), &texture)
 > Si vous voulez fournir votre propre contenu de niveau MIP au lieu de le générer automatiquement, vous devez créer vos textures à l'aide d'un éditeur d'image qui prend en charge les textures mipmappées, puis charger le fichier et passer les niveaux MIP à `CreateTexture2D`.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Variante de dimensions de la texture moitié/un quart](../debugger/half-quarter-texture-dimensions-variant.md)
+ [Variante de dimensions de texture demi-quart](../debugger/half-quarter-texture-dimensions-variant.md)

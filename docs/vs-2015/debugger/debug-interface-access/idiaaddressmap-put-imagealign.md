@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5e0fa57c38c8451bde84d96ab32bc7980c5e2d8b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442217"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839597"
 ---
-# <a name="idiaaddressmapputimagealign"></a>IDiaAddressMap::put_imageAlign
+# <a name="idiaaddressmapput_imagealign"></a>IDiaAddressMap::put_imageAlign
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Définit l’alignement de l’image.  
@@ -35,18 +35,18 @@ HRESULT put_imageAlign ( 
   
 #### <a name="parameters"></a>Paramètres  
  NewVal  
- [in] La nouvelle valeur d’alignement image pour le fichier exécutable.  
+ dans Nouvelle valeur d’alignement d’image pour l’exécutable.  
   
 ## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
-## <a name="remarks"></a>Notes  
- Images (fichiers exécutables chargés) sont alignés sur des limites de mémoire spécifié. Cet alignement peut être affecté par l’architecture du système actuel et par les options de temps de compilation et de liaison. Alignement de l’image est toujours sur les limites d’octets. Les valeurs d’alignement image suivantes sont valides : limites de 1, 2, 4, 8, 16, 32 et 64 octets.  
+## <a name="remarks"></a>Remarques  
+ Les images (exécutables chargés) sont alignées sur les limites de mémoire spécifiées. Cet alignement peut être affecté par l’architecture système actuelle et par les options de compilation et de liaison temporelle. L’alignement d’image est toujours sur les limites d’octets. Les valeurs d’alignement d’image suivantes sont valides : 1, 2, 4, 8, 16, 32 et 64 limites d’octets.  
   
- L’alignement de l’image actuelle peut être récupéré avec un appel à la [IDiaAddressMap::get_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-get-imagealign.md) (méthode).  
+ L’alignement de l’image actuelle peut être récupéré à l’aide d’un appel à la méthode [IDiaAddressMap :: get_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-get-imagealign.md) .  
   
 > [!NOTE]
-> L’image est déjà chargée au moment où que cette méthode peut être appelée. Le `put_imageAlign` méthode est généralement utilisée lorsque l’image a été déplacé ou modifié et un nouvel alignement est nécessaire.  
+> L’image est déjà chargée au moment où cette méthode peut être appelée. La `put_imageAlign` méthode est généralement utilisée lorsque l’image a été déplacée ou modifiée et qu’un nouvel alignement est nécessaire.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)   

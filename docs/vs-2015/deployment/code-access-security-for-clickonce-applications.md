@@ -1,5 +1,5 @@
 ---
-title: Sécurité d’accès du code pour les Applications ClickOnce | Microsoft Docs
+title: Sécurité d’accès du code pour les applications ClickOnce | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -25,11 +25,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 54160bbdfe834a1b3226f4445b862c151bcf35c3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63423280"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839342"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>Sécurité d'accès du code pour les applications ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,13 +53,13 @@ Les applications ClickOnce sont basées sur le .NET Framework et sont soumises �
 ## <a name="configuring-security-permissions"></a>Configuration des autorisations de sécurité  
  Vous devez toujours configurer votre application ClickOnce pour demander la zone permettant de limiter les autorisations de sécurité d'accès du code. Vous pouvez définir les autorisations de sécurité dans la page **Sécurité** du **Concepteur de projets**.  
   
- La page **Sécurité** du **Concepteur de projets** contient une case à cocher **Activer les paramètres de sécurité ClickOnce** . Quand cette case est cochée, les demandes d'autorisation de sécurité sont ajoutées au manifeste de déploiement de votre application. Au moment de l'installation, l'utilisateur est invité à accorder des autorisations si les autorisations demandées dépassent les autorisations par défaut de la zone à partir de laquelle l'application est déployée. Pour plus d'informations, voir [Procédure : Activer les paramètres de sécurité ClickOnce](../deployment/how-to-enable-clickonce-security-settings.md).  
+ La page **Sécurité** du **Concepteur de projets** contient une case à cocher **Activer les paramètres de sécurité ClickOnce** . Quand cette case est cochée, les demandes d'autorisation de sécurité sont ajoutées au manifeste de déploiement de votre application. Au moment de l'installation, l'utilisateur est invité à accorder des autorisations si les autorisations demandées dépassent les autorisations par défaut de la zone à partir de laquelle l'application est déployée. Pour plus d'informations, consultez [How to: Enable ClickOnce Security Settings](../deployment/how-to-enable-clickonce-security-settings.md).  
   
  Différents niveaux d'autorisations sont accordés, sans demande de confirmation, à des applications déployées à partir d'emplacements différents. Par exemple, quand une application est déployée à partir d'Internet, elle reçoit un jeu d'autorisations très restrictif. Si elle est installée à partir d'un intranet local, elle reçoit des autorisations plus larges. Si elle est installée à partir d'un CD-ROM, elle reçoit des autorisations Confiance totale.  
   
- Pour définir des autorisations, commencez par choisir une zone de sécurité dans la liste **Zone** de la page **Sécurité** . Si vous comptez déployer votre application à partir de plusieurs zones, choisissez la zone avec le moins d'autorisations. Pour plus d'informations, voir [Procédure : Définir une Zone de sécurité pour une Application ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md).  
+ Pour définir des autorisations, commencez par choisir une zone de sécurité dans la liste **Zone** de la page **Sécurité** . Si vous comptez déployer votre application à partir de plusieurs zones, choisissez la zone avec le moins d'autorisations. Pour plus d'informations, consultez [How to: Set a Security Zone for a ClickOnce Application](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md).  
   
- Les propriétés qui peuvent être définies varient selon le jeu d'autorisations, mais tous les jeux d'autorisations ne possèdent pas des propriétés configurables. Pour plus d'informations sur la liste complète des autorisations que votre application peut demander, consultez <xref:System.Security.Permissions>. Pour plus d’informations sur la façon de définir des autorisations pour une zone personnalisée, consultez [Comment : Définir des autorisations personnalisées pour une Application ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md).  
+ Les propriétés qui peuvent être définies varient selon le jeu d'autorisations, mais tous les jeux d'autorisations ne possèdent pas des propriétés configurables. Pour plus d'informations sur la liste complète des autorisations que votre application peut demander, consultez <xref:System.Security.Permissions>. Pour plus d’informations sur la façon de définir des autorisations pour une zone personnalisée, consultez [How to: Set Custom Permissions for a ClickOnce Application](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md).  
   
 ## <a name="debugging-an-application-that-has-restricted-permissions"></a>Débogage d'une application disposant d'autorisations restreintes  
  En tant que développeur, vous utilisez très probablement votre ordinateur de développement avec les autorisations Confiance totale. Par conséquent, vous ne voyez pas apparaître les mêmes exceptions de sécurité lors du débogage de l'application que celles pouvant être rencontrées par les utilisateurs qui exécutent l'application avec des autorisations restreintes.  
@@ -70,7 +70,7 @@ Les applications ClickOnce sont basées sur le .NET Framework et sont soumises �
   
  De plus, lors de l’écriture du code, la fonctionnalité IntelliSense de l’éditeur de code désactive tous les membres qui ne sont pas inclus dans les autorisations de sécurité que vous avez configurées.  
   
- Pour plus d'informations, voir [Procédure : Déboguer une application ClickOnce avec des autorisations restreintes](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md).  
+ Pour plus d'informations, consultez [How to: Debug a ClickOnce Application with Restricted Permissions](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md).  
   
 ## <a name="security-permissions-for-browser-hosted-applications"></a>Autorisations de sécurité pour les applications hébergées dans un navigateur  
  Visual Studio fournit les types de projets suivants pour les applications Windows Presentation Foundation (WPF) :  
@@ -95,9 +95,9 @@ Les applications ClickOnce sont basées sur le .NET Framework et sont soumises �
   
 ## <a name="see-also"></a>Voir aussi  
  [Sécurisation des applications ClickOnce](../deployment/securing-clickonce-applications.md)   
- [Guide pratique pour Activer les paramètres de sécurité ClickOnce](../deployment/how-to-enable-clickonce-security-settings.md)   
- [Guide pratique pour Définir une Zone de sécurité pour une Application ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
- [Guide pratique pour Définir des autorisations personnalisées pour une Application ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
- [Guide pratique pour Déboguer une Application ClickOnce avec des autorisations restreintes](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [Comment : activer les paramètres de sécurité ClickOnce](../deployment/how-to-enable-clickonce-security-settings.md)   
+ [Comment : définir une zone de sécurité pour une application ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
+ [Comment : définir des autorisations personnalisées pour une application ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [Comment : déboguer une application ClickOnce avec des autorisations restreintes](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
  [Vue d’ensemble du déploiement d’applications approuvées](../deployment/trusted-application-deployment-overview.md)   
- [Page Sécurité, Concepteur de projet](../ide/reference/security-page-project-designer.md)
+ [Page Sécurité, Concepteur de projets](../ide/reference/security-page-project-designer.md)

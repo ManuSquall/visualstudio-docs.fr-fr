@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Utiliser des variables d’environnement dans une build | Microsoft Docs'
+title: 'Comment : utiliser des variables d’environnement dans une génération | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -14,13 +14,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 72d810f998b111aa2ec08a5874498ed8ee23a3be
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437888"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839497"
 ---
-# <a name="how-to-use-environment-variables-in-a-build"></a>Procédure : Utiliser des variables d’environnement dans une build
+# <a name="how-to-use-environment-variables-in-a-build"></a>Comment : utiliser des variables d'environnement dans une génération
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Lorsque vous générez des projets, il est souvent nécessaire de définir des options de génération à l’aide des informations qui ne figurent pas dans le fichier projet ou dans les fichiers qui composent votre projet. Ces informations sont généralement stockées dans les variables d’environnement.  
@@ -48,7 +48,7 @@ Lorsque vous générez des projets, il est souvent nécessaire de définir des o
     > [!NOTE]
     > Comme les noms de propriété ne respectent pas la casse, `$(ToolsPath)` et `$(TOOLSPATH)` référencent la même variable d’environnement ou propriété.  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a> Exemple  
  Le fichier projet suivant utilise des variables d’environnement pour spécifier l’emplacement des répertoires.  
   
 ```  

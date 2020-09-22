@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Choisir des événements d’échantillonnage | Microsoft Docs'
+title: Guide pratique pour choisir des événements d’échantillonnage | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,13 +20,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 017414bdbf8e0e1a3a664782aab1ea44bda030c4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432833"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839274"
 ---
-# <a name="how-to-choose-sampling-events"></a>Procédure : Choisissez les événements d’échantillonnage
+# <a name="how-to-choose-sampling-events"></a>Comment : choisir des événements d’échantillonnage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Par défaut, les outils de profilage de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] collectent les données de performances à un intervalle correspondant à un nombre de cycles processeur utilisés par le processus profilé. Le nombre de cycles par défaut dans un intervalle est de 10 000 000, ce qui correspond approximativement à 0,01 seconde sur un ordinateur 1 GHz. Vous pouvez modifier le nombre de cycles d’un intervalle, ainsi que l’événement d’échantillon. Les événements d’échantillons suivants sont disponibles :  
@@ -62,8 +62,8 @@ Par défaut, les outils de profilage de [!INCLUDE[vsprvs](../includes/vsprvs-md.
 5. Lorsque vous sélectionnez un événement d’échantillon, une valeur d’intervalle d’échantillonnage par défaut s’affiche dans la zone de texte **Intervalle d’échantillonnage**. Si nécessaire, vous pouvez entrer la valeur de votre choix dans la zone de texte.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Configuration de sessions de performance](../profiling/configuring-performance-sessions.md)   
- [Guide pratique pour Choisissez les méthodes de collecte](../profiling/how-to-choose-collection-methods.md)   
+ [Configuration des sessions de performance](../profiling/configuring-performance-sessions.md)   
+ [Comment : choisir des méthodes de collection](../profiling/how-to-choose-collection-methods.md)   
  [Compteurs UC et Windows](../profiling/cpu-and-windows-counters.md)   
  [Fonctionnement des valeurs de données d’échantillonnage](../profiling/understanding-sampling-data-values.md)   
  [Profilage à partir de la ligne de commande](../profiling/using-the-profiling-tools-from-the-command-line.md)

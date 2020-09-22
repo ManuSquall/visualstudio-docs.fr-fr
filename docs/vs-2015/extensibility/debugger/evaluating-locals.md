@@ -1,5 +1,5 @@
 ---
-title: Évaluer les variables locales | Microsoft Docs
+title: Évaluation des variables locales | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,32 +12,32 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7e31aa560422c9f18ec30a6e203559ef3ed10c52
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444771"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840246"
 ---
 # <a name="evaluating-locals"></a>Évaluation des variables locales
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
-> Dans Visual Studio 2015, ce moyen d’implémenter des évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateurs d’Expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple d’évaluateur d’Expression gérés](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> Dans Visual Studio 2015, cette façon d’implémenter les évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateur d’expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple évaluateur d’expression managée](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) est appelée pour obtenir la valeur de local, ainsi que les nom de l’ordinateur local et le type. Dans la mesure où la valeur d’une variable locale est dépendante de l’état actuel du programme, la valeur de la locale doit être obtenue à partir de la mémoire. Le [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md) objet est utilisé pour lier le [IDebugField](../../extensibility/debugger/reference/idebugfield.md) objet représentant l’ordinateur local vers l’emplacement approprié dans la mémoire contenant la valeur. Cet emplacement en mémoire est représenté par un [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) objet.  
+ [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) est appelé pour obtenir la valeur d’un local, ainsi que le nom et le type de la variable locale. Étant donné que la valeur d’un local dépend de l’état actuel du programme, la valeur de la variable locale doit être obtenue à partir de la mémoire. L’objet [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md) est utilisé pour lier l’objet [IDebugField](../../extensibility/debugger/reference/idebugfield.md) qui représente le local à l’emplacement approprié en mémoire contenant la valeur. Cet emplacement en mémoire est représenté par un objet [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) .  
   
  Cette fonctionnalité de récupération de la valeur d’une variable locale est encapsulée dans une fonction d’assistance qui effectue les tâches suivantes :  
   
-1. Lie le `IDebugField` objet vers la mémoire pour obtenir un `IDebugObject` objet.  
+1. Lie l' `IDebugField` objet à la mémoire pour obtenir un `IDebugObject` objet.  
   
-2. Obtient la valeur de la mémoire. Cette valeur est représentée comme une série d’octets.  
+2. Obtient la valeur de la mémoire. Cette valeur est représentée sous la forme d’une série d’octets.  
   
-3. Met en forme la valeur basée sur type de l’ordinateur local.  
+3. Met en forme la valeur en fonction du type de l’local.  
   
-4. Retourne un objet générique qui contient la valeur de la locale. En c#, il s’agit d’un `object`, et en C++, il s’agit d’un `VARIANT`.  
+4. Retourne un objet générique qui contient la valeur de la variable locale. En C#, il s’agit d’un `object` , et en C++, il s’agit d’un `VARIANT` .  
   
 ## <a name="managed-code"></a>Code managé  
- Il s’agit d’une implémentation d’une fonction qui Récupère la valeur d’une variable locale dans le code managé.  
+ Il s’agit d’une implémentation d’une fonction qui récupère la valeur d’une variable locale dans du code managé.  
   
 ```csharp  
 namespace EEMC  
@@ -79,7 +79,7 @@ namespace EEMC
 ```  
   
 ## <a name="unmanaged-code"></a>Code non managé  
- Il s’agit d’une implémentation d’une fonction qui Récupère la valeur d’une variable locale dans le code non managé. `FieldGetType` est indiqué dans [l’obtention des valeurs locales](../../extensibility/debugger/getting-local-values.md).  
+ Il s’agit d’une implémentation d’une fonction qui récupère la valeur d’une variable locale dans du code non managé. `FieldGetType` est affiché dans [obtention des valeurs locales](../../extensibility/debugger/getting-local-values.md).  
   
 ```cpp#  
 HRESULT FieldGetPrimitiveValue(  
@@ -192,6 +192,6 @@ HRESULT FieldGetPrimitiveValue(
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Exemple d’implémentation des variables locales](../../extensibility/debugger/sample-implementation-of-locals.md)   
- [Obtention des valeurs locales](../../extensibility/debugger/getting-local-values.md)   
+ [Exemple d’implémentation de variables locales](../../extensibility/debugger/sample-implementation-of-locals.md)   
+ [Obtenir des valeurs locales](../../extensibility/debugger/getting-local-values.md)   
  [Contexte d’évaluation](../../extensibility/debugger/evaluation-context.md)

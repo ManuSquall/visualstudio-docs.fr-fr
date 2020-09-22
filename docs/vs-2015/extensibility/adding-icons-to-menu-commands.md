@@ -1,5 +1,5 @@
 ---
-title: Ajouter des icônes aux commandes de Menu | Microsoft Docs
+title: Ajout d’icônes à des commandes de menu | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,41 +12,41 @@ ms.assetid: 362a0c7e-5729-4297-a83f-1aba1a37fd44
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 940bef878e7360cd3709b6b3403eff2261948e0e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1a0a433534894a8c715047a0431a045aa9429619
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953149"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839557"
 ---
 # <a name="adding-icons-to-menu-commands"></a>Ajout d’icônes aux commandes de menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Commandes peuvent apparaître dans les menus et barres d’outils. Des barres d’outils, il est courant pour une commande à afficher avec une simple icône (pour économiser de l’espace) tout en les menus de qu'une commande apparaît généralement avec une icône et du texte.  
+Les commandes peuvent apparaître dans les menus et les barres d’outils. Dans les barres d’outils, il est courant qu’une commande s’affiche avec simplement une icône (pour économiser de l’espace) tandis que dans les menus, une commande apparaît généralement avec une icône et un texte.  
   
- Icônes sont de 16 pixels de large par 16 pixels de haut et peuvent être de couleurs 8 bits (256 couleurs) ou de profondeur de couleur 32 bits (couleurs vraies). icônes de couleur 32 bits sont préférables. Icônes sont généralement organisés en une seule ligne horizontale dans une seule bitmap, bien que plusieurs images bitmap sont autorisés. Cette image bitmap est déclarée dans le fichier .vsct, ainsi que des icônes disponibles dans l’image bitmap. Consultez la référence pour le [Bitmaps élément](../extensibility/bitmaps-element.md) pour plus d’informations.  
+ Les icônes sont de 16 pixels de large par 16 pixels de haut et peuvent avoir une profondeur de couleur de 8 bits (256 couleurs) ou une profondeur de couleur de 32 bits (couleur vraie). les icônes de couleur 32 bits sont préférées. Les icônes sont généralement organisées en une seule ligne horizontale dans une seule bitmap, bien que plusieurs bitmaps soient autorisées. Cette image bitmap est déclarée dans le fichier. vsct avec les icônes individuelles disponibles dans le bitmap. Pour plus d’informations, consultez la référence de l' [élément bitmaps](../extensibility/bitmaps-element.md) .  
   
 ## <a name="adding-an-icon-to-a-command"></a>Ajout d’une icône à une commande  
- La procédure suivante suppose que vous avez un projet VSPackage existant avec une commande de menu. Pour savoir comment procéder, consultez [création d’une Extension avec une commande de Menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
+ La procédure suivante suppose que vous disposez d’un projet VSPackage existant avec une commande de menu. Pour savoir comment procéder, consultez [création d’une extension à l’aide d’une commande de menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-1.  Créer une image bitmap avec une profondeur de couleur de 32 bits. Une icône est toujours 16 x 16 cette bitmap doit donc être 16 pixels de haut et un multiple de 16 pixels.  
+1. Créez une image bitmap avec une profondeur de couleur de 32 bits. Une icône est toujours 16 x 16, ce qui signifie que cette bitmap doit avoir une hauteur de 16 pixels et un multiple de 16 pixels de large.  
   
-     Chaque icône est placée sur l’image bitmap à côté d’eux en une seule ligne. Utilisez le canal alpha pour indiquer les emplacements de transparence dans chaque icône.  
+     Chaque icône est placée sur l’image bitmap à côté les unes des autres sur une seule ligne. Utilisez le canal alpha pour indiquer les emplacements de transparence dans chaque icône.  
   
-     Si vous utilisez une profondeur de couleurs 8 bits, utilisez magenta, `RGB(255,0,255)`, comme la transparence. Toutefois, les icônes de couleur 32 bits sont préférables.  
+     Si vous utilisez une profondeur de couleur de 8 bits, utilisez le magenta, `RGB(255,0,255)` , comme transparence. Toutefois, les icônes de couleur 32 bits sont préférées.  
   
-2.  Copiez le fichier d’icône dans le répertoire de ressources dans votre projet VSPackage. Dans l’Explorateur de solutions, ajoutez l’icône au projet. (Sélectionner des ressources et dans le menu contextuel, cliquez sur Ajouter, puis sur un élément existant, puis sélectionnez votre fichier d’icône.)  
+2. Copiez le fichier icône dans le répertoire Resources de votre projet VSPackage. Dans la Explorateur de solutions, ajoutez l’icône au projet. (Sélectionnez ressources, puis dans le menu contextuel, cliquez sur Ajouter, puis sur élément existant, et sélectionnez votre fichier d’icône.)  
   
-3.  Ouvrez le fichier .vsct dans l’éditeur.  
+3. Ouvrez le fichier. vsct dans l’éditeur.  
   
-4.  Ajouter un `GuidSymbol` élément avec un nom de **testIcon**. Créer un GUID (**outils / Créer GUID**, puis sélectionnez **au Format de Registre** et cliquez sur Copier) et collez-la dans la `value` attribut. Le résultat doit ressembler à ceci :  
+4. Ajoutez un `GuidSymbol` élément avec le nom **testIcon**. Créez un GUID (**Outils/créer un GUID**, puis sélectionnez le **format du registre** , puis cliquez sur copier) et collez-le dans l' `value` attribut. Le résultat doit ressembler à ceci :  
   
     ```xml  
     <!-- Create your own GUID -->  
     <GuidSymbol name="testIcon" value="{00000000-0000-0000-0000-0000}">  
     ```  
   
-5.  Ajouter un `<IDSymbol>` pour l’icône. Le `name` attribut est l’ID de l’icône et le `value` indique sa position sur la bande, le cas échéant. S’il existe qu’une seule icône, ajoutez 1. Le résultat doit ressembler à ceci :  
+5. Ajoutez un `<IDSymbol>` pour l’icône. L' `name` attribut est l’ID de l’icône et le `value` indique sa position sur la bande, le cas échéant. S’il n’y a qu’une seule icône, ajoutez 1. Le résultat doit ressembler à ceci :  
   
     ```xml  
     <!-- Create your own GUID -->  
@@ -55,21 +55,21 @@ Commandes peuvent apparaître dans les menus et barres d’outils. Des barres d�
     </GuidSymbol>  
     ```  
   
-6.  Créer un `<Bitmap>` dans la `<Bitmaps>` section du fichier .vsct pour représenter la bitmap qui contient les icônes.  
+6. Créez un `<Bitmap>` dans la `<Bitmaps>` section du fichier. vsct pour représenter l’image bitmap contenant les icônes.  
   
-    -   Définir le `guid` valeur sur le nom de la `<GuidSymbol>` élément que vous avez créé à l’étape précédente.  
+    - Définissez la `guid` valeur sur le nom de l' `<GuidSymbol>` élément que vous avez créé à l’étape précédente.  
   
-    -   Définir le `href` valeur le chemin d’accès relatif du fichier bitmap (dans ce cas **ressources\\< nom du fichier icône\>**.  
+    - Définissez la `href` valeur sur le chemin d’accès relatif du fichier bitmap (dans ce cas, **resources \\<\> nom du fichier icône**.  
   
-    -   Définir le `usedList` valeur à la IDSymbol que vous avez créé précédemment. Cet attribut spécifie une liste délimitée par des virgules des icônes à utiliser dans le VSPackage. Icônes pas dans la liste sont exclus de formulaire compilation.  
+    - Définissez la `usedList` valeur sur le IDSymbol que vous avez créé précédemment. Cet attribut spécifie une liste délimitée par des virgules des icônes à utiliser dans le VSPackage. Les icônes qui ne figurent pas dans la liste sont des formulaires exclus de la compilation.  
   
-         Le bloc de Bitmap doit ressembler à ceci :  
+         Le bloc bitmap doit se présenter comme suit :  
   
         ```xml  
         <Bitmap guid="testIcon" href="Resources\<icon file name>" usedList="testIcon1"/>  
         ```  
   
-7.  Dans l’espace `<Button>` élément, définissez la `Icon` élément aux valeurs GUIDSymbol et IDSymbol vous avez créé précédemment. Voici un exemple d’un élément de bouton avec ces valeurs :  
+7. Dans l' `<Button>` élément existant, définissez l' `Icon` élément sur les valeurs GUIDSymbol et IDSymbol que vous avez créées précédemment. Voici un exemple d’élément Button avec ces valeurs :  
   
     ```xml  
     <Button guid="guidAddIconCmdSet" id="cmdidMyCommand" priority="0x0100" type="Button">  
@@ -81,8 +81,8 @@ Commandes peuvent apparaître dans les menus et barres d’outils. Des barres d�
     </Button>  
     ```  
   
-8.  Testez votre icône. Générez le projet et commencez le débogage. Dans l’instance expérimentale, recherchez la commande. Il doit afficher l’icône que vous avez ajouté.  
+8. Testez votre icône. Générez le projet et commencez le débogage. Dans l’instance expérimentale, recherchez la commande. Elle doit afficher l’icône que vous avez ajoutée.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Extension des Menus et commandes](../extensibility/extending-menus-and-commands.md)   
+ [Extension des menus et des commandes](../extensibility/extending-menus-and-commands.md)   
  [Schéma de référence XML VSCT](../extensibility/vsct-xml-schema-reference.md)

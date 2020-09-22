@@ -1,5 +1,5 @@
 ---
-title: Conservation de la propriété d’un élément de projet | Microsoft Docs
+title: Persistance de la propriété d’un élément de projet | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,22 +12,22 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4adcf0f5c5770f5d3ffc0e0ed9bffdb108869c7f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441546"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839517"
 ---
 # <a name="persisting-the-property-of-a-project-item"></a>Conservation de la propriété d’un élément de projet
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Voulez-vous conserver une propriété que vous ajoutez à un élément de projet, telles que l’auteur d’un fichier source. Pour ce faire, vous pouvez stocker la propriété dans le fichier projet.  
+Vous pouvez conserver une propriété que vous ajoutez à un élément de projet, telle que l’auteur d’un fichier source. Pour ce faire, vous pouvez stocker la propriété dans le fichier projet.  
   
- La première étape pour conserver une propriété dans un fichier projet consiste à obtenir la hiérarchie du projet comme une <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> interface. Vous pouvez obtenir cette interface à l’aide d’Automation ou à l’aide de <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>. Une fois que vous obtenez l’interface, vous pouvez l’utiliser pour déterminer quel élément de projet est actuellement sélectionné. Une fois que vous avez l’ID d’élément de projet, vous pouvez utiliser <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> pour ajouter la propriété.  
+ La première étape de la persistance d’une propriété dans un fichier projet consiste à obtenir la hiérarchie du projet en tant qu' <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> interface. Vous pouvez obtenir cette interface à l’aide de l’Automation ou à l’aide de <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection> . Une fois que vous obtenez l’interface, vous pouvez l’utiliser pour déterminer l’élément de projet actuellement sélectionné. Une fois que vous disposez de l’ID d’élément de projet, vous pouvez utiliser <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> pour ajouter la propriété.  
   
- Dans les procédures suivantes, vous rendre persistante la propriété VsPkg.cs `Author` avec la valeur `Tom` dans le fichier projet.  
+ Dans les procédures suivantes, vous conservez la propriété VsPkg.cs `Author` avec la valeur `Tom` dans le fichier projet.  
   
-### <a name="to-obtain-the-project-hierarchy-with-the-dte-object"></a>Pour obtenir la hiérarchie de projet avec l’objet DTE  
+### <a name="to-obtain-the-project-hierarchy-with-the-dte-object"></a>Pour obtenir la hiérarchie du projet avec l’objet DTE  
   
 1. Ajoutez le code suivant à votre VSPackage :  
   
@@ -41,9 +41,9 @@ Voulez-vous conserver une propriété que vous ajoutez à un élément de projet
     solution.GetProjectOfUniqueName(uniqueName, out hierarchy);  
     ```  
   
-### <a name="to-persist-the-project-item-property-with-the-dte-object"></a>Pour conserver la propriété d’élément de projet avec l’objet DTE  
+### <a name="to-persist-the-project-item-property-with-the-dte-object"></a>Pour rendre la propriété d’élément de projet persistante avec l’objet DTE  
   
-1. Ajoutez le code suivant au code donné dans la méthode dans la procédure précédente :  
+1. Ajoutez le code suivant au code donné dans la méthode de la procédure précédente :  
   
     ```csharp  
     IVsBuildPropertyStorage buildPropertyStorage =   
@@ -104,9 +104,9 @@ Voulez-vous conserver une propriété que vous ajoutez à un élément de projet
   
 2. 
   
-### <a name="to-persist-the-selected-project-item-property-given-the-project-hierarchy"></a>Pour conserver la propriété d’élément de projet sélectionné, étant donné la hiérarchie de projet  
+### <a name="to-persist-the-selected-project-item-property-given-the-project-hierarchy"></a>Pour rendre persistante la propriété d’élément de projet sélectionnée, en fonction de la hiérarchie de projet  
   
-1. Ajoutez le code suivant au code donné dans la méthode dans la procédure précédente :  
+1. Ajoutez le code suivant au code donné dans la méthode de la procédure précédente :  
   
     ```  
     IVsBuildPropertyStorage buildPropertyStorage =   
@@ -117,18 +117,18 @@ Voulez-vous conserver une propriété que vous ajoutez à un élément de projet
     }  
     ```  
   
-### <a name="to-verify-that-the-property-is-persisted"></a>Pour vérifier que la propriété est conservée.  
+### <a name="to-verify-that-the-property-is-persisted"></a>Pour vérifier que la propriété est persistante  
   
-1. Démarrer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , puis ouvrez ou créez une solution.  
+1. Démarrez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , puis ouvrez ou créez une solution.  
   
-2. Sélectionnez le projet d’élément VsPkg.cs dans **l’Explorateur de solutions**.  
+2. Sélectionnez l’élément de projet VsPkg.cs dans **Explorateur de solutions**.  
   
-3. Utiliser un point d’arrêt ou sinon déterminer que votre VSPackage est chargé et que SetItemAttribute s’exécute.  
+3. Utilisez un point d’arrêt ou déterminez si votre VSPackage est chargé et que SetItemAttribute s’exécute.  
   
     > [!NOTE]
-    > Vous pouvez charger automatiquement un VSPackage dans le contexte de l’interface utilisateur <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>. Pour plus d’informations, consultez [le chargement de VSPackages](../extensibility/loading-vspackages.md).  
+    > Vous pouvez charger un VSPackage en autoload dans le contexte de l’interface utilisateur <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid> . Pour plus d’informations, consultez [chargement des VSPackages](../extensibility/loading-vspackages.md).  
   
-4. Fermer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] puis ouvrez le fichier projet dans le bloc-notes. Vous devez voir le \<auteur > balise avec la valeur Tom, comme suit :  
+4. Fermez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , puis ouvrez le fichier projet dans le bloc-notes. Vous devez voir la \<Author> balise avec la valeur Tom, comme suit :  
   
     ```  
     <Compile Include="VsPkg.cs">  

@@ -1,5 +1,5 @@
 ---
-title: les variantes MSAA x-4 x-2 0 | Microsoft Docs
+title: Variantes MSAA 0x-2x-4x | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f6cc62e4ba56cb7be461bbf3cee5435cb404b7fe
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439984"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839550"
 ---
 # <a name="0x2x4x-msaa-variants"></a>Variantes MSAA 0x/2x/4x
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Substitue les paramètres d‘anticrénelage MSSA (Multi-Sample Anti-Aliasing) s
 > [!NOTE]
 > Il se peut que votre matériel ne prenne pas entièrement en charge MSAA pour tous les formats. Si l'une de ces variantes rencontre une limitation matérielle qu'il n'est pas possible de contourner, sa colonne dans le tableau de résumé des performances est vide et un message d'erreur est généré.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Ces variantes substituent le nombre d'échantillons et les arguments de qualité d'échantillon dans les appels à `ID3DDevice::CreateTexture2D`, qui sont chargés de créer des cibles de rendu. Plus précisément, ces paramètres sont substitués dans les cas suivants :  
   
 - L'objet `D3D11_TEXTURE2D_DESC` passé dans `pDesc` décrit une cible de rendu, à savoir :  
@@ -52,12 +52,12 @@ Substitue les paramètres d‘anticrénelage MSSA (Multi-Sample Anti-Aliasing) s
   
   L'effet concret de ces modifications est que l'ensemble du rendu se produit au niveau d'une cible de rendu MSAA, mais si votre application utilise l'une de ces cibles de rendu ou mémoires tampons de chaîne de permutation comme vue de la ressource de nuanceur ou vue de l'accès arbitraire, les données sont échantillonnées à partir de la copie non MSAA résolue de la cible de rendu.  
   
-## <a name="restrictions-and-limitations"></a>Restrictions et limitations  
+## <a name="restrictions-and-limitations"></a>Limitations et restrictions  
  Dans Direct3D11, les textures MSAA sont soumises à davantage de restrictions que les textures non MSAA. Par exemple, vous ne pouvez pas appeler `ID3D11DeviceContext::UpdateSubresource` sur une texture MSAA, et l'appel de `ID3D11DeviceContext::CopySubresourceRegion` échoue si le nombre d'échantillons et la qualité d'échantillon de la ressource source et de la ressource de destination ne correspondent pas, ce qui peut se produire quand cette variante substitue les paramètres MSAA d'une ressource mais pas de l'autre.  
   
  Quand le lecture détecte ce type de conflit, elle fait son possible pour répliquer le comportement visé, mais le résultat n'est pas garanti. Bien qu'il soit rare que cela affecte les performances de ces variantes ou que leur impact en soit dissimulé, cela est possible (par exemple, quand le contrôle de flux dans un nuanceur de pixels est déterminé par le contenu précis d'une texture), car le contenu de la texture répliquée risque de ne pas être identique.  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a> Exemple  
  Ces variantes peuvent être reproduites pour les cibles de rendu créées à l'aide de `ID3D11Device::CreateTexture2D` avec un code similaire à celui-ci :  
   
 ```  
@@ -68,7 +68,7 @@ target_description.SampleDesc.Quality = 0;
 d3d_device->CreateTexture2D(&target_description, nullptr, &render_target);  
 ```  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a> Exemple  
  Ou bien, pour le chaînes de permutation créées à l'aide de IDXGISwapChain::CreateSwapChain ou D3D11CreateDeviceAndSwapChain avec un code similaire à celui-ci :  
   
 ```  

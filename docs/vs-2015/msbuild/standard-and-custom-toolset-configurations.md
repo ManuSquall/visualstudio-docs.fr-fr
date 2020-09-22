@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d08a7eb20c01568b3501f16348eb19afdcaefa2c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444381"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839642"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Configurations standard et personnalisée de l'ensemble d'outils
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Un ensemble d’outils MSBuild contient des références à des tâches, des cib
 | ToolsVersion | Chemin de l’ensemble d’outils (tel que spécifié dans la propriété de build MSBuildToolsPath ou MSBuildBinPath) |
 |--------------|--------------------------------------------------------------------------------------|
 |     2.0      |           *Chemin d’installation de Windows*\Microsoft.Net\Framework\v2.0.50727\            |
-|     3.5      |              *Chemin d’installation de Windows*\Microsoft.NET\Framework\v3.5\               |
+|     3,5      |              *Chemin d’installation de Windows*\Microsoft.NET\Framework\v3.5\               |
 |     4.0      |           *Chemin d’installation de Windows*\Microsoft.NET\Framework\v4.0.30319\            |
 |     12.0     |                          *%ProgramFiles%* \MSBuild\12.0\bin                           |
 
@@ -40,7 +40,7 @@ Un ensemble d’outils MSBuild contient des références à des tâches, des cib
 
  Les clés de Registre suivantes spécifient le chemin d’installation de MSBuild.exe.  
 
-|Clé de Registre|Nom de clé|Valeur de clé de type chaîne|  
+|Clé de Registre|Nom de la clé|Valeur de clé de type chaîne|  
 |------------------|--------------|----------------------|  
 |\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\2.0\|MSBuildToolsPath|Chemin d’installation du .NET Framework 2.0|  
 |\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\3.5\|MSBuildToolsPath|Chemin d’installation du .NET Framework 3.5|  
@@ -97,9 +97,9 @@ Un ensemble d’outils MSBuild contient des références à des tâches, des cib
 
 - **$(MSBuildBinPath)** est défini sur la valeur de `ToolsPath` qui est spécifiée dans le Registre ou dans le fichier de configuration où `ToolsVersion` est définie. Le paramètre `$(MSBuildToolsPath)` dans le Registre ou dans le fichier de configuration spécifie l’emplacement des tâches et des cibles principales. Dans le fichier projet, ceci correspond à la propriété $(MSBuildBinPath) et à la propriété $(MSBuildToolsPath).  
 
-- `$(MSBuildToolsPath)` est une propriété réservée qui est fournie par la propriété MSBuildToolsPath spécifiée dans le fichier de configuration. (Cette propriété remplace `$(MSBuildBinPath)`. Cependant, `$(MSBuildBinPath)` est conservé pour des raisons de compatibilité.) Un ensemble d’outils personnalisé doit définir `$(MSBuildToolsPath)` ou `$(MSBuildBinPath)`, mais pas les deux, sauf si tous les deux ont la même valeur.  
+- `$(MSBuildToolsPath)` est une propriété réservée qui est fournie par la propriété MSBuildToolsPath spécifiée dans le fichier de configuration. (Cette propriété remplace `$(MSBuildBinPath)`. Toutefois, `$(MSBuildBinPath)` est reportée à des fins de compatibilité.) Un ensemble d’outils personnalisé doit définir `$(MSBuildToolsPath)` ou `$(MSBuildBinPath)` , mais pas les deux, sauf s’ils ont tous les deux la même valeur.  
 
   Vous pouvez également ajouter des propriétés personnalisées spécifiques à ToolsVersion au fichier de configuration, en utilisant la même syntaxe que celle utilisée pour ajouter la propriété MSBuildToolsPath. Pour rendre ces propriétés personnalisées disponibles pour le fichier projet, utilisez le même nom que celui de la valeur spécifiée dans le fichier de configuration. Dans le fichier de configuration, vous pouvez définir des ensembles d’outils, mais pas des sous-ensembles d’outils.  
 
 ## <a name="see-also"></a>Voir aussi  
- [Ensemble d’outils (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)
+ [Ensemble d'outils (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Rechercher un Message dans la vue Messages | Microsoft Docs'
+title: 'Procédure : Rechercher un message dans la vue messages | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,42 +14,42 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6c89a763389abe364fe70166e63b41f932581837
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430906"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839354"
 ---
-# <a name="how-to-search-for-a-message-in-messages-view"></a>Procédure : Rechercher un message dans la vue Messages
+# <a name="how-to-search-for-a-message-in-messages-view"></a>Comment : rechercher un message dans la vue Messages
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous pouvez rechercher un message spécifique dans la vue Messages à l’aide de son handle, un type ou un ID de message comme critère de recherche. L’une de ces, ou une combinaison, sera le critère de recherche valide. La direction de la recherche initiale peut également être spécifiée. Les champs dans la boîte de dialogue sont préchargés avec les attributs du message actuellement sélectionné.  
+Vous pouvez rechercher un message spécifique dans la vue messages en utilisant son handle, son type ou son ID de message en tant que critère de recherche. L’une d’entre elles (ou une combinaison) sera un critère de recherche valide. La direction initiale de la recherche peut également être spécifiée. Les champs de la boîte de dialogue sont préchargés avec les attributs du message actuellement sélectionné.  
   
-### <a name="to-search-for-a-message-in-messages-view"></a>Pour rechercher un message dans la vue Messages  
+### <a name="to-search-for-a-message-in-messages-view"></a>Pour rechercher un message dans la vue messages  
   
-1. Réorganisez vos fenêtres donc que Spy ++ et qu’une [vue Messages](../debugger/messages-view.md) fenêtre sont visibles.  
+1. Réorganisez vos fenêtres afin que Spy + + et une fenêtre d' [affichage des messages](../debugger/messages-view.md) actifs soient visibles.  
   
-2. À partir de la **recherche** menu, choisissez **rechercher le Message**.  
+2. Dans le menu **Rechercher** , choisissez **Rechercher un message**.  
   
-    Le [boîte de dialogue de recherche de Message](../debugger/message-search-dialog-box.md) s’ouvre.  
+    La [boîte de dialogue recherche de message](../debugger/message-search-dialog-box.md) s’ouvre.  
   
-3. Faites glisser le **outil recherche** sur la fenêtre souhaitée. Lorsque vous faites glisser l’outil, le **recherche d’un Message** boîte de dialogue affiche des détails sur la fenêtre sélectionnée.  
-  
-    – ou –  
-  
-    Si vous avez le handle de la fenêtre dont vous souhaitez examiner les messages, tapez-le dans la **gérer** zone de texte.  
+3. Faites glisser l' **outil Finder** sur la fenêtre de votre choix. Lorsque vous faites glisser l’outil, la boîte de dialogue **recherche de message** affiche des détails sur la fenêtre sélectionnée.  
   
     – ou –  
   
-    Si vous connaissez le type de message et/ou le code de message, les sélectionner à partir de la **Type** et **Message** menus déroulants, puis désactivez la **gérer** zone de texte.  
+    Si vous avez le descripteur de la fenêtre dont vous souhaitez examiner les messages, tapez-le dans la zone de texte **handle** .  
   
-4. Effacer tous les champs pour lesquels vous ne souhaitez pas spécifier des valeurs.  
+    – ou –  
+  
+    Si vous connaissez le type de message et/ou l’ID de message souhaités, sélectionnez-les dans les menus déroulants **type** et **message** , puis désactivez la zone de texte **handle** .  
+  
+4. Effacez tous les champs pour lesquels vous ne souhaitez pas spécifier de valeurs.  
   
    > [!TIP]
-   > Pour réduire l’encombrement de l’écran, sélectionnez le **Masquer Spy ++** option. Cette option masque la fenêtre Spy ++ principale, ce qui laisse uniquement le **rechercher une fenêtre** boîte de dialogue visible en haut de vos autres applications. La fenêtre principale de Spy ++ est restaurée lorsque vous cliquez sur **OK** ou **Annuler**, ou lorsque vous supprimez le **Masquer Spy ++** option.  
+   > Pour réduire l’encombrement de l’écran, sélectionnez l’option **Masquer Spy** . Cette option dissimule la fenêtre principale Spy + +, laissant uniquement la boîte de dialogue **Rechercher une fenêtre** visible en plus de vos autres applications. La fenêtre principale Spy + + est restaurée lorsque vous cliquez sur **OK** ou sur **Annuler**, ou lorsque vous désactivez l’option **Masquer Spy + +** .  
   
-5. Choisissez **des** ou **vers le bas** pour la direction de la recherche initiale.  
+5. Choisissez **haut** ou **bas** pour la direction initiale de la recherche.  
   
 6. Cliquez sur **OK**.  
   
-   Si un message correspondant est trouvé, il est mis en surbrillance dans la fenêtre d’affichage de Messages. Consultez [la vue Messages](../debugger/messages-view.md).
+   Si un message correspondant est trouvé, il est mis en surbrillance dans la fenêtre vue messages. Consultez [affichage des messages](../debugger/messages-view.md).
