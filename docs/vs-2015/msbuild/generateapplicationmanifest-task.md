@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3493c487c446bb66e99bf98a7c3f5599599801fd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424130"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839890"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest, tâche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ Génère un manifeste d’application [!INCLUDE[ndptecclick](../includes/ndptecc
 |`OSVersion`|Paramètre `String` facultatif.<br /><br /> Spécifie la version minimale de système d’exploitation requise par l’application. Par exemple, la valeur 5.1.2600.0 indique le système d’exploitation Windows XP. Si ce paramètre n’est pas spécifié, la valeur 4.10.0.0 est utilisée ; celle-ci représente Windows 98 Deuxième Édition, le système d’exploitation minimal pris en charge par le .NET Framework. Si la tâche génère un manifeste natif, cette entrée est ignorée.|  
 |`OutputManifest`|Paramètre de sortie <xref:Microsoft.Build.Framework.ITaskItem> facultatif.<br /><br /> Spécifie le nom du fichier manifeste de sortie généré. Si vous ne spécifiez pas ce paramètre, le nom du fichier de sortie est déduit de l’identité du manifeste généré.|  
 |`Platform`|Paramètre `String` facultatif.<br /><br /> Spécifie la plateforme cible de l’application. Ce paramètre peut avoir les valeurs suivantes :<br /><br /> -   `AnyCPU`<br />-   `x86`<br />-   `x64`<br />-   `Itanium`<br /><br /> Si ce paramètre n’est pas spécifié, la tâche sélectionne par défaut `AnyCPU`.|  
-|`Product`|Paramètre `String` facultatif.<br /><br /> Spécifie le nom de l’application. Si vous ne spécifiez pas ce paramètre, le nom est déduit de l’identité du manifeste généré. Ce nom est utilisé comme nom du raccourci dans le menu Démarrer. Il fait partie du nom qui apparaît dans la boîte de dialogue Ajout/Suppression de programmes.|  
+|`Product`|Paramètre `String` facultatif.<br /><br /> Spécifie le nom de l'application. Si vous ne spécifiez pas ce paramètre, le nom est déduit de l’identité du manifeste généré. Ce nom est utilisé comme nom du raccourci dans le menu Démarrer. Il fait partie du nom qui apparaît dans la boîte de dialogue Ajout/Suppression de programmes.|  
 |`Publisher`|Paramètre `String` facultatif.<br /><br /> Spécifie l’éditeur de l’application. Si vous ne spécifiez pas ce paramètre, le nom est déduit de l’utilisateur enregistré ou de l’identité du manifeste généré. Ce nom est utilisé comme nom du dossier dans le menu Démarrer. Il fait partie du nom qui apparaît dans la boîte de dialogue Ajout/Suppression de programmes.|  
 |`RequiresMinimumFramework35SP1`|Paramètre `Boolean` facultatif.<br /><br /> Si la valeur est true, l’application requiert .NET Framework 3.5 SP1 ou une version plus récente.|  
 |`TargetCulture`|Paramètre `String` facultatif.<br /><br /> Identifie la culture de l’application et spécifie le champ `Language` de l’identité d’assembly pour le manifeste généré. Si ce paramètre n’est pas spécifié, il est supposé que l’application est indifférente quant à la culture.|  
@@ -67,8 +67,8 @@ Génère un manifeste d’application [!INCLUDE[ndptecclick](../includes/ndptecc
 |`TrustInfoFile`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem> facultatif.<br /><br /> Indique un document XML qui définit la sécurité de l’application. L’élément racine dans le document XML doit être un nœud trustInfo dans l’espace de noms asmv2. Si la tâche génère un manifeste natif, ce paramètre est ignoré.|  
 |`UseApplicationTrust`|Facultatif <!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  --> paramètre.<br /><br /> Si la valeur est true, les propriétés `Product`, `Publisher` et `SupportUrl` sont écrites dans le manifeste de l’application.|  
   
-## <a name="remarks"></a>Notes  
- En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.GenerateManifestBase>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste des paramètres de la classe Task, consultez [Task, classe de base](../msbuild/task-base-class.md).  
+## <a name="remarks"></a>Remarques  
+ En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.GenerateManifestBase> , qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task> . Pour obtenir la liste des paramètres de la classe Task, consultez [classe](../msbuild/task-base-class.md)de la base de tâches.  
   
  Pour plus d’informations sur l’utilisation de la tâche `GenerateDeploymentManifest`, consultez [Tâche GenerateApplicationManifest](../msbuild/generateapplicationmanifest-task.md).  
   
@@ -84,7 +84,7 @@ Génère un manifeste d’application [!INCLUDE[ndptecclick](../includes/ndptecc
 |`TargetPath`|Spécifie comment le chemin doit être défini dans le manifeste généré. Cet attribut est valide pour tous les fichiers. Si cet attribut n’est pas spécifié, la spécification d’élément est utilisée. Cet attribut est valide pour tous les fichiers et dépendances dont `DependencyType` a la valeur `Install`.|  
 |`IsDataFile`|Valeur de métadonnées `Boolean` qui indique si le fichier est un fichier de données. Un fichier de données est spécial dans la mesure où il est migré entre des mises à jour de l’application. Ces métadonnées sont uniquement valides pour les fichiers. `False` est la valeur par défaut.|  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a> Exemple  
  Cet exemple utilise la tâche `GenerateApplicationManifest` pour générer un manifeste d’application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] et la tâche `GenerateDeploymentManifest` pour générer un manifeste de déploiement pour une application ayant un assembly unique. Il utilise ensuite la tâche `SignFile` pour signer les manifestes.  
   
  Ceci illustre le scénario de génération de manifeste le plus simple dans lequel les manifestes [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] sont générés pour un programme unique. Le nom et l’identité par défaut du manifeste sont déduits à partir de l’assembly.  
@@ -137,7 +137,7 @@ Génère un manifeste d’application [!INCLUDE[ndptecclick](../includes/ndptecc
 </Project>  
 ```  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a> Exemple  
  Cet exemple utilise les tâches `GenerateApplicationManifest` et `GenerateDeploymentManifest` pour générer l’application et les manifestes de déploiement [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] d’une application ayant un assembly unique, en spécifiant le nom et l’identité des manifestes.  
   
  Cet exemple est semblable à l’exemple précédent, si ce n’est que le nom et l’identité des manifestes sont explicitement spécifiés. En outre, cet exemple est configuré comme une application en ligne au lieu d’une application installée.  
@@ -197,7 +197,7 @@ Génère un manifeste d’application [!INCLUDE[ndptecclick](../includes/ndptecc
 </Project>  
 ```  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a> Exemple  
  Cet exemple utilise les tâches `GenerateApplicationManifest` et `GenerateDeploymentManifest` pour générer l’application et les manifestes de déploiement [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] d’une application avec plusieurs fichiers et assemblys.  
   
 > [!NOTE]
@@ -315,7 +315,7 @@ Génère un manifeste d’application [!INCLUDE[ndptecclick](../includes/ndptecc
 </Project>  
 ```  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a> Exemple  
  Cet exemple utilise la tâche `GenerateApplicationManifest` pour générer un manifeste natif de l’application Test.exe, en référençant le composant natif Alpha.dll et un composant COM isolé Bravo.dll.  
   
  Cet exemple crée Test.exe.manifest, qui permet de déployer l’application XCOPY dans un déploiement COM sans inscription.  
@@ -353,7 +353,7 @@ Génère un manifeste d’application [!INCLUDE[ndptecclick](../includes/ndptecc
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Tâches](../msbuild/msbuild-tasks.md)   
+ [Décrites](../msbuild/msbuild-tasks.md)   
  [Tâche GenerateDeploymentManifest](../msbuild/generatedeploymentmanifest-task.md)   
  [SignFile, tâche](../msbuild/signfile-task.md)   
- [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)
+ [Référence de tâche](../msbuild/msbuild-task-reference.md)

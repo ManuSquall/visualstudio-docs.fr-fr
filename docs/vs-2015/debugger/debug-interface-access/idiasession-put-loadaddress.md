@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f697384874726904960fc5ba04733c3acfe1cd06
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438464"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839265"
 ---
-# <a name="idiasessionputloadaddress"></a>IDiaSession::put_loadAddress
+# <a name="idiasessionput_loadaddress"></a>IDiaSession::put_loadAddress
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Définit l’adresse de chargement du fichier exécutable qui correspond aux symboles dans ce magasin de symboles.  
@@ -35,13 +35,13 @@ HRESULT put_loadAddress ( 
   
 #### <a name="parameters"></a>Paramètres  
  `NewVal`  
- [in] Charge l’adresse du fichier exécutable.  
+ dans Adresse de chargement du fichier exécutable.  
   
-## <a name="remarks"></a>Notes  
- Propriétés d’adresse virtuelle (VA) de symbole sont calculées à l’aide de la valeur de cette méthode. Adresses virtuelles ne sont pas calculés, sauf si cette propriété est définie zéro.  
+## <a name="remarks"></a>Remarques  
+ Les propriétés d’adresse virtuelle de symbole (VA) sont calculées à l’aide de la valeur de cette méthode. Les adresses virtuelles ne sont pas calculées, sauf si cette propriété est définie sur une valeur différente de zéro.  
   
 > [!NOTE]
-> Vous devez appeler cette méthode lorsque vous recevez le [IDiaSession](../../debugger/debug-interface-access/idiasession.md) de l’objet et avant de commencer à l’aide de l’objet si vous devez utiliser des propriétés virtuelles sur des symboles.  
+> Vous devez appeler cette méthode lorsque vous récupérez l’objet [IDiaSession](../../debugger/debug-interface-access/idiasession.md) et avant de commencer à utiliser l’objet si vous devez utiliser des propriétés virtuelles sur les symboles.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

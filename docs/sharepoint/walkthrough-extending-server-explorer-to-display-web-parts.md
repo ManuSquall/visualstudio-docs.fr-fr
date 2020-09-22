@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5e5221d1cce065a352051ca700cf0fc5ef4ae843
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 915a1762782b2bf7177b87a3a5f4cdc6e08c6405
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015630"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739991"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Procédure pas à pas : étendre Explorateur de serveurs pour afficher des composants WebPart
   Dans Visual Studio, vous pouvez utiliser le nœud **Connexions SharePoint** de **Explorateur de serveurs** pour afficher les composants sur les sites SharePoint. Toutefois, **Explorateur de serveurs** n’affiche pas certains composants par défaut. Dans cette procédure pas à pas, vous allez étendre **Explorateur de serveurs** afin qu’il affiche la Galerie de composants WebPart sur chaque site SharePoint connecté.
@@ -275,7 +275,7 @@ ms.locfileid: "86015630"
 
 1. Dans **Explorateur de solutions**, sous le projet WebPartNode, ouvrez le fichier **source. extension. vsixmanifest** dans l’éditeur de manifeste.
 
-     Le fichier source. extension. vsixmanifest est la base du fichier extension. vsixmanifest requis par tous les packages VSIX. Pour plus d’informations sur ce fichier, consultez [Référence du schéma d’extension VSIX 1,0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).
+     Le fichier source. extension. vsixmanifest est la base du fichier extension. vsixmanifest requis par tous les packages VSIX. Pour plus d’informations sur ce fichier, consultez [Référence du schéma d’extension VSIX 1,0](/previous-versions/dd393700(v=vs.110)).
 
 2. Dans la zone **nom du produit** , entrez **nœud de la Galerie de composants webpart pour Explorateur de serveurs**.
 
@@ -303,7 +303,7 @@ ms.locfileid: "86015630"
 10. Dans la zone **type** , entrez **SharePoint. Commands. v4**.
 
     > [!NOTE]
-    > Cet élément spécifie une extension personnalisée que vous souhaitez inclure dans l’extension Visual Studio. Pour plus d’informations, consultez [élément Asset (schéma VSX)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
+    > Cet élément spécifie une extension personnalisée que vous souhaitez inclure dans l’extension Visual Studio. Pour plus d’informations, consultez [élément Asset (schéma VSX)](/previous-versions/dd393737(v=vs.110)).
 
 11. Dans la liste **source** , choisissez l’élément de liste **un projet dans la solution actuelle** .
 

@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 64cd7db0131843ab48410b6676551c8563b8ffbd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bf10a1f4474c2916cd63402eac487af7545b0f8f
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85531779"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810664"
 ---
 # <a name="profile-python-code"></a>Profiler du code Python
 
@@ -40,4 +40,4 @@ IronPython n’étant pas un interpréteur CPython, la fonctionnalité de profil
 
 Utilisez plutôt le profileur Visual Studio .NET en lançant *ipy.exe* directement en tant qu’application cible. Utilisez les arguments appropriés pour lancer votre script de démarrage. Ajoutez `-X:Debug` sur la ligne de commande pour s’assurer que l’ensemble de votre code Python peut être débogué et profilé. Cet argument génère un rapport de performances qui inclut le temps passé dans le runtime IronPython et votre code. Votre code est identifié à l’aide de noms tronqués.
 
-IronPython possède également ses fonctionnalités de profilage intégrées, mais à ce jour, aucun visualiseur approprié n’est disponible pour celles-ci. Consultez [An IronPython Profiler](https://blogs.msdn.microsoft.com/curth/2009/03/30/an-ironpython-profiler/) (Un profileur IronPython) (blogs MSDN) pour connaître ce qui est disponible.
+IronPython possède également ses fonctionnalités de profilage intégrées, mais à ce jour, aucun visualiseur approprié n’est disponible pour celles-ci. Consultez [An IronPython Profiler](/archive/blogs/curth/an-ironpython-profiler) (Un profileur IronPython) (blogs MSDN) pour connaître ce qui est disponible.

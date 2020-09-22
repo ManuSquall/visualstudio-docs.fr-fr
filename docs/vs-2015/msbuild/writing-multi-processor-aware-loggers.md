@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0d2eaf41ac66cd1bdf680145bef43b17cc29a505
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425881"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839637"
 ---
 # <a name="writing-multi-processor-aware-loggers"></a>Écriture de journaux prenant en charge plusieurs processeurs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ La capacité de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] à tire
 ### <a name="central-logging-model"></a>Modèle de journalisation centralisé  
  Dans le modèle de journalisation centralisé, une seule instance de MSBuild.exe agit comme « nœud central », et les instances enfants du nœud central (les « nœuds secondaires ») sont jointes au nœud central pour l’aider à effectuer les tâches de génération.  
   
- ![Modèle de journal centralisé](../msbuild/media/centralnode.png "CentralNode")  
+ ![Modèle d'enregistreur d'événements central](../msbuild/media/centralnode.png "CentralNode")  
   
  Les journaux de différents types qui sont joints au nœud central sont appelés « journaux centraux ». Une seule instance de chaque type de journal peut être jointe au nœud central.  
   
@@ -56,7 +56,7 @@ public interface INodeLogger: ILogger
 ### <a name="distributed-logging-model"></a>Modèle d'enregistrement distribué  
  Dans le modèle de journalisation centralisé, un trop grand nombre de messages entrants peut saturer le nœud central, comme lorsque de nombreux projets sont générés en même temps. Cela peut provoquer une contrainte sur les ressources système et affecter les performances de génération. Pour résoudre ce problème, [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] prend en charge un modèle de journalisation distribué.  
   
- ![Modèle de journalisation distribué](../msbuild/media/distnode.png "DistNode")  
+ ![Modèle d'enregistrement distribué](../msbuild/media/distnode.png "DistNode")  
   
  Le modèle de journalisation distribué étend le modèle de journalisation centralisé en vous permettant de créer un journal de transfert.  
   
@@ -71,7 +71,7 @@ public interface INodeLogger: ILogger
   
   Vous pouvez modifier ConfigurableForwardingLogger pour l’adapter à vos besoins. Pour ce faire, appelez le journal sur la ligne de commande à l’aide de MSBuild.exe et créez une liste des événements de build que le journal doit transférer au nœud central.  
   
-  En guise d’alternative, vous pouvez créer un journal de transfert personnalisé. La création d’un journal de transfert personnalisé vous permet d’ajuster le comportement du journal. Toutefois, la création d’un journal de transfert personnalisé est plus complexe que la simple personnalisation de ConfigurableForwardingLogger. Pour plus d’informations, consultez [Création de journaux de transfert](../msbuild/creating-forwarding-loggers.md).  
+  En guise d’alternative, vous pouvez créer un journal de transfert personnalisé. La création d’un journal de transfert personnalisé vous permet d’ajuster le comportement du journal. Toutefois, la création d’un journal de transfert personnalisé est plus complexe que la simple personnalisation de ConfigurableForwardingLogger. Pour plus d’informations, consultez [création de journaux de transfert](../msbuild/creating-forwarding-loggers.md).  
   
 ## <a name="using-the-configurableforwardinglogger-for-simple-distributed-logging"></a>Utilisation de ConfigurableForwardingLogger pour une journalisation distribuée simple  
  Pour joindre ConfigurableForwardingLogger ou un journal de transfert personnalisé, utilisez le commutateur `/distributedlogger` (`/dl`, en abrégé) dans une build de ligne de commande MSBuild.exe. Le format de nom des types et des classes du journal est le même que celui du commutateur `/logger`, sauf qu’un journal distribué a toujours deux classes de journalisation au lieu d’une : le journal de transfert et le journal central. Voici un exemple dans lequel est joint un journal de transfert personnalisé nommé XMLForwardingLogger.  
@@ -83,7 +83,7 @@ msbuild.exe myproj.proj/distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.
 > [!NOTE]
 > Un astérisque (*) doit séparer les deux noms de journaux dans le commutateur `/dl`.  
   
- L’utilisation de ConfigurableForwardingLogger est similaire à celle des autres journaux (comme décrit dans [Obtention de journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md)), sauf que vous joignez le journal ConfigurableForwardingLogger au lieu du journal [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] type, et que vous spécifiez, comme paramètres, les événements que ConfigurableForwardingLogger doit passer au nœud central.  
+ L’utilisation de ConfigurableForwardingLogger est similaire à l’utilisation d’un autre enregistreur d’événements (comme indiqué dans [obtention des journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md)), à ceci près que vous attachez le journal ConfigurableForwardingLogger au lieu de l’enregistreur standard et que [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] vous spécifiez comme paramètres les événements que vous souhaitez que le ConfigurableForwardingLogger passe au nœud central.  
   
  Par exemple, si vous souhaitez être averti uniquement au début et à la fin d’une génération, et lorsqu’une erreur se produit, vous pouvez passer `BUILDSTARTEDEVENT`, `BUILDFINISHEDEVENT` et `ERROREVENT` comme paramètres. Pour passer plusieurs paramètres, séparez-les par des points-virgules. Voici un exemple d’utilisation de ConfigurableForwardingLogger pour transférer uniquement les événements `BUILDSTARTEDEVENT`, `BUILDFINISHEDEVENT` et `ERROREVENT`.  
   
@@ -115,4 +115,4 @@ msbuild.exe myproj.proj /distributedlogger:XMLCentralLogger,MyLogger,Version=1.0
 |SHOWCOMMANDLINE|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Création d’enregistreurs d’événements de transfert](../msbuild/creating-forwarding-loggers.md)
+ [Création de journaux de transfert](../msbuild/creating-forwarding-loggers.md)

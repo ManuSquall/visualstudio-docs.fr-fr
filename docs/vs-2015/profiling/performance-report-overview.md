@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fd8732a914581b39566bac88fe73698850893f77
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434269"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839370"
 ---
 # <a name="performance-report-overview"></a>Vue d’ensemble du rapport Performances
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Vous pouvez afficher les données de profilage d’une session de performance da
 ### <a name="summary-view"></a>Vue Résumé  
  Par défaut, les données de profilage s’affichent dans la vue Résumé. Cette vue constitue un point de départ pour votre examen de problèmes de performances. À partir de chaque ligne de la vue Résumé, vous pouvez passer à des vues plus détaillées en cliquant avec le bouton droit sur le nom de la fonction ou du module. Pour plus d’informations, consultez [Résumé, vue](../profiling/summary-view.md).  
   
-### <a name="callercallee-view"></a>Vue Appelant/Appelé  
+### <a name="callercallee-view"></a>Appelant/Appelé, mode  
  La vue Appelant/Appelé affiche une arborescence des appels pour une fonction spécifique. Cette vue est composée de trois parties :  
   
 - La fonction cible figure au milieu de la vue.  
@@ -72,7 +72,7 @@ Vous pouvez afficher les données de profilage d’une session de performance da
  La vue Pointeurs d’instruction vous permet de consulter les instructions spécifiques qui ont été exécutées pendant le profilage d’échantillonnage. Pour plus d’informations, consultez [Pointeurs d’instruction (IP), vue](../profiling/instruction-pointers-ips-view.md).  
   
 ### <a name="allocation-view"></a>Vue Allocations  
- La vue Allocations est disponible si l’option **Collecter les informations d’allocation d’objets .NET** a été sélectionnée dans la page **Général** de la boîte de dialogue de propriétés **Session de performance**. Consultez [Vue d’ensemble des sessions de performances](../profiling/performance-session-overview.md). La vue Allocations répertorie les objets .NET alloués par l’application ou le composant. Quand vous développez une ligne d’objet, une arborescence des appels s’affiche. Elle indique les chemins d’exécution qui ont entraîné la création de l’objet. Cette arborescence affiche également des informations sur le nombre d’allocations inclusives et exclusives pour chaque fonction. La vue Allocations peut également être développée pour mettre en surbrillance le chemin d’exécution d’une fonction qui a alloué le plus grand nombre d’objets. Pour afficher le chemin le plus actif, cliquez avec le bouton droit sur la fonction, puis cliquez sur **Développer le chemin réactif**. Pour plus d’informations, consultez [Collecte des données liées à la durée de vie des objets et à l’allocation de mémoire .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md) et [Allocations, vue](../profiling/dotnet-memory-allocations-view.md).  
+ La vue Allocations est disponible si l’option **Collecter les informations d’allocation d’objets .NET** a été sélectionnée dans la page **Général** de la boîte de dialogue de propriétés **Session de performance**. Consultez [vue d’ensemble des sessions de performance](../profiling/performance-session-overview.md). La vue Allocations répertorie les objets .NET alloués par l’application ou le composant. Quand vous développez une ligne d’objet, une arborescence des appels s’affiche. Elle indique les chemins d’exécution qui ont entraîné la création de l’objet. Cette arborescence affiche également des informations sur le nombre d’allocations inclusives et exclusives pour chaque fonction. La vue Allocations peut également être développée pour mettre en surbrillance le chemin d’exécution d’une fonction qui a alloué le plus grand nombre d’objets. Pour afficher le chemin le plus actif, cliquez avec le bouton droit sur la fonction, puis cliquez sur **Développer le chemin réactif**. Pour plus d’informations, consultez [Collecte des données liées à la durée de vie des objets et à l’allocation de mémoire .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md) et [Allocations, vue](../profiling/dotnet-memory-allocations-view.md).  
   
 ### <a name="objects-lifetime-view"></a>Vue Durée de vie des objets  
  La vue Durée de vie des objets est disponible si les options **Collecter les informations d’allocation d’objets .NET** et **Collecter aussi les informations de durée de vie des objets .NET** ont été sélectionnées dans la page **Général** de la boîte de dialogue de propriétés **Session de performance**.  

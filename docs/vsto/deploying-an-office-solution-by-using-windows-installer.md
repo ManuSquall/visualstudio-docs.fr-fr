@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a44781c6fea0ecf75dcdb8a5ab2e2b3bed8e52e9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1336af7469b030492b486004940b730d372760bb
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72986147"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90807961"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Déployer une solution Office à l’aide de Windows Installer
 
@@ -310,14 +310,14 @@ Les installations par utilisateur requièrent un seul programme d'installation q
 | Version d’Office<br /><br /> | Chemin d'accès de configuration d'InstallShield<br /><br /> |
 |----------------------------| - |
 | 32 bits<br /><br /> | **HKEY_LOCAL_MACHINE \SOFTWARE (32 bits) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
-| 64 bits<br /><br /> | **HKEY_LOCAL_MACHINE \SOFTWARE (64 bits) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 64 bits<br /><br /> | **HKEY_LOCAL_MACHINE \SOFTWARE (64 bits) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
 
    **Programmes d'installation par ordinateur selon la version de Windows**
 
 | Version de Windows<br /><br /> | Chemin d'accès de configuration d'InstallShield<br /><br /> |
 |-----------------------------| - |
 | 32 bits<br /><br /> | **HKEY_LOCAL_MACHINE \SOFTWARE (32 bits) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
-| 64 bits<br /><br /> | **HKEY_LOCAL_MACHINE \SOFTWARE (32 bits) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br />**HKEY_LOCAL_MACHINE \SOFTWARE (64 bits) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
+| 64 bits<br /><br /> | **HKEY_LOCAL_MACHINE \SOFTWARE (32 bits) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br />**HKEY_LOCAL_MACHINE \SOFTWARE (64 bits) \Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
 
    > [!NOTE]
    > Un programme d’installation pour Windows 64 bits requiert deux chemins d’accès au registre car il est possible que les utilisateurs exécutent les versions 32 bits et 64 bits d’Office sur un ordinateur qui exécute Windows 64 bits.
@@ -333,7 +333,7 @@ Les installations par utilisateur requièrent un seul programme d'installation q
 
 7. Répétez ce processus pour créer les valeurs suivantes.
 
-|Type valeur<br /><br />|Nom<br /><br />|
+|Type valeur<br /><br />|Name<br /><br />|
 |--------------|--------|
 |Valeur de chaîne<br /><br />|**Convivial**<br /><br />|
 |Valeur DWORD<br /><br />|**LoadBehavior**<br /><br />|
@@ -504,7 +504,7 @@ Pour modifier des propriétés personnalisées, vous créez un programme qui sup
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Conditions préalables pour le déploiement de solutions Office](https://msdn.microsoft.com/library/9f672809-43a3-40a1-9057-397ce3b5126e)
+- [Conditions préalables pour le déploiement de solutions Office](/previous-versions/bb608617(v=vs.110))
 - [Déployer une solution Office](../vsto/deploying-an-office-solution.md)
 - [Entrées de Registre pour les compléments VSTO](../vsto/registry-entries-for-vsto-add-ins.md)
 - [Vue d’ensemble des propriétés de document personnalisées](../vsto/custom-document-properties-overview.md)

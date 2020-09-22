@@ -1,5 +1,6 @@
 ---
-title: Création de rapports de profileur à partir de la ligne de commande | Microsoft Docs
+title: Ligne de commande de profilage-créer des rapports
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: c886f8af-2014-4fec-9b24-d98b68ecafb7
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 475c8da2d10dea4953486fc9c564c5bde7fb0887
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5eb0f1fa0f9bbe760b1ea89074d02044cf26ab7d
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329076"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808823"
 ---
 # <a name="create-profiler-reports-from-the-command-line"></a>Créer des rapports de profileur à partir de la ligne de commande
 L’outil en ligne de commande **VSPerfReport** vous permet de créer des rapports .*xml* ou .*csv* (valeurs séparées par des virgules) à partir de fichiers de données de profilage (.*vsp*). Les types de rapport de VSPerfReport correspondent étroitement aux vues de type tableau de l’interface de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Vous pouvez filtrer le rapport pour voir seulement votre code et un segment du fichier de données de profilage. Pour plus d’informations, consultez [VSPerfReport](../profiling/vsperfreport.md).

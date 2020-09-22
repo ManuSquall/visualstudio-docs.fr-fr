@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Déboguer des Clients COM et des serveurs à l’aide du débogage RPC | Microsoft Docs'
+title: 'Procédure : déboguer des clients et des serveurs COM à l’aide du débogage RPC | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -27,20 +27,20 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fda2a10cd559f940ab87e5cc8c26f5b47dbec194
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63384036"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840209"
 ---
-# <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>Procédure : Déboguer des clients et des serveurs COM à l’aide du débogage RPC
+# <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>Comment : déboguer des clients COM et des serveurs à l'aide du débogage RPC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez utiliser le débogage RPC pour déboguer des applications client/serveur COM. Vous devez activer le débogage RPC pour l'utiliser. Lorsque le débogage RPC est activé, si vous effectuez un pas à pas détaillé dans l'appel serveur à partir du client, le débogueur est attaché au serveur, ce qui permet de déboguer son code. Une fois que le débogueur est attaché, vous pouvez utiliser toutes ses fonctionnalités avec les processus client et serveur.  
   
 ### <a name="to-enable-rpc-debugging"></a>Pour activer le débogage RPC  
   
-1. Dans le menu **Outils**, cliquez sur **Options**.  
+1. Dans le menu **Outils** , cliquez sur **Options**.  
   
 2. Dans la boîte de dialogue **Options**, cliquez sur le dossier **Débogage**.  
   

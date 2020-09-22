@@ -1,5 +1,6 @@
 ---
-title: Fichiers sources de débogage/propriétés communes/pages de propriétés de la solution
+title: Fichiers sources de débogage/pages de propriétés de solution
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -22,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 735432db485277e2265479e625f5e8acaa2cc2e3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3057a6a94edb09018836493257e8d875d938b839
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72738393"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809542"
 ---
 # <a name="debug-source-files-common-properties-solution-property-pages-dialog-box"></a>Fichiers sources pour le débogage, Propriétés communes, boîte de dialogue Pages de propriétés de Solution
 Cette page de propriétés spécifie à quel endroit le débogueur recherchera les fichiers sources lors du débogage de la solution.

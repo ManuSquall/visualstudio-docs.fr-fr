@@ -19,11 +19,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 503f97d1530f8d22184f42a2452046782a997c18
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432999"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839849"
 ---
 # <a name="microsoft-language-interface-packs-lips-and-visual-studio"></a>Microsoft Language Interface Packs (LIP) et Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

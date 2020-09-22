@@ -1,5 +1,6 @@
 ---
-title: Comment installer les composants requis avec une application ClickOnce | Microsoft Docs
+title: Installer les composants requis avec une application ClickOnce
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce4ad97439d330a6fc51e741e9ea05ef53a5798a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 52e815c45f776635d811c073114e22c3bd002de0
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382378"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809118"
 ---
 # <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Guide pratique pour installer les composants requis avec une application ClickOnce
 Toutes les [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applications requièrent que la version correcte du .NET Framework soit installée sur un ordinateur avant de pouvoir être exécutées. de nombreuses applications ont également d’autres conditions préalables. Lors de la publication d’une [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application, vous pouvez choisir un ensemble de composants requis à empaqueter avec votre application. Au moment de l’installation, un contrôle est effectué pour chaque composant requis pour déterminer s’il existe déjà. Si ce n’est pas le cas, il sera installé avant l’installation de l' [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application.

@@ -1,5 +1,6 @@
 ---
-title: Collecte de données de minutage détaillées à l’aide de l’instrumentation | Microsoft Docs
+title: Collecter les données temporelles détaillées à l’aide de l’instrumentation
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 682ae4bf31f44f3dff5f6dfadf7b8c316d9d9721
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2b5082066de22bee3954b297f30eebb7d89ec607
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331852"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810768"
 ---
 # <a name="collect-detailed-timing-data-by-using-instrumentation"></a>Collecter les données temporelles détaillées à l’aide de l’instrumentation
 La méthode d’instrumentation des outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] injecte le code de profilage dans une copie d’un module. Le code enregistre chaque entrée, sortie et appel des fonctions dans le module pendant une exécution du profilage. La méthode d’instrumentation est utile pour rassembler des informations de temporisation détaillées sur une section de votre code et comprendre l’impact des opérations d’entrée et de sortie sur les performances de l’application.

@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: df922cbbe1c065f4df79fa62b7b4b0213dd7f487
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64807495"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839742"
 ---
-# <a name="idiasymbolgetbasetype"></a>IDiaSymbol::get_baseType
+# <a name="idiasymbolget_basetype"></a>IDiaSymbol::get_baseType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Récupère le type de base pour ce symbole.  
@@ -35,18 +35,18 @@ HRESULT get_baseType ( 
   
 #### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- [out] Retourne une valeur de la [BasicType (énumération)](../../debugger/debug-interface-access/basictype.md) énumération spécifiant le type de base du symbole.  
+ à Retourne une valeur de l’énumération d' [énumération BasicType](../../debugger/debug-interface-access/basictype.md) qui spécifie le type de base du symbole.  
   
 ## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  
+ En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.  
   
 > [!NOTE]
-> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
+> Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## <a name="remarks"></a>Notes  
- Le type de base pour un symbole peut être déterminé par tout d’abord obtenir le type du symbole et puis en interrogeant qui a retourné le type pour le type de base. Notez que certains symboles ne peuvent pas avoir un type de base, par exemple, le nom de la structure.  
+## <a name="remarks"></a>Remarques  
+ Le type de base pour un symbole peut être déterminé en obtenant tout d’abord le type du symbole, puis en interrogeant ce type retourné pour le type de base. Notez que certains symboles peuvent ne pas avoir de type de base (par exemple, un nom de structure).  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a> Exemple  
   
 ```cpp#  
 IDiaSymbol* pType;  
@@ -61,14 +61,14 @@ if (pType->get_type( &pBaseType ) == S_OK)
 }  
 ```  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
   
-|Prérequis|Description|  
+|Condition requise|Description|  
 |-----------------|-----------------|  
 |En-tête :|dia2.h|  
-|Version :|DIA SDK v7.0|  
+|Version :|DIA SDK v 7.0|  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [BasicType, énumération](../../debugger/debug-interface-access/basictype.md)   
+ [Énumération BasicType](../../debugger/debug-interface-access/basictype.md)   
  [IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)

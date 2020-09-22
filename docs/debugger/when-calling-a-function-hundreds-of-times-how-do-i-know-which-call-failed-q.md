@@ -1,6 +1,6 @@
 ---
-title: Rechercher l’appel ayant échoué lors de l’appel d’une fonction plusieurs fois | Microsoft Docs
-ms.custom: seodec18
+title: Rechercher l’échec de l’appel lors de l’appel d’une fonction plusieurs fois
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4790fa8c6fd0bba5b513fd2ce3d203b552b6c63b
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: de3d186b7800efc3e807e3f775b48d91b44072b4
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599990"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810482"
 ---
 # <a name="when-calling-a-function-hundreds-of-times-how-do-i-know-which-call-failed"></a>Lorsque j'appelle une fonction des centaines de fois, comment puis-je savoir quel appel a échoué ?
 ## <a name="problem-description"></a>Description du problème

@@ -20,18 +20,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b5b8be97212f4510002a78e6565fc9884930db89
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446093"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839757"
 ---
 # <a name="refresh-an-app-javascript"></a>Actualiser une application (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.png « windows_and_phone_content »)  
   
- Vous pouvez apporter des modifications à votre code pendant que vous déboguez, puis actualisez une application de Store en JavaScript en sélectionnant le **Windows actualiser application** bouton sur le **déboguer** barre d’outils. Ce bouton permet de recharger l'application sans arrêter, ni redémarrer le débogueur. La fonctionnalité Actualiser vous permet de modifier le code HTML, CSS et JavaScript et de visualiser rapidement le résultat. Cette fonctionnalité est prise en charge pour les applications du Windows Store et les applications du Windows Phone Store.  
+ Vous pouvez apporter des modifications à votre code pendant le débogage, puis actualiser une application du Windows Store à l’aide de JavaScript en choisissant le bouton **Actualiser l’application Windows** dans la barre d’outils **Déboguer** . Ce bouton permet de recharger l'application sans arrêter, ni redémarrer le débogueur. La fonctionnalité Actualiser vous permet de modifier le code HTML, CSS et JavaScript et de visualiser rapidement le résultat. Cette fonctionnalité est prise en charge pour les applications du Windows Store et les applications du Windows Phone Store.  
   
  L'actualisation ne conserve pas l'état de votre application, ni ne reflète les modifications suivantes dans votre application :  
   
@@ -56,15 +56,15 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
 2. Avec le modèle ouvert dans Visual Studio, sélectionnez une cible de débogage.  
   
-     Si un projet Windows Phone est votre projet de démarrage actuel, sélectionnez un émulateur Windows Phone pour la cible de débogage. Sinon, sélectionnez **simulateur** ou **ordinateur Local**.  
+     Si un projet Windows Phone est votre projet de démarrage actuel, sélectionnez un émulateur Windows Phone pour la cible de débogage. Dans le cas contraire, sélectionnez **simulateur** ou **ordinateur local**.  
   
-     ![Liste cible de débogage sélectionnez](../debugger/media/js-select-target.png "JS_Select_Target")  
+     ![Sélectionner la liste cible de débogage](../debugger/media/js-select-target.png "JS_Select_Target")  
   
 3. Appuyez sur F5 pour exécuter l'application en mode débogage.  
   
 4. Passez dans Visual Studio. (Appuyez sur F12).  
   
-5. Dans **l’Explorateur de solutions**, dans le **pages** > **domestique** dossier, ouvrez home.html.  
+5. Dans **Explorateur de solutions**, dans le dossier **pages**de  >  **démarrage** , ouvrez home.html.  
   
 6. Remplacez le texte du titre de la page  
   
@@ -78,9 +78,9 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
     Hello!  
     ```  
   
-7. Cliquez sur le **Windows actualiser application** bouton, qui ressemble à ceci : ![Windows application bouton Actualiser](../debugger/media/js-refresh.png "JS_Refresh"). (Ou appuyez sur F4.)  
+7. Cliquez sur le bouton **Actualiser l’application Windows** , qui ressemble à ceci : ![bouton actualiser l’application Windows](../debugger/media/js-refresh.png "JS_Refresh"). (Ou appuyez sur F4.)  
   
 8. Basculez vers l'application. L'application est rechargée sans que le débogueur redémarre, et le nouveau titre de la page apparaît.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md)
+ [Démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md)

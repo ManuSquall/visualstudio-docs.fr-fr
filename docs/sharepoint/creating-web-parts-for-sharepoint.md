@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3825ef7d2c1c90f63a90f5028063c74332543841
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4824c358f81f2cf757f037611ed70ba9b8935130
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015045"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90740155"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>Créer des composants WebPart pour SharePoint
   À l’aide de composants WebPart, vous pouvez modifier le contenu, l’apparence et le comportement des pages d’un site SharePoint à l’aide d’un navigateur. Les composants WebPart sont des contrôles côté serveur qui s’exécutent dans une page de composants WebPart : ils sont les blocs de construction des pages qui s’affichent sur un site SharePoint. Consultez le [bloc de construction : composants WebPart](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14)).
@@ -85,7 +85,7 @@ ms.locfileid: "86015045"
 
 - Les composants Visual Web Parts ne prennent pas directement en charge les jetons SharePoint Server tels que les $SPUrl. Pour plus d’informations, consultez « restrictions de jeton dans les composants WebPart visuels sandbox » dans la rubrique [résolution des problèmes liés aux solutions SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md).
 
-- Les composants Visual Web parts dans une solution bac à sable (sandbox) reçoivent parfois l’erreur « la demande d’exécution du code en mode bac à sable (sandbox) a été refusée car le service hôte de code sandbox était trop occupé pour traiter la demande. » Pour plus d’informations sur cette erreur, consultez ce billet sur le blog de l' [équipe de développement SharePoint](https://blogs.msdn.microsoft.com/sharepointdev/2011/02/08/error-the-sandboxed-code-execution-request-was-refused-because-the-sandboxed-code-host-service-was-too-busy-to-handle-the-request-ricky-kirkham/#10149157).
+- Les composants Visual Web parts dans une solution bac à sable (sandbox) reçoivent parfois l’erreur « la demande d’exécution du code en mode bac à sable (sandbox) a été refusée car le service hôte de code sandbox était trop occupé pour traiter la demande. » Pour plus d’informations sur cette erreur, consultez ce billet sur le blog de l' [équipe de développement SharePoint](/archive/blogs/sharepointdev/error-the-sandboxed-code-execution-request-was-refused-because-the-sandboxed-code-host-service-was-too-busy-to-handle-the-request-ricky-kirkham#10149157).
 
 - Le débogage JavaScript côté serveur n’est pas pris en charge dans Visual Studio, mais le débogage JavaScript côté client est pris en charge.
 
@@ -108,7 +108,7 @@ ms.locfileid: "86015045"
 
 ## <a name="related-topics"></a>Rubriques connexes
 
-|Titre|Description|
+|Intitulé|Description|
 |-----------|-----------------|
 |[Comment : créer un composant WebPart SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)|Montre comment créer des composants WebPart pour les pages SharePoint.|
 |[Comment : créer un composant WebPart SharePoint à l’aide d’un concepteur](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)|Montre comment créer des composants WebPart pour SharePoint à l’aide d’une aire de conception visuelle.|

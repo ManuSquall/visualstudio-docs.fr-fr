@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0f2da5b3122bd97fcbef0db7124049372c21983f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422082"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839902"
 ---
 # <a name="debug-a-webview-control"></a>Déboguer un contrôle WebView
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,9 +40,9 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
 3. Sélectionnez **Déboguer**. Dans la liste **Processus d’application**, choisissez **Script**.  
   
-     ![Attacher le débogueur de script](../debugger/media/js-dom-webview-script-debugger.png "JS_DOM_WebView_Script_Debugger")  
+     ![Attacher le débogueur de scripts](../debugger/media/js-dom-webview-script-debugger.png "JS_DOM_WebView_Script_Debugger")  
   
-4. (Facultatif) Pour les versions non Express de Visual Studio, désactiver le débogage juste-à-temps (JIT) en choisissant **outils**, **Options**, **débogage**, **juste-à-temps**, et puis désactivant le débogage juste pour le Script.  
+4. Facultatif Pour les versions non Express de Visual Studio, désactivez le débogage juste-à-temps (JIT) en choisissant **Outils**, **options**, **débogage**, **juste-à-temps**, puis en désactivant le débogage juste-à-temps pour le script.  
   
     > [!NOTE]
     > En désactivant le débogage juste-à-temps, vous pouvez masquer les boîtes de dialogue pour les exceptions non prises en charge qui se produisent sur certaines pages web. Dans Visual Studio Express, le débogage juste-à-temps est toujours désactivé.  
@@ -59,11 +59,11 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
 4. Ouvrez la fenêtre de l’Explorateur DOM pour le contrôle `WebView` en choisissant **Déboguer**, **Windows**, **Explorateur DOM**, puis choisissez l’URL du `WebView` que vous voulez inspecter.  
   
-     ![Ouverture de l’Explorateur DOM](../debugger/media/js-dom-webview.png "JS_DOM_WebView")  
+     ![Ouverture de l'explorateur DOM](../debugger/media/js-dom-webview.png "JS_DOM_WebView")  
   
      L'Explorateur DOM associé au `WebView` apparaît sous forme d'un nouvel onglet dans Visual Studio.  
   
-5. Afficher et modifier des éléments DOM en direct et les styles CSS, comme décrit dans [styles CSS déboguer à l’aide de l’Explorateur DOM](../debugger/debug-css-styles-using-dom-explorer.md).  
+5. Affichez et modifiez les éléments DOM en direct et les styles CSS, comme décrit dans [déboguer les styles CSS à l’aide de l’Explorateur DOM](../debugger/debug-css-styles-using-dom-explorer.md).  
   
 ### <a name="use-the-javascript-console-window-to-inspect-and-debug-a-webview-control"></a>Utiliser la fenêtre de la console JavaScript pour inspecter et déboguer un contrôle WebView  
   
@@ -79,12 +79,12 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
 5. Dans la fenêtre de la console, sélectionnez la page web ou un `iFrame` affiché par le contrôle `WebView` dans la liste **Cible**.  
   
-     ![Cibler la sélection dans la fenêtre de console JavaScript](../debugger/media/js-console-target.png "JS_Console_Target")  
+     ![Sélection cible dans la fenêtre de la console JavaScript](../debugger/media/js-console-target.png "JS_Console_Target")  
   
     > [!NOTE]
     > À l'aide de la console, vous pouvez interagir avec un seul `WebView`, `iFrame`, contrat de partage ou traitement web à la fois. Chaque élément requiert une instance distincte de l'hôte de plateforme web (WWAHost.exe). Vous pouvez interagir avec un seul hôte à la fois.  
   
-6. Afficher et modifier les variables dans votre application ou utilisez les commandes de la console, comme décrit dans [Guide de démarrage rapide : Déboguer du code JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) et [JavaScript Console commands](../debugger/javascript-console-commands.md).  
+6. Affichez et modifiez les variables dans votre application ou utilisez les commandes de la console, comme décrit dans [démarrage rapide : déboguer](../debugger/quickstart-debug-javascript-using-the-console.md) les commandes de la console JavaScript et [JavaScript](../debugger/javascript-console-commands.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md)
+ [Démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md)

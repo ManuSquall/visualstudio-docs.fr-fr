@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 33f56615334b7d33516c6c967f165dac3942b5f8
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64825228"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840058"
 ---
-# <a name="idiasymbolgetliverangelength"></a>IDiaSymbol::get_liveRangeLength
+# <a name="idiasymbolget_liverangelength"></a>IDiaSymbol::get_liveRangeLength
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Retourne la longueur de la plage d’adresses dans lequel le symbole local est valid.  
+Retourne la longueur de la plage d’adresses dans laquelle le symbole local est valide.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -35,20 +35,20 @@ HRESULT get_liveRangeLength ( 
   
 #### <a name="parameters"></a>Paramètres  
  `length`  
- [out] Retourne la longueur de la plage d’adresses.  
+ à Retourne la longueur de la plage d’adresses.  
   
 ## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 > [!NOTE]
-> Un code d’erreur renvoyé signifie que le symbole n’a pas d’informations sur la plage dynamique.  
+> Un code d’erreur retourné signifie que le symbole n’a pas d’informations de plage active.  
   
 ## <a name="remarks"></a>Notes  
   
-## <a name="requirements"></a>Configuration requise  
- En-tête : Dia2.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : Dia2. h  
   
- Bibliothèque : diaguids.lib  
+ Bibliothèque : diaguids. lib  
   
  DLL : msdia100.dll  
   

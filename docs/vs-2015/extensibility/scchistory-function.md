@@ -1,5 +1,5 @@
 ---
-title: Fonction SccHistory | Microsoft Docs
+title: SccHistory fonction) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,11 +13,11 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8df85c03201e46768c43fb64cc41b7fa081eb91a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446833"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839446"
 ---
 # <a name="scchistory-function"></a>Fonction SccHistory
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,45 +39,45 @@ SCCRTN SccHistory(
   
 #### <a name="parameters"></a>Paramètres  
  `pvContext`  
- [in] La structure de contexte de plug-in de contrôle de source.  
+ dans Structure de contexte du plug-in de contrôle de code source.  
   
  `hWnd`  
- [in] Handle vers la fenêtre de l’IDE que le plug-in de contrôle de code source peut utiliser en tant que parent pour les boîtes de dialogue qu’il fournit.  
+ dans Handle de la fenêtre IDE que le plug-in de contrôle de code source peut utiliser comme parent pour toutes les boîtes de dialogue qu’il fournit.  
   
  `nFiles`  
- [in] Nombre de fichiers spécifiés dans le `lpFileName` tableau.  
+ dans Nombre de fichiers spécifiés dans le `lpFileName` tableau.  
   
  `lpFileName`  
- [in] Tableau des noms qualifiés complets de fichiers.  
+ dans Tableau de noms qualifiés complets de fichiers.  
   
  `fOptions`  
- [in] Indicateurs de commande (non utilisés actuellement).  
+ dans Indicateurs de commande (actuellement non utilisés).  
   
  `pvOptions`  
- [in] Options spécifiques au plug-in de contrôle source.  
+ dans Options spécifiques au plug-in de contrôle de code source.  
   
 ## <a name="return-value"></a>Valeur de retour  
- L’implémentation de plug-in de contrôle de source de cette fonction est censée retourner l’une des valeurs suivantes :  
+ L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :  
   
-|Value|Description|  
+|Valeur|Description|  
 |-----------|-----------------|  
-|SCC_OK|Historique des versions était obtenue avec succès.|  
-|SCC_I_RELOADFILE|Le système de contrôle de code source en fait modifié le fichier sur le disque lors de l’extraction de l’historique (par exemple, en obtenant d’une ancienne version de celui-ci), afin de l’IDE doit recharger ce fichier.|  
-|SCC_E_FILENOTCONTROLLED|Le fichier n’est pas sous contrôle de code source.|  
+|SCC_OK|L’historique des versions a été obtenu avec succès.|  
+|SCC_I_RELOADFILE|Le système de contrôle de code source a en fait modifié le fichier sur le disque lors de la récupération de l’historique (par exemple, en obtenant une version antérieure), l’IDE doit donc recharger ce fichier.|  
+|SCC_E_FILENOTCONTROLLED|Le fichier n'est pas soumis au contrôle de code source.|  
 |SCC_E_OPNOTSUPPORTED|Le système de contrôle de code source ne prend pas en charge cette opération.|  
 |SCC_E_NOTAUTHORIZED|L’utilisateur n’est pas autorisé à effectuer cette opération.|  
-|SCC_E_ACCESSFAILURE|Impossible d’accéder au système de contrôle source, probablement en raison de problèmes réseau ou de contention. Une nouvelle tentative est recommandée.|  
+|SCC_E_ACCESSFAILURE|Un problème est survenu lors de l’accès au système de contrôle de code source, probablement en raison de problèmes de réseau ou de contention. Une nouvelle tentative est recommandée.|  
 |SCC_E_PROJNOTOPEN|Le projet n’a pas été ouvert.|  
-|SCC_E_NONSPECIFICERROR|Erreur non spécifique. L’historique des fichiers n’a pas pu être obtenu.|  
+|SCC_E_NONSPECIFICERROR|Échec non spécifique. Impossible d’obtenir l’historique des fichiers.|  
   
-## <a name="remarks"></a>Notes  
- Le plug-in de contrôle de code source peut afficher sa propre boîte de dialogue pour afficher l’historique de chaque fichier, à l’aide de `hWnd` en tant que la fenêtre parente. Vous pouvez également le texte facultatif sortie rappel fonction fournie à la [SccOpenProject](../extensibility/sccopenproject-function.md) peut être utilisé, si elle est prise en charge.  
+## <a name="remarks"></a>Remarques  
+ Le plug-in de contrôle de code source peut afficher sa propre boîte de dialogue pour afficher l’historique de chaque fichier, en utilisant `hWnd` comme fenêtre parente. Vous pouvez également utiliser la fonction de rappel de sortie de texte facultative fournie à [SccOpenProject](../extensibility/sccopenproject-function.md) , si elle est prise en charge.  
   
- Notez que dans certaines circonstances, le fichier en cours d’examen peut changer pendant l’exécution de cet appel. Par exemple, le [!INCLUDE[vsvss](../includes/vsvss-md.md)] commande history permet de l’utilisateur pour obtenir une ancienne version du fichier. Dans ce cas, la source de contrôler les plug-in retourne `SCC_I_RELOAD` pour avertir l’IDE qu’il faut recharger le fichier.  
+ Notez que dans certains cas, le fichier en cours d’examen peut changer pendant l’exécution de cet appel. Par exemple, la [!INCLUDE[vsvss](../includes/vsvss-md.md)] commande History donne à l’utilisateur la possibilité d’obtenir une ancienne version du fichier. Dans ce cas, le plug-in de contrôle de code source retourne `SCC_I_RELOAD` pour avertir l’IDE qu’il doit recharger le fichier.  
   
 > [!NOTE]
-> Si le plug-in de contrôle de code source ne prend pas en charge cette fonction pour un tableau de fichiers, uniquement l’historique du fichier pour le premier fichier peut être affiché.  
+> Si le plug-in de contrôle de code source ne prend pas en charge cette fonction pour un tableau de fichiers, seul l’historique des fichiers du premier fichier peut être affiché.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Fonctions d’API de plug-in de contrôle de source](../extensibility/source-control-plug-in-api-functions.md)   
+ [Fonctions de l’API du plug-in de contrôle de code source](../extensibility/source-control-plug-in-api-functions.md)   
  [SccOpenProject](../extensibility/sccopenproject-function.md)

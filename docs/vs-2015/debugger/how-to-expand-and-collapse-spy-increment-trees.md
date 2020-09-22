@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Développer et réduire des arborescences Spy ++ | Microsoft Docs'
+title: 'Comment : développer et réduire des arborescences Spy + + | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,36 +12,36 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f028370c5790b6e22339f39eacaac5e2b552e213
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438279"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839953"
 ---
-# <a name="how-to-expand-and-collapse-spy-trees"></a>Procédure : Développer et réduire des arborescences Spy++
+# <a name="how-to-expand-and-collapse-spy-trees"></a>Comment : développer et réduire des arborescences Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous pouvez développer et réduire les vues de Windows, les processus et les Threads à l’aide de deux méthodes : en cliquant sur les icônes dans la fenêtre ou à l’aide de la **arborescence** menu. Le + et – icônes dans l’arborescence agissent comme ils le font dans la fenêtre de projet Visual C++.  
+Vous pouvez développer et réduire les vues fenêtres, processus et threads à l’aide de deux méthodes : en cliquant sur les icônes dans la fenêtre ou à l’aide du menu **arborescence** . Les icônes + et – de l’arborescence agissent de la même façon que dans la fenêtre Visual C++ projet.  
   
- Le **arborescence** menu contient quatre commandes :  
+ Le menu **arborescence** contient quatre commandes :  
   
 |Commande de menu|Description|  
 |------------------|-----------------|  
-|**Développer un niveau**|Développe l’élément actuellement sélectionné vers le niveau suivant.|  
-|**Développez la branche**|Développe entièrement l’élément actuellement sélectionné.|  
-|**Développer tout**|Développe entièrement tous les éléments dans la fenêtre.|  
-|**Réduire**|Réduit complètement l’élément actuellement sélectionné.|  
+|**Développer un niveau**|Développe l’élément actuellement sélectionné jusqu’au niveau suivant.|  
+|**Développer la branche**|Développe complètement l’élément actuellement sélectionné.|  
+|**Développer tout**|Développe complètement tous les éléments dans la fenêtre.|  
+|**Collapse**|Réduit complètement l’élément actuellement sélectionné.|  
   
 > [!TIP]
-> Si vous développez un processus, vous consultez tous les threads détenus. Si vous développez un thread, vous voyez une liste de toutes les fenêtres qu’il détient.  
+> Si vous développez un processus, vous voyez tous les threads qu’il possède. Si vous développez un thread, vous voyez une liste de toutes les fenêtres qu’il possède.  
   
-### <a name="to-expand-or-collapse-spy-trees"></a>Pour développer ou réduire des arborescences Spy ++  
+### <a name="to-expand-or-collapse-spy-trees"></a>Pour développer ou réduire les arborescences Spy + +  
   
-1. Mettez en surbrillance un des éléments dans la vue de Windows, des processus ou Threads.  
+1. Mettez en surbrillance l’un des éléments de la vue fenêtres, processus ou threads.  
   
-2. À partir de la **arborescence** menu, choisissez une du développer ou réduire des commandes.  
+2. Dans le menu de l' **arborescence** , choisissez l’une des commandes de développement ou de réduction.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Utilisation de Spy++](../debugger/using-spy-increment.md)   
- [Vues Spy++](../debugger/spy-increment-views.md)   
- [Informations de référence sur Spy++](../debugger/spy-increment-reference.md)
+ [Utilisation de Spy + +](../debugger/using-spy-increment.md)   
+ [Vues Spy + +](../debugger/spy-increment-views.md)   
+ [Référence Spy++](../debugger/spy-increment-reference.md)

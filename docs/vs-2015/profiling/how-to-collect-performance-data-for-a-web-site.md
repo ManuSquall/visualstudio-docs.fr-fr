@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : collecter des données de performances pour un site web | Microsoft Docs'
+title: 'Procédure : collecte des données de performances pour un site web | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,16 +20,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3307b5372852d6f3e269264a02fa2c90cb1acd22
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432795"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839389"
 ---
-# <a name="how-to-collect-performance-data-for-a-web-site"></a>Procédure : Collecter des données de performances pour un Site Web
+# <a name="how-to-collect-performance-data-for-a-web-site"></a>Procédure : collecte des données de performances pour un site web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous pouvez utiliser l’ **Assistant Performance** pour collecter des données de performances pour une application web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] . Vous pouvez profiler une application web qui est ouverte dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ou profiler un site web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] qui se trouve sur votre ordinateur local et qui n’est pas ouvert dans l’IDE [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+Vous pouvez utiliser l' **Assistant Performance** pour collecter des données de performances pour une [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] application Web. Vous pouvez profiler une application web qui est ouverte dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ou vous pouvez profiler un site web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] qui se trouve sur votre ordinateur local et qui n’est pas ouvert dans l’IDE [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
 > [!NOTE]
 > L’ **Assistant Performance** vous permet d’ajouter des données d’interaction de couche (TIP), des données de performance JScript, ou les deux, aux données de profilage collectées. L’option TIP collecte des données auprès des processus côté serveur. Le profilage JScript collecte des données auprès des scripts qui s’exécutent sur un site web local ou distant. Dans la plupart des cas, vous devez choisir une seule des options.  
@@ -58,7 +58,7 @@ Vous pouvez utiliser l’ **Assistant Performance** pour collecter des données 
   
     - Pour collecter l’interaction de couche, cochez la case **Activer le profilage d’interaction de couche** .  
   
-    - Pour collecter des données du JavaScript s’exécutant dans les pages web, cochez la case **Profiler JavaScript** .  
+    - Pour collecter des données à partir du JavaScript qui s’exécute dans les pages Web, cochez la case **Profiler JavaScript** .  
   
 6. Cliquez sur **Suivant**.  
   
@@ -80,11 +80,11 @@ Vous pouvez utiliser l’ **Assistant Performance** pour collecter des données 
   
 5. Dans la zone **Quel URL ou chemin d’accès exécutera votre application web** sur la troisième page de l’Assistant, entrez l’URL de la page d’accueil de l’application, puis cliquez sur **Suivant**.  
   
-   - Pour un site web basé sur un serveur (IIS), tapez une URL telle que **http://localhost/MySite/default.aspx**. Ceci déclenche le profilage de l’application [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] sur l’ordinateur local à la racine de l’application MonSite et le démarrage de la page defaut.aspx dans Internet Explorer pour démarrer la session.  
+   - Pour un site Web basé sur un serveur (IIS), tapez une URL telle que **http://localhost/MySite/default.aspx** . Ceci déclenche le profilage de l’application [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] sur l’ordinateur local à la racine de l’application MonSite et le démarrage de la page defaut.aspx dans Internet Explorer pour démarrer la session.  
   
    - Pour un site web basé sur un fichier, tapez un chemin comme file///**c:\sites_web\MonSite\defaut.aspx**. Cela déclenche le profilage de l’application [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] située sur c:\webSites\MySite et l’ouverture de la page http://localhost:nnnn/MySite/default.aspx dans Internet Explorer pour démarrer la session.  
   
-   - Pour les sites externes dont vous souhaitez collecter des données JavaScript, tapez l’URL, par exemple http :\//www.contoso.com.  
+   - Pour les sites externes sur lesquels vous souhaitez collecter des données JavaScript, tapez l’URL, par exemple http : \/ /www.contoso.com.  
   
      Pour plus d’informations, consultez les pages de propriétés un binaire cible [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] .  
   
@@ -92,7 +92,7 @@ Vous pouvez utiliser l’ **Assistant Performance** pour collecter des données 
   
    - Pour collecter l’interaction de couche, cochez la case **Activer le profilage d’interaction de couche** .  
   
-   - Pour collecter des données du JavaScript s’exécutant dans les pages web, cochez la case **Profiler JavaScript** .  
+   - Pour collecter des données à partir du JavaScript qui s’exécute dans les pages Web, cochez la case **Profiler JavaScript** .  
   
 7. Cliquez sur **Suivant**.  
   
@@ -100,10 +100,10 @@ Vous pouvez utiliser l’ **Assistant Performance** pour collecter des données 
   
 9. Une session de performance est créée pour l’application ASP.NET et le site web est démarré dans le navigateur. Utilisez les fonctionnalités que vous voulez profiler, puis fermez le navigateur.  
   
-     Le profileur génère le fichier de données et affiche la vue Résumé des données dans la fenêtre principale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+     Le profileur génère le fichier de données et affiche la vue Résumé des données dans la fenêtre principale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
 ## <a name="see-also"></a>Voir aussi  
  [Vues d’ensemble](../profiling/overviews-performance-tools.md)   
- [Configuration de sessions de performance](../profiling/configuring-performance-sessions.md)   
- [Présentation des valeurs de données d’instrumentation](../profiling/understanding-instrumentation-data-values.md)   
- [Présentation des valeurs de données d’échantillonnage](../profiling/understanding-sampling-data-values.md)
+ [Configuration des sessions de performance](../profiling/configuring-performance-sessions.md)   
+ [Fonctionnement des valeurs de données d’instrumentation](../profiling/understanding-instrumentation-data-values.md)   
+ [Fonctionnement des valeurs de données d’échantillonnage](../profiling/understanding-sampling-data-values.md)

@@ -14,19 +14,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 00df8bf8757b9dba35537942716c37f66675bf32
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435864"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840197"
 ---
 # <a name="da0017-high-rates-of-paging-active-memory-to-disk"></a>DA0017 : Taux élevés de pagination de la mémoire active sur le disque
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Id de règle | DA0017 |  
+ID de règle | DA0017 |  
 | Catégorie | Mémoire et pagination |  
-| Méthode de profilage | Tous les |  
-| Message | Un taux élevé de pagination de la mémoire active sur le disque est en cours. Votre application peut être liée à la mémoire.|  
+| Méthode de profilage | Tout |  
+| Message | Un taux élevé de pagination de la mémoire active sur le disque se produit. Votre application peut être liée à la mémoire.|  
 | Type de règle | Informations |  
   
  Lorsque vous effectuez un profilage à l’aide de la méthode d’échantillonnage, de mémoire .NET ou de conflit des ressources, vous devez collecter au moins 10 échantillons pour déclencher cette règle.  
@@ -37,14 +37,14 @@ Id de règle | DA0017 |
 ## <a name="rule-description"></a>Description de la règle  
   
 > [!NOTE]
-> Cette règle à caractère informatif se déclenche lorsque les niveaux de pagination de la mémoire active atteignent un taux élevé. Quand un niveau très élevé de pagination se produit, la règle d’avertissement [DA0014 : Taux très élevés de pagination de la mémoire active sur le disque](../profiling/da0014-extremely-high-rates-of-paging-active-memory-to-disk.md) se déclenche à la place.  
+> Cette règle à caractère informatif se déclenche lorsque les niveaux de pagination de la mémoire active atteignent un taux élevé. Lorsqu’un niveau très élevé de pagination se produit, la règle d’avertissement [DA0014 : Taux très élevés de pagination de la mémoire active sur le disque](../profiling/da0014-extremely-high-rates-of-paging-active-memory-to-disk.md) est déclenchée.  
   
  Une pagination excessive sur le disque peut être due à un manque de mémoire physique. Si les opérations de pagination utilisent une grande partie du disque physique sur lequel réside le fichier de pagination, elles peuvent ralentir d’autres opérations de disque orientées application effectuées sur le même disque.  
   
  Il arrive fréquemment que les pages soient lues ou écrites sur le disque lors d’opérations de pagination en bloc. Le nombre de pages en sortie/s est souvent beaucoup plus élevé que le nombre d’écritures de pages/s, par exemple. Cela est dû au fait que les pages en sortie/s comprennent également les pages de données modifiées dans le cache de fichiers système. Toutefois, il n’est pas toujours facile de déterminer quel processus est directement responsable de la pagination, ni de connaître la cause de cette pagination.  
   
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations  
- Double-cliquez sur le message dans la fenêtre Liste d’erreurs pour accéder à la vue [Marques](../profiling/marks-view.md). Recherchez la colonne **Mémoire\Pages/s**. Déterminez s’il existe des phases spécifiques de l’exécution du programme durant lesquelles l’activité d’E/S de pagination est plus importante.  
+ Double-cliquez sur le message dans la fenêtre Liste d’erreurs pour accéder à la vue [marques](../profiling/marks-view.md) . Recherchez la colonne **Mémoire\Pages/s**. Déterminez s’il existe des phases spécifiques de l’exécution du programme durant lesquelles l’activité d’E/S de pagination est plus importante.  
   
  Si vous collectez des données de profil pour une application ASP.NET dans un scénario de test de charge, essayez de réexécuter le test de charge sur un ordinateur configuré avec de la mémoire physique (ou RAM) supplémentaire.  
   

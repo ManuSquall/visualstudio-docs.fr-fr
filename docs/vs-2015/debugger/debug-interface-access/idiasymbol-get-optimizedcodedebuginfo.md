@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 32279f4539e52335c4999c07e10053c70ad3860f
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64832270"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840162"
 ---
-# <a name="idiasymbolgetoptimizedcodedebuginfo"></a>IDiaSymbol::get_optimizedCodeDebugInfo
+# <a name="idiasymbolget_optimizedcodedebuginfo"></a>IDiaSymbol::get_optimizedCodeDebugInfo
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Récupère un indicateur qui indique si la fonction contient les informations de débogage spécifiques pour le code optimisé.  
+Récupère un indicateur qui signale si la fonction contient des informations de débogage spécifiques au code optimisé.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -35,17 +35,17 @@ HRESULT get_optimizedCodeDebugInfo(
   
 #### <a name="parameters"></a>Paramètres  
  `pFlag`  
- [out] Retourne `TRUE` si la fonction optimisée ou une étiquette contient des informations de débogage ; sinon, retourne `FALSE`.  
+ à Retourne `TRUE` si la fonction optimisée ou l’étiquette contient des informations de débogage ; sinon, retourne `FALSE` .  
   
 ## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  
+ En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.  
   
 > [!NOTE]
-> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
+> Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
   
-|Prérequis|Description|  
+|Condition requise|Description|  
 |-----------------|-----------------|  
 |En-tête :|dia2.h|  
   

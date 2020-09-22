@@ -15,18 +15,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eceadf1b1bf82876a20027a9d29c8336e381d18d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434301"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839774"
 ---
 # <a name="cpu-and-windows-counters"></a>Compteurs UC et Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Le profileur Visual Studio permet de collecter les données de performances qui ont été générées par le système d’exploitation (compteurs Windows) et celles qui ont été générées par le processeur (compteurs UC).  
   
- **Spécifications**  
+ **Configuration requise**  
   
 - [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
@@ -55,27 +55,27 @@ Le profileur Visual Studio permet de collecter les données de performances qui 
   
  **Événements généraux**  
   
-|Nom de l'événement|Description de l'événement|  
+|Nom de l’événement|Description de l’événement|  
 |----------------|-----------------------|  
 |Instructions retirées|Indique le nombre d’instructions qui ont été exécutées avant la fin de l’événement.|  
 |Cycles hors interruption|Indique uniquement les cycles au cours desquels le processeur n’est pas arrêté, comme pour une attente d’E/S.|  
   
  **Événements frontaux**  
   
-|Nom de l'événement|Description de l'événement|  
+|Nom de l’événement|Description de l’événement|  
 |----------------|-----------------------|  
 |Échecs dans ITLB|Indique le nombre de recherches dans le tampon de traduction ITLB qui ont échoué.|  
   
  **Événements de branche**  
   
-|Nom de l'événement|Description de l'événement|  
+|Nom de l’événement|Description de l’événement|  
 |----------------|-----------------------|  
 |Branches retirées|Indique le nombre d’instructions de branche qui ont été exécutées avant la fin de l’événement.|  
 |Branches mal prédites|Indique les branches mal prédites qui sont dues à la mauvaise prédiction du chemin par le processeur. Les branches mal prédites affectent les performances, car le processeur doit abandonner tout le travail effectué et recommencer sur le bon chemin.|  
   
  **Événements mémoire**  
   
-|Nom de l'événement|Description de l'événement|  
+|Nom de l’événement|Description de l’événement|  
 |----------------|-----------------------|  
 |Échecs de l'accès en lecture au cache L2|Indique le nombre d’échecs de lecture du cache de deuxième niveau (L2).|  
 |Références de lecture du cache L2|Indique le nombre de références de lecture du cache de deuxième niveau (L2). Cela comprend les échecs de chargement, ainsi que les échecs et les réussites RFO (Read For Ownership).|  
@@ -88,9 +88,9 @@ Le profileur Visual Studio permet de collecter les données de performances qui 
   
 ##### <a name="to-view-a-list-of-a-list-of-all-cpu-counters-that-are-supported-on-the-current-platform"></a>Pour afficher la liste de tous les compteurs UC pris en charge sur la plateforme actuelle  
   
-1. Dans l’Explorateur de performances, cliquez avec le bouton droit sur la session de performance, puis cliquez sur **Propriétés**.  
+1. Dans Explorateur de performances, cliquez avec le bouton droit sur la session de performance, puis cliquez sur **Propriétés**.  
   
-2. Effectuez l’une des opérations suivantes :  
+2. Effectuez l’une des actions suivantes :  
   
    - Cliquez sur **Échantillonnage**, puis sélectionnez **Compteur de performances** dans la liste des événements **Échantillon**. Les compteurs UC sont répertoriés sous **Compteurs de performances disponibles**.  
   
@@ -100,11 +100,11 @@ Le profileur Visual Studio permet de collecter les données de performances qui 
   
    - Sélectionnez **Compteurs UC**, puis sélectionnez **Collecter les compteurs UC**. Les compteurs UC sont répertoriés sous **Compteurs disponibles**.  
   
-      **Remarque** Cliquez sur **Annuler** pour revenir à la configuration de collecte de compteur précédente.  
+      **Remarque** Cliquez sur **Annuler** pour revenir à la configuration de la collection de compteurs précédente.  
   
 ##### <a name="to-view-a-list-of-a-list-of-window-counters-that-are-supported-on-the-current-platform"></a>Pour afficher la liste des compteurs Windows pris en charge sur la plateforme actuelle  
   
-1. Dans l’Explorateur de performances, cliquez avec le bouton droit sur la session de performance, puis cliquez sur **Propriétés**.  
+1. Dans Explorateur de performances, cliquez avec le bouton droit sur la session de performance, puis cliquez sur **Propriétés**.  
   
 2. Cliquez sur **Compteurs Windows**.  
   
@@ -112,25 +112,25 @@ Le profileur Visual Studio permet de collecter les données de performances qui 
   
 4. Dans la liste **Catégorie de compteurs**, sélectionnez un groupe de compteurs. Le compteur Windows du groupe s’affiche dans la zone de liste.  
   
-     **Remarque :** cliquez sur **Annuler** pour revenir à la configuration précédente de la collecte de compteur.  
+     **Remarque** Cliquez sur **Annuler** pour revenir à la configuration de collecte de compteur précédente.  
   
 ### <a name="command-line"></a>Ligne de commande  
  L’outil en ligne de commande [VSPerfCmd](../profiling/vsperfcmd.md) permet de répertorier les compteurs UC qui sont disponibles sur un ordinateur à partir de la ligne de commande.  
   
 ##### <a name="to-list-of-cpu-counters-that-are-supported-on-the-current-platform"></a>Pour répertorier les compteurs UC pris en charge sur la plateforme actuelle  
   
-1. Ouvrez une fenêtre d’invite de commandes.  
+1. Ouvrir une fenêtre d’invite de commandes.  
   
 2. Type  
   
-     **\<Répertoire Visual Studio Performance Tools>\VSPerfCmd /querycounters**  
+     **\<Visual Studio Performance Tools Directory>\VSPerfCmd/QueryCounters**  
   
-     où **\<Répertoire Visual Studio Performance Tools>** correspond au chemin du répertoire Performance Tools de votre installation de Visual Studio, généralement  
+     où **\<Visual Studio Performance Tools Directory>** est le chemin d’accès au répertoire des outils de performances de votre installation de Visual Studio, généralement  
   
      C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools  
   
 ## <a name="see-also"></a>Voir aussi  
  [Vues d’ensemble](../profiling/overviews-performance-tools.md)   
- [Guide pratique pour Choisissez les événements d’échantillonnage](../profiling/how-to-choose-sampling-events.md)   
- [Guide pratique pour Collecter les données des compteurs UC](../profiling/how-to-collect-cpu-counter-data.md)   
+ [Comment : choisir des événements d’échantillonnage](../profiling/how-to-choose-sampling-events.md)   
+ [Procédure : collecter les données des compteurs UC](../profiling/how-to-collect-cpu-counter-data.md)   
  [Guide pratique pour collecter les données des compteurs Windows](../profiling/how-to-collect-windows-counter-data.md)
