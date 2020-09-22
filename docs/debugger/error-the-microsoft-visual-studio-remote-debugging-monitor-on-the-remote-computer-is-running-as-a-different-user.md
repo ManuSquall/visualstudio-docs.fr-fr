@@ -1,5 +1,5 @@
 ---
-title: Erreur-le Remote Debugging Monitor de Microsoft Visual Studio sur l’ordinateur distant s’exécute en tant qu’utilisateur différent
+title: Microsoft Visual Studio Remote Debugging Monitor sur l’ordinateur distant s’exécute avec un utilisateur différent
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 11/04/2016
@@ -21,19 +21,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a69745a051af0ec44eb813054e40fb9f6c6a0aa6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5acf69b980221c0d953e22e66502672477656dbc
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85460401"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851760"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-is-running-as-a-different-user"></a>Erreur : Microsoft Visual Studio Remote Debugging Monitor sur l'ordinateur distant s'exécute avec un utilisateur différent
 Si vous essayez d'effectuer un débogage distant, vous risquez de recevoir ce message d'erreur :
 
  Microsoft Visual Studio Remote Debugging Monitor sur l'ordinateur distant s'exécute avec un utilisateur différent.
 
-## <a name="cause"></a>Cause :
+## <a name="cause"></a>Cause
  Ce message se produit lorsque vous déboguez en mode Aucune authentification et l'utilisateur qui a démarré msvsmon n'est pas l'utilisateur qui exécute Visual Studio.
 
 ## <a name="solution"></a>Solution

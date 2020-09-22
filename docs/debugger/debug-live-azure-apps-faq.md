@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e0d8839daac2d470f4275257bfcfbc83fc7a62f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f8afc67b92a943dd571847bb1a00fb7e4db4514b
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911408"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851097"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Questions fréquentes sur le débogage d’instantané dans Visual Studio
 
@@ -103,7 +103,7 @@ Pour les machines virtuelles/groupes identiques de machines virtuelles, supprime
 
 2. Supprimer des certificats et Azure Key Vault
 
-   Lors de l’installation de l’extension du débogueur distant pour les machines virtuelles ou les groupes de machines virtuelles identiques, les certificats client et serveur sont créés pour authentifier le client VS avec les ressources de machine virtuelle Azure/groupes de machines virtuelles identiques.
+   Lors de l’installation de l’extension du débogueur distant pour les machines virtuelles ou les groupes de machines virtuelles identiques, les certificats client et serveur sont créés pour authentifier le client Visual Studio avec les ressources de machine virtuelle Azure/groupes de machines virtuelles identiques.
 
    - Le certificat client
 
@@ -124,7 +124,7 @@ Pour les machines virtuelles/groupes identiques de machines virtuelles, supprime
       ```
 
    - Certificat de serveur
-      - L’empreinte de certificat de serveur correspondante est déployée en tant que secret dans Azure Key Vault. VS va tenter de trouver ou de créer un coffre de sauvegarde avec le préfixe MSVSAZ * dans la région correspondant à la ressource machine virtuelle ou groupes de machines virtuelles identiques. Toutes les ressources de machines virtuelles ou de groupes identiques de machines virtuelles déployées dans cette région partageront donc le même coffre de stockage.
+      - L’empreinte de certificat de serveur correspondante est déployée en tant que secret dans Azure Key Vault. Visual Studio tente de trouver ou de créer un coffre de stockage avec préfixe MSVSAZ * dans la région correspondant à la ressource machine virtuelle ou groupes de machines virtuelles identiques. Toutes les ressources de machines virtuelles ou de groupes identiques de machines virtuelles déployées dans cette région partageront donc le même coffre de stockage.
       - Pour supprimer le secret de l’empreinte numérique du certificat de serveur, accédez au Portail Azure et recherchez le MSVSAZ * Key Vault dans la même région que celle qui héberge votre ressource. Supprimer la clé secrète qui doit être étiquetée `remotedebugcert<<ResourceName>>`
       - Vous devrez également supprimer le secret du serveur de votre ressource via PowerShell.
 

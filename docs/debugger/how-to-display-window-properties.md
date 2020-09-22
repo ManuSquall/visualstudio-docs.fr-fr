@@ -1,5 +1,5 @@
 ---
-title: Comment afficher les propriétés d’une fenêtre | Microsoft Docs
+title: Afficher les propriétés de la fenêtre | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d90ecf7745c609bac6267eaa9abd75b5bfe755c7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c2eed4d85d01711fedd6235a45f5e8ea3a3340ca
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349768"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852281"
 ---
 # <a name="how-to-display-window-properties"></a>Comment : afficher les propriétés d'une fenêtre
 Pour en savoir plus sur une fenêtre listée dans l' [affichage Windows](../debugger/windows-view.md), utilisez la [boîte de dialogue Propriétés](../debugger/window-properties-dialog-box.md)de la fenêtre.

@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 3d7df98dc6ebfb59aa78e6f0c546632bf84596f5
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 5ba7299f90ce5f3f253a7210456053faa6bd22c0
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809699"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852201"
 ---
 # <a name="devinit-configuration-file"></a>fichier de configuration devinit
 
@@ -62,7 +62,7 @@ Les chemins d’accès sont relatifs à l’emplacement d’exécution de devini
 
 #### <a name="run-tool-object"></a>Exécuter l’objet outil
 
-| Name                  | Type   | Obligatoire | Valeur                                                                                                      |
+| Nom                  | Type   | Obligatoire | Valeur                                                                                                      |
 |-----------------------|--------|----------|------------------------------------------------------------------------------------------------------------|
 | **commentaires**          | string | Non       | Commentaires pour l’entrée de l’outil.                                                                               |
 | **outil**              | string | Oui      | Nom de l'outil. Pour obtenir la `devinit list` liste des outils disponibles, consultez la commande.                            |
@@ -71,4 +71,4 @@ Les chemins d’accès sont relatifs à l’emplacement d’exécution de devini
 
 ## <a name="examples"></a>Exemples
 
-Pour obtenir plus d’exemples d’utilisation de devinit, consultez la [section exemples](/samples).
+Pour obtenir plus d’exemples d’utilisation de devinit, consultez la [section exemples](sample-readme.md).

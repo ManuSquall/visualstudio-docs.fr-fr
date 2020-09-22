@@ -1,5 +1,5 @@
 ---
-title: Raccordements d’allocation et allocations de mémoire Runtime C | Microsoft Docs
+title: Raccordements d'allocation et allocations de la mémoire runtime C
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79e55ec521de098a7ae0339c4460502dde3d482d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be75b4d3e83ed297f31e9015c7ba082c0611206d
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72745799"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851617"
 ---
 # <a name="allocation-hooks-and-c-run-time-memory-allocations"></a>Raccordements d'allocation et allocations de la mémoire runtime C
 Une restriction très importante sur les fonctions de raccordement d’allocation est qu’elles doivent ignorer les blocs de manière explicite `_CRT_BLOCK` . Ces blocs sont les allocations de mémoire effectuées en interne par les fonctions de la bibliothèque Runtime C s’ils effectuent des appels à des fonctions de la bibliothèque Runtime C qui allouent de la mémoire interne. Vous pouvez ignorer `_CRT_BLOCK` les blocs en incluant le code suivant au début de votre fonction de raccordement d’allocation :

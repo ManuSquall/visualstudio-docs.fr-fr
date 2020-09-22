@@ -1,5 +1,5 @@
 ---
-title: 'Erreur : RPC requiert une authentification | Microsoft Docs'
+title: RPC requiert une authentification | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e98daf3697c86eec7767135c9ad85d67cd6e958a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9bb172455226ab290a74da07e97fc40deb30b6ba
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85460583"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852548"
 ---
 # <a name="error-rpc-requires-authentication"></a>Erreur : RPC requiert une authentification
 Le débogueur Visual Studio ne peut pas se connecter à l'ordinateur distant. Une stratégie RPC est activée sur l'ordinateur local qui empêche le débogage distant.

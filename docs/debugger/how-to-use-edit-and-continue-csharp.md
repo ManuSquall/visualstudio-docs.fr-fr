@@ -1,5 +1,5 @@
 ---
-title: Comment utiliser modifier & Continuer (C#) | Microsoft Docs
+title: Utiliser modifier & Continuer (C#) | Microsoft Docs
 ms.date: 10/04/2018
 ms.topic: how-to
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a88cff54679ac0deae32bfeeff1dd96526f19ea7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 18d11f552d486fd9ebd7a95323e327324de14108
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348858"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851851"
 ---
 # <a name="how-to-use-edit-and-continue-c"></a>Comment : utiliser Modifier &amp; Continuer (C#)
 Avec modifier & continuer, vous pouvez apporter et appliquer des modifications à votre code en mode arrêt pendant le débogage, sans avoir à arrêter et redémarrer la session de débogage.

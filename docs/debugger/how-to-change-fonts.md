@@ -1,5 +1,5 @@
 ---
-title: Modification des polices | Microsoft Docs
+title: Modifier les polices | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5597d1f7c14e1c37c55751c85e0dc53092c3af1c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 77789ed5d262be87076631e978fbc46e972158ae
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350262"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851487"
 ---
 # <a name="how-to-change-fonts"></a>Comment : modifier les polices
 Vous pouvez modifier la police, le style de police et la taille de police des fenêtres Spy + +.

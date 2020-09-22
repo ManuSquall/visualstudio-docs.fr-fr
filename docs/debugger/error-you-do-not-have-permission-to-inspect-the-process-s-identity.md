@@ -1,5 +1,5 @@
 ---
-title: "Erreur : vous n’êtes pas autorisé à inspecter l' &apos; identité du processus | Microsoft Docs"
+title: Vous n’êtes pas autorisé à inspecter l' &apos; identité du processus | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e91745b8910a9e87ccd4a22fe09c6764a2ab4c6a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 90cd775f18dd505d2f734a8d337daadfd9f0dd7b
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88706527"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851500"
 ---
 # <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>Erreur : vous n’êtes pas autorisé à inspecter l’identité du processus&#39;s
 Vous n'êtes pas autorisé à inspecter l'identité du processus. Cela peut être dû à la configuration de votre système.

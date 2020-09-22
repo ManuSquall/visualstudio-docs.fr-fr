@@ -1,5 +1,5 @@
 ---
-title: Guide pratique pour démarrer et arrêter l’affichage du journal des messages | Microsoft Docs
+title: Démarrer et arrêter l’affichage du journal des messages | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7165e9a9d3a4d935e01870b6049307b5a85bdce8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d9676d123828e0659480c532eeb48acf3012ccd4
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349040"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851916"
 ---
 # <a name="how-to-start-and-stop-the-message-log-display"></a>Comment : démarrer et arrêter l'affichage du journal des messages
 Quand une fenêtre d' [affichage des messages](../debugger/messages-view.md) est active, un choix **Démarrer** l’enregistrement ou **arrêter l’enregistrement** s’affiche dans le menu **messages** Spy + + et le bouton **Démarrer la journalisation** ou **arrêter** l’enregistrement dans la barre d’outils est activé.

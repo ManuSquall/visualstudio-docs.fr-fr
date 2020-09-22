@@ -1,5 +1,5 @@
 ---
-title: Comment rechercher une fenêtre dans la vue fenêtres | Microsoft Docs
+title: Rechercher une fenêtre dans la vue fenêtres | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb5fb871ebf03595c0baca0336e8449fe39029f3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 880f6ec3ea0882d92f5376859ed629e23781f5f9
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349235"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851968"
 ---
 # <a name="how-to-search-for-a-window-in-windows-view"></a>Comment : rechercher une fenêtre dans la vue Fenêtres
 Vous pouvez rechercher une fenêtre spécifique dans la vue Windows en utilisant son handle, sa légende, sa classe ou une combinaison de sa légende et de sa classe en tant que critère de recherche. Vous pouvez également spécifier le sens initial de la recherche. Les champs de la boîte de dialogue affichent les attributs de la fenêtre sélectionnée dans l’arborescence de la fenêtre.
