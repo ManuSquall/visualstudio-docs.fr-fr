@@ -1,9 +1,9 @@
 ---
-title: require-NPM
+title: require-npm
 description: l’outil devinit requiert-NPM.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,14 +11,14 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 56c8bc0d277427d235396671f446a44125aa0165
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 0af1e0561edfc4cf12ccd19f17bab2a386d0afe9
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809678"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005182"
 ---
-# <a name="require-npm"></a>require-NPM
+# <a name="require-npm"></a>require-npm
 
 L' `require-npm` outil est utilisé pour installer [NPM](https://www.npmjs.com/).
 
@@ -26,7 +26,7 @@ L' `require-npm` outil est utilisé pour installer [NPM](https://www.npmjs.com/)
 
 Si les `input` Propriétés et `additionalOptions` sont omises ou vides, l’outil suivra le comportement [par défaut](#default-behavior) détaillé ci-dessous.
 
-| Name                                             | Type   | Obligatoire | Valeur                                                                                       |
+| Nom                                             | Type   | Obligatoire | Valeur                                                                                       |
 |--------------------------------------------------|--------|----------|---------------------------------------------------------------------------------------------|
 | **commentaires**                                     | string | Non       | Propriété de commentaires facultative. Non utilisé.                                                       |
 | [**entrée**](#input)                              | string | Oui      | Spécifie la version de NPM. Pour plus d’informations, consultez l' [entrée](#input) ci-dessous.                           |

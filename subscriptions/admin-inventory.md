@@ -7,12 +7,12 @@ ms.assetid: 7d74e113-8fb2-490e-8502-48cce7b1327a
 ms.date: 03/06/2020
 ms.topic: conceptual
 description: Découvrir en quoi consiste la responsabilité des administrateurs pour l’exécution des inventaires de préproduction
-ms.openlocfilehash: dc307d9d2f83666c6648a35b3e28a81da2de5c38
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1abc3c15a7bd9e47b0f449c5a49fdbbc8e7bb590
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80232757"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91004155"
 ---
 # <a name="inventory-of-pre-production-environment"></a>Inventaire de l’environnement de préproduction
 Les abonnements Visual Studio simplifient la gestion des actifs en comptant les utilisateurs plutôt que les appareils.
@@ -31,10 +31,10 @@ Voici plusieurs façons de simplifier l’inventaire de votre environnement de p
 - [Termes du contrat de licence en volume](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentation Azure](https://docs.microsoft.com/azure/)
-- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentation de Visual Studio](/visualstudio/)
+- [Documentation Azure DevOps](/azure/devops/)
+- [Documentation Azure](/azure/)
+- [Documentation Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
 En savoir plus sur les responsabilités des administrateurs :
@@ -42,6 +42,3 @@ En savoir plus sur les responsabilités des administrateurs :
 - [Gérer des grandes équipes et des prestataires externes](manage-teams.md)
 - [Suivre les affectations d’utilisateurs et traiter les commandes](assignments-orders.md)
 - Utiliser le rapport [Utilisation maximale](maximum-usage.md) pour suivre les engagements d’achat
-
-
-

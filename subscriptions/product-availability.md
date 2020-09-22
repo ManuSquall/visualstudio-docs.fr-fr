@@ -7,12 +7,12 @@ ms.assetid: abf271b5-7547-4695-a46f-72b2878ba8d4
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Découvrir en quoi consiste la disponibilité des produits dans les téléchargements de logiciels pour les abonnements Visual Studio
-ms.openlocfilehash: c7ab3f717b1af3447d88587e8455f0572fd09d09
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: e223946aabd9a0b789f51e80e522c24d8a85dd4c
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561479"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005857"
 ---
 # <a name="product-availability-for-software-downloads-in-visual-studio-subscriptions"></a>Disponibilité des produits pour les téléchargements de logiciels inclus dans les abonnements Visual Studio
 Dans le cadre de vos avantages réservés aux abonnés, vous avez accès à un large éventail de téléchargements de logiciels.
@@ -39,10 +39,10 @@ Le nombre et le type de téléchargements dépendent de votre niveau d’abonnem
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour afficher tous les abonnements attribués à votre adresse de messagerie. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentation Azure](https://docs.microsoft.com/azure/)
-- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentation de Visual Studio](/visualstudio/)
+- [Documentation Azure DevOps](/azure/devops/)
+- [Documentation Azure](/azure/)
+- [Documentation Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
 - Certains téléchargements de logiciels peuvent nécessiter une clé de produit pour pouvoir être installés et activés.  Consultez notre article sur les [clés de produit](product-keys.md) pour savoir comment obtenir et gérer vos clés de produit. 

@@ -7,12 +7,12 @@ ms.assetid: bc8b526c-2fed-4ac8-aaa2-73d2495256fd
 ms.date: 08/04/2020
 ms.topic: how-to
 description: Apprenez-en davantage sur l’abonnement de formation Pluralsight inclus dans certains abonnements Visual Studio.
-ms.openlocfilehash: 87cc42e2a0d4c8c95c771a88413b4a8af70bdc14
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 26056c823dc4ab67f576eb430b85caac26d854af
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509755"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005340"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Avantage Pluralsight dans les abonnements Visual Studio
 
@@ -47,7 +47,7 @@ Le tableau ci-dessous présente les avantages de l’abonnement Pluralsight offe
 
 1. Entrez le mot de passe de votre choix dans le champ **nouveau mot de passe** , entrez-le de nouveau dans le champ **confirmer le mot de passe** , puis cliquez sur **Enregistrer**.
 
-1. C’est tout !  Vous êtes maintenant prêt à commencer votre apprentissage à l’aide des milliers de cours Pluralsight disponibles.
+1. Et voilà !  Vous êtes maintenant prêt à commencer votre apprentissage à l’aide des milliers de cours Pluralsight disponibles.
 
 ## <a name="status-of-your-pluralsight-subscription"></a>État de votre abonnement Pluralsight
 Une fois que vous avez activé votre avantage Pluralsight, l’apparence de la vignette dans le portail des abonnements Visual Studio sera modifiée pour vous aider à suivre l’état de votre abonnement.  
@@ -111,12 +111,12 @@ R : À la fin de votre abonnement Pluralsight gratuit, vous pouvez choisir d’
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentation Azure](https://docs.microsoft.com/azure/)
-- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentation de Visual Studio](/visualstudio/)
+- [Documentation Azure DevOps](/azure/devops/)
+- [Documentation Azure](/azure/)
+- [Documentation Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
 Une fois que vous avez créé votre compte, vous êtes prêt à commencer la formation.  Visitez [https://www.pluralsight.com](https://www.pluralsight.com) et appuyez sur **se connecter dans** le coin supérieur droit de la page pour commencer un nouveau cours ou revenir à un cours déjà en cours.
 
-Tirez parti de votre propre bac à sable (sandbox) de développement en activant votre [crédit individuel Azure DevTest](vs-azure.md). 
+Tirez parti de votre propre bac à sable (sandbox) de développement en activant votre [crédit individuel Azure DevTest](vs-azure.md).

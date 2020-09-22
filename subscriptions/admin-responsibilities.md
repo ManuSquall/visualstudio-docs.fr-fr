@@ -7,12 +7,12 @@ ms.assetid: b26b31dc-1eeb-4871-9ce6-2c980e703f1e
 ms.date: 09/03/2019
 ms.topic: conceptual
 description: Découvrez les responsabilités des administrateurs des abonnements.
-ms.openlocfilehash: 242fe28346b1264833939202936fa46a47d4f4d3
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: c0c30eb8bc5b63720bd2377990a390df8a173035
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426887"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006135"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>Vue d’ensemble des responsabilités des administrateurs
 En tant qu’administrateur, vous pouvez gérer les abonnements de votre organisation.  Le rôle d’administrateur a également la responsabilité de vérifier que les abonnements sont gérés conformément aux termes du contrat de licence. Cet article présente les responsabilités, les avantages et les limitations du rôle d’administrateur.
@@ -37,10 +37,10 @@ Les abonnements Visual Studio permettent aux développeurs d’installer et d’
 | Exception pour les utilisateurs finaux                  | À la fin d’un projet de développement de logiciel, les utilisateurs finaux vérifient généralement une application et déterminent si elle répond aux critères exigés pour la mise en production. Ce processus est appelé « test d’acceptation utilisateur (UAT) ». Les membres d’équipe, tels qu’un commanditaire ou un chef de produit, peuvent jouer le rôle de proxy pour les utilisateurs finaux. Les utilisateurs finaux qui ne disposent pas d’un abonnement Visual Studio peuvent accéder aux logiciels pour le test UAT à condition que l’utilisation des logiciels soit conforme à tous les termes du contrat de licence Visual Studio. Il est rare qu’une personne dont le rôle principal est la conception, le développement ou le test du logiciel soit également qualifiée d’utilisateur final. |
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentation Azure](https://docs.microsoft.com/azure/)
-- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentation de Visual Studio](/visualstudio/)
+- [Documentation Azure DevOps](/azure/devops/)
+- [Documentation Azure](/azure/)
+- [Documentation Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
 En savoir plus sur les responsabilités des administrateurs :

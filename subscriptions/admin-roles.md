@@ -7,12 +7,12 @@ ms.assetid: 6601c395-f778-48c1-ab76-cf454b9193e4
 ms.date: 09/03/2020
 ms.topic: conceptual
 description: Découvrez les rôles Super administrateur et Administrateur, et comment affecter des administrateurs.
-ms.openlocfilehash: f70545de45e0de284788ff3552667e9fa9bfb73f
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: b6c6abc920ff68b6439fe4bff6f813366888a912
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426757"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006148"
 ---
 # <a name="super-admins-and-administrators-for-visual-studio-subscription-agreements"></a>Super administrateurs et administrateurs pour les contrats d’abonnement Visual Studio
 
@@ -45,15 +45,13 @@ Pour affecter de nouveaux administrateurs :
 - [Prise en charge des abonnements et de l’administration de Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentation Azure](https://docs.microsoft.com/azure/)
-- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentation de Visual Studio](/visualstudio/)
+- [Documentation Azure DevOps](/azure/devops/)
+- [Documentation Azure](/azure/)
+- [Documentation Microsoft 365](/microsoft-365/)
 
 
 ## <a name="next-steps"></a>Étapes suivantes
 - Découvrir comment [attribuer des abonnements](assign-license.md)
 - Découvrir plus d’informations sur la gamme complète des [avantages des abonnements](https://visualstudio.microsoft.com/vs/benefits/)
-- [Définir les préférences de contrat](admin-prefs.md) 
-
-
+- [Définir les préférences de contrat](admin-prefs.md)

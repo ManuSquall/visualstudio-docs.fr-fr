@@ -7,12 +7,12 @@ ms.assetid: 36f0d9f1-fe28-469f-a54c-dc46638270a8
 ms.date: 09/03/2020
 ms.topic: how-to
 description: Découvrez comment vous venez d’acheter des abonnements Visual Studio mensuels au portail d’administration des abonnements.
-ms.openlocfilehash: d765e03d2c499c8e96bb97fc532596b7cfd0b903
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 56f4b4f765edec5b624db786795c84969872978a
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561401"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005097"
 ---
 # <a name="add-new-monthly-visual-studio-subscriptions-to-the-subscriptions-administration-portal"></a>Ajouter de nouveaux abonnements Visual Studio mensuels au portail d’administration des abonnements
 Lorsque vous achetez de nouveaux abonnements Visual Studio mensuels à l’aide d’un abonnement Azure, vous devrez peut-être les ajouter au portail d’administration des abonnements pour pouvoir les affecter aux utilisateurs.  
@@ -48,7 +48,7 @@ Maintenant que vous avez ajouté des abonnements, vous êtes prêt à les affect
 - [Affecter des abonnements spécifiques à des utilisateurs spécifiques](assign-guid.md)
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentation Azure](https://docs.microsoft.com/azure/)
-- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentation de Visual Studio](/visualstudio/)
+- [Documentation Azure DevOps](/azure/devops/)
+- [Documentation Azure](/azure/)
+- [Documentation Microsoft 365](/microsoft-365/)

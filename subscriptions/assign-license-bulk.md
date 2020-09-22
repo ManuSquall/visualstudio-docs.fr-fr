@@ -7,12 +7,12 @@ ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
 ms.date: 05/10/2020
 ms.topic: how-to
 description: Découvrez comment les administrateurs peuvent attribuer des licences à plusieurs abonnés à l’aide de la fonctionnalité d’ajout en bloc ou de groupes de Microsoft Azure Active Directory
-ms.openlocfilehash: da7ce369e1d9aaa13b0c346005914b7f64ceb780
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cbcdab00568e375633ddd9d6d350978d6ec56d2a
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249617"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005764"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Attribuer des abonnements à plusieurs utilisateurs
 Le portail d’administration des abonnements vous permet d’ajouter des utilisateurs un à la fois ou dans des grands groupes.  Pour ajouter des utilisateurs individuels, consultez [Ajouter des utilisateurs uniques](assign-license.md).
@@ -130,11 +130,11 @@ R : non--pour modifier les informations d’un abonné individuel, vous devez l
 R : selon la façon dont votre organisation a configuré Azure AD, vous pouvez constater des retards jusqu’à 24 heures avant l’ajout de l’utilisateur. S’il s’agit d’une durée supérieure à 24 heures, [Contactez le support technique](https://visualstudio.microsoft.com/support/support-overview-vs).  
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentation Azure](https://docs.microsoft.com/azure/)
-- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentation de Visual Studio](/visualstudio/)
+- [Documentation Azure DevOps](/azure/devops/)
+- [Documentation Azure](/azure/)
+- [Documentation Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
 - Vous n’avez qu’un ou deux abonnés à ajouter ?  Consultez [Ajouter des utilisateurs uniques](assign-license.md)
-- Vous avez besoin d’aide ? Contactez la [prise en charge de l’administration et des abonnements Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).
+- Besoin d'aide ? Contactez la [prise en charge de l’administration et des abonnements Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).

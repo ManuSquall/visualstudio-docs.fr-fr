@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e99dc9e6a4e555d586c5007fd603350c9fa4e7c
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: ff0188a93b8c7b6470aeaeced7e3f48dbad0f28b
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/22/2020
-ms.locfileid: "90850980"
+ms.locfileid: "91005367"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Nouveautés de Visual Studio 2019
 
@@ -224,7 +224,7 @@ En attendant, voici quelques-unes de nos nouvelles fonctionnalités actuellement
 
    Nous continuons à itérer sur une expérience git revisitée pour améliorer votre productivité lorsque vous travaillez avec du code sur GitHub, Azure Repos et d’autres services d’hébergement à distance. Vous pouvez initialiser et pousser depuis Visual Studio 2019 en une seule action (ou en cliquant sur). Vous pouvez également créer des branches, gérer des branches actuelles et résoudre les conflits de fusion.
 
-   Pour plus d’informations, consultez le billet de blog [passionnant nouvelles mises à jour du git dans Visual Studio](https://devblogs.microsoft.com/visualstudio/exciting-new-updates-to-the-git-experience-in-visual-studio/) .
+   Pour plus d’informations, consultez la page [nouvelle expérience git dans Visual Studio](git-with-visual-studio.md) .
 
 Pour plus d’informations sur la version préliminaire &mdash; et un lien de téléchargement, si vous souhaitez l’essayer, &mdash; consultez la page **[Visual Studio Preview](https://visualstudio.microsoft.com/vs/preview/)** .
 

@@ -7,12 +7,12 @@ ms.assetid: 383fc910-3f4c-474a-a3f8-0f13525f05e9
 ms.date: 03/26/2020
 ms.topic: how-to
 description: Découvrez l’abonnement Power BI Pro inclus dans certains abonnements Visual Studio.
-ms.openlocfilehash: 9a16e827c45e600ff3b5edc8579b5941aa80ca90
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 82325c090087aea81f43472ebb41a385af51c19d
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801683"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005024"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro dans les abonnements Visual Studio
 
@@ -114,11 +114,11 @@ R : Non.  Les locataires de type Secteur public ne peuvent pas bénéficier de 
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentation Azure](https://docs.microsoft.com/azure/)
-- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentation de Visual Studio](/visualstudio/)
+- [Documentation Azure DevOps](/azure/devops/)
+- [Documentation Azure](/azure/)
+- [Documentation Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
 - Pour activer votre Power BI Pro avantage, visitez [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) .
-- Tirez parti de votre propre bac à sable (sandbox) de développement en activant votre [crédit individuel Azure DevTest](vs-azure.md). 
+- Tirez parti de votre propre bac à sable (sandbox) de développement en activant votre [crédit individuel Azure DevTest](vs-azure.md).

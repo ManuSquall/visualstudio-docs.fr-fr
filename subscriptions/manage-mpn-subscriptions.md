@@ -7,12 +7,12 @@ ms.assetid: 83efe4ee-9a9d-4776-b27c-852d89dadafd
 ms.date: 09/08/2020
 ms.topic: how-to
 description: Comment attribuer des abonnements Visual Studio à vos utilisateurs finaux, pour les partenaires du réseau MPN.
-ms.openlocfilehash: ecd85967c0d58166da17025bc7b2246b335a5736
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 75b4b188bcd0a7df9414e430c8a1922f8fda9d5e
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561375"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005883"
 ---
 # <a name="manage-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Gérer les abonnements Visual Studio offerts via le réseau MPN
 Les partenaires qui acquièrent une compétence ou qui achètent l’Action Pack MPN sont éligibles aux abonnements Visual Studio. Ces abonnements sont concédés sous licence par utilisateur et sont valides uniquement quand ils sont attribués à un utilisateur nommé spécifique qui travaille pour la société partenaire.
@@ -61,12 +61,10 @@ Abonné Microsoft Action Pack et abonnements Visual Studio
   - Pg 8 - Attribution d’abonnements Visual Studio pour les partenaires de compétence
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentation Azure](https://docs.microsoft.com/azure/)
-- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentation de Visual Studio](/visualstudio/)
+- [Documentation Azure DevOps](/azure/devops/)
+- [Documentation Azure](/azure/)
+- [Documentation Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
 Les abonnés et les administrateurs du programme doivent travailler directement avec l’équipe de support de Microsoft Partner Network pour résoudre les problèmes d’accès aux abonnements. Visitez la page [Support pour les partenaires](https://partner.microsoft.com/support) pour obtenir de l’aide. (Vous aurez besoin de vos informations de connexion à MPN.)
-
-

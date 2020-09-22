@@ -1,9 +1,9 @@
 ---
-title: Set-env
+title: set-env
 description: outil devinit require-Set-env.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,14 +11,14 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: e7c327fb3f8492af8c1c740044f852d826fffad0
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 2f4ec5489f22e94ad8f57f22ddc7742dc0ae3ade
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810420"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005994"
 ---
-# <a name="set-env"></a>Set-env
+# <a name="set-env"></a>set-env
 
 L' `set-env` outil peut être utilisé pour définir des variables d’environnement à utiliser dans le processus actuel. Les variables d’environnement sont définies uniquement dans le processus actuel et seront utilisées par d’autres `devinit` outils si elles s’exécutent dans ce processus.
 
@@ -26,7 +26,7 @@ Cet outil utilise l’API .NET Core `Environment.SetEnvironment` et présente le
 
 ## <a name="usage"></a>Usage
 
-| Name                                         | Type   | Obligatoire | Valeur                                                                       |
+| Nom                                         | Type   | Obligatoire | Valeur                                                                       |
 |----------------------------------------------|--------|----------|-----------------------------------------------------------------------------|
 | **commentaires**                                 | string | Non       | Propriété de commentaires facultative. Non utilisé.                                       |
 | [**entrée**](#input)                          | string | Non       | Entrée de l’outil. Pour plus d’informations, consultez l' [entrée](#input) ci-dessous.               |
@@ -36,7 +36,7 @@ Cet outil utilise l’API .NET Core `Environment.SetEnvironment` et présente le
 
 L' `set-env` outil prend une chaîne unique comme entrée sur la `input` propriété. La chaîne doit être mise en forme sous la forme d’une chaîne de points-virgules (;) des paires clé/valeur délimitées (nom = valeur) et quatre actions possibles en fonction de la valeur de la `input` propriété.
 
-| Action       | Entrée            | Description                                                                                                                                                              |  Exemple             |
+| Action       | Entrée            | Description                                                                                                                                                              | Exemple             |
 |--------------|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
 | **list all** | vide ou omis | Répertorie toutes les variables d’environnement actuelles.                                                                                                                              | `"input":""`        |
 | **Liste 1** | string           | Répertorie la valeur d’une variable d’environnement spécifique par nom.                                                                                                               | `"input":"foo"`     |
@@ -48,6 +48,10 @@ Une `input` chaîne peut contenir une expansion de variable d’environnement `%
 ### <a name="additional-options"></a>Options supplémentaires
 
 Non utilisé.
+
+## <a name="usage-in-a-codespace"></a>Utilisation dans un codeSpace
+
+Si vous utilisez un codeSpace, vous pouvez définir des variables d’environnement utilisées dans le codeSpace par le biais de customizating la `remoteEnv` propriété dans le [`.devcontainer.json`](https://docs.microsoft.com/visualstudio/codespaces/reference/configuring) fichier.
 
 ## <a name="example-usage"></a>Exemple d’utilisation
 

@@ -7,12 +7,12 @@ ms.assetid: 3fc57f5f-2446-4774-9f8f-98ea1340f6b2
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: En savoir plus sur la responsabilité des administrateurs pour gérer les abonnements pour les équipes de grande taille, ainsi que pour les prestataires externes.
-ms.openlocfilehash: 9753c7a69b5334abd0e4ccb299ece3a5403517bc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 86848fc7b5c9507c1e5df5bd043ee21217afe313
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80232323"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005559"
 ---
 # <a name="large-teams-and-external-contractors"></a>Grandes équipes et prestataires externes
 Les administrateurs d’abonnements Visual Studio sont chargés de garantir que chaque utilisateur qui interagit avec les logiciels sous licence Visual Studio dispose des licences appropriées avec son propre abonnement Visual Studio.
@@ -35,10 +35,10 @@ Les prestataires externes peuvent apporter des licences pour prendre part à vot
 - [Termes du contrat de licence en volume](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentation Azure](https://docs.microsoft.com/azure/)
-- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentation de Visual Studio](/visualstudio/)
+- [Documentation Azure DevOps](/azure/devops/)
+- [Documentation Azure](/azure/)
+- [Documentation Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
 En savoir plus sur les responsabilités des administrateurs :

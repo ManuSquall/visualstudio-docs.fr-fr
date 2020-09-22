@@ -8,12 +8,12 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: 2dc938b5-37e9-4dfc-8676-5d0a91d366ab
-ms.openlocfilehash: c19bb72a7d5262c5d0864d12d44266c8ef016acf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c7276666b5ff02fbee03ebe8f88987257b0e50c1
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "81649658"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005288"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Nouveautés des abonnements Visual Studio
 
@@ -33,7 +33,7 @@ Nous avons également combiné les options pour ajouter des abonnés invididual 
 Nous avons fait en sorte qu’il soit facile de faire correspondre les abonnés qui utilisent des comptes Microsoft (MSA) à votre Azure Active Directory (Azure AD), afin que vous puissiez lier rapidement les deux identités.  L’utilisation des identités Azure AD offre une sécurité accrue et une meilleure gestion des abonnements.  Pour plus d’informations, consultez notre article sur les [connexions personnelles](personal-email-sign-ins.md) . 
 
 #### <a name="add-subscribers-using-azure-active-directory-groups"></a>Ajouter des abonnés à l’aide de groupes de Azure Active Directory
-Si votre organisation utilise Azure Active Directory (Azure AD), vous pouvez désormais gérer les abonnements à l’aide de groupes de Azure AD.  L’attribution d’abonnements à des groupes vous donne la possibilité de fournir rapidement des abonnements du même type à plusieurs utilisateurs.  Lorsque de nouveaux utilisateurs sont ajoutés au groupe de Azure AD, ils reçoivent automatiquement un abonnement.  Si un utilisateur est supprimé du groupe Azure AD, son abonnement est également supprimé.  Cela permet à votre organisation d’automatiser la gestion des abonnements, ce qui permet d’économiser du temps et des efforts aux administrateurs.  Consultez l’article [ajouter plusieurs utilisateurs](https://docs.microsoft.com/visualstudio/subscriptions/assign-license-bulk#use-azure-active-directory-groups-to-assign-subscriptions) dans notre documentation pour plus d’informations. 
+Si votre organisation utilise Azure Active Directory (Azure AD), vous pouvez désormais gérer les abonnements à l’aide de groupes de Azure AD.  L’attribution d’abonnements à des groupes vous donne la possibilité de fournir rapidement des abonnements du même type à plusieurs utilisateurs.  Lorsque de nouveaux utilisateurs sont ajoutés au groupe de Azure AD, ils reçoivent automatiquement un abonnement.  Si un utilisateur est supprimé du groupe Azure AD, son abonnement est également supprimé.  Cela permet à votre organisation d’automatiser la gestion des abonnements, ce qui permet d’économiser du temps et des efforts aux administrateurs.  Consultez l’article [ajouter plusieurs utilisateurs](./assign-license-bulk.md#use-azure-active-directory-groups-to-assign-subscriptions) dans notre documentation pour plus d’informations. 
 
 ### <a name="cast-highlight"></a>CAST Highlight
 Nous sommes heureux d’annoncer une expansion des avantages offerts par notre partenaire, une mise en évidence. 

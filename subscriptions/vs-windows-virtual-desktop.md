@@ -7,12 +7,12 @@ ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
 ms.date: 09/08/2020
 ms.topic: conceptual
 description: Découvrez comment vous pouvez tirer parti du bureau virtuel Microsoft Windows via votre abonnement Visual Studio
-ms.openlocfilehash: f598aca8d277ca443b10dac289fae756ccd95432
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 4e619b9c1140611be5236edfff70e8b0aa560b23
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561362"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005044"
 ---
 # <a name="access-windows-virtual-desktop-in-subscriptions"></a>Accéder au bureau virtuel Windows dans les abonnements 
 Les abonnés Visual Studio peuvent désormais utiliser leur crédit Azure dev/test pour les services de bureau virtuel Microsoft Windows.  
@@ -23,7 +23,7 @@ Voici ce que vous pouvez faire quand vous exécutez Windows Virtual Desktop sur 
 - Fournir des bureaux virtuels Windows 7 avec Mises à jour de sécurité étendues gratuites
 - Tirer parti de vos applications et bureaux Windows Server et Services Bureau à distance existants sur n’importe quel ordinateur
 - Virtualiser des bureaux et des applications
-- Gérez les applications et les ordinateurs de bureau Windows 10, Windows Server et Windows 7 avec une expérience de gestion unifiée pour plus d’informations sur ce que vous pouvez faire avec le bureau virtuel Windows, regardez la [vidéo d’introduction](https://docs.microsoft.com/azure/virtual-desktop/overview).
+- Gérez les applications et les ordinateurs de bureau Windows 10, Windows Server et Windows 7 avec une expérience de gestion unifiée pour plus d’informations sur ce que vous pouvez faire avec le bureau virtuel Windows, regardez la [vidéo d’introduction](/azure/virtual-desktop/overview).
 
 ## <a name="use-windows-virtual-desktop-with-azure"></a>Utiliser le bureau virtuel Windows avec Azure 
 Les abonnés Visual Studio disposent désormais de plusieurs façons d’utiliser les abonnements Azure pour payer les services de bureau virtuel Windows :
@@ -35,13 +35,13 @@ Les abonnés Visual Studio disposent désormais de plusieurs façons d’utilise
 Le bureau virtuel Windows requiert une Azure Active Directory (Azure AD) à laquelle les machines virtuelles seront jointes.  Les utilisateurs doivent être membres de ce Azure AD.  Il existe deux options pour implémenter l’Azure AD :
 - Services d’annuaire Azure AD.  Pour la plupart des utilisateurs, il s’agit de l’option la plus simple à implémenter.
 - Une machine virtuelle exécutant une promotion de contrôleur de domaine.  Cette option nécessite plus de travail pour la configuration, mais offre aux utilisateurs un coût d’exploitation inférieur.
-Pour obtenir la liste complète des conditions préalables à l’utilisation du bureau virtuel Windows, consultez la [page vue d’ensemble](https://docs.microsoft.com/azure/virtual-desktop/overview#requirements)du bureau virtuel Windows. 
+Pour obtenir la liste complète des conditions préalables à l’utilisation du bureau virtuel Windows, consultez la [page vue d’ensemble](/azure/virtual-desktop/overview#requirements)du bureau virtuel Windows. 
 
 ## <a name="get-started"></a>Bien démarrer 
 Une fois que toutes les conditions préalables sont en place, vous pouvez effectuer plusieurs actions pour mettre en place votre implémentation.  Consultez ces didacticiels pour commencer :
-- [Créer un locataire Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/virtual-desktop-fall-2019/tenant-setup-azure-active-directory)
-- [Créer un pool hôte](https://docs.microsoft.com/azure/virtual-desktop/create-host-pools-azure-marketplace) à l’aide de l’portail Azure
-- [Gérer les groupes d’applications](https://docs.microsoft.com/azure/virtual-desktop/manage-app-groups) pour les bureaux virtuels Windows
+- [Créer un locataire Windows Virtual Desktop](/azure/virtual-desktop/virtual-desktop-fall-2019/tenant-setup-azure-active-directory)
+- [Créer un pool hôte](/azure/virtual-desktop/create-host-pools-azure-marketplace) à l’aide de l’portail Azure
+- [Gérer les groupes d’applications](/azure/virtual-desktop/manage-app-groups) pour les bureaux virtuels Windows
 
 ## <a name="eligibility"></a>Éligibilité
 | Niveau de l’abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
@@ -63,11 +63,11 @@ Une fois que toutes les conditions préalables sont en place, vous pouvez effect
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour afficher tous les abonnements attribués à votre adresse de messagerie. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation Azure](https://docs.microsoft.com/azure/)
-- [Documentation sur les bureaux virtuels Windows](https://docs.microsoft.com/azure/virtual-desktop/)
+- [Documentation Azure](/azure/)
+- [Documentation Windows Virtual Desktop](/azure/virtual-desktop/)
 
 ## <a name="next-steps"></a>Étapes suivantes
 -   Si vous avez besoin d’acheter des abonnements Visual Studio, consultez :
      - [Tarification des achats au détail](https://visualstudio.microsoft.com/vs/pricing/) via le Microsoft Store
      - [Programmes de licence en volume](https://www.microsoft.com/licensing/default)
--   En savoir plus sur le [bureau virtuel Windows](https://docs.microsoft.com/azure/virtual-desktop/overview) 
+-   En savoir plus sur le [bureau virtuel Windows](/azure/virtual-desktop/overview)

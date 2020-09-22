@@ -7,12 +7,12 @@ ms.assetid: 0fe9eaa4-f589-429e-a443-13bf86637d5a
 ms.date: 09/03/2020
 ms.topic: conceptual
 description: Découvrir comment définir les préférences pour la langue, les contacts, le niveau d’abonnement et d’autres éléments dans le portail d’administration
-ms.openlocfilehash: 7f562e6ca0087a92fcc02550165aa32d23321955
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: e9b5b861260e13b0882a5eabee01db102d63b2af
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426791"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006161"
 ---
 # <a name="set-preferences-for-your-agreements-in-the-administration-portal"></a>Définir les préférences pour vos contrats dans le portail d’administration
 Les super administrateurs peuvent définir certaines préférences dans le portail d’administration (portail d’administration) qui seront appliquées globalement pour chaque contrat.  Ces préférences remplissent automatiquement les détails de l’abonnement pour vos administrateurs lorsqu’ils ajoutent des abonnés et peuvent uniquement être modifiées globalement par les super administrateurs.  
@@ -59,7 +59,7 @@ Cette préférence vous permet de décider si les administrateurs peuvent ajoute
 L’activation de ce paramètre, qui est activé par défaut, permet aux abonnés d’accéder aux téléchargements quand les administrateurs créent des abonnements.  Les administrateurs peuvent néanmoins toujours désactiver les téléchargements sur la base d’un abonnement individuel.  La désactivation de l’accès aux téléchargements désactive également l’accès aux clés de produit.  
 
 
-## <a name="frequently-asked-questions"></a>Forum Aux Questions
+## <a name="frequently-asked-questions"></a>Forum aux questions
 ### <a name="q--can-i-disable-the-contact-email-address-so-subscribers-cannot-contact-administrators"></a>Q : puis-je désactiver l' **adresse de messagerie du contact** afin que les abonnés ne puissent pas contacter les administrateurs ?
 R : non-si vous pouvez déterminer quels administrateurs sont contactés à l’aide d’un groupe de sécurité, d’un alias de messagerie de groupe ou d’une adresse de messagerie individuelle, la fonctionnalité ne peut pas être désactivée.
 
@@ -76,10 +76,10 @@ R : si aucune adresse de messagerie spécifique n’est définie dans la préf�
 - [Prise en charge des abonnements et de l’administration de Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentation Azure](https://docs.microsoft.com/azure/)
-- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentation de Visual Studio](/visualstudio/)
+- [Documentation Azure DevOps](/azure/devops/)
+- [Documentation Azure](/azure/)
+- [Documentation Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
 En savoir plus sur la gestion des abonnements Visual Studio.

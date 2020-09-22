@@ -7,12 +7,12 @@ ms.assetid: 97bf7474-c6c2-49b3-b2c9-f1b2808eed1a
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: La connexion peut échouer si des alias ou des noms conviviaux sont utilisés.
-ms.openlocfilehash: 1b6c465bc3e850d8582abde200ac9e5bd995e431
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f73aa52be518de627d468e8e1171de5f3145753b
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87234638"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006213"
 ---
 # <a name="signing-into-visual-studio-subscriptions-may-fail-when-using-aliases"></a>La connexion à des abonnements Visual Studio peut échouer lors de l’utilisation d’alias
 Selon le type de compte utilisé pour la connexion, les abonnements disponibles peuvent ne pas s’afficher correctement lors de la connexion à [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) . Ce cas peut se produire si l’utilisateur emploie des « alias » ou des « noms conviviaux » au lieu de l’identité de connexion à laquelle l’abonnement est affecté. On parle ici d’utilisation d’alias.
@@ -86,16 +86,16 @@ Ces deux options sont configurées dans le portail d’administration en procéd
 
 0. Si vous modifiez un seul utilisateur, sélectionnez cet utilisateur dans la table et cliquez avec le bouton droit pour le modifier. Cela ouvre un panneau dans lequel vous pouvez modifier l’adresse e-mail de connexion. Effectuez les mises à jour nécessaires dans le champ adresse de messagerie de connexion. Cliquez sur Enregistrer pour appliquer les modifications.  
 
-0. Si vous devez apporter ces modifications à une grande quantité d’utilisateurs, vous pouvez utiliser la fonctionnalité d’édition en bloc. Pour plus d’informations, consultez l’article [modifier plusieurs abonnés à l’aide de la modification en bloc](https://docs.microsoft.com/visualstudio/subscriptions/edit-license#edit-multiple-subscribers-using-bulk-edit) .
+0. Si vous devez apporter ces modifications à une grande quantité d’utilisateurs, vous pouvez utiliser la fonctionnalité d’édition en bloc. Pour plus d’informations, consultez l’article [modifier plusieurs abonnés à l’aide de la modification en bloc](./edit-license.md#edit-multiple-subscribers-using-bulk-edit) .
 
 > [!NOTE]
 > Pour les modifications individuelles et en bloc, les abonnés reçoivent un message électronique contenant des instructions indiquant que leur adresse e-mail de connexion a changé et qu’ils doivent se connecter à l’aide de l’adresse e-mail mise à jour. Il est également important de noter que si l’abonné a déjà activé les avantages sous l’autre adresse de connexion, il doit continuer à utiliser l’autre adresse de connexion pour y accéder.  
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentation Azure](https://docs.microsoft.com/azure/)
-- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentation de Visual Studio](/visualstudio/)
+- [Documentation Azure DevOps](/azure/devops/)
+- [Documentation Azure](/azure/)
+- [Documentation Microsoft 365](/microsoft-365/)
 
 
 ## <a name="next-steps"></a>Étapes suivantes
@@ -104,5 +104,3 @@ En savoir plus sur la gestion des abonnements Visual Studio.
 - [Attribuer plusieurs abonnements](assign-license-bulk.md)
 - [Modifier des abonnements](edit-license.md)
 - [Déterminer l’utilisation maximale](maximum-usage.md)
-
-

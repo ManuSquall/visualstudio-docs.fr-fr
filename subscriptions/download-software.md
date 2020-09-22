@@ -7,12 +7,12 @@ ms.assetid: e2f2619c-7736-47e5-a066-5940d5994db9
 ms.date: 07/29/2020
 ms.topic: conceptual
 description: Découvrir comment localiser et télécharger des logiciels Microsoft inclus dans des abonnements Visual Studio
-ms.openlocfilehash: d1d885bbe9322f6d15cecff7e44d879aceb63d4c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4a267db59f1efc4912748846e61774966f0f6abe
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801826"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005598"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Téléchargement de logiciels inclus dans les abonnements Visual Studio
 En fonction de votre abonnement Visual Studio, de nombreux logiciels Microsoft sont peut-être à votre disposition.  Cet article explique comment localiser et télécharger les logiciels dont vous avez besoin pour tirer le meilleur parti de votre abonnement. 
@@ -53,10 +53,10 @@ Pour obtenir une clé de produit pour le téléchargement, vous pouvez sélectio
 > ![Réclamation de clés de produit Visual Studio 2019](_img/subscriber-downloads/vs2019-claim-keys.png "Sélectionnez la clé de revendication pour revendiquer les clés restantes.")
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentation Azure](https://docs.microsoft.com/azure/)
-- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentation de Visual Studio](/visualstudio/)
+- [Documentation Azure DevOps](/azure/devops/)
+- [Documentation Azure](/azure/)
+- [Documentation Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
 Pour en savoir plus sur la localisation, la revendication et l’exportation des clés de produit, consultez notre documentation sur les clés de produit :

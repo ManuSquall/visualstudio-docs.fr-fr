@@ -7,12 +7,12 @@ ms.assetid: c473b01f-2dfe-4cc2-ad29-bb5e2a268123
 ms.date: 09/16/2020
 ms.topic: conceptual
 description: Découvrir comment afficher le nombre maximal d’abonnements attribués dans le portail d’administration
-ms.openlocfilehash: 60f9961d400e8ce675e6cfb228f9f7bee36c74a0
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: f13fc75d2c359b05f74d781a3d6a8d0de99d39ff
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90807935"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005870"
 ---
 # <a name="use-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>Utiliser la fonctionnalité utilisation maximale pour suivre le nombre d’abonnements affectés
 Une nouvelle fonctionnalité du portail d’administration des abonnements Visual Studio vous permet de suivre le nombre d’abonnements que vous avez achetés et attribués. Elle permet également d’identifier le nombre maximal d’abonnements de chaque niveau que vous avez attribués au cours de l’année précédente et pendant la durée de votre ou vos contrats. 
@@ -48,12 +48,11 @@ R : les informations de la vue d’ensemble indiquent les attributions *actuell
 - [Termes du contrat de licence en volume](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentation Azure](https://docs.microsoft.com/azure/)
-- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentation de Visual Studio](/visualstudio/)
+- [Documentation Azure DevOps](/azure/devops/)
+- [Documentation Azure](/azure/)
+- [Documentation Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
 - Si vous avez des questions sur les attributions d’abonnements ou d’autres aspects du portail d’administration, contactez https://visualstudio.microsoft.com/subscriptions/support/ pour obtenir de l’aide. 
 - Découvrez plus d’informations sur la procédure à suivre si vous attribuez plus d’abonnements que ce que avez acheté : ceci est désigné sous le nom de [surallocation](handle-overclaimed-license.md).
-

@@ -7,12 +7,12 @@ ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
 ms.date: 09/08/2020
 ms.topic: conceptual
 description: Questions relatives à la facturation pour les abonnements cloud.
-ms.openlocfilehash: 987dddcf54f218d63580995b363ad838f2de83b4
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: ae99e6e843636efc6d81a0c4feebfd3e306f6319
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641446"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006002"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>FAQ sur la facturation des abonnements cloud Visual Studio
 [Comparez les avantages des abonnements cloud et les prix](https://visualstudio.microsoft.com/vs/pricing/) afin de bien comprendre les avantages offerts par chaque abonnement Visual Studio. Découvrez les différences entre les abonnements standard et cloud de Visual Studio, obtenez des détails sur les avantages offerts aux abonnés et bien plus encore.
@@ -97,10 +97,10 @@ R : Oui, vous pouvez, si votre revendeur participe au programme fournisseur de 
 - [Achat d’abonnements cloud Visual Studio pour les fournisseurs de solutions Cloud](vscloud-csp.md)
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentation Azure](https://docs.microsoft.com/azure/)
-- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentation de Visual Studio](/visualstudio/)
+- [Documentation Azure DevOps](/azure/devops/)
+- [Documentation Azure](/azure/)
+- [Documentation Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
 Acheter des abonnements cloud

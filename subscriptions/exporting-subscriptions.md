@@ -7,12 +7,12 @@ ms.assetid: 14e4cffb-a695-436c-b269-7820f7411f4e
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: Découvrez comment exporter une liste d’abonnés et des informations de leurs attributions d’abonnement.
-ms.openlocfilehash: ff0941dc25d16ad520b20613c2d4136c3c63c937
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 65d78625c0536b21b764a595590c7c260aa3b0a8
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87453568"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005572"
 ---
 # <a name="export-subscription-information"></a>Exporter les informations d’abonnement
 Dans le [portail d’administration](https://manage.visualstudio.com)des abonnements Visual Studio, vous pouvez exporter une liste de vos abonnés et des détails sur leurs affectations. Ces informations comprennent : nom, adresse e-mail, adresse e-mail alternative, niveau d’abonnement, date d’attribution, état d’activation, date d’expiration, champ de référence, si les téléchargements sont activés, pays, langue, état de l’abonnement et GUID d’abonnement.  La liste est exportée en tant que fichier CSV qui peut être facilement ouvert dans Microsoft Excel pour la création de graphiques, de tableaux croisés dynamiques et d’autres artefacts.
@@ -33,10 +33,10 @@ Pour effectuer l’exportation :
 > ![Exporter des abonnés](_img/exporting-subscriptions/exporting-subscriptions.png "Cliquez sur Exporter pour télécharger la liste complète de vos abonnements attribués.")
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentation Azure](https://docs.microsoft.com/azure/)
-- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentation de Visual Studio](/visualstudio/)
+- [Documentation Azure DevOps](/azure/devops/)
+- [Documentation Azure](/azure/)
+- [Documentation Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
 - Pour plus d’informations sur la gestion des abonnements, consultez ces rubriques :
@@ -44,5 +44,3 @@ Pour effectuer l’exportation :
     - [Surutilisations](handle-overclaimed-license.md)
     - [Utilisation maximale](maximum-usage.md)
 - Vous avez besoin d’aide sur n’importe quel aspect de la gestion des abonnements ?  Contactez la [prise en charge de l’administration et des abonnements Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).
-
-

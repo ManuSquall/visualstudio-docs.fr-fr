@@ -1,9 +1,9 @@
 ---
-title: require-PSModule
+title: require-psmodule
 description: l’outil devinit requiert-PSModule.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,14 +11,14 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: f52483065c73f9d0e31f089f3d44aca74588d72f
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 03ebd885f1fae1e7e12d76bb78e03bca0553bab8
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809671"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006021"
 ---
-# <a name="require-psmodule"></a>require-PSModule
+# <a name="require-psmodule"></a>require-psmodule
 
 L' `require-psmodule` outil permet d’installer un [module PowerShell](https://docs.microsoft.com/powershell/scripting/developer/module/understanding-a-windows-powershell-module?view=powershell-7&preserve-view=true) à partir du [PowerShell Gallery](https://www.powershellgallery.com/) via [install-module] ( https://docs.microsoft.com/powershell/module/powershellget/install-module?view=powershell-7&preserve-view=true , afin qu’il puisse être utilisé dans les scripts PowerShell.
 
@@ -30,7 +30,7 @@ L' `require-psmodule` outil permet d’installer un [module PowerShell](https://
 
 Si les `input` Propriétés et `additionalOptions` sont omises ou vides, l’outil suivra le comportement [par défaut](#default-behavior) détaillé ci-dessous.
 
-| Name                                             | Type   | Obligatoire | Valeur                                                                                   |
+| Nom                                             | Type   | Obligatoire | Valeur                                                                                   |
 |--------------------------------------------------|--------|----------|-----------------------------------------------------------------------------------------|
 | **commentaires**                                     | string | Non       | Propriété de commentaires facultative. Non utilisé.                                                   |
 | [**entrée**](#input)                              | string | Oui      | Package (s) à installer. Pour plus d’informations, consultez l' [entrée](#input) ci-dessous.                       |

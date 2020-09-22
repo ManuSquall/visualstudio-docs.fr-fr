@@ -7,12 +7,12 @@ ms.assetid: 3f4b0528-03f0-4a02-b3c3-a39292a9bbe1
 ms.date: 09/17/2020
 ms.topic: conceptual
 description: Abonnements Visual Studio – Pourquoi les adresses Hotmail ou Gmail de mes abonnés sont-elles affichées ?
-ms.openlocfilehash: 95f5d849a1f661ab6a65a34890faf8f812c7007d
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: c7a5546a99ed73175ab0f4af2c22b3cbf20c0bdd
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810495"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006070"
 ---
 # <a name="visual-studio-subscriptions--why-do-i-see-personal-accounts-for-my-subscribers"></a>Abonnements Visual Studio : pourquoi les comptes personnels s’affichent-ils pour mes abonnés ?
 Une fois que les sociétés ont migré du centre de gestion des licences en volume (VLSC) vers le nouveau [portail d’administration des abonnements](https://manage.visualstudio.com)Visual Studio, les administrateurs ont été surpris de trouver que l’adresse de messagerie de connexion pour certains abonnés affiche une adresse e-mail personnelle comme Hotmail ou Outlook.  
@@ -50,11 +50,11 @@ Cliquez ensuite sur « continuer » pour accéder à la liste des modification
 > Lorsque vous modifiez l’adresse de messagerie de connexion, vous ne pouvez mettre à jour que l’e-mail utilisé par l’abonné pour se connecter à son abonnement https://my.visualstudio.com . Si l’abonné a déjà activé des avantages tels qu’Azure ou Pluralsight à l’aide de l’autre adresse de messagerie, il doit continuer à utiliser ces adresses de messagerie pour y accéder. Pour les nouveaux avantages auxquels ils accèdent, ils doivent utiliser la nouvelle adresse de messagerie. 
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentation Azure](https://docs.microsoft.com/azure/)
-- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentation de Visual Studio](/visualstudio/)
+- [Documentation Azure DevOps](/azure/devops/)
+- [Documentation Azure](/azure/)
+- [Documentation Microsoft 365](/microsoft-365/)
 
 ##  <a name="next-steps"></a>Étapes suivantes
 - Si vous avez mis à jour les adresses e-mail des abonnés, vous pouvez informer ces derniers que leurs informations de connexion ont été modifiées.  Ils recevront également un e-mail contenant les informations mises à jour.
-- Il peut être utile de [filtrer la liste des abonnés](search-license.md) de votre organisation pour rechercher les adresses e-mail de connexion qui peuvent nécessiter une modification.  
+- Il peut être utile de [filtrer la liste des abonnés](search-license.md) de votre organisation pour rechercher les adresses e-mail de connexion qui peuvent nécessiter une modification.

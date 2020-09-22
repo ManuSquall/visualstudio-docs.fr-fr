@@ -7,12 +7,12 @@ ms.assetid: ce5fc8a4-484c-4df6-97c3-cb60174fb66b
 ms.date: 02/20/2020
 ms.topic: conceptual
 description: Découvrez comment les données des abonnés sont anonymisées quand l’accès aux abonnements est perdu.
-ms.openlocfilehash: b65673d2fe61f62bf9e7731d20763bcd8c6f74bf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1b3cbd56123c80a96f36925ae98c171e84860798
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80232740"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006187"
 ---
 # <a name="anonymization-of-visual-studio-subscriber-information"></a>Anonymisation des informations sur les abonnés Visual Studio
 Quand un événement (par exemple l’expiration d’un abonnement ou la suppression du compte de connexion d’un abonné) bloque l’utilisation d’un abonnement par un abonné, les informations personnelles de l’utilisateur, telles que son nom et son compte de connexion, sont brouillées afin de les rendre inutilisables.  Le but est de protéger les informations personnelles de l’abonné.
@@ -43,12 +43,10 @@ R : il existe deux façons d’éviter ce problème :
 - Associez les identités AAD et MSA par le biais du locataire. 
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentation Azure](https://docs.microsoft.com/azure/)
-- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentation de Visual Studio](/visualstudio/)
+- [Documentation Azure DevOps](/azure/devops/)
+- [Documentation Azure](/azure/)
+- [Documentation Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
-Découvrez comment empêcher l’anonymisation en [associant les identités MSA et AAD](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).
-
-
+Découvrez comment empêcher l’anonymisation en [associant les identités MSA et AAD](/azure/active-directory/b2b/add-users-administrator).

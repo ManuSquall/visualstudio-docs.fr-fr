@@ -7,12 +7,12 @@ ms.assetid: 97ac8e4d-7a03-42f8-98cb-15bcaa90ef65
 ms.date: 07/30/2020
 ms.topic: how-to
 description: Découvrez comment les administrateurs peuvent modifier des attributions d’abonnement.
-ms.openlocfilehash: fb43f9ceae86acf5804a6cd32dd383dcd2e9af38
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d96610c940dc8e4404212a6f3a3dbaa7fe3ef51
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87453729"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005585"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>Modifier des attributions d’abonnements Visual Studio
 En tant qu’administrateur des abonnements, vous pouvez apporter des modifications aux abonnements attribués à des personnes au sein de votre organisation.  Cet article décrit les types de modifications que vous pouvez apporter et indique les étapes à suivre.
@@ -56,10 +56,10 @@ Vous pouvez modifier plusieurs abonnés à la fois en effectuant une modificatio
 5. Une fois que vous avez chargé le fichier, vous voyez s’afficher une notification confirmant le chargement. À ce stade, vos modifications apparaissent dans les informations de l’abonné.
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentation Azure](https://docs.microsoft.com/azure/)
-- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentation de Visual Studio](/visualstudio/)
+- [Documentation Azure DevOps](/azure/devops/)
+- [Documentation Azure](/azure/)
+- [Documentation Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
 - Vous devez affecter un ID d’abonnement spécifique ? Consultez attribution d’un ID d’abonnement. 

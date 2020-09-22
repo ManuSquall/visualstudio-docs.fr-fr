@@ -7,12 +7,12 @@ ms.assetid: 64455e79-229a-42f0-9d65-c2cca8ab8513
 ms.date: 09/08/2020
 ms.topic: how-to
 description: Découvrez comment contacter l’administrateur de votre abonnement pour obtenir de l’aide concernant sur des questions ou des problèmes.
-ms.openlocfilehash: 43a0c4ac090331bb9e9c65c232f5277aaee890a7
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 6e2192f81a7003c3c3dcbbc9583ae537ac60cb4b
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561414"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005686"
 ---
 # <a name="get-assistance-from-your-subscriptions-administrator"></a>Obtenir de l’aide auprès de votre administrateur d’abonnements
 Si votre abonnement Visual Studio vous est fourni par votre entreprise ou votre établissement scolaire, il est probable qu’il vous a été attribué par un administrateur d’abonnements.  Les administrateurs peuvent attribuer ou supprimer des abonnements, changer les adresses e-mail de connexion, déterminer si vous avez la possibilité de télécharger des logiciels et remplir d’autres fonctions liées à votre abonnement.
@@ -36,10 +36,10 @@ Compte tenu de la taille et de la complexité de nombreuses organisations, vous 
 - [Prise en charge des abonnements et de l’administration de Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentation Azure](https://docs.microsoft.com/azure/)
-- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentation de Visual Studio](/visualstudio/)
+- [Documentation Azure DevOps](/azure/devops/)
+- [Documentation Azure](/azure/)
+- [Documentation Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
 Si vous ne l’avez pas déjà fait, nous vous recommandons d’activer ces avantages pour tirer le meilleur parti de votre abonnement Visual Studio :
@@ -48,4 +48,3 @@ Si vous ne l’avez pas déjà fait, nous vous recommandons d’activer ces avan
 - [Azure DevOps](vs-azure-devops.md)
 
 Vous trouverez ces avantages et d’autres sur https://my.visualstudio.com/benefits.
-

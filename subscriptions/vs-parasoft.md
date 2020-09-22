@@ -7,12 +7,12 @@ ms.assetid: 00c1f300-d04e-4695-815e-775ffbf0f931
 ms.date: 04/20/2020
 ms.topic: how-to
 description: Découvrez comment activer l’abonnement Virtualize/SOA Test Professional inclus dans votre abonnement Visual Studio.
-ms.openlocfilehash: 8472c27e0196ec5837fccb17535061ea9b1b4867
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f5f32a15b0c2ab292f55c5ec5153161f03598ef4
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904387"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006265"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Avantages de Parasoft Virtualize/SOAtest Professional Desktop dans les abonnements Visual Studio
 
@@ -75,11 +75,11 @@ Effectuez des tests plus tôt et plus souvent.  Simulez et testez le comportemen
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, vente au détail, NFR sélectionnés<sup>1</sup> | 6 mois       |  Oui       |
 | Visual Studio Enterprise avec GitHub Enterprise | LV | 6 mois       |  Oui       |
-| Visual Studio Professional (Standard) | Licences en volume, Azure, Détail                                       | Non disponible                                                           |NA         |
-| Visual Studio Professional avec GitHub Enterprise | LV                                      | Non disponible                                                           |NA         |
-| Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Non disponible                                                           |NA         |
-| Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Non disponible                                                           |NA         |
-| Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure                                       | Non disponible                                                           |NA|
+| Visual Studio Professional (Standard) | Licences en volume, Azure, Détail                                       | Non disponible                                                           |N/D         |
+| Visual Studio Professional avec GitHub Enterprise | LV                                      | Non disponible                                                           |N/D         |
+| Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Non disponible                                                           |N/D         |
+| Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Non disponible                                                           |N/D         |
+| Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure                                       | Non disponible                                                           |N/D|
 ||
 
 <sup>1</sup>  *comprend : Microsoft Partner Network (Enterprise).  Exclut : la revente interdite (not for Resale), VSIP (Visual Studio Industry Partner), FTE, MCT Software & Services Developer, BizSpark, imagine, le MVP (Most Valuable Professional), Bureau régional.  Services de & de logiciel MCT.*
@@ -95,10 +95,10 @@ Effectuez des tests plus tôt et plus souvent.  Simulez et testez le comportemen
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentation Azure](https://docs.microsoft.com/azure/)
-- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentation de Visual Studio](/visualstudio/)
+- [Documentation Azure DevOps](/azure/devops/)
+- [Documentation Azure](/azure/)
+- [Documentation Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
-Tirez parti de votre propre bac à sable (sandbox) de développement en activant votre [crédit individuel Azure DevTest](vs-azure.md). 
+Tirez parti de votre propre bac à sable (sandbox) de développement en activant votre [crédit individuel Azure DevTest](vs-azure.md).

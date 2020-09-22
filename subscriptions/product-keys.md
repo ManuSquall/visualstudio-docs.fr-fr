@@ -7,12 +7,12 @@ ms.assetid: 89e3fcf9-fe5d-4266-8dd7-5567d05fe869
 ms.date: 09/18/2020
 ms.topic: conceptual
 description: Découvrez comment obtenir et gérer vos clés de produit dans les abonnements Visual Studio.
-ms.openlocfilehash: 8a7a2551b98672332af88210a0347c9ee3faf2cc
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 389a57fb2e8fe0ea6ee81ee163fed052c441c209
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809157"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005844"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Utilisation de clés de produit dans les abonnements Visual Studio
 
@@ -80,10 +80,10 @@ Différents types de clés sont disponibles en fonction du produit.
 Vous pouvez demander une clé à partir de la page Téléchargements du produit, ou rechercher la clé dont vous avez besoin dans la page [Clés de produit](https://my.visualstudio.com/productkeys).
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentation Azure](https://docs.microsoft.com/azure/)
-- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentation de Visual Studio](/visualstudio/)
+- [Documentation Azure DevOps](/azure/devops/)
+- [Documentation Azure](/azure/)
+- [Documentation Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
 Pour réclamer des clés, accédez à https://my.visualstudio.com/productkeys.  

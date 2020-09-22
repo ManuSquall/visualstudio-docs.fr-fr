@@ -7,12 +7,12 @@ ms.assetid: badd1d4a-90a6-46de-a037-945a91e6019b
 ms.date: 04/20/2020
 ms.topic: how-to
 description: Découvrez l’avantage Visual Studio App Center inclus dans les abonnements Visual Studio.
-ms.openlocfilehash: 27d2e060cf3f4ab1aad8b81c39a5cef52ac0e770
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 69d010afddca1f8fc51f77d806c75dc1b7b34256
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85906039"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005725"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio App Center dans les abonnements Visual Studio
 
@@ -75,10 +75,10 @@ Vous devriez à présent être en mesure d’accéder au portail App Center et d
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentation Azure](https://docs.microsoft.com/azure/)
-- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentation de Visual Studio](/visualstudio/)
+- [Documentation Azure DevOps](/azure/devops/)
+- [Documentation Azure](/azure/)
+- [Documentation Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
 Veillez à activer ces avantages intéressants pour tirer le meilleur parti de votre abonnement Visual Studio :

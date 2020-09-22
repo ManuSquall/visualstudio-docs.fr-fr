@@ -7,12 +7,12 @@ ms.assetid: c15f7e18-b280-4902-a60d-2c2598653207
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: Découvrez l’avantage du Support de la communauté Azure inclus dans certains abonnements Visual Studio.
-ms.openlocfilehash: 0a4f04051c7bd42fc3a2da3bd0c3c374600f1be9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8c048103d3ecc2aa21f771e88fa8f9b75ad94b4c
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238619"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006239"
 ---
 # <a name="azure-community-support-forum-in-visual-studio-subscriptions"></a>Forum du Support de la communauté Azure dans les abonnements Visual Studio
 Obtenez de l’aide directement de la part de l’équipe Azure au sein de forums de support sélectionnés via la Communauté Azure.  L’avantage Communauté Azure vous offre l’accès à une collection de forums axés sur les rubriques relatives à Azure.
@@ -30,7 +30,7 @@ Obtenez de l’aide directement de la part de l’équipe Azure au sein de forum
         - [portail de gestion Azure](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuremanagement&filter=alltypes&sort=lastpostdesc)  
     :::column-end:::
     :::column:::
-        - [Azure Marketplace](https://social.msdn.microsoft.com/forums/home?forum=DataMarket&filter=alltypes&sort=lastpostdesc)  
+        - [Place de marché Azure](https://social.msdn.microsoft.com/forums/home?forum=DataMarket&filter=alltypes&sort=lastpostdesc)  
         - [Azure Mobile Apps](https://social.msdn.microsoft.com/forums/home?forum=azuremobile&filter=alltypes&sort=lastpostdesc)  
         - [Azure Multi-Factor Authentication](https://social.msdn.microsoft.com/Forums/azure/home?forum=windowsazureactiveauthentication&filter=alltypes&sort=lastpostdesc)  
         - [Gestion de réseau Azure (DNS, Traffic Manager, VPN, Réseau virtuel)](https://social.msdn.microsoft.com/Forums/home?forum=WAVirtualMachinesVirtualNetwork&filter=alltypes&sort=lastpostdesc)  
@@ -92,10 +92,10 @@ Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentation Azure](https://docs.microsoft.com/azure/)
-- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentation de Visual Studio](/visualstudio/)
+- [Documentation Azure DevOps](/azure/devops/)
+- [Documentation Azure](/azure/)
+- [Documentation Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
 Saviez-vous qu’un grand nombre d’abonnements Visual Studio sont fournis avec Azure DevTest individuel ?  Découvrez comment [activer](vs-azure.md) les vôtres.

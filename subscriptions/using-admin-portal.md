@@ -7,12 +7,12 @@ ms.assetid: 4c099fe8-883e-4789-9468-387ce5697dfe
 ms.date: 09/03/2020
 ms.topic: overview
 description: Découvrez comment bien démarrer avec la gestion des abonnements Visual Studio de votre organisation via le portail d’administration des abonnements.
-ms.openlocfilehash: d857d4a1c9bb5568a6e4330851e0cc8a21988146
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: 78c66b8db569ce71588a2dba43b3ffb08d6a7d80
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426874"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005223"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Vue d’ensemble du portail d’administration des abonnements Visual Studio
 
@@ -60,10 +60,10 @@ Pour plus d’informations sur l’accord que vous consultez, cliquez sur la deu
 - [Prise en charge des abonnements et de l’administration de Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentation Azure](https://docs.microsoft.com/azure/)
-- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentation de Visual Studio](/visualstudio/)
+- [Documentation Azure DevOps](/azure/devops/)
+- [Documentation Azure](/azure/)
+- [Documentation Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
 En savoir plus sur les responsabilités des administrateurs :
@@ -72,4 +72,3 @@ En savoir plus sur les responsabilités des administrateurs :
 - [Gérer des grandes équipes et des prestataires externes](manage-teams.md)
 - [Suivre les affectations d’utilisateurs et traiter les commandes](assignments-orders.md)
 - Utiliser le rapport [Utilisation maximale](maximum-usage.md) pour suivre les engagements d’achat
-

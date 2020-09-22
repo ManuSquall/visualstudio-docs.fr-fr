@@ -3,7 +3,7 @@ title: Commandes devinit
 description: Détails sur l’utilisation des commandes devinit pour installer des composants.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,18 +11,18 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 545f7ec80b528b759db8ccfde21a18a46959913a
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 1a0bd657d9612bde05a820a591c2ab2c1cfdaad3
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809706"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005530"
 ---
 # <a name="devinit-commands"></a>commandes devinit
 
 ## <a name="init"></a>Init
 
-```batch
+```console
 > devinit init
 ```
 
@@ -41,7 +41,7 @@ Options facultatives pour la `devinit init` commande.
 
 ## <a name="run"></a>Exécuter
 
-```batch
+```console
 > devinit run -t <toolname>
 ```
 
@@ -91,19 +91,19 @@ Commandes de l’outil ECHO qui sont exécutées, mais n’exécutent aucun outi
 
 L’utilisation d’un `<arg>` qui inclut un espace dans sa valeur doit inclure une paire supplémentaire de guillemets d’échappement.
 
-```batch
+```console
 > devinit run -t <toolname> -<somearg> "<some value>"
 ```
 
 Pour installer dotnet dans un répertoire spécifique `C:\Program Files\dotnet` :
 
-```batch
+```console
 > devinit run -t require-dotnetcoresdk --"-InstallDir \"C:\Program Files\dotnet\""
 ```
 
 ## <a name="list"></a>List
 
-```batch
+```console
 > devinit list
 ```
 
@@ -111,7 +111,7 @@ Affiche la liste de tous les outils disponibles.
 
 ## <a name="show"></a>Afficher
 
-```batch
+```console
 > devinit show -t <toolname>
 ```
 
@@ -123,7 +123,7 @@ Imprime les informations d’aide pour un outil donné.
 
 ## <a name="version"></a>Version
 
-```batch
+```console
 > devinit version
 ```
 
@@ -131,7 +131,7 @@ Imprime les informations de version actuelles pour devinit.
 
 ## <a name="help"></a>Aide
 
-```batch
+```console
 > devinit help
 > devinit help list
 ```

@@ -7,12 +7,12 @@ ms.assetid: 176c7f11-b19d-49e9-a6dd-b2e5da5e8480
 ms.date: 03/11/2020
 ms.topic: conceptual
 description: Découvrez les problèmes qui peuvent se produire lors de la connexion aux abonnements Visual Studio.
-ms.openlocfilehash: 5d8a71115cd1a1aa7d850945806c22a64e7721cc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 05d610a9dbfb3ac8afe3d49cecde37320c2c250f
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801878"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005275"
 ---
 # <a name="issues-signing-in-to-visual-studio-subscriptions"></a>Problèmes de connexion aux abonnements Visual Studio
 Pour utiliser votre abonnement Visual Studio, vous devez tout d’abord vous connecter.  En fonction de votre abonnement, vous l’aurez peut-être configuré avec un compte Microsoft (MSA) ou une identité Azure Active Directory (AAD).  Cet article décrit certains problèmes que vous pouvez rencontrer lors de la connexion à votre abonnement.
@@ -64,10 +64,10 @@ Une entreprise peut par exemple posséder un service en ligne Microsoft pour sa 
 En tant qu’abonné, il est important de collaborer dans un premier temps avec votre administrateur pour bien comprendre la configuration des identités de votre entreprise. Si nécessaire, votre administrateur peut avoir à mettre à jour les paramètres de votre compte à partir de son portail d’administration, ou vous devrez peut-être créer un compte Microsoft (MSA) en utilisant votre adresse e-mail d’entreprise. Avant d’effectuer les étapes requises pour créer un compte MSA, contactez votre administrateur pour vous renseigner sur les stratégies ou problèmes liés à cette action. 
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentation Azure](https://docs.microsoft.com/azure/)
-- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentation de Visual Studio](/visualstudio/)
+- [Documentation Azure DevOps](/azure/devops/)
+- [Documentation Azure](/azure/)
+- [Documentation Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
 - Découvrez comment [lier des comptes MSA et AAD](/azure/active-directory/b2b/add-users-administrator) dans AAD.

@@ -7,12 +7,12 @@ ms.assetid: 86f2856c-8adf-4085-9962-f4136679e5ed
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: Comment ajouter une identité secondaire à votre abonnement Visual Studio pour l’utiliser avec Azure DevOps et Azure
-ms.openlocfilehash: 0e19bff8885810e505dbe6481340e7a112160af0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5eee6c1d59141c1975a6039f2ab9256b4c9dc735
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88800773"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005712"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Identités pour les abonnés Visual Studio
 Quand vous activez votre abonnement Visual Studio, nous lions l’identité (ou connexion) que vous avez utilisée lors de l’activation avec l’abonnement Visual Studio. Ainsi, nous pouvons vous reconnaître dans le [portail des abonnés Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), dans Azure DevOps et dans Azure.
@@ -58,10 +58,10 @@ R : Azure DevOps doit reconnaître automatiquement votre abonnement quand vous v
 Si Azure DevOps ne reconnaît toujours pas votre abonnement, contactez le support [Azure DevOps](https://azure.microsoft.com/support/devops/).
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentation Azure](https://docs.microsoft.com/azure/)
-- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentation de Visual Studio](/visualstudio/)
+- [Documentation Azure DevOps](/azure/devops/)
+- [Documentation Azure](/azure/)
+- [Documentation Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes 
 Pour plus d’informations sur l’utilisation d’Azure, d’Azure DevOps ou de l’IDE de Visual Studio, consultez les ressources suivantes :

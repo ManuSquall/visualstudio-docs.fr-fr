@@ -1,9 +1,9 @@
 ---
-title: require-Choco
+title: require-choco
 description: l’outil devinit requiert-Choco.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,14 +11,14 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 05f5cfbfcc34589e855ff819dc2edc4bf33cc74f
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 18ea1b08a50dc39d404058b07d7448c66a26003d
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810884"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005790"
 ---
-# <a name="require-choco"></a>require-Choco
+# <a name="require-choco"></a>require-choco
 
 L' `require-choco` outil peut être utilisé pour installer le [chocolat](https://chocolatey.org/).
 
@@ -26,7 +26,7 @@ L' `require-choco` outil peut être utilisé pour installer le [chocolat](https:
 
 Si les `input` Propriétés et `additionalOptions` sont omises ou vides, l’outil suivra le comportement [par défaut](#default-behavior) détaillé ci-dessous.
 
-| Name                                             | Type   | Obligatoire | Valeur                                                                      |
+| Nom                                             | Type   | Obligatoire | Valeur                                                                      |
 |--------------------------------------------------|--------|----------|----------------------------------------------------------------------------|
 | **commentaires**                                     | string | Non       | Propriété de commentaires facultative. Non utilisé.                                      |
 | [**entrée**](#input)                              | string | Non       | Non utilisé. Pour plus d’informations, consultez l' [entrée](#input) ci-dessous.                           |

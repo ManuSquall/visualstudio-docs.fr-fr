@@ -7,12 +7,12 @@ ms.assetid: 5e5d3f1a-533d-42eb-960e-01bb6bc7ca16
 ms.date: 04/20/2020
 ms.topic: how-to
 description: Découvrez comment activer l’abonnement WhiteSource Bolt inclus dans votre abonnement Visual Studio.
-ms.openlocfilehash: 3bdd71615d0dff19cd1d05dfca91041ae531a6f1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7be5ba29c2243396ae8c510b33d928364163059c
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85906016"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005699"
 ---
 # <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>WhiteSource Bolt dans les abonnements Visual Studio
 
@@ -44,11 +44,11 @@ Détectez et corrigez les vulnérabilités open source, puis générez des rappo
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, vente au détail, NFR sélectionnés<sup>1</sup> | 6 mois       |  Oui       |
 | Visual Studio Enterprise avec GitHub Enterprise | LV | 6 mois       |  Oui       |
-| Visual Studio Professional (Standard) | Licences en volume, Azure, Détail                                       | Non disponible                                                           |NA         |
-| Visual Studio Professional avec GitHub Enterprise | LV                                      | Non disponible                                                           |NA         |
-| Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Non disponible                                                           |NA         |
-| Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Non disponible                                                           |NA         |
-| Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure                                       | Non disponible                                                           |NA|
+| Visual Studio Professional (Standard) | Licences en volume, Azure, Détail                                       | Non disponible                                                           |N/D         |
+| Visual Studio Professional avec GitHub Enterprise | LV                                      | Non disponible                                                           |N/D         |
+| Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Non disponible                                                           |N/D         |
+| Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Non disponible                                                           |N/D         |
+| Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure                                       | Non disponible                                                           |N/D|
 ||
 
 <sup>1</sup>  *comprend : Microsoft Partner Network (Enterprise).  Exclut : la revente interdite (not for Resale), VSIP (Visual Studio Industry Partner), FTE, MCT Software & Services Developer, BizSpark, imagine, le MVP (Most Valuable Professional), Bureau régional.  Services de & de logiciel MCT.*
@@ -62,10 +62,10 @@ Détectez et corrigez les vulnérabilités open source, puis générez des rappo
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentation Azure](https://docs.microsoft.com/azure/)
-- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentation de Visual Studio](/visualstudio/)
+- [Documentation Azure DevOps](/azure/devops/)
+- [Documentation Azure](/azure/)
+- [Documentation Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
 Veillez à activer ces avantages intéressants pour tirer le meilleur parti de votre abonnement Visual Studio :

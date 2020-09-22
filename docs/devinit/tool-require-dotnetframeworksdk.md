@@ -3,7 +3,7 @@ title: require-dotnetframeworksdk
 description: l’outil devinit requiert-dotnetframeworksdk.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: c9e27883bda455794429221af436af1fe39229fc
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 4de8daf4b57d4775e4f1ede57392bb594bae53ea
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809685"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005109"
 ---
 # <a name="require-dotnetframeworksdk"></a>require-dotnetframeworksdk
 
@@ -26,7 +26,7 @@ L' `require-dotnetframeworksdk` outil est utilisé pour installer le [Kit de dé
 
 Si les `input` Propriétés et `additionalOptions` sont omises ou vides, l’outil suivra le comportement [par défaut](#default-behavior) détaillé ci-dessous.
 
-| Name                                             | Type   | Obligatoire  | Valeur                                                                                    |
+| Nom                                             | Type   | Obligatoire  | Valeur                                                                                    |
 |--------------------------------------------------|--------|-----------|------------------------------------------------------------------------------------------|
 | **commentaires**                                     | string | Non        | Propriété de commentaires facultative. Non utilisé.                                                    |
 | [**entrée**](#input)                              | string | Non        | Version du kit de développement logiciel (SDK) .NET Framework à installer. Pour plus d’informations, consultez l' [entrée](#input) ci-dessous. |

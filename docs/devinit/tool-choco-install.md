@@ -1,9 +1,9 @@
 ---
-title: Choco-installer
+title: choco-install
 description: devinit Tool Choco-install pour installer les packages en chocolat.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,14 +11,14 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 0ad4c5c772ac9028ec369fe7cc63e1a2f7af6931
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: e30db0eea924fcbc9587593266323d81c4ff1b40
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810164"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006049"
 ---
-# <a name="choco-install"></a>Choco-installer
+# <a name="choco-install"></a>choco-install
 
 L' `choco-install` outil peut être utilisé pour installer et mettre à jour des packages en [chocolat](https://chocolatey.org/) .
 
@@ -26,7 +26,7 @@ L' `choco-install` outil peut être utilisé pour installer et mettre à jour de
 
 Si les `input` Propriétés et `additionalOptions` sont omises ou vides, l’outil ne fait rien.
 
-| Name                                             | Type   | Obligatoire | Valeur                                                                                                          |
+| Nom                                             | Type   | Obligatoire | Valeur                                                                                                          |
 |--------------------------------------------------|--------|----------|----------------------------------------------------------------------------------------------------------------|
 | **commentaires**                                     | string | Non       | Propriété de commentaires facultative. Non utilisé.                                                                          |
 | [**entrée**](#input)                              | string | Non       | Le package à installer. Pour plus d’informations, consultez l' [entrée](#input) ci-dessous.                                                 |

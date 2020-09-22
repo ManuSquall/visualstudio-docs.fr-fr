@@ -7,12 +7,12 @@ ms.assetid: c4b13464-76be-40f1-ad60-ed79ee264b12
 ms.date: 04/17/2020
 ms.topic: how-to
 description: Découvrez comment télécharger et installer l’IDE de Visual Studio inclus dans votre abonnement Visual Studio.
-ms.openlocfilehash: b5c47c6b484d5b74f31ab8569f3895ae9ce0f984
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e955cc0c9e2437da07e48fc7db1c1b4df9e168e7
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85904435"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006304"
 ---
 # <a name="the-visual-studio-2019-benefit"></a>Avantage Visual Studio 2019
 
@@ -83,10 +83,10 @@ Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à
 - Pour obtenir de l’aide sur les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/)Visual Studio.
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentation Azure](https://docs.microsoft.com/azure/)
-- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentation de Visual Studio](/visualstudio/)
+- [Documentation Azure DevOps](/azure/devops/)
+- [Documentation Azure](/azure/)
+- [Documentation Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
 Une fois que vous avez installé Visual Studio, n’oubliez pas d’activer les autres avantages importants ci-dessous :

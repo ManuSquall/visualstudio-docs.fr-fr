@@ -3,7 +3,7 @@ title: require-dotnetcoresdk
 description: l’outil devinit requiert-dotnetcoresdk.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: cf68889b9dbac39031a4a79fbe799dc02fc8e419
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 201ee0a7384b5dce502151fc9d34d73bc19424a5
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809692"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005783"
 ---
 # <a name="require-dotnetcoresdk"></a>require-dotnetcoresdk
 
@@ -26,7 +26,7 @@ L' `require-dotnetcoresdk` outil est utilisé pour installer le [Kit SDK .net Co
 
 Si les `input` Propriétés et `additionalOptions` sont omises ou vides, l’outil suivra le comportement [par défaut](#default-behavior) détaillé ci-dessous.
 
-| Name                                             | Type   | Obligatoire | Valeur                                                                               |
+| Nom                                             | Type   | Obligatoire | Valeur                                                                               |
 |--------------------------------------------------|--------|----------|-------------------------------------------------------------------------------------|
 | **commentaires**                                     | string | Non       | Propriété de commentaires facultative. Non utilisé.                                               |
 | [**entrée**](#input)                              | string | Non       | Version de la kit SDK .NET Core à installer. Pour plus d’informations, consultez l' [entrée](#input) ci-dessous. |
@@ -70,7 +70,7 @@ Le comportement par défaut de l' `require-dotnetcoresdk` outil consiste à inst
         {
             "comments": "Example that will install in a specific directory.",
             "tool": "require-dotnetcoresdk",
-            "additionalOptions": "-InstallDir \"C:\Program Files\dotnet\""
+            "additionalOptions": "-InstallDir \"C:\\Program Files\\dotnet\""
         }
     ]
 }

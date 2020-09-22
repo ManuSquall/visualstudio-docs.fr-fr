@@ -7,12 +7,12 @@ ms.assetid: a747100c-6f08-41a4-aaad-05099741742b
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: Découvrez comment les administrateurs peuvent résoudre les abonnements sur-alloués
-ms.openlocfilehash: b518dc9300862e7c39af0489734734668097ef9f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d34f80e4d206e13219d5b9e33f72caddfeffb1b6
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87453716"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91004744"
 ---
 # <a name="over-allocated-subscriptions"></a>Abonnements alloués
 Les commandes sont parfois modifiées après l’ajout des abonnés. Le risque est que le nombre d’abonnements attribués dépasse le nombre de licences détenues par votre entreprise. C’est ce que l’on appelle « sur-allocation ».  
@@ -42,10 +42,10 @@ Si votre organisation a un Contrat Entreprise (EA), les administrateurs peuvent 
 > Il appartient au client de vérifier qu’à chaque abonnement GitHub attribué correspond un abonnement Visual Studio avec GitHub attribué dans le portail Gérer afin de respecter les conditions de licence pour cet abonnement.
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentation Azure](https://docs.microsoft.com/azure/)
-- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentation de Visual Studio](/visualstudio/)
+- [Documentation Azure DevOps](/azure/devops/)
+- [Documentation Azure](/azure/)
+- [Documentation Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
 - Découvrez-en plus sur la gestion des [abonnements Visual Studio avec GitHub Enterprise](assign-github.md).

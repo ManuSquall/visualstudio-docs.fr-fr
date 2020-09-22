@@ -7,12 +7,12 @@ ms.assetid: 588480a3-8806-4ea5-9915-c25974770069
 ms.date: 04/20/2020
 ms.topic: how-to
 description: Découvrez le compte de développeur Windows inclus dans votre abonnement Visual Studio.
-ms.openlocfilehash: 02d968875bec5d23fe25daaea5d2829f29a67111
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2686034d95c8faf8caed25b6b2fb4cb7ad83d8fe
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86875473"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005380"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Compte de développeur Windows dans les abonnements Visual Studio
 Votre compte de développeur Windows, inclus avec certains abonnements Visual Studio, vous permet de proposer des applications Windows gratuites et payantes dans le Windows Store.
@@ -47,9 +47,9 @@ Nous vous recommandons d’ouvrir une nouvelle fenêtre de navigateur « privé
 | Visual Studio Enterprise avec GitHub Enterprise   | LV  | Inclus       |  Oui|
 | Visual Studio Professional (Standard) | Licences en volume, Azure, Détail                                       | Inclus                                                            |Oui|
 | Visual Studio Professional avec GitHub Enterprise | LV                                        | Inclus                                                            |Oui|
-| Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Non disponible                                            |  NA|
-| Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              |  Non disponible                                            |  NA|
-| Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure                                       | Non disponible                                                           |NA|
+| Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Non disponible                                            |  N/D|
+| Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              |  Non disponible                                            |  N/D|
+| Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure                                       | Non disponible                                                           |N/D|
 ||
 
 <sup>1</sup>  *comprend : la revente interdite (NFR), FTE, Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & services DEVELOPer, MVP (Most Valuable Professional), Bureau régional. Exclut : Microsoft Partner Network (MPN), imagine, MCT Software & services.*
@@ -66,10 +66,10 @@ Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentation Azure](https://docs.microsoft.com/azure/)
-- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentation de Visual Studio](/visualstudio/)
+- [Documentation Azure DevOps](/azure/devops/)
+- [Documentation Azure](/azure/)
+- [Documentation Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
 Veillez à activer ces avantages intéressants pour tirer le meilleur parti de votre abonnement Visual Studio :

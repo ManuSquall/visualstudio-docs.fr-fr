@@ -7,12 +7,12 @@ ms.assetid: f39a2672-c283-4755-93d3-31c7c7a032d0
 ms.date: 09/08/2020
 ms.topic: how-to
 description: Découvrez comment vous connecter à vos abonnements Visual Studio avec votre compte professionnel ou scolaire.
-ms.openlocfilehash: 50cb122f1df5b9e6f87d53d3170d59c8f4d4b306
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 96b111c47e753b343d59c89e65f71eaa90132f6f
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561427"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005805"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-work-or-school-account"></a>Connexion à vos abonnements Visual Studio avec votre compte professionnel ou scolaire 
 
@@ -72,10 +72,10 @@ R : de nombreux utilisateurs disposent de plusieurs abonnements.  Si vous pouve
 Si le problème persiste, vous pouvez contacter notre équipe de [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) pour obtenir de l’aide.  
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentation Azure](https://docs.microsoft.com/azure/)
-- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentation de Visual Studio](/visualstudio/)
+- [Documentation Azure DevOps](/azure/devops/)
+- [Documentation Azure](/azure/)
+- [Documentation Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
-Une fois que vous êtes connecté au portail des abonnements, nous vous recommandons de consulter la page des avantages à l’adresse https://my.visualstudio.com/benefits et d’explorer les outils, services et offres exceptionnels dont vous disposez.  
+Une fois que vous êtes connecté au portail des abonnements, nous vous recommandons de consulter la page des avantages à l’adresse https://my.visualstudio.com/benefits et d’explorer les outils, services et offres exceptionnels dont vous disposez.

@@ -3,7 +3,7 @@ title: require-azurecli
 description: l’outil devinit requiert-azurecli.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: e730807cd4658a23c4e39e06ed837f622e0f0e39
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: ad76f82a69356f4bbd40d189fb2d8e77a839b31f
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810891"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005797"
 ---
 # <a name="require-azurecli"></a>require-azurecli
 
@@ -26,7 +26,7 @@ L' `require-azurecli` outil est utilisé pour installer le [Azure CLI](https://d
 
 Si les `input` Propriétés et `additionalOptions` sont omises ou vides, l’outil suivra le comportement [par défaut](#default-behavior) détaillé ci-dessous.
 
-| Name                                             | Type   | Obligatoire | Valeur                                                                          |
+| Nom                                             | Type   | Obligatoire | Valeur                                                                          |
 |--------------------------------------------------|--------|----------|--------------------------------------------------------------------------------|
 | **commentaires**                                     | string | Non       | Propriété de commentaires facultative. Non utilisé.                                          |
 | [**entrée**](#input)                              | string | Non       | Non utilisé. Pour plus d’informations, consultez l' [entrée](#input) ci-dessous.                               |

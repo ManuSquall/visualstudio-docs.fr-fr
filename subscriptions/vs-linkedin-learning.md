@@ -7,12 +7,12 @@ ms.assetid: 5bba2205-d32f-413d-9b58-724a24993842
 ms.date: 04/17/2020
 ms.topic: how-to
 description: Découvrez l’avantage LinkedIn Learning, qui est lié à un abonnement LinkedIn Premium inclus dans certains abonnements Visual Studio.
-ms.openlocfilehash: 580b565ad2eeecc0c5923963243ee63c1069b86f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6f0f500d092bb17e1bb81f0d35f2b12dc5c18183
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86387133"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006291"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Avantage LinkedIn Learning dans les abonnements Visual Studio
 
@@ -75,9 +75,9 @@ Pour activer votre abonnement LinkedIn Premium et l’avantage LinkedIn Learning
 | Visual Studio Enterprise avec GitHub Enterprise   | LV | 6 mois       |  Non.  Disponible pour les nouveaux abonnés uniquement          |
 | Visual Studio Professional (Standard) | Licences en volume, Azure, Détail                                       | 3 mois                                                            |Non.  Disponible pour les nouveaux abonnés uniquement         |
 | Visual Studio Professional avec GitHub Enterprise | LV | 3 mois      | Non.  Disponible pour les nouveaux abonnés uniquement         |
-| Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Non disponible                                            |  NA         |
-| Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Non disponible                                              | NA         |
-| Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure                                       | Non disponible                                                           |NA|
+| Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Non disponible                                            |  N/D         |
+| Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Non disponible                                              | N/D         |
+| Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure                                       | Non disponible                                                           |N/D|
 
 <sup>1</sup>  *comprend : non pour la revente (NFR), VSIP (Visual Studio Industry Partner).  Exclut : Microsoft Partner Network (MPN), FTE, MCT Software & Developer Services Developer, BizSpark, imagine, MVP (Most Valuable Professional), RD (Regional Director).  Services de & de logiciel MCT.*
 
@@ -98,10 +98,10 @@ R : Non, l’offre LinkedIn Learning est réservée uniquement aux nouveaux abo
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentation Azure](https://docs.microsoft.com/azure/)
-- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentation de Visual Studio](/visualstudio/)
+- [Documentation Azure DevOps](/azure/devops/)
+- [Documentation Azure](/azure/)
+- [Documentation Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
 Découvrez les autres avantages inclus dans votre abonnement. Rendez-vous sur [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).

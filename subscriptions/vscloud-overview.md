@@ -7,12 +7,12 @@ ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
 ms.date: 03/24/2020
 ms.topic: overview
 description: Louez Visual Studio Professional ou Visual Studio Enterprise sur une base mensuelle ou annuelle, sans contrat à long terme.
-ms.openlocfilehash: 1ea727572fc5c6aeb09f23594de54a08adbacc90
-ms.sourcegitcommit: 1803a67b516f67b209d8f4cf147314e604ef1927
+ms.openlocfilehash: d92d11321529e7ab8053ea657b2b5f4688c55aa0
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89641570"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005314"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Acheter des abonnements cloud Visual Studio Enterprise et Visual Studio Professional
 Vous pouvez acheter des [abonnements Visual Studio Professional et Visual Studio Enterprise](https://visualstudio.microsoft.com/subscriptions/) à partir du [Visual Studio Marketplace](https://marketplace.visualstudio.com). On les appelle des **« abonnements cloud »**.
@@ -127,10 +127,10 @@ R : bien qu’ils ne soient pas en mesure d’acheter un autre abonnement annue
 - [Achat d’abonnements cloud Visual Studio pour les fournisseurs de solutions Cloud](vscloud-csp.md)
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentation Azure](https://docs.microsoft.com/azure/)
-- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentation de Visual Studio](/visualstudio/)
+- [Documentation Azure DevOps](/azure/devops/)
+- [Documentation Azure](/azure/)
+- [Documentation Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
 Acheter des abonnements cloud

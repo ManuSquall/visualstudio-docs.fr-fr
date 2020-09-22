@@ -7,12 +7,12 @@ ms.assetid: a335ed23-34ee-40cb-83c6-6c93dee57424
 ms.date: 02/23/2020
 ms.topic: how-to
 description: Découvrez comment tirer parti des tarifs spéciaux d’Azure DevTest disponibles pour les clients disposant d’un contrat entreprise
-ms.openlocfilehash: 6d7ad872568ead5c7c53dcd8d0429f2ff0444095
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 70f7b9877dcc973d2f649eb0cad53599ff6023f3
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85903142"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005738"
 ---
 # <a name="azure-enterprise-agreement-devtest-offer"></a>Offre Azure Accord Entreprise DevTest
 
@@ -32,7 +32,7 @@ Pour activer les offres :
 0. Pointez sur le nom du compte. 
 0. Cliquez sur l’icône de **modification** (crayon) à l’extrême droite. 
 0. Cliquez sur la case à cocher **dev/test** .
-0. Cliquez sur **Save**.
+0. Cliquez sur **Enregistrer**.
 
 ## <a name="create-individual-subscriptions-within-the-account"></a>Créer des abonnements individuels au sein du compte
 Chaque abonné sur le compte peut créer un abonnement en procédant comme suit :
@@ -42,10 +42,10 @@ Chaque abonné sur le compte peut créer un abonnement en procédant comme suit�
 0. Cliquez sur **Achat**.  (Avec cette offre, vous n’achetez rien en fait.)
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentation Azure](https://docs.microsoft.com/azure/)
-- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentation de Visual Studio](/visualstudio/)
+- [Documentation Azure DevOps](/azure/devops/)
+- [Documentation Azure](/azure/)
+- [Documentation Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
 En savoir plus sur la gestion des abonnements Visual Studio.
@@ -54,6 +54,3 @@ En savoir plus sur la gestion des abonnements Visual Studio.
 - [Modifier des abonnements](edit-license.md)
 - [Supprimer des abonnements](delete-license.md)
 - [Déterminer l’utilisation maximale](maximum-usage.md)
-
-
-

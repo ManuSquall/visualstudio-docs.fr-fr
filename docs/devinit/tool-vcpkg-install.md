@@ -1,9 +1,9 @@
 ---
-title: vcpkg-installer
+title: vcpkg-install
 description: devinit outil vcpkg-install.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,14 +11,14 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 2e6dcad778e89b112a8c851f2f27ac46330466af
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 7c974b5747c38231ff4115aba17a8e3728672851
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810413"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005987"
 ---
-# <a name="vcpkg-install"></a>vcpkg-installer
+# <a name="vcpkg-install"></a>vcpkg-install
 
 L' `vcpkg-install` outil permet d’acquérir des bibliothèques C/C++ (appelées ports) à l’aide de [vcpkg](https://github.com/microsoft/vcpkg).
 
@@ -26,7 +26,7 @@ L' `vcpkg-install` outil permet d’acquérir des bibliothèques C/C++ (appelée
 
 Si les `input` Propriétés et `additionalOptions` sont omises ou vides, l’outil suivra le comportement [par défaut](#default-behavior) détaillé ci-dessous.
 
-| Name                                             | Type   | Obligatoire | Valeur                                                                                   |
+| Nom                                             | Type   | Obligatoire | Valeur                                                                                   |
 |--------------------------------------------------|--------|----------|-----------------------------------------------------------------------------------------|
 | **commentaires**                                     | string | Non       | Propriété de commentaires facultative. Non utilisé.                                                   |
 | [**entrée**](#input)                              | string | Oui      | Package (s) à installer. Pour plus d’informations, consultez l' [entrée](#input) ci-dessous.                       |

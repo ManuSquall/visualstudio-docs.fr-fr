@@ -7,12 +7,12 @@ ms.assetid: 6255b6a3-f101-4b2c-b7fa-851eccc944b2
 ms.date: 03/24/2020
 ms.topic: conceptual
 description: Découvrir l’avantage CloudPilot disponible dans certains abonnements Visual Studio
-ms.openlocfilehash: bebffb505f5c2b0fff7167ed2cccf629be1e7543
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 642a5b35f41676c76d9eb4e5f1319fbbf57c55df
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80274035"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005922"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Avantage CloudPilot dans les abonnements Visual Studio
 Migrez vos applications vers Microsoft Azure en quelques étapes simples. Identifiez en quelques minutes tous les changements de code nécessaires, jusqu’à la ligne de code, pour réussir la migration vers des conteneurs, des machines virtuelles, App Services, SQL Azure et/ou SQL MI. Ensuite, migrez les applications vers Azure à l’aide d’Assistants tirant parti des fonctionnalités ASR, DMA et DMS.
@@ -48,7 +48,7 @@ Proposé par UnifyCloud, CloudPilot est conçu pour aider les développeurs à m
     > [!div class="mx-imgBorder"]
     > ![Page produit CloudPilot](_img/vs-cloudpilot/vs-cloudpilot-navigate.png)
 
-0. C’est tout !  Dans le portail CloudPilot qui s’affiche, vous pouvez commencer à utiliser votre abonnement CloudPilot pour migrer vos applications vers Microsoft Azure.
+0. Et voilà !  Dans le portail CloudPilot qui s’affiche, vous pouvez commencer à utiliser votre abonnement CloudPilot pour migrer vos applications vers Microsoft Azure.
 
 0. Dès que votre compte est créé, vous recevez un e-mail du support VSS d’UnifyCloud confirmant la création de votre compte.
 
@@ -85,10 +85,10 @@ Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentation Azure](https://docs.microsoft.com/azure/)
-- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentation de Visual Studio](/visualstudio/)
+- [Documentation Azure DevOps](/azure/devops/)
+- [Documentation Azure](/azure/)
+- [Documentation Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
 Si vous n’avez pas encore activé l’avantage de crédit DevTest Azure fourni avec votre abonnement, accédez à [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) la vignette Azure et cliquez dessus dans la catégorie outils pour configurer votre abonnement Azure et échanger votre crédit Azure DevTest individuel.

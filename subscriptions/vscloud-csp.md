@@ -7,12 +7,12 @@ ms.assetid: d2ab13ed-ef79-4ef0-8736-eccd04bc6020
 ms.date: 03/24/2020
 ms.topic: conceptual
 description: Informations destinées aux fournisseurs de solutions cloud concernant l’achat et la gestion d’abonnements cloud Visual Studio pour vos clients.
-ms.openlocfilehash: 76c56759fdc07104290c45d1c4fc345bf0bad8b7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9c263486259529e7eb4e19ea4cc3f8ad8520b039
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80273866"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006226"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Acheter et gérer des abonnements cloud Visual Studio pour vos clients
 Les partenaires du programme [Fournisseur de solutions Cloud](https://partner.microsoft.com/cloud-solution-provider) peuvent acheter des abonnements cloud Visual Studio Enterprise et Visual Studio Professional pour leurs clients.
@@ -107,10 +107,10 @@ R : Non, les prix pour les abonnements Visual Studio sont fixes. Le même prix 
 A : Pas pour l'instant. Vos clients peuvent profiter des [tarifs de développement/test Azure](https://azure.microsoft.com/pricing/dev-test/), mais nous ne proposons rien de spécifique pour les fournisseurs de solutions Cloud.
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentation Azure](https://docs.microsoft.com/azure/)
-- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentation de Visual Studio](/visualstudio/)
+- [Documentation Azure DevOps](/azure/devops/)
+- [Documentation Azure](/azure/)
+- [Documentation Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
-Consultez le [Forum aux](vscloud-billing-faq.md) questions sur la facturation dans le Cloud pour obtenir des réponses aux questions de facturation courantes.  
+Consultez le [Forum aux](vscloud-billing-faq.md) questions sur la facturation dans le Cloud pour obtenir des réponses aux questions de facturation courantes.

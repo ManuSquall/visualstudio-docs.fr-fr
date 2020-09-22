@@ -7,12 +7,12 @@ ms.assetid: 1bdcb3c9-bba1-4e25-a609-9d7e539d78e0
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Découvrez comment vous connecter à vos abonnements Visual Studio avec votre compte GitHub.
-ms.openlocfilehash: 722eeae315a8b4a6bd93fb1048846b147b294afa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0dcbe5a908a2d149de7c254ec6ac6f3ec1eb6e72
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80233230"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005262"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-github-account"></a>Connexion à vos abonnements Visual Studio avec votre compte GitHub 
 
@@ -43,7 +43,7 @@ R : Si vous n’avez pas d’autres informations d’identification sur votre M
 #### <a name="q-theres-no-sign-in-with-github-option-on-the-sign-in-page--how-can-i-use-my-github-credentials-to-sign-in"></a>Q : il n’existe pas d’option « se connecter avec GitHub » sur la page de connexion.  Comment puis-je utiliser mes informations d’identification GitHub pour me connecter ?
 R : tapez l’adresse de messagerie du compte GitHub que vous avez choisie lors de la création de votre compte Microsoft lié à GitHub. Nous vous rechercherons et vous renverrons vers GitHub pour vous connecter. Autrement, si la page de connexion comporte un lien Options de connexion, utilisez le bouton **Se connecter avec GitHub** qui s’affiche après avoir cliqué sur ce lien. 
 
-#### <a name="q-i-cant-sign-in-to-some-of-my-apps-and-products-with-github--why"></a>Q : je ne parviens pas à me connecter à certains de mes applications et produits avec GitHub.  Pourquoi ?
+#### <a name="q-i-cant-sign-in-to-some-of-my-apps-and-products-with-github--why"></a>Q : je ne parviens pas à me connecter à certains de mes applications et produits avec GitHub.  Pourquoi ?
 R : tous les produits Microsoft ne peuvent pas accéder à GitHub.com à partir de leur page de connexion, par exemple, les consoles Xbox. Ainsi, quand vous tapez l’adresse e-mail de votre compte GitHub lié, nous vous envoyons un code à cette adresse pour vérifier qu’il s’agit bien de vous. Vous vous connectez toujours au même compte, mais en employant une autre méthode de connexion. 
 
 #### <a name="q--ive-added-a-password-to-the-microsoft-account-i-have-linked-to-my-github-account--will-that-cause-a-problem"></a>Q : J’ai ajouté un mot de passe au compte Microsoft que j’ai lié à mon compte GitHub.  Cela va-t-il causer un problème ?
@@ -52,7 +52,7 @@ R : pas du tout. Cela ne changera pas votre mot de passe GitHub ; simplement, 
 #### <a name="q-i-want-to-add-the-authenticator-app-to-the-account-i-created-using-github--can-i-do-that"></a>Q : Je souhaite ajouter l’application Authenticator au compte que j’ai créé à l’aide de GitHub.  Est-ce possible ?
 R : aucun problème : il vous suffit de télécharger l’application et de vous connecter à l’aide de votre adresse e-mail. Au moment de vous connecter avec votre adresse e-mail, vous serez invité à choisir l’[application d’authentification](https://www.microsoft.com/p/microsoft-authenticator/9nblgggzmcj6) ou GitHub comme informations d’identification.
 
-#### <a name="q-ive-enabled-two-factor-authentication-on-both-my-github-and-microsoft-accounts-msa-but-when-i-sign-in-to-my-msa-im-still-asked-to-authenticate-twice--why"></a>Q : J’ai activé l’authentification à deux facteurs sur mes comptes GitHub et Microsoft (MSA), mais lorsque je me connecte à mon MSA, je suis toujours invité à s’authentifier deux fois.  Pourquoi ?
+#### <a name="q-ive-enabled-two-factor-authentication-on-both-my-github-and-microsoft-accounts-msa-but-when-i-sign-in-to-my-msa-im-still-asked-to-authenticate-twice--why"></a>Q : J’ai activé l’authentification à deux facteurs sur mes comptes GitHub et Microsoft (MSA), mais lorsque je me connecte à mon MSA, je suis toujours invité à s’authentifier deux fois.  Pourquoi ?
 R : en raison des restrictions de sécurité, Microsoft compte la connexion avec GitHub en tant que vérification à facteur unique, même si la vérification en deux étapes est activée. Par conséquent, vous devez vous réauthentifier pour votre compte Microsoft. 
 
 #### <a name="q--how-can-i-tell-if-my-microsoft-account-and-github-accounts-are-linked"></a>Q : Comment savoir si mes comptes compte Microsoft et GitHub sont liés ?
@@ -65,10 +65,10 @@ R : accédez à l' [onglet sécurité](https://account.microsoft.com/security) 
 R : Si vous avez une adresse de messagerie Azure Active Directory sur votre compte GitHub, cela signifie que vous disposez déjà d’une identité Microsoft qui peut accéder à Azure et exécuter des pipelines CI à l’aide de votre code GitHub. L’utilisation de ce compte est l’assurance que vos ressources et pipelines de build Azure restent dans les limites de votre organisation. Cependant, si vous effectuez un travail personnel, nous vous recommandons de placer une adresse e-mail personnelle sur votre compte GitHub, vous y aurez ainsi toujours accès. Après quoi, essayez à nouveau de vous connecter et choisissez **Utiliser une autre adresse de messagerie** quand vous êtes invité à vous connecter à votre compte professionnel ou scolaire. Cela vous permettra de créer un compte Microsoft avec cette adresse e-mail personnelle.
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentation Azure](https://docs.microsoft.com/azure/)
-- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentation de Visual Studio](/visualstudio/)
+- [Documentation Azure DevOps](/azure/devops/)
+- [Documentation Azure](/azure/)
+- [Documentation Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
-Une fois que vous avez réussi à vous connecter au portail des abonnements, nous vous recommandons de consulter la page Avantages à l’adresse https://my.visualstudio.com/benefits, et d’explorer les outils, services et offres disponibles.  
+Une fois que vous avez réussi à vous connecter au portail des abonnements, nous vous recommandons de consulter la page Avantages à l’adresse https://my.visualstudio.com/benefits, et d’explorer les outils, services et offres disponibles.

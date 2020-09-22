@@ -7,12 +7,12 @@ ms.assetid: e49242bc-e9f2-49e8-8caa-f574d508aba6
 ms.date: 06/16/2020
 ms.topic: how-to
 description: Découvrez comment les administrateurs peuvent supprimer des affectations d’abonnements dans le portail d’administration des abonnements Visual Studio
-ms.openlocfilehash: c4e55a18bb172588bf1daf777aeee8fee1dca02b
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: a40f1ae5bb8d90217808888ccb44e047f8145b9f
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561349"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005673"
 ---
 # <a name="delete-assignments-in-visual-studio-subscriptions"></a>Supprimer des attributions dans les abonnements Visual Studio
 Quand un abonné n’a plus besoin d’un abonnement Visual Studio, par exemple quand il quitte l’entreprise, termine un projet ou change de fonction, vous pouvez supprimer son abonnement et l’attribuer à une autre personne. Notez que lorsque vous réattribuez un abonnement, tous les avantages de l’abonné ne sont pas réinitialisés.  Le nouvel utilisateur peut demander les clés non demandées et afficher celles précédemment demandées, mais le nombre maximal de demandes autorisées n’est **pas** réinitialisé.  Pour les organisations qui ont des contrats Entreprise, les avantages qui ont été utilisés par l’utilisateur initial, comme une formation Pluralsight, seront réinitialisés. 
@@ -30,14 +30,12 @@ Quand un abonné n’a plus besoin d’un abonnement Visual Studio, par exemple 
    > La suppression en bloc à l’aide d’un modèle n’est pas disponible. Pour les organisations qui gèrent des affectations d’abonnements via des groupes de sécurité Azure Active Directory, consultez [notre article](assign-license-bulk.md#use-azure-active-directory-groups-to-assign-subscriptions) pour plus d’informations sur la façon dont les suppressions se produisent.  
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentation Azure](https://docs.microsoft.com/azure/)
-- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentation de Visual Studio](/visualstudio/)
+- [Documentation Azure DevOps](/azure/devops/)
+- [Documentation Azure](/azure/)
+- [Documentation Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
 - Vous avez besoin de modifier un abonnement sans le supprimer ?  Découvrez comment [modifier des abonnements](edit-license.md)
 - Pour obtenir de l’aide pour trouver un abonnement particulier, consultez [Rechercher un abonnement](search-license.md).
 - Vous devez créer une liste de tous vos abonnements ?  Consultez [Exporter des abonnements](exporting-subscriptions.md).
-
-

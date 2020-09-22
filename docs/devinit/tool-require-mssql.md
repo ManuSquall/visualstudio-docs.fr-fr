@@ -1,9 +1,9 @@
 ---
-title: demander-MSSQL
+title: require-mssql
 description: l’outil devinit requiert-MSSQL.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,14 +11,14 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: ecd3839e114fd5cd542e0a35c0f3b6a1dcb7bbb4
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 2ad02a29b8ea8b59abd4f246c5cc1d206451d3fc
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808359"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005189"
 ---
-# <a name="require-mssql"></a>demander-MSSQL
+# <a name="require-mssql"></a>require-mssql
 
 L' `require-mssql` outil est utilisé pour installer [Microsoft SQL Server édition développeur 2019](https://www.microsoft.com/sql-server/application-development) à partir de l’aide de l’ISO de MS SQL Server. SQL Server sera disponible sur `localhost` l’authentification Windows intégrée. SQL Server sera accessible avec la chaîne de connexion `"Server=localhost;Integrated Security=true;"` .
 
@@ -26,7 +26,7 @@ L' `require-mssql` outil est utilisé pour installer [Microsoft SQL Server édit
 
 Si les `input` Propriétés et `additionalOptions` sont omises ou vides, l’outil suivra le comportement [par défaut](#default-behavior) détaillé ci-dessous.
 
-| Name                                             | Type   | Obligatoire | Valeur                                                                                   |
+| Nom                                             | Type   | Obligatoire | Valeur                                                                                   |
 |--------------------------------------------------|--------|----------|-----------------------------------------------------------------------------------------|
 | **commentaires**                                     | string | Non       | Propriété de commentaires facultative. Non utilisé.                                                   |
 | [**entrée**](#input)                              | string | Non       | Pour plus d’informations, consultez l' [entrée](#input) ci-dessous.                                                  |
@@ -36,7 +36,7 @@ Si les `input` Propriétés et `additionalOptions` sont omises ou vides, l’out
 
 La `input` propriété peut être une chaîne avec l’une des deux valeurs suivantes :
 
-| Value     | Description                              |
+| Valeur     | Description                              |
 |-----------|------------------------------------------|
 | installer   | Installe SQL Server.                     |
 | uninstall | Désinstalle toutes les installations de SQL Server. |

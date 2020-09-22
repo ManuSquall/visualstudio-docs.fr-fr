@@ -3,7 +3,7 @@ title: eShopOnWeb
 description: Exemple de personnalisation à l’aide de devinit pour la référentiel dotnet-architecture/eShopOnWeb.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 052e89d276e122ebf44c2b541771bbb314f48ade
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 73060a6314bb1d89a51df98ac9d06d8e1f1be90e
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809103"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005644"
 ---
 # <a name="eshoponweb"></a>eShopOnWeb
 
@@ -26,13 +26,13 @@ Cet exemple montre comment personnaliser l’exemple d’architecture dotnet [eS
 
 Ce script est appelé à partir de _PostCloneSetup.ps1_ et peut également être exécuté localement pour configurer le référentiel. Ce fichier doit se trouver dans le même dossier que _.devcontainer.js_.
 
-```batch
+```console
 devinit init
 dotnet ef database update -c catalogcontext -p src\Infrastructure\Infrastructure.csproj -s src\Web\Web.csproj
 dotnet ef database update -c appidentitydbcontext -p src\Infrastructure\Infrastructure.csproj -s src\Web\Web.csproj
 ```
 
-## <a name="devinitjson"></a>.devinit.js
+## <a name="devinitjson"></a>.devinit.json
 
 Contenu du [_.devinit.jssur_](devinit-json.md) le fichier. Ce fichier doit se trouver dans le même dossier que _.devcontainer.js_.
 

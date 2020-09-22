@@ -7,12 +7,12 @@ ms.assetid: 2e0fd8bb-8f20-487c-b350-b8fde405ea5e
 ms.date: 09/02/2020
 ms.topic: how-to
 description: Découvrez comment activer l’avantage Support technique inclus dans votre abonnement Visual Studio.
-ms.openlocfilehash: ba4a80f604116a10901d98229980f2732956c0df
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 6f22273d578c6e1bc30d588fff30c945846a5d8f
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89508936"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91004544"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Activer et utiliser l’avantage Support technique dans les abonnements Visual Studio
 L’avantage Support technique dans les abonnements Visual Studio permet de résoudre les problèmes couverts par la garantie de réparation et d’assistance dans les **environnements hors production** pour les produits se trouvant toujours dans la phase de support standard du [cycle de vie du support](https://support.microsoft.com/lifecycle/search). Les abonnements standard et cloud annuels Visual Studio Enterprise acceptent quatre incidents, tandis que les abonnements standard et cloud annuels Visual Studio Professional en acceptent deux (pendant un an à compter de l’activation de l’avantage). L’avantage doit être activé quand l’abonnement est actif.
@@ -137,10 +137,10 @@ Pour pouvoir utiliser votre avantage Support technique fourni dans l’abonnemen
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour afficher tous les abonnements attribués à votre adresse de messagerie. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentation Azure](https://docs.microsoft.com/azure/)
-- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentation de Visual Studio](/visualstudio/)
+- [Documentation Azure DevOps](/azure/devops/)
+- [Documentation Azure](/azure/)
+- [Documentation Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
 Veillez à activer ces avantages intéressants pour tirer le meilleur parti de votre abonnement Visual Studio :

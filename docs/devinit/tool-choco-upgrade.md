@@ -1,9 +1,9 @@
 ---
-title: Choco-mettre à niveau
+title: choco-upgrade
 description: devinit outil Choco-Upgrade.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,14 +11,14 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 7b7c2d3dd005c54edb882e059679d45e77e539be
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 5a735b60fd318d86e97dc4db7570e952a0fcdfd8
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810157"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006035"
 ---
-# <a name="choco-upgrade"></a>Choco-mettre à niveau
+# <a name="choco-upgrade"></a>choco-upgrade
 
 L' `choco-upgrade` outil peut être utilisé pour installer et mettre à jour des packages en [chocolat](https://chocolatey.org/docs/commandsupgrade) .
 
@@ -26,7 +26,7 @@ L' `choco-upgrade` outil peut être utilisé pour installer et mettre à jour de
 
 Si les `input` Propriétés et `additionalOptions` sont omises ou vides, l’outil ne fait rien.
 
-| Name                                             | Type   | Obligatoire | Valeur                                                                                                          |
+| Nom                                             | Type   | Obligatoire | Valeur                                                                                                          |
 |--------------------------------------------------|--------|----------|----------------------------------------------------------------------------------------------------------------|
 | **commentaires**                                     | string | Non       | Propriété de commentaires facultative. Non utilisé.                                                                          |
 | [**entrée**](#input)                              | string | Non       | Package à mettre à niveau. Pour plus d’informations, consultez l' [entrée](#input) ci-dessous.                                                 |

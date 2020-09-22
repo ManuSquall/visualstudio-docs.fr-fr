@@ -7,12 +7,12 @@ ms.assetid: 9c0b9a4f-b9a3-491c-a68f-6e4bac7f7b3d
 ms.date: 08/10/2020
 ms.topic: how-to
 description: Découvrez comment les administrateurs peuvent rechercher des abonnés individuels ou des groupes d’abonnés dans le portail d’administration.
-ms.openlocfilehash: aea4e0d05eb01a5ec3fcf1da97d34e069aeb964d
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 29354348b423b539b79c36c78f213f7a20d60eb3
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810703"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005301"
 ---
 # <a name="search-and-filter-subscribers-in-visual-studio-subscriptions"></a>Rechercher et filtrer des abonnés dans les abonnements Visual Studio
 Le portail d’administration des abonnements Visual Studio vous permet de rechercher un groupe spécifique d’abonnés selon différents critères. Vous pouvez filtrer la liste des abonnés par nom, adresse e-mail, niveau d’abonnement et autres critères.
@@ -38,14 +38,12 @@ Le portail d’administration des abonnements Visual Studio vous permet de reche
 
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentation Azure](https://docs.microsoft.com/azure/)
-- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentation de Visual Studio](/visualstudio/)
+- [Documentation Azure DevOps](/azure/devops/)
+- [Documentation Azure](/azure/)
+- [Documentation Microsoft 365](/microsoft-365/)
 
 
 ## <a name="next-steps"></a>Étapes suivantes
 - Maintenant que vous savez comment trouver un abonné, découvrez comment [modifier](edit-license.md) son abonnement.
 - Vous avez besoin d’aide sur l’utilisation du portail d’administration ?  Contactez la [prise en charge de l’administration et des abonnements Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).
-
-

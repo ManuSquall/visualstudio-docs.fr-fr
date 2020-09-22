@@ -1,9 +1,9 @@
 ---
-title: NPM-installer
+title: npm-install
 description: devinit outil NPM-install.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,14 +11,14 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 2af35ea0998b36fb5585feb4fa633f3ca538397e
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: e3295ea2e67dd625387b054c488c5abacec2a718
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810136"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005551"
 ---
-# <a name="npm-install"></a>NPM-installer
+# <a name="npm-install"></a>npm-install
 
 L' `npm-install` outil peut être utilisé pour installer des packages [NPM](https://www.npmjs.com/) .
 
@@ -26,7 +26,7 @@ L' `npm-install` outil peut être utilisé pour installer des packages [NPM](htt
 
 Si les `input` Propriétés et `additionalOptions` sont omises ou vides, l’outil ne fait rien.
 
-| Name                                             | Type   | Obligatoire | Valeur                                                                                                          |
+| Nom                                             | Type   | Obligatoire | Valeur                                                                                                          |
 |--------------------------------------------------|--------|----------|----------------------------------------------------------------------------------------------------------------|
 | **commentaires**                                     | string | Non       | Propriété de commentaires facultative. Non utilisé.                                                                          |
 | [**entrée**](#input)                              | string | Oui      | Le package à installer. Pour plus d’informations, consultez l' [entrée](#input) ci-dessous.                                                 |

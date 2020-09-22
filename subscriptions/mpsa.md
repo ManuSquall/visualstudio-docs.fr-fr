@@ -7,12 +7,12 @@ ms.assetid: b331c837-3524-42b7-820e-b4fdd5e12793
 ms.date: 09/03/2020
 ms.topic: conceptual
 description: En savoir plus sur la gestion des abonnements Visual Studio dans un contrat Microsoft Products and services (MPSA)
-ms.openlocfilehash: 9d26bccebb11a59933c37ec0f29a9b6e30e86c5b
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: f0e894272f13b08af20f36579aea807cba7a882a
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561388"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006083"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Abonnements Visual Studio dans un programme MPSA (Microsoft Products and Services Agreement)
 Si vous avez acheté des abonnements Visual Studio via le programme MPSA, il existe quelques éléments à connaître avant de devenir administrateur des abonnements Visual Studio et d’attribuer des abonnements à vos utilisateurs. Si vous avez déjà été configuré comme administrateur, vous pouvez accéder directement au [portail d’administration](https://manage.visualstudio.com/) des abonnements Visual Studio.
@@ -63,10 +63,10 @@ Pour obtenir une explication plus détaillée de ce processus, vous pouvez utili
 > Quand vous avez terminé le processus de prise de contrôle de domaine, vous devez respecter les critères des cinq étapes de la section Association prélocataire (locataire managé). Une fois que les critères sont satisfaits, vous devez uniquement contacter le support MPSA pour provisionner d’autres administrateurs des abonnements Visual Studio.
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentation Azure](https://docs.microsoft.com/azure/)
-- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentation de Visual Studio](/visualstudio/)
+- [Documentation Azure DevOps](/azure/devops/)
+- [Documentation Azure](/azure/)
+- [Documentation Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
 En savoir plus sur la gestion des abonnements Visual Studio.

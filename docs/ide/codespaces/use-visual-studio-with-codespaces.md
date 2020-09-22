@@ -11,16 +11,16 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: c6eef7a63ea69611c6df1f6d2b425ed56437f68c
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: c3a2e14236c2d24bc9650fab81150cc295826844
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/22/2020
-ms.locfileid: "90862254"
+ms.locfileid: "91006252"
 ---
 # <a name="how-to-use-visual-studio-with-a-codespace-preview"></a>Utilisation de Visual Studio avec un codeSpace (version préliminaire)
 
-Visual Studio offre une excellente prise en charge pour le développement dans GitHub Codespaces. Vous pouvez créer et vous connecter à un codeSpace et bénéficier de toute la puissance de Visual Studio pour travailler sur vos projets sur un environnement distant hébergé. Même si votre code source et vos outils se trouvent dans un codeSpace et que votre compilation et le débogage se produisent dans le Cloud, votre expérience de développement sera aussi rapide et sans friction que si vous travailliez localement. Vous pouvez utiliser un codeSpace dans Visual Studio 2019 Preview (s'[inscrire à la version bêta publique limitée](https://github.com/features/codespaces/signup)).
+Visual Studio offre une excellente prise en charge pour le développement dans GitHub Codespaces. Vous pouvez créer et vous connecter à un codeSpace et bénéficier de toute la puissance de Visual Studio pour travailler sur vos projets sur un environnement distant hébergé. Même si votre code source et vos outils se trouvent dans un codeSpace et que votre compilation et le débogage se produisent dans le Cloud, votre expérience de développement sera aussi rapide et sans friction que si vous travailliez localement. Vous pouvez utiliser un codeSpace dans Visual Studio 2019 Preview (s'[inscrire à la version bêta publique limitée](https://github.com/features/codespaces/signup-vs)).
 
 > [!NOTE]
 > Cet article décrit spécifiquement l’utilisation de Visual Studio pour se connecter à GitHub Codespaces. Vous pouvez en savoir plus sur la connexion à un codeSpace avec d’autres clients dans la documentation [Visual Studio code](https://docs.github.com/github/developing-online-with-codespaces/connecting-to-your-codespace-from-visual-studio-code) ou [GitHub](https://docs.github.com/github/developing-online-with-codespaces/developing-in-a-codespace) .

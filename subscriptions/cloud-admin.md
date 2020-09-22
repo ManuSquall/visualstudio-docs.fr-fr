@@ -7,12 +7,12 @@ ms.assetid: 8b30e2bc-2ac3-4fcc-b296-128731471032
 ms.date: 03/03/2020
 ms.topic: how-to
 description: Configuration des administrateurs pour les abonnements mensuels
-ms.openlocfilehash: 7a0d28e4cd75749db430353234060f72a8f86485
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fbb8d1f7a1519950e84c6f6fe726dd8f52ff29c5
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87434310"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006109"
 ---
 # <a name="set-up-administrators-for-visual-studio-monthly-subscriptions"></a>Configurer des administrateurs pour les abonnements mensuels Visual Studio
 
@@ -49,7 +49,7 @@ Pour ajouter des administrateurs :
 9. Faites défiler la liste des utilisateurs jusqu’à l’utilisateur auquel vous souhaitez attribuer un rôle d’administrateur, puis sélectionnez-le. 
    > [!div class="mx-imgBorder"]
    > ![Choisir un rôle, administrateur de l’accès utilisateur](_img/cloud-admin/add-role-user-access-admin.png "Choisissez rôle, sélectionnez administrateur de l’accès utilisateur, puis sélectionnez le nom de l’utilisateur pour en faire un administrateur.")
-10. Cliquez sur **Save**.
+10. Cliquez sur **Enregistrer**.
 11. Cliquez sur l’onglet **Attributions de rôles** pour vérifier que l’utilisateur sélectionné apparaît désormais en tant qu’administrateur de l’accès utilisateur.
 
 Le nouvel administrateur peut maintenant se connecter au [portail d’administration](https://manage.visualstudio.com), sélectionner le même abonnement Azure que celui qui a été utilisé pour acheter les abonnements mensuels dans la liste située dans le coin supérieur gauche de la page et commencer à gérer ces abonnements.
@@ -60,10 +60,10 @@ Le nouvel administrateur peut maintenant se connecter au [portail d’administra
 Pour plus d’informations sur les abonnements mensuels Visual Studio, consultez la [vue d’ensemble](vscloud-overview.md) sous achat d’abonnements. Pour acheter des abonnements mensuels Visual Studio, visitez le Visual Studio Marketplace à l’adresse [https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscription) .
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentation Azure](https://docs.microsoft.com/azure/)
-- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentation de Visual Studio](/visualstudio/)
+- [Documentation Azure DevOps](/azure/devops/)
+- [Documentation Azure](/azure/)
+- [Documentation Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
 En savoir plus sur la gestion des abonnements Visual Studio.
@@ -71,6 +71,3 @@ En savoir plus sur la gestion des abonnements Visual Studio.
 - [Attribuer plusieurs abonnements](assign-license-bulk.md)
 - [Modifier des abonnements](edit-license.md)
 - [Déterminer l’utilisation maximale](maximum-usage.md)
-
-
-

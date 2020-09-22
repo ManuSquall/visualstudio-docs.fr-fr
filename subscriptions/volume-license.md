@@ -7,12 +7,12 @@ ms.assetid: 7aaa4727-00ef-41dc-937d-8d46973aaf56
 ms.date: 03/03/2020
 ms.topic: conceptual
 description: Découvrir comment les administrateurs des contrats avec licence en volume peuvent accéder au portail d’administration des abonnements Visual Studio
-ms.openlocfilehash: 2fd2ab46100cc8c7f968b35e6ae0103092e4e684
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7a3846eb9d45c05440559e3ab2cae901d1521245
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80233144"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005210"
 ---
 # <a name="accessing-the-administration-portal-as-an-admin-on-a-volume-license-agreement"></a>Accès au portail d’administration en tant qu’administrateur sur un contrat de licence en volume
 
@@ -29,12 +29,12 @@ Cela s’applique à tous les types de contrats de licence en volume, y compris,
 - [Prise en charge des abonnements et de l’administration de Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentation Azure](https://docs.microsoft.com/azure/)
-- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentation de Visual Studio](/visualstudio/)
+- [Documentation Azure DevOps](/azure/devops/)
+- [Documentation Azure](/azure/)
+- [Documentation Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
 - Découvrir comment [attribuer des abonnements](assign-license.md)
 - Découvrir plus d’informations sur la gamme complète des [avantages des abonnements](https://visualstudio.microsoft.com/vs/benefits/)
-- [Définir les préférences de contrat](admin-prefs.md) 
+- [Définir les préférences de contrat](admin-prefs.md)

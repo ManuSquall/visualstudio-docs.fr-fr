@@ -7,12 +7,12 @@ ms.assetid: 196c6d04-9a33-47d5-b0f1-038e7c3a7ac9
 ms.date: 03/09/2020
 ms.topic: conceptual
 description: Découvrez comment tirer le meilleur parti de vos abonnements Visual Studio.
-ms.openlocfilehash: 10333c801057bb3f11aeda1f9d0ac13e38c3bc80
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 59bfac51eb7888bbad4cc07bf2df25b8c35980fd
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90807948"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005896"
 ---
 # <a name="managing-subscriptions"></a>Gestion des abonnements
 
@@ -114,10 +114,10 @@ R : En fonction du canal d’achat, Microsoft conserve les données des clients
 > - Nous ne supprimons pas entièrement toutes vos données personnelles si vous avez des abonnements actifs.
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentation Azure](https://docs.microsoft.com/azure/)
-- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentation de Visual Studio](/visualstudio/)
+- [Documentation Azure DevOps](/azure/devops/)
+- [Documentation Azure](/azure/)
+- [Documentation Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
 Gérez-vous les abonnements de votre organisation ?  En savoir plus sur la gestion des abonnements Visual Studio :

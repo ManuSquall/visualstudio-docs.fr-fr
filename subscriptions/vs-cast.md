@@ -7,12 +7,12 @@ ms.assetid: 92e8957f-c690-46bd-a812-3efd06a2bc6b
 ms.date: 03/02/2020
 ms.topic: how-to
 description: Découvrir l’avantage CAST Highlight disponible dans certains abonnements Visual Studio
-ms.openlocfilehash: 565dd9326447757cd2af23e83dfcf7f2d4553054
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3273ffb718249a0503531d20b882334cb76f9428
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85906063"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005948"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Avantage CAST Highlight dans les abonnements Visual Studio
 Les développeurs qui migrent leurs logiciels vers le cloud ont besoin d’insights critiques. Avec la diffusion en surbrillance, les abonnés Visual Studio peuvent analyser rapidement le code source de leur application pour identifier la préparation du Cloud de leurs applications en vue d’une migration vers Azure et surveiller la progression de leur application pendant et après une migration.
@@ -102,10 +102,10 @@ Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentation Azure](https://docs.microsoft.com/azure/)
-- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentation de Visual Studio](/visualstudio/)
+- [Documentation Azure DevOps](/azure/devops/)
+- [Documentation Azure](/azure/)
+- [Documentation Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
 Si vous n’avez pas encore activé l’avantage de crédit DevTest Azure fourni avec votre abonnement, accédez à [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) la vignette Azure et cliquez dessus dans la catégorie outils pour configurer votre abonnement Azure et échanger votre crédit Azure DevTest individuel.

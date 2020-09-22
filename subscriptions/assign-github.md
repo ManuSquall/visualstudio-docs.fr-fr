@@ -7,12 +7,12 @@ ms.assetid: f271d623-dcde-442a-865c-4dca5ad8a9c5
 ms.date: 03/17/2020
 ms.topic: conceptual
 description: Gestion des abonnements dans l’offre Visual Studio + GitHub Enterprise
-ms.openlocfilehash: 01b043698aaeb23151357595d5c39cd117fd47c7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4206332890b8be9483a0211c4b465103b1565cd0
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249842"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006174"
 ---
 # <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>Gérer des abonnements Visual Studio avec GitHub Enterprise
 Les clients qui ont des contrats entreprise avec Microsoft peuvent acheter une nouvelle offre d’abonnement qui regroupe des abonnements Visual Studio standard et GitHub Enterprise. Il s’agit d’un moyen simple et économique pour les abonnés Visual Studio d’acquérir GitHub Enterprise. 
@@ -56,7 +56,7 @@ Pour plus d’informations sur la gestion de GitHub.com, veuillez extraire les r
 L’aide de GitHub fournit un éventail de guides d’administration pour répondre à vos questions et vous donner des conseils sur la gestion de l’implémentation de GitHub Enterprise Server dans votre organisation.
 
 + [Afficher tous les guides d’administration](https://help.github.com/en/enterprise/2.16/admin)
-+ [User Management](https://help.github.com/en/enterprise/2.16/admin/user-management)
++ [Gestion des utilisateurs](https://help.github.com/en/enterprise/2.16/admin/user-management)
   - [Organisations et équipes](https://help.github.com/en/enterprise/2.16/admin/user-management/organizations-and-teams)
     - [Création d’organisations](https://help.github.com/en/enterprise/2.16/admin/user-management/creating-organizations)
     - [Création d’équipes](https://help.github.com/en/enterprise/2.16/admin/user-management/creating-teams)
@@ -75,10 +75,10 @@ L’aide de GitHub fournit un éventail de guides d’administration pour répon
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentation Azure](https://docs.microsoft.com/azure/)
-- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentation de Visual Studio](/visualstudio/)
+- [Documentation Azure DevOps](/azure/devops/)
+- [Documentation Azure](/azure/)
+- [Documentation Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
 

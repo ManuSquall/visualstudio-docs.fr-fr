@@ -7,12 +7,12 @@ ms.assetid: e5768153-2758-46d3-a323-3272def213ee
 ms.date: 03/25/2020
 ms.topic: how-to
 description: En savoir plus sur l’avantage CODE magazine inclus dans votre abonnement Visual Studio.
-ms.openlocfilehash: c7b56074ea9a48f4d94af5c7d79cd93dc2c4a3b8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 30bc728db5aea53d442552ed9b79f506b0f6b6d7
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86387172"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005909"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>Magazine de CODE inclus dans les abonnements Visual Studio
 
@@ -77,10 +77,10 @@ R : le magazine de CODE recueille votre adresse, que l’abonnement soit destin
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentation Azure](https://docs.microsoft.com/azure/)
-- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentation de Visual Studio](/visualstudio/)
+- [Documentation Azure DevOps](/azure/devops/)
+- [Documentation Azure](/azure/)
+- [Documentation Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
 Découvrez les autres avantages inclus dans votre abonnement. Rendez-vous sur [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).

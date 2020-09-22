@@ -7,12 +7,12 @@ ms.assetid: d1257931-392a-4a65-bf26-177737505122
 ms.date: 06/24/2020
 ms.topic: how-to
 description: En savoir plus sur et installer des applications Microsoft 365 pour l’entreprise
-ms.openlocfilehash: 0249f2c97ba93c49985629143dabb842447c196f
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 88570806d90ff022ede6f39c16325d8696ef0f9e
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561250"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006122"
 ---
 # <a name="microsoft-365-apps-for-enterprise-in-visual-studio-subscriptions"></a>Applications Microsoft 365 pour l’entreprise dans les abonnements Visual Studio
 Les applications Microsoft 365 pour l’entreprise (anciennement Office 365 Pro plus) sont disponibles dans les abonnements Visual Studio sélectionnés. 
@@ -78,13 +78,13 @@ Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à
 - Vous avez des questions concernant l’environnement IDE Visual Studio, Azure DevOps ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentation Azure](https://docs.microsoft.com/azure/)
-- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentation de Visual Studio](/visualstudio/)
+- [Documentation Azure DevOps](/azure/devops/)
+- [Documentation Azure](/azure/)
+- [Documentation Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
 Veillez à activer ces avantages intéressants pour tirer le meilleur parti de votre abonnement Visual Studio :
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
-- [Crédit individuel Azure DevTest](vs-azure.md) Si vous envisagez de développer des applications pour Office, vous souhaiterez activer votre [abonnement Office Developer](vs-office-dev.md)
+- [Crédit individuel Azure DevTest](vs-azure.md) Si vous envisagez de développer des applications pour Office, vous souhaiterez activer votre [abonnement Office Developer](./vs-m365.md)

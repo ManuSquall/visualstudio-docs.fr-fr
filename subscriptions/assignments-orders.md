@@ -7,12 +7,12 @@ ms.assetid: 83a9162a-b9e7-43a4-b07f-6c1fd8580f78
 ms.date: 03/02/2020
 ms.topic: conceptual
 description: Découvrez en quoi consiste la responsabilité des administrateurs pour le suivi des affectations d’utilisateurs et le traitement des commandes.
-ms.openlocfilehash: 200a6d5f83e762bb91451a0d8d7a1871afab4304
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bfb45b7beae45a0c90bf0a860c84a5b1b6f5830a
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80232697"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005751"
 ---
 # <a name="track-user-assignment-and-process-orders"></a>Effectuer le suivi de l’attribution des utilisateurs et traiter les commandes
 Les administrateurs d’abonnements Visual Studio sont censés effectuer le suivi de l’utilisation de Visual Studio et traiter les commandes de toute augmentation d’utilisation selon la planification indiquée dans leur contrat de licence en volume ou dans leur Contrat de Fourniture de Produits et de Services Microsoft. Le nouveau portail d’administration des abonnements Visual Studio facilite cette opération grâce à un dispositif de suivi utile qui affiche vos licences disponibles et utilisées.
@@ -38,10 +38,10 @@ Vous pouvez assigner des abonnements par le biais de programmes tels que Open Li
 Les contrats Entreprise (EA), MPSA et Select Plus Microsoft vous donnent toute la souplesse nécessaire pour utiliser et concéder sous licence le logiciel Visual Studio au fil du temps. Les administrateurs Visual Studio doivent effectuer une commande de chiffre d’affaires annuel pour ramener leurs licences logicielles à l’utilisation maximale établie au cours de la période du contrat.
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentation Azure](https://docs.microsoft.com/azure/)
-- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentation de Visual Studio](/visualstudio/)
+- [Documentation Azure DevOps](/azure/devops/)
+- [Documentation Azure](/azure/)
+- [Documentation Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
 En savoir plus sur les responsabilités des administrateurs :
@@ -49,4 +49,3 @@ En savoir plus sur les responsabilités des administrateurs :
 - [Inventaire de l’environnement de préproduction](admin-inventory.md)
 - [Gérer des grandes équipes et des prestataires externes](manage-teams.md)
 - Utiliser le rapport [Utilisation maximale](maximum-usage.md) pour suivre les engagements d’achat
-

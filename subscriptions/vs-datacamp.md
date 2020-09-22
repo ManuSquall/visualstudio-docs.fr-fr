@@ -7,12 +7,12 @@ ms.assetid: fc33d419-78cf-485e-b558-5b7efa900f14
 ms.date: 04/17/2020
 ms.topic: how-to
 description: Découvrez l’abonnement DataCamp Training inclus dans certains abonnements Visual Studio.
-ms.openlocfilehash: b164dc4be4a06151b970ecd5522b82bde9aaeec7
-ms.sourcegitcommit: f8d14fab194fcb30658f23f700da07d35ffc9d4a
+ms.openlocfilehash: 67fa9a68a22ee909c4c483246be7dc26c789c5f0
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89561492"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91006330"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Avantage DataCamp Training dans les abonnements Visual Studio
 Les abonnements Visual Studio éligibles incluent des abonnements à DataCamp.  Avec DataCamp, vous pouvez acquérir toutes les compétences qui vous sont nécessaires en science des données, confortablement devant votre navigateur. Vous devez choisir quand et ce que vous voulez apprendre. Sans aucun logiciel à installer ni aucune configuration matérielle requise spéciale, l’apprentissage de la science des données est plus facile que jamais.
@@ -84,10 +84,10 @@ Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentation Azure](https://docs.microsoft.com/azure/)
-- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+- [Documentation de Visual Studio](/visualstudio/)
+- [Documentation Azure DevOps](/azure/devops/)
+- [Documentation Azure](/azure/)
+- [Documentation Microsoft 365](/microsoft-365/)
 
 ## <a name="next-steps"></a>Étapes suivantes
 Découvrez d’autres opportunités de développement professionnel dans votre abonnement :

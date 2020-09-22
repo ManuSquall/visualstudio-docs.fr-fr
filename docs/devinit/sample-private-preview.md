@@ -3,7 +3,7 @@ title: Version préliminaire privée
 description: Exemples de personnalisations utilisés dans GitHub Codespaces Visual Studio Preview bêta référentiel.
 ms.date: 08/28/2020
 ms.topic: reference
-author: andster
+author: andysterland
 ms.author: andster
 manager: jillfra
 ms.workload:
@@ -11,18 +11,18 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: c240cee6595f060c5347cafc4379a7fc27c8d310
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 61ef0a0575e5b86ab7cbd7c17e37c552c0c14388
+ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809089"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "91005630"
 ---
 # <a name="private-preview"></a>Préversion privée
 
 Cet exemple montre comment personnaliser un codeSpace pour Visual Studio pour qu’il ait les mêmes fonctionnalités que la bêta [GitHub Codespaces](https://github.com/features/codespaces) privée initiale.
 
-## <a name="devinitjson"></a>.devinit.js
+## <a name="devinitjson"></a>.devinit.json
 
 Contenu du [_.devinit.jssur_](devinit-json.md) le fichier. Ce fichier doit se trouver dans le même dossier que _.devcontainer.js_.
 
