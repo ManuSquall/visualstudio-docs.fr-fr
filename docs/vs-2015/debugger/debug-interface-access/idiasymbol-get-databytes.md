@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bb0946c586c7b9ac3bb8907a9b5eb907d8f3ae70
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64858498"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840089"
 ---
-# <a name="idiasymbolgetdatabytes"></a>IDiaSymbol::get_dataBytes
+# <a name="idiasymbolget_databytes"></a>IDiaSymbol::get_dataBytes
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Récupère les octets de données d’un symbole OEM.  
@@ -37,26 +37,26 @@ HRESULT get_dataBytes ( 
   
 #### <a name="parameters"></a>Paramètres  
  `cbData`  
- [in] Taille de la mémoire tampon devant contenir les données.  
+ dans Taille de la mémoire tampon pour stocker les données.  
   
  `pcbData`  
- [out] Retourne le nombre d’octets écrits, ou, si le `data` paramètre est `NULL`, retourne le nombre d’octets disponibles.  
+ à Retourne le nombre d’octets écrits ou, si le `data` paramètre a la valeur `NULL` , retourne le nombre d’octets disponibles.  
   
  `data[]`  
- [out] Une mémoire tampon est remplie avec les octets de données.  
+ [out,] Mémoire tampon qui est remplie avec les octets de données.  
   
 ## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  
+ En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.  
   
 > [!NOTE]
-> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
+> Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
   
-|Prérequis|Description|  
+|Condition requise|Description|  
 |-----------------|-----------------|  
 |En-tête :|dia2.h|  
-|Version :|DIA SDK v7.0|  
+|Version :|DIA SDK v 7.0|  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

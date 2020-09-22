@@ -1,5 +1,5 @@
 ---
-title: Comment créer un manifeste de produit | Microsoft Docs
+title: Créer un manifeste de produit | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0f4302756b089376eca8926453399768faaf58f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 97ec49438ce2382336b1b8a6f8355bd092486c2d
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382508"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852216"
 ---
 # <a name="how-to-create-a-product-manifest"></a>Guide pratique pour créer un manifeste de produit
 Pour déployer des composants requis pour votre application, vous pouvez créer un package de programme d’amorçage. Un package du programme d’amorçage contient un fichier manifeste de produit unique, mais un manifeste de package pour chaque paramètre régional. Le manifeste du package contient des aspects spécifiques de la localisation de votre package. Cela comprend les chaînes, les contrats de licence utilisateur final et les modules linguistiques.
@@ -114,7 +114,7 @@ Pour déployer des composants requis pour votre application, vous pouvez créer 
 
 12. Déplacez le dossier *C:\package* vers le répertoire du programme d’amorçage de Visual Studio. Pour Visual Studio 2010, il s’agit du répertoire *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages*
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
  Le manifeste du produit contient des instructions d’installation pour les composants requis personnalisés.
 
 ```xml
