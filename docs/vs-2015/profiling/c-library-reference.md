@@ -12,13 +12,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b5b6a44ac8e97477a8e4f4789b10135ac3f989a0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433781"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839845"
 ---
-# <a name="c-library-reference"></a>Informations de référence sur la bibliothèque C
+# <a name="c-library-reference"></a>Informations de référence sur la bibliothèque C
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette section contient des informations de référence sur le kit SDK du visualiseur concurrentiel.  

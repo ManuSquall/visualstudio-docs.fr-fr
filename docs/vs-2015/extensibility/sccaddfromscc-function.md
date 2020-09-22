@@ -1,5 +1,5 @@
 ---
-title: Fonction SccAddFromScc | Microsoft Docs
+title: SccAddFromScc fonction) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,16 +13,16 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ccf3a25bda14cf98fdba4a58b0032444badc4c4a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432496"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839913"
 ---
 # <a name="sccaddfromscc-function"></a>Fonction SccAddFromScc
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Cette fonction permet à l’utilisateur rechercher des fichiers qui se trouvent déjà dans le système de contrôle source et apportez par la suite de ces fichiers faisant partie du projet actuel. Par exemple, cette fonction peut obtenir un fichier d’en-tête commun dans le projet actuel sans copier le fichier. Le tableau de résultats de fichiers, `lplpFileNames`, contient la liste des fichiers que l’utilisateur souhaite ajouter au projet IDE.  
+Cette fonction permet à l’utilisateur de rechercher des fichiers qui se trouvent déjà dans le système de contrôle de code source, puis de faire de ces fichiers une partie du projet actuel. Par exemple, cette fonction peut obtenir un fichier d’en-tête commun dans le projet actif sans copier le fichier. Le tableau de retour des fichiers, `lplpFileNames` , contient la liste des fichiers que l’utilisateur souhaite ajouter au projet IDE.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -37,38 +37,38 @@ SCCRTN SccAddFromScc (
   
 #### <a name="parameters"></a>Paramètres  
  pvContext  
- [in] La structure de contexte de plug-in de contrôle de source.  
+ dans Structure de contexte du plug-in de contrôle de code source.  
   
  hWnd  
- [in] Handle vers la fenêtre de l’IDE que le plug-in de contrôle de code source peut utiliser en tant que parent pour les boîtes de dialogue qu’il fournit.  
+ dans Handle de la fenêtre IDE que le plug-in de contrôle de code source peut utiliser comme parent pour toutes les boîtes de dialogue qu’il fournit.  
   
  lpnFiles  
- [in, out] Une mémoire tampon pour le nombre de fichiers qui sont ajoutés dans. (Il s’agit de `NULL` si la mémoire vers laquelle pointe `lplpFileNames` doit être libéré. Consultez la section Notes pour plus d’informations).  
+ [in, out] Mémoire tampon pour le nombre de fichiers qui sont ajoutés dans. (C’est `NULL` le cas si la mémoire pointée par `lplpFileNames` doit être libérée. Pour plus d’informations, consultez la section Notes.)  
   
  lplpFileNames  
- [in, out] Un tableau de pointeurs vers tous les noms de fichier sans chemin de répertoire. Ce tableau est alloué et libéré par le plug-in de contrôle de code source. Si `lpnFiles` = 1 et `lplpFileNames` n’est pas `NULL`, le premier nom dans le tableau vers lequel pointe `lplpFileNames` contient le dossier de destination.  
+ [in, out] Tableau de pointeurs vers tous les noms de fichiers sans chemins d’accès aux répertoires. Ce tableau est alloué et libéré par le plug-in de contrôle de code source. Si `lpnFiles` = 1 et `lplpFileNames` n’est pas `NULL` , le premier nom dans le tableau pointé par `lplpFileNames` contient le dossier de destination.  
   
 ## <a name="return-value"></a>Valeur de retour  
- L’implémentation de plug-in de contrôle de source de cette fonction est censée retourner l’une des valeurs suivantes :  
+ L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :  
   
-|Value|Description|  
+|Valeur|Description|  
 |-----------|-----------------|  
-|SCC_OK|Les fichiers ont été correctement situés et ajoutés au projet.|  
-|SCC_I_OPERATIONCANCELED|Opération a été annulée avec aucun effet.|  
+|SCC_OK|Les fichiers ont été correctement localisés et ajoutés au projet.|  
+|SCC_I_OPERATIONCANCELED|L’opération a été annulée sans effet.|  
 |SCC_I_RELOADFILE|Un fichier ou un projet doit être rechargé.|  
   
-## <a name="remarks"></a>Notes  
- L’IDE appelle cette fonction. Si le plug-in de contrôle de code source prend en charge la spécification d’un dossier local de destination, l’IDE passe `lpnFiles` = 1 et transmet le nom de dossier local dans `lplpFileNames`.  
+## <a name="remarks"></a>Remarques  
+ L’IDE appelle cette fonction. Si le plug-in de contrôle de code source prend en charge la spécification d’un dossier de destination local, l’IDE passe `lpnFiles` à 1 et transmet le nom du dossier local dans `lplpFileNames` .  
   
- Lors de l’appel à la `SccAddFromScc` fonction retourne, le plug-in a attribué des valeurs à `lpnFiles` et `lplpFileNames`, allocation de mémoire pour le tableau de nom de fichier si nécessaire (Notez que cette allocation remplace le pointeur dans `lplpFileNames`). Le plug-in de contrôle de code source est chargé de placer tous les fichiers dans le répertoire de l’utilisateur ou dans le dossier de désignation spécifié. L’IDE ajoute ensuite les fichiers au projet IDE.  
+ Lorsque l’appel à la `SccAddFromScc` fonction retourne, le plug-in a affecté des valeurs à `lpnFiles` et `lplpFileNames` , en allouant la mémoire pour le tableau de noms de fichiers si nécessaire (Notez que cette allocation remplace le pointeur dans `lplpFileNames` ). Le plug-in de contrôle de code source est chargé de placer tous les fichiers dans le répertoire de l’utilisateur ou dans le dossier de désignation spécifié. L’IDE ajoute ensuite les fichiers au projet IDE.  
   
- Enfin, l’IDE appelle cette fonction, une deuxième fois, en passant `NULL` pour `lpnFiles`. Ceci est interprété comme un signal spécial par le plug-in pour libérer la mémoire allouée pour le tableau de nom de fichier dans le contrôle de code source `lplpFileNames``.`  
+ Enfin, l’IDE appelle cette fonction une deuxième fois, en passant `NULL` pour `lpnFiles` . Cela est interprété comme un signal spécial par le plug-in de contrôle de code source pour libérer la mémoire allouée pour le tableau de noms de fichiers dans `lplpFileNames``.`  
   
- `lplpFileNames` est un `char ***` pointeur. Le plug-in de contrôle de code source place un pointeur vers un tableau de pointeurs vers des noms de fichiers, par conséquent, en passant la liste de la manière standard pour cette API.  
+ `lplpFileNames` est un `char ***` pointeur. Le plug-in de contrôle de code source place un pointeur vers un tableau de pointeurs vers des noms de fichiers, transmettant ainsi la liste de manière standard pour cette API.  
   
 > [!NOTE]
-> Les versions initiales de l’API VSSCI n’a pas fourni un moyen d’indiquer le projet cible pour les fichiers ajoutés. Pour en tenir compte, la sémantique de le `lplpFIleNames` paramètre ont été améliorées pour le rendre un paramètre d’entrée/sortie plutôt que d’un paramètre de sortie. Si seul un seul fichier est spécifié, autrement dit, la valeur vers laquelle pointe `lpnFiles` = 1, le premier élément du `lplpFileNames` contient le dossier cible. Pour utiliser cette nouvelle sémantique, les appels de l’IDE le `SccSetOption` fonctionne avec le `nOption`paramètre défini sur `SCC_OPT_SHARESUBPROJ`. Si un plug-in de contrôle de code source ne prend pas en charge la sémantique, elle retourne `SCC_E_OPTNOTSUPPORTED`. Faire c’est le cas désactive l’utilisation de la **à partir du contrôle de code Source** fonctionnalité. Si un plug-in prend en charge la **à partir du contrôle de code Source** fonctionnalité (`SCC_CAP_ADDFROMSCC`), puis il doit prendre en charge la sémantique de nouveau et retourner `SCC_I_SHARESUBPROJOK`.  
+> Les versions initiales de l’API VSSCI n’offraient pas de moyen d’indiquer le projet cible pour les fichiers ajoutés. Pour ce faire, la sémantique du `lplpFIleNames` paramètre a été améliorée pour en faire un paramètre in/out plutôt qu’un paramètre de sortie. Si un seul fichier est spécifié, autrement dit, la valeur désignée par `lpnFiles` = 1, le premier élément de `lplpFileNames` contient le dossier cible. Pour utiliser cette nouvelle sémantique, l’IDE appelle la `SccSetOption` fonction avec le `nOption` paramètre défini sur `SCC_OPT_SHARESUBPROJ` . Si un plug-in de contrôle de code source ne prend pas en charge la sémantique, il retourne `SCC_E_OPTNOTSUPPORTED` . Cela désactive l’utilisation de la fonctionnalité **Ajouter à partir du contrôle de code source** . Si un plug-in prend en charge la fonctionnalité **Ajouter à partir du contrôle de code source** ( `SCC_CAP_ADDFROMSCC` ), il doit prendre en charge la nouvelle sémantique et retourner `SCC_I_SHARESUBPROJOK` .  
   
 ## <a name="see-also"></a>Voir aussi  
- [Fonctions d’API de plug-in de contrôle de source](../extensibility/source-control-plug-in-api-functions.md)   
+ [Fonctions de l’API du plug-in de contrôle de code source](../extensibility/source-control-plug-in-api-functions.md)   
  [SccSetOption](../extensibility/sccsetoption-function.md)

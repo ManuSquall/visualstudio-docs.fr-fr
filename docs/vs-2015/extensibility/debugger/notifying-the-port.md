@@ -1,5 +1,5 @@
 ---
-title: Notification du Port | Microsoft Docs
+title: Notification du port | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,42 +11,42 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8cf3969dda783882f24d02a748f345cdb66fe413
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63410069"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840094"
 ---
 # <a name="notifying-the-port"></a>Notification du port
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Après avoir lancé un programme, le port doit être averti, comme suit :  
+Après le lancement d’un programme, le port doit être notifié, comme suit :  
   
-1. Lorsqu’un port reçoit un nouveau nœud de programme, il renvoie un événement de création de programme à la session de débogage. L’événement s’accompagne d’une interface qui représente le programme.  
+1. Lorsqu’un port reçoit un nouveau nœud de programme, il renvoie un événement de création de programme à la session de débogage. L’événement comporte une interface qui représente le programme.  
   
-2. La session de débogage interroge le programme pour l’identificateur d’un moteur de débogage (dé) qui permettre attacher à.  
+2. La session de débogage interroge le programme sur l’identificateur d’un moteur de débogage (DE) pouvant être attaché à.  
   
-3. La session de débogage vérifie si le DE figure dans la liste DEs autorisée pour ce programme. La session de débogage obtient cette liste à partir des paramètres de programme actif de la solution, à l’origine passés par le package de débogage.  
+3. La session de débogage vérifie si le DE est dans la liste des autorisés pour ce programme. La session de débogage obtient cette liste à partir des paramètres de programme actifs de la solution, qui lui sont passés à l’origine par le package de débogage.  
   
-    Le DE doit se trouver sur la liste autorisée, sans quoi le DE ne sera pas attaché au programme.  
+    Le DE doit figurer dans la liste autorisée, sinon le DE ne sera pas attaché au programme.  
   
-   Par programmation, lorsqu’un port reçoit tout d’abord un nouveau nœud de programme, il crée un [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) interface pour représenter le programme.  
-  
-> [!NOTE]
-> Il ne faut pas confondre avec le `IDebugProgram2` interface créée ultérieurement par le moteur de débogage (dé).  
-  
- Le port envoie un [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) événement de création de programme au Gestionnaire de débogage de session (SDM) au moyen d’un COM `IConnectionPoint` interface.  
+   Par programmation, lorsqu’un port reçoit d’abord un nouveau nœud de programme, il crée une interface [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) pour représenter le programme.  
   
 > [!NOTE]
-> Il ne faut pas confondre avec le `IDebugProgramCreateEvent2` interface, qui est envoyée plus tard par l’Allemagne.  
+> Cela ne doit pas être confondu avec l' `IDebugProgram2` interface créée ultérieurement par le moteur de débogage (de).  
   
- Avec l’interface d’événement proprement dit, le port envoie le [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md), [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md), et [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) interfaces qui représentent le port, traitement, et programmer, respectivement. Les appels SDM [IDebugProgram2::GetEngineInfo](../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md) pour obtenir le GUID de l’Allemagne qui peut déboguer le programme. Le GUID a été obtenu à l’origine à partir de la [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) interface.  
+ Le port envoie un événement de création de programme [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) au gestionnaire de débogage de session (SDM) au moyen d’une `IConnectionPoint` interface com.  
   
- Le SDM vérifie si le DE figure dans la liste DEs autorisée. Le SDM obtient cette liste à partir des paramètres de programme actif de la solution, à l’origine passés par le package de débogage. Le DE doit se trouver sur la liste autorisée, sans quoi il ne sera pas attaché au programme.  
+> [!NOTE]
+> Cela ne doit pas être confondu avec l' `IDebugProgramCreateEvent2` interface, qui est envoyée plus tard par le de.  
   
- Une fois que l’identité de l’Allemagne est connue, le SDM est prêt à attacher au programme.  
+ Avec l’interface d’événement elle-même, le port envoie les interfaces [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md), [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)et [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) , qui représentent respectivement le port, le processus et le programme. Le SDM appelle [IDebugProgram2 :: GetEngineInfo](../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md) pour récupérer le GUID du qui peut déboguer le programme. Le GUID a été obtenu à l’origine à partir de l’interface [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) .  
+  
+ Le SDM vérifie si le DE est dans la liste des autorisées. Le SDM obtient cette liste à partir des paramètres de programme actifs de la solution, qui lui sont passés à l’origine par le package de débogage. La valeur DE doit figurer dans la liste autorisée, sinon elle ne sera pas attachée au programme.  
+  
+ Une fois que l’identité du est connue, le SDM est prêt à l’attacher au programme.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Lancement d’un programme](../../extensibility/debugger/launching-a-program.md)   
- [Attachement après un lancement](../../extensibility/debugger/attaching-after-a-launch.md)   
+ [Attacher après un lancement](../../extensibility/debugger/attaching-after-a-launch.md)   
  [Tâches de débogage](../../extensibility/debugger/debugging-tasks.md)

@@ -1,5 +1,5 @@
 ---
-title: Exposition des propriétés dans la fenêtre Propriétés | Microsoft Docs
+title: Exposition des propriétés à la fenêtre Propriétés | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,30 +13,30 @@ caps.latest.revision: 37
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c28a0520680951920ee19e91f3df098066f432dd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432120"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839393"
 ---
 # <a name="exposing-properties-to-the-properties-window"></a>Exposition des propriétés dans la fenêtre Propriétés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Cette procédure pas à pas expose les propriétés publiques d’un objet pour le **propriétés** fenêtre. Les modifications apportées à ces propriétés sont répercutées dans le **propriétés** fenêtre.  
+Cette procédure pas à pas expose les propriétés publiques d’un objet dans la fenêtre **Propriétés** . Les modifications que vous apportez à ces propriétés sont répercutées dans la fenêtre **Propriétés** .  
   
 ## <a name="prerequisites"></a>Prérequis  
- À partir de Visual Studio 2015, vous n’installez pas le Kit de développement logiciel Visual Studio à partir du centre de téléchargement. Il est inclus comme fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le kit SDK VS par la suite. Pour plus d’informations, consultez [l’installation de Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+ À compter de Visual Studio 2015, vous n’installez pas le kit de développement logiciel (SDK) Visual Studio à partir du centre de téléchargement. Il est inclus en tant que fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le kit de développement logiciel (SDK) Visual Studio plus tard. Pour plus d’informations, consultez [installation du kit de développement logiciel (SDK) Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="exposing-properties-to-the-properties-window"></a>Exposition des propriétés dans la fenêtre Propriétés  
- Dans cette section, vous créez une fenêtre Outil personnalisée et afficher les propriétés publiques de l’objet de volet de fenêtre associée dans le **propriétés** fenêtre.  
+ Dans cette section, vous allez créer une fenêtre outil personnalisée et afficher les propriétés publiques de l’objet volet de fenêtre associé dans la fenêtre **Propriétés** .  
   
-#### <a name="to-expose-properties-to-the-properties-window"></a>Pour exposer les propriétés à la fenêtre Propriétés  
+#### <a name="to-expose-properties-to-the-properties-window"></a>Pour exposer des propriétés au Fenêtre Propriétés  
   
-1. Chaque extension de Visual Studio commence par un projet de déploiement VSIX qui contiendra les ressources de l’extension. Créer un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projet VSIX nommé `MyObjectPropertiesExtension`. Vous pouvez trouver le modèle de projet VSIX dans le **nouveau projet** boîte de dialogue sous **Visual c# / extensibilité**.  
+1. Chaque extension Visual Studio commence par un projet de déploiement VSIX qui contiendra les ressources d’extension. Créez un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projet VSIX nommé `MyObjectPropertiesExtension` . Vous pouvez trouver le modèle de projet VSIX dans la boîte de dialogue **nouveau projet** sous **Visual C#/extensibilité**.  
   
-2. Ajouter une fenêtre outil en ajoutant un modèle d’élément de fenêtre d’outil personnalisé nommé `MyToolWindow`. Dans le **l’Explorateur de solutions**, cliquez sur le nœud du projet et sélectionnez **Ajouter / nouvel élément**. Dans le **boîte de dialogue Ajouter un nouvel élément**, accédez à **éléments Visual c# / extensibilité** et sélectionnez **fenêtre d’outil personnalisé**. Dans le **nom** en bas de la boîte de dialogue, modifiez le nom de fichier à `MyToolWindow.cs`. Pour plus d’informations sur la création d’une fenêtre Outil personnalisée, consultez [création d’une Extension avec une fenêtre outil](../extensibility/creating-an-extension-with-a-tool-window.md).  
+2. Ajoutez une fenêtre outil en ajoutant un modèle d’élément de fenêtre outil personnalisé nommé `MyToolWindow` . Dans le **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud du projet et sélectionnez **Ajouter/nouvel élément**. Dans la **boîte de dialogue Ajouter un nouvel élément**, accédez à **éléments Visual C#/extensibilité** , puis sélectionnez **fenêtre outil personnalisée**. Dans le champ **nom** en bas de la boîte de dialogue, remplacez le nom de fichier par `MyToolWindow.cs` . Pour plus d’informations sur la création d’une fenêtre outil personnalisée, consultez [création d’une extension avec une fenêtre outil](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
-3. Ouvrez MyToolWindow.cs et ajoutez le code suivant à l’aide d’instruction :  
+3. Ouvrez MyToolWindow.cs et ajoutez l’instruction using suivante :  
   
     ```  
     using System.Collections;  
@@ -89,24 +89,24 @@ Cette procédure pas à pas expose les propriétés publiques d’un objet pour 
     }  
     ```  
   
-     Le `TrackSelection` propriété utilise `GetService` pour obtenir un `STrackSelection` service, qui fournit un <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> interface. Le `OnToolWindowCreated` Gestionnaire d’événements et `SelectList` méthode créent ensemble une liste d’objets sélectionnés qui contient uniquement l’outil fenêtre volet objet lui-même. Le `UpdateSelection` méthode indique à la **propriétés** fenêtre pour afficher les propriétés publiques du volet de fenêtre outil.  
+     La `TrackSelection` propriété utilise `GetService` pour obtenir un `STrackSelection` service, qui fournit une <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> interface. Le `OnToolWindowCreated` Gestionnaire d’événements et la `SelectList` méthode créent ensemble une liste d’objets sélectionnés qui contient uniquement l’objet du volet de la fenêtre outil lui-même. La `UpdateSelection` méthode indique à la fenêtre **Propriétés** d’afficher les propriétés publiques du volet de la fenêtre outil.  
   
 6. Générez le projet et commencez le débogage. L’instance expérimentale de Visual Studio doit apparaître.  
   
-7. Si le **propriétés** fenêtre n’est pas visible, ouvrez-le en appuyant sur F4.  
+7. Si la fenêtre **Propriétés** n’est pas visible, ouvrez-la en appuyant sur F4.  
   
-8. Ouvrez le **MyToolWindow** fenêtre. Vous pouvez le trouver dans **vue / autres Windows**.  
+8. Ouvrez la fenêtre **MyToolWindow** . Vous pouvez le trouver dans **affichage/autres fenêtres**.  
   
-     La fenêtre s’ouvre et les propriétés publiques du volet de fenêtre s’affichent dans le **propriétés** fenêtre.  
+     La fenêtre s’ouvre et les propriétés publiques du volet de la fenêtre s’affichent dans la fenêtre **Propriétés** .  
   
-9. Modifier le **légende** propriété dans le **propriétés** fenêtre à **mes propriétés de l’objet**.  
+9. Remplacez la propriété **Caption** de la fenêtre **Propriétés** par **Mes propriétés d’objet**.  
   
-     La légende de fenêtre MyToolWindow change en conséquence.  
+     La légende de la fenêtre MyToolWindow change en conséquence.  
   
-## <a name="exposing-tool-window-properties"></a>Exposition de propriétés de la fenêtre outil  
- Dans cette section, vous ajoutez une fenêtre outil et exposez ses propriétés. Les modifications que vous apportez aux propriétés sont répercutées dans le **propriétés** fenêtre.  
+## <a name="exposing-tool-window-properties"></a>Exposition des propriétés de la fenêtre outil  
+ Dans cette section, vous allez ajouter une fenêtre outil et exposer ses propriétés. Les modifications que vous apportez aux propriétés sont répercutées dans la fenêtre **Propriétés** .  
   
-#### <a name="to-expose-tool-window-properties"></a>Pour exposer les propriétés de la fenêtre outil  
+#### <a name="to-expose-tool-window-properties"></a>Pour exposer les propriétés d’une fenêtre outil  
   
 1. Ouvrez MyToolWindow.cs et ajoutez la propriété booléenne publique IsChecked à la classe MyToolWindow.  
   
@@ -125,7 +125,7 @@ Cette procédure pas à pas expose les propriétés publiques d’un objet pour 
     }  
     ```  
   
-     Cette propriété obtient son état à partir de la case à cocher WPF que vous créerez ultérieurement.  
+     Cette propriété obtient son état à partir de la case à cocher WPF que vous allez créer ultérieurement.  
   
 2. Ouvrez MyToolWindowControl.xaml.cs et remplacez le constructeur MyToolWindowControl par le code suivant.  
   
@@ -139,7 +139,7 @@ Cette procédure pas à pas expose les propriétés publiques d’un objet pour 
     }  
     ```  
   
-     Cela donne `MyToolWindowControl` l’accès à la `MyToolWindow` volet.  
+     Cela donne `MyToolWindowControl` accès au `MyToolWindow` volet.  
   
 3. Dans MyToolWindow.cs, modifiez le `MyToolWindow` constructeur comme suit :  
   
@@ -147,11 +147,11 @@ Cette procédure pas à pas expose les propriétés publiques d’un objet pour 
     base.Content = new MyToolWindowControl(this);  
     ```  
   
-4. Modifier l’affichage de conception de MyToolWindowControl.  
+4. Passez en mode création de MyToolWindowControl.  
   
-5. Supprimez le bouton et ajoutez une case à cocher à partir de la **boîte à outils** vers l’angle supérieur gauche.  
+5. Supprimez le bouton et ajoutez une case à cocher de la **boîte à outils** dans le coin supérieur gauche.  
   
-6. Ajoutez les événements Checked et Unchecked. Sélectionnez la case à cocher en mode design. Dans le **propriétés** fenêtre, cliquez sur le bouton de gestionnaires d’événements (en haut à droite de la **propriétés** fenêtre). Rechercher **Checked** et type **checkbox_Checked** dans la zone de texte, puis recherchez **Unchecked** et type **checkbox_Unchecked** dans la zone de texte.  
+6. Ajoutez les événements cochés et non vérifiés. Activez la case à cocher en mode conception. Dans la fenêtre **Propriétés** , cliquez sur le bouton gestionnaires d’événements (en haut à droite de la fenêtre **Propriétés** ). Recherchez **activé** et tapez **checkbox_Checked** dans la zone de texte, puis recherchez **non coché** et tapez **checkbox_Unchecked** dans la zone de texte.  
   
 7. Ajoutez les gestionnaires d’événements de case à cocher :  
   
@@ -170,21 +170,21 @@ Cette procédure pas à pas expose les propriétés publiques d’un objet pour 
   
 8. Générez le projet et commencez le débogage.  
   
-9. Dans l’instance expérimentale, ouvrez le **MyToolWindow** fenêtre.  
+9. Dans l’instance expérimentale, ouvrez la fenêtre **MyToolWindow** .  
   
-     Rechercher les propriétés de la fenêtre dans le **propriétés** fenêtre. Le **IsChecked** propriété apparaît en bas de la fenêtre, sous le **propriétés mon** catégorie.  
+     Recherchez les propriétés de la fenêtre dans la fenêtre **Propriétés** . La propriété **IsChecked** s’affiche au bas de la fenêtre, sous la catégorie **Mes propriétés** .  
   
-10. Activer la case à cocher dans la **MyToolWindow** fenêtre. **IsChecked** dans le **propriétés** fenêtre change pour **True**. Désactivez la case à cocher dans la **MyToolWindow** fenêtre. **IsChecked** dans le **propriétés** fenêtre change pour **False**. Modifiez la valeur de **IsChecked** dans le **propriétés** fenêtre. La case à cocher dans la **MyToolWindow** des modifications de fenêtre pour correspondre à la nouvelle valeur.  
+10. Activez la case à cocher dans la fenêtre **MyToolWindow** . **IsChecked** dans la fenêtre **Propriétés** prend la **valeur true**. Désactivez la case à cocher dans la fenêtre **MyToolWindow** . **IsChecked** dans la fenêtre **Propriétés** devient **false**. Modifiez la valeur de **IsChecked** dans la fenêtre **Propriétés** . La case à cocher dans la fenêtre **MyToolWindow** est modifiée pour correspondre à la nouvelle valeur.  
   
     > [!NOTE]
-    > Si vous devez supprimer un objet qui est affiché dans le **propriétés** fenêtre, appelez `OnSelectChange` avec un `null` conteneur de sélection premier. Après avoir supprimé la propriété ou l’objet, vous pouvez modifier pour un conteneur de sélection qui a mis à jour <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectableObjects%2A> et <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectedObjects%2A> répertorie.  
+    > Si vous devez supprimer un objet affiché dans la fenêtre **Propriétés** , appelez `OnSelectChange` d’abord avec un `null` conteneur de sélection. Après avoir supprimé la propriété ou l’objet, vous pouvez passer à un conteneur de sélection qui contient <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectableObjects%2A> des listes et mises à jour <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectedObjects%2A> .  
   
 ## <a name="changing-selection-lists"></a>Modification des listes de sélection  
- Dans cette section, vous ajoutez une liste de sélection pour une classe de propriété de base et permet de choisir quelle liste de sélection pour afficher l’interface de fenêtre outil.  
+ Dans cette section, vous ajoutez une liste de sélection pour une classe de propriété de base et utilisez l’interface de la fenêtre outil pour choisir la liste de sélection à afficher.  
   
-#### <a name="to-change-selection-lists"></a>Pour modifier les listes de sélection  
+#### <a name="to-change-selection-lists"></a>Pour modifier des listes de sélection  
   
-1. Ouvrez MyToolWindow.cs et ajoutez une classe publique nommée `Simple`.  
+1. Ouvrez MyToolWindow.cs et ajoutez une classe publique nommée `Simple` .  
   
     ```csharp  
     public class Simple  
@@ -209,7 +209,7 @@ Cette procédure pas à pas expose les propriétés publiques d’un objet pour 
     }  
     ```  
   
-2. Ajouter une propriété SimpleObject pour la classe MyToolWindow, ainsi que les deux méthodes pour basculer le **propriétés** sélection de fenêtre entre le volet de fenêtre et la `Simple` objet.  
+2. Ajoutez une propriété SimpleObject à la classe MyToolWindow, ainsi que deux méthodes pour basculer la sélection de la fenêtre **Propriétés** entre le volet de la fenêtre et l' `Simple` objet.  
   
     ```csharp  
     private Simple simpleObject = null;  
@@ -237,7 +237,7 @@ Cette procédure pas à pas expose les propriétés publiques d’un objet pour 
     }  
     ```  
   
-3. Dans MyToolWindowControl.cs, remplacez les gestionnaires de case à cocher avec ces lignes de code :  
+3. Dans MyToolWindowControl.cs, remplacez les gestionnaires de cases à cocher par ces lignes de code :  
   
     ```csharp  
     private void checkbox_Checked(object sender, RoutedEventArgs e)  
@@ -256,17 +256,17 @@ Cette procédure pas à pas expose les propriétés publiques d’un objet pour 
   
 4. Générez le projet et commencez le débogage.  
   
-5. Dans l’instance expérimentale, ouvrez le **MyToolWindow** fenêtre.  
+5. Dans l’instance expérimentale, ouvrez la fenêtre **MyToolWindow** .  
   
-6. Sélectionnez la case à cocher dans la **MyToolWindow** fenêtre. Le **propriétés** fenêtre affiche le `Simple` propriétés, de l’objet **SomeText** et **ReadOnly**. Désactivez la case à cocher. Les propriétés publiques de la fenêtre s’affichent dans le **propriétés** fenêtre.  
+6. Activez la case à cocher dans la fenêtre **MyToolWindow** . La fenêtre **Propriétés** affiche les `Simple` Propriétés de l’objet, **someText** et **ReadOnly**. Décochez la case. Les propriétés publiques de la fenêtre s’affichent dans la fenêtre **Propriétés** .  
   
     > [!NOTE]
-    > Le nom complet de **SomeText** est **mon texte**.  
+    > Le nom d’affichage de **someText** est **My Text**.  
   
-## <a name="best-practice"></a>Il est recommandé  
- Dans cette procédure pas à pas, <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> est implémenté afin que la collection d’objets sélectionnables et la collection d’objets sélectionnés sont la même collection. Seul l’objet sélectionné s’affiche dans la liste de l’Explorateur de propriétés. Pour une implémentation de ISelectionContainer plus complète, consultez les exemples de Reference.ToolWindow.  
+## <a name="best-practice"></a>Bonne pratique  
+ Dans cette procédure pas à pas, <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> est implémenté afin que la collection d’objets sélectionnable et la collection d’objets sélectionnée soient identiques. Seul l’objet sélectionné s’affiche dans la liste de l’Explorateur de propriétés. Pour une implémentation plus complète de ISelectionContainer, consultez les exemples Reference. ToolWindow.  
   
- Fenêtres Outil Visual Studio persistent entre les sessions de Visual Studio. Pour plus d’informations sur la conservation de l’état de la fenêtre outil, consultez <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>.  
+ Les fenêtres Outil Visual Studio sont conservées entre les sessions Visual Studio. Pour plus d’informations sur la persistance de l’état de la fenêtre outil, consultez <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> .  
   
 ## <a name="see-also"></a>Voir aussi  
  [Extension des propriétés et la fenêtre Propriétés](../extensibility/extending-properties-and-the-property-window.md)

@@ -1,5 +1,5 @@
 ---
-title: Ajout d’éléments à l’ajouter un nouvel élément boîtes de dialogue | Microsoft Docs
+title: Ajout d’éléments aux boîtes de dialogue Ajouter un nouvel élément | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,76 +11,76 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ecdacfc4ac65e0dc18512bfb56eb870545c66a9b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443476"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839453"
 ---
 # <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>Ajout d’éléments aux boîtes de dialogue Ajouter un élément
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Le processus d’ajout d’éléments à la **ajouter un nouvel élément** boîte de dialogue commence par les clés de Registre. Comme indiqué dans les entrées de Registre suivantes, la section AddItemTemplates contient le chemin d’accès et le nom du répertoire dans lequel les éléments mis à disposition dans le **ajouter un nouvel élément** boîte de dialogue sont placés.  
+Le processus d’ajout d’éléments à la boîte de dialogue **Ajouter un nouvel élément** démarre avec les clés de registre. Comme indiqué dans les entrées de Registre suivantes, la section AddItemTemplates contient le chemin d’accès et le nom du répertoire dans lequel les éléments rendus disponibles dans la boîte de dialogue **Ajouter un nouvel élément** sont placés.  
   
 > [!NOTE]
-> Le tableau qui suit immédiatement le segment de code contient des informations supplémentaires sur l’entrée de Registre.  
+> La table qui suit immédiatement le segment de code contient des informations supplémentaires sur l’entrée de registre.  
   
- Cette section se trouve sous [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0Exp\Projects].  
+ Cette section se trouve sous [HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio\14.0Exp\Projects].  
   
- Le premier GUID est le CLSID pour les projets de ce type ; le second GUID indique le type de projet enregistré pour les modèles d’ajouter des éléments.  
+ Le premier GUID est le CLSID pour les projets de ce type ; le deuxième GUID indique le type de projet inscrit pour les modèles Add Items.  
   
- \\{C061DB26-5833-11D2-96F5-000000000000}\AddItemTemplates\TemplateDirs\ {ACEF4EB2-57CF-11D2-96F4-000000000000}\1  
+ \\{C061DB26-5833-11D2-96F5-000000000000} \AddItemTemplates\TemplateDirs\ {ACEF4EB2-57CF-11D2-96F4-000000000000} \ 1  
   
- @="#6"  
+ @ = "#6"  
   
- « TemplatesDir « = »\<chemin d’installation de Visual Studio SDK\\\VSIntegration\\\SomeFolder\\\SomePackage\\\SomeProject\\\SomeProjectItems »  
+ "TemplatesDir" = " \< chemin d’installation du kit de développement Visual Studio SDK \\ \VSIntegration \\ \SomeFolder \\ \SomePackage \\ \SomeProject \SomeProjectItems \\ "  
   
- "SortPriority"=dword:00000064  
+ "SortPriority" = dword : 00000064  
   
-|Nom|Type|Données (fichier .rgs)|Description|  
+|Nom|Type|Données (à partir du fichier. RGS)|Description|  
 |----------|----------|-----------------------------|-----------------|  
-|@ (Par défaut)|REG_SZ|#%IDS_ADDITEM_TEMPLATES_ENTRY%|ID de ressource pour **ajouter un élément** modèles.|  
-|Val TemplatesDir|REG_SZ|%TEMPLATE_PATH%\ SomeProjectItems|Chemin d’accès des éléments de projet affiché dans la boîte de dialogue pour le **ajouter un nouvel élément** Assistant.|  
-|Val SortPriority|REG_DWORD|100 ([!INCLUDE[vcprx64](../../includes/vcprx64-md.md)])|Détermine l’ordre de tri dans le nœud d’arbre de fichiers affichés dans le **ajouter un nouvel élément** boîte de dialogue.|  
+|@ (Valeur par défaut)|REG_SZ|#% IDS_ADDITEM_TEMPLATES_ENTRY%|ID de ressource pour ajouter des modèles d' **élément** .|  
+|Val TemplatesDir|REG_SZ|% TEMPLATE_PATH% \ SomeProjectItems|Chemin d’accès aux éléments de projet affichés dans la boîte de dialogue de l’Assistant **Ajout d’un nouvel élément** .|  
+|Val SortPriority|REG_DWORD|100 ( [!INCLUDE[vcprx64](../../includes/vcprx64-md.md)] )|Détermine l’ordre de tri dans le nœud d’arbre des fichiers affichés dans la boîte de dialogue **Ajouter un nouvel élément** .|  
   
 > [!NOTE]
-> Les GUID pour les types de projets Visual c# et Visual Basic sont les suivantes :[!INCLUDE[csprcs](../../includes/csprcs-md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}  
+> Les GUID pour les types de projet Visual C# et Visual Basic sont les suivants : [!INCLUDE[csprcs](../../includes/csprcs-md.md)] {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC} [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] : {F184B08F-C81C-45F6-A57F-5ABD9991F28F}  
   
- Le répertoire répertoriés pour TemplateDirs, qui est % TEMPLATE_PATH%\SomeProjectItems, est le nœud sur le côté gauche de la **ajouter un nouvel élément** arborescence de boîte de dialogue. Dans l’arborescence des éléments supplémentaires sont basées sur le sous-répertoire dans le répertoire racine. Les fichiers disponibles à ajouter au projet sont les éléments dans le volet droit de la **ajouter un nouvel élément** boîte de dialogue.  
+ Le répertoire listé pour TemplateDirs, qui est% TEMPLATE_PATH% \ SomeProjectItems, est le nœud sur le côté gauche de l’arborescence de la boîte de dialogue **Ajouter un nouvel élément** . Les éléments supplémentaires dans l’arborescence sont basés sur le sous-répertoire de ce répertoire racine. Les fichiers disponibles pour être ajoutés au projet sont les éléments du volet droit de la boîte de dialogue **Ajouter un nouvel élément** .  
   
- En règle générale, ce dossier contient les fichiers de modèle pour votre projet comme un modèle HTML ou fichier .cpp et tous les fichiers .vsz pour démarrer des Assistants. Pour contrôler la façon dont les éléments sont affichés, vous pouvez également inclure des fichiers .vsdir pour la localisation des icônes et des noms de répertoire. La chaîne localisée est la légende qui apparaît dans la boîte de dialogue qui représente ce nœud dans l’arborescence de la boîte de dialogue Ajouter un nouvel élément.  
+ En règle générale, ce dossier contient les fichiers de modèle de votre projet, tels qu’un fichier HTML de modèle ou. cpp, ainsi que tous les fichiers. vsz pour le démarrage des assistants. Pour contrôler la façon dont les éléments sont affichés, vous pouvez également inclure des fichiers. vsdir pour la localisation des noms de répertoires et des icônes. La chaîne localisée est la légende qui apparaît dans la boîte de dialogue qui représente ce nœud dans l’arborescence de la boîte de dialogue Ajouter un nouvel élément.  
   
- Toutefois, il est inutile d’avoir tout dans un seul fichier .vsdir. Vous pouvez avoir un seul fichier .vsdir pour chaque élément dans le répertoire. Pour plus d’informations, consultez [Assistant (. Fichier vsz)](../../extensibility/internals/wizard-dot-vsz-file.md) et [Description du modèle de répertoire (. Fichiers VSDir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).  
+ Toutefois, vous n’avez pas besoin d’avoir tous les éléments dans un seul fichier. vsdir. Vous pouvez avoir un fichier. vsdir pour chaque élément de l’annuaire. Pour plus d’informations, consultez [Assistant (. Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md) Description du répertoire du fichier et du [modèle (. Vsdir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).  
   
 > [!NOTE]
-> Les fichiers .vsdir dans les répertoires de modèle sont facultatifs. Si vous souhaitez simplement placer un élément de projet dans le répertoire et l’afficher dans le **ajouter un nouvel élément** boîte de dialogue, vous pouvez placer ce fichier dans le répertoire de modèles spécifié dans l’instruction TemplatesDir. Le fichier puis apparaîtront dans le volet droit de la **ajouter un nouvel élément** boîte de dialogue pour ce projet. Toutefois, si vous souhaitez afficher une légende localisée pour le fichier ou une icône, vous devez inclure au moins un fichier .vsdir dans le répertoire de modèles.  
+> Les fichiers. vsdir dans les répertoires de modèles sont facultatifs. Si vous souhaitez simplement placer un élément de projet dans le répertoire et l’afficher dans la boîte de dialogue **Ajouter un nouvel élément** , vous pouvez placer ce fichier dans le répertoire de modèles spécifié dans l’instruction TemplatesDir. Le fichier est ensuite affiché dans le volet droit de la boîte de dialogue **Ajouter un nouvel élément** pour ce projet. Toutefois, si vous souhaitez afficher une légende localisée pour le fichier ou une icône, vous devez inclure au moins un fichier. vsdir dans le répertoire des modèles.  
   
-## <a name="grouping-project-items"></a>Éléments de projet de regroupement  
- Si vous souhaitez contiennent des groupes de modèles dans les dossiers dans le **ajouter un nouvel élément** arborescence de boîte de dialogue, vous devez disposer des sous-répertoires du répertoire de modèle racine avec les éléments dans les. Lorsque le **ajouter un nouvel élément** boîte de dialogue s’affiche aux utilisateurs, ils seront également voir les sous-dossiers et être en mesure de sélectionner des éléments de projet à partir de celles-ci.  
+## <a name="grouping-project-items"></a>Regroupement d’éléments de projet  
+ Si vous souhaitez inclure des groupes de modèles dans des dossiers de l’arborescence de la boîte de dialogue **Ajouter un nouvel élément** , vous devez avoir des sous-répertoires sous le répertoire de modèles racine avec les éléments qu’ils contiennent. Quand la boîte de dialogue **Ajouter un nouvel élément** s’affiche pour les utilisateurs, ceux-ci voient également les sous-dossiers et peuvent y sélectionner des éléments de projet.  
   
- La priorité de tri dans le segment de code détermine où ce répertoire de modèle sera créé dans l’arborescence par rapport aux autres éléments du nœud d’arbre. Pour le **ajouter un nouvel élément** boîte de dialogue, la priorité de tri est tout ce que vous devez inclure afin que vos éléments seront affichera à l’emplacement approprié dans la boîte de dialogue.  
+ La priorité de tri dans le segment de code détermine où ce répertoire de modèles sera créé dans l’arborescence par rapport aux autres éléments du nœud d’arbre. Pour la boîte de dialogue **Ajouter un nouvel élément** , la priorité de tri est tout ce que vous devez inclure afin que vos éléments s’affichent à l’emplacement approprié dans la boîte de dialogue.  
   
- Vous pouvez également implémenter le <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2> interface pour filtrer ce qui est affiché dans le **ajouter un nouvel élément** boîte de dialogue. En implémentant cette interface, vous pouvez configurer un modèle directory sur le disque qui contient, par exemple, 50 fichiers de modèle et l’Assistant. De cette façon, vous pouvez avoir différents types de projets avec 20 fichiers qui appartiennent à un type de projet, les autres 30 fichiers qui appartiennent à un autre type de projet et tous les fichiers disponibles dans un type de projet général. De cette manière, en fonction du projet auquel le modèle est créé, vous pouvez afficher un autre ensemble de fichiers de modèle.  
+ Vous pouvez également implémenter l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2> interface pour filtrer ce qui est affiché dans la boîte de dialogue **Ajouter un nouvel élément** . En implémentant cette interface, vous pouvez configurer un répertoire de modèles sur le disque contenant, par exemple, des fichiers de modèle 50 et d’Assistant. De cette façon, vous pouvez avoir différents types de projets avec 20 fichiers qui appartiennent à un type de projet, les 30 autres fichiers appartenant à un autre type de projet et tous les fichiers disponibles dans un type général de projet. De cette manière, selon le modèle de projet créé, vous pouvez afficher un ensemble différent de fichiers de modèle.  
   
- Par exemple, dans un projet Visual Basic, vous pouvez avoir les projets Web et client. Les Web forms ne sont pas des éléments utiles à ajouter à un projet client, et windows forms n’est pas utiles éléments à ajouter à un projet de serveur Web. Par conséquent, vous pouvez créer un répertoire de modèle qui contient tous les fichiers pour les deux types de projet. Puis en implémentant <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>, vous pouvez masquer des éléments qui ne doivent pas être affichées en fonction du type de projet ou les paramètres du projet dans le projet.  
+ Par exemple, dans un projet Visual Basic, vous pouvez avoir des projets Web et des projets clients. Les Web Forms ne sont pas des éléments utiles à ajouter à un projet client, et les Windows Forms ne sont pas des éléments utiles à ajouter à un projet de serveur Web. Par conséquent, vous pouvez créer un répertoire de modèle qui contient tous les fichiers pour les deux types de projet. Ensuite, en implémentant <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2> , vous pouvez masquer les éléments qui ne doivent pas être affichés en fonction du type de paramètres de projet ou de projet dans le projet.  
   
 ## <a name="filtering-project-items"></a>Filtrage des éléments de projet  
- `IVsFilterAddProjectItemDlg2` fournit de filtrage d’éléments dans l’arborescence (volet gauche) et les fichiers de projet (volet droit) comme suit :  
+ `IVsFilterAddProjectItemDlg2` permet de filtrer les éléments dans l’arborescence (volet gauche) et les fichiers projet (volet droit) des manières suivantes :  
   
-- Par les noms localisés (légendes affichées dans la boîte de dialogue qui est contenue dans le fichier .vsdir) fournie par `IVsFilterAddProjectItemDlg`.  
+- Par les noms localisés (sous-titres affichés dans la boîte de dialogue contenue dans le fichier. vsdir) fournis par `IVsFilterAddProjectItemDlg` .  
   
-- Par les noms réels des fichiers et dossiers sur le disque (non localisé : aucun fichier .vsdir) fourni par `IVsFilterAddProjectItemDlg`.  
+- Par les noms réels des fichiers et dossiers sur le disque (non localisé — aucun fichier. vsdir) fourni par `IVsFilterAddProjectItemDlg` .  
   
-- Par catégorie, fourni par `IVsFilterAddProjectItemDlg2`.  
+- Par catégorie, fourni par `IVsFilterAddProjectItemDlg2` .  
   
-  Pour filtrer par catégorie, fournissez une chaîne de catégorie pour un article dans le fichier .vsdir, tels que « Formulaire Web » ou « Client » dans Visual Basic. Le code de la boîte de dialogue puis récupère la classification de la catégorie à partir du fichier .vsdir et le transmet à vous. Vous pouvez ensuite passer ces informations à votre implémentation de `IVsFilterAddProjectItemDlg2` pour filtrer le **ajouter un nouvel élément** boîte de dialogue par catégories. Vous pouvez également filtrer les éléments pour les pages Web ou comme des cas d’application client Win32. En outre, vous pouvez identifier [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] des éléments étiquetés comme Microsoft Foundation Classes (MFC) ou des éléments de modèle active de la bibliothèque (ATL). Lorsque vous identifiez ces éléments, le système de projet peut définir ses propres classifications afin que le système peut être filtré en fonction de catégories et classifications.  
+  Pour filtrer par catégorie, fournissez une chaîne de catégorie à un élément dans le fichier. vsdir, par exemple « Web Form » ou « Item client » dans Visual Basic. Le code de la boîte de dialogue récupère ensuite la classification des catégories à partir du fichier. vsdir et vous le transmet. Vous pouvez ensuite passer ces informations à votre implémentation de `IVsFilterAddProjectItemDlg2` pour filtrer la boîte de dialogue **Ajouter un nouvel élément** par catégories. Vous pouvez également filtrer les éléments pour les pages Web ou les cas d’application cliente Win32. En outre, vous pouvez identifier [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] les éléments avec balises en tant que Microsoft Foundation classes (MFC) ou éléments ATL (Active Template Library). Lorsque vous identifiez ces éléments, le système de projet peut définir ses propres classifications afin que le système puisse être filtré en fonction des catégories et des classifications.  
   
-  Si vous implémentez cette fonctionnalité de filtre, il est inutile mapper une table de chaque élément doit être masqué. Vous pouvez simplement classer des éléments dans les types et placer les classifications dans l’ou les fichiers .vsdir. Vous pouvez masquer les éléments qui ont une classification spécifique en implémentant l’interface. Dans cette façon, vous pouvez rendre les éléments dans le **ajouter un nouvel élément** dynamique de boîte de dialogue en fonction de l’état au sein du projet.  
+  Si vous implémentez cette fonctionnalité de filtre, vous n’avez pas besoin de mapper une table de tous les éléments qui doivent être masqués. Vous pouvez simplement classer les éléments en types et placer les classifications dans le ou les fichiers. vsdir. Vous pouvez ensuite masquer tous les éléments qui ont une classification spécifique en implémentant l’interface. De cette façon, vous pouvez rendre les éléments de la boîte de dialogue **Ajouter un nouvel élément** dynamiques en fonction de l’État dans le projet.  
   
 ## <a name="see-also"></a>Voir aussi  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>   
- [L’inscription de projet et modèles d’élément](../../extensibility/internals/registering-project-and-item-templates.md)   
+ [Inscription de modèles de projet et d’élément](../../extensibility/internals/registering-project-and-item-templates.md)   
  [CATID des objets qui sont généralement utilisés pour étendre des projets](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)   
- [Ajout de projet et modèles d’élément de projet](../../extensibility/internals/adding-project-and-project-item-templates.md)   
- [Description du modèle de répertoire (. Fichiers VSDir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)   
+ [Ajout de modèles de projet et d’élément de projet](../../extensibility/internals/adding-project-and-project-item-templates.md)   
+ [Description du répertoire de modèles (. Fichiers VSDir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)   
  [Fichier Assistant (.Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)

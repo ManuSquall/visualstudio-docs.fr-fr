@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1b0856d3832d31dd7027b2f264dd0a9cd1d657ec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c82b4dec0c92f19933b045040ed0f1fcecb5b10b
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "63007325"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809857"
 ---
 # <a name="common-tasks-in-office-programming"></a>Tâches courantes dans la programmation Office
   Cette rubrique est conçue pour vous aider à trouver les réponses aux catégories suivantes de questions courantes sur la programmation de solutions Office à l’aide de Visual Studio.
@@ -44,7 +44,7 @@ ms.locfileid: "63007325"
 
 - [Comment : créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-- [Comment : mettre à niveau des solutions Office](https://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e).
+- [Comment : mettre à niveau des solutions Office](/previous-versions/4bez6837(v=vs.140)).
 
 - [Comment : installer les assemblys PIA (Primary Interop Assembly) d’Office](../vsto/how-to-install-office-primary-interop-assemblies.md).
 
@@ -216,19 +216,19 @@ ms.locfileid: "63007325"
 
 ## <a name="deployment-tasks"></a><a name="deployment"></a> Tâches de déploiement
 
-- [Comment : publier une solution Office à l’aide de ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).
+- [Comment : publier une solution Office à l’aide de ClickOnce](/previous-versions/bb386095(v=vs.110)).
 
-- [Comment : publier une solution Office au niveau du document sur un serveur SharePoint à l’aide de ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58).
+- [Comment : publier une solution Office au niveau du document sur un serveur SharePoint à l’aide de ClickOnce](/previous-versions/bb608595(v=vs.110)).
 
-- [Comment : installer une solution Office ClickOnce](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065).
+- [Comment : installer une solution Office ClickOnce](/previous-versions/bb608592(v=vs.110)).
 
-- [Procédure : installer les composants requis sur les ordinateurs des utilisateurs finaux pour exécuter des solutions Office](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).
+- [Procédure : installer les composants requis sur les ordinateurs des utilisateurs finaux pour exécuter des solutions Office](/previous-versions/bb608608(v=vs.110)).
 
-- [Comment : préparer IIS pour le déploiement de solutions Office](https://msdn.microsoft.com/f62bce70-81d4-4f8b-86e6-2f2afec5d9b4).
+- [Comment : préparer IIS pour le déploiement de solutions Office](/previous-versions/bb608629(v=vs.110)).
 
-- [Comment : mettre à jour les solutions Office déployées](https://msdn.microsoft.com/be96db53-b6ea-46ab-b8d9-b76b098b3b13).
+- [Comment : mettre à jour les solutions Office déployées](/previous-versions/bb157871(v=vs.110)).
 
-- [Comment : modifier le chemin d’installation d’une solution Office](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).
+- [Comment : modifier le chemin d’installation d’une solution Office](/previous-versions/bb608626(v=vs.110)).
 
 ## <a name="see-also"></a>Voir aussi
 - [Prise en main &#40;le développement Office dans Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)

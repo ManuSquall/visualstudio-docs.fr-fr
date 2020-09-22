@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0d685dc39f5e07840a5995f7fe67988840c3f50a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441658"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839993"
 ---
-# <a name="threads-view-parallel-performance"></a>Vue Threads (Performances parallèles)
+# <a name="threads-view-parallel-performance"></a>vue Threads (niveau de performance parallèle)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La vue threads est la vue la plus détaillée et la plus riche en fonctionnalités du visualiseur concurrentiel. En utilisant cette vue, vous pouvez déterminer si les threads sont en cours d’exécution ou s’ils sont bloqués à cause d’une synchronisation, d’E/S ou pour une autre raison.  
@@ -39,7 +39,7 @@ La vue threads est la vue la plus détaillée et la plus riche en fonctionnalit�
   
   Quand des threads sont en cours d’exécution, le visualiseur concurrentiel collecte des échantillons. Dans la vue Threads, vous pouvez déterminer quel code est exécuté par un ou plusieurs threads pendant un segment d’exécution. Vous pouvez également examiner des rapports de blocage et des rapports qui profilent l’exécution de l’arborescence de la pile des appels.  
   
-## <a name="usage"></a>Utilisation  
+## <a name="usage"></a>Usage  
  Voici quelques façons d’utiliser la vue Threads :  
   
 - Identifier les raisons pour lesquelles l’interface utilisateur d’une application ne répond pas pendant certaines phases de l’exécution.  
@@ -69,14 +69,14 @@ La vue threads est la vue la plus détaillée et la plus riche en fonctionnalit�
   
   Voici une illustration de la vue Threads :  
   
-  ![Vue threads](../profiling/media/threadsviewnarrowing.png "ThreadsViewNarrowing")  
+  ![vue Threads](../profiling/media/threadsviewnarrowing.png "ThreadsViewNarrowing")  
   vue Threads  
   
   Initialement, les threads sont triés dans l’ordre où ils sont créés : le thread d’application principal figure donc en premier. Vous pouvez utiliser l’option de tri dans le coin supérieur gauche de la vue pour trier les threads selon un autre critère (par exemple sur la base de la plus grande quantité de travail d’exécution effectuée).  
   
   Vous pouvez masquer les threads qui n’effectuent pas de travail en sélectionnant leur nom dans la colonne de gauche, puis en choisissant **Masquer les threads sélectionnés** dans la barre d’outils. Nous vous recommandons de masquer les threads qui sont complètement bloqués, car leurs statistiques ne sont pas pertinentes et peuvent encombrer les rapports.  
   
-  Pour identifier des threads supplémentaires à masquer, dans la légende active, sélectionnez le rapport **Résumé par thread** sous l’onglet **Rapport des profils**. Ceci affiche le graphique de répartition de l’exécution, qui montre l’état des threads pour l’intervalle de temps sélectionné. À certains niveaux de zoom, certains threads peuvent ne pas être affichés. Quand cela se produit, des points de suspension sont affichés à droite.  
+  Pour identifier les threads supplémentaires à masquer, dans la légende active, choisissez le rapport de **synthèse par thread** sous l’onglet **rapport de profil** . Le graphique de répartition de l’exécution s’affiche, qui indique l’état des threads pour l’intervalle de temps actuellement sélectionné. À certains niveaux de zoom, certains threads peuvent ne pas être affichés. Quand cela se produit, des points de suspension sont affichés à droite.  
   
   Quand vous avez sélectionné un intervalle de temps et certains threads qui y apparaissent, vous pouvez démarrer l’analyse des performances.  
   
@@ -94,7 +94,7 @@ La vue threads est la vue la plus détaillée et la plus riche en fonctionnalit�
 ### <a name="thread-execution-details"></a>Détails de l’exécution des threads  
  Dans le graphique chronologique d’un thread, les segments verts indiquent les moments où il exécutait du code. Vous pouvez obtenir des informations plus détaillées sur un segment d’exécution.  
   
- Quand vous sélectionnez un point dans un segment d’exécution, le visualiseur concurrentiel recherche ce point dans le temps sur la pile des appels appropriée, puis affiche un signe d’insertion noir au-dessus du point sélectionné dans le segment d’exécution et affiche la pile des appels elle-même sous l’onglet **Pile active**. Vous pouvez sélectionner plusieurs points sur le segment d’exécution.  
+ Lorsque vous sélectionnez un point dans un segment d’exécution, le visualiseur concurrentiel recherche ce point dans le temps dans la pile des appels appropriée, puis affiche un signe insertion noir au-dessus du point sélectionné dans le segment d’exécution et affiche la pile des appels dans l’onglet **Pile active** . Vous pouvez sélectionner plusieurs points sur le segment d’exécution.  
   
 > [!NOTE]
 > Le visualiseur concurrentiel n’est parfois pas en mesure de résoudre une sélection sur un segment d’exécution. En général, ceci se produit quand la durée du segment est inférieure à 1 milliseconde.  
@@ -123,15 +123,15 @@ La vue threads est la vue la plus détaillée et la plus riche en fonctionnalit�
 #### <a name="execution"></a>Exécution  
  Le rapport Exécution montre la répartition du temps passé par l’application dans l’exécution.  
   
- Pour rechercher la ligne de code où le temps d’exécution est passé, développez l’arborescence des appels et, dans le menu contextuel pour l’entrée de l’arborescence des appels, choisissez **Afficher la source** ou **Afficher les sites d’appel**. **Afficher la source** localise la ligne de code exécutée. **Afficher les sites d’appel** localise la ligne de code qui a appelé la ligne de code exécutée. S’il n’existe qu’un seul site d’appel, la ligne de code est mise en surbrillance. S’il existe plusieurs sites d’appel, vous pouvez sélectionner celui de votre choix dans la boîte de dialogue qui s’affiche puis choisir le bouton **Atteindre la source** pour mettre en surbrillance le code du site d’appel. Il est souvent utile de localiser le site d’appel ayant le plus grand nombre d’instances, la durée la plus longue ou les deux. Pour plus d’informations, consultez [Rapport de profil d’exécution](../profiling/execution-profile-report.md).  
+ Pour rechercher la ligne de code où le temps d’exécution est passé, développez l’arborescence des appels et, dans le menu contextuel pour l’entrée de l’arborescence des appels, choisissez **Afficher la source** ou **Afficher les sites d’appel**. **Afficher la source** localise la ligne de code exécutée. **Afficher les sites d’appel** localise la ligne de code qui a appelé la ligne de code exécutée. S’il n’existe qu’un seul site d’appel, la ligne de code est mise en surbrillance. S’il existe plusieurs sites d’appel, vous pouvez sélectionner celui de votre choix dans la boîte de dialogue qui s’affiche puis choisir le bouton **Atteindre la source** pour mettre en surbrillance le code du site d’appel. Il est souvent utile de localiser le site d’appel ayant le plus grand nombre d’instances, la durée la plus longue ou les deux. Pour plus d’informations, consultez [rapport du profil d’exécution](../profiling/execution-profile-report.md).  
   
 #### <a name="synchronization"></a>Synchronisation  
- Le rapport Synchronisation montre les appels responsables des blocages de synchronisation, ainsi que les durées totales de blocage pour chaque pile des appels. Pour plus d’informations, consultez [Durée de synchronisation](../profiling/synchronization-time.md).  
+ Le rapport Synchronisation montre les appels responsables des blocages de synchronisation, ainsi que les durées totales de blocage pour chaque pile des appels. Pour plus d’informations, consultez [heure de synchronisation](../profiling/synchronization-time.md).  
   
 #### <a name="io"></a>E/S  
- Le rapport E/S montre les appels responsables des blocages d’E/S, ainsi que les durées totales de blocage pour chaque pile des appels. Pour plus d’informations, consultez [Temps d’E/S (vue Threads)](../profiling/i-o-time-threads-view.md).  
+ Le rapport E/S montre les appels responsables des blocages d’E/S, ainsi que les durées totales de blocage pour chaque pile des appels. Pour plus d’informations, consultez [temps d’e/s (vue threads)](../profiling/i-o-time-threads-view.md).  
   
-#### <a name="sleep"></a>Sleep  
+#### <a name="sleep"></a>Veille  
  Le rapport de veille montre les appels responsables des blocages de veille, ainsi que les durées totales de blocage pour chaque pile des appels. Pour plus d’informations, consultez [Durée de veille](../profiling/sleep-time.md).  
   
 #### <a name="memory-management"></a>Gestion de la mémoire  
@@ -144,10 +144,10 @@ La vue threads est la vue la plus détaillée et la plus riche en fonctionnalit�
  Le rapport de traitement de l’interface utilisateur montre les appels responsables des blocages de traitement de l’IU, ainsi que les durées totales de blocage pour chaque pile des appels. Pour plus d’informations, consultez [Temps de traitement UI](../profiling/ui-processing-time.md).  
   
 #### <a name="per-thread-summary"></a>Par résumé de thread  
- Cet onglet affiche une vue en colonnes avec des codes de couleur de la durée totale que chaque thread a passé dans les états En cours d’exécution, Bloqué, E/S et dans d’autres états. Le libellé des colonnes se trouve dans le bas. Quand vous ajustez le niveau de zoom dans le graphique chronologique, cet onglet est automatiquement mis à jour. À certains niveaux de zoom, certains threads peuvent ne pas être affichés. Quand cela se produit, des points de suspension sont affichés à droite. Si le thread que vous voulez n’apparaît pas, vous pouvez masquer d’autres threads. Pour plus d’informations, consultez [Rapport Résumé par thread](../profiling/per-thread-summary-report.md).  
+ Cet onglet affiche une vue en colonnes avec des codes de couleur de la durée totale que chaque thread a passé dans les états En cours d’exécution, Bloqué, E/S et dans d’autres états. Le libellé des colonnes se trouve dans le bas. Quand vous ajustez le niveau de zoom dans le graphique chronologique, cet onglet est automatiquement mis à jour. À certains niveaux de zoom, certains threads peuvent ne pas être affichés. Quand cela se produit, des points de suspension sont affichés à droite. Si le thread que vous voulez n’apparaît pas, vous pouvez masquer d’autres threads. Pour plus d’informations, consultez [rapport récapitulatif par thread](../profiling/per-thread-summary-report.md).  
   
-#### <a name="disk-operations"></a>Opérations sur le disque  
- Cet onglet affiche les processus et les threads impliqués dans les E/S disque pour le compte du processus en cours, les fichiers qu’ils ont utilisés (par exemple les DLL qui ont été chargées), le nombre d’octets lus et d’autres informations. Vous pouvez utiliser ce rapport pour évaluer le temps passé dans les accès aux fichiers pendant l’exécution, en particulier quand votre processus est lié à des E/S. Pour plus d’informations, consultez [Rapport Opérations sur le disque](../profiling/disk-operations-report-threads-view.md).  
+#### <a name="disk-operations"></a>Opérations disque  
+ Cet onglet affiche les processus et les threads impliqués dans les E/S disque pour le compte du processus en cours, les fichiers qu’ils ont utilisés (par exemple les DLL qui ont été chargées), le nombre d’octets lus et d’autres informations. Vous pouvez utiliser ce rapport pour évaluer le temps passé dans les accès aux fichiers pendant l’exécution, en particulier quand votre processus est lié à des E/S. Pour plus d’informations, consultez rapport sur les [opérations de disque](../profiling/disk-operations-report-threads-view.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Visualiseur concurrentiel](../profiling/concurrency-visualizer.md)

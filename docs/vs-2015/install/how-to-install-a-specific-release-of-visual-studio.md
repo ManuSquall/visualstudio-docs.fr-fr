@@ -12,11 +12,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: dde0cefabf0523484ad76ac56f7f2760de8c7acc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433078"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839853"
 ---
 # <a name="how-to-install-a-specific-release-of-visual-studio"></a>Procédure : installation d’une mise en production spécifique de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,4 +60,4 @@ Nous mettons souvent à jour le programme d’installation de Visual Studio pour
 >   - trk (turc)
 
 ## <a name="see-also"></a>Voir aussi
- [Guide de l’administrateur Visual Studio](../install/visual-studio-administrator-guide.md)
+ [Guide de l’Administrateur Visual Studio](../install/visual-studio-administrator-guide.md)

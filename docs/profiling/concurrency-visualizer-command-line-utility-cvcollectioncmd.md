@@ -1,5 +1,6 @@
 ---
-title: Utilitaire en ligne de commande du visualiseur concurrentiel (CVCollectionCmd) | Microsoft Docs
+title: Utilitaire de ligne de commande du visualiseur concurrentiel
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2721798ee9f0c7e006acdedbecaecbd56068be3f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 762a3563e64a3437c34b9e12e372f5d578e0c7ac
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72911204"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90808901"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Utilitaire en ligne de commande du visualiseur concurrentiel (CVCollectionCmd)
 Vous pouvez utiliser l’utilitaire en ligne de commande du visualiseur concurrentiel (*CVCollectionCmd.exe*) pour collecter des traces à partir de la ligne de commande et les afficher dans le visualiseur concurrentiel pour Visual Studio. Vous pouvez utiliser ces outils sur des ordinateurs sur lesquels Visual Studio n'est pas installé.
@@ -40,9 +41,9 @@ Vous pouvez utiliser l’utilitaire en ligne de commande du visualiseur concurre
 
 |Option|Description|Paramètres|Valeurs retournées|
 |------------|-----------------|----------------|-------------------|
-|Requête|Retourne une valeur qui indique si la collecte peut démarrer.|None|0 si la collecte peut démarrer.<br /><br /> 1 si la collecte est déjà en cours.<br /><br /> 2 si la collecte n’est pas en cours, mais qu’une ou plusieurs des sessions [ETW](/dotnet/framework/wcf/samples/etw-tracing) nécessaires sont déjà activées.|
+|Query|Retourne une valeur qui indique si la collecte peut démarrer.|Aucun|0 si la collecte peut démarrer.<br /><br /> 1 si la collecte est déjà en cours.<br /><br /> 2 si la collecte n’est pas en cours, mais qu’une ou plusieurs des sessions [ETW](/dotnet/framework/wcf/samples/etw-tracing) nécessaires sont déjà activées.|
 |Lancer|Exécute le processus spécifié sous le Visualiseur concurrentiel.|Chemin de l’exécutable.|0 si l’exécution a réussi.<br /><br /> 1 si l’exécution a échoué en raison de l’impossibilité de démarrer l’application cible.<br /><br /> 13 si l’exécution a échoué en raison des autorisations de CVCollectionCmd, insuffisantes pour écrire dans le répertoire de sortie spécifié.|
-|Joindre|Commence la collecte d’une trace à l’échelle du système ; sinon, établit une liaison avec un processus si vous en avez spécifié un.|Aucun.|0 si l’attachement a abouti.<br /><br /> 1 si l’attachement a échoué en raison de la non validité et du caractère ambigu du processus spécifié.<br /><br /> 13 si l’attachement a échoué en raison des autorisations de CVCollectionCmd, insuffisantes pour écrire dans le répertoire de sortie spécifié.|
+|Attach|Commence la collecte d’une trace à l’échelle du système ; sinon, établit une liaison avec un processus si vous en avez spécifié un.|Aucun.|0 si l’attachement a abouti.<br /><br /> 1 si l’attachement a échoué en raison de la non validité et du caractère ambigu du processus spécifié.<br /><br /> 13 si l’attachement a échoué en raison des autorisations de CVCollectionCmd, insuffisantes pour écrire dans le répertoire de sortie spécifié.|
 |Detach|Arrête la collecte.|Aucun.|0 si le détachement a réussi.<br /><br /> 1 si le détachement a échoué, car la collecte n’est pas en cours.<br /><br /> 2 si le détachement a échoué pour cause d’impossibilité d’arrêter la collecte.|
 |Analyser|Analyse la trace spécifiée.|Chemin du fichier CVTrace.|0 si l’analyse a abouti.<br /><br /> 1 si l’analyse n’a pas pu démarrer, car la trace spécifiée était à l’échelle du système, mais aucun processus cible n’a été spécifié.<br /><br /> 2 si l’analyse n’a pas pu démarrer, car la trace n’était pas à l’échelle du système et un processus a été spécifié.<br /><br /> 3 si l’analyse a échoué en raison de la non validité du processus spécifié.<br /><br /> 4 si l’analyse a échoué en raison de la non validité du fichier CVTrace spécifié.|
 |LaunchArgs|Spécifie les arguments exécutables cibles. Cette option s’applique uniquement à la commande Launch.|Arguments en ligne de commande de l’application.|Aucun.|
@@ -71,9 +72,9 @@ Vous pouvez utiliser l’utilitaire en ligne de commande du visualiseur concurre
 | SymbolPath | Spécifie le chemin du serveur de symboles. Pour plus d’informations, consultez [Utiliser le serveur de symboles Microsoft pour obtenir des fichiers de symboles de débogage](/windows/win32/dxtecharts/debugging-with-symbols). | Nom de répertoire ou URL. |
 | Marqueurs | Contient la liste des fournisseurs de marqueurs. | Peut contenir zéro, un ou plusieurs éléments MarkerProvider. |
 | MarkerProvider | Spécifie un fournisseur de marqueurs unique. | Doit contenir les éléments suivants :<br /><br /> -   Level<br />-   GUID<br />-   Name<br /><br /> Peut contenir les éléments suivants :<br /><br /> -   Categories<br />-   IsEnabled |
-| Level | Définit le niveau d’importance d’un MarkerProvider. | -   Low<br />-   Normal<br />-   High<br />-   Critical<br />-   Everything |
+| Niveau | Définit le niveau d’importance d’un MarkerProvider. | -   Low<br />-   Normal<br />-   High<br />-   Critical<br />-   Everything |
 | Guid | Identificateur global unique du fournisseur de marqueurs ETW. | GUID. |
-| Nom | Spécifie la description du fournisseur de marqueurs. | Chaîne. |
+| Name | Spécifie la description du fournisseur de marqueurs. | Chaîne. |
 | Catégories | Spécifie les catégories recueillies pour le fournisseur de marqueurs. | Chaîne de nombres ou de plages de nombres délimitée par des virgules. |
 | IsEnabled | Définit une valeur qui détermine si le fournisseur de marqueurs est activé pour la collecte. | -   True<br />-   False |
 | FilterConfig | Spécifie la liste d’options de configuration des événements ETW filtrés à partir de la collecte. | Peut contenir les éléments suivants :<br /><br /> -   CollectClrEvents<br />-   ClrCollectionOptions<br />-   CollectSampleEvents<br />-   CollectGpuEvents<br />-   CollectFileIO |
@@ -91,7 +92,7 @@ Vous pouvez utiliser l’utilitaire en ligne de commande du visualiseur concurre
 | JustMyCode | Spécifie la liste des répertoires Just My Code. | Liste de zéro, un ou plusieurs éléments MyCodeDirectory. |
 | MyCodeDirectory | Spécifie un répertoire qui contient votre code. | Chemin absolu. |
 
-### <a name="example"></a>Exemple
+### <a name="example"></a> Exemple
  Au lieu de créer un fichier de configuration de toutes pièces, vous pouvez copier l’exemple suivant et le modifier en fonction de vos besoins.
 
 ```xml

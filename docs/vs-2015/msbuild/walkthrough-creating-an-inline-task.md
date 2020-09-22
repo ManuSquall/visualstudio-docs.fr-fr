@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ad081a4d6954d402aa295a94edae3f5bdf50ef4c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445621"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840122"
 ---
 # <a name="walkthrough-creating-an-inline-task"></a>Procédure pas à pas : création d’une tâche inline
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,9 +47,9 @@ Les tâches MSBuild sont généralement créées en compilant une classe qui imp
   
 #### <a name="to-create-and-modify-a-project-file"></a>Pour créer et modifier un fichier projet  
   
-1. Dans le menu **Fichier** de Visual Studio, pointez sur **Nouveau**, puis cliquez sur **Projet**.  
+1. Dans Visual Studio, dans le menu **fichier** , cliquez sur **nouveau** , puis sur **projet**.  
   
-2. Dans la boîte de dialogue **Nouveau projet**, sélectionnez le type de projet Visual C#, puis le modèle **Application Windows Forms**. Dans la zone **Nom** , tapez `InlineTasks`. Tapez un **Emplacement** pour la solution, par exemple `D:\`. Vérifiez que l’option **Créer le répertoire pour la solution** est sélectionnée, que l’option **Ajouter au contrôle de code source** ne l’est pas et que **Nom de solution** correspond à `InlineTasks`.  
+2. Dans la boîte de dialogue **Nouveau projet**, sélectionnez le type de projet Visual C#, puis le modèle **Application Windows Forms**. Dans le champ **Nom**, saisissez `InlineTasks`. Tapez un **Emplacement** pour la solution, par exemple `D:\`. Vérifiez que l’option **Créer le répertoire pour la solution** est sélectionnée, que l’option **Ajouter au contrôle de code source** ne l’est pas et que **Nom de solution** correspond à `InlineTasks`.  
   
      Cliquez sur **OK** pour créer le fichier projet.  
   
@@ -241,7 +241,7 @@ Les tâches MSBuild sont généralement créées en compilant une classe qui imp
   Les valeurs des paramètres d’entrée sont définies quand la cible TestBuild appelle la tâche RegX. La tâche RegX lit chaque fichier et retourne la liste des fichiers qui correspondent à l’expression régulière. Cette liste est retournée sous la forme du paramètre de sortie `Result`, qui est émis en tant qu’élément MSBuild `MatchedFiles`.  
   
 ### <a name="handling-reserved-characters"></a>Gestion des caractères réservés  
- L’analyseur MSBuild traite les tâches inline au format XML. Les caractères qui ont une signification réservée au format XML, par exemple « \< » et « > », sont détectés et gérés comme s’il s’agissait de code XML, et non de code source .NET. Pour inclure les caractères réservés dans des expressions de code telles que `Files.Length > 0`, écrivez l’élément `Code` de telle sorte que son contenu figure dans une expression CDATA, comme suit :  
+ L’analyseur MSBuild traite les tâches inline au format XML. Les caractères qui ont une signification réservée en XML, par exemple, « \<" and "> », sont détectés et gérés comme s’il s’agissait de XML, et non du code source .net. Pour inclure les caractères réservés dans des expressions de code telles que `Files.Length > 0`, écrivez l’élément `Code` de telle sorte que son contenu figure dans une expression CDATA, comme suit :  
   
  `<Code Type="Fragment" Language="cs">`  
   
@@ -254,6 +254,6 @@ Les tâches MSBuild sont généralement créées en compilant une classe qui imp
  `</Code>`  
   
 ## <a name="see-also"></a>Voir aussi  
- [Tâches inline](../msbuild/msbuild-inline-tasks.md)   
- [Tâches](../msbuild/msbuild-tasks.md)   
+ [Tâches Inline](../msbuild/msbuild-inline-tasks.md)   
+ [Décrites](../msbuild/msbuild-tasks.md)   
  [Cibles](../msbuild/msbuild-targets.md)
