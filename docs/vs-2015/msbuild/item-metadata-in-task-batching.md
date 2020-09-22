@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 15a6eeea6ebf75513419cc763b2e29a6b6264391
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436793"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840065"
 ---
 # <a name="item-metadata-in-task-batching"></a>Métadonnées d’éléments dans le traitement par lots de tâches
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -135,7 +135,7 @@ ms.locfileid: "63436793"
  `Number: 3 -- Items in ExampColl: Item3 ExampColl2: Item6`  
   
 ## <a name="batching-one-item-at-a-time"></a>Traitement par lots d’un élément à la fois  
- Le traitement par lots peut également être effectué sur les métadonnées d’éléments connus qui sont affectés à chaque élément à la création. Cela garantit que chaque élément d’une collection a des métadonnées à utiliser pour le traitement par lots. La valeur des métadonnées `Identity` est unique pour chaque élément et est utile pour diviser chaque élément d’une liste d’éléments en un lot distinct. Pour obtenir la liste complète des métadonnées d’éléments connues, consultez [Métadonnées d’éléments connues](../msbuild/msbuild-well-known-item-metadata.md).  
+ Le traitement par lots peut également être effectué sur les métadonnées d’éléments connus qui sont affectés à chaque élément à la création. Cela garantit que chaque élément d’une collection a des métadonnées à utiliser pour le traitement par lots. La valeur des métadonnées `Identity` est unique pour chaque élément et est utile pour diviser chaque élément d’une liste d’éléments en un lot distinct. Pour obtenir la liste complète des métadonnées d’éléments connus, consultez [métadonnées d’éléments connus](../msbuild/msbuild-well-known-item-metadata.md).  
   
  L’exemple suivant montre comment traiter par lots chaque élément d’une liste d’éléments un à la fois. Comme la valeur des métadonnées `Identity` de chaque élément est unique, la liste d’éléments `ExampColl` est divisée en six lots, chacun contenant un élément de la liste d’éléments. La présence de `%(Identity)` dans l’attribut `Text` indique à [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] qu’un traitement par lots doit être effectué.  
   
@@ -223,7 +223,7 @@ Items in ExampColl: Item2;Item5
 ## <a name="see-also"></a>Voir aussi  
  [Métadonnées d’élément connues](../msbuild/msbuild-well-known-item-metadata.md)   
  [Item, élément (MSBuild)](../msbuild/item-element-msbuild.md)   
- [ItemMetadata, élément (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)   
- [Traitement par lot MSBuild](../msbuild/msbuild-batching.md)   
+ [Élément ItemMetadata, (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)   
+ [Traitement par lot](../msbuild/msbuild-batching.md)   
  [Concepts MSBuild](../msbuild/msbuild-concepts.md)   
- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)
+ [Référence MSBuild](../msbuild/msbuild-reference.md)

@@ -1,5 +1,5 @@
 ---
-title: Comment créer un package de programme d’amorçage localisé | Microsoft Docs
+title: Créer un package de programme d’amorçage localisé | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26858dce9c6484c1b7acb94ad2a7f38fd20447a2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c673c6488b93802877ef088d9d9a1a4793cf50b
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85382560"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852483"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>Guide pratique pour créer un package du programme d'amorçage localisé
 Après avoir créé un package du programme d’amorçage, vous pouvez créer des versions localisées du package du programme d’amorçage en créant deux fichiers supplémentaires pour chaque paramètre régional : un fichier de termes de contrat de licence logiciel (tel que *EULA. rtf*) et un manifeste de package (*package.xml*).

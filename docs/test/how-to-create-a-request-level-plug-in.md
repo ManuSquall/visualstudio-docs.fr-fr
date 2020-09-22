@@ -1,5 +1,6 @@
 ---
-title: Créer un plug-in au niveau de la requête pour les tests de performances web
+title: Créer un plug-in de niveau requête (tests de performances Web)
+ms.custom: SEO-VS-2020
 ms.date: 10/19/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +10,12 @@ ms.assetid: d0b5b23c-7e94-4637-be6c-2620a5442d46
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 03de870da2cd75c8a254010db682903f314cc10d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f136214b787820396fdbcff37f9f3b78574e9c8
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287972"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90810270"
 ---
 # <a name="how-to-create-a-request-level-plug-in"></a>Guide pratique pour créer un plug-in de niveau requête
 
@@ -81,7 +82,7 @@ En outre, vous pouvez utiliser des plug-ins de requête de test de performances 
     > 1. Dans le projet de test de performances web et de charge, un message d'avertissement s'affiche dans les références. Supprimez et rajoutez la référence à la DLL de votre plug-in.
     > 2. Supprimez le plug-in de votre test ou de l'emplacement approprié, puis rajoutez-le.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
 Vous pouvez utiliser le code suivant pour créer un plug-in de test de performances web personnalisé qui affiche deux boîtes de dialogue. La première boîte de dialogue affiche l’URL associée à la requête à laquelle vous joignez le complément de requête. La deuxième boîte de dialogue affiche le nom de l'ordinateur de l'agent.
 

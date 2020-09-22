@@ -1,5 +1,5 @@
 ---
-title: Débogueur du nuanceur HLSL | Microsoft Docs
+title: Débogueur de nuanceur HLSL | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bef6c5a742c4bf6acc15a6326190686e46fef79b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63410184"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840138"
 ---
 # <a name="hlsl-shader-debugger"></a>Débogueur du nuanceur HLSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Le débogueur HLSL de Visual Studio Graphics Analyzer vous aide à comprendre co
   
  Il se présente comme suit :  
   
- ![Débogage à l’aide du langage HLSL Regardez et pile des appels. ](../debugger/media/gfx-diag-demo-hlsl-debugger-orientation.png "gfx_diag_demo_hlsl_debugger_orientation")  
+ ![Débogage HLSL utilisant la fenêtre de la pile des appels et la fenêtre espion.](../debugger/media/gfx-diag-demo-hlsl-debugger-orientation.png "gfx_diag_demo_hlsl_debugger_orientation")  
   
 ## <a name="understanding-the-hlsl-debugger"></a>Présentation du débogueur HLSL  
  Le débogueur HLSL peut vous aider à comprendre les problèmes qui surviennent dans votre code de nuanceur. Le débogage du code HLSL dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ressemble au débogage du code écrit dans un autre langage, par exemple, C++, C# ou Visual Basic. Vous pouvez examiner le contenu des variables, définir des points d'arrêt, parcourir le code, et remonter la pile d'appels, comme lorsque vous déboguez d'autres langages.  
@@ -43,7 +43,7 @@ Le débogueur HLSL de Visual Studio Graphics Analyzer vous aide à comprendre co
   Néanmoins, le débogueur HLSL offre une expérience de débogage meilleure et plus similaire à celle de l'UC.  
   
 ## <a name="hlsl-shader-edit--apply"></a>Modification et application du nuanceur HLSL  
- Le débogueur du nuanceur HLSL ne prend pas en charge Modifier & Continuer de la même manière que le débogueur de CPU, car le modèle d'exécution du GPU n'autorise pas l'annulation de l'état du nuanceur. À la place, le débogueur HLSL prend en charge Modifier & Appliquer, ce qui vous permet de changer les fichiers sources HLSL, puis de choisir **Appliquer** pour régénérer le frame et voir le résultat de vos changements. Votre code de nuanceur modifié est stocké dans un fichier distinct pour préserver l’intégrité du fichier de source HLSL d’origine de votre projet, mais lorsque vous êtes satisfait de vos modifications, vous pouvez choisir **copier dans...** Pour copier les modifications dans votre projet. À l’aide de cette fonctionnalité, vous pouvez rapidement itérer le code du nuanceur qui contient des erreurs, et éliminer les étapes coûteuses de régénération et de capture dans votre flux de travail de débogage HLSL.  
+ Le débogueur du nuanceur HLSL ne prend pas en charge Modifier & Continuer de la même manière que le débogueur de CPU, car le modèle d'exécution du GPU n'autorise pas l'annulation de l'état du nuanceur. À la place, le débogueur HLSL prend en charge Modifier & Appliquer, ce qui vous permet de changer les fichiers sources HLSL, puis de choisir **Appliquer** pour régénérer le frame et voir le résultat de vos changements. Votre code de nuanceur modifié est stocké dans un fichier distinct afin de préserver l’intégrité du fichier source HLSL d’origine de votre projet, mais lorsque vous êtes satisfait de vos modifications, vous pouvez choisir **copier dans...** pour copier les modifications dans votre projet. À l’aide de cette fonctionnalité, vous pouvez rapidement itérer le code du nuanceur qui contient des erreurs, et éliminer les étapes coûteuses de régénération et de capture dans votre flux de travail de débogage HLSL.  
   
 ## <a name="hlsl-disassembly"></a>Code machine HLSL  
  Le débogueur du nuanceur HLSL fournit une liste d'assemblys du nuanceur HLSL à droite de la liste de codes source HLSL.  
@@ -73,9 +73,9 @@ Le débogueur HLSL de Visual Studio Graphics Analyzer vous aide à comprendre co
    > [!NOTE]
    > Ce point d'entrée dans le débogueur HLSL débogue soit le thread nuanceur de pixels qui correspond à l'appel de dessin choisi, à la primitive, et au pixel que vous avez choisis, soit les threads de nuanceur de sommets dont les résultats sont interpolés par l'appel de dessin, la primitive, et le pixel que vous avez choisis. Dans le cas des nuanceurs de sommets, vous pouvez affiner davantage le point d’entrée à un sommet spécifique en développant les détails du nuanceur de sommets.  
   
-   Pour obtenir des exemples sur la façon d’utiliser le débogueur HLSL pour déboguer les erreurs de nuanceur, consultez [exemples](../debugger/graphics-diagnostics-examples.md) ou les procédures pas à pas liées dans la section Voir aussi.  
+   Pour obtenir des exemples sur l’utilisation du débogueur HLSL pour déboguer les erreurs de nuanceur, consultez les [exemples](../debugger/graphics-diagnostics-examples.md) ou les procédures pas à pas liées à dans la section Voir aussi.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Procédure pas à pas : objets manquants en raison de Vertex Shader](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)   
+ [Procédure pas à pas : objets manquants en raison de l’ombrage du vertex](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)   
  [Procédure pas à pas : débogage des erreurs de rendu dues à l’ombrage](../debugger/walkthrough-debugging-rendering-errors-due-to-shading.md)   
  [Procédure pas à pas : utilisation de Graphics Diagnostics pour déboguer un nuanceur de calcul](../debugger/walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md)

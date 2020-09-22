@@ -1,5 +1,5 @@
 ---
-title: Comment actualiser la vue | Microsoft Docs
+title: Actualiser la vue | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43c42da3994d75329ced1eaa5b89c7aa6de360c6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d964f0a33b1944255fee2f9fdb7658b04aaedebb
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85349391"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852033"
 ---
 # <a name="how-to-refresh-the-view"></a>Comment : actualiser la vue
 Spy + + prend un « instantané » des tables système et actualise une vue en fonction de ces informations. Il est important que vous actualisiez régulièrement vos vues système. Si vous disposez d’une vue Spy + + ouverte et que vous n’avez pas actualisé la vue, vous ne verrez pas les processus, les threads et les fenêtres qui sont créés par la suite. En outre, vous pouvez voir des éléments qui n’existent plus. La commande **Actualiser** est disponible pour tous les affichages, à l’exception de la vue messages.

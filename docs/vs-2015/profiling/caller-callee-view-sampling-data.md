@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c2f20f67f2f86c94f83362af1df416b387884c13
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: MTE95
+ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440779"
+ms.lasthandoff: 09/07/2020
+ms.locfileid: "90840142"
 ---
 # <a name="caller--callee-view---sampling-data"></a>Vue Appelant/Appelé - Données d’échantillonnage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,22 +35,22 @@ La vue Appelant/Appelé affiche des données de profilage pour la fonction séle
   
 |Colonne|Description|  
 |------------|-----------------|  
-|**ID du processus**|ID du processus (PID) de l'exécution du profilage.|  
+|**ID de processus**|ID du processus (PID) de l'exécution du profilage.|  
 |**Nom du processus**|Nom du processus.|  
 |**Nom du module**|Nom du module qui contient la fonction.|  
-|**Chemin de module**|Chemin d’accès du module qui contient la fonction.|  
-|**Fichier source**|Fichier source contenant la définition pour cette fonction.|  
+|**Chemin du module**|Chemin d’accès du module qui contient la fonction.|  
+|**Source File**|Fichier source contenant la définition pour cette fonction.|  
 |**Nom de la fonction**|Nom complet de la fonction.|  
 |**Numéro de ligne de fonction**|Numéro de ligne du début de cette fonction dans le fichier source.|  
 |**Adresse de la fonction**|Adresse de la fonction.|  
-|**Type**|Contexte de la fonction :<br /><br /> -   **0** : fonction active<br />-   **1** : fonction qui appelle la fonction active<br />-   **2** : fonction qui est appelée par la fonction active|  
-|**Nom de fonction racine**|Nom de la fonction active.|  
+|**Type**|Contexte de la fonction :<br /><br /> -   **0** -la fonction active<br />-   **1** -fonction qui appelle la fonction active<br />-   **2** -fonction appelée par la fonction active|  
+|**Nom de fonction racine**|Nom de la fonction actuelle.|  
 |**Échantillons inclusifs**|- Pour la fonction active, nombre d’échantillons collectés malgré l’exécution de cette fonction ou de l’une de ses fonctions enfants.<br />- Pour une fonction d’appelant, nombre d’échantillons inclusifs de la fonction active qui ont été collectés lorsque cette fonction a appelé la fonction active.<br />- Pour une fonction d’appelé, nombre d’échantillons inclusifs de cette fonction qui ont été collectés lorsque la fonction active a appelé cette fonction.|  
 |**% des échantillons inclusifs**|Pourcentage de tous les échantillons de l’exécution du profilage qui étaient des échantillons inclusifs de cette fonction.|  
 |**Échantillons exclusifs**|- Pour la fonction active, nombre d’échantillons de l’exécution du profilage qui ont été collectés pendant l’exécution directe de cette fonction ; autrement dit, lorsque cette fonction se trouvait en haut de la pile des appels. Les échantillons collectés lors de l’exécution des fonctions enfants de cette fonction ne sont pas comptabilisés comme des échantillons exclusifs.<br />- Pour une fonction d’appelant, nombre d’échantillons exclusifs de la fonction active qui ont été collectés lorsque cette fonction a appelé la fonction active.<br />- Pour une fonction d’appelé, nombre d’échantillons exclusifs de cette fonction qui ont été collectés lorsque la fonction active a appelé cette fonction.|  
 |**% d’échantillons exclusifs**|Pourcentage de tous les échantillons de l’exécution du profilage qui étaient des échantillons exclusifs de cette fonction.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Vue Appelant/Appelé - Données d’échantillonnage de mémoire .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
- [Vue Appelant/Appelé - Données d’instrumentation de la mémoire .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
- [Vue Appelant/Appelé - Données d’instrumentation](../profiling/caller-callee-view-instrumentation-data.md)
+ [Vue appelant/appelé-données d’échantillonnage de la mémoire .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
+ [Vue appelant/appelé-données d’instrumentation de la mémoire .net](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
+ [Vue appelant/appelé-données d’instrumentation](../profiling/caller-callee-view-instrumentation-data.md)

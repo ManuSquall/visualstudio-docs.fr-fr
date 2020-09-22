@@ -1,5 +1,5 @@
 ---
-title: Comment utiliser l’outil Finder | Microsoft Docs
+title: Utiliser l’outil Finder | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7833502c1f36adb654ecc4cc4d3b4dfb742a85b8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2e92223359c6bc78b2a98c234c03ee139c052f86
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348728"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90851838"
 ---
 # <a name="how-to-use-the-finder-tool"></a>Comment : utiliser l'outil Recherche
 Vous pouvez utiliser l’outil recherche de la boîte de dialogue **Rechercher une fenêtre** pour afficher des propriétés ou des messages de la fenêtre. L’outil Finder peut également localiser les fenêtres enfants désactivées et déterminer la fenêtre à mettre en évidence si les fenêtres enfants désactivées se chevauchent.

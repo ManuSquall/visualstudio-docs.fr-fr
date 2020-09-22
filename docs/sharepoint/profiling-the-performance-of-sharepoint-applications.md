@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 72739cd1063298a2dafc71976fd45360bc2d6ec2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2037842e57b6152990144d9ea652936e65517e13
+ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73189205"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90739952"
 ---
 # <a name="profile-the-performance-of-sharepoint-applications"></a>Profiler les performances des applications SharePoint
 
@@ -55,16 +55,16 @@ Les tests de performances de site Web simulent la manière dont un utilisateur f
 
 ## <a name="test-user-interfaces"></a>Interfaces utilisateur de test
 
-Les tests codés de l’interface utilisateur pilotent automatiquement votre application SharePoint via son interface utilisateur (IU). Ces tests couvrent les contrôles d’interface utilisateur, tels que les boutons et les menus, pour vérifier qu’ils fonctionnent correctement. Ce type de test est particulièrement utile si la validation ou une autre logique est effectuée dans l’interface utilisateur, par exemple dans une page Web. Vous pouvez également utiliser des tests codés de l’interface utilisateur pour automatiser les tests manuels. Vous créez des tests codés de l’interface utilisateur pour vos applications SharePoint de la même façon que vous créez des tests pour d’autres types d’applications. Pour plus d’informations, consultez [test des applications SharePoint 2010 avec des tests codés de l’interface utilisateur](/visualstudio/test/testing-sharepoint-2010-applications-with-coded-ui-tests?view=vs-2015).
+Les tests codés de l’interface utilisateur pilotent automatiquement votre application SharePoint via son interface utilisateur (IU). Ces tests couvrent les contrôles d’interface utilisateur, tels que les boutons et les menus, pour vérifier qu’ils fonctionnent correctement. Ce type de test est particulièrement utile si la validation ou une autre logique est effectuée dans l’interface utilisateur, par exemple dans une page Web. Vous pouvez également utiliser des tests codés de l’interface utilisateur pour automatiser les tests manuels. Vous créez des tests codés de l’interface utilisateur pour vos applications SharePoint de la même façon que vous créez des tests pour d’autres types d’applications. Pour plus d’informations, consultez [test des applications SharePoint 2010 avec des tests codés de l’interface utilisateur](../vs-2015/test/testing-sharepoint-2010-applications-with-coded-ui-tests.md?view=vs-2015).
 
 ## <a name="related-topics"></a>Rubriques connexes
 
-|Titre|Description|
+|Intitulé|Description|
 |-----------|-----------------|
 |[Procédure pas à pas : profilage d’une application SharePoint](../sharepoint/walkthrough-profiling-a-sharepoint-application.md)|Montre comment effectuer une analyse de profil d’échantillonnage sur une application SharePoint.|
 |[Tester les performances de votre application avant publication](/azure/devops/test/load-test/run-performance-tests-app-before-release?view=vsts)|Décrit comment créer des tests de charge, qui vous aident à effectuer des tests de contrainte sur les applications SharePoint.|
 |[Tests unitaires sur votre code](../test/unit-test-your-code.md)|Décrit comment rechercher des erreurs de logique dans votre code à l’aide de tests unitaires.|
-|[Test des applications SharePoint 2010 avec des tests codés de l’interface utilisateur](/visualstudio/test/testing-sharepoint-2010-applications-with-coded-ui-tests?view=vs-2015)|Décrit comment tester l’interface utilisateur de vos applications SharePoint.|
+|[Test des applications SharePoint 2010 avec des tests codés de l’interface utilisateur](../vs-2015/test/testing-sharepoint-2010-applications-with-coded-ui-tests.md?view=vs-2015)|Décrit comment tester l’interface utilisateur de vos applications SharePoint.|
 
 ## <a name="see-also"></a>Voir aussi
 

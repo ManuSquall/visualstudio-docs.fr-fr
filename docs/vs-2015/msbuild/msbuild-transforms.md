@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3f9a6f7985e3ebb3e77dcc605157f75e00a0842b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426038"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839501"
 ---
 # <a name="msbuild-transforms"></a>Transformations MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Une transformation est une conversion de type un-à-un d’une liste d’éléme
 ## <a name="dependency-analysis"></a>Analyse des dépendances  
  Les transformations garantissent un mappage de type un-à-un entre la liste d’éléments transformée et la liste d’éléments d’origine. Par conséquent, si une cible crée des sorties qui sont des transformations des entrées, [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] peut analyser les horodatages des entrées et des sorties, et décider s’il faut ignorer, générer ou partiellement regénérer une cible.  
   
- Dans la [tâche de copie](../msbuild/copy-task.md) de l’exemple suivant, chaque fichier de la liste d’éléments `BuiltAssemblies` est mappé à un fichier du dossier de destination de la tâche, spécifié en utilisant une transformation dans l’attribut `Outputs`. Si un fichier de la liste d’éléments `BuiltAssemblies` change, la tâche `Copy` est exécutée seulement pour le fichier modifié, et tous les autres fichiers sont ignorés. Pour plus d’informations sur l’analyse des dépendances et sur la façon d’utiliser des transformations, consultez [Guide pratique pour Générer de façon incrémentielle](../msbuild/how-to-build-incrementally.md).  
+ Dans la [tâche de copie](../msbuild/copy-task.md) de l’exemple suivant, chaque fichier de la liste d’éléments `BuiltAssemblies` est mappé à un fichier du dossier de destination de la tâche, spécifié en utilisant une transformation dans l’attribut `Outputs`. Si un fichier de la liste d’éléments `BuiltAssemblies` change, la tâche `Copy` est exécutée seulement pour le fichier modifié, et tous les autres fichiers sont ignorés. Pour plus d’informations sur l’analyse des dépendances et sur la façon d’utiliser des transformations, consultez [Guide pratique pour effectuer des générations incrémentielles](../msbuild/how-to-build-incrementally.md).  
   
 ```  
 <Target Name="CopyOutputs"  
@@ -68,7 +68,7 @@ Une transformation est une conversion de type un-à-un d’une liste d’éléme
 </Target>  
 ```  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a> Exemple  
   
 ### <a name="description"></a>Description  
  L’exemple suivant montre un fichier projet [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] qui utilise des transformations. Cet exemple suppose qu’il n’y a qu’un seul fichier .xsd dans le répertoire c:\sub0\sub1\sub2\sub3, et que le répertoire de travail est c:\sub0.  
@@ -111,4 +111,4 @@ extension: .xsd
 ## <a name="see-also"></a>Voir aussi  
  [Concepts MSBuild](../msbuild/msbuild-concepts.md)   
  [Référence MSBuild](../msbuild/msbuild-reference.md)   
- [Guide pratique pour effectuer des builds incrémentielles](../msbuild/how-to-build-incrementally.md)
+ [Guide pratique pour générer des builds incrémentielles](../msbuild/how-to-build-incrementally.md)

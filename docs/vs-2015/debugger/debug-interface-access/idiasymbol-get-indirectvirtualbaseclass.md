@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 18316d1ee91432555d5e9daf691adb6a7740d54e
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64804727"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839678"
 ---
-# <a name="idiasymbolgetindirectvirtualbaseclass"></a>IDiaSymbol::get_indirectVirtualBaseClass
+# <a name="idiasymbolget_indirectvirtualbaseclass"></a>IDiaSymbol::get_indirectVirtualBaseClass
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Récupère un indicateur qui spécifie si le type de données défini par l’utilisateur est une classe de base virtuelle indirecte.  
@@ -35,20 +35,20 @@ HRESULT get_indirectVirtualBaseClass ( 
   
 #### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- [out] Retourne `TRUE` si le type de données défini par l’utilisateur est une classe de base virtuelle indirecte ; sinon, retourne `FALSE`.  
+ à Retourne `TRUE` si le type de données défini par l’utilisateur est une classe de base virtuelle indirecte ; sinon, retourne `FALSE` .  
   
 ## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou code d’erreur.  
+ En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou code d’erreur.  
   
 > [!NOTE]
-> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
+> Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## <a name="requirements"></a>Configuration requise  
+## <a name="requirements"></a>Spécifications  
   
-|Prérequis|Description|  
+|Condition requise|Description|  
 |-----------------|-----------------|  
 |En-tête :|dia2.h|  
-|Version :|DIA SDK v7.0|  
+|Version :|DIA SDK v 7.0|  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

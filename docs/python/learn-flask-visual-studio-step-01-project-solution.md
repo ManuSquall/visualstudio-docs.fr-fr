@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7707d993ac5fb6f73060d0f862c828e67c833872
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 018b9a6707ea46a9b1c46f820faf7bd47dac1ff9
+ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315302"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "90809896"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Tutoriel : Bien démarrer avec le framework web Flask dans Visual Studio
 
@@ -106,7 +106,7 @@ Le développement Python n’est actuellement pas pris en charge dans Visual Stu
 
 Réponse : Tout d’abord, l’utilisation du contrôle de code source dès le début, en particulier si vous utilisez également un référentiel distant, assure une sauvegarde hors site régulière de votre projet. Contrairement au maintien d’un projet uniquement sur un système de fichiers local, le contrôle de code source fournit également un historique complet des modifications et permet de revenir facilement à un état précédent d’un seul fichier ou de tout le projet. L’historique des modifications aide à déterminer la cause des régressions (échecs de test). Par ailleurs, le contrôle de code source est essentiel si plusieurs personnes travaillent sur un projet, car il gère les remplacements et permet la résolution des conflits. Enfin, grâce au contrôle de code source, qui est fondamentalement une forme d’automatisation, vous êtes bien préparés à l’automatisation de la génération, des tests et de la gestion des versions. Il s’agit bien là de la première étape de l’utilisation de DevOps pour un projet, et étant donné qu’il y a peu d’obstacles à l’entrée, il n’y a vraiment aucune raison de ne pas utiliser le contrôle de code source dès le début.
 
-Pour poursuivre la discussion sur le contrôle de code source comme méthode d’automatisation, consultez Pour obtenir des informations supplémentaires sur le contrôle de code source en tant qu’automation, consultez [La Source de vérité : le rôle des référentiels dans DevOps](https://msdn.microsoft.com/magazine/mt763232), un article de MSDN Magazine écrit pour les applications mobiles qui s’applique également aux applications web.
+Pour poursuivre la discussion sur le contrôle de code source comme méthode d’automatisation, consultez Pour obtenir des informations supplémentaires sur le contrôle de code source en tant qu’automation, consultez [La Source de vérité : le rôle des référentiels dans DevOps](/archive/msdn-magazine/2016/september/mobile-devops-the-source-of-truth-the-role-of-repositories-in-devops), un article de MSDN Magazine écrit pour les applications mobiles qui s’applique également aux applications web.
 
 ### <a name="question-can-i-prevent-visual-studio-from-auto-committing-a-new-project"></a>Question : Puis-je empêcher Visual Studio de valider automatiquement un nouveau projet ?
 

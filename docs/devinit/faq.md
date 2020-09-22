@@ -1,5 +1,5 @@
 ---
-title: Forum Aux Questions
+title: Forum Aux Questions (FAQ)
 description: Forum aux questions sur l’outil devinit.
 ms.date: 08/28/2020
 ms.topic: reference
@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: dd2da52a84d972e47b0e63905f0c4b6d4f7af9f3
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: d926a51ecfa68f6a5caea0bcf84bcafaffddc0a7
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809319"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852475"
 ---
 # <a name="frequently-asked-questions-for-devinit"></a>Forum aux questions (FAQ) pour devinit
 
@@ -64,4 +64,4 @@ Si une installation de devinit nécessite un redémarrage du système d’exploi
 
 devinit consiste à activer l’utilisation de l’écosystème étendu pour déployer et configurer les dépendances que votre application peut avoir. Bien que devinit ait un avis sur ce qu’il fournit, devinit est essentiellement de permettre l’exécution d’autres outils à partir d’un fichier JSON déclaratif.
 
-Aujourd’hui, devinit est tout simplement mis en route et notre [liste d’outils](/devinit-tool-list.md) n’est qu’un début.
+Aujourd’hui, devinit est tout simplement mis en route et notre [liste d’outils](devinit-tool-list.md) n’est qu’un début.

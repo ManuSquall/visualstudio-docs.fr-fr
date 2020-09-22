@@ -1,5 +1,5 @@
 ---
-title: IDebugModule3::GetSymbolInfo | Microsoft Docs
+title: 'IDebugModule3 :: GetSymbolInfo | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -14,16 +14,16 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 48dd08b8ef1a8b32497d03dc7989b32a22ee5a9c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426357"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90840177"
 ---
 # <a name="idebugmodule3getsymbolinfo"></a>IDebugModule3::GetSymbolInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Récupère une liste de chemins d’accès qui sont explorés pour les symboles, ainsi que les résultats de recherche dans chaque chemin d’accès.  
+Récupère une liste de chemins d’accès dans lesquels des symboles sont recherchés, ainsi que les résultats de la recherche de chaque chemin d’accès.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -44,29 +44,29 @@ int GetSymbolInfo(
   
 #### <a name="parameters"></a>Paramètres  
  `dwFields`  
- [in] Une combinaison d’indicateurs de la [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) énumération spécifiant les champs de `pInfo` doivent être renseignés.  
+ dans Combinaison d’indicateurs de l’énumération [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) spécifiant les champs `pInfo` à remplir.  
   
  `pInfo`  
- [out] Un [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md) structure dont les membres sont à remplir avec les informations spécifiées. Si c’est une valeur null, cette méthode retourne `E_INVALIDARG`.  
+ à Structure [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md) dont les membres doivent être renseignés avec les informations spécifiées. S’il s’agit d’une valeur null, cette méthode retourne `E_INVALIDARG` .  
   
 ## <a name="return-value"></a>Valeur de retour  
- Si la méthode réussit, elle retourne `S_OK`; sinon, elle retourne un code d’erreur.  
+ Si la méthode est réussie, elle retourne `S_OK` ; sinon, elle retourne un code d’erreur.  
   
 > [!NOTE]
-> La chaîne retournée (dans le `MODULE_SYMBOL_SEARCH_INFO` structure) peut être vide même si `S_OK` est retourné. Dans ce cas, il n’a aucune information de recherche à retourner.  
+> La chaîne retournée (dans la `MODULE_SYMBOL_SEARCH_INFO` structure) peut être vide même si `S_OK` est retourné. Dans ce cas, il n’existait aucune information de recherche à retourner.  
   
-## <a name="remarks"></a>Notes  
- Si le `bstrVerboseSearchInfo` champ la `MODULE_SYMBOL_SEARCH_INFO` structure n’est pas vide, puis il contient une liste de chemins de recherche et les résultats de cette recherche. La liste est mis en forme avec un chemin d’accès, suivie de points de suspension («... »), suivis par le résultat. S’il existe plusieurs paires de résultat de chemin d’accès, chaque paire est séparée par une paire (retour chariot /) de « \r\n ». Le modèle ressemble à ceci :  
+## <a name="remarks"></a>Remarques  
+ Si le `bstrVerboseSearchInfo` champ de la `MODULE_SYMBOL_SEARCH_INFO` structure n’est pas vide, il contient une liste des chemins d’accès recherchés et les résultats de cette recherche. La liste est mise en forme avec un chemin d’accès, suivi de points de suspension (« ... »), suivi du résultat. S’il existe plus d’une paire de résultats de chemin, chaque paire est séparée par une paire « \r\n » (retour chariot/saut de seconde). Le modèle ressemble à ceci :  
   
- \<chemin d’accès >... \<résultat > \r\n\<chemin d’accès >... \<résultat > \r\n\<chemin d’accès >... \<résultat >  
+ \<path>...\<result> \r\n \<path> ... \<result> \r\n \<path> ...\<result>  
   
- Notez que la dernière entrée n’est pas une séquence \r\n.  
+ Notez que la dernière entrée n’a pas de séquence \r\n.  
   
-## <a name="example"></a>Exemple  
- Dans cet exemple, cette méthode retourne les trois chemins d’accès avec trois résultats de recherche différente. Chaque ligne se termine par une paire retour chariot /. L’exemple de sortie imprime simplement les résultats de recherche sous forme de chaîne unique.  
+## <a name="example"></a> Exemple  
+ Dans cet exemple, cette méthode retourne trois chemins d’accès avec trois résultats de recherche différents. Chaque ligne se termine par une paire retour chariot/saut de ligne. L’exemple de sortie affiche simplement les résultats de la recherche sous la forme d’une chaîne unique.  
   
 > [!NOTE]
-> Un résultat d’état est tout ce qui suit immédiatement la «... » jusqu'à la fin de la ligne.  
+> Le résultat de l’État est tout de suite après le « ... » jusqu’à la fin de la ligne.  
   
 ```cpp#  
 void ShowSymbolSearchResults(IDebugModule3 *pIDebugModule3)  
@@ -85,8 +85,8 @@ void ShowSymbolSearchResults(IDebugModule3 *pIDebugModule3)
 ```  
   
  **c:\symbols\user32.pdb... Fichier introuvable.**  
-**c:\winnt\symbols\user32.pdb... Version ne correspond pas.**  
-**\\\symbols\symbols\user32.dll\0a8sd0ad8ad\user32.pdb... Symboles chargés.**   
+**c:\winnt\symbols\user32.pdb... La version ne correspond pas.**  
+**\\\symbols\symbols\user32.dll \0a8sd0ad8ad\user32.pdb... Symboles chargés.**   
 ## <a name="see-also"></a>Voir aussi  
  [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md)   
  [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md)   

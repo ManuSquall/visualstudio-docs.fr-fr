@@ -1,5 +1,5 @@
 ---
-title: 'Erreur : le débogage &apos; n’est pas possible, car un débogueur du noyau est activé sur le système | Microsoft Docs'
+title: Le débogage &apos; n’est pas possible, car un débogueur du noyau est activé sur le système | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c94d605459720722b0e1360ab3a56539667d51e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 569d3d0baf98f5c13d0ccb182df6e51160db93d6
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88706631"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852769"
 ---
 # <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Erreur : le débogage n’est pas&#39;possible, car un débogueur du noyau est activé sur le système
 Lorsque vous déboguez du code managé, le message d'erreur suivant peut s'afficher :

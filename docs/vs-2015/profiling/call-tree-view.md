@@ -17,11 +17,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 105f16c0d9deb8d94a102818c5335af18685c675
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439332"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839273"
 ---
 # <a name="call-tree-view"></a>Vue Arborescence des appels
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,22 +36,22 @@ La vue Arborescence des appels affiche les chemins d’exécution de la fonction
   
  La vue Arborescence des appels peut être personnalisée en ajoutant ou en supprimant des colonnes. Cliquez avec le bouton droit sur la **barre de titre des noms de colonne**, puis sélectionnez **Ajouter/Supprimer des colonnes**.  
   
- Vous pouvez configurer une réduction du bruit pour la vue Arborescence des appels en limitant la quantité des données qui sont présentées. La réduction du bruit vous permet de repérer plus facilement les problèmes de performances dans la vue. Quand les problèmes de performances sont faciles à distinguer, l’analyse est plus facile. Pour plus d'informations, voir [Procédure : Configurer la réduction du bruit dans les vues rapports](../profiling/how-to-configure-noise-reduction-in-report-views.md).  
+ Vous pouvez configurer une réduction du bruit pour la vue Arborescence des appels en limitant la quantité des données qui sont présentées. La réduction du bruit vous permet de repérer plus facilement les problèmes de performances dans la vue. Quand les problèmes de performances sont faciles à distinguer, l’analyse est plus facile. Pour plus d’informations, consultez [Comment : configurer la réduction du bruit dans les vues de rapport](../profiling/how-to-configure-noise-reduction-in-report-views.md).  
   
 > [!NOTE]
 > Si la réduction du bruit est configurée pour afficher un avertissement quand elle est activée, une barre d’informations s’affiche dans le rapport.  
   
  Pour plus d’informations sur les définitions des colonnes dans la vue Arborescence des appels, consultez les rubriques suivantes :  
   
- [Mode Arborescence des appels](../profiling/call-tree-view-sampling-data.md)  
+ [Vue Arborescence des appels](../profiling/call-tree-view-sampling-data.md)  
   
- [Mode Arborescence des appels](../profiling/call-tree-view-instrumentation-data.md)  
+ [Vue Arborescence des appels](../profiling/call-tree-view-instrumentation-data.md)  
   
  [Vue Arborescence des appels - Échantillonnage](../profiling/call-tree-view-dotnet-memory-sampling-data.md)  
   
- [Mode Arborescence des appels](../profiling/call-tree-view-contention-data.md)  
+ [Vue Arborescence des appels](../profiling/call-tree-view-contention-data.md)  
   
 ## <a name="see-also"></a>Voir aussi  
- [Vues du rapport des performances](../profiling/performance-report-views.md)   
- [Présentation des valeurs de données d’instrumentation](../profiling/understanding-instrumentation-data-values.md)   
- [Présentation des valeurs de données d’échantillonnage](../profiling/understanding-sampling-data-values.md)
+ [Vues des rapports de performances](../profiling/performance-report-views.md)   
+ [Fonctionnement des valeurs de données d’instrumentation](../profiling/understanding-instrumentation-data-values.md)   
+ [Fonctionnement des valeurs de données d’échantillonnage](../profiling/understanding-sampling-data-values.md)

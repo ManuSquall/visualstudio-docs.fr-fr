@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Rechercher une fuite de mémoire (JavaScript) | Microsoft Docs'
+title: 'Procédure pas à pas : rechercher une fuite de mémoire (JavaScript) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,13 +17,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5617dc6cbe4b7ba096afe1f308d06e7f4aaf9c6a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439659"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "90839374"
 ---
-# <a name="walkthrough-find-a-memory-leak-javascript"></a>Procédure pas à pas : Rechercher une fuite de mémoire (JavaScript)
+# <a name="walkthrough-find-a-memory-leak-javascript"></a>Procédure pas à pas : rechercher une fuite de mémoire (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.png « windows_and_phone_content »)  
@@ -34,7 +34,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
 ### <a name="running-the-javascript-memory-analyzer-test-app"></a>Exécution de l'application test de l'analyseur de mémoire JavaScript  
   
-1. Dans Visual Studio, sélectionnez **Fichier**, **Nouveau**, **Projet**.  
+1. Dans Visual Studio, choisissez **Fichier**, **Nouveau**, **Projet**.  
   
 2. Dans le volet gauche, sélectionnez **JavaScript** , **Windows**, **Windows 8**, puis **Universel** ou **Applications Windows Phone**.  
   
@@ -45,7 +45,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
 4. Dans la zone **Nom** , spécifiez un nom, par exemple `JS_Mem_Tester`, puis choisissez **OK**.  
   
-5. Dans l’**Explorateur de solutions**, ouvrez default.html et collez le code suivant entre les balises \<body> :  
+5. Dans **Explorateur de solutions**, ouvrez default.html et collez le code suivant entre les \<body> Balises :  
   
     ```html  
     <div class="wrapper">  
@@ -139,7 +139,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
    > [!TIP]
    > Pour une application du Windows Store, vous pouvez également sélectionner **Ordinateur local** ou **Ordinateur distant** dans cette liste. Toutefois, l'avantage d'utiliser l'émulateur ou le simulateur est que vous pouvez le placer en regard de Visual Studio et basculer facilement entre l'application en cours d'exécution et l'analyseur de mémoire JavaScript. Pour plus d’informations, consultez [Exécuter des applications à partir de Visual Studio](../debugger/run-store-apps-from-visual-studio.md) et [Exécuter des applications du Windows Store sur un ordinateur distant](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
   
-2. Dans le menu **Déboguer** , choisissez **Profileur de performances**.  
+2. Dans le menu **Déboguer** , choisissez **profileur de performances...**.  
   
 3. Dans **Outils disponibles**, choisissez **Mémoire JavaScript**, puis **Démarrer**.  
   
@@ -168,7 +168,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
     Cette illustration montre l'instantané de référence (n°1) et l'instantané n°2.  
   
-    ![L’instantané de ligne de base et instantané 2](../profiling/media/js-mem-app-snapshot2.png "JS_Mem_App_Snapshot2")  
+    ![L'instantané de ligne de base et instantané 2](../profiling/media/js-mem-app-snapshot2.png "JS_Mem_App_Snapshot2")  
   
    > [!NOTE]
    > Le Windows Phone Emulator n'affiche pas de capture d'écran de l'application au moment de la prise de l'instantané.  
@@ -182,7 +182,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
      Cette illustration montre l'instantané n°2 et l'instantané n°3.  
   
-     ![Instantané 2 et instantané 3](../profiling/media/js-mem-app-snapshot3.png "JS_Mem_App_Snapshot3")  
+     ![Instantané 2 et instantané 3](../profiling/media/js-mem-app-snapshot3.png "JS_Mem_App_Snapshot3")  
   
 11. Dans Visual Studio, choisissez **Arrêter** pour arrêter le profilage.  
   
@@ -211,7 +211,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
 15. Ouvrez l'objet HTMLDivElement en haut de l'arborescence d'objets comme indiqué ici.  
   
-     ![Vue de comparaison du nombre d’objets dans le tas](../profiling/media/js-mem-app-typesdiff.png "JS_Mem_App_TypesDiff")  
+     ![Vue de comparaison du nombre d'objets dans la pile](../profiling/media/js-mem-app-typesdiff.png "JS_Mem_App_TypesDiff")  
   
      Cette vue affiche des informations utiles sur la fuite de mémoire, par exemple la suivante :  
   
@@ -219,12 +219,12 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
     - Cet objet est l'objet créé à partir de l'instantané n°2 et représente une fuite de mémoire potentielle.  
   
-      Connaissance de l’application aide à ce stade : En choisissant le **fuite de mémoire** bouton doit supprimer un élément DIV et ajouter un élément, si le code ne semble pas fonctionner correctement (autrement dit, il les fuites de mémoire). La section suivante explique comment résoudre cela.  
+      La connaissance de l'application est une aide à ce stade. Sélectionner le bouton **Fuite de mémoire** doit supprimer un élément DIV et ajouter un élément, si le code ne semble pas fonctionner correctement (dans ce cas, une fuite de mémoire se produit). La section suivante explique comment résoudre cela.  
   
     > [!TIP]
     > Parfois, la recherche d'un objet par rapport à l'objet `Global` peut aider à identifier cet objet. Pour cela, ouvrez le menu contextuel de l'identificateur et choisissez **Afficher en vue racine**.  
   
-## <a name="FixingMemory"></a> Résolution du problème de mémoire  
+## <a name="fixing-the-memory-issue"></a><a name="FixingMemory"></a> Résolution du problème de mémoire  
   
 1. Les données révélées par le profileur vous permettent d'examiner le code responsable de la suppression d'éléments DOM avec un ID d'« élément ». Cela se produit dans la fonction `initialize()`.  
   
@@ -266,7 +266,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
 4. Dans **Outils disponibles**, choisissez **Mémoire JavaScript**, puis **Démarrer**.  
   
-5. Suivez la même procédure qu'avant pour prendre trois instantanés. Les étapes sont les suivantes :  
+5. Suivez la même procédure qu'avant pour prendre trois instantanés. En bref, les étapes sont les suivantes :  
   
    1. Dans l'application, sélectionnez successivement le bouton **Fuite de mémoire** à quatre reprises.  
   

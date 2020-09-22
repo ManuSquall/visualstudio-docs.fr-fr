@@ -1,5 +1,5 @@
 ---
-title: Comment déboguer sur un cluster à hautes performances | Microsoft Docs
+title: Déboguer sur un cluster à hautes performances | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 905a196b0872ac0d8665293200837861adf49795
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f5f33fe5fd556830d0276f3e7cbfef3731dfe7db
+ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350067"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "90852437"
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster-c-visual-basic-c"></a>Comment : déboguer sur un cluster à hautes performances (C#, Visual Basic, C++)
 
@@ -91,7 +91,7 @@ Le débogage d'un programme multitraitement sur un cluster hautement performant 
 
 4. Cliquez sur **OK**.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
  L'exemple suivant montre comment créer un filtre pour un point d'arrêt sur un ordinateur nommé `marvin` et un thread nommé `fourier1`.
 
 `(MachineName = marvin) & (ThreadName = fourier1)`
