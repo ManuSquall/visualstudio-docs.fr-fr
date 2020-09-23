@@ -1,18 +1,18 @@
 ---
 title: Rechercher et filtrer | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 9c0b9a4f-b9a3-491c-a68f-6e4bac7f7b3d
-ms.date: 08/10/2020
+ms.date: 09/21/2020
 ms.topic: how-to
 description: Découvrez comment les administrateurs peuvent rechercher des abonnés individuels ou des groupes d’abonnés dans le portail d’administration.
-ms.openlocfilehash: 29354348b423b539b79c36c78f213f7a20d60eb3
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 341f8e9739b629330775ff8688c5fdf872165e3a
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005301"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022232"
 ---
 # <a name="search-and-filter-subscribers-in-visual-studio-subscriptions"></a>Rechercher et filtrer des abonnés dans les abonnements Visual Studio
 Le portail d’administration des abonnements Visual Studio vous permet de rechercher un groupe spécifique d’abonnés selon différents critères. Vous pouvez filtrer la liste des abonnés par nom, adresse e-mail, niveau d’abonnement et autres critères.
@@ -30,7 +30,7 @@ Le portail d’administration des abonnements Visual Studio vous permet de reche
    > [!NOTE]
    > Le champ **Nom** est trié par prénom.
 
-   Notez que l’icône de **filtre** est mise en surbrillance, ce qui indique qu’un filtre est appliqué.  Un choix de **filtre clair** est également affiché. 
+   Notez que l’icône de **filtre** est mise en surbrillance, ce qui indique qu’un filtre est appliqué.  Un choix de **filtre clair** est également affiché. Dans cet exemple, nous avons filtré notre liste d’abonnés pour trouver ceux qui avaient des @outlook.com adresses e-mail. 
 
 3. Pour effacer le filtre et restaurer la liste non filtrée, cliquez sur l’onglet **Effacer le filtre** en haut à droite. 
    > [!div class="mx-imgBorder"]

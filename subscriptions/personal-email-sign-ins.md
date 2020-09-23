@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 3f4b0528-03f0-4a02-b3c3-a39292a9bbe1
-ms.date: 09/17/2020
+ms.date: 09/22/2020
 ms.topic: conceptual
 description: Abonnements Visual Studio – Pourquoi les adresses Hotmail ou Gmail de mes abonnés sont-elles affichées ?
-ms.openlocfilehash: c7a5546a99ed73175ab0f4af2c22b3cbf20c0bdd
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: dc2de6c852f39f789fb07358384ad490d13f137c
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006070"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022648"
 ---
 # <a name="visual-studio-subscriptions--why-do-i-see-personal-accounts-for-my-subscribers"></a>Abonnements Visual Studio : pourquoi les comptes personnels s’affichent-ils pour mes abonnés ?
 Une fois que les sociétés ont migré du centre de gestion des licences en volume (VLSC) vers le nouveau [portail d’administration des abonnements](https://manage.visualstudio.com)Visual Studio, les administrateurs ont été surpris de trouver que l’adresse de messagerie de connexion pour certains abonnés affiche une adresse e-mail personnelle comme Hotmail ou Outlook.  
@@ -28,20 +28,21 @@ Au cours du processus d’activation de l’abonné, un compte Microsoft (MSA) �
 > L’expérience de l’abonné moderne sur [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) prend en charge les types d’identité professionnel/scolaire et compte Microsoft (MSA).
 
 ## <a name="solution"></a>Solution
+Pour résoudre le problème, il vous suffit de sélectionner le bouton **Connect emails (connecter les e-mails** ) pour que le système tente de faire correspondre les comptes avec MSAS aux utilisateurs existants dans le Azure Active Directory de votre organisation (Azure AD), en fonction de la correspondance du prénom et du nom. En cas d’erreur, vous pouvez supprimer toute correspondance en cliquant sur le **X** à droite de la correspondance.  
+
+Regardez cette vidéo ou poursuivez votre lecture pour savoir comment résoudre ce problème. 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4th6B]
-
-Pour résoudre le problème, il vous suffit de sélectionner le bouton **Connect emails (connecter les e-mails** ) pour que le système tente de faire correspondre les comptes avec MSAS aux utilisateurs existants dans le Azure Active Directory de votre organisation (Azure AD), en fonction de la correspondance du prénom et du nom. En cas d’erreur, vous pouvez supprimer toute correspondance en cliquant sur le **X** à droite de la correspondance.  
 
 > [!div class="mx-imgBorder"]
 > ![Bouton connecter des E-mails](_img/connect-emails/connect-emails-button.png "Cliquez sur connecter les E-mails pour faire correspondre vos utilisateurs avec des comptes Microsoft à votre Azure Active Directory")
 
-Vous pouvez également utiliser le **Répertoire de recherche** pour corriger les erreurs ou renseigner les informations manquantes de votre Azure ad. Si toutes les correspondances semblent correctes, vous pouvez choisir de « sélectionner tous les abonnés correspondants » au lieu de les sélectionner un par un.  
+Vous pouvez également utiliser le **Répertoire de recherche** pour corriger les erreurs ou renseigner les informations manquantes de votre Azure ad. Si toutes les correspondances semblent correctes, vous pouvez choisir le bouton **identité actuelle** pour sélectionner toutes les entrées correspondantes au lieu de les sélectionner une à la fois.  
 
 > [!div class="mx-imgBorder"]
 > ![Connexion des E-mails à la volée](_img/connect-emails/connect-emails-flyout.png "Sélectionnez les abonnés que vous souhaitez faire correspondre à leurs identités Azure AD, puis cliquez sur continuer.")
 
-Cliquez ensuite sur « continuer » pour accéder à la liste des modifications à effectuer. Si vous acceptez, cliquez sur « Enregistrer » pour effectuer les modifications. Votre abonné recevra également un message les informant de la modification la prochaine fois qu’il se connectera à son abonnement.   
+Ensuite, cliquez sur **Continuer** pour accéder à la liste des modifications à effectuer. Si vous acceptez, cliquez sur **Enregistrer** pour effectuer les modifications. Votre abonné recevra également un message les informant de la modification la prochaine fois qu’il se connectera à son abonnement.  Notez que seuls les deux abonnés qui ont été mis en correspondance dans la Azure Active Directory apparaissent dans cette liste.  Dans notre exemple, étant donné que Frederick n’a pas d’adresse correspondante dans le Azure AD, son compte Microsoft (MSA) n’a pas été mis en correspondance avec un compte professionnel. 
 
 > [!div class="mx-imgBorder"]
 > ![Confirmation de connexion des E-mails](_img/connect-emails/connect-emails-confirm.png "Cliquez sur continuer pour implémenter les modifications proposées, puis cliquez sur Enregistrer.") 

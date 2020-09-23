@@ -1,7 +1,8 @@
 ---
 title: Dessiner des formes et des tracés
+description: Utiliser Blend pour Visual Studio pour ajouter plus de détails à des formes et des tracés
 titleSuffix: Blend for Visual Studio
-ms.date: 07/31/2019
+ms.date: 09/22/2020
 ms.topic: conceptual
 ms.assetid: d5378c59-e2e5-49f0-91f1-aa82d984a33c
 author: TerryGLee
@@ -9,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b87ed03c8f513f6a9a750186d8763e56061bed98
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 368619a55316e0af59fc5351e187ced8892a6116
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350821"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022504"
 ---
 # <a name="draw-shapes-and-paths"></a>Dessiner des formes et des tracés
 
@@ -26,7 +27,7 @@ Les formes et les tracés font appel à des graphiques vectoriels pour mieux s�
 
 Recherchez des formes dans la fenêtre **Composants**.
 
-![Catégorie Formes dans la fenêtre Composants](media/blend-shapes.png)
+:::image type="content" source="media/blend-shapes.png" alt-text="Capture d’écran de la catégorie formes de la fenêtre composants dans Blend pour Visual Studio":::
 
 Faites glisser la forme de votre choix vers la planche graphique. Vous pouvez ensuite utiliser les poignées de la forme pour la mettre à l’échelle, la faire pivoter, la déplacer ou l’incliner.
 
@@ -99,7 +100,7 @@ Vous pouvez combiner des tracés et des formes pour en faire un seul et même tr
 
 ![Combiner des tracés](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png)
 
-|Number|Action|
+|Numéro|Action|
 |-|-|
 |![Les deux formes avant d'être combinées](../designers/media/b1_1.png)|Les deux formes avant d'être combinées|
 |![Unir](../designers/media/b1_2.png)|Unir|

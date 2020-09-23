@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 0fe9eaa4-f589-429e-a443-13bf86637d5a
-ms.date: 09/03/2020
+ms.date: 09/21/2020
 ms.topic: conceptual
 description: Découvrir comment définir les préférences pour la langue, les contacts, le niveau d’abonnement et d’autres éléments dans le portail d’administration
-ms.openlocfilehash: e9b5b861260e13b0882a5eabee01db102d63b2af
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 58819995966f5cdf17335de474e83d2a77eccc37
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006161"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022607"
 ---
 # <a name="set-preferences-for-your-agreements-in-the-administration-portal"></a>Définir les préférences pour vos contrats dans le portail d’administration
 Les super administrateurs peuvent définir certaines préférences dans le portail d’administration (portail d’administration) qui seront appliquées globalement pour chaque contrat.  Ces préférences remplissent automatiquement les détails de l’abonnement pour vos administrateurs lorsqu’ils ajoutent des abonnés et peuvent uniquement être modifiées globalement par les super administrateurs.  
@@ -47,7 +47,7 @@ Cette préférence permet à vos abonnés d’accéder aux administrateurs à l�
 > L’adresse e-mail que vous indiquez ici n’est PAS fournie aux abonnés.  Lorsqu’un abonné soumet une demande de **contact avec mon administrateur** dans le portail de l’abonné, le message est transféré à l’alias sans l’exposer à l’abonné. 
 
 ### <a name="default-subscription-level"></a>Niveau d’abonnement par défaut
-Vous pouvez utiliser ce paramètre pour déterminer quel niveau d’abonnement inclus dans votre contrat est sélectionné par défaut quand un abonnement est attribué à un utilisateur.  Les administrateurs peuvent changer le paramètre et le définir sur n’importe quel niveau d’abonnement de votre contrat : ceci vous évite simplement d’avoir à effectuer de façon répétée votre choix le plus courant. 
+Vous pouvez utiliser ce paramètre pour déterminer quel niveau d’abonnement inclus dans votre contrat est sélectionné par défaut quand un abonnement est attribué à un utilisateur.  Les administrateurs peuvent remplacer le paramètre par n’importe quel niveau d’abonnement dans votre contrat, ce qui évite simplement d’avoir à répéter votre choix le plus courant. 
 
 ### <a name="default-communication-preferences"></a>Préférences de communication par défaut
 La définition de la langue et des paramètres régionaux de communication par défaut permet de simplifier le processus d’attribution des abonnements.  Par exemple, si votre équipe de développement est basée dans un pays différent de celui de votre équipe d’administration, vous pouvez définir les préférences les mieux adaptées à l’emplacement des abonnés. Ces paramètres peuvent néanmoins toujours être modifiés par tous les administrateurs pour des abonnés individuels. 

@@ -1,18 +1,18 @@
 ---
 title: Modifier les abonnements dans le portail d’administration | Microsoft Docs
 author: evanwindom
-ms.author: lank
+ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 97ac8e4d-7a03-42f8-98cb-15bcaa90ef65
-ms.date: 07/30/2020
+ms.date: 09/21/2020
 ms.topic: how-to
 description: Découvrez comment les administrateurs peuvent modifier des attributions d’abonnement.
-ms.openlocfilehash: 3d96610c940dc8e4404212a6f3a3dbaa7fe3ef51
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 060ae7c7679eb1bf9dc4da99ea9a1bf952ebc58b
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005585"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022537"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>Modifier des attributions d’abonnements Visual Studio
 En tant qu’administrateur des abonnements, vous pouvez apporter des modifications aux abonnements attribués à des personnes au sein de votre organisation.  Cet article décrit les types de modifications que vous pouvez apporter et indique les étapes à suivre.
@@ -34,6 +34,7 @@ Vous pouvez mettre à jour le prénom, le nom, le niveau d’abonnement, l’adr
 
 Vous pouvez modifier plusieurs abonnés à la fois en effectuant une modification en bloc. Cette fonctionnalité est principalement destinée aux organisations qui doivent changer les adresses e-mail de façon globale ou aux organisations qui souhaitent restreindre l’accès aux téléchargements.
 
+Regardez cette vidéo ou lisez pour savoir comment modifier plusieurs abonnés à l’aide de la modification en bloc. 
 <br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vkAF]

@@ -1,21 +1,23 @@
 ---
 title: Assigner des GUID spécifiques à des abonnés Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
-ms.date: 04/20/2020
+ms.author: v-evwin
+manager: cabuschl
+ms.date: 09/21/2020
 ms.topic: conceptual
 description: Découvrez comment les administrateurs peuvent avoir un GUID d’abonnement spécifique aux abonnés
-ms.openlocfilehash: e6c50239721d810964f2b95e0ec3509999d2f4d5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31544718683b10a186d4c38486bf0cd7923cd4cf
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87235184"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022477"
 ---
 # <a name="assign-specific-subscriptions-in-the-visual-studio-subscriptions-administration-portal"></a>Affecter des abonnements spécifiques dans le portail d’administration des abonnements Visual Studio
 
 Les administrateurs peuvent désormais utiliser le portail d’administration des abonnements Visual Studio pour affecter des abonnements spécifiques à des abonnés individuels.  Cela peut être utile dans les situations où l’organisation possède un personnel temporaire ou des fournisseurs qui ont besoin d’accéder à un abonnement pendant une brève période.  Les administrateurs peuvent attribuer un abonnement qui a déjà été partiellement utilisé, en laissant leurs nouveaux abonnements pour une utilisation à long terme.  
+
+Regardez la vidéo ou lisez pour savoir comment affecter des GUID d’abonnements spécifiques aux utilisateurs. 
 
 <br>
 
@@ -57,7 +59,7 @@ La dernière étape consiste à télécharger le modèle d' **Ajout en bloc** , 
 > - Le GUID n’est pas déjà attribué à un autre utilisateur dans la liste exportée. 
 
 ## <a name="frequently-asked-questions"></a>Forum aux questions
-### <a name="qhow-do-i-change-which-subscription-is-currently-assigned-to-an-individual-user"></a>Q :How dois-je changer l’abonnement actuellement attribué à un utilisateur individuel ?
+### <a name="q-how-do-i-change-which-subscription-is-currently-assigned-to-an-individual-user"></a>Q : Comment faire modifier l’abonnement actuellement attribué à un utilisateur individuel ?
 R : Si vous souhaitez modifier le GUID affecté à un utilisateur, vous devez d’abord supprimer l’abonnement de cet utilisateur.  Pour plus d’informations, consultez notre article sur la [suppression des abonnements](delete-license.md) pour plus d’informations.  Après avoir supprimé l’abonnement pour cet utilisateur, utilisez la procédure décrite ci-dessus pour exporter la liste et télécharger les nouvelles informations d’abonnement.  
 
 ## <a name="see-also"></a>Voir aussi

@@ -4,20 +4,21 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: c473b01f-2dfe-4cc2-ad29-bb5e2a268123
-ms.date: 09/16/2020
+ms.date: 09/21/2020
 ms.topic: conceptual
 description: Découvrir comment afficher le nombre maximal d’abonnements attribués dans le portail d’administration
-ms.openlocfilehash: f13fc75d2c359b05f74d781a3d6a8d0de99d39ff
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: b9ff33623311e4bfeff6b6067d5631d4e65efda9
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005870"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022167"
 ---
 # <a name="use-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>Utiliser la fonctionnalité utilisation maximale pour suivre le nombre d’abonnements affectés
 Une nouvelle fonctionnalité du portail d’administration des abonnements Visual Studio vous permet de suivre le nombre d’abonnements que vous avez achetés et attribués. Elle permet également d’identifier le nombre maximal d’abonnements de chaque niveau que vous avez attribués au cours de l’année précédente et pendant la durée de votre ou vos contrats. 
 
 ## <a name="maximum-usage-overview"></a>Vue d’ensemble de l’utilisation maximale
+Regardez la vidéo ou lisez pour savoir comment utiliser la fonctionnalité utilisation maximale. 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4tdQK] 
 
 ## <a name="view-your-maximum-usage"></a>Voir votre utilisation maximale

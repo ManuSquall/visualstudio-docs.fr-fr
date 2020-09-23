@@ -1,18 +1,18 @@
 ---
 title: Attribuer des licences à des abonnements Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 4e529a43-7aed-4eee-895d-862a631952df
-ms.date: 03/02/2020
+ms.date: 09/21/2020
 ms.topic: conceptual
 description: Découvrez comment les administrateurs peuvent attribuer des licences aux abonnés
-ms.openlocfilehash: f458e12cd27688f910917842de89e6377675fb69
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: cd64aa058ab5c0518fc27bf1ee64acef3b5b79a2
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006200"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022193"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>Attribuer des licences dans le portail d’administration des abonnements Visual Studio
 En tant qu’administrateur des abonnements Visual Studio, vous pouvez utiliser le portail d’administration pour attribuer des abonnements à des utilisateurs individuels ou à des groupes d’utilisateurs.
@@ -24,7 +24,7 @@ Pour les groupes d’utilisateurs, vous avez la possibilité de choisir la faço
 
 
 ## <a name="add-a-single-subscriber"></a>Ajouter un seul abonné
-Voici comment affecter un abonnement Visual Studio à un nouvel utilisateur afin qu’il puisse accéder aux avantages de l’abonnement.
+Regardez la vidéo ou lisez ce qui suit pour savoir comment attribuer un abonnement Visual Studio à un nouvel utilisateur afin qu’il puisse accéder aux avantages de l’abonnement.
 
 <br>
 

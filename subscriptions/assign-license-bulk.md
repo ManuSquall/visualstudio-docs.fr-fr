@@ -1,23 +1,23 @@
 ---
 title: Attribuer des licences à des groupes d’utilisateurs pour des abonnements Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
-ms.date: 05/10/2020
+ms.date: 09/21/2020
 ms.topic: how-to
 description: Découvrez comment les administrateurs peuvent attribuer des licences à plusieurs abonnés à l’aide de la fonctionnalité d’ajout en bloc ou de groupes de Microsoft Azure Active Directory
-ms.openlocfilehash: cbcdab00568e375633ddd9d6d350978d6ec56d2a
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 6154e9796e1ba021eedf86bcee7d508e285b6645
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005764"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022408"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Attribuer des abonnements à plusieurs utilisateurs
 Le portail d’administration des abonnements vous permet d’ajouter des utilisateurs un à la fois ou dans des grands groupes.  Pour ajouter des utilisateurs individuels, consultez [Ajouter des utilisateurs uniques](assign-license.md).
 
-Pour ajouter des groupes d’utilisateurs importants, vous pouvez utiliser la fonctionnalité d’ajout en bloc ou, si votre organisation utilise Microsoft Azure Active Directory (Azure AD), vous pouvez utiliser des groupes de Azure AD. Cet article explique le processus pour les deux options. 
+Pour ajouter des groupes d’utilisateurs importants, vous pouvez utiliser la fonctionnalité d’ajout en bloc ou, si votre organisation utilise Microsoft Azure Active Directory (Azure AD), vous pouvez utiliser des groupes de Azure AD. Cet article explique le processus pour les deux options.  Regardez cette vidéo ou lisez la suite pour en savoir plus sur la fonctionnalité d’ajout en bloc. 
 
 <br>
 
@@ -64,7 +64,8 @@ Pour ajouter des groupes d’utilisateurs importants, vous pouvez utiliser la fo
 
    Si vous rencontrez un échec, procédez comme suit :
    1. Ouvrez le fichier Excel que vous avez créé, corrigez les problèmes, puis enregistrez le fichier.
-   0. Revenez au portail d’administration et choisissez **Ajouter**.
+   0. Revenez au portail d’administration et ignorez le message d’erreur.
+   0. Choisissez **Ajouter**.
    0. Sélectionnez **Ajout en bloc**.
    0. Étant donné que vous avez déjà enregistré le fichier Excel, vous n’avez pas besoin de télécharger le modèle.  Sélectionnez **Parcourir**, localisez le fichier que vous venez d’enregistrer, puis sélectionnez **ouvrir**.
    0. Sélectionnez **OK**.
@@ -89,6 +90,7 @@ Grâce à cette fonctionnalité, il est facile de rester au-dessus de vos affect
 > - Tous les membres du groupe doivent avoir une adresse de messagerie associée à leur compte Azure AD.
 > - Les adresses e-mail distinctes pour les notifications ne sont pas prises en charge pour les abonnements ajoutés à l’aide de groupes de Azure AD.  
 
+Regardez cette vidéo ou lisez la suite pour en savoir plus sur l’ajout d’abonnés à l’aide de la fonctionnalité de groupe de Azure Active Directory. 
 <br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4rvvW]

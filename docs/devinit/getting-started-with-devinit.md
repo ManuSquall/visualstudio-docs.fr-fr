@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: ec29ecc0c54646637a3176641ab21f40c20fa2fc
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 62c31dcb72735304f7b28e7dfd817f6647187bc9
+ms.sourcegitcommit: 4affcf2830337e6aba84621c3eda5faf5d0d4a01
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005665"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "91022628"
 ---
 # <a name="getting-started-with-devinit"></a>Prise en main avec devinit
 
@@ -28,7 +28,7 @@ devinit est actuellement disponible uniquement dans le cadre de GitHub Codespace
 
 L’étape la plus importante consiste à définir votre environnement « développeur » dans un [ _.devinit.jssur_ un fichier](devinit-json.md). Ce fichier sera utilisé par devinit pour créer votre environnement lors de l’exécution de `devinit init` .
 
-Pour cette étape, réfléchissez aux instructions permettant à quelqu’un d’être opérationnel avec un référentiel de projet. Par exemple, le SQL doit-il être installé ? Une version spécifique de .NET Core ? suite. Ensuite, pour chacune de ces dépendances, recherchez un outil devinit correspondant dans la [liste des outils](devinit-tool-list.md)) et ajoutez-le au.devinit.jsdu référentiel _ sur_ le fichier.
+Pour cette étape, réfléchissez aux instructions permettant à quelqu’un d’être opérationnel avec un référentiel de projet. Par exemple, le SQL doit-il être installé ? Une version spécifique de .NET Core ? suite. Ensuite, pour chacune de ces dépendances, recherchez un outil devinit correspondant dans la [liste des outils](devinit-tool-list.md) et ajoutez-le à l'.devinit.jsdu référentiel _ sur_ le fichier.
 
 ## <a name="step-3-enjoy"></a>Étape 3 : Profitez-en !
 
