@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cce59dfb39da71b8ff87efd49de9e2e0f6cdbd0
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 6410e9ba1250da5a0a247c786e4aada310186c4a
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851409"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211363"
 ---
 # <a name="how-to-install-a-visualizer"></a>Comment : installer un visualiseur
 Après avoir créé un visualiseur, vous devez l'installer de sorte qu'il soit disponible dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. L'installation d'un visualiseur est un processus simple.
@@ -32,7 +32,7 @@ Après avoir créé un visualiseur, vous devez l'installer de sorte qu'il soit d
 
 ::: moniker range=">=vs-2019"
 ### <a name="to-install-a-visualizer-for-visual-studio-2019"></a>Pour installer un visualiseur pour Visual Studio 2019
-  
+
 1. Recherchez la DLL qui contient le visualiseur que vous avez généré.
 
    En règle générale, il est préférable que la DLL côté débogueur et la DLL côté programme débogué spécifient **Any CPU** comme plateforme cible. La DLL côté débogueur doit être **Any CPU** ou **32 bits**. La plateforme cible de la DLL côté programme débogué doit correspondre au processus débogué.
@@ -42,7 +42,7 @@ Après avoir créé un visualiseur, vous devez l'installer de sorte qu'il soit d
     - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers`
 
     - `My Documents\` *VisualStudioVersion* `\Visualizers`
-    
+
 3. Copiez la dll du [côté débogué](create-custom-visualizers-of-data.md#to-create-the-visualizer-object-source-for-the-debuggee-side) dans l’un des emplacements suivants :
 
     - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers\` *Infrastructure*
@@ -61,7 +61,7 @@ Après avoir créé un visualiseur, vous devez l'installer de sorte qu'il soit d
 4. Redémarrez la session de débogage.
 
 > [!NOTE]
-> La procédure est différente dans Visual Studio 2017 et les versions antérieures. Consultez la [version précédente](how-to-install-a-visualizer.md?view=vs-2017) de cet article.
+> La procédure est différente dans Visual Studio 2017 et les versions antérieures. Consultez la [version précédente](how-to-install-a-visualizer.md?view=vs-2017&preserve-view=true) de cet article.
 ::: moniker-end
 
 ::: moniker range="vs-2017"

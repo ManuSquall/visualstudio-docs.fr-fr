@@ -17,12 +17,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 08501d71400a0df139022f04e68573d0dd1449d1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 99274d3884d002f6dee29a632f8a7c08ac90a56f
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315133"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211126"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Options pour Python dans Visual Studio
 
@@ -51,7 +51,7 @@ Il existe également des options supplémentaires spécifiques à python sous l�
 | **Afficher la barre de notification pour créer des environnements** | Activé | *Visual Studio 2019 uniquement.* Lorsque cette option est définie et que l’utilisateur ouvre un projet qui contient un fichier *requirements.txt* ou *environment.yml*, Visual Studio affiche une barre d’informations avec des suggestions pour créer un environnement virtuel ou un environnement conda, respectivement, au lieu d’utiliser l’environnement global par défaut. |
 | **Afficher la barre de notification pour installer des packages** | Activé | *Visual Studio 2019 uniquement.* Lorsque cette option est définie et que l’utilisateur ouvre un projet qui contient un fichier *requirements.txt* (et n’utilise pas l’environnement global par défaut), Visual Studio compare ces exigences avec les packages installés dans l’environnement actuel. Si des packages sont manquants, Visual Studio affiche une invite pour installer ces dépendances. |
 | **Toujours exécuter des Gestionnaires de package en tant qu’administrateur** | Désactivé | Élève toujours les privilèges de `pip install` et d’opérations de gestionnaire de package similaires pour tous les environnements. Au moment de l’installation des packages, Visual Studio demande des privilèges d’administrateur, si l’environnement se trouve dans une zone protégée du système de fichiers, par exemple *c:\Program Files*. Dans cette invite, vous pouvez choisir de toujours élever les privilèges de la commande d’installation pour cet environnement uniquement. Consultez l' [onglet packages](python-environments-window-tab-reference.md#packages-tab). |
-| **Générer automatiquement la base de données de saisie semi-automatique à la première utilisation** | Activé | *S’applique à Visual Studio 2017 15.5 et versions antérieures, ainsi qu’aux versions ultérieures si une base de données IntelliSense est utilisée.* Donne la priorité à l’achèvement de la base de données pour une bibliothèque quand vous écrivez du code qui l’utilise. Pour plus d’informations, voir [Onglet IntelliSense](python-environments-window-tab-reference.md?view=vs-2017#intellisense-tab). |
+| **Générer automatiquement la base de données de saisie semi-automatique à la première utilisation** | Activé | *S’applique à Visual Studio 2017 15.5 et versions antérieures, ainsi qu’aux versions ultérieures si une base de données IntelliSense est utilisée.* Donne la priorité à l’achèvement de la base de données pour une bibliothèque quand vous écrivez du code qui l’utilise. Pour plus d’informations, voir [Onglet IntelliSense](python-environments-window-tab-reference.md?view=vs-2017&preserve-view=true#intellisense-tab). |
 | **Ignorer les variables PYTHONPATH à l’échelle du système** | Activé | PYTHONPATH est ignoré par défaut, car Visual Studio fournit un moyen plus direct de spécifier des chemins de recherche dans les projets et environnements. Consultez la page [Chemins de recherche](search-paths.md) pour plus d’informations. |
 | **Mettre à jour les chemins de recherche lors de l’ajout de fichiers liés** | Activé | Quand cette option est définie, l’ajout d’un [fichier lié](managing-python-projects-in-visual-studio.md#linked-files) à un projet met à jour les [Chemins de recherche](search-paths.md) afin qu’IntelliSense puisse inclure le contenu du dossier du fichier lié dans sa base de données de saisie semi-automatique. Désactivez cette option pour exclure ce contenu de la base de données de saisie semi-automatique. |
 | **Avertir quand le module importé est introuvable** | Activé | Désactivez cette option pour supprimer les avertissements quand vous savez qu’un module importé n’est actuellement pas disponible, mais n’affecte pas par ailleurs le fonctionnement du code. |

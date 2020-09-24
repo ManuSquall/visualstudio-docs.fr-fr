@@ -17,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: a43ac0930c4805d18c60a18e1b48882b2fed76de
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 5e270956fc6c8f1d7432cb65e1eaf37fdc58907c
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600189"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211087"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Déboguer du code HTML et CSS dans les applications UWP dans Visual Studio
 
@@ -237,7 +237,7 @@ Il existe trois façons de sélectionner des éléments DOM lors du débogage d�
 
 - Utilisez le bouton **Sélectionner un élément** (Ctrl+B).
 
-- Utilisez le bouton `select` , qui est l’une des [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017).
+- Utilisez le bouton `select` , qui est l’une des [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true).
 
   Quand vous utilisez la fenêtre de l’explorateur DOM pour sélectionner des éléments et placez le pointeur de la souris sur un élément, l’élément correspondant est mis en surbrillance dans l’application en cours d’exécution. Vous devez cliquer sur l’élément dans l’explorateur DOM pour le sélectionner, ou vous pouvez utiliser les touches de direction pour mettre en surbrillance et sélectionner des éléments. Vous pouvez également sélectionner des éléments dans l’explorateur DOM à l’aide du bouton **Sélectionner un élément** . L’illustration suivante présente le bouton **Sélectionner un élément** .
 
@@ -259,7 +259,7 @@ Il existe trois façons de sélectionner des éléments DOM lors du débogage d�
 - [Déboguer des applications dans Visual Studio](debugging-windows-store-and-windows-universal-apps.md)
 - [Actualiser une application (JavaScript)](../debugger/refresh-an-app-javascript.md)
 - [Déboguer un contrôle WebView](../debugger/debug-a-webview-control.md)
-- [Raccourcis clavier](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017)
-- [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017)
+- [Raccourcis clavier](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017&preserve-view=true)
+- [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true)
 - [Déboguer un exemple de code HTML, CSS et JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)
 - [Support technique et accessibilité](/previous-versions/tzbxw1af(v=vs.120))

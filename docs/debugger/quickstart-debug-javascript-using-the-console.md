@@ -16,16 +16,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e56350c2fd0583d3fef4e77e559a4df1fd894663
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aca36c56bfeed4fd5d8b240cce6bea5b55b75d85
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348104"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211074"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>Déboguer du code JavaScript à l’aide de la console dans Visual Studio
 
-Vous pouvez utiliser la fenêtre de la console JavaScript pour interagir avec et déboguer des applications UWP générées à l’aide de JavaScript. Ces fonctionnalités sont prises en charge pour les applications UWP et les applications créées à l’aide de Visual Studio Tools pour Apache Cordova. Pour obtenir la référence des commandes de la console, voir [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017).
+Vous pouvez utiliser la fenêtre de la console JavaScript pour interagir avec et déboguer des applications UWP générées à l’aide de JavaScript. Ces fonctionnalités sont prises en charge pour les applications UWP et les applications créées à l’aide de Visual Studio Tools pour Apache Cordova. Pour obtenir la référence des commandes de la console, voir [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true).
 
 La fenêtre de la console JavaScript permet les actions suivantes :
 
@@ -39,7 +39,7 @@ La fenêtre de la console JavaScript permet les actions suivantes :
 
 - Afficher les erreurs et les exceptions JavaScript, en plus des exceptions du modèle DOM et Windows Runtime.
 
-- Effectuer d’autres tâches, telles que l’effacement de l’écran. Consultez [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017) pour obtenir la liste complète des commandes.
+- Effectuer d’autres tâches, telles que l’effacement de l’écran. Consultez [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true) pour obtenir la liste complète des commandes.
 
 > [!TIP]
 > Si la fenêtre de la console JavaScript est fermée, choisissez **Déboguer**la >  **Windows**  >  **console Windows JavaScript** pour la rouvrir. La fenêtre s’ouvre uniquement pendant une session de débogage de script.
@@ -251,9 +251,9 @@ Vous pouvez aussi basculer le contexte d’exécution à l’aide de la commande
 
 ## <a name="see-also"></a>Voir aussi
 - [Déboguer des applications dans Visual Studio](debugging-windows-store-and-windows-universal-apps.md)
-- [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017)
+- [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true)
 - [Actualiser une application (JavaScript)](../debugger/refresh-an-app-javascript.md)
-- [Raccourcis clavier](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017)
+- [Raccourcis clavier](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017&preserve-view=true)
 - [Déboguer un exemple de code HTML, CSS et JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)
 - [Démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md)
 - [Déboguer un contrôle WebView](../debugger/debug-a-webview-control.md)

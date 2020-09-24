@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2def56c6a3860ce0476f448f87bdde25c7970807
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7b811cc3538e3bbb108e50acf50c2fe7a977fe3d
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86393528"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211285"
 ---
 # <a name="debug-and-analyze-unit-tests-with-test-explorer"></a>Déboguer et analyser des tests unitaires avec l’Explorateur de tests
 
@@ -38,11 +38,11 @@ Vous pouvez utiliser l'Explorateur de tests pour démarrer une session de débog
 ## <a name="diagnose-test-method-performance-issues"></a>Diagnostiquer les problèmes de performances de méthode de test
 
 ::: moniker range="vs-2017"
-Pour diagnostiquer la lenteur d’une méthode de test, sélectionnez-la dans l’Explorateur de tests, puis choisissez **Profiler le test sélectionné** dans le menu contextuel. Consultez [rapport de profilage par instrumentation](../profiling/understanding-instrumentation-data-values.md?view=vs-2017).
+Pour diagnostiquer la lenteur d’une méthode de test, sélectionnez-la dans l’Explorateur de tests, puis choisissez **Profiler le test sélectionné** dans le menu contextuel. Consultez [rapport de profilage par instrumentation](../profiling/understanding-instrumentation-data-values.md?view=vs-2017&preserve-view=true).
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
-Pour diagnostiquer la lenteur d’une méthode de test, sélectionnez la méthode dans l’Explorateur de tests, puis choisissez **Profil** dans le menu contextuel (clic droit). Consultez [rapport de profilage par instrumentation](../profiling/understanding-instrumentation-data-values.md?view=vs-2017).
+Pour diagnostiquer la lenteur d’une méthode de test, sélectionnez la méthode dans l’Explorateur de tests, puis choisissez **Profil** dans le menu contextuel (clic droit). Consultez [rapport de profilage par instrumentation](../profiling/understanding-instrumentation-data-values.md?view=vs-2017&preserve-view=true).
 ::: moniker-end
 
 > [!NOTE]

@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bad4e0b7db883a7604d674b854a9c3f794715d8d
-ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
+ms.openlocfilehash: 068c80221a572747ab99e41e78945fe55c57c451
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/24/2020
-ms.locfileid: "91135103"
+ms.locfileid: "91211259"
 ---
 # <a name="options-dialog-box-visual-studio"></a>Boîte de dialogue Options (Visual Studio)
 
@@ -33,7 +33,7 @@ La boîte de dialogue **Options** est divisée en deux parties : un volet de na
 Les options d’une fonctionnalité IDE n’apparaissent pas dans le volet de navigation tant que cette fonctionnalité n’est pas chargée en mémoire. Ainsi, les options affichées peuvent différer d’une session à l’autre. Quand vous créez un projet ou exécutez une commande qui utilise une application particulière, les nœuds correspondant aux options appropriées sont ajoutés à la boîte de dialogue Options. Ces options ajoutées sont disponibles tant que la fonctionnalité IDE demeure en mémoire.
 
 > [!NOTE]
-> Certaines collections de paramètres déterminent la quantité de pages qui s’affichent dans le volet de navigation de la boîte de dialogue Options. Vous pouvez choisir d’afficher toutes les pages possibles en sélectionnant **Afficher tous les paramètres**.
+> Certaines collections de paramètres déterminent la quantité de pages qui s’affichent dans le volet de navigation de la boîte de dialogue Options.
 
 ## <a name="how-options-are-applied"></a>Application des options
 

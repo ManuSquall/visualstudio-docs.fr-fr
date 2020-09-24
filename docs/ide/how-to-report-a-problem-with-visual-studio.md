@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2deb3f8ff19c2d7805031c0c3ba02bc82b8a3e7
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: d8e0718eb01f422ad435492304e77d73c14b4dee
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810872"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211173"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Guide pratique pour signaler un problème avec Visual Studio ou Visual Studio Installer
 
@@ -51,11 +51,11 @@ Vous pouvez signaler un problème à partir de Visual Studio ou de son programme
 
     Vous pouvez même rogner la capture d’écran directement dans le navigateur pour supprimer les parties sensibles ou non liées.
 
-4. L’une des meilleures façons d’aider l’équipe d’ingénierie de Visual Studio à résoudre le problème, est de fournir un suivi et des fichiers de vidage du tas pour les examiner. Vous pouvez le faire facilement en enregistrant les étapes qui ont entraîné le bogue. 
+4. L’une des meilleures façons d’aider l’équipe d’ingénierie de Visual Studio à résoudre le problème, est de fournir un suivi et des fichiers de vidage du tas pour les examiner. Vous pouvez le faire facilement en enregistrant les étapes qui ont entraîné le bogue.
 
     ![Enregistrer vos actions ](../ide/media/feedback-recording.png) *seuls les ingénieurs Microsoft peuvent voir l’enregistrement*
 
-5. Passez en revue les fichiers joints et chargez les fichiers supplémentaires si vous pensez que cela peut vous aider à diagnostiquer le problème.   
+5. Passez en revue les fichiers joints et chargez les fichiers supplémentaires si vous pensez que cela peut vous aider à diagnostiquer le problème.
 
     ![Fichiers joints ](../ide/media/feedback-attachments.png) *seuls les ingénieurs Microsoft peuvent voir les fichiers joints*
 

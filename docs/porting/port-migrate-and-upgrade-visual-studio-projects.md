@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 9c16f16a8c44b50fd7c637dbd921fd8cd3779dc4
-ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
+ms.openlocfilehash: d4ed87e082e5c4fa2722a44fbbfe1dcef803f247
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90713973"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211324"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Informations de référence sur la migration et la mise à niveau de projets pour Visual Studio
 
@@ -56,7 +56,7 @@ Si un type de projet ou de fichier n’est pas listé ici alors qu’il le devra
 | LightSwitch | LightSwitch n’est plus pris en charge dans Visual Studio 2017. Les projets créés avec Visual Studio versions 2012 et antérieures et ouverts dans Visual Studio 2013 ou Visual Studio 2015 sont mis à niveau et ne peuvent être ouverts par la suite que dans Visual Studio 2013 ou Visual Studio 2015. |
 | Microsoft Azure Tools pour Visual Studio | Pour ouvrir ces types de projets, installez tout d’abord le [kit SDK Microsoft Azure pour .NET.](https://azure.microsoft.com/downloads/), puis ouvrez le projet. Si nécessaire, votre projet est mis à jour. |
 | Framework du modèle ASP.NET MVC (Model-View-Controller) | Prise en charge des versions MVC et de Visual Studio :<ul><li>Visual Studio 2010 SP1 prend en charge MVC 2 et MVC 3, tandis que la prise en charge de MVC 4 est ajoutée par le biais du [téléchargement d’ASP.NET 4 MVC 4 pour Visual Studio 2010 SP1](https://www.microsoft.com/download/details.aspx?id=30683).</li><li>Visual Studio 2012 prend en charge uniquement MVC 3 et MVC 4.</li><li>Visual Studio 2013 prend en charge uniquement MVC 4 et MVC 5.</li><li>Visual Studio 2017 et Visual Studio 2015 prennent en charge MVC 4 (vous pouvez ouvrir des projets existants, mais pas en créer) et MVC 5.</li></ul><br/>Mise à niveau de versions MVC :<ul><li>Pour plus d’informations sur la mise à niveau automatique de MVC 2 vers MVC 3, consultez [ASP.NET MVC 3 Application Upgrader](https://archive.codeplex.com/?p=aspnet).</li><li>Pour plus d’informations sur la mise à niveau manuelle de MVC 2 vers MVC 3, consultez [Mise à niveau d’un projet ASP.NET MVC 2 vers ASP.NET MVC 3 Tools Update](https://archive.codeplex.com/?p=aspnet).</li><li>Pour plus d’informations sur la mise à niveau manuelle de MVC3 vers MVC 4, consultez [Mise à niveau d'un projet ASP.NET MVC 3 vers ASP.NET MVC 4](/aspnet/whitepapers/mvc4-release-notes). Si votre projet cible .NET Framework 3.5 SP1, vous devez le rediriger pour utiliser .NET Framework 4.</li><li>Pour plus d’informations sur la mise à niveau manuelle de MVC 4 vers MVC 5, consultez [Guide pratique pour mettre à niveau un projet ASP.NET MVC 4 et API web vers ASP.NET MVC 5 et API web 2](https://www.asp.net/mvc/overview/releases/how-to-upgrade-an-aspnet-mvc-4-and-web-api-project-to-aspnet-mvc-5-and-web-api-2).</li></ul> |
-| Modélisation | Si vous permettez à Visual Studio de mettre à jour le projet automatiquement, vous pouvez l’ouvrir dans Visual Studio 2015, Visual Studio 2013 ou Visual Studio 2012.<br/><br/>Le format du projet de modélisation n’a pas changé entre Visual Studio 2015 et Visual Studio 2017, et vous pouvez ouvrir et modifier le projet dans les deux versions. Toutefois, il existe des différences de comportement dans Visual Studio 2017 :<ul><li>Les projets de modélisation sont désormais appelés projets « Validation de dépendance » dans les menus et les modèles.</li><li>Les diagrammes UML ne sont plus pris en charge dans Visual Studio 2017. Les fichiers UML restent dans l’Explorateur de solutions, mais s’ouvrent en tant que fichiers XML. Utilisez Visual Studio 2015 pour afficher, créer ou modifier des diagrammes UML.</li><li>Dans Visual Studio 2017, la validation des dépendances architecturales n’est plus effectuée pendant la génération du projet de modélisation, mais à chaque génération d’un projet de code. Ce changement n’affecte pas le projet de modélisation, mais il nécessite des modifications dans les projets de code en cours de validation. Visual Studio 2017 peut effectuer automatiquement les modifications nécessaires dans les projets de code ([plus d’informations](../modeling/validate-code-with-layer-diagrams.md?view=vs-2017#live-dependency-validation)).</li></ul> |
+| Modélisation | Si vous permettez à Visual Studio de mettre à jour le projet automatiquement, vous pouvez l’ouvrir dans Visual Studio 2015, Visual Studio 2013 ou Visual Studio 2012.<br/><br/>Le format du projet de modélisation n’a pas changé entre Visual Studio 2015 et Visual Studio 2017, et vous pouvez ouvrir et modifier le projet dans les deux versions. Toutefois, il existe des différences de comportement dans Visual Studio 2017 :<ul><li>Les projets de modélisation sont désormais appelés projets « Validation de dépendance » dans les menus et les modèles.</li><li>Les diagrammes UML ne sont plus pris en charge dans Visual Studio 2017. Les fichiers UML restent dans l’Explorateur de solutions, mais s’ouvrent en tant que fichiers XML. Utilisez Visual Studio 2015 pour afficher, créer ou modifier des diagrammes UML.</li><li>Dans Visual Studio 2017, la validation des dépendances architecturales n’est plus effectuée pendant la génération du projet de modélisation, mais à chaque génération d’un projet de code. Ce changement n’affecte pas le projet de modélisation, mais il nécessite des modifications dans les projets de code en cours de validation. Visual Studio 2017 peut effectuer automatiquement les modifications nécessaires dans les projets de code ([plus d’informations](../modeling/validate-code-with-layer-diagrams.md?view=vs-2017&preserve-view=true#live-dependency-validation)).</li></ul> |
 | Installation de MSI (vdproj) | Consultez les informations relatives aux projets InstallShield. |
 | Office 2007 VSTO | Requiert une mise à niveau définitive pour Visual Studio 2017. |
 | Office 2010 VSTO | Si le projet cible .NET Framework 4, vous pouvez l’ouvrir dans Visual Studio 2010 SP1 et les versions ultérieures. Tous les autres projets nécessitent une mise à niveau définitive. |
@@ -127,7 +127,7 @@ Nous essayons de préserver la compatibilité descendante avec les versions ant�
 
 La liste suivante décrit la prise en charge dans Visual Studio 2019 de projets qui ont été créés dans des versions antérieures.
 
-Si vous ne voyez pas un projet ou un type de fichier répertorié ici, consultez la [version Visual Studio 2017 de cet article](?view=vs-2017). Vous pouvez également utiliser le bouton **Envoyer des commentaires à propos**  >  de**cette page** au bas de cette page pour fournir des détails sur votre projet. (Si vous utilisez le contrôle anonyme « Cette page est-elle utile ? », nous ne pourrons pas répondre à votre commentaire.)
+Si vous ne voyez pas un projet ou un type de fichier répertorié ici, consultez la [version Visual Studio 2017 de cet article](?view=vs-2017&preserve-view=true). Vous pouvez également utiliser le bouton **Envoyer des commentaires à propos**  >  de**cette page** au bas de cette page pour fournir des détails sur votre projet. (Si vous utilisez le contrôle anonyme « Cette page est-elle utile ? », nous ne pourrons pas répondre à votre commentaire.)
 
 | Type de projet | Support |
 | --- | --- |
@@ -200,7 +200,7 @@ Pour plus d’informations, consultez les articles suivants :
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Informations de référence sur la migration et la mise à niveau de projets pour Visual Studio 2017](?view=vs-2017)
+- [Informations de référence sur la migration et la mise à niveau de projets pour Visual Studio 2017](?view=vs-2017&preserve-view=true)
 - [Maintenance et cycle de vie des produits Visual Studio](/visualstudio/releases/2019/servicing/)
 
 ::: moniker-end

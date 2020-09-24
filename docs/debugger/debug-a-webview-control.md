@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: a96e4db66ec26870ac92c52209d7aa6f22225b21
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f0cab4a77c601414e766851aaf048fb3c32f6458
+ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350639"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91211113"
 ---
 # <a name="debug-a-webview-control-in-a-uwp-app"></a>Déboguer un contrôle WebView dans une application UWP
 
@@ -27,7 +27,7 @@ ms.locfileid: "85350639"
 
 - Ouvrez l’[Explorateur DOM](../debugger/quickstart-debug-html-and-css.md) pour une instance `WebView` et inspectez les éléments DOM, examinez les problèmes de style CSS et testez de manière dynamique les modifications de rendu des styles.
 
-- Sélectionnez la page web ou l’`iFrame` affiché dans l’instance `WebView` en tant que cible dans la fenêtre de la [console JavaScript](../debugger/javascript-console-commands.md?view=vs-2017), puis interagissez avec la page web à l’aide des commandes de la console. La console fournit un accès au contexte actuel d'exécution du script.
+- Sélectionnez la page web ou l’`iFrame` affiché dans l’instance `WebView` en tant que cible dans la fenêtre de la [console JavaScript](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true), puis interagissez avec la page web à l’aide des commandes de la console. La console fournit un accès au contexte actuel d'exécution du script.
 
 ### <a name="attach-the-debugger-c-visual-basic-c"></a>Attacher le débogueur (C#, Visual Basic, C++)
 
@@ -81,7 +81,7 @@ ms.locfileid: "85350639"
     > [!NOTE]
     > À l'aide de la console, vous pouvez interagir avec un seul `WebView`, `iFrame`, contrat de partage ou traitement web à la fois. Chaque élément requiert une instance distincte de l'hôte de plateforme web (WWAHost.exe). Vous pouvez interagir avec un seul hôte à la fois.
 
-6. Affichez et modifiez les variables dans votre application ou utilisez les commandes de la console, comme décrit dans [démarrage rapide : déboguer](../debugger/quickstart-debug-javascript-using-the-console.md) les commandes de la console JavaScript et [JavaScript](../debugger/javascript-console-commands.md?view=vs-2017).
+6. Affichez et modifiez les variables dans votre application ou utilisez les commandes de la console, comme décrit dans [démarrage rapide : déboguer](../debugger/quickstart-debug-javascript-using-the-console.md) les commandes de la console JavaScript et [JavaScript](../debugger/javascript-console-commands.md?view=vs-2017&preserve-view=true).
 
 ## <a name="see-also"></a>Voir aussi
 
