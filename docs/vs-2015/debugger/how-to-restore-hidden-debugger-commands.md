@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Restaurer les commandes masquées du débogueur | Microsoft Docs'
+title: 'Comment : restaurer les commandes masquées du débogueur | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -23,13 +23,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 297be3a3a4ad3c70ad28c627d5dc8d64c6ba1c7a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442076"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91147236"
 ---
-# <a name="how-to-restore-hidden-debugger-commands"></a>Procédure : Restaurer des commandes de débogueur masquées
+# <a name="how-to-restore-hidden-debugger-commands"></a>Comment : restaurer les commandes masquées du débogueur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Lorsque vous installez Visual Studio, vous êtes invité à choisir un jeu de paramètres IDE par défaut pour votre langage de programmation principal. Les paramètres IDE par défaut de quelques langages peuvent masquer certaines commandes de débogueur.  
@@ -40,11 +40,11 @@ Lorsque vous installez Visual Studio, vous êtes invité à choisir un jeu de pa
   
 1. Un projet étant ouvert, dans le menu **Outils**, cliquez sur **Personnaliser**.  
   
-2. Dans la boîte de dialogue **Personnaliser**, cliquez sur l'onglet **Commandes**.  
+2. Dans la boîte de dialogue **Personnaliser** , cliquez sur l’onglet **Commandes** .  
   
 3. Dans le menu déroulant **Barre de menus :**, sélectionnez le menu **Déboguer** qui doit contenir la commande restaurée.  
   
-4. Cliquez sur le **ajouter commande...** disproportionnée.  
+4. Cliquez sur la **commande Ajouter...** .  
   
 5. Dans la zone **Ajouter une commande**, sélectionnez la commande que vous souhaitez ajouter, puis cliquez sur **OK**.  
   

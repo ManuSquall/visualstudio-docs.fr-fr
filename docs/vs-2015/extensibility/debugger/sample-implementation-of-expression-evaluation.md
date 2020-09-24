@@ -1,5 +1,5 @@
 ---
-title: Exemple d’implémentation de l’évaluation de l’Expression | Microsoft Docs
+title: Exemple d’implémentation de l’évaluation d’expression | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,33 +13,33 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a7a19247b296d7e00a15051e75dd53536133c426
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436694"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91147246"
 ---
 # <a name="sample-implementation-of-expression-evaluation"></a>Exemple d’implémentation de l’évaluation d’expression
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
-> Dans Visual Studio 2015, ce moyen d’implémenter des évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateurs d’Expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple d’évaluateur d’Expression gérés](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> Dans Visual Studio 2015, cette façon d’implémenter les évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateur d’expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple évaluateur d’expression managée](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Pour un **espion** expression de la fenêtre, les appels de Visual Studio [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) pour produire un [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) objet. `IDebugExpressionContext2::ParseText` instancie un évaluateur d’expression (EE) et appelle [analyser](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) pour obtenir un [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) objet.  
+ Pour une expression de fenêtre **Espion** , Visual Studio appelle [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) pour produire un objet [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) . `IDebugExpressionContext2::ParseText` instancie un évaluateur d’expression (EE) et appelle [Parse](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) pour obtenir un objet [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) .  
   
  Cette implémentation de `IDebugExpressionEvaluator::Parse` effectue les tâches suivantes :  
   
 1. [C++ uniquement] Analyse l’expression pour rechercher des erreurs.  
   
-2. Instancie une classe (appelée `CParsedExpression` dans cet exemple) qui implémente le `IDebugParsedExpression` de l’interface et la stocke dans la classe de l’expression à analyser.  
+2. Instancie une classe (appelée `CParsedExpression` dans cet exemple) qui implémente l' `IDebugParsedExpression` interface et stocke dans la classe l’expression à analyser.  
   
-3. Retourne le `IDebugParsedExpression` de l’interface à partir de la `CParsedExpression` objet.  
+3. Retourne l' `IDebugParsedExpression` interface de l' `CParsedExpression` objet.  
   
 > [!NOTE]
 > Dans les exemples qui suivent et dans l’exemple MyCEE, l’évaluateur d’expression ne sépare pas l’analyse de l’évaluation.  
   
 ## <a name="managed-code"></a>Code managé  
- Il s’agit d’une implémentation de `IDebugExpressionEvaluator::Parse` dans du code managé. Notez que cette version de la méthode diffère de l’analyse à [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) comme le code pour l’analyse évalue également en même temps (voir [l’évaluation d’une Expression espionne](../../extensibility/debugger/evaluating-a-watch-expression.md)).  
+ Il s’agit d’une implémentation de `IDebugExpressionEvaluator::Parse` dans du code managé. Notez que cette version de la méthode diffère l’analyse de [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) , car le code d’analyse est également évalué en même temps (consultez [évaluation d’une expression espionne](../../extensibility/debugger/evaluating-a-watch-expression.md)).  
   
 ```csharp  
 namespace EEMC  
@@ -66,7 +66,7 @@ namespace EEMC
 ```  
   
 ## <a name="unmanaged-code"></a>Code non managé  
- Il s’agit d’une implémentation de `IDebugExpressionEvaluator::Parse` en code non managé. Cette méthode appelle une fonction d’assistance, `Parse`, pour analyser l’expression et recherchez les erreurs, mais cette méthode ignore la valeur résultante. L’évaluation formelle est différée jusqu'à [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) où l’expression est analysée pendant qu’il est évalué (consultez [l’évaluation d’une Expression espionne](../../extensibility/debugger/evaluating-a-watch-expression.md)).  
+ Il s’agit d’une implémentation de `IDebugExpressionEvaluator::Parse` dans du code non managé. Cette méthode appelle une fonction d’assistance, `Parse` , pour analyser l’expression et rechercher les erreurs, mais cette méthode ignore la valeur résultante. L’évaluation formelle est reportée à [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) où l’expression est analysée pendant qu’elle est évaluée (voir [évaluation d’une expression espionne](../../extensibility/debugger/evaluating-a-watch-expression.md)).  
   
 ```cpp#  
 STDMETHODIMP CExpressionEvaluator::Parse(  
@@ -110,5 +110,5 @@ STDMETHODIMP CExpressionEvaluator::Parse(
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Évaluation d’une Expression de la fenêtre Espion](../../extensibility/debugger/evaluating-a-watch-window-expression.md)   
+ [Évaluation d’une expression de fenêtre Espion](../../extensibility/debugger/evaluating-a-watch-window-expression.md)   
  [Évaluation d’une expression espionne](../../extensibility/debugger/evaluating-a-watch-expression.md)
