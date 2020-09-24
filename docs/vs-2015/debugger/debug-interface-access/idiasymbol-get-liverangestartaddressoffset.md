@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2ea1803e702ba7f133f9194b993464eabfcc24aa
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64796795"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91146158"
 ---
-# <a name="idiasymbolgetliverangestartaddressoffset"></a>IDiaSymbol::get_liveRangeStartAddressOffset
+# <a name="idiasymbolget_liverangestartaddressoffset"></a>IDiaSymbol::get_liveRangeStartAddressOffset
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Retourne la partie décalage de l’adresse de départ de la plage dans laquelle le symbole local est valide.  
+Retourne la partie de décalage de l’adresse de début de la plage dans laquelle le symbole local est valide.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -35,23 +35,23 @@ HRESULT get_liveRangeStartAddressOffset ( 
   
 #### <a name="parameters"></a>Paramètres  
  `offset`  
- [out] Retourne la partie décalage de la plage d’adresses de départ.  
+ à Retourne la partie de décalage de la plage d’adresses de début.  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` , sinon, retourne un code d'erreur.  
   
 > [!NOTE]
-> Un code d’erreur renvoyé signifie que le symbole n’a pas d’informations sur la plage dynamique.  
+> Un code d’erreur retourné signifie que le symbole n’a pas d’informations de plage active.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  L’adresse formée par la section et le décalage est le début de la plage dans laquelle le symbole est valide.  
   
- Pour obtenir la partie de la section de l’adresse, utilisez [IDiaSymbol::get_liveRangeStartAddressSection](../../debugger/debug-interface-access/idiasymbol-get-liverangestartaddresssection.md).  
+ Pour récupérer la partie de l’adresse de la section, utilisez [IDiaSymbol :: get_liveRangeStartAddressSection](../../debugger/debug-interface-access/idiasymbol-get-liverangestartaddresssection.md).  
   
-## <a name="requirements"></a>Configuration requise  
- En-tête : Dia2.h  
+## <a name="requirements"></a>Spécifications  
+ En-tête : Dia2. h  
   
- Bibliothèque : diaguids.lib  
+ Bibliothèque : diaguids. lib  
   
  DLL : msdia100.dll  
   
