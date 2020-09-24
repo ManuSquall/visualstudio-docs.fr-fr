@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c864a10af9ad15d47e2342bb148af464b8f2a0d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bad4e0b7db883a7604d674b854a9c3f794715d8d
+ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75591500"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91135103"
 ---
 # <a name="options-dialog-box-visual-studio"></a>Boîte de dialogue Options (Visual Studio)
 
@@ -38,10 +38,6 @@ Les options d’une fonctionnalité IDE n’apparaissent pas dans le volet de na
 ## <a name="how-options-are-applied"></a>Application des options
 
 Cliquer sur OK dans la boîte de dialogue **Options** enregistre tous les paramètres de toutes les pages. Cliquer sur Annuler dans n’importe quelle page annule toutes les demandes de modification, y compris celles effectuées dans les autres pages **Options**. Certaines modifications apportées aux paramètres d’options, telles que celles effectuées dans [Polices et couleurs (section Environnement de la boîte de dialogue Options)](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md), ne prennent effet qu’une fois que vous fermez et rouvrez Visual Studio.
-
-### <a name="show-all-settings"></a>Show all settings
-
-Sélectionner ou désélectionner **Afficher tous les paramètres** applique toutes les modifications apportées dans la boîte de dialogue **Options**, même si vous n’avez pas encore cliqué sur **OK**.
 
 ## <a name="see-also"></a>Voir aussi
 

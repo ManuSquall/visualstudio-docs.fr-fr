@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0e127006976c484d1e4fc2fe011af979af7eb7a9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0abe51b9f01d0c1f380c4762a7d0d4f457964aa7
+ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76114988"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91135129"
 ---
 # <a name="troubleshoot-network-related-errors-when-you-install-or-use-visual-studio"></a>Résoudre les erreurs liées au réseau lorsque vous installez ou utilisez Visual Studio
 
@@ -91,6 +91,22 @@ Cette erreur se produit généralement quand les utilisateurs sont connectés à
      > Pour plus d’informations, consultez les pages [ &lt; &gt; élément defaultProxy (paramètres réseau)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/) et [ &lt; &gt; élément proxy (paramètres réseau)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings) .
 
 ::: moniker-end
+
+## <a name="error-disconnected-from-visual-studio-when-attempting-to-report-a-problem"></a>Erreur : « déconnecté de Visual Studio » lors de la tentative de signalement d’un problème
+
+Cette erreur se produit généralement lorsqu’un utilisateur est connecté à Internet via un serveur proxy et que le serveur proxy bloque les appels que Visual Studio effectue sur certaines ressources réseau.
+
+### <a name="to-fix-this-proxy-error"></a>Pour corriger cette erreur de proxy
+
+1. Recherchez **feedback.exe.config** (le fichier de configuration feedback.exe) dans : **% ProgramFiles (x86)% \ Microsoft Visual Studio\Installer** ou **%ProgramFiles%\Microsoft Visual Studio\Installer**.
+
+2. Dans le fichier de configuration, vérifiez si le code suivant est présent ; Si le code n’est pas présent, ajoutez-le avant la dernière `</configuration>` ligne.
+
+   ```xml
+   <system.net>
+       <defaultProxy useDefaultCredentials="true" />
+   </system.net>
+   ```
 
 ## <a name="error-the-underlying-connection-was-closed"></a>Erreur : « La connexion sous-jacente a été fermée »
 

@@ -2,7 +2,7 @@
 title: 'Procédure pas à pas : utilisation de MSBuild | Microsoft Docs'
 ms.date: 03/20/2019
 ms.topic: conceptual
-ms.custom: contperfq1
+ms.custom: contperfq2
 helpviewer_keywords:
 - MSBuild, tutorial
 ms.assetid: b8a8b866-bb07-4abf-b9ec-0b40d281c310
@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c04344e361bea15c39b092c59e76d1853e3969e2
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: 6f074e69f23e20ecb92d32efb69fe011c0dbf797
+ms.sourcegitcommit: bccc6503542e1517e0e96a9f02f5a89d69c60c25
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89738312"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "91134816"
 ---
 # <a name="walkthrough-use-msbuild"></a>Procédure pas à pas : utiliser MSBuild
 
@@ -193,7 +193,7 @@ Exécutez MSBuild à partir de **l’Invite de commandes développeur** pour Vis
 
  définit la propriété nommée TargetFrameworkVersion, en lui donnant la valeur de chaîne « v 4.5 ».
 
- Les propriétés de génération peuvent être redéfinies à tout moment. Si
+ Les propriétés de génération peuvent être redéfinies à tout moment. If
 
 ```xml
 <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
@@ -615,4 +615,4 @@ Notez que les métadonnées exprimées dans cette syntaxe ne provoquent pas le t
 ## <a name="see-also"></a>Voir aussi
 
 - [Vue d’ensemble de MSBuild](../msbuild/msbuild.md)
-- [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)
+- [Référence MSBuild](../msbuild/msbuild-reference.md)
