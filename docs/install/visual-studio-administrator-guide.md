@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 7687aea6cd7bd1f4a71723c0eadfe36743ca8f71
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: ea12076e41185e9de4ee10afe3056ff97403d6ea
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211350"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352268"
 ---
 # <a name="visual-studio-administrator-guide"></a>Guide de l’administrateur Visual Studio
 
@@ -52,9 +52,9 @@ Avant de déployer Visual Studio à l’échelle de votre organisation, vous ave
 
   Pour les ordinateurs qui ne sont pas connectés à Internet, la création d’une disposition minimale est le moyen le plus simple et le plus rapide de mettre à jour vos instances de Visual Studio hors connexion. Pour plus d’informations, consultez [mettre à jour Visual Studio à l’aide d’une disposition hors connexion minimale](update-minimal-layout.md).
 
-* Déterminez les [charges de travail et les composants](workload-and-component-ids.md?view=vs-2019) dont a besoin votre entreprise.
+* Déterminez les [charges de travail et les composants](workload-and-component-ids.md?view=vs-2019&preserve-view=true) dont a besoin votre entreprise.
 
-* Décidez s’il convient d’utiliser un [fichier réponse](automated-installation-with-response-file.md?view=vs-2019) (qui simplifie la gestion des détails dans le fichier de script).
+* Décidez s’il convient d’utiliser un [fichier réponse](automated-installation-with-response-file.md?view=vs-2019&preserve-view=true) (qui simplifie la gestion des détails dans le fichier de script).
 
 * Déterminez si vous souhaitez activer la stratégie de groupe et si vous voulez configurer Visual Studio pour désactiver les commentaires du client sur les ordinateurs individuels.
 
@@ -90,22 +90,22 @@ Avant de déployer Visual Studio à l’échelle de votre organisation, vous ave
 
 ## <a name="step-1---download-visual-studio-product-files"></a>Étape 1 – Télécharger les fichiers du produit Visual Studio
 
-* [Sélectionnez les charges de travail et les composants](workload-and-component-ids.md?view=vs-2019) que vous souhaitez installer.
+* [Sélectionnez les charges de travail et les composants](workload-and-component-ids.md?view=vs-2019&preserve-view=true) que vous souhaitez installer.
 
-* [Créez un partage réseau pour les fichiers du produit Visual Studio](create-a-network-installation-of-visual-studio.md?view=vs-2019).
+* [Créez un partage réseau pour les fichiers du produit Visual Studio](create-a-network-installation-of-visual-studio.md?view=vs-2019&preserve-view=true).
 
 ## <a name="step-2---build-an-installation-script"></a>Étape 2 – Créer un script d’installation
 
-* Créez un script d’installation qui utilise des [paramètres de ligne de commande](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019) pour contrôler l’installation.
+* Créez un script d’installation qui utilise des [paramètres de ligne de commande](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019&preserve-view=true) pour contrôler l’installation.
 
   >[!NOTE]
-  > Vous pouvez simplifier les scripts à l’aide d’un [fichier réponse](automated-installation-with-response-file.md?view=vs-2019). Veillez à créer un fichier réponse qui contient votre option d’installation par défaut.
+  > Vous pouvez simplifier les scripts à l’aide d’un [fichier réponse](automated-installation-with-response-file.md?view=vs-2019&preserve-view=true). Veillez à créer un fichier réponse qui contient votre option d’installation par défaut.
 
-* (Facultatif) [Appliquez une clé de produit de licence en volume](automatically-apply-product-keys-when-deploying-visual-studio.md?view=vs-2019) dans le script d’installation de sorte que les utilisateurs n’aient pas besoin d’activer le logiciel séparément.
+* (Facultatif) [Appliquez une clé de produit de licence en volume](automatically-apply-product-keys-when-deploying-visual-studio.md?view=vs-2019&preserve-view=true) dans le script d’installation de sorte que les utilisateurs n’aient pas besoin d’activer le logiciel séparément.
 
-* (Facultatif) Mettez à jour la topologie réseau pour [contrôler à quel moment les mises à jour du produit sont délivrées aux utilisateurs finaux et d’où elles proviennent](controlling-updates-to-visual-studio-deployments.md?view=vs-2019).
+* (Facultatif) Mettez à jour la topologie réseau pour [contrôler à quel moment les mises à jour du produit sont délivrées aux utilisateurs finaux et d’où elles proviennent](controlling-updates-to-visual-studio-deployments.md?view=vs-2019&preserve-view=true).
 
-* (Facultatif) Définissez les stratégies de Registre qui ont une incidence sur le déploiement de Visual Studio comme l’emplacement d’installation de certains packages partagés avec d’autres versions ou instances, l’[emplacement de la mise en cache des packages](set-defaults-for-enterprise-deployments.md?view=vs-2019) ou [si les packages sont mis en cache](disable-or-move-the-package-cache.md?view=vs-2019).
+* (Facultatif) Définissez les stratégies de Registre qui ont une incidence sur le déploiement de Visual Studio comme l’emplacement d’installation de certains packages partagés avec d’autres versions ou instances, l’[emplacement de la mise en cache des packages](set-defaults-for-enterprise-deployments.md?view=vs-2019&preserve-view=true) ou [si les packages sont mis en cache](disable-or-move-the-package-cache.md?view=vs-2019&preserve-view=true).
 
 * (Facultatif) Définissez la stratégie de groupe. Vous pouvez aussi [configurer Visual Studio pour désactiver les commentaires du client](../ide/visual-studio-experience-improvement-program.md) sur les ordinateurs individuels.
 
@@ -115,13 +115,13 @@ Avant de déployer Visual Studio à l’échelle de votre organisation, vous ave
 
 ## <a name="step-4---deploy-updates"></a>Étape 4 – Déployer les mises à jour
 
-* [Actualiser votre emplacement réseau avec les dernières mises à jour](update-a-network-installation-of-visual-studio.md?view=vs-2019) de Visual Studio en exécutant régulièrement la commande utilisée à l’étape 1 pour ajouter des composants mis à jour.
+* [Actualiser votre emplacement réseau avec les dernières mises à jour](update-a-network-installation-of-visual-studio.md?view=vs-2019&preserve-view=true) de Visual Studio en exécutant régulièrement la commande utilisée à l’étape 1 pour ajouter des composants mis à jour.
 
-  Vous pouvez mettre à jour Visual Studio à l’aide d’un script de mise à jour. Pour ce faire, utilisez le [`update`](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019) paramètre de ligne de commande.
+  Vous pouvez mettre à jour Visual Studio à l’aide d’un script de mise à jour. Pour ce faire, utilisez le [`update`](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019&preserve-view=true) paramètre de ligne de commande.
 
 ## <a name="step-5---optional-use-visual-studio-tools"></a>Étape 5 – (Facultatif) Utiliser les outils Visual Studio
 
-Plusieurs outils sont disponibles pour vous aider à [détecter et à gérer les instances de Visual Studio installées](tools-for-managing-visual-studio-instances.md?view=vs-2019) sur les ordinateurs clients.
+Plusieurs outils sont disponibles pour vous aider à [détecter et à gérer les instances de Visual Studio installées](tools-for-managing-visual-studio-instances.md?view=vs-2019&preserve-view=true) sur les ordinateurs clients.
 
 ## <a name="advanced-configuration"></a>Configuration avancée
 
@@ -129,7 +129,7 @@ Par défaut, l’installation de Visual Studio active l’inclusion de type pers
 
 **« PutCustomTypeInBingSearch » DWORD 0**
 
-Le Registre se trouve dans le répertoire * Software\Microsoft\VisualStudio\16.0_ {InstanceId} \ Roslyn\Internal\Diagnostics \* de votre ruche de Registre privé. Pour obtenir des instructions sur l’ouverture de la ruche du Registre, consultez [modification du Registre pour une instance de Visual Studio](tools-for-managing-visual-studio-instances.md?view=vs-2019#editing-the-registry-for-a-visual-studio-instance).
+Le Registre se trouve dans le répertoire * Software\Microsoft\VisualStudio\16.0_ {InstanceId} \ Roslyn\Internal\Diagnostics \* de votre ruche de Registre privé. Pour obtenir des instructions sur l’ouverture de la ruche du Registre, consultez [modification du Registre pour une instance de Visual Studio](tools-for-managing-visual-studio-instances.md?view=vs-2019&preserve-view=true#editing-the-registry-for-a-visual-studio-instance).
 
 ::: moniker-end
 
@@ -152,7 +152,7 @@ Le Registre se trouve dans le répertoire * Software\Microsoft\VisualStudio\16.0
 
 * (Facultatif) Mettez à jour la topologie réseau pour [contrôler à quel moment les mises à jour du produit sont délivrées aux utilisateurs finaux et d’où elles proviennent](controlling-updates-to-visual-studio-deployments.md?view=vs-2017&preserve-view=true).
 
-* (Facultatif) Définissez les stratégies de Registre qui ont une incidence sur le déploiement de Visual Studio comme l’emplacement d’installation de certains packages partagés avec d’autres versions ou instances, l’[emplacement de la mise en cache des packages](set-defaults-for-enterprise-deployments.md?view=vs-2019) ou [si les packages sont mis en cache](disable-or-move-the-package-cache.md?view=vs-2017&preserve-view=true).
+* (Facultatif) Définissez les stratégies de Registre qui ont une incidence sur le déploiement de Visual Studio comme l’emplacement d’installation de certains packages partagés avec d’autres versions ou instances, l’[emplacement de la mise en cache des packages](set-defaults-for-enterprise-deployments.md?view=vs-2019&preserve-view=true) ou [si les packages sont mis en cache](disable-or-move-the-package-cache.md?view=vs-2017&preserve-view=true).
 
 * (Facultatif) Définissez la stratégie de groupe. Vous pouvez aussi [configurer Visual Studio pour désactiver les commentaires du client](../ide/visual-studio-experience-improvement-program.md) sur les ordinateurs individuels.
 
@@ -164,7 +164,7 @@ Le Registre se trouve dans le répertoire * Software\Microsoft\VisualStudio\16.0
 
 * [Actualiser votre emplacement réseau avec les dernières mises à jour](update-a-network-installation-of-visual-studio.md?view=vs-2017&preserve-view=true) de Visual Studio en exécutant régulièrement la commande utilisée à l’étape 1 pour ajouter des composants mis à jour.
 
-  Vous pouvez mettre à jour Visual Studio à l’aide d’un script de mise à jour. Pour ce faire, utilisez le [`update`](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019) paramètre de ligne de commande.
+  Vous pouvez mettre à jour Visual Studio à l’aide d’un script de mise à jour. Pour ce faire, utilisez le [`update`](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019&preserve-view=true) paramètre de ligne de commande.
 
 ## <a name="step-5---optional-use-visual-studio-tools"></a>Étape 5 – (Facultatif) Utiliser les outils Visual Studio
 

@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9416862ad18bc297696e765d6664a4d08f2cc8dc
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: f331c794c50d6b6573ad9708da6d153c77f4d77c
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809909"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352347"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Comment créer et gérer des environnements Python dans Visual Studio
 
@@ -124,7 +124,7 @@ C’est la raison pour laquelle les développeurs créent souvent un *environnem
 
 Visual Studio prend en charge directement la création d’un environnement virtuel pour un projet. Par exemple, si vous ouvrez un projet qui contient un fichier *requirements.txt*, ou si vous créez un projet à partir d’un modèle qui inclut ce fichier, Visual Studio vous invite à créer automatiquement un environnement virtuel et à installer ces dépendances.
 
-À tout moment dans un projet ouvert, vous pouvez créer un environnement virtuel. Dans l’**Explorateur de solutions**, développez le nœud de projet, cliquez avec le bouton droit sur **Environnements Python**, puis sélectionnez Ajouter un environnement virtuel. Pour plus d’informations, consultez [Créer un environnement virtuel](./selecting-a-python-environment-for-a-project.md?view=vs-2019#create-a-virtual-environment-1).
+À tout moment dans un projet ouvert, vous pouvez créer un environnement virtuel. Dans l’**Explorateur de solutions**, développez le nœud de projet, cliquez avec le bouton droit sur **Environnements Python**, puis sélectionnez Ajouter un environnement virtuel. Pour plus d’informations, consultez [Créer un environnement virtuel](./selecting-a-python-environment-for-a-project.md?view=vs-2019&preserve-view=true#create-a-virtual-environment-1).
 
 Visual Studio fournit également une commande qui permet de générer un fichier *requirements.txt* à partir d’un environnement virtuel, ce qui facilite la recréation de l’environnement sur d’autres ordinateurs. Pour plus d’informations, consultez [Utiliser des environnements virtuels](selecting-a-python-environment-for-a-project.md#use-virtual-environments).
 
@@ -159,7 +159,7 @@ Vous créez un environnement conda à l’aide de l’outil `conda`, ou avec la 
 
     | Champ | Description |
     | --- | --- |
-    | Project | Projet dans lequel créer l’environnement (si vous avez plusieurs projets dans la même solution Visual Studio). |
+    | Projet | Projet dans lequel créer l’environnement (si vous avez plusieurs projets dans la même solution Visual Studio). |
     | Name | Nom de l’environnement conda. |
     | Ajouter des packages depuis | Choisissez **Fichier d’environnement** si vous avez un fichier *environment.yml* décrivant vos dépendances de fichiers, ou choisissez **un ou plusieurs noms de packages Anaconda** et répertoriez au moins un package Python ou une version de Python dans le champ situé en dessous. La liste des packages indique à conda de créer un environnement Python. Pour installer la dernière version de Python, utilisez `python` ; pour installer une version spécifique, utilisez `python=,major>.<minor>` comme dans `python=3.7`. Vous pouvez également utiliser le bouton de package pour sélectionner des versions de Python et des packages communs à partir d’une série de menus. |
     | Définir en tant qu’environnement actuel | Active le nouvel environnement dans le projet sélectionné lorsque l’environnement est créé. |
@@ -239,7 +239,7 @@ Suivez les étapes ci-dessous pour identifier un environnement installé à un e
 
     ![Onglet Environnement personnalisé dans la boîte de dialogue Ajouter un environnement](media/environments/environments-custom-2-2019.png)
 
-1. Dans les champs de la boîte de dialogue, entrez ou recherchez (à l’aide de **... **) le chemin d’accès de l’interpréteur sous **Chemin du préfixe**, qui renseigne la plupart des autres champs. Une fois les valeurs révisées et modifiées si nécessaire, sélectionnez **Ajouter**. 
+1. Dans les champs de la boîte de dialogue, entrez ou recherchez (à l’aide de **... **) le chemin d’accès de l’interpréteur sous **Chemin du préfixe**, qui renseigne la plupart des autres champs. Une fois les valeurs révisées et modifiées si nécessaire, sélectionnez **Ajouter**.
 
     ![Champs pour spécifier les détails d’une option d’environnement personnalisé dans la boîte de dialogue Ajouter un environnement](media/environments/environments-custom-3-2019.png)
 
@@ -271,7 +271,7 @@ Pour corriger un environnement qui n’a pas d’option de réparation, ou pour 
     - Si l’environnement existe toujours sur votre ordinateur, remplacez la valeur de **ExecutablePath** par l’emplacement correct. Corrigez également les valeurs **(Par défaut)** et **WindowedExecutablePath** valeurs en fonction des besoins.
     - Si l’environnement n’existe plus sur votre ordinateur et que vous souhaitez le supprimer de la fenêtre **Environnements Python**, supprimez le nœud parent d’**InstallPath**, par exemple **3.6**, dans l’image ci-dessus.
     - Paramètres non valides dans **HKEY_CURRENT_USER \software\python** remplacer les paramètres dans **HKEY_LOCAL_MACHINE \software\python**
-    
+
 ## <a name="see-also"></a>Voir aussi
 
 - [Installer les interpréteurs Python](installing-python-interpreters.md)

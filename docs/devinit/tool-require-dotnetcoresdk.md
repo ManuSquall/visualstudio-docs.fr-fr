@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 201ee0a7384b5dce502151fc9d34d73bc19424a5
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: c632378ff15e9b52e7145821f2e16d782b0326ac
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005783"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352293"
 ---
 # <a name="require-dotnetcoresdk"></a>require-dotnetcoresdk
 
@@ -26,7 +26,7 @@ L' `require-dotnetcoresdk` outil est utilisé pour installer le [Kit SDK .net Co
 
 Si les `input` Propriétés et `additionalOptions` sont omises ou vides, l’outil suivra le comportement [par défaut](#default-behavior) détaillé ci-dessous.
 
-| Nom                                             | Type   | Obligatoire | Valeur                                                                               |
+| Name                                             | Type   | Obligatoire | Valeur                                                                               |
 |--------------------------------------------------|--------|----------|-------------------------------------------------------------------------------------|
 | **commentaires**                                     | string | Non       | Propriété de commentaires facultative. Non utilisé.                                               |
 | [**entrée**](#input)                              | string | Non       | Version de la kit SDK .NET Core à installer. Pour plus d’informations, consultez l' [entrée](#input) ci-dessous. |
@@ -40,7 +40,8 @@ La `input` propriété est utilisée pour spécifier la version de kit SDK .net 
 
 Des options de configuration supplémentaires peuvent être transmises en tant que valeur de `additionalOptions` . Ces arguments sont un relais direct vers les arguments utilisés dans le script [dotnet-install](https://docs.microsoft.com/dotnet/core/tools/dotnet-install-script) . Pour plus d’informations sur les paramètres disponibles, consultez la [documentation](https://docs.microsoft.com/dotnet/core/tools/dotnet-install-script) du script [dotnet-install](https://docs.microsoft.com/dotnet/core/tools/dotnet-install-script) . Lorsque vous utilisez, assurez-vous `additionalOptions` d’utiliser les noms et le format des arguments PowerShell.
 
-Remarque : toute valeur supplémentaire à un argument qui inclut un espace doit inclure une paire supplémentaire de guillemets d’échappement (à l’aide de la barre oblique inverse). Vous pouvez voir un exemple d' [utilisation](#example-usage) à l’aide de `-InstallDir` .
+> [!NOTE]
+> Toute valeur supplémentaire à un argument qui inclut un espace doit inclure une paire supplémentaire de guillemets d’échappement (à l’aide de la barre oblique inverse). Vous pouvez voir un exemple d' [utilisation](#example-usage) à l’aide de `-InstallDir` .
 
 ### <a name="default-behavior"></a>Comportement par défaut
 

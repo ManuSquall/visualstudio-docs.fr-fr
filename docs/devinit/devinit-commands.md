@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 1a0bd657d9612bde05a820a591c2ab2c1cfdaad3
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: a22e0f5a20050e62aa9978c40f2189c82ca3071c
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005530"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352326"
 ---
 # <a name="devinit-commands"></a>commandes devinit
 
@@ -67,7 +67,7 @@ Spécifie le chemin d’accès à la _devinit.jssur le fichier. Si – file n’
 * {Current-Directory} \\.devinit.js
 * {Current-Directory} \\ . devinit \\.devinit.js
 
-Remarque : les chemins d’accès sans le début du `.` répertoire ou du nom de fichier correspondent également.
+Les chemins d’accès sans le début du `.` répertoire ou du nom de fichier correspondent également.
 
 #### <a name="--error-action-argument"></a>--erreur-argument d’action
 
@@ -87,7 +87,7 @@ Commandes de l’outil ECHO qui sont exécutées, mais n’exécutent aucun outi
 
 Émet la sortie détaillée vers la sortie standard. Si l’outil à exécuter prend en charge une option détaillée, propage le commutateur détaillé à l’outil.
 
-#### <a name="note-on-additional-command-line-arguments"></a>Remarque sur les arguments de ligne de commande supplémentaires
+#### <a name="additional-command-line-arguments"></a>Arguments de ligne de commande supplémentaires
 
 L’utilisation d’un `<arg>` qui inclut un espace dans sa valeur doit inclure une paire supplémentaire de guillemets d’échappement.
 

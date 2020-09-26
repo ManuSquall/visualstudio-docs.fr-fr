@@ -18,12 +18,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 18e373dd8218c9019c2a5ec8a923fdbb2c24cf99
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: db777df991b48d1b6e26d40426d32c07a495efb1
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809516"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352175"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Nouveautés de Visual Studio 2017
 
@@ -104,7 +104,7 @@ Pour afficher la liste de vos extensions dans Visual Studio, cliquez sur **Outil
 
 Le Gestionnaire d’extensions itinérantes effectue le suivi de toutes les extensions que vous installez, mais vous pouvez choisir celles que vous souhaitez ajouter à votre liste d’itinérance.
 
-![Visual Studio 2017 - Boîte de dialogue Extensions et mises à jour](media/vs2017ide-RoamingExtensionManager.png)
+![Visual Studio 2017-Gestionnaire des extensions itinérantes](media/vs2017ide-RoamingExtensionManager.png)
 
 Quand vous utilisez le Gestionnaire d’extensions itinérantes, trois types d’icônes figurent dans votre liste :
 
@@ -222,7 +222,7 @@ Pour plus d’informations, consultez le billet de blog [Use the new Exception H
 
 Vous pouvez parcourir et afficher des instantanés à l’aide des boutons pas à pas **détaillé** et **étape** précédente dans la barre d’outils **Déboguer** . Utilisez ces boutons pour accéder aux événements figurant sous l’onglet **Événements** de la fenêtre **Outils de diagnostic**. Quand vous passez à l’étape précédente ou suivante d’un événement, vous activez automatiquement le débogage d’historique pour l’événement sélectionné.
 
-![Boîte de dialogue de la nouvelle assistance d’exception dans Visual Studio](../debugger/media/intellitrace-step-back-icons-description.png  "Boutons précédent et suivant")
+![Exemple de retour d’IntelliTrace dans Visual Studio](../debugger/media/intellitrace-step-back-icons-description.png  "Boutons précédent et suivant")
 
 Pour plus d’informations, consultez la page [Afficher des captures instantanées avec le retour en arrière IntelliTrace](../debugger/view-historical-application-state.md).
 

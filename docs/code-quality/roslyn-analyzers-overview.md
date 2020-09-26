@@ -12,20 +12,20 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d0489950b9132a36aef8ecb3d8374c02d1a1aee2
-ms.sourcegitcommit: d77da260d79471ab139973c51d65b04e0f80fe2e
+ms.openlocfilehash: d3fa48a7f571680cb9d26257fe4aa288aba15dbc
+ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90560734"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "91352201"
 ---
 # <a name="overview-of-source-code-analysis"></a>Vue d’ensemble de l’analyse du code source
 
-Les analyseurs de .NET Compiler Platform (Roslyn) inspectent votre code C# ou Visual Basic pour déterminer le style, la qualité, la maintenabilité, la conception et d’autres problèmes. Cette inspection ou analyse est effectuée au moment de la conception dans tous les fichiers ouverts. 
+Les analyseurs de .NET Compiler Platform (Roslyn) inspectent votre code C# ou Visual Basic pour déterminer le style, la qualité, la maintenabilité, la conception et d’autres problèmes. Cette inspection ou analyse est effectuée au moment de la conception dans tous les fichiers ouverts.
 
 Les analyseurs peuvent être répartis dans les groupes suivants :
 
-- Les analyseurs de [style de code](/visualstudio/ide/editorconfig-code-style-settings-reference?view=vs-2019#convention-categories) sont intégrés à Visual Studio. L’ID de diagnostic, ou code, de ces analyseurs est au format IDExxxx, par exemple, IDE0067. Vous pouvez configurer des préférences dans la [page Options](../ide/code-styles-and-code-cleanup.md) de l’éditeur de texte ou dans un [fichier EditorConfig](../ide/editorconfig-code-style-settings-reference.md). À compter de .NET 5,0, les analyseurs de style de code sont inclus dans le kit de développement logiciel (SDK) .NET et peuvent être strictement appliqués sous forme d’avertissements ou d’erreurs de génération. Vous pourrez trouver plus d’informations [ici](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis).
+- Les analyseurs de [style de code](/visualstudio/ide/editorconfig-code-style-settings-reference?view=vs-2019&preserve-view=true#convention-categories) sont intégrés à Visual Studio. L’ID de diagnostic, ou code, de ces analyseurs est au format IDExxxx, par exemple, IDE0067. Vous pouvez configurer des préférences dans la [page Options](../ide/code-styles-and-code-cleanup.md) de l’éditeur de texte ou dans un [fichier EditorConfig](../ide/editorconfig-code-style-settings-reference.md). À compter de .NET 5,0, les analyseurs de style de code sont inclus dans le kit de développement logiciel (SDK) .NET et peuvent être strictement appliqués sous forme d’avertissements ou d’erreurs de génération. Vous pourrez trouver plus d’informations [ici](/dotnet/fundamentals/productivity/code-analysis#code-style-analysis).
 
 - Les analyseurs de la [qualité du code](code-analysis-warnings-for-managed-code-by-checkid.md) sont désormais fournis avec le kit de développement logiciel (SDK) .net 5 et sont activés par défaut. L’ID de diagnostic, ou code, de ces analyseurs est au format CAXXXX, par exemple, CA1822. Pour plus d’informations, consultez [vue d’ensemble de l’analyse de la qualité du code .net](/dotnet/fundamentals/productivity/code-analysis#code-quality-analysis).
 
@@ -41,7 +41,7 @@ Chaque analyseur a l’un des niveaux de gravité suivants :
 | Avertissement | `warning` | Les violations apparaissent en tant qu' *avertissements* dans le liste d’erreurs et dans la sortie de la génération en ligne de commande, mais ne provoquent pas l’échec des builds. | Le code incriminé est souligné d’un tilde vert et est marqué d’un petit cadre vert dans la barre de défilement. |
 | Info | `suggestion` | Les violations apparaissent sous la forme de *messages* dans le liste d’erreurs, et pas du tout dans la sortie de la génération de la ligne de commande. | Le code incriminé est souligné d’un tilde gris et marqué d’une petite zone grise dans la barre de défilement. |
 | Hidden | `silent` | Non visible par l’utilisateur. | Non visible par l’utilisateur. Toutefois, le diagnostic est signalé au moteur de diagnostic IDE. |
-| None | `none` | Entièrement supprimée. | Entièrement supprimée. |
+| Aucune | `none` | Entièrement supprimée. | Entièrement supprimée. |
 | Par défaut | `default` | Correspond à la gravité par défaut de la règle. Pour déterminer la valeur par défaut d’une règle, recherchez dans la Fenêtre Propriétés. | Correspond à la gravité par défaut de la règle. |
 
 Si des violations de règle sont détectées par un analyseur, elles sont signalées dans l’éditeur de code (sous forme de *tilde* sous le code incriminé) et dans la fenêtre de liste d’erreurs.
@@ -58,7 +58,7 @@ De nombreuses règles de l’analyseur, ou *Diagnostics*, ont une ou plusieurs *
 
 ## <a name="configure-analyzer-severity-levels"></a>Configurer les niveaux de gravité de l’analyseur
 
-Vous pouvez configurer la gravité des règles de l’analyseur ou des *Diagnostics*dans un [fichier EditorConfig](../code-quality/use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file) ou à partir du [menu ampoule](../code-quality/use-roslyn-analyzers.md#set-rule-severity-from-the-light-bulb-menu). 
+Vous pouvez configurer la gravité des règles de l’analyseur ou des *Diagnostics*dans un [fichier EditorConfig](../code-quality/use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file) ou à partir du [menu ampoule](../code-quality/use-roslyn-analyzers.md#set-rule-severity-from-the-light-bulb-menu).
 
 Les analyseurs peuvent également être configurés pour inspecter le code au moment de la génération et en temps réel à mesure que vous tapez. Vous pouvez configurer l’étendue de l’analyse dynamique du code pour qu’elle s’exécute uniquement pour le document actif, pour tous les documents ouverts ou pour l’ensemble de la solution. Consultez [Comment : configurer l’étendue de l’analyse du code en direct](./configure-live-code-analysis-scope-managed-code.md).
 
