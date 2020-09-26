@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Enregistrement des paramètres utilisateur sur une Page de démarrage | Microsoft Docs'
+title: 'Procédure pas à pas : enregistrement des paramètres utilisateur sur une page de démarrage | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -9,63 +9,63 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8976d329f6303d60cc00609bc9ed9471456c1b63
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408757"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "91391707"
 ---
-# <a name="walkthrough-saving-user-settings-on-a-start-page"></a>Procédure pas à pas : Enregistrement des paramètres utilisateur sur une page de démarrage
+# <a name="walkthrough-saving-user-settings-on-a-start-page"></a>Procédure pas à pas : enregistrement des paramètres utilisateur sur une page de démarrage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous pouvez conserver les paramètres utilisateur de votre page de démarrage. En suivant cette procédure pas à pas, vous pouvez créer un contrôle qui enregistre un paramètre dans le Registre lorsque l’utilisateur clique sur un bouton et récupère ensuite que la définition de chaque chargement de la Page de démarrage. Étant donné que le modèle de projet Page de démarrage inclut un contrôle utilisateur personnalisable, et le XAML de Page de démarrage par défaut appelle ce contrôle, il est inutile de modifier la Page de démarrage lui-même.  
+Vous pouvez conserver les paramètres utilisateur de votre page de démarrage. En suivant cette procédure pas à pas, vous pouvez créer un contrôle qui enregistre un paramètre dans le registre lorsque l’utilisateur clique sur un bouton, puis récupère ce paramètre chaque fois que la page de démarrage est chargée. Étant donné que le modèle de projet page de démarrage comprend un contrôle utilisateur personnalisable et que le code XAML de la page de démarrage par défaut appelle ce contrôle, vous n’avez pas besoin de modifier la page de démarrage elle-même.  
   
- La banque de paramètres est instanciée dans cette procédure pas à pas est une instance de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> interface, qui lit et écrit dans l’emplacement de Registre suivant lorsqu’elle est appelée : HKCU\Software\Microsoft\VisualStudio\14.0\\*CollectionName*  
+ La Banque de paramètres instanciée dans cette procédure pas à pas est une instance de l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> interface, qui lit et écrit dans l’emplacement de Registre suivant quand elle est appelée : HKCU\Software\Microsoft\VisualStudio\14.0 \\ *CollectionName*  
   
- Lorsqu’il s’exécute dans l’instance expérimentale de Visual Studio, la banque de paramètres lit et écrit dans HKCU\Software\Microsoft\VisualStudio\14.0Exp\\*CollectionName.*  
+ Lorsqu’il s’exécute dans l’instance expérimentale de Visual Studio, le magasin de paramètres lit et écrit dans HKCU\Software\Microsoft\VisualStudio\14.0Exp \\ *CollectionName.*  
   
- Pour plus d’informations sur la façon de conserver les paramètres, consultez [Extending User Settings and Options](../extensibility/extending-user-settings-and-options.md).  
+ Pour plus d’informations sur la façon de rendre des paramètres persistants, consultez [extension des paramètres et des options utilisateur](../extensibility/extending-user-settings-and-options.md).  
   
 ## <a name="prerequisites"></a>Prérequis  
   
 > [!NOTE]
-> Pour suivre cette procédure pas à pas, vous devez installer le Kit de développement logiciel (SDK) Visual Studio. Pour plus d’informations, consultez [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
+> Pour suivre cette procédure pas à pas, vous devez installer le Kit de développement logiciel (SDK) Visual Studio. Pour plus d’informations, consultez [Kit de développement logiciel (SDK) Visual Studio](../extensibility/visual-studio-sdk.md).  
 >   
-> Vous pouvez télécharger le modèle de projet Page de démarrage à l’aide de **Gestionnaire d’extensions**.  
+> Vous pouvez télécharger le modèle de projet page de démarrage à l’aide du **Gestionnaire d’extensions**.  
   
 ## <a name="setting-up-the-project"></a>Configuration du projet  
   
 #### <a name="to-configure-the-project-for-this-walkthrough"></a>Pour configurer le projet pour cette procédure pas à pas  
   
-1. Créez un projet de Page de démarrage en utilisant le modèle de projet Page de démarrage, comme décrit dans [création d’un votre Page de démarrage propre](../misc/creating-your-own-start-page.md). Nommez le projet **SaveMySettings**.  
+1. Créez un projet de page de démarrage à l’aide du modèle de projet page de démarrage, comme décrit dans [création de votre propre page de démarrage](../misc/creating-your-own-start-page.md). Nommez le projet **SaveMySettings**.  
   
-2. Dans **l’Explorateur de solutions**, ajoutez les références d’assembly suivantes au projet StartPageControl :  
+2. Dans **Explorateur de solutions**, ajoutez les références d’assembly suivantes au projet StartPageControl :  
   
     - EnvDTE  
   
     - EnvDTE80  
   
-    - Microsoft.VisualStudio.OLE.Interop  
+    - Microsoft. VisualStudio. OLE. Interop  
   
-    - Microsoft.VisualStudio.Shell.Interop.11.0  
+    - Microsoft. VisualStudio. Shell. Interop. 11.0  
   
 3. Ouvrez MyControl.xaml.  
   
-4. Dans le volet XAML, dans le niveau supérieur <xref:System.Windows.Controls.UserControl> définition de l’élément, ajoutez la déclaration d’événement suivante après les déclarations d’espace de noms.  
+4. Dans le volet XAML, dans la définition de l’élément de niveau supérieur <xref:System.Windows.Controls.UserControl> , ajoutez la déclaration d’événement suivante après les déclarations d’espace de noms.  
   
     ```  
     Loaded="OnLoaded"  
     ```  
   
-5. Dans le volet de conception, cliquez sur la zone principale du contrôle et appuyez sur SUPPR.  
+5. Dans le volet de conception, cliquez sur la zone principale du contrôle, puis appuyez sur la touche Suppr.  
   
-     Cette opération supprime le <xref:System.Windows.Controls.Border> élément et tous les éléments et laisse uniquement le niveau supérieur <xref:System.Windows.Controls.Grid> élément.  
+     Cela supprime l' <xref:System.Windows.Controls.Border> élément et tout ce qui se trouve dans celui-ci, et laisse uniquement l’élément de niveau supérieur <xref:System.Windows.Controls.Grid> .  
   
-6. À partir de la **boîte à outils**, faites glisser un <xref:System.Windows.Controls.StackPanel> contrôle à la grille.  
+6. À partir de la **boîte à outils**, faites glisser un <xref:System.Windows.Controls.StackPanel> contrôle vers la grille.  
   
-7. Maintenant, faites glisser un <xref:System.Windows.Controls.TextBlock>, un <xref:System.Windows.Controls.TextBox>et un bouton pour le <xref:System.Windows.Controls.StackPanel>.  
+7. À présent, faites glisser un <xref:System.Windows.Controls.TextBlock> , un <xref:System.Windows.Controls.TextBox> et un bouton vers le <xref:System.Windows.Controls.StackPanel> .  
   
-8. Ajouter un **x : Name** d’attribut pour le <xref:System.Windows.Controls.TextBox>et un `Click` événement pour le <xref:System.Windows.Controls.Button>, comme illustré dans l’exemple suivant.  
+8. Ajoutez un attribut **x :Name** pour <xref:System.Windows.Controls.TextBox> et un `Click` événement pour <xref:System.Windows.Controls.Button> , comme indiqué dans l’exemple suivant.  
   
     ```xml  
     <StackPanel Width="300" HorizontalAlignment="Center" VerticalAlignment="Center">  
@@ -79,15 +79,15 @@ Vous pouvez conserver les paramètres utilisateur de votre page de démarrage. E
   
 #### <a name="to-implement-the-user-control"></a>Pour implémenter le contrôle utilisateur  
   
-1. Dans le volet XAML, cliquez sur le `Click` attribut de la <xref:System.Windows.Controls.Button> élément, puis cliquez sur **naviguez jusqu’au gestionnaire d’événements**.  
+1. Dans le volet XAML, cliquez avec le bouton droit sur l' `Click` attribut de l' <xref:System.Windows.Controls.Button> élément, puis cliquez sur **naviguer vers le gestionnaire d’événements**.  
   
-     Cela ouvre MyControl.xaml.cs et crée un gestionnaire de stub pour la `Button_Click` événement.  
+     Cela ouvre MyControl.xaml.cs et crée un gestionnaire de stub pour l' `Button_Click` événement.  
   
-2. Ajoutez le code suivant `using` instructions au début du fichier.  
+2. Ajoutez les instructions `using` suivantes en haut du fichier.  
   
      [!code-csharp[StartPageDTE#11](../snippets/csharp/VS_Snippets_VSSDK/startpagedte/cs/startpagecontrol/mycontrol.xaml.cs#11)]  
   
-3. Ajouter une privée `SettingsStore` propriété, comme indiqué dans l’exemple suivant.  
+3. Ajoutez une `SettingsStore` propriété privée, comme illustré dans l’exemple suivant.  
   
     ```csharp  
     private IVsWritableSettingsStore _settingsStore = null;  
@@ -119,9 +119,9 @@ Vous pouvez conserver les paramètres utilisateur de votre page de démarrage. E
     }  
     ```  
   
-     Cette propriété obtient d’abord une référence à la <xref:EnvDTE80.DTE2> interface, qui contient le modèle objet Automation, à partir de la <xref:System.Windows.FrameworkElement.DataContext%2A> du contrôle utilisateur, puis utilise l’objet DTE pour obtenir une instance de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsManager> interface. Il utilise ensuite cette instance pour retourner les paramètres utilisateur actuels.  
+     Cette propriété obtient d’abord une référence à l' <xref:EnvDTE80.DTE2> interface, qui contient le modèle objet Automation, à partir du <xref:System.Windows.FrameworkElement.DataContext%2A> du contrôle utilisateur, puis utilise l’DTE pour obtenir une instance de l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsManager> interface. Elle utilise ensuite cette instance pour retourner les paramètres utilisateur actuels.  
   
-4. Renseignez le `Button_Click` événements comme suit.  
+4. Renseignez l' `Button_Click` événement comme suit.  
   
     ```csharp  
     private void Button_Click(object sender, RoutedEventArgs e)  
@@ -136,9 +136,9 @@ Vous pouvez conserver les paramètres utilisateur de votre page de démarrage. E
     }  
     ```  
   
-     Il écrit le contenu de la zone de texte dans un champ « MySetting » dans une collection de « MySettings » dans le Registre. Si la collection n’existe pas, il est créé.  
+     Cela écrit le contenu de la zone de texte dans un champ « MySetting » dans une collection « MySettings » dans le registre. Si la collection n’existe pas, elle est créée.  
   
-5. Ajoutez le gestionnaire suivant pour le `OnLoaded` événement du contrôle utilisateur.  
+5. Ajoutez le gestionnaire suivant pour l' `OnLoaded` événement du contrôle utilisateur.  
   
     ```csharp  
     private void OnLoaded(Object sender, RoutedEventArgs e)  
@@ -150,17 +150,17 @@ Vous pouvez conserver les paramètres utilisateur de votre page de démarrage. E
     }  
     ```  
   
-     Cela définit le texte de la zone de texte sur la valeur actuelle de « MySetting ».  
+     Le texte de la zone de texte est alors défini sur la valeur actuelle de « MySetting ».  
   
-6. Générer le contrôle utilisateur.  
+6. Générez le contrôle utilisateur.  
   
-7. Dans **l’Explorateur de solutions**, ouvrez source.extension.vsixmanifest.  
+7. Dans **Explorateur de solutions**, ouvrez source. extension. vsixmanifest.  
   
-8. Dans l’éditeur de manifeste, définissez **Product Name** à **enregistrer la Page de démarrage des paramètres de mes**.  
+8. Dans l’éditeur de manifeste, définissez **Product Name** pour **enregistrer mes paramètres page de démarrage**.  
   
-     Cela définit le nom de la Page de démarrage, tel qu’il doit apparaître dans le **personnaliser la Page de démarrage** liste dans le **Options** boîte de dialogue.  
+     Cela définit le nom de la page de démarrage tel qu’il doit apparaître dans la liste **personnaliser la page de démarrage** de la boîte de dialogue **options** .  
   
-9. Build StartPage.xaml.  
+9. Générez StartPage. Xaml.  
   
 ## <a name="testing-the-control"></a>Test du contrôle  
   
@@ -170,38 +170,38 @@ Vous pouvez conserver les paramètres utilisateur de votre page de démarrage. E
   
      L’instance expérimentale de Visual Studio s’ouvre.  
   
-2. Dans l’instance expérimentale, sur le **outils** menu, cliquez sur **Options**.  
+2. Dans l’instance expérimentale, dans le menu **Outils** , cliquez sur **options**.  
   
-3. Dans le **environnement** nœud, cliquez sur **démarrage**, puis, dans le **personnaliser la Page de démarrage** liste, sélectionnez **[Extension installée] enregistrer mes paramètres de Page de démarrage** .  
+3. Dans le nœud **environnement** , cliquez sur **démarrage**puis, dans la liste **personnaliser la page de démarrage** , sélectionnez **[extension installée] enregistrer mes paramètres page de démarrage**.  
   
      Cliquez sur **OK**.  
   
-4. Fermez la Page de démarrage s’il est ouvert, puis, dans le **vue** menu, cliquez sur **Page de démarrage**.  
+4. Fermez la page de démarrage, si elle est ouverte, puis, dans le menu **affichage** , cliquez sur **page de démarrage**.  
   
-5. Dans la Page de démarrage, cliquez sur le **MyControl** onglet.  
+5. Dans la page de démarrage, cliquez sur l’onglet **myControl** .  
   
-6. Dans la zone de texte, tapez **Cat**, puis cliquez sur **enregistrer mes paramètres**.  
+6. Dans la zone de texte, tapez **Cat**, puis cliquez sur **enregistrer mon paramètre**.  
   
-7. Fermez la Page de démarrage et ouvrez de nouveau.  
+7. Fermez la page de démarrage, puis rouvrez-la.  
   
-     Le mot « Cat » doit être affiché dans la zone de texte.  
+     Le mot « Cat » doit s’afficher dans la zone de texte.  
   
-8. Remplacez le mot « Cat » par le mot « Dog ». Ne cliquez pas sur le bouton.  
+8. Remplacez le mot « CAT » par le mot « Dog ». Ne cliquez pas sur le bouton.  
   
-9. Fermez la Page de démarrage et ouvrez de nouveau.  
+9. Fermez la page de démarrage, puis rouvrez-la.  
   
-     Le mot « Dog » doit être affiché dans la zone de texte, même si le paramètre n’a pas été enregistré. Cela se produit car Visual Studio conserve les fenêtres Outil dans la mémoire, même s’ils sont fermés, jusqu'à ce que Visual Studio lui-même est fermé.  
+     Le mot « chien » doit s’afficher dans la zone de texte, même si le paramètre n’a pas été enregistré. Cela est dû au fait que Visual Studio conserve les fenêtres outil en mémoire, même si elles sont fermées, jusqu’à ce que Visual Studio soit fermé.  
   
 10. Fermez l’instance expérimentale de Visual Studio.  
   
-11. Appuyez sur F5 pour ouvrir l’instance expérimentale.  
+11. Appuyez sur F5 pour rouvrir l’instance expérimentale.  
   
-12. Le mot « Cat » doit être affiché dans la zone de texte.  
+12. Le mot « Cat » doit s’afficher dans la zone de texte.  
   
 ## <a name="next-steps"></a>Étapes suivantes  
- Vous pouvez modifier ce contrôle utilisateur pour enregistrer et récupérer un nombre quelconque de paramètres personnalisés à l’aide des valeurs différentes à partir des gestionnaires d’événements différents pour obtenir et définir le `SettingsStore` propriété. Tant que vous utilisez un autre `propertyName` paramètre pour chaque appel à <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore.SetString%2A>, les valeurs ne remplacera pas l’autre dans le Registre.  
+ Vous pouvez modifier ce contrôle utilisateur pour enregistrer et récupérer un nombre quelconque de paramètres personnalisés en utilisant différentes valeurs de différents gestionnaires d’événements pour obtenir et définir la `SettingsStore` propriété. Tant que vous utilisez un autre `propertyName` paramètre pour chaque appel à <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore.SetString%2A> , les valeurs ne sont pas remplacées dans le registre.  
   
 ## <a name="see-also"></a>Voir aussi  
  <xref:EnvDTE80.DTE2?displayProperty=fullName>   
- [Création de votre propre Page de démarrage](../misc/creating-your-own-start-page.md)   
+ [Création de votre propre page de démarrage](../misc/creating-your-own-start-page.md)   
  [Ajout de commandes Visual Studio à une page de démarrage](../extensibility/adding-visual-studio-commands-to-a-start-page.md)
