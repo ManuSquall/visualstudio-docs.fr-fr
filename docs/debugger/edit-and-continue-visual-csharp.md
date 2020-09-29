@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5d54673ee46c594bd1a4bea2990d3b9bbe90ce1f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 62411229acd2d2f8462984789037fc832dac09b8
+ms.sourcegitcommit: 822e61c69514e9f564d37ba6ca6832ccf7fbc60d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "73188193"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91421639"
 ---
 # <a name="edit-and-continue-visual-c"></a>Modifier & Continuer (Visual C#)
  Avec Modifier &amp; Continuer pour C#, vous pouvez modifier votre code en mode arrêt pendant le débogage. Les modifications peuvent être appliquées sans qu'il soit nécessaire d'arrêter et de redémarrer la session de débogage. En mode exécution, l'éditeur de code source est en lecture seule.
@@ -32,7 +32,7 @@ ms.locfileid: "73188193"
  Modifier & Continuer est pris en charge dans UWP dans Windows 10, et les applications x86 et x64 qui ciblent le .NET Framework 4,6 ou les versions ultérieures (le .NET Framework est une version de bureau uniquement).
 
  > [!NOTE]
- > Les applications et les plateformes non prises en charge incluent ASP.NET 5, Silverlight 5 et Windows 8.1.
+ > Les applications et plateformes non prises en charge incluent Silverlight 5 et Windows 8.1.
 
  Quand l’option Modifier & Continuer est activée, les modifications prises en charge sont appliquées automatiquement lorsque vous utilisez une commande d’exécution du débogueur, par exemple **Continuer**, **Exécuter pas à pas** ou **Définir l’instruction suivante**, ou lorsque vous exécutez une évaluation de fonction dans une fenêtre du débogueur.
 

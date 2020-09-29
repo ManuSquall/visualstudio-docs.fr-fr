@@ -1,17 +1,17 @@
 ---
 title: Désactiver la prise en charge DPI dans Visual Studio
 description: Décrit les limitations du Concepteur Windows Forms sur des moniteurs HDPI et explique comment exécuter Visual Studio comme processus sans prise en charge DPI.
-ms.date: 04/05/2019
+ms.date: 09/28/2020
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.topic: conceptual
-ms.openlocfilehash: 749a267d4fc33153cfc609f331ecd1d269706e12
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5444cdf8c82486f3669e82f7bb333607da2afc48
+ms.sourcegitcommit: 822e61c69514e9f564d37ba6ca6832ccf7fbc60d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88249964"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "91421792"
 ---
 # <a name="disable-dpi-awareness-in-visual-studio"></a>Désactiver la prise en charge DPI dans Visual Studio
 
@@ -43,6 +43,9 @@ Pour résoudre le problème d’affichage, vous avez trois options :
 - [Redémarrer Visual Studio comme processus sans prise en charge DPI](#restart-visual-studio-as-a-dpi-unaware-process)
 - [Ajouter une entrée de Registre](#add-a-registry-entry)
 - [Définir le paramètre de mise à l’échelle de l’affichage avec la valeur 100 %](#set-your-display-scaling-setting-to-100)
+
+> [!TIP]
+> Si vous préférez gérer des paramètres à partir de la ligne de commande, [`devenv.exe`](../ide/reference/devenv-command-line-switches.md)  prend `/noscale` comme paramètre de ligne de commande pour s’exécuter en mode de mise à l’échelle 100%.
 
 ### <a name="restart-visual-studio-as-a-dpi-unaware-process"></a>Redémarrer Visual Studio comme processus sans prise en charge DPI
 
