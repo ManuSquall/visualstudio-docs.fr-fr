@@ -1,5 +1,6 @@
 ---
-title: 'Solutions SharePoint : créer une fonctionnalité personnalisée, règles de validation du package'
+title: Créer des validations de fonctionnalités et de packages pour les solutions SharePoint
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,14 +14,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f731b6af2ada8caddb84be5561d7f6dc304e7bbd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7ac718d16383448ea13f01ad367d97f917bb42ed
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016912"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585821"
 ---
-# <a name="how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions"></a>Comment : créer des règles de validation de fonctionnalité et de package personnalisées pour les solutions SharePoint
+# <a name="create-feature-and-package-validations-for-sharepoint-solutions"></a>Créer des validations de fonctionnalités et de packages pour les solutions SharePoint
+
   Vous pouvez créer des règles de validation personnalisées pour vérifier le package de solution généré par Visual Studio. Vous pouvez effectuer une validation complète sur l’intégralité d’une fonctionnalité ou d’un package en sélectionnant **valider** dans le menu contextuel d’un package ou d’une fonctionnalité dans le **PackagingExplorer**. La validation partielle est effectuée quand vous ajoutez de nouveaux éléments de projet SharePoint ou des fonctionnalités au projet pour déterminer si le package ou la fonctionnalité est dans un état valide.
 
 ### <a name="to-create-a-custom-package-validation-rule"></a>Pour créer une règle de validation de package personnalisée
@@ -41,7 +43,7 @@ ms.locfileid: "86016912"
 
 4. Ajoutez <xref:System.ComponentModel.Composition.ExportAttribute> à la classe. Cet attribut permet à Visual Studio de découvrir et de charger votre règle de validation. Transmettez <xref:Microsoft.VisualStudio.SharePoint.Validation.IPackageValidationRule> le <xref:Microsoft.VisualStudio.SharePoint.Validation.IFeatureValidationRule> type ou au constructeur d’attribut.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
  L’exemple de code suivant montre comment créer une règle de validation de fonctionnalité personnalisée.
 
  [!code-vb[SPExtensibility.FeatureValidation#1](../sharepoint/codesnippet/VisualBasic/featurevalidation/extension/customvalidationrule.vb#1)]

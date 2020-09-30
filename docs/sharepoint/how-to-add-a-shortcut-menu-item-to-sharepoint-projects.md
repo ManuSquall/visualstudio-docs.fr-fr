@@ -1,5 +1,6 @@
 ---
 title: 'Comment : ajouter un élément de menu contextuel à des projets SharePoint | Microsoft Docs'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4e43d8d7717302eb8ab250935188bc2db3bdd66a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ea862eb21aaee75499f3b1bac7007063227150e2
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014846"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585847"
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-sharepoint-projects"></a>Comment : ajouter un élément de menu contextuel à des projets SharePoint
   Vous pouvez ajouter un élément de menu contextuel à n’importe quel projet SharePoint. L’élément de menu s’affiche lorsqu’un utilisateur clique avec le bouton droit sur un nœud de projet dans **Explorateur de solutions**.
@@ -34,7 +35,7 @@ ms.locfileid: "86014846"
 
 3. Dans le <xref:Microsoft.VisualStudio.SharePoint.IMenuItem.Click> Gestionnaire d’événements du nouvel <xref:Microsoft.VisualStudio.SharePoint.IMenuItem> objet, effectuez les tâches que vous souhaitez exécuter lorsqu’un utilisateur clique sur l’élément de menu contextuel.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
  L’exemple de code suivant montre comment ajouter un élément de menu contextuel à des nœuds de projet SharePoint dans **Explorateur de solutions**. Quand l’utilisateur clique avec le bouton droit sur un nœud de projet et clique sur l’élément **de menu écrire un message dans fenêtre Sortie** , Visual Studio affiche un message dans la fenêtre **sortie** . Cet exemple utilise le service de projet SharePoint pour afficher le message. Pour plus d’informations, consultez [utiliser le service de projet SharePoint](../sharepoint/using-the-sharepoint-project-service.md).
 
  [!code-csharp[SPExtensibility.ProjectExtension.Menu#1](../sharepoint/codesnippet/CSharp/projectmenu/extension/projectitemextensionmenu.cs#1)]
