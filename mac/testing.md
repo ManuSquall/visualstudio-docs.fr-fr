@@ -7,12 +7,12 @@ helpviewer_keywords:
 - unit tests [Visual Studio for Mac]
 ms.author: jomatthi
 author: jmatthiesen
-ms.openlocfilehash: acf34677e8d9b477512763be3c43bb9df0c53c46
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 758bdcb0d854247847e4d0d56152840643402bf4
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88200983"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91580959"
 ---
 # <a name="testing-tools-in-visual-studio-for-mac"></a>Outils de test dans Visual Studio pour Mac
 
@@ -24,7 +24,7 @@ Pour commencer à tester, vous pouvez créer un projet de test dans votre soluti
 ![Boîte de dialogue Nouveau projet avec le Web et la console > les tests sélectionnés, avec les projets xUnit, MSTest et NUnit](media/create-new-test-project.PNG)
 
 > [!NOTE]
-> Pour plus d’informations sur les tests unitaires de vos applications .NET Core et la sélection d’infrastructures de tests unitaires, consultez la documentation [sur les tests unitaires dans .net Core et .NET standard](https://docs.microsoft.com/dotnet/core/testing/?pivots=xunit) .
+> Pour plus d’informations sur les tests unitaires de vos applications .NET Core et la sélection d’infrastructures de tests unitaires, consultez la documentation [sur les tests unitaires dans .net Core et .NET standard](/dotnet/core/testing/?pivots=xunit) .
 
 ## <a name="running-tests"></a>Exécution des tests
 La fenêtre **tests unitaires** est utilisée pour exécuter des tests unitaires et est ouverte à l’aide du menu **affichage > Pad > des tests unitaires** . Les tests unitaires de votre solution sont automatiquement détectés et affichés dans cette fenêtre, où vous pouvez exécuter tous les tests ou un ensemble de tests que vous avez sélectionnés.

@@ -13,16 +13,16 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fea97c8784402c55947c108f42f2f3153f322d9c
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 9668336c565b4a3be332509d1c960b067a486785
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012384"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583630"
 ---
 # <a name="vscodewindowmanager-object"></a>Objet VSCodeWindowManager
 
-Le service de langage implémente le gestionnaire de fenêtre de code et est chargé de gérer les ornements (par exemple, la barre de liste déroulante). Pour plus d’informations, consultez [Personnalisation des fenêtres de code à l’aide de l’API héritée](../vs-2015/extensibility/customizing-code-windows-by-using-the-legacy-api.md?view=vs-2015).
+Le service de langage implémente le gestionnaire de fenêtre de code et est chargé de gérer les ornements (par exemple, la barre de liste déroulante). Pour plus d’informations, consultez [Personnalisation des fenêtres de code à l’aide de l’API héritée](../vs-2015/extensibility/customizing-code-windows-by-using-the-legacy-api.md?view=vs-2015&preserve-view=true).
 
 Le tableau suivant répertorie les interfaces de l' `VSCodeWindowManager` objet.
 

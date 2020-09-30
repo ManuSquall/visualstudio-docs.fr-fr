@@ -10,12 +10,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0dc781160b5cc9cb60da12d063f5b6d11844f3ac
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: e0340b89ed87872833f554fb00e24aca2f4759f3
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012085"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583591"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>Procédure pas à pas : ajouter des fonctionnalités à un éditeur personnalisé
 Après avoir créé un éditeur personnalisé, vous pouvez lui ajouter d’autres fonctionnalités.
@@ -34,11 +34,11 @@ Après avoir créé un éditeur personnalisé, vous pouvez lui ajouter d’autre
 
 3. Implémentez une fabrique d’éditeur en configurant l' <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> interface.
 
-     Pour plus d’informations, consultez [fabriques d’éditeur](../vs-2015/extensibility/editor-factories.md?view=vs-2015).
+     Pour plus d’informations, consultez [fabriques d’éditeur](../vs-2015/extensibility/editor-factories.md?view=vs-2015&preserve-view=true).
 
 4. Décidez si vous souhaitez que votre éditeur utilise l’activation sur place ou l’incorporation simplifiée pour gérer la fenêtre de l’objet de vue de document.
 
-     Une fenêtre d’éditeur d’incorporation simplifiée héberge une vue de document standard, tandis qu’une fenêtre d’éditeur d’activation sur place héberge un contrôle ActiveX ou tout autre objet actif comme vue de document. Pour plus d’informations, consultez [intégration simplifiée](../extensibility/simplified-embedding.md) et [activation sur place](../vs-2015/misc/in-place-activation.md?view=vs-2015).
+     Une fenêtre d’éditeur d’incorporation simplifiée héberge une vue de document standard, tandis qu’une fenêtre d’éditeur d’activation sur place héberge un contrôle ActiveX ou tout autre objet actif comme vue de document. Pour plus d’informations, consultez [intégration simplifiée](../extensibility/simplified-embedding.md) et [activation sur place](../vs-2015/misc/in-place-activation.md?view=vs-2015&preserve-view=true).
 
 5. Implémentez l' <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface pour gérer les commandes.
 
@@ -51,7 +51,7 @@ Après avoir créé un éditeur personnalisé, vous pouvez lui ajouter d’autre
         > [!NOTE]
         > Appelez `QueryService` sur <xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx> pour obtenir un pointeur vers `IVsFileChangeEx` .
 
-7. Coordonner les événements de modification de document avec le contrôle de code source. Procédez comme suit :
+7. Coordonner les événements de modification de document avec le contrôle de code source. Effectuez les étapes suivantes :
 
     1. Obtient un pointeur vers `IVsQueryEditQuerySave2` en appelant `QueryService` sur <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> .
 
@@ -63,13 +63,13 @@ Après avoir créé un éditeur personnalisé, vous pouvez lui ajouter d’autre
 
          Cette méthode invite l’utilisateur à enregistrer le fichier s’il n’a pas été enregistré ou s’il a été modifié depuis le dernier enregistrement.
 
-8. Activez la fenêtre **Propriétés** pour afficher les propriétés du texte sélectionné dans l’éditeur. Procédez comme suit :
+8. Activez la fenêtre **Propriétés** pour afficher les propriétés du texte sélectionné dans l’éditeur. Effectuez les étapes suivantes :
 
     1. Appelez <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> chaque fois que la sélection de texte est modifiée, en passant votre implémentation de <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> .
 
     2. Appelez `QueryService` sur le <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> service pour obtenir un pointeur vers <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> .
 
-9. Permet aux utilisateurs de glisser-déplacer des éléments entre l’éditeur et la **boîte à outils**, ou entre des éditeurs externes (tels que Microsoft Word) et la **boîte à outils**. Procédez comme suit :
+9. Permet aux utilisateurs de glisser-déplacer des éléments entre l’éditeur et la **boîte à outils**, ou entre des éditeurs externes (tels que Microsoft Word) et la **boîte à outils**. Effectuez les étapes suivantes :
 
     1. Implémentez `IDropTarget` sur votre éditeur pour alerter l’IDE que votre éditeur est une cible de déplacement.
 
@@ -115,7 +115,7 @@ Après avoir créé un éditeur personnalisé, vous pouvez lui ajouter d’autre
 
 12. Implémentez la prise en charge de l’aide contextuelle.
 
-     Cette étape vous permet de fournir une aide F1 et une prise en charge de la fenêtre d’aide dynamique pour les éléments de votre éditeur. Pour plus d’informations, consultez [Comment : fournir le contexte pour les éditeurs](../vs-2015/extensibility/how-to-provide-context-for-editors.md?view=vs-2015).
+     Cette étape vous permet de fournir une aide F1 et une prise en charge de la fenêtre d’aide dynamique pour les éléments de votre éditeur. Pour plus d’informations, consultez [Comment : fournir le contexte pour les éditeurs](../vs-2015/extensibility/how-to-provide-context-for-editors.md?view=vs-2015&preserve-view=true).
 
 13. Exposez un modèle objet Automation à partir de votre éditeur en implémentant l' `IDispatch` interface.
 
