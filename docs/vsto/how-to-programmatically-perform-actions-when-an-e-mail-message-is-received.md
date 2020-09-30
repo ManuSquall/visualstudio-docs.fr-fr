@@ -1,5 +1,6 @@
 ---
 title: Effectuer des actions par programmation si un message électronique est reçu
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 75278a52fb989e5142e5981dab604bf3da49bd99
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 706080e9c7191383d91e63b56b2113cf82d4b35f
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537863"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585130"
 ---
 # <a name="how-to-programmatically-perform-actions-when-an-email-message-is-received"></a>Comment : effectuer des actions par programmation lors de la réception d’un message électronique
   Cet exemple effectue des actions personnalisées quand l’utilisateur reçoit un message électronique.

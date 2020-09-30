@@ -1,5 +1,6 @@
 ---
 title: Créer un élément de projet d’action personnalisé avec un modèle d’élément, partie 1
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e5b19f99cf9688191a5b6ef8ba8d4f58f4c6633c
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: 5cdf574d17e63e1ef4906c629d43f5f928784d01
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90739939"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585561"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>Procédure pas à pas : création d’un élément de projet d’action personnalisé avec un modèle d’élément, partie 1
   Vous pouvez étendre le système de projet SharePoint dans Visual Studio en créant vos propres types d’éléments de projet. Dans cette procédure pas à pas, vous allez créer un élément de projet qui peut être ajouté à un projet SharePoint pour créer une action personnalisée sur un site SharePoint. L’action personnalisée ajoute un élément de menu au menu **actions de site** du site SharePoint.

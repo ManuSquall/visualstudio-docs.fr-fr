@@ -1,5 +1,6 @@
 ---
 title: Ajouter des contrôles à la feuille de calcul au moment de l’exécution dans un projet de complément VSTO
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5bf2610ca1f3f3767082bf50953f821d37d1af2a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ec1d1361d7ca58d4292cbbb7bc4ea3b707a748ff
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71253897"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584345"
 ---
 # <a name="walkthrough-add-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project"></a>Procédure pas à pas : ajout de contrôles à une feuille de calcul au moment de l’exécution dans un projet de complément VSTO
   Vous pouvez ajouter des contrôles à une feuille de calcul ouverte en utilisant un complément Excel VSTO. Cette procédure pas à pas montre comment utiliser le ruban pour permettre aux utilisateurs d'ajouter <xref:Microsoft.Office.Tools.Excel.Controls.Button>, <xref:Microsoft.Office.Tools.Excel.NamedRange> et <xref:Microsoft.Office.Tools.Excel.ListObject> à une feuille de calcul. Pour plus d’informations, consultez [Ajouter des contrôles aux documents Office au moment de l’exécution](../vsto/adding-controls-to-office-documents-at-run-time.md).
@@ -187,7 +188,7 @@ ms.locfileid: "71253897"
 - Pour en savoir plus sur l’enregistrement de contrôles dans une feuille de calcul, consultez l’exemple de contrôles dynamiques de compléments VSTO Excel dans [exemples et procédures pas à pas relatifs au développement Office](../vsto/office-development-samples-and-walkthroughs.md).
 
 ## <a name="see-also"></a>Voir aussi
-- [solutions Excel](../vsto/excel-solutions.md)
+- [Solutions Excel](../vsto/excel-solutions.md)
 - [Vue d’ensemble des contrôles Windows Forms dans les documents Office](../vsto/windows-forms-controls-on-office-documents-overview.md)
 - [Contrôles sur les documents Office](../vsto/controls-on-office-documents.md)
 - [NamedRange, contrôle](../vsto/namedrange-control.md)

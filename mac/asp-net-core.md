@@ -10,12 +10,12 @@ no-loc:
 - Blazor
 - Blazor WebAssembly
 ms.topic: how-to
-ms.openlocfilehash: ed92205388202c457f4d6c8e3fbba567a0d5944e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7f8795b798b492370a08e55171c5627485c7869a
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86211660"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584059"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Bien démarrer avec ASP.NET Core
 
@@ -23,7 +23,7 @@ ms.locfileid: "86211660"
 
 ## <a name="installing-net-core"></a>Installation de .NET Core
 
-.NET Core 3,1 est installé automatiquement lorsque vous installez Visual Studio pour Mac. Pour plus d’informations sur les versions de .NET Core prises en charge dans Visual Studio pour Mac consultez [prise en charge de .net Core](/visualstudio/mac/net-core-support).
+.NET Core 3,1 est installé automatiquement lorsque vous installez Visual Studio pour Mac. Pour plus d’informations sur les versions de .NET Core prises en charge dans Visual Studio pour Mac consultez [prise en charge de .net Core](./net-core-support.md).
 
 ## <a name="creating-an-aspnet-core-app-in-visual-studio-for-mac"></a>Création d’une application ASP.NET Core dans Visual Studio pour Mac
 
@@ -33,7 +33,7 @@ Ouvrez Visual Studio pour Mac. Dans l’écran de démarrage, sélectionnez **No
 
 La boîte de dialogue Nouveau projet s’affiche et vous permet de sélectionner un modèle pour créer votre application.
 
-Il existe un grand nombre de projets qui vous offrent un modèle prédéfini pour commencer à créer votre application ASP.NET Core. Les voici :
+Il existe un grand nombre de projets qui vous offrent un modèle prédéfini pour commencer à créer votre application ASP.NET Core. Ces règles sont les suivantes :
 
 - **.NET Core > Vide**
 - **.NET Core > API**

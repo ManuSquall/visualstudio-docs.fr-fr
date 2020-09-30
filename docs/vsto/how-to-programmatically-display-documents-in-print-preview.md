@@ -1,5 +1,6 @@
 ---
 title: 'Comment : afficher des documents en mode aperçu avant impression par programmation'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 036f8a45d5605b55b9743a22d598a13780641c97
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 17671ab5d544341cbd3a02713a8b29b55863f5ac
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85545910"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585208"
 ---
 # <a name="how-to-programmatically-display-documents-in-print-preview"></a>Comment : afficher des documents en mode aperçu avant impression par programmation
   Si votre solution génère un rapport, vous pouvez afficher ce dernier pour l’utilisateur en mode Aperçu avant impression.

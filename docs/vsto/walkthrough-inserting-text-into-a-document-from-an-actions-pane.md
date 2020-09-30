@@ -1,5 +1,6 @@
 ---
 title: 'Procédure pas à pas : insertion de texte dans un document à partir d’un volet Actions'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 61e71f31ce887c7e1ea9ec57b0aa3f24a45be364
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5c65027d7670c4d6789f32eb4d9080df061d904a
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90840198"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584961"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>Procédure pas à pas : insertion de texte dans un document à partir d’un volet Actions
   Cette procédure pas à pas montre comment créer un volet actions dans un document Word Microsoft Office. Le volet Actions contient deux contrôles qui collectent l’entrée, puis envoient le texte au document.

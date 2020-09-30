@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 07/03/2020
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: 56af8f7cd30ec8e41ece2772dc63d67a2dbf3976
-ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
+ms.openlocfilehash: a385e58f73edbcea6eb25b7b2e2728e00f9bcb8d
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89402611"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584007"
 ---
 # <a name="visual-studio-2019-for-mac-tour"></a>Visite guidée de Visual Studio 2019 pour Mac
 
@@ -66,7 +66,7 @@ Le panneau Solution organise le ou les projets dans une solution :
 
 C’est ici que le code source, les ressources, l’interface utilisateur et les dépendances sont organisés en projets spécifiques à une plateforme.
 
-Pour plus d’informations sur l’utilisation de projets et de solutions dans Visual Studio pour Mac, consultez l’article [Projets et solutions](/visualstudio/mac/projects-and-solutions).
+Pour plus d’informations sur l’utilisation de projets et de solutions dans Visual Studio pour Mac, consultez l’article [Projets et solutions](./projects-and-solutions.md).
 
 ## <a name="assembly-references"></a>Références d’assembly
 
@@ -78,7 +78,7 @@ Vous ajoutez des références en utilisant la boîte de dialogue **Modifier les 
 
 ![Boîte de dialogue Modifier les références](media/ide-tour-image20.png)
 
-Pour plus d’informations sur l’utilisation de références dans Visual Studio pour Mac, consultez l’article [Gestion des références dans un projet](/visualstudio/mac/managing-references-in-a-project).
+Pour plus d’informations sur l’utilisation de références dans Visual Studio pour Mac, consultez l’article [Gestion des références dans un projet](./managing-references-in-a-project.md).
 
 ## <a name="dependencies--packages"></a>Dépendances/packages
 
@@ -90,7 +90,7 @@ Pour ajouter une dépendance à votre application, cliquez avec le bouton droit 
 
 ![Ajouter un package NuGet](media/ide-tour-image21.png)
 
-Vous trouverez des informations sur l’utilisation d’un package NuGet dans une application dans l’article [Inclusion d’un projet NuGet dans votre projet](/visualstudio/mac/nuget-walkthrough).
+Vous trouverez des informations sur l’utilisation d’un package NuGet dans une application dans l’article [Inclusion d’un projet NuGet dans votre projet](./nuget-walkthrough.md).
 
 ## <a name="source-editor"></a>Éditeur de code source
 
@@ -111,7 +111,7 @@ Voici quelques-unes des fonctionnalités suivantes :
 * Sélection du format
 * Ampoules inline
 
-Pour plus d’informations sur l’utilisation de l’éditeur de code source dans Visual Studio pour Mac, consultez la documentation de l' [éditeur de code source](/visualstudio/mac/source-editor) .
+Pour plus d’informations sur l’utilisation de l’éditeur de code source dans Visual Studio pour Mac, consultez la documentation de l' [éditeur de code source](./source-editor.md) .
 
 Pour que les onglets restent visibles à tout moment, vous pouvez tirer parti de leur épinglage. Cela garantit que chaque fois que vous lancez un projet, l’onglet dont vous avez besoin s’affiche toujours. Pour épingler un onglet, pointez sur l’onglet, puis cliquez sur l’icône d' _épingle_ :
 
@@ -119,15 +119,15 @@ Pour que les onglets restent visibles à tout moment, vous pouvez tirer parti de
 
 ## <a name="refactoring"></a>Refactorisation
 
-Visual Studio pour Mac offre deux méthodes pratiques pour refactoriser votre code : Actions contextuelles et Analyse du code source. Pour plus d’informations sur ces méthodes, consultez l’article [Refactorisation](/visualstudio/mac/refactoring).
+Visual Studio pour Mac offre deux méthodes pratiques pour refactoriser votre code : Actions contextuelles et Analyse du code source. Pour plus d’informations sur ces méthodes, consultez l’article [Refactorisation](./refactoring.md).
 
 ## <a name="debugging"></a>Débogage
 
-Visual Studio pour Mac possède des débogueurs qui prennent en charge les projets .NET Core, .NET Framework, Unity et Xamarin. Visual Studio pour Mac utilise le débogueur .NET Core et le débogueur mono Soft, ce qui permet à l’IDE de déboguer du code managé sur toutes les plateformes. Pour plus d’informations sur le débogage, consultez l’article [Débogage](/visualstudio/mac/debugging).
+Visual Studio pour Mac possède des débogueurs qui prennent en charge les projets .NET Core, .NET Framework, Unity et Xamarin. Visual Studio pour Mac utilise le débogueur .NET Core et le débogueur mono Soft, ce qui permet à l’IDE de déboguer du code managé sur toutes les plateformes. Pour plus d’informations sur le débogage, consultez l’article [Débogage](./debugging.md).
 
 Le débogueur contient des visualiseurs enrichis pour les types spéciaux, tels que les chaînes, les couleurs, les URL, ainsi que les tailles, les coordonnées et les courbes de Bézier.
 
-Pour plus d’informations sur les visualisations des données du débogueur, consultez l’article [Visualisations des données](/visualstudio/mac/data-visualizations).
+Pour plus d’informations sur les visualisations des données du débogueur, consultez l’article [Visualisations des données](./data-visualizations.md).
 
 ## <a name="version-control"></a>Gestion de versions
 
@@ -139,7 +139,7 @@ Les fichiers comportant des modifications non validées sont indiqués par une a
 
 ![Fichiers non validés dans le panneau Solution](media/ide-tour-image23.png)
 
-Pour plus d’informations sur l’utilisation de la gestion de versions dans Visual Studio, consultez l’article [Gestion de versions](/visualstudio/mac/version-control).
+Pour plus d’informations sur l’utilisation de la gestion de versions dans Visual Studio, consultez l’article [Gestion de versions](./version-control.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

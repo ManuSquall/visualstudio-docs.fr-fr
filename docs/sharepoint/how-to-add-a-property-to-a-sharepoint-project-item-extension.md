@@ -1,5 +1,6 @@
 ---
 title: 'Comment : ajouter une propriété à une extension d’élément de projet SharePoint | Microsoft Docs'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 337536d2219ce8494f96769bc79f10967883e61a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 752a782bb4aafd977ff10a0b57dd971f7ad6bed4
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015982"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584254"
 ---
 # <a name="how-to-add-a-property-to-a-sharepoint-project-item-extension"></a>Comment : ajouter une propriété à une extension d’élément de projet SharePoint
   Vous pouvez utiliser une extension d’élément de projet pour ajouter une propriété à un élément de projet SharePoint déjà installé dans Visual Studio. La propriété s’affiche dans la fenêtre **Propriétés** lorsque l’élément de projet est sélectionné dans **Explorateur de solutions**.
@@ -34,7 +35,7 @@ ms.locfileid: "86015982"
 
 3. Dans le gestionnaire d’événements pour l' <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> événement, ajoutez une instance de votre classe de propriétés à la <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemPropertiesRequestedEventArgs.PropertySources%2A> collection du paramètre d’arguments d’événement.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
  L’exemple de code suivant montre comment ajouter une propriété nommée **example Property** à l’élément de projet récepteur d’événements.
 
  [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#8](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemextensionproperty.cs#8)]

@@ -1,5 +1,6 @@
 ---
 title: Déployer, publier et mettre à niveau des solutions SharePoint à distance &
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f05f42f8aed35696b962e71a5fce86c2956b3661
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5de5128ff19472390e65aa5d9a437aee269ff897
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016806"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585782"
 ---
 # <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>Procédure : déployer, publier et mettre à niveau des solutions SharePoint sur un serveur distant
   En plus de déployer des solutions SharePoint sur le système local, vous pouvez publier des solutions SharePoint bac à sable (sandbox) sur des sites distants ou des sites SharePoint locaux. Le processus de publication à distance copie le fichier *. wsp* sur le serveur SharePoint, installe la solution, puis vous permet d’activer la solution. Vous pouvez également mettre à niveau une installation de solution SharePoint à distance après y avoir apporté des modifications.

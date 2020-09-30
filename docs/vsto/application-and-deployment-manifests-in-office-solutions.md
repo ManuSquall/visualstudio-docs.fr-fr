@@ -1,5 +1,6 @@
 ---
 title: Manifestes d’application et de déploiement dans les solutions Office
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d22d58eb8a2264d5c7765a15726db556c7d5569f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc4095ce8cd945ff35903c9d8ffc95400cc3b7ab
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62942900"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584436"
 ---
 # <a name="application-and-deployment-manifests-in-office-solutions"></a>Manifestes d’application et de déploiement dans les solutions Office
   Un manifeste d'application est un fichier XML qui fournit les informations utilisées par une solution Office pour localiser ses assemblys et les mettre à jour. Un manifeste d'application peut être utilisé avec un manifeste de déploiement, qui est un fichier XML stocké sur le serveur fournissant les informations nécessaires à la localisation de la version la plus récente du manifeste d'application et des assemblys.
@@ -42,7 +43,7 @@ ms.locfileid: "62942900"
 ## <a name="see-also"></a>Voir aussi
 
 - [Architecture des personnalisations au niveau du document](../vsto/architecture-of-document-level-customizations.md)
-- [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)
+- [Architecture des compléments VSTO](../vsto/architecture-of-vsto-add-ins.md)
 - [Concevoir et créer des solutions Office](../vsto/designing-and-creating-office-solutions.md)
 - [Manifestes d’application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md)
 - [Manifestes de déploiement pour les solutions Office](../vsto/deployment-manifests-for-office-solutions.md)

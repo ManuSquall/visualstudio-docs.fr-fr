@@ -1,5 +1,6 @@
 ---
 title: Obtenir des données pour le nœud SharePoint intégré dans Explorateur de serveurs
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,17 +14,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5bb69773bf3f031b75d63ebe8cb1f1b4a00286c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7649092cc21fcc7b861f4ddf630007bde896e852
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014892"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585769"
 ---
 # <a name="how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer"></a>Comment : obtenir des données pour un nœud SharePoint intégré dans Explorateur de serveurs
   Pour chaque nœud SharePoint intégré dans **Explorateur de serveurs**, vous pouvez obtenir des données pour le composant SharePoint sous-jacent représenté par le nœud. Pour plus d’informations, consultez [étendre le nœud Connexions SharePoint dans Explorateur de serveurs](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
  L’exemple de code suivant montre comment obtenir des données pour la liste SharePoint sous-jacente représentée par un nœud de liste dans **Explorateur de serveurs**. Par défaut, les nœuds liste disposent d’un élément de menu contextuel **afficher dans le navigateur** sur lequel vous pouvez cliquer pour ouvrir les listes dans un navigateur Web. Cet exemple étend la liste des nœuds en ajoutant un affichage dans l’élément de menu contextuel **de Visual Studio** qui ouvre les listes directement dans Visual Studio. Le code accède aux données de liste pour le nœud afin d’obtenir l’URL de la liste à ouvrir dans Visual Studio.
 
  [!code-vb[SPExtensibility.ProjectSystemExtension.General#10](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextensionnodeinfo.vb#10)]

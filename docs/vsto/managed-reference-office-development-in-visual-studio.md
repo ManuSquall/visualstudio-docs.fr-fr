@@ -1,5 +1,6 @@
 ---
 title: Référence managée (développement Office dans Visual Studio)
+titleSuffix: ''
 ms.date: 08/14/2019
 ms.topic: reference
 dev_langs:
@@ -13,19 +14,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 29e8a2206432555e58b47691233bd46c49791046
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 20ae614ceef76a0ab5789c04212a3facfa571662
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85519858"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583747"
 ---
 # <a name="managed-reference-office-development-in-visual-studio"></a>Référence managée (développement Office dans Visual Studio)
   Cette section contient la documentation de référence des API pour les espaces de noms et types utilisés dans les projets Office qui ciblent [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou [!INCLUDE[net_v45](includes/net-v45-md.md)]. Pour obtenir une documentation de référence des API sur les espaces de noms et les types utilisés dans les projets Office qui ciblent le .NET Framework 3,5, consultez la section de référence suivante dans la documentation de Visual Studio : [référence managée (développement Office dans Visual Studio)](managed-reference-office-development-in-visual-studio.md).
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
-## <a name="in-this-section"></a>Contenu de cette section
+## <a name="in-this-section"></a>Dans cette section
  <xref:Microsoft.Office.Tools>
 
  Contient des classes courantes pour la programmation de solutions Office. Celles-ci incluent notamment la classe de base des compléments VSTO, les classes pour la création de volets des tâches personnalisés dans les compléments VSTO, les classes pour la création de balises actives dans les solutions Excel et Word, ainsi que les classes pour la création de volets Actions dans les personnalisations au niveau du document.

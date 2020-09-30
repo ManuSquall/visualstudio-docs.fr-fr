@@ -1,5 +1,6 @@
 ---
 title: Personnaliser les fonctionnalités de l’interface utilisateur à l’aide des interfaces d’extensibilité
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -20,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d28c9456afdc60b1bddadf759ec3090ba37f2040
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 07b62903388012dac3459c86011e349f8053762c
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "90839346"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583838"
 ---
 # <a name="customize-ui-features-by-using-extensibility-interfaces"></a>Personnaliser les fonctionnalités de l’interface utilisateur à l’aide des interfaces d’extensibilité
   Les Outils de développement Office dans Visual Studio fournissent des classes et des concepteurs qui gèrent de nombreux détails d’implémentation quand vous les utilisez pour créer des volets de tâches personnalisés, des personnalisations de ruban et des zones de formulaire Outlook dans un complément VSTO. Toutefois, vous pouvez également implémenter vous-même l' *interface d'extensibilité* pour chaque fonctionnalité si vous avez des spécifications spéciales.

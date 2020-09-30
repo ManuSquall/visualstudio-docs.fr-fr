@@ -11,17 +11,17 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0387bc15e392d9e9035e4dd1c119fdc1ad00dba
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: d7b82353247776eb2dac8135a0a412b396d571a1
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90011968"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584714"
 ---
 # <a name="register-a-tool-window"></a>Inscrire une fenêtre outil
 Vous pouvez inscrire vos fenêtres outil à l’aide <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> de et  <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute> .
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
 ```csharp
 
@@ -35,4 +35,4 @@ public class PackageToolWindow : Package
 {
 ```
 
- Dans le code ci-dessus, le <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> inscrit `PersistedWindowPane` les `DynamicWindowPane` fenêtres outil et dans Visual Studio. La fenêtre outil rendue persistante est ancrée et avec des onglets **Explorateur de solutions**, et la fenêtre dynamique reçoit une position et une taille de départ par défaut. La fenêtre dynamique est rendue temporaire, ce qui indique qu’elle n’est pas créée au démarrage. Cela écrit une `DontForceCreate` valeur dans la `ToolWindows` clé dans le registre système. Pour plus d’informations, consultez Configuration de l’affichage de la [fenêtre outil](../vs-2015/extensibility/tool-window-display-configuration.md?view=vs-2015).
+ Dans le code ci-dessus, le <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> inscrit `PersistedWindowPane` les `DynamicWindowPane` fenêtres outil et dans Visual Studio. La fenêtre outil rendue persistante est ancrée et avec des onglets **Explorateur de solutions**, et la fenêtre dynamique reçoit une position et une taille de départ par défaut. La fenêtre dynamique est rendue temporaire, ce qui indique qu’elle n’est pas créée au démarrage. Cela écrit une `DontForceCreate` valeur dans la `ToolWindows` clé dans le registre système. Pour plus d’informations, consultez Configuration de l’affichage de la [fenêtre outil](../vs-2015/extensibility/tool-window-display-configuration.md?view=vs-2015&preserve-view=true).

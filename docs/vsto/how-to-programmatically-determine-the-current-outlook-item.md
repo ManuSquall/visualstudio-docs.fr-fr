@@ -1,5 +1,6 @@
 ---
 title: 'Comment : déterminer l’élément Outlook actuel par programmation'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,19 +16,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 94d7e16b011b153a43e3d1666451a90b0e44c8b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 428dccf09235e2feea528bcdaef0a447e02ef58d
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547158"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585234"
 ---
 # <a name="how-to-programmatically-determine-the-current-outlook-item"></a>Comment : déterminer l’élément Outlook actuel par programmation
   Cet exemple utilise l' `Explorer.SelectionChange` événement pour afficher le nom du dossier actif et des informations sur l’élément sélectionné. Le code affiche ensuite l’élément sélectionné.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
  [!code-vb[Trin_OL_CurrentItem#1](../vsto/codesnippet/VisualBasic/Trin_OL_CurrentItem/thisaddin.vb#1)]
  [!code-csharp[Trin_OL_CurrentItem#1](../vsto/codesnippet/CSharp/Trin_OL_CurrentItem/thisaddin.cs#1)]
 

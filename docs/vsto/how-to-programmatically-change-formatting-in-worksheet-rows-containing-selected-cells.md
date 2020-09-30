@@ -1,5 +1,6 @@
 ---
 title: Modifier les formats des lignes contenant des cellules sélectionnées par le biais du code
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 23217b2107be4406cd193418e7d1ee2bfa631a9d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 31fe16436b09696b79bf760db7b346d1092c0439
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541555"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585299"
 ---
 # <a name="how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells"></a>Comment : modifier la mise en forme des lignes de feuille de calcul contenant des cellules sélectionnées par programmation
   Vous pouvez modifier la police d’une ligne entière qui contient une cellule sélectionnée afin que le texte soit gras.

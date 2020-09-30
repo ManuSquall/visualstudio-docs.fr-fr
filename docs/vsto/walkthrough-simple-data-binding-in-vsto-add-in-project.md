@@ -1,5 +1,6 @@
 ---
 title: 'Procédure pas à pas : liaison de données simple dans un projet de complément VSTO'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bcfb150cc0b97b72fd0f6eac02f59ae1db3e9ca6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 67264800fd2baa1ca685bcc578fb4d400e6538dd
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985406"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584909"
 ---
 # <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>Procédure pas à pas : liaison de données simple dans un projet de complément VSTO
 
@@ -51,7 +52,7 @@ Vous devez disposer des éléments suivants pour exécuter cette procédure pas 
 
   - Pour attacher une base de données à l’aide de la ligne de commande, consultez [Comment : attacher un fichier de base de données à SQL Server Express](/previous-versions/sql/).
 
-## <a name="create-a-new-project"></a>Création d'un projet
+## <a name="create-a-new-project"></a>Créer un projet
 
 La première étape consiste à créer un projet de complément VSTO Word.
 

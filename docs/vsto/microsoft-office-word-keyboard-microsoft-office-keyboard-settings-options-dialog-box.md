@@ -1,5 +1,6 @@
 ---
-title: Clavier Office Word, paramètres du clavier, boîte de dialogue Options
+title: Clavier Office Word, paramètres, boîte de dialogue Options
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,14 +17,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5180aa2f4c5022cedcba2c5377d2ff2ac14ffb28
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 83cfe2e6061f82d48a00354b610955c698a9a11f
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66835982"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584501"
 ---
-# <a name="microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box"></a>Microsoft Office clavier Word, Microsoft Office paramètres du clavier, boîte de dialogue Options
+# <a name="microsoft-office-word-keyboard-settings-options-dialog-box"></a>Microsoft Office clavier Word, paramètres, boîte de dialogue Options
   Microsoft Office Word et Visual Studio gèrent les touches de raccourci. La même combinaison de touches de raccourci peut reposer pour différentes commandes dans Word et dans Visual Studio. Quand Word est ouvert dans un projet au niveau du document dans Visual Studio, une seule application à la fois reçoit les commandes de touches de raccourci. Par défaut, Visual Studio reçoit toutes les commandes de touches de raccourci, mais vous pouvez faire en sorte que Word les reçoit lorsque le document a le focus en sélectionnant **schéma de clavier dynamique**.
 
  Si vous utilisez une touche de raccourci qui n’est pas assignée à une commande de l’application qui gère actuellement les touches de raccourci, la touche de raccourci est transmise à l’autre application.

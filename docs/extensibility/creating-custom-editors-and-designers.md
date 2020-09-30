@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64edfe1088e7fb8888933d85eeef096bd8c2006a
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: fcc047794cc79ad2909bfaa1d9866fc0a2c0dc1e
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012267"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584727"
 ---
 # <a name="create-custom-editors-and-designers"></a>Créer des éditeurs et des concepteurs personnalisés
 
@@ -59,7 +59,7 @@ Pour plus d’informations sur l’éditeur principal de Visual Studio, consulte
 
 - Votre éditeur a-t-il besoin d’héberger des contrôles ActiveX ?
 
-   Si votre éditeur héberge des contrôles ActiveX, implémentez un éditeur d’activation sur place, comme indiqué dans [activation sur place](../vs-2015/misc/in-place-activation.md?view=vs-2015). S’il n’héberge pas de contrôles ActiveX, utilisez un éditeur d’incorporation simplifié ou personnalisez l' [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] éditeur par défaut.
+   Si votre éditeur héberge des contrôles ActiveX, implémentez un éditeur d’activation sur place, comme indiqué dans [activation sur place](../vs-2015/misc/in-place-activation.md?view=vs-2015&preserve-view=true). S’il n’héberge pas de contrôles ActiveX, utilisez un éditeur d’incorporation simplifié ou personnalisez l' [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] éditeur par défaut.
 
 - Votre éditeur prendra-t-il en charge plusieurs vues ? Vous devez prendre en charge plusieurs vues Si vous souhaitez que les affichages de votre éditeur soient visibles en même temps que l’éditeur par défaut.
 
@@ -93,7 +93,7 @@ Explique comment implémenter des données de document et des vues de document d
 
 ## <a name="related-sections"></a>Sections connexes
 
-[Interfaces héritées dans l’éditeur](../vs-2015/extensibility/legacy-interfaces-in-the-editor.md?view=vs-2015)\
+[Interfaces héritées dans l’éditeur](../vs-2015/extensibility/legacy-interfaces-in-the-editor.md?view=vs-2015&preserve-view=true)\
 Explique comment accéder à l’éditeur principal au moyen de l’API héritée.
 
 [Développer un service de langage hérité](../extensibility/internals/developing-a-legacy-language-service.md)\

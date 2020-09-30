@@ -1,5 +1,5 @@
 ---
-title: Au moins une propriété du fichier .ofs n'est pas valide pour la classe de message sélectionnée
+title: Propriétés non valides dans le fichier. OFS pour la classe de message»
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -12,15 +12,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d58ad6ff89d8cf41ec60135cfbfe3deac1382f1e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 66e8ecacffb58e945a3f80d03f47edc1329668d1
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62977859"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584657"
 ---
-# <a name="one-or-more-properties-in-the-ofs-file-are-not-valid-for-the-message-class-selected"></a>Au moins une propriété du fichier .ofs n'est pas valide pour la classe de message sélectionnée
-  Cette erreur apparaît lorsque vous importez une zone de formulaire conçue dans Outlook, mais qu’un ou plusieurs champs de la zone de formulaire ne sont pas compatibles avec les classes de message que vous sélectionnez dans la dernière page de l’Assistant **nouvelle zone de formulaire** .
+# <a name="invalid-properties-in-the-ofs-file-for-the-message-class"></a>Propriétés non valides dans le fichier. OFS pour la classe de message
+
+  L’erreur « une ou plusieurs propriétés dans le fichier. OFS n’est pas valide pour la classe de message sélectionnée » s’affiche lorsque vous importez une zone de formulaire conçue dans Outlook, mais qu’un ou plusieurs champs de la zone de formulaire ne sont pas compatibles avec les classes de message que vous sélectionnez dans la dernière page de l’Assistant **nouvelle zone de formulaire** .
 
 Par exemple, vous pouvez sélectionner **Tâche (IPM.Task)** à la dernière page de l’Assistant **Nouvelle zone de formulaire** . Si la zone de formulaire contient un champ **adresse professionnelle** , vous recevez cette erreur, car une tâche n’a pas d’adresse professionnelle. Par conséquent, le champ **adresse professionnelle** n’est pas compatible avec la `IPM.Task` classe message.
 

@@ -1,5 +1,6 @@
 ---
 title: 'Comment : Rechercher du texte dans les plages de la feuille de calcul par programmation'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4d35d24f9132a9b279316b53fbb13e3bfa094994
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f69a0b2c7191f608e4d18c6c3990c1ce19f1ed7e
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547028"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584753"
 ---
 # <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Comment : Rechercher du texte dans les plages de la feuille de calcul par programmation
   La <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> méthode de l' <xref:Microsoft.Office.Interop.Excel.Range> objet vous permet de rechercher du texte dans la plage. Ce texte peut également être l’une des chaînes d’erreur qui peuvent s’afficher dans une cellule de feuille de calcul telle que `#NULL!` ou `#VALUE!` . Pour plus d’informations sur les chaînes d’erreur, consultez [valeurs d’erreur de cellule](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values).

@@ -1,5 +1,6 @@
 ---
 title: 'Procédure pas à pas : liaison de données complexe dans un projet au niveau du document'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 026dc77573bbedce7882f9b3cceab049ef1066e4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7aba307bcd76cc055e42c11418d42f3dd0cfba1f
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67692339"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584319"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Procédure pas à pas : liaison de données complexe dans un projet au niveau du document
   Cette procédure pas à pas montre les concepts de base de la liaison de données complexe dans un projet au niveau du document. Vous pouvez lier plusieurs cellules d’un Microsoft Office feuille de calcul Excel aux champs de la base de données Northwind SQL Server.
@@ -48,7 +49,7 @@ ms.locfileid: "67692339"
 
 - Autorisations de lecture et d’écriture dans la base de données SQL Server.
 
-## <a name="create-a-new-project"></a>Création d'un projet
+## <a name="create-a-new-project"></a>Créer un projet
  La première étape consiste à créer un projet de classeur Excel.
 
 ### <a name="to-create-a-new-project"></a>Pour créer un projet
@@ -137,7 +138,7 @@ ms.locfileid: "67692339"
      [!code-csharp[Trin_VstcoreDataExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#10)]
      [!code-vb[Trin_VstcoreDataExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#10)]
 
-## <a name="test-the-application"></a>Tester l’application
+## <a name="test-the-application"></a>Test de l’application
  Vous pouvez maintenant tester votre classeur pour vérifier que les données apparaissent comme prévu et que vous pouvez manipuler les données dans l’objet de liste.
 
 ### <a name="to-test-the-data-binding"></a>Pour tester la liaison de données
@@ -178,7 +179,7 @@ ms.locfileid: "67692339"
 
 2. Ajoutez les informations suivantes dans la ligne vide.
 
-   |EmployeeID (IDEmployé)|LastName|FirstName|Intitulé|
+   |EmployeeID (IDEmployé)|LastName|FirstName|Titre|
    |----------------|--------------|---------------|-----------|
    |10|Ito|Shu|Directeur commercial|
 

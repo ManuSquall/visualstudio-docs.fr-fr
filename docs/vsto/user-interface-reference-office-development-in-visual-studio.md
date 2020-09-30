@@ -1,5 +1,6 @@
 ---
 title: Référence de l’interface utilisateur (développement Office dans Visual Studio)
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,17 +13,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aabbe05d31a9c95dcf8e5eb5d03caf60e923c65c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 17366c4901c6fa28036d089f74402768721e1a8d
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62982405"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584384"
 ---
 # <a name="user-interface-reference-office-development-in-visual-studio"></a>Référence de l’interface utilisateur (développement Office dans Visual Studio)
   Les éléments d’interface utilisateur suivants font partie des projets Office dans Visual Studio.
 
-## <a name="in-this-section"></a>Contenu de cette section
+## <a name="in-this-section"></a>Dans cette section
 - [Page publier, concepteur de projets &#40;développement Office dans Visual Studio&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)
 
  Décrit la page de propriétés utilisée pour configurer les propriétés pour le déploiement d’une solution Office.

@@ -1,5 +1,6 @@
 ---
 title: 'Procédure pas à pas : liaison de données à des contrôles dans un volet Actions Excel'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1543f872961d556674dd5ad6b3f5b8071d2d404b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3801aff53a5bf9a9a8d77263ab74127c1b2a9846
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71253879"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585052"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-an-excel-actions-pane"></a>Procédure pas à pas : liaison de données à des contrôles dans un volet Actions Excel
   Cette procédure pas à pas montre comment lier des données à des contrôles dans un volet actions dans Microsoft Office Excel. Les contrôles illustrent une relation Maître/Détail entre des tables dans une base de données SQL Server.
@@ -163,7 +164,7 @@ ms.locfileid: "71253879"
      [!code-csharp[Trin_VstcoreActionsPaneExcel#4](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#4)]
      [!code-vb[Trin_VstcoreActionsPaneExcel#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#4)]
 
-## <a name="test-the-application"></a>Tester l’application
+## <a name="test-the-application"></a>Test de l’application
  Vous pouvez maintenant tester votre document pour vérifier que le volet actions s’ouvre lorsque le document est ouvert et que les contrôles ont une relation maître/détail.
 
 ### <a name="to-test-your-document"></a>Pour tester votre document

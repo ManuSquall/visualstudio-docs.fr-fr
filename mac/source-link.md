@@ -5,12 +5,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 12/16/2019
 ms.assetid: 4bcb8acf-db50-4bd8-a48e-86248f00c90b
-ms.openlocfilehash: 530ad09bbf72d9696621f328c2df40b37f362c13
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 307196dc7e33d268c45a9bb126c002ad426c5558
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75451488"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583916"
 ---
 # <a name="debugging-into-nuget-packages-with-source-link"></a>Débogage dans des packages NuGet avec lien source
 
@@ -38,4 +38,4 @@ Par défaut, l’option **demander** est sélectionnée. L’invite suivante s�
 ## <a name="see-also"></a>Voir aussi
 
 - Le [référentiel github du lien source](https://github.com/dotnet/sourcelink/blob/master/README.md)
-- [Documentation .net](https://docs.microsoft.com/dotnet/standard/library-guidance/sourcelink) sur le lien source et pour plus d’informations sur l’ajout de la prise en charge du lien source aux packages
+- [Documentation .net](/dotnet/standard/library-guidance/sourcelink) sur le lien source et pour plus d’informations sur l’ajout de la prise en charge du lien source aux packages

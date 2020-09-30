@@ -1,5 +1,6 @@
 ---
-title: Clavier Office Excel, paramètres du clavier, boîte de dialogue Options
+title: Clavier Office Excel, paramètres, boîte de dialogue Options
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,14 +17,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 090e943df2b61352c2342218c3c71c8f0e60eaad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b590f82d5f28c3a71e86e18dfe16b1c3e6c4c5a
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "66836034"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584514"
 ---
-# <a name="microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box"></a>Microsoft Office clavier Excel, Microsoft Office paramètres du clavier, boîte de dialogue Options
+# <a name="microsoft-office-excel-keyboard-settings-options-dialog-box"></a>Microsoft Office clavier Excel, paramètres, boîte de dialogue Options
   Microsoft Office Excel et Visual Studio gèrent les touches de raccourci. La même combinaison de touches de raccourci peut reposer pour différentes commandes dans Excel et dans Visual Studio. Quand Excel est ouvert dans un projet au niveau du document dans Visual Studio, une seule application à la fois reçoit les commandes de touches de raccourci. Par défaut, Visual Studio reçoit toutes les commandes de touches de raccourci, mais vous pouvez faire en sorte qu’Excel les reçoit lorsque le document a le focus en sélectionnant **schéma de clavier dynamique**.
 
  Si vous utilisez une touche de raccourci qui n’est pas assignée à une commande de l’application qui gère actuellement les touches de raccourci, la touche de raccourci est transmise à l’autre application.

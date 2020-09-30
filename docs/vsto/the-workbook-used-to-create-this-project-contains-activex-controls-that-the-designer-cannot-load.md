@@ -1,5 +1,6 @@
 ---
-title: Le classeur utilisé pour créer ce projet contient des contrôles ActiveX que le concepteur ne peut pas charger
+title: Le classeur contient des contrôles ActiveX qui ne peuvent pas être chargés
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: error-reference
 f1_keywords:
@@ -12,15 +13,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4485489b48c4d1b03b608c6072cfc859e8bc8f59
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 09182fb354ad3ae8937b66952a0acd376d54fe0a
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537343"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584449"
 ---
-# <a name="the-workbook-used-to-create-this-project-contains-activex-controls-that-the-designer-cannot-load"></a>Le classeur utilisé pour créer ce projet contient des contrôles ActiveX que le concepteur ne peut pas charger
-  Cette erreur apparaît quand vous ajoutez par programmation un contrôle à un document Word ou une feuille de calcul Excel, enregistrez le document ou le classeur, puis créez une solution au niveau du document basée sur le document ou le classeur.
+# <a name="the-workbook-contains-activex-controls-that-cannot-be-loaded"></a>Le classeur contient des contrôles ActiveX qui ne peuvent pas être chargés
+
+  L’erreur « le classeur utilisé pour créer ce projet contient des contrôles ActiveX que le concepteur ne peut pas charger » s’affiche lorsque vous ajoutez par programmation un contrôle à un document Word ou une feuille de calcul Excel, enregistrez le document ou le classeur, puis créez une nouvelle solution au niveau du document basée sur le document ou le classeur.
 
  Les informations qui décrivent le type managé du contrôle ne sont pas enregistrées avec le document ou le classeur. Quand vous créez une solution basée sur ce document ou classeur, Visual Studio ne possède pas suffisamment d'informations pour charger le contrôle dans le concepteur d'éléments hôtes.
 

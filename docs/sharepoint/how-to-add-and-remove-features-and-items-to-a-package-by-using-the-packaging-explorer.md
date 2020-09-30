@@ -1,5 +1,6 @@
 ---
 title: 'Explorateur de package : Ajouter & supprimer des fonctionnalités & des éléments du package'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c3ea7e30737855cbbb9434e8763f4903d80b82da
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9bc4546d598a2fcca822f1921f778034fb768c2b
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86014559"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585587"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>Comment : ajouter et supprimer des fonctionnalités et des éléments dans un package à l’aide de l’Explorateur de package
   Pour configurer un package en vue de déployer des éléments et des fonctionnalités SharePoint, vous pouvez utiliser l’Explorateur de packages. Vous pouvez ajuster les éléments de projet et les fonctionnalités SharePoint à l’intérieur de votre fichier. wsp.

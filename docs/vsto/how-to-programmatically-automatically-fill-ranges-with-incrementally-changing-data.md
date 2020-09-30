@@ -1,5 +1,6 @@
 ---
 title: Remplissage automatique des plages de données à modification incrémentielle par programmation
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 076381c93d11c2d13bdd89ea5c36c0039e15ef71
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d1cdcc02fa3c33945ffc4824310f0957bdbdd2dd
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85547470"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585312"
 ---
 # <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>Comment : remplir automatiquement des plages par programmation avec des données à modification incrémentielle
   La <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> méthode de l' <xref:Microsoft.Office.Interop.Excel.Range> objet vous permet de remplir automatiquement une plage dans une feuille de calcul avec des valeurs. La plupart du temps, la <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> méthode est utilisée pour stocker de façon incrémentielle des valeurs croissantes ou décroissantes dans une plage. Vous pouvez spécifier le comportement en fournissant une constante facultative à partir de l' <xref:Microsoft.Office.Interop.Excel.XlAutoFillType> énumération.
@@ -36,7 +37,7 @@ ms.locfileid: "85547470"
     > [!NOTE]
     > Vous ne pouvez pas passer un <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle à la place de <xref:Microsoft.Office.Interop.Excel.Range> . Pour plus d’informations, consultez [limitations de programmation des éléments hôtes et des contrôles hôtes](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
  [!code-csharp[Trin_VstcoreExcelAutomation#49](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#49)]
  [!code-vb[Trin_VstcoreExcelAutomation#49](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#49)]
 

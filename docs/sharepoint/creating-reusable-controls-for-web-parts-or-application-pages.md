@@ -1,5 +1,6 @@
 ---
 title: Création de contrôles réutilisables pour des composants WebPart ou des pages d’application | Microsoft Docs
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: overview
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b174e1e16802838f19cec6dce727ea3199df730f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d3052b2eab3dc353cdccc991a793c47485037fe8
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86015144"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585091"
 ---
 # <a name="create-reusable-controls-for-web-parts-or-application-pages"></a>Créer des contrôles réutilisables pour les composants WebPart ou les pages d’application
   Dans Visual Studio, vous pouvez créer des contrôles personnalisés et réutilisables qui peuvent être utilisés par les pages d’application et les composants WebPart qui s’exécutent dans SharePoint. Ces contrôles sont appelés contrôles utilisateur. Un contrôle utilisateur est un type de contrôle composite qui fonctionne très bien comme une page Web ASP.NET. vous pouvez ajouter des contrôles serveur Web existants et des balises à un contrôle utilisateur, et définir des propriétés et des méthodes pour le contrôle. Vous pouvez ensuite les incorporer dans des pages Web ASP.NET, où elles jouent le rôle d’unité.

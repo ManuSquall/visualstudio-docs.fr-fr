@@ -8,12 +8,12 @@ ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: 8020106ed189b1b67b7cc2f475784809fc93aa1e
-ms.sourcegitcommit: a3edc753c951f317b67ce294cd2fc74f0c45390c
+ms.openlocfilehash: f971237ecc829fcc4ab660263a1b66c701f86f62
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "89426900"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583955"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Installer Visual Studio 2019 pour Mac
 
@@ -22,7 +22,7 @@ Pour commencer à développer des applications .NET natives multiplateformes sur
  > [!div class="button"]
  > [Télécharger Visual Studio pour Mac](https://visualstudio.microsoft.com/vs/mac/)
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Exigences
 
 - Mac avec macOS High Sierra 10.13 ou ultérieur
 
@@ -62,7 +62,7 @@ Pour générer des applications Xamarin pour iOS ou macOS, vous devez également
    |**Applications .NET Core**|         |Sélectionnez plateforme **.net Core** .|         |
    |**Applications web ASP.NET Core**|         |Sélectionnez plateforme **.net Core** .|         |
    |**Azure Functions**|         |Sélectionnez plateforme **.net Core** .|         |
-   |**Développement de jeux Unity multiplateformes**|         |Aucune plateforme supplémentaire ne doit être installée au-delà de Visual Studio pour Mac.| Reportez-vous au [guide d’installation Unity](/visualstudio/mac/setup-vsmac-tools-unity) pour plus d’informations sur l’installation de l’extension Unity.|
+   |**Développement de jeux Unity multiplateformes**|         |Aucune plateforme supplémentaire ne doit être installée au-delà de Visual Studio pour Mac.| Reportez-vous au [guide d’installation Unity](./setup-vsmac-tools-unity.md) pour plus d’informations sur l’installation de l’extension Unity.|
 
 7. Après avoir effectué vos sélections, appuyez sur le bouton **Installer**.
 8. Le programme d’installation affiche la progression du téléchargement et de l’installation de Visual Studio pour Mac et des charges de travail sélectionnées. Vous serez invité à entrer votre mot de passe pour accorder les privilèges nécessaires à l’installation. :
@@ -75,7 +75,7 @@ Pour générer des applications Xamarin pour iOS ou macOS, vous devez également
 
     [![Choisir les raccourcis clavier que vous souhaitez utiliser](media/ide-tour-2019-keyboard-shortcut.png)](media/ide-tour-2019-keyboard-shortcut.png#lightbox)
 
-Si vous rencontrez des problèmes réseau durant l’installation dans un environnement d’entreprise, passez en revue les instructions [d’installation derrière un pare-feu ou un proxy](/visualstudio/mac/installation#install-visual-studio-for-mac-behind-a-firewall-or-proxy-server).
+Si vous rencontrez des problèmes réseau durant l’installation dans un environnement d’entreprise, passez en revue les instructions [d’installation derrière un pare-feu ou un proxy](#install-visual-studio-for-mac-behind-a-firewall-or-proxy-server).
 
 Découvrez-en plus sur les changements dans les [notes de publication](/visualstudio/releasenotes/vs2019-mac-relnotes).
 
@@ -88,7 +88,7 @@ Pour installer Visual Studio pour Mac derrière un pare-feu, certains points de 
 
 Configurez votre réseau de façon à autoriser l’accès aux emplacements suivants :
 
-- [Points de terminaison de Visual Studio](/visualstudio/mac/install-behind-a-firewall-or-proxy-server)
+- [Points de terminaison de Visual Studio](./install-behind-a-firewall-or-proxy-server.md)
 
 ## <a name="next-steps"></a>Étapes suivantes
 

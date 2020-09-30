@@ -1,5 +1,6 @@
 ---
 title: '&lt;&gt;élément vstoRuntime (développement Office dans Visual Studio)'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 985afe50d7c6edcfdb34e2ca046f59c5f7b664a0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffebff9e5cee8666d1b178fca09262ecd45c99b1
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541880"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584358"
 ---
 # <a name="ltvstoruntimegt-element-office-development-in-visual-studio"></a>&lt;&gt;élément vstoRuntime (développement Office dans Visual Studio)
   L’élément `vstoRuntime` de l’espace de noms `vstav3` contient une version prise en charge du runtime Visual Studio Tools pour Office pour une solution Office spécifique.
@@ -46,7 +47,7 @@ ms.locfileid: "85541880"
 
  `vstoRuntime` ne comporte aucun élément.
 
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
  L’exemple de code suivant illustre l’élément `vstoRuntime` d’un manifeste de l’application pour une solution Office déployée à l’aide de [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Cet exemple de code fait partie d’un exemple plus complet fourni dans [les manifestes d’application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md).
 
 ```xml

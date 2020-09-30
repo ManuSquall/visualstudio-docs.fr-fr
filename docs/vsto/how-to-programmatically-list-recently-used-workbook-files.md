@@ -1,5 +1,6 @@
 ---
 title: 'Comment : répertorier les fichiers de classeur récemment utilisés par programmation'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4f4f34a8ed848d548b2e23d3f9a3cf3c603c7cad
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5e3d6b57251bb19cfb02849defb157c949f4ce35
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541360"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585156"
 ---
 # <a name="how-to-programmatically-list-recently-used-workbook-files"></a>Comment : répertorier les fichiers de classeur récemment utilisés par programmation
   La <xref:Microsoft.Office.Interop.Excel._Application.RecentFiles%2A> propriété retourne une collection qui contient les noms de tous les fichiers qui apparaissent dans la Microsoft Office liste Excel des fichiers récemment utilisés. La longueur de la liste varie selon le nombre de fichiers que l’utilisateur a sélectionnés à conserver. Vous pouvez afficher les résultats dans une plage.

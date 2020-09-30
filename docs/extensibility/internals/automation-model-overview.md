@@ -11,12 +11,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f953add14c617d54d44cf8d6bf873c28eea8651
-ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+ms.openlocfilehash: 83df8926be9cd7217c514a2ed3f242bf8e121913
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90012163"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584566"
 ---
 # <a name="automation-model-overview"></a>Vue d’ensemble du modèle Automation
 Le modèle Automation se compose d’un ensemble d’objets sur lesquels vous pouvez écrire un complément ou une extension Visual Studio. Un complément est une application qui peut manipuler l’environnement Visual Studio et automatiser les tâches courantes. Une extension Visual Studio peut créer des composants Visual Studio personnalisés ou ajouter des fonctionnalités de composants standard tels que l’éditeur de texte.
@@ -40,7 +40,7 @@ Le modèle Automation se compose d’un ensemble d’objets sur lesquels vous po
 
 - Build
 
-Pour plus d’informations sur l’automatisation, consultez [Automation et extensibilité pour Visual Studio](../../vs-2015/extensibility/extensibility-in-visual-studio.md?view=vs-2015). Ce document et les documents auxquels il fournit des liens vous aident à prendre des décisions sur la façon dont vous devez fournir l’automatisation pour votre VSPackage.
+Pour plus d’informations sur l’automatisation, consultez [Automation et extensibilité pour Visual Studio](../../vs-2015/extensibility/extensibility-in-visual-studio.md?view=vs-2015&preserve-view=true). Ce document et les documents auxquels il fournit des liens vous aident à prendre des décisions sur la façon dont vous devez fournir l’automatisation pour votre VSPackage.
 
 ## <a name="see-also"></a>Voir aussi
 - [Comment : créer un complément](/previous-versions/80493a3w(v=vs.140))

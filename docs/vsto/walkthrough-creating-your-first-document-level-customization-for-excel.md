@@ -1,5 +1,6 @@
 ---
 title: Créer votre première personnalisation au niveau du document pour Excel
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8d45461c7dab250cd43d7a25d8693658c7b8e164
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b75bf6894bff4e5fa8d6ac17ed537f15041b3ede
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74566978"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585000"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>Procédure pas à pas : création de votre première personnalisation au niveau du document pour Excel
 
@@ -185,7 +186,7 @@ ms.locfileid: "74566978"
 ## <a name="see-also"></a>Voir aussi
 
 - [Vue d’ensemble du développement de solutions Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
-- [solutions Excel](../vsto/excel-solutions.md)
+- [Solutions Excel](../vsto/excel-solutions.md)
 - [Personnaliser les personnalisations au niveau du document](../vsto/programming-document-level-customizations.md)
 - [Vue d’ensemble du modèle objet Excel](../vsto/excel-object-model-overview.md)
 - [Automatiser Excel à l’aide d’objets étendus](../vsto/automating-excel-by-using-extended-objects.md)

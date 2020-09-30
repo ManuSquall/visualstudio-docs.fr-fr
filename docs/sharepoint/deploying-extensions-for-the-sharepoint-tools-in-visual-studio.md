@@ -1,5 +1,6 @@
 ---
 title: Déploiement d’extensions pour les outils SharePoint dans Visual Studio | Microsoft Docs
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0e7bcb4c03a274c958b097ab7869cb58120b0ee7
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: 8178a660f757ae7d7c2758c76d6fd0fc4b22918f
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90740142"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584701"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Déployer des extensions pour les outils SharePoint dans Visual Studio
 
@@ -240,7 +241,7 @@ Si vous souhaitez créer manuellement le package VSIX pour votre extension d’o
 
     - Si votre extension comprend un Assistant personnalisé pour un modèle de projet ou un modèle d’élément, ajoutez un `Assembly` élément sous l' `Assets` élément. Définissez la valeur du nouvel élément sur le chemin d’accès relatif de l’assembly dans le package VSIX, puis affectez `AssemblyName` à l’attribut le nom complet de l’assembly (y compris la version, la culture et le jeton de clé publique). Pour plus d’informations, consultez [dependency, élément (schéma VSX)](/previous-versions/dd393682(v=vs.110)).
 
-### <a name="example"></a>Exemple
+### <a name="example"></a> Exemple
 
 L’exemple suivant montre le contenu d’un fichier extension. vsixmanifest pour une extension d’outils SharePoint. L’extension est implémentée dans un assembly nommé Contoso.ProjectExtension.dll. L’extension comprend un assembly de commande SharePoint nommé Contoso.ExtensionCommands.dll et un modèle d’élément sous un dossier nommé **éléments personnalisés** dans le package VSIX. Cet exemple suppose que les deux assemblys se trouvent dans le même dossier que le fichier extension. vsixmanifest dans le package VSIX.
 

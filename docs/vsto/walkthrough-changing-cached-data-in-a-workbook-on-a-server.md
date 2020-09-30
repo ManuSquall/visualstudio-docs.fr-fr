@@ -1,5 +1,6 @@
 ---
 title: 'Procédure pas à pas : modification des données mises en cache dans un classeur sur un serveur'
+titleSuffix: ''
 ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a88fef7afe198dd15716570b1875ea257d19be8b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 16d3d69482476149b9a340cabe81e957f39ef6f8
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985521"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584332"
 ---
 # <a name="walkthrough-change-cached-data-in-a-workbook-on-a-server"></a>Procédure pas à pas : modification des données mises en cache dans un classeur sur un serveur
   Cette procédure pas à pas montre comment modifier un DataSet mis en cache dans un Microsoft Office classeur Excel sans démarrer Excel à l’aide de la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe.

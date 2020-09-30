@@ -6,12 +6,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 07/03/2020
 ms.topic: tutorial
-ms.openlocfilehash: e46a66ab9ec05f8e7ad13091fdced01bffbd93b5
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: b883979921b3fa1493188a8d0fe75a1c493d5d97
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038671"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583994"
 ---
 # <a name="create-a-multi-container-app-with-docker-compose"></a>Créer une application multiconteneur avec Docker Compose
 
@@ -84,7 +84,7 @@ Nous avons maintenant deux projets ASP.NET dans notre solution, et les deux sont
    ```
    
     > [!NOTE]
-    > Dans le code de production, vous ne devez pas supprimer `HttpClient` après chaque demande. Pour connaître les meilleures pratiques, consultez [utiliser HttpClientFactory pour implémenter des demandes http résilientes](https://docs.microsoft.com/dotnet/architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests).
+    > Dans le code de production, vous ne devez pas supprimer `HttpClient` après chaque demande. Pour connaître les meilleures pratiques, consultez [utiliser HttpClientFactory pour implémenter des demandes http résilientes](/dotnet/architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests).
 
 1. Dans le fichier *Index.cshtml*, ajoutez une ligne pour afficher `ViewData["Message"]` afin que le fichier ressemble à ce qui suit :
 
@@ -102,7 +102,7 @@ Nous avons maintenant deux projets ASP.NET dans notre solution, et les deux sont
       </div>
       ```
   
-1. Dans les projets de serveur frontal et d’API Web, commentez l’appel à [Microsoft. AspNetCore. Builder. HttpsPolicyBuilderExtensions. UseHttpsRedirection](https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.httpspolicybuilderextensions.usehttpsredirection) dans la `Configure` méthode de *Startup.cs*, car cet exemple de code utilise http, et non HTTPS, pour appeler l’API Web.
+1. Dans les projets de serveur frontal et d’API Web, commentez l’appel à [Microsoft. AspNetCore. Builder. HttpsPolicyBuilderExtensions. UseHttpsRedirection](/dotnet/api/microsoft.aspnetcore.builder.httpspolicybuilderextensions.usehttpsredirection) dans la `Configure` méthode de *Startup.cs*, car cet exemple de code utilise http, et non HTTPS, pour appeler l’API Web.
 
       ```csharp
                   //app.UseHttpsRedirection();

@@ -9,12 +9,12 @@ ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c9f108529931fc99946e18f15492f72384e1578
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 96342abce736f18d79f89b9441d9b53c068cbecf
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809987"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91583890"
 ---
 # <a name="respond-to-and-propagate-changes"></a>Répondre aux modifications et les propager
 
@@ -32,7 +32,7 @@ Lorsqu’un élément est créé, supprimé ou mis à jour, vous pouvez écrire 
 |Règles|Vous pouvez définir des règles qui sont mises en file d’attente d’exécution juste avant la fin d’une transaction dans laquelle une modification s’est produite. Elles ne sont pas exécutées lors d’une opération d’annulation ou de rétablissement. Utilisez-les pour maintenir une partie du magasin synchronisée avec une autre.|[Propagation de modifications dans le modèle par des règles](../modeling/rules-propagate-changes-within-the-model.md)|
 |Stocker les événements|Le magasin de modélisation fournit des notifications d’événements, tels que l’ajout ou la suppression d’un élément ou d’un lien, ou la modification de la valeur d’une propriété. L’événement est également exécuté lors des opérations d’annulation et de rétablissement. Utilisez les événements Store pour mettre à jour les valeurs qui ne sont pas dans le magasin.|[Propagation de modifications en dehors du modèle par des gestionnaires d'événements](../modeling/event-handlers-propagate-changes-outside-the-model.md)|
 |Événements .NET|Les formes comportent des gestionnaires d’événements qui répondent aux clics de souris et à d’autres gestes. Vous devez vous inscrire pour ces événements pour chaque objet. L’inscription s’effectue généralement dans une substitution de InitializeInstanceResources et doit être effectuée pour chaque élément.<br /><br /> Ces événements se produisent généralement en dehors d’une transaction.|[Guide pratique pour intercepter un événement de clic sur une forme ou un décorateur](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)|
-|Règles de limites|Une règle de limites est utilisée spécifiquement pour contraindre les limites d’une forme.|[Emplacement et de la taille de la forme contrainte par BoundsRules](../vs-2015/modeling/boundsrules-constrain-shape-location-and-size.md?view=vs-2015)|
+|Règles de limites|Une règle de limites est utilisée spécifiquement pour contraindre les limites d’une forme.|[Emplacement et de la taille de la forme contrainte par BoundsRules](../vs-2015/modeling/boundsrules-constrain-shape-location-and-size.md?view=vs-2015&preserve-view=true)|
 |Règles de sélection|Les règles de sélection limitent spécifiquement ce que l’utilisateur peut sélectionner.|[Comment : accéder à et contraindre la sélection actuelle](../modeling/how-to-access-and-constrain-the-current-selection.md)|
 |OnAssocatedPropertyChanged|Indiquer les États des éléments de modèle à l’aide des fonctionnalités des formes et des connecteurs tels que l’ombre, les flèches, la couleur et le style et la largeur des lignes.|[Mise à jour des formes et des connecteurs pour refléter le modèle](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)|
 

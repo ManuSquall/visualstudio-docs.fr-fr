@@ -1,5 +1,6 @@
 ---
 title: 'Procédure pas à pas : liaison de données simple dans un projet au niveau du document'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f3b573842aee5f00f161213cf3e01dfcc4c8ba93
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0c22947e572a29c2b49a5ce9bb808c3cf2fe2902
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62981060"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91584922"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>Procédure pas à pas : liaison de données simple dans un projet au niveau du document
   Cette procédure pas à pas montre les concepts de base de la liaison de données dans un projet au niveau du document. Un champ de données unique dans une base de données SQL Server est lié à une plage nommée dans Microsoft Office Excel. La procédure pas à pas montre également comment ajouter des contrôles qui vous permettent de faire défiler tous les enregistrements de la table.
@@ -49,7 +50,7 @@ ms.locfileid: "62981060"
 
 - Autorisations de lecture et d’écriture dans la base de données SQL Server.
 
-## <a name="create-a-new-project"></a>Création d'un projet
+## <a name="create-a-new-project"></a>Créer un projet
  Dans cette étape, vous allez créer un projet de classeur Excel.
 
 ### <a name="to-create-a-new-project"></a>Pour créer un projet
@@ -169,7 +170,7 @@ ms.locfileid: "62981060"
      [!code-csharp[Trin_VstcoreDataExcel#7](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#7)]
      [!code-vb[Trin_VstcoreDataExcel#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#7)]
 
-## <a name="test-the-application"></a>Tester l’application
+## <a name="test-the-application"></a>Test de l’application
  Vous pouvez maintenant tester votre classeur pour vous assurer que vous pouvez parcourir les enregistrements de la base de données.
 
 ### <a name="to-test-your-workbook"></a>Pour tester votre classeur

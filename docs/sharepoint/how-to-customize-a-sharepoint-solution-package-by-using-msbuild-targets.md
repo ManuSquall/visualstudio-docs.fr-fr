@@ -1,5 +1,6 @@
 ---
 title: Personnaliser le package de solution SharePoint à l’aide de cibles MSBuild
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e6570b1e3c16f1935813682e2c29051c4ac7d64a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9845f755d184c18b6b5ade4c5504e393edae7b00
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86016881"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585808"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>Comment : personnaliser un package de solution SharePoint à l’aide de cibles MSBuild
   En utilisant des cibles MSBuild dans une invite de commandes, vous pouvez personnaliser la façon dont Visual Studio crée les fichiers de package SharePoint (*. wsp*). Par exemple, vous pouvez personnaliser les propriétés MSBuild pour modifier le répertoire intermédiaire de Packaging et les groupes d’éléments MSBuild qui spécifient les fichiers énumérés.

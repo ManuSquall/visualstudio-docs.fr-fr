@@ -1,5 +1,5 @@
 ---
-title: 'Comment : associer une page Web à un dossier Outlook par programmation'
+title: Associer une page Web à un dossier Outlook
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -14,14 +14,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b8d44ffc46557243d2681b8f8b4a3b85d1cd9be6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 35eb2dc3b1b595a4bf960af67ac5006cd9839c6e
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546144"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585338"
 ---
-# <a name="how-to-programmatically-associate-a-web-page-with-an-outlook-folder"></a>Comment : associer une page Web à un dossier Outlook par programmation
+# <a name="associate-a-web-page-with-an-outlook-folder"></a>Associer une page Web à un dossier Outlook
+
   Cet exemple recherche un dossier nommé `HtmlView` dans Microsoft Office Outlook. Si le dossier n’existe pas, le code crée le dossier et lui attribue une page Web. Si le dossier existe, le code affiche le contenu du dossier.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]

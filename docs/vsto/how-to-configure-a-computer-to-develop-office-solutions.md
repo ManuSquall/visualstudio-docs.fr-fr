@@ -1,5 +1,6 @@
 ---
 title: 'Comment : configurer un ordinateur pour développer des solutions Office'
+titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: how-to
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3b13aa65e4dd5868a36e0dd833351b1d1751d8b0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 93c8287b0b2234c45056829ba78d993658b0428d
+ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85546170"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91585495"
 ---
 # <a name="how-to-configure-a-computer-to-develop-office-solutions"></a>Comment : configurer un ordinateur pour développer des solutions Office
   Pour configurer un ordinateur de développement de manière à pouvoir utiliser les Outils de développement Microsoft Office dans Visual Studio, suivez les instructions de cette rubrique. Vous devez détenir des privilèges d'administrateur sur l'ordinateur de développement pour effectuer ces étapes.
