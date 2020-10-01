@@ -524,15 +524,7 @@
             - name: Conventions de mise en forme C++ d’EditorConfig
               href: ide/cpp-editorconfig-properties.md
             - name: Conventions de codage .NET
-              items:
-                - name: Vue d'ensemble
-                  href: ide/editorconfig-code-style-settings-reference.md
-                - name: Conventions de langage
-                  href: ide/editorconfig-language-conventions.md
-                - name: Conventions de mise en forme
-                  href: ide/editorconfig-formatting-conventions.md
-                - name: Conventions d'attribution d'un nom
-                  href: ide/editorconfig-naming-conventions.md
+              href: /dotnet/fundamentals/code-analysis/code-style-rule-options
         - name: Personnaliser la barre de défilement
           href: ide/how-to-track-your-code-by-customizing-the-scrollbar.md
         - name: Définir des signets dans le code
