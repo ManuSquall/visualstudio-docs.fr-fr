@@ -1,5 +1,5 @@
 ---
-title: Supprimer les violations d’analyse du code
+title: Supprimer les violations de l’analyse du code
 ms.date: 08/27/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,14 +14,14 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: aa650197f291c48c0c025563098181ea1cfa19a7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: adf8e969af4a903aa6ed55b1c92f4ddaffcf77e0
+ms.sourcegitcommit: 56a40b7861640d7922e39256985bb542d67b8020
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89091436"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "91604636"
 ---
-# <a name="suppress-code-analysis-violations"></a>Supprimer les violations d’analyse du code
+# <a name="suppress-code-analysis-violations"></a>Supprimer les violations de l’analyse du code
 
 Il est souvent utile d’indiquer qu’un avertissement n’est pas applicable. Cela indique aux membres de l’équipe que le code a été révisé et que l’avertissement peut être supprimé. La suppression en source (ISS) utilise l' <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attribut pour supprimer un avertissement. L’attribut peut être placé à proximité du segment de code qui a généré l’avertissement. Vous pouvez ajouter l' <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attribut au fichier source en le tapant dans, ou vous pouvez utiliser le menu contextuel sur un avertissement dans le **liste d’erreurs** pour l’ajouter automatiquement.
 
@@ -183,12 +183,7 @@ Par exemple, l’attribut suivant dans votre fichier projet _GlobalSuppressions_
 
 Les compilateurs de code managé et certains outils tiers génèrent du code pour faciliter le développement rapide de code. Le code généré par le compilateur qui apparaît dans les fichiers sources est généralement marqué avec l' `GeneratedCodeAttribute` attribut.
 
-Pour l’analyse du code source, vous pouvez supprimer les messages du code généré à l’aide du fichier [. editorconfig](../code-quality/configure-fxcop-analyzers.md) à la racine de votre projet ou de votre solution. Utilisez un modèle de fichier pour faire correspondre le code généré. Par exemple, pour exclure les avertissements CS1591 dans les fichiers **. Designer.cs* , utilisez-le dans le fichier de configuration.
-
-``` cmd
-[*.designer.cs]
-dotnet_diagnostic.CS1591.severity = none
-```
+Pour l’analyse du code source, vous pouvez supprimer les messages du code généré dans un `.editorconfig` fichier. Pour plus d’informations, consultez [exclure le code généré](/dotnet/fundamentals/code-analysis/configuration-options#exclude-generated-code).
 
 Pour l’analyse du code hérité, vous pouvez choisir de supprimer les avertissements et les erreurs d’analyse du code pour le code généré. Pour plus d’informations sur la façon de supprimer de tels avertissements et erreurs, consultez [Comment : supprimer des avertissements pour le code généré](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md).
 
