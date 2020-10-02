@@ -11,18 +11,18 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: cb19cab0c03b87894029a18f682f05def6a2197c
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 3877fd22efa69978c4e209b7fa23998dac7dc95e
+ms.sourcegitcommit: 036b0dfa651f7218ed33e6a19425613599ee58fa
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005544"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "91636689"
 ---
 # <a name="dotnet-toolinstall"></a>dotnet-toolinstall
 
 L' `dotnet-toolinstall` outil est utilisé pour installer les [outils .net Core](https://dotnet.microsoft.com/) à l’aide de la `dotnet tool update` commande.
 
-## <a name="usage"></a>Usage
+## <a name="usage"></a>Utilisation
 
 Si les `input` Propriétés et `additionalOptions` sont omises ou vides, l’outil suivra le comportement [par défaut](#default-behavior) détaillé ci-dessous.
 
@@ -34,7 +34,7 @@ Si les `input` Propriétés et `additionalOptions` sont omises ou vides, l’out
 
 ### <a name="input"></a>Entrée
 
-La `input` propriété est utilisée pour spécifier l’installation de l’outil .net core. Il existe une liste non officielle d’outils à l’adresse [https://github.com/natemcmaster/dotnet-tools](https://github.com/natemcmaster/dotnet-tools) .
+La `input` propriété est utilisée pour spécifier l’outil .net core à installer. Il existe une liste non officielle d’outils à l’adresse [https://github.com/natemcmaster/dotnet-tools](https://github.com/natemcmaster/dotnet-tools) .
 
 ### <a name="additional-options"></a>Options supplémentaires
 
