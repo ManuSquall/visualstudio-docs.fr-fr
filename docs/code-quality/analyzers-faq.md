@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e59fd8ef3210a19683b428438d2e58ab816e9a40
-ms.sourcegitcommit: 56a40b7861640d7922e39256985bb542d67b8020
+ms.openlocfilehash: 134f91531b9485f5a887b2d9785a490fcea605fc
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91604593"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659164"
 ---
 # <a name="code-analysis-faq"></a>FAQ sur l’analyse du code
 
@@ -24,7 +24,7 @@ Cette page contient des réponses à certaines questions fréquemment posées su
 
 **Q**: dois-je utiliser l’analyse du code ou EditorConfig pour vérifier le style du code ?
 
-**R**: l’analyse du code et les fichiers EditorConfig fonctionnent à la main. Quand vous définissez des styles [de code dans un fichier EditorConfig](../ide/editorconfig-code-style-settings-reference.md) ou dans la page d’options de l' [éditeur de texte](../ide/code-styles-and-code-cleanup.md) , vous configurez en fait les analyseurs de code intégrés à Visual Studio. Les fichiers EditorConfig peuvent être utilisés pour activer ou désactiver les règles de l’analyseur, ainsi que pour configurer les packages de l’analyseur NuGet.
+**R**: l’analyse du code et les fichiers EditorConfig fonctionnent à la main. Quand vous définissez des styles [de code dans un fichier EditorConfig](/dotnet/fundamentals/code-analysis/code-style-rule-options) ou dans la page d’options de l' [éditeur de texte](../ide/code-styles-and-code-cleanup.md) , vous configurez en fait les analyseurs de code intégrés à Visual Studio. Les fichiers EditorConfig peuvent être utilisés pour activer ou désactiver les règles de l’analyseur, ainsi que pour configurer les packages de l’analyseur NuGet.
 
 ## <a name="editorconfig-versus-rule-sets"></a>EditorConfig et ensembles de règles
 
@@ -35,7 +35,7 @@ Cette page contient des réponses à certaines questions fréquemment posées su
 Toutefois, les fichiers EditorConfig offrent d’autres moyens de configurer les règles :
 
 - Pour les analyseurs de qualité du code .NET, les fichiers EditorConfig vous permettent de [définir les types de code à analyser](/dotnet/fundamentals/code-analysis/code-quality-rule-options).
-- Pour les analyseurs de style de code .NET intégrés à Visual Studio, les fichiers EditorConfig vous permettent de [définir les styles de code préférés](../ide/editorconfig-code-style-settings-reference.md) pour un code base.
+- Pour les analyseurs de style de code .NET intégrés à Visual Studio, les fichiers EditorConfig vous permettent de [définir les styles de code préférés](/dotnet/fundamentals/code-analysis/code-style-rule-options) pour un code base.
 
 Outre les ensembles de règles et les fichiers EditorConfig, certains analyseurs sont configurés à l’aide de fichiers texte marqués comme [fichiers supplémentaires](../ide/build-actions.md#build-action-values) pour les compilateurs C# et VB.
 
@@ -97,4 +97,4 @@ Les [analyseurs StyleCop](https://github.com/DotNetAnalyzers/StyleCopAnalyzers) 
 ## <a name="see-also"></a>Voir aussi
 
 - [Vue d’ensemble des analyseurs](roslyn-analyzers-overview.md)
-- [Paramètres de Convention de codage .NET pour EditorConfig](../ide/editorconfig-code-style-settings-reference.md)
+- [Paramètres de Convention de codage .NET pour EditorConfig](/dotnet/fundamentals/code-analysis/code-style-rule-options)

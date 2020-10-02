@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b254cb2077b748f34958e33dbc456f17df530ce
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 25fc255d0e04dd45400fa5da2b81c2e050a2150f
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89600226"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658527"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Comment : générer des données de métriques du code
 
@@ -32,10 +32,10 @@ Vous pouvez générer des données de métriques du code de trois façons :
 
 Les analyseurs de qualité du code .NET incluent plusieurs règles de l' [analyseur](roslyn-analyzers-overview.md) de métrique du code :
 
-- [CA1501](./ca1501.md)
-- [CA1502](ca1502.md)
-- [CA1505](ca1505.md)
-- [CA1506](ca1506.md)
+- [CA1501](/dotnet/fundamentals/code-analysis/quality-rules/ca1501)
+- [CA1502](/dotnet/fundamentals/code-analysis/quality-rules/ca1502)
+- [CA1505](/dotnet/fundamentals/code-analysis/quality-rules/ca1505)
+- [CA1506](/dotnet/fundamentals/code-analysis/quality-rules/ca1506)
 
 Ces règles sont désactivées par défaut, mais vous pouvez les activer à partir de [**Explorateur de solutions**](use-roslyn-analyzers.md#set-rule-severity-from-solution-explorer) ou dans un fichier d' [ensemble de règles](using-rule-sets-to-group-code-analysis-rules.md) . Par exemple, pour activer la règle CA1502 comme un avertissement, votre fichier. RuleSet doit contenir l’entrée suivante :
 
@@ -60,7 +60,7 @@ Vous pouvez configurer les seuils auxquels les règles de métriques du code se 
    CA1502: 10
    ```
 
-   Dans cet exemple, la règle [CA1502](ca1502.md) est configurée pour se déclencher lorsque la complexité cyclomatic d’une méthode est supérieure à 10.
+   Dans cet exemple, la règle [CA1502](/dotnet/fundamentals/code-analysis/quality-rules/ca1502) est configurée pour se déclencher lorsque la complexité cyclomatic d’une méthode est supérieure à 10.
 
 3. Dans la fenêtre **Propriétés** de Visual Studio, ou dans le fichier projet, marquez l’action de génération du fichier de configuration en tant que [**AdditionalFiles**](../ide/build-actions.md#build-action-values). Par exemple :
 

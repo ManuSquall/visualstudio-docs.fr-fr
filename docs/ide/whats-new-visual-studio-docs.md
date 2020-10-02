@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 6abee067465a0595b75df42d05213f9694dd7ed4
-ms.sourcegitcommit: ea3c985a23851b424127f2205f617446b6536578
+ms.openlocfilehash: 62449bd5571ff72cdf5a1c855417611f45f5970f
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91621735"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659314"
 ---
 # <a name="visual-studio-docs-whats-new-for-september-2020"></a>Documentation de Visual Studio : nouveautés du 2020 septembre
 
@@ -28,22 +28,19 @@ Bienvenue dans les documents sur les nouveautés de Visual Studio pour le 2020 s
 
 ## <a name="code-quality"></a>Qualité du code
 
-**Nouveaux Articles**
+**Nouveaux articles**
 
-- [CA1416 : valider la compatibilité](../code-quality/ca1416.md) de la plateforme-documentation CA1416 valider la compatibilité de la plateforme
-- [CA1834 : utiliser StringBuilder. Append (Char) pour les chaînes de caractères uniques](../code-quality/ca1834.md) -docs pour CA1834
+- [CA1416 : valider la compatibilité](/dotnet/fundamentals/code-analysis/quality-rules/ca1416) de la plateforme-documentation CA1416 valider la compatibilité de la plateforme
+- [CA1834 : utiliser StringBuilder. Append (Char) pour les chaînes de caractères uniques](/dotnet/fundamentals/code-analysis/quality-rules/ca1834) -docs pour CA1834
 
 **Updated**
 
-- [Configurer des analyseurs de la qualité du code .NET avec EditorConfig](../code-quality/configure-fxcop-analyzers.md)
-  - Quelques petits correctifs pour la refactorisation des documents de l’autorité de certification
-  - Mises à jour de l’analyse du code pour refactorisation .NET
 - [Vue d’ensemble de l’analyse du code source](../code-quality/roslyn-analyzers-overview.md) -mises à jour de l’analyse du code pour refactorisation .net
 - [Configurer l’analyse](../code-quality/use-roslyn-analyzers.md) de la qualité du code-mises à jour de l’analyse du code pour le refactorisation .net
 
 ## <a name="containers"></a>Conteneurs
 
-**Nouveaux Articles**
+**Nouveaux articles**
 
 - [Utiliser Bridge pour Kubernetes](../containers/bridge-to-kubernetes.md) -local process avec Kubernetes repersonnalisation pour effectuer un pont vers Kubernetes
 - [Comment fonctionne Bridge-Kubernetes](../containers/overview-bridge-to-kubernetes.md) -processus local avec Kubernetes repersonnalisation pour effectuer un pont vers Kubernetes
@@ -57,7 +54,7 @@ Bienvenue dans les documents sur les nouveautés de Visual Studio pour le 2020 s
 
 ## <a name="ide"></a>IDE
 
-**Nouveaux Articles**
+**Nouveaux articles**
 
 - [Nouvelle expérience git dans Visual Studio (version préliminaire)](./git-with-visual-studio.md) -ajouter un nouveau contenu d’expérience git (préversion)
 - [Conventions de mise en forme C++ EditorConfig](./cpp-editorconfig-properties.md) -nouvel article
@@ -68,16 +65,17 @@ Bienvenue dans les documents sur les nouveautés de Visual Studio pour le 2020 s
 
 **Articles mis à jour**
 
-- [Paramètres de Convention de codage .net pour EditorConfig](./editorconfig-code-style-settings-reference.md) -mise à jour de EditorConfig
-- [Conventions de langage](./editorconfig-language-conventions.md) -Exemples manquants
+- [Paramètres de Convention de codage .net pour EditorConfig](/dotnet/fundamentals/code-analysis/code-style-rule-options) -mise à jour de EditorConfig
+- [Conventions de langage](/dotnet/fundamentals/code-analysis/style-rules/language-rules) -Exemples manquants
 
 ## <a name="install"></a>Installer
 
-**Nouveaux Articles**
+**Nouveaux articles**
 
 - [Visual Studio sur des appareils alimentés par ARM](../install/visual-studio-on-arm-devices.md) -ajout de doc pour vs sur ARM
 
 **Articles mis à jour**
+
 - [Résoudre les erreurs liées au réseau lorsque vous installez ou utilisez Visual Studio](../install/troubleshooting-network-related-errors-in-visual-studio.md) -ajouter une solution de contournement pour le blocage du proxy d’authentification des commentaires
 
 ## <a name="profiling"></a>Profilage

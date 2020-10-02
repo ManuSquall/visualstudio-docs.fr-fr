@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1e53df97c0535f59d0b96e9608ad55f2cb5ab21
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ffaf964b24fea41d8e364d610806ba92980b1dc7
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88893305"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659177"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>Utiliser l’éditeur d’ensembles de règles d’analyse du code
 
@@ -53,7 +53,7 @@ Le tableau suivant décrit les contrôles de la barre d’outils de l’éditeur
 |**Développer tout**|Affiche les règles dans tous les groupes.|
 |**Réduire tout**|Masque les règles dans tous les groupes.|
 |**Regrouper par**|Spécifie le champ selon lequel les règles sont regroupées. Cliquez **\<None>** pour afficher les règles sans groupes.|
-|**Options de colonne**|Spécifie les champs de règle à afficher.|
+|**options de colonne**|Spécifie les champs de règle à afficher.|
 |**Masquer les règles qui ne s’appliquent pas à la solution actuelle**|Affiche ou masque les règles qui ne sont pas du même type de cible que la solution.|
 |**Afficher les règles qui peuvent générer des erreurs d’analyse du code**|Affiche ou masque les règles auxquelles l’action d’erreur est assignée.|
 |**Afficher les règles qui peuvent générer des avertissements d’analyse du code**|Affiche ou masque les règles auxquelles l’action d’avertissement est assignée.|
@@ -70,7 +70,7 @@ Le tableau suivant décrit les champs d’un ensemble de règles :
 |Champ|Description|
 |-----------|-----------------|
 |**Identifiant**|Identificateur de la règle.|
-|**Catégorie**|Outre leur appartenance aux ensembles de règles, les règles d’analyse du code sont également regroupées par catégorie. Pour plus d’informations, consultez [avertissements d’analyse du code](../code-quality/code-analysis-for-managed-code-warnings.md).|
+|**Catégorie**|Outre leur appartenance aux ensembles de règles, les règles d’analyse du code sont également regroupées par catégorie. Pour plus d’informations, consultez [avertissements d’analyse du code](/dotnet/fundamentals/code-analysis/quality-rules/index).|
 |**Nom**|Titre de la règle.|
 |**Espace de noms**|Espace de noms de la règle.|
 |**Type de cible**|Indique si la règle est pour le code natif, managé ou de base de données.|

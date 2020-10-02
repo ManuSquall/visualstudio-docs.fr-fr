@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4309b1a38e99cda262bf7558f050754656419e88
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba62555f786b2280de9a07c435a3e32d5cc3e7d9
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85520820"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659288"
 ---
 # <a name="da0006-override-equals-for-value-types"></a>DA0006 : Remplacer Equals() pour les types valeur
 
@@ -31,7 +31,7 @@ ms.locfileid: "85520820"
 |Message|Remplacer Equals et l’opérateur d’égalité pour les types valeur.|
 |Type de messages|Avertissement|
 
-## <a name="cause"></a>Cause
+## <a name="cause"></a>Cause :
  Les appels à la méthode Equals ou aux opérateurs d’égalité d’un type valeur public représentent une part importante des données de profilage. Implémentez une méthode plus efficace.
 
 ## <a name="rule-description"></a>Description de la règle
@@ -40,4 +40,4 @@ ms.locfileid: "85520820"
  Pour plus d’informations sur la façon de remplacer Equals et les opérateurs d’égalité, consultez [Conseils pour l’implémentation de Equals et de l’opérateur d’égalité (==)](/dotnet/standard/design-guidelines/equality-operators).
 
 ## <a name="how-to-investigate-a-warning"></a>Comment rechercher la cause d’un avertissement
- Pour obtenir un exemple d’implémentation de Equals et des opérateurs d’égalité, consultez la règle d’analyse du code [CA1815 : Remplacez Equals et l’opérateur égal à dans les types valeur](../code-quality/ca1815.md)
+ Pour obtenir un exemple d’implémentation de Equals et des opérateurs d’égalité, consultez la règle d’analyse du code [CA1815 : Remplacez Equals et l’opérateur égal à dans les types valeur](/dotnet/fundamentals/code-analysis/quality-rules/ca1815)

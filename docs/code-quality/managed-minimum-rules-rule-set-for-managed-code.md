@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 95264aafd2467065ee2bc36d463369f19714dd68
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 903b464172d541277de5fbac6d8ab035578b6154
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75587353"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658501"
 ---
 # <a name="managed-minimum-rules-rule-set-for-managed-code"></a>Ensemble de règles des règles minimales managées pour le code managé
 
@@ -21,7 +21,7 @@ Les règles minimales gérées se concentrent sur les problèmes les plus critiq
 
 |Règle|Description|
 |----------|-----------------|
-|[CA1001](../code-quality/ca1001.md)|Les types qui possèdent des champs supprimables doivent être supprimables|
-|[CA1821](../code-quality/ca1821.md)|Supprimez les finaliseurs vides|
-|[CA2213](../code-quality/ca2213.md)|Les champs pouvant être supprimés doivent l’être|
-|[CA2231](../code-quality/ca2231.md)|Surchargez l’opérateur égal lors du remplacement `ValueType.Equals`|
+|[CA1001](/dotnet/fundamentals/code-analysis/quality-rules/ca1001)|Les types qui possèdent des champs supprimables doivent être supprimables|
+|[CA1821](/dotnet/fundamentals/code-analysis/quality-rules/ca1821)|Supprimez les finaliseurs vides|
+|[CA2213](/dotnet/fundamentals/code-analysis/quality-rules/ca2213)|Les champs pouvant être supprimés doivent l’être|
+|[CA2231](/dotnet/fundamentals/code-analysis/quality-rules/ca2231)|Surchargez l’opérateur égal lors du remplacement `ValueType.Equals`|

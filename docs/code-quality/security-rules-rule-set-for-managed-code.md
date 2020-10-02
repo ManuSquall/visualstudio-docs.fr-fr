@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c7ce330a8a2994f827234aae8b8db416da016b29
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 5f3205bf3c81bbb9dac19c810e3a89a5fcd2227b
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509872"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658397"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>Ensemble de règles des règles de sécurité pour le code managé
 
@@ -21,7 +21,7 @@ Utilisez le jeu de règles des règles de sécurité Microsoft pour l’analyse 
 
 |Règle|Description|
 |----------|-----------------|
-|[CA2100](../code-quality/ca2100.md)|Vérifier si les requêtes SQL présentent des failles de sécurité|
+|[CA2100](/dotnet/fundamentals/code-analysis/quality-rules/ca2100)|Vérifier si les requêtes SQL présentent des failles de sécurité|
 |[CA2102](../code-quality/ca2102.md)|Interceptez les exceptions non CLSCompliant dans les gestionnaires généraux|
 |[CA2103](../code-quality/ca2103.md)|Vérifiez la sécurité impérative|
 |[CA2104](../code-quality/ca2104.md)|Ne déclarez pas les types référence mutables en lecture seule|
@@ -29,7 +29,7 @@ Utilisez le jeu de règles des règles de sécurité Microsoft pour l’analyse 
 |[CA2106](../code-quality/ca2106.md)|Assertions sécurisées|
 |[CA2107](../code-quality/ca2107.md)|Passez en revue l'utilisation des méthodes Deny et PermitOnly|
 |[CA2108](../code-quality/ca2108.md)|Vérifiez la sécurité déclarative dans les types valeur|
-|[CA2109](../code-quality/ca2109.md)|Passez en revue les gestionnaires d'événements visibles|
+|[CA2109](/dotnet/fundamentals/code-analysis/quality-rules/ca2109)|Passez en revue les gestionnaires d'événements visibles|
 |[CA2111](../code-quality/ca2111.md)|Les pointeurs ne doivent pas être visibles|
 |[CA2112](../code-quality/ca2112.md)|Les types sécurisés ne doivent pas exposer de champs|
 |[CA2114](../code-quality/ca2114.md)|La sécurité de la méthode doit être un sur-ensemble du type|
@@ -37,7 +37,7 @@ Utilisez le jeu de règles des règles de sécurité Microsoft pour l’analyse 
 |[CA2116](../code-quality/ca2116.md)|Les méthodes APTCA doivent uniquement appeler des méthodes APTCA|
 |[CA2117](../code-quality/ca2117.md)|Les types APTCA doivent uniquement étendre des types de base APTCA|
 |[CA2118](../code-quality/ca2118.md)|Vérifier l'utilisation de SuppressUnmanagedCodeSecurityAttribute|
-|[CA2119](../code-quality/ca2119.md)|Scellez les méthodes qui satisfont les interfaces privées|
+|[CA2119](/dotnet/fundamentals/code-analysis/quality-rules/ca2119)|Scellez les méthodes qui satisfont les interfaces privées|
 |[CA2120](../code-quality/ca2120.md)|Sécurisez les constructeurs de sérialisation|
 |[CA2121](../code-quality/ca2121.md)|Les constructeurs statiques doivent être privés|
 |[CA2122](../code-quality/ca2122.md)|N'exposez pas indirectement des méthodes avec des demandes de liaison|
@@ -64,27 +64,27 @@ Utilisez le jeu de règles des règles de sécurité Microsoft pour l’analyse 
 |[CA2147](../code-quality/ca2147.md)|Les méthodes transparentes ne peuvent pas utiliser d’assertions de sécurité|
 |[CA2149](../code-quality/ca2149.md)|Les méthodes transparentes ne doivent pas appeler du code natif|
 |[CA2210](../code-quality/ca2210.md)|Les assemblys doivent porter des noms forts valides|
-|[Ca2300](ca2300.md)|N’utilisez pas le désérialiseur non sécurisé BinaryFormatter|
-|[Ca2301](ca2301.md)|N’appelez pas BinaryFormatter.Deserialize sans définir BinaryFormatter.Binder au préalable|
-|[Ca2302](ca2302.md)|Vérifiez que BinaryFormatter.Binder est défini avant d’appeler BinaryFormatter.Deserialize|
-|[CA2305](ca2305.md)|N’utilisez pas le désérialiseur non sécurisé LosFormatter|
-|[CA2310](ca2310.md)|N’utilisez pas le désérialiseur non sécurisé NetDataContractSerializer|
-|[CA2311](ca2311.md)|Ne désérialisez pas sans définir d’abord NetDataContractSerializer.Binder|
-|[CA2312](ca2312.md)|Vérifiez que NetDataContractSerializer.Binder est défini avant la désérialisation|
-|[CA2315](ca2315.md)|N’utilisez pas le désérialiseur non sécurisé ObjectStateFormatter|
-|[CA2321](ca2321.md)|Ne désérialisez avec JavaScriptSerializer à l’aide de SimpleTypeResolver|
-|[CA2322](ca2322.md)|Assurez-vous que JavaScriptSerializer n’est pas initialisé avec SimpleTypeResolver avant la désérialisation|
-|[CA3001](../code-quality/ca3001.md)|Passez en revue le code pour détecter les vulnérabilités de l’injection SQL|
-|[Ca3002](../code-quality/ca3002.md)|Passez en revue le code pour détecter les vulnérabilités des scripts XSS|
-|[Ca3003](../code-quality/ca3003.md)|Passez en revue le code pour détecter les vulnérabilités de l’injection de chemin de fichier|
-|[Ca3004](../code-quality/ca3004.md)|Passez en revue le code pour détecter les vulnérabilités sur la divulgation d’informations|
-|[Ca3005](../code-quality/ca3005.md)|Passez en revue le code pour détecter les vulnérabilités de l’injection LDAP|
-|[Ca3006](../code-quality/ca3006.md)|Passez en revue le code pour détecter les vulnérabilités de l’injection de commande de processus|
-|[CA3007](../code-quality/ca3007.md)|Passez en revue le code pour détecter les vulnérabilités de la redirection ouverte|
-|[CA3008](../code-quality/ca3008.md)|Passez en revue le code pour détecter les vulnérabilités de l’injection XPath|
-|[CA3009](../code-quality/ca3009.md)|Passez en revue le code pour détecter les vulnérabilités de l’injection XML|
-|[Ca3010](../code-quality/ca3010.md)|Passez en revue le code pour détecter les vulnérabilités de l’injection XAML|
-|[CA3011](../code-quality/ca3011.md)|Passez en revue le code pour détecter les vulnérabilités de l’injection de DLL|
-|[CA3012](../code-quality/ca3012.md)|Passez en revue le code pour détecter les vulnérabilités de l’injection regex|
-|[CA5358](../code-quality/ca5358.md)|Ne pas utiliser de modes de chiffrement non sécurisés|
-|[CA5403](../code-quality/ca5403.md)|Ne pas coder en dur le certificat|
+|[CA2300](/dotnet/fundamentals/code-analysis/quality-rules/ca2300)|N’utilisez pas le désérialiseur non sécurisé BinaryFormatter|
+|[CA2301](/dotnet/fundamentals/code-analysis/quality-rules/ca2301)|N’appelez pas BinaryFormatter.Deserialize sans définir BinaryFormatter.Binder au préalable|
+|[CA2302](/dotnet/fundamentals/code-analysis/quality-rules/ca2302)|Vérifiez que BinaryFormatter.Binder est défini avant d’appeler BinaryFormatter.Deserialize|
+|[CA2305](/dotnet/fundamentals/code-analysis/quality-rules/ca2305)|N’utilisez pas le désérialiseur non sécurisé LosFormatter|
+|[CA2310](/dotnet/fundamentals/code-analysis/quality-rules/ca2310)|N’utilisez pas le désérialiseur non sécurisé NetDataContractSerializer|
+|[CA2311](/dotnet/fundamentals/code-analysis/quality-rules/ca2311)|Ne désérialisez pas sans définir d’abord NetDataContractSerializer.Binder|
+|[CA2312](/dotnet/fundamentals/code-analysis/quality-rules/ca2312)|Vérifiez que NetDataContractSerializer.Binder est défini avant la désérialisation|
+|[CA2315](/dotnet/fundamentals/code-analysis/quality-rules/ca2315)|N’utilisez pas le désérialiseur non sécurisé ObjectStateFormatter|
+|[CA2321](/dotnet/fundamentals/code-analysis/quality-rules/ca2321)|Ne désérialisez avec JavaScriptSerializer à l’aide de SimpleTypeResolver|
+|[CA2322](/dotnet/fundamentals/code-analysis/quality-rules/ca2322)|Assurez-vous que JavaScriptSerializer n’est pas initialisé avec SimpleTypeResolver avant la désérialisation|
+|[CA3001](/dotnet/fundamentals/code-analysis/quality-rules/ca3001)|Passez en revue le code pour détecter les vulnérabilités de l’injection SQL|
+|[CA3002](/dotnet/fundamentals/code-analysis/quality-rules/ca3002)|Passez en revue le code pour détecter les vulnérabilités des scripts XSS|
+|[CA3003](/dotnet/fundamentals/code-analysis/quality-rules/ca3003)|Passez en revue le code pour détecter les vulnérabilités de l’injection de chemin de fichier|
+|[CA3004](/dotnet/fundamentals/code-analysis/quality-rules/ca3004)|Passez en revue le code pour détecter les vulnérabilités sur la divulgation d’informations|
+|[CA3005](/dotnet/fundamentals/code-analysis/quality-rules/ca3005)|Passez en revue le code pour détecter les vulnérabilités de l’injection LDAP|
+|[CA3006](/dotnet/fundamentals/code-analysis/quality-rules/ca3006)|Passez en revue le code pour détecter les vulnérabilités de l’injection de commande de processus|
+|[CA3007](/dotnet/fundamentals/code-analysis/quality-rules/ca3007)|Passez en revue le code pour détecter les vulnérabilités de la redirection ouverte|
+|[CA3008](/dotnet/fundamentals/code-analysis/quality-rules/ca3008)|Passez en revue le code pour détecter les vulnérabilités de l’injection XPath|
+|[CA3009](/dotnet/fundamentals/code-analysis/quality-rules/ca3009)|Passez en revue le code pour détecter les vulnérabilités de l’injection XML|
+|[CA3010](/dotnet/fundamentals/code-analysis/quality-rules/ca3010)|Passez en revue le code pour détecter les vulnérabilités de l’injection XAML|
+|[CA3011](/dotnet/fundamentals/code-analysis/quality-rules/ca3011)|Passez en revue le code pour détecter les vulnérabilités de l’injection de DLL|
+|[CA3012](/dotnet/fundamentals/code-analysis/quality-rules/ca3012)|Passez en revue le code pour détecter les vulnérabilités de l’injection regex|
+|[CA5358](/dotnet/fundamentals/code-analysis/quality-rules/ca5358)|Ne pas utiliser de modes de chiffrement non sécurisés|
+|[CA5403](/dotnet/fundamentals/code-analysis/quality-rules/ca5403)|Ne pas coder en dur le certificat|

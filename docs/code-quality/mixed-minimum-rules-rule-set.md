@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d44b12815f24ea14d35df0e27e5b3f72c296e16
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: edacd898cc1deb0382dd8e8b4b048af895c3b579
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599576"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658462"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Ensemble de règles des règles minimales mixtes
 
@@ -153,7 +153,7 @@ Incluez cet ensemble de règles dans n’importe quel ensemble de règles person
 |[C28305](/cpp/code-quality/c28305)|Une erreur a été détectée pendant l'analyse d'un jeton.|
 |[C28350](/cpp/code-quality/c28350)|L'annotation décrit une situation qui n'est pas applicable de manière conditionnelle.|
 |[C28351](/cpp/code-quality/c28351)|L'annotation décrit l'emplacement auquel une valeur dynamique (une variable) ne peut pas être utilisée dans la condition.|
-|[CA1001](../code-quality/ca1001.md)|Les types qui possèdent des champs supprimables doivent être supprimables|
-|[CA1821](../code-quality/ca1821.md)|Supprimez les finaliseurs vides|
-|[CA2213](../code-quality/ca2213.md)|Les champs pouvant être supprimés doivent l’être|
-|[CA2231](../code-quality/ca2231.md)|Surchargez l’opérateur égal (equals) en remplaçant ValueType.Equals|
+|[CA1001](/dotnet/fundamentals/code-analysis/quality-rules/ca1001)|Les types qui possèdent des champs supprimables doivent être supprimables|
+|[CA1821](/dotnet/fundamentals/code-analysis/quality-rules/ca1821)|Supprimez les finaliseurs vides|
+|[CA2213](/dotnet/fundamentals/code-analysis/quality-rules/ca2213)|Les champs pouvant être supprimés doivent l’être|
+|[CA2231](/dotnet/fundamentals/code-analysis/quality-rules/ca2231)|Surchargez l’opérateur égal (equals) en remplaçant ValueType.Equals|

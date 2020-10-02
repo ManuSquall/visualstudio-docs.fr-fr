@@ -2,20 +2,20 @@
 title: Options de style de code et de nettoyage du code
 ms.date: 04/25/2019
 ms.topic: conceptual
-author: TerryGLee
-ms.author: tglee
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Code_Style.General
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 75b301f66f597f8b53a2561ffbbe05dfb8a4cb1c
-ms.sourcegitcommit: 5a5f31a1a91bf243852c7da872211e63ab37fdaa
+ms.openlocfilehash: 82eec2a911ec113c42423fe14b06539e465e8bb3
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90682682"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658384"
 ---
 # <a name="code-style-preferences"></a>Préférences de style de code
 
@@ -26,7 +26,7 @@ Vous pouvez définir des paramètres de style de code par projet en utilisant un
 
 ## <a name="code-styles-in-editorconfig-files"></a>Styles de code dans les fichiers EditorConfig
 
-Vous pouvez aussi spécifier des [paramètres de style de code](../ide/editorconfig-code-style-settings-reference.md) pour .NET en ajoutant un fichier [EditorConfig](create-portable-custom-editor-options.md) à votre projet. Les fichiers EditorConfig sont associés à un code base plutôt qu’à un compte de personnalisation Visual Studio. Les paramètres d’un fichier EditorConfig sont prioritaires sur les styles de code spécifiés dans la boîte de dialogue **Options**. Utilisez un fichier EditorConfig lorsque vous souhaitez appliquer des styles de codage pour tous les contributeurs à votre référentiel ou projet.
+Vous pouvez aussi spécifier des [paramètres de style de code](/dotnet/fundamentals/code-analysis/code-style-rule-options) pour .NET en ajoutant un fichier [EditorConfig](create-portable-custom-editor-options.md) à votre projet. Les fichiers EditorConfig sont associés à un code base plutôt qu’à un compte de personnalisation Visual Studio. Les paramètres d’un fichier EditorConfig sont prioritaires sur les styles de code spécifiés dans la boîte de dialogue **Options**. Utilisez un fichier EditorConfig lorsque vous souhaitez appliquer des styles de codage pour tous les contributeurs à votre référentiel ou projet.
 
 ::: moniker range=">=vs-2019"
 
@@ -112,5 +112,5 @@ Si vous voulez que vos paramètres de style de code soient appliqués chaque foi
 ## <a name="see-also"></a>Voir aussi
 
 - [Actions rapides](../ide/quick-actions.md)
-- [Paramètres de Convention de codage .NET pour EditorConfig](../ide/editorconfig-code-style-settings-reference.md)
+- [Paramètres de Convention de codage .NET pour EditorConfig](/dotnet/fundamentals/code-analysis/code-style-rule-options)
 - [Comportement de l’éditeur (Visual Studio pour Mac)](/visualstudio/mac/editor-behavior)

@@ -11,12 +11,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6a950a005a4669e74722742b23527a9e85ab5f02
-ms.sourcegitcommit: d77da260d79471ab139973c51d65b04e0f80fe2e
+ms.openlocfilehash: 08d033deb09f8b91cfc183e121bac7c3f2839d08
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90560747"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659216"
 ---
 # <a name="overview"></a>Vue d’ensemble
 
@@ -45,7 +45,7 @@ Le tableau suivant présente les différentes options de gravité :
 | Info | `suggestion` | Les violations apparaissent sous la forme de *messages* dans le liste d’erreurs, et pas du tout dans la sortie de la génération de la ligne de commande. | Le code incriminé est souligné d’un tilde gris et marqué d’une petite zone grise dans la barre de défilement. |
 | Hidden | `silent` | Non visible par l’utilisateur. | Non visible par l’utilisateur. Toutefois, le diagnostic est signalé au moteur de diagnostic IDE. |
 | None | `none` | Entièrement supprimée. | Entièrement supprimée. |
-| Par défaut | `default` | Correspond à la gravité par défaut de la règle. Pour déterminer la valeur par défaut d’une règle, recherchez dans la Fenêtre Propriétés. | Correspond à la gravité par défaut de la règle. |
+| Default | `default` | Correspond à la gravité par défaut de la règle. Pour déterminer la valeur par défaut d’une règle, recherchez dans la Fenêtre Propriétés. | Correspond à la gravité par défaut de la règle. |
 
 Si des violations de règle sont détectées par un analyseur, elles sont signalées dans l’éditeur de code (sous forme de *tilde* sous le code incriminé) et dans la fenêtre de liste d’erreurs.
 
@@ -102,7 +102,7 @@ Si vous avez plusieurs entrées applicables à un ID de règle spécifique, voic
 - L’entrée de gravité pour une règle individuelle par ID est prioritaire sur l’entrée de gravité pour une catégorie.
 - L’entrée de gravité pour une catégorie est prioritaire sur l’entrée de gravité pour toutes les règles de l’analyseur.
 
-Prenons l’exemple de EditorConfig suivant, où [CA1822](./ca1822.md) a la catégorie « performance » :
+Prenons l’exemple de EditorConfig suivant, où [CA1822](/dotnet/fundamentals/code-analysis/quality-rules/ca1822) a la catégorie « performance » :
 
    ```ini
    [*.cs]
@@ -117,7 +117,7 @@ Dans l’exemple précédent, les trois entrées s’appliquent à CA1822. Toute
 
 1. Si vous n’avez pas encore de fichier EditorConfig pour votre projet, ajoutez-en [un](../ide/create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project).
 
-2. Ajoutez une entrée pour chaque règle que vous souhaitez configurer sous l’extension de fichier correspondante. Par exemple, pour définir la gravité de [CA1822](ca1822.md) sur `error` pour les fichiers C#, l’entrée ressemble à ce qui suit :
+2. Ajoutez une entrée pour chaque règle que vous souhaitez configurer sous l’extension de fichier correspondante. Par exemple, pour définir la gravité de [CA1822](/dotnet/fundamentals/code-analysis/quality-rules/ca1822) sur `error` pour les fichiers C#, l’entrée ressemble à ce qui suit :
 
    ```ini
    [*.cs]
@@ -125,7 +125,7 @@ Dans l’exemple précédent, les trois entrées s’appliquent à CA1822. Toute
    ```
 
 > [!NOTE]
-> Pour les analyseurs de style de code IDE, vous pouvez également les configurer dans un fichier EditorConfig à l’aide d’une syntaxe différente, par exemple, `dotnet_style_qualification_for_field = false:suggestion` . Toutefois, si vous définissez une gravité à l’aide de la `dotnet_diagnostic` syntaxe, elle est prioritaire. Pour plus d’informations, consultez [conventions de langage pour EditorConfig](../ide/editorconfig-language-conventions.md).
+> Pour les analyseurs de style de code IDE, vous pouvez également les configurer dans un fichier EditorConfig à l’aide d’une syntaxe différente, par exemple, `dotnet_style_qualification_for_field = false:suggestion` . Toutefois, si vous définissez une gravité à l’aide de la `dotnet_diagnostic` syntaxe, elle est prioritaire. Pour plus d’informations, consultez [conventions de langage pour EditorConfig](/dotnet/fundamentals/code-analysis/style-rules/language-rules).
 
 ### <a name="set-rule-severity-from-the-light-bulb-menu"></a>Définir la gravité de la règle à partir du menu ampoule
 

@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: f6cf9e1c3f0011a282048939a994e47b897a314b
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 23b50221845cf2b02b963c98f912a218a60630c6
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509937"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658410"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>Guide de productivité Visual Studio pour les développeurs C#
 
@@ -101,7 +101,7 @@ Vous pouvez utiliser un fichier EditorConfig pour codifier les conventions de co
 
    ![Configurer le niveau de gravité d’une règle de style de code directement dans l’éditeur](../ide/media/configure-severity-level.png)
 
-Découvrez la documentation des [options de convention de codage .NET](editorconfig-code-style-settings-reference.md), qui contient également un exemple d’un fichier EditorConfig terminé.
+Découvrez la documentation des [options de convention de codage .NET](/dotnet/fundamentals/code-analysis/code-style-rule-options), qui contient également un exemple d’un fichier EditorConfig terminé.
 
 ::: moniker range=">=vs-2019"
 
@@ -169,7 +169,7 @@ Visual Studio contient de nombreuses fonctionnalités qui vous permettent de rec
 
 Utilisez IntelliCode pour Visual Studio pour obtenir des [complétions de code sensibles au contexte](/visualstudio/intellicode/intellicode-visual-studio) au lieu d’une simple une liste alphabétique. Vous pouvez également entraîner un [modèle IntelliSense personnalisé](/visualstudio/intellicode/custom-model-faq) en vous basant sur vos propres bibliothèques spécifiques à un domaine.
 
-## <a name="unit-testing"></a>Test unitaire
+## <a name="unit-testing"></a>Test des unités
 
 À partir de Visual Studio 2017, les améliorations de l’expérience de test sont nombreuses. Vous pouvez tester avec les frameworks de test MSTest v1, MSTest v2, NUnit ou XUnit.
 

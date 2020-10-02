@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d0b60c548e4e5d42a10e82754d045073f016f8b
-ms.sourcegitcommit: ea3c985a23851b424127f2205f617446b6536578
+ms.openlocfilehash: b9aba6b9c4be882498535ab96020461f22722c10
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91621748"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659301"
 ---
 # <a name="history-of-whats-new-in-visual-studio-docs"></a>Historique des nouveautés de la documentation Visual Studio
 
@@ -29,7 +29,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cette rubri
 ## <a name="august-2020"></a>Août 2020
 ### <a name="azure"></a>Azure
 
-**Nouveaux Articles**
+**Nouveaux articles**
 
 - [Ajoutez Azure application Insights à l’aide](../azure/azure-app-insights-add-connected-service.md) des services connectés à Visual Studio services connectés pour VS 2019 16,7
 - [Ajouter le cache Azure pour les éléments ReDim à l’aide](../azure/azure-cache-for-redis-add-connected-service.md) des services connectés à Visual Studio services connectés pour VS 2019 16,7
@@ -45,27 +45,27 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cette rubri
 
 ### <a name="code-quality"></a>Qualité du code
 
-**Nouveaux Articles**
+**Nouveaux articles**
 
-- [Ca1310 : spécifiez StringComparison pour l’exactitude](../code-quality/ca1310.md) -ajoutez de la documentation pour ca1310 et mettez à jour la documentation pour CA1307
-- [CA1837 : utilisez Environment. ProcessID au lieu de process. GetCurrentProcess (). ID](../code-quality/ca1837.md) -docs pour CA1837
-- [CA1838 : éviter `StringBuilder` les paramètres pour P/Invoke](../code-quality/ca1838.md) -ajouter de la documentation pour CA1838
-- [CA2008 : ne pas créer de tâches sans passer un TaskScheduler](../code-quality/ca2008.md) -ajouter une documentation pour CA2008
-- [CA2249 : envisagez d’utiliser String. Contains à la place de String. IndexOf](../code-quality/ca2249.md) -docs pour CA2249
-- [CA2361 : Assurez-vous que la classe générée automatiquement contenant DataSet. ReadXml () n’est pas utilisée avec des données non fiables.](../code-quality/ca2361.md) autres règles de DataSet/DataTable
-- [CA2362 : un jeu de données ou un DataTable non sécurisé dans un type sérialisable généré automatiquement peut être vulnérable aux attaques d’exécution de code à distance](../code-quality/ca2362.md) . autres règles de DataSet/DataTable
-- [IL3000 : Évitez d’utiliser le chemin d’accès au fichier d’assembly lors de la publication en tant que documentation à fichier unique](../code-quality/il3000.md) à ajouter à IL3000
-- [IL3001 : éviter d’accéder au chemin d’accès au fichier d’assembly lors de la publication sous la forme d’un fichier unique](../code-quality/il3001.md) -ajouter des documents pour IL3001
+- [Ca1310 : spécifiez StringComparison pour l’exactitude](/dotnet/fundamentals/code-analysis/quality-rules/ca1310) -ajoutez de la documentation pour ca1310 et mettez à jour la documentation pour CA1307
+- [CA1837 : utilisez Environment. ProcessID au lieu de process. GetCurrentProcess (). ID](/dotnet/fundamentals/code-analysis/quality-rules/ca1837) -docs pour CA1837
+- [CA1838 : éviter `StringBuilder` les paramètres pour P/Invoke](/dotnet/fundamentals/code-analysis/quality-rules/ca1838) -ajouter de la documentation pour CA1838
+- [CA2008 : ne pas créer de tâches sans passer un TaskScheduler](/dotnet/fundamentals/code-analysis/quality-rules/ca2008) -ajouter une documentation pour CA2008
+- [CA2249 : envisagez d’utiliser String. Contains à la place de String. IndexOf](/dotnet/fundamentals/code-analysis/quality-rules/ca2249) -docs pour CA2249
+- [CA2361 : Assurez-vous que la classe générée automatiquement contenant DataSet. ReadXml () n’est pas utilisée avec des données non fiables.](/dotnet/fundamentals/code-analysis/quality-rules/ca2361) autres règles de DataSet/DataTable
+- [CA2362 : un jeu de données ou un DataTable non sécurisé dans un type sérialisable généré automatiquement peut être vulnérable aux attaques d’exécution de code à distance](/dotnet/fundamentals/code-analysis/quality-rules/ca2362) . autres règles de DataSet/DataTable
+- [IL3000 : Évitez d’utiliser le chemin d’accès au fichier d’assembly lors de la publication en tant que documentation à fichier unique](/dotnet/fundamentals/code-analysis/quality-rules/il3000) à ajouter à IL3000
+- [IL3001 : éviter d’accéder au chemin d’accès au fichier d’assembly lors de la publication sous la forme d’un fichier unique](/dotnet/fundamentals/code-analysis/quality-rules/il3001) -ajouter des documents pour IL3001
 
 **Updated**
 
-- [Ca1002 : ne pas exposer les listes génériques](../code-quality/ca1002.md) -ajouter la configuration-section de surface de l’API
-- [Ca1046 : ne pas surcharger l’opérateur égal à sur les types référence](../code-quality/ca1046.md) -ajouter la configuration-section surface de l’API
-- [CA1307 : spécifiez StringComparison pour clarifier](../code-quality/ca1307.md) -ajouter de la documentation pour ca1310 et mettre à jour la documentation pour CA1307
-- [CA1700 : ne nommez pas les valeurs enum &#39;réservé&#39;](../code-quality/ca1700.md) -Add configurabilité-API surface
-- [CA1707 : les identificateurs ne doivent pas contenir de traits de soulignement](../code-quality/ca1707.md) -ajouter une configuration-section de surface de l’API
-- [CA1822 : marquer les membres comme statiques](../code-quality/ca1822.md) -ajouter une configuration-section surface de l’API
-- [Ca2351 : Assurez-vous que l’entrée de DataSet. ReadXml () est approuvée](../code-quality/ca2351.md) -plus de règles de DataSet/DataTable
+- [Ca1002 : ne pas exposer les listes génériques](/dotnet/fundamentals/code-analysis/quality-rules/ca1002) -ajouter la configuration-section de surface de l’API
+- [Ca1046 : ne pas surcharger l’opérateur égal à sur les types référence](/dotnet/fundamentals/code-analysis/quality-rules/ca1046) -ajouter la configuration-section surface de l’API
+- [CA1307 : spécifiez StringComparison pour clarifier](/dotnet/fundamentals/code-analysis/quality-rules/ca1307) -ajouter de la documentation pour ca1310 et mettre à jour la documentation pour CA1307
+- [CA1700 : ne nommez pas les valeurs enum &#39;réservé&#39;](/dotnet/fundamentals/code-analysis/quality-rules/ca1700) -Add configurabilité-API surface
+- [CA1707 : les identificateurs ne doivent pas contenir de traits de soulignement](/dotnet/fundamentals/code-analysis/quality-rules/ca1707) -ajouter une configuration-section de surface de l’API
+- [CA1822 : marquer les membres comme statiques](/dotnet/fundamentals/code-analysis/quality-rules/ca1822) -ajouter une configuration-section surface de l’API
+- [Ca2351 : Assurez-vous que l’entrée de DataSet. ReadXml () est approuvée](/dotnet/fundamentals/code-analysis/quality-rules/ca2351) -plus de règles de DataSet/DataTable
 - [Installer des analyseurs tiers](../code-quality/install-roslyn-analyzers.md) -modification de la structure et des titres pour la documentation de l’analyse du code
 
 ### <a name="containers"></a>Conteneurs
@@ -73,11 +73,11 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cette rubri
 **Articles mis à jour**
 
 - [Déployer un conteneur ASP.net dans un registre de conteneurs à l’aide de Visual Studio](../containers/hosting-web-apps-in-docker.md) -mises à jour des outils de conteneur pour l’interface utilisateur de publication de visual studio 16,7
-- [Prise en main de Visual Studio Kubernetes Tools](../containers/tutorial-kubernetes-tools.md) -didacticiel Kubernetes : ajouter des étapes de suppression
+- [Prise en main de Visual Studio Kubernetes Tools](../containers/bridge-to-kubernetes.md) -didacticiel Kubernetes : ajouter des étapes de suppression
 
 ### <a name="deployment"></a>Déploiement
 
-**Nouveaux Articles**
+**Nouveaux articles**
 
 - [Extension des projets Visual Studio installer et .net core 3,1](../deployment/installer-projects-net-core.md) -création d’une nouvelle page d’aide pour les projets du programme d’installation fonctionnalités .net Core 3,1
 
@@ -92,7 +92,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cette rubri
 - Sous- [types de projet](../extensibility/internals/project-subtypes.md) -mettre en retrait les éléments de liste
 - [Référence de valeur de couleur pour Visual Studio](../extensibility/ux-guidelines/color-value-reference-for-visual-studio.md) -AB # 1759333 corriger les en-têtes de colonnes manquantes
 
-### <a name="get-started"></a>Prise en main
+### <a name="get-started"></a>Bien démarrer
 
 **Articles mis à jour**
 
@@ -100,7 +100,7 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cette rubri
 
 ### <a name="ide"></a>IDE
 
-**Nouveaux Articles**
+**Nouveaux articles**
 
 - [Modifier la touche d’aide F1 dans Visual Studio](./not-in-toc/change-f1-help-key.md) -page d’aide par défaut de refactorisation F1
 - [Aide F1 pour l’éditeur de texte](./not-in-toc/default-f1-text-editor.md) -page d’aide F1 par défaut de refactorisation
@@ -129,27 +129,27 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cette rubri
 ## <a name="july-2020"></a>Juillet 2020
 ### <a name="code-quality"></a>Qualité du code
 
-**Nouveaux Articles**
+**Nouveaux articles**
 
-- [Ca1417 : ne pas utiliser `OutAttribute` sur les paramètres de chaîne pour P/Invoke](../code-quality/ca1417.md) -ajouter de la documentation pour ca1417
-- [CA1805 : ne pas initialiser inutilement.](../code-quality/ca1805.md) -Ajouter des documents pour CA1805
-- [CA1836 : préférer IsEmpty sur Count quand disponible](../code-quality/ca1836.md) -ajouter de la documentation pour CA1836 (préférer IsEmpty au-dessus du nombre)
-- [Ca2016 : transférez le paramètre CancellationToken aux méthodes qui acceptent un](../code-quality/ca2016.md) document ca2016-transférer le paramètre CancellationToken aux méthodes qui en prennent une
-- [Ca2350 : Assurez-vous que l’entrée DataTable. ReadXml () est approuvée](../code-quality/ca2350.md) -données de désérialisation du DataSet/DataTable initial
-- [Ca2351 : Assurez-vous que l’entrée du DataSet. ReadXml () est approuvée](../code-quality/ca2351.md) -données de désérialisation du DataSet/DataTable initial
-- [CA2352 : un jeu de données ou un DataTable non sécurisé dans un type sérialisable peut être vulnérable aux attaques par exécution de code à distance](../code-quality/ca2352.md) -documents de désérialisation de DataSet/DataTable initiaux
-- [CA2353 : jeu de données ou DataTable non sécurisés dans le type sérialisable](../code-quality/ca2353.md) -documentation des règles de désérialisation du DataSet/DataTable initial
-- [CA2354 : un jeu de données ou un DataTable non sécurisé dans un graphique d’objets désérialisé peut être vulnérable à une attaque d’exécution de code à distance](../code-quality/ca2354.md) -documents de désérialisation de DataSet/DataTable initiaux
-- [CA2355 : jeu de données ou DataTable non sécurisés dans le graphique d’objets désérialisés](../code-quality/ca2355.md) -documents de désérialisation de DataSet/DataTable initiaux
-- [CA2356 : type de données ou DataSet non sécurisé dans le graphique d’objets désérialisés Web](../code-quality/ca2356.md) -données de désérialisation du DataSet/DataTable initial (docs)
+- [Ca1417 : ne pas utiliser `OutAttribute` sur les paramètres de chaîne pour P/Invoke](/dotnet/fundamentals/code-analysis/quality-rules/ca1417) -ajouter de la documentation pour ca1417
+- [CA1805 : ne pas initialiser inutilement.](/dotnet/fundamentals/code-analysis/quality-rules/ca1805) -Ajouter des documents pour CA1805
+- [CA1836 : préférer IsEmpty sur Count quand disponible](/dotnet/fundamentals/code-analysis/quality-rules/ca1836) -ajouter de la documentation pour CA1836 (préférer IsEmpty au-dessus du nombre)
+- [Ca2016 : transférez le paramètre CancellationToken aux méthodes qui acceptent un](/dotnet/fundamentals/code-analysis/quality-rules/ca2016) document ca2016-transférer le paramètre CancellationToken aux méthodes qui en prennent une
+- [Ca2350 : Assurez-vous que l’entrée DataTable. ReadXml () est approuvée](/dotnet/fundamentals/code-analysis/quality-rules/ca2350) -données de désérialisation du DataSet/DataTable initial
+- [Ca2351 : Assurez-vous que l’entrée du DataSet. ReadXml () est approuvée](/dotnet/fundamentals/code-analysis/quality-rules/ca2351) -données de désérialisation du DataSet/DataTable initial
+- [CA2352 : un jeu de données ou un DataTable non sécurisé dans un type sérialisable peut être vulnérable aux attaques par exécution de code à distance](/dotnet/fundamentals/code-analysis/quality-rules/ca2352) -documents de désérialisation de DataSet/DataTable initiaux
+- [CA2353 : jeu de données ou DataTable non sécurisés dans le type sérialisable](/dotnet/fundamentals/code-analysis/quality-rules/ca2353) -documentation des règles de désérialisation du DataSet/DataTable initial
+- [CA2354 : un jeu de données ou un DataTable non sécurisé dans un graphique d’objets désérialisé peut être vulnérable à une attaque d’exécution de code à distance](/dotnet/fundamentals/code-analysis/quality-rules/ca2354) -documents de désérialisation de DataSet/DataTable initiaux
+- [CA2355 : jeu de données ou DataTable non sécurisés dans le graphique d’objets désérialisés](/dotnet/fundamentals/code-analysis/quality-rules/ca2355) -documents de désérialisation de DataSet/DataTable initiaux
+- [CA2356 : type de données ou DataSet non sécurisé dans le graphique d’objets désérialisés Web](/dotnet/fundamentals/code-analysis/quality-rules/ca2356) -données de désérialisation du DataSet/DataTable initial (docs)
 
 ### <a name="containers"></a>Conteneurs
 
-**Nouveaux Articles**
+**Nouveaux articles**
 
-- [Configurer le processus local avec Kubernetes](../containers/configure-local-process-with-kubernetes.md) -local Process with Kubernetes : YAML configuration
-- [Utiliser un processus local avec Kubernetes (](../containers/local-process-kubernetes.md) préversion)-migration d’espaces de développement
-- [Fonctionnement de Processus local avec Kubernetes](../containers/overview-local-process-kubernetes.md)
+- [Configurer le processus local avec Kubernetes](../containers/configure-bridge-to-kubernetes.md) -local Process with Kubernetes : YAML configuration
+- [Utiliser un processus local avec Kubernetes (](../containers/bridge-to-kubernetes.md) préversion)-migration d’espaces de développement
+- [Fonctionnement de Processus local avec Kubernetes](../containers/overview-bridge-to-kubernetes.md)
   - Processus local pour Kubernetes : ajouter une section de routage
   - Migration d’espaces de développement
 
@@ -160,43 +160,43 @@ Bienvenue dans l’historique des nouveautés de Visual Studio docs. Cette rubri
 - [Journal des modifications (outils Visual Studio pour Unity, Windows)](../cross-platform/change-log-visual-studio-tools-for-unity.md) -Bosselage VSTU journal des modifications sur 4.7.1.0
 - [Journal des modifications (outils Visual Studio pour Unity, Mac)](../cross-platform/change-log-visual-studio-tools-for-unity-mac.md) -Bosselage VSTUM journal des modifications sur 2.7.1.0
 
-### <a name="get-started"></a>Prise en main
+### <a name="get-started"></a>Bien démarrer
 
-**Nouveaux Articles**
+**Nouveaux articles**
 
 - [Didacticiel : étendre une simple console C# application](../get-started/csharp/tutorial-console-part-2.md) -version étendre la première version du didacticiel de trottoir
 
 ### <a name="ide"></a>IDE
 
-**Nouveaux Articles**
+**Nouveaux articles**
 
 - [Directives](./developer-community-guidelines.md) de la communauté des développeurs : ajout de directives Devcom
 - [Saisie semi-automatique IntelliSense pour les types et les méthodes d’extension inimportés](./reference/intellisense-completion-unimported-types-extension-methods.md)
 
 ### <a name="install"></a>Installer
 
-**Nouveaux Articles**
+**Nouveaux articles**
 
 - [Mettre à jour Visual Studio avec une disposition hors connexion minimale](../install/update-minimal-layout.md) -fonctionnalité de disposition minimale de document
 - [Guide Visual Studio Enterprise](../install/visual-studio-enterprise-guide.md) -Guide de l’entreprise
 
 ### <a name="javascript"></a>JavaScript
 
-**Nouveaux Articles**
+**Nouveaux articles**
 
 - [Compiler du code machine (Node.js)](../javascript/compile-typescript-code-npm.md) -compiler et générer des générations
 - [Compiler du code machine (ASP.net Core)](../javascript/compile-typescript-code-nuget.md) -compiler et générer des générations
 
 ### <a name="msbuild"></a>MSBuild
 
-**Nouveaux Articles**
+**Nouveaux articles**
 
 - [Métadonnées d’élément MSBuild courantes](../msbuild/common-msbuild-item-metadata.md) -MSBuild : ajouter une table pour les métadonnées facultatives avec lien et lien ressources
 - [Filtres de solution dans MSBuild](../msbuild/solution-filters.md) -filtres de solution MSBuild
 
 ### <a name="test"></a>Test
 
-**Nouveaux Articles**
+**Nouveaux articles**
 
 - [Déboguer et analyser des tests unitaires avec l’Explorateur de tests](../test/debug-unit-tests-with-test-explorer.md) -travail des performances de l’Explorateur de tests
 

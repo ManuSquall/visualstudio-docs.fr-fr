@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: mikadumont
 ms.author: midumont
 manager: jillfra
-ms.openlocfilehash: 59e226fc0cc09b1eda5197d6accddfa9bd1a20ed
-ms.sourcegitcommit: 703c68667261df5985a73282c1cbb0541118989c
+ms.openlocfilehash: 277e5cd03d4006ced0791356be73ca1fcbe5c217
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89402255"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91659249"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Créer des paramètres d’éditeur personnalisés et portables avec EditorConfig
 
@@ -68,7 +68,7 @@ L’éditeur de Visual Studio prend en charge l’ensemble principal des [propri
 - insert\_final_newline
 - root
 
-Les paramètres de l’éditeur EditorConfig sont pris en charge dans tous les langages pris en charge par Visual Studio, à l’exception de XML. Par ailleurs, EditorConfig prend en charge les conventions de [style de code](../ide/editorconfig-code-style-settings-reference.md), notamment celles de [langage](../ide/editorconfig-language-conventions.md), [mise en forme](../ide/editorconfig-formatting-conventions.md) et [affectation de noms](../ide/editorconfig-naming-conventions.md) pour C# et Visual Basic.
+Les paramètres de l’éditeur EditorConfig sont pris en charge dans tous les langages pris en charge par Visual Studio, à l’exception de XML. Par ailleurs, EditorConfig prend en charge les conventions de [style de code](/dotnet/fundamentals/code-analysis/code-style-rule-options), notamment celles de [langage](/dotnet/fundamentals/code-analysis/style-rules/language-rules), [mise en forme](/dotnet/fundamentals/code-analysis/style-rules/formatting-rules) et [affectation de noms](/dotnet/fundamentals/code-analysis/style-rules/naming-rules) pour C# et Visual Basic.
 
 ## <a name="add-and-remove-editorconfig-files"></a>Ajout et suppression de fichiers EditorConfig
 
@@ -90,7 +90,7 @@ Si vous supprimez un fichier EditorConfig de votre projet ou base de code et sou
 
    ![Modèles d’élément de fichier EditorConfig dans Visual Studio](media/editorconfig-item-templates.png)
 
-1. Sélectionnez le modèle **Fichier editorconfig (par défaut)** pour ajouter un fichier EditorConfig prérempli avec deux options essentielles d’EditorConfig pour le style de mise en retrait et la taille. Vous pouvez aussi sélectionner le modèle **Fichier editorconfig (.NET)** pour ajouter un fichier EditorConfig prérempli avec les conventions de [style de code mise en forme et dénomination .NET](../ide/editorconfig-code-style-settings-reference.md) par défaut.
+1. Sélectionnez le modèle **Fichier editorconfig (par défaut)** pour ajouter un fichier EditorConfig prérempli avec deux options essentielles d’EditorConfig pour le style de mise en retrait et la taille. Vous pouvez aussi sélectionner le modèle **Fichier editorconfig (.NET)** pour ajouter un fichier EditorConfig prérempli avec les conventions de [style de code mise en forme et dénomination .NET](/dotnet/fundamentals/code-analysis/code-style-rule-options) par défaut.
 
    Un fichier *.editorconfig* s’affiche dans l’explorateur de solutions et s’ouvre dans l’éditeur.
 
@@ -180,7 +180,7 @@ Vous pouvez contrôler la portée de vos conventions EditorConfig en définissan
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Conventions de style du code .NET](../ide/editorconfig-code-style-settings-reference.md)
+- [Conventions de style du code .NET](/dotnet/fundamentals/code-analysis/code-style-rule-options)
 - [Prise en charge d’EditorConfig pour un service de langage](../extensibility/supporting-editorconfig.md)
 - [EditorConfig.org](https://editorconfig.org/)
 - [Fonctionnalités de l’éditeur de code](writing-code-in-the-code-and-text-editor.md)

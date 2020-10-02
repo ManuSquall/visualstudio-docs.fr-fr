@@ -9,19 +9,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d380346b7e049a6ffc4e8d03a5be27983de10249
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2b20974d2e44661ed7f4a0288ecb9eff82b2035a
+ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75587236"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "91658423"
 ---
 # <a name="code-analysis-rule-set-reference"></a>Référence d’ensemble de règles d’analyse du code
 
 Quand vous configurez une analyse héritée pour des projets de code managé dans Visual Studio, vous pouvez choisir parmi une liste d' *ensembles de règles*intégrés. Certaines règles sont incluses dans plusieurs ensembles de règles prédéfinis, par exemple, l’ensemble de règles de règles de vérification de base inclut des règles qui se trouvent dans l’ensemble de règles des règles recommandées managées.
 
 > [!NOTE]
-> Les ensembles de règles de cette section se rapportent aux analyses héritées. Pour plus d’informations sur les ensembles de règles disponibles pour les packages de l’analyseur de code, consultez [utiliser des ensembles de règles avec des analyseurs de code](analyzer-rule-sets.md).
+> Les ensembles de règles de cette section se rapportent aux analyses héritées. Pour plus d’informations sur les ensembles de règles disponibles pour les packages de l’analyseur de code, consultez [utiliser des ensembles de règles avec des analyseurs de code](/dotnet/fundamentals/code-analysis/code-quality-rule-options).
 
 Vous pouvez utiliser l’un de ces ensembles de règles intégrés ou [personnaliser un ensemble de règles](../code-quality/how-to-create-a-custom-rule-set.md) en fonction des exigences de votre projet. Si vous incluez plusieurs ensembles de règles qui contiennent la même règle dans un ensemble de règles personnalisé, cette règle apparaît une seule fois dans l’ensemble de règles personnalisé.
 
