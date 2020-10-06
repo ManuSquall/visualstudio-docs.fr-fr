@@ -11,12 +11,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: c86fc99fe6bd2ae17b6ce222b04549db07d7687e
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: eee21ca84acdcf5bbf774232d8d23ceda954b730
+ms.sourcegitcommit: 503f82045b9236d457b79712cd71405d4a62a53d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90862273"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91749503"
 ---
 # <a name="supported-visual-studio-features-preview"></a>Fonctionnalités Visual Studio prises en charge (version préliminaire)
 
@@ -42,15 +42,15 @@ Vous devez remarquer un peu de différence de code source dans un codeSpace à m
 * Mise en surbrillance de la syntaxe
 * Infos Express *
 * HTML, CSS, éditeurs Razor *-prise en charge partielle.
-* Éditeur JavaScript *-prise en charge partielle.
+* Éditeur JavaScript et de machine à écrire *-prise en charge partielle.
 
 Pas encore disponible :
 
 * IntelliSense *-certains des filtres de saisie semi-automatique/liste des membres ne sont pas disponibles. La saisie semi-automatique des types non importés et IntelliSense dans la fenêtre Espion ne sont pas encore disponibles.
-* Navigation dans le code *-la plupart des commandes prises en charge, notamment la base et la recherche dans les fichiers dont la spécification de chemin d’accès n’est pas encore prise en charge.
+* Navigation dans le code *-la plupart des commandes prises en charge. Accédez à base et recherchez dans les fichiers dont la spécification de chemin d’accès n’est pas encore prise en charge.
 * Infos Express *-la colorisation dans Info Express n’est pas prise en charge.
 * HTML, CSS, éditeurs Razor *-Diagnostics, saisie semi-automatique IntelliSense, info Express, mise en retrait intelligente. Il n’existe actuellement aucune prise en charge pour la coloration sémantique, les commandes de navigation, etc.
-* Éditeur JavaScript *-les blocs de script (par exemple, le contenu JavaScript dans les fichiers HTML et CSHTML) et la mise en surbrillance sémantique ne sont pas encore pris en charge. Problèmes connus avec les fonctionnalités d’ampoule et les Lints.
+* Éditeur JavaScript et écriture automatique *-les blocs de script (par exemple, le contenu JavaScript dans les fichiers HTML et CSHTML) et la mise en surbrillance sémantique ne sont pas encore pris en charge. Problèmes connus avec les fonctionnalités d’ampoule et les Lints.
 * Affichage des cibles CMake
 * Éditeur de paramètres de projet CMake
 * Ctrl + F7 (fichier de compilation)
@@ -72,7 +72,7 @@ La plupart des types d’applications et des configurations de projet sont pris 
 
 Pas encore disponible :
 
-* Concepteurs d’interface utilisateur-concepteurs WinForms et WPF
+* Concepteurs d’interfaces utilisateur-WinForms, WPF et concepteurs de ressources
 * Projets Visual Basic et F #
 * .NET Framework des projets ciblés
 * Projets Docker Compose
