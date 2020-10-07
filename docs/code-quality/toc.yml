@@ -14,7 +14,20 @@
             - name: Vue d'ensemble
               href: use-roslyn-analyzers.md
             - name: Qualité du code
-              href: /dotnet/fundamentals/code-analysis/code-quality-rule-options
+              items:
+                - name: Options de qualité du code
+                  href: /dotnet/fundamentals/code-analysis/code-quality-rule-options?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
+                - name: Utiliser les fichiers EditorConfig pour la qualité du code
+                  href: /dotnet/fundamentals/code-analysis/configuration-files?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
+            - name: Style de code
+              items:
+                - name: Préférences de style de code
+                  href: ../ide/code-styles-and-code-cleanup.md?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
+                - name: Utiliser les fichiers EditorConfig pour le style de code
+                  displayName: Configure code style analyzers
+                  href: ../ide/create-portable-custom-editor-options.md?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
+                - name: Options de règle
+                  href: /dotnet/fundamentals/code-analysis/code-style-rule-options?toc=%252fvisualstudio%252fcode-quality%252ftoc.json
             - name: Configurer l’analyse du code en direct
               href: configure-live-code-analysis-scope-managed-code.md
             - name: Exécuter l’analyse du code manuellement
@@ -339,7 +352,7 @@
                   items:
                     - name: Erreurs de stratégie d’analyse héritée
                       href: code-analysis-policy-errors.md
-                    - name: Vue d’ensemble
+                    - name: Vue d'ensemble
                       href: code-analysis-application-errors.md
                     - name: CA0001
                       href: ca0001.md
@@ -434,3 +447,11 @@
           href: how-to-generate-code-metrics-data.md
         - name: Utiliser les données des métriques du code
           href: working-with-code-metrics-data.md
+- name: Analyse du code C++
+  items:
+    - name: Analyser le code C et C++
+      href: /cpp/code-quality/code-analysis-for-c-cpp-overview
+    - name: Conventions de mise en forme EditorConfig
+      href: ../ide/cpp-editorconfig-properties.md
+    - name: Avertissements de l'analyse du code C++
+      href: /cpp/code-quality/code-analysis-for-c-cpp-warnings

@@ -523,7 +523,7 @@
               href: ide/create-portable-custom-editor-options.md
             - name: Conventions de mise en forme C++ d’EditorConfig
               href: ide/cpp-editorconfig-properties.md
-            - name: Conventions de codage .NET
+            - name: Conventions de codage .NET >>
               href: /dotnet/fundamentals/code-analysis/code-style-rule-options
         - name: Personnaliser la barre de défilement
           href: ide/how-to-track-your-code-by-customizing-the-scrollbar.md
@@ -693,7 +693,7 @@
                       href: ide/step-8-customize-the-quiz.md
                 - name: "Tutoriel\_3\_: Créer un jeu de combinaisons (C#)"
                   items:
-                    - name: Vue d'ensemble
+                    - name: Vue d’ensemble
                       displayName: Tutorial 3 Matching game
                       href: ide/tutorial-3-create-a-matching-game.md
                     - name: "Étape\_1\_: Créer un projet et ajouter une table à votre formulaire"
@@ -964,7 +964,7 @@
       href: ide/reference/accessibility-tips-and-tricks.md
     - name: Services et produits d'accessibilité de Microsoft
       href: ide/reference/accessibility-products-and-services-from-microsoft.md
-- name: Informations de référence
+- name: Référence
   items:
     - name: Raccourcis clavier
       items:
