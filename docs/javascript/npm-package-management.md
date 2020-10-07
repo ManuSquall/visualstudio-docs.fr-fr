@@ -12,19 +12,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 1269049adad3fe2d26caa79721452f7f313e60d5
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: fed525f62466d096aa7868cc57c7fd7c75bf46f8
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90739900"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91781034"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Gérer les packages npm dans Visual Studio
 
 npm vous permet d’installer et de gérer des packages pour une utilisation dans vos applications Node.js. Visual Studio simplifie l’interaction avec npm et l’exécution de commandes npm par le biais de l’interface utilisateur ou directement. Si vous ne connaissez pas npm et souhaitez en savoir plus, consultez la [documentation de npm](https://docs.npmjs.com/).
 
 L’intégration de Visual Studio à NPM est différente selon le type de votre projet.
-* [Node.JS](#nodejs-projects)
+* [Node.js](#nodejs-projects)
 * [ASP.NET Core](#aspnet-core-projects)
 * [Ouvrir le dossier (Node.js)](../javascript/develop-javascript-code-without-solutions-projects.md)
 
@@ -126,7 +126,7 @@ Pour les projets tels que les projets ASP.NET Core, vous pouvez intégrer la pri
 * [Installer des packages à l’aide d' package.jssur](#npmInstallPackage)
 
 >[!NOTE]
-> Pour les projets ASP.NET Core, vous pouvez également utiliser le [Gestionnaire de bibliothèque](/aspnet/core/client-side/libman/?view=aspnetcore-3.1) ou le fil à la place de NPM pour installer des fichiers JavaScript et CSS côté client.
+> Pour les projets ASP.NET Core, vous pouvez également utiliser le [Gestionnaire de bibliothèque](/aspnet/core/client-side/libman/?view=aspnetcore-3.1&preserve-view=true) ou le fil à la place de NPM pour installer des fichiers JavaScript et CSS côté client.
 
 ### <a name="add-npm-support-to-a-project-aspnet-core"></a><a name="npmAdd"></a> Ajouter la prise en charge de NPM à un projet (ASP.NET Core)
 
@@ -164,7 +164,7 @@ Pour les projets avec NPM inclus, vous pouvez configurer des packages NPM à l�
 
 IntelliSense dans *package.jssur* vous aide à sélectionner une version particulière d’un package NPM.
 
-:::image type="content" source="../javascript/media/npm-add-package-intellisense.png" alt-text="Sélectionner la version du package NPM" border="true":::
+:::image type="content" source="../javascript/media/npm-add-package-intellisense.png" alt-text="Installer un nouveau package npm à partir de l’Explorateur de solutions" border="true":::
 
 Lorsque vous enregistrez le fichier, Visual Studio ajoute le package sous le nœud **Dependencies/NPM** dans Explorateur de solutions. Si vous ne voyez pas le nœud, cliquez avec le bouton droit sur **package.js** , puis choisissez **restaurer les packages**.
 

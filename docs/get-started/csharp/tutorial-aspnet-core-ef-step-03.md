@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 42bc0442dc5901f92fc8a83b7af41c1fc42f4be4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d01d991daf5c24c02b8cd4976663a9399b251cc
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88250803"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91780967"
 ---
 # <a name="step-3-work-with-data-using-entity-framework"></a>Étape 3 : utiliser des données à l’aide de Entity Framework
 
@@ -79,7 +79,7 @@ services.AddDbContext<AppDbContext>(options =>
 
 La chaîne de connexion `AppDbContext` a également été ajoutée au fichier *appsettings.json* du projet.
 
-Si vous exécutez l’application maintenant, il y a un risque d’échec, car aucune base de données n’a encore été créée. Vous pouvez configurer l’application de sorte qu’elle crée automatiquement la base de données si nécessaire par [ajout de code à Program.cs](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio#update-main) :
+Si vous exécutez l’application maintenant, il y a un risque d’échec, car aucune base de données n’a encore été créée. Vous pouvez configurer l’application de sorte qu’elle crée automatiquement la base de données si nécessaire par [ajout de code à Program.cs](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio&preserve-view=true#update-main) :
 
 ```csharp
 public static void Main(string[] args)
@@ -135,5 +135,5 @@ Dans la vidéo suivante, vous allez apprendre à ajouter la prise en charge de l
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Razor Pages avec Entity Framework Core dans ASP.NET Core](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio)
-- [Razor Pages ASP.NET Core avec EF Core](/aspnet/core/data/?view=aspnetcore-2.1)
+- [Razor Pages avec Entity Framework Core dans ASP.NET Core](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio&preserve-view=true)
+- [Razor Pages ASP.NET Core avec EF Core](/aspnet/core/data/?view=aspnetcore-2.1&preserve-view=true)

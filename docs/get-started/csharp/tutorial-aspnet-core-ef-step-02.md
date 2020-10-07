@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 1d382e83aa9672cfdcbdca64b89be79d090f2aac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6852ac1148c9a8001476eb9bb68e9e97d66e3eed
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77580076"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91780990"
 ---
 # <a name="step-2-create-your-first-aspnet-core-web-app"></a>Étape 2 : créer votre première ASP.NET Core application Web
 
@@ -100,7 +100,7 @@ Exécutez de nouveau l'application. Vous devez maintenant voir que la page affic
 
 Ajoutez un point d’arrêt à la méthode `OnGet` où nous affectons une valeur à `Time` et cette fois, commencez à déboguer l’application.
 
-L’exécution s’arrête sur la ligne et vous pouvez voir que `DateTime.Today` inclut la date, mais que l’heure est toujours minuit, car aucune donnée d’heure n’est incluse. 
+L’exécution s’arrête sur la ligne et vous pouvez voir que `DateTime.Today` inclut la date, mais que l’heure est toujours minuit, car aucune donnée d’heure n’est incluse.
 
 ![Projet ASP.NET Core Visual Studio 2019 dans le navigateur](media/vs-2019/vs2019-breakpoint.png)
 
@@ -128,4 +128,4 @@ Dans la vidéo suivante, vous allez apprendre à ajouter la prise en charge de d
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Didacticiel : créer une application Web Razor Pages avec ASP.NET Core](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)
+- [Didacticiel : créer une application Web Razor Pages avec ASP.NET Core](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1&preserve-view=true)

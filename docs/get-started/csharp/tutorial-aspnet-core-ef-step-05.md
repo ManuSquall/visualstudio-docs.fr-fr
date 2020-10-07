@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 55dd48ed2c319984fcc96e806c97a7ae24ce7170
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fc0729eccc6f1392561959dcdac0cf13dfc8e04a
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88248672"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91780950"
 ---
 # <a name="step-5-deploy-your-aspnet-core-app-to-azure"></a>Étape 5 : déploiement de votre application ASP.NET Core sur Azure
 
@@ -101,7 +101,7 @@ Par défaut, Azure s’attend que la connexion d’une nouvelle application à s
 
 Accédez au chemin */Games* : vous devriez pouvoir ajouter un nouveau jeu et le voir apparaître. Ensuite, dans le chemin */swagger*, utilisez les points de terminaison d’API web pour vérifier que l’API de l’application fonctionne également.
 
-Félicitations ! Vous avez terminé cette série de tutoriels vidéo.
+Félicitations ! Vous avez terminé cette série de tutoriels vidéo.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
@@ -111,4 +111,4 @@ Pour savoir comment architecturer des applications ASP.NET Core, consultez ces r
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Publier une application ASP.NET Core sur Azure avec Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?view=aspnetcore-2.2)
+- [Publier une application ASP.NET Core sur Azure avec Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?view=aspnetcore-2.2&preserve-view=true)

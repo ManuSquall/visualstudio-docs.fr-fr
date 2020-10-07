@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 5ea9468bdf86986ab542fb1cabc873c9aeb75fd6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9a2ee576808698e19726cadfea7ba560ce3bdb7c
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77580038"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91780936"
 ---
 # <a name="step-4-expose-a-web-api-from-your-aspnet-core-app"></a>Étape 4 : exposer une API Web à partir de votre application ASP.NET Core
 
@@ -208,7 +208,7 @@ Ensuite, ajoutez le code suivant à la méthode `Configure`, juste avant `UseMvc
 // Enable middleware to serve generated Swagger as a JSON endpoint.
 app.UseSwagger();
 
-// Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.), 
+// Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.),
 // specifying the Swagger JSON endpoint.
 app.UseSwaggerUI(c =>
 {
@@ -216,7 +216,7 @@ app.UseSwaggerUI(c =>
 });
 ```
 
-Vous devriez maintenant pouvoir générer et exécuter votre application. Dans le navigateur, accédez à `/swagger` dans la barre d’adresses. La liste des modèles et des points de terminaison d’API de votre application devrait apparaître. 
+Vous devriez maintenant pouvoir générer et exécuter votre application. Dans le navigateur, accédez à `/swagger` dans la barre d’adresses. La liste des modèles et des points de terminaison d’API de votre application devrait apparaître.
 
 ![Visual Studio 2019 – Page Swagger dans le navigateur](media/vs-2019/vs2019-swagger-browser.png)
 
@@ -230,5 +230,5 @@ Dans la vidéo suivante, vous allez apprendre à déployer votre application sur
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Bien démarrer avec Swashbuckle et ASP.NET Core](/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-2.2&tabs=visual-studio)
-- [Pages d’aide sur l’API web ASP.NET Core avec Swagger/OpenAPI](/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-2.2)
+- [Bien démarrer avec Swashbuckle et ASP.NET Core](/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-2.2&tabs=visual-studio&preserve-view=true)
+- [Pages d’aide sur l’API web ASP.NET Core avec Swagger/OpenAPI](/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-2.2&preserve-view=true)

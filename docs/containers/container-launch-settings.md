@@ -6,16 +6,16 @@ ms.author: ghogen
 ms.date: 08/15/2019
 ms.technology: vs-azure
 ms.topic: reference
-ms.openlocfilehash: de0e3cc4e563f7082b91b904a110996cdb85b3b4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a1fdfbd3bf1f0969061365cd592f6054c7116b67
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88247984"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91780874"
 ---
 # <a name="container-tools-launch-settings"></a>Paramètres de lancement des outils de conteneur
 
-Dans le dossier *Propriétés* d’un projet ASP.net Core, vous trouverez le launchSettings.jssur le fichier, qui contient des paramètres qui contrôlent la façon dont votre application Web est démarrée sur votre ordinateur de développement. Pour plus d’informations sur l’utilisation de ce fichier dans le développement ASP.NET, consultez [utiliser plusieurs environnements dans ASP.net Core](/aspnet/core/fundamentals/environments?view=aspnetcore-2.2). Dans *launchSettings.jssur*, les paramètres de la section de l' **ancrage** sont liés à la façon dont Visual Studio gère les applications en conteneur.
+Dans le dossier *Propriétés* d’un projet ASP.net Core, vous trouverez le launchSettings.jssur le fichier, qui contient des paramètres qui contrôlent la façon dont votre application Web est démarrée sur votre ordinateur de développement. Pour plus d’informations sur l’utilisation de ce fichier dans le développement ASP.NET, consultez [utiliser plusieurs environnements dans ASP.net Core](/aspnet/core/fundamentals/environments?view=aspnetcore-2.2&preserve-view=true). Dans *launchSettings.jssur*, les paramètres de la section de l' **ancrage** sont liés à la façon dont Visual Studio gère les applications en conteneur.
 
 ::: moniker range="vs-2017"
 
@@ -53,8 +53,8 @@ Le paramètre commandName indique que cette section s’applique aux outils de c
 
 |Nom du paramètre|Version|Exemple|Description|
 |------------|-------|-------|---------------|
-|launchBrowser|Visual Studio 2017|« launchBrowser » : true|Indique s’il faut lancer le navigateur après avoir correctement lancé le projet.|
-|launchUrl|Visual Studio 2017|« launchUrl » : « {Scheme}://{ServiceHost} : {ServicePort} »|Cette URL est utilisée lors du lancement du navigateur.  Les jetons de remplacement pris en charge pour cette chaîne sont les suivants :<br>   {Scheme} : remplacé par « http » ou « https » selon que le protocole SSL est utilisé ou non.<br>   {ServiceHost} : généralement remplacé par « localhost ». Toutefois, lorsque vous ciblez des conteneurs Windows sur Windows 10 RS3 ou une version antérieure, elles sont remplacées par l’adresse IP du conteneur.<br>   {ServicePort} : généralement remplacé par sslPort ou httpPort, selon que le protocole SSL est utilisé ou non.  Toutefois, lorsque vous ciblez des conteneurs Windows sur Windows 10 RS3 ou une version antérieure, elles sont remplacées par « 443 » ou « 80 », selon que le protocole SSL est utilisé ou non.|
+|launchBrowser|Visual Studio 2017|« launchBrowser » : true|Indique s’il faut lancer le navigateur après avoir correctement lancé le projet.|
+|launchUrl|Visual Studio 2017|« launchUrl » : « {Scheme}://{ServiceHost} : {ServicePort} »|Cette URL est utilisée lors du lancement du navigateur.  Les jetons de remplacement pris en charge pour cette chaîne sont les suivants :<br>   {Scheme} : remplacé par « http » ou « https » selon que le protocole SSL est utilisé ou non.<br>   {ServiceHost} : généralement remplacé par « localhost ». Toutefois, lorsque vous ciblez des conteneurs Windows sur Windows 10 RS3 ou une version antérieure, elles sont remplacées par l’adresse IP du conteneur.<br>   {ServicePort} : généralement remplacé par sslPort ou httpPort, selon que le protocole SSL est utilisé ou non.  Toutefois, lorsque vous ciblez des conteneurs Windows sur Windows 10 RS3 ou une version antérieure, elles sont remplacées par « 443 » ou « 80 », selon que le protocole SSL est utilisé ou non.|
 
 ::: moniker-end
 

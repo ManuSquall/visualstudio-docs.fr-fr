@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abd6d73c7b312cf00062307370ba2f7aebe6694e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a3e1c43e9813bce664a63f3675b0fed6e14e3c7
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85768618"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91781008"
 ---
 # <a name="use-the-task-list"></a>Utiliser la liste des tâches
 
@@ -65,7 +65,7 @@ Un commentaire dans votre code, précédé d'un marqueur de commentaire et d'un 
 Étant donné que `TODO` est un jeton prédéfini, ce commentaire s’affiche comme une tâche `TODO` dans la liste.
 
 > [!NOTE]
-> Les jetons par défaut sont uniquement disponibles pour les langages C/C++, C# et VB. Pour les autres langages, consultez la section **Jetons personnalisés**.
+> Les jetons par défaut sont uniquement disponibles pour les langages C/C++, C# et VB.
 
 ### <a name="custom-tokens"></a>Jetons personnalisés
 

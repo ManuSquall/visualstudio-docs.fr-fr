@@ -11,16 +11,16 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: e8a12c16c4c53ab2d0850bf5b768488160fa729a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 58e3557d260b821055c533fc703a1f47949c5bfb
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "87453694"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91781050"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>Didacticiel : créer une application ASP.NET Core avec une machine à écrire dans Visual Studio
 
-Dans ce didacticiel pour le développement Visual Studio ASP.NET Core et la création d’une machine à écrire, vous créez une application Web simple, ajoutez du code machine à écrire, puis exécutez l’application. 
+Dans ce didacticiel pour le développement Visual Studio ASP.NET Core et la création d’une machine à écrire, vous créez une application Web simple, ajoutez du code machine à écrire, puis exécutez l’application.
 
 ::: moniker range="vs-2017"
 
@@ -219,7 +219,7 @@ Dans ce didacticiel, vous commencez avec un projet simple contenant du code pour
 1. Suivez les instructions de la [gestion des packages NPM](../javascript/npm-package-management.md#aspnet-core-projects) pour ajouter un `package.json` fichier à votre projet. Cela ajoute la prise en charge de NPM à votre projet.
 
    >[!NOTE]
-   > Pour les projets ASP.NET Core, vous pouvez également utiliser le [Gestionnaire de bibliothèque](https://docs.microsoft.com/aspnet/core/client-side/libman/?view=aspnetcore-3.1) ou le fil à la place de NPM pour installer des fichiers JavaScript et CSS côté client.
+   > Pour les projets ASP.NET Core, vous pouvez également utiliser le [Gestionnaire de bibliothèque](https://docs.microsoft.com/aspnet/core/client-side/libman/?view=aspnetcore-3.1&preserve-view=true) ou le fil à la place de NPM pour installer des fichiers JavaScript et CSS côté client.
 
 1. Dans cet exemple, ajoutez un fichier de définition de machine à écrire pour jQuery à votre projet. Incluez ce qui suit dans votre *package.js* fichier.
 

@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: ef41e28d994f27f66f616623d1b2c9798b65ede4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a6b089309ca7202c01028b3323ccabfd3668e909
+ms.sourcegitcommit: a778dffddb05d2f0f15969eadaf9081c9b466196
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "77580050"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91780978"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Tutoriel : Bien démarrer avec C# et ASP.NET Core dans Visual Studio
 
@@ -29,7 +29,7 @@ Dans ce tutoriel pour le développement C# avec ASP.NET Core à l’aide de Vis
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-### <a name="install-visual-studio"></a>Installer Visual Studio
+### <a name="install-visual-studio"></a>Installation de Visual Studio
 
 ::: moniker range="vs-2017"
 
@@ -139,7 +139,7 @@ Si vous ne voyez pas le modèle de projet **Application web ASP.NET Core**, vous
 
 ### <a name="about-your-solution"></a>À propos de votre solution
 
-Cette solution suit le modèle de conception **Razor Pages**. Il diffère du modèle de conception [modèle-vue-contrôleur (MVC)](/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-2.1&tabs=aspnetcore2x) en ce qu’il est simplifié de façon à intégrer le code du modèle et du contrôleur dans la Razor Page proprement dite.
+Cette solution suit le modèle de conception **Razor Pages**. Il diffère du modèle de conception [modèle-vue-contrôleur (MVC)](/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-2.1&tabs=aspnetcore2x&preserve-view=true) en ce qu’il est simplifié de façon à intégrer le code du modèle et du contrôleur dans la Razor Page proprement dite.
 
 ::: moniker range="vs-2017"
 ## <a name="tour-your-solution"></a>Visite guidée de votre solution
@@ -366,7 +366,7 @@ Visual Studio est une suite de développement intégrée d’outils de productiv
 Félicitations ! Vous avez terminé ce didacticiel. Nous espérons que vous en avez appris un peu plus sur C#, ASP.NET Core et l’IDE Visual Studio. Pour en savoir plus sur la création d’une application web ou d’un site web en C# et avec ASP.NET, suivez les tutoriels suivants :
 
 > [!div class="nextstepaction"]
-> [Créer une application web Razor Pages avec ASP.NET Core](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)
+> [Créer une application web Razor Pages avec ASP.NET Core](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1&preserve-view=true)
 
 ## <a name="see-also"></a>Voir aussi
 
