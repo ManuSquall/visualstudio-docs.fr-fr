@@ -2,17 +2,17 @@
 title: Avantage LinkedIn Learning dans les abonnements Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 5bba2205-d32f-413d-9b58-724a24993842
-ms.date: 04/17/2020
+ms.date: 10/06/2020
 ms.topic: how-to
 description: Découvrez l’avantage LinkedIn Learning, qui est lié à un abonnement LinkedIn Premium inclus dans certains abonnements Visual Studio.
-ms.openlocfilehash: 6f0f500d092bb17e1bb81f0d35f2b12dc5c18183
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: f71510b7d77ce79c1697848d505623c8994d8301
+ms.sourcegitcommit: a9fcf189aebe16234919421f2ad73e395e1ab8be
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006291"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "91805888"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Avantage LinkedIn Learning dans les abonnements Visual Studio
 
@@ -71,15 +71,15 @@ Pour activer votre abonnement LinkedIn Premium et l’avantage LinkedIn Learning
 
 | Niveau de l’abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, vente au détail, NFR sélectionnés<sup>1</sup> | 6 mois       |  Non.  Disponible pour les nouveaux abonnés uniquement          |
+| Visual Studio Enterprise (Standard)   | VL, Azure, détail<sup>1</sup> | 6 mois       |  Non.  Disponible pour les nouveaux abonnés uniquement          |
 | Visual Studio Enterprise avec GitHub Enterprise   | LV | 6 mois       |  Non.  Disponible pour les nouveaux abonnés uniquement          |
 | Visual Studio Professional (Standard) | Licences en volume, Azure, Détail                                       | 3 mois                                                            |Non.  Disponible pour les nouveaux abonnés uniquement         |
 | Visual Studio Professional avec GitHub Enterprise | LV | 3 mois      | Non.  Disponible pour les nouveaux abonnés uniquement         |
-| Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Non disponible                                            |  N/D         |
-| Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Non disponible                                              | N/D         |
-| Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure                                       | Non disponible                                                           |N/D|
+| Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Non disponible                                            |  NA         |
+| Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Non disponible                                              | NA         |
+| Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure                                       | Non disponible                                                           |NA|
 
-<sup>1</sup>  *comprend : non pour la revente (NFR), VSIP (Visual Studio Industry Partner).  Exclut : Microsoft Partner Network (MPN), FTE, MCT Software & Developer Services Developer, BizSpark, imagine, MVP (Most Valuable Professional), RD (Regional Director).  Services de & de logiciel MCT.*
+<sup>1</sup>  *exclut : NFR, les partenaires de l’industrie Visual Studio, les Microsoft Partner Network (MPN), FTE, MCT Software & Developers Developer, BizSpark, imagine, MVP (plus précieux Professional), RD (Regional Director).  Services de & de logiciel MCT.*
 
 > [!NOTE]
 > Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Les nouveaux clients sont encouragés à accéder à [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
