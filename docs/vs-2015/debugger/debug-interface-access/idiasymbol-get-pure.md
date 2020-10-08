@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a7b95816ac594025b43487aecca8ca9ffe7a6e41
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64803585"
+ms.lasthandoff: 09/11/2020
+ms.locfileid: "91838204"
 ---
-# <a name="idiasymbolgetpure"></a>IDiaSymbol::get_pure
+# <a name="idiasymbolget_pure"></a>IDiaSymbol::get_pure
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Récupère un indicateur qui spécifie si la fonction est purement virtuel.  
+Récupère un indicateur qui spécifie si la fonction est virtuelle pure.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -35,13 +35,13 @@ HRESULT get_pure ( 
   
 #### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- [out] Retourne `TRUE` si la fonction est purement virtuel ; sinon, retourne `FALSE`.  
+ à Retourne `TRUE` si la fonction est virtuelle pure ; sinon, retourne `FALSE` .  
   
-## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  
+## <a name="return-value"></a>Valeur renvoyée  
+ En cas de réussite, retourne `S_OK` ; sinon, retourne `S_FALSE` ou un code d’erreur.  
   
 > [!NOTE]
-> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
+> Une valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
