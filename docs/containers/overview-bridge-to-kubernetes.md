@@ -1,5 +1,5 @@
 ---
-title: Fonctionnement de Bridge to Kubernetes
+title: Comment fonctionne Bridge to Kubernetes
 ms.technology: vs-azure
 ms.date: 06/02/2020
 ms.topic: conceptual
@@ -9,14 +9,14 @@ monikerRange: '>=vs-2019'
 manager: jillfra
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: fbb3cfe6453c68079cb4b4cc6b57f8494f45c0cc
-ms.sourcegitcommit: f9179a3a6d74fbd871f62b72491e70b9e7b05637
+ms.openlocfilehash: a224135e366c7a266defa525772dadf445208f3b
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90845866"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91829878"
 ---
-# <a name="how-bridge-to-kubernetes-works"></a>Fonctionnement de Bridge to Kubernetes
+# <a name="how-bridge-to-kubernetes-works"></a>Comment fonctionne Bridge to Kubernetes
 
 Bridge vers Kubernetes vous permet d’exécuter et de déboguer du code sur votre ordinateur de développement, tout en étant connecté à votre cluster Kubernetes avec le reste de votre application ou de vos services. Par exemple, si vous avez une architecture de microservices importante avec de nombreux services et bases de données interdépendants, la réplication de ces dépendances sur votre ordinateur de développement peut s’avérer difficile. En outre, la création et le déploiement de code sur votre cluster Kubernetes pour chaque changement de code pendant le développement en boucle interne peuvent être lents, fastidieux et difficiles à effectuer avec un débogueur.
 
@@ -40,7 +40,7 @@ Lorsque Bridge to Kubernetes établit une connexion à votre cluster, il :
 * Il remplace le conteneur du pod sur le cluster par un conteneur d’agent distant qui redirige le trafic vers votre ordinateur de développement.
 * Elle exécute la commande [kubectl port-forward][kubectl-port-forward] sur votre ordinateur de développement pour transférer le trafic de celui-ci vers l’agent distant s’exécutant dans votre cluster.
 * Elle collecte les informations d’environnement de votre cluster à l’aide de l’agent distant. Ces informations d’environnement incluent les variables d’environnement, les services visibles, les montages de volumes et les montages de secrets.
-* Configure l’environnement dans Visual Studio afin que le service sur votre ordinateur de développement puisse accéder aux mêmes variables que s’il s’exécutait sur le cluster.  
+* Configure l’environnement dans Visual Studio afin que le service sur votre ordinateur de développement puisse accéder aux mêmes variables que s’il s’exécutait sur le cluster.
 * Il met à jour votre fichier hosts pour mapper les services sur votre cluster à des adresses IP locales sur votre ordinateur de développement. Ces entrées de fichier hosts permettent au code s’exécutant sur votre ordinateur de développement d’adresser des demandes à d’autres services s’exécutant dans votre cluster. Pour mettre à jour votre fichier hosts, Bridge to Kubernetes demande l’accès administrateur sur votre ordinateur de développement lors de la connexion à votre cluster.
 * Il démarre l’exécution et le débogage de votre code sur votre ordinateur de développement. Si nécessaire, Bridge to Kubernetes libère les ports requis sur votre ordinateur de développement en arrêtant les services ou les processus qui utilisent actuellement ces ports.
 
@@ -72,7 +72,7 @@ Lorsque vous activez l’isolation, Bridge to Kubernetes effectue les opération
 Si Bridge to Kubernetes détecte que Azure Dev Spaces est activé sur votre cluster Kubernetes, vous êtes invité à désactiver Azure Dev Spaces avant de pouvoir utiliser Bridge to Kubernetes.
 
 Le gestionnaire de routage effectue les opérations suivantes au démarrage :
-* Duplique toutes les entrées trouvées dans l’espace de noms à l’aide de la *GENERATED_NAME* pour le sous-domaine. 
+* Duplique toutes les entrées trouvées dans l’espace de noms à l’aide de la *GENERATED_NAME* pour le sous-domaine.
 * Crée un bloc d’envoi pour chaque service associé à des entrées en double avec le sous-domaine *GENERATED_NAME* .
 * Crée un complément d’envoi supplémentaire pour le service sur lequel vous travaillez en isolation. Cela permet d’acheminer les demandes avec le sous-domaine vers votre ordinateur de développement.
 * Configure les règles de routage pour chaque envoi de bloc afin de gérer le routage pour les services avec le sous-domaine.
@@ -92,7 +92,7 @@ Lorsqu’une demande sans le sous-domaine *GENERATED_NAME* est reçue sur le clu
 > [!IMPORTANT]
 > Chaque service de votre cluster doit transférer l’en-tête *kubernetes-route-As = GENERATED_NAME lors de* l’exécution de demandes supplémentaires. Par exemple, lorsque *servicea* reçoit une demande, il envoie ensuite une requête à *serviceB* avant de renvoyer une réponse. Dans cet exemple, *servicea* doit transférer l’en-tête *kubernetes-route-As = GENERATED_NAME* dans sa demande à *serviceB*. Certains langages, tels que [ASP.net][asp-net-header], peuvent avoir des méthodes pour gérer la propagation d’en-tête.
 
-Lorsque vous vous déconnectez de votre cluster, par défaut, Bridge to Kubernetes supprime tous les Pod d’envoi et le service dupliqué. 
+Lorsque vous vous déconnectez de votre cluster, par défaut, Bridge to Kubernetes supprime tous les Pod d’envoi et le service dupliqué.
 
 > [!NOTE]
 > Le déploiement et le service du gestionnaire de routage resteront en cours d’exécution dans votre espace de noms. Pour supprimer le déploiement et le service, exécutez les commandes suivantes pour votre espace de noms.
@@ -126,7 +126,7 @@ Pour commencer à utiliser Bridge to Kubernetes pour vous connecter à votre ord
 [asp-net-header]: https://www.nuget.org/packages/Microsoft.AspNetCore.HeaderPropagation/
 [azds-cli]: /azure/dev-spaces/how-to/install-dev-spaces#install-the-client-side-tools
 [azds-tmp-dir]: /azure/dev-spaces/troubleshooting#before-you-begin
-[azure-cli]: /cli/azure/install-azure-cli?view=azure-cli-latest
+[azure-cli]: /cli/azure/install-azure-cli?view=azure-cli-latest&preserve-view=true
 [bridge-to-kubernetes-vs]: bridge-to-kubernetes.md
 [kubectl-port-forward]: https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#port-forward
 [visual-studio]: https://visualstudio.microsoft.com/downloads/

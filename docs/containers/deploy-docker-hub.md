@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 07/23/2019
 ms.author: ghogen
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 2a6db2771525010d73fdeeea12ff4aebd99a1bd2
-ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.openlocfilehash: 5bbdbffa9de9ac7789495249d3e7bfb0a8d65377
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89485136"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91829893"
 ---
 # <a name="deploy-to-docker-hub"></a>Déployer sur Docker Hub
 
@@ -40,7 +40,7 @@ Si vous n’avez pas de référentiel du hub d’ancrage, créez-en un dans le h
 
    ![Capture d’écran de la boîte de dialogue Hub Dockr](media/deploy-docker-hub/container-tools-docker-hub-credentials.png)
 
-1. Si vous vous connectez à votre propre référentiel (ne faisant pas partie d’une organisation), laissez la case à cocher **publier sur un dépôt personnel** cochée. Si le référentiel est détenu par une organisation, désactivez la case à cocher, puis entrez le nom de l’organisation. Entrez votre nom d’utilisateur et votre mot de passe pour votre compte d’ancrage qui dispose des autorisations d’accès au référentiel auquel vous vous connectez, puis sélectionnez **Enregistrer**.  
+1. Si vous vous connectez à votre propre référentiel (ne faisant pas partie d’une organisation), laissez la case à cocher **publier sur un dépôt personnel** cochée. Si le référentiel est détenu par une organisation, désactivez la case à cocher, puis entrez le nom de l’organisation. Entrez votre nom d’utilisateur et votre mot de passe pour votre compte d’ancrage qui dispose des autorisations d’accès au référentiel auquel vous vous connectez, puis sélectionnez **Enregistrer**.
 
    Visual Studio tente de déployer votre image sur le hub d’ancrage.  En cas de réussite, l’écran de **publication** s’affiche avec l’URL de l’image du référentiel, la balise d’image, le référentiel et la configuration de build (par exemple, **Release**).
 
@@ -52,7 +52,7 @@ Si vous n’avez pas de référentiel du hub d’ancrage, créez-en un dans le h
 
 Publiez sur [Azure Container Registry](/azure/container-registry/) en suivant les étapes décrites dans [déployer sur Azure Container Registry](hosting-web-apps-in-docker.md).
 
-Configurez l’intégration et la livraison continues (CI/CD) avec [Azure pipelines](/azure/devops/pipelines/?view=azure-devops).
+Configurez l’intégration et la livraison continues (CI/CD) avec [Azure pipelines](/azure/devops/pipelines/?view=azure-devops&preserve-view=true).
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f4677cd2d178781d79b11ac3b1010a76fd6fcf00
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 25dad2d4601974e70e80377e634d05b60523318e
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72985713"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91830764"
 ---
 # <a name="office-primary-interop-assemblies"></a>assemblys PIA (Primary Interop Assembly) Office
 
@@ -100,15 +100,15 @@ Le tableau suivant répertorie les assemblys PIA disponibles pour [!INCLUDE[Offi
 |-------------------------------------|-----------------------------------|
 |Bibliothèque d'objets Microsoft Access 14.0<br /><br /> Bibliothèque d'objets Microsoft Access 15.0|Microsoft.Office.Interop.Access.dll|
 |Bibliothèque d'objets du moteur de base de données Microsoft Office Access 14.0<br /><br /> Bibliothèque d'objets du moteur de base de données Microsoft Office Access 15.0|Microsoft.Office.Interop.Access.Dao.dll|
-|Bibliothèque d'objets Microsoft Excel 14.0<br /><br /> Bibliothèque d'objets Microsoft Excel 15.0|[Microsoft.Office.Interop.Excel.dll](/dotnet/api/microsoft.office.interop.excel?view=excel-pia)|
+|Bibliothèque d'objets Microsoft Excel 14.0<br /><br /> Bibliothèque d'objets Microsoft Excel 15.0|[Microsoft.Office.Interop.Excel.dll](/dotnet/api/microsoft.office.interop.excel?view=excel-pia&preserve-view=true)|
 |Bibliothèque d'objets Microsoft Graph 14.0 (utilisée par PowerPoint, Access et Word pour les graphiques)<br /><br /> Bibliothèque d'objets Microsoft Graph 15.0|Microsoft.Office.Interop.Graph.dll|
-|Bibliothèque de types Microsoft InfoPath 2.0 (uniquement pour InfoPath 2007)|[Microsoft.Office.Interop.InfoPath.dll](/dotnet/api/microsoft.office.interop.infopath?view=infopath-form)|
+|Bibliothèque de types Microsoft InfoPath 2.0 (uniquement pour InfoPath 2007)|[Microsoft.Office.Interop.InfoPath.dll](/dotnet/api/microsoft.office.interop.infopath?view=infopath-form&preserve-view=true)|
 |Assembly d'interopérabilité XML Microsoft InfoPath (uniquement pour InfoPath 2007)|Microsoft.Office.Interop.InfoPath.Xml.dll|
 |Bibliothèque d'objets Microsoft Office 14.0 (composant partagé Office)<br /><br /> Bibliothèque d'objets Microsoft Office 15.0 (composant partagé Office)|office.dll|
 |Contrôle view Microsoft Office Outlook (peut être utilisé dans les pages web et applications pour accéder à votre Boîte de réception)|Microsoft.Office.Interop.OutlookViewCtl.dll|
-|Bibliothèque d'objets Microsoft Outlook 14.0<br /><br /> Bibliothèque d'objets Microsoft Outlook 15.0|[Microsoft.Office.Interop.Outlook.dll](/dotnet/api/microsoft.office.interop.outlook?view=outlook-pia)|
+|Bibliothèque d'objets Microsoft Outlook 14.0<br /><br /> Bibliothèque d'objets Microsoft Outlook 15.0|[Microsoft.Office.Interop.Outlook.dll](/dotnet/api/microsoft.office.interop.outlook?view=outlook-pia&preserve-view=true)|
 |Bibliothèque d'objets Microsoft PowerPoint 14.0<br /><br /> Bibliothèque d'objets Microsoft PowerPoint 15.0|Microsoft.Office.Interop.PowerPoint.dll|
-|Bibliothèque d'objets Microsoft Project 14.0<br /><br /> Bibliothèque d'objets Microsoft Project 15.0|[Microsoft.Office.Interop.MSProject.dll](/dotnet/api/microsoft.office.interop.msproject?view=office-project-server)|
+|Bibliothèque d'objets Microsoft Project 14.0<br /><br /> Bibliothèque d'objets Microsoft Project 15.0|[Microsoft.Office.Interop.MSProject.dll](/dotnet/api/microsoft.office.interop.msproject?view=office-project-server&preserve-view=true)|
 |Bibliothèque d'objets Microsoft Publisher 14.0<br /><br /> Bibliothèque d'objets Microsoft Publisher 15.0|Microsoft.Office.Interop.Publisher.dll|
 |Bibliothèque de références d'objet web Microsoft SharePoint Designer 14.0|Microsoft.Office.Interop.SharePointDesigner.dll|
 |Bibliothèque de références d'objet Page Microsoft SharePoint Designer 14.0|Microsoft.Office.Interop.SharePointDesignerPage.dll|
@@ -116,7 +116,7 @@ Le tableau suivant répertorie les assemblys PIA disponibles pour [!INCLUDE[Offi
 |Bibliothèque de types Microsoft Visio 14.0<br /><br /> Bibliothèque de types Microsoft Visio 15.0|Microsoft.Office.Interop.Visio.dll|
 |Bibliothèque de types Enregistrer en tant que page web Microsoft Visio 14.0<br /><br /> Bibliothèque de types Enregistrer en tant que page web Microsoft Visio 15.0|Microsoft.Office.Interop.Visio.SaveAsWeb.dll|
 |Bibliothèque de types de contrôles de dessin Microsoft Visio 14.0<br /><br /> Bibliothèque de types de contrôles de dessin Microsoft Visio 15.0|Microsoft.Office.Interop.VisOcx.dll|
-|Bibliothèque d'objets Microsoft Word 14.0<br /><br /> Bibliothèque d'objets Microsoft Word 15.0|[Microsoft.Office.Interop.Word.dll](/dotnet/api/microsoft.office.interop.word?view=word-pia)|
+|Bibliothèque d'objets Microsoft Word 14.0<br /><br /> Bibliothèque d'objets Microsoft Word 15.0|[Microsoft.Office.Interop.Word.dll](/dotnet/api/microsoft.office.interop.word?view=word-pia&preserve-view=true)|
 |Microsoft Visual Basic for Applications Extensibility 5.3|Microsoft.Vbe.Interop.dll|
 
 ### <a name="binding-redirect-assemblies"></a>Assemblys de redirection de liaison
@@ -131,7 +131,7 @@ Pour plus d’informations, consultez [Comment : activer et désactiver la redi
 
 - [Comment : cibler des applications Office par le biais d’assemblys PIA](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
 - [Vue d’ensemble du modèle objet Excel](../vsto/excel-object-model-overview.md)
-- [solutions InfoPath](../vsto/infopath-solutions.md)
+- [Solutions InfoPath](../vsto/infopath-solutions.md)
 - [Vue d’ensemble du modèle objet Outlook](../vsto/outlook-object-model-overview.md)
 - [Solutions PowerPoint](../vsto/powerpoint-solutions.md)
 - [Solutions de projet](../vsto/project-solutions.md)
