@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d498ee0acfdc87f340a3c5c8848680eaed6276d
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 8fe0d6ad545a197ca03c12acf68d779a42fd91ae
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658553"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91860500"
 ---
 # <a name="customize-a-rule-set"></a>Personnaliser un ensemble de règles
 
@@ -98,7 +98,7 @@ Vous pouvez créer un nouveau fichier d’ensemble de règles à partir de la bo
 
 ## <a name="rule-precedence"></a>Précédence des règles
 
-- Si la même règle est listée deux fois ou plus dans un ensemble de règles avec des gravités différentes, le compilateur génère une erreur. Par exemple :
+- Si la même règle est listée deux fois ou plus dans un ensemble de règles avec des gravités différentes, le compilateur génère une erreur. Exemple :
 
    ```xml
    <RuleSet Name="Rules for ClassLibrary21" Description="Code analysis rules for ClassLibrary21.csproj." ToolsVersion="15.0">
@@ -113,7 +113,7 @@ Vous pouvez créer un nouveau fichier d’ensemble de règles à partir de la bo
 
    **CA0063 : échec du chargement du fichier d’ensemble \[ de règles’Your]. RuleSet’ou de l’un de ses fichiers d’ensemble de règles dépendants. Le fichier n’est pas conforme au schéma de l’ensemble de règles.**
 
-- Si l’ensemble de règles inclut un ensemble de règles enfant à l’aide d’une balise **include** , et que la règle enfant et parent affecte à la fois la même règle, mais avec des niveaux de gravité différents, la gravité de l’ensemble de règles parent est prioritaire. Par exemple :
+- Si l’ensemble de règles inclut un ensemble de règles enfant à l’aide d’une balise **include** , et que la règle enfant et parent affecte à la fois la même règle, mais avec des niveaux de gravité différents, la gravité de l’ensemble de règles parent est prioritaire. Exemple :
 
    ```xml
    <!-- Parent rule set -->

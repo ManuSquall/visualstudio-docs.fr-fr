@@ -11,12 +11,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: f63dc4989a59256a0a3ad59491b2290912ffd2f8
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 2223aecd66da721ff1afe9877853c8a00c837611
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90862114"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862223"
 ---
 # <a name="how-to-customize-a-codespace-preview"></a>Comment personnaliser un codeSpace (version préliminaire)
 
@@ -57,7 +57,7 @@ Une fois que vous avez créé un codeSpace, toutes les modifications apportées 
 
 Quand vous êtes connecté à un codeSpace avec Visual Studio, vous pouvez utiliser le terminal Visual Studio pour exécuter les outils en ligne de commande. Vous pouvez utiliser PowerShell ou l’invite de commandes Windows, les deux étant élevés sous le compte administrateur local. Pour en savoir plus sur le terminal Visual Studio, consultez le blog de l’annonce sur les [terminaux Visual Studio](https://devblogs.microsoft.com/visualstudio/say-hello-to-the-new-visual-studio-terminal/).
 
-## <a name="customize-a-codespace"></a>Personnaliser un codeSpace
+## <a name="customize-a-codespace"></a>Personnaliser un codespace
 
 La valeur réelle de GitHub Codespaces est fournie lorsque vous pouvez créer des environnements de développement uniques et reproductibles dans le Cloud et les adapter à votre propre travail, ainsi qu’à ceux de votre équipe. En générant sur une instance GitHub Codespaces par défaut, vous pouvez personnaliser ce qui est installé et configuré lorsque vous créez un nouveau codeSpace.
 
@@ -92,7 +92,7 @@ GitHub Codespaces prend en charge les *devcontainer.jssuivantes sur* les propri�
 
 Bien que vous puissiez exécuter `devinit` directement la ligne de commande, nous vous recommandons de créer des [*devinit.jssur*](../../devinit/devinit-json.md) les fichiers de configuration, qui décrivent l’ensemble d' `devinit` Outils à exécuter. 
 
-Par exemple, pour installer le [Kit SDK .net Core](https://docs.microsoft.com/dotnet/core/sdk), un *.devinit.js* peut se présenter comme suit :
+Par exemple, pour installer le [Kit SDK .net Core](/dotnet/core/sdk), un *.devinit.js* peut se présenter comme suit :
 
 ```json
 {

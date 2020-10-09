@@ -14,12 +14,12 @@ ms.assetid: 92eaa97f-7084-4618-9608-768b51a0600b
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 71f5e4363481745887371e7d25e308b2856dc00c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b70f42775d627e7e3683aa2cbc771f091b58e761
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816525"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91861917"
 ---
 # <a name="expected-identifier-javascript"></a>Identificateur attendu (JavaScript)
 Vous avez utilisé un autre nom que celui d’un identificateur dans un contexte où il était requis. Un identificateur peut être :  
@@ -37,4 +37,4 @@ Vous avez utilisé un autre nom que celui d’un identificateur dans un contexte
 - Modifiez l’expression de façon à ce qu’un identificateur apparaisse à gauche du signe égal.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Utilisation de tableaux](../../javascript/advanced/using-arrays-javascript.md)
+ [Utilisation de tableaux](https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/Arrays)

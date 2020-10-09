@@ -14,15 +14,15 @@ ms.assetid: d4286315-814b-4966-b4c4-1ee19d796eff
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 16f675cb62c0c3fd5f3aba7ba6190427fe101353
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8453b05d2d09537f381bd2947dccb6b0a19a6263
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85814800"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91861843"
 ---
 # <a name="unterminated-comment"></a>Commentaire inachevé
-Vous avez commencé un bloc de commentaires sur plusieurs lignes, mais vous ne l’avez pas correctement terminé. Les commentaires sur plusieurs lignes commencent par une combinaison « /* » et se terminent par la \* combinaison « / » inverse. Par exemple :  
+Vous avez commencé un bloc de commentaires sur plusieurs lignes, mais vous ne l’avez pas correctement terminé. Les commentaires sur plusieurs lignes commencent par une combinaison « /* » et se terminent par la \* combinaison « / » inverse. Voici un exemple :  
   
 ```JavaScript  
 /* This is a comment  
@@ -34,4 +34,4 @@ This is another part of the same comment.*/
 - Veillez à mettre fin aux commentaires sur plusieurs lignes avec « */ ».  
   
 ## <a name="see-also"></a>Voir aussi  
- [Instructions Comment](../../javascript/reference/comment-statements-javascript.md)
+ [Instructions Comment](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Lexical_grammar)

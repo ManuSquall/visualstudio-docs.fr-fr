@@ -14,12 +14,12 @@ ms.assetid: 7fba49c9-9c95-4f46-b778-9c6ab33ab944
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 21cba6c63323775bbe7b0bcb49bfffd44d7be065
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d68cfc2d23dc4cfe207793d0b4c4004856b04303
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817292"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862521"
 ---
 # <a name="label-redefined"></a>Étiquette redéfinie
 Vous avez créé une nouvelle étiquette, mais vous lui avez donné le nom d’une étiquette existante. Les étiquettes peuvent être utilisées pour marquer des blocs de code, mais dans une portée spécifiée, ils doivent être uniques.  
@@ -29,7 +29,7 @@ Vous avez créé une nouvelle étiquette, mais vous lui avez donné le nom d’u
 - Assurez-vous que toutes les étiquettes que vous utilisez dans vos programmes sont uniques dans leur étendue respective.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Instruction étiquetée](../../javascript/reference/labeled-statement-javascript.md)   
- [Switch, instruction](../../javascript/reference/switch-statement-javascript.md)   
- [Break (instruction)](../../javascript/reference/break-statement-javascript.md)   
- [continue (instruction)](../../javascript/reference/continue-statement-javascript.md)
+ [Instruction étiquetée](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/label)   
+ [Switch, instruction](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/switch)   
+ [Break (instruction)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/break)   
+ [continue (instruction)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/continue)

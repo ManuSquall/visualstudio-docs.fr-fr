@@ -12,12 +12,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e8c99677396ab9b3d005d4079fd37fa633df4913
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 72e6193d850d351dacc5361d5053fe8f06b2d4bf
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658436"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91860496"
 ---
 # <a name="overview-of-source-code-analysis"></a>Vue d’ensemble de l’analyse du code source
 
@@ -39,9 +39,9 @@ Chaque analyseur a l’un des niveaux de gravité suivants :
 |-|-|-|
 | Error | `error` | Les violations apparaissent comme des *Erreurs* dans les liste d’erreurs et dans la sortie de la génération en ligne de commande, et entraînent l’échec des builds.| Le code incriminé est souligné d’un tilde rouge et marqué d’une petite zone rouge dans la barre de défilement. |
 | Avertissement | `warning` | Les violations apparaissent en tant qu' *avertissements* dans le liste d’erreurs et dans la sortie de la génération en ligne de commande, mais ne provoquent pas l’échec des builds. | Le code incriminé est souligné d’un tilde vert et est marqué d’un petit cadre vert dans la barre de défilement. |
-| Info | `suggestion` | Les violations apparaissent sous la forme de *messages* dans le liste d’erreurs, et pas du tout dans la sortie de la génération de la ligne de commande. | Le code incriminé est souligné d’un tilde gris et marqué d’une petite zone grise dans la barre de défilement. |
+| Informations | `suggestion` | Les violations apparaissent sous la forme de *messages* dans le liste d’erreurs, et pas du tout dans la sortie de la génération de la ligne de commande. | Le code incriminé est souligné d’un tilde gris et marqué d’une petite zone grise dans la barre de défilement. |
 | Hidden | `silent` | Non visible par l’utilisateur. | Non visible par l’utilisateur. Toutefois, le diagnostic est signalé au moteur de diagnostic IDE. |
-| None | `none` | Entièrement supprimée. | Entièrement supprimée. |
+| Aucun | `none` | Entièrement supprimée. | Entièrement supprimée. |
 | Default | `default` | Correspond à la gravité par défaut de la règle. Pour déterminer la valeur par défaut d’une règle, recherchez dans la Fenêtre Propriétés. | Correspond à la gravité par défaut de la règle. |
 
 Si des violations de règle sont détectées par un analyseur, elles sont signalées dans l’éditeur de code (sous forme de *tilde* sous le code incriminé) et dans la fenêtre de liste d’erreurs.
@@ -77,7 +77,7 @@ Si vous installez des analyseurs en tant qu’extension Visual Studio, ils s’a
 
 Pour que les règles soient appliquées au moment de la génération, y compris via la ligne de commande ou dans le cadre d’une build d’intégration continue, vous pouvez choisir l’une des options suivantes :
 
-- Créez un projet .NET 5,0 qui comprend des analyseurs par défaut dans le kit de développement logiciel (SDK) .NET. L’analyse du code est activée par défaut pour les projets ciblant .NET 5.0 ou ultérieur. Vous pouvez activer l’analyse du code sur des projets qui ciblent des versions antérieures de .NET en affectant à la propriété [EnableNETAnalyzers](https://docs.microsoft.com/dotnet/core/project-sdk/msbuild-props#enablenetanalyzers) la valeur true.
+- Créez un projet .NET 5,0 qui comprend des analyseurs par défaut dans le kit de développement logiciel (SDK) .NET. L’analyse du code est activée par défaut pour les projets ciblant .NET 5.0 ou ultérieur. Vous pouvez activer l’analyse du code sur des projets qui ciblent des versions antérieures de .NET en affectant à la propriété [EnableNETAnalyzers](/dotnet/core/project-sdk/msbuild-props#enablenetanalyzers) la valeur true.
 
 - Installer des analyseurs en tant que package NuGet. Les erreurs et avertissements d’analyseur ne s’affichent pas dans le rapport de build si vous installez les analyseurs comme une extension.
 

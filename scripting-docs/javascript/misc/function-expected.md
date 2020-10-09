@@ -14,12 +14,12 @@ ms.assetid: f62ade94-9f6f-4832-9b9b-49a06a385bbe
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f177bf81a43c45dcff4cef3040c64425ed544057
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2028d8923c2f81d1d99fec752d7ac0ce2fb32f65
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816967"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862175"
 ---
 # <a name="function-expected"></a>Fonction attendue
 Soit vous avez tenté d’appeler l’une des méthodes de **prototype de fonction** sur un objet qui n’était pas un `Function` objet, soit vous avez utilisé un objet dans un contexte d’appel de fonction. Par exemple, le code suivant génère cette erreur, car l' **exemple** n’est pas une fonction.  
@@ -36,5 +36,5 @@ var x = example();           // Try and call example as if it were a function.
 - Veillez à utiliser l’opérateur d’appel `()` de fonction pour appeler des fonctions uniquement.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Objet de fonction](../../javascript/reference/function-object-javascript.md)   
- [Propriété prototype (Object)](../../javascript/reference/prototype-property-object-javascript.md)
+ [Objet de fonction](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function)   
+ [Propriété prototype (Object)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)

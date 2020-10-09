@@ -14,12 +14,12 @@ ms.assetid: c16760ac-fc08-49d7-8878-9bc434b3c080
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aea1e999928d9d3f9bc8bdfe8c6a0a88ce8b2c84
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d40f27d8db8f8919a2be570dd119c6caf8944589
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85814783"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862287"
 ---
 # <a name="the-precision-is-out-of-range"></a>La précision est en dehors de la plage
 Vous avez tenté de passer un argument non valide à la fonction **Number. prototype. toPrecision**. L’argument de **toPrecision** doit être compris entre 1 et 21 (inclus).  
@@ -29,4 +29,4 @@ Vous avez tenté de passer un argument non valide à la fonction **Number. proto
 - Assurez-vous que l’argument de `toPrecision` n’est pas trop grand ou trop petit.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Méthode toPrecision (Number)](../../javascript/reference/toprecision-method-number-javascript.md)
+ [Méthode toPrecision (Number)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number/toprecision)

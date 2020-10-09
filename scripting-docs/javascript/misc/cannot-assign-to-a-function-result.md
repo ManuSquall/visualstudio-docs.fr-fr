@@ -14,12 +14,12 @@ ms.assetid: ee8ffb3a-1451-4cb3-99bf-5e9cf8b77d79
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 84ec3426c80da0578dda7cb99e9160b81e31ab87
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6aab43ec6a547982cf670d64c8ad8b752160839f
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817630"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862347"
 ---
 # <a name="cannot-assign-to-a-function-result"></a>Impossible d'affecter à un résultat de fonction
 Vous avez tenté d’assigner une valeur à un résultat de fonction. Le résultat d’une fonction peut être assigné à une variable, mais il ne peut pas être utilisé en tant que variable. Si vous souhaitez assigner une nouvelle valeur à la fonction elle-même, omettez les parenthèses (opérateur d’appel de fonction). L’exemple suivant illustre une situation dans laquelle cette erreur est générée.  
@@ -43,6 +43,6 @@ myFunction() = 42;  // Attempting to assign the value 42 to the result of the fu
     ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Objet de fonction](../../javascript/reference/function-object-javascript.md)   
- [Écriture de code JavaScript](../../javascript/writing-javascript-code.md)   
- [Fonctions](../../javascript/functions-javascript.md)
+ [Objet de fonction](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function)   
+ [Écriture de code JavaScript](https://developer.mozilla.org/docs/Learn/Getting_started_with_the_web/JavaScript_basics)   
+ [Fonctions](https://developer.mozilla.org/docs/Learn/JavaScript/Building_blocks/Functions)

@@ -25,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 804fbf7e6d9069f6d0fb406e2a5191dcbafbbcee
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 361b04edf2b677c2842376bd9d8fee0d6f3bda12
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71254392"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862360"
 ---
 # <a name="custom-task-panes"></a>Volets de tâches personnalisés
   Les volets de tâches sont des panneaux d'interface utilisateur généralement ancrés à l'un des côtés d'une fenêtre dans une application Microsoft Office. Les volets de tâches personnalisés vous permettent de créer votre propre volet de tâches et de fournir aux utilisateurs une interface familière pour accéder aux fonctionnalités de votre solution. Par exemple, l'interface peut comporter des contrôles exécutant du code pour modifier des documents ou afficher des données à partir d'une source de données.
@@ -122,7 +122,7 @@ ms.locfileid: "71254392"
 ## <a name="clean-up-resources-used-by-the-task-pane"></a>Nettoyer les ressources utilisées par le volet de tâches
  Une fois que vous avez créé un volet de tâches personnalisé, l’objet <xref:Microsoft.Office.Tools.CustomTaskPane> reste en mémoire tant que votre complément VSTO est en cours d’exécution. L’objet reste en mémoire même lorsque l’utilisateur clique sur le bouton **Fermer** (X) dans le coin du volet de tâches.
 
- Pour nettoyer les ressources utilisées par le volet de tâches alors que le complément VSTO est encore en cours d’exécution, utilisez les méthodes <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> ou <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A>. Ces méthodes suppriment l’objet <xref:Microsoft.Office.Tools.CustomTaskPane> spécifié de la collection `CustomTaskPanes`, et elles appellent la méthode <xref:Microsoft.Office.Tools.CustomTaskPane.Dispose%2A> de l’objet.
+ Pour nettoyer les ressources utilisées par le volet de tâches alors que le complément VSTO est encore en cours d’exécution, utilisez les méthodes <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> ou <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A>. Ces méthodes suppriment l’objet <xref:Microsoft.Office.Tools.CustomTaskPane> spécifié de la collection `CustomTaskPanes`, et elles appellent la méthode `Dispose` de l’objet.
 
  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] nettoie automatiquement les ressources utilisées par le volet de tâches personnalisé quand le complément VSTO est déchargé. N’appelez pas les <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> méthodes ou dans le `ThisAddIn_Shutdown` Gestionnaire d’événements de votre projet. Ces méthodes lèvent une exception <xref:System.ObjectDisposedException> car [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] nettoie les ressources utilisées par l'objet <xref:Microsoft.Office.Tools.CustomTaskPane> avant l'appel de `ThisAddIn_Shutdown`. Pour plus d’informations sur `ThisAddIn_Shutdown` , consultez [événements dans les projets Office](../vsto/events-in-office-projects.md).
 
@@ -203,17 +203,17 @@ ms.locfileid: "71254392"
 ### <a name="powerpoint-events"></a>Événements PowerPoint
  Pour surveiller l'état des fenêtres de document dans PowerPoint, vous pouvez gérer les événements suivants :
 
-- [Microsoft. Office. Interop. PowerPoint. EApplication_Event. AfterNewPresentation](/previous-versions/office/developer/office-2010/ff761105(v%3doffice.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event. AfterNewPresentation](/previous-versions/office/developer/office-2010/ff761105(v%3doffice.14))
 
-- [Microsoft. Office. Interop. PowerPoint. EApplication_Event. AfterPresentationOpen](/previous-versions/office/developer/office-2010/ff762843(v%3doffice.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event. AfterPresentationOpen](/previous-versions/office/developer/office-2010/ff762843(v%3doffice.14))
 
-- [Microsoft. Office. Interop. PowerPoint. EApplication_Event. NewPresentation](/previous-versions/office/developer/office-2010/ff761498(v%3doffice.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event. NewPresentation](/previous-versions/office/developer/office-2010/ff761498(v%3doffice.14))
 
-- [Microsoft. Office. Interop. PowerPoint. EApplication_Event. PresentationOpen](/previous-versions/office/developer/office-2010/ff760423(v=office.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event. PresentationOpen](/previous-versions/office/developer/office-2010/ff760423(v=office.14))
 
-- [Microsoft. Office. Interop. PowerPoint. EApplication_Event. WindowActivate](/previous-versions/office/developer/office-2010/ff761153(v=office.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event. WindowActivate](/previous-versions/office/developer/office-2010/ff761153(v=office.14))
 
-- [Microsoft. Office. Interop. PowerPoint. EApplication_Event. WindowDeactivate](/previous-versions/office/developer/office-2010/ff763093(v=office.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event. WindowDeactivate](/previous-versions/office/developer/office-2010/ff763093(v=office.14))
 
 ## <a name="see-also"></a>Voir aussi
 - [Comment : ajouter un volet de tâches personnalisé à une application](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)

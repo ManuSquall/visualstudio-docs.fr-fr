@@ -8,12 +8,12 @@ ms.author: anthc
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef2093915538f09f425fc961420c4a3078043c91
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d0c43d5a50b7a2acb536dee5fe9c6ed9ec3d36d7
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80740234"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91860456"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Ajouter une extension du protocole de serveur de langage
 
@@ -143,7 +143,7 @@ Une fois les étapes précédentes terminées, un dossier de *grammaires* est aj
 
 ## <a name="create-a-simple-language-client"></a>Créer un client de langage simple
 
-### <a name="main-interface---ilanguageclient"></a>Interface principale- [ILanguageClient](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient?view=visualstudiosdk-2017)
+### <a name="main-interface---ilanguageclient"></a>Interface principale- [ILanguageClient](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient?view=visualstudiosdk-2017&preserve-view=true)
 
 Après avoir créé votre projet VSIX, ajoutez le ou les packages NuGet suivants à votre projet :
 
@@ -152,7 +152,7 @@ Après avoir créé votre projet VSIX, ajoutez le ou les packages NuGet suivants
 > [!NOTE]
 > Lorsque vous prenez une dépendance sur le package NuGet une fois que vous avez effectué les étapes précédentes, les packages Newtonsoft.Jssur et StreamJsonRpc sont également ajoutés à votre projet. **Ne mettez pas à jour ces packages, sauf si vous êtes certain que ces nouvelles versions seront installées sur la version de Visual Studio que votre extension cible**. Les assemblys ne sont pas inclus dans votre VSIX ; au lieu de cela, ils sont récupérés dans le répertoire d’installation de Visual Studio. Si vous référencez une version plus récente des assemblys que celle qui est installée sur l’ordinateur d’un utilisateur, votre extension ne fonctionnera pas.
 
-Vous pouvez ensuite créer une nouvelle classe qui implémente l’interface [ILanguageClient](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient?view=visualstudiosdk-2017) , qui est l’interface principale requise pour les clients de langage se connectant à un serveur de langage basé sur LSP.
+Vous pouvez ensuite créer une nouvelle classe qui implémente l’interface [ILanguageClient](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient?view=visualstudiosdk-2017&preserve-view=true) , qui est l’interface principale requise pour les clients de langage se connectant à un serveur de langage basé sur LSP.
 
 Voici un exemple :
 
@@ -215,9 +215,9 @@ namespace MockLanguageExtension
 }
 ```
 
-Les principales méthodes qui doivent être implémentées sont [OnLoadedAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.onloadedasync?view=visualstudiosdk-2017) et [ActivateAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.activateasync?view=visualstudiosdk-2017). [OnLoadedAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.onloadedasync?view=visualstudiosdk-2017) est appelé lorsque Visual Studio a chargé votre extension et que votre serveur de langage est prêt à être démarré. Dans cette méthode, vous pouvez appeler le délégué [StartAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017) immédiatement pour signaler que le serveur de langage doit être démarré, ou vous pouvez effectuer une logique supplémentaire et appeler [StartAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017) ultérieurement. **Pour activer votre serveur de langue, vous devez appeler StartAsync à un moment donné.**
+Les principales méthodes qui doivent être implémentées sont [OnLoadedAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.onloadedasync?view=visualstudiosdk-2017&preserve-view=true) et [ActivateAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.activateasync?view=visualstudiosdk-2017&preserve-view=true). [OnLoadedAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.onloadedasync?view=visualstudiosdk-2017&preserve-view=true) est appelé lorsque Visual Studio a chargé votre extension et que votre serveur de langage est prêt à être démarré. Dans cette méthode, vous pouvez appeler le délégué [StartAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017&preserve-view=true) immédiatement pour signaler que le serveur de langage doit être démarré, ou vous pouvez effectuer une logique supplémentaire et appeler [StartAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017&preserve-view=true) ultérieurement. **Pour activer votre serveur de langue, vous devez appeler StartAsync à un moment donné.**
 
-[ActivateAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.activateasync?view=visualstudiosdk-2017) est la méthode éventuellement appelée en appelant le délégué [StartAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017) . Il contient la logique permettant de démarrer le serveur de langage et d’établir une connexion à celui-ci. Un objet de connexion qui contient des flux pour l’écriture sur le serveur et la lecture à partir du serveur doivent être retournés. Toutes les exceptions levées ici sont interceptées et affichées à l’utilisateur via un message de la barre d’informations dans Visual Studio.
+[ActivateAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.activateasync?view=visualstudiosdk-2017&preserve-view=true) est la méthode éventuellement appelée en appelant le délégué [StartAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017&preserve-view=true) . Il contient la logique permettant de démarrer le serveur de langage et d’établir une connexion à celui-ci. Un objet de connexion qui contient des flux pour l’écriture sur le serveur et la lecture à partir du serveur doivent être retournés. Toutes les exceptions levées ici sont interceptées et affichées à l’utilisateur via un message de la barre d’informations dans Visual Studio.
 
 ### <a name="activation"></a>Activation
 
@@ -248,7 +248,7 @@ Cliquez sur **nouveau** pour créer un élément multimédia :
 
 ### <a name="content-type-definition"></a>Définition du type de contenu
 
-Actuellement, la seule façon de charger votre extension de serveur de langage LSP est par type de contenu de fichier. Autrement dit, lors de la définition de la classe de votre client de langage (qui implémente [ILanguageClient](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient?view=visualstudiosdk-2017)), vous devez définir les types de fichiers qui, une fois ouverts, provoquent le chargement de votre extension. Si aucun fichier correspondant à votre type de contenu défini n’est ouvert, votre extension ne sera pas chargée.
+Actuellement, la seule façon de charger votre extension de serveur de langage LSP est par type de contenu de fichier. Autrement dit, lors de la définition de la classe de votre client de langage (qui implémente [ILanguageClient](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient?view=visualstudiosdk-2017&preserve-view=true)), vous devez définir les types de fichiers qui, une fois ouverts, provoquent le chargement de votre extension. Si aucun fichier correspondant à votre type de contenu défini n’est ouvert, votre extension ne sera pas chargée.
 
 Pour ce faire, vous définissez une ou plusieurs `ContentTypeDefinition` classes :
 
@@ -270,7 +270,7 @@ namespace MockLanguageExtension
 }
 ```
 
-Dans l’exemple précédent, une définition de type de contenu est créée pour les fichiers qui se terminent par l’extension de fichier *. bar* . La définition du type de contenu reçoit le nom « bar » et doit dériver de [CodeRemoteContentTypeName](/dotnet/api/microsoft.visualstudio.languageserver.client.coderemotecontentdefinition.coderemotecontenttypename?view=visualstudiosdk-2017).
+Dans l’exemple précédent, une définition de type de contenu est créée pour les fichiers qui se terminent par l’extension de fichier *. bar* . La définition du type de contenu reçoit le nom « bar » et doit dériver de [CodeRemoteContentTypeName](/dotnet/api/microsoft.visualstudio.languageserver.client.coderemotecontentdefinition.coderemotecontenttypename?view=visualstudiosdk-2017&preserve-view=true).
 
 Après avoir ajouté une définition de type de contenu, vous pouvez définir à quel moment charger votre extension de client de langage dans la classe de langage client :
 
@@ -292,7 +292,7 @@ La prise en charge des paramètres spécifiques au serveur de langage personnali
 
 Suivez les étapes ci-dessous pour ajouter la prise en charge des paramètres à votre extension de service de langage LSP :
 
-1. Ajoutez un fichier JSON (par exemple, *MockLanguageExtensionSettings.js*) à votre projet qui contient les paramètres et leurs valeurs par défaut. Par exemple :
+1. Ajoutez un fichier JSON (par exemple, *MockLanguageExtensionSettings.js*) à votre projet qui contient les paramètres et leurs valeurs par défaut. Exemple :
 
     ```json
     {
@@ -342,7 +342,7 @@ Suivez les étapes ci-dessous pour ajouter la prise en charge des paramètres à
 
 1. L’utilisateur ouvre un espace de travail contenant les fichiers détenus par votre serveur.
 2. L’utilisateur ajoute un fichier dans le dossier *. vs* appelé *VSWorkspaceSettings.jssur*.
-3. L’utilisateur ajoute une ligne au fichier *VSWorkspaceSettings.js* pour un paramètre fourni par le serveur. Par exemple :
+3. L’utilisateur ajoute une ligne au fichier *VSWorkspaceSettings.js* pour un paramètre fourni par le serveur. Exemple :
 
     ```json
     {
@@ -373,11 +373,11 @@ Lorsque le traçage est activé, le contenu est écrit dans un fichier dans le r
 
 ### <a name="custom-messages"></a>Messages personnalisés
 
-Des API sont en place pour faciliter le transfert de messages vers et la réception de messages à partir du serveur de langue qui ne font pas partie du protocole de serveur de langage standard. Pour gérer les messages personnalisés, implémentez l’interface [ILanguageClientCustomMessage](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage?view=visualstudiosdk-2017) dans votre classe de client de langage. La bibliothèque [vs-StreamJsonRpc](https://github.com/Microsoft/vs-streamjsonrpc/blob/master/doc/index.md) est utilisée pour transmettre des messages personnalisés entre votre client de langage et le serveur de langage. Étant donné que l’extension de votre client de langue LSP est identique à toute autre extension Visual Studio, vous pouvez décider d’ajouter des fonctionnalités supplémentaires (qui ne sont pas prises en charge par le LSP) à Visual Studio (à l’aide d’autres API Visual Studio) dans votre extension par le biais de messages personnalisés.
+Des API sont en place pour faciliter le transfert de messages vers et la réception de messages à partir du serveur de langue qui ne font pas partie du protocole de serveur de langage standard. Pour gérer les messages personnalisés, implémentez l’interface [ILanguageClientCustomMessage](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage?view=visualstudiosdk-2017&preserve-view=true) dans votre classe de client de langage. La bibliothèque [vs-StreamJsonRpc](https://github.com/Microsoft/vs-streamjsonrpc/blob/master/doc/index.md) est utilisée pour transmettre des messages personnalisés entre votre client de langage et le serveur de langage. Étant donné que l’extension de votre client de langue LSP est identique à toute autre extension Visual Studio, vous pouvez décider d’ajouter des fonctionnalités supplémentaires (qui ne sont pas prises en charge par le LSP) à Visual Studio (à l’aide d’autres API Visual Studio) dans votre extension par le biais de messages personnalisés.
 
 #### <a name="receive-custom-messages"></a>Recevoir des messages personnalisés
 
-Pour recevoir des messages personnalisés du serveur de langage, implémentez la propriété [CustomMessageTarget](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage.custommessagetarget?view=visualstudiosdk-2017) sur [ILanguageClientCustomMessage](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage?view=visualstudiosdk-2017) et retournez un objet qui sait comment gérer vos messages personnalisés. Voici un exemple ci-dessous :
+Pour recevoir des messages personnalisés du serveur de langage, implémentez la propriété [CustomMessageTarget](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage.custommessagetarget?view=visualstudiosdk-2017&preserve-view=true) sur [ILanguageClientCustomMessage](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage?view=visualstudiosdk-2017&preserve-view=true) et retournez un objet qui sait comment gérer vos messages personnalisés. Voici un exemple ci-dessous :
 
 ```csharp
 internal class MockCustomLanguageClient : MockLanguageClient, ILanguageClientCustomMessage
@@ -412,7 +412,7 @@ internal class MockCustomLanguageClient : MockLanguageClient, ILanguageClientCus
 
 #### <a name="send-custom-messages"></a>Envoyer des messages personnalisés
 
-Pour envoyer des messages personnalisés au serveur de langage, implémentez la méthode [AttachForCustomMessageAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage.attachforcustommessageasync?view=visualstudiosdk-2017) sur [ILanguageClientCustomMessage](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage?view=visualstudiosdk-2017). Cette méthode est appelée lorsque votre serveur de langage est démarré et prêt à recevoir des messages. Un objet [JsonRpc](https://github.com/Microsoft/vs-streamjsonrpc/blob/master/src/StreamJsonRpc/JsonRpc.cs) est passé en tant que paramètre, que vous pouvez ensuite conserver pour envoyer des messages au serveur de langage à l’aide des API [vs-StreamJsonRpc](https://github.com/Microsoft/vs-streamjsonrpc/blob/master/doc/index.md) . Voici un exemple ci-dessous :
+Pour envoyer des messages personnalisés au serveur de langage, implémentez la méthode [AttachForCustomMessageAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage.attachforcustommessageasync?view=visualstudiosdk-2017&preserve-view=true) sur [ILanguageClientCustomMessage](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage?view=visualstudiosdk-2017&preserve-view=true). Cette méthode est appelée lorsque votre serveur de langage est démarré et prêt à recevoir des messages. Un objet [JsonRpc](https://github.com/Microsoft/vs-streamjsonrpc/blob/master/src/StreamJsonRpc/JsonRpc.cs) est passé en tant que paramètre, que vous pouvez ensuite conserver pour envoyer des messages au serveur de langage à l’aide des API [vs-StreamJsonRpc](https://github.com/Microsoft/vs-streamjsonrpc/blob/master/doc/index.md) . Voici un exemple ci-dessous :
 
 ```csharp
 internal class MockCustomLanguageClient : MockLanguageClient, ILanguageClientCustomMessage
@@ -447,7 +447,7 @@ internal class MockCustomLanguageClient : MockLanguageClient, ILanguageClientCus
 
 Parfois, un développeur d’extensions peut vouloir intercepter les messages LSP envoyés et reçus par le serveur de langage. Par exemple, un développeur d’extensions peut vouloir modifier le paramètre de message envoyé pour un message LSP particulier, ou modifier les résultats retournés par le serveur de langue pour une fonctionnalité LSP (par exemple, les saisies semi-automatiques). Lorsque cela est nécessaire, les développeurs d’extensions peuvent utiliser l’API MiddleLayer pour intercepter les messages LSP.
 
-Chaque message LSP possède sa propre interface de couche intermédiaire pour l’interception. Pour intercepter un message particulier, créez une classe qui implémente l’interface de couche intermédiaire pour ce message. Ensuite, implémentez l’interface [ILanguageClientCustomMessage](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage?view=visualstudiosdk-2017) dans la classe de votre langage client et retournez une instance de votre objet dans la propriété [MiddleLayer](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage.middlelayer?view=visualstudiosdk-2017) . Voici un exemple ci-dessous :
+Chaque message LSP possède sa propre interface de couche intermédiaire pour l’interception. Pour intercepter un message particulier, créez une classe qui implémente l’interface de couche intermédiaire pour ce message. Ensuite, implémentez l’interface [ILanguageClientCustomMessage](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage?view=visualstudiosdk-2017&preserve-view=true) dans la classe de votre langage client et retournez une instance de votre objet dans la propriété [MiddleLayer](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclientcustommessage.middlelayer?view=visualstudiosdk-2017&preserve-view=true) . Voici un exemple ci-dessous :
 
 ```csharp
 public class MockLanguageClient: ILanguageClient, ILanguageClientCustomMessage

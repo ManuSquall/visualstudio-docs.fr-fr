@@ -7,17 +7,17 @@ ms.date: 06/25/2019
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
 ms.topic: troubleshooting
-ms.openlocfilehash: 33d00d853c7496e23cb5cd97a0b9abbe05e3accc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d2ba7f5d044b82c44d719b251a7d803212cf7b07
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950586"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91860552"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Connexion à Team Foundation Version Control
 
 > [!NOTE]
-> Pour bénéficier de la meilleure expérience de gestion de version sur macOS, nous recommandons d’utiliser Git au lieu de Team Foundation Version Control (TFVC). Git est pris en charge dans Visual Studio pour Mac ; il s’agit de l’option par défaut pour les référentiels hébergés dans Team Foundation Server (TFS)/Azure DevOps. Pour en savoir plus sur Git avec TFS/Azure DevOps, voir l’article [Configurer un référentiel Git](/visualstudio/mac/set-up-git-repository).
+> Pour bénéficier de la meilleure expérience de gestion de version sur macOS, nous recommandons d’utiliser Git au lieu de Team Foundation Version Control (TFVC). Git est pris en charge dans Visual Studio pour Mac ; il s’agit de l’option par défaut pour les référentiels hébergés dans Team Foundation Server (TFS)/Azure DevOps. Pour en savoir plus sur Git avec TFS/Azure DevOps, voir l’article [Configurer un référentiel Git](./set-up-git-repository.md).
 >
 > Si vous avez précédemment utilisé la version de préversion de l’extension TFVC pour Visual Studio pour Mac, elle n’est plus prise en charge lors de la mise à niveau vers Visual Studio 2019 pour Mac.
 
@@ -111,7 +111,7 @@ Pour en savoir plus sur les commandes mentionnées ici, ou d’autres commandes,
 ## <a name="connect-to-tfvc-using-the-team-foundation-version-control-extension"></a>Se connecter à TFVC avec l’extension Team Foundation Version Control
 
 > [!NOTE]
-> Pour bénéficier de la meilleure expérience de gestion de version sur macOS, nous recommandons d’utiliser Git au lieu de Team Foundation Version Control (TFVC). Git est pris en charge dans Visual Studio pour Mac ; il s’agit de l’option par défaut pour les référentiels hébergés dans Team Foundation Server (TFS)/Azure DevOps. Pour en savoir plus sur Git avec TFS/Azure DevOps, voir l’article [Configurer un référentiel Git](/visualstudio/mac/set-up-git-repository).
+> Pour bénéficier de la meilleure expérience de gestion de version sur macOS, nous recommandons d’utiliser Git au lieu de Team Foundation Version Control (TFVC). Git est pris en charge dans Visual Studio pour Mac ; il s’agit de l’option par défaut pour les référentiels hébergés dans Team Foundation Server (TFS)/Azure DevOps. Pour en savoir plus sur Git avec TFS/Azure DevOps, voir l’article [Configurer un référentiel Git](./set-up-git-repository.md).
 >
 > Si vous avez précédemment utilisé la version de préversion de l’extension TFVC pour Visual Studio pour Mac, elle n’est plus prise en charge lors de la mise à niveau vers Visual Studio 2019 pour Mac.
 

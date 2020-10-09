@@ -14,12 +14,12 @@ ms.assetid: a8ce6fbf-8663-4770-8fba-677d04c84825
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: acc91513cc7f230a150ca87eea5cddc4681e43d3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 68165a668a94aac30593a3ff35cfd1e172a98513
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816590"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91861949"
 ---
 # <a name="expected--javascript"></a>'=' attendu (JavaScript)
 Vous avez tenté de créer une variable à utiliser avec des instructions de compilation conditionnelle, mais vous n’avez pas placé de signe égal entre la variable et la valeur que vous souhaitez lui assigner.  
@@ -33,5 +33,5 @@ Vous avez tenté de créer une variable à utiliser avec des instructions de com
     ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Compilation conditionnelle](../../javascript/advanced/conditional-compilation-javascript.md)   
- [Variables de compilation conditionnelle](../../javascript/advanced/conditional-compilation-variables-javascript.md)
+ [Compilation conditionnelle](/previous-versions/windows/internet-explorer/ie-developer/scripting-articles/121hztk3(v=vs.84))   
+ [Variables de compilation conditionnelle](/previous-versions/windows/internet-explorer/ie-developer/scripting-articles/s59bkzce(v=vs.84))

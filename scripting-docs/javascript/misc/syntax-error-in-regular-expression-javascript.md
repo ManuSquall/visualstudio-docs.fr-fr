@@ -14,12 +14,12 @@ ms.assetid: 7799ed69-c877-42a1-87cf-ad6739302c10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 192f9a5ca9928e4c325d67c340276ef12de14686
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6cb95c0cb5c4178267241c57cc431c8b7acff21
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816187"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862028"
 ---
 # <a name="syntax-error-in-regular-expression-javascript"></a>Erreur de syntaxe dans l'expression régulière (JavaScript)
 La structure de votre chaîne de recherche enfreint une ou plusieurs des règles grammaticales d’une [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] expression régulière.  
@@ -29,6 +29,6 @@ La structure de votre chaîne de recherche enfreint une ou plusieurs des règles
 - Vérifiez que la structure de votre chaîne de recherche d’expression régulière respecte la [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] syntaxe d’expression régulière.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Objet Regular expression](../../javascript/reference/regular-expression-object-javascript.md)   
- [Syntaxe des expressions régulières (JavaScript)](https://msdn.microsoft.com/library/1400241x)   
- [Méthode compile (Expression régulière)](../../javascript/reference/compile-method-regular-expression-javascript.md)
+ [Objet Regular expression](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/RegExp)   
+ [Syntaxe des expressions régulières (JavaScript)](/previous-versions/1400241x(v=vs.100))   
+ [Méthode compile (Expression régulière)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/RegExp/compile)

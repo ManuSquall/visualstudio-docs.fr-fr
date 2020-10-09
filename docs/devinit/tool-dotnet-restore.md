@@ -11,18 +11,18 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 39324f3a14b631328f3f1189da7806e02fd1e076
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 2febd8a62e041384c8acf5b7b0b5e1c974597c0a
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91006028"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862251"
 ---
 # <a name="dotnet-restore"></a>dotnet-restore
 
-Les `dotnet-restore` dépendances de restauration de l’outil et les outils spécifiques au projet qui sont spécifiés dans le fichier projet. En savoir plus sur dotnet restore [ici](https://docs.microsoft.com/dotnet/core/tools/dotnet-restore).
+Les `dotnet-restore` dépendances de restauration de l’outil et les outils spécifiques au projet qui sont spécifiés dans le fichier projet. En savoir plus sur dotnet restore [ici](/dotnet/core/tools/dotnet-restore).
 
-## <a name="usage"></a>Usage
+## <a name="usage"></a>Utilisation
 
 Si les `input` Propriétés et `additionalOptions` sont omises ou vides, l’outil suivra le comportement [par défaut](#default-behavior) détaillé ci-dessous.
 

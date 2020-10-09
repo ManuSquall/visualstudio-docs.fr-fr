@@ -1,5 +1,5 @@
 ---
-title: activer-IIS
+title: enable-iis
 description: activation de l’outil devinit-IIS.
 ms.date: 08/28/2020
 ms.topic: reference
@@ -11,18 +11,18 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 245ea76f988b9a9e320a51ba6b2df01382668cc0
-ms.sourcegitcommit: 417ea66a8b07ec102ece2fa00e07b88edc404c00
+ms.openlocfilehash: 3324cf5faa1d9385adbbdf24a8125970c5db2c40
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91127828"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862236"
 ---
-# <a name="enable-iis"></a>activer-IIS
+# <a name="enable-iis"></a>enable-iis
 
-L' `enable-iis` outil est utilisé pour activer les fonctionnalités IIS et installer le [module ASP.net Core](https://docs.microsoft.com/aspnet/core/host-and-deploy/aspnet-core-module) pour le développement ASP.net avec IIS.
+L' `enable-iis` outil est utilisé pour activer les fonctionnalités IIS et installer le [module ASP.net Core](/aspnet/core/host-and-deploy/aspnet-core-module) pour le développement ASP.net avec IIS.
 
-## <a name="usage"></a>Usage
+## <a name="usage"></a>Utilisation
 
 Si les `input` Propriétés et `additionalOptions` sont omises ou vides, l’outil suivra le comportement [par défaut](#default-behavior) détaillé ci-dessous.
 

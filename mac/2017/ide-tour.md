@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 02/07/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: 3d25fced1e9c9dd6431f4056b5b561f476eecb28
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1a187796f4f867d397662224509f8a5f72d1cc74
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74984983"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862491"
 ---
 # <a name="visual-studio-2017-for-mac-tour"></a>Visite guidée de Visual Studio 2017 pour Mac
 
@@ -68,7 +68,7 @@ Le panneau Solution organise le ou les projets dans une solution :
 
 C’est ici que le code source, les ressources, l’interface utilisateur et les dépendances sont organisés en projets spécifiques à une plateforme.
 
-Pour plus d’informations sur l’utilisation de projets et de solutions dans Visual Studio pour Mac, consultez l’article [Projets et solutions](/visualstudio/mac/projects-and-solutions).
+Pour plus d’informations sur l’utilisation de projets et de solutions dans Visual Studio pour Mac, consultez l’article [Projets et solutions](./projects-and-solutions.md).
 
 ## <a name="assembly-references"></a>Références d'assembly
 
@@ -80,7 +80,7 @@ Vous ajoutez des références en utilisant la boîte de dialogue **Modifier les 
 
 ![Boîte de dialogue Modifier les références](media/ide-tour-image20.png)
 
-Pour plus d’informations sur l’utilisation de références dans Visual Studio pour Mac, consultez l’article [Gestion des références dans un projet](/visualstudio/mac/managing-references-in-a-project).
+Pour plus d’informations sur l’utilisation de références dans Visual Studio pour Mac, consultez l’article [Gestion des références dans un projet](./managing-references-in-a-project.md).
 
 ## <a name="dependencies--packages"></a>Dépendances / Packages
 
@@ -92,19 +92,19 @@ Pour ajouter une dépendance à votre application, cliquez avec le bouton droit 
 
 ![Ajouter un package NuGet](media/ide-tour-image21.png)
 
-Vous trouverez des informations sur l’utilisation d’un package NuGet dans une application dans l’article [Inclusion d’un projet NuGet dans votre projet](/visualstudio/mac/nuget-walkthrough).
+Vous trouverez des informations sur l’utilisation d’un package NuGet dans une application dans l’article [Inclusion d’un projet NuGet dans votre projet](./nuget-walkthrough.md).
 
 ## <a name="refactoring"></a>Refactorisation
 
-Visual Studio pour Mac offre deux méthodes pratiques pour refactoriser votre code : Actions contextuelles et Analyse du code source. Pour plus d’informations sur ces méthodes, consultez l’article [Refactorisation](/visualstudio/mac/refactoring).
+Visual Studio pour Mac offre deux méthodes pratiques pour refactoriser votre code : Actions contextuelles et Analyse du code source. Pour plus d’informations sur ces méthodes, consultez l’article [Refactorisation](./refactoring.md).
 
 ## <a name="debugging"></a>Débogage
 
-Visual Studio pour Mac a un débogueur natif qui prend en charge le débogage des applications Xamarin.iOS, Xamarin.Mac et Xamarin.Android. Visual Studio pour Mac utilise le débogueur Mono Soft, qui est implémenté dans le runtime Mono, ce qui permet à l’IDE de déboguer du code managé sur toutes les plateformes. Pour plus d’informations sur le débogage, consultez l’article [Débogage](/visualstudio/mac/debugging).
+Visual Studio pour Mac a un débogueur natif qui prend en charge le débogage des applications Xamarin.iOS, Xamarin.Mac et Xamarin.Android. Visual Studio pour Mac utilise le débogueur Mono Soft, qui est implémenté dans le runtime Mono, ce qui permet à l’IDE de déboguer du code managé sur toutes les plateformes. Pour plus d’informations sur le débogage, consultez l’article [Débogage](./debugging.md).
 
 Le débogueur contient des visualiseurs puissants pour les types spéciaux, comme les chaînes, les couleurs, les URL, ainsi que les tailles, les coordonnées et les courbes de Bézier.
 
-Pour plus d’informations sur les visualisations des données du débogueur, consultez l’article [Visualisations des données](/visualstudio/mac/data-visualizations).
+Pour plus d’informations sur les visualisations des données du débogueur, consultez l’article [Visualisations des données](./data-visualizations.md).
 
 ## <a name="version-control"></a>Gestion de version
 
@@ -116,7 +116,7 @@ Les fichiers comportant des modifications non validées sont indiqués par une a
 
 ![Fichiers non validés dans le panneau Solution](media/ide-tour-image23.png)
 
-Pour plus d’informations sur l’utilisation de la gestion de versions dans Visual Studio, consultez l’article [Gestion de versions](/visualstudio/mac/version-control).
+Pour plus d’informations sur l’utilisation de la gestion de versions dans Visual Studio, consultez l’article [Gestion de versions](./version-control.md).
 
 ## <a name="related-video"></a>Vidéo associée
 

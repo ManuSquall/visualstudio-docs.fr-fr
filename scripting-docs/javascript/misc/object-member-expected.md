@@ -14,12 +14,12 @@ ms.assetid: 3af95632-80e1-47c4-8e4b-81c5f2be8017
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d83c6ce2c7173054aa6ea31681ad1baa6e0cbc70
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 791395d1fff89708e96a6dbe61fd73d954faac3b
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815589"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862072"
 ---
 # <a name="object-member-expected"></a>Membre d'objet attendu
 Vous avez tenté d’effectuer une opération sur le membre de données d’un objet, mais le membre n’existe pas.  
@@ -29,5 +29,5 @@ Vous avez tenté d’effectuer une opération sur le membre de données d’un o
 - Vérifiez que vous avez tapé correctement le nom du membre de données.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Objet Object](../../javascript/reference/object-object-javascript.md)   
- [Objets et tableaux](../../javascript/objects-and-arrays-javascript.md)
+ [Objet Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)   
+ [Objets et tableaux](https://developer.mozilla.org/docs/Learn/JavaScript/Objects)

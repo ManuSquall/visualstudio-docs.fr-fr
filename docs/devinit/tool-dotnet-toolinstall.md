@@ -11,12 +11,12 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 3877fd22efa69978c4e209b7fa23998dac7dc95e
-ms.sourcegitcommit: 036b0dfa651f7218ed33e6a19425613599ee58fa
+ms.openlocfilehash: f6946afa0138dc27a61f5665a9172c231392acc1
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91636689"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862246"
 ---
 # <a name="dotnet-toolinstall"></a>dotnet-toolinstall
 
@@ -38,7 +38,7 @@ La `input` propriété est utilisée pour spécifier l’outil .net core à inst
 
 ### <a name="additional-options"></a>Options supplémentaires
 
-Des options de configuration supplémentaires peuvent être transmises en tant que valeur de `additionalOptions` . Ces arguments sont un relais direct vers les arguments utilisés par la [`dotnet tool update`](https://docs.microsoft.com/dotnet/core/tools/global-tools#update-a-tool) commande. 
+Des options de configuration supplémentaires peuvent être transmises en tant que valeur de `additionalOptions` . Ces arguments sont un relais direct vers les arguments utilisés par la [`dotnet tool update`](/dotnet/core/tools/global-tools#update-a-tool) commande. 
 
 La `dotnet tool update` commande est utilisée pour gérer en toute sécurité le cas où un outil est déjà installé.
 

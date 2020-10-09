@@ -14,12 +14,12 @@ ms.assetid: 8da7485f-7050-4559-97c3-ccfa782cdff3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: efac49ccbf3c94c5b7d136ddd965b4a45a304adb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bc791e97fcecf357177d140a3c30ee8c66db377b
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816642"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91861970"
 ---
 # <a name="expected-constant"></a>Constante attendue
 Vous avez tenté d’utiliser une variable (de compilation non conditionnelle) dans une instruction de test de compilation conditionnelle. Les instructions de test de compilation conditionnelle doivent correspondre à une constante.  
@@ -31,5 +31,5 @@ Vous avez tenté d’utiliser une variable (de compilation non conditionnelle) d
 - Remplacez la variable par une variable de compilation conditionnelle.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Compilation conditionnelle](../../javascript/advanced/conditional-compilation-javascript.md)   
- [Variables de compilation conditionnelle](../../javascript/advanced/conditional-compilation-variables-javascript.md)
+ [Compilation conditionnelle](/previous-versions/windows/internet-explorer/ie-developer/scripting-articles/121hztk3(v=vs.84))   
+ [Variables de compilation conditionnelle](/previous-versions/windows/internet-explorer/ie-developer/scripting-articles/s59bkzce(v=vs.84))

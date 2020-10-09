@@ -1,5 +1,5 @@
 ---
-title: Utiliser Bridge pour Kubernetes avec Visual Studio
+title: Utiliser Bridge to Kubernetes avec Visual Studio
 titleSuffix: ''
 ms.technology: vs-azure
 ms.date: 06/02/2020
@@ -10,12 +10,12 @@ monikerRange: '>=vs-2019'
 ms.author: ghogen
 author: ghogen
 manager: jillfra
-ms.openlocfilehash: c7d046ca63af5aa65f5cd286e9a6199afc6c2947
-ms.sourcegitcommit: f9179a3a6d74fbd871f62b72491e70b9e7b05637
+ms.openlocfilehash: 7bbeec2baab018ea770dbee60db507399ebeb745
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90845870"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91860444"
 ---
 # <a name="use-bridge-to-kubernetes"></a>Utiliser Bridge pour Kubernetes
 
@@ -153,12 +153,12 @@ Utilisez le script fourni pour supprimer l’exemple d’application de votre cl
 Découvrez le fonctionnement de Bridge to Kubernetes.
 
 > [!div class="nextstepaction"]
-> [Fonctionnement de Bridge to Kubernetes](overview-bridge-to-kubernetes.md)
+> [Fonctionnement de la solution Bridge to Kubernetes](overview-bridge-to-kubernetes.md)
 
 [azds-cli]: /azure/dev-spaces/how-to/install-dev-spaces#install-the-client-side-tools
 [azds-vs-code]: https://marketplace.visualstudio.com/items?itemName=azuredevspaces.azds
 [azure-cli]: /cli/azure/install-azure-cli?view=azure-cli-lates&preserve-view=true
-[azure-cloud-shell]: /azure/cloud-shell/w.md
+[azure-cloud-shell]: /azure/cloud-shell/overview.md
 [az-aks-get-credentials]: /cli/azure/aks?view=azure-cli-latest&preserve-view=true#az-aks-get-credentials
 [az-aks-vs-code]: https://marketplace.visualstudio.com/items?itemName=ms-kubernetes-tools.vscode-aks-tools
 [bike-sharing-github]: https://github.com/Microsoft/mindaro

@@ -8,12 +8,12 @@ ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: decbdc244a7947b715b8ba5b27bda5aaf50d2266
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c494f8d8543e0aa51b0c2be0ee52c0cb80aba982
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950615"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862431"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>Installer Visual Studio 2017 pour Mac
 
@@ -34,7 +34,7 @@ Pour travailler avec iOS dans Visual Studio, vous avez besoin des éléments sui
 - Xcode 9.3 ou version ultérieure. La dernière version stable est généralement recommandée.
 - un ID Apple. Si vous n’avez pas encore d’identifiant Apple, vous pouvez en créer un sur https://appleid.apple.com. Un ID Apple est nécessaire pour installer et se connecter à Xcode.
 
-## <a name="install"></a>Installer
+## <a name="install"></a>Installez
 
 1. Télécharger Visual Studio pour Mac à partir de [my.visualstudio.com](https://my.visualstudio.com/Downloads?q=Visual%20Studio%202017%20for%20Mac)
 
@@ -68,7 +68,7 @@ Pour travailler avec iOS dans Visual Studio, vous avez besoin des éléments sui
       - Applications Xamarin entièrement multiplateformes – Sélectionnez les plateformes **Android**, **iOS** et **macOS**.
    * **Applications .NET Core** – Sélectionnez la plateforme **.NET Core**.
    * **Applications web ASP.NET Core** – Sélectionnez la plateforme **.NET Core**.
-   * **Développement de jeux Unity multiplateformes** – aucune plateforme supplémentaire ne doit être installée en plus de Visual Studio pour Mac. Reportez-vous au [guide d’installation Unity](/visualstudio/mac/setup-vsmac-tools-unity) pour plus d’informations sur l’installation de l’extension Unity.
+   * **Développement de jeux Unity multiplateformes** – aucune plateforme supplémentaire ne doit être installée en plus de Visual Studio pour Mac. Reportez-vous au [guide d’installation Unity](./setup-vsmac-tools-unity.md) pour plus d’informations sur l’installation de l’extension Unity.
 
    Cet écran d’installation affiche la version et la taille de chaque composant. Vous pouvez cliquer sur chaque composant pour afficher une liste des dépendances pour ce composant (pour Android), voir les packages supplémentaires qu’il télécharge (pour .NET Core), ou afficher les applications supplémentaires nécessaires (pour iOS et macOS) :
 
@@ -90,7 +90,7 @@ Pour travailler avec iOS dans Visual Studio, vous avez besoin des éléments sui
 
 10. Une fois l’installation terminée, vous pouvez démarrer le développement d’applications dans Visual Studio en cliquant sur **Démarrer** :
 
-    ![Ouvrez Visual Studio.](media/installer-image11.png)
+    ![Ouvrir Visual Studio](media/installer-image11.png)
 
 > [!NOTE]
 > Si vous avez choisi pas installer un outil ou une plateforme lors de l’installation d’origine (en la désélectionnant à l’étape 6), vous devez réexécuter le [programme d’installation](https://visualstudio.microsoft.com/vs/) si vous voulez ajouter les composants plus tard.
@@ -120,7 +120,7 @@ L’installation de Visual Studio pour Mac vous permet de commencer à écrire d
 
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>Applications web .NET Core et ASP.NET Core, développement de jeux Unity
 
-Pour les autres charges de travail, reportez-vous à la page [charges de travail](/visualstudio/mac/workloads).
+Pour les autres charges de travail, reportez-vous à la page [charges de travail](./workloads.md).
 
 ## <a name="related-video"></a>Vidéo associée
 
