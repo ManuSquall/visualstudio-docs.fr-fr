@@ -11,20 +11,20 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 2f4ec5489f22e94ad8f57f22ddc7742dc0ae3ade
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 19f635f0d22eacd64726368af89bbf5b7c4c9a11
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005994"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862843"
 ---
 # <a name="set-env"></a>set-env
 
 L' `set-env` outil peut être utilisé pour définir des variables d’environnement à utiliser dans le processus actuel. Les variables d’environnement sont définies uniquement dans le processus actuel et seront utilisées par d’autres `devinit` outils si elles s’exécutent dans ce processus.
 
-Cet outil utilise l’API .NET Core `Environment.SetEnvironment` et présente les mêmes limitations que cette API. Pour plus d’informations, consultez la [documentation](https://docs.microsoft.com/dotnet/api/system.environment.setenvironmentvariable?view=netcore-3.1&preserve-view=true) de `Environment.SetEnvironment` .
+Cet outil utilise l’API .NET Core `Environment.SetEnvironment` et présente les mêmes limitations que cette API. Pour plus d’informations, consultez la [documentation](/dotnet/api/system.environment.setenvironmentvariable?preserve-view=true&view=netcore-3.1) de `Environment.SetEnvironment` .
 
-## <a name="usage"></a>Usage
+## <a name="usage"></a>Utilisation
 
 | Nom                                         | Type   | Obligatoire | Valeur                                                                       |
 |----------------------------------------------|--------|----------|-----------------------------------------------------------------------------|
@@ -51,7 +51,7 @@ Non utilisé.
 
 ## <a name="usage-in-a-codespace"></a>Utilisation dans un codeSpace
 
-Si vous utilisez un codeSpace, vous pouvez définir des variables d’environnement utilisées dans le codeSpace par le biais de customizating la `remoteEnv` propriété dans le [`.devcontainer.json`](https://docs.microsoft.com/visualstudio/codespaces/reference/configuring) fichier.
+Si vous utilisez un codeSpace, vous pouvez définir des variables d’environnement utilisées dans le codeSpace par le biais de customizating la `remoteEnv` propriété dans le [`.devcontainer.json`](/visualstudio/codespaces/reference/configuring) fichier.
 
 ## <a name="example-usage"></a>Exemple d’utilisation
 

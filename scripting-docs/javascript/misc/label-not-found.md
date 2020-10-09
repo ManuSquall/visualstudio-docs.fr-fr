@@ -14,12 +14,12 @@ ms.assetid: 79e32926-b03f-457b-997c-2bb2ec8a1ec5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3af2451efdea5ac3f71ae17fc5919e9f443e86db
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f43181affb8048bc9c39c0ee3e844193cd2247c8
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815758"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862541"
 ---
 # <a name="label-not-found"></a>Étiquette introuvable
 Vous avez fait référence à une étiquette qui n’existe pas. Les étiquettes peuvent être utilisées pour marquer des blocs de code, mais dans une étendue spécifiée, doivent être uniques.  
@@ -31,7 +31,7 @@ Vous avez fait référence à une étiquette qui n’existe pas. Les étiquettes
 - Vérifiez que toutes les références d’étiquette sont effectuées aux étiquettes qui ont été définies dans l’étendue actuelle (y compris les définitions anticipées).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Instruction étiquetée](../../javascript/reference/labeled-statement-javascript.md)   
- [Switch, instruction](../../javascript/reference/switch-statement-javascript.md)   
- [Break (instruction)](../../javascript/reference/break-statement-javascript.md)   
- [continue (instruction)](../../javascript/reference/continue-statement-javascript.md)
+ [Instruction étiquetée](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/label)   
+ [Switch, instruction](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/switch)   
+ [Break (instruction)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/break)   
+ [continue (instruction)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/continue)

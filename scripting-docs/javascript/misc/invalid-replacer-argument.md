@@ -15,12 +15,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 452af60c37e4a56996438cc2957e9b69ccee98ef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6a77675a1cb618210d9c44104cf6397dda03c11
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816824"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862571"
 ---
 # <a name="invalid-replacer-argument"></a>Argument de remplacement incorrect
 Une tentative a été effectuée pour appeler `JSON.stringify` avec un argument qui n’est pas valide. L' `replacer` argument doit être une fonction ou un tableau.  
@@ -45,6 +45,6 @@ var jsontext = JSON.stringify(contact, memberfilter, "\t");
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Objet JSON](../../javascript/reference/json-object-javascript.md)   
- [JSON. Parse, fonction](../../javascript/reference/json-parse-function-javascript.md)   
- [Erreurs d’exécution JavaScript](../../javascript/reference/javascript-run-time-errors.md)
+ [Objet JSON](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/JSON)   
+ [JSON. Parse, fonction](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse)   
+ [Erreurs d’exécution JavaScript](/microsoft-edge/devtools-guide/console/error-and-status-codes#javascript-run-time-errors)

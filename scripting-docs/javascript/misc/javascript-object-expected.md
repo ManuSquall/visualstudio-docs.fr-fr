@@ -14,12 +14,12 @@ ms.assetid: cc7cc32b-e444-4afa-9be1-802c83fdf5ae
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d6151825391fb01a027f67cb66568eb6b2edfc44
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 754285b22f0da6f45d63f86f774d24279aeb7f22
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85816811"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862559"
 ---
 # <a name="javascript-object-expected"></a>Objet JavaScript attendu
 Vous avez tenté de passer un objet non- [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] à une fonction intégrée qui attend un [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] objet. Diverses fonctions intégrées requièrent des objets définis dans [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] (par opposition aux objets définis par l’hôte, ou un composant externe comme un contrôle).  
@@ -29,5 +29,5 @@ Vous avez tenté de passer un objet non- [!INCLUDE[javascript](../../javascript/
 - Assurez-vous que l’objet que vous passez en tant que paramètre est du type correct.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Objets et tableaux](../../javascript/objects-and-arrays-javascript.md)   
- [Utilisation de tableaux](../../javascript/advanced/using-arrays-javascript.md)
+ [Objets et tableaux](https://developer.mozilla.org/docs/Learn/JavaScript/Objects)   
+ [Utilisation de tableaux](https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/Arrays)

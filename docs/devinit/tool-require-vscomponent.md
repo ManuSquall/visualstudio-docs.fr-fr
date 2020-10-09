@@ -11,18 +11,18 @@ ms.workload:
 monikerRange: '>= vs-2019'
 ms.prod: visual-studio-windows
 ms.technology: devinit
-ms.openlocfilehash: 7c47c219fa0c0ef32946d6e0500bc37ce9aec0ff
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: e88f1b58308d0c81d17f9337f0a1a1d5e253c6ba
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005036"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862826"
 ---
 # <a name="require-vscomponent"></a>require-vscomponent
 
-L' `require-vscomponent` outil est utilisé pour importer des configurations Visual Studio dans Visual Studio existant. En savoir plus à `.vsconfig` [ce](https://docs.microsoft.com/visualstudio/install/import-export-installation-configurations)sujet.
+L' `require-vscomponent` outil est utilisé pour importer des configurations Visual Studio dans Visual Studio existant. En savoir plus à `.vsconfig` [ce](../install/import-export-installation-configurations.md)sujet.
 
-## <a name="usage"></a>Usage
+## <a name="usage"></a>Utilisation
 
 Si les `input` Propriétés et `additionalOptions` sont omises ou vides, l’outil suivra le comportement [par défaut](#default-behavior) détaillé ci-dessous.
 

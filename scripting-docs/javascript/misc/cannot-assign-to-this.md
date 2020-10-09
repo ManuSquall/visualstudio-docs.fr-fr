@@ -14,12 +14,12 @@ ms.assetid: ba2b0a2b-f0f8-4698-b335-a4ab6c166671
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f5c52153da64ff477d89b09d4af17169da18e4e1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8985c7201a8e315353dd89ab5e1f5a3ad3b403ea
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85817318"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862774"
 ---
 # <a name="cannot-assign-to-this"></a>Impossible d'affecter à 'this'
 Vous avez tenté d’assigner une valeur à **ce**. **il** s’agit d’un [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] mot clé qui fait référence à :
@@ -41,5 +41,5 @@ Une méthode est une [!INCLUDE[javascript](../../javascript/includes/javascript-
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Cette instruction](../../javascript/reference/this-statement-javascript.md)
-- [Résolution des problèmes liés aux scripts](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)
+- [Cette instruction](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/this)
+- [Résolution des problèmes liés aux scripts](https://developer.mozilla.org/docs/Learn/JavaScript/First_steps/What_went_wrong)

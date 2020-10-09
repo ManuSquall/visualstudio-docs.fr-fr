@@ -14,12 +14,12 @@ ms.assetid: 5083809e-9828-4aea-b9b0-80f46d6f3812
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f59fd95b77ec6a3cd2486ff954002daeb0364321
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7555aa3413b2c3e5b384f92a0f2c295548d8930a
+ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85815316"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91862707"
 ---
 # <a name="unterminated-string-constant-javascript"></a>Constante de chaîne inachevée (JavaScript)
 Vous n’avez pas terminé la constante de chaîne avec un guillemet fermant. Les constantes de chaîne doivent être placées entre deux guillemets.  
@@ -32,5 +32,5 @@ Vous n’avez pas terminé la constante de chaîne avec un guillemet fermant. Le
 - Ajoutez le guillemet fermant à la fin de la chaîne.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Objet String](../../javascript/reference/string-object-javascript.md)   
- [Méthode toString (Object)](../../javascript/reference/tostring-method-object-javascript.md)
+ [Objet String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)   
+ [Méthode toString (Object)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/tostring)
