@@ -1,6 +1,6 @@
 - name: Python dans Visual Studio
   href: index.yml
-- name: Vue d’ensemble
+- name: Vue d'ensemble
   items:
     - name: Vue d’ensemble de la prise en charge de Python
       href: overview-of-python-tools-for-visual-studio.md
@@ -86,7 +86,7 @@
         - name: Modèle de service cloud Azure
           href: python-azure-cloud-service-project-template.md
     - name: Kit de développement logiciel (SDK) Azure pour Python
-      href: /python/azure/?view=azure-python
+      href: /python/azure/?view=azure-python&preserve-view=true
 - name: Guides pratiques
   items:
     - name: Gérer des environnements Python

@@ -7,12 +7,12 @@ author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 09/30/2020
 ms.faqid: q3_2
-ms.openlocfilehash: 8dc5e87e5299f735e8c7b21dab1bb7e3afdbc5a7
-ms.sourcegitcommit: ea3c985a23851b424127f2205f617446b6536578
+ms.openlocfilehash: 8c0bcb40d775be6184f420cdd79156645333d260
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "91640167"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91838351"
 ---
 ## <a name="how-do-i-use-my-benefits"></a>Comment utiliser mes avantages ?
 
@@ -20,7 +20,7 @@ ms.locfileid: "91640167"
 
 Pour chaque avantage disponible dans le portail des abonnés, nous proposons des articles qui comprennent des informations telles que les abonnements qui l’inclut, ainsi que les étapes permettant de l’activer.
 
-Consultez notre documentation pour [en savoir plus](https://docs.microsoft.com/visualstudio/subscriptions/whats-new-in-subscriptions) (cliquez sur « Abonnements » dans le volet de navigation de gauche, puis choisissez « Avantages »).
+Consultez notre documentation pour [en savoir plus](../../../../whats-new-in-subscriptions.md) (cliquez sur « Abonnements » dans le volet de navigation de gauche, puis choisissez « Avantages »).
 
 ## <a name="what-is-the-visual-studio-with-github-enterprise-setup-process"></a>Qu’est-ce que le processus de configuration Visual Studio avec GitHub Enterprise ? 
 
@@ -36,4 +36,4 @@ Quand une invitation est envoyée par votre administrateur d’organisation GitH
 
 Une fois que vous acceptez l’invitation de l’organisation GitHub, la vignette de l’avantage sur <https://my.visualstudio.com/benefits> passe de « En attente » à « Activé » et vous pouvez maintenant commencer à utiliser GitHub Enterprise. 
 
-[Découvrez en détail](https://docs.microsoft.com/visualstudio/subscriptions/access-github.md) le processus de configuration de GitHub Enterprise. 
+[Découvrez en détail](../../../../access-github.md) le processus de configuration de GitHub Enterprise. 

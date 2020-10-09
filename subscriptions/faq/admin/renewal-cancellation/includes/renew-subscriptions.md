@@ -7,12 +7,12 @@ ms.assetid: 754c7033-72db-49ea-b99b-cea892261834
 author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 3/3/2020
-ms.openlocfilehash: 2e0fb2462e392e2672ccf347103afe4a56b07abb
-ms.sourcegitcommit: cc58ca7ceae783b972ca25af69f17c9f92a29fc2
+ms.openlocfilehash: 3707dc584eb9aa7c200526efbe7815d19b4d1451
+ms.sourcegitcommit: c31815e140f2ec79e00a9a9a19900778ec11e860
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "81386138"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "91838222"
 ---
 ## <a name="how-do-i-renew-my-subscriptions"></a>Comment renouveler mes abonnements ?
 
@@ -22,6 +22,6 @@ Détail : pour les abonnements acquis par le biais du Microsoft Store, connecte
 
 Abonnements cloud : si vous utilisez des abonnements cloud, vous n’avez pas besoin de les renouveler. Ils sont renouvelés automatiquement jusqu’à ce que vous les annuliez.
 
-Découvrez-en plus sur l’[achat d’abonnements cloud](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-overview).
+Découvrez-en plus sur l’[achat d’abonnements cloud](../../../../vscloud-overview.md).
 
 Programme de licence en volume : pour renouveler les abonnements achetés par le biais du programme de licence en volume, contactez votre revendeur. [Trouvez un revendeur](https://www.microsoft.com/licensing/how-to-buy/how-to-buy) dans votre région.
