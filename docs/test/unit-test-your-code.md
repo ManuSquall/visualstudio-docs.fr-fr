@@ -1,5 +1,5 @@
 ---
-title: Tests unitaires
+title: Test unitaire
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: ffe383d2195feb6689954a8ec858b196bae8c06a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f7833d320ecbaefbd2290d0a65ec4b32f802e403
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75565992"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91927950"
 ---
 # <a name="unit-test-your-code"></a>Tests unitaires de votre code
 
@@ -47,8 +47,8 @@ Utilisez les articles suivants pour comprendre et créer des tests unitaires :
 |**Test unitaire de code C++**|- [Écrire des tests unitaires pour C/C++](../test/writing-unit-tests-for-c-cpp.md)|
 |**Isolation des tests unitaires**|- [Isoler le code testé avec les substituts Microsoft](../test/isolating-code-under-test-with-microsoft-fakes.md)|
 |**Utiliser la couverture du code pour identifier la proportion du code de votre projet qui est testée :** découvrez plus d’informations sur la fonctionnalité de couverture du code des outils de test de Visual Studio.|- [Utiliser la couverture du code pour déterminer la quantité de code testé](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
-|**Effectuer une analyse des performances et de la contrainte à l’aide de tests de charge :** Découvrez comment créer des tests de charge pour isoler les problèmes de performances et de stress dans votre application.|- [Démarrage rapide : créer un projet de test de charge](../test/quickstart-create-a-load-test-project.md)<br />- [Tests de charge (Azure Test Plans et TFS)](/azure/devops/test/load-test/index?view=vsts)|
-|**Définir les portes de qualité :** Apprenez à créer des portes de qualité pour imposer que les tests soient exécutés avant que le code ne soit archivé ou fusionné.|- [Stratégies d’archivage (Azure Repos TFVC)](/azure/devops/repos/tfvc/add-check-policies?view=vsts)|
+|**Effectuer une analyse des performances et de la contrainte à l’aide de tests de charge :** Découvrez comment créer des tests de charge pour isoler les problèmes de performances et de stress dans votre application.|- [Démarrage rapide : créer un projet de test de charge](../test/quickstart-create-a-load-test-project.md)<br />- [Tests de charge (Azure Test Plans et TFS)](/azure/devops/test/load-test/index?view=vsts&preserve-view=true)|
+|**Définir les portes de qualité :** Apprenez à créer des portes de qualité pour imposer que les tests soient exécutés avant que le code ne soit archivé ou fusionné.|- [Stratégies d’archivage (Azure Repos TFVC)](/azure/devops/repos/tfvc/add-check-policies?view=vsts&preserve-view=true)|
 |**Définir les options de test :** Découvrez comment configurer les options de test, par exemple, l’emplacement de stockage des résultats des tests.|[Configurer des tests unitaires à l'aide d'un fichier .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
 
 ## <a name="api-reference-documentation"></a>Documentation de référence de l’API

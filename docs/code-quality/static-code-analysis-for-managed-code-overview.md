@@ -10,12 +10,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 18c4ebf61e7136d908ad1e444616b0af7ac59a48
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b6ab8171d2317549beabe2d8e552eeeefccd02cf
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88238372"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91927989"
 ---
 # <a name="overview-of-legacy-analysis-for-managed-code-in-visual-studio"></a>Vue d’ensemble de l’analyse héritée du code managé dans Visual Studio
 
@@ -84,7 +84,7 @@ Vous pouvez l'effectuer en spécifiant des stratégies d'archivage. Pour plus d�
 
 ## <a name="team-build-integration"></a>Intégration Team Build
 
-Vous pouvez utiliser les fonctionnalités intégrées du système de génération pour exécuter l'outil d'analyse dans le cadre du processus de génération. Pour plus d’informations, consultez [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
+Vous pouvez utiliser les fonctionnalités intégrées du système de génération pour exécuter l'outil d'analyse dans le cadre du processus de génération. Pour plus d’informations, consultez [Azure Pipelines](/azure/devops/pipelines/index?view=vsts&preserve-view=true).
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -9,12 +9,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: be42bf1498746ce57f662f43c12ece80ac6ca9be
-ms.sourcegitcommit: 5caad925ca0b5d136416144a279e984836d8f28c
+ms.openlocfilehash: 7b4c4dfdb8e603d7dda2ebd55c4382e57414de25
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2020
-ms.locfileid: "89509040"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928028"
 ---
 # <a name="devops-with-unity-apps"></a>DevOps avec les applications Unity
 
@@ -26,7 +26,7 @@ Les tableaux suivants identifient la façon dont les fonctionnalités DevOps de 
 
 ## <a name="agile-tools"></a>Outils agiles
 
-Lien de référence : [À propos des outils agiles et de la gestion de projet agile](/azure/devops/boards/backlogs/backlogs-overview?view=vsts) (avec Azure Boards ou TFS, notamment Team Explorer Everywhere)
+Lien de référence : [À propos des outils agiles et de la gestion de projet agile](/azure/devops/boards/backlogs/backlogs-overview?view=vsts&preserve-view=true) (avec Azure Boards ou TFS, notamment Team Explorer Everywhere)
 
 Commentaire général : toutes les fonctionnalités de planification et de suivi sont indépendantes du type de projet et des langages de codage.
 
@@ -59,8 +59,8 @@ Commentaire général : bien que ces fonctionnalités de conception soient ind�
 
 |Fonctionnalité|Prise en charge avec Unity|Commentaires supplémentaires|
 |-------------|--------------------------|-------------------------|
-|[Utiliser Team Foundation Version Control (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts) ou Azure Repos|Oui|Les projets Unity se résument à une collection de fichiers qui peuvent être placés dans des systèmes de gestion de version comme n’importe quel autre projet. Toutefois, vous devez prendre en compte certaines considérations particulières décrites après le tableau ci-dessous.|
-|[Bien démarrer avec Git dans Azure Repos](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio)|Oui|Consultez les remarques après le tableau.|
+|[Utiliser Team Foundation Version Control (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts&preserve-view=true) ou Azure Repos|Oui|Les projets Unity se résument à une collection de fichiers qui peuvent être placés dans des systèmes de gestion de version comme n’importe quel autre projet. Toutefois, vous devez prendre en compte certaines considérations particulières décrites après le tableau ci-dessous.|
+|[Bien démarrer avec Git dans Azure Repos](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio&preserve-view=true)|Oui|Consultez les remarques après le tableau.|
 |[Améliorer la qualité du code](../test/improve-code-quality.md)|Oui||
 |[Rechercher les modifications de code et autres historiques](../ide/find-code-changes-and-other-history-with-codelens.md)|Oui||
 |[Utiliser des cartes du code pour déboguer vos applications](../modeling/use-code-maps-to-debug-your-applications.md)|Oui||
@@ -75,12 +75,12 @@ Considérations particulières sur la gestion de version avec Unity :
 
 ## <a name="build"></a>Build
 
-Lien de référence : **[Azure Pipelines](/azure/devops/pipelines/index?view=vsts)**
+Lien de référence : **[Azure Pipelines](/azure/devops/pipelines/index?view=vsts&preserve-view=true)**
 
 |Fonctionnalité|Prise en charge avec Unity|Commentaires supplémentaires|
 |-------------|--------------------------|-------------------------|
 |Version locale de Team Foundation Server (TFS)|Possible|Les projets Unity sont créés via l'environnement Unity et non via le système de génération de Visual Studio (la génération dans Visual Studio Tools pour Unity entraîne la compilation des scripts, mais ne produit pas de fichier exécutable). Comme il est possible de [générer des projets Unity à partir de la ligne de commande](https://docs.unity3d.com/Manual/CommandLineArguments.html) (documentation Unity), il est possible de configurer un processus MSBuild sur un serveur TFS pour exécuter les commandes Unity appropriées, à condition que Unity lui-même soit installé sur cet ordinateur.<br /><br /> Unity propose également [Unity Cloud Build](https://build.cloud.unity3d.com/landing/), qui surveille un dépôt Git ou SVN, et exécute des builds périodiques. Pour l’instant, il ne fonctionne pas avec TFVC ou Azure DevOps Services.|
-|Serveur de builds local lié à Azure DevOps Services|Possible|Dans les mêmes conditions que ci-dessus, il est également possible de diriger des builds déclenchées via Azure DevOps Services pour utiliser un ordinateur TFS local. Pour obtenir des instructions, consultez [agents de build et de mise en version](/azure/devops/pipelines/agents/agents?view=vsts) .|
+|Serveur de builds local lié à Azure DevOps Services|Possible|Dans les mêmes conditions que ci-dessus, il est également possible de diriger des builds déclenchées via Azure DevOps Services pour utiliser un ordinateur TFS local. Pour obtenir des instructions, consultez [agents de build et de mise en version](/azure/devops/pipelines/agents/agents?view=vsts&preserve-view=true) .|
 |Service de contrôleur hébergé d’Azure DevOps Services|Non|Les builds Unity ne sont pas prises en charge.|
 |Définitions de builds avec des pré-scripts et des post-scripts|Oui|Une définition de build personnalisée qui utilise la ligne de commande Unity pour exécuter une build peut également être configurée pour des scripts de pré- ou post-compilation.|
 |Intégration continue, y compris les archivages contrôlés|Oui|Archivages contrôlés pour TFVC uniquement si Git utilise un modèle de requête d'extraction plutôt que des archivages.|
@@ -110,7 +110,7 @@ Lien de référence : ** [améliorer la qualité du code](../test/improve-code-
 
 ## <a name="release-management"></a>Gestion des mises en production
 
-Lien de référence : [Générer et mettre en production dans Azure Pipelines et TFS](/azure/devops/pipelines/overview?view=vsts)
+Lien de référence : [Générer et mettre en production dans Azure Pipelines et TFS](/azure/devops/pipelines/overview?view=vsts&preserve-view=true)
 
 |Fonctionnalité|Prise en charge avec Unity|Commentaires supplémentaires|
 |-------------|--------------------------|-------------------------|

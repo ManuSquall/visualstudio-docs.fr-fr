@@ -11,12 +11,12 @@ ms.assetid: 02b6716f-569e-4961-938a-e790a0c74b5c
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d0983967d42c6daa89b9a690b93fb97872e98603
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9da0000397042355387d21501c64c29806ddeaaa
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85288254"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928513"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Guide pratique pour collecter des données IntelliTrace pour aider au débogage des problèmes difficiles
 
@@ -83,7 +83,7 @@ Avant d’effectuer les étapes de cette procédure, vous devez ouvrir les param
 
 5. Choisissez l’onglet **général** . Sélectionnez **événements IntelliTrace uniquement** pour enregistrer des événements de diagnostic significatifs qui ont un impact minimal sur les performances lorsque vous testez.
 
-     -ou-
+     - ou -
 
      Sélectionnez **Événements IntelliTrace et informations d’appels** pour enregistrer des événements de diagnostic et le traçage au niveau de la méthode affichant des informations sur les appels. Ce niveau de traçage peut avoir un impact sur les performances lorsque vous exécutez vos tests.
 
@@ -91,7 +91,7 @@ Avant d’effectuer les étapes de cette procédure, vous devez ouvrir les param
 
 7. Choisissez l’onglet **modules** . Sélectionnez **collecter les données de tous les modules à l’exception des suivants** et utilisez **Ajouter** pour ajouter à la liste des modules et **supprimer** pour supprimer un module. Cette option vous permet d'inclure tous les modules en cours d'exécution sur le système, à l'exception des modules que vous spécifiez.
 
-     -ou-
+     - ou -
 
      Sélectionnez **Collecter les données des modules suivants uniquement**, et utilisez **Ajouter** pour ajouter un module à la liste et **Supprimer** pour supprimer un module. Cette option vous permet de spécifier quels modules doivent être utilisés.
 
@@ -100,7 +100,7 @@ Avant d’effectuer les étapes de cette procédure, vous devez ouvrir les param
 
 8. Choisissez l’onglet **processus** . Sélectionnez **collecter les données de tous les processus à l’exception des éléments suivants** et utilisez **Ajouter** pour ajouter à la liste des processus et **supprimer** pour supprimer un processus. Cette option vous permet d'inclure tous les processus qui s'exécutent sur le système, à l'exception des processus que vous spécifiez.
 
-     -ou-
+     - ou -
 
      Sélectionnez **Collecter les données des processus spécifiés uniquement**, et utilisez **Ajouter** pour ajouter un processus à la liste et **Supprimer** pour supprimer un processus. Cette option vous permet de spécifier quels processus doivent être utilisés.
 
@@ -126,7 +126,7 @@ Avant d’effectuer les étapes de cette procédure, vous devez ouvrir les param
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Collecter les données de diagnostic pendant les tests (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts)
-- [Collecter les données de diagnostic dans des tests manuels (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
+- [Collecter les données de diagnostic pendant les tests (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts&preserve-view=true)
+- [Collecter les données de diagnostic dans des tests manuels (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts&preserve-view=true)
 - [Collecter des informations de diagnostic avec des paramètres de test](../test/collect-diagnostic-information-using-test-settings.md)
 - [Collecter les données IntelliTrace](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)

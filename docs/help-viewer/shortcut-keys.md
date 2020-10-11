@@ -1,5 +1,6 @@
 ---
 title: Touches de raccourci (Help Viewer)
+description: Consultez la liste des touches de raccourci dans Microsoft Help Viewer. Utilisez les touches de raccourci pour la navigation, la gestion des fenêtres et la gestion de contenu.
 ms.date: 11/02/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f7c49eadcfa0b73997f9902bdde0b8a9c98065e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 264917d515e25823f8d6c2cb522e85dcc9c47d84
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85533730"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91878954"
 ---
 # <a name="shortcut-keys-in-help-viewer"></a>Touches de raccourci dans Help Viewer
 
@@ -47,7 +48,7 @@ Vous pouvez naviguer dans la **visionneuse d’aide Microsoft** à l’aide des 
 |Rubrique|**Flèche bas**|Faire défiler vers la fin du document, une ligne à la fois.|
 |Rubrique|**Page précédente**|Faire défiler vers le début du document, écran par écran.|
 |Rubrique|**Page suivante**|Faire défiler vers la fin du document, écran par écran.|
-|Rubrique|**Page d'accueil**|Accéder au début du document.|
+|Rubrique|**Accueil**|Accéder au début du document.|
 |Rubrique|**Effet**|Accéder à la fin du document.|
 |Rubrique|**CTRL** + **F**|Rechercher le texte de recherche dans cette page.|
 |Rubrique|**F5**|Actualiser la page active.|

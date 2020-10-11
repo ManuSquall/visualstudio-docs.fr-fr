@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c374951b4d4875e4e754035ac52afb7f8fc5a2e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2b75ae05a65ae15e82c45ec0cf43935fb0809160
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286893"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928604"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Installer des agents de test et des contrôleurs de test
 
@@ -83,7 +83,7 @@ Le tableau suivant présente les scénarios pris en charge par les Agents pour V
 
 | Scénarios pris en charge par les Agents pour Visual Studio 2013 | Alternative dans TFS et Azure Test Plans |
 | - | - |
-| Flux de travail Générer-Déployer-Tester dans Visual Studio | Les utilisateurs peuvent employer un [pipeline de build](/azure/devops/pipelines/index?view=vsts) (pas une build XAML) pour générer, déployer et tester des scénarios dans TFS. |
+| Flux de travail Générer-Déployer-Tester dans Visual Studio | Les utilisateurs peuvent employer un [pipeline de build](/azure/devops/pipelines/index?view=vsts&preserve-view=true) (pas une build XAML) pour générer, déployer et tester des scénarios dans TFS. |
 | Test de charge (test des performances) avec des ordinateurs distants locaux | Utilisez le contrôleur de test et les agents des test de la version 2013 Update 5 pour exécuter les tests de charge localement. |
 | Exécution à distance de tests automatisés à partir de Microsoft Test Manager (déconseillés dans Visual Studio 2017) à l’aide d’un environnement Lab | Actuellement, il n’existe pas d’alternative à ce scénario. Nous vous recommandons d’utiliser la tâche Exécuter les tests fonctionnels dans les définitions de build et de mise en production (pas dans une build XAML) pour exécuter les tests à distance. |
 | Développeurs exécutant les tests à distance dans Visual Studio | N'est plus pris en charge. |

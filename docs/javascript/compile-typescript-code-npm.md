@@ -10,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 7d70f1e95ce2dd5163eb017684620c403a77f74a
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: bfd019848e62abf4e6f25913d29d26d1a1bde6a5
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90740030"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91927898"
 ---
 # <a name="compile-typescript-code-nodejs"></a>Compiler le code de la machine à écrire (Node.js)
 
@@ -112,6 +112,10 @@ Le [package NPM de machine à écrire](https://www.npmjs.com/package/typescript)
    Si vous avez généré des mappages de sources, ouvrez le dossier spécifié dans l’option *outDir* et vous trouvez le ou les \* fichiers. js générés avec le \* ou les fichiers js. map générés.
 
    Les fichiers de mappage source sont requis pour le [débogage](../javascript/debug-nodejs.md).
+
+### <a name="run-the-application"></a>Exécution de l'application
+
+Pour obtenir des instructions sur l’exécution de l’application après sa compilation, consultez [créer votre première Node.js application](/visualstudio/ide/quickstart-nodejs?toc=%2Fvisualstudio%2Fjavascript%2Ftoc.json#run-the-application).
 
 ## <a name="automate-build-tasks"></a>Automatiser les tâches de génération
 

@@ -1,5 +1,6 @@
 ---
 title: Rechercher des rubriques (Help Viewer)
+description: Découvrez comment rechercher des rubriques dans la Microsoft Help Viewer. Personnaliser les recherches à l’aide d’expressions génériques, d’opérateurs logiques et d’opérateurs de recherche avancés.
 ms.date: 11/02/2017
 ms.topic: how-to
 ms.assetid: 683f1b0c-1551-4bba-91fe-3855f03fdd69
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4581d7ea0b40e2b6b519f0beafaee8744e0b46c1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 46eb9c21b5bc6f7d0a577b85d043933b48bf60bc
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284917"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91878993"
 ---
 # <a name="how-to-search-for-topics"></a>Guide pratique pour rechercher des rubriques
 

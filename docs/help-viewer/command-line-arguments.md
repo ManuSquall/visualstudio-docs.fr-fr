@@ -1,5 +1,6 @@
 ---
 title: Arguments de ligne de commande pour Help Content Manager
+description: Utilisez les arguments de ligne de commande pour Help Content Manager (HlpCtntMgr.exe) pour spécifier comment déployer et gérer le contenu d’aide local.
 ms.date: 11/01/2017
 ms.topic: reference
 ms.assetid: 3aa9890a-1147-42ba-adea-17935d184038
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9bead01c6440d5232a91a5e8fe2007b3e30340c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 24011c50cf6f8d2204abdaa8b6119f7873470bcf
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "72631978"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91879045"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Arguments de ligne de commande pour Help Content Manager
 
@@ -46,7 +47,7 @@ hlpctntmgr.exe /operation install /catalogname VisualStudio15 /locale en-us /sou
 
 Le tableau suivant définit les commutateurs et les arguments que vous pouvez utiliser pour l’outil en ligne de commande pour Help Content Manager :
 
-|Commutateur|Requis ?|Arguments|
+|Commutateur|Nécessaire ?|Arguments|
 |------------|---------------|---------------|
 |/operation|Oui|-   **Install** : ajoute des livres de la source d’installation spécifiée dans le magasin de contenu local.<br />     Ce commutateur requiert l’argument /booklist, l’argument /sourceURI, ou les deux. Si vous ne spécifiez pas l’argument /sourceURI, l’URI de Visual Studio par défaut est utilisé comme source d’installation. Si vous ne spécifiez pas l’argument /booklist, tous les livres sur /sourceUri sont installés.<br />-   **Uninstall** : supprime les livres que vous spécifiez dans le magasin de contenu local.<br />     Ce commutateur requiert l’argument /booklist ou l’argument /sourceURI.  Si vous spécifiez l’argument /sourceURI, tous les livres sont supprimés, et l’argument /booklist est ignoré.<br />-   **Move** : déplace le magasin local vers le chemin que vous spécifiez. Le chemin d’accès au magasin local par défaut est défini comme répertoire sous *% ProgramData%*<br />     Ce commutateur requiert les arguments /locationPath et /catalogName. Les messages d’erreur sont collectés dans le journal des événements si vous spécifiez un chemin non valide ou si le lecteur ne contient pas suffisamment d’espace libre pour accueillir le contenu.<br />-   **Refresh** : met à jour les rubriques qui ont été modifiées depuis leur installation ou récemment mises à jour.<br />     Ce commutateur requiert l’argument /sourceURI.|
 |/catalogName|Oui|Spécifie le nom du catalogue de contenu. Pour Visual Studio 2017 et Visual Studio 2019, il s’agit de VisualStudio15.|

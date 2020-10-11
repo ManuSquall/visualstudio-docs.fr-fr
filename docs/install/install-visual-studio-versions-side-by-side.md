@@ -1,5 +1,7 @@
 ---
 title: Installer des versions de Visual Studio côte à côte
+description: Découvrez comment installer Visual Studio sur un ordinateur sur lequel une version antérieure ou ultérieure de Visual Studio est déjà installée.
+ms.custom: SEO-VS-2020
 ms.date: 07/24/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
@@ -11,12 +13,12 @@ helpviewer_keywords:
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.openlocfilehash: 1a57d124029f5c654d41dcea621d6df95e29842f
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: ff62f07f3b1c5cc72488320b05d6ff9649fb5795
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211311"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928630"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Installer des versions de Visual Studio côte à côte
 
@@ -48,11 +50,11 @@ Avant d’installer plusieurs versions sur la même machine, vérifiez que les c
 
 ## <a name="install-minor-visual-studio-versions-side-by-side"></a>Installer côte à côte des versions mineures de Visual Studio
 
-Lors de la mise à niveau d’une version mineure de Visual Studio vers la suivante, le programme d’installation de Visual Studio met à jour votre installation actuelle vers la version suivante de ce canal par défaut. Par exemple, lors de l’installation de la version préliminaire de 16.6.4, le programme d’installation tente de remplacer votre installation actuelle de 16.6.3 Preview, car les deux versions se trouvent dans le canal 16,6 Preview. Cela permet de s’assurer que les versions antérieures de Visual Studio n’occupent pas de place sur votre ordinateur. Dans certains cas spécifiques, il peut être utile d’installer les versions mineures côte à côte. Dans notre exemple, cela signifie que 16.6.3 et 16.6.4 se trouvent tous deux sur le même ordinateur.
+Lors de la mise à niveau d’une version mineure de Visual Studio vers la suivante, le programme d’installation de Visual Studio met à jour votre installation actuelle vers la version suivante de ce canal par défaut. Par exemple, lors de l’installation de la version préliminaire de 16.6.4, le programme d’installation tente de remplacer votre installation actuelle de 16.6.3 Preview, car les deux versions se trouvent dans le canal 16,6 Preview. Cela permet de s’assurer que les anciennes versions de Visual Studio n’occupent pas de place sur votre machine. Dans certains cas spécifiques, il peut être utile d’installer les versions mineures côte à côte. Dans notre exemple, cela signifie que 16.6.3 et 16.6.4 se trouvent tous deux sur le même ordinateur.
 
 1. Téléchargez le [fichier du programme d’amorçage de Visual Studio](/visualstudio/releases/2019/history#installing-an-earlier-release) pour la version mineure que vous souhaitez installer côte à côte avec vos versions existantes de Visual Studio.
 2. Ouvrez l’invite de commandes en mode administrateur. Pour ce faire, ouvrez le menu Démarrer de Windows, tapez « cmd », cliquez avec le bouton droit sur le résultat de la recherche de l’invite de commandes, puis sélectionnez **exécuter en tant qu’administrateur**. Dans l’invite de commandes, remplacez le répertoire par le dossier où se trouve votre fichier de programme d’amorçage de Visual Studio.
-3. Exécutez la commande ci-dessous, en spécifiant un nouveau chemin d’accès au dossier pour l’emplacement d’installation et en remplaçant le nom du fichier. exe par le nom du programme d’amorçage approprié pour la version de Visual Studio que vous installez. Le nom du fichier. exe doit correspondre à l’un des fichiers suivants :
+3. Exécutez la commande suivante, en spécifiant un nouveau chemin d’accès au dossier pour l’emplacement d’installation et en remplaçant le nom du fichier. exe par le nom du programme d’amorçage approprié pour la version de Visual Studio que vous installez. Le nom du fichier. exe doit correspondre à l’un des fichiers suivants :
    * vs_community.exe pour Visual Studio Community
    * vs_professional.exe pour Visual Studio Professional
    * vs_enterprise.exe pour Visual Studio Enterprise

@@ -1,5 +1,6 @@
 ---
 title: Accessibilité de la visionneuse d’aide
+description: Passez en revue la liste des fonctionnalités d’accessibilité dans le Microsoft Help Viewer, couvrant l’accès au clavier, la taille de la police, la taille de la fenêtre et la position de la visionneuse d’aide.
 ms.date: 11/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34a5a2f07d17c2ebd607bfe102cc7e3db92d014a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 359a1c4c87a139c35bf38d36edc6a53b2147dd98
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67825133"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91879071"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>Fonctionnalités d’accessibilité Help Viewer
 Microsoft s'attache à rendre ses produits et services conviviaux. Cette rubrique contient des informations sur les fonctionnalités, les produits et les services qui permettent d’accéder à Microsoft Help Viewer via un large éventail de possibilités.

@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 4c1cdbea77f8a14e8f4cedcd53b54e2eac65cf75
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 1a5958b03b9797882b3df37f4ba99c75ff832d22
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037222"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928106"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Utiliser un environnement lab pour votre DevOps
 
@@ -45,7 +45,7 @@ Voici quelques-unes des topologies d’environnements lab les plus courantes :
 
 ## <a name="use-the-cloud-with-azure-pipelines-or-team-foundation-server-build-and-release"></a>Utiliser le cloud avec les fonctionnalités Build et mise en production d’Azure Pipelines ou de Team Foundation Server
 
-Vous pouvez effectuer des tests automatisés et automatiser le cycle générer-déployer-tester en utilisant les fonctionnalités de [build et de mise en production](/azure/devops/pipelines/index?view=vsts) de Team Foundation Server (TFS) et d’Azure Test Plans. En voici quelques-uns des avantages :
+Vous pouvez effectuer des tests automatisés et automatiser le cycle générer-déployer-tester en utilisant les fonctionnalités de [build et de mise en production](/azure/devops/pipelines/index?view=vsts&preserve-view=true) de Team Foundation Server (TFS) et d’Azure Test Plans. En voici quelques-uns des avantages :
 
 * Vous n’avez pas besoin d’un contrôleur de build ni d’un contrôleur de test.
 * L’agent de test est installé via une tâche dans le cadre de la génération ou de la mise en production.
@@ -94,27 +94,27 @@ Visual Studio Lab Management permet de créer deux types d’environnements lab�
 > [!NOTE]
 > Lab Management ne prend pas en charge SCVMM 2016.
 
-Pour plus d’informations sur SCVMM, consultez [Virtual Machine Manager](/azure/devops/pipelines/?view=vsts).
+Pour plus d’informations sur SCVMM, consultez [Virtual Machine Manager](/azure/devops/pipelines/?view=vsts&preserve-view=true).
 
 Les environnements standard et SCVMM prennent en charge une grande partie de ces fonctionnalités. Il existe cependant des différences importantes. Le tableau ci-dessous permet de comparer les fonctionnalités qui sont disponibles pour les environnements standard et les environnements SCVMM.
 
 |Fonctionnalité|Environnement SCVMM|Environnements standard|
 |-|------------------------|-|
-|**Test**|||
+|Test|||
 |Exécuter des tests manuels|Prise en charge|Prise en charge|
 |Exécuter des tests codés de l'interface utilisateur et autres tests automatisés|Prise en charge|Prise en charge|
 |Signaler des bogues riches à l'aide des adaptateurs de diagnostics|Prise en charge|Prise en charge|
 |**Déploiement de build**|||
 |Flux de travail Création-Déploiement-Test automatisés|Prise en charge|Prise en charge|
 |**Création et gestion d’environnements**|||
-|Utiliser des ordinateurs physiques en plus des ordinateurs virtuels|Non pris en charge|Prise en charge|
-|Utiliser des ordinateurs virtuels tiers|Non pris en charge|Prise en charge|
+|Utiliser des ordinateurs physiques en plus des ordinateurs virtuels|Non prise en charge|Prise en charge|
+|Utiliser des ordinateurs virtuels tiers|Non prise en charge|Prise en charge|
 |Installer automatiquement des agents de test sur les ordinateurs d'un environnement lab|Prise en charge|Prise en charge|
-|Enregistrer et déployer l'état d'un environnement lab à l'aide d'instantanés d'environnement|Prise en charge|Non pris en charge|
-|Créer des environnements lab à partir de modèles d'ordinateurs virtuels|Prise en charge|Non pris en charge|
-|Démarrage, arrêt et prise d'instantané d'environnement|Prise en charge|Non pris en charge|
+|Enregistrer et déployer l'état d'un environnement lab à l'aide d'instantanés d'environnement|Prise en charge|Non prise en charge|
+|Créer des environnements lab à partir de modèles d'ordinateurs virtuels|Prise en charge|Non prise en charge|
+|Démarrage, arrêt et prise d'instantané d'environnement|Prise en charge|Non prise en charge|
 |Se connecter à l'environnement à l'aide de la visionneuse d'environnement|Prise en charge|Prise en charge|
-|Exécuter simultanément plusieurs copies d'un environnement grâce à l'isolement réseau|Prise en charge|Non pris en charge|
+|Exécuter simultanément plusieurs copies d'un environnement grâce à l'isolement réseau|Prise en charge|Non prise en charge|
 
 ### <a name="lab-management-concepts"></a>Terminologie Lab management
 

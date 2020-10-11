@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9859366f6e4b9a0d1c219adc2080e6415b1e44a7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98bdbecb12897602a70c590b9cee64b992193b7d
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "75588653"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928500"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Rechercher les modifications de code et d'autres historiques avec CodeLens
 
@@ -172,7 +172,7 @@ Comparez une modification entrante à votre version locale en appuyant sur **MAJ
 
 L’icône dans la colonne **Branche** vous indique comment la branche est liée à la branche dans laquelle vous travaillez.
 
-|**Située**|**La modification provient de :**|
+|**Icône**|**La modification provient de :**|
 |--------------| - |
 |![CodeLens - icône Changer à partir de la branche actuelle](../ide/media/codelensbranchcurrenticon.png)|La branche actuelle|
 |![CodeLens : icône Modification provenant de la branche parent](../ide/media/codelensbranchparenticon.png)|La branche parente|
@@ -217,7 +217,7 @@ Vous pouvez découvrir les tests unitaires qui existent pour votre code C# ou Vi
 
 1. Accédez au code d’application auquel des [tests unitaires](../test/unit-test-your-code.md) sont associés.
 
-2. Si ce n’est déjà fait, générez votre application pour charger les indicateurs de test CodeLens. 
+2. Si ce n’est déjà fait, générez votre application pour charger les indicateurs de test CodeLens.
 
 3. Passez en revue les tests pour le code en appuyant sur **ALT** + **3**.
 
@@ -268,7 +268,7 @@ Activez et désactivez les indicateurs de niveau fichier CodeLens à l'aide des 
 
 - Si votre code est stocké dans TFS, assurez-vous que l'indexation de code est activée en utilisant la [commande CodeIndex](../ide/codeindex-command.md) avec la [commande TFS Config](/azure/devops/server/command-line/tfsconfig-cmd).
 
-- Les indicateurs liés à DevOps s’affichent seulement si des éléments de travail sont liés au code et si vous êtes autorisé à ouvrir les éléments de travail liés. Vérifiez que vous disposez des [autorisations de membre](/azure/devops/organizations/security/view-permissions?view=vsts)de l’équipe.
+- Les indicateurs liés à DevOps s’affichent seulement si des éléments de travail sont liés au code et si vous êtes autorisé à ouvrir les éléments de travail liés. Vérifiez que vous disposez des [autorisations de membre](/azure/devops/organizations/security/view-permissions?view=vsts&preserve-view=true)de l’équipe.
 
 - Les indicateurs de test unitaire ne s'affichent pas quand le code de l'application ne contient pas de tests unitaires. Les indicateurs d'état de test s'affichent automatiquement dans les projets de test. Si vous savez que votre code d’application a des tests unitaires, mais que les indicateurs de test ne s’affichent pas, essayez de générer la solution (**CTRL** + **Shift** + **B**).
 

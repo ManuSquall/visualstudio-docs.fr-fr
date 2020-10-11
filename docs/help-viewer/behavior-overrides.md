@@ -1,5 +1,6 @@
 ---
 title: Remplacements dans Help Content Manager
+description: En savoir plus sur les remplacements de Help Content Manager, qui modifient le comportement par défaut de la visionneuse d’aide et des fonctionnalités liées à l’aide dans l’IDE de Visual Studio.
 ms.date: 11/01/2017
 ms.topic: conceptual
 ms.assetid: 95fe6396-276b-4ee5-b03d-faacec42765f
@@ -8,12 +9,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c03d631be1bc4a38e514e1019fa230775427a53
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 60f4e46d8c43c90759c964dbf01145d876a9f413
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "67825091"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91879058"
 ---
 # <a name="help-content-manager-overrides"></a>Remplacements dans Help Content Manager
 

@@ -1,5 +1,6 @@
 ---
 title: Utiliser la table des matières de la visionneuse d’aide
+description: Utilisez Microsoft Help Viewer pour rechercher des rubriques dans la table des matières (TOC). La table des matières est une liste extensible qui contient toutes les rubriques des livres installés.
 ms.date: 11/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9bd332b5767dbfffcfbaa44637e0cc92051f7b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a678b669ca0f389a79438185ffce605143ec71d0
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284930"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91879006"
 ---
 # Guide pratique pour rechercher des rubriques dans la table des matières
 

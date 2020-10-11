@@ -1,5 +1,6 @@
 ---
 title: Personnaliser la Visionneuse d'aide
+description: Découvrez comment personnaliser la visionneuse d’aide. Configurez la disposition, la taille de police, le nombre maximal de résultats et indiquez si vous souhaitez inclure du contenu en anglais.
 ms.date: 11/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -13,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d1f4de5e5ace63f748c6a75d45d8311ea3eb71b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 402aa5deaae6b082c8360b9867807516f11d935d
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284970"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91879032"
 ---
 # <a name="customize-the-help-viewer"></a>Personnaliser Help Viewer
 Vous pouvez personnaliser la disposition des fenêtres Help Viewer, ainsi que d’autres options telles que la taille de la police, le nombre maximal de résultats et l’affichage ou non du contenu en anglais.

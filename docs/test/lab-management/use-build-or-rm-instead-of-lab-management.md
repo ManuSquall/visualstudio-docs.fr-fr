@@ -9,16 +9,16 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 37455c05a010681eac343287abf25aad642328c7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 052e2c794ba765573923fba89413e0192c582c15
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85286841"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928591"
 ---
 # <a name="use-azure-test-plans-instead-of-lab-management-for-automated-testing"></a>Utiliser Azure Test Plans au lieu de Lab Management pour les tests automatisés
 
-Si vous utilisez Microsoft Test Manager et Lab Management pour les tests automatisés ou pour l’automatisation du cycle générer-déployer-tester, cette rubrique vous explique comment atteindre les mêmes objectifs en utilisant les fonctionnalités de [build et de mise en production](/azure/devops/pipelines/index?view=vsts) d’Azure Pipelines et Team Foundation Server (TFS).
+Si vous utilisez Microsoft Test Manager et Lab Management pour les tests automatisés ou pour l’automatisation du cycle générer-déployer-tester, cette rubrique vous explique comment atteindre les mêmes objectifs en utilisant les fonctionnalités de [build et de mise en production](/azure/devops/pipelines/index?view=vsts&preserve-view=true) d’Azure Pipelines et Team Foundation Server (TFS).
 
 > [!NOTE]
 > Microsoft Test Manager est déconseillé dans Visual Studio 2017 et supprimé dans Visual Studio 2019.
@@ -31,7 +31,7 @@ Microsoft Test Manager et Lab Management se basent sur une définition de build 
 |-------|----------------------|-----------------|
 | Identifiez les machines sur lesquelles déployer la build et exécutez les tests. | Créez un environnement lab standard dans Microsoft Test Manager avec ces machines. | n/a |
 | Identifiez les tests à exécuter. | Créez une suite de tests dans Microsoft Test Manager, créez des cas de test et associez une automatisation à chaque cas de test. Créez des paramètres de test dans Microsoft Test Manager en identifiant le rôle des machines dans l’environnement lab dans lequel les tests doivent être exécutés. | Créez de la même façon une suite de tests automatisés dans Microsoft Test Manager si vous prévoyez de gérer vos tests via des plans de test. Vous pouvez aussi ignorer cette étape si vous voulez exécuter des tests directement à partir des fichiers binaires de test produits par vos générations. Il n’est pas nécessaire de créer des paramètres de test dans les deux cas. |
-| Automatisez le déploiement et les tests. | Créez une définition de build XAML en utilisant LabDefaultTemplate.*.xaml. Spécifiez la build, les suites de tests et l’environnement lab dans la définition de build. | Créez un [pipeline de build ou de mise en production](/azure/devops/pipelines/index?view=vsts) avec un seul environnement. Exécutez le même script de déploiement (à partir de la définition de build XAML) en utilisant la tâche de ligne de commande, et exécutez les tests automatisés en utilisant les tâches Déploiement de l’agent de test et Exécuter les tests fonctionnels. Spécifiez la liste des machines et leurs informations d’identification comme entrées pour ces tâches. |
+| Automatisez le déploiement et les tests. | Créez une définition de build XAML en utilisant LabDefaultTemplate.*.xaml. Spécifiez la build, les suites de tests et l’environnement lab dans la définition de build. | Créez un [pipeline de build ou de mise en production](/azure/devops/pipelines/index?view=vsts&preserve-view=true) avec un seul environnement. Exécutez le même script de déploiement (à partir de la définition de build XAML) en utilisant la tâche de ligne de commande, et exécutez les tests automatisés en utilisant les tâches Déploiement de l’agent de test et Exécuter les tests fonctionnels. Spécifiez la liste des machines et leurs informations d’identification comme entrées pour ces tâches. |
 
 L’utilisation d’Azure Pipelines ou de TFS dans ce scénario offre les avantages suivants :
 
@@ -46,7 +46,7 @@ L’utilisation d’Azure Pipelines ou de TFS dans ce scénario offre les avanta
 
 ## <a name="self-service-management-of-scvmm-environments"></a>Gestion des environnements SCVMM en libre-service
 
-Le [Centre de tests de Microsoft Test Manager](/azure/devops/test/mtm/guidance-mtm-usage?view=vsts) prend en charge la gestion d’une bibliothèque de modèles d’environnements, ainsi que le provisionnement d’environnements à la demande à l’aide d’un [serveur SCVMM](/system-center/vmm/overview?view=sc-vmm-1801).
+Le [Centre de tests de Microsoft Test Manager](/azure/devops/test/mtm/guidance-mtm-usage?view=vsts&preserve-view=true) prend en charge la gestion d’une bibliothèque de modèles d’environnements, ainsi que le provisionnement d’environnements à la demande à l’aide d’un [serveur SCVMM](/system-center/vmm/overview?view=sc-vmm-1801&preserve-view=true).
 
 Les fonctionnalités d’approvisionnement en libre-service du Centre lab ont deux objectifs distincts :
 
@@ -76,4 +76,4 @@ Cependant, vous pouvez utiliser Azure Pipelines et TFS, conjointement avec la t�
 * Démarrer et arrêter des machines virtuelles
 * Exécuter des scripts PowerShell personnalisés pour SCVMM
 
-Pour plus d’informations, consultez [Créer un environnement isolé du réseau virtuel pour les scénarios de génération-déploiement-test](/azure/devops/pipelines/targets/create-virtual-network?view=vsts).
+Pour plus d’informations, consultez [Créer un environnement isolé du réseau virtuel pour les scénarios de génération-déploiement-test](/azure/devops/pipelines/targets/create-virtual-network?view=vsts&preserve-view=true).

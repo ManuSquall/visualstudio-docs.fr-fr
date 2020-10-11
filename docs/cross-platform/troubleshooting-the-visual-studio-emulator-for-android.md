@@ -1,6 +1,7 @@
 ---
 title: Résolution des problèmes liés à l’émulateur Visual Studio pour Android | Microsoft Docs
-ms.custom: ''
+description: Découvrez des informations qui peuvent vous aider à résoudre les problèmes que vous pouvez rencontrer lorsque vous utilisez l’émulateur Visual Studio pour Android.
+ms.custom: SEO-VS-2020
 ms.prod: visual-studio-dev15
 ms.date: 11/04/2016
 ms.technology: vs-ide-mobile
@@ -12,12 +13,12 @@ manager: crdun
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: cfcae9ac15292a52a79c97b5b67e758b9dc0dcde
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 24af3c279115322b0592faa3b9fa6049bc0c0b62
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86386301"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91878915"
 ---
 # <a name="troubleshoot-the-visual-studio-emulator-for-android"></a>Résoudre les problèmes de l’émulateur Visual Studio pour Android
 Cette rubrique contient des informations pour vous aider à résoudre les problèmes que vous pouvez rencontrer quand vous utilisez l’Émulateur Visual Studio pour Android.
@@ -263,7 +264,7 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
 
 - Ouvrez l'Éditeur du Registre en sélectionnant **Exécuter** dans le menu contextuel du bouton Démarrer, en tapant `regedit` dans la boîte de dialogue et en choisissant **OK**.
 
-- Accédez à *HKEY_LOCAL_MACHINE SDK Tools \software\wow6432node\android* dans l’arborescence des dossiers sur la gauche.
+- Accédez à *HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Android SDK Tools* dans l’arborescence des dossiers sur la gauche.
 
 - Modifiez la variable de Registre **Path** pour qu'elle corresponde au chemin d'accès à votre Kit de développement logiciel Android.
 

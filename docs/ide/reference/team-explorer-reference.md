@@ -5,12 +5,12 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 ms.manager: jillfra
-ms.openlocfilehash: b1a956579b527de9df9d24bd09dda6ae48eff961
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fa73894d713ded42696f5e47d40dffb2d2405b1a
+ms.sourcegitcommit: 754133c68ad841f7d7962e0b7a575e133289d8a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74538573"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928080"
 ---
 # <a name="team-explorer-reference"></a>Informations de référence sur Team Explorer
 
@@ -26,7 +26,7 @@ Une fois que vous vous êtes [connecté à un projet](../connect-team-project.md
 - [Portail Web](/azure/devops/project/navigation/index)
 - [Tableau de tâches](/azure/devops/boards/sprints/task-board)
 
-La page d’**accueil** propose des fonctions différentes selon que vous êtes connecté à un dépôt [Git](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio) ou à un référentiel [Team Foundation Version Control (TFVC)](/azure/devops/repos/tfvc/overview).
+La page d’**accueil** propose des fonctions différentes selon que vous êtes connecté à un dépôt [Git](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio&preserve-view=true) ou à un référentiel [Team Foundation Version Control (TFVC)](/azure/devops/repos/tfvc/overview).
 
 > [!TIP]
 > Pour une comparaison des deux systèmes de contrôle de version, consultez [Choisir le contrôle de version approprié pour votre projet (Azure DevOps)](/azure/devops/repos/tfvc/comparison-git-tfvc).
@@ -98,11 +98,11 @@ Consultez l'article :
 - [Installer les outils de livraison continue (CD) pour Visual Studio](/azure/devops/pipelines/apps/cd/azure/aspnet-core-to-acr#install-continuous-delivery-cd-tools-for-visual-studio-2017)
 - [Configurer et exécuter la livraison continue (CD) pour votre application](/azure/devops/pipelines/apps/cd/azure/aspnet-core-to-acr#configure-and-execute-continuous-delivery-cd-for-your-app)
 
-## <a name="settings-page"></a>Page de paramètres
+## <a name="settings-page"></a>Page Paramètres
 
 La page **Paramètres** vous permet de configurer les fonctionnalités d’administration pour un projet ou une collection de projets. Voir les articles suivants :
 
-| Projet | Collection de projets | Autre |
+| Project | Collection de projets | Autre |
 | - | - | - |
 | [Sécurité, appartenance au groupe](/azure/devops/organizations/security/set-project-collection-level-permissions)<br/>[Sécurité, contrôle de code source (TFVC)](/azure/devops/organizations/security/set-git-tfvc-repository-permissions)<br/>[Zones d’éléments de travail](/azure/devops/organizations/settings/set-area-paths)<br/>[Itérations d’éléments de travail](/azure/devops/organizations/settings/set-iteration-paths-sprints)<br/>[Paramètres du portail](/azure/devops/report/sharepoint-dashboards/configure-or-add-a-project-portal)<br/>[Alertes de projet](/azure/devops/notifications/howto-manage-team-notifications) | [Sécurité, appartenance au groupe](/azure/devops/organizations/security/set-project-collection-level-permissions)<br/>[Contrôle de code source (TFVC)](/azure/devops/repos/tfvc/decide-between-using-local-server-workspace)<br/>[Gestionnaire de modèles de processus](/azure/devops/boards/work-items/guidance/manage-process-templates) | [Paramètres globaux Git](/azure/devops/repos/git/git-config)<br/>[Paramètres de dépôt Git](/azure/devops/repos/git/git-config) |
 

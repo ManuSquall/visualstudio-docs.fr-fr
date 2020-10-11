@@ -1,5 +1,6 @@
 ---
 title: Configuration système requise pour l’émulateur Visual Studio pour Android
+description: En savoir plus sur la configuration système requise pour que l’émulateur Visual Studio pour Android s’exécute en tant qu’ordinateur virtuel sur Hyper-V.
 ms.custom: SEO-VS-2020
 ms.prod: visual-studio-dev15
 ms.date: 11/04/2016
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 327713a59b7c5c8da5c5b92cd16f3a20a76a7458
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 726a02c852c4b41dacc2cab73ab4000ebda53a8a
+ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808257"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91878941"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Configuration système requise pour l'Émulateur Visual Studio pour Android
 
@@ -32,7 +33,7 @@ Le programme d’installation tente de satisfaire à ces conditions préalables 
 
 Voici une liste de vérification rapide des composants requis pour l’exécution de l’émulateur Visual Studio pour Android. Pour obtenir des informations détaillées, consultez les sections suivantes de cette rubrique.
 
-Configuration requise
+Configuration système requise
 
 - Prise en charge d’Hyper-V (voir la configuration requise pour Hyper-V ci-dessous)
 
@@ -42,7 +43,7 @@ Configuration requise
 
 - Processeur qui prend en charge SSSE3 ou version ultérieure.
 
-Conditions requises en matière de réseau
+Configuration requise pour le réseau
 
 - DHCP
 
@@ -75,7 +76,7 @@ Pour vérifier la configuration requise pour la RAM et Windows, dans le Panneau 
 
 ![Vérifier la configuration système requise](../cross-platform/media/android_emu_system_requirements.png "Android_Emu_System_Requirements")
 
-## <a name="network-requirements"></a>Conditions requises en matière de réseau
+## <a name="network-requirements"></a>Configuration requise pour le réseau
 
 Votre réseau doit remplir les conditions suivantes :
 
@@ -107,7 +108,7 @@ Configuration requise pour Hyper-V dans Windows
 
 Quand les paramètres du BIOS et de votre ordinateur sont déjà configurés pour prendre en charge Hyper-V, le programme d’installation active et démarre Hyper-V. Dans le cas contraire, vous devrez peut-être activer manuellement ces composants requis.
 
-|Spécification|Comment vérifier et activer cette spécification|
+|Condition requise|Comment vérifier et activer cette spécification|
 |-----------------|----------------------------------------------|
 |Hyper-V doit être installé|Suivez les mêmes instructions que celles utilisées pour [activer Hyper-V pour l’émulateur Windows Phone](/previous-versions/windows/apps/jj863509(v=vs.105)).<br /><br /> Vérifiez l’état du service **Gestion d’ordinateurs virtuels Hyper-V** dans le composant logiciel enfichable Services.|
 |Hyper-V doit être en cours d’exécution.|Pour plus d’informations sur la gestion des services, consultez les rubriques suivantes :<br /><br /> -   [Démarrer, arrêter, suspendre, reprendre ou redémarrer un service](https://technet.microsoft.com/library/cc736564\(v=WS.10\).aspx)<br />-   [Configurer le démarrage d’un service](https://technet.microsoft.com/%20library/cc739213\(v=ws.10\))|
