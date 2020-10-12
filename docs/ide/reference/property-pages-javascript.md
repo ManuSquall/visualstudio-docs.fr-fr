@@ -1,5 +1,7 @@
 ---
 title: Pages de propriétés (JavaScript)
+description: Découvrez comment les pages de propriétés fournissent l’accès aux paramètres du projet et comment utiliser les pages qui s’affichent dans les pages de propriétés pour modifier les propriétés du projet.
+ms.custom: SEO-VS-2020
 ms.date: 06/21/2017
 ms.technology: vs-javascript
 ms.topic: reference
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6883e556cd70adddd45fd442d338e10d1cafa1e2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cf6c984715f5cd35f08bb75526346b68c11dbeb9
+ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "68926199"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91947802"
 ---
 # <a name="property-pages-javascript"></a>Pages de propriétés, JavaScript
 

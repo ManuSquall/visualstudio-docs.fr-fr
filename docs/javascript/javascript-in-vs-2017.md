@@ -1,5 +1,7 @@
 ---
 title: JavaScript
+description: Découvrez que vous pouvez utiliser la plupart ou la totalité des aides à la modification standard (extraits de code, IntelliSense, etc.) lorsque vous écrivez du code JavaScript dans l’IDE de Visual Studio.
+ms.custom: SEO-VS-2020
 ms.date: 01/15/2019
 ms.technology: vs-javascript
 ms.topic: conceptual
@@ -12,12 +14,12 @@ caps.latest.revision: 1
 author: bowdenk7
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: fdb59c51fe38e3d2e3f2f1fd0b00db285b0de7f1
-ms.sourcegitcommit: 7a46232242783ebe23f2527f91eac8eb84b3ae05
+ms.openlocfilehash: e8e4d0e337289e2676dc8eb040ad199ae41a8dbc
+ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90739887"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "91947776"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>JavaScript dans Visual Studio 2017
 
@@ -260,7 +262,7 @@ Pour en savoir plus sur la création de fichiers de déclaration (`.d.ts`), cliq
 Étant donné que le nouveau service de langage repose sur l’analyse statique et non sur un moteur d’exécution (pour plus d’informations sur les différences, lisez [ce problème](https://github.com/Microsoft/TypeScript/issues/4789)), quelques modèles JavaScript ne peuvent plus être détectés.
 Le modèle le plus courant est le modèle « expando ».
 Le service de langage ne peut pas fournir la fonctionnalité IntelliSense sur des objets auxquels des propriétés ont été ajoutées après la déclaration.
-Exemple :
+Par exemple :
 
 ```js
 var obj = {};
