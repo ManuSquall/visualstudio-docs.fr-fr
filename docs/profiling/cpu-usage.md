@@ -1,6 +1,5 @@
 ---
-title: Analyser l’utilisation de l’UC | Microsoft Docs
-ms.custom: seodec18
+title: Analyser l’utilisation de l’UC dans le profileur de performances
 ms.date: 04/02/2020
 ms.topic: how-to
 ms.assetid: 7501a20d-04a1-480f-a69c-201524aa709d
@@ -9,24 +8,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5ab97f3db8e5d44aa649455c313a5681ed93c8c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 706ffa8d17974894403c22a559edad4c2e4b4ef8
+ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543388"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92007100"
 ---
-# <a name="analyze-cpu-usage"></a>Analyser l’utilisation de l’UC
+# <a name="analyze-cpu-usage-without-debugging-in-the-performance-profiler"></a>Analyser l’utilisation de l’UC sans débogage dans le profileur de performances
 
 Une bonne façon de commencer l’investigation des problèmes de performances dans votre application consiste à comprendre son utilisation de l’UC. L’outil de performances **Utilisation de l’UC** montre le temps et le pourcentage de l’UC consacré à l’exécution du code dans les applications C++, C#/Visual Basic et JavaScript.
 
-Vous pouvez exécuter l’outil **Utilisation de l’UC** sur un projet Visual Studio ouvert ou sur une application du Microsoft Store installée, ou bien l’attacher à une application ou un processus en cours d’exécution. Pour plus d’informations, consultez [exécuter les outils de profilage avec ou sans le débogueur](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+Vous pouvez exécuter l’outil Utilisation de l’UC sur un projet Visual Studio ouvert ou sur une application du Microsoft Store installée, ou bien l’attacher à une application ou un processus en cours d’exécution. Vous pouvez exécuter l’outil Utilisation de l’UC avec ou sans débogage. Pour plus d’informations, consultez [exécuter les outils de profilage avec ou sans le débogueur](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
-Vous pouvez exécuter l’outil **Utilisation de l’UC** avec ou sans débogage. Dans le débogueur, vous pouvez activer et désactiver le profilage de l’UC, et afficher une répartition par fonction de l’utilisation de l’UC. Vous pouvez afficher les résultats de l’utilisation de l’UC quand l’exécution est suspendue, par exemple à un point d’arrêt.
+Les instructions suivantes indiquent comment utiliser l’outil Utilisation de l’UC sans le débogueur, à l’aide du Profileur de performances de Visual Studio. Les exemples utilisent une build Release sur un ordinateur local. Les builds Release fournissent la meilleure vue des performances réelles de l’application. Pour analyser l’utilisation de l’UC avec les versions Debug (débogueur attaché), consultez [Guide du débutant en profilage des performances](../profiling/beginners-guide-to-performance-profiling.md).
 
-Les instructions suivantes indiquent comment utiliser l’outil **Utilisation de l’UC** sans le débogueur, à l’aide du **Profileur de performances** de Visual Studio. Les exemples utilisent une build Release sur un ordinateur local. Les builds Release fournissent la meilleure vue des performances réelles de l’application. Pour analyser l’utilisation de l’UC avec des builds de débogage, consultez [Guide du débutant en profilage des performances](../profiling/beginners-guide-to-performance-profiling.md).
-
-En règle générale, c’est l’ordinateur local qui réplique le mieux l’exécution des applications installées. Pour les applications Windows Phone, la collecte des données directement à partir de l’appareil fournit les données les plus précises. Pour collecter des données à partir d’un appareil distant, exécutez l’application directement sur l’appareil, et non par le biais d’une connexion Bureau à distance.
+En règle générale, c’est l’ordinateur local qui réplique le mieux l’exécution des applications installées. Pour collecter des données à partir d’un appareil distant, exécutez l’application directement sur l’appareil, et non par le biais d’une connexion Bureau à distance.
 
 >[!NOTE]
 >Windows 7 ou ultérieur est nécessaire pour utiliser le [Profileur de performances](../profiling/profiling-feature-tour.md).

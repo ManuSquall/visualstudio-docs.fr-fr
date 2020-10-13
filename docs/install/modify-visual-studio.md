@@ -2,8 +2,9 @@
 title: Modifier Visual Studio 2017
 titleSuffix: ''
 description: Découvrez comment modifier Visual Studio, étape par étape.
-ms.date: 02/10/2019
+ms.date: 10/12/2020
 ms.topic: how-to
+ms.custom: contperfq1
 helpviewer_keywords:
 - modify Visual Studio
 - change visual studio
@@ -17,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 75a9d9d95cf2aed0defb9f52179188c64f4de912
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: d4593ed516e308a5e55a93f83fd5345028dc95dc
+ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862285"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92007136"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>Modifier Visual Studio en ajoutant ou supprimant des charges de travail et des composants
 
@@ -74,11 +75,11 @@ Voici comment faire.
 
 ::: moniker range="vs-2019"
 
-1. Recherchez le programme d’installation de Visual Studio sur votre ordinateur.
+1. Recherchez le **programme d’installation de Visual Studio** sur votre ordinateur.
 
-     Par exemple, sur un ordinateur exécutant Windows 10, sélectionnez **Démarrer**, puis faites défiler jusqu’à la lettre **V** où il est répertorié comme **Visual Studio Installer**.
+     Dans le menu Démarrer de Windows, vous pouvez rechercher « programme d’installation ».
 
-     ![Ouvrir le Visual Studio Installer à partir de Windows](media/vs-2019/vs-installer-windows-start.png "Ouvrez le Visual Studio Installer")
+     ![Programme d’installation de Visual Studio](media/vs-2019/visual-studio-installer.png "Rechercher le Visual Studio Installer")
 
      > [!NOTE]
      > Vous trouverez également Visual Studio Installer à l’emplacement suivant :
@@ -89,7 +90,7 @@ Voici comment faire.
 
 1. Dans le programme d’installation, recherchez l’édition de Visual Studio que vous avez installée, puis choisissez **Modifier**.
 
-     ![Mettre à jour ou modifier Visual Studio](media/vs-2019/vs-installer-modify.png "Mettre à jour ou modifier Visual Studio 2019")
+     ![Choisissez Visual Studio Edition, puis modifiez](media/vs-2019/vs-installer-modify.png "Choisissez Visual Studio 2019 Edition, puis modifiez")
 
      > [!IMPORTANT]
      > Si vous disposez d’une mise à jour en attente, le bouton Modifier est à un emplacement différent. De cette façon, vous pouvez modifier Visual Studio sans le mettre à jour, si vous le souhaitez. Choisissez **plus**, puis **modifier**.

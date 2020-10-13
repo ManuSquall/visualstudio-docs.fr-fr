@@ -2,7 +2,7 @@
 title: Réparer Visual Studio
 titleSuffix: ''
 description: Découvrez comment réparer une installation de Visual Studio 2017.
-ms.date: 06/15/2020
+ms.date: 10/12/2020
 ms.custom: seodec18
 ms.topic: how-to
 author: ornellaalt
@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fda72206059e5c14c46d332e44ea0de481004296
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7b2fd0a49a235827d3a9094aad6cc0f59a0cd403
+ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85418962"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92007114"
 ---
 # <a name="repair-visual-studio"></a>Réparer Visual Studio
 
@@ -63,9 +63,9 @@ Il peut arriver que votre installation Visual Studio soit endommagée ou corromp
 
 1. Recherchez le **programme d’installation de Visual Studio** sur votre ordinateur.
 
-     Par exemple, sur un ordinateur exécutant Windows 10, sélectionnez **Démarrer**, puis faites défiler jusqu’à la lettre **V** où il est répertorié comme **Visual Studio Installer**.
+     Dans le menu Démarrer de Windows, vous pouvez rechercher « programme d’installation ».
 
-     ![Ouvrez le Visual Studio Installer](media/vs-2019/vs-installer-windows-start.png "Ouvrez le Visual Studio Installer")
+     ![Programme d’installation de Visual Studio](media/vs-2019/visual-studio-installer.png "Rechercher le Visual Studio Installer")
 
      > [!NOTE]
      > Vous trouverez également Visual Studio Installer à l’emplacement suivant :

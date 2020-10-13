@@ -1,5 +1,6 @@
 ---
 title: Exécuter des outils de profilage avec ou sans le débogueur | Microsoft Docs
+description: En savoir plus sur les différences entre les différents modes disponibles pour les outils de profilage
 ms.date: 5/26/2020
 ms.topic: conceptual
 ms.assetid: 3fcdccad-c1bd-4c67-bcec-bf33a8fb5d63
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7db7e704eab7f5d00b20051811c503b143608e2f
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: 13fd616e9ec596bfcdeb3718a62dc1a3a1bc8137
+ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90074954"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92007168"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Exécuter des outils de profilage avec ou sans le débogueur
 
@@ -29,7 +30,7 @@ Pour déterminer les outils et les résultats à utiliser, prenez en compte les 
 - Outil intégré au débogueur et outil non débogueur
   - Les problèmes de performances externes, comme les problèmes de réactivité du réseau ou d’E/S de fichier, se ressembleront dans tous les outils, qu’ils soient intégrés ou non au débogueur.
   - Le débogueur lui-même modifie les performances, car il effectue des opérations de débogueur telles que l’interception des événements d’exception et de chargement de module.
-  - Les valeurs de performances des builds Release fournies dans les outils du Profileur de performances sont plus précises. Les résultats d’outils intégrés au débogueur sont plus utiles pour la comparaison avec d’autres mesures liées au débogage, ou pour l’utilisation des fonctionnalités du débogueur.
+  - Les numéros de performances de version Release dans le profileur de performances sont les plus précis et précis. Les résultats d’outils intégrés au débogueur sont plus utiles pour la comparaison avec d’autres mesures liées au débogage, ou pour l’utilisation des fonctionnalités du débogueur.
 - Débogage et version Release
   - Pour les problèmes provoqués par les appels nécessitant une utilisation intensive du processeur, il peut y avoir des différences de performances considérables entre les versions release et Debug. Vérifiez si le problème existe dans les versions release.
   - Si le problème se produit uniquement pendant les versions de débogage, vous n’avez probablement pas besoin d’exécuter les outils de non-débogage. Pour les problèmes de version Release, déterminez si les fonctionnalités fournies par les outils intégrés au débogueur vous aideront à identifier le problème.
@@ -49,7 +50,7 @@ Quand vous démarrez le débogage dans Visual Studio en sélectionnant **Débogu
 
 La session de diagnostic se termine quand vous arrêtez le débogage.
 
-Pour plus d'informations, consultez les pages suivantes :
+Pour plus d'informations, voir :
 
 - [Mesurer les performances d’application en analysant l’utilisation de l’UC](../profiling/beginners-guide-to-performance-profiling.md)
 - [Mesurer l’utilisation de la mémoire dans Visual Studio](../profiling/memory-usage.md)
@@ -94,11 +95,11 @@ Vous pouvez enregistrer les rapports et les ouvrir à partir de la liste **sessi
 
 ![Capture d’écran de Outils de diagnostic liste des sessions récemment ouvertes](../profiling/media/diaghubopenexistingdiagsession.png "PDHUB_OpenExistingDiagSession")
 
-Pour plus d'informations, consultez les pages suivantes :
+Pour plus d'informations, voir :
 
 - [Analyser l’utilisation de l’UC](../profiling/cpu-usage.md)
 - [Analyser l’utilisation de la mémoire pour le code .NET](../profiling/dotnet-alloc-tool.md)
-- [Analyser l’utilisation de la mémoire](../profiling/analyze-memory-usage.md)
+- [Analyser l’utilisation de la mémoire](../profiling/memory-usage-without-debugging2.md)
 - [Analyser les performances du code asynchrone .NET](../profiling/analyze-async.md)
 - [Analyser les performances de la base de données](../profiling/analyze-database.md)
 - [Analyser l’utilisation du GPU](../profiling/gpu-usage.md)

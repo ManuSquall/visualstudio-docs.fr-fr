@@ -1,5 +1,5 @@
 ---
-title: Analyser l’utilisation de la mémoire sans débogage | Microsoft Docs
+title: Analyser l’utilisation de la mémoire dans le profileur de performances
 ms.custom: ''
 ms.date: 04/02/2020
 ms.topic: how-to
@@ -13,18 +13,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fe336962a9d631a01438fdd4620fd27e2affc44
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4e99652e343510962959830b327237ee018c8fa
+ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543349"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92007200"
 ---
-# <a name="analyze-memory-usage-without-the-debugger"></a>Analyser l’utilisation de la mémoire sans débogage
+# <a name="analyze-memory-usage-without-debugging-in-the-performance-profiler"></a>Analyser l’utilisation de la mémoire sans débogage dans le profileur de performances
 
-L’outil **Utilisation de la mémoire** permet de superviser l’utilisation de la mémoire par votre application. Vous pouvez l’utiliser pour étudier les effets en temps réel sur la mémoire des scénarios que vous développez activement dans Visual Studio. Vous pouvez prendre des instantanés des états de la mémoire de l’application, et comparer les instantanés pour trouver les causes racines des problèmes de mémoire.
+L’outil **Utilisation de la mémoire** permet de superviser l’utilisation de la mémoire par votre application. Vous pouvez l’utiliser pour étudier les effets en temps réel sur la mémoire des scénarios que vous développez activement dans Visual Studio. Vous pouvez prendre des instantanés des états de la mémoire de l’application, et comparer les instantanés pour trouver les causes racines des problèmes de mémoire. L’outil utilisation de la mémoire est pris en charge sur les applications .NET, ASP.NET, C++ ou en mode mixte (.NET et natif).
 
-L’outil utilisation de la **mémoire** peut s’exécuter [avec ou sans le débogueur](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Dans cet article, nous expliquons comment utiliser l’outil utilisation de la **mémoire** sans le débogueur dans le **profileur de performances**de Visual Studio.
+L’outil utilisation de la mémoire peut s’exécuter [avec ou sans le débogueur](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Dans cet article, nous expliquons comment utiliser l’outil utilisation de la mémoire sans le débogueur dans le **profileur de performances**de Visual Studio.
 
 ## <a name="memory-usage-diagnostic-sessions"></a>Sessions de diagnostic d’utilisation de la mémoire
 
@@ -32,7 +32,7 @@ L’outil utilisation de la **mémoire** peut s’exécuter [avec ou sans le dé
 
 1. Ouvrez un projet dans Visual Studio.
 
-   L’outil utilisation de la mémoire prend en charge les applications .NET, ASP.NET, natives ou en mode mixte (.NET et natif).
+   L’outil utilisation de la mémoire prend en charge les applications .NET, ASP.NET, C++ ou en mode mixte (.NET et natif).
 
 1. Dans le menu Déboguer, définissez la configuration de la solution sur **version finale** , puis sélectionnez **débogueur Windows local** (ou **ordinateur local**) comme cible de déploiement.
 

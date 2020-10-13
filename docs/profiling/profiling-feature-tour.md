@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 511874b5dc7d7c45a1584e95e004a53088f8ea09
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: cb9de05b7e57e4ebc4e7ea76c688a7203774404a
+ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91861807"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92007182"
 ---
 # <a name="first-look-at-profiling-tools"></a>Découvrir les outils de profilage
 
@@ -107,9 +107,9 @@ Double-cliquez sur une fonction digne d’intérêt ; apparaît alors une vue �
 
 ## <a name="analyze-memory-usage"></a>Analyser l’utilisation de la mémoire
 
-La fenêtre **outils de diagnostic** vous permet également d’évaluer l’utilisation de la mémoire dans votre application à l’aide de l’outil utilisation de la **mémoire** . Par exemple, vous pouvez consulter le nombre et la taille des objets sur le tas. Vous pouvez utiliser l' [outil utilisation de la mémoire intégrée au débogueur](../profiling/memory-usage.md) ou l’outil utilisation de la mémoire de l’autopsie dans le [profileur de performances](#post_mortem). Un autre outil d’analyse de mémoire, l' [outil d’allocation d’objets .net](../profiling/dotnet-alloc-tool.md), vous aide à identifier les modèles d’allocation et les anomalies dans votre code .net.
+La fenêtre **outils de diagnostic** vous permet également d’évaluer l’utilisation de la mémoire dans votre application à l’aide de l’outil utilisation de la **mémoire** . Par exemple, vous pouvez consulter le nombre et la taille des objets sur le tas. Vous pouvez utiliser l' [outil utilisation de la mémoire intégrée au débogueur](../profiling/memory-usage.md) ou l' [outil utilisation](../profiling/memory-usage-without-debugging2.md) de la mémoire de l’autopsie dans le profileur de performances. Un autre outil d’analyse de mémoire, l' [outil d’allocation d’objets .net](../profiling/dotnet-alloc-tool.md), vous aide à identifier les modèles d’allocation et les anomalies dans votre code .net.
 
-Pour analyser l’utilisation de la mémoire, vous devez prendre au moins un instantané de la mémoire. Souvent, la meilleure façon d’analyser la mémoire consiste à prendre deux instantanés, le premier juste avant un problème de mémoire suspecté et le second juste après. Ensuite, vous pouvez visualiser une comparaison des deux instantanés et voir exactement ce qui a changé. L’illustration suivante montre l’utilisation d’un instantané avec l’outil intégré au débogueur.
+Pour analyser l’utilisation de la mémoire avec l’outil utilisation de la **mémoire** , vous devez prendre au moins un instantané de la mémoire. Souvent, la meilleure façon d’analyser la mémoire consiste à prendre deux instantanés, le premier juste avant un problème de mémoire suspecté et le second juste après. Ensuite, vous pouvez visualiser une comparaison des deux instantanés et voir exactement ce qui a changé. L’illustration suivante montre l’utilisation d’un instantané avec l’outil intégré au débogueur.
 
 ![Prendre un instantané dans le Outils de diagnostic](../profiling/media/prof-tour-take-snapshots.gif "Outils de diagnostic prendre des captures instantanées")
 
